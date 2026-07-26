@@ -1,5715 +1,5236 @@
-::: {#-1604945737 .myid}
-[]{#_Toc339310125}[]{#_Toc336272255}[]{#_Toc404791631}[]{#struct_0_10012_x1780_458549647}[]{#_Toc339885933}[]{#_Toc337567360}
 
 **VPLS \-- VPLS配置命令 \-- address-family l2vpn**
 
 ------------------------------------------------------------------------
 
-[**[address-family l2vpn]{lang="EN-US"}**]{#struct_0_10012_x1780_442977325}[命令用来创建]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}[地址族，并进入]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}[地址族视图。]{style="font-family:宋体"}
+**[address-family l2vpn**]命令用来创建BGP L2VPN地址族，并进入BGP L2VPN地址族视图。
 
-[**[undo address-family l2vpn]{lang="EN-US"}**]{#struct_0_10012_x1780_1054571798}[命令用来删除]{style="font-family:
-宋体"}[BGP L2VPN]{lang="EN-US"}[地址族及]{style="font-family:
-宋体"}[BGP L2VPN]{lang="EN-US"}[地址族视图下的所有配置。]{style="font-family:宋体"}
+**[undo address-family l2vpn**]命令用来删除BGP L2VPN地址族及BGP L2VPN地址族视图下的所有配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_728652146}
+【命令】
 
-[**[address-family l2vpn]{lang="EN-US"}**]{#struct_0_10012_x1780_1869140458}
+**[address-family l2vpn**]
 
-[**[undo address-family l2vpn]{lang="EN-US"}**]{#struct_0_10012_x1780_516707250}
+**[undo address-family l2vpn**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1965020162}
+【缺省情况】
 
-[[没有创建]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}]{#struct_0_10012_x1780_x1310559341}[地址族。]{style="font-family:宋体"}
+没有创建BGP L2VPN地址族。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1092239167}
+【视图】
 
-[[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_x1467072642}[视图]{style="font-family:宋体"}
+BGP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1790712010}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_728717682}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1845249797}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1703584382}
+【使用指导】
 
-[[在]{style="font-family:宋体"}[VPLS]{lang="EN-US"}]{#struct_0_10012_x1780_332889168}[组网中，要想建立]{style="font-family:宋体"}[BGP PW]{lang="EN-US"}[，需要在]{style="font-family:宋体"}[PE]{lang="EN-US"}[设备的]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}[地址族视图下通过]{style="font-family:宋体"}**[peer enable]{lang="EN-US"}**[命令使能]{style="font-family:宋体"}[BGP]{lang="EN-US"}[对等体，以便]{style="font-family:宋体"}[PE]{lang="EN-US"}[与该对等体交换]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+在VPLS组网中，要想建立BGP PW，需要在PE设备的BGP L2VPN地址族视图下通过**peer enable**命令使能BGP对等体，以便PE与该对等体交换L2VPN信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1780391561}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_1389554737}[创建]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}[地址族，并进入]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}[地址族视图。]{style="font-family:宋体"}
+\# 创建BGP L2VPN地址族，并进入BGP L2VPN地址族视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_729307506}
+\<Sysname\> system-view
 
-[\[Sysname\] bgp 100]{lang="EN-US"}
+Sysname bgp 100
 
-[\[Sysname-bgp\] address-family l2vpn]{lang="EN-US"}
+Sysname-bgp address-family l2vpn
 
-[\[Sysname-bgp-l2vpn\]]{lang="EN-US"}
-:::
-
-::: {#1067234336 .myid}
-[]{#_Toc404791632}[]{#struct_0_10012_x1780_x481780486}
+Sysname-bgp-l2vpn
 
 **VPLS \-- VPLS配置命令 \-- auto-discovery**
 
 ------------------------------------------------------------------------
 
-[**[auto-discovery]{lang="EN-US"}**]{#struct_0_10012_x1780_1718633749}[命令用来指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[采用]{style="font-family:宋体"}[BGP]{lang="EN-US"}[方式自动发现邻居，并进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}[自动发现视图。]{style="font-family:宋体"}
+**[auto-discovery**]命令用来指定VSI采用BGP方式自动发现邻居，并进入VSI自动发现视图。
 
-[**[undo ]{lang="EN-US"}[auto-discovery]{lang="EN-US"}**]{#struct_0_10012_x1780_x1188321523}[命令用来取消]{style="font-family:宋体"}[VSI]{lang="EN-US"}[采用]{style="font-family:宋体"}[BGP]{lang="EN-US"}[方式自动发现邻居。]{style="font-family:宋体"}
+**[undo auto-discovery**]命令用来取消VSI采用BGP方式自动发现邻居。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1554647672}
+【命令】
 
-[**[auto-discovery bgp]{lang="EN-US"}**]{#struct_0_10012_x1780_299970585}
+**[auto-discovery bgp**]
 
-[**[undo auto-discovery]{lang="EN-US"}**]{#struct_0_10012_x1780_x1676891679}
+**[undo auto-discovery**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1702469964}
+【缺省情况】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x93679853}[不会采用]{style="font-family:宋体"}[BGP]{lang="EN-US"}[方式自动发现邻居。]{style="font-family:宋体"}
+VSI不会采用BGP方式自动发现邻居。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_729373042}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_694828640}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_639330925}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_541401365}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1793234507}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_172829530}
+【参数】
 
-[**[bgp]{lang="EN-US"}**]{#struct_0_10012_x1780_x1987717552}[：指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[采用]{style="font-family:宋体"}[BGP]{lang="EN-US"}[方式自动发现邻居。]{style="font-family:宋体"}
+**[bgp**]：指定VSI采用BGP方式自动发现邻居。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_479649905}
+【使用指导】
 
-[[执行本命令进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_404957885}[自动发现视图后，在该视图下可以配置]{style="font-family:宋体"}[BGP]{lang="EN-US"}[自动发现的相关参数，如本端站点、]{style="font-family:宋体"}[VPLS ID]{lang="EN-US"}[、]{style="font-family:宋体"}[Route Target]{lang="EN-US"}[属性等，以便]{style="font-family:宋体"}[PE]{lang="EN-US"}[设备通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议自动发现远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[设备。]{style="font-family:宋体"}
+执行本命令进入VSI自动发现视图后，在该视图下可以配置BGP自动发现的相关参数，如本端站点、VPLS ID、Route Target属性等，以便PE设备通过BGP协议自动发现远端PE设备。
 
-[[通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_x1643869774}[协议自动发现远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[设备后，可以采用]{style="font-family:宋体"}[LDP]{lang="EN-US"}[或]{style="font-family:宋体"}[BGP]{lang="EN-US"}[信令协议在]{style="font-family:宋体"}[PE]{lang="EN-US"}[之间建立]{style="font-family:宋体"}[PW]{lang="EN-US"}[。]{style="font-family:宋体"}**[signaling-protocol]{lang="EN-US"}**[命令用来指定采用的信令协议。]{style="font-family:宋体"}
+通过BGP协议自动发现远端PE设备后，可以采用LDP或BGP信令协议在PE之间建立PW。**signaling-protocol**命令用来指定采用的信令协议。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_310806217}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_1814573611}[指定名为]{style="font-family:宋体"}[aaa]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[采用]{style="font-family:宋体"}[BGP]{lang="EN-US"}[方式自动发现邻居，并进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}[自动发现视图。]{style="font-family:宋体"}
+\# 指定名为aaa的VSI采用BGP方式自动发现邻居，并进入VSI自动发现视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x1724275022}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi aaa]{lang="EN-US"}
+Sysname vsi aaa
 
-[\[Sysname-vsi-aaa\] auto-discovery bgp]{lang="EN-US"}
+Sysname-vsi-aaa auto-discovery bgp
 
-[\[Sysname-vsi-aaa-auto\]]{lang="EN-US"}
+Sysname-vsi-aaa-auto
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_54556621}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn pw]{lang="EN-US"}**]{#struct_0_10012_x1780_1895967648}
+·**display l2vpn pw**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn ]{lang="EN-US"}**]{#struct_0_10012_x1780_402312229}**[vsi]{lang="EN-US"}**
-:::
-
-::: {#2036451628 .myid}
-[]{#_Toc404791633}[]{#struct_0_10012_x1780_x1643804238}
+·**display l2vpn ****vsi**
 
 **VPLS \-- VPLS配置命令 \-- backup-peer**
 
 ------------------------------------------------------------------------
 
-[**[backup-peer]{lang="EN-US"}**]{#struct_0_10012_x1780_1318069630}[命令]{style="font-family:宋体"}[用来配置]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[的备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[VSI LDP]{lang="EN-US"}[备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[视图或]{style="font-family:宋体"}[VSI]{lang="EN-US"}[静态备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[视图。如果指定的备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[已存在，则直接进入]{style="font-family:宋体"}[VSI LDP]{lang="EN-US"}[备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[视图或]{style="font-family:宋体"}[VSI]{lang="EN-US"}[静态备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+**[backup-peer**]命令用来配置VPLS的备份PW，并进入VSI LDP备份PW视图或VSI静态备份PW视图。如果指定的备份PW已存在，则直接进入VSI LDP备份PW视图或VSI静态备份PW视图。
 
-[**[undo]{lang="EN-US"}**[ **backup-peer**]{lang="EN-US"}]{#struct_0_10012_x1780_x1707920029}[命令用来删除]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[的备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo** **backup-peer**]命令用来删除VPLS的备份PW。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x413486292}
+【命令】
 
-[[VSI LDP PW]{lang="EN-US"}]{#struct_0_10012_x1780_x2013414438}[视图：]{style="font-family:宋体"}
+VSI LDP PW视图：
 
-[**[backup-peer ]{lang="EN-US"}***[ip-address]{lang="EN-US"}*[ \[ **pw-id** *pw-id* \] \[ **pw-class** *class-name* \| **tunnel-policy** *tunnel-policy-name* \] \*]{lang="EN-US"}]{#struct_0_10012_x1780_x914591287}
+**[backup-peer ***ip-address* [ **pw-id** *pw-id*  [ **pw-class** *class-name* \| **tunnel-policy** *tunnel-policy-name* ] \*]]
 
-[**[undo]{lang="EN-US"}**[ **backup-peer** *ip-address* **pw-id** *pw-id*]{lang="EN-US"}]{#struct_0_10012_x1780_x1511825941}
+**[undo** **backup-peer** *ip-address* **pw-id** *pw-id*]
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_2012555445}[静态]{style="font-family:宋体"}[PW]{lang="EN-US"}[视图：]{style="font-family:宋体"}
+VSI静态PW视图：
 
-[**[backup-peer ]{lang="EN-US"}***[ip-address]{lang="EN-US"}*[ \[ **pw-id** *pw-id* \] **in-label** *label-value* **out-label** *label-value* \[ **pw-class** *class-name* \| **tunnel-policy** *tunnel-policy-name* \] \*]{lang="EN-US"}]{#struct_0_10012_x1780_x152021348}
+**[backup-peer ***ip-address* [ **pw-id** *pw-id*  **in-label** *label-value* **out-label** *label-value* [ **pw-class** *class-name* \| **tunnel-policy** *tunnel-policy-name* ] \*]]
 
-[**[undo]{lang="EN-US"}**[ **backup-peer** *ip-address* **pw-id** *pw-id*]{lang="EN-US"}]{#struct_0_10012_x1780_x1643738702}
+**[undo** **backup-peer** *ip-address* **pw-id** *pw-id*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_256253910}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[VPLS]{lang="EN-US"}]{#struct_0_10012_x1780_x1204545744}[的备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[。]{style="font-family:宋体"}
+未配置VPLS的备份PW。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x2126094386}
+【视图】
 
-[[VSI LDP PW]{lang="EN-US"}]{#struct_0_10012_x1780_1247878356}[视图]{style="font-family:宋体"}[/VSI]{lang="EN-US"}[静态]{style="font-family:宋体"}[PW]{lang="EN-US"}[视图]{style="font-family:宋体"}
+VSI LDP PW视图/VSI静态PW视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x2036209751}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1484051909}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x902699960}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x373224679}
+【参数】
 
-[*[ip-address]{lang="EN-US"}*]{#struct_0_10012_x1780_x1643673166}[：指定备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[的]{style="font-family:宋体"}[LSR ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[ip-address*]：指定备份PW远端PE的LSR ID。
 
-[**[pw-id]{lang="EN-US"}**[ *pw-id*]{lang="EN-US"}]{#struct_0_10012_x1780_x338198840}[：指定备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[的]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[。]{style="font-family:宋体"}*[pw-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。如果不指定本参数，则备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[的]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[为]{style="font-family:宋体"}**[default-pw-id]{lang="EN-US"}**[命令配置的缺省]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[pw-id** *pw-id*]：指定备份PW的PW ID。*pw-id*为PW ID，取值范围为1～4294967295。如果不指定本参数，则备份PW的PW ID为**default-pw-id**命令配置的缺省PW ID。
 
-[**[in-label]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_10012_x1780_x905869596}*[label-value]{lang="EN-US"}*[：指定备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[的入标签。]{style="font-family:宋体"}*[label-value]{lang="EN-US"}*[为入标签值]{style="font-family:宋体"}[。本参数]{style="font-family:宋体"}[的取值范围与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[in-label**]*label-value*：指定备份PW的入标签。*label-value*为入标签值。本参数的取值范围与设备的型号有关，请以设备的实际情况为准。
 
-[**[out-label]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_10012_x1780_x1727984800}*[label-value]{lang="EN-US"}*[：指定备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[的出标签。]{style="font-family:宋体"}*[label-value]{lang="EN-US"}*[为出标签值]{style="font-family:宋体"}[。本参数]{style="font-family:宋体"}[的取值范围与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[out-label**]*label-value*：指定备份PW的出标签。*label-value*为出标签值。本参数的取值范围与设备的型号有关，请以设备的实际情况为准。
 
-[**[pw-class]{lang="EN-US"}**[ *class-name*]{lang="EN-US"}]{#struct_0_10012_x1780_x592276573}[：指定备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[引用的]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板。]{style="font-family:宋体"}*[class-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板名，]{style="font-family:宋体"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[19]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板中可以配置]{style="font-family:宋体"}[PW]{lang="EN-US"}[的数据封装类型、是否使用控制字等。如果不指定本参数，则]{style="font-family:宋体"}[PW]{lang="EN-US"}[数据封装类型为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，不支持控制字功能。]{style="font-family:宋体"}
+**[pw-class** *class-name*]：指定备份PW引用的PW模板。*class-name*表示PW模板名，为1～19个字符的字符串，区分大小写。PW模板中可以配置PW的数据封装类型、是否使用控制字等。如果不指定本参数，则PW数据封装类型为VLAN，不支持控制字功能。
 
-[**[tunnel-policy]{lang="EN-US"}***[ tunnel-policy-name]{lang="EN-US"}*]{#struct_0_10012_x1780_1533480627}[：指定备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[的隧道选择策略。]{style="font-family:宋体"}*[tunnel-policy-name]{lang="EN-US"}*[表示隧道策略名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[19]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则使用缺省的隧道选择策略。]{style="font-family:宋体"}
+**[tunnel-policy*** tunnel-policy-name*]：指定备份PW的隧道选择策略。*tunnel-policy-name*表示隧道策略名，为1～19个字符的字符串，区分大小写。如果不指定本参数，则使用缺省的隧道选择策略。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1391137944}
+【使用指导】
 
-[[备份]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x1644131918}[作为主]{style="font-family:宋体"}[PW]{lang="EN-US"}[的备份，可以为主]{style="font-family:宋体"}[PW]{lang="EN-US"}[提供冗余保护。当主]{style="font-family:宋体"}[PW]{lang="EN-US"}[出现故障时，设备将通过主]{style="font-family:宋体"}[PW]{lang="EN-US"}[对应的备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[转发流量。]{style="font-family:宋体"}
+备份PW作为主PW的备份，可以为主PW提供冗余保护。当主PW出现故障时，设备将通过主PW对应的备份PW转发流量。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_10012_x1780_x137927531}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置备份]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x841906906}[时指定的远端]{lang="EN-US" style="font-family:宋体"}[PE]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[LSR ID]{lang="EN-US"}[和]{lang="EN-US" style="font-family:宋体"}[PW ID]{lang="EN-US"}[，不能与已经存在的]{lang="EN-US" style="font-family:宋体"}[VPLS]{lang="EN-US"}[ ]{lang="EN-US"}[PW]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[交叉连接]{style="font-family:宋体"}[PW]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[LSR ID]{lang="EN-US"}[和]{lang="EN-US" style="font-family:宋体"}[PW ID]{lang="EN-US"}[同时相同。]{lang="EN-US" style="font-family:宋体"}
+·配置备份PW时指定的远端PE的LSR ID和PW ID，不能与已经存在的VPLSPW、交叉连接PW的LSR ID和PW ID同时相同。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[无需指定]{style="font-family:宋体"}]{#struct_0_10012_x1780_1403016721}[备份]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[hub]{lang="EN-US"}[属性和]{lang="EN-US" style="font-family:宋体"}[no-split-horizon]{lang="EN-US"}[属性]{lang="EN-US" style="font-family:宋体"}[，备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[的这些属性]{style="font-family:宋体"}[与主]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}[相同。]{lang="EN-US" style="font-family:宋体"}
+·无需指定备份PW的hub属性和no-split-horizon属性，备份PW的这些属性与主PW相同。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果在]{lang="EN-US" style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x574616286}[视图下通过]{lang="EN-US" style="font-family:宋体"}**[default-pw-id]{lang="EN-US"}**[命令配置了缺省]{lang="EN-US" style="font-family:宋体"}[PW ID]{lang="EN-US"}[，则执行]{lang="EN-US" style="font-family:宋体"}**[backup-peer]{lang="EN-US"}**[命令时可以不指定]{lang="EN-US" style="font-family:宋体"}**[pw-id]{lang="EN-US"}**[ *pw-id*]{lang="EN-US"}[参数，采用缺省的]{lang="EN-US" style="font-family:宋体"}[PW ID]{lang="EN-US"}[；否则，执行]{lang="EN-US" style="font-family:宋体"}**[backup-peer]{lang="EN-US"}**[命令时必须指定]{lang="EN-US" style="font-family:宋体"}**[pw-id]{lang="EN-US"}**[ *pw-id*]{lang="EN-US"}[参数。]{lang="EN-US" style="font-family:宋体"}
+·如果在VSI视图下通过**default-pw-id**命令配置了缺省PW ID，则执行**backup-peer**命令时可以不指定**pw-id** *pw-id*参数，采用缺省的PW ID；否则，执行**backup-peer**命令时必须指定**pw-id** *pw-id*参数。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果为静态]{style="font-family:宋体"}]{#struct_0_10012_x1780_653767229}[PW]{lang="EN-US"}[指定的入标签与已经存在的静态]{style="font-family:宋体"}[LSP/]{lang="EN-US"}[静态]{style="font-family:宋体"}[CRLSP]{lang="EN-US"}[的入标签相同，则会导致标签冲突，静态]{style="font-family:宋体"}[PW]{lang="EN-US"}[不可用。即使修改静态]{style="font-family:宋体"}[LSP/]{lang="EN-US"}[静态]{style="font-family:宋体"}[CRLSP]{lang="EN-US"}[的入标签，静态]{style="font-family:宋体"}[PW]{lang="EN-US"}[仍不可用，需要手工删除该静态]{style="font-family:宋体"}[PW]{lang="EN-US"}[并重新配置。]{style="font-family:宋体"}
+·如果为静态PW指定的入标签与已经存在的静态LSP/静态CRLSP的入标签相同，则会导致标签冲突，静态PW不可用。即使修改静态LSP/静态CRLSP的入标签，静态PW仍不可用，需要手工删除该静态PW并重新配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1243562390}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x78603019}[为名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[配置主备]{style="font-family:宋体"}[LDP PW]{lang="EN-US"}[：主]{style="font-family:宋体"}[PW]{lang="EN-US"}[的远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[地址为]{style="font-family:宋体"}[4.4.4.4]{lang="EN-US"}[，]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[为]{style="font-family:宋体"}[100]{lang="EN-US"}[；备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[的远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[地址为]{style="font-family:宋体"}[5.5.5.5]{lang="EN-US"}[，]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[为]{style="font-family:宋体"}[200]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 为名为vpn1的VSI配置主备LDP PW：主PW的远端PE地址为4.4.4.4，PW ID为100；备份PW的远端PE地址为5.5.5.5，PW ID为200。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x1644066382}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname vsi vpn1
 
-[\[Sysname-vsi-vpn1\] pwsignaling ldp]{lang="EN-US"}
+Sysname-vsi-vpn1 pwsignaling ldp
 
-[\[Sysname-vsi-vpn1-ldp\] peer 4.4.4.4 pw-id 100]{lang="EN-US"}
+Sysname-vsi-vpn1-ldp peer 4.4.4.4 pw-id 100
 
-[\[Sysname-vsi-vpn1-ldp-4.4.4.4-100\] backup-peer 5.5.5.5]{lang="EN-US"}[ pw-id 200]{lang="EN-US"}
+Sysname-vsi-vpn1-ldp-4.4.4.4-100 backup-peer 5.5.5.5 pw-id 200
 
-[\[Sysname-vsi-vpn1-ldp-4.4.4.4-100-backup\]]{lang="EN-US"}
+Sysname-vsi-vpn1-ldp-4.4.4.4-100-backup
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x2040422930}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[default-pw-id]{lang="EN-US"}**]{#struct_0_10012_x1780_721194416}
+·**default-pw-id**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn ldp]{lang="EN-US"}**]{#struct_0_10012_x1780_1374928626}
+·**display l2vpn ldp**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn pw]{lang="EN-US"}**]{#struct_0_10012_x1780_115969798}
+·**display l2vpn pw**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[peer]{lang="EN-US"}**]{#struct_0_10012_x1780_x584715110}
-:::
-
-::: {#1807695599 .myid}
-[]{#_Toc404791634}[]{#struct_0_10012_x1780_1787958473}[]{#_Toc375901834}[]{#_Toc375819693}[]{#_Toc375553164}[]{#_Toc373826859}
+·**peer**
 
 **VPLS \-- VPLS配置命令 \-- bandwidth（VSI LDP PW view/VSI static PW view）**
 
 ------------------------------------------------------------------------
 
-[**[bandwidth]{lang="EN-US"}**]{#struct_0_10012_x1780_1824117111}[命令用来配置]{style="font-family:宋体"}[PW]{lang="EN-US"}[的期望带宽。]{style="font-family:宋体"}
+**[bandwidth**]命令用来配置PW的期望带宽。
 
-[**[undo bandwidth]{lang="EN-US"}**]{#struct_0_10012_x1780_x180568281}[用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo bandwidth**]用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1056153595}
+【命令】
 
-[**[bandwidth ]{lang="EN-US"}***[bandwidth-value]{lang="EN-US"}*]{#struct_0_10012_x1780_198493978}
+**[bandwidth ***bandwidth-value*]
 
-[**[undo bandwidth]{lang="EN-US"}**]{#struct_0_10012_x1780_x660978154}
+**[undo bandwidth**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_172457163}
+【缺省情况】
 
-[[接口的期望带宽为]{style="font-family:宋体"}[10000000kbps]{lang="EN-US"}]{#struct_0_10012_x1780_x2132236328}[。]{style="font-family:宋体"}
+接口的期望带宽为10000000kbps。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x812623312}
+【视图】
 
-[[VSI LDP PW]{lang="EN-US"}]{#struct_0_10012_x1780_1788024009}[视图]{style="font-family:宋体"}[/VSI]{lang="EN-US"}[静态]{style="font-family:宋体"}[PW]{lang="EN-US"}[视图]{style="font-family:宋体"}
+VSI LDP PW视图/VSI静态PW视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_799099357}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1298981438}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1061085930}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_560765652}
+【参数】
 
-[*[bandwidth-value]{lang="EN-US"}*]{#struct_0_10012_x1780_x1319174945}[：]{style="font-family:宋体"}[PW]{lang="EN-US"}[的期望带宽，取值为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[10000000]{lang="EN-US"}[，单位为]{style="font-family:宋体"}[kbps]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[bandwidth-value*]：PW的期望带宽，取值为1～10000000，单位为kbps。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_2119007770}
+【使用指导】
 
-[[接口的期望带宽会对]{style="font-family:宋体"}[CBQ]{lang="EN-US"}]{#struct_0_10012_x1780_x1552913082}[队列带宽有影响。具体介绍请参见"]{style="font-family:宋体"}[ACL]{lang="EN-US"}[和]{style="font-family:宋体"}[QoS]{lang="EN-US"}[配置指导"中的"[拥塞管理]{#_Toc263760148}"。]{style="font-family:宋体"}
+接口的期望带宽会对CBQ队列带宽有影响。具体介绍请参见"ACL和QoS配置指导"中的"[拥塞管理"。]
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1052348894}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x1116450530}[在静态]{style="font-family:宋体"}[PW]{lang="EN-US"}[上配置期望带宽为]{style="font-family:宋体"}[10000kbps]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在静态PW上配置期望带宽为10000kbps。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_1222201637}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname vsi vpn1
 
-[\[Sysname-vsi-vpn1\] pwsignaling static]{lang="EN-US"}
+Sysname-vsi-vpn1 pwsignaling static
 
-[\[Sysname-vsi-vpn1-static\] peer 5.5.5.5 pw-id 200 in-label 100 out-label 200]{lang="EN-US"}
+Sysname-vsi-vpn1-static peer 5.5.5.5 pw-id 200 in-label 100 out-label 200
 
-[\[Sysname-vsi-vpn1-static-5.5.5.5-200\] bandwidth 10000]{lang="EN-US"}
+Sysname-vsi-vpn1-static-5.5.5.5-200 bandwidth 10000
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_1478427868}[在]{style="font-family:宋体"}[LDP PW]{lang="EN-US"}[上配置期望带宽为]{style="font-family:宋体"}[10000kbps]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在LDP PW上配置期望带宽为10000kbps。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_1384149655}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname vsi vpn1
 
-[\[Sysname-vsi-vpn1\] pwsignaling ldp]{lang="EN-US"}
+Sysname-vsi-vpn1 pwsignaling ldp
 
-[\[Sysname-vsi-vpn1-ldp\] peer 4.4.4.4 pw-id 100]{lang="EN-US"}
+Sysname-vsi-vpn1-ldp peer 4.4.4.4 pw-id 100
 
-[\[Sysname-vsi-vpn1-ldp-4.4.4.4-100\] bandwidth 10000]{lang="EN-US"}
-:::
-
-::::: {#-1268862555 .myid}
-[]{#_Toc404791635}[]{#struct_0_10012_x1780_845909010}[]{#_Toc300843382}[]{#_Toc300843383}
+Sysname-vsi-vpn1-ldp-4.4.4.4-100 bandwidth 10000
 
 **VPLS \-- VPLS配置命令 \-- bandwidth（VSI view）**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![](VPLS命令.files/image001.png){width="62" height="26"}]{lang="EN-US"}]{#struct_0_10012_x1780_x263111014}
-:::
+!(VPLS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_10012_x1780_x2051238563}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[bandwidth]{lang="EN-US"}**]{#struct_0_10012_x1780_x1644000846}[命令用来配置]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的最大带宽。]{style="font-family:宋体"}
+**[bandwidth**]命令用来配置VSI的最大带宽。
 
-[**[undo bandwidth]{lang="EN-US"}**]{#struct_0_10012_x1780_x904678413}[命令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo bandwidth**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1396283003}
+【命令】
 
-[**[bandwidth ]{lang="EN-US"}***[bandwidth]{lang="EN-US"}*]{#struct_0_10012_x1780_x145229026}
+**[bandwidth ***bandwidth*]
 
-[**[undo bandwidth]{lang="EN-US"}**]{#struct_0_10012_x1780_x1205982691}
+**[undo bandwidth**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x426411927}
+【缺省情况】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x1643935310}[的最大带宽值为]{style="font-family:宋体"}[102400kbps]{lang="EN-US"}[。]{style="font-family:宋体"}
+VSI的最大带宽值为102400kbps。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x334558968}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1826522958}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1855644560}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1215357368}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1270980400}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1290803956}
+【参数】
 
-[*[bandwidth]{lang="EN-US"}*]{#struct_0_10012_x1780_x1643345486}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的最大带宽，取值为]{style="font-family:宋体"}[64]{lang="EN-US"}[～]{style="font-family:宋体"}[4194303]{lang="EN-US"}[，单位为]{style="font-family:宋体"}[kbps]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[bandwidth*]：VSI的最大带宽，取值为64～4194303，单位为kbps。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1797140130}
+【使用指导】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1914787982}[的最大带宽用来限制指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内创建的所有]{style="font-family:宋体"}[PW]{lang="EN-US"}[上转发的流量。限制的是]{style="font-family:宋体"}[PW]{lang="EN-US"}[入方向、出方向流量，还是同时限制入方向和出方向流量，以及超出最大带宽后如何处理，与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+VSI的最大带宽用来限制指定VSI内创建的所有PW上转发的流量。限制的是PW入方向、出方向流量，还是同时限制入方向和出方向流量，以及超出最大带宽后如何处理，与设备的型号有关，请以设备的实际情况为准。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_840137047}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x1643279950}[配置名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的最大带宽值为]{style="font-family:宋体"}[10240kbps]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置名为vpn1的VSI的最大带宽值为10240kbps。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x689597030}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname vsi vpn1
 
-[\[Sysname-vsi-vpn1\] bandwidth 10240]{lang="EN-US"}
+Sysname-vsi-vpn1 bandwidth 10240
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x949509476}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn vsi]{lang="EN-US"}**]{#struct_0_10012_x1780_x613406043}
-:::::
-
-::::: {#724706928 .myid}
-[]{#_Toc404791636}[]{#struct_0_10012_x1780_x1750025258}
+·**display l2vpn vsi**
 
 **VPLS \-- VPLS配置命令 \-- control-word enable**
 
 ------------------------------------------------------------------------
 
-[**[control-word enable]{lang="EN-US"}**]{#struct_0_10012_x1780_x195251673}[命令用来使能控制字功能。]{style="font-family:宋体"}
+**[control-word enable**]命令用来使能控制字功能。
 
-[**[undo control-word enable]{lang="EN-US"}**]{#struct_0_10012_x1780_x1643869773}[命令用来恢复缺省情况]{style="font-family:
-宋体"}[。]{style="font-family:宋体"}
+**[undo control-word enable**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_714090744}
+【命令】
 
-[**[control-word enable]{lang="EN-US"}**]{#struct_0_10012_x1780_1447748654}
+**[control-word enable**]
 
-[**[undo control-word enable]{lang="EN-US"}**]{#struct_0_10012_x1780_x590092206}
+**[undo control-word enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1250638858}
+【缺省情况】
 
-[[未使能控制字功能。]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1120220766}
+未使能控制字功能。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x929387237}
+【视图】
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x685732769}[模板视图]{style="font-family:宋体"}
+PW模板视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1643804237}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_108216049}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1495758668}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_848737146}
+【使用指导】
 
-[[控制字字段位于]{style="font-family:宋体"}[MPLS]{lang="EN-US"}]{#struct_0_10012_x1780_983238137}[标签栈和二层数据之间，用来携带额外的二层数据帧的控制信息，如序列号等。控制字具有如下功能：]{style="font-family:宋体"}
+控制字字段位于MPLS标签栈和二层数据之间，用来携带额外的二层数据帧的控制信息，如序列号等。控制字具有如下功能：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[避免报文乱序：在多路径转发的情况下，报文有可能产生乱序，此时可以通过控制字的序列号字段对报文进行排序重组。]{style="font-family:宋体"}]{#struct_0_10012_x1780_1251983018}
+·避免报文乱序：在多路径转发的情况下，报文有可能产生乱序，此时可以通过控制字的序列号字段对报文进行排序重组。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[指示净载荷长度：如果]{style="font-family:宋体"}]{#struct_0_10012_x1780_1221641754}PW[上传送报文的净载荷长度小于]{style="font-family:宋体"}64[字节，则需要对报文进行填充，以避免报文发送失败。此时，通过控制字的载荷长度字段可以确定原始载荷的长度，以便从填充后的报文中正确获取原始的报文载荷。]{style="font-family:宋体"}
+·指示净载荷长度：如果PW上传送报文的净载荷长度小于64字节，则需要对报文进行填充，以避免报文发送失败。此时，通过控制字的载荷长度字段可以确定原始载荷的长度，以便从填充后的报文中正确获取原始的报文载荷。
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VPLS命令.files/image002.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_10012_x1780_x187520972}
-:::
+![说明](VPLS命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[上述功能的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_10012_x1780_x1713486642}
-:::
+上述功能的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+本命令用来配置本端是否支持携带控制字字段。报文实际是否携带控制字字段，由两端的配置共同决定：如果两端PE上都使能了控制字功能，则报文中携带控制字字段；否则，报文中不携带控制字字段。
 
-[[本命令用来配置本端是否支持携带控制字字段。报文实际是否携带控制字字段，由两端的配置共同决定：如果两端]{style="font-family:宋体"}[PE]{lang="EN-US"}]{#struct_0_10012_x1780_x1643738701}[上都使能了控制字功能，则报文中携带控制字字段；否则，报文中不携带控制字字段。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_180765898}
+\# 使能PW模板pw100的控制字功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_1080936584}[使能]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板]{style="font-family:宋体"}[pw100]{lang="EN-US"}[的控制字功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_444489609}
+Sysname pw-class pw100
 
-[\[Sysname\] pw-class pw100]{lang="EN-US"}
+Sysname-pw-pw100 control-word enable
 
-[\[Sysname-pw-pw100\] control-word enable]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x71732798}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn pw-class]{lang="EN-US"}**]{#struct_0_10012_x1780_x1643673165}
-:::::
-
-::: {#-833925659 .myid}
-[]{#_Toc404791637}[]{#struct_0_10012_x1780_x741483367}
+·**display l2vpn pw-class**
 
 **VPLS \-- VPLS配置命令 \-- default-pw-id**
 
 ------------------------------------------------------------------------
 
-[**[default-pw-id]{lang="EN-US"}**]{#struct_0_10012_x1780_x1337090888}[命令用来配置]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的缺省]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[default-pw-id**]命令用来配置VSI的缺省PW ID。
 
-[**[undo default-pw-id]{lang="EN-US"}**]{#struct_0_10012_x1780_827486164}[命令用来删除为]{style="font-family:宋体"}[VSI]{lang="EN-US"}[配置的缺省]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo default-pw-id**]命令用来删除为VSI配置的缺省PW ID。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x2049647871}
+【命令】
 
-[**[default-pw-id ]{lang="EN-US"}***[default-pw-id]{lang="EN-US"}*]{#struct_0_10012_x1780_774654545}
+**[default-pw-id ***default-pw-id*]
 
-[**[undo ]{lang="EN-US"}[default-pw-id]{lang="EN-US"}**]{#struct_0_10012_x1780_211405814}
+**[undo default-pw-id**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x529752704}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x693245264}[的缺省]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+未配置VSI的缺省PW ID。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1644131917}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x541212058}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1989990542}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_927113435}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_925443425}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x2117898300}
+【参数】
 
-[*[default-pw-id]{lang="EN-US"}*]{#struct_0_10012_x1780_x1509882383}[：缺省]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[default-pw-id*]：缺省PW ID，取值范围为1～4294967295。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1085912485}
+【使用指导】
 
-[[通过本命令指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x1644066381}[的缺省]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[后，执行]{style="font-family:宋体"}**[backup-peer]{lang="EN-US"}**[、]{style="font-family:宋体"}**[peer]{lang="EN-US"}**[命令时，可以不指定]{style="font-family:宋体"}**[pw-id]{lang="EN-US"}**[ *pw-id*]{lang="EN-US"}[参数，创建的备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[、]{style="font-family:宋体"}[PW]{lang="EN-US"}[采用缺省]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[，从而简化配置。]{style="font-family:宋体"}
+通过本命令指定VSI的缺省PW ID后，执行**backup-peer**、**peer**命令时，可以不指定**pw-id** *pw-id*参数，创建的备份PW、PW采用缺省PW ID，从而简化配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1637138403}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x1449880342}[配置名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的缺省]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[为]{style="font-family:宋体"}[200]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置名为vpn1的VSI的缺省PW ID为200。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x1344692335}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname vsi vpn1
 
-[\[Sysname-vsi-vpn1\] default-pw-id 200]{lang="EN-US"}
+Sysname-vsi-vpn1 default-pw-id 200
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_832753019}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[backup-peer]{lang="EN-US"}**]{#struct_0_10012_x1780_x1941222117}
+·**backup-peer**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[peer]{lang="EN-US"}**]{#struct_0_10012_x1780_684040387}
-:::
-
-::: {#-1461383778 .myid}
-[]{#_Toc404791638}[]{#struct_0_10012_x1780_x574770887}
+·**peer**
 
 **VPLS \-- VPLS配置命令 \-- description**
 
 ------------------------------------------------------------------------
 
-[**[description]{lang="EN-US"}**]{#struct_0_10012_x1780_x1644000845}[命令用来设置]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的描述信息。]{style="font-family:宋体"}
+**[description**]命令用来设置VSI的描述信息。
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_10012_x1780_1824204942}[命令用来删除]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的描述信息。]{style="font-family:宋体"}
+**[undo description**]命令用来删除VSI的描述信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1313185350}
+【命令】
 
-[**[description ]{lang="EN-US"}***[text]{lang="EN-US"}*]{#struct_0_10012_x1780_x1410486402}
+**[description ***text*]
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_10012_x1780_x1459708347}
+**[undo description**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_2147258063}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_608754661}[的描述信息。]{style="font-family:宋体"}
+未配置VSI的描述信息。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x694861219}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_321237518}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1643935309}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_2038159563}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1068447856}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x843349120}
+【参数】
 
-[*[text]{lang="EN-US"}*]{#struct_0_10012_x1780_1177037410}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的描述信息，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[80]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[text*]：VSI的描述信息，为1～80个字符的字符串，区分大小写。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1281915917}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x460276397}[配置名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的描述信息为"]{style="font-family:宋体"}[vsi for vpn1]{lang="EN-US"}["。]{style="font-family:宋体"}
+\# 配置名为vpn1的VSI的描述信息为"vsi for vpn1"。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x1643345485}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname vsi vpn1
 
-[\[Sysname-vsi-vpn1\] description vsi for vpn1]{lang="EN-US"}
+Sysname-vsi-vpn1 description vsi for vpn1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_231056189}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn vsi]{lang="EN-US"}**]{#struct_0_10012_x1780_443909155}
-:::
-
-::: {#-499473616 .myid}
-[]{#_Toc339310130}[]{#_Toc404791639}[]{#struct_0_10012_x1780_1876890158}[]{#_Toc339885939}[]{#_Toc361662039}[]{#_Toc361662040}[]{#_Toc361662041}[]{#_Toc361662042}[]{#_Toc361662043}[]{#_Toc361662044}[]{#_Toc361662045}[]{#_Toc361662046}[]{#_Toc361662047}[]{#_Toc361662048}[]{#_Toc361662049}[]{#_Toc361662050}[]{#_Toc361662051}[]{#_Toc361662052}[]{#_Toc361662053}[]{#_Toc361662054}[]{#_Toc361662055}[]{#_Toc361662056}[]{#_Toc361662057}[]{#_Toc361662058}[]{#_Toc361662059}[]{#_Toc361662060}[]{#_Toc361662061}[]{#_Toc361662062}[]{#_Toc361662063}[]{#_Toc361662064}[]{#_Toc361662065}[]{#_Toc361662066}[]{#_Toc361662067}[]{#_Toc361662068}[]{#_Toc361662069}[]{#_Toc361662070}[]{#_Toc361662071}[]{#_Toc361662072}[]{#_Toc361662073}[]{#_Toc361662074}[]{#_Toc361662075}[]{#_Toc361662076}[]{#_Toc361662077}[]{#_Toc361662078}[]{#_Toc361662079}[]{#_Toc307388003}[]{#_Toc307232835}[]{#_Toc361662142}
+·**display l2vpn vsi**
 
 **VPLS \-- VPLS配置命令 \-- display bgp l2vpn auto-discovery**
 
 ------------------------------------------------------------------------
 
-[**[display bgp l2vpn auto-discovery]{lang="EN-US"}**]{#struct_0_10012_x1780_x722848766}[命令用来显示通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议自动发现的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[display bgp l2vpn auto-discovery**]命令用来显示通过BGP协议自动发现的VPLS PE信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1106290353}
+【命令】
 
-[**[display bgp l2vpn auto-discovery ]{lang="EN-US"}**[\[ **peer** *ip-address* { **advertised** \| **received** } \[ **statistics** \] \| **route-distinguisher** *route-distinguisher* \[ **pe-address** *ip-address* \[ **advertise-info** \] \] \| **statistics** \]]{lang="EN-US"}]{#struct_0_10012_x1780_x1549458385}
+**[display bgp l2vpn auto-discovery **[[ **peer** *ip-address* { **advertised** \| **received** } [ **statistics** ] \| **route-distinguisher** *route-distinguisher*  **pe-address** *ip-address* [ **advertise-info**  ] \| **statistics** ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1695712048}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1382919047}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1643804239}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1410813725}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10012_x1780_1584738522}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_499044918}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_10012_x1780_x1448531277}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x871691385}
+【参数】
 
-[**[peer]{lang="EN-US"}**[ *ip-address*]{lang="EN-US"}]{#struct_0_10012_x1780_824217134}[：]{style="font-family:宋体"}[显示向指定对等体发布或者从指定对等体收到的]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议自动发现]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息。]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*[表示]{style="font-family:宋体"}[对等体的地址。]{style="font-family:宋体"}
+**[peer** *ip-address*]：显示向指定对等体发布或者从指定对等体收到的BGP协议自动发现VPLS PE信息。*ip-address*表示对等体的地址。
 
-[**[advertised]{lang="EN-US"}**]{#struct_0_10012_x1780_164549149}[：显示向指定对等体发布的]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议自动发现]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[advertised**]：显示向指定对等体发布的BGP协议自动发现VPLS PE信息。
 
-[**[received]{lang="EN-US"}**]{#struct_0_10012_x1780_x1038436363}[：显示从指定对等体接收到的]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议自动发现]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[received**]：显示从指定对等体接收到的BGP协议自动发现VPLS PE信息。
 
-[**[statistics]{lang="EN-US"}**]{#struct_0_10012_x1780_x1643738703}[：显示]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议自动发现的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+**[statistics**]：显示BGP协议自动发现的VPLS PE的统计信息。
 
-[**[route-distinguisher]{lang="EN-US"}***[ route-distinguisher]{lang="EN-US"}*]{#struct_0_10012_x1780_x1309830031}[：显示通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议自动发现的指定路由标识符的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息。]{style="font-family:宋体"}*[route-distinguisher]{lang="EN-US"}*[为路由标识符，为]{style="font-family:宋体"}[3]{lang="EN-US"}[～]{style="font-family:宋体"}[21]{lang="EN-US"}[个字符的字符串。路由标识符有三种格式：]{style="font-family:宋体"}
+**[route-distinguisher*** route-distinguisher*]：显示通过BGP协议自动发现的指定路由标识符的VPLS PE信息。*route-distinguisher*为路由标识符，为3～21个字符的字符串。路由标识符有三种格式：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[16]{lang="EN-US"}]{#struct_0_10012_x1780_x1064275863}[位自治系统号]{style="font-family:宋体"}[:32]{lang="EN-US"}[位用户自定义数，例如：]{style="font-family:宋体"}[101:3]{lang="EN-US"}[。]{style="font-family:宋体"}
+·16位自治系统号:32位用户自定义数，例如：101:3。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[32]{lang="EN-US"}]{#struct_0_10012_x1780_x1011628414}[位]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[:16]{lang="EN-US"}[位用户自定义数，例如：]{style="font-family:宋体"}[192.168.122.15:1]{lang="EN-US"}[。]{style="font-family:宋体"}
+·32位IP地址:16位用户自定义数，例如：192.168.122.15:1。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[32]{lang="EN-US"}]{#struct_0_10012_x1780_x898735998}[位自治系统号]{style="font-family:宋体"}[:16]{lang="EN-US"}[位用户自定义数字，其中的自治系统号最小值为]{style="font-family:宋体"}[65536]{lang="EN-US"}[。]{style="font-family:宋体"}[例如：]{lang="EN-US" style="font-family:宋体"}[65536:1]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·32位自治系统号:16位用户自定义数字，其中的自治系统号最小值为65536。例如：65536:1。
 
-[**[pe-address ]{lang="EN-US"}***[ip-address]{lang="EN-US"}*]{#struct_0_10012_x1780_86934562}[：显示通过]{style="font-family:
-宋体"}[BGP]{lang="EN-US"}[协议自动发现的指定]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[的信息。]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*[为自动发现的]{style="font-family:宋体"}[PE]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[pe-address ***ip-address*]：显示通过BGP协议自动发现的指定VPLS PE的信息。*ip-address*为自动发现的PE的IP地址。
 
-[**[advertise-info]{lang="EN-US"}**]{#struct_0_10012_x1780_434909931}[：显示通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议自动发现的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[的通告信息。]{style="font-family:宋体"}
+**[advertise-info**]：显示通过BGP协议自动发现的VPLS PE的通告信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1828997191}
+【使用指导】
 
-[[执行本命令时，如果没有指定任何参数，则显示所有通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_702594599}[协议自动发现的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[的简要信息。]{style="font-family:宋体"}
+执行本命令时，如果没有指定任何参数，则显示所有通过BGP协议自动发现的VPLS PE的简要信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1643673167}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x1904282781}[显示所有通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议自动发现的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[的简要信息。]{style="font-family:宋体"}
+\# 显示所有通过BGP协议自动发现的VPLS PE的简要信息。
 
-[[\<Sysname\> display bgp l2vpn auto-discovery]{lang="EN-US"}]{#struct_0_10012_x1780_x2095359330}
+\<Sysname\> display bgp l2vpn auto-discovery
 
-[ ]{lang="EN-US"}
+ BGP local router ID is 192.168.1.140
 
-[ BGP local router ID is 192.168.1.140]{lang="EN-US"}
+ Status codes: \* - valid, \> - best, d - dampened, h - history,
 
-[ Status codes: \* - valid, \> - best, d - dampened, h - history,]{lang="EN-US"}
+               s - suppressed, S - stale, i - internal, e - external
 
-[               s - suppressed, S - stale, i - internal, e - external]{lang="EN-US"}
+               Origin: i - IGP, e - EGP, ? - incomplete
 
-[               Origin: i - IGP, e - EGP, ? - incomplete]{lang="EN-US"}
+ Total number of automatically discovered PEs: 3
 
-[ ]{lang="EN-US"}
+ Route distinguisher: 2:2
 
-[ Total number of automatically discovered PEs: 3]{lang="EN-US"}
+ Total number of automatically discovered PEs: 3
 
-[ ]{lang="EN-US"}
+     PE address      Nexthop         VPLS ID
 
-[ Route distinguisher: 2:2]{lang="EN-US"}
+\* \>  1.1.1.9         0.0.0.0         100:100
 
-[ Total number of automatically discovered PEs: 3]{lang="EN-US"}
+\* \>i 2.2.2.9         2.2.2.9         100:100
 
-[ ]{lang="EN-US"}
+\* \>i 3.3.3.9         3.3.3.9         100:100
 
-[     PE address      Nexthop         VPLS ID]{lang="EN-US"}
+表1-1 display bgp l2vpn auto-discovery命令简要显示信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[\* \>  1.1.1.9         0.0.0.0         100:100]{lang="EN-US"}
+描述
 
-[\* \>i 2.2.2.9         2.2.2.9         100:100]{lang="EN-US"}
+BGP local router ID
 
-[\* \>i 3.3.3.9         3.3.3.9         100:100]{lang="EN-US"}
+BGP本地路由器ID
 
-[[表1-1 ]{lang="EN-US"}[display bgp l2vpn auto-discovery]{lang="EN-US"}]{#struct_0_10012_x1780_60698}[命令简要显示信息描述表]{style="font-family:黑体"}
+Status codes
 
-[]{#table_struct_0_x1768091681}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1644131919}
-:::
+路由状态代码：
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1704011472}
+·\* - valid：合法路由
 
-[[BGP local router ID]{lang="EN-US"}]{#struct_0_10012_x1780_x785774365}
+·\> - best：普通优选路由
 
-[[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_x1252911238}[本地路由器]{style="font-family:宋体"}[ID]{lang="EN-US"}
+·d - damped：震荡抑制路由
 
-[[Status codes]{lang="EN-US"}]{#struct_0_10012_x1780_384936739}
+·h - history：历史路由
 
-[[路由状态代码：]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1154878475}
+·s - suppressed：聚合抑制路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[\* - valid]{lang="EN-US"}]{#struct_0_10012_x1780_x1644066383}[：合法路由]{lang="EN-US" style="font-family:宋体"}
+·S - Stale：过期路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[\> - best]{lang="EN-US"}]{#struct_0_10012_x1780_x474338989}[：普通优选路由]{lang="EN-US" style="font-family:宋体"}
+·i - internal：内部路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[d - damped]{lang="EN-US"}]{#struct_0_10012_x1780_608918862}[：震荡抑制路由]{lang="EN-US" style="font-family:宋体"}
+·e - external：外部路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[h - history]{lang="EN-US"}]{#struct_0_10012_x1780_x859786062}[：历史路由]{lang="EN-US" style="font-family:宋体"}
+Origin
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[s - suppressed]{lang="EN-US"}]{#struct_0_10012_x1780_x596494584}[：聚合抑制路由]{lang="EN-US" style="font-family:宋体"}
+通过BGP协议自动发现的VPLS PE信息的来源，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[S - Stale]{lang="EN-US"}]{#struct_0_10012_x1780_437975192}[：过期路由]{lang="EN-US" style="font-family:宋体"}
+·i -- IGP：表示产生于本AS内
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[i - internal]{lang="EN-US"}]{#struct_0_10012_x1780_x1644000847}[：内部路由]{lang="EN-US" style="font-family:宋体"}
+·e -- EGP：表示是通过EGP（Exterior Gateway Protocol，外部网关协议）学到的
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[e - external]{lang="EN-US"}]{#struct_0_10012_x1780_661405528}[：外部路由]{lang="EN-US" style="font-family:宋体"}
+·? -- incomplete：表示来源无法确定
 
-[[Origin]{lang="EN-US"}]{#struct_0_10012_x1780_87901560}
+Total number of automatically discovered PEs
 
-[[通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_x241552658}[协议自动发现的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息的来源，取值包括：]{style="font-family:宋体"}
+通过BGP协议自动发现的所有VPLS PE信息的总数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[i -- IGP]{lang="EN-US"}]{#struct_0_10012_x1780_x2024134658}[：表示产生于本]{lang="EN-US" style="font-family:宋体"}[AS]{lang="EN-US"}[内]{lang="EN-US" style="font-family:宋体"}
+Route distinguisher
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[e -- EGP]{lang="EN-US"}]{#struct_0_10012_x1780_x1643935311}[：表示是通过]{lang="EN-US" style="font-family:宋体"}[EGP]{lang="EN-US"}[（]{lang="EN-US" style="font-family:宋体"}[Exterior Gateway Protocol]{lang="EN-US"}[，外部网关协议）学到的]{lang="EN-US" style="font-family:
-  宋体"}
+路由标识符
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[? -- incomplete]{lang="EN-US"}]{#struct_0_10012_x1780_x1900642909}[：表示来源无法确定]{lang="EN-US" style="font-family:宋体"}
+Total number of automatically discovered PEs
 
-[[Total number of automatically discovered PEs]{lang="EN-US"}]{#struct_0_10012_x1780_x571159832}
+通过BGP协议自动发现的、路由标识符为指定值的VPLS PE信息数目
 
-[[通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_x116791159}[协议自动发现的所有]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息的总数]{style="font-family:宋体"}
+PE address
 
-[[Route distinguisher]{lang="EN-US"}]{#struct_0_10012_x1780_x1643345487}
+自动发现的远端PE在VPLS实例内的标识
 
-[[路由标识符]{style="font-family:宋体"}]{#struct_0_10012_x1780_x931743225}
+Nexthop
 
-[[Total number of automatically discovered PEs]{lang="EN-US"}]{#struct_0_10012_x1780_355358547}
+远端PE的地址
 
-[[通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_735106541}[协议自动发现的、路由标识符为指定值的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息数目]{style="font-family:宋体"}
+VPLS ID
 
-[[PE address]{lang="EN-US"}]{#struct_0_10012_x1780_x897661821}
+VPLS ID，用来标识PE所属的VPLS实例
 
-[[自动发现的远端]{style="font-family:宋体"}[PE]{lang="EN-US"}]{#struct_0_10012_x1780_x1643279951}[在]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[实例内的标识]{style="font-family:宋体"}
+\# 显示通过BGP协议自动发现的路由标识符为2:2、地址为2.2.2.9的VPLS PE的详细信息。
 
-[[Nexthop]{lang="EN-US"}]{#struct_0_10012_x1780_2039286325}
+\<Sysname\> display bgp l2vpn auto-discovery route-distinguisher 2:2 pe-address 2.2.2.9
 
-[[远端]{style="font-family:宋体"}[PE]{lang="EN-US"}]{#struct_0_10012_x1780_x474603744}[的地址]{style="font-family:宋体"}
+ BGP local router ID: 192.168.1.140
 
-[[VPLS ID]{lang="EN-US"}]{#struct_0_10012_x1780_1316255584}
+ Local AS number: 100
 
-[[VPLS ID]{lang="EN-US"}]{#struct_0_10012_x1780_x1643869778}[，用来标识]{style="font-family:宋体"}[PE]{lang="EN-US"}[所属的]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[实例]{style="font-family:宋体"}
+ Route distinguisher: 2:2
 
-[ ]{lang="EN-US"}
+ Total number of automatically discovered PEs: 1
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x1658562251}[显示通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议自动发现的路由标识符为]{style="font-family:宋体"}[2:2]{lang="EN-US"}[、地址为]{style="font-family:宋体"}[2.2.2.9]{lang="EN-US"}[的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[的详细信息。]{style="font-family:宋体"}
+ Paths:   1 available, 1 best
 
-[[\<Sysname\> display bgp l2vpn auto-discovery route-distinguisher 2:2 pe-address 2.2.2.9]{lang="EN-US"}]{#struct_0_10012_x1780_x1952801165}
+ From            : 2.2.2.9 (192.168.1.135)
 
-[ ]{lang="EN-US"}
+ Original nexthop: 2.2.2.9
 
-[ BGP local router ID: 192.168.1.140]{lang="EN-US"}
+ Ext-Community   : \<RT: 2:2\>, \<VPLS ID: 100:100\>
 
-[ Local AS number: 100]{lang="EN-US"}
+ AS-path         : (null)
 
-[ ]{lang="EN-US"}
+ Origin          : igp
 
-[ Route distinguisher: 2:2]{lang="EN-US"}
+ Attribute value : localpref 100, pref-val 0
 
-[ Total number of automatically discovered PEs: 1]{lang="EN-US"}
+ PE address      : 2.2.2.9
 
-[ Paths:   1 available, 1 best]{lang="EN-US"}
+ State           : valid, internal, best
 
-[ ]{lang="EN-US"}
+表1-2 display bgp l2vpn auto-discovery命令详细显示信息描述表
 
-[ From            : 2.2.2.9 (192.168.1.135)]{lang="EN-US"}
+字段
 
-[ Original nexthop: 2.2.2.9]{lang="EN-US"}
+描述
 
-[ Ext-Community   : \<RT: 2:2\>, \<VPLS ID: 100:100\>]{lang="EN-US"}
+BGP local router ID
 
-[ AS-path         : (null)]{lang="EN-US"}
+BGP本地路由器ID
 
-[ Origin          : igp]{lang="EN-US"}
+Local AS number
 
-[ Attribute value : localpref 100, pref-val 0]{lang="EN-US"}
+本地自治系统号
 
-[ PE address      : 2.2.2.9]{lang="EN-US"}
+Route distinguisher
 
-[ State           : valid, internal, best]{lang="EN-US"}
+路由标识符
 
-[[表1-2 ]{lang="EN-US"}[display bgp l2vpn auto-discovery]{lang="EN-US"}]{#struct_0_10012_x1780_751981255}[命令详细显示信息描述表]{style="font-family:黑体"}
+Total number of automatically discovered PEs
 
-[]{#table_struct_0_x1772865217}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1643804242}
+通过BGP协议自动发现的、路由标识符为指定值的VPLS PE信息总数
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_511828256}
+Paths
 
-[[BGP local router ID]{lang="EN-US"}]{#struct_0_10012_x1780_x1954084057}
+通过BGP协议自动发现的VPLS PE信息的数目：
 
-[[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_66529884}[本地路由器]{style="font-family:宋体"}[ID]{lang="EN-US"}
+·available：有效可达信息数目
 
-[[Local AS number]{lang="EN-US"}]{#struct_0_10012_x1780_x362759858}
+·best：最佳可达信息数目
 
-[[本地自治系统号]{style="font-family:宋体"}]{#struct_0_10012_x1780_x632098521}
+From
 
-[[Route distinguisher]{lang="EN-US"}]{#struct_0_10012_x1780_x1643738706}
+发布该信息的BGP对等体的IP地址
 
-[[路由标识符]{style="font-family:宋体"}]{#struct_0_10012_x1780_x2069344918}
+Original nexthop
 
-[[Total number of automatically discovered PEs]{lang="EN-US"}]{#struct_0_10012_x1780_1701285552}
+原始下一跳地址，如果是从BGP更新消息中获得的VPLS PE信息，则该地址为接收到的消息中的下一跳IP地址
 
-[[通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_1569155895}[协议自动发现的、路由标识符为指定值的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息总数]{style="font-family:宋体"}
+Ext-Community
 
-[[Paths]{lang="EN-US"}]{#struct_0_10012_x1780_x1705862486}
+扩展团体属性值，包括：
 
-[[通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_x1933662611}[协议自动发现的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息的数目：]{style="font-family:宋体"}
+·RT：Route Target属性
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[available]{lang="EN-US"}]{#struct_0_10012_x1780_x1643673170}[：有效可达信息数目]{lang="EN-US" style="font-family:宋体"}
+·VPLS ID：用来标识该PE所属的VPLS实例
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[best]{lang="EN-US"}]{#struct_0_10012_x1780_x1500932718}[：最佳可达信息数目]{lang="EN-US" style="font-family:宋体"}
+AS-path
 
-[[From]{lang="EN-US"}]{#struct_0_10012_x1780_2120120154}
+AS路径属性，记录了此VPLS PE信息经过的所有AS，可以避免环路的出现
 
-[[发布该信息的]{style="font-family:宋体"}[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_1305159417}[对等体的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+Origin
 
-[[Original nexthop]{lang="EN-US"}]{#struct_0_10012_x1780_x21217985}
+通过BGP协议自动发现的VPLS PE信息的起源代码，取值包括
 
-[[原始下一跳地址，如果是从]{style="font-family:宋体"}[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_x1644131922}[更新消息中获得的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息，则该地址为接收到的消息中的下一跳]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+·igp：表示可达信息来源于AS内部
 
-[[Ext-Community]{lang="EN-US"}]{#struct_0_10012_x1780_x944299977}
+·egp：表示可达信息通过EGP学习
 
-[[扩展团体属性值，包括：]{style="font-family:宋体"}]{#struct_0_10012_x1780_x669767144}
+·incomplete：表示可达信息的来源无法确定
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RT]{lang="EN-US"}]{#struct_0_10012_x1780_x38317657}[：]{style="font-family:宋体"}[Route Target]{lang="EN-US"}[属性]{style="font-family:宋体"}
+Attribute value
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VPLS ID]{lang="EN-US"}]{#struct_0_10012_x1780_x1999098472}[：用来标识该]{style="font-family:宋体"}[PE]{lang="EN-US"}[所属的]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[实例]{style="font-family:宋体"}
+通过BGP协议自动发现的VPLS PE信息的属性值，包括：
 
-[[AS-path]{lang="EN-US"}]{#struct_0_10012_x1780_x1644066386}
+·MED：与目的网络关联的MED值
 
-[[AS]{lang="EN-US"}]{#struct_0_10012_x1780_285175898}[路径属性，记录了此]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息经过的所有]{style="font-family:宋体"}[AS]{lang="EN-US"}[，可以避免环路的出现]{style="font-family:宋体"}
+·localpref：本地优先级
 
-[[Origin]{lang="EN-US"}]{#struct_0_10012_x1780_x2041791167}
+·pref-val：首选值
 
-[[通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_859686301}[协议自动发现的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息的起源代码，取值包括]{style="font-family:宋体"}
+·pre：协议优先级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[igp]{lang="EN-US"}]{#struct_0_10012_x1780_x1644000850}[：表示可达信息来源于]{style="font-family:宋体"}[AS]{lang="EN-US"}[内部]{style="font-family:宋体"}
+PE address
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[egp]{lang="EN-US"}]{#struct_0_10012_x1780_x2067412291}[：表示可达信息通过]{style="font-family:宋体"}[EGP]{lang="EN-US"}[学习]{style="font-family:宋体"}
+自动发现的远端PE在VPLS实例内的标识
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[incomplete]{lang="EN-US"}]{#struct_0_10012_x1780_x1435775629}[：表示可达信息的来源无法确定]{lang="EN-US" style="font-family:宋体"}
+State
 
-[[Attribute value]{lang="EN-US"}]{#struct_0_10012_x1780_447992878}
+通过BGP协议自动发现的VPLS PE信息的当前状态，取值包括：
 
-[[通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_x1643935314}[协议自动发现的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息的属性值，包括：]{style="font-family:宋体"}
+·valid：有效信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MED]{lang="EN-US"}]{#struct_0_10012_x1780_1634809500}[：与目的网络关联的]{style="font-family:宋体"}[MED]{lang="EN-US"}[值]{style="font-family:宋体"}
+·internal：内部信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[localpref]{lang="EN-US"}]{#struct_0_10012_x1780_1314210895}[：本地优先级]{lang="EN-US" style="font-family:宋体"}
+·external：外部信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[pref-val]{lang="EN-US"}]{#struct_0_10012_x1780_x594475682}[：首选值]{lang="EN-US" style="font-family:宋体"}
+·local：本地产生信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[pre]{lang="EN-US"}]{#struct_0_10012_x1780_x1643345490}[：协议优先级]{lang="EN-US" style="font-family:宋体"}
+·best：最佳信息
 
-[[PE address]{lang="EN-US"}]{#struct_0_10012_x1780_990505540}
+\# 显示通过BGP协议自动发现的VPLS PE的通告信息。
 
-[[自动发现的远端]{style="font-family:宋体"}[PE]{lang="EN-US"}]{#struct_0_10012_x1780_x1718646663}[在]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[实例内的标识]{style="font-family:宋体"}
+\<Sysname\> display bgp l2vpn auto-discovery route-distinguisher 2:2 pe-address 1.1.1.9 advertise-info
 
-[[State]{lang="EN-US"}]{#struct_0_10012_x1780_1192823727}
+ BGP local router ID: 192.168.1.140
 
-[[通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_x1643279954}[协议自动发现的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息的当前状态，取值包括：]{style="font-family:宋体"}
+ Local AS number: 100
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[valid]{lang="EN-US"}]{#struct_0_10012_x1780_1636001798}[：有效信息]{lang="EN-US" style="font-family:宋体"}
+ Route distinguisher: 2:2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[internal]{lang="EN-US"}]{#struct_0_10012_x1780_1608622200}[：内部信息]{lang="EN-US" style="font-family:宋体"}
+ Total number of automatically discovered PEs: 1
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[external]{lang="EN-US"}]{#struct_0_10012_x1780_x1113048463}[：外部信息]{lang="EN-US" style="font-family:宋体"}
+ Paths:   1 best
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[local]{lang="EN-US"}]{#struct_0_10012_x1780_x1643869777}[：本地产生信息]{lang="EN-US" style="font-family:宋体"}
+ VPLS ID         : 100:100
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[best]{lang="EN-US"}]{#struct_0_10012_x1780_x1255277724}[：最佳信息]{lang="EN-US" style="font-family:宋体"}
+ PE address      : 1.1.1.9
 
-[ ]{lang="EN-US"}
+ Advertised to peers (2 in total):
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x2077397471}[显示通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议自动发现的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[的通告信息。]{style="font-family:宋体"}
+    2.2.2.9
 
-[[\<Sysname\> display bgp l2vpn auto-discovery route-distinguisher 2:2 pe-address 1.1.1.9 advertise-info]{lang="EN-US"}]{#struct_0_10012_x1780_x1643804241}
+    3.3.3.9
 
-[ ]{lang="EN-US"}
+表1-3 display bgp l2vpn auto-discovery advertise-info命令显示信息描述表
 
-[ BGP local router ID: 192.168.1.140]{lang="EN-US"}
+字段
 
-[ Local AS number: 100]{lang="EN-US"}
+描述
 
-[ ]{lang="EN-US"}
+BGP local router ID
 
-[ Route distinguisher: 2:2]{lang="EN-US"}
+BGP本地路由器ID
 
-[ Total number of automatically discovered PEs: 1]{lang="EN-US"}
+Local AS number
 
-[ Paths:   1 best]{lang="EN-US"}
+本地自治系统号
 
-[ ]{lang="EN-US"}
+Route distinguisher
 
-[ VPLS ID         : 100:100]{lang="EN-US"}
+路由标识符
 
-[ PE address      : 1.1.1.9]{lang="EN-US"}
+Total number of automatically discovered PEs
 
-[ Advertised to peers (2 in total):]{lang="EN-US"}
+通过BGP协议自动发现的、路由标识符为指定值的VPLS PE信息数目
 
-[    2.2.2.9]{lang="EN-US"}
+Paths
 
-[    3.3.3.9]{lang="EN-US"}
+通过BGP协议自动发现的VPLS PE信息的数目：
 
-[[表1-3 ]{lang="EN-US"}[display bgp l2vpn auto-discovery advertise-info]{lang="EN-US"}]{#struct_0_10012_x1780_x1054255685}[命令显示信息描述表]{style="font-family:黑体"}
+·available：有效可达信息数目
 
-[]{#table_struct_0_x1776745377}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_x8142932}
+·best：最佳可达信息数目
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_928355853}
+VPLS ID
 
-[[BGP local router ID]{lang="EN-US"}]{#struct_0_10012_x1780_977989662}
+VPLS ID，用来标识PE所属的VPLS实例
 
-[[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_282070842}[本地路由器]{style="font-family:宋体"}[ID]{lang="EN-US"}
+PE address
 
-[[Local AS number]{lang="EN-US"}]{#struct_0_10012_x1780_x737620966}
+自动发现的远端PE在VPLS实例内的标识
 
-[[本地自治系统号]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1643738705}
+Advertised to peers (2 in total)
 
-[[Route distinguisher]{lang="EN-US"}]{#struct_0_10012_x1780_1822337851}
-
-[[路由标识符]{style="font-family:宋体"}]{#struct_0_10012_x1780_x25706651}
-
-[[Total number of automatically discovered PEs]{lang="EN-US"}]{#struct_0_10012_x1780_x665766398}
-
-[[通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_1043455247}[协议自动发现的、路由标识符为指定值的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息数目]{style="font-family:宋体"}
-
-[[Paths]{lang="EN-US"}]{#struct_0_10012_x1780_x47585923}
-
-[[通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_x1643673169}[协议自动发现的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息的数目：]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[available]{lang="EN-US"}]{#struct_0_10012_x1780_1584115461}[：有效可达信息数目]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="IT" style="font-size:10.0pt;font-family:Symbol"}[best]{lang="EN-US"}]{#struct_0_10012_x1780_x728121761}[：最佳可达信息数目]{lang="EN-US" style="font-family:宋体"}
-
-[[VPLS ID]{lang="EN-US"}]{#struct_0_10012_x1780_x443058835}
-
-[[VPLS ID]{lang="EN-US"}]{#struct_0_10012_x1780_x1510492861}[，用来标识]{style="font-family:宋体"}[PE]{lang="EN-US"}[所属的]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[实例]{style="font-family:宋体"}
-
-[[PE address]{lang="EN-US"}]{#struct_0_10012_x1780_x1644131921}
-
-[[自动发现的远端]{style="font-family:宋体"}[PE]{lang="EN-US"}]{#struct_0_10012_x1780_x1347584504}[在]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[实例内的标识]{style="font-family:宋体"}
-
-[[Advertised to peers (2 in total)]{lang="EN-US"}]{#struct_0_10012_x1780_92439144}
-
-[[该信息已经向哪些对等体发送，以及对等体的数目]{style="font-family:宋体"}]{#struct_0_10012_x1780_x2025954658}
-
-[ ]{lang="EN-US"}
-
-::: {#1061336316 .myid}
-[]{#_Toc336272262}[]{#_Toc336272265}[]{#_Toc404791640}[]{#struct_0_10012_x1780_x2057746363}[]{#_Toc339885970}[]{#_Toc337567367}[]{#_Toc353354474}[]{#_Toc353354475}[]{#_Toc353354476}[]{#_Toc353354477}[]{#_Toc353354478}[]{#_Toc353354479}[]{#_Toc353354480}[]{#_Toc353354481}[]{#_Toc353354482}[]{#_Toc353354483}[]{#_Toc353354484}[]{#_Toc353354485}[]{#_Toc353354486}[]{#_Toc353354487}[]{#_Toc353354488}[]{#_Toc353354489}[]{#_Toc353354490}[]{#_Toc353354491}[]{#_Toc353354492}[]{#_Toc353354493}[]{#_Toc353354494}[]{#_Toc353354495}[]{#_Toc353354496}[]{#_Toc353354497}[]{#_Toc353354498}[]{#_Toc353354499}[]{#_Toc353354500}[]{#_Toc353354501}[]{#_Toc353354502}[]{#_Toc353354503}[]{#_Toc353354504}[]{#_Toc353354505}[]{#_Toc353354506}[]{#_Toc353354507}[]{#_Toc353354508}[]{#_Toc353354509}[]{#_Toc353354510}[]{#_Toc353354511}[]{#_Toc353354512}[]{#_Toc353354513}[]{#_Toc353354514}[]{#_Toc353354515}[]{#_Toc353354516}[]{#_Toc353354517}[]{#_Toc353354518}[]{#_Toc353354519}[]{#_Toc353354520}[]{#_Toc353354521}[]{#_Toc353354522}[]{#_Toc353354523}[]{#_Toc353354565}[]{#_Toc339885941}[]{#_Toc339885942}[]{#_Toc339885943}[]{#_Toc339885944}[]{#_Toc339885945}[]{#_Toc339885946}[]{#_Toc339885947}[]{#_Toc339885948}[]{#_Toc339885949}[]{#_Toc339885950}[]{#_Toc339885951}[]{#_Toc339885952}[]{#_Toc339885953}[]{#_Toc339885954}[]{#_Toc339885955}[]{#_Toc339885956}[]{#_Toc339885969}
+该信息已经向哪些对等体发送，以及对等体的数目
 
 **VPLS \-- VPLS配置命令 \-- display bgp l2vpn signaling**
 
 ------------------------------------------------------------------------
 
-[**[display bgp l2vpn signaling]{lang="EN-US"}**]{#struct_0_10012_x1780_x1091846491}[命令用来显示]{style="font-family:
-宋体"}[BGP]{lang="EN-US"}[协议的]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[标签块信息。]{style="font-family:宋体"}
+**[display bgp l2vpn signaling**]命令用来显示BGP协议的VPLS标签块信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1644066385}
+【命令】
 
-[**[display bgp l2vpn signaling]{lang="EN-US"}**[ \[ **peer** *ip-address* { **advertised** \| **received** } \[ **statistics** \] \| **route-distinguisher** *route-distinguisher* \[ **site-id** *site-id* \[ **label-offset** *label-offset* \[ **advertise-info** \] \] \] \| **statistics** \]]{lang="EN-US"}]{#struct_0_10012_x1780_688460425}
+**[display bgp l2vpn signaling**[ [ **peer** *ip-address* { **advertised** \| **received** } [ **statistics** ] \| **route-distinguisher** *route-distinguisher*  **site-id** *site-id* [ **label-offset** *label-offset* [ **advertise-info**  ] ] \| **statistics** ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_691219248}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10012_x1780_x597230063}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_107619708}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1456110567}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10012_x1780_x481483532}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_946327632}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_10012_x1780_144649526}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1644000849}
+【参数】
 
-[**[peer]{lang="EN-US"}**[ *ip-address*]{lang="EN-US"}]{#struct_0_10012_x1780_x857624246}[：]{style="font-family:宋体"}[显示向指定对等体发布或者从指定对等体收到的]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[标签块信息。]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*[表示对等体的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[peer** *ip-address*]：显示向指定对等体发布或者从指定对等体收到的BGP协议VPLS标签块信息。*ip-address*表示对等体的IP地址。
 
-[**[advertised]{lang="EN-US"}**]{#struct_0_10012_x1780_x435216285}[：显示向指定对等体发布的]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[标签块信息。]{style="font-family:宋体"}
+**[advertised**]：显示向指定对等体发布的BGP协议VPLS标签块信息。
 
-[**[received]{lang="EN-US"}**]{#struct_0_10012_x1780_728103091}[：显示从指定对等体接收到的]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[标签块信息。]{style="font-family:宋体"}
+**[received**]：显示从指定对等体接收到的BGP协议VPLS标签块信息。
 
-[**[statistics]{lang="EN-US"}**]{#struct_0_10012_x1780_x1214620181}[：显示]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[标签块的统计信息。]{style="font-family:宋体"}
+**[statistics**]：显示BGP协议VPLS标签块的统计信息。
 
-[**[route-distinguisher]{lang="EN-US"}***[ route-distinguisher]{lang="EN-US"}*]{#struct_0_10012_x1780_273565859}[：显示指定路由标识符的]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[标签块信息。]{style="font-family:宋体"}*[route-distinguisher]{lang="EN-US"}*[为路由标识符，为]{style="font-family:宋体"}[3]{lang="EN-US"}[～]{style="font-family:宋体"}[21]{lang="EN-US"}[个字符的字符串。路由标识符有三种格式：]{style="font-family:宋体"}
+**[route-distinguisher*** route-distinguisher*]：显示指定路由标识符的BGP协议VPLS标签块信息。*route-distinguisher*为路由标识符，为3～21个字符的字符串。路由标识符有三种格式：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[16]{lang="EN-US"}]{#struct_0_10012_x1780_x73945686}[位自治系统号]{style="font-family:宋体"}[:32]{lang="EN-US"}[位用户自定义数，例如：]{style="font-family:宋体"}[101:3]{lang="EN-US"}[。]{style="font-family:宋体"}
+·16位自治系统号:32位用户自定义数，例如：101:3。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[32]{lang="EN-US"}]{#struct_0_10012_x1780_x1918764702}[位]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[:16]{lang="EN-US"}[位用户自定义数，例如：]{style="font-family:宋体"}[192.168.122.15:1]{lang="EN-US"}[。]{style="font-family:宋体"}
+·32位IP地址:16位用户自定义数，例如：192.168.122.15:1。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[32]{lang="EN-US"}]{#struct_0_10012_x1780_x1643935313}[位自治系统号]{style="font-family:宋体"}[:16]{lang="EN-US"}[位用户自定义数字，其中的自治系统号最小值为]{style="font-family:宋体"}[65536]{lang="EN-US"}[。]{style="font-family:宋体"}[例如：]{lang="EN-US" style="font-family:宋体"}[65536:1]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·32位自治系统号:16位用户自定义数字，其中的自治系统号最小值为65536。例如：65536:1。
 
-[**[site-id]{lang="EN-US"}***[ site-id]{lang="EN-US"}*]{#struct_0_10012_x1780_1231524973}[：显示为指定站点分配的]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[标签块信息。]{style="font-family:宋体"}*[site-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[站点编号，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[site-id*** site-id*]：显示为指定站点分配的BGP协议VPLS标签块信息。*site-id*为站点编号，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[**[label-offset ]{lang="EN-US"}***[label-offset]{lang="EN-US"}*]{#struct_0_10012_x1780_x777043449}[：显示标签块偏移量为指定值的]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[标签块信息。]{style="font-family:宋体"}*[label-offset]{lang="EN-US"}*[为标签块偏移量]{style="font-family:宋体"}[，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[label-offset ***label-offset*]：显示标签块偏移量为指定值的BGP协议VPLS标签块信息。*label-offset*为标签块偏移量，取值范围为0～65535。
 
-[**[advertise-info]{lang="EN-US"}**]{#struct_0_10012_x1780_x1477937615}[：显示]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[标签块的通告信息。]{style="font-family:宋体"}
+**[advertise-info**]：显示BGP协议VPLS标签块的通告信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_943435089}
+【使用指导】
 
-[[执行本命令时，如果没有指定任何参数，则显示所有]{style="font-family:宋体"}[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_x795397297}[协议]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[标签块的简要信息。]{style="font-family:宋体"}
+执行本命令时，如果没有指定任何参数，则显示所有BGP协议VPLS标签块的简要信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1473406347}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_2128317965}[显示所有]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[标签块的简要信息。]{style="font-family:宋体"}
+\# 显示所有BGP协议VPLS标签块的简要信息。
 
-[[\<Sysname\> display bgp l2vpn signaling]{lang="EN-US"}]{#struct_0_10012_x1780_x1643345489}
+\<Sysname\> display bgp l2vpn signaling
 
-[ ]{lang="EN-US"}
+ BGP local router ID is 192.168.1.135
 
-[ BGP local router ID is 192.168.1.135]{lang="EN-US"}
+ Status codes: \* - valid, \> - best, d - dampened, h - history,
 
-[ Status codes: \* - valid, \> - best, d - dampened, h - history,]{lang="EN-US"}
+               s - suppressed, S - stale, i - internal, e - external
 
-[               s - suppressed, S - stale, i - internal, e - external]{lang="EN-US"}
+               Origin: i - IGP, e - EGP, ? - incomplete
 
-[               Origin: i - IGP, e - EGP, ? - incomplete]{lang="EN-US"}
+ Total number of label blocks: 2
 
-[ ]{lang="EN-US"}
+ Route distinguisher: 2:2
 
-[ Total number of label blocks: 2]{lang="EN-US"}
+ Total number of label blocks: 2
 
-[ ]{lang="EN-US"}
+     Site ID  LB offset  LB range  LB base    Nexthop
 
-[ Route distinguisher: 2:2]{lang="EN-US"}
+\* \>  1        0          10        1034       0.0.0.0
 
-[ Total number of label blocks: 2]{lang="EN-US"}
+\* \>i 2        0          10        1162       192.3.3.3
 
-[ ]{lang="EN-US"}
+表1-4 display bgp l2vpn signaling命令简要显示信息描述表
 
-[     Site ID  LB offset  LB range  LB base    Nexthop]{lang="EN-US"}
+字段
 
-[ ]{lang="EN-US"}
+描述
 
-[\* \>  1        0          10        1034       0.0.0.0]{lang="EN-US"}
+BGP local router ID
 
-[\* \>i 2        0          10        1162       192.3.3.3]{lang="EN-US"}
+BGP本地路由器ID
 
-[[表1-4 ]{lang="EN-US"}[display bgp l2vpn signaling]{lang="EN-US"}]{#struct_0_10012_x1780_x2094542639}[命令简要显示信息描述表]{style="font-family:黑体"}
+Status codes
 
-[]{#table_struct_0_x1775708961}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_x842554094}
-:::
+路由状态代码：
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_1620459212}
+·\* - valid：合法路由
 
-[[BGP local router ID]{lang="EN-US"}]{#struct_0_10012_x1780_1453280463}
+·\> - best：普通优选路由
 
-[[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_x1643279953}[本地路由器]{style="font-family:宋体"}[ID]{lang="EN-US"}
+·d - damped：震荡抑制路由
 
-[[Status codes]{lang="EN-US"}]{#struct_0_10012_x1780_876486911}
+·h - history：历史路由
 
-[[路由状态代码：]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1094631906}
+·s - suppressed：聚合抑制路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[\* - valid]{lang="EN-US"}]{#struct_0_10012_x1780_681497641}[：合法路由]{lang="EN-US" style="font-family:宋体"}
+·S - Stale：过期路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[\> - best]{lang="EN-US"}]{#struct_0_10012_x1780_x585641604}[：普通优选路由]{lang="EN-US" style="font-family:宋体"}
+·i - internal：内部路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[d - damped]{lang="EN-US"}]{#struct_0_10012_x1780_x1872053818}[：震荡抑制路由]{lang="EN-US" style="font-family:宋体"}
+·e - external：外部路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[h - history]{lang="EN-US"}]{#struct_0_10012_x1780_x77785833}[：历史路由]{lang="EN-US" style="font-family:宋体"}
+Origin
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[s - suppressed]{lang="EN-US"}]{#struct_0_10012_x1780_2064670253}[：聚合抑制路由]{lang="EN-US" style="font-family:宋体"}
+标签块信息的来源，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[S - Stale]{lang="EN-US"}]{#struct_0_10012_x1780_x1254275182}[：过期路由]{lang="EN-US" style="font-family:宋体"}
+·i -- IGP：表示产生于本AS内
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[i - internal]{lang="EN-US"}]{#struct_0_10012_x1780_x647473294}[：内部路由]{lang="EN-US" style="font-family:宋体"}
+·e -- EGP：表示是通过EGP学到的
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[e - external]{lang="EN-US"}]{#struct_0_10012_x1780_1243454651}[：外部路由]{lang="EN-US" style="font-family:宋体"}
+·? -- incomplete：表示来源无法确定
 
-[[Origin]{lang="EN-US"}]{#struct_0_10012_x1780_x77720297}
+Total number of label blocks
 
-[[标签块信息的来源，取值包括：]{style="font-family:宋体"}]{#struct_0_10012_x1780_1211230989}
+所有标签块信息的总数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[i -- IGP]{lang="EN-US"}]{#struct_0_10012_x1780_1828586847}[：表示产生于本]{lang="EN-US" style="font-family:宋体"}[AS]{lang="EN-US"}[内]{lang="EN-US" style="font-family:宋体"}
+Route distinguisher
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[e -- EGP]{lang="EN-US"}]{#struct_0_10012_x1780_1453017603}[：表示是通过]{style="font-family:宋体"}[EGP]{lang="EN-US"}[学到的]{style="font-family:宋体"}
+路由标识符
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[? -- incomplete]{lang="EN-US"}]{#struct_0_10012_x1780_x581634860}[：表示来源无法确定]{lang="EN-US" style="font-family:宋体"}
+Total number of label blocks
 
-[[Total number of label blocks]{lang="EN-US"}]{#struct_0_10012_x1780_x77654761}
+路由标识符为指定值的标签块信息的数目
 
-[[所有标签块信息的总数]{style="font-family:宋体"}]{#struct_0_10012_x1780_1971603813}
+Site ID
 
-[[Route distinguisher]{lang="EN-US"}]{#struct_0_10012_x1780_x2114279073}
+站点编号
 
-[[路由标识符]{style="font-family:宋体"}]{#struct_0_10012_x1780_x104040424}
+LB offset
 
-[[Total number of label blocks]{lang="EN-US"}]{#struct_0_10012_x1780_x77589225}
+标签块偏移量
 
-[[路由标识符为指定值的标签块信息的数目]{style="font-family:宋体"}]{#struct_0_10012_x1780_x2144736203}
+LB range
 
-[[Site ID]{lang="EN-US"}]{#struct_0_10012_x1780_x631744466}
+标签块大小
 
-[[站点编号]{style="font-family:宋体"}]{#struct_0_10012_x1780_2045710411}
+LB base
 
-[[LB offset]{lang="EN-US"}]{#struct_0_10012_x1780_972175157}
+标签块的初始标签值
 
-[[标签块偏移量]{style="font-family:宋体"}]{#struct_0_10012_x1780_x78047977}
+Nexthop
 
-[[LB range]{lang="EN-US"}]{#struct_0_10012_x1780_621810867}
+远端PE的地址
 
-[[标签块大小]{style="font-family:宋体"}]{#struct_0_10012_x1780_1223265304}
+\# 显示路由标识符为1:1、为站点2分配的、标签块偏移量为0的BGP协议VPLS标签块的详细信息。
 
-[[LB base]{lang="EN-US"}]{#struct_0_10012_x1780_2053953105}
+\<Sysname\> display bgp l2vpn signaling route-distinguisher 1:1 site-id 2 label-offset 0
 
-[[标签块的初始标签值]{style="font-family:宋体"}]{#struct_0_10012_x1780_x77982441}
+ BGP local router ID: 192.168.1.140
 
-[[Nexthop]{lang="EN-US"}]{#struct_0_10012_x1780_x1282550417}
+ Local AS number: 100
 
-[[远端]{style="font-family:宋体"}[PE]{lang="EN-US"}]{#struct_0_10012_x1780_x1576122665}[的地址]{style="font-family:宋体"}
+ Route distinguisher: 1:1
 
-[ ]{lang="EN-US"}
+ Total number of label blocks: 1
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_1959102292}[显示路由标识符为]{style="font-family:宋体"}[1:1]{lang="EN-US"}[、为站点]{style="font-family:宋体"}[2]{lang="EN-US"}[分配的、标签块偏移量为]{style="font-family:宋体"}[0]{lang="EN-US"}[的]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[标签块的详细信息。]{style="font-family:宋体"}
+ Paths:   1 available, 1 best
 
-[[\<Sysname\> display bgp l2vpn signaling route-distinguisher 1:1 site-id 2 label-offset 0]{lang="EN-US"}]{#struct_0_10012_x1780_x77916905}
+ From            : 2.2.2.9 (192.168.1.135)
 
-[ ]{lang="EN-US"}
+ Original nexthop: 2.2.2.9
 
-[ BGP local router ID: 192.168.1.140]{lang="EN-US"}
+ Ext-Community   : \<RT: 1:1\>, \<L2VPN info: MTU 1500, Encap type BGP VPLS\>
 
-[ Local AS number: 100]{lang="EN-US"}
+ AS-path         : (null)
 
-[ ]{lang="EN-US"}
+ Origin          : igp
 
-[ Route distinguisher: 1:1]{lang="EN-US"}
+ Attribute value : localpref 100, pref-val 0
 
-[ Total number of label blocks: 1]{lang="EN-US"}
+ Site ID         : 2
 
-[ Paths:   1 available, 1 best]{lang="EN-US"}
+ LB offset       : 0
 
-[ ]{lang="EN-US"}
+ LB base         : 1418
 
-[ From            : 2.2.2.9 (192.168.1.135)]{lang="EN-US"}
+ LB range        : 10
 
-[ Original nexthop: 2.2.2.9]{lang="EN-US"}
+ State           : valid, internal, best
 
-[ Ext-Community   : \<RT: 1:1\>, \<L2VPN info: MTU 1500, Encap type BGP VPLS\>]{lang="EN-US"}
+表1-5 display bgp l2vpn signaling命令详细显示信息描述表
 
-[ AS-path         : (null)]{lang="EN-US"}
+字段
 
-[ Origin          : igp]{lang="EN-US"}
+描述
 
-[ Attribute value : localpref 100, pref-val 0]{lang="EN-US"}
+BGP local router ID
 
-[ Site ID         : 2]{lang="EN-US"}
+BGP本地路由器ID
 
-[ LB offset       : 0]{lang="EN-US"}
+Local AS number
 
-[ LB base         : 1418]{lang="EN-US"}
+本地自治系统号
 
-[ LB range        : 10]{lang="EN-US"}
+Route distinguisher
 
-[ State           : valid, internal, best]{lang="EN-US"}
+路由标识符
 
-[[表1-5 ]{lang="EN-US"}[display bgp l2vpn signaling]{lang="EN-US"}]{#struct_0_10012_x1780_x1642272637}[命令详细显示信息描述表]{style="font-family:黑体"}
+Total number of label blocks
 
-[]{#table_struct_0_x1746479329}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1761938661}
+路由标识符为指定值的标签块信息的总数
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1115493704}
+Paths
 
-[[BGP local router ID]{lang="EN-US"}]{#struct_0_10012_x1780_x77851369}
+标签块信息的数目：
 
-[[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_x2043447551}[本地路由器]{style="font-family:宋体"}[ID]{lang="EN-US"}
+·available：有效可达信息条数
 
-[[Local AS number]{lang="EN-US"}]{#struct_0_10012_x1780_770460040}
+·best：最佳可达信息条数
 
-[[本地自治系统号]{style="font-family:宋体"}]{#struct_0_10012_x1780_113641789}
+From
 
-[[Route distinguisher]{lang="EN-US"}]{#struct_0_10012_x1780_x61622579}
+发布该信息的BGP对等体的IP地址
 
-[[路由标识符]{style="font-family:宋体"}]{#struct_0_10012_x1780_x77779004}
+Original nexthop
 
-[[Total number of label blocks]{lang="EN-US"}]{#struct_0_10012_x1780_x77261545}
+原始下一跳地址，如果是从BGP更新消息中获得的标签块信息，则该地址为接收到的消息中的下一跳IP地址
 
-[[路由标识符为指定值的标签块信息的总数]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1631952746}
+Ext-Community
 
-[[Paths]{lang="EN-US"}]{#struct_0_10012_x1780_x2055192298}
+扩展团体属性值，包括：
 
-[[标签块信息的数目：]{style="font-family:宋体"}]{#struct_0_10012_x1780_x331096888}
+·RT：Route Target属性
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[available]{lang="EN-US"}]{#struct_0_10012_x1780_x1806567311}[：有效可达信息条数]{lang="EN-US" style="font-family:宋体"}
+·L2VPN info：L2VPN相关信息，包括MTU值、封装类型（Encap type）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[best]{lang="EN-US"}]{#struct_0_10012_x1780_x77196009}[：最佳可达信息条数]{style="font-family:宋体"}
+AS-path
 
-[[From]{lang="EN-US"}]{#struct_0_10012_x1780_41419498}
+AS路径属性，记录了此标签块信息经过的所有AS，可以避免环路的出现
 
-[[发布该信息的]{style="font-family:宋体"}[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_820595936}[对等体的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+Origin
 
-[[Original nexthop]{lang="EN-US"}]{#struct_0_10012_x1780_1750554643}
+标签块信息的起源代码，取值包括：
 
-[[原始下一跳地址，如果是从]{style="font-family:宋体"}[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_365122045}[更新消息中获得的标签块信息，则该地址为接收到的消息中的下一跳]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+·igp：表示可达信息来源于AS内部
 
-[[Ext-Community]{lang="EN-US"}]{#struct_0_10012_x1780_x77785832}
+·egp：表示可达信息通过EGP学习
 
-[[扩展团体属性值，包括：]{style="font-family:宋体"}]{#struct_0_10012_x1780_2064670252}
+·incomplete：表示可达信息的来源无法确定
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RT]{lang="EN-US"}]{#struct_0_10012_x1780_x1254340718}[：]{style="font-family:宋体"}[Route Target]{lang="EN-US"}[属性]{style="font-family:宋体"}
+Attribute value
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[L2VPN ]{lang="EN-US"}]{#struct_0_10012_x1780_x1159026987}[i]{lang="EN-US"}[nfo]{lang="EN-US"}[：]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[相关信息，包括]{style="font-family:宋体"}[MTU]{lang="EN-US"}[值、封装类型（]{style="font-family:宋体"}[Encap ]{lang="EN-US"}[t]{lang="EN-US"}[ype]{lang="EN-US"}[）]{style="font-family:宋体"}
+标签块信息的属性值，包括：
 
-[[AS-path]{lang="EN-US"}]{#struct_0_10012_x1780_x77720296}
+·MED：与目的网络关联的MED值
 
-[[AS]{lang="EN-US"}]{#struct_0_10012_x1780_1211230988}[路径属性，记录了此标签块信息经过的所有]{style="font-family:宋体"}[AS]{lang="EN-US"}[，可以避免环路的出现]{style="font-family:宋体"}
+·localpref：本地优先级
 
-[[Origin]{lang="EN-US"}]{#struct_0_10012_x1780_1828521311}
+·pref-val：首选值
 
-[[标签块信息的起源代码，取值包括：]{style="font-family:宋体"}]{#struct_0_10012_x1780_1454942169}
+·pre：协议优先级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[igp]{lang="EN-US"}]{#struct_0_10012_x1780_1627863734}[：表示可达信息来源于]{style="font-family:宋体"}[AS]{lang="EN-US"}[内部]{style="font-family:宋体"}
+Site ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[egp]{lang="EN-US"}]{#struct_0_10012_x1780_x77654760}[：表示可达信息通过]{style="font-family:宋体"}[EGP]{lang="EN-US"}[学习]{style="font-family:宋体"}
+站点编号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[incomplete]{lang="EN-US"}]{#struct_0_10012_x1780_1971603814}[：表示可达信息的来源无法确定]{lang="EN-US" style="font-family:宋体"}
+LB offset
 
-[[Attribute value]{lang="EN-US"}]{#struct_0_10012_x1780_x2113951393}
+标签块偏移量
 
-[[标签块信息的属性值，包括：]{style="font-family:宋体"}]{#struct_0_10012_x1780_844978716}
+LB base
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MED]{lang="EN-US"}]{#struct_0_10012_x1780_x77589224}[：与目的网络关联的]{style="font-family:宋体"}[MED]{lang="EN-US"}[值]{style="font-family:宋体"}
+标签块的初始标签值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[localpref]{lang="EN-US"}]{#struct_0_10012_x1780_x2144736204}[：本地优先级]{style="font-family:宋体"}
+LB range
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[pref-val]{lang="EN-US"}]{#struct_0_10012_x1780_1290569835}[：首选值]{style="font-family:宋体"}
+标签块大小
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[pre]{lang="EN-US"}]{#struct_0_10012_x1780_x1449116010}[：协议优先级]{style="font-family:宋体"}
+State
 
-[[Site ID]{lang="EN-US"}]{#struct_0_10012_x1780_x78047976}
+标签块信息的当前状态，取值包括：
 
-[[站点编号]{style="font-family:宋体"}]{#struct_0_10012_x1780_621810866}
+·valid：有效信息
 
-[[LB offset]{lang="EN-US"}]{#struct_0_10012_x1780_1223265305}
+·internal：内部信息
 
-[[标签块偏移量]{style="font-family:宋体"}]{#struct_0_10012_x1780_2053887569}
+·external：外部信息
 
-[[LB base]{lang="EN-US"}]{#struct_0_10012_x1780_x77982440}
+·local：本地产生信息
 
-[[标签块的初始标签值]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1282550418}
+·best：最佳信息
 
-[[LB range]{lang="EN-US"}]{#struct_0_10012_x1780_1508991050}
+\# 显示指定VPLS标签块的通告信息。
 
-[[标签块大小]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1226926240}
+\<Sysname\> display bgp l2vpn signaling route-distinguisher 1:1 site-id 1 label-offset 0 advertise-info
 
-[[State]{lang="EN-US"}]{#struct_0_10012_x1780_x77916904}
+ BGP local router ID: 192.168.1.140
 
-[[标签块信息的当前状态，取值包括：]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1642272636}
+ Local AS number: 100
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[valid]{lang="EN-US"}]{#struct_0_10012_x1780_x195854720}[：有效信息]{style="font-family:宋体"}
+ Route distinguisher: 1:1
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[internal]{lang="EN-US"}]{#struct_0_10012_x1780_x77851368}[：内部信息]{style="font-family:宋体"}
+ Total number of label blocks: 1
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[external]{lang="EN-US"}]{#struct_0_10012_x1780_x2043447550}[：外部信息]{style="font-family:宋体"}
+ Paths:   1 best
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[local]{lang="EN-US"}]{#struct_0_10012_x1780_x795623901}[：本地产生信息]{style="font-family:宋体"}
+ Site ID         : 1
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[best]{lang="EN-US"}]{#struct_0_10012_x1780_525322389}[：最佳信息]{lang="EN-US" style="font-family:宋体"}
+ LB offset       : 0
 
-[ ]{lang="EN-US"}
+ LB base         : 1418
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x77261544}[显示指定]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[标签块的通告信息。]{style="font-family:宋体"}
+ LB range        : 10
 
-[[\<Sysname\> display bgp l2vpn signaling route-distinguisher 1:1 site-id 1 label-offset 0 advertise-info]{lang="EN-US"}]{#struct_0_10012_x1780_x1631952747}
+ Advertised to peers (2 in total):
 
-[ ]{lang="EN-US"}
+    2.2.2.9
 
-[ BGP local router ID: 192.168.1.140]{lang="EN-US"}
+    3.3.3.9
 
-[ Local AS number: 100]{lang="EN-US"}
+表1-6 display bgp l2vpn signaling advertise-info命令显示信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[ Route distinguisher: 1:1]{lang="EN-US"}
+描述
 
-[ Total number of label blocks: 1]{lang="EN-US"}
+BGP local router ID
 
-[ Paths:   1 best]{lang="EN-US"}
+BGP本地路由器ID
 
-[ ]{lang="EN-US"}
+Local AS number
 
-[ Site ID         : 1]{lang="EN-US"}
+本地自治系统号
 
-[ LB offset       : 0]{lang="EN-US"}
+Route distinguisher
 
-[ LB base         : 1418]{lang="EN-US"}
+路由标识符
 
-[ LB range        : 10]{lang="EN-US"}
+Total number of label blocks
 
-[ Advertised to peers (2 in total):]{lang="EN-US"}
+路由标识符为指定值的标签块信息总数
 
-[    2.2.2.9]{lang="EN-US"}
+Paths
 
-[    3.3.3.9]{lang="EN-US"}
+标签块信息的数目：
 
-[[表1-6 ]{lang="EN-US"}[display bgp l2vpn signaling advertise-info]{lang="EN-US"}]{#struct_0_10012_x1780_673691057}[命令显示信息描述表]{style="font-family:黑体"}
+·available：有效可达信息数目
 
-[]{#table_struct_0_x1755989825}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_x555419585}
+·best：最佳可达信息数目
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_x77196008}
+Site ID
 
-[[BGP local router ID]{lang="EN-US"}]{#struct_0_10012_x1780_41419499}
+站点编号
 
-[[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_x1518056224}[本地路由器]{style="font-family:宋体"}[ID]{lang="EN-US"}
+LB offset
 
-[[Local AS number]{lang="EN-US"}]{#struct_0_10012_x1780_x153357939}
+标签块偏移量
 
-[[本地自治系统号]{style="font-family:宋体"}]{#struct_0_10012_x1780_x474037778}
+LB base
 
-[[Route distinguisher]{lang="EN-US"}]{#struct_0_10012_x1780_x77785835}
+标签块的初始标签值
 
-[[路由标识符]{style="font-family:宋体"}]{#struct_0_10012_x1780_2064670247}
+LB range
 
-[[Total number of label blocks]{lang="EN-US"}]{#struct_0_10012_x1780_x1254537327}
+标签块大小
 
-[[路由标识符为指定值的标签块信息总数]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1901865679}
+Advertised to peers (2 in total)
 
-[[Paths]{lang="EN-US"}]{#struct_0_10012_x1780_x167724202}
-
-[[标签块信息的数目：]{style="font-family:宋体"}]{#struct_0_10012_x1780_1932850131}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[available]{lang="EN-US"}]{#struct_0_10012_x1780_x77720299}[：有效可达信息数目]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="IT" style="font-size:10.0pt;font-family:Symbol"}[best]{lang="EN-US"}]{#struct_0_10012_x1780_1211230987}[：最佳可达信息数目]{lang="EN-US" style="font-family:宋体"}
-
-[[Site ID]{lang="EN-US"}]{#struct_0_10012_x1780_1828980063}
-
-[[站点编号]{style="font-family:宋体"}]{#struct_0_10012_x1780_1086206651}
-
-[[LB offset]{lang="EN-US"}]{#struct_0_10012_x1780_826892525}
-
-[[标签块偏移量]{style="font-family:宋体"}]{#struct_0_10012_x1780_x77654763}
-
-[[LB base]{lang="EN-US"}]{#struct_0_10012_x1780_1971603815}
-
-[[标签块的初始标签值]{style="font-family:宋体"}]{#struct_0_10012_x1780_x2113885857}
-
-[[LB range]{lang="EN-US"}]{#struct_0_10012_x1780_x1366909018}
-
-[[标签块大小]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1295088151}
-
-[[Advertised to peers (2 in total)]{lang="EN-US"}]{#struct_0_10012_x1780_x77589227}
-
-[[该信息已经向哪些对等体发送，以及对等体的数目]{style="font-family:宋体"}]{#struct_0_10012_x1780_x2144736201}
-
-[[ ]{lang="EN-US"}]{#_Toc336272266}
-
-::: {#1833502486 .myid}
-[]{#_Toc404791641}[]{#struct_0_10012_x1780_x1110701673}[]{#_Toc339310131}[]{#_Toc353354567}[]{#_Toc353354568}[]{#_Toc353354569}[]{#_Toc353354570}[]{#_Toc353354571}[]{#_Toc353354572}[]{#_Toc353354573}[]{#_Toc353354574}[]{#_Toc353354575}[]{#_Toc353354576}[]{#_Toc353354577}[]{#_Toc353354578}[]{#_Toc353354579}[]{#_Toc353354580}[]{#_Toc353354581}[]{#_Toc353354582}[]{#_Toc353354583}[]{#_Toc353354584}[]{#_Toc353354585}[]{#_Toc353354586}[]{#_Toc353354587}[]{#_Toc353354588}[]{#_Toc353354589}[]{#_Toc353354590}[]{#_Toc353354591}[]{#_Toc353354592}[]{#_Toc353354593}[]{#_Toc353354594}[]{#_Toc353354595}[]{#_Toc353354596}[]{#_Toc353354597}[]{#_Toc353354598}[]{#_Toc353354599}[]{#_Toc353354600}[]{#_Toc353354601}[]{#_Toc353354602}[]{#_Toc353354603}[]{#_Toc353354604}[]{#_Toc353354605}[]{#_Toc353354606}[]{#_Toc353354607}[]{#_Toc353354608}[]{#_Toc353354609}[]{#_Toc353354610}[]{#_Toc353354611}[]{#_Toc353354612}[]{#_Toc353354613}[]{#_Toc353354614}[]{#_Toc353354615}[]{#_Toc353354616}[]{#_Toc353354664}[]{#_Toc361662145}[]{#_Toc361662146}[]{#_Toc361662147}[]{#_Toc361662148}[]{#_Toc361662149}[]{#_Toc361662150}[]{#_Toc361662151}[]{#_Toc361662152}[]{#_Toc361662153}[]{#_Toc361662154}[]{#_Toc361662155}[]{#_Toc361662156}[]{#_Toc361662157}[]{#_Toc361662158}[]{#_Toc361662159}[]{#_Toc361662160}[]{#_Toc361662161}[]{#_Toc361662162}[]{#_Toc361662163}[]{#_Toc361662164}[]{#_Toc361662165}[]{#_Toc361662166}[]{#_Toc361662167}[]{#_Toc361662168}[]{#_Toc361662169}[]{#_Toc361662170}[]{#_Toc361662171}[]{#_Toc361662211}[]{#_Toc361662212}[]{#_Toc361662213}[]{#_Toc361662214}[]{#_Toc361662215}[]{#_Toc361662216}[]{#_Toc361662217}[]{#_Toc361662218}[]{#_Toc361662219}[]{#_Toc361662220}[]{#_Toc361662221}[]{#_Toc361662222}[]{#_Toc361662223}[]{#_Toc361662224}[]{#_Toc361662225}[]{#_Toc361662226}[]{#_Toc361662227}[]{#_Toc361662228}[]{#_Toc361662229}[]{#_Toc361662230}[]{#_Toc361662231}[]{#_Toc361662232}[]{#_Toc361662233}[]{#_Toc361662234}[]{#_Toc361662235}[]{#_Toc361662236}[]{#_Toc361662237}[]{#_Toc361662238}[]{#_Toc361662239}[]{#_Toc361662240}[]{#_Toc361662241}[]{#_Toc361662242}[]{#_Toc361662243}[]{#_Toc361662244}[]{#_Toc361662245}[]{#_Toc361662341}[]{#_Toc361662342}[]{#_Toc361662343}[]{#_Toc361662344}[]{#_Toc361662345}[]{#_Toc361662346}[]{#_Toc361662347}[]{#_Toc361662348}[]{#_Toc361662349}[]{#_Toc361662350}[]{#_Toc361662351}[]{#_Toc361662352}[]{#_Toc361662353}[]{#_Toc361662354}[]{#_Toc361662376}[]{#_Toc361662377}[]{#_Toc361662378}[]{#_Toc361662379}[]{#_Toc361662380}[]{#_Toc361662381}[]{#_Toc361662382}[]{#_Toc361662383}[]{#_Toc361662384}[]{#_Toc361662385}[]{#_Toc361662386}[]{#_Toc361662387}[]{#_Toc361662388}[]{#_Toc361662389}[]{#_Toc361662390}[]{#_Toc361662391}[]{#_Toc361662392}[]{#_Toc361662393}[]{#_Toc361662394}[]{#_Toc361662395}[]{#_Toc361662396}[]{#_Toc361662397}[]{#_Toc361662398}[]{#_Toc361662399}[]{#_Toc361662400}[]{#_Toc361662401}[]{#_Toc361662402}[]{#_Toc361662403}[]{#_Toc361662404}[]{#_Toc361662405}[]{#_Toc361662406}[]{#_Toc361662407}[]{#_Toc361662408}[]{#_Toc361662409}[]{#_Toc361662410}[]{#_Toc361662411}[]{#_Toc361662412}[]{#_Toc361662413}[]{#_Toc361662414}[]{#_Toc361662415}[]{#_Toc361662416}[]{#_Toc361662417}[]{#_Toc361662418}[]{#_Toc361662459}
+该信息已经向哪些对等体发送，以及对等体的数目
 
 **VPLS \-- VPLS配置命令 \-- display l2vpn auto-discovery**
 
 ------------------------------------------------------------------------
 
-[**[display l2vpn auto-discovery]{lang="EN-US"}**]{#struct_0_10012_x1780_1491349933}[命令用来显示]{style="font-family:
-宋体"}[VPLS]{lang="EN-US"}[的自动发现信息。]{style="font-family:宋体"}
+**[display l2vpn auto-discovery**]命令用来显示VPLS的自动发现信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x2010848038}
+【命令】
 
-[**[display l2vpn auto-discovery ]{lang="EN-US"}**[\[ **peer** *ip-address* \] \[ **vsi** *vsi-name* \]]{lang="EN-US"}]{#struct_0_10012_x1780_x78505789}
+**[display l2vpn auto-discovery ** **peer** *ip-address* ]  **vsi** *vsi-name*
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_743743951}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10012_x1780_591735533}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x500411880}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_152462852}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10012_x1780_x1621698445}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1301193920}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_10012_x1780_x2010651430}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_2061888594}
+【参数】
 
-[**[peer]{lang="EN-US"}***[ ip-address]{lang="EN-US"}*]{#struct_0_10012_x1780_209953140}[：显示指定远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[的]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[自动发现相关信息。]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*[为]{style="font-family:宋体"}[远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。如果没有指定本参数，则显示自动发现的所有]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[peer*** ip-address*]：显示指定远端PE的VPLS自动发现相关信息。*ip-address*为远端PE的IP地址。如果没有指定本参数，则显示自动发现的所有VPLS PE的信息。
 
-[**[vsi]{lang="EN-US"}**[ *vsi-name*]{lang="EN-US"}]{#struct_0_10012_x1780_1999296436}[：显示指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内自动发现的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果没有指定本参数，则显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内]{style="font-family:宋体"}[自动发现的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[vsi** *vsi-name*]：显示指定VSI内自动发现的VPLS PE信息。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。如果没有指定本参数，则显示所有VSI内自动发现的VPLS PE信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1906721314}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_1702533157}[显示自动发现的所有]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+\# 显示自动发现的所有VPLS PE信息。
 
-[[\<Sysname\> display l2vpn auto-discovery]{lang="EN-US"}]{#struct_0_10012_x1780_x1316245850}
+\<Sysname\> display l2vpn auto-discovery
 
-[Total number of automatically discovered peers: 2]{lang="EN-US"}
+Total number of automatically discovered peers: 2
 
-[ ]{lang="EN-US"}
+VSI Name: bbb
 
-[VSI Name: bbb]{lang="EN-US"}
+RD                    PE_address      VPLS ID               Nexthop
 
-[RD                    PE_address      VPLS ID               Nexthop]{lang="EN-US"}
+2:2                   1.1.1.9         100:100               1.1.1.9
 
-[2:2                   1.1.1.9         100:100               1.1.1.9]{lang="EN-US"}
+2:2                   3.3.3.9         100:100               3.3.3.9
 
-[2:2                   3.3.3.9         100:100               3.3.3.9]{lang="EN-US"}
+表1-7 display l2vpn auto-discovery命令显示信息描述表
 
-[[表1-7 ]{lang="EN-US"}[display l2vpn auto-discovery]{lang="EN-US"}]{#struct_0_10012_x1780_x2010716966}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1472833217}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_x729411393}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_1485665787}
+Total number of automatically discovered peers
 
-[[Total number of automatically discovered peers]{lang="EN-US"}]{#struct_0_10012_x1780_x1679573441}
+自动发现的VPLS PE数目
 
-[[自动发现的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}]{#struct_0_10012_x1780_x895314349}[数目]{style="font-family:宋体"}
+VSI Name
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_10012_x1780_1209006132}
+VSI名称
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x2010520358}[名称]{style="font-family:宋体"}
+RD
 
-[[RD]{lang="EN-US"}]{#struct_0_10012_x1780_416166546}
+路由标识符
 
-[[路由标识符]{style="font-family:宋体"}]{#struct_0_10012_x1780_x830830956}
+PE address
 
-[[PE address]{lang="EN-US"}]{#struct_0_10012_x1780_1783096082}
+远端PE在VPLS实例内的标识
 
-[[远端]{style="font-family:宋体"}[PE]{lang="EN-US"}]{#struct_0_10012_x1780_x698785633}[在]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[实例内的标识]{style="font-family:宋体"}
+VPLS ID
 
-[[VPLS ID]{lang="EN-US"}]{#struct_0_10012_x1780_x1582857195}
+VPLS实例标识符
 
-[[VPLS]{lang="EN-US"}]{#struct_0_10012_x1780_x2010585894}[实例标识符]{style="font-family:宋体"}
+Nexthop
 
-[[Nexthop]{lang="EN-US"}]{#struct_0_10012_x1780_1287916307}
+远端PE的地址
 
-[[远端]{style="font-family:宋体"}[PE]{lang="EN-US"}]{#struct_0_10012_x1780_1893359489}[的地址]{style="font-family:宋体"}
+【相关命令】
 
-[ ]{lang="EN-US"}
+·**route-distinguisher**
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1757135019}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[route-distinguisher]{lang="EN-US"}**]{#struct_0_10012_x1780_1222919820}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vpls-id]{lang="EN-US"}**]{#struct_0_10012_x1780_851004458}
-
-::: {#1558825221 .myid}
-[]{#_Toc404791642}[]{#struct_0_10012_x1780_x2010389286}[]{#_Toc339310132}
+·**vpls-id**
 
 **VPLS \-- VPLS配置命令 \-- display l2vpn bgp**
 
 ------------------------------------------------------------------------
 
-[**[display l2vpn bgp]{lang="EN-US"}**]{#struct_0_10012_x1780_x1296829357}[命令用来显示]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[的标签块信息。]{style="font-family:宋体"}
+**[display l2vpn bgp**]命令用来显示VPLS的标签块信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1814889605}
+【命令】
 
-[**[display l2vpn bgp]{lang="EN-US"}**[ \[ **local** \| **peer** *ip-address* \] \[ **vsi** *vsi-name* \] \[ **verbose** \]]{lang="EN-US"}]{#struct_0_10012_x1780_x183290790}
+**[display l2vpn bgp**[ [ **local** \| **peer** *ip-address* ]  **vsi** *vsi-name*   **verbose** ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_870794303}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10012_x1780_1958201857}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_681619643}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x2010454822}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10012_x1780_1296761624}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1908087885}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_10012_x1780_271354041}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1925183687}
+【参数】
 
-[**[local]{lang="EN-US"}**]{#struct_0_10012_x1780_1538691466}[：只显示本地分配的标签块信息。]{style="font-family:宋体"}
+**[local**]：只显示本地分配的标签块信息。
 
-[**[peer]{lang="EN-US"}***[ ip-address]{lang="EN-US"}*]{#struct_0_10012_x1780_x2010258214}[：显示]{style="font-family:宋体"}[从指定远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[接收到的标签块信息。]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*[为]{style="font-family:宋体"}[远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[的地址。]{style="font-family:宋体"}
+**[peer*** ip-address*]：显示从指定远端PE接收到的标签块信息。*ip-address*为远端PE的地址。
 
-[**[vsi]{lang="EN-US"}**[ *vsi-name*]{lang="EN-US"}]{#struct_0_10012_x1780_1038532292}[：显示指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的]{style="font-family:宋体"}[BGP]{lang="EN-US"}[块信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果没有指定本参数，则显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[标签块信息。]{style="font-family:宋体"}
+**[vsi** *vsi-name*]：显示指定VSI内的BGP块信息。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。如果没有指定本参数，则显示所有VSI的标签块信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_10012_x1780_x1643381321}[：]{style="font-family:宋体"}[显示详细信息。如果不指定本参数，则显示简要信息。]{style="font-family:宋体"}
+**[verbose**]：显示详细信息。如果不指定本参数，则显示简要信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_491591140}
+【使用指导】
 
-[[执行本命令时指定了]{style="font-family:宋体"}**[peer]{lang="EN-US"}***[ ip-address]{lang="EN-US"}*]{#struct_0_10012_x1780_400521790}[参数，如果存在与从远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[接收到的标签块匹配的本地标签块，即接收到的标签块信息中携带的远端]{style="font-family:宋体"}[Site ID]{lang="EN-US"}[满足条件：本地标签块]{style="font-family:宋体"}[LO\<=]{lang="EN-US"}[远端]{style="font-family:宋体"}[Site ID\<=]{lang="EN-US"}[本地标签块]{style="font-family:宋体"}[LO+LR-1]{lang="EN-US"}[，则同时显示远端标签块和匹配的本地标签块信息；否则，只显示从远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[接收到的标签块信息。]{style="font-family:宋体"}
+执行本命令时指定了**peer*** ip-address*参数，如果存在与从远端PE接收到的标签块匹配的本地标签块，即接收到的标签块信息中携带的远端Site ID满足条件：本地标签块LO\<=远端Site ID\<=本地标签块LO+LR-1，则同时显示远端标签块和匹配的本地标签块信息；否则，只显示从远端PE接收到的标签块信息。
 
-[[执行本命令时，如果没有指定]{style="font-family:宋体"}**[peer]{lang="EN-US"}***[ ip-address]{lang="EN-US"}*]{#struct_0_10012_x1780_x2010323750}[和]{style="font-family:宋体"}**[local]{lang="EN-US"}**[参数，则]{style="font-family:宋体"}[显示从所有远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[接收到的]{style="font-family:宋体"}[标签块信息。如果存在与远端标签块匹配的本地标签块，则同时显示本地标签块信息。]{style="font-family:宋体"}
+执行本命令时，如果没有指定**peer*** ip-address*和**local**参数，则显示从所有远端PE接收到的标签块信息。如果存在与远端标签块匹配的本地标签块，则同时显示本地标签块信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x60977738}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x1135849635}[显示从所有远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[接收到的]{style="font-family:宋体"}[标签块的简要信息。]{style="font-family:宋体"}
+\# 显示从所有远端PE接收到的标签块的简要信息。
 
-[[\<Sysname\> display l2vpn bgp]{lang="EN-US"}]{#struct_0_10012_x1780_x2010782501}
+\<Sysname\> display l2vpn bgp
 
-[Total number of BGP PWs: 2, 2 up, 0 down]{lang="EN-US"}
+Total number of BGP PWs: 2, 2 up, 0 down
 
-[ ]{lang="EN-US"}
+VSI Name: aaa
 
-[VSI Name: aaa]{lang="EN-US"}
+Rmt Site   Offset  RD                    Nexthop          In/Out Label     State
 
-[Rmt Site   Offset  RD                    Nexthop          In/Out Label     State]{lang="EN-US"}
+1          0       1:1                   1.1.1.9          1419/1420        Up
 
-[1          0       1:1                   1.1.1.9          1419/1420        Up]{lang="EN-US"}
+3          0       1:1                   3.3.3.9          1421/1282        Up
 
-[3          0       1:1                   3.3.3.9          1421/1282        Up]{lang="EN-US"}
+表1-8 display l2vpn bgp命令显示信息描述表
 
-[[表1-8 ]{lang="EN-US"}[display l2vpn bgp]{lang="EN-US"}]{#struct_0_10012_x1780_x48863001}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1445158081}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1175567061}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_1182709509}
+Total number of BGP PWs
 
-[[Total number of BGP PWs]{lang="EN-US"}]{#struct_0_10012_x1780_1717978836}
+BGP PW的总数，及处于up和down状态的BGP PW数目
 
-[[BGP PW]{lang="EN-US"}]{#struct_0_10012_x1780_x718886698}[的总数，及处于]{style="font-family:宋体"}[up]{lang="EN-US"}[和]{style="font-family:宋体"}[down]{lang="EN-US"}[状态的]{style="font-family:宋体"}[BGP PW]{lang="EN-US"}[数目]{style="font-family:宋体"}
+VSI Name
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_10012_x1780_x2010848037}
+VSI名称
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1037239458}[名称]{style="font-family:宋体"}
+Rmt Site
 
-[[Rmt Site]{lang="EN-US"}]{#struct_0_10012_x1780_x1080670819}
+远端Site标识符
 
-[[远端]{style="font-family:宋体"}[Site]{lang="EN-US"}]{#struct_0_10012_x1780_x878924773}[标识符]{style="font-family:宋体"}
+Offset
 
-[[Offset]{lang="EN-US"}]{#struct_0_10012_x1780_1026413899}
+远端标签块的偏移量
 
-[[远端标签块的偏移量]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1959554764}
+RD
 
-[[RD]{lang="EN-US"}]{#struct_0_10012_x1780_x2010651429}
+路由标识符
 
-[[路由标识符]{style="font-family:宋体"}]{#struct_0_10012_x1780_139639829}
+Nexthop
 
-[[Nexthop]{lang="EN-US"}]{#struct_0_10012_x1780_x527911951}
+远端PE地址
 
-[[远端]{style="font-family:宋体"}[PE]{lang="EN-US"}]{#struct_0_10012_x1780_x2117503406}[地址]{style="font-family:宋体"}
+In/Out Label
 
-[[In/Out Label]{lang="EN-US"}]{#struct_0_10012_x1780_531557291}
+PW的入标签和出标签值
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x2010716965}[的入标签和出标签值]{style="font-family:宋体"}
+State
 
-[[State]{lang="EN-US"}]{#struct_0_10012_x1780_x1132695920}
+PW状态，取值包括Up、Down
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_1505166624}[状态，取值包括]{style="font-family:宋体"}[Up]{lang="EN-US"}[、]{style="font-family:宋体"}[Down]{lang="EN-US"}
+\# 显示从所有远端PE接收到的标签块的详细信息。
 
-[ ]{lang="EN-US"}
+\<Sysname\> display l2vpn bgp verbose
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x1693577982}[显示从所有远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[接收到的]{style="font-family:宋体"}[标签块的详细信息。]{style="font-family:宋体"}
+VSI Name: aaa
 
-[[\<Sysname\> display l2vpn bgp verbose]{lang="EN-US"}]{#struct_0_10012_x1780_x2010585893}
+ Remote Site ID     : 1
 
-[VSI Name: aaa]{lang="EN-US"}
+ Offset             : 0
 
-[ Remote Site ID     : 1]{lang="EN-US"}
+ RD                 : 1:1
 
-[ Offset             : 0]{lang="EN-US"}
+ PW State           : Up
 
-[ RD                 : 1:1]{lang="EN-US"}
+ Encapsulation      : BGP-VPLS
 
-[ PW State           : Up]{lang="EN-US"}
+ MTU                : 1500
 
-[ Encapsulation      : BGP-VPLS]{lang="EN-US"}
+ Nexthop            : 1.1.1.9
 
-[ MTU                : 1500]{lang="EN-US"}
+ Local VC Label     : 1419
 
-[ Nexthop            : 1.1.1.9]{lang="EN-US"}
+ Remote VC Label    : 1420
 
-[ Local VC Label     : 1419]{lang="EN-US"}
+ Link ID            : 9
 
-[ Remote VC Label    : 1420]{lang="EN-US"}
+ Local Label Block  : 1418/10/0
 
-[ Link ID            : 9]{lang="EN-US"}
+ Remote Label Block : 1418/10/0
 
-[ Local Label Block  : 1418/10/0]{lang="EN-US"}
+ Export Route Target: 1:1
 
-[ Remote Label Block : 1418/10/0]{lang="EN-US"}
+ Remote Site ID     : 3
 
-[ Export Route Target: 1:1]{lang="EN-US"}
+ Offset             : 0
 
-[ ]{lang="EN-US"}
+ RD                 : 1:1
 
-[ Remote Site ID     : 3]{lang="EN-US"}
+ PW State           : Up
 
-[ Offset             : 0]{lang="EN-US"}
+ Encapsulation      : BGP-VPLS
 
-[ RD                 : 1:1]{lang="EN-US"}
+ MTU                : 1500
 
-[ PW State           : Up]{lang="EN-US"}
+ Nexthop            : 3.3.3.9
 
-[ Encapsulation      : BGP-VPLS]{lang="EN-US"}
+ Local VC Label     : 1421
 
-[ MTU                : 1500]{lang="EN-US"}
+ Remote VC Label    : 1282
 
-[ Nexthop            : 3.3.3.9]{lang="EN-US"}
+ Link ID            : 10
 
-[ Local VC Label     : 1421]{lang="EN-US"}
+ Local Label Block  : 1418/10/0
 
-[ Remote VC Label    : 1282]{lang="EN-US"}
+ Remote Label Block : 1280/10/0
 
-[ Link ID            : 10]{lang="EN-US"}
+ Export Route Target: 1:1
 
-[ Local Label Block  : 1418/10/0]{lang="EN-US"}
+表1-9 display l2vpn bgp verbose命令显示信息描述表
 
-[ Remote Label Block : 1280/10/0]{lang="EN-US"}
+字段
 
-[ Export Route Target: 1:1]{lang="EN-US"}
+描述
 
-[[表1-9 ]{lang="EN-US"}[display l2vpn bgp verbose]{lang="EN-US"}]{#struct_0_10012_x1780_2047431194}[命令显示信息描述表]{style="font-family:黑体"}
+VSI Name
 
-[]{#table_struct_0_x1443983009}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_861383789}
+VSI名称
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1709992889}
+Remote Site ID
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_10012_x1780_x487988505}
+远端Site标识符
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x172842889}[名称]{style="font-family:宋体"}
+Offset
 
-[[Remote Site ID]{lang="EN-US"}]{#struct_0_10012_x1780_x405083071}
+远端标签块的偏移量
 
-[[远端]{style="font-family:宋体"}[Site]{lang="EN-US"}]{#struct_0_10012_x1780_x2010389285}[标识符]{style="font-family:宋体"}
+RD
 
-[[Offset]{lang="EN-US"}]{#struct_0_10012_x1780_x893544830}
+路由标识符
 
-[[远端标签块的偏移量]{style="font-family:宋体"}]{#struct_0_10012_x1780_1354692721}
+PW State
 
-[[RD]{lang="EN-US"}]{#struct_0_10012_x1780_1913469847}
+PW状态，取值包括Up、Down
 
-[[路由标识符]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1809894182}
+Encapsulation
 
-[[PW State]{lang="EN-US"}]{#struct_0_10012_x1780_x2010454821}
+PW数据封装类型
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_893477097}[状态，取值包括]{style="font-family:宋体"}[Up]{lang="EN-US"}[、]{style="font-family:宋体"}[Down]{lang="EN-US"}
+MTU
 
-[[Encapsulation]{lang="EN-US"}]{#struct_0_10012_x1780_2103389850}
+PW协商后的最大传输单元，单位为字节
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_1835020340}[数据封装类型]{style="font-family:宋体"}
+Nexthop
 
-[[MTU]{lang="EN-US"}]{#struct_0_10012_x1780_330568991}
+远端PE地址
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x381733604}[协商后的最大传输单元，单位为字节]{style="font-family:宋体"}
+Local VC Label
 
-[[Nexthop]{lang="EN-US"}]{#struct_0_10012_x1780_x2010258213}
+PW的入标签
 
-[[远端]{style="font-family:宋体"}[PE]{lang="EN-US"}]{#struct_0_10012_x1780_279017405}[地址]{style="font-family:宋体"}
+Remote VC Label
 
-[[Local VC Label]{lang="EN-US"}]{#struct_0_10012_x1780_687087155}
+PW的出标签
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x755588116}[的入标签]{style="font-family:宋体"}
+Link ID
 
-[[Remote VC Label]{lang="EN-US"}]{#struct_0_10012_x1780_x2010323749}
+PW在VSI内的链路标识符
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_1861271027}[的出标签]{style="font-family:宋体"}
+Local Label Block
 
-[[Link ID]{lang="EN-US"}]{#struct_0_10012_x1780_x1683896153}
+本端的标签块信息，包括标签块的初始标签值/标签块大小/标签块的偏移量
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_661985033}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的链路标识符]{style="font-family:宋体"}
+Remote Label Block
 
-[[Local Label Block]{lang="EN-US"}]{#struct_0_10012_x1780_x2010782504}
+从远端收到的标签块信息，包括标签块的初始标签值/标签块大小/标签块的偏移量
 
-[[本端的标签块信息，包括标签块的初始标签值]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_10012_x1780_354421526}[标签块大小]{style="font-family:宋体"}[/]{lang="EN-US"}[标签块的偏移量]{style="font-family:宋体"}
+Export Route Target
 
-[[Remote Label Block]{lang="EN-US"}]{#struct_0_10012_x1780_x1054155458}
+从远端收到的标签块对应的Route Target属性
 
-[[从远端收到的标签块信息，包括标签块的初始标签值]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_10012_x1780_28949761}[标签块大小]{style="font-family:宋体"}[/]{lang="EN-US"}[标签块的偏移量]{style="font-family:宋体"}
+\# 显示所有本地分配的标签块的简要信息。
 
-[[Export ]{lang="EN-US"}[Route Target]{lang="EN-US"}]{#struct_0_10012_x1780_x1627770436}
+\<Sysname\> display l2vpn bgp local
 
-[[从远端收到的标签块对应的]{style="font-family:宋体"}[Route Target]{lang="EN-US"}]{#struct_0_10012_x1780_x2010848040}[属性]{style="font-family:宋体"}
+VSI Name: aaa
 
-[ ]{lang="EN-US"}
+Site   Offset  Range  Label Base    RD
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_277921179}[显示所有本地分配的标签块的简要信息。]{style="font-family:宋体"}
+2      0       10     1418          1:1
 
-[[\<Sysname\> display l2vpn bgp local]{lang="EN-US"}]{#struct_0_10012_x1780_298759087}
+表1-10 display l2vpn bgp local命令显示信息描述表
 
-[VSI Name: aaa]{lang="EN-US"}
+字段
 
-[Site   Offset  Range  Label Base    RD]{lang="EN-US"}
+描述
 
-[2      0       10     1418          1:1]{lang="EN-US"}
+VSI Name
 
-[[表1-10 ]{lang="EN-US"}[display l2vpn bgp local]{lang="EN-US"}]{#struct_0_10012_x1780_1134455573}[命令显示信息描述表]{style="font-family:黑体"}
+VSI名称
 
-[]{#table_struct_0_x1454113665}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_x2010651432}
+Site
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_899089180}
+本端Site标识符
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_10012_x1780_x641532253}
+Offset
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x1532286981}[名称]{style="font-family:宋体"}
+为该Site分配的标签块的偏移量
 
-[[Site]{lang="EN-US"}]{#struct_0_10012_x1780_x88853886}
+Range
 
-[[本端]{style="font-family:宋体"}[Site]{lang="EN-US"}]{#struct_0_10012_x1780_784769013}[标识符]{style="font-family:宋体"}
+为该Site分配的标签块大小
 
-[[Offset]{lang="EN-US"}]{#struct_0_10012_x1780_x2010716968}
+Label Base
 
-[[为该]{style="font-family:宋体"}[Site]{lang="EN-US"}]{#struct_0_10012_x1780_x1179750087}[分配的标签块的偏移量]{style="font-family:宋体"}
+为该Site分配的标签块的初始标签值
 
-[[Range]{lang="EN-US"}]{#struct_0_10012_x1780_989771952}
+RD
 
-[[为该]{style="font-family:宋体"}[Site]{lang="EN-US"}]{#struct_0_10012_x1780_x787587869}[分配的标签块大小]{style="font-family:宋体"}
+标签块对应的路由标识符，如果没有配置，则显示为"-"
 
-[[Label Base]{lang="EN-US"}]{#struct_0_10012_x1780_x193944927}
+\# 显示所有本地分配的标签块的详细信息。
 
-[[为该]{style="font-family:宋体"}[Site]{lang="EN-US"}]{#struct_0_10012_x1780_x2010520360}[分配的标签块的初始标签值]{style="font-family:宋体"}
+\<Sysname\> display l2vpn bgp local verbose
 
-[[RD]{lang="EN-US"}]{#struct_0_10012_x1780_59739578}
+VSI Name: aaa
 
-[[标签块对应的路由标识符，如果没有配置，则显示为"]{style="font-family:宋体"}[-]{lang="EN-US"}]{#struct_0_10012_x1780_x200447034}["]{style="font-family:宋体"}
+ Site ID            : 2
 
-[ ]{lang="EN-US"}
+ Offset             : 0
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x1100394700}[显示所有本地分配的标签块的详细信息。]{style="font-family:宋体"}
+ RD                 : 1:1
 
-[[\<Sysname\> display l2vpn bgp local verbose]{lang="EN-US"}]{#struct_0_10012_x1780_x2010585896}
+ Range              : 10
 
-[VSI Name: aaa]{lang="EN-US"}
+ Label Base         : 1418
 
-[ Site ID            : 2]{lang="EN-US"}
+ Link ID            : 8,9,10,11,12,13,14,15,16
 
-[ Offset             : 0]{lang="EN-US"}
+表1-11 display l2vpn bgp local verbose命令显示信息描述表
 
-[ RD                 : 1:1]{lang="EN-US"}
+字段
 
-[ Range              : 10]{lang="EN-US"}
+描述
 
-[ Label Base         : 1418]{lang="EN-US"}
+VSI Name
 
-[ Link ID            : 8,9,10,11,12,13,14,15,16]{lang="EN-US"}
+VSI名称
 
-[[表1-11 ]{lang="EN-US"}[display l2vpn bgp local verbose]{lang="EN-US"}]{#struct_0_10012_x1780_x1844251575}[命令显示信息描述表]{style="font-family:黑体"}
+Site ID
 
-[]{#table_struct_0_x1451637121}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1573334516}
+本端Site标识符
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_523502410}
+Offset
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_10012_x1780_1284911531}
+为该Site分配的标签块的偏移量
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x2010389288}[名称]{style="font-family:宋体"}
+RD
 
-[[Site ID]{lang="EN-US"}]{#struct_0_10012_x1780_x490260303}
+标签块对应的路由标识符，如果没有配置，则显示为"-"
 
-[[本端]{style="font-family:宋体"}[Site]{lang="EN-US"}]{#struct_0_10012_x1780_692987267}[标识符]{style="font-family:宋体"}
+Range
 
-[[Offset]{lang="EN-US"}]{#struct_0_10012_x1780_x1874526056}
+为该Site分配的标签块大小
 
-[[为该]{style="font-family:宋体"}[Site]{lang="EN-US"}]{#struct_0_10012_x1780_1468045482}[分配的标签块的偏移量]{style="font-family:宋体"}
+Label Base
 
-[[RD]{lang="EN-US"}]{#struct_0_10012_x1780_x2010454824}
+为该Site分配的标签块的初始标签值
 
-[[标签块对应的路由标识符，如果没有配置，则显示为"]{style="font-family:宋体"}[-]{lang="EN-US"}]{#struct_0_10012_x1780_490192570}["]{style="font-family:宋体"}
+Link ID
 
-[[Range]{lang="EN-US"}]{#struct_0_10012_x1780_x1429777243}
+标签块对应的Link ID序列值，即基于该标签块建立的PW的Link ID值
 
-[[为该]{style="font-family:宋体"}[Site]{lang="EN-US"}]{#struct_0_10012_x1780_1687558412}[分配的标签块大小]{style="font-family:宋体"}
+【相关命令】
 
-[[Label Base]{lang="EN-US"}]{#struct_0_10012_x1780_2053493237}
-
-[[为该]{style="font-family:宋体"}[Site]{lang="EN-US"}]{#struct_0_10012_x1780_x2010258216}[分配的标签块的初始标签值]{style="font-family:宋体"}
-
-[[Link ID]{lang="EN-US"}]{#struct_0_10012_x1780_x124267122}
-
-[[标签块对应的]{style="font-family:宋体"}[Link ID]{lang="EN-US"}]{#struct_0_10012_x1780_x896431079}[序列值，即基于该标签块建立的]{style="font-family:宋体"}[PW]{lang="EN-US"}[的]{style="font-family:宋体"}[Link ID]{lang="EN-US"}[值]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1885254031}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn pw]{lang="EN-US"}**]{#struct_0_10012_x1780_1852197405}
-
-::: {#-821721945 .myid}
-[]{#_Toc404791643}[]{#struct_0_10012_x1780_x1706429259}
+·**display l2vpn pw**
 
 **VPLS \-- VPLS配置命令 \-- display l2vpn ldp**
 
 ------------------------------------------------------------------------
 
-[**[display l2vpn ldp]{lang="EN-US"}**]{#struct_0_10012_x1780_538424137}[命令用来显示]{style="font-family:宋体"}[LDP]{lang="EN-US"}[协议通告的]{style="font-family:宋体"}[PW]{lang="EN-US"}[标签相关信息。]{style="font-family:宋体"}
+**[display l2vpn ldp**]命令用来显示LDP协议通告的PW标签相关信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x2010323752}
+【命令】
 
-[**[display l2vpn ldp ]{lang="EN-US"}**[\[ **peer** *ip-address* \[ **pw-id** *pw-id* \| **vpls-id** *vpls-id* \] \| **vsi** *vsi-name* \] \[ **verbose** \]]{lang="EN-US"}]{#struct_0_10012_x1780_x1223777152}
+**[display l2vpn ldp **[[ **peer** *ip-address* [ **pw-id** *pw-id* \| **vpls-id** *vpls-id* ] \| **vsi** *vsi-name* ]  **verbose** ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1090118264}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1723092040}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1619309020}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_143078786}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10012_x1780_x955795729}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x133321817}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_10012_x1780_1359179160}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x2010782503}
+【参数】
 
-[**[peer]{lang="EN-US"}***[ ip-address]{lang="EN-US"}*]{#struct_0_10012_x1780_1113936413}[：显示指定远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[通过]{style="font-family:宋体"}[LDP]{lang="EN-US"}[通告的]{style="font-family:宋体"}[PW]{lang="EN-US"}[标签相关信息。]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*[为]{style="font-family:宋体"}[远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[的]{style="font-family:宋体"}[LSR ID]{lang="EN-US"}[。如果没有指定本参数，则显示所有远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[通过]{style="font-family:宋体"}[LDP]{lang="EN-US"}[通告的]{style="font-family:宋体"}[PW]{lang="EN-US"}[标签相关信息。]{style="font-family:宋体"}
+**[peer*** ip-address*]：显示指定远端PE通过LDP通告的PW标签相关信息。*ip-address*为远端PE的LSR ID。如果没有指定本参数，则显示所有远端PE通过LDP通告的PW标签相关信息。
 
-[**[pw-id ]{lang="EN-US"}***[pw-id]{lang="EN-US"}*]{#struct_0_10012_x1780_x769200843}[：显示指定]{style="font-family:宋体"}[FEC 128]{lang="EN-US"}[方式的]{style="font-family:宋体"}[PW]{lang="EN-US"}[标签相关信息。]{style="font-family:宋体"}*[pw-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[PW]{lang="EN-US"}[的]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。本参数和]{style="font-family:宋体"}**[peer]{lang="EN-US"}**[参数配合使用，如果只指定了]{style="font-family:宋体"}**[peer]{lang="EN-US"}***[ ip-address]{lang="EN-US"}*[参数，则显示指定远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[通过]{style="font-family:宋体"}[LDP]{lang="EN-US"}[通告的所有]{style="font-family:宋体"}[PW]{lang="EN-US"}[标签相关信息。]{style="font-family:宋体"}
+**[pw-id ***pw-id*]：显示指定FEC 128方式的PW标签相关信息。*pw-id*为PW的PW ID，取值范围为1～4294967295。本参数和**peer**参数配合使用，如果只指定了**peer*** ip-address*参数，则显示指定远端PE通过LDP通告的所有PW标签相关信息。
 
-[**[vpls-id ]{lang="EN-US"}***[vpls-id]{lang="EN-US"}*]{#struct_0_10012_x1780_1684545693}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[FEC 129]{lang="EN-US"}[方式的]{style="font-family:宋体"}[PW]{lang="EN-US"}[标签相关信息。]{style="font-family:宋体"}*[vpls-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VPLS ID]{lang="EN-US"}[，即]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[实例标识符，]{style="font-family:宋体"}[为]{style="font-family:宋体"}[3]{lang="EN-US"}[～]{style="font-family:
-宋体"}[21]{lang="EN-US"}[个字符的字符串，]{style="font-family:宋体"}[VPLS ID]{lang="EN-US"}[有三种格式：]{style="font-family:宋体"}
+**[vpls-id ***vpls-id*]：显示指定FEC 129方式的PW标签相关信息。*vpls-id*表示VPLS ID，即VPLS实例标识符，为3～21个字符的字符串，VPLS ID有三种格式：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[16]{lang="EN-US"}]{#struct_0_10012_x1780_x1028276772}[位自治系统号]{style="font-family:宋体"}[:32]{lang="EN-US"}[位用户自定义数，例如：]{style="font-family:宋体"}[101:3]{lang="EN-US"}[。]{style="font-family:宋体"}
+·16位自治系统号:32位用户自定义数，例如：101:3。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[32]{lang="EN-US"}]{#struct_0_10012_x1780_x567949573}[位]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[:16]{lang="EN-US"}[位用户自定义数，例如：]{style="font-family:宋体"}[192.168.122.15:1]{lang="EN-US"}[。]{style="font-family:宋体"}
+·32位IP地址:16位用户自定义数，例如：192.168.122.15:1。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[32]{lang="EN-US"}]{#struct_0_10012_x1780_x1022430872}[位自治系统号]{style="font-family:宋体"}[:16]{lang="EN-US"}[位用户自定义数字，其中的自治系统号最小值为]{style="font-family:宋体"}[65536]{lang="EN-US"}[。例如：]{style="font-family:宋体"}[65536:1]{lang="EN-US"}[。]{style="font-family:宋体"}
+·32位自治系统号:16位用户自定义数字，其中的自治系统号最小值为65536。例如：65536:1。
 
-[**[vsi ]{lang="EN-US"}***[vsi-name]{lang="EN-US"}*]{#struct_0_10012_x1780_x284318236}[：显示指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内]{style="font-family:宋体"}[LDP]{lang="EN-US"}[协议通告的]{style="font-family:宋体"}[PW]{lang="EN-US"}[标签相关信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果没有指定本参数，则显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内]{style="font-family:宋体"}[LDP]{lang="EN-US"}[协议通告的]{style="font-family:宋体"}[PW]{lang="EN-US"}[标签相关信息。]{style="font-family:宋体"}
+**[vsi ***vsi-name*]：显示指定VSI内LDP协议通告的PW标签相关信息。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。如果没有指定本参数，则显示所有VSI内LDP协议通告的PW标签相关信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_10012_x1780_1661116340}[：]{style="font-family:宋体"}[显示详细信息。如果不指定本参数，则显示简要信息。]{style="font-family:宋体"}
+**[verbose**]：显示详细信息。如果不指定本参数，则显示简要信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x2010848039}
+【使用指导】
 
-[[LDP]{lang="EN-US"}]{#struct_0_10012_x1780_1487578152}[可以通过如下两种方式通告]{style="font-family:宋体"}[PW]{lang="EN-US"}[标签与]{style="font-family:宋体"}[PW]{lang="EN-US"}[的绑定关系：]{style="font-family:宋体"}
+LDP可以通过如下两种方式通告PW标签与PW的绑定关系：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[执行]{style="font-family:宋体"}]{#struct_0_10012_x1780_617927156}**[peer]{lang="EN-US"}**[命令手工指定远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[后，]{style="font-family:宋体"}[LDP]{lang="EN-US"}[通告]{style="font-family:宋体"}[FEC 128]{lang="EN-US"}[和]{style="font-family:宋体"}[PW]{lang="EN-US"}[标签的绑定关系。]{style="font-family:宋体"}
+·执行**peer**命令手工指定远端PE后，LDP通告FEC 128和PW标签的绑定关系。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[采用]{style="font-family:宋体"}]{#struct_0_10012_x1780_340304551}[BGP]{lang="EN-US"}[协议自动发现远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[后，]{style="font-family:宋体"}[LDP]{lang="EN-US"}[通告]{style="font-family:宋体"}[FEC 129]{lang="EN-US"}[和]{style="font-family:宋体"}[PW]{lang="EN-US"}[标签的绑定关系。]{style="font-family:宋体"}
+·采用BGP协议自动发现远端PE后，LDP通告FEC 129和PW标签的绑定关系。
 
-[[本命令可以用来显示通过上述两种方式通告的]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x588094866}[标签。]{style="font-family:宋体"}
+本命令可以用来显示通过上述两种方式通告的PW标签。
 
-[[执行本命令时，如果指定了]{style="font-family:宋体"}**[pw-id ]{lang="EN-US"}***[pw-id]{lang="EN-US"}*]{#struct_0_10012_x1780_x1841752465}[参数，则显示指定]{style="font-family:宋体"}[FEC 128]{lang="EN-US"}[方式的]{style="font-family:宋体"}[PW]{lang="EN-US"}[标签相关信息；如果指定了]{style="font-family:宋体"}**[vpls-id ]{lang="EN-US"}***[vpls-id]{lang="EN-US"}*[参数，则]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[FEC 129]{lang="EN-US"}[方式的]{style="font-family:宋体"}[PW]{lang="EN-US"}[标签相关信息；如果没有指定]{style="font-family:宋体"}**[pw-id ]{lang="EN-US"}***[pw-id]{lang="EN-US"}*[和]{style="font-family:宋体"}**[vpls-id ]{lang="EN-US"}***[vpls-id]{lang="EN-US"}*[参数，则同时显示]{style="font-family:宋体"}[FEC 128]{lang="EN-US"}[方式和]{style="font-family:宋体"}[FEC 129]{lang="EN-US"}[方式的]{style="font-family:宋体"}[PW]{lang="EN-US"}[标签相关信息。]{style="font-family:宋体"}
+执行本命令时，如果指定了**pw-id ***pw-id*参数，则显示指定FEC 128方式的PW标签相关信息；如果指定了**vpls-id ***vpls-id*参数，则显示指定FEC 129方式的PW标签相关信息；如果没有指定**pw-id ***pw-id*和**vpls-id ***vpls-id*参数，则同时显示FEC 128方式和FEC 129方式的PW标签相关信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1186999934}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x2010651431}[显示]{style="font-family:宋体"}[LDP]{lang="EN-US"}[协议通告的所有]{style="font-family:宋体"}[PW]{lang="EN-US"}[标签的简要信息。]{style="font-family:宋体"}
+\# 显示LDP协议通告的所有PW标签的简要信息。
 
-[[\<Sysname\> display l2vpn ldp]{lang="EN-US"}]{#struct_0_10012_x1780_495804653}
+\<Sysname\> display l2vpn ldp
 
-[Total number of LDP PWs: 6, 4 up, 2 down]{lang="EN-US"}
+Total number of LDP PWs: 6, 4 up, 2 down
 
-[ ]{lang="EN-US"}
+Peer            PW ID/VPLS ID         In/Out Label    State Owner
 
-[Peer            PW ID/VPLS ID         In/Out Label    State Owner]{lang="EN-US"}
+192.3.3.3       1001                  775125/775126   Up    vpls1
 
-[192.3.3.3       1001                  775125/775126   Up    vpls1]{lang="EN-US"}
+192.3.3.3       1003                  775117/775122   Up    vpls3
 
-[192.3.3.3       1003                  775117/775122   Up    vpls3]{lang="EN-US"}
+192.3.3.3       1004                  775120/775120   Up    vpls4
 
-[192.3.3.3       1004                  775120/775120   Up    vpls4]{lang="EN-US"}
+192.3.3.3       10009                 unknown/775134  Down  vpls5
 
-[192.3.3.3       10009                 unknown/775134  Down  vpls5]{lang="EN-US"}
+192.4.4.4       100                   775116/unknown  Down  vpls6
 
-[192.4.4.4       100                   775116/unknown  Down  vpls6]{lang="EN-US"}
+2.2.2.2         99:99                 775135/775125   Up    vplsauto
 
-[2.2.2.2         99:99                 775135/775125   Up    vplsauto]{lang="EN-US"}
+表1-12 display l2vpn ldp命令显示信息描述表
 
-[[表1-12 ]{lang="EN-US"}[display l2vpn ldp]{lang="EN-US"}]{#struct_0_10012_x1780_x38972309}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1458989313}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_1105318011}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_914147558}
+Total number of LDP PWs
 
-[[Total number of LDP PWs]{lang="EN-US"}]{#struct_0_10012_x1780_x2010716967}
+LDP PW的总数，及处于up和down状态的LDP PW数目
 
-[[LDP PW]{lang="EN-US"}]{#struct_0_10012_x1780_1999471962}[的总数，及处于]{style="font-family:宋体"}[up]{lang="EN-US"}[和]{style="font-family:宋体"}[down]{lang="EN-US"}[状态的]{style="font-family:宋体"}[LDP PW]{lang="EN-US"}[数目]{style="font-family:宋体"}
+Peer
 
-[[Peer]{lang="EN-US"}]{#struct_0_10012_x1780_x2049645684}
+PW远端PE的IP地址
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_1267372362}[远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+PW ID/VPLS ID
 
-[[PW ID/VPLS ID]{lang="EN-US"}]{#struct_0_10012_x1780_x1512227549}
+对于FEC 128方式，为PW标识符PW ID；对于FEC 129方式，为用来标识PE所属VPLS实例的VPLS ID
 
-[[对于]{style="font-family:宋体"}[FEC 128]{lang="EN-US"}]{#struct_0_10012_x1780_1409647552}[方式，为]{style="font-family:宋体"}[PW]{lang="EN-US"}[标识符]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[；对于]{style="font-family:宋体"}[FEC 129]{lang="EN-US"}[方式，为用来标识]{style="font-family:宋体"}[PE]{lang="EN-US"}[所属]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[实例的]{style="font-family:宋体"}[VPLS ID]{lang="EN-US"}
+只有VPLS支持FEC 129方式
 
-[[只有]{style="font-family:宋体"}[VPLS]{lang="EN-US"}]{#struct_0_10012_x1780_x2010520359}[支持]{style="font-family:宋体"}[FEC 129]{lang="EN-US"}[方式]{style="font-family:宋体"}
+In/Out Label
 
-[[In/Out Label]{lang="EN-US"}]{#struct_0_10012_x1780_1982250487}
+PW的入标签和出标签
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_1792833452}[的入标签和出标签]{style="font-family:宋体"}
+State
 
-[[State]{lang="EN-US"}]{#struct_0_10012_x1780_x1724384808}
+PW状态，取值包括：
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x214419368}[状态，取值包括：]{style="font-family:宋体"}
+·Up：PW处于up状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Up]{lang="EN-US"}]{#struct_0_10012_x1780_x2010585895}[：]{style="font-family:宋体"}[PW]{lang="EN-US"}[处于]{style="font-family:宋体"}[up]{lang="EN-US"}[状态]{style="font-family:宋体"}
+·Down：PW处于down状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Down]{lang="EN-US"}]{#struct_0_10012_x1780_x1440967048}[：]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}[处于]{lang="EN-US" style="font-family:宋体"}[down]{lang="EN-US"}[状态]{lang="EN-US" style="font-family:宋体"}
+Owner
 
-[[Owner]{lang="EN-US"}]{#struct_0_10012_x1780_x562810863}
+PW所属VSI的名称
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_1139417541}[所属]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称]{style="font-family:宋体"}
+\# 显示LDP协议通告的所有PW标签的详细信息。
 
-[ ]{lang="EN-US"}
+\<Sysname\> display l2vpn ldp verbose
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x254626110}[显示]{style="font-family:宋体"}[LDP]{lang="EN-US"}[协议通告的所有]{style="font-family:宋体"}[PW]{lang="EN-US"}[标签的详细信息。]{style="font-family:宋体"}
+Peer: 2.2.2.9          PW ID: 500
 
-[[\<Sysname\> display l2vpn ldp verbose]{lang="EN-US"}]{#struct_0_10012_x1780_x2010454823}
+  VSI Name: ccc
 
-[Peer: 2.2.2.9          PW ID: 500]{lang="EN-US"}
+  PW State: Up
 
-[  VSI Name: ccc]{lang="EN-US"}
+  PW Status Communication: Notification method
 
-[  PW State: Up]{lang="EN-US"}
+  PW ID FEC (Local/Remote):
 
-[  PW Status Communication: Notification method]{lang="EN-US"}
+    PW Type     : VLAN/VLAN
 
-[  PW ID FEC (Local/Remote):]{lang="EN-US"}
+    Group ID    : 0/0
 
-[    PW Type     : VLAN/VLAN]{lang="EN-US"}
+    Label       : 1552/1552
 
-[    Group ID    : 0/0]{lang="EN-US"}
+    Control Word: Disabled/Disabled
 
-[    Label       : 1552/1552]{lang="EN-US"}
+    VCCV CV Type: -/-
 
-[    Control Word: Disabled/Disabled]{lang="EN-US"}
+    VCCV CC Type: -/-
 
-[    VCCV CV Type: -/-]{lang="EN-US"}
+    MTU         : 1500/1500
 
-[    VCCV CC Type: -/-]{lang="EN-US"}
+    PW Status   : PW forwarding/PW forwarding
 
-[    MTU         : 1500/1500]{lang="EN-US"}
+Peer: 2.2.2.9          VPLS ID: 100:100
 
-[    PW Status   : PW forwarding/PW forwarding]{lang="EN-US"}
+  VSI Name: bbb
 
-[ ]{lang="EN-US"}
+  PW State: Up
 
-[Peer: 2.2.2.9          VPLS ID: 100:100]{lang="EN-US"}
+  PW Status Communication: Notification method
 
-[  VSI Name: bbb]{lang="EN-US"}
+  PW ID FEC (Local/Remote):
 
-[  PW State: Up]{lang="EN-US"}
+    Local AII   : (1.1.1.9, 2.2.2.9)
 
-[  PW Status Communication: Notification method]{lang="EN-US"}
+    Remote AII  : (2.2.2.9, 1.1.1.9)
 
-[  PW ID FEC (Local/Remote):]{lang="EN-US"}
+    PW Type     : VLAN/VLAN
 
-[    Local AII   : (1.1.1.9, 2.2.2.9)]{lang="EN-US"}
+    Group ID    : 0/0
 
-[    Remote AII  : (2.2.2.9, 1.1.1.9)]{lang="EN-US"}
+    Label       : 1553/1553
 
-[    PW Type     : VLAN/VLAN]{lang="EN-US"}
+    Control Word: Disabled/Disabled
 
-[    Group ID    : 0/0]{lang="EN-US"}
+    VCCV CV Type: -/-
 
-[    Label       : 1553/1553]{lang="EN-US"}
+    VCCV CC Type: -/-
 
-[    Control Word: Disabled/Disabled]{lang="EN-US"}
+    MTU         : 1500/1500
 
-[    VCCV CV Type: -/-]{lang="EN-US"}
+    PW Status   : PW forwarding/PW forwarding
 
-[    VCCV CC Type: -/-]{lang="EN-US"}
+Peer: 3.3.3.9          VPLS ID: 100:100
 
-[    MTU         : 1500/1500]{lang="EN-US"}
+  VSI Name: bbb
 
-[    PW Status   : PW forwarding/PW forwarding]{lang="EN-US"}
+  PW State: Up
 
-[ ]{lang="EN-US"}
+  PW Status Communication: Notification method
 
-[Peer: 3.3.3.9          VPLS ID: 100:100]{lang="EN-US"}
+  PW ID FEC (Local/Remote):
 
-[  VSI Name: bbb]{lang="EN-US"}
+    Local AII   : (1.1.1.9, 3.3.3.9)
 
-[  PW State: Up]{lang="EN-US"}
+    Remote AII  : (3.3.3.9, 1.1.1.9)
 
-[  PW Status Communication: Notification method]{lang="EN-US"}
+    PW Type     : VLAN/VLAN
 
-[  PW ID FEC (Local/Remote):]{lang="EN-US"}
+    Group ID    : 0/0
 
-[    Local AII   : (1.1.1.9, 3.3.3.9)]{lang="EN-US"}
+    Label       : 1554/1416
 
-[    Remote AII  : (3.3.3.9, 1.1.1.9)]{lang="EN-US"}
+    Control Word: Disabled/Disabled
 
-[    PW Type     : VLAN/VLAN]{lang="EN-US"}
+    VCCV CV Type: -/-
 
-[    Group ID    : 0/0]{lang="EN-US"}
+    VCCV CC Type: -/-
 
-[    Label       : 1554/1416]{lang="EN-US"}
+    MTU         : 1500/1500
 
-[    Control Word: Disabled/Disabled]{lang="EN-US"}
+    PW Status   : PW forwarding/PW forwarding
 
-[    VCCV CV Type: -/-]{lang="EN-US"}
+表1-13 display l2vpn ldp verbose命令显示信息描述表
 
-[    VCCV CC Type: -/-]{lang="EN-US"}
+字段
 
-[    MTU         : 1500/1500]{lang="EN-US"}
+描述
 
-[    PW Status   : PW forwarding/PW forwarding]{lang="EN-US"}
+Peer
 
-[[表1-13 ]{lang="EN-US"}[display l2vpn ldp verbose]{lang="EN-US"}]{#struct_0_10012_x1780_x269322317}[命令显示信息描述表]{style="font-family:黑体"}
+PW远端PE的IP地址
 
-[]{#table_struct_0_x1456475905}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_x138868198}
+PW ID
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_62883830}
+PW标识符
 
-[[Peer]{lang="EN-US"}]{#struct_0_10012_x1780_x2010258215}
+VSI Name
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x527551649}[远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+PW所属VSI的名称
 
-[[PW ID]{lang="EN-US"}]{#struct_0_10012_x1780_1847883223}
+PW State
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x2121413067}[标识符]{style="font-family:宋体"}
+PW状态，取值包括Up和Down
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_10012_x1780_x1297193057}
+PW Status Communication
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x66340644}[所属]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称]{style="font-family:宋体"}
+PW状态通知方式：
 
-[[PW State]{lang="EN-US"}]{#struct_0_10012_x1780_x2010323751}
+·Notification method：通过Notification消息通知PW状态
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_1505106203}[状态，取值包括]{style="font-family:宋体"}[Up]{lang="EN-US"}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}
+·Label withdraw method：标签回收方式，即只有PW连接的AC状态为up时才会为该PW分配PW标签，AC状态变为down时回收该PW的PW 标签
 
-[[PW Status Communication]{lang="EN-US"}]{#struct_0_10012_x1780_1823935744}
+PW ID FEC (Local/Remote)
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x831269652}[状态通知方式：]{style="font-family:宋体"}
+本地向远端PE通告的PW ID FEC相关信息/远端PE通告给本地的PW ID FEC相关信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Notification method]{lang="EN-US"}]{#struct_0_10012_x1780_x1010101719}[：通过]{lang="EN-US" style="font-family:
-  宋体"}[Notification]{lang="EN-US"}[消息通知]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}[状态]{lang="EN-US" style="font-family:宋体"}
+PW Type
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Label withdraw method]{lang="EN-US"}]{#struct_0_10012_x1780_x2010782506}[：标签回收方式，即只有]{style="font-family:宋体"}[PW]{lang="EN-US"}[连接的]{style="font-family:宋体"}[AC]{lang="EN-US"}[状态为]{style="font-family:宋体"}[up]{lang="EN-US"}[时才会为该]{style="font-family:宋体"}[PW]{lang="EN-US"}[分配]{style="font-family:宋体"}[PW]{lang="EN-US"}[标签，]{style="font-family:宋体"}[AC]{lang="EN-US"}[状态变为]{style="font-family:宋体"}[down]{lang="EN-US"}[时回收该]{style="font-family:宋体"}[PW]{lang="EN-US"}[的]{style="font-family:宋体"}[PW ]{lang="EN-US"}[标签]{style="font-family:宋体"}
+PW数据封装类型
 
-[[PW ID FEC (Local/Remote)]{lang="EN-US"}]{#struct_0_10012_x1780_1517220940}
+Group ID
 
-[[本地向远端]{style="font-family:宋体"}[PE]{lang="EN-US"}]{#struct_0_10012_x1780_1045628266}[通告的]{style="font-family:宋体"}[PW ID FEC]{lang="EN-US"}[相关信息]{style="font-family:宋体"}[/]{lang="EN-US"}[远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[通告给本地的]{style="font-family:宋体"}[PW ID FEC]{lang="EN-US"}[相关信息]{style="font-family:宋体"}
+PW的Group标识符
 
-[[PW Type]{lang="EN-US"}]{#struct_0_10012_x1780_944105574}
+Label
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_1373373329}[数据封装类型]{style="font-family:宋体"}
+PW标签
 
-[[Group ID]{lang="EN-US"}]{#struct_0_10012_x1780_x2010848042}
+Control Word
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_1440720593}[的]{style="font-family:宋体"}[Group]{lang="EN-US"}[标识符]{style="font-family:宋体"}
+是否使能控制字功能，取值包括
 
-[[Label]{lang="EN-US"}]{#struct_0_10012_x1780_174146414}
+·Enabled：PW使能了控制字功能
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x1349488415}[标签]{style="font-family:宋体"}
+·Disabled：PW未使能控制字功能
 
-[[Control Word]{lang="EN-US"}]{#struct_0_10012_x1780_x2010651434}
+VCCV CV Type
 
-[[是否使能控制字功能，取值包括]{style="font-family:宋体"}]{#struct_0_10012_x1780_92520126}
+支持的VCCV CV（Connectivity Verification，连通性验证）类型，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_10012_x1780_x1490211578}[：]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}[使能了控制字功能]{lang="EN-US" style="font-family:宋体"}
+·LSP Ping：采用MPLS ping检测PW的连通性
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_10012_x1780_x239254279}[：]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}[未使能控制字功能]{lang="EN-US" style="font-family:宋体"}
+·BFD：采用BFD检测PW的连通性，BFD报文的封装方式为IP/UDP Encapsulation(with IP/UDP Headers)
 
-[[VCCV CV Type]{lang="EN-US"}]{#struct_0_10012_x1780_565514110}
+·Raw-BFD：采用BFD检测PW的连通性，BFD报文的封装方式为PW-ACH Encapsulation (without IP/UDP Headers)，即封装在VCCV控制通道内的BFD控制报文不携带IP和UDP头
 
-[[支持的]{style="font-family:宋体"}[VCCV CV]{lang="EN-US"}]{#struct_0_10012_x1780_x2010716970}[（]{style="font-family:宋体"}[Connectivity Verification]{lang="EN-US"}[，连通性验证）类型，取值包括：]{style="font-family:宋体"}
+VCCV CC Type
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSP Ping]{lang="EN-US"}]{#struct_0_10012_x1780_x1535914911}[：采用]{lang="EN-US" style="font-family:宋体"}[MPLS ping]{lang="EN-US"}[检测]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}[的连通性]{lang="EN-US" style="font-family:宋体"}
+支持的VCCV CC（Control Channel，控制通道）类型，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[BFD]{lang="EN-US"}]{#struct_0_10012_x1780_x1701417298}[：]{style="font-family:宋体"}[采用]{lang="EN-US" style="font-family:宋体"}[BFD]{lang="EN-US"}[检测]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}[的连通性，]{lang="EN-US" style="font-family:宋体"}[BFD]{lang="EN-US"}[报文的封装方式]{lang="EN-US" style="font-family:宋体"}[为]{style="font-family:
-  宋体"}[IP/UDP]{lang="EN-US"}[ Encapsulation]{lang="EN-US"}[ ]{lang="EN-US"}[(with IP/UDP Headers)]{lang="EN-US"}
+·Control-Word：控制字类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Raw-BFD]{lang="EN-US"}]{#struct_0_10012_x1780_815877304}[：]{style="font-family:宋体"}[采用]{lang="EN-US" style="font-family:宋体"}[BFD]{lang="EN-US"}[检测]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}[的连通性，]{lang="EN-US" style="font-family:宋体"}[BFD]{lang="EN-US"}[报文的封装方式为]{lang="EN-US" style="font-family:宋体"}[PW-ACH Encapsulation (without IP/UDP Headers)]{lang="EN-US"}[，即封装在]{lang="EN-US" style="font-family:宋体"}[VCCV]{lang="EN-US"}[控制通道内的]{lang="EN-US" style="font-family:宋体"}[BFD]{lang="EN-US"}[控制报文不携带]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[和]{lang="EN-US" style="font-family:宋体"}[UDP]{lang="EN-US"}[头]{lang="EN-US" style="font-family:宋体"}
+·Router-Alert：MPLS路由器告警标签类型
 
-[[VCCV CC Type]{lang="EN-US"}]{#struct_0_10012_x1780_x2010520362}
+·TTL：TTL超时类型
 
-[[支持的]{style="font-family:宋体"}[VCCV CC]{lang="EN-US"}]{#struct_0_10012_x1780_x1103059836}[（]{style="font-family:宋体"}[Control Channel]{lang="EN-US"}[，控制通道）类型，取值包括：]{style="font-family:宋体"}
+VCCV（Virtual Circuit Connectivity Verification，虚电路连通性验证）的详细介绍，请参见"MPLS配置指导"中的"MPLS OAM"
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Control-Word]{lang="EN-US"}]{#struct_0_10012_x1780_x2037931736}[：控制字]{lang="EN-US" style="font-family:宋体"}[类型]{style="font-family:宋体"}
+MTU
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Router-Alert]{lang="EN-US"}]{#struct_0_10012_x1780_1977996356}[：]{lang="EN-US" style="font-family:宋体"}[MPLS]{lang="EN-US"}[路由]{lang="EN-US" style="font-family:宋体"}[器]{style="font-family:宋体"}[告警标签]{lang="EN-US" style="font-family:宋体"}[类型]{style="font-family:宋体"}
+VSI的最大传输单元
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TTL]{lang="EN-US"}]{#struct_0_10012_x1780_x2010585898}[：]{style="font-family:宋体"}[TTL]{lang="EN-US"}[超时类型]{style="font-family:宋体"}
+PW Status
 
-[[VCCV]{lang="EN-US"}]{#struct_0_10012_x1780_x1037682521}[（]{style="font-family:宋体"}[Virtual Circuit Connectivity Verification]{lang="EN-US"}[，虚电路连通性验证）的详细介绍，请参见"]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[配置指导"中的"]{style="font-family:宋体"}[MPLS OAM]{lang="EN-US"}["]{style="font-family:宋体"}
+PW状态，取值包括：
 
-[[MTU]{lang="EN-US"}]{#struct_0_10012_x1780_668625392}
+·PW forwarding：PW可以转发报文
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_471983377}[的最大传输单元]{style="font-family:宋体"}
+·PW not forwarding：PW不可以转发报文
 
-[[PW Status]{lang="EN-US"}]{#struct_0_10012_x1780_x2010389290}
+·AC receive fault：AC接收方向失效
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x133964407}[状态，取值包括：]{style="font-family:宋体"}
+·AC transmit fault：AC发送方向失效
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PW forwarding]{lang="EN-US"}]{#struct_0_10012_x1780_x246607732}[：]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}[可以转发报文]{lang="EN-US" style="font-family:宋体"}
+·PW receive fault：PW接收方向失效
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PW not forwarding]{lang="EN-US"}]{#struct_0_10012_x1780_x2010454826}[：]{lang="EN-US" style="font-family:
-  宋体"}[PW]{lang="EN-US"}[不可以转发报文]{lang="EN-US" style="font-family:
-  宋体"}
+·PW transmit fault：PW发送方向失效
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[AC receive fault]{lang="EN-US"}]{#struct_0_10012_x1780_x672606844}[：]{lang="EN-US" style="font-family:
-  宋体"}[AC]{lang="EN-US"}[接收方向失效]{lang="EN-US" style="font-family:
-  宋体"}
+VPLS ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[AC transmit fault]{lang="EN-US"}]{#struct_0_10012_x1780_1709882982}[：]{lang="EN-US" style="font-family:
-  宋体"}[AC]{lang="EN-US"}[发送方向失效]{lang="EN-US" style="font-family:
-  宋体"}
+VPLS实例标识符
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PW receive fault]{lang="EN-US"}]{#struct_0_10012_x1780_x952682061}[：]{lang="EN-US" style="font-family:
-  宋体"}[PW]{lang="EN-US"}[接收方向失效]{lang="EN-US" style="font-family:
-  宋体"}
+Local AII
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PW transmit fault]{lang="EN-US"}]{#struct_0_10012_x1780_x2010258218}[：]{lang="EN-US" style="font-family:
-  宋体"}[PW]{lang="EN-US"}[发送方向失效]{lang="EN-US" style="font-family:
-  宋体"}
+本端向远端PE发送的SAII（Source Attachment Individual Identifier，源转发实例本地标识符）和TAII（Target Attachment Individual Identifier，目的转发实例本地标识符）
 
-[[VPLS ID]{lang="EN-US"}]{#struct_0_10012_x1780_x1643296896}
+Remote AII
 
-[[VPLS]{lang="EN-US"}]{#struct_0_10012_x1780_343527433}[实例标识符]{style="font-family:宋体"}
-
-[[Local AII]{lang="EN-US"}]{#struct_0_10012_x1780_x2010323754}
-
-[[本端向远端]{style="font-family:宋体"}[PE]{lang="EN-US"}]{#struct_0_10012_x1780_x2030346206}[发送的]{style="font-family:宋体"}[SAII]{lang="EN-US"}[（]{style="font-family:宋体"}[Source Attachment Individual Identifier]{lang="EN-US"}[，源转发实例本地标识符）和]{style="font-family:宋体"}[TAII]{lang="EN-US"}[（]{style="font-family:宋体"}[Target Attachment Individual Identifier]{lang="EN-US"}[，目的转发实例本地标识符）]{style="font-family:宋体"}
-
-[[Remote AII]{lang="EN-US"}]{#struct_0_10012_x1780_x1601406657}
-
-[[从远端接收到的]{style="font-family:宋体"}[SAII]{lang="EN-US"}]{#struct_0_10012_x1780_x2010782505}[和]{style="font-family:宋体"}[TAII]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-::: {#-697284031 .myid}
-[]{#_Toc404791644}[]{#struct_0_10012_x1780_1920505467}[]{#_Toc242067216}[]{#_Toc185927308}[]{#_Toc123026768}
+从远端接收到的SAII和TAII
 
 **VPLS \-- VPLS配置命令 \-- display l2vpn forwarding**
 
 ------------------------------------------------------------------------
 
-[**[display l2vpn forwarding]{lang="EN-US"}**]{#struct_0_10012_x1780_x903293594}[命令用来显示]{style="font-family:
-宋体"}[L2VPN]{lang="EN-US"}[转发信息。]{style="font-family:宋体"}
+**[display l2vpn forwarding**]命令用来显示L2VPN转发信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_803699740}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1865756166}
+集中式设备：
 
-[**[display l2vpn forwarding]{lang="EN-US"}**[ { **ac** \| **pw** } \[ **vsi** *vsi-name* \] \[ **verbose** \]]{lang="EN-US"}]{#struct_0_10012_x1780_1120856245}
+**[display l2vpn forwarding**[ { **ac** \| **pw** } [ **vsi** *vsi-name* ]  **verbose** ]]
 
-[[分布式设备―独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_10012_x1780_1696942502}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备―独立运行模式/集中式IRF设备：
 
-[**[display l2vpn forwarding]{lang="EN-US"}**[ { **ac** \| **pw** } \[ **vsi** *vsi-name* \] \[ ]{lang="EN-US"}]{#struct_0_10012_x1780_1342205519}**[slot]{lang="EN-US"}**[ *slot-number* \[ **cpu** *cpu-number* \] \] \[ **verbose** \]]{lang="EN-US"}
+**[display l2vpn forwarding**[ { **ac** \| **pw** } [ **vsi** *vsi-name* ] ]**slot** *slot-number* [ **cpu** *cpu-number*  ]  **verbose** ]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_10012_x1780_x2010848041}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display l2vpn forwarding]{lang="EN-US"}**[ { **ac** \| **pw** } \[ **vsi** *vsi-name* \] \[ **chassis** *chassis-number* ]{lang="EN-US"}]{#struct_0_10012_x1780_1844005120}**[slot]{lang="EN-US"}**[ *slot-number* \[ **cpu** *cpu-number* \] \] \[ **verbose** \]]{lang="EN-US"}
+**[display l2vpn forwarding**[ { **ac** \| **pw** } [ **vsi** *vsi-name* ]  **chassis** *chassis-number* ]**slot** *slot-number* [ **cpu** *cpu-number*  ]  **verbose** ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1632115193}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10012_x1780_x315337058}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_149309148}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_2096555018}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10012_x1780_x593384929}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1992165299}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_10012_x1780_x2010651433}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x666994761}
+【参数】
 
-[**[ac]{lang="EN-US"}**]{#struct_0_10012_x1780_481817618}[：显示]{style="font-family:宋体"}[AC]{lang="EN-US"}[的转发信息。]{style="font-family:宋体"}
+**[ac**]：显示AC的转发信息。
 
-[**[pw]{lang="EN-US"}**]{#struct_0_10012_x1780_1854200063}[：显示]{style="font-family:宋体"}[PW]{lang="EN-US"}[的转发信息。]{style="font-family:宋体"}
+**[pw**]：显示PW的转发信息。
 
-[**[vsi]{lang="EN-US"}***[ vsi-name]{lang="EN-US"}*]{#struct_0_10012_x1780_1224680789}[：显示指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的转发信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的转发信息。]{style="font-family:宋体"}
+**[vsi*** vsi-name*]：显示指定VSI的转发信息。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，则显示所有VSI的转发信息。
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_10012_x1780_x2025770074}[：显示指定单板上的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[转发信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果不指定本参数，则显示主用主控板上的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[转发信息。（分布式设备―独立运行模式）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定单板上的L2VPN转发信息。*slot-number*表示单板所在的槽位号。如果不指定本参数，则显示主用主控板上的L2VPN转发信息。（分布式设备―独立运行模式）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_10012_x1780_x2010716969}[：显示指定成员设备上的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[转发信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。如果不指定本参数，则显示]{style="font-family:宋体"}[Master]{lang="EN-US"}[设备上的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[转发信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备上的L2VPN转发信息。*slot-number*表示设备在IRF中的成员编号。如果不指定本参数，则显示Master设备上的L2VPN转发信息。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_10012_x1780_x2149853}[：显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[上的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[转发信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。如果不指定本参数，则显示]{style="font-family:宋体"}[Master]{lang="EN-US"}[设备上的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[转发信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备/PEX上的L2VPN转发信息。*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果不指定本参数，则显示Master设备上的L2VPN转发信息。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}***[ slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_10012_x1780_1549133268}[：显示指定成员设备上指定单板的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[转发信息。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果不指定本参数，则显示]{style="font-family:宋体"}[Master]{lang="EN-US"}[设备上主用主控板的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[转发信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number*** slot ***slot-number*]：显示指定成员设备上指定单板的L2VPN转发信息。*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果不指定本参数，则显示Master设备上主用主控板的L2VPN转发信息。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}***[ slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_10012_x1780_x1855172170}[：显示指定单板的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[转发信息。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。如果不指定本参数，则显示]{style="font-family:宋体"}[Master]{lang="EN-US"}[设备上主用主控板的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[转发信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number*** slot ***slot-number*]：显示指定单板的L2VPN转发信息。*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。如果不指定本参数，则显示Master设备上主用主控板的L2VPN转发信息。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu ]{lang="EN-US"}***[cpu-number]{lang="EN-US"}*]{#struct_0_10012_x1780_x1287154788}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[转发信息。]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号。]{style="font-family:宋体"}[只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。]{style="font-family:宋体"}[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[cpu ***cpu-number*]：显示指定CPU上的L2VPN转发信息。*cpu-number*表示CPU编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_10012_x1780_x1767977183}[：]{style="font-family:宋体"}[显示详细信息。如果不指定本参数，则显示简要信息。]{style="font-family:宋体"}
+**[verbose**]：显示详细信息。如果不指定本参数，则显示简要信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1981116741}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_1021739512}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内]{style="font-family:宋体"}[AC]{lang="EN-US"}[转发的简要信息。]{style="font-family:宋体"}
+\# 显示所有VSI内AC转发的简要信息。
 
-[[\<Sysname\> display l2vpn forwarding ac]{lang="EN-US"}]{#struct_0_10012_x1780_x2010520361}
+\<Sysname\> display l2vpn forwarding ac
 
-[Total number of VSIs: 1]{lang="EN-US"}
+Total number of VSIs: 1
 
-[Total number of ACs: 3]{lang="EN-US"}
+Total number of ACs: 3
 
-[ ]{lang="EN-US"}
+AC                               VSI Name                        Link ID
 
-[AC                               VSI Name                        Link ID]{lang="EN-US"}
+GE1/0/5 srv1                     test                            3
 
-[GE1/0/5 srv1                     test                            3]{lang="EN-US"}
+GE1/0/5 srv2                     test                            4
 
-[GE1/0/5 srv2                     test                            4]{lang="EN-US"}
+GE1/0/6                          test                            5
 
-[GE1/0/6                          test                            5]{lang="EN-US"}
+表1-14 display l2vpn forwarding ac命令显示信息描述表
 
-[[表1-14 ]{lang="EN-US"}[display l2vpn forwarding ac]{lang="EN-US"}]{#struct_0_10012_x1780_1625823519}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1434080385}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1908895575}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_410480827}
+Total number of VSIs
 
-[[Total number of VSIs]{lang="EN-US"}]{#struct_0_10012_x1780_x248925614}
+VSI的总数，包括没有关联AC的VSI
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x2010585897}[的总数，包括没有关联]{style="font-family:宋体"}[AC]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}
+Total number of ACs
 
-[[Total number of ACs]{lang="EN-US"}]{#struct_0_10012_x1780_x278167634}
+所有VSI或指定VSI下AC的总数
 
-[[所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_778127618}[或指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[下]{style="font-family:宋体"}[AC]{lang="EN-US"}[的总数]{style="font-family:宋体"}
+AC
 
-[[AC]{lang="EN-US"}]{#struct_0_10012_x1780_960644839}
+接入电路，取值有如下两种：
 
-[[接入电路，取值有如下两种：]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1382554146}
+·三层接口名称：如GE1/0/6。在三层接口下关联VSI时，AC取值为此方式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[三层接口名称：如]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1080648368}[GE1/0/6]{lang="EN-US"}[。在三层接口下关联]{style="font-family:宋体"}[VSI]{lang="EN-US"}[时，]{style="font-family:宋体"}[AC]{lang="EN-US"}[取值为此方式]{style="font-family:宋体"}
+·二层接口名称和以太网服务实例：如GE1/0/5 srv1。在以太网服务实例下关联VSI时，AC取值为此方式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[二层接口名称和以太网服务实例：如]{style="font-family:宋体"}]{#struct_0_10012_x1780_x2010389289}[GE1/0/5 srv1]{lang="EN-US"}[。在以太网服务实例下关联]{style="font-family:宋体"}[VSI]{lang="EN-US"}[时，]{style="font-family:宋体"}[AC]{lang="EN-US"}[取值为此方式]{style="font-family:宋体"}
+VSI Name
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_10012_x1780_1075823638}
+AC所属VSI的名称
 
-[[AC]{lang="EN-US"}]{#struct_0_10012_x1780_807184539}[所属]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称]{style="font-family:宋体"}
+Link ID
 
-[[Link ID]{lang="EN-US"}]{#struct_0_10012_x1780_x1675842206}
+AC在VSI内的链路标识符
 
-[[AC]{lang="EN-US"}]{#struct_0_10012_x1780_x130558755}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的链路标识符]{style="font-family:宋体"}
+\# 显示所有VSI内AC转发的详细信息。
 
-[ ]{lang="EN-US"}
+\<Sysname\> display l2vpn forwarding ac verbose
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x2010454825}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内]{style="font-family:宋体"}[AC]{lang="EN-US"}[转发的详细信息。]{style="font-family:宋体"}
+VSI Name: vpls1
 
-[[\<Sysname\> display l2vpn forwarding ac verbose]{lang="EN-US"}]{#struct_0_10012_x1780_x2010323753}
+  Interface: Vlan10
 
-[VSI Name: vpls1]{lang="EN-US"}
+    Link ID      : 0
 
-[  Interface: Vlan10]{lang="EN-US"}
+    Access Mode  : VLAN
 
-[    Link ID      : 0]{lang="EN-US"}
+  Interface: GE1/0/3  Service Instance: 1
 
-[    Access Mode  : VLAN]{lang="EN-US"}
+    Link ID      : 1
 
-[  Interface: GE1/0/3  Service Instance: 1]{lang="EN-US"}
+    Access Mode  : VLAN
 
-[    Link ID      : 1]{lang="EN-US"}
+    Encapsulation: s-vid 1 to 2 15 to 16
 
-[    Access Mode  : VLAN]{lang="EN-US"}
+VSI Name: vpls2
 
-[    Encapsulation: s-vid 1 to 2 15 to 16]{lang="EN-US"}
+  Interface: Vlan13
 
-[ ]{lang="EN-US"}
+    Link ID      : 0
 
-[VSI Name: vpls2]{lang="EN-US"}
+    Access Mode  : VLAN
 
-[  Interface: Vlan13]{lang="EN-US"}
+    AC Attributes: Hub link
 
-[    Link ID      : 0]{lang="EN-US"}
+  Interface: GE1/0/3  Service Instance: 4
 
-[    Access Mode  : VLAN]{lang="EN-US"}
+    Link ID      : 1
 
-[    AC Attributes: Hub link]{lang="EN-US"}
+    Access Mode  : VLAN
 
-[  Interface: GE1/0/3  Service Instance: 4]{lang="EN-US"}
+    AC Attributes: Hub link
 
-[    Link ID      : 1]{lang="EN-US"}
+    Encapsulation: untagged
 
-[    Access Mode  : VLAN]{lang="EN-US"}
+VSI Name: vpls5
 
-[    AC Attributes: Hub link]{lang="EN-US"}
+  Interface: Vlan14
 
-[    Encapsulation: untagged]{lang="EN-US"}
+    Link ID      : 0
 
-[ ]{lang="EN-US"}
+    Access Mode  : VLAN
 
-[VSI Name: vpls5]{lang="EN-US"}
+表1-15 display l2vpn forwarding ac verbose命令显示信息描述表
 
-[  Interface: Vlan14]{lang="EN-US"}
+字段
 
-[    Link ID      : 0]{lang="EN-US"}
+描述
 
-[    Access Mode  : VLAN]{lang="EN-US"}
+VSI Name
 
-[[表1-15 ]{lang="EN-US"}[display l2vpn forwarding ac verbose]{lang="EN-US"}]{#struct_0_10012_x1780_342306789}[命令显示信息描述表]{style="font-family:黑体"}
+VSI名称
 
-[]{#table_struct_0_x1431909825}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_x23546166}
+Interface
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_63663614}
+接入接口
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_10012_x1780_x1803503678}
+Service Instance
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_2046195720}[名称]{style="font-family:宋体"}
+以太网服务实例，AC为二层接口的以太网服务实例时才显示该字段
 
-[[Interface]{lang="EN-US"}]{#struct_0_10012_x1780_x444698561}
+Link ID
 
-[[接入接口]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1714702742}
+AC在VSI内的链路标识符
 
-[[Service Instance]{lang="EN-US"}]{#struct_0_10012_x1780_x1493779317}
+Access Mode
 
-[[以太网服务实例，]{style="font-family:宋体"}[AC]{lang="EN-US"}]{#struct_0_10012_x1780_1443907039}[为二层接口的以太网服务实例时才显示该字段]{style="font-family:宋体"}
+AC接入模式，取值包括：
 
-[[Link ID]{lang="EN-US"}]{#struct_0_10012_x1780_x444764097}
+·VLAN：VLAN模式
 
-[[AC]{lang="EN-US"}]{#struct_0_10012_x1780_1113997070}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的链路标识符]{style="font-family:宋体"}
+·Ethernet：Ethernet模式
 
-[[Access Mode]{lang="EN-US"}]{#struct_0_10012_x1780_10778780}
+AC Attributes
 
-[[AC]{lang="EN-US"}]{#struct_0_10012_x1780_739868778}[接入模式，取值包括：]{style="font-family:宋体"}
+AC的属性，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VLAN]{lang="EN-US"}]{#struct_0_10012_x1780_x328224108}[：]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[模式]{lang="EN-US" style="font-family:宋体"}
+·Hub link：VPLS Hub-spoke组网中，AC为hub链路
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Ethernet]{lang="EN-US"}]{#struct_0_10012_x1780_230370890}[：]{lang="EN-US" style="font-family:宋体"}[Ethernet]{lang="EN-US"}[模式]{lang="EN-US" style="font-family:宋体"}
+·Spoke link：VPLS Hub-spoke组网中，AC为Spoke链路
 
-[[AC Attributes]{lang="EN-US"}]{#struct_0_10012_x1780_x444567489}
+在与此AC关联的VSI具有Hub-spoke属性时，才显示这个字段
 
-[[AC]{lang="EN-US"}]{#struct_0_10012_x1780_x851129808}[的属性，取值包括：]{style="font-family:宋体"}
+Encapsulation
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Hub link]{lang="EN-US"}]{#struct_0_10012_x1780_1862476355}[：]{lang="EN-US" style="font-family:宋体"}[VPLS Hub-spoke]{lang="EN-US"}[组网中，]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}[为]{lang="EN-US" style="font-family:宋体"}[hub]{lang="EN-US"}[链路]{lang="EN-US" style="font-family:宋体"}
+以太网服务实例的报文匹配规则，AC为二层接口的以太网服务实例时才显示该字段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Spoke link]{lang="EN-US"}]{#struct_0_10012_x1780_1280511717}[：]{lang="EN-US" style="font-family:宋体"}[VPLS Hub-spoke]{lang="EN-US"}[组网中，]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}[为]{lang="EN-US" style="font-family:宋体"}[Spoke]{lang="EN-US"}[链路]{lang="EN-US" style="font-family:宋体"}
+\# 显示所有VSI内PW转发的简要信息。
 
-[[在与此]{style="font-family:宋体"}[AC]{lang="EN-US"}]{#struct_0_10012_x1780_x444633025}[关联的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[具有]{style="font-family:宋体"}[Hub-spoke]{lang="EN-US"}[属性时，才显示这个字段]{style="font-family:宋体"}
+\<Sysname\> display l2vpn forwarding pw
 
-[[Encapsulation]{lang="EN-US"}]{#struct_0_10012_x1780_699505907}
+Total number of VSIs: 1
 
-[[以太网服务实例的报文匹配规则，]{style="font-family:宋体"}[AC]{lang="EN-US"}]{#struct_0_10012_x1780_1825186228}[为二层接口的以太网服务实例时才显示该字段]{style="font-family:宋体"}
+Total number of PWs: 2, 2 up, 0 blocked, 0 down
 
-[ ]{lang="EN-US"}
+VSI Name                        In/Out Label    NID        Link ID    State
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_223562377}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内]{style="font-family:宋体"}[PW]{lang="EN-US"}[转发的简要信息。]{style="font-family:宋体"}
+aaa                             1272/1275       1034       8          Up
 
-[[\<Sysname\> display l2vpn forwarding pw]{lang="EN-US"}]{#struct_0_10012_x1780_x1103528582}
+aaa                             1271/1273       1035       9          Up
 
-[Total number of VSIs: 1]{lang="EN-US"}
+表1-16 display l2vpn forwarding pw命令显示信息描述表
 
-[Total number of PWs: 2, 2 up, 0 blocked, 0 down]{lang="EN-US"}
+字段
 
-[ ]{lang="EN-US"}
+描述
 
-[VSI Name                        In/Out Label    NID        Link ID    State]{lang="EN-US"}
+Total number of VSIs
 
-[aaa                             1272/1275       1034       8          Up]{lang="EN-US"}
+VSI的总数，包括没有PW的VSI
 
-[aaa                             1271/1273       1035       9          Up]{lang="EN-US"}
+Total number of PWs
 
-[[表1-16 ]{lang="EN-US"}[display l2vpn forwarding pw]{lang="EN-US"}]{#struct_0_10012_x1780_x2093121518}[命令显示信息描述表]{style="font-family:黑体"}
+所有VSI或指定VSI下PW总数，以及处于up、blocked、down状态的PW数目
 
-[]{#table_struct_0_x1435377793}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_x444436417}
+VSI Name
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_704533931}
+PW所属VSI的名称
 
-[[Total number of VSIs]{lang="EN-US"}]{#struct_0_10012_x1780_1332953955}
+In/Out Label
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x362837868}[的总数，包括没有]{style="font-family:宋体"}[PW]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}
+PW的入标签和出标签
 
-[[Total number of PWs]{lang="EN-US"}]{#struct_0_10012_x1780_x1094364669}
+NID
 
-[[所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x444501953}[或指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[下]{style="font-family:宋体"}[PW]{lang="EN-US"}[总数，以及处于]{style="font-family:宋体"}[up]{lang="EN-US"}[、]{style="font-family:宋体"}[blocked]{lang="EN-US"}[、]{style="font-family:宋体"}[down]{lang="EN-US"}[状态的]{style="font-family:宋体"}[PW]{lang="EN-US"}[数目]{style="font-family:宋体"}
+承载PW的隧道对应的NHLFE表项索引
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_10012_x1780_x1617001009}
+·存在等价隧道时，一个PW会对应多个NID
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x1115180699}[所属]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称]{style="font-family:宋体"}
+·如果不存在隧道，显示为None
 
-[[In/Out Label]{lang="EN-US"}]{#struct_0_10012_x1780_1038923436}
+Link ID
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x457078642}[的入标签和出标签]{style="font-family:宋体"}
+PW在VSI内的链路标识符
 
-[[NID]{lang="EN-US"}]{#struct_0_10012_x1780_707106425}
+State
 
-[[承载]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x444305345}[的隧道对应的]{style="font-family:宋体"}[NHLFE]{lang="EN-US"}[表项索引]{style="font-family:宋体"}
+PW的状态，取值包括Up、Down、Blocked和BFD Defect
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[存在等价隧道时，一个]{style="font-family:宋体"}]{#struct_0_10012_x1780_1499247392}[PW]{lang="EN-US"}[会对应多个]{style="font-family:宋体"}[NID]{lang="EN-US"}
+其中，Blocked为存在主备PW的情况下，当前没有转发流量、起到备份作用的PW的状态；BFD Defect为BFD检测到PW存在缺陷的状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果不存在隧道，显示为]{lang="EN-US" style="font-family:宋体"}[None]{lang="EN-US"}]{#struct_0_10012_x1780_1698811265}
+\# 显示所有VSI内PW转发的详细信息。
 
-[[Link ID]{lang="EN-US"}]{#struct_0_10012_x1780_1172497167}
+\<Sysname\> display l2vpn forwarding pw verbose
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x1250591864}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的链路标识符]{style="font-family:宋体"}
+VSI Name: aaa
 
-[[State]{lang="EN-US"}]{#struct_0_10012_x1780_x444370881}
+  Link ID: 8
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_1907953909}[的状态，取值包括]{style="font-family:宋体"}[Up]{lang="EN-US"}[、]{style="font-family:宋体"}[Down]{lang="EN-US"}[、]{style="font-family:宋体"}[Blocked]{lang="EN-US"}[和]{style="font-family:宋体"}[BFD Defect]{lang="EN-US"}
+    PW Type         : VLAN                  PW State : Up
 
-[[其中，]{style="font-family:宋体"}[Blocked]{lang="EN-US"}]{#struct_0_10012_x1780_2079239720}[为存在主备]{style="font-family:宋体"}[PW]{lang="EN-US"}[的情况下，当前没有转发流量、起到备份作用的]{style="font-family:宋体"}[PW]{lang="EN-US"}[的状态；]{style="font-family:宋体"}[BFD Defect]{lang="EN-US"}[为]{style="font-family:宋体"}[BFD]{lang="EN-US"}[检测到]{style="font-family:宋体"}[PW]{lang="EN-US"}[存在缺陷的状态]{style="font-family:宋体"}
+    In Label        : 1272                  Out Label: 1275
 
-[ ]{lang="EN-US"}
+    MTU             : 1500
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_579473103}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内]{style="font-family:宋体"}[PW]{lang="EN-US"}[转发的详细信息。]{style="font-family:宋体"}
+    PW Attributes   : Main
 
-[[\<Sysname\> display l2vpn forwarding pw verbose]{lang="EN-US"}]{#struct_0_10012_x1780_x444174273}
+    VCCV CC         : Router-Alert
 
-[VSI Name: aaa]{lang="EN-US"}
+    VCCV BFD        : Fault Detection with BFD
 
-[  Link ID: 8]{lang="EN-US"}
+    Tunnel Group ID : 0x960000000
 
-[    PW Type         : VLAN                  PW State : Up]{lang="EN-US"}
+    Tunnel NHLFE IDs: 1034
 
-[    In Label        : 1272                  Out Label: 1275]{lang="EN-US"}
+  Link ID: 9
 
-[    MTU             : 1500]{lang="EN-US"}
+    PW Type         : VLAN                  PW State : Up
 
-[    PW Attributes   : Main]{lang="EN-US"}
+    In Label        : 1271                  Out Label: 1273
 
-[    VCCV CC         : Router-Alert]{lang="EN-US"}
+    MTU             : 1500
 
-[    VCCV BFD        : Fault Detection with BFD]{lang="EN-US"}
+    PW Attributes   : Main
 
-[    Tunnel Group ID : 0x960000000]{lang="EN-US"}
+    VCCV CC         : Router-Alert
 
-[    Tunnel NHLFE IDs: 1034]{lang="EN-US"}
+    VCCV BFD        : Fault Detection with BFD
 
-[  Link ID: 9]{lang="EN-US"}
+    Tunnel Group ID : 0xa60000001
 
-[    PW Type         : VLAN                  PW State : Up]{lang="EN-US"}
+    Tunnel NHLFE IDs: 1035
 
-[    In Label        : 1271                  Out Label: 1273]{lang="EN-US"}
+表1-17 display l2vpn forwarding pw verbose命令显示信息描述表
 
-[    MTU             : 1500]{lang="EN-US"}
+字段
 
-[    PW Attributes   : Main]{lang="EN-US"}
+描述
 
-[    VCCV CC         : Router-Alert]{lang="EN-US"}
+VSI Name
 
-[    VCCV BFD        : Fault Detection with BFD]{lang="EN-US"}
+VSI名称
 
-[    Tunnel Group ID : 0xa60000001]{lang="EN-US"}
+Link ID
 
-[    Tunnel NHLFE IDs: 1035]{lang="EN-US"}
+PW在VSI内的链路标识符
 
-[[表1-17 ]{lang="EN-US"}[display l2vpn forwarding pw verbose]{lang="EN-US"}]{#struct_0_10012_x1780_729235034}[命令显示信息描述表]{style="font-family:黑体"}
+PW Type
 
-[]{#table_struct_0_x1441424417}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_1854160586}
+PW数据封装类型
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_x444239809}
+PW State
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_10012_x1780_689973791}
+PW的状态，取值包括Up、Down、Blocked和BFD Defect
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x675762501}[名称]{style="font-family:宋体"}
+其中，Blocked为存在主备PW的情况下，当前没有转发流量、起到备份作用的PW的状态；BFD Defect为BFD检测到PW存在缺陷的状态
 
-[[Link ID]{lang="EN-US"}]{#struct_0_10012_x1780_404614103}
+In Label
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x1884642546}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的链路标识符]{style="font-family:宋体"}
+PW的入标签
 
-[[PW Type]{lang="EN-US"}]{#struct_0_10012_x1780_x1246403220}
+Out Label
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x444698560}[数据封装类型]{style="font-family:宋体"}
+PW的出标签
 
-[[PW State]{lang="EN-US"}]{#struct_0_10012_x1780_x1714768278}
+MTU
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x1828822484}[的状态，取值包括]{style="font-family:宋体"}[Up]{lang="EN-US"}[、]{style="font-family:宋体"}[Down]{lang="EN-US"}[、]{style="font-family:宋体"}[Blocked]{lang="EN-US"}[和]{style="font-family:宋体"}[BFD Defect]{lang="EN-US"}
+PW协商后的最大传输单元
 
-[[其中，]{style="font-family:宋体"}[Blocked]{lang="EN-US"}]{#struct_0_10012_x1780_558948401}[为存在主备]{style="font-family:宋体"}[PW]{lang="EN-US"}[的情况下，当前没有转发流量、起到备份作用的]{style="font-family:宋体"}[PW]{lang="EN-US"}[的状态；]{style="font-family:宋体"}[BFD Defect]{lang="EN-US"}[为]{style="font-family:宋体"}[BFD]{lang="EN-US"}[检测到]{style="font-family:宋体"}[PW]{lang="EN-US"}[存在缺陷的状态]{style="font-family:宋体"}
+PW Attributes
 
-[[In Label]{lang="EN-US"}]{#struct_0_10012_x1780_1709128030}
+PW的属性，取值包括
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x444764096}[的入标签]{style="font-family:宋体"}
+·Main：主PW
 
-[[Out Label]{lang="EN-US"}]{#struct_0_10012_x1780_1114062606}
+·Backup：备份PW
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_299899887}[的出标签]{style="font-family:宋体"}
+·No-split-horizon：禁止水平分割
 
-[[MTU]{lang="EN-US"}]{#struct_0_10012_x1780_1896261124}
+·Hub link：VPLS hub-spoke组网中，PW为hub链路
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x444567488}[协商后的最大传输单元]{style="font-family:宋体"}
+·Spoke link： VPLS hub-spoke组网中，PW为spoke链路
 
-[[PW Attributes]{lang="EN-US"}]{#struct_0_10012_x1780_x851064272}
+VCCV CC
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x480698570}[的属性，取值包括]{style="font-family:宋体"}
+检测PW的VCCV控制通道类型，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Main]{lang="EN-US"}]{#struct_0_10012_x1780_x1373265835}[：主]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}
+·Control-Word：控制字类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Backup]{lang="EN-US"}]{#struct_0_10012_x1780_x1553149143}[：备份]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}
+·Router-Alert：MPLS路由器告警标签类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No-split-horizon]{lang="EN-US"}]{#struct_0_10012_x1780_x444633024}[：禁止水平分割]{lang="EN-US" style="font-family:
-  宋体"}
+·TTL：TTL超时类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Hub link]{lang="EN-US"}]{#struct_0_10012_x1780_699440371}[：]{lang="EN-US" style="font-family:宋体"}[VPLS hub-spoke]{lang="EN-US"}[组网中，]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}[为]{lang="EN-US" style="font-family:宋体"}[hub]{lang="EN-US"}[链路]{lang="EN-US" style="font-family:宋体"}
+VCCV BFD
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Spoke link]{lang="EN-US"}]{#struct_0_10012_x1780_x1328554796}[：]{lang="EN-US" style="font-family:宋体"}[ VPLS hub-spoke]{lang="EN-US"}[组网中，]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}[为]{lang="EN-US" style="font-family:宋体"}[spoke]{lang="EN-US"}[链路]{lang="EN-US" style="font-family:宋体"}
+检测PW的BFD报文的封装方式，取值包括：
 
-[[VCCV CC]{lang="EN-US"}]{#struct_0_10012_x1780_164601460}
+·Fault Detection with BFD：BFD报文的封装方式为IP/UDP Encapsulation(with IP/UDP Headers)
 
-[[检测]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x444436416}[的]{style="font-family:宋体"}[VCCV]{lang="EN-US"}[控制通道类型，取值包括：]{style="font-family:宋体"}
+·Fault Detection with Raw-BFD：BFD报文的封装方式为PW-ACH Encapsulation (without IP/UDP Headers)，即封装在VCCV控制通道内的BFD控制报文不携带IP和UDP头
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Control-Word]{lang="EN-US"}]{#struct_0_10012_x1780_704468395}[：控制字]{lang="EN-US" style="font-family:宋体"}[类型]{style="font-family:宋体"}
+Tunnel Group ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Router-Alert]{lang="EN-US"}]{#struct_0_10012_x1780_1780397194}[：]{lang="EN-US" style="font-family:宋体"}[MPLS]{lang="EN-US"}[路由]{lang="EN-US" style="font-family:宋体"}[器]{style="font-family:宋体"}[告警标签]{lang="EN-US" style="font-family:宋体"}[类型]{style="font-family:宋体"}
+承载PW的隧道组ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TTL]{lang="EN-US"}]{#struct_0_10012_x1780_x977611428}[：]{style="font-family:宋体"}[TTL]{lang="EN-US"}[超时类型]{style="font-family:宋体"}
+Tunnel NHLFE IDs
 
-[[VCCV BFD]{lang="EN-US"}]{#struct_0_10012_x1780_x444501952}
+承载PW的隧道对应的NHLFE表项索引列表
 
-[[检测]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x1616935473}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[报文的封装方式，取值包括：]{style="font-family:宋体"}
+存在等价隧道时，一个PW会对应多个索引值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Fault Detection with BFD]{lang="EN-US"}]{#struct_0_10012_x1780_x2115332847}[：]{lang="EN-US" style="font-family:宋体"}[BFD]{lang="EN-US"}[报文的封装方式为]{style="font-family:宋体"}[IP/UDP]{lang="EN-US"}[ Encapsulation]{lang="EN-US"}[ ]{lang="EN-US"}[(with IP/UDP Headers)]{lang="EN-US"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Fault Detection with Raw-BFD]{lang="EN-US"}]{#struct_0_10012_x1780_1311058561}[：]{style="font-family:
-  宋体"}[BFD]{lang="EN-US"}[报文的封装方式为]{lang="EN-US" style="font-family:
-  宋体"}[PW-ACH Encapsulation (without IP/UDP Headers)]{lang="EN-US"}[，即封装在]{lang="EN-US" style="font-family:宋体"}[VCCV]{lang="EN-US"}[控制通道内]{lang="EN-US" style="font-family:宋体"}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[控制报文不携带]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[和]{lang="EN-US" style="font-family:宋体"}[UDP]{lang="EN-US"}[头]{lang="EN-US" style="font-family:宋体"}
-
-[[Tunnel Group ID]{lang="EN-US"}]{#struct_0_10012_x1780_x444305344}
-
-[[承载]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_1499312928}[的隧道组]{style="font-family:宋体"}[ID]{lang="EN-US"}
-
-[[Tunnel NHLFE IDs]{lang="EN-US"}]{#struct_0_10012_x1780_x1056936036}
-
-[[承载]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x349746945}[的隧道对应的]{style="font-family:宋体"}[NHLFE]{lang="EN-US"}[表项索引列表]{style="font-family:宋体"}
-
-[[存在等价隧道时，一个]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x444370880}[会对应多个索引值]{style="font-family:宋体"}
-
-[[如果不存在隧道，显示为]{style="font-family:宋体"}[None]{lang="EN-US"}]{#struct_0_10012_x1780_1907888373}
-
-[ ]{lang="EN-US"}
-
-::: {#356357916 .myid}
-[]{#_Toc404791645}[]{#struct_0_10012_x1780_x1019951169}
+如果不存在隧道，显示为None
 
 **VPLS \-- VPLS配置命令 \-- display l2vpn mac-address**
 
 ------------------------------------------------------------------------
 
-[**[display l2vpn mac-address]{lang="EN-US"}**]{#struct_0_10012_x1780_53788003}[命令用来显示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表信息。]{style="font-family:宋体"}
+**[display l2vpn mac-address**]命令用来显示VSI的MAC地址表信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1438833474}
+【命令】
 
-[**[display l2vpn mac-address ]{lang="EN-US"}**[\[ **vsi** *vsi-name* \] \[ **dynamic** \] \[ **count** \]]{lang="EN-US"}]{#struct_0_10012_x1780_x79123024}
+**[display l2vpn mac-address ** **vsi** *vsi-name* ]  **dynamic**   **count**
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x444174272}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10012_x1780_729169498}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1901653915}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1687871726}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10012_x1780_x1873024250}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1916239487}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_10012_x1780_x316384250}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x395008851}
+【参数】
 
-[**[vsi]{lang="EN-US"}**[ *vsi-name*]{lang="EN-US"}]{#struct_0_10012_x1780_x444239808}[：显示指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表信息。]{style="font-family:宋体"}
+**[vsi** *vsi-name*]：显示指定VSI的MAC地址表信息。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，则显示所有VSI的MAC地址表信息。
 
-[**[dynamic]{lang="EN-US"}**]{#struct_0_10012_x1780_689908255}[：显示动态生成的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。如果不指定本参数，则显示所有类型的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。目前，只支持动态生成的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}
+**[dynamic**]：显示动态生成的MAC地址表项。如果不指定本参数，则显示所有类型的MAC地址表项。目前，只支持动态生成的MAC地址表项。
 
-[**[count]{lang="EN-US"}**]{#struct_0_10012_x1780_1747931631}[：显示]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项的数目。如果不指定本参数，则显示]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项的具体信息。]{style="font-family:宋体"}
+**[count**]：显示MAC地址表项的数目。如果不指定本参数，则显示MAC地址表项的具体信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1410381642}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_868389033}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表信息。]{style="font-family:宋体"}
+\# 显示所有VSI的MAC地址表信息。
 
-[[\<Sysname\> display l2vpn mac-address]{lang="EN-US"}]{#struct_0_10012_x1780_x106917373}
+\<Sysname\> display l2vpn mac-address
 
-[MAC Address      State    VSI Name                         Link ID/Name  Aging]{lang="EN-US"}
+MAC Address      State    VSI Name                         Link ID/Name  Aging
 
-[0000-0000-000a   dynamic  vpn1                             1             Aging]{lang="EN-US"}
+0000-0000-000a   dynamic  vpn1                             1             Aging
 
-[0000-0000-0009   dynamic  vpn1                             2             Aging ]{lang="EN-US"}
+0000-0000-0009   dynamic  vpn1                             2             Aging
 
-[\-\-- 2 mac address(es) found  \-\--     ]{lang="EN-US"}
+\-\-- 2 mac address(es) found  \-\--    
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x1935454317}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项总数。]{style="font-family:宋体"}
+\# 显示所有VSI的MAC地址表项总数。
 
-[[\<Sysname\> display l2vpn mac-address count]{lang="EN-US"}]{#struct_0_10012_x1780_x444698563}
+\<Sysname\> display l2vpn mac-address count
 
-[2 mac address(es) found]{lang="EN-US"}
+2 mac address(es) found
 
-[[表1-18 ]{lang="EN-US"}[display l2vpn mac-address]{lang="EN-US"}]{#struct_0_10012_x1780_x1714571670}[命令显示信息描述表]{style="font-family:黑体"}
+表1-18 display l2vpn mac-address命令显示信息描述表
 
-[]{#table_struct_0_x1412023361}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1540059491}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_503664112}
+描述
 
-[[MAC Address]{lang="EN-US"}]{#struct_0_10012_x1780_877498432}
+MAC Address
 
-[[MAC]{lang="EN-US"}]{#struct_0_10012_x1780_x189783516}[地址]{style="font-family:宋体"}
+MAC地址
 
-[[State]{lang="EN-US"}]{#struct_0_10012_x1780_x444764099}
+State
 
-[[MAC]{lang="EN-US"}]{#struct_0_10012_x1780_1113079566}[地址的状态，目前取值只包括]{style="font-family:宋体"}[dynamic]{lang="EN-US"}[，表示]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址是动态学习的]{style="font-family:宋体"}
+MAC地址的状态，目前取值只包括dynamic，表示MAC地址是动态学习的
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_10012_x1780_1937782120}
+VSI Name
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1190657522}[名称]{style="font-family:宋体"}
+VSI名称
 
-[[Link ID/Name]{lang="EN-US"}]{#struct_0_10012_x1780_x1198994172}
+Link ID/Name
 
-[[Link ID]{lang="EN-US"}]{#struct_0_10012_x1780_x444567491}[表示]{style="font-family:宋体"}[MAC]{lang="EN-US"}[表项的出链路标识符，即]{style="font-family:宋体"}[AC]{lang="EN-US"}[或]{style="font-family:宋体"}[PW]{lang="EN-US"}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的链路标识符]{style="font-family:宋体"}
+Link ID表示MAC表项的出链路标识符，即AC或PW在VSI内的链路标识符
 
-[[Name]{lang="EN-US"}]{#struct_0_10012_x1780_808355768}[用于]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[类型的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[，]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[类型的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[不支持]{style="font-family:宋体"}[Name]{lang="EN-US"}
+Name用于VXLAN类型的VSI，VPLS类型的VSI不支持Name
 
-[[Name]{lang="EN-US"}]{#struct_0_10012_x1780_x1264980353}[的支持情况与设备型号有关，请以设备的实际情况为准]{style="font-family:宋体"}
+Name的支持情况与设备型号有关，请以设备的实际情况为准
 
-[[Aging]{lang="EN-US"}]{#struct_0_10012_x1780_x850605519}
+Aging
 
-[[MAC]{lang="EN-US"}]{#struct_0_10012_x1780_1504226243}[地址表项是否老化，取值包括]{style="font-family:宋体"}[Aging]{lang="EN-US"}[和]{style="font-family:宋体"}[NotAging]{lang="EN-US"}
+MAC地址表项是否老化，取值包括Aging和NotAging
 
-[[XX mac address(es) found]{lang="EN-US"}]{#struct_0_10012_x1780_279842149}
+XX mac address(es) found
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_575133707}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项的总数]{style="font-family:宋体"}
+VSI的MAC地址表项的总数
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1592073237}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset l2vpn mac-address]{lang="EN-US"}**]{#struct_0_10012_x1780_x444633027}
-
-::: {#1506055251 .myid}
-[]{#_Toc404791646}[]{#struct_0_10012_x1780_699374835}[]{#_Toc300843391}[]{#_Toc300843392}
+·**reset l2vpn mac-address**
 
 **VPLS \-- VPLS配置命令 \-- display l2vpn interface**
 
 ------------------------------------------------------------------------
 
-[**[display l2vpn interface]{lang="EN-US"}**]{#struct_0_10012_x1780_1567462724}[命令用来显示与]{style="font-family:宋体"}[VSI]{lang="EN-US"}[关联的三层接口的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[display l2vpn interface**]命令用来显示与VSI关联的三层接口的L2VPN信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1684487295}
+【命令】
 
-[**[display l2vpn interface ]{lang="EN-US"}**[\[ **vsi** *vsi-name*]{lang="EN-US"}[ \| *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_10012_x1780_1306580167}
+**[display l2vpn interface **[ **vsi** *vsi-name*[ \| *interface-type interface-number* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x2067782847}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10012_x1780_992676906}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x949785856}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x444436419}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10012_x1780_705451435}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_359151745}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_10012_x1780_1265419565}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_581378825}
+【参数】
 
-[**[vsi ]{lang="EN-US"}***[vsi-name]{lang="EN-US"}*]{#struct_0_10012_x1780_x1994876515}[：显示与指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[关联的三层接口的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[vsi ***vsi-name*]：显示与指定VSI关联的三层接口的L2VPN信息。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。
 
-[*[interface-type interface-number]{lang="EN-US"}*]{#struct_0_10012_x1780_x2030452723}[：显示指定接口的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[信息。]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[为接口类型和接口编号。]{style="font-family:宋体"}
+*[interface-type interface-number*]：显示指定接口的L2VPN信息。*interface-type interface-number*为接口类型和接口编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x290293832}
+【使用指导】
 
-[[执行本命令时，如果没有指定任何参数，则显示所有与]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x444501955}[关联的三层接口的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+执行本命令时，如果没有指定任何参数，则显示所有与VSI关联的三层接口的L2VPN信息。
 
-[[本命令只能显示与]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x1617132081}[关联的三层接口的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[信息。若要显示以太网服务实例的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[信息，则需要执行]{style="font-family:宋体"}**[display l2vpn service-instance]{lang="EN-US"}**[命令。]{style="font-family:宋体"}
+本命令只能显示与VSI关联的三层接口的L2VPN信息。若要显示以太网服务实例的L2VPN信息，则需要执行**display l2vpn service-instance**命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1873314268}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x1253061158}[显示所有与]{style="font-family:宋体"}[VSI]{lang="EN-US"}[关联的三层接口的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+\# 显示所有与VSI关联的三层接口的L2VPN信息。
 
-[[\<Sysname\> display l2vpn interface ]{lang="EN-US"}]{#struct_0_10012_x1780_x1305037210}
+\<Sysname\> display l2vpn interface
 
-[Total number of interfaces: 4, 3 up, 1 down]{lang="EN-US"}
+Total number of interfaces: 4, 3 up, 1 down
 
-[ ]{lang="EN-US"}
+Interface                Owner                           Link ID   State    Type
 
-[Interface                Owner                           Link ID   State    Type]{lang="EN-US"}
+Vlan10                   vpls1                           0         Up       VSI
 
-[Vlan10                   vpls1                           0         Up       VSI]{lang="EN-US"}
+Vlan11                   vpls2                           0         Up       VSI
 
-[Vlan11                   vpls2                           0         Up       VSI]{lang="EN-US"}
+GE1/0/1                  vpls1                           1         Up       VSI
 
-[GE1/0/1                  vpls1                           1         Up       VSI]{lang="EN-US"}
+GE1/0/2                  vpls1                           2         Down     VSI
 
-[GE1/0/2                  vpls1                           2         Down     VSI]{lang="EN-US"}
+表1-19 display l2vpn interface命令显示信息描述表
 
-[[表1-19 ]{lang="EN-US"}[display l2vpn interface]{lang="EN-US"}]{#struct_0_10012_x1780_x1943477122}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1409375393}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_x444305347}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_1499116320}
+Total number of interfaces
 
-[[Total number of interfaces]{lang="EN-US"}]{#struct_0_10012_x1780_122175938}
+与VSI关联的三层接口的总数，及处于up和down状态的接口数目
 
-[[与]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_932662506}[关联的三层接口的总数，及处于]{style="font-family:宋体"}[up]{lang="EN-US"}[和]{style="font-family:宋体"}[down]{lang="EN-US"}[状态的接口数目]{style="font-family:宋体"}
+Interface
 
-[[Interface]{lang="EN-US"}]{#struct_0_10012_x1780_18871151}
+与VSI关联的三层接口的名称
 
-[[与]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1629793981}[关联的三层接口的名称]{style="font-family:宋体"}
+Owner
 
-[[Owner]{lang="EN-US"}]{#struct_0_10012_x1780_x444370883}
+VSI名称
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1907822837}[名称]{style="font-family:宋体"}
+Link ID
 
-[[Link ID]{lang="EN-US"}]{#struct_0_10012_x1780_1698380205}
+接口对应AC在VSI内的链路标识符
 
-[[接口对应]{style="font-family:宋体"}[AC]{lang="EN-US"}]{#struct_0_10012_x1780_x415278897}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的链路标识符]{style="font-family:宋体"}
+State
 
-[[State]{lang="EN-US"}]{#struct_0_10012_x1780_621967050}
+接口的状态，取值包括Up和Down
 
-[[接口的状态，取值包括]{style="font-family:宋体"}[Up]{lang="EN-US"}]{#struct_0_10012_x1780_x444174275}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}
+Type
 
-[[Type]{lang="EN-US"}]{#struct_0_10012_x1780_729628250}
+接口对应的L2VPN类型，取值包括VSI和VPWS
 
-[[接口对应的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}]{#struct_0_10012_x1780_1598444975}[类型，取值包括]{style="font-family:宋体"}[VSI]{lang="EN-US"}[和]{style="font-family:宋体"}[VPWS]{lang="EN-US"}
+【相关命令】
 
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1831545491}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn service-instance]{lang="EN-US"}**]{#struct_0_10012_x1780_224841082}
-
-::: {#947157421 .myid}
-[]{#_Toc404791647}[]{#struct_0_10012_x1780_1676949467}
+·**display l2vpn service-instance**
 
 **VPLS \-- VPLS配置命令 \-- display l2vpn pw**
 
 ------------------------------------------------------------------------
 
-[**[display l2vpn pw]{lang="EN-US"}**]{#struct_0_10012_x1780_x444239811}[命令用来显示]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[的]{style="font-family:宋体"}[PW]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[display l2vpn pw**]命令用来显示L2VPN的PW信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_689449502}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **l2vpn** **pw** \[ **vsi** *vsi-name* \] \[ **protocol** { **bgp** \| **ldp** \| **static** } \] \[ **verbose** \]]{lang="EN-US"}]{#struct_0_10012_x1780_x331900809}
+**[display** **l2vpn** **pw** [ **vsi** *vsi-name*  [ **protocol** { **bgp** \| **ldp** \| **static** } ]  **verbose** ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x622140680}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1361903412}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1114959058}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1240776441}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10012_x1780_532037569}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x444698562}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_10012_x1780_x1714637206}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x434628393}
+【参数】
 
-[**[vsi]{lang="EN-US"}**[ *vsi-name*]{lang="EN-US"}]{#struct_0_10012_x1780_x1260419148}[：显示指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[的]{style="font-family:宋体"}[PW]{lang="EN-US"}[信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果没有指定本参数，则显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[的]{style="font-family:宋体"}[PW]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[vsi** *vsi-name*]：显示指定VSI内L2VPN的PW信息。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。如果没有指定本参数，则显示所有VSI内L2VPN的PW信息。
 
-[**[protocol]{lang="EN-US"}**]{#struct_0_10012_x1780_1347332834}[：显示采用指定信令协议建立的]{style="font-family:宋体"}[PW]{lang="EN-US"}[的信息。如果没有指定本参数，则显示所有协议产生的]{style="font-family:宋体"}[PW]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[protocol**]：显示采用指定信令协议建立的PW的信息。如果没有指定本参数，则显示所有协议产生的PW信息。
 
-[**[bgp]{lang="EN-US"}**]{#struct_0_10012_x1780_480336582}[：显示采用]{style="font-family:宋体"}[BGP]{lang="EN-US"}[作为]{style="font-family:宋体"}[PW]{lang="EN-US"}[信令协议建立的]{style="font-family:宋体"}[PW]{lang="EN-US"}[的信息，即]{style="font-family:宋体"}[BGP PW]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[bgp**]：显示采用BGP作为PW信令协议建立的PW的信息，即BGP PW信息。
 
-[**[ldp]{lang="EN-US"}**]{#struct_0_10012_x1780_222123469}[：显示采用]{style="font-family:宋体"}[LDP]{lang="EN-US"}[作为]{style="font-family:宋体"}[PW]{lang="EN-US"}[信令协议建立的]{style="font-family:宋体"}[PW]{lang="EN-US"}[的信息，包括]{style="font-family:宋体"}[FEC 128]{lang="EN-US"}[和]{style="font-family:宋体"}[FEC 129]{lang="EN-US"}[两种方式建立的]{style="font-family:宋体"}[PW]{lang="EN-US"}[，即]{style="font-family:宋体"}[LDP PW]{lang="EN-US"}[和]{style="font-family:宋体"}[BGP]{lang="EN-US"}[自动发现]{style="font-family:宋体"}[LDP]{lang="EN-US"}[信令]{style="font-family:宋体"}[PW]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[ldp**]：显示采用LDP作为PW信令协议建立的PW的信息，包括FEC 128和FEC 129两种方式建立的PW，即LDP PW和BGP自动发现LDP信令PW信息。
 
-[**[static]{lang="EN-US"}**]{#struct_0_10012_x1780_1403868346}[：显示采用静态方式建立的]{style="font-family:宋体"}[PW]{lang="EN-US"}[的信息，即静态]{style="font-family:宋体"}[PW]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[static**]：显示采用静态方式建立的PW的信息，即静态PW信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_10012_x1780_x444764098}[：]{style="font-family:宋体"}[显示详细信息。如果不指定本参数，则显示简要信息。]{style="font-family:宋体"}
+**[verbose**]：显示详细信息。如果不指定本参数，则显示简要信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_808486841}
+【使用指导】
 
-[[开启]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x1358303956}[统计功能后，可使用]{style="font-family:宋体"}**[display l2vpn pw verbose]{lang="EN-US"}**[命令查看]{style="font-family:宋体"}[PW]{lang="EN-US"}[的报文统计信息。]{style="font-family:宋体"}
+开启PW统计功能后，可使用**display l2vpn pw verbose**命令查看PW的报文统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1113145102}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x1150197033}[显示]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[所有]{style="font-family:宋体"}[PW]{lang="EN-US"}[的简要信息。]{style="font-family:宋体"}
+\# 显示L2VPN所有PW的简要信息。
 
-[[\<Sysname\> display l2vpn pw]{lang="EN-US"}]{#struct_0_10012_x1780_1482097895}
+\<Sysname\> display l2vpn pw
 
-[Flags: M - main, B - backup, H - hub link, S - spoke link, N - no split horizon]{lang="EN-US"}
+Flags: M - main, B - backup, H - hub link, S - spoke link, N - no split horizon
 
-[Total number of PWs: 5]{lang="EN-US"}
+Total number of PWs: 5
 
-[5 up, 0 blocked, 0 down, 0 defect, 0 idle, 0 duplicate]{lang="EN-US"}
+5 up, 0 blocked, 0 down, 0 defect, 0 idle, 0 duplicate
 
-[ ]{lang="EN-US"}
+VSI Name: aaa
 
-[VSI Name: aaa]{lang="EN-US"}
+Peer            PW ID/Rmt Site    In/Out Label    Proto   Flag  Link ID  State
 
-[Peer            PW ID/Rmt Site    In/Out Label    Proto   Flag  Link ID  State]{lang="EN-US"}
+2.2.2.9         2                 1420/1419       BGP     M     9        Up
 
-[2.2.2.9         2                 1420/1419       BGP     M     9        Up]{lang="EN-US"}
+3.3.3.9         3                 1421/1281       BGP     M     10       Up
 
-[3.3.3.9         3                 1421/1281       BGP     M     10       Up]{lang="EN-US"}
+VSI Name: bbb
 
-[ ]{lang="EN-US"}
+Peer            PW ID/Rmt Site    In/Out Label    Proto   Flag  Link ID  State
 
-[VSI Name: bbb]{lang="EN-US"}
+2.2.2.9         -                 1553/1553       LDP     M     8        Up
 
-[Peer            PW ID/Rmt Site    In/Out Label    Proto   Flag  Link ID  State]{lang="EN-US"}
+3.3.3.9         -                 1554/1416       LDP     M     9        Up
 
-[2.2.2.9         -                 1553/1553       LDP     M     8        Up]{lang="EN-US"}
+VSI Name: ccc
 
-[3.3.3.9         -                 1554/1416       LDP     M     9        Up]{lang="EN-US"}
+Peer            PW ID/Rmt Site    In/Out Label    Proto   Flag  Link ID  State
 
-[ ]{lang="EN-US"}
+2.2.2.9         500               1552/1552       LDP     M     8        Up
 
-[VSI Name: ccc]{lang="EN-US"}
+表1-20 display l2vpn pw命令显示信息描述表
 
-[Peer            PW ID/Rmt Site    In/Out Label    Proto   Flag  Link ID  State]{lang="EN-US"}
+字段
 
-[2.2.2.9         500               1552/1552       LDP     M     8        Up]{lang="EN-US"}
+描述
 
-[[表1-20 ]{lang="EN-US"}[display l2vpn pw]{lang="EN-US"}]{#struct_0_10012_x1780_x444567490}[命令显示信息描述表]{style="font-family:黑体"}
+Flags
 
-[]{#table_struct_0_x1415732097}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_x850539983}
-:::
+PW属性标记的取值
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_x872078673}
+Total number of PWs
 
-[[Flags]{lang="EN-US"}]{#struct_0_10012_x1780_x68395840}
+PW的总数，及处于up、blocked、down、defect、idle和duplicate状态的PW数目
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x1246519178}[属性标记的取值]{style="font-family:宋体"}
+VSI Name
 
-[[Total number of PWs]{lang="EN-US"}]{#struct_0_10012_x1780_x1634650259}
+VSI名称
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x444633026}[的总数，及处于]{style="font-family:宋体"}[up]{lang="EN-US"}[、]{style="font-family:宋体"}[blocked]{lang="EN-US"}[、]{style="font-family:宋体"}[down]{lang="EN-US"}[、]{style="font-family:宋体"}[defect]{lang="EN-US"}[、]{style="font-family:宋体"}[idle]{lang="EN-US"}[和]{style="font-family:宋体"}[duplicate]{lang="EN-US"}[状态的]{style="font-family:宋体"}[PW]{lang="EN-US"}[数目]{style="font-family:宋体"}
+Peer
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_10012_x1780_699309299}
+PW远端PE的IP地址
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x362327557}[名称]{style="font-family:宋体"}
+PW ID/Rmt Site
 
-[[Peer]{lang="EN-US"}]{#struct_0_10012_x1780_2014466341}
+如果是静态PW或FEC 128方式的LDP PW，则为PW标识符PW ID；如果是FEC 129方式的BGP自动发现LDP信令PW，则显示为"-"；如果是BGP PW，则为远端Site标识符Rmt Site
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_105177690}[远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+In/Out Label
 
-[[PW ID/Rmt Site]{lang="EN-US"}]{#struct_0_10012_x1780_x444436418}
+PW的入标签和出标签
 
-[[如果是静态]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_705385899}[或]{style="font-family:宋体"}[FEC 128]{lang="EN-US"}[方式的]{style="font-family:宋体"}[LDP PW]{lang="EN-US"}[，则为]{style="font-family:宋体"}[PW]{lang="EN-US"}[标识符]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[；如果是]{style="font-family:宋体"}[FEC 129]{lang="EN-US"}[方式的]{style="font-family:宋体"}[BGP]{lang="EN-US"}[自动发现]{style="font-family:宋体"}[LDP]{lang="EN-US"}[信令]{style="font-family:宋体"}[PW]{lang="EN-US"}[，则显示为"]{style="font-family:宋体"}[-]{lang="EN-US"}["；如果是]{style="font-family:宋体"}[BGP PW]{lang="EN-US"}[，则为远端]{style="font-family:宋体"}[Site]{lang="EN-US"}[标识符]{style="font-family:宋体"}[Rmt Site]{lang="EN-US"}
+Proto
 
-[[In/Out Label]{lang="EN-US"}]{#struct_0_10012_x1780_2019209570}
+建立PW使用的信令协议，取值包括LDP、Static和BGP
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_1762928794}[的入标签和出标签]{style="font-family:宋体"}
+Flag
 
-[[Proto]{lang="EN-US"}]{#struct_0_10012_x1780_x166613549}
+PW属性标记，取值包括：
 
-[[建立]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x444501954}[使用的信令协议，取值包括]{style="font-family:宋体"}[LDP]{lang="EN-US"}[、]{style="font-family:宋体"}[Static]{lang="EN-US"}[和]{style="font-family:宋体"}[BGP]{lang="EN-US"}
+·M：Main，主PW
 
-[[Flag]{lang="EN-US"}]{#struct_0_10012_x1780_x1617066545}
+·B：Backup ，备份PW
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_833622696}[属性标记，取值包括：]{style="font-family:宋体"}
+·H：Hub link，VPLS Hub-spoke组网中，PW为hub链路
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[M]{lang="EN-US"}]{#struct_0_10012_x1780_566052270}[：]{lang="EN-US" style="font-family:宋体"}[Main]{lang="EN-US"}[，主]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}
+·S：Spoke link，VPLS Hub-spoke组网中，PW为spoke链路
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[B]{lang="EN-US"}]{#struct_0_10012_x1780_x444305346}[：]{lang="EN-US" style="font-family:宋体"}[Backup ]{lang="EN-US"}[，备份]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}
+·N：No-split-horizon，取消水平分割
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[H]{lang="EN-US"}]{#struct_0_10012_x1780_1499181856}[：]{lang="EN-US" style="font-family:宋体"}[Hub link]{lang="EN-US"}[，]{lang="EN-US" style="font-family:宋体"}[VPLS Hub-spoke]{lang="EN-US"}[组网中，]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}[为]{lang="EN-US" style="font-family:宋体"}[hub]{lang="EN-US"}[链路]{lang="EN-US" style="font-family:宋体"}
+Link ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[S]{lang="EN-US"}]{#struct_0_10012_x1780_x305798152}[：]{lang="EN-US" style="font-family:宋体"}[Spoke link]{lang="EN-US"}[，]{lang="EN-US" style="font-family:宋体"}[VPLS Hub-spoke]{lang="EN-US"}[组网中，]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}[为]{lang="EN-US" style="font-family:宋体"}[spoke]{lang="EN-US"}[链路]{lang="EN-US" style="font-family:宋体"}
+PW在VSI内的链路标识符
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[N]{lang="EN-US"}]{#struct_0_10012_x1780_x1582524838}[：]{lang="EN-US" style="font-family:宋体"}[No-split-horizon]{lang="EN-US"}[，取消水平分割]{lang="EN-US" style="font-family:宋体"}
+State
 
-[[Link ID]{lang="EN-US"}]{#struct_0_10012_x1780_1990463266}
+PW状态，取值包括：
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x444370882}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的链路标识符]{style="font-family:宋体"}
+·Up：表示该PW可用
 
-[[State]{lang="EN-US"}]{#struct_0_10012_x1780_1907757301}
+·Down：表示该PW不可用
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x1801289382}[状态，取值包括：]{style="font-family:宋体"}
+·Blocked：表示存在主备PW的情况下，该PW当前没有转发流量、起到备份作用
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Up]{lang="EN-US"}]{#struct_0_10012_x1780_x1314880342}[：表示该]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}[可用]{lang="EN-US" style="font-family:宋体"}
+·Defect：表示BFD检测到该PW存在缺陷
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Down]{lang="EN-US"}]{#struct_0_10012_x1780_x1315339095}[：表示该]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}[不可用]{lang="EN-US" style="font-family:宋体"}
+·Idle：表示该PW的入标签不可用
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Blocked]{lang="EN-US"}]{#struct_0_10012_x1780_x1315404631}[：表示存在主备]{style="font-family:宋体"}[PW]{lang="EN-US"}[的情况下，该]{style="font-family:宋体"}[PW]{lang="EN-US"}[当前没有转发流量、起到备份作用]{style="font-family:宋体"}
+·Dup：表示该静态PW的入标签与静态LSP或静态CRLSP的入标签相同
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Defect]{lang="EN-US"}]{#struct_0_10012_x1780_x1315470167}[：表示]{lang="EN-US" style="font-family:宋体"}[BFD]{lang="EN-US"}[检测到该]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}[存在缺陷]{lang="EN-US" style="font-family:宋体"}
+\# 显示L2VPN所有PW的详细信息。
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Idle]{lang="EN-US"}]{#struct_0_10012_x1780_x1551669564}[：表示该]{style="font-family:宋体"}[PW]{lang="EN-US"}[的入标签不可用]{style="font-family:宋体"}
+\<Sysname\> display l2vpn pw verbose
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Dup]{lang="EN-US"}]{#struct_0_10012_x1780_x1315535703}[：表示该静态]{style="font-family:宋体"}[PW]{lang="EN-US"}[的入标签与静态]{style="font-family:宋体"}[LSP]{lang="EN-US"}[或静态]{style="font-family:宋体"}[CRLSP]{lang="EN-US"}[的入标签相同]{style="font-family:宋体"}
+VSI Name: aaa
 
-[ ]{lang="EN-US"}
+  Peer: 2.2.2.9          Remote Site: 2
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x444174274}[显示]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[所有]{style="font-family:宋体"}[PW]{lang="EN-US"}[的详细信息。]{style="font-family:宋体"}
+    Signaling Protocol  : BGP
 
-[[\<Sysname\> display l2vpn pw verbose]{lang="EN-US"}]{#struct_0_10012_x1780_x444698565}
+    Link ID             : 9          PW State : Up
 
-[VSI Name: aaa]{lang="EN-US"}
+    In Label            : 1420       Out Label: 1419
 
-[  Peer: 2.2.2.9          Remote Site: 2]{lang="EN-US"}
+    MTU                 : 1500
 
-[    Signaling Protocol  : BGP]{lang="EN-US"}
+    PW Attributes       : Main
 
-[    Link ID             : 9          PW State : Up]{lang="EN-US"}
+    VCCV CC             : -
 
-[    In Label            : 1420       Out Label: 1419]{lang="EN-US"}
+    VCCV BFD            : -
 
-[    MTU                 : 1500]{lang="EN-US"}
+    Tunnel Group ID     : 0x800000960000000
 
-[    PW Attributes       : Main]{lang="EN-US"}
+    Tunnel NHLFE IDs    : 1038
 
-[    VCCV CC             : -]{lang="EN-US"}
+  Peer: 3.3.3.9          Remote Site: 3
 
-[    VCCV BFD            : -]{lang="EN-US"}
+    Signaling Protocol  : BGP
 
-[    Tunnel Group ID     : 0x800000960000000]{lang="EN-US"}
+    Link ID             : 10         PW State : Up
 
-[    Tunnel NHLFE IDs    : 1038]{lang="EN-US"}
+    In Label            : 1421       Out Label: 1281
 
-[  Peer: 3.3.3.9          Remote Site: 3]{lang="EN-US"}
+    MTU                 : 1500
 
-[    Signaling Protocol  : BGP]{lang="EN-US"}
+    PW Attributes       : Main
 
-[    Link ID             : 10         PW State : Up]{lang="EN-US"}
+    VCCV CC             : -
 
-[    In Label            : 1421       Out Label: 1281]{lang="EN-US"}
+    VCCV BFD            : -
 
-[    MTU                 : 1500]{lang="EN-US"}
+    Tunnel Group ID     : 0x800000160000001
 
-[    PW Attributes       : Main]{lang="EN-US"}
+    Tunnel NHLFE IDs    : 1030
 
-[    VCCV CC             : -]{lang="EN-US"}
+VSI Name: bbb
 
-[    VCCV BFD            : -]{lang="EN-US"}
+  Peer: 2.2.2.9          VPLS ID: 100:100
 
-[    Tunnel Group ID     : 0x800000160000001]{lang="EN-US"}
+    Signaling Protocol  : LDP
 
-[    Tunnel NHLFE IDs    : 1030]{lang="EN-US"}
+    Link ID             : 8          PW State : Up
 
-[ ]{lang="EN-US"}
+    In Label            : 1553       Out Label: 1553
 
-[VSI Name: bbb]{lang="EN-US"}
+    MTU                 : 1500
 
-[  Peer: 2.2.2.9          VPLS ID: 100:100]{lang="EN-US"}
+    PW Attributes       : Main
 
-[    Signaling Protocol  : LDP]{lang="EN-US"}
+    VCCV CC             : -
 
-[    Link ID             : 8          PW State : Up]{lang="EN-US"}
+    VCCV BFD            : -
 
-[    In Label            : 1553       Out Label: 1553]{lang="EN-US"}
+    Tunnel Group ID     : 0x800000960000000
 
-[    MTU                 : 1500]{lang="EN-US"}
+    Tunnel NHLFE IDs    : 1038
 
-[    PW Attributes       : Main]{lang="EN-US"}
+  Peer: 3.3.3.9          VPLS ID: 100:100
 
-[    VCCV CC             : -]{lang="EN-US"}
+    Signaling Protocol  : LDP
 
-[    VCCV BFD            : -]{lang="EN-US"}
+    Link ID             : 9          PW State : Up
 
-[    Tunnel Group ID     : 0x800000960000000]{lang="EN-US"}
+    In Label            : 1554       Out Label: 1416
 
-[    Tunnel NHLFE IDs    : 1038]{lang="EN-US"}
+    MTU                 : 1500
 
-[  Peer: 3.3.3.9          VPLS ID: 100:100]{lang="EN-US"}
+    PW Attributes       : Main
 
-[    Signaling Protocol  : LDP]{lang="EN-US"}
+    VCCV CC             : -
 
-[    Link ID             : 9          PW State : Up]{lang="EN-US"}
+    VCCV BFD            : -
 
-[    In Label            : 1554       Out Label: 1416]{lang="EN-US"}
+    Tunnel Group ID     : 0x800000160000001
 
-[    MTU                 : 1500]{lang="EN-US"}
+    Tunnel NHLFE IDs    : 1030
 
-[    PW Attributes       : Main]{lang="EN-US"}
+    Input statistics    :
 
-[    VCCV CC             : -]{lang="EN-US"}
+      Octets   : 10600
 
-[    VCCV BFD            : -]{lang="EN-US"}
+      Packets  : 100
 
-[    Tunnel Group ID     : 0x800000160000001]{lang="EN-US"}
+      Errors   : 0
 
-[    Tunnel NHLFE IDs    : 1030]{lang="EN-US"}
+      Discards : 0
 
-[    Input statistics    : ]{lang="EN-US"}
+    Output statistics   :
 
-[      Octets   : 10600]{lang="EN-US"}
+      Octets   : 12600
 
-[      Packets  : 100]{lang="EN-US"}
+      Packets  : 100
 
-[      Errors   : 0]{lang="EN-US"}
+      Errors   : 0
 
-[      Discards : 0 ]{lang="EN-US"}
+      Discards : 0
 
-[    Output statistics   : ]{lang="EN-US"}
+VSI Name: ccc
 
-[      Octets   : 12600]{lang="EN-US"}
+  Peer: 2.2.2.9          PW ID: 500
 
-[      Packets  : 100]{lang="EN-US"}
+    Signaling Protocol  : LDP
 
-[      Errors   : 0]{lang="EN-US"}
+    Link ID             : 8          PW State : Up
 
-[      Discards : 0]{lang="EN-US"}
+    In Label            : 1552       Out Label: 1552
 
-[ ]{lang="EN-US"}
+    MTU                 : 1500
 
-[VSI Name: ccc]{lang="EN-US"}
+    PW Attributes       : Main
 
-[  Peer: 2.2.2.9          PW ID: 500]{lang="EN-US"}
+    VCCV CC             : -
 
-[    Signaling Protocol  : LDP]{lang="EN-US"}
+    VCCV BFD            : -
 
-[    Link ID             : 8          PW State : Up]{lang="EN-US"}
+    Tunnel Group ID     : 0x800000960000000
 
-[    In Label            : 1552       Out Label: 1552]{lang="EN-US"}
+    Tunnel NHLFE IDs    : 1038
 
-[    MTU                 : 1500]{lang="EN-US"}
+表1-21 display l2vpn pw verbose命令显示信息描述表
 
-[    PW Attributes       : Main]{lang="EN-US"}
+字段
 
-[    VCCV CC             : -]{lang="EN-US"}
+描述
 
-[    VCCV BFD            : -]{lang="EN-US"}
+VSI Name
 
-[    Tunnel Group ID     : 0x800000960000000]{lang="EN-US"}
+VSI名称
 
-[    Tunnel NHLFE IDs    : 1038]{lang="EN-US"}
+Peer
 
-[[表1-21 ]{lang="EN-US"}[display l2vpn pw verbose]{lang="EN-US"}]{#struct_0_10012_x1780_x1714440598}[命令显示信息描述表]{style="font-family:黑体"}
+PW远端PE的IP地址
 
-[]{#table_struct_0_x1420362881}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_1680429623}
+PW ID
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1484634446}
+PW标识符
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_10012_x1780_x116353430}
+Signaling Protocol
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x444764101}[名称]{style="font-family:宋体"}
+建立PW使用的信令协议，取值包括LDP、Static和BGP
 
-[[Peer]{lang="EN-US"}]{#struct_0_10012_x1780_x842711291}
+Link ID
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x1524201963}[远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+PW在VSI内的链路标识符
 
-[[PW ID]{lang="EN-US"}]{#struct_0_10012_x1780_x70299642}
+PW State
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x505554178}[标识符]{style="font-family:宋体"}
+PW状态，取值包括：
 
-[[Signaling Protocol]{lang="EN-US"}]{#struct_0_10012_x1780_267568051}
+·Up：表示该PW可用
 
-[[建立]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x444567493}[使用的信令协议，取值包括]{style="font-family:宋体"}[LDP]{lang="EN-US"}[、]{style="font-family:宋体"}[Static]{lang="EN-US"}[和]{style="font-family:宋体"}[BGP]{lang="EN-US"}
+·Down：表示该PW不可用
 
-[[Link ID]{lang="EN-US"}]{#struct_0_10012_x1780_x850474447}
+·Blocked：表示存在主备PW的情况下，该PW当前没有转发流量、起到备份作用
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_1889148961}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的链路标识符]{style="font-family:宋体"}
+·Defect：表示BFD检测到该PW存在缺陷
 
-[[PW State]{lang="EN-US"}]{#struct_0_10012_x1780_x777465219}
+·Idle：表示该PW的入标签不可用
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_55533648}[状态，取值包括：]{style="font-family:宋体"}
+·Duplicate：表示该静态PW的入标签与静态LSP或静态CRLSP的入标签相同
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Up]{lang="EN-US"}]{#struct_0_10012_x1780_x1315339096}[：表示该]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}[可用]{lang="EN-US" style="font-family:宋体"}
+In Label
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Down]{lang="EN-US"}]{#struct_0_10012_x1780_x1315404632}[：表示该]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}[不可用]{lang="EN-US" style="font-family:宋体"}
+PW入标签
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Blocked]{lang="EN-US"}]{#struct_0_10012_x1780_x1315470168}[：表示存在主备]{style="font-family:宋体"}[PW]{lang="EN-US"}[的情况下，该]{style="font-family:宋体"}[PW]{lang="EN-US"}[当前没有转发流量、起到备份作用]{style="font-family:宋体"}
+Out Label
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Defect]{lang="EN-US"}]{#struct_0_10012_x1780_x1315535704}[：表示]{lang="EN-US" style="font-family:宋体"}[BFD]{lang="EN-US"}[检测到该]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}[存在缺陷]{lang="EN-US" style="font-family:宋体"}
+PW出标签
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Idle]{lang="EN-US"}]{#struct_0_10012_x1780_x1315601240}[：表示该]{style="font-family:宋体"}[PW]{lang="EN-US"}[的入标签不可用]{style="font-family:宋体"}
+Wait to Restore Time
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Duplicate]{lang="EN-US"}]{#struct_0_10012_x1780_x1315666776}[：表示该静态]{style="font-family:宋体"}[PW]{lang="EN-US"}[的入标签与静态]{style="font-family:宋体"}[LSP]{lang="EN-US"}[或静态]{style="font-family:宋体"}[CRLSP]{lang="EN-US"}[的入标签相同]{style="font-family:宋体"}
+回切等待时间，单位为秒。如果配置不回切，显示为Infinite
 
-[[In Label]{lang="EN-US"}]{#struct_0_10012_x1780_700292339}
+只会在主备PW同时存在的情况下显示，并且只在主PW上显示
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x293038421}[入标签]{style="font-family:宋体"}
+Remaining Time
 
-[[Out Label]{lang="EN-US"}]{#struct_0_10012_x1780_337608811}
+回切等待的剩余时间，单位为秒。回切等待定时器启动时，才会显示该字段
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x444436421}[出标签]{style="font-family:宋体"}
+MTU
 
-[[Wait to Restore Time]{lang="EN-US"}]{#struct_0_10012_x1780_704927150}
+PW协商后的最大传输单元
 
-[[回切等待时间，单位为秒。如果配置不回切，显示为]{style="font-family:宋体"}[Infinite]{lang="EN-US"}]{#struct_0_10012_x1780_686923433}
+PW Attributes
 
-[[只会在主备]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_1658718320}[同时存在的情况下显示，并且只在主]{style="font-family:宋体"}[PW]{lang="EN-US"}[上显示]{style="font-family:宋体"}
+PW的属性，取值包括：
 
-[[Remaining Time]{lang="EN-US"}]{#struct_0_10012_x1780_x817378939}
+·Main：主PW
 
-[[回切等待的剩余时间，单位为秒。回切等待定时器启动时，才会显示该字段]{style="font-family:宋体"}]{#struct_0_10012_x1780_x444501957}
+·Backup：备份PW
 
-[[MTU]{lang="EN-US"}]{#struct_0_10012_x1780_x1617263153}
+·Hub link：VPLS Hub-spoke组网中，PW为hub链路
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x726980234}[协商后的最大传输单元]{style="font-family:宋体"}
+·Spoke link：VPLS Hub-spoke组网中，PW为spoke链路
 
-[[PW ]{lang="EN-US"}[Attributes]{lang="EN-US"}]{#struct_0_10012_x1780_x263061059}
+·No-split-horizon：取消水平分割
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x444305349}[的属性，取值包括：]{style="font-family:宋体"}
+VCCV CC
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Main]{lang="EN-US"}]{#struct_0_10012_x1780_1500033824}[：主]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}
+检测PW的VCCV控制通道类型，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Backup]{lang="EN-US"}]{#struct_0_10012_x1780_x1006260400}[：备份]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}
+·Control-Word：控制字类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Hub link]{lang="EN-US"}]{#struct_0_10012_x1780_x658985265}[：]{lang="EN-US" style="font-family:宋体"}[VPLS Hub-spoke]{lang="EN-US"}[组网中，]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}[为]{lang="EN-US" style="font-family:宋体"}[hub]{lang="EN-US"}[链路]{lang="EN-US" style="font-family:宋体"}
+·Router-Alert：MPLS路由器告警标签类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Spoke link]{lang="EN-US"}]{#struct_0_10012_x1780_x444370885}[：]{lang="EN-US" style="font-family:宋体"}[VPLS Hub-spoke]{lang="EN-US"}[组网中，]{lang="EN-US" style="font-family:宋体"}[PW]{lang="EN-US"}[为]{lang="EN-US" style="font-family:宋体"}[spoke]{lang="EN-US"}[链路]{lang="EN-US" style="font-family:宋体"}
+·TTL：TTL超时类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No-split-horizon]{lang="EN-US"}]{#struct_0_10012_x1780_1908216053}[：取消水平分割]{lang="EN-US" style="font-family:
-  宋体"}
+VCCV BFD
 
-[[VCCV CC]{lang="EN-US"}]{#struct_0_10012_x1780_x1988424347}
+检测PW的BFD报文的封装方式，取值包括：
 
-[[检测]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x444174277}[的]{style="font-family:宋体"}[VCCV]{lang="EN-US"}[控制通道类型，取值包括：]{style="font-family:宋体"}
+·Fault Detection with BFD：BFD报文的封装方式为IP/UDP Encapsulation(with IP/UDP Headers)
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Control-Word]{lang="EN-US"}]{#struct_0_10012_x1780_729497178}[：控制字]{lang="EN-US" style="font-family:宋体"}[类型]{style="font-family:宋体"}
+·Fault Detection with Raw-BFD：BFD报文的封装方式为PW-ACH Encapsulation (without IP/UDP Headers)，即封装在VCCV控制通道内的BFD控制报文不携带IP和UDP头
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Router-Alert]{lang="EN-US"}]{#struct_0_10012_x1780_x602616979}[：]{lang="EN-US" style="font-family:宋体"}[MPLS]{lang="EN-US"}[路由]{lang="EN-US" style="font-family:宋体"}[器]{style="font-family:宋体"}[告警标签]{lang="EN-US" style="font-family:宋体"}[类型]{style="font-family:宋体"}
+Tunnel Group ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TTL]{lang="EN-US"}]{#struct_0_10012_x1780_1264769756}[：]{style="font-family:宋体"}[TTL]{lang="EN-US"}[超时类型]{style="font-family:宋体"}
+承载PW的隧道组ID
 
-[[VCCV BFD]{lang="EN-US"}]{#struct_0_10012_x1780_x444239813}
+Tunnel NHLFE IDs
 
-[[检测]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_689318430}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[报文的封装方式，取值包括：]{style="font-family:宋体"}
+承载PW的隧道对应的NHLFE表项索引列表
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Fault Detection with BFD]{lang="EN-US"}]{#struct_0_10012_x1780_190057779}[：]{lang="EN-US" style="font-family:宋体"}[BFD]{lang="EN-US"}[报文的封装方式为]{style="font-family:宋体"}[IP/UDP]{lang="EN-US"}[ Encapsulation]{lang="EN-US"}[ ]{lang="EN-US"}[(with IP/UDP Headers)]{lang="EN-US"}
+存在等价隧道时，一个PW会对应多个索引值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Fault Detection with Raw-BFD]{lang="EN-US"}]{#struct_0_10012_x1780_x444698564}[：]{style="font-family:
-  宋体"}[BFD]{lang="EN-US"}[报文的封装方式为]{lang="EN-US" style="font-family:
-  宋体"}[PW-ACH Encapsulation (without IP/UDP Headers)]{lang="EN-US"}[，即封装在]{lang="EN-US" style="font-family:宋体"}[VCCV]{lang="EN-US"}[控制通道内]{lang="EN-US" style="font-family:宋体"}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[控制报文不携带]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[和]{lang="EN-US" style="font-family:宋体"}[UDP]{lang="EN-US"}[头]{lang="EN-US" style="font-family:宋体"}
+如果不存在隧道，显示为None
 
-[[Tunnel Group ID]{lang="EN-US"}]{#struct_0_10012_x1780_x1714506134}
+VPLS ID
 
-[[承载]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x155647773}[的隧道组]{style="font-family:宋体"}[ID]{lang="EN-US"}
+VPLS实例标识符
 
-[[Tunnel NHLFE IDs]{lang="EN-US"}]{#struct_0_10012_x1780_x1819032945}
+Remote Site
 
-[[承载]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x444764100}[的隧道对应的]{style="font-family:宋体"}[NHLFE]{lang="EN-US"}[表项索引列表]{style="font-family:宋体"}
+远端Site标识符
 
-[[存在等价隧道时，一个]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x842645755}[会对应多个索引值]{style="font-family:宋体"}
+Input statistics
 
-[[如果不存在隧道，显示为]{style="font-family:宋体"}[None]{lang="EN-US"}]{#struct_0_10012_x1780_2005840834}
+入方向的PW转发统计信息，包括入方向接收的字节数（Octets）、接收的报文数（Packets）、接收的错误报文数（Errors）和丢弃的报文数（Discards）
 
-[[VPLS ID]{lang="EN-US"}]{#struct_0_10012_x1780_x444567492}
+ Output statistics
 
-[[VPLS]{lang="EN-US"}]{#struct_0_10012_x1780_x850408911}[实例标识符]{style="font-family:宋体"}
+出方向的PW转发统计信息，包括出方向发送的字节数（Octets）、发送的报文数（Packets）、发送的错误报文数（Errors）和丢弃的报文数（Discards）
 
-[[Remote Site]{lang="EN-US"}]{#struct_0_10012_x1780_1854773088}
+【相关命令】
 
-[[远端]{style="font-family:宋体"}[Site]{lang="EN-US"}]{#struct_0_10012_x1780_x444633028}[标识符]{style="font-family:宋体"}
-
-[[Input statistics]{lang="EN-US"}]{#struct_0_10012_x1780_808748982}
-
-[[入方向的]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_808683446}[转发统计信息，包括入方向接收的字节数（]{style="font-family:宋体"}[Octets]{lang="EN-US"}[）、接收的报文数（]{style="font-family:宋体"}[Packets]{lang="EN-US"}[）、接收的错误报文数（]{style="font-family:宋体"}[Errors]{lang="EN-US"}[）和丢弃的报文数（]{style="font-family:宋体"}[Discards]{lang="EN-US"}[）]{style="font-family:宋体"}
-
-[[ Output statistics]{lang="EN-US"}]{#struct_0_10012_x1780_1602118769}
-
-[[出方向的]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_1605224616}[转发统计信息，包括出方向发送的字节数（]{style="font-family:宋体"}[Octets]{lang="EN-US"}[）、发送的报文数（]{style="font-family:宋体"}[Packets]{lang="EN-US"}[）、发送的错误报文数（]{style="font-family:宋体"}[Errors]{lang="EN-US"}[）和丢弃的报文数（]{style="font-family:宋体"}[Discards]{lang="EN-US"}[）]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_808224695}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[statistics enable]{lang="EN-US"}**]{#struct_0_10012_x1780_x58099088}
-
-::: {#365063371 .myid}
-[]{#_Toc404791648}[]{#struct_0_10012_x1780_700226803}
+·**statistics enable**
 
 **VPLS \-- VPLS配置命令 \-- display l2vpn pw-class**
 
 ------------------------------------------------------------------------
 
-[**[display l2vpn pw-class]{lang="EN-US"}**]{#struct_0_10012_x1780_62435067}[命令用来显示]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板的信息。]{style="font-family:宋体"}
+**[display l2vpn pw-class**]命令用来显示PW模板的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1614841971}
+【命令】
 
-[**[display l2vpn pw-class]{lang="EN-US"}**[ \[ *class-name* \]]{lang="EN-US"}]{#struct_0_10012_x1780_x1340705267}
+**[display l2vpn pw-class** [ *class-name* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_708699455}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10012_x1780_x367185602}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x562272312}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x444436420}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10012_x1780_704861614}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x859411068}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_10012_x1780_152731124}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1689409375}
+【参数】
 
-[*[class-name]{lang="EN-US"}*]{#struct_0_10012_x1780_x881383190}[：显示指定]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板的信息。]{style="font-family:宋体"}*[class-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[19]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则显示所有]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板的信息。]{style="font-family:宋体"}
+*[class-name*]：显示指定PW模板的信息。*class-name*表示PW模板的名称，为1～19个字符的字符串，区分大小写。如果不指定本参数，则显示所有PW模板的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1762013193}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x1120353314}[显示所有]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板的信息。]{style="font-family:宋体"}
+\# 显示所有PW模板的信息。
 
-[[\<Sysname\> display l2vpn pw-class ]{lang="EN-US"}]{#struct_0_10012_x1780_x444501956}
+\<Sysname\> display l2vpn pw-class
 
-[Total number of PW classes: 2]{lang="EN-US"}
+Total number of PW classes: 2
 
-[ ]{lang="EN-US"}
+PW Class Name       PW Type              Control Word   VCCV CC        VCCV BFD
 
-[PW Class Name       PW Type              Control Word   VCCV CC        VCCV BFD]{lang="EN-US"}
+pw1                 Ethernet             Enabled        Control-Word   Raw-BFD
 
-[pw1                 Ethernet             Enabled        Control-Word   Raw-BFD]{lang="EN-US"}
+pw2                 VLAN                 Disabled       Router-Alert   BFD
 
-[pw2                 VLAN                 Disabled       Router-Alert   BFD]{lang="EN-US"}
+表1-22 display l2vpn pw-class命令显示信息描述表
 
-[[表1-22 ]{lang="EN-US"}[display l2vpn pw-class]{lang="EN-US"}]{#struct_0_10012_x1780_x1617197617}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1425067105}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_x954579682}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_x975560017}
+Total number of PW classes
 
-[[Total number of PW classes]{lang="EN-US"}]{#struct_0_10012_x1780_1512899169}
+PW模板的总数
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x444305348}[模板的总数]{style="font-family:宋体"}
+PW Class Name
 
-[[PW Class Name]{lang="EN-US"}]{#struct_0_10012_x1780_1500099360}
+PW模板的名称
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x315802270}[模板的名称]{style="font-family:宋体"}
+PW Type
 
-[[PW Type]{lang="EN-US"}]{#struct_0_10012_x1780_945089000}
+PW数据封装类型，取值包括Ethernet和VLAN
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x109886559}[数据封装类型，取值包括]{style="font-family:宋体"}[Ethernet]{lang="EN-US"}[和]{style="font-family:宋体"}[VLAN]{lang="EN-US"}
+Control Word
 
-[[Control Word]{lang="EN-US"}]{#struct_0_10012_x1780_x527049961}
+是否使能控制字功能，取值包括Enabled和Disabled
 
-[[是否使能控制字功能，取值包括]{style="font-family:宋体"}[Enabled]{lang="EN-US"}]{#struct_0_10012_x1780_x444370884}[和]{style="font-family:宋体"}[Disabled]{lang="EN-US"}
+VCCV CC
 
-[[VCCV CC]{lang="EN-US"}]{#struct_0_10012_x1780_1908150517}
+检测PW的VCCV控制通道类型，取值包括：
 
-[[检测]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x1584061492}[的]{style="font-family:宋体"}[VCCV]{lang="EN-US"}[控制通道类型，取值包括：]{style="font-family:宋体"}
+·Control-Word：控制字类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Control-Word]{lang="EN-US"}]{#struct_0_10012_x1780_x875790862}[：控制字]{lang="EN-US" style="font-family:宋体"}[类型]{style="font-family:宋体"}
+·Router-Alert：MPLS路由器告警标签类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Router-Alert]{lang="EN-US"}]{#struct_0_10012_x1780_220988064}[：]{lang="EN-US" style="font-family:宋体"}[MPLS]{lang="EN-US"}[路由]{lang="EN-US" style="font-family:宋体"}[器]{style="font-family:宋体"}[告警标签]{lang="EN-US" style="font-family:宋体"}[类型]{style="font-family:宋体"}
+·TTL：TTL超时类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TTL]{lang="EN-US"}]{#struct_0_10012_x1780_x444174276}[：]{style="font-family:宋体"}[TTL]{lang="EN-US"}[超时类型]{style="font-family:宋体"}
+VCCV BFD
 
-[[VCCV BFD]{lang="EN-US"}]{#struct_0_10012_x1780_729431642}
+检测PW的BFD报文的封装方式，取值包括：
 
-[[检测]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_1337075706}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[报文的封装方式，取值包括：]{style="font-family:宋体"}
+·Fault Detection with BFD：BFD报文的封装方式为IP/UDP Encapsulation(with IP/UDP Headers)
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Fault Detection with BFD]{lang="EN-US"}]{#struct_0_10012_x1780_1759170068}[：]{lang="EN-US" style="font-family:宋体"}[BFD]{lang="EN-US"}[报文的封装方式为]{style="font-family:宋体"}[IP/UDP]{lang="EN-US"}[ Encapsulation]{lang="EN-US"}[ ]{lang="EN-US"}[(with IP/UDP Headers)]{lang="EN-US"}
+·Fault Detection with Raw-BFD：BFD报文的封装方式为PW-ACH Encapsulation (without IP/UDP Headers)，即封装在VCCV控制通道内的BFD控制报文不携带IP和UDP头
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Fault Detection with Raw-BFD]{lang="EN-US"}]{#struct_0_10012_x1780_x444239812}[：]{style="font-family:
-  宋体"}[BFD]{lang="EN-US"}[报文的封装方式为]{lang="EN-US" style="font-family:
-  宋体"}[PW-ACH Encapsulation (without IP/UDP Headers)]{lang="EN-US"}[，即封装在]{lang="EN-US" style="font-family:宋体"}[VCCV]{lang="EN-US"}[控制通道内]{lang="EN-US" style="font-family:宋体"}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[控制报文不携带]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[和]{lang="EN-US" style="font-family:宋体"}[UDP]{lang="EN-US"}[头]{lang="EN-US" style="font-family:宋体"}
+【相关命令】
 
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_689252894}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pw-class]{lang="EN-US"}**]{#struct_0_10012_x1780_232887687}
-
-::: {#-1122099741 .myid}
-[]{#_Toc404791649}[]{#struct_0_10012_x1780_586693928}[]{#_Toc300843396}
+·**pw-class**
 
 **VPLS \-- VPLS配置命令 \-- display l2vpn service-instance**
 
 ------------------------------------------------------------------------
 
-[**[display l2vpn service-instance]{lang="EN-US"}**]{#struct_0_10012_x1780_x1632628356}[命令用来显示以太网服务实例的信息。]{style="font-family:
-宋体"}
+**[display l2vpn service-instance**]命令用来显示以太网服务实例的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1704849616}
+【命令】
 
-[**[display l2vpn service-instance ]{lang="EN-US"}**[\[ **interface**]{lang="EN-US"}*[ interface-type interface-number]{lang="EN-US"}*[ \[ **service-instance** *instance-id* \] \] \[ **verbose** \]]{lang="EN-US"}]{#struct_0_10012_x1780_x1483654059}
+**[display l2vpn service-instance ** **interface**]* interface-type interface-number* [ **service-instance** *instance-id*  ]  **verbose**
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x237247520}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10012_x1780_1121385380}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1823877590}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x2050524496}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10012_x1780_1584863514}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1858731569}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_10012_x1780_x62305753}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x204436517}
+【参数】
 
-[**[interface]{lang="EN-US"}***[ interface-type interface-number]{lang="EN-US"}*]{#struct_0_10012_x1780_x179250537}[：显示指定二层以太网接口或二层聚合接口上的以太网服务实例信息。]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[为接口类型和接口编号。如果没有指定本参数，则显示所有二层以太网接口和二层聚合接口上的以太网服务实例信息。]{style="font-family:
-宋体"}
+**[interface*** interface-type interface-number*]：显示指定二层以太网接口或二层聚合接口上的以太网服务实例信息。*interface-type interface-number*为接口类型和接口编号。如果没有指定本参数，则显示所有二层以太网接口和二层聚合接口上的以太网服务实例信息。
 
-[**[service-instance]{lang="EN-US"}***[ instance-id]{lang="EN-US"}*]{#struct_0_10012_x1780_1121319844}[：显示指定以太网服务实例的信息。]{style="font-family:宋体"}*[instance-id]{lang="EN-US"}*[为以太网服务实例的]{style="font-family:宋体"}[ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4096]{lang="EN-US"}[。如果指定了]{style="font-family:宋体"}**[interface]{lang="EN-US"}***[ interface-type interface-number]{lang="EN-US"}*[参数，没有指定本参数，则显示指定二层以太网接口或二层聚合接口上所有以太网服务实例的信息。]{style="font-family:
-宋体"}
+**[service-instance*** instance-id*]：显示指定以太网服务实例的信息。*instance-id*为以太网服务实例的ID，取值范围为1～4096。如果指定了**interface*** interface-type interface-number*参数，没有指定本参数，则显示指定二层以太网接口或二层聚合接口上所有以太网服务实例的信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_10012_x1780_1296125298}[：显示详细信息。如果不指定本参数，则显示简要信息。]{style="font-family:宋体"}
+**[verbose**]：显示详细信息。如果不指定本参数，则显示简要信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x338774440}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x1567223738}[显示所有以太网服务实例的简要信息。]{style="font-family:宋体"}
+\# 显示所有以太网服务实例的简要信息。
 
-[[\<Sysname\> display l2vpn service-instance]{lang="EN-US"}]{#struct_0_10012_x1780_1244759177}
+\<Sysname\> display l2vpn service-instance
 
-[Total number of service-instances: 8, 8 up, 0 down]{lang="EN-US"}
+Total number of service-instances: 8, 8 up, 0 down
 
-[Total number of ACs: 4, 4 up, 0 down]{lang="EN-US"}
+Total number of ACs: 4, 4 up, 0 down
 
-[ ]{lang="EN-US"}
+Interface                SrvID Owner                           LinkID State Type
 
-[Interface                SrvID Owner                           LinkID State Type]{lang="EN-US"}
+GE1/0/3                  1     vpls1                           1      Up    VSI
 
-[GE1/0/3                  1     vpls1                           1      Up    VSI]{lang="EN-US"}
+GE1/0/3                  2     vpls2                           1      Up    VSI
 
-[GE1/0/3                  2     vpls2                           1      Up    VSI]{lang="EN-US"}
+GE1/0/3                  3     vpls3                           1      Up    VSI
 
-[GE1/0/3                  3     vpls3                           1      Up    VSI]{lang="EN-US"}
+GE1/0/3                  4     vpls4                           1      Up    VSI
 
-[GE1/0/3                  4     vpls4                           1      Up    VSI]{lang="EN-US"}
+GE1/0/3                  5                                            Up
 
-[GE1/0/3                  5                                            Up]{lang="EN-US"}
+表1-23 display l2vpn service-instance命令显示信息描述表
 
-[[表1-23 ]{lang="EN-US"}[display l2vpn service-instance]{lang="EN-US"}]{#struct_0_10012_x1780_1121516452}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1395319393}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_2107722244}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_x708956648}
+Total number of service-instances
 
-[[Total number of service-instances]{lang="EN-US"}]{#struct_0_10012_x1780_220322552}
+以太网服务实例的总数，及处于up和down状态的以太网服务实例数目
 
-[[以太网服务实例的总数，及处于]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_10012_x1780_x449683924}[和]{style="font-family:宋体"}[down]{lang="EN-US"}[状态的以太网服务实例数目]{style="font-family:宋体"}
+Total number of ACs
 
-[[Total number of ACs]{lang="EN-US"}]{#struct_0_10012_x1780_1522769139}
+AC的总数，及处于up和down状态的AC数目
 
-[[AC]{lang="EN-US"}]{#struct_0_10012_x1780_1121450916}[的总数，及处于]{style="font-family:宋体"}[up]{lang="EN-US"}[和]{style="font-family:宋体"}[down]{lang="EN-US"}[状态的]{style="font-family:宋体"}[AC]{lang="EN-US"}[数目]{style="font-family:宋体"}
+Interface
 
-[[Interface]{lang="EN-US"}]{#struct_0_10012_x1780_158282587}
+二层以太网接口或二层聚合接口名称
 
-[[二层以太网接口或二层聚合接口名称]{style="font-family:宋体"}]{#struct_0_10012_x1780_1012645239}
+SrvID
 
-[[SrvID ]{lang="EN-US"}]{#struct_0_10012_x1780_997155505}
+以太网服务实例的ID
 
-[[以太网服务实例的]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_10012_x1780_570273882}
+Owner
 
-[[Owner]{lang="EN-US"}]{#struct_0_10012_x1780_1121647524}
+VSI名称，如果以太网服务实例上尚未关联VSI，则本字段显示为空
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x1799700735}[名称，如果以太网服务实例上尚未关联]{style="font-family:宋体"}[VSI]{lang="EN-US"}[，则本字段显示为空]{style="font-family:宋体"}
+LinkID
 
-[[LinkID]{lang="EN-US"}]{#struct_0_10012_x1780_1311798751}
+以太网服务实例对应AC在VSI内的链路标识符
 
-[[以太网服务实例对应]{style="font-family:宋体"}[AC]{lang="EN-US"}]{#struct_0_10012_x1780_x1196381791}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的链路标识符]{style="font-family:宋体"}
+State
 
-[[State]{lang="EN-US"}]{#struct_0_10012_x1780_535649252}
+以太网服务实例的状态，取值包括Up和Down
 
-[[以太网服务实例的状态，取值包括]{style="font-family:宋体"}[Up]{lang="EN-US"}]{#struct_0_10012_x1780_1121581988}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}
+Type
 
-[[Type]{lang="EN-US"}]{#struct_0_10012_x1780_x1409439776}
+以太网服务实例所属的L2VPN类型，取值包括VSI和VPWS
 
-[[以太网服务实例所属的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}]{#struct_0_10012_x1780_1278121670}[类型，取值包括]{style="font-family:宋体"}[VSI]{lang="EN-US"}[和]{style="font-family:宋体"}[VPWS]{lang="EN-US"}
+\# 显示二层以太网接口GigabitEthernet1/0/3上所有以太网服务实例的详细信息。
 
-[ ]{lang="EN-US"}
+\<Sysname\> display l2vpn service-instance interface gigabitethernet 1/0/3 verbose
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_1593622608}[显示二层以太网接口]{style="font-family:宋体"}[GigabitEthernet1/0/3]{lang="EN-US"}[上所有以太网服务实例的详细信息。]{style="font-family:宋体"}
+Interface: GE1/0/3
 
-[[\<Sysname\> display l2vpn service-instance interface gigabitethernet 1/0/3 verbose]{lang="EN-US"}]{#struct_0_10012_x1780_1121778596}
+  Service Instance: 1
 
-[Interface: GE1/0/3]{lang="EN-US"}
+    Encapsulation : s-vid 1 to 16
 
-[  Service Instance: 1]{lang="EN-US"}
+    VSI Name      : vpls1
 
-[    Encapsulation : s-vid 1 to 16]{lang="EN-US"}
+    Link ID       : 1
 
-[    VSI Name      : vpls1]{lang="EN-US"}
+    State         : Up
 
-[    Link ID       : 1]{lang="EN-US"}
+  Service Instance: 2
 
-[    State         : Up]{lang="EN-US"}
+    Encapsulation : s-vid 1001 to 1016
 
-[  Service Instance: 2]{lang="EN-US"}
+                    only-tagged
 
-[    Encapsulation : s-vid 1001 to 1016]{lang="EN-US"}
+    VSI Name      : vpls2
 
-[                    only-tagged]{lang="EN-US"}
+    Link ID       : 1
 
-[    VSI Name      : vpls2]{lang="EN-US"}
+    State         : Up
 
-[    Link ID       : 1]{lang="EN-US"}
+  Service Instance: 3
 
-[    State         : Up]{lang="EN-US"}
+    Encapsulation : s-vid 2000
 
-[  Service Instance: 3]{lang="EN-US"}
+                    c-vid 1001 to 1002 1015 to 1016
 
-[    Encapsulation : s-vid 2000]{lang="EN-US"}
+    VSI Name      : vpls3
 
-[                    c-vid 1001 to 1002 1015 to 1016]{lang="EN-US"}
+    Link ID       : 1
 
-[    VSI Name      : vpls3]{lang="EN-US"}
+    State         : Up
 
-[    Link ID       : 1]{lang="EN-US"}
+表1-24 display l2vpn service-instance verbose命令显示信息描述表
 
-[    State         : Up]{lang="EN-US"}
+字段
 
-[[表1-24 ]{lang="EN-US"}[display l2vpn service-instance verbose]{lang="EN-US"}]{#struct_0_10012_x1780_1283250256}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x1394458497}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1770555465}
+Interface
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_x788252325}
+二层以太网接口或二层聚合接口
 
-[[Interface]{lang="EN-US"}]{#struct_0_10012_x1780_1121713060}
+Service Instance
 
-[[二层以太网接口或二层聚合接口]{style="font-family:宋体"}]{#struct_0_10012_x1780_x663187114}
+以太网服务实例ID
 
-[[Service Instance]{lang="EN-US"}]{#struct_0_10012_x1780_x1209052932}
+Encapsulation
 
-[[以太网服务实例]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_10012_x1780_x698899012}
+以太网服务实例的报文匹配规则，如果没有配置报文匹配规则，则不显示本字段
 
-[[Encapsulation]{lang="EN-US"}]{#struct_0_10012_x1780_1183452470}
+VSI Name
 
-[[以太网服务实例的报文匹配规则，如果没有配置报文匹配规则，则不显示本字段]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1857319499}
+与以太网服务实例关联的VSI的名称
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_10012_x1780_1121909668}
+Link ID
 
-[[与以太网服务实例关联的]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x1846260690}[的名称]{style="font-family:宋体"}
+以太网服务实例对应AC在VSI内的链路标识符
 
-[[Link ID]{lang="EN-US"}]{#struct_0_10012_x1780_x1796067979}
+State
 
-[[以太网服务实例对应]{style="font-family:宋体"}[AC]{lang="EN-US"}]{#struct_0_10012_x1780_x755771634}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的链路标识符]{style="font-family:宋体"}
+以太网服务实例的状态，取值包括Up和Down
 
-[[State]{lang="EN-US"}]{#struct_0_10012_x1780_x723943923}
+【相关命令】
 
-[[以太网服务实例的状态，取值包括]{style="font-family:宋体"}[Up]{lang="EN-US"}]{#struct_0_10012_x1780_1121844132}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x631611283}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[service-instance]{lang="EN-US"}**]{#struct_0_10012_x1780_x1516671423}
-
-::: {#-1007637280 .myid}
-[]{#_Toc404791650}[]{#struct_0_10012_x1780_x1575070222}[]{#_Toc300843398}
+·**service-instance**
 
 **VPLS \-- VPLS配置命令 \-- display l2vpn vsi**
 
 ------------------------------------------------------------------------
 
-[**[display l2vpn vsi]{lang="EN-US"}**]{#struct_0_10012_x1780_x1771040467}[命令用来显示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[display l2vpn vsi**]命令用来显示VSI的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1266247799}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **l2vpn** **vsi** \[ **name** *vsi-name* \] \[ **verbose** \]]{lang="EN-US"}]{#struct_0_10012_x1780_372999234}
+**[display** **l2vpn** **vsi** [ **name** *vsi-name*   **verbose** ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x61860984}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10012_x1780_1121385381}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1823812054}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1224158121}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10012_x1780_x2045650793}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x409044861}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_10012_x1780_923058920}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1852990173}
+【参数】
 
-[**[name]{lang="EN-US"}***[ vsi-name]{lang="EN-US"}*]{#struct_0_10012_x1780_x975363091}[：显示指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[name*** vsi-name*]：显示指定VSI的信息。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，则显示所有VSI的信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_10012_x1780_1121319845}[：显示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的详细信息。如果不指定本参数，则显示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的简要信息。]{style="font-family:宋体"}
+**[verbose**]：显示VSI的详细信息。如果不指定本参数，则显示VSI的简要信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1296059762}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_68108096}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的简要信息。]{style="font-family:宋体"}
+\# 显示所有VSI的简要信息。
 
-[[\<Sysname\> display l2vpn vsi]{lang="EN-US"}]{#struct_0_10012_x1780_1146561736}
+\<Sysname\> display l2vpn vsi
 
-[Total number of VSIs: 2, 1 up, 1 down, 0 admin down]{lang="EN-US"}
+Total number of VSIs: 2, 1 up, 1 down, 0 admin down
 
-[ ]{lang="EN-US"}
+VSI Name                        VSI Index       MTU    State
 
-[VSI Name                        VSI Index       MTU    State]{lang="EN-US"}
+vpls1                           0               1500   Up
 
-[vpls1                           0               1500   Up]{lang="EN-US"}
+vpls2                           1               1500   Down
 
-[vpls2                           1               1500   Down]{lang="EN-US"}
+表1-25 display l2vpn vsi命令显示信息描述表
 
-[[表1-25 ]{lang="EN-US"}[display l2vpn vsi]{lang="EN-US"}]{#struct_0_10012_x1780_1399109581}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1400329601}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1042727149}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_1121516453}
+Total number of VSIs
 
-[[Total number of VSIs]{lang="EN-US"}]{#struct_0_10012_x1780_2107656708}
+VSI的总数，及处于up、down和admin down状态的VSI数目
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x1505230623}[的总数，及处于]{style="font-family:宋体"}[up]{lang="EN-US"}[、]{style="font-family:宋体"}[down]{lang="EN-US"}[和]{style="font-family:宋体"}[admin down]{lang="EN-US"}[状态的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[数目]{style="font-family:宋体"}
+VSI Name
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_10012_x1780_1927574907}
+VSI名称
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x2090311471}[名称]{style="font-family:宋体"}
+VSI Index
 
-[[VSI Index]{lang="EN-US"}]{#struct_0_10012_x1780_1121450917}
+VSI索引
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_158217051}[索引]{style="font-family:宋体"}
+MTU
 
-[[MTU]{lang="EN-US"}]{#struct_0_10012_x1780_x932022447}
+VSI上配置的最大传输单元
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1432013537}[上配置的最大传输单元]{style="font-family:宋体"}
+State
 
-[[State]{lang="EN-US"}]{#struct_0_10012_x1780_464816567}
+VSI的状态，取值包括：
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x870788961}[的状态，取值包括：]{style="font-family:宋体"}
+·Up：up状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Up]{lang="EN-US"}]{#struct_0_10012_x1780_1121647525}[：]{lang="EN-US" style="font-family:宋体"}[up]{lang="EN-US"}[状态]{lang="EN-US" style="font-family:宋体"}
+·Down：down状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Down]{lang="EN-US"}]{#struct_0_10012_x1780_x1799635199}[：]{lang="EN-US" style="font-family:宋体"}[down]{lang="EN-US"}[状态]{lang="EN-US" style="font-family:宋体"}
+·Admin down：通过**shutdown**命令手工关闭的VSI
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Admin down]{lang="EN-US"}]{#struct_0_10012_x1780_1207625982}[：通过]{lang="EN-US" style="font-family:宋体"}**[shutdown]{lang="EN-US"}**[命令手工关闭]{lang="EN-US" style="font-family:宋体"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}
+\# 显示所有VSI的详细信息。
 
-[ ]{lang="EN-US"}
+\<Sysname\> display l2vpn vsi verbose
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_853568183}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的详细信息。]{style="font-family:宋体"}
+VSI Name: vpls1
 
-[[\<Sysname\> display l2vpn vsi verbose]{lang="EN-US"}]{#struct_0_10012_x1780_1121581989}
+  VSI Index               : 0
 
-[VSI Name: vpls1]{lang="EN-US"}
+  VSI Description         : vsi for vpls1
 
-[  VSI Index               : 0]{lang="EN-US"}
+  VSI State               : Up
 
-[  VSI Description         : vsi for vpls1]{lang="EN-US"}
+  MTU                     : 1500
 
-[  VSI State               : Up]{lang="EN-US"}
+  Bandwidth               : 102400 kbps
 
-[  MTU                     : 1500]{lang="EN-US"}
+  Broadcast Restrain      : 5%
 
-[  Bandwidth               : 102400 kbps]{lang="EN-US"}
+  Multicast Restrain      : 100%
 
-[  Broadcast Restrain      : 5%]{lang="EN-US"}
+  Unknown Unicast Restrain: 100%
 
-[  Multicast Restrain      : 100%]{lang="EN-US"}
+  MAC Learning            : Enabled
 
-[  Unknown Unicast Restrain: 100%]{lang="EN-US"}
+  MAC Table Limit         : Unlimited
 
-[  MAC Learning            : Enabled]{lang="EN-US"}
+  Drop Unknown            : Disabled
 
-[  MAC Table Limit         : Unlimited]{lang="EN-US"}
+  LDP PWs:
 
-[  Drop Unknown            : Disabled]{lang="EN-US"}
+    Peer            PW ID            Link ID    State
 
-[  LDP PWs:]{lang="EN-US"}
+    192.3.3.3       1                8          Up
 
-[    Peer            PW ID            Link ID    State]{lang="EN-US"}
+    192.3.3.3       1001             8          Blocked
 
-[    192.3.3.3       1                8          Up]{lang="EN-US"}
+  BGP PWs:
 
-[    192.3.3.3       1001             8          Blocked]{lang="EN-US"}
+    Peer            Remote Site      Link ID    State
 
-[  BGP PWs:]{lang="EN-US"}
+    192.4.4.4       1                9          Up
 
-[    Peer            Remote Site      Link ID    State]{lang="EN-US"}
+  ACs:
 
-[    192.4.4.4       1                9          Up]{lang="EN-US"}
+    AC                               Link ID    State
 
-[  ACs:]{lang="EN-US"}
+    Vlan10                           0          Up
 
-[    AC                               Link ID    State]{lang="EN-US"}
+    GE1/0/3 srv1                     1          Up
 
-[    Vlan10                           0          Up]{lang="EN-US"}
+表1-26 display l2vpn vsi verbose命令显示信息描述表
 
-[    GE1/0/3 srv1                     1          Up]{lang="EN-US"}
+字段
 
-[[表1-26 ]{lang="EN-US"}[display l2vpn vsi verbose]{lang="EN-US"}]{#struct_0_10012_x1780_x1409374240}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x1398297697}[[字段]{style="font-family:黑体"}]{#struct_0_10012_x1780_1121778597}
+VSI Name
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10012_x1780_1283184720}
+VSI名称
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_10012_x1780_x1025160771}
+VSI Index
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1143552466}[名称]{style="font-family:宋体"}
+VSI索引
 
-[[VSI Index]{lang="EN-US"}]{#struct_0_10012_x1780_x681354761}
+VSI Description
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1975850766}[索引]{style="font-family:宋体"}
+VSI的描述信息，如果不配置，则此行不显示
 
-[[VSI Description]{lang="EN-US"}]{#struct_0_10012_x1780_1121713061}
+VSI State
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x663252650}[的描述信息，如果不配置，则此行不显示]{style="font-family:宋体"}
+VSI的状态，取值包括
 
-[[VSI State]{lang="EN-US"}]{#struct_0_10012_x1780_782895572}
+·Up：up状态
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x1634288268}[的状态，取值包括]{style="font-family:宋体"}
+·Down：down状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Up]{lang="EN-US"}]{#struct_0_10012_x1780_348729271}[：]{lang="EN-US" style="font-family:宋体"}[up]{lang="EN-US"}[状态]{lang="EN-US" style="font-family:宋体"}
+·Administratively down：通过**shutdown**命令手工关闭VSI
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Down]{lang="EN-US"}]{#struct_0_10012_x1780_1121909669}[：]{lang="EN-US" style="font-family:宋体"}[down]{lang="EN-US"}[状态]{lang="EN-US" style="font-family:宋体"}
+MTU
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Administratively down]{lang="EN-US"}]{#struct_0_10012_x1780_x1846195154}[：通过]{lang="EN-US" style="font-family:
-  宋体"}**[shutdown]{lang="EN-US"}**[命令手工关闭]{lang="EN-US" style="font-family:宋体"}[VSI]{lang="EN-US"}
+VSI上配置的最大传输单元
 
-[[MTU]{lang="EN-US"}]{#struct_0_10012_x1780_x2085557133}
+Bandwidth
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x1237813119}[上配置的最大传输单元]{style="font-family:宋体"}
+VSI的最大带宽值，单位为kbps
 
-[[Bandwidth]{lang="EN-US"}]{#struct_0_10012_x1780_1121844133}
+Broadcast Restrain
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1121385378}[的最大带宽值，单位为]{style="font-family:宋体"}[kbps ]{lang="EN-US"}
+VSI的广播抑制百分比
 
-[[Broadcast Restrain]{lang="EN-US"}]{#struct_0_10012_x1780_x1823353295}
+Multicast Restrain
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x2094804566}[的广播抑制百分比]{style="font-family:宋体"}
+VSI的组播抑制百分比
 
-[[Multicast Restrain]{lang="EN-US"}]{#struct_0_10012_x1780_1121319842}
+Unknown Unicast Restrain
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1295994226}[的组播抑制百分比]{style="font-family:宋体"}
+VSI的未知单播抑制百分比
 
-[[Unknown Unicast Restrain]{lang="EN-US"}]{#struct_0_10012_x1780_x1411634704}
+MAC Learning
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x179262296}[的未知单播抑制百分比]{style="font-family:宋体"}
+是否使能了MAC地址学习功能，取值包括：
 
-[[MAC Learning]{lang="EN-US"}]{#struct_0_10012_x1780_1121516450}
+·Enabled：使能了MAC地址学习功能
 
-[[是否使能了]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_10012_x1780_2107591172}[地址学习功能，取值包括：]{style="font-family:宋体"}
+·Disabled：未使能MAC地址学习功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_10012_x1780_1198820392}[：使能了]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址学习功能]{lang="EN-US" style="font-family:宋体"}
+MAC Tabel Limit
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_10012_x1780_x2124785748}[：未使能]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址学习功能]{lang="EN-US" style="font-family:宋体"}
+VSI内MAC地址表项的最大数目
 
-[[MAC Tabel Limit]{lang="EN-US"}]{#struct_0_10012_x1780_1121450914}
+取值为Unlimited，表示不限制VSI内MAC地址表项的最大数目
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_158151515}[内]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项的最大数目]{style="font-family:宋体"}
+Drop Unknown
 
-[[取值为]{style="font-family:宋体"}[Unlimited]{lang="EN-US"}]{#struct_0_10012_x1780_713080272}[，表示不限制]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项的最大数目]{style="font-family:宋体"}
+当VSI内学习到的MAC地址数达到最大值后，是否禁止转发源MAC地址不在MAC地址表里的报文
 
-[[Drop Unknown]{lang="EN-US"}]{#struct_0_10012_x1780_x1677269551}
+·Enabled：表示禁止转发
 
-[[当]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1121647522}[内学习到的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数达到最大值后，是否禁止转发源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址不在]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表里的报文]{style="font-family:宋体"}
+·Disabled：表示允许转发
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_10012_x1780_x1799569663}[：表示禁止转发]{lang="EN-US" style="font-family:宋体"}
+Hub-Spoke
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_10012_x1780_665930006}[：表示允许转发]{lang="EN-US" style="font-family:宋体"}
+是否使能了Hub-spoke能力。取值为Enabled，表示使能了Hub-spoke能力；如果未使能Hub-spoke能力，则不显示此字段
 
-[[Hub-Spoke]{lang="EN-US"}]{#struct_0_10012_x1780_1947928302}
+LDP PWs
 
-[[是否使能了]{style="font-family:宋体"}[Hub-spoke]{lang="EN-US"}]{#struct_0_10012_x1780_1121581986}[能力。取值为]{style="font-family:宋体"}[Enabled]{lang="EN-US"}[，表示使能了]{style="font-family:宋体"}[Hub-spoke]{lang="EN-US"}[能力；如果未使能]{style="font-family:宋体"}[Hub-spoke]{lang="EN-US"}[能力，则不显示此字段]{style="font-family:宋体"}
+VSI的LDP PW列表
 
-[[LDP PWs]{lang="EN-US"}]{#struct_0_10012_x1780_x1409832992}
+Static PWs
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x1724660632}[的]{style="font-family:宋体"}[LDP PW]{lang="EN-US"}[列表]{style="font-family:宋体"}
+VSI的静态PW列表
 
-[[Static PWs]{lang="EN-US"}]{#struct_0_10012_x1780_1121778594}
+BGP PWs
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1283381328}[的静态]{style="font-family:宋体"}[PW]{lang="EN-US"}[列表]{style="font-family:宋体"}
+VSI的BGP PW列表
 
-[[BGP PWs]{lang="EN-US"}]{#struct_0_10012_x1780_x1386025934}
+Peer
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1121713058}[的]{style="font-family:宋体"}[BGP PW]{lang="EN-US"}[列表]{style="font-family:宋体"}
+PW远端PE的IP地址
 
-[[Peer]{lang="EN-US"}]{#struct_0_10012_x1780_x663711403}
+PW ID
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x1572366847}[远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+PW标识符
 
-[[PW ID]{lang="EN-US"}]{#struct_0_10012_x1780_x424891688}
+Remote Site
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_1121909666}[标识符]{style="font-family:宋体"}
+远端Site标识符
 
-[[Remote Site]{lang="EN-US"}]{#struct_0_10012_x1780_x1845605330}
+Link ID
 
-[[远端]{style="font-family:宋体"}[Site]{lang="EN-US"}]{#struct_0_10012_x1780_2103778587}[标识符]{style="font-family:宋体"}
+PW在VSI内的链路标识符
 
-[[Link ID]{lang="EN-US"}]{#struct_0_10012_x1780_1121844130}
+State
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x631480211}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的链路标识符]{style="font-family:宋体"}
+PW的状态，取值包括Up、Down、Blocked和Defect
 
-[[State]{lang="EN-US"}]{#struct_0_10012_x1780_1190650515}
+ACs
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_1121385379}[的状态，取值包括]{style="font-family:宋体"}[Up]{lang="EN-US"}[、]{style="font-family:宋体"}[Down]{lang="EN-US"}[、]{style="font-family:宋体"}[Blocked]{lang="EN-US"}[和]{style="font-family:宋体"}[Defect]{lang="EN-US"}
+VSI的AC列表
 
-[[ACs]{lang="EN-US"}]{#struct_0_10012_x1780_x1823287759}
+AC
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1425214790}[的]{style="font-family:宋体"}[AC]{lang="EN-US"}[列表]{style="font-family:宋体"}
+接入电路，取值有如下两种：
 
-[[AC]{lang="EN-US"}]{#struct_0_10012_x1780_1121319843}
+·三层接口名称：如GE1/0/4。在三层接口下关联VSI时，AC取值为此方式
 
-[[接入电路，取值有如下两种：]{style="font-family:宋体"}]{#struct_0_10012_x1780_1295928690}
+·二层接口名称和以太网服务实例：如GE1/0/3 srv1。在以太网服务实例下关联VSI时，AC取值为此方式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[三层接口名称：如]{style="font-family:宋体"}]{#struct_0_10012_x1780_989704887}[GE1/0/4]{lang="EN-US"}[。在三层接口下关联]{style="font-family:宋体"}[VSI]{lang="EN-US"}[时，]{style="font-family:宋体"}[AC]{lang="EN-US"}[取值为此方式]{style="font-family:宋体"}
+Link ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[二层接口名称和以太网服务实例：如]{style="font-family:宋体"}]{#struct_0_10012_x1780_1121516451}[GE1/0/3 srv1]{lang="EN-US"}[。在以太网服务实例下关联]{style="font-family:宋体"}[VSI]{lang="EN-US"}[时，]{style="font-family:宋体"}[AC]{lang="EN-US"}[取值为此方式]{style="font-family:宋体"}
+AC在VSI内的链路ID
 
-[[Link ID]{lang="EN-US"}]{#struct_0_10012_x1780_2107525636}
+State
 
-[[AC]{lang="EN-US"}]{#struct_0_10012_x1780_448814736}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的链路]{style="font-family:宋体"}[ID]{lang="EN-US"}
+AC的状态，取值包括Up和Down
 
-[[State]{lang="EN-US"}]{#struct_0_10012_x1780_1121450915}
+【相关命令】
 
-[[AC]{lang="EN-US"}]{#struct_0_10012_x1780_158085979}[的状态，取值包括]{style="font-family:宋体"}[Up]{lang="EN-US"}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_786187829}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vsi]{lang="EN-US"}**]{#struct_0_10012_x1780_x94529939}
-
-::: {#-900899430 .myid}
-[]{#_Toc404791651}[]{#struct_0_10012_x1780_1121647523}[]{#_Toc288911611}[]{#_Toc203551099}
+·**vsi**
 
 **VPLS \-- VPLS配置命令 \-- encapsulation**
 
 ------------------------------------------------------------------------
 
-[**[encapsulation]{lang="EN-US"}**]{#struct_0_10012_x1780_x1799504127}[命令用来配置以太网服务实例的报文匹配规则。]{style="font-family:宋体"}
+**[encapsulation**]命令用来配置以太网服务实例的报文匹配规则。
 
-[**[undo encapsulation]{lang="EN-US"}**]{#struct_0_10012_x1780_x1288806629}[命令用来删除以太网服务实例的报文匹配规则。]{style="font-family:宋体"}
+**[undo encapsulation**]命令用来删除以太网服务实例的报文匹配规则。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_602725896}
+【命令】
 
-[**[encapsulation]{lang="EN-US"}**[ **c-vid** { *vlan-id* \| *vlan-id-list* }]{lang="EN-US"}]{#struct_0_10012_x1780_296860403}
+**[encapsulation**[ **c-vid** { *vlan-id* \| *vlan-id-list* }]]
 
-[**[encapsulation]{lang="EN-US"}**[ **s-vid** { *vlan-id* \| *vlan-id-list* } \[ **only-tagged** \]]{lang="EN-US"}]{#struct_0_10012_x1780_x1671554568}
+**[encapsulation**[ **s-vid** { *vlan-id* \| *vlan-id-list* } [ **only-tagged** ]]]
 
-[**[encapsulation]{lang="EN-US"}**[ **s-vid** *vlan-id* **c-vid** { *vlan-id-list* \| **all** }]{lang="EN-US"}]{#struct_0_10012_x1780_x1688822039}
+**[encapsulation**[ **s-vid** *vlan-id* **c-vid** { *vlan-id-list* \| **all** }]]
 
-[**[encapsulation]{lang="EN-US"}**[ { **default** \| **tagged** \| **untagged** }]{lang="EN-US"}]{#struct_0_10012_x1780_1913831868}
+**[encapsulation**[ { **default** \| **tagged** \| **untagged** }]]
 
-[**[undo encapsulation]{lang="EN-US"}**]{#struct_0_10012_x1780_2139590536}
+**[undo encapsulation**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1121581987}
+【缺省情况】
 
-[[未配置任何报文匹配规则。]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1409767456}
+未配置任何报文匹配规则。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_833648052}
+【视图】
 
-[[以太网服务实例视图]{style="font-family:宋体"}]{#struct_0_10012_x1780_x285069762}
+以太网服务实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_67179463}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_365616576}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x989997726}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1375314718}
+【参数】
 
-[**[c-vid]{lang="EN-US"}**[ { *vlan-id* \| *vlan-id-list* }]{lang="EN-US"}]{#struct_0_10012_x1780_1121778595}[：匹配内层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签（]{style="font-family:宋体"}[Customer VLAN ID]{lang="EN-US"}[）为指定值的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[c-vid**[ { *vlan-id* \| *vlan-id-list* }]]：匹配内层VLAN标签（Customer VLAN ID）为指定值的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[vlan-id]{lang="EN-US"}*]{#struct_0_10012_x1780_1283315792}[表示]{style="font-family:
-宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+·*vlan-id*表示VLAN的编号，取值范围为1～4094。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[vlan-id-list]{lang="EN-US"}*]{#struct_0_10012_x1780_1718861461}[为]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，表示一个或多个]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号。表示方式为]{lang="EN-US" style="font-family:宋体"}*[vlan-id-list]{lang="EN-US"}*[ = { *vlan-id* \[ to *vlan-id* \] }&\<1-8\>]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}[其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-8\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[8]{lang="EN-US"}[次。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+·*vlan-id-list*为VLAN列表，表示一个或多个VLAN的编号。表示方式为*vlan-id-list* = { *vlan-id* [ to *vlan-id*  }&\<1-8\>]。其中，*vlan-id*为指定VLAN的编号，取值范围为1～4094。&\<1-8\>表示前面的参数最多可以输入8次。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[s-vid]{lang="EN-US"}**[ { *vlan-id* \| *vlan-id-list* }]{lang="EN-US"}]{#struct_0_10012_x1780_x1990815865}[：匹配外层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签（]{style="font-family:宋体"}[Service VLAN ID]{lang="EN-US"}[）为指定值的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[s-vid**[ { *vlan-id* \| *vlan-id-list* }]]：匹配外层VLAN标签（Service VLAN ID）为指定值的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[vlan-id]{lang="EN-US"}*]{#struct_0_10012_x1780_x1346392280}[表示]{style="font-family:
-宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+·*vlan-id*表示VLAN的编号，取值范围为1～4094。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[vlan-id-list]{lang="EN-US"}*]{#struct_0_10012_x1780_1593840833}[为]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，表示一个或多个]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号。表示方式为]{lang="EN-US" style="font-family:宋体"}*[vlan-id-list]{lang="EN-US"}*[ = { *vlan-id* \[ **to** *vlan-id* \] }&\<1-8\>]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}[其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-8\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[8]{lang="EN-US"}[次。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+·*vlan-id-list*为VLAN列表，表示一个或多个VLAN的编号。表示方式为*vlan-id-list* = { *vlan-id* [ **to** *vlan-id*  }&\<1-8\>]。其中，*vlan-id*为指定VLAN的编号，取值范围为1～4094。&\<1-8\>表示前面的参数最多可以输入8次。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[only-tagged]{lang="EN-US"}**]{#struct_0_10012_x1780_x1946462297}[：表示只匹配携带]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签的报文。当匹配的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[为缺省]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[时，如果未指定本关键字，则会同时匹配所携带]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签为缺省]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的报文和未携带]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签的报文；如果指定了本参数，则只匹配所携带]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签为缺省]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[only-tagged**]：表示只匹配携带VLAN标签的报文。当匹配的VLAN为缺省VLAN时，如果未指定本关键字，则会同时匹配所携带VLAN标签为缺省VLAN的报文和未携带VLAN标签的报文；如果指定了本参数，则只匹配所携带VLAN标签为缺省VLAN的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[s-vid]{lang="EN-US"}**[ *vlan-id* **c-vid** { *vlan-id-list* \| **all** }]{lang="EN-US"}]{#struct_0_10012_x1780_x961752343}[：匹配指定外层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签和内层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[s-vid**[ *vlan-id* **c-vid** { *vlan-id-list* \| **all** }]]：匹配指定外层VLAN标签和内层VLAN标签的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[vlan-id]{lang="EN-US"}*]{#struct_0_10012_x1780_1121713059}[表示]{style="font-family:
-宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+·*vlan-id*表示VLAN的编号，取值范围为1～4094。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[vlan-id-list]{lang="EN-US"}*]{#struct_0_10012_x1780_x663776939}[为]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，表示一个或多个]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号。表示方式为]{lang="EN-US" style="font-family:宋体"}*[vlan-id-list]{lang="EN-US"}*[ = { *vlan-id* \[ **to** *vlan-id* \] }&\<1-8\>]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}[其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-8\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[8]{lang="EN-US"}[次。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+·*vlan-id-list*为VLAN列表，表示一个或多个VLAN的编号。表示方式为*vlan-id-list* = { *vlan-id* [ **to** *vlan-id*  }&\<1-8\>]。其中，*vlan-id*为指定VLAN的编号，取值范围为1～4094。&\<1-8\>表示前面的参数最多可以输入8次。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[al]{lang="EN-US"}**]{#struct_0_10012_x1780_x1137976059}**[l]{lang="EN-US"}**[表示所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+·**al****l**表示所有VLAN。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[default]{lang="EN-US"}**]{#struct_0_10012_x1780_94111305}[：表示缺省的报文匹配规则。]{style="font-family:宋体"}
+**[default**]：表示缺省的报文匹配规则。
 
-[**[tagged]{lang="EN-US"}**]{#struct_0_10012_x1780_x1971980719}[：表示匹配携带]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[tagged**]：表示匹配携带VLAN标签的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[untagged]{lang="EN-US"}**]{#struct_0_10012_x1780_374508110}[：表示匹配未携带]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[untagged**]：表示匹配未携带VLAN标签的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x24137746}
+【使用指导】
 
-[[当同一个接口下配置的不同以太网服务实例的报文匹配规则出现重叠时，如何匹配报文与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1998337556}
+当同一个接口下配置的不同以太网服务实例的报文匹配规则出现重叠时，如何匹配报文与设备的型号有关，请以设备的实际情况为准。
 
-[[同一个以太网接口下可以创建多个服务实例，但是最多只能有一个服务实例采用缺省的报文匹配规则（]{style="font-family:宋体"}**[encapsulation default]{lang="EN-US"}**]{#struct_0_10012_x1780_1121909667}[）。如果接口下同时存在一个采用缺省报文匹配规则的服务实例和多个采用其他报文匹配规则的服务实例，则没有与任何其他报文匹配规则匹配的报文将匹配缺省报文匹配规则；如果接口下只存在一个采用缺省报文匹配规则的服务实例，则该接口上的所有报文都匹配缺省报文匹配规则。]{style="font-family:宋体"}
+同一个以太网接口下可以创建多个服务实例，但是最多只能有一个服务实例采用缺省的报文匹配规则（**encapsulation default**）。如果接口下同时存在一个采用缺省报文匹配规则的服务实例和多个采用其他报文匹配规则的服务实例，则没有与任何其他报文匹配规则匹配的报文将匹配缺省报文匹配规则；如果接口下只存在一个采用缺省报文匹配规则的服务实例，则该接口上的所有报文都匹配缺省报文匹配规则。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1845539794}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在同一个以太网服务实例视图下，不能重复执行本命令。]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1334240264}
+·在同一个以太网服务实例视图下，不能重复执行本命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[删除以太网服务实例下的报文匹配规则后，会自动取消以太网服务实例]{style="font-family:宋体"}]{#struct_0_10012_x1780_1860748174}[与]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的关联。]{style="font-family:宋体"}
+·删除以太网服务实例下的报文匹配规则后，会自动取消以太网服务实例与VSI的关联。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[内层]{style="font-family:宋体"}]{#struct_0_10012_x1780_1078636186}[VLAN]{lang="EN-US"}[标签和外层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签的介绍请参见"二层技术]{style="font-family:宋体"}[-]{lang="EN-US"}[以太网交换配置指导"中的"]{style="font-family:宋体"}[QinQ]{lang="EN-US"}["。]{style="font-family:宋体"}
+·内层VLAN标签和外层VLAN标签的介绍请参见"二层技术-以太网交换配置指导"中的"QinQ"。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1456148369}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_1910319712}[在二层以太网接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的以太网服务实例]{style="font-family:宋体"}[1]{lang="EN-US"}[上配置如下报文匹配规则：匹配外层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签为]{style="font-family:宋体"}[111]{lang="EN-US"}[，内层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签为]{style="font-family:宋体"}[20]{lang="EN-US"}[、]{style="font-family:宋体"}[30]{lang="EN-US"}[～]{style="font-family:宋体"}[40]{lang="EN-US"}[的报文。]{style="font-family:宋体"}
+\# 在二层以太网接口GigabitEthernet1/0/1的以太网服务实例1上配置如下报文匹配规则：匹配外层VLAN标签为111，内层VLAN标签为20、30～40的报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_1121844131}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] service-instance 1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 service-instance 1
 
-[\[Sysname-GigabitEthernet1/0/1-srv1\] encapsulation s-vid 111 c-vid 20 30 to 40]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1-srv1 encapsulation s-vid 111 c-vid 20 30 to 40
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x631414675}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn service-instance]{lang="EN-US"}**]{#struct_0_10012_x1780_x1878192083}
-:::
-
-::: {#2070950537 .myid}
-[]{#_Toc404791652}[]{#struct_0_10012_x1780_362993132}
+·**display l2vpn service-instance**
 
 **VPLS \-- VPLS配置命令 \-- l2vpn enable**
 
 ------------------------------------------------------------------------
 
-[**[l2vpn enable]{lang="EN-US"}**]{#struct_0_10012_x1780_1705352943}[命令用来使能]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[l2vpn enable**]命令用来使能L2VPN功能。
 
-[**[undo l2vpn enable]{lang="EN-US"}**]{#struct_0_10012_x1780_x612812070}[命令用来关闭]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo l2vpn enable**]命令用来关闭L2VPN功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x566760983}
+【命令】
 
-[**[l2vpn enable]{lang="EN-US"}**]{#struct_0_10012_x1780_x261873298}
+**[l2vpn enable**]
 
-[**[undo l2vpn enable]{lang="EN-US"}**]{#struct_0_10012_x1780_1121385376}
+**[undo l2vpn enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1823746511}
+【缺省情况】
 
-[[L2VPN]{lang="EN-US"}]{#struct_0_10012_x1780_x1930873648}[功能处于关闭状态。]{style="font-family:宋体"}
+L2VPN功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x248553133}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_10012_x1780_x252404589}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x433315803}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1048208597}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1590903105}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1121319840}
+【使用指导】
 
-[[只有使能]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}]{#struct_0_10012_x1780_1295863154}[功能后，才能进行]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[的相关配置。]{style="font-family:宋体"}
+只有使能L2VPN功能后，才能进行L2VPN的相关配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1745356329}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_1379596398}[使能]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 使能L2VPN功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x1040519153}
+\<Sysname\> system-view
 
-[\[Sysname\] l2vpn enable]{lang="EN-US"}
-:::
-
-::::: {#-1924536592 .myid}
-[]{#_Toc404791653}[]{#struct_0_10012_x1780_x1151500423}[]{#_Toc302467222}[]{#_Toc360712346}[]{#_Toc361311813}[]{#_Toc361311893}[]{#_Toc361662472}[]{#_Toc360712347}[]{#_Toc361311814}[]{#_Toc361311894}[]{#_Toc361662473}[]{#_Toc360712348}[]{#_Toc361311815}[]{#_Toc361311895}[]{#_Toc361662474}[]{#_Toc360712349}[]{#_Toc361311816}[]{#_Toc361311896}[]{#_Toc361662475}[]{#_Toc360712350}[]{#_Toc361311817}[]{#_Toc361311897}[]{#_Toc361662476}[]{#_Toc360712351}[]{#_Toc361311818}[]{#_Toc361311898}[]{#_Toc361662477}[]{#_Toc360712352}[]{#_Toc361311819}[]{#_Toc361311899}[]{#_Toc361662478}[]{#_Toc360712353}[]{#_Toc361311820}[]{#_Toc361311900}[]{#_Toc361662479}[]{#_Toc360712354}[]{#_Toc361311821}[]{#_Toc361311901}[]{#_Toc361662480}[]{#_Toc360712355}[]{#_Toc361311822}[]{#_Toc361311902}[]{#_Toc361662481}[]{#_Toc360712356}[]{#_Toc361311823}[]{#_Toc361311903}[]{#_Toc361662482}[]{#_Toc360712357}[]{#_Toc361311824}[]{#_Toc361311904}[]{#_Toc361662483}[]{#_Toc360712358}[]{#_Toc361311825}[]{#_Toc361311905}[]{#_Toc361662484}[]{#_Toc360712359}[]{#_Toc361311826}[]{#_Toc361311906}[]{#_Toc361662485}[]{#_Toc360712360}[]{#_Toc361311827}[]{#_Toc361311907}[]{#_Toc361662486}[]{#_Toc360712361}[]{#_Toc361311828}[]{#_Toc361311908}[]{#_Toc361662487}[]{#_Toc360712362}[]{#_Toc361311829}[]{#_Toc361311909}[]{#_Toc361662488}[]{#_Hlt24806852}[]{#_Toc360712363}[]{#_Toc361311830}[]{#_Toc361311910}[]{#_Toc361662489}[]{#_Toc360712364}[]{#_Toc361311831}[]{#_Toc361311911}[]{#_Toc361662490}[]{#_Toc360712365}[]{#_Toc361311832}[]{#_Toc361311912}[]{#_Toc361662491}[]{#_Toc360712366}[]{#_Toc361311833}[]{#_Toc361311913}[]{#_Toc361662492}[]{#_Toc360712367}[]{#_Toc361311834}[]{#_Toc361311914}[]{#_Toc361662493}[]{#_Toc360712368}[]{#_Toc361311835}[]{#_Toc361311915}[]{#_Toc361662494}[]{#_Toc360712369}[]{#_Toc361311836}[]{#_Toc361311916}[]{#_Toc361662495}[]{#_Toc360712370}[]{#_Toc361311837}[]{#_Toc361311917}[]{#_Toc361662496}
+Sysname l2vpn enable
 
 **VPLS \-- VPLS配置命令 \-- l2vpn switchover**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![](VPLS命令.files/image001.png){width="62" height="26"}]{lang="EN-US"}]{#struct_0_10012_x1780_x881541775}
-:::
+!(VPLS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_10012_x1780_x1005733527}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[l2vpn switchover]{lang="EN-US"}**]{#struct_0_10012_x1780_1121581984}[命令用来将指定]{style="font-family:宋体"}[PW]{lang="EN-US"}[的流量手工倒换到它的冗余备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[上。]{style="font-family:宋体"}
+**[l2vpn switchover**]命令用来将指定PW的流量手工倒换到它的冗余备份PW上。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1409701920}
+【命令】
 
-[**[l2vpn switchover peer ]{lang="EN-US"}***[ip-address]{lang="EN-US"}*[ **pw-id** *pw-id*]{lang="EN-US"}]{#struct_0_10012_x1780_x1979270035}
+**[l2vpn switchover peer ***ip-address* **pw-id** *pw-id*]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x2010304584}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1999779010}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1825507190}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_214679211}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_636702207}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1121778592}
+【参数】
 
-[**[peer ]{lang="EN-US"}***[ip-address]{lang="EN-US"}*]{#struct_0_10012_x1780_1283512400}[：指定]{style="font-family:宋体"}[PW]{lang="EN-US"}[远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[的]{style="font-family:宋体"}[LSR ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[peer ***ip-address*]：指定PW远端PE的LSR ID。
 
-[**[pw-id]{lang="EN-US"}**[ *pw-id*]{lang="EN-US"}]{#struct_0_10012_x1780_x1777300071}[：指定]{style="font-family:宋体"}[PW]{lang="EN-US"}[的]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[。]{style="font-family:宋体"}*[pw-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[PW]{lang="EN-US"}[的]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[pw-id** *pw-id*]：指定PW的PW ID。*pw-id*为PW的PW ID，取值范围为1～4294967295。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1639394445}
+【使用指导】
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_1491819560}[远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[的]{style="font-family:宋体"}[LSR ID]{lang="EN-US"}[地址和]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[唯一标识了一条]{style="font-family:宋体"}[PW]{lang="EN-US"}[。如果该]{style="font-family:宋体"}[PW]{lang="EN-US"}[存在对应的可用主]{style="font-family:宋体"}[PW]{lang="EN-US"}[或备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[，则执行本命令后，通过该]{style="font-family:宋体"}[PW]{lang="EN-US"}[转发的流量将倒换到另一条可用的主]{style="font-family:宋体"}[PW]{lang="EN-US"}[或备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[上转发；如果不存在对应的可用主]{style="font-family:宋体"}[PW]{lang="EN-US"}[和备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[，则不进行流量倒换。]{style="font-family:宋体"}
+PW远端PE的LSR ID地址和PW ID唯一标识了一条PW。如果该PW存在对应的可用主PW或备份PW，则执行本命令后，通过该PW转发的流量将倒换到另一条可用的主PW或备份PW上转发；如果不存在对应的可用主PW和备份PW，则不进行流量倒换。
 
-[[本命令是]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_1915764280}[保护倒换的手工倒换命令，用来方便管理员对网络流量进行管理。]{style="font-family:宋体"}
+本命令是PW保护倒换的手工倒换命令，用来方便管理员对网络流量进行管理。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_772396840}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_690798618}[远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[地址为]{style="font-family:宋体"}[3.3.3.3]{lang="EN-US"}[、]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[为]{style="font-family:宋体"}[100]{lang="EN-US"}[的]{style="font-family:宋体"}[PW]{lang="EN-US"}[存在备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[，将该]{style="font-family:宋体"}[PW]{lang="EN-US"}[上的流量手工倒换到它的备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[上转发。]{style="font-family:宋体"}
+\# 远端PE地址为3.3.3.3、PW ID为100的PW存在备份PW，将该PW上的流量手工倒换到它的备份PW上转发。
 
-[[\<Sysname\> l2vpn switchover peer 3.3.3.3 pw-id 100]{lang="EN-US"}]{#struct_0_10012_x1780_1121713056}
-:::::
-
-::::: {#1058776332 .myid}
-[]{#_Toc404791654}[]{#struct_0_10012_x1780_x662793899}
+\<Sysname\> l2vpn switchover peer 3.3.3.3 pw-id 100
 
 **VPLS \-- VPLS配置命令 \-- mac-learning enable**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![](VPLS命令.files/image001.png){width="62" height="26"}]{lang="EN-US"}]{#struct_0_10012_x1780_791772990}
-:::
+!(VPLS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_10012_x1780_x542958825}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[mac-learning enable]{lang="EN-US"}**]{#struct_0_10012_x1780_1786754700}[命令用来开启]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址学习功能。]{style="font-family:宋体"}
+**[mac-learning enable**]命令用来开启VSI的MAC地址学习功能。
 
-[**[undo mac-learning]{lang="EN-US"}**[ **enable**]{lang="EN-US"}]{#struct_0_10012_x1780_x617461380}[命令用来关闭]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址学习功能。]{style="font-family:宋体"}
+**[undo mac-learning** **enable**]命令用来关闭VSI的MAC地址学习功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_775708169}
+【命令】
 
-[**[mac-learning enable]{lang="EN-US"}**]{#struct_0_10012_x1780_1576441592}
+**[mac-learning enable**]
 
-[**[undo mac-learning enable]{lang="EN-US"}**]{#struct_0_10012_x1780_1121909664}
+**[undo mac-learning enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1845474258}
+【缺省情况】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x2109071421}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址学习功能处于开启状态。]{style="font-family:宋体"}
+VSI的MAC地址学习功能处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x386834001}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_479467482}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x306702631}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x110360494}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x220016059}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1121844128}
+【使用指导】
 
-[[如果关闭了]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x630955922}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址学习功能，则设备接收到该]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的报文后不会学习该报文的源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+如果关闭了VSI的MAC地址学习功能，则设备接收到该VSI内的报文后不会学习该报文的源MAC地址。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_104242162}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_1496758255}[关闭名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址学习功能。]{style="font-family:宋体"}
+\# 关闭名为vpn1的VSI的MAC地址学习功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x431836295}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname vsi vpn1
 
-[\[Sysname-vsi-vpn1\] undo mac-learning enable]{lang="EN-US"}
+Sysname-vsi-vpn1 undo mac-learning enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_187693544}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn vsi]{lang="EN-US"}**]{#struct_0_10012_x1780_1572704693}
-:::::
-
-::::: {#-265759702 .myid}
-[]{#_Toc404791655}[]{#struct_0_10012_x1780_x556370204}
+·**display l2vpn vsi**
 
 **VPLS \-- VPLS配置命令 \-- mac-learing rate**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VPLS命令.files/image003.png){#图片 8 width="61" height="26"}]{lang="EN-US"}]{#struct_0_10012_x1780_1009713737}
-:::
+![说明](VPLS命令.files/image003.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_10012_x1780_482979569}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[mac-learning rate**]命令用来配置当前VSI学习单个MAC地址的时间间隔。
 
-[**[mac-learning rate]{lang="EN-US"}**]{#struct_0_10012_x1780_1896661352}[命令用来配置当前]{style="font-family:宋体"}[VSI]{lang="EN-US"}[学习单个]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的时间间隔。]{style="font-family:宋体"}
+**[undo mac-learning rate**]命令用来恢复缺省情况。
 
-[**[undo mac-learning rate]{lang="EN-US"}**]{#struct_0_10012_x1780_297919435}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1524761972}
+**[mac-learning** **rate** *interva[l*]]
 
-[**[mac-learning]{lang="EN-US"}**[ **rate** *interva[l]{style="color:black"}*]{lang="EN-US"}]{#struct_0_10012_x1780_358055413}
+**[undo****mac-learning** **rate**]
 
-[**[undo]{lang="EN-US"}**[ ]{lang="EN-US"}**[mac-learning]{lang="EN-US"}**[ **rate**]{lang="EN-US"}]{#struct_0_10012_x1780_1886142909}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1348039139}
+学习单个MAC地址的时间间隔为0，即不限制MAC地址的学习速率。
 
-[[学习单个]{style="font-family:宋体;color:black"}[MAC]{lang="EN-US" style="color:black"}]{#struct_0_10012_x1780_x1719169618}[地址的时间间隔为]{style="font-family:宋体;color:black"}[0]{lang="EN-US" style="color:black"}[，即不限制]{style="font-family:宋体;color:black"}[MAC]{lang="EN-US" style="color:black"}[地址的学习速率]{style="font-family:宋体;
-color:black"}[。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1690213751}
+VSI视图
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1851157796}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1123087534}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x10698938}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1538788162}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x241452661}
+*[interval*]：指定当前VSI学习单个MAC地址的时间间隔，取值范围为0～1000，单位为毫秒。
 
-[*[interval]{lang="EN-US"}*]{#struct_0_10012_x1780_x2024593378}[：指定当前]{style="font-family:宋体"}[VSI]{lang="EN-US"}[学习单个]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的时间间隔，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体;color:black"}[1000]{lang="EN-US"}[，单位为毫秒。]{style="font-family:宋体"}
+【使用指导】
 
-[]{#struct_0_10012_x1780_x153085677}[]{#_GoBack}[【使用指导】]{style="font-family:黑体"}
+通过配置学习单个MAC地址的时间间隔，可对特定VSI的MAC地址学习速率进行限制，以防止在短时间内学习过多的MAC地址表项，占用过多的MAC地址表项资源。
 
-[[通过配置学习单个]{style="font-family:宋体;color:black"}[MAC]{lang="EN-US"}]{#struct_0_10012_x1780_641575579}[地址的时间间隔，可对特定]{style="font-family:宋体;color:black"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址学习速率进行限制，以防止在短时间内学习过多的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项，占用过多的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项资源。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_205341793}
+\# 配置名为vpn1的VSI学习单个MAC地址的时间间隔为1000毫秒。
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x250681126}[配置名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[学习单个]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的时间间隔为]{style="font-family:宋体"}[1000]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x356024786}
+Sysname vsi vpn1
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname-vsi-vpn1 mac-learning rate 1000
 
-[\[Sysname-vsi-vpn1\] mac-learning rate 1000]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1800019761}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn vsi]{lang="EN-US"}**]{#struct_0_10012_x1780_1412998264}
-:::::
-
-::::: {#2005444103 .myid}
-[]{#_Toc404791656}[]{#struct_0_10012_x1780_1627260696}
+·**display l2vpn vsi**
 
 **VPLS \-- VPLS配置命令 \-- mac-table limit**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![](VPLS命令.files/image001.png){width="62" height="26"}]{lang="EN-US"}]{#struct_0_10012_x1780_1121385377}
-:::
+!(VPLS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_10012_x1780_x1823680975}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[mac-table limit**]命令用来配置允许VSI学习到的最大MAC地址数。
 
-[**[mac-table limit]{lang="EN-US"}**]{#struct_0_10012_x1780_x1398499836}[命令用来配置允许]{style="font-family:宋体"}[VSI]{lang="EN-US"}[学习到的最大]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数。]{style="font-family:宋体"}
+**[undo mac-table limit**]命令用来恢复缺省情况。
 
-[**[undo mac-table limit]{lang="EN-US"}**]{#struct_0_10012_x1780_x199665301}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1370454984}
+**[mac-table** **limit** *mac-limit*]
 
-[**[mac-table]{lang="EN-US"}**[ **limit** *mac-limit*]{lang="EN-US"}]{#struct_0_10012_x1780_7558655}
+**[undo mac-table** **limit**]
 
-[**[undo mac-table]{lang="EN-US"}**[ **limit**]{lang="EN-US"}]{#struct_0_10012_x1780_1654771073}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1878437901}
+不对VSI学习到的最大MAC地址数进行限制。
 
-[[不对]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1121319841}[学习到的最大]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数进行限制。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1295797618}
+VSI视图
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x243282712}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_957622133}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_212917812}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x844182572}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1878599568}
+*[mac-limit*]：允许VSI学习到的最大MAC地址数。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[*[mac-limit]{lang="EN-US"}*]{#struct_0_10012_x1780_320412395}[：允许]{style="font-family:宋体"}[VSI]{lang="EN-US"}[学习到的最大]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1121516449}
+通常情况下，设备上能够保存的最大MAC地址表项数目具有一定的限制。本命令可以控制单个VSI的最大MAC地址数，以避免某个VSI的MAC地址表项过多，占用过多的MAC地址表项资源。
 
-[[通常情况下，设备上能够保存的最大]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_10012_x1780_2107001347}[地址表项数目具有一定的限制。本命令可以控制单个]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的最大]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数，以避免某个]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项过多，占用过多的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项资源。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_840207368}
+\# 配置名为vpn1的VSI允许学习到的最大MAC地址数为1024。
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_623954144}[配置名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[允许学习到的最大]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数为]{style="font-family:宋体"}[1024]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x986480078}
+Sysname vsi vpn1
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname-vsi-vpn1 mac-table limit 1024
 
-[\[Sysname-vsi-vpn1\] mac-table limit 1024]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1180416785}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn vsi]{lang="EN-US"}**]{#struct_0_10012_x1780_1729068549}
-:::::
-
-::::: {#213543152 .myid}
-[]{#_Toc404791657}[]{#struct_0_10012_x1780_1121450913}
+·**display l2vpn vsi**
 
 **VPLS \-- VPLS配置命令 \-- mac-table limit drop-unknown**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![](VPLS命令.files/image004.png){width="62" height="26"}]{lang="EN-US"}]{#struct_0_10012_x1780_158479195}
-:::
+!(VPLS命令.files/image004.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_10012_x1780_1269689254}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[mac-table limit drop-unknown]{lang="EN-US"}**]{#struct_0_10012_x1780_x906747064}[命令用来配置当]{style="font-family:
-宋体"}[VSI]{lang="EN-US"}[学习到的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数达到最大值后，禁止转发源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址不在]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表里的报文，即丢弃该报文。对于源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址在]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表里的报文，进行正常转发。]{style="font-family:宋体"}
+**[mac-table limit drop-unknown**]命令用来配置当VSI学习到的MAC地址数达到最大值后，禁止转发源MAC地址不在MAC地址表里的报文，即丢弃该报文。对于源MAC地址在MAC地址表里的报文，进行正常转发。
 
-[**[undo mac-table limit ]{lang="EN-US"}[drop-unknown]{lang="EN-US"}**]{#struct_0_10012_x1780_133451604}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo mac-table limit drop-unknown**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x508875970}
+【命令】
 
-[**[mac-table limit drop-unknown]{lang="EN-US"}**]{#struct_0_10012_x1780_699873515}
+**[mac-table limit drop-unknown**]
 
-[**[undo ]{lang="EN-US"}[mac-table limit drop-unknown]{lang="EN-US"}**]{#struct_0_10012_x1780_x1649436691}
+**[undo mac-table limit drop-unknown**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1121647521}
+【缺省情况】
 
-[[当]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x1799373055}[学习到的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数达到最大值后，允许转发源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址不在]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表里的报文，但是不会学习报文的源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+当VSI学习到的MAC地址数达到最大值后，允许转发源MAC地址不在MAC地址表里的报文，但是不会学习报文的源MAC地址。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1099492557}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1212641006}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1854107576}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1444795959}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_333833641}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x412015869}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_1121581985}[配置名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[允许学习到的最大]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数为]{style="font-family:宋体"}[1024]{lang="EN-US"}[，并配置学习到的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数达到最大值后，丢弃源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址不在]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表里的报文。]{style="font-family:宋体"}
+\# 配置名为vpn1的VSI允许学习到的最大MAC地址数为1024，并配置学习到的MAC地址数达到最大值后，丢弃源MAC地址不在MAC地址表里的报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x1409636384}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname vsi vpn1
 
-[\[Sysname-vsi-vpn1\] mac-table limit 1024]{lang="EN-US"}
+Sysname-vsi-vpn1 mac-table limit 1024
 
-[\[Sysname-vsi-vpn1\] mac-table limit drop-unknown]{lang="EN-US"}
+Sysname-vsi-vpn1 mac-table limit drop-unknown
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x14439020}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn vsi]{lang="EN-US"}**]{#struct_0_10012_x1780_x1189277459}
-:::::
-
-::: {#988247972 .myid}
-[]{#_Toc404791658}[]{#struct_0_10012_x1780_x288029049}
+·**display l2vpn vsi**
 
 **VPLS \-- VPLS配置命令 \-- mtu**
 
 ------------------------------------------------------------------------
 
-[**[mtu]{lang="EN-US"}**]{#struct_0_10012_x1780_1348867013}[命令用来配置]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[（]{style="font-family:宋体"}[Maximum Transmission Unit]{lang="EN-US"}[，最大传输单元）值。]{style="font-family:宋体"}
+**[mtu**]命令用来配置VSI的MTU（Maximum Transmission Unit，最大传输单元）值。
 
-[**[undo ]{lang="EN-US"}[mtu]{lang="EN-US"}**]{#struct_0_10012_x1780_x816448570}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo mtu**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1121778593}
+【命令】
 
-[**[mtu]{lang="EN-US"}**[ *mtu*]{lang="EN-US"}]{#struct_0_10012_x1780_1283446864}
+**[mtu** *mtu*]
 
-[**[undo mtu]{lang="EN-US"}**]{#struct_0_10012_x1780_x1752604638}
+**[undo mtu**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x51273109}
+【缺省情况】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_2096127531}[的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[值为]{style="font-family:宋体"}[1500]{lang="EN-US"}[字节。]{style="font-family:宋体"}
+VSI的MTU值为1500字节。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1353957475}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x262016080}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x2075993094}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1400459466}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1121713057}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x662859435}
+【参数】
 
-[*[mtu]{lang="EN-US"}*]{#struct_0_10012_x1780_62058893}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[值。本参数的取值范围与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[mtu*]：VSI的MTU值。本参数的取值范围与设备的型号有关，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1495608515}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果采用]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1878674542}[LDP]{lang="EN-US"}[信令协议建立]{style="font-family:宋体"}[PW]{lang="EN-US"}[，则要求]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[实例内所有]{style="font-family:宋体"}[PE]{lang="EN-US"}[上配置的]{style="font-family:宋体"}[VSI MTU]{lang="EN-US"}[值必须保持一致。]{style="font-family:宋体"}
+·如果采用LDP信令协议建立PW，则要求VPLS实例内所有PE上配置的VSI MTU值必须保持一致。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x1443440292}[的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[是]{style="font-family:宋体"}[PW]{lang="EN-US"}[上发送报文的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[值，该]{style="font-family:宋体"}[MTU]{lang="EN-US"}[值为包括控制字、]{style="font-family:宋体"}[PW]{lang="EN-US"}[标签和网络层报文在内的报文的最大长度。]{style="font-family:宋体"}
+·VSI的MTU是PW上发送报文的MTU值，该MTU值为包括控制字、PW标签和网络层报文在内的报文的最大长度。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_378438890}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x1921398346}[配置名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[值为]{style="font-family:宋体"}[1400]{lang="EN-US"}[字节。]{style="font-family:宋体"}
+\# 配置名为vpn1的VSI的MTU值为1400字节。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_1121909665}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname vsi vpn1
 
-[\[Sysname-vsi-vpn1\] mtu 1400]{lang="EN-US"}
+Sysname-vsi-vpn1 mtu 1400
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1845408722}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn vsi]{lang="EN-US"}**]{#struct_0_10012_x1780_707528277}
-:::
-
-::: {#1903411553 .myid}
-[]{#_Toc404791659}[]{#struct_0_10012_x1780_1181811834}
+·**display l2vpn vsi**
 
 **VPLS \-- VPLS配置命令 \-- peer**
 
 ------------------------------------------------------------------------
 
-[**[peer]{lang="EN-US"}**]{#struct_0_10012_x1780_x518526202}[命令用来配置]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[的]{style="font-family:宋体"}[PW]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[VSI LDP PW]{lang="EN-US"}[视图或]{style="font-family:宋体"}[VSI]{lang="EN-US"}[静态]{style="font-family:宋体"}[PW]{lang="EN-US"}[视图。如果指定的]{style="font-family:宋体"}[PW]{lang="EN-US"}[已存在，则直接进入]{style="font-family:宋体"}[VSI LDP PW]{lang="EN-US"}[视图或]{style="font-family:宋体"}[VSI]{lang="EN-US"}[静态]{style="font-family:宋体"}[PW]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+**[peer**]命令用来配置VPLS的PW，并进入VSI LDP PW视图或VSI静态PW视图。如果指定的PW已存在，则直接进入VSI LDP PW视图或VSI静态PW视图。
 
-[**[undo]{lang="EN-US"}**[ **peer**]{lang="EN-US"}]{#struct_0_10012_x1780_x1845380173}[命令用来删除指定的]{style="font-family:宋体"}[PW]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo** **peer**]命令用来删除指定的PW。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1956359712}
+【命令】
 
-[[VSI LDP]{lang="EN-US"}]{#struct_0_10012_x1780_1121844129}[信令视图：]{style="font-family:宋体"}
+VSI LDP信令视图：
 
-[**[peer]{lang="EN-US"}**[ *ip-address* \[ **pw-id** *pw-id* \] \[ **hub** \| **no-split-horizon** \| **pw-class** *class-name* \| **tunnel-policy** *tunnel-policy-name* \] \*]{lang="EN-US"}]{#struct_0_10012_x1780_x630890386}
+**[peer** *ip-address* [ **pw-id** *pw-id*  [ **hub** \| **no-split-horizon** \| **pw-class** *class-name* \| **tunnel-policy** *tunnel-policy-name* ] \*]]
 
-[**[undo]{lang="EN-US"}**[ **peer** *ip-address* **pw-id** *pw-id*]{lang="EN-US"}]{#struct_0_10012_x1780_1986650910}
+**[undo** **peer** *ip-address* **pw-id** *pw-id*]
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x392399057}[静态配置视图：]{style="font-family:宋体"}
+VSI静态配置视图：
 
-[**[peer]{lang="EN-US"}**[ *ip-address* \[ **pw-id** *pw-id* \] \[ **in-label** *label-value* **out-label** *label-value* \[ **hub** \| **no-split-horizon** \| **pw-class** *class-name* \| **tunnel-policy** *tunnel-policy-name* \] \* \]]{lang="EN-US"}]{#struct_0_10012_x1780_120851542}
+**[peer** *ip-address* [ **pw-id** *pw-id*  [ **in-label** *label-value* **out-label** *label-value* [ **hub** \| **no-split-horizon** \| **pw-class** *class-name* \| **tunnel-policy** *tunnel-policy-name* ] \* ]]]
 
-[**[undo]{lang="EN-US"}**[ **peer** *ip-address* **pw-id** *pw-id*]{lang="EN-US"}]{#struct_0_10012_x1780_707095116}
+**[undo** **peer** *ip-address* **pw-id** *pw-id*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x488331315}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[VPLS]{lang="EN-US"}]{#struct_0_10012_x1780_x786581211}[的]{style="font-family:宋体"}[PW]{lang="EN-US"}[。]{style="font-family:宋体"}
+未配置VPLS的PW。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1607497975}
+【视图】
 
-[[VSI LDP]{lang="EN-US"}]{#struct_0_10012_x1780_x1954587661}[信令视图]{style="font-family:宋体"}[/VSI]{lang="EN-US"}[静态配置视图]{style="font-family:宋体"}
+VSI LDP信令视图/VSI静态配置视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x889395708}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1543664752}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_210337172}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1059490659}
+【参数】
 
-[*[ip-address]{lang="EN-US"}*]{#struct_0_10012_x1780_1978213512}[：指定]{style="font-family:宋体"}[PW]{lang="EN-US"}[远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[的]{style="font-family:宋体"}[LSR ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[ip-address*]：指定PW远端PE的LSR ID。
 
-[**[pw-id ]{lang="EN-US"}***[pw-id]{lang="EN-US"}*]{#struct_0_10012_x1780_1608690147}[：指定]{style="font-family:宋体"}[PW]{lang="EN-US"}[的]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[。]{style="font-family:宋体"}*[pw-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。如果不指定本参数，则]{style="font-family:宋体"}[PW]{lang="EN-US"}[的]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[为]{style="font-family:宋体"}**[default-pw-id]{lang="EN-US"}**[命令配置的缺省]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[pw-id ***pw-id*]：指定PW的PW ID。*pw-id*为PW ID，取值范围为1～4294967295。如果不指定本参数，则PW的PW ID为**default-pw-id**命令配置的缺省PW ID。
 
-[**[in-label]{lang="EN-US"}**[ *l*]{lang="EN-US"}]{#struct_0_10012_x1780_x1607563511}*[abel-value]{lang="EN-US"}*[：指定]{style="font-family:宋体"}[PW]{lang="EN-US"}[的]{style="font-family:宋体"}[入标签。]{style="font-family:宋体"}*[l]{lang="EN-US"}[abel-value]{lang="EN-US"}*[为入标签值]{style="font-family:宋体"}[。本参数]{style="font-family:宋体"}[的取值范围与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[in-label** *l*]*abel-value*：指定PW的入标签。*label-value*为入标签值。本参数的取值范围与设备的型号有关，请以设备的实际情况为准。
 
-[**[out-label]{lang="EN-US"}**[ *l*]{lang="EN-US"}]{#struct_0_10012_x1780_x1743634372}*[abel-value]{lang="EN-US"}*[：指定]{style="font-family:宋体"}[PW]{lang="EN-US"}[的]{style="font-family:宋体"}[出标签。]{style="font-family:宋体"}*[l]{lang="EN-US"}[abel-value]{lang="EN-US"}*[为出标签值]{style="font-family:宋体"}[。本参数]{style="font-family:宋体"}[的取值范围与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[out-label** *l*]*abel-value*：指定PW的出标签。*label-value*为出标签值。本参数的取值范围与设备的型号有关，请以设备的实际情况为准。
 
-[**[hub]{lang="EN-US"}**]{#struct_0_10012_x1780_1345383139}[：指定]{style="font-family:宋体"}[PW]{lang="EN-US"}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内为]{style="font-family:宋体"}[hub]{lang="EN-US"}[链路。当]{style="font-family:宋体"}[VSI]{lang="EN-US"}[使能了]{style="font-family:宋体"}[hub-spoke]{lang="EN-US"}[能力后，]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的]{style="font-family:宋体"}[PW]{lang="EN-US"}[缺省为]{style="font-family:宋体"}[spoke]{lang="EN-US"}[链路。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[hub**]：指定PW在VSI内为hub链路。当VSI使能了hub-spoke能力后，VSI内的PW缺省为spoke链路。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[no-split-horizon]{lang="EN-US"}**]{#struct_0_10012_x1780_x932327583}[：指定通过该]{style="font-family:宋体"}[PW]{lang="EN-US"}[转发报文时，不采用水平分割方式。缺省情况下，通过]{style="font-family:宋体"}[PW]{lang="EN-US"}[转发报文时，必须采用水平分割方式。]{style="font-family:宋体"}
+**[no-split-horizon**]：指定通过该PW转发报文时，不采用水平分割方式。缺省情况下，通过PW转发报文时，必须采用水平分割方式。
 
-[**[pw-class ]{lang="EN-US"}***[class-name]{lang="EN-US"}*]{#struct_0_10012_x1780_x1283554199}[：指定]{style="font-family:宋体"}[PW]{lang="EN-US"}[引用的]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板。]{style="font-family:宋体"}*[class-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板名，]{style="font-family:宋体"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[19]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板中可以配置]{style="font-family:宋体"}[PW]{lang="EN-US"}[的数据封装类型、是否使用控制字等。如果不指定本参数，则]{style="font-family:宋体"}[PW]{lang="EN-US"}[数据封装类型为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，不支持控制字功能。]{style="font-family:宋体"}
+**[pw-class ***class-name*]：指定PW引用的PW模板。*class-name*表示PW模板名，为1～19个字符的字符串，区分大小写。PW模板中可以配置PW的数据封装类型、是否使用控制字等。如果不指定本参数，则PW数据封装类型为VLAN，不支持控制字功能。
 
-[**[tunnel-policy ]{lang="EN-US"}***[tunnel-policy-name]{lang="EN-US"}*]{#struct_0_10012_x1780_478991659}[：指定]{style="font-family:宋体"}[PW]{lang="EN-US"}[的隧道选择策略。]{style="font-family:宋体"}*[tunnel-policy-name]{lang="EN-US"}*[表示隧道策略名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[19]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则使用缺省的隧道选择策略。]{style="font-family:宋体"}
+**[tunnel-policy ***tunnel-policy-name*]：指定PW的隧道选择策略。*tunnel-policy-name*表示隧道策略名，为1～19个字符的字符串，区分大小写。如果不指定本参数，则使用缺省的隧道选择策略。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1607366903}
+【使用指导】
 
-[[创建静态]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_101656958}[时，必须指定]{style="font-family:宋体"}**[in-label]{lang="EN-US"}**[和]{style="font-family:宋体"}**[out-label]{lang="EN-US"}**[参数；静态]{style="font-family:宋体"}[PW]{lang="EN-US"}[已经存在，进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}[静态]{style="font-family:宋体"}[PW]{lang="EN-US"}[视图时，无需指定]{style="font-family:宋体"}**[in-label]{lang="EN-US"}**[和]{style="font-family:宋体"}**[out-label]{lang="EN-US"}**[参数。]{style="font-family:宋体"}
+创建静态PW时，必须指定**in-label**和**out-label**参数；静态PW已经存在，进入VSI静态PW视图时，无需指定**in-label**和**out-label**参数。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_10012_x1780_x2018560825}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PW ID]{lang="EN-US"}]{#struct_0_10012_x1780_x1264162802}[是一对]{style="font-family:宋体"}[PE]{lang="EN-US"}[之间]{style="font-family:宋体"}[PW]{lang="EN-US"}[的标识，本端和远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[上为同一]{style="font-family:宋体"}[PW]{lang="EN-US"}[指定的]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[必须相同。]{style="font-family:宋体"}
+·PW ID是一对PE之间PW的标识，本端和远端PE上为同一PW指定的PW ID必须相同。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在本端]{style="font-family:宋体"}]{#struct_0_10012_x1780_1206921408}[PE]{lang="EN-US"}[上，远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[的]{style="font-family:宋体"}[LSR ID]{lang="EN-US"}[和]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[唯一标识一条]{style="font-family:宋体"}[PW]{lang="EN-US"}[。配置]{style="font-family:宋体"}[PW]{lang="EN-US"}[时指定的远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[的]{style="font-family:宋体"}[LSR ID]{lang="EN-US"}[和]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[，不能与已经存在的]{style="font-family:宋体"}[VPLS PW]{lang="EN-US"}[、交叉连接]{style="font-family:宋体"}[PW]{lang="EN-US"}[的]{style="font-family:宋体"}[LSR ID]{lang="EN-US"}[和]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[同时相同。]{style="font-family:宋体"}
+·在本端PE上，远端PE的LSR ID和PW ID唯一标识一条PW。配置PW时指定的远端PE的LSR ID和PW ID，不能与已经存在的VPLS PW、交叉连接PW的LSR ID和PW ID同时相同。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果在]{style="font-family:宋体"}]{#struct_0_10012_x1780_x682453154}[VSI]{lang="EN-US"}[视图下通过]{style="font-family:宋体"}**[default-pw-id]{lang="EN-US"}**[命令配置了缺省]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[，则执行]{style="font-family:宋体"}**[peer]{lang="EN-US"}**[命令时可以不指定]{style="font-family:宋体"}**[pw-id]{lang="EN-US"}**[ *pw-id*]{lang="EN-US"}[参数，采用缺省的]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[；否则，执行]{style="font-family:宋体"}**[peer]{lang="EN-US"}**[命令时必须指定]{style="font-family:宋体"}**[pw-id]{lang="EN-US"}**[ *pw-id*]{lang="EN-US"}[参数。]{style="font-family:宋体"}
+·如果在VSI视图下通过**default-pw-id**命令配置了缺省PW ID，则执行**peer**命令时可以不指定**pw-id** *pw-id*参数，采用缺省的PW ID；否则，执行**peer**命令时必须指定**pw-id** *pw-id*参数。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果为静态]{style="font-family:宋体"}]{#struct_0_10012_x1780_250679308}[PW]{lang="EN-US"}[指定的入标签与已经存在的静态]{style="font-family:宋体"}[LSP/]{lang="EN-US"}[静态]{style="font-family:宋体"}[CRLSP]{lang="EN-US"}[的入标签相同，则会导致标签冲突，静态]{style="font-family:宋体"}[PW]{lang="EN-US"}[不可用。即使修改静态]{style="font-family:宋体"}[LSP/]{lang="EN-US"}[静态]{style="font-family:宋体"}[CRLSP]{lang="EN-US"}[的入标签，静态]{style="font-family:宋体"}[PW]{lang="EN-US"}[仍不可用，需要手工删除该静态]{style="font-family:宋体"}[PW]{lang="EN-US"}[并重新配置。]{style="font-family:宋体"}
+·如果为静态PW指定的入标签与已经存在的静态LSP/静态CRLSP的入标签相同，则会导致标签冲突，静态PW不可用。即使修改静态LSP/静态CRLSP的入标签，静态PW仍不可用，需要手工删除该静态PW并重新配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1464979539}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_40510055}[在]{style="font-family:宋体"}[VSI LDP]{lang="EN-US"}[信令视图下，配置一条]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[的]{style="font-family:宋体"}[LDP PW]{lang="EN-US"}[：远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[的地址为]{style="font-family:宋体"}[4.4.4.4]{lang="EN-US"}[，]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[为]{style="font-family:宋体"}[200]{lang="EN-US"}[，并指定通过本]{style="font-family:宋体"}[PW]{lang="EN-US"}[转发报文时不采用水平分割方式。配置]{style="font-family:宋体"}[PW]{lang="EN-US"}[后，将进入]{style="font-family:宋体"}[VSI LDP PW]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+\# 在VSI LDP信令视图下，配置一条VPLS的LDP PW：远端PE的地址为4.4.4.4，PW ID为200，并指定通过本PW转发报文时不采用水平分割方式。配置PW后，将进入VSI LDP PW视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x1607432439}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname vsi vpn1
 
-[\[Sysname-vsi-vpn1\] pwsignaling ldp]{lang="EN-US"}
+Sysname-vsi-vpn1 pwsignaling ldp
 
-[\[Sysname-vsi-vpn1-ldp\] peer 4.4.4.4 pw-id 200 no-split-horizon]{lang="EN-US"}
+Sysname-vsi-vpn1-ldp peer 4.4.4.4 pw-id 200 no-split-horizon
 
-[\[Sysname-vsi-vpn1-ldp-4.4.4.4-200\] ]{lang="EN-US"}
+Sysname-vsi-vpn1-ldp-4.4.4.4-200
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x1798252216}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[静态配置视图下，配置一条]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[的静态]{style="font-family:宋体"}[PW]{lang="EN-US"}[：远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[的地址为]{style="font-family:宋体"}[5.5.5.5]{lang="EN-US"}[，]{style="font-family:宋体"}[PW ID]{lang="EN-US"}[为]{style="font-family:宋体"}[200]{lang="EN-US"}[，入标签为]{style="font-family:宋体"}[100]{lang="EN-US"}[，出标签为]{style="font-family:宋体"}[200]{lang="EN-US"}[，并指定通过本]{style="font-family:宋体"}[PW]{lang="EN-US"}[转发报文时不采用水平分割方式。配置]{style="font-family:宋体"}[PW]{lang="EN-US"}[后，将进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}[静态]{style="font-family:宋体"}[PW]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+\# 在VSI静态配置视图下，配置一条VPLS的静态PW：远端PE的地址为5.5.5.5，PW ID为200，入标签为100，出标签为200，并指定通过本PW转发报文时不采用水平分割方式。配置PW后，将进入VSI静态PW视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x406038811}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname vsi vpn1
 
-[\[Sysname-vsi-vpn1\] pwsignaling static]{lang="EN-US"}
+Sysname-vsi-vpn1 pwsignaling static
 
-[\[Sysname-vsi-vpn1-static\] peer 5.5.5.5 pw-id 200 in-label 100 out-label 200 no-split-horizon]{lang="EN-US"}
+Sysname-vsi-vpn1-static peer 5.5.5.5 pw-id 200 in-label 100 out-label 200 no-split-horizon
 
-[\[Sysname-vsi-vpn1-static-5.5.5.5-200\] ]{lang="EN-US"}
+Sysname-vsi-vpn1-static-5.5.5.5-200
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1207003819}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[default-pw-id]{lang="EN-US"}**]{#struct_0_10012_x1780_948493745}
+·**default-pw-id**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn ldp]{lang="EN-US"}**]{#struct_0_10012_x1780_x1607235831}
+·**display l2vpn ldp**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn pw]{lang="EN-US"}**]{#struct_0_10012_x1780_x1294893524}
+·**display l2vpn pw**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pw-class]{lang="EN-US"}**]{#struct_0_10012_x1780_325671659}
+·**pw-class**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[tunnel-policy]{lang="EN-US"}**]{#struct_0_10012_x1780_468410633}[（]{lang="EN-US" style="font-family:宋体"}[MPLS]{lang="EN-US"}[命令参考]{lang="EN-US" style="font-family:宋体"}[/]{lang="EN-US"}[隧道策略）]{lang="EN-US" style="font-family:宋体"}
-:::
-
-::: {#-238882288 .myid}
-[]{#_Toc404791660}[]{#struct_0_10012_x1780_937118534}[]{#_Toc339885991}[]{#_Toc300843409}[]{#_Toc300843411}
+·**tunnel-policy**（MPLS命令参考/隧道策略）
 
 **VPLS \-- VPLS配置命令 \-- peer auto-discovery**
 
 ------------------------------------------------------------------------
 
-[**[peer auto-discovery]{lang="EN-US"}**]{#struct_0_10012_x1780_x2037010235}[命令]{style="font-family:宋体"}[用来使能本地路由器与指定对等体]{style="font-family:宋体"}[/]{lang="EN-US"}[对等体组交换]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息的能力。]{style="font-family:宋体"}
+**[peer auto-discovery**]命令用来使能本地路由器与指定对等体/对等体组交换VPLS PE信息的能力。
 
-[**[undo peer auto-discovery]{lang="EN-US"}**]{#struct_0_10012_x1780_x1147637854}[命令用来禁止本地路由器与指定对等体]{style="font-family:
-宋体"}[/]{lang="EN-US"}[对等体组交换]{style="font-family:
-宋体"}[VPLS PE]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[undo peer auto-discovery**]命令用来禁止本地路由器与指定对等体/对等体组交换VPLS PE信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1091995796}
+【命令】
 
-[**[peer]{lang="EN-US"}**[ { *group-name* \| *ip-address* \[ *mask-length* \] } **auto-discovery** \[ **non-standard** \]]{lang="EN-US"}]{#struct_0_10012_x1780_x1607301367}
+**[peer**[ { *group-name* \| *ip-address* [ *mask-length* ] } **auto-discovery**  **non-standard** ]]
 
-[**[undo peer]{lang="EN-US"}**[ { *group-name* \| *ip-address* \[ *mask-length* \] } **auto-discovery**]{lang="EN-US"}]{#struct_0_10012_x1780_31735670}
+**[undo peer**[ { *group-name* \| *ip-address* [ *mask-length* ] } **auto-discovery**]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1313893396}
+【缺省情况】
 
-[[本地路由器具有与]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}]{#struct_0_10012_x1780_x881875373}[对等体]{style="font-family:宋体"}[/]{lang="EN-US"}[对等体组交换]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息的能力，并且采用]{style="font-family:宋体"}[RFC 6074]{lang="EN-US"}[中定义的]{style="font-family:宋体"}[MP_REACH_NLRI]{lang="EN-US"}[格式交换]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+本地路由器具有与BGP L2VPN对等体/对等体组交换VPLS PE信息的能力，并且采用RFC 6074中定义的MP_REACH_NLRI格式交换VPLS PE信息。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_2086833266}
+【视图】
 
-[[BGP L2VPN]{lang="EN-US"}]{#struct_0_10012_x1780_459339092}[地址族视图]{style="font-family:宋体"}
+BGP L2VPN地址族视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x21347448}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_457549073}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1607104759}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x822103708}
+【参数】
 
-[*[group-name]{lang="EN-US"}*]{#struct_0_10012_x1780_1489002150}[：对等体组的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[47]{lang="EN-US"}[个字符的字符串，区分大小写。指定的对等体组必须已经创建。]{style="font-family:宋体"}
+*[group-name*]：对等体组的名称，为1～47个字符的字符串，区分大小写。指定的对等体组必须已经创建。
 
-[*[ip-address]{lang="EN-US"}*]{#struct_0_10012_x1780_407277119}[：对等体的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。指定的对等体必须已经创建。]{style="font-family:宋体"}
+*[ip-address*]：对等体的IP地址。指定的对等体必须已经创建。
 
-[*[mask-length]{lang="EN-US"}*]{#struct_0_10012_x1780_195916443}[：网络掩码，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[。如果指定本参数，则表示指定网段内的动态对等体。]{style="font-family:宋体"}
+*[mask-length*]：网络掩码，取值范围为0～32。如果指定本参数，则表示指定网段内的动态对等体。
 
-[**[non-standard]{lang="EN-US"}**]{#struct_0_10012_x1780_x224875579}[：指定采用非标准]{style="font-family:宋体"}[MP_REACH_NLRI]{lang="EN-US"}[格式交换]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息。如果不指定本参数，则采用]{style="font-family:宋体"}[RFC 6074]{lang="EN-US"}[中定义的]{style="font-family:宋体"}[MP_REACH_NLRI]{lang="EN-US"}[格式交换]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息。请根据对等体支持的]{style="font-family:宋体"}[MP_REACH_NLRI]{lang="EN-US"}[格式类型，选择是否指定本参数。]{style="font-family:宋体"}
+**[non-standard**]：指定采用非标准MP_REACH_NLRI格式交换VPLS PE信息。如果不指定本参数，则采用RFC 6074中定义的MP_REACH_NLRI格式交换VPLS PE信息。请根据对等体支持的MP_REACH_NLRI格式类型，选择是否指定本参数。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1230134264}
+【使用指导】
 
-[[BGP L2VPN]{lang="EN-US"}]{#struct_0_10012_x1780_x843072124}[对等体之间可以通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议交换]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息，以此来自动发现同一个]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[实例中的]{style="font-family:宋体"}[PE]{lang="EN-US"}[设备，无需手工指定每一台]{style="font-family:宋体"}[PE]{lang="EN-US"}[设备，从而简化网络配置和管理。]{style="font-family:宋体"}
+BGP L2VPN对等体之间可以通过BGP协议交换VPLS PE信息，以此来自动发现同一个VPLS实例中的PE设备，无需手工指定每一台PE设备，从而简化网络配置和管理。
 
-[[在]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}]{#struct_0_10012_x1780_1225860918}[地址族视图下执行]{style="font-family:宋体"}**[peer enable]{lang="EN-US"}**[命令后，本地路由器即具有与指定对等体]{style="font-family:宋体"}[/]{lang="EN-US"}[对等体组交换]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息的能力，并使用]{style="font-family:宋体"}[RFC 6074]{lang="EN-US"}[定义的]{style="font-family:宋体"}[MP_REACH_NLRI]{lang="EN-US"}[格式交换]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息。如需禁止该能力或该对等体不支持交换]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息，则执行]{style="font-family:宋体"}**[undo peer auto-discovery]{lang="EN-US"}**[命令。]{style="font-family:宋体"}
+在BGP L2VPN地址族视图下执行**peer enable**命令后，本地路由器即具有与指定对等体/对等体组交换VPLS PE信息的能力，并使用RFC 6074定义的MP_REACH_NLRI格式交换VPLS PE信息。如需禁止该能力或该对等体不支持交换VPLS PE信息，则执行**undo peer auto-discovery**命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1607170295}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x1372005090}[在]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}[地址族视图下，使能本地路由器与对等体]{style="font-family:宋体"}[3.3.3.9]{lang="EN-US"}[交换]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息的能力，并采用]{style="font-family:宋体"}[RFC 6074]{lang="EN-US"}[定义的]{style="font-family:宋体"}[MP_REACH_NLRI]{lang="EN-US"}[格式交换]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+\# 在BGP L2VPN地址族视图下，使能本地路由器与对等体3.3.3.9交换VPLS PE信息的能力，并采用RFC 6074定义的MP_REACH_NLRI格式交换VPLS PE信息。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x1080940067}
+\<Sysname\> system-view
 
-[\[Sysname\] bgp 100]{lang="EN-US"}
+Sysname bgp 100
 
-[\[Sysname-bgp\] address-family l2vpn]{lang="EN-US"}
+Sysname-bgp address-family l2vpn
 
-[\[Sysname-bgp-l2vpn\] peer 3.3.3.9 auto-discovery]{lang="EN-US"}
+Sysname-bgp-l2vpn peer 3.3.3.9 auto-discovery
 
-[[\# ]{lang="SV"}]{#struct_0_10012_x1780_x1207106398}[在]{style="font-family:宋体"}[BGP L2VPN]{lang="SV"}[地址族视图下，使能本地路由器与对等体组]{style="font-family:宋体"}[test]{lang="EN-US"}[交换]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息的能力，并采用非标准的]{style="font-family:宋体"}[MP_REACH_NLRI]{lang="EN-US"}[格式交换]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+\# 在BGP L2VPN地址族视图下，使能本地路由器与对等体组test交换VPLS PE信息的能力，并采用非标准的MP_REACH_NLRI格式交换VPLS PE信息。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_44847687}
+\<Sysname\> system-view
 
-[\[Sysname\] bgp 100]{lang="EN-US"}
+Sysname bgp 100
 
-[\[Sysname-bgp\] address-family l2vpn]{lang="EN-US"}
+Sysname-bgp address-family l2vpn
 
-[\[Sysname-bgp-l2vpn\] peer test auto-discovery non-standard]{lang="EN-US"}
+Sysname-bgp-l2vpn peer test auto-discovery non-standard
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_203145791}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display bgp l2vpn auto-discovery]{lang="EN-US"}**]{#struct_0_10012_x1780_2080811854}
-:::
-
-::: {#-1992627212 .myid}
-[]{#_Toc404791661}[]{#struct_0_10012_x1780_x1606973687}[]{#_Toc339885992}[]{#_Toc336272256}
+·**display bgp l2vpn auto-discovery**
 
 **VPLS \-- VPLS配置命令 \-- peer signaling**
 
 ------------------------------------------------------------------------
 
-[**[peer signaling]{lang="EN-US"}**]{#struct_0_10012_x1780_1877865479}[命令]{style="font-family:宋体"}[用来使能本地路由器与指定对等体]{style="font-family:宋体"}[/]{lang="EN-US"}[对等体组交换]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[标签块信息的能力。]{style="font-family:宋体"}
+**[peer signaling**]命令用来使能本地路由器与指定对等体/对等体组交换VPLS标签块信息的能力。
 
-[**[undo peer signaling]{lang="EN-US"}**]{#struct_0_10012_x1780_x1607039223}[命]{style="font-family:宋体"}[令用来禁止本地路由器与指定对等体]{style="font-family:宋体"}[/]{lang="EN-US"}[对等体组交换]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[标签块信息。]{style="font-family:宋体"}
+**[undo peer signaling**]命令用来禁止本地路由器与指定对等体/对等体组交换VPLS标签块信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1926785808}
+【命令】
 
-[**[peer]{lang="EN-US"}**[ { *group-name* \| *ip-address* \[ *mask-length* \] } **signaling**]{lang="EN-US"}]{#struct_0_10012_x1780_193170208}
+**[peer**[ { *group-name* \| *ip-address* [ *mask-length* ] } **signaling**]]
 
-[**[undo peer]{lang="EN-US"}**[ { *group-name* \| *ip-address* \[ *mask-length* \] } **signaling**]{lang="EN-US"}]{#struct_0_10012_x1780_x1583153688}
+**[undo peer**[ { *group-name* \| *ip-address* [ *mask-length* ] } **signaling**]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1607497974}
+【缺省情况】
 
-[[本地路由器具有与]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}]{#struct_0_10012_x1780_x388503720}[对等体]{style="font-family:宋体"}[/]{lang="EN-US"}[对等体组交换标签块信息的能力。]{style="font-family:宋体"}
+本地路由器具有与BGP L2VPN对等体/对等体组交换标签块信息的能力。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1520422958}
+【视图】
 
-[[BGP L2VPN]{lang="EN-US"}]{#struct_0_10012_x1780_652876942}[地址族视图]{style="font-family:宋体"}
+BGP L2VPN地址族视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1886310712}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1425085827}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x943794671}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1696645372}
+【参数】
 
-[*[group-name]{lang="EN-US"}*]{#struct_0_10012_x1780_x1607563510}[：对等体组的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[47]{lang="EN-US"}[个字符的字符串，区分大小写。指定的对等体组必须已经创建。]{style="font-family:宋体"}
+*[group-name*]：对等体组的名称，为1～47个字符的字符串，区分大小写。指定的对等体组必须已经创建。
 
-[*[ip-address]{lang="EN-US"}*]{#struct_0_10012_x1780_985248983}[：对等体的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。指定的对等体必须已经创建。]{style="font-family:宋体"}
+*[ip-address*]：对等体的IP地址。指定的对等体必须已经创建。
 
-[*[mask-length]{lang="EN-US"}*]{#struct_0_10012_x1780_1761476091}[：网络掩码，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[。如果指定本参数，则表示指定网段内的动态对等体。]{style="font-family:宋体"}
+*[mask-length*]：网络掩码，取值范围为0～32。如果指定本参数，则表示指定网段内的动态对等体。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1370518131}
+【使用指导】
 
-[[建立]{style="font-family:宋体"}[BGP PW]{lang="EN-US"}]{#struct_0_10012_x1780_1535020939}[时，]{style="font-family:宋体"}[PE]{lang="EN-US"}[设备通过]{style="font-family:宋体"}[MP-BGP]{lang="EN-US"}[协议来交换标签块信息。]{style="font-family:宋体"}
+建立BGP PW时，PE设备通过MP-BGP协议来交换标签块信息。
 
-[[在]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}]{#struct_0_10012_x1780_1731335453}[地址族视图下执行]{style="font-family:宋体"}**[peer enable]{lang="EN-US"}**[命令后，本地路由器即具有与指定对等体]{style="font-family:宋体"}[/]{lang="EN-US"}[对等体组交换标签块信息的能力。如需禁止该能力或该对等体不支持交换标签块信息，则执行]{style="font-family:宋体"}**[undo peer signaling]{lang="EN-US"}**[命令。]{style="font-family:宋体"}
+在BGP L2VPN地址族视图下执行**peer enable**命令后，本地路由器即具有与指定对等体/对等体组交换标签块信息的能力。如需禁止该能力或该对等体不支持交换标签块信息，则执行**undo peer signaling**命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x912601543}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x1607366902}[在]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}[地址族视图下，使能本地路由器与对等体]{style="font-family:宋体"}[3.3.3.9]{lang="EN-US"}[交换]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[标签块信息的能力。]{style="font-family:宋体"}
+\# 在BGP L2VPN地址族视图下，使能本地路由器与对等体3.3.3.9交换VPLS标签块信息的能力。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x1464426983}
+\<Sysname\> system-view
 
-[\[Sysname\] bgp 100]{lang="EN-US"}
+Sysname bgp 100
 
-[\[Sysname-bgp\] address-family l2vpn]{lang="EN-US"}
+Sysname-bgp address-family l2vpn
 
-[\[Sysname-bgp-l2vpn\] peer 3.3.3.9 signaling]{lang="EN-US"}
+Sysname-bgp-l2vpn peer 3.3.3.9 signaling
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_702316156}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display bgp l2vpn ]{lang="EN-US"}**]{#struct_0_10012_x1780_1362792148}**[signaling]{lang="EN-US"}**
-:::
-
-::: {#-985333979 .myid}
-[]{#_Toc404791662}[]{#struct_0_10012_x1780_x1607432438}
+·**display bgp l2vpn ****signaling**
 
 **VPLS \-- VPLS配置命令 \-- policy vpn-target**
 
 ------------------------------------------------------------------------
 
-[**[policy vpn-target]{lang="EN-US"}**]{#struct_0_10012_x1780_x232168275}[命令用来对接收到的]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}[信息使能]{style="font-family:宋体"}[VPN-Target]{lang="EN-US"}[过滤功能，即只将]{style="font-family:宋体"}[Export Route Target]{lang="EN-US"}[属性与本地]{style="font-family:宋体"}[Import Route Target]{lang="EN-US"}[属性匹配的]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}[信息加入到]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}[信息表。]{style="font-family:宋体"}
+**[policy vpn-target**]命令用来对接收到的BGP L2VPN信息使能VPN-Target过滤功能，即只将Export Route Target属性与本地Import Route Target属性匹配的BGP L2VPN信息加入到BGP L2VPN信息表。
 
-[**[undo policy vpn-target]{lang="EN-US"}**]{#struct_0_10012_x1780_1335133923}[命令用来取消对]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}[信息的]{style="font-family:宋体"}[VPN-Target]{lang="EN-US"}[过滤功能，即接收所有的]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[undo policy vpn-target**]命令用来取消对BGP L2VPN信息的VPN-Target过滤功能，即接收所有的BGP L2VPN信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_293505429}
+【命令】
 
-[**[policy vpn-target]{lang="EN-US"}**]{#struct_0_10012_x1780_130496039}
+**[policy vpn-target**]
 
-[**[undo policy vpn-target]{lang="EN-US"}**]{#struct_0_10012_x1780_1595089612}
+**[undo policy vpn-target**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x2119745734}
+【缺省情况】
 
-[[对接收到的]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}]{#struct_0_10012_x1780_x2001167898}[信息使能]{style="font-family:宋体"}[VPN-Target]{lang="EN-US"}[过滤功能。]{style="font-family:宋体"}
+对接收到的BGP L2VPN信息使能VPN-Target过滤功能。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1607235830}
+【视图】
 
-[[BGP L2VPN]{lang="EN-US"}]{#struct_0_10012_x1780_271190417}[地址族视图]{style="font-family:宋体"}
+BGP L2VPN地址族视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_888326593}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_437704775}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1574279416}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x734380314}
+【使用指导】
 
-[[在跨域]{style="font-family:宋体"}[VPN-OptionB]{lang="EN-US"}]{#struct_0_10012_x1780_x1607301366}[组网中，]{style="font-family:宋体"}[ASBR-PE]{lang="EN-US"}[需要保存所有]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}[信息（即通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议自动发现的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息和标签块信息），以通告给远端]{style="font-family:宋体"}[ASBR-PE]{lang="EN-US"}[。这种情况下，]{style="font-family:宋体"}[ASBR-PE]{lang="EN-US"}[上需执行]{style="font-family:宋体"}**[undo policy vpn-target]{lang="EN-US"}**[命令接收所有的]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}[信息，不对它们进行]{style="font-family:宋体"}[VPN-Target]{lang="EN-US"}[过滤。]{style="font-family:宋体"}
+在跨域VPN-OptionB组网中，ASBR-PE需要保存所有BGP L2VPN信息（即通过BGP协议自动发现的VPLS PE信息和标签块信息），以通告给远端ASBR-PE。这种情况下，ASBR-PE上需执行**undo policy vpn-target**命令接收所有的BGP L2VPN信息，不对它们进行VPN-Target过滤。
 
-[[跨域]{style="font-family:宋体"}[VPN-OptionB]{lang="EN-US"}]{#struct_0_10012_x1780_x1534348271}[的详细介绍，请参见"]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[配置指导"中的"]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}["。]{style="font-family:宋体"}
+跨域VPN-OptionB的详细介绍，请参见"MPLS配置指导"中的"MPLS L3VPN"。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1336534709}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x1607104758}[在]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}[地址族视图下，取消对]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}[信息的]{style="font-family:宋体"}[VPN-Target]{lang="EN-US"}[过滤功能。]{style="font-family:宋体"}
+\# 在BGP L2VPN地址族视图下，取消对BGP L2VPN信息的VPN-Target过滤功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_1906779647}
+\<Sysname\> system-view
 
-[\[Sysname\] bgp 100]{lang="EN-US"}
+Sysname bgp 100
 
-[\[Sysname-bgp\] address-family l2vpn]{lang="EN-US"}
+Sysname-bgp address-family l2vpn
 
-[\[Sysname-bgp-l2vpn\] undo policy vpn-target]{lang="EN-US"}
-:::
-
-::: {#-1410971825 .myid}
-[]{#_Toc404791663}[]{#struct_0_10012_x1780_480066816}
+Sysname-bgp-l2vpn undo policy vpn-target
 
 **VPLS \-- VPLS配置命令 \-- pw-class (system view)**
 
 ------------------------------------------------------------------------
 
-[**[pw-class]{lang="EN-US"}**]{#struct_0_10012_x1780_x1659915133}[命令用来创建]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板]{style="font-family:宋体"}[，并]{style="font-family:宋体"}[进入]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板视图。]{style="font-family:宋体"}
+**[pw-class**]命令用来创建PW模板，并进入PW模板视图。
 
-[**[undo ]{lang="EN-US"}[pw-class]{lang="EN-US"}**]{#struct_0_10012_x1780_1480909580}[命令用来删除已经创建的]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板。]{style="font-family:宋体"}
+**[undo pw-class**]命令用来删除已经创建的PW模板。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1374963222}
+【命令】
 
-[**[pw-class ]{lang="EN-US"}***[class-name]{lang="EN-US"}*]{#struct_0_10012_x1780_x1849644935}
+**[pw-class ***class-name*]
 
-[**[undo pw-class ]{lang="EN-US"}***[class-name]{lang="EN-US"}*]{#struct_0_10012_x1780_x1607170294}
+**[undo pw-class ***class-name*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_194078851}
+【缺省情况】
 
-[[设备上不存在任何]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_1126230094}[模板。]{style="font-family:宋体"}
+设备上不存在任何PW模板。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x235981799}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_10012_x1780_2010607206}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1189778047}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1593334255}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_398756867}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1606973686}
+【参数】
 
-[*[class-name]{lang="EN-US"}*]{#struct_0_10012_x1780_x851017876}[：]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[19]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[class-name*]：PW模板名，为1～19个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1972125339}
+【使用指导】
 
-[[通过本命令创建]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x498044829}[模板，并进入]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板视图后，可以在]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板视图下指定]{style="font-family:宋体"}[PW]{lang="EN-US"}[的属性，如]{style="font-family:宋体"}[PW]{lang="EN-US"}[的数据封装类型、是否使用控制字。具有相同属性的]{style="font-family:宋体"}[PW]{lang="EN-US"}[可以通过引用相同的]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板，实现对]{style="font-family:宋体"}[PW]{lang="EN-US"}[属性的配置，从而简化配置。]{style="font-family:宋体"}
+通过本命令创建PW模板，并进入PW模板视图后，可以在PW模板视图下指定PW的属性，如PW的数据封装类型、是否使用控制字。具有相同属性的PW可以通过引用相同的PW模板，实现对PW属性的配置，从而简化配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x298256465}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_663686835}[创建]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板]{style="font-family:宋体"}[pw100]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板视图。]{style="font-family:宋体"}
+\# 创建PW模板pw100，并进入PW模板视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x356606600}
+\<Sysname\> system-view
 
-[\[Sysname\] pw-class pw100]{lang="EN-US"}
+Sysname pw-class pw100
 
-[\[Sysname-pw-pw100\] ]{lang="EN-US"}
+Sysname-pw-pw100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1607039222}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[control-word enable]{lang="EN-US"}**]{#struct_0_10012_x1780_x360701867}
+·**control-word enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn pw-class]{lang="EN-US"}**]{#struct_0_10012_x1780_x544958976}
+·**display l2vpn pw-class**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pw-type]{lang="EN-US"}**]{#struct_0_10012_x1780_98416263}
-:::
-
-::: {#1984398029 .myid}
-[]{#_Toc339310154}[]{#_Toc404791664}[]{#struct_0_10012_x1780_x1863222947}
+·**pw-type**
 
 **VPLS \-- VPLS配置命令 \-- pw-class (VSI auto-discovery view)**
 
 ------------------------------------------------------------------------
 
-[**[pw-class]{lang="EN-US"}**]{#struct_0_10012_x1780_x1252193043}[命令用来指定引用的]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板。]{style="font-family:宋体"}
+**[pw-class**]命令用来指定引用的PW模板。
 
-[**[undo]{lang="EN-US"}**[ **pw-class**]{lang="EN-US"}]{#struct_0_10012_x1780_665547024}[命令用来取消引用]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板。]{style="font-family:宋体"}
+**[undo** **pw-class**]命令用来取消引用PW模板。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1479542435}
+【命令】
 
-[**[pw-class ]{lang="EN-US"}***[class-name]{lang="EN-US"}*]{#struct_0_10012_x1780_x1607497977}
+**[pw-class ***class-name*]
 
-[**[undo pw-class]{lang="EN-US"}**]{#struct_0_10012_x1780_x791788247}
+**[undo pw-class**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x792886925}
+【缺省情况】
 
-[[不引用任何]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_636751840}[模板。]{style="font-family:宋体"}
+不引用任何PW模板。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1283813206}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x86796473}[自动发现视图]{style="font-family:宋体"}
+VSI自动发现视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x479529964}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x2087524113}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1607563513}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x580834958}
+【参数】
 
-[*[class-name]{lang="EN-US"}*]{#struct_0_10012_x1780_351934422}[：]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[19]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[class-name*]：PW模板名，为1～19个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_867159727}
+【使用指导】
 
-[[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1390908752}[自动发现视图下执行本命令指定引用的]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板后，该]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板将应用于该视图下建立的所有]{style="font-family:宋体"}[PW]{lang="EN-US"}[。]{style="font-family:宋体"}
+在VSI自动发现视图下执行本命令指定引用的PW模板后，该PW模板将应用于该视图下建立的所有PW。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x499207501}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_543201822}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[自动发现视图下，指定引用的]{style="font-family:宋体"}[PW]{lang="EN-US"}[模板为]{style="font-family:宋体"}[pw100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在VSI自动发现视图下，指定引用的PW模板为pw100。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x1607366905}
+\<Sysname\> system-view
 
-[\[Sysname\] pw-class pw100]{lang="EN-US"}
+Sysname pw-class pw100
 
-[\[Sysname-pw-pw100\] quit]{lang="EN-US"}
+Sysname-pw-pw100 quit
 
-[\[Sysname\] vsi aaa]{lang="EN-US"}
+Sysname vsi aaa
 
-[\[Sysname-vsi-aaa\] auto-discovery bgp]{lang="EN-US"}
+Sysname-vsi-aaa auto-discovery bgp
 
-[\[Sysname-vsi-aaa-auto\] pw-class pw100]{lang="EN-US"}
+Sysname-vsi-aaa-auto pw-class pw100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1264456372}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[control-word enable]{lang="EN-US"}**]{#struct_0_10012_x1780_139333351}
+·**control-word enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn pw-class]{lang="EN-US"}**]{#struct_0_10012_x1780_x1463289088}
+·**display l2vpn pw-class**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pw-type]{lang="EN-US"}**]{#struct_0_10012_x1780_1782501129}
-:::
-
-::: {#1550157549 .myid}
-[]{#_Toc404791665}[]{#struct_0_10012_x1780_x1883247765}
+·**pw-type**
 
 **VPLS \-- VPLS配置命令 \-- pw-type**
 
 ------------------------------------------------------------------------
 
-[**[pw-type]{lang="EN-US"}**]{#struct_0_10012_x1780_x433191106}[命令用来配置]{style="font-family:宋体"}[PW]{lang="EN-US"}[数据封装类型。]{style="font-family:宋体"}
+**[pw-type**]命令用来配置PW数据封装类型。
 
-[**[undo pw-type]{lang="EN-US"}**]{#struct_0_10012_x1780_450981237}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo pw-type**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1607432441}
+【命令】
 
-[**[pw-type]{lang="EN-US"}**[ { **ethernet** \| **vlan** }]{lang="EN-US"}]{#struct_0_10012_x1780_x1442218464}
+**[pw-type**[ { **ethernet** \| **vlan** }]]
 
-[**[undo pw-type]{lang="EN-US"}**]{#struct_0_10012_x1780_473676928}
+**[undo pw-type**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1364905807}
+【缺省情况】
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x1785958002}[数据封装类型为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+PW数据封装类型为VLAN。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_985737388}
+【视图】
 
-[[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x93330061}[模板视图]{style="font-family:宋体"}
+PW模板视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x2095848909}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1607235833}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1837274358}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1802322676}
+【参数】
 
-[**[ethernet]{lang="EN-US"}**]{#struct_0_10012_x1780_x1331283242}[：]{style="font-family:宋体"}[PW]{lang="EN-US"}[数据封装类型为]{style="font-family:宋体"}[Ethernet]{lang="EN-US"}[。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[ethernet**]：PW数据封装类型为Ethernet。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[vlan]{lang="EN-US"}**]{#struct_0_10012_x1780_x258434931}[：]{style="font-family:宋体"}[PW]{lang="EN-US"}[数据封装类型为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[vlan**]：PW数据封装类型为VLAN。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1297670114}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Ethernet]{lang="EN-US"}]{#struct_0_10012_x1780_x1341916730}[数据封装类型下，]{style="font-family:
-宋体"}[PW]{lang="EN-US"}[上传输的帧不能带服务提供商网络为了区分用户而要求用户压入的]{style="font-family:宋体"}[P-Tag]{lang="EN-US"}[，该]{style="font-family:宋体"}[Tag]{lang="EN-US"}[又称为服务定界符。对于]{style="font-family:宋体"}[CE]{lang="EN-US"}[侧的报文，如果]{style="font-family:宋体"}[PE]{lang="EN-US"}[从]{style="font-family:宋体"}[CE]{lang="EN-US"}[收到带有]{style="font-family:宋体"}[P-Tag]{lang="EN-US"}[的报文，则将其去除后再压入]{style="font-family:宋体"}[PW]{lang="EN-US"}[标签和公网隧道封装转发；如果从]{style="font-family:宋体"}[CE]{lang="EN-US"}[收到不带]{style="font-family:宋体"}[P-Tag]{lang="EN-US"}[的报文，则直接压入]{style="font-family:宋体"}[PW]{lang="EN-US"}[标签和公网隧道封装后转发。对于]{style="font-family:宋体"}[PE]{lang="EN-US"}[发送给]{style="font-family:宋体"}[CE]{lang="EN-US"}[的报文，如果]{style="font-family:宋体"}**[xconnect vsi]{lang="EN-US"}**[命令配置的接入模式为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，则添加]{style="font-family:宋体"}[P-Tag]{lang="EN-US"}[后转发给]{style="font-family:宋体"}[CE]{lang="EN-US"}[；如果配置的接入模式为]{style="font-family:宋体"}[Ethernet]{lang="EN-US"}[，则不添加]{style="font-family:宋体"}[P-Tag]{lang="EN-US"}[，直接转发给]{style="font-family:宋体"}[CE]{lang="EN-US"}[；不允许重写或去除已经存在的任何]{style="font-family:宋体"}[Tag]{lang="EN-US"}[。]{style="font-family:宋体"}
+·Ethernet数据封装类型下，PW上传输的帧不能带服务提供商网络为了区分用户而要求用户压入的P-Tag，该Tag又称为服务定界符。对于CE侧的报文，如果PE从CE收到带有P-Tag的报文，则将其去除后再压入PW标签和公网隧道封装转发；如果从CE收到不带P-Tag的报文，则直接压入PW标签和公网隧道封装后转发。对于PE发送给CE的报文，如果**xconnect vsi**命令配置的接入模式为VLAN，则添加P-Tag后转发给CE；如果配置的接入模式为Ethernet，则不添加P-Tag，直接转发给CE；不允许重写或去除已经存在的任何Tag。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VLAN]{lang="EN-US"}]{#struct_0_10012_x1780_x2128423903}[数据封装类型下，]{style="font-family:宋体"}[PW]{lang="EN-US"}[上传输的帧必须带]{style="font-family:宋体"}[P-Tag]{lang="EN-US"}[。对于]{style="font-family:宋体"}[CE]{lang="EN-US"}[侧的报文，]{style="font-family:宋体"}[PE]{lang="EN-US"}[从]{style="font-family:宋体"}[CE]{lang="EN-US"}[收到带有]{style="font-family:宋体"}[P-Tag]{lang="EN-US"}[的报文后，如果远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[不要求]{style="font-family:宋体"}[Ingress]{lang="EN-US"}[改写]{style="font-family:宋体"}[P-Tag]{lang="EN-US"}[，则保留]{style="font-family:宋体"}[P-Tag]{lang="EN-US"}[，如果远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[要求]{style="font-family:宋体"}[Ingress]{lang="EN-US"}[改写]{style="font-family:宋体"}[P-Tag]{lang="EN-US"}[，则将]{style="font-family:宋体"}[P-Tag]{lang="EN-US"}[改写为远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[期望的]{style="font-family:宋体"}[VLAN Tag]{lang="EN-US"}[（]{style="font-family:宋体"}[Tag]{lang="EN-US"}[可能是值为]{style="font-family:宋体"}[0]{lang="EN-US"}[的空]{style="font-family:宋体"}[Tag]{lang="EN-US"}[），再压入]{style="font-family:宋体"}[PW]{lang="EN-US"}[标签和公网隧道封装后转发；从]{style="font-family:宋体"}[CE]{lang="EN-US"}[收到不带]{style="font-family:宋体"}[P-Tag]{lang="EN-US"}[的报文后，如果远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[不要求]{style="font-family:宋体"}[Ingress]{lang="EN-US"}[改写]{style="font-family:宋体"}[P-Tag]{lang="EN-US"}[，则添加值为]{style="font-family:宋体"}[0]{lang="EN-US"}[的空]{style="font-family:宋体"}[P-Tag]{lang="EN-US"}[，如果远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[要求]{style="font-family:宋体"}[Ingress]{lang="EN-US"}[改写]{style="font-family:宋体"}[P-Tag]{lang="EN-US"}[，则添加一个远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[期望的]{style="font-family:宋体"}[VLAN Tag]{lang="EN-US"}[（]{style="font-family:宋体"}[Tag]{lang="EN-US"}[可能是值为]{style="font-family:宋体"}[0]{lang="EN-US"}[的空]{style="font-family:宋体"}[Tag]{lang="EN-US"}[）后，再压入]{style="font-family:宋体"}[PW]{lang="EN-US"}[标签和公网隧道封装后转发。对于]{style="font-family:宋体"}[PE]{lang="EN-US"}[发送给]{style="font-family:宋体"}[CE]{lang="EN-US"}[的报文，如果]{style="font-family:宋体"}**[xconnect vsi]{lang="EN-US"}**[命令配置的接入模式为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，转发给]{style="font-family:宋体"}[CE]{lang="EN-US"}[时重写或保留]{style="font-family:宋体"}[P-Tag]{lang="EN-US"}[；如果配置的接入模式为]{style="font-family:宋体"}[Ethernet]{lang="EN-US"}[，则去除]{style="font-family:宋体"}[P-Tag]{lang="EN-US"}[后转发给]{style="font-family:宋体"}[CE]{lang="EN-US"}[。]{style="font-family:宋体"}
+·VLAN数据封装类型下，PW上传输的帧必须带P-Tag。对于CE侧的报文，PE从CE收到带有P-Tag的报文后，如果远端PE不要求Ingress改写P-Tag，则保留P-Tag，如果远端PE要求Ingress改写P-Tag，则将P-Tag改写为远端PE期望的VLAN Tag（Tag可能是值为0的空Tag），再压入PW标签和公网隧道封装后转发；从CE收到不带P-Tag的报文后，如果远端PE不要求Ingress改写P-Tag，则添加值为0的空P-Tag，如果远端PE要求Ingress改写P-Tag，则添加一个远端PE期望的VLAN Tag（Tag可能是值为0的空Tag）后，再压入PW标签和公网隧道封装后转发。对于PE发送给CE的报文，如果**xconnect vsi**命令配置的接入模式为VLAN，转发给CE时重写或保留P-Tag；如果配置的接入模式为Ethernet，则去除P-Tag后转发给CE。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1607301369}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x1487294104}[配置]{style="font-family:宋体"}[PW]{lang="EN-US"}[数据封装类型为]{style="font-family:宋体"}[Ethernet]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置PW数据封装类型为Ethernet。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_187656642}
+\<Sysname\> system-view
 
-[\[Sysname\] pw-class pw100]{lang="EN-US"}
+Sysname pw-class pw100
 
-[\[Sysname-pw-pw100\] pw-type ethernet]{lang="EN-US"}
+Sysname-pw-pw100 pw-type ethernet
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1158606852}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn pw-class]{lang="EN-US"}**]{#struct_0_10012_x1780_x573675224}
-:::
-
-::: {#1513393433 .myid}
-[]{#_Toc404791666}[]{#struct_0_10012_x1780_x310681457}
+·**display l2vpn pw-class**
 
 **VPLS \-- VPLS配置命令 \-- pwsignaling**
 
 ------------------------------------------------------------------------
 
-[**[pwsignaling]{lang="EN-US"}**]{#struct_0_10012_x1780_1190551111}[命令用来指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[使用的]{style="font-family:宋体"}[PW]{lang="EN-US"}[信令协议，并进入对应的信令视图。]{style="font-family:宋体"}
+**[pwsignaling**]命令用来指定VSI使用的PW信令协议，并进入对应的信令视图。
 
-[**[undo ]{lang="EN-US"}[pwsignaling]{lang="EN-US"}**]{#struct_0_10012_x1780_x1597316240}[命令用来取消]{style="font-family:宋体"}[VSI]{lang="EN-US"}[使用指定的]{style="font-family:宋体"}[PW]{lang="EN-US"}[信令协议。]{style="font-family:宋体"}
+**[undo pwsignaling**]命令用来取消VSI使用指定的PW信令协议。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1607104761}
+【命令】
 
-[**[pwsignaling]{lang="EN-US"}**[ { **ldp** \| **static** }]{lang="EN-US"}]{#struct_0_10012_x1780_x465676740}
+**[pwsignaling**[ { **ldp** \| **static** }]]
 
-[**[undo pwsignaling ]{lang="EN-US"}**[{ **ldp** \| **static** }]{lang="EN-US"}]{#struct_0_10012_x1780_1940708652}
+**[undo pwsignaling **[{ **ldp** \| **static** }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1615337390}
+【缺省情况】
 
-[[未指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_366479686}[使用的]{style="font-family:宋体"}[PW]{lang="EN-US"}[信令协议。]{style="font-family:宋体"}
+未指定VSI使用的PW信令协议。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_655689492}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x1036962267}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1991868788}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1607170297}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1760162792}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_304626905}
+【参数】
 
-[**[ldp]{lang="EN-US"}**]{#struct_0_10012_x1780_x1532734336}[：指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[使用]{style="font-family:宋体"}[LDP]{lang="EN-US"}[信令的]{style="font-family:宋体"}[FEC 128]{lang="EN-US"}[方式建立]{style="font-family:宋体"}[PW]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[VSI LDP]{lang="EN-US"}[信令视图。]{style="font-family:宋体"}
+**[ldp**]：指定VSI使用LDP信令的FEC 128方式建立PW，并进入VSI LDP信令视图。
 
-[**[static]{lang="EN-US"}**]{#struct_0_10012_x1780_2129205026}[：指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[采用静态配置方式建立]{style="font-family:宋体"}[PW]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}[静态配置视图。]{style="font-family:宋体"}
+**[static**]：指定VSI采用静态配置方式建立PW，并进入VSI静态配置视图。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1551288650}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_432917039}[指定名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[使用]{style="font-family:宋体"}[LDP]{lang="EN-US"}[信令的]{style="font-family:宋体"}[FEC 128]{lang="EN-US"}[方式建立]{style="font-family:宋体"}[PW]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[VSI LDP]{lang="EN-US"}[信令视图。]{style="font-family:宋体"}
+\# 指定名为vpn1的VSI使用LDP信令的FEC 128方式建立PW，并进入VSI LDP信令视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x1606973689}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname vsi vpn1
 
-[\[Sysname-vsi-vpn1\] pwsignaling ldp]{lang="EN-US"}
+Sysname-vsi-vpn1 pwsignaling ldp
 
-[\[Sysname-vsi-vpn1-ldp\] ]{lang="EN-US"}
+Sysname-vsi-vpn1-ldp
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1071296425}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn pw]{lang="EN-US"}**]{#struct_0_10012_x1780_x895225623}
-:::
-
-::::: {#816869194 .myid}
-[]{#_Toc404791667}[]{#struct_0_10012_x1780_x1607235832}
+·**display l2vpn pw**
 
 **VPLS \-- VPLS配置命令 \-- reset l2vpn mac-address**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![](VPLS命令.files/image004.png){width="62" height="26"}]{lang="EN-US"}]{#struct_0_10012_x1780_x891608997}
-:::
+!(VPLS命令.files/image004.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_10012_x1780_368017814}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[reset l2vpn mac-address]{lang="EN-US"}**]{#struct_0_10012_x1780_x719992332}[命令用来清除]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}
+**[reset l2vpn mac-address**]命令用来清除VSI的MAC地址表项。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x802362932}
+【命令】
 
-[**[reset ]{lang="EN-US"}[l2vpn mac-address ]{lang="EN-US"}**[\[ **vsi**]{lang="EN-US"}*[ vsi-name ]{lang="EN-US"}*[\]]{lang="EN-US"}]{#struct_0_10012_x1780_x146470962}
+**[reset l2vpn mac-address ** **vsi**]* vsi-name *
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_281940308}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_10012_x1780_x449143985}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1607301368}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1241589251}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1313710941}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x673095754}
+【参数】
 
-[**[vsi]{lang="EN-US"}***[ vsi-name]{lang="EN-US"}*]{#struct_0_10012_x1780_x1841995928}[：清除指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则清除所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}
+**[vsi*** vsi-name*]：清除指定VSI的MAC地址表项。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，则清除所有VSI的MAC地址表项。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_578904812}
+【使用指导】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_849527191}[学习到错误的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项，或学习的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项数目达到最大值时，可以执行本命令，以便重新学习]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}
+VSI学习到错误的MAC地址表项，或学习的MAC地址表项数目达到最大值时，可以执行本命令，以便重新学习MAC地址表项。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_2048261598}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x1607104760}[清除名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}
+\# 清除名为vpn1的VSI的MAC地址表项。
 
-[[\<Sysname\> reset l2vpn mac-address vsi vpn1]{lang="EN-US"}]{#struct_0_10012_x1780_x2031760681}
+\<Sysname\> reset l2vpn mac-address vsi vpn1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1312176485}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn mac-address vsi ]{lang="EN-US"}**]{#struct_0_10012_x1780_1070067252}
-:::::
-
-::::: {#1457959242 .myid}
-[]{#_Toc404791668}[]{#struct_0_10012_x1780_x1920658660}[]{#_Toc389645819}[]{#_Toc378236174}
+·**display l2vpn mac-address vsi **
 
 **VPLS \-- VPLS配置命令 \-- reset l2vpn statistics pw**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VPLS命令.files/image002.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_10012_x1780_x1019444543}
-:::
+![说明](VPLS命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_10012_x1780_x1882639492}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[reset l2vpn statistics pw**]命令用来清除指定PW的报文统计信息。
 
-[**[reset l2vpn statistics pw]{lang="EN-US"}**]{#struct_0_10012_x1780_x1469655280}[命令用来清除指定]{style="font-family:
-宋体"}[PW]{lang="EN-US"}[的报文统计信息。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x61194292}
+**[reset l2vpn statistics pw ** **vsi** ]*vsi-name***** **link** *link-id *
 
-[**[reset l2vpn statistics pw ]{lang="EN-US"}**[\[ **vsi** ]{lang="EN-US"}]{#struct_0_10012_x1780_383969741}*[vsi-name]{lang="FR"}***[ ]{lang="FR"}**[\[ **link** ]{lang="EN-US"}*[link-id ]{lang="FR"}*[\] \]]{lang="EN-US"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1476677879}
+用户视图
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1920724196}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x2038486075}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x2130143256}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1114484590}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x2094016748}
+**[vsi **]*vsi-name*：清除指定VSI实例内的PW报文统计信息。*vsi-name*表示VSI实例的名称，为1～31个字符的字符串，区分大小写。如果不指定该参数，则清除所有PW的统计信息。
 
-[**[vsi ]{lang="EN-US"}**]{#struct_0_10012_x1780_2123723307}*[vsi-name]{lang="FR"}*[：]{style="font-family:宋体"}[清除指定]{style="font-family:宋体"}[VSI]{lang="FR"}[实例内的]{style="font-family:宋体"}[PW]{lang="FR"}[报文统计信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[实例的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定该参数，则清除所有]{style="font-family:宋体"}[PW]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+**[link **]*link-id*：清除指定PW的统计信息。*link-id*为VSI实例内标识PW的链路ID，取值范围为0～65534。如果不指定该参数，则清除指定VSI实例内的所有PW统计信息。
 
-[**[link ]{lang="FR"}**]{#struct_0_10012_x1780_x1920789732}*[link-id]{lang="FR"}*[：]{style="font-family:
-宋体"}[清除指定]{style="font-family:宋体"}[PW]{lang="FR"}[的统计信息。]{style="font-family:宋体"}*[link-id]{lang="FR"}*[为]{style="font-family:宋体"}[VSI]{lang="FR"}[实例内标识]{style="font-family:
-宋体"}[PW]{lang="FR"}[的链路]{style="font-family:宋体"}[ID]{lang="FR"}[，]{style="font-family:宋体"}[取值范围为]{style="font-family:
-宋体"}[0]{lang="FR"}[～]{style="font-family:宋体"}[65534]{lang="FR"}[。如果不指定该参数，则清除指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[实例内的所有]{style="font-family:宋体"}[PW]{lang="EN-US"}[统计信息。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x790496287}
+当PW存在备PW时，会同时清除主PW和备PW的报文统计信息。
 
-[[当]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x828764318}[存在备]{style="font-family:宋体"}[PW]{lang="EN-US"}[时，会同时清除主]{style="font-family:宋体"}[PW]{lang="EN-US"}[和备]{style="font-family:宋体"}[PW]{lang="EN-US"}[的报文统计信息。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_688402192}
+\# 清除本设备上所有PW报文统计信息。
 
-[[\# ]{lang="FR"}]{#struct_0_10012_x1780_x2013147510}[清除本设备上所有]{style="font-family:宋体"}[PW]{lang="EN-US"}[报文统计信息。]{style="font-family:宋体"}
+\<Sysname\> reset l2vpn statistics pw
 
-[[\<Sysname\> reset l2vpn statistics pw]{lang="FR"}]{#struct_0_10012_x1780_x376455645}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1108566100}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[statistics enable]{lang="NO-BOK"}**]{#struct_0_10012_x1780_x1920855268}
-:::::
-
-::::: {#-1195135256 .myid}
-[]{#_Toc288911613}[]{#_Toc265738467}[]{#_Toc404791669}[]{#struct_0_10012_x1780_275872785}
+·**statistics enable**
 
 **VPLS \-- VPLS配置命令 \-- restrain**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![](VPLS命令.files/image001.png){width="62" height="26"}]{lang="EN-US"}]{#struct_0_10012_x1780_556853304}
-:::
+!(VPLS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_10012_x1780_x890527487}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[restrain]{lang="EN-US"}**]{#struct_0_10012_x1780_1473419945}[命令用来配置]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的广播、组播或未知单播抑制百分比。]{style="font-family:宋体"}
+**[restrain**]命令用来配置VSI的广播、组播或未知单播抑制百分比。
 
-[**[undo restrain]{lang="EN-US"}**]{#struct_0_10012_x1780_x1607170296}[命令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo restrain**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x968720563}
+【命令】
 
-[**[restrain]{lang="EN-US"}**[ { **broadcast** \| **multicast** \| **unknown-unicast** } *ratio*]{lang="EN-US"}]{#struct_0_10012_x1780_1873158501}
+**[restrain**[ { **broadcast** \| **multicast** \| **unknown-unicast** } *ratio*]]
 
-[**[undo restrain ]{lang="EN-US"}**[{ **broadcast** \| **multicast** \| **unknown-unicast** }]{lang="EN-US"}]{#struct_0_10012_x1780_x473657328}
+**[undo restrain **[{ **broadcast** \| **multicast** \| **unknown-unicast** }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1277539898}
+【缺省情况】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x712655896}[的广播抑制百分比为]{style="font-family:宋体"}[5%]{lang="EN-US"}[，组播抑制百分比为]{style="font-family:宋体"}[100%]{lang="EN-US"}[，未知单播抑制百分比为]{style="font-family:宋体"}[100%]{lang="EN-US"}[。]{style="font-family:宋体"}
+VSI的广播抑制百分比为5%，组播抑制百分比为100%，未知单播抑制百分比为100%。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1557647176}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x2025628213}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1606973688}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1657586930}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1074593700}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1582672127}
+【参数】
 
-[**[broadcast]{lang="EN-US"}**]{#struct_0_10012_x1780_x1331130889}[：配置]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的广播抑制百分比。]{style="font-family:宋体"}
+**[broadcast**]：配置VSI的广播抑制百分比。
 
-[**[multicast]{lang="EN-US"}**]{#struct_0_10012_x1780_x1060779359}[：配置]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的组播抑制百分比。]{style="font-family:宋体"}
+**[multicast**]：配置VSI的组播抑制百分比。
 
-[**[unknown-unicast]{lang="EN-US"}**]{#struct_0_10012_x1780_x939182199}[：配置]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的未知单播抑制百分比。未知单播报文是指在]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表中不存在目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址对应表项的单播报文。]{style="font-family:宋体"}
+**[unknown-unicast**]：配置VSI的未知单播抑制百分比。未知单播报文是指在MAC地址表中不存在目的MAC地址对应表项的单播报文。
 
-[*[ratio]{lang="EN-US"}*]{#struct_0_10012_x1780_1788267327}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的广播、组播或未知单播的抑制百分比值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[100]{lang="EN-US"}[，单位为百分比。]{style="font-family:宋体"}
+*[ratio*]：VSI的广播、组播或未知单播的抑制百分比值，取值范围为1～100，单位为百分比。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1607039224}
+【使用指导】
 
-[[本命令与]{style="font-family:宋体"}**[bandwidth]{lang="EN-US"}**]{#struct_0_10012_x1780_x1523501281}[命令配合使用可以抑制]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的广播、组播和未知单播流量。当广播、组播或未知单播流量超过最大带宽值×对应的抑制百分比时，将丢弃超过该值的广播、组播或未知单播流量。]{style="font-family:宋体"}
+本命令与**bandwidth**命令配合使用可以抑制VSI的广播、组播和未知单播流量。当广播、组播或未知单播流量超过最大带宽值×对应的抑制百分比时，将丢弃超过该值的广播、组播或未知单播流量。
 
-[[抑制的是所有]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_1073821910}[入方向、出方向流量，还是同时抑制入方向和出方向流量，与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+抑制的是所有PW入方向、出方向流量，还是同时抑制入方向和出方向流量，与设备的型号有关，请以设备的实际情况为准。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1607497979}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_727241527}[配置名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的广播抑制百分比为]{style="font-family:宋体"}[10%]{lang="EN-US"}[，组播抑制百分比为]{style="font-family:宋体"}[50%]{lang="EN-US"}[，未知单播抑制百分比为]{style="font-family:宋体"}[50%]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置名为vpn1的VSI的广播抑制百分比为10%，组播抑制百分比为50%，未知单播抑制百分比为50%。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_14645351}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname vsi vpn1
 
-[\[Sysname-vsi-vpn1\] restrain broadcast 10]{lang="EN-US"}
+Sysname-vsi-vpn1 restrain broadcast 10
 
-[\[Sysname-vsi-vpn1\] restrain multicast 50]{lang="EN-US"}
+Sysname-vsi-vpn1 restrain multicast 50
 
-[\[Sysname-vsi-vpn1\] restrain unknown-unicast 50]{lang="EN-US"}
+Sysname-vsi-vpn1 restrain unknown-unicast 50
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1830128403}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[bandwidth]{lang="EN-US"}**]{#struct_0_10012_x1780_558938580}
+·**bandwidth**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn vsi]{lang="EN-US"}**]{#struct_0_10012_x1780_1672392087}
-:::::
-
-::: {#1047826473 .myid}
-[]{#_Toc404791670}[]{#struct_0_10012_x1780_896343639}[]{#_Toc288911631}[]{#_Toc264644583}
+·**display l2vpn vsi**
 
 **VPLS \-- VPLS配置命令 \-- revertive**
 
 ------------------------------------------------------------------------
 
-[**[revertive]{lang="EN-US"}**]{#struct_0_10012_x1780_x1607563515}[命令用来配置]{style="font-family:宋体"}[PW]{lang="EN-US"}[冗余保护倒换的回切模式，即主]{style="font-family:宋体"}[PW]{lang="EN-US"}[恢复后流量是否从备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[回切到主]{style="font-family:宋体"}[PW]{lang="EN-US"}[，以及回切模式下的回切等待时间，即主]{style="font-family:宋体"}[PW]{lang="EN-US"}[恢复后，流量从备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[回切到主]{style="font-family:宋体"}[PW]{lang="EN-US"}[的等待时间。]{style="font-family:宋体"}
+**[revertive**]命令用来配置PW冗余保护倒换的回切模式，即主PW恢复后流量是否从备份PW回切到主PW，以及回切模式下的回切等待时间，即主PW恢复后，流量从备份PW回切到主PW的等待时间。
 
-[**[undo revertive wtr]{lang="EN-US"}**]{#struct_0_10012_x1780_581964456}[命令用来恢复回切等待时间的缺省情况，即回切等待时间为]{style="font-family:宋体"}[0]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo revertive wtr**]命令用来恢复回切等待时间的缺省情况，即回切等待时间为0。
 
-[**[undo revertive never]{lang="EN-US"}**]{#struct_0_10012_x1780_x1638807723}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo revertive never**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1960153755}
+【命令】
 
-[**[revertive ]{lang="EN-US"}**[{ **wtr** *wtr-time* \| **never** }]{lang="EN-US"}]{#struct_0_10012_x1780_1487552098}
+**[revertive **[{ **wtr** *wtr-time* \| **never** }]]
 
-[**[undo revertive ]{lang="EN-US"}**[{ **wtr** \| **never** }]{lang="EN-US"}]{#struct_0_10012_x1780_x2141024862}
+**[undo revertive **[{ **wtr** \| **never** }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1170702307}
+【缺省情况】
 
-[[开启回切功能，即主]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_x1473896996}[恢复后，流量会从备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[回切到主]{style="font-family:宋体"}[PW]{lang="EN-US"}[；回切等待时间为]{style="font-family:宋体"}[0]{lang="EN-US"}[，即主]{style="font-family:宋体"}[PW]{lang="EN-US"}[恢复后，流量会立即从备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[回切到主]{style="font-family:宋体"}[PW]{lang="EN-US"}[。]{style="font-family:宋体"}
+开启回切功能，即主PW恢复后，流量会从备份PW回切到主PW；回切等待时间为0，即主PW恢复后，流量会立即从备份PW回切到主PW。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1607366907}
+【视图】
 
-[[VSI LDP]{lang="EN-US"}]{#struct_0_10012_x1780_x1867711510}[信令视图]{style="font-family:宋体"}[/VSI]{lang="EN-US"}[静态配置视图]{style="font-family:宋体"}
+VSI LDP信令视图/VSI静态配置视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1677561039}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x947698968}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_328644202}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1494779452}
+【参数】
 
-[**[wtr ]{lang="EN-US"}***[wtr-time]{lang="EN-US"}*]{#struct_0_10012_x1780_1244544734}[：开启回切功能，并指定回切等待时间（]{style="font-family:宋体"}[wait-to-restore time]{lang="EN-US"}[），即主]{style="font-family:宋体"}[PW]{lang="EN-US"}[恢复后，等待]{style="font-family:宋体"}*[wtr-time]{lang="EN-US"}*[时间后，才将流量从备份]{style="font-family:宋体"}[PW]{lang="EN-US"}[回切到主]{style="font-family:宋体"}[PW]{lang="EN-US"}[。]{style="font-family:宋体"}*[wtr-time]{lang="EN-US"}*[取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+**[wtr ***wtr-time*]：开启回切功能，并指定回切等待时间（wait-to-restore time），即主PW恢复后，等待*wtr-time*时间后，才将流量从备份PW回切到主PW。*wtr-time*取值范围为0～3600，单位为秒。
 
-[**[never]{lang="EN-US"}**]{#struct_0_10012_x1780_x330796858}[：]{style="font-family:宋体"}[指定不回切。]{style="font-family:宋体"}
+**[never**]：指定不回切。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1607432443}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_1689949418}[为名称为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[、采用静态配置方式建立的]{style="font-family:宋体"}[PW]{lang="EN-US"}[开启回切功能，并指定回切等待时间为]{style="font-family:宋体"}[120]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 为名称为vpn1、采用静态配置方式建立的PW开启回切功能，并指定回切等待时间为120秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_1087129100}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname vsi vpn1
 
-[\[Sysname-vsi-vpn1\] pwsignaling static]{lang="EN-US"}
+Sysname-vsi-vpn1 pwsignaling static
 
-[\[Sysname-vsi-vpn1-static\] revertive wtr 120]{lang="EN-US"}
+Sysname-vsi-vpn1-static revertive wtr 120
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x669169898}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn pw]{lang="EN-US"}**]{#struct_0_10012_x1780_x15732614}
-:::
-
-::: {#263693428 .myid}
-[]{#_Toc404791671}[]{#struct_0_10012_x1780_40515210}[]{#_Toc339310160}
+·**display l2vpn pw**
 
 **VPLS \-- VPLS配置命令 \-- route-distinguisher**
 
 ------------------------------------------------------------------------
 
-[**[route-distinguisher]{lang="EN-US"}**]{#struct_0_10012_x1780_2141364249}[命令用来为当前]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[BGP]{lang="EN-US"}[方式配置]{style="font-family:宋体"}[RD]{lang="EN-US"}[（]{style="font-family:宋体"}[Route Distinguisher]{lang="EN-US"}[，路由标识符）。]{style="font-family:宋体"}
+**[route-distinguisher**]命令用来为当前VSI的BGP方式配置RD（Route Distinguisher，路由标识符）。
 
-[**[undo route-distinguisher]{lang="EN-US"}**]{#struct_0_10012_x1780_x1607235835}[命令用来删除已配置的]{style="font-family:
-宋体"}[RD]{lang="EN-US"}[值。]{style="font-family:宋体"}
+**[undo route-distinguisher**]命令用来删除已配置的RD值。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_674474944}
+【命令】
 
-[**[route-distinguisher]{lang="EN-US"}**[ *route-distinguisher*]{lang="EN-US"}]{#struct_0_10012_x1780_x1669513544}
+**[route-distinguisher** *route-distinguisher*]
 
-[**[undo route-distinguisher]{lang="EN-US"}**]{#struct_0_10012_x1780_874093569}
+**[undo route-distinguisher**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1793523885}
+【缺省情况】
 
-[[没有为]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x1698497984}[的]{style="font-family:宋体"}[BGP]{lang="EN-US"}[方式指定]{style="font-family:宋体"}[RD]{lang="EN-US"}[。]{style="font-family:宋体"}
+没有为VSI的BGP方式指定RD。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1550719049}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x460773671}[自动发现视图]{style="font-family:宋体"}
+VSI自动发现视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1607301371}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1131129280}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1529779891}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1188449528}
+【参数】
 
-[*[route-distinguisher]{lang="EN-US"}*]{#struct_0_10012_x1780_x1451014477}[：路由标识符，为]{style="font-family:宋体"}[3]{lang="EN-US"}[～]{style="font-family:宋体"}[21]{lang="EN-US"}[个字符的字符串。路由标识符有三种格式：]{style="font-family:宋体"}
+*[route-distinguisher*]：路由标识符，为3～21个字符的字符串。路由标识符有三种格式：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[16]{lang="EN-US"}]{#struct_0_10012_x1780_2097599337}[位自治系统号]{style="font-family:宋体"}[:32]{lang="EN-US"}[位用户自定义数，例如：]{style="font-family:宋体"}[101:3]{lang="EN-US"}[。]{style="font-family:宋体"}
+·16位自治系统号:32位用户自定义数，例如：101:3。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[32]{lang="EN-US"}]{#struct_0_10012_x1780_x925420839}[位]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[:16]{lang="EN-US"}[位用户自定义数，例如：]{style="font-family:宋体"}[192.168.122.15:1]{lang="EN-US"}[。]{style="font-family:宋体"}
+·32位IP地址:16位用户自定义数，例如：192.168.122.15:1。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[32]{lang="EN-US"}]{#struct_0_10012_x1780_x746978983}[位自治系统号]{style="font-family:宋体"}[:16]{lang="EN-US"}[位用户自定义数字，其中的自治系统号最小值为]{style="font-family:宋体"}[65536]{lang="EN-US"}[。例如：]{style="font-family:宋体"}[65536:1]{lang="EN-US"}[。]{style="font-family:宋体"}
+·32位自治系统号:16位用户自定义数字，其中的自治系统号最小值为65536。例如：65536:1。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1607104763}
+【使用指导】
 
-[[在]{style="font-family:宋体"}[VPLS]{lang="EN-US"}]{#struct_0_10012_x1780_x1628476154}[中，]{style="font-family:宋体"}[RD]{lang="EN-US"}[用来区分不同]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[实例内编号相同的站点。]{style="font-family:宋体"}[PE]{lang="EN-US"}[在通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}[发布其连接的站点信息时，在]{style="font-family:宋体"}[Site ID]{lang="EN-US"}[前增加]{style="font-family:宋体"}[RD]{lang="EN-US"}[，通过]{style="font-family:宋体"}[RD]{lang="EN-US"}[和]{style="font-family:宋体"}[Site ID]{lang="EN-US"}[来唯一标识网络中的一个站点。]{style="font-family:宋体"}
+在VPLS中，RD用来区分不同VPLS实例内编号相同的站点。PE在通过BGP发布其连接的站点信息时，在Site ID前增加RD，通过RD和Site ID来唯一标识网络中的一个站点。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_10012_x1780_706767073}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令配置的]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1607170299}[RD]{lang="EN-US"}[对]{style="font-family:宋体"}[BGP]{lang="EN-US"}[邻居自动发现和]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[标签块分发均有效。]{style="font-family:宋体"}
+·本命令配置的RD对BGP邻居自动发现和VPLS标签块分发均有效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不能为不同]{style="font-family:宋体"}]{#struct_0_10012_x1780_953593738}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[BGP]{lang="EN-US"}[方式配置相同的]{style="font-family:宋体"}[RD]{lang="EN-US"}[。]{style="font-family:宋体"}
+·不能为不同VSI的BGP方式配置相同的RD。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不能通过重复执行]{lang="EN-US" style="font-family:宋体"}**[route-distinguisher]{lang="EN-US"}**]{#struct_0_10012_x1780_x253503950}[命令修改]{lang="EN-US" style="font-family:
-宋体"}[RD]{lang="EN-US"}[值。必须先]{lang="EN-US" style="font-family:
-宋体"}[执行]{style="font-family:宋体"}**[undo route-distinguisher]{lang="EN-US"}**[命令删除]{lang="EN-US" style="font-family:宋体"}[RD]{lang="EN-US"}[值，再通过]{lang="EN-US" style="font-family:宋体"}**[route-distinguisher]{lang="EN-US"}**[命令配置新的]{lang="EN-US" style="font-family:
-宋体"}[RD]{lang="EN-US"}[值。]{lang="EN-US" style="font-family:
-宋体"}
+·不能通过重复执行**route-distinguisher**命令修改RD值。必须先执行**undo route-distinguisher**命令删除RD值，再通过**route-distinguisher**命令配置新的RD值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1933153438}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_1007192470}[为名为]{style="font-family:宋体"}[aaa]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[BGP]{lang="EN-US"}[方式配置]{style="font-family:宋体"}[RD]{lang="EN-US"}[为]{style="font-family:宋体"}[22:1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 为名为aaa的VSI的BGP方式配置RD为22:1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x904906088}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi aaa]{lang="EN-US"}
+Sysname vsi aaa
 
-[\[Sysname-vsi-aaa\] auto-discovery bgp]{lang="EN-US"}
+Sysname-vsi-aaa auto-discovery bgp
 
-[\[Sysname-vsi-aaa-auto\] route-distinguisher 22:1]{lang="EN-US"}
-:::
-
-::: {#-190074586 .myid}
-[]{#_Toc404791672}[]{#struct_0_10012_x1780_1439095557}
+Sysname-vsi-aaa-auto route-distinguisher 22:1
 
 **VPLS \-- VPLS配置命令 \-- rr-filter**
 
 ------------------------------------------------------------------------
 
-[**[rr-filter]{lang="EN-US"}**]{#struct_0_10012_x1780_x1606973691}[命令用来创建路由反射器的反射策略：通过配置路由反射器支持的扩展团体属性号，对接收的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[信息进行过滤，只有接收的]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}[信息包含指定的扩展团体属性号时，路由反射器才会反射该]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[rr-filter**]命令用来创建路由反射器的反射策略：通过配置路由反射器支持的扩展团体属性号，对接收的L2VPN信息进行过滤，只有接收的BGP L2VPN信息包含指定的扩展团体属性号时，路由反射器才会反射该L2VPN信息。
 
-[**[undo]{lang="EN-US"}**[ **rr-filter**]{lang="EN-US"}]{#struct_0_10012_x1780_715000529}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **rr-filter**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1160919925}
+【命令】
 
-[**[rr-filter ]{lang="EN-US"}***[extended-community-number]{lang="EN-US"}*]{#struct_0_10012_x1780_x1112548400}
+**[rr-filter ***extended-community-number*]
 
-[**[undo rr-filter]{lang="EN-US"}**]{#struct_0_10012_x1780_293979764}
+**[undo rr-filter**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1308448082}
+【缺省情况】
 
-[[路由反射器不会对反射的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}]{#struct_0_10012_x1780_1763737522}[信息进行过滤。]{style="font-family:宋体"}
+路由反射器不会对反射的L2VPN信息进行过滤。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x640842843}
+【视图】
 
-[[BGP L2VPN]{lang="EN-US"}]{#struct_0_10012_x1780_x1607039227}[地址族视图]{style="font-family:宋体"}
+BGP L2VPN地址族视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_42582660}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1994938641}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x128601422}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1967032781}
+【参数】
 
-[*[extended-community-number]{lang="EN-US"}*]{#struct_0_10012_x1780_1573376125}[：路由反射器支持的扩展团体属性号，取值范围]{style="font-family:
-宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[199]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[extended-community-number*]：路由反射器支持的扩展团体属性号，取值范围1～199。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1624633545}
+【使用指导】
 
-[[当一个集群中存在多个路由反射器时，通过在不同的路由反射器上配置不同的反射策略，可以实现路由反射器之间的负载分担。]{style="font-family:宋体"}]{#struct_0_10012_x1780_1982239082}
+当一个集群中存在多个路由反射器时，通过在不同的路由反射器上配置不同的反射策略，可以实现路由反射器之间的负载分担。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1607497978}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x2001641828}[在]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}[地址族视图下，配置路由反射器支持的扩展团体属性号为]{style="font-family:宋体"}[10]{lang="EN-US"}[，即该路由反射器只反射包含扩展团体属性]{style="font-family:宋体"}[10]{lang="EN-US"}[的]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+\# 在BGP L2VPN地址族视图下，配置路由反射器支持的扩展团体属性号为10，即该路由反射器只反射包含扩展团体属性10的BGP L2VPN信息。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x1373169380}
+\<Sysname\> system-view
 
-[\[Sysname\] bgp 100]{lang="EN-US"}
+Sysname bgp 100
 
-[\[Sysname-bgp\] address-family l2vpn]{lang="EN-US"}
+Sysname-bgp address-family l2vpn
 
-[\[Sysname-bgp-l2vpn\] rr-filter 10]{lang="EN-US"}
-:::
-
-::: {#-1902885513 .myid}
-[]{#_Toc404791673}[]{#struct_0_10012_x1780_1883249195}
+Sysname-bgp-l2vpn rr-filter 10
 
 **VPLS \-- VPLS配置命令 \-- service-instance**
 
 ------------------------------------------------------------------------
 
-[**[service-instance]{lang="EN-US"}**]{#struct_0_10012_x1780_x711833746}[命令用来创建以太网服务实例，并进入以太网服务实例视图。]{style="font-family:宋体"}
+**[service-instance**]命令用来创建以太网服务实例，并进入以太网服务实例视图。
 
-[**[undo service-instance]{lang="EN-US"}**]{#struct_0_10012_x1780_x1423477429}[命令用来删除指定的以太网服务实例。]{style="font-family:宋体"}
+**[undo service-instance**]命令用来删除指定的以太网服务实例。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_883151854}
+【命令】
 
-[**[service-instance ]{lang="EN-US"}***[instance-id]{lang="EN-US"}*]{#struct_0_10012_x1780_x1607563514}
+**[service-instance ***instance-id*]
 
-[**[undo service-instance ]{lang="EN-US"}***[instance-id]{lang="EN-US"}*]{#struct_0_10012_x1780_x984119485}
+**[undo service-instance ***instance-id*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1674581026}
+【缺省情况】
 
-[[接口上不存在任何以太网服务实例。]{style="font-family:宋体"}]{#struct_0_10012_x1780_1561247690}
+接口上不存在任何以太网服务实例。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_444957763}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_10012_x1780_x348657680}[二层聚合接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1965438319}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1746982045}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1607366906}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_861171845}
+【参数】
 
-[*[instance-id]{lang="EN-US"}*]{#struct_0_10012_x1780_704889727}[：以太网服务实例的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4096]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[instance-id*]：以太网服务实例的编号，取值范围为1～4096。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x868817838}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x331984378}[在二层以太网接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上创建以太网服务实例]{style="font-family:宋体"}[1]{lang="EN-US"}[，并进入以太网服务实例]{style="font-family:宋体"}[1]{lang="EN-US"}[的视图。]{style="font-family:宋体"}
+\# 在二层以太网接口GigabitEthernet1/0/1上创建以太网服务实例1，并进入以太网服务实例1的视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_903942279}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] service-instance 1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 service-instance 1
 
-[\[Sysname-GigabitEthernet1/0/1-srv1\]]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1-srv1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1095965548}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn service-instance]{lang="EN-US"}**]{#struct_0_10012_x1780_x1607432442}
-:::
-
-::: {#1170655049 .myid}
-[]{#_Toc404791674}[]{#struct_0_10012_x1780_x1038933937}
+·**display l2vpn service-instance**
 
 **VPLS \-- VPLS配置命令 \-- shutdown**
 
 ------------------------------------------------------------------------
 
-[**[shutdown]{lang="EN-US"}**]{#struct_0_10012_x1780_608454984}[命令用来关闭当前的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[shutdown**]命令用来关闭当前的VSI。
 
-[**[undo shutdown]{lang="EN-US"}**]{#struct_0_10012_x1780_x919131929}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo shutdown**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x301769347}
+【命令】
 
-[**[shutdown]{lang="EN-US"}**]{#struct_0_10012_x1780_1019349748}
+**[shutdown**]
 
-[**[undo shutdown]{lang="EN-US"}**]{#struct_0_10012_x1780_2137142657}
+**[undo shutdown**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1860563306}
+【缺省情况】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x1607235834}[处于开启状态。]{style="font-family:宋体"}
+VSI处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x2054408411}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x1787656243}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_150910037}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x814734385}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1778820404}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x93768706}
+【使用指导】
 
-[[关闭]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x1522039546}[后，该]{style="font-family:宋体"}[VSI]{lang="EN-US"}[将不能提供]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[服务。]{style="font-family:宋体"}
+关闭VSI后，该VSI将不能提供VPLS服务。
 
-[[关闭]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x1607301370}[功能通常用于暂时禁用]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[服务，但还需要再次启用该]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[服务的场景。关闭]{style="font-family:宋体"}[VSI]{lang="EN-US"}[后，该]{style="font-family:宋体"}[VSI]{lang="EN-US"}[所有已存在的配置保持不变。在关闭状态下还可以对]{style="font-family:宋体"}[VSI]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}[VSI]{lang="EN-US"}[再次被开启后，基于最新的配置提供]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[服务。]{style="font-family:宋体"}
+关闭VSI功能通常用于暂时禁用VPLS服务，但还需要再次启用该VPLS服务的场景。关闭VSI后，该VSI所有已存在的配置保持不变。在关闭状态下还可以对VSI进行配置。VSI再次被开启后，基于最新的配置提供VPLS服务。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1597754075}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x1857017168}[关闭名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 关闭名为vpn1的VSI。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_1592118877}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname vsi vpn1
 
-[\[Sysname-vsi-vpn1\] shutdown]{lang="EN-US"}
+Sysname-vsi-vpn1 shutdown
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1193128890}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn vsi]{lang="EN-US"}**]{#struct_0_10012_x1780_x2021477457}
-:::
-
-::: {#-230231420 .myid}
-[]{#_Toc404791675}[]{#struct_0_10012_x1780_111480058}[]{#_Toc339310163}
+·**display l2vpn vsi**
 
 **VPLS \-- VPLS配置命令 \-- signaling-protocol**
 
 ------------------------------------------------------------------------
 
-[**[signaling-protocol]{lang="EN-US"}**]{#struct_0_10012_x1780_x1607104762}[命令用来配置通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}[自动发现远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[后，与该]{style="font-family:宋体"}[PE]{lang="EN-US"}[建立]{style="font-family:宋体"}[PW]{lang="EN-US"}[时采用的信令协议，并进入对应的信令视图。]{style="font-family:宋体"}
+**[signaling-protocol**]命令用来配置通过BGP自动发现远端PE后，与该PE建立PW时采用的信令协议，并进入对应的信令视图。
 
-[**[undo ]{lang="EN-US"}[signal]{lang="EN-US"}**[ing**-protocol**]{lang="EN-US"}]{#struct_0_10012_x1780_1100407201}[命令用来取消已配置的]{style="font-family:宋体"}[PW]{lang="EN-US"}[信令协议。]{style="font-family:宋体"}
+**[undo signal**ing**-protocol**]命令用来取消已配置的PW信令协议。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1540783817}
+【命令】
 
-[**[signaling-protocol]{lang="EN-US"}**[ { **bgp** \| **ldp** }]{lang="EN-US"}]{#struct_0_10012_x1780_1605442423}
+**[signaling-protocol**[ { **bgp** \| **ldp** }]]
 
-[**[undo ]{lang="EN-US"}[signaling-protocol]{lang="EN-US"}**]{#struct_0_10012_x1780_x43501007}
+**[undo signaling-protocol**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1509286316}
+【缺省情况】
 
-[[未指定通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}]{#struct_0_10012_x1780_327224674}[自动发现远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[后，与该]{style="font-family:宋体"}[PE]{lang="EN-US"}[建立]{style="font-family:宋体"}[PW]{lang="EN-US"}[时采用的信令协议。]{style="font-family:宋体"}
+未指定通过BGP自动发现远端PE后，与该PE建立PW时采用的信令协议。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1174530017}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x1607170298}[自动发现视图]{style="font-family:宋体"}
+VSI自动发现视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1775289617}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1691200037}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x626632467}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1477569233}
+【参数】
 
-[**[bgp]{lang="EN-US"}**]{#struct_0_10012_x1780_2045319920}[：指定采用]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议建立]{style="font-family:宋体"}[PW]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}[自动发现]{style="font-family:宋体"}[BGP]{lang="EN-US"}[信令视图。]{style="font-family:宋体"}
+**[bgp**]：指定采用BGP协议建立PW，并进入VSI自动发现BGP信令视图。
 
-[**[ldp]{lang="EN-US"}**]{#struct_0_10012_x1780_x575451097}[：指定采用]{style="font-family:宋体"}[LDP]{lang="EN-US"}[协议的]{style="font-family:宋体"}[FEC 129]{lang="EN-US"}[方式建立]{style="font-family:宋体"}[PW]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}[自动发现]{style="font-family:宋体"}[LDP]{lang="EN-US"}[信令视图。]{style="font-family:宋体"}
+**[ldp**]：指定采用LDP协议的FEC 129方式建立PW，并进入VSI自动发现LDP信令视图。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1990423060}
+【使用指导】
 
-[[在同一个]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1608914172}[自动发现视图下只能指定一种]{style="font-family:宋体"}[PW]{lang="EN-US"}[信令协议。不允许重复执行本命令指定不同的]{style="font-family:宋体"}[PW]{lang="EN-US"}[信令协议。]{style="font-family:宋体"}
+在同一个VSI自动发现视图下只能指定一种PW信令协议。不允许重复执行本命令指定不同的PW信令协议。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1606973690}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x2013882826}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[自动发现视图下，配置通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}[自动发现远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[后，采用]{style="font-family:宋体"}[LDP]{lang="EN-US"}[协议的]{style="font-family:宋体"}[FEC 129]{lang="EN-US"}[方式建立]{style="font-family:宋体"}[PW]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}[自动发现]{style="font-family:宋体"}[LDP]{lang="EN-US"}[信令视图。]{style="font-family:宋体"}
+\# 在VSI自动发现视图下，配置通过BGP自动发现远端PE后，采用LDP协议的FEC 129方式建立PW，并进入VSI自动发现LDP信令视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_1506407644}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi aaa]{lang="EN-US"}
+Sysname vsi aaa
 
-[\[Sysname-vsi-aaa\] auto-discovery bgp]{lang="EN-US"}
+Sysname-vsi-aaa auto-discovery bgp
 
-[\[Sysname-vsi-aaa-auto\] signaling-protocol ldp]{lang="EN-US"}
+Sysname-vsi-aaa-auto signaling-protocol ldp
 
-[\[Sysname-vsi-aaa-auto-ldp\]]{lang="EN-US"}
+Sysname-vsi-aaa-auto-ldp
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_506102066}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn pw]{lang="EN-US"}**]{#struct_0_10012_x1780_x998227258}
+·**display l2vpn pw**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn ]{lang="EN-US"}**]{#struct_0_10012_x1780_x1238722023}**[vsi]{lang="EN-US"}**
-:::
-
-::: {#1273103123 .myid}
-[]{#_Toc404791676}[]{#struct_0_10012_x1780_1944990302}[]{#_Toc339310164}
+·**display l2vpn ****vsi**
 
 **VPLS \-- VPLS配置命令 \-- site**
 
 ------------------------------------------------------------------------
 
-[**[site]{lang="EN-US"}**]{#struct_0_10012_x1780_x1607039226}[命令用来创建本地站点。]{style="font-family:宋体"}
+**[site**]命令用来创建本地站点。
 
-[**[undo site]{lang="EN-US"}**]{#struct_0_10012_x1780_1608666601}[命令用来删除指定的本地站点。]{style="font-family:宋体"}
+**[undo site**]命令用来删除指定的本地站点。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_456461533}
+【命令】
 
-[**[site ]{lang="EN-US"}***[site-id]{lang="EN-US"}***[ ]{lang="EN-US"}**[\[ **range** *range-value* \] \[ **default-offset** *default-offset* \]]{lang="EN-US"}]{#struct_0_10012_x1780_314816326}
+**[site ***site-id***** **range** *range-value* ]  **default-offset** *default-offset*
 
-[**[undo site]{lang="EN-US"}**[ *site-id*]{lang="EN-US"}]{#struct_0_10012_x1780_1257817760}
+**[undo site** *site-id*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_523432914}
+【缺省情况】
 
-[[设备上不存在任何本地站点。]{style="font-family:宋体"}]{#struct_0_10012_x1780_836187259}
+设备上不存在任何本地站点。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1392531340}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_314750790}[自动发现]{style="font-family:宋体"}[BGP]{lang="EN-US"}[信令视图]{style="font-family:宋体"}
+VSI自动发现BGP信令视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1304496974}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x696237540}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_932420121}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1698678340}
+【参数】
 
-[*[site-id]{lang="EN-US"}*]{#struct_0_10012_x1780_1602007950}[：本地站点的]{style="font-family:宋体"}[ID]{lang="EN-US"}[。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[site-id*]：本地站点的ID。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[**[range ]{lang="EN-US"}***[range-value]{lang="EN-US"}*]{#struct_0_10012_x1780_x299859521}[：指定]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[实例内最多包含的站点数目。]{style="font-family:宋体"}*[range-value]{lang="EN-US"}*[取值范围为]{style="font-family:宋体"}[2]{lang="EN-US"}[～]{style="font-family:宋体"}*[site-id]{lang="EN-US"}*[的最大值＋]{style="font-family:宋体"}[1]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[10]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[range ***range-value*]：指定VPLS实例内最多包含的站点数目。*range-value*取值范围为2～*site-id*的最大值＋1，缺省值为10。
 
-[**[default-offset ]{lang="EN-US"}***[default-offset]{lang="EN-US"}*]{#struct_0_10012_x1780_315078470}[：指定]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[实例中站点的起始编号。]{style="font-family:宋体"}*[default-offset]{lang="EN-US"}*[为起始编号，取值为]{style="font-family:宋体"}[0]{lang="EN-US"}[或]{style="font-family:宋体"}[1]{lang="EN-US"}[，缺省值为]{style="font-family:
-宋体"}[0]{lang="EN-US"}[。取值为]{style="font-family:宋体"}[0]{lang="EN-US"}[时，表示]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[实例内的站点从]{style="font-family:宋体"}[0]{lang="EN-US"}[开始编号；取值为]{style="font-family:宋体"}[1]{lang="EN-US"}[时，表示]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[实例内的站点从]{style="font-family:宋体"}[1]{lang="EN-US"}[开始编号。]{style="font-family:宋体"}
+**[default-offset ***default-offset*]：指定VPLS实例中站点的起始编号。*default-offset*为起始编号，取值为0或1，缺省值为0。取值为0时，表示VPLS实例内的站点从0开始编号；取值为1时，表示VPLS实例内的站点从1开始编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1170322874}
+【使用指导】
 
-[[在同一个]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1494366331}[下，可以创建]{style="font-family:宋体"}[ID]{lang="EN-US"}[不同的多个本地站点。]{style="font-family:宋体"}
+在同一个VSI下，可以创建ID不同的多个本地站点。
 
-[[允许在]{style="font-family:宋体"}*[site-id]{lang="EN-US"}*]{#struct_0_10012_x1780_315012934}[和]{style="font-family:宋体"}*[default-offset]{lang="EN-US"}*[不改变的情况下，通过重复执行]{style="font-family:宋体"}**[site]{lang="EN-US"}**[命令来增大此站点的]{style="font-family:宋体"}[range]{lang="EN-US"}[值，但不允许将]{style="font-family:宋体"}[range]{lang="EN-US"}[改小。要想将]{style="font-family:宋体"}[range]{lang="EN-US"}[改小，则需要删除这个站点，并重新创建。]{style="font-family:宋体"}
+允许在*site-id*和*default-offset*不改变的情况下，通过重复执行**site**命令来增大此站点的range值，但不允许将range改小。要想将range改小，则需要删除这个站点，并重新创建。
 
-[[不能通过重复执行]{style="font-family:宋体"}**[site]{lang="EN-US"}**]{#struct_0_10012_x1780_315144006}[命令来修改]{style="font-family:宋体"}*[default-offset]{lang="EN-US"}*[。必须先通过]{style="font-family:宋体"}**[undo site]{lang="EN-US"}**[命令删除本地站点，再通过]{style="font-family:宋体"}**[site]{lang="EN-US"}**[命令创建本地站点，并指定新的]{style="font-family:宋体"}*[default-offset]{lang="EN-US"}*[。]{style="font-family:宋体"}
+不能通过重复执行**site**命令来修改*default-offset*。必须先通过**undo site**命令删除本地站点，再通过**site**命令创建本地站点，并指定新的*default-offset*。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_315340614}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x499359371}[在名为]{style="font-family:宋体"}[aaa]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[下创建本地站点]{style="font-family:宋体"}[1]{lang="EN-US"}[，指定]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[实例内最多包含的站点数目为]{style="font-family:宋体"}[30]{lang="EN-US"}[，站点的起始编号为]{style="font-family:宋体"}[0]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在名为aaa的VSI下创建本地站点1，指定VPLS实例内最多包含的站点数目为30，站点的起始编号为0。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_177933400}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi aaa]{lang="EN-US"}
+Sysname vsi aaa
 
-[\[Sysname-vsi-aaa\] auto-discovery bgp]{lang="EN-US"}
+Sysname-vsi-aaa auto-discovery bgp
 
-[\[Sysname-vsi-aaa-auto\] signaling-protocol bgp]{lang="EN-US"}
+Sysname-vsi-aaa-auto signaling-protocol bgp
 
-[\[Sysname-vsi-aaa-auto-bgp\] site 1 range 30 default-offset 0]{lang="EN-US"}
+Sysname-vsi-aaa-auto-bgp site 1 range 30 default-offset 0
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x520026219}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn pw]{lang="EN-US"}**]{#struct_0_10012_x1780_1430656830}
+·**display l2vpn pw**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn vsi]{lang="EN-US"}**]{#struct_0_10012_x1780_1800154016}
-:::
-
-::: {#1066584173 .myid}
-[]{#_Toc404791677}[]{#struct_0_10012_x1780_1971220721}[]{#_Toc389645828}[]{#_Toc378236183}[]{#_Toc377993835}
+·**display l2vpn vsi**
 
 **VPLS \-- VPLS配置命令 \-- snmp-agent trap enable l2vpn**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent trap enable l2vpn]{lang="FR"}**]{#struct_0_10012_x1780_1971155185}[命令用来开启]{style="font-family:宋体"}[L2VPN]{lang="FR"}[模块的]{style="font-family:宋体"}[PW]{lang="FR"}[状态变化告警功能。]{style="font-family:
-宋体"}
+**[snmp-agent trap enable l2vpn**]命令用来开启L2VPN模块的PW状态变化告警功能。
 
-[**[undo snmp-agent trap enable l2vpn]{lang="FR"}**]{#struct_0_10012_x1780_x1765567823}[命令用来关闭]{style="font-family:宋体"}[L2VPN]{lang="FR"}[模块的]{style="font-family:宋体"}[PW]{lang="FR"}[状态变化告警功能。]{style="font-family:宋体"}
+**[undo snmp-agent trap enable l2vpn**]命令用来关闭L2VPN模块的PW状态变化告警功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x426978299}
+【命令】
 
-[**[snmp-agent trap enable l2vpn ]{lang="FR"}**]{#struct_0_10012_x1780_430483102}[\[ **pw-up-down** \| **pw-delete** \] \*]{lang="FR"}
+**[snmp-agent trap enable l2vpn ** [ **pw-up-down** \| **pw-delete** ] \*]
 
-[**[undo snmp-agent trap enable l2vpn ]{lang="FR"}**]{#struct_0_10012_x1780_1971089649}[\[ **pw-up-down** \| **pw-delete** \] \*]{lang="FR"}
+**[undo snmp-agent trap enable l2vpn ** [ **pw-up-down** \| **pw-delete** ] \*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1825577880}
+【缺省情况】
 
-[[L2VPN]{lang="EN-US"}]{#struct_0_10012_x1780_1019461290}[的告警功能处于开启状态。]{style="font-family:宋体"}
+L2VPN的告警功能处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_584421389}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_10012_x1780_x37044608}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1242055127}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x739293478}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x296724858}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_478410929}
+【参数】
 
-[**[pw-up-down]{lang="FR"}**]{#struct_0_10012_x1780_1971548401}[：开启]{style="font-family:宋体"}[PW]{lang="EN-US"}[的]{style="font-family:宋体"}[up-down]{lang="EN-US"}[状态变化告警。]{style="font-family:宋体"}
+**[pw-up-down**]：开启PW的up-down状态变化告警。
 
-[**[pw-delete]{lang="FR"}**]{#struct_0_10012_x1780_x146174068}[：开启]{style="font-family:宋体"}[PW]{lang="EN-US"}[删除告警。]{style="font-family:宋体"}
+**[pw-delete**]：开启PW删除告警。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1442659929}
+【使用指导】
 
-[[开启]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}]{#struct_0_10012_x1780_x1522180859}[模块的告警功能后，当]{style="font-family:宋体"}[PW]{lang="EN-US"}[状态发生变化时会产生告警信息。生成的告警信息将发送到设备的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[模块，通过设置]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[中告警信息的发送参数，来决定告警信息输出的相关属性。]{style="font-family:宋体"}
+开启L2VPN模块的告警功能后，当PW状态发生变化时会产生告警信息。生成的告警信息将发送到设备的SNMP模块，通过设置SNMP中告警信息的发送参数，来决定告警信息输出的相关属性。
 
-[[有关告警信息的详细介绍，请参见"网络管理和监控配置指导"中的"]{style="font-family:宋体"}[SNMP]{lang="EN-US"}]{#struct_0_10012_x1780_422762331}["。]{style="font-family:宋体"}
+有关告警信息的详细介绍，请参见"网络管理和监控配置指导"中的"SNMP"。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1788706165}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_1978490944}[开启]{style="font-family:宋体"}[PW]{lang="EN-US"}[的]{style="font-family:宋体"}[up-down]{lang="EN-US"}[状态变化告警功能。]{style="font-family:宋体"}
+\# 开启PW的up-down状态变化告警功能。
 
-[[\<Sysname\> system-view]{lang="FR"}]{#struct_0_10012_x1780_1191261311}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent trap enable l2vpn pw-up-down]{lang="FR"}
+Sysname snmp-agent trap enable l2vpn pw-up-down
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x802495405}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display snmp-agent trap-list]{lang="NO-BOK"}**]{#struct_0_10012_x1780_236075113}[（网络管理和监控命令参考]{lang="EN-US" style="font-family:宋体"}[/]{lang="EN-US"}[SNMP]{lang="EN-US"}[）]{lang="EN-US" style="font-family:宋体"}
-:::
-
-::::: {#-655052582 .myid}
-[]{#_Toc404791678}[]{#struct_0_10012_x1780_1971482865}[]{#_Toc389645829}[]{#_Toc378236184}[]{#_Toc377562530}
+·**display snmp-agent trap-list**（网络管理和监控命令参考/SNMP）
 
 **VPLS \-- VPLS配置命令 \-- statistics enable**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VPLS命令.files/image002.png){#图片 16 width="62" height="25"}]{lang="EN-US"}]{#struct_0_10012_x1780_632298935}
-:::
+![说明](VPLS命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_10012_x1780_578171000}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[statistics enable**]命令用来开启指定PW的统计功能。
 
-[**[statistics enable]{lang="FR"}**]{#struct_0_10012_x1780_x2145491180}[命令用来开启指定]{style="font-family:宋体"}[PW]{lang="FR"}[的统计功能。]{style="font-family:宋体"}
+**[undo statistics enable**]命令用来关闭指定PW的统计功能。
 
-[**[undo statistics enable]{lang="FR"}**]{#struct_0_10012_x1780_1980433837}[命令用来关闭指定]{style="font-family:宋体"}[PW]{lang="FR"}[的统计功能。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1957363116}
+**[statistics enable**]
 
-[**[statistics enable]{lang="FR"}**]{#struct_0_10012_x1780_x1255025971}
+**[undo statistics enable**]
 
-[**[undo statistics enable]{lang="FR"}**]{#struct_0_10012_x1780_1971024110}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_972490610}
+通过命令行创建的PW未开启PW报文统计，通过MIB创建的PW开启PW报文统计。
 
-[[通过命令行创建的]{style="font-family:宋体"}]{#struct_0_10012_x1780_242510234}[PW]{lang="FR"}[未开启]{style="font-family:宋体"}[PW]{lang="FR"}[报文统计]{style="font-family:
-宋体"}[，]{style="font-family:宋体"}[通过]{style="font-family:
-宋体"}[MIB]{lang="FR"}[创建的]{style="font-family:宋体"}[PW]{lang="FR"}[开启]{style="font-family:宋体"}[PW]{lang="FR"}[报文统计。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x590344144}
+VSI LDP PW视图/VSI静态PW视图
 
-[[VSI LDP PW]{lang="EN-US"}]{#struct_0_10012_x1780_x1099302837}[视图]{style="font-family:宋体"}[/VSI]{lang="EN-US"}[静态]{style="font-family:宋体"}[PW]{lang="EN-US"}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1142996689}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1320621136}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x37442005}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_87097986}
+备PW是否开启统计功能与其主PW保持一致，不需要单独开启或关闭备PW的统计功能。
 
-[[备]{style="font-family:宋体"}]{#struct_0_10012_x1780_1970958574}[PW]{lang="FR"}[是否开启统计功能与其主]{style="font-family:宋体"}[PW]{lang="FR"}[保持一致，不需要单独]{style="font-family:宋体"}[开启或关闭备]{style="font-family:宋体"}[PW]{lang="EN-US"}[的统计功能]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1410174731}
+\# 开启指定PW的报文统计功能。
 
-[[\# ]{lang="FR"}]{#struct_0_10012_x1780_x302327951}[开启指定]{style="font-family:宋体"}[PW]{lang="FR"}[的报文统计功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x228438313}
+Sysname vsi vpn1
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname-vsi-vpn1 pwsignaling ldp
 
-[\[Sysname-vsi-vpn1\] pwsignaling ldp]{lang="EN-US"}
+Sysname-vsi-vpn1-ldp peer 4.4.4.4 pw-id 100
 
-[\[Sysname-vsi-vpn1-ldp\] peer 4.4.4.4 pw-id 100]{lang="EN-US"}
+Sysname-vsi-vpn1-ldp-4.4.4.4-100 statistics enable
 
-[\[Sysname-vsi-vpn1-ldp-4.4.4.4-100\] statistics enable]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1549031889}
+·**reset l2vpn statistics pw**
 
-[[·[              ]{style="font:7.0pt "}]{lang="NO-BOK" style="font-size:10.0pt;font-family:Symbol"}**[reset l2vpn statistics pw]{lang="NO-BOK"}**]{#struct_0_10012_x1780_x493616109}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn pw]{lang="NO-BOK"}**]{#struct_0_10012_x1780_x1394274403}
-:::::
-
-::: {#95151371 .myid}
-[]{#_Toc339310165}[]{#_Toc404791679}[]{#struct_0_10012_x1780_x2021263816}
+·**display l2vpn pw**
 
 **VPLS \-- VPLS配置命令 \-- tunnel-policy**
 
 ------------------------------------------------------------------------
 
-[**[tunnel-policy]{lang="EN-US"}**]{#struct_0_10012_x1780_315275078}[命令用来指定引用的隧道策略。]{style="font-family:宋体"}
+**[tunnel-policy**]命令用来指定引用的隧道策略。
 
-[**[undo tunnel-policy]{lang="EN-US"}**]{#struct_0_10012_x1780_x2100749142}[命令用来取消引用隧道策略。]{style="font-family:宋体"}
+**[undo tunnel-policy**]命令用来取消引用隧道策略。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1029186305}
+【命令】
 
-[**[tunnel-policy]{lang="EN-US"}**[ *tunnel-policy-name*]{lang="EN-US"}]{#struct_0_10012_x1780_x1761568824}
+**[tunnel-policy** *tunnel-policy-name*]
 
-[**[undo tunnel-policy]{lang="EN-US"}**]{#struct_0_10012_x1780_x791280690}
+**[undo tunnel-policy**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1201265285}
+【缺省情况】
 
-[[不引用任何隧道策略。]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1179494969}
+不引用任何隧道策略。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x557233513}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_314816327}[自动发现视图]{style="font-family:宋体"}
+VSI自动发现视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1257817761}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_523498450}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1626288292}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_262461682}
+【参数】
 
-[*[tunnel-policy-name]{lang="EN-US"}*]{#struct_0_10012_x1780_881409644}[：隧道策略名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[19]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[tunnel-policy-name*]：隧道策略名称，为1～19个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x555350040}
+【使用指导】
 
-[[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1020457539}[自动发现视图下执行本命令指定引用的隧道策略后，该视图下建立的所有]{style="font-family:宋体"}[PW]{lang="EN-US"}[都将引用该隧道策略，即根据指定的隧道策略选择承载]{style="font-family:宋体"}[PW]{lang="EN-US"}[流量的公网隧道。]{style="font-family:宋体"}
+在VSI自动发现视图下执行本命令指定引用的隧道策略后，该视图下建立的所有PW都将引用该隧道策略，即根据指定的隧道策略选择承载PW流量的公网隧道。
 
-[[如果]{style="font-family:宋体"}[PW]{lang="EN-US"}]{#struct_0_10012_x1780_314750791}[没有引用隧道策略或者引用的隧道策略尚未配置，则该]{style="font-family:宋体"}[PW]{lang="EN-US"}[根据缺省选择策略来选择隧道。缺省选择策略为按照]{style="font-family:宋体"}[LSP]{lang="EN-US"}[隧道－]{style="font-family:宋体"}[\>GRE]{lang="EN-US"}[隧道－]{style="font-family:宋体"}[\>CR-LSP]{lang="EN-US"}[隧道的优先级顺序选择隧道，负载分担的隧道数目为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+如果PW没有引用隧道策略或者引用的隧道策略尚未配置，则该PW根据缺省选择策略来选择隧道。缺省选择策略为按照LSP隧道－\>GRE隧道－\>CR-LSP隧道的优先级顺序选择隧道，负载分担的隧道数目为1。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1304496973}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_2032645815}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[自动发现视图下，指定引用的隧道策略为]{style="font-family:宋体"}[policy1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在VSI自动发现视图下，指定引用的隧道策略为policy1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x1553874474}
+\<Sysname\> system-view
 
-[\[Sysname\] tunnel-policy policy1]{lang="EN-US"}
+Sysname tunnel-policy policy1
 
-[\[Sysname-tunnel-policy-policy1\] quit]{lang="EN-US"}
+Sysname-tunnel-policy-policy1 quit
 
-[\[Sysname\] vsi aaa]{lang="EN-US"}
+Sysname vsi aaa
 
-[\[Sysname-vsi-aaa\] auto-discovery bgp]{lang="EN-US"}
+Sysname-vsi-aaa auto-discovery bgp
 
-[\[Sysname-vsi-aaa-auto\] tunnel-policy policy1]{lang="EN-US"}
+Sysname-vsi-aaa-auto tunnel-policy policy1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1763814065}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[tunnel-policy]{lang="EN-US"}**]{#struct_0_10012_x1780_x464385922}[（]{lang="EN-US" style="font-family:宋体"}[MPLS]{lang="EN-US"}[命令参考]{lang="EN-US" style="font-family:宋体"}[/]{lang="EN-US"}[隧道策略）]{lang="EN-US" style="font-family:宋体"}
-:::
-
-::: {#1898761475 .myid}
-[]{#_Toc404791680}[]{#struct_0_10012_x1780_402745324}
+·**tunnel-policy**（MPLS命令参考/隧道策略）
 
 **VPLS \-- VPLS配置命令 \-- vpls-id**
 
 ------------------------------------------------------------------------
 
-[**[vpls-id]{lang="EN-US"}**]{#struct_0_10012_x1780_314947399}[命令用来配置]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[VPLS ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vpls-id**]命令用来配置VSI的VPLS ID。
 
-[**[undo vpls-id]{lang="EN-US"}**]{#struct_0_10012_x1780_1612695348}[命令用来删除]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[VPLS ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo vpls-id**]命令用来删除VSI的VPLS ID。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1396940113}
+【命令】
 
-[**[vpls-id]{lang="EN-US"}**[ *vpls-id*]{lang="EN-US"}]{#struct_0_10012_x1780_x1784351734}
+**[vpls-id** *vpls-id*]
 
-[**[undo vpls-id]{lang="EN-US"}**]{#struct_0_10012_x1780_781598618}
+**[undo vpls-id**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1418122678}
+【缺省情况】
 
-[[没有指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x439149613}[的]{style="font-family:宋体"}[VPLS ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+没有指定VSI的VPLS ID。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x370404786}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x1218325261}[自动发现]{style="font-family:宋体"}[LDP]{lang="EN-US"}[信令视图]{style="font-family:宋体"}
+VSI自动发现LDP信令视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_314881863}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x714547519}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x2109716713}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1989098222}
+【参数】
 
-[*[vpls-id]{lang="EN-US"}*]{#struct_0_10012_x1780_230478492}[：]{style="font-family:宋体"}[VPLS ID]{lang="EN-US"}[，为]{style="font-family:宋体"}[3]{lang="EN-US"}[～]{style="font-family:宋体"}[21]{lang="EN-US"}[个字符的字符串。]{style="font-family:宋体"}[VPLS ID]{lang="EN-US"}[有三种格式：]{style="font-family:宋体"}
+*[vpls-id*]：VPLS ID，为3～21个字符的字符串。VPLS ID有三种格式：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[16]{lang="EN-US"}]{#struct_0_10012_x1780_x1542919752}[位自治系统号]{style="font-family:宋体"}[:32]{lang="EN-US"}[位用户自定义数，例如：]{style="font-family:宋体"}[101:3]{lang="EN-US"}[。]{style="font-family:宋体"}
+·16位自治系统号:32位用户自定义数，例如：101:3。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[32]{lang="EN-US"}]{#struct_0_10012_x1780_x487273492}[位]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[:16]{lang="EN-US"}[位用户自定义数，例如：]{style="font-family:宋体"}[192.168.122.15:1]{lang="EN-US"}[。]{style="font-family:宋体"}
+·32位IP地址:16位用户自定义数，例如：192.168.122.15:1。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[32]{lang="EN-US"}]{#struct_0_10012_x1780_x180760668}[位自治系统号]{style="font-family:宋体"}[:16]{lang="EN-US"}[位用户自定义数字，其中的自治系统号最小值为]{style="font-family:宋体"}[65536]{lang="EN-US"}[。例如：]{style="font-family:宋体"}[65536:1]{lang="EN-US"}[。]{style="font-family:宋体"}
+·32位自治系统号:16位用户自定义数字，其中的自治系统号最小值为65536。例如：65536:1。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_315078471}
+【使用指导】
 
-[[VPLS ID]{lang="EN-US"}]{#struct_0_10012_x1780_x1170322873}[用来唯一标识一个]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[实例。只有]{style="font-family:宋体"}[VPLS ID]{lang="EN-US"}[相同时，才会在]{style="font-family:宋体"}[PE]{lang="EN-US"}[之间建立]{style="font-family:宋体"}[PW]{lang="EN-US"}[。]{style="font-family:宋体"}
+VPLS ID用来唯一标识一个VPLS实例。只有VPLS ID相同时，才会在PE之间建立PW。
 
-[[VPLS ID]{lang="EN-US"}]{#struct_0_10012_x1780_x2041086078}[应用于通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}[自动发现远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[、并采用]{style="font-family:宋体"}[LDP]{lang="EN-US"}[信令协议]{style="font-family:宋体"}[FEC 129]{lang="EN-US"}[方式建立]{style="font-family:宋体"}[PW]{lang="EN-US"}[的情况。一端]{style="font-family:宋体"}[PE]{lang="EN-US"}[在通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}[的]{style="font-family:宋体"}[Update]{lang="EN-US"}[消息发布本端信息时，将]{style="font-family:宋体"}[VPLS ID]{lang="EN-US"}[作为扩展团体属性一同发布给]{style="font-family:宋体"}[BGP]{lang="EN-US"}[对等体（即远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[）。远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[接收到该消息后，如果消息中的]{style="font-family:宋体"}[VPLS ID]{lang="EN-US"}[与本端配置的]{style="font-family:宋体"}[VPLS ID]{lang="EN-US"}[相同，则采用]{style="font-family:宋体"}[LDP]{lang="EN-US"}[的]{style="font-family:宋体"}[FEC 129]{lang="EN-US"}[方式在二者之间建立]{style="font-family:宋体"}[PW]{lang="EN-US"}[；否则，不会在两个]{style="font-family:宋体"}[PE]{lang="EN-US"}[之间建立]{style="font-family:宋体"}[PW]{lang="EN-US"}[。]{style="font-family:宋体"}
+VPLS ID应用于通过BGP自动发现远端PE、并采用LDP信令协议FEC 129方式建立PW的情况。一端PE在通过BGP的Update消息发布本端信息时，将VPLS ID作为扩展团体属性一同发布给BGP对等体（即远端PE）。远端PE接收到该消息后，如果消息中的VPLS ID与本端配置的VPLS ID相同，则采用LDP的FEC 129方式在二者之间建立PW；否则，不会在两个PE之间建立PW。
 
-[[需要注意的是，不能通过重复执行]{style="font-family:宋体"}]{#struct_0_10012_x1780_x1573308144}**[vpls-id]{lang="EN-US"}**[命令来修改]{style="font-family:宋体"}[VPLS ID]{lang="EN-US"}[值。必须先执行]{style="font-family:宋体"}**[undo ]{lang="EN-US"}[vpls-id]{lang="EN-US"}**[命令删除]{style="font-family:宋体"}[VPLS ID]{lang="EN-US"}[值，再通过]{style="font-family:宋体"}**[vpls-id]{lang="EN-US"}**[命令配置新的]{style="font-family:宋体"}[VPLS ID]{lang="EN-US"}[值。]{style="font-family:宋体"}
+需要注意的是，不能通过重复执行**vpls-id**命令来修改VPLS ID值。必须先执行**undo vpls-id**命令删除VPLS ID值，再通过**vpls-id**命令配置新的VPLS ID值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1224012991}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_13389990}[为名为]{style="font-family:宋体"}[aaa]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[配置]{style="font-family:宋体"}[VPLS ID]{lang="EN-US"}[为]{style="font-family:宋体"}[100:1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 为名为aaa的VSI配置VPLS ID为100:1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x908773996}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi aaa]{lang="EN-US"}
+Sysname vsi aaa
 
-[\[Sysname-vsi-aaa\] auto-discovery bgp]{lang="EN-US"}
+Sysname-vsi-aaa auto-discovery bgp
 
-[\[Sysname-vsi-aaa-auto\] signaling-protocol ldp]{lang="EN-US"}
+Sysname-vsi-aaa-auto signaling-protocol ldp
 
-[\[Sysname-vsi-aaa-auto-ldp\] vpls-id 100:1]{lang="EN-US"}
+Sysname-vsi-aaa-auto-ldp vpls-id 100:1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_315012935}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn pw]{lang="EN-US"}**]{#struct_0_10012_x1780_x431076174}
+·**display l2vpn pw**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn ]{lang="EN-US"}**]{#struct_0_10012_x1780_1770780790}**[vsi]{lang="EN-US"}**
-:::
-
-::: {#-595395675 .myid}
-[]{#_Toc404791681}[]{#struct_0_10012_x1780_482489516}[]{#_Toc339310166}
+·**display l2vpn ****vsi**
 
 **VPLS \-- VPLS配置命令 \-- vpn-target**
 
 ------------------------------------------------------------------------
 
-[**[vpn-target]{lang="EN-US"}**]{#struct_0_10012_x1780_x1327186018}[命令用来为当前]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[BGP]{lang="EN-US"}[方式配置]{style="font-family:宋体"}[Route Target]{lang="EN-US"}[属性。]{style="font-family:宋体"}
+**[vpn-target**]命令用来为当前VSI的BGP方式配置Route Target属性。
 
-[**[undo vpn-target]{lang="EN-US"}**]{#struct_0_10012_x1780_x1311812393}[命令用来删除指定的]{style="font-family:宋体"}[Route Target]{lang="EN-US"}[属性。]{style="font-family:宋体"}
+**[undo vpn-target**]命令用来删除指定的Route Target属性。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x2109442476}
+【命令】
 
-[**[vpn-target]{lang="EN-US"}**[ *vpn-target*&\<1-8\> \[ **both** \| **export-extcommunity** \| **import-extcommunity** \]]{lang="EN-US"}]{#struct_0_10012_x1780_624210097}
+**[vpn-target**[ *vpn-target*&\<1-8\> [ **both** \| **export-extcommunity** \| **import-extcommunity** ]]]
 
-[**[undo vpn-target]{lang="EN-US"}**[ { *vpn-target&\<1-8\>* \| **all** } \[ **both** \| **export-extcommunity** \| **import-extcommunity** \]]{lang="EN-US"}]{#struct_0_10012_x1780_315209543}
+**[undo vpn-target**[ { *vpn-target&\<1-8\>* \| **all** } [ **both** \| **export-extcommunity** \| **import-extcommunity** ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1294936699}
+【缺省情况】
 
-[[没有为]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x1254442045}[的]{style="font-family:宋体"}[BGP]{lang="EN-US"}[方式指定]{style="font-family:宋体"}[Route Target]{lang="EN-US"}[属性。]{style="font-family:宋体"}
+没有为VSI的BGP方式指定Route Target属性。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1386568665}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1869891681}[自动发现视图]{style="font-family:宋体"}
+VSI自动发现视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x636237977}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_2066646042}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x1404435661}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_315144007}
+【参数】
 
-[*[vpn-target]{lang="EN-US"}*[&\<1-8\>]{lang="EN-US"}]{#struct_0_10012_x1780_756292884}[：]{style="font-family:宋体"}[Route Target]{lang="EN-US"}[属性值，为]{style="font-family:宋体"}[3]{lang="EN-US"}[～]{style="font-family:宋体"}[21]{lang="EN-US"}[个字符的字符串。]{style="font-family:宋体"}[&\<1-8\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[8]{lang="EN-US"}[次。]{style="font-family:宋体"}[Route Target]{lang="EN-US"}[有三种格式：]{style="font-family:宋体"}
+*[vpn-target*&\<1-8\>]：Route Target属性值，为3～21个字符的字符串。&\<1-8\>表示前面的参数最多可以输入8次。Route Target有三种格式：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[16]{lang="EN-US"}]{#struct_0_10012_x1780_790664794}[位自治系统号]{style="font-family:宋体"}[:32]{lang="EN-US"}[位用户自定义数，例如：]{style="font-family:宋体"}[101:3]{lang="EN-US"}[。]{style="font-family:宋体"}
+·16位自治系统号:32位用户自定义数，例如：101:3。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[32]{lang="EN-US"}]{#struct_0_10012_x1780_944072459}[位]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[:16]{lang="EN-US"}[位用户自定义数，例如：]{style="font-family:宋体"}[192.168.122.15:1]{lang="EN-US"}[。]{style="font-family:宋体"}
+·32位IP地址:16位用户自定义数，例如：192.168.122.15:1。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[32]{lang="EN-US"}]{#struct_0_10012_x1780_2140311322}[位自治系统号]{style="font-family:宋体"}[:16]{lang="EN-US"}[位用户自定义数字，其中的自治系统号最小值为]{style="font-family:宋体"}[65536]{lang="EN-US"}[。例如：]{style="font-family:宋体"}[65536:1]{lang="EN-US"}[。]{style="font-family:宋体"}
+·32位自治系统号:16位用户自定义数字，其中的自治系统号最小值为65536。例如：65536:1。
 
-[**[both]{lang="EN-US"}**]{#struct_0_10012_x1780_x935875761}[：指定配置的]{style="font-family:宋体"}[Route Target]{lang="EN-US"}[值同时作为]{style="font-family:宋体"}[Import Target]{lang="EN-US"}[和]{style="font-family:宋体"}[Export Target]{lang="EN-US"}[。没有指定]{style="font-family:宋体"}**[both]{lang="EN-US"}**[、]{style="font-family:宋体"}**[export-extcommunity]{lang="EN-US"}**[和]{style="font-family:宋体"}**[import-extcommunity]{lang="EN-US"}**[中的任何一个参数时，缺省值为]{style="font-family:宋体"}**[both]{lang="EN-US"}**[。]{style="font-family:宋体"}
+**[both**]：指定配置的Route Target值同时作为Import Target和Export Target。没有指定**both**、**export-extcommunity**和**import-extcommunity**中的任何一个参数时，缺省值为**both**。
 
-[**[export-extcommunity]{lang="EN-US"}**]{#struct_0_10012_x1780_129997838}[：指定配置的]{style="font-family:宋体"}[Route Target]{lang="EN-US"}[值为]{style="font-family:宋体"}[Export Target]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[export-extcommunity**]：指定配置的Route Target值为Export Target。
 
-[**[import-extcommunity]{lang="EN-US"}**]{#struct_0_10012_x1780_x1257393482}[：指定配置的]{style="font-family:宋体"}[Route Target]{lang="EN-US"}[值为]{style="font-family:宋体"}[Import Target]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[import-extcommunity**]：指定配置的Route Target值为Import Target。
 
-[**[all]{lang="EN-US"}**]{#struct_0_10012_x1780_x896997780}[：所有]{style="font-family:宋体"}[Route Target]{lang="EN-US"}[值。]{style="font-family:宋体"}
+**[all**]：所有Route Target值。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_315340615}
+【使用指导】
 
-[[Route Target]{lang="EN-US"}]{#struct_0_10012_x1780_x499359372}[用来控制]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}[信息（即通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}[协议自动发现的]{style="font-family:宋体"}[VPLS PE]{lang="EN-US"}[信息和标签块信息）的发布。本地]{style="font-family:宋体"}[PE]{lang="EN-US"}[在通过]{style="font-family:宋体"}[BGP]{lang="EN-US"}[的]{style="font-family:宋体"}[Update]{lang="EN-US"}[消息将]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[信息发送给远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[时，将]{style="font-family:宋体"}[Update]{lang="EN-US"}[消息中携带的]{style="font-family:宋体"}[VPN target]{lang="EN-US"}[属性设置为]{style="font-family:宋体"}[Export target]{lang="EN-US"}[。远端]{style="font-family:宋体"}[PE]{lang="EN-US"}[接收到]{style="font-family:宋体"}[BGP L2VPN]{lang="EN-US"}[信息后，将该信息中携带的]{style="font-family:宋体"}[Export Target]{lang="EN-US"}[属性与本地配置的]{style="font-family:宋体"}[Import Target]{lang="EN-US"}[进行比较，如果二者中存在相同的值，则接受该信息。]{style="font-family:宋体"}
+Route Target用来控制BGP L2VPN信息（即通过BGP协议自动发现的VPLS PE信息和标签块信息）的发布。本地PE在通过BGP的Update消息将L2VPN信息发送给远端PE时，将Update消息中携带的VPN target属性设置为Export target。远端PE接收到BGP L2VPN信息后，将该信息中携带的Export Target属性与本地配置的Import Target进行比较，如果二者中存在相同的值，则接受该信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_177998936}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_726669938}[为名为]{style="font-family:宋体"}[aaa]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[BGP]{lang="EN-US"}[方式配置]{style="font-family:宋体"}[Import Target]{lang="EN-US"}[为]{style="font-family:宋体"}[10:1 100:1 1000:1]{lang="EN-US"}[，]{style="font-family:宋体"}[Export Target]{lang="EN-US"}[为]{style="font-family:宋体"}[20:1 200:1 2000:1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 为名为aaa的VSI的BGP方式配置Import Target为10:1 100:1 1000:1，Export Target为20:1 200:1 2000:1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_48564443}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi aaa]{lang="EN-US"}
+Sysname vsi aaa
 
-[\[Sysname-vsi-aaa\] auto-discovery bgp]{lang="EN-US"}
+Sysname-vsi-aaa auto-discovery bgp
 
-[\[Sysname-vsi-aaa-auto\] vpn-target 10:1 100:1 1000:1 import-extcommunity]{lang="EN-US"}
+Sysname-vsi-aaa-auto vpn-target 10:1 100:1 1000:1 import-extcommunity
 
-[\[Sysname-vsi-aaa-auto\] vpn-target 20:1 200:1 2000:1 export-extcommunity]{lang="EN-US"}
-:::
-
-::: {#-981054953 .myid}
-[]{#_Toc404791682}[]{#struct_0_10012_x1780_1005077065}
+Sysname-vsi-aaa-auto vpn-target 20:1 200:1 2000:1 export-extcommunity
 
 **VPLS \-- VPLS配置命令 \-- vsi**
 
 ------------------------------------------------------------------------
 
-[**[vsi]{lang="EN-US"}**]{#struct_0_10012_x1780_355631553}[命令用来创建一个]{style="font-family:宋体"}[VSI]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}[视图。如果指定的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[已经存在，则直接进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+**[vsi**]命令用来创建一个VSI，并进入VSI视图。如果指定的VSI已经存在，则直接进入VSI视图。
 
-[**[undo]{lang="EN-US"}**[ **vsi**]{lang="EN-US"}]{#struct_0_10012_x1780_315275079}[命令用来删除指定的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo** **vsi**]命令用来删除指定的VSI。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x2100749141}
+【命令】
 
-[**[vsi]{lang="IT"}**]{#struct_0_10012_x1780_x1432470832}[ *vsi-name* \[ **hub-spoke** \]]{lang="IT"}
+**[vsi**] *vsi-name* [ **hub-spoke** ]
 
-[**[undo]{lang="IT"}**]{#struct_0_10012_x1780_x1070554268}[ ]{lang="IT"}**[vsi]{lang="IT"}**[ *vsi-name*]{lang="IT"}
+**[undo**]**vsi** *vsi-name*
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1204010011}
+【缺省情况】
 
-[[设备上不存在任何]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x154590231}[。]{style="font-family:宋体"}
+设备上不存在任何VSI。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_113570409}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_10012_x1780_x742768057}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_314816324}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_1257817758}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_522908623}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_414005671}
+【参数】
 
-[*[vsi-name]{lang="EN-US"}*]{#struct_0_10012_x1780_664367922}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[vsi-name*]：VSI的名称，为1～31个字符的字符串，区分大小写。
 
-[**[hub-spoke]{lang="IT"}**]{#struct_0_10012_x1780_x2066727265}**[：]{style="font-family:宋体"}**[指定]{style="font-family:宋体"}[VSI]{lang="IT"}[具有]{style="font-family:宋体"}[hub-spoke]{lang="EN-US"}[能力。如果不指定本参数，则表示]{style="font-family:宋体"}[VSI]{lang="IT"}[不]{style="font-family:宋体"}[具有]{style="font-family:宋体"}[hub-spoke]{lang="EN-US"}[能力。]{style="font-family:宋体"}
+**[hub-spoke**]**：**指定VSI具有hub-spoke能力。如果不指定本参数，则表示VSI不具有hub-spoke能力。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1397185113}
+【使用指导】
 
-[[在同一个]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_1483214289}[下，可以同时使用不同的方式（]{style="font-family:宋体"}[LDP]{lang="EN-US"}[、]{style="font-family:宋体"}[BGP]{lang="EN-US"}[、静态方式等）建立多条]{style="font-family:宋体"}[PW]{lang="EN-US"}[。]{style="font-family:宋体"}
+在同一个VSI下，可以同时使用不同的方式（LDP、BGP、静态方式等）建立多条PW。
 
-[[Hub-Spoke]{lang="EN-US"}]{#struct_0_10012_x1780_314750788}[是]{style="font-family:宋体"}[VPLS]{lang="EN-US"}[的一种组网应用方式。在这种组网方式下，存在一个中心站点（]{style="font-family:宋体"}[Hub]{lang="EN-US"}[站点）和多个分支站点（]{style="font-family:宋体"}[Spoke]{lang="EN-US"}[站点），]{style="font-family:宋体"}[Spoke]{lang="EN-US"}[站点之间的数据必须通过]{style="font-family:宋体"}[Hub]{lang="EN-US"}[站点进行交换，而不允许各个]{style="font-family:宋体"}[Spoke]{lang="EN-US"}[站点之间直接进行数据交换。]{style="font-family:宋体"}
+Hub-Spoke是VPLS的一种组网应用方式。在这种组网方式下，存在一个中心站点（Hub站点）和多个分支站点（Spoke站点），Spoke站点之间的数据必须通过Hub站点进行交换，而不允许各个Spoke站点之间直接进行数据交换。
 
-[[在]{style="font-family:宋体"}[Hub-Spoke]{lang="EN-US"}]{#struct_0_10012_x1780_1034155178}[组网中，需要指定]{style="font-family:宋体"}[VSI]{lang="IT"}[具有]{style="font-family:宋体"}[hub-spoke]{lang="EN-US"}[能力。]{style="font-family:宋体"}[使能]{style="font-family:宋体"}[hub-spoke]{lang="EN-US"}[能力的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的链路（]{style="font-family:宋体"}[AC]{lang="EN-US"}[或]{style="font-family:宋体"}[PW]{lang="EN-US"}[）中只能有一个]{style="font-family:宋体"}[Hub]{lang="EN-US"}[链路（朝向中心站点方向的链路），其它都是]{style="font-family:宋体"}[Spoke]{lang="EN-US"}[链路（朝向分支站点方向的链路）。缺省情况下，该]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的所有链路均为]{style="font-family:宋体"}[Spoke]{lang="EN-US"}[链路，需要在执行]{style="font-family:宋体"}**[xconnect]{lang="EN-US"}**[命令或]{style="font-family:宋体"}**[peer]{lang="EN-US"}**[命令时通过]{style="font-family:宋体"}**[hub]{lang="EN-US"}**[关键字手工将]{style="font-family:宋体"}[AC]{lang="EN-US"}[或]{style="font-family:宋体"}[PW]{lang="EN-US"}[指定为]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的]{style="font-family:宋体"}[Hub]{lang="EN-US"}[链路。]{style="font-family:宋体"}
+在Hub-Spoke组网中，需要指定VSI具有hub-spoke能力。使能hub-spoke能力的VSI内的链路（AC或PW）中只能有一个Hub链路（朝向中心站点方向的链路），其它都是Spoke链路（朝向分支站点方向的链路）。缺省情况下，该VSI内的所有链路均为Spoke链路，需要在执行**xconnect**命令或**peer**命令时通过**hub**关键字手工将AC或PW指定为VSI内的Hub链路。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1715286536}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x2139051480}[创建名为]{style="font-family:宋体"}[vpls1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+\# 创建名为vpls1的VSI，并进入VSI视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_x1618876864}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpls1]{lang="EN-US"}
+Sysname vsi vpls1
 
-[\[Sysname-vsi-vpls1\] ]{lang="EN-US"}
+Sysname-vsi-vpls1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_554068202}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn vsi]{lang="EN-US"}**]{#struct_0_10012_x1780_1506363999}
-:::
-
-::: {#-216238939 .myid}
-[]{#_Toc404791683}[]{#struct_0_10012_x1780_314947396}
+·**display l2vpn vsi**
 
 **VPLS \-- VPLS配置命令 \-- xconnect vsi**
 
 ------------------------------------------------------------------------
 
-[**[xconnect vsi]{lang="EN-US"}**]{#struct_0_10012_x1780_1612695359}[命令用来将接口或以太网服务实例与]{style="font-family:宋体"}[VSI]{lang="EN-US"}[关联，并配置和]{style="font-family:宋体"}[track]{lang="EN-US"}[项的联动功能。]{style="font-family:宋体"}
+**[xconnect vsi**]命令用来将接口或以太网服务实例与VSI关联，并配置和track项的联动功能。
 
-[**[undo]{lang="EN-US"}**[ **xconnect vsi**]{lang="EN-US"}]{#struct_0_10012_x1780_x1396874576}[命令用来取消接口或以太网服务实例]{style="font-family:宋体"}[与]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的关联及和]{style="font-family:宋体"}[track]{lang="EN-US"}[的联动。]{style="font-family:宋体"}
+**[undo** **xconnect vsi**]命令用来取消接口或以太网服务实例与VSI的关联及和track的联动。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_706993090}
+【命令】
 
-[**[xconnect vsi ]{lang="EN-US"}***[vsi-name ]{lang="EN-US"}*[\[ **access-mode** { **ethernet** \| **vlan** } \| **hub** \] \* \[ **track** *track-entry-number*&\<1-3\> \]]{lang="EN-US"}]{#struct_0_10012_x1780_x21611729}
+**[xconnect vsi ***vsi-name *[[ **access-mode** { **ethernet** \| **vlan** } \| **hub** ] \*  **track** *track-entry-number*&\<1-3\> ]]
 
-[**[undo xconnect vsi]{lang="EN-US"}**]{#struct_0_10012_x1780_234374830}
+**[undo xconnect vsi**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1524882446}
+【缺省情况】
 
-[[接口或以太网服务实例没有]{style="font-family:宋体"}]{#struct_0_10012_x1780_1116019729}[与]{style="font-family:宋体"}[VSI]{lang="EN-US"}[关联，且未启动和]{style="font-family:宋体"}[track]{lang="EN-US"}[项的联动功能。]{style="font-family:宋体"}
+接口或以太网服务实例没有与VSI关联，且未启动和track项的联动功能。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1836829340}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_10012_x1780_314881860}[以太网服务实例视图]{style="font-family:宋体"}
+接口视图/以太网服务实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x714547516}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10012_x1780_x2109913321}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10012_x1780_143675836}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x216024680}
+【参数】
 
-[*[vsi-name]{lang="EN-US"}*]{#struct_0_10012_x1780_601072669}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[vsi-name*]：VSI的名称，为1～31个字符的字符串，区分大小写。
 
-[**[access-mode]{lang="EN-US"}**]{#struct_0_10012_x1780_766824390}[：指定]{style="font-family:宋体"}[接入]{style="font-family:宋体"}[模式。当关联]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[AC]{lang="EN-US"}[为以太网服务实例时，可以指定本参数，接入模式缺省为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[；当]{style="font-family:宋体"}[AC]{lang="EN-US"}[为三层以太网接口时，接入模式始终为]{style="font-family:宋体"}[Ethernet]{lang="EN-US"}[，不可以指定本参数；当]{style="font-family:宋体"}[AC]{lang="EN-US"}[为三层以太网子接口、]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口时，接入模式始终为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，不可以指定本参数。]{style="font-family:宋体"}
+**[access-mode**]：指定接入模式。当关联VSI的AC为以太网服务实例时，可以指定本参数，接入模式缺省为VLAN；当AC为三层以太网接口时，接入模式始终为Ethernet，不可以指定本参数；当AC为三层以太网子接口、VLAN接口时，接入模式始终为VLAN，不可以指定本参数。
 
-[**[ethernet]{lang="EN-US"}**]{#struct_0_10012_x1780_x1243965484}[：指定]{style="font-family:宋体"}[接入模式]{style="font-family:宋体"}[为]{style="font-family:宋体"}[Ethernet]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[ethernet**]：指定接入模式为Ethernet。
 
-[**[vlan]{lang="EN-US"}**]{#struct_0_10012_x1780_315078468}[：指定]{style="font-family:宋体"}[接入模式]{style="font-family:宋体"}[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vlan**]：指定接入模式为VLAN。
 
-[**[hub]{lang="EN-US"}**]{#struct_0_10012_x1780_785992254}[：指定]{style="font-family:宋体"}[AC]{lang="EN-US"}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内为]{style="font-family:宋体"}[hub]{lang="EN-US"}[链路。与使能了]{style="font-family:宋体"}[hub-spoke]{lang="EN-US"}[能力的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[关联的]{style="font-family:宋体"}[AC]{lang="EN-US"}[缺省为]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的]{style="font-family:宋体"}[spoke]{lang="EN-US"}[链路。]{style="font-family:宋体"}[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[hub**]：指定AC在VSI内为hub链路。与使能了hub-spoke能力的VSI关联的AC缺省为VSI内的spoke链路。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[track]{lang="EN-US"}**]{#struct_0_10012_x1780_1762000378}[：]{style="font-family:宋体"}[配置接口或以太网服务实例与指定]{style="font-family:宋体"}[track]{lang="EN-US"}[项联动。]{style="font-family:宋体"}
+**[track**]：配置接口或以太网服务实例与指定track项联动。
 
-[*[track-entry-number]{lang="EN-US"}*[&\<1-3\>]{lang="EN-US"}]{#struct_0_10012_x1780_958878674}[：]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的序号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1024]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-3\>]{lang="EN-US"}[表示可以输入]{style="font-family:宋体"}[1]{lang="EN-US"}[到]{style="font-family:宋体"}[3]{lang="EN-US"}[个序号，每个序号之间使用空格分隔。]{style="font-family:
-宋体"}
+*[track-entry-number*&\<1-3\>]：Track项的序号，取值范围为1～1024。&\<1-3\>表示可以输入1到3个序号，每个序号之间使用空格分隔。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1392565446}
+【使用指导】
 
-[[在接口视图下执行本命令后，从接口接收到的报文将通过查找关联]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x178919002}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表进行转发；在某个接口的以太网服务实例视图下执行本命令后，从该接口接收到的、符合以太网服务实例报文匹配规则的报文，将通过查找关联]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表进行转发。]{style="font-family:宋体"}
+在接口视图下执行本命令后，从接口接收到的报文将通过查找关联VSI的MAC地址表进行转发；在某个接口的以太网服务实例视图下执行本命令后，从该接口接收到的、符合以太网服务实例报文匹配规则的报文，将通过查找关联VSI的MAC地址表进行转发。
 
-[[接入模式是]{style="font-family:宋体"}[PE]{lang="EN-US"}]{#struct_0_10012_x1780_x1988171407}[对从]{style="font-family:宋体"}[CE]{lang="EN-US"}[收到的以太网帧携带的外层]{style="font-family:宋体"}[VLAN Tag]{lang="EN-US"}[的理解方式，以及]{style="font-family:宋体"}[PE]{lang="EN-US"}[向]{style="font-family:宋体"}[CE]{lang="EN-US"}[发送以太网帧的方式。接入模式分为两种：]{style="font-family:宋体"}
+接入模式是PE对从CE收到的以太网帧携带的外层VLAN Tag的理解方式，以及PE向CE发送以太网帧的方式。接入模式分为两种：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VLAN]{lang="EN-US"}]{#struct_0_10012_x1780_608491348}[接入模式：]{style="font-family:宋体"}[CE]{lang="EN-US"}[发送给]{style="font-family:宋体"}[PE]{lang="EN-US"}[的以太网帧头需要带有一个]{style="font-family:宋体"}[VLAN Tag]{lang="EN-US"}[，该]{style="font-family:宋体"}[Tag]{lang="EN-US"}[被理解为]{style="font-family:宋体"}[P-Tag]{lang="EN-US"}[，即服务提供商网络为了区分用户而压入的"服务定界符"。]{style="font-family:宋体"}[PE]{lang="EN-US"}[发送以太网帧给]{style="font-family:宋体"}[CE]{lang="EN-US"}[时，也需要携带]{style="font-family:宋体"}[P-Tag]{lang="EN-US"}[。]{style="font-family:宋体"}
+·VLAN接入模式：CE发送给PE的以太网帧头需要带有一个VLAN Tag，该Tag被理解为P-Tag，即服务提供商网络为了区分用户而压入的"服务定界符"。PE发送以太网帧给CE时，也需要携带P-Tag。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Ethernet]{lang="EN-US"}]{#struct_0_10012_x1780_579134961}[接入模式：]{lang="EN-US" style="font-family:宋体"}[CE]{lang="EN-US"}[发送给]{lang="EN-US" style="font-family:宋体"}[PE]{lang="EN-US"}[的以太网帧头中如果带有]{lang="EN-US" style="font-family:宋体"}[VLAN Tag]{lang="EN-US"}[，则该]{lang="EN-US" style="font-family:宋体"}[Tag]{lang="EN-US"}[被理解为]{lang="EN-US" style="font-family:宋体"}[U-Tag]{lang="EN-US"}[，即用户网络的内部]{lang="EN-US" style="font-family:宋体"}[VLAN Tag]{lang="EN-US"}[，对于]{lang="EN-US" style="font-family:宋体"}[PE]{lang="EN-US"}[设备没有意义。]{lang="EN-US" style="font-family:宋体"}[PE]{lang="EN-US"}[发送以太网帧给]{style="font-family:宋体"}[CE]{lang="EN-US"}[时，不需要携带]{style="font-family:宋体"}[P-Tag]{lang="EN-US"}[。]{style="font-family:宋体"}
+·Ethernet接入模式：CE发送给PE的以太网帧头中如果带有VLAN Tag，则该Tag被理解为U-Tag，即用户网络的内部VLAN Tag，对于PE设备没有意义。PE发送以太网帧给CE时，不需要携带P-Tag。
 
-[[配置接口或以太网服务实例与]{style="font-family:宋体"}[track]{lang="EN-US"}]{#struct_0_10012_x1780_953974378}[联动后，仅当关联的]{style="font-family:宋体"}[track]{lang="EN-US"}[项中至少有一个状态为]{style="font-family:宋体"}[positive]{lang="EN-US"}[时，]{style="font-family:宋体"}[AC]{lang="EN-US"}[的状态才会]{style="font-family:宋体"}[up]{lang="EN-US"}[，否则，]{style="font-family:宋体"}[AC]{lang="EN-US"}[的状态为]{style="font-family:宋体"}[down]{lang="EN-US"}[。]{style="font-family:宋体"}
+配置接口或以太网服务实例与track联动后，仅当关联的track项中至少有一个状态为positive时，AC的状态才会up，否则，AC的状态为down。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_10012_x1780_x20500905}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在以太网服务实例下配置该命令前，必须先配置]{lang="EN-US" style="font-family:宋体"}**[encapsulation]{lang="EN-US"}**]{#struct_0_10012_x1780_315012932}[命令]{lang="EN-US" style="font-family:
-宋体"}[。]{lang="EN-US" style="font-family:宋体"}
+·在以太网服务实例下配置该命令前，必须先配置**encapsulation**命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[只有使能了]{lang="EN-US" style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10012_x1780_x431076177}[的]{lang="EN-US" style="font-family:宋体"}[Hub-Spoke]{lang="EN-US"}[能力后，才可以进一步指定链路类型为]{lang="EN-US" style="font-family:宋体"}[Hub]{lang="EN-US"}[链路或者]{lang="EN-US" style="font-family:宋体"}[Spoke]{lang="EN-US"}[链路，缺省的链路类型为]{lang="EN-US" style="font-family:宋体"}[Spoke]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·只有使能了VSI的Hub-Spoke能力后，才可以进一步指定链路类型为Hub链路或者Spoke链路，缺省的链路类型为Spoke。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10012_x1780_1770715254}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10012_x1780_x1518169487}[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[下采用以太网服务实例]{style="font-family:宋体"}[200]{lang="EN-US"}[来匹配外层]{style="font-family:宋体"}[VLAN Tag]{lang="EN-US"}[为]{style="font-family:宋体"}[200]{lang="EN-US"}[的报文，将该以太网服务实例与名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[关联，并指定]{style="font-family:宋体"}[AC]{lang="EN-US"}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内为]{style="font-family:宋体"}[hub]{lang="EN-US"}[链路，以及和]{style="font-family:宋体"}[track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[、]{style="font-family:
-宋体"}[2]{lang="EN-US"}[和]{style="font-family:宋体"}[3]{lang="EN-US"}[联动。]{style="font-family:宋体"}
+\# 接口GigabitEthernet1/0/1下采用以太网服务实例200来匹配外层VLAN Tag为200的报文，将该以太网服务实例与名为vpn1的VSI关联，并指定AC在VSI内为hub链路，以及和track项1、2和3联动。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10012_x1780_1960124573}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1 hub-spoke]{lang="EN-US"}
+Sysname vsi vpn1 hub-spoke
 
-[\[Sysname-vsi-vpn1\] quit]{lang="EN-US"}
+Sysname-vsi-vpn1 quit
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] service-instance 200]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 service-instance 200
 
-[\[Sysname-GigabitEthernet1/0/1-srv200\] encapsulation s-vid 200]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1-srv200 encapsulation s-vid 200
 
-[\[Sysname-GigabitEthernet1/0/1-srv200\] xconnect vsi vpn1 hub track 1 2 3]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1-srv200 xconnect vsi vpn1 hub track 1 2 3
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10012_x1780_x1497618916}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn interface]{lang="EN-US"}**]{#struct_0_10012_x1780_66245660}
+·**display l2vpn interface**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn service-instance]{lang="EN-US"}**]{#struct_0_10012_x1780_315209540}
+·**display l2vpn service-instance**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[encapsulation]{lang="EN-US"}**]{#struct_0_10012_x1780_x1294936696}
+·**encapsulation**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vsi]{lang="EN-US"}**]{#struct_0_10012_x1780_1830671670}
-:::
+·**vsi**

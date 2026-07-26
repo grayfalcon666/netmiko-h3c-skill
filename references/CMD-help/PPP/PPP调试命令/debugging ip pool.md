@@ -1,2214 +1,2088 @@
-::: {#-409330805 .myid}
-[]{#_Toc404784817}[]{#struct_0_52071_x1881_x1422526222}[]{#_Toc340748465}
 
 **PPP \-- PPP调试命令 \-- debugging ip pool**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_52071_x1881_2079638063}
+【命令】
 
-[**[debugging ip pool]{lang="EN-US"}**[ { **all** \| **error** \| **event** }]{lang="EN-US"}]{#struct_0_52071_x1881_1734312946}
+**[debugging ip pool**[ { **all** \| **error** \| **event** }]]
 
-[**[undo debugging ip pool]{lang="EN-US"}**[ { **all** \| **error** \| **event** }]{lang="EN-US"}]{#struct_0_52071_x1881_x1955332489}
+**[undo debugging ip pool**[ { **all** \| **error** \| **event** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_52071_x1881_2141066517}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_52071_x1881_1458469812}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_52071_x1881_470963401}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_52071_x1881_x977018345}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_52071_x1881_x1290445633}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_52071_x1881_x374395226}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_52071_x1881_x713007119}[：表示所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示所有调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_52071_x1881_1563117140}[：表示错误调试信息开关。]{style="font-family:宋体"}
+**[error**]：表示错误调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_52071_x1881_x1258585107}[：表示事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示事件调试信息开关。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_52071_x1881_x1721676644}
+【使用指导】
 
-[**[debugging ip pool]{lang="FR"}**]{#struct_0_52071_x1881_2141132053}[命令用来打开]{style="font-family:宋体"}[PPP]{lang="FR"}[地址池模块]{style="font-family:宋体"}[的调试信息开关。]{style="font-family:宋体"}**[undo debugging ip pool]{lang="FR"}**[命令用来关闭]{style="font-family:宋体"}[PPP]{lang="FR"}[地址池模块]{style="font-family:宋体"}[的调试信息开关。]{style="font-family:宋体"}
+**[debugging ip pool**]命令用来打开PPP地址池模块的调试信息开关。**undo debugging ip pool**命令用来关闭PPP地址池模块的调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_52071_x1881_x1700901447}[地址池模块的所有调试信息开关均处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，PPP地址池模块的所有调试信息开关均处于关闭状态。
 
-[[表1-1 ]{lang="EN-US"}[debugging ip pool error]{lang="EN-US"}]{#struct_0_52071_x1881_x1071489587}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging ip pool error命令输出信息描述表
 
-[]{#table_struct_0_x1886933011}[[字段]{style="font-family:黑体"}]{#struct_0_52071_x1881_356584313}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_52071_x1881_990422961}
+描述
 
-[[No IP address available in the IP pool *pool-name*]{lang="EN-US"}]{#struct_0_52071_x1881_x544253146}
+No IP address available in the IP pool *pool-name*
 
-[[分配]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_52071_x1881_x1457349620}[地址失败，地址池]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址已耗尽]{style="font-family:宋体"}
+分配IP地址失败，地址池IP地址已耗尽
 
-[[Failed to assgin IP address from the IP pool *pool-name* ]{lang="EN-US"}]{#struct_0_52071_x1881_x1037102897}
+Failed to assgin IP address from the IP pool *pool-name*
 
-[[从地址池申请]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_52071_x1881_2141590806}[地址失败]{style="font-family:宋体"}
+从地址池申请IP地址失败
 
-[[Invalid IP address assignment request]{lang="EN-US"}]{#struct_0_52071_x1881_x2088487048}
+Invalid IP address assignment request
 
-[[非法的]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_52071_x1881_x2136655337}[地址分配请求]{style="font-family:宋体"}
+非法的IP地址分配请求
 
-[[Invalid IP address release request]{lang="EN-US"}]{#struct_0_52071_x1881_x1398919899}
+Invalid IP address release request
 
-[[非法的]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_52071_x1881_2030896498}[地址释放请求]{style="font-family:宋体"}
+非法的IP地址释放请求
 
-[[Failed to create an expired timer]{lang="EN-US"}]{#struct_0_52071_x1881_x1470095771}
+Failed to create an expired timer
 
-[[创建回收静默地址定时器失败]{style="font-family:宋体"}]{#struct_0_52071_x1881_x167602613}
+创建回收静默地址定时器失败
 
-[[IP pool *pool-name* dose not existed, failed to assign IP address]{lang="EN-US"}]{#struct_0_52071_x1881_2141656342}
+IP pool *pool-name* dose not existed, failed to assign IP address
 
-[[地址池不存在，分配地址失败]{style="font-family:宋体"}]{#struct_0_52071_x1881_x1700496391}
+地址池不存在，分配地址失败
 
-[ ]{lang="EN-US"}
+表1-2 debugging ip pool event命令输出信息描述表
 
-[[表1-2 ]{lang="EN-US"}[debugging ip pool event]{lang="EN-US"}]{#struct_0_52071_x1881_x293585729}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1884591134}[[字段]{style="font-family:黑体"}]{#struct_0_52071_x1881_1845330901}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_52071_x1881_1133986809}
+Received an IP address assignment request
 
-[[Received an IP address assignment request]{lang="EN-US"}]{#struct_0_52071_x1881_x1390662978}
+主控板收到地址分配请求消息
 
-[[主控板收到地址分配请求消息]{style="font-family:宋体"}]{#struct_0_52071_x1881_x1555084839}
+Created an expired timer
 
-[[Created an expired timer]{lang="EN-US"}]{#struct_0_52071_x1881_2141721878}
+创建静默地址定时器
 
-[[创建静默地址定时器]{style="font-family:宋体"}]{#struct_0_52071_x1881_667462614}
+Destroyed an expired timer
 
-[[Destroyed an expired timer]{lang="EN-US"}]{#struct_0_52071_x1881_1552142841}
+删除静默地址定时器
 
-[[删除静默地址定时器]{style="font-family:宋体"}]{#struct_0_52071_x1881_1577925567}
+Assigned an IP address *ip-address* from free-list
 
-[[Assigned an IP address *ip-address* from free-list]{lang="EN-US"}]{#struct_0_52071_x1881_1796772278}
+从空闲地址列表中分配一个地址
 
-[[从空闲地址列表中分配一个地址]{style="font-family:宋体"}]{#struct_0_52071_x1881_x1615106290}
+Assigned an IP address *ip-address* from expired-list
 
-[[Assigned an IP address *ip-address* from expired-list]{lang="EN-US"}]{#struct_0_52071_x1881_2141787414}
+从静默地址列表中分配一个地址
 
-[[从静默地址列表中分配一个地址]{style="font-family:宋体"}]{#struct_0_52071_x1881_x2077102034}
+IP address *ip-address* successfully assigned
 
-[[IP address *ip-address* successfully assigned]{lang="EN-US"}]{#struct_0_52071_x1881_1197883621}
+分配地址成功
 
-[[分配地址成功]{style="font-family:宋体"}]{#struct_0_52071_x1881_x365626922}
+Received an IP address release request
 
-[[Received an IP address release request]{lang="EN-US"}]{#struct_0_52071_x1881_x809444058}
+主控板收到地址回收请求消息
 
-[[主控板收到地址回收请求消息]{style="font-family:宋体"}]{#struct_0_52071_x1881_158974929}
+Released the IP address *ip-address* to the free-list
 
-[[Released the IP address *ip-address* to the free-list]{lang="EN-US"}]{#struct_0_52071_x1881_x2130491686}
+回收地址到空闲地址列表中
 
-[[回收地址到空闲地址列表中]{style="font-family:宋体"}]{#struct_0_52071_x1881_2141852950}
+Released the IP address *ip-address* to the expired-list
 
-[[Released the IP address *ip-address* to the expired-list]{lang="EN-US"}]{#struct_0_52071_x1881_x1286714084}
+回收地址到静默地址列表中
 
-[[回收地址到静默地址列表中]{style="font-family:宋体"}]{#struct_0_52071_x1881_x840782158}
+IP address *ip-address* successfully released
 
-[[IP address *ip-address* successfully released]{lang="EN-US"}]{#struct_0_52071_x1881_577972280}
+回收地址成功
 
-[[回收地址成功]{style="font-family:宋体"}]{#struct_0_52071_x1881_x151319073}
+Received a smooth-start message
 
-[[Received a smooth-start message]{lang="EN-US"}]{#struct_0_52071_x1881_2141918486}
+主控板收到接口板的地址池数据平滑开始消息
 
-[[主控板收到接口板的地址池数据平滑开始消息]{style="font-family:宋体"}]{#struct_0_52071_x1881_x950281508}
+Received a smooth-end message
 
-[[Received a smooth-end message]{lang="EN-US"}]{#struct_0_52071_x1881_x658604724}
+主控板收到接口板的地址池数据平滑结束消息
 
-[[主控板收到接口板的地址池数据平滑结束消息]{style="font-family:宋体"}]{#struct_0_52071_x1881_32841820}
+【举例】
 
-[ ]{lang="EN-US"}
+\# 两台集中式设备用Serial接口连接，链路封装PPP协议，本端配置通过地址池为对端分配地址和本端IP地址，对端配置IP地址可协商属性，打开PPP地址池的事件调试信息开关。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_52071_x1881_974224958}
+\<Sysname\> debugging ip pool event
 
-[[\# ]{lang="EN-US"}]{#struct_0_52071_x1881_x1127974118}[两台集中式设备用]{style="font-family:宋体"}[Serial]{lang="EN-US"}[接口连接，链路封装]{style="font-family:宋体"}[PPP]{lang="EN-US"}[协议，本端配置通过地址池为对端分配地址和本端]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，对端配置]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址可协商属性，打开]{style="font-family:宋体"}[PPP]{lang="EN-US"}[地址池的事件调试信息开关。]{style="font-family:宋体"}
+\*Nov 21 15:58:48:129 2012 Sysname PPP/7/IPPOOL_EVENT: -MDC=1;
 
-[[\<Sysname\> debugging ip pool event]{lang="EN-US"}]{#struct_0_52071_x1881_x771327259}
+  Assigned an IP address 1.1.1.2 from free-list.
 
-[\*Nov 21 15:58:48:129 2012 Sysname PPP/7/IPPOOL_EVENT: -MDC=1;]{lang="EN-US"}
+*// 从空闲地址列表中分配一个地址*
 
-[  Assigned an IP address 1.1.1.2 from free-list.]{lang="EN-US"}
+\*Nov 21 15:58:48:130 2012 Sysname PPP/7/IPPOOL_EVENT: -MDC=1;
 
-[*[// ]{lang="EN-US"}*]{#struct_0_52071_x1881_2141984022}*[从空闲地址列表中分配一个地址]{style="font-family:宋体"}*
+  IP address 1.1.1.2 successfully assigned.
 
-[[\*Nov 21 15:58:48:130 2012 Sysname PPP/7/IPPOOL_EVENT: -MDC=1;]{lang="EN-US"}]{#struct_0_52071_x1881_1416061854}
-
-[  IP address 1.1.1.2 successfully assigned.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_52071_x1881_1317703821}*[地址池分配地址成功]{style="font-family:宋体"}*
-
-::: {#-629131661 .myid}
-[]{#_Toc404784818}[]{#struct_0_52071_x1881_x368924939}
+*// 地址池分配地址成功*
 
 **PPP \-- PPP调试命令 \-- debugging ppp**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_52071_x1881_1551365140}
+【命令】
 
-[**[debugging ppp ]{lang="EN-US"}**[{ **all** \| { **chap** \| **ipcp** \| **ipv6cp** \| **lcp** \| **mp** \| **mplscp** \| **osicp** \| **pap** } { **all** \| **error** \| **event** \| **packet** \| **state** } \| { **ip** \| **ipv6** \| **lqm** \| **mpls** \| **osi** } **packet** \| **external event** } \[ **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_52071_x1881_1692393008}
+**[debugging ppp **[{ **all** \| { **chap** \| **ipcp** \| **ipv6cp** \| **lcp** \| **mp** \| **mplscp** \| **osicp** \| **pap** } { **all** \| **error** \| **event** \| **packet** \| **state** } \| { **ip** \| **ipv6** \| **lqm** \| **mpls** \| **osi** } **packet** \| **external event** } [ **interface** *interface-type interface-number* ]]]
 
-[**[undo debugging ppp ]{lang="EN-US"}**[{ **all** \| { **chap** \| **ipcp** \| **ipv6cp** \| **lcp** \| **mp** \| **mplscp** \| **osicp** \| **pap** } { **all** \| **error** \| **event** \| **packet** \| **state** } \| { **ip** \| **ipv6** \| **lqm** \| **mpls** \| **osi** } **packet \| external event** } \[ **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_52071_x1881_x757138690}
+**[undo debugging ppp **[{ **all** \| { **chap** \| **ipcp** \| **ipv6cp** \| **lcp** \| **mp** \| **mplscp** \| **osicp** \| **pap** } { **all** \| **error** \| **event** \| **packet** \| **state** } \| { **ip** \| **ipv6** \| **lqm** \| **mpls** \| **osi** } **packet \| external event** } [ **interface** *interface-type interface-number* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_52071_x1881_341743316}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_52071_x1881_119709528}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_52071_x1881_x412895626}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_52071_x1881_2142049558}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_52071_x1881_x696102707}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_52071_x1881_1715551339}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_52071_x1881_1036357607}[：]{style="font-family:宋体"}[PPP]{lang="EN-US"}[的所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：PPP的所有调试信息开关。
 
-[**[chap]{lang="FR"}**]{#struct_0_52071_x1881_x1475365011}[：]{style="font-family:宋体"}[质询握手认证协议调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[chap**]：质询握手认证协议调试信息开关。
 
-[**[ipcp]{lang="FR"}**]{#struct_0_52071_x1881_1685419316}[：]{style="font-family:宋体"}[IP]{lang="FR"}[控制协议]{style="font-family:
-宋体"}[调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[ipcp**]：IP控制协议调试信息开关。
 
-[**[ipv6cp]{lang="FR"}**]{#struct_0_52071_x1881_x980924751}[：]{style="font-family:宋体"}[IPv6]{lang="FR"}[控制协议]{style="font-family:
-宋体"}[调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[ipv6cp**]：IPv6控制协议调试信息开关。
 
-[**[lcp]{lang="FR"}**]{#struct_0_52071_x1881_1521096632}[：]{style="font-family:宋体"}[链路]{style="font-family:宋体"}[控制协议]{style="font-family:宋体"}[调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[lcp**]：链路控制协议调试信息开关。
 
-[**[mp]{lang="FR"}**]{#struct_0_52071_x1881_x337966064}[：多条]{style="font-family:宋体"}[PPP]{lang="FR"}[链路捆绑协议调试信息开关。]{style="font-family:宋体"}
+**[mp**]：多条PPP链路捆绑协议调试信息开关。
 
-[**[mplscp]{lang="FR"}**]{#struct_0_52071_x1881_x2105587028}[：]{style="font-family:宋体"}[MPLS]{lang="FR"}[控制协议]{style="font-family:
-宋体"}[调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[mplscp**]：MPLS控制协议调试信息开关。
 
-[**[osicp]{lang="FR"}**]{#struct_0_52071_x1881_x1059765745}[：]{style="font-family:宋体"}[OSI]{lang="FR"}[控制协议]{style="font-family:
-宋体"}[调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[osicp**]：OSI控制协议调试信息开关。
 
-[**[pap]{lang="FR"}**]{#struct_0_52071_x1881_2141066518}[：]{style="font-family:宋体"}[密码认证协议调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[pap**]：密码认证协议调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_52071_x1881_1457486772}[：]{style="font-family:宋体"}[PPP]{lang="EN-US"}[的错误调试信息开关。]{style="font-family:宋体"}
+**[error**]：PPP的错误调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_52071_x1881_x1207080728}[：]{style="font-family:宋体"}[PPP]{lang="EN-US"}[的事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：PPP的事件调试信息开关。
 
-[**[packet]{lang="EN-US"}**]{#struct_0_52071_x1881_1701529707}[：]{style="font-family:宋体"}[PPP]{lang="EN-US"}[的报文调试信息开关。]{style="font-family:宋体"}
+**[packet**]：PPP的报文调试信息开关。
 
-[**[state]{lang="EN-US"}**]{#struct_0_52071_x1881_x39437127}[：]{style="font-family:宋体"}[PPP]{lang="EN-US"}[的状态调试信息开关。]{style="font-family:宋体"}
+**[state**]：PPP的状态调试信息开关。
 
-[**[ip]{lang="FR"}**]{#struct_0_52071_x1881_383562032}[：]{style="font-family:宋体"}[IP]{lang="FR"}[调试信息开关]{style="font-family:
-宋体"}[。]{style="font-family:宋体"}
+**[ip**]：IP调试信息开关。
 
-[**[ipv6]{lang="FR"}**]{#struct_0_52071_x1881_333712605}[：]{style="font-family:宋体"}[IPv6]{lang="FR"}[调试信息开关]{style="font-family:
-宋体"}[。]{style="font-family:宋体"}
+**[ipv6**]：IPv6调试信息开关。
 
-[**[lqm]{lang="FR"}**]{#struct_0_52071_x1881_x1074824733}[：]{style="font-family:宋体"}[PPP]{lang="FR"}[链路质量监测协议]{style="font-family:
-宋体"}[调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[lqm**]：PPP链路质量监测协议调试信息开关。
 
-[**[mpls]{lang="FR"}**]{#struct_0_52071_x1881_540746569}[：]{style="font-family:宋体"}[MPLS]{lang="FR"}[调试信息开关]{style="font-family:
-宋体"}[。]{style="font-family:宋体"}
+**[mpls**]：MPLS调试信息开关。
 
-[**[osi]{lang="FR"}**]{#struct_0_52071_x1881_370104936}[：]{style="font-family:宋体"}[OSI]{lang="FR"}[调试信息开关]{style="font-family:
-宋体"}[。]{style="font-family:宋体"}
+**[osi**]：OSI调试信息开关。
 
-[**[external event]{lang="FR"}**]{#struct_0_52071_x1881_717567188}[：]{style="font-family:宋体"}[PPP]{lang="FR"}[外部事件调试信息开关。]{style="font-family:宋体"}
+**[external event**]：PPP外部事件调试信息开关。
 
-[**[interface ]{lang="FR"}**]{#struct_0_52071_x1881_2141132054}*[interface-type interface-number]{lang="FR"}*[：]{style="font-family:宋体"}[指定的接口类型和编号。]{style="font-family:宋体"}
+**[interface **]*interface-type interface-number*：指定的接口类型和编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_52071_x1881_x1700442695}
+【使用指导】
 
-[**[debugging ppp]{lang="FR"}**]{#struct_0_52071_x1881_x2045906051}[命令用来打开]{style="font-family:宋体"}[PPP]{lang="FR"}[的调试信息开关。]{style="font-family:宋体"}**[undo debugging ppp]{lang="FR"}**[命令用来关闭]{style="font-family:宋体"}[PPP]{lang="FR"}[的调试信息开关。]{style="font-family:宋体"}
+**[debugging ppp**]命令用来打开PPP的调试信息开关。**undo debugging ppp**命令用来关闭PPP的调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_52071_x1881_1458973145}[的所有调试信息开关均处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，PPP的所有调试信息开关均处于关闭状态。
 
-[]{#struct_0_52071_x1881_x240597475}[[表1-3 ]{lang="EN-US"}[debugging ppp *protocol-type* error]{lang="EN-US"}]{#_Toc130718927}[命令输出信息描述表]{style="font-family:黑体"}
+表1-3 debugging ppp *protocol-type* error命令输出信息描述表
 
-[]{#table_struct_0_x1889401693}[[字段]{style="font-family:黑体"}]{#struct_0_52071_x1881_1498925611}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_52071_x1881_x1420970664}
+描述
 
-[[PPP Error]{lang="EN-US"}]{#struct_0_52071_x1881_2141590803}
+PPP Error
 
-[[PPP]{lang="EN-US"}]{#struct_0_52071_x1881_x2088814728}[错误信息]{style="font-family:宋体"}
+PPP错误信息
 
-[*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x2023329113}
+*[interface-name*]
 
-[[接口名称]{style="font-family:宋体"}]{#struct_0_52071_x1881_1558065260}
+接口名称
 
-[*[protocol-type]{lang="EN-US"}*]{#struct_0_52071_x1881_x28844529}
+*[protocol-type*]
 
-[[协议类型，取值为：]{style="font-family:宋体"}[LCP]{lang="EN-US"}]{#struct_0_52071_x1881_x662139912}[、]{style="font-family:宋体"}[IPCP]{lang="EN-US"}[、]{style="font-family:宋体"}[OSICP]{lang="EN-US"}[、]{style="font-family:宋体"}[IPv6CP]{lang="EN-US"}[、]{style="font-family:宋体"}[MP]{lang="EN-US"}
+协议类型，取值为：LCP、IPCP、OSICP、IPv6CP、MP
 
-[*[error-string]{lang="EN-US"}*]{#struct_0_52071_x1881_1631514754}
+*[error-string*]
 
-[[错误信息内容，取值及含义：]{style="font-family:宋体"}]{#struct_0_52071_x1881_78070278}
+错误信息内容，取值及含义：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[FSM ]{lang="EN-US"}[Illegal Event]{lang="EN-US"}]{#struct_0_52071_x1881_2141656339}[：]{style="font-family:宋体"}[状态机非法事件]{lang="EN-US" style="font-family:宋体"}
+·FSM Illegal Event：状态机非法事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Received bad Confack Packet]{lang="EN-US"}]{#struct_0_52071_x1881_x1700168716}[：]{style="font-family:
-  宋体"}[接收错误的]{lang="EN-US" style="font-family:宋体"}[配置确认]{style="font-family:宋体"}[报文]{lang="EN-US" style="font-family:宋体"}
+·Received bad Confack Packet：接收错误的配置确认报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Packet Id Error]{lang="EN-US"}]{#struct_0_52071_x1881_x1119967839}[：]{style="font-family:宋体"}[报文]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}[错误]{lang="EN-US" style="font-family:宋体"}
+·Packet Id Error：报文ID错误
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Failed to send packet]{lang="EN-US"}]{#struct_0_52071_x1881_x2024044716}[：]{style="font-family:宋体"}[发送报文失败]{lang="EN-US" style="font-family:宋体"}
+·Failed to send packet：发送报文失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Received illegal event]{lang="EN-US"}]{#struct_0_52071_x1881_x902858202}[：]{style="font-family:宋体"}[接收错误的事件]{lang="EN-US" style="font-family:宋体"}
+·Received illegal event：接收错误的事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Serial line is looped back]{lang="EN-US"}]{#struct_0_52071_x1881_742168254}[：]{style="font-family:
-  宋体"}[链路回环]{lang="EN-US" style="font-family:宋体"}
+·Serial line is looped back：链路回环
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Received wrong IPCP ACK]{lang="EN-US"}]{#struct_0_52071_x1881_2141721875}[：]{style="font-family:宋体"}[接收错误]{lang="EN-US" style="font-family:宋体"}[的]{style="font-family:宋体"}[IPCP]{lang="EN-US"}[配置确认]{style="font-family:宋体"}[报文]{lang="EN-US" style="font-family:宋体"}
+·Received wrong IPCP ACK：接收错误的IPCP配置确认报文
 
-[ ]{lang="EN-US"}
+表1-4 debugging ppp *protocol-type* event命令输出信息描述表
 
-[]{#struct_0_52071_x1881_667790294}[[表1-4 ]{lang="EN-US"}[debugging ppp *protocol-type* event]{lang="EN-US"}]{#_Toc130718928}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1894105923}[[字段]{style="font-family:黑体"}]{#struct_0_52071_x1881_1421017442}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_52071_x1881_470269769}
+PPP Event
 
-[[PPP Event]{lang="EN-US"}]{#struct_0_52071_x1881_x1689293452}
+PPP事件
 
-[[PPP]{lang="EN-US"}]{#struct_0_52071_x1881_1579721519}[事件]{style="font-family:宋体"}
+*[interface-name*]
 
-[*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_68337673}
+接口名称
 
-[[接口名称]{style="font-family:宋体"}]{#struct_0_52071_x1881_x1177377119}
+*[protocol-type*]
 
-[*[protocol-type]{lang="EN-US"}*]{#struct_0_52071_x1881_2141787411}
+协议类型，取值为：LCP、IPCP、MPLSCP、OSICP、IPv6CP、MP
 
-[[协议类型，取值为：]{style="font-family:宋体"}[LCP]{lang="EN-US"}]{#struct_0_52071_x1881_x2077298642}[、]{style="font-family:宋体"}[IPCP]{lang="EN-US"}[、]{style="font-family:宋体"}[MPLSCP]{lang="EN-US"}[、]{style="font-family:宋体"}[OSICP]{lang="EN-US"}[、]{style="font-family:宋体"}[IPv6CP]{lang="EN-US"}[、]{style="font-family:宋体"}[MP]{lang="EN-US"}
+*[event*]
 
-[*[event]{lang="EN-US"}*]{#struct_0_52071_x1881_x1687119700}
+状态机事件*event*的取值及含义：
 
-[[状态机事件]{style="font-family:宋体"}*[event]{lang="EN-US"}*]{#struct_0_52071_x1881_x2061764206}[的取值及含义：]{style="font-family:宋体"}
+·Lower Up：底层up事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Lower Up]{lang="EN-US"}]{#struct_0_52071_x1881_1524555329}[：]{style="font-family:宋体"}[底层]{lang="EN-US" style="font-family:宋体"}[up]{lang="EN-US"}[事件]{lang="EN-US" style="font-family:宋体"}
+·Lower Down：底层down事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Lower Down]{lang="EN-US"}]{#struct_0_52071_x1881_1573836141}[：]{style="font-family:宋体"}[底层]{lang="EN-US" style="font-family:宋体"}[down]{lang="EN-US"}[事件]{lang="EN-US" style="font-family:宋体"}
+·Open：链路可供使用
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Open]{lang="EN-US"}]{#struct_0_52071_x1881_2141852947}[：]{style="font-family:宋体"}[链路可供使用]{lang="EN-US" style="font-family:宋体"}
+·Close：链路不提供使用
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Close]{lang="EN-US"}]{#struct_0_52071_x1881_x1286910693}[：]{style="font-family:宋体"}[链路不提供使用]{lang="EN-US" style="font-family:宋体"}
+·TO+(Timeout with counter \> 0)：超时重发事件（重传计数器大于0重发报文）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TO+(Timeout with counter \> 0)]{lang="EN-US"}]{#struct_0_52071_x1881_176699929}[：]{style="font-family:
-  宋体"}[超时重发事件（重传计数器大于]{lang="EN-US" style="font-family:宋体"}[0]{lang="EN-US"}[重发报文）]{lang="EN-US" style="font-family:宋体"}
+·TO-(Timeout with counter expired)：超时重发事件（重传计数器不大于0，不重发报文）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TO-(Timeout with counter expired)]{lang="EN-US"}]{#struct_0_52071_x1881_1539908206}[：]{style="font-family:宋体"}[超时重发事件（重传计数器不大于]{lang="EN-US" style="font-family:宋体"}[0]{lang="EN-US"}[，不重发报文）]{lang="EN-US" style="font-family:宋体"}
+·RCR+(Receive Good Configure Request)：从对端收到Configure-Request报文时，触发此事件（RCR+事件指对端的配置请求可以接受，该事件发生时，发送Configure-Ack报文作为响应）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RCR+(Receive ]{lang="EN-US"}]{#struct_0_52071_x1881_x1390430005}[Good ]{lang="EN-US"}[Config]{lang="EN-US"}[ure]{lang="EN-US"}[ Request)]{lang="EN-US"}[：]{style="font-family:宋体"}[从对端收到]{lang="EN-US" style="font-family:宋体"}[Configure-Request]{lang="EN-US"}[报文时]{lang="EN-US" style="font-family:宋体"}[，]{lang="EN-US" style="font-family:宋体"}[触发此事件]{lang="EN-US" style="font-family:
-  宋体"}[（]{style="font-family:宋体"}[RCR+]{lang="EN-US"}[事件指对端的配置请求可以接受]{lang="EN-US" style="font-family:宋体"}[，]{lang="EN-US" style="font-family:宋体"}[该事件发生时]{lang="EN-US" style="font-family:宋体"}[，]{lang="EN-US" style="font-family:宋体"}[发送]{lang="EN-US" style="font-family:
-  宋体"}[Configure-Ack]{lang="EN-US"}[报文作为响应]{lang="EN-US" style="font-family:宋体"}[）]{style="font-family:宋体"}
+·RCR-(Receive Bad Configure Request)：从对端收到Configure-Request报文时，触发此事件（RCR-事件指不接受对端的配置请求，该事件发生时，根据情况发送Configure-Nak或Configure-Rej报文作为响应）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RCR-(Receive ]{lang="EN-US"}]{#struct_0_52071_x1881_374751628}[Bad ]{lang="EN-US"}[Config]{lang="EN-US"}[ure]{lang="EN-US"}[ Request)]{lang="EN-US"}[：]{style="font-family:宋体"}[从对端收到]{lang="EN-US" style="font-family:宋体"}[Configure-Request]{lang="EN-US"}[报文时]{lang="EN-US" style="font-family:宋体"}[，]{lang="EN-US" style="font-family:宋体"}[触发此事件]{lang="EN-US" style="font-family:
-  宋体"}[（]{style="font-family:宋体"}[RCR-]{lang="EN-US"}[事件指不接受对端的配置请求]{lang="EN-US" style="font-family:宋体"}[，]{lang="EN-US" style="font-family:宋体"}[该事件发生时]{lang="EN-US" style="font-family:宋体"}[，]{lang="EN-US" style="font-family:宋体"}[根据情况发送]{lang="EN-US" style="font-family:
-  宋体"}[Configure-Nak]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[Configure-Rej]{lang="EN-US"}[报文作为响应]{lang="EN-US" style="font-family:宋体"}[）]{style="font-family:宋体"}
+·RCA(Receive Configure Ack)：收到对端对本端请求选项认可的Configure-Ack报文时事件发生
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RCA(Receive Config]{lang="EN-US"}]{#struct_0_52071_x1881_258179086}[ure]{lang="EN-US"}[ Ack)]{lang="EN-US"}[：]{style="font-family:宋体"}[收到对端对本端请求选项认可的]{lang="EN-US" style="font-family:宋体"}[Configure-Ack]{lang="EN-US"}[报文时事件发生]{lang="EN-US" style="font-family:宋体"}
+·RCN(Receive Configure Nak/Reject)：收到对端拒绝本端某些或全部请求选项的Configure-Nak/Rej报文时事件发生
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RCN(Receive Config]{lang="EN-US"}]{#struct_0_52071_x1881_2141918483}[ure]{lang="EN-US"}[ Nak/Reject)]{lang="EN-US"}[：]{style="font-family:宋体"}[收到对端拒绝本端某些或全部请求选项的]{lang="EN-US" style="font-family:宋体"}[Configure-Nak/Rej]{lang="EN-US"}[报文时事件发生]{lang="EN-US" style="font-family:宋体"}
+·RTR(Receive Terminate Request)：收到对端Terminate-Request报文，表明对端想关闭连接
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RTR(Receive Terminate Request)]{lang="EN-US"}]{#struct_0_52071_x1881_x950609188}[：]{style="font-family:
-  宋体"}[收到对端]{lang="EN-US" style="font-family:宋体"}[Terminate-Request]{lang="EN-US"}[报文，表明对端想关闭连接]{lang="EN-US" style="font-family:宋体"}
+·RTA(Receive Terminate Ack)：接收到对端Terminate-Ack报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RTA(Receive Terminate Ack)]{lang="EN-US"}]{#struct_0_52071_x1881_446046992}[：]{style="font-family:
-  宋体"}[接收到对端]{lang="EN-US" style="font-family:宋体"}[Terminate-Ack]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+·RUC(Receive Unknown Code)：收到对端发送过来的本端无法解释的报文时触发此事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RUC(Receive Unknown Code)]{lang="EN-US"}]{#struct_0_52071_x1881_1505234702}[：]{style="font-family:宋体"}[收到对端发送过来的本端无法解释的报文时触发此事件]{lang="EN-US" style="font-family:宋体"}
+·RXJ+(Receive permitted Code/Protocol Reject )：收到对端发送过来的Code-Reject或Protocol-Reject时此事件发生。RXJ+：表明被拒绝的选项可接受，即在正常范围内
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RXJ+(Receive permitted Code/Protocol Reject )]{lang="EN-US"}]{#struct_0_52071_x1881_1410659991}[：]{style="font-family:宋体"}[收到对端发送过来的]{lang="EN-US" style="font-family:宋体"}[Code-Reject]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[Protocol-Reject]{lang="EN-US"}[时此事件发生。]{lang="EN-US" style="font-family:宋体"}[RXJ+]{lang="EN-US"}[：表明被拒绝的选项可接受，即在正常范围内]{lang="EN-US" style="font-family:宋体"}
+·RXJ-(Receive catastrophic Code/Protocol Reject )：收到对端发送过来的Code-Reject或Protocol-Reject时此事件发生。RXJ-：表明被拒绝的选项对端不可接受，这将导致链接终止
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RXJ-]{lang="EN-US"}]{#struct_0_52071_x1881_2141984019}[ ]{lang="EN-US"}[(Receive catastrophic Code/Protocol Reject )]{lang="EN-US"}[：]{style="font-family:宋体"}[收到对端发送过来的]{lang="EN-US" style="font-family:宋体"}[Code-Reject]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[Protocol-Reject]{lang="EN-US"}[时此事件发生。]{lang="EN-US" style="font-family:宋体"}[RXJ-]{lang="EN-US"}[：表明被拒绝的选项对端不可接受，这将导致链接终止]{lang="EN-US" style="font-family:宋体"}
+·RXR(Receive EchoRequest/EchoReply/DiscardRequest)：当从对端接收到Echo-Request、Echo-Reply、Discard-Request报文时，事件发生。对Echo-Request报文回应Echo-Reply报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RXR(Receive EchoRequest/EchoReply/DiscardRequest)]{lang="EN-US"}]{#struct_0_52071_x1881_1416782751}[：]{style="font-family:宋体"}[当从对端接收到]{lang="EN-US" style="font-family:宋体"}[Echo-Request]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[Echo-Reply]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[Discard-Request]{lang="EN-US"}[报文时，事件发生。对]{lang="EN-US" style="font-family:宋体"}[Echo-Request]{lang="EN-US"}[报文回应]{lang="EN-US" style="font-family:宋体"}[Echo-Reply]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+*[state *]
 
-[*[state ]{lang="EN-US"}*]{#struct_0_52071_x1881_x719381613}
+PPP状态机状态，*state*取值见表 1-4(#aaa)
 
-[[PPP]{lang="EN-US"}]{#struct_0_52071_x1881_x787784257}[状态机状态，]{style="font-family:宋体"}*[state]{lang="EN-US"}*[取值见]{style="font-family:宋体"}[[表]{style="font-family:宋体"}[1-4]{lang="EN-US"}](#aaa)
+表1-5 debugging ppp external event命令输出信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表1-5 ]{lang="EN-US"}[debugging ppp external event]{lang="EN-US"}]{#struct_0_52071_x1881_623646587}[命令输出信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x1892074144}[[字段]{style="font-family:黑体"}]{#struct_0_52071_x1881_x1159548910}
+PPP External Event
 
-[[描述]{style="font-family:黑体"}]{#struct_0_52071_x1881_x778552285}
+PPP外部事件
 
-[[PPP External Event]{lang="EN-US"}]{#struct_0_52071_x1881_2142049555}
+*[interface-name*]
 
-[[PPP]{lang="EN-US"}]{#struct_0_52071_x1881_x696823603}[外部事件]{style="font-family:宋体"}
+接口名称
 
-[*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_947308759}
+*[event*]
 
-[[接口名称]{style="font-family:宋体"}]{#struct_0_52071_x1881_x157050467}
+外部事件*event*的取值及含义举例：
 
-[*[event]{lang="EN-US"}*]{#struct_0_52071_x1881_791540131}
+·PPP negotiate down, start Reset-Timer：PPP协商失败，启动Reset定时器
 
-[[外部事件]{style="font-family:宋体"}*[event]{lang="EN-US"}*]{#struct_0_52071_x1881_1976661535}[的取值及含义举例：]{style="font-family:宋体"}
+·Reset-Timer Expired, IPCP negotiate again：Reset定时器超时，IPCP重协商
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PPP]{lang="EN-US"}[ negotiate down, start Reset-Timer]{lang="EN-US"}]{#struct_0_52071_x1881_1370996775}[：]{style="font-family:宋体"}[PPP]{lang="EN-US"}[协商失败，启动]{lang="EN-US" style="font-family:宋体"}[Reset]{lang="EN-US"}[定时器]{lang="EN-US" style="font-family:宋体"}
+·PPP create rundb error：PPP创建运行DBM错误
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Reset-Timer Expired, ]{lang="EN-US"}]{#struct_0_52071_x1881_2141066515}[IPCP]{lang="EN-US"}[ negotiate again]{lang="EN-US"}[：]{style="font-family:宋体"}[Reset]{lang="EN-US"}[定时器超时，]{lang="EN-US" style="font-family:宋体"}[IPCP]{lang="EN-US"}[重协商]{lang="EN-US" style="font-family:宋体"}
+·PPP updaterundb error：更新运行DBM错误
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PPP create rundb]{lang="EN-US"}]{#struct_0_52071_x1881_1458338740}[ error]{lang="EN-US"}[：]{style="font-family:宋体"}[PPP]{lang="EN-US"}[创建运行]{lang="EN-US" style="font-family:宋体"}[DBM]{lang="EN-US"}[错误]{lang="EN-US" style="font-family:宋体"}
+·Reset-Timer Expired, reset LCP and negotiate again：Reset定时器超时，重启协商
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PPP update]{lang="EN-US"}]{#struct_0_52071_x1881_x1443640824}[ ]{lang="EN-US"}[rundb]{lang="EN-US"}[ error]{lang="EN-US"}[：]{style="font-family:宋体"}[更新运行]{lang="EN-US" style="font-family:宋体"}[DBM]{lang="EN-US"}[错误]{lang="EN-US" style="font-family:宋体"}
+·Failed to free the User ID *user*-*id*.：释放User ID失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Reset-Timer Expired, reset LCP and negotiate again]{lang="EN-US"}]{#struct_0_52071_x1881_1188874574}[：]{style="font-family:宋体"}[Reset]{lang="EN-US"}[定时器超时]{lang="EN-US" style="font-family:宋体"}[，重启协商]{style="font-family:宋体"}
+·Successfully freed the User ID *user*-*id*.：释放User ID成功
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Failed to f]{lang="EN-US"}[ree the User ID ]{lang="EN-US"}]{#struct_0_52071_x1881_x1074431514}*[user]{lang="EN-US"}*[-*id*.]{lang="EN-US"}[：释放]{style="font-family:宋体"}[User ID]{lang="EN-US"}[失败]{style="font-family:宋体"}
+·Failed to send free User ID asynchronism message.：发送释放User ID异步消息失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Successfully f]{lang="EN-US"}[ree]{lang="EN-US"}]{#struct_0_52071_x1881_x313499766}[d]{lang="EN-US"}[ the User ID ]{lang="EN-US"}*[user]{lang="EN-US"}*[-*id*.]{lang="EN-US"}[：释放]{style="font-family:宋体"}[User ID]{lang="EN-US"}[成功]{style="font-family:宋体"}
+·Failed to notify User QoS of user logon.：通知User QoS模块用户上线失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Failed to s]{lang="EN-US"}[end free User ID asynchronism message]{lang="EN-US"}]{#struct_0_52071_x1881_1401815776}[.]{lang="EN-US"}[：发送释放]{style="font-family:宋体"}[User ID]{lang="EN-US"}[异步消息失败]{style="font-family:宋体"}
+·Successfully notifiedUser QoSof user logon.：通知User QoS模块用户上线成功
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Failed to n]{lang="EN-US"}[otify]{lang="EN-US"}]{#struct_0_52071_x1881_x2010027538}[ User QoS of user logo]{lang="EN-US"}[n]{lang="EN-US"}[.]{lang="EN-US"}[：通知]{style="font-family:宋体"}[User QoS]{lang="EN-US"}[模块用户上线失败]{style="font-family:宋体"}
+·Invalid User ID. User will be logged off.：无效的User ID。用户将下线
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Successfully n]{lang="EN-US"}[otif]{lang="EN-US"}]{#struct_0_52071_x1881_x1074628122}[ied]{lang="EN-US"}[ ]{lang="EN-US"}[User QoS]{lang="EN-US"}[ ]{lang="EN-US"}[of user logo]{lang="EN-US"}[n]{lang="EN-US"}[.]{lang="EN-US"}[：通知]{style="font-family:宋体"}[User QoS]{lang="EN-US"}[模块用户上线成功]{style="font-family:宋体"}
+·Failed to notify User QoS of user logoff.：通知User QoS模块用户下线失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[I]{lang="EN-US"}[nvalid User ID. User will ]{lang="EN-US"}]{#struct_0_52071_x1881_x734401427}[be logged off.]{lang="EN-US"}[：无效的]{style="font-family:宋体"}[User ID]{lang="EN-US"}[。用户将下线]{style="font-family:宋体"}
+·Successfully notifiedUser QoSof user logoff.：通知User QoS模块用户下线成功
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Failed to n]{lang="EN-US"}[otify ]{lang="EN-US"}]{#struct_0_52071_x1881_x1590530567}[User QoS of user logoff.]{lang="EN-US"}[：通知]{style="font-family:宋体"}[User QoS]{lang="EN-US"}[模块用户下线失败]{style="font-family:宋体"}
+·There is no user profile configurationso the user will be logged off.：没有用户配置，强制用户下线
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Successfully n]{lang="EN-US"}[otif]{lang="EN-US"}]{#struct_0_52071_x1881_x1312906685}[ied]{lang="EN-US"}[ ]{lang="EN-US"}[User QoS]{lang="EN-US"}[ ]{lang="EN-US"}[of user logoff.]{lang="EN-US"}[：通知]{style="font-family:宋体"}[User QoS]{lang="EN-US"}[模块用户下线成功]{style="font-family:宋体"}
+·Notified User QoS of authorization change.：通知User QoS模块用户授权信息改变
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[There is no ]{lang="EN-US"}]{#struct_0_52071_x1881_79887427}[user profile configuration]{lang="EN-US"}[ ]{lang="EN-US"}[s]{lang="EN-US"}[o the user will ]{lang="EN-US"}[be logged ]{lang="EN-US"}[off]{lang="EN-US"}[.]{lang="EN-US"}[：没有用户配置，强制用户下线]{style="font-family:宋体"}
+·Successfullydistributed the User ID* user*-*id*.：分配User ID成功
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Notif]{lang="EN-US"}]{#struct_0_52071_x1881_x1074562586}[ied User QoS of ]{lang="EN-US"}[authorization change]{lang="EN-US"}[.]{lang="EN-US"}[：通知]{style="font-family:宋体"}[User QoS]{lang="EN-US"}[模块用户授权信息改变]{style="font-family:宋体"}
+·Failed to distribute user ID because user IDs have been used up.：User ID耗尽分配失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Successfully]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_52071_x1881_x1939808567}[d]{lang="EN-US"}[istribute]{lang="EN-US"}[d]{lang="EN-US"}[ the User ID]{lang="EN-US"}*[ user]{lang="EN-US"}*[-*id*.]{lang="EN-US"}[：分配]{style="font-family:宋体"}[User ID]{lang="EN-US"}[成功]{style="font-family:宋体"}
+·Failed to smooth UserQoS data.：平滑User QoS模块数据失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Failed to distribute user ID because u]{lang="EN-US"}[ser ID]{lang="EN-US"}]{#struct_0_52071_x1881_x1286480079}[s]{lang="EN-US"}[ ha]{lang="EN-US"}[ve]{lang="EN-US"}[ been ]{lang="EN-US"}[used up.]{lang="EN-US"}[：]{style="font-family:宋体"}[User ID]{lang="EN-US"}[耗尽分配失败]{style="font-family:宋体"}
+·Failed to notify IPv4 multicast of userlogon.：通知IPv4组播用户上线失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Failed to s]{lang="EN-US"}[mooth User]{lang="EN-US"}]{#struct_0_52071_x1881_x2033921040}[ ]{lang="EN-US"}[Qo]{lang="EN-US"}[S]{lang="EN-US"}[ data]{lang="EN-US"}[.]{lang="EN-US"}[：平滑]{style="font-family:
-  宋体"}[User QoS]{lang="EN-US"}[模块数据失败]{style="font-family:宋体"}
+·Successfully notifiedIPv4 multicast of userlogon.：通知IPv4组播用户上线成功
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Failed to n]{lang="EN-US"}[otify ]{lang="EN-US"}]{#struct_0_52071_x1881_x1074759194}[IP]{lang="EN-US"}[v4]{lang="EN-US"}[ multicast of user]{lang="EN-US"}[ ]{lang="EN-US"}[log]{lang="EN-US"}[on]{lang="EN-US"}[.]{lang="EN-US"}[：通知]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[组播用户上线失败]{style="font-family:宋体"}
+·Failed to notify IPv6 multicast of userlogon.：通知IPv6组播用户上线失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Successfully n]{lang="EN-US"}[otif]{lang="EN-US"}]{#struct_0_52071_x1881_x1877003200}[ied]{lang="EN-US"}[ ]{lang="EN-US"}[IP]{lang="EN-US"}[v4]{lang="EN-US"}[ multicast of user]{lang="EN-US"}[ ]{lang="EN-US"}[log]{lang="EN-US"}[on]{lang="EN-US"}[.]{lang="EN-US"}[：通知]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[组播用户上线成功]{style="font-family:宋体"}
+·Successfully notifiedIPv6 multicast of userlogon..：通知IPv6组播用户上线成功
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Failed to n]{lang="EN-US"}[otify ]{lang="EN-US"}]{#struct_0_52071_x1881_1962185211}[IP]{lang="EN-US"}[v6]{lang="EN-US"}[ multicast of user]{lang="EN-US"}[ ]{lang="EN-US"}[log]{lang="EN-US"}[on]{lang="EN-US"}[.]{lang="EN-US"}[：通知]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[组播用户上线失败]{style="font-family:宋体"}
+·Failed to notify IPv4 multicast of userlogoff.：通知IPv4组播用户下线失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Successfully n]{lang="EN-US"}[otif]{lang="EN-US"}]{#struct_0_52071_x1881_320248501}[ied]{lang="EN-US"}[ ]{lang="EN-US"}[IP]{lang="EN-US"}[v6]{lang="EN-US"}[ multicast of user]{lang="EN-US"}[ ]{lang="EN-US"}[log]{lang="EN-US"}[on]{lang="EN-US"}[..]{lang="EN-US"}[：通知]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[组播用户上线成功]{style="font-family:宋体"}
+·Successfully notifiedIPv4 multicast of userlogoff.：通知IPv4组播用户下线成功
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Failed to n]{lang="EN-US"}[otify ]{lang="EN-US"}]{#struct_0_52071_x1881_318661362}[IP]{lang="EN-US"}[v4]{lang="EN-US"}[ multicast of user]{lang="EN-US"}[ ]{lang="EN-US"}[logoff.]{lang="EN-US"}[：通知]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[组播用户下线失败]{style="font-family:宋体"}
+·Failed to notify IPv6 multicast of userlogoff.：通知IPv6组播用户下线失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Successfully n]{lang="EN-US"}[otif]{lang="EN-US"}]{#struct_0_52071_x1881_x1074693658}[ied]{lang="EN-US"}[ ]{lang="EN-US"}[IP]{lang="EN-US"}[v4]{lang="EN-US"}[ multicast of user]{lang="EN-US"}[ ]{lang="EN-US"}[logoff.]{lang="EN-US"}[：通知]{style="font-family:
-  宋体"}[IPv4]{lang="EN-US"}[组播用户下线成功]{style="font-family:宋体"}
+·Successfully notifiedIPv6 multicast of userlogoff.：通知IPv6组播用户下线成功
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Failed to n]{lang="EN-US"}[otify ]{lang="EN-US"}]{#struct_0_52071_x1881_516611311}[IP]{lang="EN-US"}[v]{lang="EN-US"}[6 multicast of user]{lang="EN-US"}[ ]{lang="EN-US"}[logoff.]{lang="EN-US"}[：通知]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[组播用户下线失败]{style="font-family:宋体"}
+·Failed to notify IPv4 multicast of authorization change.：通知IPv4组播用户授权变更失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Successfully n]{lang="EN-US"}[otif]{lang="EN-US"}]{#struct_0_52071_x1881_1131192443}[ied]{lang="EN-US"}[ ]{lang="EN-US"}[IP]{lang="EN-US"}[v]{lang="EN-US"}[6 multicast of user]{lang="EN-US"}[ ]{lang="EN-US"}[logoff.]{lang="EN-US"}[：通知]{style="font-family:
-  宋体"}[IPv6]{lang="EN-US"}[组播用户下线成功]{style="font-family:宋体"}
+·Successfully notifiedIPv4 multicast of authorization change.：通知IPv4组播用户授权变更成功
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Failed to n]{lang="EN-US"}[otify ]{lang="EN-US"}]{#struct_0_52071_x1881_1424948790}[IPv4 multicast of]{lang="EN-US"}[ authorization change]{lang="EN-US"}[.]{lang="EN-US"}[：通知]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[组播用户授权变更失败]{style="font-family:宋体"}
+·Failed to notify IPv6 multicast of authorization change.：通知IPv6组播用户授权变更失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Successfully n]{lang="EN-US"}[otif]{lang="EN-US"}]{#struct_0_52071_x1881_x1074890266}[ied]{lang="EN-US"}[ ]{lang="EN-US"}[IPv4 multicast of]{lang="EN-US"}[ authorization change]{lang="EN-US"}[.]{lang="EN-US"}[：通知]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[组播用户授权变更成功]{style="font-family:宋体"}
+·Successfully notifiedIPv6 multicast of authorization change.：通知IPv6组播用户授权变更成功
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Failed to n]{lang="EN-US"}[otify ]{lang="EN-US"}]{#struct_0_52071_x1881_1264567841}[IPv6 multicast of]{lang="EN-US"}[ authorization change]{lang="EN-US"}[.]{lang="EN-US"}[：通知]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[组播用户授权变更失败]{style="font-family:宋体"}
+·Failed to smooth IPv4 multicast data.：平滑IPv4组播数据失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Successfully n]{lang="EN-US"}[otif]{lang="EN-US"}]{#struct_0_52071_x1881_x611024030}[ied]{lang="EN-US"}[ ]{lang="EN-US"}[IPv6 multicast of]{lang="EN-US"}[ authorization change]{lang="EN-US"}[.]{lang="EN-US"}[：通知]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[组播用户授权变更成功]{style="font-family:宋体"}
+·Failed to smooth IPv6 multicast data.：平滑IPv6组播数据失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Failed to s]{lang="EN-US"}[mooth ]{lang="EN-US"}]{#struct_0_52071_x1881_x850746329}[IPv4 multicast]{lang="EN-US"}[ data]{lang="EN-US"}[.]{lang="EN-US"}[：平滑]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[组播数据失败]{style="font-family:宋体"}
+·The user NAT seq is not equal to the local seq.：用户的NAT序号与本地的序号不一致
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Failed to s]{lang="EN-US"}[mooth ]{lang="EN-US"}]{#struct_0_52071_x1881_x849922292}[IPv6 multicast]{lang="EN-US"}[ data]{lang="EN-US"}[.]{lang="EN-US"}[：平滑]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[组播数据失败]{style="font-family:宋体"}
+**
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[The user NAT seq is not equal to the local seq.]{lang="EN-US"}]{#struct_0_52071_x1881_1012253985}[：用户的]{lang="EN-US" style="font-family:宋体"}[NAT]{lang="EN-US"}[序号与本地的序号不一致]{lang="EN-US" style="font-family:宋体"}
+·Successfully notified NAT of user logon.：通知NAT模块用户上线成功
 
-*[ ]{lang="EN-US"}*
+·Successfully notified NAT of user logoff.：通知NAT模块用户下线成功
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Successfully notified NAT of user logon.]{lang="EN-US"}]{#struct_0_52071_x1881_1012253987}[：通知]{lang="EN-US" style="font-family:宋体"}[NAT]{lang="EN-US"}[模块用户上线成功]{lang="EN-US" style="font-family:宋体"}
+·Failed to notify NAT of user logon.：通知NAT模块用户上线失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Successfully notified NAT of user logoff.]{lang="EN-US"}]{#struct_0_52071_x1881_x1708735202}[：通知]{lang="EN-US" style="font-family:宋体"}[NAT]{lang="EN-US"}[模块用户下线成功]{lang="EN-US" style="font-family:宋体"}
+·Failed to notify NAT of user logoff.：通知NAT模块用户下线失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Failed to notify NAT of user logon.]{lang="EN-US"}]{#struct_0_52071_x1881_x1708735200}[：通知]{lang="EN-US" style="font-family:宋体"}[NAT]{lang="EN-US"}[模块用户上线失败]{lang="EN-US" style="font-family:宋体"}
+·Received an event to allocate a public IP address and port blocks.：收到分配公网IP及端口块事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Failed to notify NAT of user logoff.]{lang="EN-US"}]{#struct_0_52071_x1881_x1708735198}[：通知]{lang="EN-US" style="font-family:宋体"}[NAT]{lang="EN-US"}[模块用户下线失败]{lang="EN-US" style="font-family:宋体"}
+·Received an event to free a public IP address and port blocks.：收到释放公网IP及端口块事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Received an event to allocate a public IP address and port blocks.]{lang="EN-US"}]{#struct_0_52071_x1881_x1708735196}[：收到分配公网]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[及端口块事件]{lang="EN-US" style="font-family:宋体"}
+·Failed to smooth NAT data.：平滑NAT数据失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Received an event to free a public IP address and port blocks.]{lang="EN-US"}]{#struct_0_52071_x1881_629916956}[：收到释放公网]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[及端口块事件]{lang="EN-US" style="font-family:宋体"}
+表1-6 debugging ppp *protocol-type* state命令输出信息描述表
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Failed to smooth NAT data.]{lang="EN-US"}]{#struct_0_52071_x1881_629916958}[：平滑]{lang="EN-US" style="font-family:宋体"}[NAT]{lang="EN-US"}[数据失败]{lang="EN-US" style="font-family:宋体"}
+字段
 
-[ ]{lang="EN-US"}
+描述
 
-[]{#struct_0_52071_x1881_x1500886821}[]{#_Toc130718929}[]{#aaa}[表1-6 ]{lang="EN-US"}[debugging ppp *protocol-type* state]{lang="EN-US"}[命令输出信息描述表]{style="font-family:黑体"}
+PPP State Change
 
-[]{#table_struct_0_x1892763773}[[字段]{style="font-family:黑体"}]{#struct_0_52071_x1881_611791425}
+链路层协议状态变化
 
-[[描述]{style="font-family:黑体"}]{#struct_0_52071_x1881_x220939594}
+*[interface-name*]
 
-[[PPP State Change]{lang="EN-US"}]{#struct_0_52071_x1881_x604366023}
+接口名称
 
-[[链路层协议状态变化]{style="font-family:宋体"}]{#struct_0_52071_x1881_2141132051}
+*[protocol-type*]
 
-[*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x1700770375}
+协议类型，取值为：LCP、IPCP、MPLSCP、OSICP、IPv6CP、MP
 
-[[接口名称]{style="font-family:宋体"}]{#struct_0_52071_x1881_2119363461}
+*[state *\--\> *state*]
 
-[*[protocol-type]{lang="EN-US"}*]{#struct_0_52071_x1881_x1926456786}
+*[state*]取值及含义：
 
-[[协议类型，取值为：]{style="font-family:宋体"}[LCP]{lang="EN-US"}]{#struct_0_52071_x1881_1661419404}[、]{style="font-family:宋体"}[IPCP]{lang="EN-US"}[、]{style="font-family:宋体"}[MPLSCP]{lang="EN-US"}[、]{style="font-family:宋体"}[OSICP]{lang="EN-US"}[、]{style="font-family:宋体"}[IPv6CP]{lang="EN-US"}[、]{style="font-family:宋体"}[MP]{lang="EN-US"}
+·initial：初始状态
 
-[*[state ]{lang="EN-US"}*[\--\> *state*]{lang="EN-US"}]{#struct_0_52071_x1881_569058058}
+·starting：启动状态
 
-[*[state]{lang="EN-US"}*]{#struct_0_52071_x1881_143083525}[取值及含义：]{style="font-family:宋体"}
+·closed：关闭状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[initial]{lang="EN-US"}]{#struct_0_52071_x1881_2141590804}[：]{style="font-family:宋体"}[初始状态]{lang="EN-US" style="font-family:宋体"}
+·stopped：停止状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[starting]{lang="EN-US"}]{#struct_0_52071_x1881_x2088618120}[：]{style="font-family:宋体"}[启动状态]{lang="EN-US" style="font-family:宋体"}
+·closing：正在关闭状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[closed]{lang="EN-US"}]{#struct_0_52071_x1881_321441233}[：]{style="font-family:宋体"}[关闭状态]{lang="EN-US" style="font-family:宋体"}
+·stopping：正在停止状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[stopped]{lang="EN-US"}]{#struct_0_52071_x1881_1943868398}[：]{style="font-family:宋体"}[停止状态]{lang="EN-US" style="font-family:宋体"}
+·reqsent：配置请求发送状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[closing]{lang="EN-US"}]{#struct_0_52071_x1881_x2141198419}[：]{style="font-family:宋体"}[正]{lang="EN-US" style="font-family:宋体"}[在]{style="font-family:宋体"}[关闭状态]{lang="EN-US" style="font-family:宋体"}
+·ackrcvd：收到对端确认状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[stopping]{lang="EN-US"}]{#struct_0_52071_x1881_106490833}[：]{style="font-family:宋体"}[正]{lang="EN-US" style="font-family:宋体"}[在]{style="font-family:宋体"}[停止状态]{lang="EN-US" style="font-family:宋体"}
+·acksent：对对端的确认报文已发送状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[reqsent]{lang="EN-US"}]{#struct_0_52071_x1881_740077004}[：配置请求发送状态]{style="font-family:宋体"}
+·opened：链路开启状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ackrcvd]{lang="EN-US"}]{#struct_0_52071_x1881_2141656340}[：收到对端确认状态]{style="font-family:宋体"}
+表1-7 debugging ppp *protocol-type* packet命令输出信息描述表
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[acksent]{lang="EN-US"}]{#struct_0_52071_x1881_x1700627463}[：对对端的确认报文已发送状态]{style="font-family:宋体"}
+字段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[opened]{lang="EN-US"}]{#struct_0_52071_x1881_x531010109}[：链路开启状态]{style="font-family:宋体"}
+描述
 
-[ ]{lang="EN-US"}
+PPP Packet
 
-[]{#struct_0_52071_x1881_x1579621970}[[表1-7 ]{lang="EN-US"}[debugging ppp *protocol-type* packet]{lang="EN-US"}]{#_Toc130718930}[命令输出信息描述表]{style="font-family:黑体"}
+链路层协议
 
-[]{#table_struct_0_x2134478947}[[字段]{style="font-family:黑体"}]{#struct_0_52071_x1881_x2064373331}
+*[interface-name*]
 
-[[描述]{style="font-family:黑体"}]{#struct_0_52071_x1881_x1841308347}
+接口名称
 
-[[PPP Packet]{lang="EN-US"}]{#struct_0_52071_x1881_x44974362}
+Output/Input
 
-[[链路层协议]{style="font-family:宋体"}]{#struct_0_52071_x1881_2141721876}
+发送/接收报文
 
-[*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_667855830}
+*[protocol-type *Packet]
 
-[[接口名称]{style="font-family:宋体"}]{#struct_0_52071_x1881_x1802472988}
+协议类型，取值为：LCP、IPCP、MPLSCP、OSICP、IPv6CP、MP、LQM
 
-[[Output/Input]{lang="EN-US"}]{#struct_0_52071_x1881_x1798627527}
+PktLen *number*
 
-[[发送]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_52071_x1881_275029182}[接收报文]{style="font-family:宋体"}
+报文长度
 
-[*[protocol-type ]{lang="EN-US"}*[Packet]{lang="EN-US"}]{#struct_0_52071_x1881_x395402316}
+Current State *state*
 
-[[协议类型，取值为：]{style="font-family:宋体"}[LCP]{lang="EN-US"}]{#struct_0_52071_x1881_1161051374}[、]{style="font-family:宋体"}[IPCP]{lang="EN-US"}[、]{style="font-family:宋体"}[MPLSCP]{lang="EN-US"}[、]{style="font-family:宋体"}[OSICP]{lang="EN-US"}[、]{style="font-family:宋体"}[IPv6CP]{lang="EN-US"}[、]{style="font-family:宋体"}[MP]{lang="EN-US"}[、]{style="font-family:宋体"}[LQM]{lang="EN-US"}
+PPP状态机当前状态，*state*取值见表 1-4(#aaa)
 
-[[PktLen *number*]{lang="EN-US"}]{#struct_0_52071_x1881_2141787412}
+Code *packet-type*
 
-[[报文长度]{style="font-family:宋体"}]{#struct_0_52071_x1881_x2077495250}
+报文类型，*packet-type*取值及含义：
 
-[[Current State *state*]{lang="EN-US"}]{#struct_0_52071_x1881_1202684390}
+·ConfReq：配置请求
 
-[[PPP]{lang="EN-US"}]{#struct_0_52071_x1881_313914907}[状态机当前状态，]{style="font-family:宋体"}*[state]{lang="EN-US"}*[取值见]{style="font-family:宋体"}[[表]{style="font-family:
-  宋体"}[1-4]{lang="EN-US"}](#aaa)
+·ConfAck：配置确认
 
-[[Code *packet-type*]{lang="EN-US"}]{#struct_0_52071_x1881_67386558}
+·ConfNak：配置否认
 
-[[报文类型，]{style="font-family:宋体"}*[packet-type]{lang="EN-US"}*]{#struct_0_52071_x1881_x2069643924}[取值及含义：]{style="font-family:宋体"}
+·ConfRej：配置拒绝
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ConfReq]{lang="EN-US"}]{#struct_0_52071_x1881_2141852948}[：]{style="font-family:宋体"}[配置请求]{lang="EN-US" style="font-family:宋体"}
+·TermReq：终止请求
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ConfAck]{lang="EN-US"}]{#struct_0_52071_x1881_x1286189797}[：]{style="font-family:宋体"}[配置确认]{lang="EN-US" style="font-family:宋体"}
+·TermAck：终止确认
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ConfNak]{lang="EN-US"}]{#struct_0_52071_x1881_x2074100441}[：]{style="font-family:宋体"}[配置否认]{lang="EN-US" style="font-family:宋体"}
+·CodeRej：代码拒绝
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ConfRej]{lang="EN-US"}]{#struct_0_52071_x1881_1689946061}[：]{style="font-family:宋体"}[配置拒绝]{lang="EN-US" style="font-family:宋体"}
+·ProtoRej：协议拒绝
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TermReq]{lang="EN-US"}]{#struct_0_52071_x1881_642408326}[：]{style="font-family:宋体"}[终止请求]{lang="EN-US" style="font-family:宋体"}
+·EchoRequest：回音请求
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TermAck]{lang="EN-US"}]{#struct_0_52071_x1881_x1383762902}[：]{style="font-family:宋体"}[终止确认]{lang="EN-US" style="font-family:宋体"}
+·EchoReply：回音应答
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[CodeRej]{lang="EN-US"}]{#struct_0_52071_x1881_2141918484}[：]{style="font-family:宋体"}[代码拒绝]{lang="EN-US" style="font-family:宋体"}
+id *number*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ProtoRej]{lang="EN-US"}]{#struct_0_52071_x1881_x950412580}[：]{style="font-family:宋体"}[协议拒绝]{lang="EN-US" style="font-family:宋体"}
+报文ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[EchoRequest]{lang="EN-US"}]{#struct_0_52071_x1881_892733787}[：]{style="font-family:宋体"}[回音请求]{lang="EN-US" style="font-family:宋体"}
+len *number*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[EchoReply]{lang="EN-US"}]{#struct_0_52071_x1881_x148973264}[：]{style="font-family:宋体"}[回音应答]{lang="EN-US" style="font-family:宋体"}
+排除PPP报文头后报文长度
 
-[[id *number*]{lang="EN-US"}]{#struct_0_52071_x1881_1254333714}
+MagicNumber *magic-number*
 
-[[报文]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_52071_x1881_x581974172}
+魔术字
 
-[[len *number*]{lang="EN-US"}]{#struct_0_52071_x1881_2141984020}
+LastOutLQRs *lqr-numer*
 
-[[排除]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_52071_x1881_1416192926}[报文头后报文长度]{style="font-family:宋体"}
+本端已发送的LQR报文总数
 
-[[MagicNumber *magic-number*]{lang="EN-US"}]{#struct_0_52071_x1881_x1073907226}
+LastOutPackets *packets-number*
 
-[[魔术字]{style="font-family:宋体"}]{#struct_0_52071_x1881_616060717}
+本端已发送的报文总数
 
-[[LastOutLQRs *lqr-numer*]{lang="EN-US"}]{#struct_0_52071_x1881_x1074497051}
+LastOutOctets *octets-number*
 
-[[本端已发送的]{style="font-family:宋体"}[LQR]{lang="EN-US"}]{#struct_0_52071_x1881_x1325331162}[报文总数]{style="font-family:宋体"}
+本端已发送的字节总数
 
-[[LastOutPackets *packets-number*]{lang="EN-US"}]{#struct_0_52071_x1881_x1339175497}
+PeerInLQRs *lqr-number*
 
-[[本端已发送的报文总数]{style="font-family:宋体"}]{#struct_0_52071_x1881_x1074431515}
+对端已收到的LQR报文总数
 
-[[LastOutOctets *octets-number*]{lang="EN-US"}]{#struct_0_52071_x1881_1252584175}
+PeerInPackets *packet-number*
 
-[[本端已发送的字节总数]{style="font-family:宋体"}]{#struct_0_52071_x1881_314855933}
+对端已收到的报文总数
 
-[[PeerInLQRs *lqr-number*]{lang="EN-US"}]{#struct_0_52071_x1881_x1074628123}
+PeerInDiscards *discard-number*
 
-[[对端已收到的]{style="font-family:宋体"}[LQR]{lang="EN-US"}]{#struct_0_52071_x1881_1994481928}[报文总数]{style="font-family:宋体"}
+对端已丢弃的报文总数
 
-[[PeerInPackets *packet-number*]{lang="EN-US"}]{#struct_0_52071_x1881_x2063801456}
+PeerInErrors *error-number*
 
-[[对端已收到的报文总数]{style="font-family:宋体"}]{#struct_0_52071_x1881_x484026577}
+对端已收到的错误报文总数
 
-[[PeerInDiscards *discard-number*]{lang="EN-US"}]{#struct_0_52071_x1881_x1074562587}
+PeerInOctets *octets-number*
 
-[[对端已丢弃的报文总数]{style="font-family:宋体"}]{#struct_0_52071_x1881_789074788}
+对端已收到的字节总数
 
-[[PeerInErrors *error-number*]{lang="EN-US"}]{#struct_0_52071_x1881_707244789}
+PeerOutLQRs *lqr-number*
 
-[[对端已收到的错误报文总数]{style="font-family:宋体"}]{#struct_0_52071_x1881_x602316389}
+对端已发送的LQR报文总数
 
-[[PeerInOctets *octets-number*]{lang="EN-US"}]{#struct_0_52071_x1881_x1074759195}
+PeerOutPackets *packets-number*
 
-[[对端已收到的字节总数]{style="font-family:宋体"}]{#struct_0_52071_x1881_x310919259}
+对端已发送的报文总数
 
-[[PeerOutLQRs *lqr-number*]{lang="EN-US"}]{#struct_0_52071_x1881_1940063036}
+PeerOutOctets *octets-number*
 
-[[对端已发送的]{style="font-family:宋体"}[LQR]{lang="EN-US"}]{#struct_0_52071_x1881_x1074693659}[报文总数]{style="font-family:宋体"}
+对端已发送的字节总数
 
-[[PeerOutPackets *packets-number*]{lang="EN-US"}]{#struct_0_52071_x1881_2082695252}
+*[Negotiation type*]
 
-[[对端已发送的报文总数]{style="font-family:宋体"}]{#struct_0_52071_x1881_x895765953}
+LCP协商选项见表 1-6(#jghgh)，IPCP协商选项见表 1-7(#sdd)
 
-[[PeerOutOctets *octets-number*]{lang="EN-US"}]{#struct_0_52071_x1881_845644822}
+表1-8 debugging ppp lcp packet常用协商type值信息描述表
 
-[[对端已发送的字节总数]{style="font-family:宋体"}]{#struct_0_52071_x1881_x1074890267}
+字段值
 
-[*[Negotiation type]{lang="EN-US"}*]{#struct_0_52071_x1881_903945166}
+描述（英文）
 
-[[LCP]{lang="EN-US"}]{#struct_0_52071_x1881_x459227742}[协商选项见]{style="font-family:宋体"}[[表]{style="font-family:宋体"}[1-6]{lang="EN-US"}](#jghgh)[，]{style="font-family:宋体"}[IPCP]{lang="EN-US"}[协商选项见]{style="font-family:宋体"}[[表]{style="font-family:
-  宋体"}[1-7]{lang="EN-US"}](#sdd)
+描述（中文）
 
-[ ]{lang="EN-US"}
+1
 
-[]{#struct_0_52071_x1881_1741275558}[]{#jghgh}[表1-8 ]{lang="EN-US"}[debugging ppp lcp packet]{lang="EN-US"}[常用协商]{style="font-family:黑体"}[type]{lang="EN-US"}[值信息描述表]{style="font-family:黑体"}
+Maximum-Receive-Unit
 
-[]{#table_struct_0_x2137498360}[[字段值]{style="font-family:黑体"}]{#struct_0_52071_x1881_613082699}
+最大接收单元
 
-[[描述（英文）]{style="font-family:黑体"}]{#struct_0_52071_x1881_2142049556}
+2
 
-[[描述（中文）]{style="font-family:黑体"}]{#struct_0_52071_x1881_x697020211}
+Async-Control-Character-Map
 
-[[1]{lang="EN-US"}]{#struct_0_52071_x1881_x201185983}
+异步控制字符映射
 
-[[Maximum-Receive-Unit]{lang="EN-US"}]{#struct_0_52071_x1881_1265055710}
+3
 
-[[最大接收单元]{style="font-family:宋体"}]{#struct_0_52071_x1881_x658400558}
+Authentication-Protocol
 
-[[2]{lang="EN-US"}]{#struct_0_52071_x1881_x1553403251}
+验证协议
 
-[[Async-Control-Character-Map]{lang="EN-US"}]{#struct_0_52071_x1881_x1300184005}
+4
 
-[[异步控制字符映射]{style="font-family:宋体"}]{#struct_0_52071_x1881_2141066516}
+Quality-Protocol
 
-[[3]{lang="EN-US"}]{#struct_0_52071_x1881_1458404276}
+质量协议
 
-[[Authentication-Protocol]{lang="EN-US"}]{#struct_0_52071_x1881_x1398517218}
+5
 
-[[验证协议]{style="font-family:宋体"}]{#struct_0_52071_x1881_1811839495}
+Magic-Number
 
-[[4]{lang="EN-US"}]{#struct_0_52071_x1881_x1074824731}
+魔术字
 
-[[Quality-Protocol]{lang="EN-US"}]{#struct_0_52071_x1881_x1869776936}
+7
 
-[[质量协议]{style="font-family:宋体"}]{#struct_0_52071_x1881_x565990473}
+Protocol-Field-Compression
 
-[[5]{lang="EN-US"}]{#struct_0_52071_x1881_x1096993695}
+协议域压缩
 
-[[Magic-Number]{lang="EN-US"}]{#struct_0_52071_x1881_549302169}
+8
 
-[[魔术字]{style="font-family:宋体"}]{#struct_0_52071_x1881_1725027093}
+Address-and-Control-Field-Compression
 
-[[7]{lang="EN-US"}]{#struct_0_52071_x1881_x337966066}
+地址控制域压缩
 
-[[Protocol-Field-Compression]{lang="EN-US"}]{#struct_0_52071_x1881_x338031602}
+13
 
-[[协议域压缩]{style="font-family:宋体"}]{#struct_0_52071_x1881_x337834994}
+Callback
 
-[[8]{lang="EN-US"}]{#struct_0_52071_x1881_x1434840910}
+PPP回呼
 
-[[Address-and-Control-Field-Compression]{lang="EN-US"}]{#struct_0_52071_x1881_x337900530}
+17
 
-[[地址控制域压缩]{style="font-family:宋体"}]{#struct_0_52071_x1881_x337703922}
+Multilink Maximum Received Reconstructed Unit
 
-[[13]{lang="EN-US"}]{#struct_0_52071_x1881_x664250541}
+MP最大接收重组单元
 
-[[Callback]{lang="EN-US"}]{#struct_0_52071_x1881_x337769458}
+18
 
-[[PPP]{lang="EN-US"}]{#struct_0_52071_x1881_x1422519568}[回呼]{style="font-family:宋体"}
+Short Sequence Number Header Format
 
-[[17]{lang="EN-US"}]{#struct_0_52071_x1881_x338228211}
+MP报文协商序号长度
 
-[[Multilink Maximum Received Reconstructed Unit]{lang="EN-US"}]{#struct_0_52071_x1881_x338293747}
+19
 
-[[MP]{lang="EN-US"}]{#struct_0_52071_x1881_1128617608}[最大接收重组单元]{style="font-family:宋体"}
+Endpoint Discriminator
 
-[[18]{lang="EN-US"}]{#struct_0_52071_x1881_x338097139}
+终端描述符
 
-[[Short Sequence Number Header Format]{lang="EN-US"}]{#struct_0_52071_x1881_x338162675}
+表1-9 debugging ppp ipcp packet常用协商type值信息描述表
 
-[[MP]{lang="EN-US"}]{#struct_0_52071_x1881_1545521985}[报文协商序号长度]{style="font-family:宋体"}
+字段值
 
-[[19]{lang="EN-US"}]{#struct_0_52071_x1881_x337966067}
+描述（英文）
 
-[[Endpoint Discriminator]{lang="EN-US"}]{#struct_0_52071_x1881_x338031603}
+描述（中文）
 
-[[终端描述符]{style="font-family:宋体"}]{#struct_0_52071_x1881_1933536532}
+2
 
-[ ]{lang="EN-US"}
+IP CompressProt
 
-[]{#struct_0_52071_x1881_2141132052}[]{#sdd}[表1-9 ]{lang="EN-US"}[debugging ppp ipcp packet]{lang="EN-US"}[常用协商]{style="font-family:黑体"}[type]{lang="EN-US"}[值信息描述表]{style="font-family:黑体"}
+PPP压缩类型及压缩参数协商
 
-[]{#table_struct_0_x2135295066}[[字段值]{style="font-family:黑体"}]{#struct_0_52071_x1881_x1700835911}
+3
 
-[[描述（英文）]{style="font-family:黑体"}]{#struct_0_52071_x1881_x2116055933}
+IP Address
 
-[[描述（中文）]{style="font-family:黑体"}]{#struct_0_52071_x1881_1399347907}
+IP地址协商
 
-[[2]{lang="EN-US"}]{#struct_0_52071_x1881_x1073907227}
+129
 
-[[IP CompressProt]{lang="EN-US"}]{#struct_0_52071_x1881_x1074497048}
+Primary DNS Server Address
 
-[[PPP]{lang="EN-US"}]{#struct_0_52071_x1881_1047256297}[压缩类型及压缩参数协商]{style="font-family:宋体"}
+PPP一端向另一端请求Primary DNS server地址或向另一端分配Primary DNS server地址
 
-[[3]{lang="EN-US"}]{#struct_0_52071_x1881_x1516122773}
+131
 
-[[IP Address]{lang="EN-US"}]{#struct_0_52071_x1881_x2045832520}
+Secondary DNS Server Address
 
-[[IP]{lang="EN-US"}]{#struct_0_52071_x1881_x873677506}[地址协商]{style="font-family:宋体"}
+PPP一端向另一端请求Secondary DNS server地址或向另一端分配Secondary DNS server地址
 
-[[129]{lang="EN-US"}]{#struct_0_52071_x1881_639388104}
+【举例】
 
-[[Primary DNS Server Address]{lang="EN-US"}]{#struct_0_52071_x1881_1752949978}
+\# 两台设备用Serial接口连接，链路封装PPP协议，配置后链路开始协商。打开LCP的调试信息开关。
 
-[[PPP]{lang="EN-US"}]{#struct_0_52071_x1881_x1747823573}[一端向另一端请求]{style="font-family:宋体"}[Primary DNS server]{lang="EN-US"}[地址或向另一端分配]{style="font-family:宋体"}[Primary DNS server]{lang="EN-US"}[地址]{style="font-family:宋体"}
+\<Sysname\> debugging ppp lcp all
 
-[[131]{lang="EN-US"}]{#struct_0_52071_x1881_x586125621}
+\*Dec 21 14:36:25:998 2013 Sysname PPP/7/FSM_EVENT_0: -MDC=1;
 
-[[Secondary DNS Server Address]{lang="EN-US"}]{#struct_0_52071_x1881_x67204241}
+  PPP Event:
 
-[[PPP]{lang="EN-US"}]{#struct_0_52071_x1881_154725073}[一端向另一端请求]{style="font-family:宋体"}[Secondary DNS server]{lang="EN-US"}[地址或向另一端分配]{style="font-family:宋体"}[Secondary DNS server]{lang="EN-US"}[地址]{style="font-family:宋体"}
+      Serial2/1/0 LCP Open Event
 
-[ ]{lang="EN-US"}
+      State initial
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_52071_x1881_794641430}
+*[// Serial2/1/0*]*接口的LCP状态机为open，状态为initial*
 
-[[\# ]{lang="EN-US"}]{#struct_0_52071_x1881_375281408}[两台设备用]{style="font-family:宋体"}[Serial]{lang="EN-US"}[接口连接，链路封装]{style="font-family:宋体"}[PPP]{lang="EN-US"}[协议，配置后链路开始协商。打开]{style="font-family:宋体"}[LCP]{lang="EN-US"}[的调试信息开关。]{style="font-family:宋体"}
+\*Dec 21 14:36:25:998 2013 Sysname PPP/7/FSM_STATE_0: -MDC=1;
 
-[[\<Sysname\> debugging ppp lcp all]{lang="EN-US"}]{#struct_0_52071_x1881_1752884442}
+  PPP State Change:
 
-[\*Dec 21 14:36:25:998 2013 Sysname PPP/7/FSM_EVENT_0: -MDC=1;]{lang="EN-US"}
+      Serial2/1/0 LCP : initial \--\> starting
 
-[  PPP Event: ]{lang="EN-US"}
+*[// Serial2/1/0*]*接口的LCP状态从initial状态切换到starting状态*
 
-[      Serial2/1/0 LCP Open Event]{lang="EN-US"}
+\*Dec 21 14:36:25:998 2013 Sysname PPP/7/FSM_EVENT_0: -MDC=1;
 
-[      State initial]{lang="EN-US"}
+  PPP Event:
 
-[*[// Serial2/1/0]{lang="EN-US"}*]{#struct_0_52071_x1881_1045778848}*[接口的]{style="font-family:宋体"}[LCP]{lang="EN-US"}[状态机为]{style="font-family:宋体"}[open]{lang="EN-US"}[，状态为]{style="font-family:宋体"}[initial]{lang="EN-US"}*
+      Serial2/1/0 LCP Lower Up  Event
 
-[[\*Dec 21 14:36:25:998 2013 Sysname PPP/7/FSM_STATE_0: -MDC=1;]{lang="EN-US"}]{#struct_0_52071_x1881_x978130863}
+      State starting
 
-[  PPP State Change:]{lang="EN-US"}
+*[// Serial2/1/0*]*接口的LCP底层UP事件，LCP状态机状态为starting状态*
 
-[      Serial2/1/0 LCP : initial \--\> starting]{lang="EN-US"}
+\*Dec 21 14:36:25:998 2013 Sysname PPP/7/FSM_STATE_0: -MDC=1;
 
-[*[// Serial2/1/0]{lang="EN-US"}*]{#struct_0_52071_x1881_x1160838666}*[接口的]{style="font-family:宋体"}[LCP]{lang="EN-US"}[状态从]{style="font-family:宋体"}[initial]{lang="EN-US"}[状态切换到]{style="font-family:宋体"}[starting]{lang="EN-US"}[状态]{style="font-family:宋体"}*
+  PPP State Change:
 
-[[\*Dec 21 14:36:25:998 2013 Sysname PPP/7/FSM_EVENT_0: -MDC=1;]{lang="EN-US"}]{#struct_0_52071_x1881_2038907004}
+      Serial2/1/0 LCP : starting \--\> reqsent
 
-[  PPP Event:]{lang="EN-US"}
+*[// Serial2/1/0*]*接口的LCP状态从starting状态切换到reqsent状态*
 
-[      Serial2/1/0 LCP Lower Up  Event]{lang="EN-US"}
+\*Dec 21 14:36:25:998 2013 Sysname PPP/7/FSM_PACKET_0: -MDC=1;
 
-[      State starting]{lang="EN-US"}
+  PPP Packet:
 
-[*[// Serial2/1/0]{lang="EN-US"}*]{#struct_0_52071_x1881_x2013812352}*[接口的]{style="font-family:宋体"}[LCP]{lang="EN-US"}[底层]{style="font-family:宋体"}[UP]{lang="EN-US"}[事件，]{style="font-family:宋体"}[LCP]{lang="EN-US"}[状态机状态为]{style="font-family:宋体"}[starting]{lang="EN-US"}[状态]{style="font-family:宋体"}*
+      Serial2/1/0 Output LCP(c021) Packet, PktLen 22
 
-[[\*Dec 21 14:36:25:998 2013 Sysname PPP/7/FSM_STATE_0: -MDC=1;]{lang="EN-US"}]{#struct_0_52071_x1881_1752818906}
+      Current State reqsent, code ConfReq(01), id 2a, len 18
 
-[  PPP State Change:]{lang="EN-US"}
+      MRU(1), len 4, val 05 dc
 
-[      Serial2/1/0 LCP : starting \--\> reqsent]{lang="EN-US"}
+      AuthProto(3), len 4, PAP c0 23
 
-[*[// Serial2/1/0]{lang="EN-US"}*]{#struct_0_52071_x1881_982960352}*[接口的]{style="font-family:宋体"}[LCP]{lang="EN-US"}[状态从]{style="font-family:宋体"}[starting]{lang="EN-US"}[状态切换到]{style="font-family:宋体"}[reqsent]{lang="EN-US"}[状态]{style="font-family:宋体"}*
+      MagicNumber(5), len 6, val 31 18 0c 00
 
-[[\*Dec 21 14:36:25:998 2013 Sysname PPP/7/FSM_PACKET_0: -MDC=1;]{lang="EN-US"}]{#struct_0_52071_x1881_x1650348267}
+*[// Serial2/1/0*]*接口发送长度35的LCP报文。LCP状态机状态为reqsent状态，报文类型为ConfReq报文，报文ID为2a，取掉报文头的报文长度为22。协商最大接收单元，字段长度4，协商长度05dc。协商验证协议，字段长度4，PAP认证。魔术字，字段长度6，魔术字值31180c00*
 
-[  PPP Packet:]{lang="EN-US"}
+**
 
-[      Serial2/1/0 Output LCP(c021) Packet, PktLen 22]{lang="EN-US"}
+\# 两台设备用Serial接口连接，链路封装PPP协议，分别在两端接口下配置PPP LQM功能。打开PPP LQM的调试信息开关。待PPP链路成功建立后，两端开始交互报文。
 
-[      Current State reqsent, code ConfReq(01), id 2a, len 18]{lang="EN-US"}
+\<Syaname\> debugging ppp lqm packet
 
-[      MRU(1), len 4, val 05 dc]{lang="EN-US"}
+\<Syaname\>
 
-[      AuthProto(3), len 4, PAP c0 23]{lang="EN-US"}
+\*Oct 25 11:46:45:559 2013 Syaname PPP/7/LQM_PACKET_1: -MDC=1;
 
-[      MagicNumber(5), len 6, val 31 18 0c 00]{lang="EN-US"}
+  PPP Packet:
 
-[*[// Serial2/1/0]{lang="EN-US"}*]{#struct_0_52071_x1881_x1074431512}*[接口发送长度]{style="font-family:宋体"}[35]{lang="EN-US"}[的]{style="font-family:宋体"}[LCP]{lang="EN-US"}[报文。]{style="font-family:宋体"}[LCP]{lang="EN-US"}[状态机状态为]{style="font-family:宋体"}[reqsent]{lang="EN-US"}[状态，报文类型为]{style="font-family:宋体"}[ConfReq]{lang="EN-US"}[报文，报文]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[2a]{lang="EN-US"}[，取掉报文头的报文长度为]{style="font-family:宋体"}[22]{lang="EN-US"}[。协商最大接收单元，字段长度]{style="font-family:宋体"}[4]{lang="EN-US"}[，协商长度]{style="font-family:宋体"}[05dc]{lang="EN-US"}[。协商验证协议，字段长度]{style="font-family:宋体"}[4]{lang="EN-US"}[，]{style="font-family:宋体"}[PAP]{lang="EN-US"}[认证。魔术字，字段长度]{style="font-family:宋体"}[6]{lang="EN-US"}[，魔术字值]{style="font-family:宋体"}[31180c00]{lang="EN-US"}*
+      Serial2/1/3 Output LQM(c025) Packet, PktLen 52
 
-*[ ]{lang="EN-US"}*
+      Current State opened, len 48, MagicNumber 0xc60dde76
 
-[[\# ]{lang="EN-US"}]{#struct_0_52071_x1881_x1120068820}[两台设备用]{style="font-family:宋体"}[Serial]{lang="EN-US"}[接口连接，链路封装]{style="font-family:宋体"}[PPP]{lang="EN-US"}[协议]{style="font-family:宋体"}[，分别在两端接口下配置]{style="font-family:宋体"}[PPP LQM]{lang="EN-US"}[功能。打开]{style="font-family:宋体"}[PPP LQM]{lang="EN-US"}[的调试信息开关。待]{style="font-family:宋体"}[PPP]{lang="EN-US"}[链路成功建立后，两端开始交互报文。]{style="font-family:宋体"}
+      LastOutLQRs 1, LastOutPackets 110, LastOutOctets 163
 
-[[\<Syaname\> debugging ppp lqm packet]{lang="EN-US"}]{#struct_0_52071_x1881_x1074628120}
+      PeerInLQRs 1, PeerInPackets 103, PeerInDiscards 105
 
-[\<Syaname\>]{lang="EN-US"}
+      PeerInErrors106, PeerInOctets 102
 
-[\*Oct 25 11:46:45:559 2013 Syaname PPP/7/LQM_PACKET_1: -MDC=1;]{lang="EN-US"}
+      PeerOutLQRs 2, PeerOutPackets 110, PeerOutOctets 163
 
-[  PPP Packet:]{lang="EN-US"}
+*[// Serial2/1/3*]*接口发送长度为52的LQM报文。LCP当前状态机状态为opened状态，去掉PPP头的报文长度为48，魔术字值为0xc60dde76，本端已发送的LQR报文总数为1，已发送的报文总数为110，已发送的字节总数为163，对端已收到的LQR报文总数为1，已收到的报文总数为103，已丢弃的报文总数为105，已收到的错误报文总数为106，已收到的字节总数为102，已发送的LQR报文总数为2，已发送的报文总数为110，已发送的字节总数为163*
 
-[      Serial2/1/3 Output LQM(c025) Packet, PktLen 52]{lang="EN-US"}
+\*Oct 25 11:46:45:561 2013 Syaname PPP/7/LQM_PACKET_1: -MDC=1;
 
-[      Current State opened, len 48, MagicNumber 0xc60dde76]{lang="EN-US"}
+  PPP Packet:
 
-[      LastOutLQRs 1, LastOutPackets 110, LastOutOctets 163]{lang="EN-US"}
+      Serial2/1/3 Input LQM(c025) Packet, PktLen 52
 
-[      PeerInLQRs 1, PeerInPackets 103, PeerInDiscards 105]{lang="EN-US"}
+      Current State opened, len 48, MagicNumber 0xef4f8337
 
-[      PeerInErrors106, PeerInOctets 102]{lang="EN-US"}
+      LastOutLQRs 2, LastOutPackets 110, LastOutOctets 163
 
-[      PeerOutLQRs 2, PeerOutPackets 110, PeerOutOctets 163]{lang="EN-US"}
+      PeerInLQRs 2, PeerInPackets 103, PeerInDiscards 105
 
-[*[// Serial2/1/3]{lang="EN-US"}*]{#struct_0_52071_x1881_x1897200841}*[接口发送长度为]{style="font-family:宋体"}[52]{lang="EN-US"}[的]{style="font-family:宋体"}[LQM]{lang="EN-US"}[报文。]{style="font-family:宋体"}[LCP]{lang="EN-US"}[当前状态机状态为]{style="font-family:宋体"}[opened]{lang="EN-US"}[状态，去掉]{style="font-family:宋体"}[PPP]{lang="EN-US"}[头的报文长度为]{style="font-family:宋体"}[48]{lang="EN-US"}[，魔术字值为]{style="font-family:宋体"}[0xc60dde76]{lang="EN-US"}[，本端已发送的]{style="font-family:宋体"}[LQR]{lang="EN-US"}[报文总数为]{style="font-family:宋体"}[1]{lang="EN-US"}[，已发送的报文总数为]{style="font-family:宋体"}[110]{lang="EN-US"}[，已发送的字节总数为]{style="font-family:宋体"}[163]{lang="EN-US"}[，对端已收到的]{style="font-family:宋体"}[LQR]{lang="EN-US"}[报文总数为]{style="font-family:宋体"}[1]{lang="EN-US"}[，已收到的报文总数为]{style="font-family:宋体"}[103]{lang="EN-US"}[，已丢弃的报文总数为]{style="font-family:宋体"}[105]{lang="EN-US"}[，已收到的错误报文总数为]{style="font-family:宋体"}[106]{lang="EN-US"}[，已收到的字节总数为]{style="font-family:宋体"}[102]{lang="EN-US"}[，已发送的]{style="font-family:宋体"}[LQR]{lang="EN-US"}[报文总数为]{style="font-family:宋体"}[2]{lang="EN-US"}[，已发送的报文总数为]{style="font-family:宋体"}[110]{lang="EN-US"}[，已发送的字节总数为]{style="font-family:宋体"}[163]{lang="EN-US"}*
+      PeerInErrors 106, PeerInOctets 102
 
-[[\*Oct 25 11:46:45:561 2013 Syaname PPP/7/LQM_PACKET_1: -MDC=1;]{lang="EN-US"}]{#struct_0_52071_x1881_x1336366901}
+      PeerOutLQRs 2, PeerOutPackets 110, PeerOutOctets 163
 
-[  PPP Packet:]{lang="EN-US"}
-
-[      Serial2/1/3 Input LQM(c025) Packet, PktLen 52]{lang="EN-US"}
-
-[      Current State opened, len 48, MagicNumber 0xef4f8337]{lang="EN-US"}
-
-[      LastOutLQRs 2, LastOutPackets 110, LastOutOctets 163]{lang="EN-US"}
-
-[      PeerInLQRs 2, PeerInPackets 103, PeerInDiscards 105]{lang="EN-US"}
-
-[      PeerInErrors 106, PeerInOctets 102]{lang="EN-US"}
-
-[      PeerOutLQRs 2, PeerOutPackets 110, PeerOutOctets 163]{lang="EN-US"}
-
-[*[// Serial2/1/3]{lang="EN-US"}*]{#struct_0_52071_x1881_2063932114}*[接口收到长度为]{style="font-family:宋体"}[52]{lang="EN-US"}[的]{style="font-family:宋体"}[LQM]{lang="EN-US"}[报文。]{style="font-family:宋体"}[LCP]{lang="EN-US"}[当前状态机状态为]{style="font-family:宋体"}[opened]{lang="EN-US"}[状态，去掉]{style="font-family:宋体"}[PPP]{lang="EN-US"}[头的报文长度为]{style="font-family:宋体"}[48]{lang="EN-US"}[，魔术字值为]{style="font-family:宋体"}[0xef4f8337]{lang="EN-US"}[，本端已发送的]{style="font-family:宋体"}[LQR]{lang="EN-US"}[报文总数为]{style="font-family:宋体"}[2]{lang="EN-US"}[，已发送的报文总数为]{style="font-family:宋体"}[110]{lang="EN-US"}[，已发送的字节总数为]{style="font-family:宋体"}[163]{lang="EN-US"}[，对端已收到的]{style="font-family:宋体"}[LQR]{lang="EN-US"}[报文总数为]{style="font-family:宋体"}[2]{lang="EN-US"}[，已收到的报文总数为]{style="font-family:宋体"}[103]{lang="EN-US"}[，已丢弃的报文总数为]{style="font-family:宋体"}[105]{lang="EN-US"}[，已收到的错误报文总数为]{style="font-family:宋体"}[106]{lang="EN-US"}[，已收到的字节总数为]{style="font-family:宋体"}[102]{lang="EN-US"}[，已发送的]{style="font-family:宋体"}[LQR]{lang="EN-US"}[报文总数为]{style="font-family:宋体"}[2]{lang="EN-US"}[，已发送的报文总数为]{style="font-family:宋体"}[110]{lang="EN-US"}[，已发送的字节总数为]{style="font-family:宋体"}[163]{lang="EN-US"}*
-
-::: {#756912521 .myid}
-[]{#_Toc404784819}[]{#struct_0_52071_x1881_x1522585801}
+*[// Serial2/1/3*]*接口收到长度为52的LQM报文。LCP当前状态机状态为opened状态，去掉PPP头的报文长度为48，魔术字值为0xef4f8337，本端已发送的LQR报文总数为2，已发送的报文总数为110，已发送的字节总数为163，对端已收到的LQR报文总数为2，已收到的报文总数为103，已丢弃的报文总数为105，已收到的错误报文总数为106，已收到的字节总数为102，已发送的LQR报文总数为2，已发送的报文总数为110，已发送的字节总数为163*
 
 **PPP \-- PPP调试命令 \-- debugging ppp compression iphc**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_52071_x1881_459354755}
+【命令】
 
-[**[debugging ppp compression iphc ]{lang="EN-US"}**[{ **rtp** \| **tcp** }]{lang="EN-US"}]{#struct_0_52071_x1881_734705772}
+**[debugging ppp compression iphc **[{ **rtp** \| **tcp** }]]
 
-[**[undo debugging ppp compression iphc]{lang="EN-US"}**[ { **rtp** \| **tcp** }]{lang="EN-US"}]{#struct_0_52071_x1881_x1074562584}
+**[undo debugging ppp compression iphc**[ { **rtp** \| **tcp** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_52071_x1881_1192359315}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_52071_x1881_x1303691426}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_52071_x1881_1503484034}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_52071_x1881_x1982138924}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_52071_x1881_188987622}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_52071_x1881_1932156834}
+【参数】
 
-[**[rtp]{lang="EN-US"}**]{#struct_0_52071_x1881_x1667290171}[：表示]{style="font-family:宋体"}[RTP]{lang="EN-US"}[头压缩调试信息开关。]{style="font-family:宋体"}
+**[rtp**]：表示RTP头压缩调试信息开关。
 
-[**[tcp]{lang="EN-US"}**]{#struct_0_52071_x1881_2021308860}[：表示]{style="font-family:宋体"}[TCP]{lang="EN-US"}[头压缩调试信息开关。]{style="font-family:宋体"}
+**[tcp**]：表示TCP头压缩调试信息开关。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_52071_x1881_x1216885870}
+【使用指导】
 
-[**[debugging ppp compression iphc]{lang="EN-US"}**]{#struct_0_52071_x1881_x1482298005}[命令用来打开]{style="font-family:
-宋体"}[IPHC]{lang="EN-US"}[压缩调试信息开关。]{style="font-family:宋体"}
+**[debugging ppp compression iphc**]命令用来打开IPHC压缩调试信息开关。
 
-[**[undo debugging ppp compression iphc]{lang="EN-US"}**]{#struct_0_52071_x1881_1309859223}[命令用来关闭]{style="font-family:宋体"}[IPHC]{lang="EN-US"}[压缩调试信息开关。]{style="font-family:宋体"}
+**[undo debugging ppp compression iphc**]命令用来关闭IPHC压缩调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[PPP IPHC]{lang="EN-US"}]{#struct_0_52071_x1881_x1074759192}[的所有调试信息开关均处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，PPP IPHC的所有调试信息开关均处于关闭状态。
 
-[[表1-10 ]{lang="EN-US"}[debugging ppp compression iphc]{lang="EN-US"}]{#struct_0_52071_x1881_x1070434146}[命令输出信息描述表]{style="font-family:黑体"}
+表1-10 debugging ppp compression iphc命令输出信息描述表
 
-[]{#table_struct_0_399038407}[[字段]{style="font-family:黑体"}]{#struct_0_52071_x1881_1250641880}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_52071_x1881_x1074693656}
+描述
 
-[[RHC]{lang="EN-US"}]{#struct_0_52071_x1881_1679410725}
+RHC
 
-[[RTP]{lang="EN-US"}]{#struct_0_52071_x1881_x1074890264}[头压缩信息]{style="font-family:宋体"}
+RTP头压缩信息
 
-[[THC]{lang="EN-US"}]{#struct_0_52071_x1881_x1867600041}
+THC
 
-[[TCP]{lang="EN-US"}]{#struct_0_52071_x1881_x112064876}[头压缩信息]{style="font-family:宋体"}
+TCP头压缩信息
 
-[[FULL_HEADER]{lang="EN-US"}]{#struct_0_52071_x1881_x1074824728}
+FULL_HEADER
 
-[[未压缩的]{style="font-family:宋体"}[TCP]{lang="EN-US"}]{#struct_0_52071_x1881_52471829}[或者]{style="font-family:宋体"}[RTP]{lang="EN-US"}[报文，解压端根据这个报文为解压后续的压缩报文创建或更新解压表项]{style="font-family:宋体"}
+未压缩的TCP或者RTP报文，解压端根据这个报文为解压后续的压缩报文创建或更新解压表项
 
-[[CONTEXT_STATE]{lang="EN-US"}]{#struct_0_52071_x1881_x1073972760}
+CONTEXT_STATE
 
-[[一种由解压端发送给压缩端的特殊报文，用来传输已经或者可能已经失去同步的压缩和解压表项的]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_52071_x1881_1566658949}[号来通知压缩端发送一个]{style="font-family:宋体"}[FULL_HEADER]{lang="EN-US"}[报文来同步压缩和解压缩表项]{style="font-family:宋体"}
+一种由解压端发送给压缩端的特殊报文，用来传输已经或者可能已经失去同步的压缩和解压表项的ID号来通知压缩端发送一个FULL_HEADER报文来同步压缩和解压缩表项
 
-[[COMPRESSED_NON_TCP]{lang="EN-US"}]{#struct_0_52071_x1881_x1073907224}
+COMPRESSED_NON_TCP
 
-[[压缩的]{style="font-family:宋体"}[RTP]{lang="EN-US"}]{#struct_0_52071_x1881_1778860131}[报文。接口下配置]{style="font-family:宋体"}**[ppp compression iphc enable]{lang="EN-US"}**[ **nonstandard**]{lang="EN-US"}[命令后，成功压缩时，压缩端会将]{style="font-family:宋体"}[RTP]{lang="EN-US"}[报文压缩成该格式的报文]{style="font-family:宋体"}
+压缩的RTP报文。接口下配置**ppp compression iphc enable** **nonstandard**命令后，成功压缩时，压缩端会将RTP报文压缩成该格式的报文
 
-[[COMPRESSED_TCP]{lang="EN-US"}]{#struct_0_52071_x1881_x1074497049}
+COMPRESSED_TCP
 
-[[压缩的]{style="font-family:宋体"}[TCP]{lang="EN-US"}]{#struct_0_52071_x1881_x1681627058}[报文。成功压缩时，压缩端会将]{style="font-family:宋体"}[TCP]{lang="EN-US"}[报文压缩成该格式的报文]{style="font-family:宋体"}
+压缩的TCP报文。成功压缩时，压缩端会将TCP报文压缩成该格式的报文
 
-[[COMPRESSED_RTP_8]{lang="EN-US"}]{#struct_0_52071_x1881_x1074431513}
+COMPRESSED_RTP_8
 
-[[压缩的]{style="font-family:宋体"}[RTP]{lang="EN-US"}]{#struct_0_52071_x1881_446015121}[报文。当接口上允许进行]{style="font-family:宋体"}[RTP]{lang="EN-US"}[头压缩的最大连接数小于等于]{style="font-family:宋体"}[256]{lang="EN-US"}[时，成功压缩时，压缩端会将]{style="font-family:宋体"}[RTP]{lang="EN-US"}[报文压缩成该种格式的报文]{style="font-family:宋体"}
+压缩的RTP报文。当接口上允许进行RTP头压缩的最大连接数小于等于256时，成功压缩时，压缩端会将RTP报文压缩成该种格式的报文
 
-[[COMPRESSED_RTP_16]{lang="EN-US"}]{#struct_0_52071_x1881_x1074628121}
+COMPRESSED_RTP_16
 
-[[压缩的]{style="font-family:宋体"}[RTP]{lang="EN-US"}]{#struct_0_52071_x1881_831682514}[报文。当接口上允许进行]{style="font-family:宋体"}[RTP]{lang="EN-US"}[头压缩的最大连接数大于]{style="font-family:宋体"}[256]{lang="EN-US"}[时，成功压缩时，压缩端会将]{style="font-family:宋体"}[RTP]{lang="EN-US"}[报文压缩成该种格式的报文]{style="font-family:宋体"}
+压缩的RTP报文。当接口上允许进行RTP头压缩的最大连接数大于256时，成功压缩时，压缩端会将RTP报文压缩成该种格式的报文
 
-[[ERROR]{lang="EN-US"}]{#struct_0_52071_x1881_x1074562585}
+ERROR
 
-[[IPHC]{lang="EN-US"}]{#struct_0_52071_x1881_x373724626}[压缩]{style="font-family:宋体"}[/]{lang="EN-US"}[解压缩过程的错误信息]{style="font-family:宋体"}
+IPHC压缩/解压缩过程的错误信息
 
-[[WARNING]{lang="EN-US"}]{#struct_0_52071_x1881_x1074759193}
+WARNING
 
-[[IPHC]{lang="EN-US"}]{#struct_0_52071_x1881_495649795}[压缩]{style="font-family:宋体"}[/]{lang="EN-US"}[解压缩过程的提示信息]{style="font-family:宋体"}
+IPHC压缩/解压缩过程的提示信息
 
-[[received]{lang="EN-US"}]{#struct_0_52071_x1881_188145754}
+received
 
-[[接收报文]{style="font-family:宋体"}]{#struct_0_52071_x1881_x1074693657}
+接收报文
 
-[[sent]{lang="EN-US"}]{#struct_0_52071_x1881_x1049472630}
+sent
 
-[[发送报文]{style="font-family:宋体"}]{#struct_0_52071_x1881_x1074890265}
+发送报文
 
-[[connect ID]{lang="EN-US"}]{#struct_0_52071_x1881_x301516100}
+connect ID
 
-[[报文流标识，表示压缩]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_52071_x1881_x1074824729}[解压缩的某条流。压缩端和解压端根据这个]{style="font-family:宋体"}[ID]{lang="EN-US"}[号来查找压缩和解压缩表项]{style="font-family:宋体"}
+报文流标识，表示压缩/解压缩的某条流。压缩端和解压端根据这个ID号来查找压缩和解压缩表项
 
-[[checksum]{lang="EN-US"}]{#struct_0_52071_x1881_x1513612112}
+checksum
 
-[[校验和]{style="font-family:宋体"}]{#struct_0_52071_x1881_x1073972761}
+校验和
 
-[[seq]{lang="EN-US"}]{#struct_0_52071_x1881_x1162224406}
+seq
 
-[[Sequence Number]{lang="EN-US"}]{#struct_0_52071_x1881_x1073907225}[，报文的序列号]{style="font-family:宋体"}
+Sequence Number，报文的序列号
 
-[[gen]{lang="EN-US"}]{#struct_0_52071_x1881_212776190}
+gen
 
-[[Generation Number]{lang="EN-US"}]{#struct_0_52071_x1881_847817249}[字段用来检测]{style="font-family:宋体"}[COMPRESSED_NON_TCP]{lang="EN-US"}[报文压缩和解压缩的一致性]{style="font-family:宋体"}
+Generation Number字段用来检测COMPRESSED_NON_TCP报文压缩和解压缩的一致性
 
-[[Sent uncompressed packets]{lang="EN-US"}]{#struct_0_52071_x1881_1428961260}
+Sent uncompressed packets
 
-[[发送了没有压缩的报文。压缩过程中，当检测到压缩表项为空，不能对报文进行压缩，为保证报文传输，会发送没有经过压缩的报文，并打印该条信息]{style="font-family:宋体"}]{#struct_0_52071_x1881_847882785}
+发送了没有压缩的报文。压缩过程中，当检测到压缩表项为空，不能对报文进行压缩，为保证报文传输，会发送没有经过压缩的报文，并打印该条信息
 
-[[The compression context of TCP is invalid]{lang="EN-US"}]{#struct_0_52071_x1881_x986081628}
+The compression context of TCP is invalid
 
-[[压缩]{style="font-family:宋体"}[TCP]{lang="EN-US"}]{#struct_0_52071_x1881_847686177}[报文过程中检测到压缩表项无效。这时压缩端会发送]{style="font-family:宋体"}[FULL_HEADER]{lang="EN-US"}[报文，同时更新压缩表项]{style="font-family:宋体"}
+压缩TCP报文过程中检测到压缩表项无效。这时压缩端会发送FULL_HEADER报文，同时更新压缩表项
 
-[[IP header mismatched]{lang="EN-US"}]{#struct_0_52071_x1881_1187371776}
+IP header mismatched
 
-[[压缩]{style="font-family:宋体"}[TCP]{lang="EN-US"}]{#struct_0_52071_x1881_847751713}[报文过程中检测到]{style="font-family:宋体"}[IP]{lang="EN-US"}[头与压缩表项中的不匹配。这时压缩端会发送]{style="font-family:宋体"}[FULL_HEADER]{lang="EN-US"}[报文，同时更新压缩表项]{style="font-family:宋体"}
+压缩TCP报文过程中检测到IP头与压缩表项中的不匹配。这时压缩端会发送FULL_HEADER报文，同时更新压缩表项
 
-[[TCP header mismatched]{lang="EN-US"}]{#struct_0_52071_x1881_x366701229}
+TCP header mismatched
 
-[[压缩]{style="font-family:宋体"}[TCP]{lang="EN-US"}]{#struct_0_52071_x1881_847555105}[报文过程中检测到]{style="font-family:宋体"}[TCP]{lang="EN-US"}[头与压缩表项中的不匹配。这时压缩端会发送]{style="font-family:宋体"}[FULL_HEADER]{lang="EN-US"}[报文，同时更新压缩表项]{style="font-family:宋体"}
+压缩TCP报文过程中检测到TCP头与压缩表项中的不匹配。这时压缩端会发送FULL_HEADER报文，同时更新压缩表项
 
-[[Delta th_URG code error]{lang="EN-US"}]{#struct_0_52071_x1881_x1775576661}
+Delta th_URG code error
 
-[[压缩]{style="font-family:宋体"}[TCP]{lang="EN-US"}]{#struct_0_52071_x1881_847620641}[报文过程中检测到]{style="font-family:宋体"}[Delta URG]{lang="EN-US"}[字段编码错误。这时压缩端会发送]{style="font-family:宋体"}[FULL_HEADER]{lang="EN-US"}[报文，同时更新压缩表项]{style="font-family:宋体"}
+压缩TCP报文过程中检测到Delta URG字段编码错误。这时压缩端会发送FULL_HEADER报文，同时更新压缩表项
 
-[[th_URG mismatched]{lang="EN-US"}]{#struct_0_52071_x1881_384371317}
+th_URG mismatched
 
-[[压缩]{style="font-family:宋体"}[TCP]{lang="EN-US"}]{#struct_0_52071_x1881_847424033}[报文过程中检测到]{style="font-family:宋体"}[URG]{lang="EN-US"}[字段与压缩表项中的不匹配。这时压缩端会发送]{style="font-family:宋体"}[FULL_HEADER]{lang="EN-US"}[报文，同时更新压缩表项]{style="font-family:宋体"}
+压缩TCP报文过程中检测到URG字段与压缩表项中的不匹配。这时压缩端会发送FULL_HEADER报文，同时更新压缩表项
 
-[[Delta th_win code error]{lang="EN-US"}]{#struct_0_52071_x1881_2123452117}
+Delta th_win code error
 
-[[压缩]{style="font-family:宋体"}[TCP]{lang="EN-US"}]{#struct_0_52071_x1881_847489569}[报文过程中检测到]{style="font-family:宋体"}[Delta Window]{lang="EN-US"}[字段编码错误。这时压缩端会发送]{style="font-family:宋体"}[FULL_HEADER]{lang="EN-US"}[报文，同时更新压缩表项]{style="font-family:宋体"}
+压缩TCP报文过程中检测到Delta Window字段编码错误。这时压缩端会发送FULL_HEADER报文，同时更新压缩表项
 
-[[Delta th_ACK code error]{lang="EN-US"}]{#struct_0_52071_x1881_122400098}
+Delta th_ACK code error
 
-[[压缩]{style="font-family:宋体"}[TCP]{lang="EN-US"}]{#struct_0_52071_x1881_371209176}[报文过程中检测到]{style="font-family:宋体"}[Delta Acknowledgment Number]{lang="EN-US"}[字段编码错误。这时压缩端会发送]{style="font-family:宋体"}[FULL_HEADER]{lang="EN-US"}[报文，同时更新压缩表项]{style="font-family:宋体"}
+压缩TCP报文过程中检测到Delta Acknowledgment Number字段编码错误。这时压缩端会发送FULL_HEADER报文，同时更新压缩表项
 
-[[Delta th_seq code error]{lang="EN-US"}]{#struct_0_52071_x1881_848341537}
+Delta th_seq code error
 
-[[压缩]{style="font-family:宋体"}[TCP]{lang="EN-US"}]{#struct_0_52071_x1881_812636057}[报文过程中检测到]{style="font-family:宋体"}[Delta Sequence]{lang="EN-US"}[字段编码错误。这时压缩端会发送]{style="font-family:宋体"}[FULL_HEADER]{lang="EN-US"}[报文，同时更新压缩表项]{style="font-family:宋体"}
+压缩TCP报文过程中检测到Delta Sequence字段编码错误。这时压缩端会发送FULL_HEADER报文，同时更新压缩表项
 
-[[The flag bits of th_URG, th_seq, and th_win are set]{lang="EN-US"}]{#struct_0_52071_x1881_848407073}
+The flag bits of th_URG, th_seq, and th_win are set
 
-[[压缩]{style="font-family:宋体"}[TCP]{lang="EN-US"}]{#struct_0_52071_x1881_847817248}[报文过程中检测到]{style="font-family:宋体"}[URG]{lang="EN-US"}[字段、]{style="font-family:宋体"}[Sequence Number]{lang="EN-US"}[字段和]{style="font-family:宋体"}[Window]{lang="EN-US"}[字段的标识位被置为]{style="font-family:宋体"}[1]{lang="EN-US"}[时，压缩端会发送]{style="font-family:宋体"}[FULL_HEADER]{lang="EN-US"}[报文，同时更新压缩表项]{style="font-family:宋体"}
+压缩TCP报文过程中检测到URG字段、Sequence Number字段和Window字段的标识位被置为1时，压缩端会发送FULL_HEADER报文，同时更新压缩表项
 
-[[Delta IP ID code error]{lang="EN-US"}]{#struct_0_52071_x1881_1428961261}
+Delta IP ID code error
 
-[[压缩]{style="font-family:宋体"}[TCP]{lang="EN-US"}]{#struct_0_52071_x1881_847882784}[报文过程中检测到]{style="font-family:宋体"}[Delta IP ID]{lang="EN-US"}[编码错误。这时压缩端会发送]{style="font-family:宋体"}[FULL_HEADER]{lang="EN-US"}[报文，同时更新压缩表项]{style="font-family:宋体"}
+压缩TCP报文过程中检测到Delta IP ID编码错误。这时压缩端会发送FULL_HEADER报文，同时更新压缩表项
 
-[[The compression context of NON_TCP is invalid]{lang="EN-US"}]{#struct_0_52071_x1881_x986081629}
+The compression context of NON_TCP is invalid
 
-[[将]{style="font-family:宋体"}[RTP]{lang="EN-US"}]{#struct_0_52071_x1881_847686176}[报文压缩成]{style="font-family:宋体"}[COMPRESSED_NON_TCP]{lang="EN-US"}[报文过程中检测到]{style="font-family:宋体"}[COMPRESSED_NON_TCP]{lang="EN-US"}[的压缩表项无效。这时压缩端会发送]{style="font-family:宋体"}[FULL_HEADER]{lang="EN-US"}[报文，同时更新压缩表项]{style="font-family:宋体"}
+将RTP报文压缩成COMPRESSED_NON_TCP报文过程中检测到COMPRESSED_NON_TCP的压缩表项无效。这时压缩端会发送FULL_HEADER报文，同时更新压缩表项
 
-[[UDP checksum mismatched]{lang="EN-US"}]{#struct_0_52071_x1881_1187371775}
+UDP checksum mismatched
 
-[[压缩]{style="font-family:宋体"}[RTP]{lang="EN-US"}]{#struct_0_52071_x1881_847751712}[报文过程中检测到]{style="font-family:宋体"}[UDP]{lang="EN-US"}[头的]{style="font-family:宋体"}[Checksum]{lang="EN-US"}[字段与压缩表项中的不匹配。这时压缩端会发送]{style="font-family:宋体"}[FULL_HEADER]{lang="EN-US"}[报文，同时更新压缩表项]{style="font-family:宋体"}
+压缩RTP报文过程中检测到UDP头的Checksum字段与压缩表项中的不匹配。这时压缩端会发送FULL_HEADER报文，同时更新压缩表项
 
-[[The number of compressed NON_TCP packets is out of range]{lang="EN-US"}]{#struct_0_52071_x1881_x366701228}
+The number of compressed NON_TCP packets is out of range
 
-[[将]{style="font-family:宋体"}[RTP]{lang="EN-US"}]{#struct_0_52071_x1881_847555104}[报文压缩成]{style="font-family:宋体"}[COMPRESSED_NON_TCP]{lang="EN-US"}[过程中检测到在两个]{style="font-family:宋体"}[FULL_HEADER]{lang="EN-US"}[报文之间，发送的]{style="font-family:宋体"}[COMPRESSED_NON_TCP]{lang="EN-US"}[报文的数量超出了规定的范围]{style="font-family:宋体"}
+将RTP报文压缩成COMPRESSED_NON_TCP过程中检测到在两个FULL_HEADER报文之间，发送的COMPRESSED_NON_TCP报文的数量超出了规定的范围
 
-[[The time for compressing NON_TCP packet is lawless]{lang="EN-US"}]{#struct_0_52071_x1881_x1775576660}
+The time for compressing NON_TCP packet is lawless
 
-[[将]{style="font-family:宋体"}[RTP]{lang="EN-US"}]{#struct_0_52071_x1881_847620640}[报文压缩成]{style="font-family:宋体"}[COMPRESSED_NON_TCP]{lang="EN-US"}[报文的过程中检测到压缩的报文的时间段非法。这时压缩端会发送一个]{style="font-family:宋体"}[FULL_HEADER]{lang="EN-US"}[报文来同步压缩端和解压端（在每发送一个]{style="font-family:宋体"}[FULL_HEADER]{lang="EN-US"}[报文后的一段时间内压缩的]{style="font-family:宋体"}[COMPRESSED_NON_TCP]{lang="EN-US"}[压缩报文是合法的，不在这个时间段内对报文进行压缩是非法的）]{style="font-family:宋体"}
+将RTP报文压缩成COMPRESSED_NON_TCP报文的过程中检测到压缩的报文的时间段非法。这时压缩端会发送一个FULL_HEADER报文来同步压缩端和解压端（在每发送一个FULL_HEADER报文后的一段时间内压缩的COMPRESSED_NON_TCP压缩报文是合法的，不在这个时间段内对报文进行压缩是非法的）
 
-[[The delta values of timestamp,sequence number, or IP ID are lawless]{lang="EN-US"}]{#struct_0_52071_x1881_384371316}
+The delta values of timestamp,sequence number, or IP ID are lawless
 
-[[压缩]{style="font-family:宋体"}[RTP]{lang="EN-US"}]{#struct_0_52071_x1881_847424032}[报文的过程中检测到时间戳的]{style="font-family:宋体"}[delta]{lang="EN-US"}[值、报文序列号的]{style="font-family:宋体"}[delta]{lang="EN-US"}[值或者]{style="font-family:宋体"}[IP ID]{lang="EN-US"}[的]{style="font-family:宋体"}[delta]{lang="EN-US"}[值非法。这时压缩端会发送]{style="font-family:宋体"}[FULL_HEADER]{lang="EN-US"}[报文，同时更新压缩表项]{style="font-family:宋体"}
+压缩RTP报文的过程中检测到时间戳的delta值、报文序列号的delta值或者IP ID的delta值非法。这时压缩端会发送FULL_HEADER报文，同时更新压缩表项
 
-[[The compression context of RTP is invalid]{lang="EN-US"}]{#struct_0_52071_x1881_2123452116}
+The compression context of RTP is invalid
 
-[[压缩]{style="font-family:宋体"}[RTP]{lang="EN-US"}]{#struct_0_52071_x1881_847489568}[报文的过程中检测到]{style="font-family:宋体"}[RTP]{lang="EN-US"}[的压缩表项无效。这时压缩端会发送]{style="font-family:宋体"}[FULL_HEADER]{lang="EN-US"}[报文，同时更新压缩表项]{style="font-family:宋体"}
+压缩RTP报文的过程中检测到RTP的压缩表项无效。这时压缩端会发送FULL_HEADER报文，同时更新压缩表项
 
-[[The delta value of the IP ID is lawless]{lang="EN-US"}]{#struct_0_52071_x1881_122400097}
+The delta value of the IP ID is lawless
 
-[[压缩]{style="font-family:宋体"}[RTP]{lang="EN-US"}]{#struct_0_52071_x1881_848341536}[报文的过程中检测到]{style="font-family:宋体"}[IP]{lang="EN-US"}[头]{style="font-family:宋体"}[Delta ID]{lang="EN-US"}[值非法。这时压缩端会发送]{style="font-family:宋体"}[FULL_HEADER]{lang="EN-US"}[报文，同时更新压缩表项]{style="font-family:宋体"}
+压缩RTP报文的过程中检测到IP头Delta ID值非法。这时压缩端会发送FULL_HEADER报文，同时更新压缩表项
 
-[[Connect ID xx out of range]{lang="EN-US"}]{#struct_0_52071_x1881_812636056}
+Connect ID xx out of range
 
-[[解压过程中检测到报文流标识号]{style="font-family:宋体"}[xx]{lang="EN-US"}]{#struct_0_52071_x1881_848407072}[超出合法范围]{style="font-family:宋体"}
+解压过程中检测到报文流标识号xx超出合法范围
 
-[[the decompression context is null]{lang="EN-US"}]{#struct_0_52071_x1881_688230649}
+the decompression context is null
 
-[[解压过程中检测到解压缩表项为空。这时解压端会向压缩端发送一个]{style="font-family:宋体"}[CONTEXT_STATE]{lang="EN-US"}]{#struct_0_52071_x1881_847817251}[报文]{style="font-family:宋体"}
+解压过程中检测到解压缩表项为空。这时解压端会向压缩端发送一个CONTEXT_STATE报文
 
-[[the decompression context is  invalid]{lang="EN-US"}]{#struct_0_52071_x1881_x527353884}
+the decompression context is  invalid
 
-[[解压过程中检测到解压缩表项无效。这时解压端会向压缩端发送一个]{style="font-family:宋体"}[CONTEXT_STATE]{lang="EN-US"}]{#struct_0_52071_x1881_847882787}[报文]{style="font-family:宋体"}
+解压过程中检测到解压缩表项无效。这时解压端会向压缩端发送一个CONTEXT_STATE报文
 
-[[the TCP checksum is error]{lang="EN-US"}]{#struct_0_52071_x1881_x986081630}
+the TCP checksum is error
 
-[[解压过程中检测到]{style="font-family:宋体"}[TCP Checksum]{lang="EN-US"}]{#struct_0_52071_x1881_847686179}[字段错误。这时解压端会向压缩端发送一个]{style="font-family:宋体"}[CONTEXT_STATE]{lang="EN-US"}[报文]{style="font-family:宋体"}
+解压过程中检测到TCP Checksum字段错误。这时解压端会向压缩端发送一个CONTEXT_STATE报文
 
-[[the generation number is mismatched]{lang="EN-US"}]{#struct_0_52071_x1881_1187371766}
+the generation number is mismatched
 
-[[解压缩过程中检测到]{style="font-family:宋体"}[Generation Number]{lang="EN-US"}]{#struct_0_52071_x1881_847751715}[字段不匹配。这时解压端会向压缩端发送一个]{style="font-family:宋体"}[CONTEXT_STATE]{lang="EN-US"}[报文]{style="font-family:宋体"}
+解压缩过程中检测到Generation Number字段不匹配。这时解压端会向压缩端发送一个CONTEXT_STATE报文
 
-[[the time for receiving the packet is lawless]{lang="EN-US"}]{#struct_0_52071_x1881_x366701235}
+the time for receiving the packet is lawless
 
-[[解压过程中检测到接收]{style="font-family:宋体"}[COMPRESSED_NON_TCP]{lang="EN-US"}]{#struct_0_52071_x1881_847555107}[报文的时间非法。这时解压端会向压缩端发送一个]{style="font-family:宋体"}[CONTEXT_STATE]{lang="EN-US"}[报文]{style="font-family:宋体"}
+解压过程中检测到接收COMPRESSED_NON_TCP报文的时间非法。这时解压端会向压缩端发送一个CONTEXT_STATE报文
 
-[[the sequence number is mismatched]{lang="EN-US"}]{#struct_0_52071_x1881_x1775576659}
+the sequence number is mismatched
 
-[[解压过程中检测到]{style="font-family:宋体"}[Sequence Number]{lang="EN-US"}]{#struct_0_52071_x1881_847620643}[字段与解压表想中的不匹配。这时解压端会向压缩端发送一个]{style="font-family:宋体"}[CONTEXT_STATE]{lang="EN-US"}[报文]{style="font-family:宋体"}
+解压过程中检测到Sequence Number字段与解压表想中的不匹配。这时解压端会向压缩端发送一个CONTEXT_STATE报文
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_52071_x1881_384371319}
+\# 两台设备Rouetr A和Router B用Serial接口相连，两端都配置IPHC压缩，打开Router A的IPHC TCP头压缩调试信息开关。当Router A以Telnet方式登录Router B时，Router A上TCP头压缩解压缩调试信息如下。
 
-[[\# ]{lang="EN-US"}]{#struct_0_52071_x1881_x330119467}[两台设备]{style="font-family:宋体"}[Rouetr A]{lang="EN-US"}[和]{style="font-family:宋体"}[Router B]{lang="EN-US"}[用]{style="font-family:宋体"}[Serial]{lang="EN-US"}[接口相连，两端都配置]{style="font-family:宋体"}[IPHC]{lang="EN-US"}[压缩，打开]{style="font-family:宋体"}[Router A]{lang="EN-US"}[的]{style="font-family:宋体"}[IPHC TCP]{lang="EN-US"}[头压缩调试信息开关。当]{style="font-family:宋体"}[Router A]{lang="EN-US"}[以]{style="font-family:宋体"}[Telnet]{lang="EN-US"}[方式登录]{style="font-family:宋体"}[Router B]{lang="EN-US"}[时，]{style="font-family:宋体"}[Router A]{lang="EN-US"}[上]{style="font-family:宋体"}[TCP]{lang="EN-US"}[头压缩解压缩调试信息如下。]{style="font-family:宋体"}
+\<RouterA\> debugging ppp compression iphc tcp
 
-[[\<RouterA\> debugging ppp compression iphc tcp]{lang="EN-US"}]{#struct_0_52071_x1881_1274483271}
+\*Dec  8 11:23:00:081 2013 RouterA IPHC/7/PACKET: -MDC=1;THC: sent FULL_HEADER, connect ID 4, checksum 0x40b8, seq 1872787448
 
-[\*Dec  8 11:23:00:081 2013 RouterA IPHC/7/PACKET: -MDC=1;THC: sent FULL_HEADER, connect ID 4, checksum 0x40b8, seq 1872787448]{lang="EN-US"}
+*[// TCP*]*头压缩信息：报文流ID为4，发送FULL_HEADER报文，校验和为0x40b8，序列号为1872787448*
 
-[*[// TCP]{lang="EN-US"}*]{#struct_0_52071_x1881_x1661425381}*[头压缩信息：报文流]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[4]{lang="EN-US"}[，发送]{style="font-family:宋体"}[FULL_HEADER]{lang="EN-US"}[报文，校验和为]{style="font-family:宋体"}[0x40b8]{lang="EN-US"}[，序列号为]{style="font-family:宋体"}[1872787448]{lang="EN-US"}*
+\*Dec  8 11:23:00:081 2013 RouterA PPP/7/PACKET: -MDC=1;
 
-[[\*Dec  8 11:23:00:081 2013 RouterA PPP/7/PACKET: -MDC=1;]{lang="EN-US"}]{#struct_0_52071_x1881_x1618033827}
+  PPP Packet:
 
-[  PPP Packet:]{lang="EN-US"}
+      Serial2/1/0 output IPHC(0061) packet, pktLen 56
 
-[      Serial2/1/0 output IPHC(0061) packet, pktLen 56]{lang="EN-US"}
+*[// Serial2/1/0*]*接口发送IPHC报文，报文长度为56*
 
-[*[// Serial2/1/0]{lang="EN-US"}*]{#struct_0_52071_x1881_x926104853}*[接口发送]{style="font-family:宋体"}[IPHC]{lang="EN-US"}[报文，报文长度为]{style="font-family:宋体"}[56]{lang="EN-US"}*
+\*Dec  8 11:23:00:082 2013 RouterA IPHC/7/PACKET: -MDC=1;
 
-[[\*Dec  8 11:23:00:082 2013 RouterA IPHC/7/PACKET: -MDC=1;]{lang="EN-US"}]{#struct_0_52071_x1881_847424035}
+ THC: sent COMPRESSED_TCP, connect ID 4, checksum 0x016a, seq 1872787448
 
-[ THC: sent COMPRESSED_TCP, connect ID 4, checksum 0x016a, seq 1872787448]{lang="EN-US"}
+*[// TCP*]*头压缩信息：报文流ID为4，发送COMPRESSED_TCP报文，校验和为0x016a，序列号为1872787448*
 
-[*[// TCP]{lang="EN-US"}*]{#struct_0_52071_x1881_2123452111}*[头压缩信息：报文流]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[4]{lang="EN-US"}[，发送]{style="font-family:宋体"}[COMPRESSED_TCP]{lang="EN-US"}[报文，校验和为]{style="font-family:宋体"}[0x016a]{lang="EN-US"}[，序列号为]{style="font-family:宋体"}[1872787448]{lang="EN-US"}*
+\*Dec  8 11:23:00:082 2013 RouterA PPP/7/PACKET: -MDC=1;
 
-[[\*Dec  8 11:23:00:082 2013 RouterA PPP/7/PACKET: -MDC=1;]{lang="EN-US"}]{#struct_0_52071_x1881_x1176694502}
+  PPP Packet:
 
-[  PPP Packet:]{lang="EN-US"}
+      Serial2/1/0 output IPHC(0063) packet, pktLen 38
 
-[      Serial2/1/0 output IPHC(0063) packet, pktLen 38]{lang="EN-US"}
+*[// Serial2/1/0*]*接口发送IPHC报文，报文长度为38*
 
-[*[// Serial2/1/0]{lang="EN-US"}*]{#struct_0_52071_x1881_206999925}*[接口发送]{style="font-family:宋体"}[IPHC]{lang="EN-US"}[报文，报文长度为]{style="font-family:宋体"}[38]{lang="EN-US"}*
+\*Dec  8 11:23:00:083 2013 RouterA PPP/7/PACKET: -MDC=1;
 
-[[\*Dec  8 11:23:00:083 2013 RouterA PPP/7/PACKET: -MDC=1;]{lang="EN-US"}]{#struct_0_52071_x1881_x765258304}
+  PPP Packet:
 
-[  PPP Packet:]{lang="EN-US"}
+      Serial2/1/0 input IPHC(0061) packet, pktLen 56
 
-[      Serial2/1/0 input IPHC(0061) packet, pktLen 56]{lang="EN-US"}
+*[// Serial2/1/0*]*接口接收IPHC报文，报文长度为56*
 
-[*[// Serial2/1/0]{lang="EN-US"}*]{#struct_0_52071_x1881_1258388425}*[接口接收]{style="font-family:宋体"}[IPHC]{lang="EN-US"}[报文，报文长度为]{style="font-family:宋体"}[56]{lang="EN-US"}*
+\*Dec  8 11:23:00:083 2013 RouterA IPHC/7/PACKET: -MDC=1;
 
-[[\*Dec  8 11:23:00:083 2013 RouterA IPHC/7/PACKET: -MDC=1;]{lang="EN-US"}]{#struct_0_52071_x1881_1027000846}
+ THC: received FULL_HEADER, connect ID 52, checksum 0x40a6, seq 766841932
 
-[ THC: received FULL_HEADER, connect ID 52, checksum 0x40a6, seq 766841932]{lang="EN-US"}
+*[// TCP*]*头压缩信息：报文流ID为52，接收FULL_HEADER报文，校验和为0x40a6，序列号为766841932*
 
-[*[// TCP]{lang="EN-US"}*]{#struct_0_52071_x1881_x2005912604}*[头压缩信息：报文流]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[52]{lang="EN-US"}[，接收]{style="font-family:宋体"}[FULL_HEADER]{lang="EN-US"}[报文，校验和为]{style="font-family:宋体"}[0x40a6]{lang="EN-US"}[，序列号为]{style="font-family:宋体"}[766841932]{lang="EN-US"}*
+\*Dec  8 11:23:00:088 2013 RouterA PPP/7/PACKET: -MDC=1;
 
-[[\*Dec  8 11:23:00:088 2013 RouterA PPP/7/PACKET: -MDC=1;]{lang="EN-US"}]{#struct_0_52071_x1881_317586117}
+  PPP Packet:
 
-[  PPP Packet:]{lang="EN-US"}
+      Serial2/1/0 input IPHC(0063) packet, pktLen 41
 
-[      Serial2/1/0 input IPHC(0063) packet, pktLen 41]{lang="EN-US"}
+*[// Serial2/1/0*]*接口接收IPHC报文，报文长度为41*
 
-[*[// Serial2/1/0]{lang="EN-US"}*]{#struct_0_52071_x1881_241284731}*[接口接收]{style="font-family:宋体"}[IPHC]{lang="EN-US"}[报文，报文长度为]{style="font-family:宋体"}[41]{lang="EN-US"}*
+\*Dec  8 11:23:00:088 2013 RouterA IPHC/7/PACKET: -MDC=1;
 
-[[\*Dec  8 11:23:00:088 2013 RouterA IPHC/7/PACKET: -MDC=1;]{lang="EN-US"}]{#struct_0_52071_x1881_847489571}
+ THC: received COMPRESSED_TCP, connect ID 4, checksum 0xed67, seq 766841932
 
-[ THC: received COMPRESSED_TCP, connect ID 4, checksum 0xed67, seq 766841932]{lang="EN-US"}
+*[// TCP*]*头压缩信息：报文流ID为4，接收COMPRESSED_TCP报文，校验和为0x40a6，序列号为766841932*
 
-[*[// TCP]{lang="EN-US"}*]{#struct_0_52071_x1881_x1833915030}*[头压缩信息：报文流]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[4]{lang="EN-US"}[，接收]{style="font-family:宋体"}[COMPRESSED_TCP]{lang="EN-US"}[报文，校验和为]{style="font-family:宋体"}[0x40a6]{lang="EN-US"}[，序列号为]{style="font-family:宋体"}[766841932]{lang="EN-US"}*
+\*Dec  8 11:23:00:088 2013 RouterA IPHC/7/IPHC Event: -MDC=1;
 
-[[\*Dec  8 11:23:00:088 2013 RouterA IPHC/7/IPHC Event: -MDC=1;]{lang="EN-US"}]{#struct_0_52071_x1881_x783286763}
+ THC ERROR: Delta th_win code error, connect ID 4
 
-[ THC ERROR: Delta th_win code error, connect ID 4]{lang="EN-US"}
+*[// TCP*]*头压缩错误信息：报文流ID为4，在压缩TCP报文过程中Delta Window字段编码错误*
 
-[*[// TCP]{lang="EN-US"}*]{#struct_0_52071_x1881_1646538103}*[头压缩错误信息：报文流]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[4]{lang="EN-US"}[，在压缩]{style="font-family:宋体"}[TCP]{lang="EN-US"}[报文过程中]{style="font-family:宋体"}[Delta Window]{lang="EN-US"}[字段编码错误]{style="font-family:宋体"}*
+\*Dec  8 11:23:00:088 2013 RouterA IPHC/7/PACKET: -MDC=1;
 
-[[\*Dec  8 11:23:00:088 2013 RouterA IPHC/7/PACKET: -MDC=1;]{lang="EN-US"}]{#struct_0_52071_x1881_1962403850}
+ THC: sent FULL_HEADER, connect ID 4, checksum 0x4086, seq 1872787430
 
-[ THC: sent FULL_HEADER, connect ID 4, checksum 0x4086, seq 1872787430]{lang="EN-US"}
+*[// TCP*]*头压缩信息：报文流ID为4，发送FULL_HEADER报文，校验和为0x4086，校验和为1872787430*
 
-[*[// TCP]{lang="EN-US"}*]{#struct_0_52071_x1881_1523364116}*[头压缩信息：报文流]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[4]{lang="EN-US"}[，发送]{style="font-family:宋体"}[FULL_HEADER]{lang="EN-US"}[报文，校验和为]{style="font-family:宋体"}[0x4086]{lang="EN-US"}[，校验和为]{style="font-family:宋体"}[1872787430]{lang="EN-US"}*
+\*Dec  8 11:23:00:088 2013 RouterA PPP/7/PACKET: -MDC=1;
 
-[[\*Dec  8 11:23:00:088 2013 RouterA PPP/7/PACKET: -MDC=1;]{lang="EN-US"}]{#struct_0_52071_x1881_x627678827}
+  PPP Packet:
 
-[  PPP Packet:]{lang="EN-US"}
+      Serial2/1/0 output IPHC(0061) packet, pktLen 56
 
-[      Serial2/1/0 output IPHC(0061) packet, pktLen 56]{lang="EN-US"}
+*[// Serial2/1/0*]*接口发送IPHC报文，报文长度为56*
 
-[*[// Serial2/1/0]{lang="EN-US"}*]{#struct_0_52071_x1881_x2067159441}*[接口发送]{style="font-family:宋体"}[IPHC]{lang="EN-US"}[报文，报文长度为]{style="font-family:宋体"}[56]{lang="EN-US"}*
+\*Dec  8 11:23:00:088 2013 RouterA IPHC/7/PACKET: -MDC=1;
 
-[[\*Dec  8 11:23:00:088 2013 RouterA IPHC/7/PACKET: -MDC=1;]{lang="EN-US"}]{#struct_0_52071_x1881_x788992679}
+ THC: sent COMPRESSED_TCP, connect ID 4, checksum 0x22fa, seq 1872787430
 
-[ THC: sent COMPRESSED_TCP, connect ID 4, checksum 0x22fa, seq 1872787430]{lang="EN-US"}
+*[// TCP*]*头压缩信息：报文流ID为4，发送COMPRESSED_TCP报文，校验和为0x016a，序列号为1872787448*
 
-[*[// TCP]{lang="EN-US"}*]{#struct_0_52071_x1881_472734741}*[头压缩信息：报文流]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[4]{lang="EN-US"}[，发送]{style="font-family:宋体"}[COMPRESSED_TCP]{lang="EN-US"}[报文，校验和为]{style="font-family:宋体"}[0x016a]{lang="EN-US"}[，序列号为]{style="font-family:宋体"}[1872787448]{lang="EN-US"}*
-
-*[\
-]{lang="EN-US" style="font-size:10.5pt;font-family:\"Arial\",\"sans-serif\""}*
-
-::: {.Section3 style="layout-grid:15.75pt"}
-:::
-
-::: {#-1088750001 .myid}
-[]{#_Toc404784822}[]{#struct_0_52071_x1881_x338228212}[]{#_Toc361305545}
+*\
+*
 
 **PPPoE \-- PPPoE Server调试命令 \-- debugging pppoe-server**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_52071_x1881_1494517448}
+【命令】
 
-[**[debugging pppoe-server]{lang="EN-US"}**[ { **all** \| **error** \| **event** \| **packet** \[ **receive** \| **send** \] \| **timer** } \[ **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_52071_x1881_x338293748}
+**[debugging pppoe-server**[ { **all** \| **error** \| **event** \| **packet** [ **receive** \| **send** ] \| **timer** }  **interface** *interface-type interface-number* ]]
 
-[**[undo]{lang="EN-US"}**[ **debugging pppoe-server** { **all** \| **error** \| **event** \| **packet** \[ **receive** \| **send** \] \| **timer** } \[ **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_52071_x1881_x338097140}
+**[undo**[ **debugging pppoe-server** { **all** \| **error** \| **event** \| **packet** [ **receive** \| **send** ] \| **timer** }  **interface** *interface-type interface-number* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_52071_x1881_x49511462}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_52071_x1881_x338162676}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_52071_x1881_1545325377}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_52071_x1881_x337966068}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_52071_x1881_552008124}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_52071_x1881_x338031604}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_52071_x1881_x337834996}[：表示所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示所有调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_52071_x1881_x1434709838}[：表示错误调试信息开关。]{style="font-family:宋体"}
+**[error**]：表示错误调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_52071_x1881_x337900532}[：表示事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示事件调试信息开关。
 
-[**[packet send]{lang="EN-US"}**]{#struct_0_52071_x1881_x1392188681}[：表示]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[发送报文调试信息开关。]{style="font-family:宋体"}
+**[packet send**]：表示PPPoE发送报文调试信息开关。
 
-[**[packet receive]{lang="EN-US"}**]{#struct_0_52071_x1881_x337703924}[：表示]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[接收报文的调试信息开关。]{style="font-family:宋体"}
+**[packet receive**]：表示PPPoE接收报文的调试信息开关。
 
-[**[timer]{lang="EN-US"}**]{#struct_0_52071_x1881_x664119469}[：表示定时器调试信息开关。]{style="font-family:宋体"}
+**[timer**]：表示定时器调试信息开关。
 
-[**[interface]{lang="EN-US"}**[ ]{lang="EN-US"}*[interface-type interface-number]{lang="EN-US"}*]{#struct_0_52071_x1881_x337769460}[：指定的接口类型和编号。]{style="font-family:宋体"}
+**[interface***interface-type interface-number*]：指定的接口类型和编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_52071_x1881_x338228213}
+【使用指导】
 
-[**[debugging pppoe-server]{lang="EN-US"}**]{#struct_0_52071_x1881_1494582984}[命令用来打开]{style="font-family:宋体"}[PPPoE Server]{lang="EN-US"}[的调试信息开关。]{style="font-family:宋体"}**[undo debugging pppoe-server]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[PPPoE Server]{lang="EN-US"}[的调试信息开关。]{style="font-family:宋体"}
+**[debugging pppoe-server**]命令用来打开PPPoE Server的调试信息开关。**undo debugging pppoe-server**命令用来关闭PPPoE Server的调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[PPPoE Server]{lang="EN-US"}]{#struct_0_52071_x1881_x338293749}[的所有调试信息开关均处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，PPPoE Server的所有调试信息开关均处于关闭状态。
 
-[[表2-1 ]{lang="EN-US"}[debugging pppoe-server error]{lang="EN-US"}]{#struct_0_52071_x1881_1128486536}[命令输出信息描述表]{style="font-family:黑体"}
+表2-1 debugging pppoe-server error命令输出信息描述表
 
-[]{#table_struct_0_1670880217}[[字段]{style="font-family:黑体"}]{#struct_0_52071_x1881_x338097141}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_52071_x1881_x338162677}
+描述
 
-[[Failed to start the PPPoE server process on slot *slotnum*.]{lang="EN-US"}]{#struct_0_52071_x1881_x337966069}
+Failed to start the PPPoE server process on slot *slotnum*.
 
-[[启动单板]{style="font-family:宋体"}*[slotnum]{lang="EN-US"}*]{#struct_0_52071_x1881_x337834997}[上的]{style="font-family:宋体"}[PPPoE server]{lang="EN-US"}[进程失败]{style="font-family:宋体"}
+启动单板*slotnum*上的PPPoE server进程失败
 
-[[Received a packet with an invalid-length PPP-Max-Payload tag (len=*length*).]{lang="EN-US"}]{#struct_0_52071_x1881_x337900533}
+Received a packet with an invalid-length PPP-Max-Payload tag (len=*length*).
 
-[[收到的报文的]{style="font-family:宋体"}[PPP-Max-Payload Tag]{lang="EN-US"}]{#struct_0_52071_x1881_x337703925}[长度错误]{style="font-family:宋体"}
+收到的报文的PPP-Max-Payload Tag长度错误
 
-[[Wrong PPP-Max-Payload tag value (value=*value*).]{lang="EN-US"}]{#struct_0_52071_x1881_x337769461}
+Wrong PPP-Max-Payload tag value (value=*value*).
 
-[[PPP-Max-Payload Tag]{lang="EN-US"}]{#struct_0_52071_x1881_2045107155}[的值错误]{style="font-family:宋体"}
+PPP-Max-Payload Tag的值错误
 
-[[Failed to assign a session ID.]{lang="EN-US"}]{#struct_0_52071_x1881_2045172691}
+Failed to assign a session ID.
 
-[[分配会话]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_52071_x1881_2045238227}[失败]{style="font-family:宋体"}
+分配会话ID失败
 
-[[Failed to enable VLAN broadcast on VLAN interface *interface-name*.]{lang="EN-US"}]{#struct_0_52071_x1881_2045303763}
+Failed to enable VLAN broadcast on VLAN interface *interface-name*.
 
-[[VLAN]{lang="EN-US"}]{#struct_0_52071_x1881_2044845011}[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*[使能接收广播报文失败]{style="font-family:宋体"}
+VLAN接口*interface-name*使能接收广播报文失败
 
-[[Interface *interface-name* received a packet with an invalid-length circuit-id tag (len=*length*).]{lang="EN-US"}]{#struct_0_52071_x1881_2044910547}
+Interface *interface-name* received a packet with an invalid-length circuit-id tag (len=*length*).
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2044976083}[收到报文中]{style="font-family:宋体"}[circuit-id]{lang="EN-US"}[的数据长度错误，数据长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*
+接口*interface-name*收到报文中circuit-id的数据长度错误，数据长度为*length*
 
-[[Interface *interface-name* failed to parse the Enterprise Code in the circuit ID by using TR101.]{lang="EN-US"}]{#struct_0_52071_x1881_2045041619}
+Interface *interface-name* failed to parse the Enterprise Code in the circuit ID by using TR101.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2045631443}[解析]{style="font-family:宋体"}[TR-101]{lang="EN-US"}[格式的]{style="font-family:宋体"}[circuit-id]{lang="EN-US"}[的企业码错误]{style="font-family:宋体"}
+接口*interface-name*解析TR-101格式的circuit-id的企业码错误
 
-[[Interface *interface-name* failed to parse port type in the circuit ID by using TR101.]{lang="EN-US"}]{#struct_0_52071_x1881_2045696979}
+Interface *interface-name* failed to parse port type in the circuit ID by using TR101.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2045107154}[解析]{style="font-family:宋体"}[TR-101]{lang="EN-US"}[格式的]{style="font-family:宋体"}[circuit-id]{lang="EN-US"}[的接口类型失败]{style="font-family:宋体"}
+接口*interface-name*解析TR-101格式的circuit-id的接口类型失败
 
-[[Interface *interface-name* failed to parse the frame number in the circuit ID by using TR101.]{lang="EN-US"}]{#struct_0_52071_x1881_2045238226}
+Interface *interface-name* failed to parse the frame number in the circuit ID by using TR101.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2045303762}[解析]{style="font-family:宋体"}[TR-101]{lang="EN-US"}[格式的]{style="font-family:宋体"}[circuit-id]{lang="EN-US"}[的框号失败]{style="font-family:宋体"}
+接口*interface-name*解析TR-101格式的circuit-id的框号失败
 
-[[Interface *interface-name* failed to parse the slot number in the circuit ID by using TR101.]{lang="EN-US"}]{#struct_0_52071_x1881_2044845010}
+Interface *interface-name* failed to parse the slot number in the circuit ID by using TR101.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2044910546}[解析]{style="font-family:宋体"}[TR-101]{lang="EN-US"}[格式的]{style="font-family:宋体"}[circuit-id]{lang="EN-US"}[的板号失败]{style="font-family:宋体"}
+接口*interface-name*解析TR-101格式的circuit-id的板号失败
 
-[[Interface *interface-name* failed to parse the subslot number in the circuit ID by using TR101.]{lang="EN-US"}]{#struct_0_52071_x1881_2044976082}
+Interface *interface-name* failed to parse the subslot number in the circuit ID by using TR101.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2045041618}[解析]{style="font-family:宋体"}[TR-101]{lang="EN-US"}[格式的]{style="font-family:宋体"}[circuit-id]{lang="EN-US"}[的子卡号失败]{style="font-family:宋体"}
+接口*interface-name*解析TR-101格式的circuit-id的子卡号失败
 
-[[Interface *interface-name* failed to parse the ATM port in the circuit ID by using TR101.]{lang="EN-US"}]{#struct_0_52071_x1881_2045631442}
+Interface *interface-name* failed to parse the ATM port in the circuit ID by using TR101.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2045696978}[解析]{style="font-family:宋体"}[TR-101]{lang="EN-US"}[格式的]{style="font-family:宋体"}[circuit-id]{lang="EN-US"}[的]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口号失败]{style="font-family:宋体"}
+接口*interface-name*解析TR-101格式的circuit-id的ATM接口号失败
 
-[[Interface *interface-name* failed to parse the ATM VPI in the circuit ID by using TR101.]{lang="EN-US"}]{#struct_0_52071_x1881_2045107153}
+Interface *interface-name* failed to parse the ATM VPI in the circuit ID by using TR101.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2045172689}[解析]{style="font-family:宋体"}[TR-101]{lang="EN-US"}[格式的]{style="font-family:宋体"}[circuit-id]{lang="EN-US"}[的]{style="font-family:宋体"}[ATM VPI]{lang="EN-US"}[失败]{style="font-family:宋体"}
+接口*interface-name*解析TR-101格式的circuit-id的ATM VPI失败
 
-[[Interface *interface-name* failed to parse the ATM VCI in the circuit ID by using TR101.]{lang="EN-US"}]{#struct_0_52071_x1881_2045238225}
+Interface *interface-name* failed to parse the ATM VCI in the circuit ID by using TR101.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2045303761}[解析]{style="font-family:宋体"}[TR-101]{lang="EN-US"}[格式的]{style="font-family:宋体"}[circuit-id]{lang="EN-US"}[的]{style="font-family:宋体"}[ATM VCI]{lang="EN-US"}[失败]{style="font-family:宋体"}
+接口*interface-name*解析TR-101格式的circuit-id的ATM VCI失败
 
-[[Interface *interface-name* failed to parse port in the circuit ID by using TR101.]{lang="EN-US"}]{#struct_0_52071_x1881_2044910545}
+Interface *interface-name* failed to parse port in the circuit ID by using TR101.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2044976081}[解析]{style="font-family:宋体"}[TR-101]{lang="EN-US"}[格式的]{style="font-family:宋体"}[circuit-id]{lang="EN-US"}[的端口号失败]{style="font-family:宋体"}
+接口*interface-name*解析TR-101格式的circuit-id的端口号失败
 
-[[Interface *interface-name* failed to parse the VLAN ID in the circuit ID by using TR101.]{lang="EN-US"}]{#struct_0_52071_x1881_2045041617}
+Interface *interface-name* failed to parse the VLAN ID in the circuit ID by using TR101.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2045631441}[解析]{style="font-family:宋体"}[TR-101]{lang="EN-US"}[格式的]{style="font-family:宋体"}[circuit-id]{lang="EN-US"}[的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[号失败]{style="font-family:宋体"}
+接口*interface-name*解析TR-101格式的circuit-id的VLAN号失败
 
-[[Interface *interface-name* received a packet with a zero-length remote-id tag.]{lang="EN-US"}]{#struct_0_52071_x1881_2045696977}
+Interface *interface-name* received a packet with a zero-length remote-id tag.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2045107152}[接收的报文]{style="font-family:宋体"}[remote-id]{lang="EN-US"}[的长度为]{style="font-family:宋体"}[0]{lang="EN-US"}
+接口*interface-name*接收的报文remote-id的长度为0
 
-[[Interface *interface-name* failed to parse the remote ID by using format *format*.]{lang="EN-US"}]{#struct_0_52071_x1881_2045172688}
+Interface *interface-name* failed to parse the remote ID by using format *format*.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2045238224}[以]{style="font-family:宋体"}*[format]{lang="EN-US"}*[格式解析]{style="font-family:宋体"}[remote-id]{lang="EN-US"}[失败。]{style="font-family:宋体"}*[format]{lang="EN-US"}*[为解析格式类型：]{style="font-family:宋体"}[1]{lang="EN-US"}[表示]{style="font-family:宋体"}[hex]{lang="EN-US"}[类型，]{style="font-family:宋体"}[2]{lang="EN-US"}[表示]{style="font-family:宋体"}[ascii]{lang="EN-US"}[类型]{style="font-family:宋体"}
+接口*interface-name*以*format*格式解析remote-id失败。*format*为解析格式类型：1表示hex类型，2表示ascii类型
 
-[[Interface *interface-name* failed to parse the Vendor-Specific tag.]{lang="EN-US"}]{#struct_0_52071_x1881_2045303760}
+Interface *interface-name* failed to parse the Vendor-Specific tag.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2044845008}[解析]{style="font-family:宋体"}[TAG Vendor Specify]{lang="EN-US"}[失败]{style="font-family:宋体"}
+接口*interface-name*解析TAG Vendor Specify失败
 
-[[Interface *interface-name* failed to send a PADS packet (sid=*sessionid*).]{lang="EN-US"}]{#struct_0_52071_x1881_2044910544}
+Interface *interface-name* failed to send a PADS packet (sid=*sessionid*).
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2045041616}[发送]{style="font-family:宋体"}[PADS]{lang="EN-US"}[报文失败（会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[sessionid]{lang="EN-US"}*[）]{style="font-family:宋体"}
+接口*interface-name*发送PADS报文失败（会话ID为*sessionid*）
 
-[[Interface *interface-name* received a PADR packet with an illegal-length Vendor-Specific tag (len=*length*).]{lang="EN-US"}]{#struct_0_52071_x1881_2045631440}
+Interface *interface-name* received a PADR packet with an illegal-length Vendor-Specific tag (len=*length*).
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2045696976}[收到的]{style="font-family:宋体"}[PADR]{lang="EN-US"}[报文中]{style="font-family:宋体"}[TAG Vendor-specify]{lang="EN-US"}[的长度非法（]{style="font-family:宋体"}[Tag]{lang="EN-US"}[的长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*[）]{style="font-family:宋体"}
+接口*interface-name*收到的PADR报文中TAG Vendor-specify的长度非法（Tag的长度为*length*）
 
-[[Interface *interface-name* received a PADR packet with a wrong Enterprise Code in the Vendor-Specific tag.]{lang="EN-US"}]{#struct_0_52071_x1881_2045107151}
+Interface *interface-name* received a PADR packet with a wrong Enterprise Code in the Vendor-Specific tag.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2045172687}[收到的]{style="font-family:宋体"}[PADR]{lang="EN-US"}[报文中]{style="font-family:宋体"}[TAG Vendor-specify]{lang="EN-US"}[的企业码错误]{style="font-family:宋体"}
+接口*interface-name*收到的PADR报文中TAG Vendor-specify的企业码错误
 
-[[Interface *interface-name* received a PADR packet with a format error for the Vendor-Specific tag.]{lang="EN-US"}]{#struct_0_52071_x1881_2045238223}
+Interface *interface-name* received a PADR packet with a format error for the Vendor-Specific tag.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2045303759}[收到的]{style="font-family:宋体"}[PADR]{lang="EN-US"}[报文中]{style="font-family:宋体"}[TAG Vendor-specify]{lang="EN-US"}[的格式错误]{style="font-family:宋体"}
+接口*interface-name*收到的PADR报文中TAG Vendor-specify的格式错误
 
-[[Interface *interface-name* received a packet with  illegal tag length.]{lang="EN-US"}]{#struct_0_52071_x1881_2044845007}
+Interface *interface-name* received a packet with  illegal tag length.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2044910543}[收到报文中]{style="font-family:宋体"}[TAG]{lang="EN-US"}[的长度非法]{style="font-family:宋体"}
+接口*interface-name*收到报文中TAG的长度非法
 
-[[Interface *interface-name* received a packet with a nonzero- length End-Of-List tag.]{lang="EN-US"}]{#struct_0_52071_x1881_2045041615}
+Interface *interface-name* received a packet with a nonzero- length End-Of-List tag.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2045631439}[收到报文中]{style="font-family:宋体"}[end-of-list tag]{lang="EN-US"}[长度不为]{style="font-family:宋体"}[0]{lang="EN-US"}
+接口*interface-name*收到报文中end-of-list tag长度不为0
 
-[[Interface *interface-name* received a packet containing an ERROR tag (type = *type*).]{lang="EN-US"}]{#struct_0_52071_x1881_2045696975}
+Interface *interface-name* received a packet containing an ERROR tag (type = *type*).
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2045107150}[收到报文中包含类型为]{style="font-family:宋体"}*[type]{lang="EN-US"}*[的错误]{style="font-family:宋体"}[tag]{lang="EN-US"}
+接口*interface-name*收到报文中包含类型为*type*的错误tag
 
-[[Interface *interface-name* received a packet with zero or more than one Service-Name tag.]{lang="EN-US"}]{#struct_0_52071_x1881_2045172686}
+Interface *interface-name* received a packet with zero or more than one Service-Name tag.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2045238222}[收到报文中包含的]{style="font-family:宋体"}[service-name tag]{lang="EN-US"}[的个数不为]{style="font-family:宋体"}[1]{lang="EN-US"}
+接口*interface-name*收到报文中包含的service-name tag的个数不为1
 
-[[Interface *interface-name* received a PADI packet with wrong dest-MAC.]{lang="EN-US"}]{#struct_0_52071_x1881_2045303758}
+Interface *interface-name* received a PADI packet with wrong dest-MAC.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2044845006}[收到的]{style="font-family:宋体"}[PADI]{lang="EN-US"}[报文的目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址错误]{style="font-family:宋体"}
+接口*interface-name*收到的PADI报文的目的MAC地址错误
 
-[[Interface *interface-name* received a PADI packet with wrong session-id *sessionid*.]{lang="EN-US"}]{#struct_0_52071_x1881_2044976078}
+Interface *interface-name* received a PADI packet with wrong session-id *sessionid*.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2045041614}[收到的]{style="font-family:宋体"}[PADI]{lang="EN-US"}[报文的会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[错误]{style="font-family:宋体"}
+接口*interface-name*收到的PADI报文的会话ID错误
 
-[[Interface *interface-name* throttled the client MAC address.]{lang="EN-US"}]{#struct_0_52071_x1881_2045631438}
+Interface *interface-name* throttled the client MAC address.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2045696974}[扼制了对端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+接口*interface-name*扼制了对端MAC地址
 
-[[Interface *interface-name* failed to add the AC-Name tag.]{lang="EN-US"}]{#struct_0_52071_x1881_x683776200}
+Interface *interface-name* failed to add the AC-Name tag.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x683710664}[向报文中添加]{style="font-family:宋体"}[ac-name tag]{lang="EN-US"}[失败]{style="font-family:宋体"}
+接口*interface-name*向报文中添加ac-name tag失败
 
-[[Interface *interface-name* failed to send a PADO packet.]{lang="EN-US"}]{#struct_0_52071_x1881_x683645128}
+Interface *interface-name* failed to send a PADO packet.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x683579592}[发送]{style="font-family:宋体"}[PADO]{lang="EN-US"}[报文失败]{style="font-family:宋体"}
+接口*interface-name*发送PADO报文失败
 
-[[Interface *interface-name* received a PADR packet with wrong dest-MAC.]{lang="EN-US"}]{#struct_0_52071_x1881_x684038344}
+Interface *interface-name* received a PADR packet with wrong dest-MAC.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x683907272}[收到的]{style="font-family:宋体"}[PADR]{lang="EN-US"}[报文的目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址错误]{style="font-family:宋体"}
+接口*interface-name*收到的PADR报文的目的MAC地址错误
 
-[[Interface *interface-name* received a PADR packet with non-zero session-id *sessionid*.]{lang="EN-US"}]{#struct_0_52071_x1881_x683841736}
+Interface *interface-name* received a PADR packet with non-zero session-id *sessionid*.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x683251912}[收到的]{style="font-family:宋体"}[PADR]{lang="EN-US"}[报文的会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[不为]{style="font-family:宋体"}[0]{lang="EN-US"}[，为]{style="font-family:宋体"}*[sessionid]{lang="EN-US"}*
+接口*interface-name*收到的PADR报文的会话ID不为0，为*sessionid*
 
-[[Interface *interface-name* failed to add a session.]{lang="EN-US"}]{#struct_0_52071_x1881_x683186376}
+Interface *interface-name* failed to add a session.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x683776201}[添加会话失败]{style="font-family:宋体"}
+接口*interface-name*添加会话失败
 
-[[Interface *interface-name* failed to send a PADS packet (sid=*sessionid*).]{lang="EN-US"}]{#struct_0_52071_x1881_x683710665}
+Interface *interface-name* failed to send a PADS packet (sid=*sessionid*).
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x683645129}[发送]{style="font-family:宋体"}[PADS]{lang="EN-US"}[报文失败（会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[sessionid]{lang="EN-US"}*[）]{style="font-family:宋体"}
+接口*interface-name*发送PADS报文失败（会话ID为*sessionid*）
 
-[[Interface *interface-name* received a PADT packet with illegal session-id *sessionid*.]{lang="EN-US"}]{#struct_0_52071_x1881_x684038345}
+Interface *interface-name* received a PADT packet with illegal session-id *sessionid*.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x683972809}[收到的]{style="font-family:宋体"}[PADT]{lang="EN-US"}[报文的会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[非法，会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[sessionid]{lang="EN-US"}*
+接口*interface-name*收到的PADT报文的会话ID非法，会话ID为*sessionid*
 
-[[Interface *interface-name* received too small a packet of length *length*.]{lang="EN-US"}]{#struct_0_52071_x1881_x683907273}
+Interface *interface-name* received too small a packet of length *length*.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x683841737}[收到的报文总长度过短，报文总长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*
+接口*interface-name*收到的报文总长度过短，报文总长度为*length*
 
-[[Interface *interface-name* received a packet with too large a payload of length *length*.]{lang="EN-US"}]{#struct_0_52071_x1881_x683251913}
+Interface *interface-name* received a packet with too large a payload of length *length*.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x683186377}[收到的报文负载长度过长，负载长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*
+接口*interface-name*收到的报文负载长度过长，负载长度为*length*
 
-[[Interface *interface-name* received a packet with wrong length *length*.]{lang="EN-US"}]{#struct_0_52071_x1881_x683776202}
+Interface *interface-name* received a packet with wrong length *length*.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x683645130}[收到的报文总长度错误，报文总长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*
+接口*interface-name*收到的报文总长度错误，报文总长度为*length*
 
-[[Interface *interface-name* received packet with wrong ETHER_TYPE *ether_type*.]{lang="EN-US"}]{#struct_0_52071_x1881_x683579594}
+Interface *interface-name* received packet with wrong ETHER_TYPE *ether_type*.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x684038346}[收到的报文]{style="font-family:宋体"}[ETHER_TYPE]{lang="EN-US"}[字段错误，]{style="font-family:宋体"}[ETHER_TYPE]{lang="EN-US"}[字段的值为]{style="font-family:宋体"}*[ether_type]{lang="EN-US"}*
+接口*interface-name*收到的报文ETHER_TYPE字段错误，ETHER_TYPE字段的值为*ether_type*
 
-[[Interface *interface-name* received a packet with wrong source MAC address.]{lang="EN-US"}]{#struct_0_52071_x1881_x683972810}
+Interface *interface-name* received a packet with wrong source MAC address.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x683907274}[收到的报文的源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址错误]{style="font-family:宋体"}
+接口*interface-name*收到的报文的源MAC地址错误
 
-[[Interface *interface-name* received a packet with wrong version or type.]{lang="EN-US"}]{#struct_0_52071_x1881_x683841738}
+Interface *interface-name* received a packet with wrong version or type.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x683186378}[收到的报文的]{style="font-family:宋体"}[VERSION]{lang="EN-US"}[字段或者]{style="font-family:宋体"}[TYPE]{lang="EN-US"}[字段错误]{style="font-family:宋体"}
+接口*interface-name*收到的报文的VERSION字段或者TYPE字段错误
 
-[[Interface *interface-name* failed to create a VA interface.]{lang="EN-US"}]{#struct_0_52071_x1881_x683776203}
+Interface *interface-name* failed to create a VA interface.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x683710667}[创建]{style="font-family:宋体"}[VA]{lang="EN-US"}[口失败]{style="font-family:宋体"}
+接口*interface-name*创建VA口失败
 
-[[Interface *interface-name* failed to get the local MAC address.]{lang="EN-US"}]{#struct_0_52071_x1881_x683645131}
+Interface *interface-name* failed to get the local MAC address.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x683579595}[获取本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址失败]{style="font-family:宋体"}
+接口*interface-name*获取本地MAC地址失败
 
-[[The kernel of interface *interface-name* failed to get the local MAC address.]{lang="EN-US"}]{#struct_0_52071_x1881_x684038347}
+The kernel of interface *interface-name* failed to get the local MAC address.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x683907275}[的内核获取本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址失败]{style="font-family:宋体"}
+接口*interface-name*的内核获取本地MAC地址失败
 
-[*[interface-name]{lang="EN-US"}*[ VA of %u is invalid.]{lang="EN-US"}]{#struct_0_52071_x1881_x683841739}
+*[interface-name* VA of %u is invalid.]
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x683251915}[的]{style="font-family:宋体"}[VA]{lang="EN-US"}[接口索引非法]{style="font-family:宋体"}
+接口*interface-name*的VA接口索引非法
 
-[[Interface *interface-name* received a packet with a source MAC address mismatched with the peer MAC address stored in the local session.]{lang="EN-US"}]{#struct_0_52071_x1881_x683186379}
+Interface *interface-name* received a packet with a source MAC address mismatched with the peer MAC address stored in the local session.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x683776204}[收到的报文包含的对端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址与本地会话中保存的对端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址不匹配]{style="font-family:宋体"}
+接口*interface-name*收到的报文包含的对端MAC地址与本地会话中保存的对端MAC地址不匹配
 
-[[Interface *interface-name* received an invalid Ethernet packet with session id *sessionid*.]{lang="EN-US"}]{#struct_0_52071_x1881_x683645132}
+Interface *interface-name* received an invalid Ethernet packet with session id *sessionid*.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x683579596}[收到了非法以太网报文，会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[sessionid]{lang="EN-US"}*
+接口*interface-name*收到了非法以太网报文，会话ID为*sessionid*
 
-[[Interface *interface-name* failed to add the PPPoE header.]{lang="EN-US"}]{#struct_0_52071_x1881_x684038348}
+Interface *interface-name* failed to add the PPPoE header.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x683972812}[为]{style="font-family:宋体"}[PPP]{lang="EN-US"}[报文添加]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[报文头失败]{style="font-family:宋体"}
+接口*interface-name*为PPP报文添加PPPoE报文头失败
 
-[ ]{lang="EN-US"}
+表2-2 debugging pppoe-server event命令输出信息描述表
 
-[[表2-2 ]{lang="EN-US"}[debugging pppoe-server event]{lang="EN-US"}]{#struct_0_52071_x1881_x683907276}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_2138525561}[[字段]{style="font-family:黑体"}]{#struct_0_52071_x1881_x683841740}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_52071_x1881_x683251916}
+The standby MPU received an upgrade-to-active event.
 
-[[The standby MPU received an upgrade-to-active event.]{lang="EN-US"}]{#struct_0_52071_x1881_1499969763}
+备板收到升级为主板事件
 
-[[备板收到升级为主板事件]{style="font-family:宋体"}]{#struct_0_52071_x1881_x683186380}
+Slot *number* inserted.
 
-[[Slot *number* inserted.]{lang="EN-US"}]{#struct_0_52071_x1881_x683776205}
+插入单板*number*
 
-[[插入单板]{style="font-family:宋体"}*[number]{lang="EN-US"}*]{#struct_0_52071_x1881_x683710669}
+Slot *number* removed.
 
-[[Slot *number* removed.]{lang="EN-US"}]{#struct_0_52071_x1881_x683645133}
+拔出单板*number*
 
-[[拔出单板]{style="font-family:宋体"}*[number]{lang="EN-US"}*[ ]{lang="EN-US"}]{#struct_0_52071_x1881_x683579597}
+An interface activation event occurred on interface *interface-name*.
 
-[[An interface activation event occurred on interface *interface-name*.]{lang="EN-US"}]{#struct_0_52071_x1881_x684038349}
+接口*interface-name*发生接口激活事件
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x683972813}[发生接口激活事件]{style="font-family:宋体"}
+An interface deactivation event occurred on interface *interface-name*.
 
-[[An interface deactivation event occurred on interface *interface-name*.]{lang="EN-US"}]{#struct_0_52071_x1881_x683907277}
+接口*interface-name*发生接口去激活事件
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x683841741}[发生接口去激活事件]{style="font-family:宋体"}
+An interface deletion event occurred on interface *interface-name*.
 
-[[An interface deletion event occurred on interface *interface-name*.]{lang="EN-US"}]{#struct_0_52071_x1881_x683251917}
+接口*interface-name*发生接口删除事件
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_1500035299}[发生接口删除事件]{style="font-family:宋体"}
+An interface down event occurred on interface *interface-name*.
 
-[[An interface down event occurred on interface *interface-name*.]{lang="EN-US"}]{#struct_0_52071_x1881_x683186381}
+接口*interface-name*发生接口down事件
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882307741}[发生接口]{style="font-family:宋体"}[down]{lang="EN-US"}[事件]{style="font-family:宋体"}
+An interface shutdown event occurred on interface *interface-name*.
 
-[[An interface shutdown event occurred on interface *interface-name*.]{lang="EN-US"}]{#struct_0_52071_x1881_882373277}
+接口*interface-name*发生接口shutdown事件
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882438813}[发生接口]{style="font-family:宋体"}[shutdown]{lang="EN-US"}[事件]{style="font-family:宋体"}
+A MAC address change event occurred on interface *interface-name*.
 
-[[A MAC address change event occurred on interface *interface-name*.]{lang="EN-US"}]{#struct_0_52071_x1881_882504349}
+接口*interface-name*发生接口MAC地址变化事件
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882045597}[发生接口]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址变化事件]{style="font-family:宋体"}
+Interface *interface-name* received a PVC down event (VEMap=*number*).
 
-[[Interface *interface-name* received a PVC down event (VEMap=*number*).]{lang="EN-US"}]{#struct_0_52071_x1881_882111133}
+接口*interface-name*接收到PVC down事件（VE接口映射为*number*）
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882176669}[接收到]{style="font-family:宋体"}[PVC down]{lang="EN-US"}[事件（]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口映射为]{style="font-family:宋体"}*[number]{lang="EN-US"}*[）]{style="font-family:宋体"}
+Interface *interface-name* received a PPP down event (sid=*sessionid*).
 
-[[Interface *interface-name* received a PPP down event (sid=*sessionid*).]{lang="EN-US"}]{#struct_0_52071_x1881_882242205}
+接口*interface-name*接收到PPP down事件（会话ID为*sessionid*）
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882832029}[接收到]{style="font-family:宋体"}[PPP down]{lang="EN-US"}[事件（会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[sessionid]{lang="EN-US"}*[）]{style="font-family:宋体"}
+Interface *interface-name* was configured not to trust the access line ID.
 
-[[Interface *interface-name* was configured not to trust the access line ID.]{lang="EN-US"}]{#struct_0_52071_x1881_882897565}
+接口*interface-name*配置不信任接入线路ID，忽略circuit-id
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882307740}[配置不信任接入线路]{style="font-family:宋体"}[ID]{lang="EN-US"}[，忽略]{style="font-family:宋体"}[circuit-id]{lang="EN-US"}
+Interface *interface-name* parsed the content of the access line ID as *content*.
 
-[[Interface *interface-name* parsed the content of the access line ID as *content*.]{lang="EN-US"}]{#struct_0_52071_x1881_882373276}
+接口*interface-name*解析出的接入线路ID内容为*content*
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882438812}[解析出的接入线路]{style="font-family:宋体"}[ID]{lang="EN-US"}[内容为]{style="font-family:宋体"}*[content]{lang="EN-US"}*
+Interface *interface-name* ignored data of an known type in the Vendor-Specific tag (type=*type*).
 
-[[Interface *interface-name* ignored data of an known type in the Vendor-Specific tag (type=*type*).]{lang="EN-US"}]{#struct_0_52071_x1881_882504348}
+接口*interface-name*忽略未知类型为*type*的Vendor Specify数据
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882045596}[忽略未知类型为]{style="font-family:宋体"}*[type]{lang="EN-US"}*[的]{style="font-family:宋体"}[Vendor Specify]{lang="EN-US"}[数据]{style="font-family:宋体"}
+Interface *interface-name* ignored a tag (type=*type*).
 
-[[Interface *interface-name* ignored a tag (type=*type*).]{lang="EN-US"}]{#struct_0_52071_x1881_882111132}
+接口*interface-name*忽略类型为*type*的tag
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882176668}[忽略类型为]{style="font-family:宋体"}*[type]{lang="EN-US"}*[的]{style="font-family:宋体"}[tag]{lang="EN-US"}
+The session number reached per-card limit.
 
-[[The session number reached per-card limit.]{lang="EN-US"}]{#struct_0_52071_x1881_882242204}
+单板建立会话数达到上限
 
-[[单板建立会话数达到上限]{style="font-family:宋体"}]{#struct_0_52071_x1881_882832028}
+*[T*he session number for VLAN *number* on the peer reached per-VLAN limit on interface *interface-name*.]
 
-[*[T]{lang="EN-US"}*[he session number for VLAN *number* on the peer reached per-VLAN limit on interface *interface-name*.]{lang="EN-US"}]{#struct_0_52071_x1881_882897564}
+接口*interface-name*下对端VLAN *number*建立的会话数达到上限
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_317714627}[下对端]{style="font-family:宋体"}[VLAN *number*]{lang="EN-US"}[建立的会话数达到上限]{style="font-family:宋体"}
+The session number reached the interface limit on interface *interface-name*.
 
-[[The session number reached the interface limit on interface *interface-name*.]{lang="EN-US"}]{#struct_0_52071_x1881_882307739}
+接口*interface-name*下建立的会话数达到上限
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882373275}[下建立的会话数达到上限]{style="font-family:宋体"}
+The session number for a client MAC reached per-MAC limit on interface *interface-name*.
 
-[[The session number for a client MAC reached per-MAC limit on interface *interface-name*.]{lang="EN-US"}]{#struct_0_52071_x1881_882438811}
+接口*interface-name*下对端Client MAC建立的会话数达到上限
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882504347}[下对端]{style="font-family:宋体"}[Client MAC]{lang="EN-US"}[建立的会话数达到上限]{style="font-family:宋体"}
+PPPoE server was enabled on interface *interface-name*.
 
-[[PPPoE server was enabled on interface *interface-name*.]{lang="EN-US"}]{#struct_0_52071_x1881_882045595}
+接口*interface-name*使能PPPoE Server成功
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882111131}[使能]{style="font-family:宋体"}[PPPoE Server]{lang="EN-US"}[成功]{style="font-family:宋体"}
+PPPoE server was disabled on interface *interface-name*.
 
-[[PPPoE server was disabled on interface *interface-name*.]{lang="EN-US"}]{#struct_0_52071_x1881_882176667}
+接口*interface-name*去使能PPPoE Server成功
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882242203}[去使能]{style="font-family:宋体"}[PPPoE Server]{lang="EN-US"}[成功]{style="font-family:宋体"}
+Interface *interface-name* got session information successfully.
 
-[[Interface *interface-name* got session information successfully.]{lang="EN-US"}]{#struct_0_52071_x1881_882832027}
+接口*interface-name*获取会话信息成功
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882897563}[获取会话信息成功]{style="font-family:宋体"}
+Interface *interface-name* deleted all sessions successfully.
 
-[[Interface *interface-name* deleted all sessions successfully.]{lang="EN-US"}]{#struct_0_52071_x1881_882307738}
+接口*interface-name*删除会话信息成功
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882373274}[删除会话信息成功]{style="font-family:宋体"}
+The kernel of interface *interface-name* received an interface deletion event.
 
-[[The kernel of interface *interface-name* received an interface deletion event.]{lang="EN-US"}]{#struct_0_52071_x1881_882438810}
+接口*interface-name*的内核接收到接口删除事件
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882504346}[的内核接收到接口删除事件]{style="font-family:宋体"}
+The kernel of interface *interface-name* received an interface deactivation event.
 
-[[The kernel of interface *interface-name* received an interface deactivation event.]{lang="EN-US"}]{#struct_0_52071_x1881_882045594}
+接口*interface-name*的内核接收到接口去激活事件
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882111130}[的内核接收到接口去激活事件]{style="font-family:宋体"}
+The kernel of interface *interface-name* received an interface down event.
 
-[[The kernel of interface *interface-name* received an interface down event.]{lang="EN-US"}]{#struct_0_52071_x1881_882176666}
+接口*interface-name*的内核接收到接口down事件
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882242202}[的内核接收到接口]{style="font-family:宋体"}[down]{lang="EN-US"}[事件]{style="font-family:宋体"}
+The kernel of interface *interface-name* received a MAC address change event.
 
-[[The kernel of interface *interface-name* received a MAC address change event.]{lang="EN-US"}]{#struct_0_52071_x1881_882832026}
+接口*interface-name*的内核接收到MAC地址变化事件
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882897562}[的内核接收到]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址变化事件]{style="font-family:宋体"}
+Connected to LICENSE module.
 
-[[Connected to LICENSE module.]{lang="EN-US"}]{#struct_0_52071_x1881_x160664083}
+PPPoES模块与LICENSE模块的连接建立成功
 
-[[PPPoES]{lang="EN-US"}]{#struct_0_52071_x1881_1405419858}[模块与]{style="font-family:宋体"}[LICENSE]{lang="EN-US"}[模块的连接建立成功]{style="font-family:宋体"}
+Failed to connect to LICENSE module.
 
-[[Failed to connect to LICENSE module.]{lang="EN-US"}]{#struct_0_52071_x1881_2041855188}
+PPPoES模块与LICENSE模块的连接建立失败
 
-[[PPPoES]{lang="EN-US"}]{#struct_0_52071_x1881_2022299780}[模块与]{style="font-family:宋体"}[LICENSE]{lang="EN-US"}[模块的连接建立失败]{style="font-family:宋体"}
+Disconnected from LICENSE module.
 
-[[Disconnected from LICENSE module.]{lang="EN-US"}]{#struct_0_52071_x1881_167133336}
+PPPoES模块与LICENSE模块的连接断开成功
 
-[[PPPoES]{lang="EN-US"}]{#struct_0_52071_x1881_195500741}[模块与]{style="font-family:宋体"}[LICENSE]{lang="EN-US"}[模块的连接断开成功]{style="font-family:宋体"}
+Received LICENSE event: EventType=*event-type*.
 
-[[Received LICENSE event: EventType=*event-type*.]{lang="EN-US"}]{#struct_0_52071_x1881_644609235}
+PPPoES收到LICENSE的EventType事件
 
-[[PPPoES]{lang="EN-US"}]{#struct_0_52071_x1881_947666200}[收到]{style="font-family:宋体"}[LICENSE]{lang="EN-US"}[的]{style="font-family:宋体"}[EventType]{lang="EN-US"}[事件]{style="font-family:宋体"}
+EventType类型如下：
 
-[[EventType]{lang="EN-US"}]{#struct_0_52071_x1881_1593392035}[类型如下：]{style="font-family:宋体"}
+·Installed：安装
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Installed]{lang="EN-US"}]{#struct_0_52071_x1881_1761584682}[：安装]{lang="EN-US" style="font-family:宋体"}
+·Uninstalled：卸载
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Uninstalled]{lang="EN-US"}]{#struct_0_52071_x1881_714286492}[：卸载]{lang="EN-US" style="font-family:宋体"}[]{#_GoBack}
+·Expired：过期
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Expired]{lang="EN-US"}]{#struct_0_52071_x1881_1719097578}[：过期]{lang="EN-US" style="font-family:宋体"}
+Changed the session limit from *old-value* to *new-value* per card.
 
-[[Changed the session limit from *old-value* to *new-value* per card.]{lang="EN-US"}]{#struct_0_52071_x1881_x967298673}
+**[步骤1**更新LICENSE]定制的PPPoES单板会话限制数
 
-[**[步骤1[    ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.5pt"}**[更新]{style="font-family:宋体"}[LICENSE]{lang="EN-US"}]{#struct_0_52071_x1881_x1003258941}[定制的]{style="font-family:宋体"}[PPPoES]{lang="EN-US"}[单板会话限制数]{style="font-family:宋体"}
+·*old-value*：旧的PPPoES单板会话限制数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[old-value]{lang="EN-US"}*]{#struct_0_52071_x1881_1272144253}[：旧的]{lang="EN-US" style="font-family:宋体"}[PPPoES]{lang="EN-US"}[单板会话限制数]{lang="EN-US" style="font-family:宋体"}
+·*new-value*：新的PPPoES单本会话限制数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[new-value]{lang="EN-US"}*]{#struct_0_52071_x1881_x1559034023}[：新的]{lang="EN-US" style="font-family:宋体"}[PPPoES]{lang="EN-US"}[单本会话限制数]{lang="EN-US" style="font-family:宋体"}
+表2-3 debugging pppoe-server packet send命令输出信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表2-3 ]{lang="EN-US"}[debugging pppoe-server packet send]{lang="EN-US"}]{#struct_0_52071_x1881_882307737}[命令输出信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_1946860089}[[字段]{style="font-family:黑体"}]{#struct_0_52071_x1881_882373273}
+Interface *interface-name* sent a PADT packet (sid=*sessionid*, err=*errcode*).
 
-[[描述]{style="font-family:黑体"}]{#struct_0_52071_x1881_x73058663}
+接口*interface-name*发送PADT报文（会话ID为*sessionid*，错误码为*er-code*）
 
-[[Interface *interface-name* sent a PADT packet (sid=*sessionid*, err=*errcode*).]{lang="EN-US"}]{#struct_0_52071_x1881_882438809}
+Interface *interface-name* sent a PADS packet (sid=*sessionid*).
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882504345}[发送]{style="font-family:宋体"}[PADT]{lang="EN-US"}[报文（会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[sessionid]{lang="EN-US"}*[，错误码为]{style="font-family:宋体"}*[er-code]{lang="EN-US"}*[）]{style="font-family:宋体"}
+接口*interface-name*发送PADS报文（会话ID为*sessionid*）
 
-[[Interface *interface-name* sent a PADS packet (sid=*sessionid*).]{lang="EN-US"}]{#struct_0_52071_x1881_882045593}
+Interface *interface-name* sent a PADO packet.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882111129}[发送]{style="font-family:宋体"}[PADS]{lang="EN-US"}[报文（会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[sessionid]{lang="EN-US"}*[）]{style="font-family:宋体"}
+接口*interface-name*发送PADO报文
 
-[[Interface *interface-name* sent a PADO packet.]{lang="EN-US"}]{#struct_0_52071_x1881_882176665}
+表2-4 debugging pppoe-server packet receive命令输出信息描述表
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x1103272917}[发送]{style="font-family:宋体"}[PADO]{lang="EN-US"}[报文]{style="font-family:宋体"}
+字段
 
-[ ]{lang="EN-US"}
+描述
 
-[[表2-4 ]{lang="EN-US"}[debugging pppoe-server packet receive]{lang="EN-US"}]{#struct_0_52071_x1881_882242201}[命令输出信息描述表]{style="font-family:黑体"}
+Interface *interface-name* received a PADI packet.
 
-[]{#table_struct_0_1970027673}[[字段]{style="font-family:黑体"}]{#struct_0_52071_x1881_882832025}
+接口*interface-name*接收到PADI报文
 
-[[描述]{style="font-family:黑体"}]{#struct_0_52071_x1881_882897561}
+Interface *interface-name* received a PADR packet.
 
-[[Interface *interface-name* received a PADI packet.]{lang="EN-US"}]{#struct_0_52071_x1881_317714622}
+接口*interface-name*接收到PADR报文
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882307736}[接收到]{style="font-family:宋体"}[PADI]{lang="EN-US"}[报文]{style="font-family:宋体"}
+Interface *interface-name* received a PADT packet (sid =*sessionid*)*.
 
-[[Interface *interface-name* received a PADR packet.]{lang="EN-US"}]{#struct_0_52071_x1881_882373272}
+接口*interface-name*接收到PADT报文，会话ID为*sessionid*
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882438808}[接收到]{style="font-family:宋体"}[PADR]{lang="EN-US"}[报文]{style="font-family:宋体"}
+Interface *interface-name* received an unknown packet (code=*code*).
 
-[[Interface *interface-name* received a PADT packet (sid =*sessionid*)*.*]{lang="EN-US"}]{#struct_0_52071_x1881_882504344}
+接口*interface-name*接收到未知报文，报文类型为*code*
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882045592}[接收到]{style="font-family:宋体"}[PADT]{lang="EN-US"}[报文，会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[sessionid]{lang="EN-US"}*
+Interface *interface-name* dropped a multicast or broadcast PPPoE packet.
 
-[[Interface *interface-name* received an unknown packet (code=*code*).]{lang="EN-US"}]{#struct_0_52071_x1881_876932914}
+接口*interface-name*丢弃目的地址不为单播的PPPoE报文
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882111128}[接收到未知报文，报文类型为]{style="font-family:宋体"}*[code]{lang="EN-US"}*
+Interface *interface-name* dropped a PPPoE packet of incorrect length.
 
-[[Interface *interface-name* dropped a multicast or broadcast PPPoE packet.]{lang="EN-US"}]{#struct_0_52071_x1881_882176664}
+接口*interface-name*丢弃长度错误的PPPoE报文
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882242200}[丢弃目的地址不为单播的]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[报文]{style="font-family:宋体"}
+Interface *interface-name* dropped an invalid PPPoE packet.
 
-[[Interface *interface-name* dropped a PPPoE packet of incorrect length.]{lang="EN-US"}]{#struct_0_52071_x1881_882832024}
+接口*interface-name*丢弃非法PPPoE报文
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_882897560}[丢弃长度错误的]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[报文]{style="font-family:宋体"}
+Interface *interface-name* received an error packet.
 
-[[Interface *interface-name* dropped an invalid PPPoE packet.]{lang="EN-US"}]{#struct_0_52071_x1881_317714623}
+接口*interface-name*接收到错误的报文
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x1846575614}[丢弃非法]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[报文]{style="font-family:宋体"}
+表2-5 debugging pppoe-server timer命令输出信息描述表
 
-[[Interface *interface-name* received an error packet.]{lang="EN-US"}]{#struct_0_52071_x1881_x1846510078}
+字段
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x1846444542}[接收到错误的报文]{style="font-family:宋体"}
+描述
 
-[ ]{lang="EN-US"}
+Interface *interface-name* created aging timer for throttled MAC entries.
 
-[[表2-5 ]{lang="EN-US"}[debugging pppoe-server timer]{lang="EN-US"}]{#struct_0_52071_x1881_x1846379006}[命令输出信息描述表]{style="font-family:黑体"}
+接口*interface-name*创建MAC扼制老化定时器
 
-[]{#table_struct_0_2006830489}[[字段]{style="font-family:黑体"}]{#struct_0_52071_x1881_x1792264464}
+Interface *interface-name* started aging throttled MAC entries.
 
-[[描述]{style="font-family:黑体"}]{#struct_0_52071_x1881_x1846837758}
+接口*interface-name*开始进行MAC遏制表项老化
 
-[[Interface *interface-name* created aging timer for throttled MAC entries.]{lang="EN-US"}]{#struct_0_52071_x1881_x1846772222}
+【举例】
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x1846706686}[创建]{style="font-family:宋体"}[MAC]{lang="EN-US"}[扼制老化定时器]{style="font-family:宋体"}
+\# 打开PPPoE Server错误调试信息开关。在接口GigabitEthernet1/0/1上使能PPPoE Server，并绑定一个不存在的虚拟模板接口，当接口GigabitEthernet1/0/1收到会话请求后，系统将输出下列调试信息：
 
-[[Interface *interface-name* started aging throttled MAC entries.]{lang="EN-US"}]{#struct_0_52071_x1881_x1846641150}
+\<Sysname\> debugging pppoe-server error
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x1846051326}[开始进行]{style="font-family:宋体"}[MAC]{lang="EN-US"}[遏制表项老化]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[ ]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_52071_x1881_x1174440841}
+Sysname-GigabitEthernet1/0/1 pppoe-server bind virtual-template 3
 
-[[\# ]{lang="EN-US"}]{#struct_0_52071_x1881_x1845985790}[打开]{style="font-family:宋体"}[PPPoE Server]{lang="EN-US"}[错误调试信息开关。在]{style="font-family:宋体"}[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上使能]{style="font-family:宋体"}[PPPoE Server]{lang="EN-US"}[，并绑定一个不存在的]{style="font-family:宋体"}[虚拟模板接口]{style="font-family:宋体"}[，当接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[收到会话请求后，系统将输出下列调试信息：]{style="font-family:宋体"}
+\*May 21 16:46:23:365 2013 Sysname PPPOES/7/ERROR: -MDC=1-Slot=0; Interface GigabitEthernet1/0/1 failed to add a session.
 
-[[\<Sysname\> debugging pppoe-server error]{lang="EN-US"}]{#struct_0_52071_x1881_x1080959673}
+*// 接口GigabitEthernet1/0/1添加会话失败*
 
-[\<Sysname\> system-view]{lang="EN-US"}
+\# 打开PPPoE Server事件调试信息开关。在接口GigabitEthernet1/0/1上使能PPPoE Server。当**shutdown**接口GigabitEthernet1/0/1时，系统将输出下列调试信息：
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+\<Sysname\> debugging pppoe-server event
 
-[\[Sysname-GigabitEthernet1/0/1\] pppoe-server bind virtual-template 3]{lang="EN-US"}
+\<Sysname\> system-view
 
-[\*May 21 16:46:23:365 2013 Sysname PPPOES/7/ERROR: -MDC=1-Slot=0; Interface GigabitEthernet1/0/1 failed to add a session.]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[*[// ]{lang="EN-US"}*]{#struct_0_52071_x1881_x1846575615}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[添加会话失败]{style="font-family:宋体"}*
+Sysname-GigabitEthernet1/0/1 pppoe-server bind virtual-template 2
 
-[ ]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 shutdown
 
-[[\# ]{lang="EN-US"}]{#struct_0_52071_x1881_x1845902761}[打开]{style="font-family:宋体"}[PPPoE Server]{lang="EN-US"}[事件调试信息开关。在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上使能]{style="font-family:宋体"}[PPPoE Server]{lang="EN-US"}[。当]{style="font-family:宋体"}**[shutdown]{lang="EN-US"}**[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[时，系统将输出下列调试信息：]{style="font-family:宋体"}
+\*May 21 16:47:45:259 2013 Sysname PPPOES/7/EVENT: -MDC=1; An interface shutdown event occurred on interface GigabitEthernet1/0/1.
 
-[[\<Sysname\> debugging pppoe-server event]{lang="EN-US"}]{#struct_0_52071_x1881_x1846510079}
+*// 接口GigabitEthernet1/0/1发生接口shutdown事件*
 
-[\<Sysname\> system-view]{lang="EN-US"}
+\*May 21 16:47:45:264 2013 Sysname PPPOES/7/EVENT: -MDC=1; An interface down event occurred on interface GigabitEthernet1/0/1.
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+*// 接口GigabitEthernet1/0/1发生接口down事件*
 
-[\[Sysname-GigabitEthernet1/0/1\] pppoe-server bind virtual-template 2]{lang="EN-US"}
+\*May 21 16:47:45:279 2013 Sysname PPPOES/7/EVENT: -MDC=1; The kernel of interface GigabitEthernet1/0/1 received an interface down event.
 
-[\[Sysname-GigabitEthernet1/0/1\] shutdown]{lang="EN-US"}
+*// 接口GigabitEthernet1/0/1的内核接收到接口down事件*
 
-[\*May 21 16:47:45:259 2013 Sysname PPPOES/7/EVENT: -MDC=1; An interface shutdown event occurred on interface GigabitEthernet1/0/1.]{lang="EN-US"}
+\# 打开PPPoE Server的PPPoE报文调试信息开关。在接口GigabitEthernet1/0/1上使能PPPoE Server（绑定的虚拟模板接口存在），当接口GigabitEthernet1/0/1收到会话请求后，系统将输出下列调试信息：
 
-[*[// ]{lang="EN-US"}*]{#struct_0_52071_x1881_2143800955}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[发生接口]{style="font-family:宋体"}[shutdown]{lang="EN-US"}[事件]{style="font-family:宋体"}*
+\<Sysname\> debugging pppoe-server packet
 
-[[\*May 21 16:47:45:264 2013 Sysname PPPOES/7/EVENT: -MDC=1; An interface down event occurred on interface GigabitEthernet1/0/1.]{lang="EN-US"}]{#struct_0_52071_x1881_x1846444543}
+\<Sysname\> system-view
 
-[*[// ]{lang="EN-US"}*]{#struct_0_52071_x1881_x1322770777}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[发生接口]{style="font-family:宋体"}[down]{lang="EN-US"}[事件]{style="font-family:宋体"}*
+Sysname interface gigabitethernet 1/0/1
 
-[[\*May 21 16:47:45:279 2013 Sysname PPPOES/7/EVENT: -MDC=1; The kernel of interface GigabitEthernet1/0/1 received an interface down event.]{lang="EN-US"}]{#struct_0_52071_x1881_x1846379007}
+Sysname-GigabitEthernet1/0/1 pppoe-server bind virtual-template 2
 
-[*[// ]{lang="EN-US"}*]{#struct_0_52071_x1881_936618891}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的内核接收到接口]{style="font-family:宋体"}[down]{lang="EN-US"}[事件]{style="font-family:宋体"}*
+\*May 21 17:07:10:740 2013 Sysname PPPOES/7/PACKET_RECEIVE: -MDC=1; Interface GigabitEthernet1/0/1 received a PADR packet.
 
-[ ]{lang="EN-US"}
+\*May 21 17:07:10:751 2013 Sysname PPPOES/7/PACKET_SEND: -MDC=1; Interface GigabitEthernet1/0/1 sent a PADS packet (sid=1).
 
-[[\# ]{lang="EN-US"}]{#struct_0_52071_x1881_x1846837759}[打开]{style="font-family:宋体"}[PPPoE Server]{lang="EN-US"}[的]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[报文调试信息开关。在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上使能]{style="font-family:宋体"}[PPPoE Server]{lang="EN-US"}[（绑定的虚拟模板接口存在），]{style="font-family:宋体"}[当接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[收到会话请求后，]{style="font-family:宋体"}[系统将输出下列调试信息：]{style="font-family:宋体"}
+*// 接口GigabitEthernet1/0/1接收到PADR报文，回复PADS报文*
 
-[[\<Sysname\> debugging pppoe-server packet]{lang="EN-US"}]{#struct_0_52071_x1881_2022686342}
+\# 打开PPPoE Server的PPPoE定时器调试信息开关。在接口GigabitEthernet1/0/1上使能PPPoE Server（绑定的虚拟模板接口存在），当接口GigabitEthernet1/0/1第一次收到会话请求时，系统将输出下列调试信息：
 
-[\<Sysname\> system-view]{lang="EN-US"}
+\<Sysname\> debugging pppoe-server timer
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+\<Sysname\> system-view
 
-[\[Sysname-GigabitEthernet1/0/1\] pppoe-server bind virtual-template 2]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\*May 21 17:07:10:740 2013 Sysname PPPOES/7/PACKET_RECEIVE: -MDC=1; Interface GigabitEthernet1/0/1 received a PADR packet. ]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 pppoe-server bind virtual-template 2
 
-[\*May 21 17:07:10:751 2013 Sysname PPPOES/7/PACKET_SEND: -MDC=1; Interface GigabitEthernet1/0/1 sent a PADS packet (sid=1).]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 pppoe-server throttle per-mac 1 5 1000
 
-[*[// ]{lang="SV"}*]{#struct_0_52071_x1881_x1846772223}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="SV"}[接收到]{style="font-family:宋体"}[PADR]{lang="SV"}[报文]{style="font-family:宋体"}[，回复]{style="font-family:宋体"}[PADS]{lang="SV"}[报文]{style="font-family:宋体"}*
+\*May 21 17:07:10:740 2013 Sysname PPPOES/7/TIMER: -MDC=1; Interface GigabitEthernet1/0/1 created aging timer for throttled MAC entries.
 
-[ ]{lang="SV"}
-
-[[\# ]{lang="SV"}]{#struct_0_52071_x1881_x2067212003}[打开]{style="font-family:宋体"}[PPPoE Server]{lang="SV"}[的]{style="font-family:宋体"}[PPPoE]{lang="SV"}[定时器调试信息开关。在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="SV"}[上使能]{style="font-family:宋体"}[PPPoE Server]{lang="SV"}[（]{style="font-family:宋体"}[绑定的虚拟模板接口存在]{style="font-family:宋体"}[），]{style="font-family:宋体"}[当接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="SV"}[第一次]{style="font-family:宋体"}[收到会话请求时]{style="font-family:宋体"}[，]{style="font-family:宋体"}[系统将输出下列调试信息]{style="font-family:宋体"}[：]{style="font-family:宋体"}
-
-[[\<Sysname\> debugging pppoe-server timer]{lang="EN-US"}]{#struct_0_52071_x1881_x1846706687}
-
-[\<Sysname\> system-view]{lang="EN-US"}
-
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
-
-[\[Sysname-GigabitEthernet1/0/1\] pppoe-server bind virtual-template 2]{lang="EN-US"}
-
-[\[Sysname-GigabitEthernet1/0/1\] pppoe-server throttle per-mac 1 5 1000]{lang="EN-US"}
-
-[\*May 21 17:07:10:740 2013 Sysname PPPOES/7/TIMER: -MDC=1; Interface GigabitEthernet1/0/1 created aging timer for throttled MAC entries.]{lang="EN-US"}
-
-[*[// ]{lang="SV"}*]{#struct_0_52071_x1881_x1846641151}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="SV"}[创建了]{style="font-family:宋体"}[MAC]{lang="EN-US"}[扼制老化定时器]{style="font-family:宋体"}*
-
-::: {#-1104179909 .myid}
-[]{#_Toc404784824}[]{#struct_0_52071_x1881_784572515}[]{#_Toc321035232}[]{#_Toc235970619}[]{#_Toc233077691}
+*// 接口GigabitEthernet1/0/1创建了MAC扼制老化定时器*
 
 **PPPoE \-- PPPoE Client调试命令 \-- debugging pppoe-client**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_52071_x1881_1752753370}
+【命令】
 
-[**[debugging pppoe-client ]{lang="EN-US"}**[{ **all \| data \| error \| event \| packet** } \[ **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_52071_x1881_x1359952169}
+**[debugging pppoe-client **[{ **all \| data \| error \| event \| packet** } [ **interface** *interface-type interface-number* ]]]
 
-[**[undo debugging pppoe-client ]{lang="EN-US"}**[{ **all \| data \| error \| event \| packet** } \[ **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_52071_x1881_58016561}
+**[undo debugging pppoe-client **[{ **all \| data \| error \| event \| packet** } [ **interface** *interface-type interface-number* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_52071_x1881_x1324745499}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_52071_x1881_x1033654417}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_52071_x1881_1169181358}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_52071_x1881_1339017293}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_52071_x1881_x1206798527}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_52071_x1881_2029304062}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_52071_x1881_1753212122}[：表示所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示所有调试信息开关。
 
-[**[data]{lang="EN-US"}**]{#struct_0_52071_x1881_1394687002}[：表示]{style="font-family:宋体"}[session]{lang="EN-US"}[阶段的数据调试信息开关。]{style="font-family:宋体"}
+**[data**]：表示session阶段的数据调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_52071_x1881_1912524038}[：表示错误调试信息开关。]{style="font-family:宋体"}
+**[error**]：表示错误调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_52071_x1881_x652552467}[：表示事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示事件调试信息开关。
 
-[**[packet]{lang="EN-US"}**]{#struct_0_52071_x1881_x1887237831}[：表示]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[协议报文调试信息开关。]{style="font-family:宋体"}
+**[packet**]：表示PPPoE协议报文调试信息开关。
 
-[**[interface]{lang="EN-US"}**[ ]{lang="EN-US"}*[interface-type interface-number]{lang="EN-US"}*]{#struct_0_52071_x1881_1980195654}[：指定的接口类型和编号。]{style="font-family:宋体"}
+**[interface***interface-type interface-number*]：指定的接口类型和编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_52071_x1881_1753146586}
+【使用指导】
 
-[**[debugging pppoe-client]{lang="EN-US"}**]{#struct_0_52071_x1881_x168007353}[命令用来打开]{style="font-family:宋体"}[PPPoE Client]{lang="EN-US"}[的调试信息开关。]{style="font-family:宋体"}**[undo debugging pppoe-client]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[PPPoE Client]{lang="EN-US"}[的调试信息开关。]{style="font-family:宋体"}
+**[debugging pppoe-client**]命令用来打开PPPoE Client的调试信息开关。**undo debugging pppoe-client**命令用来关闭PPPoE Client的调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[PPPoE Client]{lang="EN-US"}]{#struct_0_52071_x1881_x617197416}[的所有调试信息开关均处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，PPPoE Client的所有调试信息开关均处于关闭状态。
 
-[[表2-6 ]{lang="EN-US"}[debugging pppoe-client error]{lang="EN-US"}]{#struct_0_52071_x1881_x430750029}[命令输出信息描述表]{style="font-family:黑体"}
+表2-6 debugging pppoe-client error命令输出信息描述表
 
-[]{#table_struct_0_x2141823246}[[字段]{style="font-family:黑体"}]{#struct_0_52071_x1881_196862648}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_52071_x1881_x1269100748}
+描述
 
-[[The attach process timed out for bundle *number* on interface *interface-name.*]{lang="EN-US"}]{#struct_0_52071_x1881_1999207788}
+The attach process timed out for bundle *number* on interface *interface-name.*
 
-[[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_1497288066}[对应的客户端]{style="font-family:宋体"}[绑定处理超时，对应接口为]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*
+bundle *number*对应的客户端绑定处理超时，对应接口为*interface-name*
 
-[[The detach process timed out for bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_1753081050}
+The detach process timed out for bundle *number*.
 
-[[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_x2103922566}[对应的客户端]{style="font-family:宋体"}[去绑定处理超时]{style="font-family:宋体"}
+bundle *number*对应的客户端去绑定处理超时
 
-[[Failed to create a session for client of bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_x864768602}
+Failed to create a session for client of bundle *number*.
 
-[[为]{style="font-family:宋体"}[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_x346063729}[对应的客户端]{style="font-family:宋体"}[创建会话失败]{style="font-family:宋体"}
+为bundle *number*对应的客户端创建会话失败
 
-[[The index *index* in dialer message is invalid.]{lang="EN-US"}]{#struct_0_52071_x1881_101358545}
+The index *index* in dialer message is invalid.
 
-[[拨号信息中的索引号无效]{style="font-family:宋体"}]{#struct_0_52071_x1881_x2143722928}
+拨号信息中的索引号无效
 
-[[The index *index* in bundle message is invalid.]{lang="EN-US"}]{#struct_0_52071_x1881_1160854456}
+The index *index* in bundle message is invalid.
 
-[[绑定信息中的索引号无效]{style="font-family:宋体"}]{#struct_0_52071_x1881_1753015514}
+绑定信息中的索引号无效
 
-[[The dialer message(*type*) is invalid, bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_x1731928566}
+The dialer message(*type*) is invalid, bundle *number*.
 
-[[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_x558946530}[对应客户端的拨号信息无效，]{style="font-family:宋体"}[其中]{style="font-family:宋体"}*[type]{lang="EN-US"}*[ ]{lang="EN-US"}[类型如下：]{style="font-family:宋体"}
+bundle *number*对应客户端的拨号信息无效，其中*type*类型如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_DIALPRIM_CONN_REQ]{lang="EN-US"}]{#struct_0_52071_x1881_x805750964}[：建链请求]{lang="EN-US" style="font-family:
-  宋体"}
+·DDR_DIALPRIM_CONN_REQ：建链请求
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_DIALPRIM_CONN_IND]{lang="EN-US"}]{#struct_0_52071_x1881_1694495107}[：建链成功指示]{lang="EN-US" style="font-family:
-  宋体"}
+·DDR_DIALPRIM_CONN_IND：建链成功指示
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_DIALPRIM_DISCONN_REQ]{lang="EN-US"}]{#struct_0_52071_x1881_1042920953}[：断链请求]{lang="EN-US" style="font-family:宋体"}
+·DDR_DIALPRIM_DISCONN_REQ：断链请求
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_DIALPRIM_DISCONN_IND]{lang="EN-US"}]{#struct_0_52071_x1881_1753474266}[：断链指示]{lang="EN-US" style="font-family:宋体"}
+·DDR_DIALPRIM_DISCONN_IND：断链指示
 
-[[Failed to process a dialer message(*type*), bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_x2117643746}
+Failed to process a dialer message(*type*), bundle *number*.
 
-[[为]{style="font-family:宋体"}[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_329232498}[对应的客户端]{style="font-family:宋体"}[处理拨号信息失败，其中]{style="font-family:宋体"}*[type]{lang="EN-US"}*[ ]{lang="EN-US"}[类型如下：]{style="font-family:
-  宋体"}
+为bundle *number*对应的客户端处理拨号信息失败，其中*type*类型如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_DIALPRIM_CONN_REQ]{lang="EN-US"}]{#struct_0_52071_x1881_x2016075202}[：建链请求]{lang="EN-US" style="font-family:
-  宋体"}
+·DDR_DIALPRIM_CONN_REQ：建链请求
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_DIALPRIM_CONN_IND]{lang="EN-US"}]{#struct_0_52071_x1881_x247871814}[：建链成功指示]{lang="EN-US" style="font-family:
-  宋体"}
+·DDR_DIALPRIM_CONN_IND：建链成功指示
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_DIALPRIM_DISCONN_REQ]{lang="EN-US"}]{#struct_0_52071_x1881_1753408730}[：断链请求]{lang="EN-US" style="font-family:宋体"}
+·DDR_DIALPRIM_DISCONN_REQ：断链请求
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_DIALPRIM_DISCONN_IND]{lang="EN-US"}]{#struct_0_52071_x1881_x992425625}[：断链指示]{lang="EN-US" style="font-family:宋体"}
+·DDR_DIALPRIM_DISCONN_IND：断链指示
 
-[[Failed to process bundle message(*type*), interface *interface-name*, bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_x1210285064}
+Failed to process bundle message(*type*), interface *interface-name*, bundle *number*.
 
-[[为]{style="font-family:宋体"}[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_508369361}[对应的客户端处理绑定信息失败，]{style="font-family:宋体"}[对应接口为]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*[，其中]{style="font-family:宋体"}*[type]{lang="EN-US"}*[ ]{lang="EN-US"}[类型如下：]{style="font-family:
-  宋体"}
+为bundle *number*对应的客户端处理绑定信息失败，对应接口为*interface-name*，其中*type*类型如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_BUNDLEPRIM_ATTACH]{lang="EN-US"}]{#struct_0_52071_x1881_695726744}[：绑定]{lang="EN-US" style="font-family:
-  宋体"}
+·DDR_BUNDLEPRIM_ATTACH：绑定
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_BUNDLEPRIM_DETACH]{lang="EN-US"}]{#struct_0_52071_x1881_x621291759}[：去绑定]{lang="EN-US" style="font-family:
-  宋体"}
+·DDR_BUNDLEPRIM_DETACH：去绑定
 
-[[Failed to create a timer for connection to DDR daemon.]{lang="EN-US"}]{#struct_0_52071_x1881_1752949979}
+Failed to create a timer for connection to DDR daemon.
 
-[[创建用于与]{style="font-family:宋体"}[DDR]{lang="EN-US"}]{#struct_0_52071_x1881_x1747758037}[守护进程连接的定时器失败]{style="font-family:宋体"}
+创建用于与DDR守护进程连接的定时器失败
 
-[[Failed to send a bundle message (*type*) of bundle *number* on interface *interface-name.*]{lang="EN-US"}]{#struct_0_52071_x1881_x422387225}
+Failed to send a bundle message (*type*) of bundle *number* on interface *interface-name.*
 
-[[为]{style="font-family:宋体"}[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_1079020638}[对应的客户端]{style="font-family:宋体"}[发送绑定信息失败，对应接口为]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*[，其中]{style="font-family:宋体"}*[type]{lang="EN-US"}*[ ]{lang="EN-US"}[类型如下：]{style="font-family:
-  宋体"}
+为bundle *number*对应的客户端发送绑定信息失败，对应接口为*interface-name*，其中*type*类型如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_BUNDLEPRIM_ATTACH]{lang="EN-US"}]{#struct_0_52071_x1881_1709782280}[：绑定]{lang="EN-US" style="font-family:
-  宋体"}
+·DDR_BUNDLEPRIM_ATTACH：绑定
 
-[[Failed to send a bundle message (*type*) of bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_1752884443}
+Failed to send a bundle message (*type*) of bundle *number*.
 
-[[为]{style="font-family:宋体"}[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_1045844384}[对应的客户端]{style="font-family:宋体"}[发送绑定信息失败，其中]{style="font-family:宋体"}*[type]{lang="EN-US"}*[ ]{lang="EN-US"}[类型如下：]{style="font-family:
-  宋体"}
+为bundle *number*对应的客户端发送绑定信息失败，其中*type*类型如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_BUNDLEPRIM_DETACH]{lang="EN-US"}]{#struct_0_52071_x1881_213610602}[：去绑定]{lang="EN-US" style="font-family:
-  宋体"}
+·DDR_BUNDLEPRIM_DETACH：去绑定
 
-[[Failed to send a dialer message (*type*), bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_x96198911}
+Failed to send a dialer message (*type*), bundle *number*.
 
-[[为]{style="font-family:宋体"}[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_1752818907}[对应的客户端]{style="font-family:宋体"}[发送拨号信息失败，其中]{style="font-family:宋体"}*[type]{lang="EN-US"}*[类型如下：]{style="font-family:宋体"}
+为bundle *number*对应的客户端发送拨号信息失败，其中*type*类型如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_DIALPRIM_CONN_REQ]{lang="EN-US"}]{#struct_0_52071_x1881_982894816}[：建链请求]{lang="EN-US" style="font-family:
-  宋体"}
+·DDR_DIALPRIM_CONN_REQ：建链请求
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_DIALPRIM_CONN_IND]{lang="EN-US"}]{#struct_0_52071_x1881_x536479829}[：建链成功指示]{lang="EN-US" style="font-family:
-  宋体"}
+·DDR_DIALPRIM_CONN_IND：建链成功指示
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_DIALPRIM_DISCONN_REQ]{lang="EN-US"}]{#struct_0_52071_x1881_1183257297}[：断链请求]{lang="EN-US" style="font-family:宋体"}
+·DDR_DIALPRIM_DISCONN_REQ：断链请求
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_DIALPRIM_DISCONN_IND]{lang="EN-US"}]{#struct_0_52071_x1881_2049955196}[：断链指示]{lang="EN-US" style="font-family:宋体"}
+·DDR_DIALPRIM_DISCONN_IND：断链指示
 
-[[Failed to retransmit a PADR packet, bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_1752753371}
+Failed to retransmit a PADR packet, bundle *number*.
 
-[[为]{style="font-family:宋体"}[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_x1360017705}[对应的客户端重传]{style="font-family:宋体"}[PADR]{lang="EN-US"}[报文失败]{style="font-family:宋体"}
+为bundle *number*对应的客户端重传PADR报文失败
 
-[[Failed to retransmit a PADI packet, bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_960925540}
+Failed to retransmit a PADI packet, bundle *number*.
 
-[[为]{style="font-family:宋体"}[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_1214286010}[对应的客户端重传]{style="font-family:宋体"}[PADI]{lang="EN-US"}[报文失败]{style="font-family:宋体"}
+为bundle *number*对应的客户端重传PADI报文失败
 
-[[Failed to disconnect the connection to DDR daemon, bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_1753212123}
+Failed to disconnect the connection to DDR daemon, bundle *number*.
 
-[[为]{style="font-family:宋体"}[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_1394621466}[对应的客户端]{style="font-family:宋体"}[向]{style="font-family:宋体"}[DDR]{lang="EN-US"}[拆链失败]{style="font-family:宋体"}
+为bundle *number*对应的客户端向DDR拆链失败
 
-[[Failed to send a PADI packet, bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_1526850506}
+Failed to send a PADI packet, bundle *number*.
 
-[[为]{style="font-family:宋体"}[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_x1708641577}[对应的客户端]{style="font-family:宋体"}[发送]{style="font-family:宋体"}[PADI]{lang="EN-US"}[报文失败]{style="font-family:宋体"}
+为bundle *number*对应的客户端发送PADI报文失败
 
-[[Failed to send a PADR packet, bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_1753146587}
+Failed to send a PADR packet, bundle *number*.
 
-[[为]{style="font-family:宋体"}[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_x167941817}[对应的客户端]{style="font-family:宋体"}[发送]{style="font-family:宋体"}[PADR]{lang="EN-US"}[报文失败]{style="font-family:宋体"}
+为bundle *number*对应的客户端发送PADR报文失败
 
-[[Failed to transfer the state of session, bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_x60582331}
+Failed to transfer the state of session, bundle *number*.
 
-[[为]{style="font-family:宋体"}[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_x43156149}[对应的客户端]{style="font-family:宋体"}[迁移会话状态失败]{style="font-family:宋体"}
+为bundle *number*对应的客户端迁移会话状态失败
 
-[[HA upgrade failed.]{lang="EN-US"}]{#struct_0_52071_x1881_1753081051}
+HA upgrade failed.
 
-[[HA]{lang="EN-US"}]{#struct_0_52071_x1881_x2103857030}[升级失败]{style="font-family:宋体"}
+HA升级失败
 
-[[Failed to transfer the session state. Drop the PADS packet.]{lang="EN-US"}]{#struct_0_52071_x1881_x1449269890}
+Failed to transfer the session state. Drop the PADS packet.
 
-[[状态迁移失败。丢弃]{style="font-family:宋体"}[PADS]{lang="EN-US"}]{#struct_0_52071_x1881_1753015515}[报文]{style="font-family:宋体"}
+状态迁移失败。丢弃PADS报文
 
-[[Failed to transfer the session state. Drop the PADT packet.]{lang="EN-US"}]{#struct_0_52071_x1881_x1731994102}
+Failed to transfer the session state. Drop the PADT packet.
 
-[[状态迁移失败。丢弃]{style="font-family:宋体"}[PADT]{lang="EN-US"}]{#struct_0_52071_x1881_267241605}[报文]{style="font-family:宋体"}
+状态迁移失败。丢弃PADT报文
 
-[[Failed to create a timer for packet retransmission, bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_x1056447314}
+Failed to create a timer for packet retransmission, bundle *number*.
 
-[[为]{style="font-family:宋体"}[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_1753474267}[对应的客户端]{style="font-family:宋体"}[创建报文重传定时器失败]{style="font-family:宋体"}
+为bundle *number*对应的客户端创建报文重传定时器失败
 
-[[Failed to synchronize the data to slot *slot-id* cpu *cpu-id*.]{lang="EN-US"}]{#struct_0_52071_x1881_x2117709282}
+Failed to synchronize the data to slot *slot-id* cpu *cpu-id*.
 
-[[同步数据到指定板（板号为]{style="font-family:宋体"}*[slot-id]{lang="EN-US"}*]{#struct_0_52071_x1881_x95109603}[）的指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[（]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号为]{style="font-family:宋体"}*[cpu-id]{lang="EN-US"}*[）失败]{style="font-family:宋体"}
+同步数据到指定板（板号为*slot-id*）的指定CPU（CPU编号为*cpu-id*）失败
 
-[[Failed to synchronize the data to other slots.]{lang="EN-US"}]{#struct_0_52071_x1881_1753408731}
+Failed to synchronize the data to other slots.
 
-[[同步数据到各板失败]{style="font-family:宋体"}]{#struct_0_52071_x1881_x992360089}
+同步数据到各板失败
 
-[[Failed to synchronize the data to kernel.]{lang="EN-US"}]{#struct_0_52071_x1881_x432527924}
+Failed to synchronize the data to kernel.
 
-[[同步数据到内核失败]{style="font-family:宋体"}]{#struct_0_52071_x1881_1666483361}
+同步数据到内核失败
 
-[[Failed to add a duplicate session of session *id*.]{lang="EN-US"}]{#struct_0_52071_x1881_1752949976}
+Failed to add a duplicate session of session *id*.
 
-[[为]{style="font-family:宋体"}[session *id*]{lang="EN-US"}]{#struct_0_52071_x1881_x1747954645}[重复添加会话失败]{style="font-family:宋体"}
+为session *id*重复添加会话失败
 
-[[Not enough memory.]{lang="EN-US"}]{#struct_0_52071_x1881_x878785765}
+Not enough memory.
 
-[[内存不足]{style="font-family:宋体"}]{#struct_0_52071_x1881_1752884440}
+内存不足
 
-[[PPPoE client is not in session stage on interface *interface-name.*]{lang="EN-US"}]{#struct_0_52071_x1881_1045647776}
+PPPoE client is not in session stage on interface *interface-name.*
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x1750729594}[上]{style="font-family:宋体"}[PPPOE]{lang="EN-US"}[客户端未处于会话阶段]{style="font-family:宋体"}
+接口*interface-name*上PPPOE客户端未处于会话阶段
 
-[[Failed to get the session for interface *interface-name.*]{lang="EN-US"}]{#struct_0_52071_x1881_1752818904}
+Failed to get the session for interface *interface-name.*
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_983091424}[上获取会话失败]{style="font-family:宋体"}
+接口*interface-name*上获取会话失败
 
-[[Failed to process the PPP packet on link layer, session ID id, MAC mac-addr.]{lang="EN-US"}]{#struct_0_52071_x1881_x1730977372}
+Failed to process the PPP packet on link layer, session ID id, MAC mac-addr.
 
-[[在链路层处理]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_52071_x1881_1752753368}[报文失败，对应]{style="font-family:宋体"}[SESSION_ID]{lang="EN-US"}[为]{style="font-family:宋体"}[id]{lang="EN-US"}[且源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为]{style="font-family:宋体"}[mac-addr]{lang="EN-US"}
+在链路层处理PPP报文失败，对应SESSION_ID为id且源MAC地址为mac-addr
 
-[[Failed to delete a virtual-access interface.]{lang="EN-US"}]{#struct_0_52071_x1881_x1360476456}
+Failed to delete a virtual-access interface.
 
-[[删除]{style="font-family:宋体"}[Virtual-access]{lang="EN-US"}]{#struct_0_52071_x1881_1415347396}[接口失败]{style="font-family:宋体"}
+删除Virtual-access接口失败
 
-[[Failed to create a virtual-access interface.]{lang="EN-US"}]{#struct_0_52071_x1881_1753212120}
+Failed to create a virtual-access interface.
 
-[[创建]{style="font-family:宋体"}[Virtual-access]{lang="EN-US"}]{#struct_0_52071_x1881_1394818074}[接口失败]{style="font-family:宋体"}
+创建Virtual-access接口失败
 
-[ ]{lang="EN-US"}
+表2-7 debugging pppoe-client event命令输出信息描述表
 
-[[表2-7 ]{lang="EN-US"}[debugging pppoe-client event]{lang="EN-US"}]{#struct_0_52071_x1881_x1162038574}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x2116131355}[[字段]{style="font-family:黑体"}]{#struct_0_52071_x1881_893474693}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_52071_x1881_938427752}
+Received a bundle message(type) for bundle *number* on interface *interface-name*.
 
-[[Received a bundle message(type) for bundle *number* on interface *interface-name*.]{lang="EN-US"}]{#struct_0_52071_x1881_595915531}
+bundle *number*对应的客户端收到绑定信息，对应接口为*interface-name*，其中*type*类型如下：
 
-[[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_1753146584}[对应的客户端收到绑定信息，]{style="font-family:宋体"}[对应接口为]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*[，其中]{style="font-family:宋体"}*[type]{lang="EN-US"}*[类型如下：]{style="font-family:宋体"}
+·DDR_BUNDLEPRIM_ATTACH：绑定
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_BUNDLEPRIM_ATTACH]{lang="EN-US"}]{#struct_0_52071_x1881_x168138425}[：绑定]{lang="EN-US" style="font-family:
-  宋体"}
+·DDR_BUNDLEPRIM_DETACH：去绑定
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_BUNDLEPRIM_DETACH]{lang="EN-US"}]{#struct_0_52071_x1881_x1323533337}[：去绑定]{lang="EN-US" style="font-family:
-  宋体"}
+Successfully created a virtual-access interface.
 
-[[Successfully created a virtual-access interface.]{lang="EN-US"}]{#struct_0_52071_x1881_x2023281848}
+成功创建Virtual-access接口
 
-[[成功创建]{style="font-family:宋体"}[Virtual-access]{lang="EN-US"}]{#struct_0_52071_x1881_x1681966790}[接口]{style="font-family:宋体"}
+Successfully deleted a virtual-access interface.
 
-[[Successfully deleted a virtual-access interface.]{lang="EN-US"}]{#struct_0_52071_x1881_648852527}
+成功删除Virtual-access接口
 
-[[成功删除]{style="font-family:宋体"}[Virtual-access]{lang="EN-US"}]{#struct_0_52071_x1881_x800546776}[接口]{style="font-family:宋体"}
+Successfully created a session, bundle *number*.
 
-[[Successfully created a session, bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_1753081048}
+为bundle *number*对应的客户端创建会话成功
 
-[[为]{style="font-family:宋体"}[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_x2104446855}[对应的客户端]{style="font-family:宋体"}[创建会话成功]{style="font-family:宋体"}
+The session is already in PPPoE session stage, bundle *number*.
 
-[[The session is already in PPPoE session stage, bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_756354601}
+bundle *number*对应的客户端的会话已处于SESSION阶段
 
-[[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_x1636960925}[对应的客户端的]{style="font-family:宋体"}[会话已处于]{style="font-family:宋体"}[SESSION]{lang="EN-US"}[阶段]{style="font-family:宋体"}
+The session of bundle *number* does not exist.
 
-[[The session of bundle *number* does not exist.]{lang="EN-US"}]{#struct_0_52071_x1881_788861649}
+bundle *number*对应的会话不存在
 
-[[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_14108147}[对应的会话不存在]{style="font-family:宋体"}
+Received a dialer message(*type*) of bundle *number*.
 
-[[Received a dialer message(*type*) of bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_1753015512}
+bundle *number*对应的客户端接收到拨号信息，其中*type*类型如下：
 
-[[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_x1732321782}[对应的客户端接收到]{style="font-family:宋体"}[拨号信息，其中]{style="font-family:宋体"}*[type]{lang="EN-US"}*[类型如下：]{style="font-family:宋体"}
+·DDR_DIALPRIM_CONN_REQ：建链请求
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_DIALPRIM_CONN_REQ]{lang="EN-US"}]{#struct_0_52071_x1881_850131303}[：建链请求]{lang="EN-US" style="font-family:
-  宋体"}
+·DDR_DIALPRIM_CONN_IND：建链成功指示
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_DIALPRIM_CONN_IND]{lang="EN-US"}]{#struct_0_52071_x1881_1304086839}[：建链成功指示]{lang="EN-US" style="font-family:
-  宋体"}
+·DDR_DIALPRIM_DISCONN_REQ：断链请求
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_DIALPRIM_DISCONN_REQ]{lang="EN-US"}]{#struct_0_52071_x1881_x745665247}[：断链请求]{lang="EN-US" style="font-family:宋体"}
+·DDR_DIALPRIM_DISCONN_IND：断链指示
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_DIALPRIM_DISCONN_IND]{lang="EN-US"}]{#struct_0_52071_x1881_1753474264}[：断链指示]{lang="EN-US" style="font-family:宋体"}
+PPPoE client function is not configured with bundle *number*.
 
-[[PPPoE client function is not configured with bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_x2117774818}
+bundle *number*对应的客户端未配置
 
-[[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_x831227156}[对应的客户端]{style="font-family:宋体"}[未配置]{style="font-family:宋体"}
+The connection to DDR daemon disconnected. Try again.
 
-[[The connection to DDR daemon disconnected. Try again.]{lang="EN-US"}]{#struct_0_52071_x1881_x183663589}
+与DDR 守护进程连接挂断。重建连接
 
-[[与]{style="font-family:宋体"}[DDR ]{lang="EN-US"}]{#struct_0_52071_x1881_x1456877415}[守护进程连接挂断。重建连接]{style="font-family:宋体"}
+Successfully sent a bundle message (*type*) of bundle *number* on interface *interface-name*.
 
-[[Successfully sent a bundle message (*type*) of bundle *number* on interface *interface-name*.]{lang="EN-US"}]{#struct_0_52071_x1881_1753408728}
+为bundle *number*对应的客户端发送绑定信息成功，对应接口为*interface-name*，其中Type类型为：
 
-[[为]{style="font-family:宋体"}[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_x991901338}[对应的客户端]{style="font-family:宋体"}[发送绑定信息成功，对应接口为]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*[，其中]{style="font-family:宋体"}[Type]{lang="EN-US"}[类型为：]{style="font-family:宋体"}
+·DDR_BUNDLEPRIM_ATTACH：绑定
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_BUNDLEPRIM_ATTACH]{lang="EN-US"}]{#struct_0_52071_x1881_x302272018}[：绑定]{lang="EN-US" style="font-family:
-  宋体"}
+Successfully sent a bundle message (*type*) of bundle *number*.
 
-[[Successfully sent a bundle message (*type*) of bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_x1795553399}
+为bundle *number*对应的客户端发送绑定信息成功，其中Type类型为：
 
-[[为]{style="font-family:宋体"}[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_112195694}[对应的客户端]{style="font-family:宋体"}[发送绑定信息成功，其中]{style="font-family:宋体"}[Type]{lang="EN-US"}[类型为：]{style="font-family:宋体"}
+·DDR_BUNDLEPRIM_DETACH：去绑定
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_BUNDLEPRIM_DETACH]{lang="EN-US"}]{#struct_0_52071_x1881_1752949977}[：去绑定]{lang="EN-US" style="font-family:
-  宋体"}
+Successfully sent a dialer message (*type*), bundle *number*.
 
-[[Successfully sent a dialer message (*type*), bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_x1747889109}
+为bundle *number*对应的客户端发送拨号信息成功，其中*type*类型如下：
 
-[[为]{style="font-family:宋体"}[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_x1147294449}[对应的客户端]{style="font-family:宋体"}[发送拨号信息成功，其中]{style="font-family:宋体"}*[type]{lang="EN-US"}*[类型如下：]{style="font-family:宋体"}
+·DDR_DIALPRIM_CONN_REQ：建链请求
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_DIALPRIM_CONN_REQ]{lang="EN-US"}]{#struct_0_52071_x1881_x1561203593}[：建链请求]{lang="EN-US" style="font-family:
-  宋体"}
+·DDR_DIALPRIM_CONN_IND：建链成功指示
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_DIALPRIM_CONN_IND]{lang="EN-US"}]{#struct_0_52071_x1881_1752884441}[：建链成功指示]{lang="EN-US" style="font-family:
-  宋体"}
+·DDR_DIALPRIM_DISCONN_REQ：断链请求
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_DIALPRIM_DISCONN_REQ]{lang="EN-US"}]{#struct_0_52071_x1881_1045713312}[：断链请求]{lang="EN-US" style="font-family:宋体"}
+·DDR_DIALPRIM_DISCONN_IND：断链指示
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDR_DIALPRIM_DISCONN_IND]{lang="EN-US"}]{#struct_0_52071_x1881_x182661413}[：断链指示]{lang="EN-US" style="font-family:宋体"}
+Successfully retransmitted a PADI packet, bundle *number*.
 
-[[Successfully retransmitted a PADI packet, bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_x268125754}
+为bundle *number*对应的客户端重传PADI报文成功
 
-[[为]{style="font-family:宋体"}[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_1752818905}[对应的客户端重传]{style="font-family:宋体"}[PADI]{lang="EN-US"}[报文成功]{style="font-family:宋体"}
+Successfully retransmitted a PADR packet, bundle *number*.
 
-[[Successfully retransmitted a PADR packet, bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_983025888}
+为bundle *number*对应的客户端重传PADR报文成功
 
-[[为]{style="font-family:宋体"}[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_x204810299}[对应的客户端重传]{style="font-family:宋体"}[PADR]{lang="EN-US"}[报文成功]{style="font-family:宋体"}
+The state of session transferred from *oldstate* to *newstate*, bundle *number*.
 
-[[The state of session transferred from *oldstate* to *newstate*, bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_x537464339}
+bundle *number*对应客户端的会话状态从*oldstate*迁移到*newstate*，其中*oldstate*和*newstate*类型如下：
 
-[[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_1752753369}[对应客户端的]{style="font-family:宋体"}[会话状态从]{style="font-family:宋体"}*[oldstate]{lang="EN-US"}*[迁移到]{style="font-family:宋体"}*[newstate]{lang="EN-US"}*[，其中]{style="font-family:宋体"}*[oldstate]{lang="EN-US"}*[和]{style="font-family:宋体"}*[newstate]{lang="EN-US"}*[类型如下：]{style="font-family:宋体"}
+·IDLE：初始化状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IDLE]{lang="EN-US"}]{#struct_0_52071_x1881_x1360541992}[：初始化状态]{lang="EN-US" style="font-family:宋体"}
+·PADI SENT：已发送PADI报文、等待PADO报文状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PADI SENT]{lang="EN-US"}]{#struct_0_52071_x1881_x273354020}[：已发送]{lang="EN-US" style="font-family:宋体"}[PADI]{lang="EN-US"}[报文、等待]{lang="EN-US" style="font-family:宋体"}[PADO]{lang="EN-US"}[报文状态]{lang="EN-US" style="font-family:宋体"}
+·PADR SENT：已发送PADR报文、等待PADS报文状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PADR SENT]{lang="EN-US"}]{#struct_0_52071_x1881_x1159474036}[：已发送]{lang="EN-US" style="font-family:宋体"}[PADR]{lang="EN-US"}[报文、等待]{lang="EN-US" style="font-family:宋体"}[PADS]{lang="EN-US"}[报文状态]{lang="EN-US" style="font-family:宋体"}
+·SESSION：会话协商成功
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SESSION]{lang="EN-US"}]{#struct_0_52071_x1881_1753212121}[：会话协商成功]{lang="EN-US" style="font-family:宋体"}
+Received an interface *event* event on interface *interface-name*.
 
-[[Received an interface *event* event on interface *interface-name*.]{lang="EN-US"}]{#struct_0_52071_x1881_1394752538}
+在*interface-name*上收到接口*event*事件，事件类型如下：
 
-[[在]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_1143107353}[上收到接口]{style="font-family:宋体"}*[event]{lang="EN-US"}*[事件，事件类型如下：]{style="font-family:宋体"}
+·active：接口激活事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[active]{lang="EN-US"}]{#struct_0_52071_x1881_546307253}[：接口激活事件]{lang="EN-US" style="font-family:宋体"}
+·deactive：接口去激活事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[deactive]{lang="EN-US"}]{#struct_0_52071_x1881_1753146585}[：接口去激活事件]{lang="EN-US" style="font-family:宋体"}
+·delete：接口删除事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[delete]{lang="EN-US"}]{#struct_0_52071_x1881_x168072889}[：接口删除事件]{lang="EN-US" style="font-family:宋体"}
+·down：接口Down事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[down]{lang="EN-US"}]{#struct_0_52071_x1881_x1813837426}[：接口]{lang="EN-US" style="font-family:宋体"}[Down]{lang="EN-US"}[事件]{lang="EN-US" style="font-family:宋体"}
+·set mac：设置接口MAC地址事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[set mac]{lang="EN-US"}]{#struct_0_52071_x1881_x1101069075}[：设置接口]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址事件]{lang="EN-US" style="font-family:宋体"}
+表2-8 debugging pppoe-client packet命令输出信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表2-8 ]{lang="EN-US"}[debugging pppoe-client packet]{lang="EN-US"}]{#struct_0_52071_x1881_1753081049}[命令输出信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x2121929229}[[字段]{style="font-family:黑体"}]{#struct_0_52071_x1881_x2104381319}
+Successfully sent a PADI packet, bundle *number*.
 
-[[描述]{style="font-family:黑体"}]{#struct_0_52071_x1881_878950090}
+为bundle *number*对应的客户端发送PADI报文成功
 
-[[Successfully sent a PADI packet, bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_x1551200075}
+Successfully sent a PADR packet, bundle *number*.
 
-[[为]{style="font-family:宋体"}[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_1172412035}[对应的客户端]{style="font-family:宋体"}[发送]{style="font-family:宋体"}[PADI]{lang="EN-US"}[报文成功]{style="font-family:宋体"}
+为bundle *number*对应的客户端发送PADR报文成功
 
-[[Successfully sent a PADR packet, bundle *number*.]{lang="EN-US"}]{#struct_0_52071_x1881_1126178234}
+Dropped the PADO packet for incorrect SESSION_ID (*id*).
 
-[[为]{style="font-family:宋体"}[bundle *number*]{lang="EN-US"}]{#struct_0_52071_x1881_493410456}[对应的客户端]{style="font-family:宋体"}[发送]{style="font-family:宋体"}[PADR]{lang="EN-US"}[报文成功]{style="font-family:宋体"}
+丢弃PADO报文，因为SESSION_ID(*id*)错误
 
-[[Dropped the PADO packet for incorrect SESSION_ID (*id*).]{lang="EN-US"}]{#struct_0_52071_x1881_1753015513}
+Dropped the PADO packet for incorrect End-of-List tag.
 
-[[丢弃]{style="font-family:宋体"}[PADO]{lang="EN-US"}]{#struct_0_52071_x1881_x1732387318}[报文，因为]{style="font-family:宋体"}[SESSION_ID(*id*)]{lang="EN-US"}[错误]{style="font-family:宋体"}
+丢弃PADO报文，因为End-of-List tag错误
 
-[[Dropped the PADO packet for incorrect End-of-List tag.]{lang="EN-US"}]{#struct_0_52071_x1881_x781502549}
+Dropped the PADO packet for Service-Name-Error, AC-System-Error, or Generic-Error tag.
 
-[[丢弃]{style="font-family:宋体"}[PADO]{lang="EN-US"}]{#struct_0_52071_x1881_x2110760040}[报文，因为]{style="font-family:宋体"}[End-of-List tag]{lang="EN-US"}[错误]{style="font-family:宋体"}
+丢弃PADO报文，因为至少携带以下一种错误Tag：
 
-[[Dropped the PADO packet for Service-Name-Error, AC-System-Error, or Generic-Error tag.]{lang="EN-US"}]{#struct_0_52071_x1881_x418859456}
+·Service-Name-Error：表示没有理睬所请求的Service-Name
 
-[[丢弃]{style="font-family:宋体"}[PADO]{lang="EN-US"}]{#struct_0_52071_x1881_x1256389799}[报文，因为至少携带以下一种错误]{style="font-family:宋体"}[Tag]{lang="EN-US"}[：]{style="font-family:宋体"}
+·AC-System-Error：表示访问集中器在处理主机请求时出现了错误
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Service-Name-Error]{lang="EN-US"}]{#struct_0_52071_x1881_1060189586}[：表示没有理睬所请求的]{lang="EN-US" style="font-family:
-  宋体"}[Service-Name]{lang="EN-US"}
+·Generic-Error tag：表示报文出错
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[AC-System-Error]{lang="EN-US"}]{#struct_0_52071_x1881_1753474265}[：表示访问集中器在处理主机请求时出现了错误]{lang="EN-US" style="font-family:
-  宋体"}
+Dropped the PADO packet for incorrect Host-Uniq tag.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Generic-Error tag]{lang="EN-US"}]{#struct_0_52071_x1881_x2117840354}[：表示报文出错]{lang="EN-US" style="font-family:
-  宋体"}
+丢弃PADO报文，因为Host-Uniq tag错误
 
-[[Dropped the PADO packet for incorrect Host-Uniq tag.]{lang="EN-US"}]{#struct_0_52071_x1881_1613404588}
+No Service-Name tag in the PADO packet.
 
-[[丢弃]{style="font-family:宋体"}[PADO]{lang="EN-US"}]{#struct_0_52071_x1881_2134234900}[报文，因为]{style="font-family:宋体"}[Host-Uniq tag]{lang="EN-US"}[错误]{style="font-family:宋体"}
+PADO报文中未携带Service-Name tag
 
-[[No Service-Name tag in the PADO packet.]{lang="EN-US"}]{#struct_0_52071_x1881_x716360212}
+No AC-Name tag in the PADO packet.
 
-[[PADO]{lang="EN-US"}]{#struct_0_52071_x1881_1286787674}[报文中未携带]{style="font-family:宋体"}[Service-Name tag]{lang="EN-US"}
+PADO报文中未携带AC-Name tag
 
-[[No AC-Name tag in the PADO packet.]{lang="EN-US"}]{#struct_0_52071_x1881_1753408729}
+Dropped the PADO packet for no client is found.
 
-[[PADO]{lang="EN-US"}]{#struct_0_52071_x1881_x991835802}[报文中未携带]{style="font-family:宋体"}[AC-Name tag]{lang="EN-US"}
+丢弃PADO报文，因为未找到会话对应的客户端
 
-[[Dropped the PADO packet for no client is found.]{lang="EN-US"}]{#struct_0_52071_x1881_x1838971782}
+Dropped the PADS packet for incorrect SESSION_ID (*id*).
 
-[[丢弃]{style="font-family:宋体"}[PADO]{lang="EN-US"}]{#struct_0_52071_x1881_x791714621}[报文，因为未找到会话对应的客户端]{style="font-family:宋体"}
+丢弃PADS报文，因为SESSION_ID(*id*)错误
 
-[[Dropped the PADS packet for incorrect SESSION_ID (*id*).]{lang="EN-US"}]{#struct_0_52071_x1881_1100609713}
+Dropped the PADS packet for incorrect End-of-List tag.
 
-[[丢弃]{style="font-family:宋体"}[PADS]{lang="EN-US"}]{#struct_0_52071_x1881_1752949974}[报文，因为]{style="font-family:宋体"}[SESSION_ID(*id*)]{lang="EN-US"}[错误]{style="font-family:宋体"}
+丢弃PADS报文，因为End-of-List tag错误
 
-[[Dropped the PADS packet for incorrect End-of-List tag.]{lang="EN-US"}]{#struct_0_52071_x1881_x1748085717}
+Dropped the PADS packet for Service-Name-Error, AC-System-Error, or Generic-Error tag.
 
-[[丢弃]{style="font-family:宋体"}[PADS]{lang="EN-US"}]{#struct_0_52071_x1881_39329630}[报文，因为]{style="font-family:宋体"}[End-of-List tag]{lang="EN-US"}[错误]{style="font-family:宋体"}
+丢弃PADO报文，因为至少携带以下一种错误Tag：
 
-[[Dropped the PADS packet for Service-Name-Error, AC-System-Error, or Generic-Error tag.]{lang="EN-US"}]{#struct_0_52071_x1881_x1215858256}
+·Service-Name-Error：表示没有理睬所请求的Service-Name
 
-[[丢弃]{style="font-family:宋体"}[PADO]{lang="EN-US"}]{#struct_0_52071_x1881_x2135633215}[报文，因为至少携带以下一种错误]{style="font-family:宋体"}[Tag]{lang="EN-US"}[：]{style="font-family:宋体"}
+·AC-System-Error：表示访问集中器在处理主机请求时出现了错误
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Service-Name-Error]{lang="EN-US"}]{#struct_0_52071_x1881_1752884438}[：表示没有理睬所请求的]{lang="EN-US" style="font-family:
-  宋体"}[Service-Name]{lang="EN-US"}
+·Generic-Error tag：表示报文出错
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[AC-System-Error]{lang="EN-US"}]{#struct_0_52071_x1881_1045123487}[：表示访问集中器在处理主机请求时出现了错误]{lang="EN-US" style="font-family:
-  宋体"}
+Dropped the PADS packet for incorrect Host-Uniq tag.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Generic-Error tag]{lang="EN-US"}]{#struct_0_52071_x1881_x1758736620}[：表示报文出错]{lang="EN-US" style="font-family:
-  宋体"}
+丢弃PADS报文，因为Host-Uniq tag错误
 
-[[Dropped the PADS packet for incorrect Host-Uniq tag.]{lang="EN-US"}]{#struct_0_52071_x1881_x1555794136}
+No Service-Name tag in the PADS packet.
 
-[[丢弃]{style="font-family:宋体"}[PADS]{lang="EN-US"}]{#struct_0_52071_x1881_x1670386294}[报文，因为]{style="font-family:宋体"}[Host-Uniq tag]{lang="EN-US"}[错误]{style="font-family:宋体"}
+PADS报文中未携带Service-Name tag
 
-[[No Service-Name tag in the PADS packet.]{lang="EN-US"}]{#struct_0_52071_x1881_1752818902}
+No AC-Name tag in the PADS packet.
 
-[[PADS]{lang="EN-US"}]{#struct_0_52071_x1881_982698208}[报文中未携带]{style="font-family:宋体"}[Service-Name tag]{lang="EN-US"}
+PADS报文中未携带AC-Name tag
 
-[[No AC-Name tag in the PADS packet.]{lang="EN-US"}]{#struct_0_52071_x1881_1654275071}
+Dropped the PADS packet for no client is found.
 
-[[PADS]{lang="EN-US"}]{#struct_0_52071_x1881_x447291826}[报文中未携带]{style="font-family:宋体"}[AC-Name tag]{lang="EN-US"}
+丢弃PADS报文，因为未找到会话对应的客户端
 
-[[Dropped the PADS packet for no client is found.]{lang="EN-US"}]{#struct_0_52071_x1881_1752753366}
+Dropped the PADT packet for incorrect SESSION_ID (*id*).
 
-[[丢弃]{style="font-family:宋体"}[PADS]{lang="EN-US"}]{#struct_0_52071_x1881_x1360345384}[报文，因为未找到会话对应的客户端]{style="font-family:宋体"}
+丢弃PADT报文，因为SESSION_ID(*id*)错误
 
-[[Dropped the PADT packet for incorrect SESSION_ID (*id*).]{lang="EN-US"}]{#struct_0_52071_x1881_9647940}
+Dropped the PADT packet for no client is found.
 
-[[丢弃]{style="font-family:宋体"}[PADT]{lang="EN-US"}]{#struct_0_52071_x1881_x1174194934}[报文，因为]{style="font-family:宋体"}[SESSION_ID(*id*)]{lang="EN-US"}[错误]{style="font-family:宋体"}
+丢弃PADT报文，因为未找到会话对应的客户端
 
-[[Dropped the PADT packet for no client is found.]{lang="EN-US"}]{#struct_0_52071_x1881_1753212118}
+Sent a *type* packet on interface *interface-name*, length *length*.
 
-[[丢弃]{style="font-family:宋体"}[PADT]{lang="EN-US"}]{#struct_0_52071_x1881_1395342365}[报文，因为未找到会话对应的客户端]{style="font-family:宋体"}
+在接口*interface-name*上发送长度为*length*的*type*报文，其中*type*类型如下：
 
-[[Sent a *type* packet on interface *interface-name*, length *length*.]{lang="EN-US"}]{#struct_0_52071_x1881_1169125272}
+·PADI：PADI报文
 
-[[在接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_1729534647}[上发送长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*[的]{style="font-family:宋体"}*[type]{lang="EN-US"}*[报文，其中]{style="font-family:宋体"}*[type]{lang="EN-US"}*[类型如下：]{style="font-family:宋体"}
+·PADR：PADR报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PADI]{lang="EN-US"}]{#struct_0_52071_x1881_1753146582}[：]{lang="EN-US" style="font-family:宋体"}[PADI]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+·PADT：PADT报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PADR]{lang="EN-US"}]{#struct_0_52071_x1881_x168269497}[：]{lang="EN-US" style="font-family:宋体"}[PADR]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+Received a *type* packet on interface *interface-name*, length *length*.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PADT]{lang="EN-US"}]{#struct_0_52071_x1881_1403318364}[：]{lang="EN-US" style="font-family:宋体"}[PADT]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+在接口*interface-name*上接收长度为*length*的*type*报文，其中*type*类型如下：
 
-[[Received a *type* packet on interface *interface-name*, length *length*.]{lang="EN-US"}]{#struct_0_52071_x1881_x2145662749}
+·PADO：PADO报文
 
-[[在接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_1753081046}[上接收长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*[的]{style="font-family:宋体"}*[type]{lang="EN-US"}*[报文，其中]{style="font-family:宋体"}*[type]{lang="EN-US"}*[类型如下：]{style="font-family:宋体"}
+·PADS：PADS报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PADO]{lang="EN-US"}]{#struct_0_52071_x1881_x2104053639}[：]{lang="EN-US" style="font-family:宋体"}[PADO]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+·PADT：PADT报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PADS]{lang="EN-US"}]{#struct_0_52071_x1881_x757674894}[：]{lang="EN-US" style="font-family:宋体"}[PADS]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+表2-9 debugging pppoe-client data命令输出信息描述表
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PADT]{lang="EN-US"}]{#struct_0_52071_x1881_329457767}[：]{lang="EN-US" style="font-family:宋体"}[PADT]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+字段
 
-[ ]{lang="EN-US"}
+描述
 
-[]{#struct_0_52071_x1881_x1778465494}[[表2-9 ]{lang="EN-US"}[debugging pppoe-client data]{lang="EN-US"}]{#_Toc130718926}[命令输出信息描述表]{style="font-family:黑体"}
+PPPoE Client is not configured on interface *interface-name.*
 
-[]{#table_struct_0_x2122610825}[[字段]{style="font-family:黑体"}]{#struct_0_52071_x1881_1753015510}
+接口*interface-name*上未配置PPPoE Client
 
-[[描述]{style="font-family:黑体"}]{#struct_0_52071_x1881_x1732190710}
+Dropped a multicast/broadcast PPPoE packet on interface *interface-name.*
 
-[[PPPoE Client is not configured on interface *interface-name.* ]{lang="EN-US"}]{#struct_0_52071_x1881_1982837140}
+接口*interface-name*上丢弃一个广播（多播）PPPoE报文
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_208983103}[上未配置]{style="font-family:宋体"}[PPPoE Client]{lang="EN-US"}
+Dropped a PPPoE packet of incorrect length on interface *interface-name.*
 
-[[Dropped a multicast/broadcast PPPoE packet on interface *interface-name.*]{lang="EN-US"}]{#struct_0_52071_x1881_x1672159609}
+接口*interface-name*上丢弃一个长度错误的PPPoE报文
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_x1586746836}[上丢弃一个广播（多播）]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[报文]{style="font-family:宋体"}
+Dropped an invalid PPPoE packet on interface *interface-name.*
 
-[[Dropped a PPPoE packet of incorrect length on interface *interface-name.*]{lang="EN-US"}]{#struct_0_52071_x1881_x587536042}
+接口*interface-name*上丢弃一个非法的PPPoE报文
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_1753474262}[上丢弃一个长度错误的]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[报文]{style="font-family:宋体"}
+【举例】
 
-[[Dropped an invalid PPPoE packet on interface *interface-name.*]{lang="EN-US"}]{#struct_0_52071_x1881_x2117381602}
+\# 打开PPPoE Client错误调试信息开关，在接口GigabitEthernet1/0/1配置一个PPPoE Client，对应bundle number为1，如果DDR守护进程已关闭，复位会话后，系统将输出下列调试信息。
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_52071_x1881_2008612337}[上丢弃一个非法的]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[报文]{style="font-family:宋体"}
+\<Sysname\> debugging pppoe-client error
 
-[ ]{lang="EN-US"}
+\<Sysname\> reset pppoe-client dial-bundle-number 1
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_52071_x1881_1647390324}
+\*Jun 23 15:50:40:899 2011 Sysname PPPOEC/7/ERROR: -MDC=1; Failed to disconnect the connection to DDR daemon, bundle 1.
 
-[[\# ]{lang="EN-US"}]{#struct_0_52071_x1881_1605518326}[打开]{style="font-family:宋体"}[PPPoE Client]{lang="EN-US"}[错误调试信息开关，在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[配置一个]{style="font-family:宋体"}[PPPoE Client]{lang="EN-US"}[，]{style="font-family:宋体"}[对应]{style="font-family:宋体"}[bundle number]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[，如果]{style="font-family:宋体"}[DDR]{lang="EN-US"}[守护进程已关闭，复位会话后，系统将输出下列调试信息。]{style="font-family:宋体"}
+*// 为bundle 1对应的客户端向DDR拆链失败*
 
-[[\<Sysname\> debugging pppoe-client error]{lang="EN-US"}]{#struct_0_52071_x1881_x1256601568}
+\# 打开PPPoE Client事件调试信息开关，在接口GigabitEthernet1/0/1配置一个PPPoE Client，对应bundle number为1，且会话处于session阶段，复位会话后，系统将输出下列调试信息。
 
-[\<Sysname\> reset pppoe-client dial-bundle-number 1]{lang="EN-US"}
+\<Sysname\> debugging pppoe-client event
 
-[\*Jun 23 15:50:40:899 2011 Sysname PPPOEC/7/ERROR: -MDC=1; Failed to disconnect the connection to DDR daemon, bundle 1.]{lang="EN-US"}
+\<Sysname\> reset pppoe-client dial-bundle-number 1
 
-[*[// ]{lang="EN-US"}*]{#struct_0_52071_x1881_1990884689}*[为]{style="font-family:宋体"}[bundle 1]{lang="EN-US"}[对应的客户端]{style="font-family:宋体"}[向]{style="font-family:宋体"}[DDR]{lang="EN-US"}[拆链失败]{style="font-family:宋体"}*
+\*Jun 23 15:50:40:899 2011 Sysname PPPOEC/7/EVENT: -MDC=1; The state of session transferred from SESSION to IDLE, bundle 1.
 
-[ ]{lang="EN-US"}
+*// 会话从SESSION状态迁移到IDLE状态*
 
-[[\# ]{lang="EN-US"}]{#struct_0_52071_x1881_1753408726}[打开]{style="font-family:宋体"}[PPPoE Client]{lang="EN-US"}[事件调试信息开关，在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[配置一个]{style="font-family:宋体"}[PPPoE Client]{lang="EN-US"}[，]{style="font-family:宋体"}[对应]{style="font-family:宋体"}[bundle number]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[，且会话处于]{style="font-family:宋体"}[session]{lang="EN-US"}[阶段，复位会话后，系统将输出下列调试信息。]{style="font-family:宋体"}
+\# 打开PPPoE Client的PPPoE协议报文调试信息开关。在接口GigabitEthernet1/0/1配置一个PPPoE Client，系统将输出下列调试信息。
 
-[[\<Sysname\> debugging pppoe-client event]{lang="EN-US"}]{#struct_0_52071_x1881_x992556698}
+\<Sysname\> debugging pppoe-client packet
 
-[\<Sysname\> reset pppoe-client dial-bundle-number 1]{lang="EN-US"}
+\<Sysname\> system-view
 
-[\*Jun 23 15:50:40:899 2011 Sysname PPPOEC/7/EVENT: -MDC=1; The state of session transferred from SESSION to IDLE, bundle 1.]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[*[// ]{lang="EN-US"}*]{#struct_0_52071_x1881_346623813}*[会话从]{style="font-family:宋体"}[SESSION]{lang="EN-US"}[状态迁移到]{style="font-family:宋体"}[IDLE]{lang="EN-US"}[状态]{style="font-family:宋体"}*
+Sysname-GigabitEthernet1/0/1 pppoe-client dial-bundle-number 1
 
-[ ]{lang="EN-US"}
+\*Aug 21 11:05:25:202 2011 Sysname PPPOEC/7/PACKET: -MDC=1; Sent a PADI packet on interface GigabitEthernet1/0/1, length 16.
 
-[[\# ]{lang="EN-US"}]{#struct_0_52071_x1881_1102554673}[打开]{style="font-family:宋体"}[PPPoE Client]{lang="EN-US"}[的]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[协议报文调试信息开关。在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[配置一个]{style="font-family:宋体"}[PPPoE Client]{lang="EN-US"}[，系统将输出下列调试信息。]{style="font-family:宋体"}
+11 09 00 00 00 0a 01 01 00 00 01 03 00 02 02 00
 
-[[\<Sysname\> debugging pppoe-client packet]{lang="EN-US"}]{#struct_0_52071_x1881_1440871854}
+*[// GigabitEthernet1/0/1*]*接口发送PADI报文，报文长度为16。版本为0x01，类型为0x01，SESSION_ID为0*
 
-[\<Sysname\> system-view]{lang="EN-US"}
+\# 打开PPPoE Client在session阶段的数据调试信息开关。接口GigabitEthernet1/0/1收到一个长度错误的PPPoE报文时，系统将输出下列调试信息。
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+\<Sysname\> debugging pppoe-client data
 
-[\[Sysname-GigabitEthernet1/0/1\] pppoe-client dial-bundle-number 1]{lang="EN-US"}
+\*Jun 23 15:50:40:899 2011 Sysname PPPOEC/7/DATA: -MDC=1; Dropped a PPPoE packet of incorrect length on interface GigabitEthernet1/0/1.
 
-[\*Aug 21 11:05:25:202 2011 Sysname PPPOEC/7/PACKET: -MDC=1; Sent]{lang="EN-US"}[ a PADI packet on interface ]{lang="IT"}[GigabitEthernet1/0/1]{lang="EN-US"}[, length 16.]{lang="IT"}
+*// 接口GigabitEthernet1/0/1上丢弃一个长度错误的PPPoE报文*
 
-[11 09 00 00 00 0a 01 01 00 00 01 03 00 02 02 00]{lang="SV"}
-
-[*[// GigabitEthernet1/0/1]{lang="SV"}*]{#struct_0_52071_x1881_x193480852}*[接口发送]{style="font-family:宋体"}[PADI]{lang="SV"}[报文]{style="font-family:宋体"}[，]{style="font-family:宋体"}[报文长度为]{style="font-family:宋体"}[16]{lang="SV"}[。版本为]{style="font-family:宋体"}[0x01]{lang="SV"}[，]{style="font-family:宋体"}[类型为]{style="font-family:宋体"}[0x01]{lang="SV"}[，]{style="font-family:宋体"}[SESSION_ID]{lang="IT"}[为]{style="font-family:宋体"}[0]{lang="SV"}*
-
-[ ]{lang="SV"}
-
-[[\# ]{lang="SV"}]{#struct_0_52071_x1881_x1687017944}[打开]{style="font-family:宋体"}[PPPoE Client]{lang="SV"}[在]{style="font-family:宋体"}[session]{lang="SV"}[阶段的数据调试信息开关。接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="SV"}[收到一个长度错误的]{style="font-family:宋体"}[PPPoE]{lang="SV"}[报文时]{style="font-family:宋体"}[，]{style="font-family:宋体"}[系统将输出下列调试信息。]{style="font-family:宋体"}
-
-[[\<Sysname\> debugging pppoe-client data]{lang="EN-US"}]{#struct_0_52071_x1881_1752949975}
-
-[\*Jun 23 15:50:40:899 2011 Sysname PPPOEC/7/DATA: -MDC=1; Dropped a PPPoE packet of incorrect length on interface GigabitEthernet1/0/1.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_52071_x1881_x1748020181}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="SV"}[上丢弃一个长度错误的]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[报文]{style="font-family:宋体"}*
-
-[ ]{lang="EN-US"}

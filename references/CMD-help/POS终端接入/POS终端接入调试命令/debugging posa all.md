@@ -1,1227 +1,1190 @@
-::: {#1006158504 .myid}
-[]{#_Toc404785861}[]{#struct_0_88685_x1869_x1506331587}[]{#_Toc212180723}
 
 **POS终端接入 \-- POS终端接入调试命令 \-- debugging posa all**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_88685_x1869_x538926223}
+【命令】
 
-[**[debugging posa all ]{lang="EN-US"}**[\[ **terminal** *terminal-id* \| **app** *app-id* \]]{lang="EN-US"}]{#struct_0_88685_x1869_x158271037}
+**[debugging posa all **[[ **terminal** *terminal-id* \| **app** *app-id* ]]]
 
-[**[undo debugging posa all ]{lang="EN-US"}**[\[ **terminal** *terminal-id* \| **app** *app-id* \]]{lang="EN-US"}]{#struct_0_88685_x1869_x980062147}
+**[undo debugging posa all **[[ **terminal** *terminal-id* \| **app** *app-id* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_88685_x1869_x828548404}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_88685_x1869_653829649}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_88685_x1869_x567734748}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_88685_x1869_x1461914666}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_88685_x1869_652429314}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_88685_x1869_1125282797}
+【参数】
 
-[**[terminal]{lang="EN-US"}***[ terminal-id]{lang="EN-US"}*]{#struct_0_88685_x1869_236068175}[：]{style="font-family:宋体"}[POS]{lang="EN-US"}[终端模板]{style="font-family:宋体"}[ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[terminal*** terminal-id*]：POS终端模板ID，取值范围为1～255。
 
-[**[app]{lang="EN-US"}***[ app-id]{lang="EN-US"}*]{#struct_0_88685_x1869_x2139833299}[：应用模板]{style="font-family:宋体"}[ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1024]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[app*** app-id*]：应用模板ID，取值范围为1～1024。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_88685_x1869_1401874077}
+【描述】
 
-[**[debugging posa all]{lang="EN-US"}**]{#struct_0_88685_x1869_x2013792941}[命令用来打开]{style="font-family:宋体"}[POS]{lang="EN-US"}[接入所有调试开关。]{style="font-family:宋体"}**[undo debugging posa all]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[POS]{lang="EN-US"}[接入所有调试开关。]{style="font-family:宋体"}
+**[debugging posa all**]命令用来打开POS接入所有调试开关。**undo debugging posa all**命令用来关闭POS接入所有调试开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[POS]{lang="EN-US"}]{#struct_0_88685_x1869_x979865539}[接入所有调试开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，POS接入所有调试开关处于关闭状态。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_88685_x1869_x1127718699}
+【举例】
 
-[]{#_Toc212180724}[[\# ]{lang="EN-US"}]{#struct_0_88685_x1869_1626142289}[打开]{style="font-family:宋体"}[POS]{lang="EN-US"}[接入所有调试开关，系统视图下，创建]{style="font-family:宋体"}[TCP]{lang="EN-US"}[接入方式的终端模板]{style="font-family:宋体"}[1]{lang="EN-US"}[，端口为]{style="font-family:宋体"}[3000]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 打开POS接入所有调试开关，系统视图下，创建TCP接入方式的终端模板1，端口为3000。
 
-[[\<System\> debugging posa all]{lang="EN-US"}]{#struct_0_88685_x1869_1100553454}
+\<System\> debugging posa all
 
-[\[System\]\*Aug  7 18:20:48:047 2012 System POSA/7/EVENT: -MDC=1; Recv LIPC message type:]{lang="EN-US"}
+System\*Aug  7 18:20:48:047 2012 System POSA/7/EVENT: -MDC=1; Recv LIPC message type:
 
-[SET, code:ADDTERM, sequence:0, length:13.]{lang="EN-US"}
+SET, code:ADDTERM, sequence:0, length:13.
 
-[\*Aug  7 18:20:48:047 2012 System POSA/7/EVENT: -MDC=1; Terminal 1:Add template.]{lang="EN-US"}
+\*Aug  7 18:20:48:047 2012 System POSA/7/EVENT: -MDC=1; Terminal 1:Add template.
 
-[\*Aug  7 18:20:48:048 2012 System POSA/7/EVENT: -MDC=1; Terminal 1:Enable template.]{lang="EN-US"}
+\*Aug  7 18:20:48:048 2012 System POSA/7/EVENT: -MDC=1; Terminal 1:Enable template.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_88685_x1869_30912169}*[添加终端模板成功]{style="font-family:宋体"}*
-:::
-
-::: {#-367986712 .myid}
-[]{#_Toc404785862}[]{#struct_0_88685_x1869_989147618}
+*// 添加终端模板成功*
 
 **POS终端接入 \-- POS终端接入调试命令 \-- debugging posa event**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_88685_x1869_x886284545}
+【命令】
 
-[**[debugging posa event]{lang="EN-US"}**[ \[ **terminal** *terminal-id* \| **app** *app-id* \]]{lang="EN-US"}]{#struct_0_88685_x1869_164042416}
+**[debugging posa event**[ [ **terminal** *terminal-id* \| **app** *app-id* ]]]
 
-[**[undo debugging posa event]{lang="EN-US"}**[ \[ **terminal** *terminal-id* \| **app** *app-id* \]]{lang="EN-US"}]{#struct_0_88685_x1869_x1524076317}
+**[undo debugging posa event**[ [ **terminal** *terminal-id* \| **app** *app-id* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_88685_x1869_x979931075}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_88685_x1869_x339702204}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_88685_x1869_x440480788}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_88685_x1869_x228060842}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_88685_x1869_1955790960}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_88685_x1869_x2049563466}
+【参数】
 
-[**[terminal]{lang="EN-US"}***[ terminal-id]{lang="EN-US"}*]{#struct_0_88685_x1869_826733384}[：终端模板]{style="font-family:宋体"}[ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[terminal*** terminal-id*]：终端模板ID，取值范围为1～255。
 
-[**[app]{lang="EN-US"}***[ app-id]{lang="EN-US"}*]{#struct_0_88685_x1869_1181600651}[：应用模板]{style="font-family:宋体"}[ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1024]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[app*** app-id*]：应用模板ID，取值范围为1～1024。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_88685_x1869_x2094237909}
+【描述】
 
-[]{#_Ref203361563}[**[debugging posa event]{lang="EN-US"}**]{#struct_0_88685_x1869_x979734467}[命令用来打开]{style="font-family:宋体"}[POS]{lang="EN-US"}[接入事件调试开关。]{style="font-family:宋体"}**[undo debugging posa event]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[POS]{lang="EN-US"}[接入事件调试开关。]{style="font-family:宋体"}
+**[debugging posa event**]命令用来打开POS接入事件调试开关。**undo debugging posa event**命令用来关闭POS接入事件调试开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[POS]{lang="EN-US"}]{#struct_0_88685_x1869_x344992500}[接入事件调试开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，POS接入事件调试开关处于关闭状态。
 
-[]{#struct_0_88685_x1869_991897725}[[表1-1 ]{lang="EN-US"}[debugging posa event]{lang="EN-US"}]{#_Ref206212114}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging posa event命令输出信息描述表
 
-[]{#table_struct_0_x1873363010}[[字段]{style="font-family:黑体"}]{#struct_0_88685_x1869_493852854}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_88685_x1869_x194009833}
+描述
 
-[[Added map dest:*a*, src:*b*, app:*n*.]{lang="EN-US"}]{#struct_0_88685_x1869_x976024625}
+Added map dest:*a*, src:*b*, app:*n*.
 
-[[添加]{style="font-family:宋体"}[map]{lang="EN-US"}]{#struct_0_88685_x1869_182309897}[节点，目的地址为]{style="font-family:宋体"}[a]{lang="EN-US"}[，源地址为]{style="font-family:宋体"}[b]{lang="EN-US"}
+添加map节点，目的地址为a，源地址为b
 
-[[Deleted map dest:*a*, src:*b*.]{lang="EN-US"}]{#struct_0_88685_x1869_1525274813}
+Deleted map dest:*a*, src:*b*.
 
-[[删除]{style="font-family:宋体"}[map]{lang="EN-US"}]{#struct_0_88685_x1869_x979800003}[节点，目的地址为]{style="font-family:宋体"}[a]{lang="EN-US"}[，源地址为]{style="font-family:宋体"}[b]{lang="EN-US"}
+删除map节点，目的地址为a，源地址为b
 
-[[Changed app of map(dest:*a*,src:*b*) from *m* to *n*.]{lang="EN-US"}]{#struct_0_88685_x1869_x1912405245}
+Changed app of map(dest:*a*,src:*b*) from *m* to *n*.
 
-[[修改]{style="font-family:宋体"}[map]{lang="EN-US"}]{#struct_0_88685_x1869_x763902111}[表，目的地址为]{style="font-family:宋体"}[a]{lang="EN-US"}[，源地址为]{style="font-family:宋体"}[b]{lang="EN-US"}
+修改map表，目的地址为a，源地址为b
 
-[[Terminal *n*: Terminal instance m found matching app *n*.]{lang="EN-US"}]{#struct_0_88685_x1869_2140539613}
+Terminal *n*: Terminal instance m found matching app *n*.
 
-[[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_615993578}[：终端实例匹配]{style="font-family:宋体"}[map]{lang="EN-US"}[表]{style="font-family:宋体"}
+终端*n*：终端实例匹配map表
 
-[[App *n*: Sent AM-CID packet.]{lang="EN-US"}]{#struct_0_88685_x1869_x1311981276}
+App *n*: Sent AM-CID packet.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_1525181177}[：发送]{style="font-family:宋体"}[AM-CID]{lang="EN-US"}[报文]{style="font-family:宋体"}
+应用*n*：发送AM-CID报文
 
-[[App *n*: Received response for AM-CID packet.]{lang="EN-US"}]{#struct_0_88685_x1869_x980258754}
+App *n*: Received response for AM-CID packet.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x1169907861}[：应用实例收到]{style="font-family:宋体"}[AM-CID]{lang="EN-US"}[的回应报文]{style="font-family:宋体"}
+应用*n*：应用实例收到AM-CID的回应报文
 
-[[App *n /* Terminal *n*: Enabled template.]{lang="EN-US"}]{#struct_0_88685_x1869_x519985253}
+App *n /* Terminal *n*: Enabled template.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x1890897715}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：使能模板]{style="font-family:宋体"}
+应用*n / *终端*n*：使能模板
 
-[[App *n /* Terminal *n*: Disabled template.]{lang="EN-US"}]{#struct_0_88685_x1869_314466278}
+App *n /* Terminal *n*: Disabled template.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_766399064}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：去使能模板]{style="font-family:宋体"}
+应用*n / *终端*n*：去使能模板
 
-[[App *n / * Terminal *n*: Add template.]{lang="EN-US"}]{#struct_0_88685_x1869_x980324290}
+App *n / * Terminal *n*: Add template.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x52947202}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：添加模板]{style="font-family:宋体"}
+应用*n / *终端*n*：添加模板
 
-[[App *n /* Terminal *n*: Deleted template.]{lang="EN-US"}]{#struct_0_88685_x1869_2032855695}
+App *n /* Terminal *n*: Deleted template.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x408239980}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：删除模板]{style="font-family:宋体"}
+应用*n / *终端*n*：删除模板
 
-[[App *n*: Bound app to interface.]{lang="EN-US"}]{#struct_0_88685_x1869_x1072690645}
+App *n*: Bound app to interface.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x980127682}[：应用模板与接口绑定]{style="font-family:宋体"}
+应用*n*：应用模板与接口绑定
 
-[[App n:Unbound app from interface.]{lang="EN-US"}]{#struct_0_88685_x1869_748593712}
+App n:Unbound app from interface.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_295615656}[：取消应用模板与接口的绑定]{style="font-family:宋体"}
+应用*n*：取消应用模板与接口的绑定
 
-[[App *n /* Terminal *n*: Failed to add template, The template ID has existed.]{lang="EN-US"}]{#struct_0_88685_x1869_890133639}
+App *n /* Terminal *n*: Failed to add template, The template ID has existed.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x263969007}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：由于模板已存在，导致添加模板失败]{style="font-family:宋体"}
+应用*n / *终端*n*：由于模板已存在，导致添加模板失败
 
-[[App *n /* Terminal *n*: Failed to bind interface,The interface has been bounded.]{lang="EN-US"}]{#struct_0_88685_x1869_x980193218}
+App *n /* Terminal *n*: Failed to bind interface,The interface has been bounded.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x797978675}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：由于接口已被绑定，导致绑定接口失败]{style="font-family:宋体"}
+应用*n / *终端*n*：由于接口已被绑定，导致绑定接口失败
 
-[[App *n*: Changed source IP from *p* to *q*.]{lang="EN-US"}]{#struct_0_88685_x1869_x1553694290}
+App *n*: Changed source IP from *p* to *q*.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_1467876371}[：修改源]{style="font-family:宋体"}[IP]{lang="EN-US"}
+应用*n*：修改源IP
 
-[[App *n*: Changed source port from *m* to *n*.]{lang="EN-US"}]{#struct_0_88685_x1869_679218795}
+App *n*: Changed source port from *m* to *n*.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x979996610}[：修改源端口]{style="font-family:宋体"}
+应用*n*：修改源端口
 
-[[App *n*: Changed app IP from *p* to *q*]{lang="EN-US"}]{#struct_0_88685_x1869_1213054599}
+App *n*: Changed app IP from *p* to *q*
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x1885874296}[：修改前置机]{style="font-family:宋体"}[IP]{lang="EN-US"}
+应用*n*：修改前置机IP
 
-[[App *n*: Changed app port from *m* to *n*.]{lang="EN-US"}]{#struct_0_88685_x1869_595015309}
+App *n*: Changed app port from *m* to *n*.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x980062146}[：修改前置机端口]{style="font-family:宋体"}
+应用*n*：修改前置机端口
 
-[[App *n*: Changed hello interval from *m* to *n*.]{lang="EN-US"}]{#struct_0_88685_x1869_x828613940}
+App *n*: Changed hello interval from *m* to *n*.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_245194607}[：修改]{style="font-family:宋体"}[Hello]{lang="EN-US"}[间隔时间]{style="font-family:宋体"}
+应用*n*：修改Hello间隔时间
 
-[[App *n*: Changed hello switch from *m* to *n*.]{lang="EN-US"}]{#struct_0_88685_x1869_1504467870}
+App *n*: Changed hello switch from *m* to *n*.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x979865538}[：修改握手功能使能开关]{style="font-family:宋体"}
+应用*n*：修改握手功能使能开关
 
-[[App *n*: Changed sending caller-number switch from *m* to *n*.\"]{lang="EN-US"}]{#struct_0_88685_x1869_x1127784235}
+App *n*: Changed sending caller-number switch from *m* to *n*.\"
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x254441126}[：修改主叫号码使能开关]{style="font-family:宋体"}
+应用*n*：修改主叫号码使能开关
 
-[[App *n*:Changed mode to temporary.]{lang="EN-US"}]{#struct_0_88685_x1869_187661808}
+App *n*:Changed mode to temporary.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_859410421}[：修改连接方式为短连接]{style="font-family:宋体"}
+应用*n*：修改连接方式为短连接
 
-[[App *n*: Changed mode to permanent.]{lang="EN-US"}]{#struct_0_88685_x1869_x979931074}
+App *n*: Changed mode to permanent.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x339636668}[：修改连接方式为长连接]{style="font-family:宋体"}
+应用*n*：修改连接方式为长连接
 
-[[App *n*:Changed TCP keepalive interval and number from (*m*, *n*) to (*m*, *n*).]{lang="EN-US"}]{#struct_0_88685_x1869_753793441}
+App *n*:Changed TCP keepalive interval and number from (*m*, *n*) to (*m*, *n*).
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x1522980336}[：修改保活报文发送的时间间隔和次数]{style="font-family:宋体"}
+应用*n*：修改保活报文发送的时间间隔和次数
 
-[[App *n*: Changed app link-time from *p* to *q*.]{lang="EN-US"}]{#struct_0_88685_x1869_x979734466}
+App *n*: Changed app link-time from *p* to *q*.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x344926964}[：修改连接请求超时时间]{style="font-family:宋体"}
+应用*n*：修改连接请求超时时间
 
-[[App *n*:Changed quiet time from *p* to *q*.]{lang="EN-US"}]{#struct_0_88685_x1869_684217867}
+App *n*:Changed quiet time from *p* to *q*.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x979800002}[：修改静默时间]{style="font-family:宋体"}
+应用*n*：修改静默时间
 
-[[App *n /* Terminal *n*: Changed description from *p* to *q*.]{lang="EN-US"}]{#struct_0_88685_x1869_x1912470781}
+App *n /* Terminal *n*: Changed description from *p* to *q*.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_1034195405}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：修改描述信息]{style="font-family:宋体"}
+应用*n / *终端*n*：修改描述信息
 
-[[App *n*:Changed backup app form *p* to *q*.]{lang="EN-US"}]{#struct_0_88685_x1869_997379573}
+App *n*:Changed backup app form *p* to *q*.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x980258757}[：修改备份]{style="font-family:宋体"}[POS]{lang="EN-US"}[应用]{style="font-family:宋体"}
+应用*n*：修改备份POS应用
 
-[[App *n*: Changed TPDU-change-strategy source.]{lang="EN-US"}]{#struct_0_88685_x1869_x1169842325}
+App *n*: Changed TPDU-change-strategy source.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_1916246506}[：修改]{style="font-family:宋体"}[TPDU]{lang="EN-US"}[源地址]{style="font-family:宋体"}
+应用*n*：修改TPDU源地址
 
-[[App *n*: Changed TPDU-change-strategy destination.]{lang="EN-US"}]{#struct_0_88685_x1869_1811738269}
+App *n*: Changed TPDU-change-strategy destination.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x980324293}[：修改]{style="font-family:宋体"}[TPDU]{lang="EN-US"}[目的地址]{style="font-family:宋体"}
+应用*n*：修改TPDU目的地址
 
-[[App *n /* Terminal *n*: Created instance *m*.]{lang="EN-US"}]{#struct_0_88685_x1869_x52750594}
+App *n /* Terminal *n*: Created instance *m*.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x144858261}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：创建实例]{style="font-family:宋体"}*[m]{lang="EN-US"}*
+应用*n / *终端*n*：创建实例*m*
 
-[[App *n /* Terminal *n*: Deleted instance *m*.]{lang="EN-US"}]{#struct_0_88685_x1869_x980127685}
+App *n /* Terminal *n*: Deleted instance *m*.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_748266032}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：删除实例]{style="font-family:宋体"}*[m]{lang="EN-US"}*
+应用*n / *终端*n*：删除实例*m*
 
-[[App *n /* Terminal *n*: Reset instance *m*]{lang="EN-US"}]{#struct_0_88685_x1869_418274504}
+App *n /* Terminal *n*: Reset instance *m*
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x980193221}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：重置实例]{style="font-family:宋体"}*[m]{lang="EN-US"}*
+应用*n / *终端*n*：重置实例*m*
 
-[[App *n*: Reset the socket keepalive for instance *m*.]{lang="EN-US"}]{#struct_0_88685_x1869_x797519926}
+App *n*: Reset the socket keepalive for instance *m*.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_361434260}[：重置实例]{style="font-family:宋体"}*[m]{lang="EN-US"}*[保活]{style="font-family:宋体"}[socket]{lang="EN-US"}
+应用*n*：重置实例*m*保活socket
 
-[[Terminal *n*: Accepted a new connecting request.]{lang="EN-US"}]{#struct_0_88685_x1869_90903307}
+Terminal *n*: Accepted a new connecting request.
 
-[[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x979996613}[：获取新的连接请求]{style="font-family:宋体"}
+终端*n*：获取新的连接请求
 
-[[App *n*: Connect to app.]{lang="EN-US"}]{#struct_0_88685_x1869_1213120135}
+App *n*: Connect to app.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x666565371}[：连接到]{style="font-family:宋体"}[app]{lang="EN-US"}
+应用*n*：连接到app
 
-[[App *n /* Terminal *n*: Instance *m* received epollout event.]{lang="EN-US"}]{#struct_0_88685_x1869_x980062149}
+App *n /* Terminal *n*: Instance *m* received epollout event.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x828417332}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：实例]{style="font-family:宋体"}*[m]{lang="EN-US"}*[收到]{style="font-family:宋体"}[epollout]{lang="EN-US"}[事件]{style="font-family:宋体"}
+应用*n / *终端*n*：实例*m*收到epollout事件
 
-[[App *n /* Terminal *n*: Instance *m* link error.]{lang="EN-US"}]{#struct_0_88685_x1869_303008958}
+App *n /* Terminal *n*: Instance *m* link error.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x979865541}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：实例]{style="font-family:宋体"}*[m]{lang="EN-US"}*[收到]{style="font-family:宋体"}[epollup]{lang="EN-US"}[或]{style="font-family:宋体"}[epollerr]{lang="EN-US"}[事件]{style="font-family:宋体"}
+应用*n / *终端*n*：实例*m*收到epollup或epollerr事件
 
-[[App *n /* Terminal *n*: Instance *m* received packet.]{lang="EN-US"}]{#struct_0_88685_x1869_x1128242992}
+App *n /* Terminal *n*: Instance *m* received packet.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x2044469649}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：实例]{style="font-family:宋体"}*[m]{lang="EN-US"}*[报文]{style="font-family:宋体"}
+应用*n / *终端*n*：实例*m*报文
 
-[[App *n /* Terminal *n*: Instance *m* sent packet.]{lang="EN-US"}]{#struct_0_88685_x1869_x979931077}
+App *n /* Terminal *n*: Instance *m* sent packet.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x339833276}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：实例]{style="font-family:宋体"}*[m]{lang="EN-US"}*[发送报文]{style="font-family:宋体"}
+应用*n / *终端*n*：实例*m*发送报文
 
-[[App *n /* Terminal *n*: Instance link peer closed.]{lang="EN-US"}]{#struct_0_88685_x1869_1114527663}
+App *n /* Terminal *n*: Instance link peer closed.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x979734469}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：连接已关闭]{style="font-family:宋体"}
+应用*n / *终端*n*：连接已关闭
 
-[[App *n /* Terminal *n*: Received a completed packet, length=*m*.]{lang="EN-US"}]{#struct_0_88685_x1869_x344599284}
+App *n /* Terminal *n*: Received a completed packet, length=*m*.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_1753885354}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：接收到长度为]{style="font-family:宋体"}*[m]{lang="EN-US"}*[的完整报文]{style="font-family:宋体"}
+应用*n / *终端*n*：接收到长度为*m*的完整报文
 
-[[Failed to get terminal instance by handle(*n*).]{lang="EN-US"}]{#struct_0_88685_x1869_x979800005}
+Failed to get terminal instance by handle(*n*).
 
-[[通过]{style="font-family:宋体"}[handle(*n*)]{lang="EN-US"}]{#struct_0_88685_x1869_x1912012029}[获取终端实例失败]{style="font-family:宋体"}
+通过handle(*n*)获取终端实例失败
 
-[[App *n /* Terminal *n*: Interface *ifname*: event=*type*.]{lang="EN-US"}]{#struct_0_88685_x1869_x980258756}
+App *n /* Terminal *n*: Interface *ifname*: event=*type*.
 
-[[应用]{style="font-size:9.0pt;font-family:宋体"}]{#struct_0_88685_x1869_x1169776789}*[n]{lang="EN-US" style="font-size:9.0pt"}*[ / ]{lang="EN-US" style="font-size:9.0pt"}[终端]{style="font-size:9.0pt;font-family:宋体"}*[n]{lang="EN-US" style="font-size:9.0pt"}*[：接口名：事件。]{style="font-size:9.0pt;
-  font-family:宋体"}[(]{lang="EN-US" style="font-size:9.0pt"}[其中]{style="font-size:9.0pt;font-family:宋体"}*[type]{lang="EN-US" style="font-size:9.0pt"}*[包括：]{style="font-size:9.0pt;
-  font-family:宋体"}[insert]{lang="EN-US" style="font-size:9.0pt"}[、]{style="font-size:9.0pt;font-family:宋体"}[remove]{lang="EN-US" style="font-size:9.0pt"}[、]{style="font-size:9.0pt;font-family:
-  宋体"}[up]{lang="EN-US" style="font-size:9.0pt"}[、]{style="font-size:9.0pt;font-family:宋体"}[down]{lang="EN-US" style="font-size:9.0pt"}[、]{style="font-size:9.0pt;font-family:
-  宋体"}[delete]{lang="EN-US" style="font-size:9.0pt"}[、]{style="font-size:9.0pt;font-family:宋体"}[create]{lang="EN-US" style="font-size:9.0pt"}[、]{style="font-size:9.0pt;font-family:
-  宋体"}[deactive)]{lang="EN-US" style="font-size:9.0pt"}
+应用*n* / 终端*n*：接口名：事件。(其中*type*包括：insert、remove、up、down、delete、create、deactive)
 
-[[App *n /* Terminal *n*:Interface *ifname* TTY event=*type*.]{lang="EN-US"}]{#struct_0_88685_x1869_x1152705881}
+App *n /* Terminal *n*:Interface *ifname* TTY event=*type*.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*[ / ]{lang="EN-US"}]{#struct_0_88685_x1869_x980324292}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：收到接口]{style="font-family:宋体"}[(*ifname*)]{lang="EN-US"}[的]{style="font-family:宋体"}[tty]{lang="EN-US"}[事件。]{style="font-family:宋体"}[(]{lang="EN-US"}[其中]{style="font-family:宋体"}*[type]{lang="EN-US"}*[包括：]{style="font-family:宋体"}[ready]{lang="EN-US"}[、]{style="font-family:宋体"}[release)]{lang="EN-US"}
+应用*n* / 终端*n*：收到接口(*ifname*)的tty事件。(其中*type*包括：ready、release)
 
-[[Connected to TTYM.]{lang="EN-US"}]{#struct_0_88685_x1869_x52816130}
+Connected to TTYM.
 
-[[连接到]{style="font-family:宋体"}[TTYM]{lang="EN-US"}]{#struct_0_88685_x1869_478442863}
+连接到TTYM
 
-[[App *n /* Terminal *n*: Registered interface *ifname* to with TTYM.]{lang="EN-US"}]{#struct_0_88685_x1869_x980127684}
+App *n /* Terminal *n*: Registered interface *ifname* to with TTYM.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*[ / ]{lang="EN-US"}]{#struct_0_88685_x1869_748200496}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：向]{style="font-family:宋体"}[ttym]{lang="EN-US"}[注册接口]{style="font-family:宋体"}[(*ifname*)]{lang="EN-US"}
+应用*n* / 终端*n*：向ttym注册接口(*ifname*)
 
-[[App *n /* Terminal *n*: Unregistered interface *ifname* with TTYM.]{lang="EN-US"}]{#struct_0_88685_x1869_x980193220}
+App *n /* Terminal *n*: Unregistered interface *ifname* with TTYM.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*[ / ]{lang="EN-US"}]{#struct_0_88685_x1869_x797454390}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：向]{style="font-family:宋体"}[ttym]{lang="EN-US"}[撤销注册接口]{style="font-family:宋体"}[(*ifname*)]{lang="EN-US"}
+应用*n* / 终端*n*：向ttym撤销注册接口(*ifname*)
 
-[[App *n /* Terminal *n*: Got control TTY device for interface *ifname*.]{lang="EN-US"}]{#struct_0_88685_x1869_x441190247}
+App *n /* Terminal *n*: Got control TTY device for interface *ifname*.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*[ / ]{lang="EN-US"}]{#struct_0_88685_x1869_x979996612}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：接口]{style="font-family:宋体"}[(*ifname)*]{lang="EN-US"}[获取]{style="font-family:宋体"}[tty]{lang="EN-US"}[设备控制权]{style="font-family:宋体"}
+应用*n* / 终端*n*：接口(*ifname)*获取tty设备控制权
 
-[[App *n /* Terminal *n*: Released control over TTY device for interface *ifname*.]{lang="EN-US"}]{#struct_0_88685_x1869_1213185671}
+App *n /* Terminal *n*: Released control over TTY device for interface *ifname*.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*[ / ]{lang="EN-US"}]{#struct_0_88685_x1869_x980062148}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：接口]{style="font-family:宋体"}[(*ifname)*]{lang="EN-US"}[放弃]{style="font-family:宋体"}[tty]{lang="EN-US"}[设备控制权]{style="font-family:宋体"}
+应用*n* / 终端*n*：接口(*ifname)*放弃tty设备控制权
 
-[[App *n /* Terminal *n*: Opened device *s*.]{lang="EN-US"}]{#struct_0_88685_x1869_x828482868}
+App *n /* Terminal *n*: Opened device *s*.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*[ / ]{lang="EN-US"}]{#struct_0_88685_x1869_x516953452}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：打开设备]{style="font-family:宋体"}[(*s*)]{lang="EN-US"}
+应用*n* / 终端*n*：打开设备(*s*)
 
-[[Batch backup for configurations started.]{lang="EN-US"}]{#struct_0_88685_x1869_x979865540}
+Batch backup for configurations started.
 
-[[批备数据开始]{style="font-family:宋体"}]{#struct_0_88685_x1869_x1128308528}
+批备数据开始
 
-[[Batch backup for configurations ended.]{lang="EN-US"}]{#struct_0_88685_x1869_x979931076}
+Batch backup for configurations ended.
 
-[[批备数据结束]{style="font-family:宋体"}]{#struct_0_88685_x1869_x339767740}
+批备数据结束
 
-[[Batched up app *n* configuration.]{lang="EN-US"}]{#struct_0_88685_x1869_x979734468}
+Batched up app *n* configuration.
 
-[[批备]{style="font-family:宋体"}[app *n*]{lang="EN-US"}]{#struct_0_88685_x1869_x344533748}[配置]{style="font-family:宋体"}
+批备app *n*配置
 
-[[Batched up terminal *n* configuration.]{lang="EN-US"}]{#struct_0_88685_x1869_x945120104}
+Batched up terminal *n* configuration.
 
-[[批备]{style="font-family:宋体"}[terminal *n*]{lang="EN-US"}]{#struct_0_88685_x1869_x979800004}[配置]{style="font-family:宋体"}
+批备terminal *n*配置
 
-[[Batched up terminal *n* description.]{lang="EN-US"}]{#struct_0_88685_x1869_x1912077565}
+Batched up terminal *n* description.
 
-[[批备]{style="font-family:宋体"}[terminal *n*]{lang="EN-US"}]{#struct_0_88685_x1869_585825188}[描述信息]{style="font-family:宋体"}
+批备terminal *n*描述信息
 
-[[Batched up global FCM configuration.]{lang="EN-US"}]{#struct_0_88685_x1869_887857084}
+Batched up global FCM configuration.
 
-[[批备]{style="font-family:宋体"}[FCM]{lang="EN-US"}]{#struct_0_88685_x1869_585759652}[全局配置]{style="font-family:宋体"}
+批备FCM全局配置
 
-[[Batched up FCM negotiation and threshold configuration for interface *ifname*.]{lang="EN-US"}]{#struct_0_88685_x1869_2513102}
+Batched up FCM negotiation and threshold configuration for interface *ifname*.
 
-[[为接口]{style="font-family:宋体"}[(*ifname*)]{lang="EN-US"}]{#struct_0_88685_x1869_x1006236720}[批备]{style="font-family:宋体"}[FCM]{lang="EN-US"}[协商和临界值配置]{style="font-family:宋体"}
+为接口(*ifname*)批备FCM协商和临界值配置
 
-[[Batched up map (DST=*a*, SRC=*b*) configuration.]{lang="EN-US"}]{#struct_0_88685_x1869_585956260}
+Batched up map (DST=*a*, SRC=*b*) configuration.
 
-[[批备]{style="font-family:宋体"}[map]{lang="EN-US"}]{#struct_0_88685_x1869_1319775036}[配置，目的地址为]{style="font-family:宋体"}*[a]{lang="EN-US"}*[，源地址为]{style="font-family:宋体"}*[b]{lang="EN-US"}*
+批备map配置，目的地址为*a*，源地址为*b*
 
-[[Batched up trap configuration.]{lang="EN-US"}]{#struct_0_88685_x1869_585890724}
+Batched up trap configuration.
 
-[[批备]{style="font-family:宋体"}[trap]{lang="EN-US"}]{#struct_0_88685_x1869_x210771259}[配置]{style="font-family:宋体"}
+批备trap配置
 
-[[Batched up caller-IP *n* configuration.]{lang="EN-US"}]{#struct_0_88685_x1869_586087332}
+Batched up caller-IP *n* configuration.
 
-[[批备]{style="font-family:宋体"}[caller-IP *n*]{lang="EN-US"}]{#struct_0_88685_x1869_648388403}[配置]{style="font-family:宋体"}
+批备caller-IP *n*配置
 
-[[Batched up caller-id *s* configuration.]{lang="EN-US"}]{#struct_0_88685_x1869_586021796}
+Batched up caller-id *s* configuration.
 
-[[批备]{style="font-family:宋体"}[caller-id *s*]{lang="EN-US"}]{#struct_0_88685_x1869_1839952705}[配置]{style="font-family:宋体"}
+批备caller-id *s*配置
 
-[[Batched up posa server configuration.]{lang="EN-US"}]{#struct_0_88685_x1869_586218404}
+Batched up posa server configuration.
 
-[[批备]{style="font-family:宋体"}[posa]{lang="EN-US"}]{#struct_0_88685_x1869_1716851985}[服务配置]{style="font-family:宋体"}
+批备posa服务配置
 
-[[Receiving batch backup configurations finished.]{lang="EN-US"}]{#struct_0_88685_x1869_586152868}
+Receiving batch backup configurations finished.
 
-[[批备完成]{style="font-family:宋体"}]{#struct_0_88685_x1869_x852713907}
+批备完成
 
-[[Sent batch backup request.]{lang="EN-US"}]{#struct_0_88685_x1869_586349476}
+Sent batch backup request.
 
-[[发送批备请求]{style="font-family:宋体"}]{#struct_0_88685_x1869_546706878}
+发送批备请求
 
-[[Received LIPC message type=*a*, code=*b*, sequence=*c*, length=*d*.]{lang="EN-US"}]{#struct_0_88685_x1869_363699704}
+Received LIPC message type=*a*, code=*b*, sequence=*c*, length=*d*.
 
-[[收到]{style="font-family:宋体"}[LIPC]{lang="EN-US"}]{#struct_0_88685_x1869_586283940}[消息，类型：]{style="font-family:宋体"}*[a]{lang="EN-US"}*[，操作：]{style="font-family:宋体"}*[b]{lang="EN-US"}*[，序列：]{style="font-family:宋体"}*[c]{lang="EN-US"}*[，长度：]{style="font-family:宋体"}*[d]{lang="EN-US"}*
+收到LIPC消息，类型：*a*，操作：*b*，序列：*c*，长度：*d*
 
-[[LIPC connected.]{lang="EN-US"}]{#struct_0_88685_x1869_979767587}
+LIPC connected.
 
-[[LIPC]{lang="EN-US"}]{#struct_0_88685_x1869_585825189}[已连接]{style="font-family:宋体"}
+LIPC已连接
 
-[[LIPC disconnected.]{lang="EN-US"}]{#struct_0_88685_x1869_887857083}
+LIPC disconnected.
 
-[[LIPC]{lang="EN-US"}]{#struct_0_88685_x1869_585759653}[断开]{style="font-family:宋体"}
+LIPC断开
 
-[[Terminal *n*: Caller number was *s*.]{lang="EN-US"}]{#struct_0_88685_x1869_2513103}
+Terminal *n*: Caller number was *s*.
 
-[[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_585956261}[：主叫号码是]{style="font-family:宋体"}*[s]{lang="EN-US"}*
+终端*n*：主叫号码是*s*
 
-[[App *n /* Terminal *n*: Waited to send packet.]{lang="EN-US"}]{#struct_0_88685_x1869_1319775037}
+App *n /* Terminal *n*: Waited to send packet.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*[ / ]{lang="EN-US"}]{#struct_0_88685_x1869_585890725}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：由于当前发送缓存区已存在数据，所以延迟发送当前报文]{style="font-family:宋体"}
+应用*n* / 终端*n*：由于当前发送缓存区已存在数据，所以延迟发送当前报文
 
-[[Kernel received FCM event: *n*, for interface ]{lang="EN-US"}*[ifname]{lang="EN-US"}*]{#struct_0_88685_x1869_586087333}
+Kernel received FCM event: *n*, for interface *ifname*
 
-[[内核收到]{style="font-family:宋体"}]{#struct_0_88685_x1869_648388402}[fcm]{lang="EN-US"}[接口]{style="font-family:宋体"}*[ifname]{lang="EN-US"}*[的事件]{style="font-family:宋体"}*[n]{lang="EN-US"}*
+内核收到fcm接口*ifname*的事件*n*
 
-[[Kernel published the event to POSA daemon.]{lang="EN-US"}]{#struct_0_88685_x1869_586021797}
+Kernel published the event to POSA daemon.
 
-[[内核把事件传到]{style="font-family:宋体"}]{#struct_0_88685_x1869_1839952704}[posa]{lang="EN-US"}[后台进程]{style="font-family:宋体"}
+内核把事件传到posa后台进程
 
-[[Kernel got interface ]{lang="EN-US"}*[ifname]{lang="EN-US"}*]{#struct_0_88685_x1869_586218405}[ statistics and returned *m*]{lang="EN-US"}
+Kernel got interface *ifname* statistics and returned *m*
 
-[[内核获取接口]{style="font-family:宋体"}]{#struct_0_88685_x1869_1716851986}*[ifname]{lang="EN-US"}*[的统计，返回]{style="font-family:宋体"}*[m]{lang="EN-US"}*
+内核获取接口*ifname*的统计，返回*m*
 
-[[Kernel hung up the interface ]{lang="EN-US"}*[ifname]{lang="EN-US"}*]{#struct_0_88685_x1869_586152869}[ POS and returned *m*]{lang="EN-US"}
+Kernel hung up the interface *ifname* POS and returned *m*
 
-[[内核挂起接口]{style="font-family:宋体"}*[ifname]{lang="EN-US"}*]{#struct_0_88685_x1869_x852713906}[下的]{style="font-family:宋体"}[pos]{lang="EN-US"}[机，返回]{style="font-family:宋体"}*[m]{lang="EN-US"}*
+内核挂起接口*ifname*下的pos机，返回*m*
 
-[[Kernel got the interface ]{lang="EN-US"}*[ifname]{lang="EN-US"}*]{#struct_0_88685_x1869_586349477}[ s POS calling number and returned *m*]{lang="EN-US"}
+Kernel got the interface *ifname* s POS calling number and returned *m*
 
-[[内核获取接口]{style="font-family:宋体"}*[ifname]{lang="EN-US"}*]{#struct_0_88685_x1869_546706877}[下的]{style="font-family:宋体"}[pos]{lang="EN-US"}[机，主机号码返回值]{style="font-family:宋体"}*[m]{lang="EN-US"}*
+内核获取接口*ifname*下的pos机，主机号码返回值*m*
 
-[[Kernel set the interface ]{lang="EN-US"}*[ifname]{lang="EN-US"}*]{#struct_0_88685_x1869_586283941}[ para (cmd=n value=d) and returned *m*]{lang="EN-US"}
+Kernel set the interface *ifname* para (cmd=n value=d) and returned *m*
 
-[[内核设置接口]{style="font-family:宋体"}*[ifname]{lang="EN-US"}*]{#struct_0_88685_x1869_979767586}[值参数（命令字：]{style="font-family:宋体"}[n]{lang="EN-US"}[，值：]{style="font-family:宋体"}[d]{lang="EN-US"}[），返回]{style="font-family:宋体"}*[m]{lang="EN-US"}*
+内核设置接口*ifname*值参数（命令字：n，值：d），返回*m*
 
-[[Kernel set the FCM timer parameter (answer-time=a, trade-time=b) and returned *m*]{lang="EN-US"}]{#struct_0_88685_x1869_585825186}
+Kernel set the FCM timer parameter (answer-time=a, trade-time=b) and returned *m*
 
-[[内核设置]{style="font-family:宋体"}]{#struct_0_88685_x1869_585759650}[fcm]{lang="EN-US"}[定时器参数，返回]{style="font-family:宋体"}*[m]{lang="EN-US"}*
+内核设置fcm定时器参数，返回*m*
 
-[[Added TPDU-replace entry: terminal*=*]{lang="EN-US"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_788518265}[, destination=]{lang="EN-US"}*[0xaaaa]{lang="EN-US"}*[ to , des-code=]{lang="EN-US"}*[0xbbbb]{lang="EN-US"}*[.]{lang="EN-US"}
+Added TPDU-replace entry: terminal*=**n*, destination=*0xaaaa* to , des-code=*0xbbbb*.
 
-[[添加]{style="font-family:宋体"}]{#struct_0_88685_x1869_x777565676}[TPDU-replace]{lang="EN-US"}[配置：将终端为]{style="font-family:宋体"}*[n]{lang="EN-US"}*[且目的地址为]{style="font-family:宋体"}*[0xaaaa]{lang="EN-US"}*[的报文的目的地址]{style="font-family:宋体"}[替换为]{style="font-family:宋体"}*[0xbbbb]{lang="EN-US"}*
+添加TPDU-replace配置：将终端为*n*且目的地址为*0xaaaa*的报文的目的地址替换为*0xbbbb*
 
-[[Updated TPDU-replace entry (terminal=]{lang="EN-US"}*[ n]{lang="EN-US"}*]{#struct_0_88685_x1869_1144683089}[, destination=]{lang="EN-US"}*[0xaaaa]{lang="EN-US"}*[)]{lang="EN-US"}[ changed des-code from ]{lang="EN-US"}*[0xbbbb]{lang="EN-US"}*[ to ]{lang="EN-US"}*[0xcccc]{lang="EN-US"}*[.]{lang="EN-US"}
+Updated TPDU-replace entry (terminal=* n*, destination=*0xaaaa*) changed des-code from *0xbbbb* to *0xcccc*.
 
-[[修改]{style="font-family:宋体"}]{#struct_0_88685_x1869_765054721}[TPDU-replace]{lang="EN-US"}[配置：将终端为]{style="font-family:宋体"}*[n]{lang="EN-US"}*[且目的地址为]{style="font-family:宋体"}*[0xaaaa]{lang="EN-US"}*[的对应的替换目的地址由]{style="font-family:宋体"}*[0xbbbb]{lang="EN-US"}*[修改为]{style="font-family:宋体"}*[0xcccc]{lang="EN-US"}*
+修改TPDU-replace配置：将终端为*n*且目的地址为*0xaaaa*的对应的替换目的地址由*0xbbbb*修改为*0xcccc*
 
-[[Deleted TPDU-replace enty: terminal=]{lang="EN-US"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x421400852}[, destination=]{lang="EN-US"}*[0xaaaa]{lang="EN-US"}*[.]{lang="EN-US"}
+Deleted TPDU-replace enty: terminal=*n*, destination=*0xaaaa*.
 
-[[删除]{style="font-family:宋体"}]{#struct_0_88685_x1869_x1987484793}[TPDU-replace]{lang="EN-US"}[配置：将终端为]{style="font-family:宋体"}*[n]{lang="EN-US"}*[且目的地址为]{style="font-family:宋体"}[0xaaaa]{lang="EN-US"}[的替换配置删除]{style="font-family:宋体"}
+删除TPDU-replace配置：将终端为*n*且目的地址为0xaaaa的替换配置删除
 
-[[Terminal *n*]{lang="EN-US"}]{#struct_0_88685_x1869_295006597}[: Replaced des-code from ]{lang="EN-US"}*[0xaaaa]{lang="EN-US"}*[ to ]{lang="EN-US"}*[0xbbbb]{lang="EN-US"}*[.]{lang="EN-US"}
+Terminal *n*: Replaced des-code from *0xaaaa* to *0xbbbb*.
 
-[[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_741398562}[：将报文的目的地址由]{style="font-family:宋体"}*[0xaaaa]{lang="EN-US"}*[替换为]{style="font-family:宋体"}*[0xbbbb]{lang="EN-US"}*
+终端*n*：将报文的目的地址由*0xaaaa*替换为*0xbbbb*
 
-[[Terminal *n*]{lang="EN-US"}]{#struct_0_88685_x1869_x824685379}[: Failed to match TPDU-replace table with destination ]{lang="EN-US"}*[0xaaaa]{lang="EN-US"}*[.]{lang="EN-US"}
+Terminal *n*: Failed to match TPDU-replace table with destination *0xaaaa*.
 
-[[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x1715428406}[：由于找不到对应的替换策略而替换地址失败]{style="font-family:宋体"}
+终端*n*：由于找不到对应的替换策略而替换地址失败
 
-[[Batched up TPDU-replace configuration: terminal=*n*, destination=*0xaaaa*, des-code=*0xbbbb*.]{lang="EN-US"}]{#struct_0_88685_x1869_1904197976}
+Batched up TPDU-replace configuration: terminal=*n*, destination=*0xaaaa*, des-code=*0xbbbb*.
 
-[[批备]{style="font-family:宋体"}[posa ]{lang="EN-US"}]{#struct_0_88685_x1869_338114035}[TPDU]{lang="EN-US"}[-replace]{lang="EN-US"}[配置]{style="font-family:
-  宋体"}
+批备posa TPDU-replace配置
 
-[[Started to close allTCP terminal listen ports.]{lang="EN-US"}]{#struct_0_88685_x1869_x1227969906}
+Started to close allTCP terminal listen ports.
 
-[[开始关闭所有]{style="font-family:宋体"}[TCP]{lang="EN-US"}]{#struct_0_88685_x1869_788452729}[终端的监听端口]{style="font-family:宋体"}
+开始关闭所有TCP终端的监听端口
 
-[[Started to open all TCP terminal listen ports.]{lang="EN-US"}]{#struct_0_88685_x1869_x2041988317}
+Started to open all TCP terminal listen ports.
 
-[[开始打开所有]{style="font-family:宋体"}[TCP]{lang="EN-US"}]{#struct_0_88685_x1869_x777631212}[终端的监听端口]{style="font-family:宋体"}
+开始打开所有TCP终端的监听端口
 
-[[Batched up posa auto-stop service configuration.]{lang="EN-US"}]{#struct_0_88685_x1869_1278900817}
+Batched up posa auto-stop service configuration.
 
-[[批备]{style="font-family:宋体"}[posa]{lang="EN-US"}]{#struct_0_88685_x1869_x1595067423}[自动关闭终端服务的配置]{style="font-family:宋体"}
+批备posa自动关闭终端服务的配置
 
-[[App *n*]{lang="EN-US"}]{#struct_0_88685_x1869_x287183124}[: Changed auto-connect interval from ]{lang="EN-US"}*[a]{lang="EN-US"}*[ to ]{lang="EN-US"}*[b]{lang="EN-US"}*[ minutes.]{lang="EN-US"}
+App *n*: Changed auto-connect interval from *a* to *b* minutes.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x1853267065}[：将自动连接时长由]{style="font-family:宋体"}*[a]{lang="EN-US"}*[分钟修改为]{style="font-family:宋体"}*[b]{lang="EN-US"}*[分钟]{style="font-family:宋体"}
+应用*n*：将自动连接时长由*a*分钟修改为*b*分钟
 
-[[App *n*]{lang="EN-US"}]{#struct_0_88685_x1869_x299281134}[: Enabled auto-connect.]{lang="EN-US"}
+App *n*: Enabled auto-connect.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_875616290}[：开启自动连接功能]{style="font-family:宋体"}
+应用*n*：开启自动连接功能
 
-[[App *n*]{lang="EN-US"}]{#struct_0_88685_x1869_x690467651}[: Disabled auto-connect.]{lang="EN-US"}
+App *n*: Disabled auto-connect.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_184326852}[：关闭自动连接功能]{style="font-family:宋体"}
+应用*n*：关闭自动连接功能
 
-[[App *n*]{lang="EN-US"}]{#struct_0_88685_x1869_2038415704}[: ]{lang="EN-US"}[Started auto-connect to server(IP: *x.x.x.x*, port: *a*).]{lang="EN-US"}
+App *n*: Started auto-connect to server(IP: *x.x.x.x*, port: *a*).
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x1987526121}[：开始自动向前置机（]{style="font-family:宋体"}[IP]{lang="EN-US"}[为]{style="font-family:宋体"}*[x.x.x.x]{lang="EN-US"}*[，端口为]{style="font-family:宋体"}*[a]{lang="EN-US"}*[）发起连接]{style="font-family:宋体"}
+应用*n*：开始自动向前置机（IP为*x.x.x.x*，端口为*a*）发起连接
 
-[[Terminal *n*]{lang="EN-US"}]{#struct_0_88685_x1869_472331763}[:]{lang="EN-US"}[ ]{lang="EN-US"}[Changed idle time from ]{lang="EN-US"}*[a]{lang="EN-US"}*[ to]{lang="EN-US"}*[ b]{lang="EN-US"}*[ minute(s).]{lang="EN-US"}
+Terminal *n*:Changed idle time from *a* to* b* minute(s).
 
-[[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x1093752178}[：将空闲时间由]{style="font-family:宋体"}*[a]{lang="EN-US"}*[分钟修改为]{style="font-family:宋体"}*[b]{lang="EN-US"}*[分钟]{style="font-family:宋体"}
+终端*n*：将空闲时间由*a*分钟修改为*b*分钟
 
-[[Terminal *n*]{lang="EN-US"}]{#struct_0_88685_x1869_232605698}[:]{lang="EN-US"}[ ]{lang="EN-US"}[Instance ]{lang="EN-US"}*[m]{lang="EN-US"}*[ cleared idle-time count.]{lang="EN-US"}
+Terminal *n*:Instance *m* cleared idle-time count.
 
-[[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_922670457}[：实例]{style="font-family:宋体"}*[m]{lang="EN-US"}*[将空闲计数器重置为]{style="font-family:宋体"}[0]{lang="EN-US"}
+终端*n*：实例*m*将空闲计数器重置为0
 
-[[Terminal *n*: Instance *m* has ]{lang="EN-US"}]{#struct_0_88685_x1869_1958918556}[successfully got trade]{lang="EN-US"}[ number *o*.]{lang="EN-US"}
+Terminal *n*: Instance *m* has successfully got trade number *o*.
 
-[[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_1958984092}[：实例]{style="font-family:宋体"}*[m]{lang="EN-US"}*[成功获取到交易号]{style="font-family:宋体"}*[o]{lang="EN-US"}*
+终端*n*：实例*m*成功获取到交易号*o*
 
-[[Terminal *n*: Instance *m*]{lang="EN-US"}]{#struct_0_88685_x1869_1958787484}[ released trade number ]{lang="EN-US"}*[o]{lang="EN-US"}*[.]{lang="EN-US"}
+Terminal *n*: Instance *m* released trade number *o*.
 
-[[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x788466581}[：实例]{style="font-family:宋体"}*[m]{lang="EN-US"}*[释放交易号]{style="font-family:宋体"}*[o]{lang="EN-US"}*
+终端*n*：实例*m*释放交易号*o*
 
-[[Changed the concurrent trades limit for each TCP connection from ]{lang="EN-US"}*[m]{lang="EN-US"}*]{#struct_0_88685_x1869_1958853020}[ to ]{lang="EN-US"}*[n]{lang="EN-US"}*[.]{lang="EN-US"}
+Changed the concurrent trades limit for each TCP connection from *m* to *n*.
 
-[[将每条]{style="font-family:宋体"}]{#struct_0_88685_x1869_1959704988}[TCP]{lang="EN-US"}[连接的并发交易数上限值从]{style="font-family:宋体"}*[m]{lang="EN-US"}*[修改为]{style="font-family:宋体"}*[n]{lang="EN-US"}*
+将每条TCP连接的并发交易数上限值从*m*修改为*n*
 
-[[Changed the trade timeout from *m* to *n*]{lang="EN-US"}[ seconds.]{lang="EN-US"}]{#struct_0_88685_x1869_x469413316}
+Changed the trade timeout from *m* to *n* seconds.
 
-[[将每笔交易的超时时间从]{style="font-family:宋体"}*[m]{lang="EN-US"}*]{#struct_0_88685_x1869_1959770524}[秒]{style="font-family:宋体"}[修改为]{style="font-family:宋体"}*[n]{lang="EN-US"}*[秒]{style="font-family:宋体"}
+将每笔交易的超时时间从*m*秒修改为*n*秒
 
-[[Changed the TCP terminal ]{lang="EN-US"}[concurrent ]{lang="EN-US"}]{#struct_0_88685_x1869_x438819662}[connections threshold from *m* to *n*]{lang="EN-US"}[.]{lang="EN-US"}
+Changed the TCP terminal concurrent connections threshold from *m* to *n*.
 
-[[将]{style="font-family:宋体"}]{#struct_0_88685_x1869_1959180699}[TCP]{lang="EN-US"}[接入方式的终端的并发连接数阈值从]{style="font-family:宋体"}*[m]{lang="EN-US"}*[修改为]{style="font-family:宋体"}*[n]{lang="EN-US"}*
+将TCP接入方式的终端的并发连接数阈值从*m*修改为*n*
 
-[[Changed the FCM terminal ]{lang="EN-US"}[concurrent ]{lang="EN-US"}]{#struct_0_88685_x1869_1959246235}[connections threshold from *m* to *n*]{lang="EN-US"}[.]{lang="EN-US"}
+Changed the FCM terminal concurrent connections threshold from *m* to *n*.
 
-[[将]{style="font-family:宋体"}]{#struct_0_88685_x1869_x447845970}[FCM]{lang="EN-US"}[接入方式的终端的并发连接数阈值从]{style="font-family:宋体"}*[m]{lang="EN-US"}*[修改为]{style="font-family:宋体"}*[n]{lang="EN-US"}*
+将FCM接入方式的终端的并发连接数阈值从*m*修改为*n*
 
-[[Batch]{lang="EN-US"}]{#struct_0_88685_x1869_1959049627}[ ]{lang="EN-US" style="font-size:10.5pt"}[ed up the TCP terminal concurrent connections threshold configuration.]{lang="EN-US"}
+Batched up the TCP terminal concurrent connections threshold configuration.
 
-[[备份]{style="font-family:宋体"}]{#struct_0_88685_x1869_x96905904}[TCP]{lang="EN-US"}[接入方式的终端并发连接数阈值的配置到接口板]{style="font-family:宋体"}
+备份TCP接入方式的终端并发连接数阈值的配置到接口板
 
-[[Batch]{lang="EN-US"}]{#struct_0_88685_x1869_1959115163}[ ]{lang="EN-US" style="font-size:10.5pt"}[ed up the FCM terminal concurrent connections threshold configuration.]{lang="EN-US"}
+Batched up the FCM terminal concurrent connections threshold configuration.
 
-[[备份]{style="font-family:宋体"}]{#struct_0_88685_x1869_x431104531}[FCM]{lang="EN-US"}[接入方式终端并发连接数阈值的配置到接口板]{style="font-family:宋体"}
+备份FCM接入方式终端并发连接数阈值的配置到接口板
 
-[[Batch]{lang="EN-US"}]{#struct_0_88685_x1869_1958918555}[ ]{lang="EN-US" style="font-size:10.5pt"}[ed up the concurrent trades limit for each TCP connection configuration.]{lang="EN-US"}
+Batched up the concurrent trades limit for each TCP connection configuration.
 
-[[备份]{style="font-family:宋体"}]{#struct_0_88685_x1869_1958984091}[TCP]{lang="EN-US"}[连接并发交易数上限的配置到接口板]{style="font-family:宋体"}
+备份TCP连接并发交易数上限的配置到接口板
 
-[[Batch]{lang="EN-US"}]{#struct_0_88685_x1869_x427273849}[ ]{lang="EN-US" style="font-size:10.5pt"}[ed up the trade timeout configuration.]{lang="EN-US"}
+Batched up the trade timeout configuration.
 
-[[备份交易超时时间的配置到接口板]{style="font-family:宋体"}]{#struct_0_88685_x1869_1958787483}
+备份交易超时时间的配置到接口板
 
-[[Backed up the TCP connection maximum number.]{lang="EN-US"}]{#struct_0_88685_x1869_1961532945}
+Backed up the TCP connection maximum number.
 
-[[备份]{style="font-family:宋体"}]{#struct_0_88685_x1869_1273576539}[TCP]{lang="EN-US"}[终端的连接数最大值]{style="font-family:宋体"}
+备份TCP终端的连接数最大值
 
-[[Enabled a license.]{lang="EN-US"}]{#struct_0_88685_x1869_x1566773243}
+Enabled a license.
 
-[[使能一个]{style="font-family:宋体"}]{#struct_0_88685_x1869_x1930149824}[License]{lang="EN-US"}
+使能一个License
 
-[[Disabled a license.]{lang="EN-US"}]{#struct_0_88685_x1869_x46103582}
+Disabled a license.
 
-[[去使能一个]{style="font-family:宋体"}]{#struct_0_88685_x1869_798733531}[License]{lang="EN-US"}
+去使能一个License
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:
-黑体"}]{#struct_0_88685_x1869_2513104}
+\#打开事件调试信息开关，删除POS应用模板2。
 
-[[\#]{lang="EN-US"}]{#struct_0_88685_x1869_x1812805774}[打开事件调试信息开关，删除]{style="font-family:宋体"}[POS]{lang="EN-US"}[应用模板]{style="font-family:宋体"}[2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<System\> debugging posa event
 
-[[\<System\> debugging posa event]{lang="EN-US"}]{#struct_0_88685_x1869_712919590}
+System\*Aug  7 17:40:21:819 2012 System POSA/7/EVENT: -MDC=1; Recv LIPC message type:
 
-[\[System\]\*Aug  7 17:40:21:819 2012 System POSA/7/EVENT: -MDC=1; Recv LIPC message type:]{lang="EN-US"}
+SET, code:DELAPP, sequence:0, length:2.
 
-[SET, code:DELAPP, sequence:0, length:2.]{lang="EN-US"}
+\*Aug  7 17:40:21:819 2012 System POSA/7/EVENT: -MDC=1; App 2:Disable template.
 
-[\*Aug  7 17:40:21:819 2012 System POSA/7/EVENT: -MDC=1; App 2:Disable template.]{lang="EN-US"}
+\*Aug  7 17:40:21:819 2012 System POSA/7/EVENT: -MDC=1; App 2:Delete template.
 
-[\*Aug  7 17:40:21:819 2012 System POSA/7/EVENT: -MDC=1; App 2:Delete template.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_88685_x1869_719240298}*[删除应用模板]{style="font-family:宋体"}[2]{lang="EN-US"}*
-
-::: {#349841430 .myid}
-[]{#_Toc212180725}[]{#_Toc404785863}[]{#struct_0_88685_x1869_x1280879355}
+*// 删除应用模板2*
 
 **POS终端接入 \-- POS终端接入调试命令 \-- debugging posa timer**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_88685_x1869_66809178}
+【命令】
 
-[**[debugging posa timer]{lang="EN-US"}**[ \[ **terminal** *terminal-id* \| **app** *app-id* \]]{lang="EN-US"}]{#struct_0_88685_x1869_x339229528}
+**[debugging posa timer**[ [ **terminal** *terminal-id* \| **app** *app-id* ]]]
 
-[**[undo debugging posa timer]{lang="EN-US"}**[ \[ **terminal** *terminal-id* \| **app** *app-id* \]]{lang="EN-US"}]{#struct_0_88685_x1869_1124274732}
+**[undo debugging posa timer**[ [ **terminal** *terminal-id* \| **app** *app-id* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_88685_x1869_x117415501}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_88685_x1869_585956258}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_88685_x1869_x1401214156}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_88685_x1869_x1718365330}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_88685_x1869_1717157335}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_88685_x1869_1702525345}
+【参数】
 
-[**[terminal]{lang="EN-US"}***[ terminal-id]{lang="EN-US"}*]{#struct_0_88685_x1869_x1734120887}[：终端模板]{style="font-family:宋体"}[ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[terminal*** terminal-id*]：终端模板ID，取值范围为1～255。
 
-[**[app]{lang="EN-US"}***[ app-id]{lang="EN-US"}*]{#struct_0_88685_x1869_1115200583}[：应用模板]{style="font-family:宋体"}[ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1024]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[app*** app-id*]：应用模板ID，取值范围为1～1024。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_88685_x1869_294258015}
+【描述】
 
-[**[debugging posa timer]{lang="EN-US"}**]{#struct_0_88685_x1869_1802450811}[命令用来打开定时器操作调试开关。]{style="font-family:宋体"}**[undo debugging posa timer]{lang="EN-US"}**[命令用来关闭定时器调试开关。]{style="font-family:宋体"}
+**[debugging posa timer**]命令用来打开定时器操作调试开关。**undo debugging posa timer**命令用来关闭定时器调试开关。
 
-[[缺省情况下，定时器调试开关处于关闭状态。]{style="font-family:宋体"}]{#struct_0_88685_x1869_x1313791131}
+缺省情况下，定时器调试开关处于关闭状态。
 
-[[表1-2 ]{lang="EN-US"}[debugging posa timer]{lang="EN-US"}]{#struct_0_88685_x1869_585890722}[命令输出信息描述表]{style="font-family:黑体"}
+表1-2 debugging posa timer命令输出信息描述表
 
-[]{#table_struct_0_x1855313658}[[字段]{style="font-family:黑体"}]{#struct_0_88685_x1869_x210771257}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_88685_x1869_1793613346}
+描述
 
-[[App *n /* Terminal *n*: Failed to create *type* timer, key=*m*.]{lang="EN-US"}]{#struct_0_88685_x1869_1402600085}
+App *n /* Terminal *n*: Failed to create *type* timer, key=*m*.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*[ / ]{lang="EN-US"}]{#struct_0_88685_x1869_x563469392}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：创建]{style="font-family:宋体"}*[type]{lang="EN-US"}*[类型定时器失败。]{style="font-family:宋体"}*[type]{lang="EN-US"}*[和]{style="font-family:宋体"}*[key]{lang="EN-US"}*[取值及对应关系如下：]{style="font-family:宋体"}
+应用*n* / 终端*n*：创建*type*类型定时器失败。*type*和*key*取值及对应关系如下：
 
-[*[type]{lang="EN-US"}*]{#struct_0_88685_x1869_x1171132145}[：]{style="font-family:宋体"}*[key]{lang="EN-US"}*
+*[type*]：*key*
 
-[[app connecting]{lang="EN-US"}]{#struct_0_88685_x1869_x1379808187}[：应用实例]{style="font-family:宋体"}
+app connecting：应用实例
 
-[[quiet]{lang="EN-US"}]{#struct_0_88685_x1869_x2078314004}[：]{style="font-family:宋体"}[AppID ]{lang="EN-US"}
+quiet：AppID
 
-[[hello period]{lang="EN-US"}]{#struct_0_88685_x1869_586087330}[：]{style="font-family:宋体"}[AppID]{lang="EN-US"}
+hello period：AppID
 
-[[hello probe]{lang="EN-US"}]{#struct_0_88685_x1869_648388401}[：]{style="font-family:宋体"}[AppID]{lang="EN-US"}
+hello probe：AppID
 
-[[app flush statistics]{lang="EN-US"}]{#struct_0_88685_x1869_785263970}[：无效值]{style="font-family:宋体"}
+app flush statistics：无效值
 
-[[terminal flush statistics]{lang="EN-US"}]{#struct_0_88685_x1869_541735586}[：无效值]{style="font-family:宋体"}
+terminal flush statistics：无效值
 
-[[caller-ID flush statistics]{lang="EN-US"}]{#struct_0_88685_x1869_x1100852709}[：无效值]{style="font-family:
-  宋体"}
+caller-ID flush statistics：无效值
 
-[[caller-IP flush statistics]{lang="EN-US"}]{#struct_0_88685_x1869_x708195451}[：无效值]{style="font-family:
-  宋体"}
+caller-IP flush statistics：无效值
 
-[[terminal idle]{lang="EN-US"}]{#struct_0_88685_x1869_586021794}[：终端实例]{style="font-family:宋体"}
+terminal idle：终端实例
 
-[[lipc connecting]{lang="EN-US"}]{#struct_0_88685_x1869_1839952707}[：无效值]{style="font-family:宋体"}
+lipc connecting：无效值
 
-[[resend]{lang="EN-US"}]{#struct_0_88685_x1869_1597046058}[：应用实例或终端实例]{style="font-family:宋体"}
+resend：应用实例或终端实例
 
-[[TTYM connect]{lang="EN-US"}]{#struct_0_88685_x1869_1280786919}[：无效值]{style="font-family:宋体"}
+TTYM connect：无效值
 
-[[app wait AM-CID response]{lang="EN-US"}]{#struct_0_88685_x1869_x473669560}[：应用实例]{style="font-family:宋体"}
+app wait AM-CID response：应用实例
 
-[[app auto-connect]{lang="EN-US"}]{#struct_0_88685_x1869_x1853332601}[：应用模板]{style="font-family:宋体"}
+app auto-connect：应用模板
 
-[[trade]{lang="EN-US"}]{#struct_0_88685_x1869_1959770523}[：交易号]{style="font-family:宋体"}
+trade：交易号
 
-[[App *n /* Terminal *n*:Created *type* timer, key=*m*.]{lang="EN-US"}]{#struct_0_88685_x1869_318040400}
+App *n /* Terminal *n*:Created *type* timer, key=*m*.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*[ / ]{lang="EN-US"}]{#struct_0_88685_x1869_586218402}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：创建]{style="font-family:宋体"}*[type]{lang="EN-US"}*[类型定时器]{style="font-family:宋体"}[.( *type*]{lang="EN-US"}[类型及]{style="font-family:宋体"}*[key]{lang="EN-US"}*[取值同上]{style="font-family:宋体"}[)]{lang="EN-US"}
+应用*n* / 终端*n*：创建*type*类型定时器.( *type*类型及*key*取值同上)
 
-[[App *n /* Terminal *n*: Triggered *type* timer, key=*m*.]{lang="EN-US"}]{#struct_0_88685_x1869_1716851987}
+App *n /* Terminal *n*: Triggered *type* timer, key=*m*.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*[ / ]{lang="EN-US"}]{#struct_0_88685_x1869_x1009086583}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：触发]{style="font-family:宋体"}*[type]{lang="EN-US"}*[类型定时器]{style="font-family:宋体"}[.( *type*]{lang="EN-US"}[类型及]{style="font-family:宋体"}*[key]{lang="EN-US"}*[取值同上]{style="font-family:宋体"}[)]{lang="EN-US"}
+应用*n* / 终端*n*：触发*type*类型定时器.( *type*类型及*key*取值同上)
 
-[[App *n /* Terminal *n*: Deleted *type* timer, key=*m*.]{lang="EN-US"}]{#struct_0_88685_x1869_2021413736}
+App *n /* Terminal *n*: Deleted *type* timer, key=*m*.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*[ / ]{lang="EN-US"}]{#struct_0_88685_x1869_1124763063}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：删除]{style="font-family:宋体"}*[ype]{lang="EN-US"}*[类型定时器]{style="font-family:宋体"}[.( *type*]{lang="EN-US"}[类型及]{style="font-family:宋体"}*[key]{lang="EN-US"}*[取值同上]{style="font-family:宋体"}[)]{lang="EN-US"}
+应用*n* / 终端*n*：删除*ype*类型定时器.( *type*类型及*key*取值同上)
 
-[[App *n /* Terminal *n*: Reset *type* timer interval from *p* to *q*, key=*m*.]{lang="EN-US"}]{#struct_0_88685_x1869_x909405866}
+App *n /* Terminal *n*: Reset *type* timer interval from *p* to *q*, key=*m*.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*[ / ]{lang="EN-US"}]{#struct_0_88685_x1869_586152866}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：刷新]{style="font-family:宋体"}[t*ype*]{lang="EN-US"}[类型定时器，修改时间间隔。]{style="font-family:宋体"}[(*type*]{lang="EN-US"}[类型及]{style="font-family:宋体"}*[key]{lang="EN-US"}*[取值同上]{style="font-family:宋体"}[)]{lang="EN-US"}
+应用*n* / 终端*n*：刷新t*ype*类型定时器，修改时间间隔。(*type*类型及*key*取值同上)
 
-[[ ]{lang="EN-US"}]{#struct_0_88685_x1869_x852713897}[【举例】]{style="font-family:黑体"}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_88685_x1869_x162687772}[打开定时器调试信息开关，存在]{style="font-family:宋体"}[tcp]{lang="EN-US"}[类型的]{style="font-family:宋体"}[POS]{lang="EN-US"}[应用模板]{style="font-family:宋体"}[2]{lang="EN-US"}[，在应用视图下配置静默定时器时间。]{style="font-family:宋体"}
+\# 打开定时器调试信息开关，存在tcp类型的POS应用模板2，在应用视图下配置静默定时器时间。
 
-[[\<System\> debugging posa timer]{lang="EN-US"}]{#struct_0_88685_x1869_x1768205884}
+\<System\> debugging posa timer
 
-[\*Aug  7 17:54:40:786 2012 System POSA/7/TIMER: -MDC=1; App 2:Trigger hello period t]{lang="EN-US"}
+\*Aug  7 17:54:40:786 2012 System POSA/7/TIMER: -MDC=1; App 2:Trigger hello period t
 
-[imer, key:2.]{lang="EN-US"}
+imer, key:2.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_88685_x1869_x2002225653}*[静默定时器时间已更改，]{style="font-family:宋体"}[hello]{lang="EN-US"}[定时器已触发]{style="font-family:宋体"}*
-
-::: {#1977969791 .myid}
-[]{#_Toc404785864}[]{#struct_0_88685_x1869_777859108}
+*// 静默定时器时间已更改，hello定时器已触发*
 
 **POS终端接入 \-- POS终端接入调试命令 \-- debugging posa error**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_88685_x1869_x2041928102}
+【命令】
 
-[**[debugging posa error]{lang="EN-US"}**[ \[ **terminal** *terminal-id* \| **app** *app-id* \]]{lang="EN-US"}]{#struct_0_88685_x1869_350987493}
+**[debugging posa error**[ [ **terminal** *terminal-id* \| **app** *app-id* ]]]
 
-[**[undo debugging posa error]{lang="EN-US"}**[ \[ **terminal** *terminal-id* \| **app** *app-id* \]]{lang="EN-US"}]{#struct_0_88685_x1869_x1626280854}
+**[undo debugging posa error**[ [ **terminal** *terminal-id* \| **app** *app-id* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_88685_x1869_586349474}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_88685_x1869_546706876}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_88685_x1869_363699694}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_88685_x1869_479535703}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_88685_x1869_x1880704988}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_88685_x1869_1455191926}
+【参数】
 
-[**[terminal]{lang="EN-US"}***[ terminal-id]{lang="EN-US"}*]{#struct_0_88685_x1869_x1092898731}[：终端模板]{style="font-family:宋体"}[ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[terminal*** terminal-id*]：终端模板ID，取值范围为1～255。
 
-[**[app]{lang="EN-US"}***[ app-id]{lang="EN-US"}*]{#struct_0_88685_x1869_1943503128}[：应用模板]{style="font-family:宋体"}[ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1024]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[app*** app-id*]：应用模板ID，取值范围为1～1024。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_88685_x1869_x544682346}
+【描述】
 
-[**[debugging posa error]{lang="EN-US"}**]{#struct_0_88685_x1869_x300275619}[命令用来打开]{style="font-family:宋体"}[POS]{lang="EN-US"}[接入错误调试开关。]{style="font-family:宋体"}**[undo debugging posa error]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[POS]{lang="EN-US"}[接入错误调试开关。]{style="font-family:宋体"}
+**[debugging posa error**]命令用来打开POS接入错误调试开关。**undo debugging posa error**命令用来关闭POS接入错误调试开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[POS]{lang="EN-US"}]{#struct_0_88685_x1869_586283938}[接入错误调试开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，POS接入错误调试开关处于关闭状态。
 
-[]{#struct_0_88685_x1869_170463515}[[表1-3 ]{lang="EN-US"}[debugging posa error]{lang="EN-US"}]{#_Ref203361573}[命令输出信息描述表]{style="font-family:黑体"}
+表1-3 debugging posa error命令输出信息描述表
 
-[]{#table_struct_0_x1861670450}[[字段]{style="font-family:黑体"}]{#struct_0_88685_x1869_x1854313813}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_88685_x1869_x1410001592}
+描述
 
-[[App *n*:Failed to trigger hello issue, A previous issue exist.]{lang="EN-US"}]{#struct_0_88685_x1869_x435903412}
+App *n*:Failed to trigger hello issue, A previous issue exist.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_708728724}[：]{style="font-family:宋体"}[Hello]{lang="EN-US"}[已存在]{style="font-family:宋体"}
+应用*n*：Hello已存在
 
-[[Maximum number of maps has been reached.]{lang="EN-US"}]{#struct_0_88685_x1869_x1504920705}
+Maximum number of maps has been reached.
 
-[[Map]{lang="EN-US"}]{#struct_0_88685_x1869_585825187}[表项已达到最大值]{style="font-family:宋体"}
+Map表项已达到最大值
 
-[[Failed to match map.]{lang="EN-US"}]{#struct_0_88685_x1869_887857069}
+Failed to match map.
 
-[[匹配]{style="font-family:宋体"}[map]{lang="EN-US"}]{#struct_0_88685_x1869_653741634}[表失败]{style="font-family:宋体"}
+匹配map表失败
 
-[[Failed to set data(CMD:*n*) to kernel.]{lang="EN-US"}]{#struct_0_88685_x1869_1974144375}
+Failed to set data(CMD:*n*) to kernel.
 
-[[向内核设置数据失败]{style="font-family:宋体"}]{#struct_0_88685_x1869_712968023}
+向内核设置数据失败
 
-[[App *n /* Terminal *n*:]{lang="EN-US"}]{#struct_0_88685_x1869_1509759285}[ ]{lang="EN-US" style="font-size:10.5pt"}[AM-CID response packet total length was wrong.]{lang="EN-US"}
+App *n /* Terminal *n*:AM-CID response packet total length was wrong.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_319700227}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：应答]{style="font-family:宋体"}[AM-CID]{lang="EN-US"}[报文总长度错误]{style="font-family:宋体"}
+应用*n / *终端*n*：应答AM-CID报文总长度错误
 
-[[App *n /* Terminal *n*:]{lang="EN-US"}]{#struct_0_88685_x1869_585759651}[ ]{lang="EN-US" style="font-size:
-  10.5pt"}[AM-CID response packet data length was wrong.]{lang="EN-US"}
+App *n /* Terminal *n*:AM-CID response packet data length was wrong.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_2513105}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：应答]{style="font-family:宋体"}[AM-CID]{lang="EN-US"}[报文数据长度错误]{style="font-family:宋体"}
+应用*n / *终端*n*：应答AM-CID报文数据长度错误
 
-[[App *n /* Terminal *n*: AM-CID response packet data length was wrong.]{lang="EN-US"}]{#struct_0_88685_x1869_x246721833}
+App *n /* Terminal *n*: AM-CID response packet data length was wrong.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_754157071}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：应答]{style="font-family:宋体"}[AM-CID]{lang="EN-US"}[报文数据代码错误]{style="font-family:宋体"}
+应用*n / *终端*n*：应答AM-CID报文数据代码错误
 
-[[App *n /* Terminal *n*: AM-CID response packet caller number length was wrong.]{lang="EN-US"}]{#struct_0_88685_x1869_760293835}
+App *n /* Terminal *n*: AM-CID response packet caller number length was wrong.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x1920290777}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：应答]{style="font-family:宋体"}[AM-CID]{lang="EN-US"}[报文数据主叫号码长度错误]{style="font-family:宋体"}
+应用*n / *终端*n*：应答AM-CID报文数据主叫号码长度错误
 
-[[App *n /* Terminal *n*: AM-CID response packet caller number was wrong.]{lang="EN-US"}]{#struct_0_88685_x1869_585956259}
+App *n /* Terminal *n*: AM-CID response packet caller number was wrong.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x1401214155}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：应答]{style="font-family:宋体"}[AM-CID]{lang="EN-US"}[报文数据主叫号码错误]{style="font-family:宋体"}
+应用*n / *终端*n*：应答AM-CID报文数据主叫号码错误
 
-[[App *n /* Terminal *n*: AM-CID response packet CRC was wrong.]{lang="EN-US"}]{#struct_0_88685_x1869_x2121649857}
+App *n /* Terminal *n*: AM-CID response packet CRC was wrong.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x21420960}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：应答]{style="font-family:宋体"}[AM-CID]{lang="EN-US"}[报文数据]{style="font-family:宋体"}[CRC]{lang="EN-US"}[校验错误]{style="font-family:宋体"}
+应用*n / *终端*n*：应答AM-CID报文数据CRC校验错误
 
-[[App *n /* Terminal *n*: Maximum number of instances has been reached.]{lang="EN-US"}]{#struct_0_88685_x1869_x842137032}
+App *n /* Terminal *n*: Maximum number of instances has been reached.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_585890723}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：实例数达到最大值]{style="font-family:宋体"}
+应用*n / *终端*n*：实例数达到最大值
 
-[[Terminal *n*: Maximum number of TCP connections has been reached.]{lang="EN-US"}]{#struct_0_88685_x1869_1558313954}
+Terminal *n*: Maximum number of TCP connections has been reached.
 
-[[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x7769987}[：]{style="font-family:宋体"}[TCP]{lang="EN-US"}[终端的连接数达到最大值]{style="font-family:宋体"}
+终端*n*：TCP终端的连接数达到最大值
 
-[[Terminal *n*: Failed to accept socket error code=*m*.]{lang="EN-US"}]{#struct_0_88685_x1869_x210771256}
+Terminal *n*: Failed to accept socket error code=*m*.
 
-[[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_1793547810}[：]{style="font-family:宋体"}[accept   socket]{lang="EN-US"}[连接失败，错误码是]{style="font-family:宋体"}*[m]{lang="EN-US"}*
+终端*n*：accept   socket连接失败，错误码是*m*
 
-[[Terminal *n*: Failed to listen socket error code=*m*]{lang="EN-US"}]{#struct_0_88685_x1869_622447779}
+Terminal *n*: Failed to listen socket error code=*m*
 
-[[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x448159419}[：监听]{style="font-family:宋体"}[socket]{lang="EN-US"}[连接失败，错误码是]{style="font-family:宋体"}*[m]{lang="EN-US"}*
+终端*n*：监听socket连接失败，错误码是*m*
 
-[[App n / Terminal n: Failed to set socket option.]{lang="EN-US"}]{#struct_0_88685_x1869_586087331}
+App n / Terminal n: Failed to set socket option.
 
-[[应用]{style="font-family:宋体"}[n / ]{lang="EN-US"}]{#struct_0_88685_x1869_648388400}[终端]{style="font-family:宋体"}[n]{lang="EN-US"}[：设置]{style="font-family:宋体"}[socket]{lang="EN-US"}[选项失败]{style="font-family:宋体"}
+应用n / 终端n：设置socket选项失败
 
-[[App *n*: Failed to get app instance for terminal.]{lang="EN-US"}]{#struct_0_88685_x1869_785263969}
+App *n*: Failed to get app instance for terminal.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x1796916583}[：为终端获取应用实例失败]{style="font-family:宋体"}
+应用*n*：为终端获取应用实例失败
 
-[[App *n /* Terminal *n*: Failed to bind socket, error code=*m*.]{lang="EN-US"}]{#struct_0_88685_x1869_263361673}
+App *n /* Terminal *n*: Failed to bind socket, error code=*m*.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_586021795}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：绑定]{style="font-family:宋体"}[socket]{lang="EN-US"}[失败，错误码是]{style="font-family:宋体"}*[m]{lang="EN-US"}*
+应用*n / *终端*n*：绑定socket失败，错误码是*m*
 
-[[App *n*: Failed to connect to app, error code=*m*.]{lang="EN-US"}]{#struct_0_88685_x1869_1839952706}
+App *n*: Failed to connect to app, error code=*m*.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_1596980522}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：连接到]{style="font-family:宋体"}[app]{lang="EN-US"}[失败，错误码是]{style="font-family:宋体"}*[m]{lang="EN-US"}*
+应用*n / *终端*n*：连接到app失败，错误码是*m*
 
-[[App *n /* Terminal *n*: Failed to send packet, error code=*m*]{lang="EN-US"}]{#struct_0_88685_x1869_x1889511545}
+App *n /* Terminal *n*: Failed to send packet, error code=*m*
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_586218403}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：发送报文失败，错误码是]{style="font-family:宋体"}*[m]{lang="EN-US"}*
+应用*n / *终端*n*：发送报文失败，错误码是*m*
 
-[[App *n /* Terminal *n*: Received incompleted packet received length=*a*,]{lang="EN-US"}]{#struct_0_88685_x1869_1716851988}[ ]{lang="EN-US" style="font-size:10.5pt"}[expected length=*b*.]{lang="EN-US"}
+App *n /* Terminal *n*: Received incompleted packet received length=*a*,expected length=*b*.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x1009152119}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：接受了长度为]{style="font-family:宋体"}*[a]{lang="EN-US"}*[不完整的报文，实际长度应为]{style="font-family:宋体"}*[b]{lang="EN-US"}*
+应用*n / *终端*n*：接受了长度为*a*不完整的报文，实际长度应为*b*
 
-[[Terminal *n*: Failed to send to peer for *m* times.]{lang="EN-US"}]{#struct_0_88685_x1869_102088035}
+Terminal *n*: Failed to send to peer for *m* times.
 
-[*[m]{lang="EN-US" style="font-size:
-  9.0pt"}*]{#struct_0_88685_x1869_1108095707}[次重传失败]{style="font-size:9.0pt;font-family:宋体"}
+*[m*]次重传失败
 
-[[App *n*: Failed to distribute app packet.]{lang="EN-US"}]{#struct_0_88685_x1869_586152867}
+App *n*: Failed to distribute app packet.
 
-[[分发]{style="font-family:宋体"}[app]{lang="EN-US"}]{#struct_0_88685_x1869_x852713896}[报文失败]{style="font-family:宋体"}
+分发app报文失败
 
-[[App *n /* Terminal *n*: Invalid packet length(*m*).]{lang="EN-US"}]{#struct_0_88685_x1869_x162753308}
+App *n /* Terminal *n*: Invalid packet length(*m*).
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_968785720}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：报文长度]{style="font-family:宋体"}[(*m*)]{lang="EN-US"}[错误]{style="font-family:宋体"}
+应用*n / *终端*n*：报文长度(*m*)错误
 
-[[App *n /* Terminal *n*: NO-HEAD-FCM packet checking failed. Invalid packet length (*m*).]{lang="EN-US"}]{#struct_0_88685_x1869_586349475}
+App *n /* Terminal *n*: NO-HEAD-FCM packet checking failed. Invalid packet length (*m*).
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_546706875}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：检查无头]{style="font-family:宋体"}[FCM]{lang="EN-US"}[报文时报文长度]{style="font-family:宋体"}[(*m*)]{lang="EN-US"}[错误]{style="font-family:宋体"}
+应用*n / *终端*n*：检查无头FCM报文时报文长度(*m*)错误
 
-[[App *n /* Terminal *n*: FCM packet checking failed. Invalid packet length (*m*).]{lang="EN-US"}]{#struct_0_88685_x1869_363699691}
+App *n /* Terminal *n*: FCM packet checking failed. Invalid packet length (*m*).
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_586283939}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：检查]{style="font-family:宋体"}[FCM]{lang="EN-US"}[报文时报文长度]{style="font-family:宋体"}[(*m*)]{lang="EN-US"}[错误]{style="font-family:宋体"}
+应用*n / *终端*n*：检查FCM报文时报文长度(*m*)错误
 
-[[App *n /* Terminal *n*: Flow packet checking failed. Invalid STX*(m)*.]{lang="EN-US"}]{#struct_0_88685_x1869_170463514}
+App *n /* Terminal *n*: Flow packet checking failed. Invalid STX*(m)*.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x1854313814}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：检查异步报文时其特定域]{style="font-family:宋体"}[STX*(m)*]{lang="EN-US"}[错误]{style="font-family:宋体"}
+应用*n / *终端*n*：检查异步报文时其特定域STX*(m)*错误
 
-[[App *n /* Terminal *n*: Flow packet checking failed. Invalid TPDU-ID*(m)*.]{lang="EN-US"}]{#struct_0_88685_x1869_156082349}
+App *n /* Terminal *n*: Flow packet checking failed. Invalid TPDU-ID*(m)*.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_585825184}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：检查异步报文时其]{style="font-family:宋体"}[TPDU ID*(m)*]{lang="EN-US"}[错误]{style="font-family:宋体"}
+应用*n / *终端*n*：检查异步报文时其TPDU ID*(m)*错误
 
-[[App *n /* Terminal *n*: Flow packet checking failed. Invalid ETX(*m*).]{lang="EN-US"}]{#struct_0_88685_x1869_887857072}
+App *n /* Terminal *n*: Flow packet checking failed. Invalid ETX(*m*).
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x1302573491}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：检查异步报文时其特定域]{style="font-family:宋体"}[ETX*(m)*]{lang="EN-US"}[错误]{style="font-family:宋体"}
+应用*n / *终端*n*：检查异步报文时其特定域ETX*(m)*错误
 
-[[App *n /* Terminal *n*: Flow packet checking failed. Invalid CRC(*p)*, should be *q*.]{lang="EN-US"}]{#struct_0_88685_x1869_x362918030}
+App *n /* Terminal *n*: Flow packet checking failed. Invalid CRC(*p)*, should be *q*.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_585759648}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：检查异步报文时其特定域]{style="font-family:宋体"}[CRC*(p)*]{lang="EN-US"}[错误，正确的]{style="font-family:宋体"}[CRC]{lang="EN-US"}[是]{style="font-family:宋体"}[(*q)*]{lang="EN-US"}
+应用*n / *终端*n*：检查异步报文时其特定域CRC*(p)*错误，正确的CRC是(*q)*
 
-[[Failed to get private data for interface *ifname*.]{lang="EN-US"}]{#struct_0_88685_x1869_x1953802040}
+Failed to get private data for interface *ifname*.
 
-[[获取接口（]{style="font-family:宋体"}*[ifname]{lang="EN-US"}*]{#struct_0_88685_x1869_1109957136}[）私有数据块失败]{style="font-family:宋体"}
+获取接口（*ifname*）私有数据块失败
 
-[[App *n /* Terminal *n*: Failed to set non-block mode, error code=*m*.]{lang="EN-US"}]{#struct_0_88685_x1869_x1326874477}
+App *n /* Terminal *n*: Failed to set non-block mode, error code=*m*.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_585956256}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：设置连接为非阻塞失败，错误码为]{style="font-family:宋体"}*[m]{lang="EN-US"}*
+应用*n / *终端*n*：设置连接为非阻塞失败，错误码为*m*
 
-[[TTYM was lost.]{lang="EN-US"}]{#struct_0_88685_x1869_x1401214146}
+TTYM was lost.
 
-[[断开与]{style="font-family:宋体"}[TTYM]{lang="EN-US"}]{#struct_0_88685_x1869_x1718430866}[连接]{style="font-family:宋体"}
+断开与TTYM连接
 
-[[Terminal *n*: Failed to enable nontcp terminal because instance has already existed]{lang="EN-US"}]{#struct_0_88685_x1869_585890720}
+Terminal *n*: Failed to enable nontcp terminal because instance has already existed
 
-[[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x210771255}[：由于实例已经存在，导致使能非]{style="font-family:宋体"}[tcp]{lang="EN-US"}[类型终端失败]{style="font-family:宋体"}
+终端*n*：由于实例已经存在，导致使能非tcp类型终端失败
 
-[[App *n /* Terminal *n*: Failed to register interface *ifname* to TTYM.]{lang="EN-US"}]{#struct_0_88685_x1869_1793482274}
+App *n /* Terminal *n*: Failed to register interface *ifname* to TTYM.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x2096533775}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：向]{style="font-family:宋体"}[ttym]{lang="EN-US"}[注册接口]{style="font-family:宋体"}[(*ifname*)]{lang="EN-US"}[失败]{style="font-family:宋体"}
+应用*n / *终端*n*：向ttym注册接口(*ifname*)失败
 
-[[App *n /* Terminal *n*: Failed to unregister interface *ifname* toTTYM ]{lang="EN-US"}]{#struct_0_88685_x1869_586087328}
+App *n /* Terminal *n*: Failed to unregister interface *ifname* toTTYM
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x1690263767}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：撤销向]{style="font-family:宋体"}[ttym]{lang="EN-US"}[注册接口]{style="font-family:宋体"}[(*ifname*)]{lang="EN-US"}[失败]{style="font-family:宋体"}
+应用*n / *终端*n*：撤销向ttym注册接口(*ifname*)失败
 
-[[App *n /* Terminal *n*: Failed to put TTY device for interface *ifname*.]{lang="EN-US"}]{#struct_0_88685_x1869_600963799}
+App *n /* Terminal *n*: Failed to put TTY device for interface *ifname*.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_586021792}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：接口]{style="font-family:宋体"}[(*ifname)*]{lang="EN-US"}[放弃]{style="font-family:宋体"}[tty]{lang="EN-US"}[设备控制权失败]{style="font-family:宋体"}
+应用*n / *终端*n*：接口(*ifname)*放弃tty设备控制权失败
 
-[[App *n /* Terminal *n*: Failed to read data from interface or socket.]{lang="EN-US"}]{#struct_0_88685_x1869_1839952709}
+App *n /* Terminal *n*: Failed to read data from interface or socket.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_1597177130}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：从接口或]{style="font-family:宋体"}[socket]{lang="EN-US"}[中读取数据失败]{style="font-family:宋体"}
+应用*n / *终端*n*：从接口或socket中读取数据失败
 
-[[Failed to connect to TTYM]{lang="EN-US"}]{#struct_0_88685_x1869_586218400}
+Failed to connect to TTYM
 
-[[连接到]{style="font-family:宋体"}[TTYM]{lang="EN-US"}]{#struct_0_88685_x1869_1716851989}[失败]{style="font-family:宋体"}
+连接到TTYM失败
 
-[[App *n /* Terminal *n*:Failed to get TTY device for interface *ifname*.]{lang="EN-US"}]{#struct_0_88685_x1869_x1009217655}
+App *n /* Terminal *n*:Failed to get TTY device for interface *ifname*.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_586152864}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：接口]{style="font-family:宋体"}[(*ifname)*]{lang="EN-US"}[获取]{style="font-family:宋体"}[tty]{lang="EN-US"}[设备控制权失败]{style="font-family:宋体"}
+应用*n / *终端*n*：接口(*ifname)*获取tty设备控制权失败
 
-[[App *n /* Terminal *n*: Failed to open device *s* error code=*m*.]{lang="EN-US"}]{#struct_0_88685_x1869_x852713895}
+App *n /* Terminal *n*: Failed to open device *s* error code=*m*.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x162818844}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：打开设备]{style="font-family:宋体"}[(*s*)]{lang="EN-US"}[失败，错误码为]{style="font-family:宋体"}*[m]{lang="EN-US"}*
+应用*n / *终端*n*：打开设备(*s*)失败，错误码为*m*
 
-[[App *n*: Failed to create more instance. Source port is set.]{lang="EN-US"}]{#struct_0_88685_x1869_586349472}
+App *n*: Failed to create more instance. Source port is set.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_546706874}[：由于配置了源端口的模板只允许一个实例，导致创建其他实例失败]{style="font-family:宋体"}
+应用*n*：由于配置了源端口的模板只允许一个实例，导致创建其他实例失败
 
-[[Failed to add fd:*n* to epoll.]{lang="EN-US"}]{#struct_0_88685_x1869_363699692}
+Failed to add fd:*n* to epoll.
 
-[[添加]{style="font-family:宋体"}[fd(*n*)]{lang="EN-US"}]{#struct_0_88685_x1869_586283936}[到]{style="font-family:宋体"}[epoll]{lang="EN-US"}[失败]{style="font-family:宋体"}
+添加fd(*n*)到epoll失败
 
-[[App *n /* Terminal *n*: Failed to get *s* attribute, error code=*m*.]{lang="EN-US"}]{#struct_0_88685_x1869_170463521}
+App *n /* Terminal *n*: Failed to get *s* attribute, error code=*m*.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x280335697}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：获取]{style="font-family:宋体"}[tty]{lang="EN-US"}[设备]{style="font-family:宋体"}[(*s)*]{lang="EN-US"}[失败，错误码为]{style="font-family:宋体"}*[m]{lang="EN-US"}*
+应用*n / *终端*n*：获取tty设备(*s)*失败，错误码为*m*
 
-[[App *n /* Terminal *n*: Failed to set *s* attribute, error code=*m*.]{lang="EN-US"}]{#struct_0_88685_x1869_585825185}
+App *n /* Terminal *n*: Failed to set *s* attribute, error code=*m*.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_887857071}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：设置]{style="font-family:宋体"}[tty]{lang="EN-US"}[设备]{style="font-family:宋体"}[(*s)*]{lang="EN-US"}[失败，错误码为]{style="font-family:宋体"}*[m]{lang="EN-US"}*
+应用*n / *终端*n*：设置tty设备(*s)*失败，错误码为*m*
 
-[[App *n /* Terminal *n*: Failed to get instance for tty event.]{lang="EN-US"}]{#struct_0_88685_x1869_x1302573494}
+App *n /* Terminal *n*: Failed to get instance for tty event.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_585759649}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：处理]{style="font-family:宋体"}[tty]{lang="EN-US"}[事件获取实例失败]{style="font-family:宋体"}
+应用*n / *终端*n*：处理tty事件获取实例失败
 
-[[App *n /* Terminal *n*: Failed to get fd for tty event.]{lang="EN-US"}]{#struct_0_88685_x1869_x1953802039}
+App *n /* Terminal *n*: Failed to get fd for tty event.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_585956257}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：处理]{style="font-family:宋体"}[tty]{lang="EN-US"}[事件获取句柄失败]{style="font-family:宋体"}
+应用*n / *终端*n*：处理tty事件获取句柄失败
 
-[[App *n /* Terminal *n*: Failed to recevie data due to buffer overflow.]{lang="EN-US"}]{#struct_0_88685_x1869_x1401214145}
+App *n /* Terminal *n*: Failed to recevie data due to buffer overflow.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x2121715393}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：由于接受缓冲满，无法读取新的报文]{style="font-family:宋体"}
+应用*n / *终端*n*：由于接受缓冲满，无法读取新的报文
 
-[[App *n /* Terminal *n*: Failed to send data due to buffer overflow.]{lang="EN-US"}]{#struct_0_88685_x1869_585890721}
+App *n /* Terminal *n*: Failed to send data due to buffer overflow.
 
-[[应用]{style="font-family:宋体"}*[n / ]{lang="EN-US"}*]{#struct_0_88685_x1869_x210771254}[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[：由于发送缓存满，无法发送新的报文]{style="font-family:宋体"}
+应用*n / *终端*n*：由于发送缓存满，无法发送新的报文
 
-[[Failed to send Lipc message.]{lang="EN-US"}]{#struct_0_88685_x1869_1278769745}
+Failed to send Lipc message.
 
-[[发送]{style="font-family:宋体"}[LIPC]{lang="EN-US"}]{#struct_0_88685_x1869_x287314196}[消息失败]{style="font-family:宋体"}
+发送LIPC消息失败
 
-[[Recevied invalid Lipc message.]{lang="EN-US"}]{#struct_0_88685_x1869_x856549634}
+Recevied invalid Lipc message.
 
-[[收到无效的]{style="font-family:宋体"}[LIPC]{lang="EN-US"}]{#struct_0_88685_x1869_x1853398137}[消息]{style="font-family:宋体"}
+收到无效的LIPC消息
 
-[[App *n* : Socket (fd: *n*) received epoll event,event=*a*, error code=*b*.]{lang="EN-US"}]{#struct_0_88685_x1869_x1401421156}
+App *n* : Socket (fd: *n*) received epoll event,event=*a*, error code=*b*.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_875485218}[：]{style="font-family:宋体"}[socket *n* ]{lang="EN-US"}[接收到]{style="font-family:宋体"}[epoll]{lang="EN-US"}[事件]{style="font-family:宋体"}*[a]{lang="EN-US"}*[，错误码为]{style="font-family:宋体"}*[b]{lang="EN-US"}*
+应用*n*：socket *n* 接收到epoll事件*a*，错误码为*b*
 
-[[App *n*: Instance *m* keep was down.]{lang="EN-US"}]{#struct_0_88685_x1869_x690598723}
+App *n*: Instance *m* keep was down.
 
-[[应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_x592346833}[：实例]{style="font-family:宋体"}*[m]{lang="EN-US"}*[报文保活失败]{style="font-family:宋体"}
+应用*n*：实例*m*报文保活失败
 
-[[Terminal *n*: Number of concurrent trades for instance *m* exceeded the limit *o*.]{lang="EN-US"}]{#struct_0_88685_x1869_1958853026}
+Terminal *n*: Number of concurrent trades for instance *m* exceeded the limit *o*.
 
-[[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_1959704994}[：实例]{style="font-family:宋体"}*[m]{lang="EN-US"}*[的并发交易数超过上限值]{style="font-family:宋体"}*[o]{lang="EN-US"}*
+终端*n*：实例*m*的并发交易数超过上限值*o*
 
-[[Failed to allocate trade resources.]{lang="EN-US"}]{#struct_0_88685_x1869_x469675459}
+Failed to allocate trade resources.
 
-[[分配交易资源失败]{style="font-family:宋体"}]{#struct_0_88685_x1869_1959770530}
+分配交易资源失败
 
-[[Terminal *n*: Instance *m* failed to get a trade number due to trade resource allocation error.]{lang="EN-US"}]{#struct_0_88685_x1869_x438557517}
+Terminal *n*: Instance *m* failed to get a trade number due to trade resource allocation error.
 
-[[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_1959180705}[：实例]{style="font-family:宋体"}*[m]{lang="EN-US"}*[获取交易号失败，原因是交易资源申请失败]{style="font-family:宋体"}
+终端*n*：实例*m*获取交易号失败，原因是交易资源申请失败
 
-[[Terminal *n*: Instance *m* failed to get a trade number because no idle trade number was left.]{lang="EN-US"}]{#struct_0_88685_x1869_x38394638}
+Terminal *n*: Instance *m* failed to get a trade number because no idle trade number was left.
 
-[[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_1959246241}[：实例]{style="font-family:宋体"}*[m]{lang="EN-US"}*[获取交易号失败，原因是无空闲交易号]{style="font-family:宋体"}
+终端*n*：实例*m*获取交易号失败，原因是无空闲交易号
 
-[[Terminal *n*: Instance *m* failed to create timer for trade *o*.]{lang="EN-US"}]{#struct_0_88685_x1869_x447583819}
+Terminal *n*: Instance *m* failed to create timer for trade *o*.
 
-[[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_1959049633}[：实例]{style="font-family:宋体"}*[m]{lang="EN-US"}*[为交易]{style="font-family:宋体"}*[o]{lang="EN-US"}*[创建定时器失败]{style="font-family:宋体"}
+终端*n*：实例*m*为交易*o*创建定时器失败
 
-[[Trade number *o* has already been released.]{lang="EN-US"}]{#struct_0_88685_x1869_x96643761}
+Trade number *o* has already been released.
 
-[[交易号]{style="font-family:宋体"}*[o]{lang="EN-US"}*]{#struct_0_88685_x1869_1959115169}[已经被释放]{style="font-family:宋体"}
+交易号*o*已经被释放
 
-[[Terminal *n*: FCM packet checking failed. Invalid TPDU-ID*(m)*.]{lang="EN-US"}]{#struct_0_88685_x1869_x430711315}
+Terminal *n*: FCM packet checking failed. Invalid TPDU-ID*(m)*.
 
-[[终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_88685_x1869_1958918561}[：检查]{style="font-family:宋体"}[FCM]{lang="EN-US"}[报文时其]{style="font-family:宋体"}[TPDU ID*(m)*]{lang="EN-US"}[错误]{style="font-family:宋体"}
+终端*n*：检查FCM报文时其TPDU ID*(m)*错误
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_88685_x1869_1793416738}
+\# 打开错误调试信息开关，在没有配置匹配的map表情况下，发起一次交易。
 
-[[\# ]{lang="EN-US"}]{#struct_0_88685_x1869_x1367785119}[打开错误调试信息开关，在没有配置匹配的]{style="font-family:宋体"}[map]{lang="EN-US"}[表情况下，发起一次交易。]{style="font-family:宋体"}
+\<System\> debugging posa error
 
-[[\<System\> debugging posa error]{lang="EN-US"}]{#struct_0_88685_x1869_x1759750952}
+\*Aug  7 18:09:38:603 2012 System POSA/7/ERROR: -MDC=1; Failed to match map.
 
-[\*Aug  7 18:09:38:603 2012 System POSA/7/ERROR: -MDC=1; Failed to match map.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_88685_x1869_586087329}*[显示匹配]{style="font-family:宋体"}[map]{lang="EN-US"}[表失败]{style="font-family:宋体"}*
-
-::: {#-1125272813 .myid}
-[]{#_Toc404785865}[]{#struct_0_88685_x1869_x1690263768}[]{#_Toc212180726}[]{#_Toc200170329}[]{#_Toc194748104}[]{#_Toc193529372}
+*// 显示匹配map表失败*
 
 **POS终端接入 \-- POS终端接入调试命令 \-- debugging posa packet**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_88685_x1869_197679272}
+【命令】
 
-[**[debugging posa packet]{lang="EN-US"}**[ \[ **receive** \| **send** \] \[ **terminal** *terminal-id* \| **app** *app-id* \]]{lang="EN-US"}]{#struct_0_88685_x1869_1372331486}
+**[debugging posa packet**[ [ **receive** \| **send**   **terminal** *terminal-id* \| **app** *app-id* ]]]
 
-[**[undo debugging posa packet]{lang="EN-US"}**[ \[ **receive** \| **send** \] \[ **terminal** *terminal-id* \| **app** *app-id* \]]{lang="EN-US"}]{#struct_0_88685_x1869_617398407}
+**[undo debugging posa packet**[ [ **receive** \| **send**   **terminal** *terminal-id* \| **app** *app-id* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_88685_x1869_x1236276586}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_88685_x1869_x1519906639}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_88685_x1869_965776572}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_88685_x1869_1412627406}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_88685_x1869_x1594394242}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_88685_x1869_x515409649}
+【参数】
 
-[**[receive]{lang="EN-US"}**]{#struct_0_88685_x1869_586021793}[：表示接收报文的调试信息开关。]{style="font-family:宋体"}
+**[receive**]：表示接收报文的调试信息开关。
 
-[**[send]{lang="EN-US"}**]{#struct_0_88685_x1869_1839952708}[：表示发送报文的调试信息开关。]{style="font-family:宋体"}
+**[send**]：表示发送报文的调试信息开关。
 
-[**[terminal]{lang="EN-US"}***[ terminal-id]{lang="EN-US"}*]{#struct_0_88685_x1869_1597111594}[：终端]{style="font-family:宋体"}[ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[terminal*** terminal-id*]：终端ID，取值范围为1～255。
 
-[**[app]{lang="EN-US"}***[ app-id]{lang="EN-US"}*]{#struct_0_88685_x1869_x1434000407}[：应用]{style="font-family:宋体"}[ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1024]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[app*** app-id*]：应用ID，取值范围为1～1024。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_88685_x1869_x725810422}
+【描述】
 
-[**[debugging posa packet]{lang="EN-US"}**]{#struct_0_88685_x1869_611975645}[命令用来打开]{style="font-family:宋体"}[POS]{lang="EN-US"}[接入报文调试开关，可以使用]{style="font-family:宋体"}**[receive]{lang="EN-US"}**[、]{style="font-family:宋体"}**[send]{lang="EN-US"}**[参数来控制打开特定方向的报文调试开关；使用]{style="font-family:宋体"}**[terminal]{lang="EN-US"}**[、]{style="font-family:宋体"}**[app]{lang="EN-US"}**[参数来控制打开某个终端模板或应用模板的报文调试开关。]{style="font-family:宋体"}
+**[debugging posa packet**]命令用来打开POS接入报文调试开关，可以使用**receive**、**send**参数来控制打开特定方向的报文调试开关；使用**terminal**、**app**参数来控制打开某个终端模板或应用模板的报文调试开关。
 
-[**[undo debugging posa packet]{lang="EN-US"}**]{#struct_0_88685_x1869_x1176645686}[命令用来关闭]{style="font-family:
-宋体"}[POS]{lang="EN-US"}[接入报文调试开关，可以使用]{style="font-family:宋体"}**[receive]{lang="EN-US"}**[、]{style="font-family:宋体"}**[send]{lang="EN-US"}**[、]{style="font-family:宋体"}**[terminal]{lang="EN-US"}**[、]{style="font-family:宋体"}**[app]{lang="EN-US"}**[参数来控制关闭某个终端或应用模板特定方向的报文调试开关。]{style="font-family:宋体"}
+**[undo debugging posa packet**]命令用来关闭POS接入报文调试开关，可以使用**receive**、**send**、**terminal**、**app**参数来控制关闭某个终端或应用模板特定方向的报文调试开关。
 
-[[POS]{lang="EN-US"}]{#struct_0_88685_x1869_239609135}[报文特定域：]{style="font-family:宋体"}[STX ]{lang="EN-US"}[、]{style="font-family:宋体"}[PktLen(]{lang="EN-US"}[报文包长]{style="font-family:宋体"}[)]{lang="EN-US"}[、]{style="font-family:宋体"}[ID]{lang="EN-US"}[（传输协议数据单元]{style="font-family:宋体"}[ID]{lang="EN-US"}[，即]{style="font-family:宋体"}[TPDU  ID]{lang="EN-US"}[）、]{style="font-family:宋体"}[DST]{lang="EN-US"}[（]{style="font-family:宋体"}[TPDU ]{lang="EN-US"}[目的地址）、]{style="font-family:宋体"}[SRC]{lang="EN-US"}[（]{style="font-family:宋体"}[TPDU ]{lang="EN-US"}[源地址）、]{style="font-family:宋体"}[EXT]{lang="EN-US"}[、]{style="font-family:宋体"}[CRC]{lang="EN-US"}[（校验和）。]{style="font-family:宋体"}
+POS报文特定域：STX 、PktLen(报文包长)、ID（传输协议数据单元ID，即TPDU  ID）、DST（TPDU 目的地址）、SRC（TPDU 源地址）、EXT、CRC（校验和）。
 
-[[当接收到的报文不完整时，无报文数据的域显示为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_88685_x1869_x561916010}[。当本次收到的报文数据大于]{style="font-family:宋体"}[32]{lang="EN-US"}[字节时，只显示前]{style="font-family:宋体"}[32]{lang="EN-US"}[字节的报文内容。]{style="font-family:宋体"}
+当接收到的报文不完整时，无报文数据的域显示为0。当本次收到的报文数据大于32字节时，只显示前32字节的报文内容。
 
-[[缺省情况下，]{style="font-family:宋体"}[POS]{lang="EN-US"}]{#struct_0_88685_x1869_x1916609207}[接入报文调试开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，POS接入报文调试开关处于关闭状态。
 
-[]{#struct_0_88685_x1869_586218401}[[表1-4 ]{lang="EN-US"}[debugging posa packet]{lang="EN-US"}]{#_Ref203361581}[命令输出信息描述表]{style="font-family:黑体"}
+表1-4 debugging posa packet命令输出信息描述表
 
-[]{#table_struct_0_x1839479482}[[字段]{style="font-family:黑体"}]{#struct_0_88685_x1869_1716851990}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_88685_x1869_x1008627830}
+描述
 
-[[Received *m* bytes from flow terminal *n*.]{lang="EN-US"}]{#struct_0_88685_x1869_566660905}
+Received *m* bytes from flow terminal *n*.
 
-[[STX PktLen(a) ID(b) DST(c) SRC(d) ETX CRC(e)]{lang="EN-US"}]{#struct_0_88685_x1869_1352209237}
+STX PktLen(a) ID(b) DST(c) SRC(d) ETX CRC(e)
 
-[[Total length:x offset:y]{lang="EN-US"}[, partial data as follows:]{lang="EN-US"}]{#struct_0_88685_x1869_x1880730227}
+Total length:x offset:y, partial data as follows:
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[从]{style="font-family:宋体"}]{#struct_0_88685_x1869_132610307}[flow]{lang="EN-US"}[类型的终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[收到]{style="font-family:宋体"}*[m]{lang="EN-US"}*[字节]{style="font-family:宋体"}
+·从flow类型的终端*n*收到*m*字节
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[STX PktLen*(a)* ID(*b*) DST(*c*) SRC(*d*) ETX *CRC*(*e*)]{lang="EN-US"}]{#struct_0_88685_x1869_586152865}
+·STX PktLen*(a)* ID(*b*) DST(*c*) SRC(*d*) ETX *CRC*(*e*)
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[报文长度：]{style="font-family:宋体"}]{#struct_0_88685_x1869_x852713894}*[x]{lang="EN-US"}*[ ]{lang="EN-US"}[偏移量：]{style="font-family:宋体"}*[y]{lang="EN-US"}*[，部分报文内容如下：]{style="font-family:宋体"}
+·报文长度：*x*偏移量：*y*，部分报文内容如下：
 
-[[Received *m* bytes from tcp terminal *n*.]{lang="EN-US"}]{#struct_0_88685_x1869_x162884380}
+Received *m* bytes from tcp terminal *n*.
 
-[[PktLen(a) ID(b) DST(c) SRC(d)]{lang="EN-US"}]{#struct_0_88685_x1869_x600116164}
+PktLen(a) ID(b) DST(c) SRC(d)
 
-[[Total length:x, offset: y]{lang="EN-US"}[, partial data as follows:]{lang="EN-US"}]{#struct_0_88685_x1869_x1769481710}
+Total length:x, offset: y, partial data as follows:
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[从]{style="font-family:宋体"}]{#struct_0_88685_x1869_1975847027}[tcp]{lang="EN-US"}[类型的终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[收到]{style="font-family:宋体"}*[m]{lang="EN-US"}*[字节]{style="font-family:宋体"}
+·从tcp类型的终端*n*收到*m*字节
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PktLen(*a*) ID(*b*) DST(*c*) SRC(*d*)]{lang="EN-US"}]{#struct_0_88685_x1869_586349473}
+·PktLen(*a*) ID(*b*) DST(*c*) SRC(*d*)
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[报文长度：]{style="font-family:宋体"}]{#struct_0_88685_x1869_546706873}*[x]{lang="EN-US"}*[ ]{lang="EN-US"}[偏移量：]{style="font-family:宋体"}*[y]{lang="EN-US"}*[，部分报文内容如下：]{style="font-family:宋体"}
+·报文长度：*x*偏移量：*y*，部分报文内容如下：
 
-[[Received *m* bytes from ]{lang="EN-US"}[fcm ]{lang="EN-US"}]{#struct_0_88685_x1869_363699697}[terminal *n*.]{lang="EN-US"}
+Received *m* bytes from fcm terminal *n*.
 
-[[ID(a) DST(b) SRC(c)]{lang="EN-US"}]{#struct_0_88685_x1869_479535700}
+ID(a) DST(b) SRC(c)
 
-[[Total length:x, offset: y]{lang="EN-US"}[, partial data as follows:]{lang="EN-US"}]{#struct_0_88685_x1869_x1880704987}
+Total length:x, offset: y, partial data as follows:
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[从]{style="font-family:宋体"}]{#struct_0_88685_x1869_x2080260483}[fcm]{lang="EN-US"}[类型的终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[收到]{style="font-family:宋体"}*[m]{lang="EN-US"}*[字节]{style="font-family:宋体"}
+·从fcm类型的终端*n*收到*m*字节
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ID(*a*) DST(*b*) SRC(*c*)]{lang="EN-US"}]{#struct_0_88685_x1869_586283937}
+·ID(*a*) DST(*b*) SRC(*c*)
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[报文长度：]{style="font-family:宋体"}]{#struct_0_88685_x1869_170463520}*[x]{lang="EN-US"}*[ ]{lang="EN-US"}[偏移量：]{style="font-family:宋体"}*[y]{lang="EN-US"}*[，部分报文内容如下：]{style="font-family:宋体"}
+·报文长度：*x*偏移量：*y*，部分报文内容如下：
 
-[[Received *m* bytes from ]{lang="EN-US"}[fcm ]{lang="EN-US"}]{#struct_0_88685_x1869_x280335698}[terminal *n*.]{lang="EN-US"}
+Received *m* bytes from fcm terminal *n*.
 
-[[No head]{lang="EN-US"}]{#struct_0_88685_x1869_1480297369}
+No head
 
-[[Total length:x, offset: y]{lang="EN-US"}[, partial data as follows:]{lang="EN-US"}]{#struct_0_88685_x1869_x1037380217}
+Total length:x, offset: y, partial data as follows:
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[从]{style="font-family:宋体"}]{#struct_0_88685_x1869_x759856961}[fcm]{lang="EN-US"}[类型的终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[收到]{style="font-family:宋体"}*[m]{lang="EN-US"}*[字节]{style="font-family:宋体"}
+·从fcm类型的终端*n*收到*m*字节
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[无头报文]{lang="EN-US" style="font-family:宋体"}]{#struct_0_88685_x1869_x2143058167}
+·无头报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[报文长度：]{style="font-family:宋体"}]{#struct_0_88685_x1869_223161478}*[x]{lang="EN-US"}*[ ]{lang="EN-US"}[偏移量：]{style="font-family:宋体"}*[y]{lang="EN-US"}*[，部分报文内容如下：]{style="font-family:宋体"}
+·报文长度：*x*偏移量：*y*，部分报文内容如下：
 
-[[Received *m* bytes from ]{lang="EN-US"}[flow ]{lang="EN-US"}]{#struct_0_88685_x1869_364852840}[terminal *n*.]{lang="EN-US"}
+Received *m* bytes from flow terminal *n*.
 
-[[Transparent packet]{lang="EN-US"}]{#struct_0_88685_x1869_x544153456}
+Transparent packet
 
-[[Total length:x, offset: y]{lang="EN-US"}[, partial data as follows:]{lang="EN-US"}]{#struct_0_88685_x1869_x2143123703}
+Total length:x, offset: y, partial data as follows:
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[从]{style="font-family:宋体"}]{#struct_0_88685_x1869_271643823}[flow]{lang="EN-US"}[类型的终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[收到]{style="font-family:宋体"}*[m]{lang="EN-US"}*[字节]{style="font-family:宋体"}
+·从flow类型的终端*n*收到*m*字节
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[透传报文]{lang="EN-US" style="font-family:宋体"}]{#struct_0_88685_x1869_1652792828}
+·透传报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[报文长度：]{style="font-family:宋体"}]{#struct_0_88685_x1869_1618492279}*[x]{lang="EN-US"}*[ ]{lang="EN-US"}[偏移量：]{style="font-family:宋体"}*[y]{lang="EN-US"}*[，部分报文内容如下：]{style="font-family:宋体"}
+·报文长度：*x*偏移量：*y*，部分报文内容如下：
 
-[[Received *m* bytes from ]{lang="EN-US"}[fcm ]{lang="EN-US"}]{#struct_0_88685_x1869_168893289}[terminal *n*.]{lang="EN-US"}
+Received *m* bytes from fcm terminal *n*.
 
-[[Transparent packet]{lang="EN-US"}]{#struct_0_88685_x1869_x2142927095}
+Transparent packet
 
-[[Total length:x, offset: y]{lang="EN-US"}[, partial data as follows:]{lang="EN-US"}]{#struct_0_88685_x1869_525940933}
+Total length:x, offset: y, partial data as follows:
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[从]{style="font-family:宋体"}]{#struct_0_88685_x1869_x2095561521}[fcm]{lang="EN-US"}[类型的终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*[收到]{style="font-family:宋体"}*[m]{lang="EN-US"}*[字节]{style="font-family:宋体"}
+·从fcm类型的终端*n*收到*m*字节
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[透传报文]{lang="EN-US" style="font-family:宋体"}]{#struct_0_88685_x1869_197605844}
+·透传报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[报文长度：]{style="font-family:宋体"}]{#struct_0_88685_x1869_1401327667}*[x]{lang="EN-US"}*[ ]{lang="EN-US"}[偏移量：]{style="font-family:宋体"}*[y]{lang="EN-US"}*[，部分报文内容如下：]{style="font-family:宋体"}
+·报文长度：*x*偏移量：*y*，部分报文内容如下：
 
-[[Received *m* bytes from flow application *n*.]{lang="EN-US"}]{#struct_0_88685_x1869_x2142992631}
+Received *m* bytes from flow application *n*.
 
-[[STX PktLen(a) ID(b) DST(c) SRC(d) ETX CRC(e)]{lang="EN-US"}]{#struct_0_88685_x1869_x358051704}
+STX PktLen(a) ID(b) DST(c) SRC(d) ETX CRC(e)
 
-[[Total length:x, offset: y]{lang="EN-US"}]{#struct_0_88685_x1869_x291930870}
+Total length:x, offset: y
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[从]{style="font-family:宋体"}]{#struct_0_88685_x1869_x1868028283}[flow]{lang="EN-US"}[类型的应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*[收到]{style="font-family:宋体"}*[m]{lang="EN-US"}*[字节]{style="font-family:宋体"}
+·从flow类型的应用*n*收到*m*字节
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[STX PktLen(*a*) ID(*b*) DST(*c*) SRC(*d*) ETX CRC(*e*)]{lang="EN-US"}]{#struct_0_88685_x1869_x2142796023}
+·STX PktLen(*a*) ID(*b*) DST(*c*) SRC(*d*) ETX CRC(*e*)
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[报文长度：]{style="font-family:宋体"}]{#struct_0_88685_x1869_282360260}*[x ]{lang="EN-US"}*[偏移量：]{style="font-family:宋体"}*[y]{lang="EN-US"}*[ ]{lang="EN-US"}[，部分报文内容如下：]{style="font-family:宋体"}
+·报文长度：*x *偏移量：*y*，部分报文内容如下：
 
-[[Received *m* bytes from tcp application *n*.]{lang="EN-US"}]{#struct_0_88685_x1869_x2027220777}
+Received *m* bytes from tcp application *n*.
 
-[[PktLen(a) ID(b) DST(c) SRC(d)]{lang="EN-US"}]{#struct_0_88685_x1869_x1346501798}
+PktLen(a) ID(b) DST(c) SRC(d)
 
-[[Total length:x, offset: y]{lang="EN-US"}[, partial data as follows:]{lang="EN-US"}]{#struct_0_88685_x1869_x2142861559}
+Total length:x, offset: y, partial data as follows:
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[从]{style="font-family:宋体"}]{#struct_0_88685_x1869_x2094889408}[tcp]{lang="EN-US"}[类型的应用]{style="font-family:宋体"}[n]{lang="EN-US"}[收到]{style="font-family:宋体"}[m]{lang="EN-US"}[字节]{style="font-family:宋体"}
+·从tcp类型的应用n收到m字节
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PktLen(*a*) ID(*b*) DST(*c*) SRC(*d*)]{lang="EN-US"}]{#struct_0_88685_x1869_645675415}
+·PktLen(*a*) ID(*b*) DST(*c*) SRC(*d*)
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[报文长度：]{style="font-family:宋体"}]{#struct_0_88685_x1869_732443668}*[x ]{lang="EN-US"}*[偏移量：]{style="font-family:宋体"}*[y]{lang="EN-US"}*[，部分报文内容如下：]{style="font-family:宋体"}
+·报文长度：*x *偏移量：*y*，部分报文内容如下：
 
-[[Received *m* bytes from tcp application *n*.]{lang="EN-US"}]{#struct_0_88685_x1869_x2142664951}
+Received *m* bytes from tcp application *n*.
 
-[[Transparent packet]{lang="EN-US"}]{#struct_0_88685_x1869_x2127877356}
+Transparent packet
 
-[[Total length:x, offset: y]{lang="EN-US"}[, partial data as follows:]{lang="EN-US"}]{#struct_0_88685_x1869_x648996243}
+Total length:x, offset: y, partial data as follows:
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[从]{style="font-family:宋体"}]{#struct_0_88685_x1869_270030348}[tcp]{lang="EN-US"}[类型的应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*[收到]{style="font-family:宋体"}*[m]{lang="EN-US"}*[字节]{style="font-family:宋体"}
+·从tcp类型的应用*n*收到*m*字节
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[透传报文]{lang="EN-US" style="font-family:宋体"}]{#struct_0_88685_x1869_x2142730487}
+·透传报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[报文长度：]{style="font-family:宋体"}]{#struct_0_88685_x1869_1961110002}*[x ]{lang="EN-US"}*[偏移量：]{style="font-family:宋体"}*[y]{lang="EN-US"}*[，部分报文内容如下：]{style="font-family:宋体"}
+·报文长度：*x *偏移量：*y*，部分报文内容如下：
 
-[[Sent *m* bytes to flow terminal *n*.]{lang="EN-US"}]{#struct_0_88685_x1869_x320580691}
+Sent *m* bytes to flow terminal *n*.
 
-[[STX PktLen(a) ID(b) DST(c) SRC(d) ETX CRC(e)]{lang="EN-US"}]{#struct_0_88685_x1869_x2142533879}
+STX PktLen(a) ID(b) DST(c) SRC(d) ETX CRC(e)
 
-[[Total length:x, offset: y]{lang="EN-US"}[, partial data as follows:]{lang="EN-US"}]{#struct_0_88685_x1869_1284302224}
+Total length:x, offset: y, partial data as follows:
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[发送]{style="font-family:宋体"}]{#struct_0_88685_x1869_856723041}*[m]{lang="EN-US"}*[字节到]{style="font-family:宋体"}[flow]{lang="EN-US"}[类型的终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*
+·发送*m*字节到flow类型的终端*n*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[STX PktLen(]{lang="EN-US"}*[a]{lang="EN-US"}*]{#struct_0_88685_x1869_x1065980523}[) ID(]{lang="EN-US"}*[b]{lang="EN-US"}*[) DST(*c*) SRC(*d*) ETX CRC(*e*)]{lang="EN-US"}
+·STX PktLen(*a*) ID(*b*) DST(*c*) SRC(*d*) ETX CRC(*e*)
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[报文长度：]{style="font-family:宋体"}]{#struct_0_88685_x1869_x2142599415}*[x ]{lang="EN-US"}*[偏移量：]{style="font-family:宋体"}*[y]{lang="EN-US"}*[，部分报文内容如下：]{style="font-family:宋体"}
+·报文长度：*x *偏移量：*y*，部分报文内容如下：
 
-[[Sent *m* bytes to tcp terminal *n*.]{lang="EN-US"}]{#struct_0_88685_x1869_x2005418466}
+Sent *m* bytes to tcp terminal *n*.
 
-[[PktLen(a) ID(b) DST(c) SRC(d)]{lang="EN-US"}]{#struct_0_88685_x1869_x31321711}
+PktLen(a) ID(b) DST(c) SRC(d)
 
-[[Total length:x, offset: y]{lang="EN-US"}[, partial data as follows:]{lang="EN-US"}]{#struct_0_88685_x1869_x2143058166}
+Total length:x, offset: y, partial data as follows:
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[发送]{style="font-family:宋体"}]{#struct_0_88685_x1869_x1342922463}*[m]{lang="EN-US"}*[字节到]{style="font-family:宋体"}[tcp]{lang="EN-US"}[类型的终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*
+·发送*m*字节到tcp类型的终端*n*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PktLen(*a*) ID(*b*) DST(*c*) SRC(*d*)]{lang="EN-US"}]{#struct_0_88685_x1869_995184793}
+·PktLen(*a*) ID(*b*) DST(*c*) SRC(*d*)
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[报文长度：]{style="font-family:宋体"}]{#struct_0_88685_x1869_x237300891}*[x]{lang="EN-US"}*[ ]{lang="EN-US"}[偏移量：]{style="font-family:宋体"}*[y]{lang="EN-US"}*[，部分报文内容如下：]{style="font-family:宋体"}
+·报文长度：*x*偏移量：*y*，部分报文内容如下：
 
-[[Sent *m* bytes to ]{lang="EN-US"}[fcm ]{lang="EN-US"}]{#struct_0_88685_x1869_x2143123702}[terminal *n*.]{lang="EN-US"}
+Sent *m* bytes to fcm terminal *n*.
 
-[[ID(a) DST(b) SRC(c)]{lang="EN-US"}]{#struct_0_88685_x1869_1837727764}
+ID(a) DST(b) SRC(c)
 
-[[Total length:x, offset: y]{lang="EN-US"}[, partial data as follows:]{lang="EN-US"}]{#struct_0_88685_x1869_x527452433}
+Total length:x, offset: y, partial data as follows:
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[发送]{style="font-family:宋体"}]{#struct_0_88685_x1869_x2142927094}*[m]{lang="EN-US"}*[字节到]{style="font-family:宋体"}[fcm]{lang="EN-US"}[类型的终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*
+·发送*m*字节到fcm类型的终端*n*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ID(*a*) DST(*b*) SRC(*c*)]{lang="EN-US"}]{#struct_0_88685_x1869_2092024874}
+·ID(*a*) DST(*b*) SRC(*c*)
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[报文长度：]{style="font-family:宋体"}]{#struct_0_88685_x1869_77733535}*[x ]{lang="EN-US"}*[偏移量：]{style="font-family:宋体"}*[y]{lang="EN-US"}*[，部分报文内容如下：]{style="font-family:宋体"}
+·报文长度：*x *偏移量：*y*，部分报文内容如下：
 
-[[Sent *m* bytes to ]{lang="EN-US"}[fcm ]{lang="EN-US"}]{#struct_0_88685_x1869_x2142992630}[terminal *n*.]{lang="EN-US"}
+Sent *m* bytes to fcm terminal *n*.
 
-[[No head]{lang="EN-US"}]{#struct_0_88685_x1869_x1924135645}
+No head
 
-[[Total length:x, offset: y]{lang="EN-US"}[, partial data as follows:]{lang="EN-US"}]{#struct_0_88685_x1869_177554684}
+Total length:x, offset: y, partial data as follows:
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[发送]{style="font-family:宋体"}]{#struct_0_88685_x1869_x2142796022}*[m]{lang="EN-US"}*[字节到]{style="font-family:宋体"}[fcm]{lang="EN-US"}[类型的终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*
+·发送*m*字节到fcm类型的终端*n*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[无头报文]{lang="EN-US" style="font-family:宋体"}]{#struct_0_88685_x1869_x1283723681}
+·无头报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[报文长度：]{style="font-family:宋体"}]{#struct_0_88685_x1869_x698005431}*[x ]{lang="EN-US"}*[偏移量：]{style="font-family:宋体"}*[y]{lang="EN-US"}*[，部分报文内容如下：]{style="font-family:宋体"}
+·报文长度：*x *偏移量：*y*，部分报文内容如下：
 
-[[Sent *m* bytes to ]{lang="EN-US"}[flow ]{lang="EN-US"}]{#struct_0_88685_x1869_x2142861558}[terminal *n*.]{lang="EN-US"}
+Sent *m* bytes to flow terminal *n*.
 
-[[Transparent packet]{lang="EN-US"}]{#struct_0_88685_x1869_x528805467}
+Transparent packet
 
-[[Total length:x, offset: y]{lang="EN-US"}[, partial data as follows:]{lang="EN-US"}]{#struct_0_88685_x1869_x283335672}
+Total length:x, offset: y, partial data as follows:
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[发送]{style="font-family:宋体"}]{#struct_0_88685_x1869_x2142664950}*[m]{lang="EN-US"}*[字节到]{style="font-family:宋体"}[flow]{lang="EN-US"}[类型的终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*
+·发送*m*字节到flow类型的终端*n*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[透传报文]{lang="EN-US" style="font-family:宋体"}]{#struct_0_88685_x1869_x561793415}
+·透传报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[报文长度：]{style="font-family:宋体"}]{#struct_0_88685_x1869_x2142730486}*[x ]{lang="EN-US"}*[偏移量：]{style="font-family:宋体"}*[y]{lang="EN-US"}*[，部分报文内容如下：]{style="font-family:宋体"}
+·报文长度：*x *偏移量：*y*，部分报文内容如下：
 
-[[Sent *m* bytes to ]{lang="EN-US"}[fcm ]{lang="EN-US"}]{#struct_0_88685_x1869_395026061}[terminal *n*.]{lang="EN-US"}
+Sent *m* bytes to fcm terminal *n*.
 
-[[Transparent packet]{lang="EN-US"}]{#struct_0_88685_x1869_x668656564}
+Transparent packet
 
-[[Total length:x, offset: y]{lang="EN-US"}[, partial data as follows:]{lang="EN-US"}]{#struct_0_88685_x1869_x2142533878}
+Total length:x, offset: y, partial data as follows:
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[发送]{style="font-family:宋体"}]{#struct_0_88685_x1869_x281781717}*[m]{lang="EN-US"}*[字节到]{style="font-family:宋体"}[fcm]{lang="EN-US"}[类型的终端]{style="font-family:宋体"}*[n]{lang="EN-US"}*
+·发送*m*字节到fcm类型的终端*n*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[透传报文]{lang="EN-US" style="font-family:宋体"}]{#struct_0_88685_x1869_x1654015575}
+·透传报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[报文长度：]{style="font-family:宋体"}]{#struct_0_88685_x1869_x2142599414}*[x ]{lang="EN-US"}*[偏移量：]{style="font-family:宋体"}*[y]{lang="EN-US"}*[，部分报文内容如下：]{style="font-family:宋体"}
+·报文长度：*x *偏移量：*y*，部分报文内容如下：
 
-[[Sent *m* bytes to flow application *n*.]{lang="EN-US"}]{#struct_0_88685_x1869_723464889}
+Sent *m* bytes to flow application *n*.
 
-[[STX PktLen(a) ID(b) DST(c) SRC(d) ETX CRC(e)]{lang="EN-US"}]{#struct_0_88685_x1869_x315908290}
+STX PktLen(a) ID(b) DST(c) SRC(d) ETX CRC(e)
 
-[[Total length:x, offset: y]{lang="EN-US"}[, partial data as follows:]{lang="EN-US"}]{#struct_0_88685_x1869_x2143058169}
+Total length:x, offset: y, partial data as follows:
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[发送]{style="font-family:宋体"}]{#struct_0_88685_x1869_673500172}*[m]{lang="EN-US"}*[字节到]{style="font-family:宋体"}[flow]{lang="EN-US"}[类型的应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*
+·发送*m*字节到flow类型的应用*n*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[STX PktLen(]{lang="EN-US"}*[a]{lang="EN-US"}*]{#struct_0_88685_x1869_1529053944}[) ID(]{lang="EN-US"}*[b]{lang="EN-US"}*[) DST(]{lang="EN-US"}*[c]{lang="EN-US"}*[) SRC(]{lang="EN-US"}*[d]{lang="EN-US"}*[) ETX CRC(]{lang="EN-US"}*[e]{lang="EN-US"}*[)]{lang="EN-US"}
+·STX PktLen(*a*) ID(*b*) DST(*c*) SRC(*d*) ETX CRC(*e*)
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[报文长度：]{style="font-family:宋体"}]{#struct_0_88685_x1869_x2143123705}*[x ]{lang="EN-US"}*[偏移量：]{style="font-family:宋体"}*[y]{lang="EN-US"}*[，部分报文内容如下：]{style="font-family:宋体"}
+·报文长度：*x *偏移量：*y*，部分报文内容如下：
 
-[[Sent *m* bytes to tcp application *n*.]{lang="EN-US"}]{#struct_0_88685_x1869_1078212877}
+Sent *m* bytes to tcp application *n*.
 
-[[PktLen(a) ID(b) DST(c) SRC(d)]{lang="EN-US"}]{#struct_0_88685_x1869_x2142927097}
+PktLen(a) ID(b) DST(c) SRC(d)
 
-[[Total length:x, offset: y]{lang="EN-US"}[, partial data as follows:]{lang="EN-US"}]{#struct_0_88685_x1869_1688740347}
+Total length:x, offset: y, partial data as follows:
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[发送]{style="font-family:宋体"}]{#struct_0_88685_x1869_652310284}*[m]{lang="EN-US"}*[字节到]{style="font-family:宋体"}[tcp]{lang="EN-US"}[类型的应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*
+·发送*m*字节到tcp类型的应用*n*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PktLen(]{lang="EN-US"}*[a]{lang="EN-US"}*]{#struct_0_88685_x1869_x2142992633}[) ID(]{lang="EN-US"}*[b]{lang="EN-US"}*[) DST(]{lang="EN-US"}*[c]{lang="EN-US"}*[) SRC(]{lang="EN-US"}*[d]{lang="EN-US"}*[)]{lang="EN-US"}
+·PktLen(*a*) ID(*b*) DST(*c*) SRC(*d*)
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[报文长度：]{style="font-family:宋体"}]{#struct_0_88685_x1869_804747710}[x ]{lang="EN-US"}[偏移量：]{style="font-family:宋体"}[y]{lang="EN-US"}[，部分报文内容如下：]{style="font-family:宋体"}
+·报文长度：x 偏移量：y，部分报文内容如下：
 
-[[Sent *m* bytes to tcp application *n*.]{lang="EN-US"}]{#struct_0_88685_x1869_x2142796025}
+Sent *m* bytes to tcp application *n*.
 
-[[Transparent packet]{lang="EN-US"}]{#struct_0_88685_x1869_1088929314}
+Transparent packet
 
-[[Total length:x, offset: y]{lang="EN-US"}[, partial data as follows:]{lang="EN-US"}]{#struct_0_88685_x1869_x854833649}
+Total length:x, offset: y, partial data as follows:
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[发送]{style="font-family:宋体"}]{#struct_0_88685_x1869_x2142861561}*[m]{lang="EN-US"}*[字节到]{style="font-family:宋体"}[tcp]{lang="EN-US"}[类型的应用]{style="font-family:宋体"}*[n]{lang="EN-US"}*
+·发送*m*字节到tcp类型的应用*n*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[透传报文]{lang="EN-US" style="font-family:宋体"}]{#struct_0_88685_x1869_x1738462440}
+·透传报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[报文长度：]{style="font-family:宋体"}]{#struct_0_88685_x1869_x2142664953}*[x ]{lang="EN-US"}*[偏移量：]{style="font-family:宋体"}*[y]{lang="EN-US"}*[，部分报文内容如下：]{style="font-family:宋体"}
+·报文长度：*x *偏移量：*y*，部分报文内容如下：
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_88685_x1869_x965077942}
+\# 打开接受报文调试开关，发送一次完整报文。
 
-[[\# ]{lang="EN-US"}]{#struct_0_88685_x1869_x1733209959}[打开接受报文调试开关，发送一次完整报文。]{style="font-family:宋体"}
+\<System\>debugging posa packet receive
 
-[[\<System\>debugging posa packet receive]{lang="EN-US"}]{#struct_0_88685_x1869_1450746555}
+System\*Aug  7 18:15:58:136 2012 System POSA/7/PKTRECEIVE: -MDC=1; Received 9 bytes f
 
-[\[System\]\*Aug  7 18:15:58:136 2012 System POSA/7/PKTRECEIVE: -MDC=1; Received 9 bytes f]{lang="EN-US"}
+rom tcp terminal 1.
 
-[rom tcp terminal 1.]{lang="EN-US"}
+PktLen(0x0007) ID(0x60) DST(0x1111) SRC(0x2222)
 
-[PktLen(0x0007) ID(0x60) DST(0x1111) SRC(0x2222)]{lang="EN-US"}
+Total length: 9 Offset: 0, partial data as follows:
 
-[Total length: 9 Offset: 0, partial data as follows:]{lang="EN-US"}
+0x000:  00 07 60 11 11 22 22 aa bb
 
-[0x000:  00 07 60 11 11 22 22 aa bb]{lang="EN-US"}
-
-[*[// ]{lang="PT-BR"}*]{#struct_0_88685_x1869_x1997182701}*[收到]{style="font-family:宋体"}[9]{lang="EN-US"}[字节的报文]{style="font-family:宋体"}[，]{style="font-family:宋体"}[报文的]{style="font-family:宋体"}[TPDU ID]{lang="PT-BR"}[为]{style="font-family:宋体"}[0x60]{lang="PT-BR"}[，]{style="font-family:宋体"}[目的地址为]{style="font-family:宋体"}[0x2222]{lang="PT-BR"}[，]{style="font-family:宋体"}[源地址为]{style="font-family:宋体"}[0x1111]{lang="PT-BR"}[，报文长度为]{style="font-family:宋体"}[9]{lang="PT-BR"}[字节，偏移量为]{style="font-family:宋体"}[0]{lang="PT-BR"}*
+*// 收到9字节的报文，报文的TPDU ID为0x60，目的地址为0x2222，源地址为0x1111，报文长度为9字节，偏移量为0*

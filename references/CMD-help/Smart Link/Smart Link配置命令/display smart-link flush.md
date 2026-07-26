@@ -1,886 +1,794 @@
-::: {#-1041371115 .myid}
-[]{#_Toc404795784}[]{#struct_0_x7458_20707_x468586674}
 
 **Smart Link \-- Smart Link配置命令 \-- display smart-link flush**
 
 ------------------------------------------------------------------------
 
-[**[display smart-link flush]{lang="EN-US"}**]{#struct_0_x7458_20707_2041044170}[命令用来显示设备收到的]{style="font-family:
-宋体"}[Flush]{lang="EN-US"}[报文信息。]{style="font-family:
-宋体"}
+**[display smart-link flush**]命令用来显示设备收到的Flush报文信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x704027408}
+【命令】
 
-[**[display smart-link flush]{lang="EN-US"}**]{#struct_0_x7458_20707_x290304434}
+**[display smart-link flush**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7458_20707_436205619}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x7458_20707_58260084}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7458_20707_709216375}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7458_20707_x69069546}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x7458_20707_1698268217}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7458_20707_x734546921}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x7458_20707_11663679}
+mdc-operator
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7458_20707_1733588047}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7458_20707_1263450443}[显示设备收到的]{style="font-family:宋体"}[Flush]{lang="EN-US"}[报文信息。]{style="font-family:宋体"}
+\# 显示设备收到的Flush报文信息。
 
-[[\<Sysname\> display smart-link flush]{lang="EN-US"}]{#struct_0_x7458_20707_270553924}
+\<Sysname\> display smart-link flush
 
-[ Received flush packets                             : 10]{lang="EN-US"}
+ Received flush packets                             : 10
 
-[ Receiving interface of the last flush packet       : GigabitEthernet1/0/1]{lang="EN-US"}
+ Receiving interface of the last flush packet       : GigabitEthernet1/0/1
 
-[ Receiving time of the last flush packet            : 19:19:03 2012/04/21]{lang="EN-US"}
+ Receiving time of the last flush packet            : 19:19:03 2012/04/21
 
-[ Device ID of the last flush packet                 : 000f-e200-8500]{lang="EN-US"}
+ Device ID of the last flush packet                 : 000f-e200-8500
 
-[ Control VLAN of the last flush packet              : 1]{lang="EN-US"}
+ Control VLAN of the last flush packet              : 1
 
-[[表1-1 ]{lang="EN-US"}[display smart-link flush]{lang="EN-US"}]{#struct_0_x7458_20707_x701026046}[命令显示信息描述表]{style="font-family:黑体"}
+表1-1 display smart-link flush命令显示信息描述表
 
-[]{#table_struct_0_2066981171}[[字段]{style="font-family:黑体"}]{#struct_0_x7458_20707_x69004010}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x7458_20707_933700928}
+描述
 
-[[Received flush packets]{lang="EN-US"}]{#struct_0_x7458_20707_x1047108888}
+Received flush packets
 
-[[接收的]{style="font-family:宋体"}[Flush]{lang="EN-US"}]{#struct_0_x7458_20707_1533100950}[报文总数]{style="font-family:宋体"}
+接收的Flush报文总数
 
-[[Receiving interface of the last flush packet]{lang="EN-US"}]{#struct_0_x7458_20707_1459688702}
+Receiving interface of the last flush packet
 
-[[接收最后一个]{style="font-family:宋体"}[Flush]{lang="EN-US"}]{#struct_0_x7458_20707_x294663769}[报文的端口]{style="font-family:宋体"}
+接收最后一个Flush报文的端口
 
-[[Receiving time of the last flush packet]{lang="EN-US"}]{#struct_0_x7458_20707_x1763981160}
+Receiving time of the last flush packet
 
-[[接收最后一个]{style="font-family:宋体"}[Flush]{lang="EN-US"}]{#struct_0_x7458_20707_1961166771}[报文的时间]{style="font-family:宋体"}
+接收最后一个Flush报文的时间
 
-[[Device ID of the last flush packet]{lang="EN-US"}]{#struct_0_x7458_20707_x68938474}
+Device ID of the last flush packet
 
-[[接收的最后一个]{style="font-family:宋体"}[Flush]{lang="EN-US"}]{#struct_0_x7458_20707_x944826608}[报文中携带的设备标识]{style="font-family:宋体"}
+接收的最后一个Flush报文中携带的设备标识
 
-[[Control VLAN of the last flush packet]{lang="EN-US"}]{#struct_0_x7458_20707_904877616}
+Control VLAN of the last flush packet
 
-[[接收的最后一个]{style="font-family:宋体"}[Flush]{lang="EN-US"}]{#struct_0_x7458_20707_x872372767}[报文中携带的控制]{style="font-family:宋体"}[VLAN]{lang="EN-US"}
+接收的最后一个Flush报文中携带的控制VLAN
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x505943206}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset smart-link statistics]{lang="EN-US"}**]{#struct_0_x7458_20707_x2058912469}
-
-::: {#-1247267711 .myid}
-[]{#_Toc65310813}[]{#_Toc404795785}[]{#struct_0_x7458_20707_x1234931034}[]{#_Toc120502995}
+·**reset smart-link statistics**
 
 **Smart Link \-- Smart Link配置命令 \-- display smart-link group**
 
 ------------------------------------------------------------------------
 
-[**[display smart-link group]{lang="EN-US"}**]{#struct_0_x7458_20707_x191250842}[命令用来显示]{style="font-family:
-宋体"}[Smart Link]{lang="EN-US"}[组的信息。]{style="font-family:
-宋体"}
+**[display smart-link group**]命令用来显示Smart Link组的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x1952242305}
+【命令】
 
-[**[display smart-link group]{lang="EN-US"}**[ { *group-id* \| **all** }]{lang="EN-US"}]{#struct_0_x7458_20707_x68872938}
+**[display smart-link group**[ { *group-id* \| **all** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x1277815593}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x7458_20707_x35666598}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7458_20707_695643084}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7458_20707_x241170676}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x7458_20707_x857141050}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7458_20707_x458785432}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x7458_20707_x238113880}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7458_20707_1696093859}
+【参数】
 
-[*[group-id]{lang="EN-US"}*]{#struct_0_x7458_20707_x68807402}[：显示指定]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组的信息。]{style="font-family:宋体"}*[group-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组的编号，最小取值为]{style="font-family:宋体"}[1]{lang="EN-US"}[，不同型号的设备支持的最大值不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[group-id*]：显示指定Smart Link组的信息。*group-id*表示Smart Link组的编号，最小取值为1，不同型号的设备支持的最大值不同，请以设备的实际情况为准。
 
-[**[all]{lang="EN-US"}**]{#struct_0_x7458_20707_1024595571}[：显示所有]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组的信息。]{style="font-family:宋体"}
+**[all**]：显示所有Smart Link组的信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x1099836057}
+【使用指导】
 
-[[请勿将一个端口同时加入聚合组和]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}]{#struct_0_x7458_20707_x763344606}[组，否则该端口在]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组中将不会生效，也无法使用本命令查看到。]{style="font-family:宋体"}
+请勿将一个端口同时加入聚合组和Smart Link组，否则该端口在Smart Link组中将不会生效，也无法使用本命令查看到。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7458_20707_1721037678}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7458_20707_491831115}[显示]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组]{style="font-family:宋体"}[1]{lang="EN-US"}[的信息。]{style="font-family:
-宋体"}
+\# 显示Smart Link组1的信息。
 
-[[\<Sysname\> display smart-link group 1]{lang="EN-US"}]{#struct_0_x7458_20707_2056354659}
+\<Sysname\> display smart-link group 1
 
-[Smart link group 1 information:]{lang="EN-US"}
+Smart link group 1 information:
 
-[  Device ID       : 0011-2200-0001]{lang="EN-US"}
+  Device ID       : 0011-2200-0001
 
-[  Preemption mode : NONE]{lang="EN-US"}
+  Preemption mode : NONE
 
-[  Preemption delay: 1(s)]{lang="EN-US"}
+  Preemption delay: 1(s)
 
-[  Control VLAN    : 1]{lang="EN-US"}
+  Control VLAN    : 1
 
-[  Protected VLAN  : Reference Instance 2, 4]{lang="EN-US"}
+  Protected VLAN  : Reference Instance 2, 4
 
-[ ]{lang="EN-US"}
+  Member                  Role      State   Flush-count     Last-flush-time
 
-[  Member                  Role      State   Flush-count     Last-flush-time]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  GE1/0/1                 PRIMARY   ACTIVE  1               16:45:20 2012/04/21
 
-[  GE1/0/1                 PRIMARY   ACTIVE  1               16:45:20 2012/04/21]{lang="EN-US"}
+  GE1/0/2                 SECONDARY STANDBY 2               16:37:20 2012/04/21
 
-[  GE1/0/2                 SECONDARY STANDBY 2               16:37:20 2012/04/21]{lang="EN-US"}
+表1-2 display smart-link group命令显示信息描述表
 
-[[表1-2 ]{lang="EN-US"}[display smart-link group]{lang="EN-US"}]{#struct_0_x7458_20707_x68741866}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_2094179233}[[字段]{style="font-family:黑体"}]{#struct_0_x7458_20707_1663672343}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x7458_20707_1979071675}
+Smart link group 1 information
 
-[[Smart link group 1 information]{lang="EN-US"}]{#struct_0_x7458_20707_x729104271}
+Smart Link组的信息
 
-[[Smart Link]{lang="EN-US"}]{#struct_0_x7458_20707_x1223545243}[组的信息]{style="font-family:宋体"}
+Device ID
 
-[[Device ID]{lang="EN-US"}]{#struct_0_x7458_20707_493367085}
+设备标识
 
-[[设备标识]{style="font-family:宋体"}]{#struct_0_x7458_20707_280953051}
+Preemption mode
 
-[[Preemption mode]{lang="EN-US"}]{#struct_0_x7458_20707_x966912117}
+抢占模式：
 
-[[抢占模式：]{style="font-family:宋体"}]{#struct_0_x7458_20707_x68676330}
+·NONE：非抢占模式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NONE]{lang="EN-US"}]{#struct_0_x7458_20707_x1909141391}[：非抢占模式]{lang="EN-US" style="font-family:宋体"}
+·ROLE：角色抢占模式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ROLE]{lang="EN-US"}]{#struct_0_x7458_20707_x1331681439}[：角色抢占模式]{lang="EN-US" style="font-family:宋体"}
+Preemption delay
 
-[[Preemption delay]{lang="EN-US"}]{#struct_0_x7458_20707_1387907272}
+抢占延时，单位为秒
 
-[[抢占延时，单位为秒]{style="font-family:宋体"}]{#struct_0_x7458_20707_x1836854241}
+Control-VLAN
 
-[[Control-VLAN]{lang="EN-US"}]{#struct_0_x7458_20707_x171311139}
+控制VLAN
 
-[[控制]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x7458_20707_x293761658}
+Protected VLAN
 
-[[Protected VLAN]{lang="EN-US"}]{#struct_0_x7458_20707_x69659370}
+Smart Link组保护的VLAN列表。此处显示的是引用的MSTI（Multiple Spanning Tree Instance，多生成树实例），所引用的MSTI与VLAN间的映射关系可通过命令**display stp region-configuration**查看
 
-[[Smart Link]{lang="EN-US"}]{#struct_0_x7458_20707_x1031419852}[组保护的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表。此处显示的是引用的]{style="font-family:宋体"}[MSTI]{lang="EN-US"}[（]{style="font-family:宋体"}[Multiple Spanning Tree Instance]{lang="EN-US"}[，多生成树实例），所引用的]{style="font-family:宋体"}[MSTI]{lang="EN-US"}[与]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[间的映射关系可通过命令]{style="font-family:宋体"}**[display stp region-configuration]{lang="EN-US"}**[查看]{style="font-family:宋体"}
+Member
 
-[[Member]{lang="EN-US"}]{#struct_0_x7458_20707_x1584667763}
+Smart Link组的成员端口
 
-[[Smart Link]{lang="EN-US"}]{#struct_0_x7458_20707_x1642007922}[组的成员端口]{style="font-family:宋体"}
+Role
 
-[[Role]{lang="EN-US"}]{#struct_0_x7458_20707_662626516}
+端口角色：
 
-[[端口角色：]{style="font-family:宋体"}]{#struct_0_x7458_20707_x1995851699}
+·PRIMARY：主端口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PRIMARY]{lang="EN-US"}]{#struct_0_x7458_20707_x69593834}[：主端口]{lang="EN-US" style="font-family:宋体"}
+·SECONDARY：从端口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SECONDARY]{lang="EN-US"}]{#struct_0_x7458_20707_1894875565}[：从端口]{lang="EN-US" style="font-family:宋体"}
+State
 
-[[State]{lang="EN-US"}]{#struct_0_x7458_20707_x1550862980}
+端口状态：
 
-[[端口状态：]{style="font-family:宋体"}]{#struct_0_x7458_20707_2133854310}
+·ACTIVE：转发
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ACT]{lang="EN-US"}]{#struct_0_x7458_20707_551564583}[I]{lang="EN-US"}[VE]{lang="EN-US"}[：转发]{lang="EN-US" style="font-family:宋体"}
+·DOWN：故障
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_x7458_20707_x344304970}[：故障]{lang="EN-US" style="font-family:宋体"}
+·STANDBY：待命
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[STANDBY]{lang="EN-US"}]{#struct_0_x7458_20707_x69135085}[：待命]{lang="EN-US" style="font-family:宋体"}
+Flush-count
 
-[[Flush-count]{lang="EN-US"}]{#struct_0_x7458_20707_2146837982}
+发送的Flush报文数
 
-[[发送的]{style="font-family:宋体"}[Flush]{lang="EN-US"}]{#struct_0_x7458_20707_x468914354}[报文数]{style="font-family:宋体"}
+Last-flush-time
 
-[[Last-flush-time]{lang="EN-US"}]{#struct_0_x7458_20707_x291310574}
-
-[[最后一次发送]{style="font-family:宋体"}[Flush]{lang="EN-US"}]{#struct_0_x7458_20707_848897483}[报文的时间，]{style="font-family:宋体"}[NA]{lang="EN-US"}[表示没有发送过]{style="font-family:宋体"}[Flush]{lang="EN-US"}[报文]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#184854464 .myid}
-[]{#_Toc404795786}[]{#struct_0_x7458_20707_x69069549}
+最后一次发送Flush报文的时间，NA表示没有发送过Flush报文
 
 **Smart Link \-- Smart Link配置命令 \-- flush enable**
 
 ------------------------------------------------------------------------
 
-[**[flush enable]{lang="EN-US"}**]{#struct_0_x7458_20707_1698268224}[命令用来使能发送]{style="font-family:宋体"}[Flush]{lang="EN-US"}[报文的功能。]{style="font-family:宋体"}
+**[flush enable**]命令用来使能发送Flush报文的功能。
 
-[**[undo flush enable]{lang="EN-US"}**]{#struct_0_x7458_20707_x734350316}[命令用来关闭发送]{style="font-family:宋体"}[Flush]{lang="EN-US"}[报文的功能。]{style="font-family:宋体"}
+**[undo flush enable**]命令用来关闭发送Flush报文的功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x1978211760}
+【命令】
 
-[**[flush enable]{lang="EN-US"}**[ \[ **control-vlan** *vlan-id* \]]{lang="EN-US"}]{#struct_0_x7458_20707_x929010633}
+**[flush enable** [ **control-vlan** *vlan-id* ]]
 
-[**[undo flush enable]{lang="EN-US"}**]{#struct_0_x7458_20707_1263075445}
+**[undo flush enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7458_20707_1034787543}
+【缺省情况】
 
-[[发送]{style="font-family:宋体"}[Flush]{lang="EN-US"}]{#struct_0_x7458_20707_205895405}[报文的功能处于开启状态，且控制]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[为]{style="font-family:宋体"}[VLAN 1]{lang="EN-US"}[。]{style="font-family:宋体"}
+发送Flush报文的功能处于开启状态，且控制VLAN为VLAN 1。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x739949354}
+【视图】
 
-[[Smart Link]{lang="EN-US"}]{#struct_0_x7458_20707_1981223727}[组视图]{style="font-family:宋体"}
+Smart Link组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7458_20707_1927807767}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7458_20707_x69004013}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7458_20707_933700931}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7458_20707_909206239}
+【参数】
 
-[**[control-vlan]{lang="EN-US"}***[ vlan-id]{lang="EN-US"}*]{#struct_0_x7458_20707_827624710}[：表示发送]{style="font-family:宋体"}[Flush]{lang="EN-US"}[报文的控制]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为控制]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[control-vlan*** vlan-id*]：表示发送Flush报文的控制VLAN。*vlan-id*为控制VLAN的编号，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x636447271}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[需要为不同的]{lang="EN-US" style="font-family:宋体"}[Smart Link]{lang="EN-US"}]{#struct_0_x7458_20707_1645511880}[组配置不同的控制]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·需要为不同的Smart Link组配置不同的控制VLAN。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[请确保]{style="font-family:宋体"}]{#struct_0_x7458_20707_978761685}[控制]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[存在，且]{lang="EN-US" style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组的端口]{lang="EN-US" style="font-family:宋体"}[要]{style="font-family:宋体"}[允许控制]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[的报文通过。]{lang="EN-US" style="font-family:宋体"}
+·请确保控制VLAN存在，且Smart Link组的端口要允许控制VLAN的报文通过。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[某]{lang="EN-US" style="font-family:宋体"}[Smart Link]{lang="EN-US"}]{#struct_0_x7458_20707_1350008330}[组的控制]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[应同时为该]{lang="EN-US" style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组的保护]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[，且不要将已配置为控制]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[删除，否则会影响]{lang="EN-US" style="font-family:宋体"}[Flush]{lang="EN-US"}[报文的发送。]{lang="EN-US" style="font-family:宋体"}
+·某Smart Link组的控制VLAN应同时为该Smart Link组的保护VLAN，且不要将已配置为控制VLAN的VLAN删除，否则会影响Flush报文的发送。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x2141074966}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7458_20707_x1054139971}[在]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组]{style="font-family:宋体"}[1]{lang="EN-US"}[中关闭发送]{style="font-family:
-宋体"}[Flush]{lang="EN-US"}[报文的功能。]{style="font-family:宋体"}
+\# 在Smart Link组1中关闭发送Flush报文的功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7458_20707_x68938477}
+\<Sysname\> system-view
 
-[\[Sysname\] smart-link group 1]{lang="EN-US"}
+Sysname smart-link group 1
 
-[\[Sysname-smlk-group1\] undo flush enable]{lang="EN-US"}
+Sysname-smlk-group1 undo flush enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x944826611}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[smart-link flush enable]{lang="EN-US"}**]{#struct_0_x7458_20707_904418863}
-:::
-
-::: {#1212291552 .myid}
-[]{#_Toc404795787}[]{#struct_0_x7458_20707_143591062}
+·**smart-link flush enable**
 
 **Smart Link \-- Smart Link配置命令 \-- port**
 
 ------------------------------------------------------------------------
 
-[**[port]{lang="EN-US"}**]{#struct_0_x7458_20707_x1638657038}[命令用来配置]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组的成员端口。]{style="font-family:宋体"}
+**[port**]命令用来配置Smart Link组的成员端口。
 
-[**[undo port]{lang="EN-US"}**]{#struct_0_x7458_20707_x1274795176}[命令用来取消]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组成员端口的配置。]{style="font-family:宋体"}
+**[undo port**]命令用来取消Smart Link组成员端口的配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x1824802632}
+【命令】
 
-[**[port]{lang="EN-US"}**[ *interface-type interface-number* { **primary** \| **secondary** }]{lang="EN-US"}]{#struct_0_x7458_20707_x886765961}
+**[port**[ *interface-type interface-number* { **primary** \| **secondary** }]]
 
-[**[undo port]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_x7458_20707_570461202}
+**[undo port** *interface-type interface-number*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x68872941}
+【缺省情况】
 
-[[Smart Link]{lang="EN-US"}]{#struct_0_x7458_20707_296162510}[组中没有成员端口。]{style="font-family:宋体"}
+Smart Link组中没有成员端口。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x1894412652}
+【视图】
 
-[[Smart Link]{lang="EN-US"}]{#struct_0_x7458_20707_1252988230}[组视图]{style="font-family:宋体"}
+Smart Link组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7458_20707_1040173249}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7458_20707_59232032}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7458_20707_x955219598}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x2144984549}
+【参数】
 
-[*[interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}]{#struct_0_x7458_20707_949466828}[：表示端口类型和端口编号，包括二层以太网接口和二层聚合接口。]{style="font-family:宋体"}
+*[interface-type* *interface-number*]：表示端口类型和端口编号，包括二层以太网接口和二层聚合接口。
 
-[**[primary]{lang="EN-US"}**]{#struct_0_x7458_20707_x68807405}[：表示主端口。]{style="font-family:宋体"}
+**[primary**]：表示主端口。
 
-[**[secondary]{lang="EN-US"}**]{#struct_0_x7458_20707_1024595566}[：表示从端口。]{style="font-family:宋体"}
+**[secondary**]：表示从端口。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x1100032666}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在配置]{style="font-family:宋体"}]{#struct_0_x7458_20707_109157965}[Smart Link]{lang="EN-US"}[组的成员端口之前]{style="font-family:宋体"}[，]{style="font-family:
-宋体"}[请确认端口未]{style="font-family:宋体"}[启用生成树协议]{style="font-family:
-宋体"}[或者]{style="font-family:宋体"}[RRPP]{lang="EN-US"}[功能]{style="font-family:宋体"}[；]{style="font-family:宋体"}[端口配置为]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组成员后，不能在该端口上开启生成树协议或者]{style="font-family:宋体"}[RRPP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+·在配置Smart Link组的成员端口之前，请确认端口未启用生成树协议或者RRPP功能；端口配置为Smart Link组成员后，不能在该端口上开启生成树协议或者RRPP功能。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[请勿将一个端口]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x7458_20707_x2025136175}[同时]{style="font-family:宋体"}[加入聚合组和]{lang="EN-US" style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组，否则该端口在]{lang="EN-US" style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组中将不会生效，也无法使用]{lang="EN-US" style="font-family:宋体"}**[display smart-link group]{lang="EN-US"}**[命令查看到]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}
+·请勿将一个端口同时加入聚合组和Smart Link组，否则该端口在Smart Link组中将不会生效，也无法使用**display smart-link group**命令查看到。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置]{style="font-family:宋体"}]{#struct_0_x7458_20707_615333524}[Smart Link]{lang="EN-US"}[组的成员]{style="font-family:宋体"}[端]{lang="EN-US" style="font-family:宋体"}[口也可在接口视图下进行。]{style="font-family:宋体"}
+·配置Smart Link组的成员端口也可在接口视图下进行。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x106971162}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7458_20707_809854556}[配置]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组]{style="font-family:宋体"}[1]{lang="EN-US"}[的从端口为]{style="font-family:
-宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置Smart Link组1的从端口为GigabitEthernet1/0/1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7458_20707_1578094528}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] undo stp enable]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 undo stp enable
 
-[\[Sysname-GigabitEthernet1/0/1\] quit]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 quit
 
-[\[Sysname\] smart-link group 1]{lang="EN-US"}
+Sysname smart-link group 1
 
-[\[Sysname-smlk-group1\] protected-vlan reference-instance 0]{lang="EN-US"}
+Sysname-smlk-group1 protected-vlan reference-instance 0
 
-[\[Sysname-smlk-group1\] port gigabitethernet 1/0/1 secondary]{lang="EN-US"}
+Sysname-smlk-group1 port gigabitethernet 1/0/1 secondary
 
-[]{#_Toc65310811}[]{#_Toc36367102}[]{#_Toc34185800}[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7458_20707_400230260}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[port smart-link group]{lang="EN-US"}**]{#struct_0_x7458_20707_x68741869}
-:::
-
-::: {#405585737 .myid}
-[]{#_Toc404795788}[]{#struct_0_x7458_20707_1663672346}
+·**port smart-link group**
 
 **Smart Link \-- Smart Link配置命令 \-- port smart-link group**
 
 ------------------------------------------------------------------------
 
-[**[port smart-link group]{lang="EN-US"}**]{#struct_0_x7458_20707_1978743995}[命令用来配置]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组的成员端口。]{style="font-family:宋体"}
+**[port smart-link group**]命令用来配置Smart Link组的成员端口。
 
-[**[undo port smart-link group]{lang="EN-US"}**]{#struct_0_x7458_20707_x401168070}[命令用来取消]{style="font-family:
-宋体"}[Smart Link]{lang="EN-US"}[组成员端口的配置。]{style="font-family:
-宋体"}
+**[undo port smart-link group**]命令用来取消Smart Link组成员端口的配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7458_20707_313628082}
+【命令】
 
-[**[port smart-link group ]{lang="EN-US"}***[group-id]{lang="EN-US"}*[ { **primary** \| **secondary** }]{lang="EN-US"}]{#struct_0_x7458_20707_x480048039}
+**[port smart-link group ***group-id*[ { **primary** \| **secondary** }]]
 
-[**[undo port smart-link group ]{lang="EN-US"}***[group-id]{lang="EN-US"}*]{#struct_0_x7458_20707_1375117103}
+**[undo port smart-link group ***group-id*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x707101713}
+【缺省情况】
 
-[[接口不是]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}]{#struct_0_x7458_20707_x352688776}[组的成员端口。]{style="font-family:宋体"}
+接口不是Smart Link组的成员端口。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x1890216028}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x7458_20707_x68676333}[二层聚合接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x1909141394}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7458_20707_x1734965966}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7458_20707_2034607759}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x159536368}
+【参数】
 
-[*[group-id]{lang="EN-US"}*]{#struct_0_x7458_20707_1017198282}[：]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组的编号。最小取值为]{style="font-family:宋体"}[1]{lang="EN-US"}[，不同型号的设备支持的最大值不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[group-id*]：Smart Link组的编号。最小取值为1，不同型号的设备支持的最大值不同，请以设备的实际情况为准。
 
-[**[primary]{lang="EN-US"}**]{#struct_0_x7458_20707_x1994413610}[：表示主端口。]{style="font-family:宋体"}
+**[primary**]：表示主端口。
 
-[**[secondary]{lang="EN-US"}**]{#struct_0_x7458_20707_x1381632223}[：表示从端口。]{style="font-family:宋体"}
+**[secondary**]：表示从端口。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x618243915}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在配置]{style="font-family:宋体"}]{#struct_0_x7458_20707_1716876330}[Smart Link]{lang="EN-US"}[组的成员端口之前]{style="font-family:宋体"}[，]{style="font-family:
-宋体"}[请确认端口未]{style="font-family:宋体"}[启用生成树协议]{style="font-family:
-宋体"}[或者]{style="font-family:宋体"}[RRPP]{lang="EN-US"}[功能]{style="font-family:宋体"}[；]{style="font-family:宋体"}[端口配置为]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组的成员端口后，不能在该端口上开启生成树协议或者]{style="font-family:宋体"}[RRPP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+·在配置Smart Link组的成员端口之前，请确认端口未启用生成树协议或者RRPP功能；端口配置为Smart Link组的成员端口后，不能在该端口上开启生成树协议或者RRPP功能。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[请勿将一个端口同时加入聚合组和]{lang="EN-US" style="font-family:宋体"}[Smart Link]{lang="EN-US"}]{#struct_0_x7458_20707_x2025005103}[组，否则该端口在]{lang="EN-US" style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组中将不会生效，也无法使用]{lang="EN-US" style="font-family:宋体"}**[display smart-link group]{lang="EN-US"}**[命令查看到]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}
+·请勿将一个端口同时加入聚合组和Smart Link组，否则该端口在Smart Link组中将不会生效，也无法使用**display smart-link group**命令查看到。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x7458_20707_x69659373}[Smart Link]{lang="EN-US"}[组的成员端口也可在]{lang="EN-US" style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组视图下进行。]{lang="EN-US" style="font-family:宋体"}
+·配置Smart Link组的成员端口也可在Smart Link组视图下进行。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x1031419851}
+【举例】
 
-[[\# ]{lang="SV"}]{#struct_0_x7458_20707_x1987952290}[将端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="SV"}[配置为]{style="font-family:宋体"}[Smart Link]{lang="SV"}[组]{style="font-family:宋体"}[1]{lang="SV"}[的主端口。]{style="font-family:
-宋体"}
+\# 将端口GigabitEthernet1/0/1配置为Smart Link组1的主端口。
 
-[[\<Sysname\> system-view]{lang="SV"}]{#struct_0_x7458_20707_1208386508}
+\<Sysname\> system-view
 
-[\[Sysname\] smart-link group 1]{lang="SV"}
+Sysname smart-link group 1
 
-[\[Sysname-smlk-group1\] protected-vlan reference-instance 0]{lang="EN-US"}
+Sysname-smlk-group1 protected-vlan reference-instance 0
 
-[\[Sysname-smlk-group1\] quit]{lang="EN-US"}
+Sysname-smlk-group1 quit
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] undo stp enable]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 undo stp enable
 
-[\[Sysname-GigabitEthernet1/0/1\] port smart-link group 1 primary]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 port smart-link group 1 primary
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7458_20707_x861729469}[将二层聚合接口]{style="font-family:宋体"}[1]{lang="EN-US"}[配置为]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组]{style="font-family:宋体"}[1]{lang="EN-US"}[的主端口。]{style="font-family:
-宋体"}
+\# 将二层聚合接口1配置为Smart Link组1的主端口。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7458_20707_1491136808}
+\<Sysname\> system-view
 
-[\[Sysname\] smart-link group 1]{lang="EN-US"}
+Sysname smart-link group 1
 
-[\[Sysname-smlk-group1\] protected-vlan reference-instance 0]{lang="EN-US"}
+Sysname-smlk-group1 protected-vlan reference-instance 0
 
-[\[Sysname-smlk-group1\] quit]{lang="EN-US"}
+Sysname-smlk-group1 quit
 
-[\[Sysname\] interface bridge-aggregation 1]{lang="EN-US"}
+Sysname interface bridge-aggregation 1
 
-[\[Sysname-Bridge-Aggregation1\] undo stp enable]{lang="EN-US"}
+Sysname-Bridge-Aggregation1 undo stp enable
 
-[\[Sysname-Bridge-Aggregation1\] port smart-link group 1 primary]{lang="EN-US"}
+Sysname-Bridge-Aggregation1 port smart-link group 1 primary
 
-[]{#_Toc188268444}[]{#_Toc208134678}[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x69593837}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[port]{lang="EN-US"}**]{#struct_0_x7458_20707_1894875566}
-:::
-
-::::: {#-387013250 .myid}
-[]{#_Toc404795789}[]{#struct_0_x7458_20707_x1551059588}
+·**port**
 
 **Smart Link \-- Smart Link配置命令 \-- port smart-link group track**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](Smart%20Link命令.files/image001.png){#图片 1 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x7458_20707_x1902125984}
-:::
+![说明](Smart%20Link命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x7458_20707_716325577}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[port smart-link group track**]命令用来配置Smart Link组的成员端口与Track项联动。
 
-[**[port smart-link group track]{lang="EN-US"}**]{#struct_0_x7458_20707_x1761181424}[命令用来配置]{style="font-family:
-宋体"}[Smart Link]{lang="SV"}[组的成员]{style="font-family:宋体"}[端口与]{style="font-family:宋体"}[Track]{lang="EN-US"}[项联动。]{style="font-family:宋体"}
+**[undo port smart-link group track**]命令用来取消Smart Link组的成员端口与Track项联动。
 
-[**[undo port smart-link group track]{lang="EN-US"}**]{#struct_0_x7458_20707_x347392736}[命令用来取消]{style="font-family:宋体"}[Smart Link]{lang="SV"}[组的成员]{style="font-family:宋体"}[端口与]{style="font-family:宋体"}[Track]{lang="EN-US"}[项联动。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x250730566}
+**[port smart-link group ***group-id*** track ***track-entry-number*]
 
-[**[port smart-link group ]{lang="EN-US"}***[group-id]{lang="EN-US"}***[ track ]{lang="EN-US"}***[track-entry-number]{lang="EN-US"}*]{#struct_0_x7458_20707_1627255466}
+**[undo port smart-link group ***group-id* **track** *track-entry-number*]
 
-[**[undo port smart-link group ]{lang="EN-US"}***[group-id]{lang="EN-US"}*[ **track** *track-entry-number*]{lang="EN-US"}]{#struct_0_x7458_20707_x23275950}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x69135084}
+Smart Link组的成员端口未与任何Track项联动。
 
-[[Smart Link]{lang="SV"}]{#struct_0_x7458_20707_2146837983}[组的成员]{style="font-family:宋体"}[端口未与任何]{style="font-family:
-宋体"}[Track]{lang="EN-US"}[项联动。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x468979890}
+二层以太网接口视图/二层聚合接口视图
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x7458_20707_x667160203}[二层聚合接口视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x602857280}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7458_20707_x720220226}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7458_20707_x1852309325}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x1375128736}
+*[group-id*]：表示Smart Link组的编号。最小取值为1，不同型号的设备支持的最大值不同，请以设备的实际情况为准。
 
-[*[group-id]{lang="EN-US"}*]{#struct_0_x7458_20707_x1946868849}[：表示]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组的编号。最小取值为]{style="font-family:宋体"}[1]{lang="EN-US"}[，不同型号的设备支持的最大值不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[track-entry-number*]：表示Track项的序号，必须是与CFD连续性检测功能关联的Track项。
 
-[*[track-entry-number]{lang="EN-US"}*]{#struct_0_x7458_20707_995408937}[：表示]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的序号，必须是与]{style="font-family:宋体"}[CFD]{lang="EN-US"}[连续性检测功能关联的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7458_20707_619213531}
+·Smart Link组的成员端口通过Track项与链路检测协议进行联动，目前仅支持与CFD的连续性检测功能联动，请通过**track cfd**命令创建与CFD连续性检测功能关联的Track项。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Smart Link]{lang="EN-US"}]{#struct_0_x7458_20707_x69069548}[组的成员端口通过]{style="font-family:
-宋体"}[Track]{lang="EN-US"}[项与链路检测协议进行联动，目前仅支持与]{style="font-family:宋体"}[CFD]{lang="EN-US"}[的连续性检测功能联动，请通过]{style="font-family:宋体"}**[track cfd]{lang="SV"}**[命令创建与]{style="font-family:宋体"}[CFD]{lang="EN-US"}[连续性检测功能关联的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项。]{style="font-family:宋体"}
+·在配置端口与Track项联动之前，必须保证该端口已加入相应的Smart Link组。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在配置端口与]{lang="EN-US" style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_x7458_20707_1698268223}[项]{style="font-family:宋体"}[联动之前，]{lang="EN-US" style="font-family:宋体"}[必]{style="font-family:宋体"}[须保证该端口已加入]{lang="EN-US" style="font-family:宋体"}[相应]{style="font-family:
-宋体"}[的]{lang="EN-US" style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组。]{lang="EN-US" style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x734809068}
+\# 配置Smart Link组1的主端口GigabitEthernet1/0/1通过Track项1与CFD的连续性检测功能联动，以检测其链路状态。
 
-[[\# ]{lang="SV"}]{#struct_0_x7458_20707_x1998384303}[配置]{style="font-family:宋体"}[Smart Link]{lang="SV"}[组]{style="font-family:宋体"}[1]{lang="SV"}[的主端口]{style="font-family:
-宋体"}[GigabitEthernet1/0/1]{lang="SV"}[通过]{style="font-family:
-宋体"}[Track]{lang="SV"}[项]{style="font-family:宋体"}[1]{lang="SV"}[与]{style="font-family:宋体"}[CFD]{lang="SV"}[的连续性检测功能联动]{style="font-family:宋体"}[，]{style="font-family:宋体"}[以检测其链路状态]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="SV"}]{#struct_0_x7458_20707_403468776}
+Sysname track 1 cfd cc service-instance 100 mep 2
 
-[\[Sysname\] track 1 cfd cc service-instance 100 mep 2]{lang="SV"}
+Sysname smart-link group 1
 
-[\[Sysname\] smart-link group 1]{lang="SV"}
+Sysname-smlk-group1 protected-vlan reference-instance 0
 
-[\[Sysname-smlk-group1\] protected-vlan reference-instance 0]{lang="SV"}
+Sysname-smlk-group1 quit
 
-[\[Sysname-smlk-group1\] quit]{lang="SV"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="SV"}
+Sysname-GigabitEthernet1/0/1 undo stp enable
 
-[\[Sysname-GigabitEthernet1/0/1\] undo stp enable]{lang="SV"}
+Sysname-GigabitEthernet1/0/1 port smart-link group 1 primary
 
-[\[Sysname-GigabitEthernet1/0/1\] port smart-link group 1 primary]{lang="SV"}
+Sysname-GigabitEthernet1/0/1 port smart-link group 1 track 1
 
-[\[Sysname-GigabitEthernet1/0/1\] port smart-link group 1 track 1]{lang="SV"}
+\# 配置Smart Link组1的主端口二层聚合接口1通过Track项1与CFD的连续性检测功能联动，以检测其链路状态。
 
-[[\# ]{lang="SV"}]{#struct_0_x7458_20707_x179395829}[配置]{style="font-family:宋体"}[Smart Link]{lang="SV"}[组]{style="font-family:宋体"}[1]{lang="SV"}[的主端口]{style="font-family:
-宋体"}[二层聚合接口]{style="font-family:宋体"}[1]{lang="SV"}[通过]{style="font-family:宋体"}[Track]{lang="SV"}[项]{style="font-family:宋体"}[1]{lang="SV"}[与]{style="font-family:
-宋体"}[CFD]{lang="SV"}[的连续性检测功能联动]{style="font-family:宋体"}[，]{style="font-family:宋体"}[以检测其链路状态]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="SV"}]{#struct_0_x7458_20707_x69004012}
+Sysname track 1 cfd cc service-instance 100 mep 2
 
-[\[Sysname\] track 1 cfd cc service-instance 100 mep 2]{lang="SV"}
+Sysname smart-link group 1
 
-[\[Sysname\] smart-link group 1]{lang="SV"}
+Sysname-smlk-group1 protected-vlan reference-instance 0
 
-[\[Sysname-smlk-group1\] protected-vlan reference-instance 0]{lang="SV"}
+Sysname-smlk-group1 quit
 
-[\[Sysname-smlk-group1\] quit]{lang="SV"}
+Sysname interface bridge-aggregation 1
 
-[\[Sysname\] interface ]{lang="SV"}[bridge-aggregation 1]{lang="EN-US"}
+Sysname-Bridge-Aggregation1 undo stp enable
 
-[\[Sysname-]{lang="SV"}[Bridge-Aggregation1]{lang="EN-US"}[\] undo stp enable]{lang="SV"}
+Sysname-Bridge-Aggregation1 port smart-link group 1 primary
 
-[\[Sysname-]{lang="SV"}[Bridge-Aggregation1]{lang="EN-US"}[\] port smart-link group 1 primary]{lang="SV"}
+Sysname-Bridge-Aggregation1 port smart-link group 1 track 1
 
-[\[Sysname-]{lang="SV"}[Bridge-Aggregation1]{lang="EN-US"}[\] port smart-link group 1 track 1]{lang="SV"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7458_20707_933700930}
-
-[[·[              ]{style="font:7.0pt "}]{lang="SV" style="font-size:10.0pt;font-family:Symbol"}**[track cfd]{lang="SV"}**]{#struct_0_x7458_20707_909206240}[（]{style="font-family:
-宋体"}[可靠性]{lang="EN-US" style="font-family:宋体"}[命令参考]{style="font-family:宋体"}[/Track]{lang="EN-US"}[）]{style="font-family:宋体"}
-:::::
-
-::: {#-1256618437 .myid}
-[]{#_Toc404795790}[]{#struct_0_x7458_20707_1636928767}
+·**track cfd**（可靠性命令参考/Track）
 
 **Smart Link \-- Smart Link配置命令 \-- preemption delay**
 
 ------------------------------------------------------------------------
 
-[**[preemption delay]{lang="EN-US"}**]{#struct_0_x7458_20707_402110673}[命令用来配置抢占延时。]{style="font-family:宋体"}
+**[preemption delay**]命令用来配置抢占延时。
 
-[**[undo preemption delay]{lang="EN-US"}**]{#struct_0_x7458_20707_364262727}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo preemption delay**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x1646529387}
+【命令】
 
-[**[preemption delay]{lang="EN-US"}***[ delay]{lang="EN-US"}*]{#struct_0_x7458_20707_x1024033511}
+**[preemption delay*** delay*]
 
-[**[undo preemption delay]{lang="EN-US"}**]{#struct_0_x7458_20707_889139702}
+**[undo preemption delay**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x68938476}
+【缺省情况】
 
-[[抢占延时为]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_x7458_20707_x944826610}[秒。]{style="font-family:宋体"}
+抢占延时为1秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7458_20707_904353327}
+【视图】
 
-[[Smart Link]{lang="EN-US"}]{#struct_0_x7458_20707_1120136379}[组视图]{style="font-family:宋体"}
+Smart Link组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x246658418}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7458_20707_661239399}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7458_20707_1792379188}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x2116665516}
+【参数】
 
-[*[delay]{lang="EN-US"}*]{#struct_0_x7458_20707_x554274037}[：表示]{style="font-family:宋体"}[抢占延时，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[300]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[delay*]：表示抢占延时，取值范围为0～300，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x2084757639}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[抢占延时在配置了抢占模式之后才会生效。]{style="font-family:宋体"}]{#struct_0_x7458_20707_x68872940}
+·抢占延时在配置了抢占模式之后才会生效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在角色抢占模式下，在主端口抢占为转发状态之前，先延迟一段时间以配合上游设备的切换，这段延迟时间就叫做抢占延时。]{style="font-family:宋体"}]{#struct_0_x7458_20707_296162511}
+·在角色抢占模式下，在主端口抢占为转发状态之前，先延迟一段时间以配合上游设备的切换，这段延迟时间就叫做抢占延时。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x1894412651}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7458_20707_849703703}[配置抢占模式为角色抢占模式，并配置抢占延时为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置抢占模式为角色抢占模式，并配置抢占延时为10秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7458_20707_x1251744048}
+\<Sysname\> system-view
 
-[\[Sysname\] smart-link group 1]{lang="EN-US"}
+Sysname smart-link group 1
 
-[\[Sysname-smlk-group1\] preemption mode role]{lang="EN-US"}
+Sysname-smlk-group1 preemption mode role
 
-[\[Sysname-smlk-group1\] preemption delay 10]{lang="EN-US"}
+Sysname-smlk-group1 preemption delay 10
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x1703434675}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[preemption mode]{lang="EN-US"}**]{#struct_0_x7458_20707_x4539735}
-:::
-
-::: {#1426306005 .myid}
-[]{#_Toc404795791}[]{#struct_0_x7458_20707_x335956480}
+·**preemption mode**
 
 **Smart Link \-- Smart Link配置命令 \-- preemption mode**
 
 ------------------------------------------------------------------------
 
-[**[preemption mode]{lang="EN-US"}**]{#struct_0_x7458_20707_1047394762}[命令用来配置]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组的抢占模式。]{style="font-family:宋体"}
+**[preemption mode**]命令用来配置Smart Link组的抢占模式。
 
-[**[undo preemption mode]{lang="EN-US"}**]{#struct_0_x7458_20707_x1058246261}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo preemption mode**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x68807404}
+【命令】
 
-[**[preemption mode ]{lang="EN-US"}**[{ **role** \| **speed** \[ **threshold** *threshold-value* \] }]{lang="EN-US"}]{#struct_0_x7458_20707_1024595565}
+**[preemption mode **[{ **role** \| **speed** [ **threshold** *threshold-value* ] }]]
 
-[**[undo preemption mode]{lang="EN-US"}**]{#struct_0_x7458_20707_x1100098202}
+**[undo preemption mode**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x499257825}
+【缺省情况】
 
-[[Smart Link]{lang="EN-US"}]{#struct_0_x7458_20707_887396892}[组为非抢占模式。]{style="font-family:宋体"}
+Smart Link组为非抢占模式。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7458_20707_1519692513}
+【视图】
 
-[[Smart Link]{lang="EN-US"}]{#struct_0_x7458_20707_x1838933075}[组视图]{style="font-family:宋体"}
+Smart Link组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7458_20707_705925427}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7458_20707_426391778}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7458_20707_x518361675}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x68741868}
+【参数】
 
-[**[role]{lang="EN-US"}**]{#struct_0_x7458_20707_1663672345}[：配置]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组的]{style="font-family:宋体"}[抢占模式为]{style="font-family:宋体"}[角色抢占模式，即当主链路恢复后，主端口切换回转发状态。]{style="font-family:宋体"}
+**[role**]：配置Smart Link组的抢占模式为角色抢占模式，即当主链路恢复后，主端口切换回转发状态。
 
-[**[speed]{lang="EN-US"}**]{#struct_0_x7458_20707_2053883463}[：]{style="font-family:宋体"}[配置]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组的]{style="font-family:宋体"}[抢占模式为]{style="font-family:宋体"}[速率抢占模式。]{style="font-family:宋体"}
+**[speed**]：配置Smart Link组的抢占模式为速率抢占模式。
 
-[**[threshold]{lang="EN-US"}**[ *threshold-value*]{lang="EN-US"}]{#struct_0_x7458_20707_2053883464}[：速率抢占阈值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[10000]{lang="EN-US"}[。在]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组的]{style="font-family:宋体"}[抢占模式为]{style="font-family:宋体"}[速率抢占模式时，如果配置了本参数，当主链路恢复后，如果主端口的速率大于等于从端口速率的]{style="font-family:宋体"}*[threshold-value]{lang="EN-US"}*[%]{lang="EN-US"}[，主端口切换回转发状态；如果未配置本参数，当主链路恢复后，只要主端口的速率大于从端口的速率，主端口就切换回转发状态。]{style="font-family:宋体"}
+**[threshold** *threshold-value*]：速率抢占阈值，取值范围为1～10000。在Smart Link组的抢占模式为速率抢占模式时，如果配置了本参数，当主链路恢复后，如果主端口的速率大于等于从端口速率的*threshold-value*%，主端口切换回转发状态；如果未配置本参数，当主链路恢复后，只要主端口的速率大于从端口的速率，主端口就切换回转发状态。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x667105726}
+【使用指导】
 
-[[抢占延时在配置了]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}]{#struct_0_x7458_20707_x667105722}[组的抢占模式之后才会生效。]{style="font-family:宋体"}
+抢占延时在配置了Smart Link组的抢占模式之后才会生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7458_20707_1978678459}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7458_20707_476942312}[配置]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组的抢占模式为角色抢占模式。]{style="font-family:宋体"}
+\# 配置Smart Link组的抢占模式为角色抢占模式。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7458_20707_1700568351}
+\<Sysname\> system-view
 
-[\[Sysname\] smart-link group 1]{lang="EN-US"}
+Sysname smart-link group 1
 
-[\[Sysname-smlk-group1\] preemption mode role]{lang="EN-US"}
+Sysname-smlk-group1 preemption mode role
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7458_20707_x1049442747}[配置]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组的抢占模式为速率抢占模式，速率抢占阈值为]{style="font-family:宋体"}[1000]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置Smart Link组的抢占模式为速率抢占模式，速率抢占阈值为1000。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7458_20707_x1049442741}
+\<Sysname\> system-view
 
-[\[Sysname\] smart-link group 1]{lang="EN-US"}
+Sysname smart-link group 1
 
-[\[Sysname-smlk-group1\] preemption mode speed threshold 1000]{lang="EN-US"}
-:::
-
-::: {#-2042295064 .myid}
-[]{#_Toc404795792}[]{#struct_0_x7458_20707_1109903385}[]{#_Toc188268445}
+Sysname-smlk-group1 preemption mode speed threshold 1000
 
 **Smart Link \-- Smart Link配置命令 \-- protected-vlan**
 
 ------------------------------------------------------------------------
 
-[**[protected-]{lang="EN-US"}[vlan]{lang="EN-US"}**]{#struct_0_x7458_20707_1040297520}[命令用来配置]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组的保护]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[protected-vlan**]命令用来配置Smart Link组的保护VLAN。
 
-[**[undo protected-]{lang="EN-US"}[vlan]{lang="EN-US"}**]{#struct_0_x7458_20707_x314966769}[命令用来删除]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组中保护]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的相关配置。]{style="font-family:宋体"}
+**[undo protected-vlan**]命令用来删除Smart Link组中保护VLAN的相关配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7458_20707_534232114}
+【命令】
 
-[**[protected-vlan reference-instance]{lang="EN-US"}**[ *instance-id-list*]{lang="EN-US"}]{#struct_0_x7458_20707_x429742188}
+**[protected-vlan reference-instance** *instance-id-list*]
 
-[**[undo protected-vlan]{lang="EN-US"}**[ \[ **reference-instance** *instance-id-list* \]]{lang="EN-US"}]{#struct_0_x7458_20707_x68676332}
+**[undo protected-vlan** [ **reference-instance** *instance-id-list* ]]
 
-[[【]{style="font-family:黑体"}]{#struct_0_x7458_20707_x1909141393}[缺省情况]{style="font-family:黑体"}[】]{style="font-family:黑体"}
+【缺省情况】
 
-[[Smart Link]{lang="EN-US"}]{#struct_0_x7458_20707_1800486443}[组]{style="font-family:宋体"}[不保护任何]{style="font-family:
-宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+Smart Link组不保护任何VLAN。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7458_20707_365235352}
+【视图】
 
-[[Smart Link]{lang="EN-US"}]{#struct_0_x7458_20707_2018360926}[组视图]{style="font-family:宋体"}
+Smart Link组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7458_20707_1719859203}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7458_20707_302527577}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7458_20707_x310522552}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7458_20707_812706125}
+【参数】
 
-[**[reference-instance ]{lang="EN-US"}***[instance-id-list]{lang="EN-US"}*]{#struct_0_x7458_20707_x1406090743}[：通过引用]{style="font-family:宋体"}[MSTI]{lang="EN-US"}[的方式来配置]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组的保护]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}*[instance-id-list]{lang="EN-US"}*[为]{style="font-family:宋体"}[MSTI]{lang="EN-US"}[列表，表示方式为]{style="font-family:宋体"}*[instance-id-list ]{lang="EN-US"}*[= { *instance-id* \[ **to** *instance-id* \] }&\<1-10\>]{lang="EN-US"}[。其中，]{style="font-family:宋体"}*[instance-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[MSTI]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[到]{style="font-family:宋体"}[4094]{lang="EN-US"}[，]{style="font-family:宋体"}[0]{lang="EN-US"}[表示]{style="font-family:
-宋体"}[CIST]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。]{style="font-family:宋体"}[MSTI]{lang="EN-US"}[所映射的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[可通过命令]{style="font-family:宋体"}**[display stp region-configuration]{lang="EN-US"}**[查看。]{style="font-family:宋体"}
+**[reference-instance ***instance-id-list*]：通过引用MSTI的方式来配置Smart Link组的保护VLAN。*instance-id-list*为MSTI列表，表示方式为*instance-id-list *= { *instance-id* [ **to** *instance-id*  }&\<1-10\>]。其中，*instance-id*为MSTI的编号，取值范围为0到4094，0表示CIST。&\<1-10\>表示前面的参数最多可以输入10次。MSTI所映射的VLAN可通过命令**display stp region-configuration**查看。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x69659372}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在使用]{lang="EN-US" style="font-family:宋体"}**[undo protected-]{lang="EN-US"}[vlan]{lang="EN-US"}**]{#struct_0_x7458_20707_x1031419850}[命令时若指定了]{lang="EN-US" style="font-family:宋体"}**[reference-instance]{lang="EN-US"}***[ instance-id-list]{lang="EN-US"}*[参数，将删除]{lang="EN-US" style="font-family:
-宋体"}[Smart Link]{lang="EN-US"}[组中指定]{lang="EN-US" style="font-family:宋体"}[MSTI]{lang="EN-US"}[所映射]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[的相关配置；否则，将删除]{lang="EN-US" style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组中所有]{lang="EN-US" style="font-family:宋体"}[MSTI]{lang="EN-US"}[所映射]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[的相关配置。]{lang="EN-US" style="font-family:宋体"}
+·在使用**undo protected-vlan**命令时若指定了**reference-instance*** instance-id-list*参数，将删除Smart Link组中指定MSTI所映射VLAN的相关配置；否则，将删除Smart Link组中所有MSTI所映射VLAN的相关配置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在配置]{lang="EN-US" style="font-family:宋体"}[Smart Link]{lang="EN-US"}]{#struct_0_x7458_20707_x421868349}[组的成员端口之前必须配置保护]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·在配置Smart Link组的成员端口之前必须配置保护VLAN。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在删除保护]{style="font-family:宋体"}]{#struct_0_x7458_20707_x1925601616}[VLAN]{lang="EN-US"}[的相关配置时，如果]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组中已经配置了成员端口，则不允许删除所有保护]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的相关配置；如果]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组中没有配置成员端口，则可以删除所有保护]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的相关配置。]{style="font-family:宋体"}
+·在删除保护VLAN的相关配置时，如果Smart Link组中已经配置了成员端口，则不允许删除所有保护VLAN的相关配置；如果Smart Link组中没有配置成员端口，则可以删除所有保护VLAN的相关配置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在删除]{style="font-family:宋体"}]{#struct_0_x7458_20707_x1014928873}[Smart Link]{lang="EN-US"}[组时会同时删除其所保护]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的相关配置。]{style="font-family:宋体"}
+·在删除Smart Link组时会同时删除其所保护VLAN的相关配置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x7458_20707_1454846164}[与]{lang="EN-US" style="font-family:宋体"}[MSTI]{lang="EN-US"}[的映射关系发生变化，]{lang="EN-US" style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组实际所保护的]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[也会根据]{lang="EN-US" style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组的保护]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[所引用的]{lang="EN-US" style="font-family:宋体"}[MSTI]{lang="EN-US"}[而变化。]{lang="EN-US" style="font-family:宋体"}
+·若VLAN与MSTI的映射关系发生变化，Smart Link组实际所保护的VLAN也会根据Smart Link组的保护VLAN所引用的MSTI而变化。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Smart Link]{lang="EN-US"}]{#struct_0_x7458_20707_x696883091}[端口允许通过的]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[都应该被]{lang="EN-US" style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组保护。]{lang="EN-US" style="font-family:宋体"}
+·Smart Link端口允许通过的VLAN都应该被Smart Link组保护。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x227489568}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7458_20707_581835473}[先将]{style="font-family:宋体"}[VLAN 1]{lang="EN-US"}[～]{style="font-family:宋体"}[30]{lang="EN-US"}[映射到]{style="font-family:宋体"}[MSTI 1]{lang="EN-US"}[上，并激活]{style="font-family:宋体"}[MST]{lang="EN-US"}[域的配置；然后配置]{style="font-family:宋体"}[Smart Link ]{lang="EN-US"}[组]{style="font-family:宋体"}[1]{lang="EN-US"}[的保护]{style="font-family:
-宋体"}[VLAN]{lang="EN-US"}[为]{style="font-family:宋体"}[MSTI 1]{lang="EN-US"}[所映射的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 先将VLAN 1～30映射到MSTI 1上，并激活MST域的配置；然后配置Smart Link 组1的保护VLAN为MSTI 1所映射的VLAN。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7458_20707_x69593836}
+\<Sysname\> system-view
 
-[\[Sysname\] stp region-configuration]{lang="EN-US"}
+Sysname stp region-configuration
 
-[\[Sysname-mst-region\] instance 1 vlan 1 to 30]{lang="EN-US"}
+Sysname-mst-region instance 1 vlan 1 to 30
 
-[\[Sysname-mst-region\] active region-configuration]{lang="EN-US"}
+Sysname-mst-region active region-configuration
 
-[\[Sysname-mst-region\] quit]{lang="EN-US"}
+Sysname-mst-region quit
 
-[\[Sysname\] smart-link group 1]{lang="EN-US"}
+Sysname smart-link group 1
 
-[\[Sysname-smlk-group1\] protected-vlan reference-instance 1]{lang="EN-US"}
+Sysname-smlk-group1 protected-vlan reference-instance 1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7458_20707_1894875567}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display stp region-configuration]{lang="EN-US"}**]{#struct_0_x7458_20707_x1550994052}[（]{style="font-family:宋体"}[二层技术]{lang="EN-US" style="font-family:宋体"}[-]{lang="EN-US"}[以太网交换命令参考]{lang="EN-US" style="font-family:宋体"}[/]{lang="EN-US"}[生成树]{lang="EN-US" style="font-family:宋体"}[）]{style="font-family:宋体"}
+·**display stp region-configuration**（二层技术-以太网交换命令参考/生成树）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[smart-link group]{lang="EN-US"}**]{#struct_0_x7458_20707_286399064}
-:::
-
-::: {#-1761811237 .myid}
-[]{#_Toc404795793}[]{#struct_0_x7458_20707_559760894}
+·**smart-link group**
 
 **Smart Link \-- Smart Link配置命令 \-- reset smart-link statistics**
 
 ------------------------------------------------------------------------
 
-[**[reset smart-link statistics]{lang="EN-US"}**]{#struct_0_x7458_20707_x1058823270}[命令用来清除]{style="font-family:
-宋体"}[Flush]{lang="EN-US"}[报文的统计信息。]{style="font-family:宋体"}
+**[reset smart-link statistics**]命令用来清除Flush报文的统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x1219689538}
+【命令】
 
-[**[reset smart-link statistics]{lang="EN-US"}**]{#struct_0_x7458_20707_x1289992021}
+**[reset smart-link statistics**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7458_20707_1022098812}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x7458_20707_x1752311625}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7458_20707_1772283098}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7458_20707_x2007979556}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7458_20707_x2070898426}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7458_20707_260490551}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7458_20707_x873374425}[清除]{style="font-family:宋体"}[Flush]{lang="EN-US"}[报文的统计信息。]{style="font-family:宋体"}
+\# 清除Flush报文的统计信息。
 
-[[\<Sysname\> reset smart-link statistics]{lang="EN-US"}]{#struct_0_x7458_20707_249353356}
+\<Sysname\> reset smart-link statistics
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x1391923584}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display smart-link flush]{lang="EN-US"}**]{#struct_0_x7458_20707_x35743808}
-:::
-
-::: {#272855930 .myid}
-[]{#_Toc404795794}[]{#struct_0_x7458_20707_1775277929}
+·**display smart-link flush**
 
 **Smart Link \-- Smart Link配置命令 \-- smart-link flush enable**
 
 ------------------------------------------------------------------------
 
-[**[smart-link flush enable]{lang="EN-US"}**]{#struct_0_x7458_20707_1761770573}[命令用来使能接收]{style="font-family:宋体"}[Flush]{lang="EN-US"}[报文的功能。]{style="font-family:宋体"}
+**[smart-link flush enable**]命令用来使能接收Flush报文的功能。
 
-[**[undo smart-link flush enable]{lang="EN-US"}**]{#struct_0_x7458_20707_1772217562}[命令用来取消相关配置。]{style="font-family:
-宋体"}
+**[undo smart-link flush enable**]命令用来取消相关配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7458_20707_1868332113}
+【命令】
 
-[**[smart-link flush enable]{lang="EN-US"}**[ \[ **control-vlan** *vlan-id-list* \]]{lang="EN-US"}]{#struct_0_x7458_20707_x287097562}
+**[smart-link flush enable** [ **control-vlan** *vlan-id-list* ]]
 
-[**[undo smart-link flush enable ]{lang="EN-US"}**[\[ **control-vlan** *vlan-id-list* \]]{lang="EN-US"}]{#struct_0_x7458_20707_x72703531}
+**[undo smart-link flush enable ** **control-vlan** *vlan-id-list* ]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7458_20707_2089198243}
+【缺省情况】
 
-[[接收]{style="font-family:宋体"}[Flush]{lang="EN-US"}]{#struct_0_x7458_20707_x93796940}[报文的功能处于关闭状态。]{style="font-family:宋体"}
+接收Flush报文的功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x789310667}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x7458_20707_x1127398238}[二层聚合接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x1773706984}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7458_20707_x440961753}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7458_20707_x1765636533}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7458_20707_1772152026}
+【参数】
 
-[**[control-vlan]{lang="EN-US"}***[ vlan-id-list]{lang="EN-US"}*]{#struct_0_x7458_20707_690822687}[：表示接收]{style="font-family:宋体"}[Flush]{lang="EN-US"}[报文的控制]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}*[vlan-id-list]{lang="EN-US"}*[为控制]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，]{style="font-family:宋体"}*[vlan-id-list]{lang="EN-US"}*[＝]{style="font-family:宋体"}[{ *vlan-id* \[ **to** *vlan-id* \] }&\<1-10\>]{lang="EN-US"}[。其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[编号，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。]{style="font-family:宋体"}
+**[control-vlan*** vlan-id-list*]：表示接收Flush报文的控制VLAN，缺省值为1。*vlan-id-list*为控制VLAN列表，*vlan-id-list*＝{ *vlan-id* [ **to** *vlan-id*  }&\<1-10\>]。其中，*vlan-id*为VLAN编号，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。&\<1-10\>表示前面的参数最多可以输入10次。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x453709988}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7458_20707_x984997135}[在端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上使能接收]{style="font-family:宋体"}[Flush]{lang="EN-US"}[报文的功能。]{style="font-family:宋体"}
+\# 在端口GigabitEthernet1/0/1上使能接收Flush报文的功能。
 
-[]{#_Toc36367104}[]{#_Toc34185797}[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7458_20707_489923359}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] smart-link flush enable]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 smart-link flush enable
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7458_20707_x1000413676}[在二层聚合接口]{style="font-family:宋体"}[1]{lang="EN-US"}[上使能接收]{style="font-family:宋体"}[Flush]{lang="EN-US"}[报文的功能。]{style="font-family:宋体"}
+\# 在二层聚合接口1上使能接收Flush报文的功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7458_20707_x1035792186}
+\<Sysname\> system-view
 
-[\[Sysname\] interface bridge-aggregation 1]{lang="EN-US"}
+Sysname interface bridge-aggregation 1
 
-[\[Sysname-Bridge-Aggregation1\] smart-link flush enable]{lang="EN-US"}
+Sysname-Bridge-Aggregation1 smart-link flush enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x1683140250}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[flush enable]{lang="EN-US"}**]{#struct_0_x7458_20707_165079618}
-:::
-
-::: {#175641407 .myid}
-[]{#_Toc404795795}[]{#struct_0_x7458_20707_1772086490}
+·**flush enable**
 
 **Smart Link \-- Smart Link配置命令 \-- smart-link group**
 
 ------------------------------------------------------------------------
 
-[**[smart-link group]{lang="EN-US"}**]{#struct_0_x7458_20707_x2012614495}[命令用来创建]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组，并进入]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组视图。]{style="font-family:宋体"}
+**[smart-link group**]命令用来创建Smart Link组，并进入Smart Link组视图。
 
-[**[undo smart-link group]{lang="EN-US"}**]{#struct_0_x7458_20707_x862818601}[命令用来删除]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组。]{style="font-family:宋体"}
+**[undo smart-link group**]命令用来删除Smart Link组。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x1361347344}
+【命令】
 
-[**[smart-link group ]{lang="EN-US"}***[group-id]{lang="EN-US"}*]{#struct_0_x7458_20707_x257345629}
+**[smart-link group ***group-id*]
 
-[**[undo smart-link group ]{lang="EN-US"}***[group-id]{lang="EN-US"}*]{#struct_0_x7458_20707_x276255965}
+**[undo smart-link group ***group-id*]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7458_20707_967270312}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x7458_20707_520537958}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7458_20707_2137205876}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7458_20707_1772545242}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7458_20707_x488140240}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x1543945117}
+【参数】
 
-[*[group-id]{lang="EN-US"}*]{#struct_0_x7458_20707_2147048775}[：表示]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组的编号。最小取值为]{style="font-family:宋体"}[1]{lang="EN-US"}[，不同型号的设备支持的最大值不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[group-id*]：表示Smart Link组的编号。最小取值为1，不同型号的设备支持的最大值不同，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7458_20707_1424153652}
+【使用指导】
 
-[[当]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}]{#struct_0_x7458_20707_x591883881}[组内有成员端口时不允许删除。]{style="font-family:宋体"}
+当Smart Link组内有成员端口时不允许删除。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7458_20707_x1843083041}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7458_20707_1311926375}[创建]{style="font-family:宋体"}[Smart Link]{lang="EN-US"}[组]{style="font-family:宋体"}[1]{lang="EN-US"}[，并进入]{style="font-family:
-宋体"}[Smart Link]{lang="EN-US"}[组]{style="font-family:宋体"}[1]{lang="EN-US"}[的视图。]{style="font-family:宋体"}
+\# 创建Smart Link组1，并进入Smart Link组1的视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7458_20707_391966007}
+\<Sysname\> system-view
 
-[\[Sysname\] smart-link group 1]{lang="EN-US"}
+Sysname smart-link group 1
 
-[\[Sysname-smlk-group1\]]{lang="EN-US"}
-:::
+Sysname-smlk-group1

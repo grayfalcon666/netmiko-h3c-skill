@@ -1,340 +1,299 @@
-::: {#954979773 .myid}
-[]{#_Toc404791985}[]{#struct_0_x1935_x3534_x1381939850}[]{#_Toc224962637}[]{#_Toc198110227}[]{#_Toc115171271}[]{#_Toc81455655}[]{#_Toc56569712}[]{#_Toc41626807}
 
 **MPLS QoS \-- MPLS QoS配置命令 \-- if-match mpls-exp**
 
 ------------------------------------------------------------------------
 
-[**[if-match mpls-exp]{lang="EN-US"}**]{#struct_0_x1935_x3534_x544218092}[命令用来定义匹配]{style="font-family:宋体"}[第一层]{style="font-family:宋体"}[MPLS EXP]{lang="EN-US"}[优先级的规则。]{style="font-family:宋体"}
+**[if-match mpls-exp**]命令用来定义匹配第一层MPLS EXP优先级的规则。
 
-[**[undo if-match mpls-exp]{lang="EN-US"}**]{#struct_0_x1935_x3534_x719800964}[命令用来删除匹配]{style="font-family:宋体"}[第一层]{style="font-family:宋体"}[MPLS EXP]{lang="EN-US"}[优先级的规则。]{style="font-family:宋体"}
+**[undo if-match mpls-exp**]命令用来删除匹配第一层MPLS EXP优先级的规则。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_1496371998}
+【命令】
 
-[**[if-match ]{lang="EN-US"}**[\[ **not** \] **mpls-exp** *exp-value*&\<1-8\>]{lang="EN-US"}]{#struct_0_x1935_x3534_x432181185}
+**[if-match ** **not** ] **mpls-exp** *exp-value*&\<1-8\>
 
-[**[undo if-match ]{lang="EN-US"}**[\[ **not** \] **mpls-exp** *exp-value*&\<1-8\>]{lang="EN-US"}]{#struct_0_x1935_x3534_44330349}
+**[undo if-match ** **not** ] **mpls-exp** *exp-value*&\<1-8\>
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_x781831601}
+【缺省情况】
 
-[[没有定义匹配]{style="font-family:宋体"}]{#struct_0_x1935_x3534_195607048}[第一层]{style="font-family:宋体"}[MPLS EXP]{lang="EN-US"}[优先级的规则。]{style="font-family:宋体"}
+没有定义匹配第一层MPLS EXP优先级的规则。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_2044208393}
+【视图】
 
-[[类视图]{style="font-family:宋体"}]{#struct_0_x1935_x3534_1737808884}
+类视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_x984106766}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1935_x3534_x1876021865}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1935_x3534_x1914821543}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_x1831832652}
+【参数】
 
-[**[not]{lang="EN-US"}**]{#struct_0_x1935_x3534_x431198145}[：不匹配该规则。]{style="font-family:宋体"}
+**[not**]：不匹配该规则。
 
-[*[exp-value]{lang="EN-US"}*[&\<1-8\>]{lang="EN-US"}]{#struct_0_x1935_x3534_x1026717980}[：]{style="font-family:宋体"}[EXP]{lang="EN-US"}[值的列表，]{style="font-family:宋体"}[EXP]{lang="EN-US"}[优先级的取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[7]{lang="EN-US"}[，]{style="font-family:
-宋体"}[&\<1-8\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:
-宋体"}[8]{lang="EN-US"}[次。如果指定了多个相同的]{style="font-family:宋体"}[EXP]{lang="EN-US"}[值，系统默认为一个；多个不同的]{style="font-family:宋体"}[EXP]{lang="EN-US"}[值是或的关系，即只要有一个值匹配，就算匹配这条规则。]{style="font-family:宋体"}
+*[exp-value*&\<1-8\>]：EXP值的列表，EXP优先级的取值范围为0～7，&\<1-8\>表示前面的参数最多可以输入8次。如果指定了多个相同的EXP值，系统默认为一个；多个不同的EXP值是或的关系，即只要有一个值匹配，就算匹配这条规则。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_x1596732009}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1935_x3534_x2026568728}[定义匹配第一层]{style="font-family:宋体"}[EXP]{lang="EN-US"}[优先级为]{style="font-family:宋体"}[3]{lang="EN-US"}[或]{style="font-family:宋体"}[4]{lang="EN-US"}[的报文的规则。]{style="font-family:
-宋体"}
+\# 定义匹配第一层EXP优先级为3或4的报文的规则。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1935_x3534_1067078564}
+\<Sysname\> system-view
 
-[\[Sysname\] traffic classifier database]{lang="EN-US"}
+Sysname traffic classifier database
 
-[\[Sysname-classifier-database\] if-match mpls-exp 3 4]{lang="EN-US"}
-:::
-
-::: {#1537121915 .myid}
-[]{#_Toc115171272}[]{#_Toc81455656}[]{#_Toc56569713}[]{#_Toc41626808}[]{#_Toc404791986}[]{#struct_0_x1935_x3534_1015066362}[]{#_Toc224962638}[]{#_Toc198110228}
+Sysname-classifier-database if-match mpls-exp 3 4
 
 **MPLS QoS \-- MPLS QoS配置命令 \-- if-match mpls-label**
 
 ------------------------------------------------------------------------
 
-[**[if-match mpls-label]{lang="PT-BR"}**]{#struct_0_x1935_x3534_1271721569}[命令用来定义匹配]{style="font-family:宋体"}[第一层]{style="font-family:宋体"}[MPLS]{lang="PT-BR"}[标签]{style="font-family:宋体"}[的规则。]{style="font-family:宋体"}
+**[if-match mpls-label**]命令用来定义匹配第一层MPLS标签的规则。
 
-[**[undo if-match mpls-label]{lang="PT-BR"}**]{#struct_0_x1935_x3534_x980697071}[命令用来删除匹配]{style="font-family:
-宋体"}[第一层]{style="font-family:宋体"}[MPLS]{lang="PT-BR"}[标签]{style="font-family:宋体"}[的规则。]{style="font-family:宋体"}
+**[undo if-match mpls-label**]命令用来删除匹配第一层MPLS标签的规则。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_1910416126}
+【命令】
 
-[**[if-match ]{lang="EN-US"}**[\[ **not** \] **mpls-label** { *label-value*&\<1-8\> \| *label-value1* **to** *label-value2* }]{lang="EN-US"}]{#struct_0_x1935_x3534_x431263681}
+**[if-match **[ **not**  **mpls-label** { *label-value*&\<1-8\> \| *label-value1* **to** *label-value2* }]]
 
-[**[undo if-match ]{lang="EN-US"}**[\[ **not** \] **mpls-label** { *label-value*&\<1-8\> \| *label-value1* **to** *label-value2* }]{lang="EN-US"}]{#struct_0_x1935_x3534_x969451900}
+**[undo if-match **[ **not**  **mpls-label** { *label-value*&\<1-8\> \| *label-value1* **to** *label-value2* }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_x1301244449}
+【缺省情况】
 
-[[没有定义匹配]{style="font-family:宋体"}]{#struct_0_x1935_x3534_x1132286236}[第一层]{style="font-family:宋体"}[MPLS]{lang="PT-BR"}[标签]{style="font-family:宋体"}[的规则。]{style="font-family:宋体"}
+没有定义匹配第一层MPLS标签的规则。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_x536663360}
+【视图】
 
-[[类视图]{style="font-family:宋体"}]{#struct_0_x1935_x3534_1952143217}
+类视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_1526056738}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1935_x3534_1804946092}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1935_x3534_1641679874}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_812145921}
+【参数】
 
-[**[not]{lang="EN-US"}**]{#struct_0_x1935_x3534_x431722432}[：不匹配该规则。]{style="font-family:宋体"}
+**[not**]：不匹配该规则。
 
-[*[label-value]{lang="EN-US"}*[&\<1-8\>]{lang="EN-US"}]{#struct_0_x1935_x3534_1368640495}[：]{style="font-family:宋体"}[MPLS]{lang="PT-BR"}[标签]{style="font-family:宋体"}[值的列表，]{style="font-family:宋体"}[MPLS]{lang="PT-BR"}[标签值]{style="font-family:宋体"}[的取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[1048575]{lang="EN-US"}[，]{style="font-family:宋体"}[&\<1-8\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[8]{lang="EN-US"}[次。]{style="font-family:宋体"}
+*[label-value*&\<1-8\>]：MPLS标签值的列表，MPLS标签值的取值范围为0～1048575，&\<1-8\>表示前面的参数最多可以输入8次。
 
-[*[label-value1]{lang="EN-US"}*[ **to** *label-value2*]{lang="EN-US"}]{#struct_0_x1935_x3534_x1099738223}[：]{style="font-family:宋体"}[MPLS]{lang="PT-BR"}[标签]{style="font-family:宋体"}[值的范围，]{style="font-family:宋体"}*[label-value1]{lang="EN-US"}*[的值必须小于]{style="font-family:宋体"}*[label-value2]{lang="EN-US"}*[的值，]{style="font-family:宋体"}[MPLS]{lang="PT-BR"}[标签值]{style="font-family:宋体"}[的取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[1048575]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[label-value1* **to** *label-value2*]：MPLS标签值的范围，*label-value1*的值必须小于*label-value2*的值，MPLS标签值的取值范围为0～1048575。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_229514124}
+【使用指导】
 
-[[如果指定了多个相同的]{style="font-family:宋体"}]{#struct_0_x1935_x3534_2131220268}[MPLS]{lang="PT-BR"}[标签]{style="font-family:宋体"}[值，系统默认为一个；多个不同的]{style="font-family:宋体"}[MPLS]{lang="PT-BR"}[标签]{style="font-family:宋体"}[值是或的关系，即只要有一个值匹配，就算匹配这条规则。]{style="font-family:宋体"}
+如果指定了多个相同的MPLS标签值，系统默认为一个；多个不同的MPLS标签值是或的关系，即只要有一个值匹配，就算匹配这条规则。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_1436551250}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1935_x3534_x1345871910}[定义匹配]{style="font-family:宋体"}[第一层]{style="font-family:
-宋体"}[MPLS]{lang="PT-BR"}[标签]{style="font-family:宋体"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[到]{style="font-family:
-宋体"}[1000]{lang="EN-US"}[的报文的规则。]{style="font-family:宋体"}
+\# 定义匹配第一层MPLS标签为1到1000的报文的规则。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1935_x3534_x1705851747}
+\<Sysname\> system-view
 
-[\[Sysname\] traffic classifier database]{lang="EN-US"}
+Sysname traffic classifier database
 
-[\[Sysname-classifier-database\] if-match mpls-label 1 to 1000]{lang="EN-US"}
-:::
-
-::: {#-1192731450 .myid}
-[]{#_Toc404791987}[]{#struct_0_x1935_x3534_x431787968}[]{#_Toc224962639}[]{#_Toc198110229}
+Sysname-classifier-database if-match mpls-label 1 to 1000
 
 **MPLS QoS \-- MPLS QoS配置命令 \-- if-match second-mpls-exp**
 
 ------------------------------------------------------------------------
 
-[**[if-match second-mpls-exp]{lang="EN-US"}**]{#struct_0_x1935_x3534_1780843747}[命令用来定义匹配第二层]{style="font-family:
-宋体"}[MPLS]{lang="EN-US"}[的]{style="font-family:
-宋体"}[EXP]{lang="EN-US"}[域的规则。]{style="font-family:宋体"}
+**[if-match second-mpls-exp**]命令用来定义匹配第二层MPLS的EXP域的规则。
 
-[**[undo if-match second-mpls-exp]{lang="EN-US"}**]{#struct_0_x1935_x3534_x174652974}[命令用来删除匹配第二层]{style="font-family:
-宋体"}[MPLS]{lang="EN-US"}[的]{style="font-family:
-宋体"}[EXP]{lang="EN-US"}[域的规则。]{style="font-family:宋体"}
+**[undo if-match second-mpls-exp**]命令用来删除匹配第二层MPLS的EXP域的规则。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_x2100827144}
+【命令】
 
-[**[if-match ]{lang="EN-US"}**[\[ **not** \] **second-mpls-exp** *exp-value*&\<1-8\>]{lang="EN-US"}]{#struct_0_x1935_x3534_x1623735321}
+**[if-match ** **not** ] **second-mpls-exp** *exp-value*&\<1-8\>
 
-[**[undo if-match ]{lang="EN-US"}**[\[ **not** \] **second-mpls-exp** *exp-value*&\<1-8\>]{lang="EN-US"}]{#struct_0_x1935_x3534_x1063420509}
+**[undo if-match ** **not** ] **second-mpls-exp** *exp-value*&\<1-8\>
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_x2142823345}
+【缺省情况】
 
-[[没有定义匹配第二层]{style="font-family:宋体"}[MPLS EXP]{lang="EN-US"}]{#struct_0_x1935_x3534_1063205058}[优先级的规则。]{style="font-family:宋体"}
+没有定义匹配第二层MPLS EXP优先级的规则。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_418355992}
+【视图】
 
-[[类视图]{style="font-family:宋体"}]{#struct_0_x1935_x3534_1341469271}
+类视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_x431853504}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1935_x3534_606623666}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1935_x3534_x253955671}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_715107298}
+【参数】
 
-[**[not]{lang="EN-US"}**]{#struct_0_x1935_x3534_22618717}[：不匹配该规则。]{style="font-family:宋体"}
+**[not**]：不匹配该规则。
 
-[*[exp-value]{lang="EN-US"}*[&\<1-8\>]{lang="EN-US"}]{#struct_0_x1935_x3534_x1007372223}[：]{style="font-family:宋体"}[EXP]{lang="EN-US"}[值的列表，]{style="font-family:宋体"}[EXP]{lang="EN-US"}[优先级的取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[7]{lang="EN-US"}[，]{style="font-family:
-宋体"}[&\<1-8\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:
-宋体"}[8]{lang="EN-US"}[次。如果指定了多个相同的]{style="font-family:宋体"}[EXP]{lang="EN-US"}[值，系统默认为一个；多个不同的]{style="font-family:宋体"}[EXP]{lang="EN-US"}[值是或的关系，即只要有一个值匹配，就算匹配这条规则。]{style="font-family:宋体"}
+*[exp-value*&\<1-8\>]：EXP值的列表，EXP优先级的取值范围为0～7，&\<1-8\>表示前面的参数最多可以输入8次。如果指定了多个相同的EXP值，系统默认为一个；多个不同的EXP值是或的关系，即只要有一个值匹配，就算匹配这条规则。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_1907702586}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1935_x3534_1356544587}[定义匹配第二层]{style="font-family:宋体"}[EXP]{lang="EN-US"}[为]{style="font-family:宋体"}[3]{lang="EN-US"}[或]{style="font-family:
-宋体"}[4]{lang="EN-US"}[的报文的规则。]{style="font-family:宋体"}
+\# 定义匹配第二层EXP为3或4的报文的规则。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1935_x3534_1430999562}
+\<Sysname\> system-view
 
-[\[Sysname\] traffic classifier database]{lang="EN-US"}
+Sysname traffic classifier database
 
-[\[Sysname-classifier-database\] if-match second-mpls-exp 3 4]{lang="EN-US"}
-:::
-
-::: {#-498302267 .myid}
-[]{#_Toc404791988}[]{#struct_0_x1935_x3534_x627162061}[]{#_Toc224962640}[]{#_Toc198110230}
+Sysname-classifier-database if-match second-mpls-exp 3 4
 
 **MPLS QoS \-- MPLS QoS配置命令 \-- if-match second-mpls-label**
 
 ------------------------------------------------------------------------
 
-[**[if-match second-mpls-label]{lang="PT-BR"}**]{#struct_0_x1935_x3534_x431919040}[命令用来定义匹配第二层]{style="font-family:
-宋体"}[MPLS]{lang="PT-BR"}[标签的规则。]{style="font-family:
-宋体"}
+**[if-match second-mpls-label**]命令用来定义匹配第二层MPLS标签的规则。
 
-[**[undo if-match second-mpls-label]{lang="PT-BR"}**]{#struct_0_x1935_x3534_x1399975119}[命令用来删除匹配第二层]{style="font-family:宋体"}[MPLS]{lang="PT-BR"}[标签的规则。]{style="font-family:宋体"}
+**[undo if-match second-mpls-label**]命令用来删除匹配第二层MPLS标签的规则。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_x375589546}
+【命令】
 
-[**[if-match ]{lang="EN-US"}**[\[ **not** \] **second-mpls-label** { *label-value*&\<1-8\> \| *label-value1* **to** *label-value2* }]{lang="EN-US"}]{#struct_0_x1935_x3534_497543409}
+**[if-match **[ **not**  **second-mpls-label** { *label-value*&\<1-8\> \| *label-value1* **to** *label-value2* }]]
 
-[**[undo if-match ]{lang="EN-US"}**[\[ **not** \] **second-mpls-label** { *label-value*&\<1-8\> \| *label-value1* **to** *label-value2* }]{lang="EN-US"}]{#struct_0_x1935_x3534_x447286547}
+**[undo if-match **[ **not**  **second-mpls-label** { *label-value*&\<1-8\> \| *label-value1* **to** *label-value2* }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_x2129046266}
+【缺省情况】
 
-[[没有定义匹配第二层]{style="font-family:宋体"}]{#struct_0_x1935_x3534_880259251}[MPLS]{lang="PT-BR"}[标签]{style="font-family:宋体"}[的规则。]{style="font-family:宋体"}
+没有定义匹配第二层MPLS标签的规则。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_651580407}
+【视图】
 
-[[类视图]{style="font-family:宋体"}]{#struct_0_x1935_x3534_x389694700}
+类视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_x870246504}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1935_x3534_x431984576}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1935_x3534_x183234425}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_1644238514}
+【参数】
 
-[**[not]{lang="EN-US"}**]{#struct_0_x1935_x3534_x1835603728}[：不匹配该规则。]{style="font-family:宋体"}
+**[not**]：不匹配该规则。
 
-[*[label-value]{lang="EN-US"}*[&\<1-8\>]{lang="EN-US"}]{#struct_0_x1935_x3534_x1620740025}[：]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[标签值的列表，]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[标签值的取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[1048575]{lang="EN-US"}[，]{style="font-family:宋体"}[&\<1-8\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[8]{lang="EN-US"}[次。]{style="font-family:宋体"}
+*[label-value*&\<1-8\>]：MPLS标签值的列表，MPLS标签值的取值范围为0～1048575，&\<1-8\>表示前面的参数最多可以输入8次。
 
-[*[label-value1]{lang="EN-US"}*[ **to** *label-value2*]{lang="EN-US"}]{#struct_0_x1935_x3534_645440182}[：]{style="font-family:宋体"}[MPLS]{lang="PT-BR"}[标签值]{style="font-family:宋体"}[的范围，]{style="font-family:宋体"}*[label-value1]{lang="EN-US"}*[的值必须小于]{style="font-family:宋体"}*[label-value2]{lang="EN-US"}*[的值，]{style="font-family:宋体"}[MPLS]{lang="PT-BR"}[标签值]{style="font-family:宋体"}[的取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[1048575]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[label-value1* **to** *label-value2*]：MPLS标签值的范围，*label-value1*的值必须小于*label-value2*的值，MPLS标签值的取值范围为0～1048575。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_477532783}
+【使用指导】
 
-[[如果指定了多个相同的]{style="font-family:宋体"}]{#struct_0_x1935_x3534_x184195350}[MPLS]{lang="PT-BR"}[标签]{style="font-family:宋体"}[值，系统默认为一个；多个不同的]{style="font-family:宋体"}[MPLS]{lang="PT-BR"}[标签]{style="font-family:宋体"}[值是或的关系，即只要有一个值匹配，就算匹配这条规则。]{style="font-family:宋体"}
+如果指定了多个相同的MPLS标签值，系统默认为一个；多个不同的MPLS标签值是或的关系，即只要有一个值匹配，就算匹配这条规则。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_731745131}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1935_x3534_841774623}[定义匹配第二层]{style="font-family:宋体"}[MPLS]{lang="PT-BR"}[标签为]{style="font-family:宋体"}[1]{lang="EN-US"}[到]{style="font-family:宋体"}[1000]{lang="EN-US"}[的报文的规则。]{style="font-family:宋体"}
+\# 定义匹配第二层MPLS标签为1到1000的报文的规则。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1935_x3534_x432050112}
+\<Sysname\> system-view
 
-[\[Sysname\] traffic classifier database]{lang="EN-US"}
+Sysname traffic classifier database
 
-[\[Sysname-classifier-database\] if-match second-mpls-label 1 to 1000]{lang="EN-US"}
-:::
-
-::: {#-177499157 .myid}
-[]{#_Toc404791989}[]{#struct_0_x1935_x3534_x1491082834}[]{#_Toc224962643}[]{#_Toc198110233}[]{#_Toc115171274}[]{#_Toc81455658}[]{#_Toc56569715}[]{#_Toc41626810}[]{#_Toc39395299}
+Sysname-classifier-database if-match second-mpls-label 1 to 1000
 
 **MPLS QoS \-- MPLS QoS配置命令 \-- remark mpls-exp**
 
 ------------------------------------------------------------------------
 
-[**[remark mpls-exp]{lang="EN-US"}**]{#struct_0_x1935_x3534_x1821603880}[命令用来配置标记]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[报文的]{style="font-family:宋体"}[EXP]{lang="EN-US"}[值。]{style="font-family:宋体"}
+**[remark mpls-exp**]命令用来配置标记MPLS报文的EXP值。
 
-[**[undo remark mpls-exp]{lang="EN-US"}**]{#struct_0_x1935_x3534_2124029104}[命令用来取消标记]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[报文的]{style="font-family:宋体"}[EXP]{lang="EN-US"}[值。]{style="font-family:宋体"}
+**[undo remark mpls-exp**]命令用来取消标记MPLS报文的EXP值。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_630866130}
+【命令】
 
-[**[remark ]{lang="EN-US"}**[\[ **green** \| **red** \| **yellow** \] **mpls-exp** *exp-value*]{lang="EN-US"}]{#struct_0_x1935_x3534_894859738}
+**[remark **[[ **green** \| **red** \| **yellow** ] **mpls-exp** *exp-value*]]
 
-[**[undo remark ]{lang="EN-US"}**[\[ **green** \| **red** \| **yellow** \] **mpls-exp**]{lang="EN-US"}]{#struct_0_x1935_x3534_1792087563}
+**[undo remark **[[ **green** \| **red** \| **yellow** ] **mpls-exp**]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_x1327051443}
+【缺省情况】
 
-[[没有配置重新标记报文的动作。]{style="font-family:宋体"}]{#struct_0_x1935_x3534_x1249552629}
+没有配置重新标记报文的动作。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_x432115648}
+【视图】
 
-[[流行为视图]{style="font-family:宋体"}]{#struct_0_x1935_x3534_x685925627}
+流行为视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_515542103}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1935_x3534_x1424056329}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1935_x3534_743367746}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_x1881170788}
+【参数】
 
-[**[green]{lang="EN-US"}**]{#struct_0_x1935_x3534_1232084828}[：对绿色报文进行重标记。]{style="font-family:宋体"}
+**[green**]：对绿色报文进行重标记。
 
-[**[red]{lang="EN-US"}**]{#struct_0_x1935_x3534_1024475825}[：对红色报文进行重标记。]{style="font-family:宋体"}
+**[red**]：对红色报文进行重标记。
 
-[**[yellow]{lang="EN-US"}**]{#struct_0_x1935_x3534_x1433479795}[：对黄色报文进行重标记。]{style="font-family:宋体"}
+**[yellow**]：对黄色报文进行重标记。
 
-[*[exp-value]{lang="EN-US"}*]{#struct_0_x1935_x3534_x624403283}[：]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[报文的]{style="font-family:宋体"}[EXP]{lang="EN-US"}[值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[7]{lang="EN-US"}[。]{style="font-family:
-宋体"}
+*[exp-value*]：MPLS报文的EXP值，取值范围为0～7。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_x432181184}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果没有指定颜色，则对所有颜色的报文进行重标记。]{style="font-family:宋体"}]{#struct_0_x1935_x3534_44395885}
+·如果没有指定颜色，则对所有颜色的报文进行重标记。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果是多层标签，则是对最外层标签进行标记。]{style="font-family:宋体"}]{#struct_0_x1935_x3534_x1090223617}
+·如果是多层标签，则是对最外层标签进行标记。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_x497112682}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1935_x3534_x1992082332}[配置标记]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[报文的]{style="font-family:宋体"}[EXP]{lang="EN-US"}[值为]{style="font-family:宋体"}[0]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置标记MPLS报文的EXP值为0。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1935_x3534_1168178211}
+\<Sysname\> system-view
 
-[\[Sysname\] traffic behavior database]{lang="EN-US"}
+Sysname traffic behavior database
 
-[\[Sysname-behavior-database\] remark mpls-exp 0]{lang="EN-US"}
-:::
-
-::: {#401275029 .myid}
-[]{#_Toc404791990}[]{#struct_0_x1935_x3534_x1089895937}[]{#_Toc359319441}
+Sysname-behavior-database remark mpls-exp 0
 
 **MPLS QoS \-- MPLS QoS配置命令 \-- remark imposition-mpls-exp**
 
 ------------------------------------------------------------------------
 
-[**[remark imposition-mpls-exp]{lang="EN-US"}**]{#struct_0_x1935_x3534_x174537075}[命令用来配置标记]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[新增标签的]{style="font-family:宋体"}[EXP]{lang="EN-US"}[值。]{style="font-family:宋体"}
+**[remark imposition-mpls-exp**]命令用来配置标记MPLS新增标签的EXP值。
 
-[**[undo remark imposition-mpls-exp]{lang="EN-US"}**]{#struct_0_x1935_x3534_994986346}[命令用来取消标记]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[新增标签的]{style="font-family:宋体"}[EXP]{lang="EN-US"}[值。]{style="font-family:宋体"}
+**[undo remark imposition-mpls-exp**]命令用来取消标记MPLS新增标签的EXP值。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_x2133725743}
+【命令】
 
-[**[remark ]{lang="EN-US"}**]{#struct_0_x1935_x3534_x412355409}[\[ **green** \| **red** \| **yellow** \] **imposition-mpls-exp** *exp-value*]{lang="EN-US"}
+**[remark ** [ **green** \| **red** \| **yellow** ] **imposition-mpls-exp** *exp-value*]
 
-[**[undo remark ]{lang="EN-US"}**]{#struct_0_x1935_x3534_x420990963}[\[ **green** \| **red** \| **yellow** \] **imposition-mpls-exp**]{lang="EN-US"}
+**[undo remark ** [ **green** \| **red** \| **yellow** ] **imposition-mpls-exp**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_x323092041}
+【缺省情况】
 
-[[没有配置重新标记报文的动作。]{style="font-family:宋体"}]{#struct_0_x1935_x3534_x1089830401}
+没有配置重新标记报文的动作。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_28914260}
+【视图】
 
-[[流行为视图]{style="font-family:宋体"}]{#struct_0_x1935_x3534_577188297}
+流行为视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_1661471695}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1935_x3534_1320667115}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1935_x3534_x1565868286}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_x1840635908}
+【参数】
 
-[**[green]{lang="EN-US"}**]{#struct_0_x1935_x3534_x961328965}[：对绿色报文进行重标记。]{style="font-family:宋体"}
+**[green**]：对绿色报文进行重标记。
 
-[**[red]{lang="EN-US"}**]{#struct_0_x1935_x3534_x1090420226}[：对红色报文进行重标记。]{style="font-family:宋体"}
+**[red**]：对红色报文进行重标记。
 
-[**[yellow]{lang="EN-US"}**]{#struct_0_x1935_x3534_160069361}[：对黄色报文进行重标记。]{style="font-family:宋体"}
+**[yellow**]：对黄色报文进行重标记。
 
-[*[exp-value]{lang="EN-US"}*]{#struct_0_x1935_x3534_x572870899}[：]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[报文的]{style="font-family:宋体"}[EXP]{lang="EN-US"}[值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[7]{lang="EN-US"}[。]{style="font-family:
-宋体"}
+*[exp-value*]：MPLS报文的EXP值，取值范围为0～7。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_x1839267061}
+【使用指导】
 
-[[如果没有指定颜色，则对所有颜色的报文进行重标记。]{style="font-family:宋体"}]{#struct_0_x1935_x3534_x507922181}
+如果没有指定颜色，则对所有颜色的报文进行重标记。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_1344538776}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1935_x3534_2139351046}[配置标记]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[新增标签的]{style="font-family:宋体"}[EXP]{lang="EN-US"}[值为]{style="font-family:宋体"}[0]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置标记MPLS新增标签的EXP值为0。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1935_x3534_x1090354690}
+\<Sysname\> system-view
 
-[[\[Sysname\] traffic behavior database]{lang="EN-US"}]{#struct_0_x1935_x3534_1400695892}
+Sysname traffic behavior database
 
-[[\[Sysname-behavior-database\] remark imposition-mpls-exp 0]{lang="EN-US"}]{#struct_0_x1935_x3534_x1619957066}
+Sysname-behavior-database remark imposition-mpls-exp 0
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1935_x3534_2126987779}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[remark mpls-exp]{lang="EN-US"}**]{#struct_0_x1935_x3534_505852276}
+·**remark mpls-exp**
 
-[ ]{lang="EN-US"}
-:::

@@ -1,2794 +1,2570 @@
-::: {#-704754029 .myid}
-[]{#_Toc404798217}[]{#struct_0_17822_17521_1234633496}[]{#_Toc312864690}
 
 **EVI \-- EVI调试命令 \-- debugging evi isis adj-packet**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17822_17521_69765499}
+【命令】
 
-[**[debugging evi isis adj-packet]{lang="EN-US"}**[ \[ **receive** \| **send** \] \[ **verbose** \]]{lang="EN-US"}[ \[ *process-id* \]]{lang="EN-US"}]{#struct_0_17822_17521_x1954805011}
+**[debugging evi isis adj-packet**[ [ **receive** \| **send** ]  **verbose**   *process-id* ]]
 
-[**[undo debugging ]{lang="EN-US"}[evi isis adj-packet]{lang="EN-US"}**[ \[ **receive** \| **send** \] \[ **verbose** \] \[ *process-id* \]]{lang="EN-US"}]{#struct_0_17822_17521_x1753012778}
+**[undo debugging evi isis adj-packet**[ [ **receive** \| **send** ]  **verbose**   *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1083129474}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_17822_17521_18178220}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17822_17521_x605488219}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17822_17521_1060279866}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17822_17521_x564517933}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17822_17521_1373196642}
+【参数】
 
-[**[receive]{lang="EN-US"}**]{#struct_0_17822_17521_164884622}[：]{style="font-family:宋体"}[打开接收]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[邻居报文的调试信息开关。]{style="font-family:宋体"}
+**[receive**]：打开接收EVI IS-IS邻居报文的调试信息开关。
 
-[**[send]{lang="EN-US"}**]{#struct_0_17822_17521_292849453}[：]{style="font-family:宋体"}[打开发送]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[邻居报文的调试信息开关。]{style="font-family:宋体"}
+**[send**]：打开发送EVI IS-IS邻居报文的调试信息开关。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_17822_17521_125982074}[：表示显示详细信息，对报文来说显示报文内容。]{style="font-family:宋体"}
+**[verbose**]：表示显示详细信息，对报文来说显示报文内容。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17822_17521_x483253235}[：要打开的调试信息开关的进程]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：要打开的调试信息开关的进程ID。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_17822_17521_x605160539}
+【描述】
 
-[**[debugging evi isis adj-packet]{lang="EN-US"}**]{#struct_0_17822_17521_x1215696673}[命令用来打开]{style="font-family:
-宋体"}[EVI IS-IS]{lang="EN-US"}[邻居报文调试信息开关。]{style="font-family:
-宋体"}**[undo debugging ]{lang="EN-US"}[evi isis adj-packet]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[邻居报文调试信息开关。]{style="font-family:宋体"}
+**[debugging evi isis adj-packet**]命令用来打开EVI IS-IS邻居报文调试信息开关。**undo debugging evi isis adj-packet**命令用来关闭EVI IS-IS邻居报文调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_17822_17521_x990255568}[进程的邻居报文调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，EVI IS-IS进程的邻居报文调试信息开关处于关闭状态。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_17822_17521_469074766}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果未指定]{style="font-family:宋体"}]{#struct_0_17822_17521_176928939}**[receive]{lang="EN-US"}**[和]{style="font-family:宋体"}**[send]{lang="EN-US"}**[参数，则同时显示打开接收和发送]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[邻居报文调试信息开关。]{style="font-family:宋体"}
+·如果未指定**receive**和**send**参数，则同时显示打开接收和发送EVI IS-IS邻居报文调试信息开关。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果未指定进程号，则表示打开所有进程的邻居报文调试信息开关。]{style="font-family:宋体"}]{#struct_0_17822_17521_585507785}
+·如果未指定进程号，则表示打开所有进程的邻居报文调试信息开关。
 
-[[表1-1 ]{lang="EN-US"}[debugging evi isis adj-packet]{lang="EN-US"}]{#struct_0_17822_17521_x1450449973}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging evi isis adj-packet命令输出信息描述表
 
-[]{#table_struct_0_1771209480}[[字段]{style="font-family:黑体"}]{#struct_0_17822_17521_522165030}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17822_17521_2142512034}
+描述
 
-[[Receive a LAN IIH *String* error. IIH discarded]{lang="EN-US"}]{#struct_0_17822_17521_x605095003}
+Receive a LAN IIH *String* error. IIH discarded
 
-[[收到]{style="font-family:宋体"}]{#struct_0_17822_17521_1088108420}[Hello]{lang="EN-US"}[报文解析]{style="font-family:宋体"}[TLV]{lang="EN-US"}[时发生错误，]{style="font-family:宋体"}*[String]{lang="EN-US"}*[描述了错误原因]{style="font-family:宋体"}
+收到Hello报文解析TLV时发生错误，*String*描述了错误原因
 
-[[IIH *String* with circuit(*PortName*) mismatch]{lang="EN-US"}]{#struct_0_17822_17521_x2005675399}
+IIH *String* with circuit(*PortName*) mismatch
 
-[[收到的]{lang="EN-US" style="font-family:
-  宋体"}]{#struct_0_17822_17521_587902183}[Hello]{lang="EN-US"}[报文的特征与接口]{lang="EN-US" style="font-family:宋体"}*[PortName]{lang="EN-US"}*[的特征不匹配，]{lang="EN-US" style="font-family:宋体"}*[String]{lang="EN-US"}*[描述了]{lang="EN-US" style="font-family:宋体"}[Hello]{lang="EN-US"}[报文与接口不匹配的特征]{lang="EN-US" style="font-family:宋体"}
+收到的Hello报文的特征与接口*PortName*的特征不匹配，*String*描述了Hello报文与接口不匹配的特征
 
-[[IIH has the same SNPA with a NBR, but different System ID. The NBR will be down]{lang="EN-US"}]{#struct_0_17822_17521_1391701865}
+IIH has the same SNPA with a NBR, but different System ID. The NBR will be down
 
-[[收到的]{style="font-family:宋体"}]{#struct_0_17822_17521_x513678409}[Hello]{lang="EN-US"}[报文与已有邻居有相同的]{style="font-family:宋体"}[SNPA]{lang="EN-US"}[地址，但是系统]{style="font-family:宋体"}[ID]{lang="EN-US"}[不同，将这个邻居置]{style="font-family:宋体"}[down]{lang="EN-US"}[状态]{style="font-family:宋体"}
+收到的Hello报文与已有邻居有相同的SNPA地址，但是系统ID不同，将这个邻居置down状态
 
-[[IIH has the same System ID with a NBR, but different SNPA. The IIH will be discarded]{lang="EN-US"}]{#struct_0_17822_17521_x605291611}
+IIH has the same System ID with a NBR, but different SNPA. The IIH will be discarded
 
-[[收到的]{style="font-family:宋体"}]{#struct_0_17822_17521_x90348197}[Hello]{lang="EN-US"}[报文与已有邻居有相同的系统]{style="font-family:宋体"}[ID]{lang="EN-US"}[，但是]{style="font-family:宋体"}[SNPA]{lang="EN-US"}[地址不同，丢弃该]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+收到的Hello报文与已有邻居有相同的系统ID，但是SNPA地址不同，丢弃该Hello报文
 
-[[Level-*Number* NBR(*Address*) two way *String*]{lang="EN-US"}]{#struct_0_17822_17521_x326670846}
+Level-*Number* NBR(*Address*) two way *String*
 
-[[Level-*Number* ]{lang="EN-US"}]{#struct_0_17822_17521_x1907949154}[的邻居]{lang="EN-US" style="font-family:宋体"}[2-Way]{lang="EN-US"}[检查的结果，]{lang="EN-US" style="font-family:宋体"}*[Address]{lang="EN-US"}*[描述了邻居的]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，]{lang="EN-US" style="font-family:宋体"}*[String]{lang="EN-US"}*[描述了检查结果，]{lang="EN-US" style="font-family:宋体"}*[String]{lang="EN-US"}*[的具体取值包括：]{lang="EN-US" style="font-family:宋体"}
+Level-*Number* 的邻居2-Way检查的结果，*Address*描述了邻居的MAC地址，*String*描述了检查结果，*String*的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[pass]{lang="EN-US"}]{#struct_0_17822_17521_x680360718}[：通过]{lang="EN-US" style="font-family:宋体"}
+·pass：通过
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[fail]{lang="EN-US"}]{#struct_0_17822_17521_x605226075}[：不通过]{lang="EN-US" style="font-family:宋体"}
+·fail：不通过
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[pend]{lang="EN-US"}]{#struct_0_17822_17521_1512692208}[：邻居信息没有收集完整，需要继续等待]{style="font-family:宋体"}
+·pend：邻居信息没有收集完整，需要继续等待
 
-[[System is under disable state, ADJ packet discarded]{lang="EN-US"}]{#struct_0_17822_17521_x271508564}
+System is under disable state, ADJ packet discarded
 
-[[系统处于去使能状态，丢弃]{style="font-family:宋体"}]{#struct_0_17822_17521_1388469642}[ADJ]{lang="EN-US"}[模块收到的报文]{style="font-family:宋体"}
+系统处于去使能状态，丢弃ADJ模块收到的报文
 
-[[Circuit state is not up, ADJ packet discarded]{lang="EN-US"}]{#struct_0_17822_17521_x7453011}
+Circuit state is not up, ADJ packet discarded
 
-[[接口处于非]{style="font-family:宋体"}]{#struct_0_17822_17521_x604898395}[up]{lang="EN-US"}[状态，丢弃]{style="font-family:宋体"}[ADJ]{lang="EN-US"}[模块收到的报文]{style="font-family:宋体"}
+接口处于非up状态，丢弃ADJ模块收到的报文
 
-[[Receive a packet from self, ADJ packet discarded]{lang="EN-US"}]{#struct_0_17822_17521_1857001158}
+Receive a packet from self, ADJ packet discarded
 
-[[收到的是本设备自己的报文，丢弃]{style="font-family:宋体"}]{#struct_0_17822_17521_1504620665}[ADJ]{lang="EN-US"}[模块收到的报文]{style="font-family:宋体"}
+收到的是本设备自己的报文，丢弃ADJ模块收到的报文
 
-[[Failed to get source MAC address]{lang="EN-US"}]{#struct_0_17822_17521_x118152287}
+Failed to get source MAC address
 
-[[获取源]{style="font-family:宋体"}]{#struct_0_17822_17521_389802204}[MAC]{lang="EN-US"}[地址失败]{style="font-family:宋体"}
+获取源MAC地址失败
 
-[[Receive a *String* packet from(*Address*) on circuit(*PortName*)]{lang="EN-US"}]{#struct_0_17822_17521_x604832859}
+Receive a *String* packet from(*Address*) on circuit(*PortName*)
 
-[[在接口]{lang="EN-US" style="font-family:
-  宋体"}*[PortName]{lang="EN-US"}*]{#struct_0_17822_17521_1166543020}[上从地址]{lang="EN-US" style="font-family:宋体"}*[Address]{lang="EN-US"}*[收到了]{lang="EN-US" style="font-family:宋体"}*[String]{lang="EN-US"}*[类型报文，]{lang="EN-US" style="font-family:宋体"}*[String]{lang="EN-US"}*[的具体取值包括：]{lang="EN-US" style="font-family:宋体"}
+在接口*PortName*上从地址*Address*收到了*String*类型报文，*String*的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Lan L1 Hello]{lang="EN-US"}]{#struct_0_17822_17521_x1210797832}[：]{lang="EN-US" style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+·Lan L1 Hello：Hello报文
 
-[[Receive unsupport packet *Number*, ADJ packet discarded]{lang="EN-US"}]{#struct_0_17822_17521_702705862}
+Receive unsupport packet *Number*, ADJ packet discarded
 
-[[收到了不支持的报文，丢弃]{style="font-family:宋体"}]{#struct_0_17822_17521_x605422686}[ADJ]{lang="EN-US"}[模块收到的报文，]{style="font-family:宋体"}*[Number]{lang="EN-US"}*[描述了报文的]{style="font-family:宋体"}[PDU]{lang="EN-US"}[类型值]{style="font-family:宋体"}
+收到了不支持的报文，丢弃ADJ模块收到的报文，*Number*描述了报文的PDU类型值
 
-[[No enough PDU space for *String*]{lang="EN-US"}]{#struct_0_17822_17521_334039091}
+No enough PDU space for *String*
 
-[[PDU]{lang="EN-US"}]{#struct_0_17822_17521_x675923212}[长度已经达到最大值，无法继续编码，]{style="font-family:宋体"}*[String]{lang="EN-US"}*[描述了]{style="font-family:宋体"}[PDU]{lang="EN-US"}[达到最大值的时机]{style="font-family:宋体"}
+PDU长度已经达到最大值，无法继续编码，*String*描述了PDU达到最大值的时机
 
-[[Failed to get ADJ pointer failed for *String*]{lang="EN-US"}]{#struct_0_17822_17521_x376670339}
+Failed to get ADJ pointer failed for *String*
 
-[[获取邻居维护的接口下数据指针失败，]{style="font-family:宋体"}]{#struct_0_17822_17521_x605357150}*[String]{lang="EN-US"}*[描述了失败的时机]{style="font-family:宋体"}
+获取邻居维护的接口下数据指针失败，*String*描述了失败的时机
 
-[[No extend VLAN to fill the extend VLAN TLV]{lang="EN-US"}]{#struct_0_17822_17521_1905544940}
+No extend VLAN to fill the extend VLAN TLV
 
-[[没有任何扩展]{lang="EN-US" style="font-family:
-  宋体"}[VLAN]{lang="EN-US"}]{#struct_0_17822_17521_x489163345}[，所以无法对]{lang="EN-US" style="font-family:宋体"}[Extend-VLAN TLV]{lang="EN-US"}[进行编码]{lang="EN-US" style="font-family:宋体"}
+没有任何扩展VLAN，所以无法对Extend-VLAN TLV进行编码
 
-[[No need to set AVF VLAN if not DED]{lang="EN-US"}]{#struct_0_17822_17521_x771960888}
+No need to set AVF VLAN if not DED
 
-[[不是]{style="font-family:宋体"}[DED]{lang="EN-US"}]{#struct_0_17822_17521_x605553758}[，无需携带]{style="font-family:宋体"}[AVF VLAN]{lang="EN-US"}[子]{style="font-family:宋体"}[TLV]{lang="EN-US"}
+不是DED，无需携带AVF VLAN子TLV
 
-[*[String]{lang="EN-US"}*[ send a hello on circuit(*PortName*) in VLAN *Number*]{lang="EN-US"}]{#struct_0_17822_17521_726432938}
+*[String* send a hello on circuit(*PortName*) in VLAN *Number*]
 
-[[DED]{lang="EN-US"}]{#struct_0_17822_17521_x964425296}[在接口]{lang="EN-US" style="font-family:宋体"}*[PortName]{lang="EN-US"}*[，]{lang="EN-US" style="font-family:宋体"}[VLAN *Number*]{lang="EN-US"}[上发送了]{lang="EN-US" style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+DED在接口*PortName*，VLAN *Number*上发送了Hello报文
 
-[*[String]{lang="EN-US"}*]{#struct_0_17822_17521_x189831086}[的取值如下：]{lang="EN-US" style="font-family:宋体"}
+*[String*]的取值如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DED]{lang="EN-US"}]{#struct_0_17822_17521_x605488222}
+·DED
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ED]{lang="EN-US"}]{#struct_0_17822_17521_1061000763}
+·ED
 
-[[DED send hello failed on circuit(*PortName*) in VLAN *Number*]{lang="EN-US"}]{#struct_0_17822_17521_965366738}
+DED send hello failed on circuit(*PortName*) in VLAN *Number*
 
-[[DED]{lang="EN-US"}]{#struct_0_17822_17521_478941745}[在接口]{lang="EN-US" style="font-family:宋体"}*[PortName]{lang="EN-US"}*[，]{lang="EN-US" style="font-family:宋体"}[VLAN *Number*]{lang="EN-US"}[上发送]{lang="EN-US" style="font-family:宋体"}[Hello]{lang="EN-US"}[报文失败]{lang="EN-US" style="font-family:宋体"}
+DED在接口*PortName*，VLAN *Number*上发送Hello报文失败
 
-[[Failed to get circuit data for Multiport Capability TLV.]{lang="EN-US"}]{#struct_0_17822_17521_309389601}
+Failed to get circuit data for Multiport Capability TLV.
 
-[[无法获取邻居接口数据，封装多端口能力集]{style="font-family:宋体"}]{#struct_0_17822_17521_1214068728}[TLV]{lang="EN-US"}[失败]{style="font-family:宋体"}
+无法获取邻居接口数据，封装多端口能力集TLV失败
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1912028986}
+\# 打开所有进程的接收EVI IS-IS邻居报文调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17822_17521_x605160542}[打开所有进程的接收]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[邻居报文调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging evi isis adj-packet
 
-[[\<Sysname\> debugging evi isis adj-packet]{lang="EN-US"}]{#struct_0_17822_17521_x1215237926}
+\*Dec 19 11:39:36:066 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1;
 
-[\*Dec 19 11:39:36:066 2011 ]{lang="EN-US"}[Sysname EVIISIS/7/EVIISIS DBG: -MDC=1;]{lang="EN-US"}
+EVIISIS-0-ADJ: Level-1 NBR(0011.2200.0201) two way pass.
 
-[EVIISIS-0-ADJ: Level-1 NBR(0011.2200.0201) two way pass.]{lang="EN-US"}
-
-[*[// Level-1]{lang="EN-US"}*]{#struct_0_17822_17521_x1305029350}*[的邻居]{style="font-family:宋体"}[(0011.2200.0201)]{lang="EN-US"}[双向连接检查通过]{style="font-family:宋体"}*
-
-::: {#-1525054557 .myid}
-[]{#_Toc404798218}[]{#struct_0_17822_17521_x371472966}[]{#_Toc312864691}
+*[// Level-1*]*的邻居(0011.2200.0201)双向连接检查通过*
 
 **EVI \-- EVI调试命令 \-- debugging evi isis all**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17822_17521_1931144123}
+【命令】
 
-[**[debugging evi isis]{lang="EN-US"}**[ **all** \[ *process-id* \]]{lang="EN-US"}]{#struct_0_17822_17521_1169965710}
+**[debugging evi isis** **all** [ *process-id* ]]
 
-[**[undo debugging evi isis all ]{lang="EN-US"}**[\[ *process-id* \]]{lang="EN-US"}]{#struct_0_17822_17521_x605095006}
+**[undo debugging evi isis all ** *process-id* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17822_17521_1087780740}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_17822_17521_93157141}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17822_17521_1651820731}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17822_17521_2127897611}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17822_17521_945140157}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17822_17521_x847983209}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17822_17521_x2121818856}[：要打开的调试信息开关的进程]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：要打开的调试信息开关的进程ID。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_17822_17521_x605291614}
+【描述】
 
-[**[debugging evi isis all]{lang="EN-US"}**]{#struct_0_17822_17521_x90675877}[命令用来打开所有与]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程相关的调试信息开关。]{style="font-family:宋体"}**[undo debugging evi isis all]{lang="EN-US"}**[命令用来关闭所有与]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程相关的调试信息开关。]{style="font-family:宋体"}
+**[debugging evi isis all**]命令用来打开所有与EVI IS-IS进程相关的调试信息开关。**undo debugging evi isis all**命令用来关闭所有与EVI IS-IS进程相关的调试信息开关。
 
-[[缺省情况下，所有与]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_17822_17521_82810460}[进程相关的调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，所有与EVI IS-IS进程相关的调试信息开关处于关闭状态。
 
-[[需要注意的是，如果未指定进程号，则表示打开所有进程的所有调试信息开关。]{style="font-family:宋体"}]{#struct_0_17822_17521_x746434124}
+需要注意的是，如果未指定进程号，则表示打开所有进程的所有调试信息开关。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17822_17521_x942129437}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17822_17521_1768041021}[打开所有进程的]{style="font-family:宋体"}[所有与]{style="font-family:
-宋体"}[EVI IS-IS]{lang="EN-US"}[进程相关的调试信息开关。]{style="font-family:宋体"}
+\# 打开所有进程的所有与EVI IS-IS进程相关的调试信息开关。
 
-[[\<Sysname\> debugging evi isis all]{lang="EN-US"}]{#struct_0_17822_17521_2091305064}
-:::
-
-::: {#-116444641 .myid}
-[]{#_Toc127096845}[]{#_Toc65310809}[]{#_Toc36367100}[]{#_Toc34185794}[]{#_Toc307924335}[]{#_Ref146536023}[]{#_Toc404798219}[]{#struct_0_17822_17521_x601249448}[]{#_Toc312864692}
+\<Sysname\> debugging evi isis all
 
 **EVI \-- EVI调试命令 \-- debugging evi isis error**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17822_17521_x605226078}
+【命令】
 
-[**[debugging evi isis]{lang="EN-US"}**[ **error** \[ *process-id* \]]{lang="EN-US"}]{#struct_0_17822_17521_1513544176}
+**[debugging evi isis** **error** [ *process-id* ]]
 
-[**[undo debugging evi isis error ]{lang="EN-US"}**[\[ *process-id* \]]{lang="EN-US"}]{#struct_0_17822_17521_1310775018}
+**[undo debugging evi isis error ** *process-id* ]
 
-[[【视图】]{style="font-family:
-黑体"}]{#struct_0_17822_17521_156310}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_17822_17521_x520960590}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17822_17521_263913923}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17822_17521_246429812}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17822_17521_821797423}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17822_17521_x153882046}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17822_17521_x604898398}[：要打开的调试信息开关的进程]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：要打开的调试信息开关的进程ID。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_17822_17521_1856673478}
+【描述】
 
-[**[debugging evi isis]{lang="EN-US"}[ error]{lang="EN-US"}**]{#struct_0_17822_17521_x1639397641}[命令用来打开]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程错误调试信息开关。]{style="font-family:宋体"}**[undo debugging evi isis]{lang="EN-US"}[ error]{lang="EN-US"}**[命令用来关闭]{style="font-family:
-宋体"}[EVI IS-IS]{lang="EN-US"}[进程错误调试信息开关。]{style="font-family:
-宋体"}
+**[debugging evi isis error**]命令用来打开EVI IS-IS进程错误调试信息开关。**undo debugging evi isis error**命令用来关闭EVI IS-IS进程错误调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_17822_17521_x75878766}[进程的错误调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，EVI IS-IS进程的错误调试信息开关处于关闭状态。
 
-[[需要注意的是，如果未指定进程号，则表示打开所有进程的错误调试信息开关。]{style="font-family:宋体"}]{#struct_0_17822_17521_x2097888656}
+需要注意的是，如果未指定进程号，则表示打开所有进程的错误调试信息开关。
 
-[[表1-2 ]{lang="EN-US"}[debugging evi isis error]{lang="EN-US"}]{#struct_0_17822_17521_x294587050}[命令输出信息描述表]{style="font-family:黑体"}
+表1-2 debugging evi isis error命令输出信息描述表
 
-[]{#table_struct_0_1766509288}[[字段]{style="font-family:黑体"}]{#struct_0_17822_17521_2122160806}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17822_17521_1991911166}
+描述
 
-[[Failed to create *Type* bitmap when *String*]{lang="EN-US"}]{#struct_0_17822_17521_x604832862}
+Failed to create *Type* bitmap when *String*
 
-[[创建]{lang="EN-US" style="font-family:
-  宋体"}[bitmap]{lang="EN-US"}]{#struct_0_17822_17521_1167132845}[资源失败，]{lang="EN-US" style="font-family:宋体"}*[ String]{lang="EN-US"}*[描述了失败的时机，]{lang="EN-US" style="font-family:宋体"}*[Type]{lang="EN-US"}*[描述了]{lang="EN-US" style="font-family:宋体"}[bitmap]{lang="EN-US"}[资源的类型，]{lang="EN-US" style="font-family:宋体"}*[Type]{lang="EN-US"}*[的取值可以如下]{lang="EN-US" style="font-family:宋体"}[：]{style="font-family:
-  宋体"}
+创建bitmap资源失败，* String*描述了失败的时机，*Type*描述了bitmap资源的类型，*Type*的取值可以如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[inactive]{lang="EN-US"}]{#struct_0_17822_17521_x1619510041}[：不活动的]{lang="EN-US" style="font-family:宋体"}
+·inactive：不活动的
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[note]{lang="EN-US"}]{#struct_0_17822_17521_x1331597712}[：记录的]{lang="EN-US" style="font-family:宋体"}
+·note：记录的
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[add]{lang="EN-US"}]{#struct_0_17822_17521_x127522109}[：添加的]{lang="EN-US" style="font-family:宋体"}
+·add：添加的
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[delete]{lang="EN-US"}]{#struct_0_17822_17521_x622204305}[：删除的]{lang="EN-US" style="font-family:宋体"}
+·delete：删除的
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[saved]{lang="EN-US"}]{#struct_0_17822_17521_x605422685}[：保存的]{lang="EN-US" style="font-family:宋体"}
+·saved：保存的
 
-[[Failed to get mac by vlan, ADJ system data is NULL]{lang="EN-US"}]{#struct_0_17822_17521_334104627}
+Failed to get mac by vlan, ADJ system data is NULL
 
-[[通过]{style="font-family:宋体"}]{#struct_0_17822_17521_515801003}[vlan]{lang="EN-US"}[获取]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址失败，邻居维护的系统数据为空]{style="font-family:宋体"}
+通过vlan获取MAC地址失败，邻居维护的系统数据为空
 
-[[Failed to add local mac entry, ADJ system data is NULL]{lang="EN-US"}]{#struct_0_17822_17521_1380193294}
+Failed to add local mac entry, ADJ system data is NULL
 
-[[添加本地]{style="font-family:宋体"}]{#struct_0_17822_17521_x1476787535}[MAC]{lang="EN-US"}[地址失败，邻居维护的系统数据为空]{style="font-family:宋体"}
+添加本地MAC地址失败，邻居维护的系统数据为空
 
-[[Failed to get local MAC of VLAN *Number*]{lang="EN-US"}]{#struct_0_17822_17521_x605357149}
+Failed to get local MAC of VLAN *Number*
 
-[[获取]{lang="EN-US" style="font-family:
-  宋体"}[VLAN *Number*]{lang="EN-US"}]{#struct_0_17822_17521_1905086189}[的本地]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址失败]{lang="EN-US" style="font-family:宋体"}
+获取VLAN *Number*的本地MAC地址失败
 
-[[Failed to create new LAV node]{lang="EN-US"}]{#struct_0_17822_17521_x99218152}
+Failed to create new LAV node
 
-[[创建新的]{style="font-family:宋体"}]{#struct_0_17822_17521_x1563250427}[LAV]{lang="EN-US"}[结点失败]{style="font-family:宋体"}
+创建新的LAV结点失败
 
-[[Failed to create bitmap to operate *String*]{lang="EN-US"}]{#struct_0_17822_17521_221442218}
+Failed to create bitmap to operate *String*
 
-[[创建一个操作类型为]{style="font-family:宋体"}]{#struct_0_17822_17521_x605553757}*[String]{lang="EN-US"}*[的位图失败]{style="font-family:宋体"}
+创建一个操作类型为*String*的位图失败
 
-[[Failed to get extend VLAN]{lang="EN-US"}]{#struct_0_17822_17521_727153834}
+Failed to get extend VLAN
 
-[[获取扩展]{style="font-family:宋体"}]{#struct_0_17822_17521_x1756400118}[VLAN]{lang="EN-US"}[失败]{style="font-family:宋体"}
+获取扩展VLAN失败
 
-[[Invalid NULL parameter in getting all AVF information]{lang="EN-US"}]{#struct_0_17822_17521_479830868}
+Invalid NULL parameter in getting all AVF information
 
-[[获取所有]{style="font-family:宋体"}]{#struct_0_17822_17521_x1725194566}[AVF]{lang="EN-US"}[信息时无效的]{style="font-family:宋体"}[NULL]{lang="EN-US"}[参数]{style="font-family:宋体"}
+获取所有AVF信息时无效的NULL参数
 
-[[Failed to get current LAV when GR finished]{lang="EN-US"}]{#struct_0_17822_17521_x605488221}
+Failed to get current LAV when GR finished
 
-[[获取当前]{style="font-family:宋体"}]{#struct_0_17822_17521_1060804155}[LAV]{lang="EN-US"}[失败，当]{style="font-family:宋体"}[GR]{lang="EN-US"}[完成时]{style="font-family:宋体"}
+获取当前LAV失败，当GR完成时
 
-[[Failed to alloc r-mac head while *String*]{lang="EN-US"}]{#struct_0_17822_17521_x1022941901}
+Failed to alloc r-mac head while *String*
 
-[[分配]{lang="EN-US" style="font-family:
-  宋体"}[r-mac]{lang="EN-US"}]{#struct_0_17822_17521_709708089}[头空间失败，]{lang="EN-US" style="font-family:宋体"}*[String]{lang="EN-US"}*[描述了失败的时机]{lang="EN-US" style="font-family:宋体"}
+分配r-mac头空间失败，*String*描述了失败的时机
 
-[[Failed to add r-mac vlan entry, vlan: *Number*]{lang="EN-US"}]{#struct_0_17822_17521_x605160541}
+Failed to add r-mac vlan entry, vlan: *Number*
 
-[[添加]{lang="EN-US" style="font-family:
-  宋体"}[r-mac]{lang="EN-US"}]{#struct_0_17822_17521_x1215172390}[表项失败，]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[为]{lang="EN-US" style="font-family:宋体"}*[Number]{lang="EN-US"}*
+添加r-mac表项失败，VLAN为*Number*
 
-[[Failed to create r-mac attribute]{lang="EN-US"}]{#struct_0_17822_17521_1710935022}
+Failed to create r-mac attribute
 
-[[创建]{style="font-family:宋体"}]{#struct_0_17822_17521_x293314096}[r-mac]{lang="EN-US"}[属性失败]{style="font-family:宋体"}
+创建r-mac属性失败
 
-[[Failed to notify r-mac message]{lang="EN-US"}]{#struct_0_17822_17521_x605095005}
+Failed to notify r-mac message
 
-[[通知]{lang="EN-US" style="font-family:
-  宋体"}[r-mac]{lang="EN-US"}]{#struct_0_17822_17521_1087977348}[信息失败]{lang="EN-US" style="font-family:宋体"}
+通知r-mac信息失败
 
-[[LAN ADJ number has arrived max]{lang="EN-US"}]{#struct_0_17822_17521_457364512}
+LAN ADJ number has arrived max
 
-[[LAN ADJ]{lang="EN-US"}]{#struct_0_17822_17521_2026602136}[数据已达最大值]{lang="EN-US" style="font-family:宋体"}
+LAN ADJ数据已达最大值
 
-[[Failed to get ADJ pointer when starting hello timer]{lang="EN-US"}]{#struct_0_17822_17521_x605291613}
+Failed to get ADJ pointer when starting hello timer
 
-[[当启动]{style="font-family:宋体"}]{#struct_0_17822_17521_x90479269}[Hello]{lang="EN-US"}[定时间器时，获取]{style="font-family:宋体"}[ADJ]{lang="EN-US"}[维护数据失败]{style="font-family:宋体"}
+当启动Hello定时间器时，获取ADJ维护数据失败
 
-[[Failed to start Level-*Number* Hello timer ]{lang="EN-US"}]{#struct_0_17822_17521_x486406056}
+Failed to start Level-*Number* Hello timer
 
-[[启动]{lang="EN-US" style="font-family:
-  宋体"}[Level *Number*]{lang="EN-US"}]{#struct_0_17822_17521_x605226077}[的]{lang="EN-US" style="font-family:宋体"}[Hello]{lang="EN-US"}[定时器失败]{lang="EN-US" style="font-family:宋体"}
+启动Level *Number*的Hello定时器失败
 
-[[Failed to start hold timer]{lang="EN-US"}]{#struct_0_17822_17521_1512561136}
+Failed to start hold timer
 
-[[启动]{style="font-family:宋体"}]{#struct_0_17822_17521_153653223}[Hold]{lang="EN-US"}[定时器失败]{style="font-family:宋体"}
+启动Hold定时器失败
 
-[[Failed to get circuit(*PortName*)\'s priority]{lang="EN-US"}]{#struct_0_17822_17521_x1966539346}
+Failed to get circuit(*PortName*)\'s priority
 
-[[获取接口]{style="font-family:宋体"}]{#struct_0_17822_17521_x604898397}*[PortName]{lang="EN-US"}*[优先级失败]{style="font-family:宋体"}
+获取接口*PortName*优先级失败
 
-[[Failed to get system\'s area address when encoding AREA]{lang="EN-US"}]{#struct_0_17822_17521_1856870086}
+Failed to get system\'s area address when encoding AREA
 
-[[获取区域地址失败]{lang="EN-US" style="font-family:
-  宋体"}]{#struct_0_17822_17521_1487741969}
+获取区域地址失败
 
-[[Failed to get circuit(*PortName*)\'s MTU]{lang="EN-US"}]{#struct_0_17822_17521_943319986}
+Failed to get circuit(*PortName*)\'s MTU
 
-[[获取接口]{lang="EN-US" style="font-family:
-  宋体"}*[PortName]{lang="EN-US"}*]{#struct_0_17822_17521_x604832861}[的]{lang="EN-US" style="font-family:宋体"}[MTU]{lang="EN-US"}[失败]{lang="EN-US" style="font-family:宋体"}
+获取接口*PortName*的MTU失败
 
-[*[Type]{lang="EN-US"}*[ send hello failed on circuit(*PortName*) in VLAN *Number*]{lang="EN-US"}]{#struct_0_17822_17521_1167067309}
+*[Type* send hello failed on circuit(*PortName*) in VLAN *Number*]
 
-[[设备类型为]{lang="EN-US" style="font-family:
-  宋体"}*[Type]{lang="EN-US"}*]{#struct_0_17822_17521_x818314231}[的设备在接口]{lang="EN-US" style="font-family:宋体"}*[PortName]{lang="EN-US"}*[，]{style="font-family:宋体"}[VLAN *Number*]{lang="EN-US"}[上发送]{lang="EN-US" style="font-family:宋体"}[Hello]{lang="EN-US"}[报文失败]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}*[Type]{lang="EN-US"}*[的取值可以如下：]{lang="EN-US" style="font-family:宋体"}
+设备类型为*Type*的设备在接口*PortName*，VLAN *Number*上发送Hello报文失败。*Type*的取值可以如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DED]{lang="EN-US"}]{#struct_0_17822_17521_x605422688}
+·DED
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ED]{lang="EN-US"}]{#struct_0_17822_17521_334956595}
+·ED
 
-[[Failed to send hello packet on circuit(*PortName*)]{lang="EN-US"}]{#struct_0_17822_17521_317971941}
+Failed to send hello packet on circuit(*PortName*)
 
-[[在接口]{lang="EN-US" style="font-family:
-  宋体"}*[PortName]{lang="EN-US"}*]{#struct_0_17822_17521_x605357152}[上发送]{lang="EN-US" style="font-family:宋体"}[Hello]{lang="EN-US"}[报文失败]{lang="EN-US" style="font-family:宋体"}
+在接口*PortName*上发送Hello报文失败
 
-[[Failed to create hello timer  on circuit(*PortName*)]{lang="EN-US"}]{#struct_0_17822_17521_1905413868}
+Failed to create hello timer  on circuit(*PortName*)
 
-[[在接口]{lang="EN-US" style="font-family:
-  宋体"}*[PortName]{lang="EN-US"}*]{#struct_0_17822_17521_1099083465}[上创建]{lang="EN-US" style="font-family:宋体"}[Hello]{lang="EN-US"}[定时器失败]{lang="EN-US" style="font-family:宋体"}
+在接口*PortName*上创建Hello定时器失败
 
-[[Failed to notify LAV change message]{lang="EN-US"}]{#struct_0_17822_17521_824703714}
+Failed to notify LAV change message
 
-[[通知]{style="font-family:宋体"}]{#struct_0_17822_17521_x605553760}[LAV]{lang="EN-US"}[改变消息失败]{style="font-family:宋体"}
+通知LAV改变消息失败
 
-[[Processing interface MTU change error.]{lang="EN-US"}]{#struct_0_17822_17521_726957229}
+Processing interface MTU change error.
 
-[[处理接口]{style="font-family:宋体"}]{#struct_0_17822_17521_x2104876318}[MTU]{lang="EN-US"}[变化事件错误]{style="font-family:宋体"}
+处理接口MTU变化事件错误
 
-[[Failed to active the interface(*interface index*).]{lang="EN-US"}]{#struct_0_17822_17521_x605488224}
+Failed to active the interface(*interface index*).
 
-[[激活接口]{lang="EN-US" style="font-family:宋体"}[(*interface index*)]{lang="EN-US"}]{#struct_0_17822_17521_1060607547}[失败]{lang="EN-US" style="font-family:宋体"}
+激活接口(*interface index*)失败
 
-[[Notify interface delete error on interface: *interface index*]{lang="EN-US"}]{#struct_0_17822_17521_2103935939}
+Notify interface delete error on interface: *interface index*
 
-[[通知接口]{lang="EN-US" style="font-family:宋体"}*[interface index]{lang="EN-US"}*]{#struct_0_17822_17521_x605160544}[删除事件错误]{lang="EN-US" style="font-family:宋体"}
+通知接口*interface index*删除事件错误
 
-[[Invalid phase *phase-number*, ignore event.]{lang="EN-US"}]{#struct_0_17822_17521_x1214844710}
+Invalid phase *phase-number*, ignore event.
 
-[[无效的]{style="font-family:宋体"}]{#struct_0_17822_17521_77630818}[reset]{lang="EN-US"}[阶段，忽略该事件]{style="font-family:宋体"}
+无效的reset阶段，忽略该事件
 
-[[Failed to create LSP change notify message.]{lang="EN-US"}]{#struct_0_17822_17521_x605095008}
+Failed to create LSP change notify message.
 
-[[创建]{style="font-family:宋体"}]{#struct_0_17822_17521_1087649668}[LSP]{lang="EN-US"}[变化通知消息失败]{style="font-family:宋体"}
+创建LSP变化通知消息失败
 
-[[PDU level(]{lang="EN-US"}[1) mismatch with circuit level(*CirLevel*).]{lang="EN-US"}]{#struct_0_17822_17521_x605291616}
+PDU level(1) mismatch with circuit level(*CirLevel*).
 
-[[PDU]{lang="EN-US"}]{#struct_0_17822_17521_x90806949}[报文中的]{lang="EN-US" style="font-family:宋体"}[level(1)]{lang="EN-US"}[与接口]{lang="EN-US" style="font-family:宋体"}[level(*CirLevel*)]{lang="EN-US"}[不匹配]{lang="EN-US" style="font-family:宋体"}
+PDU报文中的level(1)与接口level(*CirLevel*)不匹配
 
-[[Failed to set updt socket option.]{lang="EN-US"}]{#struct_0_17822_17521_x834074136}
+Failed to set updt socket option.
 
-[[设置]{style="font-family:宋体"}]{#struct_0_17822_17521_x605226080}[updt]{lang="EN-US"}[的]{style="font-family:宋体"}[socket]{lang="EN-US"}[选项失败]{style="font-family:宋体"}
+设置updt的socket选项失败
 
-[[Failed to start *Type* timer on circuit *String*.]{lang="EN-US"}]{#struct_0_17822_17521_1513019885}
+Failed to start *Type* timer on circuit *String*.
 
-[[在接口]{lang="EN-US" style="font-family:
-  宋体"}*[String]{lang="EN-US"}*]{#struct_0_17822_17521_1701328217}[上启动定时器失败，]{lang="EN-US" style="font-family:宋体"}*[String]{lang="EN-US"}*[的具体取值包括：接口名]{lang="EN-US" style="font-family:宋体"}[，]{style="font-family:
-  宋体"}*[Type]{lang="EN-US"}*[描述了定时器类型]{lang="EN-US" style="font-family:宋体"}[：]{style="font-family:宋体"}
+在接口*String*上启动定时器失败，*String*的具体取值包括：接口名，*Type*描述了定时器类型：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[CSNP]{lang="EN-US"}]{#struct_0_17822_17521_x604898400}
+·CSNP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PSNP]{lang="EN-US"}]{#struct_0_17822_17521_665556669}
+·PSNP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSP]{lang="EN-US"}]{#struct_0_17822_17521_x604832864}
+·LSP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSP flooding]{lang="EN-US"}]{#struct_0_17822_17521_1167263917}
+·LSP flooding
 
-[[Failed to stop LSP  flood timer on circuit *String*.]{lang="EN-US"}]{#struct_0_17822_17521_x1231310370}
+Failed to stop LSP  flood timer on circuit *String*.
 
-[[在接口]{lang="EN-US" style="font-family:
-  宋体"}*[String]{lang="EN-US"}*]{#struct_0_17822_17521_x605422687}[上停止]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[泛洪定时器失败，]{lang="EN-US" style="font-family:宋体"}*[String]{lang="EN-US"}*[的具体取值包括：接口名]{lang="EN-US" style="font-family:宋体"}
+在接口*String*上停止LSP泛洪定时器失败，*String*的具体取值包括：接口名
 
-[[Failed to stop level-1 timer on circuit *String*.]{lang="EN-US"}]{#struct_0_17822_17521_333973555}
+Failed to stop level-1 timer on circuit *String*.
 
-[[在接口]{lang="EN-US" style="font-family:
-  宋体"}*[String]{lang="EN-US"}*]{#struct_0_17822_17521_x605357151}[上停止]{lang="EN-US" style="font-family:宋体"}[L]{lang="EN-US"}[ever-1]{lang="EN-US"}[定时器失败，]{lang="EN-US" style="font-family:宋体"}*[String]{lang="EN-US"}*[的具体取值包括：接口名]{lang="EN-US" style="font-family:宋体"}
+在接口*String*上停止Lever-1定时器失败，*String*的具体取值包括：接口名
 
-[[Failed to insert mac to list]{lang="EN-US"}]{#struct_0_17822_17521_1905610476}
+Failed to insert mac to list
 
-[[向链表中添加]{style="font-family:宋体"}]{#struct_0_17822_17521_1826890657}[MAC]{lang="EN-US"}[地址失败]{style="font-family:宋体"}
+向链表中添加MAC地址失败
 
-[[Failed to update LSP information]{lang="EN-US"}]{#struct_0_17822_17521_x605553759}
+Failed to update LSP information
 
-[[更新]{lang="EN-US" style="font-family:
-  宋体"}[LSP]{lang="EN-US"}]{#struct_0_17822_17521_726498474}[信息失败]{lang="EN-US" style="font-family:宋体"}
+更新LSP信息失败
 
-[[Failed to insert LSP information]{lang="EN-US"}]{#struct_0_17822_17521_x605488223}
+Failed to insert LSP information
 
-[[添加]{lang="EN-US" style="font-family:
-  宋体"}[LSP]{lang="EN-US"}]{#struct_0_17822_17521_1060935227}[信息失败]{lang="EN-US" style="font-family:宋体"}
+添加LSP信息失败
 
-[[Circuit(*PortName*) is not operationally on, ignoring PDU]{lang="EN-US"}]{#struct_0_17822_17521_x1021404758}
+Circuit(*PortName*) is not operationally on, ignoring PDU
 
-[[接口]{lang="EN-US" style="font-family:
-  宋体"}*[PortName]{lang="EN-US"}*]{#struct_0_17822_17521_x605160543}[处于不可操作状态，忽略]{lang="EN-US" style="font-family:宋体"}[PDU]{lang="EN-US"}
+接口*PortName*处于不可操作状态，忽略PDU
 
-[[Failed to obtain IF net index]{lang="EN-US"}]{#struct_0_17822_17521_x1215303462}
+Failed to obtain IF net index
 
-[[获取]{lang="EN-US" style="font-family:
-  宋体"}[IF net ]{lang="EN-US"}]{#struct_0_17822_17521_x605095007}[索引失败]{lang="EN-US" style="font-family:宋体"}
+获取IF net 索引失败
 
-[[Failed to send PDU, returns *ReturnLength*, buffer length is *Length*.]{lang="EN-US"}]{#struct_0_17822_17521_1087846276}
+Failed to send PDU, returns *ReturnLength*, buffer length is *Length*.
 
-[[发送报文失败，发送缓冲区大小为]{lang="EN-US" style="font-family:
-  宋体"}*[Length]{lang="EN-US"}*]{#struct_0_17822_17521_x605291615}[，返回值为]{lang="EN-US" style="font-family:宋体"}*[ReturnLength]{lang="EN-US"}*[ ]{lang="EN-US"}
+发送报文失败，发送缓冲区大小为*Length*，返回值为*ReturnLength*
 
-[[LSP size(*LspSize*) is larger than circuit MTU(*CirMtu*).]{lang="EN-US"}]{#struct_0_17822_17521_x90610341}
+LSP size(*LspSize*) is larger than circuit MTU(*CirMtu*).
 
-[[LSP]{lang="EN-US"}]{#struct_0_17822_17521_x1417511867}[的大小]{lang="EN-US" style="font-family:宋体"}[(*LspSize*)]{lang="EN-US"}[大于接口的]{lang="EN-US" style="font-family:宋体"}[MTU(*CirMtu*) ]{lang="EN-US"}
+LSP的大小(*LspSize*)大于接口的MTU(*CirMtu*)
 
-[[Failed to send LSP]{lang="EN-US"}]{#struct_0_17822_17521_x605226079}
+Failed to send LSP
 
-[[发送]{lang="EN-US" style="font-family:
-  宋体"}[LSP]{lang="EN-US"}]{#struct_0_17822_17521_1513478640}[报文失败]{lang="EN-US" style="font-family:宋体"}
+发送LSP报文失败
 
-[[Failed to send level-*Number*  *Type* PDU]{lang="EN-US"}]{#struct_0_17822_17521_x604898399}
+Failed to send level-*Number*  *Type* PDU
 
-[[发送]{lang="EN-US" style="font-family:
-  宋体"}[level-*Number*]{lang="EN-US"}]{#struct_0_17822_17521_1856739014}[的]{lang="EN-US" style="font-family:宋体"}*[Type]{lang="EN-US"}*[类型报文失败]{lang="EN-US" style="font-family:宋体"}[，]{style="font-family:宋体"}*[Type]{lang="EN-US"}*[的具体取值可以如下]{lang="EN-US" style="font-family:宋体"}[：]{style="font-family:宋体"}
+发送level-*Number*的*Type*类型报文失败，*Type*的具体取值可以如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[CSNP]{lang="EN-US"}]{#struct_0_17822_17521_x604832863}
+·CSNP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PSNP]{lang="EN-US"}]{#struct_0_17822_17521_1167198381}
+·PSNP
 
-[[Failed to install LSP with sequence number zero]{lang="EN-US"}]{#struct_0_17822_17521_960661257}
+Failed to install LSP with sequence number zero
 
-[[安装序号为]{style="font-family:宋体"}]{#struct_0_17822_17521_1769232404}[0]{lang="EN-US"}[的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[失败]{style="font-family:宋体"}
+安装序号为0的LSP失败
 
-[[Failed to *Type*  level-*Number* area address *String*]{lang="EN-US"}]{#struct_0_17822_17521_960726793}
+Failed to *Type*  level-*Number* area address *String*
 
-[[操作]{lang="EN-US" style="font-family:
-  宋体"}[level-*Number*]{lang="EN-US"}]{#struct_0_17822_17521_x589062269}[区域地址]{lang="EN-US" style="font-family:宋体"}*[String]{lang="EN-US"}*[失败]{lang="EN-US" style="font-family:宋体"}[,]{lang="EN-US"}[操作类型为]{lang="EN-US" style="font-family:宋体"}*[Type]{lang="EN-US"}*[，]{lang="EN-US" style="font-family:宋体"}*[Type]{lang="EN-US"}*[的具体取值可以如下]{lang="EN-US" style="font-family:宋体"}
+操作level-*Number*区域地址*String*失败,操作类型为*Type*，*Type*的具体取值可以如下
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[add]{lang="EN-US"}]{#struct_0_17822_17521_x1363977523}[：添加]{lang="EN-US" style="font-family:宋体"}
+·add：添加
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[delete]{lang="EN-US"}]{#struct_0_17822_17521_960530185}[：删除]{lang="EN-US" style="font-family:宋体"}
+·delete：删除
 
-[[Failed to *Type* level- *Number* protocol support *ProNumber*(*ProString*).]{lang="EN-US"}]{#struct_0_17822_17521_1542305458}
+Failed to *Type* level- *Number* protocol support *ProNumber*(*ProString*).
 
-[[操作]{lang="EN-US" style="font-family:
-  宋体"}[level-*Number*]{lang="EN-US"}]{#struct_0_17822_17521_960595721}[的支持的协议类型]{lang="EN-US" style="font-family:宋体"}*[ProNumber]{lang="EN-US"}*[(*ProString*)]{lang="EN-US"}[失败，操作类型为]{lang="EN-US" style="font-family:宋体"}*[Type]{lang="EN-US"}*[。]{style="font-family:宋体"}
+操作level-*Number*的支持的协议类型*ProNumber*(*ProString*)失败，操作类型为*Type*。
 
-[*[ProString]{lang="EN-US"}*]{#struct_0_17822_17521_332636330}[的具体取值包括：]{lang="EN-US" style="font-family:宋体"}
+*[ProString*]的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[EVI-ISIS]{lang="EN-US"}]{#struct_0_17822_17521_960923401}[：]{style="font-family:宋体"}[EVI]{lang="EN-US"}[ ]{lang="EN-US"}[IS]{lang="EN-US"}[-]{lang="EN-US"}[IS]{lang="EN-US"}[协议]{lang="EN-US" style="font-family:宋体"}
+·EVI-ISIS：EVIIS-IS协议
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[unknown]{lang="EN-US"}]{#struct_0_17822_17521_x754248672}[：]{style="font-family:宋体"}[其它协议]{lang="EN-US" style="font-family:宋体"}
+·unknown：其它协议
 
-[*[Type]{lang="EN-US"}*]{#struct_0_17822_17521_960988937}[的具体取值可以如下]{lang="EN-US" style="font-family:宋体"}[：]{style="font-family:
-  宋体"}
+*[Type*]的具体取值可以如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[add]{lang="EN-US"}]{#struct_0_17822_17521_x1974838285}[：添加]{lang="EN-US" style="font-family:宋体"}
+·add：添加
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[delete]{lang="EN-US"}]{#struct_0_17822_17521_960792329}[：删除]{lang="EN-US" style="font-family:宋体"}
+·delete：删除
 
-[[Failed to add level- *Number* neighbour: system *systemID* =\> neighbour *neighbourID*.]{lang="EN-US"}]{#struct_0_17822_17521_1798622774}
+Failed to add level- *Number* neighbour: system *systemID* =\> neighbour *neighbourID*.
 
-[[添加]{lang="EN-US" style="font-family:
-  宋体"}[leve]{lang="EN-US"}]{#struct_0_17822_17521_960857865}[l]{lang="EN-US"}[- *Number*]{lang="EN-US"}[由]{lang="EN-US" style="font-family:宋体"}*[systemID]{lang="EN-US"}*[到]{lang="EN-US" style="font-family:宋体"}*[neighbourID]{lang="EN-US"}*[的邻居信息失败]{lang="EN-US" style="font-family:宋体"}
+添加level- *Number*由*systemID*到*neighbourID*的邻居信息失败
 
-[[Failed to delete level- *Number* neighbour: system *systemID* =\> neighbour *neighbourID*.]{lang="EN-US"}]{#struct_0_17822_17521_x351017407}
+Failed to delete level- *Number* neighbour: system *systemID* =\> neighbour *neighbourID*.
 
-[[删除]{lang="EN-US" style="font-family:
-  宋体"}[leve]{lang="EN-US"}]{#struct_0_17822_17521_961185545}[l]{lang="EN-US"}[- *Number*]{lang="EN-US"}[由]{lang="EN-US" style="font-family:宋体"}*[systemID]{lang="EN-US"}*[到]{lang="EN-US" style="font-family:宋体"}*[neighbourID]{lang="EN-US"}*[的邻居信息失败]{lang="EN-US" style="font-family:宋体"}
+删除level- *Number*由*systemID*到*neighbourID*的邻居信息失败
 
-[[Failed to modify level- *Number* neighbour: system *systemID* =\> neighbour *neighbourID*.]{lang="EN-US"}]{#struct_0_17822_17521_x45973110}
+Failed to modify level- *Number* neighbour: system *systemID* =\> neighbour *neighbourID*.
 
-[[更新]{lang="EN-US" style="font-family:
-  宋体"}[leve]{lang="EN-US"}]{#struct_0_17822_17521_961251081}[l]{lang="EN-US"}[- *Number*]{lang="EN-US"}[由]{lang="EN-US" style="font-family:宋体"}*[systemID]{lang="EN-US"}*[到]{lang="EN-US" style="font-family:宋体"}*[neighbourID]{lang="EN-US"}*[的邻居信息失败]{lang="EN-US" style="font-family:宋体"}
+更新level- *Number*由*systemID*到*neighbourID*的邻居信息失败
 
-[[Failed to add level- *Number* pseudo neighbour: pseudo *pseudoID* =\> neighbour *neighbourID*.]{lang="EN-US"}]{#struct_0_17822_17521_960661258}
+Failed to add level- *Number* pseudo neighbour: pseudo *pseudoID* =\> neighbour *neighbourID*.
 
-[[添加]{lang="EN-US" style="font-family:
-  宋体"}[leve]{lang="EN-US"}]{#struct_0_17822_17521_1769232401}[l]{lang="EN-US"}[- *Number*]{lang="EN-US"}[由]{lang="EN-US" style="font-family:宋体"}*[pseudoID]{lang="EN-US"}*[到]{lang="EN-US" style="font-family:宋体"}*[neighbourID]{lang="EN-US"}*[的伪节点邻居信息失败]{lang="EN-US" style="font-family:宋体"}
+添加level- *Number*由*pseudoID*到*neighbourID*的伪节点邻居信息失败
 
-[[Failed to delete level- *Number* pseudo neighbour: pseudo *pseudoID* =\> neighbour *neighbourID.*]{lang="EN-US"}]{#struct_0_17822_17521_960726794}
+Failed to delete level- *Number* pseudo neighbour: pseudo *pseudoID* =\> neighbour *neighbourID.*
 
-[[删除]{lang="EN-US" style="font-family:
-  宋体"}[leve]{lang="EN-US"}]{#struct_0_17822_17521_x589062264}[l]{lang="EN-US"}[- *Number*]{lang="EN-US"}[由]{lang="EN-US" style="font-family:宋体"}*[pseudoID]{lang="EN-US"}*[到]{lang="EN-US" style="font-family:宋体"}*[neighbourID]{lang="EN-US"}*[的伪节点邻居信息失败]{lang="EN-US" style="font-family:宋体"}
+删除level- *Number*由*pseudoID*到*neighbourID*的伪节点邻居信息失败
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1363780915}
+\# 打开EVI IS-IS协议错误调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17822_17521_879067632}[打开]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[协议错误调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging evi isis error
 
-[[\<Sysname\> debugging evi isis error]{lang="EN-US"}]{#struct_0_17822_17521_960530186}
+\*Mar 18 14:28:41:744 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1;
 
-[\*Mar 18 14:28:41:744 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1;]{lang="EN-US"}
+EVIISIS-101-ERR: Failed to send level-1 CSNP PDU.
 
-[EVIISIS-101-ERR: Failed to send level-1 CSNP PDU.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_17822_17521_1542305457}*[发送]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[的]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文失败]{style="font-family:宋体"}*
-
-::: {#-534665538 .myid}
-[]{#_Toc404798220}[]{#struct_0_17822_17521_x1699289558}[]{#_Toc312864693}
+*// 发送Level-1的CSNP报文失败*
 
 **EVI \-- EVI调试命令 \-- debugging evi isis event**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17822_17521_1390751767}
+【命令】
 
-[**[debugging evi isis]{lang="EN-US"}**[ **event** \[ *process-id* \]]{lang="EN-US"}]{#struct_0_17822_17521_1425335223}
+**[debugging evi isis** **event** [ *process-id* ]]
 
-[**[undo debugging evi isis]{lang="EN-US"}**[ **event** \[ *process-id* \]]{lang="EN-US"}]{#struct_0_17822_17521_985519668}
+**[undo debugging evi isis** **event** [ *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17822_17521_x309885088}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_17822_17521_2030188789}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17822_17521_960595722}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17822_17521_332636333}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17822_17521_1941932237}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17822_17521_x814458504}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17822_17521_952072053}[：要打开的调试信息开关的进程]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：要打开的调试信息开关的进程ID。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_17822_17521_252137891}
+【描述】
 
-[**[debugging evi isis event]{lang="EN-US"}**]{#struct_0_17822_17521_251841428}[命令用来打开]{style="font-family:
-宋体"}[EVI IS-IS]{lang="EN-US"}[进程事件调试信息开关。]{style="font-family:
-宋体"}**[undo debugging evi isis event]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程事件调试信息开关。]{style="font-family:宋体"}
+**[debugging evi isis event**]命令用来打开EVI IS-IS进程事件调试信息开关。**undo debugging evi isis event**命令用来关闭EVI IS-IS进程事件调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_17822_17521_x692335733}[进程的事件调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，EVI IS-IS进程的事件调试信息开关处于关闭状态。
 
-[[需要注意的是，如果未指定进程号，则表示打开所有进程的事件调试信息开关。]{style="font-family:宋体"}]{#struct_0_17822_17521_412844977}
+需要注意的是，如果未指定进程号，则表示打开所有进程的事件调试信息开关。
 
-[[表1-3 ]{lang="EN-US"}[debugging evi isis event]{lang="EN-US"}]{#struct_0_17822_17521_960923402}[命令输出的信息描述表]{style="font-family:黑体"}
+表1-3 debugging evi isis event命令输出的信息描述表
 
-[]{#table_struct_0_1782764008}[[字段]{style="font-family:黑体"}]{#struct_0_17822_17521_x754248675}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17822_17521_821663417}
+描述
 
-[[Failed to get local MAC of VLAN *Number*]{lang="EN-US"}]{#struct_0_17822_17521_1791750367}
+Failed to get local MAC of VLAN *Number*
 
-[[在]{style="font-family:宋体"}[VLAN *Number*]{lang="EN-US"}]{#struct_0_17822_17521_1489066053}[上获取本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[失败]{style="font-family:宋体"}
+在VLAN *Number*上获取本地MAC失败
 
-[[Clear all AVF in circuit *PortName*]{lang="EN-US"}]{#struct_0_17822_17521_780951723}
+Clear all AVF in circuit *PortName*
 
-[[清除接口]{style="font-family:宋体"}*[PortName]{lang="EN-US"}*]{#struct_0_17822_17521_2119788437}[上所有]{style="font-family:宋体"} [的]{style="font-family:宋体"}[AVF]{lang="EN-US"}
+清除接口*PortName*上所有 的AVF
 
-[[DED changed on *PortName*: old DED: *String*, new DED: *String*]{lang="EN-US"}]{#struct_0_17822_17521_960988938}
+DED changed on *PortName*: old DED: *String*, new DED: *String*
 
-[[接口]{style="font-family:宋体"}*[PortName]{lang="EN-US"}*]{#struct_0_17822_17521_x1974838300}[所属网段的]{style="font-family:宋体"}[DED]{lang="EN-US"}[发生改变，]{style="font-family:宋体"}*[String]{lang="EN-US"}*[描述了以前的]{style="font-family:宋体"}[DED]{lang="EN-US"}[和新的]{style="font-family:宋体"}[DED]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+接口*PortName*所属网段的DED发生改变，*String*描述了以前的DED和新的DED的MAC地址
 
-[[System\'s state is disable]{lang="EN-US"}]{#struct_0_17822_17521_x1873191999}
+System\'s state is disable
 
-[[系统处于去使能状态]{style="font-family:宋体"}]{#struct_0_17822_17521_1748067102}
+系统处于去使能状态
 
-[[Update proccess(*Number*) configuration to DBM]{lang="EN-US"}]{#struct_0_17822_17521_1213070542}
+Update proccess(*Number*) configuration to DBM
 
-[[更新进程]{style="font-family:宋体"}[(*Number*)]{lang="EN-US"}]{#struct_0_17822_17521_960792330}[的配置数据到]{style="font-family:宋体"}[DBM]{lang="EN-US"}
+更新进程(*Number*)的配置数据到DBM
 
-[[Notify extended VLAN configuration]{lang="EN-US"}]{#struct_0_17822_17521_x540029377}
+Notify extended VLAN configuration
 
-[[通知配置扩展]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_17822_17521_x854119973}
+通知配置扩展VLAN
 
-[[Evilink Interface is deleted successfully]{lang="EN-US"}]{#struct_0_17822_17521_x331931074}
+Evilink Interface is deleted successfully
 
-[[EVI-Link]{lang="EN-US"}]{#struct_0_17822_17521_x1832161704}[接口删除成功]{style="font-family:宋体"}
+EVI-Link接口删除成功
 
-[[Notifing the tunnel interface state changed]{lang="EN-US"}]{#struct_0_17822_17521_960857866}
+Notifing the tunnel interface state changed
 
-[[通知]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}]{#struct_0_17822_17521_x351017404}[接口状态改变]{style="font-family:宋体"}
+通知Tunnel接口状态改变
 
-[[Notifing the evi-link interface state changed]{lang="EN-US"}]{#struct_0_17822_17521_x2068266648}
+Notifing the evi-link interface state changed
 
-[[通知]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}]{#struct_0_17822_17521_1718058702}[接口状态改变]{style="font-family:宋体"}
+通知EVI-Link接口状态改变
 
-[[Refresh the interface parameter on interface: *interface-index*]{lang="EN-US"}]{#struct_0_17822_17521_x1238193668}
+Refresh the interface parameter on interface: *interface-index*
 
-[[刷新]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_17822_17521_961185546}[接口]{style="font-family:宋体"}*[interface-index]{lang="EN-US"}*[下保存的接口的各种参数]{style="font-family:宋体"}
+刷新EVI IS-IS接口*interface-index*下保存的接口的各种参数
 
-[[Interface *Portname* is created successfully]{lang="EN-US"}]{#struct_0_17822_17521_x45973109}
+Interface *Portname* is created successfully
 
-[[接口]{style="font-family:宋体"}*[Portname]{lang="EN-US"}*]{#struct_0_17822_17521_x640385510}[创建成功]{style="font-family:宋体"}
+接口*Portname*创建成功
 
-[[Interface *Portname* is deleted successfully]{lang="EN-US"}]{#struct_0_17822_17521_415347514}
+Interface *Portname* is deleted successfully
 
-[[接口]{style="font-family:宋体"}*[Portname]{lang="EN-US"}*]{#struct_0_17822_17521_961251082}[删除成功]{style="font-family:宋体"}
+接口*Portname*删除成功
 
-[[LSP MTU change from *value1* to *value2*, notify UPDT MTU change.]{lang="EN-US"}]{#struct_0_17822_17521_x932240725}
+LSP MTU change from *value1* to *value2*, notify UPDT MTU change.
 
-[[通知]{style="font-family:宋体"}[UPDT]{lang="EN-US"}]{#struct_0_17822_17521_x1315773969}[模块]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文发送的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[大小由]{style="font-family:宋体"}*[value1]{lang="EN-US"}*[变为]{style="font-family:宋体"}*[value2]{lang="EN-US"}*
+通知UPDT模块LSP报文发送的MTU大小由*value1*变为*value2*
 
-[[Delete interface *interface-index* data from DBM *bActive*]{lang="EN-US"}]{#struct_0_17822_17521_x168561446}
+Delete interface *interface-index* data from DBM *bActive*
 
-[[从]{style="font-family:宋体"}[DBM]{lang="EN-US"}]{#struct_0_17822_17521_960661255}[删除接口]{style="font-family:宋体"}*[interface-index]{lang="EN-US"}*[下的参数，接口的状态为]{style="font-family:宋体"}*[bActive]{lang="EN-US"}*
+从DBM删除接口*interface-index*下的参数，接口的状态为*bActive*
 
-[[Receive Delete circuit ack event, flag is *bDel*]{lang="EN-US"}]{#struct_0_17822_17521_1769232406}
+Receive Delete circuit ack event, flag is *bDel*
 
-[[收到一个删除接口应答事件，标志为]{style="font-family:宋体"}[bDel]{lang="EN-US"}]{#struct_0_17822_17521_542850371}
+收到一个删除接口应答事件，标志为bDel
 
-[[Reset finished, process with reset code *reason-code.*]{lang="EN-US"}]{#struct_0_17822_17521_1073381651}
+Reset finished, process with reset code *reason-code.*
 
-[[复位完成，处理原因码]{style="font-family:宋体"}*[reason-code]{lang="EN-US"}*]{#struct_0_17822_17521_960726791}[引起的复位。目前存在如下原因码：]{style="font-family:宋体"}
+复位完成，处理原因码*reason-code*引起的复位。目前存在如下原因码：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[2]{lang="EN-US"}]{#struct_0_17822_17521_x589062267}[：]{lang="EN-US" style="font-family:宋体"}[reset evi isis]{lang="EN-US"}[命令引起的复位]{lang="EN-US" style="font-family:宋体"}
+·2：reset evi isis命令引起的复位
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[3]{lang="EN-US"}]{#struct_0_17822_17521_x1363584307}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[序列号翻转引起的复位]{style="font-family:宋体"}
+·3：LSP序列号翻转引起的复位
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[6]{lang="EN-US"}]{#struct_0_17822_17521_1502047008}[：]{lang="EN-US" style="font-family:宋体"}[EVI]{lang="EN-US"}[ ]{lang="EN-US"}[IS]{lang="EN-US"}[-]{lang="EN-US"}[IS]{lang="EN-US"}[源]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址变化引起的复位]{lang="EN-US" style="font-family:宋体"}
+·6：EVIIS-IS源MAC地址变化引起的复位
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[7]{lang="EN-US"}]{#struct_0_17822_17521_960530183}[：协议进程降级引起的复位]{style="font-family:宋体"}
+·7：协议进程降级引起的复位
 
-[[Receive *string* event on interface: *interface-index.*]{lang="EN-US"}]{#struct_0_17822_17521_1542305452}
+Receive *string* event on interface: *interface-index.*
 
-[[在接口]{style="font-family:宋体"}*[interface-index]{lang="EN-US"}*]{#struct_0_17822_17521_x1699092950}[上收到如下事件：]{style="font-family:宋体"}
+在接口*interface-index*上收到如下事件：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[board insert  event]{lang="EN-US"}]{#struct_0_17822_17521_113883654}[：板插入事件]{lang="EN-US" style="font-family:宋体"}
+·board insert  event：板插入事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[board remove event]{lang="EN-US"}]{#struct_0_17822_17521_960595719}[：板拔出事件]{lang="EN-US" style="font-family:
-  宋体"}
+·board remove event：板拔出事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[interface add event]{lang="EN-US"}]{#struct_0_17822_17521_1906614434}[：接口添加事件]{lang="EN-US" style="font-family:
-  宋体"}
+·interface add event：接口添加事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[interface delete event]{lang="EN-US"}]{#struct_0_17822_17521_x658835951}[：接口删除事件]{lang="EN-US" style="font-family:宋体"}
+·interface delete event：接口删除事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN \--\> UP event]{lang="EN-US"}]{#struct_0_17822_17521_960923399}[：接口]{lang="EN-US" style="font-family:
-  宋体"}[UP]{lang="EN-US"}[事件]{lang="EN-US" style="font-family:
-  宋体"}
+·DOWN \--\> UP event：接口UP事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP \--\> DOWN event]{lang="EN-US"}]{#struct_0_17822_17521_1971899681}[：接口]{lang="EN-US" style="font-family:
-  宋体"}[DOWN]{lang="EN-US"}[事件]{lang="EN-US" style="font-family:
-  宋体"}
+·UP \--\> DOWN event：接口DOWN事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[speed change event]{lang="EN-US"}]{#struct_0_17822_17521_1828002452}[：接口速率变化事件]{lang="EN-US" style="font-family:
-  宋体"}
+·speed change event：接口速率变化事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MTU change event]{lang="EN-US"}]{#struct_0_17822_17521_960988935}[：]{lang="EN-US" style="font-family:
-  宋体"}[MTU]{lang="EN-US"}[变化事件]{lang="EN-US" style="font-family:
-  宋体"}
+·MTU change event：MTU变化事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VLAN add event]{lang="EN-US"}]{#struct_0_17822_17521_x1974838287}[：接口加入]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[事件]{lang="EN-US" style="font-family:宋体"}
+·VLAN add event：接口加入VLAN事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VLAN delete event]{lang="EN-US"}]{#struct_0_17822_17521_x306583769}[：接口离开]{lang="EN-US" style="font-family:
-  宋体"}[VLAN]{lang="EN-US"}[事件]{lang="EN-US" style="font-family:宋体"}
+·VLAN delete event：接口离开VLAN事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[AVF VLAN change event]{lang="EN-US"}]{#struct_0_17822_17521_645430442}[：接口的]{lang="EN-US" style="font-family:
-  宋体"}[AVF]{lang="EN-US"}[变化事件]{lang="EN-US" style="font-family:
-  宋体"}
+·AVF VLAN change event：接口的AVF变化事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[designated VLAN change event]{lang="EN-US"}]{#struct_0_17822_17521_960792327}[：接口的指定]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[变化事件]{lang="EN-US" style="font-family:宋体"}
+·designated VLAN change event：接口的指定VLAN变化事件
 
-[[Reset change into phase *phase-code*.]{lang="EN-US"}]{#struct_0_17822_17521_1798622788}
+Reset change into phase *phase-code*.
 
-[[复位进入]{style="font-family:宋体"}*[phase-code]{lang="EN-US"}*]{#struct_0_17822_17521_x193761476}[阶段]{style="font-family:宋体"}
+复位进入*phase-code*阶段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[1]{lang="EN-US"}]{#struct_0_17822_17521_960857863}[：]{lang="EN-US" style="font-family:宋体"}[STOP WORK]{lang="EN-US"}
+·1：STOP WORK
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[2]{lang="EN-US"}]{#struct_0_17822_17521_x351017401}[：]{lang="EN-US" style="font-family:宋体"}[DISABLE]{lang="EN-US"}
+·2：DISABLE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[3]{lang="EN-US"}]{#struct_0_17822_17521_x2068070040}[：]{lang="EN-US" style="font-family:宋体"}[FINAL]{lang="EN-US"}
+·3：FINAL
 
-[[Reset processing with backinfo: module *module-number*, event *event-number*, phase *phase-code*.]{lang="EN-US"}]{#struct_0_17822_17521_961185543}
+Reset processing with backinfo: module *module-number*, event *event-number*, phase *phase-code*.
 
-[[处理其他模块回复的]{style="font-family:宋体"}[reset]{lang="EN-US"}]{#struct_0_17822_17521_x45973112}[完成事件。]{style="font-family:宋体"}
+处理其他模块回复的reset完成事件。
 
-[*[module-number]{lang="EN-US"}*]{#struct_0_17822_17521_1315929619}[取值如下：]{style="font-family:宋体"}
+*[module-number*]取值如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[1]{lang="EN-US"}]{#struct_0_17822_17521_961251079}[：]{lang="EN-US" style="font-family:宋体"}[ADJ]{lang="EN-US"}[模块]{lang="EN-US" style="font-family:宋体"}
+·1：ADJ模块
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[2]{lang="EN-US"}]{#struct_0_17822_17521_x1741544800}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[模块]{lang="EN-US" style="font-family:宋体"}
+·2：LSP模块
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[3]{lang="EN-US"}]{#struct_0_17822_17521_1172876497}[：]{lang="EN-US" style="font-family:宋体"}[DEC]{lang="EN-US"}[模块]{lang="EN-US" style="font-family:宋体"}
+·3：DEC模块
 
-[*[event-number]{lang="EN-US"}*]{#struct_0_17822_17521_960661256}[取值如下：]{style="font-family:宋体"}
+*[event-number*]取值如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[1]{lang="EN-US"}]{#struct_0_17822_17521_1769232403}[：]{lang="EN-US" style="font-family:宋体"}[STOP WORK]{lang="EN-US"}
+·1：STOP WORK
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[2]{lang="EN-US"}]{#struct_0_17822_17521_960726792}[：]{lang="EN-US" style="font-family:宋体"}[DISABLE]{lang="EN-US"}
+·2：DISABLE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[3]{lang="EN-US"}]{#struct_0_17822_17521_x589062270}[：]{lang="EN-US" style="font-family:宋体"}[ENABLE]{lang="EN-US"}
+·3：ENABLE
 
-[*[phase-code]{lang="EN-US"}*]{#struct_0_17822_17521_x1363518770}[取值如下：]{style="font-family:宋体"}
+*[phase-code*]取值如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[1]{lang="EN-US"}]{#struct_0_17822_17521_960530184}[：]{lang="EN-US" style="font-family:宋体"}[STOP WORK]{lang="EN-US"}
+·1：STOP WORK
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[2]{lang="EN-US"}]{#struct_0_17822_17521_1542305459}[：]{lang="EN-US" style="font-family:宋体"}[DISABLE]{lang="EN-US"}
+·2：DISABLE
 
-[[Reset processing receive event *event-type*.]{lang="EN-US"}]{#struct_0_17822_17521_x1698372054}
+Reset processing receive event *event-type*.
 
-[[收到复位事件，事件类型码为]{style="font-family:宋体"}*[event-type]{lang="EN-US"}*]{#struct_0_17822_17521_960595720}[。目前存在如下复位类型码：]{style="font-family:宋体"}
+收到复位事件，事件类型码为*event-type*。目前存在如下复位类型码：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[2]{lang="EN-US"}]{#struct_0_17822_17521_332636331}[：]{lang="EN-US" style="font-family:宋体"}[reset ]{lang="EN-US"}[evi isis all]{lang="EN-US"}[命令引起的复位]{lang="EN-US" style="font-family:宋体"}
+·2：reset evi isis all命令引起的复位
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[3]{lang="EN-US"}]{#struct_0_17822_17521_1941932239}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[序列号翻转引起的复位]{style="font-family:宋体"}
+·3：LSP序列号翻转引起的复位
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[6]{lang="EN-US"}]{#struct_0_17822_17521_960923400}[：]{lang="EN-US" style="font-family:宋体"}[EVI]{lang="EN-US"}[ ]{lang="EN-US"}[IS]{lang="EN-US"}[-]{lang="EN-US"}[IS]{lang="EN-US"}[源]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址变化引起的复位]{lang="EN-US" style="font-family:宋体"}
+·6：EVIIS-IS源MAC地址变化引起的复位
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[7]{lang="EN-US"}]{#struct_0_17822_17521_x754248673}[：协议进程降级引起的复位]{style="font-family:宋体"}
+·7：协议进程降级引起的复位
 
-[[VLAN config change notify]{lang="EN-US"}]{#struct_0_17822_17521_960988936}
+VLAN config change notify
 
-[[VLAN]{lang="EN-US"}]{#struct_0_17822_17521_x1974838286}[配置改变]{style="font-family:宋体"}
+VLAN配置改变
 
-[[Reset start up.]{lang="EN-US"}]{#struct_0_17822_17521_1259500172}
+Reset start up.
 
-[[复位开始]{style="font-family:宋体"}]{#struct_0_17822_17521_960792328}
+复位开始
 
-[[Flushed Delete_Map event { *interface-name* Remote VLAN *IDR* \--\> Local VLAN *IDL* } to driver]{lang="EN-US"}]{#struct_0_17822_17521_309455135}
+Flushed Delete_Map event { *interface-name* Remote VLAN *IDR* \--\> Local VLAN *IDL* } to driver
 
-[[下刷驱动删除接口上的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_17822_17521_x1228874766}[映射]{style="font-family:宋体"}
+下刷驱动删除接口上的VLAN映射
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[interface-name]{lang="EN-US"}*]{#struct_0_17822_17521_309389599}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+·*interface-name*：接口名称
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[IDR]{lang="EN-US"}*]{#struct_0_17822_17521_74951819}[：远端]{lang="EN-US" style="font-family:宋体"}[VLAN ID]{lang="EN-US"}
+·*IDR*：远端VLAN ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[IDL]{lang="EN-US"}*]{#struct_0_17822_17521_1918751632}[：本地]{lang="EN-US" style="font-family:宋体"}[VLAN ID]{lang="EN-US"}
+·*IDL*：本地VLAN ID
 
-[[Flushed Add_Map event { *interface-name* Remote VLAN *IDR* \--\> Local VLAN *IDL* } to driver]{lang="EN-US"}]{#struct_0_17822_17521_309324063}
+Flushed Add_Map event { *interface-name* Remote VLAN *IDR* \--\> Local VLAN *IDL* } to driver
 
-[[下刷驱动添加接口上的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_17822_17521_440094698}[映射]{style="font-family:宋体"}
+下刷驱动添加接口上的VLAN映射
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[interface-name]{lang="EN-US"}*]{#struct_0_17822_17521_309258527}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+·*interface-name*：接口名称
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[IDR]{lang="EN-US"}*]{#struct_0_17822_17521_x755847584}[：远端]{lang="EN-US" style="font-family:宋体"}[VLAN ID]{lang="EN-US"}
+·*IDR*：远端VLAN ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[IDL]{lang="EN-US"}*]{#struct_0_17822_17521_309717279}[：本地]{lang="EN-US" style="font-family:宋体"}[VLAN ID]{lang="EN-US"}
+·*IDL*：本地VLAN ID
 
-[[Associated with a track entry]{lang="EN-US"}]{#struct_0_17822_17521_237659855}
+Associated with a track entry
 
-[[关联了]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_17822_17521_309651743}
+关联了Track
 
-[[Static MAC filtering policy changed]{lang="EN-US"}]{#struct_0_17822_17521_x981285586}
+Static MAC filtering policy changed
 
-[[本地静态]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_17822_17521_752061255}[地址的过滤规则发生改变]{style="font-family:宋体"}
+本地静态MAC地址的过滤规则发生改变
 
-[[Dynamic MAC filtering policy changed]{lang="EN-US"}]{#struct_0_17822_17521_309586207}
+Dynamic MAC filtering policy changed
 
-[[本地动态]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_17822_17521_x841587322}[地址的过滤规则发生改变]{style="font-family:宋体"}
+本地动态MAC地址的过滤规则发生改变
 
-[[Updated VLAN mapping data to DBM.]{lang="EN-US"}]{#struct_0_17822_17521_309520671}
+Updated VLAN mapping data to DBM.
 
-[[更新]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_17822_17521_305346846}[映射数据到]{style="font-family:宋体"}[DBM]{lang="EN-US"}
+更新VLAN映射数据到DBM
 
-[[Updated RMAC {SiteID *IDS* Remote VLAN *IDR* \--\> Local VLAN *IDL*}]{lang="EN-US"}]{#struct_0_17822_17521_309979423}
+Updated RMAC {SiteID *IDS* Remote VLAN *IDR* \--\> Local VLAN *IDL*}
 
-[[根据]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_17822_17521_x402120007}[映射更新远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}
+根据VLAN映射更新远端MAC
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[IDS]{lang="EN-US"}*]{#struct_0_17822_17521_309913887}[：站点]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*IDS*：站点ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[IDR]{lang="EN-US"}*]{#struct_0_17822_17521_x1923962053}[：远端]{lang="EN-US" style="font-family:宋体"}[VLAN ID]{lang="EN-US"}
+·*IDR*：远端VLAN ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[IDL]{lang="EN-US"}*]{#struct_0_17822_17521_209846236}[：本地]{lang="EN-US" style="font-family:宋体"}[VLAN ID]{lang="EN-US"}
+·*IDL*：本地VLAN ID
 
-[[Notified other modules of preferred VLAN configuration change.]{lang="EN-US"}]{#struct_0_17822_17521_309455132}
+Notified other modules of preferred VLAN configuration change.
 
-[[通知]{style="font-family:宋体"}[AEF]{lang="EN-US"}]{#struct_0_17822_17521_x1228874761}[优先级配置变化]{style="font-family:宋体"}
+通知AEF优先级配置变化
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17822_17521_1798622775}
+\# 打开EVI IS-IS协议事件调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17822_17521_x193958097}[打开]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[协议事件调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging evi isis event
 
-[[\<Sysname\> debugging evi isis event]{lang="EN-US"}]{#struct_0_17822_17521_x511671877}
+\*Jun  8 08:29:44:658 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1;
 
-[\*Jun  8 08:29:44:658 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1;]{lang="EN-US"}
+EVIISIS-101-EVT: Notifing the tunnel interface state changed.
 
-[EVIISIS-101-EVT: Notifing the tunnel interface state changed.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_17822_17521_1090674246}*[通知]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口状态改变]{style="font-family:宋体"}*
-
-::: {#-120743162 .myid}
-[]{#_Toc404798221}[]{#struct_0_17822_17521_945629907}[]{#_Toc312864694}
+*// 通知Tunnel接口状态改变*
 
 **EVI \-- EVI调试命令 \-- debugging evi isis graceful-restart**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17822_17521_960857864}
+【命令】
 
-[**[debugging evi isis graceful-restart ]{lang="EN-US"}**[\[ *process-id* \]]{lang="EN-US"}]{#struct_0_17822_17521_x351017406}
+**[debugging evi isis graceful-restart ** *process-id* ]
 
-[**[undo debugging evi isis graceful-restart ]{lang="EN-US"}**[\[ *process-id* \]]{lang="EN-US"}]{#struct_0_17822_17521_x2068397720}
+**[undo debugging evi isis graceful-restart ** *process-id* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17822_17521_x495025598}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_17822_17521_x1929215223}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1257018343}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17822_17521_136168800}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17822_17521_x1337610574}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17822_17521_x15924643}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17822_17521_961185544}[：要打开的调试信息开关的进程]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：要打开的调试信息开关的进程ID。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_17822_17521_x45973111}
+【描述】
 
-[**[debugging evi isis graceful-restart]{lang="EN-US"}**]{#struct_0_17822_17521_1315929618}[命令用来打开进程的平滑重启调试信息开关。]{style="font-family:宋体"}**[undo debugging evi isis graceful-restart]{lang="EN-US"}**[命令用来关闭进程的平滑重启调试信息开关。]{style="font-family:宋体"}
+**[debugging evi isis graceful-restart**]命令用来打开进程的平滑重启调试信息开关。**undo debugging evi isis graceful-restart**命令用来关闭进程的平滑重启调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_17822_17521_496120892}[进程的平滑重启调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，EVI IS-IS进程的平滑重启调试信息开关处于关闭状态。
 
-[[需要注意的是，如果未指定进程号，则表示打开所有进程的平滑重启调试信息开关。]{style="font-family:宋体"}]{#struct_0_17822_17521_x248866251}
+需要注意的是，如果未指定进程号，则表示打开所有进程的平滑重启调试信息开关。
 
-[[表1-4 ]{lang="EN-US"}[debugging evi isis graceful-restart]{lang="EN-US"}]{#struct_0_17822_17521_568415787}[命令输出信息描述表]{style="font-family:黑体"}
+表1-4 debugging evi isis graceful-restart命令输出信息描述表
 
-[]{#table_struct_0_1809455272}[[字段]{style="font-family:黑体"}]{#struct_0_17822_17521_191153180}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17822_17521_961251080}
+描述
 
-[[Graceful-restart complete]{lang="EN-US"}]{#struct_0_17822_17521_x932240727}
+Graceful-restart complete
 
-[[平滑重启完成]{style="font-family:宋体"}]{#struct_0_17822_17521_x1315905041}
+平滑重启完成
 
-[[T3 timer is stoped]{lang="EN-US"}]{#struct_0_17822_17521_x1844303264}
+T3 timer is stoped
 
-[[T3]{lang="EN-US"}]{#struct_0_17822_17521_583748305}[定时器停止]{style="font-family:宋体"}
+T3定时器停止
 
-[[T3 timer expired before T2 timer]{lang="EN-US"}]{#struct_0_17822_17521_1013348665}
+T3 timer expired before T2 timer
 
-[[T3]{lang="EN-US"}]{#struct_0_17822_17521_960661253}[定时器在]{style="font-family:宋体"}[T2]{lang="EN-US"}[定时器之前失效]{style="font-family:宋体"}
+T3定时器在T2定时器之前失效
 
-[[Level-*Number* T2 timer expired]{lang="EN-US"}]{#struct_0_17822_17521_1769232408}
+Level-*Number* T2 timer expired
 
-[[Level-*Number*]{lang="EN-US"}]{#struct_0_17822_17521_542981443}[的]{style="font-family:宋体"}[T2]{lang="EN-US"}[定时器失效]{style="font-family:宋体"}
+Level-*Number*的T2定时器失效
 
-[[Graceful-restart enter *Type*]{lang="EN-US"}]{#struct_0_17822_17521_x2019078391}
+Graceful-restart enter *Type*
 
-[[平滑重启进入]{style="font-family:宋体"}*[Type]{lang="EN-US"}*]{#struct_0_17822_17521_1719292483}[阶段，]{style="font-family:宋体"}*[Type]{lang="EN-US"}*[指示了类型可以取值如下：]{style="font-family:宋体"}
+平滑重启进入*Type*阶段，*Type*指示了类型可以取值如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[starting]{lang="EN-US"}]{#struct_0_17822_17521_389225512}[：启动]{lang="EN-US" style="font-family:宋体"}
+·starting：启动
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[restarting]{lang="EN-US"}]{#struct_0_17822_17521_960726789}[：重启]{lang="EN-US" style="font-family:宋体"}
+·restarting：重启
 
-[[Recieve T2 timer cancel event]{lang="EN-US"}]{#struct_0_17822_17521_1749589901}
+Recieve T2 timer cancel event
 
-[[收到]{style="font-family:宋体"}[T2]{lang="EN-US"}]{#struct_0_17822_17521_x1564451675}[定时器取消事件]{style="font-family:宋体"}
+收到T2定时器取消事件
 
-[[Level-*Number* T2 timer is stopped]{lang="EN-US"}]{#struct_0_17822_17521_1236916803}
+Level-*Number* T2 timer is stopped
 
-[[Level-*Number*]{lang="EN-US"}]{#struct_0_17822_17521_x1557452098}[的]{style="font-family:宋体"}[T2]{lang="EN-US"}[定时器停止]{style="font-family:宋体"}
+Level-*Number*的T2定时器停止
 
-[[Receive module(*Mid*) phase(*Phase*), current phase(*GrPhase*)]{lang="EN-US"}]{#struct_0_17822_17521_960530181}
+Receive module(*Mid*) phase(*Phase*), current phase(*GrPhase*)
 
-[[收到模块]{style="font-family:宋体"}*[Mid]{lang="EN-US"}*]{#struct_0_17822_17521_1542305454}[的状态]{style="font-family:宋体"}*[Phase]{lang="EN-US"}*[，当前]{style="font-family:宋体"}[GR]{lang="EN-US"}[状态是]{style="font-family:宋体"}*[GrPhase]{lang="EN-US"}*
+收到模块*Mid*的状态*Phase*，当前GR状态是*GrPhase*
 
-[[Stop level-*Number* T1 timer]{lang="EN-US"}]{#struct_0_17822_17521_x1699224022}
+Stop level-*Number* T1 timer
 
-[[停止]{style="font-family:宋体"}[level-*Number*]{lang="EN-US"}]{#struct_0_17822_17521_x2036153274}[的]{style="font-family:宋体"}[T1]{lang="EN-US"}[定时器]{style="font-family:宋体"}
+停止level-*Number*的T1定时器
 
-[[Recieve hello with *Type* bit set from circuit: *PortName* Level- *Number*]{lang="EN-US"}]{#struct_0_17822_17521_960595717}
+Recieve hello with *Type* bit set from circuit: *PortName* Level- *Number*
 
-[[从接口]{style="font-family:宋体"}*[PortName]{lang="EN-US"}*]{#struct_0_17822_17521_1906614448}[收到]{style="font-family:宋体"}[hello]{lang="EN-US"}[报文中]{style="font-family:宋体"}[level- *Number*]{lang="EN-US"}[的]{style="font-family:宋体"}*[Type]{lang="EN-US"}*[位置位，]{style="font-family:宋体"}*[Type]{lang="EN-US"}*[位可以取值如下：]{style="font-family:宋体"}
+从接口*PortName*收到hello报文中level- *Number*的*Type*位置位，*Type*位可以取值如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RR]{lang="EN-US"}]{#struct_0_17822_17521_x658573808}[：重启请求位]{lang="EN-US" style="font-family:宋体"}
+·RR：重启请求位
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RA]{lang="EN-US"}]{#struct_0_17822_17521_x1184852840}[：重启抑制位]{lang="EN-US" style="font-family:宋体"}
+·RA：重启抑制位
 
-[[Failed to purge level-*Number* LSP]{lang="EN-US"}]{#struct_0_17822_17521_960923397}
+Failed to purge level-*Number* LSP
 
-[[清除]{style="font-family:宋体"}[level-*Number*]{lang="EN-US"}]{#struct_0_17822_17521_1971899675}[的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文失败]{style="font-family:宋体"}
+清除level-*Number*的LSP报文失败
 
-[[Begin to purge local level-*Number* LSP]{lang="EN-US"}]{#struct_0_17822_17521_1828264593}
+Begin to purge local level-*Number* LSP
 
-[[开始清除本地的]{style="font-family:宋体"}[level-*Number*]{lang="EN-US"}]{#struct_0_17822_17521_306667949}[的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+开始清除本地的level-*Number*的LSP报文
 
-[[Purge level-*Number* LSP *PseudoId*-*LspNum*]{lang="EN-US"}]{#struct_0_17822_17521_x1760683194}
+Purge level-*Number* LSP *PseudoId*-*LspNum*
 
-[[清除]{style="font-family:宋体"}[level-*Number*]{lang="EN-US"}]{#struct_0_17822_17521_960988933}[的]{style="font-family:宋体"}[LSP *PseudoId*-*LspNum*]{lang="EN-US"}[报文]{style="font-family:宋体"}
+清除level-*Number*的LSP *PseudoId*-*LspNum*报文
 
-[[End to purge local level-*Number* LSP]{lang="EN-US"}]{#struct_0_17822_17521_x1974838289}
+End to purge local level-*Number* LSP
 
-[[结束清除本地的]{style="font-family:宋体"}[level-*Number* LSP]{lang="EN-US"}]{#struct_0_17822_17521_499985285}[报文]{style="font-family:宋体"}
+结束清除本地的level-*Number* LSP报文
 
-[[Level-*Number* LSDB synchronization is complete]{lang="EN-US"}]{#struct_0_17822_17521_960792325}
+Level-*Number* LSDB synchronization is complete
 
-[[Level-*Number*]{lang="EN-US"}]{#struct_0_17822_17521_1798622786}[的]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步完成]{style="font-family:宋体"}
+Level-*Number*的LSDB同步完成
 
-[[Level-*Number* CSNP set synchronization is complete on circuit *PortName*]{lang="EN-US"}]{#struct_0_17822_17521_x194154692}
+Level-*Number* CSNP set synchronization is complete on circuit *PortName*
 
-[[Level-*Number*]{lang="EN-US"}]{#struct_0_17822_17521_2036594695}[的]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[设置同步完成在接口]{style="font-family:宋体"}*[PortName]{lang="EN-US"}*[上]{style="font-family:宋体"}
+Level-*Number*的CSNP设置同步完成在接口*PortName*上
 
-[[Level-*Number* LSDB synchronization is complete]{lang="EN-US"}]{#struct_0_17822_17521_960857861}
+Level-*Number* LSDB synchronization is complete
 
-[[Level-*Number*]{lang="EN-US"}]{#struct_0_17822_17521_x351017403}[的]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步完成]{style="font-family:宋体"}
+Level-*Number*的LSDB同步完成
 
-[[EVIISIS-*Number*-GR: Interface(*interface-index*) level-*Number* T1 timer expired count: *Number*]{lang="EN-US"}]{#struct_0_17822_17521_x2068201112}
+EVIISIS-*Number*-GR: Interface(*interface-index*) level-*Number* T1 timer expired count: *Number*
 
-[[接口]{style="font-family:宋体"}*[interface-index]{lang="EN-US"}*]{#struct_0_17822_17521_1862937211}[下，]{style="font-family:宋体"}[Level-*Number*]{lang="EN-US"}[的]{style="font-family:宋体"}[T1]{lang="EN-US"}[定时器超时]{style="font-family:宋体"}*[Number]{lang="EN-US"}*[次]{style="font-family:宋体"}
+接口*interface-index*下，Level-*Number*的T1定时器超时*Number*次
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17822_17521_961185541}
+\# 打开EVI IS-IS进程的平滑重启调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17822_17521_x45973114}[打开]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的平滑重启调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging evi isis graceful-restart
 
-[[\<Sysname\> debugging evi isis graceful-restart]{lang="EN-US"}]{#struct_0_17822_17521_1315929613}
+\*Mar 17 14:25:11:744 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1;
 
-[\*Mar 17 14:25:11:744 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1;]{lang="EN-US"}
+EVIISIS-101-GR: Level- 1  LSDB synchronization is complete.
 
-[EVIISIS-101-GR: Level- 1  LSDB synchronization is complete.]{lang="EN-US"}
-
-[*[// Level-1]{lang="EN-US"}*]{#struct_0_17822_17521_495531068}*[的]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步完成]{style="font-family:宋体"}*
-
-::: {#-1958575208 .myid}
-[]{#_Toc404798222}[]{#struct_0_17822_17521_x1347874825}[]{#_Toc312864695}
+*[// Level-1*]*的LSDB同步完成*
 
 **EVI \-- EVI调试命令 \-- debugging evi isis ha**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17822_17521_1427733975}
+【命令】
 
-[**[debugging evi isis ha]{lang="EN-US"}**]{#struct_0_17822_17521_x745041577}
+**[debugging evi isis ha**]
 
-[**[undo debugging evi isis ha]{lang="EN-US"}**]{#struct_0_17822_17521_961251077}
+**[undo debugging evi isis ha**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1741544794}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_17822_17521_x796033216}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17822_17521_x41564304}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17822_17521_x2093583086}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17822_17521_649589972}
+mdc-admin
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_17822_17521_51782335}
+【描述】
 
-[**[debugging evi isis ha]{lang="EN-US"}**]{#struct_0_17822_17521_912103779}[命令用来打开]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[协议]{style="font-family:宋体"}[HA]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}**[undo debugging evi isis ha]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[协议]{style="font-family:宋体"}[HA]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}
+**[debugging evi isis ha**]命令用来打开EVI IS-IS协议HA调试信息开关。**undo debugging evi isis ha**命令用来关闭EVI IS-IS协议HA调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[EVI IS-IS HA]{lang="EN-US"}]{#struct_0_17822_17521_960661254}[调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，EVI IS-IS HA调试信息开关处于关闭状态。
 
-[[表1-5 ]{lang="EN-US"}[debugging evi isis ha]{lang="EN-US"}]{#struct_0_17822_17521_1769232405}[命令输出信息描述表]{style="font-family:黑体"}
+表1-5 debugging evi isis ha命令输出信息描述表
 
-[]{#table_struct_0_1807473160}[[字段]{style="font-family:黑体"}]{#struct_0_17822_17521_542653763}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17822_17521_x1897091419}
+描述
 
-[[Failed to initialize the PUBLISH when HA]{lang="EN-US"}]{#struct_0_17822_17521_x1549150160}
+Failed to initialize the PUBLISH when HA
 
-[[初始化发布事件失败，当]{style="font-family:宋体"}[HA]{lang="EN-US"}]{#struct_0_17822_17521_x2005154855}[时]{style="font-family:宋体"}
+初始化发布事件失败，当HA时
 
-[[Real time backup *string.*]{lang="EN-US"}]{#struct_0_17822_17521_x1171508182}
+Real time backup *string.*
 
-[[实时备份]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_17822_17521_960726790}[的各种配置和属性信息。]{style="font-family:宋体"}*[String]{lang="EN-US"}*[列表：]{style="font-family:宋体"}
+实时备份EVI IS-IS的各种配置和属性信息。*String*列表：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[eviisis(*Number*) process debugging information]{lang="EN-US"}]{#struct_0_17822_17521_x589062268}[：进程调试信息，]{lang="EN-US" style="font-family:宋体"}*[Number]{lang="EN-US"}*[：为进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·eviisis(*Number*) process debugging information：进程调试信息，*Number*：为进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[eviisis system debugging information]{lang="EN-US"}]{#struct_0_17822_17521_x1364043059}[：系统调试信息]{lang="EN-US" style="font-family:宋体"}
+·eviisis system debugging information：系统调试信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[process(*Number*)]{lang="EN-US"}]{#struct_0_17822_17521_233257680}[：进程配置，]{lang="EN-US" style="font-family:宋体"}*[Number]{lang="EN-US"}*[：为进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·process(*Number*)：进程配置，*Number*：为进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[interface]{lang="EN-US"}]{#struct_0_17822_17521_1993285511}[：接口配置]{lang="EN-US" style="font-family:宋体"}
+·interface：接口配置
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[process view]{lang="EN-US"}]{#struct_0_17822_17521_960530182}[：进程视图]{lang="EN-US" style="font-family:宋体"}
+·process view：进程视图
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[process enable]{lang="EN-US"}]{#struct_0_17822_17521_1542305453}[：]{lang="EN-US" style="font-family:宋体"}[EVI]{lang="EN-US"}[ ]{lang="EN-US"}[IS]{lang="EN-US"}[-]{lang="EN-US"}[IS]{lang="EN-US"}[进程使能]{lang="EN-US" style="font-family:宋体"}
+·process enable：EVIIS-IS进程使能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[designated vlan]{lang="EN-US"}]{#struct_0_17822_17521_x1699027414}[：指定]{lang="EN-US" style="font-family:
-  宋体"}[VLAN]{lang="EN-US"}
+·designated vlan：指定VLAN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[graceful-restart]{lang="EN-US"}]{#struct_0_17822_17521_x1367865184}[：平滑重启]{lang="EN-US" style="font-family:
-  宋体"}
+·graceful-restart：平滑重启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[graceful-restart Interval]{lang="EN-US"}]{#struct_0_17822_17521_x286898111}[：平滑重启时间间隔]{lang="EN-US" style="font-family:宋体"}
+·graceful-restart Interval：平滑重启时间间隔
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSP life time]{lang="EN-US"}]{#struct_0_17822_17521_960595718}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[生命周期]{lang="EN-US" style="font-family:宋体"}
+·LSP life time：LSP生命周期
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSP refresh interval]{lang="EN-US"}]{#struct_0_17822_17521_1906614435}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP]{lang="EN-US"}[刷新间隔]{lang="EN-US" style="font-family:
-  宋体"}
+·LSP refresh interval：LSP刷新间隔
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[log peer change]{lang="EN-US"}]{#struct_0_17822_17521_x658901487}[：邻居状态显示信息]{lang="EN-US" style="font-family:
-  宋体"}
+·log peer change：邻居状态显示信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[extend vlan]{lang="EN-US"}]{#struct_0_17822_17521_1968275034}[：扩展]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}
+·extend vlan：扩展VLAN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DED priority]{lang="EN-US"}]{#struct_0_17822_17521_1053727506}[：]{lang="EN-US" style="font-family:宋体"}[DED]{lang="EN-US"}[优先级]{lang="EN-US" style="font-family:宋体"}
+·DED priority：DED优先级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[hello  time interval]{lang="EN-US"}]{#struct_0_17822_17521_960923398}[：]{lang="EN-US" style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的发送时间间隔]{lang="EN-US" style="font-family:宋体"}
+·hello  time interval：Hello报文的发送时间间隔
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[CSNP interval]{lang="EN-US"}]{#struct_0_17822_17521_1971899680}[：发送]{lang="EN-US" style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文的时间间隔]{lang="EN-US" style="font-family:宋体"}
+·CSNP interval：发送CSNP报文的时间间隔
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Hello lapse number]{lang="EN-US"}]{#struct_0_17822_17521_1828067988}[：邻居的]{lang="EN-US" style="font-family:
-  宋体"}[Hello]{lang="EN-US"}[报文失效数目]{lang="EN-US" style="font-family:宋体"}
+·Hello lapse number：邻居的Hello报文失效数目
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSP throttle time and LSP throttle count]{lang="EN-US"}]{#struct_0_17822_17521_x2098151619}[：发送链路状态报文的最小时间间隔和一次最多发送的链路状态报文的数目]{lang="EN-US" style="font-family:宋体"}
+·LSP throttle time and LSP throttle count：发送链路状态报文的最小时间间隔和一次最多发送的链路状态报文的数目
 
-[[Receive HA *string* event.]{lang="EN-US"}]{#struct_0_17822_17521_x855589505}
+Receive HA *string* event.
 
-[[收到]{style="font-family:宋体"}[HA *string*]{lang="EN-US"}]{#struct_0_17822_17521_960988934}[通知事件，事件列表：]{style="font-family:宋体"}
+收到HA *string*通知事件，事件列表：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[EPOLLUP]{lang="EN-US"}]{#struct_0_17822_17521_x1974838288}[：]{lang="EN-US" style="font-family:宋体"}[epoll HUP]{lang="EN-US"}[事件]{lang="EN-US" style="font-family:宋体"}
+·EPOLLUP：epoll HUP事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[batch backup]{lang="EN-US"}]{#struct_0_17822_17521_2066069226}[：批量备份事件]{lang="EN-US" style="font-family:宋体"}
+·batch backup：批量备份事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[stop]{lang="EN-US"}]{#struct_0_17822_17521_x2142169328}[：进程停止事件]{lang="EN-US" style="font-family:宋体"}
+·stop：进程停止事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[degrade]{lang="EN-US"}]{#struct_0_17822_17521_960792326}[：降级事件]{lang="EN-US" style="font-family:宋体"}
+·degrade：降级事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[upgrade]{lang="EN-US"}]{#struct_0_17822_17521_1798622789}[：升级事件]{lang="EN-US" style="font-family:宋体"}
+·upgrade：升级事件
 
-[[Reconnecting to HA daemon, Please wait\...]{lang="EN-US"}]{#struct_0_17822_17521_x193695940}
+Reconnecting to HA daemon, Please wait\...
 
-[[重新连接]{style="font-family:宋体"}[HA]{lang="EN-US"}]{#struct_0_17822_17521_x140213188}[模块，请等待]{style="font-family:宋体"}[...]{lang="EN-US"}
+重新连接HA模块，请等待...
 
-[[Receive EVI-ISIS real-time backup data.]{lang="EN-US"}]{#struct_0_17822_17521_960857862}
+Receive EVI-ISIS real-time backup data.
 
-[[收到]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_17822_17521_x351017400}[实备数据]{style="font-family:宋体"}
+收到EVI IS-IS实备数据
 
-[[Receive EVI-ISIS batch backup data.]{lang="EN-US"}]{#struct_0_17822_17521_x2068004504}
+Receive EVI-ISIS batch backup data.
 
-[[收到]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_17822_17521_294207809}[批量备份数据]{style="font-family:宋体"}
+收到EVI IS-IS批量备份数据
 
-[[Send batch backup data to slave board.]{lang="EN-US"}]{#struct_0_17822_17521_961185542}
+Send batch backup data to slave board.
 
-[[发送批量备份数据到备板]{style="font-family:宋体"}]{#struct_0_17822_17521_x45973113}
+发送批量备份数据到备板
 
-[[External Deinit]{lang="EN-US"}]{#struct_0_17822_17521_1315929620}
+External Deinit
 
-[[去初始化]{style="font-family:宋体"}]{#struct_0_17822_17521_495596601}
+去初始化
 
-[[Notifying thread to stop work.]{lang="EN-US"}]{#struct_0_17822_17521_961251078}
+Notifying thread to stop work.
 
-[[通知线程停止工作]{style="font-family:宋体"}]{#struct_0_17822_17521_x1741544799}
+通知线程停止工作
 
-[[Processing the HA upgrade.]{lang="EN-US"}]{#struct_0_17822_17521_x36518329}
+Processing the HA upgrade.
 
-[[处理]{style="font-family:宋体"}[HA]{lang="EN-US"}]{#struct_0_17822_17521_x1411991738}[升级事件]{style="font-family:宋体"}
+处理HA升级事件
 
-[[HA smooth end]{lang="EN-US"}]{#struct_0_17822_17521_x1111147646}
+HA smooth end
 
-[[HA]{lang="EN-US"}]{#struct_0_17822_17521_796241863}[平滑结束]{style="font-family:宋体"}
+HA平滑结束
 
-[[HA smooth start]{lang="EN-US"}]{#struct_0_17822_17521_x1411926202}
+HA smooth start
 
-[[HA]{lang="EN-US"}]{#struct_0_17822_17521_1926480462}[平滑开始]{style="font-family:宋体"}
+HA平滑开始
 
-[[No process found. HA smooth ended]{lang="EN-US"}]{#struct_0_17822_17521_1043084122}
+No process found. HA smooth ended
 
-[[不存在任何进程实例，]{style="font-family:宋体"}[HA]{lang="EN-US"}]{#struct_0_17822_17521_x445025940}[平滑结束]{style="font-family:宋体"}
+不存在任何进程实例，HA平滑结束
 
-[[External init when HA]{lang="EN-US"}]{#struct_0_17822_17521_x1412122810}
+External init when HA
 
-[[初始化]{style="font-family:宋体"}[HA]{lang="EN-US"}]{#struct_0_17822_17521_x1724011681}[时]{style="font-family:宋体"}
+初始化HA时
 
-[[Notifying thread to start work.]{lang="EN-US"}]{#struct_0_17822_17521_x2105770624}
+Notifying thread to start work.
 
-[[通知线程开始工作]{style="font-family:宋体"}]{#struct_0_17822_17521_x1412057274}
+通知线程开始工作
 
-[[Start up EVI-ISIS protocol process when HA upgrade.]{lang="EN-US"}]{#struct_0_17822_17521_x382535746}
+Start up EVI-ISIS protocol process when HA upgrade.
 
-[[开始启动]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_17822_17521_334072790}[协议进程当]{style="font-family:宋体"}[HA]{lang="EN-US"}[升级时]{style="font-family:宋体"}
+开始启动EVI IS-IS协议进程当HA升级时
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1420299152}
+\# 打开EVI IS-IS HA的调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17822_17521_x1411729594}[打开]{style="font-family:宋体"}[EVI IS-IS HA]{lang="EN-US"}[的调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging evi isis ha
 
-[[\<Sysname\> debugging evi isis ha]{lang="EN-US"}]{#struct_0_17822_17521_1714346263}
+\*Jun  3 09:56:15:006 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1;
 
-[\*Jun  3 09:56:15:006 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1;]{lang="EN-US"}
+EVIISIS-101-HA: Receive HA upgrade event.
 
-[EVIISIS-101-HA: Receive HA upgrade event.]{lang="EN-US"}
-
-[*[// ]{lang="PT-BR"}*]{#struct_0_17822_17521_1428090495}*[收到]{style="font-family:宋体"}[HA]{lang="EN-US"}[升级事件]{style="font-family:宋体"}*
-
-::: {#915469014 .myid}
-[]{#_Toc312864696}[]{#_Toc404798223}[]{#struct_0_17822_17521_x495504425}
+*// 收到HA升级事件*
 
 **EVI \-- EVI调试命令 \-- debugging evi isis local-mac**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1153173392}
+【命令】
 
-[**[debugging evi isis local-mac]{lang="EN-US"}**[ \[ *process-id* \]]{lang="EN-US"}]{#struct_0_17822_17521_x1834273956}
+**[debugging evi isis local-mac** [ *process-id* ]]
 
-[**[undo debugging evi isis local-mac]{lang="EN-US"}**[ \[ *process-id* \]]{lang="EN-US"}]{#struct_0_17822_17521_1828927157}
+**[undo debugging evi isis local-mac** [ *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17822_17521_674872867}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_17822_17521_x1411664058}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:
-黑体"}]{#struct_0_17822_17521_2633842}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17822_17521_1039330859}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17822_17521_x110815941}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17822_17521_948318446}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17822_17521_1549952969}[：要打开的调试信息开关的进程]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：要打开的调试信息开关的进程ID。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1390323330}
+【描述】
 
-[**[debugging evi isis local-mac]{lang="EN-US"}**]{#struct_0_17822_17521_1954530551}[命令用来打开]{style="font-family:
-宋体"}[EVI IS-IS]{lang="EN-US"}[进程的本地]{style="font-family:
-宋体"}[MAC]{lang="EN-US"}[地址信息调试信息开关。用于调试驱动上报的本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息使用。]{style="font-family:宋体"}**[undo]{lang="EN-US"}**[ **debugging evi isis local-mac**]{lang="EN-US"}[命令用来关闭]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息调试信息开关。]{style="font-family:宋体"}
+**[debugging evi isis local-mac**]命令用来打开EVI IS-IS进程的本地MAC地址信息调试信息开关。用于调试驱动上报的本地MAC地址信息使用。**undo** **debugging evi isis local-mac**命令用来关闭EVI IS-IS进程的本地MAC地址信息调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_17822_17521_x1411860666}[进程的本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，EVI IS-IS进程的本地MAC地址信息调试信息开关处于关闭状态。
 
-[[需要注意的是，如果未指定进程号，则表示打开所有进程的本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_17822_17521_260469962}[地址信息调试信息开关。]{style="font-family:宋体"}
+需要注意的是，如果未指定进程号，则表示打开所有进程的本地MAC地址信息调试信息开关。
 
-[[表1-6 ]{lang="EN-US"}[debugging evi isis local-mac]{lang="EN-US"}]{#struct_0_17822_17521_x1283903201}[命令输出信息描述表]{style="font-family:黑体"}
+表1-6 debugging evi isis local-mac命令输出信息描述表
 
-[]{#table_struct_0_1796312968}[[字段]{style="font-family:黑体"}]{#struct_0_17822_17521_x429180849}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17822_17521_x1717632815}
+描述
 
-[[Receive local MAC, Operation type:O*pType*, MAC type:*MacType*, ifIndex:*ifIndex*, VLAN: *Number*, MAC: *MacAddr*.]{lang="FR"}]{#struct_0_17822_17521_x700728529}
+Receive local MAC, Operation type:O*pType*, MAC type:*MacType*, ifIndex:*ifIndex*, VLAN: *Number*, MAC: *MacAddr*.
 
-[[收到本地]{style="font-family:宋体"}]{#struct_0_17822_17521_743020122}[MAC]{lang="FR"}[地址信息，]{style="font-family:宋体"}[VLAN]{lang="FR"}[为]{style="font-family:宋体"}*[Number]{lang="FR"}*[，]{style="font-family:宋体"}[MAC]{lang="FR"}[地址为]{style="font-family:宋体"}*[MacAddr]{lang="FR"}*[，操作类型为]{style="font-family:宋体"}*[OpType]{lang="FR"}*[，]{style="font-family:宋体"}*[OpType]{lang="FR"}*[的取值可以如下]{style="font-family:宋体"}[：]{style="font-family:宋体"}
+收到本地MAC地址信息，VLAN为*Number*，MAC地址为*MacAddr*，操作类型为*OpType*，*OpType*的取值可以如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[add]{lang="FR"}]{#struct_0_17822_17521_x1411795130}[：添加]{lang="EN-US" style="font-family:
-  宋体"}
+·add：添加
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[delete]{lang="FR"}]{#struct_0_17822_17521_x919103824}[：删除]{lang="EN-US" style="font-family:宋体"}
+·delete：删除
 
-[[MAC]{lang="EN-US"}]{#struct_0_17822_17521_867529799}[地址类型为]{style="font-family:宋体"}*[MacType]{lang="EN-US"}*[，]{style="font-family:宋体"}*[MacType]{lang="EN-US"}*[的取值可以如下]{style="font-family:宋体"}[：]{style="font-family:宋体"}
+MAC地址类型为*MacType*，*MacType*的取值可以如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[dynamic]{lang="EN-US"}]{#struct_0_17822_17521_1971099103}[：动态]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+·dynamic：动态MAC地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[static]{lang="EN-US"}]{#struct_0_17822_17521_x128181356}[：静态]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+·static：静态MAC地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[nonadvertised]{lang="EN-US"}]{#struct_0_17822_17521_736916845}[：非发布]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+·nonadvertised：非发布MAC地址
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1411467450}
+\# 打开EVI IS-IS进程的本地MAC地址信息调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17822_17521_x492336234}[打开]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging evi isis local-mac
 
-[[\<Sysname\> debugging evi isis local-mac]{lang="EN-US"}]{#struct_0_17822_17521_538578685}
+\*Jun  3 09:56:15:911 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1;
 
-[\*Jun  3 09:56:15:911 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1; ]{lang="EN-US"}
+Receive local MAC, Operation type:add, MAC type:dynamic, ifIndex:0x1111, VLAN: 2, MAC: aa-bb-cc.
 
-[Receive local MAC, Operation type:add, MAC type:dynamic, ifIndex:0x1111, VLAN: 2, MAC: aa-bb-cc.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_17822_17521_x1706143672}*[收到本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[，操作类型为]{style="font-family:宋体"}[add]{lang="EN-US"}[，]{style="font-family:宋体"}[MAC]{lang="EN-US"}[类型为]{style="font-family:宋体"}[dynamic]{lang="EN-US"}[，]{style="font-family:宋体"}[ifIndex]{lang="EN-US"}[为]{style="font-family:宋体"}[0x1111]{lang="EN-US"}[，]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[为]{style="font-family:宋体"}[2]{lang="EN-US"}[，]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为]{style="font-family:宋体"}[aa-bb-cc]{lang="EN-US"}*
-
-::: {#1393998550 .myid}
-[]{#_Toc404798224}[]{#struct_0_17822_17521_x1774479658}
+*// 收到本地MAC，操作类型为add，MAC类型为dynamic，ifIndex为0x1111，VLAN为2，MAC地址为aa-bb-cc*
 
 **EVI \-- EVI调试命令 \-- debugging evi isis misc**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17822_17521_1220716560}
+【命令】
 
-[**[debugging evi isis misc]{lang="EN-US"}**]{#struct_0_17822_17521_x561362353}
+**[debugging evi isis misc**]
 
-[**[undo debugging evi isis misc]{lang="EN-US"}**]{#struct_0_17822_17521_x1411401914}
+**[undo debugging evi isis misc**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17822_17521_718769633}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_17822_17521_1805534717}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1889208908}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17822_17521_x137004847}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17822_17521_1057689407}
+mdc-admin
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1373350644}
+【描述】
 
-[**[debugging evi isis misc]{lang="EN-US"}**]{#struct_0_17822_17521_x521644399}[命令用来打开与进程无关的其它调试信息开关。]{style="font-family:宋体"}**[undo debugging evi isis misc]{lang="EN-US"}**[命令用来关闭与进程无关的其它调试信息开关。]{style="font-family:
-宋体"}
+**[debugging evi isis misc**]命令用来打开与进程无关的其它调试信息开关。**undo debugging evi isis misc**命令用来关闭与进程无关的其它调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_17822_17521_x517787850}[的与进程无关的其它调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，EVI IS-IS的与进程无关的其它调试信息开关处于关闭状态。
 
-[[表1-7 ]{lang="EN-US"}[debugging evi isis misc]{lang="EN-US"}]{#struct_0_17822_17521_x1411991737}[命令输出信息描述表]{style="font-family:黑体"}
+表1-7 debugging evi isis misc命令输出信息描述表
 
-[]{#table_struct_0_1795486344}[[字段]{style="font-family:黑体"}]{#struct_0_17822_17521_x1870662533}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17822_17521_x286364844}
+描述
 
-[[Failed to receive local mac message]{lang="EN-US"}]{#struct_0_17822_17521_x833939719}
+Failed to receive local mac message
 
-[[接收本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_17822_17521_1992037174}[消息失败]{style="font-family:宋体"}
+接收本地MAC消息失败
 
-[[Failed to create bitmap for publishing LAV]{lang="EN-US"}]{#struct_0_17822_17521_350408013}
+Failed to create bitmap for publishing LAV
 
-[[发布]{style="font-family:宋体"}[LAV]{lang="EN-US"}]{#struct_0_17822_17521_x1411926201}[时创建位图资源失败]{style="font-family:宋体"}
+发布LAV时创建位图资源失败
 
-[[Publish batch Lav info]{lang="EN-US"}]{#struct_0_17822_17521_360396521}
+Publish batch Lav info
 
-[[批量下发]{style="font-family:宋体"}[LAV]{lang="EN-US"}]{#struct_0_17822_17521_465133926}[信息]{style="font-family:宋体"}
+批量下发LAV信息
 
-[[Send Lav notify message, event: *EventType*, tunnel index: ]{lang="EN-US"}*[TunnelIndex]{lang="EN-US"}*]{#struct_0_17822_17521_x1437319131}
+Send Lav notify message, event: *EventType*, tunnel index: *TunnelIndex*
 
-[[发送]{style="font-family:宋体"}[LAV]{lang="EN-US"}]{#struct_0_17822_17521_860053369}[通知事件消息，事件类型为]{style="font-family:宋体"}*[EventType]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel]{lang="EN-US"}[接口索引为]{style="font-family:宋体"}*[TunnelIndex]{lang="EN-US"}*[，]{style="font-family:宋体"}*[EventType]{lang="EN-US"}*[的取值可以如下：]{style="font-family:宋体"}
+发送LAV通知事件消息，事件类型为*EventType*，tunnel接口索引为*TunnelIndex*，*EventType*的取值可以如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ADD]{lang="EN-US"}]{#struct_0_17822_17521_x1412122809}[：添加]{lang="EN-US" style="font-family:宋体"}
+·ADD：添加
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DEL]{lang="EN-US"}]{#struct_0_17822_17521_198368156}[：删除]{lang="EN-US" style="font-family:宋体"}
+·DEL：删除
 
-[[Failed to *Opt* VLAN on port, error: ]{lang="EN-US"}*[ErrorCode]{lang="EN-US"}*[, EVI link index:]{lang="EN-US"}*[ IfIndex]{lang="EN-US"}*]{#struct_0_17822_17521_226618309}
+Failed to *Opt* VLAN on port, error: *ErrorCode*, EVI link index:* IfIndex*
 
-[[在接口上操作]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_17822_17521_x1155554110}[失败，错误码为]{style="font-family:宋体"}*[ErrorCode]{lang="EN-US"}*[，]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[索引为]{style="font-family:宋体"}*[IfIndex]{lang="EN-US"}*[，操作类型为]{style="font-family:宋体"}*[Opt]{lang="EN-US"}*[，]{style="font-family:宋体"}*[Opt]{lang="EN-US"}*[的取值可以如下：]{style="font-family:宋体"}
+在接口上操作VLAN失败，错误码为*ErrorCode*，EVI-Link索引为*IfIndex*，操作类型为*Opt*，*Opt*的取值可以如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[add]{lang="EN-US"}]{#struct_0_17822_17521_605772380}[：添加]{lang="EN-US" style="font-family:宋体"}
+·add：添加
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[delete]{lang="EN-US"}]{#struct_0_17822_17521_x1412057273}[：删除]{lang="EN-US" style="font-family:宋体"}
+·delete：删除
 
-[[Process(*PorcId*) is created successfully]{lang="EN-US"}]{#struct_0_17822_17521_x785820273}
+Process(*PorcId*) is created successfully
 
-[[进程]{style="font-family:宋体"}[(]{lang="EN-US"}]{#struct_0_17822_17521_x1226685076}*[进程]{style="font-family:宋体"}[ID]{lang="EN-US"}*[)]{lang="EN-US"}[创建成功]{style="font-family:宋体"}
+进程(*进程ID*)创建成功
 
-[[Update EVI-ISIS Designated Vlan  to DBM]{lang="EN-US"}]{#struct_0_17822_17521_x785894975}
+Update EVI-ISIS Designated Vlan  to DBM
 
-[[更新指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_17822_17521_x1411729593}[数据到]{style="font-family:宋体"}[DBM]{lang="EN-US"}
+更新指定VLAN数据到DBM
 
-[[Failed to create bitmap]{lang="EN-US"}]{#struct_0_17822_17521_148262322}
+Failed to create bitmap
 
-[[创建]{style="font-family:宋体"}[bitmap]{lang="EN-US"}]{#struct_0_17822_17521_x362937709}[资源失败]{style="font-family:宋体"}
+创建bitmap资源失败
 
-[[Failed to connect to *String* ]{lang="EN-US"}]{#struct_0_17822_17521_x1903734298}
+Failed to connect to *String*
 
-[[连接]{style="font-family:宋体"}*[String]{lang="EN-US"}*]{#struct_0_17822_17521_107561454}[模块失败，]{style="font-family:宋体"}*[String]{lang="EN-US"}*[描述了模块的类型]{style="font-family:宋体"}
+连接*String*模块失败，*String*描述了模块的类型
 
-[[Send HA response(*String*) error]{lang="EN-US"}]{#struct_0_17822_17521_x1411664057}
+Send HA response(*String*) error
 
-[[发送]{style="font-family:宋体"}[HA]{lang="EN-US"}]{#struct_0_17822_17521_x1919680459}[应答错误，]{style="font-family:宋体"}*[String]{lang="EN-US"}*[指示了应答的内容]{style="font-family:宋体"}
+发送HA应答错误，*String*指示了应答的内容
 
-[[Starting HA upgrade waiting timer for reset complete]{lang="EN-US"}]{#struct_0_17822_17521_x1912274990}
+Starting HA upgrade waiting timer for reset complete
 
-[[启动]{style="font-family:宋体"}[HA]{lang="EN-US"}]{#struct_0_17822_17521_15664742}[升级等待定时器为了重启完成]{style="font-family:宋体"}
+启动HA升级等待定时器为了重启完成
 
-[[External init error when HA]{lang="EN-US"}]{#struct_0_17822_17521_x1411860665}
+External init error when HA
 
-[[HA]{lang="EN-US"}]{#struct_0_17822_17521_x1305613979}[时外部初始化错误]{style="font-family:宋体"}
+HA时外部初始化错误
 
-[*[Type ]{lang="EN-US"}*[ the global packet up to CPU]{lang="EN-US"}]{#struct_0_17822_17521_x278330160}
+*[Type * the global packet up to CPU]
 
-[[操作全局的报文是否允许发送到]{style="font-family:宋体"}[CPU]{lang="EN-US"}]{#struct_0_17822_17521_x783810012}[，]{style="font-family:宋体"}*[Type]{lang="EN-US"}*[描述了操作的类型，]{style="font-family:宋体"}[Type]{lang="EN-US"}[的取值可以如下：]{style="font-family:宋体"}
+操作全局的报文是否允许发送到CPU，*Type*描述了操作的类型，Type的取值可以如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[enable]{lang="EN-US"}]{#struct_0_17822_17521_x1411795129}[：允许]{lang="EN-US" style="font-family:宋体"}
+·enable：允许
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[disable]{lang="EN-US"}]{#struct_0_17822_17521_x2128891869}[：不允许]{lang="EN-US" style="font-family:宋体"}
+·disable：不允许
 
-[[Receive IFM EPOLLHUP event]{lang="EN-US"}]{#struct_0_17822_17521_x1360270108}
+Receive IFM EPOLLHUP event
 
-[[收到接口管理的]{style="font-family:宋体"}[EPOLLHUP]{lang="EN-US"}]{#struct_0_17822_17521_1781521729}[事件]{style="font-family:宋体"}
+收到接口管理的EPOLLHUP事件
 
-[[Receive SIGKILL signal from SCM]{lang="EN-US"}]{#struct_0_17822_17521_x1411467449}
+Receive SIGKILL signal from SCM
 
-[[从]{style="font-family:宋体"}[SCM]{lang="EN-US"}]{#struct_0_17822_17521_1429912531}[收到]{style="font-family:宋体"}[SIGKILL]{lang="EN-US"}[信号]{style="font-family:宋体"}
+从SCM收到SIGKILL信号
 
-[[Process is deleted successfully]{lang="EN-US"}]{#struct_0_17822_17521_x870310930}
+Process is deleted successfully
 
-[[进程删除成功]{style="font-family:宋体"}]{#struct_0_17822_17521_x1411401913}
+进程删除成功
 
-[[Tunnel is deleted successfully]{lang="EN-US"}]{#struct_0_17822_17521_1122054160}
+Tunnel is deleted successfully
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_17822_17521_x771726982}[接口删除成功]{style="font-family:宋体"}
+Tunnel接口删除成功
 
-[[Failed to get system node *Number*]{lang="EN-US"}]{#struct_0_17822_17521_x326517173}
+Failed to get system node *Number*
 
-[[获取系统结点失败，]{style="font-family:宋体"}*[Number]{lang="EN-US"}*]{#struct_0_17822_17521_x1411991740}[为系统索引]{style="font-family:宋体"}
+获取系统结点失败，*Number*为系统索引
 
-[[Receive DEV EPOLLHUP event]{lang="EN-US"}]{#struct_0_17822_17521_x1467181398}
+Receive DEV EPOLLHUP event
 
-[[收到设备模块发送过来的]{style="font-family:宋体"}[EPOLLHUP]{lang="EN-US"}]{#struct_0_17822_17521_700632976}[事件]{style="font-family:宋体"}
+收到设备模块发送过来的EPOLLHUP事件
 
-[[Reconnecting to *String*, please wait\...]{lang="EN-US"}]{#struct_0_17822_17521_x1411926204}
+Reconnecting to *String*, please wait\...
 
-[[重新连接]{style="font-family:宋体"}*[String]{lang="EN-US"}*]{#struct_0_17822_17521_763681048}[模块，请等待，]{style="font-family:宋体"}*[String]{lang="EN-US"}*[描述了要连接的模块]{style="font-family:宋体"}
+重新连接*String*模块，请等待，*String*描述了要连接的模块
 
-[[Receive VLAN *Type*  event]{lang="EN-US"}]{#struct_0_17822_17521_1615002772}
+Receive VLAN *Type*  event
 
-[[收到]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_17822_17521_x704439307}[事件。]{style="font-family:宋体"}*[Type]{lang="EN-US"}*[描述了事件的类型：]{style="font-family:宋体"}
+收到VLAN事件。*Type*描述了事件的类型：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[create ]{lang="EN-US"}]{#struct_0_17822_17521_x1412122812}
+·create
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[delete]{lang="EN-US"}]{#struct_0_17822_17521_1408156201}
+·delete
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[EPOLLHUP]{lang="EN-US"}]{#struct_0_17822_17521_1357647105}
+·EPOLLHUP
 
-[[External connection of system index *SysINDEX* failed, connectivity set to false.]{lang="EN-US"}]{#struct_0_17822_17521_309913885}
+External connection of system index *SysINDEX* failed, connectivity set to false.
 
-[[系统实例索引为]{style="font-family:宋体"}*[SysINDEX]{lang="EN-US"}*]{#struct_0_17822_17521_1875539077}[的外部连接断开，]{style="font-family:宋体"}[连通性检查失败]{style="font-family:宋体"}
+系统实例索引为*SysINDEX*的外部连接断开，连通性检查失败
 
-[[Connectivity test passed, connectivity set to true.]{lang="EN-US"}]{#struct_0_17822_17521_x1356326164}
+Connectivity test passed, connectivity set to true.
 
-[[连通性检查成功]{style="font-family:宋体"}]{#struct_0_17822_17521_1875473541}
+连通性检查成功
 
-[[Neighbor count optType is *type*, current value is *value*.]{lang="EN-US"}]{#struct_0_17822_17521_x1417959142}
+Neighbor count optType is *type*, current value is *value*.
 
-[[邻居计数的操作类型为]{style="font-family:宋体"}*[type]{lang="EN-US"}*]{#struct_0_17822_17521_1875408005}[，当前邻居个数为]{style="font-family:宋体"}*[value]{lang="EN-US"}*
+邻居计数的操作类型为*type*，当前邻居个数为*value*
 
-[*[type]{lang="EN-US"}*]{#struct_0_17822_17521_1370525611}[的取值可以如下]{style="font-family:宋体"}[：]{style="font-family:宋体"}
+*[type*]的取值可以如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[1]{lang="EN-US"}]{#struct_0_17822_17521_1875342469}[：计数加操作]{lang="EN-US" style="font-family:宋体"}
+·1：计数加操作
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[2]{lang="EN-US"}]{#struct_0_17822_17521_x648077730}[：计数减操作]{lang="EN-US" style="font-family:宋体"}
+·2：计数减操作
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[3]{lang="EN-US"}]{#struct_0_17822_17521_1875801221}[：统计清零]{lang="EN-US" style="font-family:宋体"}
+·3：统计清零
 
-[[The callback track entry doesn\'t match local configuration.]{lang="EN-US"}]{#struct_0_17822_17521_x620052634}
+The callback track entry doesn\'t match local configuration.
 
-[[Track]{lang="EN-US"}]{#struct_0_17822_17521_1875735685}[模块回调通知的]{style="font-family:宋体"}[Entry]{lang="EN-US"}[同配置中保存的不一致]{style="font-family:宋体"}
+Track模块回调通知的Entry同配置中保存的不一致
 
-[[Track status: *state*.]{lang="EN-US"}]{#struct_0_17822_17521_x1822322065}
+Track status: *state*.
 
-[[Track]{lang="EN-US"}]{#struct_0_17822_17521_1875670149}[的连通状态为]{style="font-family:宋体"}*[state]{lang="EN-US"}*[，]{style="font-family:宋体"}*[state]{lang="EN-US"}*[的取值可以如下]{style="font-family:宋体"}[：]{style="font-family:宋体"}
+Track的连通状态为*state*，*state*的取值可以如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not ready]{lang="EN-US"}]{#struct_0_17822_17521_1875604613}[：监测结果未就绪]{lang="EN-US" style="font-family:宋体"}
+·Not ready：监测结果未就绪
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Negative]{lang="EN-US"}]{#struct_0_17822_17521_904005424}[：监测对象工作异常]{lang="EN-US" style="font-family:宋体"}
+·Negative：监测对象工作异常
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Positive]{lang="EN-US"}]{#struct_0_17822_17521_1876063365}[：监测对象工作正常]{lang="EN-US" style="font-family:宋体"}
+·Positive：监测对象工作正常
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown]{lang="EN-US"}]{#struct_0_17822_17521_x1940936280}[：未识别状态]{style="font-family:宋体"}
+·Unknown：未识别状态
 
-[[Transport-side connectivity of the intra-site neighbor changed to *value.*]{lang="EN-US"}]{#struct_0_17822_17521_1875997829}
+Transport-side connectivity of the intra-site neighbor changed to *value.*
 
-[[邻居公网侧连通性改变]{style="font-family:宋体"}]{#struct_0_17822_17521_979925733}
+邻居公网侧连通性改变
 
-[*[value]{lang="EN-US"}*]{#struct_0_17822_17521_1875539078}[的取值可以如下]{style="font-family:宋体"}[：]{style="font-family:宋体"}
+*[value*]的取值可以如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[1]{lang="EN-US"}]{#struct_0_17822_17521_x1355998484}[：邻居公网侧连通]{lang="EN-US" style="font-family:宋体"}
+·1：邻居公网侧连通
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0]{lang="EN-US"}]{#struct_0_17822_17521_1875473542}[：邻居公网侧不连通]{lang="EN-US" style="font-family:宋体"}
+·0：邻居公网侧不连通
 
-[[Failed to initialize the TRACK ]{lang="EN-US"}[while HA was being performed.]{lang="EN-US"}]{#struct_0_17822_17521_x1418155750}
+Failed to initialize the TRACK while HA was being performed.
 
-[[HA]{lang="EN-US"}]{#struct_0_17822_17521_1875408006}[的时候]{style="font-family:宋体"}[Track]{lang="EN-US"}[初始化失败]{style="font-family:宋体"}
+HA的时候Track初始化失败
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1412057276}
+\# 打开接收EVI IS-IS 其它错误调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17822_17521_x1545335160}[打开接收]{style="font-family:宋体"}[EVI IS-IS ]{lang="EN-US"}[其它错误调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging evi isis misc
 
-[[\<Sysname\> debugging evi isis misc]{lang="EN-US"}]{#struct_0_17822_17521_1342100299}
+\*Dec 20 12:24:03:012 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1;
 
-[\*Dec 20 12:24:03:012 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1;]{lang="EN-US"}
+EVIISIS-MISC: Receive VLAN create event.
 
-[EVIISIS-MISC: Receive VLAN create event.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_17822_17521_x812956752}*[收到]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[创建事件]{style="font-family:宋体"}*
-
-::: {#833331557 .myid}
-[]{#_Toc404798225}[]{#struct_0_17822_17521_343718965}[]{#_Toc312864697}
+*// 收到VLAN创建事件*
 
 **EVI \-- EVI调试命令 \-- debugging evi isis route**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1762050884}
+【命令】
 
-[**[debugging evi isis route]{lang="EN-US"}**[ \[ **verbose** \] \[ *process-id* \]]{lang="EN-US"}]{#struct_0_17822_17521_20563198}
+**[debugging evi isis route** [ **verbose**   *process-id* ]]
 
-[**[undo debugging evi isis route ]{lang="EN-US"}**[\[ **verbose** \] \[ *process-id* \]]{lang="EN-US"}]{#struct_0_17822_17521_x1411729596}
+**[undo debugging evi isis route ** **verbose** ]  *process-id*
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17822_17521_551546849}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_17822_17521_x1581409931}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1236059989}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17822_17521_x1785539116}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17822_17521_1142757559}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17822_17521_x252183437}
+【参数】
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_17822_17521_x59468748}[：打开路由详细调试信息开关。]{style="font-family:宋体"}
+**[verbose**]：打开路由详细调试信息开关。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17822_17521_x1411664060}[：要打开的调试信息开关的进程]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：要打开的调试信息开关的进程ID。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_17822_17521_x353530982}
+【描述】
 
-[**[debugging evi isis route]{lang="EN-US"}**]{#struct_0_17822_17521_1309536882}[命令用来打开]{style="font-family:
-宋体"}[EVI IS-IS]{lang="EN-US"}[进程的路由计算调试信息开关。]{style="font-family:
-宋体"}**[undo]{lang="EN-US"}**[ **debugging evi isis route**]{lang="EN-US"}[命令用来关闭]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的路由计算调试信息开关。]{style="font-family:宋体"}
+**[debugging evi isis route**]命令用来打开EVI IS-IS进程的路由计算调试信息开关。**undo** **debugging evi isis route**命令用来关闭EVI IS-IS进程的路由计算调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_17822_17521_x325907323}[进程路由计算调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，EVI IS-IS进程路由计算调试信息开关处于关闭状态。
 
-[[需要注意的是，如果未指定进程号，则表示打开所有进程的路由计算调试信息开关。]{style="font-family:宋体"}]{#struct_0_17822_17521_x250770144}
+需要注意的是，如果未指定进程号，则表示打开所有进程的路由计算调试信息开关。
 
-[[表1-8 ]{lang="EN-US"}[debugging evi isis route]{lang="EN-US"}]{#struct_0_17822_17521_x1911295320}[命令输出信息描述表]{style="font-family:黑体"}
+表1-8 debugging evi isis route命令输出信息描述表
 
-[]{#table_struct_0_1821528008}[[字段]{style="font-family:黑体"}]{#struct_0_17822_17521_1561769663}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17822_17521_899818279}
+描述
 
-[[Flush r-mac, vlan: *Number*, mac: *MacAddr*, action: *Type*]{lang="FR"}]{#struct_0_17822_17521_x1411860668}
+Flush r-mac, vlan: *Number*, mac: *MacAddr*, action: *Type*
 
-[[下刷]{lang="EN-US" style="font-family:
-  宋体"}]{#struct_0_17822_17521_x546099092}[MAC]{lang="FR"}[表项，]{lang="EN-US" style="font-family:
-  宋体"}[VLAN]{lang="FR"}[为]{lang="EN-US" style="font-family:
-  宋体"}*[Number]{lang="FR"}*[，]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="FR"}[地址为]{lang="EN-US" style="font-family:宋体"}*[MacAddr]{lang="FR"}*[，操作类型为]{lang="EN-US" style="font-family:宋体"}*[Type]{lang="FR"}*[，]{lang="EN-US" style="font-family:宋体"}*[Type]{lang="FR"}*[的取值可以如下]{lang="EN-US" style="font-family:宋体"}[：]{style="font-family:
-  宋体"}
+下刷MAC表项，VLAN为*Number*，MAC地址为*MacAddr*，操作类型为*Type*，*Type*的取值可以如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[none]{lang="EN-US"}]{#struct_0_17822_17521_x2033309227}[：无]{lang="EN-US" style="font-family:宋体"}
+·none：无
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[add]{lang="EN-US"}]{#struct_0_17822_17521_1646018659}[：添加]{lang="EN-US" style="font-family:宋体"}
+·add：添加
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[delete]{lang="EN-US"}]{#struct_0_17822_17521_766830770}[：删除]{lang="EN-US" style="font-family:宋体"}
+·delete：删除
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[update]{lang="EN-US"}]{#struct_0_17822_17521_x1603376607}[：更新]{lang="EN-US" style="font-family:宋体"}
+·update：更新
 
-[[Failed to flush r-mac, vlan: *Number*, mac: *MacAddr*, error: *ErrorId*]{lang="FR"}]{#struct_0_17822_17521_x1411795132}
+Failed to flush r-mac, vlan: *Number*, mac: *MacAddr*, error: *ErrorId*
 
-[[下刷]{lang="EN-US" style="font-family:
-  宋体"}]{#struct_0_17822_17521_x2081903238}[MAC]{lang="FR"}[表项失败，]{lang="EN-US" style="font-family:
-  宋体"}[MAC]{lang="FR"}[地址为]{lang="EN-US" style="font-family:
-  宋体"}*[MacAddr]{lang="FR"}*[，错误]{lang="EN-US" style="font-family:宋体"}[ID]{lang="FR"}[为]{lang="EN-US" style="font-family:宋体"}*[ErrorId]{lang="FR"}*
+下刷MAC表项失败，MAC地址为*MacAddr*，错误ID为*ErrorId*
 
-[*[Type]{lang="FR"}*]{#struct_0_17822_17521_x840940826}[  r-mac entry, vlan: *Number*, mac: *MacAddr*]{lang="FR"}
+*[Type*]  r-mac entry, vlan: *Number*, mac: *MacAddr*
 
-[[操作]{lang="EN-US" style="font-family:
-  宋体"}]{#struct_0_17822_17521_2144014769}[r-mac]{lang="FR"}[表项，操作类型为]{lang="EN-US" style="font-family:
-  宋体"}*[Type]{lang="FR"}*[，具体取值如下]{lang="EN-US" style="font-family:宋体"}[：]{style="font-family:宋体"}
+操作r-mac表项，操作类型为*Type*，具体取值如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Add]{lang="EN-US"}]{#struct_0_17822_17521_x395877137}[：添加]{lang="EN-US" style="font-family:宋体"}
+·Add：添加
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Delete]{lang="EN-US"}]{#struct_0_17822_17521_x1411467452}[：删除]{lang="EN-US" style="font-family:宋体"}
+·Delete：删除
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Update]{lang="EN-US"}]{#struct_0_17822_17521_x1655135648}[：更新]{lang="EN-US" style="font-family:宋体"}
+·Update：更新
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Query]{lang="EN-US"}]{#struct_0_17822_17521_x1869031156}[：查询]{lang="EN-US" style="font-family:宋体"}
+·Query：查询
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17822_17521_1748007499}
+\# 打开EVI IS-IS路由计算调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17822_17521_x1870267193}[打开]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[路由计算调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging evi isis route
 
-[[\<Sysname\> debugging evi isis route]{lang="EN-US"}]{#struct_0_17822_17521_391080792}
+\*Jun  3 09:56:15:911 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1;
 
-[\*Jun  3 09:56:15:911 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1; ]{lang="EN-US"}
+EVIISIS-101- ROUTE: Updater-mac entry, vlan: 5, mac: aa-bb-cc.
 
-[EVIISIS-101- ROUTE: Update]{lang="EN-US"}[  ]{lang="EN-US"}[r-mac entry, vlan: ]{lang="FR"}[5]{lang="EN-US"}[, mac: ]{lang="FR"}[aa-bb-cc.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_17822_17521_x1411401916}*[更新]{style="font-family:宋体"}[r-mac]{lang="EN-US"}[表项，]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[为]{style="font-family:宋体"}[5]{lang="EN-US"}[，]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为]{style="font-family:宋体"}[aa-bb-cc]{lang="EN-US"}*
-
-::: {#604082899 .myid}
-[]{#_Toc404798226}[]{#struct_0_17822_17521_1881569047}[]{#_Toc312864698}
+*// 更新r-mac表项，VLAN为5，MAC地址为aa-bb-cc*
 
 **EVI \-- EVI调试命令 \-- debugging evi isis self-originate-update**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17822_17521_1354843790}
+【命令】
 
-[**[debugging evi isis self-originate-update ]{lang="EN-US"}**[\[ *process-id* \]]{lang="EN-US"}]{#struct_0_17822_17521_x785136065}
+**[debugging evi isis self-originate-update ** *process-id* ]
 
-[**[undo]{lang="EN-US"}**[ **debugging evi isis self-originate-update** \[ *process-id* \]]{lang="EN-US"}]{#struct_0_17822_17521_x452317798}
+**[undo** **debugging evi isis self-originate-update** [ *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17822_17521_207602164}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_17822_17521_x874466321}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17822_17521_2081340963}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17822_17521_x1411991739}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17822_17521_1617735709}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1969462636}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17822_17521_x1251159288}[：要打开的调试信息开关的进程]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：要打开的调试信息开关的进程ID。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1545087738}
+【描述】
 
-[**[debugging evi isis self-originate-update]{lang="EN-US"}**]{#struct_0_17822_17521_1840079694}[命令用来打开]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的本地更新调试信息开关。]{style="font-family:宋体"}**[undo debugging evi isis self-originate-update]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的本地更新调试信息开关。]{style="font-family:宋体"}
+**[debugging evi isis self-originate-update**]命令用来打开EVI IS-IS进程的本地更新调试信息开关。**undo debugging evi isis self-originate-update**命令用来关闭EVI IS-IS进程的本地更新调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_17822_17521_1318673728}[进程的本地更新调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，EVI IS-IS进程的本地更新调试信息开关处于关闭状态。
 
-[[需要注意的是，如果未指定进程号，则表示打开所有进程的本地更新调试信息开关。]{style="font-family:宋体"}]{#struct_0_17822_17521_x895178992}
+需要注意的是，如果未指定进程号，则表示打开所有进程的本地更新调试信息开关。
 
-[[表1-9 ]{lang="EN-US"}[debugging evi isis self-originate-update]{lang="EN-US"}]{#struct_0_17822_17521_x1411926203}[命令输出信息描述表]{style="font-family:黑体"}
+表1-9 debugging evi isis self-originate-update命令输出信息描述表
 
-[]{#table_struct_0_1821149672}[[字段]{style="font-family:黑体"}]{#struct_0_17822_17521_x802402893}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17822_17521_1820395571}
+描述
 
-[[Purging level-*Number* LSP \[*LSPId*.*PseudoId* -*LspNum*\].]{lang="EN-US"}]{#struct_0_17822_17521_1668666929}
+Purging level-*Number* LSP *LSPId*.*PseudoId* -*LspNum*.
 
-[[清除]{style="font-family:宋体"}[level- *Number*]{lang="EN-US"}]{#struct_0_17822_17521_x1640362199}[的]{style="font-family:宋体"}[LSP\[LSPID.]{lang="EN-US"}[伪节点]{style="font-family:宋体"}[ID-]{lang="EN-US"}[分片号]{style="font-family:宋体"}[\]]{lang="EN-US"}
+清除level- *Number*的LSP[LSPID.伪节点ID-分片号]
 
-[[EVI-ISIS(*ProcID*) level- *Number* LSP overflow.]{lang="EN-US"}]{#struct_0_17822_17521_x747445233}
+EVI-ISIS(*ProcID*) level- *Number* LSP overflow.
 
-[[EVI]{lang="EN-US"}]{#struct_0_17822_17521_x1412122811}[ ]{lang="EN-US"}[IS]{lang="EN-US"}[-]{lang="EN-US"}[IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}[为]{lang="EN-US" style="font-family:宋体"}*[ProcID]{lang="EN-US"}*[的]{lang="EN-US" style="font-family:宋体"}[leve]{lang="EN-US"}[l]{lang="EN-US"}[- *Number* LSP]{lang="EN-US"}[已满]{lang="EN-US" style="font-family:宋体"}
+EVIIS-IS进程ID为*ProcID*的level- *Number* LSP已满
 
-[[The remaining space of level- *Number* fragment 0 LSP is shortage while adding area or protocol support.]{lang="EN-US"}]{#struct_0_17822_17521_x157927740}
+The remaining space of level- *Number* fragment 0 LSP is shortage while adding area or protocol support.
 
-[[当添加区域地址或协议支持时]{lang="EN-US" style="font-family:
-  宋体"}[leve]{lang="EN-US"}]{#struct_0_17822_17521_462733997}[l]{lang="EN-US"}[- *Number*]{lang="EN-US"}[的零分片]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[中剩余空间不足]{lang="EN-US" style="font-family:宋体"}
+当添加区域地址或协议支持时level- *Number*的零分片LSP中剩余空间不足
 
-[[Rebuilding all level- *Number* LSPs Start.]{lang="EN-US"}]{#struct_0_17822_17521_x1684457429}
+Rebuilding all level- *Number* LSPs Start.
 
-[[开始对]{lang="EN-US" style="font-family:
-  宋体"}[leve]{lang="EN-US"}]{#struct_0_17822_17521_905813875}[l]{lang="EN-US"}[- *Number*]{lang="EN-US"}[的所有]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[进行]{lang="EN-US" style="font-family:宋体"}[Rebuild]{lang="EN-US"}[操作]{lang="EN-US" style="font-family:宋体"}
+开始对level- *Number*的所有LSP进行Rebuild操作
 
-[[Rebuilding all level-*Number* LSPs end.]{lang="EN-US"}]{#struct_0_17822_17521_x1412057275}
+Rebuilding all level-*Number* LSPs end.
 
-[[leve]{lang="EN-US"}]{#struct_0_17822_17521_x1948619687}[l]{lang="EN-US"}[-*Number*]{lang="EN-US"}[所有]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Rebuild]{lang="EN-US"}[操作结束]{lang="EN-US" style="font-family:宋体"}
+level-*Number*所有LSP的Rebuild操作结束
 
-[[MTU change triggers rebuild.]{lang="EN-US"}]{#struct_0_17822_17521_1485412812}
+MTU change triggers rebuild.
 
-[[MTU]{lang="EN-US"}]{#struct_0_17822_17521_348818871}[改变触发]{lang="EN-US" style="font-family:宋体"}[Rebuild]{lang="EN-US"}[操作]{lang="EN-US" style="font-family:宋体"}
+MTU改变触发Rebuild操作
 
-[[Attempting to exceed max sequence number.]{lang="EN-US"}]{#struct_0_17822_17521_x355284486}
+Attempting to exceed max sequence number.
 
-[[LSP]{lang="EN-US"}]{#struct_0_17822_17521_x1411729595}[的序列号超过最大值（需要反转）]{style="font-family:宋体"}
+LSP的序列号超过最大值（需要反转）
 
-[[Generating level- *Number* LSP \[*LSPId*.*PseudoId* -*LspNum*\], Seq *SeqNum*, length *LspLen*.]{lang="EN-US"}]{#struct_0_17822_17521_x1014537092}
+Generating level- *Number* LSP *LSPId*.*PseudoId* -*LspNum*, Seq *SeqNum*, length *LspLen*.
 
-[[生成序列号为]{lang="EN-US" style="font-family:
-  宋体"}*[SeqNum]{lang="EN-US"}*[ ]{lang="EN-US"}]{#struct_0_17822_17521_x32594290}[长度为]{lang="EN-US" style="font-family:宋体"}*[LspLen]{lang="EN-US"}*[的]{lang="EN-US" style="font-family:宋体"}[leve]{lang="EN-US"}[l]{lang="EN-US"}[- *Number* LSP\[LSPID.]{lang="EN-US"}[伪节点]{lang="EN-US" style="font-family:宋体"}[ID-]{lang="EN-US"}[分片号]{lang="EN-US" style="font-family:宋体"}[\]]{lang="EN-US"}
+生成序列号为*SeqNum*长度为*LspLen*的level- *Number* LSP[LSPID.伪节点ID-分片号]
 
-[[TLV handle triggers rebuild.]{lang="EN-US"}]{#struct_0_17822_17521_1734535923}
+TLV handle triggers rebuild.
 
-[[LSP]{lang="EN-US"}]{#struct_0_17822_17521_412929394}[处理触发]{lang="EN-US" style="font-family:宋体"}[Rebuild]{lang="EN-US"}[操作]{lang="EN-US" style="font-family:宋体"}
+LSP处理触发Rebuild操作
 
-[[LSP lifetime change triggers rebuild.]{lang="EN-US"}]{#struct_0_17822_17521_x1411664059}
+LSP lifetime change triggers rebuild.
 
-[[LSP]{lang="EN-US"}]{#struct_0_17822_17521_1568717783}[生存时间触发]{lang="EN-US" style="font-family:宋体"}[Rebuild]{lang="EN-US"}[操作]{lang="EN-US" style="font-family:宋体"}
+LSP生存时间触发Rebuild操作
 
-[*[Type ]{lang="EN-US"}*[ level- *Number* area address *String*.]{lang="EN-US"}]{#struct_0_17822_17521_x1673559121}
+*[Type * level- *Number* area address *String*.]
 
-[[为]{lang="EN-US" style="font-family:
-  宋体"}[leve]{lang="EN-US"}]{#struct_0_17822_17521_x1951496804}[l]{lang="EN-US"}[- *Number*]{lang="EN-US"}[操作区域地址，操作类型为]{lang="EN-US" style="font-family:宋体"}*[String]{lang="EN-US"}*
+为level- *Number*操作区域地址，操作类型为*String*
 
-[*[Type]{lang="EN-US"}*]{#struct_0_17822_17521_x1411860667}[的取值如下：]{lang="EN-US" style="font-family:宋体"}
+*[Type*]的取值如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[1]{lang="EN-US"}]{#struct_0_17822_17521_1826553903}[：]{lang="EN-US" style="font-family:宋体"}[Added]{lang="EN-US"}[：添加]{lang="EN-US" style="font-family:宋体"}
+·1：Added：添加
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[2]{lang="EN-US"}]{#struct_0_17822_17521_874942734}[：]{lang="EN-US" style="font-family:宋体"}[Deleted]{lang="EN-US"}[：删除]{lang="EN-US" style="font-family:宋体"}
+·2：Deleted：删除
 
-[[Added level- *Number* protocol support *ProNumber*(*ProString*).]{lang="EN-US"}]{#struct_0_17822_17521_2009011695}
+Added level- *Number* protocol support *ProNumber*(*ProString*).
 
-[[为]{lang="EN-US" style="font-family:
-  宋体"}[leve]{lang="EN-US"}]{#struct_0_17822_17521_x1411795131}[l]{lang="EN-US"}[- *Number*]{lang="EN-US"}[添加支持的协议类型]{lang="EN-US" style="font-family:宋体"}*[ProNumber]{lang="EN-US"}*[(*ProString*)]{lang="EN-US"}
+为level- *Number*添加支持的协议类型*ProNumber*(*ProString*)
 
-[[Deleted level- *Number* protocol support *ProNumber*(*ProString*).]{lang="EN-US"}]{#struct_0_17822_17521_1809779531}
+Deleted level- *Number* protocol support *ProNumber*(*ProString*).
 
-[[为]{lang="EN-US" style="font-family:
-  宋体"}[leve]{lang="EN-US"}]{#struct_0_17822_17521_2112765183}[l]{lang="EN-US"}[- *Number*]{lang="EN-US"}[删除支持的协议类型]{lang="EN-US" style="font-family:宋体"}*[ProNumber]{lang="EN-US"}*[(*ProString*)]{lang="EN-US"}
+为level- *Number*删除支持的协议类型*ProNumber*(*ProString*)
 
-[[Added level- *Number* neighbour: system *systemID* =\> neighbour *neighbourID*.]{lang="EN-US"}]{#struct_0_17822_17521_x1547217330}
+Added level- *Number* neighbour: system *systemID* =\> neighbour *neighbourID*.
 
-[[为]{lang="EN-US" style="font-family:
-  宋体"}[leve]{lang="EN-US"}]{#struct_0_17822_17521_x1411467451}[l]{lang="EN-US"}[- *Number*]{lang="EN-US"}[添加由]{lang="EN-US" style="font-family:宋体"}*[systemID]{lang="EN-US"}*[到]{lang="EN-US" style="font-family:宋体"}*[neighbourID]{lang="EN-US"}*[的邻居信息]{lang="EN-US" style="font-family:宋体"}
+为level- *Number*添加由*systemID*到*neighbourID*的邻居信息
 
-[[Deleted level- *Number* neighbour: system *systemID* =\> neighbour *neighbourID*.]{lang="EN-US"}]{#struct_0_17822_17521_1073747707}
+Deleted level- *Number* neighbour: system *systemID* =\> neighbour *neighbourID*.
 
-[[为]{lang="EN-US" style="font-family:
-  宋体"}[leve]{lang="EN-US"}]{#struct_0_17822_17521_x242582611}[l]{lang="EN-US"}[- *Number*]{lang="EN-US"}[删除由]{lang="EN-US" style="font-family:宋体"}*[systemID]{lang="EN-US"}*[到]{lang="EN-US" style="font-family:宋体"}*[neighbourID]{lang="EN-US"}*[的邻居信息]{lang="EN-US" style="font-family:宋体"}
+为level- *Number*删除由*systemID*到*neighbourID*的邻居信息
 
-[[Modified level- *Number* neighbour: system *systemID* =\> neighbour *neighbourID*.]{lang="EN-US"}]{#struct_0_17822_17521_1747396602}
+Modified level- *Number* neighbour: system *systemID* =\> neighbour *neighbourID*.
 
-[[为]{lang="EN-US" style="font-family:
-  宋体"}[leve]{lang="EN-US"}]{#struct_0_17822_17521_x1411401915}[l]{lang="EN-US"}[- *Number*]{lang="EN-US"}[更新由]{lang="EN-US" style="font-family:宋体"}*[systemID]{lang="EN-US"}*[到]{lang="EN-US" style="font-family:宋体"}*[neighbourID]{lang="EN-US"}*[的邻居信息]{lang="EN-US" style="font-family:宋体"}
+为level- *Number*更新由*systemID*到*neighbourID*的邻居信息
 
-[[Added level- *Number* pseudo neighbour: pseudo *pseudoID* =\> neighbour *neighbourID*.]{lang="EN-US"}]{#struct_0_17822_17521_x2010113722}
+Added level- *Number* pseudo neighbour: pseudo *pseudoID* =\> neighbour *neighbourID*.
 
-[[为]{lang="EN-US" style="font-family:
-  宋体"}[leve]{lang="EN-US"}]{#struct_0_17822_17521_1198318385}[l]{lang="EN-US"}[- *Number*]{lang="EN-US"}[添加由]{lang="EN-US" style="font-family:宋体"}*[pseudoID]{lang="EN-US"}*[到]{lang="EN-US" style="font-family:宋体"}*[neighbourID]{lang="EN-US"}*[的伪节点邻居信息]{lang="EN-US" style="font-family:宋体"}
+为level- *Number*添加由*pseudoID*到*neighbourID*的伪节点邻居信息
 
-[[Deleted level- *Number* pseudo neighbour: pseudo *pseudoID* =\> neighbour *neighbourID*.]{lang="EN-US"}]{#struct_0_17822_17521_1803334640}
+Deleted level- *Number* pseudo neighbour: pseudo *pseudoID* =\> neighbour *neighbourID*.
 
-[[为]{lang="EN-US" style="font-family:
-  宋体"}[leve]{lang="EN-US"}]{#struct_0_17822_17521_x1411991742}[l]{lang="EN-US"}[- *Number*]{lang="EN-US"}[删除由]{lang="EN-US" style="font-family:宋体"}*[pseudoID]{lang="EN-US"}*[到]{lang="EN-US" style="font-family:宋体"}*[neighbourID]{lang="EN-US"}*[的伪节点邻居信息]{lang="EN-US" style="font-family:宋体"}
+为level- *Number*删除由*pseudoID*到*neighbourID*的伪节点邻居信息
 
-[[Failed to add mac address for vlan *Number*]{lang="EN-US"}]{#struct_0_17822_17521_1664986484}
+Failed to add mac address for vlan *Number*
 
-[[添加]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_17822_17521_x1350824370}[为]{style="font-family:宋体"}*[Number]{lang="EN-US"}*[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址失败]{style="font-family:宋体"}
+添加VLAN为*Number*的MAC地址失败
 
-[[Delete mac address for vlan *Number*]{lang="EN-US"}]{#struct_0_17822_17521_x1411926206}
+Delete mac address for vlan *Number*
 
-[[删除]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_17822_17521_x399118366}[为]{style="font-family:宋体"}*[Number]{lang="EN-US"}*[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+删除VLAN为*Number*MAC地址
 
-[[Delete all mac address for vlan *Number*]{lang="EN-US"}]{#struct_0_17822_17521_x1468628796}
+Delete all mac address for vlan *Number*
 
-[[删除]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_17822_17521_x2118132537}[为]{style="font-family:宋体"}*[Number]{lang="EN-US"}*[所有的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+删除VLAN为*Number*所有的MAC地址
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1412122814}
+\# 打开EVI IS-IS本地更新调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17822_17521_245356787}[打开]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[本地更新调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging evi isis self-originate-update
 
-[[\<Sysname\> debugging evi isis self-originate-update]{lang="EN-US"}]{#struct_0_17822_17521_1804658807}
+\*May 27 15:46:13:289 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1;
 
-[\*May 27 15:46:13:289 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1; ]{lang="EN-US"}
+EVIISIS-101-ORG: Generating level-1 LSP [0011.2233.4401.00-00, Seq 0x00000001, length 71.]
 
-[EVIISIS-101-ORG: Generating level-1 LSP \[0011.2233.4401.00-00\], Seq 0x00000001, length 71.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_17822_17521_x689387392}*[生成序列号为]{style="font-family:宋体"}[0x00000001]{lang="EN-US"}[，长度为]{style="font-family:宋体"}[71]{lang="EN-US"}[的]{style="font-family:宋体"}[L1 LSP\[0011.2233.4401.00-00\]]{lang="EN-US"}*
-
-::: {#-1045538911 .myid}
-[]{#_Toc404798227}[]{#struct_0_17822_17521_1382916720}[]{#_Toc312864699}
+*// 生成序列号为0x00000001，长度为71的L1 LSP[0011.2233.4401.00-00]*
 
 **EVI \-- EVI调试命令 \-- debugging evi isis snp-packet**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17822_17521_741826431}
+【命令】
 
-[**[debugging evi isis snp-packet ]{lang="EN-US"}**[\[ **receive** \| **send** \] \[ **verbose** \] \[ *process-id* \]]{lang="EN-US"}]{#struct_0_17822_17521_1862581704}
+**[debugging evi isis snp-packet **[[ **receive** \| **send** ]  **verbose**   *process-id* ]]
 
-[**[undo debugging evi isis snp-packet]{lang="EN-US"}**[ \[ **receive** \| **send** \] \[ *process-id* \]]{lang="EN-US"}]{#struct_0_17822_17521_x221395004}
+**[undo debugging evi isis snp-packet**[ [ **receive** \| **send** ]  *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1412057278}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_17822_17521_x1995673854}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17822_17521_309998734}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17822_17521_1955316643}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17822_17521_x540186226}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1205119702}
+【参数】
 
-[**[receive]{lang="EN-US"}**]{#struct_0_17822_17521_x600390370}[：]{style="font-family:宋体"}[打开接收]{style="font-family:宋体"}[EVI IS-IS SNP]{lang="EN-US"}[报文的调试信息开关。]{style="font-family:宋体"}
+**[receive**]：打开接收EVI IS-IS SNP报文的调试信息开关。
 
-[**[send]{lang="EN-US"}**]{#struct_0_17822_17521_965407001}[：]{style="font-family:宋体"}[打开发送]{style="font-family:宋体"}[EVI IS-IS SNP]{lang="EN-US"}[报文的调试信息开关。]{style="font-family:宋体"}
+**[send**]：打开发送EVI IS-IS SNP报文的调试信息开关。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_17822_17521_313213593}[：表示显示详细信息，对报文来说显示报文内容。]{style="font-family:宋体"}
+**[verbose**]：表示显示详细信息，对报文来说显示报文内容。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17822_17521_x1411729598}[：要打开的调试信息开关的进程]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：要打开的调试信息开关的进程ID。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_17822_17521_101208155}
+【描述】
 
-[**[debugging evi isis snp-packet]{lang="EN-US"}**]{#struct_0_17822_17521_x149057395}[命令用来打开]{style="font-family:
-宋体"}[EVI IS-IS]{lang="EN-US"}[进程的]{style="font-family:
-宋体"}[SNP]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}**[undo]{lang="EN-US"}**[ **debugging evi isis snp-packet**]{lang="EN-US"}[命令用来关闭]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的]{style="font-family:宋体"}[SNP]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}
+**[debugging evi isis snp-packet**]命令用来打开EVI IS-IS进程的SNP报文调试信息开关。**undo** **debugging evi isis snp-packet**命令用来关闭EVI IS-IS进程的SNP报文调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_17822_17521_x1865627302}[进程的]{style="font-family:宋体"}[SNP]{lang="EN-US"}[报文调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，EVI IS-IS进程的SNP报文调试信息开关处于关闭状态。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_17822_17521_1961650934}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果未指定]{style="font-family:宋体"}]{#struct_0_17822_17521_99439495}**[receive]{lang="EN-US"}**[和]{style="font-family:宋体"}**[send]{lang="EN-US"}**[参数，则同时显示打开接收和发送]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的]{style="font-family:宋体"}[SNP]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}
+·如果未指定**receive**和**send**参数，则同时显示打开接收和发送EVI IS-IS进程的SNP报文调试信息开关。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果未指定进程号，则表示打开所有进程的]{style="font-family:宋体"}]{#struct_0_17822_17521_1058950781}[SNP]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}
+·如果未指定进程号，则表示打开所有进程的SNP报文调试信息开关。
 
-[[表1-10 ]{lang="EN-US"}[debugging evi isis snp-packet]{lang="EN-US"}]{#struct_0_17822_17521_x1518656526}[命令输出信息描述表]{style="font-family:黑体"}
+表1-10 debugging evi isis snp-packet命令输出信息描述表
 
-[]{#table_struct_0_1813184520}[[字段]{style="font-family:黑体"}]{#struct_0_17822_17521_x1411664062}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17822_17521_x1516330396}
+描述
 
-[[Receive *PduName* from *SourceId* on circuit *CirName*.]{lang="EN-US"}]{#struct_0_17822_17521_x1868752890}
+Receive *PduName* from *SourceId* on circuit *CirName*.
 
-[[在接口]{style="font-family:宋体"}[CirName]{lang="EN-US"}]{#struct_0_17822_17521_494469161}[上]{style="font-family:宋体"}[收到来自于]{style="font-family:宋体"}[SourceId ]{lang="EN-US"}[的]{style="font-family:宋体"}[PduName]{lang="EN-US"}[，]{style="font-family:宋体"}[PduName]{lang="EN-US"}[的具体取值包括：]{style="font-family:宋体"}
+在接口CirName上收到来自于SourceId 的PduName，PduName的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[L1 CSNP]{lang="EN-US"}]{#struct_0_17822_17521_x1454332875}
+·L1 CSNP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[L1 PSNP]{lang="EN-US"}]{#struct_0_17822_17521_x1411860670}
+·L1 PSNP
 
-[[Receive *PduName* from *SourceId* on circuit *CirName* range from * StartLSPId*.*StartPseudoId* -*StartLspNum* to *EndLSPId*.*EndPseudoId* -*EndLspNum.*]{lang="EN-US"}]{#struct_0_17822_17521_x902263916}
+Receive *PduName* from *SourceId* on circuit *CirName* range from * StartLSPId*.*StartPseudoId* -*StartLspNum* to *EndLSPId*.*EndPseudoId* -*EndLspNum.*
 
-[[在接口]{style="font-family:宋体"}*[CirName]{lang="EN-US"}*]{#struct_0_17822_17521_x1915519964}[上]{style="font-family:宋体"}[收到来自于]{style="font-family:宋体"}*[SourceId]{lang="EN-US"}*[ ]{lang="EN-US"}[的]{style="font-family:宋体"}*[PduName]{lang="EN-US"}*[，范围为起始]{style="font-family:宋体"}[LSPID.]{lang="EN-US"}[伪节点]{style="font-family:宋体"}[ID-]{lang="EN-US"}[分片号，结束]{style="font-family:宋体"}[LSPID.]{lang="EN-US"}[伪节点]{style="font-family:宋体"}[ID-]{lang="EN-US"}[分片号]{style="font-family:宋体"}
+在接口*CirName*上收到来自于*SourceId*的*PduName*，范围为起始LSPID.伪节点ID-分片号，结束LSPID.伪节点ID-分片号
 
-[*[PduName]{lang="EN-US"}*]{#struct_0_17822_17521_x1377164135}[的具体取值包括：]{style="font-family:宋体"}
+*[PduName*]的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[L1 CSNP]{lang="EN-US"}]{#struct_0_17822_17521_x1697852506}
+·L1 CSNP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[L1 PSNP]{lang="EN-US"}]{#struct_0_17822_17521_465781182}
+·L1 PSNP
 
-[[Failed  to process SNP PDU.]{lang="EN-US"}]{#struct_0_17822_17521_x1411795134}
+Failed  to process SNP PDU.
 
-[[处理]{style="font-family:宋体"}[SNP ]{lang="EN-US"}]{#struct_0_17822_17521_1406495004}[报文失败]{style="font-family:宋体"}
+处理SNP 报文失败
 
-[[Not  find current  LSP entry to build CSNP.]{lang="EN-US"}]{#struct_0_17822_17521_712862317}
+Not  find current  LSP entry to build CSNP.
 
-[[没有找到当前的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_17822_17521_x1994557694}[摘要来创建]{style="font-family:宋体"}[CSNP]{lang="EN-US"}
+没有找到当前的LSP摘要来创建CSNP
 
-[[Level-*Number* CSNP  timer expired on a not DED circuit(*String*).]{lang="EN-US"}]{#struct_0_17822_17521_x1411467454}
+Level-*Number* CSNP  timer expired on a not DED circuit(*String*).
 
-[[非]{style="font-family:宋体"}[DED]{lang="EN-US"}]{#struct_0_17822_17521_1833262594}[的接口]{style="font-family:宋体"}*[String]{lang="EN-US"}*[上]{style="font-family:宋体"}[lever- *Number*]{lang="EN-US"}[的]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[定时器超时]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[String]{lang="EN-US"}*[的具体取值包括：接口名]{style="font-family:宋体"}
+非DED的接口*String*上lever- *Number*的CSNP定时器超时，*String*的具体取值包括：接口名
 
-[[Send *PduName* on circuit *String*.]{lang="EN-US"}]{#struct_0_17822_17521_1601109642}
+Send *PduName* on circuit *String*.
 
-[[在接口]{style="font-family:宋体"}*[String]{lang="EN-US"}*]{#struct_0_17822_17521_x1781711551}[上发送]{style="font-family:宋体"}*[PduName]{lang="EN-US"}*[，]{style="font-family:宋体"}*[String]{lang="EN-US"}*[的具体取值包括：接口名]{style="font-family:宋体"}
+在接口*String*上发送*PduName*，*String*的具体取值包括：接口名
 
-[*[PduName]{lang="EN-US"}*]{#struct_0_17822_17521_934182132}[的具体取值包括：]{style="font-family:宋体"}
+*[PduName*]的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[L1 CSNP]{lang="EN-US"}]{#struct_0_17822_17521_x1411401918}
+·L1 CSNP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[L1 PSNP]{lang="EN-US"}]{#struct_0_17822_17521_x1963059555}
+·L1 PSNP
 
-[[Level-*Number* PSNP timer expired on a DED circuit(*String*).]{lang="EN-US"}]{#struct_0_17822_17521_x1462026515}
+Level-*Number* PSNP timer expired on a DED circuit(*String*).
 
-[[DED]{lang="EN-US"}]{#struct_0_17822_17521_1873307396}[接口]{style="font-family:宋体"}*[String]{lang="EN-US"}*[上]{style="font-family:宋体"}[lever- *Number*]{lang="EN-US"}[的]{style="font-family:宋体"}[PSNP]{lang="EN-US"}[定时器超时]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[String]{lang="EN-US"}*[的具体取值包括：接口名]{style="font-family:宋体"}
+DED接口*String*上lever- *Number*的PSNP定时器超时，*String*的具体取值包括：接口名
 
-[[Invalid LSPID  reported in SNP.]{lang="EN-US"}]{#struct_0_17822_17521_x1411991741}
+Invalid LSPID  reported in SNP.
 
-[[SNP]{lang="EN-US"}]{#struct_0_17822_17521_1261701957}[中包含无效的]{style="font-family:宋体"}[LSPID]{lang="EN-US"}
+SNP中包含无效的LSPID
 
-[[Wrong LSP entry TLV length(*TlvLen*) in SNP.]{lang="EN-US"}]{#struct_0_17822_17521_x1889941493}
+Wrong LSP entry TLV length(*TlvLen*) in SNP.
 
-[[SNP]{lang="EN-US"}]{#struct_0_17822_17521_1868242627}[中携带错误的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[摘要]{style="font-family:宋体"}[TLV]{lang="EN-US"}[长度]{style="font-family:宋体"}
+SNP中携带错误的LSP摘要TLV长度
 
-[[SNP contain too much LSP entry.]{lang="EN-US"}]{#struct_0_17822_17521_x1411926205}
+SNP contain too much LSP entry.
 
-[[SNP]{lang="EN-US"}]{#struct_0_17822_17521_x1965202307}[中包含]{style="font-family:宋体"}[LSP]{lang="EN-US"}[摘要的个数超过限制]{style="font-family:宋体"}
+SNP中包含LSP摘要的个数超过限制
 
-[[Wrong TLV length in SNP.]{lang="EN-US"}]{#struct_0_17822_17521_x646616556}
+Wrong TLV length in SNP.
 
-[[SNP]{lang="EN-US"}]{#struct_0_17822_17521_x1122478606}[中携带错误的]{style="font-family:宋体"}[TLV]{lang="EN-US"}[长度]{style="font-family:宋体"}
+SNP中携带错误的TLV长度
 
-[[Invalid TLV in SNP.]{lang="EN-US"}]{#struct_0_17822_17521_x1412122813}
+Invalid TLV in SNP.
 
-[[SNP]{lang="EN-US"}]{#struct_0_17822_17521_x1320727154}[中携带无效的]{style="font-family:宋体"}[TLV]{lang="EN-US"}
+SNP中携带无效的TLV
 
-[[LSP entry *LSPId*.*PseudoId* -*LspNum* processed, older than LSDB copy.]{lang="EN-US"}]{#struct_0_17822_17521_1386256225}
+LSP entry *LSPId*.*PseudoId* -*LspNum* processed, older than LSDB copy.
 
-[[处理]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_17822_17521_x287743768}[摘要]{style="font-family:宋体"}*[LSPId]{lang="EN-US"}*[.*PseudoId* --*LspNum*]{lang="EN-US"}[，比]{style="font-family:
-  宋体"}[LSDB]{lang="EN-US"}[中保存的旧]{style="font-family:宋体"}
+处理LSP摘要*LSPId*.*PseudoId* --*LspNum*，比LSDB中保存的旧
 
-[[LSP  entry *LSPId*.*PseudoId* -*LspNum* processed, newer than LSDB  copy.]{lang="EN-US"}]{#struct_0_17822_17521_x1412057277}
+LSP  entry *LSPId*.*PseudoId* -*LspNum* processed, newer than LSDB  copy.
 
-[[处理]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_17822_17521_1183548195}[摘要]{style="font-family:宋体"}*[LSPId]{lang="EN-US"}*[.*PseudoId* --*LspNum*]{lang="EN-US"}[，比]{style="font-family:
-  宋体"}[LSDB]{lang="EN-US"}[中保存的新]{style="font-family:宋体"}
+处理LSP摘要*LSPId*.*PseudoId* --*LspNum*，比LSDB中保存的新
 
-[[LSP  entry *LSPId*.*PseudoId* -*LspNum* processed, same as LSDB copy.]{lang="EN-US"}]{#struct_0_17822_17521_147051008}
+LSP  entry *LSPId*.*PseudoId* -*LspNum* processed, same as LSDB copy.
 
-[[处理]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_17822_17521_x374918036}[摘要]{style="font-family:宋体"}*[LSPId]{lang="EN-US"}*[.*PseudoId* --*LspNum*]{lang="EN-US"}[，与]{style="font-family:
-  宋体"}[LSDB]{lang="EN-US"}[中保存的新旧相同]{style="font-family:宋体"}
+处理LSP摘要*LSPId*.*PseudoId* --*LspNum*，与LSDB中保存的新旧相同
 
-[[LSP  entry *LSPId*.*PseudoId* -*LspNum* processed, not exist in LSDB.]{lang="EN-US"}]{#struct_0_17822_17521_x1411729597}
+LSP  entry *LSPId*.*PseudoId* -*LspNum* processed, not exist in LSDB.
 
-[[处理]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_17822_17521_2117630790}[摘要]{style="font-family:宋体"}*[LSPId]{lang="EN-US"}*[.*PseudoId* --*LspNum*]{lang="EN-US"}[，在]{style="font-family:
-  宋体"}[LSDB]{lang="EN-US"}[中不存在]{style="font-family:宋体"}
+处理LSP摘要*LSPId*.*PseudoId* --*LspNum*，在LSDB中不存在
 
-[[PSNP not processed, current ED is not DED.]{lang="EN-US"}]{#struct_0_17822_17521_x1351616289}
+PSNP not processed, current ED is not DED.
 
-[[当前]{style="font-family:宋体"}[ED]{lang="EN-US"}]{#struct_0_17822_17521_x1411664061}[不是]{style="font-family:宋体"}[DED]{lang="EN-US"}[，不处理]{style="font-family:宋体"}[PSNP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+当前ED不是DED，不处理PSNP报文
 
-[*[SNPType ]{lang="EN-US"}*[not processed before DED election.]{lang="EN-US"}]{#struct_0_17822_17521_1212552959}
+*[SNPType *not processed before DED election.]
 
-[[在]{style="font-family:宋体"}[DED]{lang="EN-US"}]{#struct_0_17822_17521_519969609}[选举前不处理]{style="font-family:宋体"}*[SNPType]{lang="EN-US"}*[报文，]{style="font-family:宋体"}*[SNPType]{lang="EN-US"}*[的]{style="font-family:宋体"}[具体取值包括：]{style="font-family:宋体"}
+在DED选举前不处理*SNPType*报文，*SNPType*的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[CSNP]{lang="EN-US"}]{#struct_0_17822_17521_x1411860669}
+·CSNP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PSNP]{lang="EN-US"}]{#struct_0_17822_17521_1019984849}
+·PSNP
 
-[[Lsp entry *LSPId*.*PseudoId* -*LspNum* is not loaded in CSNP.]{lang="EN-US"}]{#struct_0_17822_17521_x1807886738}
+Lsp entry *LSPId*.*PseudoId* -*LspNum* is not loaded in CSNP.
 
-[[在]{style="font-family:宋体"}[CSNP]{lang="EN-US"}]{#struct_0_17822_17521_x1411795133}[中没有]{style="font-family:宋体"}[LSP *LSPId*.*PseudoId* --*LspNum*]{lang="EN-US"}[的摘要]{style="font-family:宋体"}
+在CSNP中没有LSP *LSPId*.*PseudoId* --*LspNum*的摘要
 
-[[CSNP not processed on DED.]{lang="EN-US"}]{#struct_0_17822_17521_646980117}
+CSNP not processed on DED.
 
-[[DED]{lang="EN-US"}]{#struct_0_17822_17521_894610409}[上不处理]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+DED上不处理CSNP报文
 
-[[Invalid type of SNP PDU.]{lang="EN-US"}]{#struct_0_17822_17521_1951435545}
+Invalid type of SNP PDU.
 
-[[无效的]{style="font-family:宋体"}[SNP PDU]{lang="EN-US"}]{#struct_0_17822_17521_x1411467453}[类型]{style="font-family:宋体"}
+无效的SNP PDU类型
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17822_17521_x89051707}
+\# 打开接收EVI IS-IS SNP报文调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17822_17521_x2047567196}[打开接收]{style="font-family:宋体"}[EVI IS-IS SNP]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging evi isis snp-packet receive
 
-[[\<Sysname\> debugging evi isis snp-packet receive]{lang="EN-US"}]{#struct_0_17822_17521_292156171}
+\*Dec 19 15:40:51:337 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1;
 
-[\*Dec 19 15:40:51:337 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1;]{lang="EN-US"}
+EVIISIS-0-SNP: Send L1 CSNP on circuit Evi-Link0.
 
-[EVIISIS-0-SNP: Send L1 CSNP on circuit Evi-Link0.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_17822_17521_248618012}*[在]{style="font-family:宋体"}[EVI-Link0]{lang="EN-US"}[上发送]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[的]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文]{style="font-family:宋体"}*
-
-::: {#877426296 .myid}
-[]{#_Toc404798228}[]{#struct_0_17822_17521_549874318}[]{#_Toc312864700}
+*// 在EVI-Link0上发送Level-1的CSNP报文*
 
 **EVI \-- EVI调试命令 \-- debugging evi isis timer**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1413813641}
+【命令】
 
-[**[debugging evi isis]{lang="EN-US"}**[ **timer** \[ *process-id* \]]{lang="EN-US"}]{#struct_0_17822_17521_x1411401917}
+**[debugging evi isis** **timer** [ *process-id* ]]
 
-[**[undo debugging evi isis timer ]{lang="EN-US"}**[\[ *process-id* \]]{lang="EN-US"}]{#struct_0_17822_17521_x847314308}
+**[undo debugging evi isis timer ** *process-id* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17822_17521_227950209}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_17822_17521_x1181085226}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1218827553}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17822_17521_1825911385}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17822_17521_1765975900}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17822_17521_458398123}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17822_17521_154092203}[：要打开的调试信息开关的进程]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：要打开的调试信息开关的进程ID。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_17822_17521_1527994745}
+【描述】
 
-[**[debugging evi isis]{lang="EN-US"}[ timer]{lang="EN-US"}**]{#struct_0_17822_17521_x1273864112}[命令用来打开]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的定时器调试信息开关。]{style="font-family:宋体"}**[undo debugging evi isis]{lang="EN-US"}[ timer]{lang="EN-US"}**[命令用来关闭]{style="font-family:
-宋体"}[EVI IS-IS]{lang="EN-US"}[进程的定时器调试信息开关。]{style="font-family:
-宋体"}
+**[debugging evi isis timer**]命令用来打开EVI IS-IS进程的定时器调试信息开关。**undo debugging evi isis timer**命令用来关闭EVI IS-IS进程的定时器调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_17822_17521_2101815384}[进程的定时器调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，EVI IS-IS进程的定时器调试信息开关处于关闭状态。
 
-[[需要注意的是，如果未指定进程号，则表示打开所有进程的定时器调试信息开关。]{style="font-family:宋体"}]{#struct_0_17822_17521_x1174119056}
+需要注意的是，如果未指定进程号，则表示打开所有进程的定时器调试信息开关。
 
-[[表1-11 ]{lang="EN-US"}[debugging evi isis timer]{lang="EN-US"}]{#struct_0_17822_17521_1831042796}[命令输出信息描述表]{style="font-family:黑体"}
+表1-11 debugging evi isis timer命令输出信息描述表
 
-[]{#table_struct_0_1845410536}[[字段]{style="font-family:黑体"}]{#struct_0_17822_17521_190512712}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17822_17521_x1674673766}
+描述
 
-[[Start *Type* timer, value is *value*]{lang="EN-US"}]{#struct_0_17822_17521_154157739}
+Start *Type* timer, value is *value*
 
-[[启动]{style="font-family:宋体"}]{#struct_0_17822_17521_765459506}*[Type]{lang="EN-US"}*[定时器，时间为]{style="font-family:宋体"}*[value]{lang="EN-US"}*[，]{style="font-family:宋体"}*[Type]{lang="EN-US"}*[的取值可以如下：]{style="font-family:宋体"}
+启动*Type*定时器，时间为*value*，*Type*的取值可以如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[T2]{lang="EN-US"}]{#struct_0_17822_17521_x476593158}
+·T2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[T3]{lang="EN-US"}]{#struct_0_17822_17521_1183151872}
+·T3
 
-[[Reset *Type* timer, value is *value*]{lang="EN-US"}]{#struct_0_17822_17521_x259527695}
+Reset *Type* timer, value is *value*
 
-[[重置]{lang="EN-US" style="font-family:宋体"}*[Type]{lang="EN-US"}*]{#struct_0_17822_17521_x63585738}[定时器，时间为]{lang="EN-US" style="font-family:宋体"}*[value]{lang="EN-US"}*[，]{style="font-family:宋体"}*[Type]{lang="EN-US"}*[的取值可以如下]{lang="EN-US" style="font-family:宋体"}[：]{style="font-family:
-  宋体"}
+重置*Type*定时器，时间为*value*，*Type*的取值可以如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[T2]{lang="EN-US"}]{#struct_0_17822_17521_153961131}
+·T2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[T3]{lang="EN-US"}]{#struct_0_17822_17521_1770823742}
+·T3
 
-[[Level-*Number* adjacency hold SystemId timer expired on the circuit *PortName*]{lang="EN-US"}]{#struct_0_17822_17521_x1105352547}
+Level-*Number* adjacency hold SystemId timer expired on the circuit *PortName*
 
-[[接口]{lang="EN-US" style="font-family:宋体"}*[PortName]{lang="EN-US"}*]{#struct_0_17822_17521_x1143001908}[下的]{lang="EN-US" style="font-family:宋体"}[level-*Number*]{lang="EN-US"}[的邻居定时器超时]{lang="EN-US" style="font-family:宋体"}
+接口*PortName*下的level-*Number*的邻居定时器超时
 
-[[Level-*Number*  hello timer expired on the circuit *PortName*]{lang="EN-US"}]{#struct_0_17822_17521_416041902}
+Level-*Number*  hello timer expired on the circuit *PortName*
 
-[[接口]{lang="EN-US" style="font-family:宋体"}*[PortName]{lang="EN-US"}*]{#struct_0_17822_17521_154026667}[下的]{lang="EN-US" style="font-family:宋体"}[level-*Number*]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[H]{lang="EN-US"}[ello]{lang="EN-US"}[定时器超时]{lang="EN-US" style="font-family:宋体"}
+接口*PortName*下的level-*Number*的Hello定时器超时
 
-[[Starting waiting timer for max sequence num exceed, time value is *value* ms.]{lang="EN-US"}]{#struct_0_17822_17521_x1935964040}
+Starting waiting timer for max sequence num exceed, time value is *value* ms.
 
-[[启动]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_17822_17521_447849037}[序列号达到最大值的翻转等待定时器，定时器时长为]{style="font-family:宋体"}[value]{lang="EN-US"}[毫秒]{style="font-family:宋体"}
+启动LSP序列号达到最大值的翻转等待定时器，定时器时长为value毫秒
 
-[[Level-*Number* CSNP * *timer expired on the circuit *String*.]{lang="EN-US"}]{#struct_0_17822_17521_x1329454965}
+Level-*Number* CSNP * *timer expired on the circuit *String*.
 
-[[接口]{style="font-family:宋体"}*[String]{lang="EN-US"}*]{#struct_0_17822_17521_x1395977476}[下的]{style="font-family:宋体"}[level- *Number* CSNP]{lang="EN-US"}[定时器超时，]{style="font-family:宋体"}*[String]{lang="EN-US"}*[的具体取值包括：接口名]{style="font-family:宋体"}
+接口*String*下的level- *Number* CSNP定时器超时，*String*的具体取值包括：接口名
 
-[[Level- *Number* flood timer expired on the circuit *String*.]{lang="EN-US"}]{#struct_0_17822_17521_154354347}
+Level- *Number* flood timer expired on the circuit *String*.
 
-[[接口]{style="font-family:宋体"}*[String]{lang="EN-US"}*]{#struct_0_17822_17521_1782697620}[下的]{style="font-family:宋体"}[level-]{lang="EN-US"}*[ Number]{lang="EN-US"}*[泛洪定时器超时，]{style="font-family:宋体"}*[String]{lang="EN-US"}*[的具体取值包括：接口名]{style="font-family:宋体"}
+接口*String*下的level-* Number*泛洪定时器超时，*String*的具体取值包括：接口名
 
-[[Level- *Number* LSP \[*LSPId*.*PseudoId* -*LspNum*\] gen timer expired.]{lang="EN-US"}]{#struct_0_17822_17521_863884542}
+Level- *Number* LSP *LSPId*.*PseudoId* -*LspNum* gen timer expired.
 
-[[leve]{lang="EN-US"}]{#struct_0_17822_17521_x69277530}[l]{lang="EN-US"}[-]{lang="EN-US"}*[ Number]{lang="EN-US"}*[的]{lang="EN-US" style="font-family:宋体"}[LSP\[LSPID.]{lang="EN-US"}[伪节点]{lang="EN-US" style="font-family:宋体"}[ID-]{lang="EN-US"}[分片号]{lang="EN-US" style="font-family:宋体"}[\]]{lang="EN-US"}[生成定时器超时]{lang="EN-US" style="font-family:宋体"}
+level-* Number*的LSP[LSPID.伪节点ID-分片号]生成定时器超时
 
-[[Start level- *Number* LSP \[*LSPId*.*PseudoId* -*LspNum*\] gen timer, time vlaue is *TimeValue*(ms).]{lang="EN-US"}]{#struct_0_17822_17521_154419883}
+Start level- *Number* LSP *LSPId*.*PseudoId* -*LspNum* gen timer, time vlaue is *TimeValue*(ms).
 
-[[启动]{style="font-family:宋体"}[level-]{lang="EN-US"}*[ Number ]{lang="EN-US"}*]{#struct_0_17822_17521_2029447311}[的]{style="font-family:宋体"}[LSP\[LSPID.]{lang="EN-US"}[伪节点]{style="font-family:宋体"}[ID-]{lang="EN-US"}[分片号]{style="font-family:宋体"}[\]]{lang="EN-US"}[生成定时器，定时器时长为]{style="font-family:宋体"}*[TimeValue]{lang="EN-US"}*[(]{lang="EN-US"}[单位毫秒]{style="font-family:宋体"}[)]{lang="EN-US"}
+启动level-* Number *的LSP[LSPID.伪节点ID-分片号]生成定时器，定时器时长为*TimeValue*(单位毫秒)
 
-[[Stop level- *Number* LSP \[*LSPId*.*PseudoId* -*LspNum*\] gen timer.]{lang="EN-US"}]{#struct_0_17822_17521_958706505}
+Stop level- *Number* LSP *LSPId*.*PseudoId* -*LspNum* gen timer.
 
-[[停止]{lang="EN-US" style="font-family:宋体"}[leve]{lang="EN-US"}]{#struct_0_17822_17521_x424748027}[l]{lang="EN-US"}[-]{lang="EN-US"}*[ Number]{lang="EN-US"}*[的]{lang="EN-US" style="font-family:宋体"}[LSP\[LSPID.]{lang="EN-US"}[伪节点]{lang="EN-US" style="font-family:宋体"}[ID-]{lang="EN-US"}[分片号]{lang="EN-US" style="font-family:宋体"}[\]]{lang="EN-US"}[生成定时器]{lang="EN-US" style="font-family:宋体"}
+停止level-* Number*的LSP[LSPID.伪节点ID-分片号]生成定时器
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17822_17521_x212752811}
+\# 打开EVI IS-IS定时器调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17822_17521_x1819219573}[打开]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[定时器调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging evi isis timer
 
-[[\<Sysname\> debugging evi isis timer]{lang="EN-US"}]{#struct_0_17822_17521_154223275}
+\*Dec 20 10:18:29:955 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1;
 
-[\*Dec 20 10:18:29:955 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1;]{lang="EN-US"}
+EVIISIS-0-TMR: Level-1 hello timer expired on the circuit Evi-Link0.
 
-[EVIISIS-0-TMR: Level-1 hello timer expired on the circuit Evi-Link0.]{lang="EN-US"}
-
-[*[// EVI-Link0]{lang="EN-US"}*]{#struct_0_17822_17521_x545039642}*[上的]{style="font-family:宋体"}[Lever-1 Hello]{lang="EN-US"}[报文发送定时器超时]{style="font-family:宋体"}*
-
-::: {#-1939460375 .myid}
-[]{#_Toc404798229}[]{#struct_0_17822_17521_x350803496}[]{#_Toc312864701}
+*[// EVI-Link0*]*上的Lever-1 Hello报文发送定时器超时*
 
 **EVI \-- EVI调试命令 \-- debugging evi isis update-packet**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17822_17521_x519662269}
+【命令】
 
-[**[debugging evi isis update-packet]{lang="EN-US"}**[ \[ **receive** \| **send** \] \[ **verbose** \] \[ *process-id* \]]{lang="EN-US"}]{#struct_0_17822_17521_1680730538}
+**[debugging evi isis update-packet**[ [ **receive** \| **send** ]  **verbose**   *process-id* ]]
 
-[**[undo debugging evi isis update-packet]{lang="EN-US"}**[ \[ **receive** \| **send** \] \[ *process-id* \]]{lang="EN-US"}]{#struct_0_17822_17521_x1138657523}
+**[undo debugging evi isis update-packet**[ [ **receive** \| **send** ]  *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17822_17521_771513081}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_17822_17521_x98899074}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17822_17521_154288811}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17822_17521_1336862630}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17822_17521_x1053819574}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17822_17521_219967265}
+【参数】
 
-[**[receive]{lang="EN-US"}**]{#struct_0_17822_17521_x561355971}[：]{style="font-family:宋体"}[打开接收]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[更新模块报文的调试信息开关。]{style="font-family:宋体"}
+**[receive**]：打开接收EVI IS-IS更新模块报文的调试信息开关。
 
-[**[send]{lang="EN-US"}**]{#struct_0_17822_17521_85026818}[：]{style="font-family:宋体"}[打开发送]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[更新模块报文的调试信息开关。]{style="font-family:宋体"}
+**[send**]：打开发送EVI IS-IS更新模块报文的调试信息开关。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_17822_17521_503875983}[：表示显示详细信息，对报文来说显示报文内容。]{style="font-family:宋体"}
+**[verbose**]：表示显示详细信息，对报文来说显示报文内容。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17822_17521_1024668926}[：要打开的调试信息开关的进程]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：要打开的调试信息开关的进程ID。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_17822_17521_860215412}
+【描述】
 
-[**[debugging evi isis update-packet]{lang="EN-US"}**]{#struct_0_17822_17521_154616491}[命令用来打开]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的更新模块报文调试信息开关。]{style="font-family:宋体"}**[undo]{lang="EN-US"}**[ **debugging evi isis update-packet**]{lang="EN-US"}[命令用来关闭]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的更新模块报文调试信息开关。]{style="font-family:宋体"}
+**[debugging evi isis update-packet**]命令用来打开EVI IS-IS进程的更新模块报文调试信息开关。**undo** **debugging evi isis update-packet**命令用来关闭EVI IS-IS进程的更新模块报文调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_17822_17521_1986490697}[进程的更新模块报文调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，EVI IS-IS进程的更新模块报文调试信息开关处于关闭状态。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_17822_17521_x30509323}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果未指定]{style="font-family:宋体"}]{#struct_0_17822_17521_x1947567132}**[receive]{lang="EN-US"}**[和]{style="font-family:宋体"}**[send]{lang="EN-US"}**[参数，则同时打开接收和发送]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程更新模块报文调试信息开关。]{style="font-family:宋体"}
+·如果未指定**receive**和**send**参数，则同时打开接收和发送EVI IS-IS进程更新模块报文调试信息开关。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果未指定进程，则表示打开所有进程的更新模块报文调试信息开关。]{style="font-family:宋体"}]{#struct_0_17822_17521_1897368518}
+·如果未指定进程，则表示打开所有进程的更新模块报文调试信息开关。
 
-[[表1-12 ]{lang="EN-US"}[debugging evi isis update-packet]{lang="EN-US"}]{#struct_0_17822_17521_1924576249}[命令输出信息描述表]{style="font-family:黑体"}
+表1-12 debugging evi isis update-packet命令输出信息描述表
 
-[]{#table_struct_0_1840603528}[[字段]{style="font-family:黑体"}]{#struct_0_17822_17521_x1552463357}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17822_17521_154682027}
+描述
 
-[[Flooding *PduName* *LSPId*.*PseudoId* -*LspNum* on circuit *String*.]{lang="EN-US"}]{#struct_0_17822_17521_x418495788}
+Flooding *PduName* *LSPId*.*PseudoId* -*LspNum* on circuit *String*.
 
-[[在接口]{style="font-family:宋体"}*[String]{lang="EN-US"}*]{#struct_0_17822_17521_x1650970506}[上泛洪]{style="font-family:宋体"}*[PduName]{lang="EN-US"}*[（]{style="font-family:宋体"}*[LSPId]{lang="EN-US"}*[.*PseudoId* -*LspNum*]{lang="EN-US"}[），]{style="font-family:
-  宋体"}*[String]{lang="EN-US"}*[的具体取值包括：接口名，]{style="font-family:
-  宋体"}*[PduName]{lang="EN-US"}*[的具体取值包括：]{style="font-family:宋体"}
+在接口*String*上泛洪*PduName*（*LSPId*.*PseudoId* -*LspNum*），*String*的具体取值包括：接口名，*PduName*的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[L1 LSP]{lang="EN-US"}]{#struct_0_17822_17521_x1955466534}
+·L1 LSP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[L1 CSNP]{lang="EN-US"}]{#struct_0_17822_17521_1201072473}
+·L1 CSNP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[L1 PSNP]{lang="EN-US"}]{#struct_0_17822_17521_x1837811015}
+·L1 PSNP
 
-[*[Type]{lang="EN-US"}*[ *PduName* lspid= *LSPId*.*PseudoId* -*LspNum* seq=*Sequence* ht=*HoldTime* from snpa *SnpaAddr* on circuit *String*.]{lang="EN-US"}]{#struct_0_17822_17521_154092204}
+*[Type* *PduName* lspid= *LSPId*.*PseudoId* -*LspNum* seq=*Sequence* ht=*HoldTime* from snpa *SnpaAddr* on circuit *String*.]
 
-[[在接口]{style="font-family:宋体"}*[String]{lang="EN-US"}*]{#struct_0_17822_17521_1527994748}[上从地址]{style="font-family:宋体"}*[SnpaAddr]{lang="EN-US"}*[ *type*]{lang="EN-US"}[序列号为]{style="font-family:宋体"}*[Sequence]{lang="EN-US"}*[，时间为]{style="font-family:宋体"}*[HoldTime]{lang="EN-US"}*[的]{style="font-family:宋体"}*[PduName]{lang="EN-US"}*[，]{style="font-family:宋体"}[lspid= *LSPId*.*PseudoId* -*LspNum* seq]{lang="EN-US"}[，]{style="font-family:宋体"}*[String]{lang="EN-US"}*[的具体取值包括：接口名，]{style="font-family:宋体"}
+在接口*String*上从地址*SnpaAddr* *type*序列号为*Sequence*，时间为*HoldTime*的*PduName*，lspid= *LSPId*.*PseudoId* -*LspNum* seq，*String*的具体取值包括：接口名，
 
-[*[type]{lang="EN-US"}*]{#struct_0_17822_17521_x1274060720}[的具体取值包括：]{style="font-family:宋体"}
+*[type*]的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Receive]{lang="EN-US"}]{#struct_0_17822_17521_x1548807693}[：接收]{lang="EN-US" style="font-family:宋体"}
+·Receive：接收
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Send]{lang="EN-US"}]{#struct_0_17822_17521_x112177023}[：发送]{lang="EN-US" style="font-family:宋体"}
+·Send：发送
 
-[*[PduName]{lang="EN-US"}*]{#struct_0_17822_17521_154157740}[的具体取值包括：]{style="font-family:宋体"}
+*[PduName*]的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[L1 LSP]{lang="EN-US"}]{#struct_0_17822_17521_1957100587}
+·L1 LSP
 
-[*[Type remot]{lang="EN-US"}*[e address*(*vlan *Number:* MAC *MacAddr)*]{lang="EN-US"}]{#struct_0_17822_17521_x1036245782}
+*[Type remot*e address*(*vlan *Number:* MAC *MacAddr)*]
 
-[[对远程地址操作，]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_17822_17521_168536056}[为]{style="font-family:宋体"}*[Number]{lang="EN-US"}*[，]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为]{style="font-family:宋体"}*[MacAddr]{lang="EN-US"}*[。其中]{style="font-family:宋体"}*[Type]{lang="EN-US"}*[可以取值如下：]{style="font-family:宋体"}
+对远程地址操作，VLAN为*Number*，MAC地址为*MacAddr*。其中*Type*可以取值如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Add]{lang="EN-US"}]{#struct_0_17822_17521_1335981974}[：添加]{lang="EN-US" style="font-family:宋体"}
+·Add：添加
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Delete]{lang="EN-US"}]{#struct_0_17822_17521_153961132}[：删除]{lang="EN-US" style="font-family:宋体"}
+·Delete：删除
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Modify]{lang="EN-US"}]{#struct_0_17822_17521_1770823739}[：修改]{lang="EN-US" style="font-family:宋体"}
+·Modify：修改
 
-[[LSP\'s sequence number is 0]{lang="EN-US"}]{#struct_0_17822_17521_x1104631652}
+LSP\'s sequence number is 0
 
-[[LSP]{lang="EN-US"}]{#struct_0_17822_17521_1672727757}[报文的序列号为]{style="font-family:宋体"}[0]{lang="EN-US"}
+LSP报文的序列号为0
 
-[[Illegal is-type in level-1 LSP]{lang="EN-US"}]{#struct_0_17822_17521_x1824162905}
+Illegal is-type in level-1 LSP
 
-[[无效的类型在]{style="font-family:宋体"}[Level-1]{lang="EN-US"}]{#struct_0_17822_17521_154026668}[的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+无效的类型在Level-1的LSP报文
 
-[[Check sum is zero]{lang="EN-US"}]{#struct_0_17822_17521_x1935964051}
+Check sum is zero
 
-[[校验和为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_17822_17521_x1118300440}
+校验和为0
 
-[[Check sum error]{lang="EN-US"}]{#struct_0_17822_17521_x199252050}
+Check sum error
 
-[[校验和错误]{style="font-family:宋体"}]{#struct_0_17822_17521_154354348}
+校验和错误
 
-[[Invalid extended is reachability TLV]{lang="EN-US"}]{#struct_0_17822_17521_1782697631}
+Invalid extended is reachability TLV
 
-[[不支持的]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_17822_17521_863819007}
+不支持的TLV
 
-[[Support protocol mismatch]{lang="EN-US"}]{#struct_0_17822_17521_1431121609}
+Support protocol mismatch
 
-[[支持的协议不匹配]{style="font-family:宋体"}]{#struct_0_17822_17521_154419884}
+支持的协议不匹配
 
-[[LSP with more than *Count* area addr(es)]{lang="EN-US"}]{#struct_0_17822_17521_2029447314}
+LSP with more than *Count* area addr(es)
 
-[[LSP]{lang="EN-US"}]{#struct_0_17822_17521_958509897}[中区域地址数量超过最大值]{style="font-family:宋体"}
+LSP中区域地址数量超过最大值
 
-[[LSP with wrong area addr length *Length*]{lang="EN-US"}]{#struct_0_17822_17521_x1413746648}
+LSP with wrong area addr length *Length*
 
-[[LSP]{lang="EN-US"}]{#struct_0_17822_17521_154223276}[中区域地址长度错误，长度为]{style="font-family:宋体"}*[Length]{lang="EN-US"}*
+LSP中区域地址长度错误，长度为*Length*
 
-[[Lsp with wrong area addr *AreaAddr*]{lang="EN-US"}]{#struct_0_17822_17521_x545039645}
+Lsp with wrong area addr *AreaAddr*
 
-[[LSP]{lang="EN-US"}]{#struct_0_17822_17521_x351000104}[中区域地址错误，地址为]{style="font-family:宋体"}*[AreaAddr]{lang="EN-US"}*
+LSP中区域地址错误，地址为*AreaAddr*
 
-[[Invalid mac reachability TLV]{lang="EN-US"}]{#struct_0_17822_17521_154288812}
+Invalid mac reachability TLV
 
-[[无效的]{style="font-family:宋体"}[mac TLV]{lang="EN-US"}]{#struct_0_17822_17521_1336862631}
+无效的mac TLV
 
-[[Wrong encoding of area address TLV in LSP]{lang="EN-US"}]{#struct_0_17822_17521_x1053754038}
+Wrong encoding of area address TLV in LSP
 
-[[错误的区域地址]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_17822_17521_x109658980}[在]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文中]{style="font-family:宋体"}
+错误的区域地址TLV在LSP报文中
 
-[[Bad TLV length in the received LSP]{lang="EN-US"}]{#struct_0_17822_17521_154616492}
+Bad TLV length in the received LSP
 
-[[收到]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_17822_17521_1986490700}[报文中错误的]{style="font-family:宋体"}[TLV]{lang="EN-US"}[长度]{style="font-family:宋体"}
+收到LSP报文中错误的TLV长度
 
-[[Own LSP *LSP ID*-*LSP Seq* processed, newer than LSDB copy]{lang="EN-US"}]{#struct_0_17822_17521_x1987152146}
+Own LSP *LSP ID*-*LSP Seq* processed, newer than LSDB copy
 
-[[处理本地生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_17822_17521_154682028}[报文序列号比]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[中新]{style="font-family:宋体"}
+处理本地生成的LSP报文序列号比LSDB中新
 
-[[Other LSP *LSP ID*-*LSP Seq*  processed, newer than LSDB copy]{lang="EN-US"}]{#struct_0_17822_17521_x418495787}
+Other LSP *LSP ID*-*LSP Seq*  processed, newer than LSDB copy
 
-[[处理非本地的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_17822_17521_x1651036042}[报文]{style="font-family:宋体"}[,]{lang="EN-US"}[序列号比]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[中新]{style="font-family:宋体"}
+处理非本地的LSP报文,序列号比LSDB中新
 
-[[LSP  *LSP ID*-*LSP Seq* processed, older than LSDB copy]{lang="EN-US"}]{#struct_0_17822_17521_154092201}
+LSP  *LSP ID*-*LSP Seq* processed, older than LSDB copy
 
-[[处理]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_17822_17521_1527994743}[报文，序列号比]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[中旧]{style="font-family:宋体"}
+处理LSP报文，序列号比LSDB中旧
 
-[[LSP *LSP ID*-*LSP Seq*  processed, same as LSDB copy]{lang="EN-US"}]{#struct_0_17822_17521_x1273470896}
+LSP *LSP ID*-*LSP Seq*  processed, same as LSDB copy
 
-[[处理]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_17822_17521_154157737}[报文，序列号与]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[中相同]{style="font-family:宋体"}
+处理LSP报文，序列号与LSDB中相同
 
-[*[String ]{lang="EN-US"}*[ LSP *LSP ID*-*LSP Seq* processed, no exist in LSDB]{lang="EN-US"}]{#struct_0_17822_17521_765459496}
+*[String * LSP *LSP ID*-*LSP Seq* processed, no exist in LSDB]
 
-[[处理]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_17822_17521_x1233373035}[报文，]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[中不存在，报文类型为]{style="font-family:宋体"}*[String]{lang="EN-US"}*[，]{style="font-family:宋体"}*[Sting]{lang="EN-US"}*[的取值可以为：]{style="font-family:宋体"}
+处理LSP报文，LSDB中不存在，报文类型为*String*，*Sting*的取值可以为：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[other]{lang="EN-US"}]{#struct_0_17822_17521_153961129}[：非本地的]{lang="EN-US" style="font-family:宋体"}
+·other：非本地的
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[own]{lang="EN-US"}]{#struct_0_17822_17521_x185491386}[：本地的]{lang="EN-US" style="font-family:宋体"}
+·own：本地的
 
-[[PDU size(*Size*) is greater than receive buffer size(*SizeBuf*),ignoring PDU]{lang="EN-US"}]{#struct_0_17822_17521_x427116147}
+PDU size(*Size*) is greater than receive buffer size(*SizeBuf*),ignoring PDU
 
-[[收到的]{style="font-family:宋体"}[PDU]{lang="EN-US"}]{#struct_0_17822_17521_154026665}[大小]{style="font-family:宋体"}[(*Size*)]{lang="EN-US"}[大于接收缓冲区大小]{style="font-family:宋体"}[(*SizeBuf*)]{lang="EN-US"}[，丢弃报文]{style="font-family:宋体"}
+收到的PDU大小(*Size*)大于接收缓冲区大小(*SizeBuf*)，丢弃报文
 
-[[PDU size(*Size*) is less than common PDU header size(*Len*),ignoring PDU]{lang="EN-US"}]{#struct_0_17822_17521_x1935964038}
+PDU size(*Size*) is less than common PDU header size(*Len*),ignoring PDU
 
-[[收到的]{style="font-family:宋体"}[PDU]{lang="EN-US"}]{#struct_0_17822_17521_803882789}[大小]{style="font-family:宋体"}[(*Size*)]{lang="EN-US"}[小于]{style="font-family:宋体"}[PDU]{lang="EN-US"}[正常的报文头长度]{style="font-family:宋体"}[(*Length)*]{lang="EN-US"}[，丢弃]{style="font-family:宋体"}[PDU]{lang="EN-US"}[报文]{style="font-family:宋体"}
+收到的PDU大小(*Size*)小于PDU正常的报文头长度(*Length)*，丢弃PDU报文
 
-[[PDU size *Size*) is less than fixed PDU header size(*Len*),ignoring PDU]{lang="EN-US"}]{#struct_0_17822_17521_154354345}
+PDU size *Size*) is less than fixed PDU header size(*Len*),ignoring PDU
 
-[[收到的]{style="font-family:宋体"}[PDU]{lang="EN-US"}]{#struct_0_17822_17521_1782697618}[大小]{style="font-family:宋体"}[(*Size*)]{lang="EN-US"}[小于]{style="font-family:宋体"}[PDU]{lang="EN-US"}[填充的报文头长度]{style="font-family:宋体"}[(*Length)*]{lang="EN-US"}[，丢弃]{style="font-family:宋体"}[PDU]{lang="EN-US"}[报文]{style="font-family:宋体"}
+收到的PDU大小(*Size*)小于PDU填充的报文头长度(*Length)*，丢弃PDU报文
 
-[[PDU length mismatch: recvLen = *RecvLength*, encodeLen = *EncodeLenght*,ignoring PDU]{lang="EN-US"}]{#struct_0_17822_17521_863360257}
+PDU length mismatch: recvLen = *RecvLength*, encodeLen = *EncodeLenght*,ignoring PDU
 
-[[收到的]{style="font-family:宋体"}[PDU]{lang="EN-US"}]{#struct_0_17822_17521_154419881}[长度]{style="font-family:宋体"}*[RecvLength]{lang="EN-US"}*[与报文中指示的长度]{style="font-family:宋体"}*[EncodeLenght]{lang="EN-US"}*[不匹配，丢弃报文]{style="font-family:宋体"}
+收到的PDU长度*RecvLength*与报文中指示的长度*EncodeLenght*不匹配，丢弃报文
 
-[[SNPA address of PDU is the same as the local circuit(*PortName*), ignoring PDU]{lang="EN-US"}]{#struct_0_17822_17521_2029447309}
+SNPA address of PDU is the same as the local circuit(*PortName*), ignoring PDU
 
-[[在接口]{style="font-family:宋体"}*[PortName]{lang="EN-US"}*]{#struct_0_17822_17521_959230792}[上收到的]{style="font-family:宋体"}[PDU]{lang="EN-US"}[报文中]{style="font-family:宋体"}[SNPA]{lang="EN-US"}[的地址与本地一样，丢弃]{style="font-family:宋体"}[PDU]{lang="EN-US"}[报文]{style="font-family:宋体"}
+在接口*PortName*上收到的PDU报文中SNPA的地址与本地一样，丢弃PDU报文
 
-[[EVI-ISIS process is under disable, ignoring PDU]{lang="EN-US"}]{#struct_0_17822_17521_154223273}
+EVI-ISIS process is under disable, ignoring PDU
 
-[[EVI IS-IS]{lang="EN-US"}]{#struct_0_17822_17521_x545039648}[进程处于]{style="font-family:宋体"}[disable]{lang="EN-US"}[状态，丢弃]{style="font-family:宋体"}[PDU]{lang="EN-US"}[报文]{style="font-family:宋体"}
+EVI IS-IS进程处于disable状态，丢弃PDU报文
 
-[[Failed to Check received packet]{lang="EN-US"}]{#struct_0_17822_17521_x350148136}
+Failed to Check received packet
 
-[[检测接收到的报文失败]{style="font-family:宋体"}]{#struct_0_17822_17521_154288809}
+检测接收到的报文失败
 
-[[LSP or SNP PDU common header error, ignoring  PDU]{lang="EN-US"}]{#struct_0_17822_17521_x1001789522}
+LSP or SNP PDU common header error, ignoring  PDU
 
-[[LSP]{lang="EN-US"}]{#struct_0_17822_17521_154616489}[或]{style="font-family:宋体"}[SNP]{lang="EN-US"}[通用报文头错误，丢弃报文]{style="font-family:宋体"}
+LSP或SNP通用报文头错误，丢弃报文
 
-[[Received PDU level mismatch]{lang="EN-US"}]{#struct_0_17822_17521_x352161471}
+Received PDU level mismatch
 
-[[收到的]{style="font-family:宋体"}[PDU]{lang="EN-US"}]{#struct_0_17822_17521_914914662}[报文级别不匹配]{style="font-family:宋体"}
+收到的PDU报文级别不匹配
 
-[[No active neighbour with such snpa(*SnpaAddr*) on the cicuit(*PortName*), ignoring PDU]{lang="EN-US"}]{#struct_0_17822_17521_154682025}
+No active neighbour with such snpa(*SnpaAddr*) on the cicuit(*PortName*), ignoring PDU
 
-[[没有激活的邻居地址是]{style="font-family:宋体"}*[SnpaAddr]{lang="EN-US"}*]{#struct_0_17822_17521_x418495790}[在接口]{style="font-family:宋体"}*[PortName]{lang="EN-US"}*[上，丢弃报文]{style="font-family:宋体"}
+没有激活的邻居地址是*SnpaAddr*在接口*PortName*上，丢弃报文
 
-[[Failed to processLSP PDU]{lang="EN-US"}]{#struct_0_17822_17521_x1651494795}
+Failed to processLSP PDU
 
-[[处理]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_17822_17521_154092202}[报文失败]{style="font-family:宋体"}
+处理LSP报文失败
 
-[[Received PDU is not LSP or SNP, ignoring PDU]{lang="EN-US"}]{#struct_0_17822_17521_1527994746}
+Received PDU is not LSP or SNP, ignoring PDU
 
-[[收到的]{style="font-family:宋体"}[PDU]{lang="EN-US"}]{#struct_0_17822_17521_154157738}[报文不是]{style="font-family:宋体"}[LSP]{lang="EN-US"}[或]{style="font-family:宋体"}[SNP]{lang="EN-US"}[报文，丢弃报文]{style="font-family:宋体"}
+收到的PDU报文不是LSP或SNP报文，丢弃报文
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17822_17521_765459507}
+\# 打开接收EVI IS-IS 更新模块报文调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17822_17521_x476593159}[打开接收]{style="font-family:宋体"}[EVI IS-IS ]{lang="EN-US"}[更新模块报文调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging evi isis update-packet receive
 
-[[\<Sysname\> debugging evi isis update-packet receive]{lang="EN-US"}]{#struct_0_17822_17521_1183217408}
+\*Jun  8 08:31:21:994 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1;
 
-[\*Jun  8 08:31:21:994 2011 Sysname EVIISIS/7/EVIISIS DBG: -MDC=1; ]{lang="EN-US"}
+EVIISIS-101-UPDT: Received PDU level mismatch.
 
-[EVIISIS-101-UPDT: Received PDU level mismatch.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_17822_17521_x1089677947}*[收到的]{style="font-family:宋体"}[PDU]{lang="EN-US"}[报文级别不匹配]{style="font-family:宋体"}*
-
-::: {#155479855 .myid}
-[]{#_Toc404798230}[]{#struct_0_17822_17521_x659616273}[]{#_Toc309053976}[]{#_Toc303421794}
+*// 收到的PDU报文级别不匹配*
 
 **EVI \-- EVI调试命令 \-- debugging evi mac-address**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17822_17521_153961130}
+【命令】
 
-[**[debugging evi mac-address]{lang="EN-US"}**]{#struct_0_17822_17521_1770823741}[ { **info** \| **isis** }]{lang="EN-US"}
+**[debugging evi mac-address**  { **info** \| **isis** }]
 
-[**[undo debugging evi mac-address]{lang="EN-US"}**]{#struct_0_17822_17521_x1105155939}[ { **info** \| **isis** }]{lang="EN-US"}
+**[undo debugging evi mac-address**  { **info** \| **isis** }]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17822_17521_x563295146}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_17822_17521_1858234276}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17822_17521_x615034136}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17822_17521_1639490599}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17822_17521_x887614305}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17822_17521_x592636008}
+【参数】
 
-[**[info]{lang="EN-US"}**]{#struct_0_17822_17521_154026666}[：表示下驱动调试信息开关。]{style="font-family:宋体"}
+**[info**]：表示下驱动调试信息开关。
 
-[**[isis]{lang="EN-US"}**]{#struct_0_17822_17521_x1935964041}[：表示来自]{style="font-family:宋体"}[EVI ]{lang="EN-US"}[IS-IS]{lang="EN-US"}[模块消息的调试信息开关。]{style="font-family:
-宋体"}
+**[isis**]：表示来自EVI IS-IS模块消息的调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1118234904}
+【描述】
 
-[**[debugging evi ]{lang="EN-US"}**]{#struct_0_17822_17521_1646364916}**[mac-address]{lang="EN-US"}**[命令用来打开]{style="font-family:宋体"}[EVI MAC]{lang="EN-US"}[模块的调试信息开关。]{style="font-family:宋体"}**[undo debugging evi ]{lang="EN-US"}[mac-address]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[EVI MAC]{lang="EN-US"}[模块的调试信息开关。]{style="font-family:宋体"}
+**[debugging evi **]**mac-address**命令用来打开EVI MAC模块的调试信息开关。**undo debugging evi mac-address**命令用来关闭EVI MAC模块的调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[EVI MAC]{lang="EN-US"}]{#struct_0_17822_17521_2056810891}[的所有调试信息开关均处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，EVI MAC的所有调试信息开关均处于关闭状态。
 
-[[表1-13 ]{lang="EN-US"}[debugging evi mac-address info]{lang="EN-US"}]{#struct_0_17822_17521_x534112367}[命令]{style="font-family:黑体"}[输出信息描述表]{style="font-family:黑体"}
+表1-13 debugging evi mac-address info命令输出信息描述表
 
-[]{#table_struct_0_1859601160}[[字段]{style="font-family:黑体"}]{#struct_0_17822_17521_x665924797}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17822_17521_154354346}
+描述
 
-[*[interface-name]{lang="EN-US"}*[: Set selective-flooding MAC address *mac-address* successfully.]{lang="EN-US"}]{#struct_0_17822_17521_1782697621}
+*[interface-name*: Set selective-flooding MAC address *mac-address* successfully.]
 
-[[设置隧道接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_17822_17521_863819006}[的泛洪]{style="font-family:宋体"}[MAC]{lang="EN-US"}[信息成功]{style="font-family:宋体"}
+设置隧道接口*interface-name*的泛洪MAC信息成功
 
-[*[interface-name]{lang="EN-US"}*[: Failed to set selective-flooding MAC address *mac-address*.]{lang="EN-US"}]{#struct_0_17822_17521_1431121608}
+*[interface-name*: Failed to set selective-flooding MAC address *mac-address*.]
 
-[[设置隧道接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_17822_17521_x2140299167}[的泛洪]{style="font-family:宋体"}[MAC]{lang="EN-US"}[信息失败]{style="font-family:宋体"}
+设置隧道接口*interface-name*的泛洪MAC信息失败
 
-[*[interface-name]{lang="EN-US"}*[: Failed to set selective-flooding MAC address *mac-address* due to insufficient hardware resources.]{lang="EN-US"}]{#struct_0_17822_17521_x827545835}
+*[interface-name*: Failed to set selective-flooding MAC address *mac-address* due to insufficient hardware resources.]
 
-[[由于硬件资源不足，设置隧道接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_17822_17521_154419882}[的泛洪]{style="font-family:宋体"}[MAC]{lang="EN-US"}[信息失败]{style="font-family:宋体"}
+由于硬件资源不足，设置隧道接口*interface-name*的泛洪MAC信息失败
 
-[*[interface-name]{lang="EN-US"}*[: Set *type* information successfully.]{lang="EN-US"}]{#struct_0_17822_17521_2029447312}
+*[interface-name*: Set *type* information successfully.]
 
-[[设置隧道接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*[ *type*]{lang="EN-US"}]{#struct_0_17822_17521_958640969}[信息成功，]{style="font-family:宋体"}*[type]{lang="EN-US"}*[的取值以及含义如下：]{style="font-family:宋体"}
+设置隧道接口*interface-name* *type*信息成功，*type*的取值以及含义如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[extern VLAN]{lang="EN-US"}]{#struct_0_17822_17521_1538417745}[：扩展]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}
+·extern VLAN：扩展VLAN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[active VLAN]{lang="EN-US"}]{#struct_0_17822_17521_x1324370239}[：激活]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}
+·active VLAN：激活VLAN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[inactive VLAN]{lang="EN-US"}]{#struct_0_17822_17521_154223274}[：非激活]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}
+·inactive VLAN：非激活VLAN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MAC request]{lang="EN-US"}]{#struct_0_17822_17521_x545039643}[：本地]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址请求]{lang="EN-US" style="font-family:宋体"}
+·MAC request：本地MAC地址请求
 
-[*[interface-name]{lang="EN-US"}*[: Failed to set *type* information.]{lang="EN-US"}]{#struct_0_17822_17521_x350869032}
+*[interface-name*: Failed to set *type* information.]
 
-[[设置隧道接口]{style="font-family:宋体"}*[interface-name type]{lang="EN-US"}*]{#struct_0_17822_17521_1767842635}[信息失败，]{style="font-family:宋体"}*[type]{lang="EN-US"}*[的取值以及含义如下：]{style="font-family:宋体"}
+设置隧道接口*interface-name type*信息失败，*type*的取值以及含义如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[extern VLAN]{lang="EN-US"}]{#struct_0_17822_17521_154288810}[：扩展]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}
+·extern VLAN：扩展VLAN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[active VLAN]{lang="EN-US"}]{#struct_0_17822_17521_1336862629}[：激活]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}
+·active VLAN：激活VLAN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[inactive VLAN]{lang="EN-US"}]{#struct_0_17822_17521_x1054278325}[：非激活]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}
+·inactive VLAN：非激活VLAN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MAC request]{lang="EN-US"}]{#struct_0_17822_17521_1747627953}[：本地]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址请求]{lang="EN-US" style="font-family:宋体"}
+·MAC request：本地MAC地址请求
 
-[*[interface-name]{lang="EN-US"}*[: Failed to set *type* information due to insufficient hardware resources.]{lang="EN-US"}]{#struct_0_17822_17521_x1733952375}
+*[interface-name*: Failed to set *type* information due to insufficient hardware resources.]
 
-[[由于硬件资源不足，设置隧道接口]{style="font-family:宋体"}*[interface-name type]{lang="EN-US"}*]{#struct_0_17822_17521_154616490}[信息失败，]{style="font-family:宋体"}*[type]{lang="EN-US"}*[的取值以及含义如下：]{style="font-family:宋体"}
+由于硬件资源不足，设置隧道接口*interface-name type*信息失败，*type*的取值以及含义如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[extern VLAN]{lang="EN-US"}]{#struct_0_17822_17521_1986490698}[：扩展]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}
+·extern VLAN：扩展VLAN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[active VLAN]{lang="EN-US"}]{#struct_0_17822_17521_x31361291}[：激活]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}
+·active VLAN：激活VLAN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[inactive VLAN]{lang="EN-US"}]{#struct_0_17822_17521_716630440}[：非激活]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}
+·inactive VLAN：非激活VLAN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MAC request]{lang="EN-US"}]{#struct_0_17822_17521_154682026}[：本地]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址请求]{lang="EN-US" style="font-family:宋体"}
+·MAC request：本地MAC地址请求
 
-[ ]{lang="EN-US"}
+表1-14 debugging evi mac-address isis命令输出信息描述表
 
-[[表1-14 ]{lang="EN-US"}[debugging evi mac-address isis]{lang="EN-US"}]{#struct_0_17822_17521_x418495789}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1860328904}[[字段]{style="font-family:黑体"}]{#struct_0_17822_17521_x1650904970}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17822_17521_204684899}
+*[interface-name*: Received a(an) *type* message from ISIS.]
 
-[*[interface-name]{lang="EN-US"}*[: Received a(an) *type* message from ISIS.]{lang="EN-US"}]{#struct_0_17822_17521_846977838}
+隧道接口*interface-name*从EVI IS-IS接收到*type*消息，*type*的取值以及含义如下：
 
-[[隧道接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_17822_17521_x1801664398}[从]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[接收到]{style="font-family:宋体"}*[type]{lang="EN-US"}*[消息，]{style="font-family:宋体"}*[type]{lang="EN-US"}*[的取值以及含义如下：]{style="font-family:宋体"}
+·extern VLAN：扩展VLAN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[extern VLAN]{lang="EN-US"}]{#struct_0_17822_17521_154092199}[：扩展]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}
+·active VLAN：激活VLAN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[active VLAN]{lang="EN-US"}]{#struct_0_17822_17521_1934014288}[：激活]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}
+·inactive VLAN：非激活VLAN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[inactive VLAN]{lang="EN-US"}]{#struct_0_17822_17521_x1407958361}[：非激活]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}
+·MAC request：本地MAC地址请求
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MAC request]{lang="EN-US"}]{#struct_0_17822_17521_920534927}[：本地]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址请求]{lang="EN-US" style="font-family:宋体"}
+【举例】
 
-[ ]{lang="EN-US"}
+\# 打开EVI MAC模块来自EVI IS-IS模块消息的调试信息开关，如果接收到激活VLAN的信息，则会打印如下信息：
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17822_17521_x207922297}
+\<Sysname\> debugging evi mac-address isis
 
-[[\# ]{lang="EN-US"}]{#struct_0_17822_17521_x641595238}[打开]{style="font-family:宋体"}[EVI MAC]{lang="EN-US"}[模块]{style="font-family:宋体"}[来自]{style="font-family:宋体"}[EVI ]{lang="EN-US"}[IS-IS]{lang="EN-US"}[模块消息的调试信息开关]{style="font-family:
-宋体"}[，如果接收到激活]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的信息，则会打印如下信息：]{style="font-family:宋体"}
+\*Feb 24 10:50:19:644 2011 Sysname EVIMAC/7/ISIS: -MDC=1; Tunnel101: Received an active VLAN message from ISIS.
 
-[[\<Sysname\> debugging evi mac-address isis]{lang="EN-US"}]{#struct_0_17822_17521_154157735}
+*// 隧道接口Tunnel101从EVI IS-IS接收到激活VLAN消息*
 
-[\*Feb 24 10:50:19:644 2011 Sysname EVIMAC/7/ISIS: -MDC=1; Tunnel101: Received an active VLAN message from ISIS.]{lang="EN-US"}
+\# 打开EVI MAC模块下驱动调试信息开关，配置泛洪MAC时会打印如下驱动信息：
 
-[*[// ]{lang="EN-US"}*]{#struct_0_17822_17521_765459494}*[隧道接口]{style="font-family:宋体"}[Tunnel101]{lang="EN-US"}[从]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[接收到激活]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[消息]{style="font-family:宋体"}*
+\<Sysname\> debugging evi mac-address info
 
-[ ]{lang="EN-US"}
+\<Sysname\> system-view
 
-[[\# ]{lang="EN-US"}]{#struct_0_17822_17521_x1233373033}[打开]{style="font-family:宋体"}[EVI MAC]{lang="EN-US"}[模块]{style="font-family:宋体"}[下驱动调试信息开关]{style="font-family:宋体"}[，配置泛洪]{style="font-family:宋体"}[MAC]{lang="EN-US"}[时会打印如下驱动信息：]{style="font-family:宋体"}
+Sysname interface tunnel 101
 
-[[\<Sysname\> debugging evi mac-address info]{lang="EN-US"}]{#struct_0_17822_17521_x96970990}
+Sysname-tunnel101 evi selective-flooding mac-address 1113-1113-1113 vlan 1
 
-[\<Sysname\> system-view]{lang="EN-US"}
+\*Feb 24 10:50:19:644 2011 Sysname EVIMAC/7/INFO: -MDC=1; Tunnel101: Set selective-flooding MAC address 1113-1113-1113 successfully.
 
-[\[Sysname\] interface tunnel 101]{lang="EN-US"}
+*// 设置隧道接口Tunnel101的泛洪MAC信息成功*
 
-[\[Sysname-tunnel101\] evi selective-flooding mac-address 1113-1113-1113 vlan 1]{lang="EN-US"}
+\# 打开EVI MAC模块下驱动调试信息开关，如果激活VLAN的信息下发驱动，则会打印如下信息：
 
-[\*Feb 24 10:50:19:644 2011 Sysname EVIMAC/7/INFO: -MDC=1; Tunnel101: Set selective-flooding MAC address 1113-1113-1113 successfully.]{lang="EN-US"}
+\<Sysname\> debugging evi mac-address info
 
-[*[// ]{lang="EN-US"}*]{#struct_0_17822_17521_x1649807062}*[设置隧道接口]{style="font-family:宋体"}[Tunnel101]{lang="EN-US"}[的泛洪]{style="font-family:宋体"}[MAC]{lang="EN-US"}[信息成功]{style="font-family:宋体"}*
+\*Feb 24 10:50:19:644 2011 Sysname EVIMAC/7/INFO: -MDC=1; Tunnel101: Set an active VLAN information successfully.
 
-[ ]{lang="EN-US"}
-
-[[\# ]{lang="EN-US"}]{#struct_0_17822_17521_645587428}[打开]{style="font-family:宋体"}[EVI MAC]{lang="EN-US"}[模块]{style="font-family:宋体"}[下驱动调试信息开关]{style="font-family:宋体"}[，如果激活]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的信息下发驱动，则会打印如下信息：]{style="font-family:宋体"}
-
-[[\<Sysname\> debugging evi mac-address info]{lang="EN-US"}]{#struct_0_17822_17521_153961127}
-
-[\*Feb 24 10:50:19:644 2011 Sysname EVIMAC/7/INFO: -MDC=1; Tunnel101: Set an active VLAN information successfully.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_17822_17521_x185491400}*[设置隧道接口]{style="font-family:宋体"}[Tunnel101]{lang="EN-US"}[激活]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[信息成功]{style="font-family:宋体"}*
-
-::: {#-2058376723 .myid}
-[]{#_Toc404798231}[]{#struct_0_17822_17521_x2001487483}
+*// 设置隧道接口Tunnel101激活VLAN信息成功*
 
 **EVI \-- EVI调试命令 \-- debugging evi neighbor-discovery client**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17822_17521_1946964607}
+【命令】
 
-[**[debugging evi neighbor-discovery client]{lang="EN-US"}**[ { **all** \| **entry** \| **error** \| **event** \| **packet** }]{lang="EN-US"}]{#struct_0_17822_17521_x1203539901}
+**[debugging evi neighbor-discovery client**[ { **all** \| **entry** \| **error** \| **event** \| **packet** }]]
 
-[**[undo debugging evi neighbor-discovery client]{lang="EN-US"}**[ { **all** \| **entry** \| **error** \| **event** \| **packet** }]{lang="EN-US"}]{#struct_0_17822_17521_674717757}
+**[undo debugging evi neighbor-discovery client**[ { **all** \| **entry** \| **error** \| **event** \| **packet** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17822_17521_253091563}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_17822_17521_x1930903480}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17822_17521_154026663}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17822_17521_x1935964044}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17822_17521_x1521519431}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17822_17521_x322277827}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_17822_17521_x877491175}[：表示所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示所有调试信息开关。
 
-[**[entry]{lang="EN-US"}**]{#struct_0_17822_17521_1245220329}[：表示表项调试信息开关。]{style="font-family:宋体"}
+**[entry**]：表示表项调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_17822_17521_x1885846506}[：表示]{style="font-family:宋体"}[错误调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[error**]：表示错误调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_17822_17521_x724081329}[：表示]{style="font-family:宋体"}[事件调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[event**]：表示事件调试信息开关。
 
-[**[packet]{lang="EN-US"}**]{#struct_0_17822_17521_x523143920}[：表示]{style="font-family:宋体"}[报文调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[packet**]：表示报文调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_17822_17521_154354343}
+【描述】
 
-[**[debugging evi neighbor-discovery client]{lang="EN-US"}**]{#struct_0_17822_17521_1782697624}[命令用来打开]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}**[undo debugging evi neighbor-discovery client ]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}
+**[debugging evi neighbor-discovery client**]命令用来打开ENDC调试信息开关。**undo debugging evi neighbor-discovery client **命令用来关闭ENDC调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[ENDC]{lang="EN-US"}]{#struct_0_17822_17521_864146686}[调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，ENDC调试信息开关处于关闭状态。
 
-[[表1-15 ]{lang="EN-US"}[debugging evi neighbor-discovery client entry]{lang="EN-US"}]{#struct_0_17822_17521_x1467244202}[命令输出信息描述表]{style="font-family:黑体"}
+表1-15 debugging evi neighbor-discovery client entry命令输出信息描述表
 
-[]{#table_struct_0_1855275208}[[字段]{style="font-family:黑体"}]{#struct_0_17822_17521_505358237}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17822_17521_1636379455}
+描述
 
-[[Failed to find the server node.]{lang="EN-US"}]{#struct_0_17822_17521_x745912963}
+Failed to find the server node.
 
-[[查找服务器节点失败]{style="font-family:宋体"}]{#struct_0_17822_17521_154419879}
+查找服务器节点失败
 
-[*[operate-name]{lang="EN-US"}*[: interface= *if-name*, network ID= *netid-value*, IP address= *ipaddr-value.*]{lang="EN-US"}]{#struct_0_17822_17521_1984817285}
+*[operate-name*: interface= *if-name*, network ID= *netid-value*, IP address= *ipaddr-value.*]
 
-[[操作表项信息，接口为]{style="font-family:宋体"}*[if-name]{lang="EN-US"}*]{#struct_0_17822_17521_2046612547}[，网络]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[netid-value]{lang="EN-US"}*[，]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*
+操作表项信息，接口为*if-name*，网络ID为*netid-value*，IP地址为*ip-address*
 
-[*[operate-name]{lang="EN-US"}*]{#struct_0_17822_17521_1631669861}[的取值可能为：]{style="font-family:宋体"}
+*[operate-name*]的取值可能为：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Added neighbor]{lang="EN-US"}]{#struct_0_17822_17521_1237861647}[：添加邻居节点]{lang="EN-US" style="font-family:宋体"}
+·Added neighbor：添加邻居节点
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Deleted neighbor]{lang="EN-US"}]{#struct_0_17822_17521_154223271}[：删除邻居节点]{lang="EN-US" style="font-family:
-  宋体"}
+·Deleted neighbor：删除邻居节点
 
-[[·[       ]{style="font:7.0pt "}]{lang="NO-BOK" style="font-size:10.0pt;font-family:Symbol"}[Added server node]{lang="NO-BOK"}]{#struct_0_17822_17521_x545039646}[：]{lang="EN-US" style="font-family:
-  宋体"}[添加]{lang="EN-US" style="font-family:宋体"}[服务器节点]{lang="EN-US" style="font-family:宋体"}[ ]{lang="EN-US"}
+·Added server node：添加服务器节点
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Deleted server node]{lang="EN-US"}]{#struct_0_17822_17521_x351065640}[：删除服务器节点]{lang="EN-US" style="font-family:
-  宋体"}
+·Deleted server node：删除服务器节点
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Added dummy]{lang="EN-US"}]{#struct_0_17822_17521_x512185702}[：添加]{lang="EN-US" style="font-family:宋体"}[Dummy]{lang="EN-US"}[节点]{lang="EN-US" style="font-family:宋体"}
+·Added dummy：添加Dummy节点
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Deleted dummy]{lang="EN-US"}]{#struct_0_17822_17521_2060333034}[：删除]{lang="EN-US" style="font-family:宋体"}[Dummy]{lang="EN-US"}[节点]{lang="EN-US" style="font-family:宋体"}
+·Deleted dummy：删除Dummy节点
 
-[[Added tunnel: interface= *if-name*, peer address= *ipaddr-value.*]{lang="EN-US"}]{#struct_0_17822_17521_154288807}
+Added tunnel: interface= *if-name*, peer address= *ipaddr-value.*
 
-[[添加隧道：接口为]{style="font-family:宋体"}*[if-name]{lang="EN-US"}*]{#struct_0_17822_17521_x1001789524}[，对端]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}*[ipaddr-value]{lang="EN-US"}*
+添加隧道：接口为*if-name*，对端IP地址为*ipaddr-value*
 
-[[Deleted tunnel: interface= *if-name*, peer address= *ipaddr-value.*]{lang="EN-US"}]{#struct_0_17822_17521_1385499513}
+Deleted tunnel: interface= *if-name*, peer address= *ipaddr-value.*
 
-[[删除隧道：接口为]{style="font-family:宋体"}*[ii-name]{lang="EN-US"}*]{#struct_0_17822_17521_x542226768}[，对端]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}*[ipaddr-value]{lang="EN-US"}*
+删除隧道：接口为*ii-name*，对端IP地址为*ipaddr-value*
 
-[ ]{lang="EN-US"}
+表1-16 debugging evi neighbor-discovery client error命令输出信息描述表
 
-[[表1-16 ]{lang="EN-US"}[debugging evi neighbor-discovery client error]{lang="EN-US"}]{#struct_0_17822_17521_1429099779}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1857310632}[[字段]{style="font-family:黑体"}]{#struct_0_17822_17521_1417563480}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17822_17521_154616487}
+Failed to create run info.
 
-[[Failed to create run info.]{lang="EN-US"}]{#struct_0_17822_17521_x352161457}
+创建运行信息失败
 
-[[创建运行信息失败]{style="font-family:宋体"}]{#struct_0_17822_17521_915045736}
+Failed to create hash.
 
-[[Failed to create hash.]{lang="EN-US"}]{#struct_0_17822_17521_4133366}
+创建hash失败
 
-[[创建]{style="font-family:宋体"}[hash]{lang="EN-US"}]{#struct_0_17822_17521_x1280042106}[失败]{style="font-family:宋体"}
+Failed to start ENDP service.
 
-[[Failed to start ENDP service.]{lang="EN-US"}]{#struct_0_17822_17521_x110266962}
+启动ENDP服务失败
 
-[[启动]{style="font-family:宋体"}[ENDP]{lang="EN-US"}]{#struct_0_17822_17521_154682023}[服务失败]{style="font-family:宋体"}
+Failed to create tunnel connection.
 
-[[Failed to create tunnel connection.]{lang="EN-US"}]{#struct_0_17822_17521_x418495792}
+创建与隧道的连接失败
 
-[[创建与隧道的连接失败]{style="font-family:宋体"}]{#struct_0_17822_17521_x1651363723}
+表1-17 debugging evi neighbor-discovery client event命令输出信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表1-17 ]{lang="EN-US"}[debugging evi neighbor-discovery client event]{lang="EN-US"}]{#struct_0_17822_17521_1326429231}[命令输出信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_1850953352}[[字段]{style="font-family:黑体"}]{#struct_0_17822_17521_x1208726320}
+Created *timer-name* timer: timer interval= *time-value*; timer ID= *id-value*.
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17822_17521_x597574204}
+创建*timer-name*定时器，时间间隔为*time-value*，定时器ID为*id-value*
 
-[[Created *timer-name* timer: timer interval= *time-value*; timer ID= *id-value*.]{lang="EN-US"}]{#struct_0_17822_17521_154092200}
+*[timer-name*]的取值可能为：
 
-[[创建]{style="font-family:宋体"}*[timer-name]{lang="EN-US"}*]{#struct_0_17822_17521_1527994744}[定时器，时间间隔为]{style="font-family:宋体"}*[time-value]{lang="EN-US"}*[，定时器]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[id-value]{lang="EN-US"}*
+·register：注册定时器
 
-[*[timer-name]{lang="EN-US"}*]{#struct_0_17822_17521_x1273798576}[的取值可能为：]{style="font-family:宋体"}
+·LIPC reconnect：LIPC重连定时器
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[register]{lang="EN-US"}]{#struct_0_17822_17521_729593949}[：注册定时器]{lang="EN-US" style="font-family:宋体"}
+·neighbor aging：邻居老化定时器
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LIPC reconnect]{lang="EN-US"}]{#struct_0_17822_17521_x2122504554}[：]{lang="EN-US" style="font-family:宋体"}[LIPC]{lang="EN-US"}[重连定时器]{lang="EN-US" style="font-family:宋体"}
+Modified register timer: timer interval= *time-value.*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[neighbor ]{lang="EN-US"}]{#struct_0_17822_17521_x1786981349}[aging]{lang="EN-US"}[：邻居老化定时器]{lang="EN-US" style="font-family:宋体"}
+修改注册定时器的时间间隔为*time-value*
 
-[[Modified register timer: timer interval= *time-value.*]{lang="EN-US"}]{#struct_0_17822_17521_154157736}
+Deleted *timer-name* timer: timer ID= *id-value*.
 
-[[修改注册定时器的时间间隔为]{style="font-family:宋体"}*[time-value]{lang="EN-US"}*]{#struct_0_17822_17521_765459497}
+删除*timer-name*定时器，定时器ID为*id-value*
 
-[[Deleted *timer-name* timer: timer ID= *id-value*.]{lang="EN-US"}]{#struct_0_17822_17521_x1233373036}
+*[timer-name*]的取值可能为：
 
-[[删除]{style="font-family:宋体"}*[timer-name]{lang="EN-US"}*]{#struct_0_17822_17521_x856485877}[定时器，定时器]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[id-value]{lang="EN-US"}*
+·register：注册定时器
 
-[*[timer-name]{lang="EN-US"}*]{#struct_0_17822_17521_x778851449}[的取值可能为：]{style="font-family:宋体"}
+·LIPC reconnect：LIPC重连定时器
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[register]{lang="EN-US"}]{#struct_0_17822_17521_153961128}[：注册定时器]{lang="EN-US" style="font-family:宋体"}
+·neighbor aging：邻居老化定时器
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LIPC reconnect]{lang="EN-US"}]{#struct_0_17822_17521_x185491387}[：]{lang="EN-US" style="font-family:宋体"}[LIPC]{lang="EN-US"}[重连定时器]{lang="EN-US" style="font-family:宋体"}
+Received EVI tunnel restart event.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[neighbor ]{lang="EN-US"}]{#struct_0_17822_17521_x427181683}[aging]{lang="EN-US"}[：邻居老化定时器]{lang="EN-US" style="font-family:宋体"}
+收到EVI隧道重启事件
 
-[[Received EVI tunnel restart event.]{lang="EN-US"}]{#struct_0_17822_17521_2032170344}
+Started ENDP service.
 
-[[收到]{style="font-family:宋体"}[EVI]{lang="EN-US"}]{#struct_0_17822_17521_x845281227}[隧道重启事件]{style="font-family:宋体"}
+启动ENDP服务
 
-[[Started ENDP service.]{lang="EN-US"}]{#struct_0_17822_17521_154026664}
+Started smoothing neighbor information.
 
-[[启动]{style="font-family:宋体"}[ENDP]{lang="EN-US"}]{#struct_0_17822_17521_x1935964039}[服务]{style="font-family:宋体"}
+开始平滑邻居信息
 
-[[Started smoothing neighbor information.]{lang="EN-US"}]{#struct_0_17822_17521_x762201152}
+Finished smoothing neighbor information.
 
-[[开始平滑邻居信息]{style="font-family:宋体"}]{#struct_0_17822_17521_x989948615}
+邻居信息平滑结束
 
-[[Finished smoothing neighbor information.]{lang="EN-US"}]{#struct_0_17822_17521_154354344}
+Stopped ENDP service.
 
-[[邻居信息平滑结束]{style="font-family:宋体"}]{#struct_0_17822_17521_1782697619}
+停止ENDP服务
 
-[[Stopped ENDP service.]{lang="EN-US"}]{#struct_0_17822_17521_863294721}
+*[if-name* received interface *event-name*.]
 
-[[停止]{style="font-family:宋体"}[ENDP]{lang="EN-US"}]{#struct_0_17822_17521_1106891258}[服务]{style="font-family:宋体"}
+接口*if-name*收到接口事件，事件类型为*event-name*
 
-[*[if-name]{lang="EN-US"}*[ received interface *event-name*.]{lang="EN-US"}]{#struct_0_17822_17521_x1158768768}
+*[event-name*]的取值可能为：
 
-[[接口]{style="font-family:宋体"}*[if-name]{lang="EN-US"}*]{#struct_0_17822_17521_154419880}[收到接口事件，事件类型为]{style="font-family:宋体"}*[event-name]{lang="EN-US"}*
+·up event：接口up
 
-[*[event-name]{lang="EN-US"}*]{#struct_0_17822_17521_2029447310}[的取值可能为：]{style="font-family:宋体"}
+·down event：接口down
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[up event]{lang="EN-US"}]{#struct_0_17822_17521_958772041}[：接口]{lang="EN-US" style="font-family:宋体"}[u]{lang="EN-US"}[p]{lang="EN-US"}
+·create event：接口创建
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[down event]{lang="EN-US"}]{#struct_0_17822_17521_154223272}[：接口]{lang="EN-US" style="font-family:宋体"}[d]{lang="EN-US"}[own]{lang="EN-US"}
+·delete event：接口删除
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[create event]{lang="EN-US"}]{#struct_0_17822_17521_x545039649}[：接口创建]{lang="EN-US" style="font-family:宋体"}
+表1-18 debugging evi neighbor-discovery client packet命令输出信息描述表
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[delete event]{lang="EN-US"}]{#struct_0_17822_17521_x350213672}[：接口删除]{lang="EN-US" style="font-family:宋体"}
+字段
 
-[ ]{lang="EN-US"}
+描述
 
-[[表1-18 ]{lang="EN-US"}[debugging evi neighbor-discovery client packet]{lang="EN-US"}]{#struct_0_17822_17521_x908880881}[命令输出信息描述表]{style="font-family:黑体"}
+Interface *if-name* received a packet: packet type= *type-value*, networkID= *netid-value*, server address= *ipaddr-value*.
 
-[]{#table_struct_0_1852470568}[[字段]{style="font-family:黑体"}]{#struct_0_17822_17521_x1606618642}
+接口*if-name*收到一个报文：报文类型为*type-value*，对应的网络ID为*netid-value*，服务器IP地址为*ipaddr-value*
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17822_17521_154288808}
+*[type-value*]的取值可能为：
 
-[[Interface *if-name* received a packet: packet type= *type-value*, networkID= *netid-value*, server address= *ipaddr-value*.]{lang="EN-US"}]{#struct_0_17822_17521_x1001789523}
+·3：注册报文
 
-[[接口]{style="font-family:宋体"}*[if-name]{lang="EN-US"}*]{#struct_0_17822_17521_2145014400}[收到一个报文：报文类型为]{style="font-family:宋体"}*[type-value]{lang="EN-US"}*[，对应的网络]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[netid-value]{lang="EN-US"}*[，服务器]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}*[ipaddr-value]{lang="EN-US"}*
+·4：注册应答报文
 
-[*[type-value]{lang="EN-US"}*]{#struct_0_17822_17521_x1567595287}[的取值可能为：]{style="font-family:宋体"}
+·5：注销报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[3]{lang="EN-US"}]{#struct_0_17822_17521_1065378408}[：注册报文]{lang="EN-US" style="font-family:宋体"}
+·6：错误指示报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[4]{lang="EN-US"}]{#struct_0_17822_17521_321105687}[：注册应答报文]{lang="EN-US" style="font-family:宋体"}
+Interface *if-name* Sent a packet: packet type= *type-value*, networkID= *netid-value*, server address= *ipaddr-value*.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[5]{lang="EN-US"}]{#struct_0_17822_17521_154616488}[：注销报文]{lang="EN-US" style="font-family:宋体"}
+接口*if-name*发送一个报文：报文类型为*type-value*，对应的网络ID为*netid-value*，服务器IP地址为*ipaddr-value*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[6]{lang="EN-US"}]{#struct_0_17822_17521_x352161470}[：错误指示报文]{lang="EN-US" style="font-family:宋体"}
+*[type-value*]的取值可能为：
 
-[[Interface *if-name* Sent a packet: packet type= *type-value*, networkID= *netid-value*, server address= *ipaddr-value*.]{lang="EN-US"}]{#struct_0_17822_17521_914849126}
+·3：注册报文
 
-[[接口]{style="font-family:宋体"}*[if-name]{lang="EN-US"}*]{#struct_0_17822_17521_x1889479277}[发送一个报文：报文类型为]{style="font-family:宋体"}*[type-value]{lang="EN-US"}*[，对应的网络]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[netid-value]{lang="EN-US"}*[，服务器]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}*[ipaddr-value]{lang="EN-US"}*
+·4：注册应答报文
 
-[*[type-value]{lang="EN-US"}*]{#struct_0_17822_17521_1591061420}[的取值可能为：]{style="font-family:宋体"}
+·5：注销报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[3]{lang="EN-US"}]{#struct_0_17822_17521_154682024}[：注册报文]{lang="EN-US" style="font-family:宋体"}
+·6：错误指示报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[4]{lang="EN-US"}]{#struct_0_17822_17521_x418495791}[：注册应答报文]{lang="EN-US" style="font-family:宋体"}
+Peer info: IP address= *ipaddr-value*, system ID= *macaddr-value*.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[5]{lang="EN-US"}]{#struct_0_17822_17521_x1651429259}[：注销报文]{lang="EN-US" style="font-family:宋体"}
+对端信息：IP地址为*ipaddr-value*，MAC地址为*macaddr-value*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[6]{lang="EN-US"}]{#struct_0_17822_17521_x244900220}[：错误指示报文]{lang="EN-US" style="font-family:宋体"}
+Invalid peer info: IP address= *ipaddr-value*.
 
-[[Peer info: IP address= *ipaddr-value*, system ID= *macaddr-value*.]{lang="EN-US"}]{#struct_0_17822_17521_x1099624015}
+失效的对端信息：IP地址为*ipaddr-value*
 
-[[对端信息：]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_17822_17521_1720176144}[地址为]{style="font-family:宋体"}*[ipaddr-value]{lang="EN-US"}*[，]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为]{style="font-family:宋体"}*[macaddr-value]{lang="EN-US"}*
+Packet failed header check.
 
-[[Invalid peer info: IP address= *ipaddr-value*.]{lang="EN-US"}]{#struct_0_17822_17521_x307410290}
+报文头检测失败
 
-[[失效的对端信息：]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_17822_17521_300675433}[地址为]{style="font-family:宋体"}*[ipaddr-value]{lang="EN-US"}*
+Packet failed fixed header check.
 
-[[Packet failed header check.]{lang="EN-US"}]{#struct_0_17822_17521_999878134}
+报文固定头检测失败
 
-[[报文头检测失败]{style="font-family:宋体"}]{#struct_0_17822_17521_x47251011}
+Packet failed required content check.
 
-[[Packet failed fixed header check.]{lang="EN-US"}]{#struct_0_17822_17521_1720241680}
+报文强制部分检测失败
 
-[[报文固定头检测失败]{style="font-family:宋体"}]{#struct_0_17822_17521_107456692}
+Packet failed extended content check.
 
-[[Packet failed required content check.]{lang="EN-US"}]{#struct_0_17822_17521_433713156}
+报文扩展部分检测失败
 
-[[报文强制部分检测失败]{style="font-family:宋体"}]{#struct_0_17822_17521_164137754}
+Transaction ID mismatch.
 
-[[Packet failed extended content check.]{lang="EN-US"}]{#struct_0_17822_17521_1720045072}
+事务ID不相等
 
-[[报文扩展部分检测失败]{style="font-family:宋体"}]{#struct_0_17822_17521_x1071000043}
+Packet failed authentication.
 
-[[Transaction ID mismatch.]{lang="EN-US"}]{#struct_0_17822_17521_462134800}
+认证失败
 
-[[事务]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_17822_17521_x110247019}[不相等]{style="font-family:宋体"}
+【举例】
 
-[[Packet failed authentication.]{lang="EN-US"}]{#struct_0_17822_17521_1720110608}
+\# 使能ENDC功能，打开ENDC表项调试信息开关，当ENDC收到ENDS的应答报文后会输出下列调试信息。
 
-[[认证失败]{style="font-family:宋体"}]{#struct_0_17822_17521_1676358592}
+\<Sysname\> debugging evi neighbor-discovery client entry
 
-[ ]{lang="EN-US"}
+\*Sep  6 17:14:34:243 2011 Sysname ENDC/7/ENTRY: -MDC=1; Add neighbor: interface= Tunnel1, network ID= 1, IP address= 1.1.1.1.
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1254715320}
+*// 添加邻居节点，接口为Tunnel1，网络ID为1，邻居的IP地址为1.1.1.1*
 
-[[\# ]{lang="EN-US"}]{#struct_0_17822_17521_218386592}[使能]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[功能，打开]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[表项调试信息开关，当]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[收到]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的应答报文后会输出下列调试信息。]{style="font-family:宋体"}
+\*Sep  6 17:14:34:246 2011 Sysname ENDC/7/ENTRY: -MDC=1; Added Tunnel: interface= Tunnel1, peer address= 1.1.1.1.
 
-[[\<Sysname\> debugging evi neighbor-discovery client entry]{lang="EN-US"}]{#struct_0_17822_17521_x265178894}
+*// 添加隧道，接口为Tunnel1，对端IP地址为1.1.1.1*
 
-[\*Sep  6 17:14:34:243 2011 Sysname ENDC/7/ENTRY: -MDC=1; Add neighbor: interface= Tunnel1, network ID= 1, IP address= 1.1.1.1.]{lang="EN-US"}
+\# 使能ENDC功能，打开ENDC事件调试信息开关，当ENDC发送注册报文后会输出下列调试信息。
 
-[*[// ]{lang="EN-US"}*]{#struct_0_17822_17521_x2107278366}*[添加邻居节点，接口为]{style="font-family:宋体"}[Tunnel1]{lang="EN-US"}[，网络]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[，邻居的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1.1.1.1]{lang="EN-US"}*
+\<Sysname\> debugging evi neighbor-discovery client event
 
-[[\*Sep  6 17:14:34:246 2011 Sysname ENDC/7/ENTRY: -MDC=1; Added Tunnel: interface= Tunnel1, peer address= 1.1.1.1.]{lang="EN-US"}]{#struct_0_17822_17521_1720438288}
+\*Sep  8 15:21:38:814 2011 Sysname ENDS/7/EVENT: -MDC=1; Created register timer: time interval= 15s, timer ID= 10.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_17822_17521_x1502029765}*[添加隧道，接口为]{style="font-family:宋体"}[Tunnel1]{lang="EN-US"}[，对端]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1.1.1.1]{lang="EN-US"}*
+*// 创建注册定时器，时间间隔为15秒，定时器ID为10*
 
-[ ]{lang="EN-US"}
+\# 使能ENDC功能，打开ENDC报文调试信息开关，当ENDC收到ENDS的应答报文后会输出下列调试信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17822_17521_225704706}[使能]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[功能，打开]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[事件调试信息开关，当]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[发送注册报文后会输出下列调试信息。]{style="font-family:宋体"}
+\<Sysname\> debugging evi neighbor-discovery client packet
 
-[[\<Sysname\> debugging evi neighbor-discovery client event]{lang="EN-US"}]{#struct_0_17822_17521_x295638951}
+\*Sep  6 17:22:10:772 2011 Sysname ENDC/7/PACKET: -MDC=1; Interface Tunnel1 received a packet: packet type= 4, network ID= 1, server address= 1.1.1.1.
 
-[\*Sep  8 15:21:38:814 2011 Sysname ENDS/7/EVENT: -MDC=1; Created register timer: time interval= 15s, timer ID= 10.]{lang="EN-US"}
+*// 接口Tunnel1收到一个报文，报文类型为注册应答报文，对应的网络ID为1，服务器IP地址为1.1.1.1*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_17822_17521_267682194}*[创建注册定时器，时间间隔为]{style="font-family:宋体"}[15]{lang="EN-US"}[秒，定时器]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[10]{lang="EN-US"}*
+\*Sep  6 17:22:10:773 2011 Sysname ENDC/7/PACKET: -MDC=1; Peer info: IP address= 1.1.1.1, system ID= 0011-2200-0101.
 
-[ ]{lang="EN-US"}
-
-[[\# ]{lang="EN-US"}]{#struct_0_17822_17521_x1631735170}[使能]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[功能，打开]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[报文调试信息开关，当]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[收到]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的应答报文后会输出下列调试信息。]{style="font-family:宋体"}
-
-[[\<Sysname\> debugging evi neighbor-discovery client packet]{lang="EN-US"}]{#struct_0_17822_17521_1720503824}
-
-[\*Sep  6 17:22:10:772 2011 Sysname ENDC/7/PACKET: -MDC=1; Interface Tunnel1 received a packet: packet type= 4, network ID= 1, server address= 1.1.1.1.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_17822_17521_896307471}*[接口]{style="font-family:宋体"}[Tunnel1]{lang="EN-US"}[收到一个报文，报文类型为注册应答报文，对应的网络]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[，服务器]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1.1.1.1]{lang="EN-US"}*
-
-[[\*Sep  6 17:22:10:773 2011 Sysname ENDC/7/PACKET: -MDC=1; Peer info: IP address= 1.1.1.1, system ID= 0011-2200-0101.]{lang="EN-US"}]{#struct_0_17822_17521_310984642}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_17822_17521_1816527668}*[对端信息：]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1.1.1.1]{lang="EN-US"}[，]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为]{style="font-family:宋体"}[0011-2200-0101]{lang="EN-US"}*
-
-::: {#742196963 .myid}
-[]{#_Toc404798232}[]{#struct_0_17822_17521_1634433303}[]{#_Toc287608520}[]{#_Toc205804228}
+*// 对端信息：IP地址为1.1.1.1，MAC地址为0011-2200-0101*
 
 **EVI \-- EVI调试命令 \-- debugging evi neighbor-discovery server**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17822_17521_976259377}
+【命令】
 
-[**[debugging evi neighbor-discovery server]{lang="EN-US"}**[ { **all** \| **entry** \| **error** \| **event** \| **packet** }]{lang="EN-US"}]{#struct_0_17822_17521_x197603554}
+**[debugging evi neighbor-discovery server**[ { **all** \| **entry** \| **error** \| **event** \| **packet** }]]
 
-[**[undo debugging evi neighbor-discovery server]{lang="EN-US"}**[ { **all** \| **entry** \| **error** \| **event** \| **packet** }]{lang="EN-US"}]{#struct_0_17822_17521_1990510745}
+**[undo debugging evi neighbor-discovery server**[ { **all** \| **entry** \| **error** \| **event** \| **packet** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17822_17521_1720307216}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_17822_17521_x282149018}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17822_17521_203363371}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17822_17521_x1999733384}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17822_17521_1224718837}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1609901990}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_17822_17521_1576520483}[：表示所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示所有调试信息开关。
 
-[**[entry]{lang="EN-US"}**]{#struct_0_17822_17521_988820587}[：表示表项调试信息开关。]{style="font-family:宋体"}
+**[entry**]：表示表项调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_17822_17521_1720372752}[：表示]{style="font-family:宋体"}[错误调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[error**]：表示错误调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_17822_17521_871570747}[：表示]{style="font-family:宋体"}[事件调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[event**]：表示事件调试信息开关。
 
-[**[packet]{lang="EN-US"}**]{#struct_0_17822_17521_635540288}[：表示]{style="font-family:宋体"}[报文调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[packet**]：表示报文调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1534386726}
+【描述】
 
-[**[debugging evi neighbor-discovery server]{lang="EN-US"}**]{#struct_0_17822_17521_x1660901427}[命令用来打开]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}**[undo debugging evi neighbor-discovery server]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}
+**[debugging evi neighbor-discovery server**]命令用来打开ENDS调试信息开关。**undo debugging evi neighbor-discovery server**命令用来关闭ENDS调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[ENDS]{lang="EN-US"}]{#struct_0_17822_17521_x1978349107}[调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，ENDS调试信息开关处于关闭状态。
 
-[[表1-19 ]{lang="EN-US"}[debugging evi neighbor-discovery server entry]{lang="EN-US"}]{#struct_0_17822_17521_1441635355}[命令输出信息描述表]{style="font-family:黑体"}
+表1-19 debugging evi neighbor-discovery server entry命令输出信息描述表
 
-[]{#table_struct_0_1848144616}[[字段]{style="font-family:黑体"}]{#struct_0_17822_17521_2123818430}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17822_17521_1720700432}
+描述
 
-[[Added client: interface= *if-name*, network ID= *netid-value*, IP address= *ipaddr-value.*]{lang="EN-US"}]{#struct_0_17822_17521_2064659323}
+Added client: interface= *if-name*, network ID= *netid-value*, IP address= *ipaddr-value.*
 
-[[增加客户，接口为]{style="font-family:宋体"}*[if-name]{lang="EN-US"}*]{#struct_0_17822_17521_x833349810}[，网络]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[netid-value]{lang="EN-US"}*[，客户的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*
+增加客户，接口为*if-name*，网络ID为*netid-value*，客户的IP地址为*ip-address*
 
-[[Deleted client: interface= *if-name*, network ID= *netid-value*, IP address= *ipaddr-value.*]{lang="EN-US"}]{#struct_0_17822_17521_x1885138320}
+Deleted client: interface= *if-name*, network ID= *netid-value*, IP address= *ipaddr-value.*
 
-[[删除客户，接口为]{style="font-family:宋体"}*[if-name]{lang="EN-US"}*]{#struct_0_17822_17521_1794960992}[，网络]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[netid-value]{lang="EN-US"}*[，客户的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*
+删除客户，接口为*if-name*，网络ID为*netid-value*，客户的IP地址为*ip-address*
 
-[ ]{lang="EN-US"}
+表1-20 debugging evi neighbor-discovery server error命令输出信息描述表
 
-[[表1-20 ]{lang="EN-US"}[debugging evi neighbor-discovery server error]{lang="EN-US"}]{#struct_0_17822_17521_x294758516}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1876649448}[[字段]{style="font-family:黑体"}]{#struct_0_17822_17521_1720765968}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17822_17521_x272968281}
+Failed to create run info.
 
-[[Failed to create run info.]{lang="EN-US"}]{#struct_0_17822_17521_58285588}
+创建运行信息失败
 
-[[创建运行信息失败]{style="font-family:宋体"}]{#struct_0_17822_17521_2071775356}
+表1-21 debugging evi neighbor-discovery server event命令输出信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表1-21 ]{lang="EN-US"}[debugging evi neighbor-discovery server event]{lang="EN-US"}]{#struct_0_17822_17521_x1679456709}[命令输出信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_1875790056}[[字段]{style="font-family:黑体"}]{#struct_0_17822_17521_151530292}
+Created aging timer: timer interval= *time-value*, timer ID= *id-value*.
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17822_17521_1720176145}
+创建老化定时器，时间间隔为*time-value*，定时器ID为*id-value*
 
-[[Created aging timer: timer interval= *time-value*, timer ID= *id-value*.]{lang="EN-US"}]{#struct_0_17822_17521_x307475826}
+Modified aging timer: timer interval= *time-value*
 
-[[创建老化定时器，时间间隔为]{style="font-family:宋体"}*[time-value]{lang="EN-US"}*]{#struct_0_17822_17521_x1318373269}[，定时器]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[id-value]{lang="EN-US"}*
+修改老化定时器的时间间隔为*time-value*
 
-[[Modified aging timer: timer interval= *time-value*]{lang="EN-US"}]{#struct_0_17822_17521_x159386250}
+Deleted aging timer: timer id= *id-value*.
 
-[[修改老化定时器的时间间隔为]{style="font-family:宋体"}*[time-value]{lang="EN-US"}*]{#struct_0_17822_17521_x953862517}
+删除ID为*id-value*的老化定时器
 
-[[Deleted aging timer: timer id= *id-value*.]{lang="EN-US"}]{#struct_0_17822_17521_1720241681}
+*[if-name* received interface *event-name*.]
 
-[[删除]{style="font-family:宋体"}]{#struct_0_17822_17521_107522228}[ID]{lang="NO-BOK"}[为]{style="font-family:宋体"}*[id-value]{lang="EN-US"}*[的]{style="font-family:宋体"}[老化]{style="font-family:宋体"}[定时器]{style="font-family:宋体"}
+接口*if-name*收到接口事件，事件类型为*event-name*
 
-[*[if-name]{lang="EN-US"}*[ received interface *event-name*.]{lang="EN-US"}]{#struct_0_17822_17521_x1526194569}
+*[event-name*]的取值可能为：
 
-[[接口]{style="font-family:宋体"}*[if-name]{lang="EN-US"}*]{#struct_0_17822_17521_1382006873}[收到接口事件，事件类型为]{style="font-family:宋体"}*[event-name]{lang="EN-US"}*
+·up event：接口up
 
-[*[event-name]{lang="EN-US"}*]{#struct_0_17822_17521_1557684397}[的取值可能为：]{style="font-family:宋体"}
+·down event：接口down
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[up event]{lang="EN-US"}]{#struct_0_17822_17521_510415467}[：接口]{lang="EN-US" style="font-family:宋体"}[u]{lang="EN-US"}[p]{lang="EN-US"}
+·create event：接口创建
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[down event]{lang="EN-US"}]{#struct_0_17822_17521_1720045073}[：接口]{lang="EN-US" style="font-family:宋体"}[d]{lang="EN-US"}[own]{lang="EN-US"}
+·delete event：接口删除
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[create event]{lang="EN-US"}]{#struct_0_17822_17521_x1070934507}[：接口创建]{lang="EN-US" style="font-family:宋体"}
+表1-22 debugging evi neighbor-discovery server packet命令输出信息描述表
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[delete event]{lang="EN-US"}]{#struct_0_17822_17521_x1492987079}[：接口删除]{lang="EN-US" style="font-family:宋体"}
+字段
 
-[ ]{lang="EN-US"}
+描述
 
-[[表1-22 ]{lang="EN-US"}[debugging evi neighbor-discovery server packet]{lang="EN-US"}]{#struct_0_17822_17521_x1578703470}[命令输出信息描述表]{style="font-family:黑体"}
+Packet failed authentication.
 
-[]{#table_struct_0_1877825480}[[字段]{style="font-family:黑体"}]{#struct_0_17822_17521_x2086192715}
+认证失败
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17822_17521_1720110609}
+Interface *if-name* received a packet: packet type= *type-value*, network ID= *netid-value*, client address= *ipaddr-value*.
 
-[[Packet failed authentication.]{lang="EN-US"}]{#struct_0_17822_17521_1676293056}
+接口*if-name*收到一个报文：报文类型为*type-value*，对应的网络ID为*netid-value*，客户端服务器IP地址为*ipaddr-value*
 
-[[认证失败]{style="font-family:宋体"}]{#struct_0_17822_17521_x1297045016}
+*[type-value*]的取值可能为：
 
-[[Interface *if-name* received a packet: packet type= *type-value*, network ID= *netid-value*, client address= *ipaddr-value*.]{lang="EN-US"}]{#struct_0_17822_17521_393901750}
+·3：注册报文
 
-[[接口]{style="font-family:宋体"}*[if-name]{lang="EN-US"}*]{#struct_0_17822_17521_248229576}[收到一个报文：报文类型为]{style="font-family:宋体"}*[type-value]{lang="EN-US"}*[，对应的网络]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[netid-value]{lang="EN-US"}*[，客户端服务器]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}*[ipaddr-value]{lang="EN-US"}*
+·4：注册应答报文
 
-[*[type-value]{lang="EN-US"}*]{#struct_0_17822_17521_393654704}[的取值可能为：]{style="font-family:宋体"}
+·5：注销报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[3]{lang="EN-US"}]{#struct_0_17822_17521_1720438289}[：注册报文]{lang="EN-US" style="font-family:宋体"}
+·6：错误指示报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[4]{lang="EN-US"}]{#struct_0_17822_17521_x1502095301}[：注册应答报文]{lang="EN-US" style="font-family:宋体"}
+Interface *if-name s*ent a packet:
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[5]{lang="EN-US"}]{#struct_0_17822_17521_651041431}[：注销报文]{lang="EN-US" style="font-family:宋体"}
+packet type= *type-value*, network ID= *netid-value*, client address= *ipaddr-value*.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[6]{lang="EN-US"}]{#struct_0_17822_17521_244889894}[：错误指示报文]{lang="EN-US" style="font-family:宋体"}
+接口*if-name*发送一个报文：报文类型为*type-value*，对应的网络ID为*netid-value*，客户端IP地址为*ipaddr-value*
 
-[[Interface *if-name s*ent a packet: ]{lang="EN-US"}]{#struct_0_17822_17521_x83174615}
+*[type-value*]的取值可能为：
 
-[[packet type= *type-value*, network ID= *netid-value*, client address= *ipaddr-value*.]{lang="EN-US"}]{#struct_0_17822_17521_1720503825}
+·3：注册报文
 
-[[接口]{style="font-family:宋体"}*[if-name]{lang="EN-US"}*]{#struct_0_17822_17521_896373007}[发送一个报文：报文类型为]{style="font-family:宋体"}*[type-value]{lang="EN-US"}*[，对应的网络]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[netid-value]{lang="EN-US"}*[，客户端]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}*[ipaddr-value]{lang="EN-US"}*
+·4：注册应答报文
 
-[*[type-value]{lang="EN-US"}*]{#struct_0_17822_17521_x49648309}[的取值可能为：]{style="font-family:宋体"}
+·5：注销报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[3]{lang="EN-US"}]{#struct_0_17822_17521_x81541029}[：注册报文]{lang="EN-US" style="font-family:宋体"}
+·6：错误指示报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[4]{lang="EN-US"}]{#struct_0_17822_17521_x1333800284}[：注册应答报文]{lang="EN-US" style="font-family:宋体"}
+Client info: IP address= *ipaddr-value*, system ID= *macaddr-value*, register interval= *time-value*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[5]{lang="EN-US"}]{#struct_0_17822_17521_1720307217}[：注销报文]{lang="EN-US" style="font-family:宋体"}
+报文中携带的客户信息：IP地址为*ipaddr-value*，桥MAC地址为*macaddr-value*，注册时间间隔为*time-value*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[6]{lang="EN-US"}]{#struct_0_17822_17521_x282083482}[：错误指示报文]{lang="EN-US" style="font-family:宋体"}
+Packet failed validity check.
 
-[[Client info: IP address= *ipaddr-value*, system ID= *macaddr-value*, register interval= *time-value*]{lang="EN-US"}]{#struct_0_17822_17521_x1376923805}
+合法性检测失败
 
-[[报文中携带的客户信息：]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_17822_17521_x2057529200}[地址为]{style="font-family:宋体"}*[ipaddr-value]{lang="EN-US"}*[，桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为]{style="font-family:宋体"}*[macaddr-value]{lang="EN-US"}*[，注册时间间隔为]{style="font-family:宋体"}*[time-value]{lang="EN-US"}*
+Packet failed header check.
 
-[[Packet failed validity check.]{lang="EN-US"}]{#struct_0_17822_17521_192676701}
+报文头检测失败
 
-[[合法性检测失败]{style="font-family:宋体"}]{#struct_0_17822_17521_1720372753}
+Packet failed fixed header check.
 
-[[Packet failed header check.]{lang="EN-US"}]{#struct_0_17822_17521_871505211}
+报文固定头检测失败
 
-[[报文头检测失败]{style="font-family:宋体"}]{#struct_0_17822_17521_x2075314826}
+Packet failed required content check.
 
-[[Packet failed fixed header check.]{lang="EN-US"}]{#struct_0_17822_17521_1720700433}
+报文强制部分检测失败
 
-[[报文固定头检测失败]{style="font-family:宋体"}]{#struct_0_17822_17521_2064724859}
+Packet failed extended content check.
 
-[[Packet failed required content check.]{lang="EN-US"}]{#struct_0_17822_17521_x65529445}
+报文扩展部分检测失败
 
-[[报文强制部分检测失败]{style="font-family:宋体"}]{#struct_0_17822_17521_x494002313}
+【举例】
 
-[[Packet failed extended content check.]{lang="EN-US"}]{#struct_0_17822_17521_1720765969}
+\# 使能ENDS功能，打开ENDS表项调试信息开关，当ENDS收到ENDC的注册报文后会输出下列调试信息。
 
-[[报文扩展部分检测失败]{style="font-family:宋体"}]{#struct_0_17822_17521_x272902745}
+\<Sysname\> debugging evi neighbor-discovery server entry
 
-[ ]{lang="EN-US"}
+\*Sep  6 16:49:49:180 2011 Sysname ENDS/7/ENTRY: -MDC=1; Added client: interface= Tunnel0, network ID= 1, IP address= 1.1.1.2.
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17822_17521_x1139086314}
+*// 增加客户，接口为Tunnel0，网络ID为1，客户的IP地址为1.1.1.2*
 
-[[\# ]{lang="EN-US"}]{#struct_0_17822_17521_621679870}[使能]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[功能，打开]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[表项调试信息开关，当]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[收到]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的注册报文后会输出下列调试信息。]{style="font-family:宋体"}
+\# 使能ENDS功能，打开ENDS事件调试信息开关，当ENDS收到ENDC的注册报文后会输出下列调试信息。
 
-[[\<Sysname\> debugging evi neighbor-discovery server entry]{lang="EN-US"}]{#struct_0_17822_17521_947751793}
+\<Sysname\> debugging evi neighbor-discovery server event
 
-[\*Sep  6 16:49:49:180 2011 Sysname ENDS/7/ENTRY: -MDC=1; Added client: interface= Tunnel0, network ID= 1, IP address= 1.1.1.2.]{lang="EN-US"}
+\*Sep  8 15:21:38:814 2011 Sysname ENDS/7/EVENT: -MDC=1; Created aging timer: time interval= 75s, timer ID= 1.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_17822_17521_1162647954}*[增加客户，接口为]{style="font-family:宋体"}[Tunnel0]{lang="EN-US"}[，网络]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[，客户的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1.1.1.2]{lang="EN-US"}*
+*// 创建老化定时器，时间间隔为75秒，定时器ID为1*
 
-[ ]{lang="EN-US"}
+\# 使能ENDS功能，打开ENDS报文调试信息开关，当ENDS收到ENDC的注册报文后会输出下列调试信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17822_17521_1388282818}[使能]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[功能，打开]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[事件调试信息开关，当]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[收到]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的注册报文后会输出下列调试信息。]{style="font-family:宋体"}
+\<Sysname\> debugging evi neighbor-discovery server packet
 
-[[\<Sysname\> debugging evi neighbor-discovery server event]{lang="EN-US"}]{#struct_0_17822_17521_1720176142}
+\*Sep  6 16:58:30:600 2011 Sysname ENDS/7/PACKET: -MDC=1; Interface Tunnel0 received a packet: packet type= 3, network ID= 1, client address= 1.1.1.2.
 
-[\*Sep  8 15:21:38:814 2011 Sysname ENDS/7/EVENT: -MDC=1; Created aging timer: time interval= 75s, timer ID= 1.]{lang="EN-US"}
+*// 接口Tunnel0收到一个报文：报文类型为注册报文，对应的网络ID为1，客户端IP地址为1.1.1.2*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_17822_17521_x307017074}*[创建老化定时器，时间间隔为]{style="font-family:宋体"}[75]{lang="EN-US"}[秒，定时器]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}*
+\*Sep  6 17:01:02:276 2011 Sysname ENDS/7/PACKET: -MDC=1; Client info: IP address= 1.1.1.2, system ID= 0011-2200-0101, register interval= 5s.
 
-[ ]{lang="EN-US"}
+*// 报文中携带的客户信息：IP地址为1.1.1.2，桥MAC地址为0011-2200-0101，注册时间间隔为5秒*
 
-[[\# ]{lang="EN-US"}]{#struct_0_17822_17521_279465548}[使能]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[功能，打开]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[报文调试信息开关，当]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[收到]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的注册报文后会输出下列调试信息。]{style="font-family:宋体"}
+\*Sep  6 16:58:30:604 2011 Sysname ENDS/7/PACKET: -MDC=1; Interface Tunnel0 sent a packet: packet type= 4, network ID= 1, client address= 1.1.1.2.
 
-[[\<Sysname\> debugging evi neighbor-discovery server packet]{lang="EN-US"}]{#struct_0_17822_17521_x737236426}
-
-[\*Sep  6 16:58:30:600 2011 Sysname ENDS/7/PACKET: -MDC=1; Interface Tunnel0 received a packet: packet type= 3, network ID= 1, client address= 1.1.1.2.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_17822_17521_x512231240}*[接口]{style="font-family:宋体"}[Tunnel0]{lang="EN-US"}[收到一个报文：报文类型为注册报文，对应的网络]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[，客户端]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1.1.1.2]{lang="EN-US"}*
-
-[[\*Sep  6 17:01:02:276 2011 Sysname ENDS/7/PACKET: -MDC=1; Client info: IP address= 1.1.1.2, system ID= 0011-2200-0101, register interval= 5s.]{lang="EN-US"}]{#struct_0_17822_17521_x1817551525}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_17822_17521_x1715875287}*[报文中携带的客户信息：]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1.1.1.2]{lang="EN-US"}[，桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为]{style="font-family:宋体"}[0011-2200-0101]{lang="EN-US"}[，注册时间间隔为]{style="font-family:宋体"}[5]{lang="EN-US"}[秒]{style="font-family:宋体"}*
-
-[[\*Sep  6 16:58:30:604 2011 Sysname ENDS/7/PACKET: -MDC=1; Interface Tunnel0 sent a packet: packet type= 4, network ID= 1, client address= 1.1.1.2.]{lang="EN-US"}]{#struct_0_17822_17521_x246557315}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_17822_17521_1720241678}*[接口]{style="font-family:宋体"}[Tunnel0]{lang="EN-US"}[发送一个报文：报文类型为注册应答报文，对应的网络]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[，客户端]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1.1.1.2]{lang="EN-US"}*
+*// 接口Tunnel0发送一个报文：报文类型为注册应答报文，对应的网络ID为1，客户端IP地址为1.1.1.2*

@@ -1,1995 +1,1868 @@
-::: {#-839206977 .myid}
-[]{#_Toc340836288}[]{#_Toc340836290}[]{#_Toc404794807}[]{#struct_0_73193_x1990_2125682936}[]{#_Toc393205672}
 
 **AP管理 \-- AP管理配置命令 \-- ap**
 
 ------------------------------------------------------------------------
 
-[**[ap]{lang="EN-US"}**]{#struct_0_73193_x1990_1854607574}[命令用来配置]{style="font-family:宋体"}[AP]{lang="EN-US"}[名字入组规则。]{style="font-family:宋体"}
+**[ap**]命令用来配置AP名字入组规则。
 
-[**[undo ap]{lang="EN-US"}**]{#struct_0_73193_x1990_x1888815989}[命令用来删除]{style="font-family:宋体"}[AP]{lang="EN-US"}[名字入组规则。]{style="font-family:宋体"}
+**[undo ap**]命令用来删除AP名字入组规则。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1052561092}
+【命令】
 
-[**[ap]{lang="EN-US"}**[ *ap-name-list*]{lang="EN-US"}]{#struct_0_73193_x1990_2014883804}
+**[ap** *ap-name-list*]
 
-[**[undo ap]{lang="EN-US"}**[ *ap-name-list*]{lang="EN-US"}]{#struct_0_73193_x1990_150968779}
+**[undo ap** *ap-name-list*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1999994495}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x357011299}[名字入组规则。]{style="font-family:宋体"}
+未配置AP名字入组规则。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1688437503}
+【视图】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_1094161738}[组视图]{style="font-family:宋体"}
+AP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x152861725}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x524714380}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x1163120874}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1120090382}
+【参数】
 
-[[ap-name-list:A[P]{style="color:black"}]{lang="EN-US"}]{#struct_0_73193_x1990_895235032}[的名字列表，表示方式为]{style="font-family:宋体"}[ap-name-list={ ap-name[ ]{style="color:black"}}&\<1[-10]{style="color:black"}\>]{lang="EN-US"}[。其中]{style="font-family:宋体"}[ap-name]{lang="EN-US"}[为]{style="font-family:宋体"}[AP]{lang="EN-US" style="color:black"}[的名字，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，可以包含字母、数字及下划线，不区分大小写，]{style="font-family:宋体"}[&\<[1]{style="color:black"}-[10]{style="color:black"}\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[个。]{style="font-family:宋体"}
+ap-name-list:AP的名字列表，表示方式为ap-name-list=}&\<1[-10\>]。其中ap-name为AP的名字，为1～63个字符的字符串，可以包含字母、数字及下划线，不区分大小写，&\<[1-10\>]表示前面的参数最多可以输入10个。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x834322695}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令不检查指定的]{style="font-family:宋体"}]{#struct_0_73193_x1990_x1246770319}[AP]{lang="EN-US"}[是否存在。]{style="font-family:宋体"}
+·本命令不检查指定的AP是否存在。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不同型号的设备支持的最大]{style="font-family:宋体"}]{#struct_0_73193_x1990_1156244928}[AP]{lang="EN-US"}[数不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+·不同型号的设备支持的最大AP数不同，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x736996635}[名字如入规则的优先级高于序列号入组规则，序列号入组规则的优先级高于]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址入组规则。]{style="font-family:宋体"}[AP]{lang="EN-US"}[优先根据]{style="font-family:宋体"}[AP]{lang="EN-US"}[名字入组规则匹配入组，其次是]{style="font-family:宋体"}[AP]{lang="EN-US"}[序列号入组规则，然后是]{style="font-family:宋体"}[AP MAC ]{lang="EN-US"}[地址入组规则，若未匹配到任何入组规则，则]{style="font-family:宋体"}[AP]{lang="EN-US"}[将被加入到默认组。]{style="font-family:宋体"}
+·AP名字如入规则的优先级高于序列号入组规则，序列号入组规则的优先级高于MAC地址入组规则。AP优先根据AP名字入组规则匹配入组，其次是AP序列号入组规则，然后是AP MAC 地址入组规则，若未匹配到任何入组规则，则AP将被加入到默认组。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[默认组视图下不能进行该配置。]{style="font-family:宋体"}]{#struct_0_73193_x1990_636877250}
+·默认组视图下不能进行该配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1902698890}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_1851766425}[在]{style="font-family:宋体"}[AP]{lang="EN-US"}[组视图下添加名字入组规则。]{style="font-family:宋体"}
+\# 在AP组视图下添加名字入组规则。
 
-[[\<System\> system-view]{lang="EN-US"}]{#struct_0_73193_x1990_1504012560}
+\<System\> system-view
 
-[\[System\] wlan ap-group group1]{lang="EN-US"}
+System wlan ap-group group1
 
-[\[System-wlan-ap-group-group1\] ap ap1 ap2 ap3]{lang="EN-US"}
+System-wlan-ap-group-group1 ap ap1 ap2 ap3
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1718945666}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[wlan]{lang="EN-US"}**]{#struct_0_73193_x1990_1171876224}**[ ]{lang="EN-US"}[ap-group]{lang="EN-US"}**
-:::
-
-::: {#1391204813 .myid}
-[]{#_Toc404794808}[]{#struct_0_73193_x1990_x274748668}
+·**wlan****ap-group**
 
 **AP管理 \-- AP管理配置命令 \-- cir**
 
 ------------------------------------------------------------------------
 
-[**[cir]{lang="EN-US"}**]{#struct_0_73193_x1990_322330056}[命令用来设置承诺信息速率和承诺突发尺寸以实现流量保护功能。]{style="font-family:宋体"}
+**[cir**]命令用来设置承诺信息速率和承诺突发尺寸以实现流量保护功能。
 
-[**[undo cir]{lang="EN-US"}**]{#struct_0_73193_x1990_x1495848201}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo cir**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1687541929}
+【命令】
 
-[**[cir ]{lang="EN-US"}***[committed-information-rate]{lang="EN-US"}*[ \[ **cbs** *committed-burst-size* \]]{lang="EN-US"}]{#struct_0_73193_x1990_1232327002}
+**[cir ***committed-information-rate* [ **cbs** *committed-burst-size* ]]
 
-[**[undo cir]{lang="EN-US"}**]{#struct_0_73193_x1990_1008711533}
+**[undo cir**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_73193_x1990_862033959}
+【缺省情况】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x888510651}[视图：继承]{style="font-family:宋体"}[AP]{lang="EN-US"}[组配置。]{style="font-family:宋体"}
+AP视图：继承AP组配置。
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_63348541}[组视图：未设置承诺信息速率和承诺突发尺寸]{style="font-family:宋体"}
+AP组视图：未设置承诺信息速率和承诺突发尺寸
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1529920304}
+【视图】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_1077577588}[视图]{style="font-family:宋体"}[/AP]{lang="EN-US"}[组视图]{style="font-family:宋体"}
+AP视图/AP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x107984434}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x1918974926}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_794840058}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x2140853916}
+【参数】
 
-[**[cir ]{lang="EN-US"}***[committed-information-rate]{lang="EN-US"}*]{#struct_0_73193_x1990_1997054100}[：承诺信息速率，取值范围为]{style="font-family:宋体"}[40]{lang="EN-US"}[～]{style="font-family:宋体"}[1000000]{lang="EN-US"}[，单位为]{style="font-family:宋体"}[Kbps]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[cir ***committed-information-rate*]：承诺信息速率，取值范围为40～1000000，单位为Kbps。
 
-[**[cbs]{lang="EN-US"}***[ committed-burst-size]{lang="EN-US"}*]{#struct_0_73193_x1990_873212697}[：承诺突发尺寸，取值范围为]{style="font-family:宋体"}[2500]{lang="EN-US"}[～]{style="font-family:宋体"}[62500000]{lang="EN-US"}[。如果未指定本参数，则表示承诺突发尺寸为]{style="font-family:宋体"}[500]{lang="EN-US"}[毫秒以]{style="font-family:宋体"}[CIR]{lang="EN-US"}[速率通过的流量，单位为]{style="font-family:宋体"}[Bytes]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[cbs*** committed-burst-size*]：承诺突发尺寸，取值范围为2500～62500000。如果未指定本参数，则表示承诺突发尺寸为500毫秒以CIR速率通过的流量，单位为Bytes。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x254982765}
+【使用指导】
 
-[[开启流量保护功能后可以对]{style="font-family:宋体"}[AC]{lang="EN-US"}]{#struct_0_73193_x1990_2127759794}[和]{style="font-family:宋体"}[AP]{lang="EN-US"}[间的数据流量进行限速，防止由于]{style="font-family:宋体"}[AP]{lang="EN-US"}[遭受超过其处理能力的数据流量冲击，使]{style="font-family:宋体"}[AP]{lang="EN-US"}[无法及时向]{style="font-family:宋体"}[AC]{lang="EN-US"}[回复报文而导致]{style="font-family:宋体"}[AP]{lang="EN-US"}[频繁重启。]{style="font-family:宋体"}
+开启流量保护功能后可以对AC和AP间的数据流量进行限速，防止由于AP遭受超过其处理能力的数据流量冲击，使AP无法及时向AC回复报文而导致AP频繁重启。
 
-[[有关]{style="font-family:宋体"}**[cir]{lang="EN-US"}**]{#struct_0_73193_x1990_x506489575}[命令的详细介绍与配置请参见"]{style="font-family:宋体"}[ACL]{lang="EN-US"}[和]{style="font-family:宋体"}[QoS]{lang="EN-US"}[命令参考"中的"]{style="font-family:宋体"}[QoS]{lang="EN-US"}[策略"。]{style="font-family:宋体"}
+有关**cir**命令的详细介绍与配置请参见"ACL和QoS命令参考"中的"QoS策略"。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_133972138}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_1911398423}[设置承诺速率为]{style="font-family:宋体"}[60Kbps]{lang="EN-US"}[，承诺突发尺寸为]{style="font-family:宋体"}[3000Bytes]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 设置承诺速率为60Kbps，承诺突发尺寸为3000Bytes。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_73193_x1990_1439148578}
+\<Sysname\> system-view
 
-[\[Sysname\] wlan ap ap1 model WA4620i-AGN]{lang="EN-US"}
+Sysname wlan ap ap1 model WA4620i-AGN
 
-[\[Sysname-wlan-ap-ap1\] cir 60 cbs 3000]{lang="EN-US"}
-:::
-
-::: {#-1194519698 .myid}
-[]{#_Toc404794809}[]{#struct_0_73193_x1990_1814264331}[]{#_Toc177034948}
+Sysname-wlan-ap-ap1 cir 60 cbs 3000
 
 **AP管理 \-- AP管理配置命令 \-- description(AP view)**
 
 ------------------------------------------------------------------------
 
-[**[description]{lang="EN-US"}**]{#struct_0_73193_x1990_1765529552}[命令用来设置]{style="font-family:宋体"}[AP]{lang="EN-US"}[的描述信息。]{style="font-family:宋体"}
+**[description**]命令用来设置AP的描述信息。
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_73193_x1990_83370726}[命令用来清除]{style="font-family:宋体"}[AP]{lang="EN-US"}[的描述信息。]{style="font-family:宋体"}
+**[undo description**]命令用来清除AP的描述信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1666248541}
+【命令】
 
-[**[description]{lang="EN-US"}**[ *text*]{lang="EN-US"}]{#struct_0_73193_x1990_1738387257}
+**[description** *text*]
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_73193_x1990_1277802351}
+**[undo description**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x202105544}
+【缺省情况】
 
-[[未设置]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_73193_x1990_1913337826}[的描述信息。]{style="font-family:宋体"}
+未设置AP的描述信息。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x992970267}
+【视图】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x47110524}[视图]{style="font-family:宋体"}
+AP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_385966025}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x1047716652}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_248180390}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_202241358}
+【参数】
 
-[*[text]{lang="EN-US"}*]{#struct_0_73193_x1990_609715628}[：网络中]{style="font-family:宋体"}[AP]{lang="EN-US"}[的描述信息，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[64]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[text*]：网络中AP的描述信息，为1～64个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1375937541}
+【使用指导】
 
-[[当存在多个]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_73193_x1990_53377771}[时，可以配置每个]{style="font-family:宋体"}[AP]{lang="EN-US"}[的描述信息，以便区别各个]{style="font-family:宋体"}[AP]{lang="EN-US"}[。]{style="font-family:宋体"}
+当存在多个AP时，可以配置每个AP的描述信息，以便区别各个AP。
 
-[[使用]{style="font-family:宋体"}**[display wlan ap]{lang="EN-US"}**]{#struct_0_73193_x1990_x284907760}[命令可以看到配置的描述信息。]{style="font-family:宋体"}
+使用**display wlan ap**命令可以看到配置的描述信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_424321818}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_2110510053}[设置]{style="font-family:宋体"}[ap1]{lang="EN-US"}[的描述信息。]{style="font-family:宋体"}
+\# 设置ap1的描述信息。
 
-[[\<Sysname\> system-view ]{lang="EN-US"}]{#struct_0_73193_x1990_542439626}
+\<Sysname\> system-view
 
-[\[Sysname\] wlan ap ap1 model WA4620i-AGN]{lang="EN-US"}
+Sysname wlan ap ap1 model WA4620i-AGN
 
-[\[Sysname-ap-ap1\] description L3-office]{lang="EN-US"}
-:::
-
-::: {#-2105995816 .myid}
-[]{#_Toc404794810}[]{#struct_0_73193_x1990_x1099450873}[]{#_Toc367213910}
+Sysname-ap-ap1 description L3-office
 
 **AP管理 \-- AP管理配置命令 \-- description(AP group view)**
 
 ------------------------------------------------------------------------
 
-[**[description ]{lang="EN-US"}**]{#struct_0_73193_x1990_x1870104308}[命令用来配置]{style="font-family:宋体"}[AP]{lang="EN-US"}[组的描述信息。]{style="font-family:宋体"}
+**[description **]命令用来配置AP组的描述信息。
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_73193_x1990_1733487643}[命令用来清除]{style="font-family:宋体"}[AP]{lang="EN-US"}[组的描述信息。]{style="font-family:宋体"}
+**[undo description**]命令用来清除AP组的描述信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1693103809}
+【命令】
 
-[**[description ]{lang="EN-US"}***[text]{lang="EN-US"}*]{#struct_0_73193_x1990_x1484260676}
+**[description ***text*]
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_73193_x1990_x818252455}
+**[undo description**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_73193_x1990_725936320}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x1280266919}[组的描述信息。]{style="font-family:宋体"}
+未配置AP组的描述信息。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_906874019}
+【视图】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x1959104132}[组视图]{style="font-family:宋体"}
+AP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x309874271}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x301677489}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x1284550787}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1575532670}
+【参数】
 
-[*[text]{lang="EN-US"}*]{#struct_0_73193_x1990_1049184231}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[组的描述信息，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[64]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[text*]：AP组的描述信息，为1～64个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x885296822}
+【使用指导】
 
-[[当存在多个]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x813945476}[组时，可以配置每个]{style="font-family:宋体"}[AP]{lang="EN-US"}[组的描述信息，以便区别各个]{style="font-family:宋体"}[AP]{lang="EN-US"}[组。]{style="font-family:宋体"}
+当存在多个AP组时，可以配置每个AP组的描述信息，以便区别各个AP组。
 
-[[使用]{style="font-family:宋体"}**[display wlan ap-group]{lang="EN-US"}**]{#struct_0_73193_x1990_466633068}[命令可以看到配置的描述信息。]{style="font-family:宋体"}
+使用**display wlan ap-group**命令可以看到配置的描述信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_133054129}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_1312923622}[设置]{style="font-family:宋体"}[group1]{lang="EN-US"}[的描述信息。]{style="font-family:宋体"}
+\# 设置group1的描述信息。
 
-[[\<Sysname\> system-view ]{lang="EN-US"}]{#struct_0_73193_x1990_690267691}
+\<Sysname\> system-view
 
-[\[Sysname\] wlan ap-group group1]{lang="EN-US"}
+Sysname wlan ap-group group1
 
-[\[Sysname-ap-group-group1\] description L3-office]{lang="EN-US"}
+Sysname-ap-group-group1 description L3-office
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1976757878}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[wlan ap-group]{lang="EN-US"}**]{#struct_0_73193_x1990_225672116}
+·**wlan ap-group**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display wlan ap-group]{lang="EN-US"}**]{#struct_0_73193_x1990_465413084}
-:::
-
-::: {#799262023 .myid}
-[]{#_Toc404794811}[]{#struct_0_73193_x1990_x2141111857}[]{#_Toc345613631}
+·**display wlan ap-group**
 
 **AP管理 \-- AP管理配置命令 \-- display wlan ap**
 
 ------------------------------------------------------------------------
 
-[**[display wlan ap]{lang="EN-US"}**]{#struct_0_73193_x1990_x775526505}[命令用来显示指定]{style="font-family:宋体"}[AP]{lang="EN-US"}[或所有]{style="font-family:宋体"}[AP]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[display wlan ap**]命令用来显示指定AP或所有AP的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1317903551}
+【命令】
 
-[**[display wlan ap]{lang="EN-US"}***[ ]{lang="EN-US"}*[{ **all** *\|* **name** *ap-name* } \[ **radio** \| **verbose** \]]{lang="EN-US"}]{#struct_0_73193_x1990_1647258271}
+**[display wlan ap****[{ **all** *\|* **name** *ap-name* } [ **radio** \| **verbose** ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_29616370}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_73193_x1990_920351725}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x422994115}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x851431598}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_73193_x1990_x61374987}
+network-operator
 
-[[mdc -admin]{lang="EN-US"}]{#struct_0_73193_x1990_1780548349}
+mdc -admin
 
-[[mdc -operator]{lang="EN-US"}]{#struct_0_73193_x1990_x1332162062}
+mdc -operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1296122858}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_73193_x1990_1379408049}[：显示所有]{style="font-family:宋体"}[AP]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[all**]：显示所有AP的信息。
 
-[**[name]{lang="EN-US"}***[ ap-name]{lang="EN-US"}*]{#struct_0_73193_x1990_1387761575}[：指定]{style="font-family:宋体"}[AP]{lang="EN-US"}[的名称，]{style="font-family:宋体"}*[ap-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[AP]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，可以包含字母、数字、下划线和横线。]{style="font-family:宋体"}
+**[name*** ap-name*]：指定AP的名称，*ap-name*表示AP的名称，为1～63个字符的字符串，可以包含字母、数字、下划线和横线。
 
-[**[radio]{lang="EN-US"}**]{#struct_0_73193_x1990_x1660140973}[：显示]{style="font-family:宋体"}[AP]{lang="EN-US"}[上]{style="font-family:宋体"}[radio]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[radio**]：显示AP上radio的信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_73193_x1990_1410979804}[：显示]{style="font-family:宋体"}[AP]{lang="EN-US"}[的详细信息。]{style="font-family:宋体"}
+**[verbose**]：显示AP的详细信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_868561979}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_x214802286}[显示所有]{style="font-family:宋体"}[AP]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+\# 显示所有AP的信息。
 
-[[\<Sysname\> display wlan ap all]{lang="EN-US"}]{#struct_0_73193_x1990_x393418253}
+\<Sysname\> display wlan ap all
 
-[Total number of APs: 2]{lang="EN-US"}
+Total number of APs: 2
 
-[Total number of connected APs: 1]{lang="EN-US"}
+Total number of connected APs: 1
 
-[Total number of configured APs connected: 1]{lang="EN-US"}
+Total number of configured APs connected: 1
 
-[Total number of connected auto APs: 0]{lang="EN-US"}
+Total number of connected auto APs: 0
 
-[Maximum AP capacity: 60000]{lang="EN-US"}
+Maximum AP capacity: 60000
 
-[Remaining AP capacity: 59999]{lang="EN-US"}
+Remaining AP capacity: 59999
 
-[                                 AP information]{lang="EN-US"}
+                                 AP information
 
-[ State : I = Idle,       J  = Join,       JA = JoinAck,    IL = ImageLoad]{lang="EN-US"}
+ State : I = Idle,       J  = Join,       JA = JoinAck,    IL = ImageLoad
 
-[         C = Config,     DC = DataCheck,  R  = Run]{lang="EN-US"}
+         C = Config,     DC = DataCheck,  R  = Run
 
-[ ]{lang="EN-US"}
+AP name                AP ID   State   Model             Serial ID
 
-[AP name                AP ID   State   Model             Serial ID]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ap1                    1       I       WA4620i-AGN       210235A1BSC123000050
 
-[ap1                    1       I       WA4620i-AGN       210235A1BSC123000050]{lang="EN-US"}
+ap2                    2       R       WA5620i-AGN       210456B9CEN238400040
 
-[ap2                    2       R       WA5620i-AGN       210456B9CEN238400040]{lang="EN-US"}
+表1-1 display wlan ap name命令显示信息描述表
 
-[[表1-1 ]{lang="EN-US"}[display wlan ap name]{lang="EN-US"}]{#struct_0_73193_x1990_x1028095664}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1995609217}[[字段]{style="font-family:黑体"}]{#struct_0_73193_x1990_x478594244}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1343302448}
+Total number of APs
 
-[[Total number of APs]{lang="EN-US"}]{#struct_0_73193_x1990_x578909291}
+AP的数量
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_1645275511}[的数量]{style="font-family:宋体"}
+Total number of connected APs
 
-[[Total number of connected APs]{lang="EN-US"}]{#struct_0_73193_x1990_x1378425273}
+处于连接状态的AP的数量
 
-[[处于连接状态的]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x968499926}[的数量]{style="font-family:宋体"}
+Total number of configured APs connected
 
-[[Total number of configured APs connected]{lang="EN-US"}]{#struct_0_73193_x1990_1267142583}
+处于连接状态的手工AP数量
 
-[[处于连接状态的手工]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x1896923941}[数量]{style="font-family:宋体"}
+Total number of connected auto APs
 
-[[Total number of connected auto APs]{lang="EN-US"}]{#struct_0_73193_x1990_x578843755}
+处于连接状态的自动AP的数量
 
-[[处于连接状态的自动]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_73193_x1990_452229018}[的数量]{style="font-family:宋体"}
+Maximum AP capacity
 
-[[Maximum AP capacity]{lang="EN-US"}]{#struct_0_73193_x1990_x1215391501}
+AC上最大AP容量
 
-[[AC]{lang="EN-US"}]{#struct_0_73193_x1990_x298941358}[上最大]{style="font-family:宋体"}[AP]{lang="EN-US"}[容量]{style="font-family:宋体"}
+Remaining AP capacity
 
-[[Remaining AP capacity]{lang="EN-US"}]{#struct_0_73193_x1990_x504253972}
+剩余AP容量，即最大AP容量减去处于连接状态的AP数
 
-[[剩余]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_73193_x1990_1872657439}[容量，即最大]{style="font-family:宋体"}[AP]{lang="EN-US"}[容量减去处于连接状态的]{style="font-family:宋体"}[AP]{lang="EN-US"}[数]{style="font-family:宋体"}
+AP ID
 
-[[AP ID]{lang="EN-US"}]{#struct_0_73193_x1990_x155104137}
+AP的ID号，用于在AC上唯一标识一个AP
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_934551449}[的]{style="font-family:宋体"}[ID]{lang="EN-US"}[号，用于在]{style="font-family:宋体"}[AC]{lang="EN-US"}[上唯一标识一个]{style="font-family:宋体"}[AP]{lang="EN-US"}
+AP name
 
-[[AP name]{lang="EN-US"}]{#struct_0_73193_x1990_x1709273368}
+AP实体名
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x1266863149}[实体名]{style="font-family:宋体"}
+State
 
-[[State]{lang="EN-US"}]{#struct_0_73193_x1990_1015294882}
+AP当前状态：
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x1439836213}[当前状态：]{style="font-family:宋体"}
+·I：空闲状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[I]{lang="EN-US"}]{#struct_0_73193_x1990_817379576}[：空闲状态]{lang="EN-US" style="font-family:宋体"}
+·J：连接建立状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[J]{lang="EN-US"}]{#struct_0_73193_x1990_x1628656552}[：连接建立状态]{lang="EN-US" style="font-family:宋体"}
+·JA：LWAPP连接确认阶段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[JA]{lang="EN-US"}]{#struct_0_73193_x1990_x168857679}[：]{style="font-family:宋体"}[LWAPP]{lang="EN-US"}[连接确认阶段]{style="font-family:宋体"}
+·IL：版本下载状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IL]{lang="EN-US"}]{#struct_0_73193_x1990_x1721188078}[：版本下载状态]{lang="EN-US" style="font-family:宋体"}
+·C：初始化配置下载状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[C]{lang="EN-US"}]{#struct_0_73193_x1990_317142989}[：初始化配置下载状态]{style="font-family:宋体"}
+·DC：数据校验状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DC]{lang="EN-US"}]{#struct_0_73193_x1990_167449485}[：数据校验状态]{lang="EN-US" style="font-family:宋体"}
+·R：运行状态，表示AP与AC成功建立CAPWAP隧道
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[R]{lang="EN-US"}]{#struct_0_73193_x1990_796853995}[：运行状态，表示]{style="font-family:宋体"}[AP]{lang="EN-US"}[与]{style="font-family:宋体"}[AC]{lang="EN-US"}[成功建立]{style="font-family:宋体"}[CAPWAP]{lang="EN-US"}[隧道]{style="font-family:宋体"}
+Model
 
-[[Model]{lang="EN-US"}]{#struct_0_73193_x1990_x2049308309}
+AP型号信息
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x1119563980}[型号信息]{style="font-family:宋体"}
+Serial ID
 
-[[Serial ID]{lang="EN-US"}]{#struct_0_73193_x1990_x628181102}
+AP序列号，如果未指定，则显示为Not configured
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_1007695277}[序列号，如果未指定，则显示为]{style="font-family:宋体"}[Not configured]{lang="EN-US"}
+\# 显示ap1的详细信息。
 
-[ ]{lang="EN-US"}
+\<Sysname\> display wlan ap name ap1 verbose
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_1399679656}[显示]{style="font-family:宋体"}[ap1]{lang="EN-US"}[的详细信息。]{style="font-family:宋体"}
+AP name                       : ap1
 
-[[\<Sysname\> display wlan ap name ap1 verbose]{lang="EN-US"}]{#struct_0_73193_x1990_x558388664}
+AP ID                         : 1
 
-[AP name                       : ap1]{lang="EN-US"}
+State                         : Run
 
-[AP ID                         : 1]{lang="EN-US"}
+Model                         : WA4620i-AGN
 
-[State                         : Run]{lang="EN-US"}
+Serial ID                     : 210235A1BSC123000050
 
-[Model                         : WA4620i-AGN]{lang="EN-US"}
+IP address                    : 192.168.1.50
 
-[Serial ID                     : 210235A1BSC123000050]{lang="EN-US"}
+H/W version                   : Ver.C
 
-[IP address                    : 192.168.1.50]{lang="EN-US"}
+S/W version                   : V700R001B49D001
 
-[H/W version                   : Ver.C]{lang="EN-US"}
+Boot version                  : 1.01
 
-[S/W version                   : V700R001B49D001]{lang="EN-US"}
+Description                   : wtp1
 
-[Boot version                  : 1.01]{lang="EN-US"}
+Priority                      : 4
 
-[Description                   : wtp1]{lang="EN-US"}
+Echo interval                 : 10 seconds
 
-[Priority                      : 4]{lang="EN-US"}
+Statistics report interval    : 50 seconds
 
-[Echo interval                 : 10 seconds]{lang="EN-US"}
+CIR                           : 60 kbps
 
-[Statistics report interval    : 50 seconds]{lang="EN-US"}
+CBS                           : 3000 bytes
 
-[CIR                           : 60 kbps]{lang="EN-US"}
+Jumbo frame value             : Disabled
 
-[CBS                           : 3000 bytes]{lang="EN-US"}
+MAC address                   : 80F6-2EBF-C580
 
-[Jumbo frame value             : Disabled]{lang="EN-US"}
+MAC type                      : Local MAC & Split MAC
 
-[MAC address                   : 80F6-2EBF-C580]{lang="EN-US"}
+Tunnel mode                   : Local Bridging & 802.3 Frame & Native Frame
 
-[MAC type                      : Local MAC & Split MAC]{lang="EN-US"}
+Discovery type                : Static Configuration
 
-[Tunnel mode                   : Local Bridging & 802.3 Frame & Native Frame]{lang="EN-US"}
+Retransmission count          : 3
 
-[Discovery type                : Static Configuration]{lang="EN-US"}
+Retransmission interval       : 5 seconds
 
-[Retransmission count          : 3]{lang="EN-US"}
+Firmware upgrade              : Enabled
 
-[Retransmission interval       : 5 seconds]{lang="EN-US"}
+Sent control packets          : 1
 
-[Firmware upgrade              : Enabled]{lang="EN-US"}
+Received control packets      : 1
 
-[Sent control packets          : 1]{lang="EN-US"}
+Connection count              : 1
 
-[Received control packets      : 1]{lang="EN-US"}
+Radio 1:
 
-[Connection count              : 1]{lang="EN-US"}
+    Basic BSSID               : N/A
 
-[Radio 1:]{lang="EN-US"}
+    Admin state               : Down
 
-[    Basic BSSID               : N/A]{lang="EN-US"}
+    Radio type                : 802.11n(5GHz)
 
-[    Admin state               : Down]{lang="EN-US"}
+    Client dot11n-only        : Disabled
 
-[    Radio type                : 802.11n(5GHz)]{lang="EN-US"}
+    Channel band-width        : 20/40MHz
 
-[    Client dot11n-only        : Disabled]{lang="EN-US"}
+    Secondary channel offset  : SCN
 
-[    Channel band-width        : 20/40MHz]{lang="EN-US"}
+    Short GI for 20MHz        : Supported
 
-[    Secondary channel offset  : SCN]{lang="EN-US"}
+    Short GI for 40MHz        : Supported
 
-[    Short GI for 20MHz        : Supported]{lang="EN-US"}
+    A-MSDU                    : Enabled
 
-[    Short GI for 40MHz        : Supported]{lang="EN-US"}
+    A-MPDU                    : Enabled
 
-[    A-MSDU                    : Enabled]{lang="EN-US"}
+    Operational HT MCS Set:
 
-[    A-MPDU                    : Enabled]{lang="EN-US"}
+        Mandatory             : Not configured
 
-[    Operational HT MCS Set:]{lang="EN-US"}
+        Supported             : Not configured
 
-[        Mandatory             : Not configured]{lang="EN-US"}
+    Channel                   : auto\<64\>
 
-[        Supported             : Not configured]{lang="EN-US"}
+    Max power                 : 13 dBm
 
-[    Channel                   : auto\<64\>]{lang="EN-US"}
+    Operational rate:
 
-[    Max power                 : 13 dBm]{lang="EN-US"}
+        Mandatory             : 6, 12, 24 Mbps
 
-[    Operational rate:]{lang="EN-US"}
+        Supported             : 9, 18, 36, 48, 54 Mbps
 
-[        Mandatory             : 6, 12, 24 Mbps]{lang="EN-US"}
+        Multicast             : 24 Mbps
 
-[        Supported             : 9, 18, 36, 48, 54 Mbps]{lang="EN-US"}
+        Disabled              : Not configured
 
-[        Multicast             : 24 Mbps]{lang="EN-US"}
+    beacon-interval           : 100 time unit
 
-[        Disabled              : Not configured]{lang="EN-US"}
+    distance                  : 1 kilometer
 
-[    beacon-interval           : 100 time unit]{lang="EN-US"}
+Radio 2:
 
-[    distance                  : 1 kilometer]{lang="EN-US"}
+    Basic BSSID               : N/A
 
-[Radio 2:]{lang="EN-US"}
+    Admin state               : Down
 
-[    Basic BSSID               : N/A]{lang="EN-US"}
+    Radio type                : 802.11n(2.4GHz)
 
-[    Admin state               : Down]{lang="EN-US"}
+    Client dot11n-only        : Disabled
 
-[    Radio type                : 802.11n(2.4GHz)]{lang="EN-US"}
+    Channel band-width        : 20MHz
 
-[    Client dot11n-only        : Disabled]{lang="EN-US"}
+    Secondary channel offset  : SCN
 
-[    Channel band-width        : 20MHz]{lang="EN-US"}
+    Short GI for 20MHz        : Supported
 
-[    Secondary channel offset  : SCN]{lang="EN-US"}
+    Short GI for 40MHz        : Supported
 
-[    Short GI for 20MHz        : Supported]{lang="EN-US"}
+    A-MSDU                    : Enabled
 
-[    Short GI for 40MHz        : Supported]{lang="EN-US"}
+    A-MPDU                    : Enabled
 
-[    A-MSDU                    : Enabled]{lang="EN-US"}
+    Operational HT MCS Set:
 
-[    A-MPDU                    : Enabled]{lang="EN-US"}
+        Mandatory             : Not configured
 
-[    Operational HT MCS Set:]{lang="EN-US"}
+        Supported             : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
 
-[        Mandatory             : Not configured]{lang="EN-US"}
+                                10, 11, 12, 13, 14, 15
 
-[        Supported             : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9,]{lang="EN-US"}
+    Channel                   : auto\<6\>
 
-[                                10, 11, 12, 13, 14, 15]{lang="EN-US"}
+    Max power                 : 20 dBm
 
-[    Channel                   : auto\<6\>]{lang="EN-US"}
+    Preamble type             : short
 
-[    Max power                 : 20 dBm]{lang="EN-US"}
+    Operational rate:
 
-[    Preamble type             : short]{lang="EN-US"}
+        Mandatory             : 1, 2, 5.5, 11 Mbps
 
-[    Operational rate:]{lang="EN-US"}
+        Supported             : 6, 9, 12, 18, 24, 36, 48, 54 Mbps
 
-[        Mandatory             : 1, 2, 5.5, 11 Mbps]{lang="EN-US"}
+        Multicast             : 11 Mbps
 
-[        Supported             : 6, 9, 12, 18, 24, 36, 48, 54 Mbps]{lang="EN-US"}
+        Disabled              : Not configured
 
-[        Multicast             : 11 Mbps]{lang="EN-US"}
+表1-2 display wlan ap name verbose命令显示信息描述表
 
-[        Disabled              : Not configured]{lang="EN-US"}
+字段
 
-[[表1-2 ]{lang="EN-US"}[display wlan ap name verbose]{lang="EN-US"}]{#struct_0_73193_x1990_285382425}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x1965531437}[[字段]{style="font-family:黑体"}]{#struct_0_73193_x1990_x968014559}
+AP ID
 
-[[描述]{style="font-family:黑体"}]{#struct_0_73193_x1990_x98241849}
+AP的ID号，用于唯一标识一个AP
 
-[[AP ID]{lang="EN-US"}]{#struct_0_73193_x1990_1442291737}
+State
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x756434768}[的]{style="font-family:宋体"}[ID]{lang="EN-US"}[号，用于唯一标识一个]{style="font-family:宋体"}[AP]{lang="EN-US"}
+AP当前状态：
 
-[[State]{lang="EN-US"}]{#struct_0_73193_x1990_1509105698}
+·Idle：空闲状态
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_1522428616}[当前状态：]{style="font-family:宋体"}
+·Join：连接建立状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Idle]{lang="EN-US"}]{#struct_0_73193_x1990_1458033971}[：空闲]{lang="EN-US" style="font-family:宋体"}[状态]{style="font-family:宋体"}
+·JoinAck：LWAPP连接确认状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Join]{lang="EN-US"}]{#struct_0_73193_x1990_1279838021}[：连接建立状态]{style="font-family:宋体"}
+·Image Download：版本下载状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[JoinAck]{lang="EN-US"}]{#struct_0_73193_x1990_1600360233}[：]{lang="EN-US" style="font-family:宋体"}[LWAPP]{lang="EN-US"}[连接确认状态]{lang="EN-US" style="font-family:宋体"}
+·Config：初始化配置下载状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Image Download]{lang="EN-US"}]{#struct_0_73193_x1990_x1343216631}[：版本下载状态]{lang="EN-US" style="font-family:宋体"}
+·Data Check：数据校验状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Config]{lang="EN-US"}]{#struct_0_73193_x1990_x534224973}[：初始化配置下载状态]{lang="EN-US" style="font-family:宋体"}
+·Run：运行状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Data Check]{lang="EN-US"}]{#struct_0_73193_x1990_x995291265}[：数据校验状态]{lang="EN-US" style="font-family:宋体"}
+Model
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Run]{lang="EN-US"}]{#struct_0_73193_x1990_x1704021790}[：运行状态]{lang="EN-US" style="font-family:宋体"}
+AP型号信息
 
-[[Model]{lang="EN-US"}]{#struct_0_73193_x1990_x108049970}
+Serial ID
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x999290386}[型号信息]{style="font-family:宋体"}
+AP序列号。如果未指定序列号，显示为Not configured
 
-[[Serial ID]{lang="EN-US"}]{#struct_0_73193_x1990_x447732357}
+IP address
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_596256824}[序列号。如果未指定序列号，显示为]{style="font-family:宋体"}[Not configured]{lang="EN-US"}
+AP当前连接的IP地址
 
-[[IP address]{lang="EN-US"}]{#struct_0_73193_x1990_x814047655}
+H/W version
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_598885967}[当前连接的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+AP当前硬件信息
 
-[[H/W version]{lang="EN-US"}]{#struct_0_73193_x1990_1814198795}
+S/W version
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_595241431}[当前硬件信息]{style="font-family:宋体"}
+AP当前软件信息
 
-[[S/W version]{lang="EN-US"}]{#struct_0_73193_x1990_1143685668}
+Boot version
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_500753853}[当前软件信息]{style="font-family:宋体"}
+AP当前引导程序版本
 
-[[Boot version]{lang="EN-US"}]{#struct_0_73193_x1990_x1710507998}
+Description
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_1948003723}[当前引导程序版本]{style="font-family:宋体"}
+AP描述信息。如果未指定描述信息，显示为Not configured
 
-[[Description]{lang="EN-US"}]{#struct_0_73193_x1990_248114854}
+Priority
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x946747980}[描述信息。如果未指定描述信息，显示为]{style="font-family:宋体"}[Not configured]{lang="EN-US"}
+AC配置的AP连接的优先级
 
-[[Priority]{lang="EN-US"}]{#struct_0_73193_x1990_22137458}
+Echo interval
 
-[[AC]{lang="EN-US"}]{#struct_0_73193_x1990_x529378599}[配置的]{style="font-family:宋体"}[AP]{lang="EN-US"}[连接的优先级]{style="font-family:宋体"}
+AP的两次回声请求的时间间隔
 
-[[Echo interval]{lang="EN-US"}]{#struct_0_73193_x1990_x1878678043}
+Statistics report interval
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x1484036922}[的两次回声请求的时间间隔]{style="font-family:宋体"}
+AP上报统计信息的时间间隔
 
-[[Statistics report interval]{lang="EN-US"}]{#struct_0_73193_x1990_x1317969087}
+CIR
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x219586806}[上报统计信息的时间间隔]{style="font-family:宋体"}
+限制AC向AP发送数据报文的速率。如果未指定速率，显示为Not configured
 
-[[CIR]{lang="EN-US"}]{#struct_0_73193_x1990_1181465524}
+CBS
 
-[[限制]{style="font-family:宋体"}[AC]{lang="EN-US"}]{#struct_0_73193_x1990_235126263}[向]{style="font-family:宋体"}[AP]{lang="EN-US"}[发送数据报文的速率。如果未指定速率，显示为]{style="font-family:宋体"}[Not configured]{lang="EN-US"}
+限制AC向AP发送数据报文的突发尺寸。如果未指定突发尺寸，显示为Not configured
 
-[[CBS]{lang="EN-US"}]{#struct_0_73193_x1990_x918606057}
+Jumbo frame value
 
-[[限制]{style="font-family:宋体"}[AC]{lang="EN-US"}]{#struct_0_73193_x1990_1410914268}[向]{style="font-family:宋体"}[AP]{lang="EN-US"}[发送数据报文的突发尺寸。如果未指定突发尺寸，显示为]{style="font-family:宋体"}[Not configured]{lang="EN-US"}
+AC配置的AP的Jumbo帧的最大长度。如果未指定最大长度，显示为Disabled
 
-[[Jumbo frame value]{lang="EN-US"}]{#struct_0_73193_x1990_x1881221524}
+MAC address
 
-[[AC]{lang="EN-US"}]{#struct_0_73193_x1990_x530456789}[配置的]{style="font-family:宋体"}[AP]{lang="EN-US"}[的]{style="font-family:宋体"}[Jumbo]{lang="EN-US"}[帧的最大长度。如果未指定最大长度，显示为]{style="font-family:宋体"}[Disabled]{lang="EN-US"}
+AP的MAC地址
 
-[[MAC address]{lang="EN-US"}]{#struct_0_73193_x1990_11467108}
+MAC type
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_2049979416}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+AP与AC连接的MAC模式类型：
 
-[[MAC type]{lang="EN-US"}]{#struct_0_73193_x1990_x155169673}
+·Local MAC：AP侧数据帧支持802.3格式封装
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_73867838}[与]{style="font-family:宋体"}[AC]{lang="EN-US"}[连接的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[模式类型：]{style="font-family:宋体"}
+·Split MAC：AP侧数据帧支持802.11格式封装
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Local MAC]{lang="EN-US"}]{#struct_0_73193_x1990_x1859784113}[：]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[侧数据帧支持]{lang="EN-US" style="font-family:宋体"}[802.3]{lang="EN-US"}[格式封装]{lang="EN-US" style="font-family:宋体"}
+·Local & Split MAC：AP侧数据帧支持802.3与802.11格式封装
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Split MAC]{lang="EN-US"}]{#struct_0_73193_x1990_x832184887}[：]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[侧数据帧支持]{lang="EN-US" style="font-family:宋体"}[802.11]{lang="EN-US"}[格式封装]{lang="EN-US" style="font-family:宋体"}
+Tunnel mode
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Local & Split MAC]{lang="EN-US"}]{#struct_0_73193_x1990_1696796572}[：]{lang="EN-US" style="font-family:
-  宋体"}[AP]{lang="EN-US"}[侧数据帧支持]{lang="EN-US" style="font-family:
-  宋体"}[802.3]{lang="EN-US"}[与]{lang="EN-US" style="font-family:宋体"}[802.11]{lang="EN-US"}[格式封装]{lang="EN-US" style="font-family:宋体"}
+AP支持的隧道模式：
 
-[[Tunnel mode]{lang="EN-US"}]{#struct_0_73193_x1990_x1721253614}
+·Local Bridging：AP侧支持用户数据本地桥接，不上送给AC
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_1764966156}[支持的隧道模式：]{style="font-family:宋体"}
+·802.3 Frame：AP侧支持用户数据以802.3帧格式封装上传给AC
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Local Bridging]{lang="EN-US"}]{#struct_0_73193_x1990_17567305}[：]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[侧支持用户数据本地桥接，不上送给]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}
+·Native Frame：AP侧支持用户数据以802.11帧格式封装上传给AC
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[802.3 Frame]{lang="EN-US"}]{#struct_0_73193_x1990_x616426157}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[侧支持用户数据以]{style="font-family:宋体"}[802.3]{lang="EN-US"}[帧格式封装上传给]{style="font-family:宋体"}[AC]{lang="EN-US"}
+·Local Bridging & 802.3 Frame：AP侧支持用户数据本地桥接、以802.3帧格式封装上传
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Native Frame]{lang="EN-US"}]{#struct_0_73193_x1990_1007629741}[：]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[侧支持用户数据以]{lang="EN-US" style="font-family:宋体"}[802.11]{lang="EN-US"}[帧格式封装上传给]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}
+·802.3 Frame & Native Frame：AP侧支持用户数据以802.3或802.11帧格式封装上传
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Local Bridging & 802.3 Frame]{lang="EN-US"}]{#struct_0_73193_x1990_636960023}[：]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[侧支持用户数据本地桥接、以]{lang="EN-US" style="font-family:宋体"}[802.]{lang="EN-US"}[3]{lang="EN-US"}[帧格式封装上传]{lang="EN-US" style="font-family:宋体"}
+·Local Bridging & Native Frame：AP侧支持用户数据本地桥接、以802.11帧格式封装上传
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[802.3 Frame & Native Frame]{lang="EN-US"}]{#struct_0_73193_x1990_819672352}[：]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[侧支持用户数据以]{lang="EN-US" style="font-family:宋体"}[802.3]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[802.11]{lang="EN-US"}[帧格式封装上传]{lang="EN-US" style="font-family:宋体"}
+·Local Bridging & 802.3 Frame & Native Frame：AP侧支持用户数据本地桥接、以802.3或802.11帧格式封装上传
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Local Bridging & Native Frame]{lang="EN-US"}]{#struct_0_73193_x1990_x1175841696}[：]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[侧支持用户数据本地桥接、以]{lang="EN-US" style="font-family:宋体"}[802.11]{lang="EN-US"}[帧格式封装上传]{lang="EN-US" style="font-family:宋体"}
+Discovery type
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Local Bridging & 802.3 Frame & Native Frame]{lang="EN-US"}]{#struct_0_73193_x1990_x307813170}[：]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[侧支持用户数据本地桥接、以]{lang="EN-US" style="font-family:宋体"}[802.3]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[802.11]{lang="EN-US"}[帧格式封装上传]{lang="EN-US" style="font-family:宋体"}
+AP的发现方式：
 
-[[Discovery type]{lang="EN-US"}]{#struct_0_73193_x1990_x558454200}
+·Static Configuration：AP使用静态配置的IPv4或IPv6地址发现AC
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x1605623780}[的发现方式：]{style="font-family:宋体"}
+·DHCP：AP使用DHCP选项发现AC
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Static Configuration]{lang="EN-US"}]{#struct_0_73193_x1990_1580325519}[：]{lang="EN-US" style="font-family:
-  宋体"}[AP]{lang="EN-US"}[使用静态配置的]{lang="EN-US" style="font-family:
-  宋体"}[IPv4]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址发现]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}
+·DNS：AP使用DHCP+DNS发现AC
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DHCP]{lang="EN-US"}]{#struct_0_73193_x1990_x444088678}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[使用]{style="font-family:宋体"}[DHCP]{lang="EN-US"}[选项发现]{style="font-family:宋体"}[AC]{lang="EN-US"}
+·Unknown：未知的发现方式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DNS]{lang="EN-US"}]{#struct_0_73193_x1990_1457968435}[：]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[使用]{lang="EN-US" style="font-family:宋体"}[DHCP+DNS]{lang="EN-US"}[发现]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}
+Retransmission count
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown]{lang="EN-US"}]{#struct_0_73193_x1990_1091815617}[：未知的发现方式]{lang="EN-US" style="font-family:宋体"}
+AC重传请求报文的重传次数
 
-[[Retransmission count]{lang="EN-US"}]{#struct_0_73193_x1990_x985942667}
+Retransmission interval
 
-[[AC]{lang="EN-US"}]{#struct_0_73193_x1990_x703636461}[重传请求报文的重传次数]{style="font-family:宋体"}
+AC重传请求报文的重传间隔
 
-[[Retransmission interval]{lang="EN-US"}]{#struct_0_73193_x1990_x108115506}
+Firmware upgrade
 
-[[AC]{lang="EN-US"}]{#struct_0_73193_x1990_x1321256986}[重传请求报文的重传间隔]{style="font-family:宋体"}
+AP的版本下载：
 
-[[Firmware upgrade]{lang="EN-US"}]{#struct_0_73193_x1990_x84828823}
+·Enabled：开启AP的版本下载
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_781104513}[的版本下载：]{style="font-family:宋体"}
+·Disabled：关闭AP的版本下载
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_73193_x1990_1814133259}[：开启]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[的版本下载]{lang="EN-US" style="font-family:宋体"}
+Sent control packets
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_73193_x1990_1813096250}[：关闭]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[的版本下载]{lang="EN-US" style="font-family:宋体"}
+AC在Run状态之后发送的控制报文的个数（包含Change State Event Response报文）
 
-[[Sent control packets]{lang="EN-US"}]{#struct_0_73193_x1990_x1185092002}
+Received control packets
 
-[[AC]{lang="EN-US"}]{#struct_0_73193_x1990_1994649314}[在]{style="font-family:宋体"}[Run]{lang="EN-US"}[状态之后发送的控制报文的个数（包含]{style="font-family:宋体"}[Change State Event Response]{lang="EN-US"}[报文）]{style="font-family:宋体"}
+AC在Run状态之后接收的控制报文的个数（包含Change State Event Request报文）
 
-[[Received control packets]{lang="EN-US"}]{#struct_0_73193_x1990_248049318}
+Connection count
 
-[[AC]{lang="EN-US"}]{#struct_0_73193_x1990_1314780882}[在]{style="font-family:宋体"}[Run]{lang="EN-US"}[状态之后接收的控制报文的个数（包含]{style="font-family:宋体"}[Change State Event Request]{lang="EN-US"}[报文）]{style="font-family:宋体"}
+AP和AC的连接次数，只有在以下情况下连接次数会清零：
 
-[[Connection count]{lang="EN-US"}]{#struct_0_73193_x1990_678511185}
+·AP重启
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x410399189}[和]{style="font-family:宋体"}[AC]{lang="EN-US"}[的连接次数，只有在以下情况下连接次数会清零：]{style="font-family:宋体"}
+·重新配置AP序列号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[AP]{lang="EN-US"}]{#struct_0_73193_x1990_678511182}[重启]{style="font-family:宋体"}
+需要注意的是，使用reset wlan ap命令不会造成AP连接次数清零
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[重新配置]{style="font-family:宋体"}]{#struct_0_73193_x1990_x410399196}[AP]{lang="EN-US"}[序列号]{style="font-family:宋体"}
+Basic BSSID
 
-[[需要注意的是，使用]{style="font-family:宋体"}[reset wlan ap]{lang="EN-US"}]{#struct_0_73193_x1990_420086402}[命令不会造成]{style="font-family:宋体"}[AP]{lang="EN-US"}[连接次数清零]{style="font-family:宋体"}
+Radio的MAC地址。N/A表示AP还未与AC建立CAPWAP隧道
 
-[[Basic BSSID]{lang="EN-US"}]{#struct_0_73193_x1990_x533677415}
+Admin state
 
-[[Radio]{lang="EN-US"}]{#struct_0_73193_x1990_1040300706}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}[N/A]{lang="EN-US"}[表示]{style="font-family:宋体"}[AP]{lang="EN-US"}[还未与]{style="font-family:宋体"}[AC]{lang="EN-US"}[建立]{style="font-family:宋体"}[CAPWAP]{lang="EN-US"}[隧道]{style="font-family:宋体"}
+Radio状态：
 
-[[Admin state]{lang="EN-US"}]{#struct_0_73193_x1990_1040300704}
+·Up：{.MsoCommentReference}Radio处于开启状态
 
-[[Radio]{lang="EN-US"}]{#struct_0_73193_x1990_1040300701}[状态：]{style="font-family:宋体"}
+·Down：{.MsoCommentReference}Radio处于关闭状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Up]{lang="EN-US"}]{#struct_0_73193_x1990_1040300699}[[：]{style="font-size:10.5pt;font-family:宋体"}]{.MsoCommentReference}[Radio]{lang="EN-US"}[处于开启状态]{style="font-family:宋体"}
+Wireless mode
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Down]{lang="EN-US"}]{#struct_0_73193_x1990_1040300697}[[：]{style="font-size:10.5pt;font-family:宋体"}]{.MsoCommentReference}[Radio]{lang="EN-US"}[处于关闭状态]{style="font-family:宋体"}
+Radio类型：802.11a、802.11n（5GHz）、802.11b、802.11g、802.11n（2.4GHz）
 
-[[Wireless mode]{lang="EN-US"}]{#struct_0_73193_x1990_x916014430}
+Client dot11n-only
 
-[[Radio]{lang="EN-US"}]{#struct_0_73193_x1990_x916014432}[类型：]{style="font-family:宋体"}[802.11a]{lang="EN-US"}[、]{style="font-family:宋体"}[802.11n]{lang="EN-US"}[（]{style="font-family:宋体"}[5GHz]{lang="EN-US"}[）、]{style="font-family:宋体"}[802.11b]{lang="EN-US"}[、]{style="font-family:宋体"}[802.11g]{lang="EN-US"}[、]{style="font-family:宋体"}[802.11n]{lang="EN-US"}[（]{style="font-family:宋体"}[2.4GHz]{lang="EN-US"}[）]{style="font-family:宋体"}
+仅允许802.11n及802.11ac客户端接入功能：
 
-[[Client dot11n-only]{lang="EN-US"}]{#struct_0_73193_x1990_1267208119}
+·Disabled：兼容802.11a/b/g的无线客户端，同时还要接入802.11n或802.11ac的无线客户端
 
-[[仅允许]{style="font-family:宋体"}[802.11n]{lang="EN-US"}]{#struct_0_73193_x1990_1651683125}[及]{style="font-family:宋体"}[802.11ac]{lang="EN-US"}[客户端接入功能：]{style="font-family:宋体"}
+·Enabled：只有802.11n或802.11ac的无线客户端才能接入射频
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_73193_x1990_x298875822}[：兼容]{lang="EN-US" style="font-family:宋体"}[802.11a/b/g]{lang="EN-US"}[的无线客户端，同时还要接入]{lang="EN-US" style="font-family:宋体"}[802.11n]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[802.11ac]{lang="EN-US"}[的无线客户端]{lang="EN-US" style="font-family:宋体"}
+Channel band-width
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_73193_x1990_63545149}[：只有]{lang="EN-US" style="font-family:宋体"}[802.11n]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[802.11ac]{lang="EN-US"}[的无线客户端才能接入射频]{lang="EN-US" style="font-family:宋体"}
+配置的带宽模式：
 
-[[Channel band-width]{lang="EN-US"}]{#struct_0_73193_x1990_1396278396}
+5MHz：工作带宽为5MHz
 
-[[配置的带宽模式：]{style="font-family:宋体"}]{#struct_0_73193_x1990_1831711758}
+10MHz：工作带宽为10MHz
 
-[[5MHz]{lang="EN-US"}]{#struct_0_73193_x1990_104408705}[：工作带宽为]{style="font-family:宋体"}[5MHz]{lang="EN-US"}
+20MHz：工作带宽为20MHz
 
-[[10MHz]{lang="EN-US"}]{#struct_0_73193_x1990_x1354498862}[：工作带宽为]{style="font-family:宋体"}[10MHz]{lang="EN-US"}
+20/40MHz：工作带宽为20/40MHz
 
-[[20MHz]{lang="EN-US"}]{#struct_0_73193_x1990_664919802}[：工作带宽为]{style="font-family:宋体"}[20MHz]{lang="EN-US"}
+80MHz：工作带宽为80MHz
 
-[[20/40MHz]{lang="EN-US"}]{#struct_0_73193_x1990_x1461675236}[：工作带宽为]{style="font-family:宋体"}[20/40MHz]{lang="EN-US"}
+Secondary channel offset
 
-[[80MHz]{lang="EN-US"}]{#struct_0_73193_x1990_x940948040}[：工作带宽为]{style="font-family:宋体"}[80MHz]{lang="EN-US"}
+802.11n射频模式中的辅信道信息：
 
-[[Secondary channel offset]{lang="EN-US"}]{#struct_0_73193_x1990_x474761593}
+SCA：Second Channel Above，表示射频当前工作在40MHz带宽模式，并且辅信道高于主信道
 
-[[802.11n]{lang="EN-US"}]{#struct_0_73193_x1990_x1414621069}[射频模式中的辅信道信息：]{style="font-family:宋体"}
+SCB：Second Channel Below，表示射频当前工作在40MHz带宽模式，并且辅信道低于主信道
 
-[[SCA]{lang="EN-US"}]{#struct_0_73193_x1990_602463302}[：]{style="font-family:宋体"}[Second Channel Above]{lang="EN-US"}[，表示射频当前工作在]{style="font-family:宋体"}[40MHz]{lang="EN-US"}[带宽模式，并且辅信道高于主信道]{style="font-family:宋体"}
+SCN：表示射频未工作在40MHz带宽模式
 
-[[SCB]{lang="EN-US"}]{#struct_0_73193_x1990_x700812540}[：]{style="font-family:宋体"}[Second Channel Below]{lang="EN-US"}[，表示射频当前工作在]{style="font-family:宋体"}[40MHz]{lang="EN-US"}[带宽模式，并且辅信道低于主信道]{style="font-family:宋体"}
+Short GI for 20MHz
 
-[[SCN]{lang="EN-US"}]{#struct_0_73193_x1990_1314262286}[：表示射频未工作在]{style="font-family:宋体"}[40MHz]{lang="EN-US"}[带宽模式]{style="font-family:宋体"}
+射频工作带宽为20MHz时，对于Short GI的支持情况：
 
-[[Short GI for 20MHz]{lang="EN-US"}]{#struct_0_73193_x1990_x599122903}
+Not supported：射频不支持20MHz Short GI
 
-[[射频工作带宽为]{style="font-family:宋体"}[20MHz]{lang="EN-US"}]{#struct_0_73193_x1990_x1259651989}[时，对于]{style="font-family:宋体"}[Short GI]{lang="EN-US"}[的支持情况：]{style="font-family:宋体"}
+Supported：射频支持20MHz Short GI
 
-[[Not supported]{lang="EN-US"}]{#struct_0_73193_x1990_x1058325173}[：射频不支持]{style="font-family:宋体"}[20MHz Short GI]{lang="EN-US"}
+Short GI for 40MHz
 
-[[Supported]{lang="EN-US"}]{#struct_0_73193_x1990_x1875615348}[：射频支持]{style="font-family:宋体"}[20MHz Short GI]{lang="EN-US"}
+射频工作带宽为40MHz时，对于Short GI的支持情况：
 
-[[Short GI for 40MHz]{lang="EN-US"}]{#struct_0_73193_x1990_x1121333735}
+Not supported：射频不支持40MHz Short GI
 
-[[射频工作带宽为]{style="font-family:宋体"}[40MHz]{lang="EN-US"}]{#struct_0_73193_x1990_1670558182}[时，对于]{style="font-family:宋体"}[Short GI]{lang="EN-US"}[的支持情况：]{style="font-family:宋体"}
+Supported：射频支持40MHz Short GI
 
-[[Not supported]{lang="EN-US"}]{#struct_0_73193_x1990_1472237459}[：射频不支持]{style="font-family:宋体"}[40MHz Short GI]{lang="EN-US"}
+Operational HT MCS Set
 
-[[Supported]{lang="EN-US"}]{#struct_0_73193_x1990_x117081005}[：射频支持]{style="font-family:宋体"}[40MHz Short GI]{lang="EN-US"}
+高吞吐操作MCS集：
 
-[[Operational HT MCS Set]{lang="EN-US"}]{#struct_0_73193_x1990_2073842709}
+·Supported：支持MCS索引
 
-[[高吞吐操作]{style="font-family:宋体"}[MCS]{lang="EN-US"}]{#struct_0_73193_x1990_161616052}[集：]{style="font-family:宋体"}
+·Mandatory：强制MCS索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Supported]{lang="EN-US"}]{#struct_0_73193_x1990_x48167673}[：支持]{lang="EN-US" style="font-family:宋体"}[MCS]{lang="EN-US"}[索引]{lang="EN-US" style="font-family:宋体"}
+A-MSDU
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Mandatory]{lang="EN-US"}]{#struct_0_73193_x1990_x1099254265}[：强制]{lang="EN-US" style="font-family:宋体"}[MCS]{lang="EN-US"}[索引]{lang="EN-US" style="font-family:宋体"}
+A-MSDU功能：
 
-[[A-MSDU]{lang="EN-US"}]{#struct_0_73193_x1990_507758768}
+·Disabled：A-MSDU功能处于关闭状态
 
-[[A-MSDU]{lang="EN-US"}]{#struct_0_73193_x1990_1090939751}[功能：]{style="font-family:宋体"}
+·Enabled：A-MSDU功能处于开启状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_73193_x1990_1412972056}[：]{lang="EN-US" style="font-family:宋体"}[A-MSDU]{lang="EN-US"}[功能]{lang="EN-US" style="font-family:宋体"}[处于关闭状态]{style="font-family:宋体"}
+A-MPDU
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_73193_x1990_x2127940444}[：]{lang="EN-US" style="font-family:宋体"}[A-MSDU]{lang="EN-US"}[功能]{lang="EN-US" style="font-family:宋体"}[处于开启状态]{style="font-family:宋体"}
+A-MPDU功能：
 
-[[A-MPDU]{lang="EN-US"}]{#struct_0_73193_x1990_1267273655}
+·Disabled：A-MPDU功能处于关闭状态
 
-[[A-MPDU]{lang="EN-US"}]{#struct_0_73193_x1990_x1504136734}[功能：]{style="font-family:宋体"}
+·Enabled：A-MPDU功能处于开启状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_73193_x1990_x8716030}[：]{lang="EN-US" style="font-family:宋体"}[A-MPDU]{lang="EN-US"}[功能]{lang="EN-US" style="font-family:宋体"}[处于关闭状态]{style="font-family:宋体"}
+Channel
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_73193_x1990_466829676}[：]{lang="EN-US" style="font-family:宋体"}[A-MPDU]{lang="EN-US"}[功能]{lang="EN-US" style="font-family:宋体"}[处于开启状态]{style="font-family:宋体"}
+Radio信道：
 
-[[Channel]{lang="EN-US"}]{#struct_0_73193_x1990_x916014434}
+·Auto\<*Number*\>：表示自动信道模式根据实际环境自动选择最优信道
 
-[[Radio]{lang="EN-US"}]{#struct_0_73193_x1990_x916014435}[信道：]{style="font-family:宋体"}
+·*Number*：手动配置的工作信道
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Auto\<*Number*\>]{lang="EN-US"}]{#struct_0_73193_x1990_x916014437}[：表示自动信道模式根据实际环境自动选择最优信道]{style="font-family:宋体"}
+Maximum power
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Number]{lang="EN-US"}*]{#struct_0_73193_x1990_x916014439}[：手动配置的工作信道]{style="font-family:宋体"}
+Radio的最大传输功率
 
-[[Maximum power]{lang="EN-US"}]{#struct_0_73193_x1990_657963681}
+Preamble type
 
-[[Radio]{lang="EN-US"}]{#struct_0_73193_x1990_657963679}[的最大传输功率]{style="font-family:宋体"}
+前导码类型：
 
-[[Preamble type]{lang="EN-US"}]{#struct_0_73193_x1990_657963677}
+·Long：长和短前导码
 
-[[前导码类型：]{style="font-family:宋体"}]{#struct_0_73193_x1990_657963675}
+·Short：短前导码
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Long]{lang="EN-US"}]{#struct_0_73193_x1990_657963673}[：长和短前导码]{style="font-family:宋体"}
+Operational rate
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Short]{lang="EN-US"}]{#struct_0_73193_x1990_x1298351455}[：短前导码]{style="font-family:宋体"}
+操作速率：
 
-[[Operational rate]{lang="EN-US"}]{#struct_0_73193_x1990_x1298351457}
+·Mandatory：强制速率
 
-[[操作速率：]{style="font-family:宋体"}]{#struct_0_73193_x1990_x1298351460}
+·Supported：支持速率
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Mandatory]{lang="EN-US"}]{#struct_0_73193_x1990_1676683257}[：强制速率]{lang="EN-US" style="font-family:宋体"}
+·Multicast：组播速率
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Supported]{lang="EN-US"}]{#struct_0_73193_x1990_1418312354}[：支持速率]{lang="EN-US" style="font-family:宋体"}
+·Disabled：禁止速率
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Multicast]{lang="EN-US"}]{#struct_0_73193_x1990_1418312352}[：]{lang="EN-US" style="font-family:宋体"}[组]{style="font-family:宋体"}[播速率]{lang="EN-US" style="font-family:宋体"}
+·Not configured：未指定速率
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_73193_x1990_1418312350}[：禁止速率]{lang="EN-US" style="font-family:宋体"}
+\# 显示所有AP上的radio信息。
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not configured]{lang="EN-US"}]{#struct_0_73193_x1990_1418312347}[：]{lang="EN-US" style="font-family:宋体"}[未指定速率]{style="font-family:宋体"}
+\<Sysname\> display wlan ap all radio
 
-[ ]{lang="EN-US"}
+Total number of APs                       : 3
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_1629937641}[显示所有]{style="font-family:宋体"}[AP]{lang="EN-US"}[上的]{style="font-family:宋体"}[radio]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+Total number of connected APs             : 1
 
-[[\<Sysname\> display wlan ap all radio]{lang="EN-US"}]{#struct_0_73193_x1990_678511183}
+Total number of connected auto APs        : 0
 
-[Total number of APs                       : 3]{lang="EN-US"}
+AP                    Radio ID             Channel           Tx power (dBm)
 
-[Total number of connected APs             : 1]{lang="EN-US"}
+ap1                   1                    161               79
 
-[Total number of connected auto APs        : 0]{lang="EN-US"}
+ap1                   2                    3                 100
 
-[ ]{lang="EN-US"}
+ap2                   1                    157               79
 
-[AP                    Radio ID             Channel           Tx power (dBm)]{lang="EN-US"}
+ap2                   2                    11                100
 
-[ap1                   1                    161               79]{lang="EN-US"}
+ap3                   1                    161               79
 
-[ap1                   2                    3                 100]{lang="EN-US"}
+ap3                   2                    5                 100
 
-[ap2                   1                    157               79]{lang="EN-US"}
+\# 显示ap1上的radio信息。
 
-[ap2                   2                    11                100]{lang="EN-US"}
+\<Sysname\> display wlan ap name ap1 radio
 
-[ap3                   1                    161               79]{lang="EN-US"}
+AP                    Radio ID             Channel          Tx power (dBm)
 
-[ap3                   2                    5                 100]{lang="EN-US"}
+ap1                   1                    161              79
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_x410399195}[显示]{style="font-family:宋体"}[ap1]{lang="EN-US"}[上的]{style="font-family:宋体"}[radio]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+ap1                   2                    3                100
 
-[[\<Sysname\> display wlan ap name ap1 radio]{lang="EN-US"}]{#struct_0_73193_x1990_420020866}
+表1-3 display wlan ap name命令显示信息描述表
 
-[AP                    Radio ID             Channel          Tx power (dBm)]{lang="EN-US"}
+字段
 
-[ap1                   1                    161              79]{lang="EN-US"}
+描述
 
-[ap1                   2                    3                100]{lang="EN-US"}
+AP
 
-[[表1-3 ]{lang="EN-US"}[display wlan ap name]{lang="EN-US"}]{#struct_0_73193_x1990_x1482116089}[命令显示信息描述表]{style="font-family:黑体"}
+AP名称
 
-[]{#table_struct_0_x1819679896}[[字段]{style="font-family:黑体"}]{#struct_0_73193_x1990_1867989590}
+Radio ID
 
-[[描述]{style="font-family:黑体"}]{#struct_0_73193_x1990_x22994319}
+射频的ID号
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_1867989591}
+Channel
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x23059855}[名称]{style="font-family:宋体"}
+射频使用的工作信道
 
-[[Radio ID]{lang="EN-US"}]{#struct_0_73193_x1990_x2049603759}
+Tx power (dBm)
 
-[[射频的]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_73193_x1990_1867989588}[号]{style="font-family:宋体"}
-
-[[Channel]{lang="EN-US"}]{#struct_0_73193_x1990_x23518608}
-
-[[射频使用的工作信道]{style="font-family:宋体"}]{#struct_0_73193_x1990_469760210}
-
-[[Tx power (dBm)]{lang="EN-US"}]{#struct_0_73193_x1990_1867989589}
-
-[[射频的发送功率（缺省为最大功率）]{style="font-family:宋体"}]{#struct_0_73193_x1990_x23584144}
-
-[ ]{lang="EN-US"}
-
-::: {#-515331716 .myid}
-[]{#_Toc404794812}[]{#struct_0_73193_x1990_x604961604}
+射频的发送功率（缺省为最大功率）
 
 **AP管理 \-- AP管理配置命令 \-- display wlan ap reboot-log**
 
 ------------------------------------------------------------------------
 
-[**[display wlan ap reboot-log]{lang="EN-US"}**]{#struct_0_73193_x1990_x1608620447}[命令用来显示指定]{style="font-family:
-宋体"}[AP]{lang="EN-US"}[的重启日志信息。]{style="font-family:宋体"}
+**[display wlan ap reboot-log**]命令用来显示指定AP的重启日志信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1850506586}
+【命令】
 
-[**[display wlan ap reboot-log name]{lang="EN-US"}**[ *ap-name*]{lang="EN-US"}]{#struct_0_73193_x1990_x1224972076}
+**[display wlan ap reboot-log name** *ap-name*]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1649471380}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_73193_x1990_x1318034623}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_753752508}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_809939970}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_73193_x1990_x326215388}
+network-operator
 
-[[mdc -admin]{lang="EN-US"}]{#struct_0_73193_x1990_x1553489187}
+mdc -admin
 
-[[mdc -operator]{lang="EN-US"}]{#struct_0_73193_x1990_52733800}
+mdc -operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_556016841}
+【参数】
 
-[**[name]{lang="EN-US"}***[ ap-name]{lang="EN-US"}*]{#struct_0_73193_x1990_1296211407}[：]{style="font-family:宋体"}[指定重启的]{style="font-family:宋体"}[AP]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+**[name*** ap-name*]：指定重启的AP的名称，为1～63个字符的字符串，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_73193_x1990_2007295060}
+【使用指导】
 
-[[如果]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_73193_x1990_1782079016}[曾发生过系统崩溃，那么可以使用该命令查看相关信息，注意指定的]{style="font-family:宋体"}[AP]{lang="EN-US"}[必须处于]{style="font-family:宋体"}[Run]{lang="EN-US"}[状态。]{style="font-family:宋体"}
+如果AP曾发生过系统崩溃，那么可以使用该命令查看相关信息，注意指定的AP必须处于Run状态。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x301119691}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_1410848732}[显示名为]{style="font-family:宋体"}[ap1]{lang="EN-US"}[的]{style="font-family:宋体"}[AP]{lang="EN-US"}[的重启日志信息。]{style="font-family:宋体"}
+\# 显示名为ap1的AP的重启日志信息。
 
-[[\<Sysname\> display wlan ap reboot-log name ap1]{lang="EN-US"}]{#struct_0_73193_x1990_2029431030}
+\<Sysname\> display wlan ap reboot-log name ap1
 
-[Debugging information is not available on the AC.]{lang="EN-US"}
+Debugging information is not available on the AC.
 
-[Downloading debugging data from AP. Continue? \[Y/N\]:y]{lang="EN-US"}
+Downloading debugging data from AP. Continue? [Y/N:y]
 
-[Downloading debugging data. Please wait\...]{lang="EN-US"}
+Downloading debugging data. Please wait\...
 
-[Please enter the same command again to view the log messages.]{lang="EN-US"}
+Please enter the same command again to view the log messages.
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x214786943}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset wlan ap reboot-log]{lang="EN-US"}**]{#struct_0_73193_x1990_x1188774926}
-:::
-
-::: {#1724885851 .myid}
-[]{#_Toc404794813}[]{#struct_0_73193_x1990_x603331491}[]{#_Toc393205673}
+·**reset wlan ap reboot-log**
 
 **AP管理 \-- AP管理配置命令 \-- display wlan ap-group**
 
 ------------------------------------------------------------------------
 
-[**[display wlan ap-group]{lang="EN-US"}**]{#struct_0_73193_x1990_x720935502}[命令用来显示]{style="font-family:宋体"}[AP [Group]{style="color:black"}]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[display wlan ap-group**]命令用来显示AP [Group]信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_500933611}
+【命令】
 
-[**[display wlan ap-group]{lang="EN-US"}**[ [\[ ]{style="color:black"}*group-name* [\]]{style="color:black"}]{lang="EN-US"}]{#struct_0_73193_x1990_458816576}
+**[display wlan ap-group** [\*group-name* []]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_580954386}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_73193_x1990_930389682}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x235328590}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_439584531}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_73193_x1990_1925685268}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_1579865543}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_73193_x1990_x1891724845}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_2125551864}
+【参数】
 
-[*[group-name]{lang="EN-US"}*]{#struct_0_73193_x1990_1466276895}[：显示指定的]{style="font-family:宋体"}[AP]{lang="EN-US"}[组信息。如果未指定本参数，表示显示所有]{style="font-family:宋体"}[AP]{lang="EN-US"}[组信息。]{style="font-family:宋体"}
+*[group-name*]：显示指定的AP组信息。如果未指定本参数，表示显示所有AP组信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1087115175}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_2032848081}[显示全部]{style="font-family:宋体"}[AP]{lang="EN-US"}[组的信息。]{style="font-family:宋体"}
+\# 显示全部AP组的信息。
 
-[[\[System\] display wlan ap-group]{lang="EN-US"}]{#struct_0_73193_x1990_1091480690}
+System display wlan ap-group
 
-[AP group name       : default-group]{lang="EN-US"}
+AP group name       : default-group
 
-[Description         : Not configured]{lang="EN-US"}
+Description         : Not configured
 
-[AP model            : Not configured]{lang="EN-US"}
+AP model            : Not configured
 
-[APs                 : Not configured]{lang="EN-US"}
+APs                 : Not configured
 
-[ ]{lang="EN-US"}
+AP group name       : group1
 
-[AP group name       : group1]{lang="EN-US"}
+Description         : abcd
 
-[Description         : abcd]{lang="EN-US"}
+AP model            : WA2620i-AGN
 
-[AP model            : WA2620i-AGN]{lang="EN-US"}
+AP grouping rules:
 
-[AP grouping rules:]{lang="EN-US"}
+  AP name           : ap1, ap2
 
-[  AP name           : ap1, ap2]{lang="EN-US"}
+  Serial ID         : 123456789, 2345678
 
-[  Serial ID         : 123456789, 2345678]{lang="EN-US"}
+  MAC address       : 0012-2233-4455, 1112-3344-5566
 
-[  MAC address       : 0012-2233-4455, 1112-3344-5566]{lang="EN-US"}
+APs                 : ap1 (AP name)
 
-[APs                 : ap1 (AP name)]{lang="EN-US"}
+\# 显示指定AP组的信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_x597862352}[显示指定]{style="font-family:宋体"}[AP]{lang="EN-US"}[组的信息。]{style="font-family:宋体"}
+System display wlan ap-group group1
 
-[[\[System\] display wlan ap-group group1]{lang="EN-US"}]{#struct_0_73193_x1990_x696035274}
+AP group name       : group1
 
-[AP group name       : group1]{lang="EN-US"}
+Description         : Not configured
 
-[Description         : Not configured]{lang="EN-US"}
+AP model            : WA2620i-AGN
 
-[AP model            : WA2620i-AGN]{lang="EN-US"}
+AP grouping rules:
 
-[AP grouping rules:]{lang="EN-US"}
+  AP name           : ap1, ap2
 
-[  AP name           : ap1, ap2]{lang="EN-US"}
+  Serial ID         : 123456789, 2345678
 
-[  Serial ID         : 123456789, 2345678]{lang="EN-US"}
+  MAC address       : 0012-2233-4455, 1112-3344-5566
 
-[  MAC address       : 0012-2233-4455, 1112-3344-5566]{lang="EN-US"}
+APs                 : ap1 (AP name)
 
-[APs                 : ap1 (AP name)]{lang="EN-US"}
+表1-4 display wlan ap-group命令显示信息描述表
 
-[[表1-4 ]{lang="EN-US"}[display wlan ap-group]{lang="EN-US"}]{#struct_0_73193_x1990_x1083776577}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1667003066}[[字段]{style="font-family:黑体"}]{#struct_0_73193_x1990_x152992797}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_73193_x1990_1022036417}
+AP group name 
 
-[[AP group name  ]{lang="EN-US"}]{#struct_0_73193_x1990_1801341609}
+组名
 
-[[组名]{style="font-family:宋体"}]{#struct_0_73193_x1990_x1221551960}
+AP grouping rules
 
-[[AP grouping rules]{lang="EN-US"}]{#struct_0_73193_x1990_x1719076738}
+入组规则
 
-[[入组规则]{style="font-family:宋体"}]{#struct_0_73193_x1990_x1034800177}
+AP model
 
-[[AP model]{lang="EN-US"}]{#struct_0_73193_x1990_354435265}
+AP型号名
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x1846914633}[型号名]{style="font-family:宋体"}
+AP name
 
-[[AP name]{lang="EN-US"}]{#struct_0_73193_x1990_203172027}
+入组规则：AP名字列表
 
-[[入组规则：]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_73193_x1990_1635059840}[名字列表]{style="font-family:宋体"}
+Serial ID
 
-[[Serial ID]{lang="EN-US"}]{#struct_0_73193_x1990_1767130459}
+入组规则：AP 序列号列表
 
-[[入组规则：]{style="font-family:宋体"}[AP ]{lang="EN-US"}]{#struct_0_73193_x1990_x1217965137}[序列号列表]{style="font-family:宋体"}
+MAC address
 
-[[MAC address]{lang="EN-US"}]{#struct_0_73193_x1990_326123430}
+入组规则：AP MAC地址列表
 
-[[入组规则：]{style="font-family:宋体"}[AP MAC]{lang="EN-US"}]{#struct_0_73193_x1990_x1362911914}[地址列表]{style="font-family:宋体"}
+APs
 
-[[APs]{lang="EN-US"}]{#struct_0_73193_x1990_x988341499}
+AP组中的AP
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_1358084397}[组中的]{style="font-family:宋体"}[AP]{lang="EN-US"}
+【相关命令】
 
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_856642204}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[wlan ap-group]{lang="EN-US"}**]{#struct_0_73193_x1990_79648290}
-
-::: {#-1061803161 .myid}
-[]{#_Toc404794814}[]{#struct_0_73193_x1990_x1552606510}[]{#_Toc403999219}[]{#_Toc403999220}[]{#_Toc403999221}[]{#_Toc403999222}[]{#_Toc403999223}[]{#_Toc403999224}[]{#_Toc403999225}[]{#_Toc403999226}[]{#_Toc403999227}[]{#_Toc403999228}[]{#_Toc403999229}[]{#_Toc403999230}[]{#_Toc403999231}[]{#_Toc403999232}[]{#_Toc403999233}[]{#_Toc403999234}[]{#_Toc403999235}[]{#_Toc403999236}[]{#_Toc403999237}[]{#_Toc403999238}[]{#_Toc403999239}[]{#_Toc403999240}[]{#_Toc403999241}[]{#_Toc403999242}[]{#_Toc403999243}[]{#_Toc403999244}[]{#_Toc403999245}[]{#_Toc403999246}[]{#_Toc403999247}[]{#_Toc403999248}[]{#_Toc403999276}
+·**wlan ap-group**
 
 **AP管理 \-- AP管理配置命令 \-- echo-interval**
 
 ------------------------------------------------------------------------
 
-[**[echo-interval]{lang="EN-US"}**]{#struct_0_73193_x1990_763836558}[命令用来设置两次回声请求的时间间隔。]{style="font-family:宋体"}
+**[echo-interval**]命令用来设置两次回声请求的时间间隔。
 
-[**[undo echo-interval]{lang="EN-US"}**]{#struct_0_73193_x1990_x2021280716}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo echo-interval**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1939993773}
+【命令】
 
-[**[echo-interval]{lang="EN-US"}**[ *interval*]{lang="EN-US"}]{#struct_0_73193_x1990_x1320384366}
+**[echo-interval** *interval*]
 
-[**[undo echo-interval]{lang="EN-US"}**]{#struct_0_73193_x1990_2092657307}
+**[undo echo-interval**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x155235209}
+【缺省情况】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_923839200}[视图：继承]{style="font-family:宋体"}[AP]{lang="EN-US"}[组配置。]{style="font-family:宋体"}
+AP视图：继承AP组配置。
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_2032520401}[组视图：]{style="font-family:宋体"}[AP]{lang="EN-US"}[发送回声请求的时间间隔为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+AP组视图：AP发送回声请求的时间间隔为10秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1415570308}
+【视图】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x2130223216}[视图]{style="font-family:宋体"}[/AP]{lang="EN-US"}[组视图]{style="font-family:宋体"}
+AP视图/AP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x358175456}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x283071748}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x611469155}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_711131870}
+【参数】
 
-[*[interval]{lang="EN-US"}*]{#struct_0_73193_x1990_x1037332458}[：]{style="font-family:宋体"}[指定]{style="font-family:宋体"}[AP]{lang="EN-US"}[发送两次回声请求之间的时间间隔，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[80]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[interval*]：指定AP发送两次回声请求之间的时间间隔，取值范围为5～80，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x713530801}
+【使用指导】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x367799683}[和]{style="font-family:宋体"}[AC]{lang="EN-US"}[之间通过保活机制来检查控制隧道是否正常工作。]{style="font-family:宋体"}[AP]{lang="EN-US"}[周期性地向]{style="font-family:宋体"}[AC]{lang="EN-US"}[发送回声请求]{style="font-family:宋体"}[Echo request]{lang="EN-US"}[报文，若一定时间内没有收到]{style="font-family:宋体"}[AC]{lang="EN-US"}[回复的]{style="font-family:宋体"}[Echo response]{lang="EN-US"}[报文，则]{style="font-family:宋体"}[AP]{lang="EN-US"}[断开控制隧道；若]{style="font-family:宋体"}[AC]{lang="EN-US"}[在一定时间内没有收到]{style="font-family:宋体"}[Echo request]{lang="EN-US"}[报文，则]{style="font-family:宋体"}[AC]{lang="EN-US"}[断开控制隧道。]{style="font-family:宋体"}
+AP和AC之间通过保活机制来检查控制隧道是否正常工作。AP周期性地向AC发送回声请求Echo request报文，若一定时间内没有收到AC回复的Echo response报文，则AP断开控制隧道；若AC在一定时间内没有收到Echo request报文，则AC断开控制隧道。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1721319150}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_1692922259}[设置]{style="font-family:宋体"}[ap3]{lang="EN-US"}[向]{style="font-family:宋体"}[AC]{lang="EN-US"}[发送的回声请求时间间隔为]{style="font-family:宋体"}[15]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 设置ap3向AC发送的回声请求时间间隔为15秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_73193_x1990_x1918341550}
+\<Sysname\> system-view
 
-[\[Sysname\] wlan ap ap3 model WA4620i-AGN]{lang="EN-US"}
+Sysname wlan ap ap3 model WA4620i-AGN
 
-[\[Sysname-wlan-ap-ap3\] echo-interval 15]{lang="EN-US"}
-:::
-
-::: {#-215738606 .myid}
-[]{#_Toc404794815}[]{#struct_0_73193_x1990_609727201}
+Sysname-wlan-ap-ap3 echo-interval 15
 
 **AP管理 \-- AP管理配置命令 \-- firmware-upgrade enable**
 
 ------------------------------------------------------------------------
 
-[**[firmware-upgrade enable]{lang="EN-US"}**]{#struct_0_73193_x1990_x571649615}[命令用来开启]{style="font-family:宋体"}[AP]{lang="EN-US"}[版本下载功能。]{style="font-family:宋体"}
+**[firmware-upgrade enable**]命令用来开启AP版本下载功能。
 
-[**[firmware-upgrade disable]{lang="EN-US"}**]{#struct_0_73193_x1990_1036773710}[命令用来关闭]{style="font-family:
-宋体"}[AP]{lang="EN-US"}[版本下载功能。]{style="font-family:宋体"}
+**[firmware-upgrade disable**]命令用来关闭AP版本下载功能。
 
-[**[undo firmware-upgrade]{lang="EN-US"}**]{#struct_0_73193_x1990_x1110865578}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo firmware-upgrade**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x183692957}
+【命令】
 
-[**[firmware-upgrade]{lang="EN-US"}**[ { **disable** \| **enable** }]{lang="EN-US"}]{#struct_0_73193_x1990_2091604985}
+**[firmware-upgrade**[ { **disable** \| **enable** }]]
 
-[**[undo firmware-upgrade]{lang="EN-US"}**]{#struct_0_73193_x1990_x1740431662}
+**[undo firmware-upgrade**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1741875803}
+【缺省情况】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_1007564205}[视图：开启]{style="font-family:宋体"}[AP]{lang="EN-US"}[版本下载功能。]{style="font-family:宋体"}
+AP视图：开启AP版本下载功能。
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x696362954}[组视图：未开启]{style="font-family:宋体"}[AP]{lang="EN-US"}[版本下载功能。]{style="font-family:宋体"}
+AP组视图：未开启AP版本下载功能。
 
-[[全局配置视图：]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x947372888}[版本下载功能处于开启状态。]{style="font-family:宋体"}
+全局配置视图：AP版本下载功能处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1323108941}
+【视图】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x1280955865}[视图]{style="font-family:宋体"}[/AP]{lang="EN-US"}[组视图]{style="font-family:宋体"}[/]{lang="EN-US"}[全局配置视图]{style="font-family:宋体"}
+AP视图/AP组视图/全局配置视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1949523291}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x981152095}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_1910790954}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1873085641}
+【参数】
 
-[**[disable]{lang="EN-US"}**]{#struct_0_73193_x1990_104539777}[：]{style="font-family:宋体"}[关闭]{style="font-family:宋体"}[AP]{lang="EN-US"}[版本下载功能。]{style="font-family:宋体"}
+**[disable**]：关闭AP版本下载功能。
 
-[**[enable]{lang="EN-US"}**]{#struct_0_73193_x1990_1455067868}[：开启]{style="font-family:宋体"}[AP]{lang="EN-US"}[版本下载功能。]{style="font-family:宋体"}
+**[enable**]：开启AP版本下载功能。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1922196190}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[建立]{style="font-family:宋体"}]{#struct_0_73193_x1990_x1242206344}[CAPWAP]{lang="EN-US"}[隧道过程中，如果开启]{style="font-family:宋体"}[AP]{lang="EN-US"}[版本下载功能，且]{style="font-family:宋体"}[AP]{lang="EN-US"}[的固件版本低于]{style="font-family:宋体"}[AC]{lang="EN-US"}[的固件版本时，则]{style="font-family:宋体"}[AP]{lang="EN-US"}[必须从]{style="font-family:宋体"}[AC]{lang="EN-US"}[上下载对应的固件版本文件后才能与]{style="font-family:宋体"}[AC]{lang="EN-US"}[建立]{style="font-family:宋体"}[CAPWAP]{lang="EN-US"}[隧道连接。]{style="font-family:宋体"}
+·建立CAPWAP隧道过程中，如果开启AP版本下载功能，且AP的固件版本低于AC的固件版本时，则AP必须从AC上下载对应的固件版本文件后才能与AC建立CAPWAP隧道连接。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[建立]{style="font-family:宋体"}]{#struct_0_73193_x1990_x558519736}[CAPWAP]{lang="EN-US"}[隧道过程中，如果关闭]{style="font-family:宋体"}[AP]{lang="EN-US"}[版本下载功能，则不比较]{style="font-family:宋体"}[AP]{lang="EN-US"}[当前的固件版本和]{style="font-family:宋体"}[AC]{lang="EN-US"}[的固件版本，直接与]{style="font-family:宋体"}[AC]{lang="EN-US"}[建立]{style="font-family:宋体"}[CAPWAP]{lang="EN-US"}[隧道连接。]{style="font-family:宋体"}
+·建立CAPWAP隧道过程中，如果关闭AP版本下载功能，则不比较AP当前的固件版本和AC的固件版本，直接与AC建立CAPWAP隧道连接。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x87481689}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_x1388069204}[开启]{style="font-family:宋体"}[ap3]{lang="EN-US"}[的版本下载功能。]{style="font-family:宋体"}
+\# 开启ap3的版本下载功能。
 
-[[\<Sysname\> system-view ]{lang="EN-US"}]{#struct_0_73193_x1990_x977742840}
+\<Sysname\> system-view
 
-[\[Sysname\] wlan ap ap3 model WA4620i-AGN]{lang="EN-US"}
+Sysname wlan ap ap3 model WA4620i-AGN
 
-[\[Sysname-wlan-ap-ap3\] firmware-upgrade enable]{lang="EN-US"}
-:::
-
-::: {#524738056 .myid}
-[]{#_Toc404794816}[]{#struct_0_73193_x1990_175172564}
+Sysname-wlan-ap-ap3 firmware-upgrade enable
 
 **AP管理 \-- AP管理配置命令 \-- jumboframe enable**
 
 ------------------------------------------------------------------------
 
-[**[jumboframe enable]{lang="EN-US"}**]{#struct_0_73193_x1990_x809443932}[命令用来开启]{style="font-family:宋体"}[Jumbo]{lang="EN-US"}[帧传输功能并设置]{style="font-family:宋体"}[Jumbo]{lang="EN-US"}[帧的最大长度。]{style="font-family:宋体"}
+**[jumboframe enable**]命令用来开启Jumbo帧传输功能并设置Jumbo帧的最大长度。
 
-[**[undo jumboframe enable]{lang="EN-US"}**]{#struct_0_73193_x1990_x1409450808}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo jumboframe enable**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1786343443}
+【命令】
 
-[**[jumboframe enable]{lang="EN-US"}**[ *value*]{lang="EN-US"}]{#struct_0_73193_x1990_201458429}
+**[jumboframe enable** *value*]
 
-[**[undo jumboframe enable]{lang="EN-US"}**]{#struct_0_73193_x1990_x1078080726}
+**[undo jumboframe enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1457902899}
+【缺省情况】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_1862744765}[视图：继承]{style="font-family:宋体"}[AP]{lang="EN-US"}[组配置。]{style="font-family:宋体"}
+AP视图：继承AP组配置。
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_869720987}[组视图：未开启]{style="font-family:宋体"}[Jumbo]{lang="EN-US"}[帧的传输功能。]{style="font-family:宋体"}
+AP组视图：未开启Jumbo帧的传输功能。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x649124387}
+【视图】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_664026710}[视图]{style="font-family:宋体"}[/AP]{lang="EN-US"}[组视图]{style="font-family:宋体"}
+AP视图/AP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_50650887}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x2023711053}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x227256238}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x938469507}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_73193_x1990_1360728784}[：指定]{style="font-family:宋体"}[Jumbo]{lang="EN-US"}[帧的最大长度，取值范围为]{style="font-family:宋体"}[1500]{lang="EN-US"}[～]{style="font-family:宋体"}[1748]{lang="EN-US"}[，单位为字节。]{style="font-family:宋体"}
+*[value*]：指定Jumbo帧的最大长度，取值范围为1500～1748，单位为字节。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x914116981}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Jumbo]{lang="EN-US"}]{#struct_0_73193_x1990_x741164216}[帧即超长帧，在进行文件传输等大吞吐量数据的时候，]{style="font-family:宋体"}[AP]{lang="EN-US"}[收到帧的长度可能大于标准以太网帧的长度，通过配置此命令允许不超过指定长度的超长帧通过。]{style="font-family:宋体"}
+·Jumbo帧即超长帧，在进行文件传输等大吞吐量数据的时候，AP收到帧的长度可能大于标准以太网帧的长度，通过配置此命令允许不超过指定长度的超长帧通过。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若]{style="font-family:宋体"}]{#struct_0_73193_x1990_1367948893}[AP]{lang="EN-US"}[收到的帧长度大于配置的]{style="font-family:宋体"}[Jumbo]{lang="EN-US"}[帧的最大长度，则]{style="font-family:宋体"}[AP]{lang="EN-US"}[会使用配置的]{style="font-family:宋体"}[Jumbo]{lang="EN-US"}[帧长度对该帧进行分片。]{style="font-family:宋体"}
+·若AP收到的帧长度大于配置的Jumbo帧的最大长度，则AP会使用配置的Jumbo帧长度对该帧进行分片。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x108181042}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_x937335434}[设置]{style="font-family:宋体"}[Jumbo]{lang="EN-US"}[帧的长度为]{style="font-family:宋体"}[1500]{lang="EN-US"}[字节。]{style="font-family:宋体"}
+\# 设置Jumbo帧的长度为1500字节。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_73193_x1990_831626030}
+\<Sysname\> system-view
 
-[\[Sysname\] wlan ap ap1 model WA4620i-AGN]{lang="EN-US"}
+Sysname wlan ap ap1 model WA4620i-AGN
 
-[\[Sysname-ap-ap1\] jumboframe enable 1500]{lang="EN-US"}
-:::
-
-::: {#-636046328 .myid}
-[]{#_Toc404794817}[]{#struct_0_73193_x1990_x1859162368}[]{#_Toc393205676}
+Sysname-ap-ap1 jumboframe enable 1500
 
 **AP管理 \-- AP管理配置命令 \-- mac-address**
 
 ------------------------------------------------------------------------
 
-[**[mac-address]{lang="EN-US"}**]{#struct_0_73193_x1990_x311053400}[命令用来配置]{style="font-family:宋体"}[AP MAC ]{lang="EN-US"}[地址入组规则。]{style="font-family:宋体"}
+**[mac-address**]命令用来配置AP MAC 地址入组规则。
 
-[**[undo mac-address]{lang="EN-US"}**]{#struct_0_73193_x1990_830895080}[命令用来删除]{style="font-family:宋体"}[AP MAC ]{lang="EN-US"}[地址入组规则。]{style="font-family:宋体"}
+**[undo mac-address**]命令用来删除AP MAC 地址入组规则。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_2036154010}
+【命令】
 
-[**[mac-address]{lang="EN-US"}**[ *mac-address*]{lang="EN-US"}]{#struct_0_73193_x1990_x1056754228}
+**[mac-address** *mac-address*]
 
-[**[undo mac-address]{lang="EN-US"}**[ *mac-address* ]{lang="EN-US"}]{#struct_0_73193_x1990_x109593283}
+**[undo mac-address** *mac-address* ]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x939950928}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[AP MAC]{lang="EN-US"}]{#struct_0_73193_x1990_2132927222}[地址入组规则。]{style="font-family:宋体"}
+未配置AP MAC地址入组规则。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1324263806}
+【视图】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_1722061299}[组视图]{style="font-family:宋体"}
+AP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1893509235}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_1392721558}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_2069291958}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1601193055}
+【参数】
 
-[*[mac-address]{lang="EN-US"}*]{#struct_0_73193_x1990_1807637316}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，形式为]{style="font-family:宋体"}[H-H-H]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[mac-address*]：AP的MAC地址，形式为H-H-H。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_73193_x1990_63151933}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[同一]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_73193_x1990_111318705}[组下]{lang="EN-US" style="font-family:宋体"}[AP MAC]{lang="EN-US"}[地址可配置多个。]{lang="EN-US" style="font-family:宋体"}
+·同一AP组下AP MAC地址可配置多个。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[AP]{lang="EN-US"}]{#struct_0_73193_x1990_13990310}[名字如入规则的优先级高于序列号入组规则，序列号入组规则的优先级高于]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址入组规则。]{style="font-family:宋体"}[AP]{lang="EN-US"}[优先根据]{style="font-family:宋体"}[AP]{lang="EN-US"}[名字入组规则匹配入组，其次是]{style="font-family:宋体"}[AP]{lang="EN-US"}[序列号入组规则，最后是]{style="font-family:宋体"}[AP MAC ]{lang="EN-US"}[地址入组规则，若为匹配到任何入组规则，则]{style="font-family:宋体"}[AP]{lang="EN-US"}[将被加入到默认组。]{style="font-family:宋体"}
+·AP名字如入规则的优先级高于序列号入组规则，序列号入组规则的优先级高于MAC地址入组规则。AP优先根据AP名字入组规则匹配入组，其次是AP序列号入组规则，最后是AP MAC 地址入组规则，若为匹配到任何入组规则，则AP将被加入到默认组。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若其它组已经存在该]{style="font-family:宋体"}]{#struct_0_73193_x1990_x1939024811}[MAC]{lang="EN-US"}[地址入组规则，在新组配置该]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址入组规则，则原]{style="font-family:宋体"}[AP]{lang="EN-US"}[组将删除该]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址入组规则。]{style="font-family:宋体"}
+·若其它组已经存在该MAC地址入组规则，在新组配置该MAC地址入组规则，则原AP组将删除该MAC地址入组规则。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[默认组视图下不能进行该配置。]{style="font-family:宋体"}]{#struct_0_73193_x1990_894798568}
+·默认组视图下不能进行该配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_39649453}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_1465092813}[在]{style="font-family:宋体"}[AP]{lang="EN-US"}[组视图下添加]{style="font-family:宋体"}[AP MAC]{lang="EN-US"}[地址入组规则]{style="font-family:宋体"}[0AC1-F9B2-B1C2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在AP组视图下添加AP MAC地址入组规则0AC1-F9B2-B1C2。
 
-[[\<System\> system-view]{lang="EN-US"}]{#struct_0_73193_x1990_x744014591}
+\<System\> system-view
 
-[\[System\] wlan ap-group group1 ]{lang="EN-US"}
+System wlan ap-group group1
 
-[\[System-wlan-ap-group-group1\] mac-address 0AC1-F9B2-B1C2]{lang="EN-US"}
+System-wlan-ap-group-group1 mac-address 0AC1-F9B2-B1C2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x441238026}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[wlan]{lang="EN-US"}**]{#struct_0_73193_x1990_x262097534}**[ ]{lang="EN-US"}[ap-group]{lang="EN-US"}**
-:::
-
-::: {#567732879 .myid}
-[]{#_Toc404794818}[]{#struct_0_73193_x1990_x363454736}[]{#_Toc340836280}
+·**wlan****ap-group**
 
 **AP管理 \-- AP管理配置命令 \-- priority**
 
 ------------------------------------------------------------------------
 
-[**[priority]{lang="EN-US"}**]{#struct_0_73193_x1990_x321457231}[命令用来配置]{style="font-family:宋体"}[AC]{lang="EN-US"}[上]{style="font-family:宋体"}[AP]{lang="EN-US"}[连接的优先级。]{style="font-family:宋体"}
+**[priority**]命令用来配置AC上AP连接的优先级。
 
-[**[undo priority]{lang="EN-US"}**]{#struct_0_73193_x1990_1554353342}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo priority**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1698773146}
+【命令】
 
-[**[priority]{lang="EN-US"}**[ *priority*]{lang="EN-US"}]{#struct_0_73193_x1990_x2001895509}
+**[priority** *priority*]
 
-[**[undo priority]{lang="EN-US"}**]{#struct_0_73193_x1990_x272507805}
+**[undo priority**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x733066905}
+【缺省情况】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_134674552}[视图：继承]{style="font-family:宋体"}[AP]{lang="EN-US"}[组配置。]{style="font-family:宋体"}
+AP视图：继承AP组配置。
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x2085138274}[组视图：]{style="font-family:宋体"}[AP]{lang="EN-US"}[连接的优先级为]{style="font-family:宋体"}[4]{lang="EN-US"}[。]{style="font-family:宋体"}
+AP组视图：AP连接的优先级为4。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x2099229872}
+【视图】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_1272423892}[视图]{style="font-family:宋体"}[/AP]{lang="EN-US"}[组视图]{style="font-family:宋体"}
+AP视图/AP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1240312101}
+【缺省用户角色】
 
-[[network-admin ]{lang="EN-US"}]{#struct_0_73193_x1990_x78947645}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x358928860}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1170958400}
+【参数】
 
-[*[priority]{lang="EN-US"}*]{#struct_0_73193_x1990_308435346}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[连接的优先级，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。该数值越大，优先级越高。]{style="font-family:宋体"}
+*[priority*]：AP连接的优先级，取值范围为0～255。该数值越大，优先级越高。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_73193_x1990_570489326}
+【使用指导】
 
-[[建立]{style="font-family:宋体"}[CAPWAP]{lang="EN-US"}]{#struct_0_73193_x1990_547855584}[隧道的过程中，]{style="font-family:宋体"}[AP]{lang="EN-US"}[会优先选择优先级高的]{style="font-family:宋体"}[AC]{lang="EN-US"}[建立隧道连接。]{style="font-family:宋体"}
+建立CAPWAP隧道的过程中，AP会优先选择优先级高的AC建立隧道连接。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x2133753283}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_1371429403}[配置]{style="font-family:宋体"}[AP]{lang="EN-US"}[连接的优先级为]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置AP连接的优先级为255。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_73193_x1990_x533145931}
+\<Sysname\> system-view
 
-[\[Sysname\] wlan ap ap3 model WA4620i-AGN]{lang="EN-US"}
+Sysname wlan ap ap3 model WA4620i-AGN
 
-[\[Sysname-wlan-ap-ap3\] priority 255]{lang="EN-US"}
-:::
-
-::: {#-1477709035 .myid}
-[]{#_Toc404794819}[]{#struct_0_73193_x1990_708877065}
+Sysname-wlan-ap-ap3 priority 255
 
 **AP管理 \-- AP管理配置命令 \-- reset wlan ap**
 
 ------------------------------------------------------------------------
 
-[**[reset wlan ap]{lang="EN-US"}**]{#struct_0_73193_x1990_x2045747932}[命令用来重启]{style="font-family:宋体"}[AP]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[reset wlan ap**]命令用来重启AP。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_369993631}
+【命令】
 
-[**[reset wlan ap]{lang="EN-US"}**[ { **all** \| **name** *ap-name* }]{lang="EN-US"}]{#struct_0_73193_x1990_x15189928}
+**[reset wlan ap**[ { **all** \| **name** *ap-name* }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1244847278}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_73193_x1990_x112053705}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1134201880}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_187017014}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x1556990740}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1984824501}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_73193_x1990_1032938010}[：重启连接到当前]{style="font-family:宋体"}[AC]{lang="EN-US"}[的所有]{style="font-family:宋体"}[AP]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[all**]：重启连接到当前AC的所有AP。
 
-[**[name]{lang="EN-US"}***[ ap-name]{lang="EN-US"}*]{#struct_0_73193_x1990_1093843149}[：指定重启]{style="font-family:宋体"}[AP]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+**[name*** ap-name*]：指定重启AP的名称，为1～63个字符的字符串，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1874003496}
+【使用指导】
 
-[[当]{style="font-family:宋体"}[AC]{lang="EN-US"}]{#struct_0_73193_x1990_x1526671816}[要断开与]{style="font-family:宋体"}[AP]{lang="EN-US"}[的]{style="font-family:宋体"}[CAPWAP]{lang="EN-US"}[隧道连接时，输入此命令，]{style="font-family:宋体"}[AP]{lang="EN-US"}[重启，]{style="font-family:宋体"}[AC]{lang="EN-US"}[端与]{style="font-family:宋体"}[AP]{lang="EN-US"}[相关的连接资源将被清除。]{style="font-family:宋体"}
+当AC要断开与AP的CAPWAP隧道连接时，输入此命令，AP重启，AC端与AP相关的连接资源将被清除。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x939025155}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_x146761053}[重启]{style="font-family:宋体"}[ap1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 重启ap1。
 
-[[\<Sysname\> reset wlan ap name ap1]{lang="EN-US"}]{#struct_0_73193_x1990_x2086762999}
+\<Sysname\> reset wlan ap name ap1
 
-[Reset the AP that has established or is to establish a primary tunnel with the AC. Continue? \[Y/N\]:]{lang="EN-US"}
-:::
-
-::: {#-606954986 .myid}
-[]{#_Toc404794820}[]{#struct_0_73193_x1990_589291279}
+Reset the AP that has established or is to establish a primary tunnel with the AC. Continue? [Y/N:]
 
 **AP管理 \-- AP管理配置命令 \-- reset wlan ap reboot-log**
 
 ------------------------------------------------------------------------
 
-[**[reset wlan ap reboot-log]{lang="EN-US"}**]{#struct_0_73193_x1990_579820901}[命令用来清除指定]{style="font-family:
-宋体"}[AP]{lang="EN-US"}[或全部]{style="font-family:宋体"}[AP]{lang="EN-US"}[的重启日志信息。]{style="font-family:宋体"}
+**[reset wlan ap reboot-log**]命令用来清除指定AP或全部AP的重启日志信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_987901560}
+【命令】
 
-[**[reset wlan ap reboot-log]{lang="EN-US"}**[ { **all** \| **name** *ap-name* }]{lang="EN-US"}]{#struct_0_73193_x1990_1812115552}
+**[reset wlan ap reboot-log**[ { **all** \| **name** *ap-name* }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1695945345}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_73193_x1990_160211834}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1924609882}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x1913766744}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x952535938}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_803973986}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_73193_x1990_1813012184}[：清除所有]{style="font-family:宋体"}[AP]{lang="EN-US"}[的重启日志信息。]{style="font-family:宋体"}
+**[all**]：清除所有AP的重启日志信息。
 
-[**[name]{lang="EN-US"}***[ ap-name]{lang="EN-US"}*]{#struct_0_73193_x1990_x1189602329}[：清除指定名称的]{style="font-family:宋体"}[AP]{lang="EN-US"}[的重启日志信息，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+**[name*** ap-name*]：清除指定名称的AP的重启日志信息，为1～63个字符的字符串，不区分大小写。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_2051064069}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_x1360247254}[清除]{style="font-family:宋体"}[ap1]{lang="EN-US"}[的重启日志信息。]{style="font-family:宋体"}
+\# 清除ap1的重启日志信息。
 
-[[\<Sysname\> reset wlan ap reboot-log name ap1]{lang="EN-US"}]{#struct_0_73193_x1990_x251447483}
+\<Sysname\> reset wlan ap reboot-log name ap1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x129861404}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display wlan ap reboot-log]{lang="EN-US"}**]{#struct_0_73193_x1990_x1186957705}
-:::
-
-::: {#12061890 .myid}
-[]{#_Toc404794821}[]{#struct_0_73193_x1990_1371227123}
+·**display wlan ap reboot-log**
 
 **AP管理 \-- AP管理配置命令 \-- retransmit-count**
 
 ------------------------------------------------------------------------
 
-[**[retransmit-count]{lang="EN-US"}**]{#struct_0_73193_x1990_x1240499122}[命令用来设置]{style="font-family:宋体"}[AC]{lang="EN-US"}[发送给]{style="font-family:宋体"}[AP]{lang="EN-US"}[的请求报文重传次数。]{style="font-family:宋体"}
+**[retransmit-count**]命令用来设置AC发送给AP的请求报文重传次数。
 
-[**[undo retransmit-count]{lang="EN-US"}**]{#struct_0_73193_x1990_1631547597}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo retransmit-count**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1859078483}
+【命令】
 
-[**[retransmit-count]{lang="EN-US"}**[ *value*]{lang="EN-US"}]{#struct_0_73193_x1990_414934179}
+**[retransmit-count** *value*]
 
-[**[undo retransmit-count]{lang="EN-US"}**]{#struct_0_73193_x1990_861643606}
+**[undo retransmit-count**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1995176067}
+【缺省情况】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_1112987317}[视图：继承]{style="font-family:宋体"}[AP]{lang="EN-US"}[组配置。]{style="font-family:宋体"}
+AP视图：继承AP组配置。
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x1099647481}[组视图：请求报文重传次数为]{style="font-family:宋体"}[3]{lang="EN-US"}[次。]{style="font-family:宋体"}
+AP组视图：请求报文重传次数为3次。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1954314394}
+【视图】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_648106689}[视图]{style="font-family:宋体"}[/AP]{lang="EN-US"}[组视图]{style="font-family:宋体"}
+AP视图/AP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1436222537}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_960691856}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x1006704712}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1306626060}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_73193_x1990_1063849176}[：]{style="font-family:宋体"}[指定请求报文重传次数，取值范围为]{style="font-family:宋体"}[2]{lang="EN-US"}[～]{style="font-family:宋体"}[5]{lang="EN-US"}[。]{style="font-family:
-宋体"}
+*[value*]：指定请求报文重传次数，取值范围为2～5。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x315678068}
+【使用指导】
 
-[[为了使]{style="font-family:宋体"}[AC]{lang="EN-US"}]{#struct_0_73193_x1990_2079225785}[的请求报文尽可能的发送到]{style="font-family:宋体"}[AP]{lang="EN-US"}[，提高报文的可靠传输能力，]{style="font-family:宋体"}[AC]{lang="EN-US"}[会对请求报文进行重传。]{style="font-family:宋体"}
+为了使AC的请求报文尽可能的发送到AP，提高报文的可靠传输能力，AC会对请求报文进行重传。
 
-[[重传次数为配置的请求报文重传次数。]{style="font-family:宋体"}]{#struct_0_73193_x1990_x1031436771}
+重传次数为配置的请求报文重传次数。
 
-[[AC]{lang="EN-US"}]{#struct_0_73193_x1990_1234704126}[发送给]{style="font-family:宋体"}[AP]{lang="EN-US"}[的请求报文包括]{style="font-family:宋体"}[Image Data Request]{lang="EN-US"}[报文、]{style="font-family:宋体"}[Configuration Update Request]{lang="EN-US"}[报文、]{style="font-family:宋体"}[Reset Request]{lang="EN-US"}[报文、]{style="font-family:宋体"}[Data Transfer Request]{lang="EN-US"}[报文、]{style="font-family:宋体"}[IEEE 802.11 WLAN Configuration Request]{lang="EN-US"}[报文和]{style="font-family:宋体"}[Station Configuration Request]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+AC发送给AP的请求报文包括Image Data Request报文、Configuration Update Request报文、Reset Request报文、Data Transfer Request报文、IEEE 802.11 WLAN Configuration Request报文和Station Configuration Request报文。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1116418411}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_x1828411016}[配置]{style="font-family:宋体"}[AC]{lang="EN-US"}[发往]{style="font-family:宋体"}[ap3]{lang="EN-US"}[的请求报文重传次数为]{style="font-family:宋体"}[4]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置AC发往ap3的请求报文重传次数为4。
 
-[[\<Sysname\> system-view ]{lang="EN-US"}]{#struct_0_73193_x1990_x1292660818}
+\<Sysname\> system-view
 
-[\[Sysname\] wlan ap ap3 model WA4620i-AGN]{lang="EN-US"}
+Sysname wlan ap ap3 model WA4620i-AGN
 
-[\[Sysname-wlan-ap-ap3\] retransmit-count 4]{lang="EN-US"}
+Sysname-wlan-ap-ap3 retransmit-count 4
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1368768127}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[retransmit-interval]{lang="EN-US"}**]{#struct_0_73193_x1990_1862920911}
-:::
-
-::: {#-1720057218 .myid}
-[]{#_Toc404794822}[]{#struct_0_73193_x1990_175723174}
+·**retransmit-interval**
 
 **AP管理 \-- AP管理配置命令 \-- retransmit-interval**
 
 ------------------------------------------------------------------------
 
-[**[retransmit-interval]{lang="EN-US"}**]{#struct_0_73193_x1990_x785993541}[命令用来设置请求报文重传的时间间隔。]{style="font-family:宋体"}
+**[retransmit-interval**]命令用来设置请求报文重传的时间间隔。
 
-[**[undo retransmit-interval]{lang="EN-US"}**]{#struct_0_73193_x1990_x1601646417}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo retransmit-interval**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_45726173}
+【命令】
 
-[**[retransmit-interval]{lang="EN-US"}**[ *interval*]{lang="EN-US"}]{#struct_0_73193_x1990_x1052677196}
+**[retransmit-interval** *interval*]
 
-[**[undo retransmit-interva]{lang="EN-US"}**[l]{lang="EN-US"}]{#struct_0_73193_x1990_x405467938}
+**[undo retransmit-interva**l]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_73193_x1990_516116276}
+【缺省情况】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_1911106521}[视图：继承]{style="font-family:宋体"}[AP]{lang="EN-US"}[组配置。]{style="font-family:宋体"}
+AP视图：继承AP组配置。
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_466436460}[组视图：请求报文重传的时间间隔为]{style="font-family:宋体"}[5]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+AP组视图：请求报文重传的时间间隔为5秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x112267718}
+【视图】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_273423123}[视图]{style="font-family:宋体"}[/AP]{lang="EN-US"}[组视图]{style="font-family:宋体"}
+AP视图/AP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1547867069}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x765002804}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x1077671531}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1276977820}
+【参数】
 
-[*[interval]{lang="EN-US"}*]{#struct_0_73193_x1990_2073706739}[：]{style="font-family:宋体"}[指定请求报文重传的时间间隔，取值范围为]{style="font-family:宋体"}[3]{lang="EN-US"}[～]{style="font-family:宋体"}[8]{lang="EN-US"}[，单位为秒。]{style="font-family:
-宋体"}
+*[interval*]：指定请求报文重传的时间间隔，取值范围为3～8，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1800150006}
+【使用指导】
 
-[[为了使]{style="font-family:宋体"}[AC]{lang="EN-US"}]{#struct_0_73193_x1990_x1540394156}[的请求报文尽可能的发送到]{style="font-family:宋体"}[AP]{lang="EN-US"}[，提高报文的可靠传输能力，]{style="font-family:宋体"}[AC]{lang="EN-US"}[会对请求报文进行重传。]{style="font-family:宋体"}
+为了使AC的请求报文尽可能的发送到AP，提高报文的可靠传输能力，AC会对请求报文进行重传。
 
-[[重传时间间隔为配置的请求报文重传时间。]{style="font-family:宋体"}]{#struct_0_73193_x1990_2127907476}
+重传时间间隔为配置的请求报文重传时间。
 
-[[AC]{lang="EN-US"}]{#struct_0_73193_x1990_1234310910}[发送给]{style="font-family:宋体"}[AP]{lang="EN-US"}[的请求报文包括]{style="font-family:宋体"}[Image Data Request]{lang="EN-US"}[报文、]{style="font-family:宋体"}[Configuration Update Request]{lang="EN-US"}[报文、]{style="font-family:宋体"}[Reset Request]{lang="EN-US"}[报文、]{style="font-family:宋体"}[Data Transfer Request]{lang="EN-US"}[报文、]{style="font-family:宋体"}[IEEE 802.11 WLAN Configuration Request]{lang="EN-US"}[报文和]{style="font-family:宋体"}[Station Configuration Request]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+AC发送给AP的请求报文包括Image Data Request报文、Configuration Update Request报文、Reset Request报文、Data Transfer Request报文、IEEE 802.11 WLAN Configuration Request报文和Station Configuration Request报文。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1351332212}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_x165659649}[设置]{style="font-family:宋体"}[AC]{lang="EN-US"}[发往]{style="font-family:宋体"}[ap3]{lang="EN-US"}[的请求报文重传的时间间隔为]{style="font-family:宋体"}[6]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 设置AC发往ap3的请求报文重传的时间间隔为6秒。
 
-[[\<Sysname\> system-view ]{lang="EN-US"}]{#struct_0_73193_x1990_x1742999512}
+\<Sysname\> system-view
 
-[\[Sysname\] wlan ap ap3 model WA4620i-AGN]{lang="EN-US"}
+Sysname wlan ap ap3 model WA4620i-AGN
 
-[\[Sysname-wlan-ap-ap3\] retransmit-interval 6]{lang="EN-US"}
+Sysname-wlan-ap-ap3 retransmit-interval 6
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1884342368}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[retransmit-count]{lang="EN-US"}**]{#struct_0_73193_x1990_x468742563}
-:::
-
-::: {#-784389225 .myid}
-[]{#_Toc404794823}[]{#struct_0_73193_x1990_x1826223461}
+·**retransmit-count**
 
 **AP管理 \-- AP管理配置命令 \-- serial-id(AP view)**
 
 ------------------------------------------------------------------------
 
-[**[serial-id]{lang="EN-US"}**]{#struct_0_73193_x1990_x313485072}[命令用来配置]{style="font-family:宋体"}[AP]{lang="EN-US"}[的序列号。]{style="font-family:宋体"}
+**[serial-id**]命令用来配置AP的序列号。
 
-[**[undo serial-id]{lang="EN-US"}**]{#struct_0_73193_x1990_1037316211}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo serial-id**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_516434953}
+【命令】
 
-[**[serial-id]{lang="EN-US"}**[ *serial-id*]{lang="EN-US"}]{#struct_0_73193_x1990_102568625}
+**[serial-id** *serial-id*]
 
-[**[undo serial-id]{lang="EN-US"}**]{#struct_0_73193_x1990_x309114269}
+**[undo serial-id**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x305478843}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x753494466}[的序列号。]{style="font-family:宋体"}
+未配置AP的序列号。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x176915571}
+【视图】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x1096261456}[视图]{style="font-family:宋体"}
+AP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x614010067}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_863490486}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_1020419428}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1490111697}
+【参数】
 
-[*[serial-id]{lang="EN-US"}*]{#struct_0_73193_x1990_x850205716}[：指定]{style="font-family:宋体"}[AP]{lang="EN-US"}[的序列号，序列号为每个]{style="font-family:宋体"}[AP]{lang="EN-US"}[的唯一标识，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[127]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+*[serial-id*]：指定AP的序列号，序列号为每个AP的唯一标识，为1～127个字符的字符串，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1121561311}
+【使用指导】
 
-[[如果]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_73193_x1990_514762713}[已经与]{style="font-family:宋体"}[AC]{lang="EN-US"}[建立]{style="font-family:宋体"}[CAPWAP]{lang="EN-US"}[隧道连接，改变和删除序列号将触发]{style="font-family:宋体"}[CAPWAP]{lang="EN-US"}[隧道的拆除，]{style="font-family:宋体"}[AP]{lang="EN-US"}[将会重新发现]{style="font-family:宋体"}[AC]{lang="EN-US"}[并与]{style="font-family:宋体"}[AC]{lang="EN-US"}[建立]{style="font-family:宋体"}[CAPWAP]{lang="EN-US"}[隧道。]{style="font-family:宋体"}
+如果AP已经与AC建立CAPWAP隧道连接，改变和删除序列号将触发CAPWAP隧道的拆除，AP将会重新发现AC并与AC建立CAPWAP隧道。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1465445518}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_x1164666290}[将]{style="font-family:宋体"}[ap1]{lang="EN-US"}[的序列号设置为]{style="font-family:宋体"}[210235A1BSC123000050]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 将ap1的序列号设置为210235A1BSC123000050。
 
-[[\<Sysname\> system-view ]{lang="EN-US"}]{#struct_0_73193_x1990_x2099295408}
+\<Sysname\> system-view
 
-[\[Sysname\] wlan ap ap1 model WA4620i-AGN]{lang="EN-US"}
+Sysname wlan ap ap1 model WA4620i-AGN
 
-[\[Sysname-ap-ap1\] serial-id 210235A1BSC123000050]{lang="EN-US"}
-:::
-
-::: {#-1278350207 .myid}
-[]{#_Toc404794824}[]{#struct_0_73193_x1990_x1052593314}[]{#_Toc393205675}
+Sysname-ap-ap1 serial-id 210235A1BSC123000050
 
 **AP管理 \-- AP管理配置命令 \-- serial-id(AP group view)**
 
 ------------------------------------------------------------------------
 
-[**[serial-id]{lang="EN-US"}**]{#struct_0_73193_x1990_2048765616}[命令用来配置]{style="font-family:宋体"}[AP]{lang="EN-US"}[序列号入组规则。]{style="font-family:宋体"}
+**[serial-id**]命令用来配置AP序列号入组规则。
 
-[**[undo serial-id]{lang="EN-US"}**]{#struct_0_73193_x1990_x465512092}[命令用来删除]{style="font-family:宋体"}[AP]{lang="EN-US"}[序列号入组规则。]{style="font-family:宋体"}
+**[undo serial-id**]命令用来删除AP序列号入组规则。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_802556516}
+【命令】
 
-[**[serial-id]{lang="EN-US"}**[ *serial-id*]{lang="EN-US"}]{#struct_0_73193_x1990_x1459687599}
+**[serial-id** *serial-id*]
 
-[**[undo serial-id]{lang="EN-US"}**[ *serial-id*]{lang="EN-US"}]{#struct_0_73193_x1990_x1543224217}
+**[undo serial-id** *serial-id*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_73193_x1990_413590658}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x1153952367}[序列号入组规则。]{style="font-family:宋体"}
+未配置AP序列号入组规则。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_462075885}
+【视图】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_1873527838}[组视图]{style="font-family:宋体"}
+AP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_2032454865}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_1173632688}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x1998840317}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x940568392}
+【参数】
 
-[*[serial-id]{lang="EN-US"}*]{#struct_0_73193_x1990_1483912720}[：]{style="font-family:宋体;color:black"}[AP]{lang="EN-US" style="color:black"}[序列号，]{style="font-family:宋体;color:black"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，输入后的字母自动改为大写形式。]{style="font-family:宋体"}
+*[serial-id*]：AP序列号，为1～63个字符的字符串，输入后的字母自动改为大写形式。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x346059501}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[同一]{style="font-family:宋体"}]{#struct_0_73193_x1990_1236412893}[AP]{lang="EN-US"}[组下]{style="font-family:宋体"}[AP]{lang="EN-US"}[序列号可配置多个。配置后符合该序列号的]{style="font-family:宋体"}[AP]{lang="EN-US"}[可以入组。]{style="font-family:宋体"}
+·同一AP组下AP序列号可配置多个。配置后符合该序列号的AP可以入组。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[AP]{lang="EN-US"}]{#struct_0_73193_x1990_768146900}[名字如入规则的优先级高于序列号入组规则，序列号入组规则的优先级高于]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址入组规则。]{style="font-family:宋体"}[AP]{lang="EN-US"}[优先根据]{style="font-family:宋体"}[AP]{lang="EN-US"}[名字入组规则匹配入组，其次是]{style="font-family:宋体"}[AP]{lang="EN-US"}[序列号入组规则，最后是]{style="font-family:宋体"}[AP MAC ]{lang="EN-US"}[地址入组规则，若为匹配到任何入组规则，则]{style="font-family:宋体"}[AP]{lang="EN-US"}[将被加入到默认组。]{style="font-family:宋体"}
+·AP名字如入规则的优先级高于序列号入组规则，序列号入组规则的优先级高于MAC地址入组规则。AP优先根据AP名字入组规则匹配入组，其次是AP序列号入组规则，最后是AP MAC 地址入组规则，若为匹配到任何入组规则，则AP将被加入到默认组。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若其它组已经存在该序列号入组规则，在新组配置该序列号入组规则，则原]{style="font-family:宋体"}]{#struct_0_73193_x1990_452078794}[AP]{lang="EN-US"}[组将删除该序列号入组规则。]{style="font-family:宋体"}
+·若其它组已经存在该序列号入组规则，在新组配置该序列号入组规则，则原AP组将删除该序列号入组规则。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[默认组视图下不能进行该配置。]{style="font-family:宋体"}]{#struct_0_73193_x1990_1031908010}
+·默认组视图下不能进行该配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1616427213}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_x45975236}[在]{style="font-family:宋体"}[AP]{lang="EN-US"}[组视图下添加序列号入组规则]{style="font-family:宋体"}[serial-id SER123]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在AP组视图下添加序列号入组规则serial-id SER123。
 
-[[\<System\> system-view]{lang="EN-US"}]{#struct_0_73193_x1990_x1017640588}
+\<System\> system-view
 
-[\[System\] wlan ap-group group1]{lang="EN-US"}
+System wlan ap-group group1
 
-[\[System-wlan-ap-group-group1\] serial-id SERl123]{lang="EN-US"}
+System-wlan-ap-group-group1 serial-id SERl123
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1204282937}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[wlan]{lang="EN-US"}**]{#struct_0_73193_x1990_407878891}[ ]{lang="EN-US"}**[ap-group]{lang="EN-US"}**
-:::
-
-::: {#365931513 .myid}
-[]{#_Toc404794825}[]{#struct_0_73193_x1990_687696047}
+·**wlan****ap-group**
 
 **AP管理 \-- AP管理配置命令 \-- statistics-interval**
 
 ------------------------------------------------------------------------
 
-[**[statistics-interval]{lang="EN-US"}**]{#struct_0_73193_x1990_1965168682}[命令用来配置]{style="font-family:宋体"}[AP]{lang="EN-US"}[向]{style="font-family:宋体"}[AC]{lang="EN-US"}[上报]{style="font-family:宋体"}[Radio]{lang="EN-US"}[统计信息的时间间隔。]{style="font-family:宋体"}
+**[statistics-interval**]命令用来配置AP向AC上报Radio统计信息的时间间隔。
 
-[**[undo statistics-interval]{lang="EN-US"}**]{#struct_0_73193_x1990_999403213}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo statistics-interval**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1020169472}
+【命令】
 
-[**[statistics-interval]{lang="EN-US"}**[ *interval*]{lang="EN-US"}]{#struct_0_73193_x1990_1479822647}
+**[statistics-interval** *interval*]
 
-[**[undo statistics-interval]{lang="EN-US"}**]{#struct_0_73193_x1990_x1707532999}
+**[undo statistics-interval**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1691478212}
+【缺省情况】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x589253807}[视图：继承]{style="font-family:宋体"}[AP]{lang="EN-US"}[组配置。]{style="font-family:宋体"}
+AP视图：继承AP组配置。
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x696428490}[组视图：]{style="font-family:宋体"}[AP]{lang="EN-US"}[向]{style="font-family:宋体"}[AC]{lang="EN-US"}[上报]{style="font-family:宋体"}[Radio]{lang="EN-US"}[统计信息的时间间隔为]{style="font-family:宋体"}[50]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+AP组视图：AP向AC上报Radio统计信息的时间间隔为50秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1792946260}
+【视图】
 
-[[AP]{lang="EN-US"}]{#struct_0_73193_x1990_579054776}[视图]{style="font-family:宋体"}[/AP]{lang="EN-US"}[组视图]{style="font-family:宋体"}
+AP视图/AP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x2006467410}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x533211467}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x938054321}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1789398853}
+【参数】
 
-[*[interval]{lang="EN-US"}*]{#struct_0_73193_x1990_445108927}[：指定]{style="font-family:宋体"}[AP]{lang="EN-US"}[向]{style="font-family:宋体"}[AC]{lang="EN-US"}[上报]{style="font-family:宋体"}[Radio]{lang="EN-US"}[统计信息的时间间隔，取值范围为]{style="font-family:宋体"}[2]{lang="EN-US"}[～]{style="font-family:宋体"}[120]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[interval*]：指定AP向AC上报Radio统计信息的时间间隔，取值范围为2～120，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1318371258}
+【使用指导】
 
-[[为了对]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x1457624559}[的运行情况进行有效监控，]{style="font-family:宋体"}[AP]{lang="EN-US"}[会周期性的向]{style="font-family:宋体"}[AC]{lang="EN-US"}[上报]{style="font-family:宋体"}[Radio]{lang="EN-US"}[统计信息。]{style="font-family:宋体"}
+为了对AP的运行情况进行有效监控，AP会周期性的向AC上报Radio统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x689180537}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_638862439}[设置]{style="font-family:宋体"}[ap1]{lang="EN-US"}[上报]{style="font-family:宋体"}[Radio]{lang="EN-US"}[统计信息的时间间隔为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 设置ap1上报Radio统计信息的时间间隔为10秒。
 
-[[\<Sysname\> system-view ]{lang="EN-US"}]{#struct_0_73193_x1990_x1257821396}
+\<Sysname\> system-view
 
-[\[Sysname\] wlan ap ap1 model WA4620i-AGN]{lang="EN-US"}
+Sysname wlan ap ap1 model WA4620i-AGN
 
-[\[Sysname-wlan-ap-ap1\] statistics-interval 10]{lang="EN-US"}
-:::
-
-::: {#-1506845022 .myid}
-[]{#_Toc404794826}[]{#struct_0_73193_x1990_x1080157386}
+Sysname-wlan-ap-ap1 statistics-interval 10
 
 **AP管理 \-- AP管理配置命令 \-- wlan ap**
 
 ------------------------------------------------------------------------
 
-[**[wlan ap]{lang="EN-US"}**]{#struct_0_73193_x1990_1032872474}[命令用来创建并进入]{style="font-family:宋体"}[AP]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+**[wlan ap**]命令用来创建并进入AP视图。
 
-[**[undo wlan ap]{lang="EN-US"}**]{#struct_0_73193_x1990_1126825294}[命令用来删除指定的]{style="font-family:宋体"}[AP]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo wlan ap**]命令用来删除指定的AP。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_555472142}
+【命令】
 
-[**[wlan ap ]{lang="EN-US"}***[ap-name ]{lang="EN-US"}*[\[ **model** *model-name* \]]{lang="EN-US"}]{#struct_0_73193_x1990_x1728864234}
+**[wlan ap ***ap-name * **model** *model-name* ]
 
-[**[undo wlan ap]{lang="EN-US"}***[ ap-name ]{lang="EN-US"}*]{#struct_0_73193_x1990_x256864188}
+**[undo wlan ap*** ap-name *]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_863707305}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_73193_x1990_81240897}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_809582175}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_704315048}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_696724025}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_92747274}
+【参数】
 
-[*[ap-name]{lang="EN-US"}*]{#struct_0_73193_x1990_1564634424}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+*[ap-name*]：AP的名称，为1～63个字符的字符串，不区分大小写。
 
-[**[model]{lang="EN-US"}***[ model-name]{lang="EN-US"}*]{#struct_0_73193_x1990_x1696010881}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[的型号名称，在创建]{style="font-family:宋体"}[AP]{lang="EN-US"}[时，该参数必须配置。]{style="font-family:宋体"}
+**[model*** model-name*]：AP的型号名称，在创建AP时，该参数必须配置。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1221607787}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[wlan ap]{lang="EN-US"}**]{#struct_0_73193_x1990_1640725636}[命令用来创建并进入]{style="font-family:
-宋体"}[AP]{lang="EN-US"}[视图。如果指定的]{style="font-family:宋体"}[AP]{lang="EN-US"}[已创建，则该命令直接用来进入该]{style="font-family:宋体"}[AP]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+·**wlan ap**命令用来创建并进入AP视图。如果指定的AP已创建，则该命令直接用来进入该AP视图。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[undo wlan ap]{lang="EN-US"}**]{#struct_0_73193_x1990_1067488547}[命令用来删除指定的]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[，如果]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[已经与]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}[建立了]{lang="EN-US" style="font-family:宋体"}[CAPWAP]{lang="EN-US"}[隧道连接，使用]{lang="EN-US" style="font-family:宋体"}**[undo wlan ap]{lang="EN-US"}**[命令将会导致连接断开。]{lang="EN-US" style="font-family:宋体"}
+·**undo wlan ap**命令用来删除指定的AP，如果AP已经与AC建立了CAPWAP隧道连接，使用**undo wlan ap**命令将会导致连接断开。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_2016863648}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_x1195271729}[创建]{style="font-family:宋体"}[ap1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 创建ap1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_73193_x1990_x720828918}
+\<Sysname\> system-view
 
-[\[Sysname\] wlan ap ap1 model WA4620i-AGN]{lang="EN-US"}
+Sysname wlan ap ap1 model WA4620i-AGN
 
-[\[Sysname-wlan-ap-ap1\]]{lang="EN-US"}
-:::
-
-::: {#1403743026 .myid}
-[]{#_Toc404794827}[]{#struct_0_73193_x1990_x200243572}[]{#_Toc393383824}
+Sysname-wlan-ap-ap1
 
 **AP管理 \-- AP管理配置命令 \-- wlan apdb file**
 
 ------------------------------------------------------------------------
 
-[**[wlan apdb file]{lang="EN-US"}**]{#struct_0_73193_x1990_x1851622370}[命令用来加载]{style="font-family:宋体"}[APDB]{lang="EN-US"}[用户脚本文件。]{style="font-family:宋体"}
+**[wlan apdb file**]命令用来加载APDB用户脚本文件。
 
-[**[undo wlan apdb file]{lang="EN-US"}**]{#struct_0_73193_x1990_1324384604}[命令用来卸载]{style="font-family:宋体"}[APDB]{lang="EN-US"}[用户脚本文件。]{style="font-family:宋体"}
+**[undo wlan apdb file**]命令用来卸载APDB用户脚本文件。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1689936279}
+【命令】
 
-[**[wlan apdb file ]{lang="EN-US"}***[user.apdb]{lang="EN-US"}*]{#struct_0_73193_x1990_1017995141}
+**[wlan apdb file ***user.apdb*]
 
-[**[undo wlan apdb file]{lang="EN-US"}**]{#struct_0_73193_x1990_x415342125}
+**[undo wlan apdb file**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1766327513}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_73193_x1990_170654293}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x745391599}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_736724382}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_73193_x1990_973969367}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_87205654}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_73193_x1990_x1611348202}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1177682150}
+【参数】
 
-[*[user.apdb]{lang="EN-US"}*]{#struct_0_73193_x1990_95952374}[：指定需要加载的]{style="font-family:宋体;color:black"}[APDB]{lang="EN-US" style="color:black"}[用户脚本文件名，为]{style="font-family:宋体;color:black"}[1]{lang="EN-US" style="color:black"}[～]{style="font-family:宋体;color:black"}[63]{lang="EN-US" style="color:black"}[个字符的字符串，区分大小写。]{style="font-family:宋体;color:black"}[apdb]{lang="EN-US"}[为文件后缀。]{style="font-family:宋体;color:black"}
+*[user.apdb*]：指定需要加载的APDB用户脚本文件名，为1～63个字符的字符串，区分大小写。apdb为文件后缀。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x881475979}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[使用本命令加载用户脚本文件后，脚本文件中的]{style="font-family:宋体"}]{#struct_0_73193_x1990_174754806}[AP]{lang="EN-US"}[型号信息将被加载到]{style="font-family:宋体"}[APDB]{lang="EN-US"}[中。]{style="font-family:宋体"}
+·使用本命令加载用户脚本文件后，脚本文件中的AP型号信息将被加载到APDB中。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[用户脚本只能加载]{style="font-family:宋体"}]{#struct_0_73193_x1990_183691272}[]{#_GoBack}[一个，支持重复加载，当重复加载时，新脚本内容会替换旧脚本内容。若旧脚本中的某个]{style="font-family:宋体"}[AP]{lang="EN-US"}[型号已经加入]{style="font-family:宋体"}[AP]{lang="EN-US"}[组及全局配置，且该]{style="font-family:宋体"}[AP]{lang="EN-US"}[型号在新脚本中被删除或者有修改时则不允许替换操作，提示用户加载失败。]{style="font-family:宋体"}
+·用户脚本只能加载一个，支持重复加载，当重复加载时，新脚本内容会替换旧脚本内容。若旧脚本中的某个AP型号已经加入AP组及全局配置，且该AP型号在新脚本中被删除或者有修改时则不允许替换操作，提示用户加载失败。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_2133785896}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_962555842}[加载名为]{style="font-family:宋体"}[user.apdb]{lang="EN-US"}[的用户脚本。]{style="font-family:宋体"}
+\# 加载名为user.apdb的用户脚本。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_73193_x1990_1192162878}
+\<Sysname\> system-view
 
-[\[Sysname\] wlan apdb file user.apdb]{lang="EN-US"}
-:::
-
-::: {#-1482390212 .myid}
-[]{#_Toc404794828}[]{#struct_0_73193_x1990_673738587}[]{#_Toc393205670}
+Sysname wlan apdb file user.apdb
 
 **AP管理 \-- AP管理配置命令 \-- wlan ap-group**
 
 ------------------------------------------------------------------------
 
-[**[wlan ap-group]{lang="EN-US"}**]{#struct_0_73193_x1990_x2085441550}[命令用来创建一个]{style="font-family:宋体"}[AP]{lang="EN-US"}[组并进入]{style="font-family:宋体"}[AP]{lang="EN-US"}[组视图。]{style="font-family:宋体"}
+**[wlan ap-group**]命令用来创建一个AP组并进入AP组视图。
 
-[**[undo wlan ap-group]{lang="EN-US"}**]{#struct_0_73193_x1990_x2019180955}[命令用来删除一个]{style="font-family:宋体"}[AP]{lang="EN-US"}[组。]{style="font-family:宋体"}
+**[undo wlan ap-group**]命令用来删除一个AP组。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x2102028334}
+【命令】
 
-[**[wlan ap-group]{lang="EN-US"}**[ *group-name*]{lang="EN-US"}]{#struct_0_73193_x1990_x1204960217}
+**[wlan ap-group** *group-name*]
 
-[**[undo wlan ap-group]{lang="EN-US"}**[ *group-name*]{lang="EN-US"}]{#struct_0_73193_x1990_x445890684}
+**[undo wlan ap-group** *group-name*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1051922906}
+【缺省情况】
 
-[[存在默认组]{style="font-family:宋体"}[default-group]{lang="EN-US"}]{#struct_0_73193_x1990_238107316}[，不允许删除。]{style="font-family:宋体"}
+存在默认组default-group，不允许删除。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1666709084}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_73193_x1990_1355096885}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x603528099}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_439129633}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x1366872795}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1539759040}
+【参数】
 
-[*[group-name]{lang="EN-US"}*]{#struct_0_73193_x1990_x203995918}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[组的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+*[group-name*]：AP组的名称，为1～31个字符的字符串，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1531263183}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[最多可配置]{lang="EN-US" style="font-family:宋体"}[128]{lang="EN-US"}]{#struct_0_73193_x1990_1168345583}[个]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[组。]{lang="EN-US" style="font-family:宋体"}
+·最多可配置128个AP组。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当执行该命令创建一个已经存在的组时，不会覆盖原有的组，而是进入]{style="font-family:宋体"}]{#struct_0_73193_x1990_2123995886}[AP]{lang="EN-US"}[组视图。]{style="font-family:宋体"}
+·当执行该命令创建一个已经存在的组时，不会覆盖原有的组，而是进入AP组视图。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1135097795}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_1017167528}[创建一个名为]{style="font-family:宋体"}[group1]{lang="EN-US"}[的]{style="font-family:宋体"}[AP]{lang="EN-US"}[组。]{style="font-family:宋体"}
+\# 创建一个名为group1的AP组。
 
-[[\<System\> system-view]{lang="EN-US"}]{#struct_0_73193_x1990_1958967711}
+\<System\> system-view
 
-[\[System\] wlan ap-group group1]{lang="EN-US"}
+System wlan ap-group group1
 
-[\[System-wlan-ap-group-group1\]]{lang="EN-US"}
+System-wlan-ap-group-group1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1146024878}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display wlan ap-group]{lang="EN-US"}**]{#struct_0_73193_x1990_2125355256}
-:::
-
-::: {#2003130159 .myid}
-[]{#_Toc404794829}[]{#struct_0_73193_x1990_x2044640688}
+·**display wlan ap-group**
 
 **AP管理 \-- AP管理配置命令 \-- wlan auto-ap**
 
 ------------------------------------------------------------------------
 
-[**[wlan auto-ap]{lang="EN-US"}**]{#struct_0_73193_x1990_x745006675}[命令用来开启自动]{style="font-family:宋体"}[AP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[wlan auto-ap**]命令用来开启自动AP功能。
 
-[**[undo wlan auto-ap]{lang="EN-US"}**]{#struct_0_73193_x1990_1524847814}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo wlan auto-ap**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x741818819}
+【命令】
 
-[**[wlan auto-ap]{lang="EN-US"}**]{#struct_0_73193_x1990_x2143111510}
+**[wlan auto-ap**]
 
-[**[undo wlan auto-ap]{lang="EN-US"}**]{#struct_0_73193_x1990_x1179073129}
+**[undo wlan auto-ap**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_73193_x1990_164764333}
+【缺省情况】
 
-[[未开启自动]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_73193_x1990_x1100361993}[功能。]{style="font-family:宋体"}
+未开启自动AP功能。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x2044640687}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_73193_x1990_370738572}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1986880015}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x1179552151}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_89575291}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_73193_x1990_971392597}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在无线网络中部署的]{style="font-family:宋体"}]{#struct_0_73193_x1990_1188528619}[AP]{lang="EN-US"}[数量较多时，使用自动]{style="font-family:宋体"}[AP]{lang="EN-US"}[功能可以减少管理员的配置工作量，并可以简化配置，避免多次配置]{style="font-family:宋体"}[AP]{lang="EN-US"}[序列号，同时降低了配置出错的概率。]{style="font-family:宋体"}
+·在无线网络中部署的AP数量较多时，使用自动AP功能可以减少管理员的配置工作量，并可以简化配置，避免多次配置AP序列号，同时降低了配置出错的概率。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[自动]{style="font-family:宋体"}]{#struct_0_73193_x1990_1701040632}[AP]{lang="EN-US"}[不能单独配置，需要固化为手工]{style="font-family:宋体"}[AP]{lang="EN-US"}[或者通过]{style="font-family:宋体"}[AP Group]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}
+·自动AP不能单独配置，需要固化为手工AP或者通过AP Group进行配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x790289428}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_x1158280179}[开启自动]{style="font-family:宋体"}[AP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 开启自动AP功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_73193_x1990_x1185135951}
+\<Sysname\> system-view
 
-[\[Sysname\] wlan auto-ap]{lang="EN-US"}
-:::
-
-::: {#-1614825515 .myid}
-[]{#_Toc404794830}[]{#struct_0_73193_x1990_x153189405}[]{#_Toc393205671}
+Sysname wlan auto-ap
 
 **AP管理 \-- AP管理配置命令 \-- wlan global-configuration**
 
 ------------------------------------------------------------------------
 
-[**[wlan global-configuration]{lang="EN-US"}**]{#struct_0_73193_x1990_x589094333}[命令用来进入全局配置视图。]{style="font-family:
-宋体"}
+**[wlan global-configuration**]命令用来进入全局配置视图。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x248244620}
+【命令】
 
-[**[wlan global-configuration]{lang="EN-US"}**]{#struct_0_73193_x1990_962281022}
+**[wlan global-configuration**]
 
-[[【视图】]{style="font-family:黑体"}[       ]{lang="EN-US"}]{#struct_0_73193_x1990_x606842255}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_73193_x1990_x941946708}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1961929199}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x349605754}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x1594641470}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1719273346}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_1699826333}[进入全局配置视图。]{style="font-family:宋体"}
+\# 进入全局配置视图。
 
-[[\<System\> system-view]{lang="EN-US"}]{#struct_0_73193_x1990_x14401315}
+\<System\> system-view
 
-[\[System\] wlan global-configuration]{lang="EN-US"}
+System wlan global-configuration
 
-[\[System-wlan-global-configuration\]]{lang="EN-US"}
-:::
-
-::: {#-950227109 .myid}
-[]{#_Toc404794831}[]{#struct_0_73193_x1990_1629170338}[]{#_Toc393205677}[]{#_Toc384720044}
+System-wlan-global-configuration
 
 **AP管理 \-- AP管理配置命令 \-- wlan re-group**
 
 ------------------------------------------------------------------------
 
-[**[wlan re-group]{lang="EN-US"}**]{#struct_0_73193_x1990_x1016450111}[命令用于将一个或者一组]{style="font-family:宋体"}[AP]{lang="EN-US"}[规则迁移到指定]{style="font-family:宋体"}[AP]{lang="EN-US"}[组。]{style="font-family:宋体"}
+**[wlan re-group**]命令用于将一个或者一组AP规则迁移到指定AP组。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_73193_x1990_290808342}
+【命令】
 
-[**[wlan re-group]{lang="EN-US"}**[ { **ap** *ap-name* \| **ap-list** *list-name* \| **ap-group**]{lang="EN-US"}]{#struct_0_73193_x1990_1963500240}**[ ]{lang="EN-US" style="color:black;border:none windowtext 1.0pt;padding:0cm"}***[old-group-name]{lang="EN-US"}*[ \| mac-address *mac-address* \| serial-id *serial-id* } *group-name*]{lang="EN-US"}
+**[wlan re-group*******old-group-name*[ \| mac-address *mac-address* \| serial-id *serial-id* } *group-name*]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x437300443}
+【视图】]
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_73193_x1990_1013178934}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_73193_x1990_x1716737571}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_73193_x1990_x1099713017}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_73193_x1990_528254636}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1710837771}
+【参数】
 
-[**[ap]{lang="EN-US"}***[ ap-name]{lang="EN-US"}*]{#struct_0_73193_x1990_x264668994}[：将指定的]{style="font-family:宋体"}[AP]{lang="EN-US"}[名字入组规则迁移到目的]{style="font-family:宋体"}[AP]{lang="EN-US"}[组。]{style="font-family:宋体"}
+**[ap*** ap-name*]：将指定的AP名字入组规则迁移到目的AP组。
 
-[**[ap-list]{lang="EN-US"}**[ *list-name*]{lang="EN-US"}]{#struct_0_73193_x1990_x551125835}[：将指定的]{style="font-family:宋体"}[AP]{lang="EN-US"}[列表名的]{style="font-family:宋体"}[AP]{lang="EN-US"}[迁移到目的]{style="font-family:宋体"}[AP]{lang="EN-US"}[组。]{style="font-family:宋体"}
+**[ap-list** *list-name*]：将指定的AP列表名的AP迁移到目的AP组。
 
-[**[mac-address ]{lang="EN-US"}***[mac-address]{lang="EN-US"}*]{#struct_0_73193_x1990_x1801606401}[：将指定的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址入组规则迁移到目的组。]{style="font-family:宋体"}
+**[mac-address ***mac-address*]：将指定的MAC地址入组规则迁移到目的组。
 
-[**[serial-id]{lang="EN-US"}**[ *serial-id*]{lang="EN-US"}]{#struct_0_73193_x1990_353871897}[：将指定的序列号地址入组规则迁移到目的组。]{style="font-family:宋体"}
+**[serial-id** *serial-id*]：将指定的序列号地址入组规则迁移到目的组。
 
-[**[ap-group]{lang="EN-US"}**[ *old-group-name*]{lang="EN-US"}]{#struct_0_73193_x1990_1306309016}[：将指定的]{style="font-family:宋体"}[AP]{lang="EN-US"}[组的入组规则迁移到目的]{style="font-family:宋体"}[AP]{lang="EN-US"}[组。]{style="font-family:宋体"}*[old-group-name]{lang="EN-US"}*[不能是默认组。]{style="font-family:宋体"}
+**[ap-group** *old-group-name*]：将指定的AP组的入组规则迁移到目的AP组。*old-group-name*不能是默认组。
 
-[[group-name]{lang="EN-US"}]{#struct_0_73193_x1990_x1304085119}[：目的]{style="font-family:宋体"}[AP]{lang="EN-US"}[组名字，不能是默认组。]{style="font-family:宋体"}
+group-name：目的AP组名字，不能是默认组。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_73193_x1990_1310640462}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_x349895459}[创建]{style="font-family:宋体"}[AP]{lang="EN-US"}[组]{style="font-family:宋体"}[group2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 创建AP组group2。
 
-[[\<System\> system-view]{lang="EN-US"}]{#struct_0_73193_x1990_339260412}
+\<System\> system-view
 
-[\[System\] wlan ap-group group2]{lang="EN-US"}
+System wlan ap-group group2
 
-[\[System-wlan-ap-group-group2\] quit]{lang="EN-US"}
+System-wlan-ap-group-group2 quit
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_x700833061}[创建]{style="font-family:宋体"}[AP]{lang="EN-US"}[组]{style="font-family:宋体"}[group1]{lang="EN-US"}[，在]{style="font-family:宋体"}[group1]{lang="EN-US"}[下配置三个]{style="font-family:宋体"}[AP]{lang="EN-US"}[名字规则]{style="font-family:宋体"}[ap1]{lang="EN-US"}[、]{style="font-family:宋体"}[ap2]{lang="EN-US"}[、]{style="font-family:宋体"}[ap3]{lang="EN-US"}[，并将]{style="font-family:宋体"}[ap1]{lang="EN-US"}[移至]{style="font-family:宋体"}[group2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 创建AP组group1，在group1下配置三个AP名字规则ap1、ap2、ap3，并将ap1移至group2。
 
-[[\[System\] wlan ap-group group1]{lang="EN-US"}]{#struct_0_73193_x1990_371883336}
+System wlan ap-group group1
 
-[\[System-wlan-ap-group-group1\] ap ap1 ap2 ap3]{lang="EN-US"}
+System-wlan-ap-group-group1 ap ap1 ap2 ap3
 
-[\[System-wlan-ap-group-group1\] quit]{lang="EN-US"}
+System-wlan-ap-group-group1 quit
 
-[\[System\] wlan re-group ap ap1 group2]{lang="EN-US"}
+System wlan re-group ap ap1 group2
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_x423060125}[创建]{style="font-family:宋体"}[AP]{lang="EN-US"}[列表]{style="font-family:宋体"}[list1]{lang="EN-US"}[，并且在]{style="font-family:宋体"}[list1]{lang="EN-US"}[下配置一个]{style="font-family:宋体"}[AP MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}[2-2-2-2]{lang="EN-US"}[，并将]{style="font-family:宋体"}[list1]{lang="EN-US"}[移至]{style="font-family:宋体"}[group2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 创建AP列表list1，并且在list1下配置一个AP MAC地址2-2-2-2，并将list1移至group2。
 
-[[\[System\] wlan ap-list list1]{lang="EN-US"}]{#struct_0_73193_x1990_1899364470}
+System wlan ap-list list1
 
-[\[System-wlan-ap-list-list1\] mac-address 2-2-2-2]{lang="EN-US"}
+System-wlan-ap-list-list1 mac-address 2-2-2-2
 
-[\[System-wlan-ap-list-list1\] quit]{lang="EN-US"}
+System-wlan-ap-list-list1 quit
 
-[\[System\] wlan re-group ap-list list1 group2]{lang="EN-US"}
+System wlan re-group ap-list list1 group2
 
-[[\# ]{lang="EN-US"}]{#struct_0_73193_x1990_x1046271173}[将]{style="font-family:宋体"}[group1]{lang="EN-US"}[中所有]{style="font-family:宋体"}[AP]{lang="EN-US"}[规则移至]{style="font-family:宋体"}[group2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 将group1中所有AP规则移至group2。
 
-[[\[System\] wlan re-group ap-group group1 group2]{lang="EN-US"}]{#struct_0_73193_x1990_466370924}
-:::
+System wlan re-group ap-group group1 group2

@@ -1,116 +1,107 @@
-::: {#-984665339 .myid}
-[]{#_Toc404799890}[]{#struct_0_x9021_83908_x458161234}[]{#_Toc351046991}
 
 **MPLS保护倒换 \-- MPLS保护倒换Probe命令 \-- debugging system internal mpls forwarding protection**
 
 ------------------------------------------------------------------------
 
-[**[debugging system internal mpls forwarding protection]{lang="EN-US"}**]{#struct_0_x9021_83908_x1796833942}[命令用来打开]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[转发平面]{style="font-family:宋体"}[保护倒换的调试信息开关。]{style="font-family:宋体"}
+**[debugging system internal mpls forwarding protection**]命令用来打开MPLS转发平面保护倒换的调试信息开关。
 
-[**[undo ]{lang="EN-US"}[debugging system internal mpls forwarding protection]{lang="EN-US"}**]{#struct_0_x9021_83908_344976266}[命令用来关闭]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[转发平面]{style="font-family:宋体"}[保护倒换的调试信息开关。]{style="font-family:宋体"}
+**[undo debugging system internal mpls forwarding protection**]命令用来关闭MPLS转发平面保护倒换的调试信息开关。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9021_83908_x754101693}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_x9021_83908_2040036705}
+集中式设备：
 
-[**[debugging system internal mpls forwarding protection]{lang="EN-US"}**[ { **all** \| **error** \| **process** }]{lang="EN-US"}]{#struct_0_x9021_83908_882080691}
+**[debugging system internal mpls forwarding protection**[ { **all** \| **error** \| **process** }]]
 
-[**[undo]{lang="EN-US"}**[ ]{lang="EN-US"}**[debugging system internal mpls forwarding protection]{lang="EN-US"}**[ { **all** \| **error** \| **process** }]{lang="EN-US"}]{#struct_0_x9021_83908_x682662596}
+**[undo****debugging system internal mpls forwarding protection**[ { **all** \| **error** \| **process** }]]
 
-[[分布式设备---独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x9021_83908_x2022351874}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备---独立运行模式/集中式IRF设备：
 
-[**[debugging system internal mpls forwarding protection]{lang="EN-US"}**[ { **all** \| **error** \| **process** } **slot** *slot-number* \[ **cpu** *cpu-number* \]]{lang="EN-US"}]{#struct_0_x9021_83908_x24133892}
+**[debugging system internal mpls forwarding protection**[ { **all** \| **error** \| **process** } **slot** *slot-number* [ **cpu** *cpu-number* ]]]
 
-[**[undo debugging system internal mpls forwarding protection ]{lang="EN-US"}**[{ **all** \| **error** \| **process** } **slot** *slot-number* \[ **cpu** *cpu-number* \]]{lang="EN-US"}]{#struct_0_x9021_83908_317699527}
+**[undo debugging system internal mpls forwarding protection **[{ **all** \| **error** \| **process** } **slot** *slot-number* [ **cpu** *cpu-number* ]]]
 
-[[分布式设备---]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x9021_83908_x104692569}[模式：]{style="font-family:宋体"}
+分布式设备---IRF模式：
 
-[**[debugging system internal mpls forwarding protection]{lang="EN-US"}**[ { **all** \| **error** \| **process** } **chassis** *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \]]{lang="EN-US"}]{#struct_0_x9021_83908_1697646704}
+**[debugging system internal mpls forwarding protection**[ { **all** \| **error** \| **process** } **chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number* ]]]
 
-[**[undo]{lang="EN-US"}**[ ]{lang="EN-US"}**[debugging system internal mpls forwarding protection]{lang="EN-US"}**[ { **all** \| **error** \| **process** } **chassis** *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \]]{lang="EN-US"}]{#struct_0_x9021_83908_x2137046624}
+**[undo****debugging system internal mpls forwarding protection**[ { **all** \| **error** \| **process** } **chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number* ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x9021_83908_1609669031}
+【缺省情况】
 
-[[MPLS]{lang="EN-US"}]{#struct_0_x9021_83908_14826777}[转发]{style="font-family:宋体"}[平面保护倒换的调试信息开关处于关闭状态。]{style="font-family:宋体"}
+MPLS转发平面保护倒换的调试信息开关处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9021_83908_x876296828}
+【视图】
 
-[[Probe]{lang="EN-US"}]{#struct_0_x9021_83908_x1102463619}[视图]{style="font-family:宋体"}
+Probe视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9021_83908_1915717183}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9021_83908_x1538885289}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9021_83908_112908427}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9021_83908_x815832711}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_x9021_83908_221178346}[：表示]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[转发平面]{style="font-family:宋体"}[保护倒换的所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示MPLS转发平面保护倒换的所有调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_x9021_83908_1017944762}[：表示]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[转发平面]{style="font-family:宋体"}[保护倒换的错误调试信息开关。]{style="font-family:宋体"}
+**[error**]：表示MPLS转发平面保护倒换的错误调试信息开关。
 
-[**[process]{lang="EN-US"}**]{#struct_0_x9021_83908_1177015916}[：表示]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[转发平面]{style="font-family:宋体"}[保护倒换的处理过程调试信息开关。]{style="font-family:宋体"}
+**[process**]：表示MPLS转发平面保护倒换的处理过程调试信息开关。
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x9021_83908_70554327}[：表示指定单板上的调试信息开关。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[为单板所在的槽位号。（分布式设备―独立运行模式）]{style="font-family:宋体"}
+**[slot*** slot-number*]：表示指定单板上的调试信息开关。*slot-number*为单板所在的槽位号。（分布式设备―独立运行模式）
 
-[**[slot]{lang="PT-BR"}**]{#struct_0_x9021_83908_x1243534508}*[ slot-number]{lang="PT-BR"}*[：表示]{style="font-family:宋体"}[指定成员设备上的调试信息开关。]{style="font-family:宋体"}*[slot-number]{lang="PT-BR"}*[为设备在]{style="font-family:宋体"}[IRF]{lang="PT-BR"}[中的成员编号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot**]* slot-number*：表示指定成员设备上的调试信息开关。*slot-number*为设备在IRF中的成员编号。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="PT-BR"}**]{#struct_0_x9021_83908_1346369662}*[ slot-number]{lang="PT-BR"}*[：表示]{style="font-family:宋体"}[指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[上的调试信息开关。]{style="font-family:宋体"}*[slot-number]{lang="PT-BR"}*[为设备在]{style="font-family:宋体"}[IRF]{lang="PT-BR"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot**]* slot-number*：表示指定成员设备/PEX上的调试信息开关。*slot-number*为设备在IRF中的成员编号或者PEX的虚拟槽位号。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis ]{lang="PT-BR"}**]{#struct_0_x9021_83908_x104889177}*[chassis-number]{lang="PT-BR"}*[ **slot** *slot-number*]{lang="PT-BR"}[：]{style="font-family:宋体"}[表示指定成员设备指定单板上的调试信息开关。]{style="font-family:宋体"}*[chassis-number]{lang="PT-BR"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="PT-BR"}[中的成员编号]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="PT-BR"}*[表示单板所在的槽位号。]{style="font-family:宋体"}[（]{style="font-family:宋体"}[分布式设备]{style="font-family:宋体"}[－]{style="font-family:宋体"}[IRF]{lang="PT-BR"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+**[chassis **]*chassis-number* **slot** *slot-number*：表示指定成员设备指定单板上的调试信息开关。*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis ]{lang="PT-BR"}**]{#struct_0_x9021_83908_x717922966}*[chassis-number]{lang="PT-BR"}*[ **slot** *slot-number*]{lang="PT-BR"}[：]{style="font-family:宋体"}[表示指定单板上的调试信息开关。]{style="font-family:宋体"}*[chassis-number]{lang="PT-BR"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="PT-BR"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="PT-BR"}*[表示单板或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。]{style="font-family:宋体"}[（]{style="font-family:宋体"}[分布式设备]{style="font-family:宋体"}[－]{style="font-family:宋体"}[IRF]{lang="PT-BR"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+**[chassis **]*chassis-number* **slot** *slot-number*：表示指定单板上的调试信息开关。*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu]{lang="PT-BR"}**]{#struct_0_x9021_83908_x276058874}[ *cpu-number*]{lang="PT-BR"}[：]{style="font-family:宋体"}[表示指定]{style="font-family:宋体"}[CPU]{lang="PT-BR"}[的调试信息开关。]{style="font-family:宋体"}*[cpu-number]{lang="PT-BR"}*[表示]{style="font-family:宋体"}[CPU]{lang="PT-BR"}[编号。]{style="font-family:宋体"}[只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。]{style="font-family:宋体"}[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
-:::
-
-::: {#1438647033 .myid}
-[]{#_Toc404799891}[]{#struct_0_x9021_83908_892013398}
+**[cpu**] *cpu-number*：表示指定CPU的调试信息开关。*cpu-number*表示CPU编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
 **MPLS保护倒换 \-- MPLS保护倒换Probe命令 \-- display system internal mpls protection statistics**
 
 ------------------------------------------------------------------------
 
-[**[display ]{lang="EN-US"}[s]{lang="EN-US"}[ystem internal mpls protection statistics]{lang="EN-US"}**]{#struct_0_x9021_83908_x130765983}[命令用来显示]{style="font-family:
-宋体"}[MPLS]{lang="EN-US"}[保护倒换的统计信息，包括]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[保护倒换收到的信息、]{style="font-family:宋体"}[PSC]{lang="EN-US"}[控制报文信息、错误处理信息等。]{style="font-family:宋体"}
+**[display system internal mpls protection statistics**]命令用来显示MPLS保护倒换的统计信息，包括MPLS保护倒换收到的信息、PSC控制报文信息、错误处理信息等。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9021_83908_312056759}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_x9021_83908_2095036193}
+集中式设备：
 
-[**[display ]{lang="EN-US"}[system internal mpls protection statistics]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x9021_83908_x844941989}
+**[display system internal mpls protection statistics**]
 
-[[分布式设备---独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x9021_83908_x843020714}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备---独立运行模式/集中式IRF设备：
 
-[**[display ]{lang="EN-US"}[system internal mpls protection statistics]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x9021_83908_x1523249047}**[slot ]{lang="IT"}***[slot-number]{lang="EN-US"}[ ]{lang="EN-US"}*[\[ **cpu** *cpu-number* \]]{lang="EN-US"}
+**[display system internal mpls protection statistics**]**slot ***slot-number* **cpu** *cpu-number*
 
-[[分布式设备---]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x9021_83908_x760259258}[模式：]{style="font-family:宋体"}
+分布式设备---IRF模式：
 
-[**[display ]{lang="EN-US"}[system internal mpls protection statistics]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x9021_83908_x53546911}**[chassis ]{lang="IT"}***[chassis-number]{lang="EN-US"}*[ ]{lang="EN-US"}**[slot ]{lang="IT"}***[slot-number]{lang="EN-US"}[ ]{lang="EN-US"}*[\[ **cpu** *cpu-number* \]]{lang="EN-US"}
+**[display system internal mpls protection statistics**]**chassis ***chassis-number***slot ***slot-number* **cpu** *cpu-number*
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9021_83908_893981392}
+【视图】
 
-[[Probe]{lang="EN-US"}]{#struct_0_x9021_83908_572892229}[视图]{style="font-family:宋体"}
+Probe视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9021_83908_708643585}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9021_83908_2036966410}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9021_83908_868425242}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9021_83908_1725671428}
+【参数】
 
-[**[slot]{lang="PT-BR"}**]{#struct_0_x9021_83908_x965367754}*[ slot-number]{lang="PT-BR"}*[：]{style="font-family:宋体"}[显示指定单板上的]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[保护倒换统计信息。]{style="font-family:宋体"}*[slot-number]{lang="PT-BR"}*[为单板所在的槽位号。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot**]* slot-number*：显示指定单板上的MPLS保护倒换统计信息。*slot-number*为单板所在的槽位号。（分布式设备－独立运行模式）
 
-[**[slot]{lang="PT-BR"}**]{#struct_0_x9021_83908_x104823641}*[ slot-number]{lang="PT-BR"}*[：]{style="font-family:宋体"}[显示指定成员设备上的]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[保护倒换统计信息。]{style="font-family:宋体"}*[slot-number]{lang="PT-BR"}*[为设备在]{style="font-family:宋体"}[IRF]{lang="PT-BR"}[中的成员编号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot**]* slot-number*：显示指定成员设备上的MPLS保护倒换统计信息。*slot-number*为设备在IRF中的成员编号。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="PT-BR"}**]{#struct_0_x9021_83908_x1026217797}*[ slot-number]{lang="PT-BR"}*[：]{style="font-family:宋体"}[显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[上的]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[保护倒换统计信息。]{style="font-family:宋体"}*[slot-number]{lang="PT-BR"}*[为设备在]{style="font-family:宋体"}[IRF]{lang="PT-BR"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot**]* slot-number*：显示指定成员设备/PEX上的MPLS保护倒换统计信息。*slot-number*为设备在IRF中的成员编号或者PEX的虚拟槽位号。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis ]{lang="PT-BR"}**]{#struct_0_x9021_83908_1733131591}*[chassis-number]{lang="PT-BR"}*[ **slot** *slot-number*]{lang="PT-BR"}[：显示指定成员设备指定单板上的]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[保护倒换统计信息。]{style="font-family:宋体"}*[chassis-number]{lang="PT-BR"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="PT-BR"}*[表示单板所在的槽位号。]{style="font-family:宋体"}[（]{style="font-family:宋体"}[分布式设备]{style="font-family:宋体"}[－]{style="font-family:宋体"}[IRF]{lang="PT-BR"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+**[chassis **]*chassis-number* **slot** *slot-number*：显示指定成员设备指定单板上的MPLS保护倒换统计信息。*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis ]{lang="PT-BR"}**]{#struct_0_x9021_83908_1702665558}*[chassis-number]{lang="PT-BR"}*[ **slot** *slot-number*]{lang="PT-BR"}[：显示指定单板上的]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[保护倒换统计信息。]{style="font-family:宋体"}*[chassis-number]{lang="PT-BR"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="PT-BR"}*[表示单板或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。]{style="font-family:宋体"}[（]{style="font-family:宋体"}[分布式设备]{style="font-family:宋体"}[－]{style="font-family:宋体"}[IRF]{lang="PT-BR"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+**[chassis **]*chassis-number* **slot** *slot-number*：显示指定单板上的MPLS保护倒换统计信息。*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu ]{lang="PT-BR"}**]{#struct_0_x9021_83908_2062593278}*[cpu-number]{lang="PT-BR"}*[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[CPU]{lang="PT-BR"}[上的]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[保护倒换统计信息。]{style="font-family:宋体"}*[cpu-number]{lang="PT-BR"}*[表示]{style="font-family:宋体"}[CPU]{lang="PT-BR"}[编号。]{style="font-family:宋体"}[只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。]{style="font-family:宋体"}[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[cpu **]*cpu-number*：显示指定CPU上的MPLS保护倒换统计信息。*cpu-number*表示CPU编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
-:::

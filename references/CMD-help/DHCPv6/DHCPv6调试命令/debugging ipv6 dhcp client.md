@@ -1,1541 +1,1481 @@
-::: {#-794325652 .myid}
-[]{#_Toc404786934}[]{#struct_0_90630_81574_1745295028}[]{#_Toc359402199}
 
 **DHCPv6 \-- DHCPv6调试命令 \-- debugging ipv6 dhcp client**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_90630_81574_x14817724}
+【命令】
 
-[**[debugging ipv6 dhcp client ]{lang="EN-US"}**[{ **all** \| **error** \| **event** \| **packet** }]{lang="EN-US"}]{#struct_0_90630_81574_x1069954624}
+**[debugging ipv6 dhcp client **[{ **all** \| **error** \| **event** \| **packet** }]]
 
-[**[undo debugging ipv6 dhcp client ]{lang="EN-US"}**[{ **all** \| **error** \| **event** \| **packet** }]{lang="EN-US"}]{#struct_0_90630_81574_x1591069536}
+**[undo debugging ipv6 dhcp client **[{ **all** \| **error** \| **event** \| **packet** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_90630_81574_1745360564}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_90630_81574_x2022030342}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_90630_81574_x208034327}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_90630_81574_702399212}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_90630_81574_1745163956}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_90630_81574_1544867614}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_90630_81574_x1434256441}[：表示]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[客户端所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示DHCPv6客户端所有调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_90630_81574_x41795731}[：表示]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[客户端错误调试信息开关。]{style="font-family:宋体"}
+**[error**]：表示DHCPv6客户端错误调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_90630_81574_1745229492}[：表示]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[客户端事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示DHCPv6客户端事件调试信息开关。
 
-[**[packet]{lang="EN-US"}**]{#struct_0_90630_81574_x878158461}[：表示]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[客户端报文调试信息开关。]{style="font-family:宋体"}
+**[packet**]：表示DHCPv6客户端报文调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_90630_81574_685268254}
+【描述】
 
-[**[debugging ipv6 dhcp client]{lang="EN-US"}**]{#struct_0_90630_81574_1388715308}[命令用来打开]{style="font-family:
-宋体"}[DHCPv6]{lang="EN-US"}[客户端调试信息开关。]{style="font-family:宋体"}**[undo debugging ipv6 dhcp client]{lang="EN-US"}**[命令用来关闭]{style="font-family:
-宋体"}[DHCPv6]{lang="EN-US"}[客户端调试信息开关。]{style="font-family:宋体"}
+**[debugging ipv6 dhcp client**]命令用来打开DHCPv6客户端调试信息开关。**undo debugging ipv6 dhcp client**命令用来关闭DHCPv6客户端调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}]{#struct_0_90630_81574_1472708120}[客户端调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，DHCPv6客户端调试信息开关处于关闭状态。
 
-[[表1-1 ]{lang="EN-US"}[debugging ipv6 dhcp client error]{lang="EN-US"}]{#struct_0_90630_81574_1745557172}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging ipv6 dhcp client error命令输出信息描述表
 
-[]{#table_struct_0_x268094644}[[字段]{style="font-family:黑体"}]{#struct_0_90630_81574_755235880}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_90630_81574_x1203392511}
+描述
 
-[[Failed to notify the client\'s information change.]{lang="EN-US"}]{#struct_0_90630_81574_1745622708}
+Failed to notify the client\'s information change.
 
-[[通知其他模块失败，通知内容为客户端信息的变化]{style="font-family:宋体"}]{#struct_0_90630_81574_1508203101}
+通知其他模块失败，通知内容为客户端信息的变化
 
-[[Failed to acquire IRT]{lang="EN-US"}]{#struct_0_90630_81574_x29446256}
+Failed to acquire IRT
 
-[[不能获取]{style="font-family:宋体"}[IRT]{lang="EN-US"}]{#struct_0_90630_81574_1745426100}[值]{style="font-family:宋体"}
+不能获取IRT值
 
-[[Failed to acquire interface control block.]{lang="EN-US"}]{#struct_0_90630_81574_x1964931153}
+Failed to acquire interface control block.
 
-[[不能获取接口控制块]{style="font-family:宋体"}]{#struct_0_90630_81574_1745491636}
+不能获取接口控制块
 
-[[Response without a server ID.]{lang="EN-US"}]{#struct_0_90630_81574_x836519953}
+Response without a server ID.
 
-[[回应报文中没有]{style="font-family:宋体"}[server ID]{lang="EN-US"}]{#struct_0_90630_81574_218174134}
+回应报文中没有server ID
 
-[[Response without a client ID.]{lang="EN-US"}]{#struct_0_90630_81574_1745819316}
+Response without a client ID.
 
-[[回应报文中没有]{style="font-family:宋体"}[client ID]{lang="EN-US"}]{#struct_0_90630_81574_694049857}
+回应报文中没有client ID
 
-[[Advertise message with matching transaction ID and mismatching client ID.]{lang="EN-US"}]{#struct_0_90630_81574_1745884852}
+Advertise message with matching transaction ID and mismatching client ID.
 
-[[交互]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_90630_81574_28930150}[符合但]{style="font-family:宋体"}[client ID]{lang="EN-US"}[不符合的]{style="font-family:宋体"}[Advertise]{lang="EN-US"}[报文]{style="font-family:宋体"}
+交互ID符合但client ID不符合的Advertise报文
 
-[[Discarded invalid Advertise packet.]{lang="EN-US"}]{#struct_0_90630_81574_x720918944}
+Discarded invalid Advertise packet.
 
-[[丢弃无效的]{style="font-family:宋体"}[Advertise]{lang="EN-US"}]{#struct_0_90630_81574_1745295029}[报文。]{style="font-family:宋体"}
+丢弃无效的Advertise报文。
 
-[[Invalid DHCPv6 preference option length.]{lang="EN-US"}]{#struct_0_90630_81574_x14883260}
+Invalid DHCPv6 preference option length.
 
-[[无效的]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}]{#struct_0_90630_81574_1745360565}[优先级选项长度]{style="font-family:宋体"}
+无效的DHCPv6优先级选项长度
 
-[[Invalid server ID option information.]{lang="EN-US"}]{#struct_0_90630_81574_x2021964806}
+Invalid server ID option information.
 
-[[无效的]{style="font-family:宋体"}[serverID]{lang="EN-US"}]{#struct_0_90630_81574_1745163957}[选项内容]{style="font-family:宋体"}
+无效的serverID选项内容
 
-[[Discarded invalid reply packet.]{lang="EN-US"}]{#struct_0_90630_81574_1544933150}
+Discarded invalid reply packet.
 
-[[丢弃无效的]{style="font-family:宋体"}[Reply]{lang="EN-US"}]{#struct_0_90630_81574_1745229493}[报文]{style="font-family:宋体"}
+丢弃无效的Reply报文
 
-[[Corrupt IAADDR options.]{lang="EN-US"}]{#struct_0_90630_81574_x878092925}
+Corrupt IAADDR options.
 
-[[不完整的]{style="font-family:宋体"}[IA]{lang="EN-US"}]{#struct_0_90630_81574_1745557173}[地址选项]{style="font-family:宋体"}
+不完整的IA地址选项
 
-[[Invalid IAADDR option.]{lang="EN-US"}]{#struct_0_90630_81574_755170344}
+Invalid IAADDR option.
 
-[[无效的]{style="font-family:宋体"}[IA]{lang="EN-US"}]{#struct_0_90630_81574_1745622709}[地址选项信息]{style="font-family:宋体"}
+无效的IA地址选项信息
 
-[[Corrupt IA_NA options.]{lang="EN-US"}]{#struct_0_90630_81574_1508268637}
+Corrupt IA_NA options.
 
-[[不完整的]{style="font-family:宋体"}[IA_NA]{lang="EN-US"}]{#struct_0_90630_81574_1745426101}[选项]{style="font-family:宋体"}
+不完整的IA_NA选项
 
-[[Invalid IA_NA option.]{lang="EN-US"}]{#struct_0_90630_81574_x1964865617}
+Invalid IA_NA option.
 
-[[无效的]{style="font-family:宋体"}[IA_NA]{lang="EN-US"}]{#struct_0_90630_81574_1745491637}[选项信息]{style="font-family:宋体"}
+无效的IA_NA选项信息
 
-[[Corrupt IAPREFIX options.]{lang="EN-US"}]{#struct_0_90630_81574_x836585489}
+Corrupt IAPREFIX options.
 
-[[不完整的]{style="font-family:宋体"}[IA]{lang="EN-US"}]{#struct_0_90630_81574_1745819317}[前缀选项]{style="font-family:宋体"}
+不完整的IA前缀选项
 
-[[Invalid IAPREFIX option.]{lang="EN-US"}]{#struct_0_90630_81574_693984321}
+Invalid IAPREFIX option.
 
-[[无效的]{style="font-family:宋体"}[IAPREFIX]{lang="EN-US"}]{#struct_0_90630_81574_1745884853}[选项信息]{style="font-family:宋体"}
+无效的IAPREFIX选项信息
 
-[[Corrupt IA_PD options.]{lang="EN-US"}]{#struct_0_90630_81574_28995686}
+Corrupt IA_PD options.
 
-[[不完整的]{style="font-family:宋体"}[IA_PD]{lang="EN-US"}]{#struct_0_90630_81574_1745295026}[选项]{style="font-family:宋体"}
+不完整的IA_PD选项
 
-[[Invalid IA_PD option.]{lang="EN-US"}]{#struct_0_90630_81574_x14162364}
+Invalid IA_PD option.
 
-[[无效的]{style="font-family:宋体"}[IA_PD]{lang="EN-US"}]{#struct_0_90630_81574_1745360562}[选项]{style="font-family:宋体"}
+无效的IA_PD选项
 
-[[Invalid status code length *length.*]{lang="EN-US"}]{#struct_0_90630_81574_1745163954}
+Invalid status code length *length.*
 
-[[无效的状态码选项长度]{style="font-family:宋体"}]{#struct_0_90630_81574_1544998686}
+无效的状态码选项长度
 
-[[Wrong IA type in Advertise message]{lang="EN-US"}]{#struct_0_90630_81574_1745229490}
+Wrong IA type in Advertise message
 
-[[Advertise]{lang="EN-US"}]{#struct_0_90630_81574_x878027389}[报文中]{style="font-family:宋体"}[IA]{lang="EN-US"}[类型错误]{style="font-family:宋体"}
+Advertise报文中IA类型错误
 
-[[Wrong IA type in Reply message.]{lang="EN-US"}]{#struct_0_90630_81574_1745557170}
+Wrong IA type in Reply message.
 
-[[Reply]{lang="EN-US"}]{#struct_0_90630_81574_755366952}[报文中]{style="font-family:宋体"}[IA]{lang="EN-US"}[类型错误]{style="font-family:宋体"}
+Reply报文中IA类型错误
 
-[[Discarded reply without Rapid-Commit.]{lang="EN-US"}]{#struct_0_90630_81574_1745622706}
+Discarded reply without Rapid-Commit.
 
-[[丢弃不包含]{style="font-family:宋体"}[Rapid-Commit]{lang="EN-US"}]{#struct_0_90630_81574_1507809885}[选项的]{style="font-family:宋体"}[Reply]{lang="EN-US"}[报文]{style="font-family:宋体"}
+丢弃不包含Rapid-Commit选项的Reply报文
 
-[[Can\'t renew without an active binding.]{lang="EN-US"}]{#struct_0_90630_81574_1745426098}
+Can\'t renew without an active binding.
 
-[[不存在有效的绑定无法启动]{style="font-family:宋体"}[renew]{lang="EN-US"}]{#struct_0_90630_81574_1745491634}[操作]{style="font-family:宋体"}
+不存在有效的绑定无法启动renew操作
 
-[[Malformed packet dhcp6:]{lang="EN-US"}]{#struct_0_90630_81574_x509267168}
+Malformed packet dhcp6:
 
-[[option length does not equal its option buffer length.]{lang="EN-US"}]{#struct_0_90630_81574_x1584771446}
+option length does not equal its option buffer length.
 
-[[非法的]{style="font-family:宋体"}[DHCP]{lang="EN-US"}]{#struct_0_90630_81574_x509332704}[报文：服务器选项的实际长度和选项中"]{style="font-family:宋体"}[L]{lang="EN-US"}["字段标识的长度不相等]{style="font-family:宋体"}
+非法的DHCP报文：服务器选项的实际长度和选项中"L"字段标识的长度不相等
 
-[[Invalid unicast option length *length*.]{lang="EN-US"}]{#struct_0_90630_81574_x836388881}
+Invalid unicast option length *length*.
 
-[[无效的单播选项长度]{style="font-family:宋体"}]{#struct_0_90630_81574_1745819314}
+无效的单播选项长度
 
-[[IPv6 socket initilization failed.]{lang="EN-US"}]{#struct_0_90630_81574_694180929}
+IPv6 socket initilization failed.
 
-[[IPv6 socket]{lang="EN-US"}]{#struct_0_90630_81574_1745884850}[初始化发生错误]{style="font-family:宋体"}
+IPv6 socket初始化发生错误
 
-[[Invalid lifetime in the reply packet.]{lang="EN-US"}]{#struct_0_90630_81574_28799078}
+Invalid lifetime in the reply packet.
 
-[[Reply]{lang="EN-US"}]{#struct_0_90630_81574_1745295027}[报文中的生命期非法]{style="font-family:宋体"}
+Reply报文中的生命期非法
 
-[[Failed to send packet: only *send-length* of *total-length* bytes were sent.]{lang="EN-US"}]{#struct_0_90630_81574_1745360563}
+Failed to send packet: only *send-length* of *total-length* bytes were sent.
 
-[[发送报文失败，共]{style="font-family:宋体"}*[ total-length]{lang="EN-US"}*]{#struct_0_90630_81574_x2021833734}[字节的报文仅发送出]{style="font-family:宋体"}*[send-length]{lang="EN-US"}*[字节]{style="font-family:宋体"}
+发送报文失败，共* total-length*字节的报文仅发送出*send-length*字节
 
-[[Failed to create max delay timer.]{lang="EN-US"}]{#struct_0_90630_81574_1745163955}
+Failed to create max delay timer.
 
-[[创建延迟发送定时器失败]{style="font-family:宋体"}]{#struct_0_90630_81574_1545064222}
+创建延迟发送定时器失败
 
-[[Failed to create IPv6 socket, error: *error-number.*]{lang="EN-US"}]{#struct_0_90630_81574_1745229491}
+Failed to create IPv6 socket, error: *error-number.*
 
-[[创建]{style="font-family:宋体"}[IPv6 socket ]{lang="EN-US"}]{#struct_0_90630_81574_1745557171}[失败，错误码]{style="font-family:宋体"}*[error-number.]{lang="EN-US"}*
+创建IPv6 socket 失败，错误码*error-number.*
 
-[[Failed to bind socket.]{lang="EN-US"}]{#struct_0_90630_81574_755301416}
+Failed to bind socket.
 
-[[Socket ID: *socket-id*, error: *error-number*.]{lang="EN-US"}]{#struct_0_90630_81574_1745622707}
+Socket ID: *socket-id*, error: *error-number*.
 
-[[绑定]{style="font-family:宋体"}[socket]{lang="EN-US"}]{#struct_0_90630_81574_1745426099}[失败，]{style="font-family:宋体"}[Socket ID *socket-id*]{lang="EN-US"}[，错误码]{style="font-family:宋体"} *[error-number]{lang="EN-US"}*
+绑定socket失败，Socket ID *socket-id*，错误码 *error-number*
 
-[[ Failed to set socket option.]{lang="EN-US"}]{#struct_0_90630_81574_374310840}
+ Failed to set socket option.
 
-[[ Socket ID: *socket-id*, error: *error-number*.]{lang="EN-US"}]{#struct_0_90630_81574_1745491635}
+ Socket ID: *socket-id*, error: *error-number*.
 
-[[设置]{style="font-family:宋体"}[socket]{lang="EN-US"}]{#struct_0_90630_81574_1745819315}[选项失败，]{style="font-family:宋体"}[Socket ID *socket-id*]{lang="EN-US"}[，错误码]{style="font-family:宋体"} *[error-number]{lang="EN-US"}*
+设置socket选项失败，Socket ID *socket-id*，错误码 *error-number*
 
-[[Failed to receive packet from socket. ]{lang="EN-US"}]{#struct_0_90630_81574_694115393}
+Failed to receive packet from socket.
 
-[[Socket ID: *socket-id*, error: *error-number*.]{lang="EN-US"}]{#struct_0_90630_81574_1745884851}
+Socket ID: *socket-id*, error: *error-number*.
 
-[[不能从]{style="font-family:宋体"}[socket]{lang="EN-US"}]{#struct_0_90630_81574_1745295024}[接收报文，]{style="font-family:宋体"}[Socket ID *socket-id*]{lang="EN-US"}[，错误码]{style="font-family:宋体"} *[error-number]{lang="EN-US"}*
+不能从socket接收报文，Socket ID *socket-id*，错误码 *error-number*
 
-[[Discarded packet with no IA or address.]{lang="EN-US"}]{#struct_0_90630_81574_x14031292}
+Discarded packet with no IA or address.
 
-[[丢弃不含]{style="font-family:宋体"}[IA]{lang="EN-US"}]{#struct_0_90630_81574_1745360560}[或地址的]{style="font-family:宋体"}[Advertise]{lang="EN-US"}[报文]{style="font-family:宋体"}
+丢弃不含IA或地址的Advertise报文
 
-[[Response with mismatching client ID]{lang="EN-US"}]{#struct_0_90630_81574_264339749}
+Response with mismatching client ID
 
-[[收到了应答报文，报文中的客户端]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_90630_81574_x1301744192}[和当前设备不匹配]{style="font-family:宋体"}
+收到了应答报文，报文中的客户端ID和当前设备不匹配
 
-[[Wrong length of option 52]{lang="EN-US"}]{#struct_0_90630_81574_1226079916}
+Wrong length of option 52
 
-[[Option 52]{lang="EN-US"}]{#struct_0_90630_81574_x573682350}[长度错误]{style="font-family:宋体"}
+Option 52长度错误
 
-[ ]{lang="EN-US"}
+表1-2 debugging ipv6 dhcp client event命令输出信息描述表
 
-[[表1-2 ]{lang="EN-US"}[debugging ipv6 dhcp client event]{lang="EN-US"}]{#struct_0_90630_81574_x2021768198}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x200147418}[[字段]{style="font-family:黑体"}]{#struct_0_90630_81574_1071076063}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_90630_81574_1745163952}
+Refresh event scheduled in *time* seconds.
 
-[[Refresh event scheduled in *time* seconds.]{lang="EN-US"}]{#struct_0_90630_81574_1545129758}
+在*time*秒后启动刷新事件日程表
 
-[[在]{style="font-family:宋体"}*[time]{lang="EN-US"}*[ ]{lang="EN-US"}]{#struct_0_90630_81574_1611488556}[秒后启动刷新事件日程表]{style="font-family:宋体"}
+Immediately selected the server that sent the Advertise message.
 
-[[Immediately selected the server that sent the Advertise message.]{lang="EN-US"}]{#struct_0_90630_81574_1745229488}
+立即选择发出该Advertise报文的server
 
-[[立即选择发出该]{style="font-family:宋体"}[Advertise]{lang="EN-US"}]{#struct_0_90630_81574_x877503102}[报文的]{style="font-family:宋体"}[server]{lang="EN-US"}
+Recorded the server that sent the Advertise message.
 
-[[Recorded the server that sent the Advertise message.]{lang="EN-US"}]{#struct_0_90630_81574_x1910540549}
+记录发出该Advertise报文的server信息
 
-[[记录发出该]{style="font-family:宋体"}[Advertise]{lang="EN-US"}]{#struct_0_90630_81574_1745557168}[报文的]{style="font-family:宋体"}[server]{lang="EN-US"}[信息]{style="font-family:宋体"}
+Client information change notified successfully.
 
-[[Client information change notified successfully.]{lang="EN-US"}]{#struct_0_90630_81574_754842665}
+成功通知客户端信息变化
 
-[[成功通知客户端信息变化]{style="font-family:宋体"}]{#struct_0_90630_81574_1745622704}
+Address expired.
 
-[[Address expired.]{lang="EN-US"}]{#struct_0_90630_81574_1507940957}
+地址过期
 
-[[地址过期]{style="font-family:宋体"}]{#struct_0_90630_81574_x253812027}
+Prefix expired.
 
-[[Prefix expired.]{lang="EN-US"}]{#struct_0_90630_81574_1745426096}
+前缀过期
 
-[[前缀过期]{style="font-family:宋体"}]{#struct_0_90630_81574_373852088}
+Formed *msg-type*, *time* ms elapsed.
 
-[[Formed *msg-type*, *time* ms elapsed.]{lang="EN-US"}]{#struct_0_90630_81574_x1533473547}
+生成*msg-type*报文，其elapsed time选项为*time* ms
 
-[[生成]{style="font-family:宋体"}*[msg-type]{lang="EN-US"}*]{#struct_0_90630_81574_1745491632}[报文，其]{style="font-family:宋体"}[elapsed time]{lang="EN-US"}[选项为]{style="font-family:宋体"}*[time]{lang="EN-US"}*[ ms]{lang="EN-US"}
+*[message-type* status code: *status code*.]
 
-[*[message-type]{lang="EN-US"}*[ status code: *status code*.]{lang="EN-US"}]{#struct_0_90630_81574_x836782097}
+报文*message-type*的状态码为*status code*
 
-[[报文]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*]{#struct_0_90630_81574_1745819312}[的状态码为]{style="font-family:宋体"}*[status code]{lang="EN-US"}*
+*[Interface-name*: DHCPC6 *client-type* FSM state changed from *former-state* to *later-state* successfully. ]
 
-[*[Interface-name]{lang="EN-US"}*[: DHCPC6 *client-type* FSM state changed from *former-state* to *later-state* successfully. ]{lang="EN-US"}]{#struct_0_90630_81574_693787713}
+接口*interface-name*上*client-type*类型的DHCPv6客户端从*former-state*状态转换到*later-state*状态
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_90630_81574_1745884848}[上]{style="font-family:宋体"}*[client-type]{lang="EN-US"}*[类型的]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[客户端从]{style="font-family:宋体"}*[former-state]{lang="EN-US"}*[状态转换到]{style="font-family:宋体"}*[later-state]{lang="EN-US"}*[状态]{style="font-family:宋体"}
+客户端类型的取值包括：
 
-[[客户端类型的取值包括：]{style="font-family:宋体"}]{#struct_0_90630_81574_28274789}
+·PD：表示请求IPv6前缀的客户端
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PD]{lang="EN-US"}]{#struct_0_90630_81574_x81082210}[：表示请求]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[前缀的客户端]{style="font-family:宋体"}
+·ADDR：表示请求IPv6地址的客户端
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ADDR]{lang="EN-US"}]{#struct_0_90630_81574_1745295025}[：表示请求]{lang="EN-US" style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址的客户端]{lang="EN-US" style="font-family:宋体"}
+·Stateless：表示DHCPv6无状态客户端
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Stateless]{lang="EN-US"}]{#struct_0_90630_81574_x14096828}[：表示]{lang="EN-US" style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[无状态客户端]{lang="EN-US" style="font-family:宋体"}
+状态的取值包括：
 
-[[状态的取值包括：]{style="font-family:宋体"}]{#struct_0_90630_81574_1745360561}
+·IDLE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IDLE]{lang="EN-US"}]{#struct_0_90630_81574_x2021702662}
+·SOLICIT
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SOLICIT]{lang="EN-US"}]{#struct_0_90630_81574_1745163953}
+·REQUEST
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[REQUEST]{lang="EN-US"}]{#struct_0_90630_81574_1545195294}
+·OPEN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[OPEN]{lang="EN-US"}]{#struct_0_90630_81574_478012892}
+·RENEW
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RENEW]{lang="EN-US"}]{#struct_0_90630_81574_1745229489}
+·REBIND
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[REBIND]{lang="EN-US"}]{#struct_0_90630_81574_x877437566}
+·RELEASE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RELEASE]{lang="EN-US"}]{#struct_0_90630_81574_1745557169}
+·DECLINE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DECLINE]{lang="EN-US"}]{#struct_0_90630_81574_754777129}
+·INFO-REQUESTING
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[I]{lang="EN-US"}[NFO-REQUESTING]{lang="EN-US"}]{#struct_0_90630_81574_1745622705}
+表1-3 debugging ipv6 dhcp client packet命令输出信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表1-3 ]{lang="EN-US"}[debugging ipv6 dhcp client packet]{lang="EN-US"}]{#struct_0_90630_81574_1508006493}[命令输出信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x183871494}[[字段]{style="font-family:宋体"}]{#struct_0_90630_81574_758779160}
+Packet sent
 
-[[描述]{style="font-family:宋体"}]{#struct_0_90630_81574_1745426097}
+DHCPv6报文已发送
 
-[[Packet sent]{lang="EN-US"}]{#struct_0_90630_81574_373917624}
+Packet received
 
-[[DHCPv6]{lang="EN-US"}]{#struct_0_90630_81574_1224876863}[报文已发送]{style="font-family:宋体"}
+DHCPv6报文已收到
 
-[[Packet received]{lang="EN-US"}]{#struct_0_90630_81574_1745491633}
+Type *message-type*(*number*)
 
-[[DHCPv6]{lang="EN-US"}]{#struct_0_90630_81574_x836847633}[报文已收到]{style="font-family:宋体"}
+报文类型（报文类型号）
 
-[[Type *message-type*(*number*)]{lang="EN-US"}]{#struct_0_90630_81574_x976452281}
+Transaction-ID *transaction-id*
 
-[[报文类型（报文类型号）]{style="font-family:宋体"}]{#struct_0_90630_81574_1745819313}
+DHCPv6客户端发起申请时生成的一个随机数，用来唯一标识一次申请过程
 
-[[Transaction-ID *transaction-id*]{lang="EN-US"}]{#struct_0_90630_81574_693722177}
+Option
 
-[[DHCPv6]{lang="EN-US"}]{#struct_0_90630_81574_437093052}[客户端发起申请时生成的一个随机数，用来唯一标识一次申请过程]{style="font-family:宋体"}
+选项类型及类型号
 
-[[Option]{lang="EN-US"}]{#struct_0_90630_81574_1745884849}
+Length
 
-[[选项类型及类型号]{style="font-family:宋体"}]{#struct_0_90630_81574_28340325}
+选项长度
 
-[[Length]{lang="EN-US"}]{#struct_0_90630_81574_x983588327}
+Information
 
-[[选项长度]{style="font-family:宋体"}]{#struct_0_90630_81574_286498801}
+选项信息
 
-[[Information]{lang="EN-US"}]{#struct_0_90630_81574_x697196247}
+【举例】
 
-[[选项信息]{style="font-family:宋体"}]{#struct_0_90630_81574_x983522791}
+\# 在VLAN接口2上启动DHCPv6客户端的无状态配置，打开报文调试开关。
 
-[ ]{lang="EN-US"}
+\<Sysname\> debugging ipv6 dhcp client packet
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_90630_81574_231496606}
+\*Feb 12 09:52:12:990 2013 Sysname DHCPC6/7/Packet: -MDC=1;
 
-[[\# ]{lang="EN-US"}]{#struct_0_90630_81574_2105532555}[在]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口]{style="font-family:宋体"}[2]{lang="EN-US"}[上启动]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[客户端的无状态配置，打开报文调试开关。]{style="font-family:宋体"}
+Vlan-interface2, Packet sent:
 
-[[\<Sysname\> debugging ipv6 dhcp client packet]{lang="EN-US"}]{#struct_0_90630_81574_x983653863}
+Type Information-request(11)
 
-[\*Feb 12 09:52:12:990 2013 Sysname DHCPC6/7/Packet: -MDC=1;]{lang="EN-US"}
+Transaction-id 0x07e0d3
 
-[Vlan-interface2, Packet sent:]{lang="EN-US"}
+Option               Length  Information
 
-[Type Information-request(11)]{lang="EN-US"}
+CLIENTID(1)          10      00030001000fe2ff0000
 
-[Transaction-id 0x07e0d3]{lang="EN-US"}
+ORO(6)               12      DOMAIN_LIST(24)
 
-[Option               Length  Information ]{lang="EN-US"}
+                             DNS_SERVERS(23)
 
-[CLIENTID(1)          10      00030001000fe2ff0000]{lang="EN-US"}
+                             SIP_SERVER_A(22)
 
-[ORO(6)               12      DOMAIN_LIST(24)]{lang="EN-US"}
+                             AC-LIST(52)
 
-[                             DNS_SERVERS(23)]{lang="EN-US"}
+                             DS-LITE(64)
 
-[                             SIP_SERVER_A(22)]{lang="EN-US"}
+                             SIP_SERVER_D(21)
 
-[                             AC-LIST(52)]{lang="EN-US"}
+ELAPSED_TIME(8)      2       0
 
-[                             DS-LITE(64)]{lang="EN-US"}
+*[// DHCPv6*]*客户端发送INFORMATION-REQUEST报文*
 
-[                             SIP_SERVER_D(21)]{lang="EN-US"}
+\*Feb 12 10:00:45:696 2013 Sysname DHCPC6/7/Packet: -MDC=1;
 
-[ELAPSED_TIME(8)      2       0]{lang="EN-US"}
+Vlan-interface2, Packet received:
 
-[*[// DHCPv6]{lang="EN-US"}*]{#struct_0_90630_81574_x916467565}*[客户端发送]{style="font-family:宋体"}[INFORMATION-REQUEST]{lang="EN-US"}[报文]{style="font-family:宋体"}*
+Type Reply(7)
 
-[[\*Feb 12 10:00:45:696 2013 Sysname DHCPC6/7/Packet: -MDC=1;]{lang="EN-US"}]{#struct_0_90630_81574_x983326183}
+Transaction-id 0x07e0d3
 
-[Vlan-interface2, Packet received:]{lang="EN-US"}
+Option               Length  Information
 
-[Type Reply(7)]{lang="EN-US"}
+CLIENTID(1)          10      00030001000fe2ff0000
 
-[Transaction-id 0x07e0d3]{lang="EN-US"}
+SERVERID(2)          10      0003000100238963c4ba
 
-[Option               Length  Information ]{lang="EN-US"}
+DNS-SERVERS(23)      16      1:2:3::5
 
-[CLIENTID(1)          10      00030001000fe2ff0000]{lang="EN-US"}
+DOMAIN-LIST(24)      9       abc.com
 
-[SERVERID(2)          10      0003000100238963c4ba]{lang="EN-US"}
+*[// DHCPv6*]*客户端收到REPLY报文*
 
-[DNS-SERVERS(23)      16      1:2:3::5]{lang="EN-US"}
+\# 在VLAN接口2上启动DHCPv6客户端的无状态配置，打开事件调试开关。
 
-[DOMAIN-LIST(24)      9       abc.com]{lang="EN-US"}
+\<Sysname\> debugging ipv6 dhcp client event
 
-[*[// DHCPv6]{lang="EN-US"}*]{#struct_0_90630_81574_x2120077881}*[客户端收到]{style="font-family:宋体"}[REPLY]{lang="EN-US"}[报文]{style="font-family:宋体"}*
+\*Feb 20 17:37:26:502 2013 Sysname DHCPC6/7/Event: -MDC=1;
 
-[[\# ]{lang="EN-US"}]{#struct_0_90630_81574_127098978}[在]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口]{style="font-family:宋体"}[2]{lang="EN-US"}[上启动]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[客户端的无状态配置，打开事件调试开关。]{style="font-family:宋体"}
+Client information change notified successfully.
 
-[[\<Sysname\> debugging ipv6 dhcp client event]{lang="EN-US"}]{#struct_0_90630_81574_x2145117579}
+*[//*]*成功通知客户端信息变化*
 
-[\*Feb 20 17:37:26:502 2013 Sysname DHCPC6/7/Event: -MDC=1;]{lang="EN-US"}
+\# 在VLAN接口2上启动DHCPv6客户端的无状态配置，打开错误调试开关。
 
-[[Client information change notified successfully.]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_90630_81574_475592214}
+\<Sysname\> debugging ipv6 dhcp client error
 
-[*[//]{lang="EN-US"}*]{#struct_0_90630_81574_x983260647}*[成功通知客户端信息变化]{style="font-family:宋体"}*
+\*Feb 25 09:05:19:102 2013 Sysname DHCPC6/7/Error: -MDC=1;
 
-[[\# ]{lang="EN-US"}]{#struct_0_90630_81574_x570276796}[在]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口]{style="font-family:宋体"}[2]{lang="EN-US"}[上启动]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[客户端的无状态配置，打开错误调试开关。]{style="font-family:宋体"}
+Failed to acquire IRT
 
-[[\<Sysname\> debugging ipv6 dhcp client error]{lang="EN-US"}]{#struct_0_90630_81574_x191906441}
+*[//*]*不能获取IRT值*
 
-[\*Feb 25 09:05:19:102 2013 Sysname DHCPC6/7/Error: -MDC=1;]{lang="EN-US"}
+\# 配置接口GigabitEthernet1/0/1作为DHCPv6客户端以二报文交互方式申请IPv6地址，打开DHCPv6客户端的所有调试开关。
 
-[[Failed to acquire IRT ]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_90630_81574_x9826372}
+\<Sysname\> debugging ipv6 dhcp client all
 
-[*[//]{lang="EN-US"}*]{#struct_0_90630_81574_x983457255}*[不能获取]{style="font-family:宋体"}[IRT]{lang="EN-US"}[值]{style="font-family:宋体"}*
+\*Feb  9 14:37:40:312 2013 Sysname DHCPC6/7/Event: -MDC=1;
 
-[[\# ]{lang="EN-US"}]{#struct_0_90630_81574_x1739218242}[配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[作为]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[客户端以二报文交互方式申请]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址，打开]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[客户端的所有调试开关。]{style="font-family:宋体"}
+GigabitEthernet1/0/1: DHCPC6 ADDR FSM state changed from IDLE to SOLICIT successfully.
 
-[[\<Sysname\> debugging ipv6 dhcp client all]{lang="EN-US"}]{#struct_0_90630_81574_772344130}
+*// 接口gigabitEthernet1/0/1上ADDR类型的DHCPv6客户端从IDLE状态转换到SOLICIT状态*
 
-[\*Feb  9 14:37:40:312 2013 Sysname DHCPC6/7/Event: -MDC=1;]{lang="EN-US"}
+\*Feb  9 14:37:40:312 2013 Sysname DHCPC6/7/Packet: -MDC=1;
 
-[GigabitEthernet1/0/1: DHCPC6 ADDR FSM state changed from IDLE to SOLICIT successfully.]{lang="EN-US"}
+GigabitEthernet1/0/1, Packet sent:
 
-[*[// ]{lang="EN-US"}*]{#struct_0_90630_81574_x417886704}*[接口]{style="font-family:宋体"}[gigabitEthernet1/0/1]{lang="EN-US"}[上]{style="font-family:宋体"}[ADDR]{lang="EN-US"}[类型的]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[客户端从]{style="font-family:宋体"}[IDLE]{lang="EN-US"}[状态转换到]{style="font-family:宋体"}[SOLICIT]{lang="EN-US"}[状态]{style="font-family:宋体"}*
+Type Solicit(1)
 
-[[\*Feb  9 14:37:40:312 2013 Sysname DHCPC6/7/Packet: -MDC=1;]{lang="EN-US"}]{#struct_0_90630_81574_x983064039}
+Transaction-ID 0xd60e00
 
-[GigabitEthernet1/0/1, Packet sent:]{lang="EN-US"}
+Option               Length  Information
 
-[Type Solicit(1)]{lang="EN-US"}
+RAPID_COMMIT(14)     0
 
-[Transaction-ID 0xd60e00]{lang="EN-US"}
+CLIENTID(1)          10      00030001000fe2ff0000
 
-[Option               Length  Information]{lang="EN-US"}
+IA_NA(3)             40      IAID: 0xf0019
 
-[RAPID_COMMIT(14)     0]{lang="EN-US"}
+                             T1: 0
 
-[CLIENTID(1)          10      00030001000fe2ff0000]{lang="EN-US"}
+                             T2: 0
 
-[IA_NA(3)             40      IAID: 0xf0019]{lang="EN-US"}
+IAADDR(5)            24      Address: ::
 
-[                             T1: 0]{lang="EN-US"}
+                             Preferred lifetime: 0
 
-[                             T2: 0]{lang="EN-US"}
+                             Valid lifetime: 0
 
-[IAADDR(5)            24      Address: ::]{lang="EN-US"}
+ORO(6)               12      DOMAIN_LIST(24)
 
-[                             Preferred lifetime: 0]{lang="EN-US"}
+                             DNS_SERVERS(23)
 
-[                             Valid lifetime: 0]{lang="EN-US"}
+                             SIP_SERVER_A(22)
 
-[ORO(6)               12      DOMAIN_LIST(24)]{lang="EN-US"}
+                             AC-LIST(52)
 
-[                             DNS_SERVERS(23)]{lang="EN-US"}
+                             DS-LITE(64)
 
-[                             SIP_SERVER_A(22)]{lang="EN-US"}
+                             SIP_SERVER_D(21)
 
-[                             AC-LIST(52)]{lang="EN-US"}
+ELAPSED_TIME(8)      2       0
 
-[                             DS-LITE(64)]{lang="EN-US"}
+*// 发送的报文内容*
 
-[                             SIP_SERVER_D(21)]{lang="EN-US"}
+\*Feb  9 14:37:40:468 2013 Sysname DHCPC6/7/Packet: -MDC=1;
 
-[ELAPSED_TIME(8)      2       0]{lang="EN-US"}
+GigabitEthernet1/0/1, Packet received:
 
-[*[// ]{lang="EN-US"}*]{#struct_0_90630_81574_1373116019}*[发送的报文内容]{style="font-family:宋体"}*
+Type Reply(7)
 
-[[\*Feb  9 14:37:40:468 2013 Sysname DHCPC6/7/Packet: -MDC=1;]{lang="EN-US"}]{#struct_0_90630_81574_x982998503}
+Transaction-ID 0xd60e00
 
-[GigabitEthernet1/0/1, Packet received:]{lang="EN-US"}
+Option               Length  Information
 
-[Type Reply(7)]{lang="EN-US"}
+RAPID_COMMIT(14)     0
 
-[Transaction-ID 0xd60e00]{lang="EN-US"}
+CLIENTID(1)          10      00030001000fe2ff0000
 
-[Option               Length  Information]{lang="EN-US"}
+SERVERID(2)          14      0003000100238963c4ba
 
-[RAPID_COMMIT(14)     0]{lang="EN-US"}
+IA_NA(3)             74      IAID: 0xf0019
 
-[CLIENTID(1)          10      00030001000fe2ff0000]{lang="EN-US"}
+                             T1: 300
 
-[SERVERID(2)          14      0003000100238963c4ba]{lang="EN-US"}
+                             T2: 400
 
-[IA_NA(3)             74      IAID: 0xf0019]{lang="EN-US"}
+IAADDR(5)            24      Address: 100::9DD8:D090:A1A6:7858
 
-[                             T1: 300]{lang="EN-US"}
+                             Preferred lifetime: 500
 
-[                             T2: 400]{lang="EN-US"}
+                             Valid lifetime: 600
 
-[IAADDR(5)            24      Address: 100::9DD8:D090:A1A6:7858]{lang="EN-US"}
+STATUS_CODE(13)      30      status-code: Success(0)
 
-[                             Preferred lifetime: 500]{lang="EN-US"}
+DNS_SERVERS(23)      32      2000::FF
 
-[                             Valid lifetime: 600]{lang="EN-US"}
+                             2000::FE
 
-[STATUS_CODE(13)      30      status-code: Success(0)]{lang="EN-US"}
+DOMAIN_LIST(24)      32      example.com
 
-[DNS_SERVERS(23)      32      2000::FF]{lang="EN-US"}
+                             example2.test.com
 
-[                             2000::FE]{lang="EN-US"}
+*// 收到应答报文，输出接收到的报文的内容*
 
-[DOMAIN_LIST(24)      32      example.com]{lang="EN-US"}
+\*Feb  9 14:37:40:488 2013 Sysname DHCPC6/7/Event: -MDC=1;
 
-[                             example2.test.com]{lang="EN-US"}
+GigabitEthernet1/0/1: DHCPC6 ADDR FSM state changed from SOLICIT to OPEN successfully.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_90630_81574_x495607689}*[收到应答报文，输出接收到的报文的内容]{style="font-family:宋体"}*
-
-[[\*Feb  9 14:37:40:488 2013 Sysname DHCPC6/7/Event: -MDC=1;]{lang="EN-US"}]{#struct_0_90630_81574_x983588326}
-
-[GigabitEthernet1/0/1: DHCPC6 ADDR FSM state changed from SOLICIT to OPEN successfully.]{lang="EN-US"}
-
-*[// ]{lang="EN-US" style="font-size:10.5pt;
-font-family:\"Arial\",\"sans-serif\""}[接口]{style="font-size:10.5pt;
-font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US" style="font-size:10.5pt;
-font-family:\"Arial\",\"sans-serif\""}[上]{style="font-size:10.5pt;font-family:宋体"}[ADDR]{lang="EN-US" style="font-size:10.5pt;font-family:\"Arial\",\"sans-serif\""}[类型的]{style="font-size:10.5pt;font-family:宋体"}[DHCPv6]{lang="EN-US" style="font-size:10.5pt;font-family:\"Arial\",\"sans-serif\""}[客户端从]{style="font-size:10.5pt;font-family:宋体"}[SOLICIT]{lang="EN-US" style="font-size:10.5pt;font-family:\"Arial\",\"sans-serif\""}[状态转换到]{style="font-size:10.5pt;font-family:宋体"}[OPEN]{lang="EN-US" style="font-size:10.5pt;font-family:\"Arial\",\"sans-serif\""}[状态]{style="font-size:10.5pt;font-family:宋体"}*
-
-::: {#709743257 .myid}
-[]{#_Toc404786935}[]{#struct_0_90630_81574_286433265}
+*// 接口GigabitEthernet1/0/1上ADDR类型的DHCPv6客户端从SOLICIT状态转换到OPEN状态*
 
 **DHCPv6 \-- DHCPv6调试命令 \-- debugging ipv6 dhcp relay**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_90630_81574_1184706521}
+【命令】
 
-[**[debugging ipv6 dhcp relay ]{lang="EN-US"}**[{ **all** \| **error** \| **event** \| **packet** }]{lang="EN-US"}]{#struct_0_90630_81574_x1989189559}
+**[debugging ipv6 dhcp relay **[{ **all** \| **error** \| **event** \| **packet** }]]
 
-[**[undo debugging ipv6 dhcp relay]{lang="EN-US"}**[ { **all** \| **error** \| **event** \| **packet** }]{lang="EN-US"}]{#struct_0_90630_81574_x983522790}
+**[undo debugging ipv6 dhcp relay**[ { **all** \| **error** \| **event** \| **packet** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_90630_81574_231431070}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_90630_81574_x637732863}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_90630_81574_34982893}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_90630_81574_x1121243335}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_90630_81574_x255390307}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_90630_81574_x604769752}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_90630_81574_1085868794}[：表示]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[中继的所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示DHCPv6中继的所有调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_90630_81574_x983719398}[：表示]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[中继的错误调试信息开关。]{style="font-family:宋体"}
+**[error**]：表示DHCPv6中继的错误调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_90630_81574_x1294527271}[：表示]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[中继的事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示DHCPv6中继的事件调试信息开关。
 
-[**[packet]{lang="EN-US"}**]{#struct_0_90630_81574_x332838746}[：表示]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[中继的报文调试信息开关。]{style="font-family:宋体"}
+**[packet**]：表示DHCPv6中继的报文调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_90630_81574_x1601796117}
+【描述】
 
-[**[debugging ipv6 dhcp relay]{lang="EN-US"}**]{#struct_0_90630_81574_x659667845}[命令用来打开]{style="font-family:
-宋体"}[DHCPv6]{lang="EN-US"}[中继调试信息开关。]{style="font-family:宋体"}**[undo debugging ipv6 dhcp relay]{lang="EN-US"}**[命令用来关闭]{style="font-family:
-宋体"}[DHCPv6]{lang="EN-US"}[中继调试信息开关。]{style="font-family:宋体"}
+**[debugging ipv6 dhcp relay**]命令用来打开DHCPv6中继调试信息开关。**undo debugging ipv6 dhcp relay**命令用来关闭DHCPv6中继调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}]{#struct_0_90630_81574_1571275409}[中继调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，DHCPv6中继调试信息开关处于关闭状态。
 
-[[表1-4 ]{lang="EN-US"}[debugging ipv6 dhcp relay packet]{lang="EN-US"}]{#struct_0_90630_81574_x961637607}[命令输出信息描述表]{style="font-family:黑体"}
+表1-4 debugging ipv6 dhcp relay packet命令输出信息描述表
 
-[]{#table_struct_0_x161264608}[[字段]{style="font-family:黑体"}]{#struct_0_90630_81574_1223643587}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_90630_81574_x983653862}
+描述
 
-[[From *ipv6-address* port *port*]{lang="EN-US"}]{#struct_0_90630_81574_x916402029}
+From *ipv6-address* port *port*
 
-[[接收报文时表示报文的源地址和端口号]{style="font-family:宋体"}]{#struct_0_90630_81574_685304169}
+接收报文时表示报文的源地址和端口号
 
-[[To *ipv6-address* port *port*]{lang="EN-US"}]{#struct_0_90630_81574_x610954502}
+To *ipv6-address* port *port*
 
-[[发送报文时表示报文的目的地址和端口号]{style="font-family:宋体"}]{#struct_0_90630_81574_x983326182}
+发送报文时表示报文的目的地址和端口号
 
-[[interface *interface-name*]{lang="EN-US"}]{#struct_0_90630_81574_x2120143417}
+interface *interface-name*
 
-[[接收或发送报文的接口名称]{style="font-family:宋体"}]{#struct_0_90630_81574_x1357634557}
+接收或发送报文的接口名称
 
-[[Message type: *message-type*]{lang="EN-US"}]{#struct_0_90630_81574_x230901973}
+Message type: *message-type*
 
-[[DHCPv6]{lang="EN-US"}]{#struct_0_90630_81574_x1586074024}[消息类型，包括：]{style="font-family:宋体"}
+DHCPv6消息类型，包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Solicit]{lang="EN-US"}]{#struct_0_90630_81574_x983260646}
+·Solicit
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Advertise]{lang="EN-US"}]{#struct_0_90630_81574_x570342332}
+·Advertise
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Request]{lang="EN-US"}]{#struct_0_90630_81574_x1751061648}
+·Request
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Confirm]{lang="EN-US"}]{#struct_0_90630_81574_467850812}
+·Confirm
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Renew]{lang="EN-US"}]{#struct_0_90630_81574_x1430946992}
+·Renew
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Rebind]{lang="EN-US"}]{#struct_0_90630_81574_x983457254}
+·Rebind
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Reply]{lang="EN-US"}]{#struct_0_90630_81574_x1739152706}
+·Reply
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Release ]{lang="EN-US"}]{#struct_0_90630_81574_1363302079}
+·Release
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Decline]{lang="EN-US"}]{#struct_0_90630_81574_469187876}
+·Decline
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Reconfigure]{lang="EN-US"}]{#struct_0_90630_81574_x983391718}
+·Reconfigure
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Information-Request]{lang="EN-US"}]{#struct_0_90630_81574_x157370075}
+·Information-Request
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Relay-Forward]{lang="EN-US"}]{#struct_0_90630_81574_1560408623}
+·Relay-Forward
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Relay-Reply]{lang="EN-US"}]{#struct_0_90630_81574_903982705}
+·Relay-Reply
 
-[[Transaction ID: *transaction-id*]{lang="EN-US"}]{#struct_0_90630_81574_x983064038}
+Transaction ID: *transaction-id*
 
-[[DHCPv6]{lang="EN-US"}]{#struct_0_90630_81574_1373050483}[客户端发起申请时生成的一个随机数，用来唯一标示一次申请过程]{style="font-family:宋体"}
+DHCPv6客户端发起申请时生成的一个随机数，用来唯一标示一次申请过程
 
-[[Hop count: *hops*]{lang="EN-US"}]{#struct_0_90630_81574_1377580287}
+Hop count: *hops*
 
-[[DHCPv6]{lang="EN-US"}]{#struct_0_90630_81574_x982998502}[报文经过的]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[中继的数目，如果是]{style="font-family:宋体"}[Relay-Forward]{lang="EN-US"}[或者是]{style="font-family:宋体"}[Relay-Reply]{lang="EN-US"}[报文时输出]{style="font-family:宋体"}
+DHCPv6报文经过的DHCPv6中继的数目，如果是Relay-Forward或者是Relay-Reply报文时输出
 
-[[Link address: *ipv6-address*]{lang="EN-US"}]{#struct_0_90630_81574_x495542153}
+Link address: *ipv6-address*
 
-[[链路地址，如果]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}]{#struct_0_90630_81574_853818581}[报文为]{style="font-family:宋体"}[Relay-Forward]{lang="EN-US"}[或]{style="font-family:宋体"}[Relay-Reply]{lang="EN-US"}[报文，则打印该字段]{style="font-family:宋体"}
+链路地址，如果DHCPv6报文为Relay-Forward或Relay-Reply报文，则打印该字段
 
-[[Peer address: *ipv6-address*]{lang="EN-US"}]{#struct_0_90630_81574_x983588329}
+Peer address: *ipv6-address*
 
-[[对端地址，如果]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}]{#struct_0_90630_81574_285843441}[报文为]{style="font-family:宋体"}[Relay-Forward]{lang="EN-US"}[或]{style="font-family:宋体"}[Relay-Reply]{lang="EN-US"}[报文，则打印该字段]{style="font-family:宋体"}
+对端地址，如果DHCPv6报文为Relay-Forward或Relay-Reply报文，则打印该字段
 
-[ ]{lang="EN-US"}
+表1-5 debugging ipv6 dhcp relay event命令输出信息描述表
 
-[[表1-5 ]{lang="EN-US"}[debugging ipv6 dhcp relay event]{lang="EN-US"}]{#struct_0_90630_81574_x998553943}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x164898908}[[字段]{style="font-family:黑体"}]{#struct_0_90630_81574_676710457}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_90630_81574_x983522793}
+Received a short packet from *ipv6-address* port *port-number*, length *length* bytes.
 
-[[Received a short packet from *ipv6-address* port *port-number*, length *length* bytes.]{lang="EN-US"}]{#struct_0_90630_81574_231627678}
+收到一个来自地址为*ipv6-address*端口号为*port-number*长度为*length*的短包
 
-[[收到一个来自地址为]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_1561846176}[端口号为]{style="font-family:宋体"}*[port-number]{lang="EN-US"}*[长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*[的短包]{style="font-family:宋体"}
+Can not find an interface to process the packet.
 
-[[Can not find an interface to process the packet.]{lang="EN-US"}]{#struct_0_90630_81574_x983719401}
+找不到处理报文的接口，一般为对应的接口没有启用DHCPv6功能
 
-[[找不到处理报文的接口，一般为对应的接口没有启用]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}]{#struct_0_90630_81574_x2104421168}[功能]{style="font-family:宋体"}
+Discard the *message-type* message from *ipv6-address* port *port-number*.
 
-[[Discard the *message-type* message from *ipv6-address* port *port-number*.]{lang="EN-US"}]{#struct_0_90630_81574_x983653865}
+丢弃从地址*ipv6-address*端口号*port-number*收到的类型为*message-type*的报文
 
-[[丢弃从地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_x916860781}[端口号]{style="font-family:宋体"}*[port-number]{lang="EN-US"}*[收到的类型为]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[的报文]{style="font-family:宋体"}
+Discard the *message-type* message to *ipv6-address* port *port-number*.
 
-[[Discard the *message-type* message to *ipv6-address* port *port-number*.]{lang="EN-US"}]{#struct_0_90630_81574_x983326185}
+丢弃发送到地址*ipv6-address*端口号*port-number*的类型为*message-type*的报文
 
-[[丢弃发送到地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_x983260649}[端口号]{style="font-family:宋体"}*[port-number]{lang="EN-US"}*[的类型为]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[的报文]{style="font-family:宋体"}
+Interface *interface-name* is activated.
 
-[[Interface *interface-name* is activated.]{lang="EN-US"}]{#struct_0_90630_81574_x570145724}
+接口*interface-name*被激活
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_90630_81574_x983457257}[被激活]{style="font-family:宋体"}
+Add an IPv6 address *ipv6-address* to the interface *interface-name*.
 
-[[Add an IPv6 address *ipv6-address* to the interface *interface-name*.]{lang="EN-US"}]{#struct_0_90630_81574_x1739087170}
+接口*interface-name*添加IPv6地址*ipv6-address*
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_90630_81574_x1135438882}[添加]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*
+Interface *interface-name* is deactivated.
 
-[[Interface *interface-name* is deactivated.]{lang="EN-US"}]{#struct_0_90630_81574_x983391721}
+接口*interface-name*被去激活
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_90630_81574_x156911322}[被去激活]{style="font-family:宋体"}
+Delete an IPv6 address *ipv6-address* from the interface *interface-name*.
 
-[[Delete an IPv6 address *ipv6-address* from the interface *interface-name*.]{lang="EN-US"}]{#struct_0_90630_81574_x983064041}
+接口*interface-name*删除IP地址*ipv6-address*
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_90630_81574_x982998505}[删除]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*
+Interface *interface-name* is deleted.
 
-[[Interface *interface-name* is deleted.]{lang="EN-US"}]{#struct_0_90630_81574_x983588328}
+接口*interface-name*被删除
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_90630_81574_285777905}[被删除]{style="font-family:宋体"}
+The MAC address of interface *interface-name* is changed..
 
-[[The MAC address of interface *interface-name* is changed..]{lang="EN-US"}]{#struct_0_90630_81574_x983522792}
+接口*interface-name*的MAC地址改变
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*[ ]{lang="EN-US"}]{#struct_0_90630_81574_231562142}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址改变]{style="font-family:宋体"}
+Invalid packet length.
 
-[[Invalid packet length.]{lang="EN-US"}]{#struct_0_90630_81574_x983719400}
+报文长度无效
 
-[[报文长度无效]{style="font-family:宋体"}]{#struct_0_90630_81574_x983653864}
+Invalid relay message option.
 
-[[Invalid relay message option.]{lang="EN-US"}]{#struct_0_90630_81574_x983326184}
+报文中的relay message option选项无效
 
-[[报文中的]{style="font-family:宋体"}[relay message option]{lang="EN-US"}]{#struct_0_90630_81574_x2120536633}[选项无效]{style="font-family:宋体"}
+The length of relay-forward or relay-reply packet is invalid.
 
-[[The length of relay-forward or relay-reply packet is invalid.]{lang="EN-US"}]{#struct_0_90630_81574_x347383994}
+Relay-forward或Relay-reply报文长度无效
 
-[[Relay-forward]{lang="EN-US"}]{#struct_0_90630_81574_x983260648}[或]{style="font-family:宋体"}[Relay-reply]{lang="EN-US"}[报文长度无效]{style="font-family:宋体"}
+No relay message option.
 
-[[No relay message option.]{lang="EN-US"}]{#struct_0_90630_81574_x570211260}
+报文中缺少relay message option选项
 
-[[报文中缺少]{style="font-family:宋体"}[relay message option]{lang="EN-US"}]{#struct_0_90630_81574_x983457256}[选项]{style="font-family:宋体"}
+Relay the *message-type* message from *ipv6-address* port *port-number* to a DHCPv6 server.
 
-[[Relay the *message-type* message from *ipv6-address* port *port-number* to a DHCPv6 server.]{lang="EN-US"}]{#struct_0_90630_81574_x1739021634}
+将从地址*ipv6-address*端口号*port-number*收到的类型为*message-type*的上行报文转发给DHCPv6服务器
 
-[[将从地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_x983391720}[端口号]{style="font-family:宋体"}*[port-number]{lang="EN-US"}*[收到的类型为]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[的上行报文转发给]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[服务器]{style="font-family:宋体"}
+Relay the *message-type* message from *ipv6-address* port *port-number* to a DHCPv6 client.
 
-[[Relay the *message-type* message from *ipv6-address* port *port-number* to a DHCPv6 client.]{lang="EN-US"}]{#struct_0_90630_81574_x156845786}
+将从地址*ipv6-address*端口号*port-number*收到的类型为*message-type*的上行报文转发给DHCPv6客户端
 
-[[将从地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_x983064040}[端口号]{style="font-family:宋体"}*[port-number]{lang="EN-US"}*[收到的类型为]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[的上行报文转发给]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[客户端]{style="font-family:宋体"}
+The hop count exceeds the limit.
 
-[[The hop count exceeds the limit.]{lang="EN-US"}]{#struct_0_90630_81574_1372526190}
+报文中记录的跳数超过最大值
 
-[[报文中记录的跳数超过最大值]{style="font-family:宋体"}]{#struct_0_90630_81574_x982998504}
+The relay-reply packet is a multicast packet.
 
-[[The relay-reply packet is a multicast packet.]{lang="EN-US"}]{#struct_0_90630_81574_x983588331}
+收到的relay-reply报文是组播报文
 
-[[收到的]{style="font-family:宋体"}[relay-reply]{lang="EN-US"}]{#struct_0_90630_81574_x983522795}[报文是组播报文]{style="font-family:宋体"}
+Relay a message with unknown type *message-type-id* to *ipv6-address* port *port-number*.
 
-[[Relay a message with unknown type *message-type-id* to *ipv6-address* port *port-number*.]{lang="EN-US"}]{#struct_0_90630_81574_231234462}
+转发报文类型为*message-type-id*的未知类型的下行报文到地址*ipv6-address*端口号*port-number*
 
-[[转发报文类型为]{style="font-family:宋体"}*[message-type-id]{lang="EN-US"}*]{#struct_0_90630_81574_x983719403}[的未知类型的下行报文到地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*[端口号]{style="font-family:宋体"}*[port-number]{lang="EN-US"}*
+Relay a message with unknown type *message-type-id* from *ipv6-address* port *port-number*.
 
-[[Relay a message with unknown type *message-type-id* from *ipv6-address* port *port-number*.]{lang="EN-US"}]{#struct_0_90630_81574_x983653867}
+转发从地址*ipv6-address*端口号*port-number*收到的类型ID为*message-type-id*的未知类型的上行报文
 
-[[转发从地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_x916729709}[端口号]{style="font-family:宋体"}*[port-number]{lang="EN-US"}*[收到的类型]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[message-type-id]{lang="EN-US"}*[的未知类型的上行报文]{style="font-family:宋体"}
+Unknown interface event *event* is detected on interface *interface-name*.
 
-[[Unknown interface event *event* is detected on interface *interface-name*.]{lang="EN-US"}]{#struct_0_90630_81574_x983326187}
+接口*interface-name*检测到不支持的接口事件*event*
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_90630_81574_x983260651}[检测到不支持的接口事件]{style="font-family:宋体"}*[event]{lang="EN-US"}*
+Unknown IP address event *event* is detected on interface *interface-name*.
 
-[[Unknown IP address event *event* is detected on interface *interface-name*.]{lang="EN-US"}]{#struct_0_90630_81574_x570670013}
+接口*interface-name*检测到不支持的IP地址事件*event*
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_90630_81574_938594900}[检测到不支持的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址事件]{style="font-family:宋体"}*[event]{lang="EN-US"}*
+表1-6 debugging ipv6 dhcp relay error命令输出信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表1-6 ]{lang="EN-US"}[debugging ipv6 dhcp relay error]{lang="EN-US"}]{#struct_0_90630_81574_1059022374}[命令输出信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x145885796}[[字段]{style="font-family:黑体"}]{#struct_0_90630_81574_x743883808}
+Error occurs when calculation the value of option *option-code*.
 
-[[描述]{style="font-family:黑体"}]{#struct_0_90630_81574_938660436}
+计算选项编号为*option-code*的选项的值出错
 
-[[Error occurs when calculation the value of option *option-code*.]{lang="EN-US"}]{#struct_0_90630_81574_x1086888130}
+Failed to get IPv6 address of interface *interface-name*.
 
-[[计算选项编号为]{style="font-family:宋体"}*[option-code]{lang="EN-US"}*]{#struct_0_90630_81574_938988116}[的选项的值出错]{style="font-family:宋体"}
+获取接口*interface-name*的IPv6地址失败
 
-[[Failed to get IPv6 address of interface *interface-name*.]{lang="EN-US"}]{#struct_0_90630_81574_x83490141}
+Failed to send packet.
 
-[[获取接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_90630_81574_939053652}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址失败]{style="font-family:宋体"}
+发送报文失败
 
-[[Failed to send packet.]{lang="EN-US"}]{#struct_0_90630_81574_1392402278}
+Malformed packet dhcp6:
 
-[[发送报文失败]{style="font-family:宋体"}]{#struct_0_90630_81574_938857044}
+option length does not equal its option buffer length.
 
-[[Malformed packet dhcp6:]{lang="EN-US"}]{#struct_0_90630_81574_1056620169}
+非法的DHCP报文：服务器选项的实际长度和选项中"L"字段标识的长度不相等
 
-[[option length does not equal its option buffer length.]{lang="EN-US"}]{#struct_0_90630_81574_x964025143}
+Not enough space for option *option-code.*
 
-[[非法的]{style="font-family:宋体"}[DHCP]{lang="EN-US"}]{#struct_0_90630_81574_x1763481757}[报文：服务器选项的实际长度和选项中"]{style="font-family:宋体"}[L]{lang="EN-US"}["字段标识的长度不相等]{style="font-family:宋体"}
+报文中没有空间存储选项编号为*option-code*的选项内容
 
-[[Not enough space for option *option-code.*]{lang="EN-US"}]{#struct_0_90630_81574_x2002938637}
+Not enough space for more options.
 
-[[报文中没有空间存储选项编号为]{style="font-family:宋体"}*[option-code]{lang="EN-US"}*]{#struct_0_90630_81574_938922580}[的选项内容]{style="font-family:宋体"}
+报文中没有空间存储过多的选项
 
-[[Not enough space for more options.]{lang="EN-US"}]{#struct_0_90630_81574_1828117571}
+【举例】
 
-[[报文中没有空间存储过多的选项]{style="font-family:宋体"}]{#struct_0_90630_81574_939250260}
+\# 打开DHCPv6中继的报文调试信息开关。DHCPv6客户端通过DHCPv6中继从DHCPv6服务器获取IPv6地址时，将打印如下信息。
 
-[ ]{lang="EN-US"}
+\<Sysname\> terminal monitor
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_90630_81574_1679723772}
+\<Sysname\> terminal logging level 7
 
-[[\# ]{lang="EN-US"}]{#struct_0_90630_81574_1680845113}[打开]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[中继的报文调试信息开关。]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[客户端通过]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[中继从]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[服务器获取]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址时，将打印如下信息。]{style="font-family:宋体"}
+\<Sysname\>
 
-[[\<Sysname\> terminal monitor]{lang="EN-US"}]{#struct_0_90630_81574_938725973}
+\*Mar 25 11:51:01:194 2011 Sysname DHCPR6/7/PACKET:
 
-[\<Sysname\> terminal logging level 7]{lang="EN-US"}
+From fe80::215:32ff:fe1b:8901 port 546, interface GigabitEthernet1/0/1
 
-[\<Sysname\>]{lang="EN-US"}
+Message type: Solicit (1)
 
-[\*Mar 25 11:51:01:194 2011 Sysname DHCPR6/7/PACKET:]{lang="EN-US"}
+Transaction ID: 0x00003889
 
-[From fe80::215:32ff:fe1b:8901 port 546, interface GigabitEthernet1/0/1]{lang="EN-US"}
+*// 从接口GigabitEthernet1/0/1接收到Solicit报文，Transaction ID为0x00003889*
 
-[Message type: Solicit (1)]{lang="EN-US"}
+\*Mar 25 11:51:01:195 2011 Sysname DHCPR6/7/EVENT: Relay the Solicit message from fe80::215:32ff:fe1b:8901 port 546 to a DHCPv6 server.
 
-[Transaction ID: 0x00003889]{lang="EN-US"}
+\*Mar 25 11:51:01:196 2011 Sysname DHCPR6/7/PACKET:
 
-[*[// ]{lang="FR"}*]{#struct_0_90630_81574_2133943548}*[从接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[接收到]{style="font-family:宋体"}[Solicit]{lang="EN-US"}[报文]{style="font-family:宋体"}[，]{style="font-family:宋体"}[Transaction ID]{lang="FR"}[为]{style="font-family:宋体"}[0x00003889]{lang="FR"}*
+To 2::2 port 547, interface is selected by routing table
 
-[[\*Mar 25 11:51:01:195 2011 Sysname DHCPR6/7/EVENT: Relay the Solicit message from fe80::215:32ff:fe1b:8901 port 546 to a DHCPv6 server.]{lang="EN-US"}]{#struct_0_90630_81574_938594901}
+Message type: Relay-Forward (12)
 
-[\*Mar 25 11:51:01:196 2011 Sysname DHCPR6/7/PACKET:]{lang="EN-US"}
+Hop count: 0
 
-[To 2::2 port 547, interface is selected by routing table]{lang="EN-US"}
+Link address: 1::1
 
-[Message type: Relay-Forward (12)]{lang="EN-US"}
+Peer address: fe80::215:32ff:fe1b:8901
 
-[Hop count: 0]{lang="EN-US"}
+*// 将接收到的Solicit报文封装在Relay-Forward报文中，并转发给DHCPv6服务器2::2*
 
-[Link address: 1::1]{lang="EN-US"}
+\*Mar 25 11:51:01:198 2011 Sysname DHCPR6/7/PACKET:
 
-[Peer address: fe80::215:32ff:fe1b:8901]{lang="EN-US"}
+From 2::2 port 547, interface GigabitEthernet1/0/2
 
-[*[// ]{lang="FR"}*]{#struct_0_90630_81574_1059022375}*[将接收到的]{style="font-family:宋体"}[Solicit]{lang="EN-US"}[报文封装在]{style="font-family:宋体"}[Relay-Forward]{lang="EN-US"}[报文中，并转发给]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[服务器]{style="font-family:宋体"}[2::2]{lang="EN-US"}*
+Message type: Relay-Reply (13)
 
-[[\*Mar 25 11:51:01:198 2011 Sysname DHCPR6/7/PACKET:]{lang="EN-US"}]{#struct_0_90630_81574_x743949344}
+Hop count: 0
 
-[From 2::2 port 547, interface GigabitEthernet1/0/2]{lang="EN-US"}
+Link address: 1::1
 
-[Message type: Relay-Reply (13)]{lang="EN-US"}
+Peer address: fe80::215:32ff:fe1b:8901
 
-[Hop count: 0]{lang="EN-US"}
+*// 从接口GigabitEthernet1/0/2接收到Relay-Reply报文*
 
-[Link address: 1::1]{lang="EN-US"}
+\*Mar 25 11:51:01:199 2011 Sysname DHCPR6/7/EVENT: Relay the Advertise message from fe80::215:32ff:fe1b:8901 port 546 to a DHCPv6 client.
 
-[Peer address: fe80::215:32ff:fe1b:8901]{lang="EN-US"}
+\*Mar 25 11:51:01:200 2011 Sysname DHCPR6/7/PACKET:
 
-[*[// ]{lang="FR"}*]{#struct_0_90630_81574_x340579551}*[从接口]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[接收到]{style="font-family:宋体"}[Relay-Reply]{lang="EN-US"}[报文]{style="font-family:宋体"}*
+To fe80::215:32ff:fe1b:8901 port 546, interface GigabitEthernet1/0/1
 
-[[\*Mar 25 11:51:01:199 2011 Sysname DHCPR6/7/EVENT: Relay the Advertise message from fe80::215:32ff:fe1b:8901 port 546 to a DHCPv6 client.]{lang="EN-US"}]{#struct_0_90630_81574_938660437}
+Message type: Advertise (2)
 
-[\*Mar 25 11:51:01:200 2011 Sysname DHCPR6/7/PACKET:]{lang="EN-US"}
+Transaction ID: 0x00003889
 
-[To fe80::215:32ff:fe1b:8901 port 546, interface GigabitEthernet1/0/1]{lang="EN-US"}
+*// 从Relay-reply报文中解析出Advertise报文，并转发给DHCPv6客户端fe80::215:32ff:fe1b:8901，Transaction ID为0x00003889*
 
-[Message type: Advertise (2)]{lang="EN-US"}
+\*Mar 25 11:51:02:121 2011 Sysname DHCPR6/7/PACKET:
 
-[Transaction ID: 0x00003889]{lang="EN-US"}
+From fe80::215:32ff:fe1b:8901 port 546, interface GigabitEthernet1/0/1
 
-[*[// ]{lang="FR"}*]{#struct_0_90630_81574_x1086888131}*[从]{style="font-family:宋体"}[Relay-reply]{lang="EN-US"}[报文中解析出]{style="font-family:宋体"}[Advertise]{lang="EN-US"}[报文，并转发给]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[客户端]{style="font-family:宋体"}[fe80::215:32ff:fe1b:8901]{lang="EN-US"}[，]{style="font-family:宋体"}[Transaction ID]{lang="FR"}[为]{style="font-family:宋体"}[0x00003889]{lang="FR"}*
+Message type: Request (3)
 
-[[\*Mar 25 11:51:02:121 2011 Sysname DHCPR6/7/PACKET:]{lang="EN-US"}]{#struct_0_90630_81574_x2030409199}
+Transaction ID: 0x0000388a
 
-[From fe80::215:32ff:fe1b:8901 port 546, interface GigabitEthernet1/0/1]{lang="EN-US"}
+\*Mar 25 11:51:02:121 2011 Sysname DHCPR6/7/EVENT: Relay the Request message from fe80::215:32ff:fe1b:8901 port 546 to a DHCPv6 server.
 
-[Message type: Request (3)]{lang="EN-US"}
+*// 从接口GigabitEthernet1/0/1接收到Request报文，Transaction ID为0x0000388a*
 
-[Transaction ID: 0x0000388a]{lang="EN-US"}
+\*Mar 25 11:51:02:121 2011 Sysname DHCPR6/7/PACKET:
 
-[\*Mar 25 11:51:02:121 2011 Sysname DHCPR6/7/EVENT: Relay the Request message from fe80::215:32ff:fe1b:8901 port 546 to a DHCPv6 server.]{lang="EN-US"}
+To 2::2 port 547, interface is selected by routing table
 
-[*[// ]{lang="FR"}*]{#struct_0_90630_81574_x1140535829}*[从接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[接收到]{style="font-family:宋体"}[Request]{lang="EN-US"}[报文]{style="font-family:宋体"}[，]{style="font-family:宋体"}[Transaction ID]{lang="FR"}[为]{style="font-family:宋体"}[0x0000388a]{lang="FR"}*
+Message type: Relay-Forward (12)
 
-[[\*Mar 25 11:51:02:121 2011 Sysname DHCPR6/7/PACKET:]{lang="EN-US"}]{#struct_0_90630_81574_938988117}
+Hop count: 0
 
-[To 2::2 port 547, interface is selected by routing table]{lang="EN-US"}
+Link address: 1::1
 
-[Message type: Relay-Forward (12)]{lang="EN-US"}
+Peer address: fe80::215:32ff:fe1b:8901
 
-[Hop count: 0]{lang="EN-US"}
+*// 将接收到的Request报文封装在Relay-Forward报文中，并转发给DHCPv6服务器2::2*
 
-[Link address: 1::1]{lang="EN-US"}
+\*Mar 25 11:51:02:125 2011 Sysname DHCPR6/7/PACKET:
 
-[Peer address: fe80::215:32ff:fe1b:8901]{lang="EN-US"}
+From 2::2 port 547, interface GigabitEthernet1/0/2
 
-[*[// ]{lang="FR"}*]{#struct_0_90630_81574_x83490142}*[将接收到的]{style="font-family:宋体"}[Request]{lang="EN-US"}[报文封装在]{style="font-family:宋体"}[Relay-Forward]{lang="EN-US"}[报文中，并转发给]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[服务器]{style="font-family:宋体"}[2::2]{lang="EN-US"}*
+Message type: Relay-Reply (13)
 
-[[\*Mar 25 11:51:02:125 2011 Sysname DHCPR6/7/PACKET:]{lang="EN-US"}]{#struct_0_90630_81574_x453874085}
+Hop count: 0
 
-[From 2::2 port 547, interface GigabitEthernet1/0/2]{lang="EN-US"}
+Link address: 1::1
 
-[Message type: Relay-Reply (13)]{lang="EN-US"}
+Peer address: fe80::215:32ff:fe1b:8901
 
-[Hop count: 0]{lang="EN-US"}
+*// 从接口GigabitEthernet1/0/2接收到Relay-Reply报文*
 
-[Link address: 1::1]{lang="EN-US"}
+\*Mar 25 11:51:02:126 2011 Sysname DHCPR6/7/EVENT: Relay the Reply message from fe80::215:32ff:fe1b:8901 port 546 to a DHCPv6 client.
 
-[Peer address: fe80::215:32ff:fe1b:8901]{lang="EN-US"}
+\*Mar 25 11:51:02:127 2011 Sysname DHCPR6/7/PACKET:
 
-[*[// ]{lang="FR"}*]{#struct_0_90630_81574_x1362812759}*[从接口]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[接收到]{style="font-family:宋体"}[Relay-Reply]{lang="EN-US"}[报文]{style="font-family:宋体"}*
+To fe80::215:32ff:fe1b:8901 port 546, interface GigabitEthernet1/0/1
 
-[[\*Mar 25 11:51:02:126 2011 Sysname DHCPR6/7/EVENT: Relay the Reply message from fe80::215:32ff:fe1b:8901 port 546 to a DHCPv6 client.]{lang="EN-US"}]{#struct_0_90630_81574_939053653}
+Message type: Reply (7)
 
-[\*Mar 25 11:51:02:127 2011 Sysname DHCPR6/7/PACKET:]{lang="EN-US"}
+Transaction ID: 0x0000388a
 
-[To fe80::215:32ff:fe1b:8901 port 546, interface GigabitEthernet1/0/1]{lang="EN-US"}
-
-[Message type: Reply (7)]{lang="EN-US"}
-
-[Transaction ID: 0x0000388a]{lang="EN-US"}
-
-[*[// ]{lang="FR"}*]{#struct_0_90630_81574_1392402279}*[从]{style="font-family:宋体"}[Relay-reply]{lang="EN-US"}[报文中解析出]{style="font-family:宋体"}[Reply]{lang="EN-US"}[报文，并转发给]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[客户端]{style="font-family:宋体"}[fe80::215:32ff:fe1b:8901]{lang="EN-US"}[，]{style="font-family:宋体"}[Transaction ID]{lang="FR"}[为]{style="font-family:宋体"}[0x0000388a]{lang="FR"}*
-
-::: {#1336858558 .myid}
-[]{#_Toc205697826}[]{#_Toc189624764}[]{#_Toc187290810}[]{#_Toc177820253}[]{#OLE_LINK52}[]{#_Toc404786936}[]{#struct_0_90630_81574_x326805133}[]{#_Toc288815457}
+*// 从Relay-reply报文中解析出Reply报文，并转发给DHCPv6客户端fe80::215:32ff:fe1b:8901，Transaction ID为0x0000388a*
 
 **DHCPv6 \-- DHCPv6调试命令 \-- debugging ipv6 dhcp server**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_90630_81574_x1929796596}
+【命令】
 
-[**[debugging ipv6 dhcp server ]{lang="EN-US"}**[{ **all** \| **error** \| **event** \| **packet** \[ **verbose** \] }]{lang="EN-US"}]{#struct_0_90630_81574_126996079}
+**[debugging ipv6 dhcp server **[{ **all** \| **error** \| **event** \| **packet** [ **verbose** ] }]]
 
-[**[undo debugging ipv6 dhcp server ]{lang="EN-US"}**[{ **all** \| **error** \| **event** \| **packet** }]{lang="EN-US"}]{#struct_0_90630_81574_x2078190930}
+**[undo debugging ipv6 dhcp server **[{ **all** \| **error** \| **event** \| **packet** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_90630_81574_540115532}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_90630_81574_x1236051508}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_90630_81574_x1290051275}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_90630_81574_1807637861}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_90630_81574_x1629453965}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_90630_81574_x326739597}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_90630_81574_1505630967}[：表示]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[服务器的所有调试信息开关]{style="font-family:宋体"}
+**[all**]：表示DHCPv6服务器的所有调试信息开关
 
-[**[error]{lang="EN-US"}**]{#struct_0_90630_81574_703341473}[：表示]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[服务器的错误调试信息开关。]{style="font-family:宋体"}
+**[error**]：表示DHCPv6服务器的错误调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_90630_81574_1540040770}[：表示]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[服务器的事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示DHCPv6服务器的事件调试信息开关。
 
-[**[packet]{lang="EN-US"}**]{#struct_0_90630_81574_x405060644}[：表示]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[服务器的报文调试信息开关。]{style="font-family:宋体"}
+**[packet**]：表示DHCPv6服务器的报文调试信息开关。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_90630_81574_1640231034}[：表示]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[报文的详细信息。]{style="font-family:宋体"}
+**[verbose**]：表示DHCPv6报文的详细信息。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_90630_81574_1193130161}
+【描述】
 
-[**[debugging ipv6 dhcp server]{lang="EN-US"}**]{#struct_0_90630_81574_1813993616}[命令用来打开]{style="font-family:
-宋体"}[DHCPv6]{lang="EN-US"}[服务器的调试信息开关。]{style="font-family:宋体"}**[undo debugging ipv6 dhcp server]{lang="EN-US"}**[命令用来关闭]{style="font-family:
-宋体"}[DHCPv6]{lang="EN-US"}[服务器的调试信息开关。]{style="font-family:宋体"}
+**[debugging ipv6 dhcp server**]命令用来打开DHCPv6服务器的调试信息开关。**undo debugging ipv6 dhcp server**命令用来关闭DHCPv6服务器的调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}]{#struct_0_90630_81574_x1180064210}[服务器的调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，DHCPv6服务器的调试信息开关处于关闭状态。
 
-[[表1-7 ]{lang="EN-US"}[debugging ipv6 dhcp server packet]{lang="EN-US"}]{#struct_0_90630_81574_x327329420}[命令输出信息描述表]{style="font-family:黑体"}
+表1-7 debugging ipv6 dhcp server packet命令输出信息描述表
 
-[]{#table_struct_0_810118847}[[字段]{style="font-family:黑体"}]{#struct_0_90630_81574_x1571808660}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_90630_81574_729954476}
+描述
 
-[[From *ipv6-address* port *port*]{lang="EN-US"}]{#struct_0_90630_81574_653267190}
+From *ipv6-address* port *port*
 
-[[接收报文时表示报文的源地址和端口号]{style="font-family:宋体"}]{#struct_0_90630_81574_x1663204908}
+接收报文时表示报文的源地址和端口号
 
-[[To *ipv6-address* port *port*]{lang="EN-US"}]{#struct_0_90630_81574_20486688}
+To *ipv6-address* port *port*
 
-[[发送报文时表示报文的目的地址和端口号]{style="font-family:宋体"}]{#struct_0_90630_81574_1774049426}
+发送报文时表示报文的目的地址和端口号
 
-[[interface *interface-name*]{lang="EN-US"}]{#struct_0_90630_81574_1775377301}
+interface *interface-name*
 
-[[接收或发送报文的接口名称]{style="font-family:宋体"}]{#struct_0_90630_81574_x327263884}
+接收或发送报文的接口名称
 
-[[Message type: *message-type*]{lang="EN-US"}]{#struct_0_90630_81574_1537695359}
+Message type: *message-type*
 
-[[DHCPv6]{lang="EN-US"}]{#struct_0_90630_81574_x1934373426}[消息类型，包括：]{style="font-family:宋体"}
+DHCPv6消息类型，包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Solicit]{lang="EN-US"}]{#struct_0_90630_81574_929123187}
+·Solicit
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Advertise]{lang="EN-US"}]{#struct_0_90630_81574_x300875299}
+·Advertise
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Request]{lang="EN-US"}]{#struct_0_90630_81574_x523421452}
+·Request
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Confirm]{lang="EN-US"}]{#struct_0_90630_81574_x327460492}
+·Confirm
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Renew]{lang="EN-US"}]{#struct_0_90630_81574_x353435297}
+·Renew
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Rebind]{lang="EN-US"}]{#struct_0_90630_81574_x259609719}
+·Rebind
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Reply]{lang="EN-US"}]{#struct_0_90630_81574_1437278983}
+·Reply
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Release]{lang="EN-US"}]{#struct_0_90630_81574_1327217197}
+·Release
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Decline]{lang="EN-US"}]{#struct_0_90630_81574_x372326530}
+·Decline
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Reconfigure]{lang="EN-US"}]{#struct_0_90630_81574_x327394956}
+·Reconfigure
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Information-Request]{lang="EN-US"}]{#struct_0_90630_81574_1545154192}
+·Information-Request
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Relay-Forward]{lang="EN-US"}]{#struct_0_90630_81574_x652644031}
+·Relay-Forward
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Relay-Reply]{lang="EN-US"}]{#struct_0_90630_81574_2011373661}
+·Relay-Reply
 
-[[Transaction ID: *transaction-id*]{lang="EN-US"}]{#struct_0_90630_81574_1548524078}
+Transaction ID: *transaction-id*
 
-[[DHCPv6]{lang="EN-US"}]{#struct_0_90630_81574_x327067276}[客户端发起申请时生成的一个随机数，用来唯一标示一次申请过程]{style="font-family:宋体"}
+DHCPv6客户端发起申请时生成的一个随机数，用来唯一标示一次申请过程
 
-[[Link address: *ipv6-address*]{lang="EN-US"}]{#struct_0_90630_81574_1595247574}
+Link address: *ipv6-address*
 
-[[链路地址，如果]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}]{#struct_0_90630_81574_1005899148}[报文为]{style="font-family:宋体"}[Relay-Forward]{lang="EN-US"}[或]{style="font-family:宋体"}[Relay-Reply]{lang="EN-US"}[报文，则打印该字段]{style="font-family:宋体"}
+链路地址，如果DHCPv6报文为Relay-Forward或Relay-Reply报文，则打印该字段
 
-[[Peer address: *ipv6-address*]{lang="EN-US"}]{#struct_0_90630_81574_1501772889}
+Peer address: *ipv6-address*
 
-[[对端地址，如果]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}]{#struct_0_90630_81574_1352153690}[报文为]{style="font-family:宋体"}[Relay-Forward]{lang="EN-US"}[或]{style="font-family:宋体"}[Relay-Reply]{lang="EN-US"}[报文，则打印该字段]{style="font-family:宋体"}
+对端地址，如果DHCPv6报文为Relay-Forward或Relay-Reply报文，则打印该字段
 
-[[Options:]{lang="EN-US"}]{#struct_0_90630_81574_x327001740}
+Options:
 
-[[  option *option-name* *option-code*]{lang="EN-US"}]{#struct_0_90630_81574_x349735669}
+  option *option-name* *option-code*
 
-[[    *option-value*]{lang="EN-US"}]{#struct_0_90630_81574_733524894}
+    *option-value*
 
-[[报文选项，显示详细报文信息时输出，]{style="font-family:宋体"}*[option-name]{lang="EN-US"}*]{#struct_0_90630_81574_x2063032273}[为报文选项对应的名字，]{style="font-family:宋体"}*[option-code]{lang="EN-US"}*[为选项的数值，]{style="font-family:宋体"}*[option-value]{lang="EN-US"}*[为报文选项的内容]{style="font-family:宋体"}
+报文选项，显示详细报文信息时输出，*option-name*为报文选项对应的名字，*option-code*为选项的数值，*option-value*为报文选项的内容
 
-[ ]{lang="EN-US"}
+表1-8 debugging ipv6 dhcp server event命令输出信息描述表
 
-[[表1-8 ]{lang="EN-US"}[debugging ipv6 dhcp server event]{lang="EN-US"}]{#struct_0_90630_81574_17868335}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_806646877}[[字段]{style="font-family:黑体"}]{#struct_0_90630_81574_x327198348}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_90630_81574_x1979800151}
+Received a short packet from *ipv6-address* port *port-number*, length *length* bytes.
 
-[[Received a short packet from *ipv6-address* port *port-number*, length *length* bytes.]{lang="EN-US"}]{#struct_0_90630_81574_x1104271812}
+收到一个来自地址为*ipv6-address*端口号为*port-number*长度为*length*的短包
 
-[[收到一个来自地址为]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_1116466363}[端口号为]{style="font-family:宋体"}*[port-number]{lang="EN-US"}*[长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*[的短包]{style="font-family:宋体"}
+Add a conflict IP *ipv6-address*.
 
-[[Add a conflict IP *ipv6-address*.]{lang="EN-US"}]{#struct_0_90630_81574_936766933}
+添加冲突地址*ip-address*
 
-[[添加冲突地址]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*]{#struct_0_90630_81574_x504741646}
+Address *ipv6-address* is not bound to client.
 
-[[Address *ipv6-address* is not bound to client.]{lang="EN-US"}]{#struct_0_90630_81574_x1680120285}
+地址*ipv6-address*没有和客户端绑定
 
-[[地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_x327132812}[没有和客户端绑定]{style="font-family:宋体"}
+Can not find an interface to process the packet.
 
-[[Can not find an interface to process the packet.]{lang="EN-US"}]{#struct_0_90630_81574_x1206326772}
+找不到处理报文的接口，一般为对应的接口没有启用DHCPv6功能
 
-[[找不到处理报文的接口，一般为对应的接口没有启用]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}]{#struct_0_90630_81574_574072504}[功能]{style="font-family:宋体"}
+Released prefix *ipv6-prefix* is not bound to the client.
 
-[[Released prefix *ipv6-prefix* is not bound to the client.]{lang="EN-US"}]{#struct_0_90630_81574_x1352280661}
+客户端请求释放的前缀*ipv6-prefix*没有和客户端绑定
 
-[[客户端请求释放的前缀]{style="font-family:宋体"}]{#struct_0_90630_81574_x1575964876}*[ipv6-]{lang="DA"}[prefix]{lang="EN-US"}*[没有和客户端绑定]{style="font-family:
-  宋体"}
+Client declines address *ipv6-address*.
 
-[[Client declines address ]{lang="DA"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_2014650374}[.]{lang="DA"}
+客户端通过Decline报文报告地址*ipv6-address*冲突
 
-[[客户端通过]{style="font-family:宋体"}]{#struct_0_90630_81574_x326805132}[Decline]{lang="DA"}[报文报告地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*[冲突]{style="font-family:宋体"}
+Discard *message-type* from *ipv6-address*: Client identifier inexistent.
 
-[[Discard *message-type* from *ipv6-address*: Client identifier ]{lang="EN-US"}]{#struct_0_90630_81574_x1929862132}[inexistent]{lang="FR"}[.]{lang="EN-US"}
+丢弃来自地址*ipv6-address*的消息类型为*message-type*的报文。原因是报文中没有client identifier
 
-[[丢弃来自地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_1782025224}[的消息类型为]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[的报文。原因是报文中没有]{style="font-family:宋体"}[client identifier]{lang="EN-US"}
+Discard *message-type* from *ipv6-address*: Server identifier exists.
 
-[[Discard *message-type* from *ipv6-address*: ]{lang="EN-US"}]{#struct_0_90630_81574_x1518616966}[Server identifier exists.]{lang="FR"}
+丢弃来自地址*ipv6-address*的消息类型为*message-type*的报文。原因是报文中包含server identifier
 
-[[丢弃来自地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_797220748}[的消息类型为]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[的报文。原因是报文中包含]{style="font-family:宋体"}[server identifier]{lang="EN-US"}
+Discard *message-type* from *ipv6-address*: Server identifier inexistent.
 
-[[Discard *message-type* from *ipv6-address*: ]{lang="EN-US"}]{#struct_0_90630_81574_x326739596}[Server identifier inexistent]{lang="FR"}[.]{lang="EN-US"}
+丢弃来自地址*ipv6-address*的消息类型为*message-type*的报文。原因是报文中没有server identifier
 
-[[丢弃来自地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_1505696503}[的消息类型为]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[的报文。原因是报文中没有]{style="font-family:宋体"}[server identifier]{lang="EN-US"}
+Discard *message-type* from *ipv6-address*: Server identifier mismatched.
 
-[[Discard *message-type* from *ipv6-address*: Server identifier mismatched.]{lang="EN-US"}]{#struct_0_90630_81574_x153809699}
+丢弃来自地址*ipv6-address*的消息类型为*message-type*的报文。原因是报文中的server identifier不匹配
 
-[[丢弃来自地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_x954916015}[的消息类型为]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[的报文。原因是报文中的]{style="font-family:宋体"}[server identifier]{lang="EN-US"}[不匹配]{style="font-family:宋体"}
+Discard *message-type* from *ipv6-address*: IA_NA option exists.
 
-[[Discard *message-type* from *ipv6-address*: ]{lang="EN-US"}]{#struct_0_90630_81574_1823881037}[IA_NA option exists]{lang="FR"}[.]{lang="EN-US"}
+丢弃来自地址*ipv6-address*的消息类型为*message-type*的报文。原因是报文中包含IA_NA选项
 
-[[丢弃来自地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_x327329423}[的消息类型为]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[的报文。原因是报文中包含]{style="font-family:宋体"}[IA_NA]{lang="EN-US"}[选项]{style="font-family:宋体"}
+Discard *message-type* from *ipv6-address*: IA_TA option exists..
 
-[[Discard *message-type* from *ipv6-address*: IA_TA option exists..]{lang="EN-US"}]{#struct_0_90630_81574_x1571874196}
+丢弃来自地址*ipv6-address*的消息类型为*message-type*的报文。原因是报文中包含IA_TA选项
 
-[[丢弃来自地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_717307488}[的消息类型为]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[的报文。原因是报文中包含]{style="font-family:宋体"}[IA_TA]{lang="EN-US"}[选项]{style="font-family:宋体"}
+Discard *message-type* from *ipv6-address*: IA_PD option exists.
 
-[[Discard *message-type* from *ipv6-address*: IA_PD option exists.]{lang="EN-US"}]{#struct_0_90630_81574_1540156917}
+丢弃来自地址*ipv6-address*的消息类型为*message-type*的报文。原因是报文中包含IA_PD选项
 
-[[丢弃来自地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_13142035}[的消息类型为]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[的报文。原因是报文中包含]{style="font-family:宋体"}[IA_PD]{lang="EN-US"}[选项]{style="font-family:宋体"}
+Discard *message-type* from *ipv6-address*: unicast packet.
 
-[[Discard *message-type* from *ipv6-address*: unicast packet.]{lang="EN-US"}]{#struct_0_90630_81574_x327263887}
+丢弃来自地址*ipv6-address*的消息类型为*message-type*的报文。原因是报文是单播报文
 
-[[丢弃来自地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_1537629823}[的消息类型为]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[的报文。原因是报文是单播报文]{style="font-family:宋体"}
+Discard *message-type* from *ipv6-address*: Unsupported message type.
 
-[[Discard *message-type* from *ipv6-address*: Unsupported message type.]{lang="EN-US"}]{#struct_0_90630_81574_729498899}
+丢弃来自地址*ipv6-address*的消息类型为*message-type*的报文。原因是不支持的消息类型
 
-[[丢弃来自地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_x156787919}[的消息类型为]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[的报文。原因是不支持的消息类型]{style="font-family:宋体"}
+Discard *message-type* from *ipv6-address*: Unsupported message type for the stateless server.
 
-[[Discard *message-type* from *ipv6-address*: Unsupported message type for the stateless server.]{lang="EN-US"}]{#struct_0_90630_81574_x327460495}
+丢弃来自地址*ipv6-address*的消息类型为*message-type*的报文。原因是无状态配置服务器不支持的消息类型
 
-[[丢弃来自地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_x352976545}[的消息类型为]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[的报文。原因是无状态配置服务器不支持的消息类型]{style="font-family:宋体"}
+Discard *message-type* from *ipv6-address*: Failed to find pool.
 
-[[Discard *message-type* from *ipv6-address*: Failed to find pool.]{lang="EN-US"}]{#struct_0_90630_81574_x1807141048}
+丢弃来自地址*ipv6-address*的消息类型为*message-type*的报文。原因是找不到地址池。
 
-[[丢弃来自地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_510414530}[的消息类型为]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[的报文。原因是找不到地址池。]{style="font-family:宋体"}
+Discard message-type from *ipv6-address*: can\'t find the pool.
 
-[[Discard message-type from *ipv6-address*: can\'t find the pool.]{lang="EN-US"}]{#struct_0_90630_81574_x327394959}
+丢弃来自地址*ipv6-address*的消息类型为*message-type*的报文。原因是找不到地址池。
 
-[[丢弃来自地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_1544957584}[的消息类型为]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[的报文。原因是找不到地址池。]{style="font-family:宋体"}
+Discard message-type from *ipv6-address*: can\'t find the prefix pool.
 
-[[Discard message-type from *ipv6-address*: can\'t find the prefix pool.]{lang="EN-US"}]{#struct_0_90630_81574_1276574639}
+丢弃来自地址*ipv6-address*的消息类型为*message-type*的报文。原因是找不到前缀地址池。
 
-[[丢弃来自地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_x257030449}[的消息类型为]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[的报文。原因是找不到前缀地址池。]{style="font-family:宋体"}
+Discard *message-type* from *ipv6-address*: can't find the network.
 
-[[Discard *message-type* from *ipv6-address*: can't find the network.]{lang="EN-US"}]{#struct_0_90630_81574_875622817}
+丢弃来自地址*ipv6-address*的消息类型为*message-type*的报文。原因是找不到network。
 
-[[丢弃来自地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_x327067279}[的消息类型为]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[的报文。原因是找不到]{style="font-family:宋体"}[network]{lang="EN-US"}[。]{style="font-family:宋体"}
+Discard unknown packet received from *ipv6-address*.
 
-[[Discard unknown packet received from *ipv6-address*.]{lang="EN-US"}]{#struct_0_90630_81574_1594657750}
+丢弃来自地址*ipv6-address*的未知报文
 
-[[丢弃来自地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_215272706}[的未知报文]{style="font-family:宋体"}
+Interface *interface-name* is activated.
 
-[[Interface *interface-name* is activated.]{lang="EN-US"}]{#struct_0_90630_81574_x1669273542}
+接口*interface-name*被激活
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_90630_81574_x327001743}[被激活]{style="font-family:宋体"}
+Add an IPv6 address *ipv6-address* to the interface *interface-name*.
 
-[[Add an IPv6 address *ipv6-address* to the interface *interface-name*.]{lang="EN-US"}]{#struct_0_90630_81574_x349539061}
+接口*interface-name*添加IP地址*ipv6-address*
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_90630_81574_x497800540}[添加]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*
+Interface *interface-name* is deactivated.
 
-[[Interface *interface-name* is deactivated.]{lang="EN-US"}]{#struct_0_90630_81574_x327198351}
+接口*interface-name*被去激活
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_90630_81574_x1979341398}[被去激活]{style="font-family:宋体"}
+Delete an IPv6 address *ipv6-address* from the interface *interface-name*.
 
-[[Delete an IPv6 address *ipv6-address* from the interface *interface-name*.]{lang="EN-US"}]{#struct_0_90630_81574_139512889}
+接口*interface-name*删除IPv6地址*ipv6-address*
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_90630_81574_x1908231249}[删除]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*
+Interface *interface-name* is deleted.
 
-[[Interface *interface-name* is deleted.]{lang="EN-US"}]{#struct_0_90630_81574_x327132815}
+接口*interface-name*被删除
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_90630_81574_x1206785524}[被删除]{style="font-family:宋体"}
+The MAC address of interface *interface-name* is changed.
 
-[[The MAC address of interface *interface-name* is changed.]{lang="EN-US"}]{#struct_0_90630_81574_123149050}
+接口*interface-name*的MAC地址改变
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*[ ]{lang="EN-US"}]{#struct_0_90630_81574_x2004151145}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址改变]{style="font-family:宋体"}
+No IA_NA or IA_TA option needs to be confirmed.
 
-[[No IA_NA or IA_TA option needs to be confirmed.]{lang="EN-US"}]{#struct_0_90630_81574_x326805135}
+报文中没有需要确认的IA_NA或IA_TA选项
 
-[[报文中没有需要确认的]{style="font-family:宋体"}[IA_NA]{lang="EN-US"}]{#struct_0_90630_81574_x1929665524}[或]{style="font-family:宋体"}[IA_TA]{lang="EN-US"}[选项]{style="font-family:宋体"}
+Relay-forward from *ipv6-address* with link address *link-address* and peer address *peer-address* misses the relay message option.
 
-[[Relay-forward from *ipv6-address* with link address *link-address* and peer address *peer-address* misses the relay message option.]{lang="EN-US"}]{#struct_0_90630_81574_x667519686}
+从地址*ipv6-address*收到的Relay-forward报文中没有relay message option选项，该报文中的link address字段为*link-address*和peer address字段为*peer-address*
 
-[[从地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_x326739599}[收到的]{style="font-family:宋体"}[Relay-forward]{lang="EN-US"}[报文中没有]{style="font-family:宋体"}[relay message option]{lang="EN-US"}[选项，该报文中的]{style="font-family:宋体"}[link address]{lang="EN-US"}[字段为]{style="font-family:宋体"}*[link-address]{lang="EN-US"}*[和]{style="font-family:宋体"}[peer address]{lang="EN-US"}[字段为]{style="font-family:宋体"}*[peer-address]{lang="EN-US"}*
+Released address *ipv6-address*.
 
-[[Released address *ipv6-address*.]{lang="EN-US"}]{#struct_0_90630_81574_1506286327}
+释放地址*ipv6-address*
 
-[[释放地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_x672461473}
+Releases prefix *ipv6-prefix*.
 
-[[Releases prefix *ipv6-prefix*.]{lang="EN-US"}]{#struct_0_90630_81574_x327329422}
+释放地址前缀*ipv6-prefix*
 
-[[释放地址前缀]{style="font-family:宋体"}*[ipv6-prefix]{lang="EN-US"}*]{#struct_0_90630_81574_x1571939732}
+Send *send-bytes* of *total-bytes* bytes.
 
-[[Send *send-bytes* of *total-bytes* bytes.]{lang="EN-US"}]{#struct_0_90630_81574_998584498}
+发送了*total-bytes*字节报文中的*send-byte*字节数据
 
-[[发送了]{style="font-family:宋体"}*[total-bytes]{lang="EN-US"}*]{#struct_0_90630_81574_x327263886}[字节报文中的]{style="font-family:宋体"}*[send-byte]{lang="EN-US"}*[字节数据]{style="font-family:宋体"}
+Send *message-type* to *ipv6-address*.
 
-[[Send *message-type* to *ipv6-address*.]{lang="EN-US"}]{#struct_0_90630_81574_1537564287}
+向地址*ipv6-address*发送消息类型为*message-type*的报文
 
-[[向地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_x1126743533}[发送消息类型为]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[的报文]{style="font-family:宋体"}
+Received *message-type* from *ipv6-address*
 
-[[Received *message-type* from *ipv6-address*]{lang="EN-US"}]{#struct_0_90630_81574_x1789895237}
+从地址*ipv6-address*接收到消息类型为*message-type*的报文
 
-[[从地址]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*]{#struct_0_90630_81574_x1790026309}[接收到消息类型为]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[的报文]{style="font-family:宋体"}
+Unknown interface event *event* is detected on interface *interface-name*.
 
-[[Unknown interface event *event* is detected on interface *interface-name*.]{lang="EN-US"}]{#struct_0_90630_81574_x327460494}
+接口*interface-name*检测到不支持的接口事件*event*
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_90630_81574_x353042081}[检测到不支持的接口事件]{style="font-family:宋体"}*[event]{lang="EN-US"}*
+Detect unknown IP address event *event* on interface *interface-name*.
 
-[[Detect unknown IP address event *event* on interface *interface-name*. ]{lang="EN-US"}]{#struct_0_90630_81574_x260962201}
+接口*interface-name*检测到不支持的IP地址事件*event*
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_90630_81574_x327394958}[检测到不支持的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址事件]{style="font-family:宋体"}*[event]{lang="EN-US"}*
+表1-9 debugging ipv6 dhcp server error命令输出信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表1-9 ]{lang="EN-US"}[debugging ipv6 dhcp server error]{lang="EN-US"}]{#struct_0_90630_81574_1545023120}[命令输出信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_830699577}[]{#OLE_LINK103}[[字段]{style="font-family:黑体"}]{#struct_0_90630_81574_x1054027972}
+Error occurs when calculation the value of option *option-code*.
 
-[[描述]{style="font-family:黑体"}]{#struct_0_90630_81574_x575148939}
+计算选项编号为*option-code*的选项的值出错
 
-[[Error occurs when calculation the value of option *option-code*.]{lang="EN-US"}]{#struct_0_90630_81574_814767396}
+Error occurs when parsing *option-type* option.
 
-[[计算选项编号为]{style="font-family:宋体"}*[option-code]{lang="EN-US"}*]{#struct_0_90630_81574_1014622344}[的选项的值出错]{style="font-family:宋体"}
+解析类型为*option-type*的选项失败
 
-[[Error occurs when parsing *option-type* option.]{lang="EN-US"}]{#struct_0_90630_81574_x327067278}
+Error occurs when calculation the value of *option-type* option.
 
-[[解析类型为]{style="font-family:宋体"}*[option-type]{lang="EN-US"}*]{#struct_0_90630_81574_1594592214}[的选项失败]{style="font-family:宋体"}
+计算选项类型为*option-type*选项的值出错
 
-[[Error occurs when calculation the value of *option-type* option.]{lang="EN-US"}]{#struct_0_90630_81574_1786080978}
+Malformed packet dhcp6:
 
-[[计算选项类型为]{style="font-family:宋体"}*[option-type]{lang="EN-US"}*]{#struct_0_90630_81574_x1294764168}[选项的值出错]{style="font-family:宋体"}
+option length does not equal its option buffer length.
 
-[[Malformed packet dhcp6:]{lang="EN-US"}]{#struct_0_90630_81574_1056489096}
+非法的DHCP报文：服务器选项的实际长度和选项中"L"字段标识的长度不相等
 
-[[option length does not equal its option buffer length.]{lang="EN-US"}]{#struct_0_90630_81574_1056423560}
+Failed to allocate a NA lease: Because the number of leases has reached the maximum.
 
-[[非法的]{style="font-family:宋体"}[DHCP]{lang="EN-US"}]{#struct_0_90630_81574_204523194}[报文：服务器选项的实际长度和选项中"]{style="font-family:宋体"}[L]{lang="EN-US"}["字段标识的长度不相等]{style="font-family:宋体"}
+分配NA租约失败，数量达到上限
 
-[[Failed to allocate a NA lease: Because the number of leases has reached the maximum. ]{lang="EN-US"}]{#struct_0_90630_81574_x840023510}
+Failed to allocate a prefix lease: Because the number of leases has reached the maximum.
 
-[[分配]{style="font-family:宋体"}[NA]{lang="EN-US"}]{#struct_0_90630_81574_x1773888562}[租约失败，数量达到上限]{style="font-family:宋体"}
+分配前缀租约失败，数量达到上限
 
-[[Failed to allocate a prefix lease: Because the number of leases has reached the maximum.]{lang="EN-US"}]{#struct_0_90630_81574_x327001742}
+Failed to get interface address or link address.
 
-[[分配前缀租约失败，数量达到上限]{style="font-family:宋体"}]{#struct_0_90630_81574_x349604597}
+获取接口地址或者报文链路地址失败
 
-[[Failed to get interface address or link address.]{lang="EN-US"}]{#struct_0_90630_81574_x410697941}
+Failed to add *option-type* option to the packet.
 
-[[获取接口地址或者报文链路地址失败]{style="font-family:宋体"}]{#struct_0_90630_81574_x303020162}
+向报文中保存*option-type*选项失败
 
-[[Failed to add *option-type* option to the packet.]{lang="EN-US"}]{#struct_0_90630_81574_2105667708}
+Failed to send packet.
 
-[[向报文中保存]{style="font-family:宋体"}*[option-type]{lang="EN-US"}*]{#struct_0_90630_81574_x1035438724}[选项失败]{style="font-family:宋体"}
+发送报文失败
 
-[[Failed to send packet.]{lang="EN-US"}]{#struct_0_90630_81574_x327198350}
+Failed to set *status-code* status code in the reply packet.
 
-[[发送报文失败]{style="font-family:宋体"}]{#struct_0_90630_81574_x1979275862}
+在Reply报文中设置状态码*status-code*失败
 
-[[Failed to set *status-code* status code in the reply packet.]{lang="EN-US"}]{#struct_0_90630_81574_x937897489}
+No free IP in the address range of the pool..
 
-[[在]{style="font-family:宋体"}[Reply]{lang="EN-US"}]{#struct_0_90630_81574_2006549838}[报文中设置状态码]{style="font-family:宋体"}*[status-code]{lang="EN-US"}*[失败]{style="font-family:宋体"}
+address range中没有可分配的IP地址
 
-[[No free IP in the address range of the pool..]{lang="EN-US"}]{#struct_0_90630_81574_1805529340}
+No free IP in the network *network-address*.
 
-[[address range]{lang="EN-US"}]{#struct_0_90630_81574_x327132814}[中没有可分配的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+网段*network-address*中没有可分配的IP地址
 
-[[No free IP in the network *network-address*.]{lang="EN-US"}]{#struct_0_90630_81574_x1206719988}
+No free prefix in prefix pool *prefix-pool-index*.
 
-[[网段]{style="font-family:宋体"}*[network-address]{lang="EN-US"}*]{#struct_0_90630_81574_x2123221131}[中没有可分配的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+前缀地址池*prefix-pool-index*中没有可分配的前缀
 
-[[No free prefix in prefix pool *prefix-pool-index*.]{lang="EN-US"}]{#struct_0_90630_81574_x1399583885}
+No enough space for option *option-code.*
 
-[[前缀地址池]{style="font-family:宋体"}*[prefix-pool-index]{lang="EN-US"}*]{#struct_0_90630_81574_1834612560}[中没有可分配的前缀]{style="font-family:宋体"}
+报文中没有空间存储选项编号为*option-code*的选项内容
 
-[[No enough space for option *option-code.*]{lang="EN-US"}]{#struct_0_90630_81574_x326805134}
+No enough space for more options.
 
-[[报文中没有空间存储选项编号为]{style="font-family:宋体"}*[option-code]{lang="EN-US"}*]{#struct_0_90630_81574_x1929731060}[的选项内容]{style="font-family:宋体"}
+报文中没有空间存储过多的选项
 
-[[No enough space for more options.]{lang="EN-US"}]{#struct_0_90630_81574_40298378}
+【举例】
 
-[[报文中没有空间存储过多的选项]{style="font-family:宋体"}]{#struct_0_90630_81574_x244404515}
+\# 打开DHCPv6服务器的所有调试信息开关。DHCPv6客户端申请IPv6地址时，设备上将打印如下调试信息。
 
-[ ]{lang="EN-US"}
+\<Sysname\> terminal monitor
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_90630_81574_60636897}
+\<Sysname\> terminal logging level 7
 
-[[\# ]{lang="EN-US"}]{#struct_0_90630_81574_x327281945}[打开]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[服务器的所有调试信息开关。]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[客户端申请]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址时，设备上将打印如下调试信息。]{style="font-family:宋体"}
+\<Sysname\> debugging ipv6 dhcp server all
 
-[[\<Sysname\> terminal monitor]{lang="EN-US"}]{#struct_0_90630_81574_x326739598}
+\<Sysname\> debugging ipv6 dhcp server packet verbose
 
-[\<Sysname\> terminal logging level 7]{lang="EN-US"}
+\<Sysname\>
 
-[\<Sysname\> debugging ipv6 dhcp server all]{lang="EN-US"}
+\*Mar 25 11:45:06:338 2011 Sysname DHCPS6/7/PACKET:
 
-[\<Sysname\> debugging ipv6 dhcp server packet verbose]{lang="EN-US"}
+From fe80::215:32ff:fe1b:8901 port 546, interface GigabitEthernet1/0/1
 
-[\<Sysname\>]{lang="EN-US"}
+Message type: Solicit (1)
 
-[\*Mar 25 11:45:06:338 2011 Sysname DHCPS6/7/PACKET:]{lang="EN-US"}
+Transaction ID: 0x00009c46
 
-[From fe80::215:32ff:fe1b:8901 port 546, interface GigabitEthernet1/0/1]{lang="EN-US"}
+Options:
 
-[Message type: Solicit (1)]{lang="EN-US"}
+  option client-id 14
 
-[Transaction ID: 0x00009c46]{lang="EN-US"}
+    00:01:00:06:b7:94:1c:15:00:15:32:1b:89:01
 
-[Options:]{lang="EN-US"}
+  option ia-na 40
 
-[  option client-id 14]{lang="EN-US"}
+    00:00:00:01:ff:ff:ff:ff:ff:ff:ff:ff:00:05:00:18:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:ff:ff:ff:ff:ff:ff:ff:ff
 
-[    00:01:00:06:b7:94:1c:15:00:15:32:1b:89:01]{lang="EN-US"}
+  option elapsed-time 2
 
-[  option ia-na 40]{lang="EN-US"}
+    1
 
-[    00:00:00:01:ff:ff:ff:ff:ff:ff:ff:ff:00:05:00:18:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:ff:ff:ff:ff:ff:ff:ff:ff]{lang="EN-US"}
+*// 服务器收到客户端fe80::215:32ff:fe1b:8901发送的SOLICIT消息，其中携带一个IA_NA选项*
 
-[  option elapsed-time 2]{lang="EN-US"}
+\*Mar 25 11:45:06:339 2011 Sysname DHCPS6/7/EVENT: Send Advertise to fe80::215:32ff:fe1b:8901 port 546.
 
-[    1]{lang="EN-US"}
+\*Mar 25 11:45:06:340 2011 Sysname DHCPS6/7/PACKET:
 
-[ ]{lang="EN-US"}
+To fe80::215:32ff:fe1b:8901 port 546, interface GigabitEthernet1/0/1
 
-[*[// ]{lang="FR"}*]{#struct_0_90630_81574_1506351863}*[服务器收到客户端]{style="font-family:宋体"}[fe80::215:32ff:fe1b:8901]{lang="EN-US"}[发送的]{style="font-family:宋体"}[SOLICIT]{lang="FR"}[消息]{style="font-family:宋体"}[，]{style="font-family:宋体"}[其中携带一个]{style="font-family:宋体"}[IA_NA]{lang="FR"}[选项]{style="font-family:宋体"}*
+Message type: Advertise (2)
 
-[[\*Mar 25 11:45:06:339 2011 Sysname DHCPS6/7/EVENT: Send Advertise to fe80::215:32ff:fe1b:8901 port 546.]{lang="EN-US"}]{#struct_0_90630_81574_1594984882}
+Transaction ID: 0x00009c46
 
-[\*Mar 25 11:45:06:340 2011 Sysname DHCPS6/7/PACKET:]{lang="EN-US"}
+Options:
 
-[To fe80::215:32ff:fe1b:8901 port 546, interface GigabitEthernet1/0/1]{lang="EN-US"}
+  option client-id 14
 
-[Message type: Advertise (2)]{lang="EN-US"}
+    00:01:00:06:b7:94:1c:15:00:15:32:1b:89:01
 
-[Transaction ID: 0x00009c46]{lang="EN-US"}
+  option server-id 10
 
-[Options:]{lang="EN-US"}
+    00:03:00:01:00:11:22:33:44:00
 
-[  option client-id 14]{lang="EN-US"}
+  option ia-na 40
 
-[    00:01:00:06:b7:94:1c:15:00:15:32:1b:89:01]{lang="EN-US"}
+    00:00:00:01:00:04:9d:40:00:07:62:00:00:05:00:18:00:01:00:00:00:00:00:00:00:00:00:00:00:00:00:10:00:09:3a:80:00:27:8d:00
 
-[  option server-id 10]{lang="EN-US"}
+\*Mar 25 11:45:06:340 2011 Sysname DHCPS6/7/EVENT: Send 80 of 80 bytes.
 
-[    00:03:00:01:00:11:22:33:44:00]{lang="EN-US"}
+*// 服务器向客户端发送ADVERTISE消息，报文中包含为IA_NA选项拟分配的地址1::10 *
 
-[  option ia-na 40]{lang="EN-US"}
+\*Mar 25 11:45:06:373 2011 Sysname DHCPS6/7/PACKET:
 
-[    00:00:00:01:00:04:9d:40:00:07:62:00:00:05:00:18:00:01:00:00:00:00:00:00:00:00:00:00:00:00:00:10:00:09:3a:80:00:27:8d:00]{lang="EN-US"}
+From fe80::215:32ff:fe1b:8901 port 546, interface GigabitEthernet1/0/1
 
-[ ]{lang="EN-US"}
+Message type: Request (3)
 
-[\*Mar 25 11:45:06:340 2011 Sysname DHCPS6/7/EVENT: Send 80 of 80 bytes.]{lang="EN-US"}
+Transaction ID: 0x00009c47
 
-[*[// ]{lang="EN-US"}*]{#struct_0_90630_81574_x169399815}*[服务器向客户端发送]{style="font-family:宋体"}[ADVERTISE]{lang="EN-US"}[消息，报文中包含为]{style="font-family:宋体"}[IA_NA]{lang="EN-US"}[选项拟分配的地址]{style="font-family:宋体"}[1::10 ]{lang="EN-US"}*
+Options:
 
-[[\*Mar 25 11:45:06:373 2011 Sysname DHCPS6/7/PACKET:]{lang="EN-US"}]{#struct_0_90630_81574_166785191}
+  option client-id 14
 
-[From fe80::215:32ff:fe1b:8901 port 546, interface GigabitEthernet1/0/1]{lang="EN-US"}
+    00:01:00:06:b7:94:1c:15:00:15:32:1b:89:01
 
-[Message type: Request (3)]{lang="EN-US"}
+  option server-id 10
 
-[Transaction ID: 0x00009c47]{lang="EN-US"}
+    00:03:00:01:00:11:22:33:44:00
 
-[Options:]{lang="EN-US"}
+  option ia-na 40
 
-[  option client-id 14]{lang="EN-US"}
+    00:00:00:01:ff:ff:ff:ff:ff:ff:ff:ff:00:05:00:18:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:ff:ff:ff:ff:ff:ff:ff:ff
 
-[    00:01:00:06:b7:94:1c:15:00:15:32:1b:89:01]{lang="EN-US"}
+  option elapsed-time 2
 
-[  option server-id 10]{lang="EN-US"}
+    3
 
-[    00:03:00:01:00:11:22:33:44:00]{lang="EN-US"}
+*// 服务器收到客户端发送的REQUEST消息*
 
-[  option ia-na 40]{lang="EN-US"}
+%Mar 25 11:45:06:374 2011 Sysname DHCPS6/5/ALLOCATE_IP: Server IP = 1::1, DHCPv6 client IP = 1::10, DHCPv6 client DUID = 0001-0006-b794-1c15-0015-321b-8901, IAID = 00000001, DHCPv6 client lease = 2592000 seconds.
 
-[    00:00:00:01:ff:ff:ff:ff:ff:ff:ff:ff:00:05:00:18:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:ff:ff:ff:ff:ff:ff:ff:ff]{lang="EN-US"}
+\*Mar 25 11:45:06:374 2011 Sysname DHCPS6/7/EVENT: Send Reply to fe80::215:32ff:fe1b:8901 port 546.
 
-[  option elapsed-time 2]{lang="EN-US"}
+\*Mar 25 11:45:06:375 2011 Sysname DHCPS6/7/PACKET:
 
-[    3]{lang="EN-US"}
+To fe80::215:32ff:fe1b:8901 port 546, interface GigabitEthernet1/0/1
 
-[ ]{lang="EN-US"}
+Message type: Reply (7)
 
-[*[// ]{lang="EN-US"}*]{#struct_0_90630_81574_1595050418}*[服务器收到客户端发送的]{style="font-family:宋体"}[REQUEST]{lang="EN-US"}[消息]{style="font-family:宋体"}*
+Transaction ID: 0x00009c47
 
-[[%Mar 25 11:45:06:374 2011 Sysname DHCPS6/5/ALLOCATE_IP: Server IP = 1::1, DHCPv6 client IP = 1::10, DHCPv6 client DUID = 0001-0006-b794-1c15-0015-321b-8901, IAID = 00000001, DHCPv6 client lease = 2592000 seconds.]{lang="EN-US"}]{#struct_0_90630_81574_608524461}
+Options:
 
-[\*Mar 25 11:45:06:374 2011 Sysname DHCPS6/7/EVENT: Send Reply to fe80::215:32ff:fe1b:8901 port 546.]{lang="EN-US"}
+  option client-id 14
 
-[\*Mar 25 11:45:06:375 2011 Sysname DHCPS6/7/PACKET:]{lang="EN-US"}
+    00:01:00:06:b7:94:1c:15:00:15:32:1b:89:01
 
-[To fe80::215:32ff:fe1b:8901 port 546, interface GigabitEthernet1/0/1]{lang="EN-US"}
+  option server-id 10
 
-[Message type: Reply (7)]{lang="EN-US"}
+    00:03:00:01:00:11:22:33:44:00
 
-[Transaction ID: 0x00009c47]{lang="EN-US"}
+  option ia-na 40
 
-[Options:]{lang="EN-US"}
+    00:00:00:01:00:04:9d:40:00:07:62:00:00:05:00:18:00:01:00:00:00:00:00:00:00:00:00:00:00:00:00:10:00:09:3a:80:00:27:8d:00
 
-[  option client-id 14]{lang="EN-US"}
+\*Mar 25 11:45:06:375 2011 Sysname DHCPS6/7/EVENT: Send 80 of 80 bytes.
 
-[    00:01:00:06:b7:94:1c:15:00:15:32:1b:89:01]{lang="EN-US"}
-
-[  option server-id 10]{lang="EN-US"}
-
-[    00:03:00:01:00:11:22:33:44:00]{lang="EN-US"}
-
-[  option ia-na 40]{lang="EN-US"}
-
-[    00:00:00:01:00:04:9d:40:00:07:62:00:00:05:00:18:00:01:00:00:00:00:00:00:00:00:00:00:00:00:00:10:00:09:3a:80:00:27:8d:00]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[\*Mar 25 11:45:06:375 2011 Sysname DHCPS6/7/EVENT: Send 80 of 80 bytes.]{lang="EN-US"}
-
-[*[// ]{lang="FR"}*]{#struct_0_90630_81574_x1800786920}*[服务器向客户端发送]{style="font-family:宋体"}[REPLY]{lang="FR"}[消息]{style="font-family:宋体"}[，确认将]{style="font-family:宋体"}[地址]{style="font-family:宋体"}[1::10]{lang="EN-US"}[分配给客户端]{style="font-family:宋体"}*
-
-::: {#-408659621 .myid}
-[]{#_Toc404786937}[]{#struct_0_90630_81574_1595247024}[]{#_Toc288816871}[]{#_Toc288816872}[]{#_Toc288816873}[]{#_Toc288816877}[]{#_Toc288816892}[]{#_Toc288816893}[]{#_Toc288816910}[]{#_Toc288816911}[]{#_Toc288816912}[]{#_Toc288816927}[]{#_Toc288816928}[]{#_Toc288816930}
+*// 服务器向客户端发送REPLY消息，确认将地址1::10分配给客户端*
 
 **DHCPv6 \-- DHCPv6调试命令 \-- debugging ipv6 dhcp snooping**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_90630_81574_x1715090041}
+【命令】
 
-[**[debugging ipv6 dhcp snooping ]{lang="EN-US"}**[{ **all** \| **error** \| **event** \| **packet** }]{lang="EN-US"}]{#struct_0_90630_81574_x986169981}
+**[debugging ipv6 dhcp snooping **[{ **all** \| **error** \| **event** \| **packet** }]]
 
-[**[undo debugging ipv6 dhcp snooping ]{lang="EN-US"}**[{ **all** \| **error** \| **event** \| **packet** }]{lang="EN-US"}]{#struct_0_90630_81574_1980503074}
+**[undo debugging ipv6 dhcp snooping **[{ **all** \| **error** \| **event** \| **packet** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_90630_81574_x434175441}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_90630_81574_733780741}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_90630_81574_1346477771}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_90630_81574_2064776264}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_90630_81574_x2061040940}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_90630_81574_1595312560}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_90630_81574_1393913755}[：表示]{style="font-family:宋体"}[DHCPv6 Snooping]{lang="EN-US"}[的所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示DHCPv6 Snooping的所有调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_90630_81574_x1842677318}[：表示]{style="font-family:宋体"}[DHCPv6 Snooping]{lang="EN-US"}[的错误调试信息开关。]{style="font-family:宋体"}
+**[error**]：表示DHCPv6 Snooping的错误调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_90630_81574_x1970593985}[：表示]{style="font-family:宋体"}[DHCPv6 Snooping]{lang="EN-US"}[的事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示DHCPv6 Snooping的事件调试信息开关。
 
-[**[packet]{lang="EN-US"}**]{#struct_0_90630_81574_852675872}[：表示]{style="font-family:宋体"}[DHCPv6 Snooping]{lang="EN-US"}[的报文调试信息开关。]{style="font-family:宋体"}
+**[packet**]：表示DHCPv6 Snooping的报文调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_90630_81574_x969412037}
+【描述】
 
-[**[debugging ipv6 dhcp snooping]{lang="EN-US"}**]{#struct_0_90630_81574_x2051143045}[命令用来打开]{style="font-family:
-宋体"}[DHCPv6 Snooping]{lang="EN-US"}[调试信息开关。]{style="font-family:
-宋体"}**[undo debugging ipv6 dhcp snooping]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[DHCPv6 Snooping]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}
+**[debugging ipv6 dhcp snooping**]命令用来打开DHCPv6 Snooping调试信息开关。**undo debugging ipv6 dhcp snooping**命令用来关闭DHCPv6 Snooping调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[DHCPv6 Snooping]{lang="EN-US"}]{#struct_0_90630_81574_x1224771170}[调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，DHCPv6 Snooping调试信息开关处于关闭状态。
 
-[[表1-10 ]{lang="EN-US"}[debugging ipv6 dhcp snooping error]{lang="EN-US"}]{#struct_0_90630_81574_1595115952}[命令输出信息描述表]{style="font-family:黑体"}
+表1-10 debugging ipv6 dhcp snooping error命令输出信息描述表
 
-[]{#table_struct_0_854067033}[[字段]{style="font-family:黑体"}]{#struct_0_90630_81574_x140462495}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_90630_81574_1043605535}
+描述
 
-[[Failed to delete IPCIM entries by VLAN *vlan-id*.]{lang="EN-US"}]{#struct_0_90630_81574_x1228806720}
+Failed to delete IPCIM entries by VLAN *vlan-id*.
 
-[[通知]{style="font-family:宋体"}[IPCIM]{lang="EN-US"}]{#struct_0_90630_81574_x610619958}[删除]{style="font-family:宋体"}[VLAN *vlan-id*]{lang="EN-US"}[下的表项失败]{style="font-family:宋体"}
+通知IPCIM删除VLAN *vlan-id*下的表项失败
 
-[[Failed to delete IPCIM entries on interface *interface-name*]{lang="EN-US"}]{#struct_0_90630_81574_x1234566368}
+Failed to delete IPCIM entries on interface *interface-name*
 
-[[通知]{style="font-family:宋体"}[IPCIM]{lang="EN-US"}]{#struct_0_90630_81574_x402898388}[删除接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*[下的表项失败]{style="font-family:宋体"}
+通知IPCIM删除接口*interface-name*下的表项失败
 
-[[Failed to delete an IPCIM entry.]{lang="EN-US"}]{#struct_0_90630_81574_1595181488}
+Failed to delete an IPCIM entry.
 
-[[通知]{style="font-family:宋体"}[IPCIM]{lang="EN-US"}]{#struct_0_90630_81574_x2146245654}[删除一条]{style="font-family:宋体"}[IPCIM]{lang="EN-US"}[表项失败]{style="font-family:宋体"}
+通知IPCIM删除一条IPCIM表项失败
 
-[[Failed to synchronize IPCIM results.]{lang="EN-US"}]{#struct_0_90630_81574_1356765642}
+Failed to synchronize IPCIM results.
 
-[[同步]{style="font-family:宋体"}[IPCIM]{lang="EN-US"}]{#struct_0_90630_81574_1036377517}[结果失败]{style="font-family:宋体"}
+同步IPCIM结果失败
 
-[[Failed to synchronize IPCIM.]{lang="EN-US"}]{#struct_0_90630_81574_475838318}
+Failed to synchronize IPCIM.
 
-[[同步]{style="font-family:宋体"}[IPCIM]{lang="EN-US"}]{#struct_0_90630_81574_x581586395}[失败]{style="font-family:宋体"}
+同步IPCIM失败
 
-[[Insufficient storage space.]{lang="EN-US"}]{#struct_0_90630_81574_1595509168}
+Insufficient storage space.
 
-[[存储空间不足]{style="font-family:宋体"}]{#struct_0_90630_81574_x1286193516}
+存储空间不足
 
-[ ]{lang="EN-US"}
+表1-11 debugging ipv6 dhcp snooping event命令输出信息描述表
 
-[[表1-11 ]{lang="EN-US"}[debugging ipv6 dhcp snooping event]{lang="EN-US"}]{#struct_0_90630_81574_1664828515}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_847714604}[[字段]{style="font-family:黑体"}]{#struct_0_90630_81574_1466019308}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_90630_81574_x78437489}
+Number of DHCPv6 snooping entries has reached the maximum (interface is *interface-name*)
 
-[[Number of DHCPv6 snooping entries has reached the maximum (interface is *interface-name*)]{lang="EN-US"}]{#struct_0_90630_81574_x1610672373}
+接口*interface-name*下的DHCPv6 Snooping表项个数达到最大值
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_90630_81574_1595574704}[下的]{style="font-family:宋体"}[DHCPv6 Snooping]{lang="EN-US"}[表项个数达到最大值]{style="font-family:宋体"}
+Started to synchronize IPCIM.
 
-[[Started to synchronize IPCIM.]{lang="EN-US"}]{#struct_0_90630_81574_982919797}
+开始同步IPCIM
 
-[[开始同步]{style="font-family:宋体"}[IPCIM]{lang="EN-US"}]{#struct_0_90630_81574_x1662460623}
+Finished synchronizing IPCIM.
 
-[[Finished synchronizing IPCIM.]{lang="EN-US"}]{#struct_0_90630_81574_1598075919}
+结束同步IPCIM
 
-[[结束同步]{style="font-family:宋体"}[IPCIM]{lang="EN-US"}]{#struct_0_90630_81574_x900286850}
+Finished recovering entries.
 
-[[Finished recovering entries.]{lang="EN-US"}]{#struct_0_90630_81574_x609035791}
+表项恢复完成
 
-[[表项恢复完成]{style="font-family:宋体"}]{#struct_0_90630_81574_1594984881}
+表1-12 debugging ipv6 dhcp snooping packet命令输出信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表1-12 ]{lang="EN-US"}[debugging ipv6 dhcp snooping packet]{lang="EN-US"}]{#struct_0_90630_81574_x169203207}[命令输出信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_849436529}[[字段]{style="font-family:黑体"}]{#struct_0_90630_81574_562462323}
+Received a DHCPv6 *type* packet.
 
-[[描述]{style="font-family:黑体"}]{#struct_0_90630_81574_x1504870031}
+收到类型为*type*的DHCPv6报文，DHCPv6报文类型为：
 
-[[Received a DHCPv6 *type* packet.]{lang="EN-US"}]{#struct_0_90630_81574_x661766430}
+·SOLICIT
 
-[[收到类型为]{style="font-family:宋体"}]{#struct_0_90630_81574_1700060421}*[type]{lang="EN-US"}*[的]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[报文，]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[报文类型为：]{style="font-family:宋体"}
+·REQUEST
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SOLICIT]{lang="EN-US"}]{#struct_0_90630_81574_x1967315989}
+·CONFIRM
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[REQUEST]{lang="EN-US"}]{#struct_0_90630_81574_1595050417}
+·RENEW
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[CONFIRM]{lang="EN-US"}]{#struct_0_90630_81574_609376429}
+·REBIND
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RENEW]{lang="EN-US"}]{#struct_0_90630_81574_1996688516}
+·RELEASE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[REBIND]{lang="EN-US"}]{#struct_0_90630_81574_x1423658094}
+·DECLINE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RELEASE]{lang="EN-US"}]{#struct_0_90630_81574_426309633}
+·INFORMATION-REQUEST
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DECLINE]{lang="EN-US"}]{#struct_0_90630_81574_1594853809}
+·ADVERTISE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[INFORMATION-REQUEST]{lang="EN-US"}]{#struct_0_90630_81574_x2066286125}
+·RECONFIGURE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ADVERTISE]{lang="EN-US"}]{#struct_0_90630_81574_1630205302}
+·REPLY
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RECONFIGURE]{lang="EN-US"}]{#struct_0_90630_81574_1244909141}
+L3Output: Started to process DHCPv6 packets.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[REPLY]{lang="EN-US"}]{#struct_0_90630_81574_411458598}
+三层出方向开始处理报文
 
-[[L3Output: Started to process DHCPv6 packets.]{lang="EN-US"}]{#struct_0_90630_81574_1594919345}
+L3Output: Ignored request packets.
 
-[[三层出方向开始处理报文]{style="font-family:宋体"}]{#struct_0_90630_81574_x2077409770}
+三层出方向请求报文不处理
 
-[[L3Output: Ignored request packets.]{lang="EN-US"}]{#struct_0_90630_81574_x1983245488}
+Started to process DHCPv6 packets.
 
-[[三层出方向请求报文不处理]{style="font-family:宋体"}]{#struct_0_90630_81574_139220701}
+开始处理DHCPv6报文
 
-[[Started to process DHCPv6 packets.]{lang="EN-US"}]{#struct_0_90630_81574_1658768777}
+DHCPv6 packet sent to slot *slot-number*
 
-[[开始处理]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}]{#struct_0_90630_81574_1595247025}[报文]{style="font-family:宋体"}
+DHCP报文透传主用板*slot-number*
 
-[[DHCPv6 packet sent to slot *slot-number*]{lang="EN-US"}]{#struct_0_90630_81574_x1715024505}
+Processed a DHCPv6 RELAY-REPLY packet.
 
-[[DHCP]{lang="EN-US"}]{#struct_0_90630_81574_x1721334437}[报文透传主用板]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*
+处理DHCPv6 RELAY-REPLY报文
 
-[[Processed a DHCPv6 RELAY-REPLY packet.]{lang="EN-US"}]{#struct_0_90630_81574_1411818419}
+Successfully sent packets in VLAN (interface is *interface-name*).
 
-[[处理]{style="font-family:宋体"}]{#struct_0_90630_81574_846113012}[DHCPv6 RELAY-REPLY]{lang="EN-US"}[报文]{style="font-family:宋体"}
+VLAN内的接口*interface-name*转发报文成功
 
-[[Successfully sent packets in VLAN (interface is *interface-name*).]{lang="EN-US"}]{#struct_0_90630_81574_1595312561}
+Failed to send a DHCP packet.
 
-[[VLAN]{lang="EN-US"}]{#struct_0_90630_81574_1393848219}[内的接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*[转发报文成功]{style="font-family:宋体"}
+发送DHCP报文失败
 
-[[Failed to send a DHCP packet.]{lang="EN-US"}]{#struct_0_90630_81574_x1013337396}
+Sending the packet to all ports in VLAN *vlan-id*.
 
-[[发送]{style="font-family:宋体"}[DHCP]{lang="EN-US"}]{#struct_0_90630_81574_1948701636}[报文失败]{style="font-family:宋体"}
+将DHCPv6报文发送到VLAN *vlan-id*内的所有端口
 
-[[Sending the packet to all ports in VLAN *vlan-id*.]{lang="EN-US"}]{#struct_0_90630_81574_1595115953}
+Sending the packet by interface *interface-name* of VLAN *vlan-id.*
 
-[[将]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}]{#struct_0_90630_81574_x140528031}[报文发送到]{style="font-family:宋体"}[VLAN *vlan-id*]{lang="EN-US"}[内的所有端口]{style="font-family:宋体"}
+设备通过VLAN *vlan-id*内接口*interface-name*转发报文
 
-[[Sending the packet by interface *interface-name* of VLAN *vlan-id.*]{lang="EN-US"}]{#struct_0_90630_81574_x959269370}
+Started to check validity of the DHCP-request-packet.
 
-[[设备通过]{style="font-family:宋体"}[VLAN *vlan-id*]{lang="EN-US"}]{#struct_0_90630_81574_x1668341219}[内接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*[转发报文]{style="font-family:宋体"}
+开始请求方向报文有效性检查
 
-[[Started to check validity of the DHCP-request-packet.]{lang="EN-US"}]{#struct_0_90630_81574_1595181489}
+Filled option 18 information: Length is *length*, PortIndex is *interface-name* Outer VLAN is *vlan-id,* Inner VLAN is *vlan-id*, DUID is *duid*.
 
-[[开始请求方向报文有效性检查]{style="font-family:宋体"}]{#struct_0_90630_81574_x2146180118}
+填充Option 18：长度是*length*，接口索引是*interface-name*，外层VLAN *vlan-id*，内层VLAN *vlan-id*，DUID是*duid*
 
-[[Filled option 18 information: Length is *length*, PortIndex is *interface-name* Outer VLAN is *vlan-id,* Inner VLAN is *vlan-id*, DUID is *duid*.]{lang="EN-US"}]{#struct_0_90630_81574_x1226751377}
+Successfully stripped Option *option-id*: Offset is *offset,* Stripped length is *length.*
 
-[[填充]{style="font-family:宋体"}[Option 18]{lang="EN-US"}]{#struct_0_90630_81574_x461551684}[：长度是]{style="font-family:宋体"}*[length]{lang="EN-US"}*[，接口索引是]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*[，外层]{style="font-family:宋体"}[VLAN *vlan-id*]{lang="EN-US"}[，内层]{style="font-family:宋体"}[VLAN *vlan-id*]{lang="EN-US"}[，]{style="font-family:宋体"}[DUID]{lang="EN-US"}[是]{style="font-family:宋体"}*[duid]{lang="EN-US"}*
+剥离Option *option-id*，偏移量*offset*，剥离长度*length*
 
-[[Successfully stripped Option *option-id*: Offset is *offset,* Stripped length is *length.*]{lang="EN-US"}]{#struct_0_90630_81574_1595509169}
+Padded option 18: Offset is *offset.*
 
-[[剥离]{style="font-family:宋体"}[Option *option-id*]{lang="EN-US"}]{#struct_0_90630_81574_x1286127980}[，偏移量]{style="font-family:宋体"}*[offset]{lang="EN-US"}*[，剥离长度]{style="font-family:宋体"}*[length]{lang="EN-US"}*
+在报文中填充Option18选项，偏移量*offset*
 
-[[Padded option 18: Offset is *offset.*]{lang="EN-US"}]{#struct_0_90630_81574_x1725252216}
+Failed to pad option 18.
 
-[[在报文中填充]{style="font-family:宋体"}[Option18]{lang="EN-US"}]{#struct_0_90630_81574_736056894}[选项，偏移量]{style="font-family:宋体"}*[offset]{lang="EN-US"}*
+在报文中填充Option18选项失败
 
-[[Failed to pad option 18.]{lang="EN-US"}]{#struct_0_90630_81574_1595574705}
+Failed to strip option 18.
 
-[[在报文中填充]{style="font-family:宋体"}[Option18]{lang="EN-US"}]{#struct_0_90630_81574_982854261}[选项失败]{style="font-family:宋体"}
+在报文中剥离Option18选项失败
 
-[[Failed to strip option 18.]{lang="EN-US"}]{#struct_0_90630_81574_1079392924}
+Filled option 37 information: Length is *length* Enterprise number is *number*, PortIndex is *interface-name*, Outer VLAN is *vlan-id*, Inner VLAN is *vlan-id*, DUID is *duid.*
 
-[[在报文中剥离]{style="font-family:宋体"}[Option18]{lang="EN-US"}]{#struct_0_90630_81574_x1864098206}[选项失败]{style="font-family:宋体"}
+填充Option 37：长度是*length*，厂商标识是*number*，接口索引是*interface-name*，外层VLAN *vlan-id*，内层VLAN *vlan-id*，DUID是*duid*
 
-[[Filled option 37 information: Length is *length* Enterprise number is *number*, PortIndex is *interface-name*, Outer VLAN is *vlan-id*, Inner VLAN is *vlan-id*, DUID is *duid.*]{lang="EN-US"}]{#struct_0_90630_81574_1594984878}
+Padded option 37: Offset is *offset.*
 
-[[填充]{style="font-family:宋体"}[Option 37]{lang="EN-US"}]{#struct_0_90630_81574_x169793034}[：长度是]{style="font-family:宋体"}*[length]{lang="EN-US"}*[，厂商标识是]{style="font-family:宋体"}*[number]{lang="EN-US"}*[，接口索引是]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*[，外层]{style="font-family:宋体"}[VLAN *vlan-id*]{lang="EN-US"}[，内层]{style="font-family:宋体"}[VLAN *vlan-id*]{lang="EN-US"}[，]{style="font-family:宋体"}[DUID]{lang="EN-US"}[是]{style="font-family:宋体"}*[duid]{lang="EN-US"}*
+填充报文Option37，偏移量*offset*
 
-[[Padded option 37: Offset is *offset.*]{lang="EN-US"}]{#struct_0_90630_81574_156532539}
+Failed to pad option 37.
 
-[[填充报文]{style="font-family:宋体"}[Option37]{lang="EN-US"}]{#struct_0_90630_81574_1595050414}[，偏移量]{style="font-family:宋体"}*[offset]{lang="EN-US"}*
+填充Option37失败
 
-[[Failed to pad option 37.]{lang="EN-US"}]{#struct_0_90630_81574_609310893}
+Failed to strip option 37.
 
-[[填充]{style="font-family:宋体"}[Option37]{lang="EN-US"}]{#struct_0_90630_81574_137139692}[失败]{style="font-family:宋体"}
+剥离Option37失败
 
-[[Failed to strip option 37.]{lang="EN-US"}]{#struct_0_90630_81574_x59182898}
+【举例】
 
-[[剥离]{style="font-family:宋体"}[Option37]{lang="EN-US"}]{#struct_0_90630_81574_1594853806}[失败]{style="font-family:宋体"}
+\# 打开DHCPv6 Snooping的报文调试信息开关，并收到DHCPv6 Reply报文。
 
-[ ]{lang="EN-US"}
+\<Sysname\> terminal debugging
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_90630_81574_x2065303085}
+\<Sysname\> debugging ipv6 dhcp snooping packet
 
-[[\# ]{lang="EN-US"}]{#struct_0_90630_81574_x1136216770}[打开]{style="font-family:宋体"}[DHCPv6 Snooping]{lang="EN-US"}[的报文调试信息开关，并收到]{style="font-family:宋体"}[DHCPv6 Reply]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+\*Jun 16 19:45:07:340 2012 H3C DHCPSP6/7/PACKET: -VD=1-Chassis=3-Slot=3; The DHCPv6
 
-[[\<Sysname\> terminal debugging]{lang="EN-US"}]{#struct_0_90630_81574_x1518156234}
+packet is sent to slot 58.
 
-[\<Sysname\> debugging ipv6 dhcp snooping packet]{lang="EN-US"}
+*[// DHCPv6*]*报文透传至58号单板*
 
-[\*Jun 16 19:45:07:340 2012 H3C DHCPSP6/7/PACKET: -VD=1-Chassis=3-Slot=3; The DHCPv6 ]{lang="EN-US"}
+\*Jun 16 19:45:07:340 2012 H3C DHCPSP6/7/PACKET: -VD=1; Started to process DHCPv6 packets.
 
-[packet is sent to slot 58.]{lang="EN-US"}
+*[// DHCPv6 Snooping*]*预处理报文*
 
-[*[// DHCPv6]{lang="EN-US"}*]{#struct_0_90630_81574_x159518323}*[报文透传至]{style="font-family:宋体"}[58]{lang="EN-US"}[号单板]{style="font-family:宋体"}*
+\*Jun 16 19:45:07:340 2012 H3C DHCPSP6/7/PACKET: -VD=1; Received a DHCPv6 REPLY packet.
 
-[[\*Jun 16 19:45:07:340 2012 H3C DHCPSP6/7/PACKET: -VD=1; Started to process DHCPv6 packets.]{lang="EN-US"}]{#struct_0_90630_81574_1594919342}
+*// 接收到DHCPv6 Reply报文*
 
-[*[// DHCPv6 Snooping]{lang="EN-US"}*]{#struct_0_90630_81574_x2076951018}*[预处理报文]{style="font-family:宋体"}*
+\*Jun 16 19:45:07:340 2012 H3C DHCPSP6/7/PACKET: -VD=1; Sending the packet to all ports in VLAN 2.
 
-[[\*Jun 16 19:45:07:340 2012 H3C DHCPSP6/7/PACKET: -VD=1; Received a DHCPv6 REPLY packet.]{lang="EN-US"}]{#struct_0_90630_81574_865254719}
+*// 将DHCPv6报文在VLAN 2内转发*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_90630_81574_455282192}*[接收到]{style="font-family:宋体"}[DHCPv6 Reply]{lang="EN-US"}[报文]{style="font-family:宋体"}*
-
-[[\*Jun 16 19:45:07:340 2012 H3C DHCPSP6/7/PACKET: -VD=1; Sending the packet to all ports in VLAN 2.]{lang="EN-US"}]{#struct_0_90630_81574_x1952015860}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_90630_81574_x1715442932}*[将]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[报文在]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内转发]{style="font-family:宋体"}*
-
-[ ]{lang="EN-US"}

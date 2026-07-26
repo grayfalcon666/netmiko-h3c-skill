@@ -1,3398 +1,3259 @@
-::: {#351315815 .myid}
-[]{#_Toc404787428}[]{#struct_0_21182_x6397_x1434458080}[]{#_Toc382816936}
 
 **WAAS \-- WAAS配置命令 \-- class**
 
 ------------------------------------------------------------------------
 
-[**[class]{lang="EN-US"}**]{#struct_0_21182_x6397_1596456259}[命令用来配置]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[策略引用的指定类，并进入]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[策略类动作视图。]{style="font-family:宋体"}
+**[class**]命令用来配置WAAS策略引用的指定类，并进入WAAS策略类动作视图。
 
-[**[undo class]{lang="EN-US"}**]{#struct_0_21182_x6397_872694107}[命令用来取消]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[策略对指定类的引用。]{style="font-family:宋体"}
+**[undo class**]命令用来取消WAAS策略对指定类的引用。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_2054669105}
+【命令】
 
-[**[class ]{lang="EN-US"}***[class-name ]{lang="EN-US"}*[\[ **insert-before** *existing-class* \]]{lang="EN-US"}]{#struct_0_21182_x6397_682117391}
+**[class ***class-name * **insert-before** *existing-class* ]
 
-[**[undo class ]{lang="EN-US"}***[class-name]{lang="EN-US"}*]{#struct_0_21182_x6397_467694538}
+**[undo class ***class-name*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1685095293}
+【缺省情况】
 
-[[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_276830024}[策略未引用任何类。]{style="font-family:宋体"}
+WAAS策略未引用任何类。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1014479197}
+【视图】
 
-[[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_972098944}[策略视图]{style="font-family:宋体"}
+WAAS策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_868838471}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x2111151160}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x1867061923}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x786469783}
+【参数】
 
-[*[class-name]{lang="EN-US"}*]{#struct_0_21182_x6397_x576842572}[：[]{#OLE_LINK4}[指定引用的类名称，为]{#OLE_LINK3}]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写，该类必须存在。]{style="font-family:宋体"}
+*[class-name*]：[指定引用的类名称，为]1～63个字符的字符串，不区分大小写，该类必须存在。
 
-[**[insert-before]{lang="EN-US"}**[ *existing-class*]{lang="EN-US"}]{#struct_0_21182_x6397_199289911}[：表示插入到指定类之前，]{style="font-family:宋体"}*[existing-class]{lang="EN-US"}*[表示]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[策略已引用的类名称。]{style="font-family:宋体"}
+**[insert-before** *existing-class*]：表示插入到指定类之前，*existing-class*表示WAAS策略已引用的类名称。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1156956623}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_1895622179}[策略支持引用预定义类。（预定义类参见]{style="font-family:宋体"}[[表]{style="font-family:宋体"}[1-7]{lang="EN-US"}](?-326408526#_Ref401328623)[）]{style="font-family:宋体"}
+·WAAS策略支持引用预定义类。（预定义类参见表 1-7(?-326408526#_Ref401328623)）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[报文流量匹配类时，按照引用的类的排序进行匹配，匹配上任一个类，则按照相应动作处理报文流量。]{style="font-family:宋体"}]{#struct_0_21182_x6397_x776131200}
+·报文流量匹配类时，按照引用的类的排序进行匹配，匹配上任一个类，则按照相应动作处理报文流量。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[通过本命令，可对]{style="font-family:宋体"}]{#struct_0_21182_x6397_2014612832}[WAAS]{lang="EN-US"}[策略已引用的多个类进行排序。]{style="font-family:宋体"}
+·通过本命令，可对WAAS策略已引用的多个类进行排序。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果]{style="font-family:宋体"}]{#struct_0_21182_x6397_x1399976017}[WAAS]{lang="EN-US"}[策略未为引用的类配置任何动作，则该类不参与所属策略对报文流量的匹配。]{style="font-family:宋体"}
+·如果WAAS策略未为引用的类配置任何动作，则该类不参与所属策略对报文流量的匹配。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[建议用户通过执行此命令进入预定义类动作视图，通过修改预定义类的方式完成配置。]{style="font-family:宋体"}]{#struct_0_21182_x6397_1998677831}
+·建议用户通过执行此命令进入预定义类动作视图，通过修改预定义类的方式完成配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_667864323}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_x1058174217}[配置]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[策略引用预定义类]{style="font-family:宋体"}[AFS]{lang="EN-US"}[，并进入其动作视图。]{style="font-family:宋体"}
+\# 配置WAAS策略引用预定义类AFS，并进入其动作视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_21182_x6397_1292867948}
+\<Sysname\> system-view
 
-[\[Sysname\] waas policy waas_global]{lang="EN-US"}
+Sysname waas policy waas_global
 
-[\[Sysname-waaspolicy-waas_global\] class AFS]{lang="EN-US"}
+Sysname-waaspolicy-waas_global class AFS
 
-[\[Sysname-waaspolicy-waas_global-AFS\]]{lang="EN-US"}
+Sysname-waaspolicy-waas_global-AFS
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_x1617769404}[配置]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[策略引用预定义类]{style="font-family:宋体"}[AOL]{lang="EN-US"}[，将其插入到]{style="font-family:宋体"}[AFS]{lang="EN-US"}[之前，并进入]{style="font-family:宋体"}[AOL]{lang="EN-US"}[动作视图。]{style="font-family:宋体"}
+\# 配置WAAS策略引用预定义类AOL，将其插入到AFS之前，并进入AOL动作视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_21182_x6397_193824578}
+\<Sysname\> system-view
 
-[\[Sysname\] waas policy waas_global]{lang="EN-US"}
+Sysname waas policy waas_global
 
-[\[Sysname-waaspolicy-waas_global\] class AOL insert-before AFS]{lang="EN-US"}
+Sysname-waaspolicy-waas_global class AOL insert-before AFS
 
-[\[Sysname-waaspolicy-waas_global-AOL\]]{lang="EN-US"}
+Sysname-waaspolicy-waas_global-AOL
 
-[[\# WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_x1705062834}[策略已依次引用预定义类]{style="font-family:宋体"}[AFS]{lang="EN-US"}[、]{style="font-family:宋体"}[AOL]{lang="EN-US"}[，调整]{style="font-family:宋体"}[class]{lang="EN-US"}[顺序，将]{style="font-family:宋体"}[AOL]{lang="EN-US"}[插入到]{style="font-family:宋体"}[AFS]{lang="EN-US"}[之前，并进入]{style="font-family:宋体"}[AOL]{lang="EN-US"}[类动作视图。]{style="font-family:宋体"}
+\# WAAS策略已依次引用预定义类AFS、AOL，调整class顺序，将AOL插入到AFS之前，并进入AOL类动作视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_21182_x6397_x754151513}
+\<Sysname\> system-view
 
-[\[Sysname\] waas policy waas_global]{lang="EN-US"}
+Sysname waas policy waas_global
 
-[\[Sysname-waaspolicy-waas_global\] class AOL insert-before AFS]{lang="EN-US"}
+Sysname-waaspolicy-waas_global class AOL insert-before AFS
 
-[\[Sysname-waaspolicy-waas_global-AOL\]]{lang="EN-US"}
+Sysname-waaspolicy-waas_global-AOL
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_452754793}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display waas policy]{lang="EN-US"}**]{#struct_0_21182_x6397_1952752155}
+·**display waas policy**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[waas class]{lang="EN-US"}**]{#struct_0_21182_x6397_1918319487}
+·**waas class**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[waas policy]{lang="EN-US"}**]{#struct_0_21182_x6397_x689359491}
-:::
-
-::: {#1395263565 .myid}
-[]{#struct_0_21182_x6397_1085674594}[]{#_Toc404787429}
+·**waas policy**
 
 **WAAS \-- WAAS配置命令 \-- display waas class**
 
 ------------------------------------------------------------------------
 
-[**[display waas class]{lang="EN-US"}**]{#struct_0_21182_x6397_x230274653}[命令]{style="font-family:宋体"}[用来显示]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[类的信息。]{style="font-family:宋体"}
+**[display waas class**]命令用来显示WAAS类的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1149636480}
+【命令】
 
-[**[display waas class ]{lang="EN-US"}**[\[ *class-name* \]]{lang="EN-US"}]{#struct_0_21182_x6397_905414650}
+**[display waas class ** *class-name* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_332564312}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_21182_x6397_1697810803}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1704155044}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_98462421}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_21182_x6397_481577933}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x1763106623}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_21182_x6397_x1386628053}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1815785087}
+【参数】
 
-[*[class-name]{lang="EN-US"}*]{#struct_0_21182_x6397_283082611}[：]{style="font-family:宋体"}[指定]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[类的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。如果未指定本参数，将显示所有]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[类的信息。]{style="font-family:宋体"}
+*[class-name*]：指定WAAS类的名称，为1～63个字符的字符串，不区分大小写。如果未指定本参数，将显示所有WAAS类的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_386668214}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_x866700090}[显示类]{style="font-family:宋体"}[class1]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+\# 显示类class1的信息。
 
-[[\<Sysname\> display waas class class1]{lang="EN-US"}]{#struct_0_21182_x6397_x93642384}
+\<Sysname\> display waas class class1
 
-[WAAS class: ]{lang="EN-US"}[class1]{lang="EN-US"}
+WAAS class: class1
 
-[  match 1 tcp source 1.1.1.1/24 port 50000 60000]{lang="EN-US"}
+  match 1 tcp source 1.1.1.1/24 port 50000 60000
 
-[  match 6 tcp destination 2.2.2.2 port 1 1024]{lang="EN-US"}
+  match 6 tcp destination 2.2.2.2 port 1 1024
 
-[  match 11 tcp source 1001::1111/96 port 50000 60000]{lang="EN-US"}
+  match 11 tcp source 1001::1111/96 port 50000 60000
 
-[  match 16 tcp destination 2002::2222 port 1 1024]{lang="EN-US"}
+  match 16 tcp destination 2002::2222 port 1 1024
 
-[[表1-1 ]{lang="EN-US"}[display waas class]{lang="EN-US"}]{#struct_0_21182_x6397_1361981035}[命令显示信息描述表]{style="font-family:黑体"}
+表1-1 display waas class命令显示信息描述表
 
-[]{#table_struct_0_x653129435}[[字段]{style="font-family:黑体"}]{#struct_0_21182_x6397_1750976319}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1994037178}
+描述
 
-[[WAAS class]{lang="EN-US"}]{#struct_0_21182_x6397_x911195572}
+WAAS class
 
-[[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_x1658966042}[类的名称]{style="font-family:宋体"}
+WAAS类的名称
 
-[[match]{lang="EN-US"}]{#struct_0_21182_x6397_x1179415727}
+match
 
-[[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_1869018087}[类包含的匹配规则]{style="font-family:宋体"}
+WAAS类包含的匹配规则
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_938520300}
+·**match tcp**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[match tcp]{lang="EN-US"}**]{#struct_0_21182_x6397_243802273}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[waas class]{lang="EN-US"}**]{#struct_0_21182_x6397_x355864109}
-
-::: {#1404163808 .myid}
-[]{#_Toc404787430}[]{#struct_0_21182_x6397_795484321}
+·**waas class**
 
 **WAAS \-- WAAS配置命令 \-- display waas policy**
 
 ------------------------------------------------------------------------
 
-[**[display waas policy]{lang="EN-US"}**]{#struct_0_21182_x6397_1030532801}[命令用来显示]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[策略的信息。]{style="font-family:宋体"}
+**[display waas policy**]命令用来显示WAAS策略的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_103349678}
+【命令】
 
-[**[display waas policy]{lang="EN-US"}**[ \[ *policy-name* \]]{lang="EN-US"}]{#struct_0_21182_x6397_x1609421975}
+**[display waas policy** [ *policy-name* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_548901906}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_21182_x6397_1985426991}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_913203243}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_931339226}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_21182_x6397_x109954536}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_637322290}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_21182_x6397_x2101870474}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1549467628}
+【参数】
 
-[*[policy-name]{lang="EN-US"}*]{#struct_0_21182_x6397_x549323700}[：指定]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[策略的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。如果未指定本参数，将显示所有]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[策略的信息。]{style="font-family:宋体"}
+*[policy-name*]：指定WAAS策略的名称，为1～63个字符的字符串，不区分大小写。如果未指定本参数，将显示所有WAAS策略的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x570516367}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_559463943}[显示指定]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[策略]{style="font-family:宋体"}[po1]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+\# 显示指定WAAS策略po1的信息。
 
-[[\<Sysname\> display waas policy po1]{lang="EN-US"}]{#struct_0_21182_x6397_1031614202}
+\<Sysname\> display waas policy po1
 
-[WAAS ]{lang="EN-US"}[policy: po1]{lang="EN-US"}
+WAAS policy: po1
 
-[  class cl1]{lang="EN-US"}
+  class cl1
 
-[    optimize TFO DRE LZ]{lang="EN-US"}
+    optimize TFO DRE LZ
 
-[  class cl2]{lang="EN-US"}
+  class cl2
 
-[    optimize TFO DRE]{lang="EN-US"}
+    optimize TFO DRE
 
-[  class cl3]{lang="EN-US"}
+  class cl3
 
-[    passthrough]{lang="EN-US"}
+    passthrough
 
-[  class cl4]{lang="EN-US"}
+  class cl4
 
-[    optimize TFO LZ]{lang="EN-US"}
+    optimize TFO LZ
 
-[  class cl5]{lang="EN-US"}
+  class cl5
 
-[[表1-2 ]{lang="EN-US"}[display waas policy]{lang="EN-US"}]{#struct_0_21182_x6397_1690811271}[命令显示信息描述表]{style="font-family:黑体"}
+表1-2 display waas policy命令显示信息描述表
 
-[]{#table_struct_0_x651469045}[[字段]{style="font-family:黑体"}]{#struct_0_21182_x6397_x16616313}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_21182_x6397_1129021073}
+描述
 
-[[WAAS policy]{lang="EN-US"}]{#struct_0_21182_x6397_x413685632}
+WAAS policy
 
-[[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_1480143021}[策略的名称]{style="font-family:宋体"}
+WAAS策略的名称
 
-[[class]{lang="EN-US"}]{#struct_0_21182_x6397_x996998474}
+class
 
-[[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_534806957}[策略引用的]{style="font-family:宋体"}[class]{lang="EN-US"}[名称]{style="font-family:宋体"}
+WAAS策略引用的class名称
 
-[[optimize]{lang="EN-US"}]{#struct_0_21182_x6397_304106562}
+optimize
 
-[[class]{lang="EN-US"}]{#struct_0_21182_x6397_x321266303}[配置的优化方式，取值包括：]{style="font-family:宋体"}
+class配置的优化方式，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TFO]{lang="FR"}]{#struct_0_21182_x6397_783816576}[：表示流传输优化方式，仅支持]{style="font-family:宋体"}[TCP]{lang="EN-US"}[流传输优化。]{style="font-family:宋体"}
+·TFO：表示流传输优化方式，仅支持TCP流传输优化。
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DRE]{lang="FR"}]{#struct_0_21182_x6397_x1499614099}[：表示]{style="font-family:宋体"}[消除冗余数据优化方式。]{style="font-family:宋体"}
+·DRE：表示消除冗余数据优化方式。
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LZ]{lang="FR"}]{#struct_0_21182_x6397_x1412711710}[：表示]{style="font-family:宋体"}[数据压缩优化方式。]{style="font-family:宋体"}
+·LZ：表示数据压缩优化方式。
 
-[[passthrough]{lang="EN-US"}]{#struct_0_21182_x6397_x1582700254}
+passthrough
 
-[[class]{lang="EN-US"}]{#struct_0_21182_x6397_x436627870}[直接旁路动作，不做任何优化处理]{style="font-family:宋体"}
+class直接旁路动作，不做任何优化处理
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x136346363}
+·**class**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[class]{lang="EN-US"}**]{#struct_0_21182_x6397_x1675757310}
+·**optimize**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[optimize]{lang="EN-US"}**]{#struct_0_21182_x6397_x1638991241}
+·**passthrough**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[passthrough]{lang="EN-US"}**]{#struct_0_21182_x6397_170274489}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[waas policy]{lang="EN-US"}**]{#struct_0_21182_x6397_x131205637}
-
-::: {#2086123682 .myid}
-[]{#_Toc404787431}[]{#struct_0_21182_x6397_x91251993}
+·**waas policy**
 
 **WAAS \-- WAAS配置命令 \-- display waas session**
 
 ------------------------------------------------------------------------
 
-[**[display waas session]{lang="EN-US"}**]{#struct_0_21182_x6397_x250412358}[命令用来显示]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[会话信息。]{style="font-family:宋体"}
+**[display waas session**]命令用来显示WAAS会话信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_842074454}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_21182_x6397_x1859355914}
+集中式设备：
 
-[**[display waas session ]{lang="EN-US"}**[{ **ipv4** \| **ipv6** } \[ **client-ip** *client-ip* \] \[ **client-port** *client-port* \] \[ **server-ip**]{lang="EN-US"}]{#struct_0_21182_x6397_x1745038729}
+**[display waas session **[{ **ipv4** \| **ipv6** } [ **client-ip** *client-ip* ]  **client-port** *client-port*   **server-ip**]
 
-[*[server-ip]{lang="EN-US"}***[ ]{lang="EN-US"}**[\] \[ **server-port** *server-port* \] \[ **peer-id** *peer-id* \] \[ **verbose** \]]{lang="EN-US"}]{#struct_0_21182_x6397_x1292113796}
+*[server-ip*****  **server-port** *server-port*   **peer-id** *peer-id*   **verbose** ]]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_21182_x6397_x241789187}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display waas session ]{lang="EN-US"}**[{ **ipv4** \| **ipv6** } \[ **client-ip** *client-ip* \] \[ **client-port** *client-port* \] \[ **server-ip**]{lang="EN-US"}]{#struct_0_21182_x6397_260647660}
+**[display waas session **[{ **ipv4** \| **ipv6** } [ **client-ip** *client-ip* ]  **client-port** *client-port*   **server-ip**]
 
-[*[server-ip]{lang="EN-US"}***[ ]{lang="EN-US"}**[\] \[ **server-port** *server-port* \] \[ **peer-id** *peer-id* \] \[ **verbose** \] \[ **slot** *slot-number* \]]{lang="EN-US"}]{#struct_0_21182_x6397_1146183101}
+*[server-ip*****  **server-port** *server-port*   **peer-id** *peer-id*   **verbose**   **slot** *slot-number* ]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_21182_x6397_x924004580}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display waas session ]{lang="EN-US"}**[{ **ipv4** \| **ipv6** } \[ **client-ip** *client-ip* \] \[ **client-port** *client-port* \] \[ **server-ip**]{lang="EN-US"}]{#struct_0_21182_x6397_771173888}
+**[display waas session **[{ **ipv4** \| **ipv6** } [ **client-ip** *client-ip* ]  **client-port** *client-port*   **server-ip**]
 
-[*[server-ip]{lang="EN-US"}***[ ]{lang="EN-US"}**[\] \[ **server-port** *server-port* \] \[ **peer-id** *peer-id* \] \[ **verbose** \] \[ **chassis** *chassis-number* **slot** *slot-number* \]]{lang="EN-US"}]{#struct_0_21182_x6397_x278229079}
+*[server-ip*****  **server-port** *server-port*   **peer-id** *peer-id*   **verbose**   **chassis** *chassis-number* **slot** *slot-number* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1911166877}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_21182_x6397_x1350905314}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x96535544}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_1729325038}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_21182_x6397_1119147566}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x1944290909}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_21182_x6397_x1089280121}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x937465290}
+【参数】
 
-[**[ipv4]{lang="EN-US"}**]{#struct_0_21182_x6397_1203018643}[：显示]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[会话信息。]{style="font-family:宋体"}
+**[ipv4**]：显示IPv4会话信息。
 
-[**[ipv6]{lang="EN-US"}**]{#struct_0_21182_x6397_1100073158}[：显示]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[会话信息。]{style="font-family:宋体"}
+**[ipv6**]：显示IPv6会话信息。
 
-[**[client-ip ]{lang="EN-US"}***[client-ip]{lang="EN-US"}*]{#struct_0_21182_x6397_x1155616942}[：显示指定客户端地址的会话信息，]{style="font-family:宋体"}*[client-ip]{lang="EN-US"}*[表示客户端]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[client-ip ***client-ip*]：显示指定客户端地址的会话信息，*client-ip*表示客户端IP地址。
 
-[**[client-port ]{lang="EN-US"}***[client-port]{lang="EN-US"}*]{#struct_0_21182_x6397_x249147070}[：显示指定客户端端口号的会话信息，]{style="font-family:宋体"}*[client-port]{lang="EN-US"}*[表示客户端端口号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[client-port ***client-port*]：显示指定客户端端口号的会话信息，*client-port*表示客户端端口号，取值范围为1～65535。
 
-[**[server-ip ]{lang="EN-US"}***[server-ip]{lang="EN-US"}*]{#struct_0_21182_x6397_x1132361560}[：显示指定服务器端地址的会话信息，]{style="font-family:宋体"}*[server-ip]{lang="EN-US"}*[表示服务器端]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[server-ip ***server-ip*]：显示指定服务器端地址的会话信息，*server-ip*表示服务器端IP地址。
 
-[**[server-port ]{lang="EN-US"}***[server-port]{lang="EN-US"}*]{#struct_0_21182_x6397_x101009795}[：显示指定服务器端端口号的会话信息，]{style="font-family:宋体"}*[server-port]{lang="EN-US"}*[表示服务器端端口号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[server-port ***server-port*]：显示指定服务器端端口号的会话信息，*server-port*表示服务器端端口号，取值范围为1～65535。
 
-[**[peer-id ]{lang="EN-US"}***[peer-id]{lang="EN-US"}*]{#struct_0_21182_x6397_393218536}[：显示指定对端设备的]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[会话信息，]{style="font-family:宋体"}*[peer-id]{lang="EN-US"}*[表示对端设备的桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，格式为]{style="font-family:宋体"}[H-H-H]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[peer-id ***peer-id*]：显示指定对端设备的WAAS会话信息，*peer-id*表示对端设备的桥MAC地址，格式为H-H-H。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_21182_x6397_x1283406471}[：显示]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[会话的详细信息。如果不指定本参数，则显示]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[会话的简要信息。]{style="font-family:宋体"}
+**[verbose**]：显示WAAS会话的详细信息。如果不指定本参数，则显示WAAS会话的简要信息。
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_21182_x6397_254949457}[：显示指定单板的会话信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果不指定本参数，将显示所有单板上的会话信息。（分布设备]{style="font-family:宋体"}[-]{lang="EN-US"}[独立运行模式）]{style="font-family:宋体"}
+**[slot ***slot-number*]：显示指定单板的会话信息。*slot-number*表示单板所在的槽位号。如果不指定本参数，将显示所有单板上的会话信息。（分布设备-独立运行模式）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_21182_x6397_x576494227}[：显示指定成员设备的会话信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。如果不指定本参数，将显示所有成员设备上的会话信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：显示指定成员设备的会话信息。*slot-number*表示设备在IRF中的成员编号。如果不指定本参数，将显示所有成员设备上的会话信息。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_21182_x6397_x1389177620}[：显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[的会话信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。如果不指定本参数，将显示所有成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[上的会话信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：显示指定成员设备/PEX的会话信息。*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果不指定本参数，将显示所有成员设备/PEX上的会话信息。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_21182_x6397_1912128786}[：显示指定成员设备上指定单板的会话信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果不指定本参数，将显示所有单板上的会话信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定成员设备上指定单板的会话信息，*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果不指定本参数，将显示所有单板上的会话信息。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_21182_x6397_x666261034}[：显示指定单板的会话信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟槽位号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。如果不指定本参数，将显示所有单板上的会话信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定单板的会话信息，*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟槽位号，*slot-number*表示单板或PEX所在的槽位号。如果不指定本参数，将显示所有单板上的会话信息。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1724814651}
+【使用指导】
 
-[[显示所有满足指定条件的会话的信息。如果除]{style="font-family:宋体"}[IPv4]{lang="EN-US"}]{#struct_0_21182_x6397_1415078000}[或]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[外没有指定任何参数，将显示所有]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[或]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[的会话信息。]{style="font-family:宋体"}
+显示所有满足指定条件的会话的信息。如果除IPv4或IPv6外没有指定任何参数，将显示所有IPv4或IPv6的会话信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x2143835651}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_118636807}[显示]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[会话的简要信息。]{style="font-family:宋体"}
+\# 显示IPv4会话的简要信息。
 
-[[\<Sysname\> display waas session ipv4]{lang="EN-US"}]{#struct_0_21182_x6397_1596521795}
+\<Sysname\> display waas session ipv4
 
-[Peer ID: 0021-90ad-0012]{lang="EN-US"}
+Peer ID: 0021-90ad-0012
 
-[Start Time: Fri Mar 21 10:43:05 2014]{lang="EN-US"}
+Start Time: Fri Mar 21 10:43:05 2014
 
-[Source IP/Port: 1.1.1.1/34572]{lang="EN-US"}
+Source IP/Port: 1.1.1.1/34572
 
-[Destination IP/Port: 2.2.2.2/80]{lang="EN-US"}
+Destination IP/Port: 2.2.2.2/80
 
-[ ]{lang="EN-US"}
+Peer ID: 0011-10ad-0012
 
-[Peer ID: 0011-10ad-0012]{lang="EN-US"}
+Start Time: Fri Mar 21 10:45:05 2014
 
-[Start Time: Fri Mar 21 10:45:05 2014]{lang="EN-US"}
+Source IP/Port: 2.2.1.1/34572
 
-[Source IP/Port: 2.2.1.1/34572]{lang="EN-US"}
+Destination IP/Port: 3.2.2.3/80
 
-[Destination IP/Port: 3.2.2.3/80]{lang="EN-US"}
+Total 2 sessions found.
 
-[ ]{lang="EN-US"}
+\# 显示IPv4会话的详细信息。
 
-[Total 2 sessions found.]{lang="EN-US"}
+\<Sysname\> display waas session ipv4 verbose
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_87286645}[显示]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[会话的详细信息。]{style="font-family:宋体"}
+Peer ID: 0021-90ad0-01221
 
-[[\<Sysname\> display waas session ipv4 verbose]{lang="EN-US"}]{#struct_0_21182_x6397_1952817691}
+Start Time: Fri Mar 21 11:43:05 2014
 
-[Peer ID: 0021-90ad0-01221]{lang="EN-US"}
+Source IP/Port: 1.1.1.1/34572
 
-[Start Time: Fri Mar 21 11:43:05 2014]{lang="EN-US"}
+Destination IP/Port: 2.2.2.2/80
 
-[Source IP/Port: 1.1.1.1/34572]{lang="EN-US"}
+LAN interface: Serial1/0/1
 
-[Destination IP/Port: 2.2.2.2/80]{lang="EN-US"}
+WAN interface: Serial1/0/2
 
-[LAN interface: Serial1/0/1]{lang="EN-US"}
+Configured Policy: TFO DRE LZ
 
-[WAN interface: Serial1/0/2]{lang="EN-US"}
+Negotiated Policy: TFO DRE LZ
 
-[Configured Policy: TFO DRE LZ]{lang="EN-US"}
+LAN-\>WAN bytes: Original   104884      Optimized  88594
 
-[Negotiated Policy: TFO DRE LZ]{lang="EN-US"}
+WAN-\>LAN bytes: Original   744588      Optimized  3355445
 
-[LAN-\>WAN bytes: Original   104884      Optimized  88594]{lang="EN-US"}
+LZ section：
 
-[WAN-\>LAN bytes: Original   744588      Optimized  3355445]{lang="EN-US"}
+  Encode status：
 
-[LZ section]{lang="EN-US"}[：]{style="font-family:宋体"}
+    Bytes in: 0
 
-[  Encode status]{lang="EN-US"}[：]{style="font-family:宋体"}
+    Bytes out: 0
 
-[    Bytes in: 0]{lang="EN-US"}
+    Bypass bytes: 400
 
-[    Bytes out: 0]{lang="EN-US"}
+    Space saved: 0%
 
-[    Bypass bytes: 400]{lang="EN-US"}
+    Average Latency: 0 usec
 
-[    Space saved: 0%]{lang="EN-US"}
+  Decode status：
 
-[    Average Latency: 0 usec]{lang="EN-US"}
+    Bytes in: 329
 
-[  Decode status]{lang="EN-US"}[：]{style="font-family:宋体"}
+    Bytes out: 393
 
-[    Bytes in: 329]{lang="EN-US"}
+    Bypass bytes: 63
 
-[    Bytes out: 393]{lang="EN-US"}
+    Space saved: 16%
 
-[    Bypass bytes: 63]{lang="EN-US"}
+    Average Latency: 2 usec
 
-[    Space saved: 16%]{lang="EN-US"}
+DRE section：
 
-[    Average Latency: 2 usec]{lang="EN-US"}
+  Encode status：
 
-[DRE section]{lang="EN-US"}[：]{style="font-family:宋体"}
+    Bytes in: 0
 
-[  Encode status]{lang="EN-US"}[：]{style="font-family:宋体"}
+    Bytes out: 0
 
-[    Bytes in: 0]{lang="EN-US"}
+    Bypass bytes: 314
 
-[    Bytes out: 0]{lang="EN-US"}
+    Space saved: 0%
 
-[    Bypass bytes: 314]{lang="EN-US"}
+    Average latency: 0 usec
 
-[    Space saved: 0%]{lang="EN-US"}
+  Decode status：
 
-[    Average latency: 0 usec]{lang="EN-US"}
+    Bytes in: 399
 
-[  Decode status]{lang="EN-US"}[：]{style="font-family:宋体"}
+    Bytes out: 332
 
-[    Bytes in: 399]{lang="EN-US"}
+    Bypass bytes: 0
 
-[    Bytes out: 332]{lang="EN-US"}
+    Space saved: 0%
 
-[    Bypass bytes: 0]{lang="EN-US"}
+    Chunk miss: 0
 
-[    Space saved: 0%]{lang="EN-US"}
+Collision: 0
 
-[    Chunk miss]{lang="EN-US"}[: 0]{lang="EN-US"}
+    Average latency: 23 usec
 
-[    ]{lang="EN-US"}[Collision: 0]{lang="EN-US"}
+Peer ID: 0011-10ad-0012
 
-[    Average latency: 23 usec]{lang="EN-US"}
+Start Time: Fri Mar 21 11:43:05 2014
 
-[ ]{lang="EN-US"}
+Source IP/Port: 2.2.1.1/34572
 
-[Peer ID: 0011-10ad-0012]{lang="EN-US"}
+Destination IP/Port: 3.2.2.3/80
 
-[Start Time: Fri Mar 21 11:43:05 2014]{lang="EN-US"}
+LAN interface: Serial1/0/1
 
-[Source IP/Port: 2.2.1.1/34572]{lang="EN-US"}
+WAN interface: Serial1/0/2
 
-[Destination IP/Port: 3.2.2.3/80]{lang="EN-US"}
+Configured Policy: TFO DRE LZ
 
-[LAN interface: Serial1/0/1]{lang="EN-US"}
+Negotiated Policy: TFO DRE LZ
 
-[WAN interface: Serial1/0/2]{lang="EN-US"}
+LAN-\>WAN bytes: Original   104884      Optimized  88594
 
-[Configured Policy: TFO DRE LZ]{lang="EN-US"}
+WAN-\>LAN bytes: Original   744588      Optimized  3355445
 
-[Negotiated Policy: TFO DRE LZ]{lang="EN-US"}
+LZ section：
 
-[LAN-\>WAN bytes: Original   104884      Optimized  88594]{lang="EN-US"}
+  Encode status：
 
-[WAN-\>LAN bytes: Original   744588      Optimized  3355445]{lang="EN-US"}
+    Bytes in: 0
 
-[LZ section]{lang="EN-US"}[：]{style="font-family:宋体"}
+    Bytes out: 0
 
-[  Encode status]{lang="EN-US"}[：]{style="font-family:宋体"}
+    Bypass bytes: 400
 
-[    Bytes in: 0]{lang="EN-US"}
+    Space saved: 0%
 
-[    Bytes out: 0]{lang="EN-US"}
+    Average Latency: 0 usec
 
-[    Bypass bytes: 400]{lang="EN-US"}
+  Decode status：
 
-[    Space saved: 0%]{lang="EN-US"}
+    Bytes in: 329
 
-[    Average Latency: 0 usec]{lang="EN-US"}
+    Bytes out: 393
 
-[  Decode status]{lang="EN-US"}[：]{style="font-family:宋体"}
+    Bypass bytes: 63
 
-[    Bytes in: 329]{lang="EN-US"}
+    Space saved: 16%
 
-[    Bytes out: 393]{lang="EN-US"}
+    Average Latency: 2 usec
 
-[    Bypass bytes: 63]{lang="EN-US"}
+DRE section：
 
-[    Space saved: 16%]{lang="EN-US"}
+  Encode status：
 
-[    Average Latency: 2 usec]{lang="EN-US"}
+    Bytes in: 0
 
-[DRE section]{lang="EN-US"}[：]{style="font-family:宋体"}
+    Bytes out: 0
 
-[  Encode status]{lang="EN-US"}[：]{style="font-family:宋体"}
+    Bypass bytes: 314
 
-[    Bytes in: 0]{lang="EN-US"}
+    Space saved: 0%
 
-[    Bytes out: 0]{lang="EN-US"}
+    Average latency: 0 usec
 
-[    Bypass bytes: 314]{lang="EN-US"}
+  Decode status：
 
-[    Space saved: 0%]{lang="EN-US"}
+    Bytes in: 399
 
-[    Average latency: 0 usec]{lang="EN-US"}
+    Bytes out: 332
 
-[  Decode status]{lang="EN-US"}[：]{style="font-family:宋体"}
+    Bypass bytes: 0
 
-[    Bytes in: 399]{lang="EN-US"}
+    Space saved: 0%
 
-[    Bytes out: 332]{lang="EN-US"}
+    Chunk miss: 0
 
-[    Bypass bytes: 0]{lang="EN-US"}
+Collision: 0
 
-[    Space saved: 0%]{lang="EN-US"}
+    Average latency 23 usec
 
-[    Chunk miss]{lang="EN-US"}[: 0]{lang="EN-US"}
+Total 2 sessions found.
 
-[    ]{lang="EN-US"}[Collision: 0]{lang="EN-US"}
+表1-3 display waas session命令显示信息描述表
 
-[    Average latency 23 usec]{lang="EN-US"}
+字段
 
-[ ]{lang="EN-US"}
+描述
 
-[Total 2 sessions found.]{lang="EN-US"}
+Peer ID
 
-[[表1-3 ]{lang="EN-US"}[display waas session]{lang="EN-US"}]{#struct_0_21182_x6397_x1555369005}[命令显示信息描述表]{style="font-family:黑体"}
+对端设备ID，即设备的桥MAC地址，用来唯一标识一台对端设备
 
-[]{#table_struct_0_x627751391}[[字段]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1433091539}
-:::
+Start time
 
-[[描述]{style="font-family:黑体"}]{#struct_0_21182_x6397_1888071753}
+WAAS会话建立时间
 
-[[Peer ID]{lang="EN-US"}]{#struct_0_21182_x6397_x768349168}
+Source IP/Port
 
-[[对端设备]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_21182_x6397_x220794689}[，即设备的桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，用来唯一标识一台对端设备]{style="font-family:宋体"}
+客户端IP地址/端口号
 
-[[Start time]{lang="EN-US"}]{#struct_0_21182_x6397_x166908137}
+Destination IP/Port
 
-[[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_1183743184}[会话建立时间]{style="font-family:宋体"}
+服务器端IP地址/端口号
 
-[[Source IP/Port]{lang="EN-US"}]{#struct_0_21182_x6397_386733750}
+LAN interface
 
-[[客户端]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_21182_x6397_x489653466}[地址]{style="font-family:宋体"}[/]{lang="EN-US"}[端口号]{style="font-family:宋体"}
+LAN侧接口
 
-[[Destination IP/Port]{lang="EN-US"}]{#struct_0_21182_x6397_421646483}
+WAN interface
 
-[[服务器端]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_21182_x6397_x2087075055}[地址]{style="font-family:宋体"}[/]{lang="EN-US"}[端口号]{style="font-family:宋体"}
+WAN侧接口
 
-[[LAN interface]{lang="EN-US"}]{#struct_0_21182_x6397_x2018892690}
+Configured Policy
 
-[[LAN]{lang="EN-US"}]{#struct_0_21182_x6397_1083248040}[侧接口]{style="font-family:宋体"}
+本端设备配置的优化方式，取值包括：
 
-[[WAN interface]{lang="EN-US"}]{#struct_0_21182_x6397_x1599286560}
+·TFO：表示流传输优化方式，仅支持TCP流传输优化
 
-[[WAN]{lang="EN-US"}]{#struct_0_21182_x6397_768655092}[侧接口]{style="font-family:宋体"}
+·DRE：表示消除冗余数据优化方式
 
-[[Configured Policy]{lang="EN-US"}]{#struct_0_21182_x6397_x1094099610}
+·LZ：表示数据压缩优化方式
 
-[[本端设备配置的优化方式，取值包括：]{style="font-family:宋体"}]{#struct_0_21182_x6397_x634057428}
+Negotiated Policy
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x1179350191}[：表示流传输优化方式，仅支持]{style="font-family:宋体"}[TCP]{lang="EN-US"}[流传输优化]{style="font-family:宋体"}
+与对端设备协商后的优化动作，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x165490821}[：表示]{style="font-family:宋体"}[消除冗余数据优化方式]{lang="EN-US" style="font-family:宋体"}
+·TFO：表示流传输优化方式，仅支持TCP流传输优化
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LZ]{lang="EN-US"}]{#struct_0_21182_x6397_x1835720378}[：表示数据压缩优化方式]{style="font-family:宋体"}
+·DRE：表示消除冗余数据优化方式
 
-[[Negotiated Policy]{lang="EN-US"}]{#struct_0_21182_x6397_x1747031987}
+·LZ：表示数据压缩优化方式
 
-[[与对端设备协商后的优化动作，取值包括：]{style="font-family:宋体"}]{#struct_0_21182_x6397_990880870}
+协商后的优化方式取两端WAAS设备配置优化方式的交集
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x1602295982}[：表示流传输优化方式，仅支持]{style="font-family:宋体"}[TCP]{lang="EN-US"}[流传输优化]{style="font-family:宋体"}
+LAN-\>WAN bytes
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x1450073565}[：表示]{style="font-family:宋体"}[消除冗余数据优化方式]{lang="EN-US" style="font-family:宋体"}
+LAN侧接口到WAN侧接口的数据统计：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LZ]{lang="EN-US"}]{#struct_0_21182_x6397_x142219389}[：表示数据压缩优化方式]{style="font-family:宋体"}
+·Original：表示原始字节数
 
-[[协商后的优化方式取两端]{style="font-family:宋体"}[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_1549533164}[设备配置优化方式的交集]{style="font-family:宋体"}
+·Optimized：表示优化后的字节数
 
-[[LAN-\>WAN bytes]{lang="EN-US"}]{#struct_0_21182_x6397_x194785643}
+WAN-\>LAN bytes
 
-[[LAN]{lang="EN-US"}]{#struct_0_21182_x6397_x694778859}[侧接口到]{style="font-family:宋体"}[WAN]{lang="EN-US"}[侧接口的数据统计：]{style="font-family:宋体"}
+WAN侧接口到LAN侧接口的数据统计：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Original]{lang="EN-US"}]{#struct_0_21182_x6397_1544978802}[：]{lang="EN-US" style="font-family:宋体"}[表示]{style="font-family:宋体"}[原始字节数]{lang="EN-US" style="font-family:宋体"}
+·Original：表示原始字节数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Optimized]{lang="EN-US"}]{#struct_0_21182_x6397_2058545030}[：]{lang="EN-US" style="font-family:宋体"}[表示]{style="font-family:宋体"}[优化后的字节数]{lang="EN-US" style="font-family:宋体"}
+·Optimized：表示优化后的字节数
 
-[[WAN-\>LAN bytes]{lang="EN-US"}]{#struct_0_21182_x6397_827117993}
+LZ section
 
-[[WAN]{lang="EN-US"}]{#struct_0_21182_x6397_x16550777}[侧接口到]{style="font-family:宋体"}[LAN]{lang="EN-US"}[侧接口的数据统计：]{style="font-family:宋体"}
+LZ统计信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Original]{lang="EN-US"}]{#struct_0_21182_x6397_444879205}[：]{lang="EN-US" style="font-family:宋体"}[表示]{style="font-family:宋体"}[原始字节数]{lang="EN-US" style="font-family:宋体"}
+DRE section
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Optimized]{lang="EN-US"}]{#struct_0_21182_x6397_x1175239163}[：]{lang="EN-US" style="font-family:宋体"}[表示]{style="font-family:宋体"}[优化后的字节数]{lang="EN-US" style="font-family:宋体"}
+DRE统计信息
 
-[[LZ section]{lang="EN-US"}]{#struct_0_21182_x6397_913868875}
+Encode status
 
-[[LZ]{lang="EN-US"}]{#struct_0_21182_x6397_x1099704492}[统计信息]{style="font-family:宋体"}
+压缩统计信息
 
-[[DRE section]{lang="EN-US"}]{#struct_0_21182_x6397_411863082}
+Decode status
 
-[[DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x816451350}[统计信息]{style="font-family:宋体"}
+解压缩统计信息
 
-[[Encode status]{lang="EN-US"}]{#struct_0_21182_x6397_x1582634718}
+Bytes in
 
-[[压缩统计信息]{style="font-family:宋体"}]{#struct_0_21182_x6397_1409644440}
+输入字节数
 
-[[Decode status]{lang="EN-US"}]{#struct_0_21182_x6397_x1370884592}
+Bytes out
 
-[[解压缩统计信息]{style="font-family:宋体"}]{#struct_0_21182_x6397_x1217786684}
+输出字节数
 
-[[Bytes in]{lang="EN-US"}]{#struct_0_21182_x6397_92347094}
+Bypass bytes
 
-[[输入字节数]{style="font-family:宋体"}]{#struct_0_21182_x6397_x1003014526}
+未匹配上字典的字节数
 
-[[Bytes out]{lang="EN-US"}]{#struct_0_21182_x6397_1146248637}
+Space saved
 
-[[输出字节数]{style="font-family:宋体"}]{#struct_0_21182_x6397_977725677}
+压缩率，计算公式：
 
-[[Bypass bytes]{lang="EN-US"}]{#struct_0_21182_x6397_849677941}
+·压缩：(1 - (Bytes out / Bytes in)) \* 100
 
-[[未匹配上字典的字节数]{style="font-family:宋体"}]{#struct_0_21182_x6397_1513511103}
+·解压：(1 - (Bytes in/ Bytes out)) \* 100
 
-[[Space saved]{lang="EN-US"}]{#struct_0_21182_x6397_536186854}
+Average Latency
 
-[[压缩率，计算公式：]{style="font-family:宋体"}]{#struct_0_21182_x6397_x124347260}
+最后一次压缩或者解压的平均延迟时间，单位为微秒
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[压缩]{style="font-family:宋体"}]{#struct_0_21182_x6397_x1132296024}[：]{lang="EN-US" style="font-family:宋体"}[(1 - (Bytes out / Bytes in)) \* 100]{lang="EN-US"}
+Chunk miss
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[解压：]{style="font-family:宋体"}[(1 - (Bytes ]{lang="EN-US"}]{#struct_0_21182_x6397_x677891395}[in]{lang="EN-US"}[/ Bytes ]{lang="EN-US"}[out]{lang="EN-US"}[)) \* 100]{lang="EN-US"}
+无法根据字典索引找到字典表项累计次数
 
-[[Average Latency]{lang="EN-US"}]{#struct_0_21182_x6397_x101675408}
+Collision
 
-[[最后一次压缩或者解压的平均延迟时间，单位为微秒]{style="font-family:宋体"}]{#struct_0_21182_x6397_13449387}
+解码后数据校验失败累计次数
 
-[[Chunk miss]{lang="EN-US"}]{#struct_0_21182_x6397_2089343210}
+Total sessions
 
-[[无法根据字典索引找到字典表项累计次数]{style="font-family:宋体"}]{#struct_0_21182_x6397_1839003058}
-
-[[Collision]{lang="EN-US"}]{#struct_0_21182_x6397_1596587331}
-
-[[解码后数据校验失败累计次数]{style="font-family:宋体"}]{#struct_0_21182_x6397_457231525}
-
-[[Total sessions]{lang="EN-US"}]{#struct_0_21182_x6397_x342196814}
-
-[[当前建立的会话总数]{style="font-family:宋体"}]{#struct_0_21182_x6397_x1939450582}
-
-[ ]{lang="EN-US"}
-
-::: {#663869603 .myid}
-[]{#_Toc404787432}[]{#struct_0_21182_x6397_x829526721}
+当前建立的会话总数
 
 **WAAS \-- WAAS配置命令 \-- display waas statistics dre**
 
 ------------------------------------------------------------------------
 
-[**[display waas statistics dre]{lang="EN-US"}**]{#struct_0_21182_x6397_x2035083263}[命令用来显示]{style="font-family:
-宋体"}[DRE]{lang="EN-US"}[统计信息。]{style="font-family:宋体"}
+**[display waas statistics dre**]命令用来显示DRE统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_2036945637}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_21182_x6397_1657913415}
+集中式设备：
 
-[**[display waas statistics dre ]{lang="EN-US"}**[\[ **peer** *peer-id* \]]{lang="EN-US"}]{#struct_0_21182_x6397_989382167}
+**[display waas statistics dre ** **peer** *peer-id* ]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_21182_x6397_x776000128}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display waas statistics dre ]{lang="EN-US"}**[\[ **peer** *peer-id* \] \[ **slot** *slot-number* \]]{lang="EN-US"}]{#struct_0_21182_x6397_x1878916708}
+**[display waas statistics dre ** **peer** *peer-id* ]  **slot** *slot-number*
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_21182_x6397_x1007038790}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display waas statistics dre ]{lang="EN-US"}**[\[ **peer** *peer-id* \] \[ **chassis** *chassis-number* **slot** *slot-number* \]]{lang="EN-US"}]{#struct_0_21182_x6397_x614285958}
+**[display waas statistics dre ** **peer** *peer-id* ]  **chassis** *chassis-number* **slot** *slot-number*
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1247752136}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_21182_x6397_1116953154}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x216226254}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x1326138580}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_21182_x6397_x1301945116}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x1246909376}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_21182_x6397_1106309606}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x14598784}
+【参数】
 
-[**[peer ]{lang="EN-US"}***[peer-id]{lang="EN-US"}*]{#struct_0_21182_x6397_1985333928}[：显示指定对端]{style="font-family:宋体"}[设备的]{style="font-family:宋体"}[DRE]{lang="EN-US"}[统计信息，]{style="font-family:宋体"}*[peer-id]{lang="EN-US"}*[表示设备的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，形式为]{style="font-family:宋体"}[H-H-H]{lang="EN-US"}[。如果未指定本参数，则显示设备上所有]{style="font-family:宋体"}[DRE]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+**[peer ***peer-id*]：显示指定对端设备的DRE统计信息，*peer-id*表示设备的MAC地址，形式为H-H-H。如果未指定本参数，则显示设备上所有DRE的统计信息。
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_21182_x6397_1318978300}[：显示指定单板上的]{style="font-family:宋体"}[DRE]{lang="EN-US"}[统计信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果不指定本参数，将显示所有单板上的]{style="font-family:宋体"}[DRE]{lang="EN-US"}[统计信息。（分布设备－独立运行模式）]{style="font-family:宋体"}
+**[slot ***slot-number*]：显示指定单板上的DRE统计信息。*slot-number*表示单板所在的槽位号。如果不指定本参数，将显示所有单板上的DRE统计信息。（分布设备－独立运行模式）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_21182_x6397_x177035050}[：显示指定成员设备的]{style="font-family:宋体"}[DRE]{lang="EN-US"}[统计信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。如果不指定本参数，将显示所有成员设备上的]{style="font-family:宋体"}[DRE]{lang="EN-US"}[统计信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：显示指定成员设备的DRE统计信息。*slot-number*表示设备在IRF中的成员编号。如果不指定本参数，将显示所有成员设备上的DRE统计信息。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_21182_x6397_883777383}[：显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[的]{style="font-family:宋体"}[DRE]{lang="EN-US"}[统计信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。如果不指定本参数，将显示所有成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[上的]{style="font-family:宋体"}[DRE]{lang="EN-US"}[统计信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：显示指定成员设备/PEX的DRE统计信息。*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果不指定本参数，将显示所有成员设备/PEX上的DRE统计信息。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_21182_x6397_1952883227}[：显示指定成员设备上指定单板的]{style="font-family:宋体"}[DRE]{lang="EN-US"}[统计信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果不指定本参数，将显示所有单板上的]{style="font-family:宋体"}[DRE]{lang="EN-US"}[统计信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定成员设备上指定单板的DRE统计信息，*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果不指定本参数，将显示所有单板上的DRE统计信息。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_21182_x6397_1550435898}[：显示指定单板的]{style="font-family:宋体"}[DRE]{lang="EN-US"}[统计信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟槽位号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。如果不指定本参数，将显示所有单板上的]{style="font-family:宋体"}[DRE]{lang="EN-US"}[统计信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定单板的DRE统计信息，*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟槽位号，*slot-number*表示单板或者PEX所在的槽位号。如果不指定本参数，将显示所有单板上的DRE统计信息。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1703206286}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_648678745}[显示设备上所有]{style="font-family:宋体"}[DRE]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+\# 显示设备上所有DRE的统计信息。
 
-[[\<Sysname\> display waas statistics dre]{lang="EN-US"}]{#struct_0_21182_x6397_386799286}
+\<Sysname\> display waas statistics dre
 
-[Peer-ID: 0016-9d38-ca1d]{lang="EN-US"}
+Peer-ID: 0016-9d38-ca1d
 
-[Peer version: 1.0]{lang="EN-US"}
+Peer version: 1.0
 
-[Cache in storage: 614017 bytes]{lang="EN-US"}
+Cache in storage: 614017 bytes
 
-[Index number: 11513600]{lang="EN-US"}
+Index number: 11513600
 
-[Age: 3 weeks, 5 days, 21 hours, 22 minutes, 40 seconds]{lang="EN-US"}
+Age: 3 weeks, 5 days, 21 hours, 22 minutes, 40 seconds
 
-[Total connections: 24]{lang="EN-US"}
+Total connections: 24
 
-[Active connections: 1]{lang="EN-US"}
+Active connections: 1
 
-[Encode Statistics]{lang="EN-US"}[：]{style="font-family:宋体"}
+Encode Statistics：
 
-[  Dre msgs: 64]{lang="EN-US"}
+  Dre msgs: 64
 
-[  Bytes in: 67344 bytes]{lang="EN-US"}
+  Bytes in: 67344 bytes
 
-[  Bytes out: 8840 bytes]{lang="EN-US"}
+  Bytes out: 8840 bytes
 
-[  Bypass bytes: 35714 bytes]{lang="EN-US"}
+  Bypass bytes: 35714 bytes
 
-[  Bytes Matched: 59355 bytes]{lang="EN-US"}
+  Bytes Matched: 59355 bytes
 
-[  Space saved: 13%]{lang="EN-US"}
+  Space saved: 13%
 
-[  Average latency: 2191 usec]{lang="EN-US"}
+  Average latency: 2191 usec
 
-[Decode Statistics]{lang="EN-US"}[：]{style="font-family:宋体"}
+Decode Statistics：
 
-[  Dre msgs: 318]{lang="EN-US"}
+  Dre msgs: 318
 
-[  Bytes in: 8494760 bytes]{lang="EN-US"}
+  Bytes in: 8494760 bytes
 
-[  Bytes out: 13780812 bytes]{lang="EN-US"}
+  Bytes out: 13780812 bytes
 
-[  Bypass bytes: 35556 bytes]{lang="EN-US"}
+  Bypass bytes: 35556 bytes
 
-[  Space saved: 38%]{lang="EN-US"}
+  Space saved: 38%
 
-[  Average latency: 1471 usec]{lang="EN-US"}
+  Average latency: 1471 usec
 
-[ ]{lang="EN-US"}
+Peer-ID: 0d38-9d38-ca1d
 
-[Peer-ID: 0d38-9d38-ca1d]{lang="EN-US"}
+Peer version: 1.0
 
-[Peer version: 1.0]{lang="EN-US"}
+Cache in storage: 614017 bytes
 
-[Cache in storage: 614017 bytes ]{lang="EN-US"}
+Index number: 11513600
 
-[Index number: 11513600]{lang="EN-US"}
+Age: 3 weeks, 5 days, 21 hours, 22 minutes, 40 seconds
 
-[Age: 3 weeks, 5 days, 21 hours, 22 minutes, 40 seconds]{lang="EN-US"}
+Total connections: 24
 
-[Total connections: 24]{lang="EN-US"}
+Active connections: 1
 
-[Active connections: 1]{lang="EN-US"}
+Encode Statistics：
 
-[Encode Statistics]{lang="EN-US"}[：]{style="font-family:宋体"}
+  Dre msgs: 64
 
-[  Dre msgs: 64]{lang="EN-US"}
+  Bytes in: 67344 bytes
 
-[  Bytes in: 67344 bytes]{lang="EN-US"}
+  Bytes out: 8840 bytes
 
-[  Bytes out: 8840 bytes]{lang="EN-US"}
+  Bypass bytes: 35714 bytes
 
-[  Bypass bytes: 35714 bytes]{lang="EN-US"}
+  Bytes Matched: 59355 bytes
 
-[  Bytes Matched: 59355 bytes]{lang="EN-US"}
+  Space saved: 13%
 
-[  Space saved: 13%]{lang="EN-US"}
+  Average latency: 2191 usec
 
-[  Average latency: 2191 usec]{lang="EN-US"}
+Decode Statistics：
 
-[Decode Statistics]{lang="EN-US"}[：]{style="font-family:宋体"}
+  Dre msgs: 318
 
-[  Dre msgs: 318]{lang="EN-US"}
+  Bytes in: 8494760 bytes
 
-[  Bytes in: 8494760 bytes]{lang="EN-US"}
+  Bytes out: 13780812 bytes
 
-[  Bytes out: 13780812 bytes]{lang="EN-US"}
+  Bypass bytes: 35556 bytes
 
-[  Bypass bytes: 35556 bytes]{lang="EN-US"}
+  Space saved: 38%
 
-[  Space saved: 38%]{lang="EN-US"}
+  Average latency: 1471 usec
 
-[  Average latency: 1471 usec]{lang="EN-US"}
+\# 显示指定对端设备的DRE统计信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_x889834657}[显示指定对端设备的]{style="font-family:宋体"}[DRE]{lang="EN-US"}[统计信息。]{style="font-family:宋体"}
+\<Sysname\> display waas statistics dre peer 0016-9d38-ca1d
 
-[[\<Sysname\> display waas statistics dre peer 0016-9d38-ca1d]{lang="EN-US"}]{#struct_0_21182_x6397_x1179284655}
+Peer-ID: 0016-9d38-ca1d
 
-[Peer-ID: 0016-9d38-ca1d]{lang="EN-US"}
+Peer version: 1.0
 
-[Peer version: 1.0]{lang="EN-US"}
+Cache in storage: 614017 bytes
 
-[Cache in storage: 614017 bytes ]{lang="EN-US"}
+Index number: 11513600
 
-[Index number: 11513600]{lang="EN-US"}
+Age: 3 weeks, 5 days, 21 hours, 22 minutes, 40 seconds
 
-[Age: 3 weeks, 5 days, 21 hours, 22 minutes, 40 seconds]{lang="EN-US"}
+Total connections: 24
 
-[Total connections: 24]{lang="EN-US"}
+Active connections: 1
 
-[Active connections: 1]{lang="EN-US"}
+Encode Statistics：
 
-[Encode Statistics]{lang="EN-US"}[：]{style="font-family:宋体"}
+  Dre msgs: 64
 
-[  Dre msgs: 64]{lang="EN-US"}
+  Bytes in: 67344 bytes
 
-[  Bytes in: 67344 bytes]{lang="EN-US"}
+  Bytes out: 8840 bytes
 
-[  Bytes out: 8840 bytes]{lang="EN-US"}
+  Bypass bytes: 35714 bytes
 
-[  Bypass bytes: 35714 bytes]{lang="EN-US"}
+  Bytes Matched: 59355 bytes
 
-[  Bytes Matched: 59355 bytes]{lang="EN-US"}
+  Space saved: 13%
 
-[  Space saved: 13%]{lang="EN-US"}
+  Average latency: 2191 usec
 
-[  Average latency: 2191 usec]{lang="EN-US"}
+Decode Statistics：
 
-[Decode Statistics]{lang="EN-US"}[：]{style="font-family:宋体"}
+  Dre msgs: 318
 
-[  Dre msgs: 318]{lang="EN-US"}
+  Bytes in: 8494760 bytes
 
-[  Bytes in: 8494760 bytes]{lang="EN-US"}
+  Bytes out: 13780812 bytes
 
-[  Bytes out: 13780812 bytes]{lang="EN-US"}
+  Bypass bytes: 35556 bytes
 
-[  Bypass bytes: 35556 bytes]{lang="EN-US"}
+  Space saved: 38%
 
-[  Space saved: 38%]{lang="EN-US"}
+  Average latency: 1471 usec
 
-[  Average latency: 1471 usec]{lang="EN-US"}
+表1-4 display waas statistics dre命令显示信息描述表
 
-[[表1-4 ]{lang="EN-US"}[display waas statistics dre]{lang="EN-US"}]{#struct_0_21182_x6397_1922700537}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x607051545}[[字段]{style="font-family:黑体"}]{#struct_0_21182_x6397_1299854210}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_21182_x6397_x537253360}
+Peer-ID
 
-[[Peer-ID]{lang="EN-US"}]{#struct_0_21182_x6397_1578456709}
+对端设备ID，即设备的桥MAC地址，用来唯一标识一台对端设备
 
-[[对端设备]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_21182_x6397_1204482084}[，即设备的桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，用来唯一标识一台对端设备]{style="font-family:宋体"}
+Peer version
 
-[[Peer version]{lang="EN-US"}]{#struct_0_21182_x6397_x1332463048}
+对端设备的WAAS版本号
 
-[[对端设备的]{style="font-family:宋体"}[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_353847844}[版本号]{style="font-family:宋体"}
+Cache in storage
 
-[[Cache in storage]{lang="EN-US"}]{#struct_0_21182_x6397_981578232}
+元数据占用的空间大小，单位为字节
 
-[[元数据占用的空间大小，单位为字节]{style="font-family:宋体"}]{#struct_0_21182_x6397_1549598700}
+Index number
 
-[[Index number]{lang="EN-US"}]{#struct_0_21182_x6397_x1806243830}
+元数据块索引的个数
 
-[[元数据块索引的个数]{style="font-family:宋体"}]{#struct_0_21182_x6397_432581137}
+Age
 
-[[Age]{lang="EN-US"}]{#struct_0_21182_x6397_906531339}
+peer节点存在时间
 
-[[peer]{lang="EN-US"}]{#struct_0_21182_x6397_1861537745}[节点存在时间]{style="font-family:宋体"}
+Total connections
 
-[[Total connections]{lang="EN-US"}]{#struct_0_21182_x6397_x909278366}
+DER连接总数
 
-[[DER]{lang="EN-US"}]{#struct_0_21182_x6397_324965778}[连接总数]{style="font-family:宋体"}
+Active connections
 
-[[Active connections]{lang="EN-US"}]{#struct_0_21182_x6397_1737421959}
+DRE活动连接数
 
-[[DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x2116378632}[活动连接数]{style="font-family:宋体"}
+Encode Statistics
 
-[[Encode Statistics]{lang="EN-US"}]{#struct_0_21182_x6397_x1805914889}
+压缩统计信息
 
-[[压缩统计信息]{style="font-family:宋体"}]{#struct_0_21182_x6397_x16485241}
+Decode Statistics
 
-[[Decode Statistics]{lang="EN-US"}]{#struct_0_21182_x6397_846859005}
+解压缩统计信息
 
-[[解压缩统计信息]{style="font-family:宋体"}]{#struct_0_21182_x6397_x294753013}
+Dre msgs
 
-[[Dre msgs]{lang="EN-US"}]{#struct_0_21182_x6397_x196884360}
+数据块个数
 
-[[数据块个数]{style="font-family:宋体"}]{#struct_0_21182_x6397_345635091}
+Bytes in
 
-[[Bytes in]{lang="EN-US"}]{#struct_0_21182_x6397_1528699951}
+输入字节数
 
-[[输入字节数]{style="font-family:宋体"}]{#struct_0_21182_x6397_x1580053235}
+Bytes out
 
-[[Bytes out]{lang="EN-US"}]{#struct_0_21182_x6397_178748298}
+输出字节数
 
-[[输出字节数]{style="font-family:宋体"}]{#struct_0_21182_x6397_1000181183}
+Bypass bytes
 
-[[Bypass bytes]{lang="EN-US"}]{#struct_0_21182_x6397_x1582569182}
+未匹配上字典的字节数
 
-[[未匹配上字典的字节数]{style="font-family:宋体"}]{#struct_0_21182_x6397_x1960936117}
+Bytes Matched
 
-[[Bytes Matched]{lang="EN-US"}]{#struct_0_21182_x6397_x148183488}
+匹配上字典的字节数
 
-[[匹配上字典的字节数]{style="font-family:宋体"}]{#struct_0_21182_x6397_866163752}
+Space saved
 
-[[Space saved]{lang="EN-US"}]{#struct_0_21182_x6397_2080677229}
+压缩率，计算公式：
 
-[[压缩率，计算公式：]{style="font-family:宋体"}]{#struct_0_21182_x6397_1208731906}
+·压缩：(1 - (Bytes out / Bytes in)) \* 100
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[压缩]{style="font-family:宋体"}]{#struct_0_21182_x6397_x1277650908}[：]{lang="EN-US" style="font-family:宋体"}[(1 - (Bytes out / Bytes in)) \* 100]{lang="EN-US"}
+·解压：(1 - (Bytes in/ Bytes out)) \* 100
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[解压：]{style="font-family:宋体"}[(1 - (Bytes ]{lang="EN-US"}]{#struct_0_21182_x6397_1794233783}[in]{lang="EN-US"}[/ Bytes ]{lang="EN-US"}[out]{lang="EN-US"}[)) \* 100]{lang="EN-US"}
+Average latency
 
-[[Average latency]{lang="EN-US"}]{#struct_0_21182_x6397_1146314173}
+最后一次压缩或者解压的平均延迟时间，单位为微秒
 
-[[最后一次压缩或者解压的平均延迟时间，单位为微秒]{style="font-family:宋体"}]{#struct_0_21182_x6397_x509775476}
+【相关命令】
 
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1146304652}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset waas statistics dre]{lang="EN-US"}**]{#struct_0_21182_x6397_x1695256182}
-
-::: {#-1388979584 .myid}
-[]{#_Toc404787433}[]{#struct_0_21182_x6397_x1303154924}[]{#_Toc382827017}
+·**reset waas statistics dre**
 
 **WAAS \-- WAAS配置命令 \-- display waas status**
 
 ------------------------------------------------------------------------
 
-[**[display waas status]{lang="EN-US"}**]{#struct_0_21182_x6397_1088915153}[命令用来显示]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[全局状态。]{style="font-family:宋体"}
+**[display waas status**]命令用来显示WAAS全局状态。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x2083406505}
+【命令】
 
-[**[display waas status]{lang="EN-US"}**]{#struct_0_21182_x6397_x1276487888}
+**[display waas status**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1695170306}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_21182_x6397_x1863418104}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1498914885}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x308008454}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_21182_x6397_95262033}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_1875804894}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_21182_x6397_x1132230488}
+mdc-operator
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x612279761}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_192741937}[显示]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[全局状态。]{style="font-family:宋体"}
+\# 显示WAAS全局状态。
 
-[[\<Sysname\> display waas status]{lang="EN-US"}]{#struct_0_21182_x6397_1410354380}
+\<Sysname\> display waas status
 
-[WAAS Version: 1.0]{lang="EN-US"}
+WAAS Version: 1.0
 
-[Local ID: 02e0-011a-0000]{lang="EN-US"}
+Local ID: 02e0-011a-0000
 
-[DRE Status: Disabled]{lang="EN-US"}
+DRE Status: Disabled
 
-[LZ Status: Disabled]{lang="EN-US"}
+LZ Status: Disabled
 
-[BlackList Status: Disabled]{lang="EN-US"}
+BlackList Status: Disabled
 
-[Total Active connections: 7889]{lang="EN-US"}
+Total Active connections: 7889
 
-[Total data storage size: 1468006400 bytes]{lang="EN-US"}
+Total data storage size: 1468006400 bytes
 
-[Total index number: 11513600]{lang="EN-US"}
+Total index number: 11513600
 
-[Blacklist Hold-time]{lang="EN-US"}[：]{style="font-family:宋体"}[5 minutes]{lang="EN-US"}
+Blacklist Hold-time：5 minutes
 
-[Interfaces             Applied policy]{lang="EN-US"}
+Interfaces             Applied policy
 
-[Serial1/0/1            waas_global]{lang="EN-US"}
+Serial1/0/1            waas_global
 
-[Serial1/0/2            waas_default]{lang="EN-US"}
+Serial1/0/2            waas_default
 
-[Serial2/0/5            waas_global[]{#_GoBack}]{lang="EN-US"}
+Serial2/0/5            waas_global
 
-[  ]{lang="EN-US"}
+Total policy interfaces: 3
 
-[Total policy interfaces: 3]{lang="EN-US"}
+表1-5 display waas status命令显示信息描述表
 
-[[表1-5 ]{lang="EN-US"}[display waas status]{lang="EN-US"}]{#struct_0_21182_x6397_466605996}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x608219949}[[字段]{style="font-family:黑体"}]{#struct_0_21182_x6397_x2122641783}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_21182_x6397_877679062}
+WAAS Version
 
-[[WAAS Version]{lang="EN-US"}]{#struct_0_21182_x6397_1235897994}
+WAAS版本号
 
-[[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_1596652867}[版本号]{style="font-family:宋体"}
+Local ID
 
-[[Local ID]{lang="EN-US"}]{#struct_0_21182_x6397_931295022}
+本端ID，即WAAS设备的桥MAC地址，用来唯一标识一台WAAS设备。
 
-[[本端]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_21182_x6397_1059464212}[，即]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[设备的桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，用来唯一标识一台]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[设备。]{style="font-family:宋体"}
+DRE Status
 
-[[DRE Status]{lang="EN-US"}]{#struct_0_21182_x6397_423186976}
+是否开启WAAS数据冗余消除功能：
 
-[[是否开启]{style="font-family:宋体"}[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_311308007}[数据冗余消除功能：]{style="font-family:宋体"}
+·Enabled：表示已开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_21182_x6397_1580072092}[：]{lang="EN-US" style="font-family:宋体"}[表示已开启]{style="font-family:宋体"}
+·Disabled：表示未开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_21182_x6397_357207604}[：]{lang="EN-US" style="font-family:宋体"}[表示]{style="font-family:宋体"}[未]{lang="EN-US" style="font-family:宋体"}[开启]{style="font-family:宋体"}
+LZ Status
 
-[[LZ Status]{lang="EN-US"}]{#struct_0_21182_x6397_x1114839006}
+是否开启WAAS数据压缩功能功能：
 
-[[是否开启]{style="font-family:宋体"}[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_1131388723}[数据压缩功能功能：]{style="font-family:宋体"}
+·Enabled：表示已开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_21182_x6397_x1331709416}[：]{lang="EN-US" style="font-family:宋体"}[表示已开启]{style="font-family:宋体"}
+·Disabled：表示未开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_21182_x6397_x289771265}[：]{lang="EN-US" style="font-family:宋体"}[表示未开启]{style="font-family:宋体"}
+BlackList Status
 
-[[BlackList Status]{lang="EN-US"}]{#struct_0_21182_x6397_x775934592}
+是否开启自动发现黑名单功能：
 
-[[是否开启自动发现黑名单功能：]{style="font-family:宋体"}]{#struct_0_21182_x6397_1334170966}
+·Enabled：表示已开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_21182_x6397_1466897662}[：]{lang="EN-US" style="font-family:宋体"}[表示已开启]{style="font-family:宋体"}
+·Disabled：表示未开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_21182_x6397_x2119400697}[：]{lang="EN-US" style="font-family:宋体"}[表示未开启]{style="font-family:宋体"}
+Total Active connections
 
-[[Total Active connections]{lang="EN-US"}]{#struct_0_21182_x6397_x898146170}
+当前的WAAS活动连接数
 
-[[当前的]{style="font-family:宋体"}[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_114560723}[活动连接数]{style="font-family:宋体"}
+Total data storage size
 
-[[Total data storage size]{lang="EN-US"}]{#struct_0_21182_x6397_x380633974}
+所有元数据所占空间的大小，单位为字节。元数据即为字典索引对应的原始数据
 
-[[所有元数据所占空间的大小，单位为字节。元数据即为字典索引对应的原始数据]{style="font-family:宋体"}]{#struct_0_21182_x6397_x274280302}
+Total index number
 
-[[Total index number]{lang="EN-US"}]{#struct_0_21182_x6397_1952948763}
+元数据对应的所有字典索引的个数
 
-[[元数据对应的所有字典索引的个数]{style="font-family:宋体"}]{#struct_0_21182_x6397_x1241724732}
+Blacklist Hold-time
 
-[[Blacklist Hold-time]{lang="EN-US"}]{#struct_0_21182_x6397_x280123923}
+黑名单表项的老化时间，单位为分钟
 
-[[黑名单表项的老化时间，单位为分钟]{style="font-family:宋体"}]{#struct_0_21182_x6397_x49426486}
+Interfaces
 
-[[Interfaces]{lang="EN-US"}]{#struct_0_21182_x6397_65271785}
+已应用WAAS策略的接口列表
 
-[[已应用]{style="font-family:宋体"}[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_1890306069}[策略的接口列表]{style="font-family:宋体"}
+Applied policy
 
-[[Applied policy]{lang="EN-US"}]{#struct_0_21182_x6397_676479492}
+接口应用策略列表
 
-[[接口应用策略列表]{style="font-family:宋体"}]{#struct_0_21182_x6397_1652033453}
+Total policy interfaces
 
-[[Total policy interfaces]{lang="EN-US"}]{#struct_0_21182_x6397_386864822}
-
-[[应用]{style="font-family:宋体"}[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_x239622474}[策略的接口总数]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#1450937977 .myid}
-[]{#_Toc404787434}[]{#struct_0_21182_x6397_x1373385716}
+应用WAAS策略的接口总数
 
 **WAAS \-- WAAS配置命令 \-- display waas tfo auto-discovery blacklist**
 
 ------------------------------------------------------------------------
 
-[**[display waas tfo auto-discovery blacklist]{lang="EN-US"}**]{#struct_0_21182_x6397_1256316863}[命令用来显示黑名单信息。]{style="font-family:宋体"}
+**[display waas tfo auto-discovery blacklist**]命令用来显示黑名单信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_129591696}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_21182_x6397_1783382206}
+集中式设备：
 
-[**[display waas tfo auto-discovery blacklist ]{lang="EN-US"}**[{ **ipv4** \| **ipv6** }]{lang="EN-US"}]{#struct_0_21182_x6397_894602846}
+**[display waas tfo auto-discovery blacklist **[{ **ipv4** \| **ipv6** }]]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_21182_x6397_1107296825}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display waas tfo auto-discovery blacklist ]{lang="EN-US"}**[{ **ipv4** \| **ipv6** } \[ **slot** *slot-number* \]]{lang="EN-US"}]{#struct_0_21182_x6397_x794161824}
+**[display waas tfo auto-discovery blacklist **[{ **ipv4** \| **ipv6** } [ **slot** *slot-number* ]]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_21182_x6397_x1067470584}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display waas tfo auto-discovery blacklist]{lang="EN-US"}**[ { **ipv4** \| **ipv6** } \[ **chassis** *chassis-number* **slot** *slot-number* \]]{lang="EN-US"}]{#struct_0_21182_x6397_x757783445}
+**[display waas tfo auto-discovery blacklist**[ { **ipv4** \| **ipv6** } [ **chassis** *chassis-number* **slot** *slot-number* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_798921950}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_21182_x6397_x544789139}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1179219119}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x174828441}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_21182_x6397_650141223}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x1042473913}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_21182_x6397_x2033960342}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1428896523}
+【参数】
 
-[**[ipv4]{lang="EN-US"}**]{#struct_0_21182_x6397_383132438}[：显示]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[黑名单信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[ipv4**]：显示IPv4黑名单信息。
 
-[**[ipv6]{lang="EN-US"}**]{#struct_0_21182_x6397_1767520724}[：显示]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[黑名单信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[ipv6**]：显示IPv6黑名单信息。
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_21182_x6397_362173226}[：显示指定单板的黑名单信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果不指定本参数，将显示所有单板上的黑名单信息。（分布设备－独立运行模式）]{style="font-family:宋体"}
+**[slot ***slot-number*]：显示指定单板的黑名单信息。*slot-number*表示单板所在的槽位号。如果不指定本参数，将显示所有单板上的黑名单信息。（分布设备－独立运行模式）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_21182_x6397_1076499644}[：显示指定成员设备的黑名单信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。如果不指定本参数，将显示所有成员设备上的黑名单信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：显示指定成员设备的黑名单信息。*slot-number*表示设备在IRF中的成员编号。如果不指定本参数，将显示所有成员设备上的黑名单信息。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_21182_x6397_x1242817780}[：显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[的黑名单信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。如果不指定本参数，将显示所有成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[上的黑名单信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：显示指定成员设备/PEX的黑名单信息。*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果不指定本参数，将显示所有成员设备/PEX上的黑名单信息。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_21182_x6397_1676073819}[：显示指定成员设备上指定单板的黑名单信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果不指定本参数，将显示所有单板上的黑名单信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定成员设备上指定单板的黑名单信息，*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果不指定本参数，将显示所有单板上的黑名单信息。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_21182_x6397_1496689058}[：显示指定单板的黑名单信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟槽位号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[所在的槽位号。如果不指定本参数，将显示所有单板上的黑名单信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定单板的黑名单信息，*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟槽位号，*slot-number*表示单板/PEX所在的槽位号。如果不指定本参数，将显示所有单板上的黑名单信息。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_721370867}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_x1891987539}[显示所有]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[黑名单信息。]{style="font-family:宋体"}
+\# 显示所有IPv4黑名单信息。
 
-[[\<Sysname\> display waas tfo auto-discovery blacklist ipv4]{lang="EN-US"}]{#struct_0_21182_x6397_1549664236}
+\<Sysname\> display waas tfo auto-discovery blacklist ipv4
 
-[Server IP address/Port           Insert Time]{lang="EN-US"}
+Server IP address/Port           Insert Time
 
-[1.1.1.1/8080                     Fri Mar 21 10:43:05 2014]{lang="EN-US"}
+1.1.1.1/8080                     Fri Mar 21 10:43:05 2014
 
-[1.1.1.2/8080                     Fri Mar 21 10:43:06 2014]{lang="EN-US"}
+1.1.1.2/8080                     Fri Mar 21 10:43:06 2014
 
-[2.2.2.2/443                      Fri Mar 21 10:20:37 2014]{lang="EN-US"}
+2.2.2.2/443                      Fri Mar 21 10:20:37 2014
 
-[ ]{lang="EN-US"}
+Total 3 entries found.
 
-[Total 3 entries found.]{lang="EN-US"}
+表1-6 display waas auto-discovery blacklist命令显示信息描述表
 
-[[表1-6 ]{lang="EN-US"}[display waas auto-discovery blacklist]{lang="EN-US"}]{#struct_0_21182_x6397_x1350340314}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x591303477}[[字段]{style="font-family:黑体"}]{#struct_0_21182_x6397_535181124}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1726505466}
+Server IP address/Port
 
-[[Server IP address/Port]{lang="EN-US"}]{#struct_0_21182_x6397_1285220960}
+服务器IP地址/端口号
 
-[[服务器]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_21182_x6397_x678070346}[地址]{style="font-family:宋体"}[/]{lang="EN-US"}[端口号]{style="font-family:宋体"}
+Insert Time
 
-[[Insert Time]{lang="EN-US"}]{#struct_0_21182_x6397_x1443102314}
+黑名单表项的生成时间
 
-[[黑名单表项的生成时间]{style="font-family:宋体"}]{#struct_0_21182_x6397_1246006797}
+Total 3 entries found
 
-[[Total 3 entries found]{lang="EN-US"}]{#struct_0_21182_x6397_x451901397}
+黑名单表项的总数
 
-[[黑名单表项的总数]{style="font-family:宋体"}]{#struct_0_21182_x6397_301694556}
+【相关命令】
 
-[ ]{lang="EN-US"}
+·**reset waas tfo auto-discovery blacklist**
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x44869293}
+·**waas tfo auto-discovery blacklist enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset waas tfo auto-discovery blacklist]{lang="EN-US"}**]{#struct_0_21182_x6397_x16419705}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[waas tfo auto-discovery blacklist enable]{lang="EN-US"}**]{#struct_0_21182_x6397_833048827}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[waas tfo auto-discovery blacklist hold-time]{lang="EN-US"}**]{#struct_0_21182_x6397_77124371}
-
-::: {#-794153034 .myid}
-[]{#_Toc404787435}[]{#struct_0_21182_x6397_1376872761}
+·**waas tfo auto-discovery blacklist hold-time**
 
 **WAAS \-- WAAS配置命令 \-- match tcp**
 
 ------------------------------------------------------------------------
 
-[**[match tcp]{lang="EN-US"}**]{#struct_0_21182_x6397_713760059}[命令用来创建匹配流分类的规则。]{style="font-family:宋体"}
+**[match tcp**]命令用来创建匹配流分类的规则。
 
-[**[undo match]{lang="EN-US"}**]{#struct_0_21182_x6397_x1252722074}[命令用来删除创建的匹配流分类规则。]{style="font-family:宋体"}
+**[undo match**]命令用来删除创建的匹配流分类规则。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x313457756}
+【命令】
 
-[**[match]{lang="EN-US"}**[ \[ *match-id* \] **tcp** { **any** \| **destination** \| **source** } \[ **ip-address** *ip-address* \[ *mask-length* \| *mask* \] \| **ipv6-address** *ipv6-address* \[ *prefix-length* \] \] \[ **port** *port-list* \]]{lang="EN-US"}]{#struct_0_21182_x6397_x2062203077}
+**[match** [ *match-id*  **tcp** { **any** \| **destination** \| **source** } [ **ip-address** *ip-address* [ *mask-length* \| *mask* ] \| **ipv6-address** *ipv6-address*  *prefix-length*  ]  **port** *port-list* ]]
 
-[**[undo match]{lang="EN-US"}**[ *match-id*]{lang="EN-US"}]{#struct_0_21182_x6397_1998572421}
+**[undo match** *match-id*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1222873390}
+【缺省情况】
 
-[[未创建匹配流分类的规则。]{style="font-family:宋体"}]{#struct_0_21182_x6397_1711655785}
+未创建匹配流分类的规则。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_2061984443}
+【视图】
 
-[[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_935008362}[类视图]{style="font-family:宋体"}
+WAAS类视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x922819382}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_1238965079}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_971492592}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1582503646}
+【参数】
 
-[*[match-id]{lang="EN-US"}*]{#struct_0_21182_x6397_x1469797080}[：指定匹配流分类规则的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，是]{style="font-family:宋体"}[match]{lang="EN-US"}[规则的唯一标识。如果指定编号的匹配规则不存在，则创建一条新的匹配规则；如果指定编号的匹配规则已存在，则对其进行修改。如果未指定本参数，系统将自动分配一个可用的最小编号。]{style="font-family:宋体"}
+*[match-id*]：指定匹配流分类规则的编号，取值范围为1～65535，是match规则的唯一标识。如果指定编号的匹配规则不存在，则创建一条新的匹配规则；如果指定编号的匹配规则已存在，则对其进行修改。如果未指定本参数，系统将自动分配一个可用的最小编号。
 
-[**[tcp]{lang="EN-US"}**]{#struct_0_21182_x6397_841813042}[：匹配]{style="font-family:宋体"}[TCP]{lang="EN-US"}[报文流量。]{style="font-family:宋体"}
+**[tcp**]：匹配TCP报文流量。
 
-[**[any]{lang="EN-US"}**]{#struct_0_21182_x6397_1104486095}[：指定匹配规则的源或目的地址、端口号。]{style="font-family:宋体"}
+**[any**]：指定匹配规则的源或目的地址、端口号。
 
-[**[source]{lang="EN-US"}**]{#struct_0_21182_x6397_926157987}[：指定匹配规则的源地址、源端口号。]{style="font-family:宋体"}
+**[source**]：指定匹配规则的源地址、源端口号。
 
-[**[destination]{lang="EN-US"}**]{#struct_0_21182_x6397_86851855}[：指定匹配规则的目的地址、目的端口号。]{style="font-family:宋体"}
+**[destination**]：指定匹配规则的目的地址、目的端口号。
 
-[**[ip-address]{lang="EN-US"}**[ *ip-address*]{lang="EN-US"}]{#struct_0_21182_x6397_2097917828}[：指定匹配规则的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[ip-address** *ip-address*]：指定匹配规则的IPv4地址。
 
-[*[mask-length]{lang="EN-US"}*]{#struct_0_21182_x6397_565821308}[：指定]{style="font-family:宋体"}[子网掩码长度，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[32]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[mask-length*]：指定子网掩码长度，取值范围为0～32，缺省值为32。
 
-[*[mask]{lang="EN-US"}*]{#struct_0_21182_x6397_1569371781}[：指定子网掩码，缺省值为]{style="font-family:宋体"}[255.255.255.255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[mask*]：指定子网掩码，缺省值为255.255.255.255。
 
-[**[ipv6-address]{lang="EN-US"}**[ *ipv6-address*]{lang="EN-US"}]{#struct_0_21182_x6397_312199297}[：指定匹配规则的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[ipv6-address** *ipv6-address*]：指定匹配规则的IPv6地址。
 
-[*[prefix-length]{lang="EN-US"}*]{#struct_0_21182_x6397_1313608564}[：指定前缀长度，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[128]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[128]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[prefix-length*]：指定前缀长度，取值范围为0～128，缺省值为128。
 
-[**[port]{lang="EN-US"}**[ *port-list*]{lang="EN-US"}]{#struct_0_21182_x6397_240298421}[：指定匹配规则的端口号列表。表示方式为]{style="font-family:宋体"}*[port-list]{lang="EN-US"}*[ = { *port-number* \[ **to** *port-number* \] } &\<1-10\>]{lang="EN-US"}[，其中]{style="font-family:宋体"}*[port-number]{lang="EN-US"}*[表示端口号，取值范围是]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。当使用]{style="font-family:宋体"}**[to]{lang="EN-US"}**[关键字指定端口号范围时，起始端口号必须小于或等于结束端口号。如果未指定本参数，则匹配所有端口号。]{style="font-family:宋体"}
+**[port** *port-list*]：指定匹配规则的端口号列表。表示方式为*port-list* = { *port-number* [ **to** *port-number*  } &\<1-10\>]，其中*port-number*表示端口号，取值范围是1～65535，&\<1-10\>表示前面的参数最多可以输入10次。当使用**to**关键字指定端口号范围时，起始端口号必须小于或等于结束端口号。如果未指定本参数，则匹配所有端口号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_21182_x6397_2124343435}
+【使用指导】
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_21182_x6397_x149453682}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[指定匹配类型为源或目的时，需要至少指定]{style="font-family:宋体"}]{#struct_0_21182_x6397_2034408635}[IP]{lang="EN-US"}[地址、端口号两者中的一个。]{style="font-family:宋体"}
+·指定匹配类型为源或目的时，需要至少指定IP地址、端口号两者中的一个。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[指定匹配类型为]{style="font-family:宋体"}]{#struct_0_21182_x6397_1146379709}[any]{lang="EN-US"}[时，如果指定]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址、端口号，则表示匹配源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址、端口号，或匹配目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址、端口号。]{style="font-family:宋体"}
+·指定匹配类型为any时，如果指定IP地址、端口号，则表示匹配源IP地址、端口号，或匹配目的IP地址、端口号。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不允许配置编号不同，但是内容完全相同的]{style="font-family:宋体"}]{#struct_0_21182_x6397_1749048684}[match]{lang="EN-US"}[规则。]{style="font-family:宋体"}
+·不允许配置编号不同，但是内容完全相同的match规则。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_402843813}[类最多可创建]{style="font-family:宋体"}[65535]{lang="EN-US"}[条]{style="font-family:宋体"}[match]{lang="EN-US"}[规则，按照]{style="font-family:宋体"}[match]{lang="EN-US"}[规则的创建顺序进行匹配，匹配上其中任意一条，则认为匹配上了该类。]{style="font-family:宋体"}
+·WAAS类最多可创建65535条match规则，按照match规则的创建顺序进行匹配，匹配上其中任意一条，则认为匹配上了该类。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1031748552}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_1626515247}[创建类]{style="font-family:宋体"}[http_class]{lang="EN-US"}[的匹配规则：匹配源地址为]{style="font-family:宋体"}[192.168.0.1/16]{lang="EN-US"}[，源端口号为]{style="font-family:宋体"}[80]{lang="EN-US"}[和]{style="font-family:宋体"}[8000]{lang="EN-US"}[～]{style="font-family:宋体"}[8080]{lang="EN-US"}[的]{style="font-family:宋体"}[tcp]{lang="EN-US"}[流量。]{style="font-family:宋体"}
+\# 创建类http_class的匹配规则：匹配源地址为192.168.0.1/16，源端口号为80和8000～8080的tcp流量。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_21182_x6397_330618215}
+\<Sysname\> system-view
 
-[\[Sysname\] waas class http_class]{lang="EN-US"}
+Sysname waas class http_class
 
-[\[Sysname-waasclass-http_class\] match tcp source ip-address 192.168.0.1 16 port 80 8000 to 8080]{lang="EN-US"}
+Sysname-waasclass-http_class match tcp source ip-address 192.168.0.1 16 port 80 8000 to 8080
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_1060778520}[创建类]{style="font-family:宋体"}[http_class]{lang="EN-US"}[的匹配规则：匹配所有]{style="font-family:宋体"}[TCP]{lang="EN-US"}[流量。]{style="font-family:宋体"}
+\# 创建类http_class的匹配规则：匹配所有TCP流量。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_21182_x6397_x189682027}
+\<Sysname\> system-view
 
-[\[Sysname\] waas class http_class]{lang="EN-US"}
+Sysname waas class http_class
 
-[\[Sysname-waasclass-http_class\] match tcp any]{lang="EN-US"}
+Sysname-waasclass-http_class match tcp any
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1490461708}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display waas class]{lang="EN-US"}**]{#struct_0_21182_x6397_x1401409522}
+·**display waas class**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[waas class]{lang="EN-US"}**]{#struct_0_21182_x6397_256681135}
-:::
-
-::: {#-937897838 .myid}
-[]{#_Toc404787436}[]{#struct_0_21182_x6397_65256056}
+·**waas class**
 
 **WAAS \-- WAAS配置命令 \-- optimize**
 
 ------------------------------------------------------------------------
 
-[**[optimize]{lang="EN-US"}**]{#struct_0_21182_x6397_1624622439}[命令用来配置]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[类的优化方式。]{style="font-family:宋体"}
+**[optimize**]命令用来配置WAAS类的优化方式。
 
-[**[undo optimize]{lang="EN-US"}**]{#struct_0_21182_x6397_1211833554}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo optimize**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1132164952}
+【命令】
 
-[**[optimize tfo ]{lang="EN-US"}**[\[ **dre** \| **lz** \] \*]{lang="EN-US"}]{#struct_0_21182_x6397_388079535}
+**[optimize tfo **[[ **dre** \| **lz** ] \*]]
 
-[**[undo optimize]{lang="EN-US"}**]{#struct_0_21182_x6397_947697183}
+**[undo optimize**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_21182_x6397_469491548}
+【缺省情况】
 
-[[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_x514482135}[类未配置任何优化方式。]{style="font-family:宋体"}
+WAAS类未配置任何优化方式。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1950869865}
+【视图】
 
-[[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_868504652}[策略类动作视图]{style="font-family:宋体"}
+WAAS策略类动作视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1800504782}
+【缺省用户角色】
 
-[[network-admin]{lang="FR"}]{#struct_0_21182_x6397_x327350902}
+network-admin
 
-[[mdc-admin ]{lang="FR"}]{#struct_0_21182_x6397_x400097033}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1253355952}
+【参数】
 
-[**[tfo]{lang="FR"}**]{#struct_0_21182_x6397_1954814353}**[：]{style="font-family:宋体"}**[流传输优化方式，仅支持]{style="font-family:宋体"}[TCP]{lang="EN-US"}[流传输优化。]{style="font-family:宋体"}
+**[tfo**]**：**流传输优化方式，仅支持TCP流传输优化。
 
-[**[dre]{lang="FR"}**]{#struct_0_21182_x6397_647909792}[：]{style="font-family:宋体"}[消除冗余数据优化方式。]{style="font-family:宋体"}
+**[dre**]：消除冗余数据优化方式。
 
-[**[lz]{lang="FR"}**]{#struct_0_21182_x6397_1743412875}[：]{style="font-family:宋体"}[数据压缩优化方式。]{style="font-family:宋体"}
+**[lz**]：数据压缩优化方式。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_21182_x6397_900356634}
+【使用指导】
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_21182_x6397_x305761112}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[该命令与]{style="font-family:宋体"}]{#struct_0_21182_x6397_x1067963743}**[passthrough]{lang="EN-US"}**[命令二者只能选其一，如果同时配置了这两条命令，则后配置的生效。]{style="font-family:宋体"}
+·该命令与**passthrough**命令二者只能选其一，如果同时配置了这两条命令，则后配置的生效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[该命令受优化控制功能状态的影响，如果用户配置了优化动作，而对应的优化控制功能处于关闭状态，则不能对匹配的报文流量进行相应的优化处理。]{style="font-family:宋体"}]{#struct_0_21182_x6397_1596718403}
+·该命令受优化控制功能状态的影响，如果用户配置了优化动作，而对应的优化控制功能处于关闭状态，则不能对匹配的报文流量进行相应的优化处理。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于匹配了黑名单的流量，通过]{style="font-family:宋体"}]{#struct_0_21182_x6397_x271993997}**[optimize]{lang="EN-US"}**[命令配置优化动作后，不会对指定流量进行优化。]{style="font-family:宋体"}
+·对于匹配了黑名单的流量，通过**optimize**命令配置优化动作后，不会对指定流量进行优化。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x605456504}
+【举例】
 
-[[\# ]{lang="FR"}]{#struct_0_21182_x6397_x58402153}[配置]{style="font-family:宋体"}[WAAS]{lang="FR"}[类]{style="font-family:宋体"}[AFS]{lang="FR"}[的优化方式为]{style="font-family:
-宋体"}[TFO]{lang="FR"}[、]{style="font-family:宋体"}[DRE]{lang="PT-BR"}[和]{style="font-family:宋体"}[LZ]{lang="PT-BR"}[。]{style="font-family:宋体"}
+\# 配置WAAS类AFS的优化方式为TFO、DRE和LZ。
 
-[[\<Sysname\> system-view]{lang="FR"}]{#struct_0_21182_x6397_x707479389}
+\<Sysname\> system-view
 
-[\[Sysname\] waas policy waas_global]{lang="FR"}
+Sysname waas policy waas_global
 
-[\[Sysname-waaspolicy-waas_global\] class AFS]{lang="FR"}
+Sysname-waaspolicy-waas_global class AFS
 
-[\[Sysname-waaspolicy-waas_global-AFS\] optimize tfo dre lz]{lang="FR"}
+Sysname-waaspolicy-waas_global-AFS optimize tfo dre lz
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_750193372}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}**[c]{lang="FR"}**]{#struct_0_21182_x6397_x1412589905}**[lass]{lang="FR"}**
+·**c****lass**
 
-[[·[              ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}**[display waas policy]{lang="EN-US"}**]{#struct_0_21182_x6397_x2094918883}
+·**display waas policy**
 
-[[·[              ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}**[passthrough]{lang="EN-US"}**]{#struct_0_21182_x6397_1975605435}
+·**passthrough**
 
-[[·[              ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}**[waas policy]{lang="FR"}**]{#struct_0_21182_x6397_1878495891}**[ ]{lang="FR"}**
+·**waas policy******
 
-[[·[              ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}**[waas tfo optimize dre]{lang="FR"}**]{#struct_0_21182_x6397_x1336765861}
+·**waas tfo optimize dre**
 
-[[·[              ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}**[waas tfo optimize lz]{lang="FR"}**]{#struct_0_21182_x6397_1920998099}
-:::
-
-::: {#-334263399 .myid}
-[]{#_Toc404787437}[]{#struct_0_21182_x6397_x167127142}
+·**waas tfo optimize lz**
 
 **WAAS \-- WAAS配置命令 \-- passthrough**
 
 ------------------------------------------------------------------------
 
-[**[passthrough]{lang="EN-US"}**]{#struct_0_21182_x6397_x426749702}[命令用来配置]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[类的直接旁路动作。]{style="font-family:宋体"}
+**[passthrough**]命令用来配置WAAS类的直接旁路动作。
 
-[**[undo passthrough]{lang="EN-US"}**]{#struct_0_21182_x6397_1974409966}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo passthrough**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x910152320}
+【命令】
 
-[**[passthrough]{lang="EN-US"}**]{#struct_0_21182_x6397_1833167074}
+**[passthrough**]
 
-[**[undo passthrough]{lang="EN-US"}**]{#struct_0_21182_x6397_x1879394514}
+**[undo passthrough**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x2093326033}
+【缺省情况】
 
-[[未配置直接旁路动作。]{style="font-family:宋体"}]{#struct_0_21182_x6397_x253349781}
+未配置直接旁路动作。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1060184685}
+【视图】
 
-[[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_x230939119}[策略类动作视图]{style="font-family:宋体"}
+WAAS策略类动作视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_301273910}
+【缺省用户角色】
 
-[[network-admin]{lang="FR"}]{#struct_0_21182_x6397_986983683}
+network-admin
 
-[[mdc-admin ]{lang="FR"}]{#struct_0_21182_x6397_2012229119}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_21182_x6397_987375776}
+【使用指导】
 
-[[直接旁路动作就是对匹配]{style="font-family:宋体"}[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_258644411}[类的报文流量不进行任何优化处理，直接转发。本命令与]{style="font-family:宋体"}**[optimize]{lang="EN-US"}**[命令二者只能选其一，如果同时配置了这两条命令，则后配置的生效。]{style="font-family:宋体"}
+直接旁路动作就是对匹配WAAS类的报文流量不进行任何优化处理，直接转发。本命令与**optimize**命令二者只能选其一，如果同时配置了这两条命令，则后配置的生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1603322401}
+【举例】
 
-[[\# ]{lang="FR"}]{#struct_0_21182_x6397_x1011849805}[配置]{style="font-family:宋体"}[WAAS]{lang="PT-BR"}[类]{style="font-family:宋体"}[AFS]{lang="PT-BR"}[的优化方式为直接旁路]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置WAAS类AFS的优化方式为直接旁路。
 
-[[\<Sysname\> system-view]{lang="FR"}]{#struct_0_21182_x6397_1818731035}
+\<Sysname\> system-view
 
-[\[Sysname\] waas policy waas_global]{lang="FR"}
+Sysname waas policy waas_global
 
-[\[Sysname-waaspolicy-waas_global\] class AFS]{lang="FR"}
+Sysname-waaspolicy-waas_global class AFS
 
-[\[Sysname-waaspolicy-waas_global-AFS\] passthrough]{lang="FR"}
+Sysname-waaspolicy-waas_global-AFS passthrough
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x71135188}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}**[class]{lang="FR"}**]{#struct_0_21182_x6397_927292856}
+·**class**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display waas policy]{lang="EN-US"}**]{#struct_0_21182_x6397_1255517986}
+·**display waas policy**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[optimize]{lang="FR"}**]{#struct_0_21182_x6397_x126553031}
+·**optimize**
 
-[[·[              ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}**[waas policy]{lang="FR"}**]{#struct_0_21182_x6397_x652583159}**[ ]{lang="FR"}**
-:::
-
-::: {#81058526 .myid}
-[]{#_Toc404787438}[]{#struct_0_21182_x6397_x1543793509}
+·**waas policy******
 
 **WAAS \-- WAAS配置命令 \-- reset waas cache dre**
 
 ------------------------------------------------------------------------
 
-[**[reset waas cache dre]{lang="EN-US"}**]{#struct_0_21182_x6397_1222426552}[命令用来清除]{style="font-family:宋体"}[DRE]{lang="EN-US"}[的数据字典。]{style="font-family:宋体"}
+**[reset waas cache dre**]命令用来清除DRE的数据字典。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x287356383}
+【命令】
 
-[**[reset waas cache dre ]{lang="EN-US"}**[\[ **peer** *peer-id* \]]{lang="EN-US"}]{#struct_0_21182_x6397_1884433863}
+**[reset waas cache dre ** **peer** *peer-id* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1216478639}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_21182_x6397_1838212549}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_821821079}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x1087103239}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_21182_x6397_671207157}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x784895227}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_21182_x6397_x2000450442}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_21182_x6397_252647094}
+【参数】
 
-[**[peer ]{lang="EN-US"}***[peer-id]{lang="EN-US"}*]{#struct_0_21182_x6397_297281510}[：]{style="font-family:宋体"}[清除指定对端]{style="font-family:宋体"}[设备的]{style="font-family:宋体"}[DRE]{lang="EN-US"}[数据字典，]{style="font-family:宋体"}*[peer-id]{lang="EN-US"}*[表示设备的桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，形式为]{style="font-family:宋体"}[H-H-H]{lang="EN-US"}[。如果未指定本参数，则清除设备上所有]{style="font-family:宋体"}[DRE]{lang="EN-US"}[的数据字典。]{style="font-family:宋体"}
+**[peer ***peer-id*]：清除指定对端设备的DRE数据字典，*peer-id*表示设备的桥MAC地址，形式为H-H-H。如果未指定本参数，则清除设备上所有DRE的数据字典。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1893628593}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_998158104}[清除对端设备为]{style="font-family:宋体"}[0789-445d-effa]{lang="EN-US"}[的]{style="font-family:宋体"}[DER]{lang="EN-US"}[数据字典。]{style="font-family:宋体"}
+\# 清除对端设备为0789-445d-effa的DER数据字典。
 
-[[\<Sysname\> reset waas cache dre peer 0789-445d-effa]{lang="EN-US"}]{#struct_0_21182_x6397_1532823950}
+\<Sysname\> reset waas cache dre peer 0789-445d-effa
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x503740238}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display waas statistics dre]{lang="EN-US"}**]{#struct_0_21182_x6397_x363138687}
-:::
-
-::: {#-1638107706 .myid}
-[]{#_Toc404787439}[]{#struct_0_21182_x6397_x677938207}
+·**display waas statistics dre**
 
 **WAAS \-- WAAS配置命令 \-- reset waas statistics dre**
 
 ------------------------------------------------------------------------
 
-[**[reset waas statistics dre]{lang="EN-US"}**]{#struct_0_21182_x6397_334847499}[命令用来清除]{style="font-family:
-宋体"}[DRE]{lang="EN-US"}[统计信息。]{style="font-family:宋体"}
+**[reset waas statistics dre**]命令用来清除DRE统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1480223075}
+【命令】
 
-[**[reset waas statistics dre ]{lang="EN-US"}**[\[ **peer** *peer-id* \]]{lang="EN-US"}]{#struct_0_21182_x6397_x1010236646}
+**[reset waas statistics dre ** **peer** *peer-id* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1821496124}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_21182_x6397_1268599336}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x118938901}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_1877309402}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_21182_x6397_x1313436847}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x1492178099}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_21182_x6397_x1462119511}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1749620205}
+【参数】
 
-[**[peer ]{lang="EN-US"}***[peer-id]{lang="EN-US"}*]{#struct_0_21182_x6397_x1870035496}[：]{style="font-family:宋体"}[清除指定对端]{style="font-family:宋体"}[设备的]{style="font-family:宋体"}[DRE]{lang="EN-US"}[统计信息，]{style="font-family:宋体"}*[peer-id]{lang="EN-US"}*[表示对端设备的桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，形式为]{style="font-family:宋体"}[H-H-H]{lang="EN-US"}[。如果未指定本参数，则清除设备上所有]{style="font-family:宋体"}[DRE]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+**[peer ***peer-id*]：清除指定对端设备的DRE统计信息，*peer-id*表示对端设备的桥MAC地址，形式为H-H-H。如果未指定本参数，则清除设备上所有DRE的统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1641973507}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_x1924009155}[清除设备上所有]{style="font-family:宋体"}[DRE]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+\# 清除设备上所有DRE的统计信息。
 
-[[\<Sysname\> reset waas statistics dre]{lang="EN-US"}]{#struct_0_21182_x6397_x342505468}
+\<Sysname\> reset waas statistics dre
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1556761760}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display waas statistics dre]{lang="EN-US"}**]{#struct_0_21182_x6397_x1753740906}
-:::
-
-::: {#-86808993 .myid}
-[]{#_Toc404787440}[]{#struct_0_21182_x6397_x557458111}
+·**display waas statistics dre**
 
 **WAAS \-- WAAS配置命令 \-- reset waas tfo auto-discovery blacklist**
 
 ------------------------------------------------------------------------
 
-[**[reset waas tfo auto-discovery blacklist]{lang="EN-US"}**]{#struct_0_21182_x6397_x694249631}[命令用来清除所有的黑名单表项。]{style="font-family:宋体"}
+**[reset waas tfo auto-discovery blacklist**]命令用来清除所有的黑名单表项。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_725879822}
+【命令】
 
-[**[reset waas tfo auto-discovery blacklist]{lang="EN-US"}**]{#struct_0_21182_x6397_1408151452}
+**[reset waas tfo auto-discovery blacklist**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1753507733}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_21182_x6397_x1405830100}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1415446508}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_1389555159}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_21182_x6397_x2030715437}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_1576633695}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_21182_x6397_x201807512}
+mdc-operator
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_884297654}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_2026021608}[清除所有的黑名单表项。]{style="font-family:宋体"}
+\# 清除所有的黑名单表项。
 
-[[\<Sysname\> reset waas tfo auto-discovery blacklist]{lang="EN-US"}]{#struct_0_21182_x6397_x448357382}
+\<Sysname\> reset waas tfo auto-discovery blacklist
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1209387502}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display waas tfo auto-discovery blacklist]{lang="EN-US"}**]{#struct_0_21182_x6397_x2026536482}
+·**display waas tfo auto-discovery blacklist**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[waas tfo auto-discovery blacklist enable]{lang="EN-US"}**]{#struct_0_21182_x6397_49325780}
+·**waas tfo auto-discovery blacklist enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[waas tfo auto-discovery blacklist hold-time]{lang="EN-US"}**]{#struct_0_21182_x6397_706390422}
-:::
-
-::: {#241390138 .myid}
-[]{#_Toc404787441}[]{#struct_0_21182_x6397_1599475101}[]{#_Toc185927308}[]{#_Toc123026768}
+·**waas tfo auto-discovery blacklist hold-time**
 
 **WAAS \-- WAAS配置命令 \-- waas apply policy**
 
 ------------------------------------------------------------------------
 
-[**[waas apply policy]{lang="EN-US"}**]{#struct_0_21182_x6397_x2027440647}[命令用来在接口上应用]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[策略。]{style="font-family:宋体"}
+**[waas apply policy**]命令用来在接口上应用WAAS策略。
 
-[**[undo waas apply policy]{lang="EN-US"}**]{#struct_0_21182_x6397_118818215}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo waas apply policy**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x150637433}
+【命令】
 
-[**[waas apply policy ]{lang="EN-US"}**[\[ *policy-name* \]]{lang="EN-US"}]{#struct_0_21182_x6397_1589822091}
+**[waas apply policy ** *policy-name* ]
 
-[**[undo waas apply policy]{lang="EN-US"}**]{#struct_0_21182_x6397_x1754428100}
+**[undo waas apply policy**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1624791008}
+【缺省情况】
 
-[[接口上未应用任何]{style="font-family:宋体"}[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_1990699033}[策略。]{style="font-family:宋体"}
+接口上未应用任何WAAS策略。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_532692725}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_21182_x6397_1563995447}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_666540463}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x1326577717}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x1279432923}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1257636658}
+【参数】
 
-[*[policy-name]{lang="EN-US"}*]{#struct_0_21182_x6397_1299802408}[：指定]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[策略的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写，且该策略必须存在。如果不指定本参数，则在接口上应用预定义策略]{style="font-family:宋体"}[waas_default]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[policy-name*]：指定WAAS策略的名称，为1～63个字符的字符串，不区分大小写，且该策略必须存在。如果不指定本参数，则在接口上应用预定义策略waas_default。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x867537297}
+【使用指导】
 
-[[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_x2062397077}[设备应用策略的接口连接广域网，未应用策略的接口连接局域网。对从广域网侧发送或接收的报文流量会与广域网接口所引用的策略进行匹配。但如果指定流量经过设备的入接口和出接口都连接广域网或者局域网，则不对报文进行优化。]{style="font-family:宋体"}
+WAAS设备应用策略的接口连接广域网，未应用策略的接口连接局域网。对从广域网侧发送或接收的报文流量会与广域网接口所引用的策略进行匹配。但如果指定流量经过设备的入接口和出接口都连接广域网或者局域网，则不对报文进行优化。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1877430498}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_x1716721374}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="PT-BR"}[上应用]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[策略]{style="font-family:宋体"}[global_policy]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上应用WAAS策略global_policy。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_21182_x6397_x568061671}
+\<Sysname\> system-view
 
-[\[Sysname\] interface ]{lang="EN-US"}[gigabitethernet 1/0/1]{lang="PT-BR"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-]{lang="EN-US"}[GigabitEthernet1/0/1]{lang="PT-BR"}[\] waas apply policy global_policy]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 waas apply policy global_policy
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1108645113}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display waas policy]{lang="EN-US"}**]{#struct_0_21182_x6397_x559322450}
+·**display waas policy**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display waas status]{lang="EN-US"}**]{#struct_0_21182_x6397_x39122676}
+·**display waas status**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[waas policy]{lang="EN-US"}**]{#struct_0_21182_x6397_x2116415821}
-:::
-
-::: {#-769685232 .myid}
-[]{#_Toc404787442}[]{#struct_0_21182_x6397_792613282}
+·**waas policy**
 
 **WAAS \-- WAAS配置命令 \-- waas class**
 
 ------------------------------------------------------------------------
 
-[**[waas class]{lang="EN-US"}**]{#struct_0_21182_x6397_x100007053}[命令用来创建]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[类，并进入]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[类视图。]{style="font-family:宋体"}
+**[waas class**]命令用来创建WAAS类，并进入WAAS类视图。
 
-[**[undo waas class]{lang="EN-US"}**]{#struct_0_21182_x6397_x1158590902}[命令用来删除指定的]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[类。]{style="font-family:宋体"}
+**[undo waas class**]命令用来删除指定的WAAS类。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x586051141}
+【命令】
 
-[**[waas class]{lang="EN-US"}**[ *class-name*]{lang="EN-US"}]{#struct_0_21182_x6397_x1203324772}
+**[waas class** *class-name*]
 
-[**[undo waas class]{lang="EN-US"}**[ *class-name*]{lang="EN-US"}]{#struct_0_21182_x6397_306292251}
+**[undo waas class** *class-name*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1604662106}
+【缺省情况】
 
-[[只存在预定义类。]{style="font-family:宋体"}]{#struct_0_21182_x6397_750860913}
+只存在预定义类。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1486365363}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_21182_x6397_1012161981}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x906325917}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_2116630537}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_158464229}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_21182_x6397_509447682}
+【参数】
 
-[*[class-name]{lang="EN-US"}*]{#struct_0_21182_x6397_x827182747}[：指定]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[类的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+*[class-name*]：指定WAAS类的名称，为1～63个字符的字符串，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1050482169}
+【使用指导】
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_21182_x6397_x384491036}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定的类不存在，创建该类并进入其视图，否则直接进入其视图。如果创建的]{style="font-family:宋体"}]{#struct_0_21182_x6397_603765126}[class]{lang="EN-US"}[未配置任何]{style="font-family:宋体"}[match]{lang="EN-US"}[规则，则该类不参与所属策略对报文流量的匹配。]{style="font-family:宋体"}
+·如果指定的类不存在，创建该类并进入其视图，否则直接进入其视图。如果创建的class未配置任何match规则，则该类不参与所属策略对报文流量的匹配。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[建议用户通过本命令进入]{style="font-family:宋体"}]{#struct_0_21182_x6397_x1057324593}[WAAS]{lang="EN-US"}[预定义类视图，修改预定义类配置。（预定义类参见]{style="font-family:宋体"}[[表]{style="font-family:宋体"}[1-7]{lang="EN-US"}](?-326408526#_Ref401328623)[）]{style="font-family:宋体"}
+·建议用户通过本命令进入WAAS预定义类视图，修改预定义类配置。（预定义类参见表 1-7(?-326408526#_Ref401328623)）
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x2010160855}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_x1255053674}[创建]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[类]{style="font-family:宋体"}[waas_global]{lang="EN-US"}[，并进入其视图。]{style="font-family:宋体"}
+\# 创建WAAS类waas_global，并进入其视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_21182_x6397_x1263772118}
+\<Sysname\> system-view
 
-[\[Sysname\] waas class waas_global]{lang="EN-US"}
+Sysname waas class waas_global
 
-[\[Sysname-waasclass-waas_global\]]{lang="EN-US"}
+Sysname-waasclass-waas_global
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1135273249}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[class]{lang="EN-US"}**]{#struct_0_21182_x6397_392006140}
+·**class**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display waas class]{lang="EN-US"}**]{#struct_0_21182_x6397_x1266382680}
-:::
-
-::: {#-1928861873 .myid}
-[]{#_Toc404787443}[]{#struct_0_21182_x6397_941693984}
+·**display waas class**
 
 **WAAS \-- WAAS配置命令 \-- waas config remove-all**
 
 ------------------------------------------------------------------------
 
-[**[waas config remove-all]{lang="EN-US"}**]{#struct_0_21182_x6397_1664046167}[命令用来删除]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[所有配置。]{style="font-family:宋体"}
+**[waas config remove-all**]命令用来删除WAAS所有配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_255987571}
+【命令】
 
-[**[waas config]{lang="EN-US"}**[ **remove-all**]{lang="EN-US"}]{#struct_0_21182_x6397_x1588801505}
+**[waas config** **remove-all**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x2142893024}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_21182_x6397_x86428995}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1453985696}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_1078793069}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x271865529}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1337286870}
+【使用指导】
 
-[[通过本命令删除]{style="font-family:宋体"}[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_2060266536}[特性的所有配置数据和运行数据，并使]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[进程退出。]{style="font-family:宋体"}
+通过本命令删除WAAS特性的所有配置数据和运行数据，并使WAAS进程退出。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x638123350}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_1843943077}[删除]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[所有配置。]{style="font-family:宋体"}
+\# 删除WAAS所有配置。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_21182_x6397_1462500675}
+\<Sysname\> system-view
 
-[\[Sysname\] waas config remove-all]{lang="EN-US"}
+Sysname waas config remove-all
 
-[The command will clear all the WAAS configuration. Continue? \[Y/N\]:y]{lang="EN-US"}
-:::
-
-::: {#1957174718 .myid}
-[]{#_Toc404787444}[]{#struct_0_21182_x6397_x1792781532}
+The command will clear all the WAAS configuration. Continue? [Y/N:y]
 
 **WAAS \-- WAAS配置命令 \-- waas config restore-default**
 
 ------------------------------------------------------------------------
 
-[**[waas config restore-default]{lang="EN-US"}**]{#struct_0_21182_x6397_x960463865}[命令用来还原]{style="font-family:
-宋体"}[WAAS]{lang="EN-US"}[的预定义配置。]{style="font-family:宋体"}
+**[waas config restore-default**]命令用来还原WAAS的预定义配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1251573531}
+【命令】
 
-[**[waas config restore-default]{lang="EN-US"}**]{#struct_0_21182_x6397_x1871198564}
+**[waas config restore-default**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_591093831}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_21182_x6397_x932931597}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x118854042}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x34101879}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_1246278969}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_21182_x6397_709224690}
+【使用指导】
 
-[[还原]{style="font-family:宋体"}[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_1245849627}[的预定义配置是把]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[预定义策略和预定义类的配置还原到]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[进程第一次启动时的配置，不修改用户自定义的配置。]{style="font-family:宋体"}
+还原WAAS的预定义配置是把WAAS预定义策略和预定义类的配置还原到WAAS进程第一次启动时的配置，不修改用户自定义的配置。
 
-[[需要注意的是，配置本命令时，需保证所有接口未应用任何策略，否则恢复失败。]{style="font-family:宋体"}]{#struct_0_21182_x6397_x4957117}
+需要注意的是，配置本命令时，需保证所有接口未应用任何策略，否则恢复失败。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_300733136}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_1044483996}[还原]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[预定义配置。]{style="font-family:宋体"}
+\# 还原WAAS预定义配置。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_21182_x6397_x910086784}
+\<Sysname\> system-view
 
-[\[Sysname\] waas config restore-default]{lang="EN-US"}
+Sysname waas config restore-default
 
-[The command will restore all the WAAS configuration to default. Continue? \[Y/N\]:y]{lang="EN-US"}
-:::
-
-::: {#-326408526 .myid}
-[]{#_Toc404787445}[]{#struct_0_21182_x6397_x878789913}[]{#_Toc382816935}
+The command will restore all the WAAS configuration to default. Continue? [Y/N:y]
 
 **WAAS \-- WAAS配置命令 \-- waas policy**
 
 ------------------------------------------------------------------------
 
-[**[waas policy]{lang="EN-US"}**]{#struct_0_21182_x6397_x1686574800}[命令用来创建]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[策略，并进入]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[策略视图。]{style="font-family:宋体"}
+**[waas policy**]命令用来创建WAAS策略，并进入WAAS策略视图。
 
-[**[undo waas policy]{lang="EN-US"}**]{#struct_0_21182_x6397_1693226556}[命令用来删除指定的]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[策略。]{style="font-family:宋体"}
+**[undo waas policy**]命令用来删除指定的WAAS策略。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x765902295}
+【命令】
 
-[**[waas policy ]{lang="EN-US"}***[policy-name]{lang="EN-US"}*]{#struct_0_21182_x6397_834079461}
+**[waas policy ***policy-name*]
 
-[**[undo waas policy ]{lang="EN-US"}***[policy-name]{lang="EN-US"}*]{#struct_0_21182_x6397_x662861073}
+**[undo waas policy ***policy-name*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1188796001}
+【缺省情况】
 
-[[只存在预定义策略]{style="font-family:宋体"}[waas_default]{lang="EN-US"}]{#struct_0_21182_x6397_44523591}[。]{style="font-family:宋体"}
+只存在预定义策略waas_default。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_16860399}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_21182_x6397_1283864440}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1708804314}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_204666190}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x1079661518}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1613136210}
+【参数】
 
-[*[policy-name]{lang="EN-US"}*]{#struct_0_21182_x6397_1818796571}[：指定]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[策略的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+*[policy-name*]：指定WAAS策略的名称，为1～63个字符的字符串，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1120923137}
+【使用指导】
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_21182_x6397_902074505}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定的策略不存在，创建该策略并进入其视图，否则直接进入其视图。]{style="font-family:宋体"}]{#struct_0_21182_x6397_x436276293}
+·如果指定的策略不存在，创建该策略并进入其视图，否则直接进入其视图。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[删除指定策略时，如果该策略应用于接口，则应先取消策略在接口上的应用再删除，否则删除失败。]{style="font-family:宋体"}]{#struct_0_21182_x6397_215808178}
+·删除指定策略时，如果该策略应用于接口，则应先取消策略在接口上的应用再删除，否则删除失败。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[建议用户通过此命令进入预定义策略的视图，采用修改预定义策略的方式完成策略配置。预定义策略是]{style="font-family:宋体"}]{#struct_0_21182_x6397_x172186643}[WAAS]{lang="EN-US"}[进程在第一次启动时系统创建的策略，策略名称为]{style="font-family:宋体"}[waas_default]{lang="EN-US"}[，默认引用所有的预定义类。]{style="font-family:宋体"}
+·建议用户通过此命令进入预定义策略的视图，采用修改预定义策略的方式完成策略配置。预定义策略是WAAS进程在第一次启动时系统创建的策略，策略名称为waas_default，默认引用所有的预定义类。
 
-[]{#struct_0_21182_x6397_x1236746854}[[表1-7 ]{lang="EN-US"}[预定义策略]{style="font-family:
-黑体"}]{#_Ref401328623}
+表1-7 预定义策略
 
-[]{#table_struct_0_x587429837}[[预定义类]{style="font-family:黑体"}]{#struct_0_21182_x6397_1852923923}
-:::
+预定义类
 
-[[优化方式]{style="font-family:黑体"}]{#struct_0_21182_x6397_x2129541609}
+优化方式
 
-[[源端口号]{style="font-family:黑体"}]{#struct_0_21182_x6397_1677367100}
+源端口号
 
-[[目的端口号]{style="font-family:黑体"}]{#struct_0_21182_x6397_x495485904}
+目的端口号
 
-[[Kerberos]{lang="EN-US"}]{#struct_0_21182_x6397_51676150}
+Kerberos
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_545557144}
+Pass-through
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_252712630}
+-
 
-[[88]{lang="EN-US"}]{#struct_0_21182_x6397_676675015}[、]{style="font-family:宋体"}[464]{lang="EN-US"}[、]{style="font-family:宋体"}[543]{lang="EN-US"}[、]{style="font-family:宋体"}[544]{lang="EN-US"}[、]{style="font-family:宋体"}[749]{lang="EN-US"}[、]{style="font-family:宋体"}[754]{lang="EN-US"}[、]{style="font-family:宋体"}[888]{lang="EN-US"}[、]{style="font-family:宋体"}[2053]{lang="EN-US"}
+88、464、543、544、749、754、888、2053
 
-[[SASL]{lang="EN-US"}]{#struct_0_21182_x6397_1097610556}
+SASL
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_1794594918}
+Pass-through
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_2060659316}
+-
 
-[[3659]{lang="EN-US"}]{#struct_0_21182_x6397_x1368713391}
+3659
 
-[[TACACS]{lang="EN-US"}]{#struct_0_21182_x6397_x839336348}
+TACACS
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_40499456}
+Pass-through
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_693556636}
+-
 
-[[49]{lang="EN-US"}]{#struct_0_21182_x6397_x1313371311}
+49
 
-[[Amanda]{lang="EN-US"}]{#struct_0_21182_x6397_x248033350}
+Amanda
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x621700150}
+TFO
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1484325245}
+-
 
-[[10080]{lang="EN-US"}]{#struct_0_21182_x6397_x1663582568}
+10080
 
-[[BackupExpress]{lang="EN-US"}]{#struct_0_21182_x6397_2110563316}
+BackupExpress
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x1390568715}
+TFO
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1972389686}
+-
 
-[[6123]{lang="EN-US"}]{#struct_0_21182_x6397_1415512044}
+6123
 
-[[CommVault]{lang="EN-US"}]{#struct_0_21182_x6397_628038472}
+CommVault
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_1067854776}
+TFO
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x975428299}
+-
 
-[[8400-8403]{lang="EN-US"}]{#struct_0_21182_x6397_1547787694}
+8400-8403
 
-[[Connected-DataProtector]{lang="EN-US"}]{#struct_0_21182_x6397_x1948386188}
+Connected-DataProtector
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x221344935}
+TFO
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x2094125426}
+-
 
-[[16384]{lang="EN-US"}]{#struct_0_21182_x6397_x150571897}
+16384
 
-[[IBM-TSM]{lang="EN-US"}]{#struct_0_21182_x6397_9666008}
+IBM-TSM
 
-[[TFO+LZ+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x1946902497}
+TFO+LZ+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1951473899}
+-
 
-[[1500-1502]{lang="EN-US"}]{#struct_0_21182_x6397_x77987532}
+1500-1502
 
-[[Legato-NetWorker]{lang="EN-US"}]{#struct_0_21182_x6397_x918921003}
+Legato-NetWorker
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x1716655838}
+TFO
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_357592435}
+-
 
-[[7937]{lang="EN-US"}]{#struct_0_21182_x6397_1106312676}[、]{style="font-family:宋体"}[7938]{lang="EN-US"}[、]{style="font-family:宋体"}[, 7939]{lang="EN-US"}
+7937、7938、, 7939
 
-[[Legato-RepliStor]{lang="EN-US"}]{#struct_0_21182_x6397_26360534}
+Legato-RepliStor
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_63011224}
+TFO
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x2102187503}
+-
 
-[[7144]{lang="EN-US"}]{#struct_0_21182_x6397_1012227517}[、]{style="font-family:宋体"}[7145]{lang="EN-US"}
+7144、7145
 
-[[Veritas-BackupExec]{lang="EN-US"}]{#struct_0_21182_x6397_1030191617}
+Veritas-BackupExec
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_875864162}
+TFO
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1364576730}
+-
 
-[[1125]{lang="EN-US"}]{#struct_0_21182_x6397_703008458}[、]{style="font-family:宋体"}[3527]{lang="EN-US"}[、]{style="font-family:宋体"}[6101]{lang="EN-US"}[、]{style="font-family:宋体"}[6102]{lang="EN-US"}[、]{style="font-family:宋体"}[6106]{lang="EN-US"}
+1125、3527、6101、6102、6106
 
-[[Veritas-NetBackup]{lang="EN-US"}]{#struct_0_21182_x6397_x295884495}
+Veritas-NetBackup
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x1266317144}
+TFO
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x2133122228}
+-
 
-[[13720]{lang="EN-US"}]{#struct_0_21182_x6397_1020541873}[、]{style="font-family:宋体"}[13721]{lang="EN-US"}[、]{style="font-family:宋体"}[13782]{lang="EN-US"}[、]{style="font-family:宋体"}[13785]{lang="EN-US"}
+13720、13721、13782、13785
 
-[[PDMWorks]{lang="EN-US"}]{#struct_0_21182_x6397_362915795}
+PDMWorks
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_1693890206}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x758622300}
+-
 
-[[30000]{lang="EN-US"}]{#struct_0_21182_x6397_1462566211}[、]{style="font-family:宋体"}[40000]{lang="EN-US"}
+30000、40000
 
-[[Cisco-CallManager]{lang="EN-US"}]{#struct_0_21182_x6397_x1830089012}
+Cisco-CallManager
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_1835189685}
+Pass-through
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1083065649}
+-
 
-[[2443]{lang="EN-US"}]{#struct_0_21182_x6397_x910021248}[、]{style="font-family:宋体"}[2748]{lang="EN-US"}
+2443、2748
 
-[[SIP-secure]{lang="EN-US"}]{#struct_0_21182_x6397_x2062197478}
+SIP-secure
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x855516093}
+Pass-through
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1472973103}
+-
 
-[[5061]{lang="EN-US"}]{#struct_0_21182_x6397_x190209173}
+5061
 
-[[VoIP-Control]{lang="EN-US"}]{#struct_0_21182_x6397_1818862107}
+VoIP-Control
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x474801433}
+Pass-through
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1802793367}
+-
 
-[[1300]{lang="EN-US"}]{#struct_0_21182_x6397_x214665486}[、]{style="font-family:宋体"}[1718-1720, 2000-2002,2428, 5060,11000-11999]{lang="EN-US"}
+1300、1718-1720, 2000-2002,2428, 5060,11000-11999
 
-[[CU-SeeMe]{lang="EN-US"}]{#struct_0_21182_x6397_1507995832}
+CU-SeeMe
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_252778166}
+Pass-through
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1825741792}
+-
 
-[[7640]{lang="EN-US"}]{#struct_0_21182_x6397_x1777162221}[、]{style="font-family:宋体"}[7642]{lang="EN-US"}[、]{style="font-family:宋体"}[7648]{lang="EN-US"}[、]{style="font-family:宋体"}[7649]{lang="EN-US"}
+7640、7642、7648、7649
 
-[[ezMeeting]{lang="EN-US"}]{#struct_0_21182_x6397_2051915127}
+ezMeeting
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x2122395586}
+Pass-through
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1313305775}
+-
 
-[[10101-10103]{lang="EN-US"}]{#struct_0_21182_x6397_502725777}[、]{style="font-family:宋体"}[26260-26261]{lang="EN-US"}
+10101-10103、26260-26261
 
-[[GnomeMeeting]{lang="EN-US"}]{#struct_0_21182_x6397_x1169641860}
+GnomeMeeting
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x1828045790}
+Pass-through
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1415577580}
+-
 
-[[30000-30010]{lang="EN-US"}]{#struct_0_21182_x6397_x1345160923}
+30000-30010
 
-[[Intel-Proshare]{lang="EN-US"}]{#struct_0_21182_x6397_1309094205}
+Intel-Proshare
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x150506361}
+Pass-through
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1547946294}
+-
 
-[[5713-5717]{lang="EN-US"}]{#struct_0_21182_x6397_983159399}
+5713-5717
 
-[[MS-NetMeeting]{lang="EN-US"}]{#struct_0_21182_x6397_639149876}
+MS-NetMeeting
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x1716590302}
+Pass-through
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_564644166}
+-
 
-[[522]{lang="EN-US"}]{#struct_0_21182_x6397_x1148540938}[、]{style="font-family:宋体"}[1503]{lang="EN-US"}[、]{style="font-family:宋体"}[1731]{lang="EN-US"}
+522、1503、1731
 
-[[VocalTec]{lang="EN-US"}]{#struct_0_21182_x6397_1012293053}
+VocalTec
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_1410443161}
+Pass-through
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1071405362}
+-
 
-[[1490]{lang="EN-US"}]{#struct_0_21182_x6397_x1606604428}[、]{style="font-family:宋体"}[6670]{lang="EN-US"}[、]{style="font-family:宋体"}[22555]{lang="EN-US"}[、]{style="font-family:宋体"}[25793]{lang="EN-US"}
+1490、6670、22555、25793
 
-[[SSL-Shell]{lang="EN-US"}]{#struct_0_21182_x6397_x1266251608}
+SSL-Shell
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_1566561743}
+Pass-through
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_848414655}
+-
 
-[[614]{lang="EN-US"}]{#struct_0_21182_x6397_x2059437485}
+614
 
-[[Telnet]{lang="EN-US"}]{#struct_0_21182_x6397_1462631747}
+Telnet
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x1026570207}
+Pass-through
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x95482431}
+-
 
-[[23]{lang="EN-US"}]{#struct_0_21182_x6397_653271200}[、]{style="font-family:宋体"}[107]{lang="EN-US"}[、]{style="font-family:宋体"}[513]{lang="EN-US"}
+23、107、513
 
-[[Telnets]{lang="EN-US"}]{#struct_0_21182_x6397_x909955712}
+Telnets
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x40224561}
+Pass-through
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x180471866}
+-
 
-[[992]{lang="EN-US"}]{#struct_0_21182_x6397_1818927643}
+992
 
-[[Unix-Remote-Execution]{lang="EN-US"}]{#struct_0_21182_x6397_x61966179}
+Unix-Remote-Execution
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_1370644044}
+Pass-through
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1893009197}
+-
 
-[[512]{lang="EN-US"}]{#struct_0_21182_x6397_252843702}[、]{style="font-family:宋体"}[514]{lang="EN-US"}
+512、514
 
-[[Documentum]{lang="EN-US"}]{#struct_0_21182_x6397_1643492165}
+Documentum
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_289561113}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_65525714}
+-
 
-[[1489]{lang="EN-US"}]{#struct_0_21182_x6397_x1313240239}
+1489
 
-[[Filenet]{lang="EN-US"}]{#struct_0_21182_x6397_x1564954868}
+Filenet
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_773905646}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1415643116}
+-
 
-[[32768-32774]{lang="EN-US"}]{#struct_0_21182_x6397_x133978351}
+32768-32774
 
-[[ProjectWise-FileTransfer]{lang="EN-US"}]{#struct_0_21182_x6397_x1057323059}
+ProjectWise-FileTransfer
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_1880693966}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x150440825}
+-
 
-[[5800]{lang="EN-US"}]{#struct_0_21182_x6397_x1554124149}
+5800
 
-[[LDAP]{lang="EN-US"}]{#struct_0_21182_x6397_x1773006901}
+LDAP
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x1716524766}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1333188633}
+-
 
-[[389]{lang="EN-US"}]{#struct_0_21182_x6397_x1165423278}[、]{style="font-family:宋体"}[8404]{lang="EN-US"}
+389、8404
 
-[[LDAP-Global-Catalog]{lang="EN-US"}]{#struct_0_21182_x6397_1012358589}
+LDAP-Global-Catalog
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x1349604840}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1072712111}
+-
 
-[[3268]{lang="EN-US"}]{#struct_0_21182_x6397_x1266186072}
+3268
 
-[[LDAP-Global-Catalog-Secure]{lang="EN-US"}]{#struct_0_21182_x6397_1565459796}
+LDAP-Global-Catalog-Secure
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_615588627}
+Pass-through
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1462697283}
+-
 
-[[3269]{lang="EN-US"}]{#struct_0_21182_x6397_875398095}
+3269
 
-[[LDAP-secure]{lang="EN-US"}]{#struct_0_21182_x6397_1048788933}
+LDAP-secure
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x909890176}
+Pass-through
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x393285149}
+-
 
-[[636]{lang="EN-US"}]{#struct_0_21182_x6397_1253344080}
+636
 
-[[HP-OpenMail]{lang="EN-US"}]{#struct_0_21182_x6397_1818993179}
+HP-OpenMail
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_1125557808}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_304266914}
+-
 
-[[5729]{lang="EN-US"}]{#struct_0_21182_x6397_252909238}[、]{style="font-family:宋体"}[5755]{lang="EN-US"}[、]{style="font-family:宋体"}[5757]{lang="EN-US"}[、]{style="font-family:宋体"}[5766, 5767]{lang="EN-US"}[、]{style="font-family:宋体"}[5768]{lang="EN-US"}
+5729、5755、5757、5766, 5767、5768
 
-[[Internet-Mail]{lang="EN-US"}]{#struct_0_21182_x6397_46272668}
+Internet-Mail
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_711080524}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1313174703}
+-
 
-[[25]{lang="EN-US"}]{#struct_0_21182_x6397_1312176372}[、]{style="font-family:宋体"}[110]{lang="EN-US"}[、]{style="font-family:宋体"}[143]{lang="EN-US"}[、]{style="font-family:宋体"}[220]{lang="EN-US"}
+25、110、143、220
 
-[[Internet-Mail-secure]{lang="EN-US"}]{#struct_0_21182_x6397_260697663}
+Internet-Mail-secure
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_1415708652}
+TFO
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x999249503}
+-
 
-[[465]{lang="EN-US"}]{#struct_0_21182_x6397_x411235312}[、]{style="font-family:宋体"}[993]{lang="EN-US"}[、]{style="font-family:宋体"}[995]{lang="EN-US"}
+465、993、995
 
-[[Lotus-Notes]{lang="EN-US"}]{#struct_0_21182_x6397_x150375289}
+Lotus-Notes
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x1168004311}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1716459230}
+-
 
-[[1352]{lang="EN-US"}]{#struct_0_21182_x6397_1244795457}
+1352
 
-[[MDaemon]{lang="EN-US"}]{#struct_0_21182_x6397_431547817}
+MDaemon
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_1012424125}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1391449871}
+-
 
-[[3000]{lang="EN-US"}]{#struct_0_21182_x6397_x861520205}[、]{style="font-family:宋体"}[3001]{lang="EN-US"}
+3000、3001
 
-[[NNTP]{lang="EN-US"}]{#struct_0_21182_x6397_x1266120536}
+NNTP
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x1059251371}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1462762819}
+-
 
-[[119]{lang="EN-US"}]{#struct_0_21182_x6397_x1772929886}
+119
 
-[[NNTP-secure]{lang="EN-US"}]{#struct_0_21182_x6397_655334293}
+NNTP-secure
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x909824640}
+TFO
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x421739442}
+-
 
-[[563]{lang="EN-US"}]{#struct_0_21182_x6397_1984699114}
+563
 
-[[Novell-Groupwise]{lang="EN-US"}]{#struct_0_21182_x6397_1819058715}
+Novell-Groupwise
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_1072671228}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_252974774}
+-
 
-[[1099]{lang="EN-US"}]{#struct_0_21182_x6397_x287001944}[、]{style="font-family:宋体"}[1677]{lang="EN-US"}[、]{style="font-family:宋体"}[2800]{lang="EN-US"}[、]{style="font-family:宋体"}[3800, 7100]{lang="EN-US"}[、]{style="font-family:宋体"}[7101]{lang="EN-US"}[、]{style="font-family:宋体"}[7180]{lang="EN-US"}[、]{style="font-family:宋体"}[7181]{lang="EN-US"}[、]{style="font-family:宋体"}[7205]{lang="EN-US"}[、]{style="font-family:宋体"}[9850]{lang="EN-US"}
+1099、1677、2800、3800, 7100、7101、7180、7181、7205、9850
 
-[[PCMail-Server]{lang="EN-US"}]{#struct_0_21182_x6397_1078245533}
+PCMail-Server
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x1313109167}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x2097879615}
+-
 
-[[158]{lang="EN-US"}]{#struct_0_21182_x6397_1415774188}
+158
 
-[[QMTP]{lang="EN-US"}]{#struct_0_21182_x6397_1781323560}
+QMTP
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_613221115}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x150309753}
+-
 
-[[209]{lang="EN-US"}]{#struct_0_21182_x6397_x1197006230}
+209
 
-[[X400]{lang="EN-US"}]{#struct_0_21182_x6397_x1716393694}
+X400
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x363428627}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1012489661}
+-
 
-[[102]{lang="EN-US"}]{#struct_0_21182_x6397_x1746062116}
+102
 
-[[SAP]{lang="EN-US"}]{#struct_0_21182_x6397_x1423202615}
+SAP
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x1266055000}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_670445813}
+-
 
-[[3200-3219]{lang="EN-US"}]{#struct_0_21182_x6397_1462828355}[、]{style="font-family:宋体"}[3221-3224]{lang="EN-US"}[、]{style="font-family:宋体"}[3226-3267]{lang="EN-US"}[、]{style="font-family:宋体"}[3270-3282]{lang="EN-US"}[、]{style="font-family:宋体"}[3284-3305]{lang="EN-US"}[、]{style="font-family:宋体"}[3307-3388]{lang="EN-US"}[、]{style="font-family:宋体"}[3390-3399]{lang="EN-US"}[、]{style="font-family:宋体"}[3600-3659]{lang="EN-US"}[、]{style="font-family:宋体"}[3662-3699]{lang="EN-US"}
+3200-3219、3221-3224、3226-3267、3270-3282、3284-3305、3307-3388、3390-3399、3600-3659、3662-3699
 
-[[Siebel]{lang="EN-US"}]{#struct_0_21182_x6397_949988847}
+Siebel
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x223620502}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1579602560}
+-
 
-[[2320]{lang="EN-US"}]{#struct_0_21182_x6397_2082093463}[、]{style="font-family:宋体"}[2321]{lang="EN-US"}[、]{style="font-family:宋体"}[8448]{lang="EN-US"}
+2320、2321、8448
 
-[[AFS]{lang="EN-US"}]{#struct_0_21182_x6397_1149280795}
+AFS
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x1872411633}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x902032232}
+-
 
-[[7000-7009]{lang="EN-US"}]{#struct_0_21182_x6397_x416803146}
+7000-7009
 
-[[Apple-AFP]{lang="EN-US"}]{#struct_0_21182_x6397_x277056180}
+Apple-AFP
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x1982887087}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1905418667}
+-
 
-[[548]{lang="EN-US"}]{#struct_0_21182_x6397_745996268}
+548
 
-[[CIFS-non-wafs]{lang="EN-US"}]{#struct_0_21182_x6397_549856054}
+CIFS-non-wafs
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x820087673}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_103844822}
+-
 
-[[139]{lang="EN-US"}]{#struct_0_21182_x6397_1839708529}[、]{style="font-family:宋体"}[445]{lang="EN-US"}
+139、445
 
-[[NFS]{lang="EN-US"}]{#struct_0_21182_x6397_1908795682}
+NFS
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_773614216}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_342711741}
+-
 
-[[2049]{lang="EN-US"}]{#struct_0_21182_x6397_1274525349}
+2049
 
-[[Novell-NetWare]{lang="EN-US"}]{#struct_0_21182_x6397_x1935832920}
+Novell-NetWare
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_538044175}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1287314320}
+-
 
-[[524]{lang="EN-US"}]{#struct_0_21182_x6397_793050435}
+524
 
-[[Sun-RPC]{lang="EN-US"}]{#struct_0_21182_x6397_x1579537024}
+Sun-RPC
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x250406187}
+Pass-through
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1149346331}
+-
 
-[[111]{lang="EN-US"}]{#struct_0_21182_x6397_x292779942}
+111
 
-[[BFTP]{lang="EN-US"}]{#struct_0_21182_x6397_x416737610}
+BFTP
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_850937692}
+LZ+TFO+DRE
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1982821551}
+-
 
-[[152]{lang="EN-US"}]{#struct_0_21182_x6397_x67532332}
+152
 
-[[FTP]{lang="EN-US"}]{#struct_0_21182_x6397_746061804}
+FTP
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x2035116988}
+Pass-through
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x820022137}
+-
 
-[[21]{lang="EN-US"}]{#struct_0_21182_x6397_x1129846357}
+21
 
-[[FTP-Data]{lang="EN-US"}]{#struct_0_21182_x6397_1908861218}
+FTP-Data
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x810576004}
+LZ+TFO+DRE
 
-[[20]{lang="EN-US"}]{#struct_0_21182_x6397_342777277}
+20
 
-[ ]{lang="EN-US" style="font-size:10.5pt"}
+FTPS
 
-[[FTPS]{lang="EN-US"}]{#struct_0_21182_x6397_x1845422918}
+TFO
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x1935767384}
+-
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1106611016}
+990
 
-[[990]{lang="EN-US"}]{#struct_0_21182_x6397_793115971}
+FTPS-Data
 
-[[FTPS-Data]{lang="EN-US"}]{#struct_0_21182_x6397_739519412}
+Pass-through
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x1579471488}
+989
 
-[[989]{lang="EN-US"}]{#struct_0_21182_x6397_1843252561}
+Simple-FTP
 
-[ ]{lang="EN-US" style="font-size:10.5pt"}
+LZ+TFO+DRE
 
-[[Simple-FTP]{lang="EN-US"}]{#struct_0_21182_x6397_1149411867}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_822786027}
+115
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x416672074}
+TFTP
 
-[[115]{lang="EN-US"}]{#struct_0_21182_x6397_116124074}
+LZ+TFO+DRE
 
-[[TFTP]{lang="EN-US"}]{#struct_0_21182_x6397_x1982756015}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_1353113814}
+69
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_746127340}
+TFTPS
 
-[[69]{lang="EN-US"}]{#struct_0_21182_x6397_x2058512427}
+TFO
 
-[[TFTPS]{lang="EN-US"}]{#struct_0_21182_x6397_x819956601}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x77349832}
+3713
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1908926754}
+AOL
 
-[[3713]{lang="EN-US"}]{#struct_0_21182_x6397_x794817538}
+Pass-through
 
-[[AOL]{lang="EN-US"}]{#struct_0_21182_x6397_342842813}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x1319382857}
+5190-5193
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1935701848}
+Apple-iChat
 
-[[5190-5193]{lang="EN-US"}]{#struct_0_21182_x6397_793181507}
+Pass-through
 
-[[Apple-iChat]{lang="EN-US"}]{#struct_0_21182_x6397_787330455}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x1579405952}
+5297、5298
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1316049005}
+IRC
 
-[[5297]{lang="EN-US"}]{#struct_0_21182_x6397_1149477403}[、]{style="font-family:宋体"}[5298]{lang="EN-US"}
+Pass-through
 
-[[IRC]{lang="EN-US"}]{#struct_0_21182_x6397_x669516725}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x416606538}
+531、6660-6669
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1248050194}
+Jabber
 
-[[531]{lang="EN-US"}]{#struct_0_21182_x6397_x1982690479}[、]{style="font-family:宋体"}[6660-6669]{lang="EN-US"}
+Pass-through
 
-[[Jabber]{lang="EN-US"}]{#struct_0_21182_x6397_746192876}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_316380757}
+5222、5269
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x819891065}
+Lotus-Sametime-Connect
 
-[[5222]{lang="EN-US"}]{#struct_0_21182_x6397_733961860}[、]{style="font-family:宋体"}[5269]{lang="EN-US"}
+Pass-through
 
-[[Lotus-Sametime-Connect]{lang="EN-US"}]{#struct_0_21182_x6397_1908992290}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x384157290}
+1533
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_342908349}
+MS-Chat
 
-[[1533]{lang="EN-US"}]{#struct_0_21182_x6397_x1935636312}
+Pass-through
 
-[[MS-Chat]{lang="EN-US"}]{#struct_0_21182_x6397_x1147142705}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_793247043}
+6665、6667
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_261618350}
+MSN-Messenger
 
-[[6665]{lang="EN-US"}]{#struct_0_21182_x6397_x1579340416}[、]{style="font-family:宋体"}[6667]{lang="EN-US"}
+Pass-through
 
-[[MSN-Messenger]{lang="EN-US"}]{#struct_0_21182_x6397_x1107599864}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_1149542939}
+1863、6891-6900
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1114613252}
+Yahoo-Messenger
 
-[[1863]{lang="EN-US"}]{#struct_0_21182_x6397_x416541002}[、]{style="font-family:宋体"}[6891-6900]{lang="EN-US"}
+Pass-through
 
-[[Yahoo-Messenger]{lang="EN-US"}]{#struct_0_21182_x6397_x1443996189}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x1982624943}
+5000、5001、5050、5100
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_746258412}
+DNS
 
-[[5000]{lang="EN-US"}]{#struct_0_21182_x6397_x1061286895}[、]{style="font-family:宋体"}[5001]{lang="EN-US"}[、]{style="font-family:宋体"}[5050]{lang="EN-US"}[、]{style="font-family:宋体"}[5100]{lang="EN-US"}
+Pass-through
 
-[[DNS]{lang="EN-US"}]{#struct_0_21182_x6397_x819825529}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x71094028}
+53
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1909057826}
+iSNS
 
-[[53]{lang="EN-US"}]{#struct_0_21182_x6397_x1247903299}
+Pass-through
 
-[[iSNS]{lang="EN-US"}]{#struct_0_21182_x6397_342973885}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x1935570776}
+3205
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_514411347}
+Service-Location
 
-[[3205]{lang="EN-US"}]{#struct_0_21182_x6397_793312579}
+Pass-through
 
-[[Service-Location]{lang="EN-US"}]{#struct_0_21182_x6397_x894716808}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x1579274880}
+427
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1149608475}
+WINS
 
-[[427]{lang="EN-US"}]{#struct_0_21182_x6397_457435237}
+Pass-through
 
-[[WINS]{lang="EN-US"}]{#struct_0_21182_x6397_x416475466}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_1640181876}
+42、137、1512
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1982559407}
+Cisco-NetFlow
 
-[[42]{lang="EN-US"}]{#struct_0_21182_x6397_746323948}[、]{style="font-family:宋体"}[137]{lang="EN-US"}[、]{style="font-family:宋体"}[1512]{lang="EN-US"}
+Pass-through
 
-[[Cisco-NetFlow]{lang="EN-US"}]{#struct_0_21182_x6397_x1789064753}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x819759993}
+7544、7545
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_255329030}
+Basic-TCP-services
 
-[[7544]{lang="EN-US"}]{#struct_0_21182_x6397_1909123362}[、]{style="font-family:宋体"}[7545]{lang="EN-US"}
+Pass-through
 
-[[Basic-TCP-services]{lang="EN-US"}]{#struct_0_21182_x6397_343039421}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_1759459789}
+1-19
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1935505240}
+BGP
 
-[[1-19]{lang="EN-US"}]{#struct_0_21182_x6397_x1997855307}
+LZ+TFO+DRE
 
-[[BGP]{lang="EN-US"}]{#struct_0_21182_x6397_793378115}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x1713492608}
+179
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1822250682}
+MS-Message-Queuing
 
-[[179]{lang="EN-US"}]{#struct_0_21182_x6397_1015390747}
+LZ+TFO+DRE
 
-[[MS-Message-Queuing]{lang="EN-US"}]{#struct_0_21182_x6397_x550693194}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x1876257534}
+1801、2101、2103、2105
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x2116777135}
+NTP
 
-[[1801]{lang="EN-US"}]{#struct_0_21182_x6397_x2080731357}[、]{style="font-family:宋体"}[2101]{lang="EN-US"}[、]{style="font-family:宋体"}[2103]{lang="EN-US"}[、]{style="font-family:宋体"}[2105]{lang="EN-US"}
+Pass-through
 
-[[NTP]{lang="EN-US"}]{#struct_0_21182_x6397_612106220}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x953977721}
+123
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1947386543}
+Other-Secure
 
-[[123]{lang="EN-US"}]{#struct_0_21182_x6397_1774905634}
+Pass-through
 
-[[Other-Secure]{lang="EN-US"}]{#struct_0_21182_x6397_208821693}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x149924892}
+261、44,、684、695、994、2252、2478、2479、2482、2484、2679、2762、2998、3077、3078、3183、3191、3220、3410、3424、3471、3496,3509、3529、3539、3660、3661、3747、3864、3885、3896、3897、3995、4031、5007、5989、5990、7674、9802、12109
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x2069722968}
+SOAP
 
-[[261]{lang="EN-US"}]{#struct_0_21182_x6397_659160387}[、]{style="font-family:宋体"}[44,]{lang="EN-US"}[、]{style="font-family:宋体"}[684]{lang="EN-US"}[、]{style="font-family:宋体"}[695]{lang="EN-US"}[、]{style="font-family:宋体"}[994]{lang="EN-US"}[、]{style="font-family:宋体"}[2252]{lang="EN-US"}[、]{style="font-family:宋体"}[2478]{lang="EN-US"}[、]{style="font-family:宋体"}[2479]{lang="EN-US"}[、]{style="font-family:宋体"}[2482]{lang="EN-US"}[、]{style="font-family:宋体"}[2484]{lang="EN-US"}[、]{style="font-family:宋体"}[2679]{lang="EN-US"}[、]{style="font-family:宋体"}[2762]{lang="EN-US"}[、]{style="font-family:宋体"}[2998]{lang="EN-US"}[、]{style="font-family:宋体"}[3077]{lang="EN-US"}[、]{style="font-family:宋体"}[3078]{lang="EN-US"}[、]{style="font-family:宋体"}[3183]{lang="EN-US"}[、]{style="font-family:宋体"}[3191]{lang="EN-US"}[、]{style="font-family:宋体"}[3220]{lang="EN-US"}[、]{style="font-family:宋体"}[3410]{lang="EN-US"}[、]{style="font-family:宋体"}[3424]{lang="EN-US"}[、]{style="font-family:宋体"}[3471]{lang="EN-US"}[、]{style="font-family:宋体"}[3496,3509]{lang="EN-US"}[、]{style="font-family:宋体"}[3529]{lang="EN-US"}[、]{style="font-family:宋体"}[3539]{lang="EN-US"}[、]{style="font-family:宋体"}[3660]{lang="EN-US"}[、]{style="font-family:宋体"}[3661]{lang="EN-US"}[、]{style="font-family:宋体"}[3747]{lang="EN-US"}[、]{style="font-family:宋体"}[3864]{lang="EN-US"}[、]{style="font-family:宋体"}[3885]{lang="EN-US"}[、]{style="font-family:宋体"}[3896]{lang="EN-US"}[、]{style="font-family:宋体"}[3897]{lang="EN-US"}[、]{style="font-family:宋体"}[3995]{lang="EN-US"}[、]{style="font-family:宋体"}[4031]{lang="EN-US"}[、]{style="font-family:宋体"}[5007]{lang="EN-US"}[、]{style="font-family:宋体"}[5989]{lang="EN-US"}[、]{style="font-family:宋体"}[5990]{lang="EN-US"}[、]{style="font-family:宋体"}[7674]{lang="EN-US"}[、]{style="font-family:宋体"}[9802]{lang="EN-US"}[、]{style="font-family:宋体"}[12109]{lang="EN-US"}
+LZ+TFO+DRE
 
-[[SOAP]{lang="EN-US"}]{#struct_0_21182_x6397_x1822696403}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x1713427072}
+7627
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1015456283}
+Symantec-AntiVirus
 
-[[7627]{lang="EN-US"}]{#struct_0_21182_x6397_x682234401}
+LZ+TFO+DRE
 
-[[Symantec-AntiVirus]{lang="EN-US"}]{#struct_0_21182_x6397_x550627658}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x2116711599}
+2847、2848、2967、2968, 38037, 38292
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_614987381}
+BitTorrent
 
-[[2847]{lang="EN-US"}]{#struct_0_21182_x6397_612171756}[、]{style="font-family:宋体"}[2848]{lang="EN-US"}[、]{style="font-family:宋体"}[2967]{lang="EN-US"}[、]{style="font-family:宋体"}[2968, 38037, 38292]{lang="EN-US"}
+Pass-through
 
-[[BitTorrent]{lang="EN-US"}]{#struct_0_21182_x6397_x953912185}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x1967912512}
+6881--6889, 6969
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1774971170}
+eDonkey
 
-[[6881]{lang="EN-US"}]{#struct_0_21182_x6397_x598360247}[--]{style="font-family:宋体"}[6889, 6969]{lang="EN-US"}
+Pass-through
 
-[[eDonkey]{lang="EN-US"}]{#struct_0_21182_x6397_208887229}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x2069657432}
+4661、4662
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_659225923}
+Gnutella
 
-[[4661]{lang="EN-US"}]{#struct_0_21182_x6397_385818995}[、]{style="font-family:宋体"}[4662]{lang="EN-US"}
+Pass-through
 
-[[Gnutella]{lang="EN-US"}]{#struct_0_21182_x6397_x1713361536}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_1015521819}
+6346--6349、6355、5634
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_2109902824}
+Grouper
 
-[[6346]{lang="EN-US"}]{#struct_0_21182_x6397_x550562122}[--]{style="font-family:宋体"}[6349]{lang="EN-US"}[、]{style="font-family:宋体"}[6355]{lang="EN-US"}[、]{style="font-family:宋体"}[5634]{lang="EN-US"}
+Pass-through
 
-[[Grouper]{lang="EN-US"}]{#struct_0_21182_x6397_x2116646063}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_1134056129}
+8038
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_612237292}
+HotLine
 
-[[8038]{lang="EN-US"}]{#struct_0_21182_x6397_x953846649}
+Pass-through
 
-[[HotLine]{lang="EN-US"}]{#struct_0_21182_x6397_1775036706}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x1415384920}
+5500--5503
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_208952765}
+Kazaa
 
-[[5500]{lang="EN-US"}]{#struct_0_21182_x6397_x2069591896}[--]{style="font-family:宋体"}[5503]{lang="EN-US"}
+Pass-through
 
-[[Kazaa]{lang="EN-US"}]{#struct_0_21182_x6397_659291459}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x1610412493}
+1214
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1713296000}
+Laplink-ShareDirect
 
-[[1214]{lang="EN-US"}]{#struct_0_21182_x6397_1015587355}
+Pass-through
 
-[[Laplink-ShareDirect]{lang="EN-US"}]{#struct_0_21182_x6397_x1461421798}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x550496586}
+2705
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x2116580527}
+Napster
 
-[[2705]{lang="EN-US"}]{#struct_0_21182_x6397_612302828}
+Pass-through
 
-[[Napster]{lang="EN-US"}]{#struct_0_21182_x6397_x10699973}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x953781113}
+6666、6677、6700、6688, 7777、8875
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1775102242}
+Qnext
 
-[[6666]{lang="EN-US"}]{#struct_0_21182_x6397_2138381857}[、]{style="font-family:宋体"}[6677]{lang="EN-US"}[、]{style="font-family:宋体"}[6700]{lang="EN-US"}[、]{style="font-family:宋体"}[6688, 7777]{lang="EN-US"}[、]{style="font-family:宋体"}[8875]{lang="EN-US"}
+Pass-through
 
-[[Qnext]{lang="EN-US"}]{#struct_0_21182_x6397_209018301}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x2069526360}
+44、5555
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_659356995}
+SoulSeek
 
-[[44]{lang="EN-US"}]{#struct_0_21182_x6397_1220944108}[、]{style="font-family:宋体"}[5555]{lang="EN-US"}
+Pass-through
 
-[[SoulSeek]{lang="EN-US"}]{#struct_0_21182_x6397_x1713230464}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_1015652891}
+2234、5534
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x550431050}
+WASTE
 
-[[2234]{lang="EN-US"}]{#struct_0_21182_x6397_1262648818}[、]{style="font-family:宋体"}[5534]{lang="EN-US"}
+Pass-through
 
-[[WASTE]{lang="EN-US"}]{#struct_0_21182_x6397_x2116514991}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_612368364}
+1337
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x27167998}
+WinMX
 
-[[1337]{lang="EN-US"}]{#struct_0_21182_x6397_x953715577}
+Pass-through
 
-[[WinMX]{lang="EN-US"}]{#struct_0_21182_x6397_1775167778}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_209083837}
+6699
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_612542035}
+AppSocket
 
-[[6699]{lang="EN-US"}]{#struct_0_21182_x6397_x2069460824}
+LZ+TFO+DRE
 
-[[AppSocket]{lang="EN-US"}]{#struct_0_21182_x6397_659422531}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x1713164928}
+9100
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1935499730}
+IPP
 
-[[9100]{lang="EN-US"}]{#struct_0_21182_x6397_1015718427}
+LZ+TFO+DRE
 
-[[IPP]{lang="EN-US"}]{#struct_0_21182_x6397_x550365514}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x2116449455}
+631
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1260457575}
+SUN-Xprint
 
-[[631]{lang="EN-US"}]{#struct_0_21182_x6397_612433900}
+LZ+TFO+DRE
 
-[[SUN-Xprint]{lang="EN-US"}]{#struct_0_21182_x6397_x953650041}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_1775233314}
+8100
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_209149373}
+Unix-Printing
 
-[[8100]{lang="EN-US"}]{#struct_0_21182_x6397_1760751330}
+LZ+TFO+DRE
 
-[[Unix-Printing]{lang="EN-US"}]{#struct_0_21182_x6397_x2069395288}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_659488067}
+170, 515
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1311822464}
+Altiris-CarbonCopy
 
-[[170, 515]{lang="EN-US"}]{#struct_0_21182_x6397_1417060891}
+Pass-through
 
-[[Altiris-CarbonCopy]{lang="EN-US"}]{#struct_0_21182_x6397_x700971748}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x149023050}
+1680
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1715106991}
+Apple-NetAssistant
 
-[[1680]{lang="EN-US"}]{#struct_0_21182_x6397_1013776364}
+Pass-through
 
-[[Apple-NetAssistant]{lang="EN-US"}]{#struct_0_21182_x6397_x552307577}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x2118391518}
+3283
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1511285106}
+Citrix-ICA
 
-[[3283]{lang="EN-US"}]{#struct_0_21182_x6397_610491837}
+LZ+TFO+DRE
 
-[[Citrix-ICA]{lang="EN-US"}]{#struct_0_21182_x6397_x1668052824}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x1311756928}
+1494、2598
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1417126427}
+ControlIT
 
-[[1494]{lang="EN-US"}]{#struct_0_21182_x6397_x148957514}[、]{style="font-family:宋体"}[2598]{lang="EN-US"}
+TFO
 
-[[ControlIT]{lang="EN-US"}]{#struct_0_21182_x6397_880724653}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x1715041455}
+799
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1013841900}
+Danware-NetOp
 
-[[799]{lang="EN-US"}]{#struct_0_21182_x6397_x552242041}
+TFO
 
-[[Danware-NetOp]{lang="EN-US"}]{#struct_0_21182_x6397_x2118325982}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_610557373}
+6502
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1667987288}
+Laplink-Host
 
-[[6502]{lang="EN-US"}]{#struct_0_21182_x6397_1060896067}
+TFO
 
-[[Laplink-Host]{lang="EN-US"}]{#struct_0_21182_x6397_x1311691392}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_1417191963}
+1547
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1496936339}
+Laplink-PCSync
 
-[[1547]{lang="EN-US"}]{#struct_0_21182_x6397_x148891978}
+TFO
 
-[[Laplink-PCSync]{lang="EN-US"}]{#struct_0_21182_x6397_x1714975919}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_1013907436}
+8444
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x552176505}
+Laplink-PCSync-secure
 
-[[8444]{lang="EN-US"}]{#struct_0_21182_x6397_x2118260446}
+TFO
 
-[[Laplink-PCSync-secure]{lang="EN-US"}]{#struct_0_21182_x6397_610622909}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x1667921752}
+8443
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1060961603}
+MS-Terminal-Services
 
-[[8443]{lang="EN-US"}]{#struct_0_21182_x6397_176539456}
+TFO
 
-[[MS-Terminal-Services]{lang="EN-US"}]{#struct_0_21182_x6397_x1311625856}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_1417257499}
+3389
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1714910383}
+Netopia-Timbuktu
 
-[[3389]{lang="EN-US"}]{#struct_0_21182_x6397_1013972972}
+TFO
 
-[[Netopia-Timbuktu]{lang="EN-US"}]{#struct_0_21182_x6397_x552110969}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x2118194910}
+407、1417--1420
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_610688445}
+PCAnywhere
 
-[[407]{lang="EN-US"}]{#struct_0_21182_x6397_x1667856216}[、]{style="font-family:宋体"}[1417]{lang="EN-US"}[--]{style="font-family:宋体"}[1420]{lang="EN-US"}
+TFO
 
-[[PCAnywhere]{lang="EN-US"}]{#struct_0_21182_x6397_1061027139}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x1029667830}
+73、5631、5632、65301
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1311560320}
+RAdmin
 
-[[73]{lang="EN-US"}]{#struct_0_21182_x6397_1417323035}[、]{style="font-family:宋体"}[5631]{lang="EN-US"}[、]{style="font-family:宋体"}[5632]{lang="EN-US"}[、]{style="font-family:宋体"}[65301]{lang="EN-US"}
+TFO
 
-[[RAdmin]{lang="EN-US"}]{#struct_0_21182_x6397_x148760906}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x1714844847}
+4899
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1014038508}
+Remote-Anything
 
-[[4899]{lang="EN-US"}]{#struct_0_21182_x6397_x552045433}
+TFO
 
-[[Remote-Anything]{lang="EN-US"}]{#struct_0_21182_x6397_x2118129374}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x970537647}
+3999、4000
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_610753981}
+Vmware-VMConsole
 
-[[3999]{lang="EN-US"}]{#struct_0_21182_x6397_x1667790680}[、]{style="font-family:宋体"}[4000]{lang="EN-US"}
+TFO
 
-[[Vmware-VMConsole]{lang="EN-US"}]{#struct_0_21182_x6397_1061092675}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x1311494784}
+902
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1417388571}
+VNC
 
-[[902]{lang="EN-US"}]{#struct_0_21182_x6397_x710366689}
+TFO
 
-[[VNC]{lang="EN-US"}]{#struct_0_21182_x6397_x148695370}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x1714779311}
+5801--5809、6900--6909
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1014104044}
+XWindows
 
-[[5801]{lang="EN-US"}]{#struct_0_21182_x6397_x551979897}[--]{style="font-family:宋体"}[5809]{lang="EN-US"}[、]{style="font-family:宋体"}[6900]{lang="EN-US"}[--]{style="font-family:宋体"}[6909]{lang="EN-US"}
+TFO
 
-[[XWindows]{lang="EN-US"}]{#struct_0_21182_x6397_x2118063838}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_610819517}
+6000--6063
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1667725144}
+Double-Take
 
-[[6000]{lang="EN-US"}]{#struct_0_21182_x6397_1914600702}[--]{style="font-family:宋体"}[6063]{lang="EN-US"}
+LZ+TFO+DRE
 
-[[Double-Take]{lang="EN-US"}]{#struct_0_21182_x6397_1061158211}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x1445712512}
+1100、1105
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1283170843}
+EMC-Celerra-Replicator
 
-[[1100]{lang="EN-US"}]{#struct_0_21182_x6397_x282913098}[、]{style="font-family:宋体"}[1105]{lang="EN-US"}
+LZ+TFO+DRE
 
-[[EMC-Celerra-Replicator]{lang="EN-US"}]{#struct_0_21182_x6397_x1848997039}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_879886316}
+8888
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x686197625}
+MS-Content-Replication-Service
 
-[[8888]{lang="EN-US"}]{#struct_0_21182_x6397_2042685730}
+TFO
 
-[[MS-Content-Replication-Service]{lang="EN-US"}]{#struct_0_21182_x6397_476601789}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x1801942872}
+560、507
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1701417586}
+Netapp-SnapMirror
 
-[[560]{lang="EN-US"}]{#struct_0_21182_x6397_926940483}[、]{style="font-family:宋体"}[507]{lang="EN-US"}
+LZ+TFO+DRE
 
-[[Netapp-SnapMirror]{lang="EN-US"}]{#struct_0_21182_x6397_x1445646976}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_1283236379}
+10565--10569
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x282847562}
+Remote-Replication-Agent
 
-[[10565]{lang="EN-US"}]{#struct_0_21182_x6397_x1848931503}[--]{style="font-family:宋体"}[10569]{lang="EN-US"}
+TFO
 
-[[Remote-Replication-Agent]{lang="EN-US"}]{#struct_0_21182_x6397_879951852}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x686132089}
+5678
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_2042751266}
+Rsync
 
-[[5678]{lang="EN-US"}]{#struct_0_21182_x6397_476667325}
+TFO
 
-[[Rsync]{lang="EN-US"}]{#struct_0_21182_x6397_x1801877336}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_927006019}
+873
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1445581440}
+Borland-Interbase
 
-[[873]{lang="EN-US"}]{#struct_0_21182_x6397_1283301915}
+LZ+TFO+DRE
 
-[[Borland-Interbase]{lang="EN-US"}]{#struct_0_21182_x6397_1778904113}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x282782026}
+3050
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1848865967}
+IBM-DB2
 
-[[3050]{lang="EN-US"}]{#struct_0_21182_x6397_880017388}
+LZ+TFO+DRE
 
-[[IBM-DB2]{lang="EN-US"}]{#struct_0_21182_x6397_x686066553}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_2042816802}
+523
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_476732861}
+InterSystems-Cache
 
-[[523]{lang="EN-US"}]{#struct_0_21182_x6397_x1801811800}
+LZ+TFO+DRE
 
-[[InterSystems-Cache]{lang="EN-US"}]{#struct_0_21182_x6397_927071555}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x1445515904}
+1972
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1283367451}
+MS-SQL
 
-[[1972]{lang="EN-US"}]{#struct_0_21182_x6397_x282716490}
+LZ+TFO+DRE
 
-[[MS-SQL]{lang="EN-US"}]{#struct_0_21182_x6397_x1848800431}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_880082924}
+1433
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x686001017}
+MySQL
 
-[[1433]{lang="EN-US"}]{#struct_0_21182_x6397_2042882338}
+LZ+TFO+DRE
 
-[[MySQL]{lang="EN-US"}]{#struct_0_21182_x6397_476798397}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x1801746264}
+3306
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x882934866}
+Oracle
 
-[[3306]{lang="EN-US"}]{#struct_0_21182_x6397_927137091}
+LZ+TFO+DRE
 
-[[Oracle]{lang="EN-US"}]{#struct_0_21182_x6397_x1445450368}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_1283432987}
+66、1521、1525
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x282650954}
+Pervasive-SQL
 
-[[66]{lang="EN-US"}]{#struct_0_21182_x6397_x1848734895}[、]{style="font-family:宋体"}[1521]{lang="EN-US"}[、]{style="font-family:宋体"}[1525]{lang="EN-US"}
+LZ+TFO+DRE
 
-[[Pervasive-SQL]{lang="EN-US"}]{#struct_0_21182_x6397_880148460}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x685935481}
+1583
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_2042947874}
+PostgreSQL
 
-[[1583]{lang="EN-US"}]{#struct_0_21182_x6397_476863933}
+LZ+TFO+DRE
 
-[[PostgreSQL]{lang="EN-US"}]{#struct_0_21182_x6397_x1801680728}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_927202627}
+5432
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1445384832}
+Scalable-SQL
 
-[[5432]{lang="EN-US"}]{#struct_0_21182_x6397_1283498523}
+LZ+TFO+DRE
 
-[[Scalable-SQL]{lang="EN-US"}]{#struct_0_21182_x6397_x282585418}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x1848669359}
+3352
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_880213996}
+SQL-Service
 
-[[3352]{lang="EN-US"}]{#struct_0_21182_x6397_x685869945}
+LZ+TFO+DRE
 
-[[SQL-Service]{lang="EN-US"}]{#struct_0_21182_x6397_2043013410}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_476929469}
+156
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1801615192}
+Sybase-SQL
 
-[[156]{lang="EN-US"}]{#struct_0_21182_x6397_927268163}
+LZ+TFO+DRE
 
-[[Sybase-SQL]{lang="EN-US"}]{#struct_0_21182_x6397_x2115162752}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_613720603}
+1498、2439、2638、3968
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x952363338}
+UniSQL
 
-[[1498]{lang="EN-US"}]{#struct_0_21182_x6397_1776520017}[、]{style="font-family:宋体"}[2439]{lang="EN-US"}[、]{style="font-family:宋体"}[2638]{lang="EN-US"}[、]{style="font-family:宋体"}[3968]{lang="EN-US"}
+LZ+TFO+DRE
 
-[[UniSQL]{lang="EN-US"}]{#struct_0_21182_x6397_210436076}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x1355647865}
+1978、1979
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1373235490}
+HTTPS
 
-[[1978]{lang="EN-US"}]{#struct_0_21182_x6397_x192848451}[、]{style="font-family:宋体"}[1979]{lang="EN-US"}
+TFO
 
-[[HTTPS]{lang="EN-US"}]{#struct_0_21182_x6397_1823574184}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_257490243}
+443
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x2115097216}
+SSH
 
-[[443]{lang="EN-US"}]{#struct_0_21182_x6397_613786139}
+TFO
 
-[[SSH]{lang="EN-US"}]{#struct_0_21182_x6397_x952297802}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_1776585553}
+22
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_210501612}
+EMC-SRDFA-IP
 
-[[22]{lang="EN-US"}]{#struct_0_21182_x6397_x1355582329}
+LZ+TFO+DRE
 
-[[EMC-SRDFA-IP]{lang="EN-US"}]{#struct_0_21182_x6397_1373301026}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_1823639720}
+1748
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_257555779}
+FCIP
 
-[[1748]{lang="EN-US"}]{#struct_0_21182_x6397_x2115031680}
+LZ+TFO+DRE
 
-[[FCIP]{lang="EN-US"}]{#struct_0_21182_x6397_613851675}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x952232266}
+3225
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1776651089}
+iFCP
 
-[[3225]{lang="EN-US"}]{#struct_0_21182_x6397_210567148}
+LZ+TFO+DRE
 
-[[iFCP]{lang="EN-US"}]{#struct_0_21182_x6397_x1355516793}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_1373366562}
+3420
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x192717379}
+iSCSI
 
-[[3420]{lang="EN-US"}]{#struct_0_21182_x6397_1823705256}
+LZ+TFO+DRE
 
-[[iSCSI]{lang="EN-US"}]{#struct_0_21182_x6397_257621315}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x2114966144}
+3260
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_613917211}
+Liquid-Audio
 
-[[3260]{lang="EN-US"}]{#struct_0_21182_x6397_x952166730}
+LZ+TFO+DRE
 
-[[Liquid-Audio]{lang="EN-US"}]{#struct_0_21182_x6397_1776716625}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x1355451257}
+18888
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1373432098}
+MS-NetShow
 
-[[18888]{lang="EN-US"}]{#struct_0_21182_x6397_x192651843}
+LZ+TFO+DRE
 
-[[MS-NetShow]{lang="EN-US"}]{#struct_0_21182_x6397_1823770792}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_257686851}
+1755
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x2114900608}
+RTSP
 
-[[1755]{lang="EN-US"}]{#struct_0_21182_x6397_613982747}
+LZ+TFO+DRE
 
-[[RTSP]{lang="EN-US"}]{#struct_0_21182_x6397_x952101194}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_1776782161}
+554、8554
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_210698220}
+VDOLive
 
-[[554]{lang="EN-US"}]{#struct_0_21182_x6397_x1355385721}[、]{style="font-family:宋体"}[8554]{lang="EN-US"}
+LZ+TFO+DRE
 
-[[VDOLive]{lang="EN-US"}]{#struct_0_21182_x6397_1373497634}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x192586307}
+7000
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1823836328}
+BMC-Patrol
 
-[[7000]{lang="EN-US"}]{#struct_0_21182_x6397_257752387}
+Pass-through
 
-[[BMC-Patrol]{lang="EN-US"}]{#struct_0_21182_x6397_614048283}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x952035658}
+6161、6162、6767、6768, 8160、8161、10128
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1776847697}
+HP-OpenView
 
-[[6161]{lang="EN-US"}]{#struct_0_21182_x6397_210763756}[、]{style="font-family:宋体"}[6162]{lang="EN-US"}[、]{style="font-family:宋体"}[6767]{lang="EN-US"}[、]{style="font-family:宋体"}[6768, 8160]{lang="EN-US"}[、]{style="font-family:宋体"}[8161]{lang="EN-US"}[、]{style="font-family:宋体"}[10128]{lang="EN-US"}
+Pass-through
 
-[[HP-OpenView]{lang="EN-US"}]{#struct_0_21182_x6397_x1355320185}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_1373563170}
+7426--7431、7501、7510
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x192520771}
+HP-Radia
 
-[[7426]{lang="EN-US"}]{#struct_0_21182_x6397_1823901864}[--]{style="font-family:宋体"}[7431]{lang="EN-US"}[、]{style="font-family:宋体"}[7501]{lang="EN-US"}[、]{style="font-family:宋体"}[7510]{lang="EN-US"}
+LZ+TFO+DRE
 
-[[HP-Radia]{lang="EN-US"}]{#struct_0_21182_x6397_257817923}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_479830555}
+3460、3461、3464、3466
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1086253386}
+IBM-NetView
 
-[[3460]{lang="EN-US"}]{#struct_0_21182_x6397_1642629969}[、]{style="font-family:宋体"}[3461]{lang="EN-US"}[、]{style="font-family:宋体"}[3464]{lang="EN-US"}[、]{style="font-family:宋体"}[3466]{lang="EN-US"}
+Pass-through
 
-[[IBM-NetView]{lang="EN-US"}]{#struct_0_21182_x6397_76546028}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_x1489537913}
+729--731
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1239345442}
+IBM-Tivoli
 
-[[729]{lang="EN-US"}]{#struct_0_21182_x6397_1689684136}[--]{style="font-family:宋体"}[731]{lang="EN-US"}
+LZ+TFO+DRE
 
-[[IBM-Tivoli]{lang="EN-US"}]{#struct_0_21182_x6397_123600195}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_2045980032}
+94、627、1580、1581、1965
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_479896091}
+LANDesk
 
-[[94]{lang="EN-US"}]{#struct_0_21182_x6397_x1086187850}[、]{style="font-family:宋体"}[627]{lang="EN-US"}[、]{style="font-family:宋体"}[1580]{lang="EN-US"}[、]{style="font-family:宋体"}[1581]{lang="EN-US"}[、]{style="font-family:宋体"}[1965]{lang="EN-US"}
+LZ+TFO+DRE
 
-[[LANDesk]{lang="EN-US"}]{#struct_0_21182_x6397_76611564}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_x1489472377}
+9535、9593--9595
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1239410978}
+NetIQ
 
-[[9535]{lang="EN-US"}]{#struct_0_21182_x6397_x326672963}[、]{style="font-family:宋体"}[9593]{lang="EN-US"}[--]{style="font-family:宋体"}[9595]{lang="EN-US"}
+Pass-through
 
-[[NetIQ]{lang="EN-US"}]{#struct_0_21182_x6397_1689749672}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_2046045568}
+2220、2735、10113--10116
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_479961627}
+Netopia-netOctopus
 
-[[2220]{lang="EN-US"}]{#struct_0_21182_x6397_x1086122314}[、]{style="font-family:宋体"}[2735]{lang="EN-US"}[、]{style="font-family:宋体"}[10113]{lang="EN-US"}[--]{style="font-family:宋体"}[10116]{lang="EN-US"}
+Pass-through
 
-[[Netopia-netOctopus]{lang="EN-US"}]{#struct_0_21182_x6397_1642761041}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_76677100}
+1917、1921
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1489406841}
+Novell-ZenWorks
 
-[[1917]{lang="EN-US"}]{#struct_0_21182_x6397_x326607427}[、]{style="font-family:宋体"}[1921]{lang="EN-US"}
+LZ+TFO+DRE
 
-[[Novell-ZenWorks]{lang="EN-US"}]{#struct_0_21182_x6397_1689815208}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_123731267}
+517、1761--1763、2037, 2544、8039
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_2046111104}
+WAAS-FlowMonitor
 
-[[517]{lang="EN-US"}]{#struct_0_21182_x6397_480027163}[、]{style="font-family:宋体"}[1761]{lang="EN-US"}[--]{style="font-family:宋体"}[1763]{lang="EN-US"}[、]{style="font-family:宋体"}[2037, 2544]{lang="EN-US"}[、]{style="font-family:宋体"}[8039]{lang="EN-US"}
+TFO
 
-[[WAAS-FlowMonitor]{lang="EN-US"}]{#struct_0_21182_x6397_1642826577}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_76742636}
+7878
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1489341305}
+WBEM
 
-[[7878]{lang="EN-US"}]{#struct_0_21182_x6397_x326541891}
+Pass-through
 
-[[WBEM]{lang="EN-US"}]{#struct_0_21182_x6397_1689880744}
+-
 
-[[Pass-through]{lang="EN-US"}]{#struct_0_21182_x6397_123796803}
+5987、5988
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_2046176640}
+Clearcase
 
-[[5987]{lang="EN-US"}]{#struct_0_21182_x6397_x1085991242}[、]{style="font-family:宋体"}[5988]{lang="EN-US"}
+LZ+TFO+DRE
 
-[[Clearcase]{lang="EN-US"}]{#struct_0_21182_x6397_1642892113}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_76808172}
+371
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x1489275769}
+CVS
 
-[[371]{lang="EN-US"}]{#struct_0_21182_x6397_x326476355}
+LZ+TFO+DRE
 
-[[CVS]{lang="EN-US"}]{#struct_0_21182_x6397_1689946280}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_123862339}
+2401
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_2046242176}
+CIFS
 
-[[2401]{lang="EN-US"}]{#struct_0_21182_x6397_x1085925706}
+LZ+TFO+DRE
 
-[[CIFS]{lang="EN-US"}]{#struct_0_21182_x6397_1642957649}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_76873708}
+139、445
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1239673122}
+HTTP
 
-[[139]{lang="EN-US"}]{#struct_0_21182_x6397_x326410819}[、]{style="font-family:宋体"}[445]{lang="EN-US"}
+LZ+TFO+DRE
 
-[[HTTP]{lang="EN-US"}]{#struct_0_21182_x6397_1690011816}
+-
 
-[[LZ+TFO+DRE]{lang="EN-US"}]{#struct_0_21182_x6397_123927875}
+80、3128、8000、8001、8080
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_542244549}
+HTTPS
 
-[[80]{lang="EN-US"}]{#struct_0_21182_x6397_x620554865}[、]{style="font-family:宋体"}[3128]{lang="EN-US"}[、]{style="font-family:宋体"}[8000]{lang="EN-US"}[、]{style="font-family:宋体"}[8001]{lang="EN-US"}[、]{style="font-family:宋体"}[8080]{lang="EN-US"}
+TFO
 
-[[HTTPS]{lang="EN-US"}]{#struct_0_21182_x6397_945529076}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x217270338}
+443
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1348813603}
+L2TP
 
-[[443]{lang="EN-US"}]{#struct_0_21182_x6397_x1380069752}
+TFO
 
-[[L2TP]{lang="EN-US"}]{#struct_0_21182_x6397_898474909}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_542310085}
+1701
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_2108394026}
+OpenVPN
 
-[[1701]{lang="EN-US"}]{#struct_0_21182_x6397_945594612}
+TFO
 
-[[OpenVPN]{lang="EN-US"}]{#struct_0_21182_x6397_x1783288743}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x217204802}
+1194
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_1348879139}
+PPTP
 
-[[1194]{lang="EN-US"}]{#struct_0_21182_x6397_898540445}
+TFO
 
-[[PPTP]{lang="EN-US"}]{#struct_0_21182_x6397_x1830342910}
+-
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_542375621}
+1723
 
-[[-]{lang="EN-US" style="font-size:10.5pt"}]{#struct_0_21182_x6397_x620423793}
+【举例】
 
-[[1723]{lang="EN-US"}]{#struct_0_21182_x6397_945660148}
+\# 进入WAAS预定义策略视图。
 
-[ ]{lang="EN-US"}
+\<Sysname\> system-view
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1255617068}
+Sysname waas policy waas_default
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_x398742616}[进入]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[预定义策略视图。]{style="font-family:宋体"}
+Sysname-waaspolicy-waas_default
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_21182_x6397_2060336403}
+【相关命令】
 
-[\[Sysname\] waas policy waas_default]{lang="EN-US"}
-
-[\[Sysname-waaspolicy-waas_default\]]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1324876362}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display waas policy]{lang="EN-US"}**]{#struct_0_21182_x6397_146885032}
-
-::: {#282580802 .myid}
-[]{#_Toc404787446}[]{#struct_0_21182_x6397_1687507654}[]{#_Toc382831082}
+·**display waas policy**
 
 **WAAS \-- WAAS配置命令 \-- waas tfo auto-discovery blacklist enable**
 
 ------------------------------------------------------------------------
 
-[**[waas tfo auto-discovery blacklist enable]{lang="EN-US"}**]{#struct_0_21182_x6397_x1783223207}[命令用来开启自动发现黑名单功能。]{style="font-family:宋体"}
+**[waas tfo auto-discovery blacklist enable**]命令用来开启自动发现黑名单功能。
 
-[**[undo waas tfo auto-discovery blacklist enable]{lang="EN-US"}**]{#struct_0_21182_x6397_x86664224}[命令用来关闭自动发现黑名单功能。]{style="font-family:宋体"}
+**[undo waas tfo auto-discovery blacklist enable**]命令用来关闭自动发现黑名单功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1445989056}
+【命令】
 
-[**[waas tfo auto-discovery blacklist enable]{lang="EN-US"}**]{#struct_0_21182_x6397_x1309844441}
+**[waas tfo auto-discovery blacklist enable**]
 
-[**[undo waas tfo auto-discovery blacklist enable]{lang="EN-US"}**]{#struct_0_21182_x6397_x1509618956}
+**[undo waas tfo auto-discovery blacklist enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1498062703}
+【缺省情况】
 
-[[自动发现黑名单功能处于关闭状态。]{style="font-family:宋体"}]{#struct_0_21182_x6397_166948727}
+自动发现黑名单功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1645968509}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_21182_x6397_34858202}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x995530901}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_1056253446}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x2140092538}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_21182_x6397_2034065418}
+【使用指导】
 
-[[当本端设备配置了]{style="font-family:宋体"}[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_1004454292}[策略并应用于接口时，如果本端设备不能通过此接口与对端设备建立]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接，那么系统自动将请求的服务器接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址和端口号加入黑名单，对匹配黑名单的流量不做任何优化。]{style="font-family:宋体"}
+当本端设备配置了WAAS策略并应用于接口时，如果本端设备不能通过此接口与对端设备建立TCP连接，那么系统自动将请求的服务器接口的IP地址和端口号加入黑名单，对匹配黑名单的流量不做任何优化。
 
-[[在建立]{style="font-family:宋体"}[TCP]{lang="EN-US"}]{#struct_0_21182_x6397_1922823641}[连接的三次握手过程中，本端发送携带特定]{style="font-family:宋体"}[TCP]{lang="EN-US"}[选项的请求报文后，如果发生下列情况，则认为连接建立失败：]{style="font-family:宋体"}
+在建立TCP连接的三次握手过程中，本端发送携带特定TCP选项的请求报文后，如果发生下列情况，则认为连接建立失败：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在指定时间内未作出有效应答。]{style="font-family:宋体"}]{#struct_0_21182_x6397_x217139266}
+·在指定时间内未作出有效应答。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对端设备关闭了]{style="font-family:宋体"}]{#struct_0_21182_x6397_x549715375}[TCP]{lang="EN-US"}[连接。]{style="font-family:宋体"}
+·对端设备关闭了TCP连接。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x979651680}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_x733114834}[开启]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[自动发现黑名单功能。]{style="font-family:宋体"}
+\# 开启WAAS自动发现黑名单功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_21182_x6397_1323896740}
+\<Sysname\> system-view
 
-[\[Sysname\] waas tfo auto-discovery blacklist enable]{lang="EN-US"}
+Sysname waas tfo auto-discovery blacklist enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1025788326}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display waas tfo auto-discovery blacklist]{lang="EN-US"}**]{#struct_0_21182_x6397_x1125459879}
-:::
-
-::: {#-1486098715 .myid}
-[]{#_Toc404787447}[]{#struct_0_21182_x6397_216386645}
+·**display waas tfo auto-discovery blacklist**
 
 **WAAS \-- WAAS配置命令 \-- waas tfo auto-discovery blacklist hold-time**
 
 ------------------------------------------------------------------------
 
-[**[waas tfo auto-discovery blacklist hold-time]{lang="EN-US"}**]{#struct_0_21182_x6397_x599784982}[命令用来配置黑名单表项的老化时间。]{style="font-family:宋体"}
+**[waas tfo auto-discovery blacklist hold-time**]命令用来配置黑名单表项的老化时间。
 
-[**[undo waas tfo auto-discovery blacklist hold-time]{lang="EN-US"}**]{#struct_0_21182_x6397_x2094466885}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo waas tfo auto-discovery blacklist hold-time**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1991415926}
+【命令】
 
-[**[waas tfo auto-discovery blacklist hold-time ]{lang="EN-US"}***[minutes]{lang="EN-US"}*]{#struct_0_21182_x6397_x1741288101}
+**[waas tfo auto-discovery blacklist hold-time ***minutes*]
 
-[**[undo waas tfo auto-discovery blacklist hold-time]{lang="EN-US"}**]{#struct_0_21182_x6397_x1348008047}
+**[undo waas tfo auto-discovery blacklist hold-time**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1834359131}
+【缺省情况】
 
-[[黑名单表项的老化时间为]{style="font-family:宋体"}[5]{lang="EN-US"}]{#struct_0_21182_x6397_1348944675}[分钟。]{style="font-family:宋体"}
+黑名单表项的老化时间为5分钟。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_769617990}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_21182_x6397_1424041364}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x178542463}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_1492577176}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x224932704}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x844109069}
+【参数】
 
-[*[minutes]{lang="EN-US"}*]{#struct_0_21182_x6397_x1288492488}[：指定黑名单表项的老化时间，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[10080]{lang="EN-US"}[，单位为分钟。]{style="font-family:宋体"}
+*[minutes*]：指定黑名单表项的老化时间，取值范围为1～10080，单位为分钟。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1335153196}
+【使用指导】
 
-[[黑名单表项具有一定的生存时间，超出老化时间，黑名单表项被系统自动删除，当有新连接接入时，设备通过发现黑名单功能构建新的黑名单表项。]{style="font-family:宋体"}]{#struct_0_21182_x6397_140746197}
+黑名单表项具有一定的生存时间，超出老化时间，黑名单表项被系统自动删除，当有新连接接入时，设备通过发现黑名单功能构建新的黑名单表项。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1617782786}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_x444763083}[配置]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[黑名单表项的老化时间为]{style="font-family:宋体"}[30]{lang="EN-US"}[分钟。]{style="font-family:宋体"}
+\# 配置WAAS黑名单表项的老化时间为30分钟。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_21182_x6397_710450398}
+\<Sysname\> system-view
 
-[\[Sysname\] waas tfo auto-discovery blacklist hold-time 30]{lang="EN-US"}
+Sysname waas tfo auto-discovery blacklist hold-time 30
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x2142399186}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display waas tfo auto-discovery blacklist]{lang="EN-US"}**]{#struct_0_21182_x6397_x1379938680}
+·**display waas tfo auto-discovery blacklist**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[waas tfo auto-discovery blacklist enable]{lang="EN-US"}**]{#struct_0_21182_x6397_x135505511}
-:::
-
-::: {#-1708448751 .myid}
-[]{#_Toc404787448}[]{#struct_0_21182_x6397_x747463826}
+·**waas tfo auto-discovery blacklist enable**
 
 **WAAS \-- WAAS配置命令 \-- waas tfo base-congestion-window**
 
 ------------------------------------------------------------------------
 
-[**[waas tfo base-congestion-window]{lang="EN-US"}**]{#struct_0_21182_x6397_x1379951436}[命令用来配置超时重传时慢启动的初始拥塞窗口大小。]{style="font-family:宋体"}
+**[waas tfo base-congestion-window**]命令用来配置超时重传时慢启动的初始拥塞窗口大小。
 
-[**[undo waas tfo base-congestion-window]{lang="EN-US"}**]{#struct_0_21182_x6397_753221763}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo waas tfo base-congestion-window**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_264347012}
+【命令】
 
-[**[waas tfo base-congestion-window ]{lang="EN-US"}***[segments]{lang="EN-US"}*]{#struct_0_21182_x6397_1481783254}
+**[waas tfo base-congestion-window ***segments*]
 
-[**[undo waas tfo base-congestion-window]{lang="EN-US"}**]{#struct_0_21182_x6397_136905339}
+**[undo waas tfo base-congestion-window**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1915768428}
+【缺省情况】
 
-[[初始拥塞窗口为]{style="font-family:宋体"}[2]{lang="EN-US"}]{#struct_0_21182_x6397_x2118432983}[。]{style="font-family:宋体"}
+初始拥塞窗口为2。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1024698185}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_21182_x6397_x1380208812}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1928356306}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_1667514318}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x630184557}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_21182_x6397_898605981}
+【参数】
 
-[*[segments]{lang="EN-US"}*]{#struct_0_21182_x6397_x361537345}*[：]{style="font-family:宋体"}*[超时重传时慢启动的初始拥塞窗口大小，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[10]{lang="EN-US"}[，单位为最大报文段个数。]{style="font-family:宋体"}
+*[segments*]*：*超时重传时慢启动的初始拥塞窗口大小，取值范围为1～10，单位为最大报文段个数。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1005956762}
+【使用指导】
 
-[[拥塞窗口的大小取决于网络的拥塞程度和发送速度，并且动态的在变化。设置合理的慢启动初始拥塞窗口，当拥塞发生后，能够较快的恢复到网络最大传输能力。]{style="font-family:宋体"}]{#struct_0_21182_x6397_1380320232}
+拥塞窗口的大小取决于网络的拥塞程度和发送速度，并且动态的在变化。设置合理的慢启动初始拥塞窗口，当拥塞发生后，能够较快的恢复到网络最大传输能力。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1269462936}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_999046271}[配置超时重传时慢启动的初始拥塞窗口为]{style="font-family:宋体"}[3]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置超时重传时慢启动的初始拥塞窗口为3。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_21182_x6397_x668889958}
+\<Sysname\> system-view
 
-[\[Sysname\] waas tfo base-congestion-window 3]{lang="EN-US"}
-:::
-
-::: {#-1711981500 .myid}
-[]{#_Toc404787449}[]{#struct_0_21182_x6397_1502343559}
+Sysname waas tfo base-congestion-window 3
 
 **WAAS \-- WAAS配置命令 \-- waas tfo keepalive**
 
 ------------------------------------------------------------------------
 
-[**[waas tfo keepalive]{lang="EN-US"}**]{#struct_0_21182_x6397_x1919635596}[命令用来开启]{style="font-family:宋体"}[TFO]{lang="EN-US"}[的保活功能。]{style="font-family:宋体"}
+**[waas tfo keepalive**]命令用来开启TFO的保活功能。
 
-[**[undo waas tfo keepalive]{lang="EN-US"}**]{#struct_0_21182_x6397_1868353725}[命令用来关闭]{style="font-family:宋体"}[TFO]{lang="EN-US"}[的保活功能。]{style="font-family:宋体"}
+**[undo waas tfo keepalive**]命令用来关闭TFO的保活功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1290842562}
+【命令】
 
-[**[waas tfo keepalive]{lang="EN-US"}**]{#struct_0_21182_x6397_x722309515}
+**[waas tfo keepalive**]
 
-[**[undo waas tfo keepalive]{lang="EN-US"}**]{#struct_0_21182_x6397_x834069880}
+**[undo waas tfo keepalive**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1889276388}
+【缺省情况】
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_x1830277374}[的保活功能处于关闭状态。]{style="font-family:宋体"}
+TFO的保活功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_130698389}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_21182_x6397_x78336463}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_819402513}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_1280102406}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x61043171}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1203610110}
+【使用指导】
 
-[[开启]{style="font-family:宋体"}[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_1596644260}[的保活功能后，系统启动保活定时器。当定时器超时后，如果通信双方仍没有数据传输，则向对端设备发送保活报文，使连接不断开。]{style="font-family:宋体"}
+开启TFO的保活功能后，系统启动保活定时器。当定时器超时后，如果通信双方仍没有数据传输，则向对端设备发送保活报文，使连接不断开。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_2042440400}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_x1615644711}[开启]{style="font-family:宋体"}[TFO]{lang="EN-US"}[的保活功能。]{style="font-family:宋体"}
+\# 开启TFO的保活功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_21182_x6397_x926190102}
+\<Sysname\> system-view
 
-[\[Sysname\] waas tfo keepalive]{lang="EN-US"}
-:::
-
-::: {#-746350279 .myid}
-[]{#_Toc404787450}[]{#struct_0_21182_x6397_x1675624235}
+Sysname waas tfo keepalive
 
 **WAAS \-- WAAS配置命令 \-- waas tfo optimize dre**
 
 ------------------------------------------------------------------------
 
-[**[waas tfo optimize dre]{lang="EN-US"}**]{#struct_0_21182_x6397_1662775636}[命令用来开启]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[消除数据冗余功能。]{style="font-family:宋体"}
+**[waas tfo optimize dre**]命令用来开启WAAS消除数据冗余功能。
 
-[**[undo waas tfo optimize dre]{lang="EN-US"}**]{#struct_0_21182_x6397_x1164862866}[命令用来关闭]{style="font-family:
-宋体"}[WAAS]{lang="EN-US"}[消除数据冗余功能。]{style="font-family:宋体"}
+**[undo waas tfo optimize dre**]命令用来关闭WAAS消除数据冗余功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1795549033}
+【命令】
 
-[**[waas tfo optimize dre]{lang="EN-US"}**]{#struct_0_21182_x6397_542441157}
+**[waas tfo optimize dre**]
 
-[**[undo waas tfo optimize dre]{lang="EN-US"}**]{#struct_0_21182_x6397_958568448}
+**[undo waas tfo optimize dre**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1607952187}
+【缺省情况】
 
-[[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_1414019476}[消除数据冗余功能处于开启状态。]{style="font-family:宋体"}
+WAAS消除数据冗余功能处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x601016985}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_21182_x6397_1397873067}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_654178778}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x27337158}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_807374219}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x224315462}
+【使用指导】
 
-[[只有]{style="font-family:宋体"}[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_730833708}[消除数据冗余功能处于开启状态时，]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[策略下所配置的消除数据冗余优化方式才会生效。]{style="font-family:宋体"}
+只有WAAS消除数据冗余功能处于开启状态时，WAAS策略下所配置的消除数据冗余优化方式才会生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_90531804}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_1607341629}[关闭]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[消除数据冗余功能。]{style="font-family:宋体"}
+\# 关闭WAAS消除数据冗余功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_21182_x6397_x2091345755}
+\<Sysname\> system-view
 
-[\[Sysname\] undo waas tfo optimize dre]{lang="EN-US"}
+Sysname undo waas tfo optimize dre
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_2108525098}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display waas status]{lang="EN-US"}**]{#struct_0_21182_x6397_1409506954}
-:::
-
-::: {#-195704495 .myid}
-[]{#_Toc404787451}[]{#struct_0_21182_x6397_1707740282}
+·**display waas status**
 
 **WAAS \-- WAAS配置命令 \-- waas tfo optimize lz**
 
 ------------------------------------------------------------------------
 
-[**[waas tfo optimize lz]{lang="EN-US"}**]{#struct_0_21182_x6397_13050768}[命令用来开启]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[数据压缩功能。]{style="font-family:宋体"}
+**[waas tfo optimize lz**]命令用来开启WAAS数据压缩功能。
 
-[**[undo waas tfo optimize lz]{lang="EN-US"}**]{#struct_0_21182_x6397_x5505693}[命令用来关闭]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[数据压缩功能。]{style="font-family:宋体"}
+**[undo waas tfo optimize lz**]命令用来关闭WAAS数据压缩功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x639548406}
+【命令】
 
-[**[waas tfo optimize lz]{lang="EN-US"}**]{#struct_0_21182_x6397_1833994059}
+**[waas tfo optimize lz**]
 
-[**[undo waas tfo optimize lz]{lang="EN-US"}**]{#struct_0_21182_x6397_x278969971}
+**[undo waas tfo optimize lz**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1948707180}
+【缺省情况】
 
-[[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_x2138833818}[数据压缩功能处于开启状态。]{style="font-family:宋体"}
+WAAS数据压缩功能处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x164734111}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_21182_x6397_x699468844}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1961328976}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x247812330}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_743647389}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x620358257}
+【使用指导】
 
-[[只有]{style="font-family:宋体"}[WAAS]{lang="EN-US"}]{#struct_0_21182_x6397_x1275288087}[数据压缩功能处于开启状态时，]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[策略下所配置的数据压缩优化方式才会生效。]{style="font-family:宋体"}
+只有WAAS数据压缩功能处于开启状态时，WAAS策略下所配置的数据压缩优化方式才会生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x2125509638}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_1296649193}[关闭]{style="font-family:宋体"}[WAAS]{lang="EN-US"}[数据压缩功能。]{style="font-family:宋体"}
+\# 关闭WAAS数据压缩功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_21182_x6397_x1076674817}
+\<Sysname\> system-view
 
-[\[Sysname\] undo waas tfo optimize lz]{lang="EN-US"}
+Sysname undo waas tfo optimize lz
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1682007760}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display waas status]{lang="EN-US"}**]{#struct_0_21182_x6397_1405471244}
-:::
-
-::: {#1183690084 .myid}
-[]{#_Toc404787452}[]{#struct_0_21182_x6397_x692545539}
+·**display waas status**
 
 **WAAS \-- WAAS配置命令 \-- waas tfo receive-buffer**
 
 ------------------------------------------------------------------------
 
-[**[waas tfo receive-buffer]{lang="EN-US"}**]{#struct_0_21182_x6397_36078551}[命令用来配置]{style="font-family:宋体"}[TFO]{lang="EN-US"}[的接收缓冲区大小。]{style="font-family:宋体"}
+**[waas tfo receive-buffer**]命令用来配置TFO的接收缓冲区大小。
 
-[**[undo waas tfo receive-buffer]{lang="EN-US"}**]{#struct_0_21182_x6397_x952345878}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo waas tfo receive-buffer**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1548637400}
+【命令】
 
-[**[waas tfo receive-buffer ]{lang="EN-US"}***[buffer-size]{lang="EN-US"}*]{#struct_0_21182_x6397_1607455721}
+**[waas tfo receive-buffer ***buffer-size*]
 
-[**[undo waas tfo receive-buffer]{lang="EN-US"}**]{#struct_0_21182_x6397_x2105775506}
+**[undo waas tfo receive-buffer**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x617276883}
+【缺省情况】
 
-[[TFO]{lang="EN-US"}]{#struct_0_21182_x6397_325958440}[的接收缓冲区为]{style="font-family:宋体"}[64KB]{lang="EN-US"}[。]{style="font-family:宋体"}
+TFO的接收缓冲区为64KB。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_21182_x6397_945725684}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_21182_x6397_x455637187}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1255260822}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_21182_x6397_x163109551}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_21182_x6397_248311937}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1869202868}
+【参数】
 
-[*[buffer-size]{lang="EN-US"}*]{#struct_0_21182_x6397_838266219}*[：]{style="font-family:宋体"}*[TFO]{lang="EN-US"}[的接收缓冲区大小，取值范围为]{style="font-family:宋体"}[32]{lang="EN-US"}[～]{style="font-family:宋体"}[16384]{lang="EN-US"}[，单位为]{style="font-family:宋体"}[KB]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[buffer-size*]*：*TFO的接收缓冲区大小，取值范围为32～16384，单位为KB。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_21182_x6397_x1193891956}
+【使用指导】
 
-[[用户可以通过调整接收缓冲区的大小来影响线路的吞吐量。]{style="font-family:宋体"}]{#struct_0_21182_x6397_x379380675}
+用户可以通过调整接收缓冲区的大小来影响线路的吞吐量。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_21182_x6397_1345126949}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_21182_x6397_1086752793}[调整]{style="font-family:宋体"}[TFO]{lang="EN-US"}[的接收缓冲区为]{style="font-family:宋体"}[1024KB]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 调整TFO的接收缓冲区为1024KB。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_21182_x6397_829525460}
+\<Sysname\> system-view
 
-[\[Sysname\] waas tfo receive-buffer 1024]{lang="EN-US"}
+Sysname waas tfo receive-buffer 1024
 
-[ ]{lang="EN-US"}
-:::

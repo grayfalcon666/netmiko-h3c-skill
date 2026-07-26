@@ -1,5276 +1,4973 @@
-::: {#-2041907362 .myid}
-[]{#_Toc216606632}[]{#_Toc404788099}[]{#struct_0_16293_x2703_x1743248447}
 
 **IS-IS调试命令 \-- IS-IS调试命令 \-- debugging isis adj-packet**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16293_x2703_425975100}
+【命令】
 
-[**[debugging]{lang="EN-US"}**[ **isis** **adj-packet** \[ **receive** \| **send** \] \[ **verbose** \] \[ *process-id* \]]{lang="EN-US"}]{#struct_0_16293_x2703_x501965864}
+**[debugging**[ **isis** **adj-packet** [ **receive** \| **send** ]  **verbose**   *process-id* ]]
 
-[**[undo]{lang="EN-US"}**[ **debugging** **adj-packet** \[ **receive** \| **send** \] \[ **verbose** \] \[ *process-id* \]]{lang="EN-US"}]{#struct_0_16293_x2703_x1013827381}
+**[undo**[ **debugging** **adj-packet** [ **receive** \| **send** ]  **verbose**   *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16293_x2703_1954748836}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_16293_x2703_x164968053}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16293_x2703_1588627891}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16293_x2703_x249572087}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16293_x2703_x236115967}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16293_x2703_1184733955}
+【参数】
 
-[**[receive]{lang="EN-US"}**]{#struct_0_16293_x2703_413139579}[：打开]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文接收调试功能。]{style="font-family:宋体"}
+**[receive**]：打开Hello报文接收调试功能。
 
-[**[send]{lang="EN-US"}**]{#struct_0_16293_x2703_1842264313}[：打开]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文发送调试功能。]{style="font-family:宋体"}
+**[send**]：打开Hello报文发送调试功能。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_16293_x2703_37712299}[：打开]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文详细信息调试功能。]{style="font-family:宋体"}
+**[verbose**]：打开Hello报文详细信息调试功能。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1910442899}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1654973582}
+【描述】
 
-[**[debugging isis adj-packet]{lang="EN-US"}**]{#struct_0_16293_x2703_1588562355}[命令用来打开]{style="font-family:
-宋体"}[IS-IS Hello]{lang="EN-US"}[报文调试信息开关。]{style="font-family:
-宋体"}**[undo debugging isis adj-packet]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[IS-IS Hello]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}
+**[debugging isis adj-packet**]命令用来打开IS-IS Hello报文调试信息开关。**undo debugging isis adj-packet**命令用来关闭IS-IS Hello报文调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[IS-IS Hello]{lang="EN-US"}]{#struct_0_16293_x2703_x573731437}[报文调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，IS-IS Hello报文调试信息开关处于关闭状态。
 
-[[如果未指定进程号，则打开所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_x1498640893}[进程的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}
+如果未指定进程号，则打开所有IS-IS进程的Hello报文调试信息开关。
 
-[]{#struct_0_16293_x2703_558895418}[[表1-1 ]{lang="EN-US"}[debugging isis adj-packet]{lang="EN-US"}]{#_Toc130718926}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging isis adj-packet命令输出信息描述表
 
-[]{#table_struct_0_x521761788}[[字段]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1007405110}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16293_x2703_12099255}
+描述
 
-[[ISIS-*process-id*-ADJ: System is under disable state, IIH discarded.]{lang="EN-US"}]{#struct_0_16293_x2703_x1110484179}
+ISIS-*process-id*-ADJ: System is under disable state, IIH discarded.
 
-[[收到]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_16293_x2703_1588758963}[报文时，]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程处于]{style="font-family:宋体"}[disable]{lang="EN-US"}[状态，丢弃报文]{style="font-family:宋体"}
+收到Hello报文时，IS-IS进程处于disable状态，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_2134102578}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[ISIS*-process-id*-ADJ: Circuit (*circuitName*)\'s state is not up, IIH discarded.]{lang="EN-US"}]{#struct_0_16293_x2703_772600168}
+ISIS*-process-id*-ADJ: Circuit (*circuitName*)\'s state is not up, IIH discarded.
 
-[[收到]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_16293_x2703_x1084649732}[报文时，接口处于非]{style="font-family:宋体"}[up]{lang="EN-US"}[状态，丢弃报文]{style="font-family:宋体"}
+收到Hello报文时，接口处于非up状态，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1989695558}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_541613181}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名称
 
-[[ISIS-*process-id*-ADJ: Circuit (*circuitName*) is under disable state, IIH discarded.]{lang="EN-US"}]{#struct_0_16293_x2703_1588693427}
+ISIS-*process-id*-ADJ: Circuit (*circuitName*) is under disable state, IIH discarded.
 
-[[收到]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_16293_x2703_x600374638}[报文时，接口处于]{style="font-family:宋体"}[silence]{lang="EN-US"}[状态，丢弃报文]{style="font-family:宋体"}
+收到Hello报文时，接口处于silence状态，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_215335817}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x960512830}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名称
 
-[[ISIS-*process-id*-ADJ: Receive a packet from self, IIH discarded.]{lang="EN-US"}]{#struct_0_16293_x2703_x1471280550}
+ISIS-*process-id*-ADJ: Receive a packet from self, IIH discarded.
 
-[[收到了自己发送的]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_16293_x2703_591800844}[报文，丢弃报文]{style="font-family:宋体"}
+收到了自己发送的Hello报文，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1588890035}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[ISIS-*process-id*-ADJ: Receive a invalid packet, IIH discarded.]{lang="EN-US"}]{#struct_0_16293_x2703_x1401915796}
+ISIS-*process-id*-ADJ: Receive a invalid packet, IIH discarded.
 
-[[收到了被截断或报文长度与实际长度不一致的]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_16293_x2703_x1879583896}[报文，丢弃报文]{style="font-family:宋体"}
+收到了被截断或报文长度与实际长度不一致的Hello报文，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x411461943}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[ISIS-*process-id*-ADJ: Receive a invalid packet, has the same SystemId, IIH discarded.]{lang="EN-US"}]{#struct_0_16293_x2703_x1040491002}
+ISIS-*process-id*-ADJ: Receive a invalid packet, has the same SystemId, IIH discarded.
 
-[[收到的]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_16293_x2703_1588824499}[报文携带的]{style="font-family:宋体"}[System ID]{lang="EN-US"}[和本系统的相同，丢弃报文]{style="font-family:宋体"}
+收到的Hello报文携带的System ID和本系统的相同，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_184764638}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[ISIS-*process-id*-ADJ: Receive a *helloType* packet from (*systemId*) on circuit (*circuitName*).]{lang="EN-US"}]{#struct_0_16293_x2703_x947222534}
+ISIS-*process-id*-ADJ: Receive a *helloType* packet from (*systemId*) on circuit (*circuitName*).
 
-[[接收到]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_16293_x2703_795813747}[报文]{style="font-family:宋体"}
+接收到Hello报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1589021107}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[helloType]{lang="EN-US"}*]{#struct_0_16293_x2703_x201004020}[：取值为]{lang="EN-US" style="font-family:宋体"}[LAN L1]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[LAN L2]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[P2P]{lang="EN-US"}
+·*helloType*：取值为LAN L1、LAN L2、P2P
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[systemId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1873558804}[：报文携带的]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}
+·*systemId*：报文携带的System ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_2114376112}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名称
 
-[[ISIS-*process-id*-ADJ: IIH PDU type (*type*) with circuit (*circuitName*) mismatch.]{lang="EN-US"}]{#struct_0_16293_x2703_1588955571}
+ISIS-*process-id*-ADJ: IIH PDU type (*type*) with circuit (*circuitName*) mismatch.
 
-[[Hello]{lang="EN-US"}]{#struct_0_16293_x2703_955694422}[报文]{style="font-family:宋体"}[Level]{lang="EN-US"}[类型与接口配置不匹配]{style="font-family:宋体"}
+Hello报文Level类型与接口配置不匹配
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1435799145}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[type]{lang="EN-US"}*]{#struct_0_16293_x2703_622714395}[：取值为]{lang="EN-US" style="font-family:宋体"}[Level-1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[Level-2]{lang="EN-US"}
+·*type*：取值为Level-1或Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_1589152179}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名称
 
-[[ISIS-*process-id*-ADJ: IIH protocol support with circuit (*circuitName*) mismatch.]{lang="EN-US"}]{#struct_0_16293_x2703_199200289}
+ISIS-*process-id*-ADJ: IIH protocol support with circuit (*circuitName*) mismatch.
 
-[[Hello]{lang="EN-US"}]{#struct_0_16293_x2703_1177186158}[报文携带的协议支持信息与本系统不匹配]{style="font-family:宋体"}
+Hello报文携带的协议支持信息与本系统不匹配
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1872891761}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_1589086643}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名称
 
-[[ISIS-*process-id*-ADJ: IIH IP address with circuit (*circuitName*) mismatch.]{lang="EN-US"}]{#struct_0_16293_x2703_160784555}
+ISIS-*process-id*-ADJ: IIH IP address with circuit (*circuitName*) mismatch.
 
-[[Hello]{lang="EN-US"}]{#struct_0_16293_x2703_x1724618259}[报文携带的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址与本系统不在同一网段或与本系统]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址相同]{style="font-family:宋体"}
+Hello报文携带的IP地址与本系统不在同一网段或与本系统IP地址相同
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1260463964}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_1588627888}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名称
 
-[[ISIS-*process-id*-ADJ: IIH area address with the local system mismatch.]{lang="EN-US"}]{#struct_0_16293_x2703_x250161912}
+ISIS-*process-id*-ADJ: IIH area address with the local system mismatch.
 
-[[Hello]{lang="EN-US"}]{#struct_0_16293_x2703_x1872921236}[报文携带的区域地址与本系统不匹配]{style="font-family:宋体"}
+Hello报文携带的区域地址与本系统不匹配
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1588562352}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[ISIS-*process-id*-ADJ: IIH has the same SNPA with a NBR, but different SystemId. The NBR will be down.]{lang="EN-US"}]{#struct_0_16293_x2703_x573403757}
+ISIS-*process-id*-ADJ: IIH has the same SNPA with a NBR, but different SystemId. The NBR will be down.
 
-[[收到的]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_16293_x2703_1240299294}[报文，携带的]{style="font-family:宋体"}[SNPA]{lang="EN-US"}[与本系统已维护的邻居相同，但]{style="font-family:宋体"}[System ID]{lang="EN-US"}[不同，本系统维护的邻居]{style="font-family:宋体"}[down]{lang="EN-US"}
+收到的Hello报文，携带的SNPA与本系统已维护的邻居相同，但System ID不同，本系统维护的邻居down
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1430871426}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[ISIS-*process-id*-ADJ: IIH has the same SystemId with a NBR, but different SNPA. The IIH will be discarded.]{lang="EN-US"}]{#struct_0_16293_x2703_1588758960}
+ISIS-*process-id*-ADJ: IIH has the same SystemId with a NBR, but different SNPA. The IIH will be discarded.
 
-[[收到的]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_16293_x2703_2134037042}[报文，携带的]{style="font-family:宋体"}[System ID]{lang="EN-US"}[与本系统已维护的邻居相同，但]{style="font-family:宋体"}[SNPA]{lang="EN-US"}[不同，丢弃报文]{style="font-family:宋体"}
+收到的Hello报文，携带的System ID与本系统已维护的邻居相同，但SNPA不同，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1203088077}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[ISIS- *process-id* -ADJ: IIH has the same LinkLocal address with circuit(*circuitName*).]{lang="EN-US"}]{#struct_0_16293_x2703_1588693424}
+ISIS- *process-id* -ADJ: IIH has the same LinkLocal address with circuit(*circuitName*).
 
-[[Hello]{lang="EN-US"}]{#struct_0_16293_x2703_x600440174}[报文携带的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址与接收接口的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址相同。]{style="font-family:宋体"}
+Hello报文携带的IPv6地址与接收接口的IPv6地址相同。
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1373892968}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_1588890032}[：]{lang="EN-US" style="font-family:
-  宋体"}[接口名称]{lang="EN-US" style="font-family:宋体"}
+·*circuitName*：接口名称
 
-[[ISIS- *process-id* -ADJ: IIH circuit(*circuitName*) contains No usable Ip addresses at all. IIH Ignored.]{lang="EN-US"}]{#struct_0_16293_x2703_x1401457044}
+ISIS- *process-id* -ADJ: IIH circuit(*circuitName*) contains No usable Ip addresses at all. IIH Ignored.
 
-[[设备之间即不能建立]{style="font-family:宋体"}[IPv4]{lang="EN-US"}]{#struct_0_16293_x2703_x226297889}[邻居也不能建立]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[邻居。]{style="font-family:宋体"}
+设备之间即不能建立IPv4邻居也不能建立IPv6邻居。
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x149189613}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_1588824496}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名称
 
-[[ISIS- *process-id* -ADJ: Rxed *type* can not pass authentication on circuit(*circuitName*). IIH Ignored]{lang="EN-US"}]{#struct_0_16293_x2703_185616606}
+ISIS- *process-id* -ADJ: Rxed *type* can not pass authentication on circuit(*circuitName*). IIH Ignored
 
-[[Hello]{lang="EN-US"}]{#struct_0_16293_x2703_x2005571246}[报文没有通过认证]{style="font-family:宋体"}
+Hello报文没有通过认证
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1589021104}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[type]{lang="EN-US"}*]{#struct_0_16293_x2703_x201200628}[：]{lang="EN-US" style="font-family:宋体"}[L]{lang="EN-US"}[AN]{lang="EN-US"}[ L1]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[L]{lang="EN-US"}[AN]{lang="EN-US"}[ L2]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[P2P]{lang="EN-US"}
+·*type*：LAN L1、LAN L2、P2P
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_1588955568}[：]{lang="EN-US" style="font-family:
-  宋体"}[接口名称]{lang="EN-US" style="font-family:宋体"}
+·*circuitName*：接口名称
 
-[[ISIS-*process-id*-ADJ: *type* NBR (*systemId*) two way pass.]{lang="EN-US"}]{#struct_0_16293_x2703_955235671}
+ISIS-*process-id*-ADJ: *type* NBR (*systemId*) two way pass.
 
-[[邻居]{style="font-family:宋体"}[2-way]{lang="EN-US"}]{#struct_0_16293_x2703_x1562343528}[检查成功]{style="font-family:宋体"}
+邻居2-way检查成功
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1589152176}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[type]{lang="EN-US"}*]{#struct_0_16293_x2703_200183329}[：取值为]{lang="EN-US" style="font-family:宋体"}[Level-1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[Level-2]{lang="EN-US"}
+·*type*：取值为Level-1或Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[systemId]{lang="EN-US"}*]{#struct_0_16293_x2703_x2113297969}[：邻居的]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}
+·*systemId*：邻居的System ID
 
-[[ISIS-*process-id*-ADJ: *type* NBR (*systemId*) two way fail.]{lang="EN-US"}]{#struct_0_16293_x2703_1589086640}
+ISIS-*process-id*-ADJ: *type* NBR (*systemId*) two way fail.
 
-[[邻居]{style="font-family:宋体"}[2-way]{lang="EN-US"}]{#struct_0_16293_x2703_160850091}[检查失败]{style="font-family:宋体"}
+邻居2-way检查失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x2350267}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[type]{lang="EN-US"}*]{#struct_0_16293_x2703_1588627889}[：取值为]{lang="EN-US" style="font-family:宋体"}[Level-1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[Level-2]{lang="EN-US"}
+·*type*：取值为Level-1或Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[systemId]{lang="EN-US"}*]{#struct_0_16293_x2703_x250096376}[：邻居的]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}
+·*systemId*：邻居的System ID
 
-[[ISIS-*process-id*-ADJ:DIS type *type*, on *circuitName*, old DIS: *sourceId1*, new DIS: *sourceId2*.]{lang="EN-US"}]{#struct_0_16293_x2703_x1500170752}
+ISIS-*process-id*-ADJ:DIS type *type*, on *circuitName*, old DIS: *sourceId1*, new DIS: *sourceId2*.
 
-[[DIS]{lang="EN-US"}]{#struct_0_16293_x2703_1588562353}[选举结果]{style="font-family:宋体"}
+DIS选举结果
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x573338221}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[type]{lang="EN-US"}*]{#struct_0_16293_x2703_1588758961}[：]{lang="EN-US" style="font-family:宋体"}[取值为]{lang="EN-US" style="font-family:宋体"}[Level-1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[Level-2]{lang="EN-US"}
+·*type*：取值为Level-1或Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_2133971506}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名称
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sourceId1]{lang="EN-US"}*]{#struct_0_16293_x2703_1299223222}[：原]{lang="EN-US" style="font-family:宋体"}[DIS-ID]{lang="EN-US"}[，为空，则原]{lang="EN-US" style="font-family:宋体"}[DIS]{lang="EN-US"}[不存在]{lang="EN-US" style="font-family:宋体"}
+·*sourceId1*：原DIS-ID，为空，则原DIS不存在
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sourceId2]{lang="EN-US"}*]{#struct_0_16293_x2703_1588693425}[：新]{lang="EN-US" style="font-family:宋体"}[DIS-ID]{lang="EN-US"}[，为空，则新]{lang="EN-US" style="font-family:宋体"}[DIS]{lang="EN-US"}[不存在]{lang="EN-US" style="font-family:宋体"}
+·*sourceId2*：新DIS-ID，为空，则新DIS不存在
 
-[[ISIS-*process-id*-ADJ: Send a *helloType* packet on circuit (*circuitName*)]{lang="EN-US"}]{#struct_0_16293_x2703_x600505710}
+ISIS-*process-id*-ADJ: Send a *helloType* packet on circuit (*circuitName*)
 
-[[发送]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_16293_x2703_977483848}[报文]{style="font-family:宋体"}
+发送Hello报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1588890033}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[helloType]{lang="EN-US"}*]{#struct_0_16293_x2703_x1401522580}[：]{lang="EN-US" style="font-family:宋体"}[Hello]{lang="EN-US"}[报文类型，取值为]{lang="EN-US" style="font-family:宋体"}[LAN L1]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[LAN L2]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[P2P]{lang="EN-US"}
+·*helloType*：Hello报文类型，取值为LAN L1、LAN L2、P2P
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_1588824497}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名称
 
-[[ISIS- *process-id* -ADJ: Small-Hello is enabled on circuit(*circuitName*)]{lang="EN-US"}]{#struct_0_16293_x2703_185682142}
+ISIS- *process-id* -ADJ: Small-Hello is enabled on circuit(*circuitName*)
 
-[[接口使能]{style="font-family:宋体"}[Small-Hello]{lang="EN-US"}]{#struct_0_16293_x2703_x472731792}[功能。]{style="font-family:宋体"}
+接口使能Small-Hello功能。
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1589021105}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x201135092}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名称
 
-[[ISIS- *process-id* -ADJ: The circuit(*circuitName*) is silent.IIH not sent.]{lang="EN-US"}]{#struct_0_16293_x2703_1588955569}
+ISIS- *process-id* -ADJ: The circuit(*circuitName*) is silent.IIH not sent.
 
-[[接口状态为]{style="font-family:宋体"}[silent]{lang="EN-US"}]{#struct_0_16293_x2703_955170135}[，接口不发送]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+接口状态为silent，接口不发送Hello报文。
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_89247287}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_1589152177}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名称
 
-[[ISIS- *process-id* -ADJ: The Extended circuit ID of IIH mismatch. IIH ignored.]{lang="EN-US"}]{#struct_0_16293_x2703_866949804}
+ISIS- *process-id* -ADJ: The Extended circuit ID of IIH mismatch. IIH ignored.
 
-[[扩展接口]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_16293_x2703_866622124}[不匹配，忽略此]{style="font-family:宋体"}[IIH]{lang="EN-US"}[报文]{style="font-family:宋体"}
+扩展接口ID不匹配，忽略此IIH报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_2095112757}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[ISIS- *process-id* -ADJ: Circuit(*circuitName*) is MPLS TE Tunnel interface, IIH discarded.]{lang="EN-US"}]{#struct_0_16293_x2703_x2019204464}
+ISIS- *process-id* -ADJ: Circuit(*circuitName*) is MPLS TE Tunnel interface, IIH discarded.
 
-[[接收接口是]{style="font-family:宋体"}[MPLS TE]{lang="EN-US"}]{#struct_0_16293_x2703_866556588}[隧道接口，忽略此]{style="font-family:宋体"}[IIH]{lang="EN-US"}[报文]{style="font-family:宋体"}
+接收接口是MPLS TE隧道接口，忽略此IIH报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1261063154}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x83083520}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名称
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16293_x2703_200117793}
+\# Router A与Router B相连，在Router A上创建IS-IS进程，SystemID为3333.3333. 3333、路由器类型为**level-1-2**，并在GigabitEthernet1/0/2上使能IS-IS功能，接口的IP地址为3.3.3.166/24；在Router B上创建IS-IS进程，SystemID为FFFF.FFFF.FFFF、路由器类型为**level-1-2**，并在GigabitEthernet1/0/1使能IS-IS功能，接口的IP地址为3.3.3.89/24；Router A与Router B在同一个区域49。在Router A上打开IS-IS Hello报文调试信息开关。
 
-[[\# Router A]{lang="EN-US"}]{#struct_0_16293_x2703_248280278}[与]{style="font-family:宋体"}[Router B]{lang="EN-US"}[相连，在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[上创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程，]{style="font-family:宋体"}[SystemID]{lang="EN-US"}[为]{style="font-family:宋体"}[3333.3333. 3333]{lang="EN-US"}[、路由器类型为]{style="font-family:宋体"}**[level-1-2]{lang="EN-US"}**[，并在]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[上使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能，接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[3.3.3.166/24]{lang="EN-US"}[；在]{style="font-family:宋体"}[Router B]{lang="EN-US"}[上创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程，]{style="font-family:宋体"}[SystemID]{lang="EN-US"}[为]{style="font-family:宋体"}[FFFF.FFFF.FFFF]{lang="EN-US"}[、路由器类型为]{style="font-family:宋体"}**[level-1-2]{lang="EN-US"}**[，并在]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能，接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[3.3.3.89/24]{lang="EN-US"}[；]{style="font-family:宋体"}[Router A]{lang="EN-US"}[与]{style="font-family:宋体"}[Router B]{lang="EN-US"}[在同一个区域]{style="font-family:宋体"}[49]{lang="EN-US"}[。在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[上打开]{style="font-family:宋体"}[IS-IS Hello]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}
+\<RouterA\> debugging isis adj-packet
 
-[[\<RouterA\> debugging isis adj-packet]{lang="EN-US"}]{#struct_0_16293_x2703_x1513520965}
+\*Apr  4 18:47:08:383 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  4 18:47:08:383 2011 RouterA ISIS/7/ISISDBG: -MDC=1; ]{lang="EN-US"}
+ISIS-1-ADJ: Send a Lan L2 Hello packet on circuit(GigabitEthernet1/0/2)
 
-[ISIS-1-ADJ: Send a Lan L2 Hello packet on circuit(GigabitEthernet1/0/2)]{lang="EN-US"}
+\*Apr  4 18:47:08:384 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  4 18:47:08:384 2011 RouterA ISIS/7/ISISDBG: -MDC=1; ]{lang="EN-US"}
+ISIS-1-ADJ: Send a Lan L1 Hello packet on circuit(GigabitEthernet1/0/2)
 
-[ISIS-1-ADJ: Send a Lan L1 Hello packet on circuit(GigabitEthernet1/0/2)]{lang="EN-US"}
+*// 在GigabitEthernet1/0/2上发送L1和L2类型的Hello报文*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x624362669}*[在]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[上发送]{style="font-family:宋体"}[L1]{lang="EN-US"}[和]{style="font-family:宋体"}[L2]{lang="EN-US"}[类型的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}*
+\*Apr  4 18:47:08:385 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Apr  4 18:47:08:385 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_1589086641}
+ISIS-1-ADJ: Receive a Lan L2 Hello packet from(ffff.ffff.ffff) on circuit(GigabitEthernet1/0/2)
 
-[ISIS-1-ADJ: Receive a Lan L2 Hello packet from(ffff.ffff.ffff) on circuit(GigabitEthernet1/0/2)]{lang="EN-US"}
+\*Apr  4 18:47:08:385 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  4 18:47:08:385 2011 RouterA ISIS/7/ISISDBG: -MDC=1; ]{lang="EN-US"}
+ISIS-1-ADJ: Level-2 NBR(ffff.ffff.ffff) two way pass.
 
-[ISIS-1-ADJ: Level-2 NBR(ffff.ffff.ffff) two way pass.]{lang="EN-US"}
+\*Apr  4 18:47:08:385 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  4 18:47:08:385 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-ADJ: Receive a Lan L1 Hello packet from(ffff.ffff.ffff) on circuit(GigabitEthernet1/0/2)
 
-[ISIS-1-ADJ: Receive a Lan L1 Hello packet from(ffff.ffff.ffff) on circuit(GigabitEthernet1/0/2)]{lang="EN-US"}
+\*Apr  4 18:47:08:385 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  4 18:47:08:385 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-ADJ: Level-1 NBR(ffff.ffff.ffff) two way pass.
 
-[ISIS-1-ADJ: Level-1 NBR(ffff.ffff.ffff) two way pass.]{lang="EN-US"}
+*// 在GigabitEthernet1/0/2上接收L1和L2类型的Hello报文，对端SystemID为：FFFF.FFFF.FFFF，2-way检查通过，建立了邻居关系*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_160915627}*[在]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[上接收]{style="font-family:宋体"}[L1]{lang="EN-US"}[和]{style="font-family:宋体"}[L2]{lang="EN-US"}[类型的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文，对端]{style="font-family:宋体"}[SystemID]{lang="EN-US"}[为：]{style="font-family:宋体"}[FFFF.FFFF.FFFF]{lang="EN-US"}[，]{style="font-family:宋体"}[2-way]{lang="EN-US"}[检查通过，建立了邻居关系]{style="font-family:宋体"}*
+\*Apr  4 18:47:08:493 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Apr  4 18:47:08:493 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_x1530393339}
+ISIS-1-ADJ: Send a Lan L1 Hello packet on circuit(GigabitEthernet1/0/2)
 
-[ISIS-1-ADJ: Send a Lan L1 Hello packet on circuit(GigabitEthernet1/0/2)]{lang="EN-US"}
+\*Apr  4 18:47:08:493 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  4 18:47:08:493 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-ADJ: Send a Lan L2 Hello packet on circuit(GigabitEthernet1/0/2)
 
-[ISIS-1-ADJ: Send a Lan L2 Hello packet on circuit(GigabitEthernet1/0/2)]{lang="EN-US"}
+\*Apr  4 18:47:08:493 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  4 18:47:08:493 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-ADJ: DIS type Level-1, on GigabitEthernet1/0/2, old DIS:, new DIS:3333.3333.3333.01.
 
-[ISIS-1-ADJ: DIS type Level-1, on GigabitEthernet1/0/2, old DIS:, new DIS:3333.3333.3333.01.]{lang="EN-US"}
+\*Apr  4 18:47:08:493 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  4 18:47:08:493 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-ADJ: DIS type Level-2, on GigabitEthernet1/0/2, old DIS:, new DIS:3333.3333.3333.01.
 
-[ISIS-1-ADJ: DIS type Level-2, on GigabitEthernet1/0/2, old DIS:, new DIS:3333.3333.3333.01.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_1354284849}*[在]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[上进行了]{style="font-family:宋体"}[DIS]{lang="EN-US"}[选举，在]{style="font-family:宋体"}[L1]{lang="EN-US"}[、]{style="font-family:宋体"}[L2]{lang="EN-US"}[上分别选出了]{style="font-family:宋体"}[DIS]{lang="EN-US"}*
-
-::: {#-842803313 .myid}
-[]{#_Toc404788100}[]{#struct_0_16293_x2703_1588627886}
+*// 在GigabitEthernet1/0/2上进行了DIS选举，在L1、L2上分别选出了DIS*
 
 **IS-IS调试命令 \-- IS-IS调试命令 \-- debugging isis all**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x249244408}
+【命令】
 
-[**[debuging isis all]{lang="EN-US"}**[ \[ *process-id* \]]{lang="EN-US"}]{#struct_0_16293_x2703_2129149504}
+**[debuging isis all** [ *process-id* ]]
 
-[**[undo debuging isis all]{lang="EN-US"}**[ \[ *process-id* \]]{lang="EN-US"}]{#struct_0_16293_x2703_1120747633}
+**[undo debuging isis all** [ *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x627196185}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_16293_x2703_1107433366}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x324686135}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16293_x2703_514136161}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16293_x2703_1803200401}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16293_x2703_1588562350}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x573534829}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_16293_x2703_1262736589}
+【描述】
 
-[**[debuging isis all]{lang="EN-US"}**]{#struct_0_16293_x2703_x498135291}[命令用来打开]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[所有的调试信息开关。]{style="font-family:宋体"}**[undo debugging isis all]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[所有的调试信息开关。]{style="font-family:宋体"}
+**[debuging isis all**]命令用来打开IS-IS所有的调试信息开关。**undo debugging isis all**命令用来关闭IS-IS所有的调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_x658209940}[所有的调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，IS-IS所有的调试信息开关处于关闭状态。
 
-[[如果未指定进程号，则打开所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_x1632558561}[进程的调试信息开关。]{style="font-family:宋体"}
+如果未指定进程号，则打开所有IS-IS进程的调试信息开关。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x2003109392}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16293_x2703_1783596907}[打开]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[所有的调试信息开关。]{style="font-family:宋体"}
+\# 打开IS-IS进程1所有的调试信息开关。
 
-[[\<RouterA\> debugging isis all 1]{lang="EN-US"}]{#struct_0_16293_x2703_1588758958}
-:::
-
-::: {#-811830289 .myid}
-[]{#_Toc404788101}[]{#struct_0_16293_x2703_2133512755}[]{#_Toc263865604}[]{#_Toc216606633}[]{#_Toc205281029}[]{#_Toc161626627}[]{#_Toc161569530}
+\<RouterA\> debugging isis all 1
 
 **IS-IS调试命令 \-- IS-IS调试命令 \-- debugging isis bfd-event**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16293_x2703_518517238}
+【命令】
 
-[**[debugging isis bfd-event ]{lang="EN-US"}**[\[ *process-id* \]]{lang="EN-US"}]{#struct_0_16293_x2703_x10191583}
+**[debugging isis bfd-event ** *process-id* ]
 
-[**[undo debugging isis bfd-event]{lang="EN-US"}**[ \[ *process-id* \]]{lang="EN-US"}]{#struct_0_16293_x2703_x746374963}
+**[undo debugging isis bfd-event** [ *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16293_x2703_1816739482}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_16293_x2703_451228921}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1479728993}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16293_x2703_534871779}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16293_x2703_1588693422}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x600046958}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1006557616}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体;color:#0000CC"}
+*[process-id*]：IS-IS进程号，范围为1～65535。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_16293_x2703_991330585}
+【描述】
 
-[**[debugging isis bfd-event]{lang="EN-US"}**]{#struct_0_16293_x2703_166494494}[命令用来打开]{style="font-family:
-宋体"}[IS-IS BFD]{lang="EN-US"}[事件调试信息开关。]{style="font-family:
-宋体"}**[undo debugging isis bfd-event]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[IS-IS BFD]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}
+**[debugging isis bfd-event**]命令用来打开IS-IS BFD事件调试信息开关。**undo debugging isis bfd-event**命令用来关闭IS-IS BFD事件调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[IS-IS BFD]{lang="EN-US"}]{#struct_0_16293_x2703_1855333652}[事件调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，IS-IS BFD事件调试信息开关处于关闭状态。
 
-[[如果未指定进程号，则打开所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_x733886624}[进程的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}
+如果未指定进程号，则打开所有IS-IS进程的BFD事件调试信息开关。
 
-[[表1-1 ]{lang="EN-US"}[debugging isis bfd-event]{lang="EN-US"}]{#struct_0_16293_x2703_126548450}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging isis bfd-event命令输出信息描述表
 
-[]{#table_struct_0_x532271964}[[字段]{style="font-family:黑体"}]{#struct_0_16293_x2703_515581364}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16293_x2703_1588890030}
+描述
 
-[[ISIS- process-id -BFD: Success to send Sessiontype session Msg. DstIPAddr: XX.XX.XX.XX SrcIPAddr:]{lang="EN-US"}]{#struct_0_16293_x2703_x1401588116}
+ISIS- process-id -BFD: Success to send Sessiontype session Msg. DstIPAddr: XX.XX.XX.XX SrcIPAddr:
 
-[[ YY.YY.YY.YY, NeighborType: leveltype]{lang="EN-US"}]{#struct_0_16293_x2703_1560375575}
+ YY.YY.YY.YY, NeighborType: leveltype
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_452631286}[协议通知]{style="font-family:宋体"}[BFD]{lang="EN-US"}[模块的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[会话消息]{style="font-family:宋体"}
+IS-IS协议通知BFD模块的BFD会话消息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x891549715}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Sessiontype]{lang="EN-US"}*]{#struct_0_16293_x2703_x1220801388}[：消息类型]{lang="EN-US" style="font-family:
-  宋体"}
+·*Sessiontype*：消息类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Sessiontype]{lang="EN-US"}*]{#struct_0_16293_x2703_1588824494}[：消息类型]{lang="EN-US" style="font-family:
-  宋体"}[。值可以为：]{style="font-family:宋体"}[create]{lang="EN-US"}[，]{style="font-family:宋体"}[创建会话]{lang="EN-US" style="font-family:宋体"}[；]{style="font-family:宋体"}[delete]{lang="EN-US"}[，]{style="font-family:宋体"}[删除会话]{lang="EN-US" style="font-family:宋体"}[；]{style="font-family:宋体"}[disable]{lang="EN-US"}[，]{style="font-family:宋体"}[去使能会话]{lang="EN-US" style="font-family:宋体"}
+·*Sessiontype*：消息类型。值可以为：create，创建会话；delete，删除会话；disable，去使能会话
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DstIPAddr]{lang="EN-US"}]{#struct_0_16293_x2703_185485534}[：会话目的]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+·DstIPAddr：会话目的IP地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SrcIPAddr]{lang="EN-US"}]{#struct_0_16293_x2703_x1876632314}[：会话源]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+·SrcIPAddr：会话源IP地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NeighborType]{lang="EN-US"}]{#struct_0_16293_x2703_1084723438}[：邻居类型]{lang="EN-US" style="font-family:宋体"}
+·NeighborType：邻居类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[leveltype]{lang="EN-US"}*]{#struct_0_16293_x2703_575275641}[：]{lang="EN-US" style="font-family:宋体"}[级别]{style="font-family:宋体"}[类型]{lang="EN-US" style="font-family:宋体"}[。值可以为：]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[，广播网]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[邻居；]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[，广播网]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[邻居；]{style="font-family:宋体"}[P2P]{lang="EN-US"}[，]{style="font-family:宋体"}[P2P]{lang="EN-US"}[邻居]{style="font-family:宋体"}
+·*leveltype*：级别类型。值可以为：Level-1，广播网Level-1邻居；Level-2，广播网Level-2邻居；P2P，P2P邻居
 
-[ ]{lang="EN-US" style="color:#0000CC"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x148416240}
+\# Router A与Router B相连，分别在Router A和Router B上配置IS-IS功能。在Router A上打开IS-IS BFD事件调试信息开关。
 
-[[\# Router A]{lang="EN-US"}]{#struct_0_16293_x2703_499406256}[与]{style="font-family:宋体"}[Router B]{lang="EN-US"}[相连，分别在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[和]{style="font-family:宋体"}[Router B]{lang="EN-US"}[上配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能。在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[上打开]{style="font-family:宋体"}[IS-IS BFD]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging isis bfd-event
 
-[[\<Sysname\> debugging isis bfd-event]{lang="EN-US"}]{#struct_0_16293_x2703_1589021102}
+\<Sysname\> system-view
 
-[\<Sysname\> system-view]{lang="EN-US"}
+Sysname interface vlan-interface 100
 
-[\[Sysname\] interface vlan-interface 100]{lang="EN-US"}
+Sysname-Vlan-interface100 isis bfd enable
 
-[\[Sysname-Vlan-interface100\] isis bfd enable]{lang="EN-US"}
+\*Jan  2 02:16:46:688 2000 Sysname ISIS/7/ISISDBG:
 
-[\*Jan  2 02:16:46:688 2000 Sysname ISIS/7/ISISDBG:]{lang="EN-US"}
+ISIS-1-BFD: Success to send create session Msg. DstIPAddr: 12.12.12.1, SrcIPAddr: 12.12.12.2, NeighborType: Level-1
 
-[ISIS-1-BFD: Success to send create session Msg. DstIPAddr: 12.12.12.1, SrcIPAddr: 12.12.12.2, NeighborType: Level-1]{lang="EN-US"}
+*[// IS-IS*]*协议通知BFD模块创建BFD会话，会话目的IP为12.12.12.1，会话源地址为12.12.12.2，邻居类型为广播网Level-1*
 
-[*[// IS-IS]{lang="EN-US"}*]{#struct_0_16293_x2703_x201331700}*[协议通知]{style="font-family:宋体"}[BFD]{lang="EN-US"}[模块创建]{style="font-family:宋体"}[BFD]{lang="EN-US"}[会话，会话目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[为]{style="font-family:宋体"}[12.12.12.1]{lang="EN-US"}[，会话源地址为]{style="font-family:宋体"}[12.12.12.2]{lang="EN-US"}[，邻居类型为广播网]{style="font-family:宋体"}[Level-1]{lang="EN-US"}*
+Sysname-Vlan-interface100 undo isis bfd enable
 
-[[\[Sysname-Vlan-interface100\] undo isis bfd enable]{lang="EN-US"}]{#struct_0_16293_x2703_105997724}
+\*Jan  2 02:17:14:968 2000 Sysname ISIS/7/ISISDBG:
 
-[\*Jan  2 02:17:14:968 2000 Sysname ISIS/7/ISISDBG:]{lang="EN-US"}
+ISIS-1-BFD: Success to send disable session Msg. DstIPAddr: 12.12.12.1, SrcIPAddr: 12.12.12.2, NeighborType: Level-1
 
-[ISIS-1-BFD: Success to send disable session Msg. DstIPAddr: 12.12.12.1, SrcIPAddr: 12.12.12.2, NeighborType: Level-1]{lang="EN-US"}
-
-[*[// IS-IS]{lang="EN-US"}*]{#struct_0_16293_x2703_825357233}*[协议通知]{style="font-family:宋体"}[BFD]{lang="EN-US"}[模块去使能]{style="font-family:宋体"}[BFD]{lang="EN-US"}[会话，会话目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[为]{style="font-family:宋体"}[12.12.12.1]{lang="EN-US"}[，会话源地址为]{style="font-family:宋体"}[12.12.12.2]{lang="EN-US"}[，邻居类型为广播网]{style="font-family:宋体"}[Level-1]{lang="EN-US"}*
-
-::: {#1632425944 .myid}
-[]{#_Toc404788102}[]{#struct_0_16293_x2703_1508791584}
+*[// IS-IS*]*协议通知BFD模块去使能BFD会话，会话目的IP为12.12.12.1，会话源地址为12.12.12.2，邻居类型为广播网Level-1*
 
 **IS-IS调试命令 \-- IS-IS调试命令 \-- debugging isis error**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16293_x2703_346789931}
+【命令】
 
-[**[debuging isis error]{lang="EN-US"}**[ \[ *process-id* \]]{lang="EN-US"}]{#struct_0_16293_x2703_1588955566}
+**[debuging isis error** [ *process-id* ]]
 
-[**[undo debuging isis error]{lang="EN-US"}**[ \[ *process-id* \]]{lang="EN-US"}]{#struct_0_16293_x2703_956153175}
+**[undo debuging isis error** [ *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1096751642}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_16293_x2703_x172096440}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1625375431}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16293_x2703_1250560626}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16293_x2703_x1100602260}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x36067764}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1589152174}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_16293_x2703_200052257}
+【描述】
 
-[**[debuging isis error]{lang="EN-US"}**]{#struct_0_16293_x2703_x141742505}[命令用来打开]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[错误调试信息开关。]{style="font-family:宋体"}**[undo debugging isis error]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[错误调试信息开关。]{style="font-family:宋体"}
+**[debuging isis error**]命令用来打开IS-IS错误调试信息开关。**undo debugging isis error**命令用来关闭IS-IS错误调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_x515889093}[错误调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，IS-IS错误调试信息开关处于关闭状态。
 
-[[如果未指定进程号，则打开所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_x813497498}[进程的错误调试信息开关。]{style="font-family:宋体"}
+如果未指定进程号，则打开所有IS-IS进程的错误调试信息开关。
 
-[[表1-2 ]{lang="EN-US"}[debugging isis error]{lang="EN-US"}]{#struct_0_16293_x2703_1527465791}[命令输出信息描述表]{style="font-family:黑体"}
+表1-2 debugging isis error命令输出信息描述表
 
-[]{#table_struct_0_x529244660}[[字段]{style="font-family:黑体"}]{#struct_0_16293_x2703_1489950099}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16293_x2703_1589086638}
+描述
 
-[[ISIS-*procId*-ERR: LAN ADJ number has arrived max.]{lang="EN-US"}]{#struct_0_16293_x2703_160325802}
+ISIS-*procId*-ERR: LAN ADJ number has arrived max.
 
-[[接口邻居数目达到最大值]{style="font-family:宋体"}]{#struct_0_16293_x2703_442026241}
+接口邻居数目达到最大值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x713947050}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Receive a LAN IIH contains invalid protocol descriminator. IIH discarded.]{lang="EN-US"}]{#struct_0_16293_x2703_x402438249}
+ISIS-*procId*-ERR: Receive a LAN IIH contains invalid protocol descriminator. IIH discarded.
 
-[[接收到的]{style="font-family:宋体"}[IIH]{lang="EN-US"}]{#struct_0_16293_x2703_169645630}[报文协议鉴别字段错误，不处理接收到的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+接收到的IIH报文协议鉴别字段错误，不处理接收到的Hello报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1588627887}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Receive a LAN IIH contains invalid version. IIH discarded.]{lang="EN-US"}]{#struct_0_16293_x2703_x249178872}
+ISIS-*procId*-ERR: Receive a LAN IIH contains invalid version. IIH discarded.
 
-[[接收到的]{style="font-family:宋体"}[IIH]{lang="EN-US"}]{#struct_0_16293_x2703_x1483033186}[报文协议版本错误，不处理接收到的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+接收到的IIH报文协议版本错误，不处理接收到的Hello报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x514484730}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Receive a LAN IIH contains invalid protocol ID. IIH discarded.]{lang="EN-US"}]{#struct_0_16293_x2703_1526834443}
+ISIS-*procId*-ERR: Receive a LAN IIH contains invalid protocol ID. IIH discarded.
 
-[[接收到的]{style="font-family:宋体"}[IIH]{lang="EN-US"}]{#struct_0_16293_x2703_1588562351}[报文协议]{style="font-family:宋体"}[ID]{lang="EN-US"}[错误，不处理接收到的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+接收到的IIH报文协议ID错误，不处理接收到的Hello报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x573469293}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Receive a LAN IIH contains invalid system ID length. IIH discarded.]{lang="EN-US"}]{#struct_0_16293_x2703_1308748052}
+ISIS-*procId*-ERR: Receive a LAN IIH contains invalid system ID length. IIH discarded.
 
-[[接收到的]{style="font-family:宋体"}[IIH]{lang="EN-US"}]{#struct_0_16293_x2703_868468838}[报文]{style="font-family:宋体"}[system ID]{lang="EN-US"}[错误，不处理接收到的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+接收到的IIH报文system ID错误，不处理接收到的Hello报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x599200776}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Receive a LAN IIH contains invalid max area address number. IIH discarded.]{lang="EN-US"}]{#struct_0_16293_x2703_1588758959}
+ISIS-*procId*-ERR: Receive a LAN IIH contains invalid max area address number. IIH discarded.
 
-[[接收到的]{style="font-family:宋体"}[IIH]{lang="EN-US"}]{#struct_0_16293_x2703_2133447219}[报文区域地址最大数错误，不处理接收到的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+接收到的IIH报文区域地址最大数错误，不处理接收到的Hello报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1331080014}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Receive a LAN IIH contains invalid packet Type. IIH discarded.]{lang="EN-US"}]{#struct_0_16293_x2703_890639642}
+ISIS-*procId*-ERR: Receive a LAN IIH contains invalid packet Type. IIH discarded.
 
-[[接收到的]{style="font-family:宋体"}[IIH]{lang="EN-US"}]{#struct_0_16293_x2703_x1805637880}[报文类型错误，不处理接收到的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+接收到的IIH报文类型错误，不处理接收到的Hello报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1588693423}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Receive a LAN IIH contains invalid head length. IIH discarded.]{lang="EN-US"}]{#struct_0_16293_x2703_x600112494}
+ISIS-*procId*-ERR: Receive a LAN IIH contains invalid head length. IIH discarded.
 
-[[接收到的]{style="font-family:宋体"}[IIH]{lang="EN-US"}]{#struct_0_16293_x2703_1391527839}[报文头长度错误，不处理接收到的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+接收到的IIH报文头长度错误，不处理接收到的Hello报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_645057700}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR:  Receive a LAN IIH contains invalid circuit Type. IIH discarded.]{lang="EN-US"}]{#struct_0_16293_x2703_1588890031}
+ISIS-*procId*-ERR:  Receive a LAN IIH contains invalid circuit Type. IIH discarded.
 
-[[接收到的]{style="font-family:宋体"}[IIH]{lang="EN-US"}]{#struct_0_16293_x2703_x1401653652}[报文接口类型错误，不处理接收到的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+接收到的IIH报文接口类型错误，不处理接收到的Hello报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_405856527}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR:  Receive a LAN IIH contains invalid priority. IIH discarded.]{lang="EN-US"}]{#struct_0_16293_x2703_437307695}
+ISIS-*procId*-ERR:  Receive a LAN IIH contains invalid priority. IIH discarded.
 
-[[接收到的]{style="font-family:宋体"}[IIH]{lang="EN-US"}]{#struct_0_16293_x2703_1588824495}[报文]{style="font-family:宋体"}[dis]{lang="EN-US"}[优先级错误，不处理接收到的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+接收到的IIH报文dis优先级错误，不处理接收到的Hello报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_185551070}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Receive a LAN IIH neighbor TLV decode error. IIH discarded.]{lang="EN-US"}]{#struct_0_16293_x2703_822551662}
+ISIS-*procId*-ERR: Receive a LAN IIH neighbor TLV decode error. IIH discarded.
 
-[[接收到的]{style="font-family:宋体"}[IIH]{lang="EN-US"}]{#struct_0_16293_x2703_332293104}[报文邻居]{style="font-family:宋体"}[TLV]{lang="EN-US"}[解码错误，不处理接收到的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+接收到的IIH报文邻居TLV解码错误，不处理接收到的Hello报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1589021103}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR:  Receive a LAN IIH area address TLV decode error. IIH discarded.]{lang="EN-US"}]{#struct_0_16293_x2703_x201266164}
+ISIS-*procId*-ERR:  Receive a LAN IIH area address TLV decode error. IIH discarded.
 
-[[接收到的]{style="font-family:宋体"}[IIH]{lang="EN-US"}]{#struct_0_16293_x2703_x1084630544}[报文区域地址]{style="font-family:宋体"}[TLV]{lang="EN-US"}[解码错误，不处理接收到的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+接收到的IIH报文区域地址TLV解码错误，不处理接收到的Hello报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x717362449}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Receive a LAN IIH IP address TLV decode error. IIH discarded.]{lang="EN-US"}]{#struct_0_16293_x2703_1588955567}
+ISIS-*procId*-ERR: Receive a LAN IIH IP address TLV decode error. IIH discarded.
 
-[[接收到的]{style="font-family:宋体"}[IIH]{lang="EN-US"}]{#struct_0_16293_x2703_956087639}[报文]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[TLV]{lang="EN-US"}[解码错误，不处理接收到的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+接收到的IIH报文IP地址TLV解码错误，不处理接收到的Hello报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x730255882}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Receive a LAN IIH protocol support TLV decode error. IIH discarded.]{lang="EN-US"}]{#struct_0_16293_x2703_1589152175}
+ISIS-*procId*-ERR: Receive a LAN IIH protocol support TLV decode error. IIH discarded.
 
-[[接收到的]{style="font-family:宋体"}[IIH]{lang="EN-US"}]{#struct_0_16293_x2703_199986721}[报文协议支持]{style="font-family:宋体"}[TLV]{lang="EN-US"}[解码错误，不处理接收到的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+接收到的IIH报文协议支持TLV解码错误，不处理接收到的Hello报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_303942719}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR:  System\'s state is disable.]{lang="EN-US"}]{#struct_0_16293_x2703_718778179}
+ISIS-*procId*-ERR:  System\'s state is disable.
 
-[[进程处于]{style="font-family:宋体"}[disable]{lang="EN-US"}]{#struct_0_16293_x2703_1589086639}[状态]{style="font-family:宋体"}
+进程处于disable状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_160391338}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR:  Socket ID leave muti-cast group failed.]{lang="EN-US"}]{#struct_0_16293_x2703_x1077760465}
+ISIS-*procId*-ERR:  Socket ID leave muti-cast group failed.
 
-[[将接口从组播组中删除失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1140255465}
+将接口从组播组中删除失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1551516360}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: *adjLevel* Hello timer start failed.]{lang="EN-US"}]{#struct_0_16293_x2703_x673486647}
+ISIS-*procId*-ERR: *adjLevel* Hello timer start failed.
 
-[[Hello]{lang="EN-US"}]{#struct_0_16293_x2703_87080484}[定时器创建失败]{style="font-family:宋体"}
+Hello定时器创建失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1140321001}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[adjLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x1225979153}[：]{lang="EN-US" style="font-family:宋体"}[hello]{lang="EN-US"}[定时器的类型]{lang="EN-US" style="font-family:宋体"}
+·*adjLevel*：hello定时器的类型
 
-[[ISIS-*procId*-ERR: Socket ID join mutiple broadcast group failed.]{lang="EN-US"}]{#struct_0_16293_x2703_314922837}
+ISIS-*procId*-ERR: Socket ID join mutiple broadcast group failed.
 
-[[将接口加入到组播组中失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1140124393}
+将接口加入到组播组中失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x469765082}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: UPDT Module NBR TLV Modify Failed.]{lang="EN-US"}]{#struct_0_16293_x2703_1271490678}
+ISIS-*procId*-ERR: UPDT Module NBR TLV Modify Failed.
 
-[[邻居]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_16293_x2703_x1140189929}[更新失败]{style="font-family:宋体"}
+邻居TLV更新失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1926908452}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Notify UPDT Module LSP Change Failed.]{lang="EN-US"}]{#struct_0_16293_x2703_x1798488858}
+ISIS-*procId*-ERR: Notify UPDT Module LSP Change Failed.
 
-[[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x1139993321}[重新生成失败]{style="font-family:宋体"}
+LSP重新生成失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x439709292}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: DEC Module ISPF Link Update Failed.]{lang="EN-US"}]{#struct_0_16293_x2703_385684220}
+ISIS-*procId*-ERR: DEC Module ISPF Link Update Failed.
 
-[[邻接链路更新失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1140058857}
+邻接链路更新失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_156052474}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Hold timer start failed.]{lang="EN-US"}]{#struct_0_16293_x2703_1630741904}
+ISIS-*procId*-ERR: Hold timer start failed.
 
-[[邻居维持定时器创建失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1139862249}
+邻居维持定时器创建失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1904572598}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Get SNPA address failed.]{lang="EN-US"}]{#struct_0_16293_x2703_x729193924}
+ISIS-*procId*-ERR: Get SNPA address failed.
 
-[[获取]{style="font-family:宋体"}[snpa]{lang="EN-US"}]{#struct_0_16293_x2703_x1139927785}[地址失败]{style="font-family:宋体"}
+获取snpa地址失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_577911239}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Get circuit(*circuitName*)\'s priority failed.]{lang="EN-US"}]{#struct_0_16293_x2703_x1139731177}
+ISIS-*procId*-ERR: Get circuit(*circuitName*)\'s priority failed.
 
-[[获取接口]{style="font-family:宋体"}[DIS]{lang="EN-US"}]{#struct_0_16293_x2703_1879321342}[优先级失败]{style="font-family:宋体"}
+获取接口DIS优先级失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x2096971637}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x1139796713}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-ERR: Get system\'s area address failed.]{lang="EN-US"}]{#struct_0_16293_x2703_66419398}
+ISIS-*procId*-ERR: Get system\'s area address failed.
 
-[[获取接口系统区域地址失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_814435502}
+获取接口系统区域地址失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1140255464}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: The circuit\'s MTU is too less.]{lang="EN-US"}]{#struct_0_16293_x2703_x14567581}
+ISIS-*procId*-ERR: The circuit\'s MTU is too less.
 
-[[接口]{style="font-family:宋体"}[mtu]{lang="EN-US"}]{#struct_0_16293_x2703_x1140321000}[大小放不下当前]{style="font-family:宋体"}[TLV]{lang="EN-US"}
+接口mtu大小放不下当前TLV
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_340104788}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Get circuit(*circuitName*)\'s IP address failed.]{lang="EN-US"}]{#struct_0_16293_x2703_x1974044351}
+ISIS-*procId*-ERR: Get circuit(*circuitName*)\'s IP address failed.
 
-[[获取接口]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_16293_x2703_x1140124392}[地址失败]{style="font-family:宋体"}
+获取接口IP地址失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1096318859}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x1140189928}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-ERR: The circuit\'s MTU is too less to encode LAN IIH.]{lang="EN-US"}]{#struct_0_16293_x2703_x360824511}
+ISIS-*procId*-ERR: The circuit\'s MTU is too less to encode LAN IIH.
 
-[[接口]{style="font-family:宋体"}[mtu]{lang="EN-US"}]{#struct_0_16293_x2703_x2144603085}[大小放不下]{style="font-family:宋体"}[IIH]{lang="EN-US"}[报文]{style="font-family:宋体"}
+接口mtu大小放不下IIH报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1139993320}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Get circuit(*circuitName*)\'s MTU failed.]{lang="EN-US"}]{#struct_0_16293_x2703_x2005793233}
+ISIS-*procId*-ERR: Get circuit(*circuitName*)\'s MTU failed.
 
-[[获取接口]{style="font-family:宋体"}[MTU]{lang="EN-US"}]{#struct_0_16293_x2703_x1140058856}[失败]{style="font-family:宋体"}
+获取接口MTU失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1410031467}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x1139862248}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-ERR: Hello packet send failed on circuit(*circuitName*).]{lang="EN-US"}]{#struct_0_16293_x2703_x338488657}
+ISIS-*procId*-ERR: Hello packet send failed on circuit(*circuitName*).
 
-[[接口]{style="font-family:宋体"}[IIH]{lang="EN-US"}]{#struct_0_16293_x2703_x1139927784}[报文发送失败]{style="font-family:宋体"}
+接口IIH报文发送失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_2143995180}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x1139731176}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-ERR: Hello timer create failed on circuit(*circuitName*).]{lang="EN-US"}]{#struct_0_16293_x2703_313237401}
+ISIS-*procId*-ERR: Hello timer create failed on circuit(*circuitName*).
 
-[[接口上的]{style="font-family:宋体"}[hello]{lang="EN-US"}]{#struct_0_16293_x2703_x1801045555}[定时器创建失败]{style="font-family:宋体"}
+接口上的hello定时器创建失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1139796712}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x1499664543}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-ERR: (MT*mtId*)(*level*) Error modifying the attributes of the route entry in RM.]{lang="EN-US"}]{#struct_0_16293_x2703_x1140255467}
+ISIS-*procId*-ERR: (MT*mtId*)(*level*) Error modifying the attributes of the route entry in RM.
 
-[[更新路由属性失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1580651522}
+更新路由属性失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1140321003}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mtId]{lang="EN-US"}*]{#struct_0_16293_x2703_x63179739}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*mtId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_x1140124395}[：系统类型]{lang="EN-US" style="font-family:宋体"}[ ]{lang="EN-US"}[可为]{lang="EN-US" style="font-family:宋体"}[L1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2]{lang="EN-US"}
+·*level*：系统类型可为L1或L2
 
-[[ISIS-*procId*-ERR: (MT*mtId*)(*level*)  Error adding a new route entry in RM.]{lang="EN-US"}]{#struct_0_16293_x2703_336803972}
+ISIS-*procId*-ERR: (MT*mtId*)(*level*)  Error adding a new route entry in RM.
 
-[[添加新路由失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1140189931}
+添加新路由失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1570743628}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mtId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1139993323}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*mtId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_723090122}[：系统类型]{lang="EN-US" style="font-family:宋体"}[ ]{lang="EN-US"}[可为]{lang="EN-US" style="font-family:宋体"}[L1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2]{lang="EN-US"}
+·*level*：系统类型可为L1或L2
 
-[[ISIS-*procId*-ERR: (MT*mtId*)(*level*)  Error deleting a route entry in RM.]{lang="EN-US"}]{#struct_0_16293_x2703_x1140058859}
+ISIS-*procId*-ERR: (MT*mtId*)(*level*)  Error deleting a route entry in RM.
 
-[[删除路由失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_606391168}
+删除路由失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1139862251}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mtId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1548276702}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*mtId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_x1139927787}[：系统类型]{lang="EN-US" style="font-family:宋体"}[ ]{lang="EN-US"}[可为]{lang="EN-US" style="font-family:宋体"}[L1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2]{lang="EN-US"}
+·*level*：系统类型可为L1或L2
 
-[[ISIS-*procId*-ERR: (MT*mtId*) Error getting *level* nexthop information for *systemId* from ISPF module.]{lang="EN-US"}]{#struct_0_16293_x2703_1740710653}
+ISIS-*procId*-ERR: (MT*mtId*) Error getting *level* nexthop information for *systemId* from ISPF module.
 
-[[获取路由发布源的下一条失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1139731179}
+获取路由发布源的下一条失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1072752288}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mtId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1139796715}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*mtId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_x1140255466}[：系统类型]{lang="EN-US" style="font-family:宋体"}[ ]{lang="EN-US"}[可为]{lang="EN-US" style="font-family:宋体"}[L1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2]{lang="EN-US"}
+·*level*：系统类型可为L1或L2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[systemId]{lang="EN-US"}*]{#struct_0_16293_x2703_1148231833}[：系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*systemId*：系统ID
 
-[[ISIS-*procId*-ERR: Error building nexthop list for route *ipAddr*/*mask*.]{lang="EN-US"}]{#struct_0_16293_x2703_x1140321002}
+ISIS-*procId*-ERR: Error building nexthop list for route *ipAddr*/*mask*.
 
-[[创建下一条链表失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_1502904202}
+创建下一条链表失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1140124394}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipAddr]{lang="EN-US"}*]{#struct_0_16293_x2703_1902887913}[：接口]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+·*ipAddr*：接口IP地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mask]{lang="EN-US"}*]{#struct_0_16293_x2703_x1140189930}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址掩码]{lang="EN-US" style="font-family:宋体"}
+·*mask*：IP地址掩码
 
-[[ISIS-*procId*-ERR: (MT*mtId*)(*level*) Error processing ipv4 route entry.]{lang="EN-US"}]{#struct_0_16293_x2703_x4659687}
+ISIS-*procId*-ERR: (MT*mtId*)(*level*) Error processing ipv4 route entry.
 
-[[路由计算出错]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1139993322}
+路由计算出错
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mtId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1140058858}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*mtId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_x959692773}[：系统类型]{lang="EN-US" style="font-family:宋体"}[ ]{lang="EN-US"}[可为]{lang="EN-US" style="font-family:宋体"}[L1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2]{lang="EN-US"}
+·*level*：系统类型可为L1或L2
 
-[[ISIS-*procId*-ERR: (MT*mtId*)(*level*) Error adding the route source entry from the source list.]{lang="EN-US"}]{#struct_0_16293_x2703_x1139862250}
+ISIS-*procId*-ERR: (MT*mtId*)(*level*) Error adding the route source entry from the source list.
 
-[[添加路由发布源失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_17807239}
+添加路由发布源失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mtId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1139927786}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*mtId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_x988172702}[：系统类型]{lang="EN-US" style="font-family:宋体"}[ ]{lang="EN-US"}[可为]{lang="EN-US" style="font-family:宋体"}[L1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2]{lang="EN-US"}
+·*level*：系统类型可为L1或L2
 
-[[ISIS-*procId*-ERR: (MT*mtId*)(*level*) Error finding the routeEntry structure for address *ipAddr*/*mask*.]{lang="EN-US"}]{#struct_0_16293_x2703_x1139731178}
+ISIS-*procId*-ERR: (MT*mtId*)(*level*) Error finding the routeEntry structure for address *ipAddr*/*mask*.
 
-[[查找路由信息失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1139796714}
+查找路由信息失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mtId]{lang="EN-US"}*]{#struct_0_16293_x2703_x693095489}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*mtId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_x1140255469}[：系统类型]{lang="EN-US" style="font-family:宋体"}[ ]{lang="EN-US"}[可为]{lang="EN-US" style="font-family:宋体"}[L1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2]{lang="EN-US"}
+·*level*：系统类型可为L1或L2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipAddr]{lang="EN-US"}*]{#struct_0_16293_x2703_x1130312828}[：接口]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+·*ipAddr*：接口IP地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mask]{lang="EN-US"}*]{#struct_0_16293_x2703_x1140321005}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址掩码]{lang="EN-US" style="font-family:宋体"}
+·*mask*：IP地址掩码
 
-[[ISIS-*procId*-ERR: (MT*mtId*)(*level*)  Error deleting the route source entry from the source list.]{lang="EN-US"}]{#struct_0_16293_x2703_x1140124397}
+ISIS-*procId*-ERR: (MT*mtId*)(*level*)  Error deleting the route source entry from the source list.
 
-[[删除路由发布源失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_1499603386}
+删除路由发布源失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mtId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1140189933}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*mtId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_1561424254}[：系统类型]{lang="EN-US" style="font-family:宋体"}[ ]{lang="EN-US"}[可为]{lang="EN-US" style="font-family:宋体"}[L1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2]{lang="EN-US"}
+·*level*：系统类型可为L1或L2
 
-[[ISIS-*procId*-ERR: (MT*mtId*)(*level*) Error modifying the route source entry in the source list.]{lang="EN-US"}]{#struct_0_16293_x2703_x1139993325}
+ISIS-*procId*-ERR: (MT*mtId*)(*level*) Error modifying the route source entry in the source list.
 
-[[更新路由发布源失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1140058861}
+更新路由发布源失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mtId]{lang="EN-US"}*]{#struct_0_16293_x2703_962424920}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*mtId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_x1139862253}[：系统类型]{lang="EN-US" style="font-family:宋体"}[ ]{lang="EN-US"}[可为]{lang="EN-US" style="font-family:宋体"}[L1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2]{lang="EN-US"}
+·*level*：系统类型可为L1或L2
 
-[[ISIS-*procId*-ERR: (MT*mtId*)(*level*)  Add route to URT fails.]{lang="EN-US"}]{#struct_0_16293_x2703_x385477288}
+ISIS-*procId*-ERR: (MT*mtId*)(*level*)  Add route to URT fails.
 
-[[路由已满，添加路由失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1139927789}
+路由已满，添加路由失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mtId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1139731181}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*mtId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_717504968}[：系统类型]{lang="EN-US" style="font-family:宋体"}[ ]{lang="EN-US"}[可为]{lang="EN-US" style="font-family:宋体"}[L1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2]{lang="EN-US"}
+·*level*：系统类型可为L1或L2
 
-[[ISIS-*procId*-ERR: (MT*mtId*)(*level*) Modify route in URT failure.]{lang="EN-US"}]{#struct_0_16293_x2703_x1139796717}
+ISIS-*procId*-ERR: (MT*mtId*)(*level*) Modify route in URT failure.
 
-[[更新路由失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_2035787866}
+更新路由失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mtId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1140255468}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*mtId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_x1140321004}[：系统类型]{lang="EN-US" style="font-family:宋体"}[ ]{lang="EN-US"}[可为]{lang="EN-US" style="font-family:宋体"}[L1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2]{lang="EN-US"}
+·*level*：系统类型可为L1或L2
 
-[[ISIS-*procId*-ERR: (MT*mtId*)(*level*)  Del route form URT fails.]{lang="EN-US"}]{#struct_0_16293_x2703_x1985494040}
+ISIS-*procId*-ERR: (MT*mtId*)(*level*)  Del route form URT fails.
 
-[[删除路由失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1140124396}
+删除路由失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mtId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1140189932}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*mtId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_x1167459101}[：系统类型]{lang="EN-US" style="font-family:宋体"}[ ]{lang="EN-US"}[可为]{lang="EN-US" style="font-family:宋体"}[L1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2]{lang="EN-US"}
+·*level*：系统类型可为L1或L2
 
-[[ISIS-*procId*-ERR: Resetting the system]{lang="EN-US"}]{#struct_0_16293_x2703_x1139993324}
+ISIS-*procId*-ERR: Resetting the system
 
-[[进程正在]{style="font-family:宋体"}[reset]{lang="EN-US"}]{#struct_0_16293_x2703_x1140058860}[状态]{style="font-family:宋体"}
+进程正在reset状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x603659021}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: MTU Size Exceeds Max PDU Size *mtuSize*, Setting it to Max PDU Size.]{lang="EN-US"}]{#struct_0_16293_x2703_x1139862252}
+ISIS-*procId*-ERR: MTU Size Exceeds Max PDU Size *mtuSize*, Setting it to Max PDU Size.
 
-[[接口]{style="font-family:宋体"}[mtu]{lang="EN-US"}]{#struct_0_16293_x2703_1180606653}[超过最大值]{style="font-family:宋体"}
+接口mtu超过最大值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1139927788}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mtuSize]{lang="EN-US"}*]{#struct_0_16293_x2703_x1139731180}[：接口]{lang="EN-US" style="font-family:宋体"}[MTU]{lang="EN-US"}[大小]{lang="EN-US" style="font-family:宋体"}
+·*mtuSize*：接口MTU大小
 
-[[ISIS-*procId*-ERR: Processing the circuit MTU change event fails]{lang="EN-US"}]{#struct_0_16293_x2703_x848578973}
+ISIS-*procId*-ERR: Processing the circuit MTU change event fails
 
-[[接口]{style="font-family:宋体"}[mtu]{lang="EN-US"}]{#struct_0_16293_x2703_x1139796716}[变化处理失败]{style="font-family:宋体"}
+接口mtu变化处理失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1238754522}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mtuSize]{lang="EN-US"}*]{#struct_0_16293_x2703_972440144}[：接口]{lang="EN-US" style="font-family:宋体"}[MTU]{lang="EN-US"}[大小]{lang="EN-US" style="font-family:宋体"}
+·*mtuSize*：接口MTU大小
 
-[[ISIS-*procId*-ERR: Processing the physical circuit board insert error]{lang="EN-US"}]{#struct_0_16293_x2703_1238820058}
+ISIS-*procId*-ERR: Processing the physical circuit board insert error
 
-[[接口板插入处理出错]{style="font-family:宋体"}]{#struct_0_16293_x2703_1238623450}
+接口板插入处理出错
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x591558289}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Processing the physical circuit delete error on circuit :*circuitName*]{lang="EN-US"}]{#struct_0_16293_x2703_1238688986}
+ISIS-*procId*-ERR: Processing the physical circuit delete error on circuit :*circuitName*
 
-[[处理物理接口删除出错]{style="font-family:宋体"}]{#struct_0_16293_x2703_1239016666}
+处理物理接口删除出错
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_971844587}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_1239082202}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-ERR: Processing the physical circuit UP \--\> Down error on circuit : *circuitName*]{lang="EN-US"}]{#struct_0_16293_x2703_1238885594}
+ISIS-*procId*-ERR: Processing the physical circuit UP \--\> Down error on circuit : *circuitName*
 
-[[物理接口]{style="font-family:宋体"}[Up]{lang="EN-US"}]{#struct_0_16293_x2703_1238951130}[到]{style="font-family:宋体"}[down]{lang="EN-US"}[的处理出错]{style="font-family:宋体"}
+物理接口Up到down的处理出错
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1333960536}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_1239278810}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-ERR: Processing the physical circuit config error on circuit :  *circuitName*]{lang="EN-US"}]{#struct_0_16293_x2703_1239344346}
+ISIS-*procId*-ERR: Processing the physical circuit config error on circuit :  *circuitName*
 
-[[物理接口配置的处理出错]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1771814194}
+物理接口配置的处理出错
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1238754523}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_1238820059}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-ERR: Processing board remove failed on circuit : *circuitName*]{lang="EN-US"}]{#struct_0_16293_x2703_1238623451}
+ISIS-*procId*-ERR: Processing board remove failed on circuit : *circuitName*
 
-[[物理接口板拔出的处理出错]{style="font-family:宋体"}]{#struct_0_16293_x2703_x591623825}
+物理接口板拔出的处理出错
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1238688987}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_1239016667}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-ERR: Invalid phase *enDisablePhase*, ignore event.]{lang="EN-US"}]{#struct_0_16293_x2703_1239082203}
+ISIS-*procId*-ERR: Invalid phase *enDisablePhase*, ignore event.
 
-[[进程不在]{style="font-family:宋体"}[reset]{lang="EN-US"}]{#struct_0_16293_x2703_x248185263}[的阶段]{style="font-family:宋体"}
+进程不在reset的阶段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1238885595}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[enDisablePhase]{lang="EN-US"}*]{#struct_0_16293_x2703_1238951131}[：进程所处的状态阶段]{lang="EN-US" style="font-family:
-  宋体"}
+·*enDisablePhase*：进程所处的状态阶段
 
-[[ISIS-*procId*-ERR: The event type and disable phase mismatch.]{lang="EN-US"}]{#struct_0_16293_x2703_1334026072}
+ISIS-*procId*-ERR: The event type and disable phase mismatch.
 
-[[进程的]{style="font-family:宋体"}[reset]{lang="EN-US"}]{#struct_0_16293_x2703_1239278811}[状态和阶段不一致]{style="font-family:宋体"}
+进程的reset状态和阶段不一致
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1239344347}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Failed to add neighbor into *lspLevel* LSPs]{lang="EN-US"}]{#struct_0_16293_x2703_1238754520}
+ISIS-*procId*-ERR: Failed to add neighbor into *lspLevel* LSPs
 
-[[向]{style="font-family:宋体"}[lsp]{lang="EN-US"}]{#struct_0_16293_x2703_972571216}[中添加邻居信息失败]{style="font-family:宋体"}
+向lsp中添加邻居信息失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1238820056}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_1238623448}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[类型。可为]{lang="EN-US" style="font-family:宋体"}[Level-1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[Level-2]{lang="EN-US"}
+·*lspLevel*：LSP类型。可为Level-1或Level-2
 
-[[ISIS-*procId*-ERR: Failed to add address *ipAddr*/*mask* into *lspleve* LSPs]{lang="EN-US"}]{#struct_0_16293_x2703_1238688984}
+ISIS-*procId*-ERR: Failed to add address *ipAddr*/*mask* into *lspleve* LSPs
 
-[[向]{style="font-family:宋体"}[lsp]{lang="EN-US"}]{#struct_0_16293_x2703_1647098297}[中添加]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址失败]{style="font-family:宋体"}
+向lsp中添加IP地址失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipAddr]{lang="EN-US"}*]{#struct_0_16293_x2703_1239016664}[：接口]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+·*ipAddr*：接口IP地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mask]{lang="EN-US"}*]{#struct_0_16293_x2703_1239082200}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址掩码]{lang="EN-US" style="font-family:宋体"}
+·*mask*：IP地址掩码
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_1238885592}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[类型。可为]{lang="EN-US" style="font-family:宋体"}[Level-1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[Level-2]{lang="EN-US"}
+·*lspLevel*：LSP类型。可为Level-1或Level-2
 
-[[ISIS-*procId*-ERR: Failed to start csnp timer on circuit *circuitName*]{lang="EN-US"}]{#struct_0_16293_x2703_x1762800365}
+ISIS-*procId*-ERR: Failed to start csnp timer on circuit *circuitName*
 
-[[接口]{style="font-family:宋体"}[CSNP]{lang="EN-US"}]{#struct_0_16293_x2703_1238951128}[定时器创建失败]{style="font-family:宋体"}
+接口CSNP定时器创建失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1239278808}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_1239344344}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-ERR: Failed to start psnp timer on circuit *circuitName*]{lang="EN-US"}]{#struct_0_16293_x2703_1238754521}
+ISIS-*procId*-ERR: Failed to start psnp timer on circuit *circuitName*
 
-[[接口]{style="font-family:宋体"}[PSNP]{lang="EN-US"}]{#struct_0_16293_x2703_972636752}[定时器创建失败]{style="font-family:宋体"}
+接口PSNP定时器创建失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1238820057}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_1238623449}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-ERR: Failed to start flood timer on the circuit *circuitName*]{lang="EN-US"}]{#struct_0_16293_x2703_1238688985}
+ISIS-*procId*-ERR: Failed to start flood timer on the circuit *circuitName*
 
-[[接口]{style="font-family:宋体"}[lsp]{lang="EN-US"}]{#struct_0_16293_x2703_1239016665}[泛洪定时器创建失败]{style="font-family:宋体"}
+接口lsp泛洪定时器创建失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_972041195}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_1239082201}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-ERR: Failed to stop lsp flood timer on circuit *circuitName*]{lang="EN-US"}]{#struct_0_16293_x2703_1238885593}
+ISIS-*procId*-ERR: Failed to stop lsp flood timer on circuit *circuitName*
 
-[[关闭接口]{style="font-family:宋体"}[lsp]{lang="EN-US"}]{#struct_0_16293_x2703_1238951129}[泛洪定时器失败]{style="font-family:宋体"}
+关闭接口lsp泛洪定时器失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1239278809}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_1239344345}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-ERR: Failed to stop *lspLevel* timer on circuit *circuitName*]{lang="EN-US"}]{#struct_0_16293_x2703_x1772010802}
+ISIS-*procId*-ERR: Failed to stop *lspLevel* timer on circuit *circuitName*
 
-[[关闭接口]{style="font-family:宋体"}[lsp]{lang="EN-US"}]{#struct_0_16293_x2703_1238754518}[生成定时器失败]{style="font-family:宋体"}
+关闭接口lsp生成定时器失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1238820054}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_1238623446}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[类型。可为]{lang="EN-US" style="font-family:宋体"}[Level-1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[Level-2]{lang="EN-US"}
+·*lspLevel*：LSP类型。可为Level-1或Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_1238688982}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-ERR: Parsed neighbor\'s metric(*systemId*) more than max metric value]{lang="EN-US"}]{#struct_0_16293_x2703_1239016662}
+ISIS-*procId*-ERR: Parsed neighbor\'s metric(*systemId*) more than max metric value
 
-[[接口邻居]{style="font-family:宋体"}[metric]{lang="EN-US"}]{#struct_0_16293_x2703_971582443}[值大于允许的最大值]{style="font-family:宋体"}
+接口邻居metric值大于允许的最大值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1239082198}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[systemId]{lang="EN-US"}*]{#struct_0_16293_x2703_1238885590}[：系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*systemId*：系统ID
 
-[[ISIS-*procId*-ERR: Skip ip address prefix for mismatching with mask]{lang="EN-US"}]{#struct_0_16293_x2703_1238951126}
+ISIS-*procId*-ERR: Skip ip address prefix for mismatching with mask
 
-[[接口]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_16293_x2703_1239278806}[地址前缀和掩码不匹配]{style="font-family:宋体"}
+接口IP地址前缀和掩码不匹配
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1239344342}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Skip the prefix for invalid ip prefix]{lang="EN-US"}]{#struct_0_16293_x2703_1238754519}
+ISIS-*procId*-ERR: Skip the prefix for invalid ip prefix
 
-[[IP]{lang="EN-US"}]{#struct_0_16293_x2703_1238820055}[地址前缀不正确]{style="font-family:宋体"}
+IP地址前缀不正确
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1739396118}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_1238623447}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[类型。可为]{lang="EN-US" style="font-family:宋体"}[Level-1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[Level-2]{lang="EN-US"}
+·*lspLevel*：LSP类型。可为Level-1或Level-2
 
-[[ISIS-*procId*-ERR: Internal ip reach Tlv with external bit set encountered]{lang="EN-US"}]{#struct_0_16293_x2703_1238688983}
+ISIS-*procId*-ERR: Internal ip reach Tlv with external bit set encountered
 
-[[内部可达]{style="font-family:宋体"}[IP TLV]{lang="EN-US"}]{#struct_0_16293_x2703_1239016663}[包含]{style="font-family:宋体"}[metric]{lang="EN-US"}[类型为外部的位]{style="font-family:宋体"}
+内部可达IP TLV包含metric类型为外部的位
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1239082199}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Area addr tlv in non-zero fragment, skip this area addr tlv ]{lang="EN-US"}]{#struct_0_16293_x2703_1238885591}
+ISIS-*procId*-ERR: Area addr tlv in non-zero fragment, skip this area addr tlv
 
-[[非零分片中存在区域地址]{style="font-family:宋体"}]{#struct_0_16293_x2703_1238951127}
+非零分片中存在区域地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1239278807}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Area addr tlv in pseudo node lsp, skip this area addr tlv]{lang="EN-US"}]{#struct_0_16293_x2703_1239344343}
+ISIS-*procId*-ERR: Area addr tlv in pseudo node lsp, skip this area addr tlv
 
-[[伪节点]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x1771617586}[中存在区域地址]{style="font-family:宋体"}
+伪节点LSP中存在区域地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1490128833}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Lsp info update failed]{lang="EN-US"}]{#struct_0_16293_x2703_x1490063297}
+ISIS-*procId*-ERR: Lsp info update failed
 
-[[LSDB]{lang="EN-US"}]{#struct_0_16293_x2703_x1490259905}[中的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[信息更新失败]{style="font-family:宋体"}
+LSDB中的LSP信息更新失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1490194369}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-ERR: Lsp insert failed]{lang="EN-US"}]{#struct_0_16293_x2703_x1489866689}
+ISIS-*procId*-ERR: Lsp insert failed
 
-[[向]{style="font-family:宋体"}[lsp]{lang="EN-US"}]{#struct_0_16293_x2703_x1489801153}[中添加邻居信息失败]{style="font-family:宋体"}
+向lsp中添加邻居信息失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1489997761}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x1489932225}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[类型。可为]{lang="EN-US" style="font-family:宋体"}[Level-1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[Level-2]{lang="EN-US"}
+·*lspLevel*：LSP类型。可为Level-1或Level-2
 
-[[ISIS-*processId*-ERR: Lsp\'s seq number is 0]{lang="EN-US"}]{#struct_0_16293_x2703_x1489604545}
+ISIS-*processId*-ERR: Lsp\'s seq number is 0
 
-[[接收到的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x1489539009}[报文的序列号为]{style="font-family:宋体"}[0]{lang="EN-US"}[，丢弃报文]{style="font-family:宋体"}
+接收到的LSP报文的序列号为0，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1490128832}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[ISIS-*processId*-ERR: Illegal is-type in level-1 lsp]{lang="EN-US"}]{#struct_0_16293_x2703_x1490063296}
+ISIS-*processId*-ERR: Illegal is-type in level-1 lsp
 
-[[Level-1 LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x1490259904}[报文的]{style="font-family:宋体"}[IS-TYPE]{lang="EN-US"}[字段非法，丢弃报文]{style="font-family:宋体"}
+Level-1 LSP报文的IS-TYPE字段非法，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1490194368}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[ISIS-*processId*-ERR: Check sum is zero]{lang="EN-US"}]{#struct_0_16293_x2703_x1489866688}
+ISIS-*processId*-ERR: Check sum is zero
 
-[[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x1489801152}[报文的校验和为]{style="font-family:宋体"}[0]{lang="EN-US"}[，丢弃报文]{style="font-family:宋体"}
+LSP报文的校验和为0，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1489997760}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[ISIS-*processId*-ERR: Check sum error]{lang="EN-US"}]{#struct_0_16293_x2703_x1489932224}
+ISIS-*processId*-ERR: Check sum error
 
-[[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x1489604544}[报文的校验和错误，丢弃报文]{style="font-family:宋体"}
+LSP报文的校验和错误，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1489539008}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[ISIS-*processId*-ERR: Support protocol mismatch]{lang="EN-US"}]{#struct_0_16293_x2703_x1490128835}
+ISIS-*processId*-ERR: Support protocol mismatch
 
-[[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x1490063299}[报文携带的协议支持和本地的不匹配，丢弃报文]{style="font-family:宋体"}
+LSP报文携带的协议支持和本地的不匹配，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1490259907}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[ISIS-*processId*-ERR: Lsp with too long area addr]{lang="EN-US"}]{#struct_0_16293_x2703_x1490194371}
+ISIS-*processId*-ERR: Lsp with too long area addr
 
-[[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_683018986}[报文中携带的区域地址长度超过最大区域地址长度，丢弃报文]{style="font-family:宋体"}
+LSP报文中携带的区域地址长度超过最大区域地址长度，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1489801155}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[ISIS-*processId*-ERR: Lsp with wrong area addr length]{lang="EN-US"}]{#struct_0_16293_x2703_x1489997763}
+ISIS-*processId*-ERR: Lsp with wrong area addr length
 
-[[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x1489932227}[报文中携带的区域地址长度错误，丢弃报文]{style="font-family:宋体"}
+LSP报文中携带的区域地址长度错误，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1489604547}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[ISIS-*processId*-ERR: Lsp with invalid area addr]{lang="EN-US"}]{#struct_0_16293_x2703_x1489539011}
+ISIS-*processId*-ERR: Lsp with invalid area addr
 
-[[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x1490128834}[报文中携带的区域地址长度不合法，丢弃报文]{style="font-family:宋体"}
+LSP报文中携带的区域地址长度不合法，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1490063298}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[ISIS-*processId*-ERR: Wrongly formatted interface ip address tlv in lsp]{lang="EN-US"}]{#struct_0_16293_x2703_x1490259906}
+ISIS-*processId*-ERR: Wrongly formatted interface ip address tlv in lsp
 
-[[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x1490194370}[报文中携带的接口地址]{style="font-family:宋体"}[TLV]{lang="EN-US"}[格式错误，丢弃报文]{style="font-family:宋体"}
+LSP报文中携带的接口地址TLV格式错误，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1489866690}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[ISIS-*processId*-ERR: Wrongly formatted nbr tlv in lsp]{lang="EN-US"}]{#struct_0_16293_x2703_x1489801154}
+ISIS-*processId*-ERR: Wrongly formatted nbr tlv in lsp
 
-[[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x1489997762}[报文中携带的邻居]{style="font-family:宋体"}[TLV]{lang="EN-US"}[格式错误，丢弃报文]{style="font-family:宋体"}
+LSP报文中携带的邻居TLV格式错误，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1489932226}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[ISIS-*processId*-ERR: IP Reachablity tlv occur in pseudonode lsp]{lang="EN-US"}]{#struct_0_16293_x2703_x1489604546}
+ISIS-*processId*-ERR: IP Reachablity tlv occur in pseudonode lsp
 
-[[伪节点]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x1489539010}[报文中携带的]{style="font-family:宋体"}[IP]{lang="EN-US"}[可达]{style="font-family:宋体"}[TLV]{lang="EN-US"}[，丢弃报文]{style="font-family:宋体"}
+伪节点LSP报文中携带的IP可达TLV，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1490128837}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[ISIS-*processId*-ERR: Badly formatted ip reachablity tlv in lsp]{lang="EN-US"}]{#struct_0_16293_x2703_x1490063301}
+ISIS-*processId*-ERR: Badly formatted ip reachablity tlv in lsp
 
-[[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x1490259909}[报文中携带的]{style="font-family:宋体"}[IP]{lang="EN-US"}[可达]{style="font-family:宋体"}[TLV]{lang="EN-US"}[格式错误，丢弃报文]{style="font-family:宋体"}
+LSP报文中携带的IP可达TLV格式错误，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1490194373}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[ISIS-*processId*-ERR: Bad tlv len in the received lsp]{lang="EN-US"}]{#struct_0_16293_x2703_x1489866693}
+ISIS-*processId*-ERR: Bad tlv len in the received lsp
 
-[[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x1489801157}[报文中携带的]{style="font-family:宋体"}[TLV]{lang="EN-US"}[长度错误，丢弃报文]{style="font-family:宋体"}
+LSP报文中携带的TLV长度错误，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1489932229}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[ISIS-*processId*-ERR: Pdu size(*pduSize*) which is greater than receive buf size(*reveiveBufSize*)]{lang="EN-US"}]{#struct_0_16293_x2703_x1489604549}
+ISIS-*processId*-ERR: Pdu size(*pduSize*) which is greater than receive buf size(*reveiveBufSize*)
 
-[[LSP/SNP]{lang="EN-US"}]{#struct_0_16293_x2703_x1489539013}[报文长度大于接收缓冲区大小，丢弃报文]{style="font-family:宋体"}
+LSP/SNP报文长度大于接收缓冲区大小，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1490128836}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[pduSize]{lang="EN-US"}]{#struct_0_16293_x2703_x1490063300}[：]{lang="EN-US" style="font-family:宋体"}[LSP/SNP]{lang="EN-US"}[报文长度]{lang="EN-US" style="font-family:宋体"}
+·pduSize：LSP/SNP报文长度
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[reveiveBufSize]{lang="EN-US"}]{#struct_0_16293_x2703_x1490259908}[：]{lang="EN-US" style="font-family:宋体"}[接收缓冲区大小]{lang="EN-US" style="font-family:宋体"}
+·reveiveBufSize：接收缓冲区大小
 
-[[ISIS-*processId*-ERR: Pdu size(*pduSize*) which is less than common pdu header size(*pduCommonHeaderSize*)]{lang="EN-US"}]{#struct_0_16293_x2703_x1490194372}
+ISIS-*processId*-ERR: Pdu size(*pduSize*) which is less than common pdu header size(*pduCommonHeaderSize*)
 
-[[LSP/SNP]{lang="EN-US"}]{#struct_0_16293_x2703_x1489866692}[报文长度小于公共报文头大小，丢弃报文]{style="font-family:宋体"}
+LSP/SNP报文长度小于公共报文头大小，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1489801156}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[pduSize]{lang="EN-US"}*]{#struct_0_16293_x2703_x1489997764}[：]{lang="EN-US" style="font-family:宋体"}[LSP/SNP]{lang="EN-US"}[报文长度]{lang="EN-US" style="font-family:宋体"}
+·*pduSize*：LSP/SNP报文长度
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[pduCommonHeaderSize]{lang="EN-US"}*]{#struct_0_16293_x2703_x1489932228}[：]{lang="EN-US" style="font-family:宋体"}[公共报文头大小]{lang="EN-US" style="font-family:宋体"}
+·*pduCommonHeaderSize*：公共报文头大小
 
-[[ISIS-*processId*-ERR: Pdu size(*pduSize*) which is less than fixed pdu header size(*pduFixedHeaderSize*)]{lang="EN-US"}]{#struct_0_16293_x2703_x1489539012}
+ISIS-*processId*-ERR: Pdu size(*pduSize*) which is less than fixed pdu header size(*pduFixedHeaderSize*)
 
-[[LSP/SNP]{lang="EN-US"}]{#struct_0_16293_x2703_75955108}[报文长度小于固定报文头大小，丢弃报文]{style="font-family:宋体"}
+LSP/SNP报文长度小于固定报文头大小，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_76020644}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[pduSize]{lang="EN-US"}]{#struct_0_16293_x2703_75824036}[：]{lang="EN-US" style="font-family:宋体"}[LSP/SNP]{lang="EN-US"}[报文长度]{lang="EN-US" style="font-family:宋体"}
+·pduSize：LSP/SNP报文长度
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[pduFixedHeaderSize]{lang="EN-US"}]{#struct_0_16293_x2703_75889572}[：]{lang="EN-US" style="font-family:
-  宋体"}[固定报文头大小]{lang="EN-US" style="font-family:宋体"}
+·pduFixedHeaderSize：固定报文头大小
 
-[[ISIS-*processId*-ERR: Pdu length mismatch: recvLen = *recvLen*, encodeLen = *encodeLen*]{lang="EN-US"}]{#struct_0_16293_x2703_76217252}
+ISIS-*processId*-ERR: Pdu length mismatch: recvLen = *recvLen*, encodeLen = *encodeLen*
 
-[[LSP/SNP]{lang="EN-US"}]{#struct_0_16293_x2703_76282788}[报文长度和报文中的长度字段不相等，丢弃报文]{style="font-family:宋体"}
+LSP/SNP报文长度和报文中的长度字段不相等，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_76086180}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[recvLen]{lang="EN-US"}*]{#struct_0_16293_x2703_76151716}[：]{lang="EN-US" style="font-family:宋体"}[LSP/SNP]{lang="EN-US"}[报文长度]{lang="EN-US" style="font-family:宋体"}
+·*recvLen*：LSP/SNP报文长度
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[encodeLen]{lang="EN-US"}*]{#struct_0_16293_x2703_76479396}[：]{lang="EN-US" style="font-family:宋体"}[报文中的长度字段]{lang="EN-US" style="font-family:宋体"}
+·*encodeLen*：报文中的长度字段
 
-[[ISIS-*processId*-ERR: Lsp or snp pdu common header error]{lang="EN-US"}]{#struct_0_16293_x2703_75955109}
+ISIS-*processId*-ERR: Lsp or snp pdu common header error
 
-[[LSP/SNP]{lang="EN-US"}]{#struct_0_16293_x2703_76020645}[公共报文头错误，丢弃报文]{style="font-family:宋体"}
+LSP/SNP公共报文头错误，丢弃报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_75824037}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[ISIS-*processId*-ERR: Try to send pdu on loopback circuit]{lang="EN-US"}]{#struct_0_16293_x2703_75889573}
+ISIS-*processId*-ERR: Try to send pdu on loopback circuit
 
-[[企图在环回接口上发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_76217253}[，不发送]{style="font-family:宋体"}
+企图在环回接口上发送LSP，不发送
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_76282789}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[ISIS-*processId*-ERR: Send pdu error, SENDTO return is *SentDataLen*, usBufLen is *bufDataLen*]{lang="EN-US"}]{#struct_0_16293_x2703_76086181}
+ISIS-*processId*-ERR: Send pdu error, SENDTO return is *SentDataLen*, usBufLen is *bufDataLen*
 
-[[LSP/SNP]{lang="EN-US"}]{#struct_0_16293_x2703_76479397}[发送失败]{style="font-family:宋体"}
+LSP/SNP发送失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_76544933}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[SentDataLen]{lang="EN-US"}*]{#struct_0_16293_x2703_75955106}[：发送出去的数据长度]{lang="EN-US" style="font-family:
-  宋体"}
+·*SentDataLen*：发送出去的数据长度
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[bufDataLen]{lang="EN-US"}*]{#struct_0_16293_x2703_76020642}[：需要发送的数据长度]{lang="EN-US" style="font-family:宋体"}
+·*bufDataLen*：需要发送的数据长度
 
-[[ISIS-*processId*-ERR: Lsp size(*lspSize*) is larger than circuit mtu(*circuitMtu*)]{lang="EN-US"}]{#struct_0_16293_x2703_75824034}
+ISIS-*processId*-ERR: Lsp size(*lspSize*) is larger than circuit mtu(*circuitMtu*)
 
-[[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_75889570}[报文大小大于发送接口的]{style="font-family:宋体"}[MTU]{lang="EN-US"}
+LSP报文大小大于发送接口的MTU
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_76217250}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspSize]{lang="EN-US"}*]{#struct_0_16293_x2703_76086178}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[报文大小]{lang="EN-US" style="font-family:宋体"}
+·*lspSize*：LSP报文大小
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitMtu]{lang="EN-US"}*]{#struct_0_16293_x2703_76151714}[：]{lang="EN-US" style="font-family:宋体"}[发送接口的]{lang="EN-US" style="font-family:宋体"}[MTU]{lang="EN-US"}
+·*circuitMtu*：发送接口的MTU
 
-[[ISIS-*processId*-ERR: Wrong lsp entry tlv length(*lspEntryTlvLen*) in snp]{lang="EN-US"}]{#struct_0_16293_x2703_76479394}
+ISIS-*processId*-ERR: Wrong lsp entry tlv length(*lspEntryTlvLen*) in snp
 
-[[SNP]{lang="EN-US"}]{#struct_0_16293_x2703_76544930}[报文中的]{style="font-family:宋体"}[LSP ENTRY TLV]{lang="EN-US"}[长度错误]{style="font-family:宋体"}
+SNP报文中的LSP ENTRY TLV长度错误
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_75955107}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspEntryTlvLen]{lang="EN-US"}*]{#struct_0_16293_x2703_76020643}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP ENTRY TLV]{lang="EN-US"}[长度]{lang="EN-US" style="font-family:宋体"}
+·*lspEntryTlvLen*：LSP ENTRY TLV长度
 
-[[ISIS-*processId*-ERR: Snp contain too much lsp entry]{lang="EN-US"}]{#struct_0_16293_x2703_75889571}
+ISIS-*processId*-ERR: Snp contain too much lsp entry
 
-[[SNP]{lang="EN-US"}]{#struct_0_16293_x2703_76217251}[报文中的]{style="font-family:宋体"}[LSP ENTRY]{lang="EN-US"}[个数多过]{style="font-family:宋体"}
+SNP报文中的LSP ENTRY个数多过
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_76282787}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[ISIS-*processId*-ERR: Invalid lsp id reported in snp]{lang="EN-US"}]{#struct_0_16293_x2703_76086179}
+ISIS-*processId*-ERR: Invalid lsp id reported in snp
 
-[[SNP]{lang="EN-US"}]{#struct_0_16293_x2703_76151715}[报文中的]{style="font-family:宋体"}[LSP ENTRY]{lang="EN-US"}[的]{style="font-family:宋体"}[LSP-ID]{lang="EN-US"}[错误]{style="font-family:宋体"}
+SNP报文中的LSP ENTRY的LSP-ID错误
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_76544931}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[ISIS-*processId*-ERR: Failed to install lsp with seq number zero]{lang="EN-US"}]{#struct_0_16293_x2703_75955104}
+ISIS-*processId*-ERR: Failed to install lsp with seq number zero
 
-[[安装序列号为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_16293_x2703_76020640}[的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[失败]{style="font-family:宋体"}
+安装序列号为0的LSP失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_75824032}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[ISIS-*processId*-ERR: Failed to add level-*Level* area address *areaAdress*]{lang="EN-US"}]{#struct_0_16293_x2703_75889568}
+ISIS-*processId*-ERR: Failed to add level-*Level* area address *areaAdress*
 
-[[添加区域地址失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_76282784}
+添加区域地址失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_76086176}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_76151712}[：]{lang="EN-US" style="font-family:宋体"}[Level-1/Level-2]{lang="EN-US"}
+·*Level*：Level-1/Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[areaAdress]{lang="EN-US"}*]{#struct_0_16293_x2703_76479392}[：区域地址]{lang="EN-US" style="font-family:宋体"}
+·*areaAdress*：区域地址
 
-[[ISIS-*processId*-ERR: Failed to delete level-*Level* area address *areaAdress*]{lang="EN-US"}]{#struct_0_16293_x2703_75955105}
+ISIS-*processId*-ERR: Failed to delete level-*Level* area address *areaAdress*
 
-[[删除区域地址失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_76020641}
+删除区域地址失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_75824033}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_75889569}[：]{lang="EN-US" style="font-family:宋体"}[Level-1/Level-2]{lang="EN-US"}
+·*Level*：Level-1/Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[areaAdress]{lang="EN-US"}*]{#struct_0_16293_x2703_76282785}[：区域地址]{lang="EN-US" style="font-family:宋体"}
+·*areaAdress*：区域地址
 
-[[ISIS-*processId*-ERR: Failed to add level- *Level* protocol support *protocolSupport*]{lang="EN-US"}]{#struct_0_16293_x2703_76086177}
+ISIS-*processId*-ERR: Failed to add level- *Level* protocol support *protocolSupport*
 
-[[添加协议支持失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_76151713}
+添加协议支持失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_76479393}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_1642039049}[：]{lang="EN-US" style="font-family:宋体"}[Level-1/Level-2]{lang="EN-US"}
+·*Level*：Level-1/Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[protocolSupport]{lang="EN-US"}*]{#struct_0_16293_x2703_1642104585}[：协议支持]{lang="EN-US" style="font-family:
-  宋体"}
+·*protocolSupport*：协议支持
 
-[[ISIS-*processId*-ERR: Failed to delete level- *Level* protocol support *protocolSupport*]{lang="EN-US"}]{#struct_0_16293_x2703_1641907977}
+ISIS-*processId*-ERR: Failed to delete level- *Level* protocol support *protocolSupport*
 
-[[删除协议支持失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_1642301193}
+删除协议支持失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_1642366729}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_1642170121}[：]{lang="EN-US" style="font-family:宋体"}[Level-1/Level-2]{lang="EN-US"}
+·*Level*：Level-1/Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[protocolSupport]{lang="EN-US"}*]{#struct_0_16293_x2703_1642235657}[：协议支持]{lang="EN-US" style="font-family:
-  宋体"}
+·*protocolSupport*：协议支持
 
-[[ISIS-*processId*-ERR: Failed to add level-*Level* neighbour: System *SystemId* =\> Neighbour *nbrSourceId*]{lang="EN-US"}]{#struct_0_16293_x2703_1642628873}
+ISIS-*processId*-ERR: Failed to add level-*Level* neighbour: System *SystemId* =\> Neighbour *nbrSourceId*
 
-[[添加邻居失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_1642039050}
+添加邻居失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_1642104586}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_1641907978}[：]{lang="EN-US" style="font-family:宋体"}[Level-1/Level-2]{lang="EN-US"}
+·*Level*：Level-1/Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[SystemId]{lang="EN-US"}*]{#struct_0_16293_x2703_1642301194}[：]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}
+·*SystemId*：System ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nbrSourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_1642366730}[：邻居的]{lang="EN-US" style="font-family:
-  宋体"}[SourceID]{lang="EN-US"}
+·*nbrSourceId*：邻居的SourceID
 
-[[ISIS-*processId*-ERR: Failed to delete level-*Level* neighbour: System *SystemId* =\> Neighbour *nbrSourceId*]{lang="EN-US"}]{#struct_0_16293_x2703_1642170122}
+ISIS-*processId*-ERR: Failed to delete level-*Level* neighbour: System *SystemId* =\> Neighbour *nbrSourceId*
 
-[[删除邻居失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_1642563338}
+删除邻居失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_1642628874}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_1642039047}[：]{lang="EN-US" style="font-family:宋体"}[Level-1/Level-2]{lang="EN-US"}
+·*Level*：Level-1/Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[SystemId]{lang="EN-US"}*]{#struct_0_16293_x2703_1641907975}[：]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}
+·*SystemId*：System ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nbrSourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_1641973511}[：邻居的]{lang="EN-US" style="font-family:
-  宋体"}[SourceID]{lang="EN-US"}
+·*nbrSourceId*：邻居的SourceID
 
-[[ISIS-*processId*-ERR: Failed to modify level-*Level* neighbour: System *SystemId* =\> Neighbour *nbrSourceId*]{lang="EN-US"}]{#struct_0_16293_x2703_1642301191}
+ISIS-*processId*-ERR: Failed to modify level-*Level* neighbour: System *SystemId* =\> Neighbour *nbrSourceId*
 
-[[修改邻居失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_1642170119}
+修改邻居失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_1642235655}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_1642563335}[：]{lang="EN-US" style="font-family:宋体"}[Level-1/Level-2]{lang="EN-US"}
+·*Level*：Level-1/Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[SystemId]{lang="EN-US"}*]{#struct_0_16293_x2703_1642039048}[：]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}
+·*SystemId*：System ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nbrSourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_1642104584}[：邻居的]{lang="EN-US" style="font-family:
-  宋体"}[SourceID]{lang="EN-US"}
+·*nbrSourceId*：邻居的SourceID
 
-[[ISIS-*processId*-ERR: Failed to add level-*Level* Interface IP address: *ipAddress*/*mask*]{lang="EN-US"}]{#struct_0_16293_x2703_1641907976}
+ISIS-*processId*-ERR: Failed to add level-*Level* Interface IP address: *ipAddress*/*mask*
 
-[[添加接口]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_16293_x2703_1642301192}[地址失败]{style="font-family:宋体"}
+添加接口IP地址失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_1642366728}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_1642170120}[：]{lang="EN-US" style="font-family:宋体"}[Level-1/Level-2]{lang="EN-US"}
+·*Level*：Level-1/Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipAddress]{lang="EN-US"}*]{#struct_0_16293_x2703_1642563336}[：接口]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+·*ipAddress*：接口IP地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mask]{lang="EN-US"}*]{#struct_0_16293_x2703_1642628872}[：地址掩码]{lang="EN-US" style="font-family:宋体"}
+·*mask*：地址掩码
 
-[[ISIS-*processId*-ERR: Failed to delete level-*Level* Interface IP address: *ipAddress*/*mask*]{lang="EN-US"}]{#struct_0_16293_x2703_1642104581}
+ISIS-*processId*-ERR: Failed to delete level-*Level* Interface IP address: *ipAddress*/*mask*
 
-[[删除接口]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_16293_x2703_1641907973}[地址失败]{style="font-family:宋体"}
+删除接口IP地址失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_1641973509}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_1642366725}[：]{lang="EN-US" style="font-family:宋体"}[Level-1/Level-2]{lang="EN-US"}
+·*Level*：Level-1/Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipAddress]{lang="EN-US"}*]{#struct_0_16293_x2703_1642170117}[：接口]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+·*ipAddress*：接口IP地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mask]{lang="EN-US"}*]{#struct_0_16293_x2703_1642235653}[：地址掩码]{lang="EN-US" style="font-family:宋体"}
+·*mask*：地址掩码
 
-[[ISIS-*processId*-ERR: Failed to add level-*Level* pseudo neighbour: Pseudo *pseudoNodeSourceId* =\> Neighbour *nbrSystemId*]{lang="EN-US"}]{#struct_0_16293_x2703_1642628869}
+ISIS-*processId*-ERR: Failed to add level-*Level* pseudo neighbour: Pseudo *pseudoNodeSourceId* =\> Neighbour *nbrSystemId*
 
-[[添加伪节点邻居失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_1642039046}
+添加伪节点邻居失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_1641907974}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_1641973510}[：]{lang="EN-US" style="font-family:宋体"}[Level-1/Level-2]{lang="EN-US"}
+·*Level*：Level-1/Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[pseudoNodeSourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_1642301190}[：伪节点]{lang="EN-US" style="font-family:宋体"}[Source ID]{lang="EN-US"}
+·*pseudoNodeSourceId*：伪节点Source ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nbrSystemId]{lang="EN-US"}*]{#struct_0_16293_x2703_1642170118}[：邻居]{lang="EN-US" style="font-family:
-  宋体"}[System ID]{lang="EN-US"}
+·*nbrSystemId*：邻居System ID
 
-[[ISIS-*processId*-ERR: Failed to delete level-*Level* pseudo neighbour: Pseudo *pseudoNodeSourceId* =\> Neighbour *nbrSystemId*]{lang="EN-US"}]{#struct_0_16293_x2703_1642235654}
+ISIS-*processId*-ERR: Failed to delete level-*Level* pseudo neighbour: Pseudo *pseudoNodeSourceId* =\> Neighbour *nbrSystemId*
 
-[[删除伪节点邻居失败]{style="font-family:宋体"}]{#struct_0_16293_x2703_1642563334}
+删除伪节点邻居失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x730613946}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_x730548410}[：]{lang="EN-US" style="font-family:宋体"}[Level-1/Level-2]{lang="EN-US"}
+·*Level*：Level-1/Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[pseudoNodeSourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_x730679482}[：伪节点]{lang="EN-US" style="font-family:宋体"}[Source ID]{lang="EN-US"}
+·*pseudoNodeSourceId*：伪节点Source ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nbrSystemId]{lang="EN-US"}*]{#struct_0_16293_x2703_x730351802}[：邻居]{lang="EN-US" style="font-family:
-  宋体"}[System ID]{lang="EN-US"}
+·*nbrSystemId*：邻居System ID
 
-[[ISIS-*processId*-ERR: Failed to add level-*Level* IP prefix: *ipPrefix*/*mask*]{lang="EN-US"}]{#struct_0_16293_x2703_x730286266}
+ISIS-*processId*-ERR: Failed to add level-*Level* IP prefix: *ipPrefix*/*mask*
 
-[[添加]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_16293_x2703_x730417338}[前缀失败]{style="font-family:宋体"}
+添加IP前缀失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x730089658}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_x730024122}[：]{lang="EN-US" style="font-family:宋体"}[Level-1/Level-2]{lang="EN-US"}
+·*Level*：Level-1/Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipPrefix]{lang="EN-US"}*]{#struct_0_16293_x2703_x730548409}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[前缀]{lang="EN-US" style="font-family:宋体"}
+·*ipPrefix*：IP前缀
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mask]{lang="EN-US"}*]{#struct_0_16293_x2703_x730745017}[：前缀掩码]{lang="EN-US" style="font-family:宋体"}
+·*mask*：前缀掩码
 
-[[ISIS-*processId*-ERR: Failed to delete level-*Level* IP prefix: *ipPrefix* / *mask*]{lang="EN-US"}]{#struct_0_16293_x2703_x730351801}
+ISIS-*processId*-ERR: Failed to delete level-*Level* IP prefix: *ipPrefix* / *mask*
 
-[[删除]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_16293_x2703_x730286265}[前缀失败]{style="font-family:宋体"}
+删除IP前缀失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x730417337}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_x730089657}[：]{lang="EN-US" style="font-family:宋体"}[Level-1/Level-2]{lang="EN-US"}
+·*Level*：Level-1/Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipPrefix]{lang="EN-US"}*]{#struct_0_16293_x2703_x730024121}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[前缀]{lang="EN-US" style="font-family:宋体"}
+·*ipPrefix*：IP前缀
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mask]{lang="EN-US"}*]{#struct_0_16293_x2703_x730548412}[：前缀掩码]{lang="EN-US" style="font-family:宋体"}
+·*mask*：前缀掩码
 
-[[ISIS-*processId*-ERR: Failed to modify level-*Level* IP prefix: *ipPrefix* / *mask*]{lang="EN-US"}]{#struct_0_16293_x2703_x730745020}
+ISIS-*processId*-ERR: Failed to modify level-*Level* IP prefix: *ipPrefix* / *mask*
 
-[[修改]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_16293_x2703_x730351804}[前缀失败]{style="font-family:宋体"}
+修改IP前缀失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x730286268}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_x730417340}[：]{lang="EN-US" style="font-family:宋体"}[Level-1/Level-2]{lang="EN-US"}
+·*Level*：Level-1/Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipPrefix]{lang="EN-US"}*]{#struct_0_16293_x2703_x730089660}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[前缀]{lang="EN-US" style="font-family:宋体"}
+·*ipPrefix*：IP前缀
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mask]{lang="EN-US"}*]{#struct_0_16293_x2703_x730613947}[：前缀掩码]{lang="EN-US" style="font-family:宋体"}
+·*mask*：前缀掩码
 
-[[ISIS-*processId*-ERR: Level-*Level*, receive wrong extended nerghbor SubTlv, Type=*type*, Length=*len*]{lang="EN-US"}]{#struct_0_16293_x2703_866753199}
+ISIS-*processId*-ERR: Level-*Level*, receive wrong extended nerghbor SubTlv, Type=*type*, Length=*len*
 
-[[接收到错误的扩展邻居]{style="font-family:宋体"}[sub-tlv]{lang="EN-US"}]{#struct_0_16293_x2703_1689641379}
+接收到错误的扩展邻居sub-tlv
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_866687663}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_x664851969}[：]{lang="EN-US" style="font-family:宋体"}[Level-1/Level-2]{lang="EN-US"}
+·*Level*：Level-1/Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[type]{lang="EN-US"}*]{#struct_0_16293_x2703_867408559}[：]{lang="EN-US" style="font-family:宋体"}[sub-tlv]{lang="EN-US"}[类型值]{style="font-family:宋体"}
+·*type*：sub-tlv类型值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[len]{lang="EN-US"}*]{#struct_0_16293_x2703_867343023}[：]{lang="EN-US" style="font-family:宋体"}[sub-tlv]{lang="EN-US"}[长度]{style="font-family:宋体"}
+·*len*：sub-tlv长度
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x924887181}
+\# Router A与Router B相连，在Router A上创建IS-IS进程，路由器类型为**level-1**，并在GigabitEthernet1/0/2上使能IS-IS功能，接口的IP地址为1.1.1.166/24；在Router B上创建IS-IS进程，SystemID为FFFF.FFFF.FFFF、路由器类型为**level-1**，并在GigabitEthernet1/0/1使能IS-IS功能，接口的IP地址为1.1.1.2/24；Router A与Router B在同一个区域49。在Router A上打开IS-IS错误调试信息开关。
 
-[[\# Router A]{lang="EN-US"}]{#struct_0_16293_x2703_x379417271}[与]{style="font-family:宋体"}[Router B]{lang="EN-US"}[相连，在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[上创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程，路由器类型为]{style="font-family:宋体"}**[level-1]{lang="EN-US"}**[，并在]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[上使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能，接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1.1.1.166/24]{lang="EN-US"}[；在]{style="font-family:宋体"}[Router B]{lang="EN-US"}[上创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程，]{style="font-family:宋体"}[SystemID]{lang="EN-US"}[为]{style="font-family:宋体"}[FFFF.FFFF.FFFF]{lang="EN-US"}[、路由器类型为]{style="font-family:宋体"}**[level-1]{lang="EN-US"}**[，并在]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能，接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1.1.1.2/24]{lang="EN-US"}[；]{style="font-family:宋体"}[Router A]{lang="EN-US"}[与]{style="font-family:宋体"}[Router B]{lang="EN-US"}[在同一个区域]{style="font-family:宋体"}[49]{lang="EN-US"}[。在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[上打开]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[错误调试信息开关。]{style="font-family:宋体"}
+\<RouterA\> debugging isis error
 
-[[\<RouterA\> debugging isis error]{lang="EN-US"}]{#struct_0_16293_x2703_x1415100021}
+\*Apr  8 21:47:12:360 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 21:47:12:360 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-ERR: Receive a LAN IIH contains invalid protocol discriminator. IIH discarded.
 
-[ISIS-1-ERR: Receive a LAN IIH contains invalid protocol discriminator. IIH discarded.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x172275899}*[在]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[上收到协议鉴别号不是]{style="font-family:宋体"}[0x83]{lang="EN-US"}[的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}*
-
-::: {#-1081914249 .myid}
-[]{#_Toc404788103}[]{#struct_0_16293_x2703_x1973330011}
+*// 在GigabitEthernet1/0/2上收到协议鉴别号不是0x83的Hello报文*
 
 **IS-IS调试命令 \-- IS-IS调试命令 \-- debugging isis event**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16293_x2703_1942015994}
+【命令】
 
-[**[debuging isis event]{lang="EN-US"}**[ \[ *process-id* \]]{lang="EN-US"}]{#struct_0_16293_x2703_658236924}
+**[debuging isis event** [ *process-id* ]]
 
-[**[undo debuging isis event]{lang="EN-US"}**[ \[ *process-id* \]]{lang="EN-US"}]{#struct_0_16293_x2703_x730548411}
+**[undo debuging isis event** [ *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x578844854}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_16293_x2703_386585963}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x356050526}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16293_x2703_x544542297}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16293_x2703_1688872959}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16293_x2703_1402703160}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x953372940}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x730745019}
+【描述】
 
-[**[debuging isis event]{lang="EN-US"}**]{#struct_0_16293_x2703_x929391699}[命令用来打开]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}**[undo debugging isis event]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}
+**[debuging isis event**]命令用来打开IS-IS事件调试信息开关。**undo debugging isis event**命令用来关闭IS-IS事件调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_x286362213}[事件调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，IS-IS事件调试信息开关处于关闭状态。
 
-[[如果未指定进程号，则打开所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_1884379988}[进程的事件调试信息开关。]{style="font-family:宋体"}
+如果未指定进程号，则打开所有IS-IS进程的事件调试信息开关。
 
-[[表1-3 ]{lang="EN-US"}[debugging isis event]{lang="EN-US"}]{#struct_0_16293_x2703_1921730384}[命令输出信息描述表]{style="font-family:黑体"}
+表1-3 debugging isis event命令输出信息描述表
 
-[]{#table_struct_0_x493511704}[[字段]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1707789449}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1634554614}
+描述
 
-[[ISIS-*procId*-EVT: Rib smooth start. ]{lang="EN-US"}]{#struct_0_16293_x2703_x730679483}
+ISIS-*procId*-EVT: Rib smooth start.
 
-[[数据平滑开始]{style="font-family:宋体"}]{#struct_0_16293_x2703_978653977}
+数据平滑开始
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x567122762}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-EVT: Rt smooth end.]{lang="EN-US"}]{#struct_0_16293_x2703_1676216820}
+ISIS-*procId*-EVT: Rt smooth end.
 
-[[数据平滑结束]{style="font-family:宋体"}]{#struct_0_16293_x2703_x2051280664}
+数据平滑结束
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x439451631}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-EVT: LSP MTU change from *oldLspBuf* to *newLspBuf*, notify UPDT MTU change.]{lang="EN-US"}]{#struct_0_16293_x2703_x730351803}
+ISIS-*procId*-EVT: LSP MTU change from *oldLspBuf* to *newLspBuf*, notify UPDT MTU change.
 
-[[进程]{style="font-family:宋体"}[lsp]{lang="EN-US"}]{#struct_0_16293_x2703_x138187338}[缓冲区的大小改变]{style="font-family:宋体"}
+进程lsp缓冲区的大小改变
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x284326850}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[oldLspBuf]{lang="EN-US"}*]{#struct_0_16293_x2703_2039360964}[：]{lang="EN-US" style="font-family:宋体"}[lsp]{lang="EN-US"}[缓冲区之前的大小]{lang="EN-US" style="font-family:宋体"}
+·*oldLspBuf*：lsp缓冲区之前的大小
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[newLspBuf]{lang="EN-US"}*]{#struct_0_16293_x2703_1839073269}[：新的]{lang="EN-US" style="font-family:宋体"}[lsp]{lang="EN-US"}[缓冲区的大小]{lang="EN-US" style="font-family:宋体"}
+·*newLspBuf*：新的lsp缓冲区的大小
 
-[[ISIS-*procId*-EVT: Processing the physical circuit board Insert event]{lang="EN-US"}]{#struct_0_16293_x2703_x730286267}
+ISIS-*procId*-EVT: Processing the physical circuit board Insert event
 
-[[处理接口板插入事件]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1689716556}
+处理接口板插入事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1220865892}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-EVT: Processing the physical circuit add event on circuit : *circuitName*]{lang="EN-US"}]{#struct_0_16293_x2703_969115037}
+ISIS-*procId*-EVT: Processing the physical circuit add event on circuit : *circuitName*
 
-[[物理接口添加事件]{style="font-family:宋体"}]{#struct_0_16293_x2703_1719891610}
+物理接口添加事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x730482875}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x511259697}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-EVT: Processing the physical circuit delete event on circuit : *circuitName*]{lang="EN-US"}]{#struct_0_16293_x2703_x1705115088}
+ISIS-*procId*-EVT: Processing the physical circuit delete event on circuit : *circuitName*
 
-[[物理接口]{style="font-family:宋体"}]{#struct_0_16293_x2703_549276958} [删除事件]{style="font-family:宋体"}
+物理接口 删除事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x730417339}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x2103081788}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-EVT: Processing Down \--\> Up event on circuit *circuitName*]{lang="EN-US"}]{#struct_0_16293_x2703_x1852816940}
+ISIS-*procId*-EVT: Processing Down \--\> Up event on circuit *circuitName*
 
-[[接口]{style="font-family:宋体"}[down]{lang="EN-US"}]{#struct_0_16293_x2703_1797288550}[到]{style="font-family:宋体"}[Up]{lang="EN-US"}[事件]{style="font-family:宋体"}
+接口down到Up事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_819835931}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x730089659}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-EVT: Processing Up \--\> Down event on circuit  *circuitName*]{lang="EN-US"}]{#struct_0_16293_x2703_630329832}
+ISIS-*procId*-EVT: Processing Up \--\> Down event on circuit  *circuitName*
 
-[[接口]{style="font-family:宋体"}[Up]{lang="EN-US"}]{#struct_0_16293_x2703_2061413113}[到]{style="font-family:宋体"}[down]{lang="EN-US"}[事件]{style="font-family:宋体"}
+接口Up到down事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_942777761}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x730024123}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-EVT: Processing the physical circuit Param change event on circuit *circuitName*]{lang="EN-US"}]{#struct_0_16293_x2703_x153153724}
+ISIS-*procId*-EVT: Processing the physical circuit Param change event on circuit *circuitName*
 
-[[接口配置改变处理事件]{style="font-family:宋体"}]{#struct_0_16293_x2703_x532442061}
+接口配置改变处理事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1420217294}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x730613950}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-EVT: Processing board remove event on circuit  *circuitName*]{lang="EN-US"}]{#struct_0_16293_x2703_x924952716}
+ISIS-*procId*-EVT: Processing board remove event on circuit  *circuitName*
 
-[[接口板拔出事件]{style="font-family:宋体"}]{#struct_0_16293_x2703_x422384908}
+接口板拔出事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x730548414}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x578648246}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-EVT: Processing the logical address add event  : *ipAddr*]{lang="EN-US"}]{#struct_0_16293_x2703_87907820}
+ISIS-*procId*-EVT: Processing the logical address add event  : *ipAddr*
 
-[[逻辑接口添加处理事件]{style="font-family:宋体"}]{#struct_0_16293_x2703_1728667776}
+逻辑接口添加处理事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x730745022}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}*[ipAddr]{lang="EN-US"}*]{#struct_0_16293_x2703_x929850452}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+·*ipAddr*：IP地址
 
-[[ISIS-*procId*-EVT: Processing the logical address delete event  : *ipAddr* ]{lang="EN-US"}]{#struct_0_16293_x2703_874250711}
+ISIS-*procId*-EVT: Processing the logical address delete event  : *ipAddr*
 
-[[逻辑接口删除处理事件]{style="font-family:宋体"}]{#struct_0_16293_x2703_x730679486}
+逻辑接口删除处理事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_978457369}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipAddr]{lang="EN-US"}*]{#struct_0_16293_x2703_x458481582}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+·*ipAddr*：IP地址
 
-[[ISIS-*procId*-EVT: Reset processing with backinfo: module *moudleId*, event *eventId*, phase *phaseId*.]{lang="EN-US"}]{#struct_0_16293_x2703_x730351806}
+ISIS-*procId*-EVT: Reset processing with backinfo: module *moudleId*, event *eventId*, phase *phaseId*.
 
-[[进程]{style="font-family:宋体"}[Reset]{lang="EN-US"}]{#struct_0_16293_x2703_x138383946}[的阶段信息]{style="font-family:宋体"}
+进程Reset的阶段信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x342403375}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[moudleId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1202414408}[：模块]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*moudleId*：模块ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[eventid]{lang="EN-US"}*]{#struct_0_16293_x2703_x730286270}[：触发]{lang="EN-US" style="font-family:宋体"}[reset]{lang="EN-US"}[的事件]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*eventid*：触发reset的事件ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[phaseId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1689651019}[：]{lang="EN-US" style="font-family:宋体"}[reset]{lang="EN-US"}[所处的阶段]{lang="EN-US" style="font-family:宋体"}
+·*phaseId*：reset所处的阶段
 
-[[ISIS-*procId*-EVT: Reset change into phase *phaseId*]{lang="EN-US"}]{#struct_0_16293_x2703_106995668}
+ISIS-*procId*-EVT: Reset change into phase *phaseId*
 
-[[进程]{style="font-family:宋体"}[Reset]{lang="EN-US"}]{#struct_0_16293_x2703_x730482878}[进入下一个阶段]{style="font-family:宋体"}
+进程Reset进入下一个阶段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x511587377}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[moudleId]{lang="EN-US"}*]{#struct_0_16293_x2703_1795901213}[：模块]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*moudleId*：模块ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[eventid]{lang="EN-US"}*]{#struct_0_16293_x2703_x730417342}[：触发]{lang="EN-US" style="font-family:宋体"}[reset]{lang="EN-US"}[的事件]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*eventid*：触发reset的事件ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[phaseId]{lang="EN-US"}*]{#struct_0_16293_x2703_x2103671611}[：]{lang="EN-US" style="font-family:宋体"}[reset]{lang="EN-US"}[所处的阶段]{lang="EN-US" style="font-family:宋体"}
+·*phaseId*：reset所处的阶段
 
-[[ISIS-*procId*-EVT: Reset processing receive event *eventId.*]{lang="EN-US"}]{#struct_0_16293_x2703_x391356173}
+ISIS-*procId*-EVT: Reset processing receive event *eventId.*
 
-[[进程收到]{style="font-family:宋体"}[reset]{lang="EN-US"}]{#struct_0_16293_x2703_x730089662}[触发事件]{style="font-family:宋体"}
+进程收到reset触发事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_630919657}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[eventid]{lang="EN-US"}*]{#struct_0_16293_x2703_x675680453}[：触发]{lang="EN-US" style="font-family:宋体"}[reset]{lang="EN-US"}[的事件]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*eventid*：触发reset的事件ID
 
-[[ISIS-*procId*-EVT: Reset begin]{lang="EN-US"}]{#struct_0_16293_x2703_x730024126}
+ISIS-*procId*-EVT: Reset begin
 
-[[进程]{style="font-family:宋体"}[reset]{lang="EN-US"}]{#struct_0_16293_x2703_x152957116}[开始]{style="font-family:宋体"}
+进程reset开始
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_653050546}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-EVT: Reset finished, process with reset reason *eventId*]{lang="EN-US"}]{#struct_0_16293_x2703_x730613949}
+ISIS-*procId*-EVT: Reset finished, process with reset reason *eventId*
 
-[[进程]{style="font-family:宋体"}[reset]{lang="EN-US"}]{#struct_0_16293_x2703_x924493965}[结束事件]{style="font-family:宋体"}
+进程reset结束事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_418996015}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[eventid]{lang="EN-US"}*]{#struct_0_16293_x2703_x730548413}[：触发]{lang="EN-US" style="font-family:宋体"}[reset]{lang="EN-US"}[的事件]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*eventid*：触发reset的事件ID
 
-[]{#table_struct_0_x497526536}[[ISIS-*procId*-EVT: Updt receive lsp change event.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16293_x2703_x578713782}
+ISIS-*procId*-EVT: Updt receive lsp change event.
 
-[[UPDT]{lang="EN-US"}]{#struct_0_16293_x2703_437024580}[模块收到]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文改变事件]{style="font-family:宋体"}
+UPDT模块收到LSP报文改变事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1926856215}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-EVT:]{lang="EN-US" style="font-size:
-  9.0pt"}[ ]{lang="EN-US"}]{#struct_0_16293_x2703_x524072543}[Updt receive interface : *circuitName* state change to state(*eventType*).]{lang="EN-US" style="font-size:9.0pt"}
+ISIS-*procId*-EVT:Updt receive interface : *circuitName* state change to state(*eventType*).
 
-[[UPDT]{lang="EN-US"}]{#struct_0_16293_x2703_x809899611}[模块收到接口状态改变事件]{style="font-family:宋体"}
+UPDT模块收到接口状态改变事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x730745021}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x929915988}[：]{lang="EN-US" style="font-family:
-  宋体"}[接口名]{lang="EN-US" style="font-family:宋体"}
+·*circuitName*：接口名
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[eventType]{lang="EN-US"}*]{#struct_0_16293_x2703_1239852020}[：事件类型]{lang="EN-US" style="font-family:宋体"}
+·*eventType*：事件类型
 
-[[ISIS-*procId*-EVT:]{lang="EN-US" style="font-size:
-  9.0pt"}[ ]{lang="EN-US"}]{#struct_0_16293_x2703_x623968949}[IS-IS ipv6 state change, inform DEC update ipv6 prefix.]{lang="EN-US" style="font-size:9.0pt"}
+ISIS-*procId*-EVT:IS-IS ipv6 state change, inform DEC update ipv6 prefix.
 
-[[UPDT]{lang="EN-US"}]{#struct_0_16293_x2703_591373968}[模块通知路由模块更新]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[前缀]{style="font-family:宋体"}
+UPDT模块通知路由模块更新IPv6前缀
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_110961917}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-EVT:]{lang="EN-US" style="font-size:
-  9.0pt"}[ ]{lang="EN-US"}]{#struct_0_16293_x2703_x730679485}[Updt receive authen change event.]{lang="EN-US" style="font-size:9.0pt"}
+ISIS-*procId*-EVT:Updt receive authen change event.
 
-[[UPDT]{lang="EN-US"}]{#struct_0_16293_x2703_978260761}[模块收到认证改变事件]{style="font-family:宋体"}
+UPDT模块收到认证改变事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_849801897}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-EVT: Updt receive *lsplevel* fast flood event]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16293_x2703_x650457759}
+ISIS-*procId*-EVT: Updt receive *lsplevel* fast flood event
 
-[[UPDT]{lang="EN-US"}]{#struct_0_16293_x2703_x958873008}[模块收到]{style="font-family:宋体"}[fast-flood]{lang="EN-US"}[快速扩散事件]{style="font-family:宋体"}
+UPDT模块收到fast-flood快速扩散事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x730351805}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lsplevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x138318410}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[类型，取值为]{lang="EN-US" style="font-family:宋体"}[L1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2]{lang="EN-US"}
+·*lsplevel*：LSP类型，取值为L1或L2
 
-[[ISIS-*procId*-EVT: Receive BGP convergence message, quit the overload state.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16293_x2703_x949644389}
+ISIS-*procId*-EVT: Receive BGP convergence message, quit the overload state.
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_x949578853}[进程收到]{style="font-family:宋体"}[BGP]{lang="EN-US"}[收敛消息，退出]{style="font-family:宋体"}[overload]{lang="EN-US"}[状态]{style="font-family:宋体"}
+IS-IS进程收到BGP收敛消息，退出overload状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1048791540}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-EVT: Receive IPv6 BGP convergence message, quit the overload state.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16293_x2703_x949120102}
+ISIS-*procId*-EVT: Receive IPv6 BGP convergence message, quit the overload state.
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_x973205301}[进程收到]{style="font-family:宋体"}[IPv6 BGP]{lang="EN-US"}[收敛消息，退出]{style="font-family:宋体"}[overload]{lang="EN-US"}[状态]{style="font-family:宋体"}
+IS-IS进程收到IPv6 BGP收敛消息，退出overload状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x949054566}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[号]{style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16293_x2703_1253017355}
+\# 在Router A上创建IS-IS进程1，路由器类型为**level-1-2**，并在GigabitEthernet1/0/2上使能IS-IS功能，接口的IP地址为1.1.1.1/24；在Router A上打开IS-IS消息事件调试信息开关。在接口GigabitEthernet1/0/2上配置IP地址为2.2.2.2/24。
 
-[[\# ]{lang="EN-US"}]{#struct_0_16293_x2703_752874711}[在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[上创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[，路由器类型为]{style="font-family:宋体"}**[level-1-2]{lang="EN-US"}**[，并在]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[上使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能，接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1.1.1.1/24]{lang="EN-US"}[；在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[上打开]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[消息事件调试信息开关。在接口]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[上配置]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[2.2.2.2/24]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<RouterA\> debugging isis event
 
-[[\<RouterA\> debugging isis event]{lang="EN-US"}]{#struct_0_16293_x2703_x306338568}
+\*Apr  8 05:58:11:217 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 05:58:11:217 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-EVT: Processing the logical address delete event : 1.1.1.2/24
 
-[ISIS-1-EVT: Processing the logical address delete event : 1.1.1.2/24]{lang="EN-US"}
+\*Apr  8 05:58:11:218 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 05:58:11:218 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-EVT: Processing the logical address add event : 2.2.2.2/24
 
-[ISIS-1-EVT: Processing the logical address add event : 2.2.2.2/24]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x940206625}*[在]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[上删除主逻辑接口地址和]{style="font-family:宋体"}[添加新的主逻辑接口的事件]{style="font-family:宋体"}*
-
-::: {#-1182630541 .myid}
-[]{#_Toc404788104}[]{#struct_0_16293_x2703_x730286269}[]{#_Toc303704544}[]{#_Toc303149289}
+*// 在GigabitEthernet1/0/2上删除主逻辑接口地址和添加新的主逻辑接口的事件*
 
 **IS-IS调试命令 \-- IS-IS调试命令 \-- debugging isis graceful-restart**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1690109772}
+【命令】
 
-[**[debuging isis graceful-restart]{lang="EN-US"}**[ \[ *process-id* \]]{lang="EN-US"}]{#struct_0_16293_x2703_x1267736424}
+**[debuging isis graceful-restart** [ *process-id* ]]
 
-[**[undo debuging graceful-restart]{lang="EN-US"}**[ \[ *process-id* \]]{lang="EN-US"}]{#struct_0_16293_x2703_2004366112}
+**[undo debuging graceful-restart** [ *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x816250885}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_16293_x2703_525980147}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1260151289}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16293_x2703_x1173528562}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16293_x2703_x730482877}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x511128625}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1025799923}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，范围为1～65535。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x310227724}
+【描述】
 
-[**[debuging isis graceful-restart]{lang="EN-US"}**]{#struct_0_16293_x2703_26953364}[命令用来打开]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[ GR]{lang="EN-US"}[调试信息开关]{style="font-family:
-宋体"}[。]{style="font-family:宋体"}**[undo debugging isis graceful-restart]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[ GR]{lang="EN-US"}[调试信息开关]{style="font-family:
-宋体"}[。]{style="font-family:宋体"}
+**[debuging isis graceful-restart**]命令用来打开IS-IS GR调试信息开关。**undo debugging isis graceful-restart**命令用来关闭IS-IS GR调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_1849569730}[进程的]{style="font-family:宋体"}[GR]{lang="EN-US"}[调试信息开关处于]{style="font-family:宋体"}[关闭状态。]{style="font-family:宋体"}
+缺省情况下，IS-IS进程的GR调试信息开关处于关闭状态。
 
-[[如果未指定进程号，则打开所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_1924029605}[进程的]{style="font-family:宋体"}[GR]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}
+如果未指定进程号，则打开所有IS-IS进程的GR调试信息开关。
 
-[[表1-2 ]{lang="EN-US"}[debugging isis graceful-restart]{lang="EN-US"}]{#struct_0_16293_x2703_x829928109}[命令输出信息描述表]{style="font-family:
-黑体"}
+表1-2 debugging isis graceful-restart命令输出信息描述表
 
-[]{#table_struct_0_x495804748}[[字段]{style="font-family:黑体"}]{#struct_0_16293_x2703_x730417341}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16293_x2703_x2103606075}
+描述
 
-[[ISIS-*procId*-GR: Temporary DIS type Level-*Level*, on  *CircName*, DIS: *DisStr*.]{lang="EN-US"}]{#struct_0_16293_x2703_968968444}
+ISIS-*procId*-GR: Temporary DIS type Level-*Level*, on  *CircName*, DIS: *DisStr*.
 
-[[GR Helper]{lang="EN-US"}]{#struct_0_16293_x2703_1011509055}[端进行临时]{style="font-family:宋体"}[DIS]{lang="EN-US"}[选举]{style="font-family:宋体"}
+GR Helper端进行临时DIS选举
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x829934404}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_x1234882735}[：进行]{lang="EN-US" style="font-family:宋体"}[DIS]{lang="EN-US"}[选举的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*Level*：进行DIS选举的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[CircName]{lang="EN-US"}*]{#struct_0_16293_x2703_x730089661}[：]{lang="EN-US" style="font-family:宋体"}[接口名]{lang="EN-US" style="font-family:宋体"}
+·*CircName*：接口名
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DisStr]{lang="EN-US"}]{#struct_0_16293_x2703_630854121}[：选举出来的临时]{style="font-family:宋体"}[DIS]{lang="EN-US"}
+·DisStr：选举出来的临时DIS
 
-[[ISIS-*procId*-GR: All Level-*Level* T1 timers have stopped.]{lang="EN-US"}]{#struct_0_16293_x2703_x1439466950}
+ISIS-*procId*-GR: All Level-*Level* T1 timers have stopped.
 
-[[T1]{lang="DA"}]{#struct_0_16293_x2703_x914977653}[定时器停止]{style="font-family:宋体"}
+T1定时器停止
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_395593626}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_x730024125}[：]{lang="EN-US" style="font-family:宋体"}[T1]{lang="EN-US"}[定时器所属的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*Level*：T1定时器所属的Level，取值为1或2
 
-[[ISIS-*procId*-GR: Adjacency(*SystemIdr*) on *CircName*(Level-*level*) comes out RestartMode.]{lang="EN-US"}]{#struct_0_16293_x2703_x152760508}
+ISIS-*procId*-GR: Adjacency(*SystemIdr*) on *CircName*(Level-*level*) comes out RestartMode.
 
-[[邻居的]{style="font-family:宋体"}[GR]{lang="EN-US"}]{#struct_0_16293_x2703_1820979884}[状态发生变化，由]{style="font-family:宋体"}[GR]{lang="EN-US"}[状态变为非]{style="font-family:宋体"}[GR]{lang="EN-US"}[状态]{style="font-family:宋体"}
+邻居的GR状态发生变化，由GR状态变为非GR状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1218661428}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[SystemId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1480159162}[：邻居的系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*SystemId*：邻居的系统ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[CircName]{lang="EN-US"}*]{#struct_0_16293_x2703_835469995}[：接口名]{lang="EN-US" style="font-family:宋体"}
+·*CircName*：接口名
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_x1209045350}[：邻居所属的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*Level*：邻居所属的Level，取值为1或2
 
-[[ISIS-*procId*-GR: Adjacency(*SystemId*) on *CircName* (Level-*level*) comes in RestartMode.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16293_x2703_x141128255}
+ISIS-*procId*-GR: Adjacency(*SystemId*) on *CircName* (Level-*level*) comes in RestartMode.
 
-[[邻居的]{style="font-family:宋体"}[GR]{lang="EN-US"}]{#struct_0_16293_x2703_206812576}[状态发生变化，由非]{style="font-family:宋体"}[GR]{lang="EN-US"}[状态变为]{style="font-family:宋体"}[GR]{lang="EN-US"}[状态]{style="font-family:宋体"}
+邻居的GR状态发生变化，由非GR状态变为GR状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1952681451}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[SystemId]{lang="EN-US"}*]{#struct_0_16293_x2703_835535531}[：邻居的系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*SystemId*：邻居的系统ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[CircName]{lang="EN-US"}*]{#struct_0_16293_x2703_x1551566861}[：接口名]{lang="EN-US" style="font-family:宋体"}
+·*CircName*：接口名
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_x1128950739}[：邻居所属的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*Level*：邻居所属的Level，取值为1或2
 
-[[ISIS-*procId*-GR:]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16293_x2703_x735458067}[Level-*Level* NBR(*SystemId*) SA bit set, adjacency not advertised.]{lang="EN-US" style="font-size:
-  9.0pt"}
+ISIS-*procId*-GR:Level-*Level* NBR(*SystemId*) SA bit set, adjacency not advertised.
 
-[[邻居报文]{style="font-family:宋体"}[GR TLV]{lang="EN-US"}]{#struct_0_16293_x2703_835338923}[中的]{style="font-family:宋体"}[SA]{lang="EN-US"}[比特位被设置上]{style="font-family:宋体"}
+邻居报文GR TLV中的SA比特位被设置上
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1882296523}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_1798195548}[：邻居所属的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*Level*：邻居所属的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[SystemId]{lang="EN-US"}*]{#struct_0_16293_x2703_962311778}[：]{style="font-family:宋体"}[邻居的系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*SystemId*：邻居的系统ID
 
-[[ISIS-*procId*-GR:]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_16293_x2703_835404459}[Level-*Level* NBR(*SystemId*) SA bit clear, adjacency advertised.]{lang="EN-US" style="font-size:9.0pt"}
+ISIS-*procId*-GR:Level-*Level* NBR(*SystemId*) SA bit clear, adjacency advertised.
 
-[[邻居报文]{style="font-family:宋体"}[GR TLV]{lang="EN-US"}]{#struct_0_16293_x2703_1160145975}[中的]{style="font-family:宋体"}[SA]{lang="EN-US"}[比特位被清除]{style="font-family:宋体"}
+邻居报文GR TLV中的SA比特位被清除
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x42231113}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_x73894507}[：邻居所属的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*Level*：邻居所属的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}*[SystemId]{lang="EN-US"}*]{#struct_0_16293_x2703_835732139}[：]{style="font-family:宋体"}[邻居的系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*SystemId*：邻居的系统ID
 
-[[ISIS-*procId*-GR:]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_16293_x2703_266324583}[Receive restart request hello from *SystemId*, on *CircName* (Level-*Level*)]{lang="EN-US" style="font-size:9.0pt"}
+ISIS-*procId*-GR:Receive restart request hello from *SystemId*, on *CircName* (Level-*Level*)
 
-[[收到邻居的]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1533178352}[GR]{lang="DA"}[请求]{style="font-family:宋体"}
+收到邻居的GR请求
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="DA"}*]{#struct_0_16293_x2703_x1959081495}[：]{style="font-family:宋体"}[IS-IS]{lang="DA"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}*[SystemId]{lang="DA"}*]{#struct_0_16293_x2703_835797675}[：邻居的系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="DA"}
+·*SystemId*：邻居的系统ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[CircName]{lang="EN-US"}*]{#struct_0_16293_x2703_x1251376094}[：接口名]{lang="EN-US" style="font-family:宋体"}
+·*CircName*：接口名
 
-[[·[       ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_2076601786}[：邻居所属的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*Level*：邻居所属的Level，取值为1或2
 
-[[ISIS-*procId*-GR:]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_16293_x2703_835601067}[Receive *helloType* hello with RR bit set from nbr *SystemId*, on *CircName*]{lang="EN-US" style="font-size:9.0pt"}
+ISIS-*procId*-GR:Receive *helloType* hello with RR bit set from nbr *SystemId*, on *CircName*
 
-[[收到]{style="font-family:宋体"}]{#struct_0_16293_x2703_1786396317}[RR]{lang="DA"}[置位的]{style="font-family:宋体"}[Hello]{lang="DA"}[报文：]{style="font-family:宋体"}
+收到RR置位的Hello报文：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="DA"}*]{#struct_0_16293_x2703_1773953225}[：]{style="font-family:宋体"}[IS-IS]{lang="DA"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[helloType]{lang="EN-US"}*]{#struct_0_16293_x2703_x1636325252}[：取值为]{lang="EN-US" style="font-family:宋体"}[LAN L1]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[LAN L2]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[P2P]{lang="EN-US"}
+·*helloType*：取值为LAN L1、LAN L2、P2P
 
-[[·[       ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}*[SystemId]{lang="DA"}*]{#struct_0_16293_x2703_835666603}[：邻居的系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="DA"}
+·*SystemId*：邻居的系统ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}*[CircName]{lang="EN-US"}*]{#struct_0_16293_x2703_1452442297}[：接口名]{lang="EN-US" style="font-family:宋体"}
+·*CircName*：接口名
 
-[[ISIS-*procId*-GR:]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16293_x2703_x595575970}[RA received on circuit: Circ*Name* Level-*Level*]{lang="EN-US" style="font-size:
-  9.0pt"}
+ISIS-*procId*-GR:RA received on circuit: Circ*Name* Level-*Level*
 
-[[收到邻居的]{style="font-family:宋体"}]{#struct_0_16293_x2703_835994283}[GR]{lang="DA"}[应答]{style="font-family:宋体"}
+收到邻居的GR应答
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="DA"}*]{#struct_0_16293_x2703_x1896130932}[：]{style="font-family:宋体"}[IS-IS]{lang="DA"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[CircName]{lang="EN-US"}*]{#struct_0_16293_x2703_x163719169}[：接口名]{lang="EN-US" style="font-family:宋体"}
+·*CircName*：接口名
 
-[[·[       ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_836059819}[：]{style="font-family:
-  宋体"}[邻居所属的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*Level*：邻居所属的Level，取值为1或2
 
-[[ISIS-*procId*-GR:]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_16293_x2703_214878255}[Interface(*CircName*) Level-*Level* T1 timer expired count: *T1TimerExpCnt*.]{lang="EN-US" style="font-size:9.0pt"}
+ISIS-*procId*-GR:Interface(*CircName*) Level-*Level* T1 timer expired count: *T1TimerExpCnt*.
 
-[[T1]{lang="DA"}]{#struct_0_16293_x2703_472272387}[定时器超时]{style="font-family:宋体"}
+T1定时器超时
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="DA"}*]{#struct_0_16293_x2703_835469996}[：]{style="font-family:宋体"}[IS-IS]{lang="DA"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[CircName]{lang="EN-US"}*]{#struct_0_16293_x2703_x1209045349}[：]{style="font-family:宋体"}[接口名]{lang="EN-US" style="font-family:宋体"}
+·*CircName*：接口名
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_1781120510}[：]{style="font-family:宋体"}[邻居所属的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*Level*：邻居所属的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}*[T1TimerExpCnt]{lang="EN-US"}*]{#struct_0_16293_x2703_835535532}[：]{style="font-family:宋体"}[T1]{lang="EN-US"}[定时器超时的次数，超时]{lang="EN-US" style="font-family:宋体"}[10]{lang="EN-US"}[次之后取消]{lang="EN-US" style="font-family:宋体"}[T1]{lang="EN-US"}[定时器]{lang="EN-US" style="font-family:宋体"}
+·*T1TimerExpCnt*：T1定时器超时的次数，超时10次之后取消T1定时器
 
-[[ISIS-*procId*-GR:]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16293_x2703_x1551566862}[Interface(*CircName*) Level-*Level* T1 timer expired count has arrived max.]{lang="EN-US" style="font-size:
-  9.0pt"}
+ISIS-*procId*-GR:Interface(*CircName*) Level-*Level* T1 timer expired count has arrived max.
 
-[[T1]{lang="DA"}]{#struct_0_16293_x2703_x1532235266}[定时器超时次数达到最大次数]{style="font-family:宋体"}[10]{lang="DA"}[次]{style="font-family:宋体"}
+T1定时器超时次数达到最大次数10次
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="DA"}*]{#struct_0_16293_x2703_835338924}[：]{style="font-family:宋体"}[IS-IS]{lang="DA"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[CircName]{lang="EN-US"}*]{#struct_0_16293_x2703_x1882296516}[：]{style="font-family:宋体"}[接口名]{lang="EN-US" style="font-family:宋体"}
+·*CircName*：接口名
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_1038615125}[：]{style="font-family:宋体"}[邻居所属的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*Level*：邻居所属的Level，取值为1或2
 
-[[ISIS-*procId*-GR:]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_16293_x2703_835404460}[Graceful-restart complete.]{lang="EN-US" style="font-size:9.0pt"}
+ISIS-*procId*-GR:Graceful-restart complete.
 
-[[GR]{lang="EN-US"}]{#struct_0_16293_x2703_x1560843218}[完成]{style="font-family:宋体"}
+GR完成
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x2077180609}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-GR:]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_16293_x2703_835732140}[Enter phase(*GrPhase*)]{lang="EN-US" style="font-size:9.0pt"}
+ISIS-*procId*-GR:Enter phase(*GrPhase*)
 
-[[GR]{lang="EN-US"}]{#struct_0_16293_x2703_x2072327584}[进入下一阶段]{style="font-family:宋体"}
+GR进入下一阶段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x2141442011}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[GrPhase]{lang="EN-US"}*]{#struct_0_16293_x2703_835797676}[：]{style="font-family:宋体"}[GR]{lang="EN-US"}[阶段，包括]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步阶段、第一次]{style="font-family:宋体"}[SPF]{lang="EN-US"}[计算阶段、引入计算阶段、第二次]{style="font-family:宋体"}[SPF]{lang="EN-US"}[计算阶段、]{style="font-family:宋体"}[LSP]{lang="EN-US"}[生成阶段、]{style="font-family:宋体"}[GR]{lang="EN-US"}[完成阶段]{style="font-family:宋体"}
+·*GrPhase*：GR阶段，包括LSDB同步阶段、第一次SPF计算阶段、引入计算阶段、第二次SPF计算阶段、LSP生成阶段、GR完成阶段
 
-[[ISIS-*procId*-GR:]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16293_x2703_x1251376091}[T3 timer stoped owe to all T2 timer stopped.]{lang="EN-US" style="font-size:
-  9.0pt"}
+ISIS-*procId*-GR:T3 timer stoped owe to all T2 timer stopped.
 
-[[由于]{style="font-family:宋体"}[T2]{lang="EN-US"}]{#struct_0_16293_x2703_1673317259}[定时器停止，导致停止]{style="font-family:宋体"}[T3]{lang="EN-US"}[定时器]{style="font-family:宋体"}
+由于T2定时器停止，导致停止T3定时器
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_835601068}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-GR:]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16293_x2703_1786396322}[Received Level-*Level* T2 timer cancel event(*T2StopEvent*).]{lang="EN-US" style="font-size:
-  9.0pt"}
+ISIS-*procId*-GR:Received Level-*Level* T2 timer cancel event(*T2StopEvent*).
 
-[[收到触发]{style="font-family:宋体"}[T2]{lang="EN-US"}]{#struct_0_16293_x2703_835666604}[停止的事件，事件类型包括"所有]{style="font-family:宋体"}[T1]{lang="EN-US"}[定时器停止"和"]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步完成"。两个事件都发生时才真正停止]{style="font-family:宋体"}[T2]{lang="EN-US"}[定时器]{style="font-family:宋体"}
+收到触发T2停止的事件，事件类型包括"所有T1定时器停止"和"LSDB同步完成"。两个事件都发生时才真正停止T2定时器
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1452442298}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_x596165794}[：]{style="font-family:宋体"}[GR]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*Level*：GR的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[T2StopEvent]{lang="EN-US"}*]{#struct_0_16293_x2703_835994284}[：]{style="font-family:宋体"}[触发停止]{lang="EN-US" style="font-family:宋体"}[T2]{lang="EN-US"}[定时器的事件，包括"所有]{lang="EN-US" style="font-family:宋体"}[T1]{lang="EN-US"}[定时器停止"和"]{lang="EN-US" style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步完成"]{lang="EN-US" style="font-family:宋体"}
+·*T2StopEvent*：触发停止T2定时器的事件，包括"所有T1定时器停止"和"LSDB同步完成"
 
-[[ISIS-*procId*-GR:]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16293_x2703_x1896130929}[Level-*Level* T2 timer stopped]{lang="EN-US" style="font-size:
-  9.0pt"}
+ISIS-*procId*-GR:Level-*Level* T2 timer stopped
 
-[[停止]{style="font-family:宋体"}[T2]{lang="EN-US"}]{#struct_0_16293_x2703_836059820}[定时器]{style="font-family:宋体"}
+停止T2定时器
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1788856376}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_1583046566}[：]{style="font-family:宋体"}[GR]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*Level*：GR的Level，取值为1或2
 
-[[ISIS-*procId*-GR:]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_16293_x2703_835469993}[Level-*Level* T2 timer expired]{lang="EN-US" style="font-size:9.0pt"}
+ISIS-*procId*-GR:Level-*Level* T2 timer expired
 
-[[T2]{lang="EN-US"}]{#struct_0_16293_x2703_x1209045352}[定时器超时]{style="font-family:宋体"}
+T2定时器超时
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_835535529}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_787085307}[：]{style="font-family:宋体"}[GR]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*Level*：GR的Level，取值为1或2
 
-[[ISIS-*procId*-GR:]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16293_x2703_x1162440411}[T3 timer expired before T2 timer.]{lang="EN-US" style="font-size:
-  9.0pt"}
+ISIS-*procId*-GR:T3 timer expired before T2 timer.
 
-[[T3]{lang="EN-US"}]{#struct_0_16293_x2703_835338921}[定时器先于]{style="font-family:宋体"}[T2]{lang="EN-US"}[定时器超时]{style="font-family:宋体"}
+T3定时器先于T2定时器超时
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1882296521}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[ISIS-*procId*-GR:]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_16293_x2703_835404457}[Graceful-restart enter *GrTypeStr* phase(*LSDB synchronization*).]{lang="EN-US" style="font-size:9.0pt"}
+ISIS-*procId*-GR:Graceful-restart enter *GrTypeStr* phase(*LSDB synchronization*).
 
-[[开始]{style="font-family:宋体"}[GR]{lang="EN-US"}]{#struct_0_16293_x2703_1160145969}[，分为]{style="font-family:宋体"}[restarting ]{lang="EN-US"}[方式和]{style="font-family:宋体"}[starting]{lang="EN-US"}[方式]{style="font-family:宋体"}
+开始GR，分为restarting 方式和starting方式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x41444682}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[GrTypeStr]{lang="EN-US"}*]{#struct_0_16293_x2703_835732137}[：]{style="font-family:宋体"}[GR]{lang="EN-US"}[方式，分为]{lang="EN-US" style="font-family:宋体"}[restarting]{lang="EN-US"}[和]{lang="EN-US" style="font-family:宋体"}[starting]{lang="EN-US"}
+·*GrTypeStr*：GR方式，分为restarting和starting
 
-[[ISIS-*procId*-GR:]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_16293_x2703_266324577}[Begin to purge local Level-]{lang="EN-US" style="font-size:9.0pt"}*[Level]{lang="EN-US" style="font-size:9.0pt"}*[ ]{lang="EN-US" style="font-size:9.0pt"}[lsp]{lang="EN-US" style="font-size:9.0pt"}
+ISIS-*procId*-GR:Begin to purge local Level-*Level*lsp
 
-[[GR]{lang="EN-US"}]{#struct_0_16293_x2703_835797673}[完成，将本地原来生成、现在失效的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[清除]{style="font-family:宋体"}
+GR完成，将本地原来生成、现在失效的LSP清除
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1251376096}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_835601065}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*Level*：LSP的Level，取值为1或2
 
-[[ISIS-*procId*-GR]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16293_x2703_1786396319}[:Purge Level-]{lang="EN-US" style="font-size:
-  9.0pt"}*[Level]{lang="EN-US" style="font-size:9.0pt"}*[ lsp L*spid*-*LspNum*]{lang="EN-US" style="font-size:9.0pt"}
+ISIS-*procId*-GR:Purge Level-*Level* lsp L*spid*-*LspNum*
 
-[[GR]{lang="EN-US"}]{#struct_0_16293_x2703_1773297865}[完成，将本地原来生成、现在失效的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[清除]{style="font-family:宋体"}
+GR完成，将本地原来生成、现在失效的LSP清除
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_835666601}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_1452442295}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*Level*：LSP的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Lspid]{lang="EN-US"}*]{#struct_0_16293_x2703_835994281}[：]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}
+·*Lspid*：LSP ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[LspNum]{lang="EN-US"}*]{#struct_0_16293_x2703_x1896130934}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[序号]{lang="EN-US" style="font-family:宋体"}
+·*LspNum*：LSP序号
 
-[[ISIS-*procId*-GR: End to purge local Level-]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_16293_x2703_836059817}*[Level]{lang="EN-US" style="font-size:
-  9.0pt"}*[ lsp]{lang="EN-US" style="font-size:9.0pt"}
+ISIS-*procId*-GR: End to purge local Level-*Level* lsp
 
-[[清除失效]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_214878261}[结束]{style="font-family:宋体"}
+清除失效LSP结束
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_835469994}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_x1209045351}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*Level*：LSP的Level，取值为1或2
 
-[[ISIS-*procId*-GR: Synchronized Level-]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_16293_x2703_835535530}*[Level]{lang="EN-US" style="font-size:9.0pt"}*[ csnp from *SourceId* on circuit *CircName* range from *StartLspid* -*LspNum* to *EndLspidSysId* -*LspNum*]{lang="EN-US" style="font-size:9.0pt"}
+ISIS-*procId*-GR: Synchronized Level-*Level* csnp from *SourceId* on circuit *CircName* range from *StartLspid* -*LspNum* to *EndLspidSysId* -*LspNum*
 
-[[GR]{lang="EN-US"}]{#struct_0_16293_x2703_x1551566860}[过程中收到]{style="font-family:宋体"}[Helper]{lang="EN-US"}[端发送的]{style="font-family:宋体"}[CSNP]{lang="EN-US"}
+GR过程中收到Helper端发送的CSNP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_835338922}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_x1882296522}[：]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*Level*：CSNP的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[SourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_835404458}[：]{style="font-family:宋体"}[Helper]{lang="EN-US"}[的系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*SourceId*：Helper的系统ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[CircName]{lang="EN-US"}*]{#struct_0_16293_x2703_1160145974}[：]{style="font-family:宋体"}[接口名]{lang="EN-US" style="font-family:宋体"}
+·*CircName*：接口名
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[StartLspId]{lang="EN-US"}*]{#struct_0_16293_x2703_835732138}[：]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文中开始的]{lang="EN-US" style="font-family:宋体"}[LSP ID]{lang="EN-US"}
+·*StartLspId*：CSNP报文中开始的LSP ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[LspNum]{lang="EN-US"}*]{#struct_0_16293_x2703_266324584}[：]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文中]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[的序号]{lang="EN-US" style="font-family:宋体"}
+·*LspNum*：CSNP报文中LSP的序号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[EndLspId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1533178357}[：]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文中结束的]{lang="EN-US" style="font-family:宋体"}[LSPID]{lang="EN-US"}
+·*EndLspId*：CSNP报文中结束的LSPID
 
-[[ISIS-*procId*-GR:]{lang="EN-US" style="font-size:9.0pt"}[ ]{lang="EN-US"}]{#struct_0_16293_x2703_835797674}[Level-]{lang="EN-US" style="font-size:9.0pt"}*[Level]{lang="EN-US" style="font-size:9.0pt"}*[ lsdb synchronization is complete]{lang="EN-US" style="font-size:9.0pt"}
+ISIS-*procId*-GR:Level-*Level* lsdb synchronization is complete
 
-[[GR]{lang="EN-US"}]{#struct_0_16293_x2703_x1251376093}[过程中]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步完成]{style="font-family:宋体"}
+GR过程中LSDB同步完成
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_835601066}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_835666602}[：]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*Level*：LSDB的Level，取值为1或2
 
-[[ISIS-*procId*-GR:]{lang="EN-US" style="font-size:
-  9.0pt"}[ ]{lang="EN-US"}]{#struct_0_16293_x2703_1452442296}[Level-]{lang="EN-US" style="font-size:9.0pt"}*[Level]{lang="EN-US" style="font-size:9.0pt"}*[ csnp set synchronization is complete on circuit *CircName*]{lang="EN-US" style="font-size:
-  9.0pt"}
+ISIS-*procId*-GR:Level-*Level* csnp set synchronization is complete on circuit *CircName*
 
-[[GR]{lang="EN-US"}]{#struct_0_16293_x2703_835994282}[过程中]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[接收完全]{style="font-family:宋体"}
+GR过程中CSNP接收完全
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1896130931}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_836059818}[：]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*Level*：CSNP的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[CircName]{lang="EN-US"}*]{#struct_0_16293_x2703_214878256}[：]{style="font-family:宋体"}[接口名]{lang="EN-US" style="font-family:宋体"}
+·*CircName*：接口名
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16293_x2703_472272390}
+\# Router A与Router B相连，在Router A上创建IS-IS进程，SystemID为0000.0000.0001、路由器类型为**level-1-2**，并在GigabitEthernet1/0/2上使能IS-IS功能，接口的IP地址为12.0.0.1/24；在Router B上创建IS-IS进程，SystemID为0000.0000.0002、路由器类型为**level-1-2**，并在GigabitEthernet1/0/2使能IS-IS功能，接口的IP地址为12.0.0.2/24；Router A与Router B在不同区域，建立Level-2类型的邻居。在Router B上打开IS-IS GR调试信息开关。
 
-[[\# Router A]{lang="EN-US"}]{#struct_0_16293_x2703_x799441646}[与]{style="font-family:宋体"}[Router B]{lang="EN-US"}[相连，在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[上创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程，]{style="font-family:宋体"}[SystemID]{lang="EN-US"}[为]{style="font-family:宋体"}[0000.0000.0001]{lang="EN-US"}[、路由器类型为]{style="font-family:宋体"}**[level-1-2]{lang="EN-US"}**[，并在]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[上使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能，接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[12.0.0.1/24]{lang="EN-US"}[；在]{style="font-family:宋体"}[Router B]{lang="EN-US"}[上创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程，]{style="font-family:宋体"}[SystemID]{lang="EN-US"}[为]{style="font-family:宋体"}[0000.0000.0002]{lang="EN-US"}[、路由器类型为]{style="font-family:宋体"}**[level-1-2]{lang="EN-US"}**[，并在]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能，接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[12.0.0.2/24]{lang="EN-US"}[；]{style="font-family:宋体"}[Router A]{lang="EN-US"}[与]{style="font-family:宋体"}[Router B]{lang="EN-US"}[在不同区域，建立]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[类型的邻居。在]{style="font-family:宋体"}[Router B]{lang="EN-US"}[上打开]{style="font-family:宋体"}[IS-IS GR]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}
+\<RouterB\> debugging isis graceful-restart
 
-[[\<RouterB\> debugging isis graceful-restart]{lang="EN-US"}]{#struct_0_16293_x2703_835469991}
+\<RouterB\> reset isis all graceful-restart
 
-[\<RouterB\> reset isis all graceful-restart]{lang="EN-US"}
+%Sep  5 16:09:47:646 2011 RouterB ISIS/5/ISIS_NBR_CHG: -MDC=1;  IS-IS 100, Level-2 adjacency 0000.0000.0001 (GigabitEthernet1/0/2), state change to: DOWN.
 
-[%Sep  5 16:09:47:646 2011 RouterB ISIS/5/ISIS_NBR_CHG: -MDC=1;  IS-IS 100, Level-2 adjacency 0000.0000.0001 (GigabitEthernet1/0/2), state change to: DOWN.]{lang="EN-US"}
+\*Sep  5 16:09:47:735 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[\*Sep  5 16:09:47:735 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-100-GR: Graceful-restart enter restarting phase(LSDB synchronization).
 
-[ISIS-100-GR: Graceful-restart enter restarting phase(LSDB synchronization).]{lang="EN-US"}
+*// 进入GR，方式为restarting，并进入LSDB同步阶段*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x1209045354}*[进入]{style="font-family:宋体"}[GR]{lang="EN-US"}[，方式为]{style="font-family:宋体"}[restarting]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步阶段]{style="font-family:宋体"}*
+\*Sep  5 16:09:47:751 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Sep  5 16:09:47:751 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_x2110496723}
+ISIS-100-GR: Interface(GigabitEthernet1/0/2) Level-2 T1 timer expired count: 1.
 
-[ISIS-100-GR: Interface(GigabitEthernet1/0/2) Level-2 T1 timer expired count: 1.]{lang="EN-US"}
+\*Sep  5 16:09:47:751 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[ ]{lang="EN-US"}
+ISIS-100-GR: Interface(GigabitEthernet1/0/2) Level-1 T1 timer expired count: 1.
 
-[\*Sep  5 16:09:47:751 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+*// 接口GigabitEthernet1/0/2上Level-1的T1定时器超时1次*
 
-[ISIS-100-GR: Interface(GigabitEthernet1/0/2) Level-1 T1 timer expired count: 1.]{lang="EN-US"}
+%Sep  5 16:09:47:752 2011 RouterB ISIS/5/ISIS_NBR_CHG: -MDC=1;  IS-IS 100, Level-2 adjacency 0000.0000.0001 (GigabitEthernet1/0/2), state change to: UP.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_424442239}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[上]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[的]{style="font-family:宋体"}[T1]{lang="EN-US"}[定时器超时]{style="font-family:宋体"}[1]{lang="EN-US"}[次]{style="font-family:宋体"}*
+\*Sep  5 16:09:47:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[[%Sep  5 16:09:47:752 2011 RouterB ISIS/5/ISIS_NBR_CHG: -MDC=1;  IS-IS 100, Level-2 adjacency 0000.0000.0001 (GigabitEthernet1/0/2), state change to: UP.]{lang="EN-US"}]{#struct_0_16293_x2703_77415962}
+ISIS-100-GR: RA received on circuit: GigabitEthernet1/0/2 Level-2
 
-[\*Sep  5 16:09:47:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+\*Sep  5 16:09:47:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[ISIS-100-GR: RA received on circuit: GigabitEthernet1/0/2 Level-2]{lang="EN-US"}
+ISIS-100-GR: Synchronized Level-2 csnp from 0000.0000.0001.00 on circuit GigabitEthernet1/0/2 range from 0000.0000.0000.00-00 to ffff.ffff.ffff.ff-ff
 
-[ ]{lang="EN-US"}
+*// 收到Helper端发送的Level-2的CSNP报文*
 
-[\*Sep  5 16:09:47:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+\*Sep  5 16:09:47:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[ISIS-100-GR: Synchronized Level-2 csnp from 0000.0000.0001.00 on circuit GigabitEthernet1/0/2 range from 0000.0000.0000.00-00 to ffff.ffff.ffff.ff-ff]{lang="EN-US"}
+ISIS-100-GR: RA received on circuit: GigabitEthernet1/0/2 Level-1
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_441481134}*[收到]{style="font-family:宋体"}[Helper]{lang="EN-US"}[端发送的]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文]{style="font-family:宋体"}*
+*// 收到Helper端的Level-2的GR回应报文*
 
-[[\*Sep  5 16:09:47:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_835535527}
+\*Sep  5 16:09:47:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[ISIS-100-GR: RA received on circuit: GigabitEthernet1/0/2 Level-1]{lang="EN-US"}
+ISIS-100-GR: Level-2 csnp set synchronization is complete on circuit GigabitEthernet1/0/2
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_787085301}*[收到]{style="font-family:宋体"}[Helper]{lang="EN-US"}[端的]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[回应报文]{style="font-family:宋体"}*
+*[// Level-2*]*的CSNP接收完全*
 
-[[\*Sep  5 16:09:47:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_x1162440413}
+\*Sep  5 16:09:47:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[ISIS-100-GR: Level-2 csnp set synchronization is complete on circuit GigabitEthernet1/0/2]{lang="EN-US"}
+ISIS-100-GR: All Level-2 T1 timers have stopped.
 
-[*[// Level-2]{lang="EN-US"}*]{#struct_0_16293_x2703_x1295524546}*[的]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[接收完全]{style="font-family:宋体"}*
+*// 关闭Level-2的T1定时器*
 
-[[\*Sep  5 16:09:47:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_1723300039}
+\*Sep  5 16:09:47:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[ISIS-100-GR: All Level-2 T1 timers have stopped.]{lang="EN-US"}
+ISIS-100-GR: Received Level-2 T2 timer cancel event(All T1 stopped).
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x413387777}*[关闭]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[T1]{lang="EN-US"}[定时器]{style="font-family:宋体"}*
+*// 触发关闭Level-2的T2定时器，事件为所有T1定时器停止*
 
-[[\*Sep  5 16:09:47:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_835338919}
+\*Sep  5 16:09:47:786 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[ISIS-100-GR: Received Level-2 T2 timer cancel event(All T1 stopped).]{lang="EN-US"}
+ISIS-100-GR: Level-2 lsdb synchronization is complete
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_456355647}*[触发关闭]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[T2]{lang="EN-US"}[定时器，事件为所有]{style="font-family:宋体"}[T1]{lang="EN-US"}[定时器停止]{style="font-family:宋体"}*
+\*Sep  5 16:09:47:786 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Sep  5 16:09:47:786 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_x874448236}
+ISIS-100-GR: Received Level-2 T2 timer cancel event(LSDB sync).
 
-[ISIS-100-GR: Level-2 lsdb synchronization is complete]{lang="EN-US"}
+*// 触发关闭Level-2的T2定时器，事件为LSDB同步完成*
 
-[ ]{lang="EN-US"}
+\*Sep  5 16:09:47:786 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[\*Sep  5 16:09:47:786 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-100-GR: Level-2 T2 timer stopped
 
-[ISIS-100-GR: Received Level-2 T2 timer cancel event(LSDB sync).]{lang="EN-US"}
+*// 停止Level-2的T2定时器*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_197025192}*[触发关闭]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[T2]{lang="EN-US"}[定时器，事件为]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步完成]{style="font-family:宋体"}*
+\<RouterB\>
 
-[[\*Sep  5 16:09:47:786 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_x1730035540}
+\*Sep  5 16:09:50:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[ISIS-100-GR: Level-2 T2 timer stopped]{lang="EN-US"}
+ISIS-100-GR: Interface(GigabitEthernet1/0/2) Level-1 T1 timer expired count: 2.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_176226594}*[停止]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[T2]{lang="EN-US"}[定时器]{style="font-family:宋体"}*
+\*Sep  5 16:09:50:754 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[[\<RouterB\>]{lang="EN-US"}]{#struct_0_16293_x2703_835404455}
+ISIS-100-GR: RA received on circuit: GigabitEthernet1/0/2 Level-1
 
-[\*Sep  5 16:09:50:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+\*Sep  5 16:10:14:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[ISIS-100-GR: Interface(GigabitEthernet1/0/2) Level-1 T1 timer expired count: 2.]{lang="EN-US"}
+ISIS-100-GR: Interface(GigabitEthernet1/0/2) Level-1 T1 timer expired count: 10.
 
-[ ]{lang="EN-US"}
+\*Sep  5 16:10:14:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[\*Sep  5 16:09:50:754 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-100-GR: Interface(GigabitEthernet1/0/2) Level-1 T1 timer expired count has arrived max.
 
-[ISIS-100-GR: RA received on circuit: GigabitEthernet1/0/2 Level-1]{lang="EN-US"}
+*[// Level-1*]*的T1定时器超时次数达到10次*
 
-[ ]{lang="EN-US"}
+\*Sep  5 16:10:14:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[\*Sep  5 16:10:14:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-100-GR: All Level-1 T1 timers have stopped.
 
-[ISIS-100-GR: Interface(GigabitEthernet1/0/2) Level-1 T1 timer expired count: 10.]{lang="EN-US"}
+*[// Level1*]*的T1定时器停止*
 
-[ ]{lang="EN-US"}
+\*Sep  5 16:10:14:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[\*Sep  5 16:10:14:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-100-GR: Received Level-1 T2 timer cancel event(All T1 stopped).
 
-[ISIS-100-GR: Interface(GigabitEthernet1/0/2) Level-1 T1 timer expired count has arrived max.]{lang="EN-US"}
+*// 触发关闭Level-1的T2定时器，事件为T1定时器停止*
 
-[*[// Level-1]{lang="EN-US"}*]{#struct_0_16293_x2703_1160145971}*[的]{style="font-family:宋体"}[T1]{lang="EN-US"}[定时器超时次数达到]{style="font-family:宋体"}[10]{lang="EN-US"}[次]{style="font-family:宋体"}*
+\*Sep  5 16:10:14:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Sep  5 16:10:14:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_x41968969}
+ISIS-100-GR: Level-1 T2 timer stopped
 
-[ISIS-100-GR: All Level-1 T1 timers have stopped.]{lang="EN-US"}
+*[// Level-2*]*的T2定时器停止*
 
-[*[// Level1]{lang="EN-US"}*]{#struct_0_16293_x2703_x116980957}*[的]{style="font-family:宋体"}[T1]{lang="EN-US"}[定时器停止]{style="font-family:宋体"}*
+\*Sep  5 16:10:14:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Sep  5 16:10:14:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_2144260863}
+ISIS-100-GR: T3 timer stoped owe to all T2 timer stopped.
 
-[ISIS-100-GR: Received Level-1 T2 timer cancel event(All T1 stopped).]{lang="EN-US"}
+*// 两个Level的T2定时器都已停止，此时停止T3定时器*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_1977169677}*[触发关闭]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[的]{style="font-family:宋体"}[T2]{lang="EN-US"}[定时器，事件为]{style="font-family:宋体"}[T1]{lang="EN-US"}[定时器停止]{style="font-family:宋体"}*
+\*Sep  5 16:10:14:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Sep  5 16:10:14:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_835732135}
+ISIS-100-GR: Enter phase(First SPF computation)
 
-[ISIS-100-GR: Level-1 T2 timer stopped]{lang="EN-US"}
+*// 进入GR的第一次SPF计算阶段*
 
-[*[// Level-2]{lang="EN-US"}*]{#struct_0_16293_x2703_266324579}*[的]{style="font-family:宋体"}[T2]{lang="EN-US"}[定时器停止]{style="font-family:宋体"}*
+\*Sep  5 16:10:14:825 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Sep  5 16:10:14:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_x1960145386}
+ISIS-100-GR: Enter phase(Redistribution)
 
-[ISIS-100-GR: T3 timer stoped owe to all T2 timer stopped.]{lang="EN-US"}
+*// 第一次SPF计算结束，进入GR的引入路由阶段*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_36048720}*[两个]{style="font-family:宋体"}[Level]{lang="EN-US"}[的]{style="font-family:宋体"}[T2]{lang="EN-US"}[定时器都已停止，此时停止]{style="font-family:宋体"}[T3]{lang="EN-US"}[定时器]{style="font-family:宋体"}*
+\*Sep  5 16:10:14:825 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Sep  5 16:10:14:752 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_x1587664211}
+ISIS-100-GR: Enter phase(Second SPF computation)
 
-[ISIS-100-GR: Enter phase(First SPF computation)]{lang="EN-US"}
+*// 路由引入结束，进入GR的第二次SPF计算阶段*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_1355942264}*[进入]{style="font-family:宋体"}[GR]{lang="EN-US"}[的第一次]{style="font-family:宋体"}[SPF]{lang="EN-US"}[计算阶段]{style="font-family:宋体"}*
+\*Sep  5 16:10:14:914 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Sep  5 16:10:14:825 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_388840118}
+ISIS-100-GR: Enter phase(LSP generation)
 
-[ISIS-100-GR: Enter phase(Redistribution)]{lang="EN-US"}
+*// 第二次SPF计算结束，进入GR的LSP生成阶段*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_386393095}*[第一次]{style="font-family:宋体"}[SPF]{lang="EN-US"}[计算结束，进入]{style="font-family:宋体"}[GR]{lang="EN-US"}[的引入路由阶段]{style="font-family:宋体"}*
+\*Sep  5 16:10:14:914 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Sep  5 16:10:14:825 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_835797671}
+ISIS-100-GR: Begin to purge local Level-1 lsp
 
-[ISIS-100-GR: Enter phase(Second SPF computation)]{lang="EN-US"}
+*// 开始清除本地生成的Level-1的失效LSP*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x1251376098}*[路由引入结束，进入]{style="font-family:宋体"}[GR]{lang="EN-US"}[的第二次]{style="font-family:宋体"}[SPF]{lang="EN-US"}[计算阶段]{style="font-family:宋体"}*
+\*Sep  5 16:10:14:914 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Sep  5 16:10:14:914 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_463463678}
+ISIS-100-GR: End to purge local Level-1 lsp
 
-[ISIS-100-GR: Enter phase(LSP generation)]{lang="EN-US"}
+*// 本地生成的Level-1的失效LSP清除完成*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_2145064863}*[第二次]{style="font-family:宋体"}[SPF]{lang="EN-US"}[计算结束，进入]{style="font-family:宋体"}[GR]{lang="EN-US"}[的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[生成阶段]{style="font-family:宋体"}*
+\*Sep  5 16:10:14:914 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Sep  5 16:10:14:914 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_435578095}
+ISIS-100-GR: Begin to purge local Level-2 lsp
 
-[ISIS-100-GR: Begin to purge local Level-1 lsp]{lang="EN-US"}
+*// 开始清除本地生成的Level-2的失效LSP*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_1567428726}*[开始清除本地生成的]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[的失效]{style="font-family:宋体"}[LSP]{lang="EN-US"}*
+\*Sep  5 16:10:14:914 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Sep  5 16:10:14:914 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_157462129}
+ISIS-100-GR: End to purge local Level-2 lsp
 
-[ISIS-100-GR: End to purge local Level-1 lsp]{lang="EN-US"}
+*// 本地生成的Level-2的失效LSP清除完成*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_1136771122}*[本地生成的]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[的失效]{style="font-family:宋体"}[LSP]{lang="EN-US"}[清除完成]{style="font-family:宋体"}*
+\*Sep  5 16:10:14:914 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Sep  5 16:10:14:914 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_835601063}
+ISIS-100-GR: Enter phase(Finish)
 
-[ISIS-100-GR: Begin to purge local Level-2 lsp]{lang="EN-US"}
+*[// LSP*]*生成完成，进入GR结束阶段*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_1786396313}*[开始清除本地生成的]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的失效]{style="font-family:宋体"}[LSP]{lang="EN-US"}*
+\*Sep  5 16:10:14:914 2011 RouterB ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Sep  5 16:10:14:914 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_1773691081}
+ISIS-100-GR: Graceful-restart complete.
 
-[ISIS-100-GR: End to purge local Level-2 lsp]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_1902297137}*[本地生成的]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的失效]{style="font-family:宋体"}[LSP]{lang="EN-US"}[清除完成]{style="font-family:宋体"}*
-
-[[\*Sep  5 16:10:14:914 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_1963033082}
-
-[ISIS-100-GR: Enter phase(Finish)]{lang="EN-US"}
-
-[*[// LSP]{lang="EN-US"}*]{#struct_0_16293_x2703_x452021867}*[生成完成，进入]{style="font-family:宋体"}[GR]{lang="EN-US"}[结束阶段]{style="font-family:宋体"}*
-
-[[\*Sep  5 16:10:14:914 2011 RouterB ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_835666599}
-
-[ISIS-100-GR: Graceful-restart complete.]{lang="EN-US"}
-
-[*[// GR]{lang="EN-US"}*]{#struct_0_16293_x2703_695662426}*[完成]{style="font-family:宋体"}*
-
-::: {#1828341190 .myid}
-[]{#_Toc404788105}[]{#struct_0_16293_x2703_x652921868}
+*[// GR*]*完成*
 
 **IS-IS调试命令 \-- IS-IS调试命令 \-- debugging isis ha-event**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16293_x2703_75005520}
+【命令】
 
-[**[debuging isis ha-event]{lang="EN-US"}**]{#struct_0_16293_x2703_x2125518290}
+**[debuging isis ha-event**]
 
-[**[undo debuging isis ha-event]{lang="EN-US"}**]{#struct_0_16293_x2703_x228997678}
+**[undo debuging isis ha-event**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16293_x2703_831163677}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_16293_x2703_x377813079}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x425625701}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16293_x2703_835994279}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16293_x2703_x1851500926}
+mdc-admin
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_16293_x2703_2105398698}
+【描述】
 
-[**[debuging isis ha-event]{lang="EN-US"}**]{#struct_0_16293_x2703_2044443557}[命令用来打开]{style="font-family:宋体"}[IS-IS HA]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}**[undo debugging isis ha-event]{lang="EN-US"}**[命令用来关闭]{style="font-family:
-宋体"}[IS-IS HA]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}
+**[debuging isis ha-event**]命令用来打开IS-IS HA调试信息开关。**undo debugging isis ha-event**命令用来关闭IS-IS HA调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[IS-IS HA]{lang="EN-US"}]{#struct_0_16293_x2703_x209206469}[调试信息开关[处于关闭状态]{#OLE_LINK1}。]{style="font-family:宋体"}
+缺省情况下，IS-IS HA调试信息开关[处于关闭状态。]
 
-[[如果未指定进程号，则打开所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_1894767088}[进程的]{style="font-family:宋体"}[HA]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}
+如果未指定进程号，则打开所有IS-IS进程的HA调试信息开关。
 
-[[表1-4 ]{lang="EN-US"}[debugging isis ha-event]{lang="EN-US"}]{#struct_0_16293_x2703_x1528705825}[命令输出信息描述表]{style="font-family:黑体"}
+表1-4 debugging isis ha-event命令输出信息描述表
 
-[]{#table_struct_0_x472450548}[[字段]{style="font-family:黑体"}]{#struct_0_16293_x2703_836059815}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16293_x2703_214878259}
+描述
 
-[[ISIS-HA: RtBackup ISIS ]{lang="EN-US"}]{#struct_0_16293_x2703_472272375}*[datatype.]{lang="EN-US"}*
+ISIS-HA: RtBackup ISIS *datatype.*
 
-[[实时备份]{style="font-family:宋体"}[ISIS ]{lang="EN-US"}]{#struct_0_16293_x2703_347569431}[数据]{style="font-family:宋体"}
+实时备份ISIS 数据
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[datatype]{lang="EN-US"}*]{#struct_0_16293_x2703_1296629554}[：数据类型]{lang="EN-US" style="font-family:宋体"}
+·*datatype*：数据类型
 
-[[ISIS-HA: Receive RIB reconnet event]{lang="EN-US"}]{#struct_0_16293_x2703_x298828045}
+ISIS-HA: Receive RIB reconnet event
 
-[[收到重连]{style="font-family:宋体"}[RIB]{lang="EN-US"}]{#struct_0_16293_x2703_835469992}[消息]{style="font-family:宋体"}
+收到重连RIB消息
 
-[[ISIS-HA: Receive RIB pull-route event]{lang="EN-US"}]{#struct_0_16293_x2703_x1209045353}
+ISIS-HA: Receive RIB pull-route event
 
-[[收到更新路由消息]{style="font-family:宋体"}]{#struct_0_16293_x2703_262156272}
+收到更新路由消息
 
-[[ISIS-HA: Receive ISIS RtData.]{lang="EN-US"}]{#struct_0_16293_x2703_x2020339531}
+ISIS-HA: Receive ISIS RtData.
 
-[[收到实时备份数据]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1997459190}
+收到实时备份数据
 
-[[ISIS-HA: Batch backup ISIS data.]{lang="EN-US"}]{#struct_0_16293_x2703_835535528}
+ISIS-HA: Batch backup ISIS data.
 
-[[批量备份]{style="font-family:宋体"}]{#struct_0_16293_x2703_787085308}
+批量备份
 
-[[ISIS-HA: Stop ISIS data.]{lang="EN-US"}]{#struct_0_16293_x2703_x1162440420}
+ISIS-HA: Stop ISIS data.
 
-[[停止备份处理]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1699005681}
+停止备份处理
 
-[[ISIS-HA: Degrade (master to standby), delete ISIS data.]{lang="EN-US"}]{#struct_0_16293_x2703_x1221634439}
+ISIS-HA: Degrade (master to standby), delete ISIS data.
 
-[[主板变为备板，删除]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_835338920}[相关数据]{style="font-family:宋体"}
+主板变为备板，删除IS-IS相关数据
 
-[[ISIS-HA: Upgrade (standby to master), smooth ISIS data.]{lang="EN-US"}]{#struct_0_16293_x2703_x1882296520}
+ISIS-HA: Upgrade (standby to master), smooth ISIS data.
 
-[[备板升级为主板，平滑]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_232111607}[相关数据]{style="font-family:宋体"}
+备板升级为主板，平滑IS-IS相关数据
 
-[[ISIS-HA: Notify NBR smooth start]{lang="EN-US"}]{#struct_0_16293_x2703_x1564394047}
+ISIS-HA: Notify NBR smooth start
 
-[[通知]{style="font-family:宋体"}[NBR]{lang="EN-US"}]{#struct_0_16293_x2703_1211982403}[平滑数据开始]{style="font-family:宋体"}
+通知NBR平滑数据开始
 
-[[ISIS-HA: Notify NBR smooth end]{lang="EN-US"}]{#struct_0_16293_x2703_835404456}
+ISIS-HA: Notify NBR smooth end
 
-[[通知]{style="font-family:宋体"}[NBR]{lang="EN-US"}]{#struct_0_16293_x2703_1160145968}[平滑数据结束]{style="font-family:宋体"}
+通知NBR平滑数据结束
 
-[[ISIS-HA: Notify RIB disconnect start]{lang="EN-US"}]{#struct_0_16293_x2703_x41510218}
+ISIS-HA: Notify RIB disconnect start
 
-[[通知与]{style="font-family:宋体"}[RIB]{lang="EN-US"}]{#struct_0_16293_x2703_x1712002852}[连接断开处理开始]{style="font-family:宋体"}
+通知与RIB连接断开处理开始
 
-[[ISIS-HA: Notify RIB disconnect end]{lang="EN-US"}]{#struct_0_16293_x2703_835732136}
+ISIS-HA: Notify RIB disconnect end
 
-[[通知与]{style="font-family:宋体"}[RIB]{lang="EN-US"}]{#struct_0_16293_x2703_266324578}[连接断开处理结束]{style="font-family:宋体"}
+通知与RIB连接断开处理结束
 
-[[ISIS-HA: Notify RIB smooth start]{lang="EN-US"}]{#struct_0_16293_x2703_x1960145385}
+ISIS-HA: Notify RIB smooth start
 
-[[通知]{style="font-family:宋体"}[RIB]{lang="EN-US"}]{#struct_0_16293_x2703_x1530035221}[平滑数据开始]{style="font-family:宋体"}
+通知RIB平滑数据开始
 
-[[ISIS-HA: Notify RIB smooth end]{lang="EN-US"}]{#struct_0_16293_x2703_835797672}
+ISIS-HA: Notify RIB smooth end
 
-[[通知]{style="font-family:宋体"}[RIB]{lang="EN-US"}]{#struct_0_16293_x2703_x1251376095}[平滑数据结束]{style="font-family:宋体"}
+通知RIB平滑数据结束
 
-[[ISIS-HA: Connect to RIB successfully.]{lang="EN-US"}]{#struct_0_16293_x2703_x652281569}
+ISIS-HA: Connect to RIB successfully.
 
-[[跟]{style="font-family:宋体"}[RIB]{lang="EN-US"}]{#struct_0_16293_x2703_x1145668283}[建立连接成功]{style="font-family:宋体"}
+跟RIB建立连接成功
 
-[[ISIS-HA: Connect to RIB failed, try to reconnect later.]{lang="EN-US"}]{#struct_0_16293_x2703_835601064}
+ISIS-HA: Connect to RIB failed, try to reconnect later.
 
-[[跟]{style="font-family:宋体"}[RIB]{lang="EN-US"}]{#struct_0_16293_x2703_1786396318}[建立连接失败，稍后重连]{style="font-family:宋体"}
+跟RIB建立连接失败，稍后重连
 
-[[ISIS-HA: Receive SIGKILL Signal from SCM.]{lang="EN-US"}]{#struct_0_16293_x2703_1773363401}
+ISIS-HA: Receive SIGKILL Signal from SCM.
 
-[[从]{style="font-family:宋体"}[SCM]{lang="EN-US"}]{#struct_0_16293_x2703_x495277628}[收到资源回退的消息]{style="font-family:宋体"}
+从SCM收到资源回退的消息
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16293_x2703_835666600}
+\# 在Router A上创建IS-IS进程1，路由器类型为level-1-2，network-entity为10.7798.1111.1111.00，并在GigabitEthernet1/0/2上使能IS-IS功能，接口的IP地址为1.1.1.1/24；在Router A上打开IS-IS HA报文调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_16293_x2703_1452442294}[在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[上创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[，路由器类型为]{style="font-family:宋体"}[level-1-2]{lang="EN-US"}[，]{style="font-family:宋体"}[network-entity]{lang="EN-US"}[为]{style="font-family:宋体"}[10.7798.1111.1111.00]{lang="EN-US"}[，并在]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[上使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能，接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1.1.1.1/24]{lang="EN-US"}[；在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[上打开]{style="font-family:宋体"}[IS-IS HA]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}
+\<RouterA\> debugging isis ha-event
 
-[[\<RouterA\> debugging isis ha-event]{lang="NO-BOK"}]{#struct_0_16293_x2703_x595379362}
+\*Apr  8 22:01:25:812 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 22:01:25:812 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-HA: RtBackup ISIS systemID.
 
-[ISIS-HA: RtBackup ISIS systemID.]{lang="EN-US"}
+\*Apr  8 22:01:25:813 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[ ]{lang="EN-US"}
+ISIS-HA: RtBackup ISIS Process Area Data.
 
-[\*Apr  8 22:01:25:813 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
-
-[ISIS-HA: RtBackup ISIS Process Area Data.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x897905558}*[在]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[上删除]{style="font-family:宋体"}[network-entity]{lang="EN-US"}*
-
-::: {#-818448459 .myid}
-[]{#_Toc404788106}[]{#struct_0_16293_x2703_1889436760}
+*// 在GigabitEthernet1/0/2上删除network-entity*
 
 **IS-IS调试命令 \-- IS-IS调试命令 \-- debugging isis miscellaneous-errors**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1161469918}
+【命令】
 
-[**[debuging isis ]{lang="EN-US"}[miscellaneous-errors]{lang="EN-US"}**]{#struct_0_16293_x2703_x835484067}
+**[debuging isis miscellaneous-errors**]
 
-[**[undo debuging ]{lang="EN-US"}[miscellaneous-errors]{lang="EN-US"}**]{#struct_0_16293_x2703_835994280}
+**[undo debuging miscellaneous-errors**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1896130933}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1729803110}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16293_x2703_1642582966}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16293_x2703_x1647748614}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16293_x2703_397350998}
+mdc-admin
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1406004369}
+【描述】
 
-[**[debuging isis ]{lang="EN-US"}[miscellaneous-errors]{lang="EN-US"}**]{#struct_0_16293_x2703_x89021749}[命令用来打开]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程无关调试信息开关。]{style="font-family:宋体"}**[undo debugging isis ]{lang="EN-US"}[miscellaneous-errors]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程无关调试信息开关。]{style="font-family:宋体"}
+**[debuging isis miscellaneous-errors**]命令用来打开IS-IS进程无关调试信息开关。**undo debugging isis miscellaneous-errors**命令用来关闭IS-IS进程无关调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_1482725909}[进程无关调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，IS-IS进程无关调试信息开关处于关闭状态。
 
-[[如果未指定进程号，则打开所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_836059816}[进程的进程无关调试信息开关。]{style="font-family:宋体"}
+如果未指定进程号，则打开所有IS-IS进程的进程无关调试信息开关。
 
-[[表1-5 ]{lang="EN-US"}[debugging isis miscellaneous-errors]{lang="EN-US"}]{#struct_0_16293_x2703_214878262}[命令输出信息描述表]{style="font-family:黑体"}
+表1-5 debugging isis miscellaneous-errors命令输出信息描述表
 
-[]{#table_struct_0_x476330768}[[字段]{style="font-family:黑体"}]{#struct_0_16293_x2703_2046250498}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16293_x2703_446707484}
+描述
 
-[[ISIS-ERR: Create all hello socket failed.]{lang="EN-US"}]{#struct_0_16293_x2703_x527232719}
+ISIS-ERR: Create all hello socket failed.
 
-[[创建]{style="font-family:宋体"}[hello socket]{lang="EN-US"}]{#struct_0_16293_x2703_x2060129812}[失败]{style="font-family:宋体"}
+创建hello socket失败
 
-[[ISIS-ERR: Destroy all hello socket failed.]{lang="EN-US"}]{#struct_0_16293_x2703_x1893413360}
+ISIS-ERR: Destroy all hello socket failed.
 
-[[删除]{style="font-family:宋体"}[hello socket]{lang="EN-US"}]{#struct_0_16293_x2703_x1745486312}[失败]{style="font-family:宋体"}
+删除hello socket失败
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16293_x2703_29064334}
+\# 创建IS-IS进程。打开IS-IS进程无关调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_16293_x2703_x2099863755}[创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程。打开]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程无关调试信息开关。]{style="font-family:宋体"}
+\<RouterA\> debugging isis miscellaneous-errors
 
-[[\<RouterA\> debugging isis miscellaneous-errors]{lang="EN-US"}]{#struct_0_16293_x2703_1892902882}
+\*Apr  8 22:04:12:389 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 22:04:12:389 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-ERR: Create all hello socket failed
 
-[ISIS-ERR: Create all hello socket failed ]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_1383689816}*[收发]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的]{style="font-family:宋体"}[socket]{lang="EN-US"}[创建失败]{style="font-family:宋体"}*
-
-::: {#-528753002 .myid}
-[]{#_Toc404788107}[]{#struct_0_16293_x2703_x760527118}[]{#_Toc341341558}[]{#_Toc341285950}
+*// 收发Hello报文的socket创建失败*
 
 **IS-IS调试命令 \-- IS-IS调试命令 \-- debugging isis redistribute**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x2068229792}
+【命令】
 
-[**[debugging isis redistribute]{lang="EN-US"}**[ { **ipv4** \[ **topology** *topo-name* \] \| **ipv6** } { **event** \| **prefix** \[ *prefix* \[ *mask-length* \] \] }]{lang="EN-US"}]{#struct_0_16293_x2703_x1893347824}
+**[debugging isis redistribute** { **ipv4** [ **topology** *topo-name*  \| **ipv6** } { **event** \| **prefix**  *prefix* [ *mask-length*  ] }]]
 
-[**[undo debugging isis redistribute]{lang="EN-US"}**[ { **ipv4** \[ **topology** *topo-name* \] \| **ipv6** } { **event** \| **prefix** }]{lang="EN-US"}]{#struct_0_16293_x2703_2123987930}
+**[undo debugging isis redistribute** { **ipv4** [ **topology** *topo-name*  \| **ipv6** } { **event** \| **prefix** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16293_x2703_1989980536}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_16293_x2703_1393981002}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16293_x2703_1265951467}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16293_x2703_x1028012222}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16293_x2703_1143792798}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16293_x2703_884628024}
+【参数】
 
-[**[ipv4]{lang="EN-US"}**]{#struct_0_16293_x2703_x1893544432}[：打开]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[路由引入开关。]{style="font-family:宋体"}
+**[ipv4**]：打开IPv4路由引入开关。
 
-[**[topology]{lang="EN-US"}**[ *topo-name*]{lang="EN-US"}]{#struct_0_16293_x2703_866687665}[：打开指定拓扑的引入开关。]{style="font-family:宋体"}*[topo-name]{lang="EN-US"}*[表示拓扑名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写；]{style="font-family:宋体"}**[base]{lang="EN-US"}**[为公网拓扑。如果未指定本参数，则表示打开公网的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[路由引入开关。]{style="font-family:宋体"}[本参数的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[topology** *topo-name*]：打开指定拓扑的引入开关。*topo-name*表示拓扑名，为1～31个字符的字符串，区分大小写；**base**为公网拓扑。如果未指定本参数，则表示打开公网的IPv4路由引入开关。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[ipv6]{lang="EN-US"}**]{#struct_0_16293_x2703_1082299040}[：打开]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[路由引入开关。]{style="font-family:宋体"}
+**[ipv6**]：打开IPv6路由引入开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_16293_x2703_334907259}[：打开路由引入事件开关。]{style="font-family:宋体"}
+**[event**]：打开路由引入事件开关。
 
-[**[prefix]{lang="EN-US"}**]{#struct_0_16293_x2703_750670373}[：打开]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[路由引入前缀开关。]{style="font-family:宋体"}
+**[prefix**]：打开IPv4路由引入前缀开关。
 
-[*[prefix]{lang="EN-US"}*[ \[ *mask-length* \]]{lang="EN-US"}]{#struct_0_16293_x2703_516265220}[：表示打开特定前缀开关。]{style="font-family:宋体"}
+*[prefix* [ *mask-length* ]]：表示打开特定前缀开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_16293_x2703_196750532}
+【描述】
 
-[**[debuging isis ]{lang="EN-US"}[redistribute ipv4 event]{lang="EN-US"}**]{#struct_0_16293_x2703_x1477731794}[命令用来打开]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[引入事件调试信息开关。]{style="font-family:宋体"}**[undo]{lang="EN-US"}**[ **debuging isis** **redistribute ipv4 event**]{lang="EN-US"}[命令用来关闭]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[引入事件调试信息开关。]{style="font-family:宋体"}
+**[debuging isis redistribute ipv4 event**]命令用来打开IPv4引入事件调试信息开关。**undo** **debuging isis** **redistribute ipv4 event**命令用来关闭IPv4引入事件调试信息开关。
 
-[**[debuging isis ]{lang="EN-US"}[redistribute ipv4 prefix]{lang="EN-US"}**]{#struct_0_16293_x2703_x1412488723}[命令用来打开]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[引入前缀调试信息开关。]{style="font-family:宋体"}**[undo]{lang="EN-US"}**[ **debuging isis** **redistribute ipv4 prefix**]{lang="EN-US"}[命令用来关闭]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[引入前缀调试信息开关。]{style="font-family:宋体"}
+**[debuging isis redistribute ipv4 prefix**]命令用来打开IPv4引入前缀调试信息开关。**undo** **debuging isis** **redistribute ipv4 prefix**命令用来关闭IPv4引入前缀调试信息开关。
 
-[**[debuging isis ]{lang="EN-US"}[redistribute ipv6 event]{lang="EN-US"}**]{#struct_0_16293_x2703_x1893478896}[命令用来打开]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[引入事件调试信息开关。]{style="font-family:宋体"}**[undo]{lang="EN-US"}**[ **debuging isis** **redistribute ipv6 event**]{lang="EN-US"}[命令用来关闭]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[引入事件调试信息开关。]{style="font-family:宋体"}
+**[debuging isis redistribute ipv6 event**]命令用来打开IPv6引入事件调试信息开关。**undo** **debuging isis** **redistribute ipv6 event**命令用来关闭IPv6引入事件调试信息开关。
 
-[**[debuging isis ]{lang="EN-US"}[redistribute ipv6 prefix]{lang="EN-US"}**]{#struct_0_16293_x2703_x900581803}[命令用来打开]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[引入前缀调试信息开关。]{style="font-family:宋体"}**[undo]{lang="EN-US"}**[ **debuging isis** **redistribute ipv6 prefix**]{lang="EN-US"}[命令用来关闭]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[引入前缀调试信息开关。]{style="font-family:宋体"}
+**[debuging isis redistribute ipv6 prefix**]命令用来打开IPv6引入前缀调试信息开关。**undo** **debuging isis** **redistribute ipv6 prefix**命令用来关闭IPv6引入前缀调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_956982750}[的引入事件和前缀调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，IS-IS的引入事件和前缀调试信息开关处于关闭状态。
 
-[[如果未指定前缀，则打开]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_x882072936}[的所有前缀调试信息开关。]{style="font-family:宋体"}
+如果未指定前缀，则打开IS-IS的所有前缀调试信息开关。
 
-[[表1-3 ]{lang="EN-US"}[debugging isis redistribute ipv4 event]{lang="EN-US"}]{#struct_0_16293_x2703_x1881384239}[命令输出信息描述表]{style="font-family:黑体"}
+表1-3 debugging isis redistribute ipv4 event命令输出信息描述表
 
-[]{#table_struct_0_x477326276}[[字段]{style="font-family:黑体"}]{#struct_0_16293_x2703_575999259}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16293_x2703_1782131142}
+描述
 
-[[ISIS-RDM(TopoIndex *mtindex*): ISIS process *procid* request rib to stop *rpaname* batch notify]{lang="EN-US"}]{#struct_0_16293_x2703_x1893151216}
+ISIS-RDM(TopoIndex *mtindex*): ISIS process *procid* request rib to stop *rpaname* batch notify
 
-[[通知]{style="font-family:宋体"}[RIB]{lang="EN-US"}]{#struct_0_16293_x2703_1993110489}[停止路由引入批量上报]{style="font-family:宋体"}
+通知RIB停止路由引入批量上报
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TopoIndex *mtindex*]{lang="EN-US"}]{#struct_0_16293_x2703_867408561}[：]{lang="EN-US" style="font-family:宋体"}[指定拓扑的路由管理拓扑索引]{style="font-family:宋体"}
+·TopoIndex *mtindex*：指定拓扑的路由管理拓扑索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procid]{lang="EN-US"}*]{#struct_0_16293_x2703_1122392198}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procid*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[rpaname]{lang="EN-US"}*]{#struct_0_16293_x2703_x1586422478}[：路由协议名]{lang="EN-US" style="font-family:宋体"}
+·*rpaname*：路由协议名
 
-[[ISIS-RDM(TopoIndex *mtindex*): ISIS process *procid* deregister *rpaname* notify to rib]{lang="EN-US"}]{#struct_0_16293_x2703_1728647186}
+ISIS-RDM(TopoIndex *mtindex*): ISIS process *procid* deregister *rpaname* notify to rib
 
-[[通知]{style="font-family:宋体"}[RIB]{lang="EN-US"}]{#struct_0_16293_x2703_x462831862}[去注册路由引入]{style="font-family:宋体"}
+通知RIB去注册路由引入
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TopoIndex *mtindex*]{lang="EN-US"}]{#struct_0_16293_x2703_867343025}[：]{lang="EN-US" style="font-family:宋体"}[指定拓扑的路由管理拓扑索引]{style="font-family:宋体"}
+·TopoIndex *mtindex*：指定拓扑的路由管理拓扑索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procid]{lang="EN-US"}*]{#struct_0_16293_x2703_x1893085680}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procid*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[rpaname]{lang="EN-US"}*]{#struct_0_16293_x2703_x1108288248}[：路由协议名]{lang="EN-US" style="font-family:宋体"}
+·*rpaname*：路由协议名
 
-[[ISIS-RDM(TopoIndex *mtindex*): ISIS process *procid* request rib for *rpaname* query]{lang="EN-US"}]{#struct_0_16293_x2703_x710262092}
+ISIS-RDM(TopoIndex *mtindex*): ISIS process *procid* request rib for *rpaname* query
 
-[[向]{style="font-family:宋体"}[RIB]{lang="EN-US"}]{#struct_0_16293_x2703_x1061689155}[查询路由]{style="font-family:宋体"}
+向RIB查询路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TopoIndex *mtindex*]{lang="EN-US"}]{#struct_0_16293_x2703_x1861999087}[：]{lang="EN-US" style="font-family:宋体"}[指定拓扑的路由管理拓扑索引]{style="font-family:宋体"}
+·TopoIndex *mtindex*：指定拓扑的路由管理拓扑索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procid]{lang="EN-US"}*]{#struct_0_16293_x2703_x999426893}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procid*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[rpaname]{lang="EN-US"}*]{#struct_0_16293_x2703_x1893282288}[：路由协议名]{lang="EN-US" style="font-family:宋体"}
+·*rpaname*：路由协议名
 
-[[ISIS-RDM(TopoIndex *mtindex*): ISIS process *procid* register *rpaname* notify to rib]{lang="EN-US"}]{#struct_0_16293_x2703_x1684962852}
+ISIS-RDM(TopoIndex *mtindex*): ISIS process *procid* register *rpaname* notify to rib
 
-[[通知]{style="font-family:宋体"}[RIB]{lang="EN-US"}]{#struct_0_16293_x2703_1275829749}[注册路由引入]{style="font-family:宋体"}
+通知RIB注册路由引入
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TopoIndex *mtindex*]{lang="EN-US"}]{#struct_0_16293_x2703_x1862064623}[：]{lang="EN-US" style="font-family:宋体"}[指定拓扑的路由管理拓扑索引]{style="font-family:宋体"}
+·TopoIndex *mtindex*：指定拓扑的路由管理拓扑索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procid]{lang="EN-US"}*]{#struct_0_16293_x2703_1110317712}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procid*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[rpaname]{lang="EN-US"}*]{#struct_0_16293_x2703_168065508}[：路由协议名]{lang="EN-US" style="font-family:宋体"}
+·*rpaname*：路由协议名
 
-[[ISIS-RDM(TopoIndex *mtindex*): ISIS process *procid*  is added to *rpaname* *batchtype* batch list]{lang="EN-US"}]{#struct_0_16293_x2703_x1893216752}
+ISIS-RDM(TopoIndex *mtindex*): ISIS process *procid*  is added to *rpaname* *batchtype* batch list
 
-[[添加]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_1801524454}[进程到引入路由批量链表中]{style="font-family:宋体"}
+添加IS-IS进程到引入路由批量链表中
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TopoIndex *mtindex*]{lang="EN-US"}]{#struct_0_16293_x2703_x1861868015}[：]{lang="EN-US" style="font-family:宋体"}[指定拓扑的路由管理拓扑索引]{style="font-family:宋体"}
+·TopoIndex *mtindex*：指定拓扑的路由管理拓扑索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procid]{lang="EN-US"}*]{#struct_0_16293_x2703_x2004093520}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procid*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[rpaname]{lang="EN-US"}*]{#struct_0_16293_x2703_1399459113}[：路由协议名]{lang="EN-US" style="font-family:宋体"}
+·*rpaname*：路由协议名
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[batchtype]{lang="EN-US"}*]{#struct_0_16293_x2703_x1892889072}[：批量类型，]{lang="EN-US" style="font-family:宋体"}[register]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[query]{lang="EN-US"}
+·*batchtype*：批量类型，register或query
 
-[[ISIS-RDM(TopoIndex *mtindex*): ISIS process *procid* is deleted from *rpaname* *batchtype* batch list]{lang="EN-US"}]{#struct_0_16293_x2703_x1568750089}
+ISIS-RDM(TopoIndex *mtindex*): ISIS process *procid* is deleted from *rpaname* *batchtype* batch list
 
-[[从引入路由批量链表中删除]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_x243510779}[进程]{style="font-family:宋体"}
+从引入路由批量链表中删除IS-IS进程
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TopoIndex *mtindex*]{lang="EN-US"}]{#struct_0_16293_x2703_x1861933551}[：]{lang="EN-US" style="font-family:宋体"}[指定拓扑的路由管理拓扑索引]{style="font-family:宋体"}
+·TopoIndex *mtindex*：指定拓扑的路由管理拓扑索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procid]{lang="EN-US"}*]{#struct_0_16293_x2703_2135101746}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procid*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[rpaname]{lang="EN-US"}*]{#struct_0_16293_x2703_1960547226}[：路由协议名]{lang="EN-US" style="font-family:宋体"}
+·*rpaname*：路由协议名
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[batchtype]{lang="EN-US"}*]{#struct_0_16293_x2703_x1892823536}[：批量类型，]{lang="EN-US" style="font-family:宋体"}[register]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[query]{lang="EN-US"}
+·*batchtype*：批量类型，register或query
 
-[[ISIS-RDM(TopoIndex *mtindex*): Reregister *rpaname* attr to rib]{lang="EN-US"}]{#struct_0_16293_x2703_x1612646956}
+ISIS-RDM(TopoIndex *mtindex*): Reregister *rpaname* attr to rib
 
-[[向]{style="font-family:宋体"}[RIB]{lang="EN-US"}]{#struct_0_16293_x2703_x1953223084}[重新注册路由属性]{style="font-family:宋体"}
+向RIB重新注册路由属性
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TopoIndex *mtindex*]{lang="EN-US"}]{#struct_0_16293_x2703_x1862261231}[：]{lang="EN-US" style="font-family:宋体"}[指定拓扑的路由管理拓扑索引]{style="font-family:宋体"}
+·TopoIndex *mtindex*：指定拓扑的路由管理拓扑索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[rpaname]{lang="EN-US"}*]{#struct_0_16293_x2703_x778586194}[：路由协议名]{lang="EN-US" style="font-family:宋体"}
+·*rpaname*：路由协议名
 
-[[ISIS-RDM(TopoIndex *mtindex*): Register *rpaname* attr to rib]{lang="EN-US"}]{#struct_0_16293_x2703_x1893413359}
+ISIS-RDM(TopoIndex *mtindex*): Register *rpaname* attr to rib
 
-[[向]{style="font-family:宋体"}[RIB]{lang="EN-US"}]{#struct_0_16293_x2703_627363291}[注册路由属性]{style="font-family:宋体"}
+向RIB注册路由属性
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TopoIndex *mtindex*]{lang="EN-US"}]{#struct_0_16293_x2703_x1862326767}[：]{lang="EN-US" style="font-family:宋体"}[指定拓扑的路由管理拓扑索引]{style="font-family:宋体"}
+·TopoIndex *mtindex*：指定拓扑的路由管理拓扑索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[rpaname]{lang="EN-US"}*]{#struct_0_16293_x2703_x1881276525}[：路由协议名]{lang="EN-US" style="font-family:宋体"}
+·*rpaname*：路由协议名
 
-[[ISIS-RDM(TopoIndex *mtindex*): Deregister *rpaname* attr to rib]{lang="EN-US"}]{#struct_0_16293_x2703_x1893347823}
+ISIS-RDM(TopoIndex *mtindex*): Deregister *rpaname* attr to rib
 
-[[向]{style="font-family:宋体"}[RIB]{lang="EN-US"}]{#struct_0_16293_x2703_x1767694839}[去注册路由属性]{style="font-family:宋体"}
+向RIB去注册路由属性
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TopoIndex *mtindex*]{lang="EN-US"}]{#struct_0_16293_x2703_x1862130159}[：]{lang="EN-US" style="font-family:宋体"}[指定拓扑的路由管理拓扑索引]{style="font-family:宋体"}
+·TopoIndex *mtindex*：指定拓扑的路由管理拓扑索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[rpaname]{lang="EN-US"}*]{#struct_0_16293_x2703_x935182218}[：路由协议名]{lang="EN-US" style="font-family:宋体"}
+·*rpaname*：路由协议名
 
-[[ISIS-RDM(TopoIndex *mtindex*): IS-IS instance *intsid* receive *batchmsgtype* message]{lang="EN-US"}]{#struct_0_16293_x2703_x651637945}
+ISIS-RDM(TopoIndex *mtindex*): IS-IS instance *intsid* receive *batchmsgtype* message
 
-[[接收到批量开始]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_16293_x2703_x1893544431}[结束消息]{style="font-family:宋体"}
+接收到批量开始/结束消息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TopoIndex *mtindex*]{lang="EN-US"}]{#struct_0_16293_x2703_x1862195695}[：]{lang="EN-US" style="font-family:宋体"}[指定拓扑的路由管理拓扑索引]{style="font-family:宋体"}
+·TopoIndex *mtindex*：指定拓扑的路由管理拓扑索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[intsid]{lang="EN-US"}*]{#struct_0_16293_x2703_1485583567}[：实例号]{lang="EN-US" style="font-family:宋体"}
+·*intsid*：实例号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[batchmsgtype]{lang="EN-US"}*]{#struct_0_16293_x2703_x1284046290}[：批量消息类型，批量开始]{lang="EN-US" style="font-family:
-  宋体"}[/]{lang="EN-US"}[批量结束]{lang="EN-US" style="font-family:宋体"}
+·*batchmsgtype*：批量消息类型，批量开始/批量结束
 
-[[ISIS-RDM(TopoIndex *mtindex*): Process protocol *rpaname* attr msg]{lang="EN-US"}]{#struct_0_16293_x2703_x737964705}
+ISIS-RDM(TopoIndex *mtindex*): Process protocol *rpaname* attr msg
 
-[[处理路由属性消息]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1893478895}
+处理路由属性消息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TopoIndex *mtindex*]{lang="EN-US"}]{#struct_0_16293_x2703_x1861474799}[：]{lang="EN-US" style="font-family:宋体"}[指定拓扑的路由管理拓扑索引]{style="font-family:宋体"}
+·TopoIndex *mtindex*：指定拓扑的路由管理拓扑索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[rpaname]{lang="EN-US"}*]{#struct_0_16293_x2703_665502138}[：路由协议名]{lang="EN-US" style="font-family:宋体"}
+·*rpaname*：路由协议名
 
-[[ISIS-RDM(TopoIndex *mtindex*): Process protocol *rpaname* smooth attr msg]{lang="EN-US"}]{#struct_0_16293_x2703_696161016}
+ISIS-RDM(TopoIndex *mtindex*): Process protocol *rpaname* smooth attr msg
 
-[[处理路由属性平滑消息]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1893151215}
+处理路由属性平滑消息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TopoIndex *mtindex*]{lang="EN-US"}]{#struct_0_16293_x2703_x1861540335}[：]{lang="EN-US" style="font-family:宋体"}[指定拓扑的路由管理拓扑索引]{style="font-family:宋体"}
+·TopoIndex *mtindex*：指定拓扑的路由管理拓扑索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[rpaname]{lang="EN-US"}*]{#struct_0_16293_x2703_1589825962}[：路由协议名]{lang="EN-US" style="font-family:宋体"}
+·*rpaname*：路由协议名
 
-[[ISIS-RDM(TopoIndex *mtindex*): Route redist process, schedule type: *schedtype*]{lang="EN-US"}]{#struct_0_16293_x2703_x641352330}
+ISIS-RDM(TopoIndex *mtindex*): Route redist process, schedule type: *schedtype*
 
-[[处理引入调度消息]{style="font-family:宋体"}]{#struct_0_16293_x2703_428156883}
+处理引入调度消息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TopoIndex *mtindex*]{lang="EN-US"}]{#struct_0_16293_x2703_x1862064622}[：]{lang="EN-US" style="font-family:宋体"}[指定拓扑的路由管理拓扑索引]{style="font-family:宋体"}
+·TopoIndex *mtindex*：指定拓扑的路由管理拓扑索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[schedtype]{lang="EN-US"}*]{#struct_0_16293_x2703_x1893085679}[：调度类型]{lang="EN-US" style="font-family:宋体"}
+·*schedtype*：调度类型
 
-[ ]{lang="EN-US"}
+表1-4 debugging isis redistribute ipv4 prefix命令输出信息描述表
 
-[[表1-4 ]{lang="EN-US"}[debugging isis redistribute ipv4 prefix]{lang="EN-US"}]{#struct_0_16293_x2703_814746949}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x482267228}[[字段]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1714522521}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16293_x2703_x213952540}
+ISIS-RDM(TopoIndex *mtindex*): Process common refresh message for redist prefix *prefix/masklen*, old protocol: *rpaname*, new protocol: *rpaname*,  flag: *flag*
 
-[[ISIS-RDM(TopoIndex *mtindex*): Process common refresh message for redist prefix *prefix/masklen*, old protocol: *rpaname*, new protocol: *rpaname*,  flag: *flag*]{lang="EN-US"}]{#struct_0_16293_x2703_x1079907896}
+处理引入路由刷新消息
 
-[[处理引入路由刷新消息]{style="font-family:宋体"}]{#struct_0_16293_x2703_616388601}
+·TopoIndex *mtindex*：指定拓扑的路由管理拓扑索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TopoIndex *mtindex*]{lang="EN-US"}]{#struct_0_16293_x2703_x1861868014}[：]{lang="EN-US" style="font-family:宋体"}[指定拓扑的路由管理拓扑索引]{style="font-family:宋体"}
+·*prefix/masklen*：路由前缀和掩码长度
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[prefix/masklen]{lang="EN-US"}*]{#struct_0_16293_x2703_x1893282287}[：路由前缀和掩码长度]{lang="EN-US" style="font-family:
-  宋体"}
+·*rpaname*：路由协议名
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[rpaname]{lang="EN-US"}*]{#struct_0_16293_x2703_x1637908685}[：路由协议名]{lang="EN-US" style="font-family:宋体"}
+·*flag*：路由标记
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[flag]{lang="EN-US"}*]{#struct_0_16293_x2703_x1567414105}[：路由标记]{lang="EN-US" style="font-family:宋体"}
+ISIS-RDM(TopoIndex *mtindex*): Process common delete message for redist prefix *prefix/masklen*, old protocol:  *rpaname*
 
-[[ISIS-RDM(TopoIndex *mtindex*): Process common delete message for redist prefix *prefix/masklen*, old protocol:  *rpaname*]{lang="EN-US"}]{#struct_0_16293_x2703_627154725}
+处理引入路由删除消息
 
-[[处理引入路由删除消息]{style="font-family:宋体"}]{#struct_0_16293_x2703_1682857407}
+·TopoIndex *mtindex*：指定拓扑的路由管理拓扑索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TopoIndex *mtindex*]{lang="EN-US"}]{#struct_0_16293_x2703_x1861933550}[：]{lang="EN-US" style="font-family:宋体"}[指定拓扑的路由管理拓扑索引]{style="font-family:宋体"}
+·*prefix/masklen*：路由前缀和掩码长度
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[prefix/masklen]{lang="EN-US"}*]{#struct_0_16293_x2703_687199290}[：路由前缀和掩码长度]{lang="EN-US" style="font-family:
-  宋体"}
+·*rpaname*：路由协议名
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[rpaname]{lang="EN-US"}*]{#struct_0_16293_x2703_x1893216751}[：路由协议名]{lang="EN-US" style="font-family:宋体"}
+ISIS-RDM(TopoIndex *mtindex*): Process *procid* Adding redist prefix for *prefix/masklen*
 
-[[ISIS-RDM(TopoIndex *mtindex*): Process *procid* Adding redist prefix for *prefix/masklen*]{lang="EN-US"}]{#struct_0_16293_x2703_1398239927}
+添加上报的路由到本地路由表
 
-[[添加上报的路由到本地路由表]{style="font-family:宋体"}]{#struct_0_16293_x2703_838680442}
+·TopoIndex *mtindex*：指定拓扑的路由管理拓扑索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TopoIndex *mtindex*]{lang="EN-US"}]{#struct_0_16293_x2703_x1862261230}[：]{lang="EN-US" style="font-family:宋体"}[指定拓扑的路由管理拓扑索引]{style="font-family:宋体"}
+·*procid*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procid]{lang="EN-US"}*]{#struct_0_16293_x2703_1251763309}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*prefix/masklen*：路由前缀和掩码长度
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[prefix/masklen]{lang="EN-US"}*]{#struct_0_16293_x2703_x721762593}[：路由前缀和掩码长度]{lang="EN-US" style="font-family:
-  宋体"}
+【举例】
 
-[ ]{lang="EN-US"}
+\# 创建IS-IS进程。打开IS-IS的IPv4引入事件开关。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1892889071}
+\<RouterA\> debugging isis redistribute ipv4 event
 
-[[\# ]{lang="EN-US"}]{#struct_0_16293_x2703_x1165465562}[创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程。打开]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[引入事件开关。]{style="font-family:宋体"}
+\*Nov  1 12:51:08:773 2012 RouterAISIS/7/ISISDBG: -MDC=1;
 
-[[\<RouterA\> debugging isis redistribute ipv4 event]{lang="NO-BOK"}]{#struct_0_16293_x2703_x923593509}
+ISIS-RDM(TopoIndex 0): ISIS process 1 is added to static register batch list
 
-[\*Nov  1 12:51:08:773 2012 ]{lang="EN-US"}[RouterA]{lang="NO-BOK"}[ ]{lang="NO-BOK"}[ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+*// 添加IS-IS进程1到静态路由引入注册链表中*
 
-[ISIS-RDM(TopoIndex 0): ISIS process 1 is added to static register batch list]{lang="EN-US"}
+\*Nov  1 12:51:08:774 2012 RouterAISIS/7/ISISDBG: -MDC=1;
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x1448845558}*[添加]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[到静态路由引入注册链表中]{style="font-family:宋体"}*
+ISIS-RDM(TopoIndex 0): ISIS process 1 register static notify to rib
 
-[[\*Nov  1 12:51:08:774 2012 ]{lang="EN-US"}]{#struct_0_16293_x2703_x1106493078}[RouterA]{lang="NO-BOK"}[ ]{lang="NO-BOK"}[ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+*// 向RIB注册静态路由引入*
 
-[ISIS-RDM(TopoIndex 0): ISIS process 1 register static notify to rib]{lang="EN-US"}
+\*Nov  1 12:51:08:774 2012 RouterAISIS/7/ISISDBG: -MDC=1;
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_1330471221}*[向]{style="font-family:宋体"}[RIB]{lang="EN-US"}[注册静态路由引入]{style="font-family:宋体"}*
+ISIS-RDM(TopoIndex 0): IS-IS instance 0 receive BatchStart message
 
-[[\*Nov  1 12:51:08:774 2012 ]{lang="EN-US"}]{#struct_0_16293_x2703_1305321470}[RouterA]{lang="NO-BOK"}[ ]{lang="NO-BOK"}[ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+*// 公网实例接收到RIB路由批量上报开始消息*
 
-[ISIS-RDM(TopoIndex 0): IS-IS instance 0 receive BatchStart message]{lang="EN-US"}
+\*Nov  1 12:51:08:775 2012 RouterAISIS/7/ISISDBG: -MDC=1;
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x1892823535}*[公网实例接收到]{style="font-family:宋体"}[RIB]{lang="EN-US"}[路由批量上报开始消息]{style="font-family:宋体"}*
+ISIS-RDM(TopoIndex 0): IS-IS instance 0 receive BatchEnd message
 
-[[\*Nov  1 12:51:08:775 2012 ]{lang="EN-US"}]{#struct_0_16293_x2703_1116236399}[RouterA]{lang="NO-BOK"}[ ]{lang="NO-BOK"}[ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+*// 公网实例接收到RIB路由批量上报结束消息*
 
-[ISIS-RDM(TopoIndex 0): IS-IS instance 0 receive BatchEnd message]{lang="EN-US"}
+\# 创建IS-IS进程。打开IS-IS的IPv4引入前缀开关。
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_938274452}*[公网实例接收到]{style="font-family:宋体"}[RIB]{lang="EN-US"}[路由批量上报结束消息]{style="font-family:宋体"}*
+\<RouterA\> debugging isis redistribute ipv4 prefix
 
-[[\# ]{lang="EN-US"}]{#struct_0_16293_x2703_1534158727}[创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程。打开]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[引入前缀开关。]{style="font-family:宋体"}
+\*Nov  1 13:17:07:637 2012 RouterAISIS/7/ISISDBG: -MDC=1;
 
-[[\<RouterA\> debugging isis redistribute ipv4 prefix]{lang="NO-BOK"}]{#struct_0_16293_x2703_x698631723}
+ISIS-RDM(TopoIndex 0): Process common refresh message for redist prefix 200.0.0.0/24, old pro
 
-[\*Nov  1 13:17:07:637 2012 ]{lang="EN-US"}[RouterA]{lang="NO-BOK"}[ ]{lang="NO-BOK"}[ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+tocol: static, new protocol: static, flag: 3.
 
-[ISIS-RDM(TopoIndex 0): Process common refresh message for redist prefix 200.0.0.0/24, old pro]{lang="EN-US"}
+*// 接收到RIB上报的静态路由200.0.0.0/24刷新消息*
 
-[tocol: static, new protocol: static, flag: 3.]{lang="EN-US"}
+\*Nov  1 13:17:07:637 2012 RouterAISIS/7/ISISDBG: -MDC=1;
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x1543786039}*[接收到]{style="font-family:宋体"}[RIB]{lang="EN-US"}[上报的静态路由]{style="font-family:宋体"}[200.0.0.0/24]{lang="EN-US"}[刷新消息]{style="font-family:宋体"}*
+ISIS-RDM(TopoIndex 0): (ProID 1): Adding redist prefix for 200.0.0.0/24.
 
-[[\*Nov  1 13:17:07:637 2012 ]{lang="EN-US"}]{#struct_0_16293_x2703_x1893413362}[RouterA]{lang="NO-BOK"}[ ]{lang="NO-BOK"}[ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
-
-[ISIS-RDM(TopoIndex 0): (ProID 1): Adding redist prefix for 200.0.0.0/24.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_1386681570}*[添加引入路由]{style="font-family:宋体"}[200.0.0.0/2[]{#_Toc341341559}4]{lang="EN-US"}*
-
-::: {#-1327360492 .myid}
-[]{#_Toc404788108}[]{#struct_0_16293_x2703_x315429948}
+*// 添加引入路由200.0.0.0/24*
 
 **IS-IS调试命令 \-- IS-IS调试命令 \-- debugging isis self-originate-update**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x223935778}
+【命令】
 
-[**[debugging]{lang="EN-US"}**[ **isis** **self-originate-update** \[ *process-id* \]]{lang="EN-US"}]{#struct_0_16293_x2703_x1469996057}
+**[debugging** **isis** **self-originate-update** [ *process-id* ]]
 
-[**[undo]{lang="EN-US"}**[ **debugging** **isis** **self-originate-update** \[ *process-id* \]]{lang="EN-US"}]{#struct_0_16293_x2703_x603684659}
+**[undo** **debugging** **isis** **self-originate-update** [ *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1533098988}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_16293_x2703_459355223}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1967498599}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16293_x2703_x1893347826}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16293_x2703_x1008179952}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x155728123}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x674261114}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x358118078}
+【描述】
 
-[**[debugging isis self-originate-update]{lang="EN-US"}**]{#struct_0_16293_x2703_1593153241}[命令用来打开]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[本地更新的调试信息开关。]{style="font-family:宋体"}**[undo debugging isis self-originate-update]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[本地更新的调试信息开关。]{style="font-family:宋体"}
+**[debugging isis self-originate-update**]命令用来打开IS-IS本地更新的调试信息开关。**undo debugging isis self-originate-update**命令用来关闭IS-IS本地更新的调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_x402523456}[本地更新的调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，IS-IS本地更新的调试信息开关处于关闭状态。
 
-[[如果未指定进程号，则打开所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_233798829}[进程的本地更新的调试信息开关。]{style="font-family:宋体"}
+如果未指定进程号，则打开所有IS-IS进程的本地更新的调试信息开关。
 
-[[表1-6 ]{lang="EN-US"}[debugging isis self-originate-update]{lang="EN-US"}]{#struct_0_16293_x2703_x1893544434}[命令输出信息描述表]{style="font-family:黑体"}
+表1-6 debugging isis self-originate-update命令输出信息描述表
 
-[]{#table_struct_0_x478929852}[[字段]{style="font-family:黑体"}]{#struct_0_16293_x2703_x2049868842}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16293_x2703_x211368512}
+描述
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: Purging level-*level* LSP \[*lsp-id*\]]{lang="EN-US"}]{#struct_0_16293_x2703_x1351780587}
+ISIS-*process-id*-ORG: Purging level-*level* LSP [*lsp-id*]
 
-[[清除]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_1898081016}[报文]{style="font-family:宋体"}
+清除LSP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1796807663}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_x1893478898}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：LSP的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lsp-id]{lang="EN-US"}*]{#struct_0_16293_x2703_262217611}[：被清除]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[报文的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*lsp-id*：被清除LSP报文的ID
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: *tlv-name ip-address* into level-*level* LSPs, TLV: *tlv-type*]{lang="EN-US"}]{#struct_0_16293_x2703_199638472}
+ISIS-*process-id*-ORG: *tlv-name ip-address* into level-*level* LSPs, TLV: *tlv-type*
 
-[[添加]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_16293_x2703_1643522878}[到]{style="font-family:宋体"}[LSP]{lang="EN-US"}[中]{style="font-family:宋体"}
+添加TLV到LSP中
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1121147385}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[tlv-name]{lang="EN-US"}*]{#struct_0_16293_x2703_x1893151218}[：]{lang="EN-US" style="font-family:宋体"}[TLV]{lang="EN-US"}[名称，取值为]{lang="EN-US" style="font-family:宋体"}[Adding neighbor]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[Adding address]{lang="EN-US"}
+·*tlv-name*：TLV名称，取值为Adding neighbor或Adding address
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ip-address]{lang="EN-US"}*]{#struct_0_16293_x2703_1186541435}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址，取值为空或]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+·*ip-address*：IP地址，取值为空或IP地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_1792076649}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：LSP的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[tlv-type]{lang="EN-US"}*]{#struct_0_16293_x2703_x589807130}[：]{style="font-family:宋体"}[TLV]{lang="EN-US"}[类型，取值为协议规定的值]{style="font-family:宋体"}
+·*tlv-type*：TLV类型，取值为协议规定的值
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: Deleting address *ip-address* from level-*level* LSPs, TLV: *tlv-type*]{lang="EN-US"}]{#struct_0_16293_x2703_956998465}
+ISIS-*process-id*-ORG: Deleting address *ip-address* from level-*level* LSPs, TLV: *tlv-type*
 
-[[从]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x1893085682}[中删除]{style="font-family:宋体"}[TLV]{lang="EN-US"}
+从LSP中删除TLV
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_54511166}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ip-address]{lang="EN-US"}*]{#struct_0_16293_x2703_991058223}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址，取值为]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+·*ip-address*：IP地址，取值为IP地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_x480495245}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：LSP的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[tlv-type]{lang="EN-US"}*]{#struct_0_16293_x2703_2081459189}[：]{style="font-family:宋体"}[TLV]{lang="EN-US"}[类型，取值为协议规定的值]{style="font-family:宋体"}
+·*tlv-type*：TLV类型，取值为协议规定的值
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: The remaining space of level-*level* fragment 0 LSP is shortage]{lang="EN-US"}]{#struct_0_16293_x2703_x1893282290}
+ISIS-*process-id*-ORG: The remaining space of level-*level* fragment 0 LSP is shortage
 
-[[往]{style="font-family:宋体"}[LSP 0]{lang="EN-US"}]{#struct_0_16293_x2703_x2041127676}[分片中添加]{style="font-family:宋体"}[TLV]{lang="EN-US"}[时，剩余空间不足]{style="font-family:宋体"}
+往LSP 0分片中添加TLV时，剩余空间不足
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1221293898}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_x2137943574}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：LSP的Level，取值为1或2
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: ISIS(*process-id*) level-*level* LSP over flow]{lang="EN-US"}]{#struct_0_16293_x2703_x1893216754}
+ISIS-*process-id*-ORG: ISIS(*process-id*) level-*level* LSP over flow
 
-[[往]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_638725040}[分片中添加]{style="font-family:宋体"}[TLV]{lang="EN-US"}[时，所有]{style="font-family:宋体"}[LSP]{lang="EN-US"}[分片空间已满]{style="font-family:宋体"}
+往LSP分片中添加TLV时，所有LSP分片空间已满
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1812702805}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_1348195722}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：LSP的Level，取值为1或2
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: The remaining space of level-*level* fragment 0 LSP is shortage while adding area or protocol support]{lang="EN-US"}]{#struct_0_16293_x2703_1512039908}
+ISIS-*process-id*-ORG: The remaining space of level-*level* fragment 0 LSP is shortage while adding area or protocol support
 
-[[往]{style="font-family:宋体"}[LSP 0]{lang="EN-US"}]{#struct_0_16293_x2703_x1892889074}[分片中添加区域地址或协议支持]{style="font-family:宋体"}[TLV]{lang="EN-US"}[时，剩余空间不足]{style="font-family:宋体"}
+往LSP 0分片中添加区域地址或协议支持TLV时，剩余空间不足
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x762181035}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_983340380}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：LSP的Level，取值为1或2
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: Rebuilding all level-*level* LSPs Start]{lang="EN-US"}]{#struct_0_16293_x2703_x1068849446}
+ISIS-*process-id*-ORG: Rebuilding all level-*level* LSPs Start
 
-[[开始]{style="font-family:宋体"}[rebuild]{lang="EN-US"}]{#struct_0_16293_x2703_x1892823538}[所有的]{style="font-family:宋体"}[LSP]{lang="EN-US"}
+开始rebuild所有的LSP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1163290566}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_2147308560}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：LSP的Level，取值为1或2
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: Rebuilding all level-*level* LSPs End]{lang="EN-US"}]{#struct_0_16293_x2703_x1893413361}
+ISIS-*process-id*-ORG: Rebuilding all level-*level* LSPs End
 
-[[结束]{style="font-family:宋体"}[rebuild]{lang="EN-US"}]{#struct_0_16293_x2703_983397043}[所有的]{style="font-family:宋体"}[LSP]{lang="EN-US"}
+结束rebuild所有的LSP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1514523637}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_404743399}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：LSP的Level，取值为1或2
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: MTU Change triggers rebuild]{lang="EN-US"}]{#struct_0_16293_x2703_x1893347825}
+ISIS-*process-id*-ORG: MTU Change triggers rebuild
 
-[[MTU]{lang="EN-US"}]{#struct_0_16293_x2703_x604895425}[变化触发]{style="font-family:宋体"}[rebuild]{lang="EN-US"}
+MTU变化触发rebuild
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1068644590}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: Attempting to exceed Max Seq Num]{lang="EN-US"}]{#struct_0_16293_x2703_x1893544433}
+ISIS-*process-id*-ORG: Attempting to exceed Max Seq Num
 
-[[生成]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x1646584315}[时，序列号达到最大]{style="font-family:宋体"}
+生成LSP时，序列号达到最大
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1892357907}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: Generating Level-*level* LSP \[*lsp-id*\], Seq *sequence-number*, Length *lsp-length*]{lang="EN-US"}]{#struct_0_16293_x2703_699197480}
+ISIS-*process-id*-ORG: Generating Level-*level* LSP [*lsp-id*, Seq *sequence-number*, Length *lsp-length*]
 
-[[生成]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x1893478897}[结束]{style="font-family:宋体"}
+生成LSP结束
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1828301552}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_1076865179}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：LSP的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lsp-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1893151217}[：生成]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*lsp-id*：生成LSP的ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sequence-number]{lang="EN-US"}*]{#struct_0_16293_x2703_427026548}[：生成]{lang="EN-US" style="font-family:
-  宋体"}[LSP]{lang="EN-US"}[的序列号]{lang="EN-US" style="font-family:
-  宋体"}
+·*sequence-number*：生成LSP的序列号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lsp-length]{lang="EN-US"}*]{#struct_0_16293_x2703_x1406632433}[：生成]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[的长度]{lang="EN-US" style="font-family:宋体"}
+·*lsp-length*：生成LSP的长度
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: TLV Handle triggers rebuild]{lang="EN-US"}]{#struct_0_16293_x2703_x1893085681}
+ISIS-*process-id*-ORG: TLV Handle triggers rebuild
 
-[[TLV]{lang="EN-US"}]{#struct_0_16293_x2703_457795693}[变化触发]{style="font-family:宋体"}[rebuild]{lang="EN-US"}
+TLV变化触发rebuild
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x608904609}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: Added level-*level* area address *area-address*]{lang="EN-US"}]{#struct_0_16293_x2703_x1893282289}
+ISIS-*process-id*-ORG: Added level-*level* area address *area-address*
 
-[[往]{style="font-family:宋体"}[TLV DB]{lang="EN-US"}]{#struct_0_16293_x2703_x118878911}[中添加区域地址]{style="font-family:宋体"}
+往TLV DB中添加区域地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1868658680}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_x1893216753}[：]{lang="EN-US" style="font-family:宋体"}[TLV DB]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：TLV DB的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[area-address]{lang="EN-US"}*]{#struct_0_16293_x2703_235440513}[：区域地址]{lang="EN-US" style="font-family:
-  宋体"}
+·*area-address*：区域地址
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: Deleted level-*level* area address *area-address*]{lang="EN-US"}]{#struct_0_16293_x2703_1952895504}
+ISIS-*process-id*-ORG: Deleted level-*level* area address *area-address*
 
-[[从]{style="font-family:宋体"}[TLV DB]{lang="EN-US"}]{#struct_0_16293_x2703_x1892889073}[中删除区域地址]{style="font-family:宋体"}
+从TLV DB中删除区域地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x2666148}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_x199551755}[：]{lang="EN-US" style="font-family:宋体"}[TLV DB]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：TLV DB的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[area-address]{lang="EN-US"}*]{#struct_0_16293_x2703_x1892823537}[：区域地址]{lang="EN-US" style="font-family:
-  宋体"}
+·*area-address*：区域地址
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: Added level-*level* protocol support *protocol-support*]{lang="EN-US"}]{#struct_0_16293_x2703_x46563015}
+ISIS-*process-id*-ORG: Added level-*level* protocol support *protocol-support*
 
-[[往]{style="font-family:宋体"}[TLV DB]{lang="EN-US"}]{#struct_0_16293_x2703_x1893413364}[中添加协议支持]{style="font-family:宋体"}
+往TLV DB中添加协议支持
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_223882156}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_581145341}[：]{lang="EN-US" style="font-family:宋体"}[TLV DB]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：TLV DB的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[protocol-support]{lang="EN-US"}*]{#struct_0_16293_x2703_x1893347828}[：协议支持]{lang="EN-US" style="font-family:
-  宋体"}
+·*protocol-support*：协议支持
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: Deleted level-*level* protocol support *protocol-support*]{lang="EN-US"}]{#struct_0_16293_x2703_154619462}
+ISIS-*process-id*-ORG: Deleted level-*level* protocol support *protocol-support*
 
-[[从]{style="font-family:宋体"}[TLV DB]{lang="EN-US"}]{#struct_0_16293_x2703_x1893544436}[中删除协议支持]{style="font-family:宋体"}
+从TLV DB中删除协议支持
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x887069428}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_1393169355}[：]{lang="EN-US" style="font-family:宋体"}[TLV DB]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：TLV DB的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[protocol-support]{lang="EN-US"}*]{#struct_0_16293_x2703_x1893478900}[：协议支持]{lang="EN-US" style="font-family:
-  宋体"}
+·*protocol-support*：协议支持
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: Added level-*level* interface IP address: *ip-address/mask*]{lang="EN-US"}]{#struct_0_16293_x2703_x94602572}
+ISIS-*process-id*-ORG: Added level-*level* interface IP address: *ip-address/mask*
 
-[[往]{style="font-family:宋体"}[TLV DB]{lang="EN-US"}]{#struct_0_16293_x2703_x1893151220}[中添加接口地址]{style="font-family:宋体"}
+往TLV DB中添加接口地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_830507683}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_54077096}[：]{lang="EN-US" style="font-family:宋体"}[TLV DB]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：TLV DB的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ip-address]{lang="EN-US"}*]{#struct_0_16293_x2703_x1893085684}[：接口地址]{lang="EN-US" style="font-family:宋体"}
+·*ip-address*：接口地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mask]{lang="EN-US"}*]{#struct_0_16293_x2703_861080220}[：接口地址掩码]{lang="EN-US" style="font-family:宋体"}
+·*mask*：接口地址掩码
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: Deleted level-*level* interface IP address: *ip-address/mask*]{lang="EN-US"}]{#struct_0_16293_x2703_x1893282292}
+ISIS-*process-id*-ORG: Deleted level-*level* interface IP address: *ip-address/mask*
 
-[[从]{style="font-family:宋体"}[TLV DB]{lang="EN-US"}]{#struct_0_16293_x2703_x878328262}[中删除接口地址]{style="font-family:宋体"}
+从TLV DB中删除接口地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1065639244}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_x1893216756}[：]{lang="EN-US" style="font-family:宋体"}[TLV DB]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：TLV DB的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ip-address]{lang="EN-US"}*]{#struct_0_16293_x2703_x524074374}[：接口地址]{lang="EN-US" style="font-family:宋体"}
+·*ip-address*：接口地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mask]{lang="EN-US"}*]{#struct_0_16293_x2703_x1892889076}[：接口地址掩码]{lang="EN-US" style="font-family:宋体"}
+·*mask*：接口地址掩码
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: Added level-*level* neighbour: System *system-id* =\> Neighbour *source-id*]{lang="EN-US"}]{#struct_0_16293_x2703_400618379}
+ISIS-*process-id*-ORG: Added level-*level* neighbour: System *system-id* =\> Neighbour *source-id*
 
-[[往]{style="font-family:宋体"}[TLV DB]{lang="EN-US"}]{#struct_0_16293_x2703_x1892823540}[中添加非伪节点到伪节点的邻居]{style="font-family:宋体"}
+往TLV DB中添加非伪节点到伪节点的邻居
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1519848606}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_x1893413363}[：]{lang="EN-US" style="font-family:宋体"}[TLV DB]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：TLV DB的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[system-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x179402371}[：非伪节点]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}
+·*system-id*：非伪节点System ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[source-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1093725114}[：伪节点]{lang="EN-US" style="font-family:宋体"}[Source ID]{lang="EN-US"}
+·*source-id*：伪节点Source ID
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: Deleted level-*level* neighbour: System *system-id* =\> Neighbour *source-id*]{lang="EN-US"}]{#struct_0_16293_x2703_x1893347827}
+ISIS-*process-id*-ORG: Deleted level-*level* neighbour: System *system-id* =\> Neighbour *source-id*
 
-[[从]{style="font-family:宋体"}[TLV DB]{lang="EN-US"}]{#struct_0_16293_x2703_557903989}[中删除非伪节点到伪节点的邻居]{style="font-family:宋体"}
+从TLV DB中删除非伪节点到伪节点的邻居
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1893544435}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_x483784901}[：]{lang="EN-US" style="font-family:宋体"}[TLV DB]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：TLV DB的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[system-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1893478899}[：非伪节点]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}
+·*system-id*：非伪节点System ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[source-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1303866330}[：伪节点]{lang="EN-US" style="font-family:宋体"}[Source ID]{lang="EN-US"}
+·*source-id*：伪节点Source ID
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: Modified level-*level* neighbour: System *system-id* =\> Neighbour *source-id*]{lang="EN-US"}]{#struct_0_16293_x2703_x1893151219}
+ISIS-*process-id*-ORG: Modified level-*level* neighbour: System *system-id* =\> Neighbour *source-id*
 
-[[在]{style="font-family:宋体"}[TLV DB]{lang="EN-US"}]{#struct_0_16293_x2703_x379542506}[中修改非伪节点到伪节点的邻居]{style="font-family:宋体"}
+在TLV DB中修改非伪节点到伪节点的邻居
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1893085683}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_1620595107}[：]{lang="EN-US" style="font-family:宋体"}[TLV DB]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：TLV DB的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[system-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1893282291}[：非伪节点]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}
+·*system-id*：非伪节点System ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[source-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x475043735}[：伪节点]{lang="EN-US" style="font-family:宋体"}[Source ID]{lang="EN-US"}
+·*source-id*：伪节点Source ID
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: Added level-*level* pseudo neighbour: Pseudo *source-id* =\> Neighbour *system-id*]{lang="EN-US"}]{#struct_0_16293_x2703_x1893216755}
+ISIS-*process-id*-ORG: Added level-*level* pseudo neighbour: Pseudo *source-id* =\> Neighbour *system-id*
 
-[[往]{style="font-family:宋体"}[TLV DB]{lang="EN-US"}]{#struct_0_16293_x2703_x927358901}[中添加伪节点到非伪节点的邻居]{style="font-family:宋体"}
+往TLV DB中添加伪节点到非伪节点的邻居
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1892889075}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_803902906}[：]{lang="EN-US" style="font-family:宋体"}[TLV DB]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：TLV DB的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[system-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1892823539}[：非伪节点]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}
+·*system-id*：非伪节点System ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[source-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1565592789}[：伪节点]{lang="EN-US" style="font-family:宋体"}[Source ID]{lang="EN-US"}
+·*source-id*：伪节点Source ID
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: Deleted level-*level* pseudo neighbour: Pseudo *source-id* =\> Neighbour *system-id*]{lang="EN-US"}]{#struct_0_16293_x2703_x327329419}
+ISIS-*process-id*-ORG: Deleted level-*level* pseudo neighbour: Pseudo *source-id* =\> Neighbour *system-id*
 
-[[从]{style="font-family:宋体"}[TLV DB]{lang="EN-US"}]{#struct_0_16293_x2703_x1571218837}[中删除伪节点到非伪节点的邻居]{style="font-family:宋体"}
+从TLV DB中删除伪节点到非伪节点的邻居
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x327263883}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_1537367679}[：]{lang="EN-US" style="font-family:宋体"}[TLV DB]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：TLV DB的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[system-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x327460491}[：非伪节点]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}
+·*system-id*：非伪节点System ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[source-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x353238689}[：伪节点]{lang="EN-US" style="font-family:宋体"}[Source ID]{lang="EN-US"}
+·*source-id*：伪节点Source ID
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: Added level-*level* IP prefix: *ip-address/mask*]{lang="EN-US"}]{#struct_0_16293_x2703_x327394955}
+ISIS-*process-id*-ORG: Added level-*level* IP prefix: *ip-address/mask*
 
-[[往]{style="font-family:宋体"}[TLV DB]{lang="EN-US"}]{#struct_0_16293_x2703_1545219728}[中添加]{style="font-family:宋体"}[IP]{lang="EN-US"}[前缀]{style="font-family:宋体"}
+往TLV DB中添加IP前缀
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x327067275}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_1595444182}[：]{lang="EN-US" style="font-family:宋体"}[TLV DB]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：TLV DB的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ip-address]{lang="EN-US"}*]{#struct_0_16293_x2703_x327001739}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[前缀地址]{lang="EN-US" style="font-family:宋体"}
+·*ip-address*：IP前缀地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mask]{lang="EN-US"}*]{#struct_0_16293_x2703_x350194416}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[前缀地址掩码]{lang="EN-US" style="font-family:宋体"}
+·*mask*：IP前缀地址掩码
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: Deleted level-*level* IP prefix: *ip-address/mask*]{lang="EN-US"}]{#struct_0_16293_x2703_x327198347}
+ISIS-*process-id*-ORG: Deleted level-*level* IP prefix: *ip-address/mask*
 
-[[从]{style="font-family:宋体"}[TLV DB]{lang="EN-US"}]{#struct_0_16293_x2703_x1979734615}[中删除]{style="font-family:宋体"}[IP]{lang="EN-US"}[前缀]{style="font-family:宋体"}
+从TLV DB中删除IP前缀
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x327132811}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_x1206523380}[：]{lang="EN-US" style="font-family:宋体"}[TLV DB]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：TLV DB的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ip-address]{lang="EN-US"}*]{#struct_0_16293_x2703_x326805131}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[前缀地址]{lang="EN-US" style="font-family:宋体"}
+·*ip-address*：IP前缀地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mask]{lang="EN-US"}*]{#struct_0_16293_x2703_x326739595}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[前缀地址掩码]{lang="EN-US" style="font-family:宋体"}
+·*mask*：IP前缀地址掩码
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: Modified level-*level* IP prefix: *ip-address/mask*]{lang="EN-US"}]{#struct_0_16293_x2703_1505499895}
+ISIS-*process-id*-ORG: Modified level-*level* IP prefix: *ip-address/mask*
 
-[[在]{style="font-family:宋体"}[TLV DB]{lang="EN-US"}]{#struct_0_16293_x2703_x327329418}[中修改]{style="font-family:宋体"}[IP]{lang="EN-US"}[前缀]{style="font-family:宋体"}
+在TLV DB中修改IP前缀
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1571284373}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_x327263882}[：]{lang="EN-US" style="font-family:宋体"}[TLV DB]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：TLV DB的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ip-address]{lang="EN-US"}*]{#struct_0_16293_x2703_1537302143}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[前缀地址]{lang="EN-US" style="font-family:宋体"}
+·*ip-address*：IP前缀地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mask]{lang="EN-US"}*]{#struct_0_16293_x2703_x327460490}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[前缀地址掩码]{lang="EN-US" style="font-family:宋体"}
+·*mask*：IP前缀地址掩码
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: ]{lang="EN-US"}[Added level-*Level* router ID *router-id.*]{lang="EN-US"}]{#struct_0_16293_x2703_x1862064620}
+ISIS-*process-id*-ORG: Added level-*Level* router ID *router-id.*
 
-[[在]{style="font-family:宋体"}[TLV DB]{lang="EN-US"}]{#struct_0_16293_x2703_x1861868012}[中添加]{style="font-family:宋体"}[Router ID]{lang="EN-US"}
+在TLV DB中添加Router ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1861933548}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_x1862261228}[：]{lang="EN-US" style="font-family:宋体"}[TLV DB]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：TLV DB的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[router]{lang="EN-US"}[-]{lang="EN-US"}*]{#struct_0_16293_x2703_x1862326764}*[id]{lang="EN-US"}*[：]{style="font-family:宋体"}[MPLS LSR ID]{lang="EN-US"}[，点分十进制格式]{lang="EN-US" style="font-family:宋体"}
+·*router-**id*：MPLS LSR ID，点分十进制格式
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-ORG: ]{lang="EN-US"}[Deleted level-*Level* router ID*.*]{lang="EN-US"}]{#struct_0_16293_x2703_x1862130156}
+ISIS-*process-id*-ORG: Deleted level-*Level* router ID*.
 
-[[在]{style="font-family:宋体"}[TLV DB]{lang="EN-US"}]{#struct_0_16293_x2703_1875409218}[中添加]{style="font-family:宋体"}[Router ID]{lang="EN-US"}
+在TLV DB中添加Router ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1862195692}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_x1861474796}[：]{lang="EN-US" style="font-family:宋体"}[TLV DB]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：TLV DB的Level，取值为1或2
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x353304225}
+\# Router A与Router B相连，在Router A上创建IS-IS进程，SystemID为7777.8888.1111、路由器类型为**level-1-2**，并在GigabitEthernet1/02上使能IS-IS功能，接口的IP地址为8.8.8.8/24；在Router B上创建IS-IS进程，SystemID为5555.1111.1111、路由器类型为**level-1-2**，并在GigabitEthernet1/0/4使能IS-IS功能，接口的IP地址为8.8.8.5/24；Router A与Router B在同一个区域18。在Router A上打开IS-IS本地更新的调试信息开关。
 
-[[\# Router A]{lang="EN-US"}]{#struct_0_16293_x2703_x1814487106}[与]{style="font-family:宋体"}[Router B]{lang="EN-US"}[相连，在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[上创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程，]{style="font-family:宋体"}[SystemID]{lang="EN-US"}[为]{style="font-family:宋体"}[7777.8888.1111]{lang="EN-US"}[、路由器类型为]{style="font-family:宋体"}**[level-1-2]{lang="EN-US"}**[，并在]{style="font-family:宋体"}[GigabitEthernet1/02]{lang="EN-US"}[上使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能，接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[8.8.8.8/24]{lang="EN-US"}[；在]{style="font-family:宋体"}[Router B]{lang="EN-US"}[上创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程，]{style="font-family:宋体"}[SystemID]{lang="EN-US"}[为]{style="font-family:宋体"}[5555.1111.1111]{lang="EN-US"}[、路由器类型为]{style="font-family:宋体"}**[level-1-2]{lang="EN-US"}**[，并在]{style="font-family:宋体"}[GigabitEthernet1/0/4]{lang="EN-US"}[使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能，接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[8.8.8.5/24]{lang="EN-US"}[；]{style="font-family:宋体"}[Router A]{lang="EN-US"}[与]{style="font-family:宋体"}[Router B]{lang="EN-US"}[在同一个区域]{style="font-family:宋体"}[18]{lang="EN-US"}[。在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[上打开]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[本地更新的调试信息开关。]{style="font-family:宋体"}
+\<RouterA\> debugging isis self-originate-update
 
-[[\<RouterA\> debugging isis self-originate-update]{lang="EN-US"}]{#struct_0_16293_x2703_x327394954}
+\<RouterA\> system-view
 
-[\<RouterA\> system-view]{lang="EN-US"}
+RouterA interface gigabitethernet 1/0/2
 
-[\[RouterA\] interface gigabitethernet 1/0/2]{lang="EN-US"}
+RouterA-GigabitEthernet1/0/2 ip address 8.8.8.7 24
 
-[\[RouterA-GigabitEthernet1/0/2\] ip address 8.8.8.7 24]{lang="EN-US"}
+RouterA-GigabitEthernet1/0/2
 
-[\[RouterA-GigabitEthernet1/0/2\]]{lang="EN-US"}
+\*Apr  8 16:26:27:279 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 16:26:27:279 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-ORG: Deleted level-1 interface IP address: 8.8.8.8/255.255.255.0
 
-[ISIS-1-ORG: Deleted level-1 interface IP address: 8.8.8.8/255.255.255.0]{lang="EN-US"}
+\*Apr  8 16:26:27:279 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 16:26:27:279 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-ORG: Deleted level-2 interface IP address: 8.8.8.8/255.255.255.0
 
-[ISIS-1-ORG: Deleted level-2 interface IP address: 8.8.8.8/255.255.255.0]{lang="EN-US"}
+*// 从TLV DB中删除接口IP地址*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_1545285264}*[从]{style="font-family:宋体"}[TLV DB]{lang="EN-US"}[中删除接口]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}*
+\*Apr  8 16:26:27:279 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Apr  8 16:26:27:279 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_475981384}
+ISIS-1-ORG: Deleted level-1 IP prefix: 8.8.8.0/255.255.255.0
 
-[ISIS-1-ORG: Deleted level-1 IP prefix: 8.8.8.0/255.255.255.0]{lang="EN-US"}
+\*Apr  8 16:26:27:279 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 16:26:27:279 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-ORG: Deleted level-2 IP prefix: 8.8.8.0/255.255.255.0
 
-[ISIS-1-ORG: Deleted level-2 IP prefix: 8.8.8.0/255.255.255.0]{lang="EN-US"}
+*// 从TLV DB中删除IP前缀*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x626347824}*[从]{style="font-family:宋体"}[TLV DB]{lang="EN-US"}[中删除]{style="font-family:宋体"}[IP]{lang="EN-US"}[前缀]{style="font-family:宋体"}*
+\*Apr  8 16:26:27:279 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Apr  8 16:26:27:279 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_x407008135}
+ISIS-1-ORG: Added level-1 interface IP address: 8.8.8.7/255.255.255.0
 
-[ISIS-1-ORG: Added level-1 interface IP address: 8.8.8.7/255.255.255.0]{lang="EN-US"}
+\*Apr  8 16:26:27:279 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 16:26:27:279 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-ORG: Added level-2 interface IP address: 8.8.8.7/255.255.255.0
 
-[ISIS-1-ORG: Added level-2 interface IP address: 8.8.8.7/255.255.255.0]{lang="EN-US"}
+\*Apr  8 16:26:27:283 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 16:26:27:283 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+*// 在TLV DB中添加接口IP地址*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x1226336937}*[在]{style="font-family:宋体"}[TLV DB]{lang="EN-US"}[中添加接口]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}*
+ISIS-1-ORG: Deleting address 8.8.8.0/24 from level-1 LSPs, TLV: 128
 
-[[ISIS-1-ORG: Deleting address 8.8.8.0/24 from level-1 LSPs, TLV: 128]{lang="EN-US"}]{#struct_0_16293_x2703_x327067274}
+\*Apr  8 16:26:27:283 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 16:26:27:283 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-ORG: Deleting address 8.8.8.0/24 from level-2 LSPs, TLV: 128
 
-[ISIS-1-ORG: Deleting address 8.8.8.0/24 from level-2 LSPs, TLV: 128]{lang="EN-US"}
+*// 从LSP中删除IP前缀*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_1595378646}*[从]{style="font-family:宋体"}[LSP]{lang="EN-US"}[中删除]{style="font-family:宋体"}[IP]{lang="EN-US"}[前缀]{style="font-family:宋体"}*
+%Apr  8 16:26:27:283 2011 RouterA ISIS/5/ISIS_NBR_CHG: -MDC=1;  IS-IS 1, Level-1 adjacency 5555.1111.1111 (GigabitEthernet1/0/2), state change to: DOWN.
 
-[[%Apr  8 16:26:27:283 2011 RouterA ISIS/5/ISIS_NBR_CHG: -MDC=1;  IS-IS 1, Level-1 adjacency 5555.1111.1111 (GigabitEthernet1/0/2), state change to: DOWN.]{lang="EN-US"}]{#struct_0_16293_x2703_639611899}
+\*Apr  8 16:26:27:283 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 16:26:27:283 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-ORG: Deleted level-1 pseudo neighbour: Pseudo 7777.8888.1111.01 =\> Neighbour 5555.1111.1111
 
-[ISIS-1-ORG: Deleted level-1 pseudo neighbour: Pseudo 7777.8888.1111.01 =\> Neighbour 5555.1111.1111]{lang="EN-US"}
+%Apr  8 16:26:27:283 2011 RouterA ISIS/5/ISIS_NBR_CHG: -MDC=1;  IS-IS 1, Level-2 adjacency 5555.1111.1111 (GigabitEthernet1/0/2), state change to: DOWN.
 
-[%Apr  8 16:26:27:283 2011 RouterA ISIS/5/ISIS_NBR_CHG: -MDC=1;  IS-IS 1, Level-2 adjacency 5555.1111.1111 (GigabitEthernet1/0/2), state change to: DOWN.]{lang="EN-US"}
+\*Apr  8 16:26:27:283 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 16:26:27:283 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-ORG: Deleted level-2 pseudo neighbour: Pseudo 7777.8888.1111.01 =\> Neighbour 5555.1111.1111
 
-[ISIS-1-ORG: Deleted level-2 pseudo neighbour: Pseudo 7777.8888.1111.01 =\> Neighbour 5555.1111.1111]{lang="EN-US"}
+*// 邻居down，从TLV DB中删除伪节点到非伪节点邻居*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x83651082}*[邻居]{style="font-family:宋体"}[down]{lang="EN-US"}[，从]{style="font-family:宋体"}[TLV DB]{lang="EN-US"}[中删除伪节点到非伪节点邻居]{style="font-family:宋体"}*
+%Apr  8 16:26:27:392 2011 RouterA ISIS/5/ISIS_NBR_CHG: -MDC=1;  IS-IS 1, Level-2 adjacency 5555.1111.1111 (GigabitEthernet1/0/2), state change to: UP.
 
-[[%Apr  8 16:26:27:392 2011 RouterA ISIS/5/ISIS_NBR_CHG: -MDC=1;  IS-IS 1, Level-2 adjacency 5555.1111.1111 (GigabitEthernet1/0/2), state change to: UP.]{lang="EN-US"}]{#struct_0_16293_x2703_250929778}
+\*Apr  8 16:26:27:392 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 16:26:27:392 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-ORG: Added level-2 pseudo neighbour: Pseudo 7777.8888.1111.01 =\> Neighbour 5555.1111.1111
 
-[ISIS-1-ORG: Added level-2 pseudo neighbour: Pseudo 7777.8888.1111.01 =\> Neighbour 5555.1111.1111]{lang="EN-US"}
+%Apr  8 16:26:27:392 2011 RouterA ISIS/5/ISIS_NBR_CHG: -MDC=1;  IS-IS 1, Level-1 adjacency 5555.1111.1111 (GigabitEthernet1/0/2), state change to: UP.
 
-[%Apr  8 16:26:27:392 2011 RouterA ISIS/5/ISIS_NBR_CHG: -MDC=1;  IS-IS 1, Level-1 adjacency 5555.1111.1111 (GigabitEthernet1/0/2), state change to: UP.]{lang="EN-US"}
+\*Apr  8 16:26:27:392 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 16:26:27:392 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-ORG: Added level-1 pseudo neighbour: Pseudo 7777.8888.1111.01 =\> Neighbour 5555.1111.1111
 
-[ISIS-1-ORG: Added level-1 pseudo neighbour: Pseudo 7777.8888.1111.01 =\> Neighbour 5555.1111.1111]{lang="EN-US"}
+*// 邻居up，从TLV DB中添加伪节点到非伪节点邻居*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x327001738}*[邻居]{style="font-family:宋体"}[up]{lang="EN-US"}[，从]{style="font-family:宋体"}[TLV DB]{lang="EN-US"}[中添加伪节点到非伪节点邻居]{style="font-family:宋体"}*
+\*Apr  8 16:26:29:290 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Apr  8 16:26:29:290 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_x350259952}
+ISIS-1-ORG: Generating Level-2 LSP [7777.8888.1111.01-00, Seq 0x0000000a, Length 55]
 
-[ISIS-1-ORG: Generating Level-2 LSP \[7777.8888.1111.01-00\], Seq 0x0000000a, Length 55]{lang="EN-US"}
+\*Apr  8 16:26:29:290 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 16:26:29:290 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-ORG: Generating Level-1 LSP [7777.8888.1111.01-00, Seq 0x0000000a, Length 55]
 
-[ISIS-1-ORG: Generating Level-1 LSP \[7777.8888.1111.01-00\], Seq 0x0000000a, Length 55]{lang="EN-US"}
+*// 生成伪节点LSP*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x1719852513}*[生成伪节点]{style="font-family:宋体"}[LSP]{lang="EN-US"}*
+\*Apr  8 16:26:29:290 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Apr  8 16:26:29:290 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_166769810}
+ISIS-1-ORG: Generating Level-2 LSP [7777.8888.1111.00-00, Seq 0x00000013, Length 54]
 
-[ISIS-1-ORG: Generating Level-2 LSP \[7777.8888.1111.00-00\], Seq 0x00000013, Length 54]{lang="EN-US"}
+\*Apr  8 16:26:29:290 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 16:26:29:290 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-ORG: Generating Level-1 LSP [7777.8888.1111.00-00, Seq 0x00000014, Length 54]
 
-[ISIS-1-ORG: Generating Level-1 LSP \[7777.8888.1111.00-00\], Seq 0x00000014, Length 54]{lang="EN-US"}
+*// 生成LSP*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_1348513457}*[生成]{style="font-family:宋体"}[LSP]{lang="EN-US"}*
+\*Apr  8 16:26:37:284 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Apr  8 16:26:37:284 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_x327198346}
+ISIS-1-ORG: Added level-1 IP prefix: 8.8.8.0/255.255.255.0
 
-[ISIS-1-ORG: Added level-1 IP prefix: 8.8.8.0/255.255.255.0]{lang="EN-US"}
+\*Apr  8 16:26:37:284 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 16:26:37:284 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-ORG: Adding address 8.8.8.0/24 into level-1 LSPs, TLV: 128
 
-[ISIS-1-ORG: Adding address 8.8.8.0/24 into level-1 LSPs, TLV: 128]{lang="EN-US"}
+\*Apr  8 16:26:37:284 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 16:26:37:284 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-ORG: Added level-2 IP prefix: 8.8.8.0/255.255.255.0
 
-[ISIS-1-ORG: Added level-2 IP prefix: 8.8.8.0/255.255.255.0]{lang="EN-US"}
+\*Apr  8 16:26:37:284 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 16:26:37:284 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-ORG: Adding address 8.8.8.0/24 into level-2 LSPs, TLV: 128
 
-[ISIS-1-ORG: Adding address 8.8.8.0/24 into level-2 LSPs, TLV: 128]{lang="EN-US"}
+\*Apr  8 16:26:39:290 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 16:26:39:290 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+*// 在TLV DB中添加IP前缀，在LSP中添加IP前缀*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x1979669079}*[在]{style="font-family:宋体"}[TLV DB]{lang="EN-US"}[中添加]{style="font-family:宋体"}[IP]{lang="EN-US"}[前缀，在]{style="font-family:宋体"}[LSP]{lang="EN-US"}[中添加]{style="font-family:宋体"}[IP]{lang="EN-US"}[前缀]{style="font-family:宋体"}*
+ISIS-1-ORG: Generating Level-2 LSP 7777.8888.1111.00-00, Seq 0x00000014, Length 68
 
-[[ISIS-1-ORG: Generating Level-2 LSP \[7777.8888.1111.00-00\], Seq 0x00000014, Length 68]{lang="EN-US"}]{#struct_0_16293_x2703_915556265}
+\*Apr  8 16:26:39:290 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 16:26:39:290 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-ORG: Generating Level-1 LSP [7777.8888.1111.00-00, Seq 0x00000015, Length 68]
 
-[ISIS-1-ORG: Generating Level-1 LSP \[7777.8888.1111.00-00\], Seq 0x00000015, Length 68]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_1280399709}*[生成]{style="font-family:宋体"}[LSP]{lang="EN-US"}*
-
-::: {#-706552492 .myid}
-[]{#_Toc404788109}[]{#struct_0_16293_x2703_1116620632}
+*// 生成LSP*
 
 **IS-IS调试命令 \-- IS-IS调试命令 \-- debugging isis snp-packet**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1791425312}
+【命令】
 
-[**[debugging]{lang="EN-US"}**[ **isis** **snp-packet** \[ **receive** \| **send** \] \[ **verbose** \] \[ *process-id* \]]{lang="EN-US"}]{#struct_0_16293_x2703_135133580}
+**[debugging**[ **isis** **snp-packet** [ **receive** \| **send** ]  **verbose**   *process-id* ]]
 
-[**[undo]{lang="EN-US"}**[ **debugging** **isis** **snp-packet** \[ **receive** \| **send** \] \[ **verbose** \] \[ *process-id* \]]{lang="EN-US"}]{#struct_0_16293_x2703_x327132810}
+**[undo**[ **debugging** **isis** **snp-packet** [ **receive** \| **send** ]  **verbose**   *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1206457844}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_16293_x2703_500492790}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16293_x2703_388657072}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16293_x2703_x1804374185}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16293_x2703_x1121992174}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x808111395}
+【参数】
 
-[**[receive]{lang="EN-US"}**]{#struct_0_16293_x2703_1747805555}[：表示接收]{style="font-family:宋体"}[SNP]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}
+**[receive**]：表示接收SNP报文调试信息开关。
 
-[**[send]{lang="EN-US"}**]{#struct_0_16293_x2703_x326805130}[：表示发送]{style="font-family:宋体"}[SNP]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}
+**[send**]：表示发送SNP报文调试信息开关。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_16293_x2703_x1929993204}[：表示]{style="font-family:宋体"}[SNP]{lang="EN-US"}[报文详细调试信息开关。]{style="font-family:宋体"}
+**[verbose**]：表示SNP报文详细调试信息开关。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1718688454}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_16293_x2703_1787937164}
+【描述】
 
-[**[debugging isis snp-packet]{lang="EN-US"}**]{#struct_0_16293_x2703_205771809}[命令用来打开]{style="font-family:
-宋体"}[IS-IS SNP]{lang="EN-US"}[报文的调试信息开关。]{style="font-family:
-宋体"}**[undo debugging isis snp-packet]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[IS-IS SNP]{lang="EN-US"}[报文的调试信息开关。]{style="font-family:宋体"}
+**[debugging isis snp-packet**]命令用来打开IS-IS SNP报文的调试信息开关。**undo debugging isis snp-packet**命令用来关闭IS-IS SNP报文的调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[IS-IS SNP]{lang="EN-US"}]{#struct_0_16293_x2703_2136456512}[报文的调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，IS-IS SNP报文的调试信息开关处于关闭状态。
 
-[[如果未指定进程号，则打开所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_x1299570711}[进程的]{style="font-family:宋体"}[SNP]{lang="EN-US"}[报文的调试信息开关。]{style="font-family:宋体"}
+如果未指定进程号，则打开所有IS-IS进程的SNP报文的调试信息开关。
 
-[[表1-7 ]{lang="EN-US"}[debugging isis snp-packet]{lang="EN-US"}]{#struct_0_16293_x2703_x593215223}[命令输出信息描述表]{style="font-family:黑体"}
+表1-7 debugging isis snp-packet命令输出信息描述表
 
-[]{#table_struct_0_x455269612}[[字段]{style="font-family:黑体"}]{#struct_0_16293_x2703_x326739594}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16293_x2703_1505565431}
+描述
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-SNP:Receive *psnp-type* from *system-id* on circuit *circuit-name*]{lang="EN-US"}]{#struct_0_16293_x2703_1816095310}
+ISIS-*process-id*-SNP:Receive *psnp-type* from *system-id* on circuit *circuit-name*
 
-[[收到]{style="font-family:宋体"}[PSNP]{lang="EN-US"}]{#struct_0_16293_x2703_103703285}[报文]{style="font-family:宋体"}
+收到PSNP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_455409236}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[psnp-type]{lang="EN-US"}*]{#struct_0_16293_x2703_1005070037}[：]{lang="EN-US" style="font-family:宋体"}[PSNP]{lang="EN-US"}[报文类型，取值为]{lang="EN-US" style="font-family:宋体"}[L1 PSNP]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2 PSNP]{lang="EN-US"}
+·*psnp-type*：PSNP报文类型，取值为L1 PSNP或L2 PSNP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[system-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x327329421}[：发送]{lang="EN-US" style="font-family:宋体"}[PSNP]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}
+·*system-id*：发送PSNP报文IS-IS进程的System ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuit-name]{lang="EN-US"}*]{#struct_0_16293_x2703_x1571743124}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuit-name*：接口名称
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-SNP:Receive *csnp-type* from *source-id* on circuit *circuit-name* range from *start-lsp-id* to *end-lsp-id*]{lang="EN-US"}]{#struct_0_16293_x2703_448153179}
+ISIS-*process-id*-SNP:Receive *csnp-type* from *source-id* on circuit *circuit-name* range from *start-lsp-id* to *end-lsp-id*
 
-[[收到]{style="font-family:宋体"}[CSNP]{lang="EN-US"}]{#struct_0_16293_x2703_x1785080028}[报文]{style="font-family:宋体"}
+收到CSNP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1992607695}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[csnp-type]{lang="EN-US"}*]{#struct_0_16293_x2703_x327263885}[：]{lang="EN-US" style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文类型，取值为]{lang="EN-US" style="font-family:宋体"}[L1 CSNP]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2 CSNP]{lang="EN-US"}
+·*csnp-type*：CSNP报文类型，取值为L1 CSNP或L2 CSNP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[source-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1537760895}[：发送]{lang="EN-US" style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的]{lang="EN-US" style="font-family:宋体"}[SOURCE ID]{lang="EN-US"}
+·*source-id*：发送CSNP报文IS-IS进程的SOURCE ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuit-name]{lang="EN-US"}*]{#struct_0_16293_x2703_x1184557888}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuit-name*：接口名称
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[start-lsp-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1427456271}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP]{lang="EN-US"}[摘要的起始]{lang="EN-US" style="font-family:
-  宋体"}[LSP ID]{lang="EN-US"}
+·*start-lsp-id*：LSP摘要的起始LSP ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}*[end-lsp-id]{lang="DA"}*]{#struct_0_16293_x2703_x1064351197}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="DA"}[摘要的结束]{lang="EN-US" style="font-family:宋体"}[LSP ID]{lang="DA"}
+·*end-lsp-id*：LSP摘要的结束LSP ID
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-SNP:Not find current lsp entry to build csnp]{lang="EN-US"}]{#struct_0_16293_x2703_x327460493}
+ISIS-*process-id*-SNP:Not find current lsp entry to build csnp
 
-[[发送]{style="font-family:宋体"}[CSNP]{lang="EN-US"}]{#struct_0_16293_x2703_x353369761}[报文时，在]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[中没有找到起始]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[或第一个比起始]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[大的]{style="font-family:宋体"}[LSP]{lang="EN-US"}
+发送CSNP报文时，在LSDB中没有找到起始LSP ID或第一个比起始LSP ID大的LSP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_863511147}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-SNP:Circuit(*circuit-name*) silence, csnp NOT sent]{lang="EN-US"}]{#struct_0_16293_x2703_x597640658}
+ISIS-*process-id*-SNP:Circuit(*circuit-name*) silence, csnp NOT sent
 
-[[接口配置]{style="font-family:宋体"}[silent]{lang="EN-US"}]{#struct_0_16293_x2703_x1029036437}[，不发送]{style="font-family:宋体"}[CSNP]{lang="EN-US"}
+接口配置silent，不发送CSNP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x327394957}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuit-name]{lang="EN-US"}*]{#struct_0_16293_x2703_1545088656}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuit-name*：接口名称
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-SNP:Level-*level* csnp timer expired on a NOT dis circuit(*circuit-name*)]{lang="EN-US"}]{#struct_0_16293_x2703_1193470130}
+ISIS-*process-id*-SNP:Level-*level* csnp timer expired on a NOT dis circuit(*circuit-name*)
 
-[[CSNP]{lang="EN-US"}]{#struct_0_16293_x2703_1805408298}[定时器在非]{style="font-family:宋体"}[DIS]{lang="EN-US"}[接口上超时]{style="font-family:宋体"}
+CSNP定时器在非DIS接口上超时
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x327067277}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_1595313110}[：接口的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：接口的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuit-name]{lang="EN-US"}*]{#struct_0_16293_x2703_x2099643651}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuit-name*：接口名称
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-SNP:Send *snp-type* on circuit *circuit-name*]{lang="EN-US"}]{#struct_0_16293_x2703_x346338749}
+ISIS-*process-id*-SNP:Send *snp-type* on circuit *circuit-name*
 
-[[发送]{style="font-family:宋体"}[CSNP/PSNP]{lang="EN-US"}]{#struct_0_16293_x2703_x327001741}[报文]{style="font-family:宋体"}
+发送CSNP/PSNP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x349670133}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[snp-type]{lang="EN-US"}*]{#struct_0_16293_x2703_x1617817203}[：]{lang="EN-US" style="font-family:宋体"}[SNP]{lang="EN-US"}[报文类型，取值为]{lang="EN-US" style="font-family:宋体"}[L1 CSNP]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[L2 CSNP]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[L1 PSNP]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2 PSNP]{lang="EN-US"}
+·*snp-type*：SNP报文类型，取值为L1 CSNP、L2 CSNP、L1 PSNP或L2 PSNP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuit-name]{lang="EN-US"}*]{#struct_0_16293_x2703_230840166}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuit-name*：接口名称
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-SNP:]{lang="EN-US"}[Circuit(*circuit-name*) silence, psnp NOT sent]{lang="EN-US"}]{#struct_0_16293_x2703_x327198349}
+ISIS-*process-id*-SNP:Circuit(*circuit-name*) silence, psnp NOT sent
 
-[[接口配置]{style="font-family:宋体"}[silent]{lang="EN-US"}]{#struct_0_16293_x2703_x1979865687}[，不发送]{style="font-family:宋体"}[PSNP]{lang="EN-US"}
+接口配置silent，不发送PSNP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1346526829}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuit-name]{lang="EN-US"}*]{#struct_0_16293_x2703_x1385789553}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuit-name*：接口名称
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-SNP:Level- *level* psnp timer expired on a dis circuit(*circuit-name*)]{lang="EN-US"}]{#struct_0_16293_x2703_x327132813}
+ISIS-*process-id*-SNP:Level- *level* psnp timer expired on a dis circuit(*circuit-name*)
 
-[[PSNP]{lang="EN-US"}]{#struct_0_16293_x2703_x1206392308}[定时器在]{style="font-family:宋体"}[DIS]{lang="EN-US"}[接口上超时]{style="font-family:宋体"}
+PSNP定时器在DIS接口上超时
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x331338349}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_16293_x2703_x702642418}[：接口的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}[，取值为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·*level*：接口的Level，取值为1或2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuit-name]{lang="EN-US"}*]{#struct_0_16293_x2703_x326805133}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuit-name*：接口名称
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-SNP:Lsp entry *lsp-id* processed, newer than lsdb copy]{lang="EN-US"}]{#struct_0_16293_x2703_x1929796596}
+ISIS-*process-id*-SNP:Lsp entry *lsp-id* processed, newer than lsdb copy
 
-[[收到]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_126996079}[摘要比]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[中的新]{style="font-family:宋体"}
+收到LSP摘要比LSDB中的新
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x326739597}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lsp-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1505630967}[：收到的]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[摘要]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*lsp-id*：收到的LSP摘要ID
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-SNP:Lsp entry *lsp-id* processed, older than lsdb copy]{lang="EN-US"}]{#struct_0_16293_x2703_703341473}
+ISIS-*process-id*-SNP:Lsp entry *lsp-id* processed, older than lsdb copy
 
-[[收到]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x327329420}[摘要比]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[中的旧]{style="font-family:宋体"}
+收到LSP摘要比LSDB中的旧
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1571808660}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lsp-id]{lang="EN-US"}*]{#struct_0_16293_x2703_729954476}[：收到的]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[摘要]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*lsp-id*：收到的LSP摘要ID
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-SNP:Lsp entry *lsp-id* processed, same as lsdb copy]{lang="EN-US"}]{#struct_0_16293_x2703_x327263884}
+ISIS-*process-id*-SNP:Lsp entry *lsp-id* processed, same as lsdb copy
 
-[[收到]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_1537695359}[摘要和]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[中的新旧程度一样]{style="font-family:宋体"}
+收到LSP摘要和LSDB中的新旧程度一样
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1934373426}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lsp-id]{lang="EN-US"}*]{#struct_0_16293_x2703_929123187}[：收到的]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[摘要]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*lsp-id*：收到的LSP摘要ID
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-SNP:Lsp entry *lsp-id* processed, NO exist in lsdb]{lang="EN-US"}]{#struct_0_16293_x2703_x327460492}
+ISIS-*process-id*-SNP:Lsp entry *lsp-id* processed, NO exist in lsdb
 
-[[收到]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x353435297}[摘要在]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[中不存在]{style="font-family:宋体"}
+收到LSP摘要在LSDB中不存在
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x259609719}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lsp-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x327394956}[：收到的]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[摘要]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*lsp-id*：收到的LSP摘要ID
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-SNP:Psnp not processed before DIS election]{lang="EN-US"}]{#struct_0_16293_x2703_1545154192}
+ISIS-*process-id*-SNP:Psnp not processed before DIS election
 
-[[在]{style="font-family:宋体"}[DIS]{lang="EN-US"}]{#struct_0_16293_x2703_x652644031}[选举完成之前不处理收到的]{style="font-family:宋体"}[PSNP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+在DIS选举完成之前不处理收到的PSNP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[process-id]{lang="EN-US"}]{#struct_0_16293_x2703_x327067276}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·process-id：IS-IS进程号
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-SNP:Psnp not processed, current IS is NOT DIS]{lang="EN-US"}]{#struct_0_16293_x2703_1595247574}
+ISIS-*process-id*-SNP:Psnp not processed, current IS is NOT DIS
 
-[[当前的]{style="font-family:宋体"}[IS]{lang="EN-US"}]{#struct_0_16293_x2703_x327001740}[不是]{style="font-family:宋体"}[DIS]{lang="EN-US"}[时不处理收到的]{style="font-family:宋体"}[PSNP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+当前的IS不是DIS时不处理收到的PSNP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[process-id]{lang="EN-US"}]{#struct_0_16293_x2703_x349735669}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·process-id：IS-IS进程号
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-SNP:Csnp not processed before DIS election]{lang="EN-US"}]{#struct_0_16293_x2703_733524894}
+ISIS-*process-id*-SNP:Csnp not processed before DIS election
 
-[[在]{style="font-family:宋体"}[DIS]{lang="EN-US"}]{#struct_0_16293_x2703_x327198348}[选举完成之前不处理收到的]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+在DIS选举完成之前不处理收到的CSNP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[process-id]{lang="EN-US"}]{#struct_0_16293_x2703_x1979800151}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·process-id：IS-IS进程号
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-SNP:Csnp not processed on DIS]{lang="EN-US"}]{#struct_0_16293_x2703_x1104271812}
+ISIS-*process-id*-SNP:Csnp not processed on DIS
 
-[[DIS]{lang="EN-US"}]{#struct_0_16293_x2703_x327132812}[不处理收到的]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+DIS不处理收到的CSNP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[process-id]{lang="EN-US"}]{#struct_0_16293_x2703_x1206326772}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·process-id：IS-IS进程号
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-SNP:Lsp entry *lsp-id* in csnp is not found in lsdb]{lang="EN-US"}]{#struct_0_16293_x2703_x326805132}
+ISIS-*process-id*-SNP:Lsp entry *lsp-id* in csnp is not found in lsdb
 
-[[收到]{style="font-family:宋体"}[CSNP]{lang="EN-US"}]{#struct_0_16293_x2703_x1929862132}[报文中的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[摘要在]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[中不存在]{style="font-family:宋体"}
+收到CSNP报文中的LSP摘要在LSDB中不存在
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1782025224}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lsp-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x326739596}[：收到的]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[摘要]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*lsp-id*：收到的LSP摘要ID
 
-[[ISIS-]{lang="EN-US"}*[process-id]{lang="EN-US"}*[-SNP: *snp-content*]{lang="EN-US"}]{#struct_0_16293_x2703_1505696503}
+ISIS-*process-id*-SNP: *snp-content*
 
-[[SNP]{lang="EN-US"}]{#struct_0_16293_x2703_x153809699}[报文的内容]{style="font-family:宋体"}
+SNP报文的内容
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x327329423}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[snp-content]{lang="EN-US"}*]{#struct_0_16293_x2703_x1571874196}[：]{lang="EN-US" style="font-family:
-  宋体"}[SNP]{lang="EN-US"}[报文内容]{lang="EN-US" style="font-family:
-  宋体"}
+·*snp-content*：SNP报文内容
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16293_x2703_717307488}
+\# Router A与Router B相连，在Router A上创建IS-IS进程，SystemID为7777.8888.1111、路由器类型为**level-1-2**，并在GigabitEthernet1/0/2上使能IS-IS功能，接口的IP地址为8.8.8.8/24；在Router B上创建IS-IS进程，SystemID为5555.1111.1111、路由器类型为**level-1-2**，并在GigabitEthernet1/0/4使能IS-IS功能，接口的IP地址为8.8.8.5/24；Router A与Router B在同一个区域18。在Router A上打开IS-IS SNP报文的调试信息开关。
 
-[[\# Router A]{lang="EN-US"}]{#struct_0_16293_x2703_x327263887}[与]{style="font-family:宋体"}[Router B]{lang="EN-US"}[相连，在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[上创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程，]{style="font-family:宋体"}[SystemID]{lang="EN-US"}[为]{style="font-family:宋体"}[7777.8888.1111]{lang="EN-US"}[、路由器类型为]{style="font-family:宋体"}**[level-1-2]{lang="EN-US"}**[，并在]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[上使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能，接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[8.8.8.8/24]{lang="EN-US"}[；在]{style="font-family:宋体"}[Router B]{lang="EN-US"}[上创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程，]{style="font-family:宋体"}[SystemID]{lang="EN-US"}[为]{style="font-family:宋体"}[5555.1111.1111]{lang="EN-US"}[、路由器类型为]{style="font-family:宋体"}**[level-1-2]{lang="EN-US"}**[，并在]{style="font-family:宋体"}[GigabitEthernet1/0/4]{lang="EN-US"}[使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能，接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[8.8.8.5/24]{lang="EN-US"}[；]{style="font-family:宋体"}[Router A]{lang="EN-US"}[与]{style="font-family:宋体"}[Router B]{lang="EN-US"}[在同一个区域]{style="font-family:宋体"}[18]{lang="EN-US"}[。在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[上打开]{style="font-family:宋体"}[IS-IS SNP]{lang="EN-US"}[报文的调试信息开关。]{style="font-family:宋体"}
+\<RouterA\> debugging isis snp-packet
 
-[[\<RouterA\> debugging isis snp-packet]{lang="EN-US"}]{#struct_0_16293_x2703_1537629823}
+\*Apr  8 16:51:23:195 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 16:51:23:195 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-SNP:
 
-[ISIS-1-SNP:]{lang="EN-US"}
+0000: 83 21 01 06  18 01 00 00  00 63 55 55  11 11 11 11
 
-[0000: 83 21 01 06  18 01 00 00  00 63 55 55  11 11 11 11]{lang="EN-US"}
+0010: 00 00 00 00  00 00 00 00  00 ff ff ff  ff ff ff ff
 
-[0010: 00 00 00 00  00 00 00 00  00 ff ff ff  ff ff ff ff]{lang="EN-US"}
+0020: ff 09 40 04  a8 55 55 11  11 11 11 00  00 00 00 00
 
-[0020: ff 09 40 04  a8 55 55 11  11 11 11 00  00 00 00 00]{lang="EN-US"}
+0030: 05 ff 6e 04  6b 55 55 11  11 11 11 00  01 00 00 00
 
-[0030: 05 ff 6e 04  6b 55 55 11  11 11 11 00  01 00 00 00]{lang="EN-US"}
+0040: 01 49 95 04  a6 55 55 11  11 11 11 01  00 00 00 00
 
-[0040: 01 49 95 04  a6 55 55 11  11 11 11 01  00 00 00 00]{lang="EN-US"}
+0050: 03 d8 b4 04  a7 77 77 88  88 11 11 00  00 00 00 00
 
-[0050: 03 d8 b4 04  a7 77 77 88  88 11 11 00  00 00 00 00]{lang="EN-US"}
+0060: 05 f0 47
 
-[0060: 05 f0 47]{lang="EN-US"}
+*[// SNP*]*报文内容*
 
-[*[// SNP]{lang="EN-US"}*]{#struct_0_16293_x2703_729498899}*[报文内容]{style="font-family:宋体"}*
+\*Apr  8 16:51:23:195 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Apr  8 16:51:23:195 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_x156787919}
+ISIS-1-SNP: Receive L1 CSNP from 5555.1111.1111.00 on circuit GigabitEthernet1/0/2 range from 0000.0000.0000.00-00 to ffff.ffff.ffff.ff-ff
 
-[ISIS-1-SNP: Receive L1 CSNP from 5555.1111.1111.00 on circuit GigabitEthernet1/0/2 range from 0000.0000.0000.00-00 to ffff.ffff.ffff.ff-ff]{lang="EN-US"}
+*// 收到CSNP报文*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x342310288}*[收到]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文]{style="font-family:宋体"}*
+\*Apr  8 16:51:23:195 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Apr  8 16:51:23:195 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_x327460495}
+ISIS-1-SNP: Lsp entry 5555.1111.1111.00-00 processed, same as lsdb copy
 
-[ISIS-1-SNP: Lsp entry 5555.1111.1111.00-00 processed, same as lsdb copy]{lang="EN-US"}
+\*Apr  8 16:51:23:195 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 16:51:23:195 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+*[// CSNP*]*报文上的LSP摘要和LSDB中的新旧程度一样*
 
-[*[// CSNP]{lang="EN-US"}*]{#struct_0_16293_x2703_x352976545}*[报文上的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[摘要和]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[中的新旧程度一样]{style="font-family:宋体"}*
+ISIS-1-SNP: Lsp entry 5555.1111.1111.00-01 processed, NO exist in lsdb
 
-[[ISIS-1-SNP: Lsp entry 5555.1111.1111.00-01 processed, NO exist in lsdb]{lang="EN-US"}]{#struct_0_16293_x2703_x1807141048}
+\*Apr  8 16:51:23:195 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 16:51:23:195 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+*[// CSNP*]*报文上的LSP摘要在LSDB中不存在*
 
-[*[// CSNP]{lang="EN-US"}*]{#struct_0_16293_x2703_510414530}*[报文上的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[摘要在]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[中不存在]{style="font-family:宋体"}*
+ISIS-1-SNP: Lsp entry 5555.1111.1111.01-00 processed, same as lsdb copy
 
-[[ISIS-1-SNP: Lsp entry 5555.1111.1111.01-00 processed, same as lsdb copy]{lang="EN-US"}]{#struct_0_16293_x2703_x1810605618}
+\*Apr  8 16:51:23:195 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 16:51:23:195 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-SNP: Lsp entry 7777.8888.1111.00-00 processed, same as lsdb copy
 
-[ISIS-1-SNP: Lsp entry 7777.8888.1111.00-00 processed, same as lsdb copy]{lang="EN-US"}
+\*Apr  8 16:51:24:151 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 16:51:24:151 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-SNP: Send L1 PSNP on circuit GigabitEthernet1/0/2
 
-[ISIS-1-SNP: Send L1 PSNP on circuit GigabitEthernet1/0/2]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x1599834243}*[发送]{style="font-family:宋体"}[PSNP]{lang="EN-US"}[报文]{style="font-family:宋体"}*
-
-::: {#-1697392765 .myid}
-[]{#_Toc404788110}[]{#struct_0_16293_x2703_1546352123}
+*// 发送PSNP报文*
 
 **IS-IS调试命令 \-- IS-IS调试命令 \-- debugging isis spf**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x327394959}
+【命令】
 
-[**[debugging]{lang="EN-US"}**[ **isis** **spf** \[ **pic** \| **verbose** \] \[ *process-id* \[ **ipv4** \[ **topology** *topo-name* \] \| **ipv6** \] \]]{lang="EN-US"}]{#struct_0_16293_x2703_1544957584}
+**[debugging**[ **isis** **spf** [ **pic** \| **verbose** ]  *process-id* [ **ipv4** [ **topology** *topo-name*  \| **ipv6** ] ]]]
 
-[**[undo]{lang="EN-US"}**[ **debugging** **spf** \[ **pic** \| **verbose**\] \[ *process-id* \[ **ipv4** \[ **topology** *topo-name* \] \| **ipv6** \] \]]{lang="EN-US"}]{#struct_0_16293_x2703_1276574639}
+**[undo**[ **debugging** **spf** [ **pic** \| **verbose**]  *process-id* [ **ipv4** [ **topology** *topo-name*  \| **ipv6** ] ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x257030449}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_16293_x2703_875622817}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1248336972}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16293_x2703_379650895}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16293_x2703_x327067279}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16293_x2703_1594657750}
+【参数】
 
-[**[pic]{lang="EN-US"}**]{#struct_0_16293_x2703_x1862261226}[：表]{style="font-family:宋体"}[示]{style="font-family:宋体"}[前缀无关收敛]{style="font-family:宋体"}[调试信息开关。]{style="font-family:宋体"}
+**[pic**]：表示前缀无关收敛调试信息开关。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_16293_x2703_215272706}[：表示路由计算详细调试信息开关。]{style="font-family:宋体"}
+**[verbose**]：表示路由计算详细调试信息开关。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1669273542}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535。
 
-[**[ipv4]{lang="EN-US"}**]{#struct_0_16293_x2703_x1862326762}[：打开]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[路由计算调试信息开关。]{style="font-family:宋体"}
+**[ipv4**]：打开IPv4路由计算调试信息开关。
 
-[**[topology]{lang="EN-US"}**[ *topo-name*]{lang="EN-US"}]{#struct_0_16293_x2703_2097965677}[：打开指定拓扑的路由计算调试信息开关。]{style="font-family:宋体"}*[topo-name]{lang="EN-US"}*[表示拓扑名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写；]{style="font-family:宋体"}**[base]{lang="EN-US"}**[为公网拓扑。如果未指定本参数，则表示打开公网的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[路由计算调试信息开关。]{style="font-family:宋体"}[本参数的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[topology** *topo-name*]：打开指定拓扑的路由计算调试信息开关。*topo-name*表示拓扑名，为1～31个字符的字符串，区分大小写；**base**为公网拓扑。如果未指定本参数，则表示打开公网的IPv4路由计算调试信息开关。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[ipv6]{lang="EN-US"}**]{#struct_0_16293_x2703_x958355283}[：打开]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[路由计算调试信息开关。]{style="font-family:宋体"}
+**[ipv6**]：打开IPv6路由计算调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x215670343}
+【描述】
 
-[**[debugging isis]{lang="EN-US"}**[ **spf**]{lang="EN-US"}]{#struct_0_16293_x2703_x27143453}[命令用来打开]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[路由计算调试信息开关。]{style="font-family:宋体"}**[undo debugging isis]{lang="EN-US"}**[ **spf**]{lang="EN-US"}[命令用来关闭]{style="font-family:
-宋体"}[IS-IS]{lang="EN-US"}[路由计算调试信息开关。]{style="font-family:宋体"}
+**[debugging isis** **spf**]命令用来打开IS-IS路由计算调试信息开关。**undo debugging isis** **spf**命令用来关闭IS-IS路由计算调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_x221588244}[路由计算调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，IS-IS路由计算调试信息开关处于关闭状态。
 
-[[如果未指定进程号，则打开所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_535012885}[进程的路由计算调试信息开关。]{style="font-family:宋体"}
+如果未指定进程号，则打开所有IS-IS进程的路由计算调试信息开关。
 
-[[表1-8 ]{lang="EN-US"}[debugging isis spf]{lang="EN-US"}]{#struct_0_16293_x2703_x327001743}[命令输出信息描述表]{style="font-family:黑体"}
+表1-8 debugging isis spf命令输出信息描述表
 
-[]{#table_struct_0_x461238792}[[字段]{style="font-family:黑体"}]{#struct_0_16293_x2703_x349539061}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16293_x2703_x497800540}
+描述
 
-[[ISIS- ]{lang="EN-US"}*[process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[) Trigger SPF at  Sec =]{lang="EN-US"}*[ xxx]{lang="EN-US"}*[, MSec =]{lang="EN-US"}[ *yyy*]{lang="EN-US"}]{#struct_0_16293_x2703_1511270053}
+ISIS- *process-id* -SPF: (MT *topoId*) Trigger SPF at  Sec =* xxx*, MSec = *yyy*
 
-[[触发路由计算时间]{style="font-family:宋体"}]{#struct_0_16293_x2703_1053689195}
+触发路由计算时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_812209427}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x327198351}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[xxx]{lang="EN-US"}*]{#struct_0_16293_x2703_x1979341398}[：秒值]{lang="EN-US" style="font-family:宋体"}
+·*xxx*：秒值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[yyy]{lang="EN-US"}*]{#struct_0_16293_x2703_139512889}[：毫秒值]{lang="EN-US" style="font-family:宋体"}
+·*yyy*：毫秒值
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[) SPF old scheduled event: ]{lang="EN-US"}*[triggerType]{lang="EN-US"}*[, new trigger event: ]{lang="EN-US"}*[triggerType]{lang="EN-US"}*]{#struct_0_16293_x2703_x1908231249}
+ISIS-* process-id* -SPF: (MT *topoId*) SPF old scheduled event: *triggerType*, new trigger event: *triggerType*
 
-[[开始新的触发，显示旧的和新的触发类型]{style="font-family:宋体"}]{#struct_0_16293_x2703_1018482232}
+开始新的触发，显示旧的和新的触发类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x327132815}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[topoId]{lang="EN-US"}]{#struct_0_16293_x2703_x1206785524}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·topoId：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[triggerType]{lang="EN-US"}*]{#struct_0_16293_x2703_123149050}[，触发类型，包括：全部路由计算、]{style="font-family:宋体"}[ISPF]{lang="EN-US"}[拓扑变化、区域地址变化、增量]{style="font-family:宋体"}[IP]{lang="EN-US"}[前缀计算、全部]{style="font-family:宋体"}[IP]{lang="EN-US"}[前缀计算、停止计算]{style="font-family:宋体"}
+·*triggerType*，触发类型，包括：全部路由计算、ISPF拓扑变化、区域地址变化、增量IP前缀计算、全部IP前缀计算、停止计算
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[) Total IPv4 route number less then maximum, SPF will be resche]{lang="EN-US"}]{#struct_0_16293_x2703_x2004151145}
+ISIS-* process-id* -SPF: (MT *topoId*) Total IPv4 route number less then maximum, SPF will be resche
 
-[[dule.  ]{lang="EN-US"}]{#struct_0_16293_x2703_x326805135}
+dule. 
 
-[[需要进行路由前缀超规格恢复计算]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1929665524}
+需要进行路由前缀超规格恢复计算
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x667519686}*[：]{lang="EN-US" style="font-family:
-  宋体"}*[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id**：*进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_989917423}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) SPF node Create root node ]{lang="EN-US"}*[sourceId]{lang="EN-US"}*[ Dist:]{lang="EN-US"}*[ distanceValue]{lang="EN-US"}*[ Nextho]{lang="EN-US"}]{#struct_0_16293_x2703_103958785}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) SPF node Create root node *sourceId* Dist:* distanceValue* Nextho
 
-[[ps: ]{lang="EN-US"}*[nexthopNum]{lang="EN-US"}*[ Nbrs:]{lang="EN-US"}*[ nbrNum]{lang="EN-US"}*[ Parents:]{lang="EN-US"}*[ parentNum]{lang="EN-US"}*[ Tree]{lang="EN-US"}]{#struct_0_16293_x2703_x326739599}
+ps: *nexthopNum* Nbrs:* nbrNum* Parents:* parentNum* Tree
 
-[[创建根节点]{style="font-family:宋体"}[SPFNODE]{lang="EN-US"}]{#struct_0_16293_x2703_1506286327}
+创建根节点SPFNODE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x672461473}*[：]{lang="EN-US" style="font-family:
-  宋体"}*[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id**：*进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_565284330}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x327329422}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1571939732}[：源系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*sourceId*：源系统ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[distanceValue]{lang="EN-US"}*]{#struct_0_16293_x2703_998584498}[：到达根结点的]{lang="EN-US" style="font-family:
-  宋体"}[cost]{lang="EN-US"}[值]{lang="EN-US" style="font-family:宋体"}
+·*distanceValue*：到达根结点的cost值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nexthopNum]{lang="EN-US"}*]{#struct_0_16293_x2703_2066114662}[：节点的下一跳数]{lang="EN-US" style="font-family:宋体"}
+·*nexthopNum*：节点的下一跳数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nbrNum]{lang="EN-US"}*]{#struct_0_16293_x2703_x327263886}[：节点的邻居数]{style="font-family:宋体"}
+·*nbrNum*：节点的邻居数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[parentNum]{lang="EN-US"}*]{#struct_0_16293_x2703_1537564287}[：父节点数]{lang="EN-US" style="font-family:宋体"}
+·*parentNum*：父节点数
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: SPF node (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) Adding system ]{lang="EN-US"}*[sourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1126743533}
+ISIS-* process-id* -SPF: SPF node (MT *topoId*)(L *sysLevel*) Adding system *sourceId*
 
-[[创建]{style="font-family:宋体"}[SPF]{lang="EN-US"}]{#struct_0_16293_x2703_535777988}[节点]{style="font-family:宋体"}
+创建SPF节点
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x327460494}*[：]{lang="EN-US" style="font-family:
-  宋体"}*[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id**：*进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x353042081}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x260962201}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_x327394958}[：源系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*sourceId*：源系统ID
 
-[[ISIS-]{lang="DA"}]{#struct_0_16293_x2703_1545023120}*[ process-id]{lang="DA"}*[ -SPF: SPF node (MT ]{lang="DA"}*[topoId]{lang="DA"}*[)(L ]{lang="DA"}*[sysLevel]{lang="DA"}*[) Deleting system ]{lang="DA"}*[sourceId]{lang="EN-US"}*[  ]{lang="DA"}
+ISIS-* process-id* -SPF: SPF node (MT *topoId*)(L *sysLevel*) Deleting system *sourceId*
 
-[[删除]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1054027972}[SPF]{lang="DA"}[节点]{style="font-family:宋体"}
+删除SPF节点
 
-[[·[       ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="DA"}*]{#struct_0_16293_x2703_x575148939}*[：]{lang="EN-US" style="font-family:宋体"}*[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id**：*进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="DA"}*]{#struct_0_16293_x2703_x327067278}[：]{lang="EN-US" style="font-family:宋体"}[拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="DA"}*]{#struct_0_16293_x2703_1594592214}[：]{lang="EN-US" style="font-family:宋体"}[系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}*[sourceId]{lang="DA"}*]{#struct_0_16293_x2703_1786080978}[：]{lang="EN-US" style="font-family:宋体"}[源系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="DA"}
+·*sourceId*：源系统ID
 
-[[ISIS-]{lang="DA"}]{#struct_0_16293_x2703_x327001742}*[ process-id]{lang="DA"}*[ -SPF: SPF node (MT ]{lang="DA"}*[topoId]{lang="DA"}*[)(L ]{lang="DA"}*[sysLevel]{lang="DA"}*[) Updating system ]{lang="DA"}*[sourceId]{lang="EN-US"}*[  ]{lang="EN-US"}[Overload]{lang="DA"}
+ISIS-* process-id* -SPF: SPF node (MT *topoId*)(L *sysLevel*) Updating system *sourceId*Overload
 
-[[更新]{style="font-family:宋体"}]{#struct_0_16293_x2703_x349604597}[SPF]{lang="DA"}[节点状态为]{style="font-family:宋体"}[Overload]{lang="DA"}
+更新SPF节点状态为Overload
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x410697941}*[：]{lang="EN-US" style="font-family:
-  宋体"}*[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id**：*进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x327198350}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x1979275862}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}*[sourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_x937897489}[：源系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*sourceId*：源系统ID
 
-[[ISIS-]{lang="DA"}]{#struct_0_16293_x2703_x327132814}*[ process-id]{lang="DA"}*[ -SPF: SPF node (MT ]{lang="DA"}*[topoId]{lang="DA"}*[)(L ]{lang="DA"}*[sysLevel]{lang="DA"}*[) Updating system ]{lang="DA"}*[sourceId]{lang="EN-US"}*
+ISIS-* process-id* -SPF: SPF node (MT *topoId*)(L *sysLevel*) Updating system *sourceId*
 
-[[更新]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1206719988}[SPF]{lang="DA"}[节点状态从]{style="font-family:宋体"}[Overload]{lang="DA"}[中恢复]{style="font-family:宋体"}
+更新SPF节点状态从Overload中恢复
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x2123221131}*[：]{lang="EN-US" style="font-family:
-  宋体"}*[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id**：*进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x326805134}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x1929731060}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}*[sourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_40298378}[：源系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*sourceId*：源系统ID
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) SPF node Set DIRECT flag on node. ]{lang="EN-US"}*[sourceId]{lang="EN-US"}*[  Dist:]{lang="EN-US"}]{#struct_0_16293_x2703_x326739598}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) SPF node Set DIRECT flag on node. *sourceId*  Dist:
 
-[*[distanceValue]{lang="EN-US"}*[ Nexthops:]{lang="EN-US"}*[ nexthopNum]{lang="EN-US"}*[ Nbrs:]{lang="EN-US"}*[ nbrNum]{lang="EN-US"}*[ Parents:]{lang="EN-US"}*[ parentNum]{lang="EN-US"}*[ Direct]{lang="EN-US"}]{#struct_0_16293_x2703_1506351863}
+*[distanceValue* Nexthops:* nexthopNum* Nbrs:* nbrNum* Parents:* parentNum* Direct]
 
-[[设置节点]{style="font-family:宋体"}[Direct]{lang="EN-US"}]{#struct_0_16293_x2703_964532393}[标志]{style="font-family:宋体"}
+设置节点Direct标志
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1594984882}*[：]{lang="EN-US" style="font-family:
-  宋体"}*[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id**：*进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x169399815}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_166785191}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_1595050418}[：源系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*sourceId*：源系统ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[distanceValue]{lang="EN-US"}*]{#struct_0_16293_x2703_608524461}[：到达根结点的]{lang="EN-US" style="font-family:
-  宋体"}[cost]{lang="EN-US"}[值]{lang="EN-US" style="font-family:宋体"}
+·*distanceValue*：到达根结点的cost值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nexthopNum]{lang="EN-US"}*]{#struct_0_16293_x2703_x1800786920}[：节点的下一跳数]{lang="EN-US" style="font-family:宋体"}
+·*nexthopNum*：节点的下一跳数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nbrNum]{lang="EN-US"}*]{#struct_0_16293_x2703_1594853810}[：节点的邻居数]{style="font-family:宋体"}
+·*nbrNum*：节点的邻居数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[parentNum]{lang="EN-US"}*]{#struct_0_16293_x2703_x2065696300}[：父节点数]{lang="EN-US" style="font-family:宋体"}
+·*parentNum*：父节点数
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: SPF link (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) Adding link ]{lang="EN-US"}*[sourceId]{lang="EN-US"}*[ \--\> ]{lang="EN-US"}*[destId]{lang="EN-US"}*[  Cost:*Cost*   ]{lang="EN-US"}]{#struct_0_16293_x2703_x367885919}
+ISIS-* process-id* -SPF: SPF link (MT *topoId*)(L *sysLevel*) Adding link *sourceId* \--\> *destId*  Cost:*Cost*  
 
-[[创建广播网]{style="font-family:宋体"}[Link]{lang="EN-US"}]{#struct_0_16293_x2703_1594919346}
+创建广播网Link
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x2077213162}*[：]{lang="EN-US" style="font-family:
-  宋体"}*[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id**：*进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_1595247026}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x1715221113}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_x955814259}[：源系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*sourceId*：源系统ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[destId]{lang="EN-US"}*]{#struct_0_16293_x2703_1595312562}[：目的系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*destId*：目的系统ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Cost]{lang="EN-US"}*]{#struct_0_16293_x2703_1394044827}[：]{style="font-family:宋体"}[路径开销值]{style="font-family:宋体"}
+·*Cost*：路径开销值
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: SPF link (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) Deleting link ]{lang="EN-US"}*[sourceId]{lang="EN-US"}*[ \--\> ]{lang="EN-US"}*[destId]{lang="EN-US"}*[  Cost:*Cost*]{lang="EN-US"}]{#struct_0_16293_x2703_1595115954}
+ISIS-* process-id* -SPF: SPF link (MT *topoId*)(L *sysLevel*) Deleting link *sourceId* \--\> *destId*  Cost:*Cost*
 
-[[删除广播网]{style="font-family:宋体"}[Link]{lang="EN-US"}]{#struct_0_16293_x2703_x140855711}
+删除广播网Link
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_259961856}*[：]{lang="EN-US" style="font-family:
-  宋体"}*[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id**：*进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_1595181490}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x2145721367}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_1595509170}[：源系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*sourceId*：源系统ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[destId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1286717805}[：目的系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*destId*：目的系统ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Cost]{lang="EN-US"}*]{#struct_0_16293_x2703_1595574706}[：]{style="font-family:宋体"}[路径开销值]{style="font-family:宋体"}
+·*Cost*：路径开销值
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: SPF link (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) Updating link ]{lang="EN-US"}*[sourceId]{lang="EN-US"}*[ \--\> ]{lang="EN-US"}*[destId]{lang="EN-US"}*[  Cost:*Cost*]{lang="EN-US"}]{#struct_0_16293_x2703_982788725}
+ISIS-* process-id* -SPF: SPF link (MT *topoId*)(L *sysLevel*) Updating link *sourceId* \--\> *destId*  Cost:*Cost*
 
-[[更新广播网]{style="font-family:宋体"}[Link]{lang="EN-US"}]{#struct_0_16293_x2703_x1835737640}
+更新广播网Link
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1594984883}*[：]{lang="EN-US" style="font-family:
-  宋体"}*[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id**：*进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x169334279}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_1595050419}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_608458925}[：源系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*sourceId*：源系统ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[destId]{lang="EN-US"}*]{#struct_0_16293_x2703_219228390}[：目的系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*destId*：目的系统ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Cost]{lang="EN-US"}*]{#struct_0_16293_x2703_1594853811}[：]{style="font-family:宋体"}[路径开销值]{style="font-family:宋体"}
+·*Cost*：路径开销值
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) I-SPF run started at  Sec = ]{lang="EN-US"}*[xxx]{lang="EN-US"}*[, MSec = ]{lang="EN-US"}*[yyy]{lang="EN-US"}*[.]{lang="EN-US"}]{#struct_0_16293_x2703_x2065761836}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) I-SPF run started at  Sec = *xxx*, MSec = *yyy*.
 
-[[ISPF]{lang="EN-US"}]{#struct_0_16293_x2703_1594919347}[路由计算开始时间]{style="font-family:宋体"}
+ISPF路由计算开始时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x2077278698}*[：]{lang="EN-US" style="font-family:
-  宋体"}*[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id**：*进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_1595247027}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x1715155577}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[xxx]{lang="EN-US"}*]{#struct_0_16293_x2703_1595312563}[：秒值]{lang="EN-US" style="font-family:宋体"}
+·*xxx*：秒值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[yyy]{lang="EN-US"}*]{#struct_0_16293_x2703_1393979291}[：毫秒值]{lang="EN-US" style="font-family:宋体"}
+·*yyy*：毫秒值
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: Checking changed links.]{lang="EN-US"}]{#struct_0_16293_x2703_1595115955}
+ISIS-* process-id* -SPF: Checking changed links.
 
-[[处理变化]{style="font-family:宋体"}[Link]{lang="EN-US"}]{#struct_0_16293_x2703_x140921247}[，决定是否需要重构]{style="font-family:宋体"}[SPF]{lang="EN-US"}[树]{style="font-family:宋体"}
+处理变化Link，决定是否需要重构SPF树
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1030915658}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: Need rebuild SPT.  ]{lang="EN-US"}]{#struct_0_16293_x2703_1595181491}
+ISIS-* process-id* -SPF: Need rebuild SPT. 
 
-[[需要重构]{style="font-family:宋体"}[SPF]{lang="EN-US"}]{#struct_0_16293_x2703_x2145655831}[树]{style="font-family:宋体"}
+需要重构SPF树
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1595509171}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: Processing links with change flags.]{lang="EN-US"}]{#struct_0_16293_x2703_x1286652269}
+ISIS-* process-id* -SPF: Processing links with change flags.
 
-[[无需重构]{style="font-family:宋体"}[SPF]{lang="EN-US"}]{#struct_0_16293_x2703_1595574707}[树，仅处理协议使用、下一跳变化]{style="font-family:宋体"}
+无需重构SPF树，仅处理协议使用、下一跳变化
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_982723189}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) Running full SPF.]{lang="EN-US"}]{#struct_0_16293_x2703_1594984880}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) Running full SPF.
 
-[[开始全部]{style="font-family:宋体"}[SPF]{lang="EN-US"}]{#struct_0_16293_x2703_x169268743}[计算]{style="font-family:宋体"}
+开始全部SPF计算
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1595050416}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_609441965}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_1594853808}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[) Begin Level-]{lang="EN-US"}*[ sysLevel]{lang="EN-US"}*[ SPF from root node.]{lang="EN-US"}]{#struct_0_16293_x2703_x2066220589}
+ISIS-* process-id* -SPF: (MT *topoId*) Begin Level-* sysLevel* SPF from root node.
 
-[[从根节点开始进行]{style="font-family:宋体"}[SPF]{lang="EN-US"}]{#struct_0_16293_x2703_1594919344}[计算]{style="font-family:宋体"}
+从根节点开始进行SPF计算
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x2077344234}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_1595247024}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x1715090041}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) SPF node Node is added into SPT. ]{lang="EN-US"}*[sourceId]{lang="EN-US"}*[ Dist:]{lang="EN-US"}*[ distanceValue]{lang="EN-US"}*[ Nexthops:]{lang="EN-US"}*[ nexthopNum]{lang="EN-US"}*[ Nbrs:]{lang="EN-US"}*[ nbrNum]{lang="EN-US"}*[ Parents:]{lang="EN-US"}*[ parentNum]{lang="EN-US"}*[ Tree  ]{lang="EN-US"}]{#struct_0_16293_x2703_1595312560}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) SPF node Node is added into SPT. *sourceId* Dist:* distanceValue* Nexthops:* nexthopNum* Nbrs:* nbrNum* Parents:* parentNum* Tree 
 
-[[把]{style="font-family:宋体"}[TentList]{lang="EN-US"}]{#struct_0_16293_x2703_1393913755}[中的节点加入到]{style="font-family:宋体"}[SPT]{lang="EN-US"}[树中]{style="font-family:宋体"}
+把TentList中的节点加入到SPT树中
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1595115952}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x140462495}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_1595181488}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_x2146245654}[：源系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*sourceId*：源系统ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[distanceValue]{lang="EN-US"}*]{#struct_0_16293_x2703_1595509168}[：到达根结点的]{lang="EN-US" style="font-family:
-  宋体"}[cost]{lang="EN-US"}[值]{lang="EN-US" style="font-family:宋体"}
+·*distanceValue*：到达根结点的cost值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nexthopNum]{lang="EN-US"}*]{#struct_0_16293_x2703_x1286193516}[：节点的下一跳数]{lang="EN-US" style="font-family:宋体"}
+·*nexthopNum*：节点的下一跳数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nbrNum]{lang="EN-US"}*]{#struct_0_16293_x2703_1595574704}[：节点的邻居数]{style="font-family:宋体"}
+·*nbrNum*：节点的邻居数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[parentNum]{lang="EN-US"}*]{#struct_0_16293_x2703_1594984881}[：父节点数]{lang="EN-US" style="font-family:宋体"}
+·*parentNum*：父节点数
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF:  New distance is ]{lang="EN-US"}*[distanceValue]{lang="EN-US"}*[.  ]{lang="EN-US"}]{#struct_0_16293_x2703_x169203207}
+ISIS-* process-id* -SPF:  New distance is *distanceValue*. 
 
-[[到根结点的新]{style="font-family:宋体"}[Distance]{lang="EN-US"}]{#struct_0_16293_x2703_1595050417}
+到根结点的新Distance
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_609376429}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[distanceValue]{lang="EN-US"}*]{#struct_0_16293_x2703_1594853809}[：到达根结点的]{lang="EN-US" style="font-family:
-  宋体"}[cost]{lang="EN-US"}[值]{lang="EN-US" style="font-family:宋体"}
+·*distanceValue*：到达根结点的cost值
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF:  Less cost, add node to TENT HEAP.]{lang="EN-US"}]{#struct_0_16293_x2703_x2066286125}
+ISIS-* process-id* -SPF:  Less cost, add node to TENT HEAP.
 
-[[子结点到根结点的]{style="font-family:宋体"}[Distance]{lang="EN-US"}]{#struct_0_16293_x2703_1594919345}[小]{style="font-family:宋体"}
+子结点到根结点的Distance小
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x2077409770}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF:  Equal cost, add node to TENT HEAP.]{lang="EN-US"}]{#struct_0_16293_x2703_1595247025}
+ISIS-* process-id* -SPF:  Equal cost, add node to TENT HEAP.
 
-[[子结点到根结点的]{style="font-family:宋体"}[Distance]{lang="EN-US"}]{#struct_0_16293_x2703_1595312561}[相同]{style="font-family:宋体"}
+子结点到根结点的Distance相同
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1393848219}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) SPF node Son node update to TENT list ]{lang="EN-US"}*[sourceId]{lang="EN-US"}*[ D]{lang="EN-US"}]{#struct_0_16293_x2703_1595115953}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) SPF node Son node update to TENT list *sourceId* D
 
-[[ist:]{lang="EN-US"}*[ distanceValue]{lang="EN-US"}*[ Nexthops:]{lang="EN-US"}*[ nexthopNum]{lang="EN-US"}*[ Nbrs:]{lang="EN-US"}*[ nbrNum]{lang="EN-US"}*[ Parents:]{lang="EN-US"}*[ parentNum]{lang="EN-US"}*[ Tent Direct]{lang="EN-US"}]{#struct_0_16293_x2703_x140528031}
+ist:* distanceValue* Nexthops:* nexthopNum* Nbrs:* nbrNum* Parents:* parentNum* Tent Direct
 
-[[把节点加入到]{style="font-family:宋体"}[TentList]{lang="EN-US"}]{#struct_0_16293_x2703_1595181489}[中]{style="font-family:宋体"}
+把节点加入到TentList中
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1595509169}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1286127980}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_1595574705}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_982854261}[：源系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*sourceId*：源系统ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[distanceValue]{lang="EN-US"}*]{#struct_0_16293_x2703_1594984878}[：到达根结点的]{lang="EN-US" style="font-family:
-  宋体"}[cost]{lang="EN-US"}[值]{lang="EN-US" style="font-family:宋体"}
+·*distanceValue*：到达根结点的cost值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nexthopNum]{lang="EN-US"}*]{#struct_0_16293_x2703_x169793034}[：节点的下一跳数]{lang="EN-US" style="font-family:宋体"}
+·*nexthopNum*：节点的下一跳数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nbrNum]{lang="EN-US"}*]{#struct_0_16293_x2703_1595050414}[：节点的邻居数]{style="font-family:宋体"}
+·*nbrNum*：节点的邻居数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[parentNum]{lang="EN-US"}*]{#struct_0_16293_x2703_1594853806}[：父节点数]{lang="EN-US" style="font-family:宋体"}
+·*parentNum*：父节点数
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: Link is backard link, ignore.]{lang="EN-US"}]{#struct_0_16293_x2703_x2065303085}
+ISIS-* process-id* -SPF: Link is backard link, ignore.
 
-[[忽略回指]{style="font-family:宋体"}[Link]{lang="EN-US"}]{#struct_0_16293_x2703_1594919342}[的处理]{style="font-family:宋体"}
+忽略回指Link的处理
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x2076951018}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: Node is Overload. Ignore its nbrs.]{lang="EN-US"}]{#struct_0_16293_x2703_1595247022}
+ISIS-* process-id* -SPF: Node is Overload. Ignore its nbrs.
 
-[[当前节点]{style="font-family:宋体"}[Overload]{lang="EN-US"}]{#struct_0_16293_x2703_1595312558}[，则忽略其邻居]{style="font-family:宋体"}
+当前节点Overload，则忽略其邻居
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1394438044}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[) Merge nexthop from root node IPV4:]{lang="EN-US"}*[ nexthopNum1 ]{lang="EN-US"}*[/]{lang="EN-US"}*[ nexthopNum2]{lang="EN-US"}*]{#struct_0_16293_x2703_1595115950}
+ISIS-* process-id* -SPF: (MT *topoId*) Merge nexthop from root node IPV4:* nexthopNum1 */* nexthopNum2*
 
-[[从根节点上继承下一跳]{style="font-family:宋体"}]{#struct_0_16293_x2703_1595181486}
+从根节点上继承下一跳
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x2146114582}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_1595509166}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nexthopNum1]{lang="EN-US"}*]{#struct_0_16293_x2703_x1287111020}[：根节点下]{lang="EN-US" style="font-family:
-  宋体"}[Link]{lang="EN-US"}[上的下一跳数]{lang="EN-US" style="font-family:宋体"}
+·*nexthopNum1*：根节点下Link上的下一跳数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nexthopNum2]{lang="EN-US"}*]{#struct_0_16293_x2703_1595574702}[：子节点上的下一跳数]{lang="EN-US" style="font-family:
-  宋体"}
+·*nexthopNum2*：子节点上的下一跳数
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[) Merge nexthop from parent node IPV4:]{lang="EN-US"}*[ nexthopNum]{lang="EN-US"}*]{#struct_0_16293_x2703_1594984879}
+ISIS-* process-id* -SPF: (MT *topoId*) Merge nexthop from parent node IPV4:* nexthopNum*
 
-[[从父节点上继承下一跳]{style="font-family:宋体"}]{#struct_0_16293_x2703_x169727498}
+从父节点上继承下一跳
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1595050415}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_1594853807}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nexthopNum]{lang="EN-US"}*]{#struct_0_16293_x2703_x2065368621}[：父节点上的下一跳数]{lang="EN-US" style="font-family:宋体"}
+·*nexthopNum*：父节点上的下一跳数
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: Inform SPF nodes change to PAC&PRC.]{lang="EN-US"}]{#struct_0_16293_x2703_1594919343}
+ISIS-* process-id* -SPF: Inform SPF nodes change to PAC&PRC.
 
-[[处理]{style="font-family:宋体"}[SpfNode]{lang="EN-US"}]{#struct_0_16293_x2703_1595247023}[节点变化提交]{style="font-family:宋体"}[PAC]{lang="EN-US"}[和]{style="font-family:宋体"}[PRC]{lang="EN-US"}[处理]{style="font-family:宋体"}
+处理SpfNode节点变化提交PAC和PRC处理
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1715417721}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) I-SPF run ended at  Sec = ]{lang="EN-US"}*[xxx]{lang="EN-US"}*[, MSec = ]{lang="EN-US"}*[yyy]{lang="EN-US"}*[.]{lang="EN-US"}]{#struct_0_16293_x2703_1595312559}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) I-SPF run ended at  Sec = *xxx*, MSec = *yyy*.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ISPF]{lang="EN-US"}]{#struct_0_16293_x2703_1595115951}[路由计算结束时间]{style="font-family:宋体"}
+·ISPF路由计算结束时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x140659103}*[：]{lang="EN-US" style="font-family:
-  宋体"}*[进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id**：*进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_1595181487}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_1595509167}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[xxx]{lang="EN-US"}*]{#struct_0_16293_x2703_x1287045484}[：秒值]{lang="EN-US" style="font-family:宋体"}
+·*xxx*：秒值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[yyy]{lang="EN-US"}*]{#struct_0_16293_x2703_1595574703}[：毫秒值]{lang="EN-US" style="font-family:宋体"}
+·*yyy*：毫秒值
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: AREA: Updating (L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) areas:                                         ]{lang="EN-US"}]{#struct_0_16293_x2703_x1133898473}
+ISIS-* process-id* -SPF: AREA: Updating (L *sysLevel*) areas:                                        
 
-[[          New areas: \[]{lang="EN-US"}*[newareaAddress]{lang="EN-US"}*[\]\[ ]{lang="EN-US"}*[newareaAddress]{lang="EN-US"}*[\] \[]{lang="EN-US"}*[newareaAddress]{lang="EN-US"}*[\].                                                           ]{lang="EN-US"}]{#struct_0_16293_x2703_x1133832937}
+          New areas: \*newareaAddress*\*newareaAddress* \*newareaAddress*.                                                          
 
-[[          Old areas:\[ ]{lang="EN-US"}*[oldareaAddress]{lang="EN-US"}*[\]\[ ]{lang="EN-US"}*[oldareaAddress]{lang="EN-US"}*[\] \[]{lang="EN-US"}*[oldareaAddress]{lang="EN-US"}*[\].]{lang="EN-US"}]{#struct_0_16293_x2703_2006985280}
+          Old areas:\*oldareaAddress*\*oldareaAddress* \*oldareaAddress*.
 
-[[更新区域地址，显示旧的和新的区域地址信息]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1134029545}
+更新区域地址，显示旧的和新的区域地址信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133964009}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_1580435078}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[newareaAddress]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133636329}[：新区域地址]{lang="EN-US" style="font-family:
-  宋体"}
+·*newareaAddress*：新区域地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[oldareaAddress]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133570793}[：旧区域地址]{lang="EN-US" style="font-family:
-  宋体"}
+·*oldareaAddress*：旧区域地址
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) Install one area: ]{lang="EN-US"}*[areaAddress]{lang="EN-US"}*[.]{lang="EN-US"}]{#struct_0_16293_x2703_x1133767401}
+ISIS-* process-id* -SPF: (L *sysLevel*) Install one area: *areaAddress*.
 
-[[加入一个新的区域地址]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1943655582}
+加入一个新的区域地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133701865}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133374185}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[areaAddress]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133308649}[：区域地址]{lang="EN-US" style="font-family:
-  宋体"}
+·*areaAddress*：区域地址
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) Remove one area: ]{lang="EN-US"}*[areaAddress]{lang="EN-US"}*[.  ]{lang="EN-US"}]{#struct_0_16293_x2703_x91176890}
+ISIS-* process-id* -SPF: (L *sysLevel*) Remove one area: *areaAddress*. 
 
-[[删除一个区域地址]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1133898472}
+删除一个区域地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133832936}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x1134029544}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[areaAddress]{lang="EN-US"}*]{#struct_0_16293_x2703_x788675377}[：区域地址]{lang="EN-US" style="font-family:
-  宋体"}
+·*areaAddress*：区域地址
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) AREA run started at  Sec = ]{lang="EN-US"}*[xxx]{lang="EN-US"}*[, MSec = ]{lang="EN-US"}*[yyy]{lang="EN-US"}*[.]{lang="EN-US"}]{#struct_0_16293_x2703_x1133964008}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) AREA run started at  Sec = *xxx*, MSec = *yyy*.
 
-[[区域地址计算开始时间]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1133636328}
+区域地址计算开始时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[process-id]{lang="EN-US"}]{#struct_0_16293_x2703_x1133570792}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·process-id：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[topoId]{lang="EN-US"}]{#struct_0_16293_x2703_1580657753}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·topoId：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[sysLevel]{lang="EN-US"}]{#struct_0_16293_x2703_x1133767400}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·sysLevel：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[xxx]{lang="EN-US"}]{#struct_0_16293_x2703_x1133701864}[：秒值]{lang="EN-US" style="font-family:宋体"}
+·xxx：秒值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[yyy]{lang="EN-US"}]{#struct_0_16293_x2703_x1133374184}[：毫秒值]{lang="EN-US" style="font-family:宋体"}
+·yyy：毫秒值
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) Processing increment area address calculating.]{lang="EN-US"}]{#struct_0_16293_x2703_x1133308648}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) Processing increment area address calculating.
 
-[[处理区域地址变化]{style="font-family:宋体"}]{#struct_0_16293_x2703_1474907051}
+处理区域地址变化
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133898475}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133832939}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x1134029547}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) Area Addr: ]{lang="EN-US"}*[areaAddress]{lang="EN-US"}*[ is available.]{lang="EN-US"}]{#struct_0_16293_x2703_x1133964011}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) Area Addr: *areaAddress* is available.
 
-[[区域地址有效]{style="font-family:宋体"}]{#struct_0_16293_x2703_1936599902}
+区域地址有效
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133636331}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133570795}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133767403}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[areaAddress]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133701867}[：区域地址]{lang="EN-US" style="font-family:
-  宋体"}
+·*areaAddress*：区域地址
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) Area Addr: ]{lang="EN-US"}*[areaAddress]{lang="EN-US"}*[ is available.]{lang="EN-US"}]{#struct_0_16293_x2703_x587374642}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) Area Addr: *areaAddress* is available.
 
-[[区域地址无效]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1133374187}
+区域地址无效
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133308651}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133898474}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133832938}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[areaAddress]{lang="EN-US"}*]{#struct_0_16293_x2703_x1134029546}[：区域地址]{lang="EN-US" style="font-family:
-  宋体"}
+·*areaAddress*：区域地址
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[) Updating computed areas into L2 LSDB.]{lang="EN-US"}]{#struct_0_16293_x2703_374124037}
+ISIS-* process-id* -SPF: (MT *topoId*) Updating computed areas into L2 LSDB.
 
-[[往]{style="font-family:宋体"}[L2]{lang="EN-US"}]{#struct_0_16293_x2703_x1133964010}[的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[中更新区域地址]{style="font-family:宋体"}
+往L2的LSP中更新区域地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133636330}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133570794}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[) Attach bit is set in running SPF.]{lang="EN-US"}]{#struct_0_16293_x2703_x1133767402}
+ISIS-* process-id* -SPF: (MT *topoId*) Attach bit is set in running SPF.
 
-[[区域地址计算中设置]{style="font-family:宋体"}[ATT]{lang="EN-US"}]{#struct_0_16293_x2703_x1133701866}[位]{style="font-family:宋体"}
+区域地址计算中设置ATT位
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133374186}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1268508185}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[) Attach bit is cleared in running SPF.]{lang="EN-US"}]{#struct_0_16293_x2703_x1133308650}
+ISIS-* process-id* -SPF: (MT *topoId*) Attach bit is cleared in running SPF.
 
-[[区域地址计算中清除]{style="font-family:宋体"}[ATT]{lang="EN-US"}]{#struct_0_16293_x2703_x1133898477}[位]{style="font-family:宋体"}
+区域地址计算中清除ATT位
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133832941}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1134029549}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[) Area Addr: ]{lang="EN-US"}*[areaAddress]{lang="EN-US"}*[ is adevertised to L2.]{lang="EN-US"}]{#struct_0_16293_x2703_x1133964013}
+ISIS-* process-id* -SPF: (MT *topoId*) Area Addr: *areaAddress* is adevertised to L2.
 
-[[区域地址在]{style="font-family:宋体"}[L2LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x1133636333}[中的发布]{style="font-family:宋体"}
+区域地址在L2LSP中的发布
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133570797}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_821142866}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[areaAddress]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133767405}[：区域地址]{lang="EN-US" style="font-family:
-  宋体"}
+·*areaAddress*：区域地址
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[) Area Addr: ]{lang="EN-US"}*[areaAddress]{lang="EN-US"}*[ is not adevertised to L2.]{lang="EN-US"}]{#struct_0_16293_x2703_x1133701869}
+ISIS-* process-id* -SPF: (MT *topoId*) Area Addr: *areaAddress* is not adevertised to L2.
 
-[[区域地址撤销在]{style="font-family:宋体"}[L2LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x1133374189}[中的发布]{style="font-family:宋体"}
+区域地址撤销在L2LSP中的发布
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133308653}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133898476}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[areaAddress]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133832940}[：区域地址]{lang="EN-US" style="font-family:
-  宋体"}
+·*areaAddress*：区域地址
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) AREA run ended at  Sec = ]{lang="EN-US"}*[xxx]{lang="EN-US"}*[, MSec = ]{lang="EN-US"}*[yyy]{lang="EN-US"}*[.]{lang="EN-US"}]{#struct_0_16293_x2703_x1134029548}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) AREA run ended at  Sec = *xxx*, MSec = *yyy*.
 
-[[区域地址计算结束时间]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1133964012}
+区域地址计算结束时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1133636332}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[topoId]{lang="EN-US"}]{#struct_0_16293_x2703_1887947881}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·topoId：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[sysLevel]{lang="EN-US"}]{#struct_0_16293_x2703_x1133570796}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·sysLevel：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[xxx]{lang="EN-US"}]{#struct_0_16293_x2703_x1133767404}[：秒值]{lang="EN-US" style="font-family:宋体"}
+·xxx：秒值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[yyy]{lang="EN-US"}]{#struct_0_16293_x2703_x1133701868}[：毫秒值]{lang="EN-US" style="font-family:宋体"}
+·yyy：毫秒值
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) Adding prefix for ]{lang="EN-US"}*[ipPrefix]{lang="EN-US"}*[ / *subMask* from *sourceId*, into forwarding table.]{lang="EN-US"}]{#struct_0_16293_x2703_x1133374188}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) Adding prefix for *ipPrefix* / *subMask* from *sourceId*, into forwarding table.
 
-[[往]{style="font-family:宋体"}[ISIS L1/L2]{lang="EN-US"}]{#struct_0_16293_x2703_x1133308652}[路由表中加入当前节点的]{style="font-family:宋体"}[IP]{lang="EN-US"}[前缀]{style="font-family:宋体"}
+往ISIS L1/L2路由表中加入当前节点的IP前缀
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1245373658}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_1245308122}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_1245242586}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipPrefix]{lang="EN-US"}*]{#struct_0_16293_x2703_1245177050}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀]{lang="EN-US" style="font-family:宋体"}
+·*ipPrefix*：IP地址前缀
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[subMask]{lang="EN-US"}*]{#struct_0_16293_x2703_1245111514}[：子网掩码]{lang="EN-US" style="font-family:宋体"}
+·*subMask*：子网掩码
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_1245045978}[：源系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*sourceId*：源系统ID
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) Deleting prefix for ]{lang="EN-US"}*[ipPrefix]{lang="EN-US"}*[ / *subMask*, from forw]{lang="EN-US"}]{#struct_0_16293_x2703_1244980442}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) Deleting prefix for *ipPrefix* / *subMask*, from forw
 
-[[arding table.  ]{lang="EN-US"}]{#struct_0_16293_x2703_1244914906}
+arding table. 
 
-[[从]{style="font-family:宋体"}[ISIS L1/L2]{lang="EN-US"}]{#struct_0_16293_x2703_1245897946}[路由表中删除]{style="font-family:宋体"}[IP]{lang="EN-US"}[前缀]{style="font-family:宋体"}
+从ISIS L1/L2路由表中删除IP前缀
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1245832410}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x329098857}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_1245373659}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipPrefix]{lang="EN-US"}*]{#struct_0_16293_x2703_1245308123}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀]{lang="EN-US" style="font-family:宋体"}
+·*ipPrefix*：IP地址前缀
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[subMask]{lang="EN-US"}*]{#struct_0_16293_x2703_1245242587}[：子网掩码]{lang="EN-US" style="font-family:宋体"}
+·*subMask*：子网掩码
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) Modifying prefix for ]{lang="EN-US"}*[ipPrefix]{lang="EN-US"}*[ / *subMask*, in forw]{lang="EN-US"}]{#struct_0_16293_x2703_1245177051}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) Modifying prefix for *ipPrefix* / *subMask*, in forw
 
-[[arding table.]{lang="EN-US"}]{#struct_0_16293_x2703_1245111515}
+arding table.
 
-[[往]{style="font-family:宋体"}[ISIS]{lang="EN-US"}]{#struct_0_16293_x2703_1245045979}[路由表中更改]{style="font-family:宋体"}[IP]{lang="EN-US"}[前缀]{style="font-family:宋体"}
+往ISIS路由表中更改IP前缀
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1244980443}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_1244914907}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_1245897947}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipPrefix]{lang="EN-US"}*]{#struct_0_16293_x2703_1245832411}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀]{lang="EN-US" style="font-family:宋体"}
+·*ipPrefix*：IP地址前缀
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[subMask]{lang="EN-US"}*]{#struct_0_16293_x2703_1245373656}[：子网掩码]{lang="EN-US" style="font-family:宋体"}
+·*subMask*：子网掩码
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) PRC run started at  Sec = ]{lang="EN-US"}*[xxx]{lang="EN-US"}*[, MSec = ]{lang="EN-US"}*[yyy]{lang="EN-US"}*[.]{lang="EN-US"}]{#struct_0_16293_x2703_1245308120}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) PRC run started at  Sec = *xxx*, MSec = *yyy*.
 
-[[PRC]{lang="EN-US"}]{#struct_0_16293_x2703_1245242584}[计算开始时间]{style="font-family:宋体"}
+PRC计算开始时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1245177048}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_1245111512}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_1245045976}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[xxx]{lang="EN-US"}*]{#struct_0_16293_x2703_1244980440}[：秒值]{lang="EN-US" style="font-family:宋体"}
+·*xxx*：秒值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[yyy]{lang="EN-US"}*]{#struct_0_16293_x2703_1244914904}[：毫秒值]{lang="EN-US" style="font-family:宋体"}
+·*yyy*：毫秒值
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) Processing increment IPV4 prefix calculating.]{lang="EN-US"}]{#struct_0_16293_x2703_1245897944}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) Processing increment IPV4 prefix calculating.
 
-[[计算变化的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}]{#struct_0_16293_x2703_1245832408}[路由前缀]{style="font-family:宋体"}
+计算变化的IPv4路由前缀
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1245373657}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_1245308121}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_1245242585}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) Processing full ipv4 prefix calculating.]{lang="EN-US"}]{#struct_0_16293_x2703_1245111513}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) Processing full ipv4 prefix calculating.
 
-[[处理]{style="font-family:宋体"}[IPv4]{lang="EN-US"}]{#struct_0_16293_x2703_1245045977}[路由前缀变化链表，计算全部]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[路由前缀]{style="font-family:宋体"}
+处理IPv4路由前缀变化链表，计算全部IPv4路由前缀
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1244980441}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_1244914905}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_1245897945}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) PRC run ended at  Sec = ]{lang="EN-US"}*[xxx]{lang="EN-US"}*[, MSec = ]{lang="EN-US"}*[yyy]{lang="EN-US"}*[.]{lang="EN-US"}]{#struct_0_16293_x2703_1245832409}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) PRC run ended at  Sec = *xxx*, MSec = *yyy*.
 
-[[PRC]{lang="EN-US"}]{#struct_0_16293_x2703_1245373654}[计算结束时间]{style="font-family:宋体"}
+PRC计算结束时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1245308118}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_1245242582}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_1245177046}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[xxx]{lang="EN-US"}*]{#struct_0_16293_x2703_1245111510}[：秒值]{lang="EN-US" style="font-family:宋体"}
+·*xxx*：秒值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[yyy]{lang="EN-US"}*]{#struct_0_16293_x2703_1245045974}[：毫秒值]{lang="EN-US" style="font-family:宋体"}
+·*yyy*：毫秒值
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[) All phases of SPF work completed at  Sec = ]{lang="EN-US"}*[xxx]{lang="EN-US"}*[, MSec = ]{lang="EN-US"}*[yyy]{lang="EN-US"}*[.]{lang="EN-US"}]{#struct_0_16293_x2703_1244980438}
+ISIS-* process-id* -SPF: (MT *topoId*) All phases of SPF work completed at  Sec = *xxx*, MSec = *yyy*.
 
-[[路由计算所有阶段全部完成时间]{style="font-family:宋体"}]{#struct_0_16293_x2703_1244914902}
+路由计算所有阶段全部完成时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1245897942}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_1245832406}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[xxx]{lang="EN-US"}*]{#struct_0_16293_x2703_1245373655}[：秒值]{lang="EN-US" style="font-family:宋体"}
+·*xxx*：秒值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[yyy]{lang="EN-US"}*]{#struct_0_16293_x2703_1245308119}[：毫秒值]{lang="EN-US" style="font-family:宋体"}
+·*yyy*：毫秒值
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) Exceeded SPF slice time while processing IPV4 PRC.]{lang="EN-US"}]{#struct_0_16293_x2703_1245242583}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) Exceeded SPF slice time while processing IPV4 PRC.
 
-[[处理]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_16293_x2703_1245177047}[前缀路由计算时超过了]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[路由计算分片时间]{style="font-family:宋体"}
+处理IP前缀路由计算时超过了IS-IS路由计算分片时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1245111511}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_1245045975}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_1244914903}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) Number of IPV4 routes exceed limit!]{lang="EN-US"}]{#struct_0_16293_x2703_1245897943}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) Number of IPV4 routes exceed limit!
 
-[[路由条数超过规格限制]{style="font-family:宋体"}]{#struct_0_16293_x2703_1245832407}
+路由条数超过规格限制
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483509697}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483575233}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483640769}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) Processing full prefix calculating.]{lang="EN-US"}]{#struct_0_16293_x2703_x1483706305}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) Processing full prefix calculating.
 
-[[处理全部前缀计算]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1483771841}
+处理全部前缀计算
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483902913}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483968449}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x1482985409}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[ISIS-]{lang="EN-US"}*[ process-id]{lang="EN-US"}*[ -SPF: (MT ]{lang="EN-US"}*[topoId]{lang="EN-US"}*[)(L ]{lang="EN-US"}*[sysLevel]{lang="EN-US"}*[) Exceeded SPF slice time when full processing prefix calculating]{lang="EN-US"}]{#struct_0_16293_x2703_x1483050945}
+ISIS-* process-id* -SPF: (MT *topoId*)(L *sysLevel*) Exceeded SPF slice time when full processing prefix calculating
 
-[[处理全部前缀计算时间到达限制]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1483509696}
+处理全部前缀计算时间到达限制
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483575232}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483640768}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483771840}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[ISIS- *process-id* -SPF: (MT *topoId*) Sync route\[*acction*\] *ipPrefix* / *subMask*  to rib]{lang="EN-US"}]{#struct_0_16293_x2703_x1483837376}
+ISIS- *process-id* -SPF: (MT *topoId*) Sync route*acction* *ipPrefix* / *subMask*  to rib
 
-[[同步路由到路由表]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1483902912}
+同步路由到路由表
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483968448}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[action]{lang="EN-US"}*]{#struct_0_16293_x2703_x1482985408}[：添加，删除或修改路由]{lang="EN-US" style="font-family:宋体"}
+·*action*：添加，删除或修改路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipPrefix]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483050944}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀]{lang="EN-US" style="font-family:宋体"}
+·*ipPrefix*：IP地址前缀
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[subMask]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483575235}[：子网掩码]{lang="EN-US" style="font-family:宋体"}
+·*subMask*：子网掩码
 
-[[(MT *topoId*)(L *sysLevel*) Deleted route *ipPrefix* / *subMask*  PIC backup flag in source *sourceId*.]{lang="EN-US"}]{#struct_0_16293_x2703_2029356004}
+(MT *topoId*)(L *sysLevel*) Deleted route *ipPrefix* / *subMask*  PIC backup flag in source *sourceId*.
 
-[[删除]{style="font-family:宋体"}[PIC]{lang="EN-US"}]{#struct_0_16293_x2703_2029552612}[备份标记]{style="font-family:宋体"}
+删除PIC备份标记
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_2029487076}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_2030207972}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipPrefix]{lang="EN-US"}*]{#struct_0_16293_x2703_2030142436}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀]{lang="EN-US" style="font-family:宋体"}
+·*ipPrefix*：IP地址前缀
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[subMask]{lang="EN-US"}*]{#struct_0_16293_x2703_2029683685}[：子网掩码]{lang="EN-US" style="font-family:宋体"}
+·*subMask*：子网掩码
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_2029814757}[：源系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*sourceId*：源系统ID
 
-[[(MT *topoId*)(L *sysLevel*) Deleted PIC backup flag in source *sourceId* while route *ipPrefix* / *subMask* was deactivated.]{lang="EN-US"}]{#struct_0_16293_x2703_2029749221}
+(MT *topoId*)(L *sysLevel*) Deleted PIC backup flag in source *sourceId* while route *ipPrefix* / *subMask* was deactivated.
 
-[[当原路由无效时，删除]{style="font-family:宋体"}[PIC]{lang="EN-US"}]{#struct_0_16293_x2703_2029421541}[备份标记]{style="font-family:宋体"}
+当原路由无效时，删除PIC备份标记
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_2029356005}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_2029552613}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipPrefix]{lang="EN-US"}*]{#struct_0_16293_x2703_2030207973}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀]{lang="EN-US" style="font-family:宋体"}
+·*ipPrefix*：IP地址前缀
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[subMask]{lang="EN-US"}*]{#struct_0_16293_x2703_2030142437}[：子网掩码]{lang="EN-US" style="font-family:宋体"}
+·*subMask*：子网掩码
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_2029683686}[：源系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*sourceId*：源系统ID
 
-[[(MT *topoId*)(L *sysLevel*) Added route to RIB with relay NIB ID *nibId*, destination: *ipPrefix*.]{lang="EN-US"}]{#struct_0_16293_x2703_2029618150}
+(MT *topoId*)(L *sysLevel*) Added route to RIB with relay NIB ID *nibId*, destination: *ipPrefix*.
 
-[[添加路由信息至]{style="font-family:宋体"}[RIB]{lang="EN-US"}]{#struct_0_16293_x2703_2029814758}
+添加路由信息至RIB
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_2029421542}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_2029356006}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nibId]{lang="EN-US"}*]{#struct_0_16293_x2703_2029552614}[：]{lang="EN-US" style="font-family:宋体"}[NIB ID]{lang="EN-US"}
+·*nibId*：NIB ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipPrefix]{lang="EN-US"}*]{#struct_0_16293_x2703_2029487078}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀]{lang="EN-US" style="font-family:宋体"}
+·*ipPrefix*：IP地址前缀
 
-[[(MT *topoId*)(L *sysLevel*) Modified route to RIB with relay NIB ID *nibId*, destination: *ipPrefix*.]{lang="EN-US"}]{#struct_0_16293_x2703_2030207974}
+(MT *topoId*)(L *sysLevel*) Modified route to RIB with relay NIB ID *nibId*, destination: *ipPrefix*.
 
-[[修改路由信息至]{style="font-family:宋体"}[RIB]{lang="EN-US"}]{#struct_0_16293_x2703_2029683687}
+修改路由信息至RIB
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_2029618151}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_2029814759}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nibId]{lang="EN-US"}*]{#struct_0_16293_x2703_2029749223}[：]{lang="EN-US" style="font-family:宋体"}[NIB ID]{lang="EN-US"}
+·*nibId*：NIB ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipPrefix]{lang="EN-US"}*]{#struct_0_16293_x2703_2029421543}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀]{lang="EN-US" style="font-family:宋体"}
+·*ipPrefix*：IP地址前缀
 
-[[(MT *topoId*)(L *sysLevel*) Deleted route to RIB with relay NIB ID *nibId*, destination: *ipPrefix*.]{lang="EN-US"}]{#struct_0_16293_x2703_2029552615}
+(MT *topoId*)(L *sysLevel*) Deleted route to RIB with relay NIB ID *nibId*, destination: *ipPrefix*.
 
-[[删除路由信息至]{style="font-family:宋体"}[RIB]{lang="EN-US"}]{#struct_0_16293_x2703_2029487079}
+删除路由信息至RIB
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_2030207975}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_2030142439}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nibId]{lang="EN-US"}*]{#struct_0_16293_x2703_x699265209}[：]{lang="EN-US" style="font-family:宋体"}[NIB ID]{lang="EN-US"}
+·*nibId*：NIB ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipPrefix]{lang="EN-US"}*]{#struct_0_16293_x2703_x699068601}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀]{lang="EN-US" style="font-family:宋体"}
+·*ipPrefix*：IP地址前缀
 
-[[(MT *topoId*)(L *sysLevel*) Deleted relay NIB ID *nibId*, spfnode: *sourceId*, *ipFamily*.]{lang="EN-US"}]{#struct_0_16293_x2703_x699134137}
+(MT *topoId*)(L *sysLevel*) Deleted relay NIB ID *nibId*, spfnode: *sourceId*, *ipFamily*.
 
-[[删除]{style="font-family:宋体"}[NIB ID]{lang="EN-US"}]{#struct_0_16293_x2703_x699461817}
+删除NIB ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x699330745}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x699396281}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nibId]{lang="EN-US"}*]{#struct_0_16293_x2703_x698675385}[：]{lang="EN-US" style="font-family:宋体"}[NIB ID]{lang="EN-US"}
+·*nibId*：NIB ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_x699199672}[：源系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*sourceId*：源系统ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipF]{lang="EN-US"}[amily]{lang="EN-US"}*]{#struct_0_16293_x2703_x699265208}[：]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址族]{style="font-family:宋体"}
+·*ipFamily*：IP地址族
 
-[[(MT *topoId*)(L *sysLevel*) Added relay NIB ID *nibId*, spfnode: *sourceId*, *ipFamily*.]{lang="EN-US"}]{#struct_0_16293_x2703_x699068600}
+(MT *topoId*)(L *sysLevel*) Added relay NIB ID *nibId*, spfnode: *sourceId*, *ipFamily*.
 
-[[添加]{style="font-family:宋体"}[NIB ID]{lang="EN-US"}]{#struct_0_16293_x2703_x699461816}
+添加NIB ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x699527352}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x699330744}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nibId]{lang="EN-US"}*]{#struct_0_16293_x2703_x698675384}[：]{lang="EN-US" style="font-family:宋体"}[NIB ID]{lang="EN-US"}
+·*nibId*：NIB ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_x698740920}[：源系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*sourceId*：源系统ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipF]{lang="EN-US"}[amily]{lang="EN-US"}*]{#struct_0_16293_x2703_x699199671}[：]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址族]{style="font-family:宋体"}
+·*ipFamily*：IP地址族
 
-[[(MT *topoId*)(L *sysLevel*) Modified relay NIB ID *nibId*, spfnode: *sourceId*, *ipFamily*.]{lang="EN-US"}]{#struct_0_16293_x2703_x699068599}
+(MT *topoId*)(L *sysLevel*) Modified relay NIB ID *nibId*, spfnode: *sourceId*, *ipFamily*.
 
-[[修改]{style="font-family:宋体"}[NIB ID]{lang="EN-US"}]{#struct_0_16293_x2703_x699134135}
+修改NIB ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topoId]{lang="EN-US"}*]{#struct_0_16293_x2703_x699461815}[：拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*topoId*：拓扑号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sysLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x699330743}[：系统级别]{lang="EN-US" style="font-family:宋体"}
+·*sysLevel*：系统级别
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nibId]{lang="EN-US"}*]{#struct_0_16293_x2703_x699396279}[：]{lang="EN-US" style="font-family:宋体"}[NIB ID]{lang="EN-US"}
+·*nibId*：NIB ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_x698740919}[：源系统]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*sourceId*：源系统ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipF]{lang="EN-US"}[amily]{lang="EN-US"}*]{#struct_0_16293_x2703_x699199670}[：]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址族]{style="font-family:宋体"}
+·*ipFamily*：IP地址族
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16293_x2703_1513381032}
+\# Router A与Router B相连，分别在Router A和Router B上配置IS-IS功能，建立Level-1-2邻居。在Router A上打开路由计算调试信息开关。
 
-[[\# Router A]{lang="EN-US"}]{#struct_0_16293_x2703_x1437560663}[与]{style="font-family:宋体"}[Router B]{lang="EN-US"}[相连，分别在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[和]{style="font-family:宋体"}[Router B]{lang="EN-US"}[上配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能，建立]{style="font-family:宋体"}[Level-1-2]{lang="EN-US"}[邻居。在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[上打开路由计算调试信息开关。]{style="font-family:宋体"}
+\<RouterA\> debugging isis spf verbose
 
-[[\<RouterA\> debugging isis spf verbose]{lang="EN-US"}]{#struct_0_16293_x2703_x250204563}
+\*Apr  8 13:25:27:527 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:27:527 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: SPF link (MT0)(L1) Deleting link 0000.0000.0004.05 \--\> 0000.0000.0004.00 Cost:0
 
-[ISIS-13-SPF: SPF link (MT0)(L1) Deleting link 0000.0000.0004.05 \--\> 0000.0000.0004.00 Cost:0]{lang="EN-US"}
+\*Apr  8 13:25:27:527 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:27:527 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: SPF node (MT0)(L1) Deleting system 0000.0000.0004.05
 
-[ISIS-13-SPF: SPF node (MT0)(L1) Deleting system 0000.0000.0004.05]{lang="DA"}
+\*Apr  8 13:25:27:527 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:27:527 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0) Trigger SPF at  Sec = 23961, MSec = 527
 
-[ISIS-13-SPF: (MT0) Trigger SPF at  Sec = 23961, MSec = 527]{lang="EN-US"}
+\*Apr  8 13:25:27:527 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:27:527 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0) SPF old scheduled event: 0x00000000, new trigger event: 0x00000002.
 
-[ISIS-13-SPF: (MT0) SPF old scheduled event: 0x00000000, new trigger event: 0x00000002.]{lang="EN-US"}
+\*Apr  8 13:25:27:527 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:27:527 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0) SPF event 0x00000002 is scheduled.
 
-[ISIS-13-SPF: (MT0) SPF event 0x00000002 is scheduled.]{lang="EN-US"}
+\*Apr  8 13:25:27:528 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:27:528 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+*// 删除Level1的Link和SPF节点，触发路由计算*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x700440715}*[删除]{style="font-family:宋体"}[Level1]{lang="EN-US"}[的]{style="font-family:宋体"}[Link]{lang="EN-US"}[和]{style="font-family:宋体"}[SPF]{lang="EN-US"}[节点，触发路由计算]{style="font-family:宋体"}*
+ISIS-13-SPF: SPF link (MT0)(L2) Deleting link 0000.0000.0004.05 \--\> 0000.0000.0004.00 Cost:0
 
-[[ISIS-13-SPF: SPF link (MT0)(L2) Deleting link 0000.0000.0004.05 \--\> 0000.0000.0004.00 Cost:0]{lang="EN-US"}]{#struct_0_16293_x2703_x1483640771}
+\*Apr  8 13:25:27:528 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:27:528 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: SPF node (MT0)(L2) Deleting system 0000.0000.0004.05
 
-[ISIS-13-SPF: SPF node (MT0)(L2) Deleting system 0000.0000.0004.05]{lang="DA"}
+\*Apr  8 13:25:27:528 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:27:528 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+\*Apr  8 13:25:27:528 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:27:528 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0) Trigger SPF at  Sec = 23961, MSec = 528
 
-[ISIS-13-SPF: (MT0) Trigger SPF at  Sec = 23961, MSec = 528]{lang="EN-US"}
+\*Apr  8 13:25:27:528 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:27:528 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0) SPF old scheduled event: 0x00000002, new trigger event: 0x00000002.
 
-[ISIS-13-SPF: (MT0) SPF old scheduled event: 0x00000002, new trigger event: 0x00000002.]{lang="EN-US"}
+*// 删除Level2的Link和SPF节点，触发路由计算*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x705419490}*[删除]{style="font-family:宋体"}[Level2]{lang="EN-US"}[的]{style="font-family:宋体"}[Link]{lang="EN-US"}[和]{style="font-family:宋体"}[SPF]{lang="EN-US"}[节点，触发路由计算]{style="font-family:宋体"}*
+\*Apr  8 13:25:27:571 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Apr  8 13:25:27:571 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_x1483706307}
+ISIS-13-SPF: (MT0)(L1) Deleting prefix for 10.152.1.0/255.255.255.0, from forwarding table.
 
-[ISIS-13-SPF: (MT0)(L1) Deleting prefix for 10.152.1.0/255.255.255.0, from forwarding table.]{lang="EN-US"}
+\*Apr  8 13:25:27:571 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:27:571 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L2) Deleting prefix for 10.152.1.0/255.255.255.0, from forwarding table.
 
-[ISIS-13-SPF: (MT0)(L2) Deleting prefix for 10.152.1.0/255.255.255.0, from forwarding table.]{lang="EN-US"}
+\*Apr  8 13:25:33:892 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:33:892 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L2) Adding prefix for 10.152.1.0/255.255.255.0 from 0000.0000.0004.00, into forwarding table.
 
-[ISIS-13-SPF: (MT0)(L2) Adding prefix for 10.152.1.0/255.255.255.0 from 0000.0000.0004.00, into forwarding table.]{lang="EN-US"}
+\*Apr  8 13:25:33:892 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:33:892 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0) Trigger SPF at  Sec = 23967, MSec = 892
 
-[ISIS-13-SPF: (MT0) Trigger SPF at  Sec = 23967, MSec = 892]{lang="EN-US"}
+\*Apr  8 13:25:33:892 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:33:892 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0) SPF old scheduled event: 0x00000002, new trigger event: 0x00000008.
 
-[ISIS-13-SPF: (MT0) SPF old scheduled event: 0x00000002, new trigger event: 0x00000008.]{lang="EN-US"}
+\*Apr  8 13:25:33:892 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:33:892 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0) SPF event 0x0000000A is scheduled.
 
-[ISIS-13-SPF: (MT0) SPF event 0x0000000A is scheduled.]{lang="EN-US"}
+\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0) SPF Event:0xa, running Flag, old: 0, current: 0x16.
 
-[ISIS-13-SPF: (MT0) SPF Event:0xa, running Flag, old: 0, current: 0x16.]{lang="EN-US"}
+*// 删除Level1的IP路由前缀，触发路由计算*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x1280114008}*[删除]{style="font-family:宋体"}[Level1]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[路由前缀，触发路由计算]{style="font-family:宋体"}*
+\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_x1483902915}
+ISIS-13-SPF: (MT0)(L1) I-SPF run started at  Sec = 23971, MSec = 529 .
 
-[ISIS-13-SPF: (MT0)(L1) I-SPF run started at  Sec = 23971, MSec = 529 .]{lang="EN-US"}
+\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: Checking changed links.
 
-[ISIS-13-SPF: Checking changed links.]{lang="EN-US"}
+\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: SPF link (MT0)(L1) Destroy LINK 0000.0000.0004.05 \--\> 0000.0000.0004.00 Del
 
-[ISIS-13-SPF: SPF link (MT0)(L1) Destroy LINK 0000.0000.0004.05 \--\> 0000.0000.0004.00 Del]{lang="EN-US"}
+\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: Need rebuild SPT.
 
-[ISIS-13-SPF: Need rebuild SPT.]{lang="EN-US"}
+\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L1) Running full SPF.
 
-[ISIS-13-SPF: (MT0)(L1) Running full SPF.]{lang="EN-US"}
+\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0) Begin Level-1 SPF from root node.
 
-[ISIS-13-SPF: (MT0) Begin Level-1 SPF from root node.]{lang="EN-US"}
+\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L1) SPF node Node is added into SPT. 1000.0001.0003.00 Dist:0 Nexthops:0 Nbrs:1 Parents:0 Tree
 
-[ISIS-13-SPF: (MT0)(L1) SPF node Node is added into SPT. 1000.0001.0003.00 Dist:0 Nexthops:0 Nbrs:1 Parents:0 Tree]{lang="EN-US"}
+\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: SPF link (MT0)(L1) Check the link to one nbr. 1000.0001.0003.00 \--\> 0000.0000.0004.07 AttAdjs:1
 
-[ISIS-13-SPF: SPF link (MT0)(L1) Check the link to one nbr. 1000.0001.0003.00 \--\> 0000.0000.0004.07 AttAdjs:1]{lang="EN-US"}
+\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF:  New distance is 10.
 
-[ISIS-13-SPF:  New distance is 10.]{lang="EN-US"}
+\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF:  Less cost, add node to TENT HEAP.
 
-[ISIS-13-SPF:  Less cost, add node to TENT HEAP.]{lang="EN-US"}
+\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:529 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L1) SPF node Son node update to TENT list 0000.0000.0004.07 Dist:10 Nexthops:0 Nbrs:2 Parents:0 Tent Direct     ;
 
-[ISIS-13-SPF: (MT0)(L1) SPF node Son node update to TENT list 0000.0000.0004.07 Dist:10 Nexthops:0 Nbrs:2 Parents:0 Tent Direct     ;]{lang="EN-US"}
+ISIS-13-SPF: SPF link (MT0)(L1) Check the link to one nbr. 0000.0000.0004.07 \--\> 1000.0001.0003.00 AttAdjs:1 Back
 
-[ISIS-13-SPF: SPF link (MT0)(L1) Check the link to one nbr. 0000.0000.0004.07 \--\> 1000.0001.0003.00 AttAdjs:1 Back]{lang="EN-US"}
+\*Apr  8 13:25:37:530 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:530 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: Link is backard link, ignore.
 
-[ISIS-13-SPF: Link is backard link, ignore.]{lang="EN-US"}
+\*Apr  8 13:25:37:530 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:530 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L1) SPF node Node is added into SPT. 0000.0000.0004.00 Dist:10 Nexthops:0 Nbrs:1 Parents:1 Tree
 
-[ISIS-13-SPF: (MT0)(L1) SPF node Node is added into SPT. 0000.0000.0004.00 Dist:10 Nexthops:0 Nbrs:1 Parents:1 Tree]{lang="EN-US"}
+\*Apr  8 13:25:37:530 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:530 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0) Merge nexthop from root node IPV4:1/1
 
-[ISIS-13-SPF: (MT0) Merge nexthop from root node IPV4:1/1]{lang="EN-US"}
+\*Apr  8 13:25:37:530 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:530 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0) Merge nexthop from parent node IPV4:0
 
-[ISIS-13-SPF: (MT0) Merge nexthop from parent node IPV4:0]{lang="EN-US"}
+ISIS-13-SPF: Inform SPF nodes change to PAC&PRC.
 
-[ISIS-13-SPF: Inform SPF nodes change to PAC&PRC.]{lang="EN-US"}
+\*Apr  8 13:25:37:530 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:530 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L1) SPF node Destroy node 0000.0000.0004.05 Dist:4294967295 Nexthops:0 Nbrs:0 Parents:0 Direct Del
 
-[ISIS-13-SPF: (MT0)(L1) SPF node Destroy node 0000.0000.0004.05 Dist:4294967295 Nexthops:0 Nbrs:0 Parents:0 Direct Del]{lang="EN-US"}
+\*Apr  8 13:25:37:530 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:530 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L1) I-SPF run ended at  Sec = 23971, MSec = 530 .
 
-[ISIS-13-SPF: (MT0)(L1) I-SPF run ended at  Sec = 23971, MSec = 530 .]{lang="EN-US"}
+\*Apr  8 13:25:37:530 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:530 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L2) I-SPF run started at  Sec = 23971, MSec = 530 .
 
-[ISIS-13-SPF: (MT0)(L2) I-SPF run started at  Sec = 23971, MSec = 530 .]{lang="EN-US"}
+\*Apr  8 13:25:37:530 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:530 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: Checking changed links.
 
-[ISIS-13-SPF: Checking changed links.]{lang="EN-US"}
+\*Apr  8 13:25:37:531 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:531 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: SPF link (MT0)(L2) Destroy LINK 0000.0000.0004.05 \--\> 0000.0000.0004.00 Del
 
-[ISIS-13-SPF: SPF link (MT0)(L2) Destroy LINK 0000.0000.0004.05 \--\> 0000.0000.0004.00 Del]{lang="EN-US"}
+\*Apr  8 13:25:37:531 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:531 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: Need rebuild SPT.
 
-[ISIS-13-SPF: Need rebuild SPT.]{lang="EN-US"}
+\*Apr  8 13:25:37:531 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:531 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L2) Running full SPF.
 
-[ISIS-13-SPF: (MT0)(L2) Running full SPF.]{lang="EN-US"}
+\*Apr  8 13:25:37:531 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:531 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0) Begin Level-2 SPF from root node.
 
-[ISIS-13-SPF: (MT0) Begin Level-2 SPF from root node.]{lang="EN-US"}
+\*Apr  8 13:25:37:531 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:531 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L2) SPF node Node is added into SPT. 1000.0001.0003.00 Dist:0 Nexthops:0 Nbrs:1 Parents:0 Tree
 
-[ISIS-13-SPF: (MT0)(L2) SPF node Node is added into SPT. 1000.0001.0003.00 Dist:0 Nexthops:0 Nbrs:1 Parents:0 Tree]{lang="EN-US"}
+\*Apr  8 13:25:37:531 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:531 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: SPF link (MT0)(L2) Check the link to one nbr. 1000.0001.0003.00 \--\> 0000.0000.0004.07 AttAdjs:1
 
-[ISIS-13-SPF: SPF link (MT0)(L2) Check the link to one nbr. 1000.0001.0003.00 \--\> 0000.0000.0004.07 AttAdjs:1]{lang="EN-US"}
+\*Apr  8 13:25:37:531 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:531 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L2) SPF node  NBR node found. 0000.0000.0004.07 Dist:4294967295 Nexthops:0 Nbrs:2 Parents:0 Direct
 
-[ISIS-13-SPF: (MT0)(L2) SPF node  NBR node found. 0000.0000.0004.07 Dist:4294967295 Nexthops:0 Nbrs:2 Parents:0 Direct]{lang="EN-US"}
+\*Apr  8 13:25:37:531 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:531 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF:  New distance is 10.
 
-[ISIS-13-SPF:  New distance is 10.]{lang="EN-US"}
+\*Apr  8 13:25:37:531 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:531 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF:  Less cost, add node to TENT HEAP.
 
-[ISIS-13-SPF:  Less cost, add node to TENT HEAP.]{lang="EN-US"}
+\*Apr  8 13:25:37:531 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:531 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L2) SPF node Son node update to TENT list 0000.0000.0004.07 Dist:10 Nexthops:0 Nbrs:2 Parents:0 Tent Direct
 
-[ISIS-13-SPF: (MT0)(L2) SPF node Son node update to TENT list 0000.0000.0004.07 Dist:10 Nexthops:0 Nbrs:2 Parents:0 Tent Direct]{lang="EN-US"}
+\*Apr  8 13:25:37:531 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:531 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: SPF link (MT0)(L2) Check the link to one nbr. 0000.0000.0004.07 \--\> 1000.0001.0003.00 AttAdjs:1 Back
 
-[ISIS-13-SPF: SPF link (MT0)(L2) Check the link to one nbr. 0000.0000.0004.07 \--\> 1000.0001.0003.00 AttAdjs:1 Back]{lang="EN-US"}
+\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: Link is backard link, ignore.
 
-[ISIS-13-SPF: Link is backard link, ignore.]{lang="EN-US"}
+\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L2) SPF node Node is added into SPT. 0000.0000.0004.00 Dist:10 Nexthops:0 Nbrs:1 Parents:1 Tree
 
-[ISIS-13-SPF: (MT0)(L2) SPF node Node is added into SPT. 0000.0000.0004.00 Dist:10 Nexthops:0 Nbrs:1 Parents:1 Tree]{lang="EN-US"}
+\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0) Merge nexthop from root node IPV4:1/1
 
-[ISIS-13-SPF: (MT0) Merge nexthop from root node IPV4:1/1]{lang="EN-US"}
+\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0) Merge nexthop from parent node IPV4:0
 
-[ISIS-13-SPF: (MT0) Merge nexthop from parent node IPV4:0]{lang="EN-US"}
+\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: Inform SPF nodes change to PAC&PRC.
 
-[ISIS-13-SPF: Inform SPF nodes change to PAC&PRC.]{lang="EN-US"}
+\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L2) SPF node Destroy node 0000.0000.0004.05 Dist:4294967295 N
 
-[ISIS-13-SPF: (MT0)(L2) SPF node Destroy node 0000.0000.0004.05 Dist:4294967295 N]{lang="EN-US"}
+exthops:0 Nbrs:0 Parents:0 Direct Del
 
-[exthops:0 Nbrs:0 Parents:0 Direct Del]{lang="EN-US"}
+\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L2) I-SPF run ended at  Sec = 23971, MSec = 532 .
 
-[ISIS-13-SPF: (MT0)(L2) I-SPF run ended at  Sec = 23971, MSec = 532 .]{lang="EN-US"}
+*// 进行Level1和Level2的ISPF计算*
 
-*[// ]{lang="EN-US" style="font-size:10.5pt;
-font-family:\"Arial\",\"sans-serif\""}[进行]{style="font-size:10.5pt;
-font-family:宋体"}[Level1]{lang="EN-US" style="font-size:10.5pt;
-font-family:\"Arial\",\"sans-serif\""}[和]{style="font-size:
-10.5pt;font-family:宋体"}[Level2]{lang="EN-US" style="font-size:10.5pt;
-font-family:\"Arial\",\"sans-serif\""}[的]{style="font-size:
-10.5pt;font-family:宋体"}[ISPF]{lang="EN-US" style="font-size:10.5pt;
-font-family:\"Arial\",\"sans-serif\""}[计算]{style="font-size:
-10.5pt;font-family:宋体"}*
+\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L1) AREA run started at  Sec = 23971, MSec = 532 .
 
-[ISIS-13-SPF: (MT0)(L1) AREA run started at  Sec = 23971, MSec = 532 .]{lang="EN-US"}
+\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L1) Processing increment area address calculating.
 
-[ISIS-13-SPF: (MT0)(L1) Processing increment area address calculating.]{lang="EN-US"}
+\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L1) Area Addr: 32 is available.
 
-[ISIS-13-SPF: (MT0)(L1) Area Addr: 32 is available.]{lang="EN-US"}
+\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L1) AREA run ended at  Sec = 23971, MSec = 532 .
 
-[ISIS-13-SPF: (MT0)(L1) AREA run ended at  Sec = 23971, MSec = 532 .]{lang="EN-US"}
+\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L2) AREA run started at  Sec = 23971, MSec = 532 .
 
-[ISIS-13-SPF: (MT0)(L2) AREA run started at  Sec = 23971, MSec = 532 .]{lang="EN-US"}
+\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L2) Processing increment area address calculating.
 
-[ISIS-13-SPF: (MT0)(L2) Processing increment area address calculating.]{lang="EN-US"}
+\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L2) Area Addr: 32 is available.
 
-[ISIS-13-SPF: (MT0)(L2) Area Addr: 32 is available.]{lang="EN-US"}
+\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L2) AREA run ended at  Sec = 23971, MSec = 532 .
 
-[ISIS-13-SPF: (MT0)(L2) AREA run ended at  Sec = 23971, MSec = 532 .]{lang="EN-US"}
+\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0) Updating computed areas into L2 LSDB.
 
-[ISIS-13-SPF: (MT0) Updating computed areas into L2 LSDB.]{lang="EN-US"}
+*// 进行Level1和Level2的区域地址计算*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_1303452024}*[进行]{style="font-family:宋体"}[Level1]{lang="EN-US"}[和]{style="font-family:宋体"}[Level2]{lang="EN-US"}[的区域地址计算]{style="font-family:宋体"}*
+\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_x1483968451}
+ISIS-13-SPF: (MT0)(L1) PRC run started at  Sec = 23971, MSec = 532 .
 
-[ISIS-13-SPF: (MT0)(L1) PRC run started at  Sec = 23971, MSec = 532 .]{lang="EN-US"}
+\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:532 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L1) Processing increment IPV4 prefix calculating.
 
-[ISIS-13-SPF: (MT0)(L1) Processing increment IPV4 prefix calculating.]{lang="EN-US"}
+\*Apr  8 13:25:37:533 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:533 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L1) PRC run ended at  Sec = 23971, MSec = 533 .
 
-[ISIS-13-SPF: (MT0)(L1) PRC run ended at  Sec = 23971, MSec = 533 .]{lang="EN-US"}
+\*Apr  8 13:25:37:544 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:544 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L2) PRC run started at  Sec = 23971, MSec = 544 .
 
-[ISIS-13-SPF: (MT0)(L2) PRC run started at  Sec = 23971, MSec = 544 .]{lang="EN-US"}
+\*Apr  8 13:25:37:544 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:544 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L2) Processing increment IPV4 prefix calculating.
 
-[ISIS-13-SPF: (MT0)(L2) Processing increment IPV4 prefix calculating.]{lang="EN-US"}
+\*Apr  8 13:25:37:544 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 13:25:37:544 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-13-SPF: (MT0)(L2) PRC run ended at  Sec = 23971, MSec = 544 .
 
-[ISIS-13-SPF: (MT0)(L2) PRC run ended at  Sec = 23971, MSec = 544 .]{lang="EN-US"}
+*// 进行Level1和Level2的Prc计算*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x1513810139}*[进行]{style="font-family:宋体"}[Level1]{lang="EN-US"}[和]{style="font-family:宋体"}[Level2]{lang="EN-US"}[的]{style="font-family:宋体"}[Prc]{lang="EN-US"}[计算]{style="font-family:宋体"}*
+\*Apr  8 13:25:37:544 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Apr  8 13:25:37:544 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_x1762539124}
+ISIS-13-SPF: (MT0) All phases of SPF work completed at  Sec = 23971, MSec = 544
 
-[ISIS-13-SPF: (MT0) All phases of SPF work completed at  Sec = 23971, MSec = 544]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x2000510057}*[路由计算所有阶段完成]{style="font-family:宋体"}*
-
-::: {#1487674431 .myid}
-[]{#_Toc404788111}[]{#struct_0_16293_x2703_x1482985411}
+*// 路由计算所有阶段完成*
 
 **IS-IS调试命令 \-- IS-IS调试命令 \-- debugging isis timer**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x2037759818}
+【命令】
 
-[**[debuging isis timer]{lang="EN-US"}**[ \[ *process-id* \]]{lang="EN-US"}]{#struct_0_16293_x2703_x1273149299}
+**[debuging isis timer** [ *process-id* ]]
 
-[**[undo debuging isis timer]{lang="EN-US"}**[ \[ *process-id* \]]{lang="EN-US"}]{#struct_0_16293_x2703_874584844}
+**[undo debuging isis timer** [ *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16293_x2703_680592194}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_16293_x2703_129268651}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16293_x2703_1859142048}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16293_x2703_1704868800}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16293_x2703_x1483050947}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x318209169}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_1772945970}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x61304395}
+【描述】
 
-[**[debuging isis timer]{lang="EN-US"}**]{#struct_0_16293_x2703_x2077133852}[命令用来打开]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[定时器调试信息开关。]{style="font-family:宋体"}**[undo debugging isis timer]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[定时器调试信息开关。]{style="font-family:宋体"}
+**[debuging isis timer**]命令用来打开IS-IS定时器调试信息开关。**undo debugging isis timer**命令用来关闭IS-IS定时器调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_x778364076}[定时器调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，IS-IS定时器调试信息开关处于关闭状态。
 
-[[如果未指定进程号，则打开所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_x1314073438}[进程的定时器调试信息开关。]{style="font-family:宋体"}
+如果未指定进程号，则打开所有IS-IS进程的定时器调试信息开关。
 
-[[表1-9 ]{lang="EN-US"}[debugging isis timer]{lang="EN-US"}]{#struct_0_16293_x2703_x1723635313}[命令输出信息描述表]{style="font-family:黑体"}
+表1-9 debugging isis timer命令输出信息描述表
 
-[]{#table_struct_0_x437150268}[[字段]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1483509698}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16293_x2703_x113109300}
+描述
 
-[[ISIS-*procId*-TMR: *adjLevel* adjacency *systemId* hold timer expired on the circuit *circuitName.*]{lang="EN-US"}]{#struct_0_16293_x2703_801833559}
+ISIS-*procId*-TMR: *adjLevel* adjacency *systemId* hold timer expired on the circuit *circuitName.*
 
-[[hold time]{lang="EN-US"}]{#struct_0_16293_x2703_x969638681}[定时器超时]{style="font-family:宋体"}
+hold time定时器超时
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_346389686}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[adjLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483575234}[：邻居类型，取值为]{lang="EN-US" style="font-family:宋体"}[L1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2]{lang="EN-US"}
+·*adjLevel*：邻居类型，取值为L1或L2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[systemId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1215502323}[：邻居]{lang="EN-US" style="font-family:宋体"}[system id]{lang="EN-US"}
+·*systemId*：邻居system id
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x884715688}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-TMR: *adjLevel* hello timer expired on the circuit *circuitName*.]{lang="EN-US"}]{#struct_0_16293_x2703_x106460132}
+ISIS-*procId*-TMR: *adjLevel* hello timer expired on the circuit *circuitName*.
 
-[[Hello]{lang="EN-US"}]{#struct_0_16293_x2703_x1912409757}[定时器超时]{style="font-family:宋体"}
+Hello定时器超时
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483640770}[：进程号]{lang="EN-US" style="font-family:宋体"}
+·*process-id*：进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[adjLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_2023463865}[：邻居类型，取值为]{lang="EN-US" style="font-family:宋体"}[L1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2]{lang="EN-US"}
+·*adjLevel*：邻居类型，取值为L1或L2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x1721924174}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-TMR: Starting waiting timer for max seq num exceed, time value is *timer* ms.]{lang="EN-US"}]{#struct_0_16293_x2703_x34205608}
+ISIS-*procId*-TMR: Starting waiting timer for max seq num exceed, time value is *timer* ms.
 
-[[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x384936768}[序列号反转处理的定时器启动]{style="font-family:宋体"}
+LSP序列号反转处理的定时器启动
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483706306}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[timer]{lang="EN-US"}*]{#struct_0_16293_x2703_1448769347}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[序列号反转需要等待的处理时间秒数（]{style="font-family:宋体"}[LSP]{lang="EN-US"}[老化时间]{style="font-family:宋体"}[+LSP]{lang="EN-US"}[删除时间）]{style="font-family:宋体"}
+·*timer*：LSP序列号反转需要等待的处理时间秒数（LSP老化时间+LSP删除时间）
 
-[[ISIS-]{lang="DA"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_756964588}[-TMR: ]{lang="DA"}*[lspLevel]{lang="EN-US"}*[ LSP ]{lang="DA"}*[lspId]{lang="EN-US"}*[ ]{lang="EN-US"}[gen timer expired]{lang="DA"}
+ISIS-*procId*-TMR: *lspLevel* LSP *lspId*gen timer expired
 
-[[LSP]{lang="DA"}]{#struct_0_16293_x2703_x1702854626}[生成定时器超时]{style="font-family:宋体"}
+LSP生成定时器超时
 
-[[·[       ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="DA"}*]{#struct_0_16293_x2703_x1483771842}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="DA"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}*[lspLevel]{lang="DA"}*]{#struct_0_16293_x2703_1741333429}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="DA"}[类型]{lang="EN-US" style="font-family:宋体"}[，]{lang="EN-US" style="font-family:宋体"}[取值为]{lang="EN-US" style="font-family:宋体"}[L1]{lang="DA"}[或]{lang="EN-US" style="font-family:宋体"}[L2]{lang="DA"}
+·*lspLevel*：LSP类型，取值为L1或L2
 
-[[·[       ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}*[lspId]{lang="DA"}*]{#struct_0_16293_x2703_x172896421}[ ]{lang="DA"}[：]{lang="EN-US" style="font-family:宋体"}[LSPID]{lang="DA"}
+·*lspId*：LSPID
 
-[[ISIS-*procId*-TMR: Start *lspLevel* LSP *lspid* gen timer, time vlaue is *Second*(ms)]{lang="EN-US"}]{#struct_0_16293_x2703_x1625440601}
+ISIS-*procId*-TMR: Start *lspLevel* LSP *lspid* gen timer, time vlaue is *Second*(ms)
 
-[[启动]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x1483837378}[生成时间间隔定时器]{style="font-family:宋体"}
+启动LSP生成时间间隔定时器
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_454833550}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_1772343522}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[类型，取值为]{lang="EN-US" style="font-family:宋体"}[L1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2]{lang="EN-US"}
+·*lspLevel*：LSP类型，取值为L1或L2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspid]{lang="EN-US"}*]{#struct_0_16293_x2703_x459298366}[：]{lang="EN-US" style="font-family:宋体"}[LSPID]{lang="EN-US"}
+·*lspid*：LSPID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Second]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483902914}[：]{lang="EN-US" style="font-family:宋体"}[Lsp]{lang="EN-US"}[生成定时器的当前时间间隔]{lang="EN-US" style="font-family:宋体"}
+·*Second*：Lsp生成定时器的当前时间间隔
 
-[[ISIS-]{lang="DA"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x262631917}[-TMR: Stop ]{lang="DA"}*[lspLevel]{lang="EN-US"}*[ LSP ]{lang="DA"}*[lspid ]{lang="EN-US"}*[ gen timer]{lang="DA"}
+ISIS-*procId*-TMR: Stop *lspLevel* LSP *lspid * gen timer
 
-[[关闭]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x2021943776}[生成时间间隔定时器]{style="font-family:宋体"}
+关闭LSP生成时间间隔定时器
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1859159655}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483968450}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[类型，取值为]{lang="EN-US" style="font-family:宋体"}[L1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2]{lang="EN-US"}
+·*lspLevel*：LSP类型，取值为L1或L2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspid]{lang="EN-US"}*]{#struct_0_16293_x2703_1215073216}[：]{lang="EN-US" style="font-family:宋体"}[LSPID]{lang="EN-US"}
+·*lspid*：LSPID
 
-[[ISIS-*procId*-TMR: *lspLevel* flood timer expired on the circuit *circuitName*]{lang="EN-US"}]{#struct_0_16293_x2703_x1579964589}
+ISIS-*procId*-TMR: *lspLevel* flood timer expired on the circuit *circuitName*
 
-[[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_804993522}[报文发送定时器超时]{style="font-family:宋体"}
+LSP报文发送定时器超时
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1482985410}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_691123537}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[类型，取值为]{lang="EN-US" style="font-family:宋体"}[L1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2]{lang="EN-US"}
+·*lspLevel*：LSP类型，取值为L1或L2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x526105294}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-TMR: *lspLevel* fast flood timer expired]{lang="EN-US"}]{#struct_0_16293_x2703_x1483050946}
+ISIS-*procId*-TMR: *lspLevel* fast flood timer expired
 
-[[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_1247874772}[快速扩散定时器超时]{style="font-family:宋体"}
+LSP快速扩散定时器超时
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1188007833}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_937833247}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[类型，取值为]{lang="EN-US" style="font-family:宋体"}[L1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2]{lang="EN-US"}
+·*lspLevel*：LSP类型，取值为L1或L2
 
-[[ISIS-*procId*-TMR: *lspLevel* csnp timer expired on the circuit *circuitName*]{lang="EN-US"}]{#struct_0_16293_x2703_x1483509701}
+ISIS-*procId*-TMR: *lspLevel* csnp timer expired on the circuit *circuitName*
 
-[[CSNP]{lang="EN-US"}]{#struct_0_16293_x2703_1808746250}[报文发送定时器超时]{style="font-family:宋体"}
+CSNP报文发送定时器超时
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_2125335748}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483575237}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[类型，取值为]{lang="EN-US" style="font-family:宋体"}[L1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2]{lang="EN-US"}
+·*lspLevel*：LSP类型，取值为L1或L2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x1618786850}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-TMR: *lspLevel* psnp timer expired on the circuit *circuitName*]{lang="EN-US"}]{#struct_0_16293_x2703_x1072854167}
+ISIS-*procId*-TMR: *lspLevel* psnp timer expired on the circuit *circuitName*
 
-[[PSNP]{lang="EN-US"}]{#struct_0_16293_x2703_x1483640773}[报文发送定时器超时]{style="font-family:宋体"}
+PSNP报文发送定时器超时
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_457379924}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_1272973049}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[类型，取值为]{lang="EN-US" style="font-family:宋体"}[L1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[L2]{lang="EN-US"}
+·*lspLevel*：LSP类型，取值为L1或L2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483706309}[：接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：接口名
 
-[[ISIS-*procId*-TMR: ]{lang="EN-US"}]{#struct_0_16293_x2703_x829775314}[(MT]{lang="DA"}*[mtIId]{lang="EN-US"}*[) Stop SPF timer.]{lang="DA"}
+ISIS-*procId*-TMR: (MT*mtIId*) Stop SPF timer.
 
-[[关闭]{style="font-family:宋体"}[SPF]{lang="EN-US"}]{#struct_0_16293_x2703_295281579}[定时器停止]{style="font-family:宋体"}[SPF]{lang="EN-US"}[计算调度]{style="font-family:宋体"}
+关闭SPF定时器停止SPF计算调度
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_1945096330}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}*[mtIId]{lang="DA"}*]{#struct_0_16293_x2703_x1483771845}[：]{lang="EN-US" style="font-family:宋体"}[拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*mtIId*：拓扑号
 
-[[ISIS-*procId*-TMR: ]{lang="EN-US"}]{#struct_0_16293_x2703_981818542}[(MT]{lang="DA"}*[mtIId]{lang="EN-US"}*[) SPF timer expired.]{lang="DA"}
+ISIS-*procId*-TMR: (MT*mtIId*) SPF timer expired.
 
-[[关闭]{style="font-family:宋体"}[SPF]{lang="EN-US"}]{#struct_0_16293_x2703_x1483837381}[定时器超时]{style="font-family:宋体"}
+关闭SPF定时器超时
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[procId]{lang="EN-US"}*]{#struct_0_16293_x2703_x754692351}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号]{lang="EN-US" style="font-family:宋体"}
+·*procId*：IS-IS进程号
 
-[[·[       ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}*[mtIId]{lang="DA"}*]{#struct_0_16293_x2703_895814041}[：]{lang="EN-US" style="font-family:宋体"}[拓扑号]{lang="EN-US" style="font-family:宋体"}
+·*mtIId*：拓扑号
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16293_x2703_1110785720}
+\# Router A与Router B相连，在Router A上创建IS-IS进程，路由器类型为**level-1**，并在GigabitEthernet1/0/2上使能IS-IS功能，接口的IP地址为1.1.1.166/24；在Router B上创建IS-IS进程，SystemID为FFFF.FFFF.FFFF、路由器类型为**level-1**，并在GigabitEthernet1/0/1使能IS-IS功能，接口的IP地址为1.1.1.2/24；Router A与Router B在同一个区域49。在Router A上打开IS-IS定时器调试信息开关。
 
-[[\# Router A]{lang="EN-US"}]{#struct_0_16293_x2703_1319789207}[与]{style="font-family:宋体"}[Router B]{lang="EN-US"}[相连，在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[上创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程，路由器类型为]{style="font-family:宋体"}**[level-1]{lang="EN-US"}**[，并在]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[上使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能，接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1.1.1.166/24]{lang="EN-US"}[；在]{style="font-family:宋体"}[Router B]{lang="EN-US"}[上创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程，]{style="font-family:宋体"}[SystemID]{lang="EN-US"}[为]{style="font-family:宋体"}[FFFF.FFFF.FFFF]{lang="EN-US"}[、路由器类型为]{style="font-family:宋体"}**[level-1]{lang="EN-US"}**[，并在]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能，接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1.1.1.2/24]{lang="EN-US"}[；]{style="font-family:宋体"}[Router A]{lang="EN-US"}[与]{style="font-family:宋体"}[Router B]{lang="EN-US"}[在同一个区域]{style="font-family:宋体"}[49]{lang="EN-US"}[。在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[上打开]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[定时器调试信息开关。]{style="font-family:宋体"}
+\<RouterA\> debugging isis timer
 
-[[\<RouterA\> debugging isis timer]{lang="EN-US"}]{#struct_0_16293_x2703_x1483902917}
+\*Apr  8 22:04:12:389 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 22:04:12:389 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-TMR: Level-1 hello timer expired on the circuit GigabitEthernet1/0/2.
 
-[ISIS-1-TMR: Level-1 hello timer expired on the circuit GigabitEthernet1/0/2.]{lang="EN-US"}
+\*Apr  8 22:04:15:039 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 22:04:15:039 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-TMR: Level-2 hello timer expired on the circuit GigabitEthernet1/0/2.
 
-[ISIS-1-TMR: Level-2 hello timer expired on the circuit GigabitEthernet1/0/2.]{lang="EN-US"}
-
-[*[// Level-1]{lang="EN-US"}*]{#struct_0_16293_x2703_x1828715858}*[的邻居邻接超时，]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的邻居邻接超时]{style="font-family:宋体"}*
-
-::: {#-147246634 .myid}
-[]{#_Toc404788112}[]{#struct_0_16293_x2703_x426026454}
+*[// Level-1*]*的邻居邻接超时，Level-2的邻居邻接超时*
 
 **IS-IS调试命令 \-- IS-IS调试命令 \-- debugging isis update-packet**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x712632519}
+【命令】
 
-[**[debugging]{lang="EN-US"}**[ **isis** **update-packet** \[ **receive** \| **send** \] \[ **verbose**\] \[ *process-id* \]]{lang="EN-US"}]{#struct_0_16293_x2703_789244329}
+**[debugging**[ **isis** **update-packet** [ **receive** \| **send** ]  **verbose**  *process-id* ]]
 
-[**[undo]{lang="EN-US"}**[ **debugging** **isis** **update-packet** \[ **receive** \| **send** \] \[ **verbose**\] \[ *process-id* \]]{lang="EN-US"}]{#struct_0_16293_x2703_561111145}
+**[undo**[ **debugging** **isis** **update-packet** [ **receive** \| **send** ]  **verbose**  *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1483968453}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_16293_x2703_1618357743}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16293_x2703_1363835366}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16293_x2703_1629526481}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16293_x2703_x993768946}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16293_x2703_422019436}
+【参数】
 
-[**[receive]{lang="EN-US"}**]{#struct_0_16293_x2703_x1358083058}[：表示接收]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}
+**[receive**]：表示接收LSP报文调试信息开关。
 
-[**[send]{lang="EN-US"}**]{#struct_0_16293_x2703_1371392467}[：表示发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}
+**[send**]：表示发送LSP报文调试信息开关。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_16293_x2703_x1482985413}[：表示]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文详细调试信息开关。]{style="font-family:宋体"}
+**[verbose**]：表示LSP报文详细调试信息开关。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_16293_x2703_x874960404}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_16293_x2703_1696072420}
+【描述】
 
-[**[debugging isis]{lang="EN-US"}**]{#struct_0_16293_x2703_x994283656}[命令用来打开]{style="font-family:宋体"}[IS-IS LSP]{lang="EN-US"}[报文的调试信息开关。]{style="font-family:宋体"}**[undo debugging isis]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[IS-IS LSP]{lang="EN-US"}[报文的调试信息开关。]{style="font-family:宋体"}
+**[debugging isis**]命令用来打开IS-IS LSP报文的调试信息开关。**undo debugging isis**命令用来关闭IS-IS LSP报文的调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[IS-IS LSP]{lang="EN-US"}]{#struct_0_16293_x2703_642041773}[报文的调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，IS-IS LSP报文的调试信息开关处于关闭状态。
 
-[[如果未指定进程号，则打开所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_16293_x2703_1643487551}[进程的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文的调试信息开关。]{style="font-family:宋体"}
+如果未指定进程号，则打开所有IS-IS进程的LSP报文的调试信息开关。
 
-[[表1-10 ]{lang="EN-US"}[debugging isis update-packet]{lang="EN-US"}]{#struct_0_16293_x2703_1451293767}[命令输出信息描述表]{style="font-family:黑体"}
+表1-10 debugging isis update-packet命令输出信息描述表
 
-[]{#table_struct_0_x444363896}[[字段]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1644181628}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16293_x2703_x1483050949}
+描述
 
-[[ISIS-*processId*-UPDT: PDU level(*pduLevel*) mismatch with circuit level(*circuitLevel*) ]{lang="EN-US"}]{#struct_0_16293_x2703_x768547863}
+ISIS-*processId*-UPDT: PDU level(*pduLevel*) mismatch with circuit level(*circuitLevel*)
 
-[[接收到的]{style="font-family:宋体"}[LSP/SNP]{lang="EN-US"}]{#struct_0_16293_x2703_x1480765081}[报文的]{style="font-family:宋体"}[Level]{lang="EN-US"}[和接口]{style="font-family:宋体"}[Level]{lang="EN-US"}[不匹配]{style="font-family:宋体"}
+接收到的LSP/SNP报文的Level和接口Level不匹配
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x27715938}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[pduLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x164632447}[：]{lang="EN-US" style="font-family:宋体"}[LSP/SNP]{lang="EN-US"}[报文的]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}
+·*pduLevel*：LSP/SNP报文的Level
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitLevel]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483509700}[：]{lang="EN-US" style="font-family:
-  宋体"}[接口]{lang="EN-US" style="font-family:宋体"}[Level]{lang="EN-US"}
+·*circuitLevel*：接口Level
 
-[[ISIS-*processId*-UPDT: Lsp with more than three area addr(es)]{lang="EN-US"}]{#struct_0_16293_x2703_242662309}
+ISIS-*processId*-UPDT: Lsp with more than three area addr(es)
 
-[[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x720665237}[报文中携带的区域地址个数多于]{style="font-family:宋体"}[3]{lang="EN-US"}[个]{style="font-family:宋体"}
+LSP报文中携带的区域地址个数多于3个
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1464425529}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[ISIS-*processId*-UPDT:]{lang="EN-US"}[ Receive *pduName* lspid=*systemId*. *pseudonodeNumber*-*lspNumber* seq=*lspSequenceNumber* ht=*holdTime* from snpa *mac-address* on circuit *circuitName*]{lang="EN-US"}]{#struct_0_16293_x2703_x683478934}
+ISIS-*processId*-UPDT: Receive *pduName* lspid=*systemId*. *pseudonodeNumber*-*lspNumber* seq=*lspSequenceNumber* ht=*holdTime* from snpa *mac-address* on circuit *circuitName*
 
-[[接收到]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x1483575236}[报文]{style="font-family:宋体"}
+接收到LSP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x52702909}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[pduName]{lang="EN-US"}*]{#struct_0_16293_x2703_x944367137}[：]{lang="EN-US" style="font-family:宋体"}[L1 LSP/L2 LSP]{lang="EN-US"}
+·*pduName*：L1 LSP/L2 LSP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[systemId]{lang="EN-US"}*]{#struct_0_16293_x2703_1286392297}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[发送设备的]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}
+·*systemId*：LSP发送设备的System ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[pseudonodeNumber]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483640772}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP]{lang="EN-US"}[发送设备的伪节点]{lang="EN-US" style="font-family:
-  宋体"}[ID]{lang="EN-US"}
+·*pseudonodeNumber*：LSP发送设备的伪节点ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspNumber]{lang="EN-US"}*]{#struct_0_16293_x2703_x1108704017}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[报文的分片号]{lang="EN-US" style="font-family:宋体"}
+·*lspNumber*：LSP报文的分片号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspSequenceNumber]{lang="EN-US"}*]{#struct_0_16293_x2703_x534617941}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP]{lang="EN-US"}[报文的序列号]{lang="EN-US" style="font-family:
-  宋体"}
+·*lspSequenceNumber*：LSP报文的序列号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[holdTime]{lang="EN-US"}*]{#struct_0_16293_x2703_1722647815}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[报文的存活时间]{lang="EN-US" style="font-family:宋体"}
+·*holdTime*：LSP报文的存活时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mac-address]{lang="EN-US"}*]{#struct_0_16293_x2703_x1169572093}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP]{lang="EN-US"}[报文接收接口的]{lang="EN-US" style="font-family:
-  宋体"}[MAC]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+·*mac-address*：LSP报文接收接口的MAC地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483706308}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP]{lang="EN-US"}[报文接收接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：LSP报文接收接口名
 
-[[ISIS-*processId*-UPDT:]{lang="EN-US"}[ Snpa address of pdu is the same as the local circuit(*circuitName*)]{lang="EN-US"}]{#struct_0_16293_x2703_1899108041}
+ISIS-*processId*-UPDT: Snpa address of pdu is the same as the local circuit(*circuitName*)
 
-[[LSP/SNP]{lang="EN-US"}]{#struct_0_16293_x2703_1342354362}[报文的源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址和接收接口的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[一样]{style="font-family:宋体"}
+LSP/SNP报文的源MAC地址和接收接口的MAC一样
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x797281909}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483771844}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP/SNP]{lang="EN-US"}[报文接收接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：LSP/SNP报文接收接口名
 
-[[ISIS-*processId*-UPDT:]{lang="EN-US"}[ ISIS process is under disable, ignoring pdu]{lang="EN-US"}]{#struct_0_16293_x2703_x1747064813}
+ISIS-*processId*-UPDT: ISIS process is under disable, ignoring pdu
 
-[[ISIS]{lang="EN-US"}]{#struct_0_16293_x2703_x1823258398}[进程处于]{style="font-family:宋体"}[disable]{lang="EN-US"}[状态]{style="font-family:宋体"}[, ]{lang="EN-US"}[丢弃]{style="font-family:宋体"}[LSP/SNP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+ISIS进程处于disable状态, 丢弃LSP/SNP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483837380}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[ISIS-*processId*-UPDT:]{lang="EN-US"}[ Circuit(*circuitName*) is not operationally on, ignoring pdu]{lang="EN-US"}]{#struct_0_16293_x2703_811391590}
+ISIS-*processId*-UPDT: Circuit(*circuitName*) is not operationally on, ignoring pdu
 
-[[LSP/SNP]{lang="EN-US"}]{#struct_0_16293_x2703_1618902438}[报文接收接口处于非工作状态]{style="font-family:宋体"}[, ]{lang="EN-US"}[丢弃]{style="font-family:宋体"}[LSP/SNP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+LSP/SNP报文接收接口处于非工作状态, 丢弃LSP/SNP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x195224888}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483902916}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP/SNP]{lang="EN-US"}[报文接收接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：LSP/SNP报文接收接口名
 
-[[ISIS-*processId*-UPDT: Circuit(*circuitName*) is silence, ignoring pdu]{lang="EN-US"}]{#struct_0_16293_x2703_900167497}
+ISIS-*processId*-UPDT: Circuit(*circuitName*) is silence, ignoring pdu
 
-[[LSP/SNP]{lang="EN-US"}]{#struct_0_16293_x2703_x1317792843}[报文接收接口处于]{style="font-family:宋体"}[silence]{lang="EN-US"}[状态]{style="font-family:宋体"}[, ]{lang="EN-US"}[丢弃]{style="font-family:宋体"}[LSP/SNP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+LSP/SNP报文接收接口处于silence状态, 丢弃LSP/SNP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_1061992155}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_x1483968452}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP/SNP]{lang="EN-US"}[报文接收接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：LSP/SNP报文接收接口名
 
-[[ISIS-*processId*-UPDT: No active adjacency entry with such snpa(*mac-address*) on the cicuit(*circuitName*)]{lang="EN-US"}]{#struct_0_16293_x2703_52273802}
+ISIS-*processId*-UPDT: No active adjacency entry with such snpa(*mac-address*) on the cicuit(*circuitName*)
 
-[[LSP/SNP]{lang="EN-US"}]{#struct_0_16293_x2703_x30071902}[报文发送端不是接收接口上的活动邻居]{style="font-family:宋体"}
+LSP/SNP报文发送端不是接收接口上的活动邻居
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1482985412}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mac-address]{lang="EN-US"}*]{#struct_0_16293_x2703_1853922951}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP/SNP]{lang="EN-US"}[报文发送端]{lang="EN-US" style="font-family:
-  宋体"}[MAC]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:
-  宋体"}
+·*mac-address*：LSP/SNP报文发送端MAC地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_1000880825}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP/SNP]{lang="EN-US"}[报文接收接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：LSP/SNP报文接收接口名
 
-[[ISIS-*processId*-UPDT: Parsed area address *areaAddress*]{lang="EN-US"}]{#struct_0_16293_x2703_x1483050948}
+ISIS-*processId*-UPDT: Parsed area address *areaAddress*
 
-[[从]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_797536078}[报文中解析区域地址]{style="font-family:宋体"}
+从LSP报文中解析区域地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_323951400}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[areaAddress]{lang="EN-US"}*]{#struct_0_16293_x2703_192297618}[：区域地址]{lang="EN-US" style="font-family:
-  宋体"}
+·*areaAddress*：区域地址
 
-[[ISIS-*processId*-UPDT:]{lang="EN-US"}[ Parsed neighbor *neighborSourceId*]{lang="EN-US"}]{#struct_0_16293_x2703_82574244}
+ISIS-*processId*-UPDT: Parsed neighbor *neighborSourceId*
 
-[[从]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_x1715715155}[报文中解析邻居]{style="font-family:宋体"}
+从LSP报文中解析邻居
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_868306888}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[neighborSourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_82508708}[：邻居的]{lang="EN-US" style="font-family:
-  宋体"}[Source ID]{lang="EN-US"}
+·*neighborSourceId*：邻居的Source ID
 
-[[ISIS-*processId*-UPDT: Parsed ip prefix *ipAddressPair*]{lang="EN-US"}]{#struct_0_16293_x2703_x1742334427}
+ISIS-*processId*-UPDT: Parsed ip prefix *ipAddressPair*
 
-[[从]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_587572116}[报文中解析]{style="font-family:宋体"}[IP]{lang="EN-US"}[前缀]{style="font-family:宋体"}
+从LSP报文中解析IP前缀
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_82443172}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipAddressPair]{lang="EN-US"}*]{#struct_0_16293_x2703_x2123108900}[：]{lang="EN-US" style="font-family:
-  宋体"}[IP]{lang="EN-US"}[地址地址和掩码长度]{lang="EN-US" style="font-family:
-  宋体"}
+·*ipAddressPair*：IP地址地址和掩码长度
 
-[[ISIS-*processId*-UPDT: (MT]{lang="EN-US"}[ *topologyId*) *updateType* *Level* spf node(*nodeSourceId*)]{lang="EN-US"}]{#struct_0_16293_x2703_82377636}
+ISIS-*processId*-UPDT: (MT *topologyId*) *updateType* *Level* spf node(*nodeSourceId*)
 
-[[向路由计算模块更新]{style="font-family:宋体"}[SPF]{lang="EN-US"}]{#struct_0_16293_x2703_x1056474433}[节点]{style="font-family:宋体"}
+向路由计算模块更新SPF节点
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1035024704}[：]{lang="EN-US" style="font-family:宋体"}[ IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*： IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topologyId]{lang="EN-US"}*]{#struct_0_16293_x2703_82312100}[：]{lang="EN-US" style="font-family:宋体"}[SPF]{lang="EN-US"}[节点所在的拓扑]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*topologyId*：SPF节点所在的拓扑ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[updateType]{lang="EN-US"}*]{#struct_0_16293_x2703_853476905}[：更新类型（添加]{lang="EN-US" style="font-family:宋体"}[/]{lang="EN-US"}[删除]{lang="EN-US" style="font-family:宋体"}[/]{lang="EN-US"}[修改）]{lang="EN-US" style="font-family:宋体"}
+·*updateType*：更新类型（添加/删除/修改）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_x1846321446}[：]{lang="EN-US" style="font-family:宋体"}[Level-1/Level-2]{lang="EN-US"}
+·*Level*：Level-1/Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nodeSourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_82246564}[：]{lang="EN-US" style="font-family:
-  宋体"}[SPF]{lang="EN-US"}[节点的]{lang="EN-US" style="font-family:
-  宋体"}[Source ID]{lang="EN-US"}
+·*nodeSourceId*：SPF节点的Source ID
 
-[[ISIS-*processId*-UPDT: (MT *topologyId*) *updateType* *Level* att route advertised by *advertisednodeSourceId*]{lang="EN-US"}]{#struct_0_16293_x2703_x1097319500}
+ISIS-*processId*-UPDT: (MT *topologyId*) *updateType* *Level* att route advertised by *advertisednodeSourceId*
 
-[[向路由计算模块更新默认路由]{style="font-family:宋体"}]{#struct_0_16293_x2703_493145454}
+向路由计算模块更新默认路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_82181028}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topologyId]{lang="EN-US"}*]{#struct_0_16293_x2703_2119699706}[：发布默认路由的]{lang="EN-US" style="font-family:宋体"}[SPF]{lang="EN-US"}[节点所在的拓扑]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*topologyId*：发布默认路由的SPF节点所在的拓扑ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[updateType]{lang="EN-US"}*]{#struct_0_16293_x2703_82115492}[：更新类型（添加]{lang="EN-US" style="font-family:宋体"}[/]{lang="EN-US"}[删除）]{lang="EN-US" style="font-family:宋体"}
+·*updateType*：更新类型（添加/删除）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_x854841751}[：]{lang="EN-US" style="font-family:宋体"}[Level-1/Level-2]{lang="EN-US"}
+·*Level*：Level-1/Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[advertisednodeSourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_1210351213}[：发布默认路由的]{lang="EN-US" style="font-family:宋体"}[SPF]{lang="EN-US"}[节点的]{lang="EN-US" style="font-family:宋体"}[Source ID]{lang="EN-US"}
+·*advertisednodeSourceId*：发布默认路由的SPF节点的Source ID
 
-[[ISIS-*processId*-UPDT: (MT *topologyId*) Update *Level*  area address advertised by *advertisednodeSourceId*]{lang="EN-US"}]{#struct_0_16293_x2703_83098532}
+ISIS-*processId*-UPDT: (MT *topologyId*) Update *Level*  area address advertised by *advertisednodeSourceId*
 
-[[向路由计算模块更新区域地址]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1119510429}
+向路由计算模块更新区域地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_405993105}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topologyId]{lang="EN-US"}*]{#struct_0_16293_x2703_83032996}[：发布默认路由的]{lang="EN-US" style="font-family:宋体"}[SPF]{lang="EN-US"}[节点所在的拓扑]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*topologyId*：发布默认路由的SPF节点所在的拓扑ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_x734908821}[：]{lang="EN-US" style="font-family:宋体"}[Level-1/Level-2]{lang="EN-US"}
+·*Level*：Level-1/Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[advertisednodeSourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_82574245}[：发布默认路由的]{lang="EN-US" style="font-family:宋体"}[SPF]{lang="EN-US"}[节点的]{lang="EN-US" style="font-family:宋体"}[Source ID]{lang="EN-US"}
+·*advertisednodeSourceId*：发布默认路由的SPF节点的Source ID
 
-[[ISIS-*processId*-UPDT: (MT *topologyId*) *updateType* *Level* spf link(*sourceId*-\>*destId*)]{lang="EN-US"}]{#struct_0_16293_x2703_240599981}
+ISIS-*processId*-UPDT: (MT *topologyId*) *updateType* *Level* spf link(*sourceId*-\>*destId*)
 
-[[向路由计算模块更新]{style="font-family:宋体"}[SPF Link]{lang="EN-US"}]{#struct_0_16293_x2703_82508709}
+向路由计算模块更新SPF Link
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_596317733}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topologyId]{lang="EN-US"}*]{#struct_0_16293_x2703_x856984859}[：发布默认路由的]{lang="EN-US" style="font-family:宋体"}[SPF]{lang="EN-US"}[节点所在的拓扑]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*topologyId*：发布默认路由的SPF节点所在的拓扑ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[updateType]{lang="EN-US"}*]{#struct_0_16293_x2703_82443173}[：更新类型（添加]{lang="EN-US" style="font-family:宋体"}[/]{lang="EN-US"}[删除）]{lang="EN-US" style="font-family:宋体"}
+·*updateType*：更新类型（添加/删除）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_215543260}[：]{lang="EN-US" style="font-family:宋体"}[Level-1/Level-2]{lang="EN-US"}
+·*Level*：Level-1/Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}*[sourceId]{lang="FR"}*]{#struct_0_16293_x2703_82377637}[：]{lang="EN-US" style="font-family:宋体"}[源]{lang="EN-US" style="font-family:宋体"}[Source ID]{lang="FR"}
+·*sourceId*：源Source ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}*[destId]{lang="FR"}*]{#struct_0_16293_x2703_899840703}[：]{lang="EN-US" style="font-family:宋体"}[目的]{lang="EN-US" style="font-family:宋体"}[Source ID]{lang="FR"}
+·*destId*：目的Source ID
 
-[[ISIS-*processId*-UPDT: (MT *topologyId*) *updateType* *Level*  ip prefix(*ipAddressPair*) advertised by *advertisednodeSourceId*  in tlv type *tlvType*]{lang="EN-US"}]{#struct_0_16293_x2703_x858069396}
+ISIS-*processId*-UPDT: (MT *topologyId*) *updateType* *Level*  ip prefix(*ipAddressPair*) advertised by *advertisednodeSourceId*  in tlv type *tlvType*
 
-[[向路由计算模块更新路由前缀]{style="font-family:宋体"}]{#struct_0_16293_x2703_82312101}
+向路由计算模块更新路由前缀
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1485175255}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[topologyId]{lang="EN-US"}*]{#struct_0_16293_x2703_82246565}[：发布默认路由的]{lang="EN-US" style="font-family:宋体"}[SPF]{lang="EN-US"}[节点所在的拓扑]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*topologyId*：发布默认路由的SPF节点所在的拓扑ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[updateType]{lang="EN-US"}*]{#struct_0_16293_x2703_1241332660}[：更新类型（添加]{lang="EN-US" style="font-family:宋体"}[/]{lang="EN-US"}[删除）]{lang="EN-US" style="font-family:宋体"}
+·*updateType*：更新类型（添加/删除）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Level]{lang="EN-US"}*]{#struct_0_16293_x2703_82181029}[：]{lang="EN-US" style="font-family:宋体"}[Level-1/Level-2]{lang="EN-US"}
+·*Level*：Level-1/Level-2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ipAddressPair]{lang="EN-US"}*]{#struct_0_16293_x2703_163384570}[：]{lang="EN-US" style="font-family:
-  宋体"}[IP]{lang="EN-US"}[路由前缀]{lang="EN-US" style="font-family:
-  宋体"}
+·*ipAddressPair*：IP路由前缀
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[advertisednodeSourceId]{lang="EN-US"}*]{#struct_0_16293_x2703_82115493}[：发布路由前缀的]{lang="EN-US" style="font-family:宋体"}[SPF]{lang="EN-US"}[节点的]{lang="EN-US" style="font-family:宋体"}[Source ID]{lang="EN-US"}
+·*advertisednodeSourceId*：发布路由前缀的SPF节点的Source ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[tlvType]{lang="EN-US"}*]{#struct_0_16293_x2703_1101473385}[：发布路由前缀的]{style="font-family:宋体"}[TLV]{lang="EN-US"}[类型]{style="font-family:宋体"}
+·*tlvType*：发布路由前缀的TLV类型
 
-[[ISIS-*processId*-UPDT: Own lsp *systemId*.]{lang="EN-US"}[ *pseudonodeNumber*-*lspNumber* processed, newer than lsdb copy]{lang="EN-US"}]{#struct_0_16293_x2703_x372461869}
+ISIS-*processId*-UPDT: Own lsp *systemId*. *pseudonodeNumber*-*lspNumber* processed, newer than lsdb copy
 
-[[处理比]{style="font-family:宋体"}[LSDB]{lang="EN-US"}]{#struct_0_16293_x2703_83098533}[中新的本地生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+处理比LSDB中新的本地生成的LSP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_836804707}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[systemId]{lang="EN-US"}*]{#struct_0_16293_x2703_83032997}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[发送设备的]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}
+·*systemId*：LSP发送设备的System ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[pseudonodeNumber]{lang="EN-US"}*]{#struct_0_16293_x2703_1221406315}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP]{lang="EN-US"}[发送设备的伪节点]{lang="EN-US" style="font-family:
-  宋体"}[ID]{lang="EN-US"}
+·*pseudonodeNumber*：LSP发送设备的伪节点ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspNumber]{lang="EN-US"}*]{#struct_0_16293_x2703_82574242}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[报文的分片号]{lang="EN-US" style="font-family:宋体"}
+·*lspNumber*：LSP报文的分片号
 
-[[ISIS-*processId*-UPDT: Other lsp *systemId*.]{lang="EN-US"}[ *pseudonodeNumber*-*lspNumber* processed, newer than lsdb copy]{lang="EN-US"}]{#struct_0_16293_x2703_x1333378131}
+ISIS-*processId*-UPDT: Other lsp *systemId*. *pseudonodeNumber*-*lspNumber* processed, newer than lsdb copy
 
-[[处理比]{style="font-family:宋体"}[LSDB]{lang="EN-US"}]{#struct_0_16293_x2703_82508706}[中新的非本地生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+处理比LSDB中新的非本地生成的LSP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1359997403}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[systemId]{lang="EN-US"}*]{#struct_0_16293_x2703_82443170}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[发送设备的]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}
+·*systemId*：LSP发送设备的System ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[pseudonodeNumber]{lang="EN-US"}*]{#struct_0_16293_x2703_x1740771876}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP]{lang="EN-US"}[发送设备的伪节点]{lang="EN-US" style="font-family:
-  宋体"}[ID]{lang="EN-US"}
+·*pseudonodeNumber*：LSP发送设备的伪节点ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspNumber]{lang="EN-US"}*]{#struct_0_16293_x2703_82377634}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[报文的分片号]{lang="EN-US" style="font-family:宋体"}
+·*lspNumber*：LSP报文的分片号
 
-[[ISIS-*processId*-UPDT:]{lang="EN-US"}[ Lsp *systemId*. *pseudonodeNumber*-*lspNumber* processed, older than lsdb copy]{lang="EN-US"}]{#struct_0_16293_x2703_x674137409}
+ISIS-*processId*-UPDT: Lsp *systemId*. *pseudonodeNumber*-*lspNumber* processed, older than lsdb copy
 
-[[处理比]{style="font-family:宋体"}[LSDB]{lang="EN-US"}]{#struct_0_16293_x2703_82312098}[中旧的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+处理比LSDB中旧的LSP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_1246377574}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[systemId]{lang="EN-US"}*]{#struct_0_16293_x2703_82246562}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[发送设备的]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}
+·*systemId*：LSP发送设备的System ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[pseudonodeNumber]{lang="EN-US"}*]{#struct_0_16293_x2703_2050636724}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP]{lang="EN-US"}[发送设备的伪节点]{lang="EN-US" style="font-family:
-  宋体"}[ID]{lang="EN-US"}
+·*pseudonodeNumber*：LSP发送设备的伪节点ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspNumber]{lang="EN-US"}*]{#struct_0_16293_x2703_82181026}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[报文的分片号]{lang="EN-US" style="font-family:宋体"}
+·*lspNumber*：LSP报文的分片号
 
-[[ISIS-*processId*-UPDT: Lsp *systemId*.]{lang="EN-US"}[ *pseudonodeNumber*-*lspNumber* processed, same as lsdb copy]{lang="EN-US"}]{#struct_0_16293_x2703_x556659462}
+ISIS-*processId*-UPDT: Lsp *systemId*. *pseudonodeNumber*-*lspNumber* processed, same as lsdb copy
 
-[[处理和]{style="font-family:宋体"}[LSDB]{lang="EN-US"}]{#struct_0_16293_x2703_82115490}[中新旧一样的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+处理和LSDB中新旧一样的LSP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1237178775}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[systemId]{lang="EN-US"}*]{#struct_0_16293_x2703_83098530}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[发送设备的]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}
+·*systemId*：LSP发送设备的System ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[pseudonodeNumber]{lang="EN-US"}*]{#struct_0_16293_x2703_x1501847453}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP]{lang="EN-US"}[发送设备的伪节点]{lang="EN-US" style="font-family:
-  宋体"}[ID]{lang="EN-US"}
+·*pseudonodeNumber*：LSP发送设备的伪节点ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspNumber]{lang="EN-US"}*]{#struct_0_16293_x2703_83032994}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[报文的分片号]{lang="EN-US" style="font-family:宋体"}
+·*lspNumber*：LSP报文的分片号
 
-[[ISIS-*processId*-UPDT:]{lang="EN-US"}[ Own lsp *systemId*. *pseudonodeNumber*-*lspNumber* processed, no exist in lsdb]{lang="EN-US"}]{#struct_0_16293_x2703_x352571797}
+ISIS-*processId*-UPDT: Own lsp *systemId*. *pseudonodeNumber*-*lspNumber* processed, no exist in lsdb
 
-[[处理]{style="font-family:宋体"}[LSDB]{lang="EN-US"}]{#struct_0_16293_x2703_82574243}[中不存在的本地生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+处理LSDB中不存在的本地生成的LSP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_622937005}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[systemId]{lang="EN-US"}*]{#struct_0_16293_x2703_82508707}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[发送设备的]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}
+·*systemId*：LSP发送设备的System ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[pseudonodeNumber]{lang="EN-US"}*]{#struct_0_16293_x2703_82443171}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP]{lang="EN-US"}[发送设备的伪节点]{lang="EN-US" style="font-family:
-  宋体"}[ID]{lang="EN-US"}
+·*pseudonodeNumber*：LSP发送设备的伪节点ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspNumber]{lang="EN-US"}*]{#struct_0_16293_x2703_597880284}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[报文的分片号]{lang="EN-US" style="font-family:宋体"}
+·*lspNumber*：LSP报文的分片号
 
-[[ISIS-*processId*-UPDT: Other lsp *systemId*.]{lang="EN-US"}[ *pseudonodeNumber*-*lspNumber* processed, no exist in lsdb]{lang="EN-US"}]{#struct_0_16293_x2703_82377635}
+ISIS-*processId*-UPDT: Other lsp *systemId*. *pseudonodeNumber*-*lspNumber* processed, no exist in lsdb
 
-[[处理]{style="font-family:宋体"}[LSDB]{lang="EN-US"}]{#struct_0_16293_x2703_1282177727}[中不存在的非本地生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+处理LSDB中不存在的非本地生成的LSP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_82312099}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[systemId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1092274586}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[发送设备的]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}
+·*systemId*：LSP发送设备的System ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[pseudonodeNumber]{lang="EN-US"}*]{#struct_0_16293_x2703_82246563}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP]{lang="EN-US"}[发送设备的伪节点]{lang="EN-US" style="font-family:
-  宋体"}[ID]{lang="EN-US"}
+·*pseudonodeNumber*：LSP发送设备的伪节点ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspNumber]{lang="EN-US"}*]{#struct_0_16293_x2703_94321588}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[报文的分片号]{lang="EN-US" style="font-family:宋体"}
+·*lspNumber*：LSP报文的分片号
 
-[[ISIS-*processId*-UPDT: *lspContent*]{lang="EN-US"}]{#struct_0_16293_x2703_82181027}
+ISIS-*processId*-UPDT: *lspContent*
 
-[[接收到]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_82115491}[报文]{style="font-family:宋体"}
+接收到LSP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_719136361}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[ISIS-*processId*-UPDT: Lsp seq number is ZERO]{lang="EN-US"}]{#struct_0_16293_x2703_83098531}
+ISIS-*processId*-UPDT: Lsp seq number is ZERO
 
-[[发送序列号为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_16293_x2703_454467683}[的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+发送序列号为0的LSP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_83032995}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[ISIS-*processId*-UPDT: Flooding *pduName* *systemId*.]{lang="EN-US"}[ *pseudonodeNumber*-*lspNumber* on the circuit *circuitName*]{lang="EN-US"}]{#struct_0_16293_x2703_1603743339}
+ISIS-*processId*-UPDT: Flooding *pduName* *systemId*. *pseudonodeNumber*-*lspNumber* on the circuit *circuitName*
 
-[[扩散]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_82574240}[报文]{style="font-family:宋体"}
+扩散LSP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_82508704}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[pduName]{lang="EN-US"}*]{#struct_0_16293_x2703_x977660379}[：]{lang="EN-US" style="font-family:宋体"}[L1 LSP/L2 LSP]{lang="EN-US"}
+·*pduName*：L1 LSP/L2 LSP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[systemId]{lang="EN-US"}*]{#struct_0_16293_x2703_82443168}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[发送设备的]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}
+·*systemId*：LSP发送设备的System ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[pseudonodeNumber]{lang="EN-US"}*]{#struct_0_16293_x2703_x1704036031}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP]{lang="EN-US"}[发送设备的伪节点]{lang="EN-US" style="font-family:
-  宋体"}[ID]{lang="EN-US"}
+·*pseudonodeNumber*：LSP发送设备的伪节点ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspNumber]{lang="EN-US"}*]{#struct_0_16293_x2703_82377632}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[报文的分片号]{lang="EN-US" style="font-family:宋体"}
+·*lspNumber*：LSP报文的分片号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_82312096}[：扩散接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：扩散接口名
 
-[[ISIS-*processId*-UPDT: Circuit(*circuitName*) is silence, lsp not sent]{lang="EN-US"}]{#struct_0_16293_x2703_x1901578650}
+ISIS-*processId*-UPDT: Circuit(*circuitName*) is silence, lsp not sent
 
-[[接口处于]{style="font-family:宋体"}[silence]{lang="EN-US"}]{#struct_0_16293_x2703_82246560}[状态]{style="font-family:宋体"}[, LSP]{lang="EN-US"}[不在这个接口上进行扩散]{style="font-family:宋体"}
+接口处于silence状态, LSP不在这个接口上进行扩散
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_x1861993548}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_82181024}[：扩散接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：扩散接口名
 
-[[ISIS-*processId*-UPDT:]{lang="EN-US"}[ Send *pduName* lspid=*systemId*. *pseudonodeNumber*-*lspNumber* seq=*lspSequenceNumber* ht=*holdTime* from snpa *mac-address* on circuit *circuitName*]{lang="EN-US"}]{#struct_0_16293_x2703_x174322438}
+ISIS-*processId*-UPDT: Send *pduName* lspid=*systemId*. *pseudonodeNumber*-*lspNumber* seq=*lspSequenceNumber* ht=*holdTime* from snpa *mac-address* on circuit *circuitName*
 
-[[发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_82115488}[报文]{style="font-family:宋体"}
+发送LSP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_83098528}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[pduName]{lang="EN-US"}*]{#struct_0_16293_x2703_1593584584}[：]{lang="EN-US" style="font-family:宋体"}[L1 LSP/L2 LSP]{lang="EN-US"}
+·*pduName*：L1 LSP/L2 LSP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[systemId]{lang="EN-US"}*]{#struct_0_16293_x2703_83032992}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[发送设备的]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}
+·*systemId*：LSP发送设备的System ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[pseudonodeNumber]{lang="EN-US"}*]{#struct_0_16293_x2703_82574241}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP]{lang="EN-US"}[发送设备的伪节点]{lang="EN-US" style="font-family:
-  宋体"}[ID]{lang="EN-US"}
+·*pseudonodeNumber*：LSP发送设备的伪节点ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspNumber]{lang="EN-US"}*]{#struct_0_16293_x2703_1005274029}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[报文的分片号]{lang="EN-US" style="font-family:宋体"}
+·*lspNumber*：LSP报文的分片号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[lspSequenceNumber]{lang="EN-US"}*]{#struct_0_16293_x2703_82508705}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP]{lang="EN-US"}[报文的序列号]{lang="EN-US" style="font-family:
-  宋体"}
+·*lspSequenceNumber*：LSP报文的序列号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[holdTime]{lang="EN-US"}*]{#struct_0_16293_x2703_1360991781}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[报文的存活时间]{lang="EN-US" style="font-family:宋体"}
+·*holdTime*：LSP报文的存活时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mac-address]{lang="EN-US"}*]{#struct_0_16293_x2703_82443169}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP]{lang="EN-US"}[报文发送接口的]{lang="EN-US" style="font-family:
-  宋体"}[MAC]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+·*mac-address*：LSP报文发送接口的MAC地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[circuitName]{lang="EN-US"}*]{#struct_0_16293_x2703_82377633}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSP]{lang="EN-US"}[报文发送接口名]{lang="EN-US" style="font-family:
-  宋体"}
+·*circuitName*：LSP报文发送接口名
 
-[[ISIS-*processId*-UPDT: *lspContent*]{lang="EN-US"}]{#struct_0_16293_x2703_1664514751}
+ISIS-*processId*-UPDT: *lspContent*
 
-[[发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_16293_x2703_82312097}[报文]{style="font-family:宋体"}
+发送LSP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[processId]{lang="EN-US"}*]{#struct_0_16293_x2703_82246561}[：]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*processId*：IS-IS进程ID
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16293_x2703_476658612}
+\# Router A与Router B相连，在Router A上创建IS-IS进程，SystemID为3333.3333.3333、路由器类型为**level-1-2**，并在GigabitEthernet1/0/2上使能IS-IS功能，接口的IP地址为3.3.3.166/24；在Router B上创建IS-IS进程，SystemID为FFFF.FFFF.FFFF、路由器类型为**level-1-2**，并在GigabitEthernet1/0/1使能IS-IS功能，接口的IP地址为3.3.3.89/24；Router A与Router B在同一个区域49。在Router A上打开IS-IS LSP报文调试信息开关。
 
-[[\# Router A]{lang="EN-US"}]{#struct_0_16293_x2703_319158927}[与]{style="font-family:宋体"}[Router B]{lang="EN-US"}[相连，在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[上创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程，]{style="font-family:宋体"}[SystemID]{lang="EN-US"}[为]{style="font-family:宋体"}[3333.3333.3333]{lang="EN-US"}[、路由器类型为]{style="font-family:宋体"}**[level-1-2]{lang="EN-US"}**[，并在]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[上使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能，接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[3.3.3.166/24]{lang="EN-US"}[；在]{style="font-family:宋体"}[Router B]{lang="EN-US"}[上创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程，]{style="font-family:宋体"}[SystemID]{lang="EN-US"}[为]{style="font-family:宋体"}[FFFF.FFFF.FFFF]{lang="EN-US"}[、路由器类型为]{style="font-family:宋体"}**[level-1-2]{lang="EN-US"}**[，并在]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能，接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[3.3.3.89/24]{lang="EN-US"}[；]{style="font-family:宋体"}[Router A]{lang="EN-US"}[与]{style="font-family:宋体"}[Router B]{lang="EN-US"}[在同一个区域]{style="font-family:宋体"}[49]{lang="EN-US"}[。在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[上打开]{style="font-family:宋体"}[IS-IS LSP]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}
+\<RouterA\> debugging isis update-packet
 
-[[\<RouterA\> debugging isis update-packet]{lang="EN-US"}]{#struct_0_16293_x2703_1163736860}
+\*Apr  8 03:39:05:325 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 03:39:05:325 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-UPDT: Receive L1 LSP lspid=ffff.ffff.ffff.00-01 seq=0x00000002 ht=1061 from snpa 0000-5e14-0200 on circuit GigabitEthernet1/0/2
 
-[ISIS-1-UPDT: Receive L1 LSP lspid=ffff.ffff.ffff.00-01 seq=0x00000002 ht=1061 from snpa 0000-5e14-0200 on circuit GigabitEthernet1/0/2]{lang="EN-US"}
+\*Apr  8 03:39:06:051 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 03:39:06:051 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-UPDT: Receive L2 LSP lspid=ffff.ffff.ffff.00-01 seq=0x00000002 ht=1059 from snpa 0000-5e14-0200 on circuit GigabitEthernet1/0/2
 
-[ISIS-1-UPDT: Receive L2 LSP lspid=ffff.ffff.ffff.00-01 seq=0x00000002 ht=1059 from snpa 0000-5e14-0200 on circuit GigabitEthernet1/0/2]{lang="EN-US"}
+*// 在接口GigabitEthernet1/0/2上接收到Level-1 lspid=ffff.ffff.ffff.00-01的LSP报文和Level-2 lspid=ffff.ffff.ffff.00-01的LSP报文*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_1406603027}*[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[上接收到]{style="font-family:宋体"}[Level-1 lspid=ffff.ffff.ffff.00-01]{lang="EN-US"}[的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文和]{style="font-family:宋体"}[Level-2 lspid=ffff.ffff.ffff.00-01]{lang="EN-US"}[的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文]{style="font-family:宋体"}*
+\*Apr  8 03:39:10:571 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[[\*Apr  8 03:39:10:571 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}]{#struct_0_16293_x2703_82181025}
+ISIS-1-UPDT: Flooding L2 LSP 3333.3333.3333.00-00 on the circuit GigabitEthernet1/0/2
 
-[ISIS-1-UPDT: Flooding L2 LSP 3333.3333.3333.00-00 on the circuit GigabitEthernet1/0/2]{lang="EN-US"}
+\*Apr  8 03:39:10:571 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 03:39:10:571 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-UPDT: Flooding L1 LSP 3333.3333.3333.00-00 on the circuit GigabitEthernet1/0/2
 
-[ISIS-1-UPDT: Flooding L1 LSP 3333.3333.3333.00-00 on the circuit GigabitEthernet1/0/2]{lang="EN-US"}
+\*Apr  8 03:39:10:601 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 03:39:10:601 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-UPDT: Send L1 LSP lspid=3333.3333.3333.00-00 seq=0x00000004 ht=1199 from snpa 0000-0e16-0200 on circuit GigabitEthernet1/0/2
 
-[ISIS-1-UPDT: Send L1 LSP lspid=3333.3333.3333.00-00 seq=0x00000004 ht=1199 from snpa 0000-0e16-0200 on circuit GigabitEthernet1/0/2]{lang="EN-US"}
+\*Apr  8 03:39:10:601 2011 RouterA ISIS/7/ISISDBG: -MDC=1;
 
-[\*Apr  8 03:39:10:601 2011 RouterA ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US"}
+ISIS-1-UPDT: Send L2 LSP lspid=3333.3333.3333.00-00 seq=0x00000004 ht=1199 from snpa 0000-0e16-0200 on circuit GigabitEthernet1/0/2
 
-[ISIS-1-UPDT: Send L2 LSP lspid=3333.3333.3333.00-00 seq=0x00000004 ht=1199 from snpa 0000-0e16-0200 on circuit GigabitEthernet1/0/2]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x2130637574}*[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[上发送]{style="font-family:宋体"}[Level-1 lspid=3333.3333.3333.00-00]{lang="EN-US"}[的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文和]{style="font-family:宋体"}[Level-2 lspid=3333.3333.3333.00-00]{lang="EN-US"}[的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文]{style="font-family:宋体"}*
-
-::: {#143436581 .myid}
-[]{#_Toc404788113}[]{#struct_0_16293_x2703_1937511197}
+*// 在接口GigabitEthernet1/0/2上发送Level-1 lspid=3333.3333.3333.00-00的LSP报文和Level-2 lspid=3333.3333.3333.00-00的LSP报文*
 
 **IS-IS调试命令 \-- IS-IS调试命令 \-- debugging osi**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16293_x2703_1578999782}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_16293_x2703_x1097196940}
+集中式设备：
 
-[**[debugging osi]{lang="EN-US"}**]{#struct_0_16293_x2703_564792658}
+**[debugging osi**]
 
-[**[undo debugging osi]{lang="EN-US"}**]{#struct_0_16293_x2703_2048423456}
+**[undo debugging osi**]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_16293_x2703_1088799547}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[debugging osi ]{lang="EN-US"}**[\[ **slot** ]{lang="EN-US"}]{#struct_0_16293_x2703_x1252505896}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[ \]]{lang="EN-US"}
+**[debugging osi ** **slot** ]slot-number{.commandparameterChar}
 
-[**[undo debugging osi]{lang="EN-US"}**[ \[ **slot** ]{lang="EN-US"}]{#struct_0_16293_x2703_994368732}[[slot-number ]{lang="EN-US"}]{.commandparameterChar}[\]]{lang="EN-US"}
+**[undo debugging osi** [ **slot** ]slot-number ]{.commandparameterChar}
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_16293_x2703_1937052446}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[debugging osi]{lang="EN-US"}**[ \[ **chassis** ]{lang="EN-US"}]{#struct_0_16293_x2703_x1552286123}[[chassis-number]{lang="EN-US"}]{.commandparameterChar}[ **slot** *slot-number* \]]{lang="EN-US"}
+**[debugging osi** [ **chassis** ]chassis-number]{.commandparameterChar} **slot** *slot-number*
 
-[**[undo debugging osi]{lang="EN-US"}**[ \[ **chassis** *chassis-number* **slot** *slot-number* \]]{lang="EN-US"}]{#struct_0_16293_x2703_26334393}
+**[undo debugging osi** [ **chassis** *chassis-number* **slot** *slot-number* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16293_x2703_314062142}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_16293_x2703_645509171}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16293_x2703_1584108274}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16293_x2703_1310249599}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16293_x2703_x384485989}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x551056391}
+【参数】
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_16293_x2703_x664914437}[：单板所在的槽位号。如果未指定本参数，将打开所有单板]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的]{style="font-family:宋体"}[报文调试信息开关。]{style="font-family:宋体"}[（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot ***slot-number*]：单板所在的槽位号。如果未指定本参数，将打开所有单板OSI连接的报文调试信息开关。（分布式设备－独立运行模式）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_16293_x2703_1936986910}[：设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。]{style="font-family:宋体"}[如果未指定本参数，将打开所有成员设备]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的]{style="font-family:宋体"}[报文调试信息开关。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：设备在IRF中的成员编号。如果未指定本参数，将打开所有成员设备OSI连接的报文调试信息开关。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_16293_x2703_1492457964}[：设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或]{style="font-family:宋体"}[者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号]{style="font-family:宋体"}[。]{style="font-family:宋体"}[如果未指定本参数，将打开所有成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[的]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的]{style="font-family:宋体"}[报文调试信息开关。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：设备在IRF中的成员编号或者PEX的虚拟槽位号。如果未指定本参数，将打开所有成员设备/PEX的OSI连接的报文调试信息开关。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_16293_x2703_1229007551}[：指定成员设备上的指定单板。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。]{style="font-family:宋体"}[如果未指定本参数，将打开所有成员设备上所有单板]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的]{style="font-family:宋体"}[报文调试信息开关。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：指定成员设备上的指定单板。*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果未指定本参数，将打开所有成员设备上所有单板OSI连接的报文调试信息开关。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_16293_x2703_x1750348606}[：指定单板。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。]{style="font-family:宋体"}[如果未指定本参数，将打开所有单板]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的]{style="font-family:宋体"}[报文调试信息开关。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：指定单板。*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或者PEX所在的槽位号。如果未指定本参数，将打开所有单板OSI连接的报文调试信息开关。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_16293_x2703_x322388152}
+【描述】
 
-[**[debugging osi]{lang="EN-US"}**]{#struct_0_16293_x2703_1765189076}[命令用来]{style="font-family:宋体"}[打开]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的]{style="font-family:宋体"}[报文调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}**[undo debugging osi]{lang="EN-US"}**[命令用来]{style="font-family:宋体"}[关闭]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的]{style="font-family:宋体"}[报文调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[debugging osi**]命令用来打开OSI连接的报文调试信息开关。**undo debugging osi**命令用来关闭OSI连接的报文调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[OSI]{lang="EN-US"}]{#struct_0_16293_x2703_1678975860}[连接的]{style="font-family:宋体"}[报文]{style="font-family:宋体"}[调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，OSI连接的报文调试信息开关处于关闭状态。
 
-[[表1-11 ]{lang="EN-US"}[debugging osi]{lang="EN-US"}]{#struct_0_16293_x2703_2021757366}[命令输出信息描述表]{style="font-family:黑体"}
+表1-11 debugging osi命令输出信息描述表
 
-[]{#table_struct_0_x651309903}[[字段]{style="font-family:黑体"}]{#struct_0_16293_x2703_x444288341}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16293_x2703_1937183518}
+描述
 
-[[OSI Input]{lang="EN-US"}]{#struct_0_16293_x2703_1991543192}
+OSI Input
 
-[[接收报文]{style="font-family:宋体"}]{#struct_0_16293_x2703_1937117982}
+接收报文
 
-[[OSI Output]{lang="EN-US"}]{#struct_0_16293_x2703_1945351971}
+OSI Output
 
-[[发送报文]{style="font-family:宋体"}]{#struct_0_16293_x2703_x648562541}
+发送报文
 
-[[IN IF]{lang="EN-US"}]{#struct_0_16293_x2703_1937314590}
+IN IF
 
-[[接收报文的入接口]{style="font-family:宋体"}]{#struct_0_16293_x2703_1217282763}
+接收报文的入接口
 
-[[OUT IF]{lang="EN-US"}]{#struct_0_16293_x2703_1832393779}
+OUT IF
 
-[[发送报文的出接口]{style="font-family:宋体"}]{#struct_0_16293_x2703_1937249054}
+发送报文的出接口
 
-[[Packet Length]{lang="EN-US"}]{#struct_0_16293_x2703_x30259811}
+Packet Length
 
-[[报文的长度]{style="font-family:宋体"}]{#struct_0_16293_x2703_1937445662}
+报文的长度
 
-[[DstMac]{lang="EN-US"}]{#struct_0_16293_x2703_435998094}
+DstMac
 
-[[报文的目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_16293_x2703_1197018817}[地址]{style="font-family:宋体"}
+报文的目的MAC地址
 
-[[First 32 bytes]{lang="EN-US"}]{#struct_0_16293_x2703_1937380126}
+First 32 bytes
 
-[[报文的前]{style="font-family:宋体"}[32]{lang="EN-US"}]{#struct_0_16293_x2703_27989312}[字节内容]{style="font-family:宋体"}
+报文的前32字节内容
 
-[[The packet is dropped(Service slot is invalid)]{lang="EN-US"}]{#struct_0_16293_x2703_1937576734}
+The packet is dropped(Service slot is invalid)
 
-[[没有]{style="font-family:宋体"}[OSI]{lang="EN-US"}]{#struct_0_16293_x2703_1995254593}[连接时，接收到的报文因为没有业务板处理而被丢弃]{style="font-family:宋体"}
+没有OSI连接时，接收到的报文因为没有业务板处理而被丢弃
 
-[[The packet is dropped(No match mac found)]{lang="EN-US"}]{#struct_0_16293_x2703_1370172242}
+The packet is dropped(No match mac found)
 
-[[接收到的报文因为]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_16293_x2703_1937511198}[地址匹配失败而被丢弃]{style="font-family:宋体"}
+接收到的报文因为MAC地址匹配失败而被丢弃
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16293_x2703_1579196390}
+\# Router A与Router B相连，分别在Router A和Router B上配置IS-IS功能。在Router A上打开OSI连接报文调试信息开关。
 
-[[\# Router A]{lang="EN-US"}]{#struct_0_16293_x2703_x1182732160}[与]{style="font-family:宋体"}[Router B]{lang="EN-US"}[相连，分别在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[和]{style="font-family:宋体"}[Router B]{lang="EN-US"}[上配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能。在]{style="font-family:宋体"}[Router A]{lang="EN-US"}[上打开]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接报文调试信息开关。]{style="font-family:宋体"}
+\<RouterA\> debugging osi
 
-[[\<RouterA\> debugging osi]{lang="EN-US"}]{#struct_0_16293_x2703_1937052443}
+\*Nov  7 14:34:14:913 2012 RouterA SOCKET/7/OSI: -MDC=1-Slot=2;
 
-[\*Nov  7 14:34:14:913 2012 RouterA SOCKET/7/OSI: -MDC=1-Slot=2; ]{lang="EN-US"}
+OSI Input:
 
-[OSI Input:]{lang="EN-US"}
+ IN IF = GigabitEthernet1/0/1, Packet Length = 1497
 
-[ IN IF = GigabitEthernet1/0/1, Packet Length = 1497]{lang="EN-US"}
+ DstMac = 0180-c200-0014
 
-[ DstMac = 0180-c200-0014]{lang="EN-US"}
+ First 32 bytes:
 
-[ First 32 bytes:]{lang="EN-US"}
+ 831b0106 0f010000 01000000 00000200
 
-[ 831b0106 0f010000 01000000 00000200]{lang="EN-US"}
+ 1e05d940 00000000 00010101 02011084
 
-[ 1e05d940 00000000 00010101 02011084]{lang="EN-US"}
+\*Nov  7 14:34:14:913 2012 RouterA SOCKET/7/OSI: -MDC=1;
 
-[\*Nov  7 14:34:14:913 2012 RouterA SOCKET/7/OSI: -MDC=1;]{lang="EN-US"}
+OSI Input:
 
-[OSI Input:]{lang="EN-US"}
+ IN IF = GigabitEthernet1/0/1, Packet Length = 1497
 
-[ IN IF = GigabitEthernet1/0/1, Packet Length = 1497]{lang="EN-US"}
+ DstMac = 0180-c200-0014
 
-[ DstMac = 0180-c200-0014]{lang="EN-US"}
+ First 32 bytes:
 
-[ First 32 bytes:]{lang="EN-US"}
+ 831b0106 0f010000 01000000 00000200
 
-[ 831b0106 0f010000 01000000 00000200]{lang="EN-US"}
+ 1e05d940 00000000 00010101 02011084
 
-[ 1e05d940 00000000 00010101 02011084]{lang="EN-US"}
+\*Nov  7 14:34:16:854 2012 RouterA SOCKET/7/OSI: -MDC=1;
 
-[\*Nov  7 14:34:16:854 2012 RouterA SOCKET/7/OSI: -MDC=1;]{lang="EN-US"}
+OSI Output:
 
-[OSI Output:]{lang="EN-US"}
+ OUT IF = GigabitEthernet1/0/1, Packet Length = 1497
 
-[ OUT IF = GigabitEthernet1/0/1, Packet Length = 1497]{lang="EN-US"}
+ DstMac = 0180-c200-0014
 
-[ DstMac = 0180-c200-0014]{lang="EN-US"}
+ First 32 bytes:
 
-[ First 32 bytes:]{lang="EN-US"}
+ 831b0106 0f010000 01000000 00000100
 
-[ 831b0106 0f010000 01000000 00000100]{lang="EN-US"}
+ 1e05d940 00000000 00010101 02011084
 
-[ 1e05d940 00000000 00010101 02011084]{lang="EN-US"}
+*// 在接口GigabitEthernet1/0/1上接收和发送报文，报文长度为1497，目的MAC地址为0180-c200-0014*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_16293_x2703_x1552089515}*[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上接收和发送报文，报文长度为]{style="font-family:宋体"}[1497]{lang="EN-US"}[，目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为]{style="font-family:宋体"}[0180-c200-0014]{lang="EN-US"}*
-
-[ ]{lang="EN-US"}

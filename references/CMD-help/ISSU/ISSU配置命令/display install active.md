@@ -1,6298 +1,5732 @@
-::: {#2076033456 .myid}
-[]{#_Toc404782725}[]{#struct_0_71526_x1155_x337356397}[]{#_Toc339613382}[]{#_Toc339613414}
 
 **ISSU \-- ISSU配置命令 \-- display install active**
 
 ------------------------------------------------------------------------
 
-[**[display install active]{lang="EN-US"}**]{#struct_0_71526_x1155_2124544261}[命令用来显示当前系统中处于激活状态的软件包的相关信息。]{style="font-family:宋体"}
+**[display install active**]命令用来显示当前系统中处于激活状态的软件包的相关信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1076450584}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_71526_x1155_x487181173}
+集中式设备：
 
-[**[display install active]{lang="EN-US"}**[ \[ **verbose** \]]{lang="EN-US"}]{#struct_0_71526_x1155_x617891587}
+**[display install active** [ **verbose** ]]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_71526_x1155_362831501}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display install active]{lang="EN-US"}**[ \[ **slot** *slot-number* \] \[ **verbose** \]]{lang="EN-US"}]{#struct_0_71526_x1155_547736874}
+**[display install active** [ **slot** *slot-number*   **verbose** ]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_1667661650}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display install active]{lang="EN-US"}**[ \[ **chassis** *chassis-number* **slot** *slot-number* \] \[ **verbose** \]]{lang="EN-US"}]{#struct_0_71526_x1155_607553288}
+**[display install active** [ **chassis** *chassis-number* **slot** *slot-number*   **verbose** ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_859242475}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1221573576}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1775235098}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_x177745489}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_71526_x1155_113074299}
+network-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x2068251159}
+【参数】
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_2084915429}[：表示单板所在的槽位号。不指定该参数时，表示设备上的所有单板。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示单板所在的槽位号。不指定该参数时，表示设备上的所有单板。（分布式设备－独立运行模式）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_x228937555}[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有成员设备。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示设备在IRF中的成员编号。不指定该参数时，表示IRF中的所有成员设备。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_x1242351222}[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示设备在IRF中的成员编号或者PEX的虚拟槽位号。不指定该参数时，表示IRF中的所有成员设备/PEX。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*[ **slot** *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_607487752}[：]{style="font-family:
-宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有单板。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number* **slot** *slot-number*]：*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。不指定该参数时，表示IRF中的所有单板。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*[ **slot** *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_x609049430}[：]{style="font-family:
-宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[所在的槽位号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有单板]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number* **slot** *slot-number*]：*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板/PEX所在的槽位号。不指定该参数时，表示IRF中的所有单板/PEX。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_71526_x1155_1007507}[：显示处于激活状态的软件包的详细信息，包括软件包的名称、基本信息和所包含的组件。不指定该参数时，仅显示软件包的名称。]{style="font-family:宋体"}
+**[verbose**]：显示处于激活状态的软件包的详细信息，包括软件包的名称、基本信息和所包含的组件。不指定该参数时，仅显示软件包的名称。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1000115717}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_1963427168}[显示设备上处于激活状态的软件包的简要信息。（集中式设备）]{style="font-family:宋体"}
+\# 显示设备上处于激活状态的软件包的简要信息。（集中式设备）
 
-[[\<Sysname\> display install active]{lang="EN-US"}]{#struct_0_71526_x1155_x466451581}
+\<Sysname\> display install active
 
-[Active packages on the device:]{lang="EN-US"}
+Active packages on the device:
 
-[  flash:/boot.bin]{lang="EN-US"}
+  flash:/boot.bin
 
-[  flash:/system.bin]{lang="EN-US"}
+  flash:/system.bin
 
-[  flash:/feature.bin]{lang="EN-US"}
+  flash:/feature.bin
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_669357543}[显示设备上处于激活状态的软件包的简要信息。（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\# 显示设备上处于激活状态的软件包的简要信息。（分布式设备－独立运行模式/集中式IRF设备）
 
-[[\<Sysname\> display install active]{lang="EN-US"}]{#struct_0_71526_x1155_14719026}
+\<Sysname\> display install active
 
-[Active packages on slot 1:]{lang="EN-US"}
+Active packages on slot 1:
 
-[  flash:/boot.bin]{lang="EN-US"}
+  flash:/boot.bin
 
-[  flash:/system.bin]{lang="EN-US"}
+  flash:/system.bin
 
-[  flash:/feature.bin]{lang="EN-US"}
+  flash:/feature.bin
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_607422216}[显示设备上处于激活状态的软件包的简要信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\# 显示设备上处于激活状态的软件包的简要信息。（分布式设备－IRF模式）
 
-[[\<Sysname\> display install active]{lang="EN-US"}]{#struct_0_71526_x1155_x353894280}
+\<Sysname\> display install active
 
-[Active packages on chassis 1 slot 1:]{lang="EN-US"}
+Active packages on chassis 1 slot 1:
 
-[  flash:/boot.bin]{lang="EN-US"}
+  flash:/boot.bin
 
-[  flash:/system.bin]{lang="EN-US"}
+  flash:/system.bin
 
-[  flash:/feature.bin]{lang="EN-US"}
+  flash:/feature.bin
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1836375895}[显示设备上处于激活状态的软件包的详细信息。（集中式设备）]{style="font-family:宋体"}
+\# 显示设备上处于激活状态的软件包的详细信息。（集中式设备）
 
-[[\<Sysname\> display install active verbose]{lang="EN-US"}]{#struct_0_71526_x1155_607815432}
+\<Sysname\> display install active verbose
 
-[Active packages on the device:]{lang="EN-US"}
+Active packages on the device:
 
-[  flash:/boot.bin]{lang="EN-US"}
+  flash:/boot.bin
 
-[ \[Package\]]{lang="EN-US"}
+ Package
 
-[ Vendor: XXX]{lang="EN-US"}
+ Vendor: XXX
 
-[ Product: xxxx]{lang="EN-US"}
+ Product: xxxx
 
-[ Service name: boot]{lang="EN-US"}
+ Service name: boot
 
-[ Platform version: 7.1.022]{lang="EN-US"}
+ Platform version: 7.1.022
 
-[ Product version: Test 2201]{lang="EN-US"}
+ Product version: Test 2201
 
-[ Supported board: cen]{lang="EN-US"}
+ Supported board: cen
 
-[ \[Component\]]{lang="EN-US"}
+ Component
 
-[ Component: boot]{lang="EN-US"}
+ Component: boot
 
-[ Description: boot package]{lang="EN-US"}
+ Description: boot package
 
-[ ]{lang="EN-US"}
+flash:/system.bin
 
-[flash:/system.bin]{lang="EN-US"}
+ Package
 
-[ \[Package\]]{lang="EN-US"}
+ Vendor: XXX
 
-[ Vendor: XXX]{lang="EN-US"}
+ Product: xxxx
 
-[ Product: xxxx]{lang="EN-US"}
+ Service name: system
 
-[ Service name: system]{lang="EN-US"}
+ Platform version: 7.1.022
 
-[ Platform version: 7.1.022]{lang="EN-US"}
+ Product version: Test 2201
 
-[ Product version: Test 2201]{lang="EN-US"}
+ Supported board: cen
 
-[ Supported board: cen]{lang="EN-US"}
+ Component
 
-[ \[Component\]]{lang="EN-US"}
+ Component: system
 
-[ Component: system]{lang="EN-US"}
+ Description: system package
 
-[ Description: system package]{lang="EN-US"}
+flash:/feature.bin
 
-[ ]{lang="EN-US"}
+ Package
 
-[flash:/feature.bin]{lang="EN-US"}
+ Vendor: XXX
 
-[ \[Package\]]{lang="EN-US"}
+ Product: xxxx
 
-[ Vendor: XXX]{lang="EN-US"}
+ Service name: test
 
-[ Product: xxxx]{lang="EN-US"}
+ Platform version: 7.1.022
 
-[ Service name: test]{lang="EN-US"}
+ Product version: Test 2201
 
-[ Platform version: 7.1.022]{lang="EN-US"}
+ Supported board: cen
 
-[ Product version: Test 2201]{lang="EN-US"}
+ Component
 
-[ Supported board: cen]{lang="EN-US"}
+ Component: test
 
-[ \[Component\]]{lang="EN-US"}
+ Description: test package
 
-[ Component: test]{lang="EN-US"}
+\# 显示设备上处于激活状态的软件包的详细信息。（分布式设备－独立运行模式/集中式IRF设备）
 
-[ Description: test package]{lang="EN-US"}
+\<Sysname\> display install active verbose
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_1290267019}[显示设备上处于激活状态的软件包的详细信息。（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+Active packages on slot 1:
 
-[[\<Sysname\> display install active verbose]{lang="EN-US"}]{#struct_0_71526_x1155_607684360}
+flash:/boot.bin
 
-[Active packages on slot 1:]{lang="EN-US"}
+ Package
 
-[flash:/boot.bin]{lang="EN-US"}
+ Vendor: XXX
 
-[ \[Package\]]{lang="EN-US"}
+ Product: xxxx
 
-[ Vendor: XXX]{lang="EN-US"}
+ Service name: boot
 
-[ Product: xxxx]{lang="EN-US"}
+ Platform version: 7.1.022
 
-[ Service name: boot]{lang="EN-US"}
+ Product version: Test 2201
 
-[ Platform version: 7.1.022]{lang="EN-US"}
+ Supported board: mpu
 
-[ Product version: Test 2201]{lang="EN-US"}
+ Component
 
-[ Supported board: mpu]{lang="EN-US"}
+ Component: boot
 
-[ \[Component\]]{lang="EN-US"}
+ Description: boot package
 
-[ Component: boot]{lang="EN-US"}
+flash:/system.bin
 
-[ Description: boot package]{lang="EN-US"}
+ Package
 
-[ ]{lang="EN-US"}
+ Vendor: XXX
 
-[flash:/system.bin]{lang="EN-US"}
+ Product: xxxx
 
-[ \[Package\]]{lang="EN-US"}
+ Service name: system
 
-[ Vendor: XXX]{lang="EN-US"}
+ Platform version: 7.1.022
 
-[ Product: xxxx]{lang="EN-US"}
+ Product version: Test 2201
 
-[ Service name: system]{lang="EN-US"}
+ Supported board: mpu
 
-[ Platform version: 7.1.022]{lang="EN-US"}
+ Component
 
-[ Product version: Test 2201]{lang="EN-US"}
+ Component: system
 
-[ Supported board: mpu]{lang="EN-US"}
+ Description: system package
 
-[ \[Component\]]{lang="EN-US"}
+flash:/feature.bin
 
-[ Component: system]{lang="EN-US"}
+ Package
 
-[ Description: system package]{lang="EN-US"}
+ Vendor: XXX
 
-[ ]{lang="EN-US"}
+ Product: xxxx
 
-[flash:/feature.bin]{lang="EN-US"}
+ Service name: test
 
-[ \[Package\]]{lang="EN-US"}
+ Platform version: 7.1.022
 
-[ Vendor: XXX]{lang="EN-US"}
+ Product version: Test 2201
 
-[ Product: xxxx]{lang="EN-US"}
+ Supported board: mpu
 
-[ Service name: test]{lang="EN-US"}
+ Component
 
-[ Platform version: 7.1.022]{lang="EN-US"}
+ Component: test
 
-[ Product version: Test 2201]{lang="EN-US"}
+ Description: test package
 
-[ Supported board: mpu]{lang="EN-US"}
+\# 显示设备上处于激活状态的软件包的详细信息。（分布式设备－IRF模式）
 
-[ \[Component\]]{lang="EN-US"}
+\<Sysname\> display install active verbose
 
-[ Component: test]{lang="EN-US"}
+Active packages on chassis 1 slot 1:
 
-[ Description: test package]{lang="EN-US"}
+flash:/boot.bin
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_284003621}[显示设备上处于激活状态的软件包的详细信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+ Package
 
-[[\<Sysname\> display install active verbose]{lang="EN-US"}]{#struct_0_71526_x1155_607618824}
+ Vendor: XXX
 
-[Active packages on chassis 1 slot 1:]{lang="EN-US"}
+ Product: xxxx
 
-[flash:/boot.bin]{lang="EN-US"}
+ Service name: boot
 
-[ \[Package\]]{lang="EN-US"}
+ Platform version: 7.1.022
 
-[ Vendor: XXX]{lang="EN-US"}
+ Product version: Test 2201
 
-[ Product: xxxx]{lang="EN-US"}
+ Supported board: mpu
 
-[ Service name: boot]{lang="EN-US"}
+ Component
 
-[ Platform version: 7.1.022]{lang="EN-US"}
+ Component: boot
 
-[ Product version: Test 2201]{lang="EN-US"}
+ Description: boot package
 
-[ Supported board: mpu]{lang="EN-US"}
+flash:/system.bin
 
-[ \[Component\]]{lang="EN-US"}
+ Package
 
-[ Component: boot]{lang="EN-US"}
+ Vendor: XXX
 
-[ Description: boot package]{lang="EN-US"}
+ Product: xxxx
 
-[ ]{lang="EN-US"}
+ Service name: system
 
-[flash:/system.bin]{lang="EN-US"}
+ Platform version: 7.1.022
 
-[ \[Package\]]{lang="EN-US"}
+ Product version: Test 2201
 
-[ Vendor: XXX]{lang="EN-US"}
+ Supported board: mpu
 
-[ Product: xxxx]{lang="EN-US"}
+ Component
 
-[ Service name: system]{lang="EN-US"}
+ Component: system
 
-[ Platform version: 7.1.022]{lang="EN-US"}
+ Description: system package
 
-[ Product version: Test 2201]{lang="EN-US"}
+flash:/feature.bin
 
-[ Supported board: mpu]{lang="EN-US"}
+ Package
 
-[ \[Component\]]{lang="EN-US"}
+ Vendor: XXX
 
-[ Component: system]{lang="EN-US"}
+ Product: xxxx
 
-[ Description: system package]{lang="EN-US"}
+ Service name: test
 
-[ ]{lang="EN-US"}
+ Platform version: 7.1.022
 
-[flash:/feature.bin]{lang="EN-US"}
+ Product version: Test 2201
 
-[ \[Package\]]{lang="EN-US"}
+ Supported board: mpu
 
-[ Vendor: XXX]{lang="EN-US"}
+ Component
 
-[ Product: xxxx]{lang="EN-US"}
+ Component: test
 
-[ Service name: test]{lang="EN-US"}
+ Description: test package
 
-[ Platform version: 7.1.022]{lang="EN-US"}
+表1-1 display install active命令显示信息描述表
 
-[ Product version: Test 2201]{lang="EN-US"}
+字段
 
-[ Supported board: mpu]{lang="EN-US"}
+描述
 
-[ \[Component\]]{lang="EN-US"}
+Active packages on the device
 
-[ Component: test]{lang="EN-US"}
+设备上处于激活状态的软件包的相关信息（集中式设备）
 
-[ Description: test package]{lang="EN-US"}
+Active packages on slot *n*
 
-[]{#struct_0_71526_x1155_720532045}[[表1-1 ]{lang="EN-US"}[display install active]{lang="EN-US"}]{#_Ref302142357}[命令显示信息描述表]{style="font-family:黑体"}
+某单板上处于激活状态的软件包的相关信息，其中*n*表示该单板所在的槽位号（分布式设备－独立运行模式）
 
-[]{#table_struct_0_x1135483062}[[字段]{style="font-family:黑体"}]{#struct_0_71526_x1155_1397230088}
-:::
+Active packages on slot *n*
 
-[[描述]{style="font-family:黑体"}]{#struct_0_71526_x1155_608077576}
+某成员设备上处于激活状态的软件包的相关信息，其中*n*表示设备在IRF中的成员编号（集中式IRF设备）
 
-[[Active packages on the device]{lang="EN-US"}]{#struct_0_71526_x1155_x349003797}
+Active packages on chassis *m* slot *n*
 
-[[设备上处于激活状态的软件包的相关信息（集中式设备）]{style="font-family:宋体"}]{#struct_0_71526_x1155_x431645754}
+某单板上处于激活状态的软件包的相关信息，其中*m*表示设备在IRF中的成员编号，*n*表示成员设备上该单板所在的槽位号（分布式设备－IRF模式）
 
-[[Active packages on slot *n*]{lang="EN-US"}]{#struct_0_71526_x1155_1798085585}
+flash:/boot.bin
 
-[[某单板上处于激活状态的软件包的相关信息，其中]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_71526_x1155_968996469}[表示该单板所在的槽位号（分布式设备－独立运行模式）]{style="font-family:宋体"}
+软件包的名称
 
-[[Active packages on slot *n*]{lang="EN-US"}]{#struct_0_71526_x1155_1424124101}
+Package
 
-[[某成员设备上处于激活状态的软件包的相关信息，其中]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_71526_x1155_608012040}[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+软件包的信息
 
-[[Active packages on chassis *m* slot *n*]{lang="EN-US"}]{#struct_0_71526_x1155_1236621708}
+Vendor
 
-[[某单板上处于激活状态的软件包的相关信息，其中]{style="font-family:宋体"}*[m]{lang="EN-US"}*]{#struct_0_71526_x1155_1897373758}[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[n]{lang="EN-US"}*[表示成员设备上该单板所在的槽位号（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+生产厂商
 
-[[flash:/boot.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x1986856196}
+Product
 
-[[软件包的名称]{style="font-family:宋体"}]{#struct_0_71526_x1155_943865738}
+产品名称
 
-[[\[Package\]]{lang="EN-US"}]{#struct_0_71526_x1155_x335555416}
+Service name
 
-[[软件包的信息]{style="font-family:宋体"}]{#struct_0_71526_x1155_607553285}
+软件包所包含的服务名称：
 
-[[Vendor]{lang="EN-US"}]{#struct_0_71526_x1155_859242478}
+·如果显示为boot，表示该软件包为Boot包
 
-[[生产厂商]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1221573579}
+·如果显示为system，表示该软件包为System包
 
-[[Product]{lang="EN-US"}]{#struct_0_71526_x1155_503309563}
+·如果显示为patch，表示该软件包为补丁包
 
-[[产品名称]{style="font-family:宋体"}]{#struct_0_71526_x1155_1132510481}
+·如果显示为其它值，则表示该软件包为提供某项功能的Feature包
 
-[[Service name]{lang="EN-US"}]{#struct_0_71526_x1155_x236907392}
+Platform version
 
-[[软件包所包含的服务名称：]{style="font-family:宋体"}]{#struct_0_71526_x1155_607487749}
+平台软件版本号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果显示为]{style="font-family:宋体"}]{#struct_0_71526_x1155_1957322634}[boot]{lang="EN-US"}[，表示该软件包为]{style="font-family:宋体"}[Boot]{lang="EN-US"}[包]{style="font-family:宋体"}
+Product version
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果显示为]{lang="EN-US" style="font-family:宋体"}[system]{lang="EN-US"}]{#struct_0_71526_x1155_x238863359}[，表示该软件包为]{lang="EN-US" style="font-family:宋体"}[System]{lang="EN-US"}[包]{lang="EN-US" style="font-family:宋体"}
+产品软件版本号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果显示为]{style="font-family:宋体"}]{#struct_0_71526_x1155_2121226157}[patch]{lang="EN-US"}[，表示该软件包为补丁包]{style="font-family:宋体"}
+Supported board
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果显示为其它值，则表示该软件包为提供某项功能的]{style="font-family:宋体"}]{#struct_0_71526_x1155_544226788}[Feature]{lang="EN-US"}[包]{style="font-family:宋体"}
+软件包支持的单板类型（本字段的取值与设备的型号有关，请以设备的实际情况为准）：
 
-[[Platform version]{lang="EN-US"}]{#struct_0_71526_x1155_607422213}
+·cen表示集中式设备
 
-[[平台软件版本号]{style="font-family:宋体"}]{#struct_0_71526_x1155_x353894283}
+·mpu表示主控板
 
-[[Product version]{lang="EN-US"}]{#struct_0_71526_x1155_x1836572503}
+·lc表示业务板
 
-[[产品软件版本号]{style="font-family:宋体"}]{#struct_0_71526_x1155_2079185186}
+·sfc表示网板
 
-[[Supported board]{lang="EN-US"}]{#struct_0_71526_x1155_x159415775}
+Component
 
-[[软件包支持的单板类型（本字段的取值与设备的型号有关，请以设备的实际情况为准）：]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1317164153}
+组件信息，表示软件包的组成部分
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[cen]{lang="EN-US"}]{#struct_0_71526_x1155_1453535607}[表示集中式设备]{style="font-family:宋体"}
+Component
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[m]{lang="EN-US"}]{#struct_0_71526_x1155_607815429}[pu]{lang="EN-US"}[表示主控板]{lang="EN-US" style="font-family:宋体"}
+组件的名称
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[lc]{lang="EN-US"}]{#struct_0_71526_x1155_x1048385132}[表示]{lang="EN-US" style="font-family:宋体"}[业务板]{style="font-family:宋体"}
+Description
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[sfc]{lang="EN-US"}]{#struct_0_71526_x1155_x525547484}[表示网板]{lang="EN-US" style="font-family:宋体"}
+组件的描述信息
 
-[[\[Component\]]{lang="EN-US"}]{#struct_0_71526_x1155_x1532078642}
+【相关命令】
 
-[[组件信息，表示软件包的组成部分]{style="font-family:宋体"}]{#struct_0_71526_x1155_607684357}
-
-[[Component]{lang="EN-US"}]{#struct_0_71526_x1155_x2054648540}
-
-[[组件的名称]{style="font-family:宋体"}]{#struct_0_71526_x1155_x782093539}
-
-[[Description]{lang="EN-US"}]{#struct_0_71526_x1155_493997933}
-
-[[组件的描述信息]{style="font-family:宋体"}]{#struct_0_71526_x1155_607618821}
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_720532040}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[install active]{lang="EN-US"}**]{#struct_0_71526_x1155_1397230083}
-
-::: {#-621959267 .myid}
-[]{#_Toc404782726}[]{#struct_0_71526_x1155_241981671}
+·**install active**
 
 **ISSU \-- ISSU配置命令 \-- display install backup**
 
 ------------------------------------------------------------------------
 
-[**[display install backup]{lang="EN-US"}**]{#struct_0_71526_x1155_1099292883}[命令用来显示设备下次启动时使用的备用软件包的相关信息。]{style="font-family:宋体"}
+**[display install backup**]命令用来显示设备下次启动时使用的备用软件包的相关信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1550610353}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_71526_x1155_1648633035}
+集中式设备：
 
-[**[display install backup]{lang="EN-US"}**[ \[ **verbose** \]]{lang="EN-US"}]{#struct_0_71526_x1155_1431817975}
+**[display install backup** [ **verbose** ]]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_71526_x1155_608077573}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display install backup]{lang="EN-US"}**[ \[ **slot** *slot-number* \[ ]{lang="EN-US"}]{#struct_0_71526_x1155_x349003794}**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}*[cpu-number]{lang="EN-US"}*[ \] \] \[ **verbose** \]]{lang="EN-US"}
+**[display install backup** [ **slot** *slot-number* **cpu***cpu-number*  ]  **verbose** ]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_x431842362}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display install backup]{lang="EN-US"}**[ \[ **chassis** *chassis-number* **slot** *slot-number* \[ ]{lang="EN-US"}]{#struct_0_71526_x1155_189713483}**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}*[cpu-number]{lang="EN-US"}*[ \] \] \[ **verbose** \]]{lang="EN-US"}
+**[display install backup** [ **chassis** *chassis-number* **slot** *slot-number* **cpu***cpu-number*  ]  **verbose** ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_661531385}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_522815792}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1560391200}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_437307529}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_71526_x1155_x175800866}
+network-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x507903231}
+【参数】
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_608012037}[：表示单板所在的槽位号。不指定该参数时，表示设备上的所有单板。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示单板所在的槽位号。不指定该参数时，表示设备上的所有单板。（分布式设备－独立运行模式）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_x337356403}[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有成员设备。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示设备在IRF中的成员编号。不指定该参数时，表示IRF中的所有成员设备。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_x1598581582}[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有成员设备和本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示设备在IRF中的成员编号或者本地有存储介质的PEX的虚拟槽位号。不指定该参数时，表示IRF中的所有成员设备和本地有存储介质的PEX。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*[ **slot** *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_x214370052}[：]{style="font-family:
-宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有单板。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number* **slot** *slot-number*]：*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。不指定该参数时，表示IRF中的所有单板。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*[ **slot** *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_x546712101}[：]{style="font-family:
-宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板]{style="font-family:宋体"}[/]{lang="EN-US"}[本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有单板和本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number* **slot** *slot-number*]：*chassis-number*表示设备在IRF中的成员编号或者本地有存储介质的PEX对应的虚拟框号，*slot-number*表示单板/本地有存储介质的PEX所在的槽位号。不指定该参数时，表示IRF中的所有单板和本地有存储介质的PEX。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_71526_x1155_1058980488}*[cpu-number]{lang="EN-US"}*[：表示安全引擎的]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号。本参数专用于显示安全引擎下次启动时使用的备用软件包的相关信息。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**[cpu**]*cpu-number*：表示安全引擎的CPU编号。本参数专用于显示安全引擎下次启动时使用的备用软件包的相关信息。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。（分布式设备－独立运行模式/分布式设备－IRF模式）
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_71526_x1155_1145098817}[：显示详细信息，包括软件包的名称、基本信息和所包含的组件。不指定该参数时，仅显示软件包的名称。]{style="font-family:宋体"}
+**[verbose**]：显示详细信息，包括软件包的名称、基本信息和所包含的组件。不指定该参数时，仅显示软件包的名称。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1196758867}
+【使用指导】
 
-[[设备下次启动时使用的软件包的名称会记录在启动软件包列表中，启动软件包列表分为主用启动软件包列表和备用启动软件包列表，可以分别配置。]{style="font-family:宋体"}]{#struct_0_71526_x1155_908471600}
+设备下次启动时使用的软件包的名称会记录在启动软件包列表中，启动软件包列表分为主用启动软件包列表和备用启动软件包列表，可以分别配置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当设备启动时，优先使用主用启动软件包列表中的软件包。]{style="font-family:宋体"}]{#struct_0_71526_x1155_x588808625}
+·当设备启动时，优先使用主用启动软件包列表中的软件包。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果主用启动软件包列表中的]{style="font-family:宋体"}]{#struct_0_71526_x1155_1411489943}[Boot]{lang="EN-US"}[包或]{style="font-family:宋体"}[System]{lang="EN-US"}[包不存在或者损坏，再使用备用启动软件包列表中的软件包。]{style="font-family:宋体"}
+·如果主用启动软件包列表中的Boot包或System包不存在或者损坏，再使用备用启动软件包列表中的软件包。
 
-[[执行]{style="font-family:宋体"}**[boot-loader file]{lang="EN-US"}**]{#struct_0_71526_x1155_x712428326}[命令可以修改设备下次启动时使用的备用软件包列表。]{style="font-family:宋体"}
+执行**boot-loader file**命令可以修改设备下次启动时使用的备用软件包列表。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_607553286}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_859242477}[显示设备下次启动时使用的备用软件包的相关信息。（集中式设备）]{style="font-family:宋体"}
+\# 显示设备下次启动时使用的备用软件包的相关信息。（集中式设备）
 
-[[\<Sysname\> display install backup]{lang="EN-US"}]{#struct_0_71526_x1155_x1221573574}
+\<Sysname\> display install backup
 
-[Backup startup software images on the device:]{lang="EN-US"}
+Backup startup software images on the device:
 
-[  flash:/boot-a0201.bin]{lang="EN-US"}
+  flash:/boot-a0201.bin
 
-[[  flash:/system-a0201.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x612435684}
+  flash:/system-a0201.bin
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x184995723}[显示设备下次启动时使用的备用软件包的相关信息。（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\# 显示设备下次启动时使用的备用软件包的相关信息。（分布式设备－独立运行模式/集中式IRF设备）
 
-[[\<Sysname\> display install backup]{lang="EN-US"}]{#struct_0_71526_x1155_1496484948}
+\<Sysname\> display install backup
 
-[Backup startup software images on slot 1:]{lang="EN-US"}
+Backup startup software images on slot 1:
 
-[  flash:/boot-a0201.bin]{lang="EN-US"}
+  flash:/boot-a0201.bin
 
-[  flash:/system-a0201.bin]{lang="EN-US"}
+  flash:/system-a0201.bin
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1648547183}[显示设备下次启动时使用的备用软件包的相关信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\# 显示设备下次启动时使用的备用软件包的相关信息。（分布式设备－IRF模式）
 
-[[\<Sysname\> display install backup]{lang="EN-US"}]{#struct_0_71526_x1155_607487750}
+\<Sysname\> display install backup
 
-[Backup startup software images on chassis 1 slot 1:]{lang="EN-US"}
+Backup startup software images on chassis 1 slot 1:
 
-[  flash:/boot-a0201.bin]{lang="EN-US"}
+  flash:/boot-a0201.bin
 
-[  flash:/system-a0201.bin]{lang="EN-US"}
+  flash:/system-a0201.bin
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_1007505}[显示设备下次启动时使用的备用软件包的详细信息。]{style="font-family:宋体"}
+\# 显示设备下次启动时使用的备用软件包的详细信息。
 
-[[\<Sysname\> display install backup verbose]{lang="EN-US"}]{#struct_0_71526_x1155_607422214}
+\<Sysname\> display install backup verbose
 
-[Backup startup software images on slot 1:]{lang="EN-US"}
+Backup startup software images on slot 1:
 
-[ flash:/boot-a0201.bin]{lang="EN-US"}
+ flash:/boot-a0201.bin
 
-[ \[Package\]]{lang="EN-US"}
+ Package
 
-[ Vendor: H3C]{lang="EN-US"}
+ Vendor: H3C
 
-[ Product: xxxx]{lang="EN-US"}
+ Product: xxxx
 
-[ Service name: boot]{lang="EN-US"}
+ Service name: boot
 
-[ Platform version: 7.1]{lang="EN-US"}
+ Platform version: 7.1
 
-[ Product version: Beta 1330]{lang="EN-US"}
+ Product version: Beta 1330
 
-[ Supported board: mpu]{lang="EN-US"}
+ Supported board: mpu
 
-[ \[Component\]]{lang="EN-US"}
+ Component
 
-[ Component: boot]{lang="EN-US"}
+ Component: boot
 
-[ Description: boot package]{lang="EN-US"}
+ Description: boot package
 
-[ ]{lang="EN-US"}
+ flash:/system-a0201.bin
 
-[ flash:/system-a0201.bin]{lang="EN-US"}
+ Package
 
-[ \[Package\]]{lang="EN-US"}
+ Vendor: H3C
 
-[ Vendor: H3C]{lang="EN-US"}
+ Product: xxxx
 
-[ Product: xxxx]{lang="EN-US"}
+ Service name: system
 
-[ Service name: system]{lang="EN-US"}
+ Platform version: 7.1
 
-[ Platform version: 7.1]{lang="EN-US"}
+ Product version: Beta 1330
 
-[ Product version: Beta 1330]{lang="EN-US"}
+ Supported board: mr, lc, sfc
 
-[ Supported board: mr, lc, sfc]{lang="EN-US"}
+ Component
 
-[ \[Component\]]{lang="EN-US"}
+ Component: system
 
-[ Component: system]{lang="EN-US"}
+ Description: system package
 
-[ Description: system package]{lang="EN-US"}
+本命令显示信息的描述请参见 表1-1(?2076033456#_Ref302142357)。
 
-[[本命令显示信息的描述请参见]{style="font-family:宋体"}]{#struct_0_71526_x1155_x353894278}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-1]{lang="EN-US"}](?2076033456#_Ref302142357)[。]{style="font-family:宋体"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1836900194}
+·**boot-loader file**（基础配置命令参考/软件升级）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[boot-loader file]{lang="EN-US"}**]{#struct_0_71526_x1155_284183312}[（基础配置命令参考]{style="font-family:宋体"}[/]{lang="EN-US"}[软件升级）]{style="font-family:宋体"}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display install committed]{lang="EN-US"}**]{#struct_0_71526_x1155_x602226252}
-:::
-
-::: {#811695277 .myid}
-[]{#_Toc404782727}[]{#struct_0_71526_x1155_843438578}[]{#_Toc344717783}
+·**display install committed**
 
 **ISSU \-- ISSU配置命令 \-- display install committed**
 
 ------------------------------------------------------------------------
 
-[**[display install committed]{lang="EN-US"}**]{#struct_0_71526_x1155_x1627658234}[命令用来显示设备下次启动时使用的主用软件包的相关信息。]{style="font-family:
-宋体"}
+**[display install committed**]命令用来显示设备下次启动时使用的主用软件包的相关信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_607356678}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1815686569}
+集中式设备：
 
-[**[display install committed]{lang="EN-US"}**[ \[ **verbose** \]]{lang="EN-US"}]{#struct_0_71526_x1155_1406668166}
+**[display install committed** [ **verbose** ]]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_71526_x1155_x1622947718}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display install committed]{lang="EN-US"}**[ \[ **slot** *slot-number* \[ ]{lang="EN-US"}]{#struct_0_71526_x1155_1169704224}**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}*[cpu-number]{lang="EN-US"}*[ \] \] \[ **verbose** \]]{lang="EN-US"}
+**[display install committed** [ **slot** *slot-number* **cpu***cpu-number*  ]  **verbose** ]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_x1003543079}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display install committed]{lang="EN-US"}**[ \[ **chassis** *chassis-number* **slot** *slot-number* \[ ]{lang="EN-US"}]{#struct_0_71526_x1155_382903467}**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}*[cpu-number]{lang="EN-US"}*[ \] \] \[ **verbose** \]]{lang="EN-US"}
+**[display install committed** [ **chassis** *chassis-number* **slot** *slot-number* **cpu***cpu-number*  ]  **verbose** ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x853845781}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_x981357554}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_607815430}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_1290267021}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_71526_x1155_1599524232}
+network-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x874632586}
+【参数】
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_915860479}[：表示单板所在的槽位号。不指定该参数时，表示设备上的所有单板。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示单板所在的槽位号。不指定该参数时，表示设备上的所有单板。（分布式设备－独立运行模式）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_248410114}[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有成员设备。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示设备在IRF中的成员编号。不指定该参数时，表示IRF中的所有成员设备。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_1756254292}[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示设备在IRF中的成员编号或者PEX的虚拟槽位号。不指定该参数时，表示IRF中的所有成员设备/PEX。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*[ **slot** *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_x1266688217}[：]{style="font-family:
-宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有单板。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number* **slot** *slot-number*]：*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。不指定该参数时，表示IRF中的所有单板。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*[ **slot** *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_x1597091105}[：]{style="font-family:
-宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[所在的槽位号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有单板]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number* **slot** *slot-number*]：*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板/PEX所在的槽位号。不指定该参数时，表示IRF中的所有单板/PEX。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_71526_x1155_1058849416}*[cpu-number]{lang="EN-US"}*[：表示安全引擎的]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号。本参数专用于显示安全引擎下次启动时使用的主用软件包的相关信息。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**[cpu**]*cpu-number*：表示安全引擎的CPU编号。本参数专用于显示安全引擎下次启动时使用的主用软件包的相关信息。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。（分布式设备－独立运行模式/分布式设备－IRF模式）
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_71526_x1155_x93762471}[：显示详细信息，包括软件包的名称、基本信息和所包含的组件。不指定该参数时，仅显示软件包的名称。]{style="font-family:宋体"}
+**[verbose**]：显示详细信息，包括软件包的名称、基本信息和所包含的组件。不指定该参数时，仅显示软件包的名称。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_840372328}
+【使用指导】
 
-[[在设备上执行]{style="font-family:宋体"}**[install commit]{lang="EN-US"}**]{#struct_0_71526_x1155_607749894}[命令确认运行当前的软件包后，这些软件包会被列入主用下次启动软件包，以便设备重启后，这些软件包能够继续生效。]{style="font-family:宋体"}
+在设备上执行**install commit**命令确认运行当前的软件包后，这些软件包会被列入主用下次启动软件包，以便设备重启后，这些软件包能够继续生效。
 
-[[执行]{style="font-family:宋体"}**[boot-loader file]{lang="EN-US"}**]{#struct_0_71526_x1155_315060778}[命令可以修改设备下次启动时使用的主用软件包列表。]{style="font-family:宋体"}
+执行**boot-loader file**命令可以修改设备下次启动时使用的主用软件包列表。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x749736820}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1532406324}[显示设备下次启动时使用的主用软件包的相关信息。]{style="font-family:宋体"}
+\# 显示设备下次启动时使用的主用软件包的相关信息。
 
-[[\<Sysname\> display install committed]{lang="EN-US"}]{#struct_0_71526_x1155_644781665}
+\<Sysname\> display install committed
 
-[Committed packages on slot 1:]{lang="EN-US"}
+Committed packages on slot 1:
 
-[ flash:/boot-a0201.bin]{lang="EN-US"}
+ flash:/boot-a0201.bin
 
-[ flash:/system-a0201.bin]{lang="EN-US"}
+ flash:/system-a0201.bin
 
-[ flash:/feature.bin]{lang="EN-US"}
+ flash:/feature.bin
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x149656652}[显示设备下次启动时使用的主用软件包的详细信息。]{style="font-family:宋体"}
+\# 显示设备下次启动时使用的主用软件包的详细信息。
 
-[[\<Sysname\> display install committed verbose]{lang="EN-US"}]{#struct_0_71526_x1155_607618822}
+\<Sysname\> display install committed verbose
 
-[Committed packages on slot 1:]{lang="EN-US"}
+Committed packages on slot 1:
 
-[ flash:/boot-a0201.bin]{lang="EN-US"}
+ flash:/boot-a0201.bin
 
-[ \[Package\]]{lang="EN-US"}
+ Package
 
-[ Vendor: H3C]{lang="EN-US"}
+ Vendor: H3C
 
-[ Product: xxxx]{lang="EN-US"}
+ Product: xxxx
 
-[ Service name: boot]{lang="EN-US"}
+ Service name: boot
 
-[ Platform version: 7.1]{lang="EN-US"}
+ Platform version: 7.1
 
-[ Product version: Beta 1330]{lang="EN-US"}
+ Product version: Beta 1330
 
-[ Supported board: mr, lc, sfc]{lang="EN-US"}
+ Supported board: mr, lc, sfc
 
-[ \[Component\]]{lang="EN-US"}
+ Component
 
-[ Component: boot]{lang="EN-US"}
+ Component: boot
 
-[ Description: boot package]{lang="EN-US"}
+ Description: boot package
 
-[ ]{lang="EN-US"}
+ flash:/system-a0201.bin
 
-[ flash:/system-a0201.bin]{lang="EN-US"}
+ Package
 
-[ \[Package\]]{lang="EN-US"}
+ Vendor: H3C
 
-[ Vendor: H3C]{lang="EN-US"}
+ Product: xxxx
 
-[ Product: xxxx]{lang="EN-US"}
+ Service name: system
 
-[ Service name: system]{lang="EN-US"}
+ Platform version: 7.1
 
-[ Platform version: 7.1]{lang="EN-US"}
+ Product version: Beta 1330
 
-[ Product version: Beta 1330]{lang="EN-US"}
+ Supported board: mr, lc, sfc
 
-[ Supported board: mr, lc, sfc]{lang="EN-US"}
+ Component
 
-[ \[Component\]]{lang="EN-US"}
+ Component: system
 
-[ Component: system]{lang="EN-US"}
+ Description: system package
 
-[ Description: system package]{lang="EN-US"}
+flash:/ssh-feature.bin
 
-[ ]{lang="EN-US"}
+ Package
 
-[flash:/ssh-feature.bin]{lang="EN-US"}
+ Vendor: H3C
 
-[ \[Package\]]{lang="EN-US"}
+ Product: xxxx
 
-[ Vendor: H3C]{lang="EN-US"}
+ Service name: ssh
 
-[ Product: xxxx]{lang="EN-US"}
+ Platform version: 7.1
 
-[ Service name: ssh]{lang="EN-US"}
+ Product version: Beta 1330
 
-[ Platform version: 7.1]{lang="EN-US"}
+ Supported board: mr, lc, sfc
 
-[ Product version: Beta 1330]{lang="EN-US"}
+ Component
 
-[ Supported board: mr, lc, sfc]{lang="EN-US"}
+ Component: ssh
 
-[ \[Component\]]{lang="EN-US"}
+ Description: ssh package
 
-[ Component: ssh]{lang="EN-US"}
+本命令显示信息的描述请参见 表1-1(?2076033456#_Ref302142357)。
 
-[ Description: ssh package]{lang="EN-US"}
+【相关命令】
 
-[[本命令显示信息的描述请参见]{style="font-family:宋体"}]{#struct_0_71526_x1155_720532039}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-1]{lang="EN-US"}](?2076033456#_Ref302142357)[。]{style="font-family:宋体"}
+·**boot-loader file**（基础配置命令参考/软件升级）
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1323759092}
+·**display install backup**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[boot-loader file]{lang="EN-US"}**]{#struct_0_71526_x1155_x1755002074}[（基础配置命令参考]{style="font-family:宋体"}[/]{lang="EN-US"}[软件升级）]{style="font-family:宋体"}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display install backup]{lang="EN-US"}**]{#struct_0_71526_x1155_x1748535968}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[install commit]{lang="EN-US"}**]{#struct_0_71526_x1155_x318808642}
-:::
-
-::: {#-600703777 .myid}
-[]{#_Toc404782728}[]{#struct_0_71526_x1155_1016756213}[]{#_Toc344717785}
+·**install commit**
 
 **ISSU \-- ISSU配置命令 \-- display install inactive**
 
 ------------------------------------------------------------------------
 
-[**[display install inactive]{lang="EN-US"}**]{#struct_0_71526_x1155_x1198461445}[命令用来显示存储介质根目录下、没有被激活的所有软件包的相关信息。]{style="font-family:
-宋体"}
+**[display install inactive**]命令用来显示存储介质根目录下、没有被激活的所有软件包的相关信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x593035605}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_71526_x1155_608077574}
+集中式设备：
 
-[**[display install inactive]{lang="EN-US"}**[ \[ **verbose** \]]{lang="EN-US"}]{#struct_0_71526_x1155_x349003799}
+**[display install inactive** [ **verbose** ]]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_71526_x1155_x432563258}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display install inactive]{lang="EN-US"}**[ \[ **slot** *slot-number* \[ ]{lang="EN-US"}]{#struct_0_71526_x1155_x721463532}**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}*[cpu-number]{lang="EN-US"}*[ \] \] \[ **verbose** \]]{lang="EN-US"}
+**[display install inactive** [ **slot** *slot-number* **cpu***cpu-number*  ]  **verbose** ]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_87187243}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display install inactive]{lang="EN-US"}**[ \[ **chassis** *chassis-number* **slot** *slot-number* \[ ]{lang="EN-US"}]{#struct_0_71526_x1155_1724958874}**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}*[cpu-number]{lang="EN-US"}*[ \] \] \[ **verbose** \]]{lang="EN-US"}
+**[display install inactive** [ **chassis** *chassis-number* **slot** *slot-number* **cpu***cpu-number*  ]  **verbose** ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x2116495467}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1499748288}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1404715342}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_x1876399468}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_71526_x1155_608012038}
+network-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x337356396}
+【参数】
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_2124609797}[：表示单板所在的槽位号。不指定该参数时，表示设备上的所有单板。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示单板所在的槽位号。不指定该参数时，表示设备上的所有单板。（分布式设备－独立运行模式）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_1009336589}[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有成员设备。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示设备在IRF中的成员编号。不指定该参数时，表示IRF中的所有成员设备。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_x213114176}[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有成员设备和本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示设备在IRF中的成员编号或者本地有存储介质的PEX的虚拟槽位号。不指定该参数时，表示IRF中的所有成员设备和本地有存储介质的PEX。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*[ **slot** *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_x307360453}[：]{style="font-family:
-宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有单板。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number* **slot** *slot-number*]：*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。不指定该参数时，表示IRF中的所有单板。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*[ **slot** *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_1652597889}[：]{style="font-family:
-宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板]{style="font-family:宋体"}[/]{lang="EN-US"}[本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有单板和本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number* **slot** *slot-number*]：*chassis-number*表示设备在IRF中的成员编号或者本地有存储介质的PEX对应的虚拟框号，*slot-number*表示单板/本地有存储介质的PEX所在的槽位号。不指定该参数时，表示IRF中的所有单板和本地有存储介质的PEX。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_71526_x1155_1058128520}*[cpu-number]{lang="EN-US"}*[：表示安全引擎的]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号。本参数专用于显示安全引擎存储介质根目录下、没有被激活的所有软件包的相关信息。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**[cpu**]*cpu-number*：表示安全引擎的CPU编号。本参数专用于显示安全引擎存储介质根目录下、没有被激活的所有软件包的相关信息。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。（分布式设备－独立运行模式/分布式设备－IRF模式）
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_71526_x1155_x71044858}[：显示详细信息，包括软件包的名称、基本信息和所包含的组件。不指定该参数时，仅显示软件包的名称。]{style="font-family:宋体"}
+**[verbose**]：显示详细信息，包括软件包的名称、基本信息和所包含的组件。不指定该参数时，仅显示软件包的名称。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_2038921084}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x855338322}[显示存储介质根目录下、没有被激活的所有软件包的简要信息。]{style="font-family:宋体"}
+\# 显示存储介质根目录下、没有被激活的所有软件包的简要信息。
 
-[[\<Sysname\> display install inactive]{lang="EN-US"}]{#struct_0_71526_x1155_x1765099706}
+\<Sysname\> display install inactive
 
-[Inactive packages on slot 1:]{lang="EN-US"}
+Inactive packages on slot 1:
 
-[ flash:/ssh-feature.bin]{lang="EN-US"}
+ flash:/ssh-feature.bin
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_588791174}[显示存储介质根目录下、没有被激活的所有软件包的详细信息。]{style="font-family:宋体"}
+\# 显示存储介质根目录下、没有被激活的所有软件包的详细信息。
 
-[[\<Sysname\> display install inactive verbose]{lang="EN-US"}]{#struct_0_71526_x1155_x954869250}
+\<Sysname\> display install inactive verbose
 
-[Inactive packages on slot 1:]{lang="EN-US"}
+Inactive packages on slot 1:
 
-[flash:/ssh-feature.bin]{lang="EN-US"}
+flash:/ssh-feature.bin
 
-[ \[Package\]]{lang="EN-US"}
+ Package
 
-[ Vendor: H3C]{lang="EN-US"}
+ Vendor: H3C
 
-[ Product: XXXX]{lang="EN-US"}
+ Product: XXXX
 
-[ Service name: ssh]{lang="EN-US"}
+ Service name: ssh
 
-[ Platform version: 7.1]{lang="EN-US"}
+ Platform version: 7.1
 
-[ Product version: Beta 1330]{lang="EN-US"}
+ Product version: Beta 1330
 
-[ Supported board: mr, lc, sfc]{lang="EN-US"}
+ Supported board: mr, lc, sfc
 
-[ \[Component\]]{lang="EN-US"}
+ Component
 
-[ Component: ssh]{lang="EN-US"}
+ Component: ssh
 
-[ Description: ssh package]{lang="EN-US"}
+ Description: ssh package
 
-[[本命令显示信息的描述请参见]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1744231611}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-1]{lang="EN-US"}](?2076033456#_Ref302142357)[。]{style="font-family:宋体"}
+本命令显示信息的描述请参见 表1-1(?2076033456#_Ref302142357)。
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x2136371850}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[install deactivate]{lang="EN-US"}**]{#struct_0_71526_x1155_x1333930445}
-:::
-
-::: {#665485774 .myid}
-[]{#_Toc404782729}[]{#struct_0_71526_x1155_x1765165242}
+·**install deactivate**
 
 **ISSU \-- ISSU配置命令 \-- display install ipe-info**
 
 ------------------------------------------------------------------------
 
-[**[display install ipe-info]{lang="EN-US"}**]{#struct_0_71526_x1155_x1716500330}[命令用来显示]{style="font-family:
-宋体"}[IPE]{lang="EN-US"}[文件包含的软件包列表。]{style="font-family:宋体"}
+**[display install ipe-info**]命令用来显示IPE文件包含的软件包列表。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1902171023}
+【命令】
 
-[**[display install ipe-info]{lang="EN-US"}**[ *ipe-filename*]{lang="EN-US"}]{#struct_0_71526_x1155_x1558472604}
+**[display install ipe-info** *ipe-filename*]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1487579602}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_666149935}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x638581472}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_x2067632675}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_71526_x1155_x1765230778}
+network-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x949235278}
+【参数】
 
-[*[ipe-filename]{lang="EN-US"}*]{#struct_0_71526_x1155_x2141474092}[：表示]{style="font-family:宋体"}[IPE]{lang="EN-US"}[文件名，以]{style="font-family:宋体"}[.ipe]{lang="EN-US"}[作为后缀名，从存储介质名开始为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串（包括存储介质名在内），不区分大小写。如果该]{style="font-family:宋体"}[IPE]{lang="EN-US"}[文件不存在，命令执行失败。]{style="font-family:宋体"}
+*[ipe-filename*]：表示IPE文件名，以.ipe作为后缀名，从存储介质名开始为1～63个字符的字符串（包括存储介质名在内），不区分大小写。如果该IPE文件不存在，命令执行失败。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1262873648}
+【使用指导】
 
-[[IPE]{lang="EN-US"}]{#struct_0_71526_x1155_x2059882343}[文件是一个或多个软件包的集合。用户获得该]{style="font-family:宋体"}[IPE]{lang="EN-US"}[文件后，可以选择其中的软件包进行升级。]{style="font-family:宋体"}
+IPE文件是一个或多个软件包的集合。用户获得该IPE文件后，可以选择其中的软件包进行升级。
 
-[[当配置该命令时，命令中指定的]{style="font-family:宋体"}[IPE]{lang="EN-US"}]{#struct_0_71526_x1155_x1132011825}[文件必须放在存储介质的根目录下，文件名中必须包含存储介质的名称，形如]{style="font-family:宋体"}[flash:/xx.ipe]{lang="EN-US"}[。（集中式设备）]{style="font-family:宋体"}
+当配置该命令时，命令中指定的IPE文件必须放在存储介质的根目录下，文件名中必须包含存储介质的名称，形如flash:/xx.ipe。（集中式设备）
 
-[[当配置该命令时，命令中指定的]{style="font-family:宋体"}[IPE]{lang="EN-US"}]{#struct_0_71526_x1155_x1880392126}[文件必须放在存储介质的根目录下，文件名中必须包含存储介质的名称，形如]{style="font-family:宋体"}[flash:/xx.ipe]{lang="EN-US"}[或者]{style="font-family:宋体"}[slot*n*#flash:/xx.ipe]{lang="EN-US"}[，]{style="font-family:宋体"}*[n]{lang="EN-US"}*[为备用主控板所在的槽位号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的虚拟槽位号。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+当配置该命令时，命令中指定的IPE文件必须放在存储介质的根目录下，文件名中必须包含存储介质的名称，形如flash:/xx.ipe或者slot*n*#flash:/xx.ipe，*n*为备用主控板所在的槽位号或者PEX设备的虚拟槽位号。（分布式设备－独立运行模式）
 
-[[当配置该命令时，命令中指定的]{style="font-family:宋体"}[IPE]{lang="EN-US"}]{#struct_0_71526_x1155_496501271}[文件必须放在存储介质的根目录下，文件名中必须包含存储介质的名称，形如]{style="font-family:宋体"}[flash:/xx.ipe]{lang="EN-US"}[或者]{style="font-family:宋体"}[slot*n*#flash:/xx.ipe]{lang="EN-US"}[，]{style="font-family:宋体"}*[n]{lang="EN-US"}*[为从设备的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的虚拟槽位号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+当配置该命令时，命令中指定的IPE文件必须放在存储介质的根目录下，文件名中必须包含存储介质的名称，形如flash:/xx.ipe或者slot*n*#flash:/xx.ipe，*n*为从设备的成员编号或者PEX设备的虚拟槽位号。（集中式IRF设备）
 
-[[当配置该命令时，命令中指定的]{style="font-family:宋体"}[IPE]{lang="EN-US"}]{#struct_0_71526_x1155_184952832}[文件必须放在存储介质的根目录下，文件名中必须含存储介质的名称，形如]{style="font-family:宋体"}[flash:/xx.ipe]{lang="EN-US"}[或者]{style="font-family:宋体"}[chassis*m*#slot*n*#flash:/startup-boot.ipe]{lang="EN-US"}[，]{style="font-family:宋体"}[chassis*m*#slot*n*]{lang="EN-US"}[用于指定全局备用主控板或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的虚拟槽位号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+当配置该命令时，命令中指定的IPE文件必须放在存储介质的根目录下，文件名中必须含存储介质的名称，形如flash:/xx.ipe或者chassis*m*#slot*n*#flash:/startup-boot.ipe，chassis*m*#slot*n*用于指定全局备用主控板或者PEX设备的虚拟槽位号。（分布式设备－IRF模式）
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1765296314}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_1984779340}[显示]{style="font-family:宋体"}[flash:/test.ipe]{lang="EN-US"}[的]{style="font-family:宋体"}[IPE]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+\# 显示flash:/test.ipe的IPE信息。
 
-[[\<Sysname\> display install ipe-info flash:/test.ipe]{lang="EN-US"}]{#struct_0_71526_x1155_x1764837562}
+\<Sysname\> display install ipe-info flash:/test.ipe
 
-[Verifying the file flash:/test.ipe on the device\...\...\...\...\....Done.]{lang="EN-US"}
+Verifying the file flash:/test.ipe on the device\...\...\...\...\....Done.
 
-[H3C Device images in IPE:]{lang="EN-US"}
+H3C Device images in IPE:
 
-[  boot.bin]{lang="EN-US"}
+  boot.bin
 
-[  system.bin]{lang="EN-US"}
+  system.bin
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1580502387}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display install package]{lang="EN-US"}**]{#struct_0_71526_x1155_x1988260448}
-:::
-
-::: {#-580458775 .myid}
-[]{#_Toc404782730}[]{#struct_0_71526_x1155_20137924}
+·**display install package**
 
 **ISSU \-- ISSU配置命令 \-- display install job**
 
 ------------------------------------------------------------------------
 
-[**[display install job]{lang="EN-US"}**]{#struct_0_71526_x1155_1009257426}[命令用来显示系统中正在执行的激活、卸载或回滚操作。]{style="font-family:宋体"}
+**[display install job**]命令用来显示系统中正在执行的激活、卸载或回滚操作。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_461734395}
+【命令】
 
-[**[display install job]{lang="EN-US"}**]{#struct_0_71526_x1155_1517130286}
+**[display install job**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1465844989}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1764903098}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_207921939}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_1349521114}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_71526_x1155_1108457423}
+network-operator
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x536706759}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1187251838}[显示系统中正在执行的激活、卸载、回滚三种]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[操作。（集中式设备）]{style="font-family:宋体"}
+\# 显示系统中正在执行的激活、卸载、回滚三种ISSU操作。（集中式设备）
 
-[[\<Sysname\> display install job]{lang="EN-US"}]{#struct_0_71526_x1155_643121458}
+\<Sysname\> display install job
 
-[ JobID:5]{lang="EN-US"}
+ JobID:5
 
-[  Action:install activate flash:/ssh-feature.bin on the device]{lang="EN-US"}
+  Action:install activate flash:/ssh-feature.bin on the device
 
-[[以上显示信息表明：设备正在执行]{style="font-family:宋体"}**[install activate flash:/ssh-feature.bin]{lang="EN-US"}**]{#struct_0_71526_x1155_x160226064}[操作。]{style="font-family:宋体"}
+以上显示信息表明：设备正在执行**install activate flash:/ssh-feature.bin**操作。
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1764968634}[显示系统中正在执行的激活、卸载、回滚三种]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[操作。（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\# 显示系统中正在执行的激活、卸载、回滚三种ISSU操作。（分布式设备－独立运行模式/集中式IRF设备）
 
-[[\<Sysname\> display install job]{lang="EN-US"}]{#struct_0_71526_x1155_x799996833}
+\<Sysname\> display install job
 
-[ JobID:5]{lang="EN-US"}
+ JobID:5
 
-[  Action:install activate flash:/ssh-feature.bin on slot 1]{lang="EN-US"}
+  Action:install activate flash:/ssh-feature.bin on slot 1
 
-[[以上显示信息表明：设备正在执行]{style="font-family:宋体"}**[install activate flash:/ssh-feature.bin slot 1]{lang="EN-US"}**]{#struct_0_71526_x1155_x1026879552}[操作。]{style="font-family:
-宋体"}
+以上显示信息表明：设备正在执行**install activate flash:/ssh-feature.bin slot 1**操作。
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_80266943}[显示系统中正在执行的激活、卸载、回滚三种]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[操作。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\# 显示系统中正在执行的激活、卸载、回滚三种ISSU操作。（分布式设备－IRF模式）
 
-[[\<Sysname\> display install job]{lang="EN-US"}]{#struct_0_71526_x1155_x31960450}
+\<Sysname\> display install job
 
-[ JobID:5]{lang="EN-US"}
+ JobID:5
 
-[  Action:install activate flash:/ssh-feature.bin on chassis 1 slot 1]{lang="EN-US"}
+  Action:install activate flash:/ssh-feature.bin on chassis 1 slot 1
 
-[[以上显示信息表明：设备正在执行]{style="font-family:宋体"}**[install activate flash:/ssh-feature.bin chassis 1 slot 1]{lang="EN-US"}**]{#struct_0_71526_x1155_1810539851}[操作。]{style="font-family:宋体"}
-:::
-
-::: {#-177174250 .myid}
-[]{#_Toc404782731}[]{#struct_0_71526_x1155_1649030332}
+以上显示信息表明：设备正在执行**install activate flash:/ssh-feature.bin chassis 1 slot 1**操作。
 
 **ISSU \-- ISSU配置命令 \-- display install log**
 
 ------------------------------------------------------------------------
 
-[**[display install log]{lang="EN-US"}**]{#struct_0_71526_x1155_x1306770472}[命令用来显示与]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[升级相关的日志。]{style="font-family:宋体"}
+**[display install log**]命令用来显示与ISSU升级相关的日志。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1765034170}
+【命令】
 
-[**[display install log]{lang="EN-US"}**[ \[ *log-id* \] \[ **verbose** \]]{lang="EN-US"}]{#struct_0_71526_x1155_x1132628344}
+**[display install log** [ *log-id*   **verbose** ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x926890969}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_1089274330}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_253512221}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_x1448152721}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_71526_x1155_627851242}
+network-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1567358961}
+【参数】
 
-[*[log-id]{lang="EN-US"}*]{#struct_0_71526_x1155_x1463636200}[：显示指定升级日志的信息。]{style="font-family:宋体"}*[log-id]{lang="EN-US"}*[表示升级日志的编号，不指定该参数时，则显示所有升级日志的信息。]{style="font-family:宋体"}
+*[log-id*]：显示指定升级日志的信息。*log-id*表示升级日志的编号，不指定该参数时，则显示所有升级日志的信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_71526_x1155_x1764575418}[：表示显示日志的详细信息。不指定该参数时，仅显示日志的摘要信息。]{style="font-family:宋体"}
+**[verbose**]：表示显示日志的详细信息。不指定该参数时，仅显示日志的摘要信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1379837966}
+【使用指导】
 
-[[ISSU]{lang="EN-US"}]{#struct_0_71526_x1155_1683847948}[日志记录了软件包历史操作信息，每当用户执行一次安装、升级、卸载、删除、取消或回滚操作时，都会自动产生一条日志信息，记录下该操作的过程，以及操作结果是成功还是失败。每条日志均分配一个全局唯一的]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+ISSU日志记录了软件包历史操作信息，每当用户执行一次安装、升级、卸载、删除、取消或回滚操作时，都会自动产生一条日志信息，记录下该操作的过程，以及操作结果是成功还是失败。每条日志均分配一个全局唯一的ID。
 
-[[设备最多可保存]{style="font-family:宋体"}[50]{lang="EN-US"}]{#struct_0_71526_x1155_x1630809026}[条]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[日志，超出该规格时新日志会覆盖最老的日志。]{style="font-family:宋体"}
+设备最多可保存50条ISSU日志，超出该规格时新日志会覆盖最老的日志。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_138261255}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1965060619}[显示所有]{style="font-family:宋体"}[显示与软件包升级相关的日志。]{style="font-family:
-宋体"}
+\# 显示所有显示与软件包升级相关的日志。
 
-[[\<Sysname\> display install log]{lang="EN-US"}]{#struct_0_71526_x1155_x1764640954}
+\<Sysname\> display install log
 
-[Install job 1 started by user root at 04/28/2001 08:39:29.]{lang="EN-US"}
+Install job 1 started by user root at 04/28/2001 08:39:29.
 
-[Job 1 completed successfully at 04/28/2001 08:39:30.]{lang="EN-US"}
+Job 1 completed successfully at 04/28/2001 08:39:30.
 
-[Install job 1 started by user root at 04/28/2001 08:39:29.]{lang="EN-US"}
+Install job 1 started by user root at 04/28/2001 08:39:29.
 
-[    Install activate flash:/ssh.bin on slot 1]{lang="EN-US"}
+    Install activate flash:/ssh.bin on slot 1
 
-[Job 1 completed successfully at 04/28/2001 08:39:30.]{lang="EN-US"}
+Job 1 completed successfully at 04/28/2001 08:39:30.
 
-[Install job 1 started by user root at 04/28/2001 08:39:29.]{lang="EN-US"}
+Install job 1 started by user root at 04/28/2001 08:39:29.
 
-[Job 1 completed successfully at 04/28/2001 08:39:30.]{lang="EN-US"}
+Job 1 completed successfully at 04/28/2001 08:39:30.
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[Install job 2 started by user root at 04/28/2001 08:40:29.]{lang="EN-US"}
+Install job 2 started by user root at 04/28/2001 08:40:29.
 
-[Job 2 completed successfully at 04/28/2001 08:40:30.]{lang="EN-US"}
+Job 2 completed successfully at 04/28/2001 08:40:30.
 
-[Install job 2 started by user root at 04/28/2001 08:40:29.]{lang="EN-US"}
+Install job 2 started by user root at 04/28/2001 08:40:29.
 
-[    Install activate flash:/route.bin on slot 1]{lang="EN-US"}
+    Install activate flash:/route.bin on slot 1
 
-[Job 2 completed successfully at 04/28/2001 08:40:30.]{lang="EN-US"}
+Job 2 completed successfully at 04/28/2001 08:40:30.
 
-[Install job 2 started by user root at 04/28/2001 08:40:29.]{lang="EN-US"}
+Install job 2 started by user root at 04/28/2001 08:40:29.
 
-[Job 2 completed successfully at 04/28/2001 08:40:30.]{lang="EN-US"}
+Job 2 completed successfully at 04/28/2001 08:40:30.
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1569196950}[显示系统中编号为]{style="font-family:宋体"}[1]{lang="EN-US"}[的软件包升级日志的详细信息。]{style="font-family:宋体"}
+\# 显示系统中编号为1的软件包升级日志的详细信息。
 
-[[\<Sysname\> display install log 1 verbose]{lang="EN-US"}]{#struct_0_71526_x1155_1343096032}
+\<Sysname\> display install log 1 verbose
 
-[Install job 1 started by user root at 04/28/2001 08:39:29.]{lang="EN-US"}
+Install job 1 started by user root at 04/28/2001 08:39:29.
 
-[Job 1 completed successfully at 04/28/2001 08:39:30.]{lang="EN-US"}
+Job 1 completed successfully at 04/28/2001 08:39:30.
 
-[Install job 1 started by user root at 04/28/2001 08:39:29.]{lang="EN-US"}
+Install job 1 started by user root at 04/28/2001 08:39:29.
 
-[    Install activate flash:/ssh.bin on slot 1]{lang="EN-US"}
+    Install activate flash:/ssh.bin on slot 1
 
-[Job 1 completed successfully at 04/28/2001 08:39:30.]{lang="EN-US"}
+Job 1 completed successfully at 04/28/2001 08:39:30.
 
-[Install job 1 started by user root at 04/28/2001 08:39:29.]{lang="EN-US"}
+Install job 1 started by user root at 04/28/2001 08:39:29.
 
-[Job 1 completed successfully at 04/28/2001 08:39:30.]{lang="EN-US"}
+Job 1 completed successfully at 04/28/2001 08:39:30.
 
-[ ]{lang="EN-US"}
+Detail of activating packages on slot 1.
 
-[Detail of activating packages on slot 1.]{lang="EN-US"}
+    Get upgrade policy successfully.
 
-[    Get upgrade policy successfully.]{lang="EN-US"}
+Detail of activating packages on slot 1.
 
-[ ]{lang="EN-US"}
+    Uncompress package to system successfully.
 
-[Detail of activating packages on slot 1.]{lang="EN-US"}
+    Remove files from system successfully.
 
-[    Uncompress package to system successfully.]{lang="EN-US"}
+表1-2  display install log{.FigureDescriptionChar}命令显示信息描述{.FigureDescriptionChar}表
 
-[    Remove files from system successfully.]{lang="EN-US"}
+字段
 
-[[表1-2 ]{lang="EN-US"}[[display install log]{lang="EN-US"}]{.FigureDescriptionChar}]{#struct_0_71526_x1155_374048821}[[命令显示信息描述]{style="font-family:黑体"}]{.FigureDescriptionChar}[表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x1140193022}[[字段]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1765099705}
-:::
+Install job 1 started by user root at 04/28/2001 08:39:29.
 
-[[描述]{style="font-family:黑体"}]{#struct_0_71526_x1155_x2140092181}
+ISSU动作的执行者和执行时间
 
-[[Install job 1 started by user root at 04/28/2001 08:39:29.]{lang="EN-US"}]{#struct_0_71526_x1155_1569916047}
+Job 1 completed successfully at 04/28/2001 08:39:30.
 
-[[ISSU]{lang="EN-US"}]{#struct_0_71526_x1155_x1158967308}[动作的执行者和执行时间]{style="font-family:宋体"}
+ISSU动作的完成时间
 
-[[Job 1 completed successfully at 04/28/2001 08:39:30.]{lang="EN-US"}]{#struct_0_71526_x1155_1693353836}
+Install activate flash:/ssh.bin on slot 1
 
-[[ISSU]{lang="EN-US"}]{#struct_0_71526_x1155_407116633}[动作的完成时间]{style="font-family:宋体"}
+执行的ISSU动作
 
-[[Install activate flash:/ssh.bin on slot 1]{lang="EN-US"}]{#struct_0_71526_x1155_x1609306002}
+Detail of activating packages on slot 1.
 
-[[执行的]{style="font-family:宋体"}[ISSU]{lang="EN-US"}]{#struct_0_71526_x1155_1372119524}[动作]{style="font-family:宋体"}
+激活包动作的详细信息
 
-[[Detail of activating packages on slot 1.]{lang="EN-US"}]{#struct_0_71526_x1155_x43222061}
+Get upgrade policy successfully
 
-[[激活包动作的详细信息]{style="font-family:宋体"}]{#struct_0_71526_x1155_68674032}
+表示升级决策处理成功
 
-[[Get upgrade policy successfully]{lang="EN-US"}]{#struct_0_71526_x1155_x339177397}
+Uncompress package to system successfully
 
-[[表示升级决策处理成功]{style="font-family:宋体"}]{#struct_0_71526_x1155_754353208}
+解压软件包文件到系统成功
 
-[[Uncompress package to system successfully]{lang="EN-US"}]{#struct_0_71526_x1155_x1717354354}
+Remove files from system successfully
 
-[[解压软件包文件到系统成功]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1743372357}
+从系统中删除文件成功
 
-[[Remove files from system successfully]{lang="EN-US"}]{#struct_0_71526_x1155_x242100928}
+【相关命令】
 
-[[从系统中删除文件成功]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1765165241}
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1012383025}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset install log-history oldest]{lang="EN-US"}**]{#struct_0_71526_x1155_1412474745}
-
-::: {#-690534616 .myid}
-[]{#_Toc404782732}[]{#struct_0_71526_x1155_730388233}
+·**reset install log-history oldest**
 
 **ISSU \-- ISSU配置命令 \-- display install package**
 
 ------------------------------------------------------------------------
 
-[**[display install package]{lang="EN-US"}**]{#struct_0_71526_x1155_544547379}[命令用来显示软件包的相关信息。]{style="font-family:宋体"}
+**[display install package**]命令用来显示软件包的相关信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_301776562}
+【命令】
 
-[**[display install package]{lang="EN-US"}**[ { *filename* \| **all** } \[ **verbose** \]]{lang="EN-US"}]{#struct_0_71526_x1155_779442837}
+**[display install package**[ { *filename* \| **all** } [ **verbose** ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_507943269}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1422848588}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1765230777}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_x1352519805}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_71526_x1155_x1351184479}
+network-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1765518291}
+【参数】
 
-[*[filename]{lang="EN-US"}*]{#struct_0_71526_x1155_x824452310}[：表示软件包的文件名，以]{style="font-family:宋体"}[.bin]{lang="EN-US"}[作为后缀名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+*[filename*]：表示软件包的文件名，以.bin作为后缀名，为1～63个字符的字符串，不区分大小写。
 
-[**[all]{lang="EN-US"}**]{#struct_0_71526_x1155_x974919027}[：表示设备上存储介质根目录下的所有软件包。（集中式设备）]{style="font-family:宋体"}
+**[all**]：表示设备上存储介质根目录下的所有软件包。（集中式设备）
 
-[**[all]{lang="EN-US"}**]{#struct_0_71526_x1155_1944971631}[：表示主用主控板上存储介质根目录下的所有软件包。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[all**]：表示主用主控板上存储介质根目录下的所有软件包。（分布式设备－独立运行模式）
 
-[**[all]{lang="EN-US"}**]{#struct_0_71526_x1155_x1472874679}[：表示主设备上存储介质根目录下的所有软件包。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**[all**]：表示主设备上存储介质根目录下的所有软件包。（集中式IRF设备）
 
-[**[all]{lang="EN-US"}**]{#struct_0_71526_x1155_x856334584}[：表示全局主用主控板上存储介质根目录下的所有软件包。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**[all**]：表示全局主用主控板上存储介质根目录下的所有软件包。（分布式设备－IRF模式）
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_71526_x1155_x1765296313}[：显示软件包的基本信息和软件包所包含的组件。不指定该参数时，仅显示软件包的基本信息。]{style="font-family:宋体"}
+**[verbose**]：显示软件包的基本信息和软件包所包含的组件。不指定该参数时，仅显示软件包的基本信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x387873655}
+【使用指导】
 
-[[当配置该命令时，命令中指定的软件包必须放在存储介质的根目录下，文件名中必须包含存储介质的名称，形如]{style="font-family:宋体"}[flash:/xx.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x634138418}[。（集中式设备）]{style="font-family:宋体"}
+当配置该命令时，命令中指定的软件包必须放在存储介质的根目录下，文件名中必须包含存储介质的名称，形如flash:/xx.bin。（集中式设备）
 
-[[当配置该命令时，命令中指定的软件包必须放在存储介质的根目录下，文件名中必须包含存储介质的名称，形如]{style="font-family:宋体"}[flash:/xx.bin]{lang="EN-US"}]{#struct_0_71526_x1155_1706198758}[或者]{style="font-family:宋体"}[slot*n*#flash:/xx.bin]{lang="EN-US"}[，]{style="font-family:宋体"}*[n]{lang="EN-US"}*[为备用主控板所在的槽位号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的虚拟槽位号。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+当配置该命令时，命令中指定的软件包必须放在存储介质的根目录下，文件名中必须包含存储介质的名称，形如flash:/xx.bin或者slot*n*#flash:/xx.bin，*n*为备用主控板所在的槽位号或者PEX设备的虚拟槽位号。（分布式设备－独立运行模式）
 
-[[当配置该命令时，命令中指定的软件包必须放在存储介质的根目录下，文件名中必须包含存储介质的名称，形如]{style="font-family:宋体"}[flash:/xx.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x822753115}[或者]{style="font-family:宋体"}[slot*n*#flash:/xx.bin]{lang="EN-US"}[，]{style="font-family:宋体"}*[n]{lang="EN-US"}*[为从设备的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的虚拟槽位号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+当配置该命令时，命令中指定的软件包必须放在存储介质的根目录下，文件名中必须包含存储介质的名称，形如flash:/xx.bin或者slot*n*#flash:/xx.bin，*n*为从设备的成员编号或者PEX设备的虚拟槽位号。（集中式IRF设备）
 
-[[当配置该命令时，命令中指定的软件包必须放在存储介质的根目录下，文件名中必须含存储介质的名称，形如]{style="font-family:宋体"}[flash:/xx.bin]{lang="EN-US"}]{#struct_0_71526_x1155_1868848973}[或]{style="font-family:宋体"}[chassis*m*#slot*n*#flash:/startup-boot.bin]{lang="EN-US"}[，]{style="font-family:宋体"}[chassis*m*#slot*n*]{lang="EN-US"}[用于指定全局备用主控板或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的虚拟槽位号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+当配置该命令时，命令中指定的软件包必须放在存储介质的根目录下，文件名中必须含存储介质的名称，形如flash:/xx.bin或chassis*m*#slot*n*#flash:/startup-boot.bin，chassis*m*#slot*n*用于指定全局备用主控板或者PEX设备的虚拟槽位号。（分布式设备－IRF模式）
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x285495823}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1898607629}[显示软件包]{style="font-family:宋体"}[system.bin]{lang="EN-US"}[的相关信息。]{style="font-family:宋体"}
+\# 显示软件包system.bin的相关信息。
 
-[[\<Sysname\> display install package flash:/system.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x1764837561}
+\<Sysname\> display install package flash:/system.bin
 
-[  flash:/system.bin]{lang="EN-US"}
+  flash:/system.bin
 
-[  \[Package\]]{lang="EN-US"}
+  Package
 
-[  Vendor: H3C]{lang="EN-US"}
+  Vendor: H3C
 
-[  Product: xxxx]{lang="EN-US"}
+  Product: xxxx
 
-[  Service name: system]{lang="EN-US"}
+  Service name: system
 
-[  Platform version: 7.1.022]{lang="EN-US"}
+  Platform version: 7.1.022
 
-[  Product version: Beta 1330]{lang="EN-US"}
+  Product version: Beta 1330
 
-[  Supported board: mpu]{lang="EN-US"}
+  Supported board: mpu
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_1177217860}[显示软件包]{style="font-family:宋体"}[system.bin]{lang="EN-US"}[的详细信息。]{style="font-family:宋体"}
+\# 显示软件包system.bin的详细信息。
 
-[[\<Sysname\> display install package flash:/system.bin verbose]{lang="EN-US"}]{#struct_0_71526_x1155_x1764903097}
+\<Sysname\> display install package flash:/system.bin verbose
 
-[  flash:/system.bin]{lang="EN-US"}
+  flash:/system.bin
 
-[  \[Package\]]{lang="EN-US"}
+  Package
 
-[  Vendor: H3C]{lang="EN-US"}
+  Vendor: H3C
 
-[  Product: xxxx]{lang="EN-US"}
+  Product: xxxx
 
-[  Service name: system]{lang="EN-US"}
+  Service name: system
 
-[  Platform version: 7.1.022]{lang="EN-US"}
+  Platform version: 7.1.022
 
-[  Product version: Beta 1330]{lang="EN-US"}
+  Product version: Beta 1330
 
-[  Supported board: mpu]{lang="EN-US"}
+  Supported board: mpu
 
-[  \[Component\]]{lang="EN-US"}
+  Component
 
-[  Component: system]{lang="EN-US"}
+  Component: system
 
-[  Description: system package]{lang="EN-US"}
+  Description: system package
 
-[[本命令显示信息的描述请参见]{style="font-family:宋体"}]{#struct_0_71526_x1155_967436826}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-1]{lang="EN-US"}](?2076033456#_Ref302142357)[。]{style="font-family:宋体"}
-:::
-
-::: {#-1476908894 .myid}
-[]{#_Toc404782733}[]{#struct_0_71526_x1155_x709841317}
+本命令显示信息的描述请参见 表1-1(?2076033456#_Ref302142357)。
 
 **ISSU \-- ISSU配置命令 \-- display install rollback**
 
 ------------------------------------------------------------------------
 
-[**[display install rollback]{lang="EN-US"}**]{#struct_0_71526_x1155_1766352513}[命令用来显示回滚点的相关信息。]{style="font-family:
-宋体"}
+**[display install rollback**]命令用来显示回滚点的相关信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1269023453}
+【命令】
 
-[**[display install rollback]{lang="EN-US"}**[ \[ *point-id* \]]{lang="EN-US"}]{#struct_0_71526_x1155_x1051017824}
+**[display install rollback** [ *point-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1637519630}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_1686632849}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1764968633}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_1572656162}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_71526_x1155_1218572384}
+network-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1490347180}
+【参数】
 
-[*[point-id]{lang="EN-US"}*]{#struct_0_71526_x1155_x1766089938}[：回滚点的编号。]{style="font-family:宋体"}
+*[point-id*]：回滚点的编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x883249868}
+【使用指导】
 
-[[可以通过这个命令查看回滚点信息，以便进行相应的回滚操作。]{style="font-family:宋体"}]{#struct_0_71526_x1155_97260549}
+可以通过这个命令查看回滚点信息，以便进行相应的回滚操作。
 
-[[issu]{lang="EN-US"}]{#struct_0_71526_x1155_1260688968}[命令升级过程中不会记录回滚点，因此，在]{style="font-family:宋体"}[issu]{lang="EN-US"}[命令升级过程中执行该命令，没有信息可显示。]{style="font-family:宋体"}
+issu命令升级过程中不会记录回滚点，因此，在issu命令升级过程中执行该命令，没有信息可显示。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1962847585}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1807711193}[显示回滚点的相关信息。]{style="font-family:宋体"}
+\# 显示回滚点的相关信息。
 
-[[\<Sysname\> display install rollback]{lang="EN-US"}]{#struct_0_71526_x1155_x1765034169}
+\<Sysname\> display install rollback
 
-[Install rollback information 1 on slot 1:]{lang="EN-US"}
+Install rollback information 1 on slot 1:
 
-[  Updating from flash:/route-1.bin]{lang="EN-US"}
+  Updating from flash:/route-1.bin
 
-[         to flash:/route-2.bin.]{lang="EN-US"}
+         to flash:/route-2.bin.
 
-[ ]{lang="EN-US"}
+Install rollback information 2 on slot 1:
 
-[Install rollback information 2 on slot 1:]{lang="EN-US"}
+   Deactivating flash:/route-2.bin
 
-[   Deactivating flash:/route-2.bin]{lang="EN-US"}
+以上显示信息表明：设备上共有两个回滚点，回滚点1是将flash:/route-1.bin升级到了flash:/route-2.bin，回滚点2是将flash:/route-2.bin卸载了。
 
-[[以上显示信息表明：设备上共有两个回滚点，回滚点]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_71526_x1155_1239959115}[是将]{style="font-family:宋体"}[flash:/route-1.bin]{lang="EN-US"}[升级到了]{style="font-family:宋体"}[flash:/route-2.bin]{lang="EN-US"}[，回滚点]{style="font-family:宋体"}[2]{lang="EN-US"}[是将]{style="font-family:宋体"}[flash:/route-2.bin]{lang="EN-US"}[卸载了。]{style="font-family:宋体"}
+表1-3 display install rollback命令显示信息描述表
 
-[[表1-3 ]{lang="EN-US"}[display install rollback]{lang="EN-US"}]{#struct_0_71526_x1155_2091664434}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1138442550}[[字段]{style="font-family:黑体"}]{#struct_0_71526_x1155_1349459673}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_71526_x1155_x867279678}
+Install rollback information *n*
 
-[[Install rollback information *n*]{lang="EN-US"}]{#struct_0_71526_x1155_1910960222}
+回滚点信息，*n*为回滚点编号
 
-[[回滚点信息，]{style="font-family:宋体"}*[n]{lang="EN-US"}*]{#struct_0_71526_x1155_x1764575417}[为回滚点编号]{style="font-family:宋体"}
+Updating from *A* to *B*
 
-[[Updating from *A* to *B*]{lang="EN-US"}]{#struct_0_71526_x1155_620323079}
+从软件包*A*升级到软件包*B*，*A*和*B*为软件包的名称
 
-[[从软件包]{style="font-family:宋体"}*[A]{lang="EN-US"}*]{#struct_0_71526_x1155_x1589377492}[升级到软件包]{style="font-family:宋体"}*[B]{lang="EN-US"}*[，]{style="font-family:宋体"}*[A]{lang="EN-US"}*[和]{style="font-family:宋体"}*[B]{lang="EN-US"}*[为软件包的名称]{style="font-family:宋体"}
+Deactivating *A*
 
-[[Deactivating *A*]{lang="EN-US"}]{#struct_0_71526_x1155_590793384}
+卸载软件包*A*，*A*为软件包的名称
 
-[[卸载软件包]{style="font-family:宋体"}*[A]{lang="EN-US"}*]{#struct_0_71526_x1155_133340480}[，]{style="font-family:宋体"}*[A]{lang="EN-US"}*[为软件包的名称]{style="font-family:宋体"}
+【相关命令】
 
-[ ]{lang="EN-US"}
+·**install rollback**
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1612333611}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[install rollback]{lang="EN-US"}**]{#struct_0_71526_x1155_621389685}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset install rollback oldest]{lang="EN-US"}**]{#struct_0_71526_x1155_x1764640953}
-
-::: {#1310287279 .myid}
-[]{#_Toc404782734}[]{#struct_0_71526_x1155_x1165912423}[]{#_Toc304800158}[]{#_Toc304800159}[]{#_Toc304800160}[]{#_Toc304800161}[]{#_Toc304800162}[]{#_Toc304800163}[]{#_Toc304800164}[]{#_Toc304800165}[]{#_Toc304800166}[]{#_Toc304800167}[]{#_Toc304800168}[]{#_Toc304800169}[]{#_Toc304800170}
+·**reset install rollback oldest**
 
 **ISSU \-- ISSU配置命令 \-- display install which**
 
 ------------------------------------------------------------------------
 
-[**[display install which]{lang="EN-US"}**]{#struct_0_71526_x1155_x1154759208}[命令用来显示一个组件或文件的所属软件包，以及该软件包的相关信息。]{style="font-family:宋体"}
+**[display install which**]命令用来显示一个组件或文件的所属软件包，以及该软件包的相关信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1994503588}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_71526_x1155_x948831679}
+集中式设备：
 
-[**[display install which]{lang="EN-US"}**[ { **component** *name* \| **file** *filename* }]{lang="EN-US"}]{#struct_0_71526_x1155_x2129295766}
+**[display install which**[ { **component** *name* \| **file** *filename* }]]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_71526_x1155_1118969077}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display install which]{lang="EN-US"}**[ { **component** *name* \| **file** *filename* } \[ **slot** *slot-number* \[ ]{lang="EN-US"}]{#struct_0_71526_x1155_x426363842}**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}*[cpu-number]{lang="EN-US"}*[ \] \]]{lang="EN-US"}
+**[display install which**[ { **component** *name* \| **file** *filename* } [ **slot** *slot-number* ]**cpu***cpu-number*  ]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_2056871628}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display install which]{lang="EN-US"}**[ { **component** *name* \| **file** *filename* } \[ **chassis** *chassis-number* **slot** *slot-number* \[ ]{lang="EN-US"}]{#struct_0_71526_x1155_x1765099708}**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}*[cpu-number]{lang="EN-US"}*[ \] \]]{lang="EN-US"}
+**[display install which**[ { **component** *name* \| **file** *filename* } [ **chassis** *chassis-number* **slot** *slot-number* ]**cpu***cpu-number*  ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_2107820948}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_26613349}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1728910871}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_1458582205}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_71526_x1155_x259245256}
+network-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1850583771}
+【参数】
 
-[**[component]{lang="EN-US"}***[ name]{lang="EN-US"}*]{#struct_0_71526_x1155_x1993488744}[：软件包所包含的组件的名称。]{style="font-family:宋体"}
+**[component*** name*]：软件包所包含的组件的名称。
 
-[**[file]{lang="EN-US"}**[ *filename*]{lang="EN-US"}]{#struct_0_71526_x1155_x806808776}[：软件包所包含的文件的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。必须为纯文件名的形式。系统查询时，只有名称完全相同（除了大小写），才认为匹配成功。]{style="font-family:宋体"}
+**[file** *filename*]：软件包所包含的文件的名称，为1～63个字符的字符串，不区分大小写。必须为纯文件名的形式。系统查询时，只有名称完全相同（除了大小写），才认为匹配成功。
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_x1765165244}[：表示单板所在的槽位号。不指定该参数时，表示设备上的所有单板。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示单板所在的槽位号。不指定该参数时，表示设备上的所有单板。（分布式设备－独立运行模式）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_1771897912}[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有成员设备。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示设备在IRF中的成员编号。不指定该参数时，表示IRF中的所有成员设备。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_996673869}[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有成员设备和本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示设备在IRF中的成员编号或者本地有存储介质的PEX的虚拟槽位号。不指定该参数时，表示IRF中的所有成员设备和本地有存储介质的PEX。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*[ **slot** *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_1254849286}[：]{style="font-family:
-宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有单板。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number* **slot** *slot-number*]：*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。不指定该参数时，表示IRF中的所有单板。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*[ **slot** *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_492686500}[：]{style="font-family:
-宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板]{style="font-family:宋体"}[/]{lang="EN-US"}[本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有单板和本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number* **slot** *slot-number*]：*chassis-number*表示设备在IRF中的成员编号或者本地有存储介质的PEX对应的虚拟框号，*slot-number*表示单板/本地有存储介质的PEX所在的槽位号。不指定该参数时，表示IRF中的所有单板和本地有存储介质的PEX。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_71526_x1155_1058980485}*[cpu-number]{lang="EN-US"}*[：表示安全引擎的]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号。本参数专用于显示安全引擎上一个组件或文件属于哪个软件包以及该软件包的相关信息。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**[cpu**]*cpu-number*：表示安全引擎的CPU编号。本参数专用于显示安全引擎上一个组件或文件属于哪个软件包以及该软件包的相关信息。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。（分布式设备－独立运行模式/分布式设备－IRF模式）
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_2117882958}
+【使用指导】
 
-[[当软件包运行错误，系统提示]{style="font-family:宋体"}[xx]{lang="EN-US"}]{#struct_0_71526_x1155_147197547}[组件或者]{style="font-family:宋体"}[xx]{lang="EN-US"}[文件运行错误的时候，可以根据组件]{style="font-family:宋体"}[/]{lang="EN-US"}[文件的名字使用该命令查找它属于哪个软件包，从而帮助进一步定位是否是软件包本身有缺陷。]{style="font-family:宋体"}
+当软件包运行错误，系统提示xx组件或者xx文件运行错误的时候，可以根据组件/文件的名字使用该命令查找它属于哪个软件包，从而帮助进一步定位是否是软件包本身有缺陷。
 
-[[执行该命令后，系统会扫描指定]{style="font-family:宋体"}[slot]{lang="EN-US"}]{#struct_0_71526_x1155_x754544204}[存储介质的根目录下所有软件包，将包含该组件]{style="font-family:宋体"}[/]{lang="EN-US"}[文件的软件包都依次显示。]{style="font-family:宋体"}
+执行该命令后，系统会扫描指定slot存储介质的根目录下所有软件包，将包含该组件/文件的软件包都依次显示。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1670062077}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_659168835}[显示文件]{style="font-family:宋体"}[sshc.cli]{lang="EN-US"}[属于哪个软件包以及该软件包的相关信息。]{style="font-family:宋体"}
+\# 显示文件sshc.cli属于哪个软件包以及该软件包的相关信息。
 
-[[\<Sysname\> display install which file sshc.cli]{lang="EN-US"}]{#struct_0_71526_x1155_x1765230780}
+\<Sysname\> display install which file sshc.cli
 
-[Verifying the file flash:/system.bin on the device\...Done.  ]{lang="EN-US"}
+Verifying the file flash:/system.bin on the device\...Done. 
 
-[Verifying the file flash:/boot.bin on the device\...Done.  ]{lang="EN-US"}
+Verifying the file flash:/boot.bin on the device\...Done. 
 
-[File sshc.cli is in following packages on slot 1:]{lang="EN-US"}
+File sshc.cli is in following packages on slot 1:
 
-[  flash:/system.bin]{lang="EN-US"}
+  flash:/system.bin
 
-[  \[Package\]]{lang="EN-US"}
+  Package
 
-[  Vendor: xxx]{lang="EN-US"}
+  Vendor: xxx
 
-[  Product: xxxx]{lang="EN-US"}
+  Product: xxxx
 
-[  Service name: ssh]{lang="EN-US"}
+  Service name: ssh
 
-[  Platform version: 7.1.022]{lang="EN-US"}
+  Platform version: 7.1.022
 
-[  Product version: Beta 1330]{lang="EN-US"}
+  Product version: Beta 1330
 
-[  Supported board: mr, lc, sfc]{lang="EN-US"}
+  Supported board: mr, lc, sfc
 
-[[本命令显示信息的描述请参见]{style="font-family:宋体"}]{#struct_0_71526_x1155_x593463670}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-1]{lang="EN-US"}](?2076033456#_Ref302142357)[。]{style="font-family:宋体"}
-:::
-
-::: {#2127206730 .myid}
-[]{#_Toc404782735}[]{#struct_0_71526_x1155_372885594}[]{#_Toc329856486}[]{#_Toc315975335}
+本命令显示信息的描述请参见 表1-1(?2076033456#_Ref302142357)。
 
 **ISSU \-- ISSU配置命令 \-- display issu rollback-timer**
 
 ------------------------------------------------------------------------
 
-[**[display issu rollback-timer]{lang="EN-US"}**]{#struct_0_71526_x1155_x101987296}[命令用来显示回滚定时器的相关信息。]{style="font-family:
-宋体"}
+**[display issu rollback-timer**]命令用来显示回滚定时器的相关信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x9351263}
+【命令】
 
-[**[display issu rollback-timer]{lang="EN-US"}**]{#struct_0_71526_x1155_x1716839779}
+**[display issu rollback-timer**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1566381861}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_1996603100}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1765296316}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_x1147388542}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_71526_x1155_x1029046800}
+network-operator
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x431046932}
+【使用指导】
 
-[[因为新设置的回滚定时器时长会在下次]{style="font-family:宋体"}[ISSU]{lang="EN-US"}]{#struct_0_71526_x1155_247396474}[升级中生效，因此，可能出现剩余时间大于定时器时长的情况。]{style="font-family:宋体"}
+因为新设置的回滚定时器时长会在下次ISSU升级中生效，因此，可能出现剩余时间大于定时器时长的情况。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1048312229}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1256301883}[执行]{style="font-family:宋体"}**[issu run switchover]{lang="EN-US"}**[命令后，显示回滚定时器的相关信息。]{style="font-family:宋体"}
+\# 执行**issu run switchover**命令后，显示回滚定时器的相关信息。
 
-[[\<Sysname\> display issu rollback-timer]{lang="EN-US"}]{#struct_0_71526_x1155_x1764837564}
+\<Sysname\> display issu rollback-timer
 
-[Rollback timer: Working]{lang="EN-US"}
+Rollback timer: Working
 
-[Rollback interval]{lang="EN-US"}[：]{style="font-family:宋体"}[45 minutes]{lang="EN-US"}
+Rollback interval：45 minutes
 
-[Rollback time remaining : 40 minutes]{lang="EN-US"}
+Rollback time remaining : 40 minutes
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_417702973}[执行]{style="font-family:宋体"}**[issu accept]{lang="EN-US"}**[命令后，显示回滚定时器的相关信息。]{style="font-family:宋体"}
+\# 执行**issu accept**命令后，显示回滚定时器的相关信息。
 
-[[\<Sysname\> display issu rollback-timer]{lang="EN-US"}]{#struct_0_71526_x1155_x985528688}
+\<Sysname\> display issu rollback-timer
 
-[Rollback timer: Not working]{lang="EN-US"}
+Rollback timer: Not working
 
-[Rollback interval]{lang="EN-US"}[：]{style="font-family:宋体"}[30 minutes]{lang="EN-US"}
+Rollback interval：30 minutes
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_114663419}[当前没有进行]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[升级，显示回滚定时器的相关信息。]{style="font-family:宋体"}
+\# 当前没有进行ISSU升级，显示回滚定时器的相关信息。
 
-[[\<Sysname\> display issu rollback-timer]{lang="EN-US"}]{#struct_0_71526_x1155_x504467153}
+\<Sysname\> display issu rollback-timer
 
-[Rollback timer: Not working]{lang="EN-US"}
+Rollback timer: Not working
 
-[Rollback interval]{lang="EN-US"}[：]{style="font-family:宋体"}[45 minutes]{lang="EN-US"}
+Rollback interval：45 minutes
 
-[[表1-4 ]{lang="EN-US"}[display issu rollback-timer]{lang="EN-US"}]{#struct_0_71526_x1155_1443385143}[命令显示信息描述表]{style="font-family:黑体"}
+表1-4 display issu rollback-timer命令显示信息描述表
 
-[]{#table_struct_0_x1109465966}[[字段]{style="font-family:黑体"}]{#struct_0_71526_x1155_1992025636}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1764903100}
+描述
 
-[[Rollback timer]{lang="EN-US"}]{#struct_0_71526_x1155_563693546}
+Rollback timer
 
-[[回滚定时器是否处于工作状态：]{style="font-family:宋体"}]{#struct_0_71526_x1155_859814918}
+回滚定时器是否处于工作状态：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Working]{lang="EN-US"}]{#struct_0_71526_x1155_x817014551}[：回滚定时器已经启动]{lang="EN-US" style="font-family:宋体"}
+·Working：回滚定时器已经启动
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not working]{lang="EN-US"}]{#struct_0_71526_x1155_2069996576}[：回滚定时器没有启动或者已经超时]{lang="EN-US" style="font-family:宋体"}
+·Not working：回滚定时器没有启动或者已经超时
 
-[[Rollback interval]{lang="EN-US"}]{#struct_0_71526_x1155_1158611357}
+Rollback interval
 
-[[用户配置的回滚定时器的时间，单位为分钟]{style="font-family:宋体"}]{#struct_0_71526_x1155_606908463}
+用户配置的回滚定时器的时间，单位为分钟
 
-[[Rollback time remaining]{lang="EN-US"}]{#struct_0_71526_x1155_x1764968636}
+Rollback time remaining
 
-[[距离回滚定时器超时的时间，单位为分钟]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1962796247}
+距离回滚定时器超时的时间，单位为分钟
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1614027725}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[issu rollback-timer]{lang="EN-US"}**]{#struct_0_71526_x1155_1195742121}
-
-::: {#1316911812 .myid}
-[]{#_Toc404782736}[]{#struct_0_71526_x1155_912486168}[]{#_Toc329856488}[]{#_Toc251161054}[]{#_Toc304800173}[]{#_Toc304813443}
+·**issu rollback-timer**
 
 **ISSU \-- ISSU配置命令 \-- display issu state**
 
 ------------------------------------------------------------------------
 
-[**[display issu state]{lang="EN-US"}**]{#struct_0_71526_x1155_x1693202685}[命令用来显示当前]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[升级所处的状态，以及]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[升级的相关信息。]{style="font-family:宋体"}
+**[display issu state**]命令用来显示当前ISSU升级所处的状态，以及ISSU升级的相关信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_171059243}
+【命令】
 
-[**[display issu state]{lang="EN-US"}**]{#struct_0_71526_x1155_x1794958516}
+**[display issu state**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1765034172}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_1999539538}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x397721962}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_1004908971}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_71526_x1155_1155581854}
+network-operator
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1323347920}
+【使用指导】
 
-[**[issu]{lang="EN-US"}**]{#struct_0_71526_x1155_1873198954}[命令升级需要经过一系列的操作步骤，升级过程中有严格的步骤要求，执行升级步骤会导致]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[状态的变化，通过该命令的显示信息可以帮助管理员确定下一步需执行的操作。]{style="font-family:宋体"}
+**[issu**]命令升级需要经过一系列的操作步骤，升级过程中有严格的步骤要求，执行升级步骤会导致ISSU状态的变化，通过该命令的显示信息可以帮助管理员确定下一步需执行的操作。
 
-[[该命令不能显示]{style="font-family:宋体"}**[install]{lang="EN-US"}**]{#struct_0_71526_x1155_664165997}[命令升级过程中设备所处的状态，因为]{style="font-family:宋体"}**[install]{lang="EN-US"}**[命令升级过程没有用到状态机。]{style="font-family:宋体"}
+该命令不能显示**install**命令升级过程中设备所处的状态，因为**install**命令升级过程没有用到状态机。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1552912405}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1967768909}[当前设备没有]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[升级，显示]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[状态。（集中式设备）]{style="font-family:宋体"}
+\# 当前设备没有ISSU升级，显示ISSU状态。（集中式设备）
 
-[[\<Sysname\> display issu state]{lang="EN-US"}]{#struct_0_71526_x1155_x1764640956}
+\<Sysname\> display issu state
 
-[ISSU state: Init]{lang="EN-US"}
+ISSU state: Init
 
-[Compatibility: Unknown]{lang="EN-US"}
+Compatibility: Unknown
 
-[Work state: Normal]{lang="EN-US"}
+Work state: Normal
 
-[Current version list:]{lang="EN-US"}
+Current version list:
 
-[  boot: 7.1.041, Demo 2402]{lang="EN-US"}
+  boot: 7.1.041, Demo 2402
 
-[  system: 7.1.041, Demo 2402]{lang="EN-US"}
+  system: 7.1.041, Demo 2402
 
-[  ssh: 7.1.041, Demo 2402]{lang="EN-US"}
+  ssh: 7.1.041, Demo 2402
 
-[Current software images:]{lang="EN-US"}
+Current software images:
 
-[  flash:/boot.bin]{lang="EN-US"}
+  flash:/boot.bin
 
-[  flash:/system.bin]{lang="EN-US"}
+  flash:/system.bin
 
-[  flash:/ssh.bin]{lang="EN-US"}
+  flash:/ssh.bin
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x406397536}[当前设备没有]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[升级，显示]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[状态。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[/]{lang="EN-US"}[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式单成员设备）]{style="font-family:宋体"}
+\# 当前设备没有ISSU升级，显示ISSU状态。（集中式IRF设备/分布式设备－独立运行模式/分布式设备－IRF模式单成员设备）
 
-[[\<Sysname\> display issu state]{lang="EN-US"}]{#struct_0_71526_x1155_x1765099707}
+\<Sysname\> display issu state
 
-[ISSU state: Init]{lang="EN-US"}
+ISSU state: Init
 
-[Compatibility: Unknown]{lang="EN-US"}
+Compatibility: Unknown
 
-[Work state: Normal]{lang="EN-US"}
+Work state: Normal
 
-[Upgrade method: Card by card]{lang="EN-US"}
+Upgrade method: Card by card
 
-[Upgraded slot: None]{lang="EN-US"}
+Upgraded slot: None
 
-[Current upgrading slot: None]{lang="EN-US"}
+Current upgrading slot: None
 
-[Current version list:]{lang="EN-US"}
+Current version list:
 
-[  boot: 7.1.041, Demo 2402]{lang="EN-US"}
+  boot: 7.1.041, Demo 2402
 
-[  system: 7.1.041, Demo 2402]{lang="EN-US"}
+  system: 7.1.041, Demo 2402
 
-[  ssh: 7.1.041, Demo 2402]{lang="EN-US"}
+  ssh: 7.1.041, Demo 2402
 
-[Current software images:]{lang="EN-US"}
+Current software images:
 
-[  flash:/boot.bin]{lang="EN-US"}
+  flash:/boot.bin
 
-[  flash:/system.bin]{lang="EN-US"}
+  flash:/system.bin
 
-[  flash:/ssh.bin]{lang="EN-US"}
+  flash:/ssh.bin
 
-[[\# **issu load**]{lang="EN-US"}]{#struct_0_71526_x1155_x977292767}[命令执行过程中，显示]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[状态。（集中式设备）]{style="font-family:宋体"}
+\# **issu load**命令执行过程中，显示ISSU状态。（集中式设备）
 
-[[\<Sysname\> display issu state]{lang="EN-US"}]{#struct_0_71526_x1155_x1765296315}
+\<Sysname\> display issu state
 
-[ISSU state: Loading]{lang="EN-US"}
+ISSU state: Loading
 
-[Compatibility: Incompatible]{lang="EN-US"}
+Compatibility: Incompatible
 
-[Work state: Normal]{lang="EN-US"}
+Work state: Normal
 
-[Previous version list:]{lang="EN-US"}
+Previous version list:
 
-[  boot: 7.1.041, Demo 2402]{lang="EN-US"}
+  boot: 7.1.041, Demo 2402
 
-[  system: 7.1.041, Demo 2402]{lang="EN-US"}
+  system: 7.1.041, Demo 2402
 
-[  ssh: 7.1.041, Demo 2402]{lang="EN-US"}
+  ssh: 7.1.041, Demo 2402
 
-[Previous software images:]{lang="EN-US"}
+Previous software images:
 
-[  flash:/boot.bin]{lang="EN-US"}
+  flash:/boot.bin
 
-[  flash:/system.bin]{lang="EN-US"}
+  flash:/system.bin
 
-[  flash:/ssh.bin]{lang="EN-US"}
+  flash:/ssh.bin
 
-[Upgrade version list:]{lang="EN-US"}
+Upgrade version list:
 
-[  boot: 7.1.042, Demo 2403]{lang="EN-US"}
+  boot: 7.1.042, Demo 2403
 
-[  system: 7.1.042, Demo 2403]{lang="EN-US"}
+  system: 7.1.042, Demo 2403
 
-[  ssh: 7.1.042, Demo 2403]{lang="EN-US"}
+  ssh: 7.1.042, Demo 2403
 
-[Upgrade software images]{lang="EN-US"}[：]{style="font-family:宋体"}
+Upgrade software images：
 
-[  flash:/boot02.bin]{lang="EN-US"}
+  flash:/boot02.bin
 
-[  flash:/system04.bin]{lang="EN-US"}
+  flash:/system04.bin
 
-[  flash:/ssh04.bin]{lang="EN-US"}
+  flash:/ssh04.bin
 
-[[\# **issu load**]{lang="EN-US"}]{#struct_0_71526_x1155_418695399}[命令执行过程中，显示]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[状态。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[/]{lang="EN-US"}[分布式设备－独立运行模式）]{style="font-family:宋体"}
+\# **issu load**命令执行过程中，显示ISSU状态。（集中式IRF设备/分布式设备－独立运行模式）
 
-[[\<Sysname\> display issu state]{lang="EN-US"}]{#struct_0_71526_x1155_x1764968635}
+\<Sysname\> display issu state
 
-[ISSU state: Loading]{lang="EN-US"}
+ISSU state: Loading
 
-[Compatibility: Incompatible]{lang="EN-US"}
+Compatibility: Incompatible
 
-[Work state: Normal]{lang="EN-US"}
+Work state: Normal
 
-[Upgrade method: Card by card]{lang="EN-US"}
+Upgrade method: Card by card
 
-[Upgraded slot: None]{lang="EN-US"}
+Upgraded slot: None
 
-[Current upgrading slot:]{lang="EN-US"}
+Current upgrading slot:
 
-[  slot 1]{lang="EN-US"}
+  slot 1
 
-[Previous version list:]{lang="EN-US"}
+Previous version list:
 
-[  boot: 7.1.041, Demo 2402]{lang="EN-US"}
+  boot: 7.1.041, Demo 2402
 
-[  system: 7.1.041, Demo 2402]{lang="EN-US"}
+  system: 7.1.041, Demo 2402
 
-[  ssh: 7.1.041, Demo 2402]{lang="EN-US"}
+  ssh: 7.1.041, Demo 2402
 
-[Previous software images:]{lang="EN-US"}
+Previous software images:
 
-[  flash:/boot.bin]{lang="EN-US"}
+  flash:/boot.bin
 
-[  flash:/system.bin]{lang="EN-US"}
+  flash:/system.bin
 
-[  flash:/ssh.bin]{lang="EN-US"}
+  flash:/ssh.bin
 
-[Upgrade version list:]{lang="EN-US"}
+Upgrade version list:
 
-[  boot: 7.1.041, Demo 2403]{lang="EN-US"}
+  boot: 7.1.041, Demo 2403
 
-[  system: 7.1.041, Demo 2403]{lang="EN-US"}
+  system: 7.1.041, Demo 2403
 
-[  ssh: 7.1.041, Demo 2403]{lang="EN-US"}
+  ssh: 7.1.041, Demo 2403
 
-[Upgrade software images]{lang="EN-US"}[：]{style="font-family:宋体"}
+Upgrade software images：
 
-[  flash:/boot02.bin]{lang="EN-US"}
+  flash:/boot02.bin
 
-[  flash:/system04.bin]{lang="EN-US"}
+  flash:/system04.bin
 
-[  flash:/ssh04.bin]{lang="EN-US"}
+  flash:/ssh04.bin
 
-[[\# **issu load**]{lang="EN-US"}]{#struct_0_71526_x1155_766087108}[命令执行过程中，显示]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[状态。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式单成员设备）]{style="font-family:宋体"}
+\# **issu load**命令执行过程中，显示ISSU状态。（分布式设备－IRF模式单成员设备）
 
-[[\<Sysname\> display issu state]{lang="EN-US"}]{#struct_0_71526_x1155_x1765099710}
+\<Sysname\> display issu state
 
-[ISSU state: Loading]{lang="EN-US"}
+ISSU state: Loading
 
-[Compatibility: Incompatible]{lang="EN-US"}
+Compatibility: Incompatible
 
-[Work state: Normal]{lang="EN-US"}
+Work state: Normal
 
-[Upgrade method: Card by card]{lang="EN-US"}
+Upgrade method: Card by card
 
-[Upgraded slot: None]{lang="EN-US"}
+Upgraded slot: None
 
-[Current upgrading slot:]{lang="EN-US"}
+Current upgrading slot:
 
-[  chassis 1 slot 1]{lang="EN-US"}
+  chassis 1 slot 1
 
-[Previous version list:]{lang="EN-US"}
+Previous version list:
 
-[  boot: 7.1.041, Demo 2402]{lang="EN-US"}
+  boot: 7.1.041, Demo 2402
 
-[  system: 7.1.041, Demo 2402]{lang="EN-US"}
+  system: 7.1.041, Demo 2402
 
-[  ssh: 7.1.041, Demo 2402]{lang="EN-US"}
+  ssh: 7.1.041, Demo 2402
 
-[Previous software images:]{lang="EN-US"}
+Previous software images:
 
-[  flash:/boot.bin]{lang="EN-US"}
+  flash:/boot.bin
 
-[  flash:/system.bin]{lang="EN-US"}
+  flash:/system.bin
 
-[  flash:/ssh.bin]{lang="EN-US"}
+  flash:/ssh.bin
 
-[Upgrade version list:]{lang="EN-US"}
+Upgrade version list:
 
-[  boot: 7.1.041, Demo 2403]{lang="EN-US"}
+  boot: 7.1.041, Demo 2403
 
-[  system: 7.1.041, Demo 2403]{lang="EN-US"}
+  system: 7.1.041, Demo 2403
 
-[  ssh: 7.1.041, Demo 2403]{lang="EN-US"}
+  ssh: 7.1.041, Demo 2403
 
-[Upgrade software images]{lang="EN-US"}[：]{style="font-family:宋体"}
+Upgrade software images：
 
-[  flash:/boot02.bin]{lang="EN-US"}
+  flash:/boot02.bin
 
-[  flash:/system04.bin]{lang="EN-US"}
+  flash:/system04.bin
 
-[  flash:/ssh04.bin]{lang="EN-US"}
+  flash:/ssh04.bin
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_1751656124}[执行]{style="font-family:宋体"}**[issu load]{lang="EN-US"}**[命令后，在全局主用主控板上显示]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[状态。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式单成员设备）]{style="font-family:宋体"}
+\# 执行**issu load**命令后，在全局主用主控板上显示ISSU状态。（分布式设备－IRF模式单成员设备）
 
-[[\<Sysname\> display issu state]{lang="EN-US"}]{#struct_0_71526_x1155_x1765296318}
+\<Sysname\> display issu state
 
-[ISSU state: Loaded]{lang="EN-US"}
+ISSU state: Loaded
 
-[Compatibility: Compatible]{lang="EN-US"}
+Compatibility: Compatible
 
-[Work state: Normal]{lang="EN-US"}
+Work state: Normal
 
-[Upgrade method: Card by card]{lang="EN-US"}
+Upgrade method: Card by card
 
-[Upgraded slot:]{lang="EN-US"}
+Upgraded slot:
 
-[  chassis 1 slot 1]{lang="EN-US"}
+  chassis 1 slot 1
 
-[Current upgrading slot: None]{lang="EN-US"}
+Current upgrading slot: None
 
-[Previous version list:]{lang="EN-US"}
+Previous version list:
 
-[  boot: 7.1.041, Demo 2402]{lang="EN-US"}
+  boot: 7.1.041, Demo 2402
 
-[  system: 7.1.041, Demo 2402]{lang="EN-US"}
+  system: 7.1.041, Demo 2402
 
-[  ssh: 7.1.041, Demo 2402]{lang="EN-US"}
+  ssh: 7.1.041, Demo 2402
 
-[Previous software images:]{lang="EN-US"}
+Previous software images:
 
-[  flash:/boot.bin]{lang="EN-US"}
+  flash:/boot.bin
 
-[  flash:/system.bin]{lang="EN-US"}
+  flash:/system.bin
 
-[  flash:/ssh.bin]{lang="EN-US"}
+  flash:/ssh.bin
 
-[Upgrade version list:]{lang="EN-US"}
+Upgrade version list:
 
-[  system: 7.1.041, Demo 2403]{lang="EN-US"}
+  system: 7.1.041, Demo 2403
 
-[  ssh: 7.1.041, Demo 2403]{lang="EN-US"}
+  ssh: 7.1.041, Demo 2403
 
-[Upgrade software images:]{lang="EN-US"}
+Upgrade software images:
 
-[  flash:/system02.bin]{lang="EN-US"}
+  flash:/system02.bin
 
-[  flash:/ssh02.bin]{lang="EN-US"}
+  flash:/ssh02.bin
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_371641232}[执行]{style="font-family:宋体"}**[issu load]{lang="EN-US"}**[命令后，在原主设备上显示]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[状态。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式多成员设备）]{style="font-family:宋体"}
+\# 执行**issu load**命令后，在原主设备上显示ISSU状态。（分布式设备－IRF模式多成员设备）
 
-[[\<Sysname\> display issu state]{lang="EN-US"}]{#struct_0_71526_x1155_x1765034174}
+\<Sysname\> display issu state
 
-[ISSU state: Loaded]{lang="EN-US"}
+ISSU state: Loaded
 
-[Compatibility: Incompatible]{lang="EN-US"}
+Compatibility: Incompatible
 
-[Work state: Independent active]{lang="EN-US"}
+Work state: Independent active
 
-[Upgrade method: Chassis by chassis]{lang="EN-US"}
+Upgrade method: Chassis by chassis
 
-[Upgraded chassis:]{lang="EN-US"}
+Upgraded chassis:
 
-[  chassis 2]{lang="EN-US"}
+  chassis 2
 
-[Current upgrading chassis: None]{lang="EN-US"}
+Current upgrading chassis: None
 
-[Previous version list:]{lang="EN-US"}
+Previous version list:
 
-[  boot: 7.1.041, Demo 2402]{lang="EN-US"}
+  boot: 7.1.041, Demo 2402
 
-[  system: 7.1.041, Demo 2402]{lang="EN-US"}
+  system: 7.1.041, Demo 2402
 
-[  ssh: 7.1.041, Demo 2402]{lang="EN-US"}
+  ssh: 7.1.041, Demo 2402
 
-[Previous software images:]{lang="EN-US"}
+Previous software images:
 
-[  flash:/boot.bin]{lang="EN-US"}
+  flash:/boot.bin
 
-[  flash:/system.bin]{lang="EN-US"}
+  flash:/system.bin
 
-[  flash:/ssh.bin]{lang="EN-US"}
+  flash:/ssh.bin
 
-[Upgrade version list:]{lang="EN-US"}
+Upgrade version list:
 
-[  system: 7.1.041, Demo 2403]{lang="EN-US"}
+  system: 7.1.041, Demo 2403
 
-[  ssh: 7.1.041, Demo 2403]{lang="EN-US"}
+  ssh: 7.1.041, Demo 2403
 
-[Upgrade software images:]{lang="EN-US"}
+Upgrade software images:
 
-[  flash:/system04.bin]{lang="EN-US"}
+  flash:/system04.bin
 
-[  flash:/ssh04.bin]{lang="EN-US"}
+  flash:/ssh04.bin
 
-[[表1-5 ]{lang="EN-US"}[display issu state]{lang="EN-US"}]{#struct_0_71526_x1155_836740124}[命令显示信息描述表]{style="font-family:黑体"}
+表1-5 display issu state命令显示信息描述表
 
-[]{#table_struct_0_x1107577166}[[字段]{style="font-family:黑体"}]{#struct_0_71526_x1155_x2109152888}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_71526_x1155_2102477172}
+描述
 
-[[ISSU state]{lang="EN-US"}]{#struct_0_71526_x1155_x1764575422}
+ISSU state
 
-[[ISSU]{lang="EN-US"}]{#struct_0_71526_x1155_x138995200}[升级状态，取值可能为：]{style="font-family:宋体"}
+ISSU升级状态，取值可能为：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Init]{lang="EN-US"}]{#struct_0_71526_x1155_502307825}[：表示还没有开始]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[升级或者]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[升级已经完成]{style="font-family:宋体"}
+·Init：表示还没有开始ISSU升级或者ISSU升级已经完成
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Loading]{lang="EN-US"}]{#struct_0_71526_x1155_183945135}[：表示正在执行]{lang="EN-US" style="font-family:宋体"}**[issu load]{lang="EN-US"}**[操作]{lang="EN-US" style="font-family:宋体"}
+·Loading：表示正在执行**issu load**操作
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Loaded]{lang="EN-US"}]{#struct_0_71526_x1155_x1531469833}[：表示]{lang="EN-US" style="font-family:宋体"}**[issu load]{lang="EN-US"}**[操作完成]{lang="EN-US" style="font-family:宋体"}
+·Loaded：表示**issu load**操作完成
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Switching]{lang="EN-US"}]{#struct_0_71526_x1155_235729406}[：表示正在执行]{lang="EN-US" style="font-family:宋体"}**[issu run switchover]{lang="EN-US"}**[操作]{lang="EN-US" style="font-family:
-  宋体"}
+·Switching：表示正在执行**issu run switchover**操作
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Switchover]{lang="EN-US"}]{#struct_0_71526_x1155_x919517732}[：表示]{lang="EN-US" style="font-family:宋体"}**[issu run switchove]{lang="EN-US"}**[r]{lang="EN-US"}[操作完成]{lang="EN-US" style="font-family:宋体"}
+·Switchover：表示**issu run switchove**r操作完成
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Accepted]{lang="EN-US"}]{#struct_0_71526_x1155_x1764640958}[：表示]{lang="EN-US" style="font-family:宋体"}**[issu accept]{lang="EN-US"}**[操作完成]{lang="EN-US" style="font-family:宋体"}
+·Accepted：表示**issu accept**操作完成
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Committing]{lang="EN-US"}]{#struct_0_71526_x1155_756401878}[：表示正在执行]{lang="EN-US" style="font-family:宋体"}**[issu commit]{lang="EN-US"}**[操作]{lang="EN-US" style="font-family:宋体"}
+·Committing：表示正在执行**issu commit**操作
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Rollbacking]{lang="EN-US"}]{#struct_0_71526_x1155_1007326581}[：表示系统正在回滚中]{lang="EN-US" style="font-family:宋体"}
+·Rollbacking：表示系统正在回滚中
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown]{lang="EN-US"}]{#struct_0_71526_x1155_x903017157}[：在非原主用主控板上查看，表示设备正在升级过程中]{style="font-family:宋体"}
+·Unknown：在非原主用主控板上查看，表示设备正在升级过程中
 
-[[Compatibility]{lang="EN-US"}]{#struct_0_71526_x1155_x1947578806}
+Compatibility
 
-[[版本兼容性检查结果，取值可能为：]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1765099709}
+版本兼容性检查结果，取值可能为：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Compatible]{lang="EN-US"}]{#struct_0_71526_x1155_541737007}[：表示兼容升级]{style="font-family:宋体"}
+·Compatible：表示兼容升级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Incompatible]{lang="EN-US"}]{#struct_0_71526_x1155_2063725643}[：表示]{lang="EN-US" style="font-family:宋体"}[不兼容升级]{style="font-family:宋体"}
+·Incompatible：表示不兼容升级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown]{lang="EN-US"}]{#struct_0_71526_x1155_796954167}[：没有升级]{lang="EN-US" style="font-family:宋体"}
+·Unknown：没有升级
 
-[[Work state]{lang="EN-US"}]{#struct_0_71526_x1155_x875254203}
+Work state
 
-[[设备的工作模式，取值可能为：]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1765165245}
+设备的工作模式，取值可能为：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Normal]{lang="EN-US"}]{#struct_0_71526_x1155_x956985443}[：表示正常模式]{lang="EN-US" style="font-family:宋体"}
+·Normal：表示正常模式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Independent active]{lang="EN-US"}]{#struct_0_71526_x1155_1305258979}[：表示独立主控模式。当升级到不兼容版本时，先升级的备用主控板就会进入独立主控模式。该模式使得同一设备上的不同主控板可以运行不同的软件版本]{lang="EN-US" style="font-family:
-  宋体"}
+·Independent active：表示独立主控模式。当升级到不兼容版本时，先升级的备用主控板就会进入独立主控模式。该模式使得同一设备上的不同主控板可以运行不同的软件版本
 
-[[Upgrade method]{lang="EN-US"}]{#struct_0_71526_x1155_1206503685}
+Upgrade method
 
-[[升级方式，取值可能为：]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1466519884}
+升级方式，取值可能为：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Card by card]{lang="EN-US"}]{#struct_0_71526_x1155_x1765230781}[：表示以主控板为单位进行升级，升级完一块主控板再升级另一块主控板]{lang="EN-US" style="font-family:宋体"}
+·Card by card：表示以主控板为单位进行升级，升级完一块主控板再升级另一块主控板
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Chassis by chassis]{lang="EN-US"}]{#struct_0_71526_x1155_2135419685}[：在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中多成员设备运行的情况下，表示以成员设备为单位进行升级，先升级备设备，再升级原主设备（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+·Chassis by chassis：在IRF中多成员设备运行的情况下，表示以成员设备为单位进行升级，先升级备设备，再升级原主设备（分布式设备－IRF模式）
 
-[[Upgraded slot]{lang="EN-US"}]{#struct_0_71526_x1155_354171219}
+Upgraded slot
 
-[[完成升级的单板。取值为]{style="font-family:宋体"}[Unknown]{lang="EN-US"}]{#struct_0_71526_x1155_x33140169}[时，表示设备处于回滚过程中（分布式设备－独立运行模式）]{style="font-family:宋体"}
+完成升级的单板。取值为Unknown时，表示设备处于回滚过程中（分布式设备－独立运行模式）
 
-[[Current upgrading slot]{lang="EN-US"}]{#struct_0_71526_x1155_x1765296317}
+Current upgrading slot
 
-[[正在升级的单板。取值为]{style="font-family:宋体"}[Unknown]{lang="EN-US"}]{#struct_0_71526_x1155_1581494813}[时，表示设备处于回滚过程中（分布式设备－独立运行模式）]{style="font-family:宋体"}
+正在升级的单板。取值为Unknown时，表示设备处于回滚过程中（分布式设备－独立运行模式）
 
-[[Upgraded chassis]{lang="EN-US"}]{#struct_0_71526_x1155_x1222686374}
+Upgraded chassis
 
-[[完成升级的成员设备。取值为]{style="font-family:宋体"}[Unknown]{lang="EN-US"}]{#struct_0_71526_x1155_243014160}[时，表示设备处于回滚过程中（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+完成升级的成员设备。取值为Unknown时，表示设备处于回滚过程中（分布式设备－IRF模式）
 
-[[Current upgrading chassis]{lang="EN-US"}]{#struct_0_71526_x1155_615289758}
+Current upgrading chassis
 
-[[正在升级的成员设备。取值为]{style="font-family:宋体"}[Unknown]{lang="EN-US"}]{#struct_0_71526_x1155_x1764837565}[时，表示设备处于回滚过程中（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式单成员设备）]{style="font-family:宋体"}
+正在升级的成员设备。取值为Unknown时，表示设备处于回滚过程中（分布式设备－IRF模式单成员设备）
 
-[[Current version list]{lang="EN-US"}]{#struct_0_71526_x1155_x1148380968}
+Current version list
 
-[[设备没有升级，表示当前系统软件版本]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1293729095}
+设备没有升级，表示当前系统软件版本
 
-[[Current software images]{lang="EN-US"}]{#struct_0_71526_x1155_658840239}
+Current software images
 
-[[设备没有升级，表示当前运行软件包的名称]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1764903101}
+设备没有升级，表示当前运行软件包的名称
 
-[[Previous version list]{lang="EN-US"}]{#struct_0_71526_x1155_2129777487}
+Previous version list
 
-[[进行]{style="font-family:宋体"}[ISSU]{lang="EN-US"}]{#struct_0_71526_x1155_1938141853}[升级前的系统软件版本]{style="font-family:宋体"}
+进行ISSU升级前的系统软件版本
 
-[[Unknown]{lang="EN-US"}]{#struct_0_71526_x1155_957128806}[：不兼容升级的时候，在非原主用主控板上查看，表示设备正在升级过程中]{style="font-family:宋体"}
+Unknown：不兼容升级的时候，在非原主用主控板上查看，表示设备正在升级过程中
 
-[[Previous software images]{lang="EN-US"}]{#struct_0_71526_x1155_x1764968637}
+Previous software images
 
-[[进行]{style="font-family:宋体"}[ISSU]{lang="EN-US"}]{#struct_0_71526_x1155_x396712306}[升级前版本文件]{style="font-family:宋体"}
+进行ISSU升级前版本文件
 
-[[Unknown]{lang="EN-US"}]{#struct_0_71526_x1155_1020017938}[：不兼容升级的时候，在非原主用主控板上查看，表示设备正在升级过程中]{style="font-family:宋体"}
+Unknown：不兼容升级的时候，在非原主用主控板上查看，表示设备正在升级过程中
 
-[[Upgrade version list]{lang="EN-US"}]{#struct_0_71526_x1155_x1765034173}
+Upgrade version list
 
-[[正在]{style="font-family:宋体"}[ISSU]{lang="EN-US"}]{#struct_0_71526_x1155_433455597}[升级的目标版本]{style="font-family:宋体"}
+正在ISSU升级的目标版本
 
-[[Unknown]{lang="EN-US"}]{#struct_0_71526_x1155_712358201}[：不兼容升级的时候，在非原主用主控板上查看，表示设备正在升级过程中]{style="font-family:宋体"}
+Unknown：不兼容升级的时候，在非原主用主控板上查看，表示设备正在升级过程中
 
-[[Upgrade software images]{lang="EN-US"}]{#struct_0_71526_x1155_1156580078}
+Upgrade software images
 
-[[正在]{style="font-family:宋体"}[ISSU]{lang="EN-US"}]{#struct_0_71526_x1155_x1764575421}[升级中用到的目标文件]{style="font-family:宋体"}
+正在ISSU升级中用到的目标文件
 
-[[Unknown]{lang="EN-US"}]{#struct_0_71526_x1155_x542279727}[：不兼容升级的时候，在非原主用主控板上查看，表示设备正在升级过程中]{style="font-family:宋体"}
+Unknown：不兼容升级的时候，在非原主用主控板上查看，表示设备正在升级过程中
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x584439268}
+·**issu accept**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[issu accept]{lang="EN-US"}**]{#struct_0_71526_x1155_x257092430}
+·**issu commit**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[issu commit]{lang="EN-US"}**]{#struct_0_71526_x1155_x308344720}
+·**issu load**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[issu load]{lang="EN-US"}**]{#struct_0_71526_x1155_x265632913}
+·**issu rollback**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[issu rollback]{lang="EN-US"}**]{#struct_0_71526_x1155_1376651963}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[issu run switchover]{lang="EN-US"}**]{#struct_0_71526_x1155_x1764640957}
-
-::: {#-937301353 .myid}
-[]{#_Toc404782737}[]{#struct_0_71526_x1155_1159686405}[]{#_Toc329856487}[]{#_Toc344717795}[]{#_Toc299981181}[]{#_Toc299981182}[]{#_Toc299981183}
+·**issu run switchover**
 
 **ISSU \-- ISSU配置命令 \-- display version comp-matrix**
 
 ------------------------------------------------------------------------
 
-[**[display version comp-matrix]{lang="EN-US"}**]{#struct_0_71526_x1155_x2100532947}[命令用来显示软件版本兼容信息。]{style="font-family:
-宋体"}
+**[display version comp-matrix**]命令用来显示软件版本兼容信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1731209643}
+【命令】
 
-[**[display version comp-matrix]{lang="EN-US"}**]{#struct_0_71526_x1155_x2132589155}
+**[display version comp-matrix**]
 
-[**[display version comp-matrix file ]{lang="EN-US"}**[{ **boot** ]{lang="EN-US"}*[filename]{lang="EN-US"}[ ]{lang="EN-US"}*[\| **system** ]{lang="EN-US"}*[filename]{lang="EN-US"}[ ]{lang="EN-US"}*[\| **feature** ]{lang="EN-US"}*[filename]{lang="EN-US"}*[&\<1-30\> } **\***]{lang="EN-US"}]{#struct_0_71526_x1155_584485010}
+**[display version comp-matrix file ***[filename*[\| **system** ]*filename*[\| **feature** ]*filename*&\<1-30\> } **\***]
 
-[**[display version comp-matrix file ipe ]{lang="EN-US"}***[ipe-filename]{lang="EN-US"}*]{#struct_0_71526_x1155_x2038746774}
+**[display version comp-matrix file ipe ***ipe-filename*]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1522569580}
+【视图】]
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_x678146889}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x199015765}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_x2137029872}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_71526_x1155_x1528135527}
+network-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_239772587}
+【参数】
 
-[**[boot]{lang="EN-US"}**]{#struct_0_71526_x1155_1371187683}[：表示]{style="font-family:宋体"}[Boot]{lang="EN-US"}[包。]{style="font-family:宋体"}
+**[boot**]：表示Boot包。
 
-[**[system]{lang="EN-US"}**]{#struct_0_71526_x1155_703101927}[：表示]{style="font-family:宋体"}[System]{lang="EN-US"}[包。]{style="font-family:宋体"}
+**[system**]：表示System包。
 
-[**[feature]{lang="EN-US"}**]{#struct_0_71526_x1155_x731108397}[：表示]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包。]{style="font-family:宋体"}
+**[feature**]：表示Feature包。
 
-[*[filename]{lang="EN-US"}*]{#struct_0_71526_x1155_x977959202}[：表示软件包的文件名，以]{style="font-family:宋体"}[.bin]{lang="EN-US"}[作为后缀名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}[&\<1-30\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[30]{lang="EN-US"}[次。]{style="font-family:宋体"}
+*[filename*]：表示软件包的文件名，以.bin作为后缀名，为1～63个字符的字符串，不区分大小写。&\<1-30\>表示前面的参数最多可以输入30次。
 
-[**[ipe]{lang="EN-US"}***[ ]{lang="EN-US"}[ipe-filename]{lang="EN-US"}*]{#struct_0_71526_x1155_x1687295631}[：]{style="font-family:宋体"}[IPE]{lang="EN-US"}[文件名，以]{style="font-family:宋体"}[.ipe]{lang="EN-US"}[作为后缀名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+**[ipe***ipe-filename*]：IPE文件名，以.ipe作为后缀名，为1～63个字符的字符串，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x199081301}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当配置该命令时，命令中指定的软件包]{style="font-family:宋体"}]{#struct_0_71526_x1155_585937062}[/IPE]{lang="EN-US"}[文件必须放在设备存储介质主分区的根目录下，文件名中必须包含存储介质的名称，形如]{style="font-family:宋体"}[flash:/xx.bin]{lang="EN-US"}[（]{style="font-family:宋体"}[flash:/xx.ipe]{lang="EN-US"}[）。]{style="font-family:宋体"}[（集中式设备）]{lang="EN-US" style="font-family:宋体"}
+·当配置该命令时，命令中指定的软件包/IPE文件必须放在设备存储介质主分区的根目录下，文件名中必须包含存储介质的名称，形如flash:/xx.bin（flash:/xx.ipe）。（集中式设备）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当配置该命令时，命令中指定的软件包]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1810230222}[/IPE]{lang="EN-US"}[文件必须放在主用主控板存储介质主分区的根目录下，文件名中必须且只能包含存储介质的名称，不能包含]{style="font-family:宋体"}[slot]{lang="EN-US"}[的信息，形如]{style="font-family:宋体"}[flash:/xx.bin]{lang="EN-US"}[（]{style="font-family:宋体"}[flash:/xx.ipe]{lang="EN-US"}[）。]{style="font-family:宋体"}[（分布式设备－独立运行模式）]{lang="EN-US" style="font-family:宋体"}
+·当配置该命令时，命令中指定的软件包/IPE文件必须放在主用主控板存储介质主分区的根目录下，文件名中必须且只能包含存储介质的名称，不能包含slot的信息，形如flash:/xx.bin（flash:/xx.ipe）。（分布式设备－独立运行模式）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当配置该命令时，命令中指定的软件包]{style="font-family:宋体"}]{#struct_0_71526_x1155_844748500}[/IPE]{lang="EN-US"}[文件必须放在主设备存储介质主分区的根目录下，文件名中必须且只能包含存储介质的名称，不能包含]{style="font-family:宋体"}[slot]{lang="EN-US"}[的信息，形如]{style="font-family:宋体"}[flash:/xx.bin]{lang="EN-US"}[（]{style="font-family:宋体"}[flash:/xx.ipe]{lang="EN-US"}[）。]{style="font-family:宋体"}[（集中式]{lang="EN-US" style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{lang="EN-US" style="font-family:宋体"}
+·当配置该命令时，命令中指定的软件包/IPE文件必须放在主设备存储介质主分区的根目录下，文件名中必须且只能包含存储介质的名称，不能包含slot的信息，形如flash:/xx.bin（flash:/xx.ipe）。（集中式IRF设备）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当配置该命令时，命令中指定的软件包]{style="font-family:宋体"}]{#struct_0_71526_x1155_574619434}[/IPE]{lang="EN-US"}[文件必须放在全局主用主控板存储介质主分区的根目录下，文件名中必须且只能包含存储介质的名称，不能包含]{style="font-family:宋体"}[chassis]{lang="EN-US"}[和]{style="font-family:宋体"}[slot]{lang="EN-US"}[的信息，形如]{style="font-family:宋体"}[flash:/xx.bin]{lang="EN-US"}[（]{style="font-family:宋体"}[flash:/xx.ipe]{lang="EN-US"}[）。]{style="font-family:宋体"}[（分布式设备－]{lang="EN-US" style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{lang="EN-US" style="font-family:宋体"}
+·当配置该命令时，命令中指定的软件包/IPE文件必须放在全局主用主控板存储介质主分区的根目录下，文件名中必须且只能包含存储介质的名称，不能包含chassis和slot的信息，形如flash:/xx.bin（flash:/xx.ipe）。（分布式设备－IRF模式）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定文件名，则显示指定软件包的兼容性信息，以及从当前运行版本升级到指定软件包版本需要采用的升级方式；如果不指定文件名，则显示设备当前运行版本的兼容性信息。（不支持]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1528962484}[IRF3/]{lang="EN-US"}[安全引擎的设备）]{style="font-family:宋体"}
+·如果指定文件名，则显示指定软件包的兼容性信息，以及从当前运行版本升级到指定软件包版本需要采用的升级方式；如果不指定文件名，则显示设备当前运行版本的兼容性信息。（不支持IRF3/安全引擎的设备）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[该命令只能显示父设备的软件包之间的兼容性，以及]{style="font-family:宋体"}]{#struct_0_71526_x1155_x482845072}[PEX]{lang="EN-US"}[设备的软件包之间的兼容性，不能判断父设备和]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的软件包是否兼容。请通过软件版本说明书来判断父设备和]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的软件包是否兼容。（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+·该命令只能显示父设备的软件包之间的兼容性，以及PEX设备的软件包之间的兼容性，不能判断父设备和PEX设备的软件包是否兼容。请通过软件版本说明书来判断父设备和PEX设备的软件包是否兼容。（支持IRF3的设备）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[该命令只能显示设备的软件包之间的兼容性，以及安全引擎的软件包之间的兼容性，不能判断设备和安全引擎的软件包是否兼容。请通过软件版本说明书来判断设备和安全引擎的软件包是否兼容。（支持安全引擎的设备）]{style="font-family:宋体"}]{#struct_0_71526_x1155_1058914950}
+·该命令只能显示设备的软件包之间的兼容性，以及安全引擎的软件包之间的兼容性，不能判断设备和安全引擎的软件包是否兼容。请通过软件版本说明书来判断设备和安全引擎的软件包是否兼容。（支持安全引擎的设备）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1535865742}[IRF3]{lang="EN-US"}[组网环境，本设备下挂]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的情况下，使用该命令，如果不指定文件名，则分别显示父设备以及]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备当前运行版本的兼容性信息。（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+·在IRF3组网环境，本设备下挂PEX设备的情况下，使用该命令，如果不指定文件名，则分别显示父设备以及PEX设备当前运行版本的兼容性信息。（支持IRF3的设备）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当设备中安装了防火墙插卡，使用该命令，如果不指定文件名，则分别显示设备以及安全引擎当前运行版本的兼容性信息。（支持安全引擎的设备）]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1159310973}
+·当设备中安装了防火墙插卡，使用该命令，如果不指定文件名，则分别显示设备以及安全引擎当前运行版本的兼容性信息。（支持安全引擎的设备）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在]{style="font-family:宋体"}]{#struct_0_71526_x1155_x482845071}[IRF3]{lang="EN-US"}[组网环境下，要显示]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备升级软件包的兼容信息时，请先使用]{style="font-family:宋体"}**[issu pex]{lang="EN-US"}**[命令指定]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的升级软件包，再使用该命令，并且]{style="font-family:宋体"}*[filename]{lang="EN-US"}*[指定为父设备上的升级软件包。此时，会显示父设备上该软件包的兼容性信息，]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备上]{style="font-family:宋体"}**[issu pex]{lang="EN-US"}**[命令指定软件包的兼容性信息，以及从当前运行版本升级到指定软件包版本需要采用的升级方式。只要父设备上有一个软件包不兼容，或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备上有一个软件包不兼容，均判定为不兼容升级方式，需要重启整个]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[系统。（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+·在IRF3组网环境下，要显示PEX设备升级软件包的兼容信息时，请先使用**issu pex**命令指定PEX设备的升级软件包，再使用该命令，并且*filename*指定为父设备上的升级软件包。此时，会显示父设备上该软件包的兼容性信息，PEX设备上**issu pex**命令指定软件包的兼容性信息，以及从当前运行版本升级到指定软件包版本需要采用的升级方式。只要父设备上有一个软件包不兼容，或者PEX设备上有一个软件包不兼容，均判定为不兼容升级方式，需要重启整个IRF3系统。（支持IRF3的设备）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[要显示安全引擎升级软件包的兼容信息时，请先使用]{style="font-family:宋体"}]{#struct_0_71526_x1155_1058980486}**[issu blade]{lang="EN-US"}**[命令指定安全引擎的升级软件包，再使用该命令，并且]{style="font-family:宋体"}*[filename]{lang="EN-US"}*[指定为设备上的升级软件包。此时，会显示设备上该软件包的兼容性信息，安全引擎上]{style="font-family:宋体"}**[issu blade]{lang="EN-US"}**[命令指定软件包的兼容性信息，以及从当前运行版本升级到指定软件包版本需要采用的升级方式。只要设备上有一个软件包不兼容，或者安全引擎上有一个软件包不兼容，均判定为不兼容升级方式，需要重启整个系统。（支持安全引擎的设备）]{style="font-family:宋体"}
+·要显示安全引擎升级软件包的兼容信息时，请先使用**issu blade**命令指定安全引擎的升级软件包，再使用该命令，并且*filename*指定为设备上的升级软件包。此时，会显示设备上该软件包的兼容性信息，安全引擎上**issu blade**命令指定软件包的兼容性信息，以及从当前运行版本升级到指定软件包版本需要采用的升级方式。只要设备上有一个软件包不兼容，或者安全引擎上有一个软件包不兼容，均判定为不兼容升级方式，需要重启整个系统。（支持安全引擎的设备）
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1018741452}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x199146837}[显示设备当前正在使用的软件包的兼容信息。]{style="font-family:宋体"}
+\# 显示设备当前正在使用的软件包的兼容信息。
 
-[[\<Sysname\> display version comp-matrix]{lang="EN-US"}]{#struct_0_71526_x1155_x198753621}
+\<Sysname\> display version comp-matrix
 
-[Boot image: flash:/cmw710-boot-a7122.bin]{lang="EN-US"}
+Boot image: flash:/cmw710-boot-a7122.bin
 
-[  Version:]{lang="EN-US"}
+  Version:
 
-[  7.1.031]{lang="EN-US"}
+  7.1.031
 
-[ ]{lang="EN-US"}
+System image: flash:/cmw710-system-a7122.bin
 
-[System image: flash:/cmw710-system-a7122.bin]{lang="EN-US"}
+  Version:
 
-[  Version:]{lang="EN-US"}
+  V700R001B31D001
 
-[  V700R001B31D001]{lang="EN-US"}
+  Version compatibility list:
 
-[  Version compatibility list:]{lang="EN-US"}
+  V700R001B31D001
 
-[  V700R001B31D001]{lang="EN-US"}
+  Version dependency boot list:
 
-[  Version dependency boot list:]{lang="EN-US"}
+  7.1.031
 
-[  7.1.031]{lang="EN-US"}
+Feature image: flash:/cmw710-cfa-a7124.bin
 
-[ ]{lang="EN-US"}
+  Version:
 
-[Feature image: flash:/cmw710-cfa-a7124.bin]{lang="EN-US"}
+  V700R001B31D003
 
-[  Version:]{lang="EN-US"}
+  Version compatibility list:
 
-[  V700R001B31D003]{lang="EN-US"}
+  V700R001B31D003
 
-[  Version compatibility list:]{lang="EN-US"}
+  Version dependency system list:
 
-[  V700R001B31D003]{lang="EN-US"}
+  V700R001B31D001
 
-[  Version dependency system list:]{lang="EN-US"}
+  V700R001B31D002
 
-[  V700R001B31D001]{lang="EN-US"}
+\# 显示文件flash:/boot-e2205.bin、flash:/system-e2205.bin、flash:/dhcp-e2205.re.bin和当前运行软件包的兼容信息。（不兼容版本显示信息举例）（集中式设备）
 
-[  V700R001B31D002]{lang="EN-US"}
+\<Sysname\> display version comp-matrix file boot flash:/boot-e2205.bin system flash:/system-e2205.bin feature flash:/dhcp-e2205.re.bin
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x549402503}[显示文件]{style="font-family:宋体"}[flash:/boot-e2205.bin]{lang="EN-US"}[、]{style="font-family:宋体"}[flash:/system-e2205.bin]{lang="EN-US"}[、]{style="font-family:宋体"}[flash:/dhcp-e2205.re.bin]{lang="EN-US"}[和当前运行软件包的兼容信息。（不兼容版本显示信息举例）（集中式设备）]{style="font-family:宋体"}
+Verifying the file flash:/dhcp-e2205.re.bin on the device\.....Done.
 
-[[\<Sysname\> display version comp-matrix file boot flash:/boot-e2205.bin system flash:/system-e2205.bin feature flash:/dhcp-e2205.re.bin]{lang="EN-US"}]{#struct_0_71526_x1155_608839703}
+Verifying the file flash:/boot-e2205.bin on the device\.....Done.
 
-[Verifying the file flash:/dhcp-e2205.re.bin on the device\.....Done.]{lang="EN-US"}
+Verifying the file flash:/system-e2205.bin on the device\.....Done.
 
-[Verifying the file flash:/boot-e2205.bin on the device\.....Done.]{lang="EN-US"}
+Boot image: flash:/boot-e2205.bin
 
-[Verifying the file flash:/system-e2205.bin on the device\.....Done.]{lang="EN-US"}
+  Version:
 
-[Boot image: flash:/boot-e2205.bin]{lang="EN-US"}
+  7.1.035
 
-[  Version:]{lang="EN-US"}
+System image: flash:/system-e2205.bin
 
-[  7.1.035]{lang="EN-US"}
+  Version:
 
-[ ]{lang="EN-US"}
+  V200R001B02D012
 
-[System image: flash:/system-e2205.bin]{lang="EN-US"}
+  Version compatibility list:
 
-[  Version:]{lang="EN-US"}
+  V200R001B02D012
 
-[  V200R001B02D012]{lang="EN-US"}
+  Version dependency boot list:
 
-[  Version compatibility list:]{lang="EN-US"}
+  7.1.035
 
-[  V200R001B02D012]{lang="EN-US"}
+Feature image: flash:/dhcp-e2205.re.bin
 
-[  Version dependency boot list:]{lang="EN-US"}
+  Version:
 
-[  7.1.035]{lang="EN-US"}
+  V200R001B02D012
 
-[ ]{lang="EN-US"}
+  Version compatibility list:
 
-[Feature image: flash:/dhcp-e2205.re.bin]{lang="EN-US"}
+  V200R001B02D012
 
-[  Version:]{lang="EN-US"}
+  Version dependency system list:
 
-[  V200R001B02D012]{lang="EN-US"}
+  V200R001B02D012
 
-[  Version compatibility list:]{lang="EN-US"}
+  V200R001B02D014
 
-[  V200R001B02D012]{lang="EN-US"}
+Incompatible upgrade.
 
-[  Version dependency system list:]{lang="EN-US"}
+\# 显示文件flash:/boot-e2205.bin、flash:/system-e2205.bin、flash:/dhcp-e2205.incom.bin和当前运行软件包的兼容信息。（兼容版本显示信息举例）（集中式IRF设备）
 
-[  V200R001B02D012]{lang="EN-US"}
+\<Sysname\> display version comp-matrix file boot flash:/boot-e2205.bin system flash:/system-e2205.bin feature flash:/dhcp-e2205.incom.bin
 
-[  V200R001B02D014]{lang="EN-US"}
+Verifying the file flash:/dhcp-e2205.incom.bin on slot 2\.....Done.
 
-[Incompatible upgrade.]{lang="EN-US"}
+Verifying the file flash:/boot-e2205.bin on slot 2\.....Done.
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x198819157}[显示文件]{style="font-family:宋体"}[flash:/boot-e2205.bin]{lang="EN-US"}[、]{style="font-family:宋体"}[flash:/system-e2205.bin]{lang="EN-US"}[、]{style="font-family:宋体"}[flash:/dhcp-e2205.incom.bin]{lang="EN-US"}[和当前运行软件包的兼容信息。（兼容版本显示信息举例）（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+Verifying the file flash:/system-e2205.bin on slot 2\.....Done.
 
-[[\<Sysname\> display version comp-matrix file boot flash:/boot-e2205.bin system flash:/system-e2205.bin feature flash:/dhcp-e2205.incom.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x543093455}
+Boot image: flash:/boot-e2205.bin
 
-[Verifying the file flash:/dhcp-e2205.incom.bin on slot 2\.....Done.]{lang="EN-US"}
+  Version:
 
-[Verifying the file flash:/boot-e2205.bin on slot 2\.....Done.]{lang="EN-US"}
+  7.1.035
 
-[Verifying the file flash:/system-e2205.bin on slot 2\.....Done.]{lang="EN-US"}
+System image: flash:/system-e2205.bin
 
-[Boot image: flash:/boot-e2205.bin]{lang="EN-US"}
+  Version:
 
-[  Version:]{lang="EN-US"}
+  V200R001B02D012
 
-[  7.1.035]{lang="EN-US"}
+  Version compatibility list:
 
-[ ]{lang="EN-US"}
+  V200R001B02D012
 
-[System image: flash:/system-e2205.bin]{lang="EN-US"}
+  Version dependency boot list:
 
-[  Version:]{lang="EN-US"}
+  7.1.035
 
-[  V200R001B02D012]{lang="EN-US"}
+Feature image: flash:/dhcp-e2205.incom.bin
 
-[  Version compatibility list:]{lang="EN-US"}
+  Version:
 
-[  V200R001B02D012]{lang="EN-US"}
+  V200R001B02D014
 
-[  Version dependency boot list:]{lang="EN-US"}
+  Version compatibility list:
 
-[  7.1.035]{lang="EN-US"}
+  V200R001B02D014
 
-[ ]{lang="EN-US"}
+  Version dependency system list:
 
-[Feature image: flash:/dhcp-e2205.incom.bin]{lang="EN-US"}
+  V200R001B02D012
 
-[  Version:]{lang="EN-US"}
+  V200R001B02D014
 
-[  V200R001B02D014]{lang="EN-US"}
+  Slot     Upgrade Way
 
-[  Version compatibility list:]{lang="EN-US"}
+  2        File Upgrade
 
-[  V200R001B02D014]{lang="EN-US"}
+\# 查看当前软件版本和cmw710-cfa-a7125.bin软件版本的兼容性信息。（兼容版本显示信息举例）（分布式设备－独立运行模式）
 
-[  Version dependency system list:]{lang="EN-US"}
+\<Sysname\> display version comp-matrix file feature flash:/cmw710-cfa-a7125.bin
 
-[  V200R001B02D012]{lang="EN-US"}
+Verifying the file flash:/cmw710-cfa-a7125.bin on slot 0\.....Done.
 
-[  V200R001B02D014]{lang="EN-US"}
+Feature image: flash:/cmw710-cfa-a7125.bin
 
-[ ]{lang="EN-US"}
+  Version:
 
-[  Slot     Upgrade Way]{lang="EN-US"}
+  V700R001B31D002
 
-[  2        File Upgrade]{lang="EN-US"}
+  Version compatibility list:
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_1755290571}[查看当前软件版本和]{style="font-family:宋体"}[cmw710-cfa-a7125.bin]{lang="EN-US"}[软件版本的兼容性信息。（兼容版本显示信息举例）（分布式设备－独立运行模式）]{style="font-family:宋体"}
+  V700R001B31D001
 
-[[\<Sysname\> display version comp-matrix file feature flash:/cmw710-cfa-a7125.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x199015764}
+  V700R001B31D002
 
-[Verifying the file flash:/cmw710-cfa-a7125.bin on slot 0\.....Done.]{lang="EN-US"}
+  Version dependency system list:
 
-[Feature image: flash:/cmw710-cfa-a7125.bin]{lang="EN-US"}
+  V700R001B31D001
 
-[  Version:]{lang="EN-US"}
+  V700R001B31D002
 
-[  V700R001B31D002]{lang="EN-US"}
+  Slot                        Upgrade Way
 
-[  Version compatibility list:]{lang="EN-US"}
+  0                           Service Upgrade
 
-[  V700R001B31D001]{lang="EN-US"}
+  1                           Service Upgrade
 
-[  V700R001B31D002]{lang="EN-US"}
+  1.1                         Service Upgrade
 
-[  Version dependency system list:]{lang="EN-US"}
+  4                           Service Upgrade
 
-[  V700R001B31D001]{lang="EN-US"}
+Influenced service according to following table on slot 0:
 
-[  V700R001B31D002]{lang="EN-US"}
+flash:/cmw710-cfa-a7125.bin
 
-[ ]{lang="EN-US"}
+    CFA
 
-[  Slot                        Upgrade Way]{lang="EN-US"}
+Influenced service according to following table on slot 4:
 
-[  0                           Service Upgrade]{lang="EN-US"}
+flash:/cmw710-cfa-a7125.bin
 
-[  1                           Service Upgrade]{lang="EN-US"}
+    CFA
 
-[  1.1                         Service Upgrade]{lang="EN-US"}
+Influenced service according to following table on slot 1:
 
-[  4                           Service Upgrade]{lang="EN-US"}
+flash:/cmw710-cfa-a7125.bin
 
-[ ]{lang="EN-US"}
+    CFA
 
-[Influenced service according to following table on slot 0:]{lang="EN-US"}
+Influenced service according to following table on slot 1.1:
 
-[flash:/cmw710-cfa-a7125.bin]{lang="EN-US"}
+flash:/cmw710-cfa-a7125.bin
 
-[    CFA]{lang="EN-US"}
+CFA
 
-[ ]{lang="EN-US"}
+\# 查看当前软件版本和cmw710-cfa-a7122.bin软件版本的兼容性信息。（兼容版本显示信息举例）（分布式设备－IRF模式）
 
-[Influenced service according to following table on slot 4:]{lang="EN-US"}
+\<Sysname\> display version comp-matrix file feature flash:/cmw710-cfa-a7122.bin
 
-[flash:/cmw710-cfa-a7125.bin]{lang="EN-US"}
+Verifying the file flash:/cmw710-cfa-a7122.bin on chassis 1 slot 0\.....Done.
 
-[    CFA]{lang="EN-US"}
+Feature image: flash:/cmw710-cfa-a7122.bin
 
-[ ]{lang="EN-US"}
+  Version:
 
-[Influenced service according to following table on slot 1:]{lang="EN-US"}
+  V700R001B31D002
 
-[flash:/cmw710-cfa-a7125.bin]{lang="EN-US"}
+  Version compatibility list:
 
-[    CFA]{lang="EN-US"}
+  V700R001B31D001
 
-[ ]{lang="EN-US"}
+  V700R001B31D002
 
-[Influenced service according to following table on slot 1.1:]{lang="EN-US"}
+  Version dependency system list:
 
-[flash:/cmw710-cfa-a7125.bin]{lang="EN-US"}
+  V700R001B31D001
 
-[CFA]{lang="EN-US"}
+  V700R001B31D002
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x2136964336}[查看当前软件版本和]{style="font-family:宋体"}[cmw710-cfa-a7122.bin]{lang="EN-US"}[软件版本的兼容性信息。（兼容版本显示信息举例）（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+  Chassis   Slot              Upgrade Way
 
-[[\<Sysname\> display version comp-matrix file feature flash:/cmw710-cfa-a7122.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x198557012}
+  1         0                 Service Upgrade
 
-[Verifying the file flash:/cmw710-cfa-a7122.bin on chassis 1 slot 0\.....Done.]{lang="EN-US"}
+  1         0.1               Service Upgrade
 
-[Feature image: flash:/cmw710-cfa-a7122.bin]{lang="EN-US"}
+  1         7                 Service Upgrade
 
-[  Version:]{lang="EN-US"}
+  1         9                 Service Upgrade
 
-[  V700R001B31D002]{lang="EN-US"}
+  2         0                 Service Upgrade
 
-[  Version compatibility list:]{lang="EN-US"}
+  2         0.1               Service Upgrade
 
-[  V700R001B31D001]{lang="EN-US"}
+  2         1                 Service Upgrade
 
-[  V700R001B31D002]{lang="EN-US"}
+  2         6                 Service Upgrade
 
-[  Version dependency system list:]{lang="EN-US"}
+Influenced service according to following table on chassis 1 slot 0:
 
-[  V700R001B31D001]{lang="EN-US"}
+flash:/cmw710-cfa-a7122.bin
 
-[  V700R001B31D002]{lang="EN-US"}
+    CFA
 
-[ ]{lang="EN-US"}
+Influenced service according to following table on chassis 1 slot 7:
 
-[  Chassis   Slot              Upgrade Way]{lang="EN-US"}
+flash:/cmw710-cfa-a7122.bin
 
-[  1         0                 Service Upgrade]{lang="EN-US"}
+    CFA
 
-[  1         0.1               Service Upgrade]{lang="EN-US"}
+Influenced service according to following table on chassis 1 slot 9:
 
-[  1         7                 Service Upgrade]{lang="EN-US"}
+flash:/cmw710-cfa-a7122.bin
 
-[  1         9                 Service Upgrade]{lang="EN-US"}
+    CFA
 
-[  2         0                 Service Upgrade]{lang="EN-US"}
+Influenced service according to following table on chassis 1 slot 0.1:
 
-[  2         0.1               Service Upgrade]{lang="EN-US"}
+flash:/cmw710-cfa-a7122.bin
 
-[  2         1                 Service Upgrade]{lang="EN-US"}
+    CFA
 
-[  2         6                 Service Upgrade]{lang="EN-US"}
+Influenced service according to following table on chassis 2 slot 0:
 
-[ ]{lang="EN-US"}
+flash:/cmw710-cfa-a7122.bin
 
-[Influenced service according to following table on chassis 1 slot 0:]{lang="EN-US"}
+    CFA
 
-[flash:/cmw710-cfa-a7122.bin]{lang="EN-US"}
+Influenced service according to following table on chassis 2 slot 1:
 
-[    CFA]{lang="EN-US"}
+flash:/cmw710-cfa-a7122.bin
 
-[ ]{lang="EN-US"}
+    CFA
 
-[Influenced service according to following table on chassis 1 slot 7:]{lang="EN-US"}
+Influenced service according to following table on chassis 2 slot 6:
 
-[flash:/cmw710-cfa-a7122.bin]{lang="EN-US"}
+flash:/cmw710-cfa-a7122.bin
 
-[    CFA]{lang="EN-US"}
+    CFA
 
-[ ]{lang="EN-US"}
+Influenced service according to following table on chassis 2 slot 0.1:
 
-[Influenced service according to following table on chassis 1 slot 9:]{lang="EN-US"}
+flash:/cmw710-cfa-a7122.bin
 
-[flash:/cmw710-cfa-a7122.bin]{lang="EN-US"}
+    CFA
 
-[    CFA]{lang="EN-US"}
+\# 显示父设备和PEX设备当前正在使用的软件包的兼容信息。
 
-[ ]{lang="EN-US"}
+\<Sysname\> display version comp-matrix
 
-[Influenced service according to following table on chassis 1 slot 0.1:]{lang="EN-US"}
+Boot image: flash:/s5820v2_5830v2-cmw710-boot-d2404001.bin
 
-[flash:/cmw710-cfa-a7122.bin]{lang="EN-US"}
+  Version:
 
-[    CFA]{lang="EN-US"}
+  7.1.046
 
-[ ]{lang="EN-US"}
+System image: flash:/s5820v2_5830v2-cmw710-system-d2404001.bin
 
-[Influenced service according to following table on chassis 2 slot 0:]{lang="EN-US"}
+  Version:
 
-[flash:/cmw710-cfa-a7122.bin]{lang="EN-US"}
+  D2404001
 
-[    CFA]{lang="EN-US"}
+  Version compatibility list:
 
-[ ]{lang="EN-US"}
+  D2404001
 
-[Influenced service according to following table on chassis 2 slot 1:]{lang="EN-US"}
+  Version dependency boot list:
 
-[flash:/cmw710-cfa-a7122.bin]{lang="EN-US"}
+  7.1.046
 
-[    CFA]{lang="EN-US"}
+Feature image: flash:/s5820v2_5830v2-cmw710-devkit-d2404001-b01-base.bin
 
-[ ]{lang="EN-US"}
+  Version:
 
-[Influenced service according to following table on chassis 2 slot 6:]{lang="EN-US"}
+  D2404001
 
-[flash:/cmw710-cfa-a7122.bin]{lang="EN-US"}
+  Version compatibility list:
 
-[    CFA]{lang="EN-US"}
+  D2402003
 
-[ ]{lang="EN-US"}
+  D2404001
 
-[Influenced service according to following table on chassis 2 slot 0.1:]{lang="EN-US"}
+  Version dependency system list:
 
-[flash:/cmw710-cfa-a7122.bin]{lang="EN-US"}
+  D2404001
 
-[    CFA]{lang="EN-US"}
+Compatible info of S5120HI:
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x482845076}[显示父设备和]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备当前正在使用的软件包的兼容信息。]{style="font-family:宋体"}
+Boot image: flash:/rpu-s5120hi-boot.bin
 
-[[\<Sysname\> display version comp-matrix]{lang="EN-US"}]{#struct_0_71526_x1155_x482845075}
+  Version:
 
-[Boot image: flash:/s5820v2_5830v2-cmw710-boot-d2404001.bin]{lang="EN-US"}
+  7.1.041
 
-[  Version:]{lang="EN-US"}
+System image: flash:/rpu-s5120hi-system.bin
 
-[  7.1.046]{lang="EN-US"}
+  Version:
 
-[ ]{lang="EN-US"}
+  T2206
 
-[System image: flash:/s5820v2_5830v2-cmw710-system-d2404001.bin]{lang="EN-US"}
+  Version compatibility list:
 
-[  Version:]{lang="EN-US"}
+  T2206
 
-[  D2404001]{lang="EN-US"}
+  Version dependency boot list:
 
-[  Version compatibility list:]{lang="EN-US"}
+  7.1.041
 
-[  D2404001]{lang="EN-US"}
+Feature image: flash:/rpu-s5120hi-devkit-b46-b01-base.bin
 
-[  Version dependency boot list:]{lang="EN-US"}
+  Version:
 
-[  7.1.046]{lang="EN-US"}
+  T2206
 
-[ ]{lang="EN-US"}
+  Version compatibility list:
 
-[Feature image: flash:/s5820v2_5830v2-cmw710-devkit-d2404001-b01-base.bin]{lang="EN-US"}
+  T2206
 
-[  Version:]{lang="EN-US"}
+  Version dependency system list:
 
-[  D2404001]{lang="EN-US"}
+  T2206
 
-[  Version compatibility list:]{lang="EN-US"}
+\# 显示父设备文件flash:/boot-d2404.bin、flash:/system-d2404.bin、flash:/http-d2404.bin的兼容信息，PEX设备（设备型号S5120HI）文件flash:/s5120hi-boot-d2404.bin、flash:/s5120hi-system-d2404.bin、flash:/s5120hi-http-d2404.bin的兼容信息，以及从当前运行版本升级到指定软件包版本需要采用的升级方式。（不兼容版本显示信息举例）（集中式IRF设备）（支持IRF3的设备）
 
-[  D2402003]{lang="EN-US"}
+\<Sysname\> issu pex PEX-S5120HI file boot flash:/s5120hi-boot-d2404.bin system flash:/s5120hi-system-d2404.bin feature flash:/s5120hi-http-d2404.bin
 
-[  D2404001]{lang="EN-US"}
+Verifying the file flash:/s5120hi-http-d2404.bin on slot 1\...Done.
 
-[  Version dependency system list:]{lang="EN-US"}
+Verifying the file flash:/s5120hi-boot-d2404.bin on slot 1\...Done.
 
-[  D2404001]{lang="EN-US"}
+Verifying the file flash:/s5120hi-system-d2404.bin on slot 1\...Done.
 
-[ ]{lang="EN-US"}
+\<Sysname\> display version comp-matrix file boot flash:/boot-d2404.bin system flash:/system-d2404.bin feature flash:/http-d2404.bin
 
-[Compatible info of S5120HI:]{lang="EN-US"}
+Verifying the file flash:/http-d2404.bin on slot 1\.....Done.
 
-[Boot image: flash:/rpu-s5120hi-boot.bin]{lang="EN-US"}
+Verifying the file flash:/boot-d2404.bin on slot 1\.....Done.
 
-[  Version:]{lang="EN-US"}
+Verifying the file flash:/system-d2404.bin on slot 1\.....Done.
 
-[  7.1.041]{lang="EN-US"}
+Verifying the file flash:/s5120hi-boot-d2404.bin on slot 1\...Done.
 
-[ ]{lang="EN-US"}
+Verifying the file flash:/s5120hi-system-d2404.bin on slot 1\...Done.
 
-[System image: flash:/rpu-s5120hi-system.bin]{lang="EN-US"}
+Verifying the file flash:/s5120hi-http-d2404.bin on slot 1\...Done.
 
-[  Version:]{lang="EN-US"}
+Boot image: flash:/boot-d2404.bin
 
-[  T2206]{lang="EN-US"}
+  Version:
 
-[  Version compatibility list:]{lang="EN-US"}
+  7.1.041
 
-[  T2206]{lang="EN-US"}
+System image: flash:/system-d2404.bin
 
-[  Version dependency boot list:]{lang="EN-US"}
+  Version:
 
-[  7.1.041]{lang="EN-US"}
+  D2404
 
-[ ]{lang="EN-US"}
+  Version compatibility list:
 
-[Feature image: flash:/rpu-s5120hi-devkit-b46-b01-base.bin]{lang="EN-US"}
+  D2404
 
-[  Version:]{lang="EN-US"}
+  Version dependency boot list:
 
-[  T2206]{lang="EN-US"}
+  7.1.041
 
-[  Version compatibility list:]{lang="EN-US"}
+Feature image: flash:/http-d2404.bin
 
-[  T2206]{lang="EN-US"}
+  Version:
 
-[  Version dependency system list:]{lang="EN-US"}
+  D2404
 
-[  T2206]{lang="EN-US"}
+  Version compatibility list:
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1535538062}[显示父设备文件]{style="font-family:宋体"}[flash:/boot-d2404.bin]{lang="EN-US"}[、]{style="font-family:宋体"}[flash:/system-d2404.bin]{lang="EN-US"}[、]{style="font-family:宋体"}[flash:/http-d2404.bin]{lang="EN-US"}[的兼容信息，]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备（设备型号]{style="font-family:宋体"}[S5120HI]{lang="EN-US"}[）文件]{style="font-family:宋体"}[flash:/s5120hi-boot-d2404.bin]{lang="EN-US"}[、]{style="font-family:宋体"}[flash:/s5120hi-system-d2404.bin]{lang="EN-US"}[、]{style="font-family:宋体"}[flash:/s5120hi-http-d2404.bin]{lang="EN-US"}[的兼容信息，以及从当前运行版本升级到指定软件包版本需要采用的升级方式。（不兼容版本显示信息举例）（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+  D2404
 
-[[\<Sysname\> issu pex PEX-S5120HI file boot flash:/s5120hi-boot-d2404.bin system flash:/s5120hi-system-d2404.bin feature flash:/s5120hi-http-d2404.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x482845078}
+  Version dependency system list:
 
-[Verifying the file flash:/s5120hi-http-d2404.bin on slot 1\...Done.]{lang="EN-US"}
+  D2402
 
-[Verifying the file flash:/s5120hi-boot-d2404.bin on slot 1\...Done.]{lang="EN-US"}
+  D2404
 
-[Verifying the file flash:/s5120hi-system-d2404.bin on slot 1\...Done.]{lang="EN-US"}
+Compatible info of S5120HI:
 
-[\<Sysname\> display version comp-matrix file boot flash:/boot-d2404.bin system flash:/system-d2404.bin feature flash:/http-d2404.bin]{lang="EN-US"}
+Boot image: flash:/rpu-s5120hi-boot-d2404.bin
 
-[Verifying the file flash:/http-d2404.bin on slot 1\.....Done.]{lang="EN-US"}
+  Version:
 
-[Verifying the file flash:/boot-d2404.bin on slot 1\.....Done.]{lang="EN-US"}
+  7.1.041
 
-[Verifying the file flash:/system-d2404.bin on slot 1\.....Done.]{lang="EN-US"}
+System image: flash:/rpu-s5120hi-system-d2404.bin
 
-[Verifying the file flash:/s5120hi-boot-d2404.bin on slot 1\...Done.]{lang="EN-US"}
+  Version:
 
-[Verifying the file flash:/s5120hi-system-d2404.bin on slot 1\...Done.]{lang="EN-US"}
+  D2404
 
-[Verifying the file flash:/s5120hi-http-d2404.bin on slot 1\...Done.]{lang="EN-US"}
+  Version compatibility list:
 
-[Boot image: flash:/boot-d2404.bin]{lang="EN-US"}
+  D2404
 
-[  Version:]{lang="EN-US"}
+  Version dependency boot list:
 
-[  7.1.041]{lang="EN-US"}
+  7.1.041
 
-[ ]{lang="EN-US"}
+Feature image: flash:/s5120hi-http-d2404.bin
 
-[System image: flash:/system-d2404.bin]{lang="EN-US"}
+  Version:
 
-[  Version:]{lang="EN-US"}
+  D2404
 
-[  D2404]{lang="EN-US"}
+  Version compatibility list:
 
-[  Version compatibility list:]{lang="EN-US"}
+  D2404
 
-[  D2404]{lang="EN-US"}
+  Version dependency system list:
 
-[  Version dependency boot list:]{lang="EN-US"}
+  D2402
 
-[  7.1.041]{lang="EN-US"}
+  D2404
 
-[ ]{lang="EN-US"}
+Incompatible upgrade.
 
-[Feature image: flash:/http-d2404.bin]{lang="EN-US"}
+\# 显示父设备文件flash:/boot-d2403.bin、flash:/system-d2403.bin、flash:/http-d2403.bin的兼容信息，PEX设备（设备型号S5120HI）文件flash:/s5120hi-http-d2403.bin的兼容信息，以及从当前运行版本升级到指定软件包版本需要采用的升级方式。（兼容版本显示信息举例）（集中式IRF设备）（支持IRF3的设备）
 
-[  Version:]{lang="EN-US"}
+\<Sysname\> issu pex PEX-S5120HI file feature flash:/s5120hi-http-d2403.bin
 
-[  D2404]{lang="EN-US"}
+Verifying the file flash:/s5120hi-http-d2403.bin on slot 1\.....Done.
 
-[  Version compatibility list:]{lang="EN-US"}
+\<Sysname\> display version comp-matrix file boot flash:/boot-d2403.bin system flash:/system-d2403.bin feature flash:/http-d2403.bin
 
-[  D2404]{lang="EN-US"}
+Verifying the file flash:/http-d2403.bin on slot 1\.....Done.
 
-[  Version dependency system list:]{lang="EN-US"}
+Verifying the file flash:/boot-d2403.bin on slot 1\.....Done.
 
-[  D2402]{lang="EN-US"}
+Verifying the file flash:/system-d2403.bin on slot 1\.....Done.
 
-[  D2404]{lang="EN-US"}
+Verifying the file flash:/s5120hi-http-d2403.bin on slot 1\.....Done.
 
-[ ]{lang="EN-US"}
+Boot image: flash:/boot-d2403.bin
 
-[Compatible info of S5120HI:]{lang="EN-US"}
+  Version:
 
-[Boot image: flash:/rpu-s5120hi-boot-d2404.bin]{lang="EN-US"}
+  7.1.041
 
-[  Version:]{lang="EN-US"}
+System image: flash:/system-d2403.bin
 
-[  7.1.041]{lang="EN-US"}
+  Version:
 
-[ ]{lang="EN-US"}
+  D2403
 
-[System image: flash:/rpu-s5120hi-system-d2404.bin]{lang="EN-US"}
+  Version compatibility list:
 
-[  Version:]{lang="EN-US"}
+  D2402
 
-[  D2404]{lang="EN-US"}
+  D2403
 
-[  Version compatibility list:]{lang="EN-US"}
+  Version dependency boot list:
 
-[  D2404]{lang="EN-US"}
+  7.1.041
 
-[  Version dependency boot list:]{lang="EN-US"}
+Feature image: flash:/http-d2403.bin
 
-[  7.1.041]{lang="EN-US"}
+  Version:
 
-[ ]{lang="EN-US"}
+  D2403
 
-[Feature image: flash:/s5120hi-http-d2404.bin]{lang="EN-US"}
+  Version compatibility list:
 
-[  Version:]{lang="EN-US"}
+  D2402
 
-[  D2404]{lang="EN-US"}
+  D2403
 
-[  Version compatibility list:]{lang="EN-US"}
+  Version dependency system list:
 
-[  D2404]{lang="EN-US"}
+  D2402
 
-[  Version dependency system list:]{lang="EN-US"}
+  D2403
 
-[  D2402]{lang="EN-US"}
+Compatible info of S5120HI:
 
-[  D2404]{lang="EN-US"}
+Feature image: flash:/s5120hi-http-d2403.bin
 
-[Incompatible upgrade.]{lang="EN-US"}
+  Version:
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1536258958}[显示父设备文件]{style="font-family:宋体"}[flash:/boot-d2403.bin]{lang="EN-US"}[、]{style="font-family:宋体"}[flash:/system-d2403.bin]{lang="EN-US"}[、]{style="font-family:宋体"}[flash:/http-d2403.bin]{lang="EN-US"}[的兼容信息，]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备（设备型号]{style="font-family:宋体"}[S5120HI]{lang="EN-US"}[）文件]{style="font-family:宋体"}[flash:/s5120hi-http-d2403.bin]{lang="EN-US"}[的兼容信息，以及从当前运行版本升级到指定软件包版本需要采用的升级方式。（兼容版本显示信息举例）（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+  D2403
 
-[[\<Sysname\> issu pex PEX-S5120HI file feature flash:/s5120hi-http-d2403.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x482845077}
+  Version compatibility list:
 
-[Verifying the file flash:/s5120hi-http-d2403.bin on slot 1\.....Done.]{lang="EN-US"}
+  D2402
 
-[\<Sysname\> display version comp-matrix file boot flash:/boot-d2403.bin system flash:/system-d2403.bin feature flash:/http-d2403.bin]{lang="EN-US"}
+  D2403
 
-[Verifying the file flash:/http-d2403.bin on slot 1\.....Done.]{lang="EN-US"}
+  Version dependency system list:
 
-[Verifying the file flash:/boot-d2403.bin on slot 1\.....Done.]{lang="EN-US"}
+  D2402
 
-[Verifying the file flash:/system-d2403.bin on slot 1\.....Done.]{lang="EN-US"}
+  D2403
 
-[Verifying the file flash:/s5120hi-http-d2403.bin on slot 1\.....Done.]{lang="EN-US"}
+  Slot     Upgrade Way
 
-[Boot image: flash:/boot-d2403.bin]{lang="EN-US"}
+  1        File Upgrade
 
-[  Version:]{lang="EN-US"}
+  102      File Upgrade
 
-[  7.1.041]{lang="EN-US"}
+\# 查看父设备文件cmw710-cfa-a0042.bin的兼容信息，PEX设备（设备型号S5120HI）文件flash:/s5120hi-http-d2403.bin的兼容信息，以及从当前运行版本升级到指定软件包版本需要采用的升级方式。（兼容版本显示信息举例）（分布式设备－独立运行模式）（支持IRF3的设备）
 
-[ ]{lang="EN-US"}
+\<Sysname\> issu pex PEX-S5120HI file feature flash:/s5120hi-http-d2403.bin
 
-[System image: flash:/system-d2403.bin]{lang="EN-US"}
+Verifying the file flash:/s5120hi-http-d2403.bin on slot 0\.....Done.
 
-[  Version:]{lang="EN-US"}
+\<Sysname\> display version comp-matrix file feature flash:/cmw710-cfa-a0042.bin
 
-[  D2403]{lang="EN-US"}
+Verifying the file flash:/cmw710-cfa-a0042.bin on slot 0\.....Done.
 
-[  Version compatibility list:]{lang="EN-US"}
+Verifying the file flash:/s5120hi-http-d2403.bin on slot 0\.....Done.
 
-[  D2402]{lang="EN-US"}
+Feature image: flash:/cmw710-cfa-a0042.bin
 
-[  D2403]{lang="EN-US"}
+  Version:
 
-[  Version dependency boot list:]{lang="EN-US"}
+  A0042
 
-[  7.1.041]{lang="EN-US"}
+  Version compatibility list:
 
-[ ]{lang="EN-US"}
+  A0041
 
-[Feature image: flash:/http-d2403.bin]{lang="EN-US"}
+  A0042
 
-[  Version:]{lang="EN-US"}
+  Version dependency system list:
 
-[  D2403]{lang="EN-US"}
+  A0041
 
-[  Version compatibility list:]{lang="EN-US"}
+Compatible info of S5120HI:
 
-[  D2402]{lang="EN-US"}
+Feature image: flash:/s5120hi-http-d2403.bin
 
-[  D2403]{lang="EN-US"}
+  Version:
 
-[  Version dependency system list:]{lang="EN-US"}
+  D2403
 
-[  D2402]{lang="EN-US"}
+  Version compatibility list:
 
-[  D2403]{lang="EN-US"}
+  D2402
 
-[ ]{lang="EN-US"}
+  D2403
 
-[Compatible info of S5120HI:]{lang="EN-US"}
+  Version dependency system list:
 
-[Feature image: flash:/s5120hi-http-d2403.bin]{lang="EN-US"}
+  D2402
 
-[  Version:]{lang="EN-US"}
+  Slot                        Upgrade Way
 
-[  D2403]{lang="EN-US"}
+  0                           Service Upgrade
 
-[  Version compatibility list:]{lang="EN-US"}
+  1                           Service Upgrade
 
-[  D2402]{lang="EN-US"}
+  1.1                         Service Upgrade
 
-[  D2403]{lang="EN-US"}
+  4                           Service Upgrade
 
-[  Version dependency system list:]{lang="EN-US"}
+  102                         Service Upgrade
 
-[  D2402]{lang="EN-US"}
+Influenced service according to following table on slot 0:
 
-[  D2403]{lang="EN-US"}
+flash:/cmw710-cfa-a0042.bin
 
-[ ]{lang="EN-US"}
+    CFA
 
-[  Slot     Upgrade Way]{lang="EN-US"}
+Influenced service according to following table on slot 4:
 
-[  1        File Upgrade]{lang="EN-US"}
+flash:/cmw710-cfa-a7125.bin
 
-[  102      File Upgrade]{lang="EN-US"}
+    CFA
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1535669134}[查看父设备文件]{style="font-family:宋体"}[cmw710-cfa-a0042.bin]{lang="EN-US"}[的兼容信息，]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备（设备型号]{style="font-family:宋体"}[S5120HI]{lang="EN-US"}[）文件]{style="font-family:宋体"}[flash:/s5120hi-http-d2403.bin]{lang="EN-US"}[的兼容信息，以及从当前运行版本升级到指定软件包版本需要采用的升级方式。（兼容版本显示信息举例）（分布式设备－独立运行模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+Influenced service according to following table on slot 1:
 
-[[\<Sysname\> issu pex PEX-S5120HI file feature flash:/s5120hi-http-d2403.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x2058985869}
+flash:/cmw710-cfa-a0042.bin
 
-[Verifying the file flash:/s5120hi-http-d2403.bin on slot 0\.....Done.]{lang="EN-US"}
+    CFA
 
-[\<Sysname\> display version comp-matrix file feature flash:/cmw710-cfa-a0042.bin]{lang="EN-US"}
+Influenced service according to following table on slot 1.1:
 
-[Verifying the file flash:/cmw710-cfa-a0042.bin on slot 0\.....Done.]{lang="EN-US"}
+flash:/cmw710-cfa-a0042.bin
 
-[Verifying the file flash:/s5120hi-http-d2403.bin on slot 0\.....Done.]{lang="EN-US"}
+    CFA
 
-[Feature image: flash:/cmw710-cfa-a0042.bin]{lang="EN-US"}
+Influenced service according to following table on slot 102:
 
-[  Version:]{lang="EN-US"}
+flash:/cmw710-cfa-d2403.bin
 
-[  A0042]{lang="EN-US"}
+    HTTP
 
-[  Version compatibility list:]{lang="EN-US"}
+\# 查看父设备文件cmw710-cfa-a0041.bin的兼容信息，PEX设备（设备型号S5120HI）文件flash:/s5120hi-http-d2403.bin的兼容信息，以及从当前运行版本升级到指定软件包版本需要采用的升级方式。（兼容版本显示信息举例）（分布式设备－IRF模式）（支持IRF3的设备）
 
-[  A0041]{lang="EN-US"}
+\<Sysname\> issu pex PEX-S5120HI file feature flash:/s5120hi-http-d2403.bin
 
-[  A0042]{lang="EN-US"}
+Verifying the file flash:/s5120hi-http-d2403.bin on chassis 1 slot 0\.....Done.
 
-[  Version dependency system list:]{lang="EN-US"}
+Copying file flash:/s5120hi-http-d2403.bin to chassis2#slot0#flash:/s5120hi-http-d2403.bin\...Done.
 
-[  A0041]{lang="EN-US"}
+\<Sysname\> display version comp-matrix file feature flash:/cmw710-cfa-a0041.bin
 
-[ ]{lang="EN-US"}
+Verifying the file flash:/cmw710-cfa-a0041.bin on chassis 1 slot 0\.....Done.
 
-[Compatible info of S5120HI:]{lang="EN-US"}
+Verifying the file flash:/s5120hi-http-d2403.bin on chassis 1 slot 0\.....Done.
 
-[Feature image: flash:/s5120hi-http-d2403.bin]{lang="EN-US"}
+Feature image: flash:/cmw710-cfa-a0041.bin
 
-[  Version:]{lang="EN-US"}
+  Version:
 
-[  D2403]{lang="EN-US"}
+  A0042
 
-[  Version compatibility list:]{lang="EN-US"}
+  Version compatibility list:
 
-[  D2402]{lang="EN-US"}
+  A0041
 
-[  D2403]{lang="EN-US"}
+  A0042
 
-[  Version dependency system list:]{lang="EN-US"}
+  Version dependency system list:
 
-[  D2402]{lang="EN-US"}
+  A0041
 
-[ ]{lang="EN-US"}
+Compatible info of S5120HI:
 
-[  Slot                        Upgrade Way]{lang="EN-US"}
+Feature image: flash:/s5120hi-http-d2403.bin
 
-[  0                           Service Upgrade]{lang="EN-US"}
+  Version:
 
-[  1                           Service Upgrade]{lang="EN-US"}
+  D2403
 
-[  1.1                         Service Upgrade]{lang="EN-US"}
+  Version compatibility list:
 
-[  4                           Service Upgrade]{lang="EN-US"}
+  D2402
 
-[  102                         Service Upgrade]{lang="EN-US"}
+  D2403
 
-[ ]{lang="EN-US"}
+  Version dependency system list:
 
-[Influenced service according to following table on slot 0:]{lang="EN-US"}
+  D2402
 
-[flash:/cmw710-cfa-a0042.bin]{lang="EN-US"}
+  Chassis   Slot              Upgrade Way
 
-[    CFA]{lang="EN-US"}
+  1         0                 Service Upgrade
 
-[ ]{lang="EN-US"}
+  1         0.1               Service Upgrade
 
-[Influenced service according to following table on slot 4:]{lang="EN-US"}
+  1         7                 Service Upgrade
 
-[flash:/cmw710-cfa-a7125.bin]{lang="EN-US"}
+  1         9                 Service Upgrade
 
-[    CFA]{lang="EN-US"}
+  2         0                 Service Upgrade
 
-[ ]{lang="EN-US"}
+  2         0.1               Service Upgrade
 
-[Influenced service according to following table on slot 1:]{lang="EN-US"}
+  2         1                 Service Upgrade
 
-[flash:/cmw710-cfa-a0042.bin]{lang="EN-US"}
+  2         6                 Service Upgrade
 
-[    CFA]{lang="EN-US"}
+  101       0                 Service Upgrade
 
-[ ]{lang="EN-US"}
+Influenced service according to following table on chassis 1 slot 0:
 
-[Influenced service according to following table on slot 1.1:]{lang="EN-US"}
+flash:/cmw710-cfa-a7122.bin
 
-[flash:/cmw710-cfa-a0042.bin]{lang="EN-US"}
+    CFA
 
-[    CFA]{lang="EN-US"}
+Influenced service according to following table on chassis 1 slot 7:
 
-[ ]{lang="EN-US"}
+flash:/cmw710-cfa-a7122.bin
 
-[Influenced service according to following table on slot 102:]{lang="EN-US"}
+    CFA
 
-[flash:/cmw710-cfa-d2403.bin]{lang="EN-US"}
+Influenced service according to following table on chassis 1 slot 9:
 
-[    HTTP]{lang="EN-US"}
+flash:/cmw710-cfa-a7122.bin
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x461495467}[查看父设备文件]{style="font-family:宋体"}[cmw710-cfa-a0041.bin]{lang="EN-US"}[的兼容信息，]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备（设备型号]{style="font-family:宋体"}[S5120HI]{lang="EN-US"}[）文件]{style="font-family:宋体"}[flash:/s5120hi-http-d2403.bin]{lang="EN-US"}[的兼容信息，以及从当前运行版本升级到指定软件包版本需要采用的升级方式。（兼容版本显示信息举例）（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+    CFA
 
-[[\<Sysname\> issu pex PEX-S5120HI file feature flash:/s5120hi-http-d2403.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x2058985872}
+Influenced service according to following table on chassis 1 slot 0.1:
 
-[Verifying the file flash:/s5120hi-http-d2403.bin on chassis 1 slot 0\.....Done.]{lang="EN-US"}
+flash:/cmw710-cfa-a7122.bin
 
-[Copying file flash:/s5120hi-http-d2403.bin to chassis2#slot0#flash:/s5120hi-http-d2403.bin\...Done.]{lang="EN-US"}
+    CFA
 
-[\<Sysname\> display version comp-matrix file feature flash:/cmw710-cfa-a0041.bin]{lang="EN-US"}
+Influenced service according to following table on chassis 2 slot 0:
 
-[Verifying the file flash:/cmw710-cfa-a0041.bin on chassis 1 slot 0\.....Done.]{lang="EN-US"}
+flash:/cmw710-cfa-a7122.bin
 
-[Verifying the file flash:/s5120hi-http-d2403.bin on chassis 1 slot 0\.....Done.]{lang="EN-US"}
+    CFA
 
-[Feature image: flash:/cmw710-cfa-a0041.bin]{lang="EN-US"}
+Influenced service according to following table on chassis 2 slot 1:
 
-[  Version:]{lang="EN-US"}
+flash:/cmw710-cfa-a7122.bin
 
-[  A0042]{lang="EN-US"}
+    CFA
 
-[  Version compatibility list:]{lang="EN-US"}
+Influenced service according to following table on chassis 2 slot 6:
 
-[  A0041]{lang="EN-US"}
+flash:/cmw710-cfa-a7122.bin
 
-[  A0042]{lang="EN-US"}
+    CFA
 
-[  Version dependency system list:]{lang="EN-US"}
+Influenced service according to following table on chassis 2 slot 0.1:
 
-[  A0041]{lang="EN-US"}
+flash:/cmw710-cfa-a7122.bin
 
-[ ]{lang="EN-US"}
+    CFA
 
-[Compatible info of S5120HI:]{lang="EN-US"}
+Influenced service according to following table on chassis 101 slot 0:
 
-[Feature image: flash:/s5120hi-http-d2403.bin]{lang="EN-US"}
+flash:/cmw710-cfa-a7122.bin
 
-[  Version:]{lang="EN-US"}
+    HTTP
 
-[  D2403]{lang="EN-US"}
+表1-6 display version comp-matrix命令显示信息描述表
 
-[  Version compatibility list:]{lang="EN-US"}
+字段
 
-[  D2402]{lang="EN-US"}
+描述
 
-[  D2403]{lang="EN-US"}
+Verifying the file flash:/xx.bin on chassis 1 slot 0\.....Done.
 
-[  Version dependency system list:]{lang="EN-US"}
+验证文件是否合法
 
-[  D2402]{lang="EN-US"}
+Boot image: flash:/cmw710-boot-a7122.bin
 
-[ ]{lang="EN-US"}
+  Version:
 
-[  Chassis   Slot              Upgrade Way]{lang="EN-US"}
+要显示的Boot包的相关信息，包括：
 
-[  1         0                 Service Upgrade]{lang="EN-US"}
+·Boot包的名称
 
-[  1         0.1               Service Upgrade]{lang="EN-US"}
+·Version：Boot包的版本
 
-[  1         7                 Service Upgrade]{lang="EN-US"}
+System image: flash:/cmw710-system-a7122.bin
 
-[  1         9                 Service Upgrade]{lang="EN-US"}
+  Version:
 
-[  2         0                 Service Upgrade]{lang="EN-US"}
+  V700R001B31D001
 
-[  2         0.1               Service Upgrade]{lang="EN-US"}
+  Version compatibility list:
 
-[  2         1                 Service Upgrade]{lang="EN-US"}
+  V700R001B31D001
 
-[  2         6                 Service Upgrade]{lang="EN-US"}
+  Version dependency boot list:
 
-[  101       0                 Service Upgrade]{lang="EN-US"}
+  7.1.031
 
-[ ]{lang="EN-US"}
+要显示的System包的相关信息，包括：
 
-[Influenced service according to following table on chassis 1 slot 0:]{lang="EN-US"}
+·System包的名称
 
-[flash:/cmw710-cfa-a7122.bin]{lang="EN-US"}
+·Version：System包的版本
 
-[    CFA]{lang="EN-US"}
+·Version compatibility list：和该System包兼容的System包版本列表
 
-[ ]{lang="EN-US"}
+·Version dependency boot list：依赖的Boot包版本列表，即安装该System包前，必须先安装如下版本的Boot包中的任意一个
 
-[Influenced service according to following table on chassis 1 slot 7:]{lang="EN-US"}
+Feature image: flash:/cmw710-cfa-a7124.bin
 
-[flash:/cmw710-cfa-a7122.bin]{lang="EN-US"}
+  Version:
 
-[    CFA]{lang="EN-US"}
+  V700R001B31D003
 
-[ ]{lang="EN-US"}
+  Version compatibility list:
 
-[Influenced service according to following table on chassis 1 slot 9:]{lang="EN-US"}
+  V700R001B31D003
 
-[flash:/cmw710-cfa-a7122.bin]{lang="EN-US"}
+  Version dependency system list:
 
-[    CFA]{lang="EN-US"}
+  V700R001B31D001
 
-[ ]{lang="EN-US"}
+  V700R001B31D002
 
-[Influenced service according to following table on chassis 1 slot 0.1:]{lang="EN-US"}
+要显示的Feature包的相关信息，包括：
 
-[flash:/cmw710-cfa-a7122.bin]{lang="EN-US"}
+·Feature包的名称
 
-[    CFA]{lang="EN-US"}
+·Version：Feature包的版本
 
-[ ]{lang="EN-US"}
+·Version compatibility list：和该Feature包兼容的Feature包版本列表
 
-[Influenced service according to following table on chassis 2 slot 0:]{lang="EN-US"}
+·Version dependency system list：依赖的System包版本列表，即安装该Feature包前，必须先安装如下版本的System包中的任意一个
 
-[flash:/cmw710-cfa-a7122.bin]{lang="EN-US"}
+Compatible info of S5120HI:
 
-[    CFA]{lang="EN-US"}
+Boot image: flash:/rpu-s5120hi-boot.bin
 
-[ ]{lang="EN-US"}
+  Version:
 
-[Influenced service according to following table on chassis 2 slot 1:]{lang="EN-US"}
+  7.1.041
 
-[flash:/cmw710-cfa-a7122.bin]{lang="EN-US"}
+System image: flash:/rpu-s5120hi-system.bin
 
-[    CFA]{lang="EN-US"}
+  Version:
 
-[ ]{lang="EN-US"}
+  D2402
 
-[Influenced service according to following table on chassis 2 slot 6:]{lang="EN-US"}
+  Version compatibility list:
 
-[flash:/cmw710-cfa-a7122.bin]{lang="EN-US"}
+  D2402
 
-[    CFA]{lang="EN-US"}
+  Version dependency boot list:
 
-[ ]{lang="EN-US"}
+  7.1.041
 
-[Influenced service according to following table on chassis 2 slot 0.1:]{lang="EN-US"}
+Feature image: flash:/s5120hi-http-d2402.bin
 
-[flash:/cmw710-cfa-a7122.bin]{lang="EN-US"}
+  Version:
 
-[    CFA]{lang="EN-US"}
+  D2404
 
-[ ]{lang="EN-US"}
+  Version compatibility list:
 
-[Influenced service according to following table on chassis 101 slot 0:]{lang="EN-US"}
+  D2404
 
-[flash:/cmw710-cfa-a7122.bin]{lang="EN-US"}
+  Version dependency system list:
 
-[    HTTP]{lang="EN-US"}
+  D2402
 
-[]{#struct_0_71526_x1155_x199015767}[[表1-6 ]{lang="EN-US"}[display version comp-matrix]{lang="EN-US"}]{#_Toc138069139}[命令显示信息描述表]{style="font-family:黑体"}
+要显示的PEX设备的相关信息，包括：
 
-[]{#table_struct_0_x1112738846}[[字段]{style="font-family:黑体"}]{#struct_0_71526_x1155_x2136898800}
-:::
+要显示的Boot包的相关信息：
 
-[[描述]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1263073771}
+·Boot包的名称
 
-[[Verifying the file flash:/xx.bin on chassis 1 slot 0\.....Done.]{lang="EN-US"}]{#struct_0_71526_x1155_x1038122100}
+·Version：Boot包的版本
 
-[[验证文件是否合法]{style="font-family:宋体"}]{#struct_0_71526_x1155_512003872}
+要显示的System包的相关信息：
 
-[[Boot image: flash:/cmw710-boot-a7122.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x199146839}
+·System包的名称
 
-[[  Version:]{lang="EN-US"}]{#struct_0_71526_x1155_x617476393}
+·Version：System包的版本
 
-[[要显示的]{style="font-family:宋体"}[Boot]{lang="EN-US"}]{#struct_0_71526_x1155_370588635}[包的相关信息，包括：]{style="font-family:宋体"}
+·Version compatibility list：和该System包兼容的System包版本列表
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Boot]{lang="EN-US"}]{#struct_0_71526_x1155_x643235022}[包的名称]{lang="EN-US" style="font-family:宋体"}
+·Version dependency boot list：依赖的Boot包版本列表，即安装该System包前，必须先安装如下版本的Boot包中的任意一个
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Version]{lang="EN-US"}]{#struct_0_71526_x1155_x80825640}[：]{lang="EN-US" style="font-family:宋体"}[Boot]{lang="EN-US"}[包的版本]{lang="EN-US" style="font-family:宋体"}
+要显示的Feature包的相关信息：
 
-[[System image: flash:/cmw710-system-a7122.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x198753623}
+·Feature包的名称
 
-[[  Version:]{lang="EN-US"}]{#struct_0_71526_x1155_x549271431}
+·Version：Feature包的版本
 
-[[  V700R001B31D001]{lang="EN-US"}]{#struct_0_71526_x1155_x198819159}
+·Version compatibility list：和该Feature包兼容的Feature包版本列表
 
-[[  Version compatibility list:]{lang="EN-US"}]{#struct_0_71526_x1155_x544010959}
+·Version dependency system list：依赖的System包版本列表，即安装该Feature包前，必须先安装如下版本的System包中的任意一个
 
-[[  V700R001B31D001]{lang="EN-US"}]{#struct_0_71526_x1155_x266399642}
+Influenced service according to following table
 
-[[  Version dependency boot list:]{lang="EN-US"}]{#struct_0_71526_x1155_x1526599510}
+如果升级，受影响的功能模块。只有版本兼容时，才会显示该信息
 
-[[  7.1.031]{lang="EN-US"}]{#struct_0_71526_x1155_x147746788}
+Incompatible upgrade
 
-[[要显示的]{style="font-family:宋体"}[System]{lang="EN-US"}]{#struct_0_71526_x1155_1875203543}[包的相关信息，包括：]{style="font-family:宋体"}
+如果升级指定的软件包，则升级的方式为不兼容升级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[System]{lang="EN-US"}]{#struct_0_71526_x1155_x198884695}[包的名称]{lang="EN-US" style="font-family:宋体"}
+Chassis
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Version]{lang="EN-US"}]{#struct_0_71526_x1155_1371011356}[：]{lang="EN-US" style="font-family:宋体"}[System]{lang="EN-US"}[包的版本]{lang="EN-US" style="font-family:宋体"}
+设备在IRF中的成员编号。只有版本兼容时，才会显示该信息（分布式设备－IRF模式）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Version compatibility list]{lang="EN-US"}]{#struct_0_71526_x1155_x53952401}[：和该]{lang="EN-US" style="font-family:宋体"}[System]{lang="EN-US"}[包兼容的]{lang="EN-US" style="font-family:宋体"}[System]{lang="EN-US"}[包版本列表]{lang="EN-US" style="font-family:宋体"}
+Slot
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Version dependency boot list]{lang="EN-US"}]{#struct_0_71526_x1155_x158068730}[：依赖的]{lang="EN-US" style="font-family:宋体"}[Boot]{lang="EN-US"}[包版本列表，即安装该]{lang="EN-US" style="font-family:宋体"}[System]{lang="EN-US"}[包前，必须先安装如下版本的]{lang="EN-US" style="font-family:宋体"}[Boot]{lang="EN-US"}[包中的任意一个]{lang="EN-US" style="font-family:宋体"}
+单板所在的槽位号。只有版本兼容时，才会显示该信息（分布式设备－独立运行模式/分布式设备－IRF模式）
 
-[[Feature image: flash:/cmw710-cfa-a7124.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x1365928322}
+设备在IRF中的成员编号。只有版本兼容时，才会显示该信息（集中式IRF设备）
 
-[[  Version:]{lang="EN-US"}]{#struct_0_71526_x1155_x198950231}
+Upgrade Way
 
-[[  V700R001B31D003]{lang="EN-US"}]{#struct_0_71526_x1155_x188012919}
+兼容升级策略。只有版本兼容时，才会显示该信息。取值可能为：
 
-[[  Version compatibility list:]{lang="EN-US"}]{#struct_0_71526_x1155_1603689167}
+·Service Upgrade：表示服务级增量升级，该方式下，仅对本业务模块有影响，对系统以及其他业务模块没有影响
 
-[[  V700R001B31D003]{lang="EN-US"}]{#struct_0_71526_x1155_800800020}
+·File Upgrade：表示文件级增量升级。该方式下，仅对系统内的、用户不可见的程序文件进行升级，对系统以及业务模块没有影响
 
-[[  Version dependency system list:]{lang="EN-US"}]{#struct_0_71526_x1155_470498675}
+·ISSU Reboot：表示通过软重启方式升级
 
-[[  V700R001B31D001]{lang="EN-US"}]{#struct_0_71526_x1155_x198491479}
+·Reboot：表示通过重启方式升级
 
-[[  V700R001B31D002]{lang="EN-US"}]{#struct_0_71526_x1155_987607439}
+·Sequence Reboot：表示逐次重启方式。只有网板支持该升级方式，当网板需要重启升级时，为了避免重启升级过程中流量中断，系统会自动升级完毕一块网板后，再自动升级下一块网板，直到所有网板升级完毕后，再自动升级主控板。该字段的支持情况与网板的型号有关，请以设备的实际情况为准
 
-[[要显示的]{style="font-family:宋体"}[Feature]{lang="EN-US"}]{#struct_0_71526_x1155_1954292994}[包的相关信息，包括：]{style="font-family:宋体"}
+【相关命令】
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Feature]{lang="EN-US"}]{#struct_0_71526_x1155_681196564}[包的名称]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Version]{lang="EN-US"}]{#struct_0_71526_x1155_x198557015}[：]{lang="EN-US" style="font-family:宋体"}[Feature]{lang="EN-US"}[包的版本]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Version compatibility list]{lang="EN-US"}]{#struct_0_71526_x1155_x1372022110}[：和该]{lang="EN-US" style="font-family:宋体"}[Feature]{lang="EN-US"}[包兼容的]{lang="EN-US" style="font-family:宋体"}[Feature]{lang="EN-US"}[包版本列表]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Version dependency system list]{lang="EN-US"}]{#struct_0_71526_x1155_x1764410926}[：依赖的]{lang="EN-US" style="font-family:宋体"}[System]{lang="EN-US"}[包版本列表，即安装该]{lang="EN-US" style="font-family:宋体"}[Feature]{lang="EN-US"}[包前，必须先安装如下版本的]{lang="EN-US" style="font-family:宋体"}[System]{lang="EN-US"}[包中的任意一个]{lang="EN-US" style="font-family:宋体"}
-
-[[Compatible info of S5120HI:]{lang="EN-US"}]{#struct_0_71526_x1155_x2058985873}
-
-[[Boot image: flash:/rpu-s5120hi-boot.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x2058985876}
-
-[[  Version:]{lang="EN-US"}]{#struct_0_71526_x1155_x2027513872}
-
-[[  7.1.041]{lang="EN-US"}]{#struct_0_71526_x1155_x2058985875}
-
-[ ]{lang="EN-US"}
-
-[[System image: flash:/rpu-s5120hi-system.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x2058985878}
-
-[[  Version:]{lang="EN-US"}]{#struct_0_71526_x1155_1104654010}
-
-[[  D2402]{lang="EN-US"}]{#struct_0_71526_x1155_x2058985877}
-
-[[  Version compatibility list:]{lang="EN-US"}]{#struct_0_71526_x1155_279666290}
-
-[[  D2402]{lang="EN-US"}]{#struct_0_71526_x1155_x1186503881}
-
-[[  Version dependency boot list:]{lang="EN-US"}]{#struct_0_71526_x1155_279666291}
-
-[[  7.1.041]{lang="EN-US"}]{#struct_0_71526_x1155_279666288}
-
-[ ]{lang="EN-US"}
-
-[[Feature image: flash:/s5120hi-http-d2402.bin]{lang="EN-US"}]{#struct_0_71526_x1155_769811247}
-
-[[  Version:]{lang="EN-US"}]{#struct_0_71526_x1155_279666289}
-
-[[  D2404]{lang="EN-US"}]{#struct_0_71526_x1155_279666286}
-
-[[  Version compatibility list:]{lang="EN-US"}]{#struct_0_71526_x1155_769811261}
-
-[[  D2404]{lang="EN-US"}]{#struct_0_71526_x1155_279666287}
-
-[[  Version dependency system list:]{lang="EN-US"}]{#struct_0_71526_x1155_279666284}
-
-[[  D2402]{lang="EN-US"}]{#struct_0_71526_x1155_769811259}
-
-[[要显示的]{style="font-family:宋体"}[PEX]{lang="EN-US"}]{#struct_0_71526_x1155_279666285}[设备的相关信息，包括：]{style="font-family:宋体"}
-
-[[要显示的]{style="font-family:宋体"}[Boot]{lang="EN-US"}]{#struct_0_71526_x1155_279666282}[包的相关信息：]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Boot]{lang="EN-US"}]{#struct_0_71526_x1155_769811257}[包的名称]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Version]{lang="EN-US"}]{#struct_0_71526_x1155_279666283}[：]{lang="EN-US" style="font-family:宋体"}[Boot]{lang="EN-US"}[包的版本]{lang="EN-US" style="font-family:宋体"}
-
-[[要显示的]{style="font-family:宋体"}[System]{lang="EN-US"}]{#struct_0_71526_x1155_x1676648846}[包的相关信息：]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[System]{lang="EN-US"}]{#struct_0_71526_x1155_x1456220856}[包的名称]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Version]{lang="EN-US"}]{#struct_0_71526_x1155_x1676648845}[：]{lang="EN-US" style="font-family:宋体"}[System]{lang="EN-US"}[包的版本]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Version compatibility list]{lang="EN-US"}]{#struct_0_71526_x1155_x1676648848}[：和该]{lang="EN-US" style="font-family:宋体"}[System]{lang="EN-US"}[包兼容的]{lang="EN-US" style="font-family:宋体"}[System]{lang="EN-US"}[包版本列表]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Version dependency boot list]{lang="EN-US"}]{#struct_0_71526_x1155_x293421442}[：依赖的]{lang="EN-US" style="font-family:宋体"}[Boot]{lang="EN-US"}[包版本列表，即安装该]{lang="EN-US" style="font-family:宋体"}[System]{lang="EN-US"}[包前，必须先安装如下版本的]{lang="EN-US" style="font-family:宋体"}[Boot]{lang="EN-US"}[包中的任意一个]{lang="EN-US" style="font-family:宋体"}
-
-[[要显示的]{style="font-family:宋体"}[Feature]{lang="EN-US"}]{#struct_0_71526_x1155_x1676648847}[包的相关信息：]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Feature]{lang="EN-US"}]{#struct_0_71526_x1155_x1676648850}[包的名称]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Version]{lang="EN-US"}]{#struct_0_71526_x1155_x649586266}[：]{lang="EN-US" style="font-family:宋体"}[Feature]{lang="EN-US"}[包的版本]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Version compatibility list]{lang="EN-US"}]{#struct_0_71526_x1155_1259705931}[：和该]{lang="EN-US" style="font-family:宋体"}[Feature]{lang="EN-US"}[包兼容的]{lang="EN-US" style="font-family:宋体"}[Feature]{lang="EN-US"}[包版本列表]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Version dependency system list]{lang="EN-US"}]{#struct_0_71526_x1155_667671980}[：依赖的]{lang="EN-US" style="font-family:宋体"}[System]{lang="EN-US"}[包版本列表，即安装该]{lang="EN-US" style="font-family:宋体"}[Feature]{lang="EN-US"}[包前，必须先安装如下版本的]{lang="EN-US" style="font-family:宋体"}[System]{lang="EN-US"}[包中的任意一个]{lang="EN-US" style="font-family:宋体"}
-
-[[Influenced service according to following table]{lang="EN-US"}]{#struct_0_71526_x1155_x1486520959}
-
-[[如果升级，受影响的功能模块。只有版本兼容时，才会显示该信息]{style="font-family:宋体"}]{#struct_0_71526_x1155_x642982769}
-
-[[Incompatible upgrade]{lang="EN-US"}]{#struct_0_71526_x1155_x199015766}
-
-[[如果升级指定的软件包，则升级的方式为不兼容升级]{style="font-family:宋体"}]{#struct_0_71526_x1155_x2136833264}
-
-[[Chassis]{lang="EN-US"}]{#struct_0_71526_x1155_1805093033}
-
-[[设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_x1435455664}[中的成员编号。只有版本兼容时，才会显示该信息（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
-
-[[Slot]{lang="EN-US"}]{#struct_0_71526_x1155_x199081302}
-
-[[单板所在的槽位号。只有版本兼容时，才会显示该信息（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_71526_x1155_585740454}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
-
-[[设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_1145848361}[中的成员编号。只有版本兼容时，才会显示该信息（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
-
-[[Upgrade Way]{lang="EN-US"}]{#struct_0_71526_x1155_x199146838}
-
-[[兼容升级策略。只有版本兼容时，才会显示该信息。取值可能为：]{style="font-family:宋体"}]{#struct_0_71526_x1155_x617541929}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Service Upgrade]{lang="EN-US"}]{#struct_0_71526_x1155_x1612489244}[：表示服务级增量升级，该方式下，仅对本业务模块有影响，对系统以及其他业务模块没有影响]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[File Upgrade]{lang="EN-US"}]{#struct_0_71526_x1155_x2102895451}[：表示文件级增量升级。该方式下，仅对系统内的、用户不可见的程序文件进行升级，对系统以及业务模块没有影响]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ISSU Reboot]{lang="EN-US"}]{#struct_0_71526_x1155_x199212374}[：表示通过软重启方式升级]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Reboot]{lang="EN-US"}]{#struct_0_71526_x1155_x2131805114}[：表示通过重启方式升级]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Sequence Reboot]{lang="EN-US"}]{#struct_0_71526_x1155_1666700352}[：表示逐次重启方式。只有网板支持该升级方式，当网板需要重启升级时，为了避免重启升级过程中流量中断，系统会自动升级完毕一块网板后，再自动升级下一块网板，直到所有网板升级完毕后，再自动升级主控板。该字段的支持情况与网板的型号有关，请以设备的实际情况为准]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1703826277}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[issu load]{lang="EN-US"}**]{#struct_0_71526_x1155_644680734}
-
-::: {#-501336751 .myid}
-[]{#_Toc404782738}[]{#struct_0_71526_x1155_1366089806}
+·**issu load**
 
 **ISSU \-- ISSU配置命令 \-- install abort**
 
 ------------------------------------------------------------------------
 
-[**[install abort]{lang="EN-US"}**]{#struct_0_71526_x1155_x198753622}[命令用来取消正在执行中的]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[操作。]{style="font-family:宋体"}
+**[install abort**]命令用来取消正在执行中的ISSU操作。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x549205895}
+【命令】
 
-[**[install]{lang="EN-US"}**[ **abort** \[ *job-id* \]]{lang="EN-US"}]{#struct_0_71526_x1155_x1782467885}
+**[install** **abort** [ *job-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1370620847}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1974979391}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1005888280}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_x455942582}
+network-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1500313152}
+【参数】
 
-[*[job-id]{lang="EN-US"}*]{#struct_0_71526_x1155_x1762604112}[：任务]{style="font-family:宋体"}[ID]{lang="EN-US"}[。不指定该参数时，则取消正在执行中的操作。]{style="font-family:宋体"}
+*[job-id*]：任务ID。不指定该参数时，则取消正在执行中的操作。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x198819158}
+【使用指导】
 
-[[当用户执行]{style="font-family:宋体"}**[install activate]{lang="EN-US"}**]{#struct_0_71526_x1155_x543945423}[、]{style="font-family:宋体"}**[install add]{lang="EN-US"}**[、]{style="font-family:宋体"}**[install commit]{lang="EN-US"}**[、]{style="font-family:宋体"}**[install deactivate]{lang="EN-US"}**[、]{style="font-family:宋体"}**[install remove]{lang="EN-US"}**[或]{style="font-family:宋体"}**[install rollback to]{lang="EN-US"}**[命令时，系统会创建相应的任务。为了管理和监控这些任务，系统会给每个任务分配一个任务]{style="font-family:宋体"}[ID]{lang="EN-US"}[。一个任务]{style="font-family:宋体"}[ID]{lang="EN-US"}[代表一条命令。其中，只有正在进行的激活或卸载操作可以使用]{style="font-family:宋体"}**[install abort]{lang="EN-US"}**[命令进行取消操作，取消后回退到操作前状态。]{style="font-family:宋体"}
+当用户执行**install activate**、**install add**、**install commit**、**install deactivate**、**install remove**或**install rollback to**命令时，系统会创建相应的任务。为了管理和监控这些任务，系统会给每个任务分配一个任务ID。一个任务ID代表一条命令。其中，只有正在进行的激活或卸载操作可以使用**install abort**命令进行取消操作，取消后回退到操作前状态。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_622965731}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_815046811}[取消正在执行中的操作。]{style="font-family:宋体"}
+\# 取消正在执行中的操作。
 
-[[\<Sysname\> install abort]{lang="EN-US"}]{#struct_0_71526_x1155_x1623465201}
+\<Sysname\> install abort
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1222623299}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display install job]{lang="EN-US"}**]{#struct_0_71526_x1155_x339893464}
-:::
-
-::: {#-293778641 .myid}
-[]{#_Toc404782739}[]{#struct_0_71526_x1155_x43493456}[]{#_Toc299981186}[]{#_Toc299981187}[]{#_Toc299981188}
+·**display install job**
 
 **ISSU \-- ISSU配置命令 \-- install activate**
 
 ------------------------------------------------------------------------
 
-[**[install activate]{lang="EN-US"}**]{#struct_0_71526_x1155_x198884694}[命令用来激活软件包。]{style="font-family:宋体"}
+**[install activate**]命令用来激活软件包。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1370945820}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_71526_x1155_1930006959}
+集中式设备：
 
-[**[install activate]{lang="EN-US"}**[ { **boot** *filename* \| **system** *filename* \| **feature** *filename*&\<1-30\> } \* \[ **test** \]]{lang="EN-US"}]{#struct_0_71526_x1155_408955880}
+**[install activate**[ { **boot** *filename* \| **system** *filename* \| **feature** *filename*&\<1-30\> } \* [ **test** ]]]
 
-[**[install activate patch ]{lang="EN-US"}***[filename]{lang="EN-US"}*]{#struct_0_71526_x1155_x511752957}
+**[install activate patch ***filename*]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_71526_x1155_1062714810}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[install activate]{lang="EN-US"}**[ { **boot** *filename* \| **system** *filename* \| **feature** *filename*&\<1-30\> } \* **slot** *slot-number* \[ ]{lang="EN-US"}]{#struct_0_71526_x1155_x330422824}**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}*[cpu-number]{lang="EN-US"}*[ \] \[ **test** \]]{lang="EN-US"}
+**[install activate**[ { **boot** *filename* \| **system** *filename* \| **feature** *filename*&\<1-30\> } \* **slot** *slot-number* ]**cpu***cpu-number*   **test** ]
 
-[**[install activate patch ]{lang="EN-US"}***[filename ]{lang="EN-US"}*[{ **all** \| **slot** *slot-number* \[ ]{lang="EN-US"}]{#struct_0_71526_x1155_x247477301}**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}*[cpu-number]{lang="EN-US"}*[ \] }]{lang="EN-US"}
+**[install activate patch ***filename ***cpu***cpu-number*  }]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_1142671943}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[install activate]{lang="EN-US"}**[ { **boot** *filename* \| **system** *filename* \| **feature** *filename*&\<1-30\> } \* **chassis** *chassis-number* **slot** *slot-number* \[ ]{lang="EN-US"}]{#struct_0_71526_x1155_x1819756501}**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}*[cpu-number]{lang="EN-US"}*[ \] \[ **test** \]]{lang="EN-US"}
+**[install activate**[ { **boot** *filename* \| **system** *filename* \| **feature** *filename*&\<1-30\> } \* **chassis** *chassis-number* **slot** *slot-number* ]**cpu***cpu-number*   **test** ]
 
-[**[install]{lang="EN-US"}**[ **activate patch** *filename* { **all** \| **chassis** *chassis-number* **slot** *slot-number* \[ ]{lang="EN-US"}]{#struct_0_71526_x1155_x198950230}**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}*[cpu-number]{lang="EN-US"}*[ \] }]{lang="EN-US"}
+**[install** **activate patch** *filename* **cpu***cpu-number*  }]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x187947383}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_253338408}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1313327726}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_355708598}
+network-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x303311473}
+【参数】
 
-[**[boot]{lang="EN-US"}**]{#struct_0_71526_x1155_x654154333}[：表示]{style="font-family:宋体"}[Boot]{lang="EN-US"}[包。]{style="font-family:宋体"}
+**[boot**]：表示Boot包。
 
-[**[system]{lang="EN-US"}**]{#struct_0_71526_x1155_x61530214}[：表示]{style="font-family:宋体"}[System]{lang="EN-US"}[包。]{style="font-family:宋体"}
+**[system**]：表示System包。
 
-[**[feature]{lang="EN-US"}**]{#struct_0_71526_x1155_x1854740191}[：表示]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[feature**]：表示Feature包。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[patch]{lang="EN-US"}**]{#struct_0_71526_x1155_x198491478}[：表示补丁包。用于快速修复系统]{style="font-family:宋体"}[Bug]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[patch**]：表示补丁包。用于快速修复系统Bug。
 
-[*[filename]{lang="EN-US"}*]{#struct_0_71526_x1155_987672975}[：表示软件包的文件名，以]{style="font-family:宋体"}[.bin]{lang="EN-US"}[作为后缀名，从存储介质名开始为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串（包括存储介质名在内），不区分大小写。]{style="font-family:宋体"}[&\<1-30\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[30]{lang="EN-US"}[次。]{style="font-family:宋体"}
+*[filename*]：表示软件包的文件名，以.bin作为后缀名，从存储介质名开始为1～63个字符的字符串（包括存储介质名在内），不区分大小写。&\<1-30\>表示前面的参数最多可以输入30次。
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_1609709888}[：]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[取值为]{style="font-family:宋体"}[0]{lang="EN-US"}[，无特殊意义。（集中式设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：*slot-number*取值为0，无特殊意义。（集中式设备）
 
-[**[all]{lang="EN-US"}**]{#struct_0_71526_x1155_1352642085}[：升级补丁包对应的所有单板。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[all**]：升级补丁包对应的所有单板。（分布式设备－独立运行模式）
 
-[**[all]{lang="EN-US"}**]{#struct_0_71526_x1155_x1045218399}[：升级补丁包对应的所有成员设备。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**[all**]：升级补丁包对应的所有成员设备。（集中式IRF设备）
 
-[**[all]{lang="EN-US"}**]{#struct_0_71526_x1155_x1608522079}[：升级补丁包对应的所有成员设备或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[all**]：升级补丁包对应的所有成员设备或者PEX。（集中式IRF设备）（支持IRF3的设备）
 
-[**[all]{lang="EN-US"}**]{#struct_0_71526_x1155_x1381252676}[：升级补丁包对应的所有单板。（分布式设备－独立运行模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[all**]：升级补丁包对应的所有单板。（分布式设备－独立运行模式）（不支持IRF3的设备）
 
-[**[all]{lang="EN-US"}**]{#struct_0_71526_x1155_x1328898710}[：升级补丁包对应的所有单板或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[。（分布式设备－独立运行模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[all**]：升级补丁包对应的所有单板或者PEX。（分布式设备－独立运行模式）（支持IRF3的设备）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_1531788547}[：表示单板所在的槽位号。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示单板所在的槽位号。（分布式设备－独立运行模式）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_x2006074995}[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示设备在IRF中的成员编号。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_2135692546}[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示设备在IRF中的成员编号或者PEX的虚拟槽位号。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*[ **slot** *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_x888068972}[：]{style="font-family:
-宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number* **slot** *slot-number*]：*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*[ **slot** *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_1755926612}[：]{style="font-family:
-宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[所在的槽位号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number* **slot** *slot-number*]：*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板/PEX所在的槽位号。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_71526_x1155_x957835361}*[cpu-number]{lang="EN-US"}*[：表示待升级的安全引擎的]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号。本参数专用于升级防火墙插卡上的安全引擎，其它单板以及防火墙插卡上其它]{style="font-family:宋体"}[CPU]{lang="EN-US"}[升级时，不需要指定该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**[cpu**]*cpu-number*：表示待升级的安全引擎的CPU编号。本参数专用于升级防火墙插卡上的安全引擎，其它单板以及防火墙插卡上其它CPU升级时，不需要指定该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。（分布式设备－独立运行模式/分布式设备－IRF模式）
 
-[**[test]{lang="EN-US"}**]{#struct_0_71526_x1155_x1183277269}[：查看指定软件包的升级策略。不带该参数时，表示直接执行升级操作。]{style="font-family:宋体"}
+**[test**]：查看指定软件包的升级策略。不带该参数时，表示直接执行升级操作。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x287963705}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[只有进行激活处理后，软件包才能生效。]{style="font-family:宋体"}]{#struct_0_71526_x1155_1529139380}
+·只有进行激活处理后，软件包才能生效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[被激活的软件包只在本次运行的系统中生效。]{style="font-family:宋体"}]{#struct_0_71526_x1155_x198557014}[要使被激活的软件包在设备重启后继续生效，还需要执行]{lang="EN-US" style="font-family:宋体"}**[install commit]{lang="EN-US"}**[命令。]{lang="EN-US" style="font-family:宋体"}
+·被激活的软件包只在本次运行的系统中生效。要使被激活的软件包在设备重启后继续生效，还需要执行**install commit**命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[请先查看软件包版本发布说明书，如果某软件包需要]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1371956574}[License]{lang="EN-US"}[才能运行，且设备当前没有对应的有效的]{style="font-family:宋体"}[License]{lang="EN-US"}[时，需安装对应的]{style="font-family:宋体"}[License]{lang="EN-US"}[，再执行该命令。]{style="font-family:宋体"}[否则，会导致命令执行失败。]{lang="EN-US" style="font-family:宋体"}
+·请先查看软件包版本发布说明书，如果某软件包需要License才能运行，且设备当前没有对应的有效的License时，需安装对应的License，再执行该命令。否则，会导致命令执行失败。
 
-[[(1)[      ]{style="font:7.0pt "}]{lang="EN-US"}[集中式设备]{lang="EN-US" style="font-family:宋体"}]{#struct_0_71526_x1155_x199015769}
+(1)集中式设备
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当配置该命令时，命令中指定的软件包必须放在设备存储介质主分区的根目录下，文件名中必须包含存储介质的名称，形如]{style="font-family:宋体"}]{#struct_0_71526_x1155_x199081305}[flash:/xx.bin]{lang="EN-US"}[。]{style="font-family:宋体"}
+·当配置该命令时，命令中指定的软件包必须放在设备存储介质主分区的根目录下，文件名中必须包含存储介质的名称，形如flash:/xx.bin。
 
-[[(2)[      ]{style="font:7.0pt "}]{lang="EN-US"}[分布式设备－独立运行模式]{style="font-family:宋体"}]{#struct_0_71526_x1155_x199146841}
+(2)分布式设备－独立运行模式
 
-[[当配置该命令时：]{style="font-family:宋体"}]{#struct_0_71526_x1155_x199212377}
+当配置该命令时：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[命令中指定的软件包必须放在存储介质主分区的根目录下，文件名中必须包含存储介质的名称，形如]{style="font-family:宋体"}]{#struct_0_71526_x1155_x198753625}[flash:/xx.bin]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[slot1#flash:/xx.bin]{lang="EN-US"}[。]{style="font-family:宋体"}
+·命令中指定的软件包必须放在存储介质主分区的根目录下，文件名中必须包含存储介质的名称，形如flash:/xx.bin或slot1#flash:/xx.bin。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[执行命令行时，如果]{style="font-family:宋体"}]{#struct_0_71526_x1155_x957442145}*[filename]{lang="EN-US"}*[不是存放在待升级主控板上的文件，则系统会先将该文件拷贝到待升级主控板上，再执行升级动作。]{style="font-family:宋体"}
+·执行命令行时，如果*filename*不是存放在待升级主控板上的文件，则系统会先将该文件拷贝到待升级主控板上，再执行升级动作。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于安全引擎，执行命令行时，如果]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1441330857}*[filename]{lang="EN-US"}*[不是存放在待升级安全引擎上的文件，则系统会先将该文件拷贝到待升级安全引擎上，再执行升级动作。]{style="font-family:宋体"}
+·对于安全引擎，执行命令行时，如果*filename*不是存放在待升级安全引擎上的文件，则系统会先将该文件拷贝到待升级安全引擎上，再执行升级动作。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定的]{style="font-family:宋体"}]{#struct_0_71526_x1155_x549664647}**[slot]{lang="EN-US"}**[参数为主用主控板所在的槽位号，则执行该命令，会同时升级主用主控板和业务板。]{style="font-family:宋体"}
+·如果指定的**slot**参数为主用主控板所在的槽位号，则执行该命令，会同时升级主用主控板和业务板。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定的]{style="font-family:宋体"}]{#struct_0_71526_x1155_x198819161}**[slot]{lang="EN-US"}**[参数为备用主控板所在的槽位号，则执行该命令，只会升级备用主控板。]{style="font-family:宋体"}
+·如果指定的**slot**参数为备用主控板所在的槽位号，则执行该命令，只会升级备用主控板。
 
-[[(3)[      ]{style="font:7.0pt "}]{lang="EN-US"}[集中式]{lang="EN-US" style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_x198884697}[设备]{lang="EN-US" style="font-family:宋体"}
+(3)集中式IRF设备
 
-[[当配置该命令时：]{style="font-family:宋体"}]{#struct_0_71526_x1155_x198491481}
+当配置该命令时：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[命令中指定的软件包必须放在存储介质主分区的根目录下，文件名中必须包含存储介质的名称，形如]{style="font-family:宋体"}]{#struct_0_71526_x1155_987083154}[flash:/xx.bin]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[slot]{lang="EN-US"}[2]{lang="EN-US"}[#flash:/xx.bin]{lang="EN-US"}[。]{style="font-family:宋体"}
+·命令中指定的软件包必须放在存储介质主分区的根目录下，文件名中必须包含存储介质的名称，形如flash:/xx.bin或slot2#flash:/xx.bin。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定的]{style="font-family:宋体"}]{#struct_0_71526_x1155_x957573217}**[slot]{lang="EN-US"}**[参数为成员设备的成员编号，则执行该命令，如果指定的不是该成员设备上的软件包，会先将软件包拷贝到该成员设备上，再升级该成员设备。]{style="font-family:宋体"}
+·如果指定的**slot**参数为成员设备的成员编号，则执行该命令，如果指定的不是该成员设备上的软件包，会先将软件包拷贝到该成员设备上，再升级该成员设备。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[从设备重启后，会自动批量备份主设备的配置和状态数据。请等待批量备份完成后，即分别通过]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1371891038}**[display device]{lang="EN-US"}**[、]{style="font-family:宋体"}**[display mdc]{lang="EN-US"}**[和]{style="font-family:宋体"}**[display system internal ha service-group]{lang="EN-US"}**[命令查看到所有单板处于]{style="font-family:宋体"}[normal]{lang="EN-US"}[状态、所有]{style="font-family:宋体"}[MDC]{lang="EN-US"}[处于]{style="font-family:宋体"}[active]{lang="EN-US"}[状态和所有服务的]{style="font-family:宋体"}[action]{lang="EN-US"}[显示为]{style="font-family:宋体"}[0]{lang="EN-US"}[后，再执行]{style="font-family:宋体"}**[install activate]{lang="EN-US"}**[命令，否则，命令会执行失败。]{style="font-family:宋体"}
+·从设备重启后，会自动批量备份主设备的配置和状态数据。请等待批量备份完成后，即分别通过**display device**、**display mdc**和**display system internal ha service-group**命令查看到所有单板处于normal状态、所有MDC处于active状态和所有服务的action显示为0后，再执行**install activate**命令，否则，命令会执行失败。
 
-[[(4)[      ]{style="font:7.0pt "}]{lang="EN-US"}[分布式设备－]{style="font-family:宋体"}]{#struct_0_71526_x1155_x199081304}[IRF]{lang="EN-US"}[模式]{style="font-family:宋体"}
+(4)分布式设备－IRF模式
 
-[[当配置该命令时：]{style="font-family:宋体"}]{#struct_0_71526_x1155_x199146840}
+当配置该命令时：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[命令中指定的软件包必须放在存储介质主分区的根目录下，文件名中必须包含存储介质的名称，形如]{style="font-family:宋体"}]{#struct_0_71526_x1155_x618066220}[flash:/xx.bin]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[chassis1#slot1#flash:/xx.bin]{lang="EN-US"}[。]{style="font-family:宋体"}
+·命令中指定的软件包必须放在存储介质主分区的根目录下，文件名中必须包含存储介质的名称，形如flash:/xx.bin或chassis1#slot1#flash:/xx.bin。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[执行命令行时，如果]{style="font-family:宋体"}]{#struct_0_71526_x1155_x958228577}*[filename]{lang="EN-US"}*[不是存放在待升级主控板上的文件，则系统会先将该文件拷贝到待升级主控板上，再执行升级动作。]{style="font-family:宋体"}
+·执行命令行时，如果*filename*不是存放在待升级主控板上的文件，则系统会先将该文件拷贝到待升级主控板上，再执行升级动作。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于安全引擎，执行命令行时，如果]{style="font-family:宋体"}]{#struct_0_71526_x1155_x479553864}*[filename]{lang="EN-US"}*[不是存放在待升级安全引擎上的文件，则系统会先将该文件拷贝到待升级安全引擎上，再执行升级动作。]{style="font-family:宋体"}
+·对于安全引擎，执行命令行时，如果*filename*不是存放在待升级安全引擎上的文件，则系统会先将该文件拷贝到待升级安全引擎上，再执行升级动作。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定的]{style="font-family:宋体"}]{#struct_0_71526_x1155_x199212376}**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}[参数为全局主用主控板所在的槽位号，则执行该命令，会同时升级该主控板和所有业务板。]{style="font-family:宋体"}
+·如果指定的**chassis** *chassis-number* **slot** *slot-number*参数为全局主用主控板所在的槽位号，则执行该命令，会同时升级该主控板和所有业务板。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定的]{style="font-family:宋体"}]{#struct_0_71526_x1155_x198753624}**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}[参数为全局备用主控板所在的槽位号，则执行该命令，只会升级该主控板。]{style="font-family:宋体"}
+·如果指定的**chassis** *chassis-number* **slot** *slot-number*参数为全局备用主控板所在的槽位号，则执行该命令，只会升级该主控板。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[从设备重启后，会自动批量备份主设备的配置和状态数据。请等待批量备份完成后，即分别通过]{style="font-family:宋体"}]{#struct_0_71526_x1155_x198884696}**[display device]{lang="EN-US"}**[、]{style="font-family:宋体"}**[display mdc]{lang="EN-US"}**[和]{style="font-family:宋体"}**[display system internal ha service-group]{lang="EN-US"}**[命令查看到所有单板处于]{style="font-family:宋体"}[normal]{lang="EN-US"}[状态、所有]{style="font-family:宋体"}[MDC]{lang="EN-US"}[处于]{style="font-family:宋体"}[active]{lang="EN-US"}[状态和所有服务的]{style="font-family:宋体"}[action]{lang="EN-US"}[显示为]{style="font-family:宋体"}[0]{lang="EN-US"}[后，再执行]{style="font-family:宋体"}**[install activate]{lang="EN-US"}**[命令，否则，命令会执行失败。]{style="font-family:宋体"}
+·从设备重启后，会自动批量备份主设备的配置和状态数据。请等待批量备份完成后，即分别通过**display device**、**display mdc**和**display system internal ha service-group**命令查看到所有单板处于normal状态、所有MDC处于active状态和所有服务的action显示为0后，再执行**install activate**命令，否则，命令会执行失败。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1370814748}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1224538513}[显示]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包]{style="font-family:宋体"}[ssh2.bin]{lang="EN-US"}[的升级策略。（集中式设备）]{style="font-family:宋体"}
+\# 显示Feature包ssh2.bin的升级策略。（集中式设备）
 
-[[\<Sysname\> install activate feature flash:/ssh2.bin test]{lang="EN-US"}]{#struct_0_71526_x1155_x198950232}
+\<Sysname\> install activate feature flash:/ssh2.bin test
 
-[Verifying the file flash:/ssh2.bin on the device\.....Done.]{lang="EN-US"}
+Verifying the file flash:/ssh2.bin on the device\.....Done.
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[ ]{lang="EN-US"}
+flash:/ssh2.bin
 
-[flash:/ssh2.bin]{lang="EN-US"}
+  Running Version             New Version
 
-[  Running Version             New Version]{lang="EN-US"}
+  Beta 1330                   Beta 1331
 
-[  Beta 1330                   Beta 1331]{lang="EN-US"}
+Upgrade Way: Service Upgrade
 
-[ ]{lang="EN-US"}
+Influenced service according to following table:
 
-[Upgrade Way: Service Upgrade]{lang="EN-US"}
+flash:/ssh2.bin
 
-[ ]{lang="EN-US"}
+     SSH       IFMGR     CFA       LAGG
 
-[Influenced service according to following table:]{lang="EN-US"}
+以上显示信息表明，该软件将采用增量方式升级。并且升级过程中会重启功能模块SSH、IFMGR、CFA和LAGG。
 
-[flash:/ssh2.bin]{lang="EN-US"}
+\# 显示备用主控板1上的Feature包ssh2.bin的升级策略。（分布式设备－独立运行模式）
 
-[     SSH       IFMGR     CFA       LAGG]{lang="EN-US"}
+\<Sysname\> install activate feature flash:/ssh2.bin slot 1 test
 
-[[以上显示信息表明，该软件将采用增量方式升级。并且升级过程中会重启功能模块]{style="font-family:宋体"}[SSH]{lang="EN-US"}]{#struct_0_71526_x1155_x187816311}[、]{style="font-family:宋体"}[IFMGR]{lang="EN-US"}[、]{style="font-family:宋体"}[CFA]{lang="EN-US"}[和]{style="font-family:宋体"}[LAGG]{lang="EN-US"}[。]{style="font-family:宋体"}
+Copying file flash:/ssh2.bin to slot1#flash:/ssh2.bin\...\...Done.
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x198491480}[显示备用主控板]{style="font-family:宋体"}[1]{lang="EN-US"}[上的]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包]{style="font-family:宋体"}[ssh2.bin]{lang="EN-US"}[的升级策略。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+Verifying the file flash:/ssh2.bin on slot 1\.....Done.
 
-[[\<Sysname\> install activate feature flash:/ssh2.bin slot 1 test]{lang="EN-US"}]{#struct_0_71526_x1155_1367068176}
+Upgrade summary according to following table:
 
-[Copying file flash:/ssh2.bin to slot1#flash:/ssh2.bin\...\...Done.]{lang="EN-US"}
+flash:/ssh2.bin
 
-[Verifying the file flash:/ssh2.bin on slot 1\.....Done.]{lang="EN-US"}
+  Running Version             New Version
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+  Beta 1330                   Beta 1331
 
-[ ]{lang="EN-US"}
+  Slot                        Upgrade Way
 
-[flash:/ssh2.bin]{lang="EN-US"}
+  1                           Service Upgrade
 
-[  Running Version             New Version]{lang="EN-US"}
+Influenced service according to following table:
 
-[  Beta 1330                   Beta 1331]{lang="EN-US"}
+flash:/ssh2.bin
 
-[ ]{lang="EN-US"}
+     SSH       IFMGR     CFA       LAGG
 
-[  Slot                        Upgrade Way]{lang="EN-US"}
+以上显示信息表明，该软件将采用增量方式升级。并且升级过程中会重启功能模块SSH、IFMGR、CFA和LAGG。
 
-[  1                           Service Upgrade]{lang="EN-US"}
+\# 显示从设备2上的Feature包ssh2.bin。的升级策略（集中式IRF设备）
 
-[ ]{lang="EN-US"}
+\<Sysname\> install activate feature flash:/ssh2.bin slot 2 test
 
-[Influenced service according to following table:]{lang="EN-US"}
+Copying file flash:/ssh2.bin to slot2#flash:/ssh2.bin\...\...Done.
 
-[flash:/ssh2.bin]{lang="EN-US"}
+Verifying the file flash:/ssh2.bin on slot 2\.....Done.
 
-[     SSH       IFMGR     CFA       LAGG]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[[以上显示信息表明，该软件将采用增量方式升级。并且升级过程中会重启功能模块]{style="font-family:宋体"}[SSH]{lang="EN-US"}]{#struct_0_71526_x1155_1446948601}[、]{style="font-family:宋体"}[IFMGR]{lang="EN-US"}[、]{style="font-family:宋体"}[CFA]{lang="EN-US"}[和]{style="font-family:宋体"}[LAGG]{lang="EN-US"}[。]{style="font-family:宋体"}
+flash:/ssh2.bin
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_1367002640}[显示从设备]{style="font-family:宋体"}[2]{lang="EN-US"}[上的]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包]{style="font-family:宋体"}[ssh2.bin]{lang="EN-US"}[。的升级策略（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+  Running Version             New Version
 
-[[\<Sysname\> install activate feature flash:/ssh2.bin slot 2 test]{lang="EN-US"}]{#struct_0_71526_x1155_1366937104}
+  Beta 1330                   Beta 1331
 
-[Copying file flash:/ssh2.bin to slot2#flash:/ssh2.bin\...\...Done.]{lang="EN-US"}
+  Slot                        Upgrade Way
 
-[Verifying the file flash:/ssh2.bin on slot 2\.....Done.]{lang="EN-US"}
+  2                           Service Upgrade
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+Influenced service according to following table:
 
-[ ]{lang="EN-US"}
+flash:/ssh2.bin
 
-[flash:/ssh2.bin]{lang="EN-US"}
+     SSH       IFMGR     CFA       LAGG
 
-[  Running Version             New Version]{lang="EN-US"}
+以上显示信息表明，该软件将采用增量方式升级。并且升级过程中会重启功能模块SSH、IFMGR、CFA和LAGG。
 
-[  Beta 1330                   Beta 1331]{lang="EN-US"}
+\# 显示成员设备1的1号单板（全局备用主控板）上的feature包ssh2.bin的升级策略。（分布式设备－IRF模式）
 
-[ ]{lang="EN-US"}
+\<Sysname\> install activate feature flash:/ssh2.bin chassis 1 slot 1 test
 
-[  Slot                        Upgrade Way]{lang="EN-US"}
+Copying file flash:/ssh2.bin to chassis1#slot1#flash:/ssh2.bin\...\...Done.
 
-[  2                           Service Upgrade]{lang="EN-US"}
+Verifying the file flash:/ssh2.bin on chassis 1 slot 1\.....Done.
 
-[ ]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[Influenced service according to following table:]{lang="EN-US"}
+flash:/ssh2.bin
 
-[flash:/ssh2.bin]{lang="EN-US"}
+  Running Version             New Version
 
-[     SSH       IFMGR     CFA       LAGG]{lang="EN-US"}
+  Beta 1330                   Beta 1331
 
-[[以上显示信息表明，该软件将采用增量方式升级。并且升级过程中会重启功能模块]{style="font-family:宋体"}[SSH]{lang="EN-US"}]{#struct_0_71526_x1155_1366871568}[、]{style="font-family:宋体"}[IFMGR]{lang="EN-US"}[、]{style="font-family:宋体"}[CFA]{lang="EN-US"}[和]{style="font-family:宋体"}[LAGG]{lang="EN-US"}[。]{style="font-family:宋体"}
+  Chassis   Slot              Upgrade Way
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_1367330320}[显示成员设备]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[1]{lang="EN-US"}[号单板（全局备用主控板）上的]{style="font-family:
-宋体"}[feature]{lang="EN-US"}[包]{style="font-family:
-宋体"}[ssh2.bin]{lang="EN-US"}[的升级策略。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+  1         1                 Service Upgrade
 
-[[\<Sysname\> install activate feature flash:/ssh2.bin chassis 1 slot 1 test]{lang="EN-US"}]{#struct_0_71526_x1155_1367068177}
+Influenced service according to following table:
 
-[Copying file flash:/ssh2.bin to chassis1#slot1#flash:/ssh2.bin\...\...Done.]{lang="EN-US"}
+flash:/ssh2.bin
 
-[Verifying the file flash:/ssh2.bin on chassis 1 slot 1\.....Done.]{lang="EN-US"}
+     SSH       IFMGR     CFA       LAGG
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+以上显示信息表明，该软件将采用增量方式升级。并且升级过程中会重启功能模块SSH、IFMGR、CFA和LAGG。
 
-[ ]{lang="EN-US"}
+\# 激活System包system.bin和Feature包feature.bin。（集中式设备）
 
-[flash:/ssh2.bin]{lang="EN-US"}
+\<Sysname\> install activate system flash:/system.bin feature flash:/feature.bin
 
-[  Running Version             New Version]{lang="EN-US"}
+Verifying the file flash:/feature.bin on the device\.....Done.
 
-[  Beta 1330                   Beta 1331]{lang="EN-US"}
+Verifying the file flash:/system.bin on the device\.....Done.
 
-[ ]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[  Chassis   Slot              Upgrade Way]{lang="EN-US"}
+flash:/system.bin
 
-[  1         1                 Service Upgrade]{lang="EN-US"}
+  Running Version             New Version
 
-[ ]{lang="EN-US"}
+  Beta 1330                   Beta 1331
 
-[Influenced service according to following table:]{lang="EN-US"}
+flash:/feature.bin
 
-[flash:/ssh2.bin]{lang="EN-US"}
+  Running Version             New Version
 
-[     SSH       IFMGR     CFA       LAGG]{lang="EN-US"}
+  NONE                        Beta 1330
 
-[[以上显示信息表明，该软件将采用增量方式升级。并且升级过程中会重启功能模块]{style="font-family:宋体"}[SSH]{lang="EN-US"}]{#struct_0_71526_x1155_1447014137}[、]{style="font-family:宋体"}[IFMGR]{lang="EN-US"}[、]{style="font-family:宋体"}[CFA]{lang="EN-US"}[和]{style="font-family:宋体"}[LAGG]{lang="EN-US"}[。]{style="font-family:宋体"}
+Upgrade Way: Service Upgrade
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x179080853}[激活]{style="font-family:宋体"}[System]{lang="EN-US"}[包]{style="font-family:宋体"}[system.bin]{lang="EN-US"}[和]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包]{style="font-family:宋体"}[feature.bin]{lang="EN-US"}[。（集中式设备）]{style="font-family:宋体"}
+Upgrading software images to compatible versions. Continue? [Y/N:y]
 
-[[\<Sysname\> install activate system flash:/system.bin feature flash:/feature.bin]{lang="EN-US"}]{#struct_0_71526_x1155_1367002641}
+This operation maybe take several minutes, please wait\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\.....Done.
 
-[Verifying the file flash:/feature.bin on the device\.....Done.]{lang="EN-US"}
+\# 激活备用主控板1上的System包system.bin和Feature包feature.bin。（分布式设备－独立运行模式）
 
-[Verifying the file flash:/system.bin on the device\.....Done.]{lang="EN-US"}
+\<Sysname\> install activate system flash:/system.bin feature flash:/feature.bin slot 1
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+Copying file flash:/system.bin to slot1#flash:/system.bin\...\...Done.
 
-[ ]{lang="EN-US"}
+Verifying the file flash:/system.bin on slot 1\.....Done.
 
-[flash:/system.bin]{lang="EN-US"}
+Copying file flash:/feature.bin to slot1#flash:/feature.bin\...\...Done.
 
-[  Running Version             New Version]{lang="EN-US"}
+Verifying the file flash:/feature.bin on slot 1\.....Done.
 
-[  Beta 1330                   Beta 1331]{lang="EN-US"}
+Verifying the file flash:/feature.bin on slot 0\.....Done.
 
-[ ]{lang="EN-US"}
+Verifying the file flash:/system.bin on slot 0\.....Done.
 
-[flash:/feature.bin]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[  Running Version             New Version]{lang="EN-US"}
+flash:/system.bin
 
-[  NONE                        Beta 1330]{lang="EN-US"}
+  Running Version             New Version
 
-[ ]{lang="EN-US"}
+  Beta 1330                   Beta 1331
 
-[Upgrade Way: Service Upgrade]{lang="EN-US"}
+flash:/feature.bin
 
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+  Running Version             New Version
 
-[This operation maybe take several minutes, please wait\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\.....Done.]{lang="EN-US"}
+  None                        Beta 1330
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_1366871569}[激活备用主控板]{style="font-family:宋体"}[1]{lang="EN-US"}[上的]{style="font-family:宋体"}[System]{lang="EN-US"}[包]{style="font-family:宋体"}[system.bin]{lang="EN-US"}[和]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包]{style="font-family:宋体"}[feature.bin]{lang="EN-US"}[。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+  Slot                        Upgrade Way
 
-[[\<Sysname\> install activate system flash:/system.bin feature flash:/feature.bin slot 1]{lang="EN-US"}]{#struct_0_71526_x1155_1367133713}
+  1                           Service Upgrade
 
-[Copying file flash:/system.bin to slot1#flash:/system.bin\...\...Done.]{lang="EN-US"}
+Upgrading software images to compatible versions. Continue? [Y/N:y]
 
-[Verifying the file flash:/system.bin on slot 1\.....Done.]{lang="EN-US"}
+This operation maybe take several minutes, please wait\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\.....Done.
 
-[Copying file flash:/feature.bin to slot1#flash:/feature.bin\...\...Done.]{lang="EN-US"}
+\# 激活从设备2上的System包system.bin和Feature包feature.bin。（集中式IRF设备）
 
-[Verifying the file flash:/feature.bin on slot 1\.....Done.]{lang="EN-US"}
+\<Sysname\> install activate system flash:/system.bin feature flash:/feature.bin slot 2
 
-[Verifying the file flash:/feature.bin on slot 0\.....Done.]{lang="EN-US"}
+Copying file flash:/system.bin to slot2#flash:/system.bin\...\...Done.
 
-[Verifying the file flash:/system.bin on slot 0\.....Done.]{lang="EN-US"}
+Verifying the file flash:/system.bin on slot 2\.....Done.
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+Copying file flash:/feature.bin to slot2#flash:/feature.bin\...\...Done.
 
-[ ]{lang="EN-US"}
+Verifying the file flash:/feature.bin on slot 2\.....Done.
 
-[flash:/system.bin]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[  Running Version             New Version]{lang="EN-US"}
+flash:/system.bin
 
-[  Beta 1330                   Beta 1331]{lang="EN-US"}
+  Running Version             New Version
 
-[ ]{lang="EN-US"}
+  Beta 1330                   Beta 1331
 
-[flash:/feature.bin]{lang="EN-US"}
+flash:/feature.bin
 
-[  Running Version             New Version]{lang="EN-US"}
+  Running Version             New Version
 
-[  None                        Beta 1330]{lang="EN-US"}
+  None                        Beta 1330
 
-[ ]{lang="EN-US"}
+  Slot                        Upgrade Way
 
-[  Slot                        Upgrade Way]{lang="EN-US"}
+  2                           Service Upgrade
 
-[  1                           Service Upgrade]{lang="EN-US"}
+Upgrading software images to compatible versions. Continue? [Y/N:y]
 
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+This operation maybe take several minutes, please wait\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\.....Done.
 
-[This operation maybe take several minutes, please wait\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\.....Done.]{lang="EN-US"}
+\# 激活成员设备1的1号单板（全局备用主控板）上的Feature包feature.bin。（分布式设备－IRF模式）
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_1367068174}[激活从设备]{style="font-family:宋体"}[2]{lang="EN-US"}[上的]{style="font-family:宋体"}[System]{lang="EN-US"}[包]{style="font-family:宋体"}[system.bin]{lang="EN-US"}[和]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包]{style="font-family:宋体"}[feature.bin]{lang="EN-US"}[。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\<Sysname\> install activate feature flash:/feature.bin chassis 1 slot 1
 
-[[\<Sysname\> install activate system flash:/system.bin feature flash:/feature.bin slot 2]{lang="EN-US"}]{#struct_0_71526_x1155_1367264782}
+Copying file flash:/feature.bin to chassis1#slot1#flash:/feature.bin\...\...Done.
 
-[Copying file flash:/system.bin to slot2#flash:/system.bin\...\...Done.]{lang="EN-US"}
+Verifying the file flash:/feature.bin on chassis 1 slot 1\.....Done.
 
-[Verifying the file flash:/system.bin on slot 2\.....Done.]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[Copying file flash:/feature.bin to slot2#flash:/feature.bin\...\...Done.]{lang="EN-US"}
+flash:/route-feature.bin
 
-[Verifying the file flash:/feature.bin on slot 2\.....Done.]{lang="EN-US"}
+  Running Version             New Version
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+  None                        Beta 1330
 
-[ ]{lang="EN-US"}
+  Chassis   Slot              Upgrade Way
 
-[flash:/system.bin]{lang="EN-US"}
+  1         1                 Service Upgrade
 
-[  Running Version             New Version]{lang="EN-US"}
+Upgrading software images to compatible versions. Continue? [Y/N:y]
 
-[  Beta 1330                   Beta 1331]{lang="EN-US"}
+This operation maybe take several minutes, please wait\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\.....Done.
 
-[ ]{lang="EN-US"}
+表1-7 install activate命令显示信息描述表
 
-[flash:/feature.bin]{lang="EN-US"}
+字段
 
-[  Running Version             New Version]{lang="EN-US"}
+描述
 
-[  None                        Beta 1330]{lang="EN-US"}
+Copying file *A* to *B*\...\...Done.
 
-[ ]{lang="EN-US"}
+将文件从位置*A*拷贝到位置*B*。当配置备用主控板时才有该提示信息（分布式设备－独立运行模式）
 
-[  Slot                        Upgrade Way]{lang="EN-US"}
+将文件从位置*A*拷贝到位置*B*。当配置从设备时才有该提示信息（集中式IRF设备）
 
-[  2                           Service Upgrade]{lang="EN-US"}
+将文件从位置*A*拷贝到位置*B*。当配置全局备用主控板时才有该提示信息（分布式设备－IRF模式）
 
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+Verifying the file flash:/xx.bin on chassis 1 slot 0\.....Done.
 
-[This operation maybe take several minutes, please wait\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\.....Done.]{lang="EN-US"}
+验证文件是否合法
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_1367133710}[激活成员设备]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[1]{lang="EN-US"}[号单板（全局备用主控板）上的]{style="font-family:
-宋体"}[Feature]{lang="EN-US"}[包]{style="font-family:
-宋体"}[feature.bin]{lang="EN-US"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+Upgrade summary according to following table
 
-[[\<Sysname\> install activate feature flash:/feature.bin chassis 1 slot 1]{lang="EN-US"}]{#struct_0_71526_x1155_1367330319}
+升级摘要信息
 
-[Copying file flash:/feature.bin to chassis1#slot1#flash:/feature.bin\...\...Done.]{lang="EN-US"}
+Running Version
 
-[Verifying the file flash:/feature.bin on chassis 1 slot 1\.....Done.]{lang="EN-US"}
+设备当前运行的相同类型软件包的产品版本号
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+New Version
 
-[ ]{lang="EN-US"}
+目标软件包的产品版本号
 
-[flash:/route-feature.bin]{lang="EN-US"}
+Chassis
 
-[  Running Version             New Version]{lang="EN-US"}
+设备在IRF中的成员编号（分布式设备－IRF模式）
 
-[  None                        Beta 1330]{lang="EN-US"}
+Slot
 
-[ ]{lang="EN-US"}
+单板所在的槽位号（分布式设备－独立运行模式/分布式设备－IRF模式）
 
-[  Chassis   Slot              Upgrade Way]{lang="EN-US"}
+设备在IRF中的成员编号（集中式IRF设备）
 
-[  1         1                 Service Upgrade]{lang="EN-US"}
+Upgrade Way
 
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+兼容升级策略，取值可能为：
 
-[This operation maybe take several minutes, please wait\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\.....Done.]{lang="EN-US"}
+·Service Upgrade：表示服务级增量升级，该方式下，仅对本业务模块有影响，对系统以及其他业务模块没有影响
 
-[[表1-7 ]{lang="EN-US"}[install activate]{lang="EN-US"}]{#struct_0_71526_x1155_1406161904}[命令显示信息描述表]{style="font-family:黑体"}
+·File Upgrade：表示文件级增量升级。该方式下，仅对系统内的、用户不可见的程序文件进行升级，对系统以及业务模块没有影响
 
-[]{#table_struct_0_x1093013206}[[字段]{style="font-family:黑体"}]{#struct_0_71526_x1155_x779773850}
-:::
+·ISSU Reboot：表示通过软重启方式升级
 
-[[描述]{style="font-family:黑体"}]{#struct_0_71526_x1155_1404991295}
+·Reboot：表示通过重启方式升级
 
-[[Copying file *A* to *B*\...\...Done.]{lang="EN-US"}]{#struct_0_71526_x1155_1367133711}
+·Sequence Reboot：表示逐次重启方式。只有网板支持该升级方式，当网板需要重启升级时，为了避免重启升级过程中流量中断，系统会自动升级完毕一块网板后，再自动升级下一块网板，直到所有网板升级完毕后，再自动升级主控板。该字段的支持情况与网板的型号有关，请以设备的实际情况为准
 
-[[将文件从位置]{style="font-family:宋体"}*[A]{lang="EN-US"}*]{#struct_0_71526_x1155_1367068172}[拷贝到位置]{style="font-family:宋体"}*[B]{lang="EN-US"}*[。当配置备用主控板时才有该提示信息（分布式设备－独立运行模式）]{style="font-family:宋体"}
+Influenced service according to following table
 
-[[将文件从位置]{style="font-family:宋体"}*[A]{lang="EN-US"}*]{#struct_0_71526_x1155_1366937100}[拷贝到位置]{style="font-family:宋体"}*[B]{lang="EN-US"}*[。当配置从设备时才有该提示信息（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+将受影响的功能模块
 
-[[将文件从位置]{style="font-family:宋体"}*[A]{lang="EN-US"}*]{#struct_0_71526_x1155_1367330316}[拷贝到位置]{style="font-family:宋体"}*[B]{lang="EN-US"}*[。当配置全局备用主控板时才有该提示信息（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+Upgrading software images to compatible versions. Continue? Y/N
 
-[[Verifying the file flash:/xx.bin on chassis 1 slot 0\.....Done.]{lang="EN-US"}]{#struct_0_71526_x1155_1737880958}
+询问用户是否执行兼容升级操作
 
-[[验证文件是否合法]{style="font-family:宋体"}]{#struct_0_71526_x1155_633017367}
+This operation maybe take several minutes, please wait
 
-[[Upgrade summary according to following table]{lang="EN-US"}]{#struct_0_71526_x1155_1405572080}
+升级操作需要花费一定时间，请等待
 
-[[升级摘要信息]{style="font-family:宋体"}]{#struct_0_71526_x1155_x671860199}
+Done.
 
-[[Running Version]{lang="EN-US"}]{#struct_0_71526_x1155_x2058943733}
+表示激活成功
 
-[[设备当前运行的相同类型软件包的产品版本号]{style="font-family:宋体"}]{#struct_0_71526_x1155_x435831040}
+Operation failed.
 
-[[New Version]{lang="EN-US"}]{#struct_0_71526_x1155_x1224970632}
+表示激活失败
 
-[[目标软件包的产品版本号]{style="font-family:宋体"}]{#struct_0_71526_x1155_1367264780}
+Install command does not support incompatible upgrade.
 
-[[Chassis]{lang="EN-US"}]{#struct_0_71526_x1155_x1313331598}
+不能使用**install**命令来升级不兼容版本
 
-[[设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_1559445355}[中的成员编号（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+【相关命令】
 
-[[Slot]{lang="EN-US"}]{#struct_0_71526_x1155_x822813310}
+·**display install active**
 
-[[单板所在的槽位号（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_71526_x1155_x2035458132}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+·**install commit**
 
-[[设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_1367199244}[中的成员编号（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
-
-[[Upgrade Way]{lang="EN-US"}]{#struct_0_71526_x1155_1810899828}
-
-[[兼容升级策略，取值可能为：]{style="font-family:宋体"}]{#struct_0_71526_x1155_1670067292}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Service Upgrade]{lang="EN-US"}]{#struct_0_71526_x1155_x126649338}[：表示服务级增量升级，该方式下，仅对本业务模块有影响，对系统以及其他业务模块没有影响]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[File Upgrade]{lang="EN-US"}]{#struct_0_71526_x1155_1268783882}[：表示文件级增量升级。该方式下，仅对系统内的、用户不可见的程序文件进行升级，对系统以及业务模块没有影响]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ISSU Reboot]{lang="EN-US"}]{#struct_0_71526_x1155_975155508}[：表示通过软重启方式升级]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Reboot]{lang="EN-US"}]{#struct_0_71526_x1155_1367133708}[：表示通过重启方式升级]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Sequence Reboot]{lang="EN-US"}]{#struct_0_71526_x1155_238268798}[：表示逐次重启方式。只有网板支持该升级方式，当网板需要重启升级时，为了避免重启升级过程中流量中断，系统会自动升级完毕一块网板后，再自动升级下一块网板，直到所有网板升级完毕后，再自动升级主控板。该字段的支持情况与网板的型号有关，请以设备的实际情况为准]{style="font-family:宋体"}
-
-[[Influenced service according to following table]{lang="EN-US"}]{#struct_0_71526_x1155_x1985361668}
-
-[[将受影响的功能模块]{style="font-family:宋体"}]{#struct_0_71526_x1155_x119716057}
-
-[[Upgrading software images to compatible versions. Continue? \[Y/N\]]{lang="EN-US"}]{#struct_0_71526_x1155_1367592460}
-
-[[询问用户是否执行兼容升级操作]{style="font-family:宋体"}]{#struct_0_71526_x1155_218971225}
-
-[[This operation maybe take several minutes, please wait]{lang="EN-US"}]{#struct_0_71526_x1155_x1096318561}
-
-[[升级操作需要花费一定时间，请等待]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1206697426}
-
-[[Done.]{lang="EN-US"}]{#struct_0_71526_x1155_x1094630300}
-
-[[表示激活成功]{style="font-family:宋体"}]{#struct_0_71526_x1155_1366937101}
-
-[[Operation failed.]{lang="EN-US"}]{#struct_0_71526_x1155_x986348830}
-
-[[表示激活失败]{style="font-family:宋体"}]{#struct_0_71526_x1155_1367199245}
-
-[[Install command does not support incompatible upgrade.]{lang="EN-US"}]{#struct_0_71526_x1155_1367133709}
-
-[[不能使用]{style="font-family:宋体"}**[install]{lang="EN-US"}**]{#struct_0_71526_x1155_1367526925}[命令来升级不兼容版本]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1777987895}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display install active]{lang="EN-US"}**]{#struct_0_71526_x1155_x1919696585}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[install commit]{lang="EN-US"}**]{#struct_0_71526_x1155_x1361815179}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[install deactivate]{lang="EN-US"}**]{#struct_0_71526_x1155_x1470228347}
-
-::: {#2133760451 .myid}
-[]{#_Toc404782740}[]{#struct_0_71526_x1155_x1420210178}
+·**install deactivate**
 
 **ISSU \-- ISSU配置命令 \-- install add**
 
 ------------------------------------------------------------------------
 
-[**[install]{lang="EN-US"}**[ **add**]{lang="EN-US"}]{#struct_0_71526_x1155_768951549}[命令用来解压缩]{style="font-family:宋体"}[IPE]{lang="EN-US"}[文件。]{style="font-family:宋体"}
+**[install** **add**]命令用来解压缩IPE文件。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x535124890}
+【命令】
 
-[**[install]{lang="EN-US"}**[ **add** *ipe-filename* *medium-name*:]{lang="EN-US"}]{#struct_0_71526_x1155_x1361880715}
+**[install** **add** *ipe-filename* *medium-name*:]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_872579520}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_651423636}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x378023783}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_581596718}
+network-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1361946251}
+【参数】
 
-[*[ipe-filename]{lang="EN-US"}*]{#struct_0_71526_x1155_x548432525}[：]{style="font-family:宋体"}[IPE]{lang="EN-US"}[文件名，以]{style="font-family:宋体"}[.ipe]{lang="EN-US"}[作为后缀名，从存储介质名开始为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串（包括存储介质名在内），不区分大小写。]{style="font-family:宋体"}
+*[ipe-filename*]：IPE文件名，以.ipe作为后缀名，从存储介质名开始为1～63个字符的字符串（包括存储介质名在内），不区分大小写。
 
-[*[medium-name]{lang="EN-US"}*]{#struct_0_71526_x1155_204875801}[：存储介质的名称，形如]{style="font-family:宋体"}[flash]{lang="EN-US"}[。（集中式设备）]{style="font-family:宋体"}
+*[medium-name*]：存储介质的名称，形如flash。（集中式设备）
 
-[*[medium-name]{lang="EN-US"}*]{#struct_0_71526_x1155_637918221}[：存储介质的名称。如果是解压缩到主用主控板上，则为]{style="font-family:宋体"}[flash]{lang="EN-US"}[；如果是解压缩到备用主控板上，则为]{style="font-family:宋体"}[slot*n*#flash]{lang="EN-US"}[，]{style="font-family:宋体"}*[n]{lang="EN-US"}*[为备用主控板所在的槽位号；如果是解压缩到本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备上，则为]{style="font-family:宋体"}[slot*n*#flash]{lang="EN-US"}[，]{style="font-family:宋体"}*[n]{lang="EN-US"}*[为]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的虚拟槽位号；如果是解压缩到安全引擎上，则为]{style="font-family:宋体"}[slot*n*.*x*#flash]{lang="EN-US"}[，]{style="font-family:宋体"}*[n]{lang="EN-US"}*[为防火墙插卡所在的槽位号，]{style="font-family:宋体"}*[x]{lang="EN-US"}*[为安全引擎的]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+*[medium-name*]：存储介质的名称。如果是解压缩到主用主控板上，则为flash；如果是解压缩到备用主控板上，则为slot*n*#flash，*n*为备用主控板所在的槽位号；如果是解压缩到本地有存储介质的PEX设备上，则为slot*n*#flash，*n*为PEX设备的虚拟槽位号；如果是解压缩到安全引擎上，则为slot*n*.*x*#flash，*n*为防火墙插卡所在的槽位号，*x*为安全引擎的CPU编号。（分布式设备－独立运行模式）
 
-[*[medium-name]{lang="EN-US"}*]{#struct_0_71526_x1155_x1025834922}[：存储介质的名称。如果是解压缩到主设备上，则为]{style="font-family:宋体"}[flash]{lang="EN-US"}[；如果是解压缩到从设备上，则为]{style="font-family:宋体"}[slot*n*#flash]{lang="EN-US"}[，]{style="font-family:宋体"}*[n]{lang="EN-US"}*[为从设备的成员编号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+*[medium-name*]：存储介质的名称。如果是解压缩到主设备上，则为flash；如果是解压缩到从设备上，则为slot*n*#flash，*n*为从设备的成员编号。（集中式IRF设备）
 
-[*[medium-name]{lang="EN-US"}*]{#struct_0_71526_x1155_242787960}[：存储介质的名称。如果是解压缩到全局主用主控板上，则为]{style="font-family:宋体"}[flash]{lang="EN-US"}[；如果是解压缩到全局备用主控板上，则为]{style="font-family:宋体"}[chassis*m*#slot*n*#flash]{lang="EN-US"}[，]{style="font-family:
-宋体"}*[m]{lang="EN-US"}*[为设备的成员编号，]{style="font-family:宋体"}*[n]{lang="EN-US"}*[为成员设备上主控板所在的槽位号；如果是解压缩到本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备上，则为]{style="font-family:宋体"}[chassis*m*#slot*n*#flash]{lang="EN-US"}[，]{style="font-family:
-宋体"}*[m]{lang="EN-US"}*[为设备的成员编号，]{style="font-family:宋体"}*[n]{lang="EN-US"}*[为]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的虚拟槽位号；如果是解压缩到安全引擎上，则为]{style="font-family:宋体"}[chassis*m*#slot*n.x*#flash]{lang="EN-US"}[，]{style="font-family:宋体"}*[m]{lang="EN-US"}*[为防火墙插卡所在设备的成员编号，]{style="font-family:宋体"}*[n]{lang="EN-US"}*[为防火墙插卡所在的槽位号，]{style="font-family:宋体"}*[x]{lang="EN-US"}*[为安全引擎的]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+*[medium-name*]：存储介质的名称。如果是解压缩到全局主用主控板上，则为flash；如果是解压缩到全局备用主控板上，则为chassis*m*#slot*n*#flash，*m*为设备的成员编号，*n*为成员设备上主控板所在的槽位号；如果是解压缩到本地有存储介质的PEX设备上，则为chassis*m*#slot*n*#flash，*m*为设备的成员编号，*n*为PEX设备的虚拟槽位号；如果是解压缩到安全引擎上，则为chassis*m*#slot*n.x*#flash，*m*为防火墙插卡所在设备的成员编号，*n*为防火墙插卡所在的槽位号，*x*为安全引擎的CPU编号。（分布式设备－IRF模式）
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1879425078}
+【使用指导】
 
-[[IPE]{lang="EN-US"}]{#struct_0_71526_x1155_2147081581}[文件是多个软件包的集合。将多个软件包整合成一个]{style="font-family:宋体"}[IPE]{lang="EN-US"}[文件对外发布，以便减少]{style="font-family:宋体"}[BIN]{lang="EN-US"}[包之间的版本管理问题。]{style="font-family:宋体"}
+IPE文件是多个软件包的集合。将多个软件包整合成一个IPE文件对外发布，以便减少BIN包之间的版本管理问题。
 
-[[用户获取]{style="font-family:宋体"}[IPE]{lang="EN-US"}]{#struct_0_71526_x1155_x124212248}[文件后，可以使用]{style="font-family:宋体"}**[display install ipe-info]{lang="EN-US"}**[命令查看该]{style="font-family:宋体"}[IPE]{lang="EN-US"}[文件中包含了哪些软件包，可以通过]{style="font-family:宋体"}**[install add]{lang="EN-US"}**[命令将]{style="font-family:宋体"}[IPE]{lang="EN-US"}[文件解压生成软件包，再利用生成的软件包更新设备软件。]{style="font-family:宋体"}
+用户获取IPE文件后，可以使用**display install ipe-info**命令查看该IPE文件中包含了哪些软件包，可以通过**install add**命令将IPE文件解压生成软件包，再利用生成的软件包更新设备软件。
 
-[[当配置该命令时，命令中指定的]{style="font-family:宋体"}[IPE]{lang="EN-US"}]{#struct_0_71526_x1155_x1362011787}[文件必须放在设备存储介质主分区的根目录下，文件名中必须包含存储介质的名称，形如]{style="font-family:宋体"}[flash:/xx.ipe]{lang="EN-US"}[。（集中式设备）]{style="font-family:宋体"}
+当配置该命令时，命令中指定的IPE文件必须放在设备存储介质主分区的根目录下，文件名中必须包含存储介质的名称，形如flash:/xx.ipe。（集中式设备）
 
-[[当配置该命令时，命令中指定的]{style="font-family:宋体"}[IPE]{lang="EN-US"}]{#struct_0_71526_x1155_x1368426280}[文件必须放在存储介质主分区的根目录下，文件名中必须包含存储介质的名称，形如]{style="font-family:宋体"}[flash:/xx.ipe]{lang="EN-US"}[或]{style="font-family:宋体"}[slot1#flash:/xx.ipe]{lang="EN-US"}[。（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+当配置该命令时，命令中指定的IPE文件必须放在存储介质主分区的根目录下，文件名中必须包含存储介质的名称，形如flash:/xx.ipe或slot1#flash:/xx.ipe。（分布式设备－独立运行模式/集中式IRF设备）
 
-[[当配置该命令时，命令中指定的]{style="font-family:宋体"}[IPE]{lang="EN-US"}]{#struct_0_71526_x1155_x59984024}[文件必须放在存储介质主分区的根目录下，文件名中必须包含存储介质的名称，形如]{style="font-family:宋体"}[flash:/xx.ipe]{lang="EN-US"}[或]{style="font-family:宋体"}[chassis1#slot1#flash:/xx.ipe]{lang="EN-US"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+当配置该命令时，命令中指定的IPE文件必须放在存储介质主分区的根目录下，文件名中必须包含存储介质的名称，形如flash:/xx.ipe或chassis1#slot1#flash:/xx.ipe。（分布式设备－IRF模式）
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1095771812}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1361553035}[解压缩]{style="font-family:宋体"}[all.ipe]{lang="EN-US"}[文件到存储介质]{style="font-family:宋体"}[flash]{lang="EN-US"}[上。]{style="font-family:宋体"}
+\# 解压缩all.ipe文件到存储介质flash上。
 
-[[\<Sysname\> install add flash:/all.ipe flash:]{lang="EN-US"}]{#struct_0_71526_x1155_x1361618571}
+\<Sysname\> install add flash:/all.ipe flash:
 
-[Verifying the file flash:/all.ipe on the device\...Done.]{lang="EN-US"}
+Verifying the file flash:/all.ipe on the device\...Done.
 
-[Decompressing file boot.bin to flash:/boot.bin\...\...\...\...\...\...\.....Done.]{lang="EN-US"}
+Decompressing file boot.bin to flash:/boot.bin\...\...\...\...\...\...\.....Done.
 
-[[Decompressing file system.bin to flash:/system.bin\...\...\...\...\...\...\...\...\...\...\...Done.]{lang="EN-US"}]{#struct_0_71526_x1155_x1361749643}
-:::
-
-::: {#609558226 .myid}
-[]{#_Toc404782741}[]{#struct_0_71526_x1155_x1927512411}
+Decompressing file system.bin to flash:/system.bin\...\...\...\...\...\...\...\...\...\...\...Done.
 
 **ISSU \-- ISSU配置命令 \-- install commit**
 
 ------------------------------------------------------------------------
 
-[**[install commit]{lang="EN-US"}**]{#struct_0_71526_x1155_1186169503}[命令用来确认软件包更改。]{style="font-family:宋体"}
+**[install commit**]命令用来确认软件包更改。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x515750122}
+【命令】
 
-[**[install commit]{lang="EN-US"}**]{#struct_0_71526_x1155_x753413443}
+**[install commit**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1769051323}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1361290891}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1317169612}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_x1522125500}
+network-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x829049859}
+【使用指导】
 
-[[执行]{style="font-family:宋体"}**[install activate]{lang="EN-US"}**]{#struct_0_71526_x1155_x2129520158}[、]{style="font-family:宋体"}**[install deactivate]{lang="EN-US"}**[、]{style="font-family:宋体"}**[install rollback]{lang="EN-US"}**[命令会修改设备当前运行的软件包列表，使得只有符合用户需求的软件运行，不符合要求的不运行。]{style="font-family:宋体"}
+执行**install activate**、**install deactivate**、**install rollback**命令会修改设备当前运行的软件包列表，使得只有符合用户需求的软件运行，不符合要求的不运行。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当执行]{style="font-family:宋体"}]{#struct_0_71526_x1155_641612918}**[install activate]{lang="EN-US"}**[命令，且为增量升级方式时，这些修改只在设备的本次运行过程有效，要使这个修改结果在设备下次重启后继续生效，需要再执行]{style="font-family:宋体"}**[install commit]{lang="EN-US"}**[命令进行确认，确认后的软件包会列入设备主用下次启动软件包列表。]{style="font-family:宋体"}
+·当执行**install activate**命令，且为增量升级方式时，这些修改只在设备的本次运行过程有效，要使这个修改结果在设备下次重启后继续生效，需要再执行**install commit**命令进行确认，确认后的软件包会列入设备主用下次启动软件包列表。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当执行]{lang="EN-US" style="font-family:宋体"}**[install activate]{lang="EN-US"}**]{#struct_0_71526_x1155_1234900868}[命令，且为软重启或重启升级方式时，因为用户在执行]{lang="EN-US" style="font-family:
-宋体"}**[install activate]{lang="EN-US"}**[命令时，系统已经修改了下次启动软件列表，所以，即便不再执行]{lang="EN-US" style="font-family:宋体"}**[install]{lang="EN-US"}**[ **commit**]{lang="EN-US"}[命令，升级软件包也会在系统重启后继续生效。]{lang="EN-US" style="font-family:宋体"}
+·当执行**install activate**命令，且为软重启或重启升级方式时，因为用户在执行**install activate**命令时，系统已经修改了下次启动软件列表，所以，即便不再执行**install** **commit**命令，升级软件包也会在系统重启后继续生效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当执行]{style="font-family:宋体"}**[install deactivate]{lang="EN-US"}**]{#struct_0_71526_x1155_x660859914}[或]{style="font-family:宋体"}**[install rollback]{lang="EN-US"}**[命令]{lang="EN-US" style="font-family:宋体"}[，]{style="font-family:宋体"}[这些修改只在设备的本次运行过程有效，要使这个修改结果在设备下次重启后继续生效，需要再执行]{lang="EN-US" style="font-family:宋体"}**[install commit]{lang="EN-US"}**[命令进行确认]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}
+·当执行**install deactivate**或**install rollback**命令，这些修改只在设备的本次运行过程有效，要使这个修改结果在设备下次重启后继续生效，需要再执行**install commit**命令进行确认。
 
-[**[boot-loader file]{lang="EN-US"}**]{#struct_0_71526_x1155_1368191371}[命令和]{style="font-family:宋体"}**[install commit]{lang="EN-US"}**[命令都可以变更主用下次启动软件包列表，最新的配置生效。两条命令的不同之处在于，]{style="font-family:宋体"}**[install commit]{lang="EN-US"}**[命令自动使用当前激活的软件包列表作为主用下次启动软件包列表。而]{style="font-family:宋体"}**[boot-loader file]{lang="EN-US"}**[命令还可以指定其它当前未激活的软件包，可以配置为主用或者备用下次启动软件包列表。]{style="font-family:宋体"}
+**[boot-loader file**]命令和**install commit**命令都可以变更主用下次启动软件包列表，最新的配置生效。两条命令的不同之处在于，**install commit**命令自动使用当前激活的软件包列表作为主用下次启动软件包列表。而**boot-loader file**命令还可以指定其它当前未激活的软件包，可以配置为主用或者备用下次启动软件包列表。
 
-[[请先查看软件包版本发布说明书，如果某软件包需要]{style="font-family:宋体"}[License]{lang="EN-US"}]{#struct_0_71526_x1155_x1361356427}[才能运行，且设备当前没有对应的有效的]{style="font-family:宋体"}[License]{lang="EN-US"}[时，需安装对应的]{style="font-family:宋体"}[License]{lang="EN-US"}[，再执行该命令。否则，会导致命令执行失败。]{style="font-family:宋体"}
+请先查看软件包版本发布说明书，如果某软件包需要License才能运行，且设备当前没有对应的有效的License时，需安装对应的License，再执行该命令。否则，会导致命令执行失败。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1831095242}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x792931101}[确认软件包更改。]{style="font-family:宋体"}
+\# 确认软件包更改。
 
-[[\<Sysname\> install commit]{lang="EN-US"}]{#struct_0_71526_x1155_x1753435666}
+\<Sysname\> install commit
 
-[This operation will take several minutes, please wait\...\...\...\...\...\...\...\...\...Done.]{lang="EN-US"}
+This operation will take several minutes, please wait\...\...\...\...\...\...\...\...\...Done.
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x345785687}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[install activate]{lang="EN-US"}**]{#struct_0_71526_x1155_1390392232}
+·**install activate**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[install deactivate]{lang="EN-US"}**]{#struct_0_71526_x1155_1393389469}
+·**install deactivate**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[install rollback]{lang="EN-US"}**]{#struct_0_71526_x1155_1674854235}
-:::
-
-::: {#-1693286687 .myid}
-[]{#_Toc404782742}[]{#struct_0_71526_x1155_x1361815178}[]{#_Toc304800180}[]{#_Toc304813450}[]{#_Toc304800181}[]{#_Toc304813451}[]{#_Toc304800183}[]{#_Toc304813453}[]{#_Toc304800187}[]{#_Toc304813457}[]{#_Toc304800193}[]{#_Toc304813463}[]{#_Toc304800195}[]{#_Toc304813465}[]{#_Toc304800196}[]{#_Toc304813466}[]{#_Toc304800200}[]{#_Toc304813470}[]{#_Toc304800206}[]{#_Toc304813476}[]{#_Toc304800207}[]{#_Toc304813477}[]{#_Toc304800208}[]{#_Toc304813478}[]{#_Toc304800209}[]{#_Toc304813479}[]{#_Toc304800220}[]{#_Toc304813490}[]{#_Toc304800221}[]{#_Toc304813491}[]{#_Toc304800222}[]{#_Toc304813492}[]{#_Toc304800224}[]{#_Toc304813494}[]{#_Toc304800225}[]{#_Toc304813495}[]{#_Toc304800227}[]{#_Toc304813497}[]{#_Toc304800228}[]{#_Toc304813498}[]{#_Toc304800230}[]{#_Toc304813500}[]{#_Toc304800231}[]{#_Toc304813501}[]{#_Toc304800232}[]{#_Toc304813502}[]{#_Toc304800233}[]{#_Toc304813503}
+·**install rollback**
 
 **ISSU \-- ISSU配置命令 \-- install deactivate**
 
 ------------------------------------------------------------------------
 
-[**[install deactivate]{lang="EN-US"}**]{#struct_0_71526_x1155_95855594}[命令用来卸载]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包或补丁包。]{style="font-family:宋体"}
+**[install deactivate**]命令用来卸载Feature包或补丁包。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1753430109}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1741216628}
+集中式设备：
 
-[**[install deactivate]{lang="EN-US"}**[ **feature** *filename*&\<1-30\>]{lang="EN-US"}]{#struct_0_71526_x1155_384781492}
+**[install deactivate** **feature** *filename*&\<1-30\>]
 
-[**[install deactivate patch ]{lang="EN-US"}***[filename]{lang="EN-US"}*]{#struct_0_71526_x1155_2138072958}
+**[install deactivate patch ***filename*]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_71526_x1155_x1901465131}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[install deactivate]{lang="EN-US"}**[ **feature** *filename*&\<1-30\> **slot** *slot-number* \[ ]{lang="EN-US"}]{#struct_0_71526_x1155_x515565947}**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}*[cpu-number]{lang="EN-US"}*[ \]]{lang="EN-US"}
+**[install deactivate** **feature** *filename*&\<1-30\> **slot** *slot-number* **cpu***cpu-number* ]
 
-[**[install deactivate patch ]{lang="EN-US"}***[filename]{lang="EN-US"}***[ ]{lang="EN-US"}**[{ **all** \| **slot** *slot-number* \[ ]{lang="EN-US"}]{#struct_0_71526_x1155_1619406930}**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}*[cpu-number]{lang="EN-US"}*[ \] }]{lang="EN-US"}
+**[install deactivate patch ***filename*******cpu***cpu-number*  }]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_x1361880714}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[install deactivate]{lang="EN-US"}**[ **feature** *filename*&\<1-30\> **chassis** *chassis-number* **slot** *slot-number* \[ ]{lang="EN-US"}]{#struct_0_71526_x1155_x693504421}**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}*[cpu-number]{lang="EN-US"}*[ \]]{lang="EN-US"}
+**[install deactivate** **feature** *filename*&\<1-30\> **chassis** *chassis-number* **slot** *slot-number* **cpu***cpu-number* ]
 
-[**[install]{lang="EN-US"}**[ **deactivate patch** *filename* { **all** \| **chassis** *chassis-number* **slot** *slot-number* \[ ]{lang="EN-US"}]{#struct_0_71526_x1155_x1563428749}**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}*[cpu-number]{lang="EN-US"}*[ \] }]{lang="EN-US"}
+**[install** **deactivate patch** *filename* **cpu***cpu-number*  }]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x24768654}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1982704142}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_728906749}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_x1418937404}
+network-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x332485200}
+【参数】
 
-[*[filename]{lang="EN-US"}*]{#struct_0_71526_x1155_x3040372}[：表示需要卸载]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包或补丁包的文件名，以]{style="font-family:宋体"}[.bin]{lang="EN-US"}[作为后缀名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}[&\<1-30\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[30]{lang="EN-US"}[次。]{style="font-family:宋体"}
+*[filename*]：表示需要卸载Feature包或补丁包的文件名，以.bin作为后缀名，为1～63个字符的字符串，不区分大小写。&\<1-30\>表示前面的参数最多可以输入30次。
 
-[**[all]{lang="EN-US"}**]{#struct_0_71526_x1155_1351355382}[：表示安装了该补丁包的所有单板。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[all**]：表示安装了该补丁包的所有单板。（分布式设备－独立运行模式）
 
-[**[all]{lang="EN-US"}**]{#struct_0_71526_x1155_x2088313307}[：表示安装了该补丁包的所有成员设备。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**[all**]：表示安装了该补丁包的所有成员设备。（集中式IRF设备）
 
-[**[all]{lang="EN-US"}**]{#struct_0_71526_x1155_773686988}[：表示安装了该补丁包的所有成员设备或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[all**]：表示安装了该补丁包的所有成员设备或者PEX。（集中式IRF设备）（支持IRF3的设备）
 
-[**[all]{lang="EN-US"}**]{#struct_0_71526_x1155_x214728559}[：表示安装了该补丁包的所有单板。（分布式设备－独立运行模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[all**]：表示安装了该补丁包的所有单板。（分布式设备－独立运行模式）（不支持IRF3的设备）
 
-[**[all]{lang="EN-US"}**]{#struct_0_71526_x1155_319649685}[：表示安装了该补丁包的所有单板或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[。（分布式设备－独立运行模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[all**]：表示安装了该补丁包的所有单板或者PEX。（分布式设备－独立运行模式）（支持IRF3的设备）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_x1361946250}[：]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[取值为]{style="font-family:宋体"}[0]{lang="EN-US"}[，无特殊意义。（集中式设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：*slot-number*取值为0，无特殊意义。（集中式设备）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_x2114516466}[：表示单板所在的槽位号。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示单板所在的槽位号。（分布式设备－独立运行模式）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_1954471105}[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示设备在IRF中的成员编号。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_x777831960}[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示设备在IRF中的成员编号或者PEX的虚拟槽位号。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*[ **slot** *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_624340978}[：]{style="font-family:
-宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number* **slot** *slot-number*]：*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*[ **slot** *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_1606979173}[：]{style="font-family:
-宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[所在的槽位号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number* **slot** *slot-number*]：*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板/PEX所在的槽位号。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_71526_x1155_x957442147}*[cpu-number]{lang="EN-US"}*[：表示安全引擎的]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号。本参数专用于卸载防火墙插卡上安全引擎的]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包或补丁包，卸载其它单板以及防火墙插卡上其它]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包或补丁包时，不需要指定该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**[cpu**]*cpu-number*：表示安全引擎的CPU编号。本参数专用于卸载防火墙插卡上安全引擎的Feature包或补丁包，卸载其它单板以及防火墙插卡上其它CPU的Feature包或补丁包时，不需要指定该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。（分布式设备－独立运行模式/分布式设备－IRF模式）
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_924598088}
+【使用指导】
 
-[[该命令只能对已经激活的软件包进行卸载操作。卸载的软件包的特性功能在本次系统运行中失效。如果要使卸载的软件包在设备重启后继续失效，请执行]{style="font-family:宋体"}**[install commit]{lang="EN-US"}**]{#struct_0_71526_x1155_x1483054401}[命令对卸载操作进行确认。]{style="font-family:宋体"}
+该命令只能对已经激活的软件包进行卸载操作。卸载的软件包的特性功能在本次系统运行中失效。如果要使卸载的软件包在设备重启后继续失效，请执行**install commit**命令对卸载操作进行确认。
 
-[[当配置该命令时，文件名中必须包含存储介质的名称，形如]{style="font-family:宋体"}[flash:/xx.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x589480180}[。（集中式设备）]{style="font-family:宋体"}
+当配置该命令时，文件名中必须包含存储介质的名称，形如flash:/xx.bin。（集中式设备）
 
-[[当配置该命令时，文件名中必须且只能包含存储介质的名称，不能包含]{style="font-family:宋体"}[slot]{lang="EN-US"}]{#struct_0_71526_x1155_1336689905}[的信息，形如]{style="font-family:宋体"}[flash:/xx.bin]{lang="EN-US"}[。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+当配置该命令时，文件名中必须且只能包含存储介质的名称，不能包含slot的信息，形如flash:/xx.bin。（分布式设备－独立运行模式）
 
-[[当配置该命令时，文件名中必须且只能包含存储介质的名称，不能包含]{style="font-family:宋体"}[slot]{lang="EN-US"}]{#struct_0_71526_x1155_x653310698}[的信息，形如]{style="font-family:宋体"}[flash:/xx.bin]{lang="EN-US"}[。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+当配置该命令时，文件名中必须且只能包含存储介质的名称，不能包含slot的信息，形如flash:/xx.bin。（集中式IRF设备）
 
-[[当配置该命令时，文件名中必须且只能包含存储介质的名称，不能包含]{style="font-family:宋体"}[chassis]{lang="EN-US"}]{#struct_0_71526_x1155_x1362011786}[和]{style="font-family:宋体"}[slot]{lang="EN-US"}[的信息，形如]{style="font-family:宋体"}[flash:/xx.bin]{lang="EN-US"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+当配置该命令时，文件名中必须且只能包含存储介质的名称，不能包含chassis和slot的信息，形如flash:/xx.bin。（分布式设备－IRF模式）
 
-[[从设备重启后，会自动批量备份主设备的配置和状态数据。请等待批量备份完成后，即分别通过]{style="font-family:宋体"}**[display device]{lang="EN-US"}**]{#struct_0_71526_x1155_197657661}[[、]{style="font-family:宋体"}]{.ItemListCharChar}**[display mdc]{lang="EN-US"}**[和]{style="font-family:宋体"}**[display system internal ha service-group]{lang="EN-US"}**[[命令]{style="font-family:
-宋体"}]{.ItemListCharChar}[查看到所有单板处于]{style="font-family:宋体"}[normal]{lang="EN-US"}[状态、所有]{style="font-family:宋体"}[MDC]{lang="EN-US"}[处于]{style="font-family:宋体"}[active]{lang="EN-US"}[状态和所有服务的]{style="font-family:宋体"}[action]{lang="EN-US"}[显示为]{style="font-family:宋体"}[0]{lang="EN-US"}[后，再执行]{style="font-family:宋体"}**[install deactivate]{lang="EN-US"}**[命令，否则，命令会执行失败。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[/]{lang="EN-US"}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+从设备重启后，会自动批量备份主设备的配置和状态数据。请等待批量备份完成后，即分别通过**display device**、{.ItemListCharChar}**display mdc**和**display system internal ha service-group**命令{.ItemListCharChar}查看到所有单板处于normal状态、所有MDC处于active状态和所有服务的action显示为0后，再执行**install deactivate**命令，否则，命令会执行失败。（集中式IRF设备/分布式设备－IRF模式）
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1337651207}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1397841858}[卸载设备上的]{style="font-family:宋体"}[patch]{lang="EN-US"}[包]{style="font-family:宋体"}[route-patch.bin]{lang="EN-US"}[。（集中式设备）]{style="font-family:宋体"}
+\# 卸载设备上的patch包route-patch.bin。（集中式设备）
 
-[[\<Sysname\> install deactivate patch flash:/route-patch.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x884196613}
+\<Sysname\> install deactivate patch flash:/route-patch.bin
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_313798046}[卸载]{style="font-family:宋体"}[0]{lang="EN-US"}[号单板上的]{style="font-family:宋体"}[patch]{lang="EN-US"}[包]{style="font-family:宋体"}[route-patch.bin]{lang="EN-US"}[。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+\# 卸载0号单板上的patch包route-patch.bin。（分布式设备－独立运行模式）
 
-[[\<Sysname\> install deactivate patch flash:/route-patch.bin slot 0]{lang="EN-US"}]{#struct_0_71526_x1155_1068632952}
+\<Sysname\> install deactivate patch flash:/route-patch.bin slot 0
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_738344123}[卸载成员设备]{style="font-family:宋体"}[1]{lang="EN-US"}[上的]{style="font-family:宋体"}[patch]{lang="EN-US"}[包]{style="font-family:宋体"}[route-patch.bin]{lang="EN-US"}[。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\# 卸载成员设备1上的patch包route-patch.bin。（集中式IRF设备）
 
-[[\<Sysname\> install deactivate patch flash:/route-patch.bin slot 1]{lang="EN-US"}]{#struct_0_71526_x1155_x1361553034}
+\<Sysname\> install deactivate patch flash:/route-patch.bin slot 1
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1038920087}[卸载成员设备]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[0]{lang="EN-US"}[号槽位的单板上的]{style="font-family:
-宋体"}[feature]{lang="EN-US"}[包]{style="font-family:
-宋体"}[route-feature.bin]{lang="EN-US"}[。（分布式设备－]{style="font-family:
-宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\# 卸载成员设备1的0号槽位的单板上的feature包route-feature.bin。（分布式设备－IRF模式）
 
-[[\<Sysname\> install deactivate feature flash:/route-feature.bin chassis 1 slot 0]{lang="EN-US"}]{#struct_0_71526_x1155_x1338637380}
+\<Sysname\> install deactivate feature flash:/route-feature.bin chassis 1 slot 0
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x957638755}[卸载安全引擎上的]{style="font-family:宋体"}[feature]{lang="EN-US"}[包]{style="font-family:宋体"}[flash:/issu.bin]{lang="EN-US"}[，安全引擎所在槽位号为]{style="font-family:宋体"}[7]{lang="EN-US"}[，]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号为]{style="font-family:宋体"}[1]{lang="EN-US"}[。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+\# 卸载安全引擎上的feature包flash:/issu.bin，安全引擎所在槽位号为7，CPU编号为1。（分布式设备－独立运行模式）
 
-[[\<Sysname\> install deactivate feature flash:/issu.bin slot 7 cpu 1]{lang="EN-US"}]{#struct_0_71526_x1155_x1056008282}
+\<Sysname\> install deactivate feature flash:/issu.bin slot 7 cpu 1
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x957573219}[卸载安全引擎上的]{style="font-family:宋体"}[feature]{lang="EN-US"}[包]{style="font-family:宋体"}[flash:/issu.bin]{lang="EN-US"}[，安全引擎所在设备的成员编号为]{style="font-family:宋体"}[1]{lang="EN-US"}[，槽位号为]{style="font-family:宋体"}[7]{lang="EN-US"}[，]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号为]{style="font-family:宋体"}[1]{lang="EN-US"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\# 卸载安全引擎上的feature包flash:/issu.bin，安全引擎所在设备的成员编号为1，槽位号为7，CPU编号为1。（分布式设备－IRF模式）
 
-[[\<Sysname\> install deactivate feature flash:/issu.bin chassis 1 slot 7 cpu 1]{lang="EN-US"}]{#struct_0_71526_x1155_2087031962}
+\<Sysname\> install deactivate feature flash:/issu.bin chassis 1 slot 7 cpu 1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1892476196}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display install active]{lang="EN-US"}**]{#struct_0_71526_x1155_x1017429658}
+·**display install active**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display install inactive]{lang="EN-US"}**]{#struct_0_71526_x1155_1556165526}
-:::
-
-::: {#1020271610 .myid}
-[]{#_Toc404782743}[]{#struct_0_71526_x1155_x1436361236}
+·**display install inactive**
 
 **ISSU \-- ISSU配置命令 \-- install remove**
 
 ------------------------------------------------------------------------
 
-[**[install remove]{lang="EN-US"}**]{#struct_0_71526_x1155_656110995}[命令用来删除指定的软件包。]{style="font-family:宋体"}
+**[install remove**]命令用来删除指定的软件包。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1692796333}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1361618570}
+集中式设备：
 
-[**[install remove]{lang="EN-US"}**[ { *filename \|* **inactive** }]{lang="EN-US"}]{#struct_0_71526_x1155_x2089072450}
+**[install remove**[ { *filename \|* **inactive** }]]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}*[/]{lang="EN-US"}*]{#struct_0_71526_x1155_1382669733}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式*/*集中式IRF设备：
 
-[**[install remove ]{lang="EN-US"}**[\[ **slot** *slot-number* \[ ]{lang="EN-US"}]{#struct_0_71526_x1155_1962297072}**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}*[cpu-number]{lang="EN-US"}*[ \] \] { *filename \|* **inactive** }]{lang="EN-US"}
+**[install remove ** **slot** *slot-number* ]**cpu***cpu-number*   { *filename \|* **inactive** }
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_1102808140}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[install remove ]{lang="EN-US"}**[\[ **chassis** *chassis-number* **slot** *slot-number* \[ ]{lang="EN-US"}]{#struct_0_71526_x1155_x2087532610}**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}*[cpu-number]{lang="EN-US"}*[ \] \] { *filename \|* **inactive** }]{lang="EN-US"}
+**[install remove ** **chassis** *chassis-number* **slot** *slot-number* ]**cpu***cpu-number*   { *filename \|* **inactive** }
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1936506233}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_784673601}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_996240874}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_x1361684106}
+network-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x53354601}
+【参数】
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_x124585668}[：表示单板所在的槽位号。不指定该参数时，表示设备上的所有单板。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示单板所在的槽位号。不指定该参数时，表示设备上的所有单板。（分布式设备－独立运行模式）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_266838890}[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有成员设备。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示设备在IRF中的成员编号。不指定该参数时，表示IRF中的所有成员设备。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_x1330473806}[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有成员设备和本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示设备在IRF中的成员编号或者本地有存储介质的PEX的虚拟槽位号。不指定该参数时，表示IRF中的所有成员设备和本地有存储介质的PEX。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*[ **slot** *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_x1222860337}[：]{style="font-family:
-宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有单板。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number* **slot** *slot-number*]：*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。不指定该参数时，表示IRF中的所有单板。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*[ **slot** *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_1826085521}[：]{style="font-family:
-宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板]{style="font-family:宋体"}[/]{lang="EN-US"}[本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有单板和本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number* **slot** *slot-number*]：*chassis-number*表示设备在IRF中的成员编号或者本地有存储介质的PEX对应的虚拟框号，*slot-number*表示单板/本地有存储介质的PEX所在的槽位号。不指定该参数时，表示IRF中的所有单板和本地有存储介质的PEX。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_71526_x1155_x958228579}*[cpu-number]{lang="EN-US"}*[：表示安全引擎的]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号。本参数专用于删除安全引擎上的指定软件包，操作其它单板以及防火墙插卡上其它]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，不需要指定该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**[cpu**]*cpu-number*：表示安全引擎的CPU编号。本参数专用于删除安全引擎上的指定软件包，操作其它单板以及防火墙插卡上其它CPU时，不需要指定该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。（分布式设备－独立运行模式/分布式设备－IRF模式）
 
-[*[filename]{lang="EN-US"}*]{#struct_0_71526_x1155_x192725283}[：表示软件包的文件名，以]{style="font-family:宋体"}[.bin]{lang="EN-US"}[作为后缀名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+*[filename*]：表示软件包的文件名，以.bin作为后缀名，为1～63个字符的字符串，不区分大小写。
 
-[**[inactive]{lang="EN-US"}**]{#struct_0_71526_x1155_x940669919}[：表示将删除指定存储介质根目录下、没有被激活的所有软件包。]{style="font-family:宋体"}
+**[inactive**]：表示将删除指定存储介质根目录下、没有被激活的所有软件包。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1228723454}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[该命令只能删除存储介质根目录下、没有被激活的软件包。]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1361749642}
+·该命令只能删除存储介质根目录下、没有被激活的软件包。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当配置该命令时，命令中指定的软件包必须放在存储介质的根目录下，文件名中必须且只能包含存储介质的名称，不能包含]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1664120774}[chassis]{lang="EN-US"}[和]{style="font-family:宋体"}[slot]{lang="EN-US"}[的信息，形如]{style="font-family:宋体"}[flash:/xx.bin]{lang="EN-US"}[。（]{style="font-family:宋体"}[分布式设]{lang="EN-US" style="font-family:宋体"}[备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+·当配置该命令时，命令中指定的软件包必须放在存储介质的根目录下，文件名中必须且只能包含存储介质的名称，不能包含chassis和slot的信息，形如flash:/xx.bin。（分布式设备－IRF模式）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[执行该命令后，指定的软件包将从设备上被彻底删除，用户将不能使用该软件包进行回滚或回退操作。]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1706001185}
+·执行该命令后，指定的软件包将从设备上被彻底删除，用户将不能使用该软件包进行回滚或回退操作。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_2083550656}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x862360809}[删除软件包]{style="font-family:宋体"}[flash:/ssh-feature.bin]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 删除软件包flash:/ssh-feature.bin。
 
-[[\<Sysname\> install remove flash:/ssh-feature.bin]{lang="EN-US"}]{#struct_0_71526_x1155_2124947683}
-:::
-
-::: {#1461171130 .myid}
-[]{#_Toc404782744}[]{#struct_0_71526_x1155_x1361290890}[]{#_Toc304800236}[]{#_Toc304813506}[]{#_Toc304800238}[]{#_Toc304813508}[]{#_Toc304800239}[]{#_Toc304813509}[]{#_Toc304800240}[]{#_Toc304813510}[]{#_Toc304800241}[]{#_Toc304813511}[]{#_Toc304800242}[]{#_Toc304813512}[]{#_Toc304800243}[]{#_Toc304813513}[]{#_Toc304800244}[]{#_Toc304813514}[]{#_Toc304800245}[]{#_Toc304813515}[]{#_Toc304800246}[]{#_Toc304813516}[]{#_Toc304800247}[]{#_Toc304813517}[]{#_Toc304800248}[]{#_Toc304813518}[]{#_Toc304800249}[]{#_Toc304813519}[]{#_Toc304800250}[]{#_Toc304813520}[]{#_Toc299981194}[]{#_Toc299981196}[]{#_Toc299981197}
+\<Sysname\> install remove flash:/ssh-feature.bin
 
 **ISSU \-- ISSU配置命令 \-- install rollback to**
 
 ------------------------------------------------------------------------
 
-[**[install rollback to]{lang="EN-US"}**]{#struct_0_71526_x1155_x1411713743}[命令用来回滚到指定的回滚点，即按回滚点上记录的信息，进行回滚操作。]{style="font-family:宋体"}
+**[install rollback to**]命令用来回滚到指定的回滚点，即按回滚点上记录的信息，进行回滚操作。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1897171561}
+【命令】
 
-[**[install rollback to]{lang="EN-US"}**[ { *point-id* \| **original** }]{lang="EN-US"}]{#struct_0_71526_x1155_x452988985}
+**[install rollback to**[ { *point-id* \| **original** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1317771214}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1119645654}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x2066048539}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_1739588386}
+network-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_440711511}
+【参数】
 
-[*[point-id]{lang="EN-US"}*]{#struct_0_71526_x1155_x1361356426}[：回滚点的编号，当系统中至少存在两个回滚点的时候，才能输入该参数。可以用]{style="font-family:宋体"}**[display install rollback]{lang="EN-US"}**[命令查看系统中存在的回滚点。]{style="font-family:宋体"}
+*[point-id*]：回滚点的编号，当系统中至少存在两个回滚点的时候，才能输入该参数。可以用**display install rollback**命令查看系统中存在的回滚点。
 
-[**[original]{lang="EN-US"}**]{#struct_0_71526_x1155_x265011301}[：回滚到]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[升级初始状态。]{style="font-family:宋体"}
+**[original**]：回滚到ISSU升级初始状态。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_554996987}
+【使用指导】
 
-[[每次激活或者卸载软件包之后，系统中将运行着不同的软件包，系统将这些变化记录为回滚点。通过回滚功能，可将系统回滚到某个历史状态，或者恢复到]{style="font-family:宋体"}[ISSU]{lang="EN-US"}]{#struct_0_71526_x1155_909396794}[升级初始状态。]{style="font-family:宋体"}
+每次激活或者卸载软件包之后，系统中将运行着不同的软件包，系统将这些变化记录为回滚点。通过回滚功能，可将系统回滚到某个历史状态，或者恢复到ISSU升级初始状态。
 
-[[当升级方式为增量升级时，软件包回滚只在设备本次运行过程中生效，用户只有通过]{style="font-family:宋体"}**[install commit]{lang="EN-US"}**]{#struct_0_71526_x1155_x1085674435}[命令确认软件包的更改后，才能使此次的回滚操作在系统重启后生效。系统最多支持]{style="font-family:宋体"}[50]{lang="EN-US"}[个回滚点，当回滚点超过最大值时，旧的回滚点会被删除，新的回滚点会被保存。]{style="font-family:宋体"}
+当升级方式为增量升级时，软件包回滚只在设备本次运行过程中生效，用户只有通过**install commit**命令确认软件包的更改后，才能使此次的回滚操作在系统重启后生效。系统最多支持50个回滚点，当回滚点超过最大值时，旧的回滚点会被删除，新的回滚点会被保存。
 
-[[当升级方式为软重启或重启升级时，系统不会保留任何回滚点，只支持回滚到系统升级初始状态。]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1956371408}
+当升级方式为软重启或重启升级时，系统不会保留任何回滚点，只支持回滚到系统升级初始状态。
 
-[[补丁包不支持回滚操作。]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1469111892}
+补丁包不支持回滚操作。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1761906026}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x2053108152}[回滚到回滚点]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 回滚到回滚点1。
 
-[[\<Sysname\> install rollback to 1]{lang="EN-US"}]{#struct_0_71526_x1155_x1361815181}
+\<Sysname\> install rollback to 1
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1113670307}[回滚到]{style="font-family:宋体"}[original]{lang="EN-US"}[回滚点。可通过观察]{style="font-family:宋体"}[active]{lang="EN-US"}[列表和回滚点的变化看出执行的结果。]{style="font-family:宋体"}
+\# 回滚到original回滚点。可通过观察active列表和回滚点的变化看出执行的结果。
 
-[[\<Sysname\> display install active]{lang="EN-US"}]{#struct_0_71526_x1155_584557902}
+\<Sysname\> display install active
 
-[Active packages on slot 1:]{lang="EN-US"}
+Active packages on slot 1:
 
-[  flash:/boot-a0201.bin]{lang="EN-US"}
+  flash:/boot-a0201.bin
 
-[  flash:/system-a0201.bin]{lang="EN-US"}
+  flash:/system-a0201.bin
 
-[  flash:/ssh-feature-a0201.bin]{lang="EN-US"}
+  flash:/ssh-feature-a0201.bin
 
-[\<Sysname\> display install rollback]{lang="EN-US"}
+\<Sysname\> display install rollback
 
-[Install rollback information 1 on slot 1:]{lang="EN-US"}
+Install rollback information 1 on slot 1:
 
-[  Updating from no package]{lang="EN-US"}
+  Updating from no package
 
-[         to flash:/ssh-feature-a0201.bin.]{lang="EN-US"}
+         to flash:/ssh-feature-a0201.bin.
 
-[[以上显示信息表明，当前激活的包有三个，但是确认的只有两个，回滚点]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_71526_x1155_x512602968}[是激活了]{style="font-family:宋体"}[flash:/ssh-feature-a0201.bin]{lang="EN-US"}[。]{style="font-family:宋体"}
+以上显示信息表明，当前激活的包有三个，但是确认的只有两个，回滚点1是激活了flash:/ssh-feature-a0201.bin。
 
-[[\<Sysname\> install rollback to original]{lang="EN-US"}]{#struct_0_71526_x1155_x1361880717}
+\<Sysname\> install rollback to original
 
-[\<Sysname\> display install active]{lang="EN-US"}
+\<Sysname\> display install active
 
-[Active packages on slot 1:]{lang="EN-US"}
+Active packages on slot 1:
 
-[  flash:/boot-a0201.bin]{lang="EN-US"}
+  flash:/boot-a0201.bin
 
-[  flash:/system-a0201.bin]{lang="EN-US"}
+  flash:/system-a0201.bin
 
-[\<Sysname\> display install committed]{lang="EN-US"}
+\<Sysname\> display install committed
 
-[Committed packages on slot 1:]{lang="EN-US"}
+Committed packages on slot 1:
 
-[  flash:/boot-a0201.bin]{lang="EN-US"}
+  flash:/boot-a0201.bin
 
-[  flash:/system-a0201.bin]{lang="EN-US"}
+  flash:/system-a0201.bin
 
-[[执行]{style="font-family:宋体"}**[install rollback to original]{lang="EN-US"}**]{#struct_0_71526_x1155_2035378934}[命令后，设备运行的软件集恢复到]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[升级初始状态，]{style="font-family:宋体"}[flash:/ssh-feature-a0201.bin]{lang="EN-US"}[被卸载。]{style="font-family:宋体"}
+执行**install rollback to original**命令后，设备运行的软件集恢复到ISSU升级初始状态，flash:/ssh-feature-a0201.bin被卸载。
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1731285808}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display install rollback]{lang="EN-US"}**]{#struct_0_71526_x1155_x1042860091}
-:::
-
-::: {#183223271 .myid}
-[]{#_Toc404782745}[]{#struct_0_71526_x1155_1379678540}
+·**display install rollback**
 
 **ISSU \-- ISSU配置命令 \-- install verify**
 
 ------------------------------------------------------------------------
 
-[**[install verify]{lang="EN-US"}**]{#struct_0_71526_x1155_x1717137431}[命令用来执行软件包检验。]{style="font-family:宋体"}
+**[install verify**]命令用来执行软件包检验。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x2002678385}
+【命令】
 
-[**[install verify]{lang="EN-US"}**]{#struct_0_71526_x1155_x355720282}
+**[install verify**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1538781876}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1361946253}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_614366889}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_x1448687108}
+network-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1754749778}
+【使用指导】
 
-[[正常情况下，设备上运行的软件必须完整并且处于激活状态的软件包应该和已确认的软件包一致，否则，会导致设备重启前后运行的软件版本不一致，甚至不能正常启动。（集中式设备）]{style="font-family:宋体"}]{#struct_0_71526_x1155_431641829}
+正常情况下，设备上运行的软件必须完整并且处于激活状态的软件包应该和已确认的软件包一致，否则，会导致设备重启前后运行的软件版本不一致，甚至不能正常启动。（集中式设备）
 
-[[正常情况下，设备上各主控板运行的软件必须完整并且版本应该一致，各主控板上处于激活状态的软件包应该和已确认的软件包一致，否则，会影响设备的主备倒换，以及导致主控板重启前后运行的软件版本不一致甚至不能正常启动。（分布式设备－独立运行模式）]{style="font-family:宋体"}]{#struct_0_71526_x1155_1942590839}
+正常情况下，设备上各主控板运行的软件必须完整并且版本应该一致，各主控板上处于激活状态的软件包应该和已确认的软件包一致，否则，会影响设备的主备倒换，以及导致主控板重启前后运行的软件版本不一致甚至不能正常启动。（分布式设备－独立运行模式）
 
-[[正常情况下，]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_x2067250382}[中上各成员设备运行的软件必须完整并且版本应该一致，各成员设备上处于激活状态的软件包应该和已确认的软件包一致，否则，会影响主设备和从设备的倒换，以及导致成员设备重启前后运行的软件版本不一致甚至不能正常启动。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+正常情况下，IRF中上各成员设备运行的软件必须完整并且版本应该一致，各成员设备上处于激活状态的软件包应该和已确认的软件包一致，否则，会影响主设备和从设备的倒换，以及导致成员设备重启前后运行的软件版本不一致甚至不能正常启动。（集中式IRF设备）
 
-[[正常情况下，]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_x154568507}[中各主控板运行的软件必须完整并且版本应该一致，各主控板上处于激活状态的软件包应该和已确认的软件包一致，否则，会影响主控板的主备倒换，以及导致主控板重启前后运行的软件版本不一致甚至不能正常启动。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+正常情况下，IRF中各主控板运行的软件必须完整并且版本应该一致，各主控板上处于激活状态的软件包应该和已确认的软件包一致，否则，会影响主控板的主备倒换，以及导致主控板重启前后运行的软件版本不一致甚至不能正常启动。（分布式设备－IRF模式）
 
-[[使用该命令，能帮助用户进行软件包检查，]{style="font-family:宋体"}]{#struct_0_71526_x1155_x319645886}
+使用该命令，能帮助用户进行软件包检查，
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当系统提示软件包不完整时，请重新下载并安装软件包。]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1362011789}
+·当系统提示软件包不完整时，请重新下载并安装软件包。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当系统提示软件包不一致时，请使用]{lang="EN-US" style="font-family:宋体"}**[install activate]{lang="EN-US"}**]{#struct_0_71526_x1155_x918087586}[、]{lang="EN-US" style="font-family:
-宋体"}**[install deactivate]{lang="EN-US"}**[以及]{lang="EN-US" style="font-family:宋体"}**[install commit]{lang="EN-US"}**[命令来确保它们的一致。]{lang="EN-US" style="font-family:宋体"}
+·当系统提示软件包不一致时，请使用**install activate**、**install deactivate**以及**install commit**命令来确保它们的一致。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1824045492}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_2104988417}[检验软件包信息。（集中式设备）]{style="font-family:宋体"}
+\# 检验软件包信息。（集中式设备）
 
-[[\<Sysname\> install verify]{lang="EN-US"}]{#struct_0_71526_x1155_884128503}
+\<Sysname\> install verify
 
-[Active packages on the device are the reference packages.]{lang="EN-US"}
+Active packages on the device are the reference packages.
 
-[Packages will be compared with the reference packages.]{lang="EN-US"}
+Packages will be compared with the reference packages.
 
-[This operation will take several minutes, please wait\...]{lang="EN-US"}
+This operation will take several minutes, please wait\...
 
-[  Verifying packages on the device:]{lang="EN-US"}
+  Verifying packages on the device:
 
-[  Start to check active package completeness.]{lang="EN-US"}
+  Start to check active package completeness.
 
-[Verifying the file flash:/boot-a0101.bin on the device\...\...\.....Done.]{lang="EN-US"}
+Verifying the file flash:/boot-a0101.bin on the device\...\...\.....Done.
 
-[   flash:/boot-a0101.bin verification successful.]{lang="EN-US"}
+   flash:/boot-a0101.bin verification successful.
 
-[Verifying the file flash:/system-a0101.bin on the device\...\...\...\...Done.]{lang="EN-US"}
+Verifying the file flash:/system-a0101.bin on the device\...\...\...\...Done.
 
-[   flash:/system-a0101.bin verification successful.]{lang="EN-US"}
+   flash:/system-a0101.bin verification successful.
 
-[  Start to check active package consistency.]{lang="EN-US"}
+  Start to check active package consistency.
 
-[    Active packages are consistent with committed packages on their own board.]{lang="EN-US"}
+    Active packages are consistent with committed packages on their own board.
 
-[    Active packages are consistent with the reference packages.]{lang="EN-US"}
+    Active packages are consistent with the reference packages.
 
-[Verification is done.]{lang="EN-US"}
+Verification is done.
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1361553037}[检验设备各个单板上的软件包信息。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+\# 检验设备各个单板上的软件包信息。（分布式设备－独立运行模式）
 
-[[\<Sysname\> install verify]{lang="EN-US"}]{#struct_0_71526_x1155_x1442204614}
+\<Sysname\> install verify
 
-[Active packages on slot 1 are the reference packages.]{lang="EN-US"}
+Active packages on slot 1 are the reference packages.
 
-[Packages will be compared with the reference packages.]{lang="EN-US"}
+Packages will be compared with the reference packages.
 
-[This operation will take several minutes, please wait\...]{lang="EN-US"}
+This operation will take several minutes, please wait\...
 
-[  Verifying packages on slot 0:]{lang="EN-US"}
+  Verifying packages on slot 0:
 
-[  Start to check active package completeness.]{lang="EN-US"}
+  Start to check active package completeness.
 
-[Verifying the file flash:/boot-a0101.bin on slot 0\...\...\...\...\...\...\...Done.]{lang="EN-US"}
+Verifying the file flash:/boot-a0101.bin on slot 0\...\...\...\...\...\...\...Done.
 
-[    flash:/boot-a0101.bin verification successful.]{lang="EN-US"}
+    flash:/boot-a0101.bin verification successful.
 
-[Verifying the file flash:/system-a0101.bin on slot 0\...\...\...\...\...\...\...Done.]{lang="EN-US"}
+Verifying the file flash:/system-a0101.bin on slot 0\...\...\...\...\...\...\...Done.
 
-[    flash:/system-a0101.bin verification successful.]{lang="EN-US"}
+    flash:/system-a0101.bin verification successful.
 
-[  Start to check active package consistency.]{lang="EN-US"}
+  Start to check active package consistency.
 
-[    Active packages are consistent with committed packages on their own board.]{lang="EN-US"}
+    Active packages are consistent with committed packages on their own board.
 
-[    Active packages are consistent with the reference packages.]{lang="EN-US"}
+    Active packages are consistent with the reference packages.
 
-[  Verifying packages on slot 1:]{lang="EN-US"}
+  Verifying packages on slot 1:
 
-[  Start to check active package completeness.]{lang="EN-US"}
+  Start to check active package completeness.
 
-[Verifying the file flash:/boot-a0101.bin on slot 1\...\...\...\...\...\...\...Done.]{lang="EN-US"}
+Verifying the file flash:/boot-a0101.bin on slot 1\...\...\...\...\...\...\...Done.
 
-[    flash:/boot-a0101.bin verification successful.]{lang="EN-US"}
+    flash:/boot-a0101.bin verification successful.
 
-[Verifying the file flash:/system-a0101.bin on slot 1\...\...\...\...\...\...\...Done.]{lang="EN-US"}
+Verifying the file flash:/system-a0101.bin on slot 1\...\...\...\...\...\...\...Done.
 
-[    flash:/system-a0101.bin verification successful.]{lang="EN-US"}
+    flash:/system-a0101.bin verification successful.
 
-[  Start to check active package consistency.]{lang="EN-US"}
+  Start to check active package consistency.
 
-[    Active packages are consistent with committed packages on their own board.]{lang="EN-US"}
+    Active packages are consistent with committed packages on their own board.
 
-[    Active packages are consistent with the reference packages.]{lang="EN-US"}
+    Active packages are consistent with the reference packages.
 
-[Verification is done.]{lang="EN-US"}
+Verification is done.
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_453479875}[检验设备各个单板上的软件包信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\# 检验设备各个单板上的软件包信息。（集中式IRF设备）
 
-[[\<Sysname\> install verify]{lang="EN-US"}]{#struct_0_71526_x1155_x1361618573}
+\<Sysname\> install verify
 
-[Active packages on slot 1 are the reference packages.]{lang="EN-US"}
+Active packages on slot 1 are the reference packages.
 
-[Packages will be compared with the reference packages.]{lang="EN-US"}
+Packages will be compared with the reference packages.
 
-[This operation will take several minutes, please wait\...]{lang="EN-US"}
+This operation will take several minutes, please wait\...
 
-[  Verifying packages on slot 1:]{lang="EN-US"}
+  Verifying packages on slot 1:
 
-[  Start to check active package completeness.]{lang="EN-US"}
+  Start to check active package completeness.
 
-[Verifying the file flash:/boot-a0101.bin on slot 1\...\...\...\...\...\...\...Done.]{lang="EN-US"}
+Verifying the file flash:/boot-a0101.bin on slot 1\...\...\...\...\...\...\...Done.
 
-[    flash:/boot-a0101.bin verification successful.]{lang="EN-US"}
+    flash:/boot-a0101.bin verification successful.
 
-[Verifying the file flash:/system-a0101.bin on slot 1\...\...\...\...\...\...\...Done.]{lang="EN-US"}
+Verifying the file flash:/system-a0101.bin on slot 1\...\...\...\...\...\...\...Done.
 
-[    flash:/system-a0101.bin verification successful.]{lang="EN-US"}
+    flash:/system-a0101.bin verification successful.
 
-[  Start to check active package consistency.]{lang="EN-US"}
+  Start to check active package consistency.
 
-[    Active packages are consistent with committed packages on their own board.]{lang="EN-US"}
+    Active packages are consistent with committed packages on their own board.
 
-[    Active packages are consistent with the reference packages.]{lang="EN-US"}
+    Active packages are consistent with the reference packages.
 
-[  Verifying packages on slot 2:]{lang="EN-US"}
+  Verifying packages on slot 2:
 
-[  Start to check active package completeness.]{lang="EN-US"}
+  Start to check active package completeness.
 
-[Verifying the file flash:/boot-a0101.bin on slot 2\...\...\...\...\...\...\...Done.]{lang="EN-US"}
+Verifying the file flash:/boot-a0101.bin on slot 2\...\...\...\...\...\...\...Done.
 
-[    flash:/boot-a0101.bin verification successful.]{lang="EN-US"}
+    flash:/boot-a0101.bin verification successful.
 
-[Verifying the file flash:/system-a0101.bin on slot 2\...\...\...\...\...\...\...Done.]{lang="EN-US"}
+Verifying the file flash:/system-a0101.bin on slot 2\...\...\...\...\...\...\...Done.
 
-[    flash:/system-a0101.bin verification successful.]{lang="EN-US"}
+    flash:/system-a0101.bin verification successful.
 
-[  Start to check active package consistency.]{lang="EN-US"}
+  Start to check active package consistency.
 
-[    Active packages are consistent with committed packages on their own board.]{lang="EN-US"}
+    Active packages are consistent with committed packages on their own board.
 
-[    Active packages are consistent with the reference packages.]{lang="EN-US"}
+    Active packages are consistent with the reference packages.
 
-[Verification is done.]{lang="EN-US"}
+Verification is done.
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_1802610319}[检验设备各个单板上的软件包信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\# 检验设备各个单板上的软件包信息。（分布式设备－IRF模式）
 
-[[\<Sysname\> install verify]{lang="EN-US"}]{#struct_0_71526_x1155_x1361684109}
+\<Sysname\> install verify
 
-[Active packages on slot 1 are the reference packages.]{lang="EN-US"}
+Active packages on slot 1 are the reference packages.
 
-[Packages will be compared with the reference packages.]{lang="EN-US"}
+Packages will be compared with the reference packages.
 
-[This operation will take several minutes, please wait\...]{lang="EN-US"}
+This operation will take several minutes, please wait\...
 
-[  Verifying packages on chassis 1 slot 0:]{lang="EN-US"}
+  Verifying packages on chassis 1 slot 0:
 
-[  Start to check active package completeness.]{lang="EN-US"}
+  Start to check active package completeness.
 
-[Verifying the file flash:/boot-a0101.bin on chassis 1 slot 0\...\...\...\...\...\...\...Done.]{lang="EN-US"}
+Verifying the file flash:/boot-a0101.bin on chassis 1 slot 0\...\...\...\...\...\...\...Done.
 
-[    flash:/boot-a0101.bin verification successful.]{lang="EN-US"}
+    flash:/boot-a0101.bin verification successful.
 
-[Verifying the file flash:/system-a0101.bin on chassis 1 slot 0\...\...\...\...\...\...\...Done.]{lang="EN-US"}
+Verifying the file flash:/system-a0101.bin on chassis 1 slot 0\...\...\...\...\...\...\...Done.
 
-[    flash:/system-a0101.bin verification successful.]{lang="EN-US"}
+    flash:/system-a0101.bin verification successful.
 
-[  Start to check active package consistency.]{lang="EN-US"}
+  Start to check active package consistency.
 
-[    Active packages are consistent with committed packages on their own board.]{lang="EN-US"}
+    Active packages are consistent with committed packages on their own board.
 
-[    Active packages are consistent with the reference packages.]{lang="EN-US"}
+    Active packages are consistent with the reference packages.
 
-[  Verifying packages on chassis 1 slot 1:]{lang="EN-US"}
+  Verifying packages on chassis 1 slot 1:
 
-[  Start to check active package completeness.]{lang="EN-US"}
+  Start to check active package completeness.
 
-[Verifying the file flash:/boot-a0101.bin on chassis 1 slot 1\...\...\...\...\...\...\...Done.]{lang="EN-US"}
+Verifying the file flash:/boot-a0101.bin on chassis 1 slot 1\...\...\...\...\...\...\...Done.
 
-[    flash:/boot-a0101.bin verification successful.]{lang="EN-US"}
+    flash:/boot-a0101.bin verification successful.
 
-[Verifying the file flash:/system-a0101.bin on chassis 1 slot 1\...\...\...\...\...\...\...Done.]{lang="EN-US"}
+Verifying the file flash:/system-a0101.bin on chassis 1 slot 1\...\...\...\...\...\...\...Done.
 
-[    flash:/system-a0101.bin verification successful.]{lang="EN-US"}
+    flash:/system-a0101.bin verification successful.
 
-[  Start to check active package consistency.]{lang="EN-US"}
+  Start to check active package consistency.
 
-[    Active packages are consistent with committed packages on their own board.]{lang="EN-US"}
+    Active packages are consistent with committed packages on their own board.
 
-[    Active packages are consistent with the reference packages.]{lang="EN-US"}
+    Active packages are consistent with the reference packages.
 
-[Verification is done.]{lang="EN-US"}
-:::
-
-::::: {#753966118 .myid}
-[]{#_Toc404782746}[]{#struct_0_71526_x1155_x1619438542}[]{#_Toc329856482}
+Verification is done.
 
 **ISSU \-- ISSU配置命令 \-- issu accept**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](ISSU命令.files/image001.png){#图片 5 border="0" width="63" height="25"}]{lang="EN-US"}]{#struct_0_71526_x1155_x133160814}
-:::
+![说明](ISSU命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:\"KaiTi_GB2312\",\"serif\""}]{#struct_0_71526_x1155_x215227887}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[issu accept**]命令用来确认ISSU兼容升级，接受已升级的软件版本，并删除回滚定时器。
 
-[**[issu accept]{lang="EN-US"}**]{#struct_0_71526_x1155_x1155709298}[命令用来确认]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[兼容升级，接受已升级的软件版本，并删除回滚定时器。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1361749645}
+**[issu accept**]
 
-[**[issu accept]{lang="EN-US"}**]{#struct_0_71526_x1155_x1120943357}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1446173688}
+用户视图
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1597022220}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1660597449}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_x680688799}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1903189924}
+执行本命令后，系统会删除回滚定时器，本次ISSU升级过程中不会再进行自动回滚，用户可以执行**issu rollback**命令进行手动回滚。
 
-[[执行本命令后，系统会删除回滚定时器，本次]{style="font-family:宋体"}[ISSU]{lang="EN-US"}]{#struct_0_71526_x1155_2099516218}[升级过程中不会再进行自动回滚，用户可以执行]{style="font-family:宋体"}**[issu rollback]{lang="EN-US"}**[命令进行手动回滚。]{style="font-family:宋体"}
+此命令为可选命令，可以不执行此命令，直接执行后面的**issu commit**命令完成升级过程。
 
-[[此命令为可选命令，可以不执行此命令，直接执行后面的]{style="font-family:宋体"}**[issu commit]{lang="EN-US"}**]{#struct_0_71526_x1155_x1549191804}[命令完成升级过程。]{style="font-family:宋体"}
+ISSU不兼容升级时，不需要执行该命令，执行该命令会提示失败。
 
-[[ISSU]{lang="EN-US"}]{#struct_0_71526_x1155_x1361290893}[不兼容升级时，不需要执行该命令，执行该命令会提示失败。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1814998270}
+\# 版本兼容情况下，确认升级步骤。
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_1572257440}[版本兼容情况下，确认升级步骤。]{style="font-family:宋体"}
+\<Sysname\> issu accept
 
-[[\<Sysname\> issu accept]{lang="EN-US"}]{#struct_0_71526_x1155_x318800813}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x958016736}
+·**issu load**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[issu load]{lang="EN-US"}**]{#struct_0_71526_x1155_x413387260}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[issu run switchover]{lang="EN-US"}**]{#struct_0_71526_x1155_x447199523}
-:::::
-
-::::: {#1843086676 .myid}
-[]{#_Toc404782747}[]{#struct_0_71526_x1155_x957835366}[]{#_Toc368057764}
+·**issu run switchover**
 
 **ISSU \-- ISSU配置命令 \-- issu blade**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](ISSU命令.files/image002.png){border="0" width="62" height="25"}]{lang="EN-US"}]{#struct_0_71526_x1155_x1407144956}
-:::
+![说明](ISSU命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:\"KaiTi_GB2312\",\"serif\""}]{#struct_0_71526_x1155_x957507686}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[issu blade]{lang="EN-US"}**]{#struct_0_71526_x1155_x1002323403}[命令用来设置安全引擎的升级软件包。]{style="font-family:宋体"}
+**[issu blade**]命令用来设置安全引擎的升级软件包。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_436482086}
+【命令】
 
-[**[issu blade ]{lang="EN-US"}***[blade-model]{lang="EN-US"}***[ file ]{lang="EN-US"}**[{ **boot** *filename* \| **system** *filename* \| **feature** *filename*&\<1-30\> } \*]{lang="EN-US"}]{#struct_0_71526_x1155_x1441134250}
+**[issu blade ***blade-model*** file **[{ **boot** *filename* \| **system** *filename* \| **feature** *filename*&\<1-30\> } \*]]
 
-[**[issu blade ]{lang="EN-US"}***[blade-model]{lang="EN-US"}***[ file ipe ]{lang="EN-US"}***[ipe-filename]{lang="EN-US"}*]{#struct_0_71526_x1155_x957638758}
+**[issu blade ***blade-model*** file ipe ***ipe-filename*]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x258646448}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_x957573222}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_2087490711}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_91188086}
+network-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x958294118}
+【参数】
 
-[**[blade ]{lang="EN-US"}***[blade-model]{lang="EN-US"}*]{#struct_0_71526_x1155_1912807290}[：设备支持的安全引擎的型号，该参数必须完整输入，不区分大小写。可输入]{style="font-family:宋体"}**[boot-loader blade ]{lang="EN-US"}[？]{style="font-family:宋体"}**[，来获取该参数的取值。]{style="font-family:宋体"}
+**[blade ***blade-model*]：设备支持的安全引擎的型号，该参数必须完整输入，不区分大小写。可输入**boot-loader blade ？**，来获取该参数的取值。
 
-[**[boot]{lang="EN-US"}**]{#struct_0_71526_x1155_x958228582}[：表示]{style="font-family:宋体"}[Boot]{lang="EN-US"}[包。]{style="font-family:宋体"}
+**[boot**]：表示Boot包。
 
-[**[system]{lang="EN-US"}**]{#struct_0_71526_x1155_x479357257}[：表示]{style="font-family:宋体"}[System]{lang="EN-US"}[包。]{style="font-family:宋体"}
+**[system**]：表示System包。
 
-[**[feature]{lang="EN-US"}**]{#struct_0_71526_x1155_x957769829}[：表示]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包。]{style="font-family:宋体"}
+**[feature**]：表示Feature包。
 
-[*[filename]{lang="EN-US"}*]{#struct_0_71526_x1155_1219830507}[：表示软件包的文件名，以]{style="font-family:宋体"}[.bin]{lang="EN-US"}[作为后缀名，从存储介质名开始为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串（包括存储介质名在内），不区分大小写。]{style="font-family:宋体"}[&\<1-30\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[30]{lang="EN-US"}[次。]{style="font-family:宋体"}
+*[filename*]：表示软件包的文件名，以.bin作为后缀名，从存储介质名开始为1～63个字符的字符串（包括存储介质名在内），不区分大小写。&\<1-30\>表示前面的参数最多可以输入30次。
 
-[**[ipe]{lang="EN-US"}***[ ipe-filename]{lang="EN-US"}*]{#struct_0_71526_x1155_x299891683}[：]{style="font-family:宋体"}[IPE]{lang="EN-US"}[文件名，以]{style="font-family:宋体"}[.ipe]{lang="EN-US"}[作为后缀名，从存储介质名开始为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串（包括存储介质名在内），不区分大小写。]{style="font-family:宋体"}
+**[ipe*** ipe-filename*]：IPE文件名，以.ipe作为后缀名，从存储介质名开始为1～63个字符的字符串（包括存储介质名在内），不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x957704293}
+【使用指导】
 
-[[该命令只是指定安全引擎的升级软件包，并不执行升级动作，等主控板升级时，安全引擎使用这些升级软件包启动来完成升级。组网环境不同，安全引擎的具体升级时机不同，具体描述请参见"基础配置指导"中的"]{style="font-family:宋体"}[ISSU]{lang="EN-US"}]{#struct_0_71526_x1155_x641130423}["。如果不进行]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[升级，而仅仅是重启安全引擎，该命令配置的软件包将不会生效。]{style="font-family:宋体"}
+该命令只是指定安全引擎的升级软件包，并不执行升级动作，等主控板升级时，安全引擎使用这些升级软件包启动来完成升级。组网环境不同，安全引擎的具体升级时机不同，具体描述请参见"基础配置指导"中的"ISSU"。如果不进行ISSU升级，而仅仅是重启安全引擎，该命令配置的软件包将不会生效。
 
-[[当配置该命令时，命令中指定的软件包]{style="font-family:宋体"}[/IPE]{lang="EN-US"}]{#struct_0_71526_x1155_x957900901}[文件必须放在存储介质主分区的根目录下。]{style="font-family:宋体"}
+当配置该命令时，命令中指定的软件包/IPE文件必须放在存储介质主分区的根目录下。
 
-[[输入该命令后，系统将自动执行以下操作：]{style="font-family:宋体"}]{#struct_0_71526_x1155_1257632494}
+输入该命令后，系统将自动执行以下操作：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[进行命令行合法性检查。]{style="font-family:宋体"}]{#struct_0_71526_x1155_x957835365}
+·进行命令行合法性检查。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[将升级文件全部拷贝到系统中所有的主控板和该类型的安全引擎上。如果指定的是]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1407079420}[IPE]{lang="EN-US"}[文件，则会自动解压到所有该类型的安全引擎上。]{style="font-family:宋体"}
+·将升级文件全部拷贝到系统中所有的主控板和该类型的安全引擎上。如果指定的是IPE文件，则会自动解压到所有该类型的安全引擎上。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果源软件包放在主控板的存储介质上，拷贝完成后，提示用户是否需要删除源软件包。如果用户确认，则自动删除源软件包，以便释放空间。]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1636779273}
+·如果源软件包放在主控板的存储介质上，拷贝完成后，提示用户是否需要删除源软件包。如果用户确认，则自动删除源软件包，以便释放空间。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x957507685}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1002126795}[配置型号为]{style="font-family:宋体"}[Blade-m9k]{lang="EN-US"}[的安全引擎的升级软件包为]{style="font-family:宋体"}[flash:/test.bin]{lang="EN-US"}[。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+\# 配置型号为Blade-m9k的安全引擎的升级软件包为flash:/test.bin。（分布式设备－独立运行模式）
 
-[[\<Sysname\> issu blade Blade-m9k file feature flash:/test.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x957442149}
+\<Sysname\> issu blade Blade-m9k file feature flash:/test.bin
 
-[Verifying the file flash:/test.bin on slot 1\...Done.]{lang="EN-US"}
+Verifying the file flash:/test.bin on slot 1\...Done.
 
-[File flash:/test.bin already exists on slot 2.1.]{lang="EN-US"}
+File flash:/test.bin already exists on slot 2.1.
 
-[Overwrite the existing files? \[Y/N\]:Y]{lang="EN-US"}
+Overwrite the existing files? [Y/N:Y]
 
-[Copying file flash:/test.bin to slot2.1#flash:/test.bin\...Done.]{lang="EN-US"}
+Copying file flash:/test.bin to slot2.1#flash:/test.bin\...Done.
 
-[File flash:/test.bin already exists on slot 3.1.]{lang="EN-US"}
+File flash:/test.bin already exists on slot 3.1.
 
-[Overwrite the existing files? \[Y/N\]:Y]{lang="EN-US"}
+Overwrite the existing files? [Y/N:Y]
 
-[Copying file flash:/test.bin to slot3.1#flash:/test.bin\...Done.]{lang="EN-US"}
+Copying file flash:/test.bin to slot3.1#flash:/test.bin\...Done.
 
-[Delete flash:/test.bin from slot 5? \[Y/N\]:N]{lang="EN-US"}
+Delete flash:/test.bin from slot 5? [Y/N:N]
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1441593001}[配置型号为]{style="font-family:宋体"}[Blade-m9k]{lang="EN-US"}[的安全引擎的升级软件包为]{style="font-family:宋体"}[slot2.1#flash:/test.bin]{lang="EN-US"}[）。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+\# 配置型号为Blade-m9k的安全引擎的升级软件包为slot2.1#flash:/test.bin）。（分布式设备－独立运行模式）
 
-[[\<Sysname\> issu blade Blade-m9k file feature slot2.1#flash:/test.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x957638757}
+\<Sysname\> issu blade Blade-m9k file feature slot2.1#flash:/test.bin
 
-[Verifying the file flash:/test.bin on slot 1\...Done.]{lang="EN-US"}
+Verifying the file flash:/test.bin on slot 1\...Done.
 
-[File flash:/test.bin already exists on slot 3.1.]{lang="EN-US"}
+File flash:/test.bin already exists on slot 3.1.
 
-[Overwrite the existing files? \[Y/N\]:Y]{lang="EN-US"}
+Overwrite the existing files? [Y/N:Y]
 
-[Copying file flash:/test.bin to slot3.1#flash:/test.bin\...Done.]{lang="EN-US"}
+Copying file flash:/test.bin to slot3.1#flash:/test.bin\...Done.
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1056139354}[配置型号为]{style="font-family:宋体"}[Blade-m9k]{lang="EN-US"}[的安全引擎的升级软件包为]{style="font-family:宋体"}[flash:/test.ipe]{lang="EN-US"}[。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+\# 配置型号为Blade-m9k的安全引擎的升级软件包为flash:/test.ipe。（分布式设备－独立运行模式）
 
-[[\<Sysname\> issu blade Blade-m9k file ipe flash:/test.ipe]{lang="EN-US"}]{#struct_0_71526_x1155_x957573221}
+\<Sysname\> issu blade Blade-m9k file ipe flash:/test.ipe
 
-[Verifying the file flash:/test.ipe on slot 0\...Done.]{lang="EN-US"}
+Verifying the file flash:/test.ipe on slot 0\...Done.
 
-[File flash:/blade3fwm9k-cmw710-test-a0002.bin already exists on slot 5.]{lang="EN-US"}
+File flash:/blade3fwm9k-cmw710-test-a0002.bin already exists on slot 5.
 
-[Overwrite the existing files? \[Y/N\]:Y]{lang="EN-US"}
+Overwrite the existing files? [Y/N:Y]
 
-[Decompressing file blade3fwm9k-cmw710-test-a0002.bin to flash:/blade3fwm9k-cmw710-test-a0002.bin\...Done.]{lang="EN-US"}
+Decompressing file blade3fwm9k-cmw710-test-a0002.bin to flash:/blade3fwm9k-cmw710-test-a0002.bin\...Done.
 
-[File flash:/blade3fwm9k-cmw710-test-a0002.bin already exists on slot 2.1.]{lang="EN-US"}
+File flash:/blade3fwm9k-cmw710-test-a0002.bin already exists on slot 2.1.
 
-[Overwrite the existing files? \[Y/N\]:Y]{lang="EN-US"}
+Overwrite the existing files? [Y/N:Y]
 
-[Copying file flash:/blade3fwm9k-cmw710-test-a0002.bin to slot2.1#flash:/blade3fwm9k-cmw710-test-a0002.bin\...Done.]{lang="EN-US"}
+Copying file flash:/blade3fwm9k-cmw710-test-a0002.bin to slot2.1#flash:/blade3fwm9k-cmw710-test-a0002.bin\...Done.
 
-[File flash:/blade3fwm9k-cmw710-test-a0002.bin already exists on slot 3.1.]{lang="EN-US"}
+File flash:/blade3fwm9k-cmw710-test-a0002.bin already exists on slot 3.1.
 
-[Overwrite the existing files? \[Y/N\]:N]{lang="EN-US"}
+Overwrite the existing files? [Y/N:N]
 
-[Delete flash:/blade3fwm9k-cmw710-test-a0002.bin from slot 5? \[Y/N\]:N]{lang="EN-US"}
+Delete flash:/blade3fwm9k-cmw710-test-a0002.bin from slot 5? [Y/N:N]
 
-[Delete flash:/test.ipe from slot 5? \[Y/N\]:N]{lang="EN-US"}
+Delete flash:/test.ipe from slot 5? [Y/N:N]
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_2087556247}[配置型号为]{style="font-family:宋体"}[Blade-m9k]{lang="EN-US"}[的安全引擎的升级软件包为]{style="font-family:宋体"}[flash:/test.bin]{lang="EN-US"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\# 配置型号为Blade-m9k的安全引擎的升级软件包为flash:/test.bin。（分布式设备－IRF模式）
 
-[[\<Sysname\>issu blade Blade-m9k file feature flash:/test.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x958294117}
+\<Sysname\>issu blade Blade-m9k file feature flash:/test.bin
 
-[Verifying the file flash:/test.bin on chassis 1 slot 0\...Done.]{lang="EN-US"}
+Verifying the file flash:/test.bin on chassis 1 slot 0\...Done.
 
-[File flash:/test.bin already exists on chassis 1 slot 2.1.]{lang="EN-US"}
+File flash:/test.bin already exists on chassis 1 slot 2.1.
 
-[Overwrite the existing files? \[Y/N\]:Y]{lang="EN-US"}
+Overwrite the existing files? [Y/N:Y]
 
-[Copying file flash:/test.bin to chassis1#slot2.1#flash:/test.bin\...Done.]{lang="EN-US"}
+Copying file flash:/test.bin to chassis1#slot2.1#flash:/test.bin\...Done.
 
-[File flash:/test.bin already exists on chassis 1 slot 3.1.]{lang="EN-US"}
+File flash:/test.bin already exists on chassis 1 slot 3.1.
 
-[Overwrite the existing files? \[Y/N\]:Y]{lang="EN-US"}
+Overwrite the existing files? [Y/N:Y]
 
-[Copying file flash:/test.bin to chassis1#slot3.1#flash:/test.bin\...Done.]{lang="EN-US"}
+Copying file flash:/test.bin to chassis1#slot3.1#flash:/test.bin\...Done.
 
-[Delete flash:/test.bin from chassis 1 slot 5? \[Y/N\]:N]{lang="EN-US"}
+Delete flash:/test.bin from chassis 1 slot 5? [Y/N:N]
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_1913659258}[配置型号为]{style="font-family:宋体"}[Blade-m9k]{lang="EN-US"}[的安全引擎的升级软件包为]{style="font-family:宋体"}[chassis1#slot2.1#flash:/test.bin]{lang="EN-US"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\# 配置型号为Blade-m9k的安全引擎的升级软件包为chassis1#slot2.1#flash:/test.bin。（分布式设备－IRF模式）
 
-[[\<Sysname\>issu blade Blade-m9k file feature chassis1#slot2.1#flash:/test.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x958228581}
+\<Sysname\>issu blade Blade-m9k file feature chassis1#slot2.1#flash:/test.bin
 
-[Verifying the file flash:/test.bin on chassis 1 slot 0\...Done.]{lang="EN-US"}
+Verifying the file flash:/test.bin on chassis 1 slot 0\...Done.
 
-[File flash:/test.bin already exists on chassis 1 slot 3.1.]{lang="EN-US"}
+File flash:/test.bin already exists on chassis 1 slot 3.1.
 
-[Overwrite the existing files? \[Y/N\]:Y]{lang="EN-US"}
+Overwrite the existing files? [Y/N:Y]
 
-[Copying file flash:/test.bin to chassis1#slot3.1#flash:/test.bin\...Done.]{lang="EN-US"}
+Copying file flash:/test.bin to chassis1#slot3.1#flash:/test.bin\...Done.
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x479422793}[配置型号为]{style="font-family:宋体"}[Blade-m9k]{lang="EN-US"}[的安全引擎的升级软件包为]{style="font-family:宋体"}[chassis1#slot3.1#flash:/test.ipe]{lang="EN-US"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\# 配置型号为Blade-m9k的安全引擎的升级软件包为chassis1#slot3.1#flash:/test.ipe。（分布式设备－IRF模式）
 
-[[\<Sysname\>issu blade Blade-m9k file ipe chassis1#slot3.1#flash:/test.ipe]{lang="EN-US"}]{#struct_0_71526_x1155_608314115}
+\<Sysname\>issu blade Blade-m9k file ipe chassis1#slot3.1#flash:/test.ipe
 
-[Verifying the file flash:/test.ipe on chassis 1 slot 0\...Done.]{lang="EN-US"}
+Verifying the file flash:/test.ipe on chassis 1 slot 0\...Done.
 
-[File flash:/blade3fwm9k-cmw710-test-a0002.bin already exists on chassis 1 slot 3.1.]{lang="EN-US"}
+File flash:/blade3fwm9k-cmw710-test-a0002.bin already exists on chassis 1 slot 3.1.
 
-[Overwrite the existing files? \[Y/N\]:Y]{lang="EN-US"}
+Overwrite the existing files? [Y/N:Y]
 
-[Decompressing file blade3fwm9k-cmw710-test-a0002.bin to chassis1#slot3.1#flash:/blade3fwm9k-cmw710-test-a0002.bin\...Done]{lang="EN-US"}
+Decompressing file blade3fwm9k-cmw710-test-a0002.bin to chassis1#slot3.1#flash:/blade3fwm9k-cmw710-test-a0002.bin\...Done
 
-[File flash:/blade3fwm9k-cmw710-test-a0002.bin already exists on chassis 1 slot 2.1.]{lang="EN-US"}
+File flash:/blade3fwm9k-cmw710-test-a0002.bin already exists on chassis 1 slot 2.1.
 
-[Overwrite the existing files? \[Y/N\]:Y]{lang="EN-US"}
+Overwrite the existing files? [Y/N:Y]
 
-[Copying file flash:/blade3fwm9k-cmw710-test-a0002.bin to chassis1#slot2.1#flash:/blade3fwm9k-cmw710-test-a0002.bin\...Done.]{lang="EN-US"}
-:::::
-
-::::: {#642127682 .myid}
-[]{#_Toc404782748}[]{#struct_0_71526_x1155_154413628}[]{#_Toc329856483}[]{#_Toc304800254}[]{#_Toc304813524}[]{#_Toc304800255}[]{#_Toc304813525}[]{#_Toc299981201}
+Copying file flash:/blade3fwm9k-cmw710-test-a0002.bin to chassis1#slot2.1#flash:/blade3fwm9k-cmw710-test-a0002.bin\...Done.
 
 **ISSU \-- ISSU配置命令 \-- issu commit**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](ISSU命令.files/image001.png){#图片 6 border="0" width="63" height="25"}]{lang="EN-US"}]{#struct_0_71526_x1155_x1361356429}
-:::
+![说明](ISSU命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:\"KaiTi_GB2312\",\"serif\""}]{#struct_0_71526_x1155_x312065468}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+(1)集中式设备
 
-[[(1)[      ]{style="font:7.0pt "}]{lang="EN-US"}[集中式设备]{lang="EN-US" style="font-family:宋体"}]{#struct_0_71526_x1155_x490393720}
+**[issu commit**]命令用来完成升级，升级完成后ISSU回到初始状态。执行此命令后，不能再通过ISSU回滚命令或者回滚定时器进行回滚操作。
 
-[**[issu commit]{lang="EN-US"}**]{#struct_0_71526_x1155_307873781}[命令用来完成升级，升级完成后]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[回到初始状态。执行此命令后，不能再通过]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[回滚命令或者回滚定时器进行回滚操作。]{style="font-family:宋体"}
+(2)分布式设备－独立运行模式
 
-[[(2)[      ]{style="font:7.0pt "}]{lang="EN-US"}[分布式设备－独立运行模式]{style="font-family:宋体"}]{#struct_0_71526_x1155_x698453072}
+**[issu commit**]命令用来对原主用主控板进行兼容版本升级，升级完成后ISSU回到初始状态。执行此命令后，不能再通过ISSU回滚命令或者回滚定时器进行回滚操作。
 
-[**[issu commit]{lang="EN-US"}**]{#struct_0_71526_x1155_400738394}[命令用来对原主用主控板进行兼容版本升级，升级完成后]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[回到初始状态。执行此命令后，不能再通过]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[回滚命令或者回滚定时器进行回滚操作。]{style="font-family:宋体"}
+(3)集中式IRF设备
 
-[[(3)[      ]{style="font:7.0pt "}]{lang="EN-US"}[集中式]{lang="EN-US" style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_1778227753}[设备]{lang="EN-US" style="font-family:宋体"}
+**[issu commit**]命令用来对原主设备及未升级的从设备进行兼容版本升级。所有成员设备完成升级后，本次升级结束，ISSU回到初始状态。执行此命令后，不能再通过ISSU回滚命令或者回滚定时器进行回滚操作。多个从设备的情况下应该在一个备设备启动完成并重新加入IRF后再对下一个从设备执行该命令，否则可能引起升级错误。
 
-[**[issu commit]{lang="EN-US"}**]{#struct_0_71526_x1155_x1673233324}[命令用来对原主设备及未升级的从设备进行兼容版本升级。所有成员设备完成升级后，本次升级结束，]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[回到初始状态。执行此命令后，不能再通过]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[回滚命令或者回滚定时器进行回滚操作。多个从设备的情况下应该在一个备设备启动完成并重新加入]{style="font-family:宋体"}[IRF]{lang="EN-US"}[后再对下一个从设备执行该命令，否则可能引起升级错误。]{style="font-family:宋体"}
+(4)分布式设备－IRF模式
 
-[[(4)[      ]{style="font:7.0pt "}]{lang="EN-US"}[分布式设备－]{style="font-family:宋体"}]{#struct_0_71526_x1155_1517267767}[IRF]{lang="EN-US"}[模式]{style="font-family:宋体"}
+对于单成员设备双主控的情况，**issu commit**命令用来对原主用主控板进行兼容版本升级，升级完成后ISSU回到初始状态。执行此命令后，不能再通过ISSU回滚命令或者回滚定时器进行回滚操作。
 
-[[对于单成员设备双主控的情况，]{style="font-family:宋体"}**[issu commit]{lang="EN-US"}**]{#struct_0_71526_x1155_x1361815180}[命令用来对原主用主控板进行兼容版本升级，升级完成后]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[回到初始状态。执行此命令后，不能再通过]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[回滚命令或者回滚定时器进行回滚操作。]{style="font-family:宋体"}
+对于多成员设备的情况，**issu commit**命令用来对原主设备及未升级的从设备进行兼容版本升级。所有成员设备完成升级后，本次升级结束，ISSU回到初始状态。执行此命令后不能再通过ISSU回滚命令或者回滚定时器进行回滚操作。如果有多个成员设备需要通过**issu commit**命令进行升级，需要等到一个成员设备重启、重新加入IRF后再进行下一个成员设备的升级，否则可能造成升级错误。
 
-[[对于多成员设备的情况，]{style="font-family:宋体"}**[issu commit]{lang="EN-US"}**]{#struct_0_71526_x1155_452413634}[命令用来对原主设备及未升级的从设备进行兼容版本升级。所有成员设备完成升级后，本次升级结束，]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[回到初始状态。执行此命令后不能再通过]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[回滚命令或者回滚定时器进行回滚操作。如果有多个成员设备需要通过]{style="font-family:宋体"}**[issu commit]{lang="EN-US"}**[命令进行升级，需要等到一个成员设备重启、重新加入]{style="font-family:宋体"}[IRF]{lang="EN-US"}[后再进行下一个成员设备的升级，否则可能造成升级错误。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:
-黑体"}]{#struct_0_71526_x1155_5059905}
+集中式设备：
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_71526_x1155_1803472322}
+**[issu commit**]
 
-[**[issu commit]{lang="EN-US"}**]{#struct_0_71526_x1155_1408318002}
+分布式设备－独立运行模式：
 
-[[分布式设备－独立运行模式：]{style="font-family:宋体"}]{#struct_0_71526_x1155_924829925}
+**[issu commit slot** *slot-number*]
 
-[**[issu commit slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_x1461880042}
+集中式IRF设备：
 
-[[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_x694599463}[设备：]{style="font-family:宋体"}
+**[issu commit slot** *slot-number*]
 
-[**[issu commit slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_1082330264}
+分布式设备－IRF模式单成员设备：
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_x1361880716}[模式单成员设备：]{style="font-family:宋体"}
+**[issu commit chassis** *chassis-number* **slot** *slot-number*]
 
-[**[issu commit chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_469294993}
+分布式设备－IRF模式多成员设备：
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_881993968}[模式多成员设备：]{style="font-family:宋体"}
+**[issu commit chassis ***chassis-number*]
 
-[**[issu commit chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*]{#struct_0_71526_x1155_685395978}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1703753832}
+用户视图
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_x107958550}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1929996644}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_x1048976074}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_278507572}
+**[slot ***slot-number*]：原主用主控板所在的槽位号。（分布式设备－独立运行模式）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_x1361946252}[：原主用主控板所在的槽位号。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot ***slot-number*]：待升级的原主设备以及其它从设备的成员编号。（集中式IRF设备）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_x951717052}[：待升级的原主设备以及其它从设备的成员编号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number* **slot** *slot-number*]：原主用主控板所在的槽位号。（分布式设备－IRF模式单成员设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*[ **slot** *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_x656620948}[：原主用主控板所在的槽位号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式单成员设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number*]：待升级的原主设备以及其它从设备的成员编号。（分布式设备－IRF模式多成员设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*]{#struct_0_71526_x1155_1383133902}[：待升级的原主设备以及其它从设备的成员编号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式多成员设备）]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_395575992}
+从设备重启后，会自动批量备份主设备的配置和状态数据。请等待批量备份完成后，即分别通过**display device**、{.ItemListCharChar}**display mdc**和**display system internal ha service-group**命令{.ItemListCharChar}查看到所有单板处于normal状态、所有MDC处于active状态和所有服务的action显示为0后，再执行**issu commit**命令，否则，命令会执行失败。（集中式IRF设备/分布式设备－IRF模式）
 
-[[从设备重启后，会自动批量备份主设备的配置和状态数据。请等待批量备份完成后，即分别通过]{style="font-family:宋体"}**[display device]{lang="EN-US"}**]{#struct_0_71526_x1155_x154252051}[[、]{style="font-family:宋体"}]{.ItemListCharChar}**[display mdc]{lang="EN-US"}**[和]{style="font-family:宋体"}**[display system internal ha service-group]{lang="EN-US"}**[[命令]{style="font-family:
-宋体"}]{.ItemListCharChar}[查看到所有单板处于]{style="font-family:宋体"}[normal]{lang="EN-US"}[状态、所有]{style="font-family:宋体"}[MDC]{lang="EN-US"}[处于]{style="font-family:宋体"}[active]{lang="EN-US"}[状态和所有服务的]{style="font-family:宋体"}[action]{lang="EN-US"}[显示为]{style="font-family:宋体"}[0]{lang="EN-US"}[后，再执行]{style="font-family:宋体"}**[issu commit]{lang="EN-US"}**[命令，否则，命令会执行失败。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[/]{lang="EN-US"}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x658241364}
+\# 版本兼容情况下，确认升级。（集中式设备）
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_403406149}[版本兼容情况下，确认升级。（集中式设备）]{style="font-family:宋体"}
+\<Sysname\> issu commit
 
-[[\<Sysname\> issu commit]{lang="EN-US"}]{#struct_0_71526_x1155_x968586362}
+\# 版本兼容情况下，成员2已经升级完成成为新的主设备，升级原主设备（假设成员编号为3）和其他成员（假设成员编号为4和1）。（集中式IRF设备）
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1362011788}[版本兼容情况下，成员]{style="font-family:宋体"}[2]{lang="EN-US"}[已经升级完成成为新的主设备，升级原主设备（假设成员编号为]{style="font-family:宋体"}[3]{lang="EN-US"}[）和其他成员（假设成员编号为]{style="font-family:宋体"}[4]{lang="EN-US"}[和]{style="font-family:宋体"}[1]{lang="EN-US"}[）。（集中式]{style="font-family:
-宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\<Sysname\> issu commit slot 3
 
-[[\<Sysname\> issu commit slot 3]{lang="EN-US"}]{#struct_0_71526_x1155_x1361618575}
+Upgrade summary according to following table:
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+flash:/feature.bin
 
-[ ]{lang="EN-US"}
+  Running Version             New Version
 
-[flash:/feature.bin]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[  Running Version             New Version]{lang="EN-US"}
+  Slot                        Upgrade Way
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+  3                           Service Upgrade
 
-[ ]{lang="EN-US"}
+Upgrading software images to compatible versions. Continue? [Y/N:y]
 
-[  Slot                        Upgrade Way]{lang="EN-US"}
+\<Sysname\> issu commit slot 4
 
-[  3                           Service Upgrade]{lang="EN-US"}
+Copying file flash:/feature.bin to slot4#flash:/feature.bin\...Done.
 
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+Verifying the file flash:/feature.bin on slot 4\...\...\...\.....Done.
 
-[\<Sysname\> issu commit slot 4]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[Copying file flash:/feature.bin to slot4#flash:/feature.bin\...Done.]{lang="EN-US"}
+flash:/feature.bin
 
-[Verifying the file flash:/feature.bin on slot 4\...\...\...\.....Done.]{lang="EN-US"}
+  Running Version             New Version
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[ ]{lang="EN-US"}
+  Slot                        Upgrade Way
 
-[flash:/feature.bin]{lang="EN-US"}
+  4                           Service Upgrade
 
-[  Running Version             New Version]{lang="EN-US"}
+Upgrading software images to compatible versions. Continue? [Y/N:y]
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+\<Sysname\> issu commit slot 1
 
-[ ]{lang="EN-US"}
+Copying file flash:/feature.bin to slot1#flash:/feature.bin\...Done.
 
-[  Slot                        Upgrade Way]{lang="EN-US"}
+Verifying the file flash:/feature.bin on slot 1\...\...\...\.....Done.
 
-[  4                           Service Upgrade]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+flash:/feature.bin
 
-[\<Sysname\> issu commit slot 1]{lang="EN-US"}
+  Running Version             New Version
 
-[Copying file flash:/feature.bin to slot1#flash:/feature.bin\...Done.]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[Verifying the file flash:/feature.bin on slot 1\...\...\...\.....Done.]{lang="EN-US"}
+  Slot                        Upgrade Way
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+  1                           Service Upgrade
 
-[ ]{lang="EN-US"}
+Upgrading software images to compatible versions. Continue? [Y/N:y]
 
-[flash:/feature.bin]{lang="EN-US"}
+\# 在双主控板，版本兼容情况下，升级原主用主控板。（分布式设备－独立运行模式）
 
-[  Running Version             New Version]{lang="EN-US"}
+\<Sysname\> issu commit slot 0
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[ ]{lang="EN-US"}
+flash:/feature.bin
 
-[  Slot                        Upgrade Way]{lang="EN-US"}
+  Running Version             New Version
 
-[  1                           Service Upgrade]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+  Slot                        Upgrade Way
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1329557563}[在双主控板，版本兼容情况下，升级原主用主控板。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+  0                           Service Upgrade
 
-[[\<Sysname\> issu commit slot 0]{lang="EN-US"}]{#struct_0_71526_x1155_x1361880718}
+Upgrading software images to compatible versions. Continue? [Y/N:y]
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+\# 在单主控板，版本兼容情况下，确认原主用主控板的升级。（分布式设备－独立运行模式）
 
-[ ]{lang="EN-US"}
+\<Sysname\> issu commit slot 0
 
-[flash:/feature.bin]{lang="EN-US"}
+\# 在多成员设备，版本兼容情况下，升级原主设备（假设成员编号为3）和其他成员（假设成员编号为4和1）。（分布式设备－IRF模式）
 
-[  Running Version             New Version]{lang="EN-US"}
+\<Sysname\> issu commit chassis 3
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+Copying file flash:/feature.bin to chassis3#slot1#flash:/feature.bin\...Done.
 
-[ ]{lang="EN-US"}
+Verifying the file flash:/feature.bin on chassis 3 slot 1\...\...\...\.....Done.
 
-[  Slot                        Upgrade Way]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[  0                           Service Upgrade]{lang="EN-US"}
+flash:/feature.bin
 
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+  Running Version             New Version
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_1632094407}[在单主控板，版本兼容情况下，确认原主用主控板的升级。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+  Alpha 7122                  Alpha 7123
 
-[[\<Sysname\> issu commit slot 0]{lang="EN-US"}]{#struct_0_71526_x1155_1502888622}
+  Chassis   Slot              Upgrade Way
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1362011790}[在多成员设备，版本兼容情况下，升级原主设备（假设成员编号为]{style="font-family:宋体"}[3]{lang="EN-US"}[）和其他成员（假设成员编号为]{style="font-family:宋体"}[4]{lang="EN-US"}[和]{style="font-family:宋体"}[1]{lang="EN-US"}[）。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+  3         0                 Service Upgrade
 
-[[\<Sysname\> issu commit chassis 3]{lang="EN-US"}]{#struct_0_71526_x1155_560302514}
+  3         1                 Service Upgrade
 
-[Copying file flash:/feature.bin to chassis3#slot1#flash:/feature.bin\...Done.]{lang="EN-US"}
+  3         2                 Service Upgrade
 
-[Verifying the file flash:/feature.bin on chassis 3 slot 1\...\...\...\.....Done.]{lang="EN-US"}
+  3         3                 Service Upgrade
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+  3         4                 Service Upgrade
 
-[ ]{lang="EN-US"}
+Upgrading software images to compatible versions. Continue? [Y/N:y]
 
-[flash:/feature.bin]{lang="EN-US"}
+\<Sysname\> issu commit chassis 4
 
-[  Running Version             New Version]{lang="EN-US"}
+Copying file flash:/feature.bin to chassis4#slot0#flash:/feature.bin\...Done.
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+Verifying the file flash:/feature.bin on chassis 4 slot 0\...\...\...\.....Done.
 
-[ ]{lang="EN-US"}
+Copying file flash:/feature.bin to chassis4#slot1#flash:/feature.bin\...Done.
 
-[  Chassis   Slot              Upgrade Way]{lang="EN-US"}
+Verifying the file flash:/feature.bin on chassis 4 slot 1\...\...\...\.....Done
 
-[  3         0                 Service Upgrade]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[  3         1                 Service Upgrade]{lang="EN-US"}
+flash:/feature.bin
 
-[  3         2                 Service Upgrade]{lang="EN-US"}
+  Running Version             New Version
 
-[  3         3                 Service Upgrade]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[  3         4                 Service Upgrade]{lang="EN-US"}
+  Chassis   Slot              Upgrade Way
 
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+  4         0                 Service Upgrade
 
-[\<Sysname\> issu commit chassis 4]{lang="EN-US"}
+  4         1                 Service Upgrade
 
-[Copying file flash:/feature.bin to chassis4#slot0#flash:/feature.bin\...Done.]{lang="EN-US"}
+  4         2                 Service Upgrade
 
-[Verifying the file flash:/feature.bin on chassis 4 slot 0\...\...\...\.....Done.]{lang="EN-US"}
+  4         3                 Service Upgrade
 
-[Copying file flash:/feature.bin to chassis4#slot1#flash:/feature.bin\...Done.]{lang="EN-US"}
+  4         4                 Service Upgrade
 
-[Verifying the file flash:/feature.bin on chassis 4 slot 1\...\...\...\.....Done]{lang="EN-US"}
+Upgrading software images to compatible versions. Continue? [Y/N:y]
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+\<Sysname\> issu commit chassis 1
 
-[ ]{lang="EN-US"}
+Copying file flash:/feature.bin to chassis1#slot0#flash:/feature.bin\...Done.
 
-[flash:/feature.bin]{lang="EN-US"}
+Verifying the file flash:/feature.bin on chassis 1 slot 0\...\...\...\.....Done.
 
-[  Running Version             New Version]{lang="EN-US"}
+Copying file flash:/feature.bin to chassis1#slot1#flash:/feature.bin\...Done.
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+Verifying the file flash:/feature.bin on chassis 1 slot 1\...\...\...\.....Done.
 
-[ ]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[  Chassis   Slot              Upgrade Way]{lang="EN-US"}
+flash:/feature.bin
 
-[  4         0                 Service Upgrade]{lang="EN-US"}
+  Running Version             New Version
 
-[  4         1                 Service Upgrade]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[  4         2                 Service Upgrade]{lang="EN-US"}
+  Chassis   Slot              Upgrade Way
 
-[  4         3                 Service Upgrade]{lang="EN-US"}
+  1         0                 Service Upgrade
 
-[  4         4                 Service Upgrade]{lang="EN-US"}
+  1         1                 Service Upgrade
 
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+  1         2                 Service Upgrade
 
-[\<Sysname\> issu commit chassis 1]{lang="EN-US"}
+  1         3                 Service Upgrade
 
-[Copying file flash:/feature.bin to chassis1#slot0#flash:/feature.bin\...Done.]{lang="EN-US"}
+  1         4                 Service Upgrade
 
-[Verifying the file flash:/feature.bin on chassis 1 slot 0\...\...\...\.....Done.]{lang="EN-US"}
+Upgrading software images to compatible versions. Continue? [Y/N:y]
 
-[Copying file flash:/feature.bin to chassis1#slot1#flash:/feature.bin\...Done.]{lang="EN-US"}
+\# 在单成员设备双主控板，版本兼容情况下，升级原主用主控板。（分布式设备－IRF模式）
 
-[Verifying the file flash:/feature.bin on chassis 1 slot 1\...\...\...\.....Done.]{lang="EN-US"}
+\<Sysname\> issu commit chassis 1 slot 0
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+Verifying the file flash:/feature.bin on chassis 1 slot 1\...\...\...\.....Done.
 
-[ ]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[flash:/feature.bin]{lang="EN-US"}
+  flash:/feature.bin
 
-[  Running Version             New Version]{lang="EN-US"}
+  Running Version             New Version
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[ ]{lang="EN-US"}
+  Chassis   Slot              Upgrade Way
 
-[  Chassis   Slot              Upgrade Way]{lang="EN-US"}
+  1         0                 Service Upgrade
 
-[  1         0                 Service Upgrade]{lang="EN-US"}
+Upgrading software images to compatible versions. Continue? [Y/N:y]
 
-[  1         1                 Service Upgrade]{lang="EN-US"}
+\# 在单成员设备单主控板，版本兼容情况下，确认升级。（分布式设备－IRF模式）
 
-[  1         2                 Service Upgrade]{lang="EN-US"}
+\<Sysname\> issu commit chassis 1 slot 0
 
-[  1         3                 Service Upgrade]{lang="EN-US"}
+本命令显示信息的描述请参见 表1-8(?270907887#_Ref329853865)。
 
-[  1         4                 Service Upgrade]{lang="EN-US"}
+【相关命令】
 
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+·**issu accept**
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1499833880}[在单成员设备双主控板，版本兼容情况下，升级原主用主控板。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+·**issu load**
 
-[[\<Sysname\> issu commit chassis 1 slot 0]{lang="EN-US"}]{#struct_0_71526_x1155_561023410}
-
-[Verifying the file flash:/feature.bin on chassis 1 slot 1\...\...\...\.....Done.]{lang="EN-US"}
-
-[Upgrade summary according to following table:]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[  flash:/feature.bin]{lang="EN-US"}
-
-[  Running Version             New Version]{lang="EN-US"}
-
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[  Chassis   Slot              Upgrade Way]{lang="EN-US"}
-
-[  1         0                 Service Upgrade]{lang="EN-US"}
-
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
-
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_702924494}[在单成员设备单主控板，版本兼容情况下，确认升级。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
-
-[[\<Sysname\> issu commit chassis 1 slot 0]{lang="EN-US"}]{#struct_0_71526_x1155_x1789048912}
-
-[[本命令显示信息的描述请参见]{style="font-family:宋体"}]{#struct_0_71526_x1155_323852032}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-8]{lang="EN-US"}](?270907887#_Ref329853865)[。]{style="font-family:宋体"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_560957874}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[issu accept]{lang="EN-US"}**]{#struct_0_71526_x1155_x1141000154}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[issu load]{lang="EN-US"}**]{#struct_0_71526_x1155_x2131569600}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[issu run switchover]{lang="EN-US"}**]{#struct_0_71526_x1155_1028372123}
-:::::
-
-::: {#270907887 .myid}
-[]{#_Toc404782749}[]{#struct_0_71526_x1155_x234939077}[]{#_Toc329856480}[]{#_Toc299981203}[]{#_Toc299981204}
+·**issu run switchover**
 
 **ISSU \-- ISSU配置命令 \-- issu load**
 
 ------------------------------------------------------------------------
 
-[**[issu load]{lang="EN-US"}**]{#struct_0_71526_x1155_x1501424848}[命令用来升级设备的启动软件包并将设备的主用下次启动软件包设置为指定的软件包。（集中式设备）]{style="font-family:宋体"}
+**[issu load**]命令用来升级设备的启动软件包并将设备的主用下次启动软件包设置为指定的软件包。（集中式设备）
 
-[**[issu load]{lang="EN-US"}**]{#struct_0_71526_x1155_x1300754623}[命令用来升级备用主控板的启动软件包并将备用主控板的主用下次启动软件包设置为指定的软件包。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[issu load**]命令用来升级备用主控板的启动软件包并将备用主控板的主用下次启动软件包设置为指定的软件包。（分布式设备－独立运行模式）
 
-[**[issu load]{lang="EN-US"}**]{#struct_0_71526_x1155_x837986810}[命令用来升级从设备的启动软件包并将从设备的主用下次启动软件包设置为指定的软件包。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**[issu load**]命令用来升级从设备的启动软件包并将从设备的主用下次启动软件包设置为指定的软件包。（集中式IRF设备）
 
-[**[issu load]{lang="EN-US"}**]{#struct_0_71526_x1155_x1352140349}[命令用来升级全局备用主控板的启动软件包并将全局备用主控板的下次启动软件包设置为指定的软件包。（分布式独立设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式单成员设备）]{style="font-family:宋体"}
+**[issu load**]命令用来升级全局备用主控板的启动软件包并将全局备用主控板的下次启动软件包设置为指定的软件包。（分布式独立设备－IRF模式单成员设备）
 
-[**[issu load]{lang="EN-US"}**]{#struct_0_71526_x1155_560499123}[命令用来升级从设备的启动软件包并将从设备的主用下次启动软件包设置为指定的软件包。（分布式独立设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式多成员设备）]{style="font-family:宋体"}
+**[issu load**]命令用来升级从设备的启动软件包并将从设备的主用下次启动软件包设置为指定的软件包。（分布式独立设备－IRF模式多成员设备）
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1890158202}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1227508810}
+集中式设备：
 
-[**[issu load file]{lang="EN-US"}**[ { **boot** *filename* \| **system** *filename* \| **feature** *filename*&\<1-30\> } \*]{lang="EN-US"}]{#struct_0_71526_x1155_195079540}
+**[issu load file**[ { **boot** *filename* \| **system** *filename* \| **feature** *filename*&\<1-30\> } \*]]
 
-[**[issu load file ]{lang="EN-US"}[ipe ]{lang="EN-US"}***[ipe-filename]{lang="EN-US"}*]{#struct_0_71526_x1155_x1026368087}
+**[issu load file ipe ***ipe-filename*]
 
-[[分布式设备－独立运行模式：]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1270251890}
+分布式设备－独立运行模式：
 
-[**[issu load file ]{lang="EN-US"}**[{ **boot** ]{lang="EN-US"}*[filename]{lang="EN-US"}[ ]{lang="EN-US"}*[\| **system** ]{lang="EN-US"}*[filename]{lang="EN-US"}[ ]{lang="EN-US"}*[\| **feature** ]{lang="EN-US"}*[filename]{lang="EN-US"}*[&\<1-30\> } **\* slot** *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_1580085191}
+**[issu load file ***[filename*[\| **system** ]*filename*[\| **feature** ]*filename*&\<1-30\> } **\* slot** *slot-number*]
 
-[**[issu load file ipe ]{lang="EN-US"}***[ipe-filename]{lang="EN-US"}***[ slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_293191281}
+**[issu load file ipe ***ipe-filename*** slot ***slot-number*]
 
-[[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_1180299398}[设备：]{style="font-family:宋体"}
+集中式]IRF设备：
 
-[**[issu load file ]{lang="EN-US"}**[{ **boot** ]{lang="EN-US"}*[filename]{lang="EN-US"}[ ]{lang="EN-US"}*[\| **system** ]{lang="EN-US"}*[filename]{lang="EN-US"}[ ]{lang="EN-US"}*[\| **feature** ]{lang="EN-US"}*[filename]{lang="EN-US"}*[&\<1-30\> } **\* slot** *slot-number*&\<1-9\>]{lang="EN-US"}]{#struct_0_71526_x1155_560433587}
+**[issu load file ***[filename*[\| **system** ]*filename*[\| **feature** ]*filename*&\<1-30\> } **\* slot** *slot-number*&\<1-9\>]
 
-[**[issu load file ipe ]{lang="EN-US"}***[ipe-filename]{lang="EN-US"}***[ slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*[&\<1-9\>]{lang="EN-US"}]{#struct_0_71526_x1155_x1204594168}
+**[issu load file ipe ***ipe-filename*** slot ***slot-number*&\<1-9\>]
 
-[[分布式独立设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_x76665517}[模式单成员设备：]{style="font-family:宋体"}
+分布式独立设备－]IRF模式单成员设备：
 
-[**[issu load file ]{lang="EN-US"}**[{ **boot** ]{lang="EN-US"}*[filename]{lang="EN-US"}[ ]{lang="EN-US"}*[\| **system** ]{lang="EN-US"}*[filename]{lang="EN-US"}[ ]{lang="EN-US"}*[\| **feature** ]{lang="EN-US"}*[filename]{lang="EN-US"}*[&\<1-30\> } **\* chassis** *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_1857120399}
+**[issu load file ***[filename*[\| **system** ]*filename*[\| **feature** ]*filename*&\<1-30\> } **\* chassis** *chassis-number* **slot** *slot-number*]
 
-[**[issu load file ipe ]{lang="EN-US"}***[ipe-filename]{lang="EN-US"}***[ chassis ]{lang="EN-US"}***[chassis-number ]{lang="EN-US"}***[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_x448191253}
+**[issu load file ipe ***ipe-filename*** chassis ***chassis-number ***slot ***slot-number*]
 
-[[分布式独立设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_x1961720477}[模式多成员设备：]{style="font-family:宋体"}
+分布式独立设备－]IRF模式多成员设备：
 
-[**[issu load file ]{lang="EN-US"}**[{ **boot** *filename* \| **system** *filename* \| **feature** *filename*&\<1-30\> } **\* chassis** *chassis-number*&\<1-3\>]{lang="EN-US"}]{#struct_0_71526_x1155_x2081346525}
+**[issu load file **[{ **boot** *filename* \| **system** *filename* \| **feature** *filename*&\<1-30\> } **\* chassis** *chassis-number*&\<1-3\>]]
 
-[**[issu load file ipe ]{lang="EN-US"}***[ipe-filename]{lang="EN-US"}***[ chassis]{lang="EN-US"}**[ *chassis-number*&\<1-3\>]{lang="EN-US"}]{#struct_0_71526_x1155_x1473831990}
+**[issu load file ipe ***ipe-filename*** chassis** *chassis-number*&\<1-3\>]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_560368051}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1516301396}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x356995569}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_x1328632863}
+network-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_90986950}
+【参数】
 
-[**[boot]{lang="EN-US"}**]{#struct_0_71526_x1155_x387012697}[：表示]{style="font-family:宋体"}[Boot]{lang="EN-US"}[包。]{style="font-family:宋体"}
+**[boot**]：表示Boot包。
 
-[**[system]{lang="EN-US"}**]{#struct_0_71526_x1155_926964423}[：表示]{style="font-family:宋体"}[System]{lang="EN-US"}[包。]{style="font-family:宋体"}
+**[system**]：表示System包。
 
-[**[feature]{lang="EN-US"}**]{#struct_0_71526_x1155_x948550757}[：表示]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包。]{style="font-family:宋体"}
+**[feature**]：表示Feature包。
 
-[*[filename]{lang="EN-US"}*]{#struct_0_71526_x1155_1763905844}[：表示软件包的文件名，以]{style="font-family:宋体"}[.bin]{lang="EN-US"}[作为后缀名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}[&\<1-30\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[30]{lang="EN-US"}[次。（集中式设备）]{style="font-family:宋体"}
+*[filename*]：表示软件包的文件名，以.bin作为后缀名，为1～63个字符的字符串，不区分大小写。&\<1-30\>表示前面的参数最多可以输入30次。（集中式设备）
 
-[**[ipe]{lang="EN-US"}***[ ]{lang="EN-US"}[ipe-filename]{lang="EN-US"}*]{#struct_0_71526_x1155_560302515}[：]{style="font-family:宋体"}[IPE]{lang="EN-US"}[文件名，以]{style="font-family:宋体"}[.ipe]{lang="EN-US"}[作为后缀名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+**[ipe***ipe-filename*]：IPE文件名，以.ipe作为后缀名，为1～63个字符的字符串，不区分大小写。
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_x1499833879}[：表示备用主控板的槽位号。如果设备只有一块主控板，则输入主用主控板的槽位号，用来完成整个设备的升级。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示备用主控板的槽位号。如果设备只有一块主控板，则输入主用主控板的槽位号，用来完成整个设备的升级。（分布式设备－独立运行模式）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_x1812157708}[：表示从设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。]{style="font-family:宋体"}[&\<1-9\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[9]{lang="EN-US"}[次。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示从设备在IRF中的成员编号。&\<1-9\>表示前面的参数最多可以输入9次。（集中式IRF设备）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1207635858}[IRF]{lang="EN-US"}[中只有一个成员设备，则输入该成员设备的编号，用来完成整个]{style="font-family:宋体"}[IRF]{lang="EN-US"}[的升级。]{style="font-family:宋体"}
+·如果IRF中只有一个成员设备，则输入该成员设备的编号，用来完成整个IRF的升级。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果]{style="font-family:宋体"}]{#struct_0_71526_x1155_1360021325}[IRF]{lang="EN-US"}[中有多个成员设备：]{style="font-family:宋体"}
+·如果IRF中有多个成员设备：
 
-[[¡[  ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:6.0pt;font-family:Wingdings"}[当要升级的软件包的版本和设备当前运行的软件包的版本兼容时，只允许输入一个]{style="font-family:宋体"}]{#struct_0_71526_x1155_358448083}*[slot-number]{lang="EN-US"}*[。]{style="font-family:宋体"}
+¡当要升级的软件包的版本和设备当前运行的软件包的版本兼容时，只允许输入一个*slot-number*。
 
-[[¡[  ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:6.0pt;font-family:Wingdings"}[当要升级的软件包的版本和设备当前运行的软件包的版本不兼容时，可以输入多个]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1563931754}*[slot-number]{lang="EN-US"}*[，一次升级多个从设备。]{style="font-family:宋体"}
+¡当要升级的软件包的版本和设备当前运行的软件包的版本不兼容时，可以输入多个*slot-number*，一次升级多个从设备。
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*[ **slot** *slot-number*]{lang="EN-US"}]{#struct_0_71526_x1155_x1842860239}[：如果]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中只有一块主控板，则输入主用主控板所在设备的成员编号以及该主控板所在的槽位号，用来完成整个]{style="font-family:宋体"}[IRF]{lang="EN-US"}[的升级；如果设备上有两块主控板，则输入备用主控板所在设备的成员编号以及备用主控板所在的槽位号。（分布式独立设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式单成员设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number* **slot** *slot-number*]：如果IRF中只有一块主控板，则输入主用主控板所在设备的成员编号以及该主控板所在的槽位号，用来完成整个IRF的升级；如果设备上有两块主控板，则输入备用主控板所在设备的成员编号以及备用主控板所在的槽位号。（分布式独立设备－IRF模式单成员设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*]{#struct_0_71526_x1155_x607448294}[：表示从设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。]{style="font-family:宋体"}[&\<1-3\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[3]{lang="EN-US"}[次。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式多成员设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number*]：表示从设备在IRF中的成员编号。&\<1-3\>表示前面的参数最多可以输入3次。（分布式设备－IRF模式多成员设备）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当要升级的软件包的版本和设备当前运行的软件包的版本兼容时，只允许输入一个]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1160647227}*[chassis-number]{lang="EN-US"}*[；]{style="font-family:宋体"}
+·当要升级的软件包的版本和设备当前运行的软件包的版本兼容时，只允许输入一个*chassis-number*；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当要升级的软件包的版本和设备当前运行的软件包的版本不兼容时，可以输入多个]{style="font-family:宋体"}]{#struct_0_71526_x1155_1971520655}*[chassis-number]{lang="EN-US"}*[，一次升级多个成员设备。]{style="font-family:宋体"}
+·当要升级的软件包的版本和设备当前运行的软件包的版本不兼容时，可以输入多个*chassis-number*，一次升级多个成员设备。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_596481602}
+【使用指导】
 
-[[(1)[      ]{style="font:7.0pt "}]{lang="EN-US"}[集中式设备]{lang="EN-US" style="font-family:宋体"}]{#struct_0_71526_x1155_x1376781052}
+(1)集中式设备
 
-[[当配置该命令时，命令中指定的软件包]{style="font-family:宋体"}[/IPE]{lang="EN-US"}]{#struct_0_71526_x1155_x1613754897}[文件必须放在设备存储介质主分区的根目录下，文件名中必须包含存储介质的名称，形如]{style="font-family:宋体"}[flash:/xx.bin]{lang="EN-US"}[（]{style="font-family:宋体"}[flash:/xx.ipe]{lang="EN-US"}[）。]{style="font-family:宋体"}
+当配置该命令时，命令中指定的软件包/IPE文件必须放在设备存储介质主分区的根目录下，文件名中必须包含存储介质的名称，形如flash:/xx.bin（flash:/xx.ipe）。
 
-[[输入该命令后，系统将自动执行以下操作：]{style="font-family:宋体"}]{#struct_0_71526_x1155_707835360}
+输入该命令后，系统将自动执行以下操作：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[进行版本兼容性检查，分为兼容版本的升级和不兼容版本的升级。]{style="font-family:宋体"}]{#struct_0_71526_x1155_560761267}
+·进行版本兼容性检查，分为兼容版本的升级和不兼容版本的升级。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[确定升级策略。兼容升级的策略包括增量、软重启和重启升级。不兼容升级的策略只有重启升级。其中，增量升级会升级对应的进程；软重启升级会对]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1697109384}[CPU]{lang="EN-US"}[进行重启升级；重启升级会自动重启设备。]{style="font-family:宋体"}
+·确定升级策略。兼容升级的策略包括增量、软重启和重启升级。不兼容升级的策略只有重启升级。其中，增量升级会升级对应的进程；软重启升级会对CPU进行重启升级；重启升级会自动重启设备。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[按照升级策略进行升级，并将设备主用下次启动软件包设置为]{style="font-family:宋体"}]{#struct_0_71526_x1155_x2075157177}**[issu load]{lang="EN-US"}**[命令中指定的包，以便指定的包在设备重启后能够继续生效。增量升级方式时是升级前进行设置，软重启和重启升级方式时是升级后进行设置。]{style="font-family:宋体"}
+·按照升级策略进行升级，并将设备主用下次启动软件包设置为**issu load**命令中指定的包，以便指定的包在设备重启后能够继续生效。增量升级方式时是升级前进行设置，软重启和重启升级方式时是升级后进行设置。
 
-[[(2)[      ]{style="font:7.0pt "}]{lang="EN-US"}[分布式设备－独立运行模式]{style="font-family:宋体"}]{#struct_0_71526_x1155_476173906}
+(2)分布式设备－独立运行模式
 
-[[当配置该命令时，命令中指定的软件包]{style="font-family:宋体"}[/IPE]{lang="EN-US"}]{#struct_0_71526_x1155_1116606194}[文件必须放在主用主控板存储介质主分区的根目录下，文件名中必须且只能包含存储介质的名称，不能包含]{style="font-family:宋体"}[slot]{lang="EN-US"}[的信息，形如]{style="font-family:宋体"}[flash:/xx.bin]{lang="EN-US"}[（]{style="font-family:宋体"}[flash:/xx.ipe]{lang="EN-US"}[）。]{style="font-family:宋体"}
+当配置该命令时，命令中指定的软件包/IPE文件必须放在主用主控板存储介质主分区的根目录下，文件名中必须且只能包含存储介质的名称，不能包含slot的信息，形如flash:/xx.bin（flash:/xx.ipe）。
 
-[[当设备上有两块主控板时，]{style="font-family:宋体"}**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_558820896}[请指定为备用主控板的槽位号。输入该命令后，系统将自动执行以下操作：]{style="font-family:宋体"}
+当设备上有两块主控板时，**slot ***slot-number*请指定为备用主控板的槽位号。输入该命令后，系统将自动执行以下操作：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[进行版本兼容性检查。分为兼容版本的升级和不兼容版本的升级。]{style="font-family:宋体"}]{#struct_0_71526_x1155_2128593361}
+·进行版本兼容性检查。分为兼容版本的升级和不兼容版本的升级。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[确定升级策略。兼容升级的策略包括增量、软重启和重启升级。不兼容升级的策略只有重启升级。其中，增量升级会升级对应的进程；软重启升级会对]{style="font-family:宋体"}]{#struct_0_71526_x1155_1893172565}[CPU]{lang="EN-US"}[进行重启升级；重启升级会自动重启指定主控板。]{style="font-family:宋体"}
+·确定升级策略。兼容升级的策略包括增量、软重启和重启升级。不兼容升级的策略只有重启升级。其中，增量升级会升级对应的进程；软重启升级会对CPU进行重启升级；重启升级会自动重启指定主控板。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[按照升级策略进行升级备用主控板，并将备用主控板的主用下次启动软件包设置为]{style="font-family:宋体"}]{#struct_0_71526_x1155_560695731}[issu load]{lang="EN-US"}[命令中指定的包。]{style="font-family:宋体"}
+·按照升级策略进行升级备用主控板，并将备用主控板的主用下次启动软件包设置为issu load命令中指定的包。
 
-[[当设备上只有一块主控板时，]{style="font-family:宋体"}**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_71526_x1155_x2139918418}[指定为主用主控板的槽位号。输入该命令后，系统将自动执行以下操作：]{style="font-family:宋体"}
+当设备上只有一块主控板时，**slot ***slot-number*指定为主用主控板的槽位号。输入该命令后，系统将自动执行以下操作：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[进行版本兼容性检查，分为兼容版本的升级和不兼容版本的升级。]{style="font-family:宋体"}]{#struct_0_71526_x1155_220490540}
+·进行版本兼容性检查，分为兼容版本的升级和不兼容版本的升级。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[确定升级策略。兼容升级的策略包括增量、软重启和重启升级。不兼容升级的策略只有重启升级。其中，增量升级会升级对应的进程；软重启升级会对]{style="font-family:宋体"}]{#struct_0_71526_x1155_1368415527}[CPU]{lang="EN-US"}[进行重启升级；重启升级会以指定的软件包为下次启动软件包自动重启设备。]{style="font-family:宋体"}
+·确定升级策略。兼容升级的策略包括增量、软重启和重启升级。不兼容升级的策略只有重启升级。其中，增量升级会升级对应的进程；软重启升级会对CPU进行重启升级；重启升级会以指定的软件包为下次启动软件包自动重启设备。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[按照升级策略进行升级主用主控板，并将主用主控板的主用下次启动软件包设置为]{style="font-family:宋体"}]{#struct_0_71526_x1155_1983158865}[issu load]{lang="EN-US"}[命令中指定的包。]{style="font-family:宋体"}
+·按照升级策略进行升级主用主控板，并将主用主控板的主用下次启动软件包设置为issu load命令中指定的包。
 
-[[(3)[      ]{style="font:7.0pt "}]{lang="EN-US"}[集中式]{lang="EN-US" style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_1455805053}[设备]{lang="EN-US" style="font-family:宋体"}
+(3)集中式IRF设备
 
-[[当配置该命令时，命令中指定的软件包]{style="font-family:宋体"}[/IPE]{lang="EN-US"}]{#struct_0_71526_x1155_468245765}[文件必须放在主设备存储介质主分区的根目录下，文件名中必须且只能包含存储介质的名称，不能包含]{style="font-family:宋体"}[slot]{lang="EN-US"}[的信息，形如]{style="font-family:宋体"}[flash:/xx.bin]{lang="EN-US"}[（]{style="font-family:宋体"}[flash:/xx.ipe]{lang="EN-US"}[）。]{style="font-family:宋体"}
+当配置该命令时，命令中指定的软件包/IPE文件必须放在主设备存储介质主分区的根目录下，文件名中必须且只能包含存储介质的名称，不能包含slot的信息，形如flash:/xx.bin（flash:/xx.ipe）。
 
-[[从设备重启后，会自动批量备份主设备的配置和状态数据。请等待批量备份完成后，即分别通过]{style="font-family:宋体"}**[display device]{lang="EN-US"}**]{#struct_0_71526_x1155_1070383302}[[、]{style="font-family:宋体"}]{.ItemListCharChar}**[display mdc]{lang="EN-US"}**[和]{style="font-family:宋体"}**[display system internal ha service-group]{lang="EN-US"}**[[命令]{style="font-family:
-宋体"}]{.ItemListCharChar}[查看到所有单板处于]{style="font-family:宋体"}[normal]{lang="EN-US"}[状态、所有]{style="font-family:宋体"}[MDC]{lang="EN-US"}[处于]{style="font-family:宋体"}[active]{lang="EN-US"}[状态和所有服务的]{style="font-family:宋体"}[action]{lang="EN-US"}[显示为]{style="font-family:宋体"}[0]{lang="EN-US"}[后，再执行]{style="font-family:宋体"}**[issu load]{lang="EN-US"}**[命令，否则，命令会执行失败。]{style="font-family:宋体"}
+从设备重启后，会自动批量备份主设备的配置和状态数据。请等待批量备份完成后，即分别通过**display device**、{.ItemListCharChar}**display mdc**和**display system internal ha service-group**命令{.ItemListCharChar}查看到所有单板处于normal状态、所有MDC处于active状态和所有服务的action显示为0后，再执行**issu load**命令，否则，命令会执行失败。
 
-[[当]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_284338629}[中只有一个成员设备时，]{style="font-family:宋体"}**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*[请指定为该设备的成员编号。输入该命令后，系统将自动执行以下操作：]{style="font-family:宋体"}
+当IRF中只有一个成员设备时，**slot ***slot-number*请指定为该设备的成员编号。输入该命令后，系统将自动执行以下操作：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[进行版本兼容性检查，分为兼容版本的升级和不兼容版本的升级。]{style="font-family:宋体"}]{#struct_0_71526_x1155_560630195}
+·进行版本兼容性检查，分为兼容版本的升级和不兼容版本的升级。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[确定升级策略。兼容升级的策略包括增量、软重启和重启升级。不兼容升级的策略只有重启升级。其中，增量升级会升级对应的进程；软重启升级会对]{style="font-family:宋体"}]{#struct_0_71526_x1155_x930248802}[CPU]{lang="EN-US"}[进行重启升级；重启升级会自动重启对应的成员设备。]{style="font-family:宋体"}
+·确定升级策略。兼容升级的策略包括增量、软重启和重启升级。不兼容升级的策略只有重启升级。其中，增量升级会升级对应的进程；软重启升级会对CPU进行重启升级；重启升级会自动重启对应的成员设备。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[按照升级策略进行升级，并将该成员设备的主用下次启动软件包设置为]{style="font-family:宋体"}]{#struct_0_71526_x1155_x417954103}**[issu load]{lang="EN-US"}**[命令中指定的包。]{style="font-family:宋体"}
+·按照升级策略进行升级，并将该成员设备的主用下次启动软件包设置为**issu load**命令中指定的包。
 
-[[当]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_2054137198}[中有多个成员设备时，可一次指定一个或者多个]{style="font-family:宋体"}**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*[，]{style="font-family:宋体"}**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*[均应为从设备的成员编号。如果]{style="font-family:宋体"}[IRF]{lang="EN-US"}[为环形连接，建议一次升级一半数量的物理上邻接的成员设备（也称为对半升级），以便尽量减少升级对整个]{style="font-family:宋体"}[IRF]{lang="EN-US"}[业务的影响。输入该命令后，系统将自动执行以下操作：]{style="font-family:宋体"}
+当IRF中有多个成员设备时，可一次指定一个或者多个**slot ***slot-number*，**slot ***slot-number*均应为从设备的成员编号。如果IRF为环形连接，建议一次升级一半数量的物理上邻接的成员设备（也称为对半升级），以便尽量减少升级对整个IRF业务的影响。输入该命令后，系统将自动执行以下操作：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[进行版本兼容性检查，分为兼容版本的升级和不兼容版本的升级。]{style="font-family:宋体"}]{#struct_0_71526_x1155_1138878457}
+·进行版本兼容性检查，分为兼容版本的升级和不兼容版本的升级。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[确定升级策略。兼容升级的策略包括增量、软重启和重启升级。不兼容升级的策略只有重启升级。其中，增量升级会升级对应的进程；软重启升级对]{style="font-family:宋体"}]{#struct_0_71526_x1155_1248245998}[CPU]{lang="EN-US"}[进行重启升级；重启升级会自动重启对应的成员设备。]{style="font-family:宋体"}
+·确定升级策略。兼容升级的策略包括增量、软重启和重启升级。不兼容升级的策略只有重启升级。其中，增量升级会升级对应的进程；软重启升级对CPU进行重启升级；重启升级会自动重启对应的成员设备。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[按照升级策略进行升级从设备，并将指定成员设备的主用下次启动软件包设置为]{style="font-family:宋体"}]{#struct_0_71526_x1155_116778558}**[issu load]{lang="EN-US"}**[命令中指定的包。]{style="font-family:宋体"}
+·按照升级策略进行升级从设备，并将指定成员设备的主用下次启动软件包设置为**issu load**命令中指定的包。
 
-[[(4)[      ]{style="font:7.0pt "}]{lang="EN-US"}[分布式设备－]{style="font-family:宋体"}]{#struct_0_71526_x1155_1915853418}[IRF]{lang="EN-US"}[模式]{style="font-family:宋体"}
+(4)分布式设备－IRF模式
 
-[[当配置该命令时，命令中指定的软件包]{style="font-family:宋体"}[/IPE]{lang="EN-US"}]{#struct_0_71526_x1155_x768301493}[文件必须放在全局主用主控板存储介质主分区的根目录下，文件名中必须且只能包含存储介质的名称，不能包含]{style="font-family:宋体"}[chassis]{lang="EN-US"}[和]{style="font-family:宋体"}[slot]{lang="EN-US"}[的信息，形如]{style="font-family:宋体"}[flash:/xx.bin]{lang="EN-US"}[（]{style="font-family:宋体"}[flash:/xx.ipe]{lang="EN-US"}[）。]{style="font-family:宋体"}
+当配置该命令时，命令中指定的软件包/IPE文件必须放在全局主用主控板存储介质主分区的根目录下，文件名中必须且只能包含存储介质的名称，不能包含chassis和slot的信息，形如flash:/xx.bin（flash:/xx.ipe）。
 
-[[从设备重启后，会自动批量备份主设备的配置和状态数据。请等待批量备份完成后，即分别通过]{style="font-family:宋体"}**[display device]{lang="EN-US"}**]{#struct_0_71526_x1155_560564659}[[、]{style="font-family:宋体"}]{.ItemListCharChar}**[display mdc]{lang="EN-US"}**[和]{style="font-family:宋体"}**[display system internal ha service-group]{lang="EN-US"}**[[命令]{style="font-family:
-宋体"}]{.ItemListCharChar}[查看到所有单板处于]{style="font-family:宋体"}[normal]{lang="EN-US"}[状态、所有]{style="font-family:宋体"}[MDC]{lang="EN-US"}[处于]{style="font-family:宋体"}[active]{lang="EN-US"}[状态和所有服务的]{style="font-family:宋体"}[action]{lang="EN-US"}[显示为]{style="font-family:宋体"}[0]{lang="EN-US"}[后，再执行]{style="font-family:宋体"}**[issu load]{lang="EN-US"}**[命令，否则，命令会执行失败。]{style="font-family:宋体"}
+从设备重启后，会自动批量备份主设备的配置和状态数据。请等待批量备份完成后，即分别通过**display device**、{.ItemListCharChar}**display mdc**和**display system internal ha service-group**命令{.ItemListCharChar}查看到所有单板处于normal状态、所有MDC处于active状态和所有服务的action显示为0后，再执行**issu load**命令，否则，命令会执行失败。
 
-[[当]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_x59769638}[中只有一个成员设备且只有一块主控板时，]{style="font-family:宋体"}**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*[ **slot** *slot-number*]{lang="EN-US"}[请指定为主用主控板所在的槽位号。输入该命令后，系统将自动执行以下操作：]{style="font-family:宋体"}
+当IRF中只有一个成员设备且只有一块主控板时，**chassis ***chassis-number* **slot** *slot-number*请指定为主用主控板所在的槽位号。输入该命令后，系统将自动执行以下操作：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[进行版本兼容性检查，分为兼容版本的升级和不兼容版本的升级。]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1470951516}
+·进行版本兼容性检查，分为兼容版本的升级和不兼容版本的升级。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[确定升级策略。兼容升级的策略包括增量、软重启和重启升级。不兼容升级的策略只有重启升级。其中，增量升级会升级对应的进程；软重启升级对]{style="font-family:宋体"}]{#struct_0_71526_x1155_1632273118}[CPU]{lang="EN-US"}[进行重启升级；重启升级会自动重启主用主控板。]{style="font-family:宋体"}
+·确定升级策略。兼容升级的策略包括增量、软重启和重启升级。不兼容升级的策略只有重启升级。其中，增量升级会升级对应的进程；软重启升级对CPU进行重启升级；重启升级会自动重启主用主控板。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[按照升级策略进行升级主用主控板，并将主用主控板的主用下次启动软件包设置为]{style="font-family:宋体"}]{#struct_0_71526_x1155_1098746360}**[issu load]{lang="EN-US"}**[命令中指定的包。]{style="font-family:宋体"}
+·按照升级策略进行升级主用主控板，并将主用主控板的主用下次启动软件包设置为**issu load**命令中指定的包。
 
-[[当]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_x765312632}[中只有一个成员设备且有两块主控板时，]{style="font-family:宋体"}**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*[ **slot** *slot-number*]{lang="EN-US"}[请指定为备用主控板所在的槽位号。输入该命令后，系统将自动执行以下操作：]{style="font-family:宋体"}
+当IRF中只有一个成员设备且有两块主控板时，**chassis ***chassis-number* **slot** *slot-number*请指定为备用主控板所在的槽位号。输入该命令后，系统将自动执行以下操作：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[进行版本兼容性检查，分为兼容版本的升级和不兼容版本的升级。]{style="font-family:宋体"}]{#struct_0_71526_x1155_1592461877}
+·进行版本兼容性检查，分为兼容版本的升级和不兼容版本的升级。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[确定升级策略。兼容升级的策略包括增量、软重启和重启升级。不兼容升级的策略只有重启升级。其中，增量升级会升级对应的进程；软重启升级对]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1160060020}[CPU]{lang="EN-US"}[进行重启升级；重启升级会自动重启备用主控板。]{style="font-family:宋体"}
+·确定升级策略。兼容升级的策略包括增量、软重启和重启升级。不兼容升级的策略只有重启升级。其中，增量升级会升级对应的进程；软重启升级对CPU进行重启升级；重启升级会自动重启备用主控板。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[按照升级策略进行升级备用主控板，并将备用主控板的主用下次启动软件包设置为]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1408029989}**[issu load]{lang="EN-US"}**[命令中指定的包。]{style="font-family:宋体"}
+·按照升级策略进行升级备用主控板，并将备用主控板的主用下次启动软件包设置为**issu load**命令中指定的包。
 
-[[当]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_561023411}[中有多个成员设备时，]{style="font-family:宋体"}**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*[请指定为从设备的成员编号。输入该命令后，系统将自动执行以下操作：]{style="font-family:宋体"}
+当IRF中有多个成员设备时，**chassis ***chassis-number*请指定为从设备的成员编号。输入该命令后，系统将自动执行以下操作：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[进行版本兼容性检查，分为兼容版本的升级和不兼容版本的升级。]{style="font-family:宋体"}]{#struct_0_71526_x1155_702924495}
+·进行版本兼容性检查，分为兼容版本的升级和不兼容版本的升级。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[确定升级策略。兼容升级的策略包括增量、软重启和重启升级。不兼容升级的策略只有重启升级。其中，增量升级会升级对应的进程；软重启升级对]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1789048913}[CPU]{lang="EN-US"}[进行重启升级；重启升级会自动重启对应的成员设备。]{style="font-family:宋体"}
+·确定升级策略。兼容升级的策略包括增量、软重启和重启升级。不兼容升级的策略只有重启升级。其中，增量升级会升级对应的进程；软重启升级对CPU进行重启升级；重启升级会自动重启对应的成员设备。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[按照升级策略进行升级从设备，并将从设备的主用下次启动软件包设置为]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1242231909}**[issu load]{lang="EN-US"}**[命令中指定的包**。**]{style="font-family:宋体"}
+·按照升级策略进行升级从设备，并将从设备的主用下次启动软件包设置为**issu load**命令中指定的包**。**
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x239682798}
+【举例】
 
-[**[\# ]{lang="EN-US"}**]{#struct_0_71526_x1155_560564656}[版本兼容情况下，使用]{style="font-family:宋体"}[flash:/boot.bin]{lang="EN-US"}[升级]{style="font-family:宋体"}[Boot]{lang="EN-US"}[包，使用]{style="font-family:宋体"}[flash:/system.bin]{lang="EN-US"}[升级]{style="font-family:宋体"}[System]{lang="EN-US"}[包，使用]{style="font-family:宋体"}[flash:/ssh.bin]{lang="EN-US"}[和]{style="font-family:宋体"}[flash:/http.bin]{lang="EN-US"}[升级]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包。（集中式设备）]{style="font-family:宋体"}
+**[\# **]版本兼容情况下，使用flash:/boot.bin升级Boot包，使用flash:/system.bin升级System包，使用flash:/ssh.bin和flash:/http.bin升级Feature包。（集中式设备）
 
-[[\<Sysname\> issu load file boot flash:/boot.bin system flash:/system.bin feature flash:/ssh.bin flash:/http.bin]{lang="EN-US"}]{#struct_0_71526_x1155_560695726}
+\<Sysname\> issu load file boot flash:/boot.bin system flash:/system.bin feature flash:/ssh.bin flash:/http.bin
 
-[This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? \[Y/N\]:Y]{lang="EN-US"}
+This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? [Y/N:Y]
 
-[Verifying the file flash:/boot.bin on the device\...Done.]{lang="EN-US"}
+Verifying the file flash:/boot.bin on the device\...Done.
 
-[Verifying the file flash:/system.bin on the device\...Done.]{lang="EN-US"}
+Verifying the file flash:/system.bin on the device\...Done.
 
-[Verifying the file flash:/ssh.bin on the device\...Done.]{lang="EN-US"}
+Verifying the file flash:/ssh.bin on the device\...Done.
 
-[Verifying the file flash:/http.bin on the device\...Done.]{lang="EN-US"}
+Verifying the file flash:/http.bin on the device\...Done.
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[ ]{lang="EN-US"}
+flash:/boot.bin
 
-[flash:/boot.bin]{lang="EN-US"}
+  Running Version             New Version
 
-[  Running Version             New Version]{lang="EN-US"}
+  1.0.2                       1.0.3
 
-[  1.0.2                       1.0.3]{lang="EN-US"}
+flash:/system.bin
 
-[ ]{lang="EN-US"}
+  Running Version             New Version
 
-[flash:/system.bin]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[  Running Version             New Version]{lang="EN-US"}
+flash:/ssh.bin
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+  Running Version             New Version
 
-[ ]{lang="EN-US"}
+  None                        Alpha 7123
 
-[flash:/ssh.bin]{lang="EN-US"}
+flash:/http.bin
 
-[  Running Version             New Version]{lang="EN-US"}
+  Running Version             New Version
 
-[  None                        Alpha 7123]{lang="EN-US"}
+  None                        Alpha 7123
 
-[ ]{lang="EN-US"}
+Upgrade Way: Service Upgrade
 
-[flash:/http.bin]{lang="EN-US"}
+Upgrading software images to compatible versions. Continue? [Y/N:y]
 
-[  Running Version             New Version]{lang="EN-US"}
+\# 版本不兼容情况下，使用flash:/boot.bin升级Boot包，使用flash:/system.bin升级System包，使用flash:/ssh.bin和flash:/http.bin升级Feature包。（集中式设备）
 
-[  None                        Alpha 7123]{lang="EN-US"}
+\<Sysname\> issu load file boot flash:/boot.bin system flash:/system.bin feature flash:/ssh.bin flash:/http.bin
 
-[ ]{lang="EN-US"}
+This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? [Y/N:Y]
 
-[Upgrade Way: Service Upgrade]{lang="EN-US"}
+Verifying the file flash:/boot.bin on the device\...Done.
 
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+Verifying the file flash:/system.bin on the device\...Done.
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_560761263}[版本不兼容情况下，使用]{style="font-family:宋体"}[flash:/boot.bin]{lang="EN-US"}[升级]{style="font-family:宋体"}[Boot]{lang="EN-US"}[包，使用]{style="font-family:宋体"}[flash:/system.bin]{lang="EN-US"}[升级]{style="font-family:宋体"}[System]{lang="EN-US"}[包，使用]{style="font-family:宋体"}[flash:/ssh.bin]{lang="EN-US"}[和]{style="font-family:宋体"}[flash:/http.bin]{lang="EN-US"}[升级]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包。（集中式设备）]{style="font-family:宋体"}
+Verifying the file flash:/ssh.bin on the device\...Done.
 
-[[\<Sysname\> issu load file boot flash:/boot.bin system flash:/system.bin feature flash:/ssh.bin flash:/http.bin]{lang="EN-US"}]{#struct_0_71526_x1155_2126845208}
+Verifying the file flash:/http.bin on the device\...Done.
 
-[This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? \[Y/N\]:Y]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[Verifying the file flash:/boot.bin on the device\...Done.]{lang="EN-US"}
+flash:/boot.bin
 
-[Verifying the file flash:/system.bin on the device\...Done.]{lang="EN-US"}
+  Running Version             New Version
 
-[Verifying the file flash:/ssh.bin on the device\...Done.]{lang="EN-US"}
+  1.0.2                       1.0.3
 
-[Verifying the file flash:/http.bin on the device\...Done.]{lang="EN-US"}
+flash:/system.bin
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+  Running Version             New Version
 
-[ ]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[flash:/boot.bin]{lang="EN-US"}
+flash:/ssh.bin
 
-[  Running Version             New Version]{lang="EN-US"}
+  Running Version             New Version
 
-[  1.0.2                       1.0.3]{lang="EN-US"}
+  None                        Alpha 7123
 
-[ ]{lang="EN-US"}
+flash:/http.bin
 
-[flash:/system.bin]{lang="EN-US"}
+  Running Version             New Version
 
-[  Running Version             New Version]{lang="EN-US"}
+  None                        Alpha 7123
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+Upgrade Way: Reboot
 
-[ ]{lang="EN-US"}
+Upgrading software images to incompatible versions. Continue? [Y/N:y]
 
-[flash:/ssh.bin]{lang="EN-US"}
+\# 版本兼容情况下，使用flash:/feature.bin升级从设备2上的Feature包。（集中式IRF设备）
 
-[  Running Version             New Version]{lang="EN-US"}
+\<Sysname\> issu load file feature flash:/feature.bin slot 2
 
-[  None                        Alpha 7123]{lang="EN-US"}
+This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? [Y/N:Y]
 
-[ ]{lang="EN-US"}
+Verifying the file flash:/feature.bin on slot 1\...Done.
 
-[flash:/http.bin]{lang="EN-US"}
+Copying file flash:/feature.bin to slot2#flash:/feature.bin\...\...Done.
 
-[  Running Version             New Version]{lang="EN-US"}
+Verifying the file flash:/feature.bin on slot 2\...Done.
 
-[  None                        Alpha 7123]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[ ]{lang="EN-US"}
+flash:/feature.bin
 
-[Upgrade Way: Reboot]{lang="EN-US"}
+  Running Version             New Version
 
-[Upgrading software images to incompatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_2127041816}[版本兼容情况下，使用]{style="font-family:宋体"}[flash:/feature.bin]{lang="EN-US"}[升级从设备]{style="font-family:宋体"}[2]{lang="EN-US"}[上的]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+  Slot                        Upgrade Way
 
-[[\<Sysname\> issu load file feature flash:/feature.bin slot 2]{lang="EN-US"}]{#struct_0_71526_x1155_2126779669}
+  2                           Service Upgrade
 
-[This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? \[Y/N\]:Y]{lang="EN-US"}
+Upgrading software images to compatible versions. Continue? [Y/N:y]
 
-[Verifying the file flash:/feature.bin on slot 1\...Done.]{lang="EN-US"}
+\# 版本不兼容情况下，使用flash:/feature.bin升级从设备3和4上的Feature包。（集中式IRF设备）
 
-[Copying file flash:/feature.bin to slot2#flash:/feature.bin\...\...Done.]{lang="EN-US"}
+\<Sysname\> issu load file feature flash:/feature.bin slot 3 4
 
-[Verifying the file flash:/feature.bin on slot 2\...Done.]{lang="EN-US"}
+This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? [Y/N:Y]
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+Verifying the file flash:/feature.bin on slot 1\...Done.
 
-[ ]{lang="EN-US"}
+Copying file flash:/feature.bin to slot3#flash:/feature.bin\...\...Done.
 
-[flash:/feature.bin]{lang="EN-US"}
+Verifying the file flash:/feature.bin on slot 3\...Done.
 
-[  Running Version             New Version]{lang="EN-US"}
+Copying file flash:/feature.bin to slot4#flash:/feature.bin\...\...Done.
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+Verifying the file flash:/feature.bin on slot 4\...Done.
 
-[ ]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[  Slot                        Upgrade Way]{lang="EN-US"}
+flash:/feature.bin
 
-[  2                           Service Upgrade]{lang="EN-US"}
+  Running Version             New Version
 
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_2126517526}[版本不兼容情况下，使用]{style="font-family:宋体"}[flash:/feature.bin]{lang="EN-US"}[升级从设备]{style="font-family:宋体"}[3]{lang="EN-US"}[和]{style="font-family:宋体"}[4]{lang="EN-US"}[上的]{style="font-family:
-宋体"}[Feature]{lang="EN-US"}[包。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+  Slot                        Upgrade Way
 
-[[\<Sysname\> issu load file feature flash:/feature.bin slot 3 4]{lang="EN-US"}]{#struct_0_71526_x1155_2127107350}
+  3                           Reboot
 
-[This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? \[Y/N\]:Y]{lang="EN-US"}
+  4                           Reboot
 
-[Verifying the file flash:/feature.bin on slot 1\...Done.]{lang="EN-US"}
+Upgrading software images to incompatible versions. Continue? [Y/N:y]
 
-[Copying file flash:/feature.bin to slot3#flash:/feature.bin\...\...Done.]{lang="EN-US"}
+\# 版本兼容情况下，使用flash:/feature.bin升级备用主控板1上的Feature包。（分布式设备－独立运行模式双主控）
 
-[Verifying the file flash:/feature.bin on slot 3\...Done.]{lang="EN-US"}
+\<Sysname\> issu load file feature flash:/feature.bin slot 1
 
-[Copying file flash:/feature.bin to slot4#flash:/feature.bin\...\...Done.]{lang="EN-US"}
+This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? [Y/N:Y]
 
-[Verifying the file flash:/feature.bin on slot 4\...Done.]{lang="EN-US"}
+Verifying the file flash:/feature.bin on slot 0\...Done.
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+Copying file flash:/feature.bin to slot1#flash:/feature.bin\...\...Done.
 
-[ ]{lang="EN-US"}
+Verifying the file flash:/feature.bin on slot 1\...Done.
 
-[flash:/feature.bin]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[  Running Version             New Version]{lang="EN-US"}
+flash:/feature.bin
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+  Running Version             New Version
 
-[ ]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[  Slot                        Upgrade Way]{lang="EN-US"}
+  Slot                        Upgrade Way
 
-[  3                           Reboot]{lang="EN-US"}
+  1                           Service Upgrade
 
-[  4                           Reboot]{lang="EN-US"}
+Upgrading software images to compatible versions. Continue? [Y/N:y]
 
-[Upgrading software images to incompatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+\# 版本不兼容情况下，使用flash:/feature.bin升级备用主控板1上的Feature包。（分布式设备－独立运行模式双主控）
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_2126386451}[版本兼容情况下，使用]{style="font-family:宋体"}[flash:/feature.bin]{lang="EN-US"}[升级备用主控板]{style="font-family:宋体"}[1]{lang="EN-US"}[上的]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包。（分布式设备－独立运行模式双主控）]{style="font-family:宋体"}
+\<Sysname\> issu load file feature flash:/feature.bin slot 1
 
-[[\<Sysname\> issu load file feature flash:/feature.bin slot 1]{lang="EN-US"}]{#struct_0_71526_x1155_2126583060}
+This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? [Y/N:Y]
 
-[This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? \[Y/N\]:Y]{lang="EN-US"}
+Verifying the file flash:/feature.bin on slot 0\...Done.
 
-[Verifying the file flash:/feature.bin on slot 0\...Done.]{lang="EN-US"}
+Copying file flash:/feature.bin to slot1#flash:/feature.bin\...\...Done.
 
-[Copying file flash:/feature.bin to slot1#flash:/feature.bin\...\...Done.]{lang="EN-US"}
+Verifying the file flash:/feature.bin on slot 1\...Done.
 
-[Verifying the file flash:/feature.bin on slot 1\...Done.]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+flash:/feature.bin
 
-[ ]{lang="EN-US"}
+  Running Version             New Version
 
-[flash:/feature.bin]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[  Running Version             New Version]{lang="EN-US"}
+  Slot                        Upgrade Way
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+  1                           Reboot
 
-[ ]{lang="EN-US"}
+Upgrading software images to incompatible versions. Continue? [Y/N:y]
 
-[  Slot                        Upgrade Way]{lang="EN-US"}
+\# 版本兼容情况下，使用flash:/feature.bin升级slot 0上的Feature包。（分布式设备－独立运行模式单主控）
 
-[  1                           Service Upgrade]{lang="EN-US"}
+\<Sysname\>issu load file feature flash:/feature.bin slot 0
 
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? [Y/N:Y]
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_2126714132}[版本不兼容情况下，使用]{style="font-family:宋体"}[flash:/feature.bin]{lang="EN-US"}[升级备用主控板]{style="font-family:宋体"}[1]{lang="EN-US"}[上的]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包。（分布式设备－独立运行模式双主控）]{style="font-family:宋体"}
+Verifying the file flash:/feature.bin on slot 0\...Done.
 
-[[\<Sysname\> issu load file feature flash:/feature.bin slot 1]{lang="EN-US"}]{#struct_0_71526_x1155_210822362}
+Upgrade summary according to following table:
 
-[This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? \[Y/N\]:Y]{lang="EN-US"}
+flash:/feature.bin
 
-[Verifying the file flash:/feature.bin on slot 0\...Done.]{lang="EN-US"}
+  Running Version             New Version
 
-[Copying file flash:/feature.bin to slot1#flash:/feature.bin\...\...Done.]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[Verifying the file flash:/feature.bin on slot 1\...Done.]{lang="EN-US"}
+  Slot                        Upgrade Way
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+  0                           Service Upgrade
 
-[ ]{lang="EN-US"}
+  2                           Service Upgrade
 
-[flash:/feature.bin]{lang="EN-US"}
+  3                           Service Upgrade
 
-[  Running Version             New Version]{lang="EN-US"}
+  4                           Service Upgrade
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+Upgrading software images to compatible versions. Continue? [Y/N:y]
 
-[ ]{lang="EN-US"}
+\# 版本不兼容情况下，使用flash:/feature.bin升级主用主控板slot 0上的Feature包。（分布式设备－独立运行模式单主控）
 
-[  Slot                        Upgrade Way]{lang="EN-US"}
+\<Sysname\> issu load file feature flash:/feature.bin slot 0
 
-[  1                           Reboot]{lang="EN-US"}
+This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? [Y/N:Y]
 
-[Upgrading software images to incompatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+Verifying the file flash:/feature.bin on slot 0\...Done.
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_210494682}[版本兼容情况下，使用]{style="font-family:宋体"}[flash:/feature.bin]{lang="EN-US"}[升级]{style="font-family:宋体"}[slot 0]{lang="EN-US"}[上的]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包。（分布式设备－独立运行模式单主控）]{style="font-family:宋体"}
+Upgrade summary according to following table:
 
-[[\<Sysname\>issu load file feature flash:/feature.bin slot 0]{lang="EN-US"}]{#struct_0_71526_x1155_210756827}
+flash:/feature.bin
 
-[This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? \[Y/N\]:Y]{lang="EN-US"}
+  Running Version             New Version
 
-[Verifying the file flash:/feature.bin on slot 0\...Done.]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+  Slot                        Upgrade Way
 
-[ ]{lang="EN-US"}
+  0                           Reboot
 
-[flash:/feature.bin]{lang="EN-US"}
+  2                           Reboot
 
-[  Running Version             New Version]{lang="EN-US"}
+  3                           Reboot
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+  4                           Reboot
 
-[ ]{lang="EN-US"}
+Upgrading software images to incompatible versions. Continue? [Y/N:y]
 
-[  Slot                        Upgrade Way]{lang="EN-US"}
+\# 版本兼容情况下，使用flash:/feature.bin升级成员2上的Feature包。（分布式设备－IRF模式多成员设备）
 
-[  0                           Service Upgrade]{lang="EN-US"}
+\<Sysname\> issu load file feature flash:/feature.bin chassis 2
 
-[  2                           Service Upgrade]{lang="EN-US"}
+This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? [Y/N:Y]
 
-[  3                           Service Upgrade]{lang="EN-US"}
+Verifying the file flash:/feature.bin on chassis 1 slot 0\...Done.
 
-[  4                           Service Upgrade]{lang="EN-US"}
+Copying file flash:/feature.bin to chassis2#slot0#flash:/feature.bin\...Done.
 
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+Verifying the file flash:/feature.bin on chassis 2 slot 0\...Done.
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_210429147}[版本不兼容情况下，使用]{style="font-family:宋体"}[flash:/feature.bin]{lang="EN-US"}[升级主用主控板]{style="font-family:宋体"}[slot 0]{lang="EN-US"}[上的]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包。（分布式设备－独立运行模式单主控）]{style="font-family:宋体"}
+Copying file flash:/feature.bin to chassis2#slot1#flash:/feature.bin\...Done.
 
-[[\<Sysname\> issu load file feature flash:/feature.bin slot 0]{lang="EN-US"}]{#struct_0_71526_x1155_210756824}
+Verifying the file flash:/feature.bin on chassis 2 slot 1\...Done.
 
-[This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? \[Y/N\]:Y]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[Verifying the file flash:/feature.bin on slot 0\...Done.]{lang="EN-US"}
+flash:/feature.bin
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+  Running Version             New Version
 
-[ ]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[flash:/feature.bin]{lang="EN-US"}
+  Chassis   Slot              Upgrade Way
 
-[  Running Version             New Version]{lang="EN-US"}
+  2         0                 Service Upgrade
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+  2         1                 Service Upgrade
 
-[ ]{lang="EN-US"}
+  2         2                 Service Upgrade
 
-[  Slot                        Upgrade Way]{lang="EN-US"}
+  2         3                 Service Upgrade
 
-[  0                           Reboot]{lang="EN-US"}
+  2         4                 Service Upgrade
 
-[  2                           Reboot]{lang="EN-US"}
+Upgrading software images to compatible versions. Continue? [Y/N:y]
 
-[  3                           Reboot]{lang="EN-US"}
+\# 版本不兼容情况下，使用flash:/feature.bin升级从设备3和从设备4上的Feature包。（分布式设备－IRF模式多成员设备）
 
-[  4                           Reboot]{lang="EN-US"}
+\<Sysname\>issu load file feature flash:/feature.bin chassis 3 4
 
-[Upgrading software images to incompatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? [Y/N:Y]
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_210429144}[版本兼容情况下，使用]{style="font-family:宋体"}[flash:/feature.bin]{lang="EN-US"}[升级成员]{style="font-family:宋体"}[2]{lang="EN-US"}[上的]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式多成员设备）]{style="font-family:宋体"}
+Verifying the file flash:/feature.bin on chassis 1 slot 0\...Done.
 
-[[\<Sysname\> issu load file feature flash:/feature.bin chassis 2]{lang="EN-US"}]{#struct_0_71526_x1155_210822361}
+Copying file flash:/feature.bin to chassis3#slot0#flash:/feature.bin\...Done.
 
-[This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? \[Y/N\]:Y]{lang="EN-US"}
+Verifying the file flash:/feature.bin on chassis 3 slot 0\...Done.
 
-[Verifying the file flash:/feature.bin on chassis 1 slot 0\...Done.]{lang="EN-US"}
+Copying file flash:/feature.bin to chassis3#slot1#flash:/feature.bin\...Done.
 
-[Copying file flash:/feature.bin to chassis2#slot0#flash:/feature.bin\...Done.]{lang="EN-US"}
+Verifying the file flash:/feature.bin on chassis 3 slot 1\...Done.
 
-[Verifying the file flash:/feature.bin on chassis 2 slot 0\...Done.]{lang="EN-US"}
+Copying file flash:/feature.bin to chassis4#slot0#flash:/feature.bin\...Done.
 
-[Copying file flash:/feature.bin to chassis2#slot1#flash:/feature.bin\...Done.]{lang="EN-US"}
+Verifying the file flash:/feature.bin on chassis 4 slot 0\...Done.
 
-[Verifying the file flash:/feature.bin on chassis 2 slot 1\...Done.]{lang="EN-US"}
+Copying file flash:/feature.bin to chassis4#slot1#flash:/feature.bin\...Done.
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+Verifying the file flash:/feature.bin on chassis 4 slot 1\...Done.
 
-[ ]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[flash:/feature.bin]{lang="EN-US"}
+flash:/feature.bin
 
-[  Running Version             New Version]{lang="EN-US"}
+  Running Version             New Version
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[ ]{lang="EN-US"}
+  Chassis   Slot              Upgrade Way
 
-[  Chassis   Slot              Upgrade Way]{lang="EN-US"}
+  3         0                 Reboot
 
-[  2         0                 Service Upgrade]{lang="EN-US"}
+  3         1                 Reboot
 
-[  2         1                 Service Upgrade]{lang="EN-US"}
+  3         2                 Reboot
 
-[  2         2                 Service Upgrade]{lang="EN-US"}
+  3         3                 Reboot
 
-[  2         3                 Service Upgrade]{lang="EN-US"}
+  3         4                 Reboot
 
-[  2         4                 Service Upgrade]{lang="EN-US"}
+  4         0                 Reboot
 
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+  4         1                 Reboot
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_210756822}[版本不兼容情况下，使用]{style="font-family:宋体"}[flash:/feature.bin]{lang="EN-US"}[升级从设备]{style="font-family:宋体"}[3]{lang="EN-US"}[和从设备]{style="font-family:宋体"}[4]{lang="EN-US"}[上的]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式多成员设备）]{style="font-family:宋体"}
+  4         2                 Reboot
 
-[[\<Sysname\>issu load file feature flash:/feature.bin chassis 3 4]{lang="EN-US"}]{#struct_0_71526_x1155_210625751}
+  4         3                 Reboot
 
-[This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? \[Y/N\]:Y]{lang="EN-US"}
+  4         4                 Reboot
 
-[Verifying the file flash:/feature.bin on chassis 1 slot 0\...Done.]{lang="EN-US"}
+Upgrading software images to incompatible versions. Continue? [Y/N:y]
 
-[Copying file flash:/feature.bin to chassis3#slot0#flash:/feature.bin\...Done.]{lang="EN-US"}
+\# 版本兼容情况下，使用flash:/feature.bin升级成员设备1的备用主控板slot 1上的Feature包。（分布式设备－IRF模式单成员设备双主控）
 
-[Verifying the file flash:/feature.bin on chassis 3 slot 0\...Done.]{lang="EN-US"}
+\<Sysname\>issu load file feature flash:/feature.bin chassis 1 slot 1
 
-[Copying file flash:/feature.bin to chassis3#slot1#flash:/feature.bin\...Done.]{lang="EN-US"}
+This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? [Y/N:Y]
 
-[Verifying the file flash:/feature.bin on chassis 3 slot 1\...Done.]{lang="EN-US"}
+Verifying the file flash:/feature.bin on chassis 1 slot 0\...Done.
 
-[Copying file flash:/feature.bin to chassis4#slot0#flash:/feature.bin\...Done.]{lang="EN-US"}
+Copying file flash:/feature.bin to chassis1#slot1#flash:/feature.bin\...Done.
 
-[Verifying the file flash:/feature.bin on chassis 4 slot 0\...Done.]{lang="EN-US"}
+Verifying the file flash:/feature.bin on chassis 1 slot 1\...Done.
 
-[Copying file flash:/feature.bin to chassis4#slot1#flash:/feature.bin\...Done.]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[Verifying the file flash:/feature.bin on chassis 4 slot 1\...Done.]{lang="EN-US"}
+flash:/feature.bin
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+  Running Version             New Version
 
-[ ]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[flash:/feature.bin]{lang="EN-US"}
+  Chassis   Slot              Upgrade Way
 
-[  Running Version             New Version]{lang="EN-US"}
+  1         1                 Service Upgrade
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+Upgrading software images to compatible versions. Continue? [Y/N:y]
 
-[ ]{lang="EN-US"}
+\# 版本不兼容情况下，使用flash:/feature.bin升级成员设备1的备用主控板slot 1上的Feature包。（分布式设备－IRF模式单成员设备双主控）
 
-[  Chassis   Slot              Upgrade Way]{lang="EN-US"}
+\<Sysname\>issu load file feature flash:/feature.bin chassis 1 slot 1
 
-[  3         0                 Reboot]{lang="EN-US"}
+This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? [Y/N:Y]
 
-[  3         1                 Reboot]{lang="EN-US"}
+Verifying the file flash:/feature.bin on chassis 1 slot 0\...Done.
 
-[  3         2                 Reboot]{lang="EN-US"}
+Copying file flash:/feature.bin to chassis1#slot1#flash:/feature.bin\...Done.
 
-[  3         3                 Reboot]{lang="EN-US"}
+Verifying the file flash:/feature.bin on chassis 1 slot 1\...Done.
 
-[  3         4                 Reboot]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[  4         0                 Reboot]{lang="EN-US"}
+flash:/feature.bin
 
-[  4         1                 Reboot]{lang="EN-US"}
+  Running Version             New Version
 
-[  4         2                 Reboot]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[  4         3                 Reboot]{lang="EN-US"}
+  Chassis   Slot              Upgrade Way
 
-[  4         4                 Reboot]{lang="EN-US"}
+  1         1                 Reboot
 
-[Upgrading software images to incompatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+Upgrading software images to incompatible versions. Continue? [Y/N:y]
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_210363607}[版本兼容情况下，使用]{style="font-family:宋体"}[flash:/feature.bin]{lang="EN-US"}[升级成员设备]{style="font-family:宋体"}[1]{lang="EN-US"}[的备用主控板]{style="font-family:宋体"}[slot 1]{lang="EN-US"}[上的]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式单成员设备双主控）]{style="font-family:宋体"}
+\# 版本兼容情况下，使用flash:/feature.bin升级成员设备1的主用主控板slot0上的Feature包。（分布式设备－IRF模式单成员设备单主控）
 
-[[\<Sysname\>issu load file feature flash:/feature.bin chassis 1 slot 1]{lang="EN-US"}]{#struct_0_71526_x1155_1776840767}
+\<Sysname\>issu load file feature flash:/feature.bin chassis 1 slot 0
 
-[This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? \[Y/N\]:Y]{lang="EN-US"}
+This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? [Y/N:Y]
 
-[Verifying the file flash:/feature.bin on chassis 1 slot 0\...Done.]{lang="EN-US"}
+Verifying the file flash:/feature.bin on chassis 1 slot 0\...Done.
 
-[Copying file flash:/feature.bin to chassis1#slot1#flash:/feature.bin\...Done.]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[Verifying the file flash:/feature.bin on chassis 1 slot 1\...Done.]{lang="EN-US"}
+flash:/feature.bin
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+  Running Version             New Version
 
-[ ]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[flash:/feature.bin]{lang="EN-US"}
+  Chassis   Slot              Upgrade Way
 
-[  Running Version             New Version]{lang="EN-US"}
+  1         0                 Service Upgrade
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+  1         2                 Service Upgrade
 
-[ ]{lang="EN-US"}
+  1         3                 Service Upgrade
 
-[  Chassis   Slot              Upgrade Way]{lang="EN-US"}
+  1         4                 Service Upgrade
 
-[  1         1                 Service Upgrade]{lang="EN-US"}
+Upgrading software images to compatible versions. Continue? [Y/N:y]
 
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+\# 版本不兼容情况下，使用flash:/feature.bin升级成员设备1的主用主控板slot0上的Feature包。（分布式设备－IRF模式单成员设备单主控）
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_1776513087}[版本不兼容情况下，使用]{style="font-family:宋体"}[flash:/feature.bin]{lang="EN-US"}[升级成员设备]{style="font-family:宋体"}[1]{lang="EN-US"}[的备用主控板]{style="font-family:宋体"}[slot 1]{lang="EN-US"}[上的]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式单成员设备双主控）]{style="font-family:宋体"}
+\<Sysname\>issu load file feature flash:/feature.bin chassis 1 slot 0
 
-[[\<Sysname\>issu load file feature flash:/feature.bin chassis 1 slot 1]{lang="EN-US"}]{#struct_0_71526_x1155_1776447552}
+This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? [Y/N:Y]
 
-[This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? \[Y/N\]:Y]{lang="EN-US"}
+Verifying the file flash:/feature.bin on chassis 1 slot 0\...Done.
 
-[Verifying the file flash:/feature.bin on chassis 1 slot 0\...Done.]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[Copying file flash:/feature.bin to chassis1#slot1#flash:/feature.bin\...Done.]{lang="EN-US"}
+flash:/feature.bin
 
-[Verifying the file flash:/feature.bin on chassis 1 slot 1\...Done.]{lang="EN-US"}
+  Running Version             New Version
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[ ]{lang="EN-US"}
+  Chassis   Slot              Upgrade Way
 
-[flash:/feature.bin]{lang="EN-US"}
+  1         0                 Reboot
 
-[  Running Version             New Version]{lang="EN-US"}
+  1         2                 Reboot
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+  1         3                 Reboot
 
-[ ]{lang="EN-US"}
+  1         4                 Reboot
 
-[  Chassis   Slot              Upgrade Way]{lang="EN-US"}
+Upgrading software images to incompatible versions. Continue? [Y/N:y]
 
-[  1         1                 Reboot]{lang="EN-US"}
+表1-8 issu load命令显示信息描述表
 
-[Upgrading software images to incompatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+字段
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_1776644160}[版本兼容情况下，使用]{style="font-family:宋体"}[flash:/feature.bin]{lang="EN-US"}[升级成员设备]{style="font-family:宋体"}[1]{lang="EN-US"}[的主用主控板]{style="font-family:宋体"}[slot0]{lang="EN-US"}[上的]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式单成员设备单主控）]{style="font-family:宋体"}
+描述
 
-[[\<Sysname\>issu load file feature flash:/feature.bin chassis 1 slot 0]{lang="EN-US"}]{#struct_0_71526_x1155_1776447549}
+This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? Y/N
 
-[This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? \[Y/N\]:Y]{lang="EN-US"}
+当前操作会删除上一次ISSU升级的日志信息和回滚点，并且未保存的配置可能会丢失，询问用户是否继续执行升级操作
 
-[Verifying the file flash:/feature.bin on chassis 1 slot 0\...Done.]{lang="EN-US"}
+Verifying the file flash:/xx.bin on chassis 1 slot 0\...\...\...\...\...\...\...\...\...\...\....Done.
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+验证文件是否合法
 
-[ ]{lang="EN-US"}
+Decompressing file *A* to *B*\...\...\...\...\...\...\...\...\...Done.
 
-[flash:/feature.bin]{lang="EN-US"}
+将文件从位置*A*解压缩到位置*B*。只有使用IPE文件升级时，才显示该信息
 
-[  Running Version             New Version]{lang="EN-US"}
+Copying file *B* to *C*\...\...Done.
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+将文件从位置*B*拷贝到位置*C*。当配置备用主控板时才有该提示信息（分布式设备－独立运行模式）
 
-[ ]{lang="EN-US"}
+将文件从位置*B*拷贝到位置*C*。当配置从设备时才有该提示信息（集中式IRF设备）
 
-[  Chassis   Slot              Upgrade Way]{lang="EN-US"}
+将文件从位置*B*拷贝到位置*C*。当配置全局备用主控板时才有该提示信息（分布式设备－IRF模式）
 
-[  1         0                 Service Upgrade]{lang="EN-US"}
+Upgrade summary according to following table
 
-[  1         2                 Service Upgrade]{lang="EN-US"}
+升级信息摘要
 
-[  1         3                 Service Upgrade]{lang="EN-US"}
+Running Version
 
-[  1         4                 Service Upgrade]{lang="EN-US"}
+设备当前运行的相同类型软件包的产品版本号
 
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+New Version
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_1777233981}[版本不兼容情况下，使用]{style="font-family:宋体"}[flash:/feature.bin]{lang="EN-US"}[升级成员设备]{style="font-family:宋体"}[1]{lang="EN-US"}[的主用主控板]{style="font-family:宋体"}[slot0]{lang="EN-US"}[上的]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式单成员设备单主控）]{style="font-family:宋体"}
+将要升级的软件包的产品版本号
 
-[[\<Sysname\>issu load file feature flash:/feature.bin chassis 1 slot 0]{lang="EN-US"}]{#struct_0_71526_x1155_1776513086}
+Chassis
 
-[This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? \[Y/N\]:Y]{lang="EN-US"}
+设备在IRF中的成员编号（分布式设备－IRF模式）
 
-[Verifying the file flash:/feature.bin on chassis 1 slot 0\...Done.]{lang="EN-US"}
+Slot
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+单板所在的槽位号（分布式设备－独立运行模式/分布式设备－IRF模式）
 
-[ ]{lang="EN-US"}
+设备在IRF中的成员编号（集中式IRF设备）
 
-[flash:/feature.bin]{lang="EN-US"}
+Upgrade Way
 
-[  Running Version             New Version]{lang="EN-US"}
+升级策略，取值可能为：
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+·Service Upgrade：表示服务级增量升级，该方式下，仅对本业务模块有影响，对系统以及其他业务模块没有影响
 
-[ ]{lang="EN-US"}
+·File Upgrade：表示文件级增量升级。该方式下，仅对系统内的、用户不可见的程序文件进行升级，对系统以及业务模块没有影响
 
-[  Chassis   Slot              Upgrade Way]{lang="EN-US"}
+·ISSU Reboot：表示通过软重启方式升级
 
-[  1         0                 Reboot]{lang="EN-US"}
+·Reboot：表示通过重启方式升级
 
-[  1         2                 Reboot]{lang="EN-US"}
+·Sequence Reboot：表示逐次重启方式。只有网板支持该升级方式，当网板需要重启升级时，为了避免重启升级过程中流量中断，系统会自动升级完毕一块网板后，再自动升级下一块网板，直到所有网板升级完毕后，再自动升级主控板。该字段的支持情况与网板的型号有关，请以设备的实际情况为准
 
-[  1         3                 Reboot]{lang="EN-US"}
+Upgrading software images to compatible versions. Continue? Y/N
 
-[  1         4                 Reboot]{lang="EN-US"}
+询问用户是否执行兼容升级操作
 
-[Upgrading software images to incompatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+Upgrading software images to incompatible versions. Continue? Y/N
 
-[]{#struct_0_71526_x1155_x1495422714}[[表1-8 ]{lang="EN-US"}[issu load]{lang="EN-US"}]{#_Ref329853865}[命令显示信息描述表]{style="font-family:黑体"}
-
-[]{#table_struct_0_x1075937758}[[字段]{style="font-family:黑体"}]{#struct_0_71526_x1155_x754525823}
-:::
-
-[[描述]{style="font-family:黑体"}]{#struct_0_71526_x1155_2093132644}
-
-[[This operation will delete the rollback point information for the previous upgrade and maybe get unsaved configuration lost. Continue? \[Y/N\]]{lang="EN-US"}]{#struct_0_71526_x1155_1776578622}
-
-[[当前操作会删除上一次]{style="font-family:宋体"}[ISSU]{lang="EN-US"}]{#struct_0_71526_x1155_850562957}[升级的日志信息和回滚点，并且未保存的配置可能会丢失，询问用户是否继续执行升级操作]{style="font-family:宋体"}
-
-[[Verifying the file flash:/xx.bin on chassis 1 slot 0\...\...\...\...\...\...\...\...\...\...\....Done.]{lang="EN-US"}]{#struct_0_71526_x1155_1777299518}
-
-[[验证文件是否合法]{style="font-family:宋体"}]{#struct_0_71526_x1155_1776906299}
-
-[[Decompressing file *A* to *B*\...\...\...\...\...\...\...\...\...Done.]{lang="EN-US"}]{#struct_0_71526_x1155_1776709692}
-
-[[将文件从位置]{style="font-family:宋体"}*[A]{lang="EN-US"}*]{#struct_0_71526_x1155_1776906300}[解压缩到位置]{style="font-family:宋体"}*[B]{lang="EN-US"}*[。只有使用]{style="font-family:宋体"}[IPE]{lang="EN-US"}[文件升级时，才显示该信息]{style="font-family:宋体"}
-
-[[Copying file *B* to *C*\...\...Done.]{lang="EN-US"}]{#struct_0_71526_x1155_1776644156}
-
-[[将文件从位置]{style="font-family:宋体"}*[B]{lang="EN-US"}*]{#struct_0_71526_x1155_x952173660}[拷贝到位置]{style="font-family:宋体"}*[C]{lang="EN-US"}*[。当配置备用主控板时才有该提示信息（分布式设备－独立运行模式）]{style="font-family:宋体"}
-
-[[将文件从位置]{style="font-family:宋体"}*[B]{lang="EN-US"}*]{#struct_0_71526_x1155_x952435804}[拷贝到位置]{style="font-family:宋体"}*[C]{lang="EN-US"}*[。当配置从设备时才有该提示信息（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
-
-[[将文件从位置]{style="font-family:宋体"}*[B]{lang="EN-US"}*]{#struct_0_71526_x1155_x952239196}[拷贝到位置]{style="font-family:宋体"}*[C]{lang="EN-US"}*[。当配置全局备用主控板时才有该提示信息（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
-
-[[Upgrade summary according to following table]{lang="EN-US"}]{#struct_0_71526_x1155_x951649372}
-
-[[升级信息摘要]{style="font-family:宋体"}]{#struct_0_71526_x1155_1222845193}
-
-[[Running Version]{lang="EN-US"}]{#struct_0_71526_x1155_2030621966}
-
-[[设备当前运行的相同类型软件包的产品版本号]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1447324605}
-
-[[New Version]{lang="EN-US"}]{#struct_0_71526_x1155_1939236131}
-
-[[将要升级的软件包的产品版本号]{style="font-family:宋体"}]{#struct_0_71526_x1155_x951583836}
-
-[[Chassis]{lang="EN-US"}]{#struct_0_71526_x1155_154899608}
-
-[[设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_580028180}[中的成员编号（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
-
-[[Slot]{lang="EN-US"}]{#struct_0_71526_x1155_1169983427}
-
-[[单板所在的槽位号（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_71526_x1155_x601837452}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
-
-[[设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_x952173659}[中的成员编号（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
-
-[[Upgrade Way]{lang="EN-US"}]{#struct_0_71526_x1155_767464498}
-
-[[升级策略，取值可能为：]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1135678274}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Service Upgrade]{lang="EN-US"}]{#struct_0_71526_x1155_1499661148}[：表示服务级增量升级，该方式下，仅对本业务模块有影响，对系统以及其他业务模块没有影响]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[File Upgrade]{lang="EN-US"}]{#struct_0_71526_x1155_x952108123}[：表示文件级增量升级。该方式下，仅对系统内的、用户不可见的程序文件进行升级，对系统以及业务模块没有影响]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ISSU Reboot]{lang="EN-US"}]{#struct_0_71526_x1155_x852846884}[：表示通过软重启方式升级]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Reboot]{lang="EN-US"}]{#struct_0_71526_x1155_227489651}[：表示通过重启方式升级]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Sequence Reboot]{lang="EN-US"}]{#struct_0_71526_x1155_x952042587}[：表示逐次重启方式。只有网板支持该升级方式，当网板需要重启升级时，为了避免重启升级过程中流量中断，系统会自动升级完毕一块网板后，再自动升级下一块网板，直到所有网板升级完毕后，再自动升级主控板。该字段的支持情况与网板的型号有关，请以设备的实际情况为准]{style="font-family:宋体"}
-
-[[Upgrading software images to compatible versions. Continue? \[Y/N\]]{lang="EN-US"}]{#struct_0_71526_x1155_1151600743}
-
-[[询问用户是否执行兼容升级操作]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1952963381}
-
-[[Upgrading software images to incompatible versions. Continue? \[Y/N\]]{lang="EN-US"}]{#struct_0_71526_x1155_1096589767}
-
-[[询问用户是否执行不兼容升级操作]{style="font-family:宋体"}]{#struct_0_71526_x1155_x951977051}
-
-[ ]{lang="EN-US"}
-
-::::: {#-1689372881 .myid}
-[]{#_Toc404782750}[]{#struct_0_71526_x1155_x1678811534}[]{#_Toc351014179}[]{#_Toc360430876}[]{#_Toc340215437}
+询问用户是否执行不兼容升级操作
 
 **ISSU \-- ISSU配置命令 \-- issu pex**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](ISSU命令.files/image002.png){border="0" width="62" height="25"}]{lang="EN-US"}]{#struct_0_71526_x1155_x1678811533}
-:::
+![说明](ISSU命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:\"KaiTi_GB2312\",\"serif\""}]{#struct_0_71526_x1155_x2025463003}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[issu pex]{lang="EN-US"}**]{#struct_0_71526_x1155_x1678811536}[命令用来]{style="font-family:宋体"}[指定]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的升级软件包。]{style="font-family:宋体"}
+**[issu pex**]命令用来指定PEX设备的升级软件包。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1622178476}
+【命令】
 
-[**[issu pex ]{lang="EN-US"}***[pex-model]{lang="EN-US"}***[ file ]{lang="EN-US"}**[{ **boot** *filename* \| **system** *filename* \| **feature** *filename*&\<1-30\> } **\***]{lang="EN-US"}]{#struct_0_71526_x1155_350125698}
+**[issu pex ***pex-model*** file **[{ **boot** *filename* \| **system** *filename* \| **feature** *filename*&\<1-30\> } **\***]]
 
-[**[issu pex ]{lang="EN-US"}***[pex-model]{lang="EN-US"}***[ file ipe ]{lang="EN-US"}***[ipe-filename]{lang="EN-US"}*]{#struct_0_71526_x1155_x1678811535}
+**[issu pex ***pex-model*** file ipe ***ipe-filename*]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1218893949}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1678811538}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x815609422}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_x1678811537}
+network-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x56094535}
+【参数】
 
-[*[pex-model]{lang="EN-US"}*]{#struct_0_71526_x1155_x1678811540}[：设备支持的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的型号，该参数必须完整输入，不区分大小写。可输入]{style="font-family:宋体"}**[boot-loader pex ]{lang="EN-US"}[？]{style="font-family:宋体"}**[，回车，来获取该参数的取值。]{style="font-family:宋体"}
+*[pex-model*]：设备支持的PEX设备的型号，该参数必须完整输入，不区分大小写。可输入**boot-loader pex ？**，回车，来获取该参数的取值。
 
-[**[boot]{lang="EN-US"}**]{#struct_0_71526_x1155_x459051382}[：表示]{style="font-family:宋体"}[Boot]{lang="EN-US"}[包。]{style="font-family:宋体"}
+**[boot**]：表示Boot包。
 
-[**[system]{lang="EN-US"}**]{#struct_0_71526_x1155_x1678811539}[：表示]{style="font-family:宋体"}[System]{lang="EN-US"}[包。]{style="font-family:宋体"}
+**[system**]：表示System包。
 
-[**[feature]{lang="EN-US"}**]{#struct_0_71526_x1155_750474519}[：表示]{style="font-family:宋体"}[Feature]{lang="EN-US"}[包。]{style="font-family:宋体"}
+**[feature**]：表示Feature包。
 
-[*[filename]{lang="EN-US"}*]{#struct_0_71526_x1155_x1696444260}[：表示软件包的文件名，以]{style="font-family:宋体"}[.bin]{lang="EN-US"}[作为后缀名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}[&\<1-30\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[30]{lang="EN-US"}[次。]{style="font-family:宋体"}
+*[filename*]：表示软件包的文件名，以.bin作为后缀名，为1～63个字符的字符串，不区分大小写。&\<1-30\>表示前面的参数最多可以输入30次。
 
-[**[ipe]{lang="EN-US"}***[ ipe-filename]{lang="EN-US"}*]{#struct_0_71526_x1155_x1678811542}[：]{style="font-family:宋体"}[IPE]{lang="EN-US"}[文件名，以]{style="font-family:宋体"}[.ipe]{lang="EN-US"}[作为后缀名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+**[ipe*** ipe-filename*]：IPE文件名，以.ipe作为后缀名，为1～63个字符的字符串，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_703748032}
+【使用指导】
 
-[[该命令只是指定]{style="font-family:宋体"}[PEX]{lang="EN-US"}]{#struct_0_71526_x1155_x1678811541}[设备的升级软件包，并不执行升级动作，而是等主控板升级时，]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备使用这些升级软件包启动来完成升级。组网环境不同，]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的具体升级时机不同，具体描述请参见"基础配置指导"中的"]{style="font-family:宋体"}[ISSU]{lang="EN-US"}["。如果不进行]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[升级，而仅仅是重启]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备，该命令配置的软件包将不会生效。]{style="font-family:宋体"}
+该命令只是指定PEX设备的升级软件包，并不执行升级动作，而是等主控板升级时，PEX设备使用这些升级软件包启动来完成升级。组网环境不同，PEX设备的具体升级时机不同，具体描述请参见"基础配置指导"中的"ISSU"。如果不进行ISSU升级，而仅仅是重启PEX设备，该命令配置的软件包将不会生效。
 
-[[当配置该命令时，命令中指定的软件包]{style="font-family:宋体"}[/IPE]{lang="EN-US"}]{#struct_0_71526_x1155_x2070225967}[文件必须放在存储介质主分区的根目录下。]{style="font-family:宋体"}
+当配置该命令时，命令中指定的软件包/IPE文件必须放在存储介质主分区的根目录下。
 
-[[对于本地无存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}]{#struct_0_71526_x1155_608314116}[设备，输入该命令后，系统将自动执行以下操作：]{style="font-family:宋体"}
+对于本地无存储介质的PEX设备，输入该命令后，系统将自动执行以下操作：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[进行命令行合法性检查。]{style="font-family:宋体"}]{#struct_0_71526_x1155_608379652}
+·进行命令行合法性检查。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[将升级文件全部拷贝到系统中所有的主控板上。如果指定的是]{style="font-family:宋体"}]{#struct_0_71526_x1155_x2069767215}[IPE]{lang="EN-US"}[文件，那么会自动解压到所有主控板上。]{style="font-family:宋体"}
+·将升级文件全部拷贝到系统中所有的主控板上。如果指定的是IPE文件，那么会自动解压到所有主控板上。
 
-[[对于本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}]{#struct_0_71526_x1155_x1605932402}[设备，输入该命令后，系统将自动执行以下操作：]{style="font-family:宋体"}
+对于本地有存储介质的PEX设备，输入该命令后，系统将自动执行以下操作：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[进行命令行合法性检查。]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1053679595}
+·进行命令行合法性检查。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[将升级文件全部拷贝到系统中所有的主控板和该类型的]{style="font-family:宋体"}]{#struct_0_71526_x1155_x2069832751}[PEX]{lang="EN-US"}[设备上。如果指定的是]{style="font-family:宋体"}[IPE]{lang="EN-US"}[文件，则会自动解压到所有该类型的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备上。]{style="font-family:宋体"}
+·将升级文件全部拷贝到系统中所有的主控板和该类型的PEX设备上。如果指定的是IPE文件，则会自动解压到所有该类型的PEX设备上。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[拷贝完成后，提示用户是否需要删除源软件包。如果用户确认，则自动删除源软件包，以便释放空间。]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1162363464}
+·拷贝完成后，提示用户是否需要删除源软件包。如果用户确认，则自动删除源软件包，以便释放空间。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_701244280}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x2070357040}[指定型号为]{style="font-family:宋体"}[PEX-S5120HI]{lang="EN-US"}[的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的升级软件包为]{style="font-family:宋体"}[flash:/devkit.bin]{lang="EN-US"}[（本地无存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备）。（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\# 指定型号为PEX-S5120HI的PEX设备的升级软件包为flash:/devkit.bin（本地无存储介质的PEX设备）。（分布式设备－独立运行模式/集中式IRF设备）
 
-[[\<Sysname\> issu pex PEX-S5120HI file feature flash:/devkit.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x2070422576}
+\<Sysname\> issu pex PEX-S5120HI file feature flash:/devkit.bin
 
-[Verifying the file flash:/devkit.bin on slot 1\...Done.]{lang="EN-US"}
+Verifying the file flash:/devkit.bin on slot 1\...Done.
 
-[File flash:/devkit.bin already exists on slot 1.]{lang="EN-US"}
+File flash:/devkit.bin already exists on slot 1.
 
-[Overwrite the existing files? \[Y/N\]:Y]{lang="EN-US"}
+Overwrite the existing files? [Y/N:Y]
 
-[Copying file flash:/devkit.bin to slot1#flash:/devkit.bin\...Done.]{lang="EN-US"}
+Copying file flash:/devkit.bin to slot1#flash:/devkit.bin\...Done.
 
-[\<Sysname\>]{lang="EN-US"}
+\<Sysname\>
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1658709735}[指定型号为]{style="font-family:宋体"}[PEX-S5120HI]{lang="EN-US"}[的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的升级软件包为]{style="font-family:宋体"}[flash:/devkit.bin]{lang="EN-US"}[（本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备）。（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\# 指定型号为PEX-S5120HI的PEX设备的升级软件包为flash:/devkit.bin（本地有存储介质的PEX设备）。（分布式设备－独立运行模式/集中式IRF设备）
 
-[[\<Sysname\> issu pex PEX-S5500 file feature flash:/devkit.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x2070488112}
+\<Sysname\> issu pex PEX-S5500 file feature flash:/devkit.bin
 
-[Verifying the file flash:/devkit.bin on slot 1\...Done.]{lang="EN-US"}
+Verifying the file flash:/devkit.bin on slot 1\...Done.
 
-[File flash:/devkit.bin already exists on slot 110.]{lang="EN-US"}
+File flash:/devkit.bin already exists on slot 110.
 
-[Overwrite the existing files? \[Y/N\]:Y]{lang="EN-US"}
+Overwrite the existing files? [Y/N:Y]
 
-[Copying file flash:/devkit.bin to slot110#flash:/devkit.bin\...Done.]{lang="EN-US"}
+Copying file flash:/devkit.bin to slot110#flash:/devkit.bin\...Done.
 
-[Delete flash:/devkit.bin from slot 1? \[Y/N\]:Y]{lang="EN-US"}
+Delete flash:/devkit.bin from slot 1? [Y/N:Y]
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x114136853}[指定型号为]{style="font-family:宋体"}[PEX-S5120HI]{lang="EN-US"}[的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的升级软件包为]{style="font-family:宋体"}[flash:/test.ipe]{lang="EN-US"}[（本地无存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备）。（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\# 指定型号为PEX-S5120HI的PEX设备的升级软件包为flash:/test.ipe（本地无存储介质的PEX设备）。（分布式设备－独立运行模式/集中式IRF设备）
 
-[[\<Sysname\> issu pex PEX-S5120HI file ipe flash:/test.ipe]{lang="EN-US"}]{#struct_0_71526_x1155_x2070029360}
+\<Sysname\> issu pex PEX-S5120HI file ipe flash:/test.ipe
 
-[Verifying the file flash:/test.ipe on slot 1\...\...\...\...Done.]{lang="EN-US"}
+Verifying the file flash:/test.ipe on slot 1\...\...\...\...Done.
 
-[File flash:/devkit.bin already exists on slot 1.]{lang="EN-US"}
+File flash:/devkit.bin already exists on slot 1.
 
-[File flash:/manufacture.bin already exists on slot 1.]{lang="EN-US"}
+File flash:/manufacture.bin already exists on slot 1.
 
-[Overwrite the existing files? \[Y/N\]:Y]{lang="EN-US"}
+Overwrite the existing files? [Y/N:Y]
 
-[Decompressing file devkit.bin to flash:/devkit.bin. \.....Done.]{lang="EN-US"}
+Decompressing file devkit.bin to flash:/devkit.bin. \.....Done.
 
-[Decompressing file manufacture.bin to flash:/manufacture.bin\.....Done.]{lang="EN-US"}
+Decompressing file manufacture.bin to flash:/manufacture.bin\.....Done.
 
-[File flash:/devkit.bin already exists on slot 2.]{lang="EN-US"}
+File flash:/devkit.bin already exists on slot 2.
 
-[File flash:/manufacture.bin already exists on slot 2.]{lang="EN-US"}
+File flash:/manufacture.bin already exists on slot 2.
 
-[Overwrite the existing files? \[Y/N\]:Y]{lang="EN-US"}
+Overwrite the existing files? [Y/N:Y]
 
-[Copying file flash:/devkit.bin to slot2#flash:/devkit.bin. \...Done.]{lang="EN-US"}
+Copying file flash:/devkit.bin to slot2#flash:/devkit.bin. \...Done.
 
-[Copying file flash:/manufacture.bin to slot2#flash:/manufacture.bin\....Done.]{lang="EN-US"}
+Copying file flash:/manufacture.bin to slot2#flash:/manufacture.bin\....Done.
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x2070094896}[指定型号为]{style="font-family:宋体"}[PEX-S5120HI]{lang="EN-US"}[的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的升级软件包为]{style="font-family:宋体"}[flash:/test.ipe]{lang="EN-US"}[（本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备）。（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\# 指定型号为PEX-S5120HI的PEX设备的升级软件包为flash:/test.ipe（本地有存储介质的PEX设备）。（分布式设备－独立运行模式/集中式IRF设备）
 
-[[\<Sysname\> issu pex PEX-S5120HI file ipe flash:/test.ipe]{lang="EN-US"}]{#struct_0_71526_x1155_1883751731}
+\<Sysname\> issu pex PEX-S5120HI file ipe flash:/test.ipe
 
-[Verifying the file flash:/test.ipe on slot 1\...\...\.....Done.]{lang="EN-US"}
+Verifying the file flash:/test.ipe on slot 1\...\...\.....Done.
 
-[Decompressing file devkit-patch.bin to flash:/devkit-patch.bin\...Done.]{lang="EN-US"}
+Decompressing file devkit-patch.bin to flash:/devkit-patch.bin\...Done.
 
-[Decompressing file manufacture.bin to flash:/manufacture.bin\.....Done.]{lang="EN-US"}
+Decompressing file manufacture.bin to flash:/manufacture.bin\.....Done.
 
-[Copying file flash:/devkit-patch.bin to slot110#flash:/devkit-patch.bin\...Done.]{lang="EN-US"}
+Copying file flash:/devkit-patch.bin to slot110#flash:/devkit-patch.bin\...Done.
 
-[Copying file flash:/manufacture.bin to slot110#flash:/manufacture.bin\...Done.]{lang="EN-US"}
+Copying file flash:/manufacture.bin to slot110#flash:/manufacture.bin\...Done.
 
-[Delete flash:/devkit-patch.bin from slot 1? \[Y/N\]:Y]{lang="EN-US"}
+Delete flash:/devkit-patch.bin from slot 1? [Y/N:Y]
 
-[Delete flash:/manufacture.bin from slot 1? \[Y/N\]:Y]{lang="EN-US"}
+Delete flash:/manufacture.bin from slot 1? [Y/N:Y]
 
-[Delete flash:/test.ipe from slot 1? \[Y/N\]:Y]{lang="EN-US"}
+Delete flash:/test.ipe from slot 1? [Y/N:Y]
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x2070160432}[指定型号为]{style="font-family:宋体"}[PEX-S5120HI]{lang="EN-US"}[的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的升级软件包为]{style="font-family:宋体"}[flash:/devkit.bin]{lang="EN-US"}[（本地无存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备）。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\# 指定型号为PEX-S5120HI的PEX设备的升级软件包为flash:/devkit.bin（本地无存储介质的PEX设备）。（分布式设备－IRF模式）
 
-[[\<Sysname\> issu pex PEX-S5120HI file feature flash:/devkit.bin]{lang="EN-US"}]{#struct_0_71526_x1155_x158790798}
+\<Sysname\> issu pex PEX-S5120HI file feature flash:/devkit.bin
 
-[Verifying the file flash:/devkit.bin on chassis 1 slot 0\...\...\...\...Done.]{lang="EN-US"}
+Verifying the file flash:/devkit.bin on chassis 1 slot 0\...\...\...\...Done.
 
-[File flash:/devkit.bin already exists on chassis 1 slot 1.]{lang="EN-US"}
+File flash:/devkit.bin already exists on chassis 1 slot 1.
 
-[Overwrite the existing files? \[Y/N\]:Y]{lang="EN-US"}
+Overwrite the existing files? [Y/N:Y]
 
-[Copying file flash:/devkit.bin to chassis1#slot1#flash:/devkit.bin\...Done.]{lang="EN-US"}
+Copying file flash:/devkit.bin to chassis1#slot1#flash:/devkit.bin\...Done.
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x2070225968}[指定型号为]{style="font-family:宋体"}[PEX-S5120HI]{lang="EN-US"}[的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的升级软件包为]{style="font-family:宋体"}[flash:/devkit.bin]{lang="EN-US"}[（本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备）。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\# 指定型号为PEX-S5120HI的PEX设备的升级软件包为flash:/devkit.bin（本地有存储介质的PEX设备）。（分布式设备－IRF模式）
 
-[[\<Sysname\> issu pex PEX-S5120HI file feature flash:/devkit.bin]{lang="EN-US"}]{#struct_0_71526_x1155_275293987}
+\<Sysname\> issu pex PEX-S5120HI file feature flash:/devkit.bin
 
-[Verifying the file flash:/devkit.bin on chassis 1 slot 0\...\...\...\...Done.]{lang="EN-US"}
+Verifying the file flash:/devkit.bin on chassis 1 slot 0\...\...\...\...Done.
 
-[File flash:/devkit.bin already exists on chassis 101 slot 0.]{lang="EN-US"}
+File flash:/devkit.bin already exists on chassis 101 slot 0.
 
-[Overwrite the existing files? \[Y/N\]:Y]{lang="EN-US"}
+Overwrite the existing files? [Y/N:Y]
 
-[Copying file flash:/devkit.bin to chassis101#slot0#flash:/devkit.bin\...Done.]{lang="EN-US"}
+Copying file flash:/devkit.bin to chassis101#slot0#flash:/devkit.bin\...Done.
 
-[Delete flash:/devkit.bin from chassis 1 slot 1? \[Y/N\]:Y]{lang="EN-US"}
+Delete flash:/devkit.bin from chassis 1 slot 1? [Y/N:Y]
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x2069767216}[指定型号为]{style="font-family:宋体"}[PEX-S5120HI]{lang="EN-US"}[的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的升级软件包为]{style="font-family:宋体"}[flash:/test.ipe]{lang="EN-US"}[（本地无存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备）。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\# 指定型号为PEX-S5120HI的PEX设备的升级软件包为flash:/test.ipe（本地无存储介质的PEX设备）。（分布式设备－IRF模式）
 
-[[\<Sysname\> issu pex PEX-S5120HI file ipe flash:/test.ipe]{lang="EN-US"}]{#struct_0_71526_x1155_1122950953}
+\<Sysname\> issu pex PEX-S5120HI file ipe flash:/test.ipe
 
-[Verifying the file flash:/test.ipe on chassis 1 slot 0\...\...\...\...Done.]{lang="EN-US"}
+Verifying the file flash:/test.ipe on chassis 1 slot 0\...\...\...\...Done.
 
-[File flash:/devkit.bin already exists on chassis 1 slot 0.]{lang="EN-US"}
+File flash:/devkit.bin already exists on chassis 1 slot 0.
 
-[File flash:/manufacture.bin already exists on chassis 1 slot 0.]{lang="EN-US"}
+File flash:/manufacture.bin already exists on chassis 1 slot 0.
 
-[Overwrite the existing files? \[Y/N\]:Y]{lang="EN-US"}
+Overwrite the existing files? [Y/N:Y]
 
-[Decompressing file devkit.bin to flash:/devkit.bin. \.....Done.]{lang="EN-US"}
+Decompressing file devkit.bin to flash:/devkit.bin. \.....Done.
 
-[Decompressing file manufacture.bin to flash:/manufacture.bin\.....Done.]{lang="EN-US"}
+Decompressing file manufacture.bin to flash:/manufacture.bin\.....Done.
 
-[File flash:/devkit.bin already exists on chassis 1 slot 1.]{lang="EN-US"}
+File flash:/devkit.bin already exists on chassis 1 slot 1.
 
-[File flash:/manufacture.bin already exists on chassis 1 slot 1.]{lang="EN-US"}
+File flash:/manufacture.bin already exists on chassis 1 slot 1.
 
-[Overwrite the existing files? \[Y/N\]:Y]{lang="EN-US"}
+Overwrite the existing files? [Y/N:Y]
 
-[Copying file flash:/devkit.bin to chasis1#slot1#flash:/devkit.bin. \...Done.]{lang="EN-US"}
+Copying file flash:/devkit.bin to chasis1#slot1#flash:/devkit.bin. \...Done.
 
-[Copying file flash:/manufacture.bin to chassis1#slot1#flash:/manufacture.bin\....Done.]{lang="EN-US"}
+Copying file flash:/manufacture.bin to chassis1#slot1#flash:/manufacture.bin\....Done.
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x2069832752}[指定型号为]{style="font-family:宋体"}[PEX-S5120HI]{lang="EN-US"}[的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备的升级软件包为]{style="font-family:宋体"}[flash:/test.ipe]{lang="EN-US"}[（本地有存储介质的]{style="font-family:宋体"}[PEX]{lang="EN-US"}[设备）。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\# 指定型号为PEX-S5120HI的PEX设备的升级软件包为flash:/test.ipe（本地有存储介质的PEX设备）。（分布式设备－IRF模式）
 
-[[\<Sysname\> issu pex PEX-S5120HI file ipe flash:/test.ipe]{lang="EN-US"}]{#struct_0_71526_x1155_x2070291505}
+\<Sysname\> issu pex PEX-S5120HI file ipe flash:/test.ipe
 
-[Verifying the file flash:/test.ipe on chassis 1 slot 0\...\...\...\...Done.]{lang="EN-US"}
+Verifying the file flash:/test.ipe on chassis 1 slot 0\...\...\...\...Done.
 
-[Decompressing file devkit.bin to flash:/devkit.bin\...Done.]{lang="EN-US"}
+Decompressing file devkit.bin to flash:/devkit.bin\...Done.
 
-[Decompressing file manufacture.bin to flash:/manufacture.bin\.....Done.]{lang="EN-US"}
+Decompressing file manufacture.bin to flash:/manufacture.bin\.....Done.
 
-[Copying file flash:/devkit.bin to chassis101#slot0#flash:/devkit.bin\...Done.]{lang="EN-US"}
+Copying file flash:/devkit.bin to chassis101#slot0#flash:/devkit.bin\...Done.
 
-[Copying file flash:/manufacture.bin to chassis101#slot0#flash:/manufacture.bin\...Done.]{lang="EN-US"}
+Copying file flash:/manufacture.bin to chassis101#slot0#flash:/manufacture.bin\...Done.
 
-[Delete flash:/devkit.bin from chassis 1 slot 1? \[Y/N\]:Y]{lang="EN-US"}
+Delete flash:/devkit.bin from chassis 1 slot 1? [Y/N:Y]
 
-[Delete flash:/manufacture.bin from chassis 1 slot 1? \[Y/N\]:Y]{lang="EN-US"}
+Delete flash:/manufacture.bin from chassis 1 slot 1? [Y/N:Y]
 
-[Delete flash:/test.ipe from chassis 1 slot 1? \[Y/N\]:Y]{lang="EN-US"}
+Delete flash:/test.ipe from chassis 1 slot 1? [Y/N:Y]
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1469144685}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[i]{lang="EN-US"}[ssu load]{lang="EN-US"}**]{#struct_0_71526_x1155_x1835325935}
-:::::
-
-::::: {#-1621319551 .myid}
-[]{#_Toc404782751}[]{#struct_0_71526_x1155_x659045714}[]{#_Toc329856484}[]{#_Toc315975329}
+·**issu load**
 
 **ISSU \-- ISSU配置命令 \-- issu rollback**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](ISSU命令.files/image001.png){#图片 7 border="0" width="63" height="25"}]{lang="EN-US"}]{#struct_0_71526_x1155_x1520522594}
-:::
+![说明](ISSU命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:\"KaiTi_GB2312\",\"serif\""}]{#struct_0_71526_x1155_818906663}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[issu rollback**]命令用来回滚到升级前的版本。
 
-[**[issu rollback]{lang="EN-US"}**]{#struct_0_71526_x1155_462453296}[命令用来回滚到升级前的版本。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1255016507}
+**[issu **]**rollback**
 
-[**[issu ]{lang="EN-US"}**]{#struct_0_71526_x1155_x952435803}**[rollback]{lang="EN-US"}**
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1535399038}
+用户视图
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_591541392}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1099983146}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_569308571}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1556260218}
+设备支持自动回滚和手动回滚，自动回滚定时器的时长由**issu rollback-timer**命令配置；手工回滚由**issu rollback**命令触发。
 
-[[设备支持自动回滚和手动回滚，自动回滚定时器的时长由]{style="font-family:宋体"}**[issu rollback-timer]{lang="EN-US"}**]{#struct_0_71526_x1155_x952370267}[命令配置；手工回滚由]{style="font-family:宋体"}**[issu ]{lang="EN-US"}[rollback]{lang="EN-US"}**[命令触发。]{style="font-family:宋体"}
+·不兼容版本升级时，不会启动回滚定时器，即不支持自动回滚。兼容版本只有执行**issu run switchover**命令时才会创建回滚定时器，因此，自动回滚只有在兼容版本ISSU升级状态为Swtiching后才生效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不兼容版本升级时，不会启动回滚定时器，即不支持自动回滚。兼容版本只有执行]{style="font-family:宋体"}]{#struct_0_71526_x1155_1128985134}**[issu run switchover]{lang="EN-US"}**[命令时才会创建回滚定时器，因此，自动回滚只有在兼容版本]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[升级状态为]{style="font-family:宋体"}[Swtiching]{lang="EN-US"}[后才生效。]{style="font-family:宋体"}
+·单主控兼容升级不支持自动回滚。（分布式设备－独立运行模式/分布式设备－IRF模式）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[单主控兼容升级不支持自动回滚。（分布式设备－独立运行模式]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1206201113}[/]{lang="EN-US"}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+·当ISSU升级状态为Loading时进行手工回滚，可能会回滚失败。回滚操作结束后，请使用**display version**命令来查看设备当前运行的版本，验证回滚结果。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{style="font-family:宋体"}]{#struct_0_71526_x1155_x833990727}[ISSU]{lang="EN-US"}[升级状态为]{style="font-family:宋体"}[Loading]{lang="EN-US"}[时进行手工回滚，可能会回滚失败。回滚操作结束后，请使用]{style="font-family:宋体"}**[display version]{lang="EN-US"}**[命令来查看设备当前运行的版本，验证回滚结果。]{style="font-family:宋体"}
+·当ISSU升级状态为Loaded和Accepted时，支持手工回滚。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}[ISSU]{lang="EN-US"}]{#struct_0_71526_x1155_x952304731}[升级状态为]{lang="EN-US" style="font-family:宋体"}[Loaded]{lang="EN-US"}[和]{lang="EN-US" style="font-family:宋体"}[Accepted]{lang="EN-US"}[时，支持手工回滚。]{lang="EN-US" style="font-family:宋体"}
+·兼容升级、ISSU升级状态为Switching和Switchover时，支持手工回滚。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[兼容升级、]{lang="EN-US" style="font-family:宋体"}[ISSU]{lang="EN-US"}]{#struct_0_71526_x1155_378085311}[升级状态为]{lang="EN-US" style="font-family:宋体"}[Switching]{lang="EN-US"}[和]{lang="EN-US" style="font-family:宋体"}[Switchover]{lang="EN-US"}[时，支持手工回滚。]{lang="EN-US" style="font-family:宋体"}
+·不兼容升级、ISSU升级状态为Switching时，不支持手工回滚。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不兼容升级、]{style="font-family:宋体"}]{#struct_0_71526_x1155_966588653}[ISSU]{lang="EN-US"}[升级状态为]{style="font-family:宋体"}[Switching]{lang="EN-US"}[时，不支持手工回滚。]{style="font-family:宋体"}
+·不管兼容升级还是不兼容升级，Switching状态时如果进行手工回滚或者发生自动回滚，整个系统是会重启。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不管兼容升级还是不兼容升级，]{style="font-family:宋体"}]{#struct_0_71526_x1155_1702126176}[Switching]{lang="EN-US"}[状态时如果进行手工回滚或者发生自动回滚，整个系统是会重启。]{style="font-family:宋体"}
+·当ISSU升级状态为Commiting时，不允许进行手工和自动回滚操作。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{style="font-family:宋体"}]{#struct_0_71526_x1155_1392913920}[ISSU]{lang="EN-US"}[升级状态为]{style="font-family:宋体"}[Commiting]{lang="EN-US"}[时，不允许进行手工和自动回滚操作。]{style="font-family:宋体"}
+·多成员设备的情况下，执行**issu run switchover**后，再进行回滚操作，回滚保证版本回到升级前，并且主备状态也会和升级前一致。（集中式IRF设备）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[多成员设备的情况下，执行]{style="font-family:宋体"}]{#struct_0_71526_x1155_139262387}**[issu run switchover]{lang="EN-US"}**[后，再进行回滚操作，回滚保证版本回到升级前，并且主备状态也会和升级前一致。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+·多成员设备的情况下，执行**issu run switchover**后，再进行回滚操作，回滚只保证版本回到升级前，但不能保证主备状态和升级前一致。（分布式设备－IRF模式）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[多成员设备的情况下，执行]{style="font-family:宋体"}]{#struct_0_71526_x1155_2094463635}**[issu run switchover]{lang="EN-US"}**[后，再进行回滚操作，回滚只保证版本回到升级前，但不能保证主备状态和升级前一致。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_325644002}
+\# 回滚到升级之前的版本。
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_842669329}[回滚到升级之前的版本。]{style="font-family:宋体"}
+\<Sysname\> issu rollback
 
-[[\<Sysname\> issu rollback]{lang="EN-US"}]{#struct_0_71526_x1155_x952239195}
+This command will quit the ISSU process and roll back to the previous version. Continue? [Y/N:y]
 
-[This command will quit the ISSU process and roll back to the previous version. Continue? \[Y/N\]:y]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_719856155}
+·**issu accept**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[issu accept]{lang="EN-US"}**]{#struct_0_71526_x1155_x952972818}
+·**issu commit**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[issu commit]{lang="EN-US"}**]{#struct_0_71526_x1155_x1945564743}
+·**issu load**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[issu load]{lang="EN-US"}**]{#struct_0_71526_x1155_197066785}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[issu run switchover]{lang="EN-US"}**]{#struct_0_71526_x1155_x573801529}
-:::::
-
-::::: {#-390052592 .myid}
-[]{#_Toc404782752}[]{#struct_0_71526_x1155_460754537}[]{#_Toc329856485}[]{#_Toc315975328}[]{#_Toc304800260}[]{#_Toc304813530}[]{#_Toc299981207}[]{#_Toc299981210}[]{#_Toc299981212}[]{#_Toc299981213}
+·**issu run switchover**
 
 **ISSU \-- ISSU配置命令 \-- issu rollback-timer**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](ISSU命令.files/image001.png){#图片 8 border="0" width="63" height="25"}]{lang="EN-US"}]{#struct_0_71526_x1155_x951583835}
-:::
+![说明](ISSU命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:\"KaiTi_GB2312\",\"serif\""}]{#struct_0_71526_x1155_155096216}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[issu rollback-timer**]命令用来设置回滚定时器时长。
 
-[**[issu rollback-timer]{lang="EN-US"}**]{#struct_0_71526_x1155_884292281}[命令用来设置回滚定时器时长。]{style="font-family:宋体"}
+**[undo issu rollback-timer**]命令用来恢复缺省情况。
 
-[**[undo issu rollback-timer]{lang="EN-US"}**]{#struct_0_71526_x1155_1254782287}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x952173662}
+**[issu** **rollback-timer** *minutes*]
 
-[**[issu]{lang="EN-US"}**[ **rollback-timer** *minutes*]{lang="EN-US"}]{#struct_0_71526_x1155_767923247}
+**[undo issu rollback-timer**]
 
-[**[undo issu rollback-timer]{lang="EN-US"}**]{#struct_0_71526_x1155_2070217851}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x860262584}
+回滚定时器的时长为45分钟。
 
-[[回滚定时器的时长为]{style="font-family:宋体"}[45]{lang="EN-US"}]{#struct_0_71526_x1155_1828653520}[分钟。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x2057465491}
+系统视图
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_752719838}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x2123055334}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_x952108126}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x852650276}
+*[minutes*]：回滚定时器的时长，取值范围为0～120，单位为分钟。如果时长设置为0，则表示关闭自动回滚功能。
 
-[*[minutes]{lang="EN-US"}*]{#struct_0_71526_x1155_1337520844}[：回滚定时器的时长，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[120]{lang="EN-US"}[，单位为分钟。如果时长设置为]{style="font-family:宋体"}[0]{lang="EN-US"}[，则表示关闭自动回滚功能。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1059187596}
+兼容版本升级的情况下，执行**issu run switchover**命令后系统会自动启动回滚定时器。如果在指定的时间内（回滚定时器超时前）未执行**issu accept**或者**issu commit**命令，则系统会自动回滚到升级前的版本。
 
-[[兼容版本升级的情况下，执行]{style="font-family:宋体"}**[issu run switchover]{lang="EN-US"}**]{#struct_0_71526_x1155_1944819654}[命令后系统会自动启动回滚定时器。如果在指定的时间内（回滚定时器超时前）未执行]{style="font-family:宋体"}**[issu accept]{lang="EN-US"}**[或者]{style="font-family:宋体"}**[issu commit]{lang="EN-US"}**[命令，则系统会自动回滚到升级前的版本。]{style="font-family:宋体"}
+设备进行升级时，不会启动回滚定时器。（集中式设备）
 
-[[设备进行升级时，不会启动回滚定时器。（集中式设备）]{style="font-family:宋体"}]{#struct_0_71526_x1155_2105410703}
+当系统中只配备了一块主控板并进行升级时，不会启动回滚定时器。（分布式设备－独立运行模式/分布式设备－IRF模式）
 
-[[当系统中只配备了一块主控板并进行升级时，不会启动回滚定时器。（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_71526_x1155_942611289}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+当系统中只有一台成员设备并进行升级时，不会启动回滚定时器。（集中式IRF设备）
 
-[[当系统中只有一台成员设备并进行升级时，不会启动回滚定时器。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_x1073811346}[设备）]{style="font-family:宋体"}
+不兼容升级不会启动回滚定时器。
 
-[[不兼容升级不会启动回滚定时器。]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1114088380}
+新设置的时长会在下次ISSU升级中生效。
 
-[[新设置的时长会在下次]{style="font-family:宋体"}[ISSU]{lang="EN-US"}]{#struct_0_71526_x1155_x952042590}[升级中生效。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1151928422}
+\# 设置回滚定时器时长为50分钟。
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_364103872}[设置回滚定时器时长为]{style="font-family:宋体"}[50]{lang="EN-US"}[分钟。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_71526_x1155_1179246633}
+Sysname issu rollback-timer 50
 
-[\[Sysname\] issu rollback-timer 50]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_689565928}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[issu rollback]{lang="EN-US"}**]{#struct_0_71526_x1155_x1873338233}
-:::::
-
-::::: {#-1869046052 .myid}
-[]{#_Toc404782753}[]{#struct_0_71526_x1155_507369303}[]{#_Toc329856481}
+·**issu rollback**
 
 **ISSU \-- ISSU配置命令 \-- issu run switchover**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](ISSU命令.files/image001.png){#图片 4 border="0" width="63" height="25"}]{lang="EN-US"}]{#struct_0_71526_x1155_x621045407}
-:::
+![说明](ISSU命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:\"KaiTi_GB2312\",\"serif\""}]{#struct_0_71526_x1155_x951977054}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+分布式设备－独立运行模式：
 
-[[分布式设备－独立运行模式：]{style="font-family:宋体"}]{#struct_0_71526_x1155_x659242322}
+**[issu run switchover**]命令在升级兼容软件包的情况下，用来进行ISSU倒换，并且升级业务板和网板。升级不兼容软件包的情况下，用来进行ISSU倒换，并且将剩余待升级的所有单板进行升级。
 
-[**[issu run switchover]{lang="EN-US"}**]{#struct_0_71526_x1155_x1159264082}[命令在升级兼容软件包的情况下，用来进行]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[倒换，并且升级业务板和网板。升级不兼容软件包的情况下，用来进行]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[倒换，并且将剩余待升级的所有单板进行升级。]{style="font-family:宋体"}
+集中式IRF设备：
 
-[[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_x921234086}[设备：]{style="font-family:宋体"}
+**[issu run switchover**]命令在升级兼容软件包的情况下，用来进行ISSU倒换。在升级不兼容软件包的情况下，用来进行ISSU倒换，并且升级剩余的成员设备。
 
-[**[issu run switchover]{lang="EN-US"}**]{#struct_0_71526_x1155_x2077217214}[命令在升级兼容软件包的情况下，用来进行]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[倒换。在升级不兼容软件包的情况下，用来进行]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[倒换，并且升级剩余的成员设备。]{style="font-family:宋体"}
+分布式设备－IRF模式单成员设备：
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_287403938}[模式单成员设备：]{style="font-family:宋体"}
+**[issu run switchover**]命令在升级兼容软件包的情况下，用来进行ISSU倒换，并且升级业务板和网板。升级不兼容软件包的情况下，用来进行ISSU倒换，并且将剩余待升级的所有单板进行升级。
 
-[**[issu run switchover]{lang="EN-US"}**]{#struct_0_71526_x1155_x185266421}[命令在升级兼容软件包的情况下，用来进行]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[倒换，并且升级业务板和网板。升级不兼容软件包的情况下，用来进行]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[倒换，并且将剩余待升级的所有单板进行升级。]{style="font-family:宋体"}
+分布式设备－IRF模式多成员设备：
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_746794364}[模式多成员设备：]{style="font-family:宋体"}
+**[issu run switchover**]命令在升级兼容软件包的情况下，用来进行ISSU倒换。升级不兼容软件包的情况下，用来进行ISSU倒换，并且将剩余待升级的成员设备进行升级。
 
-[**[issu run switchover]{lang="EN-US"}**]{#struct_0_71526_x1155_x952435806}[命令在升级兼容软件包的情况下，用来进行]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[倒换。升级不兼容软件包的情况下，用来进行]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[倒换，并且将剩余待升级的成员设备进行升级。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1535071358}
+**[issu run switchover**]
 
-[**[issu run switchover]{lang="EN-US"}**]{#struct_0_71526_x1155_1806526826}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_382864507}
+用户视图
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_1466879444}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x2029641077}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_x10942997}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x952370270}
+(1)分布式设备－独立运行模式
 
-[[(1)[      ]{style="font:7.0pt "}]{lang="EN-US"}[分布式设备－独立运行模式]{style="font-family:宋体"}]{#struct_0_71526_x1155_1129443887}
+当设备上有两块主控板时，输入该命令后，系统将自动执行以下操作：
 
-[[当设备上有两块主控板时，输入该命令后，系统将自动执行以下操作：]{style="font-family:宋体"}]{#struct_0_71526_x1155_x2030005963}
+·兼容升级：增量升级时系统会将升级的进程进行进程级主备倒换；软重启或者重启升级时系统会将当前主用主控板使用原版本重新启动，将刚使用**issu load**命令升级的备用主控板上倒换成主用主控板。并升级业务板和网板。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[兼容升级：增量升级时系统会将升级的进程进行进程级主备倒换；软重启或者重启升级时系统会将当前主用主控板使用原版本重新启动，将刚使用]{style="font-family:宋体"}]{#struct_0_71526_x1155_x952239198}**[issu load]{lang="EN-US"}**[命令升级的备用主控板上倒换成主用主控板。并]{style="font-family:宋体"}[升级业务板和网板。]{lang="EN-US" style="font-family:宋体"}
+·不兼容升级：当前主用主控板、业务板和网板以新版本重新启动，刚使用**issu load**命令升级的备用主控板倒换成主用主控板，原有主用主控板、业务板和网板重启完成后即完成升级过程。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不兼容升级：当前主用主控板、业务板和网板以新版本重新启动，刚使用]{style="font-family:宋体"}]{#struct_0_71526_x1155_x951583838}**[issu load]{lang="EN-US"}**[命令升级的备用主控板倒换成主用主控板，原有主用主控板、业务板和网板重启完成后即完成升级过程。]{style="font-family:宋体"}
+当设备上只有一块主控板并需要升级时，不需要使用此命令。
 
-[[当设备上只有一块主控板并需要升级时，不需要使用此命令。]{style="font-family:宋体"}]{#struct_0_71526_x1155_154244248}
+(2)集中式IRF设备
 
-[[(2)[      ]{style="font:7.0pt "}]{lang="EN-US"}[集中式]{lang="EN-US" style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_71526_x1155_1035426339}[设备]{lang="EN-US" style="font-family:宋体"}
+从设备重启后，会自动批量备份主设备的配置和状态数据。请等待批量备份完成后，即分别通过**display device**、{.ItemListCharChar}**display mdc**和**display system internal ha service-group**命令{.ItemListCharChar}查看到所有单板处于normal状态、所有MDC处于active状态和所有服务的action显示为0后，再执行**issu run switchover**命令，否则，命令会执行失败。
 
-[[从设备重启后，会自动批量备份主设备的配置和状态数据。请等待批量备份完成后，即分别通过]{style="font-family:宋体"}**[display device]{lang="EN-US"}**]{#struct_0_71526_x1155_x1328272542}[[、]{style="font-family:宋体"}]{.ItemListCharChar}**[display mdc]{lang="EN-US"}**[和]{style="font-family:宋体"}**[display system internal ha service-group]{lang="EN-US"}**[[命令]{style="font-family:
-宋体"}]{.ItemListCharChar}[查看到所有单板处于]{style="font-family:宋体"}[normal]{lang="EN-US"}[状态、所有]{style="font-family:宋体"}[MDC]{lang="EN-US"}[处于]{style="font-family:宋体"}[active]{lang="EN-US"}[状态和所有服务的]{style="font-family:宋体"}[action]{lang="EN-US"}[显示为]{style="font-family:宋体"}[0]{lang="EN-US"}[后，再执行]{style="font-family:宋体"}**[issu run switchover]{lang="EN-US"}**[命令，否则，命令会执行失败。]{style="font-family:宋体"}
+输入该命令后，系统将自动执行以下操作：
 
-[[输入该命令后，系统将自动执行以下操作：]{style="font-family:宋体"}]{#struct_0_71526_x1155_x902451608}
+·兼容升级：增量升级时系统会对升级的进程进行了进程级主备倒换；软重启或者重启升级时系统会将当前主设备使用原版本重新启动，将刚使用issu load命令升级的从设备选举为新主设备。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[兼容升级：增量升级时系统会对升级的进程进行了进程级主备倒换；软重启或者重启升级时系统会将当前主设备使用原版本重新启动，将刚使用]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1945475587}[issu load]{lang="EN-US"}[命令升级的从设备选举为新主设备。]{style="font-family:宋体"}
+·不兼容版本升级：执行**issu load**后IRF分裂，生成两个的IRF。执行**issu run switchover**重启并升级原IRF，原IRF组重启后加入新的IRF即完成升级过程，系统选择新IRF的主设备为合并后IRF的主设备。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不兼容版本升级：执行]{style="font-family:宋体"}]{#struct_0_71526_x1155_x951977053}**[issu load]{lang="EN-US"}**[后]{style="font-family:宋体"}[IRF]{lang="EN-US"}[分裂，生成两个的]{style="font-family:宋体"}[IRF]{lang="EN-US"}[。执行]{style="font-family:宋体"}**[issu run switchover]{lang="EN-US"}**[重启并升级原]{style="font-family:宋体"}[IRF]{lang="EN-US"}[，原]{style="font-family:宋体"}[IRF]{lang="EN-US"}[组重启后加入新的]{style="font-family:宋体"}[IRF]{lang="EN-US"}[即完成升级过程，系统选择新]{style="font-family:宋体"}[IRF]{lang="EN-US"}[的主设备为合并后]{style="font-family:宋体"}[IRF]{lang="EN-US"}[的主设备。]{style="font-family:宋体"}
+当设备上只有一个成员并需要升级时，不需要使用此命令。
 
-[[当设备上只有一个成员并需要升级时，不需要使用此命令。]{style="font-family:宋体"}]{#struct_0_71526_x1155_x659176786}
+(3)分布式设备－IRF模式
 
-[[(3)[      ]{style="font:7.0pt "}]{lang="EN-US"}[分布式设备－]{style="font-family:宋体"}]{#struct_0_71526_x1155_47461979}[IRF]{lang="EN-US"}[模式]{style="font-family:宋体"}
+从设备重启后，会自动批量备份主设备的配置和状态数据。请等待批量备份完成后，即分别通过**display device**、{.ItemListCharChar}**display mdc**和**display system internal ha service-group**命令{.ItemListCharChar}查看到所有单板处于normal状态、所有MDC处于active状态和所有服务的action显示为0后，再执行**issu run switchover**命令，否则，命令会执行失败。
 
-[[从设备重启后，会自动批量备份主设备的配置和状态数据。请等待批量备份完成后，即分别通过]{style="font-family:宋体"}**[display device]{lang="EN-US"}**]{#struct_0_71526_x1155_x678302610}[[、]{style="font-family:宋体"}]{.ItemListCharChar}**[display mdc]{lang="EN-US"}**[和]{style="font-family:宋体"}**[display system internal ha service-group]{lang="EN-US"}**[[命令]{style="font-family:
-宋体"}]{.ItemListCharChar}[查看到所有单板处于]{style="font-family:宋体"}[normal]{lang="EN-US"}[状态、所有]{style="font-family:宋体"}[MDC]{lang="EN-US"}[处于]{style="font-family:宋体"}[active]{lang="EN-US"}[状态和所有服务的]{style="font-family:宋体"}[action]{lang="EN-US"}[显示为]{style="font-family:宋体"}[0]{lang="EN-US"}[后，再执行]{style="font-family:宋体"}**[issu run switchover]{lang="EN-US"}**[命令，否则，命令会执行失败。]{style="font-family:宋体"}
+当设备上只有一个成员设备，多个主控板时，输入该命令后，系统将自动执行以下操作：
 
-[[当设备上只有一个成员设备，多个主控板时，输入该命令后，系统将自动执行以下操作：]{style="font-family:宋体"}]{#struct_0_71526_x1155_900524914}
+·兼容升级：增量升级时系统会将升级的进程进行进程级主备倒换；软重启或者重启升级时系统会将当前主用主控板使用原版本重新启动，将刚使用**issu load**命令升级的备用主控板上倒换成主用主控板。同时升级业务板和网板。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[兼容升级：增量升级时系统会将升级的进程进行进程级主备倒换；软重启或者重启升级时系统会将当前主用主控板使用原版本重新启动，将刚使用]{style="font-family:宋体"}]{#struct_0_71526_x1155_x952370269}**[issu load]{lang="EN-US"}**[命令升级的备用主控板上倒换成主用主控板。]{style="font-family:宋体"}[同时升级业务板和网板。]{lang="EN-US" style="font-family:宋体"}
+·不兼容升级：当前主用主控板、业务板和网板以新版本重新启动，刚使用**issu load**命令升级的备用主控板倒换成主用主控板，原有主用主控板、业务板和网板重启完成后即完成升级过程。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不兼容升级：当前主用主控板、业务板和网板以新版本重新启动，刚使用]{style="font-family:宋体"}]{#struct_0_71526_x1155_1128854062}**[issu load]{lang="EN-US"}**[命令升级的备用主控板]{style="font-family:宋体"}[倒换成主用主控板，原有主用主控板、业务板和网板重启完成后即完成升级过程。]{style="font-family:宋体"}
+当设备上只有一个成员并且只有一个主控板且需要升级时，不需要使用此命令。
 
-[[当设备上只有一个成员并且只有一个主控板且需要升级时，不需要使用此命令。]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1976606606}
+当设备上有多个成员设备时，输入该命令后，系统将自动执行以下操作：
 
-[[当设备上有多个成员设备时，输入该命令后，系统将自动执行以下操作：]{style="font-family:宋体"}]{#struct_0_71526_x1155_x952304733}
+·兼容版本升级：增量升级时系统会对升级的进程进行了进程级主备倒换；软重启或者重启升级时系统会将当前主设备的主控板使用原版本重新启动，将刚使用**issu load**命令升级完成的从设备选举为IRF的主设备。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[兼容版本升级：增量升级时系统会对升级的进程进行了进程级主备倒换；软重启或者重启升级时系统会将当前主设备的主控板使用原版本重新启动，将刚使用]{style="font-family:宋体"}]{#struct_0_71526_x1155_x952239197}**[issu load]{lang="EN-US"}**[命令升级完成的从设备选举为]{style="font-family:宋体"}[IRF]{lang="EN-US"}[的主设备。]{style="font-family:宋体"}
+·不兼容版本升级：执行**issu load**后IRF分裂，生成两个的IRF。执行**issu run switchover**重启并升级原IRF，原IRF重启后加入新的IRF即完成升级过程，系统选择新IRF的主设备为合并后IRF的主设备。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不兼容版本升级：执行]{lang="EN-US" style="font-family:宋体"}**[issu load]{lang="EN-US"}**]{#struct_0_71526_x1155_x952108128}[后]{lang="EN-US" style="font-family:宋体"}[IRF]{lang="EN-US"}[分裂，生成两个的]{lang="EN-US" style="font-family:宋体"}[IRF]{lang="EN-US"}[。执行]{lang="EN-US" style="font-family:宋体"}**[issu run switchover]{lang="EN-US"}**[重启并升级原]{lang="EN-US" style="font-family:
-宋体"}[IRF]{lang="EN-US"}[，原]{lang="EN-US" style="font-family:
-宋体"}[IRF]{lang="EN-US"}[重启后加入新的]{lang="EN-US" style="font-family:
-宋体"}[IRF]{lang="EN-US"}[即完成升级过程，系统选择新]{lang="EN-US" style="font-family:
-宋体"}[IRF]{lang="EN-US"}[的主设备为合并后]{lang="EN-US" style="font-family:宋体"}[IRF]{lang="EN-US"}[的主设备。]{lang="EN-US" style="font-family:宋体"}
+需要注意的是：
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_71526_x1155_x852257060}
+·兼容版本升级时，如果在回滚定时器超时时仍未执行**issu accept**或者**issu commit**命令，则系统会自动回滚到升级前的版本。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[兼容版本升级时，如果在回滚定时器超时时仍未执行]{style="font-family:宋体"}]{#struct_0_71526_x1155_x967523932}**[issu accept]{lang="EN-US"}**[或者]{style="font-family:宋体"}**[issu commit]{lang="EN-US"}**[命令，则系统会自动回滚到升级前的版本。]{style="font-family:宋体"}
+·兼容版本升级时，如果业务板和网板无法使用增量或者软重启升级，这种情况下业务板和网板会重启，并从新主控板加载最新的软件包，途经此业务板和网板的流量会中断，流量恢复时间是"业务板和网板启动时间+业务板和网板状态恢复时间"。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[兼容版本升级时，如果业务板和网板无法使用增量或者软重启升级，这种情况下业务板和网板会重启，并从新主控板加载最新的软件包，途经此业务板和网板的流量会中断，流量恢复时间是"业务板和网板启动时间]{style="font-family:宋体"}]{#struct_0_71526_x1155_x727548171}[+]{lang="EN-US"}[业务板和网板状态恢复时间"。]{style="font-family:宋体"}
+·不兼容版本升级执行**issu run switchover**之后，即完成升级过程。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不兼容版本升级执行]{lang="EN-US" style="font-family:宋体"}**[issu run switchover]{lang="EN-US"}**]{#struct_0_71526_x1155_x952042592}[之后，即完成升级过程。]{lang="EN-US" style="font-family:
-宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1151797350}
+\# 版本兼容情况下，进行主备倒换，同时升级业务板和网板。（分布式设备－独立运行模式双主控）
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_1160770680}[版本兼容情况下，进行主备倒换，同时升级业务板和网板。（分布式设备－独立运行模式双主控）]{style="font-family:宋体"}
+\<Sysname\> issu run switchover
 
-[[\<Sysname\> issu run switchover]{lang="EN-US"}]{#struct_0_71526_x1155_x952304736}
+Upgrade summary according to following table:
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+flash:/feature.bin
 
-[ ]{lang="EN-US"}
+  Running Version             New Version
 
-[flash:/feature.bin]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[  Running Version             New Version]{lang="EN-US"}
+  Slot                        Switchover Way
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+  0                           Active standby process switchover
 
-[ ]{lang="EN-US"}
+  Slot                        Upgrade Way
 
-[  Slot                        Switchover Way]{lang="EN-US"}
+  2                           Service Upgrade
 
-[  0                           Active standby process switchover]{lang="EN-US"}
+  3                           Service Upgrade
 
-[ ]{lang="EN-US"}
+  4                           Service Upgrade
 
-[  Slot                        Upgrade Way]{lang="EN-US"}
+Upgrading software images to compatible versions. Continue? [Y/N:]
 
-[  2                           Service Upgrade]{lang="EN-US"}
+\# 版本不兼容情况下，进行主备倒换，同时升级原主板、业务板和网板。（分布式设备－独立运行模式双主控）
 
-[  3                           Service Upgrade]{lang="EN-US"}
+\<Sysname\> issu run switchover
 
-[  4                           Service Upgrade]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:]{lang="EN-US"}
+flash:/feature.bin
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_378150847}[版本不兼容情况下，进行主备倒换，同时升级原主板、业务板和网板。（分布式设备－独立运行模式双主控）]{style="font-family:宋体"}
+  Running Version             New Version
 
-[[\<Sysname\> issu run switchover]{lang="EN-US"}]{#struct_0_71526_x1155_x952173663}
+  Alpha 7122                  Alpha 7123
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+  Slot                        Upgrade Way
 
-[ ]{lang="EN-US"}
+  0                           Reboot
 
-[flash:/feature.bin]{lang="EN-US"}
+  2                           Reboot
 
-[  Running Version             New Version]{lang="EN-US"}
+  3                           Reboot
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+  4                           Reboot
 
-[ ]{lang="EN-US"}
+Upgrading software images to incompatible versions. Continue? [Y/N:]
 
-[  Slot                        Upgrade Way]{lang="EN-US"}
+\# 版本兼容情况下，进行主备倒换。（集中式IRF设备）
 
-[  0                           Reboot]{lang="EN-US"}
+\<Sysname\> issu run switchover
 
-[  2                           Reboot]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[  3                           Reboot]{lang="EN-US"}
+flash:/feature.bin
 
-[  4                           Reboot]{lang="EN-US"}
+  Running Version             New Version
 
-[Upgrading software images to incompatible versions. Continue? \[Y/N\]:]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_767857711}[版本兼容情况下，进行主备倒换。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+  Slot                        Switchover Way
 
-[[\<Sysname\> issu run switchover]{lang="EN-US"}]{#struct_0_71526_x1155_x952435807}
+  1                           Active standby process switchover
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+Upgrading software images to compatible versions. Continue? [Y/N:]
 
-[ ]{lang="EN-US"}
+\# 版本不兼容情况下，进行主备倒换，同时升级成员设备1（主设备）和成员设备2（从设备）。（集中式IRF设备）
 
-[flash:/feature.bin]{lang="EN-US"}
+\<Sysname\> issu run switchover
 
-[  Running Version             New Version]{lang="EN-US"}
+Copying file flash:/feature.bin to slot2#flash:/feature.bin\...Done.
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+Verifying the file flash:/feature.bin on slot 2\...Done.
 
-[ ]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[  Slot                        Switchover Way]{lang="EN-US"}
+flash:/feature.bin
 
-[  1                           Active standby process switchover]{lang="EN-US"}
+  Running Version             New Version
 
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x951649375}[版本不兼容情况下，进行主备倒换，同时升级成员设备]{style="font-family:宋体"}[1]{lang="EN-US"}[（主设备）和成员设备]{style="font-family:宋体"}[2]{lang="EN-US"}[（从设备）。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+  Slot                        Upgrade Way
 
-[[\<Sysname\> issu run switchover]{lang="EN-US"}]{#struct_0_71526_x1155_613648137}
+  1                           Reboot
 
-[Copying file flash:/feature.bin to slot2#flash:/feature.bin\...Done.]{lang="EN-US"}
+  2                           Reboot
 
-[Verifying the file flash:/feature.bin on slot 2\...Done.]{lang="EN-US"}
+Upgrading software images to incompatible versions. Continue? [Y/N:]
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+\# 版本兼容情况下，进行主备倒换。（分布式设备－IRF模式多成员设备）
 
-[ ]{lang="EN-US"}
+\<Sysname\> issu run switchover
 
-[flash:/feature.bin]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[  Running Version             New Version]{lang="EN-US"}
+flash:/feature.bin
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+  Running Version             New Version
 
-[ ]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[  Slot                        Upgrade Way]{lang="EN-US"}
+Chassis   Slot              Switchover Way
 
-[  1                           Reboot]{lang="EN-US"}
+  1         0                 Active standby process switchover
 
-[  2                           Reboot]{lang="EN-US"}
+Upgrading software images to compatible versions. Continue? [Y/N:y]
 
-[Upgrading software images to incompatible versions. Continue? \[Y/N\]:]{lang="EN-US"}
+\# 版本不兼容情况下，进行主备倒换，同时升级成员设备1（主设备）和成员设备2（从设备）。（分布式设备－IRF模式多成员设备）
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_1041400446}[版本兼容情况下，进行主备倒换。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式多成员设备）]{style="font-family:宋体"}
+\<Sysname\> issu run switchover
 
-[[\<Sysname\> issu run switchover]{lang="EN-US"}]{#struct_0_71526_x1155_614434569}
+Copying file flash:/feature.bin to chassis1#slot1#flash:/feature.bin\...Done.
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+Verifying the file flash:/feature.bin on chassis 1 slot 1\...Done.
 
-[ ]{lang="EN-US"}
+Copying file flash:/feature.bin to chassis2#slot0#flash:/feature.bin\...Done.
 
-[flash:/feature.bin]{lang="EN-US"}
+Verifying the file flash:/feature.bin on chassis 2 slot 0\...Done.
 
-[  Running Version             New Version]{lang="EN-US"}
+Copying file flash:/feature.bin to chassis2#slot1#flash:/feature.bin\...Done.
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+Verifying the file flash:/feature.bin on chassis 2 slot 1\...Done.
 
-[ ]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[Chassis   Slot              Switchover Way]{lang="EN-US"}
+flash:/feature.bin
 
-[  1         0                 Active standby process switchover]{lang="EN-US"}
+  Running Version             New Version
 
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_614041354}[版本不兼容情况下，进行主备倒换，同时升级成员设备]{style="font-family:宋体"}[1]{lang="EN-US"}[（主设备）和成员设备]{style="font-family:宋体"}[2]{lang="EN-US"}[（从设备）。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式多成员设备）]{style="font-family:宋体"}
+  Chassis   Slot              Upgrade Way
 
-[[\<Sysname\> issu run switchover]{lang="EN-US"}]{#struct_0_71526_x1155_614500106}
+  1         0                 Reboot
 
-[Copying file flash:/feature.bin to chassis1#slot1#flash:/feature.bin\...Done.]{lang="EN-US"}
+  1         1                 Reboot
 
-[Verifying the file flash:/feature.bin on chassis 1 slot 1\...Done.]{lang="EN-US"}
+  1         2                 Reboot
 
-[Copying file flash:/feature.bin to chassis2#slot0#flash:/feature.bin\...Done.]{lang="EN-US"}
+  1         3                 Reboot
 
-[Verifying the file flash:/feature.bin on chassis 2 slot 0\...Done.]{lang="EN-US"}
+  1         4                 Reboot
 
-[Copying file flash:/feature.bin to chassis2#slot1#flash:/feature.bin\...Done.]{lang="EN-US"}
+  2         0                 Reboot
 
-[Verifying the file flash:/feature.bin on chassis 2 slot 1\...Done.]{lang="EN-US"}
+  2         1                 Reboot
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+  2         2                 Reboot
 
-[ ]{lang="EN-US"}
+  2         3                 Reboot
 
-[flash:/feature.bin]{lang="EN-US"}
+  2         4                 Reboot
 
-[  Running Version             New Version]{lang="EN-US"}
+Upgrading software images to incompatible versions. Continue? [Y/N:y]
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+\# 版本兼容情况下，进行主备倒换，同时升级业务板和网板。（分布式设备－IRF模式单成员设备双主控）
 
-[ ]{lang="EN-US"}
+\<Sysname\> issu run switchover
 
-[  Chassis   Slot              Upgrade Way]{lang="EN-US"}
+Upgrade summary according to following table:
 
-[  1         0                 Reboot]{lang="EN-US"}
+flash:/feature.bin
 
-[  1         1                 Reboot]{lang="EN-US"}
+  Running Version             New Version
 
-[  1         2                 Reboot]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[  1         3                 Reboot]{lang="EN-US"}
+  Chassis   Slot              Switchover Way
 
-[  1         4                 Reboot]{lang="EN-US"}
+  1         0                 Active standby process switchover
 
-[  2         0                 Reboot]{lang="EN-US"}
+  Chassis   Slot              Upgrade Way
 
-[  2         1                 Reboot]{lang="EN-US"}
+  1         2                 Service Upgrade
 
-[  2         2                 Reboot]{lang="EN-US"}
+  1         3                 Service Upgrade
 
-[  2         3                 Reboot]{lang="EN-US"}
+  1         4                 Service Upgrade
 
-[  2         4                 Reboot]{lang="EN-US"}
+Upgrading software images to compatible versions. Continue? [Y/N:y]
 
-[Upgrading software images to incompatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+\# 版本不兼容情况下，进行主备倒换，同时升级原主控板、业务板和网板。（分布式设备－IRF模式单成员设备双主控）
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1569547542}[版本兼容情况下，进行主备倒换，同时升级业务板和网板。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式单成员设备双主控）]{style="font-family:宋体"}
+\<Sysname\> issu run switchover
 
-[[\<Sysname\> issu run switchover]{lang="EN-US"}]{#struct_0_71526_x1155_614106887}
+Upgrade summary according to following table:
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+flash:/feature.bin
 
-[ ]{lang="EN-US"}
+  Running Version             New Version
 
-[flash:/feature.bin]{lang="EN-US"}
+  Alpha 7122                  Alpha 7123
 
-[  Running Version             New Version]{lang="EN-US"}
+  Chassis   Slot              Upgrade Way
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+  1         0                 Reboot
 
-[ ]{lang="EN-US"}
+  1         2                 Reboot
 
-[  Chassis   Slot              Switchover Way]{lang="EN-US"}
+  1         3                 Reboot
 
-[  1         0                 Active standby process switchover]{lang="EN-US"}
+  1         4                 Reboot
 
-[ ]{lang="EN-US"}
+Upgrading software images to incompatible versions. Continue? [Y/N:y]
 
-[  Chassis   Slot              Upgrade Way]{lang="EN-US"}
+表1-9 issu load命令显示信息描述表
 
-[  1         2                 Service Upgrade]{lang="EN-US"}
+字段
 
-[  1         3                 Service Upgrade]{lang="EN-US"}
+描述
 
-[  1         4                 Service Upgrade]{lang="EN-US"}
+Copying file *A* to *B*\...\...Done.
 
-[Upgrading software images to compatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
+将文件从位置*A*拷贝到位置*B*。只有不兼容升级其它从设备时才有该提示信息（集中式IRF设备）
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1716466904}[版本不兼容情况下，进行主备倒换，同时升级原主控板、业务板和网板。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式单成员设备双主控）]{style="font-family:宋体"}
+将文件从位置*A*拷贝到位置*B*。只有不兼容升级其它全局备用主控板时才有该提示信息（分布式设备－IRF模式）
 
-[[\<Sysname\> issu run switchover]{lang="EN-US"}]{#struct_0_71526_x1155_614434567}
+Verifying the file flash:/xx.bin on chassis 1 slot 0\.....Done.
 
-[Upgrade summary according to following table:]{lang="EN-US"}
+验证文件是否合法
 
-[ ]{lang="EN-US"}
+Switchover Way
 
-[flash:/feature.bin]{lang="EN-US"}
+倒换方式，取值可能为：
 
-[  Running Version             New Version]{lang="EN-US"}
+·Active standby process switchover：表示主备进程的倒换
 
-[  Alpha 7122                  Alpha 7123]{lang="EN-US"}
+·Active standby MPU switchover：表示主备主控板之间的倒换（分布式设备－独立运行模式）
 
-[ ]{lang="EN-US"}
+·Global active standby MPU switchover：表示全局主备主控板之间的倒换（分布式设备－IRF模式）
 
-[  Chassis   Slot              Upgrade Way]{lang="EN-US"}
+·Master subordinate switchover：表示主设备和从设备之间的倒换（集中式IRF）
 
-[  1         0                 Reboot]{lang="EN-US"}
+其它字段
 
-[  1         2                 Reboot]{lang="EN-US"}
+请参见 表1-8(?270907887#_Ref329853865)
 
-[  1         3                 Reboot]{lang="EN-US"}
+【相关命令】
 
-[  1         4                 Reboot]{lang="EN-US"}
-
-[Upgrading software images to incompatible versions. Continue? \[Y/N\]:y]{lang="EN-US"}
-
-[[表1-9 ]{lang="EN-US"}[issu load]{lang="EN-US"}]{#struct_0_71526_x1155_x10500126}[命令显示信息描述表]{style="font-family:黑体"}
-
-[]{#table_struct_0_x1083240046}[[字段]{style="font-family:黑体"}]{#struct_0_71526_x1155_x622566121}
-:::::
-
-[[描述]{style="font-family:黑体"}]{#struct_0_71526_x1155_200546308}
-
-[[Copying file *A* to *B*\...\...Done.]{lang="EN-US"}]{#struct_0_71526_x1155_613648136}
-
-[[将文件从位置]{style="font-family:宋体"}*[A]{lang="EN-US"}*]{#struct_0_71526_x1155_613910277}[拷贝到位置]{style="font-family:宋体"}*[B]{lang="EN-US"}*[。只有不兼容升级其它从设备时才有该提示信息（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
-
-[[将文件从位置]{style="font-family:宋体"}*[A]{lang="EN-US"}*]{#struct_0_71526_x1155_613713669}[拷贝到位置]{style="font-family:宋体"}*[B]{lang="EN-US"}*[。只有不兼容升级其它全局备用主控板时才有该提示信息（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
-
-[[Verifying the file flash:/xx.bin on chassis 1 slot 0\.....Done.]{lang="EN-US"}]{#struct_0_71526_x1155_1488321168}
-
-[[验证文件是否合法]{style="font-family:宋体"}]{#struct_0_71526_x1155_x401478610}
-
-[[Switchover Way]{lang="EN-US"}]{#struct_0_71526_x1155_613779205}
-
-[[倒换方式，取值可能为：]{style="font-family:宋体"}]{#struct_0_71526_x1155_x1301028928}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Active standby process switchover]{lang="EN-US"}]{#struct_0_71526_x1155_x594272136}[：表示主备进程的倒换]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Active standby MPU switchover]{lang="EN-US"}]{#struct_0_71526_x1155_240663627}[：]{style="font-family:
-  宋体"}[表示主备主控板之间的倒换（分布式设备－独立运行模式）]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Global active standby MPU switchover]{lang="EN-US"}]{#struct_0_71526_x1155_1512243428}[：]{style="font-family:宋体"}[表示全局主备主控板之间的倒换（分布式设备－]{lang="EN-US" style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Master subordinate switchover]{lang="EN-US"}]{#struct_0_71526_x1155_177776531}[：]{style="font-family:
-  宋体"}[表示主设备和从设备之间的倒换（集中式]{lang="EN-US" style="font-family:宋体"}[IRF]{lang="EN-US"}[）]{lang="EN-US" style="font-family:宋体"}
-
-[[其它字段]{style="font-family:宋体"}]{#struct_0_71526_x1155_613844741}
-
-[[请参见]{style="font-family:宋体"}]{#struct_0_71526_x1155_1294637378}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-8]{lang="EN-US"}](?270907887#_Ref329853865)
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x197407489}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[issu load]{lang="EN-US"}**]{#struct_0_71526_x1155_x1935893816}
-
-::: {#1009564561 .myid}
-[]{#_Toc404782754}[]{#struct_0_71526_x1155_356306422}[]{#_Toc299981216}
+·**issu load**
 
 **ISSU \-- ISSU配置命令 \-- reset install log-history oldest**
 
 ------------------------------------------------------------------------
 
-[**[reset install log-history oldest]{lang="EN-US"}**]{#struct_0_71526_x1155_1117199795}[命令用来清除]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[日志。]{style="font-family:宋体"}
+**[reset install log-history oldest**]命令用来清除ISSU日志。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_549270844}
+【命令】
 
-[**[reset install log-history oldest ]{lang="EN-US"}***[log-number]{lang="EN-US"}*]{#struct_0_71526_x1155_614434565}
+**[reset install log-history oldest ***log-number*]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x10500128}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_x622566127}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_200677380}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_280666799}
+network-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_1149531509}
+【参数】
 
-[*[log-number]{lang="EN-US"}*]{#struct_0_71526_x1155_488486862}[：]{style="font-family:宋体;layout-grid-mode:
-line"}[ISSU]{lang="EN-US" style="layout-grid-mode:line"}[日志的数量。]{style="font-family:宋体;layout-grid-mode:line"}
+*[log-number*]：ISSU日志的数量。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1238909907}
+【使用指导】
 
-[[使用该命令，系统将清除指定数量的、时间最早的、与]{style="font-family:宋体;layout-grid-mode:line"}[ISSU]{lang="EN-US" style="layout-grid-mode:line"}]{#struct_0_71526_x1155_x1499497065}[升级相关的日志]{style="font-family:
-宋体;layout-grid-mode:line"}[。]{style="font-family:宋体"}
+使用该命令，系统将清除指定数量的、时间最早的、与ISSU升级相关的日志。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_614500101}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_x1569547539}[清除]{style="font-family:宋体"}[2]{lang="EN-US"}[条最早的]{style="font-family:宋体"}[ISSU]{lang="EN-US"}[日志。]{style="font-family:宋体"}
+\# 清除2条最早的ISSU日志。
 
-[[\<Sysname\> reset install log-history oldest 2]{lang="EN-US"}]{#struct_0_71526_x1155_x1044362776}
+\<Sysname\> reset install log-history oldest 2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_902689516}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display install log]{lang="EN-US"}**]{#struct_0_71526_x1155_x1595738971}
-:::
-
-::: {#-1439638611 .myid}
-[]{#_Toc404782755}[]{#struct_0_71526_x1155_1108369080}
+·**display install log**
 
 **ISSU \-- ISSU配置命令 \-- reset install rollback oldest**
 
 ------------------------------------------------------------------------
 
-[**[reset install rollback oldest]{lang="EN-US"}**]{#struct_0_71526_x1155_x567984776}[命令用来清除]{style="font-family:
-宋体"}[ISSU]{lang="EN-US"}[回滚点。]{style="font-family:宋体"}
+**[reset install rollback oldest**]命令用来清除ISSU回滚点。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1484393455}
+【命令】
 
-[**[reset install rollback oldest]{lang="EN-US"}**[ *point-id*]{lang="EN-US"}]{#struct_0_71526_x1155_613910278}
+**[reset install rollback oldest** *point-id*]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_71526_x1155_890495091}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_71526_x1155_1077427865}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x511345784}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_71526_x1155_x2068107228}
+network-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1722763124}
+【参数】
 
-[*[point-id]{lang="EN-US"}*]{#struct_0_71526_x1155_x1187541221}[：系统存储的回滚点的编号。]{style="font-family:宋体"}
+*[point-id*]：系统存储的回滚点的编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_71526_x1155_717831130}
+【使用指导】
 
-[[使用该命令，系统将清除指定]{style="font-family:宋体;layout-grid-mode:line"}]{#struct_0_71526_x1155_325297797}[回滚点[以及]{style="layout-grid-mode:line"}比[该]{style="layout-grid-mode:line"}回滚点更老的回滚点。]{style="font-family:宋体"}
+使用该命令，系统将清除指定回滚点[以及比该回滚点更老的回滚点。]
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_71526_x1155_613975814}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_71526_x1155_455449443}[清除编号为]{style="font-family:宋体"}[2]{lang="EN-US"}[以及比]{style="font-family:宋体"}[2]{lang="EN-US"}[号回滚点更老的回滚点。]{style="font-family:宋体"}
+\# 清除编号为2以及比2号回滚点更老的回滚点。
 
-[[\<Sysname\> reset install rollback oldest 2]{lang="EN-US"}]{#struct_0_71526_x1155_x1349370330}
+\<Sysname\> reset install rollback oldest 2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_71526_x1155_x1556953833}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display install rollback]{lang="EN-US"}**]{#struct_0_71526_x1155_x2054241347}
-:::
+·**display install rollback**

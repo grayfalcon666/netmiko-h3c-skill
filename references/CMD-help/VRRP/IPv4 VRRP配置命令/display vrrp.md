@@ -1,3751 +1,3520 @@
-::: {#1121431443 .myid}
-[]{#_Toc404795926}[]{#struct_0_18718_x1832_x468903680}[]{#_Toc211671357}[]{#_Toc99954750}[]{#_Toc91670449}
 
 **VRRP \-- IPv4 VRRP配置命令 \-- display vrrp**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **vrrp**]{lang="EN-US"}]{#struct_0_18718_x1832_x1826783358}[命令用来显示]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组的状态信息。]{style="font-family:宋体"}
+**[display** **vrrp**]命令用来显示IPv4 VRRP备份组的状态信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x691568006}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **vrrp** \[ **interface** *interface-type interface-number* \[ **vrid** *virtual-router-id* \] \] \[ **verbose** \]]{lang="EN-US"}]{#struct_0_18718_x1832_x969572051}
+**[display** **vrrp** [ **interface** *interface-type interface-number* [ **vrid** *virtual-router-id*  ]  **verbose** ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x2053764512}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_x945353730}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_865049685}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_1772545238}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_18718_x1832_x487747019}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x1379556641}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_18718_x1832_1027710546}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1949053827}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_18718_x1832_156749629}[：显示指定接口的]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组状态信息。其中，]{style="font-family:宋体"}*[interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}[为接口类型和接口编号。]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：显示指定接口的IPv4 VRRP备份组状态信息。其中，*interface-type* *interface-number*为接口类型和接口编号。
 
-[**[vrid]{lang="EN-US"}***[ virtual-router-id]{lang="EN-US"}*]{#struct_0_18718_x1832_x1511846158}[：显示指定]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组的状态信息。其中，]{style="font-family:宋体"}*[virtual-router-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vrid*** virtual-router-id*]：显示指定IPv4 VRRP备份组的状态信息。其中，*virtual-router-id*为IPv4 VRRP备份组号，取值范围为1～255。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_18718_x1832_x479377148}[：显示]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组状态的详细信息。如果不指定本参数，则显示]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组状态的简要信息。]{style="font-family:宋体"}
+**[verbose**]：显示IPv4 VRRP备份组状态的详细信息。如果不指定本参数，则显示IPv4 VRRP备份组状态的简要信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_234113321}
+【使用指导】
 
-[[如果不指定接口名和备份组号，则显示该路由器上所有]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_1772479702}[备份组的状态信息；如果只指定接口名，不指定备份组号，则显示该接口上的所有]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组的状态信息；如果同时指定接口名和备份组号，则显示该接口上指定]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组的状态信息。]{style="font-family:宋体"}
+如果不指定接口名和备份组号，则显示该路由器上所有IPv4 VRRP备份组的状态信息；如果只指定接口名，不指定备份组号，则显示该接口上的所有IPv4 VRRP备份组的状态信息；如果同时指定接口名和备份组号，则显示该接口上指定IPv4 VRRP备份组的状态信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1604576497}
+【举例】
 
-[]{#_Toc99954751}[]{#_Toc34483419}[]{#_Toc33425588}[]{#_Toc31785777}[]{#_Toc99954527}[[\# VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x1739066425}[工作在标准协议模式时，显示全部]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组的简要信息。]{style="font-family:宋体"}
+\# VRRP工作在标准协议模式时，显示全部IPv4 VRRP备份组的简要信息。
 
-[[\<Sysname\> display vrrp]{lang="EN-US"}]{#struct_0_18718_x1832_1788347578}
+\<Sysname\> display vrrp
 
-[IPv4 Virtual Router Information:]{lang="EN-US"}
+IPv4 Virtual Router Information:
 
-[ Running Mode      : Standard]{lang="EN-US"}
+ Running Mode      : Standard
 
-[ Total number of virtual routers : 1]{lang="EN-US"}
+ Total number of virtual routers : 1
 
-[ Interface          VRID  State        Running Adver   Auth     Virtual]{lang="EN-US"}
+ Interface          VRID  State        Running Adver   Auth     Virtual
 
-[                                       Pri     Timer   Type        IP ]{lang="EN-US"}
+                                       Pri     Timer   Type        IP
 
-[ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ GE1/0/1            1     Master       150     100     Simple   1.1.1.1]{lang="EN-US"}
+ GE1/0/1            1     Master       150     100     Simple   1.1.1.1
 
-[[表1-1 ]{lang="EN-US"}[display vrrp]{lang="EN-US"}]{#struct_0_18718_x1832_x360196762}[命令显示信息描述表（标准协议模式）]{style="font-family:黑体"}
+表1-1 display vrrp命令显示信息描述表（标准协议模式）
 
-[]{#table_struct_0_x1837178345}[[字段]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1381573539}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_18718_x1832_1772414166}
+描述
 
-[[Running Mode]{lang="EN-US"}]{#struct_0_18718_x1832_x95615252}
+Running Mode
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x1079244594}[的工作模式，取值为]{style="font-family:宋体"}[Standard]{lang="EN-US"}[（标准协议模式）]{style="font-family:宋体"}
+VRRP的工作模式，取值为Standard（标准协议模式）
 
-[[Total number of virtual routers]{lang="EN-US"}]{#struct_0_18718_x1832_1196164584}
+Total number of virtual routers
 
-[[备份组的数目]{style="font-family:宋体"}]{#struct_0_18718_x1832_741223154}
+备份组的数目
 
-[[Interface]{lang="EN-US"}]{#struct_0_18718_x1832_x419399994}
+Interface
 
-[[备份组所在接口名]{style="font-family:宋体"}]{#struct_0_18718_x1832_x542571902}
+备份组所在接口名
 
-[[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_1772348630}
+VRID
 
-[[虚拟路由器号（即备份组号）]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1205890994}
+虚拟路由器号（即备份组号）
 
-[[State]{lang="EN-US"}]{#struct_0_18718_x1832_1355569874}
+State
 
-[[当前路由器在备份组中的状态，取值为]{style="font-family:宋体"}[Master]{lang="EN-US"}]{#struct_0_18718_x1832_1558467750}[，]{style="font-family:宋体"}[Backup]{lang="EN-US"}[，]{style="font-family:宋体"}[Initialize]{lang="EN-US"}[或]{style="font-family:宋体"}[Inactive]{lang="EN-US"}
+当前路由器在备份组中的状态，取值为Master，Backup，Initialize或Inactive
 
-[[Running Pri]{lang="EN-US"}]{#struct_0_18718_x1832_382334028}
+Running Pri
 
-[[路由器的运行优先级，即路由器当前的优先级。配置监视指定]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_331623173}[项后，路由器的优先级会根据]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态改变]{style="font-family:宋体"}
+路由器的运行优先级，即路由器当前的优先级。配置监视指定Track项后，路由器的优先级会根据Track项的状态改变
 
-[[Adver Timer]{lang="EN-US"}]{#struct_0_18718_x1832_1772807382}
+Adver Timer
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x1273005299}[通告报文发送时间间隔，单位为厘秒]{style="font-family:宋体"}
+VRRP通告报文发送时间间隔，单位为厘秒
 
-[[Auth Type]{lang="EN-US"}]{#struct_0_18718_x1832_1210642760}
+Auth Type
 
-[[认证类型，包括：]{style="font-family:宋体"}]{#struct_0_18718_x1832_635968423}
+认证类型，包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[None]{lang="EN-US"}]{#struct_0_18718_x1832_63058937}[：无认证]{lang="EN-US" style="font-family:宋体"}
+·None：无认证
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Simple]{lang="EN-US"}]{#struct_0_18718_x1832_1772741846}[：简单字符认证]{lang="EN-US" style="font-family:宋体"}
+·Simple：简单字符认证
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MD5]{lang="EN-US"}]{#struct_0_18718_x1832_x430194682}[：]{lang="EN-US" style="font-family:宋体"}[MD5]{lang="EN-US"}[认证]{lang="EN-US" style="font-family:宋体"}
+·MD5：MD5认证
 
-[[Virtual IP]{lang="EN-US"}]{#struct_0_18718_x1832_993857436}
+Virtual IP
 
-[[备份组的虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_18718_x1832_1790664750}[地址]{style="font-family:宋体"}
+备份组的虚拟IP地址
 
-[ ]{lang="EN-US"}
+\# VRRP工作在标准协议模式时，显示全部IPv4 VRRP备份组的详细信息。
 
-[[\# VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_1877748435}[工作在标准协议模式时，显示全部]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组的详细信息。]{style="font-family:宋体"}
+\<Sysname\> display vrrp verbose
 
-[[\<Sysname\> display vrrp verbose]{lang="EN-US"}]{#struct_0_18718_x1832_1772283095}
+IPv4 Virtual Router Information:
 
-[IPv4 Virtual Router Information:]{lang="EN-US"}
+ Running Mode      : Standard
 
-[ Running Mode      : Standard]{lang="EN-US"}
+ Total number of virtual routers : 2
 
-[ Total number of virtual routers : 2]{lang="EN-US"}
+   Interface GigabitEthernet1/0/1
 
-[   Interface GigabitEthernet1/0/1]{lang="EN-US"}
+     VRID           : 1                    Adver Timer  : 100
 
-[     VRID           : 1                    Adver Timer  : 100]{lang="EN-US"}
+     Admin Status   : Up                   State        : Master
 
-[     Admin Status   : Up                   State        : Master]{lang="EN-US"}
+     Config Pri     : 150                  Running Pri  : 150
 
-[     Config Pri     : 150                  Running Pri  : 150]{lang="EN-US"}
+     Preempt Mode   : Yes                  Delay Time   : 5
 
-[     Preempt Mode   : Yes                  Delay Time   : 5]{lang="EN-US"}
+     Auth Type      : Simple               Key          : \*\*\*\*\*\*
 
-[     Auth Type      : Simple               Key          : \*\*\*\*\*\*]{lang="EN-US"}
+     Virtual IP     : 1.1.1.1
 
-[     Virtual IP     : 1.1.1.1]{lang="EN-US"}
+Virtual MAC    : 0000-5e00-0101
 
-[     ]{lang="EN-US"}[Virtual MAC    : 0000-5e00-0101]{lang="PT-BR"}
+     Master IP      : 1.1.1.2
 
-[     Master IP      : 1.1.1.2]{lang="PT-BR"}
+VRRP Track Information:
 
-[   ]{lang="PT-BR"}[VRRP Track Information:]{lang="EN-US"}
+     Track Object   : 1                    State : Positive   Pri Reduced : 50
 
-[     Track Object   : 1                    State : Positive   Pri Reduced : 50]{lang="EN-US"}
+   Interface GigabitEthernet1/0/1
 
-[   Interface GigabitEthernet1/0/1]{lang="EN-US"}
+     VRID           : 11                   Adver Timer  : 100
 
-[     VRID           : 11                   Adver Timer  : 100]{lang="EN-US"}
+     Admin Status   : Up                   State        : Backup
 
-[     Admin Status   : Up                   State        : Backup]{lang="EN-US"}
+     Config Pri     : 80                   Running Pri  : 80
 
-[     Config Pri     : 80                   Running Pri  : 80]{lang="EN-US"}
+     Preempt Mode   : Yes                  Delay Time   : 0
 
-[     Preempt Mode   : Yes                  Delay Time   : 0]{lang="EN-US"}
+     Become Master  : 2370ms left
 
-[     Become Master  : 2370ms left]{lang="EN-US"}
+     Auth Type      : None
 
-[     Auth Type      : None]{lang="EN-US"}
+     Virtual IP     : 1.1.1.11
 
-[     Virtual IP     : 1.1.1.11]{lang="EN-US"}
+Virtual MAC    : 0000-5e00-010b
 
-[     ]{lang="EN-US"}[Virtual MAC    : 0000-5e00-010b]{lang="PT-BR"}
+     Master IP      : 1.1.1.12
 
-[     Master IP      : 1.1.1.12]{lang="PT-BR"}
+表1-2 display vrrp verbose命令显示信息描述表（标准协议模式）
 
-[[表1-2 ]{lang="EN-US"}[display vrrp verbose]{lang="EN-US"}]{#struct_0_18718_x1832_x2007651876}[命令显示信息描述表（标准协议模式）]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1842122741}[[字段]{style="font-family:黑体"}]{#struct_0_18718_x1832_1772217559}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_18718_x1832_1868921940}
+Running Mode
 
-[[Running Mode]{lang="EN-US"}]{#struct_0_18718_x1832_x1492924604}
+VRRP的工作模式，取值为Standard（标准协议模式）
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_33741045}[的工作模式，取值为]{style="font-family:宋体"}[Standard]{lang="EN-US"}[（标准协议模式）]{style="font-family:宋体"}
+Total number of virtual routers
 
-[[Total number of virtual routers]{lang="EN-US"}]{#struct_0_18718_x1832_1167914869}
+备份组的数目
 
-[[备份组的数目]{style="font-family:宋体"}]{#struct_0_18718_x1832_x461822701}
+Interface
 
-[[Interface]{lang="EN-US"}]{#struct_0_18718_x1832_1772152023}
+备份组所在接口名
 
-[[备份组所在接口名]{style="font-family:宋体"}]{#struct_0_18718_x1832_691019295}
+VRID
 
-[[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_708967948}
+虚拟路由器号（即备份组号）
 
-[[虚拟路由器号（即备份组号）]{style="font-family:宋体"}]{#struct_0_18718_x1832_1493249153}
+Adver Timer
 
-[[Adver Timer]{lang="EN-US"}]{#struct_0_18718_x1832_x1336262785}
+VRRP通告报文发送时间间隔，单位为厘秒
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_279726176}[通告报文发送时间间隔，单位为厘秒]{style="font-family:宋体"}
+Admin Status
 
-[[Admin Status]{lang="EN-US"}]{#struct_0_18718_x1832_1772086487}
+管理状态，包括Up和Down两种状态
 
-[[管理状态，包括]{style="font-family:宋体"}[Up]{lang="EN-US"}]{#struct_0_18718_x1832_x2012680032}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}[两种状态]{style="font-family:宋体"}
+State
 
-[[State]{lang="EN-US"}]{#struct_0_18718_x1832_x182532353}
+当前路由器在备份组中的状态，取值为Master，Backup，Initialize或Inactive
 
-[[当前路由器在备份组中的状态，取值为]{style="font-family:宋体"}[Master]{lang="EN-US"}]{#struct_0_18718_x1832_x672244838}[，]{style="font-family:宋体"}[Backup]{lang="EN-US"}[，]{style="font-family:宋体"}[Initialize]{lang="EN-US"}[或]{style="font-family:宋体"}[Inactive]{lang="EN-US"}
+Config Pri
 
-[[Config Pri]{lang="EN-US"}]{#struct_0_18718_x1832_555471943}
+路由器的配置优先级，即通过**vrrp vrid priority**命令指定的路由器优先级
 
-[[路由器的配置优先级，即通过]{style="font-family:宋体"}**[vrrp vrid priority]{lang="EN-US"}**]{#struct_0_18718_x1832_x1379121939}[命令指定的路由器优先级]{style="font-family:宋体"}
+Running Pri
 
-[[Running Pri]{lang="EN-US"}]{#struct_0_18718_x1832_1772545239}
+路由器的运行优先级，即路由器当前的优先级，配置监视指定Track项后，路由器的优先级会根据Track项的状态改变
 
-[[路由器的运行优先级，即路由器当前的优先级，配置监视指定]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_x487681483}[项后，路由器的优先级会根据]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态改变]{style="font-family:宋体"}
+Preempt Mode
 
-[[Preempt Mode]{lang="EN-US"}]{#struct_0_18718_x1832_956086735}
+抢占模式，取值包括：
 
-[[抢占模式，取值包括：]{style="font-family:宋体"}]{#struct_0_18718_x1832_2000790173}
+·Yes：路由器工作在抢占模式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Yes]{lang="EN-US"}]{#struct_0_18718_x1832_1774065487}[：路由器工作在抢占模式]{lang="EN-US" style="font-family:宋体"}
+·No：路由器工作在非抢占模式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No]{lang="EN-US"}]{#struct_0_18718_x1832_150901455}[：路由器工作在非抢占模式]{style="font-family:宋体"}
+Delay Time
 
-[[Delay Time]{lang="EN-US"}]{#struct_0_18718_x1832_1772479703}
+抢占延迟时间，单位为厘秒
 
-[[抢占延迟时间，单位为厘秒]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1604642033}
+Become Master
 
-[[Become Master]{lang="EN-US"}]{#struct_0_18718_x1832_1835896016}
+切换到Master状态需要等待的时间，单位为毫秒，只有处于Backup状态时才会显示此信息
 
-[[切换到]{style="font-family:宋体"}[Master]{lang="EN-US"}]{#struct_0_18718_x1832_1151937244}[状态需要等待的时间，单位为毫秒，只有处于]{style="font-family:宋体"}[Backup]{lang="EN-US"}[状态时才会显示此信息]{style="font-family:宋体"}
+Auth Type
 
-[[Auth Type]{lang="EN-US"}]{#struct_0_18718_x1832_x773655631}
+认证类型，包括：
 
-[[认证类型，包括：]{style="font-family:宋体"}]{#struct_0_18718_x1832_1772414167}
+·None：无认证
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[None]{lang="EN-US"}]{#struct_0_18718_x1832_x95680788}[：无认证]{lang="EN-US" style="font-family:宋体"}
+·Simple：简单字符认证
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Simple]{lang="EN-US"}]{#struct_0_18718_x1832_2129314520}[：简单字符认证]{lang="EN-US" style="font-family:宋体"}
+·MD5：MD5认证
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MD5]{lang="EN-US"}]{#struct_0_18718_x1832_7558226}[：]{lang="EN-US" style="font-family:宋体"}[MD5]{lang="EN-US"}[认证]{lang="EN-US" style="font-family:宋体"}
+Key
 
-[[Key]{lang="EN-US"}]{#struct_0_18718_x1832_x1074177814}
+认证字，无认证时不显示此信息
 
-[[认证字，无认证时不显示此信息]{style="font-family:宋体"}]{#struct_0_18718_x1832_1772348631}
+Virtual IP
 
-[[Virtual IP]{lang="EN-US"}]{#struct_0_18718_x1832_x1205825458}
+备份组的虚拟IP地址
 
-[[备份组的虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_18718_x1832_x1361635252}[地址]{style="font-family:宋体"}
+Virtual MAC
 
-[[Virtual MAC]{lang="EN-US"}]{#struct_0_18718_x1832_x979931265}
+备份组虚拟IP地址对应的虚拟MAC地址。只在路由器为Master状态时，才会显示此信息
 
-[[备份组虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_18718_x1832_1772807383}[地址对应的虚拟]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。只在路由器为]{style="font-family:宋体"}[Master]{lang="EN-US"}[状态时，才会显示此信息]{style="font-family:宋体"}
+Master IP
 
-[[Master IP]{lang="EN-US"}]{#struct_0_18718_x1832_x1272939763}
+处于Master状态的路由器所对应接口的主IP地址
 
-[[处于]{style="font-family:宋体"}[Master]{lang="EN-US"}]{#struct_0_18718_x1832_38142491}[状态的路由器所对应接口的主]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+VRRP Track Information
 
-[[VRRP Track Information]{lang="EN-US"}]{#struct_0_18718_x1832_872555873}
+VRRP备份组监视的Track项信息。执行**vrrp vrid track**命令后，才会显示此信息
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x995560962}[备份组监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项信息。执行]{style="font-family:宋体"}**[vrrp vrid track]{lang="EN-US"}**[命令后，才会显示此信息]{style="font-family:宋体"}
+Track Object
 
-[[Track Object]{lang="EN-US"}]{#struct_0_18718_x1832_1772741847}
+监视的Track项
 
-[[监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_x430129146}[项]{style="font-family:宋体"}
+State
 
-[[State]{lang="EN-US"}]{#struct_0_18718_x1832_152244809}
+Track项的状态，Track项的状态可包括Negative、Positive和NotReady
 
-[[Track]{lang="EN-US"}]{#struct_0_18718_x1832_x693512132}[项的状态，]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态可包括]{style="font-family:宋体"}[Negative]{lang="EN-US"}[、]{style="font-family:宋体"}[Positive]{lang="EN-US"}[和]{style="font-family:宋体"}[NotReady]{lang="EN-US"}
+Pri Reduced
 
-[[Pri Reduced]{lang="EN-US"}]{#struct_0_18718_x1832_x956600257}
+监视的Track项状态为Negative时，优先级降低的数额
 
-[[监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_1665397454}[项状态为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，优先级降低的数额]{style="font-family:宋体"}
+Switchover
 
-[[Switchover]{lang="EN-US"}]{#struct_0_18718_x1832_x2126543826}
+快速切换。显示此信息时表示当监视的Track项变为Negative状态时，Backup路由器会马上抢占成为Master路由器
 
-[[快速切换。显示此信息时表示当监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_x956665793}[项变为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[状态时，]{style="font-family:宋体"}[Backup]{lang="EN-US"}[路由器会马上抢占成为]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器]{style="font-family:宋体"}
+\# VRRP工作在负载均衡模式时，显示全部IPv4 VRRP备份组的简要信息。
 
-[ ]{lang="EN-US"}
+\<Sysname\> display vrrp
 
-[[\# VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x290083893}[工作在负载均衡模式时，显示全部]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组的简要信息。]{style="font-family:宋体"}
+IPv4 Virtual Router Information:
 
-[[\<Sysname\> display vrrp]{lang="EN-US"}]{#struct_0_18718_x1832_2026686311}
+ Running Mode      : Load Balance
 
-[IPv4 Virtual Router Information:]{lang="EN-US"}
+ Total number of virtual routers : 1
 
-[ Running Mode      : Load Balance]{lang="EN-US"}
+ Interface          VRID  State        Running Address             Active
 
-[ Total number of virtual routers : 1]{lang="EN-US"}
+                                       Pri
 
-[ Interface          VRID  State        Running Address             Active]{lang="EN-US"}
+ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                                       Pri]{lang="EN-US"}
+ GE1/0/1            1     Master       150     1.1.1.1             Local
 
-[ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ \-\-\-\--              VF 1  Active       255     000f-e2ff-0011      Local
 
-[ GE1/0/1            1     Master       150     1.1.1.1             Local]{lang="EN-US"}
+表1-3 display vrrp命令显示信息描述表（负载均衡模式）
 
-[ \-\-\-\--              VF 1  Active       255     000f-e2ff-0011      Local]{lang="EN-US"}
+字段
 
-[[表1-3 ]{lang="EN-US"}[display vrrp]{lang="EN-US"}]{#struct_0_18718_x1832_1516387948}[命令显示信息描述表（负载均衡模式）]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x1820276865}[[字段]{style="font-family:黑体"}]{#struct_0_18718_x1832_285702630}
+Running Mode
 
-[[描述]{style="font-family:黑体"}]{#struct_0_18718_x1832_361061614}
+VRRP的工作模式，取值为Load Balance（负载均衡模式）
 
-[[Running Mode]{lang="EN-US"}]{#struct_0_18718_x1832_x956731329}
+Total number of virtual routers
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_1281785363}[的工作模式，取值为]{style="font-family:宋体"}[Load Balance]{lang="EN-US"}[（负载均衡模式）]{style="font-family:宋体"}
+备份组的数目
 
-[[Total number of virtual routers]{lang="EN-US"}]{#struct_0_18718_x1832_1436007966}
+Interface
 
-[[备份组的数目]{style="font-family:宋体"}]{#struct_0_18718_x1832_x2088716464}
+备份组所在接口名
 
-[[Interface]{lang="EN-US"}]{#struct_0_18718_x1832_x131204254}
+VRID
 
-[[备份组所在接口名]{style="font-family:宋体"}]{#struct_0_18718_x1832_x892596352}
+虚拟路由器号（即备份组号）*number*或虚拟转发器编号VF *number*
 
-[[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_x956796865}
+State
 
-[[虚拟路由器号（即备份组号）]{style="font-family:宋体"}*[number]{lang="EN-US"}*]{#struct_0_18718_x1832_579614472}[或虚拟转发器编号]{style="font-family:宋体"}[VF *number*]{lang="EN-US"}
+对于虚拟备份组（VRID为*number*），该字段表示当前路由器在备份组中的状态，取值为Master，Backup，Initialize或Inactive
 
-[[State]{lang="EN-US"}]{#struct_0_18718_x1832_687610359}
+对于虚拟转发器（VRID为VF *number*），该字段表示虚拟转发器的状态，取值为Active、Listening或Initialize
 
-[[对于虚拟备份组（]{style="font-family:宋体"}[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_x1544254525}[为]{style="font-family:宋体"}*[number]{lang="EN-US"}*[），该字段表示当前路由器在备份组中的状态，取值为]{style="font-family:宋体"}[Master]{lang="EN-US"}[，]{style="font-family:宋体"}[Backup]{lang="EN-US"}[，]{style="font-family:宋体"}[Initialize]{lang="EN-US"}[或]{style="font-family:宋体"}[Inactive]{lang="EN-US"}
+Running Pri
 
-[[对于虚拟转发器（]{style="font-family:宋体"}[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_1005157487}[为]{style="font-family:宋体"}[VF *number*]{lang="EN-US"}[），该字段表示虚拟转发器的状态，取值为]{style="font-family:宋体"}[Active]{lang="EN-US"}[、]{style="font-family:宋体"}[Listening]{lang="EN-US"}[或]{style="font-family:宋体"}[Initialize]{lang="EN-US"}
+对于虚拟备份组（VRID为*number*），该字段表示路由器的运行优先级，即路由器当前的优先级，配置监视指定Track项后，路由器的优先级会根据Track项的状态改变
 
-[[Running Pri]{lang="EN-US"}]{#struct_0_18718_x1832_1125286292}
+对于虚拟转发器（VRID为VF *number*），该字段表示虚拟转发器的运行优先级，配置监视指定Track项后，虚拟转发器的优先级会根据Track项的状态改变
 
-[[对于虚拟备份组（]{style="font-family:宋体"}[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_x956338113}[为]{style="font-family:宋体"}*[number]{lang="EN-US"}*[），该字段表示路由器的运行优先级，即路由器当前的优先级，配置监视指定]{style="font-family:宋体"}[Track]{lang="EN-US"}[项后，路由器的优先级会根据]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态改变]{style="font-family:宋体"}
+Address
 
-[[对于虚拟转发器（]{style="font-family:宋体"}[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_x311060735}[为]{style="font-family:宋体"}[VF *number*]{lang="EN-US"}[），该字段表示虚拟转发器的运行优先级，配置监视指定]{style="font-family:宋体"}[Track]{lang="EN-US"}[项后，虚拟转发器的优先级会根据]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态改变]{style="font-family:宋体"}
+对于虚拟备份组（VRID为*number*），该字段表示备份组的虚拟IP地址
 
-[[Address]{lang="EN-US"}]{#struct_0_18718_x1832_x1526345286}
+对于虚拟转发器（VRID为VF *number*），该字段表示虚拟转发器的虚拟MAC地址
 
-[[对于虚拟备份组（]{style="font-family:宋体"}[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_263645516}[为]{style="font-family:宋体"}*[number]{lang="EN-US"}*[），该字段表示备份组的虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+Active
 
-[[对于虚拟转发器（]{style="font-family:宋体"}[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_x1856847336}[为]{style="font-family:宋体"}[VF *number*]{lang="EN-US"}[），该字段表示虚拟转发器的虚拟]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+对于虚拟备份组（VRID为*number*），该字段表示Master的接口IP地址，当前路由器为Master时，显示为local
 
-[[Active]{lang="EN-US"}]{#struct_0_18718_x1832_x956403649}
+对于虚拟转发器（VRID为VF *number*），该字段表示AVF的接口IP地址，当前虚拟转发器为AVF时，显示为local
 
-[[对于虚拟备份组（]{style="font-family:宋体"}[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_x1461218116}[为]{style="font-family:宋体"}*[number]{lang="EN-US"}*[），该字段表示]{style="font-family:宋体"}[Master]{lang="EN-US"}[的接口]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，当前路由器为]{style="font-family:宋体"}[Master]{lang="EN-US"}[时，显示为]{style="font-family:宋体"}[local]{lang="EN-US"}
+\# VRRP工作在负载均衡模式时，显示全部IPv4 VRRP备份组的详细信息。
 
-[[对于虚拟转发器（]{style="font-family:宋体"}[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_x2008201207}[为]{style="font-family:宋体"}[VF *number*]{lang="EN-US"}[），该字段表示]{style="font-family:宋体"}[AVF]{lang="EN-US"}[的接口]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，当前虚拟转发器为]{style="font-family:宋体"}[AVF]{lang="EN-US"}[时，显示为]{style="font-family:宋体"}[local]{lang="EN-US"}
+\<Sysname\> display vrrp verbose
 
-[ ]{lang="EN-US"}
+IPv4 Virtual Router Information:
 
-[[\# VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x40222392}[工作在负载均衡模式时，显示全部]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组的详细信息。]{style="font-family:宋体"}
+ Running Mode      : Load Balance
 
-[[\<Sysname\> display vrrp verbose]{lang="EN-US"}]{#struct_0_18718_x1832_x956075969}
+ Total number of virtual routers : 2
 
-[IPv4 Virtual Router Information:]{lang="EN-US"}
+   Interface GigabitEthernet1/0/1
 
-[ Running Mode      : Load Balance]{lang="EN-US"}
+     VRID           : 1                    Adver Timer  : 100
 
-[ Total number of virtual routers : 2]{lang="EN-US"}
+     Admin Status   : Up                   State        : Master
 
-[   Interface GigabitEthernet1/0/1]{lang="EN-US"}
+     Config Pri     : 150                  Running Pri  : 150
 
-[     VRID           : 1                    Adver Timer  : 100]{lang="EN-US"}
+     Preempt Mode   : Yes                  Delay Time   : 5
 
-[     Admin Status   : Up                   State        : Master]{lang="EN-US"}
+     Auth Type      : None
 
-[     Config Pri     : 150                  Running Pri  : 150]{lang="EN-US"}
+     Virtual IP     : 10.1.1.1
 
-[     Preempt Mode   : Yes                  Delay Time   : 5]{lang="EN-US"}
+                      10.1.1.2
 
-[     Auth Type      : None]{lang="EN-US"}
+                      10.1.1.3
 
-[     Virtual IP     : 10.1.1.1]{lang="EN-US"}
+     Member IP List : 10.1.1.10 (Local, Master)
 
-[                      10.1.1.2]{lang="EN-US"}
+                      10.1.1.20 (Backup)
 
-[                      10.1.1.3]{lang="EN-US"}
+   VRRP Track Information:
 
-[     Member IP List : 10.1.1.10 (Local, Master)]{lang="EN-US"}
+     Track Object   : 1                    State : Positive   Pri Reduced : 50
 
-[                      10.1.1.20 (Backup)]{lang="EN-US"}
+   Forwarder Information: 2 Forwarders 1 Active
 
-[   VRRP Track Information:]{lang="EN-US"}
+     Config Weight  : 255
 
-[     Track Object   : 1                    State : Positive   Pri Reduced : 50]{lang="EN-US"}
+     Running Weight : 255
 
-[   Forwarder Information: 2 Forwarders 1 Active]{lang="EN-US"}
+    Forwarder 01
 
-[     Config Weight  : 255]{lang="EN-US"}
+     State          : Active
 
-[     Running Weight : 255]{lang="EN-US"}
+     Virtual MAC    : 000f-e2ff-0011 (Owner)
 
-[    Forwarder 01]{lang="EN-US"}
+     Owner ID       : 0000-5e01-1101
 
-[     State          : Active]{lang="EN-US"}
+     Priority       : 255
 
-[     Virtual MAC    : 000f-e2ff-0011 (Owner)]{lang="EN-US"}
+     Active         : local
 
-[     Owner ID       : 0000-5e01-1101]{lang="EN-US"}
+    Forwarder 02
 
-[     Priority       : 255]{lang="EN-US"}
+     State          : Listening
 
-[     Active         : local]{lang="EN-US"}
+     Virtual MAC    : 000f-e2ff-0012 (Learnt)
 
-[    Forwarder 02]{lang="EN-US"}
+     Owner ID       : 0000-5e01-1103
 
-[     State          : Listening]{lang="EN-US"}
+     Priority       : 127
 
-[     Virtual MAC    : 000f-e2ff-0012 (Learnt)]{lang="EN-US"}
+     Active         : 10.1.1.20
 
-[     Owner ID       : 0000-5e01-1103]{lang="EN-US"}
+   Forwarder Weight Track Information:
 
-[     Priority       : 127]{lang="EN-US"}
+     Track Object   : 1          State : Positive   Weight Reduced : 250
 
-[     Active         : 10.1.1.20]{lang="EN-US"}
+   Interface GigabitEthernet1/0/1
 
-[   Forwarder Weight Track Information:]{lang="EN-US"}
+     VRID           : 11                   Adver Timer  : 100
 
-[     Track Object   : 1          State : Positive   Weight Reduced : 250]{lang="EN-US"}
+     Admin Status   : Up                   State        : Backup
 
-[   Interface GigabitEthernet1/0/1]{lang="EN-US"}
+     Config Pri     : 80                   Running Pri  : 80
 
-[     VRID           : 11                   Adver Timer  : 100]{lang="EN-US"}
+     Preempt Mode   : Yes                  Delay Time   : 0
 
-[     Admin Status   : Up                   State        : Backup]{lang="EN-US"}
+     Become Master  : 2370ms left
 
-[     Config Pri     : 80                   Running Pri  : 80]{lang="EN-US"}
+     Auth Type      : None
 
-[     Preempt Mode   : Yes                  Delay Time   : 0]{lang="EN-US"}
+     Virtual IP     : 10.1.1.11
 
-[     Become Master  : 2370ms left]{lang="EN-US"}
+                    : 10.1.1.12
 
-[     Auth Type      : None]{lang="EN-US"}
+                    : 10.1.1.13
 
-[     Virtual IP     : 10.1.1.11]{lang="EN-US"}
+     Member IP List : 10.1.1.10 (Local, Backup)
 
-[                    : 10.1.1.12]{lang="EN-US"}
+                      10.1.1.15 (Master)
 
-[                    : 10.1.1.13]{lang="EN-US"}
+   Forwarder Information: 2 Forwarders 1 Active
 
-[     Member IP List : 10.1.1.10 (Local, Backup)]{lang="EN-US"}
+     Config Weight  : 255
 
-[                      10.1.1.15 (Master)]{lang="EN-US"}
+     Running Weight : 255
 
-[   Forwarder Information: 2 Forwarders 1 Active]{lang="EN-US"}
+    Forwarder 01
 
-[     Config Weight  : 255]{lang="EN-US"}
+     State          : Active
 
-[     Running Weight : 255]{lang="EN-US"}
+     Virtual MAC    : 000f-e2ff-40b1 (Learnt)
 
-[    Forwarder 01]{lang="EN-US"}
+     Owner ID       : 0000-5e01-1103
 
-[     State          : Active]{lang="EN-US"}
+     Priority       : 127
 
-[     Virtual MAC    : 000f-e2ff-40b1 (Learnt)]{lang="EN-US"}
+     Active         : 10.1.1.15
 
-[     Owner ID       : 0000-5e01-1103]{lang="EN-US"}
+    Forwarder 02
 
-[     Priority       : 127]{lang="EN-US"}
+     State          : Listening
 
-[     Active         : 10.1.1.15]{lang="EN-US"}
+     Virtual MAC    : 000f-e2ff-40b2 (Owner)
 
-[    Forwarder 02]{lang="EN-US"}
+     Owner ID       : 0000-5e01-1101
 
-[     State          : Listening]{lang="EN-US"}
+     Priority       : 255
 
-[     Virtual MAC    : 000f-e2ff-40b2 (Owner)]{lang="EN-US"}
+     Active         : local
 
-[     Owner ID       : 0000-5e01-1101]{lang="EN-US"}
+表1-4 display vrrp verbose命令显示信息描述表（负载均衡模式）
 
-[     Priority       : 255]{lang="EN-US"}
+字段
 
-[     Active         : local]{lang="EN-US"}
+描述
 
-[]{#struct_0_18718_x1832_1331866268}[]{#_Hlt13643166}[表1-4 ]{lang="EN-US"}[display vrrp verbose]{lang="EN-US"}[命令显示信息描述表（负载均衡模式）]{style="font-family:黑体"}
+Running Mode
 
-[]{#table_struct_0_x1823430137}[[字段]{style="font-family:黑体"}]{#struct_0_18718_x1832_131017443}
+VRRP的工作模式，取值为Load Balance（负载均衡模式）
 
-[[描述]{style="font-family:黑体"}]{#struct_0_18718_x1832_1965938545}
+Total number of virtual routers
 
-[[Running Mode]{lang="EN-US"}]{#struct_0_18718_x1832_x1710838319}
+备份组的数目
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x1700403275}[的工作模式，取值为]{style="font-family:宋体"}[Load Balance]{lang="EN-US"}[（负载均衡模式）]{style="font-family:宋体"}
+Interface
 
-[[Total number of virtual routers]{lang="EN-US"}]{#struct_0_18718_x1832_x1952090979}
+备份组所在接口名
 
-[[备份组的数目]{style="font-family:宋体"}]{#struct_0_18718_x1832_x956141505}
+VRID
 
-[[Interface]{lang="EN-US"}]{#struct_0_18718_x1832_1650556267}
+虚拟路由器号（即备份组号）
 
-[[备份组所在接口名]{style="font-family:宋体"}]{#struct_0_18718_x1832_196700361}
+Adver Timer
 
-[[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_x1066552932}
+VRRP通告报文发送时间间隔，单位为厘秒
 
-[[虚拟路由器号（即备份组号）]{style="font-family:宋体"}]{#struct_0_18718_x1832_x508135192}
+Admin Status
 
-[[Adver Timer]{lang="EN-US"}]{#struct_0_18718_x1832_x838256676}
+管理状态，包括Up和Down两种状态
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x956600256}[通告报文发送时间间隔，单位为厘秒]{style="font-family:宋体"}
+State
 
-[[Admin Status]{lang="EN-US"}]{#struct_0_18718_x1832_1665331918}
+当前路由器在备份组中的状态，取值为Master，Backup，Initialize或Inactive
 
-[[管理状态，包括]{style="font-family:宋体"}[Up]{lang="EN-US"}]{#struct_0_18718_x1832_x1638414200}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}[两种状态]{style="font-family:宋体"}
+Config Pri
 
-[[State]{lang="EN-US"}]{#struct_0_18718_x1832_x47646218}
+路由器的配置优先级，即通过**vrrp vrid priority**命令指定的路由器优先级
 
-[[当前路由器在备份组中的状态，取值为]{style="font-family:宋体"}[Master]{lang="EN-US"}]{#struct_0_18718_x1832_x362943555}[，]{style="font-family:宋体"}[Backup]{lang="EN-US"}[，]{style="font-family:宋体"}[Initialize]{lang="EN-US"}[或]{style="font-family:宋体"}[Inactive]{lang="EN-US"}
+Running Pri
 
-[[Config Pri]{lang="EN-US"}]{#struct_0_18718_x1832_x956665792}
+路由器的运行优先级，即路由器当前的优先级，配置监视指定Track项后，路由器的优先级会根据Track项的状态改变
 
-[[路由器的配置优先级，即通过]{style="font-family:宋体"}**[vrrp vrid priority]{lang="EN-US"}**]{#struct_0_18718_x1832_x290149429}[命令指定的路由器优先级]{style="font-family:宋体"}
+Preempt Mode
 
-[[Running Pri]{lang="EN-US"}]{#struct_0_18718_x1832_x687993811}
+抢占模式，取值包括：
 
-[[路由器的运行优先级，即路由器当前的优先级，配置监视指定]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_1951191218}[项后，路由器的优先级会根据]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态改变]{style="font-family:宋体"}
+·Yes：路由器工作在抢占模式
 
-[[Preempt Mode]{lang="EN-US"}]{#struct_0_18718_x1832_x1064193960}
+·No：路由器工作在非抢占模式
 
-[[抢占模式，取值包括：]{style="font-family:宋体"}]{#struct_0_18718_x1832_x956731328}
+Delay Time
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Yes]{lang="EN-US"}]{#struct_0_18718_x1832_1281850899}[：路由器工作在抢占模式]{lang="EN-US" style="font-family:宋体"}
+抢占延迟时间，单位为厘秒
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No]{lang="EN-US"}]{#struct_0_18718_x1832_1110603377}[：路由器工作在非抢占模式]{style="font-family:宋体"}
+Become Master
 
-[[Delay Time]{lang="EN-US"}]{#struct_0_18718_x1832_x1386436853}
+切换到Master状态需要等待的时间，单位为毫秒，只有处于Backup状态时才会显示此信息
 
-[[抢占延迟时间，单位为厘秒]{style="font-family:宋体"}]{#struct_0_18718_x1832_x87336572}
+Auth Type
 
-[[Become Master]{lang="EN-US"}]{#struct_0_18718_x1832_x956796864}
+认证类型，包括：
 
-[[切换到]{style="font-family:宋体"}[Master]{lang="EN-US"}]{#struct_0_18718_x1832_579680008}[状态需要等待的时间，单位为毫秒，只有处于]{style="font-family:宋体"}[Backup]{lang="EN-US"}[状态时才会显示此信息]{style="font-family:宋体"}
+·None：无认证
 
-[[Auth Type]{lang="EN-US"}]{#struct_0_18718_x1832_x820033992}
+·Simple：简单字符认证
 
-[[认证类型，包括：]{style="font-family:宋体"}]{#struct_0_18718_x1832_75587132}
+·MD5：MD5认证
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[None]{lang="EN-US"}]{#struct_0_18718_x1832_x956338112}[：无认证]{lang="EN-US" style="font-family:宋体"}
+Key
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Simple]{lang="EN-US"}]{#struct_0_18718_x1832_x310995199}[：简单字符认证]{lang="EN-US" style="font-family:宋体"}
+认证字，无认证时不显示此信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MD5]{lang="EN-US"}]{#struct_0_18718_x1832_x1975766820}[：]{lang="EN-US" style="font-family:宋体"}[MD5]{lang="EN-US"}[认证]{lang="EN-US" style="font-family:宋体"}
+Virtual IP
 
-[[Key]{lang="EN-US"}]{#struct_0_18718_x1832_726865648}
+备份组的虚拟IP地址列表
 
-[[认证字，无认证时不显示此信息]{style="font-family:宋体"}]{#struct_0_18718_x1832_x956403648}
+Member IP List
 
-[[Virtual IP]{lang="EN-US"}]{#struct_0_18718_x1832_x1461283652}
+备份组中成员设备的IP地址列表：
 
-[[备份组的虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_18718_x1832_x1075101485}[地址列表]{style="font-family:宋体"}
+·Local：表示本地设备的IP地址
 
-[[Member IP List]{lang="EN-US"}]{#struct_0_18718_x1832_x573917886}
+·Master：表示处于Master状态的成员设备的IP地址
 
-[[备份组中成员设备的]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_18718_x1832_x956469184}[地址列表：]{style="font-family:宋体"}
+·Backup：表示处于Backup状态的成员设备的IP地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Local]{lang="EN-US"}]{#struct_0_18718_x1832_1244799694}[：表示本地设备的]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+VRRP Track Information
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Master]{lang="EN-US"}]{#struct_0_18718_x1832_x1563861791}[：表示处于]{lang="EN-US" style="font-family:宋体"}[Master]{lang="EN-US"}[状态的成员设备的]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+VRRP备份组监视的Track项信息，执行**vrrp vrid track**命令后，才会显示此信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Backup]{lang="EN-US"}]{#struct_0_18718_x1832_x316697506}[：表示处于]{style="font-family:宋体"}[Backup]{lang="EN-US"}[状态的成员设备的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+Track Object
 
-[[VRRP Track Information]{lang="EN-US"}]{#struct_0_18718_x1832_x956534720}
+监视的Track项
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x1845682180}[备份组监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项信息，执行]{style="font-family:宋体"}**[vrrp vrid track]{lang="EN-US"}**[命令后，才会显示此信息]{style="font-family:宋体"}
+State
 
-[[Track Object]{lang="EN-US"}]{#struct_0_18718_x1832_x125379259}
+Track项的状态，Track项的状态包括Negative、Positive和NotReady
 
-[[监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_x555738513}[项]{style="font-family:宋体"}
+Pri Reduced
 
-[[State]{lang="EN-US"}]{#struct_0_18718_x1832_x956075968}
+监视的Track项状态为Negative时，优先级降低的数额，执行**vrrp vrid track**命令后，才会显示此信息
 
-[[Track]{lang="EN-US"}]{#struct_0_18718_x1832_1331931804}[项的状态，]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态包括]{style="font-family:宋体"}[Negative]{lang="EN-US"}[、]{style="font-family:宋体"}[Positive]{lang="EN-US"}[和]{style="font-family:宋体"}[NotReady]{lang="EN-US"}
+Switchover
 
-[[Pri Reduced]{lang="EN-US"}]{#struct_0_18718_x1832_933470041}
+快速切换，显示此信息时表示当监视的Track项变为Negative状态时，Backup路由器会马上抢占成为Master路由器
 
-[[监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_x956141504}[项状态为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，优先级降低的数额，执行]{style="font-family:宋体"}**[vrrp vrid track]{lang="EN-US"}**[命令后，才会显示此信息]{style="font-family:宋体"}
+Forwarder Information: 2 Forwarders 1 Active
 
-[[Switchover]{lang="EN-US"}]{#struct_0_18718_x1832_1650490731}
+虚拟转发器信息：路由器的虚拟转发器数目为2，处于Active状态的虚拟转发器数目为1
 
-[[快速切换，显示此信息时表示当监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_940123279}[项变为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[状态时，]{style="font-family:宋体"}[Backup]{lang="EN-US"}[路由器会马上抢占成为]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器]{style="font-family:宋体"}
+Config Weight
 
-[[Forwarder Information: 2 Forwarders 1 Active]{lang="EN-US"}]{#struct_0_18718_x1832_358963333}
+虚拟转发器的配置权重，取值为255
 
-[[虚拟转发器信息：路由器的虚拟转发器数目为]{style="font-family:宋体"}[2]{lang="EN-US"}]{#struct_0_18718_x1832_x956600259}[，处于]{style="font-family:宋体"}[Active]{lang="EN-US"}[状态的虚拟转发器数目为]{style="font-family:宋体"}[1]{lang="EN-US"}
+Running Weight
 
-[[Config Weight]{lang="EN-US"}]{#struct_0_18718_x1832_1665790670}
+虚拟转发器的运行权重，即虚拟转发器当前的权重，配置监视指定Track项后，虚拟转发器的权重会根据Track项的状态改变
 
-[[虚拟转发器的配置权重，取值为]{style="font-family:宋体"}[255]{lang="EN-US"}]{#struct_0_18718_x1832_628708195}
+Forwarder 01
 
-[[Running Weight]{lang="EN-US"}]{#struct_0_18718_x1832_x956665795}
+虚拟转发器01的信息
 
-[[虚拟转发器的运行权重，即虚拟转发器当前的权重，配置监视指定]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_x289952821}[项后，虚拟转发器的权重会根据]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态改变]{style="font-family:宋体"}
+State
 
-[[Forwarder 01]{lang="EN-US"}]{#struct_0_18718_x1832_112417815}
+虚拟转发器的状态，取值为Active、Listening或Initialize
 
-[[虚拟转发器]{style="font-family:宋体"}[01]{lang="EN-US"}]{#struct_0_18718_x1832_x2111711074}[的信息]{style="font-family:宋体"}
+Virtual MAC
 
-[[State]{lang="EN-US"}]{#struct_0_18718_x1832_x956731331}
+虚拟转发器的虚拟MAC地址
 
-[[虚拟转发器的状态，取值为]{style="font-family:宋体"}[Active]{lang="EN-US"}]{#struct_0_18718_x1832_1281261076}[、]{style="font-family:宋体"}[Listening]{lang="EN-US"}[或]{style="font-family:宋体"}[Initialize]{lang="EN-US"}
+Owner ID
 
-[[Virtual MAC]{lang="EN-US"}]{#struct_0_18718_x1832_1079241808}
+虚拟转发器拥有者的接口实际MAC地址
 
-[[虚拟转发器的虚拟]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_18718_x1832_x956796867}[地址]{style="font-family:宋体"}
+Priority
 
-[[Owner ID]{lang="EN-US"}]{#struct_0_18718_x1832_579745544}
+虚拟转发器的优先级，取值范围为1～255
 
-[[虚拟转发器拥有者的接口实际]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_18718_x1832_x1214798335}[地址]{style="font-family:宋体"}
+Active
 
-[[Priority]{lang="EN-US"}]{#struct_0_18718_x1832_968871812}
+AVF的接口IP地址，当前转发器为AVF时，显示为local
 
-[[虚拟转发器的优先级，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_18718_x1832_x956338115}[～]{style="font-family:宋体"}[255]{lang="EN-US"}
+Forwarder Weight Track Configuration
 
-[[Active]{lang="EN-US"}]{#struct_0_18718_x1832_x310667519}
+虚拟转发器权重监视配置信息。执行**vrrp vrid weight** **track**命令后，才会显示此信息
 
-[[AVF]{lang="EN-US"}]{#struct_0_18718_x1832_417744761}[的接口]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，当前转发器为]{style="font-family:宋体"}[AVF]{lang="EN-US"}[时，显示为]{style="font-family:宋体"}[local]{lang="EN-US"}
+Track Object
 
-[[Forwarder Weight Track Configuration]{lang="EN-US"}]{#struct_0_18718_x1832_x956403651}
+权重监视的Track项。执行**vrrp vrid weight** **track**命令后，才会显示此信息
 
-[[虚拟转发器权重监视配置信息。执行]{style="font-family:宋体"}**[vrrp vrid weight]{lang="EN-US"}**[ **track**]{lang="EN-US"}]{#struct_0_18718_x1832_x1461742405}[命令后，才会显示此信息]{style="font-family:宋体"}
+State
 
-[[Track Object]{lang="EN-US"}]{#struct_0_18718_x1832_x1970752938}
+Track项的状态，Track项的状态包括Negative、Positive和NotReady
 
-[[权重监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_x956469187}[项。执行]{style="font-family:宋体"}**[vrrp vrid weight]{lang="EN-US"}**[ **track**]{lang="EN-US"}[命令后，才会显示此信息]{style="font-family:宋体"}
+Weight Reduced
 
-[[State]{lang="EN-US"}]{#struct_0_18718_x1832_1244996302}
-
-[[Track]{lang="EN-US"}]{#struct_0_18718_x1832_2026145549}[项的状态，]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态包括]{style="font-family:宋体"}[Negative]{lang="EN-US"}[、]{style="font-family:宋体"}[Positive]{lang="EN-US"}[和]{style="font-family:宋体"}[NotReady ]{lang="EN-US"}
-
-[[Weight Reduced]{lang="EN-US"}]{#struct_0_18718_x1832_x956534723}
-
-[[监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_x1845878788}[项状态为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，权重降低的数额。执行]{style="font-family:宋体"}**[vrrp vrid weight]{lang="EN-US"}**[ **track**]{lang="EN-US"}[命令后，才会显示此信息]{style="font-family:
-  宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1250607015 .myid}
-[]{#_Toc404795927}[]{#struct_0_18718_x1832_x510320696}[]{#_Toc211671358}
+监视的Track项状态为Negative时，权重降低的数额。执行**vrrp vrid weight** **track**命令后，才会显示此信息
 
 **VRRP \-- IPv4 VRRP配置命令 \-- display vrrp statistics**
 
 ------------------------------------------------------------------------
 
-[**[display vrrp statistics]{lang="EN-US"}**]{#struct_0_18718_x1832_x879046062}[命令用来显示]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组的统计信息。]{style="font-family:宋体"}
+**[display vrrp statistics**]命令用来显示IPv4 VRRP备份组的统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1779154235}
+【命令】
 
-[**[display vrrp]{lang="EN-US"}**[ **statistics** \[ **interface** *interface-type interface-number* \[ **vrid** *virtual-router-id* \] \]]{lang="EN-US"}]{#struct_0_18718_x1832_x956075971}
+**[display vrrp** **statistics** [ **interface** *interface-type interface-number* [ **vrid** *virtual-router-id*  ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1332390555}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_1943541051}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1345210421}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x266510349}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_18718_x1832_1986666793}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x847814547}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_18718_x1832_x154976414}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_2079930189}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_18718_x1832_x248502475}[：显示指定接口的]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组统计信息。其中，]{style="font-family:宋体"}*[interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}[为接口类型和接口编号。]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：显示指定接口的IPv4 VRRP备份组统计信息。其中，*interface-type* *interface-number*为接口类型和接口编号。
 
-[**[vrid ]{lang="EN-US"}***[virtual-router-id]{lang="EN-US"}*]{#struct_0_18718_x1832_x956141507}[：显示指定备份组的]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[统计信息。其中，]{style="font-family:宋体"}*[virtual-router-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vrid ***virtual-router-id*]：显示指定备份组的IPv4 VRRP统计信息。其中，*virtual-router-id*为IPv4 VRRP备份组号，取值范围为1～255。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1650425195}
+【使用指导】
 
-[[如果不输入接口名和备份组号，则显示该路由器上所有]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_1348787598}[备份组的统计信息；如果只输入接口名，不输入备份组号，则显示该接口上的所有]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组的统计信息；如果同时输入接口名和备份组号，则显示该接口上指定]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组的统计信息。]{style="font-family:宋体"}
+如果不输入接口名和备份组号，则显示该路由器上所有IPv4 VRRP备份组的统计信息；如果只输入接口名，不输入备份组号，则显示该接口上的所有IPv4 VRRP备份组的统计信息；如果同时输入接口名和备份组号，则显示该接口上指定IPv4 VRRP备份组的统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_736492647}
+【举例】
 
-[[\# VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x1258752304}[工作在标准协议模式时，显示所有]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组的统计信息。]{style="font-family:宋体"}
+\# VRRP工作在标准协议模式时，显示所有IPv4 VRRP备份组的统计信息。
 
-[[\<Sysname\> display vrrp statistics]{lang="EN-US"}]{#struct_0_18718_x1832_x956600258}
+\<Sysname\> display vrrp statistics
 
-[ Interface               : GigabitEthernet1/0/1]{lang="EN-US"}
+ Interface               : GigabitEthernet1/0/1
 
-[ VRID                    : 1]{lang="EN-US"}
+ VRID                    : 1
 
-[ CheckSum Errors         : 0          Version Errors                : 0]{lang="EN-US"}
+ CheckSum Errors         : 0          Version Errors                : 0
 
-[ Invalid Pkts Rcvd  :      0          Unexpected Pkts Rcvd          : 0]{lang="EN-US"}
+ Invalid Pkts Rcvd  :      0          Unexpected Pkts Rcvd          : 0
 
-[ IP TTL Errors           : 0          Advertisement Interval Errors : 0]{lang="EN-US"}
+ IP TTL Errors           : 0          Advertisement Interval Errors : 0
 
-[ Invalid Auth Type       : 0          Auth Failures                 : 0]{lang="EN-US"}
+ Invalid Auth Type       : 0          Auth Failures                 : 0
 
-[ Packet Length Errors    : 0          Auth Type Mismatch            : 0]{lang="EN-US"}
+ Packet Length Errors    : 0          Auth Type Mismatch            : 0
 
-[ Become Master           : 1          Address List Errors           : 0]{lang="EN-US"}
+ Become Master           : 1          Address List Errors           : 0
 
-[ Adver Rcvd              : 0          Priority Zero Pkts Rcvd       : 0]{lang="EN-US"}
+ Adver Rcvd              : 0          Priority Zero Pkts Rcvd       : 0
 
-[ Adver Sent              : 807        Priority Zero Pkts Sent       : 0]{lang="EN-US"}
+ Adver Sent              : 807        Priority Zero Pkts Sent       : 0
 
-[ ]{lang="EN-US"}
+ Global statistics
 
-[ Global statistics]{lang="EN-US"}
+ CheckSum Errors         : 0
 
-[ CheckSum Errors         : 0]{lang="EN-US"}
+ Version Errors          : 0
 
-[ Version Errors          : 0]{lang="EN-US"}
+ VRID Errors             : 0
 
-[ VRID Errors             : 0]{lang="EN-US"}
+\# VRRP工作在负载均衡模式时，显示全部IPv4 VRRP备份组的统计信息。
 
-[[\# VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_1665725134}[工作在负载均衡模式时，显示全部]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组的统计信息。]{style="font-family:宋体"}
+\<Sysname\> display vrrp statistics
 
-[[\<Sysname\> display vrrp statistics]{lang="EN-US"}]{#struct_0_18718_x1832_x2076140946}
+ Interface               : GigabitEthernet1/0/1
 
-[ Interface               : GigabitEthernet1/0/1]{lang="EN-US"}
+ VRID                    : 1
 
-[ VRID                    : 1]{lang="EN-US"}
+ CheckSum Errors         : 0          Version Errors                : 0
 
-[ CheckSum Errors         : 0          Version Errors                : 0]{lang="EN-US"}
+ Invalid Pkts Rcvd       : 0          Unexpected Pkts Rcvd          : 0
 
-[ Invalid Pkts Rcvd       : 0          Unexpected Pkts Rcvd          : 0]{lang="EN-US"}
+ IP TTL Errors           : 0          Advertisement Interval Errors : 0
 
-[ IP TTL Errors           : 0          Advertisement Interval Errors : 0]{lang="EN-US"}
+ Invalid Auth Type       : 0          Auth Failures                 : 0
 
-[ Invalid Auth Type       : 0          Auth Failures                 : 0]{lang="EN-US"}
+ Packet Length Errors    : 0          Auth Type Mismatch            : 0
 
-[ Packet Length Errors    : 0          Auth Type Mismatch            : 0]{lang="EN-US"}
+ Become Master           : 39         Address List Errors           : 0
 
-[ Become Master           : 39         Address List Errors           : 0]{lang="EN-US"}
+ Become AVF              : 13         Packet Option Errors          : 0
 
-[ Become AVF              : 13         Packet Option Errors          : 0]{lang="EN-US"}
+ Adver Rcvd              : 2562       Priority Zero Pkts Rcvd       : 1
 
-[ Adver Rcvd              : 2562       Priority Zero Pkts Rcvd       : 1 ]{lang="EN-US"}
+ Adver Sent              : 16373      Priority Zero Pkts Sent       : 49
 
-[ Adver Sent              : 16373      Priority Zero Pkts Sent       : 49]{lang="EN-US"}
+ Request Rcvd            : 2          Reply Rcvd                    : 10
 
-[ Request Rcvd            : 2          Reply Rcvd                    : 10]{lang="EN-US"}
+ Request Sent            : 12         Reply Sent                    : 2
 
-[ Request Sent            : 12         Reply Sent                    : 2 ]{lang="EN-US"}
+ Release Rcvd            : 0          VF Priority Zero Pkts Rcvd    : 1
 
-[ Release Rcvd            : 0          VF Priority Zero Pkts Rcvd    : 1 ]{lang="EN-US"}
+ Release Sent            : 0          VF Priority Zero Pkts Sent    : 11
 
-[ Release Sent            : 0          VF Priority Zero Pkts Sent    : 11]{lang="EN-US"}
+ Redirect Timer Expires  : 1          Time-out Timer Expires        : 0
 
-[ Redirect Timer Expires  : 1          Time-out Timer Expires        : 0]{lang="EN-US"}
+ Global statistics
 
-[ ]{lang="EN-US"}
+ CheckSum Errors         : 0
 
-[ Global statistics]{lang="EN-US"}
+ Version Errors          : 0
 
-[ CheckSum Errors         : 0]{lang="EN-US"}
+ VRID Errors             : 0
 
-[ Version Errors          : 0]{lang="EN-US"}
+表1-5 display vrrp statistics显示信息描述表（标准协议模式）
 
-[ VRID Errors             : 0]{lang="EN-US"}
+字段
 
-[]{#struct_0_18718_x1832_x956665794}[[表1-5 ]{lang="EN-US"}[display vrrp statistics]{lang="EN-US"}]{#_Toc138047854}[显示]{style="font-family:黑体"}[信息描述表（标准协议模式）]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x1796042897}[[字段]{style="font-family:黑体"}]{#struct_0_18718_x1832_x290018357}
-:::
+Interface
 
-[[描述]{style="font-family:黑体"}]{#struct_0_18718_x1832_473268324}
+备份组所在接口
 
-[[Interface]{lang="EN-US"}]{#struct_0_18718_x1832_x1063619204}
+VRID
 
-[[备份组所在接口]{style="font-family:宋体"}]{#struct_0_18718_x1832_109342494}
+备份组号
 
-[[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_x1480316271}
+CheckSum Errors
 
-[[备份组号]{style="font-family:宋体"}]{#struct_0_18718_x1832_x888316301}
+校验和错误的报文数
 
-[[CheckSum Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x956731330}
+Version Errors
 
-[[校验和错误的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_1281326612}
+版本号错误的报文数
 
-[[Version Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x860266292}
+Invalid Pkts Rcvd
 
-[[版本号错误的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x2096636869}
+接收到报文类型错误的报文数
 
-[[Invalid Pkts Rcvd]{lang="EN-US"}]{#struct_0_18718_x1832_834983701}
+Unexpected Pkts Rcvd
 
-[[接收到报文类型错误的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x956796866}
+接收到未期望的报文数
 
-[[Unexpected Pkts Rcvd]{lang="EN-US"}]{#struct_0_18718_x1832_579811080}
+Advertisement Interval Errors
 
-[[接收到未期望的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_1305233289}
+VRRP通告报文发送时间间隔错误的报文数
 
-[[Advertisement Interval Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x1935167607}
+IP TTL Errors
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x1506094452}[通告报文发送时间间隔错误的报文数]{style="font-family:宋体"}
+TTL错误的报文数
 
-[[IP TTL Errors]{lang="EN-US"}]{#struct_0_18718_x1832_381974867}
+Auth Failures
 
-[[TTL]{lang="EN-US"}]{#struct_0_18718_x1832_x956338114}[错误的报文数]{style="font-family:宋体"}
+认证失败的报文数
 
-[[Auth Failures]{lang="EN-US"}]{#struct_0_18718_x1832_x310601983}
+Invalid Auth Type
 
-[[认证失败的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1513398708}
+认证类型无效的报文数
 
-[[Invalid Auth Type]{lang="EN-US"}]{#struct_0_18718_x1832_211039317}
+Auth Type Mismatch
 
-[[认证类型无效的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1026909651}
+认证类型不匹配的报文数
 
-[[Auth Type Mismatch]{lang="EN-US"}]{#struct_0_18718_x1832_x956403650}
+Packet Length Errors
 
-[[认证类型不匹配的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1461807941}
+VRRP报文长度错误的报文数
 
-[[Packet Length Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x885611349}
+Address List Errors
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_308328907}[报文长度错误的报文数]{style="font-family:宋体"}
+备份组虚拟IP地址列表错误的报文数
 
-[[Address List Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x956469186}
+Become Master
 
-[[备份组虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_18718_x1832_1244930766}[地址列表错误的报文数]{style="font-family:宋体"}
+成为Master路由器的次数
 
-[[Become Master]{lang="EN-US"}]{#struct_0_18718_x1832_2005877425}
+Priority Zero Pkts Rcvd
 
-[[成为]{style="font-family:宋体"}[Master]{lang="EN-US"}]{#struct_0_18718_x1832_1120302132}[路由器的次数]{style="font-family:宋体"}
+收到的优先级为0的VRRP通告报文的数目
 
-[[Priority Zero Pkts Rcvd]{lang="EN-US"}]{#struct_0_18718_x1832_x956534722}
+Adver Rcvd
 
-[[收到的优先级为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_18718_x1832_x1845813252}[的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文的数目]{style="font-family:宋体"}
+收到的VRRP通告报文的数目
 
-[[Adver Rcvd]{lang="EN-US"}]{#struct_0_18718_x1832_x1259530977}
+Priority Zero Pkts Sent
 
-[[收到的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x1232743010}[通告报文的数目]{style="font-family:宋体"}
+发送的优先级为0的VRRP通告报文的数目
 
-[[Priority Zero Pkts Sent]{lang="EN-US"}]{#struct_0_18718_x1832_197037243}
+Adver Sent
 
-[[发送的优先级为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_18718_x1832_x956075970}[的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文的数目]{style="font-family:宋体"}
+发送的VRRP通告报文的数目
 
-[[Adver Sent]{lang="EN-US"}]{#struct_0_18718_x1832_1332456091}
+Global statistics
 
-[[发送的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x769119384}[通告报文的数目]{style="font-family:宋体"}
+所有备份组的全局统计信息
 
-[[Global statistics]{lang="EN-US"}]{#struct_0_18718_x1832_565244027}
+CheckSum Errors
 
-[[所有备份组的全局统计信息]{style="font-family:宋体"}]{#struct_0_18718_x1832_x956141506}
+校验和错误的报文总数
 
-[[CheckSum Errors]{lang="EN-US"}]{#struct_0_18718_x1832_1650359659}
+Version Errors
 
-[[校验和错误的报文总数]{style="font-family:宋体"}]{#struct_0_18718_x1832_547116403}
+版本号错误的报文总数
 
-[[Version Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x1558120881}
+VRID Errors
 
-[[版本号错误的报文总数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x956600261}
+备份组号错误的报文总数
 
-[[VRID Errors]{lang="EN-US"}]{#struct_0_18718_x1832_1665266381}
+表1-6 display vrrp statistics显示信息描述表（负载均衡模式）
 
-[[备份组号错误的报文总数]{style="font-family:宋体"}]{#struct_0_18718_x1832_1043926951}
+字段
 
-[ ]{lang="EN-US"}
+描述
 
-[[表1-6 ]{lang="EN-US"}[display vrrp statistics]{lang="EN-US"}]{#struct_0_18718_x1832_1170835218}[显示信息描述表（负载均衡模式）]{style="font-family:黑体"}
+Interface
 
-[]{#table_struct_0_x1805792995}[[字段]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1086418481}
+备份组所在接口
 
-[[描述]{style="font-family:黑体"}]{#struct_0_18718_x1832_x956665797}
+VRID
 
-[[Interface]{lang="EN-US"}]{#struct_0_18718_x1832_x289821749}
+备份组号
 
-[[备份组所在接口]{style="font-family:宋体"}]{#struct_0_18718_x1832_x231884283}
+CheckSum Errors
 
-[[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_x843050829}
+校验和错误的报文数
 
-[[备份组号]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1093922708}
+Version Errors
 
-[[CheckSum Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x929156325}
+版本号错误的报文数
 
-[[校验和错误的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x956731333}
+Invalid Pkts Rcvd
 
-[[Version Errors]{lang="EN-US"}]{#struct_0_18718_x1832_1281130004}
+接收到报文类型错误的报文数
 
-[[版本号错误的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1642891437}
+Unexpected Pkts Rcvd
 
-[[Invalid Pkts Rcvd]{lang="EN-US"}]{#struct_0_18718_x1832_x1109900201}
+接收到未期望的报文数
 
-[[接收到报文类型错误的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1889657812}
+Advertisement Interval Errors
 
-[[Unexpected Pkts Rcvd]{lang="EN-US"}]{#struct_0_18718_x1832_102801977}
+VRRP通告报文发送时间间隔错误的报文数
 
-[[接收到未期望的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x956796869}
+IP TTL Errors
 
-[[Advertisement Interval Errors]{lang="EN-US"}]{#struct_0_18718_x1832_578828040}
+TTL错误的报文数
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_2021680815}[通告报文发送时间间隔错误的报文数]{style="font-family:宋体"}
+Auth Failures
 
-[[IP TTL Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x1590220894}
+认证错误的报文数
 
-[[TTL]{lang="EN-US"}]{#struct_0_18718_x1832_x36993500}[错误的报文数]{style="font-family:宋体"}
+Invalid Auth Type
 
-[[Auth Failures]{lang="EN-US"}]{#struct_0_18718_x1832_x956338117}
+认证类型无效的报文数
 
-[[认证错误的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x310798591}
+Auth Type Mismatch
 
-[[Invalid Auth Type]{lang="EN-US"}]{#struct_0_18718_x1832_x1980401759}
+认证类型不匹配的报文数
 
-[[认证类型无效的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x697961294}
+Packet Length Errors
 
-[[Auth Type Mismatch]{lang="EN-US"}]{#struct_0_18718_x1832_1373876725}
+VRRP报文长度错误的报文数
 
-[[认证类型不匹配的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x956403653}
+Address List Errors
 
-[[Packet Length Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x1461873477}
+虚拟IP地址列表错误的报文数
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_879939867}[报文长度错误的报文数]{style="font-family:宋体"}
+Become Master
 
-[[Address List Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x161362495}
+成为Master路由器的次数
 
-[[虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_18718_x1832_x956469189}[地址列表错误的报文数]{style="font-family:宋体"}
+Redirect Timer Expires
 
-[[Become Master]{lang="EN-US"}]{#struct_0_18718_x1832_1245127374}
+Redirect Timer超时的次数
 
-[[成为]{style="font-family:宋体"}[Master]{lang="EN-US"}]{#struct_0_18718_x1832_1650457779}[路由器的次数]{style="font-family:宋体"}
+Become AVF
 
-[[Redirect Timer Expires]{lang="EN-US"}]{#struct_0_18718_x1832_x958860210}
+成为AVF的次数
 
-[[Redirect Timer]{lang="EN-US"}]{#struct_0_18718_x1832_x956534725}[超时的次数]{style="font-family:宋体"}
+Time-out Timer Expires
 
-[[Become AVF]{lang="EN-US"}]{#struct_0_18718_x1832_x1845485572}
+Time-out Timer超时的次数
 
-[[成为]{style="font-family:宋体"}[AVF]{lang="EN-US"}]{#struct_0_18718_x1832_96061055}[的次数]{style="font-family:宋体"}
+Adver Rcvd
 
-[[Time-out Timer Expires]{lang="EN-US"}]{#struct_0_18718_x1832_x589669347}
+收到的Advertisement报文的数目
 
-[[Time-out Timer]{lang="EN-US"}]{#struct_0_18718_x1832_x956075973}[超时的次数]{style="font-family:宋体"}
+Request Rcvd
 
-[[Adver Rcvd]{lang="EN-US"}]{#struct_0_18718_x1832_1332259483}
+收到的Request报文的数目
 
-[[收到的]{style="font-family:宋体"}[Advertisement]{lang="EN-US"}]{#struct_0_18718_x1832_1551189394}[报文的数目]{style="font-family:宋体"}
+Adver Sent
 
-[[Request Rcvd]{lang="EN-US"}]{#struct_0_18718_x1832_424760613}
+发送的Advertisement报文的数目
 
-[[收到的]{style="font-family:宋体"}[Request]{lang="EN-US"}]{#struct_0_18718_x1832_x956141509}[报文的数目]{style="font-family:宋体"}
+Request Sent
 
-[[Adver Sent]{lang="EN-US"}]{#struct_0_18718_x1832_1650294123}
+发送的Request报文的数目
 
-[[发送的]{style="font-family:宋体"}[Advertisement]{lang="EN-US"}]{#struct_0_18718_x1832_x238595356}[报文的数目]{style="font-family:宋体"}
+Reply Rcvd
 
-[[Request Sent]{lang="EN-US"}]{#struct_0_18718_x1832_x1382507662}
+收到的Reply报文的数目
 
-[[发送的]{style="font-family:宋体"}[Request]{lang="EN-US"}]{#struct_0_18718_x1832_x956600260}[报文的数目]{style="font-family:宋体"}
+Release Rcvd
 
-[[Reply Rcvd]{lang="EN-US"}]{#struct_0_18718_x1832_1665200845}
+收到的Release报文的数目
 
-[[收到的]{style="font-family:宋体"}[Reply]{lang="EN-US"}]{#struct_0_18718_x1832_x2030742511}[报文的数目]{style="font-family:宋体"}
+Reply Sent
 
-[[Release Rcvd]{lang="EN-US"}]{#struct_0_18718_x1832_x956665796}
+发送的Reply报文的数目
 
-[[收到的]{style="font-family:宋体"}[Release]{lang="EN-US"}]{#struct_0_18718_x1832_x289887285}[报文的数目]{style="font-family:宋体"}
+Release Sent
 
-[[Reply Sent]{lang="EN-US"}]{#struct_0_18718_x1832_x281566393}
+发送的Release报文的数目
 
-[[发送的]{style="font-family:宋体"}[Reply]{lang="EN-US"}]{#struct_0_18718_x1832_1851993610}[报文的数目]{style="font-family:宋体"}
+Priority Zero Pkts Rcvd
 
-[[Release Sent]{lang="EN-US"}]{#struct_0_18718_x1832_x956731332}
+收到的路由器优先级为0的Advertisement报文的数目
 
-[[发送的]{style="font-family:宋体"}[Release]{lang="EN-US"}]{#struct_0_18718_x1832_1281195540}[报文的数目]{style="font-family:宋体"}
+VF Priority Zero Pkts Rcvd
 
-[[Priority Zero Pkts Rcvd]{lang="EN-US"}]{#struct_0_18718_x1832_286899806}
+收到的虚拟转发器优先级为0的Advertisement报文的数目
 
-[[收到的路由器优先级为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_18718_x1832_x956796868}[的]{style="font-family:宋体"}[Advertisement]{lang="EN-US"}[报文的数目]{style="font-family:宋体"}
+Priority Zero Pkts Sent
 
-[[VF Priority Zero Pkts Rcvd]{lang="PT-BR"}]{#struct_0_18718_x1832_578893576}
+发送的路由器优先级为0的Advertisement报文的数目
 
-[[收到的虚拟转发器优先级为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_18718_x1832_418753643}[的]{style="font-family:宋体"}[Advertisement]{lang="EN-US"}[报文的数目]{style="font-family:宋体"}
+VF Priority Zero Pkts Sent
 
-[[Priority Zero Pkts Sent]{lang="EN-US"}]{#struct_0_18718_x1832_x956338116}
+发送的虚拟转发器优先级为0的Advertisement报文的数目
 
-[[发送的路由器优先级为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_18718_x1832_x310733055}[的]{style="font-family:宋体"}[Advertisement]{lang="EN-US"}[报文的数目]{style="font-family:宋体"}
+Packet Option Errors
 
-[[VF Priority Zero Pkts Sent]{lang="EN-US"}]{#struct_0_18718_x1832_798258412}
+报文状态选项错误的次数
 
-[[发送的虚拟转发器优先级为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_18718_x1832_x956403652}[的]{style="font-family:宋体"}[Advertisement]{lang="EN-US"}[报文的数目]{style="font-family:宋体"}
+Global statistics
 
-[[Packet Option Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x1461939013}
+所有备份组的全局统计信息
 
-[[报文状态选项错误的次数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x321797257}
+CheckSum Errors
 
-[[Global statistics]{lang="EN-US"}]{#struct_0_18718_x1832_x956469188}
+校验和错误的报文总数
 
-[[所有备份组的全局统计信息]{style="font-family:宋体"}]{#struct_0_18718_x1832_1245061838}
+Version Errors
 
-[[CheckSum Errors]{lang="EN-US"}]{#struct_0_18718_x1832_1262467186}
+版本号错误的报文总数
 
-[[校验和错误的报文总数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x956534724}
+VRID Errors
 
-[[Version Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x1845420036}
+备份组号错误的报文总数
 
-[[版本号错误的报文总数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x81201572}
+【相关命令】
 
-[[VRID Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x956075972}
-
-[[备份组号错误的报文总数]{style="font-family:宋体"}]{#struct_0_18718_x1832_1332325019}
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x371798472}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset vrrp statistics]{lang="EN-US"}**]{#struct_0_18718_x1832_x799580727}
-
-::: {#-68005434 .myid}
-[]{#_Toc404795928}[]{#struct_0_18718_x1832_x2138561017}[]{#_Toc211671359}
+·**reset vrrp statistics**
 
 **VRRP \-- IPv4 VRRP配置命令 \-- reset vrrp statistics**
 
 ------------------------------------------------------------------------
 
-[**[reset vrrp statistics]{lang="EN-US"}**]{#struct_0_18718_x1832_1879631845}[命令用来清除]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组的统计信息。]{style="font-family:宋体"}
+**[reset vrrp statistics**]命令用来清除IPv4 VRRP备份组的统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x956141508}
+【命令】
 
-[**[reset vrrp statistics ]{lang="EN-US"}**[\[ **interface** *interface-type interface-number* \[ **vrid** *virtual-router-id* \] \]]{lang="EN-US"}]{#struct_0_18718_x1832_1650228587}
+**[reset vrrp statistics ** **interface** *interface-type interface-number*  **vrid** *virtual-router-id*  ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1699727906}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1596470042}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_17484425}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_280447711}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x1881705025}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_917362097}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_18718_x1832_1181700710}[：清除指定接口的]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组统计信息。其中，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[为接口类型和接口编号。]{style="font-family:
-宋体"}
+**[interface** *interface-type interface-number*]：清除指定接口的IPv4 VRRP备份组统计信息。其中，*interface-type interface-number*为接口类型和接口编号。
 
-[**[vrid ]{lang="EN-US"}***[virtual-router-id]{lang="EN-US"}*]{#struct_0_18718_x1832_x137988334}[：清除指定备份组的]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[统计信息。其中，]{style="font-family:宋体"}*[virtual-router-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vrid ***virtual-router-id*]：清除指定备份组的IPv4 VRRP统计信息。其中，*virtual-router-id*为IPv4 VRRP备份组号，取值范围为1～255。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_609483684}
+【使用指导】
 
-[[在清除]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x818535070}[备份组统计信息时，如果不输入接口名和备份组号，则清除该路由器上所有]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组的统计信息；如果只输入接口名，不输入备份组号，则清除该接口上所有]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组的统计信息；如果同时输入接口名和备份组号，则清除该接口上指定]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组的统计信息。]{style="font-family:宋体"}
+在清除IPv4 VRRP备份组统计信息时，如果不输入接口名和备份组号，则清除该路由器上所有IPv4 VRRP备份组的统计信息；如果只输入接口名，不输入备份组号，则清除该接口上所有IPv4 VRRP备份组的统计信息；如果同时输入接口名和备份组号，则清除该接口上指定IPv4 VRRP备份组的统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x2040844206}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x1744406209}[清除所有接口上所有]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[统计信息。]{style="font-family:宋体"}
+\# 清除所有接口上所有IPv4 VRRP备份组的VRRP统计信息。
 
-[[\<Sysname\> reset vrrp statistics]{lang="EN-US"}]{#struct_0_18718_x1832_109552405}
+\<Sysname\> reset vrrp statistics
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1639503245}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display vrrp]{lang="EN-US"}**[ **statistics**]{lang="EN-US"}]{#struct_0_18718_x1832_2065967337}
-:::
-
-::: {#315017389 .myid}
-[]{#_Toc404795929}[]{#struct_0_18718_x1832_x120031684}[]{#_Toc342919155}
+·**display vrrp** **statistics**
 
 **VRRP \-- IPv4 VRRP配置命令 \-- snmp-agent trap enable vrrp**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**[ **trap** **enable vrrp**]{lang="EN-US"}]{#struct_0_18718_x1832_609418148}[命令用来在全局下开启]{style="font-family:
-宋体"}[VRRP]{lang="EN-US"}[告警功能。]{style="font-family:宋体"}
+**[snmp-agent** **trap** **enable vrrp**]命令用来在全局下开启VRRP告警功能。
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **trap** **enable vrrp**]{lang="EN-US"}]{#struct_0_18718_x1832_1863632436}[命令用来在全局下关闭]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[告警功能。]{style="font-family:宋体"}
+**[undo** **snmp-agent** **trap** **enable vrrp**]命令用来在全局下关闭VRRP告警功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_2084453565}
+【命令】
 
-[**[snmp-agent]{lang="EN-US"}**[ **trap** **enable** **vrrp** \[ **auth-failure** \| **new-master** \]]{lang="EN-US"}]{#struct_0_18718_x1832_x1386547496}
+**[snmp-agent**[ **trap** **enable** **vrrp** [ **auth-failure** \| **new-master** ]]]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **trap** **enable** **vrrp** \[ **auth-failure** \| **new-master** \]]{lang="EN-US"}]{#struct_0_18718_x1832_x1967674104}
+**[undo**[ **snmp-agent** **trap** **enable** **vrrp** [ **auth-failure** \| **new-master** ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1091061028}
+【缺省情况】
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x1068608802}[的告警功能处于开启状态。]{style="font-family:宋体"}
+VRRP的告警功能处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1302648188}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_960444973}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_609352612}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x1113775209}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_797312455}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_2008083915}
+【参数】
 
-[**[auth-failure]{lang="EN-US"}**]{#struct_0_18718_x1832_1977983695}[：配置该参数后，当]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[备份组中的设备收到的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文中的认证类型或认证字与本地不匹配时，会产生]{style="font-family:宋体"}[RFC2787]{lang="EN-US"}[规定的告警信息。]{style="font-family:宋体"}
+**[auth-failure**]：配置该参数后，当VRRP备份组中的设备收到的VRRP通告报文中的认证类型或认证字与本地不匹配时，会产生RFC2787规定的告警信息。
 
-[**[new-master]{lang="EN-US"}**]{#struct_0_18718_x1832_x910907260}[：配置该参数后，当备份组中设备从]{style="font-family:宋体"}[Initialize]{lang="EN-US"}[或]{style="font-family:宋体"}[Backup]{lang="EN-US"}[状态升级为]{style="font-family:宋体"}[Master]{lang="EN-US"}[状态时，会产生]{style="font-family:宋体"}[RFC2787]{lang="EN-US"}[规定的告警信息。]{style="font-family:宋体"}
+**[new-master**]：配置该参数后，当备份组中设备从Initialize或Backup状态升级为Master状态时，会产生RFC2787规定的告警信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x904247401}
+【使用指导】
 
-[[开启告警功能后，设备就可以向目的主机发送告警信息。具体是发送]{style="font-family:宋体"}[Inform]{lang="EN-US"}]{#struct_0_18718_x1832_630673041}[报文还是]{style="font-family:宋体"}[Trap]{lang="EN-US"}[报文，以及发往哪个目的主机，请通过]{style="font-family:宋体"}**[snmp-agent]{lang="EN-US"}**[ **target-host**]{lang="EN-US"}[命令来配置。]{style="font-family:宋体"}
+开启告警功能后，设备就可以向目的主机发送告警信息。具体是发送Inform报文还是Trap报文，以及发往哪个目的主机，请通过**snmp-agent** **target-host**命令来配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_660407645}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_609287076}[当]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[备份组中的设备收到的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文中的认证类型或认证字与本地不匹配时，发送]{style="font-family:宋体"}[RFC2787]{lang="EN-US"}[规定的告警信息。]{style="font-family:宋体"}
+\# 当VRRP备份组中的设备收到的VRRP通告报文中的认证类型或认证字与本地不匹配时，发送RFC2787规定的告警信息。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_1227897902}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent trap enable vrrp auth-failure]{lang="EN-US"}
-:::
-
-::: {#-366581484 .myid}
-[]{#_Toc404795930}[]{#struct_0_18718_x1832_1354153533}[]{#_Toc211671361}
+Sysname snmp-agent trap enable vrrp auth-failure
 
 **VRRP \-- IPv4 VRRP配置命令 \-- vrrp check-ttl enable**
 
 ------------------------------------------------------------------------
 
-[**[vrrp check-ttl enable]{lang="EN-US"}**]{#struct_0_18718_x1832_x409352416}[命令用来使能对]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[报文]{style="font-family:宋体"}[TTL]{lang="EN-US"}[域的检查。]{style="font-family:宋体"}
+**[vrrp check-ttl enable**]命令用来使能对IPv4 VRRP报文TTL域的检查。
 
-[**[undo vrrp check-ttl enable]{lang="EN-US"}**]{#struct_0_18718_x1832_x566491188}[命令用来禁止对]{style="font-family:
-宋体"}[IPv4 VRRP]{lang="EN-US"}[报文的]{style="font-family:
-宋体"}[TTL]{lang="EN-US"}[域的检查。]{style="font-family:宋体"}
+**[undo vrrp check-ttl enable**]命令用来禁止对IPv4 VRRP报文的TTL域的检查。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x333867546}
+【命令】
 
-[**[vrrp check-ttl enable]{lang="EN-US"}**]{#struct_0_18718_x1832_9209154}
+**[vrrp check-ttl enable**]
 
-[**[undo vrrp check-ttl enable]{lang="EN-US"}**]{#struct_0_18718_x1832_x150214782}
+**[undo vrrp check-ttl enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18718_x1832_609745828}
+【缺省情况】
 
-[[检查]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x143092268}[报文的]{style="font-family:宋体"}[TTL]{lang="EN-US"}[域。]{style="font-family:宋体"}
+检查IPv4 VRRP报文的TTL域。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1836374222}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1440193406}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_103841664}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x433181859}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_1255042418}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_964443098}
+【使用指导】
 
-[[Master]{lang="EN-US"}]{#struct_0_18718_x1832_x190095119}[路由器定时发送]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文，来通告它的存在。该报文以组播的形式在本网段内传播，不能被路由器转发，因此报文中的]{style="font-family:宋体"}[TTL]{lang="EN-US"}[值不会改变。]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器在发送]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文时，将报文中的]{style="font-family:宋体"}[TTL]{lang="EN-US"}[值设置为]{style="font-family:宋体"}[255]{lang="EN-US"}[。如果配置备份组里的路由器检查]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[报文的]{style="font-family:宋体"}[TTL]{lang="EN-US"}[域，则]{style="font-family:宋体"}[Backup]{lang="EN-US"}[路由器接收到]{style="font-family:宋体"}[TTL]{lang="EN-US"}[值小于]{style="font-family:宋体"}[255]{lang="EN-US"}[的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文时，将丢弃该报文，从而有效防止来自其他网段的攻击。]{style="font-family:宋体"}
+Master路由器定时发送VRRP通告报文，来通告它的存在。该报文以组播的形式在本网段内传播，不能被路由器转发，因此报文中的TTL值不会改变。Master路由器在发送VRRP通告报文时，将报文中的TTL值设置为255。如果配置备份组里的路由器检查VRRP报文的TTL域，则Backup路由器接收到TTL值小于255的VRRP通告报文时，将丢弃该报文，从而有效防止来自其他网段的攻击。
 
-[[不同厂商的设备实现可能不同，在与其他厂商设备互通时，检查]{style="font-family:宋体"}[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_609680292}[报文的]{style="font-family:宋体"}[TTL]{lang="EN-US"}[域可能导致错误地丢弃报文，这时可以通过]{style="font-family:宋体"}**[undo]{lang="EN-US"}**[ **vrrp** **check-ttl** **enable**]{lang="EN-US"}[命令禁止检查]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[报文的]{style="font-family:宋体"}[TTL]{lang="EN-US"}[域。]{style="font-family:宋体"}
+不同厂商的设备实现可能不同，在与其他厂商设备互通时，检查VRRP报文的TTL域可能导致错误地丢弃报文，这时可以通过**undo** **vrrp** **check-ttl** **enable**命令禁止检查VRRP报文的TTL域。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x535538948}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_2082178895}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_375768511}[禁止检查]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[报文的]{style="font-family:宋体"}[TTL]{lang="EN-US"}[域。]{style="font-family:宋体"}
+\# 禁止检查IPv4 VRRP报文的TTL域。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_x1940793910}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] undo vrrp check-ttl enable]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 undo vrrp check-ttl enable
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_1402189398}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_923876663}[禁止检查]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[报文的]{style="font-family:宋体"}[TTL]{lang="EN-US"}[域。]{style="font-family:宋体"}
+\# 禁止检查IPv4 VRRP报文的TTL域。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_609614756}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 2]{lang="EN-US"}
+Sysname interface vlan-interface 2
 
-[\[Sysname-Vlan-interface2\] undo vrrp check-ttl enable]{lang="EN-US"}
-:::
-
-::: {#927450648 .myid}
-[]{#_Toc211671360}[]{#_Toc404795931}[]{#struct_0_18718_x1832_1346547556}
+Sysname-Vlan-interface2 undo vrrp check-ttl enable
 
 **VRRP \-- IPv4 VRRP配置命令 \-- vrrp dot1q**
 
 ------------------------------------------------------------------------
 
-[**[vrrp dot1q]{lang="NO-BOK"}**]{#struct_0_18718_x1832_1693056041}[命令用来配置]{style="font-family:宋体"}[IPv4 VRRP]{lang="NO-BOK"}[的控制]{style="font-family:宋体"}[VLAN]{lang="NO-BOK"}[。]{style="font-family:宋体"}
+**[vrrp dot1q**]命令用来配置IPv4 VRRP的控制VLAN。
 
-[**[undo vrrp dot1q]{lang="NO-BOK"}**]{#struct_0_18718_x1832_810828262}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo vrrp dot1q**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1684056959}
+【命令】
 
-[**[vrrp dot1q vid ]{lang="NO-BOK"}***[vlan-id]{lang="EN-US"}*]{#struct_0_18718_x1832_1048813430}**[ ]{lang="EN-US"}**[\[ **secondary-dot1q** *secondary-*]{lang="NO-BOK"}*[vlan-id ]{lang="EN-US"}*[\]]{lang="EN-US"}
+**[vrrp dot1q vid ***vlan-id*]**** **secondary-dot1q** *secondary-**vlan-id *
 
-[**[undo vrrp dot1q]{lang="EN-US"}**]{#struct_0_18718_x1832_1090702900}
+**[undo vrrp dot1q**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1335726314}
+【缺省情况】
 
-[[没有指定]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_1087281190}[的控制]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，即]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[终结支持广播]{style="font-family:宋体"}[/]{lang="EN-US"}[组播功能后，]{style="font-family:宋体"}[Master]{lang="EN-US"}[在所有模糊终结的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内发送]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文。]{style="font-family:宋体"}
+没有指定IPv4 VRRP的控制VLAN，即VLAN终结支持广播/组播功能后，Master在所有模糊终结的VLAN内发送VRRP通告报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_609549220}
+【视图】
 
-[[三层以太网子接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_18718_x1832_x461418130}[三层聚合子接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层]{style="font-family:宋体"}[RPR]{lang="EN-US"}[逻辑接口视图]{style="font-family:宋体"}
+三层以太网子接口视图/三层聚合子接口视图/三层RPR逻辑接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_704150637}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x1478988270}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x506778856}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1403742625}
+【参数】
 
-[**[vid ]{lang="EN-US"}***[vlan-id]{lang="EN-US"}*]{#struct_0_18718_x1832_x1772464975}[：指定]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[的控制]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[（外层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[）的编号，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vid ***vlan-id*]：指定IPv4 VRRP的控制VLAN（外层VLAN）的编号，*vlan-id*的取值范围为1～4094。
 
-[**[secondary-dot1q ]{lang="EN-US"}***[secondary-]{lang="EN-US"}[vlan-id]{lang="EN-US"}*]{#struct_0_18718_x1832_347574035}[：指定内层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，]{style="font-family:宋体"}*[secondary-]{lang="EN-US"}[vlan-id]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[secondary-dot1q ***secondary-vlan-id*]：指定内层VLAN的编号，*secondary-vlan-id*的取值范围为1～4094。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1005179731}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[重复执行本命令，新的配置将覆盖原有配置。]{style="font-family:宋体"}]{#struct_0_18718_x1832_610007972}
+·重复执行本命令，新的配置将覆盖原有配置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[只有在三层以太网子接口、三层聚合子接口和三层]{style="font-family:宋体"}]{#struct_0_18718_x1832_x783081510}[RPR]{lang="EN-US"}[逻辑接口下执行本命令才会生效；在其他接口视图下也可以执行本命令，但不会生效。]{style="font-family:宋体"}
+·只有在三层以太网子接口、三层聚合子接口和三层RPR逻辑接口下执行本命令才会生效；在其他接口视图下也可以执行本命令，但不会生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x700204895}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x387398876}[配置]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[的控制]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[（外层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[）]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[2]{lang="EN-US"}[，内层]{style="font-family:
-宋体"}[VLAN ID]{lang="EN-US"}[为]{style="font-family:宋体"}[100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置IPv4 VRRP的控制VLAN（外层VLAN）ID为2，内层VLAN ID为100。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_99786680}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1.2]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1.2
 
-[\[Sysname-GigabitEthernet1/0/1.2\] vrrp dot1q vid 2 secondary-dot1q 100]{lang="EN-US"}
-:::
-
-::: {#1853925949 .myid}
-[]{#_Toc404795932}[]{#struct_0_18718_x1832_562987352}[]{#_Toc337719113}
+Sysname-GigabitEthernet1/0/1.2 vrrp dot1q vid 2 secondary-dot1q 100
 
 **VRRP \-- IPv4 VRRP配置命令 \-- vrrp dscp**
 
 ------------------------------------------------------------------------
 
-[**[vrrp dscp]{lang="EN-US"}**]{#struct_0_18718_x1832_1729789766}[命令用来配置]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[报文的]{style="font-family:宋体"}[DSCP]{lang="EN-US"}[优先级。]{style="font-family:宋体"}
+**[vrrp dscp**]命令用来配置VRRP报文的DSCP优先级。
 
-[**[undo vrrp dscp]{lang="EN-US"}**]{#struct_0_18718_x1832_1100958955}[命令用来恢复缺省值。]{style="font-family:宋体"}
+**[undo vrrp dscp**]命令用来恢复缺省值。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_609942436}
+【命令】
 
-[**[vrrp dscp ]{lang="EN-US"}***[dscp-value]{lang="EN-US"}*]{#struct_0_18718_x1832_1565003030}
+**[vrrp dscp ***dscp-value*]
 
-[**[undo vrrp dscp]{lang="EN-US"}**]{#struct_0_18718_x1832_x971394657}
+**[undo vrrp dscp**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1350839153}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_x828906566}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1480398977}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x2137468228}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_540414577}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1104324151}
+【参数】
 
-[*[dscp-value]{lang="EN-US"}*]{#struct_0_18718_x1832_609483685}[：]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[报文的]{style="font-family:宋体"}[DSCP]{lang="EN-US"}[优先级，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[48]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[dscp-value*]：VRRP报文的DSCP优先级，取值范围为0～63，缺省值为48。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x818535069}
+【使用指导】
 
-[[DSCP]{lang="EN-US" style="font-size:10.0pt;color:black"}]{#struct_0_18718_x1832_x2040254383}[用来体现报文自身的优先等级，决定报文传输的优先程度。配置的]{style="font-family:
-宋体"}[DSCP]{lang="EN-US"}[优先级的取值越大，报文的优先级越高。通过本命令可以指定发送的]{style="font-family:宋体"}[VRRP]{lang="EN-US" style="font-size:10.0pt;color:black"}[报文中携带的]{style="font-family:宋体"}[DSCP]{lang="EN-US" style="font-size:10.0pt;color:black"}[优先级的取值。]{style="font-family:宋体"}
+DSCP用来体现报文自身的优先等级，决定报文传输的优先程度。配置的DSCP优先级的取值越大，报文的优先级越高。通过本命令可以指定发送的VRRP报文中携带的DSCP优先级的取值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x936937540}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_783189283}[配置]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[报文的]{style="font-family:宋体"}[DSCP]{lang="EN-US"}[优先级为]{style="font-family:宋体"}[30]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置VRRP报文的DSCP优先级为30。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_1411704272}
+\<Sysname\> system-view
 
-[\[Sysname\] vrrp dscp 30]{lang="EN-US"}
-:::
-
-::::: {#-2139109788 .myid}
-[]{#_Toc404795933}[]{#struct_0_18718_x1832_x330115273}[]{#_Toc270693099}[]{#_Toc280174807}[]{#_Toc280177514}[]{#_Toc280281395}[]{#_Toc270693100}[]{#_Toc280174808}[]{#_Toc280177515}[]{#_Toc280281396}[]{#_Toc270693102}[]{#_Toc280174810}[]{#_Toc280177517}[]{#_Toc280281398}[]{#_Toc270693103}[]{#_Toc280174811}[]{#_Toc280177518}[]{#_Toc280281399}[]{#_Toc270693104}[]{#_Toc280174812}[]{#_Toc280177519}[]{#_Toc280281400}[]{#_Toc270693105}[]{#_Toc280174813}[]{#_Toc280177520}[]{#_Toc280281401}[]{#_Toc270693106}[]{#_Toc280174814}[]{#_Toc280177521}[]{#_Toc280281402}[]{#_Toc270693107}[]{#_Toc280174815}[]{#_Toc280177522}[]{#_Toc280281403}[]{#_Toc270693108}[]{#_Toc280174816}[]{#_Toc280177523}[]{#_Toc280281404}[]{#_Toc270693109}[]{#_Toc280174817}[]{#_Toc280177524}[]{#_Toc280281405}[]{#_Toc270693110}[]{#_Toc280174818}[]{#_Toc280177525}[]{#_Toc280281406}[]{#_Toc270693111}[]{#_Toc280174819}[]{#_Toc280177526}[]{#_Toc280281407}[]{#_Toc270693112}[]{#_Toc280174820}[]{#_Toc280177527}[]{#_Toc280281408}[]{#_Toc270693113}[]{#_Toc280174821}[]{#_Toc280177528}[]{#_Toc280281409}[]{#_Toc270693114}[]{#_Toc280174822}[]{#_Toc280177529}[]{#_Toc280281410}[]{#_Toc270693115}[]{#_Toc280174823}[]{#_Toc280177530}[]{#_Toc280281411}[]{#_Toc270693116}[]{#_Toc280174824}[]{#_Toc280177531}[]{#_Toc280281412}[]{#_Toc270693117}[]{#_Toc280174825}[]{#_Toc280177532}[]{#_Toc280281413}[]{#_Toc270693118}[]{#_Toc280174826}[]{#_Toc280177533}[]{#_Toc280281414}[]{#_Toc270693119}[]{#_Toc280174827}[]{#_Toc280177534}[]{#_Toc280281415}[]{#_Toc270693120}[]{#_Toc280174828}[]{#_Toc280177535}[]{#_Toc280281416}[]{#_Toc270693121}[]{#_Toc280174829}[]{#_Toc280177536}[]{#_Toc280281417}
+Sysname vrrp dscp 30
 
 **VRRP \-- IPv4 VRRP配置命令 \-- vrrp mode**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VRRP命令.files/image002.png){#图片 2 width="62" height="27"}]{lang="EN-US"}]{#struct_0_18718_x1832_x1024746748}
-:::
+![说明](VRRP命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_18718_x1832_609418149}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[vrrp mode**]命令用来配置IPv4 VRRP的工作模式。
 
-[**[vrrp mode]{lang="EN-US"}**]{#struct_0_18718_x1832_1863632435}[命令用来配置]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[的工作模式。]{style="font-family:宋体"}
+**[undo vrrp mode**]命令用来恢复缺省情况。
 
-[**[undo vrrp mode]{lang="EN-US"}**]{#struct_0_18718_x1832_2084650173}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_577530678}
+**[vrrp mode load-balance ** **version-8** ]
 
-[**[vrrp mode load-balance ]{lang="EN-US"}**[\[ **version-8** \]]{lang="EN-US"}]{#struct_0_18718_x1832_x1408245809}
+**[undo vrrp mode**]
 
-[**[undo vrrp mode]{lang="EN-US"}**]{#struct_0_18718_x1832_1058393308}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x358889629}
+IPv4 VRRP工作在标准协议模式。
 
-[[IPv4 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_2001347404}[工作在标准协议模式。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_609352613}
+系统视图
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1113775210}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1125067382}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_960733242}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x1310435108}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_2088976098}
+**[load-balance**]：指定IPv4 VRRP工作在负载均衡模式。
 
-[**[load-balance]{lang="EN-US"}**]{#struct_0_18718_x1832_263541461}[：指定]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[工作在负载均衡模式。]{style="font-family:宋体"}
+**[version-8**]：发送的协议报文携带的版本号为8。
 
-[**[version-8]{lang="EN-US"}**]{#struct_0_18718_x1832_x171612696}[：发送的协议报文携带的版本号为]{style="font-family:宋体"}[8]{lang="EN-US"}[。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_187971248}
+创建IPv4 VRRP备份组后，仍然可以修改IPv4 VRRP的工作模式。修改IPv4 VRRP的工作模式后，路由器上所有的IPv4 VRRP备份组都会工作在该模式。
 
-[[创建]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x1299112492}[备份组后，仍然可以修改]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[的工作模式。修改]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[的工作模式后，路由器上所有的]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组都会工作在该模式。]{style="font-family:宋体"}
+只有接口配置的IPv4 VRRP使用的版本为VRRPv2时，指定**version-8**参数才会生效。若备份组满足以下所有条件时，需要配置**version-8**参数：
 
-[[只有接口配置的]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x2127927832}[使用的版本为]{style="font-family:宋体"}[VRRPv2]{lang="EN-US"}[时，指定]{style="font-family:宋体"}**[version-8]{lang="EN-US"}**[参数才会生效。若备份组满足以下所有条件时，需要配置]{style="font-family:宋体"}**[version-8]{lang="EN-US"}**[参数：]{style="font-family:宋体"}
+·备份组中存在使用ComwareV5版本软件的路由器；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[备份组中存在使用]{style="font-family:宋体"}]{#struct_0_18718_x1832_1573552281}[ComwareV5]{lang="EN-US"}[版本软件的路由器；]{style="font-family:宋体"}
+·备份组中所有路由器的IPv4 VRRP均需要工作在负载均衡模式；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[备份组中所有路由器的]{style="font-family:宋体"}]{#struct_0_18718_x1832_1250762145}[IPv4 VRRP]{lang="EN-US"}[均需要工作在负载均衡模式；]{style="font-family:宋体"}
+·备份组中所有路由器的IPv4 VRRP使用的版本均要配置为VRRPv2。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[备份组中所有路由器的]{style="font-family:宋体"}]{#struct_0_18718_x1832_1222327166}[IPv4 VRRP]{lang="EN-US"}[使用的版本均要配置为]{style="font-family:宋体"}[VRRPv2]{lang="EN-US"}[。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_609287077}
+\# 配置IPv4 VRRP工作在负载均衡模式。
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_1227897903}[配置]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[工作在负载均衡模式。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_1354219069}
+Sysname vrrp mode load-balance
 
-[\[Sysname\] vrrp mode load-balance]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x2001644142}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **vrrp**]{lang="EN-US"}]{#struct_0_18718_x1832_815179571}
-:::::
-
-::: {#751203685 .myid}
-[]{#_Toc211671362}[]{#_Toc404795934}[]{#struct_0_18718_x1832_1559951247}
+·**display** **vrrp**
 
 **VRRP \-- IPv4 VRRP配置命令 \-- vrrp version**
 
 ------------------------------------------------------------------------
 
-[**[vrrp version]{lang="EN-US"}**]{#struct_0_18718_x1832_x459886766}[命令用来配置接口下]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[使用的版本。]{style="font-family:宋体"}
+**[vrrp version**]命令用来配置接口下IPv4 VRRP使用的版本。
 
-[**[undo vrrp version]{lang="EN-US"}**]{#struct_0_18718_x1832_155400041}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo vrrp version**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_609745829}
+【命令】
 
-[**[vrrp version ]{lang="EN-US"}***[version-number]{lang="EN-US"}*]{#struct_0_18718_x1832_x143092267}
+**[vrrp version ***version-number*]
 
-[**[undo vrrp version]{lang="EN-US"}**]{#struct_0_18718_x1832_x1836570830}
+**[undo vrrp version**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x2080212138}
+【缺省情况】
 
-[[IPv4 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_2025156929}[使用的版本为]{style="font-family:宋体"}[VRRPv3]{lang="EN-US"}[。]{style="font-family:宋体"}
+IPv4 VRRP使用的版本为VRRPv3。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x255181370}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_963149158}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x723534437}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x1985270067}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_609680293}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x535538947}
+【参数】
 
-[*[version-number]{lang="EN-US"}*]{#struct_0_18718_x1832_2081195855}[：]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[协议的版本号，取值为]{style="font-family:宋体"}[2]{lang="EN-US"}[或]{style="font-family:宋体"}[3]{lang="EN-US"}[，其中]{style="font-family:宋体"}[2]{lang="EN-US"}[表示使用]{style="font-family:宋体"}[VRRPv2]{lang="EN-US"}[版本（]{style="font-family:宋体"}[RFC 3768]{lang="EN-US"}[），]{style="font-family:宋体"}[3]{lang="EN-US"}[表示使用]{style="font-family:宋体"}[VRRPv3]{lang="EN-US"}[版本（]{style="font-family:宋体"}[RFC 5798]{lang="EN-US"}[）。]{style="font-family:宋体"}
+*[version-number*]：VRRP协议的版本号，取值为2或3，其中2表示使用VRRPv2版本（RFC 3768），3表示使用VRRPv3版本（RFC 5798）。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_2003415442}
+【使用指导】
 
-[[IPv4 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_2028625648}[备份组中的所有路由器上配置的]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[版本必须一致。]{style="font-family:宋体"}
+IPv4 VRRP备份组中的所有路由器上配置的IPv4 VRRP版本必须一致。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x174929452}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_x2078676626}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_1381502467}[配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[使用的版本为]{style="font-family:宋体"}[VRRPv2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置接口GigabitEthernet1/0/1上IPv4 VRRP使用的版本为VRRPv2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_609614757}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] vrrp version 2]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 vrrp version 2
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_1346547555}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_1692990505}[配置]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口]{style="font-family:宋体"}[10]{lang="EN-US"}[上]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[使用的版本为]{style="font-family:宋体"}[VRRPv2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置VLAN接口10上IPv4 VRRP使用的版本为VRRPv2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_413882245}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] vrrp version 2]{lang="EN-US"}
-:::
-
-::: {#-1983040082 .myid}
-[]{#_Toc404795935}[]{#struct_0_18718_x1832_1343633548}[]{#_Toc211671368}[]{#_Toc99954757}[]{#_Toc34483424}[]{#_Toc33425593}[]{#_Toc31785778}
+Sysname-Vlan-interface10 vrrp version 2
 
 **VRRP \-- IPv4 VRRP配置命令 \-- vrrp vrid**
 
 ------------------------------------------------------------------------
 
-[**[vrrp vrid]{lang="EN-US"}**]{#struct_0_18718_x1832_x428880139}[命令用来创建]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组，并配置]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组的虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，或为一个已经存在的]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组添加一个虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[vrrp vrid**]命令用来创建IPv4 VRRP备份组，并配置IPv4 VRRP备份组的虚拟IP地址，或为一个已经存在的IPv4 VRRP备份组添加一个虚拟IP地址。
 
-[**[undo vrrp vrid]{lang="EN-US"}**]{#struct_0_18718_x1832_x1692335651}[命令用来删除一个已经存在的]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组的所有配置，或删除已经存在的]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组中的虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[undo vrrp vrid**]命令用来删除一个已经存在的IPv4 VRRP备份组的所有配置，或删除已经存在的IPv4 VRRP备份组中的虚拟IP地址。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1928757927}
+【命令】
 
-[**[vrrp vrid]{lang="EN-US"}**[ ]{lang="EN-US"}*[virtual-router-id]{lang="EN-US"}***[ virtual-ip]{lang="EN-US"}**[ *virtual-address*]{lang="EN-US"}]{#struct_0_18718_x1832_609352608}
+**[vrrp vrid***virtual-router-id*** virtual-ip** *virtual-address*]
 
-[**[undo vrrp vrid]{lang="EN-US"}**[ *virtual-router-id* \[ **virtual-ip** \[ *virtual-address* \] \]]{lang="EN-US"}]{#struct_0_18718_x1832_1224876945}
+**[undo vrrp vrid** *virtual-router-id* [ **virtual-ip** [ *virtual-address*  ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x794474074}
+【缺省情况】
 
-[[未创建]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_1223424151}[备份组。]{style="font-family:宋体"}
+未创建IPv4 VRRP备份组。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x283746069}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_x222548415}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1120164334}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x1775531859}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_1996375634}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_609287072}
+【参数】
 
-[*[virtual-router-id]{lang="EN-US"}*]{#struct_0_18718_x1832_1227897906}[：]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[virtual-router-id*]：IPv4 VRRP备份组号，取值范围为1～255。
 
-[**[v]{lang="EN-US"}**]{#struct_0_18718_x1832_1354415677}**[irtual]{lang="EN-US"}[-ip]{lang="EN-US"}***[ ]{lang="EN-US"}[virtual-address]{lang="EN-US"}*[：备份组的虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。不能为全零地址]{style="font-family:宋体"}[(0.0.0.0)]{lang="EN-US"}[、广播地址]{style="font-family:宋体"}[(255.255.255.255)]{lang="EN-US"}[、环回地址、非]{style="font-family:宋体"}[A/B/C]{lang="EN-US"}[类地址和其它非法]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[(]{lang="EN-US"}[如]{style="font-family:宋体"}[0.0.0.1)]{lang="EN-US"}[。删除]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组中的虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址时，如果不指定]{style="font-family:宋体"}*[virtual-address]{lang="EN-US"}*[参数，则表示删除该备份组中的所有虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[v**]**irtual-ip***virtual-address*：备份组的虚拟IP地址。不能为全零地址(0.0.0.0)、广播地址(255.255.255.255)、环回地址、非A/B/C类地址和其它非法IP地址(如0.0.0.1)。删除IPv4 VRRP备份组中的虚拟IP地址时，如果不指定*virtual-address*参数，则表示删除该备份组中的所有虚拟IP地址。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x7086717}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[重复执行本命令，可以为]{style="font-family:宋体"}]{#struct_0_18718_x1832_59279170}[IPv4 VRRP]{lang="EN-US"}[备份组配置多个虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，但每个备份组最多只能配置]{style="font-family:宋体"}[16]{lang="EN-US"}[个虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+·重复执行本命令，可以为IPv4 VRRP备份组配置多个虚拟IP地址，但每个备份组最多只能配置16个虚拟IP地址。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果没有为备份组配置虚拟]{style="font-family:宋体"}]{#struct_0_18718_x1832_1931980541}[IP]{lang="EN-US"}[地址，但是为备份组进行了其他配置（如优先级、抢占方式等），则该备份组会存在于设备上，并处于]{style="font-family:宋体"}[Inactive]{lang="EN-US"}[状态，此时备份组不起作用。]{style="font-family:宋体"}
+·如果没有为备份组配置虚拟IP地址，但是为备份组进行了其他配置（如优先级、抢占方式等），则该备份组会存在于设备上，并处于Inactive状态，此时备份组不起作用。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[建议将备份组的虚拟]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1540090888}[IP]{lang="EN-US"}[地址和备份组中设备下行接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址配置为同一网段，否则可能导致局域网内的主机无法访问外部网络。]{style="font-family:宋体"}
+·建议将备份组的虚拟IP地址和备份组中设备下行接口的IP地址配置为同一网段，否则可能导致局域网内的主机无法访问外部网络。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IPv4 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x467389501}[工作在负载均衡模式时，要求备份组的虚拟]{style="font-family:
-宋体"}[IP]{lang="EN-US"}[地址和接口的]{style="font-family:
-宋体"}[IP]{lang="EN-US"}[地址不能相同。否则，]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[负载均衡功能将无法正常工作。]{style="font-family:宋体"}
+·IPv4 VRRP工作在负载均衡模式时，要求备份组的虚拟IP地址和接口的IP地址不能相同。否则，IPv4 VRRP负载均衡功能将无法正常工作。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x844894042}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_609745824}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x143092272}[创建]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[，配置]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[的虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[10.10.10.10]{lang="EN-US"}[。为]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[添加一个虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[10.10.10.11]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 创建IPv4 VRRP备份组1，配置IPv4 VRRP备份组1的虚拟IP地址为10.10.10.10。为IPv4 VRRP备份组1添加一个虚拟IP地址10.10.10.11。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_x1836767439}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] vrrp vrid 1 virtual-ip 10.10.10.10]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 vrrp vrid 1 virtual-ip 10.10.10.10
 
-[\[Sysname-GigabitEthernet1/0/1\] vrrp vrid 1 virtual-ip 10.10.10.11]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 vrrp vrid 1 virtual-ip 10.10.10.11
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_x879225852}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x580690007}[创建]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[，配置]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[的虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[10.10.10.10]{lang="EN-US"}[。为]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[添加一个虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[10.10.10.11]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 创建IPv4 VRRP备份组1，配置IPv4 VRRP备份组1的虚拟IP地址为10.10.10.10。为IPv4 VRRP备份组1添加一个虚拟IP地址10.10.10.11。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_1491748139}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 2]{lang="EN-US"}
+Sysname interface vlan-interface 2
 
-[\[Sysname-Vlan-interface2\] vrrp vrid 1 virtual-ip 10.10.10.10]{lang="EN-US"}
+Sysname-Vlan-interface2 vrrp vrid 1 virtual-ip 10.10.10.10
 
-[\[Sysname-Vlan-interface2\] vrrp vrid 1 virtual-ip 10.10.10.11]{lang="EN-US"}
+Sysname-Vlan-interface2 vrrp vrid 1 virtual-ip 10.10.10.11
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1124447095}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **vrrp**]{lang="EN-US"}]{#struct_0_18718_x1832_609680288}
-:::
-
-::: {#1316738116 .myid}
-[]{#_Toc404795936}[]{#struct_0_18718_x1832_2067130339}[]{#_Toc197333719}[]{#_Toc197943244}[]{#_Toc198389981}[]{#_Toc197333720}[]{#_Toc197943245}[]{#_Toc198389982}[]{#_Toc197333721}[]{#_Toc197943246}[]{#_Toc198389983}[]{#_Toc197333722}[]{#_Toc197943247}[]{#_Toc198389984}[]{#_Toc197333723}[]{#_Toc197943248}[]{#_Toc198389985}[]{#_Toc197333724}[]{#_Toc197943249}[]{#_Toc198389986}[]{#_Toc197333725}[]{#_Toc197943250}[]{#_Toc198389987}[]{#_Toc197333726}[]{#_Toc197943251}[]{#_Toc198389988}[]{#_Toc197333727}[]{#_Toc197943252}[]{#_Toc198389989}[]{#_Toc197333728}[]{#_Toc197943253}[]{#_Toc198389990}[]{#_Toc197333729}[]{#_Toc197943254}[]{#_Toc198389991}[]{#_Toc197333730}[]{#_Toc197943255}[]{#_Toc198389992}[]{#_Toc197333731}[]{#_Toc197943256}[]{#_Toc198389993}[]{#_Toc197333732}[]{#_Toc197943257}[]{#_Toc198389994}[]{#_Toc197333733}[]{#_Toc197943258}[]{#_Toc198389995}[]{#_Toc197333734}[]{#_Toc197943259}[]{#_Toc198389996}[]{#_Toc197333735}[]{#_Toc197943260}[]{#_Toc198389997}[]{#_Toc197333736}[]{#_Toc197943261}[]{#_Toc198389998}[]{#_Toc197333737}[]{#_Toc197943262}[]{#_Toc198389999}[]{#_Toc197333738}[]{#_Toc197943263}[]{#_Toc198390000}[]{#_Toc194230961}[]{#_Toc195410171}[]{#_Toc194230962}[]{#_Toc195410172}[]{#_Toc194230965}[]{#_Toc195410175}[]{#_Toc194230966}[]{#_Toc195410176}[]{#_Toc194230967}[]{#_Toc195410177}[]{#_Toc194230968}[]{#_Toc195410178}[]{#_Toc194230969}[]{#_Toc195410179}[]{#_Toc194230970}[]{#_Toc195410180}[]{#_Toc194230971}[]{#_Toc195410181}[]{#_Toc194230972}[]{#_Toc195410182}[]{#_Toc194230973}[]{#_Toc195410183}[]{#_Toc194230974}[]{#_Toc195410184}[]{#_Toc194230975}[]{#_Toc195410185}[]{#_Toc194230976}[]{#_Toc195410186}[]{#_Toc194230977}[]{#_Toc195410187}[]{#_Toc194230978}[]{#_Toc195410188}[]{#_Toc194230979}[]{#_Toc195410189}[]{#_Toc194230981}[]{#_Toc195410191}[]{#_Toc197333742}[]{#_Toc197943267}[]{#_Toc198390004}[]{#_Toc197333745}[]{#_Toc197943270}[]{#_Toc198390007}[]{#_Toc197333746}[]{#_Toc197943271}[]{#_Toc198390008}[]{#_Toc197333747}[]{#_Toc197943272}[]{#_Toc198390009}[]{#_Toc197333748}[]{#_Toc197943273}[]{#_Toc198390010}[]{#_Toc197333749}[]{#_Toc197943274}[]{#_Toc198390011}[]{#_Toc197333750}[]{#_Toc197943275}[]{#_Toc198390012}[]{#_Toc197333751}[]{#_Toc197943276}[]{#_Toc198390013}[]{#_Toc197333752}[]{#_Toc197943277}[]{#_Toc198390014}[]{#_Toc197333753}[]{#_Toc197943278}[]{#_Toc198390015}[]{#_Toc197333754}[]{#_Toc197943279}[]{#_Toc198390016}[]{#_Toc197333755}[]{#_Toc197943280}[]{#_Toc198390017}[]{#_Toc197333756}[]{#_Toc197943281}[]{#_Toc198390018}[]{#_Toc197333758}[]{#_Toc197943283}[]{#_Toc198390020}[]{#_Toc197333759}[]{#_Toc197943284}[]{#_Toc198390021}[]{#_Toc197333760}[]{#_Toc197943285}[]{#_Toc198390022}[]{#_Toc197333761}[]{#_Toc197943286}[]{#_Toc198390023}[]{#_Toc197333764}[]{#_Toc197943289}[]{#_Toc198390026}
+·**display** **vrrp**
 
 **VRRP \-- IPv4 VRRP配置命令 \-- vrrp vrid authentication-mode**
 
 ------------------------------------------------------------------------
 
-[**[vrrp vrid authentication-mode]{lang="EN-US"}**]{#struct_0_18718_x1832_1762084583}[命令用来配置备份组发送和接收]{style="font-family:
-宋体"}[IPv4 VRRP]{lang="EN-US"}[报文的认证方式和认证字。]{style="font-family:宋体"}
+**[vrrp vrid authentication-mode**]命令用来配置备份组发送和接收IPv4 VRRP报文的认证方式和认证字。
 
-[**[undo vrrp vrid authentication-mode]{lang="EN-US"}**]{#struct_0_18718_x1832_x2140527057}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo vrrp vrid authentication-mode**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1696604601}
+【命令】
 
-[**[vrrp vrid]{lang="EN-US"}**[ *virtual-router-id* **authentication-mode** { **md5** \| **simple** } { **cipher** \| **plain** } *key*]{lang="EN-US"}]{#struct_0_18718_x1832_609549221}
+**[vrrp vrid**[ *virtual-router-id* **authentication-mode** { **md5** \| **simple** } { **cipher** \| **plain** } *key*]]
 
-[**[undo vrrp vrid]{lang="EN-US"}**[ *virtual-router-id* **authentication-mode**]{lang="EN-US"}]{#struct_0_18718_x1832_x461418129}
+**[undo vrrp vrid** *virtual-router-id* **authentication-mode**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18718_x1832_703691886}
+【缺省情况】
 
-[[备份组发送和接收]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_105423188}[报文时不进行认证。]{style="font-family:宋体"}
+备份组发送和接收IPv4 VRRP报文时不进行认证。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_760852656}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1129254128}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1737932435}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_62307107}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_1261110386}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_610007973}
+【参数】
 
-[*[virtual-router-id]{lang="EN-US"}*]{#struct_0_18718_x1832_x783081509}[：]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[virtual-router-id*]：IPv4 VRRP备份组号，取值范围为1～255。
 
-[**[md5]{lang="EN-US"}**]{#struct_0_18718_x1832_x700663648}[：表示使用]{style="font-family:宋体"}[MD5]{lang="EN-US"}[算法进行认证。]{style="font-family:宋体"}
+**[md5**]：表示使用MD5算法进行认证。
 
-[**[simple]{lang="EN-US"}**]{#struct_0_18718_x1832_x784171764}[：表示使用简单字符进行认证。]{style="font-family:宋体"}
+**[simple**]：表示使用简单字符进行认证。
 
-[**[cipher]{lang="EN-US"}**]{#struct_0_18718_x1832_x1251231489}[：表示以密文方式设置认证字。]{style="font-family:宋体"}
+**[cipher**]：表示以密文方式设置认证字。
 
-[**[plain]{lang="EN-US"}**]{#struct_0_18718_x1832_1696089755}[：表示以明文方式设置认证字。]{style="font-family:宋体"}
+**[plain**]：表示以明文方式设置认证字。
 
-[*[key]{lang="EN-US"}*]{#struct_0_18718_x1832_x230473922}[：认证字，区分大小写。]{style="font-family:宋体"}
+*[key*]：认证字，区分大小写。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[采用]{style="font-family:宋体"}]{#struct_0_18718_x1832_x429566160}**[md5]{lang="EN-US"}**[认证方式，当使用]{style="font-family:宋体"}**[cipher]{lang="EN-US"}**[参数时，]{style="font-family:宋体"}*[key]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[41]{lang="EN-US"}[个字符的密文认证字；当使用]{style="font-family:宋体"}**[plain]{lang="EN-US"}**[参数时，]{style="font-family:宋体"}*[key]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[8]{lang="EN-US"}[个字符的明文认证字。]{style="font-family:
-宋体"}
+·采用**md5**认证方式，当使用**cipher**参数时，*key*为1～41个字符的密文认证字；当使用**plain**参数时，*key*为1～8个字符的明文认证字。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[采用]{style="font-family:宋体"}]{#struct_0_18718_x1832_1870010373}**[simple]{lang="EN-US"}**[认证方式，当使用]{style="font-family:宋体"}**[cipher]{lang="EN-US"}**[参数时，]{style="font-family:宋体"}*[key]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[41]{lang="EN-US"}[个字符的密文认证字；当使用]{style="font-family:宋体"}**[plain]{lang="EN-US"}**[参数时，]{style="font-family:宋体"}*[key]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[8]{lang="EN-US"}[个字符的明文认证字。]{style="font-family:
-宋体"}
+·采用**simple**认证方式，当使用**cipher**参数时，*key*为1～41个字符的密文认证字；当使用**plain**参数时，*key*为1～8个字符的明文认证字。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1925106420}
+【使用指导】
 
-[[为了防止非法用户构造报文攻击备份组，]{style="font-family:宋体"}[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_609942437}[通过在]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[报文中增加认证字的方式，验证接收到的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[报文。]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[提供了两种认证方式：]{style="font-family:宋体"}
+为了防止非法用户构造报文攻击备份组，VRRP通过在VRRP报文中增加认证字的方式，验证接收到的VRRP报文。VRRP提供了两种认证方式：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[simple]{lang="EN-US"}**]{#struct_0_18718_x1832_1565003031}[：简单字符认证。发送]{style="font-family:
-宋体"}[VRRP]{lang="EN-US"}[报文的路由器将认证字填入到]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[报文中，而收到]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[报文的路由器会将收到的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[报文中的认证字和本地配置的认证字进行比较。如果认证字相同，则认为接收到的报文是真实、合法的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[报文；否则认为接收到的报文是一个非法报文。]{style="font-family:宋体"}
+·**simple**：简单字符认证。发送VRRP报文的路由器将认证字填入到VRRP报文中，而收到VRRP报文的路由器会将收到的VRRP报文中的认证字和本地配置的认证字进行比较。如果认证字相同，则认为接收到的报文是真实、合法的VRRP报文；否则认为接收到的报文是一个非法报文。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[md5]{lang="EN-US"}**]{#struct_0_18718_x1832_x971329121}[：]{lang="EN-US" style="font-family:宋体"}[MD5]{lang="EN-US"}[认证。发送]{lang="EN-US" style="font-family:宋体"}[VRRP]{lang="EN-US"}[报文的路由器利用认证字和]{lang="EN-US" style="font-family:宋体"}[MD5]{lang="EN-US"}[算法对]{lang="EN-US" style="font-family:宋体"}[VRRP]{lang="EN-US"}[报文进行摘要运算，运算结果保存在]{lang="EN-US" style="font-family:宋体"}[Authentication Header]{lang="EN-US"}[（认证头）中。]{lang="EN-US" style="font-family:宋体"}[收到]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[报文的路由器会利用认证字和]{style="font-family:宋体"}[MD5]{lang="EN-US"}[算法进行同样的运算，并将运算结果与认证头的内容进行比较。如果相同，则认为接收到的报文是真实、合法的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[报文；否则认为接收到的报文是一个非法报文。]{style="font-family:宋体"}
+·**md5**：MD5认证。发送VRRP报文的路由器利用认证字和MD5算法对VRRP报文进行摘要运算，运算结果保存在Authentication Header（认证头）中。收到VRRP报文的路由器会利用认证字和MD5算法进行同样的运算，并将运算结果与认证头的内容进行比较。如果相同，则认为接收到的报文是真实、合法的VRRP报文；否则认为接收到的报文是一个非法报文。
 
-[[MD5]{lang="EN-US"}]{#struct_0_18718_x1832_x143202131}[认证比简单字符认证更安全，但是]{style="font-family:宋体"}[MD5]{lang="EN-US"}[认证需要进行额外的运算，占用的系统资源较多。]{style="font-family:宋体"}
+MD5认证比简单字符认证更安全，但是MD5认证需要进行额外的运算，占用的系统资源较多。
 
-[[以明文或密文方式设置的验证字，均以密文的方式保存在配置文件中。]{style="font-family:宋体"}]{#struct_0_18718_x1832_525477747}
+以明文或密文方式设置的验证字，均以密文的方式保存在配置文件中。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_18718_x1832_x576265098}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[一个接口上的不同备份组可以设置不同的认证方式和认证字；加入同一备份组的成员需要设置相同的认证方式和认证字。]{style="font-family:宋体"}]{#struct_0_18718_x1832_x171221082}
+·一个接口上的不同备份组可以设置不同的认证方式和认证字；加入同一备份组的成员需要设置相同的认证方式和认证字。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[使用]{lang="EN-US" style="font-family:宋体"}[VRRPv3]{lang="EN-US"}]{#struct_0_18718_x1832_2056293690}[版本的]{lang="EN-US" style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[不支持认证。使用]{lang="EN-US" style="font-family:宋体"}[VRRPv3]{lang="EN-US"}[版本时，此配置不会生效。]{lang="EN-US" style="font-family:宋体"}
+·使用VRRPv3版本的IPv4 VRRP不支持认证。使用VRRPv3版本时，此配置不会生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1766802810}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_609483682}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x818535064}[设置]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[接口上备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[发送和接收]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[报文的认证方式为]{style="font-family:宋体"}**[simple]{lang="EN-US"}**[，认证字为]{style="font-family:宋体"}[Sysname]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 设置GigabitEthernet1/0/1接口上备份组1发送和接收IPv4 VRRP报文的认证方式为**simple**，认证字为Sysname。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_x2040582063}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] vrrp vrid 1 authentication-mode simple plain Sysname]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 vrrp vrid 1 authentication-mode simple plain Sysname
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_2035962402}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x584585081}[设置]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口]{style="font-family:宋体"}[2]{lang="EN-US"}[上备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[发送和接收]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[报文的认证方式为]{style="font-family:宋体"}**[simple]{lang="EN-US"}**[，认证字为]{style="font-family:宋体"}[Sysname]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 设置VLAN接口2上备份组1发送和接收IPv4 VRRP报文的认证方式为**simple**，认证字为Sysname。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_x1509913639}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 2]{lang="EN-US"}
+Sysname interface vlan-interface 2
 
-[\[Sysname-Vlan-interface2\] vrrp vrid 1 authentication-mode simple plain Sysname]{lang="EN-US"}
+Sysname-Vlan-interface2 vrrp vrid 1 authentication-mode simple plain Sysname
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1737307573}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **vrrp**]{lang="EN-US"}]{#struct_0_18718_x1832_1624781121}
+·**display** **vrrp**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vrrp]{lang="EN-US"}**[ **version**]{lang="EN-US"}]{#struct_0_18718_x1832_609418146}
-:::
-
-::: {#546376843 .myid}
-[]{#_Toc404795937}[]{#struct_0_18718_x1832_1863632430}[]{#_Toc211671363}[]{#_Toc99954753}[]{#_Toc34483420}[]{#_Toc33425589}[]{#_Toc31785779}
+·**vrrp** **version**
 
 **VRRP \-- IPv4 VRRP配置命令 \-- vrrp vrid preempt-mode**
 
 ------------------------------------------------------------------------
 
-[**[vrrp vrid preempt-mode]{lang="EN-US"}**]{#struct_0_18718_x1832_2084322493}[命令用来设置]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组中的路由器工作在抢占方式，并配置抢占延迟时间。]{style="font-family:宋体"}
+**[vrrp vrid preempt-mode**]命令用来设置IPv4 VRRP备份组中的路由器工作在抢占方式，并配置抢占延迟时间。
 
-[**[undo vrrp vrid preempt-mode]{lang="EN-US"}**]{#struct_0_18718_x1832_2141946143}[命令用来取消抢占方式，即设置]{style="font-family:
-宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组中的路由器工作在非抢占方式。]{style="font-family:宋体"}
+**[undo vrrp vrid preempt-mode**]命令用来取消抢占方式，即设置IPv4 VRRP备份组中的路由器工作在非抢占方式。
 
-[**[undo vrrp vrid preempt-mode delay]{lang="EN-US"}**]{#struct_0_18718_x1832_x2076673434}[命令用来恢复抢占延迟时间为缺省值。]{style="font-family:宋体"}
+**[undo vrrp vrid preempt-mode delay**]命令用来恢复抢占延迟时间为缺省值。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x183032687}
+【命令】
 
-[**[vrrp vrid ]{lang="EN-US"}***[virtual-router-id]{lang="EN-US"}***[ preempt-mode]{lang="EN-US"}**[ \[ **delay** *delay-value* \]]{lang="EN-US"}]{#struct_0_18718_x1832_2068339400}
+**[vrrp vrid ***virtual-router-id*** preempt-mode** [ **delay** *delay-value* ]]
 
-[**[undo]{lang="EN-US"}**[ **vrrp vrid** *virtual-router-id* **preempt-mode** \[ **delay** \]]{lang="EN-US"}]{#struct_0_18718_x1832_1610618475}
+**[undo** **vrrp vrid** *virtual-router-id* **preempt-mode** [ **delay** ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18718_x1832_609352610}
+【缺省情况】
 
-[[IPv4 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x1113775207}[备份组中的路由器工作在抢占方式下，抢占延迟时间为]{style="font-family:宋体"}[0]{lang="EN-US"}[厘秒。]{style="font-family:宋体"}
+IPv4 VRRP备份组中的路由器工作在抢占方式下，抢占延迟时间为0厘秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1247651149}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_714651691}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1094020620}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x68659025}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x1547025203}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x2050288998}
+【参数】
 
-[*[virtual-router-id]{lang="EN-US"}*]{#struct_0_18718_x1832_x1694651071}[：]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[virtual-router-id*]：IPv4 VRRP备份组号，取值范围为1～255。
 
-[**[delay]{lang="EN-US"}***[ delay-value]{lang="EN-US"}*]{#struct_0_18718_x1832_609287074}[：抢占延迟时间。]{style="font-family:宋体"}*[delay-value]{lang="EN-US"}*[取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[180000]{lang="EN-US"}[，单位为厘秒，缺省值为]{style="font-family:宋体"}[0]{lang="EN-US"}[厘秒。]{style="font-family:宋体"}
+**[delay*** delay-value*]：抢占延迟时间。*delay-value*取值范围为0～180000，单位为厘秒，缺省值为0厘秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1227897900}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果备份组中的路由器工作在非抢占方式下，则只要]{style="font-family:宋体"}]{#struct_0_18718_x1832_1354284605}[Master]{lang="EN-US"}[路由器没有出现故障，]{style="font-family:宋体"}[Backup]{lang="EN-US"}[路由器即使随后被配置了更高的优先级也不会成为]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器。非抢占方式可以避免频繁地切换]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器。]{style="font-family:宋体"}
+·如果备份组中的路由器工作在非抢占方式下，则只要Master路由器没有出现故障，Backup路由器即使随后被配置了更高的优先级也不会成为Master路由器。非抢占方式可以避免频繁地切换Master路由器。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果备份组中的路由器工作在抢占方式下，它一旦发现自己的优先级比当前的]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1583328537}[Master]{lang="EN-US"}[路由器的优先级高，就会对外发送]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文。导致备份组内路由器重新选举]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器，并最终取代原有的]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器。相应地，原来的]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器将会变成]{style="font-family:宋体"}[Backup]{lang="EN-US"}[路由器。抢占方式可以确保承担转发任务的]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器始终是备份组中优先级最高的设备。]{style="font-family:宋体"}
+·如果备份组中的路由器工作在抢占方式下，它一旦发现自己的优先级比当前的Master路由器的优先级高，就会对外发送VRRP通告报文。导致备份组内路由器重新选举Master路由器，并最终取代原有的Master路由器。相应地，原来的Master路由器将会变成Backup路由器。抢占方式可以确保承担转发任务的Master路由器始终是备份组中优先级最高的设备。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[为了避免备份组内的成员频繁进行主备状态转换，让]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1619925883}[Backup]{lang="EN-US"}[路由器有足够的时间搜集必要的信息（如路由信息），]{style="font-family:宋体"}[Backup]{lang="EN-US"}[路由器接收到优先级低于本地优先级的通告报文后，不会立即抢占成为]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器，而是等待一定时间后，才会重新选举新的]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器。]{style="font-family:宋体"}
+·为了避免备份组内的成员频繁进行主备状态转换，让Backup路由器有足够的时间搜集必要的信息（如路由信息），Backup路由器接收到优先级低于本地优先级的通告报文后，不会立即抢占成为Master路由器，而是等待一定时间后，才会重新选举新的Master路由器。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_633950131}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_1915716149}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_1190391294}[配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[工作在抢占方式，抢占延迟时间为]{style="font-family:宋体"}[5000]{lang="EN-US"}[厘秒。]{style="font-family:宋体"}
+\# 配置接口GigabitEthernet1/0/1工作在抢占方式，抢占延迟时间为5000厘秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_609745826}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] vrrp vrid 1 preempt-mode delay 5000]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 vrrp vrid 1 preempt-mode delay 5000
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_x143092270}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x1836898511}[配置]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口]{style="font-family:宋体"}[2]{lang="EN-US"}[工作在抢占方式，抢占延迟时间为]{style="font-family:宋体"}[5000]{lang="EN-US"}[厘秒。]{style="font-family:宋体"}
+\# 配置VLAN接口2工作在抢占方式，抢占延迟时间为5000厘秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_259076990}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 2]{lang="EN-US"}
+Sysname interface vlan-interface 2
 
-[\[Sysname-Vlan-interface2\] vrrp vrid 1 preempt-mode delay 5000]{lang="EN-US"}
+Sysname-Vlan-interface2 vrrp vrid 1 preempt-mode delay 5000
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_551498393}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **vrrp**]{lang="EN-US"}]{#struct_0_18718_x1832_1990956361}
-:::
-
-::: {#-1200911630 .myid}
-[]{#_Toc404795938}[]{#struct_0_18718_x1832_x1877000002}[]{#_Toc211671364}[]{#_Toc99954754}[]{#_Toc34483421}[]{#_Toc33425590}[]{#_Toc31785780}
+·**display** **vrrp**
 
 **VRRP \-- IPv4 VRRP配置命令 \-- vrrp vrid priority**
 
 ------------------------------------------------------------------------
 
-[**[vrrp vrid priority]{lang="EN-US"}**]{#struct_0_18718_x1832_397715651}[命令用来设置路由器在]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组中的优先级。]{style="font-family:宋体"}
+**[vrrp vrid priority**]命令用来设置路由器在IPv4 VRRP备份组中的优先级。
 
-[**[undo vrrp vrid priority]{lang="EN-US"}**]{#struct_0_18718_x1832_609680290}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo vrrp vrid priority**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x535538950}
+【命令】
 
-[**[vrrp vrid]{lang="EN-US"}***[ virtual-router-id]{lang="EN-US"}*[ **priority** *priority-value*]{lang="EN-US"}]{#struct_0_18718_x1832_2081654606}
+**[vrrp vrid*** virtual-router-id* **priority** *priority-value*]
 
-[**[undo vrrp vrid]{lang="EN-US"}**[ *virtual-router-id* **priority**]{lang="EN-US"}]{#struct_0_18718_x1832_430783903}
+**[undo vrrp vrid** *virtual-router-id* **priority**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x530110735}
+【缺省情况】
 
-[[路由器在]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_1165877776}[备份组中的优先级为]{style="font-family:宋体"}[100]{lang="EN-US"}[。]{style="font-family:宋体"}
+路由器在IPv4 VRRP备份组中的优先级为100。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_436962054}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_1624653707}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1604096366}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x1631580891}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_609614754}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1346547558}
+【参数】
 
-[*[virtual-router-id]{lang="EN-US"}*]{#struct_0_18718_x1832_1692662825}[：]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[virtual-router-id*]：IPv4 VRRP备份组号，取值范围为1～255。
 
-[*[priority-value]{lang="EN-US"}*]{#struct_0_18718_x1832_473329458}[：优先级的值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[254]{lang="EN-US"}[，该值越大表明优先级越高。]{style="font-family:宋体"}
+*[priority-value*]：优先级的值，取值范围为1～254，该值越大表明优先级越高。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1297362421}
+【使用指导】
 
-[[优先级决定了路由器在备份组中的地位。优先级越高，越有可能成为]{style="font-family:宋体"}[Master]{lang="EN-US"}]{#struct_0_18718_x1832_x1469485156}[路由器。优先级]{style="font-family:宋体"}[0]{lang="EN-US"}[是系统保留为特殊用途来使用的，]{style="font-family:宋体"}[255]{lang="EN-US"}[则是系统保留给]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址拥有者的。]{style="font-family:宋体"}
+优先级决定了路由器在备份组中的地位。优先级越高，越有可能成为Master路由器。优先级0是系统保留为特殊用途来使用的，255则是系统保留给IP地址拥有者的。
 
-[[路由器为]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_18718_x1832_969741358}[地址拥有者时，其运行优先级始终为]{style="font-family:宋体"}[255]{lang="EN-US"}[，表明只要其工作正常，则为]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器。]{style="font-family:宋体"}
+路由器为IP地址拥有者时，其运行优先级始终为255，表明只要其工作正常，则为Master路由器。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1770854391}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_x752482701}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_609549218}[设置路由器在]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[中的优先级为]{style="font-family:宋体"}[150]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 设置路由器在IPv4 VRRP备份组1中的优先级为150。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_1112559990}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] vrrp vrid 1 priority 150]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 vrrp vrid 1 priority 150
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_x761842488}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x856421627}[设置交换机在]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[中的优先级为]{style="font-family:宋体"}[150]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 设置交换机在IPv4 VRRP备份组1中的优先级为150。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_x93225488}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 2]{lang="EN-US"}
+Sysname interface vlan-interface 2
 
-[\[Sysname-Vlan-interface2\] vrrp vrid 1 priority 150]{lang="EN-US"}
+Sysname-Vlan-interface2 vrrp vrid 1 priority 150
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1461981053}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **vrrp**]{lang="EN-US"}]{#struct_0_18718_x1832_1811203909}
+·**display** **vrrp**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vrrp]{lang="EN-US"}**[ **vrid** **track**]{lang="EN-US"}]{#struct_0_18718_x1832_x1426282602}
-:::
-
-::: {#1078263294 .myid}
-[]{#_Toc404795939}[]{#struct_0_18718_x1832_610007970}
+·**vrrp** **vrid** **track**
 
 **VRRP \-- IPv4 VRRP配置命令 \-- vrrp vrid shutdown**
 
 ------------------------------------------------------------------------
 
-[**[vrrp vrid ]{lang="EN-US"}[shutdown]{lang="EN-US"}**]{#struct_0_18718_x1832_x783081512}[命令用来关闭指定的]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组。]{style="font-family:宋体"}
+**[vrrp vrid shutdown**]命令用来关闭指定的IPv4 VRRP备份组。
 
-[**[undo vrrp vrid shutdown]{lang="EN-US"}**]{#struct_0_18718_x1832_x700073823}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo vrrp vrid shutdown**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1163887644}
+【命令】
 
-[**[vrrp vrid]{lang="EN-US"}***[ virtual-router-id]{lang="EN-US"}*[ **shutdown**]{lang="EN-US"}]{#struct_0_18718_x1832_x1239775014}
+**[vrrp vrid*** virtual-router-id* **shutdown**]
 
-[**[undo vrrp vrid]{lang="EN-US"}**[ *virtual-router-id* **shutdown**]{lang="EN-US"}]{#struct_0_18718_x1832_x505546233}
+**[undo vrrp vrid** *virtual-router-id* **shutdown**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1832573561}
+【缺省情况】
 
-[[IPv4 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_1242859789}[备份组处于开启状态。]{style="font-family:宋体"}
+IPv4 VRRP备份组处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x248685495}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_609942434}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1565003028}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x970870370}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x2141650176}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1875747071}
+【参数】
 
-[*[virtual-router-id]{lang="EN-US"}*]{#struct_0_18718_x1832_x1815512140}[：]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[virtual-router-id*]：IPv4 VRRP备份组号，取值范围为1～255。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x887882152}
+【使用指导】
 
-[[关闭]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_607280179}[备份组功能通常用于暂时禁用备份组，但还需要再次启用该备份组的场景。关闭备份组后，该备份组的状态为]{style="font-family:宋体"}[Initialize]{lang="EN-US"}[，并且该备份组所有已存在的配置保持不变。在关闭状态下还可以对备份组进行配置。备份组再次被开启后，基于最新的配置，从]{style="font-family:宋体"}[Initialize]{lang="EN-US"}[状态重新开始运行。]{style="font-family:宋体"}
+关闭IPv4 VRRP备份组功能通常用于暂时禁用备份组，但还需要再次启用该备份组的场景。关闭备份组后，该备份组的状态为Initialize，并且该备份组所有已存在的配置保持不变。在关闭状态下还可以对备份组进行配置。备份组再次被开启后，基于最新的配置，从Initialize状态重新开始运行。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_609483683}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_x818535063}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x2040909743}[关闭]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 关闭IPv4 VRRP备份组1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_x468250041}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] vrrp vrid 1 shutdown]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 vrrp vrid 1 shutdown
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_x269803362}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x1709211753}[关闭]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 关闭IPv4 VRRP备份组1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_784241828}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 2]{lang="EN-US"}
+Sysname interface vlan-interface 2
 
-[\[Sysname-Vlan-interface2\] vrrp vrid 1 shutdown]{lang="EN-US"}
-:::
-
-::: {#2022749639 .myid}
-[]{#_Toc404795940}[]{#struct_0_18718_x1832_609418147}
+Sysname-Vlan-interface2 vrrp vrid 1 shutdown
 
 **VRRP \-- IPv4 VRRP配置命令 \-- vrrp vrid source-interface**
 
 ------------------------------------------------------------------------
 
-[**[vrrp vrid source-interface]{lang="EN-US"}**]{#struct_0_18718_x1832_1863632429}[命令用来为]{style="font-family:
-宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组指定源接口，该源接口用来代替]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组所在接口进行该备份组]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[报文的收发。]{style="font-family:宋体"}
+**[vrrp vrid source-interface**]命令用来为IPv4 VRRP备份组指定源接口，该源接口用来代替IPv4 VRRP备份组所在接口进行该备份组VRRP报文的收发。
 
-[**[undo vrrp vrid source-interface]{lang="EN-US"}**]{#struct_0_18718_x1832_2084912318}[命令用来取消当前指定的源接口，]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[报文通过]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组所在接口进行收发。]{style="font-family:宋体"}
+**[undo vrrp vrid source-interface**]命令用来取消当前指定的源接口，VRRP报文通过IPv4 VRRP备份组所在接口进行收发。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x959676303}
+【命令】
 
-[**[vrrp vrid]{lang="EN-US"}**[ *virtual-router-id* **source-interface** *interface-type* *interface-number*]{lang="EN-US"}]{#struct_0_18718_x1832_1514813225}
+**[vrrp vrid** *virtual-router-id* **source-interface** *interface-type* *interface-number*]
 
-[**[undo vrrp vrid ]{lang="EN-US"}***[virtual-router-id]{lang="EN-US"}*[ **source-interface**]{lang="EN-US"}]{#struct_0_18718_x1832_813082189}
+**[undo vrrp vrid ***virtual-router-id* **source-interface**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18718_x1832_304331530}
+【缺省情况】
 
-[[没有指定备份组的源接口，]{style="font-family:宋体"}[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_1917967650}[报文通过]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组所在接口进行收发。]{style="font-family:宋体"}
+没有指定备份组的源接口，VRRP报文通过IPv4 VRRP备份组所在接口进行收发。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x85886818}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_609352611}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1113775208}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x768771486}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_1317836297}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1532039846}
+【参数】
 
-[*[virtual-router-id]{lang="EN-US"}*]{#struct_0_18718_x1832_x414050531}[：]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[virtual-router-id*]：IPv4 VRRP备份组号，取值范围为1～255。
 
-[*[interface-type interface-number]{lang="EN-US"}*]{#struct_0_18718_x1832_x176369222}[：源接口的接口类型和接口编号。]{style="font-family:宋体"}
+*[interface-type interface-number*]：源接口的接口类型和接口编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_2093082797}
+【使用指导】
 
-[[因组网要求或网络故障，导致同一个]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_1228169967}[备份组中的设备不能通过备份组所在接口进行]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[协议报文交互时，可以使用本命令将其他能进行报文交互的接口设置为备份组源接口，用来代替备份组所在接口进行该备份组]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[报文的收发。]{style="font-family:宋体"}
+因组网要求或网络故障，导致同一个IPv4 VRRP备份组中的设备不能通过备份组所在接口进行VRRP协议报文交互时，可以使用本命令将其他能进行报文交互的接口设置为备份组源接口，用来代替备份组所在接口进行该备份组VRRP报文的收发。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_609287075}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_1227897901}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_1354350141}[设置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上备份组的源接口为接口]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 设置接口GigabitEthernet1/0/1上备份组的源接口为接口GigabitEthernet1/0/2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_x1577179856}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] vrrp vrid 10 source-interface gigabitethernet 1/0/2]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 vrrp vrid 10 source-interface gigabitethernet 1/0/2
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{style="font-family:宋体"}]{#struct_0_18718_x1832_x744931571}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_313951818}[设置]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口]{style="font-family:宋体"}[10]{lang="EN-US"}[上备份组的源接口为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口]{style="font-family:宋体"}[20]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 设置VLAN接口10上备份组的源接口为VLAN接口20。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_464105934}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] vrrp vrid 10 source-interface vlan-interface 20]{lang="EN-US"}
-:::
-
-::: {#-1414685441 .myid}
-[]{#_Toc404795941}[]{#struct_0_18718_x1832_382158913}[]{#_Toc211671365}[]{#_Toc99954755}[]{#_Toc34483422}[]{#_Toc33425591}[]{#_Toc31785781}
+Sysname-Vlan-interface10 vrrp vrid 10 source-interface vlan-interface 20
 
 **VRRP \-- IPv4 VRRP配置命令 \-- vrrp vrid timer advertise**
 
 ------------------------------------------------------------------------
 
-[**[vrrp vrid timer advertise]{lang="EN-US"}**]{#struct_0_18718_x1832_609745827}[命令用来设置]{style="font-family:
-宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组中的]{style="font-family:
-宋体"}[Master]{lang="EN-US"}[路由器发送]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文的时间间隔。]{style="font-family:宋体"}
+**[vrrp vrid timer advertise**]命令用来设置IPv4 VRRP备份组中的Master路由器发送VRRP通告报文的时间间隔。
 
-[**[undo vrrp vrid timer advertise]{lang="EN-US"}**]{#struct_0_18718_x1832_x143092269}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo vrrp vrid timer advertise**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1836439758}
+【命令】
 
-[**[vrrp vrid ]{lang="EN-US"}***[virtual-router-id]{lang="EN-US"}***[ timer advertise ]{lang="EN-US"}***[adver-interval]{lang="EN-US"}*]{#struct_0_18718_x1832_764234219}
+**[vrrp vrid ***virtual-router-id*** timer advertise ***adver-interval*]
 
-[**[undo vrrp vrid ]{lang="EN-US"}***[virtual-router-id]{lang="EN-US"}***[ timer advertise]{lang="EN-US"}**]{#struct_0_18718_x1832_x89177921}
+**[undo vrrp vrid ***virtual-router-id*** timer advertise**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1881738454}
+【缺省情况】
 
-[[IPv4 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x2125344194}[备份组中]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器发送]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文的时间间隔为]{style="font-family:宋体"}[100]{lang="EN-US"}[厘秒。]{style="font-family:宋体"}
+IPv4 VRRP备份组中Master路由器发送VRRP通告报文的时间间隔为100厘秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1982686872}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_2133064734}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1327183409}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_609680291}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x535538949}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_2082113359}
+【参数】
 
-[*[virtual-router-id]{lang="EN-US"}*]{#struct_0_18718_x1832_x2028800528}[：]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[virtual-router-id*]：IPv4 VRRP备份组号，取值范围为1～255。
 
-[*[adver-interval]{lang="EN-US"}*]{#struct_0_18718_x1832_271926250}[：备份组中的]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器发送]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文的间隔时间，取值范围为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[4095]{lang="EN-US"}[，单位为厘秒。使用]{style="font-family:宋体"}[VRRPv2]{lang="EN-US"}[版本时，该参数的实际生效值只能是]{style="font-family:宋体"}[100]{lang="EN-US"}[的整倍数，例如，配置该参数取值在]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[100]{lang="EN-US"}[、]{style="font-family:宋体"}[101]{lang="EN-US"}[～]{style="font-family:宋体"}[200]{lang="EN-US"}[、]{style="font-family:宋体"}[4001]{lang="EN-US"}[～]{style="font-family:宋体"}[4095]{lang="EN-US"}[范围内时，实际生效值分别为]{style="font-family:宋体"}[100]{lang="EN-US"}[、]{style="font-family:宋体"}[200]{lang="EN-US"}[、]{style="font-family:宋体"}[4100]{lang="EN-US"}[；使用]{style="font-family:宋体"}[VRRPv3]{lang="EN-US"}[版本时，该参数的实际生效值与所配置数值相同。]{style="font-family:宋体"}
+*[adver-interval*]：备份组中的Master路由器发送VRRP通告报文的间隔时间，取值范围为10～4095，单位为厘秒。使用VRRPv2版本时，该参数的实际生效值只能是100的整倍数，例如，配置该参数取值在10～100、101～200、4001～4095范围内时，实际生效值分别为100、200、4100；使用VRRPv3版本时，该参数的实际生效值与所配置数值相同。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1976299733}
+【使用指导】
 
-[[IPv4 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_695580550}[备份组中的]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器会定时发送]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文，通知备份组内的路由器自己工作正常。]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文的发送时间间隔为本命令配置的值。]{style="font-family:宋体"}
+IPv4 VRRP备份组中的Master路由器会定时发送VRRP通告报文，通知备份组内的路由器自己工作正常。VRRP通告报文的发送时间间隔为本命令配置的值。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_18718_x1832_x531250803}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[建议配置]{style="font-family:宋体"}]{#struct_0_18718_x1832_x762060304}[VRRP]{lang="EN-US"}[通告报文的发送间隔大于]{style="font-family:宋体"}[100]{lang="EN-US"}[厘秒，否则会对系统的稳定性产生影响。]{style="font-family:宋体"}
+·建议配置VRRP通告报文的发送间隔大于100厘秒，否则会对系统的稳定性产生影响。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[使用]{style="font-family:宋体"}]{#struct_0_18718_x1832_609614755}[VRRPv2]{lang="EN-US"}[版本时，]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组中的所有路由器必须配置相同的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文时间间隔。]{style="font-family:宋体"}
+·使用VRRPv2版本时，IPv4 VRRP备份组中的所有路由器必须配置相同的VRRP通告报文时间间隔。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[使用]{style="font-family:宋体"}]{#struct_0_18718_x1832_1346547557}[VRRPv3]{lang="EN-US"}[版本时，]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组中的路由器上配置的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文时间间隔可以不同。]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器根据自身配置的报文时间间隔定时发送通告报文，并在通告报文中携带]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器上配置的时间间隔；]{style="font-family:宋体"}[Backup]{lang="EN-US"}[路由器接收到]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器发送的通告报文后，记录报文中携带的]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器通告报文时间间隔，如果在]{style="font-family:宋体"}[3]{lang="EN-US"}[×记录的时间间隔＋]{style="font-family:宋体"}[Skew_Time]{lang="EN-US"}[内没有收到]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器发送的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文，则认为]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器出现故障，重新选举]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器。]{style="font-family:宋体"}
+·使用VRRPv3版本时，IPv4 VRRP备份组中的路由器上配置的VRRP通告报文时间间隔可以不同。Master路由器根据自身配置的报文时间间隔定时发送通告报文，并在通告报文中携带Master路由器上配置的时间间隔；Backup路由器接收到Master路由器发送的通告报文后，记录报文中携带的Master路由器通告报文时间间隔，如果在3×记录的时间间隔＋Skew_Time内没有收到Master路由器发送的VRRP通告报文，则认为Master路由器出现故障，重新选举Master路由器。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[网络流量过大可能会导致]{style="font-family:宋体"}]{#struct_0_18718_x1832_1693121577}[Backup]{lang="EN-US"}[路由器在指定时间内没有收到]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文，从而发生状态转换。可以通过将]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文的发送时间间隔延长的办法来解决该问题。]{style="font-family:宋体"}
+·网络流量过大可能会导致Backup路由器在指定时间内没有收到Master路由器的VRRP通告报文，从而发生状态转换。可以通过将VRRP通告报文的发送时间间隔延长的办法来解决该问题。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x362683401}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_1632599895}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_691291323}[设置]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器发送]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文的间隔时间为]{style="font-family:宋体"}[500]{lang="EN-US"}[厘秒。]{style="font-family:宋体"}
+\# 设置IPv4 VRRP备份组1的Master路由器发送VRRP通告报文的间隔时间为500厘秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_2098563699}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] vrrp vrid 1 timer advertise 500]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 vrrp vrid 1 timer advertise 500
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_x337056139}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_609549219}[设置]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器发送]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文的间隔时间为]{style="font-family:宋体"}[500]{lang="EN-US"}[厘秒。]{style="font-family:宋体"}
+\# 设置IPv4 VRRP备份组1的Master路由器发送VRRP通告报文的间隔时间为500厘秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_1112559991}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 2]{lang="EN-US"}
+Sysname interface vlan-interface 2
 
-[\[Sysname-Vlan-interface2\] vrrp vrid 1 timer advertise 500]{lang="DA"}
+Sysname-Vlan-interface2 vrrp vrid 1 timer advertise 500
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x761908024}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **vrrp**]{lang="EN-US"}]{#struct_0_18718_x1832_x1602913070}
-:::
-
-::::: {#1216770826 .myid}
-[]{#_Toc99954756}[]{#_Toc34483423}[]{#_Toc33425592}[]{#_Toc31785782}[]{#_Toc404795942}[]{#struct_0_18718_x1832_257882318}[]{#_Toc211671366}[]{#_Toc270693131}[]{#_Toc280174841}[]{#_Toc280177548}[]{#_Toc280281428}[]{#_Toc270693132}[]{#_Toc280174842}[]{#_Toc280177549}[]{#_Toc280281429}[]{#_Toc270693135}[]{#_Toc280174845}[]{#_Toc280177552}[]{#_Toc280281432}[]{#_Toc270693136}[]{#_Toc280174846}[]{#_Toc280177553}[]{#_Toc280281433}[]{#_Toc270693137}[]{#_Toc280174847}[]{#_Toc280177554}[]{#_Toc280281434}[]{#_Toc270693138}[]{#_Toc280174848}[]{#_Toc280177555}[]{#_Toc280281435}[]{#_Toc270693139}[]{#_Toc280174849}[]{#_Toc280177556}[]{#_Toc280281436}[]{#_Toc270693140}[]{#_Toc280174850}[]{#_Toc280177557}[]{#_Toc280281437}[]{#_Toc270693141}[]{#_Toc280174851}[]{#_Toc280177558}[]{#_Toc280281438}[]{#_Toc270693142}[]{#_Toc280174852}[]{#_Toc280177559}[]{#_Toc280281439}[]{#_Toc270693143}[]{#_Toc280174853}[]{#_Toc280177560}[]{#_Toc280281440}[]{#_Toc270693144}[]{#_Toc280174854}[]{#_Toc280177561}[]{#_Toc280281441}[]{#_Toc270693145}[]{#_Toc280174855}[]{#_Toc280177562}[]{#_Toc280281442}[]{#_Toc270693146}[]{#_Toc280174856}[]{#_Toc280177563}[]{#_Toc280281443}[]{#_Toc270693147}[]{#_Toc280174857}[]{#_Toc280177564}[]{#_Toc280281444}[]{#_Toc270693148}[]{#_Toc280174858}[]{#_Toc280177565}[]{#_Toc280281445}[]{#_Toc270693149}[]{#_Toc280174859}[]{#_Toc280177566}[]{#_Toc280281446}[]{#_Toc270693150}[]{#_Toc280174860}[]{#_Toc280177567}[]{#_Toc280281447}[]{#_Toc270693151}[]{#_Toc280174861}[]{#_Toc280177568}[]{#_Toc280281448}[]{#_Toc270693152}[]{#_Toc280174862}[]{#_Toc280177569}[]{#_Toc280281449}[]{#_Toc270693153}[]{#_Toc280174863}[]{#_Toc280177570}[]{#_Toc280281450}[]{#_Toc270693154}[]{#_Toc280174864}[]{#_Toc280177571}[]{#_Toc280281451}[]{#_Toc270693155}[]{#_Toc280174865}[]{#_Toc280177572}[]{#_Toc280281452}[]{#_Toc270693157}[]{#_Toc280174867}[]{#_Toc280177574}[]{#_Toc280281454}[]{#_Toc270693158}[]{#_Toc280174868}[]{#_Toc280177575}[]{#_Toc280281455}[]{#_Toc270693160}[]{#_Toc280174870}[]{#_Toc280177577}[]{#_Toc280281457}[]{#_Toc270693161}[]{#_Toc280174871}[]{#_Toc280177578}[]{#_Toc280281458}[]{#_Toc270693163}[]{#_Toc280174873}[]{#_Toc280177580}[]{#_Toc280281460}[]{#_Toc270693164}[]{#_Toc280174874}[]{#_Toc280177581}[]{#_Toc280281461}[]{#_Toc270693165}[]{#_Toc280174875}[]{#_Toc280177582}[]{#_Toc280281462}
+·**display** **vrrp**
 
 **VRRP \-- IPv4 VRRP配置命令 \-- vrrp vrid track**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VRRP命令.files/image002.png){#图片 3 width="62" height="27"}]{lang="EN-US"}]{#struct_0_18718_x1832_1591450544}
-:::
+![说明](VRRP命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_18718_x1832_500717604}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[vrrp vrid track]{lang="EN-US"}**]{#struct_0_18718_x1832_x2104230919}[命令用来配置监视指定的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项，即当]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，立即将虚拟转发器切换为]{style="font-family:宋体"}[Active]{lang="EN-US"}[状态、降低路由器的优先级、立即切换成为]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器或降低本地虚拟转发器权重值。]{style="font-family:宋体"}
+**[vrrp vrid track**]命令用来配置监视指定的Track项，即当Track项的状态为Negative时，立即将虚拟转发器切换为Active状态、降低路由器的优先级、立即切换成为Master路由器或降低本地虚拟转发器权重值。
 
-[**[undo vrrp vrid track]{lang="EN-US"}**]{#struct_0_18718_x1832_672065089}[命令用来取消监视指定的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项。]{style="font-family:宋体"}
+**[undo vrrp vrid track**]命令用来取消监视指定的Track项。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_610007971}
+【命令】
 
-[**[vrrp vrid]{lang="EN-US"}**[ *virtual-router-id* **track** *track-entry-number* { **forwarder-switchover** **member-ip** *ip-address* \| **priority reduced** \[ *priority-reduced* \] \| **switchover** \| **weight reduced** \[ *weight-reduced* \] }]{lang="EN-US"}]{#struct_0_18718_x1832_x783081511}
+**[vrrp vrid**[ *virtual-router-id* **track** *track-entry-number* { **forwarder-switchover** **member-ip** *ip-address* \| **priority reduced** [ *priority-reduced* ] \| **switchover** \| **weight reduced**  *weight-reduced*  }]]
 
-[**[undo vrrp vrid]{lang="EN-US"}**[ *virtual-router-id* **track** \[ *track-entry-number* \] \[ **forwarder-switchover** \| **priority reduced** \| **switchover** \| **weight reduced** \]]{lang="EN-US"}]{#struct_0_18718_x1832_x700139359}
+**[undo vrrp vrid** *virtual-router-id* **track** [ *track-entry-number*  [ **forwarder-switchover** \| **priority reduced** \| **switchover** \| **weight reduced** ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x447215028}
+【缺省情况】
 
-[[没有指定被监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_592491225}[项。]{style="font-family:宋体"}
+没有指定被监视的Track项。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_774900488}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_x362063893}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_889421352}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x734260055}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_609942435}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1565003029}
+【参数】
 
-[*[virtual-router-id]{lang="EN-US"}*]{#struct_0_18718_x1832_x970804834}[：]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[virtual-router-id*]：IPv4 VRRP备份组号，取值范围为1～255。
 
-[*[track-entry-number]{lang="EN-US"}*]{#struct_0_18718_x1832_993711472}[：被监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项序号，]{style="font-family:宋体"}*[track-entry-number]{lang="EN-US"}*[取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1024]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[track-entry-number*]：被监视的Track项序号，*track-entry-number*取值范围为1～1024。
 
-[**[forwarder-switchover]{lang="EN-US"}**[ **member-ip** *ip-address*]{lang="EN-US"}]{#struct_0_18718_x1832_x556684730}[：虚拟转发器快速切换模式。当监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项状态变为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，如果本地设备上有处于]{style="font-family:宋体"}[Listening]{lang="EN-US"}[状态的虚拟转发器，且其对应的]{style="font-family:宋体"}[AVF]{lang="EN-US"}[地址为]{style="font-family:宋体"}**[member-ip]{lang="EN-US"}**[，则马上将该虚拟转发器切换到]{style="font-family:宋体"}[Active]{lang="EN-US"}[状态。]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*[为备份组中成员设备的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。可以通过]{style="font-family:宋体"}**[display vrrp verbose]{lang="EN-US"}**[命令查看备份组中包含的成员设备。]{style="font-family:宋体"}
+**[forwarder-switchover** **member-ip** *ip-address*]：虚拟转发器快速切换模式。当监视的Track项状态变为Negative时，如果本地设备上有处于Listening状态的虚拟转发器，且其对应的AVF地址为**member-ip**，则马上将该虚拟转发器切换到Active状态。*ip-address*为备份组中成员设备的IP地址。可以通过**display vrrp verbose**命令查看备份组中包含的成员设备。
 
-[**[priority reduced]{lang="EN-US"}**[ \[ *priority-reduced* \]]{lang="EN-US"}]{#struct_0_18718_x1832_1638408285}[：当监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项状态变为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，降低本地路由器在备份组中的优先级。优先级降低的数值为]{style="font-family:宋体"}*[priority-reduced]{lang="EN-US"}*[，]{style="font-family:宋体"}*[priority-reduced]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[10]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[priority reduced** [ *priority-reduced* ]]：当监视的Track项状态变为Negative时，降低本地路由器在备份组中的优先级。优先级降低的数值为*priority-reduced*，*priority-reduced*的取值范围为1～255，缺省值为10。
 
-[**[switchover]{lang="EN-US"}**]{#struct_0_18718_x1832_1908592851}[：切换模式，当监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态变为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，如果本路由器在备份组中处于]{style="font-family:宋体"}[Backup]{lang="EN-US"}[状态，则马上切换成为]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器。]{style="font-family:宋体"}
+**[switchover**]：切换模式，当监视的Track项的状态变为Negative时，如果本路由器在备份组中处于Backup状态，则马上切换成为Master路由器。
 
-[**[weight reduced ]{lang="EN-US"}**[\[ *weight-reduced* \]]{lang="EN-US"}]{#struct_0_18718_x1832_1422965110}[：当监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项状态变为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，当前路由器上属于指定]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[组的所有虚拟转发器的权重都降低指定的数值。权重降低的数值为]{style="font-family:宋体"}*[weight-reduced]{lang="EN-US"}*[，]{style="font-family:宋体"}*[weight-reduced]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[30]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[weight reduced ** *weight-reduced* ]：当监视的Track项状态变为Negative时，当前路由器上属于指定IPv4 VRRP组的所有虚拟转发器的权重都降低指定的数值。权重降低的数值为*weight-reduced*，*weight-reduced*的取值范围为1～255，缺省值为30。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1527462414}
+【使用指导】
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_18718_x1832_609483680}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在执行本配置之前，需要先在接口上创建备份组并配置虚拟]{style="font-family:宋体"}]{#struct_0_18718_x1832_1017293382}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+·在执行本配置之前，需要先在接口上创建备份组并配置虚拟IP地址。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[执行]{lang="EN-US" style="font-family:宋体"}**[undo vrrp vrid track]{lang="EN-US"}**]{#struct_0_18718_x1832_8955790}[命令时如果没有指定]{lang="EN-US" style="font-family:宋体"}*[track-entry-number]{lang="EN-US"}*[参数，则删除该备份组与所有]{lang="EN-US" style="font-family:宋体"}[Track]{lang="EN-US"}[项的关联。]{lang="EN-US" style="font-family:宋体"}
+·执行**undo vrrp vrid track**命令时如果没有指定*track-entry-number*参数，则删除该备份组与所有Track项的关联。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[只有]{style="font-family:宋体"}]{#struct_0_18718_x1832_x115993062}[VRRP]{lang="EN-US"}[工作在负载均衡模式时，执行]{style="font-family:宋体"}**[forwarder-switchover]{lang="EN-US"}**[ **member-ip** *ip-address*]{lang="EN-US"}[或]{style="font-family:
-宋体"}**[weight reduced ]{lang="EN-US"}**[\[ *weight-reduced* \]]{lang="EN-US"}[才会生效。]{style="font-family:宋体"}
+·只有VRRP工作在负载均衡模式时，执行**forwarder-switchover** **member-ip** *ip-address*或**weight reduced ** *weight-reduced* 才会生效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[虚拟转发器的权重值为]{style="font-family:宋体"}]{#struct_0_18718_x1832_x2046921429}[255]{lang="EN-US"}[，虚拟转发器的失效下限为]{style="font-family:宋体"}[10]{lang="EN-US"}[。]{style="font-family:宋体"}
+·虚拟转发器的权重值为255，虚拟转发器的失效下限为10。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[由于]{style="font-family:宋体"}]{#struct_0_18718_x1832_x2064007392}[VF Owner]{lang="EN-US"}[的权重高于或等于失效下限时，它的优先级始终为]{style="font-family:宋体"}[255]{lang="EN-US"}[，不会根据虚拟转发器的权重改变。当监视的上行接口出现故障时，配置的权重降低数额需保证]{style="font-family:宋体"}[VF Owner]{lang="EN-US"}[的权重低于失效下限，即权重降低的数额大于]{style="font-family:宋体"}[245]{lang="EN-US"}[，其他的虚拟转发器才能接替]{style="font-family:宋体"}[VF Owner]{lang="EN-US"}[成为]{style="font-family:宋体"}[AVF]{lang="EN-US"}[。]{style="font-family:宋体"}
+·由于VF Owner的权重高于或等于失效下限时，它的优先级始终为255，不会根据虚拟转发器的权重改变。当监视的上行接口出现故障时，配置的权重降低数额需保证VF Owner的权重低于失效下限，即权重降低的数额大于245，其他的虚拟转发器才能接替VF Owner成为AVF。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由器在某个备份组中作为]{style="font-family:宋体"}]{#struct_0_18718_x1832_x818535066}[IP]{lang="EN-US"}[地址拥有者时，]{style="font-family:宋体"}[如果在该路由器上执行]{lang="EN-US" style="font-family:宋体"}**[vrrp vrid track priority reduced]{lang="EN-US"}**[或]{lang="EN-US" style="font-family:宋体"}**[vrrp vrid track switchover]{lang="EN-US"}**[命令，]{lang="EN-US" style="font-family:宋体"}[则该配置不会生效。该路由器不再作为]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址拥有者后，之前的配置才会生效。]{style="font-family:宋体"}
+·路由器在某个备份组中作为IP地址拥有者时，如果在该路由器上执行**vrrp vrid track priority reduced**或**vrrp vrid track switchover**命令，则该配置不会生效。该路由器不再作为IP地址拥有者后，之前的配置才会生效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[被监视的]{style="font-family:宋体"}]{#struct_0_18718_x1832_x2040713135}[Track]{lang="EN-US"}[项的状态由]{style="font-family:宋体"}[Negative]{lang="EN-US"}[变为]{style="font-family:宋体"}[Positive]{lang="EN-US"}[或]{style="font-family:宋体"}[NotReady]{lang="EN-US"}[后，对应的路由器优先级会自动恢复、对应虚拟转发器的权重会自动恢复、故障恢复后的原]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器会重新抢占为]{style="font-family:宋体"}[Master]{lang="EN-US"}[状态、故障恢复后的原]{style="font-family:宋体"}[AVF]{lang="EN-US"}[会重新抢占为]{style="font-family:宋体"}[Active]{lang="EN-US"}[状态。]{style="font-family:宋体"}
+·被监视的Track项的状态由Negative变为Positive或NotReady后，对应的路由器优先级会自动恢复、对应虚拟转发器的权重会自动恢复、故障恢复后的原Master路由器会重新抢占为Master状态、故障恢复后的原AVF会重新抢占为Active状态。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[被监视的]{style="font-family:宋体"}]{#struct_0_18718_x1832_x875598184}[Track]{lang="EN-US"}[项可以是未创建的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项。]{style="font-family:宋体"}[可以通过]{lang="EN-US" style="font-family:宋体"}**[vrrp vrid track]{lang="EN-US"}**[命令指定监视的]{lang="EN-US" style="font-family:宋体"}[Track]{lang="EN-US"}[项后，再通过]{lang="EN-US" style="font-family:宋体"}**[track]{lang="EN-US"}**[命令创建该]{lang="EN-US" style="font-family:宋体"}[Track]{lang="EN-US"}[项。]{lang="EN-US" style="font-family:宋体"}
+·被监视的Track项可以是未创建的Track项。可以通过**vrrp vrid track**命令指定监视的Track项后，再通过**track**命令创建该Track项。
 
-[[Track]{lang="EN-US"}]{#struct_0_18718_x1832_x944939632}[项的详细介绍请参见"可靠性配置指导"中的"]{style="font-family:宋体"}[Track]{lang="EN-US"}["。]{style="font-family:宋体"}
+Track项的详细介绍请参见"可靠性配置指导"中的"Track"。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1110168795}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_1343880516}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x2001714483}[在]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[接口上配置监视]{style="font-family:宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[，当]{style="font-family:
-宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[状态为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[接口上备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[的优先级降低]{style="font-family:宋体"}[50]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在GigabitEthernet1/0/1接口上配置监视Track项1，当Track项1状态为Negative时，GigabitEthernet1/0/1接口上备份组1的优先级降低50。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_194533420}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] vrrp vrid 1 track 1 priority reduced 50]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 vrrp vrid 1 track 1 priority reduced 50
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x939021754}[在]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[接口上配置虚拟转发器监视]{style="font-family:宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[，当]{style="font-family:
-宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[状态为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，如果本地设备上]{style="font-family:宋体"}[AVF]{lang="EN-US"}[地址为]{style="font-family:宋体"}[10.1.1.3]{lang="EN-US"}[的虚拟转发器处于]{style="font-family:宋体"}[Listening]{lang="EN-US"}[状态，则马上将该虚拟转发器切换到]{style="font-family:宋体"}[Active]{lang="EN-US"}[状态。]{style="font-family:宋体"}
+\# 在GigabitEthernet1/0/1接口上配置虚拟转发器监视Track项1，当Track项1状态为Negative时，如果本地设备上AVF地址为10.1.1.3的虚拟转发器处于Listening状态，则马上将该虚拟转发器切换到Active状态。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_1796435215}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] vrrp vrid 1 track 1 forwarder-switchover member-ip 10.1.1.3]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 vrrp vrid 1 track 1 forwarder-switchover member-ip 10.1.1.3
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x848316934}[在]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[接口上配置虚拟转发器权重监视]{style="font-family:宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[，当]{style="font-family:
-宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[状态为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[接口上]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[所有虚拟转发器的权重都降低]{style="font-family:宋体"}[50]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在GigabitEthernet1/0/1接口上配置虚拟转发器权重监视Track项1，当Track项1状态为Negative时，GigabitEthernet1/0/1接口上IPv4 VRRP备份组1所有虚拟转发器的权重都降低50。
 
-[[\<Sysname\> sysname-view]{lang="EN-US"}]{#struct_0_18718_x1832_1172460878}
+\<Sysname\> sysname-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] vrrp vrid 1 track 1 weight reduced 50]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 vrrp vrid 1 track 1 weight reduced 50
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_609418144}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_1863632432}[在]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口]{style="font-family:宋体"}[2]{lang="EN-US"}[上配置监视]{style="font-family:宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[，当]{style="font-family:
-宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[状态为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口]{style="font-family:宋体"}[2]{lang="EN-US"}[上备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[的优先级降低]{style="font-family:宋体"}[50]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在VLAN接口2上配置监视Track项1，当Track项1状态为Negative时，VLAN接口2上备份组1的优先级降低50。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_2084191421}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 2]{lang="EN-US"}
+Sysname interface vlan-interface 2
 
-[\[Sysname-Vlan-interface2\] vrrp vrid 1 track 1 priority reduced 50]{lang="EN-US"}
+Sysname-Vlan-interface2 vrrp vrid 1 track 1 priority reduced 50
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_634956358}[在]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口]{style="font-family:宋体"}[2]{lang="EN-US"}[上配置虚拟转发器监视]{style="font-family:宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[，当]{style="font-family:
-宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[状态为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，如果本地设备上]{style="font-family:宋体"}[AVF]{lang="EN-US"}[地址为]{style="font-family:宋体"}[10.1.1.3]{lang="EN-US"}[的虚拟转发器处于]{style="font-family:宋体"}[Listening]{lang="EN-US"}[状态，则马上将该虚拟转发器切换到]{style="font-family:宋体"}[Active]{lang="EN-US"}[状态。]{style="font-family:宋体"}
+\# 在VLAN接口2上配置虚拟转发器监视Track项1，当Track项1状态为Negative时，如果本地设备上AVF地址为10.1.1.3的虚拟转发器处于Listening状态，则马上将该虚拟转发器切换到Active状态。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_x813256471}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 2]{lang="EN-US"}
+Sysname interface vlan-interface 2
 
-[\[Sysname-Vlan-interface2\] vrrp vrid 1 track 1 forwarder-switchover member-ip 10.1.1.3]{lang="EN-US"}
+Sysname-Vlan-interface2 vrrp vrid 1 track 1 forwarder-switchover member-ip 10.1.1.3
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x63980758}[在]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口]{style="font-family:宋体"}[2]{lang="EN-US"}[上配置虚拟转发器权重监视]{style="font-family:宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[，当]{style="font-family:
-宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[状态为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口]{style="font-family:宋体"}[2]{lang="EN-US"}[上]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[所有虚拟转发器的权重都降低]{style="font-family:宋体"}[50]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在VLAN接口2上配置虚拟转发器权重监视Track项1，当Track项1状态为Negative时，VLAN接口2上IPv4 VRRP备份组1所有虚拟转发器的权重都降低50。
 
-[[\<Sysname\> sysname-view]{lang="EN-US"}]{#struct_0_18718_x1832_x469793459}
+\<Sysname\> sysname-view
 
-[\[Sysname\] interface vlan-interface 2]{lang="EN-US"}
+Sysname interface vlan-interface 2
 
-[\[Sysname-Vlan-interface2\] vrrp vrid 1 track 1 weight reduced 50]{lang="EN-US"}
+Sysname-Vlan-interface2 vrrp vrid 1 track 1 weight reduced 50
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1723653929}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **vrrp**]{lang="EN-US"}]{#struct_0_18718_x1832_x403795604}
-:::::
-
-::: {#605393404 .myid}
-[]{#_Toc404795944}[]{#struct_0_18718_x1832_x1817059611}[]{#_Toc211671370}[]{#_Toc128898004}
+·**display** **vrrp**
 
 **VRRP \-- IPv6 VRRP配置命令 \-- display vrrp ipv6**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **vrrp ipv6**]{lang="EN-US"}]{#struct_0_18718_x1832_1339555774}[命令用来显示]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组的状态信息。]{style="font-family:宋体"}
+**[display** **vrrp ipv6**]命令用来显示IPv6 VRRP备份组的状态信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1168847508}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **vrrp ipv6** \[ **interface** *interface-type interface-number* \[ **vrid** *virtual-router-id* \] \] \[ **verbose** \] ]{lang="EN-US"}]{#struct_0_18718_x1832_1293981532}
+**[display** **vrrp ipv6** [ **interface** *interface-type interface-number* [ **vrid** *virtual-router-id*  ]  **verbose**  ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x98245910}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_609483681}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x818535065}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x2040516527}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_18718_x1832_1850246494}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_724396456}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_18718_x1832_186865867}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1002131797}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_18718_x1832_x259700716}[：显示指定接口的]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组状态信息。其中，]{style="font-family:宋体"}*[interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}[为接口类型和接口编号。]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：显示指定接口的IPv6 VRRP备份组状态信息。其中，*interface-type* *interface-number*为接口类型和接口编号。
 
-[**[vrid ]{lang="EN-US"}***[virtual-router-id]{lang="EN-US"}*]{#struct_0_18718_x1832_x484052307}[：显示指定]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组的状态信息。其中，]{style="font-family:宋体"}*[virtual-router-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vrid ***virtual-router-id*]：显示指定IPv6 VRRP备份组的状态信息。其中，*virtual-router-id*为IPv6 VRRP备份组号，取值范围为1～255。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_18718_x1832_609418145}[：显示]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组状态的详细信息。如果不指定本参数，则显示]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组状态的简要信息。]{style="font-family:宋体"}
+**[verbose**]：显示IPv6 VRRP备份组状态的详细信息。如果不指定本参数，则显示IPv6 VRRP备份组状态的简要信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1863632431}
+【使用指导】
 
-[[如果不指定接口名和备份组号，则显示该路由器上所有]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_2084388029}[备份组的状态信息；如果只指定接口名，不指定备份组号，则显示该接口上的所有]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组的状态信息；如果同时指定接口名和备份组号，则显示该接口上指定]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组的状态信息。]{style="font-family:宋体"}
+如果不指定接口名和备份组号，则显示该路由器上所有IPv6 VRRP备份组的状态信息；如果只指定接口名，不指定备份组号，则显示该接口上的所有IPv6 VRRP备份组的状态信息；如果同时指定接口名和备份组号，则显示该接口上指定IPv6 VRRP备份组的状态信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x2123709064}
+【举例】
 
-[[\# VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x1380395935}[工作在标准协议模式时，显示全部]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组的简要信息。]{style="font-family:宋体"}
+\# VRRP工作在标准协议模式时，显示全部IPv6 VRRP备份组的简要信息。
 
-[[\<Sysname\> display vrrp ipv6]{lang="EN-US"}]{#struct_0_18718_x1832_609352609}
+\<Sysname\> display vrrp ipv6
 
-[IPv6 Virtual Router Information:]{lang="EN-US"}
+IPv6 Virtual Router Information:
 
-[ Running Mode      : Standard]{lang="EN-US"}
+ Running Mode      : Standard
 
-[ Total number of virtual routers : 1]{lang="EN-US"}
+ Total number of virtual routers : 1
 
-[ Interface          VRID  State        Running Adver   Auth     Virtual]{lang="EN-US"}
+ Interface          VRID  State        Running Adver   Auth     Virtual
 
-[                                       Pri     Timer   Type        IP]{lang="EN-US"}
+                                       Pri     Timer   Type        IP
 
-[ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ GE1/0/1            1     Master       150     100     None     FE80::1]{lang="EN-US"}
+ GE1/0/1            1     Master       150     100     None     FE80::1
 
-[[表1-7 ]{lang="EN-US"}[display vrrp ipv6]{lang="EN-US"}]{#struct_0_18718_x1832_1224876944}[命令显示信息描述表（标准协议模式）]{style="font-family:黑体"}
+表1-7 display vrrp ipv6命令显示信息描述表（标准协议模式）
 
-[]{#table_struct_0_x1780470139}[[字段]{style="font-family:黑体"}]{#struct_0_18718_x1832_x794539610}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_18718_x1832_496831633}
+描述
 
-[[Running Mode]{lang="EN-US"}]{#struct_0_18718_x1832_1445395017}
+Running Mode
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_308405801}[的工作模式，取值为]{style="font-family:宋体"}[Standard]{lang="EN-US"}[（标准协议模式）]{style="font-family:宋体"}
+VRRP的工作模式，取值为Standard（标准协议模式）
 
-[[Total number of virtual routers]{lang="EN-US"}]{#struct_0_18718_x1832_x2116498921}
+Total number of virtual routers
 
-[[备份组的数目]{style="font-family:宋体"}]{#struct_0_18718_x1832_609287073}
+备份组的数目
 
-[[Interface]{lang="EN-US"}]{#struct_0_18718_x1832_1227897907}
+Interface
 
-[[备份组所在接口名]{style="font-family:宋体"}]{#struct_0_18718_x1832_1354481213}
+备份组所在接口名
 
-[[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_1543548913}
+VRID
 
-[[虚拟路由器号（即备份组号）]{style="font-family:宋体"}]{#struct_0_18718_x1832_238217225}
+虚拟路由器号（即备份组号）
 
-[[State]{lang="EN-US"}]{#struct_0_18718_x1832_1142587733}
+State
 
-[[当前路由器在备份组中的状态，取值为]{style="font-family:宋体"}[Master]{lang="EN-US"}]{#struct_0_18718_x1832_609745825}[，]{style="font-family:宋体"}[Backup]{lang="EN-US"}[，]{style="font-family:宋体"}[Initialize]{lang="EN-US"}[或]{style="font-family:宋体"}[Inactive]{lang="EN-US"}
+当前路由器在备份组中的状态，取值为Master，Backup，Initialize或Inactive
 
-[[Running Pri]{lang="EN-US"}]{#struct_0_18718_x1832_x143092271}
+Running Pri
 
-[[路由器的运行优先级，即路由器当前的优先级。配置监视指定]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_x1836964047}[项后，路由器的优先级会根据]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态改变]{style="font-family:宋体"}
+路由器的运行优先级，即路由器当前的优先级。配置监视指定Track项后，路由器的优先级会根据Track项的状态改变
 
-[[Adver Timer]{lang="EN-US"}]{#struct_0_18718_x1832_x130613962}
+Adver Timer
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x496609422}[通告报文发送时间间隔，单位为厘秒]{style="font-family:宋体"}
+VRRP通告报文发送时间间隔，单位为厘秒
 
-[[Auth Type]{lang="EN-US"}]{#struct_0_18718_x1832_609680289}
+Auth Type
 
-[[认证类型，取值只能是]{style="font-family:宋体"}[None]{lang="EN-US"}]{#struct_0_18718_x1832_1420776179}[，表示无认证]{style="font-family:宋体"}
+认证类型，取值只能是None，表示无认证
 
-[[Virtual IP]{lang="EN-US"}]{#struct_0_18718_x1832_64440912}
+Virtual IP
 
-[[备份组的虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_18718_x1832_1360439247}[地址]{style="font-family:宋体"}
+备份组的虚拟IP地址
 
-[ ]{lang="EN-US"}
+\# VRRP工作在标准协议模式时，显示全部IPv6 VRRP备份组的详细信息。
 
-[[\# VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_234496775}[工作在标准协议模式时，显示全部]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组的详细信息。]{style="font-family:宋体"}
+\<Sysname\> display vrrp ipv6 verbose
 
-[[\<Sysname\> display vrrp ipv6 verbose]{lang="EN-US"}]{#struct_0_18718_x1832_609614753}
+IPv6 Virtual Router Information:
 
-[IPv6 Virtual Router Information:]{lang="EN-US"}
+ Running Mode      : Standard
 
-[ Running Mode      : Standard]{lang="EN-US"}
+ Total number of virtual routers : 2
 
-[ Total number of virtual routers : 2]{lang="EN-US"}
+   Interface GigabitEthernet1/0/1
 
-[   Interface GigabitEthernet1/0/1]{lang="EN-US"}
+     VRID           : 1                    Adver Timer  : 100
 
-[     VRID           : 1                    Adver Timer  : 100]{lang="EN-US"}
+     Admin Status   : Up                   State        : Master
 
-[     Admin Status   : Up                   State        : Master]{lang="EN-US"}
+     Config Pri     : 150                  Running Pri  : 150
 
-[     Config Pri     : 150                  Running Pri  : 150]{lang="EN-US"}
+     Preempt Mode   : Yes                  Delay Time   : 10
 
-[     Preempt Mode   : Yes                  Delay Time   : 10]{lang="EN-US"}
+     Auth Type      : None
 
-[     Auth Type      : None]{lang="EN-US"}
+     Virtual IP     : FE80::1
 
-[     Virtual IP     : FE80::1]{lang="EN-US"}
+     Virtual MAC    : 0000-5e00-0201
 
-[     Virtual MAC    : 0000-5e00-0201]{lang="EN-US"}
+     Master IP      : FE80::2
 
-[     Master IP      : FE80::2]{lang="EN-US"}
+   VRRP Track Information:
 
-[   VRRP Track Information:]{lang="EN-US"}
+     Track Object   : 1                    State : Positive   Pri Reduced : 50
 
-[     Track Object   : 1                    State : Positive   Pri Reduced : 50]{lang="EN-US"}
+   Interface GigabitEthernet1/0/1
 
-[   Interface GigabitEthernet1/0/1]{lang="EN-US"}
+     VRID           : 11                   Adver Timer  : 100
 
-[     VRID           : 11                   Adver Timer  : 100]{lang="EN-US"}
+     Admin Status   : Up                   State        : Backup
 
-[     Admin Status   : Up                   State        : Backup]{lang="EN-US"}
+     Config Pri     : 80                   Running Pri  : 80
 
-[     Config Pri     : 80                   Running Pri  : 80]{lang="EN-US"}
+     Preempt Mode   : Yes                  Delay Time   : 0
 
-[     Preempt Mode   : Yes                  Delay Time   : 0]{lang="EN-US"}
+     Become Master  : 2450ms left
 
-[     Become Master  : 2450ms left]{lang="EN-US"}
+     Auth Type      : None
 
-[     Auth Type      : None]{lang="EN-US"}
+     Virtual IP     : FE80::11
 
-[     Virtual IP     : FE80::11]{lang="EN-US"}
+     Virtual MAC    : 0000-5e00-020b
 
-[     Virtual MAC    : 0000-5e00-020b]{lang="EN-US"}
+     Master IP      : FE80::12
 
-[     Master IP      : FE80::12]{lang="EN-US"}
+表1-8 display vrrp ipv6 verbose命令显示信息描述表（标准协议模式）
 
-[[表1-8 ]{lang="EN-US"}[display vrrp ipv6 verbose]{lang="EN-US"}]{#struct_0_18718_x1832_1346547551}[命令显示信息描述表（标准协议模式）]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1785900201}[[字段]{style="font-family:黑体"}]{#struct_0_18718_x1832_1693252649}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_18718_x1832_609549217}
+Running Mode
 
-[[Running Mode]{lang="EN-US"}]{#struct_0_18718_x1832_1112559989}
+VRRP的工作模式，取值为Standard（标准协议模式）
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x761383737}[的工作模式，取值为]{style="font-family:宋体"}[Standard]{lang="EN-US"}[（标准协议模式）]{style="font-family:宋体"}
+Total number of virtual routers
 
-[[Total number of virtual routers]{lang="EN-US"}]{#struct_0_18718_x1832_x58491184}
+备份组的数目
 
-[[备份组的数目]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1051674139}
+Interface
 
-[[Interface]{lang="EN-US"}]{#struct_0_18718_x1832_610007969}
+备份组所在接口名
 
-[[备份组所在接口名]{style="font-family:宋体"}]{#struct_0_18718_x1832_1173233633}
+VRID
 
-[[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_x432428575}
+虚拟路由器号（即备份组号）
 
-[[虚拟路由器号（即备份组号）]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1910929552}
+Adver Timer
 
-[[Adver Timer]{lang="EN-US"}]{#struct_0_18718_x1832_798948909}
+VRRP通告报文发送时间间隔，单位为厘秒
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x1716966206}[通告报文发送时间间隔，单位为厘秒]{style="font-family:宋体"}
+Admin Status
 
-[[Admin Status]{lang="EN-US"}]{#struct_0_18718_x1832_609942433}
+管理状态，包括Up和Down两种状态
 
-[[管理状态，包括]{style="font-family:宋体"}[Up]{lang="EN-US"}]{#struct_0_18718_x1832_1565003027}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}[两种状态]{style="font-family:宋体"}
+State
 
-[[State]{lang="EN-US"}]{#struct_0_18718_x1832_x971722338}
+当前路由器在备份组中的状态，取值为Master，Backup，Initialize或Inactive
 
-[[当前路由器在备份组中的状态，取值为]{style="font-family:宋体"}[Master]{lang="EN-US"}]{#struct_0_18718_x1832_192539611}[，]{style="font-family:宋体"}[Backup]{lang="EN-US"}[，]{style="font-family:宋体"}[Initialize]{lang="EN-US"}[或]{style="font-family:宋体"}[Inactive]{lang="EN-US"}
+Config Pri
 
-[[Config Pri]{lang="EN-US"}]{#struct_0_18718_x1832_1589267150}
+路由器的配置优先级，即通过**vrrp ipv6 vrid priority**命令指定的路由器优先级
 
-[[路由器的配置优先级，即通过]{style="font-family:宋体"}**[vrrp ipv6 vrid priority]{lang="EN-US"}**]{#struct_0_18718_x1832_x2119399671}[命令指定的路由器优先级]{style="font-family:宋体"}
+Running Pri
 
-[[Running Pri]{lang="EN-US"}]{#struct_0_18718_x1832_209621391}
+路由器的运行优先级，即路由器当前的优先级，配置监视指定Track项后，路由器的优先级会根据Track项的状态改变
 
-[[路由器的运行优先级，即路由器当前的优先级，配置监视指定]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_1032711706}[项后，路由器的优先级会根据]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态改变]{style="font-family:宋体"}
+Preempt Mode
 
-[[Preempt Mode]{lang="EN-US"}]{#struct_0_18718_x1832_x30760929}
+抢占模式，取值包括：
 
-[[抢占模式，取值包括：]{style="font-family:宋体"}]{#struct_0_18718_x1832_x905966818}
+·Yes：路由器工作在抢占模式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Yes]{lang="EN-US"}]{#struct_0_18718_x1832_x2119465207}[：路由器工作在抢占模式]{lang="EN-US" style="font-family:宋体"}
+·No：路由器工作在非抢占模式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No]{lang="EN-US"}]{#struct_0_18718_x1832_x2124617788}[：路由器工作在非抢占模式]{style="font-family:宋体"}
+Become Master
 
-[[Become Master]{lang="EN-US"}]{#struct_0_18718_x1832_x803706160}
+切换到Master状态需要等待的时间，单位为毫秒，只有处于Backup状态时才会显示此信息
 
-[[切换到]{style="font-family:宋体"}[Master]{lang="EN-US"}]{#struct_0_18718_x1832_x174073159}[状态需要等待的时间，单位为毫秒，只有处于]{style="font-family:宋体"}[Backup]{lang="EN-US"}[状态时才会显示此信息]{style="font-family:宋体"}
+Delay Time
 
-[[Delay Time]{lang="EN-US"}]{#struct_0_18718_x1832_999650865}
+抢占延迟时间，单位为厘秒
 
-[[抢占延迟时间，单位为厘秒]{style="font-family:宋体"}]{#struct_0_18718_x1832_x2119530743}
+Auth Type
 
-[[Auth Type]{lang="EN-US"}]{#struct_0_18718_x1832_x759736180}
+认证类型，取值只能是None，表示无认证
 
-[[认证类型，取值只能是]{style="font-family:宋体"}[None]{lang="EN-US"}]{#struct_0_18718_x1832_198522641}[，表示无认证]{style="font-family:宋体"}
+Virtual IP
 
-[[Virtual IP]{lang="EN-US"}]{#struct_0_18718_x1832_1253990633}
+备份组的虚拟IP地址
 
-[[备份组的虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_18718_x1832_1465852905}[地址]{style="font-family:宋体"}
+Virtual MAC
 
-[[Virtual MAC]{lang="EN-US"}]{#struct_0_18718_x1832_x2119596279}
+备份组虚拟IP地址对应的虚拟MAC地址。只在路由器为Master状态时，才会显示此信息
 
-[[备份组虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_18718_x1832_x1097077573}[地址对应的虚拟]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。只在路由器为]{style="font-family:宋体"}[Master]{lang="EN-US"}[状态时，才会显示此信息]{style="font-family:宋体"}
+Master IP
 
-[[Master IP]{lang="EN-US"}]{#struct_0_18718_x1832_1148664629}
+处于Master状态的路由器所对应接口的链路本地地址
 
-[[处于]{style="font-family:宋体"}[Master]{lang="EN-US"}]{#struct_0_18718_x1832_899117350}[状态的路由器所对应接口的链路本地地址]{style="font-family:宋体"}
+VRRP Track Information
 
-[[VRRP Track Information]{lang="EN-US"}]{#struct_0_18718_x1832_x2119137527}
+VRRP备份组监视的Track项信息。执行**vrrp ipv6 vrid track**命令后，才会显示此信息
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_1976314618}[备份组监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项信息。执行]{style="font-family:宋体"}**[vrrp ipv6 vrid track]{lang="EN-US"}**[命令后，才会显示此信息]{style="font-family:宋体"}
+Track Object
 
-[[Track Object]{lang="EN-US"}]{#struct_0_18718_x1832_180750231}
+监视的Track项
 
-[[监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_1951676946}[项]{style="font-family:宋体"}
+State
 
-[[State]{lang="EN-US"}]{#struct_0_18718_x1832_x2119203063}
+Track项的状态，Track项的状态可包括Negative、Positive和NotReady
 
-[[Track]{lang="EN-US"}]{#struct_0_18718_x1832_1306211064}[项的状态，]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态可包括]{style="font-family:宋体"}[Negative]{lang="EN-US"}[、]{style="font-family:宋体"}[Positive]{lang="EN-US"}[和]{style="font-family:宋体"}[NotReady]{lang="EN-US"}
+Pri Reduced
 
-[[Pri Reduced]{lang="EN-US"}]{#struct_0_18718_x1832_x1667327799}
+监视的Track项状态为Negative时，优先级降低的数额
 
-[[监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_2058428203}[项状态为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，优先级降低的数额]{style="font-family:宋体"}
+Switchover
 
-[[Switchover]{lang="EN-US"}]{#struct_0_18718_x1832_x2119268599}
+快速切换，显示此信息时表示当监视的Track项变为Negative状态时，Backup路由器会马上抢占成为Master路由器
 
-[[快速切换，显示此信息时表示当监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_x1260222647}[项变为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[状态时，]{style="font-family:宋体"}[Backup]{lang="EN-US"}[路由器会马上抢占成为]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器]{style="font-family:宋体"}
+\# VRRP工作在负载均衡模式时，显示全部IPv6 VRRP备份组的简要信息。
 
-[ ]{lang="EN-US"}
+\<Sysname\> display vrrp ipv6
 
-[[\# VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_1412206277}[工作在负载均衡模式时，显示全部]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组的简要信息。]{style="font-family:宋体"}
+IPv6 Virtual Router Information:
 
-[[\<Sysname\> display vrrp ipv6]{lang="EN-US"}]{#struct_0_18718_x1832_x2009469282}
+ Running Mode      : Load Balance
 
-[IPv6 Virtual Router Information:]{lang="EN-US"}
+ Total number of virtual routers : 1
 
-[ Running Mode      : Load Balance]{lang="EN-US"}
+ Interface          VRID  State        Running Address             Active
 
-[ Total number of virtual routers : 1]{lang="EN-US"}
+                                       Pri
 
-[ Interface          VRID  State        Running Address             Active]{lang="EN-US"}
+ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                                       Pri]{lang="EN-US"}
+ GE1/0/1            1     Master       150     FE80::1             Local
 
-[ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ \-\-\-\--              VF 1  Active       255     000f-e2ff-4011      Local
 
-[ GE1/0/1            1     Master       150     FE80::1             Local]{lang="EN-US"}
+表1-9 display vrrp ipv6命令显示信息描述表（负载均衡模式）
 
-[ \-\-\-\--              VF 1  Active       255     000f-e2ff-4011      Local]{lang="EN-US"}
+字段
 
-[[表1-9 ]{lang="EN-US"}[display vrrp ipv6]{lang="EN-US"}]{#struct_0_18718_x1832_x829962826}[命令显示信息描述表（负载均衡模式）]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x1787881955}[[字段]{style="font-family:黑体"}]{#struct_0_18718_x1832_239266545}
+Running Mode
 
-[[描述]{style="font-family:黑体"}]{#struct_0_18718_x1832_x2119334135}
+VRRP的工作模式，取值为Load Balance（负载均衡模式）
 
-[[Running Mode]{lang="EN-US"}]{#struct_0_18718_x1832_x1017310156}
+Total number of virtual routers
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x1060105776}[的工作模式，取值为]{style="font-family:宋体"}[Load Balance]{lang="EN-US"}[（负载均衡模式）]{style="font-family:宋体"}
+备份组的数目
 
-[[Total number of virtual routers]{lang="EN-US"}]{#struct_0_18718_x1832_x1075554651}
+Interface
 
-[[备份组的数目]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1168839395}
+备份组所在接口名
 
-[[Interface]{lang="EN-US"}]{#struct_0_18718_x1832_x823407284}
+VRID
 
-[[备份组所在接口名]{style="font-family:宋体"}]{#struct_0_18718_x1832_x2118875383}
+虚拟路由器号（即备份组号）*number*或虚拟转发器编号VF *number*
 
-[[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_x660768611}
+State
 
-[[虚拟路由器号（即备份组号）]{style="font-family:宋体"}*[number]{lang="EN-US"}*]{#struct_0_18718_x1832_983989389}[或虚拟转发器编号]{style="font-family:宋体"}[VF *number*]{lang="EN-US"}
+对于虚拟备份组（VRID为*number*），该字段表示当前路由器在备份组中的状态，取值为Master，Backup，Initialize或Inactive
 
-[[State]{lang="EN-US"}]{#struct_0_18718_x1832_x1152014275}
+对于虚拟转发器（VRID为VF *number*），该字段表示虚拟转发器的状态，取值为Active、Listening或Initialize
 
-[[对于虚拟备份组（]{style="font-family:宋体"}[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_1588976665}[为]{style="font-family:宋体"}*[number]{lang="EN-US"}*[），该字段表示当前路由器在备份组中的状态，取值为]{style="font-family:宋体"}[Master]{lang="EN-US"}[，]{style="font-family:宋体"}[Backup]{lang="EN-US"}[，]{style="font-family:宋体"}[Initialize]{lang="EN-US"}[或]{style="font-family:宋体"}[Inactive]{lang="EN-US"}
+Running Pri
 
-[[对于虚拟转发器（]{style="font-family:宋体"}[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_x1357422714}[为]{style="font-family:宋体"}[VF *number*]{lang="EN-US"}[），该字段表示虚拟转发器的状态，取值为]{style="font-family:宋体"}[Active]{lang="EN-US"}[、]{style="font-family:宋体"}[Listening]{lang="EN-US"}[或]{style="font-family:宋体"}[Initialize]{lang="EN-US"}
+对于虚拟备份组（VRID为*number*），该字段表示路由器的运行优先级，即路由器当前的优先级，配置监视指定Track项后，路由器的优先级会根据Track项的状态改变
 
-[[Running Pri]{lang="EN-US"}]{#struct_0_18718_x1832_x2118940919}
+对于虚拟转发器（VRID为VF *number*），该字段表示虚拟转发器的运行优先级，即虚拟转发器当前的优先级，配置监视指定Track项后，虚拟转发器的优先级会根据Track项的状态改变
 
-[[对于虚拟备份组（]{style="font-family:宋体"}[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_1658296168}[为]{style="font-family:宋体"}*[number]{lang="EN-US"}*[），该字段表示路由器的运行优先级，即路由器当前的优先级，配置监视指定]{style="font-family:宋体"}[Track]{lang="EN-US"}[项后，路由器的优先级会根据]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态改变]{style="font-family:宋体"}
+Address
 
-[[对于虚拟转发器（]{style="font-family:宋体"}[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_x431694}[为]{style="font-family:宋体"}[VF *number*]{lang="EN-US"}[），该字段表示虚拟转发器的运行优先级，即虚拟转发器当前的优先级，配置监视指定]{style="font-family:宋体"}[Track]{lang="EN-US"}[项后，虚拟转发器的优先级会根据]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态改变]{style="font-family:宋体"}
+对于虚拟备份组（VRID为*number*），该字段表示备份组的虚拟IP地址
 
-[[Address]{lang="EN-US"}]{#struct_0_18718_x1832_1581724012}
+对于虚拟转发器（VRID为VF *number*），该字段表示虚拟转发器的虚拟MAC地址
 
-[[对于虚拟备份组（]{style="font-family:宋体"}[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_332614011}[为]{style="font-family:宋体"}*[number]{lang="EN-US"}*[），该字段表示备份组的虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+Active
 
-[[对于虚拟转发器（]{style="font-family:宋体"}[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_1967205184}[为]{style="font-family:宋体"}[VF *number*]{lang="EN-US"}[），该字段表示虚拟转发器的虚拟]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+对于虚拟备份组（VRID为*number*），该字段表示Master的接口的链路本地地址，当前路由器为Master时，显示为local
 
-[[Active]{lang="EN-US"}]{#struct_0_18718_x1832_x2119399670}
+对于虚拟转发器（VRID为VF *number*），该字段表示AVF的接口的链路本地地址，当前虚拟转发器为AVF时，显示为local
 
-[[对于虚拟备份组（]{style="font-family:宋体"}[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_x1356462550}[为]{style="font-family:宋体"}*[number]{lang="EN-US"}*[），该字段表示]{style="font-family:宋体"}[Master]{lang="EN-US"}[的接口的链路本地地址，当前路由器为]{style="font-family:宋体"}[Master]{lang="EN-US"}[时，显示为]{style="font-family:宋体"}[local]{lang="EN-US"}
+\# VRRP工作在负载均衡模式时，显示全部IPv6 VRRP备份组的详细信息。
 
-[[对于虚拟转发器（]{style="font-family:宋体"}[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_x1991042354}[为]{style="font-family:宋体"}[VF *number*]{lang="EN-US"}[），该字段表示]{style="font-family:宋体"}[AVF]{lang="EN-US"}[的接口的链路本地地址，当前虚拟转发器为]{style="font-family:宋体"}[AVF]{lang="EN-US"}[时，显示为]{style="font-family:宋体"}[local]{lang="EN-US"}
+\<Sysname\> display vrrp ipv6 verbose
 
-[ ]{lang="EN-US"}
+IPv6 Virtual Router Information:
 
-[[\# VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_1538098250}[工作在负载均衡模式时，显示全部]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组的详细信息。]{style="font-family:宋体"}
+ Running Mode      : Load Balance
 
-[[\<Sysname\> display vrrp ipv6 verbose]{lang="EN-US"}]{#struct_0_18718_x1832_x2119530742}
+ Total number of virtual routers : 2
 
-[IPv6 Virtual Router Information:]{lang="EN-US"}
+   Interface GigabitEthernet1/0/1
 
-[ Running Mode      : Load Balance]{lang="EN-US"}
+     VRID           : 1                    Adver Timer  : 100
 
-[ Total number of virtual routers : 2]{lang="EN-US"}
+     Admin Status   : Up                   State        : Master
 
-[   Interface GigabitEthernet1/0/1]{lang="EN-US"}
+     Config Pri     : 150                  Running Pri  : 150
 
-[     VRID           : 1                    Adver Timer  : 100]{lang="EN-US"}
+     Preempt Mode   : Yes                  Delay Time   : 5
 
-[     Admin Status   : Up                   State        : Master]{lang="EN-US"}
+     Auth Type      : None
 
-[     Config Pri     : 150                  Running Pri  : 150]{lang="EN-US"}
+     Virtual IP     : FE80::10
 
-[     Preempt Mode   : Yes                  Delay Time   : 5]{lang="EN-US"}
+     Member IP List : FE80::3 (Local, Master)
 
-[     Auth Type      : None]{lang="EN-US"}
+                      FE80::2 (Backup)
 
-[     Virtual IP     : FE80::10]{lang="EN-US"}
+     Master IP      : FE80::3
 
-[     Member IP List : FE80::3 (Local, Master)]{lang="EN-US"}
+   VRRP Track Information:
 
-[                      FE80::2 (Backup)]{lang="EN-US"}
+     Track Object   : 1                    State : Positive   Pri Reduced : 50
 
-[     Master IP      : FE80::3]{lang="EN-US"}
+   Forwarder Information: 2 Forwarders 1 Active
 
-[   VRRP Track Information:]{lang="EN-US"}
+     Config Weight  : 255
 
-[     Track Object   : 1                    State : Positive   Pri Reduced : 50]{lang="EN-US"}
+     Running Weight : 255
 
-[   Forwarder Information: 2 Forwarders 1 Active]{lang="EN-US"}
+    Forwarder 01
 
-[     Config Weight  : 255]{lang="EN-US"}
+     State          : Active
 
-[     Running Weight : 255]{lang="EN-US"}
+     Virtual MAC    : 000f-e2ff-4011 (Owner)
 
-[    Forwarder 01]{lang="EN-US"}
+     Owner ID       : 0000-5e01-1101
 
-[     State          : Active]{lang="EN-US"}
+     Priority       : 255
 
-[     Virtual MAC    : 000f-e2ff-4011 (Owner)]{lang="EN-US"}
+     Active         : local
 
-[     Owner ID       : 0000-5e01-1101]{lang="EN-US"}
+    Forwarder 02
 
-[     Priority       : 255]{lang="EN-US"}
+     State          : Listening
 
-[     Active         : local]{lang="EN-US"}
+     Virtual MAC    : 000f-e2ff-4012 (Learnt)
 
-[    Forwarder 02]{lang="EN-US"}
+     Owner ID       : 0000-5e01-1103
 
-[     State          : Listening]{lang="EN-US"}
+     Priority       : 127
 
-[     Virtual MAC    : 000f-e2ff-4012 (Learnt)]{lang="EN-US"}
+     Active         : FE80::2
 
-[     Owner ID       : 0000-5e01-1103]{lang="EN-US"}
+   Forwarder Weight Track Information:
 
-[     Priority       : 127]{lang="EN-US"}
+     Track Object   : 1          State : Positive   Weight Reduced : 250
 
-[     Active         : FE80::2]{lang="EN-US"}
+   Interface GigabitEthernet1/0/1
 
-[   Forwarder Weight Track Information:]{lang="EN-US"}
+     VRID           : 11                   Adver Timer  : 100
 
-[     Track Object   : 1          State : Positive   Weight Reduced : 250]{lang="EN-US"}
+     Admin Status   : Up                   State        : Backup
 
-[   Interface GigabitEthernet1/0/1]{lang="EN-US"}
+     Config Pri     : 80                   Running Pri  : 80
 
-[     VRID           : 11                   Adver Timer  : 100]{lang="EN-US"}
+     Preempt Mode   : Yes                  Delay Time   : 0
 
-[     Admin Status   : Up                   State        : Backup]{lang="EN-US"}
+     Become Master  : 2450ms left
 
-[     Config Pri     : 80                   Running Pri  : 80]{lang="EN-US"}
+     Auth Type      : None
 
-[     Preempt Mode   : Yes                  Delay Time   : 0]{lang="EN-US"}
+     Virtual IP     : FE80::11
 
-[     Become Master  : 2450ms left]{lang="EN-US"}
+     Member IP List : FE80::3 (Local, Backup)
 
-[     Auth Type      : None]{lang="EN-US"}
+                      FE80::2 (Master)
 
-[     Virtual IP     : FE80::11]{lang="EN-US"}
+     Master IP      : FE80::2
 
-[     Member IP List : FE80::3 (Local, Backup)]{lang="EN-US"}
+   Forwarder Information: 2 Forwarders 1 Active
 
-[                      FE80::2 (Master)]{lang="EN-US"}
+     Config Weight  : 255
 
-[     Master IP      : FE80::2]{lang="EN-US"}
+     Running Weight : 255
 
-[   Forwarder Information: 2 Forwarders 1 Active]{lang="EN-US"}
+    Forwarder 01
 
-[     Config Weight  : 255]{lang="EN-US"}
+     State          : Active
 
-[     Running Weight : 255]{lang="EN-US"}
+     Virtual MAC    : 000f-e2ff-40b1 (Learnt)
 
-[    Forwarder 01]{lang="EN-US"}
+     Owner ID       : 0000-5e01-1103
 
-[     State          : Active]{lang="EN-US"}
+     Priority       : 127
 
-[     Virtual MAC    : 000f-e2ff-40b1 (Learnt)]{lang="EN-US"}
+     Active         : FE80::2
 
-[     Owner ID       : 0000-5e01-1103]{lang="EN-US"}
+    Forwarder 02
 
-[     Priority       : 127]{lang="EN-US"}
+     State          : Listening
 
-[     Active         : FE80::2]{lang="EN-US"}
+     Virtual MAC    : 000f-e2ff-40b2 (Owner)
 
-[    Forwarder 02]{lang="EN-US"}
+     Owner ID       : 0000-5e01-1101
 
-[     State          : Listening]{lang="EN-US"}
+     Priority       : 255
 
-[     Virtual MAC    : 000f-e2ff-40b2 (Owner)]{lang="EN-US"}
+     Active         : local
 
-[     Owner ID       : 0000-5e01-1101]{lang="EN-US"}
+表1-10 display vrrp ipv6 verbose命令显示信息描述表（负载均衡模式）
 
-[     Priority       : 255]{lang="EN-US"}
+字段
 
-[     Active         : local]{lang="EN-US"}
+描述
 
-[[表1-10 ]{lang="EN-US"}[display vrrp ipv6 verbose]{lang="EN-US"}]{#struct_0_18718_x1832_1969147175}[命令显示信息描述表（负载均衡模式）]{style="font-family:黑体"}
+Running Mode
 
-[]{#table_struct_0_x1791035227}[[字段]{style="font-family:黑体"}]{#struct_0_18718_x1832_x2119596278}
+VRRP的工作模式，取值为Load Balance（负载均衡模式）
 
-[[描述]{style="font-family:黑体"}]{#struct_0_18718_x1832_1631805782}
+Total number of virtual routers
 
-[[Running Mode]{lang="EN-US"}]{#struct_0_18718_x1832_1646578963}
+备份组的数目
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_441706504}[的工作模式，取值为]{style="font-family:宋体"}[Load Balance]{lang="EN-US"}[（负载均衡模式）]{style="font-family:宋体"}
+Interface
 
-[[Total number of virtual routers]{lang="EN-US"}]{#struct_0_18718_x1832_1658277359}
+备份组所在接口名
 
-[[备份组的数目]{style="font-family:宋体"}]{#struct_0_18718_x1832_1211561242}
+VRID
 
-[[Interface]{lang="EN-US"}]{#struct_0_18718_x1832_x2119137526}
+虚拟路由器号（即备份组号）
 
-[[备份组所在接口名]{style="font-family:宋体"}]{#struct_0_18718_x1832_410230677}
+Adver Timer
 
-[[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_x1666451465}
+VRRP通告报文发送时间间隔，单位为厘秒
 
-[[虚拟路由器号（即备份组号）]{style="font-family:宋体"}]{#struct_0_18718_x1832_1080842414}
+Admin Status
 
-[[Adver Timer]{lang="EN-US"}]{#struct_0_18718_x1832_72387891}
+管理状态，包括Up和Down两种状态
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x2119203062}[通告报文发送时间间隔，单位为厘秒]{style="font-family:宋体"}
+State
 
-[[Admin Status]{lang="EN-US"}]{#struct_0_18718_x1832_x1422672291}
+当前路由器在备份组中的状态，取值为Master，Backup，Initialize或Inactive
 
-[[管理状态，包括]{style="font-family:宋体"}[Up]{lang="EN-US"}]{#struct_0_18718_x1832_129248975}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}[两种状态]{style="font-family:宋体"}
+Config Pri
 
-[[State]{lang="EN-US"}]{#struct_0_18718_x1832_x2006434127}
+路由器的配置优先级，即通过**vrrp ipv6 vrid priority**命令指定的路由器优先级
 
-[[当前路由器在备份组中的状态，取值为]{style="font-family:宋体"}[Master]{lang="EN-US"}]{#struct_0_18718_x1832_475220222}[，]{style="font-family:宋体"}[Backup]{lang="EN-US"}[，]{style="font-family:宋体"}[Initialize]{lang="EN-US"}[或]{style="font-family:宋体"}[Inactive]{lang="EN-US"}
+Running Pri
 
-[[Config Pri]{lang="EN-US"}]{#struct_0_18718_x1832_x2119268598}
+路由器的运行优先级，即路由器当前的优先级，配置监视指定Track项后，路由器的优先级会根据Track项的状态改变
 
-[[路由器的配置优先级，即通过]{style="font-family:宋体"}**[vrrp ipv6 vrid priority]{lang="EN-US"}**]{#struct_0_18718_x1832_305861294}[命令指定的路由器优先级]{style="font-family:宋体"}
+Preempt Mode
 
-[[Running Pri]{lang="EN-US"}]{#struct_0_18718_x1832_4535199}
+抢占模式，取值包括：
 
-[[路由器的运行优先级，即路由器当前的优先级，配置监视指定]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_2063742199}[项后，路由器的优先级会根据]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态改变]{style="font-family:宋体"}
+·Yes：路由器工作在抢占模式
 
-[[Preempt Mode]{lang="EN-US"}]{#struct_0_18718_x1832_x1524682663}
+·No：路由器工作在非抢占模式
 
-[[抢占模式，取值包括：]{style="font-family:宋体"}]{#struct_0_18718_x1832_x2119334134}
+Delay Time
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Yes]{lang="EN-US"}]{#struct_0_18718_x1832_1711573199}[：路由器工作在抢占模式]{lang="EN-US" style="font-family:宋体"}
+抢占延迟时间，单位为厘秒
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No]{lang="EN-US"}]{#struct_0_18718_x1832_x1048664393}[：路由器工作在非抢占模式]{style="font-family:宋体"}
+Become Master
 
-[[Delay Time]{lang="EN-US"}]{#struct_0_18718_x1832_x306753219}
+切换到Master状态需要等待的时间，单位为毫秒，只有处于Backup状态时才会显示此信息
 
-[[抢占延迟时间，单位为厘秒]{style="font-family:宋体"}]{#struct_0_18718_x1832_x2118875382}
+Auth Type
 
-[[Become Master]{lang="EN-US"}]{#struct_0_18718_x1832_2068114744}
+认证类型，取值只能是None，表示无认证
 
-[[切换到]{style="font-family:宋体"}[Master]{lang="EN-US"}]{#struct_0_18718_x1832_x771024558}[状态需要等待的时间，单位为毫秒，只有处于]{style="font-family:宋体"}[Backup]{lang="EN-US"}[状态时才会显示此信息]{style="font-family:宋体"}
+Virtual IP
 
-[[Auth Type]{lang="EN-US"}]{#struct_0_18718_x1832_x723987453}
+备份组的虚拟IP地址列表
 
-[[认证类型，取值只能是]{style="font-family:宋体"}[None]{lang="EN-US"}]{#struct_0_18718_x1832_x2118940918}[，表示无认证]{style="font-family:宋体"}
+Member IP List
 
-[[Virtual IP]{lang="EN-US"}]{#struct_0_18718_x1832_x1070587187}
+备份组中成员设备的IP地址列表：
 
-[[备份组的虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_18718_x1832_x2070279398}[地址列表]{style="font-family:宋体"}
+·Local：表示本地设备的IP地址
 
-[[Member IP List]{lang="EN-US"}]{#struct_0_18718_x1832_99462180}
+·Master：表示处于Master状态的成员设备的IP地址
 
-[[备份组中成员设备的]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_18718_x1832_x344204837}[地址列表：]{style="font-family:宋体"}
+·Backup：表示处于Backup状态的成员设备的IP地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Local]{lang="EN-US"}]{#struct_0_18718_x1832_x2119399673}[：表示本地设备的]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+VRRP Track Information
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Master]{lang="EN-US"}]{#struct_0_18718_x1832_1372420805}[：表示处于]{lang="EN-US" style="font-family:宋体"}[Master]{lang="EN-US"}[状态的成员设备的]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+VRRP备份组监视的Track项信息，执行**vrrp ipv6 vrid track**命令后，才会显示此信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Backup]{lang="EN-US"}]{#struct_0_18718_x1832_x1707068285}[：表示处于]{style="font-family:宋体"}[Backup]{lang="EN-US"}[状态的成员设备的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+Track Object
 
-[[VRRP Track Information]{lang="EN-US"}]{#struct_0_18718_x1832_x1517353858}
+监视的Track项，执行**vrrp ipv6 vrid track**命令后，才会显示此信息
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x2119465209}[备份组监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项信息，执行]{style="font-family:宋体"}**[vrrp ipv6 vrid track]{lang="EN-US"}**[命令后，才会显示此信息]{style="font-family:宋体"}
+State
 
-[[Track Object]{lang="EN-US"}]{#struct_0_18718_x1832_x1674279094}
+Track项的状态，Track项的状态包括Negative、Positive和NotReady
 
-[[监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_x1455563527}[项，执行]{style="font-family:宋体"}**[vrrp ipv6 vrid track]{lang="EN-US"}**[命令后，才会显示此信息]{style="font-family:宋体"}
+Pri Reduced
 
-[[State]{lang="EN-US"}]{#struct_0_18718_x1832_x540308477}
+监视的Track项状态为Negative时，优先级降低的数额，执行**vrrp ipv6 vrid track**命令后，才会显示此信息
 
-[[Track]{lang="EN-US"}]{#struct_0_18718_x1832_x2119530745}[项的状态，]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态包括]{style="font-family:宋体"}[Negative]{lang="EN-US"}[、]{style="font-family:宋体"}[Positive]{lang="EN-US"}[和]{style="font-family:宋体"}[NotReady]{lang="EN-US"}
+Switchover
 
-[[Pri Reduced]{lang="EN-US"}]{#struct_0_18718_x1832_x1566305234}
+快速切换，显示此信息时表示当监视的Track项变为Negative状态时，Backup路由器会马上抢占成为Master路由器
 
-[[监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_x925234207}[项状态为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，优先级降低的数额，执行]{style="font-family:宋体"}**[vrrp ipv6 vrid track]{lang="EN-US"}**[命令后，才会显示此信息]{style="font-family:宋体"}
+Forwarder Information: 2 Forwarders 1 Active
 
-[[Switchover]{lang="EN-US"}]{#struct_0_18718_x1832_x1159385526}
+虚拟转发器信息：路由器的虚拟转发器数目为2，处于Active状态的虚拟转发器数目为1
 
-[[快速切换，显示此信息时表示当监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_x2119596281}[项变为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[状态时，]{style="font-family:宋体"}[Backup]{lang="EN-US"}[路由器会马上抢占成为]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器]{style="font-family:宋体"}
+Config Weight
 
-[[Forwarder Information: 2 Forwarders 1 Active]{lang="EN-US"}]{#struct_0_18718_x1832_x739995245}
+虚拟转发器的配置权重，取值为255
 
-[[虚拟转发器信息：路由器的虚拟转发器数目为]{style="font-family:宋体"}[2]{lang="EN-US"}]{#struct_0_18718_x1832_1657576428}[，处于]{style="font-family:宋体"}[Active]{lang="EN-US"}[状态的虚拟转发器数目为]{style="font-family:宋体"}[1]{lang="EN-US"}
+Running Weight
 
-[[Config Weight]{lang="EN-US"}]{#struct_0_18718_x1832_1405315277}
+虚拟转发器的运行权重，即虚拟转发器当前的权重，配置监视指定Track项后，虚拟转发器的权重会根据Track项的状态改变
 
-[[虚拟转发器的配置权重，取值为]{style="font-family:宋体"}[255]{lang="EN-US"}]{#struct_0_18718_x1832_x2119137529}
+Forwarder 01
 
-[[Running Weight]{lang="EN-US"}]{#struct_0_18718_x1832_1169745564}
+虚拟转发器01的信息
 
-[[虚拟转发器的运行权重，即虚拟转发器当前的权重，配置监视指定]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_x1769497992}[项后，虚拟转发器的权重会根据]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态改变]{style="font-family:宋体"}
+State
 
-[[Forwarder 01]{lang="EN-US"}]{#struct_0_18718_x1832_x2119203065}
+虚拟转发器的状态，取值为Active、Listening或Initialize
 
-[[虚拟转发器]{style="font-family:宋体"}[01]{lang="EN-US"}]{#struct_0_18718_x1832_143411650}[的信息]{style="font-family:宋体"}
+Virtual MAC
 
-[[State]{lang="EN-US"}]{#struct_0_18718_x1832_x1629148218}
+虚拟转发器的虚拟MAC地址
 
-[[虚拟转发器的状态，取值为]{style="font-family:宋体"}[Active]{lang="EN-US"}]{#struct_0_18718_x1832_x2119268601}[、]{style="font-family:宋体"}[Listening]{lang="EN-US"}[或]{style="font-family:宋体"}[Initialize]{lang="EN-US"}
+Owner ID
 
-[[Virtual MAC]{lang="EN-US"}]{#struct_0_18718_x1832_x903402466}
+虚拟转发器拥有者的接口实际MAC地址
 
-[[虚拟转发器的虚拟]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_18718_x1832_394004530}[地址]{style="font-family:宋体"}
+Priority
 
-[[Owner ID]{lang="EN-US"}]{#struct_0_18718_x1832_1529666947}
+虚拟转发器的优先级，取值范围为1～255
 
-[[虚拟转发器拥有者的接口实际]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_18718_x1832_x2119334137}[地址]{style="font-family:宋体"}
+Active
 
-[[Priority]{lang="EN-US"}]{#struct_0_18718_x1832_2114857726}
+AVF的接口的链路本地地址，当前转发器为AVF时，显示为local
 
-[[虚拟转发器的优先级，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_18718_x1832_x2070909895}[～]{style="font-family:宋体"}[255]{lang="EN-US"}
+Forwarder Weight Track Configuration
 
-[[Active]{lang="EN-US"}]{#struct_0_18718_x1832_x2118875385}
+虚拟转发器权重监视配置信息。执行**vrrp ipv6 vrid weight** **track**命令后，才会显示此信息
 
-[[AVF]{lang="EN-US"}]{#struct_0_18718_x1832_x1823568025}[的接口的链路本地地址，当前转发器为]{style="font-family:宋体"}[AVF]{lang="EN-US"}[时，显示为]{style="font-family:宋体"}[local]{lang="EN-US"}
+Track Object
 
-[[Forwarder Weight Track Configuration]{lang="EN-US"}]{#struct_0_18718_x1832_x2118940921}
+权重监视的Track项。执行**vrrp ipv6 vrid weight** **track**命令后，才会显示此信息
 
-[[虚拟转发器权重监视配置信息。执行]{style="font-family:宋体"}**[vrrp ipv6 vrid weight]{lang="EN-US"}**[ **track**]{lang="EN-US"}]{#struct_0_18718_x1832_2014329920}[命令后，才会显示此信息]{style="font-family:宋体"}
+State
 
-[[Track Object]{lang="EN-US"}]{#struct_0_18718_x1832_x273602496}
+Track项的状态，Track项的状态包括Negative、Positive和NotReady
 
-[[权重监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_x2119399672}[项。执行]{style="font-family:宋体"}**[vrrp ipv6 vrid weight]{lang="EN-US"}**[ **track**]{lang="EN-US"}[命令后，才会显示此信息]{style="font-family:宋体"}
+Weight Reduced
 
-[[State]{lang="EN-US"}]{#struct_0_18718_x1832_x193663136}
-
-[[Track]{lang="EN-US"}]{#struct_0_18718_x1832_x2079537005}[项的状态，]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态包括]{style="font-family:宋体"}[Negative]{lang="EN-US"}[、]{style="font-family:宋体"}[Positive]{lang="EN-US"}[和]{style="font-family:宋体"}[NotReady]{lang="EN-US"}
-
-[[Weight Reduced]{lang="EN-US"}]{#struct_0_18718_x1832_x2119465208}
-
-[[监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_x108195153}[项状态为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，权重降低的数额。执行]{style="font-family:宋体"}**[vrrp ipv6 vrid weight]{lang="EN-US"}**[ **track**]{lang="EN-US"}[命令后，才会显示此信息]{style="font-family:
-  宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#1947501270 .myid}
-[]{#_Toc404795945}[]{#struct_0_18718_x1832_x574212125}[]{#_Toc211671371}[]{#_Toc128898005}
+监视的Track项状态为Negative时，权重降低的数额。执行**vrrp ipv6 vrid weight** **track**命令后，才会显示此信息
 
 **VRRP \-- IPv6 VRRP配置命令 \-- display vrrp ipv6 statistics**
 
 ------------------------------------------------------------------------
 
-[**[display vrrp ipv6 statistics]{lang="EN-US"}**]{#struct_0_18718_x1832_x848368880}[命令用来显示]{style="font-family:
-宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组的统计信息。]{style="font-family:
-宋体"}
+**[display vrrp ipv6 statistics**]命令用来显示IPv6 VRRP备份组的统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1633503795}
+【命令】
 
-[**[display vrrp ipv6]{lang="EN-US"}***[ ]{lang="EN-US"}***[statistics]{lang="EN-US"}***[ ]{lang="EN-US"}*[\[ **interface** *interface-type interface-number* \[ **vrid** *virtual-router-id* \] \]]{lang="EN-US"}]{#struct_0_18718_x1832_x2119530744}
+**[display vrrp ipv6******statistics**** **interface** *interface-type interface-number*  **vrid** *virtual-router-id*  ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1162578121}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_637251151}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1333419487}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_1588110351}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_18718_x1832_569866069}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x1146206105}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_18718_x1832_333531550}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x2119596280}
+【参数】
 
-[**[interfac]{lang="EN-US"}[e]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_18718_x1832_1988888110}[：显示指定接口的]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组的统计信息。其中，]{style="font-family:宋体"}*[interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}[为接口类型和接口编号。]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：显示指定接口的IPv6 VRRP备份组的统计信息。其中，*interface-type* *interface-number*为接口类型和接口编号。
 
-[**[vrid]{lang="EN-US"}**[ *virtual-router-id*]{lang="EN-US"}]{#struct_0_18718_x1832_1400623505}[：显示指定备份组号的]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组统计信息，其中，]{style="font-family:宋体"}*[virtual-router-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vrid** *virtual-router-id*]：显示指定备份组号的IPv6 VRRP备份组统计信息，其中，*virtual-router-id*为IPv6 VRRP备份组号，取值范围为1～255。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1990480115}
+【使用指导】
 
-[[如果不输入接口名和备份组号，则显示该路由器上所有]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x1301444792}[备份组的统计信息；如果只输入接口名，不输入备份组号，则显示该接口上的所有]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组的统计信息；如果同时输入接口名和备份组号，则显示该接口上指定]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组的统计信息。]{style="font-family:宋体"}
+如果不输入接口名和备份组号，则显示该路由器上所有IPv6 VRRP备份组的统计信息；如果只输入接口名，不输入备份组号，则显示该接口上的所有IPv6 VRRP备份组的统计信息；如果同时输入接口名和备份组号，则显示该接口上指定IPv6 VRRP备份组的统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1228242598}
+【举例】
 
-[[\# VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x1135403697}[工作在标准协议模式时，显示所有]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组的统计信息。]{style="font-family:宋体"}
+\# VRRP工作在标准协议模式时，显示所有IPv6 VRRP备份组的统计信息。
 
-[[\<Sysname\> display vrrp ipv6 statistics]{lang="EN-US"}]{#struct_0_18718_x1832_x2119137528}
+\<Sysname\> display vrrp ipv6 statistics
 
-[ Interface               : GigabitEthernet1/0/1]{lang="EN-US"}
+ Interface               : GigabitEthernet1/0/1
 
-[ VRID                    : 1]{lang="EN-US"}
+ VRID                    : 1
 
-[ CheckSum Errors         : 0          Version Errors                : 0]{lang="EN-US"}
+ CheckSum Errors         : 0          Version Errors                : 0
 
-[ Invalid Pkts Rcvd       : 0          Unexpected Pkts Rcvd          : 0]{lang="EN-US"}
+ Invalid Pkts Rcvd       : 0          Unexpected Pkts Rcvd          : 0
 
-[ Hop Limit Errors        : 0          Advertisement Interval Errors : 0]{lang="EN-US"}
+ Hop Limit Errors        : 0          Advertisement Interval Errors : 0
 
-[ Invalid Auth Type       : 0          Auth Failures                 : 0]{lang="EN-US"}
+ Invalid Auth Type       : 0          Auth Failures                 : 0
 
-[ Packet Length Errors    : 0          Auth Type Mismatch            : 0]{lang="EN-US"}
+ Packet Length Errors    : 0          Auth Type Mismatch            : 0
 
-[ Become Master           : 1          Address List Errors           : 0]{lang="EN-US"}
+ Become Master           : 1          Address List Errors           : 0
 
-[ Adver Rcvd              : 0          Priority Zero Pkts Rcvd       : 0]{lang="EN-US"}
+ Adver Rcvd              : 0          Priority Zero Pkts Rcvd       : 0
 
-[ Adver Sent              : 425        Priority Zero Pkts Sent       : 0]{lang="EN-US"}
+ Adver Sent              : 425        Priority Zero Pkts Sent       : 0
 
-[ ]{lang="EN-US"}
+ Global statistics
 
-[ Global statistics]{lang="EN-US"}
+ CheckSum Errors         : 0
 
-[ CheckSum Errors         : 0]{lang="EN-US"}
+ Version Errors          : 0
 
-[ Version Errors          : 0]{lang="EN-US"}
+ VRID Errors             : 0
 
-[ VRID Errors             : 0]{lang="EN-US"}
+\# VRRP工作在负载均衡模式时，显示全部IPv6 VRRP备份组的统计信息。
 
-[[\# VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x396338377}[工作在负载均衡模式时，显示全部]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组的统计信息。]{style="font-family:宋体"}
+\<Sysname\> display vrrp ipv6 statistics
 
-[[\<Sysname\> display vrrp ipv6 statistics]{lang="EN-US"}]{#struct_0_18718_x1832_x2119203064}
+ Interface               : GigabitEthernet1/0/1
 
-[ Interface               : GigabitEthernet1/0/1]{lang="EN-US"}
+ VRID                    : 1
 
-[ VRID                    : 1]{lang="EN-US"}
+ CheckSum Errors         : 0          Version Errors                : 0
 
-[ CheckSum Errors         : 0          Version Errors                : 0]{lang="EN-US"}
+ Invalid Pkts Rcvd       : 0          Unexpected Pkts Rcvd          : 0
 
-[ Invalid Pkts Rcvd       : 0          Unexpected Pkts Rcvd          : 0]{lang="EN-US"}
+ Hop Limit Errors        : 0          Advertisement Interval Errors : 0
 
-[ Hop Limit Errors        : 0          Advertisement Interval Errors : 0]{lang="EN-US"}
+ Invalid Auth Type       : 0          Auth Failures                 : 0
 
-[ Invalid Auth Type       : 0          Auth Failures                 : 0]{lang="EN-US"}
+ Packet Length Errors    : 0          Auth Type Mismatch            : 0
 
-[ Packet Length Errors    : 0          Auth Type Mismatch            : 0]{lang="EN-US"}
+ Become Master           : 39         Address List Errors           : 0
 
-[ Become Master           : 39         Address List Errors           : 0]{lang="EN-US"}
+ Become AVF              : 13         Packet Option Errors          : 0
 
-[ Become AVF              : 13         Packet Option Errors          : 0]{lang="EN-US"}
+ Adver Rcvd              : 2562       Priority Zero Pkts Rcvd       : 1
 
-[ Adver Rcvd              : 2562       Priority Zero Pkts Rcvd       : 1 ]{lang="EN-US"}
+ Adver Sent              : 16373      Priority Zero Pkts Sent       : 49
 
-[ Adver Sent              : 16373      Priority Zero Pkts Sent       : 49]{lang="EN-US"}
+ Request Rcvd            : 2          Reply Rcvd                    : 10
 
-[ Request Rcvd            : 2          Reply Rcvd                    : 10]{lang="EN-US"}
+ Request Sent            : 12         Reply Sent                    : 2
 
-[ Request Sent            : 12         Reply Sent                    : 2 ]{lang="EN-US"}
+ Release Rcvd            : 0          VF Priority Zero Pkts Rcvd    : 1
 
-[ Release Rcvd            : 0          VF Priority Zero Pkts Rcvd    : 1 ]{lang="EN-US"}
+ Release Sent            : 0          VF Priority Zero Pkts Sent    : 11
 
-[ Release Sent            : 0          VF Priority Zero Pkts Sent    : 11]{lang="EN-US"}
+ Redirect Timer Expires  : 1          Time-out Timer Expires        : 0
 
-[ Redirect Timer Expires  : 1          Time-out Timer Expires        : 0]{lang="EN-US"}
+ Global statistics
 
-[ ]{lang="EN-US"}
+ CheckSum Errors         : 0
 
-[ Global statistics]{lang="EN-US"}
+ Version Errors          : 0
 
-[ CheckSum Errors         : 0]{lang="EN-US"}
+ VRID Errors             : 0
 
-[ Version Errors          : 0]{lang="EN-US"}
+表1-11 display vrrp ipv6 statistics显示信息描述表（标准协议模式）
 
-[ VRID Errors             : 0]{lang="EN-US"}
+字段
 
-[[表1-11 ]{lang="EN-US"}[display vrrp ipv6 statistics]{lang="EN-US"}]{#struct_0_18718_x1832_1709495591}[显示信息描述表（标准协议模式）]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x1772828417}[[字段]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1330943371}
-:::
+Interface
 
-[[描述]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1300559440}
+备份组所在接口
 
-[[Interface]{lang="EN-US"}]{#struct_0_18718_x1832_x2119268600}
+VRID
 
-[[备份组所在接口]{style="font-family:宋体"}]{#struct_0_18718_x1832_662681475}
+备份组号
 
-[[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_706430201}
+CheckSum Errors
 
-[[备份组号]{style="font-family:宋体"}]{#struct_0_18718_x1832_302785308}
+校验和错误的报文数
 
-[[CheckSum Errors]{lang="EN-US"}]{#struct_0_18718_x1832_346654655}
+Version Errors
 
-[[校验和错误的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_1427703630}
+版本号错误的报文数
 
-[[Version Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x2119334136}
+Invalid Pkts Rcvd
 
-[[版本号错误的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_548773785}
+接收到报文类型错误的报文数
 
-[[Invalid Pkts Rcvd]{lang="EN-US"}]{#struct_0_18718_x1832_136430819}
+Unexpected Pkts Rcvd
 
-[[接收到报文类型错误的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_769896208}
+接收到未期望的报文数
 
-[[Unexpected Pkts Rcvd]{lang="EN-US"}]{#struct_0_18718_x1832_x1161996591}
+Advertisement Interval Errors
 
-[[接收到未期望的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x2118875384}
+VRRP通告报文发送时间间隔错误的报文数
 
-[[Advertisement Interval Errors]{lang="EN-US"}]{#struct_0_18718_x1832_905315330}
+Hop Limit Errors
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x1081678551}[通告报文发送时间间隔错误的报文数]{style="font-family:宋体"}
+跳数限制错误的报文数
 
-[[Hop Limit Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x1593552551}
+Auth Failures
 
-[[跳数限制错误的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x2105127300}
+认证失败的报文数
 
-[[Auth Failures]{lang="EN-US"}]{#struct_0_18718_x1832_x2118940920}
+Invalid Auth Type
 
-[[认证失败的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x714553435}
+认证类型无效的报文数
 
-[[Invalid Auth Type]{lang="EN-US"}]{#struct_0_18718_x1832_1810789549}
+Auth Type Mismatch
 
-[[认证类型无效的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_472003845}
+认证类型不匹配的报文数
 
-[[Auth Type Mismatch]{lang="EN-US"}]{#struct_0_18718_x1832_x1883847761}
+Packet Length Errors
 
-[[认证类型不匹配的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_1514812626}
+VRRP报文长度错误的报文数
 
-[[Packet Length Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x2119399675}
+Address List Errors
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x2115977437}[报文长度错误的报文数]{style="font-family:宋体"}
+备份组虚拟IP地址列表错误的报文数
 
-[[Address List Errors]{lang="EN-US"}]{#struct_0_18718_x1832_1038198161}
+Become Master
 
-[[备份组虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_18718_x1832_258259414}[地址列表错误的报文数]{style="font-family:宋体"}
+成为Master路由器的次数
 
-[[Become Master]{lang="EN-US"}]{#struct_0_18718_x1832_x2119465211}
+Priority Zero Pkts Rcvd
 
-[[成为]{style="font-family:宋体"}[Master]{lang="EN-US"}]{#struct_0_18718_x1832_x1318114270}[路由器的次数]{style="font-family:宋体"}
+收到的优先级为0的VRRP通告报文的数目
 
-[[Priority Zero Pkts Rcvd]{lang="EN-US"}]{#struct_0_18718_x1832_x1698704081}
+Adver Rcvd
 
-[[收到的优先级为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_18718_x1832_x1365158242}[的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文的数目]{style="font-family:宋体"}
+收到的VRRP通告报文的数目
 
-[[Adver Rcvd]{lang="EN-US"}]{#struct_0_18718_x1832_x2119530747}
+Priority Zero Pkts Sent
 
-[[收到的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_1565862648}[通告报文的数目]{style="font-family:宋体"}
+发送的优先级为0的VRRP通告报文的数目
 
-[[Priority Zero Pkts Sent]{lang="EN-US"}]{#struct_0_18718_x1832_1754151933}
+Adver Sent
 
-[[发送的优先级为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_18718_x1832_x1841254313}[的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文的数目]{style="font-family:宋体"}
+发送的VRRP通告报文的数目
 
-[[Adver Sent]{lang="EN-US"}]{#struct_0_18718_x1832_x2119596283}
+Global statistics
 
-[[发送的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_422804169}[通告报文的数目]{style="font-family:宋体"}
+所有备份组的全局统计信息
 
-[[Global statistics]{lang="EN-US"}]{#struct_0_18718_x1832_2000982913}
+CheckSum Errors
 
-[[所有备份组的全局统计信息]{style="font-family:宋体"}]{#struct_0_18718_x1832_x916443927}
+校验和错误的报文总数
 
-[[CheckSum Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x2119137531}
+Version Errors
 
-[[校验和错误的报文总数]{style="font-family:宋体"}]{#struct_0_18718_x1832_813580740}
+版本号错误的报文总数
 
-[[Version Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x1544171045}
+VRID Errors
 
-[[版本号错误的报文总数]{style="font-family:宋体"}]{#struct_0_18718_x1832_2034831694}
+备份组号错误的报文总数
 
-[[VRID Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x2119203067}
+表1-12 display vrrp ipv6 statistics显示信息描述表（负载均衡模式）
 
-[[备份组号错误的报文总数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1019387764}
+字段
 
-[ ]{lang="EN-US"}
+描述
 
-[[表1-12 ]{lang="EN-US"}[display vrrp ipv6 statistics]{lang="EN-US"}]{#struct_0_18718_x1832_961285215}[显示信息描述表（负载均衡模式）]{style="font-family:黑体"}
+Interface
 
-[]{#table_struct_0_x1776255011}[[字段]{style="font-family:黑体"}]{#struct_0_18718_x1832_1781611139}
+备份组所在接口
 
-[[描述]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1755845687}
+VRID
 
-[[Interface]{lang="EN-US"}]{#struct_0_18718_x1832_x2119268603}
+备份组号
 
-[[备份组所在接口]{style="font-family:宋体"}]{#struct_0_18718_x1832_259396948}
+CheckSum Errors
 
-[[VRID]{lang="EN-US"}]{#struct_0_18718_x1832_1558655335}
+校验和错误的报文数
 
-[[备份组号]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1995645498}
+Version Errors
 
-[[CheckSum Errors]{lang="EN-US"}]{#struct_0_18718_x1832_500848415}
+版本号错误的报文数
 
-[[校验和错误的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_1204807129}
+Invalid Pkts Rcvd
 
-[[Version Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x2119334139}
+接收到报文类型错误的报文数
 
-[[版本号错误的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_1308288672}
+Unexpected Pkts Rcvd
 
-[[Invalid Pkts Rcvd]{lang="EN-US"}]{#struct_0_18718_x1832_x304494331}
+接收到未期望的报文数
 
-[[接收到报文类型错误的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x397098033}
+Advertisement Interval Errors
 
-[[Unexpected Pkts Rcvd]{lang="EN-US"}]{#struct_0_18718_x1832_x125403030}
+VRRP通告报文发送时间间隔错误的报文数
 
-[[接收到未期望的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x2118875387}
+Hop Limit Errors
 
-[[Advertisement Interval Errors]{lang="EN-US"}]{#struct_0_18718_x1832_1308599857}
+跳数限制错误的报文数
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_800930999}[通告报文发送时间间隔错误的报文数]{style="font-family:宋体"}
+Auth Failures
 
-[[Hop Limit Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x382314674}
+认证错误的报文数
 
-[[跳数限制错误的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x434301188}
+Invalid Auth Type
 
-[[Auth Failures]{lang="EN-US"}]{#struct_0_18718_x1832_x2118940923}
+认证类型无效的报文数
 
-[[认证错误的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_851530506}
+Auth Type Mismatch
 
-[[Invalid Auth Type]{lang="EN-US"}]{#struct_0_18718_x1832_1176403169}
+认证类型不匹配的报文数
 
-[[认证类型无效的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_1277208860}
+Packet Length Errors
 
-[[Auth Type Mismatch]{lang="EN-US"}]{#struct_0_18718_x1832_x2119399674}
+VRRP报文长度错误的报文数
 
-[[认证类型不匹配的报文数]{style="font-family:宋体"}]{#struct_0_18718_x1832_612905918}
+Address List Errors
 
-[[Packet Length Errors]{lang="EN-US"}]{#struct_0_18718_x1832_1880371158}
+虚拟IP地址列表错误的报文数
 
-[[VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x1023218643}[报文长度错误的报文数]{style="font-family:宋体"}
+Become Master
 
-[[Address List Errors]{lang="EN-US"}]{#struct_0_18718_x1832_920803416}
+成为Master路由器的次数
 
-[[虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_18718_x1832_x2119465210}[地址列表错误的报文数]{style="font-family:宋体"}
+Redirect Timer Expires
 
-[[Become Master]{lang="EN-US"}]{#struct_0_18718_x1832_247969671}
+Redirect Timer超时的次数
 
-[[成为]{style="font-family:宋体"}[Master]{lang="EN-US"}]{#struct_0_18718_x1832_x1734351765}[路由器的次数]{style="font-family:宋体"}
+Become AVF
 
-[[Redirect Timer Expires]{lang="EN-US"}]{#struct_0_18718_x1832_x332215553}
+成为AVF的次数
 
-[[Redirect Timer]{lang="EN-US"}]{#struct_0_18718_x1832_x2119530746}[超时的次数]{style="font-family:宋体"}
+Time-out Timer Expires
 
-[[Become AVF]{lang="EN-US"}]{#struct_0_18718_x1832_x221293}
+Time-out Timer超时的次数
 
-[[成为]{style="font-family:宋体"}[AVF]{lang="EN-US"}]{#struct_0_18718_x1832_x2090565526}[的次数]{style="font-family:宋体"}
+Adver Rcvd
 
-[[Time-out Timer Expires]{lang="EN-US"}]{#struct_0_18718_x1832_x26349058}
+收到的Advertisement报文的数目
 
-[[Time-out Timer]{lang="EN-US"}]{#struct_0_18718_x1832_x2119596282}[超时的次数]{style="font-family:宋体"}
+Request Rcvd
 
-[[Adver Rcvd]{lang="EN-US"}]{#struct_0_18718_x1832_x1143279772}
+收到的Request报文的数目
 
-[[收到的]{style="font-family:宋体"}[Advertisement]{lang="EN-US"}]{#struct_0_18718_x1832_x1613894567}[报文的数目]{style="font-family:宋体"}
+Adver Sent
 
-[[Request Rcvd]{lang="EN-US"}]{#struct_0_18718_x1832_x831437663}
+发送的Advertisement报文的数目
 
-[[收到的]{style="font-family:宋体"}[Request]{lang="EN-US"}]{#struct_0_18718_x1832_x2119137530}[报文的数目]{style="font-family:宋体"}
+Request Sent
 
-[[Adver Sent]{lang="EN-US"}]{#struct_0_18718_x1832_x752503201}
+发送的Request报文的数目
 
-[[发送的]{style="font-family:宋体"}[Advertisement]{lang="EN-US"}]{#struct_0_18718_x1832_609326232}[报文的数目]{style="font-family:宋体"}
+Reply Rcvd
 
-[[Request Sent]{lang="EN-US"}]{#struct_0_18718_x1832_464605614}
+收到的Reply报文的数目
 
-[[发送的]{style="font-family:宋体"}[Request]{lang="EN-US"}]{#struct_0_18718_x1832_x2119203066}[报文的数目]{style="font-family:宋体"}
+Release Rcvd
 
-[[Reply Rcvd]{lang="EN-US"}]{#struct_0_18718_x1832_546696177}
+收到的Release报文的数目
 
-[[收到的]{style="font-family:宋体"}[Reply]{lang="EN-US"}]{#struct_0_18718_x1832_1046197847}[报文的数目]{style="font-family:宋体"}
+Reply Sent
 
-[[Release Rcvd]{lang="EN-US"}]{#struct_0_18718_x1832_1679948980}
+发送的Reply报文的数目
 
-[[收到的]{style="font-family:宋体"}[Release]{lang="EN-US"}]{#struct_0_18718_x1832_x2119268602}[报文的数目]{style="font-family:宋体"}
+Release Sent
 
-[[Reply Sent]{lang="EN-US"}]{#struct_0_18718_x1832_1825480889}
+发送的Release报文的数目
 
-[[发送的]{style="font-family:宋体"}[Reply]{lang="EN-US"}]{#struct_0_18718_x1832_x525388956}[报文的数目]{style="font-family:宋体"}
+Priority Zero Pkts Rcvd
 
-[[Release Sent]{lang="EN-US"}]{#struct_0_18718_x1832_755738089}
+收到的路由器优先级为0的Advertisement报文的数目
 
-[[发送的]{style="font-family:宋体"}[Release]{lang="EN-US"}]{#struct_0_18718_x1832_x2119334138}[报文的数目]{style="font-family:宋体"}
+VF Priority Zero Pkts Rcvd
 
-[[Priority Zero Pkts Rcvd]{lang="EN-US"}]{#struct_0_18718_x1832_x257795269}
+收到的虚拟转发器优先级为0的Advertisement报文的数目
 
-[[收到的路由器优先级为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_18718_x1832_477866915}[的]{style="font-family:宋体"}[Advertisement]{lang="EN-US"}[报文的数目]{style="font-family:宋体"}
+Priority Zero Pkts Sent
 
-[[VF Priority Zero Pkts Rcvd]{lang="PT-BR"}]{#struct_0_18718_x1832_x2118875386}
+发送的路由器优先级为0的Advertisement报文的数目
 
-[[收到的虚拟转发器优先级为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_18718_x1832_x257484084}[的]{style="font-family:宋体"}[Advertisement]{lang="EN-US"}[报文的数目]{style="font-family:宋体"}
+VF Priority Zero Pkts Sent
 
-[[Priority Zero Pkts Sent]{lang="EN-US"}]{#struct_0_18718_x1832_x704176091}
+发送的虚拟转发器优先级为0的Advertisement报文的数目
 
-[[发送的路由器优先级为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_18718_x1832_497605131}[的]{style="font-family:宋体"}[Advertisement]{lang="EN-US"}[报文的数目]{style="font-family:宋体"}
+Packet Option Errors
 
-[[VF Priority Zero Pkts Sent]{lang="EN-US"}]{#struct_0_18718_x1832_x2118940922}
+报文状态选项错误的次数
 
-[[发送的虚拟转发器优先级为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_18718_x1832_x1877352849}[的]{style="font-family:宋体"}[Advertisement]{lang="EN-US"}[报文的数目]{style="font-family:宋体"}
+Global statistics
 
-[[Packet Option Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x1231736827}
+所有备份组的全局统计信息
 
-[[报文状态选项错误的次数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x197085370}
+CheckSum Errors
 
-[[Global statistics]{lang="EN-US"}]{#struct_0_18718_x1832_1548714767}
+校验和错误的报文总数
 
-[[所有备份组的全局统计信息]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1344442110}
+Version Errors
 
-[[CheckSum Errors]{lang="EN-US"}]{#struct_0_18718_x1832_290756087}
+版本号错误的报文总数
 
-[[校验和错误的报文总数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x197150906}
+VRID Errors
 
-[[Version Errors]{lang="EN-US"}]{#struct_0_18718_x1832_x429120094}
+备份组号错误的报文总数
 
-[[版本号错误的报文总数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x197216442}
+【相关命令】
 
-[[VRID Errors]{lang="EN-US"}]{#struct_0_18718_x1832_787222197}
-
-[[备份组号错误的报文总数]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1245993303}
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x752753107}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset vrrp ipv6 statistics]{lang="EN-US"}**]{#struct_0_18718_x1832_x197281978}
-
-::: {#-964681241 .myid}
-[]{#_Toc404795946}[]{#struct_0_18718_x1832_1135325409}[]{#_Toc211671372}[]{#_Toc128898006}[]{#_Toc211761214}[]{#_Toc211761284}
+·**reset vrrp ipv6 statistics**
 
 **VRRP \-- IPv6 VRRP配置命令 \-- reset vrrp ipv6 statistics**
 
 ------------------------------------------------------------------------
 
-[**[reset vrrp ipv6 statistics]{lang="EN-US"}**]{#struct_0_18718_x1832_1595002423}[命令用来清除]{style="font-family:
-宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组的统计信息。]{style="font-family:
-宋体"}
+**[reset vrrp ipv6 statistics**]命令用来清除IPv6 VRRP备份组的统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x556109960}
+【命令】
 
-[**[reset vrrp ipv6 statistics ]{lang="EN-US"}**[\[ **interface** *interface-type interface-number* \[ **vrid** *virtual-router-id* \] \]]{lang="EN-US"}]{#struct_0_18718_x1832_x1061412288}
+**[reset vrrp ipv6 statistics ** **interface** *interface-type interface-number*  **vrid** *virtual-router-id*  ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1582360124}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_x162302062}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x171767265}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x196823226}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_401131738}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1980865370}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_18718_x1832_44409225}[：清除指定接口的]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组统计信息。其中，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[为接口类型和接口编号。]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：清除指定接口的IPv6 VRRP备份组统计信息。其中，*interface-type interface-number*为接口类型和接口编号。
 
-[**[vrid]{lang="EN-US"}**[ *virtual-router-id*]{lang="EN-US"}]{#struct_0_18718_x1832_x1110160841}[：清除指定备份组的]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[统计信息。其中，]{style="font-family:宋体"}*[virtual-router-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vrid** *virtual-router-id*]：清除指定备份组的IPv6 VRRP统计信息。其中，*virtual-router-id*为IPv6 VRRP备份组号，取值范围为1～255。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x2051986733}
+【使用指导】
 
-[[在清除]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x1669931549}[备份组统计信息时，如果不输入接口名和备份组号，则清除该路由器上所有]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组的统计信息；如果只输入接口名，不输入备份组号，则清除该接口上所有]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组的统计信息；如果同时输入接口名和备份组号，则清除该接口上指定]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组的统计信息。]{style="font-family:宋体"}
+在清除IPv6 VRRP备份组统计信息时，如果不输入接口名和备份组号，则清除该路由器上所有IPv6 VRRP备份组的统计信息；如果只输入接口名，不输入备份组号，则清除该接口上所有IPv6 VRRP备份组的统计信息；如果同时输入接口名和备份组号，则清除该接口上指定IPv6 VRRP备份组的统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_91907312}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x207235780}[清除所有接口上所有备份组的]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[统计信息。]{style="font-family:宋体"}
+\# 清除所有接口上所有备份组的IPv6 VRRP统计信息。
 
-[[\<Sysname\> reset vrrp ipv6 statistics]{lang="EN-US"}]{#struct_0_18718_x1832_x196888762}
+\<Sysname\> reset vrrp ipv6 statistics
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1571651121}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display vrrp ipv6]{lang="EN-US"}***[ ]{lang="EN-US"}***[statistics]{lang="EN-US"}**]{#struct_0_18718_x1832_x357454809}
-:::
-
-::: {#-45803940 .myid}
-[]{#_Toc404795947}[]{#struct_0_18718_x1832_x38541940}
+·**display vrrp ipv6******statistics**
 
 **VRRP \-- IPv6 VRRP配置命令 \-- vrrp ipv6 dot1q**
 
 ------------------------------------------------------------------------
 
-[**[vrrp ipv6 dot1q]{lang="EN-US"}**]{#struct_0_18718_x1832_1812862125}[命令用来配置]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[的控制]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vrrp ipv6 dot1q**]命令用来配置IPv6 VRRP的控制VLAN。
 
-[**[undo vrrp ipv6 dot1q]{lang="EN-US"}**]{#struct_0_18718_x1832_x38476404}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo vrrp ipv6 dot1q**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_223614837}
+【命令】
 
-[**[vrrp ipv6 dot1q vid ]{lang="NO-BOK"}***[vlan-id]{lang="EN-US"}*]{#struct_0_18718_x1832_x92754678}**[ ]{lang="EN-US"}**[\[ **secondary-dot1q** *secondary-*]{lang="NO-BOK"}*[vlan-id ]{lang="EN-US"}*[\]]{lang="EN-US"}
+**[vrrp ipv6 dot1q vid ***vlan-id*]**** **secondary-dot1q** *secondary-**vlan-id *
 
-[**[undo vrrp ipv6 dot1q]{lang="EN-US"}**]{#struct_0_18718_x1832_686233611}
+**[undo vrrp ipv6 dot1q**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18718_x1832_903868741}
+【缺省情况】
 
-[[没有指定]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_1495782575}[的控制]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，即]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[终结支持广播]{style="font-family:宋体"}[/]{lang="EN-US"}[组播功能后，]{style="font-family:宋体"}[Master]{lang="EN-US"}[在所有模糊终结的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内发送]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[通告报文。]{style="font-family:宋体"}
+没有指定IPv6 VRRP的控制VLAN，即VLAN终结支持广播/组播功能后，Master在所有模糊终结的VLAN内发送IPv6 VRRP通告报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1586130717}
+【视图】
 
-[[三层以太网子接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_18718_x1832_1505064785}[三层聚合子接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层]{style="font-family:宋体"}[RPR]{lang="EN-US"}[逻辑接口视图]{style="font-family:宋体"}
+三层以太网子接口视图/三层聚合子接口视图/三层RPR逻辑接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1425602125}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x969859886}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x38410868}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x2080202873}
+【参数】
 
-[**[vid ]{lang="EN-US"}***[vlan-id]{lang="EN-US"}*]{#struct_0_18718_x1832_1689391682}[：指定]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[的控制]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[（外层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[）的编号，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vid ***vlan-id*]：指定IPv6 VRRP的控制VLAN（外层VLAN）的编号，*vlan-id*的取值范围为1～4094。
 
-[**[secondary-dot1q ]{lang="EN-US"}***[secondary-]{lang="EN-US"}[vlan-id]{lang="EN-US"}*]{#struct_0_18718_x1832_1800203303}[：指定内层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，]{style="font-family:宋体"}*[secondary-]{lang="EN-US"}[vlan-id]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[secondary-dot1q ***secondary-vlan-id*]：指定内层VLAN的编号，*secondary-vlan-id*的取值范围为1～4094。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x822759535}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[重复执行本命令，新的配置将覆盖原有配置。]{style="font-family:宋体"}]{#struct_0_18718_x1832_297605873}
+·重复执行本命令，新的配置将覆盖原有配置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[只有在三层以太网子接口、三层聚合子接口和三层]{style="font-family:宋体"}]{#struct_0_18718_x1832_x172653647}[RPR]{lang="EN-US"}[逻辑接口视图下执行本命令才会生效；在其他接口视图下也可以执行本命令，但不会生效。]{style="font-family:宋体"}
+·只有在三层以太网子接口、三层聚合子接口和三层RPR逻辑接口视图下执行本命令才会生效；在其他接口视图下也可以执行本命令，但不会生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1994098848}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x824484829}[配置]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[的控制]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[（外层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[）]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[2]{lang="EN-US"}[，内层]{style="font-family:
-宋体"}[VLAN ID]{lang="EN-US"}[为]{style="font-family:宋体"}[100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置IPv6 VRRP的控制VLAN（外层VLAN）ID为2，内层VLAN ID为100。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_x38345332}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1.2]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1.2
 
-[\[Sysname-GigabitEthernet1/0/1.2\] vrrp ipv6 dot1q vid 2 secondary-dot1q 100]{lang="EN-US"}
-:::
-
-::: {#1196483640 .myid}
-[]{#_Toc404795948}[]{#struct_0_18718_x1832_634134557}[]{#_Toc337719114}
+Sysname-GigabitEthernet1/0/1.2 vrrp ipv6 dot1q vid 2 secondary-dot1q 100
 
 **VRRP \-- IPv6 VRRP配置命令 \-- vrrp ipv6 dscp**
 
 ------------------------------------------------------------------------
 
-[**[vrrp ipv6 dscp]{lang="EN-US"}**]{#struct_0_18718_x1832_921815010}[命令用来配置]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[发送报文的]{style="font-family:宋体"}[DSCP]{lang="EN-US"}[优先级。]{style="font-family:宋体"}
+**[vrrp ipv6 dscp**]命令用来配置IPv6 VRRP发送报文的DSCP优先级。
 
-[**[undo vrrp ipv6 dscp]{lang="EN-US"}**]{#struct_0_18718_x1832_51258126}[命令用来恢复缺省值。]{style="font-family:宋体"}
+**[undo vrrp ipv6 dscp**]命令用来恢复缺省值。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1902244659}
+【命令】
 
-[**[vrrp ipv6 dscp ]{lang="EN-US"}***[dscp-value]{lang="EN-US"}*]{#struct_0_18718_x1832_x294925523}
+**[vrrp ipv6 dscp ***dscp-value*]
 
-[**[undo vrrp ipv6 dscp]{lang="EN-US"}**]{#struct_0_18718_x1832_2114749529}
+**[undo vrrp ipv6 dscp**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1806903492}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_x196954298}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1990199041}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_512901572}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x1175141107}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1268625458}
+【参数】
 
-[*[dscp-value]{lang="EN-US"}*]{#struct_0_18718_x1832_x135095668}[：]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[报文的]{style="font-family:宋体"}[DSCP]{lang="EN-US"}[优先级，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[56]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[dscp-value*]：IPv6 VRRP报文的DSCP优先级，取值范围为0～63，缺省值为56。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1950325414}
+【使用指导】
 
-[[DSCP]{lang="EN-US" style="font-size:10.0pt;color:black"}]{#struct_0_18718_x1832_x1040589266}[用来体现报文自身的优先等级，决定报文传输的优先程度。配置的]{style="font-family:
-宋体"}[DSCP]{lang="EN-US"}[优先级的取值越大，报文的优先级越高。通过本命令可以指定发送的]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[报文中携带的]{style="font-family:宋体"}[DSCP]{lang="EN-US"}[优先级的取值。]{style="font-family:宋体"}
+DSCP用来体现报文自身的优先等级，决定报文传输的优先程度。配置的DSCP优先级的取值越大，报文的优先级越高。通过本命令可以指定发送的IPv6 VRRP报文中携带的DSCP优先级的取值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1257376685}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x197019834}[配置]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[报文的]{style="font-family:宋体"}[DSCP]{lang="EN-US"}[优先级为]{style="font-family:宋体"}[30]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置IPv6 VRRP报文的DSCP优先级为30。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_x1166537777}
+\<Sysname\> system-view
 
-[\[Sysname\] vrrp ipv6 dscp 30]{lang="EN-US"}
-:::
-
-::::: {#1986854308 .myid}
-[]{#_Toc211671373}[]{#_Toc128898007}[]{#_Toc404795949}[]{#struct_0_18718_x1832_x1533561280}
+Sysname vrrp ipv6 dscp 30
 
 **VRRP \-- IPv6 VRRP配置命令 \-- vrrp ipv6 mode**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VRRP命令.files/image002.png){#图片 7 width="62" height="27"}]{lang="EN-US"}]{#struct_0_18718_x1832_x437873575}
-:::
+![说明](VRRP命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_18718_x1832_1406228399}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[vrrp ipv6 mode**]命令用来配置IPv6 VRRP的工作模式。
 
-[**[vrrp ipv6 mode]{lang="EN-US"}**]{#struct_0_18718_x1832_x1249195781}[命令用来配置]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[的工作模式。]{style="font-family:宋体"}
+**[undo vrrp ipv6 mode**]命令用来恢复缺省情况。
 
-[**[undo vrrp ipv6 mode]{lang="EN-US"}**]{#struct_0_18718_x1832_1592851831}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1170742516}
+**[vrrp ipv6 mode load-balance**]
 
-[**[vrrp ipv6 mode load-balance]{lang="EN-US"}**]{#struct_0_18718_x1832_x167959550}
+**[undo vrrp ipv6 mode**]
 
-[**[undo vrrp ipv6 mode]{lang="EN-US"}**]{#struct_0_18718_x1832_x196561082}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1173205363}
+IPv6 VRRP工作在标准协议模式。
 
-[[IPv6 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_1924174620}[工作在标准协议模式。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1949998765}
+系统视图
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_1567387804}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1167490005}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_1130765496}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x1261711956}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x176223305}
+**[load-balance**]：指定IPv6 VRRP工作在负载均衡模式。
 
-[**[load-balance]{lang="EN-US"}**]{#struct_0_18718_x1832_x196626618}[：指定]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[工作在负载均衡模式。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1924927388}
+IPv6 VRRP工作在负载均衡模式时，要求备份组虚拟IPv6地址和接口的IPv6地址不能相同。否则，负载均衡功能将无法正常工作。
 
-[[IPv6 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x774259162}[工作在负载均衡模式时，要求备份组虚拟]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址和接口的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址不能相同。否则，负载均衡功能将无法正常工作。]{style="font-family:宋体"}
+创建IPv6 VRRP备份组后，仍然可以修改工作模式。修改工作模式后，路由器上所有的IPv6 VRRP备份组都会工作在该模式。
 
-[[创建]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x950409117}[备份组后，仍然可以修改工作模式。修改工作模式后，路由器上所有的]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组都会工作在该模式。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_445719237}
+\# 配置IPv6 VRRP工作在负载均衡模式。
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_1888626292}[配置]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[工作在负载均衡模式。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_386949229}
+Sysname vrrp ipv6 mode load-balance
 
-[\[Sysname\] vrrp ipv6 mode load-balance]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1438763781}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **vrrp ipv6**]{lang="EN-US"}]{#struct_0_18718_x1832_1319245827}
-:::::
-
-::: {#1276752216 .myid}
-[]{#_Toc404795950}[]{#struct_0_18718_x1832_x670970813}[]{#_Toc211671379}[]{#_Toc128898014}[]{#_Toc270693174}[]{#_Toc280174924}[]{#_Toc280177631}[]{#_Toc280281511}[]{#_Toc270693175}[]{#_Toc280174925}[]{#_Toc280177632}[]{#_Toc280281512}[]{#_Toc270693177}[]{#_Toc280174927}[]{#_Toc280177634}[]{#_Toc280281514}[]{#_Toc270693178}[]{#_Toc280174928}[]{#_Toc280177635}[]{#_Toc280281515}[]{#_Toc270693179}[]{#_Toc280174929}[]{#_Toc280177636}[]{#_Toc280281516}[]{#_Toc270693180}[]{#_Toc280174930}[]{#_Toc280177637}[]{#_Toc280281517}[]{#_Toc270693181}[]{#_Toc280174931}[]{#_Toc280177638}[]{#_Toc280281518}[]{#_Toc270693182}[]{#_Toc280174932}[]{#_Toc280177639}[]{#_Toc280281519}[]{#_Toc270693183}[]{#_Toc280174933}[]{#_Toc280177640}[]{#_Toc280281520}[]{#_Toc270693184}[]{#_Toc280174934}[]{#_Toc280177641}[]{#_Toc280281521}[]{#_Toc270693185}[]{#_Toc280174935}[]{#_Toc280177642}[]{#_Toc280281522}[]{#_Toc270693186}[]{#_Toc280174936}[]{#_Toc280177643}[]{#_Toc280281523}[]{#_Toc270693187}[]{#_Toc280174937}[]{#_Toc280177644}[]{#_Toc280281524}[]{#_Toc270693188}[]{#_Toc280174938}[]{#_Toc280177645}[]{#_Toc280281525}[]{#_Toc270693189}[]{#_Toc280174939}[]{#_Toc280177646}[]{#_Toc280281526}[]{#_Toc270693190}[]{#_Toc280174940}[]{#_Toc280177647}[]{#_Toc280281527}[]{#_Toc270693191}[]{#_Toc280174941}[]{#_Toc280177648}[]{#_Toc280281528}[]{#_Toc270693192}[]{#_Toc280174942}[]{#_Toc280177649}[]{#_Toc280281529}[]{#_Toc270693193}[]{#_Toc280174943}[]{#_Toc280177650}[]{#_Toc280281530}[]{#_Toc270693194}[]{#_Toc280174944}[]{#_Toc280177651}[]{#_Toc280281531}[]{#_Toc270693195}[]{#_Toc280174945}[]{#_Toc280177652}[]{#_Toc280281532}[]{#_Toc270693196}[]{#_Toc280174946}[]{#_Toc280177653}[]{#_Toc280281533}[]{#_Toc270693199}[]{#_Toc280174949}[]{#_Toc280177656}[]{#_Toc280281536}[]{#_Toc270693200}[]{#_Toc280174950}[]{#_Toc280177657}[]{#_Toc280281537}[]{#_Toc270693201}[]{#_Toc280174951}[]{#_Toc280177658}[]{#_Toc280281538}[]{#_Toc270693202}[]{#_Toc280174952}[]{#_Toc280177659}[]{#_Toc280281539}[]{#_Toc270693203}[]{#_Toc280174953}[]{#_Toc280177660}[]{#_Toc280281540}[]{#_Toc270693204}[]{#_Toc280174954}[]{#_Toc280177661}[]{#_Toc280281541}[]{#_Toc270693205}[]{#_Toc280174955}[]{#_Toc280177662}[]{#_Toc280281542}[]{#_Toc270693206}[]{#_Toc280174956}[]{#_Toc280177663}[]{#_Toc280281543}[]{#_Toc270693207}[]{#_Toc280174957}[]{#_Toc280177664}[]{#_Toc280281544}[]{#_Toc270693208}[]{#_Toc280174958}[]{#_Toc280177665}[]{#_Toc280281545}[]{#_Toc270693209}[]{#_Toc280174959}[]{#_Toc280177666}[]{#_Toc280281546}[]{#_Toc270693210}[]{#_Toc280174960}[]{#_Toc280177667}[]{#_Toc280281547}[]{#_Toc270693211}[]{#_Toc280174961}[]{#_Toc280177668}[]{#_Toc280281548}[]{#_Toc270693212}[]{#_Toc280174962}[]{#_Toc280177669}[]{#_Toc280281549}[]{#_Toc270693213}[]{#_Toc280174963}[]{#_Toc280177670}[]{#_Toc280281550}[]{#_Toc270693214}[]{#_Toc280174964}[]{#_Toc280177671}[]{#_Toc280281551}[]{#_Toc270693215}[]{#_Toc280174965}[]{#_Toc280177672}[]{#_Toc280281552}[]{#_Toc270693216}[]{#_Toc280174966}[]{#_Toc280177673}[]{#_Toc280281553}[]{#_Toc270693217}[]{#_Toc280174967}[]{#_Toc280177674}[]{#_Toc280281554}[]{#_Toc270693218}[]{#_Toc280174968}[]{#_Toc280177675}[]{#_Toc280281555}[]{#_Toc270693219}[]{#_Toc280174969}[]{#_Toc280177676}[]{#_Toc280281556}[]{#_Toc270693220}[]{#_Toc280174970}[]{#_Toc280177677}[]{#_Toc280281557}[]{#_Toc270693222}[]{#_Toc280174972}[]{#_Toc280177679}[]{#_Toc280281559}[]{#_Toc270693223}[]{#_Toc280174973}[]{#_Toc280177680}[]{#_Toc280281560}[]{#_Toc270693224}[]{#_Toc280174974}[]{#_Toc280177681}[]{#_Toc280281561}[]{#_Toc270693225}[]{#_Toc280174975}[]{#_Toc280177682}[]{#_Toc280281562}[]{#_Toc270693226}[]{#_Toc280174976}[]{#_Toc280177683}[]{#_Toc280281563}[]{#_Toc270693228}[]{#_Toc280174978}[]{#_Toc280177685}[]{#_Toc280281565}[]{#_Toc270693229}[]{#_Toc280174979}[]{#_Toc280177686}[]{#_Toc280281566}[]{#_Toc270693230}[]{#_Toc280174980}[]{#_Toc280177687}[]{#_Toc280281567}[]{#_Toc197333777}[]{#_Toc197943302}[]{#_Toc198390039}[]{#_Toc197333778}[]{#_Toc197943303}[]{#_Toc198390040}[]{#_Toc197333780}[]{#_Toc197943305}[]{#_Toc198390042}[]{#_Toc197333781}[]{#_Toc197943306}[]{#_Toc198390043}[]{#_Toc197333782}[]{#_Toc197943307}[]{#_Toc198390044}[]{#_Toc197333783}[]{#_Toc197943308}[]{#_Toc198390045}[]{#_Toc197333784}[]{#_Toc197943309}[]{#_Toc198390046}[]{#_Toc197333785}[]{#_Toc197943310}[]{#_Toc198390047}[]{#_Toc197333786}[]{#_Toc197943311}[]{#_Toc198390048}[]{#_Toc197333787}[]{#_Toc197943312}[]{#_Toc198390049}[]{#_Toc197333788}[]{#_Toc197943313}[]{#_Toc198390050}[]{#_Toc197333789}[]{#_Toc197943314}[]{#_Toc198390051}[]{#_Toc197333790}[]{#_Toc197943315}[]{#_Toc198390052}[]{#_Toc197333791}[]{#_Toc197943316}[]{#_Toc198390053}[]{#_Toc197333792}[]{#_Toc197943317}[]{#_Toc198390054}[]{#_Toc197333793}[]{#_Toc197943318}[]{#_Toc198390055}[]{#_Toc197333794}[]{#_Toc197943319}[]{#_Toc198390056}[]{#_Toc197333795}[]{#_Toc197943320}[]{#_Toc198390057}[]{#_Toc197333796}[]{#_Toc197943321}[]{#_Toc198390058}[]{#_Toc194230995}[]{#_Toc195410205}[]{#_Toc194230996}[]{#_Toc195410206}[]{#_Toc194230999}[]{#_Toc195410209}[]{#_Toc194231000}[]{#_Toc195410210}[]{#_Toc194231001}[]{#_Toc195410211}[]{#_Toc194231002}[]{#_Toc195410212}[]{#_Toc194231003}[]{#_Toc195410213}[]{#_Toc194231004}[]{#_Toc195410214}[]{#_Toc194231005}[]{#_Toc195410215}[]{#_Toc194231006}[]{#_Toc195410216}[]{#_Toc194231007}[]{#_Toc195410217}[]{#_Toc194231008}[]{#_Toc195410218}[]{#_Toc194231009}[]{#_Toc195410219}[]{#_Toc194231010}[]{#_Toc195410220}[]{#_Toc194231011}[]{#_Toc195410221}[]{#_Toc194231012}[]{#_Toc195410222}[]{#_Toc194231013}[]{#_Toc195410223}[]{#_Toc194231015}[]{#_Toc195410225}
+·**display** **vrrp ipv6**
 
 **VRRP \-- IPv6 VRRP配置命令 \-- vrrp ipv6 vrid**
 
 ------------------------------------------------------------------------
 
-[**[vrrp ipv6 vrid]{lang="DA"}**]{#struct_0_18718_x1832_x2034892062}[命令用来创建]{style="font-family:宋体"}[IPv6 VRRP]{lang="DA"}[备份组]{style="font-family:宋体"}[，]{style="font-family:宋体"}[配置]{style="font-family:宋体"}[IPv6 VRRP]{lang="DA"}[备份组的虚拟]{style="font-family:宋体"}[IPv6]{lang="DA"}[地址]{style="font-family:宋体"}[，]{style="font-family:宋体"}[或为一个已经存在的]{style="font-family:宋体"}[IPv6 VRRP]{lang="DA"}[备份组添加一个虚拟]{style="font-family:宋体"}[IPv6]{lang="DA"}[地址。]{style="font-family:宋体"}
+**[vrrp ipv6 vrid**]命令用来创建IPv6 VRRP备份组，配置IPv6 VRRP备份组的虚拟IPv6地址，或为一个已经存在的IPv6 VRRP备份组添加一个虚拟IPv6地址。
 
-[**[undo vrrp ipv6 vrid]{lang="DA"}**]{#struct_0_18718_x1832_702751728}[命令用来删除一个已经存在的]{style="font-family:宋体"}[IPv6 VRRP]{lang="DA"}[备份组的所有配置，或删除已经存在的]{style="font-family:宋体"}[IPv6 VRRP]{lang="DA"}[备份组中的虚拟]{style="font-family:宋体"}[IPv6]{lang="DA"}[地址。]{style="font-family:宋体"}
+**[undo vrrp ipv6 vrid**]命令用来删除一个已经存在的IPv6 VRRP备份组的所有配置，或删除已经存在的IPv6 VRRP备份组中的虚拟IPv6地址。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1942332708}
+【命令】
 
-[**[vrrp ipv6 vrid]{lang="EN-US"}**[ ]{lang="EN-US"}*[virtual-router-id]{lang="EN-US"}***[ virtual-ip]{lang="EN-US"}***[ virtual-address]{lang="EN-US"}*[ \[ **link-local** \]]{lang="EN-US"}]{#struct_0_18718_x1832_243751619}
+**[vrrp ipv6 vrid***virtual-router-id*** virtual-ip*** virtual-address* [ **link-local** ]]
 
-[**[undo vrrp ipv6 vrid]{lang="EN-US"}***[ virtual-router-id ]{lang="EN-US"}*[\[ **virtual-ip** \[ *virtual-address* \[ **link-local** \] \] \]]{lang="EN-US"}]{#struct_0_18718_x1832_x1724375170}
+**[undo vrrp ipv6 vrid*** virtual-router-id * **virtual-ip**  *virtual-address* [ **link-local**  ] ]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1114665322}
+【缺省情况】
 
-[[没有创建]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x196561084}[备份组。]{style="font-family:宋体"}
+没有创建IPv6 VRRP备份组。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1173336435}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_709816527}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x382559016}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_4134031}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_1582927904}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x2103061477}
+【参数】
 
-[*[virtual-router-id]{lang="EN-US"}*]{#struct_0_18718_x1832_1273554692}[：]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[virtual-router-id*]：IPv6 VRRP备份组号，取值范围为1～255。
 
-[**[virtual-ip]{lang="EN-US"}***[ virtual-address]{lang="EN-US"}*]{#struct_0_18718_x1832_x777255207}[：备份组的虚拟]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址。删除]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组中的虚拟]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址时，如果不指定]{style="font-family:宋体"}*[virtual-address]{lang="EN-US"}*[参数，则表示删除该备份组中的所有虚拟]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[virtual-ip*** virtual-address*]：备份组的虚拟IPv6地址。删除IPv6 VRRP备份组中的虚拟IPv6地址时，如果不指定*virtual-address*参数，则表示删除该备份组中的所有虚拟IPv6地址。
 
-[**[link-local]{lang="EN-US"}**]{#struct_0_18718_x1832_x196626620}[：虚拟]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址为链路本地地址。]{style="font-family:宋体"}
+**[link-local**]：虚拟IPv6地址为链路本地地址。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1925451675}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[重复执行本命令，可以为备份组配置多个虚拟]{style="font-family:宋体"}]{#struct_0_18718_x1832_353544180}[IPv6]{lang="EN-US"}[地址，但每个备份组最多只能配置]{style="font-family:宋体"}[16]{lang="EN-US"}[个虚拟]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+·重复执行本命令，可以为备份组配置多个虚拟IPv6地址，但每个备份组最多只能配置16个虚拟IPv6地址。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[备份组的第一个虚拟]{style="font-family:宋体"}]{#struct_0_18718_x1832_1342740609}[IPv6]{lang="EN-US"}[地址必须是链路本地地址，链路本地地址必须最后删除。]{style="font-family:宋体"}
+·备份组的第一个虚拟IPv6地址必须是链路本地地址，链路本地地址必须最后删除。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[一个]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1568980107}[VRRP]{lang="EN-US"}[备份组中只允许有一个链路本地地址。]{style="font-family:宋体"}
+·一个VRRP备份组中只允许有一个链路本地地址。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果没有为备份组配置虚拟]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1023432629}[IPv6]{lang="EN-US"}[地址，但是为备份组进行了其他配置（如优先级、抢占方式等），则该备份组会存在于设备上，并处于]{style="font-family:宋体"}[Inactive]{lang="EN-US"}[状态，此时备份组不起作用。]{style="font-family:宋体"}
+·如果没有为备份组配置虚拟IPv6地址，但是为备份组进行了其他配置（如优先级、抢占方式等），则该备份组会存在于设备上，并处于Inactive状态，此时备份组不起作用。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[建议将备份组的虚拟]{style="font-family:宋体"}]{#struct_0_18718_x1832_1370412656}[IPv6]{lang="EN-US"}[地址和接口的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址配置为同一网段，否则可能导致局域网内的主机无法访问外部网络。]{style="font-family:宋体"}
+·建议将备份组的虚拟IPv6地址和接口的IPv6地址配置为同一网段，否则可能导致局域网内的主机无法访问外部网络。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x431940172}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_x1355422989}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x197085371}[创建]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[，配置]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[的虚拟]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址为]{style="font-family:宋体"}[fe80::10]{lang="EN-US"}[。为]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[添加一个虚拟]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址]{style="font-family:宋体"}[1::10]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 创建IPv6 VRRP备份组1，配置IPv6 VRRP备份组1的虚拟IPv6地址为fe80::10。为IPv6 VRRP备份组1添加一个虚拟IPv6地址1::10。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_1548780303}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] vrrp ipv6 vrid 1 virtual-ip fe80::10 link-local]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 vrrp ipv6 vrid 1 virtual-ip fe80::10 link-local
 
-[\[Sysname-GigabitEthernet1/0/1\] vrrp ipv6 vrid 1 virtual-ip 1::10]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 vrrp ipv6 vrid 1 virtual-ip 1::10
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_1728725876}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_1864095142}[创建]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[，配置]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[的虚拟]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址为]{style="font-family:宋体"}[fe80::10]{lang="EN-US"}[。为]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[添加一个虚拟]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址]{style="font-family:宋体"}[1::10]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 创建IPv6 VRRP备份组1，配置IPv6 VRRP备份组1的虚拟IPv6地址为fe80::10。为IPv6 VRRP备份组1添加一个虚拟IPv6地址1::10。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_x1534420265}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 2]{lang="EN-US"}
+Sysname interface vlan-interface 2
 
-[\[Sysname-Vlan-interface2\] vrrp ipv6 vrid 1 virtual-ip fe80::10 link-local]{lang="EN-US"}
+Sysname-Vlan-interface2 vrrp ipv6 vrid 1 virtual-ip fe80::10 link-local
 
-[\[Sysname-Vlan-interface2\] vrrp ipv6 vrid 1 virtual-ip 1::10]{lang="EN-US"}
+Sysname-Vlan-interface2 vrrp ipv6 vrid 1 virtual-ip 1::10
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x371459155}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display vrrp ipv6]{lang="EN-US"}**]{#struct_0_18718_x1832_x783292145}
-:::
-
-::: {#1094442734 .myid}
-[]{#_Toc404795951}[]{#struct_0_18718_x1832_x197085369}[]{#_Toc211671375}[]{#_Toc128898010}
+·**display vrrp ipv6**
 
 **VRRP \-- IPv6 VRRP配置命令 \-- vrrp ipv6 vrid preempt-mode**
 
 ------------------------------------------------------------------------
 
-[**[vrrp ipv6 vrid preempt-mode]{lang="EN-US"}**]{#struct_0_18718_x1832_1549304592}[命令用来配置]{style="font-family:
-宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组中的路由器工作在抢占方式，并配置抢占延迟时间。]{style="font-family:
-宋体"}
+**[vrrp ipv6 vrid preempt-mode**]命令用来配置IPv6 VRRP备份组中的路由器工作在抢占方式，并配置抢占延迟时间。
 
-[**[undo vrrp ipv6 vrid preempt-mode]{lang="EN-US"}**]{#struct_0_18718_x1832_x554012285}[命令用来取消抢占方式，即配置]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组中的路由器工作在非抢占方式。]{style="font-family:宋体"}
+**[undo vrrp ipv6 vrid preempt-mode**]命令用来取消抢占方式，即配置IPv6 VRRP备份组中的路由器工作在非抢占方式。
 
-[**[undo vrrp ipv6 vrid preempt-mode delay]{lang="EN-US"}**]{#struct_0_18718_x1832_x1317664666}[命令用来恢复抢占延迟时间为缺省值。]{style="font-family:宋体"}
+**[undo vrrp ipv6 vrid preempt-mode delay**]命令用来恢复抢占延迟时间为缺省值。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_696248941}
+【命令】
 
-[**[vrrp ipv6 vrid]{lang="EN-US"}**[ *virtual-router-id* **preempt-mode** \[ **delay** *delay-value* \]]{lang="EN-US"}]{#struct_0_18718_x1832_789448071}
+**[vrrp ipv6 vrid** *virtual-router-id* **preempt-mode** [ **delay** *delay-value* ]]
 
-[**[undo vrrp ipv6 vrid]{lang="EN-US"}**[ *virtual-router-id* **preempt-mode** \[ **delay** \]]{lang="EN-US"}]{#struct_0_18718_x1832_x1504756158}
+**[undo vrrp ipv6 vrid** *virtual-router-id* **preempt-mode** [ **delay** ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1344247734}
+【缺省情况】
 
-[[IPv6 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_1603781521}[备份组中的路由器工作在抢占方式，抢占延迟时间为]{style="font-family:宋体"}[0]{lang="EN-US"}[厘秒。]{style="font-family:宋体"}
+IPv6 VRRP备份组中的路由器工作在抢占方式，抢占延迟时间为0厘秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x197150905}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_x429316702}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1481447361}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_156292285}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x1985266723}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_64356385}
+【参数】
 
-[*[virtual-router-id]{lang="EN-US"}*]{#struct_0_18718_x1832_166832459}[：]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[virtual-router-id*]：IPv6 VRRP备份组号，取值范围为1～255。
 
-[**[delay]{lang="EN-US"}***[ delay-value]{lang="EN-US"}*]{#struct_0_18718_x1832_x813423023}[：抢占延迟时间。]{style="font-family:宋体"}*[delay-value]{lang="EN-US"}*[取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[180000]{lang="EN-US"}[，单位为厘秒，缺省值为]{style="font-family:宋体"}[0]{lang="EN-US"}[厘秒。]{style="font-family:宋体"}
+**[delay*** delay-value*]：抢占延迟时间。*delay-value*取值范围为0～180000，单位为厘秒，缺省值为0厘秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x197216441}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果备份组中的路由器工作在非抢占方式下，则只要]{style="font-family:宋体"}]{#struct_0_18718_x1832_787025589}[Master]{lang="EN-US"}[路由器没有出现故障，]{style="font-family:宋体"}[Backup]{lang="EN-US"}[路由器即使随后被配置了更高的优先级也不会成为]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器。非抢占方式可以避免频繁地切换]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器。]{style="font-family:宋体"}
+·如果备份组中的路由器工作在非抢占方式下，则只要Master路由器没有出现故障，Backup路由器即使随后被配置了更高的优先级也不会成为Master路由器。非抢占方式可以避免频繁地切换Master路由器。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果备份组中的路由器工作在抢占方式下，它一旦发现自己的优先级比当前的]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1528989417}[Master]{lang="EN-US"}[路由器的优先级高，就会对外发送]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文。导致备份组内路由器重新选举]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器，并最终取代原有的]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器。相应地，原来的]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器将会变成]{style="font-family:宋体"}[Backup]{lang="EN-US"}[路由器。抢占方式可以确保承担转发任务的]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器始终是备份组中优先级最高的路由器。]{style="font-family:宋体"}
+·如果备份组中的路由器工作在抢占方式下，它一旦发现自己的优先级比当前的Master路由器的优先级高，就会对外发送VRRP通告报文。导致备份组内路由器重新选举Master路由器，并最终取代原有的Master路由器。相应地，原来的Master路由器将会变成Backup路由器。抢占方式可以确保承担转发任务的Master路由器始终是备份组中优先级最高的路由器。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[为了避免备份组内的成员频繁进行主备状态转换，让]{style="font-family:宋体"}]{#struct_0_18718_x1832_x2145968925}[Backup]{lang="EN-US"}[路由器有足够的时间搜集必要的信息（如路由信息），]{style="font-family:宋体"}[Backup]{lang="EN-US"}[路由器接收到优先级低于本地优先级的通告报文后，不会立即抢占成为]{style="font-family:宋体"}[Master]{lang="EN-US"}[，而是等待一定时间后，才会重新选举新的]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器。]{style="font-family:宋体"}
+·为了避免备份组内的成员频繁进行主备状态转换，让Backup路由器有足够的时间搜集必要的信息（如路由信息），Backup路由器接收到优先级低于本地优先级的通告报文后，不会立即抢占成为Master，而是等待一定时间后，才会重新选举新的Master路由器。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1789591061}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_2001005415}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_233594481}[配置路由器工作于抢占方式，抢占延迟时间为]{style="font-family:宋体"}[5000]{lang="EN-US"}[厘秒。]{style="font-family:宋体"}
+\# 配置路由器工作于抢占方式，抢占延迟时间为5000厘秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_1888761060}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] vrrp ipv6 vrid 10 preempt-mode delay 5000]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 vrrp ipv6 vrid 10 preempt-mode delay 5000
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_x1966281806}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x197281977}[配置交换机工作于抢占方式，抢占延迟时间为]{style="font-family:宋体"}[5000]{lang="EN-US"}[厘秒。]{style="font-family:宋体"}
+\# 配置交换机工作于抢占方式，抢占延迟时间为5000厘秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_1134997729}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 2]{lang="EN-US"}
+Sysname interface vlan-interface 2
 
-[\[Sysname-Vlan-interface2\] vrrp ipv6 vrid 10 preempt-mode delay 5000]{lang="EN-US"}
+Sysname-Vlan-interface2 vrrp ipv6 vrid 10 preempt-mode delay 5000
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x391924191}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **vrrp ipv6**]{lang="EN-US"}]{#struct_0_18718_x1832_x568067841}
-:::
-
-::: {#1588827321 .myid}
-[]{#_Toc404795952}[]{#struct_0_18718_x1832_x1316532072}[]{#_Toc211671376}[]{#_Toc128898011}
+·**display** **vrrp ipv6**
 
 **VRRP \-- IPv6 VRRP配置命令 \-- vrrp ipv6 vrid priority**
 
 ------------------------------------------------------------------------
 
-[**[vrrp ipv6 vrid priority]{lang="EN-US"}**]{#struct_0_18718_x1832_x1630745065}[命令用来设置路由器在]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组中的优先级。]{style="font-family:宋体"}
+**[vrrp ipv6 vrid priority**]命令用来设置路由器在IPv6 VRRP备份组中的优先级。
 
-[**[undo vrrp ipv6 vrid priority]{lang="EN-US"}**]{#struct_0_18718_x1832_345940662}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo vrrp ipv6 vrid priority**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1780063889}
+【命令】
 
-[**[vrrp ipv6 vrid ]{lang="EN-US"}***[virtual-router-id]{lang="EN-US"}*[ **priority** *priority-value*]{lang="EN-US"}]{#struct_0_18718_x1832_x196823225}
+**[vrrp ipv6 vrid ***virtual-router-id* **priority** *priority-value*]
 
-[**[undo vrrp ipv6 vrid]{lang="EN-US"}**[ *virtual-router-id* **priority**]{lang="EN-US"}]{#struct_0_18718_x1832_401066202}
+**[undo vrrp ipv6 vrid** *virtual-router-id* **priority**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x420411468}
+【缺省情况】
 
-[[路由器在]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_848393721}[备份组中的优先级为]{style="font-family:宋体"}[100]{lang="EN-US"}[。]{style="font-family:宋体"}
+路由器在IPv6 VRRP备份组中的优先级为100。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1984163826}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1432157514}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x677906501}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_1455668869}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_58575265}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x902932173}
+【参数】
 
-[*[virtual-router-id]{lang="EN-US"}*]{#struct_0_18718_x1832_x196888761}[：]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[virtual-router-id*]：IPv6 VRRP备份组号，取值范围为1～255。
 
-[*[priority-value]{lang="EN-US"}*]{#struct_0_18718_x1832_x1571454513}[：优先级的值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[254]{lang="EN-US"}[，该值越大表明优先级越高。]{style="font-family:宋体"}
+*[priority-value*]：优先级的值，取值范围为1～254，该值越大表明优先级越高。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1122974995}
+【使用指导】
 
-[[优先级决定路由器在备份组中的地位。优先级越高，越有可能成为]{style="font-family:宋体"}[Master]{lang="EN-US"}]{#struct_0_18718_x1832_x1886548425}[路由器。优先级]{style="font-family:宋体"}[0]{lang="EN-US"}[是系统保留为特殊用途来使用的，]{style="font-family:宋体"}[255]{lang="EN-US"}[则是系统保留给]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址拥有者的。]{style="font-family:宋体"}
+优先级决定路由器在备份组中的地位。优先级越高，越有可能成为Master路由器。优先级0是系统保留为特殊用途来使用的，255则是系统保留给IP地址拥有者的。
 
-[[路由器为]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_18718_x1832_2102134750}[地址拥有者时，其运行优先级始终为]{style="font-family:宋体"}[255]{lang="EN-US"}[，表明只要其工作正常，则为]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器。]{style="font-family:宋体"}
+路由器为IP地址拥有者时，其运行优先级始终为255，表明只要其工作正常，则为Master路由器。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x502535825}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_x1545127861}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_1343695144}[设置路由器在]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[中的优先级为]{style="font-family:宋体"}[150]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 设置路由器在IPv6 VRRP备份组1中的优先级为150。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_x196954297}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] vrrp ipv6 vrid 1 priority 150]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 vrrp ipv6 vrid 1 priority 150
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_x1990919937}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x1796695971}[设置交换机在]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[中的优先级为]{style="font-family:宋体"}[150]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 设置交换机在IPv6 VRRP备份组1中的优先级为150。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_x1318568469}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 2]{lang="EN-US"}
+Sysname interface vlan-interface 2
 
-[\[Sysname-Vlan-interface2\] vrrp ipv6 vrid 1 priority 150]{lang="EN-US"}
+Sysname-Vlan-interface2 vrrp ipv6 vrid 1 priority 150
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x795820063}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **vrrp ipv6**]{lang="EN-US"}]{#struct_0_18718_x1832_x305060186}
-:::
-
-::: {#22151509 .myid}
-[]{#_Toc404795953}[]{#struct_0_18718_x1832_x1912606602}
+·**display** **vrrp ipv6**
 
 **VRRP \-- IPv6 VRRP配置命令 \-- vrrp ipv6 vrid shutdown**
 
 ------------------------------------------------------------------------
 
-[**[vrrp ipv6 vrid ]{lang="EN-US"}[shutdown]{lang="EN-US"}**]{#struct_0_18718_x1832_1567898616}[命令用来关闭指定的]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组。]{style="font-family:宋体"}
+**[vrrp ipv6 vrid shutdown**]命令用来关闭指定的IPv6 VRRP备份组。
 
-[**[undo vrrp ipv6 vrid shutdown]{lang="EN-US"}**]{#struct_0_18718_x1832_x1825264148}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo vrrp ipv6 vrid shutdown**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x197019833}
+【命令】
 
-[**[vrrp ipv6 vrid]{lang="EN-US"}***[ virtual-router-id]{lang="EN-US"}*[ **shutdown**]{lang="EN-US"}]{#struct_0_18718_x1832_x1166734385}
+**[vrrp ipv6 vrid*** virtual-router-id* **shutdown**]
 
-[**[undo vrrp ipv6 vrid]{lang="EN-US"}**[ *virtual-router-id* **shutdown**]{lang="EN-US"}]{#struct_0_18718_x1832_2005323014}
+**[undo vrrp ipv6 vrid** *virtual-router-id* **shutdown**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1958829526}
+【缺省情况】
 
-[[IPv6 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_1701880260}[备份组处于开启状态。]{style="font-family:宋体"}
+IPv6 VRRP备份组处于开启状态。
 
-[[【视图】]{style="font-family:
-黑体"}]{#struct_0_18718_x1832_205543}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_677728441}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1858999894}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x1691786919}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x196561081}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1173139827}
+【参数】
 
-[*[virtual-router-id]{lang="EN-US"}*]{#struct_0_18718_x1832_432085875}[：]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[备份组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[virtual-router-id*]：VRRP备份组号，取值范围为1～255。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_370917962}
+【使用指导】
 
-[[关闭]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x608488263}[备份组功能通常用于暂时禁用备份组，但还需要再次启用该备份组的场景。关闭备份组后，该备份组的状态为]{style="font-family:宋体"}[Initialize]{lang="EN-US"}[，并且该备份组所有已存在的配置保持不变。在关闭状态下还可以对备份组进行配置。备份组再次被开启后，基于最新的配置，从]{style="font-family:宋体"}[Initialize]{lang="EN-US"}[状态重新开始运行。]{style="font-family:宋体"}
+关闭IPv6 VRRP备份组功能通常用于暂时禁用备份组，但还需要再次启用该备份组的场景。关闭备份组后，该备份组的状态为Initialize，并且该备份组所有已存在的配置保持不变。在关闭状态下还可以对备份组进行配置。备份组再次被开启后，基于最新的配置，从Initialize状态重新开始运行。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_378115647}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_x1756014593}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x1398618938}[关闭]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 关闭IPv6 VRRP备份组1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_x196626617}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] vrrp ipv6 vrid 1 shutdown]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 vrrp ipv6 vrid 1 shutdown
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_1925386140}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_1588284105}[关闭]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 关闭IPv6 VRRP备份组1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_x1034532321}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 2]{lang="EN-US"}
+Sysname interface vlan-interface 2
 
-[\[Sysname-Vlan-interface2\] vrrp ipv6 vrid 1 shutdown]{lang="EN-US"}
-:::
-
-::: {#560038332 .myid}
-[]{#_Toc404795954}[]{#struct_0_18718_x1832_1646080500}[]{#_Toc211671377}[]{#_Toc128898012}
+Sysname-Vlan-interface2 vrrp ipv6 vrid 1 shutdown
 
 **VRRP \-- IPv6 VRRP配置命令 \-- vrrp ipv6 vrid timer advertise**
 
 ------------------------------------------------------------------------
 
-[**[vrrp ipv6 vrid timer advertise]{lang="EN-US"}**]{#struct_0_18718_x1832_x1950202923}[命令用来配置]{style="font-family:
-宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组中]{style="font-family:
-宋体"}[Master]{lang="EN-US"}[路由器发送]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文的时间间隔。]{style="font-family:宋体"}
+**[vrrp ipv6 vrid timer advertise**]命令用来配置IPv6 VRRP备份组中Master路由器发送VRRP通告报文的时间间隔。
 
-[**[undo vrrp ipv6 vrid timer advertise]{lang="EN-US"}**]{#struct_0_18718_x1832_1534737331}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo vrrp ipv6 vrid timer advertise**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1420970267}
+【命令】
 
-[**[vrrp ipv6 vrid]{lang="EN-US"}**[ *virtual-router-id* **timer advertise** *adver-interval*]{lang="EN-US"}]{#struct_0_18718_x1832_x784251557}
+**[vrrp ipv6 vrid** *virtual-router-id* **timer advertise** *adver-interval*]
 
-[**[undo vrrp ipv6 vrid]{lang="EN-US"}**[ *virtual-router-id* **timer advertise**]{lang="EN-US"}]{#struct_0_18718_x1832_x197085372}
+**[undo vrrp ipv6 vrid** *virtual-router-id* **timer advertise**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1548583695}
+【缺省情况】
 
-[[IPv6 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_191352478}[备份组中]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器发送]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文的时间间隔为]{style="font-family:宋体"}[100]{lang="EN-US"}[厘秒。]{style="font-family:宋体"}
+IPv6 VRRP备份组中Master路由器发送VRRP通告报文的时间间隔为100厘秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1822238986}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_x266009441}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1889538017}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x942769590}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_x196859155}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1150481103}
+【参数】
 
-[*[virtual-router-id]{lang="EN-US"}*]{#struct_0_18718_x1832_x197150908}[：]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[virtual-router-id*]：IPv6 VRRP备份组号，取值范围为1～255。
 
-[*[adver-interval]{lang="EN-US"}*]{#struct_0_18718_x1832_x428464734}[：]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组中的]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器发送]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文的间隔时间，取值范围为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[4095]{lang="EN-US"}[，单位为厘秒。]{style="font-family:宋体"}
+*[adver-interval*]：IPv6 VRRP备份组中的Master路由器发送VRRP通告报文的间隔时间，取值范围为10～4095，单位为厘秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x841208083}
+【使用指导】
 
-[[IPv6 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_525383036}[备份组中的]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器会定时发送]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文，通知备份组内的路由器自己工作正常。]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文的发送时间间隔为本命令配置的值。]{style="font-family:宋体"}
+IPv6 VRRP备份组中的Master路由器会定时发送VRRP通告报文，通知备份组内的路由器自己工作正常。VRRP通告报文的发送时间间隔为本命令配置的值。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_18718_x1832_x1614736733}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[建议配置]{style="font-family:宋体"}]{#struct_0_18718_x1832_1790416080}[VRRP]{lang="EN-US"}[通告报文的发送间隔大于]{style="font-family:宋体"}[100]{lang="EN-US"}[厘秒，否则会对系统的稳定性产生影响。]{style="font-family:宋体"}
+·建议配置VRRP通告报文的发送间隔大于100厘秒，否则会对系统的稳定性产生影响。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IPv6 VRRP]{lang="EN-US"}]{#struct_0_18718_x1832_x463781530}[备份组中的路由器上配置的]{style="font-family:
-宋体"}[VRRP]{lang="EN-US"}[通告报文时间间隔可以不同。]{style="font-family:
-宋体"}[Master]{lang="EN-US"}[路由器根据自身配置的报文时间间隔定时发送通告报文，并在通告报文中携带]{style="font-family:
-宋体"}[Master]{lang="EN-US"}[路由器上配置的时间间隔；]{style="font-family:宋体"}[Backup]{lang="EN-US"}[路由器接收到]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器发送的通告报文后，记录报文中携带的]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器通告报文时间间隔，如果在]{style="font-family:宋体"}[3]{lang="EN-US"}[×记录的时间间隔＋]{style="font-family:宋体"}[Skew_Time]{lang="EN-US"}[内没有收到]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器发送的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文，则认为]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器出现故障，重新选举]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器。]{style="font-family:宋体"}
+·IPv6 VRRP备份组中的路由器上配置的VRRP通告报文时间间隔可以不同。Master路由器根据自身配置的报文时间间隔定时发送通告报文，并在通告报文中携带Master路由器上配置的时间间隔；Backup路由器接收到Master路由器发送的通告报文后，记录报文中携带的Master路由器通告报文时间间隔，如果在3×记录的时间间隔＋Skew_Time内没有收到Master路由器发送的VRRP通告报文，则认为Master路由器出现故障，重新选举Master路由器。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[网络流量过大可能会导致]{style="font-family:宋体"}]{#struct_0_18718_x1832_505189893}[Backup]{lang="EN-US"}[路由器在指定时间内没有收到]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文，从而发生状态转换。可以通过将]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文的发送时间间隔延长的办法来解决该问题。]{style="font-family:宋体"}
+·网络流量过大可能会导致Backup路由器在指定时间内没有收到Master路由器的VRRP通告报文，从而发生状态转换。可以通过将VRRP通告报文的发送时间间隔延长的办法来解决该问题。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1742780286}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_x197216444}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_787353269}[设置]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器发送]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文的间隔时间为]{style="font-family:宋体"}[500]{lang="EN-US"}[厘秒。]{style="font-family:宋体"}
+\# 设置IPv6 VRRP备份组1的Master路由器发送VRRP通告报文的间隔时间为500厘秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_x1290075107}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] vrrp ipv6 vrid 1 timer advertise 500]{lang="NO-BOK"}
+Sysname-GigabitEthernet1/0/1 vrrp ipv6 vrid 1 timer advertise 500
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_897877026}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_1212960391}[设置]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器发送]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[通告报文的间隔时间为]{style="font-family:宋体"}[500]{lang="EN-US"}[厘秒。]{style="font-family:宋体"}
+\# 设置IPv6 VRRP备份组1的Master路由器发送VRRP通告报文的间隔时间为500厘秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_x694811641}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 2]{lang="EN-US"}
+Sysname interface vlan-interface 2
 
-[\[Sysname-Vlan-interface2\] vrrp ipv6 vrid 1 timer advertise 500]{lang="NO-BOK"}
+Sysname-Vlan-interface2 vrrp ipv6 vrid 1 timer advertise 500
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1071559177}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="NO-BOK" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **vrrp ipv6**]{lang="EN-US"}]{#struct_0_18718_x1832_x443475220}
-:::
-
-::::: {#-1588654424 .myid}
-[]{#_Toc128898013}[]{#_Toc404795955}[]{#struct_0_18718_x1832_x197281980}[]{#_Toc270693236}[]{#_Toc280174986}[]{#_Toc280177693}[]{#_Toc280281573}[]{#_Toc270693237}[]{#_Toc280174987}[]{#_Toc280177694}[]{#_Toc280281574}[]{#_Toc270693240}[]{#_Toc280174990}[]{#_Toc280177697}[]{#_Toc280281577}[]{#_Toc270693241}[]{#_Toc280174991}[]{#_Toc280177698}[]{#_Toc280281578}[]{#_Toc270693242}[]{#_Toc280174992}[]{#_Toc280177699}[]{#_Toc280281579}[]{#_Toc270693243}[]{#_Toc280174993}[]{#_Toc280177700}[]{#_Toc280281580}[]{#_Toc270693244}[]{#_Toc280174994}[]{#_Toc280177701}[]{#_Toc280281581}[]{#_Toc270693245}[]{#_Toc280174995}[]{#_Toc280177702}[]{#_Toc280281582}[]{#_Toc270693246}[]{#_Toc280174996}[]{#_Toc280177703}[]{#_Toc280281583}[]{#_Toc270693247}[]{#_Toc280174997}[]{#_Toc280177704}[]{#_Toc280281584}[]{#_Toc270693248}[]{#_Toc280174998}[]{#_Toc280177705}[]{#_Toc280281585}[]{#_Toc270693249}[]{#_Toc280174999}[]{#_Toc280177706}[]{#_Toc280281586}[]{#_Toc270693250}[]{#_Toc280175000}[]{#_Toc280177707}[]{#_Toc280281587}[]{#_Toc270693251}[]{#_Toc280175001}[]{#_Toc280177708}[]{#_Toc280281588}[]{#_Toc270693252}[]{#_Toc280175002}[]{#_Toc280177709}[]{#_Toc280281589}[]{#_Toc270693253}[]{#_Toc280175003}[]{#_Toc280177710}[]{#_Toc280281590}[]{#_Toc270693254}[]{#_Toc280175004}[]{#_Toc280177711}[]{#_Toc280281591}[]{#_Toc270693255}[]{#_Toc280175005}[]{#_Toc280177712}[]{#_Toc280281592}[]{#_Toc270693256}[]{#_Toc280175006}[]{#_Toc280177713}[]{#_Toc280281593}[]{#_Toc270693257}[]{#_Toc280175007}[]{#_Toc280177714}[]{#_Toc280281594}[]{#_Toc270693258}[]{#_Toc280175008}[]{#_Toc280177715}[]{#_Toc280281595}[]{#_Toc270693259}[]{#_Toc280175009}[]{#_Toc280177716}[]{#_Toc280281596}[]{#_Toc270693260}[]{#_Toc280175010}[]{#_Toc280177717}[]{#_Toc280281597}[]{#_Toc270693262}[]{#_Toc280175012}[]{#_Toc280177719}[]{#_Toc280281599}[]{#_Toc270693263}[]{#_Toc280175013}[]{#_Toc280177720}[]{#_Toc280281600}[]{#_Toc270693265}[]{#_Toc280175015}[]{#_Toc280177722}[]{#_Toc280281602}[]{#_Toc270693266}[]{#_Toc280175016}[]{#_Toc280177723}[]{#_Toc280281603}[]{#_Toc270693268}[]{#_Toc280175018}[]{#_Toc280177725}[]{#_Toc280281605}[]{#_Toc270693269}[]{#_Toc280175019}[]{#_Toc280177726}[]{#_Toc280281606}[]{#_Toc270693270}[]{#_Toc280175020}[]{#_Toc280177727}[]{#_Toc280281607}
+·**display** **vrrp ipv6**
 
 **VRRP \-- IPv6 VRRP配置命令 \-- vrrp ipv6 vrid track**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VRRP命令.files/image002.png){#图片 8 width="62" height="27"}]{lang="EN-US"}]{#struct_0_18718_x1832_1134801120}
-:::
+![说明](VRRP命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_18718_x1832_411737978}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[vrrp ipv6 vrid track**]命令用来配置监视指定的Track项，即当Track项的状态为Negative时，立即将虚拟转发器切换为Active状态、降低路由器的优先级、立即切换成为Master路由器或降低本地虚拟转发器权重值。
 
-[**[vrrp ipv6 vrid track]{lang="EN-US"}**]{#struct_0_18718_x1832_563093576}[命令用来配置监视指定的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项，即当]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，立即将虚拟转发器切换为]{style="font-family:宋体"}[Active]{lang="EN-US"}[状态、降低路由器的优先级、立即切换成为]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器或降低本地虚拟转发器权重值。]{style="font-family:宋体"}
+**[undo vrrp ipv6 vrid track**]命令用来取消监视指定的Track项。
 
-[**[undo vrrp ipv6 vrid track]{lang="EN-US"}**]{#struct_0_18718_x1832_483441670}[命令用来取消监视指定的]{style="font-family:
-宋体"}[Track]{lang="EN-US"}[项。]{style="font-family:
-宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1224272026}
+**[vrrp ipv6 vrid**[ *virtual-router-id* **track** *track-entry-number* { **forwarder-switchover** **member-ip** *ipv6-address* \| **priority reduced** [ *priority-reduced* ] \| **switchover** \| **weight reduced**  *weight-reduced*  }]]
 
-[**[vrrp ipv6 vrid]{lang="EN-US"}**[ *virtual-router-id* **track** *track-entry-number* { **forwarder-switchover** **member-ip** *ipv6-address* \| **priority reduced** \[ *priority-reduced* \] \| **switchover** \| **weight reduced** \[ *weight-reduced* \] }]{lang="EN-US"}]{#struct_0_18718_x1832_x1621684116}
+**[undo vrrp ipv6 vrid** *virtual-router-id* **track** [ *track-entry-number*  [ **forwarder-switchover** \| **priority reduced** \| **switchover** \| **weight reduced** ]]]
 
-[**[undo vrrp ipv6 vrid]{lang="EN-US"}**[ *virtual-router-id* **track** \[ *track-entry-number* \] \[ **forwarder-switchover** \| **priority reduced** \| **switchover** \| **weight reduced** \]]{lang="EN-US"}]{#struct_0_18718_x1832_508851089}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18718_x1832_643589836}
+没有指定被监视的Track项。
 
-[[没有指定被监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_18718_x1832_x196823228}[项。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18718_x1832_400738522}
+接口视图
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_18718_x1832_1398625741}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18718_x1832_850769464}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18718_x1832_1702629304}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18718_x1832_591412506}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1183928781}
+*[virtual-router-id*]：IPv6 VRRP备份组号，取值范围为1～255。
 
-[*[virtual-router-id]{lang="EN-US"}*]{#struct_0_18718_x1832_542626171}[：]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[track-entry-number*]：被监视的Track项序号，*track-entry-number*取值范围为1～1024。
 
-[*[track-entry-number]{lang="EN-US"}*]{#struct_0_18718_x1832_x196888764}[：被监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项序号，]{style="font-family:宋体"}*[track-entry-number]{lang="EN-US"}*[取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1024]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[forwarder-switchover** **member-ip** *ipv6-address*]：虚拟转发器快速切换模式。当监视的Track项状态变为Negative时，如果本地设备上有处于Listening状态的虚拟转发器，且其对应的AVF地址为**member-ip**，则马上将该虚拟转发器切换到Active状态。*ipv6-address*为备份组中成员设备的IPv6地址。可以通过**display vrrp verbose**命令查看备份组中包含的成员设备。
 
-[**[forwarder-switchover]{lang="EN-US"}**[ **member-ip** *ipv6-address*]{lang="EN-US"}]{#struct_0_18718_x1832_x2122768674}[：虚拟转发器快速切换模式。当监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项状态变为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，如果本地设备上有处于]{style="font-family:宋体"}[Listening]{lang="EN-US"}[状态的虚拟转发器，且其对应的]{style="font-family:宋体"}[AVF]{lang="EN-US"}[地址为]{style="font-family:宋体"}**[member-ip]{lang="EN-US"}**[，则马上将该虚拟转发器切换到]{style="font-family:宋体"}[Active]{lang="EN-US"}[状态。]{style="font-family:宋体"}*[ipv6-address]{lang="EN-US"}*[为备份组中成员设备的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址。可以通过]{style="font-family:宋体"}**[display vrrp verbose]{lang="EN-US"}**[命令查看备份组中包含的成员设备。]{style="font-family:宋体"}
+**[priority reduced** [ *priority-reduced* ]]：当监视的Track项状态变为Negative时，降低本地路由器在备份组中的优先级。优先级降低的数值为*priority-reduced*，*priority-reduced*的取值范围为1～255，缺省值为10。
 
-[**[priority reduced]{lang="EN-US"}**[ \[ *priority-reduced* \]]{lang="EN-US"}]{#struct_0_18718_x1832_x1172535064}[：当监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项状态变为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，降低本地路由器在备份组中的优先级。优先级降低的数值为]{style="font-family:宋体"}*[priority-reduced]{lang="EN-US"}*[，]{style="font-family:宋体"}*[priority-reduced]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[10]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[switchover**]：切换模式，当监视的Track项的状态变为Negative时，如果本路由器在备份组中处于Backup状态，则马上切换成为Master路由器。
 
-[**[switchover]{lang="EN-US"}**]{#struct_0_18718_x1832_x1871193677}[：切换模式，当监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态变为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，如果本路由器在备份组中处于]{style="font-family:宋体"}[Backup]{lang="EN-US"}[状态，则马上切换成为]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器。]{style="font-family:宋体"}
+**[weight reduced ** *weight-reduced* ]：当监视的Track项状态变为Negative时，当前路由器上属于指定IPv4 VRRP组的所有虚拟转发器的权重都降低指定的数值。权重降低的数值为*weight-reduced*，*weight-reduced*的取值范围为1～255，缺省值为30。
 
-[**[weight reduced ]{lang="EN-US"}**[\[ *weight-reduced* \]]{lang="EN-US"}]{#struct_0_18718_x1832_x548790562}[：当监视的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项状态变为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，当前路由器上属于指定]{style="font-family:宋体"}[IPv4 VRRP]{lang="EN-US"}[组的所有虚拟转发器的权重都降低指定的数值。权重降低的数值为]{style="font-family:宋体"}*[weight-reduced]{lang="EN-US"}*[，]{style="font-family:宋体"}*[weight-reduced]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[30]{lang="EN-US"}[。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1827863949}
+需要注意的是：
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_18718_x1832_1059921093}
+·在执行本配置之前，需要先在接口上创建备份组并配置虚拟IPv6地址。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在执行本配置之前，需要先在接口上创建备份组并配置虚拟]{style="font-family:宋体"}]{#struct_0_18718_x1832_1348604274}[IPv6]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+·执行**undo vrrp ****ipv6 vrid track**命令时如果没有指定*track-entry-number*参数，则删除该备份组与所有Track项的关联。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[执行]{lang="EN-US" style="font-family:宋体"}**[undo vrrp ]{lang="EN-US"}**]{#struct_0_18718_x1832_1526100257}**[ipv6 ]{lang="EN-US"}[vrid track]{lang="EN-US"}**[命令时如果没有指定]{lang="EN-US" style="font-family:宋体"}*[track-entry-number]{lang="EN-US"}*[参数，则删除该备份组与所有]{lang="EN-US" style="font-family:
-宋体"}[Track]{lang="EN-US"}[项的关联。]{lang="EN-US" style="font-family:宋体"}
+·只有VRRP工作在负载均衡模式时，执行**forwarder-switchover** **member-ip** *ip**v6-address*或**weight reduced ** *weight-reduced* 才会生效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[只有]{style="font-family:宋体"}]{#struct_0_18718_x1832_x137677885}[VRRP]{lang="EN-US"}[工作在负载均衡模式时，执行]{style="font-family:宋体"}**[forwarder-switchover]{lang="EN-US"}**[ **member-ip** *ip*]{lang="EN-US"}*[v6]{lang="EN-US"}[-address]{lang="EN-US"}*[或]{style="font-family:宋体"}**[weight reduced ]{lang="EN-US"}**[\[ *weight-reduced* \]]{lang="EN-US"}[才会生效。]{style="font-family:宋体"}
+·虚拟转发器的权重值为255，虚拟转发器的失效下限为10。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[虚拟转发器的权重值为]{style="font-family:宋体"}]{#struct_0_18718_x1832_x519600884}[255]{lang="EN-US"}[，虚拟转发器的失效下限为]{style="font-family:宋体"}[10]{lang="EN-US"}[。]{style="font-family:宋体"}
+·由于VF Owner的权重高于或等于失效下限时，它的优先级始终为255，不会根据虚拟转发器的权重改变。当监视的上行接口出现故障时，配置的权重降低数额需保证VF Owner的权重低于失效下限，即权重降低的数额大于245，其他的虚拟转发器才能接替VF Owner成为AVF。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[由于]{style="font-family:宋体"}]{#struct_0_18718_x1832_x317205786}[VF Owner]{lang="EN-US"}[的权重高于或等于失效下限时，它的优先级始终为]{style="font-family:宋体"}[255]{lang="EN-US"}[，不会根据虚拟转发器的权重改变。当监视的上行接口出现故障时，配置的权重降低数额需保证]{style="font-family:宋体"}[VF Owner]{lang="EN-US"}[的权重低于失效下限，即权重降低的数额大于]{style="font-family:宋体"}[245]{lang="EN-US"}[，其他的虚拟转发器才能接替]{style="font-family:宋体"}[VF Owner]{lang="EN-US"}[成为]{style="font-family:宋体"}[AVF]{lang="EN-US"}[。]{style="font-family:宋体"}
+·路由器在某个备份组中作为IP地址拥有者时，如果在该路由器上执行**vrrp ipv6 vrid track priority reduced**或**vrrp ipv6 vrid track switchover**命令，则该配置不会生效。该路由器不再作为IP地址拥有者后，之前的配置才会生效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由器在某个备份组中作为]{style="font-family:宋体"}]{#struct_0_18718_x1832_x353849512}[IP]{lang="EN-US"}[地址拥有者时，]{style="font-family:宋体"}[如果在该路由器上执行]{lang="EN-US" style="font-family:宋体"}**[vrrp ]{lang="EN-US"}[ipv6 ]{lang="EN-US"}[vrid track priority reduced]{lang="EN-US"}**[或]{lang="EN-US" style="font-family:宋体"}**[vrrp ]{lang="EN-US"}[ipv6 ]{lang="EN-US"}[vrid track switchover]{lang="EN-US"}**[命令，]{lang="EN-US" style="font-family:宋体"}[则该配置不会生效。该路由器不再作为]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址拥有者后，之前的配置才会生效。]{style="font-family:宋体"}
+·被监视的Track项的状态由Negative变为Positive或NotReady后，对应的路由器优先级会自动恢复、对应虚拟转发器的权重会自动恢复、故障恢复后的原Master路由器会重新抢占为Master状态、故障恢复后的原AVF会重新抢占为Active状态。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[被监视的]{style="font-family:宋体"}]{#struct_0_18718_x1832_1250239305}[Track]{lang="EN-US"}[项的状态由]{style="font-family:宋体"}[Negative]{lang="EN-US"}[变为]{style="font-family:宋体"}[Positive]{lang="EN-US"}[或]{style="font-family:宋体"}[NotReady]{lang="EN-US"}[后，对应的路由器优先级会自动恢复、对应虚拟转发器的权重会自动恢复、故障恢复后的原]{style="font-family:宋体"}[Master]{lang="EN-US"}[路由器会重新抢占为]{style="font-family:宋体"}[Master]{lang="EN-US"}[状态、故障恢复后的原]{style="font-family:宋体"}[AVF]{lang="EN-US"}[会重新抢占为]{style="font-family:宋体"}[Active]{lang="EN-US"}[状态。]{style="font-family:宋体"}
+·被监视的Track项可以是未创建的Track项。可以通过**vrrp ipv6 vrid track**命令指定监视的Track项后，再通过**track**命令创建该Track项。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[被监视的]{style="font-family:宋体"}]{#struct_0_18718_x1832_x196954300}[Track]{lang="EN-US"}[项可以是未创建的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项。]{style="font-family:宋体"}[可以通过]{lang="EN-US" style="font-family:宋体"}**[vrrp ipv6 vrid track]{lang="EN-US"}**[命令指定监视的]{lang="EN-US" style="font-family:
-宋体"}[Track]{lang="EN-US"}[项后，再通过]{lang="EN-US" style="font-family:宋体"}**[track]{lang="EN-US"}**[命令创建该]{lang="EN-US" style="font-family:宋体"}[Track]{lang="EN-US"}[项。]{lang="EN-US" style="font-family:宋体"}
+Track项的详细介绍请参见"可靠性配置指导"中的"Track"。
 
-[[Track]{lang="EN-US"}]{#struct_0_18718_x1832_347928822}[项的详细介绍请参见"可靠性配置指导"中的"]{style="font-family:宋体"}[Track]{lang="EN-US"}["。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18718_x1832_1817151341}
+·路由应用
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_1684181103}
+\# 在GigabitEthernet1/0/1接口上配置监视Track项1，当Track项1状态为Negative时，GigabitEthernet1/0/1接口上IPv6 VRRP备份组1的优先级降低50。
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x1429804051}[在]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[接口上配置监视]{style="font-family:宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[，当]{style="font-family:
-宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[状态为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[接口上]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[的优先级降低]{style="font-family:宋体"}[50]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_496912329}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 vrrp ipv6 vrid 1 track 1 priority reduced 50
 
-[\[Sysname-GigabitEthernet1/0/1\] vrrp ipv6 vrid 1 track 1 priority reduced 50]{lang="EN-US"}
+\# 在GigabitEthernet1/0/1接口上配置虚拟转发器监视Track项1，当Track项1状态为Negative时，如果本地设备上AVF地址为1::3的虚拟转发器处于Listening状态，则马上将该虚拟转发器切换到Active状态。
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_1789861598}[在]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[接口上配置虚拟转发器监视]{style="font-family:宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[，当]{style="font-family:
-宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[状态为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，如果本地设备上]{style="font-family:宋体"}[AVF]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1::3]{lang="EN-US"}[的虚拟转发器处于]{style="font-family:宋体"}[Listening]{lang="EN-US"}[状态，则马上将该虚拟转发器切换到]{style="font-family:宋体"}[Active]{lang="EN-US"}[状态。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_x931127586}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 vrrp ipv6 vrid 1 track 1 forwarder-switchover member-ip 1::3
 
-[\[Sysname-GigabitEthernet1/0/1\] vrrp ipv6 vrid 1 track 1 forwarder-switchover member-ip 1::3]{lang="EN-US"}
+\# 在GigabitEthernet1/0/1接口上配置虚拟转发器权重监视Track项1，当Track项1状态为Negative时，GigabitEthernet1/0/1接口上IPv6 VRRP备份组1所有虚拟转发器的权重都降低50。
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x1149991881}[在]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[接口上配置虚拟转发器权重监视]{style="font-family:宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[，当]{style="font-family:
-宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[状态为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[接口上]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[所有虚拟转发器的权重都降低]{style="font-family:宋体"}[50]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> sysname-view
 
-[[\<Sysname\> sysname-view]{lang="EN-US"}]{#struct_0_18718_x1832_x830500451}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 vrrp ipv6 vrid 1 track 1 weight reduced 50
 
-[\[Sysname-GigabitEthernet1/0/1\] vrrp ipv6 vrid 1 track 1 weight reduced 50]{lang="EN-US"}
+·交换应用
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_18718_x1832_1065196608}
+\# 在VLAN接口2上配置监视Track项1，当Track项1状态为Negative时，VLAN接口2上IPv6 VRRP备份组1的优先级降低50。
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_248778575}[在]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口]{style="font-family:宋体"}[2]{lang="EN-US"}[上配置监视]{style="font-family:宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[，当]{style="font-family:
-宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[状态为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口]{style="font-family:宋体"}[2]{lang="EN-US"}[上]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[的优先级降低]{style="font-family:宋体"}[50]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_x197019836}
+Sysname interface vlan-interface 2
 
-[\[Sysname\] interface vlan-interface 2]{lang="EN-US"}
+Sysname-Vlan-interface2 vrrp ipv6 vrid 1 track 1 priority reduced 50
 
-[\[Sysname-Vlan-interface2\] vrrp ipv6 vrid 1 track 1 priority reduced 50]{lang="EN-US"}
+\# 在VLAN接口2上配置虚拟转发器监视Track项1，当Track项1状态为Negative时，如果本地设备上AVF地址为1::3的虚拟转发器处于Listening状态，则马上将该虚拟转发器切换到Active状态。
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_206889593}[在]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口]{style="font-family:宋体"}[2]{lang="EN-US"}[上配置虚拟转发器监视]{style="font-family:宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[，当]{style="font-family:
-宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[状态为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，如果本地设备上]{style="font-family:宋体"}[AVF]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1::3]{lang="EN-US"}[的虚拟转发器处于]{style="font-family:宋体"}[Listening]{lang="EN-US"}[状态，则马上将该虚拟转发器切换到]{style="font-family:宋体"}[Active]{lang="EN-US"}[状态。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18718_x1832_1407524574}
+Sysname interface vlan-interface 2
 
-[\[Sysname\] interface vlan-interface 2]{lang="EN-US"}
+Sysname-Vlan-interface2 vrrp ipv6 vrid 1 track 1 forwarder-switchover member-ip 1::3
 
-[\[Sysname-Vlan-interface2\] vrrp ipv6 vrid 1 track 1 forwarder-switchover member-ip 1::3]{lang="EN-US"}
+\# 在VLAN接口2上配置虚拟转发器权重监视Track项1，当Track项1状态为Negative时，VLAN接口2上IPv6 VRRP备份组1所有虚拟转发器的权重都降低50。
 
-[[\# ]{lang="EN-US"}]{#struct_0_18718_x1832_x25889362}[在]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口]{style="font-family:宋体"}[2]{lang="EN-US"}[上配置虚拟转发器权重监视]{style="font-family:宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[，当]{style="font-family:
-宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[状态为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口]{style="font-family:宋体"}[2]{lang="EN-US"}[上]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[所有虚拟转发器的权重都降低]{style="font-family:宋体"}[50]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> sysname-view
 
-[[\<Sysname\> sysname-view]{lang="EN-US"}]{#struct_0_18718_x1832_690525502}
+Sysname interface vlan-interface2
 
-[\[Sysname\] interface vlan-interface2]{lang="EN-US"}
+Sysname-Vlan-interface2 vrrp ipv6 vrid 1 track 1 weight reduced 50
 
-[\[Sysname-Vlan-interface2\] vrrp ipv6 vrid 1 track 1 weight reduced 50]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18718_x1832_x1166406705}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **vrrp ipv6**]{lang="EN-US"}]{#struct_0_18718_x1832_1597887749}
-:::::
+·**display** **vrrp ipv6**

@@ -1,3898 +1,3533 @@
-::: {#320779778 .myid}
-[]{#_Toc216497575}[]{#_Toc137543097}[]{#_Toc33866010}[]{#_Toc33866008}[]{#_Toc404787689}[]{#struct_0_17903_10256_x750618855}[]{#_Toc313007758}[]{#_Toc286220949}[]{#_Toc286220951}[]{#_Toc286220952}[]{#_Toc286220953}[]{#_Toc286220954}[]{#_Toc286220955}[]{#_Toc286220956}[]{#_Toc286220957}[]{#_Toc286220958}[]{#_Toc286220959}[]{#_Toc286220960}[]{#_Toc286220961}[]{#_Toc286220962}[]{#_Toc286220963}[]{#_Toc286220964}[]{#_Toc286220965}[]{#_Toc286220967}[]{#_Toc135620324}[]{#_Toc135620327}[]{#_Toc135620328}[]{#_Toc135620329}[]{#_Toc135620330}[]{#_Toc135620331}[]{#_Toc135620332}[]{#_Toc135620333}[]{#_Toc135620334}[]{#_Toc135620335}[]{#_Toc135620336}[]{#_Toc135620337}[]{#_Toc135620338}[]{#_Toc135620339}[]{#_Toc135620340}[]{#_Toc135620341}[]{#_Toc135620342}[]{#_Toc135620343}[]{#_Toc135620345}[]{#_Toc135620346}[]{#_Toc135620347}[]{#_Toc135620348}[]{#_Toc135620349}[]{#_Toc135620350}[]{#_Toc135620351}[]{#_Toc135620352}[]{#_Toc135620354}[]{#_Toc135620355}[]{#_Toc135620356}[]{#_Toc135620357}[]{#_Toc135620358}[]{#_Toc135620359}[]{#_Hlt5077351}[]{#_Toc135620360}[]{#_Toc135620361}[]{#_Toc135620362}[]{#_Toc135620363}[]{#_Toc135620364}[]{#_Toc135620365}[]{#_Toc135620366}[]{#_Toc135620367}[]{#_Toc135620368}[]{#_Toc135620369}[]{#_Toc286220969}[]{#_Toc286220970}[]{#_Toc286220971}[]{#_Toc286220972}[]{#_Toc286220973}[]{#_Toc286220974}[]{#_Toc286220975}[]{#_Toc286220976}[]{#_Toc286220977}[]{#_Toc286220978}[]{#_Toc286220979}[]{#_Toc286220980}[]{#_Toc286220981}[]{#_Toc286220982}[]{#_Toc286220983}[]{#_Toc286220984}[]{#_Toc286220985}[]{#_Toc286220987}[]{#_Toc286220990}[]{#_Toc286220991}[]{#_Toc286220992}[]{#_Toc286220993}[]{#_Toc286220994}[]{#_Toc286220995}[]{#_Toc286220996}[]{#_Toc286220997}[]{#_Toc286220998}[]{#_Toc286220999}[]{#_Toc286221000}[]{#_Toc286221001}[]{#_Toc286221002}[]{#_Toc286221003}[]{#_Toc286221004}[]{#_Toc286221005}[]{#_Toc286221006}[]{#_Toc286221007}[]{#_Toc286221008}[]{#_Toc286221009}[]{#_Toc286221011}[]{#_Toc185153148}[]{#_Toc185153317}[]{#_Toc185153358}[]{#_Toc185153149}[]{#_Toc185153318}[]{#_Toc185153359}
 
 **RIP \-- RIP配置命令 \-- checkzero**
 
 ------------------------------------------------------------------------
 
-[**[checkzero]{lang="EN-US"}**]{#struct_0_17903_10256_x1623418969}[命令用来使能]{style="font-family:宋体"}[RIP-1]{lang="EN-US"}[报文的零域检查功能。]{style="font-family:宋体"}
+**[checkzero**]命令用来使能RIP-1报文的零域检查功能。
 
-[**[undo checkzero]{lang="EN-US"}**]{#struct_0_17903_10256_x466106149}[命令用来关闭零域检查功能。]{style="font-family:宋体"}
+**[undo checkzero**]命令用来关闭零域检查功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_657972319}
+【命令】
 
-[**[checkzero]{lang="EN-US"}**]{#struct_0_17903_10256_1993116430}
+**[checkzero**]
 
-[**[undo checkzero]{lang="EN-US"}**]{#struct_0_17903_10256_x2010234429}
+**[undo checkzero**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_2109396451}
+【缺省情况】
 
-[[RIP-1]{lang="EN-US"}]{#struct_0_17903_10256_1804599287}[报文的零域检查功能处于使能状态。]{style="font-family:宋体"}
+RIP-1报文的零域检查功能处于使能状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1476956101}
+【视图】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1233663217}[视图]{style="font-family:宋体"}
+RIP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_324484899}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_436461243}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_712779976}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_126628610}
+【使用指导】
 
-[[使能零域检查功能后，零域中包含非零位的]{style="font-family:宋体"}[RIP-1]{lang="EN-US"}]{#struct_0_17903_10256_779816880}[报文将被拒绝处理。如果用户能确保所有报文都是可信任的，则可以不进行该项检查，以节省]{style="font-family:宋体"}[CPU]{lang="EN-US"}[处理时间。]{style="font-family:宋体"}
+使能零域检查功能后，零域中包含非零位的RIP-1报文将被拒绝处理。如果用户能确保所有报文都是可信任的，则可以不进行该项检查，以节省CPU处理时间。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_938187311}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_1666720102}[关闭进程号为]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程对]{style="font-family:宋体"}[RIP-1]{lang="EN-US"}[报文的零域检查功能。]{style="font-family:宋体"}
+\# 关闭进程号为1的RIP进程对RIP-1报文的零域检查功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x1476890565}
+\<Sysname\> system-view
 
-[\[Sysname\] rip]{lang="EN-US"}
+Sysname rip
 
-[\[Sysname-rip-1\] undo checkzero]{lang="EN-US"}
-:::
-
-::: {#-1740075607 .myid}
-[]{#_Toc404787690}[]{#struct_0_17903_10256_1471179235}[]{#_Toc313007759}
+Sysname-rip-1 undo checkzero
 
 **RIP \-- RIP配置命令 \-- default cost**
 
 ------------------------------------------------------------------------
 
-[**[default cost]{lang="EN-US"}**]{#struct_0_17903_10256_2004884340}[命令用来配置引入路由的缺省度量值。]{style="font-family:宋体"}
+**[default cost**]命令用来配置引入路由的缺省度量值。
 
-[**[undo default cost]{lang="EN-US"}**]{#struct_0_17903_10256_x40245039}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo default cost**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x2129464983}
+【命令】
 
-[**[default cost ]{lang="EN-US"}***[value]{lang="EN-US"}*]{#struct_0_17903_10256_x144239261}
+**[default cost ***value*]
 
-[**[undo default cost]{lang="EN-US"}**]{#struct_0_17903_10256_1916348953}
+**[undo default cost**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1288525283}
+【缺省情况】
 
-[[引入路由的缺省度量值为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_17903_10256_x1476825029}[。]{style="font-family:宋体"}
+引入路由的缺省度量值为0。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_749203625}
+【视图】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_539895904}[视图]{style="font-family:宋体"}
+RIP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_1279864107}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_1936393835}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1510700580}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1661221967}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_17903_10256_x263583819}[：引入路由的缺省度量值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[16]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[value*]：引入路由的缺省度量值，取值范围为0～16。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_1862106871}
+【使用指导】
 
-[[当使用]{style="font-family:宋体"}**[import-route]{lang="EN-US"}**]{#struct_0_17903_10256_x1476759493}[命令从其它协议引入路由时，如果不指定具体的度量值，则引入路由的度量值为]{style="font-family:宋体"}**[default cost]{lang="EN-US"}**[所指定的值。]{style="font-family:宋体"}
+当使用**import-route**命令从其它协议引入路由时，如果不指定具体的度量值，则引入路由的度量值为**default cost**所指定的值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_171368926}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1568525031}[配置从其它路由协议引入路由的缺省度量值为]{style="font-family:宋体"}[3]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置从其它路由协议引入路由的缺省度量值为3。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x1415138008}
+\<Sysname\> system-view
 
-[\[Sysname\] rip 1]{lang="EN-US"}
+Sysname rip 1
 
-[\[Sysname-rip-1\] default cost 3]{lang="EN-US"}
+Sysname-rip-1 default cost 3
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_1967404493}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[import-route]{lang="EN-US"}**]{#struct_0_17903_10256_2041456059}
-:::
-
-::: {#1324881264 .myid}
-[]{#_Toc404787691}[]{#struct_0_17903_10256_469335092}[]{#_Toc313007760}
+·**import-route**
 
 **RIP \-- RIP配置命令 \-- default-route**
 
 ------------------------------------------------------------------------
 
-[**[default-route]{lang="EN-US"}**]{#struct_0_17903_10256_75973512}[命令用来配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程下的所有接口以指定度量值向]{style="font-family:宋体"}[RIP]{lang="EN-US"}[邻居发布一条缺省路由。]{style="font-family:宋体"}
+**[default-route**]命令用来配置RIP进程下的所有接口以指定度量值向RIP邻居发布一条缺省路由。
 
-[**[undo default-route]{lang="EN-US"}**]{#struct_0_17903_10256_1371591566}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo default-route**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1216167997}
+【命令】
 
-[**[default-route]{lang="EN-US"}**[ { **only** \| **originate** } \[ **cost** *cost* \| **route-policy** *route-policy-name* \] \*]{lang="EN-US"}]{#struct_0_17903_10256_x1476693957}
+**[default-route**[ { **only** \| **originate** } [ **cost** *cost* \| **route-policy** *route-policy-name* ] \*]]
 
-[**[undo default-route]{lang="EN-US"}**]{#struct_0_17903_10256_723222705}
+**[undo default-route**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_1005690245}
+【缺省情况】
 
-[[不向]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1136927652}[邻居发送缺省路由。]{style="font-family:宋体"}
+不向RIP邻居发送缺省路由。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1670466008}
+【视图】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1294126406}[视图]{style="font-family:宋体"}
+RIP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_1342521796}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x809322537}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x2134702130}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_377988909}
+【参数】
 
-[**[only]{lang="EN-US"}**]{#struct_0_17903_10256_x1477676997}[：]{style="font-family:宋体"}[配置只发送缺省路由，不发送普通路由。]{style="font-family:宋体"}
+**[only**]：配置只发送缺省路由，不发送普通路由。
 
-[**[originate]{lang="EN-US"}**]{#struct_0_17903_10256_x2095263282}[：]{style="font-family:宋体"}[配置既发送普通路由，又发送缺省路由。]{style="font-family:宋体"}
+**[originate**]：配置既发送普通路由，又发送缺省路由。
 
-[*[cost]{lang="EN-US"}*]{#struct_0_17903_10256_1510524210}[：]{style="font-family:宋体"}[缺省路由的度量值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[15]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[cost*]：缺省路由的度量值，取值范围为1～15，缺省值为1。
 
-[**[route-policy ]{lang="EN-US"}***[route-policy-name]{lang="EN-US"}*]{#struct_0_17903_10256_191197851}[：路由策略名称，]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。只有当前路由器的路由表中有路由匹配]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[指定的路由策略时，才发送缺省路由。]{style="font-family:宋体"}
+**[route-policy ***route-policy-name*]：路由策略名称，*route-policy-name*为1～63个字符的字符串，区分大小写。只有当前路由器的路由表中有路由匹配*route-policy-name*指定的路由策略时，才发送缺省路由。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_x2084120852}
+【使用指导】
 
-[[配置了发布缺省路由的]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_2101126511}[路由器不接收来自]{style="font-family:宋体"}[RIP]{lang="EN-US"}[邻居的缺省路由。]{style="font-family:宋体"}
+配置了发布缺省路由的RIP路由器不接收来自RIP邻居的缺省路由。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1907359683}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_1330116707}[配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程]{style="font-family:宋体"}[100]{lang="EN-US"}[的所有接口向]{style="font-family:宋体"}[RIP]{lang="EN-US"}[邻居发布一条度量值为]{style="font-family:宋体"}[2]{lang="EN-US"}[的缺省路由，而且只发送缺省路由，不发送普通路由。]{style="font-family:宋体"}
+\# 配置RIP进程100的所有接口向RIP邻居发布一条度量值为2的缺省路由，而且只发送缺省路由，不发送普通路由。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_145697734}
+\<Sysname\> system-view
 
-[\[Sysname\] rip 100]{lang="EN-US"}
+Sysname rip 100
 
-[\[Sysname-rip-100\] default-route only cost 2]{lang="EN-US"}
+Sysname-rip-100 default-route only cost 2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_1513747377}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[rip default-route]{lang="EN-US"}**]{#struct_0_17903_10256_x1477611461}
-:::
-
-::: {#-772695867 .myid}
-[]{#_Toc404787692}[]{#struct_0_17903_10256_1846930137}
+·**rip default-route**
 
 **RIP \-- RIP配置命令 \-- display rip**
 
 ------------------------------------------------------------------------
 
-[**[display rip]{lang="EN-US"}**]{#struct_0_17903_10256_x1765391698}[命令用来显示]{style="font-family:宋体"}[RIP]{lang="EN-US"}[的当前运行状态及配置信息。]{style="font-family:宋体"}
+**[display rip**]命令用来显示RIP的当前运行状态及配置信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_1034079123}
+【命令】
 
-[**[display rip]{lang="EN-US"}**[ \[ *process-id* \]]{lang="EN-US"}]{#struct_0_17903_10256_962676058}
+**[display rip** [ *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1634446946}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_17903_10256_2048077574}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_1090515029}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1388005927}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_17903_10256_x1477152708}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_1333191779}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_17903_10256_763076708}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_461085942}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17903_10256_1495604984}[：]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}[如果未指定本参数，则显示所有]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程的当前运行状态及配置信息。]{style="font-family:宋体"}
+*[process-id*]：RIP进程号，取值范围为1～65535。如果未指定本参数，则显示所有RIP进程的当前运行状态及配置信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1490801953}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_115945389}[显示所有]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程的当前运行状态及配置信息。]{style="font-family:宋体"}
+\# 显示所有RIP进程的当前运行状态及配置信息。
 
-[]{#_Toc216497576}[]{#_Toc137543098}[]{#_Toc94930673}[]{#_Toc93984708}[[\<Sysname\> display rip]{lang="EN-US"}]{#struct_0_17903_10256_x1477087172}
+\<Sysname\> display rip
 
-[  Public VPN-instance name:]{lang="EN-US"}
+  Public VPN-instance name:
 
-[    RIP process: 1]{lang="EN-US"}
+    RIP process: 1
 
-[       RIP version: 1]{lang="EN-US"}
+       RIP version: 1
 
-[       Preference: 100]{lang="EN-US"}
+       Preference: 100
 
-[           Routing policy: abc]{lang="EN-US"}
+           Routing policy: abc
 
-[       Fast-reroute:]{lang="EN-US"}
+       Fast-reroute:
 
-[           Routing policy: frr]{lang="EN-US"}
+           Routing policy: frr
 
-[       Checkzero: Enabled]{lang="EN-US"}
+       Checkzero: Enabled
 
-[       Default cost: 0]{lang="EN-US"}
+       Default cost: 0
 
-[       Summary: Enabled]{lang="EN-US"}
+       Summary: Enabled
 
-[       Host routes: Enabled]{lang="EN-US"}
+       Host routes: Enabled
 
-[       Maximum number of load balanced routes: 8]{lang="EN-US"}
+       Maximum number of load balanced routes: 8
 
-[       Update time   :   30 secs  Timeout time         :  180 secs]{lang="EN-US"}
+       Update time   :   30 secs  Timeout time         :  180 secs
 
-[       Suppress time :  120 secs  Garbage-collect time :  120 secs]{lang="EN-US"}
+       Suppress time :  120 secs  Garbage-collect time :  120 secs
 
-[       Update output delay:   20(ms)  Output count:    3]{lang="EN-US"}
+       Update output delay:   20(ms)  Output count:    3
 
-[       Silent interfaces: None]{lang="EN-US"}
+       Silent interfaces: None
 
-[       Default routes: Originate  Default routes cost: 3]{lang="EN-US"}
+       Default routes: Originate  Default routes cost: 3
 
-[       Verify-source: Enabled]{lang="EN-US"}
+       Verify-source: Enabled
 
-[       Networks:]{lang="EN-US"}
+       Networks:
 
-[           1.0.0.0]{lang="EN-US"}
+           1.0.0.0
 
-[       Configured peers:]{lang="EN-US"}
+       Configured peers:
 
-[           197.168.6.2]{lang="EN-US"}
+           197.168.6.2
 
-[       Triggered updates sent: 0]{lang="EN-US"}
+       Triggered updates sent: 0
 
-[       Number of routes changes: 1]{lang="EN-US"}
+       Number of routes changes: 1
 
-[       Number of replies to queries: 0]{lang="EN-US"}
+       Number of replies to queries: 0
 
-[]{#struct_0_17903_10256_362299776}[]{#_Toc99255016}[[表1-1 ]{lang="EN-US"}[display rip]{lang="EN-US"}]{#_Toc81210244}[命令显示信息]{style="font-family:黑体"}[描述表]{style="font-family:黑体"}
+表1-1 display rip命令显示信息描述表
 
-[]{#table_struct_0_1048860866}[[字段]{style="font-family:黑体"}]{#struct_0_17903_10256_x1477021636}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17903_10256_1346755687}
+描述
 
-[[Public VPN-instance name/Private VPN-instance name]{lang="EN-US"}]{#struct_0_17903_10256_893379996}
+Public VPN-instance name/Private VPN-instance name
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x113746216}[进程运行在公网实例下]{style="font-family:宋体"}[/RIP]{lang="EN-US"}[进程应用于指定]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例]{style="font-family:宋体"}
+RIP进程运行在公网实例下/RIP进程应用于指定VPN实例
 
-[[RIP process]{lang="EN-US"}]{#struct_0_17903_10256_x1923040265}
+RIP process
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1381693706}[进程号]{style="font-family:宋体"}
+RIP进程号
 
-[[RIP version ]{lang="EN-US"}]{#struct_0_17903_10256_1263403669}
+RIP version
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1476956100}[版本]{style="font-family:宋体"}
+RIP版本
 
-[[Preference]{lang="EN-US"}]{#struct_0_17903_10256_1495220138}
+Preference
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_2004375788}[路由优先级]{style="font-family:宋体"}
+RIP路由优先级
 
-[[Fast-reroute]{lang="EN-US"}]{#struct_0_17903_10256_x838836779}
+Fast-reroute
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1890453026}[快速重路由]{style="font-family:宋体"}
+RIP快速重路由
 
-[[Routing policy]{lang="EN-US"}]{#struct_0_17903_10256_1722970964}
+Routing policy
 
-[[路由策略]{style="font-family:宋体"}]{#struct_0_17903_10256_x1476890564}
+路由策略
 
-[[Checkzero]{lang="EN-US"}]{#struct_0_17903_10256_x94904706}
+Checkzero
 
-[[是否使能对]{style="font-family:宋体"}[RIP-1]{lang="EN-US"}]{#struct_0_17903_10256_595970401}[报文的零域进行检查的功能]{style="font-family:宋体"}
+是否使能对RIP-1报文的零域进行检查的功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enable]{lang="EN-US"}]{#struct_0_17903_10256_342508105}[表示已使能]{lang="EN-US" style="font-family:宋体"}
+·Enable表示已使能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_17903_10256_x1380212748}[表示关闭]{lang="EN-US" style="font-family:宋体"}
+·Disabled表示关闭
 
-[[Default cost]{lang="EN-US"}]{#struct_0_17903_10256_x1476825028}
+Default cost
 
-[[引入路由的缺省度量值]{style="font-family:宋体"}]{#struct_0_17903_10256_x1979679730}
+引入路由的缺省度量值
 
-[[Summary]{lang="EN-US"}]{#struct_0_17903_10256_579266732}
+Summary
 
-[[路由聚合功能是否使能]{style="font-family:宋体"}]{#struct_0_17903_10256_x213664505}
+路由聚合功能是否使能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_17903_10256_x1880447669}[表示已使能]{lang="EN-US" style="font-family:宋体"}
+·Enabled表示已使能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_17903_10256_x1476759492}[表示关闭]{lang="EN-US" style="font-family:宋体"}
+·Disabled表示关闭
 
-[[Host routes]{lang="EN-US"}]{#struct_0_17903_10256_x1394715015}
+Host routes
 
-[[是否允许接收主机路由]{style="font-family:宋体"}]{#struct_0_17903_10256_968199586}
+是否允许接收主机路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_17903_10256_1576459631}[表示允许]{lang="EN-US" style="font-family:宋体"}
+·Enabled表示允许
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_17903_10256_x1476693956}[表示不允许]{lang="EN-US" style="font-family:宋体"}
+·Disabled表示不允许
 
-[[Maximum number of load balanced routes]{lang="EN-US"}]{#struct_0_17903_10256_x842861236}
+Maximum number of load balanced routes
 
-[[等价路由的最大数目]{style="font-family:宋体"}]{#struct_0_17903_10256_x1541634450}
+等价路由的最大数目
 
-[[Update time]{lang="EN-US"}]{#struct_0_17903_10256_1473893090}
+Update time
 
-[[Update]{lang="EN-US"}]{#struct_0_17903_10256_x907564895}[定时器的值，单位为秒]{style="font-family:宋体"}
+Update定时器的值，单位为秒
 
-[[Timeout time]{lang="EN-US"}]{#struct_0_17903_10256_x1477676996}
+Timeout time
 
-[[Timeout]{lang="EN-US"}]{#struct_0_17903_10256_633620073}[定时器的值，单位为秒]{style="font-family:宋体"}
+Timeout定时器的值，单位为秒
 
-[[Suppress time]{lang="EN-US"}]{#struct_0_17903_10256_114554707}
+Suppress time
 
-[[Suppress]{lang="EN-US"}]{#struct_0_17903_10256_x771621849}[定时器的值，单位为秒]{style="font-family:宋体"}
+Suppress定时器的值，单位为秒
 
-[[Update output delay]{lang="EN-US"}]{#struct_0_17903_10256_x1477611460}
+Update output delay
 
-[[接口发送]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_280846196}[报文的时间间隔]{style="font-family:宋体"}
+接口发送RIP报文的时间间隔
 
-[[Output count]{lang="EN-US"}]{#struct_0_17903_10256_x651457402}
+Output count
 
-[[接口一次发送]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x2130853301}[报文的最大个数]{style="font-family:宋体"}
+接口一次发送RIP报文的最大个数
 
-[[Garbage-collect time]{lang="EN-US"}]{#struct_0_17903_10256_88931236}
+Garbage-collect time
 
-[[Garbage-Collect]{lang="EN-US"}]{#struct_0_17903_10256_467790823}[定时器的值，单位为秒]{style="font-family:宋体"}
+Garbage-Collect定时器的值，单位为秒
 
-[[Silent interfaces]{lang="EN-US"}]{#struct_0_17903_10256_328956389}
+Silent interfaces
 
-[[工作在抑制状态的接口（这些接口不发送周期更新报文）]{style="font-family:宋体"}]{#struct_0_17903_10256_x1450509645}
+工作在抑制状态的接口（这些接口不发送周期更新报文）
 
-[[Default routes]{lang="EN-US"}]{#struct_0_17903_10256_88996772}
+Default routes
 
-[[是否向]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x368132526}[邻居发布一条缺省路由]{style="font-family:宋体"}
+是否向RIP邻居发布一条缺省路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Only]{lang="EN-US"}]{#struct_0_17903_10256_x1912534539}[：表示只发布缺省路由]{lang="EN-US" style="font-family:宋体"}
+·Only：表示只发布缺省路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Originate]{lang="EN-US"}]{#struct_0_17903_10256_89062308}[：表示同时发布缺省路由和普通路由]{lang="EN-US" style="font-family:宋体"}
+·Originate：表示同时发布缺省路由和普通路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_17903_10256_x1665002248}[：表示不发布缺省路由]{lang="EN-US" style="font-family:宋体"}
+·Disabled：表示不发布缺省路由
 
-[[Default routes cost]{lang="EN-US"}]{#struct_0_17903_10256_284203607}
+Default routes cost
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_460684218}[进程下发布缺省路由的度量值]{style="font-family:宋体"}
+RIP进程下发布缺省路由的度量值
 
-[[Verify-source]{lang="EN-US"}]{#struct_0_17903_10256_89127844}
+Verify-source
 
-[[是否使能对接收到的]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x2100836198}[路由更新报文进行源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址检查的功能]{style="font-family:宋体"}
+是否使能对接收到的RIP路由更新报文进行源IP地址检查的功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enable]{lang="EN-US"}]{#struct_0_17903_10256_x111781392}[表示已使能]{lang="EN-US" style="font-family:宋体"}
+·Enable表示已使能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_17903_10256_89193380}[表示关闭]{lang="EN-US" style="font-family:宋体"}
+·Disabled表示关闭
 
-[[Networks]{lang="EN-US"}]{#struct_0_17903_10256_x1388340470}
+Networks
 
-[[使能]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1461741960}[的网段地址]{style="font-family:宋体"}
+使能RIP的网段地址
 
-[[Configured peers]{lang="EN-US"}]{#struct_0_17903_10256_89258916}
+Configured peers
 
-[[配置的邻居]{style="font-family:宋体"}]{#struct_0_17903_10256_x320431729}
+配置的邻居
 
-[[Triggered updates sent]{lang="EN-US"}]{#struct_0_17903_10256_x1564969483}
+Triggered updates sent
 
-[[发送的触发更新报文数]{style="font-family:宋体"}]{#struct_0_17903_10256_89324452}
+发送的触发更新报文数
 
-[[Number of routes changes]{lang="EN-US"}]{#struct_0_17903_10256_x27082980}
+Number of routes changes
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x549525104}[进程改变路由数据库的统计数据]{style="font-family:宋体"}
+RIP进程改变路由数据库的统计数据
 
-[[Number of replies to queries]{lang="EN-US"}]{#struct_0_17903_10256_89389988}
+Number of replies to queries
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x924931322}[请求的响应报文数]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1979703623 .myid}
-[]{#_Toc404787693}[]{#struct_0_17903_10256_389903958}
+RIP请求的响应报文数
 
 **RIP \-- RIP配置命令 \-- display rip database**
 
 ------------------------------------------------------------------------
 
-[**[display rip]{lang="EN-US"}**[ **database**]{lang="EN-US"}]{#struct_0_17903_10256_x193841472}[命令用来显示]{style="font-family:宋体"}[RIP]{lang="EN-US"}[数据库的激活路由，这些路由以常规]{style="font-family:宋体"}[RIP]{lang="EN-US"}[更新报文的形式发送。]{style="font-family:宋体"}
+**[display rip** **database**]命令用来显示RIP数据库的激活路由，这些路由以常规RIP更新报文的形式发送。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x2113228277}
+【命令】
 
-[**[display rip]{lang="EN-US"}**[ *process-id* **database** \[ *ip-address* { *mask-length* \| *mask* } \]]{lang="EN-US"}]{#struct_0_17903_10256_x1501486530}
+**[display rip**[ *process-id* **database** [ *ip-address* { *mask-length* \| *mask* } ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x2108375540}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_17903_10256_x1415457176}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_88406948}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1056742796}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_17903_10256_x1030873965}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x756341922}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_17903_10256_x1568899670}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1222245132}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17903_10256_x1052925052}[：]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：RIP进程号，取值范围为1～65535。
 
-[*[ip-address]{lang="EN-US"}*[ { *mask-length* \| *mask* }]{lang="EN-US"}]{#struct_0_17903_10256_x331027508}[：显示指定目的地址和掩码的激活路由信息。]{style="font-family:宋体"}[如果未指定本参数，将显示]{style="font-family:宋体"}[RIP]{lang="EN-US"}[的所有激活路由信息。]{style="font-family:宋体"}
+*[ip-address*[ { *mask-length* \| *mask* }]]：显示指定目的地址和掩码的激活路由信息。如果未指定本参数，将显示RIP的所有激活路由信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1796176930}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_88472484}[显示]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程]{style="font-family:宋体"}[100]{lang="EN-US"}[数据库的所有激活路由。]{style="font-family:宋体"}
+\# 显示RIP进程100数据库的所有激活路由。
 
-[[\<Sysname\> display rip 100 database]{lang="EN-US"}]{#struct_0_17903_10256_x318711364}
+\<Sysname\> display rip 100 database
 
-[   1.0.0.0/8, auto-summary]{lang="EN-US"}
+   1.0.0.0/8, auto-summary
 
-[       1.1.1.0/24, cost 16, interface summary]{lang="EN-US"}
+       1.1.1.0/24, cost 16, interface summary
 
-[       1.1.1.0/24, cost 0, nexthop 1.1.1.1, RIP-interface]{lang="EN-US"}
+       1.1.1.0/24, cost 0, nexthop 1.1.1.1, RIP-interface
 
-[       1.1.2.0/24, cost 0, imported]{lang="EN-US"}
+       1.1.2.0/24, cost 0, imported
 
-[   2.0.0.0/8, auto-summary]{lang="EN-US"}
+   2.0.0.0/8, auto-summary
 
-[   2.0.0.0/8, cost 1, nexthop 1.1.1.2]{lang="EN-US"}
+   2.0.0.0/8, cost 1, nexthop 1.1.1.2
 
-[]{#_Toc94753847}[]{#_Toc94671173}[]{#_Toc73952254}[]{#_Toc68319386}[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_1028218403}[显示]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程]{style="font-family:宋体"}[100]{lang="EN-US"}[数据库中指定地址和掩码为]{style="font-family:宋体"}[1.1.1.0/24]{lang="EN-US"}[的激活路由。]{style="font-family:宋体"}
+\# 显示RIP进程100数据库中指定地址和掩码为1.1.1.0/24的激活路由。
 
-[[\<Sysname\> display rip 100 database 1.1.1.0 24]{lang="EN-US"}]{#struct_0_17903_10256_163371258}
+\<Sysname\> display rip 100 database 1.1.1.0 24
 
-[   1.1.1.0/24, cost 16, interface summary]{lang="EN-US"}
+   1.1.1.0/24, cost 16, interface summary
 
-[   1.1.1.0/24, cost 0, nexthop 1.1.1.1, RIP-interface]{lang="EN-US"}
+   1.1.1.0/24, cost 0, nexthop 1.1.1.1, RIP-interface
 
-[[表1-2 ]{lang="EN-US"}[display rip database]{lang="EN-US"}]{#struct_0_17903_10256_687603191}[命令显示]{style="font-family:黑体"}[信息描述表]{style="font-family:黑体"}
+表1-2 display rip database命令显示信息描述表
 
-[]{#table_struct_0_1040382703}[[字段]{style="font-family:黑体"}]{#struct_0_17903_10256_x708271384}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17903_10256_590701906}
+描述
 
-[[cost]{lang="EN-US"}]{#struct_0_17903_10256_88931237}
+cost
 
-[[度量值]{style="font-family:宋体"}]{#struct_0_17903_10256_x1870861337}
+度量值
 
-[[auto-summary]{lang="EN-US"}]{#struct_0_17903_10256_1892105670}
+auto-summary
 
-[[表示该条路由是]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1004620190}[的自动聚合路由]{style="font-family:宋体"}
+表示该条路由是RIP的自动聚合路由
 
-[[interface summary]{lang="EN-US"}]{#struct_0_17903_10256_x103444836}
+interface summary
 
-[[表示该条路由是]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1083753423}[的接口聚合路由]{style="font-family:宋体"}
+表示该条路由是RIP的接口聚合路由
 
-[[nexthop]{lang="EN-US"}]{#struct_0_17903_10256_88996773}
+nexthop
 
-[[下一跳地址]{style="font-family:宋体"}]{#struct_0_17903_10256_1588182610}
+下一跳地址
 
-[[RIP-interface]{lang="EN-US"}]{#struct_0_17903_10256_581537307}
+RIP-interface
 
-[[使能]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1325820294}[协议的接口的直连路由]{style="font-family:宋体"}
+使能RIP协议的接口的直连路由
 
-[[imported]{lang="EN-US"}]{#struct_0_17903_10256_1246664741}
+imported
 
-[[表示该条路由是从其它路由协议引入的]{style="font-family:宋体"}]{#struct_0_17903_10256_706179364}
-
-[ ]{lang="EN-US"}
-
-::::: {#323263383 .myid}
-[]{#_Toc404787694}[]{#struct_0_17903_10256_1757281787}[]{#_Toc375235975}
+表示该条路由是从其它路由协议引入的
 
 **RIP \-- RIP配置命令 \-- display rip graceful-restart**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](RIP命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_17903_10256_x759123793}
-:::
+![说明](RIP命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_17903_10256_x580807637}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[display rip graceful-restart**]命令用来显示RIP进程的GR状态信息。
 
-[**[display rip graceful-restart]{lang="EN-US"}**]{#struct_0_17903_10256_x37117119}[命令用来显示]{style="font-family:
-宋体"}[RIP]{lang="EN-US"}[进程的]{style="font-family:宋体"}[GR]{lang="EN-US"}[状态信息。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x430535334}
+**[display rip** [ *process-id*  **graceful-restart**]]
 
-[**[display rip]{lang="EN-US"}**[ \[ *process-id* \] **graceful-restart**]{lang="EN-US"}]{#struct_0_17903_10256_1380883308}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_1756954107}
+任意视图
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_17903_10256_358895997}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_568999332}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x937496371}
+network-operator
 
-[[network-operator]{lang="EN-US"}]{#struct_0_17903_10256_x1515325086}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1508413401}
+mdc-operator
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_17903_10256_1756888571}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_x458831641}
+*[process-id*]：RIP进程号，取值范围为1～65535。如果未指定本参数，则显示所有RIP进程的GR状态信息。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17903_10256_1722580590}[：]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}[如果未指定本参数，则显示所有]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程的]{style="font-family:宋体"}[GR]{lang="EN-US"}[状态信息。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_393294659}
+\# 显示RIP 1进程的GR状态信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_1435312709}[显示]{style="font-family:宋体"}[RIP 1]{lang="EN-US"}[进程的]{style="font-family:宋体"}[GR]{lang="EN-US"}[状态信息。]{style="font-family:宋体"}
+\<Sysname\> display rip 1 graceful-restart
 
-[[\<Sysname\> display rip 1 graceful-restart]{lang="EN-US"}]{#struct_0_17903_10256_1757085179}
+ RIP process: 1
 
-[ RIP process: 1]{lang="EN-US"}
+ Graceful Restart capability     : Enabled
 
-[ Graceful Restart capability     : Enabled]{lang="EN-US"}
+ Current GR state                : Normal
 
-[ Current GR state                : Normal]{lang="EN-US"}
+ Graceful Restart period         : 60  seconds
 
-[ Graceful Restart period         : 60  seconds]{lang="EN-US"}
+ Graceful Restart remaining time : 0   seconds
 
-[ Graceful Restart remaining time : 0   seconds]{lang="EN-US"}
+表1-3 display rip graceful-restart命令显示信息描述表
 
-[[表1-3 ]{lang="EN-US"}[display rip graceful-restart]{lang="EN-US"}]{#struct_0_17903_10256_x1938104816}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x938664825}[[字段]{style="font-family:黑体"}]{#struct_0_17903_10256_x1316328768}
-:::::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17903_10256_x493608635}
+Graceful Restart capability
 
-[[Graceful Restart capability]{lang="EN-US"}]{#struct_0_17903_10256_x190152308}
+GR使能状态
 
-[[GR]{lang="EN-US"}]{#struct_0_17903_10256_1757019643}[使能状态]{style="font-family:宋体"}
+·Enabled：使能了GR能力
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_17903_10256_1911969105}[：]{lang="EN-US" style="font-family:宋体"}[使能了]{lang="EN-US" style="font-family:宋体"}[GR]{lang="EN-US"}[能力]{lang="EN-US" style="font-family:宋体"}
+·Disabled：关闭了GR能力
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_17903_10256_1407857723}[：]{lang="EN-US" style="font-family:宋体"}[关闭了]{lang="EN-US" style="font-family:宋体"}[GR]{lang="EN-US"}[能力]{lang="EN-US" style="font-family:宋体"}
+Current GR state
 
-[[Current GR state]{lang="EN-US"}]{#struct_0_17903_10256_1169260725}
+当前GR所处状态
 
-[[当前]{style="font-family:宋体"}[GR]{lang="EN-US"}]{#struct_0_17903_10256_1757740539}[所处状态]{style="font-family:宋体"}
+·Under GR：进程正在GR
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Under GR]{lang="EN-US"}]{#struct_0_17903_10256_x1968167764}[：进程正在]{lang="EN-US" style="font-family:宋体"}[GR]{lang="EN-US"}
+·Normal：普通状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Normal]{lang="EN-US"}]{#struct_0_17903_10256_1214310900}[：普通状态]{lang="EN-US" style="font-family:宋体"}
+Graceful Restart period
 
-[[Graceful Restart period]{lang="EN-US"}]{#struct_0_17903_10256_1958610248}
+GR重启间隔时间
 
-[[GR]{lang="EN-US"}]{#struct_0_17903_10256_1757675003}[重启间隔时间]{style="font-family:宋体"}
+Graceful Restart remaining time
 
-[[Graceful Restart remaining time]{lang="EN-US"}]{#struct_0_17903_10256_366534087}
-
-[[GR]{lang="EN-US"}]{#struct_0_17903_10256_x2024912155}[结束剩余时间]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1232980620 .myid}
-[]{#_Toc404787695}[]{#struct_0_17903_10256_89062309}[]{#_Toc216497577}[]{#_Toc137543099}[]{#_Toc97787989}
+GR结束剩余时间
 
 **RIP \-- RIP配置命令 \-- display rip interface**
 
 ------------------------------------------------------------------------
 
-[**[display rip interface]{lang="EN-US"}**]{#struct_0_17903_10256_673649912}[命令用来显示]{style="font-family:宋体"}[RIP]{lang="EN-US"}[的接口信息。]{style="font-family:宋体"}
+**[display rip interface**]命令用来显示RIP的接口信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_619521772}
+【命令】
 
-[**[display rip ]{lang="EN-US"}***[process-id]{lang="EN-US"}***[ interface ]{lang="EN-US"}**[\[ *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_17903_10256_1659481983}
+**[display rip ***process-id*** interface ** *interface-type interface-number* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1610633223}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_17903_10256_1395430377}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1982375898}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1581096561}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_17903_10256_55122614}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_89127845}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_17903_10256_237815962}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_1026625200}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17903_10256_756864461}[：]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：RIP进程号，取值范围为1～65535。
 
-[*[interface-type interface-number]{lang="EN-US"}*]{#struct_0_17903_10256_697830284}[：接口类型和编号。如果未指定本参数，将显示]{style="font-family:宋体"}[RIP]{lang="EN-US"}[的所有接口信息。]{style="font-family:宋体"}
+*[interface-type interface-number*]：接口类型和编号。如果未指定本参数，将显示RIP的所有接口信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1048551}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1615832656}[显示]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[的接口信息。]{style="font-family:宋体"}
+\# 显示RIP进程1的接口信息。
 
-[[\<Sysname\> display rip 1 interface]{lang="EN-US"}]{#struct_0_17903_10256_89193381}
+\<Sysname\> display rip 1 interface
 
-[ Interface: GigabitEthernet1/0/2]{lang="EN-US"}
+ Interface: GigabitEthernet1/0/2
 
-[    Address/Mask: 1.1.1.1/24          Version: RIPv1]{lang="EN-US"}
+    Address/Mask: 1.1.1.1/24          Version: RIPv1
 
-[    MetricIn: 0                       MetricIn route policy: Not designated]{lang="EN-US"}
+    MetricIn: 0                       MetricIn route policy: Not designated
 
-[    MetricOut: 1                      MetricOut route policy: Not designated]{lang="EN-US"}
+    MetricOut: 1                      MetricOut route policy: Not designated
 
-[    Split-horizon/Poison-reverse: On/Off  Input/Output: On/On]{lang="EN-US"}
+    Split-horizon/Poison-reverse: On/Off  Input/Output: On/On
 
-[    Default route: Off]{lang="EN-US"}
+    Default route: Off
 
-[    Update output delay:  20(ms)      Output count: 3]{lang="EN-US"}
+    Update output delay:  20(ms)      Output count: 3
 
-[    Current number of packets/Maximum number of packets: 0/2000]{lang="EN-US"}
+    Current number of packets/Maximum number of packets: 0/2000
 
-[[表1-4 ]{lang="EN-US"}[display rip interface]{lang="EN-US"}]{#struct_0_17903_10256_567974666}[命令显示信息描述表]{style="font-family:黑体"}
+表1-4 display rip interface命令显示信息描述表
 
-[]{#table_struct_0_1042859167}[[字段]{style="font-family:黑体"}]{#struct_0_17903_10256_485351501}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17903_10256_986892585}
+描述
 
-[[Interface]{lang="EN-US"}]{#struct_0_17903_10256_x1502823991}
+Interface
 
-[[运行]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1374890132}[协议的接口的名称]{style="font-family:宋体"}
+运行RIP协议的接口的名称
 
-[[Address/Mask]{lang="EN-US"}]{#struct_0_17903_10256_x1883425792}
+Address/Mask
 
-[[运行]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_89258917}[协议的接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[/]{lang="EN-US"}[掩码]{style="font-family:宋体"}
+运行RIP协议的接口的IP地址/掩码
 
-[[Version]{lang="EN-US"}]{#struct_0_17903_10256_1635883407}
+Version
 
-[[接口上运行的]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_542345389}[协议的版本]{style="font-family:宋体"}
+接口上运行的RIP协议的版本
 
-[[MetricIn]{lang="EN-US"}]{#struct_0_17903_10256_x1986428632}
+MetricIn
 
-[[接收路由的附加度量值]{style="font-family:宋体"}]{#struct_0_17903_10256_1732378458}
+接收路由的附加度量值
 
-[[MetricIn route policy]{lang="EN-US"}]{#struct_0_17903_10256_x320226792}
+MetricIn route policy
 
-[[接收路由的附加度量值应用的路由策略，取值为]{style="font-family:宋体"}[Not designated]{lang="EN-US"}]{#struct_0_17903_10256_89324453}[表示没有对接收路由的附加度量值使用路由策略，如果对接收路由的附加度量值使用了路由策略，取值为使用的路由策略名称]{style="font-family:宋体"}
+接收路由的附加度量值应用的路由策略，取值为Not designated表示没有对接收路由的附加度量值使用路由策略，如果对接收路由的附加度量值使用了路由策略，取值为使用的路由策略名称
 
-[[MetricOut]{lang="EN-US"}]{#struct_0_17903_10256_x1983398116}
+MetricOut
 
-[[发送路由的附加度量值]{style="font-family:宋体"}]{#struct_0_17903_10256_1846660525}
+发送路由的附加度量值
 
-[[MetricOut route policy]{lang="EN-US"}]{#struct_0_17903_10256_x1014152302}
+MetricOut route policy
 
-[[发送路由的附加度量值应用的路由策略，取值为]{style="font-family:宋体"}[Not designated]{lang="EN-US"}]{#struct_0_17903_10256_428540933}[表示没有对发送路由的附加度量值使用路由策略，如果对发送路由的附加度量值使用了路由策略，取值为使用的路由策略名称]{style="font-family:宋体"}
+发送路由的附加度量值应用的路由策略，取值为Not designated表示没有对发送路由的附加度量值使用路由策略，如果对发送路由的附加度量值使用了路由策略，取值为使用的路由策略名称
 
-[[Split-horizon]{lang="EN-US"}]{#struct_0_17903_10256_89389989}
+Split-horizon
 
-[[是否使能了水平分割（]{style="font-family:宋体"}[On]{lang="EN-US"}]{#struct_0_17903_10256_1413720838}[表示使能，]{style="font-family:宋体"}[Off]{lang="EN-US"}[表示关闭）]{style="font-family:宋体"}
+是否使能了水平分割（On表示使能，Off表示关闭）
 
-[[Poison-reverse]{lang="EN-US"}]{#struct_0_17903_10256_x8321849}
+Poison-reverse
 
-[[是否使能了毒性逆转（]{style="font-family:宋体"}[On]{lang="EN-US"}]{#struct_0_17903_10256_x1159057049}[表示使能，]{style="font-family:宋体"}[Off]{lang="EN-US"}[表示关闭）]{style="font-family:宋体"}
+是否使能了毒性逆转（On表示使能，Off表示关闭）
 
-[[Input/Output]{lang="EN-US"}]{#struct_0_17903_10256_x1435096414}
+Input/Output
 
-[[是否允许接口接收（]{style="font-family:宋体"}[Input]{lang="EN-US"}]{#struct_0_17903_10256_727017859}[）]{style="font-family:宋体"}[/]{lang="EN-US"}[发送（]{style="font-family:宋体"}[Output]{lang="EN-US"}[）]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文（]{style="font-family:宋体"}[On]{lang="EN-US"}[表示允许，]{style="font-family:宋体"}[Off]{lang="EN-US"}[表示不允许）]{style="font-family:宋体"}
+是否允许接口接收（Input）/发送（Output）RIP报文（On表示允许，Off表示不允许）
 
-[[Default route]{lang="EN-US"}]{#struct_0_17903_10256_88406949}
+Default route
 
-[[是否允许向]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1281909364}[邻居发送缺省路由]{style="font-family:宋体"}
+是否允许向RIP邻居发送缺省路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Only]{lang="EN-US"}]{#struct_0_17903_10256_x1228323312}[：表示只发布缺省路由]{lang="EN-US" style="font-family:宋体"}
+·Only：表示只发布缺省路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Originate]{lang="EN-US"}]{#struct_0_17903_10256_x384260358}[：表示同时发布缺省路由和普通路由]{lang="EN-US" style="font-family:宋体"}
+·Originate：表示同时发布缺省路由和普通路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No-originate]{lang="EN-US"}]{#struct_0_17903_10256_x143047613}[：表示]{lang="EN-US" style="font-family:宋体"}[只]{style="font-family:宋体"}[发布]{lang="EN-US" style="font-family:宋体"}[普通]{style="font-family:宋体"}[路由]{lang="EN-US" style="font-family:宋体"}
+·No-originate：表示只发布普通路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Off]{lang="EN-US"}]{#struct_0_17903_10256_88472485}[：表示不发布缺省路由]{lang="EN-US" style="font-family:宋体"}
+·Off：表示不发布缺省路由
 
-[[Default route cost]{lang="EN-US"}]{#struct_0_17903_10256_1637603772}
+Default route cost
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_878676334}[接口下配置发布缺省路由的]{style="font-family:宋体"}[度量]{style="font-family:宋体"}[值]{style="font-family:宋体"}
+RIP接口下配置发布缺省路由的度量值
 
-[[Update output delay]{lang="EN-US"}]{#struct_0_17903_10256_x307226882}
+Update output delay
 
-[[接口发送]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x307161346}[报文的时间间隔]{style="font-family:宋体"}
+接口发送RIP报文的时间间隔
 
-[[Output count]{lang="EN-US"}]{#struct_0_17903_10256_701719926}
+Output count
 
-[[接口一次发送]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x427418693}[报文的最大个数]{style="font-family:宋体"}
+接口一次发送RIP报文的最大个数
 
-[[Current number of packets /Maximum number of packets]{lang="EN-US"}]{#struct_0_17903_10256_x2144854952}
+Current number of packets /Maximum number of packets
 
-[[显示当前接口待发送的报文数量和最多可以发送的报文数量]{style="font-family:宋体"}]{#struct_0_17903_10256_x997732580}
-
-[ ]{lang="EN-US"}
-
-::: {#633263808 .myid}
-[]{#_Toc404787696}[]{#struct_0_17903_10256_1757281788}
+显示当前接口待发送的报文数量和最多可以发送的报文数量
 
 **RIP \-- RIP配置命令 \-- display rip neighbor**
 
 ------------------------------------------------------------------------
 
-[**[display rip neighbor]{lang="EN-US"}**]{#struct_0_17903_10256_x759582545}[命令用来显示]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程的邻居信息。]{style="font-family:宋体"}
+**[display rip neighbor**]命令用来显示RIP进程的邻居信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_1756954108}
+【命令】
 
-[**[display rip ]{lang="EN-US"}***[process-id]{lang="EN-US"}***[ neighbor ]{lang="EN-US"}**[\[ *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_17903_10256_358830461}
+**[display rip ***process-id*** neighbor ** *interface-type interface-number* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x204586759}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_17903_10256_x580658562}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1561288619}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x730832159}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_17903_10256_1756888572}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x458766105}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_17903_10256_164574986}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_1342528737}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17903_10256_1113057290}[：]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：RIP进程号，取值范围为1～65535。
 
-[*[interface-type interface-number]{lang="EN-US"}*]{#struct_0_17903_10256_1757085180}[：接口类型和编号。如果未指定本参数，将显示]{style="font-family:宋体"}[RIP]{lang="EN-US"}[的所有邻居信息。]{style="font-family:宋体"}
+*[interface-type interface-number*]：接口类型和编号。如果未指定本参数，将显示RIP的所有邻居信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1937646079}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x757019656}[显示]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[的邻居信息。]{style="font-family:宋体"}
+\# 显示RIP进程1的邻居信息。
 
-[[\<Sysname\> display rip 1 neighbor]{lang="EN-US"}]{#struct_0_17903_10256_1757019644}
+\<Sysname\> display rip 1 neighbor
 
-[ Neighbor address: 197.168.2.3 (TRIP)]{lang="EN-US"}
+ Neighbor address: 197.168.2.3 (TRIP)
 
-[     Interface  : Serial3/0/3]{lang="EN-US"}
+     Interface  : Serial3/0/3
 
-[     Version    : RIPv2     Last update: 00h00m02s]{lang="EN-US"}
+     Version    : RIPv2     Last update: 00h00m02s
 
-[     Relay nbr  : N/A       BFD session: N/A]{lang="EN-US"}
+     Relay nbr  : N/A       BFD session: N/A
 
-[     Bad packets: 0         Bad routes : 0]{lang="EN-US"}
+     Bad packets: 0         Bad routes : 0
 
-[[表1-5 ]{lang="EN-US"}[display rip neighbor]{lang="EN-US"}]{#struct_0_17903_10256_1912427857}[命令显示信息描述表]{style="font-family:黑体"}
+表1-5 display rip neighbor命令显示信息描述表
 
-[]{#table_struct_0_x917734143}[[字段]{style="font-family:黑体"}]{#struct_0_17903_10256_x1779205833}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17903_10256_199343347}
+描述
 
-[[Neighbor address]{lang="EN-US"}]{#struct_0_17903_10256_1757740540}
+Neighbor address
 
-[[邻居地址]{style="font-family:宋体"}]{#struct_0_17903_10256_x1968757589}
+邻居地址
 
-[[Interface]{lang="EN-US"}]{#struct_0_17903_10256_x1021373900}
+Interface
 
-[[出接口]{style="font-family:宋体"}]{#struct_0_17903_10256_1757675004}
+出接口
 
-[[Version]{lang="EN-US"}]{#struct_0_17903_10256_366206407}
+Version
 
-[[收到邻居]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_782572976}[报文的版本]{style="font-family:宋体"}
+收到邻居RIP报文的版本
 
-[[Last update]{lang="EN-US"}]{#struct_0_17903_10256_1757216249}
+Last update
 
-[[上次收到邻居更新报文距离现在时间]{style="font-family:宋体"}]{#struct_0_17903_10256_1561553332}
+上次收到邻居更新报文距离现在时间
 
-[[Relay nbr]{lang="EN-US"}]{#struct_0_17903_10256_834121978}
+Relay nbr
 
-[[是否是非直连邻居]{style="font-family:宋体"}]{#struct_0_17903_10256_x319785188}
+是否是非直连邻居
 
-[[BFD session]{lang="EN-US"}]{#struct_0_17903_10256_1757150713}
+BFD session
 
-[[BFD]{lang="EN-US"}]{#struct_0_17903_10256_1939416304}[会话类型]{style="font-family:宋体"}
+BFD会话类型
 
-[[Bad packets]{lang="EN-US"}]{#struct_0_17903_10256_x169530527}
+Bad packets
 
-[[接口收到的错误报文数目]{style="font-family:宋体"}]{#struct_0_17903_10256_1757347321}
+接口收到的错误报文数目
 
-[[Bad routes]{lang="EN-US"}]{#struct_0_17903_10256_786298100}
+Bad routes
 
-[[接口收到的错误路由数目]{style="font-family:宋体"}]{#struct_0_17903_10256_2120134602}
+接口收到的错误路由数目
 
-[[TRIP]{lang="EN-US"}]{#struct_0_17903_10256_x217361262}
+TRIP
 
-[[TRIP]{lang="EN-US"}]{#struct_0_17903_10256_1757281785}[邻居]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::::: {#1747235826 .myid}
-[]{#_Toc404787697}[]{#struct_0_17903_10256_x759254865}[]{#_Toc375235979}
+TRIP邻居
 
 **RIP \-- RIP配置命令 \-- display rip non-stop-routing**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](RIP命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_17903_10256_931798900}
-:::
+![说明](RIP命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_17903_10256_x399748013}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[display rip** **non-stop-routing**]命令用来显示RIP进程的NSR状态信息。
 
-[**[display rip]{lang="EN-US"}**[ **non-stop-routing**]{lang="EN-US"}]{#struct_0_17903_10256_503284081}[命令用来显示]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程的]{style="font-family:宋体"}[NSR]{lang="EN-US"}[状态信息。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_1756954105}
+**[display rip** [ *process-id*  **non-stop-routing**]]
 
-[**[display rip]{lang="EN-US"}**[ \[ *process-id* \] **non-stop-routing**]{lang="EN-US"}]{#struct_0_17903_10256_359027069}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_1678135281}
+任意视图
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_17903_10256_101487280}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1412031769}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x529421858}
+network-operator
 
-[[network-operator]{lang="EN-US"}]{#struct_0_17903_10256_1756888569}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x459355930}
+mdc-operator
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_17903_10256_531606308}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_1613796952}
+*[process-id*]：RIP进程号，取值范围为1～65535。如果未指定本参数，则显示所有RIP进程的NSR状态信息。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17903_10256_x1340477964}[：]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}[如果未指定本参数，则显示所有]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程的]{style="font-family:宋体"}[NSR]{lang="EN-US"}[状态信息。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:
-黑体"}]{#struct_0_17903_10256_3928410}
+\# 显示RIP 1进程的NSR状态信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_1757085177}[显示]{style="font-family:宋体"}[RIP 1]{lang="EN-US"}[进程的]{style="font-family:宋体"}[NSR]{lang="EN-US"}[状态信息。]{style="font-family:宋体"}
+\<Sysname\> display rip 1 non-stop-routing
 
-[[\<Sysname\> display rip 1 non-stop-routing]{lang="EN-US"}]{#struct_0_17903_10256_x1937711600}
+RIP process: 1
 
-[RIP process: 1]{lang="EN-US"}
+ Nonstop Routing capability: Enabled
 
-[ Nonstop Routing capability: Enabled]{lang="EN-US"}
+ Current NSR state         : Finish
 
-[ Current NSR state         : Finish]{lang="EN-US"}
+表1-6 display rip non-stop-routing命令显示信息描述表
 
-[[表1-6 ]{lang="EN-US"}[display rip non-stop-routing]{lang="EN-US"}]{#struct_0_17903_10256_128579388}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x894305195}[[字段]{style="font-family:黑体"}]{#struct_0_17903_10256_x1090911634}
-:::::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17903_10256_1757019641}
+Nonstop Routing capability
 
-[[Nonstop Routing capability]{lang="EN-US"}]{#struct_0_17903_10256_1912100177}
+NSR使能状态
 
-[[NSR]{lang="EN-US"}]{#struct_0_17903_10256_x644152055}[使能状态]{style="font-family:宋体"}
+·Enabled：使能NSR
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_17903_10256_2136352655}[：]{lang="EN-US" style="font-family:宋体"}[使能]{lang="EN-US" style="font-family:宋体"}[NSR]{lang="EN-US"}
+·Disabled：不使能NSR
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_17903_10256_1757740537}[：]{lang="EN-US" style="font-family:宋体"}[不使能]{lang="EN-US" style="font-family:宋体"}[NSR]{lang="EN-US"}
+Current NSR state
 
-[[Current NSR state]{lang="EN-US"}]{#struct_0_17903_10256_x1968298836}
+当前NSR所处状态
 
-[[当前]{style="font-family:宋体"}[NSR]{lang="EN-US"}]{#struct_0_17903_10256_1841983688}[所处状态]{style="font-family:宋体"}
+·Initialization：初始准备
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Initialization]{lang="EN-US"}]{#struct_0_17903_10256_1757675001}[：初始准备]{lang="EN-US" style="font-family:宋体"}
+·Smooth：数据平滑
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Smooth]{lang="EN-US"}]{#struct_0_17903_10256_366403015}[：数据平滑]{lang="EN-US" style="font-family:宋体"}
+·Advertising：发布路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Advertising]{lang="EN-US"}]{#struct_0_17903_10256_1056918342}[：发布路由]{lang="EN-US" style="font-family:宋体"}
+·Redistribution：路由引入处理
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Redistribution]{lang="EN-US"}]{#struct_0_17903_10256_x222443322}[：路由引入处理]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Finish]{lang="EN-US"}]{#struct_0_17903_10256_1757216250}[：完成]{lang="EN-US" style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1999661556 .myid}
-[]{#_Toc404787698}[]{#struct_0_17903_10256_88931234}[]{#_Toc216497578}[]{#_Toc137543151}[]{#_Toc137261554}[]{#_Toc137543101}[]{#_Toc137261556}[]{#_Toc137543103}[]{#_Toc137261557}[]{#_Toc137543104}[]{#_Toc137261558}[]{#_Toc137543105}[]{#_Toc137261559}[]{#_Toc137543106}[]{#_Toc137261560}[]{#_Toc137543107}[]{#_Toc137261561}[]{#_Toc137543108}[]{#_Toc137261562}[]{#_Toc137543109}[]{#_Toc137261563}[]{#_Toc137543110}[]{#_Toc137261568}[]{#_Toc137543115}[]{#_Toc137261572}[]{#_Toc137543119}[]{#_Toc137261603}[]{#_Toc137543150}
+·Finish：完成
 
 **RIP \-- RIP配置命令 \-- display rip route**
 
 ------------------------------------------------------------------------
 
-[**[display rip route]{lang="EN-US"}**]{#struct_0_17903_10256_850127847}[命令用来显示]{style="font-family:宋体"}[RIP]{lang="EN-US"}[的路由信息。]{style="font-family:宋体"}
+**[display rip route**]命令用来显示RIP的路由信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x657464691}
+【命令】
 
-[**[display rip ]{lang="EN-US"}***[process-id]{lang="EN-US"}***[ route ]{lang="EN-US"}**[\[ *ip-address* { *mask-length* \| *mask* } \[ **verbose** \] \| **peer** *ip-address* \| **statistics** \]]{lang="EN-US"}]{#struct_0_17903_10256_x2106712027}
+**[display rip ***process-id*** route **[[ *ip-address* { *mask-length* \| *mask* } [ **verbose** ] \| **peer** *ip-address* \| **statistics** ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x871995292}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_17903_10256_1193828542}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_x2065976623}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1102133667}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_17903_10256_1535257072}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_1706211214}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_17903_10256_88996770}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_x750469550}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17903_10256_x1262083382}[：]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：RIP进程号，取值范围为1～65535。
 
-[*[ip-address]{lang="EN-US"}*[ { *mask-length* \| *mask* }]{lang="EN-US"}]{#struct_0_17903_10256_1972634733}[：显示指定目的地址和掩码的路由信息。]{style="font-family:宋体"}
+*[ip-address*[ { *mask-length* \| *mask* }]]：显示指定目的地址和掩码的路由信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_17903_10256_458098478}[：显示当前]{style="font-family:宋体"}[RIP]{lang="EN-US"}[路由表中指定目的地址和掩码的所有路由信息。如果未指定本参数，则只显示指定目的地址和掩码的最优]{style="font-family:宋体"}[RIP]{lang="EN-US"}[路由。]{style="font-family:宋体"}
+**[verbose**]：显示当前RIP路由表中指定目的地址和掩码的所有路由信息。如果未指定本参数，则只显示指定目的地址和掩码的最优RIP路由。
 
-[**[peer ]{lang="EN-US"}***[ip-address]{lang="EN-US"}*]{#struct_0_17903_10256_715338633}[：显示从指定邻居学到的所有路由信息。]{style="font-family:宋体"}
+**[peer ***ip-address*]：显示从指定邻居学到的所有路由信息。
 
-[**[statistics]{lang="EN-US"}**]{#struct_0_17903_10256_x899002489}[：显示路由的统计信息。路由的统计信息包括路由总数目，各个邻居的路由数目。]{style="font-family:宋体"}
+**[statistics**]：显示路由的统计信息。路由的统计信息包括路由总数目，各个邻居的路由数目。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_x228377597}
+【使用指导】
 
-[[如果未指定任何参数，将显示]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x729904027}[的所有路由信息。]{style="font-family:宋体"}
+如果未指定任何参数，将显示RIP的所有路由信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_89062306}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_1011356920}[显示进程号为]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程所有的路由信息。]{style="font-family:宋体"}
+\# 显示进程号为1的RIP进程所有的路由信息。
 
-[[\<Sysname\> display rip 1 route]{lang="EN-US"}]{#struct_0_17903_10256_x1173361024}
+\<Sysname\> display rip 1 route
 
-[ Route Flags: R -- RIP]{lang="EN-US"}
+ Route Flags: R -- RIP
 
-[              A - Aging, S - Suppressed, G - Garbage-collect, D -- Direct]{lang="EN-US"}
+              A - Aging, S - Suppressed, G - Garbage-collect, D -- Direct
 
-[              O - Optimal, F - Flush to RIB]{lang="EN-US"}
+              O - Optimal, F - Flush to RIB
 
-[ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ Peer 1.1.1.1 on GigabitEthernet1/0/2]{lang="EN-US"}
+ Peer 1.1.1.1 on GigabitEthernet1/0/2
 
-[      Destination/Mask        Nexthop           Cost    Tag     Flags   Sec]{lang="EN-US"}
+      Destination/Mask        Nexthop           Cost    Tag     Flags   Sec
 
-[      3.0.0.0/8               1.1.1.1           1       0       RAOF    24]{lang="EN-US"}
+      3.0.0.0/8               1.1.1.1           1       0       RAOF    24
 
-[ Local route]{lang="EN-US"}
+ Local route
 
-[      Destination/Mask        Nexthop           Cost    Tag     Flags   Sec]{lang="EN-US"}
+      Destination/Mask        Nexthop           Cost    Tag     Flags   Sec
 
-[      4.4.4.4/32              0.0.0.0           0       0       RDOF    -]{lang="EN-US"}
+      4.4.4.4/32              0.0.0.0           0       0       RDOF    -
 
-[      1.1.1.0/24              0.0.0.0           0       0       RDOF    -]{lang="EN-US"}
+      1.1.1.0/24              0.0.0.0           0       0       RDOF    -
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_1151860170}[显示进程号为]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程指定路由的全部路由信息。]{style="font-family:宋体"}
+\# 显示进程号为1的RIP进程指定路由的全部路由信息。
 
-[[\<Sysname\> display rip 1 route 3.0.0.0 8 verbose]{lang="EN-US"}]{#struct_0_17903_10256_89127842}
+\<Sysname\> display rip 1 route 3.0.0.0 8 verbose
 
-[ Route Flags: R -- RIP]{lang="EN-US"}
+ Route Flags: R -- RIP
 
-[              A - Aging, S - Suppressed, G - Garbage-collect, D -- Direct]{lang="EN-US"}
+              A - Aging, S - Suppressed, G - Garbage-collect, D -- Direct
 
-[              O - Optimal, F - Flush to RIB]{lang="EN-US"}
+              O - Optimal, F - Flush to RIB
 
-[ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ Peer 1.1.1.1 on GigabitEthernet1/0/2]{lang="EN-US"}
+ Peer 1.1.1.1 on GigabitEthernet1/0/2
 
-[  Destination/Mask    OrigNexthop/RealNexthop          Cost  Tag   Flags Sec]{lang="EN-US"}
+  Destination/Mask    OrigNexthop/RealNexthop          Cost  Tag   Flags Sec
 
-[  3.0.0.0/8           1.1.1.1/1.1.1.1                  1     0     RAOF  16]{lang="EN-US"}
+  3.0.0.0/8           1.1.1.1/1.1.1.1                  1     0     RAOF  16
 
-[[表1-7 ]{lang="EN-US"}[display rip route]{lang="EN-US"}]{#struct_0_17903_10256_x953825126}[命令显示信息描述表]{style="font-family:黑体"}
+表1-7 display rip route命令显示信息描述表
 
-[]{#table_struct_0_1072398851}[[字段]{style="font-family:黑体"}]{#struct_0_17903_10256_x1562661880}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17903_10256_89193378}
+描述
 
-[[Route Flags]{lang="EN-US"}]{#struct_0_17903_10256_x1781306675}
+Route Flags
 
-[[路由标志：]{style="font-family:宋体"}]{#struct_0_17903_10256_2021618934}
+路由标志：
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[R]{lang="PT-BR"}]{#struct_0_17903_10256_737135736}[：]{lang="EN-US" style="font-family:宋体"}[RIP]{lang="PT-BR"}[生成的路由]{lang="EN-US" style="font-family:宋体"}
+·R：RIP生成的路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[A]{lang="PT-BR"}]{#struct_0_17903_10256_x850435543}[：]{style="font-family:宋体"}[该路由处于老化时期]{style="font-family:宋体"}
+·A：该路由处于老化时期
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[S]{lang="PT-BR"}]{#struct_0_17903_10256_1505733510}[：]{style="font-family:宋体"}[该路由处于抑制时期]{style="font-family:宋体"}
+·S：该路由处于抑制时期
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[G]{lang="PT-BR"}]{#struct_0_17903_10256_89258914}[：]{lang="EN-US" style="font-family:宋体"}[该路由处于]{lang="EN-US" style="font-family:宋体"}[Garbage-collect]{lang="PT-BR"}[时期]{lang="EN-US" style="font-family:宋体"}
+·G：该路由处于Garbage-collect时期
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[D]{lang="EN-US"}]{#struct_0_17903_10256_x702768753}[：]{style="font-family:宋体"}[RIP]{lang="EN-US"}[生成的直连路由]{style="font-family:宋体"}
+·D：RIP生成的直连路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[O]{lang="PT-BR"}]{#struct_0_17903_10256_1377539679}[：]{style="font-family:宋体"}[该路由处于最优路由状态]{style="font-family:宋体"}
+·O：该路由处于最优路由状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[F]{lang="PT-BR"}]{#struct_0_17903_10256_1198988012}[：]{style="font-family:宋体"}[该路由已经被下刷到]{style="font-family:宋体"}[RIB]{lang="EN-US"}
+·F：该路由已经被下刷到RIB
 
-[[Peer *X.X.X.X* on ]{lang="PT-BR"}*[interface-type interface-number]{lang="EN-US"}*]{#struct_0_17903_10256_x164253009}
+Peer *X.X.X.X* on *interface-type interface-number*
 
-[[在]{style="font-family:宋体"}]{#struct_0_17903_10256_89324450}[RIP]{lang="PT-BR"}[接口上从指定邻居学到的路由信息]{style="font-family:宋体"}
+在RIP接口上从指定邻居学到的路由信息
 
-[[Local route]{lang="PT-BR"}]{#struct_0_17903_10256_x409420004}
+Local route
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1349906786}[本地生成的直连路由]{style="font-family:宋体"}
+RIP本地生成的直连路由
 
-[[Destination/Mask]{lang="PT-BR"}]{#struct_0_17903_10256_89389986}
+Destination/Mask
 
-[[目的]{style="font-family:宋体"}]{#struct_0_17903_10256_693676806}[IP]{lang="PT-BR"}[地址]{style="font-family:宋体"}[/]{lang="PT-BR"}[掩码]{style="font-family:宋体"}
+目的IP地址/掩码
 
-[[Nexthop]{lang="PT-BR"}]{#struct_0_17903_10256_1920244581}
+Nexthop
 
-[[路由的下一跳地址]{style="font-family:宋体"}]{#struct_0_17903_10256_x1300209234}
+路由的下一跳地址
 
-[[OrigNexthop/RealNexthop]{lang="EN-US"}]{#struct_0_17903_10256_x2054322322}
+OrigNexthop/RealNexthop
 
-[[如果路由来自直连邻居，那么路由的真实下一跳就是原始下一跳；如果路由来自非直连邻居，对于成功迭代的路由]{style="font-family:宋体"}[RealNexthop]{lang="EN-US"}]{#struct_0_17903_10256_88406946}[则显示迭代出来的下一跳，否则不显示]{style="font-family:宋体"}
+如果路由来自直连邻居，那么路由的真实下一跳就是原始下一跳；如果路由来自非直连邻居，对于成功迭代的路由RealNexthop则显示迭代出来的下一跳，否则不显示
 
-[[Cost]{lang="PT-BR"}]{#struct_0_17903_10256_x674405772}
+Cost
 
-[[度量值]{style="font-family:宋体"}]{#struct_0_17903_10256_x1958256554}
+度量值
 
-[[Tag]{lang="PT-BR"}]{#struct_0_17903_10256_x1777087699}
+Tag
 
-[[路由标记]{style="font-family:宋体"}]{#struct_0_17903_10256_784873585}
+路由标记
 
-[[Flags]{lang="PT-BR"}]{#struct_0_17903_10256_88472482}
+Flags
 
-[[路由信息所处状态]{style="font-family:宋体"}]{#struct_0_17903_10256_63625660}
+路由信息所处状态
 
-[[Sec]{lang="PT-BR"}]{#struct_0_17903_10256_1950744263}
+Sec
 
-[[路由信息所处状态对应的定时器时间]{style="font-family:宋体"}]{#struct_0_17903_10256_2059948618}
+路由信息所处状态对应的定时器时间
 
-[ ]{lang="PT-BR"}
+\# 显示进程号为1的RIP进程的路由统计信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1949909986}[显示进程号为]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程的路由统计信息。]{style="font-family:宋体"}
+\<Sysname\> display rip 1 route statistics
 
-[[\<Sysname\> display rip 1 route statistics]{lang="EN-US"}]{#struct_0_17903_10256_88931235}
+ Peer              Optimal/Aging        Garbage
 
-[ Peer              Optimal/Aging        Garbage]{lang="EN-US"}
+ 1.1.1.1           1/1                  0
 
-[ 1.1.1.1           1/1                  0]{lang="EN-US"}
+ Local             2/0                  0
 
-[ Local             2/0                  0]{lang="EN-US"}
+ Total             3/1                  0
 
-[ Total             3/1                  0]{lang="EN-US"}
+表1-8 display rip route statistics命令显示信息描述表
 
-[]{#struct_0_17903_10256_x1488524313}[]{#_Toc79394769}[[表1-8 ]{lang="EN-US"}[display rip route statistics]{lang="EN-US"}]{#_Toc75056666}[命令显示信息]{style="font-family:
-黑体"}[描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1064777524}[[字段]{style="font-family:黑体"}]{#struct_0_17903_10256_x1626190147}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_17903_10256_x1211546306}
+Peer
 
-[[Peer]{lang="EN-US"}]{#struct_0_17903_10256_88996771}
+RIP邻居IP地址
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1205845586}[邻居]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+Optimal
 
-[[Optimal]{lang="EN-US"}]{#struct_0_17903_10256_x191862287}
+路由信息中处于最优路由状态的路由条数
 
-[[路由信息中处于最优路由状态的路由条数]{style="font-family:宋体"}]{#struct_0_17903_10256_x1192346245}
+Aging
 
-[[Aging]{lang="EN-US"}]{#struct_0_17903_10256_x734327427}
+路由信息中处于老化状态的路由条数
 
-[[路由信息中处于老化状态的路由条数]{style="font-family:宋体"}]{#struct_0_17903_10256_1537574014}
+Garbage
 
-[[Garbage]{lang="EN-US"}]{#struct_0_17903_10256_x750435830}
+路由信息中处于Garbage-collection状态的路由条数
 
-[[路由信息中处于]{style="font-family:宋体"}[Garbage-collection]{lang="EN-US"}]{#struct_0_17903_10256_89062307}[状态的路由条数]{style="font-family:宋体"}
+Local
 
-[[Local]{lang="EN-US"}]{#struct_0_17903_10256_x944958216}
+RIP本地生成的直连路由条数的总和
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x319637876}[本地生成的直连路由条数的总和]{style="font-family:宋体"}
+Total
 
-[[Total]{lang="EN-US"}]{#struct_0_17903_10256_89127843}
-
-[[从所有]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1384827034}[邻居学习到的路由条数的总和]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::::: {#1745414037 .myid}
-[]{#_Toc216497585}[]{#_Toc137543160}[]{#_Toc33866017}[]{#_Toc404787699}[]{#struct_0_17903_10256_1783944252}[]{#_Toc306797772}[]{#_Toc305059803}[]{#_Toc189305424}[]{#_Toc286221018}[]{#_Toc286221019}[]{#_Toc286221020}[]{#_Toc286221021}[]{#_Toc286221022}[]{#_Toc286221023}[]{#_Toc286221024}[]{#_Toc286221025}[]{#_Toc286221026}[]{#_Toc286221027}[]{#_Toc286221028}[]{#_Toc286221029}[]{#_Toc286221030}[]{#_Toc286221031}[]{#_Toc286221032}[]{#_Toc286221033}[]{#_Toc286221034}[]{#_Toc286221035}[]{#_Toc286221036}[]{#_Toc286221037}[]{#_Toc286221040}[]{#_Toc286221043}[]{#_Toc286221046}[]{#_Toc286221047}[]{#_Toc286221050}[]{#_Toc286221053}[]{#_Toc286221057}[]{#_Toc286221058}[]{#_Toc286221059}[]{#_Toc286221060}[]{#_Toc286221061}[]{#_Toc286221062}[]{#_Toc286221063}[]{#_Toc286221064}[]{#_Toc286221065}[]{#_Toc286221066}[]{#_Toc286221067}[]{#_Toc286221068}[]{#_Toc286221069}[]{#_Toc286221070}[]{#_Toc286221071}[]{#_Toc286221072}[]{#_Toc286221073}[]{#_Toc286221074}[]{#_Toc286221075}[]{#_Toc286221076}[]{#_Toc286221077}[]{#_Toc286221078}[]{#_Toc286221079}[]{#_Toc286221080}[]{#_Toc286221081}[]{#_Toc286221087}[]{#_Toc286221088}[]{#_Toc286221089}[]{#_Toc286221090}[]{#_Toc286221095}[]{#_Toc286221096}[]{#_Toc286221097}[]{#_Toc286221098}[]{#_Toc286221099}[]{#_Toc286221100}[]{#_Toc286221101}[]{#_Toc286221102}[]{#_Toc286221103}[]{#_Toc286221104}[]{#_Toc286221105}[]{#_Toc286221106}[]{#_Toc286221107}[]{#_Toc286221108}[]{#_Toc286221109}[]{#_Toc286221110}[]{#_Toc286221111}[]{#_Toc286221112}[]{#_Toc286221113}[]{#_Toc286221114}[]{#_Toc286221115}[]{#_Toc286221116}[]{#_Toc286221117}[]{#_Toc286221123}[]{#_Toc286221124}[]{#_Toc286221125}[]{#_Toc286221126}[]{#_Toc286221131}[]{#_Toc286221132}[]{#_Toc286221134}[]{#_Toc286221135}[]{#_Toc286221136}[]{#_Toc286221137}[]{#_Toc286221138}[]{#_Toc286221139}[]{#_Toc286221140}[]{#_Toc286221141}[]{#_Toc286221142}[]{#_Toc286221143}[]{#_Toc286221144}[]{#_Toc286221145}[]{#_Toc286221146}[]{#_Toc286221147}[]{#_Toc286221148}[]{#_Toc286221149}[]{#_Toc286221150}[]{#_Toc286221151}[]{#_Toc286221155}[]{#_Toc286221156}[]{#_Toc286221158}[]{#_Toc286221159}[]{#_Toc286221160}[]{#_Toc286221161}[]{#_Toc286221162}[]{#_Toc286221163}[]{#_Toc286221164}[]{#_Toc286221165}[]{#_Toc286221166}[]{#_Toc286221167}[]{#_Toc286221168}[]{#_Toc286221169}[]{#_Toc286221170}[]{#_Toc286221171}[]{#_Toc286221172}[]{#_Toc286221173}[]{#_Toc286221174}[]{#_Toc286221175}[]{#_Toc286221176}[]{#_Toc286221177}[]{#_Toc286221178}[]{#_Toc286221179}[]{#_Toc286221180}[]{#_Toc286221182}[]{#_Toc286221184}[]{#_Toc286221186}[]{#_Toc137261609}[]{#_Toc137543156}[]{#_Toc137261610}[]{#_Toc137543157}[]{#_Toc137261611}[]{#_Toc137543158}[]{#_Toc286221188}[]{#_Toc286221189}[]{#_Toc286221190}[]{#_Toc286221191}[]{#_Toc286221192}[]{#_Toc286221193}[]{#_Toc286221194}[]{#_Toc286221195}[]{#_Toc286221196}[]{#_Toc286221197}[]{#_Toc286221198}[]{#_Toc286221199}[]{#_Toc286221200}[]{#_Toc286221201}[]{#_Toc286221202}
+从所有RIP邻居学习到的路由条数的总和
 
 **RIP \-- RIP配置命令 \-- fast-reroute**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](RIP命令.files/image002.png){width="63" height="25"}]{lang="EN-US"}]{#struct_0_17903_10256_62343353}
-:::
+![说明](RIP命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_17903_10256_1801960815}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[fast-reroute**]命令用来配置RIP快速重路由功能。
 
-[**[fast-reroute]{lang="EN-US"}**]{#struct_0_17903_10256_x806542652}[命令用来配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[快速重路由功能。]{style="font-family:宋体"}
+**[undo fast-reroute**]命令用来关闭RIP快速重路由功能。
 
-[**[undo fast-reroute]{lang="EN-US"}**]{#struct_0_17903_10256_730859538}[命令用来关闭]{style="font-family:宋体"}[RIP]{lang="EN-US"}[快速重路由功能。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_x1098297136}
+**[fast-reroute route-policy ***route-policy-name*]
 
-[**[fast-reroute route-policy ]{lang="EN-US"}***[route-policy-name]{lang="EN-US"}*]{#struct_0_17903_10256_89193379}
+**[undo fast-reroute**]
 
-[**[undo fast-reroute]{lang="EN-US"}**]{#struct_0_17903_10256_175008461}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_392385189}
+RIP快速重路由功能处于关闭状态。
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1701551752}[快速重路由功能处于关闭状态。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_x404580388}
+RIP视图
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1636823371}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_2010482868}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1950412816}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x783700184}
+【参数】
 
-[[【参数】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_89258915}
+**[route-policy*** route-policy-name*]：为通过策略的路由指定备份下一跳。*route-policy-name*为路由策略名，为1～63个字符的字符串，区分大小写。
 
-[**[route-policy]{lang="EN-US"}***[ route-policy-name]{lang="EN-US"}*]{#struct_0_17903_10256_1253546383}[：为通过策略的路由指定备份下一跳。]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[为路由策略名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_x820090668}
+·RIP快速重路由功能只适合在主链路三层接口up，主链路由双通变为单通或者不通的情况下使用。在主链路三层接口down的情况下，本功能不可用。单通现象，即一条链路上的两端，有且只有一端可以收到另一端发来的报文，此链路称为单向链路。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1456209806}[快速重路由功能只适合在主链路三层接口]{style="font-family:宋体"}[up]{lang="EN-US"}[，主链路由双通变为单通或者不通的情况下使用。在主链路三层接口]{style="font-family:宋体"}[down]{lang="EN-US"}[的情况下，本功能不可用。单通现象，即一条链路上的两端，有且只有一端可以收到另一端发来的报文，此链路称为单向链路。]{style="font-family:宋体"}
+·RIP快速重路由功能仅对非迭代RIP路由（即从直连邻居学到RIP路由）有效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x432465382}[快速重路由功能仅对非迭代]{style="font-family:宋体"}[RIP]{lang="EN-US"}[路由（即从直连邻居学到]{style="font-family:宋体"}[RIP]{lang="EN-US"}[路由）有效。]{style="font-family:宋体"}
+·RIP快速重路由功能不能与RIP支持BFD检测功能同时使用，否则可能导致快速重路由功能失效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1870554220}[快速重路由功能不能与]{style="font-family:宋体"}[RIP]{lang="EN-US"}[支持]{style="font-family:宋体"}[BFD]{lang="EN-US"}[检测功能同时使用，否则可能导致快速重路由功能失效。]{style="font-family:宋体"}
+·等价路由不支持快速重路由功能，当备份信息与主路由信息相同时该功能不生效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[等价路由不支持快速重路由功能，当备份信息与主路由信息相同时该功能不生效。]{style="font-family:宋体"}]{#struct_0_17903_10256_1395588795}
+【举例】
 
-[[【举例】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_x1580027077}
+\# 配置对通过策略frr的路由指定备份下一跳信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_123069437}[配置对通过策略]{style="font-family:宋体"}[frr]{lang="EN-US"}[的路由指定备份下一跳信息。]{style="font-family:宋体"}
+·路由应用
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{style="font-family:宋体"}]{#struct_0_17903_10256_89324451}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_1929232156}
+Sysname ip prefix-list abc index 10 permit 100.1.1.0 24
 
-[\[Sysname\] ip prefix-list abc index 10 permit 100.1.1.0 24]{lang="EN-US"}
+Sysname route-policy frr permit node 10
 
-[\[Sysname\] route-policy frr permit node 10]{lang="EN-US"}
+Sysname-route-policy-frr-10 if-match ip address prefix-list abc
 
-[\[Sysname-route-policy-frr-10\] if-match ip address prefix-list abc]{lang="EN-US"}
+Sysname-route-policy-frr-10 apply fast-reroute backup-interface gigabitethernet 1/0/1 backup-nexthop 193.1.1.8
 
-[\[Sysname-route-policy-frr-10\] apply fast-reroute backup-interface gigabitethernet 1/0/1 backup-nexthop 193.1.1.8]{lang="EN-US"}
+Sysname-route-policy-frr-10 quit
 
-[\[Sysname-route-policy-frr-10\] quit]{lang="EN-US"}
+Sysname rip 100
 
-[\[Sysname\] rip 100]{lang="EN-US"}
+Sysname-rip-100 fast-reroute route-policy frr
 
-[\[Sysname-rip-100\] fast-reroute route-policy frr]{lang="EN-US"}
+·交换应用
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{style="font-family:宋体"}]{#struct_0_17903_10256_473963867}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_89389987}
+Sysname ip prefix-list abc index 10 permit 100.1.1.0 24
 
-[\[Sysname\] ip prefix-list abc index 10 permit 100.1.1.0 24]{lang="EN-US"}
+Sysname route-policy frr permit node 10
 
-[\[Sysname\] route-policy frr permit node 10]{lang="EN-US"}
+Sysname-route-policy-frr-10 if-match ip address prefix-list abc
 
-[\[Sysname-route-policy-frr-10\] if-match ip address prefix-list abc]{lang="EN-US"}
+Sysname-route-policy-frr-10 apply fast-reroute backup-interface vlan-interface 1 backup-nexthop 193.1.1.8
 
-[\[Sysname-route-policy-frr-10\] apply fast-reroute backup-interface vlan-interface 1 backup-nexthop 193.1.1.8]{lang="EN-US"}
+Sysname-route-policy-frr-10 quit
 
-[\[Sysname-route-policy-frr-10\] quit]{lang="EN-US"}
+Sysname rip 100
 
-[\[Sysname\] rip 100]{lang="EN-US"}
-
-[\[Sysname-rip-100\] fast-reroute route-policy frr]{lang="EN-US"}
-:::::
-
-::: {#1247311243 .myid}
-[]{#struct_0_17903_10256_x1262638330}[]{#_Toc404787700}[]{#_Toc306797773}[]{#_Toc305059804}[]{#_Toc216497580}
+Sysname-rip-100 fast-reroute route-policy frr
 
 **RIP \-- RIP配置命令 \-- filter-policy export**
 
 ------------------------------------------------------------------------
 
-[**[filter-policy]{lang="EN-US"}[ export]{lang="EN-US"}**]{#struct_0_17903_10256_1559912432}[命令用来配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[对发布的路由信息进行过滤。]{style="font-family:宋体"}
+**[filter-policy export**]命令用来配置RIP对发布的路由信息进行过滤。
 
-[**[undo filter-policy export]{lang="EN-US"}**]{#struct_0_17903_10256_x49661260}[命令用来取消对发布路由信息的过滤。]{style="font-family:
-宋体"}
+**[undo filter-policy export**]命令用来取消对发布路由信息的过滤。
 
-[[【命令】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_x481149647}
+【命令】
 
-[**[filter-policy]{lang="EN-US"}**[ { *acl-number* \| **prefix-list** *prefix-list-name* } **export** \[ *protocol* \[ *process-id* \] \| *interface-type* *interface-number* \]]{lang="EN-US"}]{#struct_0_17903_10256_211358758}
+**[filter-policy**[ { *acl-number* \| **prefix-list** *prefix-list-name* } **export** [ *protocol* [ *process-id* ] \| *interface-type* *interface-number* ]]]
 
-[**[undo filter-policy]{lang="EN-US"}**[ **export** \[ *protocol* \[ *process-id* \] \| *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_17903_10256_x1559990950}
+**[undo filter-policy** **export** [ *protocol* [ *process-id*  \| *interface-type interface-number* ]]]
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_1984759008}
+【缺省情况】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_88406947}[不对发布的路由信息进行过滤。]{style="font-family:宋体"}
+RIP不对发布的路由信息进行过滤。
 
-[[【视图】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_1664246388}
+【视图】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x127201369}[视图]{style="font-family:宋体"}
+RIP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_557217099}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_501031914}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_723526789}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_519478665}
+【参数】
 
-[*[acl-number]{lang="EN-US"}*]{#struct_0_17903_10256_868233603}[：用]{style="font-family:宋体"}[于过滤发布的路由信息的访问控制列表号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[acl-number*]：用于过滤发布的路由信息的访问控制列表号，取值范围为2000～3999。
 
-[**[prefix-list]{lang="EN-US"}**[ *prefix-list-name*]{lang="EN-US"}]{#struct_0_17903_10256_x1280476528}[：指定用于过滤发布路由信息的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀列表名称。]{style="font-family:宋体"}*[prefix-list-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀列表名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[prefix-list** *prefix-list-name*]：指定用于过滤发布路由信息的IP地址前缀列表名称。*prefix-list-name*为IP地址前缀列表名称，为1～63个字符的字符串，区分大小写。
 
-[*[protocol]{lang="EN-US"}*]{#struct_0_17903_10256_88472483}[：过滤]{style="font-family:宋体"}[指定路由协议发布的]{style="font-family:宋体"}[路由信息，]{style="font-family:宋体"}*[protocol]{lang="EN-US"}*[可以选择]{style="font-family:宋体"}**[bgp]{lang="EN-US"}**[、]{style="font-family:宋体"}**[direct]{lang="EN-US"}**[、]{style="font-family:宋体"}**[isis]{lang="EN-US"}**[、]{style="font-family:宋体"}**[ospf]{lang="EN-US"}**[、]{style="font-family:宋体"}**[rip]{lang="EN-US"}**[和]{style="font-family:宋体"}**[static]{lang="EN-US"}**[。]{style="font-family:宋体"}
+*[protocol*]：过滤指定路由协议发布的路由信息，*protocol*可以选择**bgp**、**direct**、**isis**、**ospf**、**rip**和**static**。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17903_10256_2019940796}[：被过滤路由信息的路由协议的进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。仅当路由协议为]{style="font-family:宋体"}**[rip]{lang="EN-US"}**[、]{style="font-family:宋体"}**[ospf]{lang="EN-US"}**[、]{style="font-family:宋体"}**[isis]{lang="EN-US"}**[时需要指定进程号，若未指定，缺省进程号为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：被过滤路由信息的路由协议的进程号，取值范围为1～65535。仅当路由协议为**rip**、**ospf**、**isis**时需要指定进程号，若未指定，缺省进程号为1。
 
-[*[interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}]{#struct_0_17903_10256_213907282}[：过滤]{style="font-family:宋体"}[指定接口发布的路由信息，]{style="font-family:宋体"}*[interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}[为]{style="font-family:宋体"}[接口类型和编号。]{style="font-family:宋体"}
+*[interface-type* *interface-number*]：过滤指定接口发布的路由信息，*interface-type* *interface-number*为接口类型和编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_839381458}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[一个协议或接口只能配置一个过滤策略。如果未指定协议或接口，就认为是配置全局过滤策略，同样每次只能配置一个。如果重复配置，新的策略将覆盖之前的策略。]{style="font-family:宋体"}]{#struct_0_17903_10256_310342875}
+·一个协议或接口只能配置一个过滤策略。如果未指定协议或接口，就认为是配置全局过滤策略，同样每次只能配置一个。如果重复配置，新的策略将覆盖之前的策略。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果已经配置了基于]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_1757347327}[协议或]{style="font-family:宋体"}[接口的]{lang="EN-US" style="font-family:宋体"}[过滤]{style="font-family:宋体"}[策略，删除时必须指定]{lang="EN-US" style="font-family:宋体"}*[protocol]{lang="EN-US"}*[或]{lang="EN-US" style="font-family:宋体"}[*[interface-type]{lang="EN-US"}*]{.varname}[ [*interface-number*]{.varname}]{lang="EN-US"}[[。]{style="font-family:宋体"}]{.varname}
+·如果已经配置了基于协议或接口的过滤策略，删除时必须指定*protocol*或*[interface-type*]{.varname} [*interface-number*{.varname}]。{.varname}
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:6.5pt;font-family:Wingdings"}[当配置的是高级]{style="font-family:宋体"}]{#struct_0_17903_10256_x1302347577}[ACL]{lang="EN-US"}[（]{style="font-family:宋体"}[3000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[）时，]{style="font-family:宋体"}[ACL]{lang="EN-US"}[中的规则需要使用命令]{style="font-family:宋体"}**[rule]{lang="EN-US"}**[ \[ *rule-id* \] { **deny** \| **permit** } **ip source** *sour-addr sour-wildcard*]{lang="EN-US"}[来过滤指定目的地址的路由；使用命令]{style="font-family:宋体"}**[rule]{lang="EN-US"}**[ \[ *rule-id* \] { **deny** \| **permit** } **ip source** *sour-addr sour-wildcard* **destination** *dest-addr dest-wildcard*]{lang="EN-US"}[来过滤指定目的地址和掩码的路由，其中]{style="font-family:宋体"}**[source]{lang="EN-US"}**[用来过滤路由目的地址，]{style="font-family:宋体"}**[destination]{lang="EN-US"}**[用来过滤路由掩码，配置的掩码应该是连续的（当配置的掩码不连续时该过滤掩码的条件不生效）。]{style="font-family:宋体"}
+l当配置的是高级ACL（3000～3999）时，ACL中的规则需要使用命令**rule** [ *rule-id*  { **deny** \| **permit** } **ip source** *sour-addr sour-wildcard*]来过滤指定目的地址的路由；使用命令**rule** [ *rule-id*  { **deny** \| **permit** } **ip source** *sour-addr sour-wildcard* **destination** *dest-addr dest-wildcard*]来过滤指定目的地址和掩码的路由，其中**source**用来过滤路由目的地址，**destination**用来过滤路由掩码，配置的掩码应该是连续的（当配置的掩码不连续时该过滤掩码的条件不生效）。
 
-[[【举例】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_1771511990}
+【举例】
 
-[]{#_Toc306797774}[]{#_Toc305059805}[]{#_Toc33866013}[]{#struct_0_17903_10256_2044248015}[]{#_Toc292815525}[]{#_Toc216497581}[]{#_Toc137543153}[\# ]{lang="EN-US"}[配置使用编号为]{style="font-family:宋体"}[2000]{lang="EN-US"}[的基本]{style="font-family:宋体"}[ACL]{lang="EN-US"}[来对发布的路由信息进行过滤。]{style="font-family:宋体"}
+\# 配置使用编号为2000的基本ACL来对发布的路由信息进行过滤。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_88931232}
+\<Sysname\> system-view
 
-[\[Sysname\] acl basic 2000]{lang="EN-US"}
+Sysname acl basic 2000
 
-[\[Sysname-acl-ipv4-basic-2000\] rule deny source 192.168.10.0 0.0.0.255]{lang="EN-US"}
+Sysname-acl-ipv4-basic-2000 rule deny source 192.168.10.0 0.0.0.255
 
-[\[Sysname-acl-ipv4-basic-2000\] quit]{lang="EN-US"}
+Sysname-acl-ipv4-basic-2000 quit
 
-[\[Sysname\] rip 1]{lang="EN-US"}
+Sysname rip 1
 
-[\[Sysname-rip-1\] filter-policy 2000 export]{lang="EN-US"}
+Sysname-rip-1 filter-policy 2000 export
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x296883225}[配置按照地址前缀列表来过滤发布的路由信息。]{style="font-family:宋体"}
+\# 配置按照地址前缀列表来过滤发布的路由信息。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_446875866}
+\<Sysname\> system-view
 
-[\[Sysname\] ip prefix-list abc index 10 permit 11.0.0.0 8]{lang="EN-US"}
+Sysname ip prefix-list abc index 10 permit 11.0.0.0 8
 
-[\[Sysname\] rip 1]{lang="EN-US"}
+Sysname rip 1
 
-[\[Sysname-rip-1\] filter-policy prefix-list abc export]{lang="EN-US"}
+Sysname-rip-1 filter-policy prefix-list abc export
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1772053928}[使用编号为]{style="font-family:宋体"}[3000]{lang="EN-US"}[的高级]{style="font-family:宋体"}[ACL]{lang="EN-US"}[对发布的路由进行过滤，只允许]{style="font-family:宋体"}[113.0.0.0/16]{lang="EN-US"}[通过。]{style="font-family:宋体"}
+\# 使用编号为3000的高级ACL对发布的路由进行过滤，只允许113.0.0.0/16通过。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_88996768}
+\<Sysname\> system-view
 
-[\[Sysname\] acl advanced 3000]{lang="EN-US"}
+Sysname acl advanced 3000
 
-[\[Sysname-acl-ipv4-adv-3000\] rule 10 permit ip source 113.0.0.0 0 destination 255.255.0.0 0]{lang="EN-US"}
+Sysname-acl-ipv4-adv-3000 rule 10 permit ip source 113.0.0.0 0 destination 255.255.0.0 0
 
-[\[Sysname-acl-ipv4-adv-3000\] rule 100 deny ip]{lang="EN-US"}
+Sysname-acl-ipv4-adv-3000 rule 100 deny ip
 
-[\[Sysname-acl-ipv4-adv-3000\] quit]{lang="EN-US"}
+Sysname-acl-ipv4-adv-3000 quit
 
-[\[Sysname\] rip 1]{lang="EN-US"}
+Sysname rip 1
 
-[\[Sysname-rip 1\] filter-policy 3000 export]{lang="EN-US"}
+Sysname-rip 1 filter-policy 3000 export
 
-[[【命令参考】]{style="font-family:黑体"}]{#struct_0_17903_10256_x787205395}
+【命令参考】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[acl]{lang="EN-US"}**]{#struct_0_17903_10256_996444999}[（]{style="font-family:
-宋体"}[ACL]{lang="EN-US"}[和]{lang="EN-US" style="font-family:
-宋体"}[QoS]{lang="EN-US"}[命令参考]{lang="EN-US" style="font-family:
-宋体"}[/ACL]{lang="EN-US"}[）]{style="font-family:宋体"}
+·**acl**（ACL和QoS命令参考/ACL）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[import-route]{lang="EN-US"}**]{#struct_0_17903_10256_x1689698134}
+·**import-route**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ip prefix]{lang="EN-US"}**]{#struct_0_17903_10256_1173022610}**[-list]{lang="EN-US"}**[（]{lang="EN-US" style="font-family:宋体"}[三层技术]{lang="EN-US" style="font-family:
-宋体"}[-IP]{lang="EN-US"}[路由命令参考]{lang="EN-US" style="font-family:
-宋体"}[/]{lang="EN-US"}[路由策略]{lang="EN-US" style="font-family:
-宋体"}[）]{lang="EN-US" style="font-family:宋体"}
-:::
-
-::: {#632247711 .myid}
-[]{#_Toc404787701}[]{#struct_0_17903_10256_x1991958980}
+·**ip prefix****-list**（三层技术-IP路由命令参考/路由策略）
 
 **RIP \-- RIP配置命令 \-- filter-policy import**
 
 ------------------------------------------------------------------------
 
-[**[filter-policy import]{lang="EN-US"}**]{#struct_0_17903_10256_x28015843}[命令用来配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[对接收的路由信息进行过滤。]{style="font-family:宋体"}
+**[filter-policy import**]命令用来配置RIP对接收的路由信息进行过滤。
 
-[**[undo filter-policy import]{lang="EN-US"}**]{#struct_0_17903_10256_735485838}[命令用来取消该配置。]{style="font-family:
-宋体"}
+**[undo filter-policy import**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_x1602178717}
+【命令】
 
-[**[filter-policy]{lang="EN-US"}**[ { *acl-number* \| **gateway** *prefix-list-name* \| **prefix-list** *prefix-list-name* \[ **gateway** *prefix-list-name* \] } **import** \[ *interface-type* *interface-number* \]]{lang="EN-US"}]{#struct_0_17903_10256_x1463160038}
+**[filter-policy**[ { *acl-number* \| **gateway** *prefix-list-name* \| **prefix-list** *prefix-list-name* [ **gateway** *prefix-list-name* ] } **import**  *interface-type* *interface-number* ]]
 
-[**[undo filter-policy]{lang="EN-US"}**[ **import** \[ *interface-type* *interface-number* \]]{lang="EN-US"}]{#struct_0_17903_10256_89062304}
+**[undo filter-policy** **import** [ *interface-type* *interface-number* ]]
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_629019896}
+【缺省情况】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x690186767}[不对接收的路由信息进行过滤。]{style="font-family:宋体"}
+RIP不对接收的路由信息进行过滤。
 
-[[【视图】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_920194773}
+【视图】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1254727851}[视图]{style="font-family:宋体"}
+RIP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_1434252408}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1635123565}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_1436717962}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_x2090223889}
+【参数】
 
-[*[acl-number]{lang="EN-US"}*]{#struct_0_17903_10256_89127840}[：]{style="font-family:宋体"}[用于过滤发布的路由信息的访问控制列表号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[acl-number*]：用于过滤发布的路由信息的访问控制列表号，取值范围为2000～3999。
 
-[**[prefix-list ]{lang="EN-US"}***[prefix-list-name]{lang="EN-US"}*]{#struct_0_17903_10256_x1336162150}[：指定用于过滤接收路由信息的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀列表名称。]{style="font-family:宋体"}*[prefix-list-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀列表名称，]{style="font-family:宋体"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[prefix-list ***prefix-list-name*]：指定用于过滤接收路由信息的IP地址前缀列表名称。*prefix-list-name*为IP地址前缀列表名称，为1～63个字符的字符串，区分大小写。
 
-[**[gateway]{lang="EN-US"}**[ *prefix-list-name*]{lang="EN-US"}]{#struct_0_17903_10256_x133519825}[：基于要加入到路由表的路由信息的下一跳进行过滤。]{style="font-family:宋体"}*[prefix-list-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀列表名称，]{style="font-family:宋体"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[gateway** *prefix-list-name*]：基于要加入到路由表的路由信息的下一跳进行过滤。*prefix-list-name*为IP地址前缀列表名称，为1～63个字符的字符串，区分大小写。
 
-[*[interface-type interface-number]{lang="EN-US"}*]{#struct_0_17903_10256_1704989359}[：]{style="font-family:宋体"}[过滤]{style="font-family:宋体"}[指定接口接收的路由信息，]{style="font-family:宋体"}*[interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}[为]{style="font-family:宋体"}[接口类型和编号。]{style="font-family:宋体"}
+*[interface-type interface-number*]：过滤指定接口接收的路由信息，*interface-type* *interface-number*为接口类型和编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_115424312}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[一个接口只能配置一个过滤策略。如果未指定接口，就认为是配置全局过滤策略，同样每次只能配置一个。如果重复配置，新的策略将覆盖之前的策略。]{style="font-family:宋体"}]{#struct_0_17903_10256_1756888575}
+·一个接口只能配置一个过滤策略。如果未指定接口，就认为是配置全局过滤策略，同样每次只能配置一个。如果重复配置，新的策略将覆盖之前的策略。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果已经配置了基于接口的过滤策略，删除时必须指定]{lang="EN-US" style="font-family:宋体"}[*[interface-type]{lang="EN-US"}*]{.varname}[ [*interface-number*]{.varname}]{lang="EN-US"}]{#struct_0_17903_10256_x459093785}[[。]{style="font-family:宋体"}]{.varname}
+·如果已经配置了基于接口的过滤策略，删除时必须指定*[interface-type*]{.varname} [*interface-number*{.varname}]。{.varname}
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当配置的是高级]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_x1045182592}[ACL]{lang="EN-US"}[（]{lang="EN-US" style="font-family:宋体"}[3000]{lang="EN-US"}[～]{lang="EN-US" style="font-family:宋体"}[3999]{lang="EN-US"}[）时，]{lang="EN-US" style="font-family:宋体"}[ACL]{lang="EN-US"}[中的规则需要使用命令]{lang="EN-US" style="font-family:宋体"}**[rule]{lang="EN-US"}**[ \[ *rule-id* \] { **deny** \| **permit** } **ip source** *sour-addr sour-wildcard*]{lang="EN-US"}[来过滤指定目的地址的路由；使用命令]{lang="EN-US" style="font-family:宋体"}**[rule]{lang="EN-US"}**[ \[ *rule-id* \] { **deny** \| **permit** } **ip source** *sour-addr sour-wildcard* **destination** *dest-addr dest-wildcard*]{lang="EN-US"}[来过滤指定目的地址和掩码的路由，其中]{lang="EN-US" style="font-family:宋体"}**[source]{lang="EN-US"}**[用来过滤路由目的地址，]{lang="EN-US" style="font-family:宋体"}**[destination]{lang="EN-US"}**[用来过滤路由掩码，配置的掩码应该是连续的（当配置的掩码不连续时该过滤掩码的条件不生效）。]{lang="EN-US" style="font-family:宋体"}
+·当配置的是高级ACL（3000～3999）时，ACL中的规则需要使用命令**rule** [ *rule-id*  { **deny** \| **permit** } **ip source** *sour-addr sour-wildcard*]来过滤指定目的地址的路由；使用命令**rule** [ *rule-id*  { **deny** \| **permit** } **ip source** *sour-addr sour-wildcard* **destination** *dest-addr dest-wildcard*]来过滤指定目的地址和掩码的路由，其中**source**用来过滤路由目的地址，**destination**用来过滤路由掩码，配置的掩码应该是连续的（当配置的掩码不连续时该过滤掩码的条件不生效）。
 
-[[【举例】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_406964103}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x784878547}[配置使用编号为]{style="font-family:宋体"}[2000]{lang="EN-US"}[的基本]{style="font-family:宋体"}[ACL]{lang="EN-US"}[来对接收的路由信息进行过滤。]{style="font-family:宋体"}
+\# 配置使用编号为2000的基本ACL来对接收的路由信息进行过滤。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_89193376}
+\<Sysname\> system-view
 
-[\[Sysname\] acl basic 2000]{lang="EN-US"}
+Sysname acl basic 2000
 
-[\[Sysname-acl-ipv4-basic-2000\] rule deny source 192.168.10.0 0.0.0.255]{lang="EN-US"}
+Sysname-acl-ipv4-basic-2000 rule deny source 192.168.10.0 0.0.0.255
 
-[\[Sysname-acl-ipv4-basic-2000\] quit]{lang="EN-US"}
+Sysname-acl-ipv4-basic-2000 quit
 
-[\[Sysname\] rip 1]{lang="EN-US"}
+Sysname rip 1
 
-[\[Sysname-rip-1\] filter-policy 2000 import]{lang="EN-US"}
+Sysname-rip-1 filter-policy 2000 import
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_601975501}[配置按照]{style="font-family:宋体"}[地址前缀列表]{style="font-family:宋体"}[来过滤接收的路由信息。]{style="font-family:宋体"}
+\# 配置按照地址前缀列表来过滤接收的路由信息。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x1763949463}
+\<Sysname\> system-view
 
-[\[Sysname\] ip prefix-list abc index 10 permit 11.0.0.0 8]{lang="EN-US"}
+Sysname ip prefix-list abc index 10 permit 11.0.0.0 8
 
-[\[Sysname\] rip 1]{lang="EN-US"}
+Sysname rip 1
 
-[\[Sysname-rip-1\] filter-policy prefix-list abc import]{lang="EN-US"}
+Sysname-rip-1 filter-policy prefix-list abc import
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x247949771}[使用编号为]{style="font-family:宋体"}[3000]{lang="EN-US"}[的高级]{style="font-family:宋体"}[ACL]{lang="EN-US"}[对接收的路由进行过滤，只允许]{style="font-family:宋体"}[113.0.0.0/16]{lang="EN-US"}[通过。]{style="font-family:宋体"}
+\# 使用编号为3000的高级ACL对接收的路由进行过滤，只允许113.0.0.0/16通过。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x74765535}
+\<Sysname\> system-view
 
-[\[Sysname\] acl advanced 3000]{lang="EN-US"}
+Sysname acl advanced 3000
 
-[\[Sysname-acl-ipv4-adv-3000\] rule 10 permit ip source 113.0.0.0 0 destination 255.255.0.0 0]{lang="EN-US"}
+Sysname-acl-ipv4-adv-3000 rule 10 permit ip source 113.0.0.0 0 destination 255.255.0.0 0
 
-[\[Sysname-acl-ipv4-adv-3000\] rule 100 deny ip]{lang="EN-US"}
+Sysname-acl-ipv4-adv-3000 rule 100 deny ip
 
-[\[Sysname-acl-ipv4-adv-3000\] quit]{lang="EN-US"}
+Sysname-acl-ipv4-adv-3000 quit
 
-[\[Sysname\] rip 1]{lang="EN-US"}
+Sysname rip 1
 
-[\[Sysname-rip-1\] filter-policy 3000 import]{lang="EN-US"}
+Sysname-rip-1 filter-policy 3000 import
 
-[[【命令参考】]{style="font-family:黑体"}]{#struct_0_17903_10256_89258912}
+【命令参考】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[acl]{lang="EN-US"}**]{#struct_0_17903_10256_x1085105777}[（]{style="font-family:
-宋体"}[ACL]{lang="EN-US"}[和]{lang="EN-US" style="font-family:
-宋体"}[QoS]{lang="EN-US"}[命令参考]{lang="EN-US" style="font-family:
-宋体"}[/ACL]{lang="EN-US"}[）]{style="font-family:宋体"}
+·**acl**（ACL和QoS命令参考/ACL）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ip prefix]{lang="EN-US"}**]{#struct_0_17903_10256_x579780442}**[-list]{lang="EN-US"}**[（]{lang="EN-US" style="font-family:宋体"}[三层技术]{lang="EN-US" style="font-family:
-宋体"}[-IP]{lang="EN-US"}[路由命令参考]{lang="EN-US" style="font-family:
-宋体"}[/]{lang="EN-US"}[路由策略]{lang="EN-US" style="font-family:
-宋体"}[）]{lang="EN-US" style="font-family:宋体"}
-:::
-
-::::: {#63544256 .myid}
-[]{#_Toc306797775}[]{#_Toc305059806}[]{#_Toc33866015}[]{#_Toc313007768}[]{#_Toc404787702}[]{#struct_0_17903_10256_813302437}[]{#_Toc321837765}[]{#_Toc303839441}
+·**ip prefix****-list**（三层技术-IP路由命令参考/路由策略）
 
 **RIP \-- RIP配置命令 \-- graceful-restart**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](RIP命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_17903_10256_567761979}
-:::
+![说明](RIP命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_17903_10256_x1206121650}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[graceful-restart**]命令用来使能RIP协议的GR能力。
 
-[**[graceful-restart]{lang="EN-US"}**]{#struct_0_17903_10256_x1530151549}[命令用来使能]{style="font-family:宋体"}[RIP]{lang="EN-US"}[协议的]{style="font-family:宋体"}[GR]{lang="EN-US"}[能力。]{style="font-family:宋体"}
+**[undo graceful-restart**]命令用来关闭RIP协议的GR能力。
 
-[**[undo graceful-restart]{lang="EN-US"}**]{#struct_0_17903_10256_x93457721}[命令用来关闭]{style="font-family:宋体"}[RIP]{lang="EN-US"}[协议的]{style="font-family:宋体"}[GR]{lang="EN-US"}[能力。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_1315013796}
+**[graceful-restart**]
 
-[**[graceful-restart]{lang="EN-US"}**]{#struct_0_17903_10256_89324448}
+**[undo graceful-restart**]
 
-[**[undo ]{lang="FR"}[graceful-restart]{lang="EN-US"}**]{#struct_0_17903_10256_790115255}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_545399052}
+RIP协议的GR能力处于关闭状态。
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x632089852}[协议的]{style="font-family:宋体"}[GR]{lang="EN-US"}[能力处于关闭状态。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_685249000}
+RIP视图
 
-[[RIP]{lang="FR"}]{#struct_0_17903_10256_979699464}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1627239923}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1675389705}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_1603707275}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_1757740543}
+RIP GR特性与RIP NSR特性互斥，即**graceful-restart**和**non-stop-routing**命令互斥，不能同时配置。
 
-[[RIP GR]{lang="EN-US"}]{#struct_0_17903_10256_1757675007}[特性与]{style="font-family:宋体"}[RIP NSR]{lang="EN-US"}[特性互斥，即]{style="font-family:宋体"}**[graceful-restart]{lang="EN-US"}**[和]{style="font-family:宋体"}**[non-stop-routing]{lang="EN-US"}**[命令互斥，不能同时配置。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_89389984}
+\# 使能RIP进程1的GR能力。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_1076013830}[使能]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[能力。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> syste]{lang="EN-US"}[m-view]{lang="EN-US"}]{#struct_0_17903_10256_1912383907}
+Sysname rip 1
 
-[\[Sysname\] rip 1]{lang="EN-US"}
-
-[\[Sysname-rip-1\] graceful-restart]{lang="EN-US"}
-:::::
-
-::::: {#16863910 .myid}
-[]{#_Toc404787703}[]{#struct_0_17903_10256_366271943}[]{#_Toc375235985}[]{#_Toc328746895}[]{#_Toc322698687}
+Sysname-rip-1 graceful-restart
 
 **RIP \-- RIP配置命令 \-- graceful-restart interval**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](RIP命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_17903_10256_54139696}
-:::
+![说明](RIP命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_17903_10256_1757216256}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[graceful-restart interval**]命令用来配置RIP协议的GR重启间隔时间。
 
-[**[graceful-restart interval]{lang="EN-US"}**]{#struct_0_17903_10256_1561225653}[命令用来配置]{style="font-family:
-宋体"}[RIP]{lang="EN-US"}[协议的]{style="font-family:宋体"}[GR]{lang="EN-US"}[重启间隔时间]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo graceful-restart interval**]命令用来恢复缺省情况。
 
-[**[undo graceful-restart interval]{lang="EN-US"}**]{#struct_0_17903_10256_x721970407}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1463877188}
+**[graceful-restart interval ***interval-value*]
 
-[**[graceful-restart interval ]{lang="EN-US"}***[interval-value]{lang="EN-US"}*]{#struct_0_17903_10256_1757150720}
+**[undo graceful-restart interval**]
 
-[**[undo graceful-restart interval]{lang="EN-US"}**]{#struct_0_17903_10256_1939612915}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_x991953394}
+RIP协议的GR重启间隔时间为60秒。
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1470379838}[协议的]{style="font-family:宋体"}[GR]{lang="EN-US"}[重启间隔时间为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_1757347328}
+RIP视图
 
-[[RIP]{lang="FR"}]{#struct_0_17903_10256_786756852}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_1515951309}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_1194299234}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_1757281792}
+【参数】
 
-[[【参数】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_x758927184}
+*[interval-value*]：GR重启间隔时间，取值范围是5～360，单位是秒。
 
-[*[interval-value]{lang="EN-US"}*]{#struct_0_17903_10256_1369555640}[：]{style="font-family:宋体"}[GR]{lang="EN-US"}[重启间隔时间，取值范围是]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[360]{lang="EN-US"}[，单位是秒。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_1756954112}
+\# 配置RIP进程1的GR重启间隔时间为200秒。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_359223676}[配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[重启间隔时间为]{style="font-family:宋体"}[200]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_1908422940}
+Sysname rip 1
 
-[\[Sysname\] rip 1]{lang="EN-US"}
-
-[\[Sysname-rip-1\] graceful-restart interval 200]{lang="EN-US"}
-:::::
-
-::: {#-52316550 .myid}
-[]{#_Toc404787704}[]{#struct_0_17903_10256_x1752914057}
+Sysname-rip-1 graceful-restart interval 200
 
 **RIP \-- RIP配置命令 \-- host-route**
 
 ------------------------------------------------------------------------
 
-[**[host-route]{lang="EN-US"}**]{#struct_0_17903_10256_547746163}[命令用来允许]{style="font-family:宋体"}[RIP]{lang="EN-US"}[接收主机路由。]{style="font-family:宋体"}
+**[host-route**]命令用来允许RIP接收主机路由。
 
-[**[undo host-route]{lang="EN-US"}**]{#struct_0_17903_10256_1633660909}[命令用来禁止]{style="font-family:宋体"}[RIP]{lang="EN-US"}[接收主机路由。]{style="font-family:宋体"}
+**[undo host-route**]命令用来禁止RIP接收主机路由。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_1539118296}
+【命令】
 
-[**[host-route]{lang="EN-US"}**]{#struct_0_17903_10256_x1396524598}
+**[host-route**]
 
-[**[undo host-route]{lang="EN-US"}**]{#struct_0_17903_10256_88406944}
+**[undo host-route**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_x292068748}
+【缺省情况】
 
-[[允许]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_739082341}[接收主机路由。]{style="font-family:宋体"}
+允许RIP接收主机路由。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1703615907}
+【视图】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x658020776}[视图]{style="font-family:宋体"}
+RIP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1932332637}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1012835560}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x930235215}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_x373450007}
+【使用指导】
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:6.5pt;font-family:Wingdings"}[在某些特殊情况下，路由器会收到大量来自同一网段的主机路由。这些路由对于路由寻址没有多少作用，却占用了大量的资源；此时可以使用]{style="font-family:宋体"}]{#struct_0_17903_10256_88472480}**[undo host-route]{lang="EN-US"}**[命令禁止接收主机路由，以节省网络资源。]{style="font-family:宋体"}
+l在某些特殊情况下，路由器会收到大量来自同一网段的主机路由。这些路由对于路由寻址没有多少作用，却占用了大量的资源；此时可以使用**undo host-route**命令禁止接收主机路由，以节省网络资源。
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:6.5pt;font-family:Wingdings"}[该命令仅对]{style="font-family:宋体"}]{#struct_0_17903_10256_445962684}[RIPv2]{lang="EN-US"}[报文携带的路由]{style="font-family:宋体"}[有效，对]{style="font-family:宋体"}[RIPv1]{lang="EN-US"}[报文携带的路由]{style="font-family:宋体"}[无效。]{style="font-family:宋体"}
+l该命令仅对RIPv2报文携带的路由有效，对RIPv1报文携带的路由无效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_127292718}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1159038225}[禁止]{style="font-family:宋体"}[RIP]{lang="EN-US"}[接收主机路由。]{style="font-family:宋体"}
+\# 禁止RIP接收主机路由。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x817312470}
+\<Sysname\> system-view
 
-[\[Sysname\] rip 1]{lang="EN-US"}
+Sysname rip 1
 
-[\[Sysname-rip-1\] undo host-route]{lang="EN-US"}
-:::
-
-::: {#29262825 .myid}
-[]{#_Toc404787705}[]{#struct_0_17903_10256_920185101}
+Sysname-rip-1 undo host-route
 
 **RIP \-- RIP配置命令 \-- import-route**
 
 ------------------------------------------------------------------------
 
-[**[import-route]{lang="EN-US"}**]{#struct_0_17903_10256_x1479887084}[命令用来从其它路由协议引入路由。]{style="font-family:宋体"}
+**[import-route**]命令用来从其它路由协议引入路由。
 
-[**[undo import-route]{lang="EN-US"}**]{#struct_0_17903_10256_x461243037}[命令用来取消引入外部路由信息。]{style="font-family:宋体"}
+**[undo import-route**]命令用来取消引入外部路由信息。
 
-[[【命令】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_88931233}
+【命令】
 
-[**[import-route ]{lang="EN-US"}***[protocol]{lang="EN-US"}*[ \[ *process-id* \| **all-processes** \| **allow-ibgp** \] \[ **allow-direct** \| **cost** *cost* \| **route-policy** *route-policy-name* ]{lang="EN-US"}]{#struct_0_17903_10256_1659431911}[[\| **tag** *tag* \]]{lang="EN-US"}]{#_Hlt24451966}[ \*]{lang="EN-US"}
+**[import-route ***protocol*[ [ *process-id* \| **all-processes** \| **allow-ibgp**   **allow-direct** \| **cost** *cost* \| **route-policy** *route-policy-name* ] [\| **tag** *tag* ]]] \*
 
-[**[undo import-route ]{lang="PT-BR"}**]{#struct_0_17903_10256_x1584746510}*[protocol]{lang="PT-BR"}*[ \[ *process-id* ]{lang="PT-BR"}[\| **all-processes** \]]{lang="EN-US"}
+**[undo import-route **]*protocol* [ *process-id* [\| **all-processes** ]]
 
-[[【缺省]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_x1393974095}[情况]{style="font-family:黑体;color:#0096d6"}[】]{style="font-family:黑体;
-color:#0096d6"}
+【缺省情况】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1104182603}[不引入其它路由。]{style="font-family:宋体"}
+RIP不引入其它路由。
 
-[[【视图】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_x1017496939}
+【视图】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_88996769}[视图]{style="font-family:宋体"}
+RIP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_1169109741}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_234955636}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x423593000}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_x484090102}
+【参数】
 
-[*[protocol]{lang="EN-US"}*]{#struct_0_17903_10256_283329542}[：指定引入的路由协议，]{style="font-family:宋体"}[可以是]{style="font-family:宋体"}**[bgp]{lang="EN-US"}**[、]{style="font-family:宋体"}**[direct]{lang="EN-US"}**[、]{style="font-family:宋体"}**[isis]{lang="EN-US"}**[、]{style="font-family:宋体"}**[ospf]{lang="EN-US"}**[、]{style="font-family:宋体"}**[rip]{lang="EN-US"}**[或]{style="font-family:宋体"}**[static]{lang="EN-US"}**[。]{style="font-family:宋体"}
+*[protocol*]：指定引入的路由协议，可以是**bgp**、**direct**、**isis**、**ospf**、**rip**或**static**。
 
-[*[proces]{lang="EN-US"}*[s-*id*]{lang="EN-US"}]{#struct_0_17903_10256_2051195215}[：路由协议进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[1]{lang="EN-US"}[。只有当]{style="font-family:宋体"}*[protocol]{lang="EN-US"}*[是]{style="font-family:宋体"}**[isis]{lang="EN-US"}**[、]{style="font-family:宋体"}**[ospf]{lang="EN-US"}**[或]{style="font-family:宋体"}**[rip]{lang="EN-US"}**[时该参数]{style="font-family:宋体"}[可选。]{style="font-family:宋体"}
+*[proces*s-*id*]：路由协议进程号，取值范围为1～65535，缺省值为1。只有当*protocol*是**isis**、**ospf**或**rip**时该参数可选。
 
-[**[all-processes]{lang="EN-US"}**]{#struct_0_17903_10256_581161255}[：引入指定路由协议所有进程的路由，只有当]{style="font-family:宋体"}*[protocol]{lang="EN-US"}*[是]{style="font-family:宋体"}**[rip]{lang="EN-US"}**[、]{style="font-family:宋体"}**[ospf]{lang="EN-US"}**[或]{style="font-family:宋体"}**[isis]{lang="EN-US"}**[时可以指定该参]{style="font-family:宋体"}[数。]{style="font-family:宋体"}
+**[all-processes**]：引入指定路由协议所有进程的路由，只有当*protocol*是**rip**、**ospf**或**isis**时可以指定该参数。
 
-[**[allow-ibgp]{lang="EN-US"}**]{#struct_0_17903_10256_89062305}[：当]{style="font-family:宋体"}*[protocol]{lang="EN-US"}*[为]{style="font-family:宋体"}**[bgp]{lang="EN-US"}**[时，]{style="font-family:宋体"}**[allow-ibgp]{lang="EN-US"}**[为可选关键字]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[allow-ibgp**]：当*protocol*为**bgp**时，**allow-ibgp**为可选关键字。
 
-[**[allow-direct]{lang="EN-US"}**]{#struct_0_17903_10256_x1327295240}[：在引入的路由中包含使能了该协议的接口网段路由。缺省情况下，在引入协议路由时不会包含使能了该协议的接口网段路由。当]{style="font-family:宋体"}**[allow-direct]{lang="EN-US"}**[与]{style="font-family:宋体"}**[route-policy]{lang="EN-US"}**[ *route-policy-name*]{lang="EN-US"}[参数一起使用时，需要注意路由策略中配置的匹配规则不要与接口路由信息存在冲突，否则会导致]{style="font-family:宋体"}**[allow-direct]{lang="EN-US"}**[配置失效。例如，当配置]{style="font-family:宋体"}**[allow-direct]{lang="EN-US"}**[参数引入]{style="font-family:宋体"}[OSPF]{lang="EN-US"}[直连时，在路由策略中不要配置]{style="font-family:宋体"}**[if-match]{lang="EN-US"}**[ **route-type**]{lang="EN-US"}[匹配条件，否则，]{style="font-family:宋体"}**[allow-direct]{lang="EN-US"}**[参数失效。]{style="font-family:宋体"}
+**[allow-direct**]：在引入的路由中包含使能了该协议的接口网段路由。缺省情况下，在引入协议路由时不会包含使能了该协议的接口网段路由。当**allow-direct**与**route-policy** *route-policy-name*参数一起使用时，需要注意路由策略中配置的匹配规则不要与接口路由信息存在冲突，否则会导致**allow-direct**配置失效。例如，当配置**allow-direct**参数引入OSPF直连时，在路由策略中不要配置**if-match** **route-type**匹配条件，否则，**allow-direct**参数失效。
 
-[**[cost]{lang="EN-US"}***[ cost]{lang="EN-US"}*]{#struct_0_17903_10256_1487541414}[：所要引入路由的度量]{style="font-family:宋体"}[值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[16]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[0]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[cost*** cost*]：所要引入路由的度量值，取值范围为0～16，缺省值为0。
 
-[**[route-policy ]{lang="EN-US"}**]{#struct_0_17903_10256_988801899}*[route-policy-name]{lang="EN-US"}*[：路由策略名称，]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[route-policy **]*route-policy-name*：路由策略名称，*route-policy-name*为1～63个字符的字符串，区分大小写。
 
-[**[tag]{lang="EN-US"}***[ tag]{lang="EN-US"}*]{#struct_0_17903_10256_x1167200215}[：所要引入路由的标记值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[0]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[tag*** tag*]：所要引入路由的标记值，取值范围为0～65535，缺省值为0。
 
-[[【使用指导】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_x1880697625}
+【使用指导】
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:6.5pt;font-family:Wingdings"}**[import-route]{lang="EN-US"}**]{#struct_0_17903_10256_492855271}[ ]{lang="EN-US" style="font-family:宋体"}*[bgp]{lang="EN-US"}*[表示只引入]{lang="EN-US" style="font-family:宋体"}[EBGP]{lang="EN-US"}[路由；]{lang="EN-US" style="font-family:宋体"}**[import-route ]{lang="EN-US"}***[bgp]{lang="EN-US"}***[ allow-ibgp]{lang="EN-US"}**[表示将]{lang="EN-US" style="font-family:宋体"}[IBGP]{lang="EN-US"}[路由也引入，容易引起路由环路，请慎用]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}
+l**import-route***bgp*表示只引入EBGP路由；**import-route ***bgp*** allow-ibgp**表示将IBGP路由也引入，容易引起路由环路，请慎用。
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:6.5pt;font-family:Wingdings"}[只能引入路由表中状态为]{lang="EN-US" style="font-family:宋体"}[active]{lang="EN-US"}]{#struct_0_17903_10256_x1088878539}[的路由，是否为]{lang="EN-US" style="font-family:宋体"}[active]{lang="EN-US"}[状态可以通过]{lang="EN-US" style="font-family:宋体"}**[display]{lang="EN-US"}[ ]{lang="EN-US" style="font-family:宋体"}[ip]{lang="EN-US"}[ ]{lang="EN-US" style="font-family:宋体"}[routing-table protocol]{lang="EN-US"}**[命令来查看。]{lang="EN-US" style="font-family:
-宋体"}
+l只能引入路由表中状态为active的路由，是否为active状态可以通过**displayiprouting-table protocol**命令来查看。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[undo import-route]{lang="EN-US"}**[ *protocol* **all-processes**]{lang="EN-US"}]{#struct_0_17903_10256_89127841}[命令只能取消]{lang="EN-US" style="font-family:宋体"}**[import-route]{lang="EN-US"}**[ *protocol* **all-processes**]{lang="EN-US"}[命令的配置，不能取消]{lang="EN-US" style="font-family:宋体"}**[import-route]{lang="EN-US"}**[ *protocol* *process-id*]{lang="EN-US"}[命令的配置。]{lang="EN-US" style="font-family:宋体"}
+·**undo import-route** *protocol* **all-processes**命令只能取消**import-route** *protocol* **all-processes**命令的配置，不能取消**import-route** *protocol* *process-id*命令的配置。
 
-[[【举例】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_1002490010}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x297000091}[引入静态路由，并将其度量值设置为]{style="font-family:宋体"}[4]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 引入静态路由，并将其度量值设置为4。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_462300472}
+\<Sysname\> system-view
 
-[\[Sysname\] rip 1]{lang="EN-US"}
+Sysname rip 1
 
-[\[Sysname-rip-1\] import-route static cost 4]{lang="EN-US"}
+Sysname-rip-1 import-route static cost 4
 
-[[【命令参考】]{style="font-family:黑体"}]{#struct_0_17903_10256_x194294670}
+【命令参考】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[default cost]{lang="EN-US"}**]{#struct_0_17903_10256_2027812840}
-:::
-
-::::: {#1012649285 .myid}
-[]{#_Toc404787706}[]{#struct_0_17903_10256_x845279343}[]{#_Toc313007770}
+·**default cost**
 
 **RIP \-- RIP配置命令 \-- maximum load-balancing**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](RIP命令.files/image002.png){width="63" height="25"}]{lang="EN-US"}]{#struct_0_17903_10256_1829120539}
-:::
+![说明](RIP命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_17903_10256_89193377}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[maximum load-balancing]{lang="EN-US"}**]{#struct_0_17903_10256_x1736676659}[命令用来配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[最大等价路由条数。]{style="font-family:宋体"}
+**[maximum load-balancing**]命令用来配置RIP最大等价路由条数。
 
-[**[undo maximum load-balancing]{lang="EN-US"}**]{#struct_0_17903_10256_238599960}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo maximum load-balancing**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x2117060245}
+【命令】
 
-[**[maximum load-balancing]{lang="EN-US"}**[ *number*]{lang="EN-US"}]{#struct_0_17903_10256_347012688}
+**[maximum load-balancing** *number*]
 
-[**[undo maximum load-balancing]{lang="EN-US"}**]{#struct_0_17903_10256_1577641984}
+**[undo maximum load-balancing**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_1769324593}
+【缺省情况】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x627104175}[支持的等价路由的最大条数与]{style="font-family:宋体"}[系统支持最大等价路由的条数相同]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+RIP支持的等价路由的最大条数与系统支持最大等价路由的条数相同。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x38261147}
+【视图】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_89258913}[视图]{style="font-family:宋体"}
+RIP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_871209359}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1917402909}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_268498373}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_2087777547}
+【参数】
 
-[*[number]{lang="EN-US"}*]{#struct_0_17903_10256_74172583}[：等价路由的最大条数。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[number*]：等价路由的最大条数。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_x429680264}
+【使用指导】
 
-[[如果通过]{style="font-family:宋体"}**[max-ecmp-num]{lang="EN-US"}**]{#struct_0_17903_10256_1430651292}[命令配置系统支持最大等价路由的条数为]{style="font-family:宋体"}[m]{lang="EN-US"}[，则本命令的缺省值为]{style="font-family:宋体"}[m]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[m]{lang="EN-US"}[。]{style="font-family:
-宋体"}
+如果通过**max-ecmp-num**命令配置系统支持最大等价路由的条数为m，则本命令的缺省值为m，取值范围为1～m。
 
-[**[max-ecmp-num]{lang="EN-US"}**]{#struct_0_17903_10256_1716802154}[命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[max-ecmp-num**]命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_1381212229}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_89324449}[配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[最大等价路由条数为]{style="font-family:宋体"}[2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置RIP最大等价路由条数为2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x1166199881}
+\<Sysname\> system-view
 
-[\[Sysname\] rip ]{lang="EN-US"}
+Sysname rip
 
-[\[Sysname-rip-1\] maximum load-balancing 2]{lang="EN-US"}
+Sysname-rip-1 maximum load-balancing 2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_100396875}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[max-ecmp-num]{lang="EN-US"}**]{#struct_0_17903_10256_x1109866592}[（三层技术]{style="font-family:宋体"}[-IP]{lang="EN-US"}[路由命令参考]{style="font-family:宋体"}[/IP]{lang="EN-US"}[路由基础）]{style="font-family:宋体"}
-:::::
-
-::: {#-815886662 .myid}
-[]{#_Toc404787707}[]{#struct_0_17903_10256_1367187644}
+·**max-ecmp-num**（三层技术-IP路由命令参考/IP路由基础）
 
 **RIP \-- RIP配置命令 \-- network**
 
 ------------------------------------------------------------------------
 
-[**[network]{lang="EN-US"}**]{#struct_0_17903_10256_600671214}[命令用来在指定网段上使能]{style="font-family:宋体"}[RIP]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[network**]命令用来在指定网段上使能RIP。
 
-[**[undo network]{lang="EN-US"}**]{#struct_0_17903_10256_1432755236}[命令用来在指定网段上禁用]{style="font-family:宋体"}[RIP]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo network**]命令用来在指定网段上禁用RIP。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_87805366}
+【命令】
 
-[**[network ]{lang="EN-US"}***[network-address ]{lang="EN-US"}*[\[ *wildcard-mask* \]]{lang="EN-US"}]{#struct_0_17903_10256_89389985}
+**[network ***network-address * *wildcard-mask* ]
 
-[**[undo]{lang="EN-US"}**[ **network** *network-address*]{lang="EN-US"}]{#struct_0_17903_10256_x880301306}
+**[undo** **network** *network-address*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1400391388}
+【缺省情况】
 
-[[没有网段使能]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1460323545}[。]{style="font-family:宋体"}
+没有网段使能RIP。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x2021824830}
+【视图】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_733515282}[视图]{style="font-family:宋体"}
+RIP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_1080026286}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1509662560}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x642673382}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1267360516}
+【参数】
 
-[*[network-address]{lang="EN-US"}*]{#struct_0_17903_10256_88406945}[：指定网段的地址，其取值可以为各个接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[网络地址。]{style="font-family:宋体"}
+*[network-address*]：指定网段的地址，其取值可以为各个接口的IP网络地址。
 
-[*[wildcard-mask]{lang="EN-US"}*]{#struct_0_17903_10256_2046583412}[：]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址掩码的反码，相当于将]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址的掩码取反（]{style="font-family:宋体"}[0]{lang="EN-US"}[变]{style="font-family:宋体"}[1]{lang="EN-US"}[，]{style="font-family:宋体"}[1]{lang="EN-US"}[变]{style="font-family:
-宋体"}[0]{lang="EN-US"}[）。其中，"]{style="font-family:宋体"}[1]{lang="EN-US"}["表示忽略]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址中对应的位，"]{style="font-family:宋体"}[0]{lang="EN-US"}["表示必须保留此位。（例如：子网掩码]{style="font-family:宋体"}[255.0.0.0]{lang="EN-US"}[，该掩码的反码为]{style="font-family:宋体"}[0.255.255.255]{lang="EN-US"}[）。如果未指定本参数，将按照自然网段进行。]{style="font-family:宋体"}
+*[wildcard-mask*]：IP地址掩码的反码，相当于将IP地址的掩码取反（0变1，1变0）。其中，"1"表示忽略IP地址中对应的位，"0"表示必须保留此位。（例如：子网掩码255.0.0.0，该掩码的反码为0.255.255.255）。如果未指定本参数，将按照自然网段进行。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_2006565596}
+【使用指导】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x187343222}[只在指定网段的接口上运行，指定网段可以配置掩码；对于不在指定网段上的接口，]{style="font-family:宋体"}[RIP]{lang="EN-US"}[既不在它上面接收和发送路由，也不将它的接口路由发布出去。因此，]{style="font-family:宋体"}[RIP]{lang="EN-US"}[启动后必须指定其工作网段。]{style="font-family:宋体"}
+RIP只在指定网段的接口上运行，指定网段可以配置掩码；对于不在指定网段上的接口，RIP既不在它上面接收和发送路由，也不将它的接口路由发布出去。因此，RIP启动后必须指定其工作网段。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在单进程情况下，可以使用]{lang="EN-US" style="font-family:宋体"}**[network ]{lang="EN-US"}**[0.0.0.0]{lang="EN-US"}]{#struct_0_17903_10256_266326000}[命令在所有接口上使能]{lang="EN-US" style="font-family:宋体"}[RIP]{lang="EN-US"}[；在多进程情况下，无法使用]{lang="EN-US" style="font-family:宋体"}**[network ]{lang="EN-US"}**[0.0.0.0]{lang="EN-US"}[命令。]{lang="EN-US" style="font-family:
-宋体"}
+·在单进程情况下，可以使用**network **0.0.0.0命令在所有接口上使能RIP；在多进程情况下，无法使用**network **0.0.0.0命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x759019768}[不支持将同一物理接口下的不同网段使能到不同的]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程中。]{style="font-family:宋体"}
+·RIP不支持将同一物理接口下的不同网段使能到不同的RIP进程中。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_936780255}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x2101257323}[在指定网段]{style="font-family:宋体"}[129.102.0.0]{lang="EN-US"}[上使能]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程]{style="font-family:宋体"}[100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在指定网段129.102.0.0上使能RIP进程100。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_88472481}
+\<Sysname\> system-view
 
-[\[Sysname\] rip 100]{lang="EN-US"}
+Sysname rip 100
 
-[\[Sysname-rip-100\] network 129.102.0.0]{lang="EN-US"}
+Sysname-rip-100 network 129.102.0.0
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1892689476}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[rip enable]{lang="EN-US"}**]{#struct_0_17903_10256_413856647}
-:::
-
-::::: {#-1554088180 .myid}
-[]{#_Toc404787708}[]{#struct_0_17903_10256_1353604044}[]{#_Toc375235990}[]{#_Toc328746897}[]{#_Toc322698689}
+·**rip enable**
 
 **RIP \-- RIP配置命令 \-- non-stop-routing**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](RIP命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_17903_10256_x1432202657}
-:::
+![说明](RIP命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_17903_10256_1353800652}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[non-stop-routing**]命令用来使能RIP协议的NSR功能。
 
-[**[non-stop-routing]{lang="EN-US"}**]{#struct_0_17903_10256_1275601932}[命令用来使能]{style="font-family:宋体"}[RIP]{lang="EN-US"}[协]{style="font-family:宋体"}[议的]{style="font-family:宋体"}[NSR]{lang="EN-US"}[功]{style="font-family:宋体"}[能。]{style="font-family:宋体"}
+**[undo non-stop-routing**]命令用来关闭RIP协议的NSR功能。
 
-[**[undo non-stop-routing]{lang="EN-US"}**]{#struct_0_17903_10256_x1213415385}[命令用来关闭]{style="font-family:宋体"}[RIP]{lang="EN-US"}[协议]{style="font-family:宋体"}[的]{style="font-family:宋体"}[NSR]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1170791763}
+**[non-stop-routing**]
 
-[**[non-stop-routing]{lang="EN-US"}**]{#struct_0_17903_10256_1353735116}
+**[undo non-stop-routing**]
 
-[**[undo non-stop-routing]{lang="EN-US"}**]{#struct_0_17903_10256_2079120810}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_x672978908}
+RIP协议的NSR功能处于关闭状态。
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1354456012}[协议的]{style="font-family:宋体"}[NSR]{lang="EN-US"}[功能处于关闭状态。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_1185638634}
+RIP视图
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x387394987}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_1354390476}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_1119626547}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_797896213}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_1353931725}
+RIP NSR特性与RIP GR特性互斥，即**non-stop-routing**和**graceful-restart**命令互斥，不能同时配置。
 
-[[RIP NSR]{lang="EN-US"}]{#struct_0_17903_10256_491892557}[特性与]{style="font-family:宋体"}[RIP GR]{lang="EN-US"}[特性互斥，即]{style="font-family:宋体"}**[non-stop-routing]{lang="EN-US"}**[和]{style="font-family:宋体"}**[graceful-restart]{lang="EN-US"}**[命令互斥，不能同时配置。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_x671200089}
+\# 配置RIP进程1使能NSR功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_267780564}[配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[使能]{style="font-family:宋体"}[NSR]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_1353866189}
+Sysname rip 1
 
-[\[Sysname\] rip 1]{lang="EN-US"}
-
-[\[Sysname-rip-1\] non-stop-routing]{lang="EN-US"}
-:::::
-
-::: {#-1957377733 .myid}
-[]{#_Toc137543161}[]{#_Toc33866018}[]{#_Toc404787709}[]{#struct_0_17903_10256_x267118838}[]{#_Toc216497586}
+Sysname-rip-1 non-stop-routing
 
 **RIP \-- RIP配置命令 \-- output-delay**
 
 ------------------------------------------------------------------------
 
-[**[output-delay]{lang="EN-US"}**]{#struct_0_17903_10256_1222736872}[用来配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文的发送速率。]{style="font-family:宋体"}
+**[output-delay**]用来配置RIP报文的发送速率。
 
-[**[undo output-delay]{lang="EN-US"}**]{#struct_0_17903_10256_902515280}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo output-delay**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_115620607}
+【命令】
 
-[**[output-delay]{lang="EN-US"}***[ time ]{lang="EN-US"}***[count ]{lang="EN-US"}***[count]{lang="EN-US"}*]{#struct_0_17903_10256_1590847922}
+**[output-delay*** time ***count ***count*]
 
-[**[undo output-delay]{lang="EN-US"}**]{#struct_0_17903_10256_2069220417}
+**[undo output-delay**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_24332042}
+【缺省情况】
 
-[[接口发送]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1655015177}[报文的时间间隔为]{style="font-family:宋体"}[20]{lang="EN-US"}[毫秒，一次最多发送]{style="font-family:宋体"}[3]{lang="EN-US"}[个]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+接口发送RIP报文的时间间隔为20毫秒，一次最多发送3个RIP报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x2015306224}
+【视图】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_2028063750}[视图]{style="font-family:宋体"}
+RIP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_1349027125}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_1915092177}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1118037004}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_1508149485}
+【参数】
 
-[*[time]{lang="EN-US"}*]{#struct_0_17903_10256_x1604829899}[：接口发送]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文的时间间隔，取值范围为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[100]{lang="EN-US"}[，单位为毫秒。]{style="font-family:宋体"}
+*[time*]：接口发送RIP报文的时间间隔，取值范围为10～100，单位为毫秒。
 
-[*[count]{lang="EN-US"}*]{#struct_0_17903_10256_1655080713}[：接口一次发送]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文的最大个数，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[30]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[count*]：接口一次发送RIP报文的最大个数，取值范围为1～30。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_x129948399}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x460282210}[配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[的所有接口发送]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文的时间间隔为]{style="font-family:宋体"}[60]{lang="EN-US"}[毫秒，一次最多发送]{style="font-family:宋体"}[10]{lang="EN-US"}[个]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+\# 配置RIP进程1的所有接口发送RIP报文的时间间隔为60毫秒，一次最多发送10个RIP报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x921040425}
+\<Sysname\> system-view
 
-[\[Sysname\] rip 1]{lang="EN-US"}
+Sysname rip 1
 
-[\[Sysname-rip-1\] output-delay 60 count 10]{lang="EN-US"}
-:::
-
-::: {#1903411553 .myid}
-[]{#_Toc216497591}[]{#_Toc137543192}[]{#_Toc33866021}[]{#_Toc306797778}[]{#_Toc305059808}[]{#_Toc33866019}[]{#_Toc404787710}[]{#struct_0_17903_10256_x529530762}[]{#_Toc331171739}[]{#_Toc328746898}[]{#_Toc322698690}[]{#_Toc286221208}[]{#_Toc286221209}[]{#_Toc286221210}[]{#_Toc286221211}[]{#_Toc286221212}[]{#_Toc286221213}[]{#_Toc286221214}[]{#_Toc286221215}[]{#_Toc286221216}[]{#_Toc286221217}[]{#_Toc286221218}[]{#_Toc286221219}[]{#_Toc286221220}[]{#_Toc286221221}[]{#_Toc286221222}[]{#_Toc286221223}[]{#_Toc286221228}[]{#_Toc286221230}[]{#_Toc286221231}[]{#_Toc286221232}[]{#_Toc286221233}[]{#_Toc286221234}[]{#_Toc286221235}[]{#_Toc286221236}[]{#_Toc286221237}[]{#_Toc286221238}[]{#_Toc286221239}[]{#_Toc286221240}[]{#_Toc286221241}[]{#_Toc286221242}[]{#_Toc286221243}[]{#_Toc286221244}[]{#_Toc286221245}[]{#_Toc286221247}[]{#_Toc286221248}[]{#_Toc137543164}[]{#_Toc137543165}[]{#_Toc137543166}[]{#_Toc137543167}[]{#_Toc137543168}[]{#_Toc137543169}[]{#_Toc137543170}[]{#_Toc137543171}[]{#_Toc137543172}[]{#_Toc137543173}[]{#_Toc137543174}[]{#_Toc137543175}[]{#_Toc137543176}[]{#_Toc137543177}[]{#_Toc137543178}[]{#_Toc137543179}[]{#_Toc137543180}[]{#_Toc137543181}[]{#_Toc137543182}[]{#_Toc137543183}[]{#_Toc137543184}[]{#_Toc137543185}[]{#_Toc137543186}[]{#_Toc137543187}[]{#_Toc137543188}[]{#_Toc137543189}[]{#_Toc137543190}[]{#_Toc286221249}[]{#_Toc286221250}[]{#_Toc286221251}[]{#_Toc286221252}[]{#_Toc286221253}[]{#_Toc286221254}[]{#_Toc286221255}[]{#_Toc286221256}[]{#_Toc286221257}[]{#_Toc286221258}[]{#_Toc286221259}[]{#_Toc286221260}[]{#_Toc286221261}[]{#_Toc286221262}[]{#_Toc286221263}[]{#_Toc286221264}[]{#_Toc286221266}[]{#_Toc286221267}[]{#_Toc286221268}[]{#_Toc286221269}[]{#_Toc286221270}[]{#_Toc286221271}[]{#_Toc286221272}[]{#_Toc286221273}[]{#_Toc286221274}[]{#_Toc286221275}[]{#_Toc286221276}[]{#_Toc286221277}[]{#_Toc286221278}
+Sysname-rip-1 output-delay 60 count 10
 
 **RIP \-- RIP配置命令 \-- peer**
 
 ------------------------------------------------------------------------
 
-[**[peer]{lang="EN-US"}**]{#struct_0_17903_10256_x1860763330}[命令用来配置]{style="font-family:宋体"}[NBMA]{lang="EN-US"}[（]{style="font-family:宋体"}[Non-Broadcast Multi-Access]{lang="EN-US"}[，非广播多路访问）网络中]{style="font-family:宋体"}[RIP]{lang="EN-US"}[邻居的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，并使更新报文以单播形式发送到对端，而不采用正常的组播或广播的形式。]{style="font-family:宋体"}
+**[peer**]命令用来配置NBMA（Non-Broadcast Multi-Access，非广播多路访问）网络中RIP邻居的IP地址，并使更新报文以单播形式发送到对端，而不采用正常的组播或广播的形式。
 
-[**[undo peer]{lang="EN-US"}**]{#struct_0_17903_10256_x661713527}[命令用来取消指定邻居]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[undo peer**]命令用来取消指定邻居IP地址。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x250642635}
+【命令】
 
-[**[peer]{lang="EN-US"}***[ ip-address]{lang="EN-US"}*]{#struct_0_17903_10256_1655146249}
+**[peer*** ip-address*]
 
-[**[undo peer ]{lang="EN-US"}***[ip-address]{lang="EN-US"}*]{#struct_0_17903_10256_x2012780205}
+**[undo peer ***ip-address*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_x2106681664}
+【缺省情况】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_468587742}[不向任何定点地址发送单播更新报文。]{style="font-family:宋体"}
+RIP不向任何定点地址发送单播更新报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1021460775}
+【视图】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1184995590}[视图]{style="font-family:宋体"}
+RIP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_942540238}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x590333390}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_880068617}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_1655211785}
+【参数】
 
-[*[ip-address]{lang="EN-US"}*]{#struct_0_17903_10256_1457434799}[：]{style="font-family:宋体"}[RIP]{lang="EN-US"}[邻居]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，用点分十进制格式表示。]{style="font-family:宋体"}
+*[ip-address*]：RIP邻居IP地址，用点分十进制格式表示。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_x26324440}
+【使用指导】
 
-[[当]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1699876082}[邻居与当前设备直连时不推荐使用该命令，因为这样可能会造成对端同时收到同一路由信息的组播（或广播）和单播两种形式的报文。]{style="font-family:宋体"}
+当RIP邻居与当前设备直连时不推荐使用该命令，因为这样可能会造成对端同时收到同一路由信息的组播（或广播）和单播两种形式的报文。
 
-[[配置本命令时，必须同时配置]{style="font-family:宋体"}**[undo]{lang="EN-US"}**[ **validate-source-address**]{lang="EN-US"}]{#struct_0_17903_10256_363310369}[命令，即取消对接收到的]{style="font-family:
-宋体"}[RIP]{lang="EN-US"}[路由更新报文进行源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址检查。]{style="font-family:宋体"}
+配置本命令时，必须同时配置**undo** **validate-source-address**命令，即取消对接收到的RIP路由更新报文进行源IP地址检查。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_x87129829}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_1239702780}[配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[邻居]{style="font-family:宋体"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[为]{style="font-family:宋体"}[202.38.165.1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置RIP邻居的IP地址为202.38.165.1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_960691688}
+\<Sysname\> system-view
 
-[\[Sysname\] rip 1]{lang="EN-US"}
+Sysname rip 1
 
-[\[Sysname-rip-1\] peer 202.38.165.1]{lang="EN-US"}
+Sysname-rip-1 peer 202.38.165.1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_1655277321}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[validate-source-address]{lang="EN-US"}**]{#struct_0_17903_10256_1512568083}
-:::
-
-::: {#830408614 .myid}
-[]{#_Toc404787711}[]{#struct_0_17903_10256_900442465}
+·**validate-source-address**
 
 **RIP \-- RIP配置命令 \-- preference**
 
 ------------------------------------------------------------------------
 
-[**[preference]{lang="EN-US"}**]{#struct_0_17903_10256_x1604381835}[命令用来配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[路由的优先级。]{style="font-family:宋体"}
+**[preference**]命令用来配置RIP路由的优先级。
 
-[**[undo preference]{lang="EN-US"}**]{#struct_0_17903_10256_x1971459914}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo preference**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1676883420}
+【命令】
 
-[**[preference]{lang="EN-US"}***[ ]{lang="EN-US"}*[{ *preference* \| **route-policy** *route-policy-name* } \*]{lang="EN-US"}]{#struct_0_17903_10256_x1771044930}
+**[preference****[{ *preference* \| **route-policy** *route-policy-name* } \*]]
 
-[**[undo preference]{lang="EN-US"}**]{#struct_0_17903_10256_1042096493}
+**[undo preference**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_x819558357}
+【缺省情况】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1655342857}[路由的优先级为]{style="font-family:宋体"}[100]{lang="EN-US"}[。]{style="font-family:宋体"}
+RIP路由的优先级为100。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1597948928}
+【视图】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1472416178}[视图]{style="font-family:宋体"}
+RIP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_1423372322}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1617486533}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x667275988}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_x272668768}
+【参数】
 
-[*[preference]{lang="EN-US"}*]{#struct_0_17903_10256_364939192}[：]{style="font-family:宋体"}[RIP]{lang="EN-US"}[路由优先级的值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[，取值越小，优先级越高。]{style="font-family:宋体"}
+*[preference*]：RIP路由优先级的值，取值范围为1～255，取值越小，优先级越高。
 
-[**[route-policy ]{lang="EN-US"}**]{#struct_0_17903_10256_1632853483}*[route-policy-name]{lang="EN-US"}*[：路由策略名称，]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。对满足特定条件的路由设置优先级。]{style="font-family:宋体"}
+**[route-policy **]*route-policy-name*：路由策略名称，*route-policy-name*为1～63个字符的字符串，区分大小写。对满足特定条件的路由设置优先级。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_1655408393}
+【使用指导】
 
-[[通过指定]{style="font-family:宋体"}]{#struct_0_17903_10256_x514799251}**[route-policy]{lang="EN-US"}**[参数，可应用路由策略对特定的路由设置优先级：]{style="font-family:宋体"}
+通过指定**route-policy**参数，可应用路由策略对特定的路由设置优先级：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果在路由策略中已经设置了匹配路由的优先级，则匹配路由取路由策略设置的优先级，其它路由取]{style="font-family:宋体"}]{#struct_0_17903_10256_x1977810177}**[preference]{lang="EN-US"}**[命令所设优先级。]{style="font-family:宋体"}
+·如果在路由策略中已经设置了匹配路由的优先级，则匹配路由取路由策略设置的优先级，其它路由取**preference**命令所设优先级。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果在路由策略中没有设置匹配路由的优先级，则所有路由都取]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_x1843714861}**[preference]{lang="EN-US"}**[命令所设优先级。]{lang="EN-US" style="font-family:宋体"}
+·如果在路由策略中没有设置匹配路由的优先级，则所有路由都取**preference**命令所设优先级。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_1968599736}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x416275733}[配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[路由的优先级为]{style="font-family:宋体"}[120]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置RIP路由的优先级为120。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_66006985}
+\<Sysname\> system-view
 
-[\[Sysname\] rip 1]{lang="EN-US"}
+Sysname rip 1
 
-[\[Sysname-rip-1\] preference 120]{lang="EN-US"}
-:::
-
-::: {#756940664 .myid}
-[]{#_Toc404787712}[]{#struct_0_17903_10256_968865818}[]{#_Toc313007774}
+Sysname-rip-1 preference 120
 
 **RIP \-- RIP配置命令 \-- reset rip process**
 
 ------------------------------------------------------------------------
 
-[**[reset rip process]{lang="EN-US"}**]{#struct_0_17903_10256_1655473929}[命令用来重启指定]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程。]{style="font-family:宋体"}
+**[reset rip process**]命令用来重启指定RIP进程。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_1925957309}
+【命令】
 
-[**[reset rip ]{lang="EN-US"}**]{#struct_0_17903_10256_382123550}*[process-id]{lang="EN-US"}*[ ]{lang="EN-US"}**[process]{lang="EN-US"}**
+**[reset rip **]*process-id***process**
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_2047593803}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_17903_10256_x741424419}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_236863202}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_809644225}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x971143015}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_x591628648}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17903_10256_x1428258414}[：]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：RIP进程号，取值范围为1～65535。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_1654490889}
+【使用指导】
 
-[[执行该命令后，系统提示用户确认是否重启]{style="font-family:宋体"}]{#struct_0_17903_10256_x1245829996}[RIP]{lang="EN-US"}[协议。]{style="font-family:宋体"}
+执行该命令后，系统提示用户确认是否重启RIP协议。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_x782534453}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1106110663}[重启进程号为]{style="font-family:宋体"}[100]{lang="EN-US"}[的]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程。]{style="font-family:宋体"}
+\# 重启进程号为100的RIP进程。
 
-[[\<Sysname\> reset rip 100 process   ]{lang="EN-US"}]{#struct_0_17903_10256_1119042258}
+\<Sysname\> reset rip 100 process  
 
-[Reset RIP process? \[Y/N\]:y]{lang="EN-US"}
-:::
-
-::: {#2123596242 .myid}
-[]{#_Toc404787713}[]{#struct_0_17903_10256_1945574386}[]{#_Toc313007775}
+Reset RIP process? [Y/N:y]
 
 **RIP \-- RIP配置命令 \-- reset rip statistics**
 
 ------------------------------------------------------------------------
 
-[**[reset rip statistics]{lang="EN-US"}**]{#struct_0_17903_10256_507605199}[命令用来清除指定]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程的统计信息，便于在调试时重新记录统计数据。]{style="font-family:宋体"}
+**[reset rip statistics**]命令用来清除指定RIP进程的统计信息，便于在调试时重新记录统计数据。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1214337169}
+【命令】
 
-[**[reset rip ]{lang="EN-US"}**]{#struct_0_17903_10256_1654556425}*[process-id]{lang="EN-US"}*[ **statistics**]{lang="EN-US"}
+**[reset rip **]*process-id* **statistics**
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_1879402701}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_17903_10256_1034165689}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_622054893}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_183220843}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_17903_10256_834124338}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1063327474}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_17903_10256_105853039}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_x748673929}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17903_10256_774610162}[：]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：RIP进程号，取值范围为1～65535。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_1655015178}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x2014454256}[清除进程号为]{style="font-family:宋体"}[100]{lang="EN-US"}[的]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程的统计信息。]{style="font-family:宋体"}
+\# 清除进程号为100的RIP进程的统计信息。
 
-[[\<Sysname\> reset rip 100 statistics]{lang="EN-US"}]{#struct_0_17903_10256_x673065358}
-:::
-
-::: {#228405416 .myid}
-[]{#_Toc404787714}[]{#struct_0_17903_10256_1718247272}
+\<Sysname\> reset rip 100 statistics
 
 **RIP \-- RIP配置命令 \-- rip**
 
 ------------------------------------------------------------------------
 
-[**[rip]{lang="EN-US"}**]{#struct_0_17903_10256_x434996732}[命令用来启动]{style="font-family:宋体"}[RIP]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[RIP]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+**[rip**]命令用来启动RIP，并进入RIP视图。
 
-[**[undo rip]{lang="EN-US"}**]{#struct_0_17903_10256_x2029717055}[命令用来关闭]{style="font-family:宋体"}[RIP]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo rip**]命令用来关闭RIP。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1122275358}
+【命令】
 
-[**[rip]{lang="EN-US"}**[ \[ *process-id* \] \[ **vpn-instance** *vpn-instance-name* \]]{lang="EN-US"}]{#struct_0_17903_10256_x877364708}
+**[rip** [ *process-id*   **vpn-instance** *vpn-instance-name* ]]
 
-[**[undo rip]{lang="EN-US"}**[ \[ *process-id* \]]{lang="EN-US"}]{#struct_0_17903_10256_822858890}
+**[undo rip** [ *process-id* ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_1655080714}
+【缺省情况】
 
-[[系统没有运行]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x130276079}[。]{style="font-family:宋体"}
+系统没有运行RIP。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x906626892}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_17903_10256_181459681}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_1445588409}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_1020717067}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_736214762}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_68315750}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17903_10256_113098093}[：]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：RIP进程号，取值范围为1～65535，缺省值为1。
 
-[**[vpn-instance]{lang="EN-US"}***[ vpn-instance-name]{lang="EN-US"}*]{#struct_0_17903_10256_1055265779}[：指定]{style="font-family:宋体"}[RIP]{lang="EN-US"}[所属的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[。]{style="font-family:宋体"}*[vpn-instance-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果未指定本参数，则表示]{style="font-family:宋体"}[RIP]{lang="EN-US"}[位于公网中。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[vpn-instance*** vpn-instance-name*]：指定RIP所属的VPN。*vpn-instance-name*表示MPLS L3VPN的VPN实例名称，为1～31个字符的字符串，区分大小写。如果未指定本参数，则表示RIP位于公网中。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_1655146250}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[必须先启动]{style="font-family:宋体"}]{#struct_0_17903_10256_x2012190382}[RIP]{lang="EN-US"}[进程，才能配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[的各种全局性参数，而配置与接口相关的参数时，可以不受这个限制。]{style="font-family:宋体"}
+·必须先启动RIP进程，才能配置RIP的各种全局性参数，而配置与接口相关的参数时，可以不受这个限制。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[关闭]{style="font-family:宋体"}]{#struct_0_17903_10256_202515275}[RIP]{lang="EN-US"}[进程后，原来配置的接口参数也同时失效。]{style="font-family:宋体"}
+·关闭RIP进程后，原来配置的接口参数也同时失效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_453316655}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1694230915}[启动]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[RIP]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+\# 启动RIP进程1，并进入RIP视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x622613604}
+\<Sysname\> system-view
 
-[\[Sysname\] rip]{lang="EN-US"}
+Sysname rip
 
-[\[Sysname-rip-1\]]{lang="EN-US"}
-:::
-
-::: {#-2086704271 .myid}
-[]{#_Toc216497600}[]{#_Toc137543217}[]{#_Toc94930694}[]{#_Toc93984729}[]{#_Toc306797780}[]{#_Toc305059811}[]{#_Toc191726847}[]{#_Toc404787715}[]{#struct_0_17903_10256_x1776132246}[]{#_Toc313007777}[]{#_Toc33866022}[]{#_Toc286221281}[]{#_Toc286221283}[]{#_Toc286221284}[]{#_Toc286221285}[]{#_Toc286221286}[]{#_Toc286221287}[]{#_Toc286221288}[]{#_Toc286221289}[]{#_Toc286221290}[]{#_Toc286221291}[]{#_Toc286221292}[]{#_Toc286221293}[]{#_Toc286221294}[]{#_Toc286221295}[]{#_Toc286221296}[]{#_Toc286221297}[]{#_Toc286221298}[]{#_Toc286221299}[]{#_Toc286221300}[]{#_Toc286221301}[]{#_Toc286221302}[]{#_Toc286221303}[]{#_Toc286221304}[]{#_Toc286221305}[]{#_Toc286221307}[]{#_Toc286221310}[]{#_Toc286221311}[]{#_Toc286221316}[]{#_Toc286221317}[]{#_Toc286221320}[]{#_Toc286221321}[]{#_Toc286221322}[]{#_Toc286221323}[]{#_Toc286221324}[]{#_Toc286221325}[]{#_Toc286221326}[]{#_Toc286221327}[]{#_Toc286221328}[]{#_Toc286221329}[]{#_Toc286221330}[]{#_Toc286221331}[]{#_Toc286221332}[]{#_Toc286221333}[]{#_Toc286221334}[]{#_Toc286221335}[]{#_Toc286221337}[]{#_Toc286221338}[]{#_Toc286221339}[]{#_Toc286221340}[]{#_Toc286221342}[]{#_Toc286221343}[]{#_Toc286221344}[]{#_Toc286221345}[]{#_Toc286221346}[]{#_Toc286221347}[]{#_Toc286221348}[]{#_Toc286221349}[]{#_Toc286221350}[]{#_Toc286221351}[]{#_Toc286221352}[]{#_Toc286221353}[]{#_Toc286221354}[]{#_Toc286221355}[]{#_Toc286221356}[]{#_Toc286221357}[]{#_Toc286221358}[]{#_Toc286221359}[]{#_Toc286221360}[]{#_Toc286221361}[]{#_Toc286221362}[]{#_Toc286221363}[]{#_Toc286221364}[]{#_Toc286221365}[]{#_Toc286221366}[]{#_Toc286221368}[]{#_Toc286221369}[]{#_Toc286221370}[]{#_Toc286221371}[]{#_Toc286221374}[]{#_Toc286221376}[]{#_Toc286221377}[]{#_Toc286221378}[]{#_Toc286221379}[]{#_Toc286221380}[]{#_Toc286221381}[]{#_Toc286221382}[]{#_Toc286221383}[]{#_Toc286221384}[]{#_Toc286221385}[]{#_Toc286221386}[]{#_Toc286221387}[]{#_Toc286221388}[]{#_Toc286221389}[]{#_Toc286221390}[]{#_Toc286221392}[]{#_Toc286221393}[]{#_Toc286221394}[]{#_Toc286221395}[]{#_Toc286221400}[]{#_Toc286221401}[]{#_Toc286221402}[]{#_Toc286221403}[]{#_Toc286221404}[]{#_Toc286221405}[]{#_Toc286221406}[]{#_Toc286221407}[]{#_Toc286221408}[]{#_Toc286221409}[]{#_Toc286221410}[]{#_Toc286221411}[]{#_Toc286221412}[]{#_Toc286221413}[]{#_Toc286221414}[]{#_Toc286221415}[]{#_Toc286221416}[]{#_Toc286221417}[]{#_Toc286221418}[]{#_Toc286221419}[]{#_Toc286221420}[]{#_Toc286221421}[]{#_Toc286221422}[]{#_Toc286221423}[]{#_Toc286221425}[]{#_Toc286221426}[]{#_Toc286221427}[]{#_Toc286221428}[]{#_Toc286221429}[]{#_Toc286221430}[]{#_Toc286221431}[]{#_Toc286221432}[]{#_Toc286221433}[]{#_Toc286221434}[]{#_Toc286221435}[]{#_Toc286221437}[]{#_Toc286221438}[]{#_Toc286221439}[]{#_Toc286221440}[]{#_Toc286221441}[]{#_Toc286221442}[]{#_Toc286221443}[]{#_Toc286221444}[]{#_Toc286221445}[]{#_Toc286221446}[]{#_Toc286221447}[]{#_Toc286221448}[]{#_Toc286221449}[]{#_Toc286221450}[]{#_Toc286221451}[]{#_Toc286221452}[]{#_Toc286221453}[]{#_Toc286221454}[]{#_Toc286221455}[]{#_Toc286221456}[]{#_Toc286221457}[]{#_Toc286221458}[]{#_Toc286221459}[]{#_Toc286221460}[]{#_Toc286221462}[]{#_Toc286221463}[]{#_Toc286221464}[]{#_Toc286221465}[]{#_Toc286221466}[]{#_Toc286221467}[]{#_Toc286221468}[]{#_Toc286221469}[]{#_Toc286221470}[]{#_Toc286221472}[]{#_Toc286221474}[]{#_Toc286221475}[]{#_Toc286221476}[]{#_Toc286221477}[]{#_Toc286221478}[]{#_Toc286221479}[]{#_Toc286221480}[]{#_Toc286221481}[]{#_Toc286221482}[]{#_Toc286221483}[]{#_Toc286221484}[]{#_Toc286221485}[]{#_Toc286221486}[]{#_Toc286221487}[]{#_Toc286221490}[]{#_Toc286221491}[]{#_Toc137261626}[]{#_Toc137543199}[]{#_Toc137261627}[]{#_Toc137543200}[]{#_Toc137261628}[]{#_Toc137543201}[]{#_Toc137261629}[]{#_Toc137543202}[]{#_Toc137261630}[]{#_Toc137543203}[]{#_Toc137261631}[]{#_Toc137543204}[]{#_Toc137261632}[]{#_Toc137543205}[]{#_Toc137261633}[]{#_Toc137543206}[]{#_Toc137261634}[]{#_Toc137543207}[]{#_Toc137261635}[]{#_Toc137543208}[]{#_Toc137261636}[]{#_Toc137543209}[]{#_Toc137261637}[]{#_Toc137543210}[]{#_Toc137261638}[]{#_Toc137543211}[]{#_Toc137261639}[]{#_Toc137543212}[]{#_Toc137261640}[]{#_Toc137543213}[]{#_Toc137261641}[]{#_Toc137543214}[]{#_Toc137261642}[]{#_Toc137543215}[]{#_Toc286221493}[]{#_Toc286221494}[]{#_Toc286221495}[]{#_Toc286221496}[]{#_Toc286221497}[]{#_Toc286221498}[]{#_Toc286221499}[]{#_Toc286221500}[]{#_Toc286221501}[]{#_Toc286221502}[]{#_Toc286221503}[]{#_Toc286221504}[]{#_Toc286221505}[]{#_Toc286221506}[]{#_Toc286221507}[]{#_Toc286221511}[]{#_Toc286221512}
+Sysname-rip-1
 
 **RIP \-- RIP配置命令 \-- rip authentication-mode**
 
 ------------------------------------------------------------------------
 
-[**[rip authentication-mode]{lang="EN-US"}**]{#struct_0_17903_10256_573422404}[命令用来配置]{style="font-family:宋体"}[RIP-2]{lang="EN-US"}[的验证方式及验证参数。]{style="font-family:宋体"}
+**[rip authentication-mode**]命令用来配置RIP-2的验证方式及验证参数。
 
-[**[undo rip authentication-mode]{lang="EN-US"}**]{#struct_0_17903_10256_1655211786}[命令用来取消所有验证。]{style="font-family:
-宋体"}
+**[undo rip authentication-mode**]命令用来取消所有验证。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_1457238191}
+【命令】
 
-[**[rip authentication-mode]{lang="EN-US"}**]{#struct_0_17903_10256_x492975582}[ ]{lang="EN-US"}[{ ]{lang="EN-US" style="font-size:10.0pt"}**[md5]{lang="EN-US"}**[ { **rfc2082** ]{lang="EN-US"}[{ ]{lang="EN-US" style="font-size:10.0pt"}**[cipher]{lang="EN-US"}**[ ]{lang="EN-US" style="font-size:
-10.0pt"}*[cipher-string]{lang="EN-US"}***[ ]{lang="EN-US"}**[\| **plain** *plain-string* ]{lang="EN-US"}[}]{lang="EN-US" style="font-size:10.0pt"}[ *key-id* \| **rfc2453** ]{lang="EN-US"}[{ ]{lang="EN-US" style="font-size:10.0pt"}**[cipher]{lang="EN-US"}**[ ]{lang="EN-US" style="font-size:10.0pt"}*[cipher-string]{lang="EN-US"}***[ ]{lang="EN-US"}**[\| **plain** *plain-string* ]{lang="EN-US"}[}]{lang="EN-US" style="font-size:10.0pt"}[ } \| ]{lang="EN-US"}**[simple ]{lang="EN-US"}**[{ ]{lang="EN-US" style="font-size:10.0pt"}**[cipher]{lang="EN-US"}**[ ]{lang="EN-US" style="font-size:10.0pt"}*[cipher-string]{lang="EN-US"}***[ ]{lang="EN-US"}**[\| **plain** *plain-string* ]{lang="EN-US"}[}]{lang="EN-US" style="font-size:10.0pt"}**[ ]{lang="EN-US"}**[}]{lang="EN-US"}
+**[rip authentication-mode**]**[md5** [**[cipher***cipher-string*****[\| **plain** *plain-string* ]}[ *key-id* \| **rfc2453** ]**[cipher***cipher-string*****[\| **plain** *plain-string* ]}[ } \| ]**simple ****[cipher***cipher-string*****[\| **plain** *plain-string* ]}****}
 
-[**[undo rip authentication-mode]{lang="EN-US"}**]{#struct_0_17903_10256_172917859}
+**[undo rip authentication-mode**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_x2045716337}
+【缺省情况】]
 
-[[接口没有配置]{style="font-family:宋体"}]{#struct_0_17903_10256_1854899751}[RIP-2]{lang="EN-US"}[的]{style="font-family:宋体"}[认证方式。]{style="font-family:宋体"}
+接口没有配置]RIP-2的认证方式。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_1596937289}
+【视图】]
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_17903_10256_x1859466200}
+接口视图]
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1205530929}
+【缺省用户角色】]
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_1655277322}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_1512633619}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_550414098}
+【参数】
 
-[**[md5]{lang="EN-US"}**]{#struct_0_17903_10256_309662414}[：]{style="font-family:宋体"}[MD5]{lang="EN-US"}[验证方式。]{style="font-family:宋体"}
+**[md5**]：MD5验证方式。
 
-[**[rfc2082]{lang="EN-US"}**]{#struct_0_17903_10256_182919901}[：指定]{style="font-family:宋体"}[MD5]{lang="EN-US"}[验证报文使用]{style="font-family:宋体"}[RFC 2082]{lang="EN-US"}[规定的报文格式。]{style="font-family:宋体"}
+**[rfc2082**]：指定MD5验证报文使用RFC 2082规定的报文格式。
 
-[**[cipher]{lang="EN-US"}**]{#struct_0_17903_10256_665865525}[：]{style="font-family:宋体"}[表示输入的密码为密文]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[cipher**]：表示输入的密码为密文。
 
-[*[cipher-string]{lang="EN-US"}*]{#struct_0_17903_10256_32882521}[：]{style="font-family:宋体"}[表示设置的密文密码，为]{style="font-family:宋体"}[33]{lang="EN-US"}[～]{style="font-family:宋体"}[53]{lang="EN-US"}[个字符的字符串，区分大小写]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+*[cipher-string*]：表示设置的密文密码，为33～53个字符的字符串，区分大小写。
 
-[**[plain]{lang="EN-US"}**]{#struct_0_17903_10256_x115900869}[：表示输入的密码为明文。]{style="font-family:宋体"}
+**[plain**]：表示输入的密码为明文。
 
-[*[plain-string]{lang="EN-US"}*]{#struct_0_17903_10256_338481916}[：]{style="font-family:宋体"}[表示设置的明文密码]{style="font-family:宋体"}[，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[16]{lang="EN-US"}[个字符的字符串]{style="font-family:宋体"}[，区分大小写]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+*[plain-string*]：表示设置的明文密码，为1～16个字符的字符串，区分大小写。
 
-[*[key-id]{lang="EN-US"}*]{#struct_0_17903_10256_1655342858}[：]{style="font-family:宋体"}[MD5 **rfc2082**]{lang="EN-US"}[验证标识符，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[key-id*]：MD5 **rfc2082**验证标识符，取值范围为1～255。
 
-[**[rfc2453]{lang="EN-US"}**]{#struct_0_17903_10256_x1598800896}[：指定]{style="font-family:宋体"}[MD5]{lang="EN-US"}[验证报文使用]{style="font-family:宋体"}[RFC 2453]{lang="EN-US"}[规定的报文格式（]{style="font-family:宋体"}[IETF]{lang="EN-US"}[标准）。]{style="font-family:宋体"}
+**[rfc2453**]：指定MD5验证报文使用RFC 2453规定的报文格式（IETF标准）。
 
-[**[simple]{lang="EN-US"}**]{#struct_0_17903_10256_x1502695844}[：简单验证方式。]{style="font-family:宋体"}
+**[simple**]：简单验证方式。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_1406493081}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[每次验证只支持一个验证字，新输入的验证字将覆盖旧验证字。]{style="font-family:宋体"}]{#struct_0_17903_10256_1519234771}
+·每次验证只支持一个验证字，新输入的验证字将覆盖旧验证字。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{style="font-family:宋体"}]{#struct_0_17903_10256_2051200981}[RIP]{lang="EN-US"}[的版本为]{style="font-family:宋体"}[RIP-1]{lang="EN-US"}[时，虽然在接口视图下仍然可以配置验证方式，但由于]{style="font-family:宋体"}[RIP-1]{lang="EN-US"}[不支持认证，因此该配置不会生效]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+·当RIP的版本为RIP-1时，虽然在接口视图下仍然可以配置验证方式，但由于RIP-1不支持认证，因此该配置不会生效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[以明文或密文方式设置的验证密码，均以密文的方式保存在配置文件中。]{style="font-family:宋体"}]{#struct_0_17903_10256_1404770390}
+·以明文或密文方式设置的验证密码，均以密文的方式保存在配置文件中。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_1663247234}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_780043337}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_1655408394}[在接口]{lang="EN-US" style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置]{lang="EN-US" style="font-family:宋体"}[RFC 2453]{lang="EN-US"}[格式的]{lang="EN-US" style="font-family:宋体"}[MD5]{lang="EN-US"}[明文验证，验证字为]{lang="EN-US" style="font-family:宋体"}[rose]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置RFC 2453格式的MD5明文验证，验证字为rose。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x515126931}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] rip version 2]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 rip version 2
 
-[\[Sysname-GigabitEthernet1/0/1\] rip authentication-mode md5 rfc2453 plain rose]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 rip authentication-mode md5 rfc2453 plain rose
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_x1117996208}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_1552113944}[在接口]{lang="EN-US" style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[上配置]{lang="EN-US" style="font-family:宋体"}[RFC 2453]{lang="EN-US"}[格式的]{lang="EN-US" style="font-family:宋体"}[MD5]{lang="EN-US"}[明文验证，验证字为]{lang="EN-US" style="font-family:宋体"}[rose]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+\# 在接口Vlan-interface10上配置RFC 2453格式的MD5明文验证，验证字为rose。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_1172358948}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] rip version 2]{lang="EN-US"}
+Sysname-Vlan-interface10 rip version 2
 
-[\[Sysname-Vlan-interface10\] rip authentication-mode md5 rfc2453 plain rose]{lang="EN-US"}
+Sysname-Vlan-interface10 rip authentication-mode md5 rfc2453 plain rose
 
-[[【命令参考】]{style="font-family:黑体"}]{#struct_0_17903_10256_408129614}
+【命令参考】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[rip version]{lang="EN-US"}**]{#struct_0_17903_10256_1655473930}
-:::
-
-::::: {#12074768 .myid}
-[]{#_Toc404787716}[]{#struct_0_17903_10256_1926416062}
+·**rip version**
 
 **RIP \-- RIP配置命令 \-- rip bfd enable**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](RIP命令.files/image002.png){width="63" height="25"}]{lang="EN-US"}]{#struct_0_17903_10256_x899397084}
-:::
+![说明](RIP命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_17903_10256_155949671}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[rip bfd enable**]命令用来使能RIP的BFD功能。
 
-[**[rip bfd enable]{lang="ES"}**]{#struct_0_17903_10256_x52991765}[命令用来使能]{style="font-family:宋体"}[RIP]{lang="EN-US"}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo rip bfd enable**]命令用来关闭RIP的BFD功能。
 
-[**[undo rip bfd enable]{lang="ES"}**]{#struct_0_17903_10256_2040827164}[命令用来关闭]{style="font-family:宋体"}[RIP]{lang="EN-US"}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_464973644}
+**[rip bfd enable**]
 
-[**[rip bfd enable]{lang="ES"}**]{#struct_0_17903_10256_692351897}
+**[undo rip bfd enable**]
 
-[**[undo rip bfd enable]{lang="ES"}**]{#struct_0_17903_10256_1293859431}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_1654490890}
+RIP的BFD功能处于关闭状态。
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1245371243}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[功能处于关闭状态。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x487696558}
+接口视图
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_17903_10256_1351298661}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_577620525}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_52789778}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1099994170}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_815336844}
+RIP支持采用BFD的直连echo检测方式和非直连control检测方式。
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x2145655849}[支持采用]{style="font-family:宋体"}[BFD]{lang="EN-US"}[的直连]{style="font-family:宋体"}[echo]{lang="EN-US"}[检测方式和非直连]{style="font-family:宋体"}[control]{lang="EN-US"}[检测方式。]{style="font-family:宋体"}
+RIP的邻居是单跳的概念，适合采用BFD的echo单向检测方式，但是，经过多跳到达邻居时echo方式则会失效。
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1654556426}[的邻居是单跳的概念，适合采用]{style="font-family:宋体"}[BFD]{lang="EN-US"}[的]{style="font-family:宋体"}[echo]{lang="EN-US"}[单向检测方式，但是，经过多跳到达邻居时]{style="font-family:宋体"}[echo]{lang="EN-US"}[方式则会失效。]{style="font-family:宋体"}
+由于**peer**命令与邻居之间没有对应关系，**undo peer**操作并不能立刻删除邻居，因此不能立刻删除BFD会话。
 
-[[由于]{style="font-family:宋体"}**[peer]{lang="EN-US"}**]{#struct_0_17903_10256_1879206093}[命令与邻居之间没有对应关系，]{style="font-family:宋体"}**[undo peer]{lang="EN-US"}**[操作并不能立刻删除邻居，因此不能立刻删除]{style="font-family:宋体"}[BFD]{lang="EN-US"}[会话。]{style="font-family:宋体"}
+本命令与**rip bfd enable**** destination**命令互斥，不能同时使用。
 
-[[本命令与]{style="font-family:宋体"}**[rip bfd enable]{lang="EN-US"}**]{#struct_0_17903_10256_1785655522}**[ destination]{lang="ES"}**[命令互斥，不能同时使用。]{style="font-family:宋体"}[ ]{style="font-size:7.0pt"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_1862843956}
+·路由应用
 
-[]{#struct_0_17903_10256_x230117224}[]{#_Toc292815538}[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:
-Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1使能RIP的BFD功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_352617533}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[使能]{style="font-family:宋体"}[RIP]{lang="EN-US"}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x1682715286}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 rip bfd enable
 
-[\[Sysname-GigabitEthernet1/0/1\] rip bfd enable]{lang="EN-US"}
+·交换应用
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_x1621684330}
+\# 在接口Vlan-interface11使能RIP的BFD功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_1655015175}[在接口]{style="font-family:宋体"}[Vlan-interface11]{lang="EN-US"}[使能]{style="font-family:宋体"}[RIP]{lang="EN-US"}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x2015175152}
+Sysname interface vlan-interface 11
 
-[\[Sysname\] interface vlan-interface 11]{lang="EN-US"}
-
-[\[Sysname-Vlan-interface11\] rip bfd enable]{lang="EN-US"}
-:::::
-
-::::: {#-1204928371 .myid}
-[]{#_Toc313007779}[]{#_Toc404787717}[]{#struct_0_17903_10256_x249575844}[]{#_Toc331171746}
+Sysname-Vlan-interface11 rip bfd enable
 
 **RIP \-- RIP配置命令 \-- rip bfd enable destination**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](RIP命令.files/image002.png){#图片 3 width="63" height="25"}]{lang="EN-US"}]{#struct_0_17903_10256_x1435847838}
-:::
+![说明](RIP命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_17903_10256_x715702060}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[rip bfd enable destination**]命令用来使能RIP指定目的地址的BFD功能。
 
-[**[rip bfd enable]{lang="ES"}[ destination]{lang="EN-US"}**]{#struct_0_17903_10256_277277067}[命令用来使能]{style="font-family:宋体"}[RIP]{lang="EN-US"}[指定目的地址的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo rip bfd enable**]命令用来关闭RIP的BFD功能。
 
-[**[undo rip bfd enable]{lang="ES"}**]{#struct_0_17903_10256_x859297683}[命令用来关闭]{style="font-family:宋体"}[RIP]{lang="EN-US"}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_17903_10256_593936802}
+**[rip bfd enable destination ***ip-address*]
 
-[**[rip bfd enable destination ]{lang="ES"}***[ip-address]{lang="EN-US"}*]{#struct_0_17903_10256_1655080711}
+**[undo rip bfd enable**]
 
-[**[undo rip bfd enable]{lang="ES"}**]{#struct_0_17903_10256_x130079471}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_1413288425}
+RIP的BFD功能处于关闭状态。
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1673156035}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[功能处于关闭状态。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_2123257863}
+接口视图
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_17903_10256_36024956}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_x316384522}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1968855894}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1519662278}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_1655146247}
+·该命令只支持采用BFD的直连echo检测方式。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[该命令只支持采用]{style="font-family:宋体"}]{#struct_0_17903_10256_x2011862701}[BFD]{lang="EN-US"}[的直连]{style="font-family:宋体"}[echo]{lang="EN-US"}[检测方式。]{style="font-family:宋体"}
+·该命令与**rip bfd enable**命令互斥，不能同时使用。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[该命令与]{lang="EN-US" style="font-family:宋体"}**[rip bfd enable]{lang="EN-US"}**]{#struct_0_17903_10256_787167590}[命令互斥，不能同时使用。]{lang="EN-US" style="font-family:
-宋体"}
+·该命令指定了链路检测的目的地址，当到该目的地址的链路出现故障时，便不再从该接口收发任何RIP报文。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[该命令指定了链路检测的目的地址，当到该目的地址的链路出现故障时，便不再从该接口收发任何]{style="font-family:宋体"}]{#struct_0_17903_10256_1207007276}[RIP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_113934784}
+·路由应用
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_77707113}
+\# 在接口GigabitEthernet1/0/1使能RIP指定目的地址202.38.165.1的BFD功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1282887708}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[使能]{style="font-family:宋体"}[RIP]{lang="EN-US"}[指定目的地址]{style="font-family:宋体"}[202.38.165.1]{lang="EN-US"}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_1356089248}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 rip bfd enable destination 202.38.165.1
 
-[\[Sysname-GigabitEthernet1/0/1\] rip bfd enable destination 202.38.165.1]{lang="EN-US"}
+·交换应用
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_x1362406062}
+\# 在接口Vlan-interface10使能RIP指定目的地址202.38.165.1的BFD功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1501949165}[在接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[使能]{style="font-family:宋体"}[RIP]{lang="EN-US"}[指定目的地址]{style="font-family:宋体"}[202.38.165.1]{lang="EN-US"}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_1655211783}
+Sysname interface vlan-interface 10
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
-
-[\[Sysname-Vlan-interface10\] rip bfd enable destination 202.38.165.1]{lang="EN-US"}
-:::::
-
-::: {#-6935544 .myid}
-[]{#_Toc404787718}[]{#struct_0_17903_10256_1457565871}
+Sysname-Vlan-interface10 rip bfd enable destination 202.38.165.1
 
 **RIP \-- RIP配置命令 \-- rip default-route**
 
 ------------------------------------------------------------------------
 
-[**[rip default-route]{lang="EN-US"}**]{#struct_0_17903_10256_x2025136798}[命令用来配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[接口以指定度量值向]{style="font-family:宋体"}[RIP]{lang="EN-US"}[邻居发布一条缺省路由。]{style="font-family:宋体"}
+**[rip default-route**]命令用来配置RIP接口以指定度量值向RIP邻居发布一条缺省路由。
 
-[**[undo rip default-route]{lang="EN-US"}**]{#struct_0_17903_10256_x749575660}[命令用来取消配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[接口向]{style="font-family:宋体"}[RIP]{lang="EN-US"}[邻居发布缺省路由。]{style="font-family:宋体"}
+**[undo rip default-route**]命令用来取消配置RIP接口向RIP邻居发布缺省路由。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_441037667}
+【命令】
 
-[**[rip default-route]{lang="EN-US"}**[ { { **only** \| **originate** } \[ **cost** *cost* \| **route-policy** *route-policy-name* \] \* \| **no-originate** }]{lang="EN-US"}]{#struct_0_17903_10256_492165426}
+**[rip default-route**[ { { **only** \| **originate** } [ **cost** *cost* \| **route-policy** *route-policy-name* ] \* \| **no-originate** }]]
 
-[**[undo rip default-route]{lang="EN-US"}**]{#struct_0_17903_10256_x1709028043}
+**[undo rip default-route**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_1655277319}
+【缺省情况】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1512043798}[接口是否发布缺省路由以]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程配置为准。]{style="font-family:宋体"}
+RIP接口是否发布缺省路由以RIP进程配置为准。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1396201652}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_17903_10256_x621174946}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_1935158884}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_903526860}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1012082755}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_1860146875}
+【参数】
 
-[**[only]{lang="EN-US"}**]{#struct_0_17903_10256_1055199058}[：配置只发送缺省路由，不发送普通路由。]{style="font-family:宋体"}
+**[only**]：配置只发送缺省路由，不发送普通路由。
 
-[**[originate]{lang="EN-US"}**]{#struct_0_17903_10256_1655342855}[：配置既发送普通路由，又发送缺省路由。]{style="font-family:宋体"}
+**[originate**]：配置既发送普通路由，又发送缺省路由。
 
-[*[cost]{lang="EN-US"}*]{#struct_0_17903_10256_x1598080000}[：缺省路由的度量值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[15]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[cost*]：缺省路由的度量值，取值范围为1～15，缺省值为1。
 
-[**[route-policy ]{lang="EN-US"}***[route-policy-name]{lang="EN-US"}*]{#struct_0_17903_10256_1353604043}[：路由策略名称，]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。只有当前路由器的路由表中有路由匹配]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[指定的路由策略时，才发送缺省路由。]{style="font-family:宋体"}
+**[route-policy ***route-policy-name*]：路由策略名称，*route-policy-name*为1～63个字符的字符串，区分大小写。只有当前路由器的路由表中有路由匹配*route-policy-name*指定的路由策略时，才发送缺省路由。
 
-[**[no-originate]{lang="EN-US"}**]{#struct_0_17903_10256_496680726}[：配置只发送普通路由，不发布缺省路由。]{style="font-family:宋体"}
+**[no-originate**]：配置只发送普通路由，不发布缺省路由。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_2004381080}
+【使用指导】
 
-[[配置了发布缺省路由的]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1593275543}[路由器不接收来自]{style="font-family:宋体"}[RIP]{lang="EN-US"}[邻居的缺省路由。]{style="font-family:宋体"}
+配置了发布缺省路由的RIP路由器不接收来自RIP邻居的缺省路由。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_x2028972720}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_2071977413}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_675311171}[配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[以指定度量值]{style="font-family:宋体"}[2]{lang="EN-US"}[向]{style="font-family:宋体"}[RIP]{lang="EN-US"}[邻居发布一条缺省路由，而且只发送缺省路由，不发送普通路由。]{style="font-family:宋体"}
+\# 配置接口GigabitEthernet1/0/1以指定度量值2向RIP邻居发布一条缺省路由，而且只发送缺省路由，不发送普通路由。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_212112016}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] rip default-route only cost 2]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 rip default-route only cost 2
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_1703945976}[指定接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[以指定度量值]{style="font-family:宋体"}[4]{lang="EN-US"}[向]{style="font-family:宋体"}[RIP]{lang="EN-US"}[邻居既发布缺省路由，而且发送普通路由。]{style="font-family:宋体"}
+\# 指定接口GigabitEthernet1/0/1以指定度量值4向RIP邻居既发布缺省路由，而且发送普通路由。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_1655408391}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] rip default-route originate cost 4]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 rip default-route originate cost 4
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_x514930323}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1542073597}[配置接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[以指定度量值]{style="font-family:宋体"}[2]{lang="EN-US"}[向]{style="font-family:宋体"}[RIP]{lang="EN-US"}[邻居发布一条缺省路由，而且只发送缺省路由，不发送普通路由。]{style="font-family:宋体"}
+\# 配置接口Vlan-interface10以指定度量值2向RIP邻居发布一条缺省路由，而且只发送缺省路由，不发送普通路由。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_1145448305}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] rip default-route only cost 2]{lang="EN-US"}
+Sysname-Vlan-interface10 rip default-route only cost 2
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1609242582}[指定接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[以指定度量值]{style="font-family:宋体"}[2]{lang="EN-US"}[向]{style="font-family:宋体"}[RIP]{lang="EN-US"}[邻居既发布缺省路由，而且发送普通路由。]{style="font-family:宋体"}
+\# 指定接口Vlan-interface10以指定度量值2向RIP邻居既发布缺省路由，而且发送普通路由。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_277742029}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] rip default-route originate cost 2]{lang="EN-US"}
+Sysname-Vlan-interface10 rip default-route originate cost 2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_471083264}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[default-route]{lang="EN-US"}**]{#struct_0_17903_10256_1655473927}
-:::
-
-::: {#99857971 .myid}
-[]{#_Toc313007780}[]{#_Toc404787719}[]{#struct_0_17903_10256_1926350525}[]{#_Toc331171748}
+·**default-route**
 
 **RIP \-- RIP配置命令 \-- rip enable**
 
 ------------------------------------------------------------------------
 
-[**[rip]{lang="EN-US"}**[ **enable**]{lang="EN-US"}]{#struct_0_17903_10256_x935250939}[命令用来在接口上使能]{style="font-family:宋体"}[RIP]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[rip** **enable**]命令用来在接口上使能RIP。
 
-[**[undo rip enable]{lang="EN-US"}**]{#struct_0_17903_10256_x1791696402}[命令用来在接口上关闭]{style="font-family:宋体"}[RIP]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo rip enable**]命令用来在接口上关闭RIP。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x154613632}
+【命令】
 
-[**[rip]{lang="EN-US"}**[ *process-id* **enable** \[ **exclude-subip** \]]{lang="EN-US"}]{#struct_0_17903_10256_1299027191}
+**[rip** *process-id* **enable** [ **exclude-subip** ]]
 
-[**[undo rip enable]{lang="EN-US"}**]{#struct_0_17903_10256_1454951743}
+**[undo rip enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_442871635}
+【缺省情况】
 
-[[接口上没有使能]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1080702479}[。]{style="font-family:宋体"}
+接口上没有使能RIP。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_80711138}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_17903_10256_1654490887}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1245698924}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1362142510}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1561916948}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_x771116392}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17903_10256_1583136148}[：]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：RIP进程号，取值范围为1～65535。
 
-[**[exclude-subip]{lang="EN-US"}**]{#struct_0_17903_10256_1387946124}[：不包括接口的从]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。如果未指定本参数，将包括接口的从]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[exclude-subip**]：不包括接口的从IP地址。如果未指定本参数，将包括接口的从IP地址。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_2076139391}
+【使用指导】
 
-[[本命令的优先级高于]{style="font-family:宋体"}**[network]{lang="EN-US"}**]{#struct_0_17903_10256_344460985}[命令。]{style="font-family:宋体"}
+本命令的优先级高于**network**命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_692606220}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_1654556423}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_1879009485}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上使能]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程]{style="font-family:宋体"}[100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上使能RIP进程100。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x1257170036}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] rip 100 enable]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 rip 100 enable
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_1713472810}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1537074325}[在接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[上使能]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程]{style="font-family:宋体"}[100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在接口Vlan-interface10上使能RIP进程100。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_1494749556}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] rip 100 enable]{lang="EN-US"}
+Sysname-Vlan-interface10 rip 100 enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x705151266}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[network]{lang="EN-US"}**]{#struct_0_17903_10256_x1060936329}
-:::
-
-::: {#-151194004 .myid}
-[]{#_Toc404787720}[]{#struct_0_17903_10256_1655015176}
+·**network**
 
 **RIP \-- RIP配置命令 \-- rip input**
 
 ------------------------------------------------------------------------
 
-[**[rip input]{lang="EN-US"}**]{#struct_0_17903_10256_x2015371760}[命令用来允许接口接收]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+**[rip input**]命令用来允许接口接收RIP报文。
 
-[**[undo rip input]{lang="EN-US"}**]{#struct_0_17903_10256_x1944068824}[命令用来禁止接口接收]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+**[undo rip input**]命令用来禁止接口接收RIP报文。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_252802272}
+【命令】
 
-[**[rip input]{lang="EN-US"}**]{#struct_0_17903_10256_x1860956014}
+**[rip input**]
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_17903_10256_x2023960283}**[rip input]{lang="EN-US"}**
+**[undo **]**rip input**
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_35016793}
+【缺省情况】
 
-[[允许接口接收]{style="font-family:宋体"}]{#struct_0_17903_10256_950218080}[RIP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+允许接口接收RIP报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_1655080712}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_17903_10256_x129882863}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_x472323312}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_1044543162}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x973549934}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1415976724}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_x257824688}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1830346583}[禁止接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[接收]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+\# 禁止接口GigabitEthernet1/0/1接收RIP报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x1193009799}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] undo rip input]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 undo rip input
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_1655146248}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x2012714669}[禁止接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[接收]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+\# 禁止接口Vlan-interface10接收RIP报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_1816913433}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] undo rip input]{lang="EN-US"}
-:::
-
-::: {#394322698 .myid}
-[]{#_Toc313007781}[]{#_Toc404787721}[]{#struct_0_17903_10256_x1063147988}[]{#_Toc331171750}[]{#_Toc328746902}[]{#_Toc322698694}
+Sysname-Vlan-interface10 undo rip input
 
 **RIP \-- RIP配置命令 \-- rip max-packet-length**
 
 ------------------------------------------------------------------------
 
-[**[rip max-packet-length]{lang="EN-US"}**]{#struct_0_17903_10256_1223331306}[命令用来配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文的最大长度。]{style="font-family:宋体"}
+**[rip max-packet-length**]命令用来配置RIP报文的最大长度。
 
-[**[undo rip max-packet-length]{lang="EN-US"}**]{#struct_0_17903_10256_91334814}[命令用来恢复]{style="font-family:宋体"}[缺省情况。]{style="font-family:宋体"}
+**[undo rip max-packet-length**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x845573721}
+【命令】
 
-[**[rip max-packet-length ]{lang="EN-US"}***[value]{lang="EN-US"}*]{#struct_0_17903_10256_1074896018}
+**[rip max-packet-length ***value*]
 
-[**[undo rip max-packet-length]{lang="EN-US"}**]{#struct_0_17903_10256_1655211784}
+**[undo rip max-packet-length**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_1457369263}
+【缺省情况】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1254861457}[报文的最大长度为]{style="font-family:宋体"}[512]{lang="EN-US"}[字节。]{style="font-family:宋体"}
+RIP报文的最大长度为512字节。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_1856883435}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_17903_10256_x1616853447}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_31569535}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x200296646}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x691611150}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1401048624}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_17903_10256_1655277320}[：]{style="font-family:宋体"}[指定]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文的最大长度，取值范围为]{style="font-family:宋体"}[32]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，单位为字节。]{style="font-family:宋体"}
+*[value*]：指定RIP报文的最大长度，取值范围为32～65535，单位为字节。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_1512502547}
+【使用指导】
 
-[[如果配置值大于接口]{style="font-family:宋体"}[MTU]{lang="EN-US"}]{#struct_0_17903_10256_941890375}[，则报文的最大长度为接口]{style="font-family:宋体"}[MTU]{lang="EN-US"}[。]{style="font-family:宋体"}
+如果配置值大于接口MTU，则报文的最大长度为接口MTU。
 
-[[由于不同厂商对]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x828717494}[报文最大长度的支持情况不同，要谨慎使用本特性，以免出现不兼容的情况。]{style="font-family:宋体"}
+由于不同厂商对RIP报文最大长度的支持情况不同，要谨慎使用本特性，以免出现不兼容的情况。
 
-[[在配置认证的情况下，如果配置不当可能会造成报文无法发送，建议用户按照下面进行配置：]{style="font-family:宋体"}]{#struct_0_17903_10256_1876593897}
+在配置认证的情况下，如果配置不当可能会造成报文无法发送，建议用户按照下面进行配置：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[简单验证方式时，]{style="font-family:宋体"}]{#struct_0_17903_10256_x1861506808}[RIP]{lang="EN-US"}[报文的最大长度不小于]{style="font-family:宋体"}[52]{lang="EN-US"}[字节；]{style="font-family:宋体"}
+·简单验证方式时，RIP报文的最大长度不小于52字节；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MD5]{lang="EN-US"}]{#struct_0_17903_10256_283503731}[验证方式（使用]{style="font-family:宋体"}[RFC 2453]{lang="EN-US"}[规定的报文格式）时，]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文的最大长度不小于]{style="font-family:宋体"}[56]{lang="EN-US"}[字节；]{style="font-family:宋体"}
+·MD5验证方式（使用RFC 2453规定的报文格式）时，RIP报文的最大长度不小于56字节；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MD5]{lang="EN-US"}]{#struct_0_17903_10256_739158730}[验证方式（使用]{style="font-family:宋体"}[RFC 2082]{lang="EN-US"}[规定的报文格式）时，]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文的最大长度不小于]{style="font-family:宋体"}[72]{lang="EN-US"}[字节。]{style="font-family:宋体"}
+·MD5验证方式（使用RFC 2082规定的报文格式）时，RIP报文的最大长度不小于72字节。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_201372447}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_1655342856}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1597883392}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文的最大长度为]{style="font-family:宋体"}[1024]{lang="EN-US"}[字节。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1配置RIP报文的最大长度为1024字节。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x816720510}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] rip max-packet-length 1024]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 rip max-packet-length 1024
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_861328065}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_1743986418}[在接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文的最大长度为]{style="font-family:宋体"}[1024]{lang="EN-US"}[字节。]{style="font-family:宋体"}
+\# 在接口Vlan-interface10配置RIP报文的最大长度为1024字节。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_891717387}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] rip max-packet-length 1024]{lang="EN-US"}
-:::
-
-::: {#1955035990 .myid}
-[]{#_Toc404787722}[]{#struct_0_17903_10256_265863425}
+Sysname-Vlan-interface10 rip max-packet-length 1024
 
 **RIP \-- RIP配置命令 \-- rip metricin**
 
 ------------------------------------------------------------------------
 
-[**[rip metricin]{lang="EN-US"}**]{#struct_0_17903_10256_x1537522072}[命令用来配置接口接收]{style="font-family:宋体"}[RIP]{lang="EN-US"}[路由时的附加度量值。]{style="font-family:宋体"}
+**[rip metricin**]命令用来配置接口接收RIP路由时的附加度量值。
 
-[**[undo rip metricin]{lang="EN-US"}**]{#struct_0_17903_10256_1655408392}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo rip metricin**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x514733715}
+【命令】
 
-[**[rip metricin ]{lang="EN-US"}**]{#struct_0_17903_10256_x374246163}[\[ **route-policy** *route-policy-name* \] *value*]{lang="EN-US"}
+**[rip metricin **] **route-policy** *route-policy-name*  *value*
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_17903_10256_1635499385}**[rip metricin]{lang="EN-US"}**
+**[undo **]**rip metricin**
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_1316111579}
+【缺省情况】
 
-[[接口接收]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1577881710}[路由时的附加度量值为]{style="font-family:宋体"}[0]{lang="EN-US"}[。]{style="font-family:宋体"}
+接口接收RIP路由时的附加度量值为0。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x939540636}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_17903_10256_x1736973709}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_888389399}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_1655473928}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_1925891773}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1960859784}
+【参数】
 
-[**[route-policy ]{lang="EN-US"}**]{#struct_0_17903_10256_86952391}*[route-policy-name]{lang="EN-US"}*[：路由策略名称，]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。对满足特定条件的路由设置附加度量值。]{style="font-family:宋体"}
+**[route-policy **]*route-policy-name*：路由策略名称，*route-policy-name*为1～63个字符的字符串，区分大小写。对满足特定条件的路由设置附加度量值。
 
-[*[value]{lang="EN-US"}*]{#struct_0_17903_10256_x1206702008}[：接收附加度量值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[16]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[value*]：接收附加度量值，取值范围为0～16。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_x494448029}
+【使用指导】
 
-[[当接口收到一条合法的]{style="font-family:宋体"}]{#struct_0_17903_10256_x1080327857}[RIP]{lang="EN-US"}[路由，在将其加入路由表前，附加度量值会被加到该路由上。因此，增加接口的接收附加度量值，该接口收到的]{style="font-family:宋体"}[RIP]{lang="EN-US"}[路由的度量值也会相应增加，当附加度量值与原路由度量值之和大于]{style="font-family:宋体"}[16]{lang="EN-US"}[，该条路由的度量值取]{style="font-family:宋体"}[16]{lang="EN-US"}[。]{style="font-family:宋体"}
+当接口收到一条合法的RIP路由，在将其加入路由表前，附加度量值会被加到该路由上。因此，增加接口的接收附加度量值，该接口收到的RIP路由的度量值也会相应增加，当附加度量值与原路由度量值之和大于16，该条路由的度量值取16。
 
-[[通过指定]{style="font-family:宋体"}]{#struct_0_17903_10256_x1994849716}**[route-policy]{lang="EN-US"}**[参数，可应用路由策略对接口接收的特定路由设置附加度量值：]{style="font-family:宋体"}
+通过指定**route-policy**参数，可应用路由策略对接口接收的特定路由设置附加度量值：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果通过]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_x311714915}[]{#_Toc138041268}[]{#_Toc157826816}**[apply cost]{lang="EN-US"}**[命令设置了匹配路由的附加度量值，则匹配路由的附加度量值取]{lang="EN-US" style="font-family:宋体"}**[apply cost]{lang="EN-US"}**[命令]{lang="EN-US" style="font-family:宋体"}*[value]{lang="EN-US"}*[参数设置的值，不匹配路由的附加度量值取本命令]{lang="EN-US" style="font-family:宋体"}*[value]{lang="EN-US"}*[参数所设的值。需要注意的是，本命令不支持通过]{lang="EN-US" style="font-family:宋体"}**[apply cost]{lang="EN-US"}**[命令中的]{lang="EN-US" style="font-family:宋体"}**[+]{lang="EN-US"}**[、]{lang="EN-US" style="font-family:宋体"}**[-]{lang="EN-US"}**[关键字对接口接收]{lang="EN-US" style="font-family:宋体"}[RIP]{lang="EN-US"}[路由的附加度量值进行增加、减少的设置。]{lang="EN-US" style="font-family:宋体"}
+·如果通过**apply cost**命令设置了匹配路由的附加度量值，则匹配路由的附加度量值取**apply cost**命令*value*参数设置的值，不匹配路由的附加度量值取本命令*value*参数所设的值。需要注意的是，本命令不支持通过**apply cost**命令中的**+**、**-**关键字对接口接收RIP路由的附加度量值进行增加、减少的设置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果没有通过]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_1654490888}**[apply cost]{lang="EN-US"}**[命令设置路由的附加度量值，则所有接收路由的附加度量值都取本命令]{lang="EN-US" style="font-family:宋体"}*[value]{lang="EN-US"}*[参数所设的值。]{lang="EN-US" style="font-family:宋体"}
+·如果没有通过**apply cost**命令设置路由的附加度量值，则所有接收路由的附加度量值都取本命令*value*参数所设的值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1245895532}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_16282008}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_1687561253}[对接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[接收的]{style="font-family:宋体"}[RIP]{lang="EN-US"}[路由附加度量值进行设置。其中，]{style="font-family:宋体"}[1.0.0.0/8]{lang="EN-US"}[网段路由的附加度量值设置为]{style="font-family:宋体"}[6]{lang="EN-US"}[，其它网段路由的附加度量值设置为]{style="font-family:宋体"}[2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 对接口GigabitEthernet1/0/1接收的RIP路由附加度量值进行设置。其中，1.0.0.0/8网段路由的附加度量值设置为6，其它网段路由的附加度量值设置为2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_1232268132}
+\<Sysname\> system-view
 
-[\[Sysname\] ip prefix-list 123 permit 1.0.0.0 8]{lang="EN-US"}
+Sysname ip prefix-list 123 permit 1.0.0.0 8
 
-[\[Sysname\] route-policy abc permit node 0]{lang="EN-US"}
+Sysname route-policy abc permit node 0
 
-[\[Sysname-route-policy-abc-10\] if-match ip address prefix-list 123]{lang="EN-US"}
+Sysname-route-policy-abc-10 if-match ip address prefix-list 123
 
-[\[Sysname-route-policy-abc-10\] apply cost 6]{lang="EN-US"}
+Sysname-route-policy-abc-10 apply cost 6
 
-[\[Sysname-route-policy-abc-10\] quit]{lang="EN-US"}
+Sysname-route-policy-abc-10 quit
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] rip metricin route-policy abc 2]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 rip metricin route-policy abc 2
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_x1003308494}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1638085686}[对接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[接收的]{style="font-family:宋体"}[RIP]{lang="EN-US"}[路由附加度量值进行设置。其中，]{style="font-family:宋体"}[1.0.0.0/8]{lang="EN-US"}[网段路由的附加度量值设置为]{style="font-family:宋体"}[6]{lang="EN-US"}[，其它网段路由的附加度量值设置为]{style="font-family:宋体"}[2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 对接口Vlan-interface10接收的RIP路由附加度量值进行设置。其中，1.0.0.0/8网段路由的附加度量值设置为6，其它网段路由的附加度量值设置为2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_1654556424}
+\<Sysname\> system-view
 
-[\[Sysname\] ip prefix-list 123 permit 1.0.0.0 8]{lang="EN-US"}
+Sysname ip prefix-list 123 permit 1.0.0.0 8
 
-[\[Sysname\] route-policy abc permit node 0]{lang="EN-US"}
+Sysname route-policy abc permit node 0
 
-[\[Sysname-route-policy-abc-10\] if-match ip address prefix-list 123]{lang="EN-US"}
+Sysname-route-policy-abc-10 if-match ip address prefix-list 123
 
-[\[Sysname-route-policy-abc-10\] apply cost 6]{lang="EN-US"}
+Sysname-route-policy-abc-10 apply cost 6
 
-[\[Sysname-route-policy-abc-10\] quit]{lang="EN-US"}
+Sysname-route-policy-abc-10 quit
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] rip metricin route-policy abc 2]{lang="EN-US"}
+Sysname-Vlan-interface10 rip metricin route-policy abc 2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_1879337165}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[apply cost]{lang="EN-US" style="font-size:10.0pt"}**]{#struct_0_17903_10256_1015643183}[（]{style="font-family:宋体"}[三层技术]{lang="EN-US" style="font-size:10.0pt;
-font-family:宋体"}[-IP]{lang="EN-US" style="font-size:10.0pt"}[路由命令参考]{lang="EN-US" style="font-size:10.0pt;font-family:宋体"}[/]{lang="EN-US"}[路由策略]{lang="EN-US" style="font-size:10.0pt;font-family:宋体"}[）]{style="font-family:宋体"}
-:::
-
-::: {#-158630844 .myid}
-[]{#_Toc404787723}[]{#struct_0_17903_10256_133867290}[]{#_Toc313007782}
+·**apply cost**（三层技术-IP路由命令参考/路由策略）
 
 **RIP \-- RIP配置命令 \-- rip metricout**
 
 ------------------------------------------------------------------------
 
-[**[rip metricout]{lang="EN-US"}**]{#struct_0_17903_10256_x2035024369}[命令用来配置接口发送]{style="font-family:宋体"}[RIP]{lang="EN-US"}[路由时的附加度量值。]{style="font-family:宋体"}
+**[rip metricout**]命令用来配置接口发送RIP路由时的附加度量值。
 
-[**[undo rip metricout]{lang="EN-US"}**]{#struct_0_17903_10256_1704771258}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo rip metricout**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_1680906270}
+【命令】
 
-[**[rip metricout ]{lang="EN-US"}**]{#struct_0_17903_10256_1655015173}[\[ **route-policy** *route-policy-name* \] *value*]{lang="EN-US"}
+**[rip metricout **] **route-policy** *route-policy-name*  *value*
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_17903_10256_x2015044080}**[rip metricout]{lang="EN-US"}**
+**[undo **]**rip metricout**
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_x241123744}
+【缺省情况】
 
-[[接口发送]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1619157972}[路由时的附加度量值为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+接口发送RIP路由时的附加度量值为1。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x181375072}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_17903_10256_x963277929}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_x2001448739}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_1393796228}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_475414916}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_1655080709}
+【参数】
 
-[**[route-policy ]{lang="EN-US"}**]{#struct_0_17903_10256_x130603760}*[route-policy-name]{lang="EN-US"}*[：路由策略名称，]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。对满足特定条件的路由设置附加度量值。]{style="font-family:宋体"}
+**[route-policy **]*route-policy-name*：路由策略名称，*route-policy-name*为1～63个字符的字符串，区分大小写。对满足特定条件的路由设置附加度量值。
 
-[*[value]{lang="EN-US"}*]{#struct_0_17903_10256_x108046478}[：发送附加度量值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[16]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[value*]：发送附加度量值，取值范围为1～16。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_1036179889}
+【使用指导】
 
-[[当发布一条]{style="font-family:宋体"}]{#struct_0_17903_10256_1658078513}[RIP]{lang="EN-US"}[路由时，附加度量值会在发布该路由之前附加在这条路由上。因此，增加一个接口的发送附加度量值，该接口发送的]{style="font-family:宋体"}[RIP]{lang="EN-US"}[路由的度量值也会相应增加。]{style="font-family:宋体"}
+当发布一条RIP路由时，附加度量值会在发布该路由之前附加在这条路由上。因此，增加一个接口的发送附加度量值，该接口发送的RIP路由的度量值也会相应增加。
 
-[[通过指定]{style="font-family:宋体"}]{#struct_0_17903_10256_x1186543127}**[route-policy]{lang="EN-US"}**[参数，可应用路由策略对接口发布的特定路由设置附加度量值：]{style="font-family:宋体"}
+通过指定**route-policy**参数，可应用路由策略对接口发布的特定路由设置附加度量值：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果通过]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_x2146556628}**[apply cost]{lang="EN-US"}**[命令设置了匹配路由的附加度量值，则匹配路由的附加度量值取]{lang="EN-US" style="font-family:宋体"}**[apply cost]{lang="EN-US"}**[命令]{lang="EN-US" style="font-family:宋体"}*[value]{lang="EN-US"}*[参数设置的值，不匹配路由的附加度量值取本命令]{lang="EN-US" style="font-family:宋体"}*[value]{lang="EN-US"}*[参数所设的值。需要注意的是，本命令不支持通过]{lang="EN-US" style="font-family:宋体"}**[apply cost]{lang="EN-US"}**[命令中的]{lang="EN-US" style="font-family:宋体"}**[+]{lang="EN-US"}**[、]{lang="EN-US" style="font-family:宋体"}**[-]{lang="EN-US"}**[关键字对接口发布]{lang="EN-US" style="font-family:宋体"}[RIP]{lang="EN-US"}[路由的附加度量值进行增加、减少的设置。]{lang="EN-US" style="font-family:宋体"}
+·如果通过**apply cost**命令设置了匹配路由的附加度量值，则匹配路由的附加度量值取**apply cost**命令*value*参数设置的值，不匹配路由的附加度量值取本命令*value*参数所设的值。需要注意的是，本命令不支持通过**apply cost**命令中的**+**、**-**关键字对接口发布RIP路由的附加度量值进行增加、减少的设置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果没有通过]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_2052276555}**[apply cost]{lang="EN-US"}**[命令设置路由的附加度量值，则所有发布路由的附加度量值都取本命令]{lang="EN-US" style="font-family:宋体"}*[value]{lang="EN-US"}*[参数所设的值。]{lang="EN-US" style="font-family:宋体"}
+·如果没有通过**apply cost**命令设置路由的附加度量值，则所有发布路由的附加度量值都取本命令*value*参数所设的值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_1655146245}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_x2011993773}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1514039293}[对接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[发送的]{style="font-family:宋体"}[RIP]{lang="EN-US"}[路由附加度量值进行设置。其中，]{style="font-family:宋体"}[1.0.0.0/8]{lang="EN-US"}[网段路由的附加度量值设置为]{style="font-family:宋体"}[6]{lang="EN-US"}[，其它网段路由的附加度量值设置为]{style="font-family:宋体"}[2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 对接口GigabitEthernet1/0/1发送的RIP路由附加度量值进行设置。其中，1.0.0.0/8网段路由的附加度量值设置为6，其它网段路由的附加度量值设置为2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x1064864358}
+\<Sysname\> system-view
 
-[\[Sysname\] ip prefix-list 123 permit 1.0.0.0 8]{lang="EN-US"}
+Sysname ip prefix-list 123 permit 1.0.0.0 8
 
-[\[Sysname\] route-policy abc permit node 0]{lang="EN-US"}
+Sysname route-policy abc permit node 0
 
-[\[Sysname-route-policy-abc-10\] if-match ip address prefix-list 123]{lang="EN-US"}
+Sysname-route-policy-abc-10 if-match ip address prefix-list 123
 
-[\[Sysname-route-policy-abc-10\] apply cost 6]{lang="EN-US"}
+Sysname-route-policy-abc-10 apply cost 6
 
-[\[Sysname-route-policy-abc-10\] quit]{lang="EN-US"}
+Sysname-route-policy-abc-10 quit
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] rip metricout route-policy abc 2]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 rip metricout route-policy abc 2
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_1897233997}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_696777493}[对接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[发送的]{style="font-family:宋体"}[RIP]{lang="EN-US"}[路由附加度量值进行设置。其中，]{style="font-family:宋体"}[1.0.0.0/8]{lang="EN-US"}[网段路由的附加度量值设置为]{style="font-family:宋体"}[6]{lang="EN-US"}[，其它网段路由的附加度量值设置为]{style="font-family:宋体"}[2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 对接口Vlan-interface10发送的RIP路由附加度量值进行设置。其中，1.0.0.0/8网段路由的附加度量值设置为6，其它网段路由的附加度量值设置为2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_1655211781}
+\<Sysname\> system-view
 
-[\[Sysname\] ip prefix-list 123 permit 1.0.0.0 8]{lang="EN-US"}
+Sysname ip prefix-list 123 permit 1.0.0.0 8
 
-[\[Sysname\] route-policy abc permit node 0]{lang="EN-US"}
+Sysname route-policy abc permit node 0
 
-[\[Sysname-route-policy-abc-10\] if-match ip address prefix-list 123]{lang="EN-US"}
+Sysname-route-policy-abc-10 if-match ip address prefix-list 123
 
-[\[Sysname-route-policy-abc-10\] apply cost 6]{lang="EN-US"}
+Sysname-route-policy-abc-10 apply cost 6
 
-[\[Sysname-route-policy-abc-10\] quit]{lang="EN-US"}
+Sysname-route-policy-abc-10 quit
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] rip metricout route-policy abc 2]{lang="EN-US"}
+Sysname-Vlan-interface10 rip metricout route-policy abc 2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_1457696943}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[apply cost]{lang="EN-US"}**]{#struct_0_17903_10256_1473866025}[（]{style="font-family:宋体"}[三层技术]{lang="EN-US" style="font-family:宋体"}[-IP]{lang="EN-US"}[路由命令参考]{lang="EN-US" style="font-family:宋体"}[/]{lang="EN-US"}[路由策略]{lang="EN-US" style="font-family:宋体"}[）]{style="font-family:宋体"}
-:::
-
-::: {#119414467 .myid}
-[]{#_Toc313007783}[]{#_Toc404787724}[]{#struct_0_17903_10256_x124194909}[]{#_Toc331171753}[]{#_Toc328746903}[]{#_Toc322698695}
+·**apply cost**（三层技术-IP路由命令参考/路由策略）
 
 **RIP \-- RIP配置命令 \-- rip mib-binding**
 
 ------------------------------------------------------------------------
 
-[**[rip mib-binding]{lang="EN-US"}**]{#struct_0_17903_10256_x2041500055}[命令用来配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程绑定]{style="font-family:宋体"}[MIB]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[rip mib-binding**]命令用来配置RIP进程绑定MIB。
 
-[**[undo rip mib-binding]{lang="EN-US"}**]{#struct_0_17903_10256_x590719223}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo rip mib-binding**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x656274222}
+【命令】
 
-[**[rip mib-binding]{lang="EN-US"}**[ *process-id*]{lang="EN-US"}]{#struct_0_17903_10256_x1363206280}
+**[rip mib-binding** *process-id*]
 
-[**[undo rip mib-binding]{lang="EN-US"}**]{#struct_0_17903_10256_1655277317}
+**[undo rip mib-binding**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_1512437014}
+【缺省情况】
 
-[[MIB]{lang="EN-US"}]{#struct_0_17903_10256_x1037338308}[绑定在进程号最小的]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程上。]{style="font-family:宋体"}
+MIB绑定在进程号最小的RIP进程上。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_89612886}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_17903_10256_x1740070910}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1267495510}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_1837956407}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_629680830}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_2039977816}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_17903_10256_1655342853}[：]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：RIP进程号，取值范围为1～65535。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1598211072}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[如果指定的]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_1643171097}*[process-id]{lang="FR"}*[不存在]{lang="EN-US" style="font-family:宋体"}[，]{lang="EN-US" style="font-family:宋体"}[配置]{lang="EN-US" style="font-family:
-宋体"}[RIP]{lang="FR"}[进程绑定命令时将会提示]{lang="EN-US" style="font-family:宋体"}[RIP]{lang="EN-US"}[进程不存在]{lang="EN-US" style="font-family:宋体"}[，]{lang="EN-US" style="font-family:宋体"}[无法完成配置。]{lang="EN-US" style="font-family:
-宋体"}
+·如果指定的*process-id*不存在，配置RIP进程绑定命令时将会提示RIP进程不存在，无法完成配置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[如果配置了]{style="font-family:宋体"}]{#struct_0_17903_10256_x2041726904}[RIP]{lang="FR"}[进程绑定]{style="font-family:宋体"}[MIB]{lang="FR"}[，]{style="font-family:宋体"}[若删除]{style="font-family:宋体"}*[process-id]{lang="FR"}*[对应的]{style="font-family:宋体"}[RIP]{lang="FR"}[进程]{style="font-family:宋体"}[，]{style="font-family:
-宋体"}[则同时删除]{style="font-family:宋体"}[RIP]{lang="FR"}[进程绑定]{style="font-family:宋体"}[MIB]{lang="FR"}[配置，]{style="font-family:宋体"}[MIB]{lang="EN-US"}[绑定到进程号最小的]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程上。]{style="font-family:宋体"}
+·如果配置了RIP进程绑定MIB，若删除*process-id*对应的RIP进程，则同时删除RIP进程绑定MIB配置，MIB绑定到进程号最小的RIP进程上。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1781505921}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x362330271}[配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[进程]{style="font-family:宋体"}[100]{lang="EN-US"}[绑定]{style="font-family:宋体"}[MIB]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置RIP进程100绑定MIB。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x1105583894}
+\<Sysname\> system-view
 
-[\[Sysname\] rip mib-binding 100]{lang="EN-US"}
-:::
-
-::: {#607832449 .myid}
-[]{#_Toc404787725}[]{#struct_0_17903_10256_659494019}
+Sysname rip mib-binding 100
 
 **RIP \-- RIP配置命令 \-- rip output**
 
 ------------------------------------------------------------------------
 
-[**[rip output]{lang="EN-US"}**]{#struct_0_17903_10256_1402223559}[命令用来允许接口发送]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+**[rip output**]命令用来允许接口发送RIP报文。
 
-[**[undo rip output]{lang="EN-US"}**]{#struct_0_17903_10256_1655408389}[命令用来禁止接口发送]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+**[undo rip output**]命令用来禁止接口发送RIP报文。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x514406036}
+【命令】
 
-[**[rip output]{lang="EN-US"}**]{#struct_0_17903_10256_1961212885}
+**[rip output**]
 
-[**[undo rip output]{lang="EN-US"}**]{#struct_0_17903_10256_x687063748}
+**[undo rip output**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_1260769126}
+【缺省情况】
 
-[[允许接口发送]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1123540176}[报文。]{style="font-family:宋体"}
+允许接口发送RIP报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_529838064}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_17903_10256_x891009072}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_1506937803}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_1655473925}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_1926219453}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_x181842536}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_x1692181447}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_529333970}[禁止接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[发送]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+\# 禁止接口GigabitEthernet1/0/1发送RIP报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x816304551}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] undo rip output]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 undo rip output
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_x1103780691}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_1289444166}[禁止接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[发送]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+\# 禁止接口Vlan-interface10发送RIP报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_1654490885}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] undo rip output]{lang="EN-US"}
-:::
-
-::: {#-518574219 .myid}
-[]{#_Toc404787726}[]{#struct_0_17903_10256_1354456017}[]{#_Toc375236008}[]{#_Toc328746904}[]{#_Toc322698696}
+Sysname-Vlan-interface10 undo rip output
 
 **RIP \-- RIP配置命令 \-- rip output-delay**
 
 ------------------------------------------------------------------------
 
-[**[rip output-delay]{lang="EN-US"}**]{#struct_0_17903_10256_1354390481}[命令用来配置接口下]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文的发送速率。]{style="font-family:宋体"}
+**[rip output-delay**]命令用来配置接口下RIP报文的发送速率。
 
-[**[undo rip output-delay]{lang="EN-US"}**]{#struct_0_17903_10256_1119954220}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo rip output-delay**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_1132123752}
+【命令】
 
-[**[rip output-delay]{lang="EN-US"}***[ time]{lang="EN-US"}***[ count]{lang="EN-US"}***[ count]{lang="EN-US"}*]{#struct_0_17903_10256_x1374951631}
+**[rip output-delay*** time*** count*** count*]
 
-[**[undo rip output-delay]{lang="EN-US"}**]{#struct_0_17903_10256_349937145}
+**[undo rip output-delay**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_1722473260}
+【缺省情况】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1375017167}[报文的发包速率由进程全局的配置决定。]{style="font-family:宋体"}
+RIP报文的发包速率由进程全局的配置决定。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x194217629}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_17903_10256_x1847158244}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_1187405203}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1374820559}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x839376635}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_1607203071}
+【参数】
 
-[*[time]{lang="EN-US"}*]{#struct_0_17903_10256_x1374886095}[：接口发送]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文的时间间隔，取值范围为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[100]{lang="EN-US"}[，单位为毫秒。]{style="font-family:宋体"}
+*[time*]：接口发送RIP报文的时间间隔，取值范围为10～100，单位为毫秒。
 
-[*[count]{lang="EN-US"}*]{#struct_0_17903_10256_1778877000}[：接口一次发送]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文的最大个数，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[30]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[count*]：接口一次发送RIP报文的最大个数，取值范围为1～30。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_1417247493}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_x1375213775}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1888448465}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[配置发送]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文的时间间隔为]{style="font-family:宋体"}[30]{lang="EN-US"}[毫秒，一次最多发送]{style="font-family:宋体"}[6]{lang="EN-US"}[个]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1配置发送RIP报文的时间间隔为30毫秒，一次最多发送6个RIP报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x1375279311}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] rip output-delay 30 count 6]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 rip output-delay 30 count 6
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_x975524407}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_316331212}[在接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[配置发送]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文的时间间隔为]{style="font-family:宋体"}[30]{lang="EN-US"}[毫秒，一次最多发送]{style="font-family:宋体"}[6]{lang="EN-US"}[个]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 在接口Vlan-interface10配置发送RIP报文的时间间隔为30毫秒，一次最多发送6个RIP报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x1375082703}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] rip output-delay 30 count 6]{lang="EN-US"}
+Sysname-Vlan-interface10 rip output-delay 30 count 6
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_97229046}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[output-delay]{lang="EN-US"}**]{#struct_0_17903_10256_605246120}
-:::
-
-::: {#350030475 .myid}
-[]{#_Toc404787727}[]{#struct_0_17903_10256_x1245567852}
+·**output-delay**
 
 **RIP \-- RIP配置命令 \-- rip poison-reverse**
 
 ------------------------------------------------------------------------
 
-[**[rip poison-reverse]{lang="EN-US"}**]{#struct_0_17903_10256_413959794}[命令用来使能毒性逆转功能。]{style="font-family:宋体"}
+**[rip poison-reverse**]命令用来使能毒性逆转功能。
 
-[**[undo rip poison-reverse]{lang="EN-US"}**]{#struct_0_17903_10256_2023203438}[命令用来关闭毒性逆转功能。]{style="font-family:宋体"}
+**[undo rip poison-reverse**]命令用来关闭毒性逆转功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_584877293}
+【命令】
 
-[**[rip poison-reverse]{lang="EN-US"}**]{#struct_0_17903_10256_x810661306}
+**[rip poison-reverse**]
 
-[**[undo rip poison-reverse]{lang="EN-US"}**]{#struct_0_17903_10256_470376004}
+**[undo rip poison-reverse**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_x147779761}
+【缺省情况】
 
-[[毒性逆转功能处于关闭状态。]{style="font-family:宋体"}]{#struct_0_17903_10256_1654556421}
+毒性逆转功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_1879140557}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_17903_10256_x517917459}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_x486062185}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x587965752}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_387812432}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_1794178772}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_1262990266}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x904244569}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置对]{style="font-family:宋体"}[RIP]{lang="EN-US"}[更新报文进行毒性逆转。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置对RIP更新报文进行毒性逆转。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_1655015174}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] rip poison-reverse]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 rip poison-reverse
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_x2015240688}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1128588918}[在接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[上配置对]{style="font-family:宋体"}[RIP]{lang="EN-US"}[更新报文进行毒性逆转。]{style="font-family:宋体"}
+\# 在接口Vlan-interface10上配置对RIP更新报文进行毒性逆转。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x482590023}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] rip poison-reverse]{lang="EN-US"}
-:::
-
-::::: {#1597262024 .myid}
-[]{#_Toc404787728}[]{#struct_0_17903_10256_x1388707861}[]{#_Toc363978470}[]{#_Toc356288300}[]{#_Toc356229217}
+Sysname-Vlan-interface10 rip poison-reverse
 
 **RIP \-- RIP配置命令 \-- rip primary-path-detect bfd echo**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](RIP命令.files/image002.png){#图片 1 width="63" height="25"}]{lang="EN-US"}]{#struct_0_17903_10256_1362832139}
-:::
+![说明](RIP命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_17903_10256_x1388773397}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[rip primary-path-detect bfd echo]{lang="EN-US"}**]{#struct_0_17903_10256_1775855463}[命令用来使能]{style="font-family:宋体"}[RIP]{lang="EN-US"}[协议中主用链路使能]{style="font-family:宋体"}[BFD]{lang="EN-US"}[（]{style="font-family:宋体"}[Echo]{lang="EN-US"}[方式）检测功能。]{style="font-family:宋体"}
+**[rip primary-path-detect bfd echo**]命令用来使能RIP协议中主用链路使能BFD（Echo方式）检测功能。
 
-[**[undo rip primary-path-detect bfd]{lang="EN-US"}**]{#struct_0_17903_10256_941396437}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo rip primary-path-detect bfd**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1388838933}
+【命令】
 
-[**[rip primary-path-detect bfd echo]{lang="EN-US"}**]{#struct_0_17903_10256_x1970316859}
+**[rip primary-path-detect bfd echo**]
 
-[**[undo rip primary-path-detect bfd]{lang="EN-US"}**]{#struct_0_17903_10256_x1388380181}
+**[undo rip primary-path-detect bfd**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_x447601414}
+【缺省情况】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x2139257302}[协议中主用链路的]{style="font-family:宋体"}[BFD Echo]{lang="EN-US"}[检测功能处于关闭状态。]{style="font-family:宋体"}
+RIP协议中主用链路的BFD Echo检测功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1388445717}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_17903_10256_499392990}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_1999513838}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1388904472}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x349397094}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_x58537489}
+【使用指导】
 
-[[配置本功能后，]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1388970008}[协议的快速重路由特性中的主用链路将使用]{style="font-family:宋体"}[BFD]{lang="EN-US"}[（]{style="font-family:宋体"}[Echo]{lang="EN-US"}[方式）进行检测。]{style="font-family:宋体"}
+配置本功能后，RIP协议的快速重路由特性中的主用链路将使用BFD（Echo方式）进行检测。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_1581476367}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_x1389035544}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x883181715}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[协议快速重路由特性中主用链路使能]{style="font-family:宋体"}[BFD]{lang="EN-US"}[（]{style="font-family:宋体"}[Echo]{lang="EN-US"}[方式）检测功能。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置RIP协议快速重路由特性中主用链路使能BFD（Echo方式）检测功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x1389101080}
+\<Sysname\> system-view
 
-[\[Sysname\] rip 1]{lang="EN-US"}
+Sysname rip 1
 
-[\[Sysname-rip-1\] fast-reroute route-policy frr]{lang="EN-US"}
+Sysname-rip-1 fast-reroute route-policy frr
 
-[\[Sysname-rip-1\] quit]{lang="EN-US"}
+Sysname-rip-1 quit
 
-[\[Sysname\] bfd echo-source-ip 1.1.1.1]{lang="EN-US"}
+Sysname bfd echo-source-ip 1.1.1.1
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] rip primary-path-detect bfd echo]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 rip primary-path-detect bfd echo
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_2129770057}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1388642328}[在接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[上配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[协议快速重路由特性中主用链路使能]{style="font-family:宋体"}[BFD]{lang="EN-US"}[（]{style="font-family:宋体"}[Echo]{lang="EN-US"}[方式）检测功能。]{style="font-family:宋体"}
+\# 在接口Vlan-interface10上配置RIP协议快速重路由特性中主用链路使能BFD（Echo方式）检测功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x1388707864}
+\<Sysname\> system-view
 
-[\[Sysname\] rip 1]{lang="EN-US"}
+Sysname rip 1
 
-[\[Sysname-rip-1\] fast-reroute route-policy frr]{lang="EN-US"}
+Sysname-rip-1 fast-reroute route-policy frr
 
-[\[Sysname-rip-1\] quit]{lang="EN-US"}
+Sysname-rip-1 quit
 
-[\[Sysname\] bfd echo-source-ip 1.1.1.1]{lang="EN-US"}
+Sysname bfd echo-source-ip 1.1.1.1
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] rip primary-path-detect bfd echo]{lang="EN-US"}
-:::::
-
-::: {#930114426 .myid}
-[]{#_Toc404787729}[]{#struct_0_17903_10256_1971930313}[]{#_Toc216497601}[]{#_Toc137543218}[]{#_Toc33866027}
+Sysname-Vlan-interface10 rip primary-path-detect bfd echo
 
 **RIP \-- RIP配置命令 \-- rip split-horizon**
 
 ------------------------------------------------------------------------
 
-[**[rip split-horizon]{lang="EN-US"}**]{#struct_0_17903_10256_x968936479}[命令用来使能水平分割功能。]{style="font-family:宋体"}
+**[rip split-horizon**]命令用来使能水平分割功能。
 
-[**[undo rip split-horizon]{lang="EN-US"}**]{#struct_0_17903_10256_x1269768890}[命令用来关闭水平分割功能。]{style="font-family:宋体"}
+**[undo rip split-horizon**]命令用来关闭水平分割功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x590212517}
+【命令】
 
-[**[rip split-horizon]{lang="EN-US"}**]{#struct_0_17903_10256_1655080710}
+**[rip split-horizon**]
 
-[**[undo]{lang="EN-US"}[ rip split-horizon]{lang="EN-US"}**]{#struct_0_17903_10256_x130013935}
+**[undo rip split-horizon**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_x496544181}
+【缺省情况】
 
-[[水平分割功能处于使能状态。]{style="font-family:宋体"}]{#struct_0_17903_10256_x86509446}
+水平分割功能处于使能状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x759500086}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_17903_10256_1741156977}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_256083993}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_1293292962}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x828477509}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_x90796867}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[通常情况下，为了防止路由环路的出现，水平分割是必要的，因此，建议不要关闭水平分割。当因为特殊需要，如为保证协议的正确执行，需要关闭水平分割时，请一定要确认是否必要。]{style="font-family:宋体"}]{#struct_0_17903_10256_1655146246}
+·通常情况下，为了防止路由环路的出现，水平分割是必要的，因此，建议不要关闭水平分割。当因为特殊需要，如为保证协议的正确执行，需要关闭水平分割时，请一定要确认是否必要。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在帧中继和]{style="font-family:宋体"}]{#struct_0_17903_10256_x2011797165}[X.25]{lang="EN-US"}[等]{style="font-family:宋体"}[NBMA]{lang="EN-US"}[（]{style="font-family:宋体"}[Non-Broadcast Multi-Access]{lang="EN-US"}[，非广播多路访问）网络中，当主接口和点到多点子接口配置了多条虚电路时，为了保证路由信息的正确传播，需要关闭水平分割功能。关于帧中继和]{style="font-family:宋体"}[X.25]{lang="EN-US"}[的详细信息，请参见"二层技术]{style="font-family:宋体"}[-]{lang="EN-US"}[广域网接入配置指导"中的"帧中继"和"]{style="font-family:宋体"}[LAPB]{lang="EN-US"}[和]{style="font-family:宋体"}[X.25]{lang="EN-US"}["。]{style="font-family:宋体"}
+·在帧中继和X.25等NBMA（Non-Broadcast Multi-Access，非广播多路访问）网络中，当主接口和点到多点子接口配置了多条虚电路时，为了保证路由信息的正确传播，需要关闭水平分割功能。关于帧中继和X.25的详细信息，请参见"二层技术-广域网接入配置指导"中的"帧中继"和"LAPB和X.25"。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果同时使能了水平分割和毒性逆转，则只有毒性逆转功能生效。]{style="font-family:宋体"}]{#struct_0_17903_10256_x2128105773}
+·如果同时使能了水平分割和毒性逆转，则只有毒性逆转功能生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_1979855636}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_1592365521}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x25971042}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置水平分割。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置水平分割。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_1470886574}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] rip split-horizon]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 rip split-horizon
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_369618854}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_1655211782}[在接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[上配置水平分割。]{style="font-family:宋体"}
+\# 在接口Vlan-interface10上配置水平分割。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_1457500335}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] rip split-horizon]{lang="EN-US"}
-:::
-
-::: {#-418720428 .myid}
-[]{#_Toc404787730}[]{#struct_0_17903_10256_x1225579411}[]{#_Toc216497602}[]{#_Toc137543219}[]{#_Toc94930696}[]{#_Toc93984731}[]{#_Toc60036163}[]{#_Toc53707107}[]{#_Toc52063188}[]{#_Toc50413975}[]{#_Toc50413895}[]{#_Toc50413794}
+Sysname-Vlan-interface10 rip split-horizon
 
 **RIP \-- RIP配置命令 \-- rip summary-address**
 
 ------------------------------------------------------------------------
 
-[**[rip summary-address]{lang="EN-US"}**]{#struct_0_17903_10256_1486110862}[命令用来配置发布一条聚合路由。]{style="font-family:宋体"}
+**[rip summary-address**]命令用来配置发布一条聚合路由。
 
-[**[undo rip summary-address]{lang="EN-US"}**]{#struct_0_17903_10256_995391317}[命令用来取消该配置。]{style="font-family:
-宋体"}
+**[undo rip summary-address**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x403053004}
+【命令】
 
-[**[rip summary-address]{lang="EN-US"}**[ *ip-address* { *mask-length* \| *mask* }]{lang="EN-US"}]{#struct_0_17903_10256_1793293283}
+**[rip summary-address**[ *ip-address* { *mask-length* \| *mask* }]]
 
-[**[undo rip summary-address]{lang="EN-US"}**[ *ip-address* { *mask-length* \| *mask* }]{lang="EN-US"}]{#struct_0_17903_10256_x536741099}
+**[undo rip summary-address**[ *ip-address* { *mask-length* \| *mask* }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1936429535}
+【缺省情况】
 
-[[没有配置发布一条聚合路由。]{style="font-family:宋体"}]{#struct_0_17903_10256_1655277318}
+没有配置发布一条聚合路由。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_1511978262}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_17903_10256_1792321755}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_x2129009609}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x258686720}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x861522137}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1292826022}
+【参数】
 
-[*[ip-address]{lang="EN-US"}*]{#struct_0_17903_10256_x872241709}[：聚合路由的目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[ip-address*]：聚合路由的目的IP地址。
 
-[*[mask-length]{lang="EN-US"}*]{#struct_0_17903_10256_x104952510}[：聚合路由的网络掩码长度，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[mask-length*]：聚合路由的网络掩码长度，取值范围为0～32。
 
-[*[mask]{lang="EN-US"}*]{#struct_0_17903_10256_1655342854}[：聚合路由的网络掩码，点分十进制格式。]{style="font-family:宋体"}
+*[mask*]：聚合路由的网络掩码，点分十进制格式。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1598014464}
+【使用指导】
 
-[[该功能仅在自动路由聚合功能被关闭时才能生效。]{style="font-family:宋体"}]{#struct_0_17903_10256_x1091455413}
+该功能仅在自动路由聚合功能被关闭时才能生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1200261096}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_x2118274247}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_1196074546}[配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[发布一个聚合本地]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+\# 配置RIP在接口GigabitEthernet1/0/1发布一个聚合本地IP地址。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_734210845}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] rip summary-address 10.0.0.0 255.255.255.0]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 rip summary-address 10.0.0.0 255.255.255.0
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_x1606430970}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_1655408390}[配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[在接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[发布一个聚合本地]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+\# 配置RIP在接口Vlan-interface10发布一个聚合本地IP地址。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x514864787}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] rip summary-address 10.0.0.0 255.255.255.0]{lang="EN-US"}
+Sysname-Vlan-interface10 rip summary-address 10.0.0.0 255.255.255.0
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_1563338132}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[summary]{lang="EN-US"}**]{#struct_0_17903_10256_762031891}
-:::
-
-::::: {#930386470 .myid}
-[]{#_Toc404787731}[]{#struct_0_17903_10256_x1375279310}[]{#_Toc375236014}[]{#_Toc328746905}[]{#_Toc322698697}
+·**summary**
 
 **RIP \-- RIP配置命令 \-- rip triggered**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](RIP命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_17903_10256_590559534}
-:::
+![说明](RIP命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_17903_10256_x1375082702}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[rip triggered]{lang="EN-US"}**]{#struct_0_17903_10256_x1468854895}[命令用来使能]{style="font-family:宋体"}[TRIP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[rip triggered**]命令用来使能TRIP功能。
 
-[**[undo rip triggered]{lang="EN-US"}**]{#struct_0_17903_10256_x698681106}[命令用来关闭]{style="font-family:宋体"}[TRIP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo rip triggered**]命令用来关闭TRIP功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x422989365}
+【命令】
 
-[**[rip triggered]{lang="EN-US"}**]{#struct_0_17903_10256_x1375148238}
+**[rip triggered**]
 
-[**[undo rip triggered]{lang="EN-US"}**]{#struct_0_17903_10256_x1906462902}
+**[undo rip triggered**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_2079493099}
+【缺省情况】
 
-[[TRIP]{lang="EN-US"}]{#struct_0_17903_10256_x1374427342}[功能处于关闭状态。]{style="font-family:宋体"}
+TRIP功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_2028228928}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_17903_10256_498060275}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1968539140}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1374492878}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x698115428}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1178500236}
+【使用指导】
 
-[[TRIP]{lang="EN-US"}]{#struct_0_17903_10256_x1374951633}[功能只能运行在]{style="font-family:宋体"}[PPP]{lang="EN-US"}[、帧中继、]{style="font-family:宋体"}[X.25]{lang="EN-US"}[链路层协议上。]{style="font-family:宋体"}
+TRIP功能只能运行在PPP、帧中继、X.25链路层协议上。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_1512736559}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1028723212}[使能]{style="font-family:宋体"}[TRIP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 使能TRIP功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x1375017169}
+\<Sysname\> system-view
 
-[\[Sysname\] interface serial 2/1/0]{lang="EN-US"}
+Sysname interface serial 2/1/0
 
-[\[Sysname-Serial2/1/0\] rip triggered]{lang="EN-US"}
-:::::
-
-::: {#867534780 .myid}
-[]{#_Toc404787732}[]{#struct_0_17903_10256_x91439409}[]{#_Toc216497604}[]{#_Toc137543221}[]{#_Toc33866028}[]{#_Toc286221520}[]{#_Toc286221523}[]{#_Toc286221524}[]{#_Toc286221525}[]{#_Toc286221526}[]{#_Toc286221527}[]{#_Toc286221528}[]{#_Toc286221529}[]{#_Toc286221530}[]{#_Toc286221531}[]{#_Toc286221532}[]{#_Toc286221533}[]{#_Toc286221534}[]{#_Toc286221535}[]{#_Toc286221536}[]{#_Toc286221537}[]{#_Toc286221540}
+Sysname-Serial2/1/0 rip triggered
 
 **RIP \-- RIP配置命令 \-- rip version**
 
 ------------------------------------------------------------------------
 
-[**[rip version]{lang="EN-US"}**]{#struct_0_17903_10256_x371350351}[命令用来配置接口运行的]{style="font-family:宋体"}[RIP]{lang="EN-US"}[版本。]{style="font-family:宋体"}
+**[rip version**]命令用来配置接口运行的RIP版本。
 
-[**[undo rip version]{lang="EN-US"}**]{#struct_0_17903_10256_x1611070941}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo rip version**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_707004931}
+【命令】
 
-[**[rip version ]{lang="EN-US"}**[{ **1** \| **2** \[ **broadcast** \| **multicast** \] }]{lang="EN-US"}]{#struct_0_17903_10256_1655473926}
+**[rip version **[{ **1** \| **2** [ **broadcast** \| **multicast** ] }]]
 
-[**[undo]{lang="EN-US"}[ rip version]{lang="EN-US"}**]{#struct_0_17903_10256_1926284989}
+**[undo rip version**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1238212178}
+【缺省情况】
 
-[[没有配置接口运行的]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1865955247}[版本。接口只能发送]{style="font-family:宋体"}[RIP-1]{lang="EN-US"}[广播报文，可以接收]{style="font-family:宋体"}[RIP-1]{lang="EN-US"}[广播]{style="font-family:宋体"}[/]{lang="EN-US"}[单播报文、]{style="font-family:宋体"}[RIP-2]{lang="EN-US"}[广播]{style="font-family:宋体"}[/]{lang="EN-US"}[组播]{style="font-family:宋体"}[/]{lang="EN-US"}[单播报文。]{style="font-family:宋体"}
+没有配置接口运行的RIP版本。接口只能发送RIP-1广播报文，可以接收RIP-1广播/单播报文、RIP-2广播/组播/单播报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_1562614192}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_17903_10256_x1256839682}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_373979043}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_1270942908}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_1732779286}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1901705986}
+【参数】
 
-[**[1]{lang="EN-US"}**]{#struct_0_17903_10256_1654490886}[：接口运行]{style="font-family:宋体"}[RIP]{lang="EN-US"}[协议的版本为]{style="font-family:宋体"}[RIP-1]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[1**]：接口运行RIP协议的版本为RIP-1。
 
-[**[2]{lang="EN-US"}**]{#struct_0_17903_10256_x1245764460}[：接口运行]{style="font-family:宋体"}[RIP]{lang="EN-US"}[协议的版本为]{style="font-family:宋体"}[RIP-2]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[2**]：接口运行RIP协议的版本为RIP-2。
 
-[[\[ **broadcast** \| **multicast** \]]{lang="EN-US"}]{#struct_0_17903_10256_x878469832}[：]{style="font-family:宋体"}[RIP-2]{lang="EN-US"}[报文的发送方式为广播方式（]{style="font-family:宋体"}**[broadcast]{lang="EN-US"}**[）还是组播方式（]{style="font-family:宋体"}**[multicast]{lang="EN-US"}**[），缺省为组播方式（]{style="font-family:宋体"}**[multicast]{lang="EN-US"}**[）。]{style="font-family:宋体"}
+[[[ **broadcast** \| **multicast** ]]]：RIP-2报文的发送方式为广播方式（**broadcast**）还是组播方式（**multicast**），缺省为组播方式（**multicast**）。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_241887501}
+【使用指导】
 
-[[如果接口上配置了]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1474516334}[版本，以接口配置的为准；如果接口上没有配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[版本，接口运行的]{style="font-family:宋体"}[RIP]{lang="EN-US"}[版本以全局配置的为准。]{style="font-family:宋体"}
+如果接口上配置了RIP版本，以接口配置的为准；如果接口上没有配置RIP版本，接口运行的RIP版本以全局配置的为准。
 
-[[当接口运行的]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1309601797}[版本为]{style="font-family:宋体"}[RIP-1]{lang="EN-US"}[时：]{style="font-family:宋体"}
+当接口运行的RIP版本为RIP-1时：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[发送]{lang="EN-US" style="font-family:宋体"}[RIP-1]{lang="EN-US"}]{#struct_0_17903_10256_1295816778}[广播报文]{lang="EN-US" style="font-family:宋体"}
+·发送RIP-1广播报文
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[接收]{style="font-family:宋体"}]{#struct_0_17903_10256_163201248}[RIP-1]{lang="EN-US"}[广播]{style="font-family:宋体"}[/]{lang="EN-US"}[单播报文]{style="font-family:宋体"}
+·接收RIP-1广播/单播报文
 
-[[当接口运行在]{style="font-family:宋体"}[RIP-2]{lang="EN-US"}]{#struct_0_17903_10256_712900168}[广播方式时：]{style="font-family:宋体"}
+当接口运行在RIP-2广播方式时：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[发送]{lang="EN-US" style="font-family:宋体"}[RIP-2]{lang="EN-US"}]{#struct_0_17903_10256_1654556422}[广播报文]{lang="EN-US" style="font-family:宋体"}
+·发送RIP-2广播报文
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[接收]{style="font-family:宋体"}]{#struct_0_17903_10256_1878943949}[RIP-1]{lang="EN-US"}[广播]{style="font-family:宋体"}[/]{lang="EN-US"}[单播报文、]{style="font-family:宋体"}[RIP-2]{lang="EN-US"}[广播]{style="font-family:宋体"}[/]{lang="EN-US"}[组播]{style="font-family:宋体"}[/]{lang="EN-US"}[单播报文]{style="font-family:宋体"}
+·接收RIP-1广播/单播报文、RIP-2广播/组播/单播报文
 
-[[当接口运行在]{style="font-family:宋体"}[RIP-2]{lang="EN-US"}]{#struct_0_17903_10256_x191780737}[组播方式时：]{style="font-family:宋体"}
+当接口运行在RIP-2组播方式时：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[发送]{lang="EN-US" style="font-family:宋体"}[RIP-2]{lang="EN-US"}]{#struct_0_17903_10256_1148855883}[组播报文]{lang="EN-US" style="font-family:宋体"}
+·发送RIP-2组播报文
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[接收]{style="font-family:宋体"}]{#struct_0_17903_10256_1999234309}[RIP-2]{lang="EN-US"}[广播]{style="font-family:宋体"}[/]{lang="EN-US"}[组播]{style="font-family:宋体"}[/]{lang="EN-US"}[单播报文]{style="font-family:宋体"}
+·接收RIP-2广播/组播/单播报文
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_1864969051}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_2000298605}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1355760641}[配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[以广播方式发送]{style="font-family:宋体"}[RIP-2]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+\# 配置接口GigabitEthernet1/0/1以广播方式发送RIP-2报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x717637818}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] rip version 2 broadcast]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 rip version 2 broadcast
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_1660962682}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1792001054}[配置接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[以广播方式发送]{style="font-family:宋体"}[RIP-2]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+\# 配置接口Vlan-interface10以广播方式发送RIP-2报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x1271988158}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] rip version 2 broadcast]{lang="EN-US"}
+Sysname-Vlan-interface10 rip version 2 broadcast
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_576110642}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[version]{lang="EN-US"}**]{#struct_0_17903_10256_1474166348}
-:::
-
-::: {#-420464374 .myid}
-[]{#_Toc216497606}[]{#_Toc137543223}[]{#_Toc33866030}[]{#_Toc404787733}[]{#struct_0_17903_10256_1315172494}[]{#_Toc313007788}[]{#_Toc50413797}[]{#_Toc286221542}[]{#_Toc286221543}[]{#_Toc286221544}[]{#_Toc286221545}[]{#_Toc286221546}[]{#_Toc286221547}[]{#_Toc286221548}[]{#_Toc286221549}[]{#_Toc286221550}[]{#_Toc286221551}[]{#_Toc286221552}[]{#_Toc286221553}[]{#_Toc286221554}[]{#_Toc286221555}[]{#_Toc286221556}[]{#_Toc286221557}[]{#_Toc286221558}[]{#_Toc286221562}[]{#_Toc286221563}[]{#_Toc286221564}[]{#_Toc286221565}[]{#_Toc286221570}
+·**version**
 
 **RIP \-- RIP配置命令 \-- silent-interface**
 
 ------------------------------------------------------------------------
 
-[**[silent-interface]{lang="EN-US"}**]{#struct_0_17903_10256_1325669321}[命令用来配置接口工作在抑制状态，即接]{style="font-family:宋体"}[口只接收]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文而不发送]{style="font-family:宋体"}[RIP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+**[silent-interface**]命令用来配置接口工作在抑制状态，即接口只接收RIP报文而不发送RIP报文。
 
-[**[undo silent-interface]{lang="EN-US"}**]{#struct_0_17903_10256_1272466703}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo silent-interface**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x717572282}
+【命令】
 
-[**[silent-interface]{lang="EN-US"}**]{#struct_0_17903_10256_145615183}[ { *interface-type interface-number* \| **all** }]{lang="EN-US"}
+**[silent-interface**  { *interface-type interface-number* \| **all** }]
 
-[**[undo silent-interface]{lang="EN-US"}**]{#struct_0_17903_10256_756133974}[ { *interface-type interface-number* \| **all** }]{lang="EN-US"}
+**[undo silent-interface**  { *interface-type interface-number* \| **all** }]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1452996181}
+【缺省情况】
 
-[[允许所有接口发送]{style="font-family:宋体"}]{#struct_0_17903_10256_x1910532465}[RIP]{lang="EN-US"}[报文]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+允许所有接口发送RIP报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x645315570}
+【视图】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1391480012}[视图]{style="font-family:宋体"}
+RIP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1917282161}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_1766873789}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x717506746}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_x615138377}
+【参数】
 
-[*[interface-type interface-number]{lang="EN-US"}*]{#struct_0_17903_10256_52524782}[：接口类型和编号。]{style="font-family:宋体"}
+*[interface-type interface-number*]：接口类型和编号。
 
-[**[all]{lang="EN-US"}**]{#struct_0_17903_10256_793360812}[：抑制所有接口。]{style="font-family:宋体"}
+**[all**]：抑制所有接口。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_x165634231}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_x1871776785}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_1547128048}[将所有接口设置为抑制状态，随后激活指定接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 将所有接口设置为抑制状态，随后激活指定接口GigabitEthernet1/0/1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_342026386}
+\<Sysname\> system-view
 
-[\[Sysname\] rip 100]{lang="EN-US"}
+Sysname rip 100
 
-[\[Sysname-rip-100\] silent-interface all]{lang="EN-US"}
+Sysname-rip-100 silent-interface all
 
-[\[Sysname-rip-100\] undo silent-interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname-rip-100 undo silent-interface gigabitethernet 1/0/1
 
-[\[Sysname-rip-100\] network 131.108.0.0]{lang="EN-US"}
+Sysname-rip-100 network 131.108.0.0
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_17903_10256_1250265323}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x717441210}[将所有接口设置为抑制状态，随后激活指定接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 将所有接口设置为抑制状态，随后激活指定接口Vlan-interface10。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x1412014590}
+\<Sysname\> system-view
 
-[\[Sysname\] rip 100]{lang="EN-US"}
+Sysname rip 100
 
-[\[Sysname-rip-100\] silent-interface all]{lang="EN-US"}
+Sysname-rip-100 silent-interface all
 
-[\[Sysname-rip-100\] undo silent-interface vlan-interface 10]{lang="EN-US"}
+Sysname-rip-100 undo silent-interface vlan-interface 10
 
-[\[Sysname-rip-100\] network 131.108.0.0]{lang="EN-US"}
-:::
-
-::: {#-1230299672 .myid}
-[]{#_Toc404787734}[]{#struct_0_17903_10256_1511647763}
+Sysname-rip-100 network 131.108.0.0
 
 **RIP \-- RIP配置命令 \-- summary**
 
 ------------------------------------------------------------------------
 
-[**[summary]{lang="EN-US"}**]{#struct_0_17903_10256_1063745911}[命令用来使能]{style="font-family:宋体"}[RIP-2]{lang="EN-US"}[自动路由聚合功能，聚合后的路由以使用自然掩码的路由形式发布，减小了路由表的规模。]{style="font-family:宋体"}
+**[summary**]命令用来使能RIP-2自动路由聚合功能，聚合后的路由以使用自然掩码的路由形式发布，减小了路由表的规模。
 
-[**[undo summary]{lang="EN-US"}**]{#struct_0_17903_10256_837130867}[命令用来关闭自动路由聚合功能，以便将所有子网路由广播出去。]{style="font-family:宋体"}
+**[undo summary**]命令用来关闭自动路由聚合功能，以便将所有子网路由广播出去。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x398677478}
+【命令】
 
-[**[summary]{lang="EN-US"}**]{#struct_0_17903_10256_2028313347}
+**[summary**]
 
-[**[undo summary]{lang="EN-US"}**]{#struct_0_17903_10256_2124579977}
+**[undo summary**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_x717375674}
+【缺省情况】
 
-[[RIP-2]{lang="EN-US"}]{#struct_0_17903_10256_140062757}[自动路由聚合功能处于使能状态。]{style="font-family:宋体"}
+RIP-2自动路由聚合功能处于使能状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_332300658}
+【视图】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1426539056}[视图]{style="font-family:宋体"}
+RIP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1526510419}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1615869390}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x2137803625}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_904153470}
+【使用指导】
 
-[[使能]{style="font-family:宋体"}[RIP-2]{lang="EN-US"}]{#struct_0_17903_10256_x1083011345}[自动路由聚合功能可以减小路由表规模，提高大型网络的可扩展性和效率。]{style="font-family:宋体"}
+使能RIP-2自动路由聚合功能可以减小路由表规模，提高大型网络的可扩展性和效率。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_1599631135}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x717310138}[关闭]{style="font-family:宋体"}[RIP-2]{lang="EN-US"}[自动路由聚合功能。]{style="font-family:宋体"}
+\# 关闭RIP-2自动路由聚合功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x636628392}
+\<Sysname\> system-view
 
-[\[Sysname\] rip]{lang="EN-US"}
+Sysname rip
 
-[\[Sysname-rip-1\] undo summary]{lang="EN-US"}
+Sysname-rip-1 undo summary
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x362248267}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[rip summary-address]{lang="EN-US"}**]{#struct_0_17903_10256_x1442481212}
+·**rip summary-address**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[rip version]{lang="EN-US"}**]{#struct_0_17903_10256_x1470128503}
-:::
-
-::: {#-1147623796 .myid}
-[]{#_Toc404787735}[]{#struct_0_17903_10256_x1374427345}[]{#_Toc375236018}[]{#_Toc328746906}[]{#_Toc322698698}
+·**rip version**
 
 **RIP \-- RIP配置命令 \-- timer triggered**
 
 ------------------------------------------------------------------------
 
-[**[timer triggered]{lang="EN-US"}**]{#struct_0_17903_10256_x1507223481}[命令用来配置]{style="font-family:宋体"}[触发更新]{style="font-family:宋体"}[的时间间隔。]{style="font-family:宋体"}
+**[timer triggered**]命令用来配置触发更新的时间间隔。
 
-[**[undo timer triggered]{lang="EN-US"}**]{#struct_0_17903_10256_1395403102}[命令]{style="font-family:宋体"}[用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo timer triggered**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1950418344}
+【命令】
 
-[**[timer triggered ]{lang="EN-US"}***[maximum-interval]{lang="EN-US"}*[ \[ *minimum-interval* \[ *incremental-interval* \] \]]{lang="EN-US"}]{#struct_0_17903_10256_x1374492881}
+**[timer triggered ***maximum-interval* [ *minimum-interval* [ *incremental-interval*  ]]]
 
-[**[undo timer triggered]{lang="EN-US"}**]{#struct_0_17903_10256_1675389535}
+**[undo timer triggered**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_414849971}
+【缺省情况】
 
-[[发送触发更新的]{style="font-family:宋体"}]{#struct_0_17903_10256_x1374951632}[最大时间间隔为]{style="font-family:宋体"}[5]{lang="EN-US"}[秒，最小间隔为]{style="font-family:宋体"}[50]{lang="EN-US"}[毫秒，增量惩罚间隔为]{style="font-family:宋体"}[200]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+发送触发更新的最大时间间隔为5秒，最小间隔为50毫秒，增量惩罚间隔为200毫秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1216146796}
+【视图】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_982939350}[视图]{style="font-family:宋体"}
+RIP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1630883876}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1375017168}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_1822205006}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_338875985}
+【参数】
 
-[*[maximum-interval]{lang="EN-US"}*]{#struct_0_17903_10256_x1374820560}[[：触发更新的最大间隔时间。取值范围是]{style="font-family:宋体"}[1]{lang="EN-US"}]{.varname}[[～]{style="font-family:宋体"}[5]{lang="EN-US"}]{.varname}[[，单位是秒。]{style="font-family:宋体"}]{.varname}
+*[maximum-interval*]：触发更新的最大间隔时间。取值范围是1{.varname}～5{.varname}，单位是秒。{.varname}
 
-[*[minimum-interval]{lang="EN-US"}*]{#struct_0_17903_10256_x2049426824}[[：触发更新的最小间隔时间。取值范围是]{style="font-family:宋体"}[10]{lang="EN-US"}]{.varname}[[～]{style="font-family:宋体"}[5000]{lang="EN-US"}]{.varname}[[，单位是毫秒。]{style="font-family:宋体"}]{.varname}
+*[minimum-interval*]：触发更新的最小间隔时间。取值范围是10{.varname}～5000{.varname}，单位是毫秒。{.varname}
 
-[[*[incremental-interval]{lang="EN-US"}*]{.varname}]{#struct_0_17903_10256_x1783668362}[[：触发更新间隔的增加时间。取值范围是]{style="font-family:宋体"}[100]{lang="EN-US"}]{.varname}[[～]{style="font-family:宋体"}[1000]{lang="EN-US"}]{.varname}[[，单位是毫秒。]{style="font-family:宋体"}]{.varname}
+*incremental-interval*{.varname}：触发更新间隔的增加时间。取值范围是100{.varname}～1000{.varname}，单位是毫秒。{.varname}
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1374886096}
+【使用指导】
 
-[[本命令在网络变化不频繁的情况下将触发更新的时间间隔缩小到]{style="font-family:宋体"}*[minimum-interval]{lang="EN-US"}*]{#struct_0_17903_10256_1375592473}[，而在网络变化频繁的情况下可以进行相应惩罚，将时间间隔按照配置的惩罚增量延长，最大不超过]{style="font-family:宋体"}*[maximum-interval]{lang="EN-US"}*[。]{style="font-family:宋体"}
+本命令在网络变化不频繁的情况下将触发更新的时间间隔缩小到*minimum-interval*，而在网络变化频繁的情况下可以进行相应惩罚，将时间间隔按照配置的惩罚增量延长，最大不超过*maximum-interval*。
 
-[*[minimum-interval]{lang="EN-US"}*]{#struct_0_17903_10256_x1510662763}[和]{style="font-family:宋体"}*[incremental-interval]{lang="EN-US"}*[配置值不允许大于]{style="font-family:宋体"}*[maximum-interval]{lang="EN-US"}*[配置值。]{style="font-family:宋体"}
+*[minimum-interval*]和*incremental-interval*配置值不允许大于*maximum-interval*配置值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1479085662}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1375213776}[配置发送触发更新的最大时间间隔为]{style="font-family:宋体"}[2]{lang="EN-US"}[秒，最小时间间隔为]{style="font-family:宋体"}[100]{lang="EN-US"}[毫秒，惩罚增量为]{style="font-family:宋体"}[100]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+\# 配置发送触发更新的最大时间间隔为2秒，最小时间间隔为100毫秒，惩罚增量为100毫秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_840434890}
+\<Sysname\> system-view
 
-[\[Sysname\] rip 1]{lang="EN-US"}
+Sysname rip 1
 
-[\[Sysname-rip-1\] timer triggered 2 100 100]{lang="EN-US"}
-:::
-
-::: {#-1110649075 .myid}
-[]{#_Toc404787736}[]{#struct_0_17903_10256_538738060}[]{#_Toc216497607}[]{#_Toc137543224}[]{#_Toc94930701}[]{#_Toc93984736}
+Sysname-rip-1 timer triggered 2 100 100
 
 **RIP \-- RIP配置命令 \-- timers**
 
 ------------------------------------------------------------------------
 
-[**[timers]{lang="EN-US"}**]{#struct_0_17903_10256_2076141201}[命令用来配置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[各个定时器的值，可通过调节]{style="font-family:宋体"}[RIP]{lang="EN-US"}[定时器来调整路由协议的性能，以满足网络需要。]{style="font-family:宋体"}
+**[timers**]命令用来配置RIP各个定时器的值，可通过调节RIP定时器来调整路由协议的性能，以满足网络需要。
 
-[**[undo timers]{lang="EN-US"}**]{#struct_0_17903_10256_x1640385654}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo timers**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_715873379}
+【命令】
 
-[**[timers ]{lang="EN-US"}**[{ **garbage-collect** *garbage-collect-value* \| **suppress** *suppress-value* \| **timeout** *timeout-value* \| **update** *update-value* } \*]{lang="EN-US"}]{#struct_0_17903_10256_x1315525394}
+**[timers **[{ **garbage-collect** *garbage-collect-value* \| **suppress** *suppress-value* \| **timeout** *timeout-value* \| **update** *update-value* } \*]]
 
-[**[undo timers ]{lang="EN-US"}**[{ **garbage-collect** \| **suppress** \| **timeout** \| **update** } \*]{lang="EN-US"}]{#struct_0_17903_10256_x717244602}
+**[undo timers **[{ **garbage-collect** \| **suppress** \| **timeout** \| **update** } \*]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1417042842}
+【缺省情况】
 
-[[Garbage-collect]{lang="EN-US"}]{#struct_0_17903_10256_x272202380}[定时器的值为]{style="font-family:宋体"}[120]{lang="EN-US"}[秒，]{style="font-family:宋体"}[Suppress]{lang="EN-US"}[定时器的值为]{style="font-family:宋体"}[120]{lang="EN-US"}[秒，]{style="font-family:宋体"}[Timeout]{lang="EN-US"}[定时器的值为]{style="font-family:宋体"}[180]{lang="EN-US"}[秒，]{style="font-family:宋体"}[Update]{lang="EN-US"}[定时器的值为]{style="font-family:宋体"}[30]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+Garbage-collect定时器的值为120秒，Suppress定时器的值为120秒，Timeout定时器的值为180秒，Update定时器的值为30秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x374609141}
+【视图】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x651826862}[视图]{style="font-family:宋体"}
+RIP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_x168937624}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_572740068}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1028578473}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_x717179066}
+【参数】
 
-[*[garbage-collect-value]{lang="EN-US"}*]{#struct_0_17903_10256_x682163628}[：]{style="font-family:宋体"}[Garbage-collect]{lang="EN-US"}[定时器的值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[garbage-collect-value*]：Garbage-collect定时器的值，取值范围为1～3600，单位为秒。
 
-[*[suppress-value]{lang="EN-US"}*]{#struct_0_17903_10256_x1250439219}[：]{style="font-family:宋体"}[Suppress]{lang="EN-US"}[定时器的值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[suppress-value*]：Suppress定时器的值，取值范围为0～3600，单位为秒。
 
-[*[timeout-value]{lang="EN-US"}*]{#struct_0_17903_10256_x1540143552}[：]{style="font-family:宋体"}[Timeout]{lang="EN-US"}[定时器的值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[timeout-value*]：Timeout定时器的值，取值范围为1～3600，单位为秒。
 
-[*[update-value]{lang="EN-US"}*]{#struct_0_17903_10256_x1730299249}[：]{style="font-family:宋体"}[Update]{lang="EN-US"}[定时器的值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[update-value*]：Update定时器的值，取值范围为1～3600，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_825680280}
+【使用指导】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1840818580}[受四个定时器的控制，分别是]{style="font-family:宋体"}[Update]{lang="EN-US"}[、]{style="font-family:宋体"}[Timeout]{lang="EN-US"}[、]{style="font-family:宋体"}[Suppress]{lang="EN-US"}[和]{style="font-family:宋体"}[Garbage-Collect]{lang="EN-US"}[，其中：]{style="font-family:宋体"}
+RIP受四个定时器的控制，分别是Update、Timeout、Suppress和Garbage-Collect，其中：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Update]{lang="EN-US"}]{#struct_0_17903_10256_840695181}[定时器，定义了发送更新报文的时间间隔。]{style="font-family:宋体"}
+·Update定时器，定义了发送更新报文的时间间隔。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Timeout]{lang="EN-US"}]{#struct_0_17903_10256_1179628340}[定时器，定义了路由老化时间。如果在老化时间内没有收到关于某条路由的更新报文，则该条路由在路由表中的度量值将会被设置为]{style="font-family:宋体"}[16]{lang="EN-US"}[。]{style="font-family:宋体"}
+·Timeout定时器，定义了路由老化时间。如果在老化时间内没有收到关于某条路由的更新报文，则该条路由在路由表中的度量值将会被设置为16。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Suppress]{lang="EN-US"}]{#struct_0_17903_10256_x421031959}[定时器，定义了]{style="font-family:
-宋体"}[RIP]{lang="EN-US"}[路由处于抑制状态的时间段长度。当一条路由的度量值变为]{style="font-family:宋体"}[16]{lang="EN-US"}[时，该路由将进入被抑制状态。在被抑制状态，只有来自同一邻居，且度量值小于]{style="font-family:宋体"}[16]{lang="EN-US"}[的路由更新才会被路由器接收，取代不可达路由。]{style="font-family:宋体"}
+·Suppress定时器，定义了RIP路由处于抑制状态的时间段长度。当一条路由的度量值变为16时，该路由将进入被抑制状态。在被抑制状态，只有来自同一邻居，且度量值小于16的路由更新才会被路由器接收，取代不可达路由。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Garbage-Collect]{lang="EN-US"}]{#struct_0_17903_10256_x718162106}[定时器，定义了一条路由从度量值变为]{style="font-family:宋体"}[16]{lang="EN-US"}[开始，直到它从路由表里被删除所经过的时间。]{style="font-family:宋体"}[在]{lang="EN-US" style="font-family:宋体"}[Garbage-Collect]{lang="EN-US"}[时间内，]{lang="EN-US" style="font-family:宋体"}[RIP]{lang="EN-US"}[以]{lang="EN-US" style="font-family:宋体"}[16]{lang="EN-US"}[作为度量值向外发送这条路由的更新，如果]{lang="EN-US" style="font-family:宋体"}[Garbage-Collect]{lang="EN-US"}[超时，该路由仍没有得到更新，则该路由将从路由表中被彻底删除。]{lang="EN-US" style="font-family:宋体"}
+·Garbage-Collect定时器，定义了一条路由从度量值变为16开始，直到它从路由表里被删除所经过的时间。在Garbage-Collect时间内，RIP以16作为度量值向外发送这条路由的更新，如果Garbage-Collect超时，该路由仍没有得到更新，则该路由将从路由表中被彻底删除。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_17903_10256_x1616844573}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[通常情况下，无需改变各定时器的缺省值，该命令须谨慎使用。]{style="font-family:宋体"}]{#struct_0_17903_10256_x2101834475}
+·通常情况下，无需改变各定时器的缺省值，该命令须谨慎使用。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[各个定时器的值在网络中所有的路由器上必须保持一致。]{style="font-family:宋体"}]{#struct_0_17903_10256_x1139207353}
+·各个定时器的值在网络中所有的路由器上必须保持一致。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Timeout]{lang="EN-US"}]{#struct_0_17903_10256_1485648631}[定时器的值]{lang="EN-US" style="font-family:宋体"}[要大于]{style="font-family:宋体"}[Update]{lang="EN-US"}[定时器的值]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}
+·Timeout定时器的值要大于Update定时器的值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_x452734379}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_565780543}[分别设置]{style="font-family:宋体"}[RIP]{lang="EN-US"}[各定时器的值：其中，]{style="font-family:宋体"}[Update]{lang="EN-US"}[定时器的值为]{style="font-family:宋体"}[5]{lang="EN-US"}[秒、]{style="font-family:宋体"}[Timeout]{lang="EN-US"}[定时器的值为]{style="font-family:宋体"}[15]{lang="EN-US"}[秒、]{style="font-family:宋体"}[Suppress]{lang="EN-US"}[定时器的值为]{style="font-family:宋体"}[15]{lang="EN-US"}[秒、]{style="font-family:宋体"}[Garbage-Collect]{lang="EN-US"}[定时器的值为]{style="font-family:宋体"}[30]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 分别设置RIP各定时器的值：其中，Update定时器的值为5秒、Timeout定时器的值为15秒、Suppress定时器的值为15秒、Garbage-Collect定时器的值为30秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x174339168}
+\<Sysname\> system-view
 
-[\[Sysname\] rip 100]{lang="EN-US"}
+Sysname rip 100
 
-[\[Sysname-rip-100\] timers update 5 timeout 15 suppress 15 garbage-collect 30]{lang="EN-US"}
-:::
-
-::::: {#-96249297 .myid}
-[]{#_Toc404787737}[]{#struct_0_17903_10256_x1375148240}[]{#_Toc375236020}[]{#_Toc328746907}[]{#_Toc322698699}[]{#_Toc145238452}
+Sysname-rip-100 timers update 5 timeout 15 suppress 15 garbage-collect 30
 
 **RIP \-- RIP配置命令 \-- trip retransmit count**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](RIP命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_17903_10256_2032470642}
-:::
+![说明](RIP命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_17903_10256_x1374427344}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[trip retransmit count]{lang="EN-US"}**]{#struct_0_17903_10256_1221659874}[命令用来配置]{style="font-family:宋体"}[TRIP]{lang="EN-US"}[中]{style="font-family:宋体"}[Update Response]{lang="EN-US"}[报文的最大重传次数。]{style="font-family:宋体"}
+**[trip retransmit count**]命令用来配置TRIP中Update Response报文的最大重传次数。
 
-[**[undo trip retransmit count]{lang="EN-US"}**]{#struct_0_17903_10256_1358318858}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo trip retransmit count**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1172452855}
+【命令】
 
-[**[trip retransmit count ]{lang="EN-US"}***[retransmit-count-value]{lang="EN-US"}*]{#struct_0_17903_10256_x1374492880}
+**[trip retransmit count ***retransmit-count-value*]
 
-[**[undo trip retransmit count]{lang="EN-US"}**]{#struct_0_17903_10256_x1053493820}
+**[undo trip retransmit count**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_85688680}
+【缺省情况】
 
-[[TRIP]{lang="EN-US"}]{#struct_0_17903_10256_x1374951627}[中]{style="font-family:宋体"}[Update Response]{lang="EN-US"}[报文的最大重传次数为]{style="font-family:宋体"}[36]{lang="EN-US"}[。]{style="font-family:宋体"}
+TRIP中Update Response报文的最大重传次数为36。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x812796733}
+【视图】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_369736697}[视图]{style="font-family:宋体"}
+RIP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1375017163}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_1775150839}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x949734168}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_998588163}
+【参数】
 
-[*[retransmit-count-value]{lang="EN-US"}*]{#struct_0_17903_10256_x1374820555}[：]{style="font-family:宋体"}[TRIP]{lang="EN-US"}[中]{style="font-family:宋体"}[Update Response]{lang="EN-US"}[报文的最大重传次数，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[retransmit-count-value*]：TRIP中Update Response报文的最大重传次数，取值范围为1～3600。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_1842452553}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_62216727}[配置]{style="font-family:宋体"}[TRIP]{lang="EN-US"}[中]{style="font-family:宋体"}[Update Response]{lang="EN-US"}[报文的最大重传次数为]{style="font-family:宋体"}[20]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置TRIP中Update Response报文的最大重传次数为20。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x1374886091}
+\<Sysname\> system-view
 
-[\[Sysname\] rip 1]{lang="EN-US"}
+Sysname rip 1
 
-[\[Sysname-rip-1\] trip retransmit count 20]{lang="EN-US"}
-:::::
-
-::::: {#361150110 .myid}
-[]{#_Toc404787738}[]{#struct_0_17903_10256_x546721828}[]{#_Toc375236021}[]{#_Toc328746908}[]{#_Toc322698700}[]{#_Toc145238451}
+Sysname-rip-1 trip retransmit count 20
 
 **RIP \-- RIP配置命令 \-- trip retransmit timer**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](RIP命令.files/image001.png){#图片 22 width="62" height="25"}]{lang="EN-US"}]{#struct_0_17903_10256_401311241}
-:::
+![说明](RIP命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_17903_10256_1411188362}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[trip retransmit timer]{lang="EN-US"}**]{#struct_0_17903_10256_x1375213771}[命令用来配置]{style="font-family:宋体"}[TRIP]{lang="EN-US"}[重传]{style="font-family:宋体"}[Update Request]{lang="EN-US"}[、]{style="font-family:宋体"}[Update Response]{lang="EN-US"}[报文的时间间隔。]{style="font-family:宋体"}
+**[trip retransmit timer**]命令用来配置TRIP重传Update Request、Update Response报文的时间间隔。
 
-[**[undo trip retransmit timer]{lang="EN-US"}**]{#struct_0_17903_10256_80920003}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo trip retransmit timer**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_1604078009}
+【命令】
 
-[**[trip retransmit timer ]{lang="EN-US"}***[retransmit-time-value]{lang="EN-US"}*]{#struct_0_17903_10256_x1375279307}
+**[trip retransmit timer ***retransmit-time-value*]
 
-[**[undo trip retransmit timer]{lang="EN-US"}**]{#struct_0_17903_10256_x169020889}
+**[undo trip retransmit timer**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_2116427864}
+【缺省情况】
 
-[[TRIP]{lang="EN-US"}]{#struct_0_17903_10256_x1375082699}[重传]{style="font-family:宋体"}[Update Request]{lang="EN-US"}[报文、]{style="font-family:宋体"}[Update Response]{lang="EN-US"}[报文的时间间隔为]{style="font-family:宋体"}[5]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+TRIP重传Update Request报文、Update Response报文的时间间隔为5秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x709798761}
+【视图】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x1351903650}[视图]{style="font-family:宋体"}
+RIP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_2140875254}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x1375148235}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_1272759147}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_x720889033}
+【参数】
 
-[*[retransmit-time-value]{lang="EN-US"}*]{#struct_0_17903_10256_x1374427339}[：]{style="font-family:宋体"}[TRIP]{lang="EN-US"}[重传]{style="font-family:宋体"}[Update Request]{lang="EN-US"}[、]{style="font-family:宋体"}[Update Response]{lang="EN-US"}[报文的时间间隔，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[retransmit-time-value*]：TRIP重传Update Request、Update Response报文的时间间隔，取值范围为1～3600，单位为秒。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_106111235}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1402913560}[配置]{style="font-family:宋体"}[TRIP]{lang="EN-US"}[重传]{style="font-family:宋体"}[Update Request]{lang="EN-US"}[、]{style="font-family:宋体"}[Update Response]{lang="EN-US"}[报文的时间间隔为]{style="font-family:宋体"}[80]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置TRIP重传Update Request、Update Response报文的时间间隔为80秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_x1374492875}
+\<Sysname\> system-view
 
-[\[Sysname\] rip 1]{lang="EN-US"}
+Sysname rip 1
 
-[\[Sysname-rip-1\] trip retransmit timer 80]{lang="EN-US"}
-:::::
-
-::: {#57451019 .myid}
-[]{#_Toc216497611}[]{#_Toc137543226}[]{#_Toc94930703}[]{#_Toc93984738}[]{#_Toc404787739}[]{#struct_0_17903_10256_x718096570}[]{#_Toc313007791}[]{#_Toc216497610}[]{#_Toc286221573}[]{#_Toc286221574}[]{#_Toc286221576}[]{#_Toc286221577}[]{#_Toc286221578}[]{#_Toc286221579}[]{#_Toc286221580}[]{#_Toc286221581}[]{#_Toc286221582}[]{#_Toc286221583}[]{#_Toc286221584}[]{#_Toc286221585}[]{#_Toc286221586}[]{#_Toc286221587}[]{#_Toc286221588}[]{#_Toc286221589}[]{#_Toc286221590}[]{#_Toc286221595}[]{#_Toc286221597}[]{#_Toc286221598}[]{#_Toc286221599}[]{#_Toc286221600}[]{#_Toc286221601}[]{#_Toc286221602}[]{#_Toc286221603}[]{#_Toc286221604}[]{#_Toc286221605}[]{#_Toc286221606}[]{#_Toc286221607}[]{#_Toc286221608}[]{#_Toc286221609}[]{#_Toc286221610}[]{#_Toc286221611}[]{#_Toc286221612}[]{#_Toc286221615}[]{#_Toc286221617}[]{#_Toc286221618}[]{#_Toc286221620}[]{#_Toc286221621}[]{#_Toc286221622}[]{#_Toc286221623}[]{#_Toc286221624}[]{#_Toc286221625}[]{#_Toc286221626}[]{#_Toc286221627}[]{#_Toc286221628}[]{#_Toc286221629}[]{#_Toc286221630}[]{#_Toc286221631}
+Sysname-rip-1 trip retransmit timer 80
 
 **RIP \-- RIP配置命令 \-- validate-source-address**
 
 ------------------------------------------------------------------------
 
-[**[validate-source-address]{lang="EN-US"}**]{#struct_0_17903_10256_x25314579}[命令用来使能对接收到的]{style="font-family:宋体"}[RIP]{lang="EN-US"}[路由更新报文进行源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址检查的功能。]{style="font-family:宋体"}
+**[validate-source-address**]命令用来使能对接收到的RIP路由更新报文进行源IP地址检查的功能。
 
-[**[undo validate-source-address]{lang="EN-US"}**]{#struct_0_17903_10256_x1624724744}[命令用来关闭该项功能。]{style="font-family:
-宋体"}
+**[undo validate-source-address**]命令用来关闭该项功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x102889404}
+【命令】
 
-[**[validate-source-address]{lang="EN-US"}**]{#struct_0_17903_10256_1815939929}
+**[validate-source-address**]
 
-[**[undo validate-source-address]{lang="EN-US"}**]{#struct_0_17903_10256_630469689}
+**[undo validate-source-address**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_x751571346}
+【缺省情况】
 
-[[对接收到的]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x67732014}[路由更新报文进行源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址检查的功能处于使能状态。]{style="font-family:宋体"}
+对接收到的RIP路由更新报文进行源IP地址检查的功能处于使能状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1266810311}
+【视图】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_x717637817}[视图]{style="font-family:宋体"}
+RIP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_1660766074}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_1681002245}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_1583779391}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_x2071443750}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1209126254}[关闭对接收到的]{style="font-family:宋体"}[RIP]{lang="EN-US"}[路由更新报文进行源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址检查的功能。]{style="font-family:宋体"}
+\# 关闭对接收到的RIP路由更新报文进行源IP地址检查的功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_1732677646}
+\<Sysname\> system-view
 
-[\[Sysname-rip\] rip 100]{lang="EN-US"}
+Sysname-rip rip 100
 
-[\[Sysname-rip-100\] undo validate-source-address]{lang="EN-US"}
-:::
-
-::: {#1902401671 .myid}
-[]{#_Toc404787740}[]{#struct_0_17903_10256_109557507}
+Sysname-rip-100 undo validate-source-address
 
 **RIP \-- RIP配置命令 \-- version**
 
 ------------------------------------------------------------------------
 
-[**[version]{lang="EN-US"}**]{#struct_0_17903_10256_x717572281}[命令用来配置全局]{style="font-family:宋体"}[RIP]{lang="EN-US"}[版本。]{style="font-family:宋体"}
+**[version**]命令用来配置全局RIP版本。
 
-[**[undo version]{lang="EN-US"}**]{#struct_0_17903_10256_145418575}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo version**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1909989904}
+【命令】
 
-[**[version]{lang="EN-US"}**[ { **1** \| **2** }]{lang="EN-US"}]{#struct_0_17903_10256_2082083840}
+**[version**[ { **1** \| **2** }]]
 
-[**[undo version]{lang="EN-US"}**]{#struct_0_17903_10256_x1998981542}
+**[undo version**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_17903_10256_1546517831}
+【缺省情况】
 
-[[没有配置全局]{style="font-family:宋体"}[RIP]{lang="EN-US"}]{#struct_0_17903_10256_1197669420}[版本。接口只能发送]{style="font-family:宋体"}[RIP-1]{lang="EN-US"}[广播报文，可以接收]{style="font-family:宋体"}[RIP-1]{lang="EN-US"}[广播]{style="font-family:宋体"}[/]{lang="EN-US"}[单播报文、]{style="font-family:宋体"}[RIP-2]{lang="EN-US"}[广播]{style="font-family:宋体"}[/]{lang="EN-US"}[组播]{style="font-family:宋体"}[/]{lang="EN-US"}[单播报文。]{style="font-family:宋体"}
+没有配置全局RIP版本。接口只能发送RIP-1广播报文，可以接收RIP-1广播/单播报文、RIP-2广播/组播/单播报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_17903_10256_836189942}
+【视图】
 
-[[RIP]{lang="EN-US"}]{#struct_0_17903_10256_624442910}[视图]{style="font-family:宋体"}
+RIP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_17903_10256_412696384}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_17903_10256_x717506745}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_17903_10256_x615203913}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1814793174}
+【参数】
 
-[**[1]{lang="EN-US"}**]{#struct_0_17903_10256_x1946162127}[：指定为]{style="font-family:宋体"}[RIP-1]{lang="EN-US"}[版本。]{style="font-family:宋体"}
+**[1**]：指定为RIP-1版本。
 
-[**[2]{lang="EN-US"}**]{#struct_0_17903_10256_x959917334}[：指定为]{style="font-family:宋体"}[RIP-2]{lang="EN-US"}[版本，]{style="font-family:宋体"}[RIP-2]{lang="EN-US"}[报文的发送方式为组播方式。]{style="font-family:宋体"}
+**[2**]：指定为RIP-2版本，RIP-2报文的发送方式为组播方式。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1211383120}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果接口上配置了]{style="font-family:宋体"}]{#struct_0_17903_10256_2024271007}[RIP]{lang="EN-US"}[版本，以接口配置的为准。]{style="font-family:宋体"}
+·如果接口上配置了RIP版本，以接口配置的为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果接口没有配置]{style="font-family:宋体"}]{#struct_0_17903_10256_x1873634376}[RIP]{lang="EN-US"}[版本，将全局]{style="font-family:宋体"}[RIP]{lang="EN-US"}[版本配置为]{style="font-family:宋体"}[1]{lang="EN-US"}[时，接口运行的]{style="font-family:宋体"}[RIP]{lang="EN-US"}[版本为]{style="font-family:宋体"}[RIP-1]{lang="EN-US"}[，发送]{style="font-family:宋体"}[RIP-1]{lang="EN-US"}[广播报文，可以接收]{style="font-family:宋体"}[RIP-1]{lang="EN-US"}[广播]{style="font-family:宋体"}[/]{lang="EN-US"}[单播报文。]{style="font-family:宋体"}
+·如果接口没有配置RIP版本，将全局RIP版本配置为1时，接口运行的RIP版本为RIP-1，发送RIP-1广播报文，可以接收RIP-1广播/单播报文。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果接口没有配置]{style="font-family:宋体"}]{#struct_0_17903_10256_x1779271289}[RIP]{lang="EN-US"}[版本，将全局]{style="font-family:宋体"}[RIP]{lang="EN-US"}[版本配置为]{style="font-family:宋体"}[2]{lang="EN-US"}[时，接口运行的]{style="font-family:宋体"}[RIP]{lang="EN-US"}[版本为]{style="font-family:宋体"}[RIP-2]{lang="EN-US"}[且工作在组播方式，发送]{style="font-family:宋体"}[RIP-2]{lang="EN-US"}[组播报文，可以接收]{style="font-family:宋体"}[RIP-2]{lang="EN-US"}[广播]{style="font-family:宋体"}[/]{lang="EN-US"}[组播]{style="font-family:宋体"}[/]{lang="EN-US"}[单播。]{style="font-family:宋体"}
+·如果接口没有配置RIP版本，将全局RIP版本配置为2时，接口运行的RIP版本为RIP-2且工作在组播方式，发送RIP-2组播报文，可以接收RIP-2广播/组播/单播。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_17903_10256_x717441209}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_17903_10256_x1411424767}[指定全局]{style="font-family:宋体"}[RIP]{lang="EN-US"}[版本为]{style="font-family:宋体"}[RIP-2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 指定全局RIP版本为RIP-2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_17903_10256_1449360196}
+\<Sysname\> system-view
 
-[\[Sysname\] rip 100]{lang="EN-US"}
+Sysname rip 100
 
-[\[Sysname-rip-100\] version 2]{lang="EN-US"}
+Sysname-rip-100 version 2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_17903_10256_x1544076302}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[rip version]{lang="EN-US"}**]{#struct_0_17903_10256_1147521608}
+·**rip version**
 
-[ ]{lang="EN-US"}
-:::

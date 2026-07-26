@@ -1,569 +1,544 @@
-::: {#358280274 .myid}
-[]{#_Toc404795321}[]{#struct_0_x5898_17832_x668563699}[]{#_Toc394063172}
 
 **IP地址学习 \-- IP地址学习调试命令 \-- debugging wlan wsnp**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5898_17832_x1957134596}
+【命令】
 
-[**[debugging wlan wsnp]{lang="EN-US"}**[ { **all** \| **error** \| **event** }]{lang="EN-US"}]{#struct_0_x5898_17832_1558082218}
+**[debugging wlan wsnp**[ { **all** \| **error** \| **event** }]]
 
-[**[undo debugging wlan wsnp]{lang="EN-US"}**[ { **all** \| **error** \| **event** }]{lang="EN-US"}]{#struct_0_x5898_17832_x469222437}
+**[undo debugging wlan wsnp**[ { **all** \| **error** \| **event** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5898_17832_901122517}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x5898_17832_x1206878015}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5898_17832_x954569089}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5898_17832_x1115821208}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5898_17832_557661167}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5898_17832_x1367560144}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_x5898_17832_384059457}[：表示]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址学习模块所有的调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示IP地址学习模块所有的调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_x5898_17832_x1343657652}[：表示]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址学习模块错误的调试信息开关。]{style="font-family:宋体"}
+**[error**]：表示IP地址学习模块错误的调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_x5898_17832_1454099244}[：表示]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址学习模块事件的调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示IP地址学习模块事件的调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_x5898_17832_1964856658}
+【描述】
 
-[**[debugging wlan wsnp]{lang="EN-US"}**]{#struct_0_x5898_17832_x1000468887}[命令用来打开]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址学习调试信息开关。]{style="font-family:宋体"}**[undo debugging wlan wsnp]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址学习调试信息开关。]{style="font-family:宋体"}
+**[debugging wlan wsnp**]命令用来打开IP地址学习调试信息开关。**undo debugging wlan wsnp**命令用来关闭IP地址学习调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x5898_17832_x1522631328}[地址学习调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，IP地址学习调试信息开关处于关闭状态。
 
-[[表1-1 ]{lang="EN-US"}[debugging wlan wsnp error]{lang="EN-US"}]{#struct_0_x5898_17832_1984788380}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging wlan wsnp error命令输出信息描述表
 
-[]{#table_struct_0_1782481914}[[字段]{style="font-family:黑体"}]{#struct_0_x5898_17832_152425009}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x5898_17832_x784124902}
+描述
 
-[[No WSNP data in client.]{lang="EN-US"}]{#struct_0_x5898_17832_741807826}
+No WSNP data in client.
 
-[[STA]{lang="EN-US"}]{#struct_0_x5898_17832_1851691129}[结构下没有]{style="font-family:宋体"}[WSNP]{lang="EN-US"}[数据]{style="font-family:宋体"}
+STA结构下没有WSNP数据
 
-[[No client *ClientMAC* in BSS or no WSNP data in client *ClientMAC*.]{lang="EN-US"}]{#struct_0_x5898_17832_723955762}
+No client *ClientMAC* in BSS or no WSNP data in client *ClientMAC*.
 
-[[BSS]{lang="EN-US"}]{#struct_0_x5898_17832_1613062147}[下没有客户端]{style="font-family:宋体"}*[ClientMAC]{lang="EN-US"}*[，或者客户端]{style="font-family:宋体"}*[ClientMAC]{lang="EN-US"}*[下没有]{style="font-family:宋体"}[WSNP]{lang="EN-US"}[数据]{style="font-family:宋体"}
+BSS下没有客户端*ClientMAC*，或者客户端*ClientMAC*下没有WSNP数据
 
-[[Captured an invalid *MessageType* packet: Its length (*PacketLength*) is not greater than *Length*.]{lang="EN-US"}]{#struct_0_x5898_17832_x2106319886}
+Captured an invalid *MessageType* packet: Its length (*PacketLength*) is not greater than *Length*.
 
-[[拦截到非法的]{style="font-family:宋体"}*[MessageType]{lang="EN-US"}*]{#struct_0_x5898_17832_x1760633593}[类型报文，由于报文长度]{style="font-family:宋体"}*[PacketLength]{lang="EN-US"}*[必须比]{style="font-family:宋体"}*[Length]{lang="EN-US"}*[长]{style="font-family:宋体"}
+拦截到非法的*MessageType*类型报文，由于报文长度*PacketLength*必须比*Length*长
 
-[*[MessageType ]{lang="EN-US"}*]{#struct_0_x5898_17832_562364706}[取值如下：]{style="font-family:宋体"}
+*[MessageType *]取值如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[uplink ARP]{lang="EN-US"}]{#struct_0_x5898_17832_1367387912}[：上行]{style="font-family:宋体"}[ARP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·uplink ARP：上行ARP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[uplink DHCP]{lang="EN-US"}]{#struct_0_x5898_17832_938247213}[：上行]{style="font-family:宋体"}[DHCP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·uplink DHCP：上行DHCP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[downlink DHCP]{lang="EN-US"}]{#struct_0_x5898_17832_x1196053663}[：下行]{style="font-family:宋体"}[DHCP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·downlink DHCP：下行DHCP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[uplink IPv6]{lang="EN-US"}]{#struct_0_x5898_17832_x468690242}[：上行]{style="font-family:宋体"}[ipv6]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·uplink IPv6：上行ipv6报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[downlink IPv6]{lang="EN-US"}]{#struct_0_x5898_17832_x678026870}[：下行]{style="font-family:宋体"}[ipv6]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·downlink IPv6：下行ipv6报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[uplink ICMPv6]{lang="EN-US"}]{#struct_0_x5898_17832_1611840827}[：上行]{style="font-family:宋体"}[ICMPv6]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·uplink ICMPv6：上行ICMPv6报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[uplink UDPv6]{lang="EN-US"}]{#struct_0_x5898_17832_46978206}[：上行]{style="font-family:宋体"}[UDPv6]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·uplink UDPv6：上行UDPv6报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[uplink DHCPv6]{lang="EN-US"}]{#struct_0_x5898_17832_x957200315}[：上行]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·uplink DHCPv6：上行DHCPv6报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[downlink DHCPv6]{lang="EN-US"}]{#struct_0_x5898_17832_x653790746}[：下行]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·downlink DHCPv6：下行DHCPv6报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[downlink unicast ICMPv6]{lang="EN-US"}]{#struct_0_x5898_17832_x1156517201}[：下行单播]{style="font-family:宋体"}[ICMPv6]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·downlink unicast ICMPv6：下行单播ICMPv6报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[downlink unicast UDPv6]{lang="EN-US"}]{#struct_0_x5898_17832_x529485975}[：下行单播]{style="font-family:宋体"}[UDPv6]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·downlink unicast UDPv6：下行单播UDPv6报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[downlink broadcast ICMPv6]{lang="EN-US"}]{#struct_0_x5898_17832_432579469}[：下行广播]{style="font-family:宋体"}[ICMPv6]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·downlink broadcast ICMPv6：下行广播ICMPv6报文
 
-[[Captured an invalid *MessageType* packet: Its length (*PacketLength*) is not smaller than *Length*.]{lang="EN-US"}]{#struct_0_x5898_17832_x1061925683}
+Captured an invalid *MessageType* packet: Its length (*PacketLength*) is not smaller than *Length*.
 
-[[拦截到无效的]{style="font-family:宋体"}*[MessageType]{lang="EN-US"}*]{#struct_0_x5898_17832_x2020188032}[类型报文，由于报文长度]{style="font-family:宋体"}*[PacketLength]{lang="EN-US"}*[必须比]{style="font-family:宋体"}*[Length]{lang="EN-US"}*[短]{style="font-family:宋体"}
+拦截到无效的*MessageType*类型报文，由于报文长度*PacketLength*必须比*Length*短
 
-[*[MessageType ]{lang="EN-US"}*]{#struct_0_x5898_17832_1035388605}[取值如下：]{style="font-family:宋体"}
+*[MessageType *]取值如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[uplink ARP]{lang="EN-US"}]{#struct_0_x5898_17832_x1519105735}[：上行]{style="font-family:
-  宋体"}[ARP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·uplink ARP：上行ARP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[uplink DHCP]{lang="EN-US"}]{#struct_0_x5898_17832_x228389887}[：上行]{style="font-family:
-  宋体"}[DHCP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·uplink DHCP：上行DHCP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[downlink DHCP]{lang="EN-US"}]{#struct_0_x5898_17832_733420146}[：下行]{style="font-family:宋体"}[DHCP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·downlink DHCP：下行DHCP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[uplink IPv6]{lang="EN-US"}]{#struct_0_x5898_17832_x1308129602}[：上行]{style="font-family:
-  宋体"}[ipv6]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·uplink IPv6：上行ipv6报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[downlink IPv6]{lang="EN-US"}]{#struct_0_x5898_17832_x1540956890}[：下行]{style="font-family:宋体"}[ipv6]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·downlink IPv6：下行ipv6报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[uplink ICMPv6]{lang="EN-US"}]{#struct_0_x5898_17832_2004796039}[：上行]{style="font-family:宋体"}[ICMPv6]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·uplink ICMPv6：上行ICMPv6报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[uplink UDPv6]{lang="EN-US"}]{#struct_0_x5898_17832_1134166145}[：上行]{style="font-family:
-  宋体"}[UDPv6]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·uplink UDPv6：上行UDPv6报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[uplink DHCPv6]{lang="EN-US"}]{#struct_0_x5898_17832_1973824458}[：上行]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·uplink DHCPv6：上行DHCPv6报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[downlink DHCPv6]{lang="EN-US"}]{#struct_0_x5898_17832_497316900}[：下行]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·downlink DHCPv6：下行DHCPv6报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[downlink unicast ICMPv6]{lang="EN-US"}]{#struct_0_x5898_17832_x1837300176}[：下行单播]{style="font-family:宋体"}[ICMPv6]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·downlink unicast ICMPv6：下行单播ICMPv6报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[downlink unicast UDPv6]{lang="EN-US"}]{#struct_0_x5898_17832_1468216361}[：下行单播]{style="font-family:宋体"}[UDPv6]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·downlink unicast UDPv6：下行单播UDPv6报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[downlink broadcast ICMPv6]{lang="EN-US"}]{#struct_0_x5898_17832_871305138}[：下行广播]{style="font-family:宋体"}[ICMPv6]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·downlink broadcast ICMPv6：下行广播ICMPv6报文
 
-[[Invalid *PktSocketType* DHCP packet: Message Type option not found.]{lang="EN-US"}]{#struct_0_x5898_17832_3451418}
+Invalid *PktSocketType* DHCP packet: Message Type option not found.
 
-[*[PktSocketType]{lang="EN-US"}*[ DHCP]{lang="EN-US"}]{#struct_0_x5898_17832_x313214482}[报文未携带]{style="font-family:宋体"}[Message Type option]{lang="EN-US"}
+*[PktSocketType* DHCP]报文未携带Message Type option
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Uplink]{lang="EN-US"}]{#struct_0_x5898_17832_246588511}[：上行]{style="font-family:宋体"}
+·Uplink：上行
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Downlink]{lang="EN-US"}]{#struct_0_x5898_17832_x1068767041}[：下行]{style="font-family:宋体"}
+·Downlink：下行
 
-[[Discarded packet: Invalid IPv4 address *IPv4Addr*.]{lang="EN-US"}]{#struct_0_x5898_17832_291739715}
+Discarded packet: Invalid IPv4 address *IPv4Addr*.
 
-[[丢弃报文，由于报文]{style="font-family:宋体"}]{#struct_0_x5898_17832_x1254921065}[IPv4]{lang="EN-US"}[地址]{style="font-family:宋体"}[\[*IPv4Addr*\]]{lang="EN-US"}[无效]{style="font-family:宋体"}
+丢弃报文，由于报文IPv4地址*IPv4Addr*无效
 
-[[Discarded packet: Requested IP Address option not found.]{lang="EN-US"}]{#struct_0_x5898_17832_x1489995551}
+Discarded packet: Requested IP Address option not found.
 
-[[丢弃报文，由于报文未携带]{style="font-family:宋体"}[Requested IP Address option]{lang="EN-US"}]{#struct_0_x5898_17832_429263919}
+丢弃报文，由于报文未携带Requested IP Address option
 
-[[Discarded packet: Invalid IPv4 address length *IPLength*.]{lang="EN-US"}]{#struct_0_x5898_17832_x1600312586}
+Discarded packet: Invalid IPv4 address length *IPLength*.
 
-[[丢弃报文，由于报文]{style="font-family:宋体"}[IPv4]{lang="EN-US"}]{#struct_0_x5898_17832_853612796}[地址长度]{style="font-family:宋体"}*[IPLength]{lang="EN-US"}*[非法]{style="font-family:宋体"}
+丢弃报文，由于报文IPv4地址长度*IPLength*非法
 
-[[Discarded packet: Invalid packet length *PacketLength*.]{lang="EN-US"}]{#struct_0_x5898_17832_1998049527}
+Discarded packet: Invalid packet length *PacketLength*.
 
-[[丢弃报文，由于报文长度]{style="font-family:宋体"}*[PacketLength]{lang="EN-US"}*]{#struct_0_x5898_17832_x813154500}[非法]{style="font-family:宋体"}
+丢弃报文，由于报文长度*PacketLength*非法
 
-[[Discarded ]{lang="EN-US"}]{#struct_0_x5898_17832_x1239899002}[ND]{lang="EN-US"}[-]{lang="EN-US"}[NA packet]{lang="EN-US"}[: ]{lang="EN-US"}[It]{lang="EN-US"}[ is ]{lang="EN-US"}[not]{lang="EN-US"}[ the response to the ND-NS packet.]{lang="EN-US"}
+Discarded ND-NA packet: It is not the response to the ND-NS packet.
 
-[[丢弃报文，由于]{style="font-family:宋体"}[ND-NA]{lang="EN-US"}]{#struct_0_x5898_17832_1746432535}[报文不是]{style="font-family:宋体"}[ND-NS]{lang="EN-US"}[报文的回应报文]{style="font-family:宋体"}
+丢弃报文，由于ND-NA报文不是ND-NS报文的回应报文
 
-[[Discarded packet: Option type *OptionType* or option length *Optionlength* is invalid.]{lang="EN-US"}]{#struct_0_x5898_17832_985291294}
+Discarded packet: Option type *OptionType* or option length *Optionlength* is invalid.
 
-[[丢弃报文，由于]{style="font-family:宋体"}[option]{lang="EN-US"}]{#struct_0_x5898_17832_x712471145}[类型]{style="font-family:宋体"}*[OptionType]{lang="EN-US"}*[无效或者]{style="font-family:宋体"}[option]{lang="EN-US"}[长度]{style="font-family:宋体"}*[Optionlength]{lang="EN-US"}*[无效]{style="font-family:宋体"}
+丢弃报文，由于option类型*OptionType*无效或者option长度*Optionlength*无效
 
-[[Discarded packet: MAC address *MACAddress* in the option is not the MAC address of the client.]{lang="EN-US"}]{#struct_0_x5898_17832_x19505659}
+Discarded packet: MAC address *MACAddress* in the option is not the MAC address of the client.
 
-[[丢弃报文，由于]{style="font-family:宋体"}[option]{lang="EN-US"}]{#struct_0_x5898_17832_x297595282}[中的]{style="font-family:宋体"}[MAC ]{lang="EN-US"}[地址]{style="font-family:宋体"}*[MACAddress]{lang="EN-US"}*[与客户端地址不匹配]{style="font-family:宋体"}
+丢弃报文，由于option中的MAC 地址*MACAddress*与客户端地址不匹配
 
-[[Discarded packet: IP address is loopback IPv6 address *IPv6Addr*.]{lang="EN-US"}]{#struct_0_x5898_17832_x342719521}
+Discarded packet: IP address is loopback IPv6 address *IPv6Addr*.
 
-[[丢弃报文，由于]{style="font-family:宋体"}]{#struct_0_x5898_17832_x837145882}[IP]{lang="EN-US"}[地址是环路]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址]{style="font-family:宋体"}*[IPv6Addr]{lang="EN-US"}*
+丢弃报文，由于IP地址是环路IPv6地址*IPv6Addr*
 
-[[Discarded packet: IP address is multicast IPv6 address *IPv6Addr*.]{lang="EN-US"}]{#struct_0_x5898_17832_x972842239}
+Discarded packet: IP address is multicast IPv6 address *IPv6Addr*.
 
-[[丢弃报文，由于]{style="font-family:宋体"}]{#struct_0_x5898_17832_2016412210}[IP]{lang="EN-US"}[地址是组播]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址]{style="font-family:宋体"}*[IPv6Addr]{lang="EN-US"}*
+丢弃报文，由于IP地址是组播IPv6地址*IPv6Addr*
 
-[[Discarded packet:]{lang="EN-US"}[ IP address is unspecified IPv6 address *IPv6Addr*.]{lang="EN-US"}]{#struct_0_x5898_17832_779358195}
+Discarded packet: IP address is unspecified IPv6 address *IPv6Addr*.
 
-[[丢弃报文，由于]{style="font-family:宋体"}]{#struct_0_x5898_17832_1438763523}[IP]{lang="EN-US"}[地址是未指定的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址]{style="font-family:宋体"}*[IPv6Addr]{lang="EN-US"}*
+丢弃报文，由于IP地址是未指定的IPv6地址*IPv6Addr*
 
-[[Discarded packet:]{lang="EN-US"}[ IP address is link local IPv6 address *IPv6Addr*.]{lang="EN-US"}]{#struct_0_x5898_17832_1604421975}
+Discarded packet: IP address is link local IPv6 address *IPv6Addr*.
 
-[[丢弃报文，由于]{style="font-family:宋体"}]{#struct_0_x5898_17832_450328269}[IP]{lang="EN-US"}[地址是本地链路]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址]{style="font-family:宋体"}*[IPv6Addr]{lang="EN-US"}*
+丢弃报文，由于IP地址是本地链路IPv6地址*IPv6Addr*
 
-[[Discarded packet: Incomplete DHCPv6 *OptionType* option.]{lang="EN-US"}]{#struct_0_x5898_17832_x789830151}
+Discarded packet: Incomplete DHCPv6 *OptionType* option.
 
-[[丢弃报文，由于]{style="font-family:宋体"}]{#struct_0_x5898_17832_1206797674}[DHCPv6 option ]{lang="EN-US"}*[OptionType]{lang="EN-US"}*[不完整]{style="font-family:宋体"}
+丢弃报文，由于DHCPv6 option *OptionType*不完整
 
-[[Discarded packet: Invalid header length *Length* of DHCPv6 *OptionType* option.]{lang="EN-US"}]{#struct_0_x5898_17832_839811425}
+Discarded packet: Invalid header length *Length* of DHCPv6 *OptionType* option.
 
-[[丢弃报文，由于]{style="font-family:宋体"}[DHCPv6 *OptionType* option]{lang="EN-US"}]{#struct_0_x5898_17832_2004632772}[头长度]{style="font-family:宋体"}*[Length]{lang="EN-US"}*[无效]{style="font-family:宋体"}
+丢弃报文，由于DHCPv6 *OptionType* option头长度*Length*无效
 
-[*[OptionType]{lang="EN-US"}*]{#struct_0_x5898_17832_x1115755672}[取值如下：]{style="font-family:宋体"}
+*[OptionType*]取值如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NA]{lang="EN-US"}]{#struct_0_x5898_17832_x244986120}[：]{style="font-family:宋体"}[Non-temporary Address]{lang="EN-US"}[非暂时地址]{style="font-family:宋体"}
+·NA：Non-temporary Address非暂时地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TA]{lang="EN-US"}]{#struct_0_x5898_17832_x1884334577}[：]{style="font-family:宋体"}[Temporary Address]{lang="EN-US"}[暂时地址]{style="font-family:宋体"}
+·TA：Temporary Address暂时地址
 
-[[Discarded packet: Invalid length *Length* of DHCPv6 *OptionType* option.]{lang="EN-US"}]{#struct_0_x5898_17832_677018088}
+Discarded packet: Invalid length *Length* of DHCPv6 *OptionType* option.
 
-[[丢弃报文，由于]{style="font-family:宋体"}[DHCPv6 *OptionType* option]{lang="EN-US"}]{#struct_0_x5898_17832_2053314344}[长度]{style="font-family:宋体"}*[Length]{lang="EN-US"}*[无效]{style="font-family:宋体"}
+丢弃报文，由于DHCPv6 *OptionType* option长度*Length*无效
 
-[*[OptionType]{lang="EN-US"}*]{#struct_0_x5898_17832_1613127683}[取值如下：]{style="font-family:宋体"}
+*[OptionType*]取值如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NA]{lang="EN-US"}]{#struct_0_x5898_17832_202471832}[：]{style="font-family:宋体"}[Non-temporary Address]{lang="EN-US"}[非暂时地址]{style="font-family:宋体"}
+·NA：Non-temporary Address非暂时地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TA]{lang="EN-US"}]{#struct_0_x5898_17832_2019347482}[：]{style="font-family:宋体"}[Temporary Address]{lang="EN-US"}[暂时地址]{style="font-family:宋体"}
+·TA：Temporary Address暂时地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IA]{lang="EN-US"}]{#struct_0_x5898_17832_604400804}[：]{style="font-family:宋体"}[Identify Association]{lang="EN-US"}[认证关联]{style="font-family:宋体"}
+·IA：Identify Association认证关联
 
-[[Discarded packet: Length of *OptionType* option is 0.]{lang="EN-US"}]{#struct_0_x5898_17832_47043742}
+Discarded packet: Length of *OptionType* option is 0.
 
-[[丢弃报文，由于]{style="font-family:宋体"}[Option\[*OptionType*\]]{lang="EN-US"}]{#struct_0_x5898_17832_1511122423}[中]{style="font-family:宋体"}[option]{lang="EN-US"}[长度]{style="font-family:宋体"}[0]{lang="EN-US"}[非法]{style="font-family:宋体"}
+丢弃报文，由于Option[*OptionType*]中option长度0非法
 
-[[Discarded packet: Incomplete packet.]{lang="EN-US"}]{#struct_0_x5898_17832_x875684911}
+Discarded packet: Incomplete packet.
 
-[[丢弃报文，由于报文不完整]{style="font-family:宋体"}]{#struct_0_x5898_17832_201381164}
+丢弃报文，由于报文不完整
 
-[[Discarded packet: Invalid prefix length *Length*.]{lang="EN-US"}]{#struct_0_x5898_17832_x1519040199}
+Discarded packet: Invalid prefix length *Length*.
 
-[[丢弃报文，由于前缀长度]{style="font-family:宋体"}]{#struct_0_x5898_17832_1998241415}*[Length]{lang="EN-US"}*[无效]{style="font-family:宋体"}
+丢弃报文，由于前缀长度*Length*无效
 
-[[Failed to add the source *Source* for IPv4 address *IPv4Addr*: Memory allocation failure.]{lang="EN-US"}]{#struct_0_x5898_17832_1499522131}
+Failed to add the source *Source* for IPv4 address *IPv4Addr*: Memory allocation failure.
 
-[[添加]{style="font-family:宋体"}[IPv4]{lang="EN-US"}]{#struct_0_x5898_17832_1706847955}[地址]{style="font-family:宋体"}*[IPv4Addr]{lang="EN-US"}*[来源]{style="font-family:宋体"}*[Source]{lang="EN-US"}*[失败，由于分配内存失败]{style="font-family:宋体"}
+添加IPv4地址*IPv4Addr*来源*Source*失败，由于分配内存失败
 
-[*[Source]{lang="EN-US"}*]{#struct_0_x5898_17832_497382436}[取值如下：]{style="font-family:宋体"}
+*[Source*]取值如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DHCP]{lang="EN-US"}]{#struct_0_x5898_17832_861073666}[：]{style="font-family:宋体"}[DHCP]{lang="EN-US"}[方式]{style="font-family:宋体"}
+·DHCP：DHCP方式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ARP]{lang="EN-US"}]{#struct_0_x5898_17832_349439962}[：]{style="font-family:宋体"}[ARP]{lang="EN-US"}[方式]{style="font-family:宋体"}
+·ARP：ARP方式
 
-[[Failed to delete the source *Source* for IPv4 address *IPv4Addr*: Memory allocation failure.]{lang="EN-US"}]{#struct_0_x5898_17832_x1068701505}
+Failed to delete the source *Source* for IPv4 address *IPv4Addr*: Memory allocation failure.
 
-[[删除]{style="font-family:宋体"}[IPv4]{lang="EN-US"}]{#struct_0_x5898_17832_x947931684}[地址]{style="font-family:宋体"}*[IPv4Addr]{lang="EN-US"}*[来源]{style="font-family:宋体"}*[Source]{lang="EN-US"}*[失败，由于分配内存失败]{style="font-family:宋体"}
+删除IPv4地址*IPv4Addr*来源*Source*失败，由于分配内存失败
 
-[*[Source]{lang="EN-US"}*]{#struct_0_x5898_17832_x1943566762}[取值如下：]{style="font-family:宋体"}
+*[Source*]取值如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DHCP]{lang="EN-US"}]{#struct_0_x5898_17832_2031061832}[：]{style="font-family:宋体"}[DHCP]{lang="EN-US"}[方式]{style="font-family:宋体"}
+·DHCP：DHCP方式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ARP]{lang="EN-US"}]{#struct_0_x5898_17832_1284084738}[：]{style="font-family:宋体"}[ARP]{lang="EN-US"}[方式]{style="font-family:宋体"}
+·ARP：ARP方式
 
-[[Failed to add the source *Source* for IPv6 address *IPv6Addr*: Memory allocation failure. ]{lang="EN-US"}]{#struct_0_x5898_17832_184359164}
+Failed to add the source *Source* for IPv6 address *IPv6Addr*: Memory allocation failure.
 
-[[添加]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_x5898_17832_x723994678}[地址]{style="font-family:宋体"}*[IPv6Addr]{lang="EN-US"}*[来源]{style="font-family:宋体"}*[Source]{lang="EN-US"}*[失败，由于分配内存失败]{style="font-family:宋体"}
+添加IPv6地址*IPv6Addr*来源*Source*失败，由于分配内存失败
 
-[*[Source]{lang="EN-US"}*]{#struct_0_x5898_17832_1948135245}[取值如下：]{style="font-family:宋体"}
+*[Source*]取值如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DHCPv6]{lang="EN-US"}]{#struct_0_x5898_17832_x1381724777}[：]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[方式]{style="font-family:宋体"}
+·DHCPv6：DHCPv6方式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ND]{lang="EN-US"}]{#struct_0_x5898_17832_2109350691}[：]{style="font-family:宋体"}[ND]{lang="EN-US"}[方式]{style="font-family:宋体"}
+·ND：ND方式
 
-[[Failed to delete the source *Source* for IPv6 address *IPv6Addr*: Memory allocation failure.]{lang="EN-US"}]{#struct_0_x5898_17832_1032787661}
+Failed to delete the source *Source* for IPv6 address *IPv6Addr*: Memory allocation failure.
 
-[[删除]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_x5898_17832_747550447}[地址]{style="font-family:宋体"}*[IPv6Addr]{lang="EN-US"}*[来源]{style="font-family:宋体"}*[Source]{lang="EN-US"}*[失败，由于分配内存失败]{style="font-family:宋体"}
+删除IPv6地址*IPv6Addr*来源*Source*失败，由于分配内存失败
 
-[*[Source]{lang="EN-US"}*]{#struct_0_x5898_17832_1347158578}[取值如下：]{style="font-family:宋体"}
+*[Source*]取值如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DHCPv6]{lang="EN-US"}]{#struct_0_x5898_17832_1674373266}[：]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[方式]{style="font-family:宋体"}
+·DHCPv6：DHCPv6方式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ND]{lang="EN-US"}]{#struct_0_x5898_17832_x1918719546}[：]{style="font-family:宋体"}[ND]{lang="EN-US"}[方式]{style="font-family:宋体"}
+·ND：ND方式
 
-[[Failed to add the source *Source* for IPv6 prefix *IPv6Addr* whose length is *length*: Memory allocation failure.]{lang="EN-US"}]{#struct_0_x5898_17832_x218925363}
+Failed to add the source *Source* for IPv6 prefix *IPv6Addr* whose length is *length*: Memory allocation failure.
 
-[[添加]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_x5898_17832_x720621363}[前缀]{style="font-family:宋体"}*[IPv6Addr]{lang="EN-US"}*[前缀长度]{style="font-family:宋体"}*[length]{lang="EN-US"}*[来源]{style="font-family:宋体"}*[Source]{lang="EN-US"}*[失败，由于分配内存失败]{style="font-family:宋体"}
+添加IPv6前缀*IPv6Addr*前缀长度*length*来源*Source*失败，由于分配内存失败
 
-[*[MethodType]{lang="EN-US"}*]{#struct_0_x5898_17832_x1079937482}[取值如下：]{lang="EN-US" style="font-family:宋体"}
+*[MethodType*]取值如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ND]{lang="EN-US"}]{#struct_0_x5898_17832_x1785009304}[：]{style="font-family:宋体"}[ND]{lang="EN-US"}[方式]{style="font-family:宋体"}
+·ND：ND方式
 
-[[Failed to send ]{lang="EN-US"}]{#struct_0_x5898_17832_1581318340}*[MessageType ]{lang="EN-US"}*[message to the uplink device.]{lang="EN-US"}
+Failed to send *MessageType *message to the uplink device.
 
-[[发送]{style="font-family:宋体"}]{#struct_0_x5898_17832_x21376320}*[MessageType]{lang="EN-US"}*[消息到上行设备失败]{style="font-family:宋体"}
+发送*MessageType*消息到上行设备失败
 
-[*[MessageType ]{lang="EN-US"}*]{#struct_0_x5898_17832_943874051}[取值如下：]{style="font-family:宋体"}
+*[MessageType *]取值如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IPv4 entry]{lang="EN-US"}]{#struct_0_x5898_17832_x1123339581}[：]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[表项]{style="font-family:宋体"}
+·IPv4 entry：IPv4表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IPv]{lang="EN-US"}]{#struct_0_x5898_17832_1426014470}[6]{lang="EN-US"}[ entry]{lang="EN-US"}[：]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[表项]{style="font-family:宋体"}
+·IPv6 entry：IPv6表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IPv6 prefix entry]{lang="EN-US"}]{#struct_0_x5898_17832_x622209890}[：]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[前缀选项]{style="font-family:宋体"}
+·IPv6 prefix entry：IPv6前缀选项
 
-[[Failed to send WSNP data for roaming clients to AP: Data length=*DataLen*.]{lang="EN-US"}]{#struct_0_x5898_17832_567548449}
+Failed to send WSNP data for roaming clients to AP: Data length=*DataLen*.
 
-[[发送漫游用户迁移]{style="font-family:宋体"}[WSNP]{lang="EN-US"}]{#struct_0_x5898_17832_x422250773}[数据]{style="font-family:宋体"}[(]{lang="EN-US"}[长度：]{style="font-family:宋体"}*[DataLen]{lang="EN-US"}*[)]{lang="EN-US"}[给]{style="font-family:宋体"}[AP]{lang="EN-US"}[失败]{style="font-family:宋体"}
+发送漫游用户迁移WSNP数据(长度：*DataLen*)给AP失败
 
-[[Failed to send ]{lang="EN-US"}]{#struct_0_x5898_17832_1117651119}*[MessageType ]{lang="EN-US"}*[to HA.]{lang="EN-US"}
+Failed to send *MessageType *to HA.
 
-[[发送]{style="font-family:宋体"}]{#struct_0_x5898_17832_2106673465}*[MessageType]{lang="EN-US"}*[消息到]{style="font-family:宋体"}[HA]{lang="EN-US"}[失败]{style="font-family:宋体"}
+发送*MessageType*消息到HA失败
 
-[*[MessageType]{lang="EN-US"}*]{#struct_0_x5898_17832_x1927109870}[取值如下：]{lang="EN-US" style="font-family:
-  宋体"}
+*[MessageType*]取值如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IPv4 ]{lang="EN-US"}]{#struct_0_x5898_17832_x752146943}[entry]{lang="EN-US"}[：]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[表项]{style="font-family:宋体"}
+·IPv4 entry：IPv4表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IPv6 ]{lang="EN-US"}]{#struct_0_x5898_17832_x171871196}[entry]{lang="EN-US"}[：]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[表项]{style="font-family:宋体"}
+·IPv6 entry：IPv6表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IPv6 Prefix]{lang="EN-US"}]{#struct_0_x5898_17832_x297890193}[：]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[前缀表项]{style="font-family:宋体"}
+·IPv6 Prefix：IPv6前缀表项
 
-[[Unsupported message type.]{lang="EN-US"}]{#struct_0_x5898_17832_x1895684432}
+Unsupported message type.
 
-[[不支持消息类型]{style="font-family:宋体"}]{#struct_0_x5898_17832_x1737955137}
+不支持消息类型
 
-[[Invalid message type.]{lang="EN-US"}]{#struct_0_x5898_17832_x2052267544}
+Invalid message type.
 
-[[要解析的消息类型无效]{style="font-family:宋体"}]{#struct_0_x5898_17832_94434537}
+要解析的消息类型无效
 
-[[Length of message from FA is invalid: Length= *MessageLength.*]{lang="EN-US"}]{#struct_0_x5898_17832_184424700}
+Length of message from FA is invalid: Length= *MessageLength.*
 
-[[来自]{style="font-family:宋体"}[FA]{lang="EN-US"}]{#struct_0_x5898_17832_x844104431}[的消息长度]{style="font-family:宋体"}*[MessageLength]{lang="EN-US"}*[无效]{style="font-family:宋体"}
+来自FA的消息长度*MessageLength*无效
 
-[[Failed to process IP entry from FA.]{lang="EN-US"}]{#struct_0_x5898_17832_x1640087970}
+Failed to process IP entry from FA.
 
-[[处理来自]{style="font-family:宋体"}[FA]{lang="EN-US"}]{#struct_0_x5898_17832_x1381659241}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[表项失败]{style="font-family:宋体"}
+处理来自FA的IP表项失败
 
-[[Failed to get WSNP data for intra-AC roaming clients.]{lang="EN-US"}]{#struct_0_x5898_17832_1888239517}
+Failed to get WSNP data for intra-AC roaming clients.
 
-[[获取]{style="font-family:宋体"}[AC]{lang="EN-US"}]{#struct_0_x5898_17832_x735426698}[内漫游用户迁移]{style="font-family:宋体"}[WSNP]{lang="EN-US"}[数据失败]{style="font-family:宋体"}
+获取AC内漫游用户迁移WSNP数据失败
 
-[[Failed to get WSNP data for inter-AC roaming clients.]{lang="EN-US"}]{#struct_0_x5898_17832_1347224114}
+Failed to get WSNP data for inter-AC roaming clients.
 
-[[获取]{style="font-family:宋体"}[AC]{lang="EN-US"}]{#struct_0_x5898_17832_x249138773}[间漫游用户迁移]{style="font-family:宋体"}[WSNP]{lang="EN-US"}[数据失败]{style="font-family:宋体"}
+获取AC间漫游用户迁移WSNP数据失败
 
-[[Failed to recover WSNP data for roaming clients: Didn\'t get TLV data through TLV handle.]{lang="EN-US"}]{#struct_0_x5898_17832_x1429686882}
+Failed to recover WSNP data for roaming clients: Didn\'t get TLV data through TLV handle.
 
-[[恢复漫游用户迁移]{style="font-family:宋体"}[WSNP]{lang="EN-US"}]{#struct_0_x5898_17832_x218859827}[数据失败：通过]{style="font-family:宋体"}[TLV handle ]{lang="EN-US"}[获取]{style="font-family:宋体"}[TLV]{lang="EN-US"}[数据失败]{style="font-family:宋体"}
+恢复漫游用户迁移WSNP数据失败：通过TLV handle 获取TLV数据失败
 
-[[Failed to decode roam IPv4 entry: Invalid message length *Length*.]{lang="EN-US"}]{#struct_0_x5898_17832_1162871648}
+Failed to decode roam IPv4 entry: Invalid message length *Length*.
 
-[[解析漫游]{style="font-family:宋体"}]{#struct_0_x5898_17832_1001965411}[IPv4]{lang="EN-US"}[表项失败：消息长度]{style="font-family:宋体"}*[Length]{lang="EN-US"}*[无效]{style="font-family:宋体"}
+解析漫游IPv4表项失败：消息长度*Length*无效
 
-[[Failed to decode roam IPv6 entry: Invalid message length *Length*.]{lang="EN-US"}]{#struct_0_x5898_17832_x1784943768}
+Failed to decode roam IPv6 entry: Invalid message length *Length*.
 
-[[解析漫游]{style="font-family:宋体"}]{#struct_0_x5898_17832_698962489}[IPv6]{lang="EN-US"}[表项失败：消息长度]{style="font-family:宋体"}*[Length]{lang="EN-US"}*[无效]{style="font-family:宋体"}
+解析漫游IPv6表项失败：消息长度*Length*无效
 
-[[Failed to decode roam IPv6 prefix entry: Invalid message length *Length*.]{lang="EN-US"}]{#struct_0_x5898_17832_x247649492}
+Failed to decode roam IPv6 prefix entry: Invalid message length *Length*.
 
-[[解析漫游]{style="font-family:宋体"}]{#struct_0_x5898_17832_943939587}[IPv6]{lang="EN-US"}[前缀表项失败：消息长度]{style="font-family:宋体"}*[Length]{lang="EN-US"}*[无效]{style="font-family:宋体"}
+解析漫游IPv6前缀表项失败：消息长度*Length*无效
 
-[[Failed to notify module *moduleID* of IP event *event*.]{lang="EN-US"}]{#struct_0_x5898_17832_x1167266754}
+Failed to notify module *moduleID* of IP event *event*.
 
-[[通知其它模块]{style="font-family:宋体"}[\[]{lang="EN-US"}]{#struct_0_x5898_17832_118488653}*[module]{lang="EN-US"}[ID]{lang="EN-US"}*[\]]{lang="EN-US"}[IP]{lang="EN-US"}[事件]{style="font-family:宋体"}*[event]{lang="EN-US"}*[失败]{style="font-family:宋体"}
+通知其它模块*moduleID*IP事件*event*失败
 
-[[Failed to initiate WSNP data in fake client: Memory allocation failure.]{lang="EN-US"}]{#struct_0_x5898_17832_x622144354}
+Failed to initiate WSNP data in fake client: Memory allocation failure.
 
-[[初始化]{style="font-family:宋体"}[fake STA]{lang="EN-US"}]{#struct_0_x5898_17832_x583913885}[结构中的]{style="font-family:宋体"}[WSNP]{lang="EN-US"}[数据失败：分配内存失败]{style="font-family:宋体"}
+初始化fake STA结构中的WSNP数据失败：分配内存失败
 
-[[Failed to initiate WSNP data in client: Memory allocation failure.]{lang="EN-US"}]{#struct_0_x5898_17832_x1699622725}
+Failed to initiate WSNP data in client: Memory allocation failure.
 
-[[初始化]{style="font-family:宋体"}]{#struct_0_x5898_17832_2106739001}[STA]{lang="EN-US"}[结构中的]{style="font-family:宋体"}[WSNP]{lang="EN-US"}[数据失败：分配内存失败]{style="font-family:宋体"}
+初始化STA结构中的WSNP数据失败：分配内存失败
 
-[ ]{lang="EN-US"}
+表1-2 debugging wlan wsnp event命令输出信息描述表
 
-[]{#struct_0_x5898_17832_x1163841347}[[表1-2 ]{lang="EN-US"}[debugging wlan wsnp event]{lang="EN-US"}]{#_Toc130718927}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1800475244}[[字段]{style="font-family:黑体"}]{#struct_0_x5898_17832_887730162}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x5898_17832_x1878402476}
+Captured *MessageType* packet.
 
-[[Captured *MessageType* packet.]{lang="EN-US"}]{#struct_0_x5898_17832_x1669081420}
+拦截到*MessageType*报文
 
-[[拦截到]{style="font-family:宋体"}*[MessageType]{lang="EN-US"}*]{#struct_0_x5898_17832_1903230937}[报文]{style="font-family:宋体"}
+*[MessageType*]取值如下：
 
-[*[MessageType]{lang="EN-US"}*]{#struct_0_x5898_17832_1225401385}[取值如下：]{style="font-family:宋体"}
+·uplink ARP-REQUEST：上行ARP-REQUEST报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[uplink ]{lang="EN-US"}[ARP]{lang="EN-US"}]{#struct_0_x5898_17832_1121822719}[-REQUEST]{lang="EN-US"}[：上行]{style="font-family:宋体"}[ARP]{lang="EN-US"}[-REQUEST]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·uplink ARP-REPLY：上行ARP-REPLY报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[uplink ]{lang="EN-US"}[ARP-REPLY]{lang="EN-US"}]{#struct_0_x5898_17832_x1807868915}[：上行]{style="font-family:宋体"}[ARP-REPLY]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·uplink DHCP-DECLINE：上行DHCP-DECLINE报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[uplink ]{lang="EN-US"}[DHCP-DECLINE]{lang="EN-US"}]{#struct_0_x5898_17832_x1999182250}[：]{lang="EN-US" style="font-family:宋体"}[上行]{style="font-family:宋体"}[DHCP-DECLINE]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·uplink DHCP-RELEASE：上行DHCP-RELEASE报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[uplink ]{lang="EN-US"}[DHCP-RELEASE]{lang="EN-US"}]{#struct_0_x5898_17832_x1970084255}[：]{lang="EN-US" style="font-family:宋体"}[上行]{style="font-family:宋体"}[DHCP-RELEASE]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+·downlink DHCP-ACK：下行DHCP-ACK报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[downlink DHCP]{lang="EN-US"}[-ACK]{lang="EN-US"}]{#struct_0_x5898_17832_x171805660}[：]{lang="EN-US" style="font-family:宋体"}[下行]{style="font-family:宋体"}[DHCP-ACK]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+·uplink ND-NS：上行ND-NS报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[uplink]{lang="EN-US"}[ ND]{lang="EN-US"}]{#struct_0_x5898_17832_x299867950}[-NS]{lang="EN-US"}[：上行]{style="font-family:宋体"}[ND-NS]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·uplink ND-NA：上行ND-NA报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[uplink ND-NA]{lang="EN-US"}]{#struct_0_x5898_17832_x1319265473}[：上行]{style="font-family:宋体"}[ND-NA]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·uplink DHCP6-DECLINE：上行DHCP6-DECLINE报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[uplink DHCP6-DECLINE]{lang="EN-US"}]{#struct_0_x5898_17832_1597845940}[：上行]{style="font-family:宋体"}[DHCP6-DECLINE]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·uplink DHCP6-RELEASE：上行DHCP6-RELEASE报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[uplink DHCP6-RELEASE]{lang="EN-US"}]{#struct_0_x5898_17832_x1094077063}[：上行]{style="font-family:宋体"}[DHCP6-RELEASE]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·downlink unicast ND-RA：下行单播ND-RA报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[downlink unicast ND-RA]{lang="EN-US"}]{#struct_0_x5898_17832_1148599061}[：下行单播]{style="font-family:宋体"}[ND-RA]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·downlink DHCP6-REPLY：下行DHCP6-REPLY报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[downlink ]{lang="EN-US"}[DHCP6-REPLY]{lang="EN-US"}]{#struct_0_x5898_17832_x1152033632}[：下行]{style="font-family:宋体"}[DHCP6-REPLY]{lang="EN-US"}[报文]{style="font-family:宋体"}
+Captured a downlink broadcast ND-RA packet in BSS *BSSID*.
 
-[[Captured a downlink broadcast ND-RA packet in BSS *BSSID*.]{lang="EN-US"}]{#struct_0_x5898_17832_x1262742746}
+BSS*BSSID* 拦截到下行广播ND-RA报文
 
-[[BSS\[*BSSID*\] ]{lang="EN-US"}]{#struct_0_x5898_17832_1484658713}[拦截到下行广播]{style="font-family:宋体"}[ND-RA]{lang="EN-US"}[报文]{style="font-family:宋体"}
+Added the source *Source* for IPv4 address *IPv4Addr*.
 
-[[Added the source *Source* for IPv4 address *IPv4Addr*.]{lang="EN-US"}]{#struct_0_x5898_17832_335467095}
+添加IPv4地址*IPv4Addr*的来源*Source*成功
 
-[[添加]{style="font-family:宋体"}[IPv4]{lang="EN-US"}]{#struct_0_x5898_17832_x1737889601}[地址]{style="font-family:宋体"}*[IPv4Addr]{lang="EN-US"}*[的来源]{style="font-family:宋体"}*[Source]{lang="EN-US"}*[成功]{style="font-family:宋体"}
+*[Source*]取值如下：
 
-[*[Source]{lang="EN-US"}*]{#struct_0_x5898_17832_x1380120524}[取值如下：]{style="font-family:宋体"}
+·ARP：ARP方式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ARP]{lang="EN-US"}]{#struct_0_x5898_17832_12621661}[：]{style="font-family:宋体"}[ARP]{lang="EN-US"}[方式]{style="font-family:宋体"}
+·DHCP：DHCP方式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DHCP]{lang="EN-US"}]{#struct_0_x5898_17832_524210}[：]{style="font-family:宋体"}[DHCP]{lang="EN-US"}[方式]{style="font-family:宋体"}
+Updated IPv4 address *IPv4Addr* successfully. Changed source from ARP to DHCP.
 
-[[Updated IPv4 address *IPv4Addr* successfully. Changed source from ARP to DHCP.]{lang="EN-US"}]{#struct_0_x5898_17832_665574392}
+更新IPv4地址*IPv4Addr*成功，学习方式由ARP改为DHCP
 
-[[更新]{style="font-family:宋体"}[IPv4]{lang="EN-US"}]{#struct_0_x5898_17832_1920968885}[地址]{style="font-family:宋体"}*[IPv4Addr]{lang="EN-US"}*[成功，学习方式由]{style="font-family:宋体"}[ARP]{lang="EN-US"}[改为]{style="font-family:宋体"}[DHCP]{lang="EN-US"}
+Failed to add IPv4 address *IPv4Addr*: The address already existed.
 
-[[Failed to add IPv4 address *IPv4Addr*: The address already existed.]{lang="EN-US"}]{#struct_0_x5898_17832_x1719216231}
+添加IPv4地址*IPv4Addr*失败，由于地址已存在
 
-[[添加]{style="font-family:宋体"}[IPv4]{lang="EN-US"}]{#struct_0_x5898_17832_x1843429923}[地址]{style="font-family:宋体"}*[IPv4Addr]{lang="EN-US"}*[失败，由于地址已存在]{style="font-family:宋体"}
+Deleted IPv4 address *IPv4Addr*.
 
-[[Deleted IPv4 address *IPv4Addr*.]{lang="EN-US"}]{#struct_0_x5898_17832_184490236}
+删除IPv4地址*IPv4Addr*成功
 
-[[删除]{style="font-family:宋体"}[IPv4]{lang="EN-US"}]{#struct_0_x5898_17832_717576571}[地址]{style="font-family:宋体"}*[IPv4Addr]{lang="EN-US"}*[成功]{style="font-family:宋体"}
+Failed to delete IPv4 address *IPv4Addr*: The address didn\'t exist.
 
-[[Failed to delete IPv4 address *IPv4Addr*: The address didn\'t exist. ]{lang="EN-US"}]{#struct_0_x5898_17832_x581076850}
+删除IPv4地址失败，由于地址不存在
 
-[[删除]{style="font-family:宋体"}[IPv4]{lang="EN-US"}]{#struct_0_x5898_17832_1937583416}[地址失败，由于地址不存在]{style="font-family:宋体"}
+Added the source *Source* for IPv6 address *IPv6Addr*.
 
-[[Added the source *Source* for IPv6 address *IPv6Addr*.]{lang="EN-US"}]{#struct_0_x5898_17832_35883284}
+添加IPv6地址*IPv6Addr*来源*Source*成功
 
-[[添加]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_x5898_17832_1871954586}[地址]{style="font-family:宋体"}*[IPv6Addr]{lang="EN-US"}*[来源]{style="font-family:宋体"}*[Source]{lang="EN-US"}*[成功]{style="font-family:宋体"}
+*[Source*]取值如下：
 
-[*[Source]{lang="EN-US"}*]{#struct_0_x5898_17832_411371092}[取值如下：]{style="font-family:宋体"}
+·DHCPv6：DHCPv6方式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DHCPv6]{lang="EN-US"}]{#struct_0_x5898_17832_x1381593705}[：]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[方式]{style="font-family:宋体"}
+·ND：ND方式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ND]{lang="EN-US"}]{#struct_0_x5898_17832_x803353358}[：]{style="font-family:宋体"}[ND]{lang="EN-US"}[方式]{style="font-family:宋体"}
+Updated IPv6 address *IPv6Addr* successfully. Changed source from ND to DHCPv6.
 
-[[Updated IPv6 address *IPv6Addr* successfully. Changed source from ND to DHCPv6.]{lang="EN-US"}]{#struct_0_x5898_17832_x154895253}
+更新IPv6地址*IPv6Addr*成功，来源由ND改为DHCPv6
 
-[[更新]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_x5898_17832_x645813247}[地址]{style="font-family:宋体"}*[IPv6Addr]{lang="EN-US"}*[成功，来源由]{style="font-family:宋体"}[ND]{lang="EN-US"}[改为]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}
+Failed to add the source *Source* for IPv6 address *IPv6Addr*: The source already existed.
 
-[[Failed to add the source *Source* for IPv6 address *IPv6Addr*: The source already existed.]{lang="EN-US"}]{#struct_0_x5898_17832_1727307058}
+要添加的IPv6地址*IPv6Addr*来源*Source*已经存在
 
-[[要添加的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_x5898_17832_1688190826}[地址]{style="font-family:宋体"}*[IPv6Addr]{lang="EN-US"}*[来源]{style="font-family:宋体"}*[Source]{lang="EN-US"}*[已经存在]{style="font-family:宋体"}
+*[Source*]取值如下：
 
-[*[Source]{lang="EN-US"}*]{#struct_0_x5898_17832_198735700}[取值如下：]{style="font-family:宋体"}
+·DHCPv6：DHCPv6方式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DHCPv6]{lang="EN-US"}]{#struct_0_x5898_17832_1347289650}[：]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[方式]{style="font-family:宋体"}
+·ND：ND方式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ND]{lang="EN-US"}]{#struct_0_x5898_17832_2045533582}[：]{style="font-family:宋体"}[ND]{lang="EN-US"}[方式]{style="font-family:宋体"}
+Deleted IPv6 address *IPv6Addr*.
 
-[[Deleted IPv6 address *IPv6Addr*.]{lang="EN-US"}]{#struct_0_x5898_17832_195085013}
+删除IPv6地址*IPv6Addr*成功
 
-[[删除]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_x5898_17832_x1484446710}[地址]{style="font-family:宋体"}*[IPv6Addr]{lang="EN-US"}*[成功]{style="font-family:宋体"}
+Failed to delete IPv6 address *IPv6Addr*: The address didn\'t exist.
 
-[[Failed to delete IPv6 address *IPv6Addr*: The address didn\'t exist. ]{lang="EN-US"}]{#struct_0_x5898_17832_x1472881640}
+要删除的IPv6地址*IPv6Addr*不存在
 
-[[要删除的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_x5898_17832_704522730}[地址]{style="font-family:宋体"}*[IPv6Addr]{lang="EN-US"}*[不存在]{style="font-family:宋体"}
+Added the source *Source* for IPv6 prefix *IPv6Addr* whose length is *length*.
 
-[[Added the source *Source* for IPv6 prefix *IPv6Addr* whose length is *length*.]{lang="EN-US"}]{#struct_0_x5898_17832_1781129991}
+添加IPv6前缀*IPv6Addr*前缀长度*length*来源*Source*成功
 
-[[添加]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_x5898_17832_x218794291}[前缀]{style="font-family:宋体"}*[IPv6Addr]{lang="EN-US"}*[前缀长度]{style="font-family:宋体"}*[length]{lang="EN-US"}*[来源]{style="font-family:宋体"}*[Source]{lang="EN-US"}*[成功]{style="font-family:宋体"}
+Failed to add IPv6 prefix *IPv6Addr* whose length is *length*: The prefix already exists.
 
-[[Failed to add IPv6 prefix *IPv6Addr* whose length is *length*: The prefix already exists.]{lang="EN-US"}]{#struct_0_x5898_17832_x353786571}
+添加IPv6前缀*IPv6Addr*前缀长度*length*失败：已存在
 
-[[添加]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_x5898_17832_108476169}[前缀]{style="font-family:宋体"}*[IPv6Addr]{lang="EN-US"}*[前缀长度]{style="font-family:宋体"}*[length]{lang="EN-US"}*[失败：已存在]{style="font-family:宋体"}
+Sent *MessageType *message to the uplink device.
 
-[[Sent ]{lang="EN-US"}]{#struct_0_x5898_17832_1344465829}*[MessageType ]{lang="EN-US"}*[message to the uplink device.]{lang="EN-US"}
+发送*MessageType*消息到上行设备成功
 
-[[发送]{style="font-family:宋体"}]{#struct_0_x5898_17832_x2049251965}*[MessageType]{lang="EN-US"}*[消息到上行设备成功]{style="font-family:宋体"}
+*[MessageType *]取值如下：
 
-[*[MessageType ]{lang="EN-US"}*]{#struct_0_x5898_17832_x1341180753}[取值如下：]{style="font-family:宋体"}
+·IPv4 entry：IPv4表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IPv4 entry]{lang="EN-US"}]{#struct_0_x5898_17832_x1784878232}[：]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[表项]{style="font-family:宋体"}
+·IPv6 entry：IPv6表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IPv]{lang="EN-US"}]{#struct_0_x5898_17832_1610381263}[6]{lang="EN-US"}[ entry]{lang="EN-US"}[：]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[表项]{style="font-family:宋体"}
+·IPv6 prefix entry：IPv6前缀选项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IPv6 prefix entry]{lang="EN-US"}]{#struct_0_x5898_17832_1490522286}[：]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[前缀选项]{style="font-family:宋体"}
+Sent WSNP data for roaming clients to AP: Data length=*DataLen*.
 
-[[Sent WSNP data for roaming clients to AP: Data length=*DataLen*.]{lang="EN-US"}]{#struct_0_x5898_17832_1477668572}
+发送漫游用户迁移WSNP数据(长度：*DataLen*)给AP成功
 
-[[发送漫游用户迁移]{style="font-family:宋体"}]{#struct_0_x5898_17832_2053279718}[WSNP]{lang="EN-US"}[数据]{style="font-family:宋体"}[(]{lang="EN-US"}[长度：]{style="font-family:宋体"}*[DataLen]{lang="EN-US"}*[)]{lang="EN-US"}[给]{style="font-family:宋体"}[AP]{lang="EN-US"}[成功]{style="font-family:宋体"}
+Sent *MessageType *message to HA.
 
-[[Sent ]{lang="EN-US"}]{#struct_0_x5898_17832_944005123}*[MessageType ]{lang="EN-US"}*[message to HA.]{lang="EN-US"}
+发送*MessageType*消息到HA成功
 
-[[发送]{style="font-family:宋体"}]{#struct_0_x5898_17832_958649850}*[MessageType]{lang="EN-US"}*[消息到]{style="font-family:宋体"}[HA]{lang="EN-US"}[成功]{style="font-family:宋体"}
+*[MessageType*]取值如下：
 
-[*[MessageType]{lang="EN-US"}*]{#struct_0_x5898_17832_746385341}[取值如下：]{lang="EN-US" style="font-family:
-  宋体"}
+·IPv4 entry：IPv4表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IPv4 ]{lang="EN-US"}]{#struct_0_x5898_17832_x257058530}[entry]{lang="EN-US"}[：]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[表项]{style="font-family:宋体"}
+·IPv6 entry：IPv6表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IPv6 ]{lang="EN-US"}]{#struct_0_x5898_17832_x1119316354}[entry]{lang="EN-US"}[：]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[表项]{style="font-family:宋体"}
+·IPv6 Prefix：IPv6前缀表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IPv6 Prefix]{lang="EN-US"}]{#struct_0_x5898_17832_x622078818}[：]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[前缀表项]{style="font-family:宋体"}
+Received *MessageType* message: APID=*APID*, CMD=*CMD*, length=*Length*.
 
-[[Received *MessageType* message: APID=*APID*, CMD=*CMD*, length=*Length*.]{lang="EN-US"}]{#struct_0_x5898_17832_2144052556}
+接收到*MessageType*消息，APID=*APID*, CMD=*CMD*, length=*Length*.
 
-[[接收到]{style="font-family:宋体"}*[MessageType]{lang="EN-US"}*]{#struct_0_x5898_17832_1141067300}[消息，]{style="font-family:宋体"}[APID=*APID*, CMD=*CMD*, length=*Length*.]{lang="EN-US"}
+*[MessageType *]取值如下：
 
-[*[MessageType ]{lang="EN-US"}*]{#struct_0_x5898_17832_1038941391}[取值如下：]{style="font-family:宋体"}
+·an up entry：上行表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[an up entry]{lang="EN-US"}]{#struct_0_x5898_17832_1096327010}[：上行表项]{style="font-family:宋体"}
+·a down entry：下行表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[a down entry]{lang="EN-US"}]{#struct_0_x5898_17832_2106804537}[：下行表项]{style="font-family:宋体"}
+Received a fake entry from FA: Entry length=*Length*.
 
-[[Received a fake entry from FA: Entry length=*Length*.]{lang="EN-US"}]{#struct_0_x5898_17832_1182263504}
+接收到来自FA的fake表项（表项长度= *Length*)
 
-[[接收到来自]{style="font-family:宋体"}[FA]{lang="EN-US"}]{#struct_0_x5898_17832_907805465}[的]{style="font-family:宋体"}[fake]{lang="EN-US"}[表项（表项长度]{style="font-family:宋体"}[= *Length*)]{lang="EN-US"}
+Processed IP entry from FA successfully.
 
-[[Processed IP entry from FA successfully.]{lang="EN-US"}]{#struct_0_x5898_17832_x1813043970}
+处理来自FA的IP表项成功
 
-[[处理来自]{style="font-family:宋体"}[FA]{lang="EN-US"}]{#struct_0_x5898_17832_x171740124}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[表项成功]{style="font-family:宋体"}
+Got WSNP data for intra-AC roaming clients.
 
-[[Got WSNP data for intra-AC roaming clients.]{lang="EN-US"}]{#struct_0_x5898_17832_x1861811548}
+获取AC内漫游用户迁移WSNP数据成功
 
-[[获取]{style="font-family:宋体"}[AC]{lang="EN-US"}]{#struct_0_x5898_17832_x2040083021}[内漫游用户迁移]{style="font-family:宋体"}[WSNP]{lang="EN-US"}[数据成功]{style="font-family:宋体"}
+Got WSNP data for inter-AC roaming clients.
 
-[[Got WSNP data for inter-AC roaming clients.]{lang="EN-US"}]{#struct_0_x5898_17832_750479596}
+获取AC间漫游用户迁移WSNP数据成功
 
-[[获取]{style="font-family:宋体"}]{#struct_0_x5898_17832_1041060003}[AC]{lang="EN-US"}[间漫游用户迁移]{style="font-family:宋体"}[WSNP]{lang="EN-US"}[数据成功]{style="font-family:宋体"}
+Recovered WSNP data for roaming clients: Data length=*DataLen*.
 
-[[Recovered WSNP data for roaming clients: Data length=*DataLen*.]{lang="EN-US"}]{#struct_0_x5898_17832_x1737824065}
+恢复漫游用户迁移WANP数据成功，数据长度= *DataLen*
 
-[[恢复漫游用户迁移]{style="font-family:宋体"}[WANP]{lang="EN-US"}]{#struct_0_x5898_17832_1732150680}[数据成功，数据长度]{style="font-family:宋体"}[= *DataLen*]{lang="EN-US"}
+Initialized WSNP data in fake STA successfully.
 
-[[Initialized WSNP data in fake STA successfully.]{lang="EN-US"}]{#struct_0_x5898_17832_x289270541}
+初始化fake STA结构中的WSNP数据成功
 
-[[初始化]{style="font-family:宋体"}[fake STA]{lang="EN-US"}]{#struct_0_x5898_17832_941835332}[结构中的]{style="font-family:宋体"}[WSNP]{lang="EN-US"}[数据成功]{style="font-family:宋体"}
+Destroyed WSNP data in fake STA.
 
-[[Destroyed WSNP data in fake STA.]{lang="EN-US"}]{#struct_0_x5898_17832_184555772}
+销毁fake STA结构中的WSNP数据成功
 
-[[销毁]{style="font-family:宋体"}[fake STA]{lang="EN-US"}]{#struct_0_x5898_17832_x1249575894}[结构中的]{style="font-family:宋体"}[WSNP]{lang="EN-US"}[数据成功]{style="font-family:宋体"}
+Deleted WSNP information in the client.
 
-[[Deleted WSNP information in the client.]{lang="EN-US"}]{#struct_0_x5898_17832_x632751601}
+删除WSNP信息成功
 
-[[删除]{style="font-family:宋体"}[WSNP]{lang="EN-US"}]{#struct_0_x5898_17832_1506176538}[信息成功]{style="font-family:宋体"}
+Initialized WSNP information in the client successfully.
 
-[[Initialized WSNP information in the client successfully.]{lang="EN-US"}]{#struct_0_x5898_17832_x1381528169}
+初始化WSNP信息成功
 
-[[初始化]{style="font-family:宋体"}[WSNP]{lang="EN-US"}]{#struct_0_x5898_17832_x1020357349}[信息成功]{style="font-family:宋体"}
+【举例】
 
-[ ]{lang="EN-US"}
+\# MAC地址为0023-8933-216b 静态IP地址为10.1.3.22的客户端成功上线后，其所在BSS的BSSID为000f-e212-ff01，在AC和AP端打开wlan wsnp event开关，客户端成功上线后，AP上会有如下调试信息：
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5898_17832_219659290}
+\<H3C\>debugging wlan wsnp event
 
-[[\# MAC]{lang="EN-US"}]{#struct_0_x5898_17832_x764779751}[地址为]{style="font-family:宋体"}[0023-8933-216b ]{lang="EN-US"}[静态]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[10.1.3.22]{lang="EN-US"}[的客户端成功上线后，其所在]{style="font-family:宋体"}[BSS]{lang="EN-US"}[的]{style="font-family:宋体"}[BSSID]{lang="EN-US"}[为]{style="font-family:宋体"}[000f-e212-ff01]{lang="EN-US"}[，在]{style="font-family:宋体"}[AC]{lang="EN-US"}[和]{style="font-family:宋体"}[AP]{lang="EN-US"}[端打开]{style="font-family:宋体"}[wlan wsnp event]{lang="EN-US"}[开关，客户端成功上线后，]{style="font-family:宋体"}[AP]{lang="EN-US"}[上会有如下调试信息：]{style="font-family:宋体"}
+\*Sep 10 12:15:25:120 2014 H3C STAMGR/7/Event: Captured an uplink ARP-REQUEST packet.
 
-[[\<H3C\>debugging wlan wsnp event]{lang="EN-US"}]{#struct_0_x5898_17832_x713494228}
+*[//*]*抓到上行ARP-REQUEST报文。*
 
-[\*Sep 10 12:15:25:120 2014 H3C STAMGR/7/Event: Captured an uplink ARP-REQUEST packet.]{lang="EN-US"}
+\*Sep 10 12:15:28:120 2014 H3C STAMGR/7/Event: MAC: 0023-8933-216b, BSSID: 000f-
 
-[*[//]{lang="EN-US"}*]{#struct_0_x5898_17832_x1168988918}*[抓到上行]{style="font-family:宋体"}[ARP-REQUEST]{lang="EN-US"}[报文。]{style="font-family:宋体"}*
+e212-ff01Added the IPv4 address10.1.3.22 methodARP.
 
-[[\*Sep 10 12:15:28:120 2014 H3C STAMGR/7/Event: \[MAC: 0023-8933-216b, BSSID: 000f-]{lang="EN-US"}]{#struct_0_x5898_17832_x1563707564}
+*[//*]*添加IP地址10.1.3.22学习方式ARP成功。*
 
-[e212-ff01\]Added the IPv4 address\[10.1.3.22\] method\[ARP\].]{lang="EN-US"}
+AC上会有如下调试信息
 
-[*[//]{lang="EN-US"}*]{#struct_0_x5898_17832_x1201861819}*[添加]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[\[10.1.3.22\]]{lang="EN-US"}[学习方式]{style="font-family:宋体"}[\[ARP\]]{lang="EN-US"}[成功。]{style="font-family:宋体"}*
+\*Sep 10 12:15:28:818 2014 H3C STAMGR/7/Event: Received an up entry, APID=2, CMD=
 
-[[AC]{lang="EN-US"}]{#struct_0_x5898_17832_945736965}[上会有如下调试信息]{style="font-family:宋体"}
+318767106, length=17.
 
-[[\*Sep 10 12:15:28:818 2014 H3C STAMGR/7/Event: Received an up entry, APID=2, CMD=]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x5898_17832_x2022739082}
+*[//*]*接收到上行表项消息。*
 
-[[318767106, length=17.]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}[ ]{lang="EN-US"}]{#struct_0_x5898_17832_722052588}
+\*Sep 10 12:15:28:819 2014 H3C STAMGR/7/Event: MAC: 0023-8933-216b, BSSID: 000f-
 
-[*[//]{lang="EN-US"}*]{#struct_0_x5898_17832_x2095399954}*[接收到上行表项消息。]{style="font-family:宋体"}*
+e212-ff01Added the IPv4 address10.1.3.22 methodARP.
 
-[[\*Sep 10 12:15:28:819 2014 H3C STAMGR/7/Event: \[MAC: 0023-8933-216b, BSSID: 000f-]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x5898_17832_1347355186}
+*[//*]*添加IP地址10.1.3.22学习方式ARP成功。*
 
-[[e212-ff01\]Added the IPv4 address\[10.1.3.22\] method\[ARP\]. ]{lang="EN-US"}]{#struct_0_x5898_17832_x1808210400}
+\# MAC地址为0023-8933-216b 静态IP地址为10.1.3.22的客户端成功上线后，其所在BSS的BSSID为000f-e212-ff01，在AC和AP端打开wlan wsnp error开关，STA成功上线后，AP上会有如下调试信息：
 
-[*[//]{lang="EN-US"}*]{#struct_0_x5898_17832_x702939402}*[添加]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[\[10.1.3.22\]]{lang="EN-US"}[学习方式]{style="font-family:宋体"}[\[ARP\]]{lang="EN-US"}[成功。]{style="font-family:宋体"}*
+\<H3C\> debugging wlan wsnp error
 
-[[\# MAC]{lang="EN-US"}]{#struct_0_x5898_17832_1394215737}[地址为]{style="font-family:宋体"}[0023-8933-216b ]{lang="EN-US"}[静态]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[10.1.3.22]{lang="EN-US"}[的客户端成功上线后，其所在]{style="font-family:宋体"}[BSS]{lang="EN-US"}[的]{style="font-family:宋体"}[BSSID]{lang="EN-US"}[为]{style="font-family:宋体"}[000f-e212-ff01]{lang="EN-US"}[，在]{style="font-family:宋体"}[AC]{lang="EN-US"}[和]{style="font-family:宋体"}[AP]{lang="EN-US"}[端打开]{style="font-family:宋体"}[wlan wsnp error]{lang="EN-US"}[开关，]{style="font-family:宋体"}[STA]{lang="EN-US"}[成功上线后，]{style="font-family:宋体"}[AP]{lang="EN-US"}[上会有如下调试信息：]{style="font-family:宋体"}
+\*Sep 10 12:15:25:121 2014 H3C STAMGR/7/Error: [MAC: 0023-8933-216b, BSSID: 000f-
 
-[[\<H3C\> debugging wlan wsnp error]{lang="EN-US"}]{#struct_0_x5898_17832_1511700157}
+e212-ff01Discard packet]：Invalid IPv4 address[0.0.0.0.]
 
-[\*Sep 10 12:15:25:121 2014 H3C STAMGR/7/Error: \[MAC: 0023-8933-216b, BSSID: 000f-]{lang="EN-US"}
-
-[e212-ff01\]Discard packet]{lang="EN-US"}[：]{style="font-family:宋体"}[Invalid IPv4 address\[0.0.0.0\].]{lang="EN-US"}
-
-[*[//]{lang="EN-US"}*]{#struct_0_x5898_17832_x1291713346}*[丢弃报文：无效的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址]{style="font-family:宋体"}[\[0.0.0.0\]]{lang="EN-US"}*
+*[//*]*丢弃报文：无效的IPv4地址0.0.0.0*

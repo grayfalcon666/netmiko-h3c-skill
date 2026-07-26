@@ -1,940 +1,890 @@
-::: {#674388250 .myid}
-[]{#_Toc404796569}[]{#struct_0_x2158_x2842_398591496}[]{#_Toc131060009}
 
 **NTP \-- NTP调试命令 \-- debugging ntp-service**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2158_x2842_2072592443}
+【命令】
 
-[**[debugging ntp-service ]{lang="EN-US"}**[{ **acl** \| **adjustment** \| **all** \| **authentication** \| **event** \| **filter** \| **packet** \| **parameter** \| **refclock** \| **selection** \| **synchronization** \| **validity** }]{lang="EN-US"}]{#struct_0_x2158_x2842_213080437}
+**[debugging ntp-service **[{ **acl** \| **adjustment** \| **all** \| **authentication** \| **event** \| **filter** \| **packet** \| **parameter** \| **refclock** \| **selection** \| **synchronization** \| **validity** }]]
 
-[**[undo debugging ntp-service ]{lang="EN-US"}**[{ **acl** \| **adjustment** \| **all** \| **authentication** \| **event** \| **filter** \| **packet** \| **parameter** \| **refclock** \| **selection** \| **synchronization** \| **validity** }]{lang="EN-US"}]{#struct_0_x2158_x2842_x106023635}
+**[undo debugging ntp-service **[{ **acl** \| **adjustment** \| **all** \| **authentication** \| **event** \| **filter** \| **packet** \| **parameter** \| **refclock** \| **selection** \| **synchronization** \| **validity** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2158_x2842_x1529644060}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x2158_x2842_x410409709}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2158_x2842_x707525926}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2158_x2842_349911115}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2158_x2842_144169846}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x2158_x2842_x1038292890}
+【参数】
 
-[**[acl]{lang="EN-US"}**]{#struct_0_x2158_x2842_1819282866}[：表示]{style="font-family:宋体"}[NTP]{lang="EN-US"}[访问控制调试信息开关。]{style="font-family:宋体"}
+**[acl**]：表示NTP访问控制调试信息开关。
 
-[**[adjustment]{lang="EN-US"}**]{#struct_0_x2158_x2842_213145973}[：表示]{style="font-family:宋体"}[NTP]{lang="EN-US"}[时钟调节调试信息开关。]{style="font-family:宋体"}
+**[adjustment**]：表示NTP时钟调节调试信息开关。
 
-[**[all]{lang="EN-US"}**]{#struct_0_x2158_x2842_237779294}[：表示]{style="font-family:宋体"}[NTP]{lang="EN-US"}[的所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示NTP的所有调试信息开关。
 
-[**[authentication]{lang="EN-US"}**]{#struct_0_x2158_x2842_1477251489}[：表示]{style="font-family:宋体"}[NTP]{lang="EN-US"}[身份验证调试信息开关。]{style="font-family:宋体"}
+**[authentication**]：表示NTP身份验证调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_x2158_x2842_2020982950}[：表示]{style="font-family:宋体"}[NTP]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示NTP事件调试信息开关。
 
-[**[filter]{lang="EN-US"}**]{#struct_0_x2158_x2842_1127026503}[：表示]{style="font-family:宋体"}[NTP]{lang="EN-US"}[时钟过滤调试信息开关。]{style="font-family:宋体"}
+**[filter**]：表示NTP时钟过滤调试信息开关。
 
-[**[packet]{lang="EN-US"}**]{#struct_0_x2158_x2842_583158442}[：表示]{style="font-family:宋体"}[NTP]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}
+**[packet**]：表示NTP报文调试信息开关。
 
-[**[parameter]{lang="EN-US"}**]{#struct_0_x2158_x2842_x1314180594}[：表示]{style="font-family:宋体"}[NTP]{lang="EN-US"}[时钟参数调试信息开关。]{style="font-family:宋体"}
+**[parameter**]：表示NTP时钟参数调试信息开关。
 
-[**[refclock]{lang="EN-US"}**]{#struct_0_x2158_x2842_244875851}[：表示]{style="font-family:宋体"}[NTP]{lang="EN-US"}[参考时钟调试信息开关。]{style="font-family:宋体"}
+**[refclock**]：表示NTP参考时钟调试信息开关。
 
-[**[selection]{lang="EN-US"}**]{#struct_0_x2158_x2842_1943723021}[：表示]{style="font-family:宋体"}[NTP]{lang="EN-US"}[时钟选择调试信息开关。]{style="font-family:宋体"}
+**[selection**]：表示NTP时钟选择调试信息开关。
 
-[**[synchronization]{lang="EN-US"}**]{#struct_0_x2158_x2842_1797836508}[：表示]{style="font-family:宋体"}[NTP]{lang="EN-US"}[时间同步调试信息开关。]{style="font-family:宋体"}
+**[synchronization**]：表示NTP时间同步调试信息开关。
 
-[**[validity]{lang="EN-US"}**]{#struct_0_x2158_x2842_212556150}[：表示]{style="font-family:宋体"}[NTP]{lang="EN-US"}[远程主机的身份验证调试信息开关。]{style="font-family:宋体"}
+**[validity**]：表示NTP远程主机的身份验证调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_x2158_x2842_1429445661}
+【描述】
 
-[**[debugging ntp-service]{lang="EN-US"}**]{#struct_0_x2158_x2842_1101714825}[命令用来打开]{style="font-family:宋体"}[NTP]{lang="EN-US"}[的调试信息开关。]{style="font-family:宋体"}
+**[debugging ntp-service**]命令用来打开NTP的调试信息开关。
 
-[**[undo debugging ntp-service]{lang="EN-US"}**]{#struct_0_x2158_x2842_818869751}[命令用来关闭]{style="font-family:
-宋体"}[NTP]{lang="EN-US"}[的调试信息开关。]{style="font-family:宋体"}
+**[undo debugging ntp-service**]命令用来关闭NTP的调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[NTP]{lang="EN-US"}]{#struct_0_x2158_x2842_53538443}[调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，NTP调试信息开关处于关闭状态。
 
-[[表1-1 ]{lang="EN-US"}[debugging ntp-service acl]{lang="EN-US"}]{#struct_0_x2158_x2842_81150556}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging ntp-service acl命令输出信息描述表
 
-[]{#table_struct_0_x520701697}[[字段]{style="font-family:黑体"}]{#struct_0_x2158_x2842_x1882303486}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x2158_x2842_254554975}
+描述
 
-[[Access restrict: *right*.]{lang="EN-US"}]{#struct_0_x2158_x2842_212621686}
+Access restrict: *right*.
 
-[[对端设备对本地]{style="font-family:宋体"}[NTP]{lang="EN-US"}]{#struct_0_x2158_x2842_1363295713}[服务的访问控制权限，]{style="font-family:宋体"}*[right]{lang="EN-US"}*[取值包括：]{style="font-family:宋体"}
+对端设备对本地NTP服务的访问控制权限，*right*取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x0000]{lang="EN-US"}]{#struct_0_x2158_x2842_x1911710956}[：表示拒绝访问]{lang="EN-US" style="font-family:宋体"}
+·0x0000：表示拒绝访问
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x0001]{lang="EN-US"}]{#struct_0_x2158_x2842_x1415246501}[：表示具有]{style="font-family:宋体"}**[query]{lang="EN-US"}**[权限，只允许对本地]{style="font-family:宋体"}[NTP]{lang="EN-US"}[服务进行控制查询]{style="font-family:宋体"}
+·0x0001：表示具有**query**权限，只允许对本地NTP服务进行控制查询
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x0002]{lang="EN-US"}]{#struct_0_x2158_x2842_670705502}[：表示具有]{style="font-family:宋体"}**[synchronization]{lang="EN-US"}**[权限，只允许对端设备与本地设备的时间同步，但不能进行控制查询]{style="font-family:宋体"}
+·0x0002：表示具有**synchronization**权限，只允许对端设备与本地设备的时间同步，但不能进行控制查询
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x0004]{lang="EN-US"}]{#struct_0_x2158_x2842_1149455721}[：表示具有]{style="font-family:宋体"}**[server]{lang="EN-US"}**[权限，可以对本地]{style="font-family:宋体"}[NTP]{lang="EN-US"}[服务进行时间请求和控制查询，但本地时间不会与对端设备同步]{style="font-family:宋体"}
+·0x0004：表示具有**server**权限，可以对本地NTP服务进行时间请求和控制查询，但本地时间不会与对端设备同步
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x0008]{lang="EN-US"}]{#struct_0_x2158_x2842_212687222}[：表示具有]{style="font-family:宋体"}**[peer]{lang="EN-US"}**[权限，既可以对本地]{style="font-family:宋体"}[NTP]{lang="EN-US"}[服务进行时间请求和控制查询，本地时间又可以与对端设备同步]{style="font-family:宋体"}
+·0x0008：表示具有**peer**权限，既可以对本地NTP服务进行时间请求和控制查询，本地时间又可以与对端设备同步
 
-[ ]{lang="EN-US"}
+表1-2 debugging ntp-service adjustment命令输出信息描述表
 
-[[表1-2 ]{lang="EN-US"}[debugging ntp-service adjustment]{lang="EN-US"}]{#struct_0_x2158_x2842_1301286799}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x521729948}[[字段]{style="font-family:黑体"}]{#struct_0_x2158_x2842_x1688859303}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x2158_x2842_x170597294}
+System huff size *size* min delay *delay1* huffpuff *delay2*
 
-[[System huff size *size* min delay *delay1* huffpuff *delay2*]{lang="EN-US"}]{#struct_0_x2158_x2842_55527792}
+huff-n\'-puff滤波器的阶数为*size*，最小延迟为*delay1*，过滤后的时延为*delay2*
 
-[[huff-n\'-puff]{lang="EN-US"}]{#struct_0_x2158_x2842_x1945811692}[滤波器的阶数为]{style="font-family:宋体"}*[size]{lang="EN-US"}*[，最小延迟为]{style="font-family:宋体"}*[delay1]{lang="EN-US"}*[，过滤后的时延为]{style="font-family:宋体"}*[delay2]{lang="EN-US"}*
+Adjust local clock
 
-[[Adjust local clock]{lang="EN-US"}]{#struct_0_x2158_x2842_212752758}
+调整本地时钟
 
-[[调整本地时钟]{style="font-family:宋体"}]{#struct_0_x2158_x2842_x986271009}
+offset: *string*
 
-[[offset: *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_1530902755}
+时钟偏移为*string*
 
-[[时钟偏移为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_x1959789268}
+jitter: *string*
 
-[[jitter: *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_x220725292}
+时钟偏移均方根为*string*
 
-[[时钟偏移均方根为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_x945380429}
+freq: *string*
 
-[[freq: *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_212294006}
+时钟频率为*string*
 
-[[时钟频率为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_x781572592}
+stab: *string*
 
-[[stab: *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_x2128454757}
+频率稳定度为*string*
 
-[[频率稳定度为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_x568578713}
+poll: *string*
 
-[[poll: *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_355564619}
+轮询间隔为*string*
 
-[[轮询间隔为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_x508403417}
+Reset clock state
 
-[[Reset clock state]{lang="EN-US"}]{#struct_0_x2158_x2842_212359542}
+重置时钟状态
 
-[[重置时钟状态]{style="font-family:宋体"}]{#struct_0_x2158_x2842_1159580079}
+time count difference: *string*
 
-[[time count difference: *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_x2142165911}
+时间计数差为*string*
 
-[[时间计数差为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_2035886868}
+state *state1*-\> *state2*
 
-[[state *state1*-\> *state2*]{lang="EN-US"}]{#struct_0_x2158_x2842_x913170846}
+时钟状态从*state1*变为*state2*
 
-[[时钟状态从]{style="font-family:宋体"}*[state1]{lang="EN-US"}*]{#struct_0_x2158_x2842_212425078}[变为]{style="font-family:宋体"}*[state2]{lang="EN-US"}*
+*[state*]取值包括：
 
-[*[state]{lang="EN-US"}*]{#struct_0_x2158_x2842_x2089933019}[取值包括：]{style="font-family:宋体"}
+·0：unspecified ，未定义
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0]{lang="EN-US"}]{#struct_0_x2158_x2842_584111920}[：]{lang="EN-US" style="font-family:宋体"}[unspecified ]{lang="EN-US"}[，未定义]{lang="EN-US" style="font-family:宋体"}
+·1：freq not set ，频率未设定
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[1]{lang="EN-US"}]{#struct_0_x2158_x2842_x652850138}[：]{lang="EN-US" style="font-family:宋体"}[freq not set ]{lang="EN-US"}[，频率未设定]{lang="EN-US" style="font-family:宋体"}
+·2：freq set ，频率已设定
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[2]{lang="EN-US"}]{#struct_0_x2158_x2842_x1916800241}[：]{lang="EN-US" style="font-family:宋体"}[freq set ]{lang="EN-US"}[，频率已设定]{lang="EN-US" style="font-family:宋体"}
+·3：spike detect ，检测到大的频率跳变
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[3]{lang="EN-US"}]{#struct_0_x2158_x2842_212490614}[：]{lang="EN-US" style="font-family:宋体"}[spike detect ]{lang="EN-US"}[，检测到大的频率跳变]{lang="EN-US" style="font-family:宋体"}
+·4：freq mode ，频率已确定
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[4]{lang="EN-US"}]{#struct_0_x2158_x2842_670711004}[：]{lang="EN-US" style="font-family:宋体"}[freq mode ]{lang="EN-US"}[，频率已确定]{lang="EN-US" style="font-family:宋体"}
+·5：clock sync，时钟已同步
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[5]{lang="EN-US"}]{#struct_0_x2158_x2842_398591495}[：]{lang="EN-US" style="font-family:宋体"}[clock sync]{lang="EN-US"}[，时钟已同步]{lang="EN-US" style="font-family:宋体"}
+count *string*
 
-[[count *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_2072592442}
+计数器的值为*string*
 
-[[计数器的值为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_213080438}
+One-off system time adjustment failed. Error: *error-code*
 
-[[One-off system time adjustment failed. Error: *error-code*]{lang="EN-US"}]{#struct_0_x2158_x2842_x106023634}
+一次性调整系统时钟失败，错误码为*error-code*
 
-[[一次性调整系统时钟失败，错误码为]{style="font-family:宋体"}*[error-code]{lang="EN-US"}*]{#struct_0_x2158_x2842_x1529709596}
+Frequency error: *p1* PPM exceeds tolerance *p2* PPM
 
-[[Frequency error: *p1* PPM exceeds tolerance *p2* PPM]{lang="EN-US"}]{#struct_0_x2158_x2842_583118386}
+当前时钟频率*p1*超出了频率阈值*p2*
 
-[[当前时钟频率]{style="font-family:宋体"}*[p1]{lang="EN-US"}*]{#struct_0_x2158_x2842_213145974}[超出了频率阈值]{style="font-family:宋体"}*[p2]{lang="EN-US"}*
+Failed to adjust system time
 
-[[Failed to adjust system time]{lang="EN-US"}]{#struct_0_x2158_x2842_237779287}
+调整系统时间失败
 
-[[调整系统时间失败]{style="font-family:宋体"}]{#struct_0_x2158_x2842_x479063646}
+表1-3 debugging ntp-service authentication命令输出信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表1-3 ]{lang="EN-US"}[debugging ntp-service authentication]{lang="EN-US"}]{#struct_0_x2158_x2842_x132221390}[命令输出信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x526364804}[[字段]{style="font-family:黑体"}]{#struct_0_x2158_x2842_530607437}
+Authentication failed
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x2158_x2842_212556147}
+认证失败
 
-[[Authentication failed]{lang="EN-US"}]{#struct_0_x2158_x2842_x526869474}
+auth flag *flag*
 
-[[认证失败]{style="font-family:宋体"}]{#struct_0_x2158_x2842_x952165555}
+认证标志为*flag*
 
-[[auth flag *flag*]{lang="EN-US"}]{#struct_0_x2158_x2842_1557768956}
+authenticate key ID *id*
 
-[[认证标志为]{style="font-family:宋体"}*[flag]{lang="EN-US"}*]{#struct_0_x2158_x2842_845728130}
+认证密钥编号为*id*
 
-[[authenticate key ID *id*]{lang="EN-US"}]{#struct_0_x2158_x2842_320391745}
+packet key ID *id*
 
-[[认证密钥编号为]{style="font-family:宋体"}*[id]{lang="EN-US"}*]{#struct_0_x2158_x2842_212621683}
+收到的NTP报文中的密钥编号为*id*
 
-[[packet key ID *id*]{lang="EN-US"}]{#struct_0_x2158_x2842_1363295718}
+MAC length *length*
 
-[[收到的]{style="font-family:宋体"}[NTP]{lang="EN-US"}]{#struct_0_x2158_x2842_x1912038636}[报文中的密钥编号为]{style="font-family:宋体"}*[id]{lang="EN-US"}*
+MAC长度为*length*
 
-[[MAC length *length*]{lang="EN-US"}]{#struct_0_x2158_x2842_x2020225101}
+Received a packet at *time*, from *ip-address*, mode *mode*, key ID *id*, length *length*, authentication result *result*
 
-[[MAC]{lang="EN-US"}]{#struct_0_x2158_x2842_x2107696867}[长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*
+在时间*time*，从*ip-address*接收到带有认证信息的NTP报文，工作模式为*mode*，密钥ID为*id*，报文长度为*length*，认证结果为*result*
 
-[[Received a packet at *time*, from *ip-address*, mode *mode*, key ID *id*, length *length*, authentication result *result*]{lang="EN-US"}]{#struct_0_x2158_x2842_x1464227803}
+Invalid private packet for bad length *length*
 
-[[在时间]{style="font-family:宋体"}*[time]{lang="EN-US"}*]{#struct_0_x2158_x2842_580877949}[，从]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*[接收到带有认证信息的]{style="font-family:宋体"}[NTP]{lang="EN-US"}[报文，工作模式为]{style="font-family:宋体"}*[mode]{lang="EN-US"}*[，密钥]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[id]{lang="EN-US"}*[，报文长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*[，认证结果为]{style="font-family:宋体"}*[result]{lang="EN-US"}*
+私有报文无效，原因：报文长度错误，报文长度为*length*
 
-[[Invalid private packet for bad length *length*]{lang="EN-US"}]{#struct_0_x2158_x2842_212687219}
+Invalid private packet, xmit/rcv timestamp delta *p1* \> *p2*
 
-[[私有报文无效，原因：报文长度错误，报文长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*]{#struct_0_x2158_x2842_x1037365354}
+私有报文无效，原因：发送时间戳和接收时间戳的差值*p1*大于阈值*p2*
 
-[[Invalid private packet, xmit/rcv timestamp delta *p1* \> *p2*]{lang="EN-US"}]{#struct_0_x2158_x2842_1251793987}
+表1-4 debugging ntp-service event命令输出信息描述表
 
-[[私有报文无效，原因：发送时间戳和接收时间戳的差值]{style="font-family:宋体"}*[p1]{lang="EN-US"}*]{#struct_0_x2158_x2842_1646249687}[大于阈值]{style="font-family:宋体"}*[p2]{lang="EN-US"}*
+字段
 
-[ ]{lang="EN-US"}
+描述
 
-[[表1-4 ]{lang="EN-US"}[debugging ntp-service event]{lang="EN-US"}]{#struct_0_x2158_x2842_x788832894}[命令输出信息描述表]{style="font-family:黑体"}
+Clear peer at *time*
 
-[]{#table_struct_0_x532550078}[[字段]{style="font-family:黑体"}]{#struct_0_x2158_x2842_x1166648256}
+在时间*time*清除与对端设备的连接
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x2158_x2842_212752755}
+next sent time *time*
 
-[[Clear peer at *time*]{lang="EN-US"}]{#struct_0_x2158_x2842_x986270998}
+下一次发送报文的时间为*time*
 
-[[在时间]{style="font-family:宋体"}*[time]{lang="EN-US"}*]{#struct_0_x2158_x2842_x388611009}[清除与对端设备的连接]{style="font-family:宋体"}
+session ID *id*
 
-[[next sent time *time*]{lang="EN-US"}]{#struct_0_x2158_x2842_1485683143}
+会话ID为*id*
 
-[[下一次发送报文的时间为]{style="font-family:宋体"}*[time]{lang="EN-US"}*]{#struct_0_x2158_x2842_x2048458095}
+refid *string*
 
-[[session ID *id*]{lang="EN-US"}]{#struct_0_x2158_x2842_x148818747}
+参考时钟ID为*string*
 
-[[会话]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x2158_x2842_212294003}[为]{style="font-family:宋体"}*[id]{lang="EN-US"}*
+Sending control packet with error code *code* to *ip-address*
 
-[[refid *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_x781572589}
+向*ip-address*发送携带错误码*code*的控制报文
 
-[[参考时钟]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x2158_x2842_x2129175652}[为]{style="font-family:宋体"}*[string]{lang="EN-US"}*
+Reading status, session ID *id*
 
-[[Sending control packet with error code *code* to *ip-address*]{lang="EN-US"}]{#struct_0_x2158_x2842_1959783698}
+读取ID为*id*的会话的状态
 
-[[向]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*]{#struct_0_x2158_x2842_x1592277288}[发送携带错误码]{style="font-family:宋体"}*[code]{lang="EN-US"}*[的控制报文]{style="font-family:宋体"}
+Event at *time*: *event*
 
-[[Reading status, session ID *id*]{lang="EN-US"}]{#struct_0_x2158_x2842_1950898097}
+在时间*time*发生事件*event*
 
-[[读取]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x2158_x2842_212359539}[为]{style="font-family:宋体"}*[id]{lang="EN-US"}*[的会话的状态]{style="font-family:宋体"}
+Quit from the process on receiving the signal *signal*
 
-[[Event at *time*: *event*]{lang="EN-US"}]{#struct_0_x2158_x2842_1968884136}
+接收到信令*signal*后，退出NTP进程
 
-[[在时间]{style="font-family:宋体"}*[time]{lang="EN-US"}*]{#struct_0_x2158_x2842_681387313}[发生事件]{style="font-family:宋体"}*[event]{lang="EN-US"}*
+表1-5 debugging ntp-service filter命令输出信息描述表
 
-[[Quit from the process on receiving the signal *signal*]{lang="EN-US"}]{#struct_0_x2158_x2842_362711770}
+字段
 
-[[接收到信令]{style="font-family:宋体"}*[signal]{lang="EN-US"}*]{#struct_0_x2158_x2842_x1589201245}[后，退出]{style="font-family:宋体"}[NTP]{lang="EN-US"}[进程]{style="font-family:宋体"}
+描述
 
-[ ]{lang="EN-US"}
+Clock filter: old sample, current *count1*, filter epoch *count2*, peer epoch *count3*
 
-[[表1-5 ]{lang="EN-US"}[debugging ntp-service filter]{lang="EN-US"}]{#struct_0_x2158_x2842_x2121528316}[命令输出信息描述表]{style="font-family:黑体"}
+时钟过滤：样本太老，当前时间计数为*count1*，样本时间计数为*count2*，参考时间计数为*count3*
 
-[]{#table_struct_0_x530069422}[[字段]{style="font-family:黑体"}]{#struct_0_x2158_x2842_193965438}
+表1-6 debugging ntp-service packet命令输出信息描述表
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x2158_x2842_212425075}
+字段
 
-[[Clock filter: old sample, current *count1*, filter epoch *count2*, peer epoch *count3*]{lang="EN-US"}]{#struct_0_x2158_x2842_x2089933030}
+描述
 
-[[时钟过滤：样本太老，当前时间计数为]{style="font-family:宋体"}*[count1]{lang="EN-US"}*]{#struct_0_x2158_x2842_1793834429}[，样本时间计数为]{style="font-family:宋体"}*[count2]{lang="EN-US"}*[，参考时间计数为]{style="font-family:宋体"}*[count3]{lang="EN-US"}*
+packet to *ip-address*
 
-[ ]{lang="EN-US"}
+向*ip-address*发送NTP报文
 
-[[表1-6 ]{lang="EN-US"}[debugging ntp-service packet]{lang="EN-US"}]{#struct_0_x2158_x2842_x1783354862}[命令输出信息描述表]{style="font-family:黑体"}
+count: *count*
 
-[]{#table_struct_0_x535397864}[[字段]{style="font-family:黑体"}]{#struct_0_x2158_x2842_x1680791438}
+控制报文中数据的个数为*count*
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x2158_x2842_490364296}
+RMEOP: *operation*
 
-[[packet to *ip-address*]{lang="EN-US"}]{#struct_0_x2158_x2842_50669173}
+控制报文中的操作码为*operation*
 
-[[向]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*]{#struct_0_x2158_x2842_212490611}[发送]{style="font-family:宋体"}[NTP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+seq: *sequence*
 
-[[count: *count*]{lang="EN-US"}]{#struct_0_x2158_x2842_670711007}
+控制报文中的请求序号为*sequence*
 
-[[控制报文中数据的个数为]{style="font-family:宋体"}*[count]{lang="EN-US"}*]{#struct_0_x2158_x2842_398591494}
+status: *status*
 
-[[RMEOP: *operation*]{lang="EN-US"}]{#struct_0_x2158_x2842_2072592441}
+控制报文中的状态字为*sequence*
 
-[[控制报文中的操作码为]{style="font-family:宋体"}*[operation]{lang="EN-US"}*]{#struct_0_x2158_x2842_558174691}
+session ID: *id*
 
-[[seq: *sequence*]{lang="EN-US"}]{#struct_0_x2158_x2842_x402173879}
+控制报文中的连接ID为*id*
 
-[[控制报文中的请求序号为]{style="font-family:宋体"}*[sequence]{lang="EN-US"}*]{#struct_0_x2158_x2842_213080435}
+offset: *offset*
 
-[[status: *status*]{lang="EN-US"}]{#struct_0_x2158_x2842_x106023637}
+控制报文数据偏移量为*offset*
 
-[[控制报文中的状态字为]{style="font-family:宋体"}*[sequence]{lang="EN-US"}*]{#struct_0_x2158_x2842_x1529512988}
+auth_seq: *code*
 
-[[session ID: *id*]{lang="EN-US"}]{#struct_0_x2158_x2842_845823733}
+私有报文中的消息验证码为*code*
 
-[[控制报文中的连接]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x2158_x2842_1338511010}[为]{style="font-family:宋体"}*[id]{lang="EN-US"}*
+impl: *code*
 
-[[offset: *offset*]{lang="EN-US"}]{#struct_0_x2158_x2842_x1210146850}
+私有报文中的操作码为*code*
 
-[[控制报文数据偏移量为]{style="font-family:宋体"}*[offset]{lang="EN-US"}*]{#struct_0_x2158_x2842_213145971}
+req: *code*
 
-[[auth_seq: *code*]{lang="EN-US"}]{#struct_0_x2158_x2842_237779292}
+私有报文中的请求码为*code*
 
-[[私有报文中的消息验证码为]{style="font-family:宋体"}*[code]{lang="EN-US"}*]{#struct_0_x2158_x2842_1477251487}
+err_nitems: *code*
 
-[[impl: *code*]{lang="EN-US"}]{#struct_0_x2158_x2842_2021376166}
+私有报文的错误码或数据项的数目为*code*
 
-[[私有报文中的操作码为]{style="font-family:宋体"}*[code]{lang="EN-US"}*]{#struct_0_x2158_x2842_734346628}
+itemsize: *size*
 
-[[req: *code*]{lang="EN-US"}]{#struct_0_x2158_x2842_212556148}
+每一个数据项的大小为*size*
 
-[[私有报文中的请求码为]{style="font-family:宋体"}*[code]{lang="EN-US"}*]{#struct_0_x2158_x2842_x526869483}
+length: *length*
 
-[[err_nitems: *code*]{lang="EN-US"}]{#struct_0_x2158_x2842_x951706794}
+发送报文的长度为*length*
 
-[[私有报文的错误码或数据项的数目为]{style="font-family:宋体"}*[code]{lang="EN-US"}*]{#struct_0_x2158_x2842_x650627309}
+leap: *leap*
 
-[[itemsize: *size*]{lang="EN-US"}]{#struct_0_x2158_x2842_212621684}
+报文中的告警信息为*leap*
 
-[[每一个数据项的大小为]{style="font-family:宋体"}*[size]{lang="EN-US"}*]{#struct_0_x2158_x2842_1363295715}
+version: *version*
 
-[[length: *length*]{lang="EN-US"}]{#struct_0_x2158_x2842_x1911842028}
+报文中的协议版本号为*version*
 
-[[发送报文的长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*]{#struct_0_x2158_x2842_548689591}
+mode: *mode*
 
-[[leap: *leap*]{lang="EN-US"}]{#struct_0_x2158_x2842_x217797620}
+报文中的工作模式为*mode*
 
-[[报文中的告警信息为]{style="font-family:宋体"}*[leap]{lang="EN-US"}*]{#struct_0_x2158_x2842_212687220}
+vrfindex: *index*
 
-[[version: *version*]{lang="EN-US"}]{#struct_0_x2158_x2842_1301286797}
+收到或发送报文的VPN索引为*index*
 
-[[报文中的协议版本号为]{style="font-family:宋体"}*[version]{lang="EN-US"}*]{#struct_0_x2158_x2842_x1688990375}
+stratum: *stratum*
 
-[[mode: *mode*]{lang="EN-US"}]{#struct_0_x2158_x2842_658857036}
+报文中的层数为*stratum*
 
-[[报文中的工作模式为]{style="font-family:宋体"}*[mode]{lang="EN-US"}*]{#struct_0_x2158_x2842_212752756}
+poll: *poll*
 
-[[vrfindex: *index*]{lang="EN-US"}]{#struct_0_x2158_x2842_x986270999}
+报文中的轮询间隔为*poll*
 
-[[收到或发送报文的]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_x2158_x2842_x388676545}[索引为]{style="font-family:宋体"}*[index]{lang="EN-US"}*
+precision: *precision*
 
-[[stratum: *stratum*]{lang="EN-US"}]{#struct_0_x2158_x2842_1497640550}
+报文中的精度为*precision*
 
-[[报文中的层数为]{style="font-family:宋体"}*[stratum]{lang="EN-US"}*]{#struct_0_x2158_x2842_212294004}
+rdel: *delay*
 
-[[poll: *poll*]{lang="EN-US"}]{#struct_0_x2158_x2842_x781572590}
+报文中的根延时为*delay*
 
-[[报文中的轮询间隔为]{style="font-family:宋体"}*[poll]{lang="EN-US"}*]{#struct_0_x2158_x2842_x2128585829}
+rdsp: *disper*
 
-[[precision: *precision*]{lang="EN-US"}]{#struct_0_x2158_x2842_1648146261}
+报文中的根离差为*disper*
 
-[[报文中的精度为]{style="font-family:宋体"}*[precision]{lang="EN-US"}*]{#struct_0_x2158_x2842_212359540}
+refid: *id*
 
-[[rdel: *delay*]{lang="EN-US"}]{#struct_0_x2158_x2842_1159580081}
+报文中参考时钟的标识为*id*
 
-[[报文中的根延时为]{style="font-family:宋体"}*[delay]{lang="EN-US"}*]{#struct_0_x2158_x2842_x2142690186}
+当参考时钟为本地时钟时，本字段的取值和本地时钟层数有关：本地时钟层数为1时，为LOCL；本地时钟层数为其它值时，为本地时钟的IP地址
 
-[[rdsp: *disper*]{lang="EN-US"}]{#struct_0_x2158_x2842_955849714}
+当参考时钟为网络中其它设备的时钟时，本字段为该设备的IP地址
 
-[[报文中的根离差为]{style="font-family:宋体"}*[disper]{lang="EN-US"}*]{#struct_0_x2158_x2842_212425076}
+reftime: *string*
 
-[[refid: *id*]{lang="EN-US"}]{#struct_0_x2158_x2842_x2089933033}
+报文中的参考时间戳为*string*
 
-[[报文中参考时钟的标识为]{style="font-family:宋体"}*[id]{lang="EN-US"}*]{#struct_0_x2158_x2842_1390549902}
+orgtime: *string*
 
-[[当参考时钟为本地时钟时，本字段的取值和本地时钟层数有关：本地时钟层数为]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_x2158_x2842_693190295}[时，为]{style="font-family:宋体"}[LOCL]{lang="EN-US"}[；本地时钟层数为其它值时，为本地时钟的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+报文中的启始时间戳为*string*
 
-[[当参考时钟为网络中其它设备的时钟时，本字段为该设备的]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x2158_x2842_212490612}[地址]{style="font-family:宋体"}
+rectime: *string*
 
-[[reftime: *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_670711006}
+报文中的接收时间戳为*string*
 
-[[报文中的参考时间戳为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_398591493}
+xmttime: *string*
 
-[[orgtime: *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_213080436}
+报文中的发送时间戳为*string*
 
-[[报文中的启始时间戳为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_x106023636}
+inptime: *string*
 
-[[rectime: *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_x1529578524}
+处理报文的时间戳为*string*
 
-[[报文中的接收时间戳为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_1418167883}
+packet from *ip-address1* to *ip-address2* on *interface-name*
 
-[[xmttime: *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_213145972}
+从接口*interface-name*接收到源IP地址为*ip-address1*、目的IP地址为*ip-address2*的报文
 
-[[报文中的发送时间戳为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_237779293}
+Invalid private packet for wrong item size, received *size1*, should be *size2* or *size3*
 
-[[inptime: *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_1477251486}
+私有报文无效，原因：数据项大小错误，接收到的数据项大小为*size1*，应为*size2*（IPv4报文）或*size3*（IPv6报文）
 
-[[处理报文的时间戳为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_212556145}
+Invalid private packet for not enough data
 
-[[packet from *ip-address1* to *ip-address2* on *interface-name*]{lang="EN-US"}]{#struct_0_x2158_x2842_x526869472}
+私有报文无效，原因：数据不完整
 
-[[从接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_x2158_x2842_x951772339}[接收到源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}*[ip-address1]{lang="EN-US"}*[、目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}*[ip-address2]{lang="EN-US"}*[的报文]{style="font-family:宋体"}
+Sending request packet to *ip-address*, sequence number *number,* error code *code*
 
-[[Invalid private packet for wrong item size, received *size1*, should be *size2* or *size3*]{lang="EN-US"}]{#struct_0_x2158_x2842_212621681}
+向*ip-address*发送请求报文，序列号为*number*，错误码为*code*
 
-[[私有报文无效，原因：数据项大小错误，接收到的数据项大小为]{style="font-family:宋体"}*[size1]{lang="EN-US"}*]{#struct_0_x2158_x2842_1363295720}[，应为]{style="font-family:宋体"}*[size2]{lang="EN-US"}*[（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[报文）或]{style="font-family:宋体"}*[size3]{lang="EN-US"}*[（]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[报文）]{style="font-family:宋体"}
+Flushing packet, *number* items
 
-[[Invalid private packet for not enough data]{lang="EN-US"}]{#struct_0_x2158_x2842_x1911514349}
+发送*number*个报文
 
-[[私有报文无效，原因：数据不完整]{style="font-family:宋体"}]{#struct_0_x2158_x2842_212687217}
+Failed to send packet because too many data, length *length*
 
-[[Sending request packet to *ip-address*, sequence number *number,* error code *code*]{lang="EN-US"}]{#struct_0_x2158_x2842_x1037365356}
+由于数据过多，发送报文失败，报文长度为*length*
 
-[[向]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*]{#struct_0_x2158_x2842_88994573}[发送请求报文，序列号为]{style="font-family:宋体"}*[number]{lang="EN-US"}*[，错误码为]{style="font-family:宋体"}*[code]{lang="EN-US"}*
+Failed to set socket option, level *level*, option *option*, error code: *code*
 
-[[Flushing packet, *number* items]{lang="EN-US"}]{#struct_0_x2158_x2842_212752753}
+设置socket选项失败，socket选项等级为*level*，socket选项为*option*，错误码为*code*
 
-[[发送]{style="font-family:宋体"}*[number]{lang="EN-US"}*]{#struct_0_x2158_x2842_x986271004}[个报文]{style="font-family:宋体"}
+Failed to get VRF index VPN name *vpn-name*
 
-[[Failed to send packet because too many data, length *length*]{lang="EN-US"}]{#struct_0_x2158_x2842_1531230435}
+获取VPN实例*vpn-name*的索引失败
 
-[[由于数据过多，发送报文失败，报文长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*]{#struct_0_x2158_x2842_212294001}
+表1-7 debugging ntp-service parameter命令输出信息描述表
 
-[[Failed to set socket option, level *level*, option *option*, error code: *code*]{lang="EN-US"}]{#struct_0_x2158_x2842_x781572587}
+字段
 
-[[设置]{style="font-family:宋体"}[socket]{lang="EN-US"}]{#struct_0_x2158_x2842_x2128782436}[选项失败，]{style="font-family:宋体"}[socket]{lang="EN-US"}[选项等级为]{style="font-family:宋体"}*[level]{lang="EN-US"}*[，]{style="font-family:宋体"}[socket]{lang="EN-US"}[选项为]{style="font-family:宋体"}*[option]{lang="EN-US"}*[，错误码为]{style="font-family:宋体"}*[code]{lang="EN-US"}*
+描述
 
-[[Failed to get VRF index VPN name *vpn-name*]{lang="EN-US"}]{#struct_0_x2158_x2842_212359537}
+Clock filter param
 
-[[获取]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_x2158_x2842_1968884146}[实例]{style="font-family:宋体"}*[vpn-name]{lang="EN-US"}*[的索引失败]{style="font-family:宋体"}
+时钟过滤参数
 
-[ ]{lang="EN-US"}
+number *number*
 
-[[表1-7 ]{lang="EN-US"}[debugging ntp-service parameter]{lang="EN-US"}]{#struct_0_x2158_x2842_681387316}[命令输出信息描述表]{style="font-family:黑体"}
+时间服务器的个数为*number*
 
-[]{#table_struct_0_x510182890}[[字段]{style="font-family:黑体"}]{#struct_0_x2158_x2842_212425073}
+offset *string*
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x2158_x2842_x2089933028}
+时钟偏差为*string*
 
-[[Clock filter param]{lang="EN-US"}]{#struct_0_x2158_x2842_x2144968043}
+delay *string*
 
-[[时钟过滤参数]{style="font-family:宋体"}]{#struct_0_x2158_x2842_627184885}
+双向延迟为*string*
 
-[[number *number*]{lang="EN-US"}]{#struct_0_x2158_x2842_x1344572497}
+dispersion *string*
 
-[[时间服务器的个数为]{style="font-family:宋体"}*[number]{lang="EN-US"}*]{#struct_0_x2158_x2842_x898210074}
+离差为*string*
 
-[[offset *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_212490609}
+jitter *string*
 
-[[时钟偏差为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_x1667941161}
+时钟偏移均方根为*string*
 
-[[delay *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_x1400140261}
+burst *string*
 
-[[双向延迟为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_290203286}
+一个时钟脉冲中的数据包个数
 
-[[dispersion *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_1616129593}
+表1-8 debugging ntp-service refclock命令输出信息描述表
 
-[[离差为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_1868444985}
+字段
 
-[[jitter *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_213080433}
+描述
 
-[[时钟偏移均方根为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_x106023639}
+Select PPS peer *ip-address* offset *offset*, jitter *jitter*
 
-[[burst *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_x1529906204}
+选取PPS类型的时钟*ip-address *作为参考时钟，时钟偏移量为*offset*，时钟偏移量的均方根为*jitter*
 
-[[一个时钟脉冲中的数据包个数]{style="font-family:宋体"}]{#struct_0_x2158_x2842_1063032681}
+Reference clock sent a packet to *ip-address* at *time*
 
-[ ]{lang="EN-US"}
+参考时钟在时间*time*向*ip-address*发送报文
 
-[[表1-8 ]{lang="EN-US"}[debugging ntp-service refclock]{lang="EN-US"}]{#struct_0_x2158_x2842_1198210298}[命令输出信息描述表]{style="font-family:黑体"}
+Reference clock received a packet from *ip-address* at *time*
 
-[]{#table_struct_0_x508012316}[[字段]{style="font-family:黑体"}]{#struct_0_x2158_x2842_x179808026}
+参考时钟在时间*time*从*ip-address*接收到报文
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x2158_x2842_213145969}
+表1-9 debugging ntp-service selection命令输出信息描述表
 
-[[Select PPS peer *ip-address* offset *offset*, jitter *jitter*]{lang="EN-US"}]{#struct_0_x2158_x2842_x1718535852}
+字段
 
-[[选取]{style="font-family:宋体"}[PPS]{lang="EN-US"}]{#struct_0_x2158_x2842_x2147226675}[类型的时钟]{style="font-family:宋体"}*[ip-address ]{lang="EN-US"}*[作为参考时钟，时钟偏移量为]{style="font-family:宋体"}*[offset]{lang="EN-US"}*[，时钟偏移量的均方根为]{style="font-family:宋体"}*[jitter]{lang="EN-US"}*
+描述
 
-[[Reference clock sent a packet to *ip-address* at *time*]{lang="EN-US"}]{#struct_0_x2158_x2842_682965384}
+Combine offset *offset*, jitter *jitter*
 
-[[参考时钟在时间]{style="font-family:宋体"}*[time]{lang="EN-US"}*]{#struct_0_x2158_x2842_x1319144702}[向]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*[发送报文]{style="font-family:宋体"}
+合并时钟：系统当前时钟偏移量为*offset*，当前时钟偏移量的均方根为*jitter*
 
-[[Reference clock received a packet from *ip-address* at *time*]{lang="EN-US"}]{#struct_0_x2158_x2842_1332379534}
+Drop peer *ip-address*, select jitter *jitter2*, jitter *jitter3*
 
-[[参考时钟在时间]{style="font-family:宋体"}*[time]{lang="EN-US"}*]{#struct_0_x2158_x2842_212556146}[从]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*[接收到报文]{style="font-family:宋体"}
+丢弃时钟*ip-address*，根据所有peer的jitter计算出的综合jitter为*jitter2*，当前peer连接的jitter为*jitter3*
 
-[ ]{lang="EN-US"}
+Survivor *ip-address*, distance *distance*
 
-[[表1-9 ]{lang="EN-US"}[debugging ntp-service selection]{lang="EN-US"}]{#struct_0_x2158_x2842_x526869473}[命令输出信息描述表]{style="font-family:黑体"}
+最终优选的时钟为*ip-address*，时钟举例为*distance*
 
-[]{#table_struct_0_x514507672}[[字段]{style="font-family:黑体"}]{#struct_0_x2158_x2842_x951706803}
+endpoint *p1*, *p2*
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x2158_x2842_540686090}
+时钟选择算法的终点结构体，*p1*为终点偏移量，*p2*为步进
 
-[[Combine offset *offset*, jitter *jitter*]{lang="EN-US"}]{#struct_0_x2158_x2842_782897534}
+Clock update at *time*, sample *sample*, session ID *id*, offset *offset*
 
-[[合并时钟：系统当前时钟偏移量为]{style="font-family:宋体"}*[offset]{lang="EN-US"}*]{#struct_0_x2158_x2842_x873939602}[，当前时钟偏移量的均方根为]{style="font-family:宋体"}*[jitter]{lang="EN-US"}*
+在时间*time*更新时钟，时钟样本为*sample*，会话ID为*id*，当前时钟偏移量为*offset*
 
-[[Drop peer *ip-address*, select jitter *jitter2*, jitter *jitter3*]{lang="EN-US"}]{#struct_0_x2158_x2842_212621682}
+peer *ip-address*, flash *code*, flags *flag*, reach *reach*, root distance *distance*
 
-[[丢弃时钟]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*]{#struct_0_x2158_x2842_1363295717}[，根据所有]{style="font-family:宋体"}[peer]{lang="EN-US"}[的]{style="font-family:宋体"}[jitter]{lang="EN-US"}[计算出的综合]{style="font-family:宋体"}[jitter]{lang="EN-US"}[为]{style="font-family:宋体"}*[jitter2]{lang="EN-US"}*[，当前]{style="font-family:宋体"}[peer]{lang="EN-US"}[连接的]{style="font-family:宋体"}[jitter]{lang="EN-US"}[为]{style="font-family:宋体"}*[jitter3]{lang="EN-US"}*
+地址为*ip-address*的时间服务器的可达性，与该时间服务器连接的错误码为*code*，会话标识为*flag*，可达性为*reach*，根同步距离为*distance*
 
-[[Survivor *ip-address*, distance *distance*]{lang="EN-US"}]{#struct_0_x2158_x2842_x1911973100}
+peer *ip-address*, offset *offset*, low *low*, high *high*, flags *flag*
 
-[[最终优选的时钟为]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*]{#struct_0_x2158_x2842_x681310577}[，时钟举例为]{style="font-family:宋体"}*[distance]{lang="EN-US"}*
+地址为*ip-address*的时间服务器的连接信息：时钟偏移量为*offset*，插值算法的最小阈值为*low*，插值算法的最大阈值为*high*，会话标识为*flag*
 
-[[endpoint *p1*, *p2*]{lang="EN-US"}]{#struct_0_x2158_x2842_x741129055}
+set large distance peer *ip-address*, root distance *distance*
 
-[[时钟选择算法的终点结构体，]{style="font-family:宋体"}*[p1]{lang="EN-US"}*]{#struct_0_x2158_x2842_2117020216}[为终点偏移量，]{style="font-family:宋体"}*[p2]{lang="EN-US"}*[为步进]{style="font-family:宋体"}
+保存同步距离过大的时间服务器*ip-address*，同步距离为*distance*
 
-[[Clock update at *time*, sample *sample*, session ID *id*, offset *offset*]{lang="EN-US"}]{#struct_0_x2158_x2842_212687218}
+select large distance syspeer *ip-address*
 
-[[在时间]{style="font-family:宋体"}*[time]{lang="EN-US"}*]{#struct_0_x2158_x2842_x1037365355}[更新时钟，时钟样本为]{style="font-family:宋体"}*[sample]{lang="EN-US"}*[，会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[id]{lang="EN-US"}*[，当前时钟偏移量为]{style="font-family:宋体"}*[offset]{lang="EN-US"}*
+选择同步距离过大的时间服务器*ip-address*作为参考时钟
 
-[[peer *ip-address*, flash *code*, flags *flag*, reach *reach*, root distance *distance*]{lang="EN-US"}]{#struct_0_x2158_x2842_x1477089368}
+表1-10 debugging ntp-service synchronization命令输出信息描述表
 
-[[地址为]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*]{#struct_0_x2158_x2842_6803344}[的时间服务器的可达性，与该时间服务器连接的错误码为]{style="font-family:宋体"}*[code]{lang="EN-US"}*[，会话标识为]{style="font-family:宋体"}*[flag]{lang="EN-US"}*[，可达性为]{style="font-family:宋体"}*[reach]{lang="EN-US"}*[，根同步距离为]{style="font-family:宋体"}*[distance]{lang="EN-US"}*
+字段
 
-[[peer *ip-address*, offset *offset*, low *low*, high *high*, flags *flag*]{lang="EN-US"}]{#struct_0_x2158_x2842_1208149425}
+描述
 
-[[地址为]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*]{#struct_0_x2158_x2842_212752754}[的时间服务器的连接信息：时钟偏移量为]{style="font-family:宋体"}*[offset]{lang="EN-US"}*[，插值算法的最小阈值为]{style="font-family:宋体"}*[low]{lang="EN-US"}*[，插值算法的最大阈值为]{style="font-family:宋体"}*[high]{lang="EN-US"}*[，会话标识为]{style="font-family:宋体"}*[flag]{lang="EN-US"}*
+Synchronized to peer *address*
 
-[[set large distance peer *ip-address*, root distance *distance*]{lang="EN-US"}]{#struct_0_x2158_x2842_x986270997}
+本地设备的时间与地址为*address*的peer的时间同步
 
-[[保存同步距离过大的时间服务器]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*]{#struct_0_x2158_x2842_x388545473}[，同步距离为]{style="font-family:宋体"}*[distance]{lang="EN-US"}*
+表1-11 debugging ntp-service validity命令输出信息描述表
 
-[[select large distance syspeer *ip-address* ]{lang="EN-US"}]{#struct_0_x2158_x2842_x1233613867}
+字段
 
-[[选择同步距离过大的时间服务器]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*]{#struct_0_x2158_x2842_x24769560}[作为参考时钟]{style="font-family:宋体"}
+描述
 
-[ ]{lang="EN-US"}
+The packet from *ip-address string* the validity tests *result*
 
-[[表1-10 ]{lang="EN-US"}[debugging ntp-service synchronization]{lang="EN-US"}]{#struct_0_x2158_x2842_212294002}[命令输出信息描述表]{style="font-family:黑体"}
+从*ip-address*接收到的报文通过（pass）或未通过（failed）合法性检查，检查结果为*result*
 
-[]{#table_struct_0_x512031112}[[字段]{style="font-family:黑体"}]{#struct_0_x2158_x2842_x781572588}
+【举例】
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x2158_x2842_x2129110116}
+\# 网络中有两台设备Device A和Device B，Device A的接口GigabitEthernet1/0/1地址为192.168.0.19，Device B的接口GigabitEthernet1/0/1地址为192.168.0.13，它们之间可以相互ping通。Device B使用本地时钟作为参考时钟，时钟层数为2。在Device A上打开NTP报文调试信息开关。Device A通过客户端/服务器模式与Device B的时间同步时，Device A上打印如下调试信息。
 
-[[Synchronized to peer *address*]{lang="EN-US"}]{#struct_0_x2158_x2842_1840176419}
+\<DeviceA\> debugging ntp-service packet
 
-[[本地设备的时间与地址为]{style="font-family:宋体"}*[address]{lang="EN-US"}*]{#struct_0_x2158_x2842_x577730538}[的]{style="font-family:宋体"}[peer]{lang="EN-US"}[的时间同步]{style="font-family:宋体"}
+\<DeviceA\> system-view
 
-[ ]{lang="EN-US"}
+DeviceA ntp-service unicast-server 192.168.0.13 version 3
 
-[[表1-11 ]{lang="EN-US"}[debugging ntp-service validity]{lang="EN-US"}]{#struct_0_x2158_x2842_x2101214562}[命令输出信息描述表]{style="font-family:黑体"}
+\*Jan 25 19:58:23:206 2012 H3C NTP/7/PACKET_SEND:
 
-[]{#table_struct_0_x513332569}[[字段]{style="font-family:黑体"}]{#struct_0_x2158_x2842_165981859}
+ packet to 192.168.0.13, length: 48
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x2158_x2842_212359538}
+ leap: 3, version: 3, mode: 3, vrfindex: 0
 
-[[The packet from *ip-address string* the validity tests *result*]{lang="EN-US"}]{#struct_0_x2158_x2842_1968884137}
+ stratum: 16, poll: 6, precision: 2\^-10
 
-[[从]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*]{#struct_0_x2158_x2842_681452849}[接收到的报文通过（]{style="font-family:宋体"}[pass]{lang="EN-US"}[）或未通过（]{style="font-family:宋体"}[failed]{lang="EN-US"}[）合法性检查，检查结果为]{style="font-family:宋体"}*[result]{lang="EN-US"}*
+ rdel: 0.000, rdsp: 0.092, refid: INIT
 
-[ ]{lang="EN-US"}
+ reftime: d2cadcdc.350d4fcd  Wed, Jan 25 2012 19:56:12.207
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2158_x2842_x1385722966}
+ orgtime: 00000000.00000000  Thu, Feb  7 2036  6:28:16.000
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2158_x2842_x887247110}[网络中有两台设备]{style="font-family:宋体"}[Device A]{lang="EN-US"}[和]{style="font-family:宋体"}[Device B]{lang="EN-US"}[，]{style="font-family:宋体"}[Device A]{lang="EN-US"}[的接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[地址为]{style="font-family:宋体"}[192.168.0.19]{lang="EN-US"}[，]{style="font-family:宋体"}[Device B]{lang="EN-US"}[的接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[地址为]{style="font-family:宋体"}[192.168.0.13]{lang="EN-US"}[，它们之间可以相互]{style="font-family:宋体"}[ping]{lang="EN-US"}[通。]{style="font-family:宋体"}[Device B]{lang="EN-US"}[使用本地时钟作为参考时钟，时钟层数为]{style="font-family:宋体"}[2]{lang="EN-US"}[。在]{style="font-family:宋体"}[Device A]{lang="EN-US"}[上打开]{style="font-family:宋体"}[NTP]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}[Device A]{lang="EN-US"}[通过客户端]{style="font-family:宋体"}[/]{lang="EN-US"}[服务器模式与]{style="font-family:宋体"}[Device B]{lang="EN-US"}[的时间同步时，]{style="font-family:宋体"}[Device A]{lang="EN-US"}[上打印如下调试信息。]{style="font-family:宋体"}
+ rectime: 00000000.00000000  Thu, Feb  7 2036  6:28:16.000
 
-[[\<DeviceA\> debugging ntp-service packet]{lang="EN-US"}]{#struct_0_x2158_x2842_212425074}
+ xmttime: d2cadd5f.3469b5b7  Wed, Jan 25 2012 19:58:23.204
 
-[\<DeviceA\> system-view]{lang="EN-US"}
+*[// NTP*]*模块向Device B发送NTP时间同步报文：报文的目的地址是192.168.0.13；报文长度为48字节；本地时钟告警位取值为3；本地NTP协议版本号为3；工作模式为3；报文出端口所在的VPN索引为0（即公网）；本地时钟层数为16；轮询间隔为64秒；时钟精度为2的10次方分之一秒级别；本地根延迟为0.000；根离差为0.092；参考时钟ID为0.0.0.0，表明没有参考时钟；后续的信息分别是参考时间戳、起始时间戳、接收时间戳和发送时间戳*
 
-[\[DeviceA\] ntp-service unicast-server 192.168.0.13 version 3]{lang="EN-US"}
+\*Jan 25 19:49:45:403 2012 H3C NTP/7/PACKET_RECV:
 
-[\*Jan 25 19:58:23:206 2012 H3C NTP/7/PACKET_SEND:]{lang="EN-US"}
+ packet from 192.168.0.13 to 192.168.0.19 on GigabitEthernet1/0/1
 
-[ packet to 192.168.0.13, length: 48]{lang="EN-US"}
+ leap: 0, version: 3, mode: 4, vrfindex: 0
 
-[ leap: 3, version: 3, mode: 3, vrfindex: 0]{lang="EN-US"}
+ stratum:  2, poll: 6, precision: 2\^-18
 
-[ stratum: 16, poll: 6, precision: 2\^-10]{lang="EN-US"}
+ rdel: 0.000, rdsp: 10.941, refid: 127.127.1.0
 
-[ rdel: 0.000, rdsp: 0.092, refid: INIT]{lang="EN-US"}
+ reftime: d2cadbe0.1a74d163  Wed, Jan 25 2012 19:52:00.103
 
-[ reftime: d2cadcdc.350d4fcd  Wed, Jan 25 2012 19:56:12.207]{lang="EN-US"}
+ orgtime: d2cadb59.6569818c  Wed, Jan 25 2012 19:49:45.396
 
-[ orgtime: 00000000.00000000  Thu, Feb  7 2036  6:28:16.000]{lang="EN-US"}
+ rectime: d2cadc0e.f2d6a9c5  Wed, Jan 25 2012 19:52:46.948
 
-[ rectime: 00000000.00000000  Thu, Feb  7 2036  6:28:16.000]{lang="EN-US"}
+ xmttime: d2cadc0e.f2e12620  Wed, Jan 25 2012 19:52:46.948
 
-[ xmttime: d2cadd5f.3469b5b7  Wed, Jan 25 2012 19:58:23.204]{lang="EN-US"}
+ inptime: 59dbcad2.f6985367  Fri, Oct 10 1947 19:15:30.963
 
-[*[// NTP]{lang="EN-US"}*]{#struct_0_x2158_x2842_x2089933031}*[模块向]{style="font-family:宋体"}[Device B]{lang="EN-US"}[发送]{style="font-family:宋体"}[NTP]{lang="EN-US"}[时间同步报文：报文的目的地址是]{style="font-family:宋体"}[192.168.0.13]{lang="EN-US"}[；报文长度为]{style="font-family:宋体"}[48]{lang="EN-US"}[字节；本地时钟告警位取值为]{style="font-family:宋体"}[3]{lang="EN-US"}[；本地]{style="font-family:宋体"}[NTP]{lang="EN-US"}[协议版本号为]{style="font-family:宋体"}[3]{lang="EN-US"}[；工作模式为]{style="font-family:宋体"}[3]{lang="EN-US"}[；报文出端口所在的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[索引为]{style="font-family:宋体"}[0]{lang="EN-US"}[（即公网）；本地时钟层数为]{style="font-family:宋体"}[16]{lang="EN-US"}[；轮询间隔为]{style="font-family:宋体"}[64]{lang="EN-US"}[秒；时钟精度为]{style="font-family:宋体"}[2]{lang="EN-US"}[的]{style="font-family:宋体"}[10]{lang="EN-US"}[次方分之一秒级别；本地根延迟为]{style="font-family:宋体"}[0.000]{lang="EN-US"}[；根离差为]{style="font-family:宋体"}[0.092]{lang="EN-US"}[；参考时钟]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[0.0.0.0]{lang="EN-US"}[，表明没有参考时钟；后续的信息分别是参考时间戳、起始时间戳、接收时间戳和发送时间戳]{style="font-family:宋体"}*
+*[// Device A*]*收到Device B发过来的NTP响应报文：对端的IP地址是192.168.0.13，本端的IP地址是192.168.0.19，报文入接口是GigabitEthernet1/0/1；对端的告警位为0，表示处于已同步状态；对端NTP的协议版本号为3；工作模式为4；对端报文的出接口属于的VPN索引为0；对端时钟的层数为2；轮询间隔为64秒；精度为2的18次方分之一秒级别；对端的根延迟为0.000；根离差为10.941；对端的参考时钟ID为127.127.1.0，即本地时钟；后续的信息分别是参考时间戳、起始时间戳、接收时间戳、发送时间戳和本地处理该报文的时间戳*
 
-[[\*Jan 25 19:49:45:403 2012 H3C NTP/7/PACKET_RECV:]{lang="EN-US"}]{#struct_0_x2158_x2842_227750488}
+![说明](NTP%20Debug.files/image001.png)
 
-[ packet from 192.168.0.13 to 192.168.0.19 on GigabitEthernet1/0/1]{lang="EN-US"}
+实际上，上述的报文交互过程会进行多次，此处仅给出前两个报文的信息。
 
-[ leap: 0, version: 3, mode: 4, vrfindex: 0]{lang="EN-US"}
-
-[ stratum:  2, poll: 6, precision: 2\^-18]{lang="EN-US"}
-
-[ rdel: 0.000, rdsp: 10.941, refid: 127.127.1.0]{lang="EN-US"}
-
-[ reftime: d2cadbe0.1a74d163  Wed, Jan 25 2012 19:52:00.103]{lang="EN-US"}
-
-[ orgtime: d2cadb59.6569818c  Wed, Jan 25 2012 19:49:45.396]{lang="EN-US"}
-
-[ rectime: d2cadc0e.f2d6a9c5  Wed, Jan 25 2012 19:52:46.948]{lang="EN-US"}
-
-[ xmttime: d2cadc0e.f2e12620  Wed, Jan 25 2012 19:52:46.948]{lang="EN-US"}
-
-[ inptime: 59dbcad2.f6985367  Fri, Oct 10 1947 19:15:30.963]{lang="EN-US"}
-
-[*[// Device A]{lang="EN-US"}*]{#struct_0_x2158_x2842_912980749}*[收到]{style="font-family:宋体"}[Device B]{lang="EN-US"}[发过来的]{style="font-family:宋体"}[NTP]{lang="EN-US"}[响应报文：对端的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址是]{style="font-family:宋体"}[192.168.0.13]{lang="EN-US"}[，本端的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址是]{style="font-family:宋体"}[192.168.0.19]{lang="EN-US"}[，报文入接口是]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[；对端的告警位为]{style="font-family:宋体"}[0]{lang="EN-US"}[，表示处于已同步状态；对端]{style="font-family:宋体"}[NTP]{lang="EN-US"}[的协议版本号为]{style="font-family:宋体"}[3]{lang="EN-US"}[；工作模式为]{style="font-family:宋体"}[4]{lang="EN-US"}[；对端报文的出接口属于的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[索引为]{style="font-family:宋体"}[0]{lang="EN-US"}[；对端时钟的层数为]{style="font-family:宋体"}[2]{lang="EN-US"}[；轮询间隔为]{style="font-family:宋体"}[64]{lang="EN-US"}[秒；精度为]{style="font-family:宋体"}[2]{lang="EN-US"}[的]{style="font-family:宋体"}[18]{lang="EN-US"}[次方分之一秒级别；对端的根延迟为]{style="font-family:宋体"}[0.000]{lang="EN-US"}[；根离差为]{style="font-family:宋体"}[10.941]{lang="EN-US"}[；对端的参考时钟]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[127.127.1.0]{lang="EN-US"}[，即本地时钟；后续的信息分别是参考时间戳、起始时间戳、接收时间戳、发送时间戳和本地处理该报文的时间戳]{style="font-family:宋体"}*
-
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](NTP%20Debug.files/image001.png){#图片 1 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x2158_x2842_1946148300}
-:::
-
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[实际上，上述的报文交互过程会进行多次，此处仅给出前两个报文的信息。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x2158_x2842_212490610}
-:::
-
-[ ]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[\
-]{lang="EN-US" style="font-size:10.5pt;font-family:\"Arial\",\"sans-serif\""}
-
-::: {.Section3 style="layout-grid:15.85pt"}
-:::
-
-::: {#-322447194 .myid}
-[]{#_Toc404796572}[]{#struct_0_x2158_x2842_2072592446}
+\
 
 **SNTP \-- SNTP调试命令 \-- debugging sntp**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2158_x2842_557978083}
+【命令】
 
-[**[debugging sntp]{lang="EN-US"}**[ { **adjustment** \| **all** \| **packet** \| **selection** }]{lang="EN-US"}]{#struct_0_x2158_x2842_x1184357210}
+**[debugging sntp**[ { **adjustment** \| **all** \| **packet** \| **selection** }]]
 
-[**[undo debugging sntp ]{lang="EN-US"}**[{ **adjustment** \| **all** \| **packet** \| **selection** }]{lang="EN-US"}]{#struct_0_x2158_x2842_1796072929}
+**[undo debugging sntp **[{ **adjustment** \| **all** \| **packet** \| **selection** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2158_x2842_x1188204680}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x2158_x2842_213080434}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2158_x2842_x106023638}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2158_x2842_x1529971740}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2158_x2842_x2120961059}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x2158_x2842_1951368707}
+【参数】
 
-[**[adjustment]{lang="EN-US"}**]{#struct_0_x2158_x2842_x1105081844}[：表示]{style="font-family:宋体"}[SNTP]{lang="EN-US"}[时钟调节调试信息开关。]{style="font-family:宋体"}
+**[adjustment**]：表示SNTP时钟调节调试信息开关。
 
-[**[all]{lang="EN-US"}**]{#struct_0_x2158_x2842_406525059}[：表示]{style="font-family:宋体"}[SNTP]{lang="EN-US"}[的所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示SNTP的所有调试信息开关。
 
-[**[packet]{lang="EN-US"}**]{#struct_0_x2158_x2842_x1656471804}[：表示]{style="font-family:宋体"}[SNTP]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}
+**[packet**]：表示SNTP报文调试信息开关。
 
-[**[selection]{lang="EN-US"}**]{#struct_0_x2158_x2842_x643769021}[：表示]{style="font-family:宋体"}[NTP]{lang="EN-US"}[时钟选择调试信息开关。]{style="font-family:宋体"}
+**[selection**]：表示NTP时钟选择调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_x2158_x2842_213145970}
+【描述】
 
-[**[debugging sntp]{lang="EN-US"}**]{#struct_0_x2158_x2842_237779291}[命令用来打开]{style="font-family:宋体"}[SNTP]{lang="EN-US"}[的调试信息开关。]{style="font-family:宋体"}**[undo debugging sntp]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[SNTP]{lang="EN-US"}[的调试信息开关。]{style="font-family:宋体"}
+**[debugging sntp**]命令用来打开SNTP的调试信息开关。**undo debugging sntp**命令用来关闭SNTP的调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[SNTP]{lang="EN-US"}]{#struct_0_x2158_x2842_1477251484}[的调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，SNTP的调试信息开关处于关闭状态。
 
-[[表2-1 ]{lang="EN-US"}[debugging sntp adjustment]{lang="EN-US"}]{#struct_0_x2158_x2842_2021179558}[命令输出信息描述表]{style="font-family:黑体"}
+表2-1 debugging sntp adjustment命令输出信息描述表
 
-[]{#table_struct_0_x518693779}[[字段]{style="font-family:黑体"}]{#struct_0_x2158_x2842_x76464020}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x2158_x2842_x1889001083}
+描述
 
-[[System huff size *size* min delay *delay1* huffpuff *delay2*]{lang="EN-US"}]{#struct_0_x2158_x2842_x414477765}
+System huff size *size* min delay *delay1* huffpuff *delay2*
 
-[[huff-n\'-puff]{lang="EN-US"}]{#struct_0_x2158_x2842_2134870450}[滤波器的阶数为]{style="font-family:宋体"}*[size]{lang="EN-US"}*[，最小延迟为]{style="font-family:宋体"}*[delay1]{lang="EN-US"}*[，过滤后的时延为]{style="font-family:宋体"}*[delay2]{lang="EN-US"}*
+huff-n\'-puff滤波器的阶数为*size*，最小延迟为*delay1*，过滤后的时延为*delay2*
 
-[[Adjust local clock]{lang="EN-US"}]{#struct_0_x2158_x2842_1555957655}
+Adjust local clock
 
-[[调整本地时钟]{style="font-family:宋体"}]{#struct_0_x2158_x2842_245363631}
+调整本地时钟
 
-[[offset: *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_x959554255}
+offset: *string*
 
-[[时钟偏移为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_716840963}
+时钟偏移为*string*
 
-[[jitter: *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_1021708578}
+jitter: *string*
 
-[[时钟偏移量的均方根为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_2134935986}
+时钟偏移量的均方根为*string*
 
-[[freq: *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_849854530}
+freq: *string*
 
-[[时钟频率为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_1692258242}
+时钟频率为*string*
 
-[[stab: *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_x1110068198}
+stab: *string*
 
-[[频率稳定度为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_234623335}
+频率稳定度为*string*
 
-[[poll: *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_x676806027}
+poll: *string*
 
-[[轮询间隔为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_2135001522}
+轮询间隔为*string*
 
-[[Reset clock state]{lang="EN-US"}]{#struct_0_x2158_x2842_1577948161}
+Reset clock state
 
-[[重置时钟状态]{style="font-family:宋体"}]{#struct_0_x2158_x2842_x1682534643}
+重置时钟状态
 
-[[time count difference: *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_953652259}
+time count difference: *string*
 
-[[时间计数差为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_756620236}
+时间计数差为*string*
 
-[[state *state1*-\> *state2*]{lang="EN-US"}]{#struct_0_x2158_x2842_2135067058}
+state *state1*-\> *state2*
 
-[[时钟状态从]{style="font-family:宋体"}*[state1]{lang="EN-US"}*]{#struct_0_x2158_x2842_1984408270}[变为]{style="font-family:宋体"}*[state2]{lang="EN-US"}*
+时钟状态从*state1*变为*state2*
 
-[*[state]{lang="EN-US"}*]{#struct_0_x2158_x2842_2091438611}[取值包括：]{style="font-family:宋体"}
+*[state*]取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0]{lang="EN-US"}]{#struct_0_x2158_x2842_x943085607}[：]{lang="EN-US" style="font-family:宋体"}[unspecified ]{lang="EN-US"}[，未定义]{lang="EN-US" style="font-family:宋体"}
+·0：unspecified ，未定义
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[1]{lang="EN-US"}]{#struct_0_x2158_x2842_2134608306}[：]{lang="EN-US" style="font-family:宋体"}[freq not set ]{lang="EN-US"}[，频率未设定]{lang="EN-US" style="font-family:宋体"}
+·1：freq not set ，频率未设定
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[2]{lang="EN-US"}]{#struct_0_x2158_x2842_x1180324428}[：]{lang="EN-US" style="font-family:宋体"}[freq set ]{lang="EN-US"}[，频率已设定]{lang="EN-US" style="font-family:宋体"}
+·2：freq set ，频率已设定
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[3]{lang="EN-US"}]{#struct_0_x2158_x2842_x125682904}[：]{lang="EN-US" style="font-family:宋体"}[spike detect ]{lang="EN-US"}[，检测到大的频率跳变]{lang="EN-US" style="font-family:宋体"}
+·3：spike detect ，检测到大的频率跳变
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[4]{lang="EN-US"}]{#struct_0_x2158_x2842_1854728912}[：]{lang="EN-US" style="font-family:宋体"}[freq mode ]{lang="EN-US"}[，频率已确定]{lang="EN-US" style="font-family:宋体"}
+·4：freq mode ，频率已确定
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[5]{lang="EN-US"}]{#struct_0_x2158_x2842_x1908749943}[：]{lang="EN-US" style="font-family:宋体"}[clock sync]{lang="EN-US"}[，时钟已同步]{lang="EN-US" style="font-family:宋体"}
+·5：clock sync，时钟已同步
 
-[[count *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_2134673842}
+count *string*
 
-[[计数器的值为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_1990688123}
+计数器的值为*string*
 
-[[One-off system time adjustment failed. Error: *error-code*]{lang="EN-US"}]{#struct_0_x2158_x2842_1303098257}
+One-off system time adjustment failed. Error: *error-code*
 
-[[一次性调整系统时钟失败，错误码为]{style="font-family:宋体"}*[error-code]{lang="EN-US"}*]{#struct_0_x2158_x2842_105695429}
+一次性调整系统时钟失败，错误码为*error-code*
 
-[[Frequency error: *p1* PPM exceeds tolerance *p2* PPM]{lang="EN-US"}]{#struct_0_x2158_x2842_2134739378}
+Frequency error: *p1* PPM exceeds tolerance *p2* PPM
 
-[[当前时钟频率]{style="font-family:宋体"}*[p1]{lang="EN-US"}*]{#struct_0_x2158_x2842_383072445}[超出了频率阈值]{style="font-family:宋体"}*[p2]{lang="EN-US"}*
+当前时钟频率*p1*超出了频率阈值*p2*
 
-[[Failed to adjust system time.]{lang="EN-US"}]{#struct_0_x2158_x2842_x2119812523}
+Failed to adjust system time.
 
-[[调整系统时间失败]{style="font-family:宋体"}]{#struct_0_x2158_x2842_1009531632}
+调整系统时间失败
 
-[ ]{lang="EN-US"}
+表2-2 debugging sntp packet 命令信息描述表
 
-[[表2-2 ]{lang="EN-US"}[debugging sntp packet ]{lang="EN-US"}]{#struct_0_x2158_x2842_x314927135}[命令信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x517179942}[[字段]{style="font-family:黑体"}]{#struct_0_x2158_x2842_2134804914}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x2158_x2842_x714066649}
+packet to *ip-address*
 
-[[packet to *ip-address*]{lang="EN-US"}]{#struct_0_x2158_x2842_x2113488150}
+向*ip-address*发送NTP报文
 
-[[向]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*]{#struct_0_x2158_x2842_x197597530}[发送]{style="font-family:宋体"}[NTP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+count: *count*
 
-[[count: *count*]{lang="EN-US"}]{#struct_0_x2158_x2842_x2778464}
+控制报文中数据的个数为*count*
 
-[[控制报文中数据的个数为]{style="font-family:宋体"}*[count]{lang="EN-US"}*]{#struct_0_x2158_x2842_x479404184}
+RMEOP: *operation*
 
-[[RMEOP: *operation*]{lang="EN-US"}]{#struct_0_x2158_x2842_1798165747}
+控制报文中的操作码为*operation*
 
-[[控制报文中的操作码为]{style="font-family:宋体"}*[operation]{lang="EN-US"}*]{#struct_0_x2158_x2842_2135394738}
+seq: *sequence*
 
-[[seq: *sequence*]{lang="EN-US"}]{#struct_0_x2158_x2842_x1954400884}
+控制报文中的请求序号为*sequence*
 
-[[控制报文中的请求序号为]{style="font-family:宋体"}*[sequence]{lang="EN-US"}*]{#struct_0_x2158_x2842_x938948595}
+status: *status*
 
-[[status: *status*]{lang="EN-US"}]{#struct_0_x2158_x2842_x208238631}
+控制报文中的状态字为*sequence*
 
-[[控制报文中的状态字为]{style="font-family:宋体"}*[sequence]{lang="EN-US"}*]{#struct_0_x2158_x2842_x75197035}
+session ID: *id*
 
-[[session ID: *id*]{lang="EN-US"}]{#struct_0_x2158_x2842_x1634733336}
+控制报文中的连接ID为*id*
 
-[[控制报文中的连接]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x2158_x2842_2135460274}[为]{style="font-family:宋体"}*[id]{lang="EN-US"}*
+offset: *offset*
 
-[[offset: *offset*]{lang="EN-US"}]{#struct_0_x2158_x2842_1964247325}
+控制报文数据偏移量为*offset*
 
-[[控制报文数据偏移量为]{style="font-family:宋体"}*[offset]{lang="EN-US"}*]{#struct_0_x2158_x2842_x994278327}
+auth_seq: *code*
 
-[[auth_seq: *code*]{lang="EN-US"}]{#struct_0_x2158_x2842_1438417065}
+私有报文中的消息验证码为*code*
 
-[[私有报文中的消息验证码为]{style="font-family:宋体"}*[code]{lang="EN-US"}*]{#struct_0_x2158_x2842_1993717444}
+impl: *code*
 
-[[impl: *code*]{lang="EN-US"}]{#struct_0_x2158_x2842_2134870451}
+私有报文中的操作码为*code*
 
-[[私有报文中的操作码为]{style="font-family:宋体"}*[code]{lang="EN-US"}*]{#struct_0_x2158_x2842_1555892119}
+req: *code*
 
-[[req: *code*]{lang="EN-US"}]{#struct_0_x2158_x2842_1789541075}
+私有报文中的请求码为*code*
 
-[[私有报文中的请求码为]{style="font-family:宋体"}*[code]{lang="EN-US"}*]{#struct_0_x2158_x2842_1981803366}
+err_nitems: *code*
 
-[[err_nitems: *code*]{lang="EN-US"}]{#struct_0_x2158_x2842_x1606614571}
+私有报文的错误码或数据项的数目为*code*
 
-[[私有报文的错误码或数据项的数目为]{style="font-family:宋体"}*[code]{lang="EN-US"}*]{#struct_0_x2158_x2842_2134935987}
+itemsize: *size*
 
-[[itemsize: *size*]{lang="EN-US"}]{#struct_0_x2158_x2842_849788994}
+每一个数据项的大小为*size*
 
-[[每一个数据项的大小为]{style="font-family:宋体"}*[size]{lang="EN-US"}*]{#struct_0_x2158_x2842_699750863}
+length: *length*
 
-[[length: *length*]{lang="EN-US"}]{#struct_0_x2158_x2842_x609315448}
+发送报文的长度为*length*
 
-[[发送报文的长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*]{#struct_0_x2158_x2842_1205090339}
+leap: *leap*
 
-[[leap: *leap*]{lang="EN-US"}]{#struct_0_x2158_x2842_2135001523}
+报文中的告警信息为*leap*
 
-[[报文中的告警信息为]{style="font-family:宋体"}*[leap]{lang="EN-US"}*]{#struct_0_x2158_x2842_1578013697}
+version: *version*
 
-[[version: *version*]{lang="EN-US"}]{#struct_0_x2158_x2842_x1901942374}
+报文中的协议版本号为*version*
 
-[[报文中的协议版本号为]{style="font-family:宋体"}*[version]{lang="EN-US"}*]{#struct_0_x2158_x2842_x1349680054}
+mode: *mode*
 
-[[mode: *mode*]{lang="EN-US"}]{#struct_0_x2158_x2842_2135067059}
+报文中的工作模式为*mode*
 
-[[报文中的工作模式为]{style="font-family:宋体"}*[mode]{lang="EN-US"}*]{#struct_0_x2158_x2842_1984473806}
+vrfindex: *index*
 
-[[vrfindex: *index*]{lang="EN-US"}]{#struct_0_x2158_x2842_x1428815277}
+收到或发送报文的VPN索引为*index*
 
-[[收到或发送报文的]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_x2158_x2842_1102203153}[索引为]{style="font-family:宋体"}*[index]{lang="EN-US"}*
+stratum: *stratum*
 
-[[stratum: *stratum*]{lang="EN-US"}]{#struct_0_x2158_x2842_2134608307}
+报文中的层数为*stratum*
 
-[[报文中的层数为]{style="font-family:宋体"}*[stratum]{lang="EN-US"}*]{#struct_0_x2158_x2842_x1180258892}
+poll: *poll*
 
-[[poll: *poll*]{lang="EN-US"}]{#struct_0_x2158_x2842_1224265257}
+报文中的轮询间隔为*poll*
 
-[[报文中的轮询间隔为]{style="font-family:宋体"}*[poll]{lang="EN-US"}*]{#struct_0_x2158_x2842_x418785708}
+precision: *precision*
 
-[[precision: *precision*]{lang="EN-US"}]{#struct_0_x2158_x2842_2134673843}
+报文中的精度为*precision*
 
-[[报文中的精度为]{style="font-family:宋体"}*[precision]{lang="EN-US"}*]{#struct_0_x2158_x2842_1990622587}
+rdel: *delay*
 
-[[rdel: *delay*]{lang="EN-US"}]{#struct_0_x2158_x2842_x281120963}
+报文中的根延时为*delay*
 
-[[报文中的根延时为]{style="font-family:宋体"}*[delay]{lang="EN-US"}*]{#struct_0_x2158_x2842_x1213840287}
+rdsp: *disper*
 
-[[rdsp: *disper*]{lang="EN-US"}]{#struct_0_x2158_x2842_2134739379}
+报文中的根离差为*disper*
 
-[[报文中的根离差为]{style="font-family:宋体"}*[disper]{lang="EN-US"}*]{#struct_0_x2158_x2842_383006909}
+refid: *id*
 
-[[refid: *id*]{lang="EN-US"}]{#struct_0_x2158_x2842_x1410843427}
+报文中参考时钟的标识为*id*
 
-[[报文中参考时钟的标识为]{style="font-family:宋体"}*[id]{lang="EN-US"}*]{#struct_0_x2158_x2842_2134804915}
+当参考时钟为本地时钟时，本字段的取值和本地时钟层数有关：本地时钟层数为1时，为LOCL；本地时钟层数为其它值时，为本地时钟的IP地址
 
-[[当参考时钟为本地时钟时，本字段的取值和本地时钟层数有关：本地时钟层数为]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_x2158_x2842_x714001113}[时，为]{style="font-family:宋体"}[LOCL]{lang="EN-US"}[；本地时钟层数为其它值时，为本地时钟的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+当参考时钟为网络中其它设备的时钟时，本字段为该设备的IP地址
 
-[[当参考时钟为网络中其它设备的时钟时，本字段为该设备的]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x2158_x2842_266034462}[地址]{style="font-family:宋体"}
+reftime: *string*
 
-[[reftime: *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_2135394739}
+报文中的参考时间戳为*string*
 
-[[报文中的参考时间戳为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_x1954466420}
+orgtime: *string*
 
-[[orgtime: *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_x1124591861}
+报文中的启始时间戳为*string*
 
-[[报文中的启始时间戳为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_x1069313736}
+rectime: *string*
 
-[[rectime: *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_2135460275}
+报文中的接收时间戳为*string*
 
-[[报文中的接收时间戳为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_1964312861}
+xmttime: *string*
 
-[[xmttime: *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_x935772893}
+报文中的发送时间戳为*string*
 
-[[报文中的发送时间戳为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_2134870448}
+inptime: *string*
 
-[[inptime: *string*]{lang="EN-US"}]{#struct_0_x2158_x2842_1556481942}
+处理报文的时间戳为*string*
 
-[[处理报文的时间戳为]{style="font-family:宋体"}*[string]{lang="EN-US"}*]{#struct_0_x2158_x2842_x1441353747}
+packet from *ip-address1* to *ip-address2* on *interface-name*
 
-[[packet from *ip-address1* to *ip-address2* on *interface-name*]{lang="EN-US"}]{#struct_0_x2158_x2842_2134935984}
+从接口*interface-name*接收到源IP地址为*ip-address1*、目的IP地址为*ip-address2*的报文
 
-[[从接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_x2158_x2842_849985602}[接收到源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}*[ip-address1]{lang="EN-US"}*[、目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}*[ip-address2]{lang="EN-US"}*[的报文]{style="font-family:宋体"}
+Invalid private packet for wrong item size, received *size1*, should be *size2* or *size3*
 
-[[Invalid private packet for wrong item size, received *size1*, should be *size2* or *size3*]{lang="EN-US"}]{#struct_0_x2158_x2842_2088197234}
+私有报文无效，原因：数据项大小错误，接收到的数据项大小为*size1*，应为*size2*（IPv4报文）或*size3*（IPv6报文）
 
-[[私有报文无效，原因：数据项大小错误，接收到的数据项大小为]{style="font-family:宋体"}*[size1]{lang="EN-US"}*]{#struct_0_x2158_x2842_2135001520}[，应为]{style="font-family:宋体"}*[size2]{lang="EN-US"}*[（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[报文）或]{style="font-family:宋体"}*[size3]{lang="EN-US"}*[（]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[报文）]{style="font-family:宋体"}
+Invalid private packet for not enough data
 
-[[Invalid private packet for not enough data]{lang="EN-US"}]{#struct_0_x2158_x2842_1578079233}
+私有报文无效，原因：数据不完整
 
-[[私有报文无效，原因：数据不完整]{style="font-family:宋体"}]{#struct_0_x2158_x2842_1651645334}
+Sending request packet to *ip-address*, sequence number *number,* error code *code*
 
-[[Sending request packet to *ip-address*, sequence number *number,* error code *code*]{lang="EN-US"}]{#struct_0_x2158_x2842_2135067056}
+向*ip-address*发送请求报文，序列号为*number*，错误码为*code*
 
-[[向]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*]{#struct_0_x2158_x2842_1985325774}[发送请求报文，序列号为]{style="font-family:宋体"}*[number]{lang="EN-US"}*[，错误码为]{style="font-family:宋体"}*[code]{lang="EN-US"}*
+Flushing packet, *number* items
 
-[[Flushing packet, *number* items]{lang="EN-US"}]{#struct_0_x2158_x2842_x1109016933}
+发送*number*个报文
 
-[[发送]{style="font-family:宋体"}*[number]{lang="EN-US"}*]{#struct_0_x2158_x2842_2134608304}[个报文]{style="font-family:宋体"}
+Failed to send packet because too many data, length *length*
 
-[[Failed to send packet because too many data, length *length*]{lang="EN-US"}]{#struct_0_x2158_x2842_x1180193356}
+由于数据过多，发送报文失败，报文长度为*length *
 
-[[由于数据过多，发送报文失败，报文长度为]{style="font-family:宋体"}*[length ]{lang="EN-US"}*]{#struct_0_x2158_x2842_x471000142}
+Failed to set socket option, level *level*, option *option*, error code *code*
 
-[[Failed to set socket option, level *level*, option *option*, error code *code*]{lang="EN-US"}]{#struct_0_x2158_x2842_2134673840}
+设置socket选项失败，socket选项等级为*level*，socket选项为*option*，错误码为*code*
 
-[[设置]{style="font-family:宋体"}[socket]{lang="EN-US"}]{#struct_0_x2158_x2842_1990819195}[选项失败，]{style="font-family:宋体"}[socket]{lang="EN-US"}[选项等级为]{style="font-family:宋体"}*[level]{lang="EN-US"}*[，]{style="font-family:宋体"}[socket]{lang="EN-US"}[选项为]{style="font-family:宋体"}*[option]{lang="EN-US"}*[，错误码为]{style="font-family:宋体"}*[code]{lang="EN-US"}*
+Failed to get VRF index, VPN name *vpn-name*
 
-[[Failed to get VRF index, VPN name *vpn-name*]{lang="EN-US"}]{#struct_0_x2158_x2842_x1440793031}
+获取VPN实例*vpn-name*的索引失败
 
-[[获取]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_x2158_x2842_2134739376}[实例]{style="font-family:宋体"}*[vpn-name]{lang="EN-US"}*[的索引失败]{style="font-family:宋体"}
+表2-3 debugging sntp selection 命令描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表2-3 ]{lang="EN-US"}[debugging sntp selection ]{lang="EN-US"}]{#struct_0_x2158_x2842_383727805}[命令描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x491964976}[[字段]{style="font-family:黑体"}]{#struct_0_x2158_x2842_x1387417302}
+Select peer *ip-address*, offset *offset*
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x2158_x2842_464579481}
+选取*ip-address *作为参考时钟，时钟偏移量为*offset*
 
-[[Select peer *ip-address*, offset *offset*]{lang="EN-US"}]{#struct_0_x2158_x2842_202988748}
+【举例】
 
-[[选取]{style="font-family:宋体"}*[ip-address ]{lang="EN-US"}*]{#struct_0_x2158_x2842_2134804912}[作为参考时钟，时钟偏移量为]{style="font-family:宋体"}*[offset]{lang="EN-US"}*
+\# 网络中有两台设备Device A和Device B，Device A的接口GigabitEthernet1/0/1地址为192.168.0.19，Device B的接口GigabitEthernet1/0/1地址为192.168.0.13，它们之间可以相互ping通。Device B使用本地时钟作为参考时钟，时钟层数为2。在Device A上打开SNTP报文调试开关。Device A作为SNTP客户端，通过客户端/服务器模式与Device B的时间同步时，Device A上打印如下调试信息。
 
-[ ]{lang="EN-US"}
+\<DeviceA\> debugging sntp all
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2158_x2842_x714459865}
+\<DeviceA\> system-view
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2158_x2842_1035797215}[网络中有两台设备]{style="font-family:宋体"}[Device A]{lang="EN-US"}[和]{style="font-family:宋体"}[Device B]{lang="EN-US"}[，]{style="font-family:宋体"}[Device A]{lang="EN-US"}[的接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[地址为]{style="font-family:宋体"}[192.168.0.19]{lang="EN-US"}[，]{style="font-family:宋体"}[Device B]{lang="EN-US"}[的接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[地址为]{style="font-family:宋体"}[192.168.0.13]{lang="EN-US"}[，它们之间可以相互]{style="font-family:宋体"}[ping]{lang="EN-US"}[通。]{style="font-family:宋体"}[Device B]{lang="EN-US"}[使用本地时钟作为参考时钟，时钟层数为]{style="font-family:宋体"}[2]{lang="EN-US"}[。在]{style="font-family:宋体"}[Device A]{lang="EN-US"}[上打开]{style="font-family:宋体"}[SNTP]{lang="EN-US"}[报文调试开关。]{style="font-family:宋体"}[Device A]{lang="EN-US"}[作为]{style="font-family:宋体"}[SNTP]{lang="EN-US"}[客户端，通过客户端]{style="font-family:宋体"}[/]{lang="EN-US"}[服务器模式与]{style="font-family:宋体"}[Device B]{lang="EN-US"}[的时间同步时，]{style="font-family:宋体"}[Device A]{lang="EN-US"}[上打印如下调试信息。]{style="font-family:宋体"}
+DeviceA sntp unicast-server 192.168.0.13 version 3
 
-[[\<DeviceA\> debugging sntp all]{lang="EN-US"}]{#struct_0_x2158_x2842_x1733118230}
+\*Jan 25 20:05:11:765 2012 H3C SNTP/7/PACKET_SEND:
 
-[\<DeviceA\> system-view]{lang="EN-US"}
+ packet to 192.168.0.13, length: 48
 
-[\[DeviceA\] sntp unicast-server 192.168.0.13 version 3]{lang="EN-US"}
+ leap: 0, version: 3, mode: 3, vrfindex: 0
 
-[\*Jan 25 20:05:11:765 2012 H3C SNTP/7/PACKET_SEND:]{lang="EN-US"}
+ stratum:  3, poll: 6, precision: 2\^-10
 
-[ packet to 192.168.0.13, length: 48]{lang="EN-US"}
+ rdel: 0.000, rdsp: 0.946, refid: 192.168.0.13
 
-[ leap: 0, version: 3, mode: 3, vrfindex: 0]{lang="EN-US"}
+ reftime: d2cadeb7.c4631f0b  Wed, Jan 25 2012 20:04:07.767
 
-[ stratum:  3, poll: 6, precision: 2\^-10]{lang="EN-US"}
+ orgtime: d2cadf61.b1c7abfb  Wed, Jan 25 2012 20:06:57.694
 
-[ rdel: 0.000, rdsp: 0.946, refid: 192.168.0.13]{lang="EN-US"}
+ rectime: 00000000.00000000  Thu, Feb  7 2036  6:28:16.000
 
-[ reftime: d2cadeb7.c4631f0b  Wed, Jan 25 2012 20:04:07.767]{lang="EN-US"}
+ xmttime: d2cadef7.c384ff1a  Wed, Jan 25 2012 20:05:11.763
 
-[ orgtime: d2cadf61.b1c7abfb  Wed, Jan 25 2012 20:06:57.694]{lang="EN-US"}
+*[// SNTP*]*模块向Device B发送SNTP时间同步报文：报文的目的地址是192.168.0.13；报文长度为48字节；本地时钟告警位取值为3；本地SNTP协议版本号为3；工作模式为3；报文出端口所在的VPN索引为0（即公网）；本地时钟层数为3；轮询间隔为64秒；时钟精度为2的10次方分之一秒级别；本地根延迟为0.000；根离差为0.946；参考时钟的ID为192.168.0.13，表明向192.168.0.13同步；后续的信息分别是参考时间戳、起始时间戳、接收时间戳和发送时间戳*
 
-[ rectime: 00000000.00000000  Thu, Feb  7 2036  6:28:16.000]{lang="EN-US"}
+\*Jan 25 20:05:11:770 2012 H3C SNTP/7/PACKET_RECV:
 
-[ xmttime: d2cadef7.c384ff1a  Wed, Jan 25 2012 20:05:11.763]{lang="EN-US"}
+ packet from 192.168.0.13 to 192.168.0.19 on GigabitEthernet1/0/1
 
-[*[// SNTP]{lang="EN-US"}*]{#struct_0_x2158_x2842_1924788662}*[模块向]{style="font-family:宋体"}[Device B]{lang="EN-US"}[发送]{style="font-family:宋体"}[SNTP]{lang="EN-US"}[时间同步报文：报文的目的地址是]{style="font-family:宋体"}[192.168.0.13]{lang="EN-US"}[；报文长度为]{style="font-family:宋体"}[48]{lang="EN-US"}[字节；本地时钟告警位取值为]{style="font-family:宋体"}[3]{lang="EN-US"}[；本地]{style="font-family:宋体"}[SNTP]{lang="EN-US"}[协议版本号为]{style="font-family:宋体"}[3]{lang="EN-US"}[；工作模式为]{style="font-family:宋体"}[3]{lang="EN-US"}[；报文出端口所在的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[索引为]{style="font-family:宋体"}[0]{lang="EN-US"}[（即公网）；本地时钟层数为]{style="font-family:宋体"}[3]{lang="EN-US"}[；轮询间隔为]{style="font-family:宋体"}[64]{lang="EN-US"}[秒；时钟精度为]{style="font-family:宋体"}[2]{lang="EN-US"}[的]{style="font-family:宋体"}[10]{lang="EN-US"}[次方分之一秒级别；本地根延迟为]{style="font-family:宋体"}[0.000]{lang="EN-US"}[；根离差为]{style="font-family:宋体"}[0.946]{lang="EN-US"}[；参考时钟的]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[192.168.0.13]{lang="EN-US"}[，表明向]{style="font-family:宋体"}[192.168.0.13]{lang="EN-US"}[同步；后续的信息分别是参考时间戳、起始时间戳、接收时间戳和发送时间戳]{style="font-family:宋体"}*
+ leap: 0, version: 3, mode: 4, vrfindex: 0
 
-[[\*Jan 25 20:05:11:770 2012 H3C SNTP/7/PACKET_RECV:]{lang="EN-US"}]{#struct_0_x2158_x2842_2135394736}
+ stratum:  2, poll: 6, precision: 2\^-18
 
-[ packet from 192.168.0.13 to 192.168.0.19 on GigabitEthernet1/0/1]{lang="EN-US"}
+ rdel: 0.000, rdsp: 10.925, refid: 127.127.1.0
 
-[ leap: 0, version: 3, mode: 4, vrfindex: 0]{lang="EN-US"}
+ reftime: d2cadfe9.1a93d102  Wed, Jan 25 2012 20:09:13.103
 
-[ stratum:  2, poll: 6, precision: 2\^-18]{lang="EN-US"}
+ orgtime: d2cadef7.c384ff1a  Wed, Jan 25 2012 20:05:11.763
 
-[ rdel: 0.000, rdsp: 10.925, refid: 127.127.1.0]{lang="EN-US"}
+ rectime: d2cae015.9b3b85e8  Wed, Jan 25 2012 20:09:57.606
 
-[ reftime: d2cadfe9.1a93d102  Wed, Jan 25 2012 20:09:13.103]{lang="EN-US"}
+ xmttime: d2cae015.9b45ae5f  Wed, Jan 25 2012 20:09:57.606
 
-[ orgtime: d2cadef7.c384ff1a  Wed, Jan 25 2012 20:05:11.763]{lang="EN-US"}
+ inptime: f7decad2.7a58fac4  Sun, Oct 12 2031 15:14:26.477
 
-[ rectime: d2cae015.9b3b85e8  Wed, Jan 25 2012 20:09:57.606]{lang="EN-US"}
-
-[ xmttime: d2cae015.9b45ae5f  Wed, Jan 25 2012 20:09:57.606]{lang="EN-US"}
-
-[ inptime: f7decad2.7a58fac4  Sun, Oct 12 2031 15:14:26.477]{lang="EN-US"}
-
-[*[// Device A]{lang="EN-US"}*]{#struct_0_x2158_x2842_x1954531956}*[收到]{style="font-family:宋体"}[Device B]{lang="EN-US"}[发过来的]{style="font-family:宋体"}[NTP]{lang="EN-US"}[响应报文：对端的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址是]{style="font-family:宋体"}[192.168.0.13]{lang="EN-US"}[，本端的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址是]{style="font-family:宋体"}[192.168.0.19]{lang="EN-US"}[，报文入接口是]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[；对端的告警位为]{style="font-family:宋体"}[0]{lang="EN-US"}[，表示处于已同步状态；对端]{style="font-family:宋体"}[NTP]{lang="EN-US"}[的协议版本号为]{style="font-family:宋体"}[3]{lang="EN-US"}[；工作模式为]{style="font-family:宋体"}[4]{lang="EN-US"}[；对端报文的出接口属于的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[索引为]{style="font-family:宋体"}[0]{lang="EN-US"}[；对端时钟的层数为]{style="font-family:宋体"}[2]{lang="EN-US"}[；轮询间隔为]{style="font-family:宋体"}[64]{lang="EN-US"}[秒；精度为]{style="font-family:宋体"}[2]{lang="EN-US"}[的]{style="font-family:宋体"}[18]{lang="EN-US"}[次方分之一秒级别；对端的根延迟为]{style="font-family:宋体"}[0.000]{lang="EN-US"}[；根离差为]{style="font-family:宋体"}[10.925]{lang="EN-US"}[；对端的参考时钟]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[127.127.1.0]{lang="EN-US"}[，即本地时钟；后续的信息分别是参考时间戳、起始时间戳、接收时间戳、发送时间戳和本地处理该报文的时间戳]{style="font-family:宋体"}*
+*[// Device A*]*收到Device B发过来的NTP响应报文：对端的IP地址是192.168.0.13，本端的IP地址是192.168.0.19，报文入接口是GigabitEthernet1/0/1；对端的告警位为0，表示处于已同步状态；对端NTP的协议版本号为3；工作模式为4；对端报文的出接口属于的VPN索引为0；对端时钟的层数为2；轮询间隔为64秒；精度为2的18次方分之一秒级别；对端的根延迟为0.000；根离差为10.925；对端的参考时钟ID为127.127.1.0，即本地时钟；后续的信息分别是参考时间戳、起始时间戳、接收时间戳、发送时间戳和本地处理该报文的时间戳*

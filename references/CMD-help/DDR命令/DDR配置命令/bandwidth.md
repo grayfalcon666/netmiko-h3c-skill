@@ -1,2509 +1,2307 @@
-::: {#1742433432 .myid}
-[]{#_Toc404785441}[]{#struct_0_x7129_13907_204879112}[]{#_Toc327888469}[]{#_Toc323804932}
 
 **DDR命令 \-- DDR配置命令 \-- bandwidth**
 
 ------------------------------------------------------------------------
 
-[**[bandwidth]{lang="EN-US"}**]{#struct_0_x7129_13907_1045605331}[命令用来配置接口的期望带宽。]{style="font-family:宋体"}
+**[bandwidth**]命令用来配置接口的期望带宽。
 
-[**[undo bandwidth]{lang="EN-US"}**]{#struct_0_x7129_13907_x1343625792}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo bandwidth**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1642519626}
+【命令】
 
-[**[bandwidth]{lang="EN-US"}**[ *bandwidth-value*]{lang="EN-US"}]{#struct_0_x7129_13907_x612821738}
+**[bandwidth** *bandwidth-value*]
 
-[**[undo bandwidth]{lang="EN-US"}**]{#struct_0_x7129_13907_x169648504}
+**[undo bandwidth**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1409711278}
+【缺省情况】
 
-[[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_168204331}[接口的期望带宽＝接口的波特率÷]{style="font-family:宋体"}[1000]{lang="EN-US"}[（]{style="font-family:宋体"}[kbit/s]{lang="EN-US"}[）。]{style="font-family:宋体"}
+Dialer接口的期望带宽＝接口的波特率÷1000（kbit/s）。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1845953239}
+【视图】
 
-[[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_x1643327981}[接口视图]{style="font-family:宋体"}
+Dialer接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1188207176}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_182643727}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x1874542914}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x2145718059}
+【参数】
 
-[*[bandwidth-value]{lang="EN-US"}*]{#struct_0_x7129_13907_x612756202}[：表示接口的期望带宽，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[400000000]{lang="EN-US"}[，单位为]{style="font-family:宋体"}[kbit/s]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[bandwidth-value*]：表示接口的期望带宽，取值范围为1～400000000，单位为kbit/s。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x2145272843}
+【使用指导】
 
-[[接口的期望带宽会影响链路开销值，具体介绍请参见"三层技术]{style="font-family:宋体"}[-IP]{lang="EN-US"}]{#struct_0_x7129_13907_x649889791}[路由配置指导"中的"]{style="font-family:宋体"}[OSPF]{lang="EN-US"}["、"]{style="font-family:宋体"}[OSPFv3]{lang="EN-US"}["和"]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}["。]{style="font-family:宋体"}
+接口的期望带宽会影响链路开销值，具体介绍请参见"三层技术-IP路由配置指导"中的"OSPF"、"OSPFv3"和"IS-IS"。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_987573069}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x1420406089}[配置接口]{style="font-family:宋体"}[Dialer1]{lang="EN-US"}[的期望带宽为]{style="font-family:宋体"}[100kbit/s]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置接口Dialer1的期望带宽为100kbit/s。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_x118251096}
+\<Sysname\> system-view
 
-[\[Sysname\] interface dialer 1]{lang="EN-US"}
+Sysname interface dialer 1
 
-[\[Sysname-Dialer1\] bandwidth 100]{lang="EN-US"}
-:::
-
-::: {#1948332219 .myid}
-[]{#_Toc327888470}[]{#_Toc323804930}[]{#_Toc404785442}[]{#struct_0_x7129_13907_x793879209}[]{#_Toc329007815}[]{#_Toc309912009}
+Sysname-Dialer1 bandwidth 100
 
 **DDR命令 \-- DDR配置命令 \-- default**
 
 ------------------------------------------------------------------------
 
-[**[default]{lang="EN-US"}**]{#struct_0_x7129_13907_241241397}[命令用来恢复当前接口的缺省配置。]{style="font-family:宋体"}
+**[default**]命令用来恢复当前接口的缺省配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1952422742}
+【命令】
 
-[**[default]{lang="EN-US"}**]{#struct_0_x7129_13907_x613346029}
+**[default**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1742029937}
+【视图】
 
-[[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_x2091345004}[接口视图]{style="font-family:宋体"}
+Dialer接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1223463016}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x326725332}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x1552112723}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1559552694}
+【使用指导】
 
-[[接口下的某些配置恢复到缺省情况后，会对设备上当前运行的业务产生影响。建议您在执行该命令前，完全了解其对网络产生的影响。]{style="font-family:宋体"}]{#struct_0_x7129_13907_341457726}
+接口下的某些配置恢复到缺省情况后，会对设备上当前运行的业务产生影响。建议您在执行该命令前，完全了解其对网络产生的影响。
 
-[[您可以在执行]{style="font-family:宋体"}**[default]{lang="EN-US"}**]{#struct_0_x7129_13907_x936480351}[命令后通过]{style="font-family:宋体"}**[display this]{lang="EN-US"}**[命令确认执行效果。对于未能成功恢复缺省的配置，建议您查阅相关功能的命令手册，手工执行恢复该配置缺省情况的命令。如果操作仍然不能成功，您可以通过设备的提示信息定位原因。]{style="font-family:宋体"}
+您可以在执行**default**命令后通过**display this**命令确认执行效果。对于未能成功恢复缺省的配置，建议您查阅相关功能的命令手册，手工执行恢复该配置缺省情况的命令。如果操作仍然不能成功，您可以通过设备的提示信息定位原因。
 
-[[【举例】]{style="font-family:
-黑体"}]{#struct_0_x7129_13907_8577686}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x613280493}[将接口]{style="font-family:宋体"}[Dialer1]{lang="EN-US"}[恢复为缺省配置。]{style="font-family:宋体"}
+\# 将接口Dialer1恢复为缺省配置。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_2123223539}
+\<Sysname\> system-view
 
-[\[Sysname\] interface dialer 1]{lang="EN-US"}
+Sysname interface dialer 1
 
-[\[Sysname-Dialer1\] default]{lang="EN-US"}
-:::
-
-::: {#-1461383778 .myid}
-[]{#_Toc404785443}[]{#struct_0_x7129_13907_x1959164691}
+Sysname-Dialer1 default
 
 **DDR命令 \-- DDR配置命令 \-- description**
 
 ------------------------------------------------------------------------
 
-[**[description]{lang="EN-US"}**]{#struct_0_x7129_13907_711107275}[命令用来设置当前接口的描述信息。]{style="font-family:宋体"}
+**[description**]命令用来设置当前接口的描述信息。
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_x7129_13907_1734279788}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo description**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_704333201}
+【命令】
 
-[**[description]{lang="EN-US"}**[ *text*]{lang="EN-US"}]{#struct_0_x7129_13907_x1226424134}
+**[description** *text*]
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_x7129_13907_1709150188}
+**[undo description**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1350097982}
+【缺省情况】
 
-[[接口的描述信息为"*该接口的接口名*]{style="font-family:宋体"}[ Interface]{lang="EN-US"}]{#struct_0_x7129_13907_x613214957}["，比如：]{style="font-family:宋体"}[Dialer1 Interface]{lang="EN-US"}[。]{style="font-family:宋体"}
+接口的描述信息为"*该接口的接口名* Interface"，比如：Dialer1 Interface。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x162683805}
+【视图】
 
-[[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_1010925399}[接口视图]{style="font-family:宋体"}
+Dialer接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1988337192}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x1555235214}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x1816847793}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x784523611}
+【参数】
 
-[*[text]{lang="EN-US"}*]{#struct_0_x7129_13907_x444477394}[：接口描述信息，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[text*]：接口描述信息，为1～255个字符的字符串，区分大小写。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_339331662}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_1256863998}[设置接口]{style="font-family:宋体"}[Dialer1]{lang="EN-US"}[的描述信息为"]{style="font-family:宋体"}[dialer-intf]{lang="EN-US"}["。]{style="font-family:宋体"}
+\# 设置接口Dialer1的描述信息为"dialer-intf"。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_x613149421}
+\<Sysname\> system-view
 
-[\[Sysname\] interface dialer 1]{lang="EN-US"}
+Sysname interface dialer 1
 
-[\[Sysname-Dialer1\] description dialer-intf]{lang="EN-US"}
-:::
-
-::: {#1811650014 .myid}
-[]{#_Toc404785444}[]{#struct_0_x7129_13907_x217316776}
+Sysname-Dialer1 description dialer-intf
 
 **DDR命令 \-- DDR配置命令 \-- dialer bundle enable**
 
 ------------------------------------------------------------------------
 
-[**[dialer bundle enable]{lang="EN-US"}**]{#struct_0_x7129_13907_x121652359}[命令用来使能共享]{style="font-family:宋体"}[DDR]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[dialer bundle enable**]命令用来使能共享DDR。
 
-[**[undo dialer bundle enable]{lang="EN-US"}**]{#struct_0_x7129_13907_x1061623085}[命令用来禁止共享]{style="font-family:
-宋体"}[DDR]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo dialer bundle enable**]命令用来禁止共享DDR。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x927554332}
+【命令】
 
-[**[dialer bundle enable]{lang="EN-US"}**]{#struct_0_x7129_13907_289222348}
+**[dialer bundle enable**]
 
-[**[undo dialer bundle enable]{lang="EN-US"}**]{#struct_0_x7129_13907_x581571039}
+**[undo dialer bundle enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_737458534}
+【缺省情况】
 
-[[接口上不使能任何类型的]{style="font-family:宋体"}[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_1627158707}[。]{style="font-family:宋体"}
+接口上不使能任何类型的DDR。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1503713432}
+【视图】
 
-[[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_x613608173}[接口视图]{style="font-family:宋体"}
+Dialer接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x600279111}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_166136371}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_143897022}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1213142002}
+【使用指导】
 
-[[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_496245712}[分为共享]{style="font-family:宋体"}[DDR]{lang="EN-US"}[和传统]{style="font-family:宋体"}[DDR]{lang="EN-US"}[。]{style="font-family:宋体"}
+DDR分为共享DDR和传统DDR。
 
-[[用户在使用共享]{style="font-family:宋体"}[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_x880644216}[前，必须首先使用]{style="font-family:宋体"}**[dialer]{lang="EN-US"}**[ **bundle** **enable**]{lang="EN-US"}[命令使能共享]{style="font-family:宋体"}[DDR]{lang="EN-US"}[功能，然后在物理接口下配置]{style="font-family:宋体"}**[dialer]{lang="EN-US"}**[ **bundle-member**]{lang="EN-US"}[将物理接口加入共享]{style="font-family:宋体"}[DDR]{lang="EN-US"}[中。如果此共享]{style="font-family:宋体"}[DDR]{lang="EN-US"}[还需要支持入呼叫则还需要在]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口下配置]{style="font-family:宋体"}**[dialer peer-name]{lang="EN-US"}**[。]{style="font-family:宋体"}
+用户在使用共享DDR前，必须首先使用**dialer** **bundle** **enable**命令使能共享DDR功能，然后在物理接口下配置**dialer** **bundle-member**将物理接口加入共享DDR中。如果此共享DDR还需要支持入呼叫则还需要在Dialer接口下配置**dialer peer-name**。
 
-[[在已经使能了传统]{style="font-family:宋体"}[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_145561495}[的]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口上配置]{style="font-family:宋体"}**[dialer bundle enable]{lang="EN-US"}**[命令，系统会清除原有的传统]{style="font-family:宋体"}[DDR]{lang="EN-US"}[相关的拨号配置。]{style="font-family:宋体"}
+在已经使能了传统DDR的Dialer接口上配置**dialer bundle enable**命令，系统会清除原有的传统DDR相关的拨号配置。
 
-[[在使用]{style="font-family:宋体"}**[undo dialer bundle enable]{lang="EN-US"}**]{#struct_0_x7129_13907_x671657378}[命令后，系统将清除拨号接口下的所有]{style="font-family:宋体"}[DDR]{lang="EN-US"}[配置信息。]{style="font-family:宋体"}
+在使用**undo dialer bundle enable**命令后，系统将清除拨号接口下的所有DDR配置信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x923383350}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x613542637}[在接口]{style="font-family:宋体"}[Dialer1]{lang="EN-US"}[上使能共享]{style="font-family:宋体"}[DDR]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在接口Dialer1上使能共享DDR。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_610593096}
+\<Sysname\> system-view
 
-[\[Sysname\] interface dialer 1]{lang="EN-US"}
+Sysname interface dialer 1
 
-[\[Sysname-Dialer1\] dialer bundle enable]{lang="EN-US"}
+Sysname-Dialer1 dialer bundle enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_990316302}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dialer]{lang="EN-US"}**[ **bundle-member**]{lang="EN-US"}]{#struct_0_x7129_13907_x1938043594}
+·**dialer** **bundle-member**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dialer circular enable]{lang="EN-US"}**]{#struct_0_x7129_13907_x843676339}
+·**dialer circular enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dialer peer-name]{lang="EN-US"}**]{#struct_0_x7129_13907_x1482271253}
-:::
-
-::: {#1054877133 .myid}
-[]{#_Toc404785445}[]{#struct_0_x7129_13907_190322693}
+·**dialer peer-name**
 
 **DDR命令 \-- DDR配置命令 \-- dialer bundle-member**
 
 ------------------------------------------------------------------------
 
-[**[dialer bundle-member]{lang="EN-US"}**]{#struct_0_x7129_13907_x1905717921}[命令用来在共享]{style="font-family:宋体"}[DDR]{lang="EN-US"}[中，将物理接口加入某个]{style="font-family:宋体"}[Dialer bundle]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[dialer bundle-member**]命令用来在共享DDR中，将物理接口加入某个Dialer bundle。
 
-[**[undo dialer bundle-member]{lang="EN-US"}**]{#struct_0_x7129_13907_1880851050}[命令用来取消该配置。]{style="font-family:
-宋体"}
+**[undo dialer bundle-member**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x613477101}
+【命令】
 
-[**[dialer bundle-member ]{lang="EN-US"}***[number]{lang="EN-US"}***[ ]{lang="EN-US"}**[\[ **priority** *priority* \]]{lang="EN-US"}]{#struct_0_x7129_13907_1783318327}
+**[dialer bundle-member ***number***** **priority** *priority* ]
 
-[**[undo dialer bundle-member]{lang="EN-US"}**[ *number*]{lang="EN-US"}]{#struct_0_x7129_13907_x660942150}
+**[undo dialer bundle-member** *number*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1689455321}
+【缺省情况】
 
-[[物理接口不属于任何一个]{style="font-family:宋体"}[Dialer bundle]{lang="EN-US"}]{#struct_0_x7129_13907_x1719091722}[。]{style="font-family:宋体"}
+物理接口不属于任何一个Dialer bundle。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_713410919}
+【视图】
 
-[[物理接口视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_764816316}
+物理接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x517294697}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x1287543713}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x1018744914}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x613411565}
+【参数】
 
-[*[number]{lang="EN-US"}*]{#struct_0_x7129_13907_1371954695}[：物理接口所属的]{style="font-family:宋体"}[Dialer bundle]{lang="EN-US"}[的序号。该序号要与]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口的编号相同。]{style="font-family:宋体"}
+*[number*]：物理接口所属的Dialer bundle的序号。该序号要与Dialer接口的编号相同。
 
-[**[priority]{lang="EN-US"}***[ priority]{lang="EN-US"}*]{#struct_0_x7129_13907_x2006186411}[：物理接口在该]{style="font-family:宋体"}[Dialer bundle]{lang="EN-US"}[中的优先级。]{style="font-family:宋体"}*[priority]{lang="EN-US"}*[取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}*[priority]{lang="EN-US"}*[值越大，优先级越高，优先级高的物理接口会被优先使用，优先级相同时，会轮询选择各物理接口。]{style="font-family:宋体"}
+**[priority*** priority*]：物理接口在该Dialer bundle中的优先级。*priority*取值范围为1～255，缺省值为1。*priority*值越大，优先级越高，优先级高的物理接口会被优先使用，优先级相同时，会轮询选择各物理接口。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_924215830}
+【使用指导】
 
-[[一个物理接口可以是多个]{style="font-family:宋体"}[Dialer bundle]{lang="EN-US"}]{#struct_0_x7129_13907_2082539159}[的成员。多次执行本命令可以将一个物理接口加入不同的]{style="font-family:宋体"}[Dialer bundle]{lang="EN-US"}[。]{style="font-family:宋体"}
+一个物理接口可以是多个Dialer bundle的成员。多次执行本命令可以将一个物理接口加入不同的Dialer bundle。
 
-[[当]{style="font-family:宋体"}[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_x1608893734}[接口不存在时，此命令会创建对应的]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口，并且在]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口上使能共享]{style="font-family:宋体"}[DDR]{lang="EN-US"}[。]{style="font-family:宋体"}
+当Dialer接口不存在时，此命令会创建对应的Dialer接口，并且在Dialer接口上使能共享DDR。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x932452435}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_1422904266}[设置接口]{style="font-family:宋体"}[BRI2/4/0]{lang="EN-US"}[属于]{style="font-family:宋体"}[Dialer bundle1]{lang="EN-US"}[和]{style="font-family:宋体"}[Dialer bundle2]{lang="EN-US"}[，优先级均为]{style="font-family:宋体"}[50]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 设置接口BRI2/4/0属于Dialer bundle1和Dialer bundle2，优先级均为50。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_1505845327}
+\<Sysname\> system-view
 
-[\[Sysname\] interface bri 2/4/0]{lang="EN-US"}
+Sysname interface bri 2/4/0
 
-[\[Sysname-Bri2/4/0\] dialer bundle-member 1 priority 50]{lang="EN-US"}
+Sysname-Bri2/4/0 dialer bundle-member 1 priority 50
 
-[\[Sysname-Bri2/4/0\] dialer bundle-member 2 priority 50]{lang="EN-US"}
+Sysname-Bri2/4/0 dialer bundle-member 2 priority 50
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x612821741}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dialer bundle enable]{lang="EN-US"}**]{#struct_0_x7129_13907_x170238335}
+·**dialer bundle enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[interface dialer]{lang="EN-US"}**]{#struct_0_x7129_13907_1299995906}
-:::
-
-::: {#-2113380412 .myid}
-[]{#_Toc404785446}[]{#struct_0_x7129_13907_x171330217}
+·**interface dialer**
 
 **DDR命令 \-- DDR配置命令 \-- dialer callback-center**
 
 ------------------------------------------------------------------------
 
-[**[dialer callback-center]{lang="EN-US"}**]{#struct_0_x7129_13907_866124319}[命令用来配置]{style="font-family:宋体"}[PPP]{lang="EN-US"}[回呼的参照依据。]{style="font-family:宋体"}
+**[dialer callback-center**]命令用来配置PPP回呼的参照依据。
 
-[**[undo dialer callback-center]{lang="EN-US"}**]{#struct_0_x7129_13907_521915246}[命令用来取消该配置。]{style="font-family:
-宋体"}
+**[undo dialer callback-center**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_864094918}
+【命令】
 
-[**[dialer callback-center]{lang="EN-US"}**[ \[ **dial-number** \| **user** \] \*]{lang="EN-US"}]{#struct_0_x7129_13907_x403998736}
+**[dialer callback-center**[ [ **dial-number** \| **user** ] \*]]
 
-[**[undo dialer callback-center]{lang="EN-US"}**]{#struct_0_x7129_13907_x1398172002}
+**[undo dialer callback-center**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x2054967699}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x7129_13907_x612756205}[回呼的参照依据，无法进行]{style="font-family:宋体"}[PPP]{lang="EN-US"}[回呼。]{style="font-family:宋体"}
+未配置PPP回呼的参照依据，无法进行PPP回呼。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x2144814091}
+【视图】
 
-[[拨号接口视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_x29535912}
+拨号接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x943846317}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x1693952465}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_2025901222}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x692086097}
+【参数】
 
-[**[dial-number]{lang="EN-US"}**]{#struct_0_x7129_13907_x3666321}[：根据配置的本地用户名对应的]{style="font-family:宋体"}**[authorization-attribute callback-number ]{lang="EN-US"}***[callback-number]{lang="EN-US"}*[命令中的参数]{style="font-family:宋体"}*[callback-number]{lang="EN-US"}*[确定回呼的拨号串。]{style="font-family:宋体"}
+**[dial-number**]：根据配置的本地用户名对应的**authorization-attribute callback-number ***callback-number*命令中的参数*callback-number*确定回呼的拨号串。
 
-[**[user]{lang="EN-US"}**]{#struct_0_x7129_13907_x1795937345}[：根据配置的]{style="font-family:宋体"}**[dialer route]{lang="EN-US"}**[命令中的参数]{style="font-family:宋体"}**[user ]{lang="EN-US"}***[hostname]{lang="EN-US"}*[确定回呼的拨号串。]{style="font-family:宋体"}
+**[user**]：根据配置的**dialer route**命令中的参数**user ***hostname*确定回呼的拨号串。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1048134940}
+【使用指导】
 
-[[当设备作为]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x7129_13907_x613346028}[回呼的]{style="font-family:宋体"}[Server]{lang="EN-US"}[端时，必须配置本命令。]{style="font-family:宋体"}
+当设备作为PPP回呼的Server端时，必须配置本命令。
 
-[[当]{style="font-family:宋体"}**[user]{lang="EN-US"}**]{#struct_0_x7129_13907_x1741964401}[和]{style="font-family:宋体"}**[dial-number]{lang="EN-US"}**[两个参数同时被应用时，设备首先尝试按照第一个参数的设置进行回呼，当无法进行回呼时，再尝试应用第二个参数的设置进行回呼。]{style="font-family:宋体"}**[dialer callback-center]{lang="EN-US"}**[命令不带任何参数与]{style="font-family:宋体"}**[dialer callback-center]{lang="EN-US"}**[ **user dial-number**]{lang="EN-US"}[命令功能相同。]{style="font-family:宋体"}
+当**user**和**dial-number**两个参数同时被应用时，设备首先尝试按照第一个参数的设置进行回呼，当无法进行回呼时，再尝试应用第二个参数的设置进行回呼。**dialer callback-center**命令不带任何参数与**dialer callback-center** **user dial-number**命令功能相同。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x684183194}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_1702023106}[配置设备作为]{style="font-family:宋体"}[PPP]{lang="EN-US"}[回呼的]{style="font-family:宋体"}[Server]{lang="EN-US"}[端，并且设置回呼方式为]{style="font-family:宋体"}**[user]{lang="EN-US"}**[，根据]{style="font-family:宋体"}**[dialer route]{lang="EN-US"}**[命令中配置的用户名对应的拨号串进行回呼。]{style="font-family:宋体"}
+\# 配置设备作为PPP回呼的Server端，并且设置回呼方式为**user**，根据**dialer route**命令中配置的用户名对应的拨号串进行回呼。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_x1310085298}
+\<Sysname\> system-view
 
-[\[Sysname\] interface serial 2/1/0]{lang="EN-US"}
+Sysname interface serial 2/1/0
 
-[\[Sysname-Serial2/1/0\] ppp callback server]{lang="EN-US"}
+Sysname-Serial2/1/0 ppp callback server
 
-[\[Sysname-Serial2/1/0\] dialer callback-center user]{lang="EN-US"}
+Sysname-Serial2/1/0 dialer callback-center user
 
-[\[Sysname-Serial2/1/0\] dialer route ip 1.1.1.2 8810052 user Sysnameb]{lang="EN-US"}
+Sysname-Serial2/1/0 dialer route ip 1.1.1.2 8810052 user Sysnameb
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x1048554542}[配置设备作为]{style="font-family:宋体"}[PPP]{lang="EN-US"}[回呼的]{style="font-family:宋体"}[Server]{lang="EN-US"}[端，回呼方式为]{style="font-family:宋体"}**[dial-number]{lang="EN-US"}**[，根据]{style="font-family:宋体"}[PPP]{lang="EN-US"}[认证中接收的对端用户名查找本地用户表确定回呼的拨号串。]{style="font-family:宋体"}
+\# 配置设备作为PPP回呼的Server端，回呼方式为**dial-number**，根据PPP认证中接收的对端用户名查找本地用户表确定回呼的拨号串。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_543032451}
+\<Sysname\> system-view
 
-[\[Sysname\] local-user usera]{lang="EN-US"}
+Sysname local-user usera
 
-[\[Sysname-luser-usera\] password simple usera]{lang="EN-US"}
+Sysname-luser-usera password simple usera
 
-[\[Sysname-luser-usera\] service-type ppp]{lang="EN-US"}
+Sysname-luser-usera service-type ppp
 
-[\[Sysname-luser-usera\] authorization-attribute callback-number 8810048]{lang="EN-US"}
+Sysname-luser-usera authorization-attribute callback-number 8810048
 
-[\[Sysname-luser-usera\] quit]{lang="EN-US"}
+Sysname-luser-usera quit
 
-[\[Sysname\] interface serial 2/1/0]{lang="EN-US"}
+Sysname interface serial 2/1/0
 
-[\[Sysname-Serial2/1/0\] ppp callback server]{lang="EN-US"}
+Sysname-Serial2/1/0 ppp callback server
 
-[\[Sysname-Serial2/1/0\] dialer callback-center dial-number]{lang="EN-US"}
+Sysname-Serial2/1/0 dialer callback-center dial-number
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x613280492}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ppp callback]{lang="EN-US"}**]{#struct_0_x7129_13907_2123289075}
-:::
-
-::: {#292746133 .myid}
-[]{#_Toc404785447}[]{#struct_0_x7129_13907_x1212596085}[]{#_Toc298941317}[]{#_Toc32572684}
+·**ppp callback**
 
 **DDR命令 \-- DDR配置命令 \-- dialer call-in**
 
 ------------------------------------------------------------------------
 
-[**[dialer call-in]{lang="EN-US"}**]{#struct_0_x7129_13907_161926881}[命令用来配置允许呼入的]{style="font-family:宋体"}[ISDN]{lang="EN-US"}[主叫号码，或按照该]{style="font-family:宋体"}[ISDN]{lang="EN-US"}[主叫号码进行回呼。]{style="font-family:宋体"}
+**[dialer call-in**]命令用来配置允许呼入的ISDN主叫号码，或按照该ISDN主叫号码进行回呼。
 
-[**[undo dialer call-in]{lang="EN-US"}**]{#struct_0_x7129_13907_116173375}[命令用来取消该配置。]{style="font-family:宋体"}
+**[undo dialer call-in**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_351514945}
+【命令】
 
-[**[dialer call-in]{lang="EN-US"}**[ *remote-number* \[ **callback** \]]{lang="EN-US"}]{#struct_0_x7129_13907_x19649349}
+**[dialer call-in** *remote-number* [ **callback** ]]
 
-[**[undo dialer call-in]{lang="EN-US"}**[ *remote-number*]{lang="EN-US"}]{#struct_0_x7129_13907_756664411}
+**[undo dialer call-in** *remote-number*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x709555316}
+【缺省情况】
 
-[[未配置按照]{style="font-family:宋体"}[ISDN]{lang="EN-US"}]{#struct_0_x7129_13907_x208127928}[主叫号码来过滤呼叫。]{style="font-family:宋体"}
+未配置按照ISDN主叫号码来过滤呼叫。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x613214956}
+【视图】
 
-[[拨号接口视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_x162749341}
+拨号接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x544345818}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_2107224890}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_396421532}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_2145620497}
+【参数】
 
-[*[remote-number]{lang="EN-US"}*]{#struct_0_x7129_13907_768620432}[：]{style="font-family:宋体"}[ISDN]{lang="EN-US"}[主叫号码，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[30]{lang="EN-US"}[个字符的字符串，不区分大小写，字符"]{style="font-family:宋体"}[\*]{lang="EN-US"}["通配任意一个字符。]{style="font-family:宋体"}
+*[remote-number*]：ISDN主叫号码，为1～30个字符的字符串，不区分大小写，字符"\*"通配任意一个字符。
 
-[**[callback]{lang="EN-US"}**]{#struct_0_x7129_13907_x1162596329}[：如果]{style="font-family:宋体"}[ISDN]{lang="EN-US"}[主叫号码与参数]{style="font-family:宋体"}*[remote-number]{lang="EN-US"}*[相匹配，则设备发起回呼。]{style="font-family:宋体"}
+**[callback**]：如果ISDN主叫号码与参数*remote-number*相匹配，则设备发起回呼。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x2004399740}
+【使用指导】
 
-[**[dialer call-in]{lang="EN-US"}**]{#struct_0_x7129_13907_x2090267349}[命令用来对]{style="font-family:宋体"}[ISDN]{lang="EN-US"}[拨入进行预处理，以确定该主叫号码用户是否允许呼入，如果程控交换机没有提供主叫号码则直接拒绝该呼叫。]{style="font-family:宋体"}
+**[dialer call-in**]命令用来对ISDN拨入进行预处理，以确定该主叫号码用户是否允许呼入，如果程控交换机没有提供主叫号码则直接拒绝该呼叫。
 
-[[当]{style="font-family:宋体"}**[dialer call-in]{lang="EN-US"}**]{#struct_0_x7129_13907_837017059}[命令中携带了]{style="font-family:宋体"}**[callback]{lang="EN-US"}**[参数时，]{style="font-family:宋体"}[在配置了]{style="font-family:宋体"}**[dialer call-in]{lang="EN-US"}**[的拨号接口上同时需要配置]{style="font-family:宋体"}**[dialer route]{lang="EN-US"}**[或者]{style="font-family:宋体"}**[dialer number]{lang="EN-US"}**[命令，]{style="font-family:宋体"}**[dialer route]{lang="EN-US"}**[或者]{style="font-family:宋体"}**[dialer number]{lang="EN-US"}**[命令中的]{style="font-family:宋体"}*[dial-number]{lang="EN-US"}*[要与]{style="font-family:宋体"}**[dialer call-in]{lang="EN-US"}**[命令中的]{style="font-family:宋体"}*[remote-number]{lang="EN-US"}*[一致，以保证进行正确的回呼。]{style="font-family:宋体"}
+当**dialer call-in**命令中携带了**callback**参数时，在配置了**dialer call-in**的拨号接口上同时需要配置**dialer route**或者**dialer number**命令，**dialer route**或者**dialer number**命令中的*dial-number*要与**dialer call-in**命令中的*remote-number*一致，以保证进行正确的回呼。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x613149420}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x217251240}[设置向]{style="font-family:宋体"}[ISDN]{lang="EN-US"}[主叫号码为]{style="font-family:宋体"}[8810152]{lang="EN-US"}[的用户进行回呼。]{style="font-family:宋体"}
+\# 设置向ISDN主叫号码为8810152的用户进行回呼。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_x918790820}
+\<Sysname\> system-view
 
-[\[Sysname\] interface bri 2/4/0]{lang="EN-US"}
+Sysname interface bri 2/4/0
 
-[\[Sysname-Bri2/4/0\] dialer route ip 100.1.1.2 8810152]{lang="EN-US"}
+Sysname-Bri2/4/0 dialer route ip 100.1.1.2 8810152
 
-[\[Sysname-Bri2/4/0\] dialer call-in 8810152 callback]{lang="EN-US"}
+Sysname-Bri2/4/0 dialer call-in 8810152 callback
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x300690750}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dialer callback-center]{lang="EN-US"}**]{#struct_0_x7129_13907_272101799}
-:::
-
-::: {#1513922620 .myid}
-[]{#_Toc404785448}[]{#struct_0_x7129_13907_1305981642}[]{#_Toc298941320}[]{#_Toc257709105}
+·**dialer callback-center**
 
 **DDR命令 \-- DDR配置命令 \-- dialer circular enable**
 
 ------------------------------------------------------------------------
 
-[**[dialer circular enable]{lang="EN-US"}**]{#struct_0_x7129_13907_x14641310}[命令用来使能传统]{style="font-family:宋体"}[DDR]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[dialer circular enable**]命令用来使能传统DDR。
 
-[**[undo dialer circular enable]{lang="EN-US"}**]{#struct_0_x7129_13907_x912089933}[命令用来禁止传统]{style="font-family:
-宋体"}[DDR]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo dialer circular enable**]命令用来禁止传统DDR。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x234159625}
+【命令】
 
-[**[dialer circular enable]{lang="EN-US"}**]{#struct_0_x7129_13907_x613608172}
+**[dialer circular enable**]
 
-[**[undo dialer circular enable]{lang="EN-US"}**]{#struct_0_x7129_13907_x600213575}
+**[undo dialer circular enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x2130805729}
+【缺省情况】
 
-[[接口上不使能任何类型的]{style="font-family:宋体"}[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_x1512325190}[。]{style="font-family:宋体"}
+接口上不使能任何类型的DDR。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x701910015}
+【视图】
 
-[[拨号接口视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_x405605947}
+拨号接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1674655919}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_431067798}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x351771269}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1723826673}
+【使用指导】
 
-[[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_x613542636}[分为共享]{style="font-family:宋体"}[DDR]{lang="EN-US"}[和传统]{style="font-family:宋体"}[DDR]{lang="EN-US"}[。]{style="font-family:宋体"}
+DDR分为共享DDR和传统DDR。
 
-[[用户在使用传统]{style="font-family:宋体"}[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_610658632}[前，必须首先使用]{style="font-family:宋体"}**[dialer circular enable]{lang="EN-US"}**[命令使能传统]{style="font-family:宋体"}[DDR]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+用户在使用传统DDR前，必须首先使用**dialer circular enable**命令使能传统DDR功能。
 
-[[在已经使能了共享]{style="font-family:宋体"}[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_x383521068}[的]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口上配置]{style="font-family:宋体"}**[dialer circular enable]{lang="EN-US"}**[命令，系统会清除原有的共享]{style="font-family:宋体"}[DDR]{lang="EN-US"}[相关的拨号配置。]{style="font-family:宋体"}
+在已经使能了共享DDR的Dialer接口上配置**dialer circular enable**命令，系统会清除原有的共享DDR相关的拨号配置。
 
-[[在使用]{style="font-family:宋体"}**[undo dialer circular enable]{lang="EN-US"}**]{#struct_0_x7129_13907_1138145640}[命令后，系统将清除拨号接口下的所有]{style="font-family:宋体"}[DDR]{lang="EN-US"}[配置信息。]{style="font-family:宋体"}
+在使用**undo dialer circular enable**命令后，系统将清除拨号接口下的所有DDR配置信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x247345671}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x417942749}[在接口]{style="font-family:宋体"}[Serial2/1/0]{lang="EN-US"}[上使能传统]{style="font-family:宋体"}[DDR]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在接口Serial2/1/0上使能传统DDR。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_1714940360}
+\<Sysname\> system-view
 
-[\[Sysname\] interface serial 2/1/0]{lang="EN-US"}
+Sysname interface serial 2/1/0
 
-[\[Sysname-Serial2/1/0\] dialer circular enable]{lang="EN-US"}
+Sysname-Serial2/1/0 dialer circular enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1691220989}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dialer bundle enable]{lang="EN-US"}**]{#struct_0_x7129_13907_1769652398}
+·**dialer bundle enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dialer circular-group]{lang="EN-US"}**]{#struct_0_x7129_13907_x613477100}
-:::
-
-::: {#951987976 .myid}
-[]{#_Toc404785449}[]{#struct_0_x7129_13907_1783252791}[]{#_Toc298941318}[]{#_Toc32572697}
+·**dialer circular-group**
 
 **DDR命令 \-- DDR配置命令 \-- dialer circular-group**
 
 ------------------------------------------------------------------------
 
-[**[dialer circular-group]{lang="EN-US"}**]{#struct_0_x7129_13907_x709521802}[命令用来在传统]{style="font-family:宋体"}[DDR]{lang="EN-US"}[中，将物理接口加入某个拨号循环组。]{style="font-family:宋体"}
+**[dialer circular-group**]命令用来在传统DDR中，将物理接口加入某个拨号循环组。
 
-[**[undo dialer circular-group]{lang="EN-US"}**]{#struct_0_x7129_13907_960783837}[命令用来取消该配置。]{style="font-family:
-宋体"}
+**[undo dialer circular-group**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1747720360}
+【命令】
 
-[**[dialer circular-group]{lang="EN-US"}**[ *number*]{lang="EN-US"}]{#struct_0_x7129_13907_2014897004}
+**[dialer circular-group** *number*]
 
-[**[undo dialer circular-group]{lang="EN-US"}**]{#struct_0_x7129_13907_x291607497}
+**[undo dialer circular-group**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1623563017}
+【缺省情况】
 
-[[物理接口不属于任何一个拨号循环组。]{style="font-family:宋体"}]{#struct_0_x7129_13907_x594439924}
+物理接口不属于任何一个拨号循环组。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1074924723}
+【视图】
 
-[[物理接口视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_x613411564}
+物理接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1371889159}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x802481521}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_242902527}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1850329493}
+【参数】
 
-[*[number]{lang="EN-US"}*]{#struct_0_x7129_13907_1842697578}[：物理接口所属的拨号循环组的序号。该序号要与]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口的编号相同。]{style="font-family:宋体"}
+*[number*]：物理接口所属的拨号循环组的序号。该序号要与Dialer接口的编号相同。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_490732678}
+【使用指导】
 
-[[在传统]{style="font-family:宋体"}[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_x987826170}[中，一个物理接口只能属于一个拨号循环组，一个拨号循环组可以包含多个物理接口。当有呼叫从一个拨号循环组上发起时，按照优先级从高到低从属于该拨号循环组的物理接口中选择一个物理接口建立呼叫。]{style="font-family:宋体"}
+在传统DDR中，一个物理接口只能属于一个拨号循环组，一个拨号循环组可以包含多个物理接口。当有呼叫从一个拨号循环组上发起时，按照优先级从高到低从属于该拨号循环组的物理接口中选择一个物理接口建立呼叫。
 
-[[当]{style="font-family:宋体"}[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_x1584714079}[接口不存在时，此命令会创建对应的]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口，并且在该]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口上使能传统]{style="font-family:宋体"}[DDR]{lang="EN-US"}[。]{style="font-family:宋体"}
+当Dialer接口不存在时，此命令会创建对应的Dialer接口，并且在该Dialer接口上使能传统DDR。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1974061548}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x612821740}[将接口]{style="font-family:宋体"}[Serial2/1/0]{lang="EN-US"}[和]{style="font-family:宋体"}[Serial2/1/1]{lang="EN-US"}[加入拨号循环组]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 将接口Serial2/1/0和Serial2/1/1加入拨号循环组1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_x170172799}
+\<Sysname\> system-view
 
-[\[Sysname\] interface dialer 1]{lang="EN-US"}
+Sysname interface dialer 1
 
-[\[Sysname-Dialer1\] quit]{lang="EN-US"}
+Sysname-Dialer1 quit
 
-[\[Sysname\] interface serial 2/1/0]{lang="EN-US"}
+Sysname interface serial 2/1/0
 
-[\[Sysname-Serial2/1/0\] dialer circular-group 1]{lang="EN-US"}
+Sysname-Serial2/1/0 dialer circular-group 1
 
-[\[Sysname-Serial2/1/0\] quit]{lang="EN-US"}
+Sysname-Serial2/1/0 quit
 
-[\[Sysname\] interface serial 2/1/1]{lang="EN-US"}
+Sysname interface serial 2/1/1
 
-[\[Sysname-Serial2/1/1\] dialer circular-group 1]{lang="EN-US"}
+Sysname-Serial2/1/1 dialer circular-group 1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_2045963051}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dialer circular enable]{lang="EN-US"}**]{#struct_0_x7129_13907_1762509164}
+·**dialer circular enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dialer priority]{lang="EN-US"}**]{#struct_0_x7129_13907_x1346559255}
+·**dialer priority**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[interface dialer]{lang="EN-US"}**]{#struct_0_x7129_13907_x753790258}
-:::
-
-::: {#1799781636 .myid}
-[]{#_Toc404785450}[]{#struct_0_x7129_13907_235729582}[]{#_Toc298941319}[]{#_Toc13387698}[]{#_Toc355282345}[]{#_Toc355343520}[]{#_Toc355357211}[]{#_Toc355282346}[]{#_Toc355343521}[]{#_Toc355357212}[]{#_Toc355282347}[]{#_Toc355343522}[]{#_Toc355357213}[]{#_Toc355282348}[]{#_Toc355343523}[]{#_Toc355357214}[]{#_Toc355282349}[]{#_Toc355343524}[]{#_Toc355357215}[]{#_Toc355282350}[]{#_Toc355343525}[]{#_Toc355357216}[]{#_Toc355282351}[]{#_Toc355343526}[]{#_Toc355357217}[]{#_Toc355282352}[]{#_Toc355343527}[]{#_Toc355357218}[]{#_Toc355282353}[]{#_Toc355343528}[]{#_Toc355357219}[]{#_Toc355282354}[]{#_Toc355343529}[]{#_Toc355357220}[]{#_Toc355282355}[]{#_Toc355343530}[]{#_Toc355357221}[]{#_Toc355282356}[]{#_Toc355343531}[]{#_Toc355357222}[]{#_Toc355282357}[]{#_Toc355343532}[]{#_Toc355357223}[]{#_Toc355282358}[]{#_Toc355343533}[]{#_Toc355357224}[]{#_Toc355282359}[]{#_Toc355343534}[]{#_Toc355357225}[]{#_Toc355282360}[]{#_Toc355343535}[]{#_Toc355357226}[]{#_Toc355282361}[]{#_Toc355343536}[]{#_Toc355357227}[]{#_Toc355282362}[]{#_Toc355343537}[]{#_Toc355357228}[]{#_Toc355282363}[]{#_Toc355343538}[]{#_Toc355357229}[]{#_Toc355282364}[]{#_Toc355343539}[]{#_Toc355357230}[]{#_Toc355282365}[]{#_Toc355343540}[]{#_Toc355357231}[]{#_Toc355282366}[]{#_Toc355343541}[]{#_Toc355357232}[]{#_Toc355282367}[]{#_Toc355343542}[]{#_Toc355357233}[]{#_Toc355282368}[]{#_Toc355343543}[]{#_Toc355357234}[]{#_Toc355282369}[]{#_Toc355343544}[]{#_Toc355357235}[]{#_Toc355282370}[]{#_Toc355343545}[]{#_Toc355357236}[]{#_Toc355282371}[]{#_Toc355343546}[]{#_Toc355357237}[]{#_Toc355282372}[]{#_Toc355343547}[]{#_Toc355357238}[]{#_Toc355282373}[]{#_Toc355343548}[]{#_Toc355357239}[]{#_Toc355282374}[]{#_Toc355343549}[]{#_Toc355357240}[]{#_Toc317002177}[]{#_Toc317002234}[]{#_Toc317002178}[]{#_Toc317002235}[]{#_Toc317002179}[]{#_Toc317002236}
+·**interface dialer**
 
 **DDR命令 \-- DDR配置命令 \-- dialer disconnect**
 
 ------------------------------------------------------------------------
 
-[]{#_Toc32639996}[**[dialer disconnect]{lang="EN-US"}**]{#struct_0_x7129_13907_x612756204}[命令用来拆除拨号链路。]{style="font-family:宋体"}
+**[dialer disconnect**]命令用来拆除拨号链路。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x2144879627}
+【命令】
 
-[**[dialer disconnect]{lang="EN-US"}**[ ]{lang="EN-US"}[\[ **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_x7129_13907_1967170994}
+**[dialer disconnect** **interface** *interface-type interface-number* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x329165914}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_603693829}[]{#_Toc32639998}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_2012781836}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_1045857259}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x178848822}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x2027463123}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_x7129_13907_x356364068}[：拆除指定接口的拨号链路。]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[用来指定接口类型和编号。如果不指定接口，则拆除所有接口的拨号链路。]{style="font-family:
-宋体"}
+**[interface** *interface-type interface-number*]：拆除指定接口的拨号链路。*interface-type interface-number*用来指定接口类型和编号。如果不指定接口，则拆除所有接口的拨号链路。
 
-[]{#struct_0_x7129_13907_1748624602}[[【举例】]{style="font-family:黑体"}]{#_Toc32640000}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_471232807}[拆除接口]{style="font-family:宋体"}[Dialer0]{lang="EN-US"}[的拔号链路。]{style="font-family:宋体"}
+\# 拆除接口Dialer0的拔号链路。
 
-[[\<Sysname\> dialer disconnect interface dialer 0]{lang="EN-US"}]{#struct_0_x7129_13907_737055957}
-:::
-
-::: {#485503561 .myid}
-[]{#_Toc404785451}[]{#struct_0_x7129_13907_x1948778126}[]{#_Toc298941321}[]{#_Toc41484831}
+\<Sysname\> dialer disconnect interface dialer 0
 
 **DDR命令 \-- DDR配置命令 \-- dialer flow-interval**
 
 ------------------------------------------------------------------------
 
-[**[dialer flow-interval]{lang="EN-US"}**]{#struct_0_x7129_13907_1734298610}[命令用来配置]{style="font-family:宋体"}[DDR]{lang="EN-US"}[提供流量统计信息的间隔时间。]{style="font-family:宋体"}
+**[dialer flow-interval**]命令用来配置DDR提供流量统计信息的间隔时间。
 
-[**[undo dialer flow-interval]{lang="EN-US"}**]{#struct_0_x7129_13907_1123269173}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo dialer flow-interval**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_756567446}
+【命令】
 
-[**[dialer flow-interval]{lang="EN-US"}**[ *interval*]{lang="EN-US"}]{#struct_0_x7129_13907_x1765143671}
+**[dialer flow-interval** *interval*]
 
-[**[undo dialer flow-interval]{lang="EN-US"}**]{#struct_0_x7129_13907_1562553663}
+**[undo dialer flow-interval**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1748559066}
+【缺省情况】
 
-[[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_x1569825629}[提供流量统计信息的间隔时间为]{style="font-family:宋体"}[20]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+DDR提供流量统计信息的间隔时间为20秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1773858773}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_601378995}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x155838767}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_466261987}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x710537390}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_500057887}
+【参数】
 
-[*[interval]{lang="EN-US"}*]{#struct_0_x7129_13907_x1732528090}[：]{style="font-family:宋体"}[DDR]{lang="EN-US"}[提供流量统计信息的间隔时间，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1500]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[interval*]：DDR提供流量统计信息的间隔时间，取值范围为1～1500，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1356799324}
+【使用指导】
 
-[[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_1748755674}[以用户配置的时间间隔为]{style="font-family:宋体"}[MP]{lang="EN-US"}[捆绑提供拨号链路上的流量统计信息。]{style="font-family:宋体"}
+DDR以用户配置的时间间隔为MP捆绑提供拨号链路上的流量统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1103567460}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_72070855}[配置]{style="font-family:宋体"}[DDR]{lang="EN-US"}[提供流量统计信息的间隔时间为]{style="font-family:宋体"}[3]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置DDR提供流量统计信息的间隔时间为3秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_x1709221266}
+\<Sysname\> system-view
 
-[\[Sysname\] dialer flow-interval 3]{lang="EN-US"}
+Sysname dialer flow-interval 3
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x2085738489}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dialer threshold]{lang="EN-US"}**]{#struct_0_x7129_13907_x608512336}
-:::
-
-::: {#-1228391598 .myid}
-[]{#_Toc404785452}[]{#struct_0_x7129_13907_1218840589}[]{#_Toc298941323}[]{#_Toc14925817}
+·**dialer threshold**
 
 **DDR命令 \-- DDR配置命令 \-- dialer number**
 
 ------------------------------------------------------------------------
 
-[**[dialer number]{lang="EN-US"}**]{#struct_0_x7129_13907_x711982043}[命令用来设定呼叫单个对端的拨号串。]{style="font-family:宋体"}
+**[dialer number**]命令用来设定呼叫单个对端的拨号串。
 
-[**[undo dialer number]{lang="EN-US"}**]{#struct_0_x7129_13907_x240784953}[命令用来删除已设定的拨号串。]{style="font-family:宋体"}
+**[undo dialer number**]命令用来删除已设定的拨号串。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1508589314}
+【命令】
 
-[**[dialer number]{lang="EN-US"}**[ *dial-number* \[ **autodial** \]]{lang="EN-US"}]{#struct_0_x7129_13907_1748690138}
+**[dialer number** *dial-number* [ **autodial** ]]
 
-[**[undo dialer number]{lang="EN-US"}**]{#struct_0_x7129_13907_2002404242}
+**[undo dialer number**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1864832427}
+【缺省情况】
 
-[[未配置呼叫对端的拨号串。]{style="font-family:宋体"}]{#struct_0_x7129_13907_x1132526258}
+未配置呼叫对端的拨号串。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_404765548}
+【视图】
 
-[[拨号接口视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_106222016}
+拨号接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1206539280}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x710067006}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x1465235885}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x738153191}
+【参数】
 
-[*[dial-number]{lang="EN-US"}*]{#struct_0_x7129_13907_1748886746}[：呼叫对端的拨号串，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[30]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+*[dial-number*]：呼叫对端的拨号串，为1～30个字符的字符串，不区分大小写。
 
-[**[autodial]{lang="EN-US"}**]{#struct_0_x7129_13907_1668712239}[：表示自动拨号。如果配置了本参数，则路由器每隔一定时间会自动尝试拨号，拨号的时间间隔由命令]{style="font-family:宋体"}**[dialer timer autodial]{lang="EN-US"}**[设置，缺省的时间间隔为]{style="font-family:宋体"}[300]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+**[autodial**]：表示自动拨号。如果配置了本参数，则路由器每隔一定时间会自动尝试拨号，拨号的时间间隔由命令**dialer timer autodial**设置，缺省的时间间隔为300秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_359808157}
+【使用指导】
 
-[[当]{style="font-family:宋体"}[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_x1251419254}[接口或者物理接口作为主叫端，需要配置此命令。]{style="font-family:宋体"}
+当Dialer接口或者物理接口作为主叫端，需要配置此命令。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x7129_13907_x142335354}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于传统]{lang="EN-US" style="font-family:宋体"}[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_2070393633}[，需要呼叫多个目的地址或拨号串时，可以配置]{lang="EN-US" style="font-family:宋体"}**[dialer route]{lang="EN-US"}**[命令来替代]{lang="EN-US" style="font-family:宋体"}**[dialer number]{lang="EN-US"}**[。]{style="font-family:宋体"}
+·对于传统DDR，需要呼叫多个目的地址或拨号串时，可以配置**dialer route**命令来替代**dialer number**。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于共享]{lang="EN-US" style="font-family:宋体"}[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_1474272383}[，只能使用]{lang="EN-US" style="font-family:宋体"}**[dialer number]{lang="EN-US"}**[命令]{lang="EN-US" style="font-family:宋体"}[配置拨号串]{style="font-family:宋体"}[，且一个]{lang="EN-US" style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口只能配置一个拨号串。]{lang="EN-US" style="font-family:宋体"}
+·对于共享DDR，只能使用**dialer number**命令配置拨号串，且一个Dialer接口只能配置一个拨号串。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1011999113}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x246769655}[设定接口]{style="font-family:宋体"}[Dialer1]{lang="EN-US"}[呼叫对端的拨号串为"]{style="font-family:宋体"}[11111]{lang="EN-US"}["。]{style="font-family:宋体"}
+\# 设定接口Dialer1呼叫对端的拨号串为"11111"。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_1748821210}
+\<Sysname\> system-view
 
-[\[Sysname\] interface dialer 1]{lang="EN-US"}
+Sysname interface dialer 1
 
-[\[Sysname-Dialer1\] dialer number 11111]{lang="EN-US"}
+Sysname-Dialer1 dialer number 11111
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1995552617}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dialer route]{lang="EN-US"}**]{#struct_0_x7129_13907_602500821}
+·**dialer route**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dialer timer autodial]{lang="EN-US"}**]{#struct_0_x7129_13907_1227209524}
-:::
-
-::: {#1668328863 .myid}
-[]{#_Toc404785453}[]{#struct_0_x7129_13907_598887827}
+·**dialer timer autodial**
 
 **DDR命令 \-- DDR配置命令 \-- dialer peer-name**
 
 ------------------------------------------------------------------------
 
-[**[dialer peer-name]{lang="EN-US"}**]{#struct_0_x7129_13907_x1341013973}[命令用来设置共享]{style="font-family:宋体"}[DDR]{lang="EN-US"}[应用的对端用户名，以便接收呼叫时能认证呼叫请求。]{style="font-family:宋体"}
+**[dialer peer-name**]命令用来设置共享DDR应用的对端用户名，以便接收呼叫时能认证呼叫请求。
 
-[**[undo dialer peer-name]{lang="EN-US"}**]{#struct_0_x7129_13907_x1299679666}[命令用来删除共享]{style="font-family:宋体"}[DDR]{lang="EN-US"}[应用的对端用户名。]{style="font-family:宋体"}
+**[undo dialer peer-name**]命令用来删除共享DDR应用的对端用户名。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_853348555}
+【命令】
 
-[**[dialer peer-name ]{lang="EN-US"}***[username]{lang="EN-US"}*]{#struct_0_x7129_13907_x1321212109}
+**[dialer peer-name ***username*]
 
-[**[undo dialer peer-name ]{lang="EN-US"}**[\[ *username* \]]{lang="EN-US"}]{#struct_0_x7129_13907_x424999836}
+**[undo dialer peer-name ** *username* ]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1749017818}
+【缺省情况】
 
-[[没有配置共享]{style="font-family:宋体"}[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_1201339599}[应用的对端用户名。]{style="font-family:宋体"}
+没有配置共享DDR应用的对端用户名。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_79445369}
+【视图】
 
-[[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_647788462}[接口视图]{style="font-family:宋体"}
+Dialer接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1923421448}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x1900056405}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x1933385584}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1113527094}
+【参数】
 
-[*[username]{lang="EN-US"}*]{#struct_0_x7129_13907_38500646}[：对端用户名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[80]{lang="EN-US"}[个字符的字符串，不区分大小写，用于]{style="font-family:宋体"}[PPP]{lang="EN-US"}[认证。]{style="font-family:宋体"}
+*[username*]：对端用户名，为1～80个字符的字符串，不区分大小写，用于PPP认证。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_628572838}
+【使用指导】
 
-[[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_1748952282}[接口利用]{style="font-family:宋体"}[PPP]{lang="EN-US"}[认证得到的对端用户名决定入呼叫时的]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口。]{style="font-family:宋体"}
+Dialer接口利用PPP认证得到的对端用户名决定入呼叫时的Dialer接口。
 
-[[该命令仅在共享]{style="font-family:宋体"}[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_x1904846464}[中有效。在一个]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口下最多可以配置]{style="font-family:宋体"}[255]{lang="EN-US"}[个对端用户名。当一个]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口下配置多个对端用户名时，就实现了用一个]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口同时接入多个物理接口的连接。]{style="font-family:宋体"}
+该命令仅在共享DDR中有效。在一个Dialer接口下最多可以配置255个对端用户名。当一个Dialer接口下配置多个对端用户名时，就实现了用一个Dialer接口同时接入多个物理接口的连接。
 
-[[当共享]{style="font-family:宋体"}[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_x807959342}[接口下没有配置对端用户名时，此共享]{style="font-family:宋体"}[DDR]{lang="EN-US"}[可以支持出呼叫，无法支持入呼叫。当共享]{style="font-family:宋体"}[DDR]{lang="EN-US"}[接口下配置了对端用户名时，此共享]{style="font-family:宋体"}[DDR]{lang="EN-US"}[可以支持入呼叫。]{style="font-family:宋体"}
+当共享DDR接口下没有配置对端用户名时，此共享DDR可以支持出呼叫，无法支持入呼叫。当共享DDR接口下配置了对端用户名时，此共享DDR可以支持入呼叫。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1899301686}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x1412438995}[设置共享]{style="font-family:宋体"}[DDR]{lang="EN-US"}[应用的对端用户名为]{style="font-family:宋体"}[routerb]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 设置共享DDR应用的对端用户名为routerb。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_x1213521632}
+\<Sysname\> system-view
 
-[\[Sysname\] interface dialer 1]{lang="EN-US"}
+Sysname interface dialer 1
 
-[\[Sysname-Dialer1\] dialer peer-name routerb]{lang="EN-US"}
-:::
-
-::: {#1252209326 .myid}
-[]{#_Toc404785454}[]{#struct_0_x7129_13907_x5921254}[]{#_Toc298941325}[]{#_Toc257709110}[]{#_Toc355282379}[]{#_Toc355343554}[]{#_Toc355357245}[]{#_Toc355282380}[]{#_Toc355343555}[]{#_Toc355357246}[]{#_Toc355282381}[]{#_Toc355343556}[]{#_Toc355357247}[]{#_Toc317002184}[]{#_Toc317002241}[]{#_Toc317002185}[]{#_Toc317002242}[]{#_Toc317002186}[]{#_Toc317002243}
+Sysname-Dialer1 dialer peer-name routerb
 
 **DDR命令 \-- DDR配置命令 \-- dialer priority**
 
 ------------------------------------------------------------------------
 
-[**[dialer priority]{lang="EN-US"}**]{#struct_0_x7129_13907_1995220278}[命令用来配置传统]{style="font-family:宋体"}[DDR]{lang="EN-US"}[，设置物理接口在其所在的拨号循环组中的优先级。]{style="font-family:宋体"}
+**[dialer priority**]命令用来配置传统DDR，设置物理接口在其所在的拨号循环组中的优先级。
 
-[**[undo dialer priority]{lang="EN-US"}**]{#struct_0_x7129_13907_1010194672}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo dialer priority**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1917900661}
+【命令】
 
-[**[dialer priority]{lang="EN-US"}**[ *priority*]{lang="EN-US"}]{#struct_0_x7129_13907_1749148890}
+**[dialer priority** *priority*]
 
-[**[undo dialer priority]{lang="EN-US"}**]{#struct_0_x7129_13907_x1980700539}
+**[undo dialer priority**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x566102864}
+【缺省情况】
 
-[[物理接口在拨号循环组中的优先级为]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_x7129_13907_x1451161100}[。]{style="font-family:宋体"}
+物理接口在拨号循环组中的优先级为1。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1830092746}
+【视图】
 
-[[物理接口视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_1845887509}
+物理接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1611859001}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x2118190572}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x1402736768}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1592472899}
+【参数】
 
-[*[priority]{lang="EN-US"}*]{#struct_0_x7129_13907_1749083354}[：物理接口在拨号循环组中的优先级，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[127]{lang="EN-US"}[，数值越大优先级越高。]{style="font-family:宋体"}
+*[priority*]：物理接口在拨号循环组中的优先级，取值范围为1～127，数值越大优先级越高。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_64147263}
+【使用指导】
 
-[[此命令设定物理接口在其所在的拨号循环组中的使用顺序，高优先级的物理接口会被优先使用。优先级相同时，会轮询选择各物理接口。]{style="font-family:宋体"}]{#struct_0_x7129_13907_x293020238}
+此命令设定物理接口在其所在的拨号循环组中的使用顺序，高优先级的物理接口会被优先使用。优先级相同时，会轮询选择各物理接口。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x451730110}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x1652624723}[设置接口]{style="font-family:宋体"}[Serial2/1/0]{lang="EN-US"}[在拨号循环组]{style="font-family:宋体"}[1]{lang="EN-US"}[中的优先级为]{style="font-family:宋体"}[5]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 设置接口Serial2/1/0在拨号循环组1中的优先级为5。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_1507580418}
+\<Sysname\> system-view
 
-[\[Sysname\] interface serial 2/1/0]{lang="EN-US"}
+Sysname interface serial 2/1/0
 
-[\[Sysname-Serial2/1/0\] dialer circular-group 1]{lang="EN-US"}
+Sysname-Serial2/1/0 dialer circular-group 1
 
-[\[Sysname-Serial2/1/0\] dialer priority 5]{lang="EN-US"}
+Sysname-Serial2/1/0 dialer priority 5
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x242146491}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dialer circular-group]{lang="EN-US"}**]{#struct_0_x7129_13907_x951888606}
-:::
-
-::: {#-76599176 .myid}
-[]{#_Toc404785455}[]{#struct_0_x7129_13907_1254856677}[]{#_Toc298941326}[]{#_Toc14925806}
+·**dialer circular-group**
 
 **DDR命令 \-- DDR配置命令 \-- dialer queue-length**
 
 ------------------------------------------------------------------------
 
-[**[dialer queue-length]{lang="EN-US"}**]{#struct_0_x7129_13907_1748624603}[命令用来设定拨号接口缓冲队列长度。]{style="font-family:宋体"}
+**[dialer queue-length**]命令用来设定拨号接口缓冲队列长度。
 
-[**[undo dialer queue-length]{lang="EN-US"}**]{#struct_0_x7129_13907_471298343}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo dialer queue-length**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_41062666}
+【命令】
 
-[**[dialer queue-length]{lang="EN-US"}**[ *packets*]{lang="EN-US"}]{#struct_0_x7129_13907_x2136212286}
+**[dialer queue-length** *packets*]
 
-[**[undo dialer queue-length]{lang="EN-US"}**]{#struct_0_x7129_13907_x2078810883}
+**[undo dialer queue-length**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_2058020004}
+【缺省情况】
 
-[[不对报文进行缓存。]{style="font-family:宋体"}]{#struct_0_x7129_13907_1591220368}
+不对报文进行缓存。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1648974064}
+【视图】
 
-[[拨号接口视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_1843163208}
+拨号接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1609486108}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_1748559067}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x1569891165}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1533916193}
+【参数】
 
-[*[packets]{lang="EN-US"}*]{#struct_0_x7129_13907_x270313574}[：接口缓存的数据报文个数，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[100]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[packets*]：接口缓存的数据报文个数，取值范围为1～100。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x225085760}
+【使用指导】
 
-[[没有为拨号接口配置缓冲队列的情况下，当拨号接口收到一个报文时，如果此时连接还没有成功建立，则这个报文将被丢弃。如果为拨号接口配置了缓冲队列，则在连接成功建立之前报文将被缓存，待连接成功后再发送。]{style="font-family:宋体"}]{#struct_0_x7129_13907_x456613215}
+没有为拨号接口配置缓冲队列的情况下，当拨号接口收到一个报文时，如果此时连接还没有成功建立，则这个报文将被丢弃。如果为拨号接口配置了缓冲队列，则在连接成功建立之前报文将被缓存，待连接成功后再发送。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1495635193}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_1598469699}[设置接口]{style="font-family:宋体"}[Serial2/1/0]{lang="EN-US"}[的接口缓冲队列长度为]{style="font-family:宋体"}[10]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 设置接口Serial2/1/0的接口缓冲队列长度为10。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_x704834}
+\<Sysname\> system-view
 
-[\[Sysname\] interface serial 2/1/0]{lang="EN-US"}
+Sysname interface serial 2/1/0
 
-[\[Sysname-Serial2/1/0\] dialer queue-length 10]{lang="EN-US"}
-:::
-
-::: {#1995323479 .myid}
-[]{#_Toc404785456}[]{#struct_0_x7129_13907_1307567381}[]{#_Toc298941327}[]{#_Toc32572692}[]{#_Toc324941522}[]{#_Toc317002189}[]{#_Toc317002246}[]{#_Toc317002190}[]{#_Toc317002247}
+Sysname-Serial2/1/0 dialer queue-length 10
 
 **DDR命令 \-- DDR配置命令 \-- dialer route**
 
 ------------------------------------------------------------------------
 
-[**[dialer route]{lang="EN-US"}**]{#struct_0_x7129_13907_1748755675}[命令用来配置从一个拨号接口呼叫指定目的地址，或接收对端的呼叫。]{style="font-family:宋体"}
+**[dialer route**]命令用来配置从一个拨号接口呼叫指定目的地址，或接收对端的呼叫。
 
-[**[undo dialer route]{lang="EN-US"}**]{#struct_0_x7129_13907_x1103632996}[命令用来删除该配置。]{style="font-family:宋体"}
+**[undo dialer route**]命令用来删除该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_104242907}
+【命令】
 
-[**[dialer route]{lang="EN-US"}**[ **ip** *next-hop-address* \[ **mask** *network-mask-length* \] \[ **vpn-instance** *vpn-instance-name* \] \[ *dial-number* \[ **autodial** \| **interface** *interface-type interface-number* \] \* \] \[ **broadcast** \| **user** *hostname* \] \*]{lang="EN-US"}]{#struct_0_x7129_13907_x2059641662}
+**[dialer route** **ip** *next-hop-address* [ **mask** *network-mask-length*   **vpn-instance** *vpn-instance-name*  [ *dial-number* [ **autodial** \| **interface** *interface-type interface-number* ] \*   **broadcast** \| **user** *hostname* ] \*]]
 
-[**[undo dialer route]{lang="EN-US"}**[ *protocol next-hop-address* \[ **mask** *network-mask-length* \] \[ **vpn-instance** *vpn-instance-name* \] \[ *dial-number* \]]{lang="EN-US"}]{#struct_0_x7129_13907_1412713027}
+**[undo dialer route** *protocol next-hop-address* [ **mask** *network-mask-length*   **vpn-instance** *vpn-instance-name*   *dial-number* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1142531829}
+【视图】
 
-[[拨号接口视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_144816076}
+拨号接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1198670777}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_1389910116}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_1496282700}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1748690139}
+【参数】
 
-[**[ip]{lang="EN-US"}**]{#struct_0_x7129_13907_2002338706}[：网络协议为]{style="font-family:宋体"}[IP]{lang="EN-US"}[协议。]{style="font-family:宋体"}
+**[ip**]：网络协议为IP协议。
 
-[*[next-hop-address]{lang="EN-US"}*]{#struct_0_x7129_13907_2028649374}[：拨号对端的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[next-hop-address*]：拨号对端的IP地址。
 
-[**[mask]{lang="EN-US"}***[ network-mask-length]{lang="EN-US"}*]{#struct_0_x7129_13907_1311195415}[：拨号对端]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址的掩码长度，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[。若不设置该参数则系统默认为]{style="font-family:宋体"}[32]{lang="EN-US"}[，此时就把]{style="font-family:宋体"}*[next-hop-address]{lang="EN-US"}*[当成主机地址处理。若用户需要把]{style="font-family:宋体"}*[next-hop-address]{lang="EN-US"}*[配置成网段地址，则需要指定它的]{style="font-family:宋体"}*[network-mask-length]{lang="EN-US"}*[。当]{style="font-family:宋体"}*[next-hop-address]{lang="EN-US"}*[取值为]{style="font-family:宋体"}[0.0.0.0]{lang="EN-US"}[并且]{style="font-family:宋体"}*[network-mask-length]{lang="EN-US"}*[取值为]{style="font-family:宋体"}[0]{lang="EN-US"}[时，表示不限制对端的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，例如]{style="font-family:宋体"}**[dialer route ip]{lang="EN-US"}**[ 0.0.0.0 **mask** 0 8886]{lang="EN-US"}[，表示允许通过]{style="font-family:宋体"}[8886]{lang="EN-US"}[号码拨叫任何]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[mask*** network-mask-length*]：拨号对端IP地址的掩码长度，取值范围为0～32。若不设置该参数则系统默认为32，此时就把*next-hop-address*当成主机地址处理。若用户需要把*next-hop-address*配置成网段地址，则需要指定它的*network-mask-length*。当*next-hop-address*取值为0.0.0.0并且*network-mask-length*取值为0时，表示不限制对端的IP地址，例如**dialer route ip** 0.0.0.0 **mask** 0 8886，表示允许通过8886号码拨叫任何IP地址。
 
-[**[vpn-instance]{lang="EN-US"}**[ *vpn-instance-name*]{lang="EN-US"}]{#struct_0_x7129_13907_156376}[：]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[vpn-instance** *vpn-instance-name*]：MPLS L3VPN的VPN实例名称，为1～31个字符的字符串，区分大小写。
 
-[*[dial-number]{lang="EN-US"}*]{#struct_0_x7129_13907_x520567376}[：去往对端的拨号串，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[30]{lang="EN-US"}[个字符的字符串，不区分大小写。如果配置了此拨号串，则可以进行出方向拨号，否则只能接受入方向拨号。]{style="font-family:宋体"}
+*[dial-number*]：去往对端的拨号串，为1～30个字符的字符串，不区分大小写。如果配置了此拨号串，则可以进行出方向拨号，否则只能接受入方向拨号。
 
-[**[autodial]{lang="EN-US"}**]{#struct_0_x7129_13907_x2082763614}[：表示自动拨号。如果配置了本参数，则路由器每隔一定时间会自动尝试拨号，拨号的时间间隔由命令]{style="font-family:宋体"}**[dialer timer autodial]{lang="EN-US"}**[设置，缺省的时间间隔为]{style="font-family:宋体"}[300]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+**[autodial**]：表示自动拨号。如果配置了本参数，则路由器每隔一定时间会自动尝试拨号，拨号的时间间隔由命令**dialer timer autodial**设置，缺省的时间间隔为300秒。
 
-[**[interface ]{lang="EN-US"}***[interface-type interface-number]{lang="EN-US"}*]{#struct_0_x7129_13907_502979445}[：使用指定的物理接口拔号。当几个物理接口绑定到一个]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[口，且这几条拔号链路连接到不同的程控交换机时，需要配置指定拔号号码与物理接口的对应关系。此参数只能在使能传统]{style="font-family:宋体"}[DDR]{lang="EN-US"}[的]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[口上配置。]{style="font-family:宋体"}
+**[interface ***interface-type interface-number*]：使用指定的物理接口拔号。当几个物理接口绑定到一个Dialer口，且这几条拔号链路连接到不同的程控交换机时，需要配置指定拔号号码与物理接口的对应关系。此参数只能在使能传统DDR的Dialer口上配置。
 
-[**[broadcast]{lang="EN-US"}**]{#struct_0_x7129_13907_x1750904556}[：表示可以从本条拨号链路发送广播报文。]{style="font-family:宋体"}
+**[broadcast**]：表示可以从本条拨号链路发送广播报文。
 
-[**[user]{lang="EN-US"}***[ hostname]{lang="EN-US"}*]{#struct_0_x7129_13907_x877175348}[：对端用户名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[80]{lang="EN-US"}[个字符的字符串，不区分大小写，用于接收呼叫时进行认证。]{style="font-family:宋体"}
+**[user*** hostname*]：对端用户名，为1～80个字符的字符串，不区分大小写，用于接收呼叫时进行认证。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1748886747}
+【使用指导】
 
-[[如果需要]{style="font-family:宋体"}[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_1668777775}[主动呼叫，则需使用]{style="font-family:宋体"}*[dial-number]{lang="EN-US"}*[参数来配置拨号串。如果不配置]{style="font-family:宋体"}*[dial-number]{lang="EN-US"}*[参数，则只能接收对端的呼叫。]{style="font-family:宋体"}
+如果需要DDR主动呼叫，则需使用*dial-number*参数来配置拨号串。如果不配置*dial-number*参数，则只能接收对端的呼叫。
 
-[[如果配置了某个]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x7129_13907_x1589476448}[地址]{style="font-family:宋体"}*[next-hop-address]{lang="EN-US"}*[对应的拨号串]{style="font-family:宋体"}*[dial-number]{lang="EN-US"}*[，那么使用]{style="font-family:宋体"}**[undo]{lang="EN-US"}**[命令时必须包含]{style="font-family:宋体"}*[dial-number]{lang="EN-US"}*[参数。]{style="font-family:宋体"}
+如果配置了某个IP地址*next-hop-address*对应的拨号串*dial-number*，那么使用**undo**命令时必须包含*dial-number*参数。
 
-[[如果使用]{style="font-family:宋体"}**[user]{lang="EN-US"}**]{#struct_0_x7129_13907_x2057545546}[关键字，则必须配置相关的]{style="font-family:宋体"}[PPP]{lang="EN-US"}[认证（通过]{style="font-family:宋体"}[PPP]{lang="EN-US"}[认证获取对端的用户名，然后判断这个用户名和本命令中配置的用户名是否一致，如果一致，才接收呼叫）。]{style="font-family:宋体"}
+如果使用**user**关键字，则必须配置相关的PPP认证（通过PPP认证获取对端的用户名，然后判断这个用户名和本命令中配置的用户名是否一致，如果一致，才接收呼叫）。
 
-[[一个拨号接口可以配置多条]{style="font-family:宋体"}**[dialer route]{lang="EN-US"}**]{#struct_0_x7129_13907_x1098441616}[，对应同一个目的地址也可配置多条]{style="font-family:宋体"}**[dialer route]{lang="EN-US"}**[命令指定多个拨号串以实现拨号串备份的功能。]{style="font-family:宋体"}
+一个拨号接口可以配置多条**dialer route**，对应同一个目的地址也可配置多条**dialer route**命令指定多个拨号串以实现拨号串备份的功能。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1772780195}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_1897084076}[配置去往]{style="font-family:宋体"}[192.168.1.0/24]{lang="EN-US"}[网段的数据包都拨叫]{style="font-family:宋体"}[888066]{lang="EN-US"}[号码建立链路。]{style="font-family:宋体"}
+\# 配置去往192.168.1.0/24网段的数据包都拨叫888066号码建立链路。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_x851367138}
+\<Sysname\> system-view
 
-[\[Sysname\] interface serial 2/1/0]{lang="EN-US"}
+Sysname interface serial 2/1/0
 
-[\[Sysname-Serial2/1/0\] dialer route ip 192.168.1.0 mask 24 888066]{lang="EN-US"}
+Sysname-Serial2/1/0 dialer route ip 192.168.1.0 mask 24 888066
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_1495908846}[配置去往]{style="font-family:宋体"}[191.168.1.1]{lang="EN-US"}[主机地址的数据包拨叫]{style="font-family:宋体"}[888065]{lang="EN-US"}[号码建立链路。]{style="font-family:宋体"}
+\# 配置去往191.168.1.1主机地址的数据包拨叫888065号码建立链路。
 
-[[\[Sysname-Serial2/1/0\] dialer route ip 191.168.1.1 888065]{lang="EN-US"}]{#struct_0_x7129_13907_1748821211}
+Sysname-Serial2/1/0 dialer route ip 191.168.1.1 888065
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1995618153}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dialer timer autodial]{lang="EN-US"}**]{#struct_0_x7129_13907_x2069777522}
-:::
-
-::: {#1850191880 .myid}
-[]{#_Toc404785457}[]{#struct_0_x7129_13907_1506098039}[]{#_Toc298941328}[]{#_Toc32572691}
+·**dialer timer autodial**
 
 **DDR命令 \-- DDR配置命令 \-- dialer threshold**
 
 ------------------------------------------------------------------------
 
-[**[dialer threshold]{lang="EN-US"}**]{#struct_0_x7129_13907_96716996}[命令用来设定]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口上链路的负载阈值，当]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口的所有链路的流量与可用带宽的比例超过设定的百分比时，启动另一条链路呼叫同一个目的地址。]{style="font-family:宋体"}
+**[dialer threshold**]命令用来设定Dialer接口上链路的负载阈值，当Dialer接口的所有链路的流量与可用带宽的比例超过设定的百分比时，启动另一条链路呼叫同一个目的地址。
 
-[**[undo dialer threshold]{lang="EN-US"}**]{#struct_0_x7129_13907_1107168445}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo dialer threshold**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_419678375}
+【命令】
 
-[**[dialer threshold ]{lang="EN-US"}***[traffic-percentage ]{lang="EN-US"}*[\[ **in** \| **in-out** \| **out** \]]{lang="EN-US"}]{#struct_0_x7129_13907_x815143359}
+**[dialer threshold ***traffic-percentage *[[ **in** \| **in-out** \| **out** ]]]
 
-[**[undo dialer threshold]{lang="EN-US"}**]{#struct_0_x7129_13907_1013347398}
+**[undo dialer threshold**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1810069980}
+【缺省情况】
 
-[[不启动该功能。]{style="font-family:宋体"}]{#struct_0_x7129_13907_x320260774}
+不启动该功能。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1749017819}
+【视图】
 
-[[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_1201274063}[接口视图]{style="font-family:宋体"}
+Dialer接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1879705958}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_1862724972}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x1793448482}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_418092597}
+【参数】
 
-[*[traffic-percentage]{lang="EN-US"}*]{#struct_0_x7129_13907_x925980630}[：链路实际流量与带宽的百分比，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[99]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[traffic-percentage*]：链路实际流量与带宽的百分比，取值范围为0～99。
 
-[**[in]{lang="EN-US"}**]{#struct_0_x7129_13907_1941766588}[：计算实际负载时只计算接收的流量。]{style="font-family:宋体"}
+**[in**]：计算实际负载时只计算接收的流量。
 
-[**[in-out]{lang="EN-US"}**]{#struct_0_x7129_13907_1953990603}[：计算实际负载时计算接收和发送流量中较大的一个。]{style="font-family:宋体"}
+**[in-out**]：计算实际负载时计算接收和发送流量中较大的一个。
 
-[**[out]{lang="EN-US"}**]{#struct_0_x7129_13907_1748952283}[：计算实际负载时只计算发送的流量。]{style="font-family:宋体"}
+**[out**]：计算实际负载时只计算发送的流量。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1904912000}
+【使用指导】
 
-[[在]{style="font-family:宋体"}[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_x99748069}[应用中，可以配置链路的负载阈值。当负载阈值在]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[99]{lang="EN-US"}[之间时，]{style="font-family:宋体"}[MP]{lang="EN-US"}[捆绑根据实际流量百分比适当调节分配的带宽，即如果一条链路的实际流量与带宽的比例超过设定的负载阈值，则系统会自动启用第二条链路，并将两条链路进行]{style="font-family:宋体"}[MP]{lang="EN-US"}[捆绑；当两条链路的流量与带宽的比例超过设定的负载阈值，系统会启动第三条链路并进行]{style="font-family:宋体"}[MP]{lang="EN-US"}[捆绑，依此类推，从而确保]{style="font-family:宋体"}[DDR]{lang="EN-US"}[链路具有合理的负载流量。]{style="font-family:宋体"}
+在DDR应用中，可以配置链路的负载阈值。当负载阈值在1～99之间时，MP捆绑根据实际流量百分比适当调节分配的带宽，即如果一条链路的实际流量与带宽的比例超过设定的负载阈值，则系统会自动启用第二条链路，并将两条链路进行MP捆绑；当两条链路的流量与带宽的比例超过设定的负载阈值，系统会启动第三条链路并进行MP捆绑，依此类推，从而确保DDR链路具有合理的负载流量。
 
-[[相反，若]{style="font-family:宋体"}[N]{lang="EN-US"}]{#struct_0_x7129_13907_x235788756}[条（]{style="font-family:宋体"}[N]{lang="EN-US"}[为大于等于]{style="font-family:宋体"}[2]{lang="EN-US"}[的整数）链路的流量与]{style="font-family:宋体"}[N-1]{lang="EN-US"}[条链路带宽的比例小于设定的负载阈值时，系统自动关闭一条链路，以此类推，从而确保]{style="font-family:宋体"}[DDR]{lang="EN-US"}[链路的利用率保持在合理范围。]{style="font-family:宋体"}
+相反，若N条（N为大于等于2的整数）链路的流量与N-1条链路带宽的比例小于设定的负载阈值时，系统自动关闭一条链路，以此类推，从而确保DDR链路的利用率保持在合理范围。
 
-[[目前，本命令只能用于]{style="font-family:宋体"}[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_800688011}[接口，用于物理接口不生效。另外，本命令须与]{style="font-family:宋体"}**[ppp mp]{lang="EN-US"}**[命令结合使用。]{style="font-family:宋体"}
+目前，本命令只能用于Dialer接口，用于物理接口不生效。另外，本命令须与**ppp mp**命令结合使用。
 
-[[参数]{style="font-family:宋体"}*[traffic-percentage]{lang="EN-US"}*]{#struct_0_x7129_13907_x1718862212}[值为]{style="font-family:宋体"}[0]{lang="EN-US"}[时，在链路由于自动拨号或者报文触发拨号而开始呼叫的时候，将自动启动所有可用的链路进行呼叫，而不依靠流量检测决定呼叫策略，对于已经呼叫建立的链路也不会因为超时而主动拆链，也就是说，]{style="font-family:宋体"}**[dialer timer idle]{lang="EN-US"}**[命令在配置了]{style="font-family:宋体"}**[dialer threshold ]{lang="EN-US"}**[0]{lang="EN-US"}[之后将会失效。]{style="font-family:宋体"}
+参数*traffic-percentage*值为0时，在链路由于自动拨号或者报文触发拨号而开始呼叫的时候，将自动启动所有可用的链路进行呼叫，而不依靠流量检测决定呼叫策略，对于已经呼叫建立的链路也不会因为超时而主动拆链，也就是说，**dialer timer idle**命令在配置了**dialer threshold **0之后将会失效。
 
-[[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_x397880158}[按照]{style="font-family:宋体"}**[dialer]{lang="EN-US"}**[ **flow-interval**]{lang="EN-US"}[配置的时间间隔来定时进行流量统计。]{style="font-family:宋体"}
+DDR按照**dialer** **flow-interval**配置的时间间隔来定时进行流量统计。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x2102843740}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x680671631}[设置接口]{style="font-family:宋体"}[Dialer1]{lang="EN-US"}[的负载阈值为]{style="font-family:宋体"}[80%]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 设置接口Dialer1的负载阈值为80%。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_1749148891}
+\<Sysname\> system-view
 
-[\[Sysname\] interface dialer 1]{lang="EN-US"}
+Sysname interface dialer 1
 
-[\[Sysname-Dialer1\] dialer threshold 80]{lang="EN-US"}
+Sysname-Dialer1 dialer threshold 80
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1980635003}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dialer flow-interval]{lang="EN-US"}**]{#struct_0_x7129_13907_x258635664}
+·**dialer flow-interval**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dialer timer idle]{lang="EN-US"}**]{#struct_0_x7129_13907_x451957818}
+·**dialer timer idle**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ppp mp]{lang="EN-US"}**]{#struct_0_x7129_13907_1541784242}[（二层技术]{style="font-family:
-宋体"}[-]{lang="EN-US"}[广域网接入命令参考]{style="font-family:宋体"}[/PPP]{lang="EN-US"}[）]{style="font-family:宋体"}
-:::
-
-::: {#-2018224588 .myid}
-[]{#_Toc404785458}[]{#struct_0_x7129_13907_1506636036}[]{#_Toc298941329}[]{#_Toc14925801}
+·**ppp mp**（二层技术-广域网接入命令参考/PPP）
 
 **DDR命令 \-- DDR配置命令 \-- dialer timer autodial**
 
 ------------------------------------------------------------------------
 
-[**[dialer timer autodial]{lang="EN-US"}**]{#struct_0_x7129_13907_923012316}[命令用来配置]{style="font-family:宋体"}[DDR]{lang="EN-US"}[自动拨号的间隔时间。]{style="font-family:宋体"}
+**[dialer timer autodial**]命令用来配置DDR自动拨号的间隔时间。
 
-[**[undo dialer timer autodial]{lang="EN-US"}**]{#struct_0_x7129_13907_1107208097}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo dialer timer autodial**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1188546811}
+【命令】
 
-[**[dialer timer autodial]{lang="EN-US"}**[ *autodial-interval*]{lang="EN-US"}]{#struct_0_x7129_13907_1749083355}
+**[dialer timer autodial** *autodial-interval*]
 
-[**[undo dialer timer autodial]{lang="EN-US"}**]{#struct_0_x7129_13907_64212799}
+**[undo dialer timer autodial**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1237566289}
+【缺省情况】
 
-[[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_1163840949}[自动拨号的间隔时间为]{style="font-family:宋体"}[300]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+DDR自动拨号的间隔时间为300秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x131509560}
+【视图】
 
-[[拨号接口视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_x130608461}
+拨号接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x141981777}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x545094071}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_1661943292}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1048792964}
+【参数】
 
-[*[autodial-interval]{lang="EN-US"}*]{#struct_0_x7129_13907_1748624600}[：发起下次呼叫尝试的间隔时间，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[autodial-interval*]：发起下次呼叫尝试的间隔时间，取值范围为1～604800，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_471363879}
+【使用指导】
 
-[[该命令必须与]{style="font-family:宋体"}**[dialer number]{lang="EN-US"}**]{#struct_0_x7129_13907_x437414474}[或]{style="font-family:宋体"}**[dialer route]{lang="EN-US"}**[命令中的关键字]{style="font-family:宋体"}**[autodial]{lang="EN-US"}**[结合使用。配置该命令后，]{style="font-family:宋体"}[DDR]{lang="EN-US"}[将每隔]{style="font-family:宋体"}*[autodial-interval]{lang="EN-US"}*[时间自动尝试拨号一次，直至连接建立。自动拨号功能无需数据包的触发，并且在连接建立后不会因空闲时间超时而自动挂断，即]{style="font-family:宋体"}**[dialer timer idle]{lang="EN-US"}**[命令配置对其无效。]{style="font-family:宋体"}
+该命令必须与**dialer number**或**dialer route**命令中的关键字**autodial**结合使用。配置该命令后，DDR将每隔*autodial-interval*时间自动尝试拨号一次，直至连接建立。自动拨号功能无需数据包的触发，并且在连接建立后不会因空闲时间超时而自动挂断，即**dialer timer idle**命令配置对其无效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1313992660}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_646386726}[在接口]{style="font-family:宋体"}[Serial2/1/0]{lang="EN-US"}[上设置]{style="font-family:宋体"}[DDR]{lang="EN-US"}[自动拨号的间隔时间为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 在接口Serial2/1/0上设置DDR自动拨号的间隔时间为60秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_915040138}
+\<Sysname\> system-view
 
-[\[Sysname\] interface serial 2/1/0]{lang="EN-US"}
+Sysname interface serial 2/1/0
 
-[\[Sysname-Serial2/1/0\] dialer timer autodial 60]{lang="EN-US"}
+Sysname-Serial2/1/0 dialer timer autodial 60
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x791622254}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dialer number]{lang="EN-US"}**]{#struct_0_x7129_13907_x1620755147}
+·**dialer number**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dialer route]{lang="EN-US"}**]{#struct_0_x7129_13907_717600084}
-:::
-
-::: {#1068774529 .myid}
-[]{#_Toc404785459}[]{#struct_0_x7129_13907_1748559064}[]{#_Toc298941330}[]{#_Toc32572686}
+·**dialer route**
 
 **DDR命令 \-- DDR配置命令 \-- dialer timer compete**
 
 ------------------------------------------------------------------------
 
-[**[dialer timer compete]{lang="EN-US"}**]{#struct_0_x7129_13907_x1569694557}[命令用来配置当接口发生呼叫竞争后的链路空闲时间。]{style="font-family:宋体"}
+**[dialer timer compete**]命令用来配置当接口发生呼叫竞争后的链路空闲时间。
 
-[**[undo dialer timer compete]{lang="EN-US"}**]{#struct_0_x7129_13907_1209754277}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo dialer timer compete**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x100796932}
+【命令】
 
-[**[dialer timer compete]{lang="EN-US"}**[ *compete-idle*]{lang="EN-US"}]{#struct_0_x7129_13907_1193335486}
+**[dialer timer compete** *compete-idle*]
 
-[**[undo dialer timer compete]{lang="EN-US"}**]{#struct_0_x7129_13907_219264665}
+**[undo dialer timer compete**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x155568727}
+【缺省情况】
 
-[[接口发生呼叫竞争后的链路空闲时间为]{style="font-family:宋体"}[20]{lang="EN-US"}]{#struct_0_x7129_13907_464361280}[秒。]{style="font-family:宋体"}
+接口发生呼叫竞争后的链路空闲时间为20秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1115309666}
+【视图】
 
-[[拨号接口视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_642790787}
+拨号接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1748755672}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x1103436388}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x170108297}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1036624611}
+【参数】
 
-[*[compete-idle]{lang="EN-US"}*]{#struct_0_x7129_13907_1276844614}[：接口发生呼叫竞争后的链路空闲时间，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[compete-idle*]：接口发生呼叫竞争后的链路空闲时间，取值范围为0～65535，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x259127702}
+【使用指导】
 
-[[通常一条链路建立后]{style="font-family:宋体"}[Idle]{lang="EN-US"}]{#struct_0_x7129_13907_1892401609}[超时定时器将起作用。当]{style="font-family:宋体"}[DDR]{lang="EN-US"}[开始发起新呼叫时，若所有物理接口都被占用则进入"竞争"状态，此时]{style="font-family:宋体"}[DDR]{lang="EN-US"}[使用]{style="font-family:宋体"}[Compete-idle]{lang="EN-US"}[超时定时器取代]{style="font-family:宋体"}[Idle]{lang="EN-US"}[超时定时器，即链路空闲时间超过]{style="font-family:宋体"}[Compete-idle]{lang="EN-US"}[超时定时器的时间后将自动断开。]{style="font-family:宋体"}
+通常一条链路建立后Idle超时定时器将起作用。当DDR开始发起新呼叫时，若所有物理接口都被占用则进入"竞争"状态，此时DDR使用Compete-idle超时定时器取代Idle超时定时器，即链路空闲时间超过Compete-idle超时定时器的时间后将自动断开。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_965206926}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x1947045157}[在接口]{style="font-family:宋体"}[Serial2/1/0]{lang="EN-US"}[上设置接口发生呼叫竞争后的链路空闲时间为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 在接口Serial2/1/0上设置接口发生呼叫竞争后的链路空闲时间为10秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_1748690136}
+\<Sysname\> system-view
 
-[\[Sysname\] interface serial 2/1/0]{lang="EN-US"}
+Sysname interface serial 2/1/0
 
-[\[Sysname-Serial2/1/0\] dialer timer compete 10]{lang="EN-US"}
-:::
-
-::: {#761328227 .myid}
-[]{#_Toc404785460}[]{#struct_0_x7129_13907_2003059602}[]{#_Toc298941331}[]{#_Toc32572685}[]{#_Toc317002195}[]{#_Toc317002252}[]{#_Toc317002196}[]{#_Toc317002253}[]{#_Toc317002197}[]{#_Toc317002254}
+Sysname-Serial2/1/0 dialer timer compete 10
 
 **DDR命令 \-- DDR配置命令 \-- dialer timer enable**
 
 ------------------------------------------------------------------------
 
-[**[dialer timer enable]{lang="EN-US"}**]{#struct_0_x7129_13907_x331730724}[命令用来配置接口上当链路断开后进行下次呼叫的间隔时间。]{style="font-family:宋体"}
+**[dialer timer enable**]命令用来配置接口上当链路断开后进行下次呼叫的间隔时间。
 
-[**[undo dialer timer enable]{lang="EN-US"}**]{#struct_0_x7129_13907_x1824267592}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo dialer timer enable**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1223181310}
+【命令】
 
-[**[dialer timer enable]{lang="EN-US"}**[ *interval*]{lang="EN-US"}]{#struct_0_x7129_13907_71870557}
+**[dialer timer enable** *interval*]
 
-[**[undo dialer timer enable]{lang="EN-US"}**]{#struct_0_x7129_13907_460828150}
+**[undo dialer timer enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_415204291}
+【缺省情况】
 
-[[接口上当链路断开后进行下次呼叫的间隔时间为]{style="font-family:宋体"}[5]{lang="EN-US"}]{#struct_0_x7129_13907_x113432871}[秒。]{style="font-family:宋体"}
+接口上当链路断开后进行下次呼叫的间隔时间为5秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1093736084}
+【视图】
 
-[[拨号接口视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_1748886744}
+拨号接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1668581167}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_329566145}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x1777083435}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1862844715}
+【参数】
 
-[*[interval]{lang="EN-US"}*]{#struct_0_x7129_13907_x649124561}[：当链路断开后进行下次呼叫的间隔时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[interval*]：当链路断开后进行下次呼叫的间隔时间，取值范围为5～65535，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x482591140}
+【使用指导】
 
-[[当]{style="font-family:宋体"}[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_x1550665366}[呼叫链路因故障或挂断等原因进入断开状态，必须经过指定时间（即进行下一次呼叫的间隔时间）后才能建立新的拨号连接，从而避免对端程控交换机过载。]{style="font-family:宋体"}
+当DDR呼叫链路因故障或挂断等原因进入断开状态，必须经过指定时间（即进行下一次呼叫的间隔时间）后才能建立新的拨号连接，从而避免对端程控交换机过载。
 
-[[需要注意的是：为了使]{style="font-family:宋体"}[Server]{lang="EN-US"}]{#struct_0_x7129_13907_850009914}[端有足够的时间进行回呼，]{style="font-family:宋体"}[Client]{lang="EN-US"}[端当链路断开后进行下次呼叫的间隔时间应至少比]{style="font-family:宋体"}[Server]{lang="EN-US"}[端的长]{style="font-family:宋体"}[10]{lang="EN-US"}[秒。建议]{style="font-family:宋体"}[Server]{lang="EN-US"}[端使用默认值]{style="font-family:宋体"}[5]{lang="EN-US"}[秒，]{style="font-family:宋体"}[Client]{lang="EN-US"}[端配置为]{style="font-family:宋体"}[15]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+需要注意的是：为了使Server端有足够的时间进行回呼，Client端当链路断开后进行下次呼叫的间隔时间应至少比Server端的长10秒。建议Server端使用默认值5秒，Client端配置为15秒。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_65492713}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_1748821208}[设置当链路断开后进行下次呼叫的间隔时间为]{style="font-family:宋体"}[15]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 设置当链路断开后进行下次呼叫的间隔时间为15秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_1996076904}
+\<Sysname\> system-view
 
-[\[Sysname\] interface serial 2/1/0]{lang="EN-US"}
+Sysname interface serial 2/1/0
 
-[\[Sysname-Serial2/1/0\] dialer timer enable 15]{lang="EN-US"}
-:::
-
-::: {#44080507 .myid}
-[]{#_Toc404785461}[]{#struct_0_x7129_13907_2078425571}[]{#_Toc298941332}[]{#_Toc32572688}
+Sysname-Serial2/1/0 dialer timer enable 15
 
 **DDR命令 \-- DDR配置命令 \-- dialer timer idle**
 
 ------------------------------------------------------------------------
 
-[**[dialer timer idle]{lang="EN-US"}**]{#struct_0_x7129_13907_x1815705894}[命令用来设定当接口的呼叫建立后，允许链路空闲的时间。]{style="font-family:宋体"}
+**[dialer timer idle**]命令用来设定当接口的呼叫建立后，允许链路空闲的时间。
 
-[**[undo dialer timer idle]{lang="EN-US"}**]{#struct_0_x7129_13907_719801016}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo dialer timer idle**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1752219863}
+【命令】
 
-[**[dialer timer idle]{lang="EN-US"}**[ *idle* \[ **in** \| **in-out** \]]{lang="EN-US"}]{#struct_0_x7129_13907_346604503}
+**[dialer timer idle**[ *idle* [ **in** \| **in-out** ]]]
 
-[**[undo dialer timer idle]{lang="EN-US"}**]{#struct_0_x7129_13907_x109538738}
+**[undo dialer timer idle**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x937126374}
+【缺省情况】
 
-[[允许链路空闲的时间为]{style="font-family:宋体"}[120]{lang="EN-US"}]{#struct_0_x7129_13907_1749017816}[秒，只有出方向的感兴趣报文报文重置定时器。]{style="font-family:宋体"}
+允许链路空闲的时间为120秒，只有出方向的感兴趣报文报文重置定时器。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1200946383}
+【视图】
 
-[[拨号接口视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_x1872622591}
+拨号接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_539751892}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x918248652}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_1648129742}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x150905555}
+【参数】
 
-[*[idle]{lang="EN-US"}*]{#struct_0_x7129_13907_798862308}[：允许链路空闲的时间，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[idle*]：允许链路空闲的时间，取值范围为0～65535，单位为秒。
 
-[**[in]{lang="EN-US"}**]{#struct_0_x7129_13907_974448675}[：只有入方向的感兴趣报文重置定时器。]{style="font-family:宋体"}
+**[in**]：只有入方向的感兴趣报文重置定时器。
 
-[**[in-out]{lang="EN-US"}**]{#struct_0_x7129_13907_x1965775532}[：出方向和入方向的感兴趣报文都重置定时器。]{style="font-family:宋体"}
+**[in-out**]：出方向和入方向的感兴趣报文都重置定时器。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1748952280}
+【使用指导】
 
-[[当一条链路建立后，]{style="font-family:宋体"}**[dialer timer idle]{lang="EN-US"}**]{#struct_0_x7129_13907_x1904715392}[定时起作用。若在设定的时间内没有感兴趣报文在此链路上传送，则]{style="font-family:宋体"}[DDR]{lang="EN-US"}[自动挂断链路。]{style="font-family:宋体"}
+当一条链路建立后，**dialer timer idle**定时起作用。若在设定的时间内没有感兴趣报文在此链路上传送，则DDR自动挂断链路。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x7129_13907_1210376274}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果配置命令时不指定]{style="font-family:宋体"}]{#struct_0_x7129_13907_1390145149}**[in]{lang="EN-US"}**[和]{style="font-family:宋体"}**[in-out]{lang="EN-US"}**[参数，则表示只有出方向的感兴趣报文重置定时器。]{style="font-family:宋体"}
+·如果配置命令时不指定**in**和**in-out**参数，则表示只有出方向的感兴趣报文重置定时器。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若]{style="font-family:宋体"}]{#struct_0_x7129_13907_608810595}**[dialer timer idle]{lang="EN-US"}**[设定为]{style="font-family:宋体"}[0]{lang="EN-US"}[，则相应的链路在建立后，无论是否有感兴趣报文在此链路上传送，链路将永远不被挂断。]{style="font-family:宋体"}[对于]{lang="EN-US" style="font-family:宋体"}[PPPoE Client]{lang="EN-US"}[应用，若]{lang="EN-US" style="font-family:宋体"}**[dialer timer idle]{lang="EN-US"}**[设定为]{lang="EN-US" style="font-family:宋体"}[0]{lang="EN-US"}[，则将会自动触发拨号保证链接永久在线。]{lang="EN-US" style="font-family:宋体"}
+·若**dialer timer idle**设定为0，则相应的链路在建立后，无论是否有感兴趣报文在此链路上传送，链路将永远不被挂断。对于PPPoE Client应用，若**dialer timer idle**设定为0，则将会自动触发拨号保证链接永久在线。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x555376490}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x1698941284}[设置接口]{style="font-family:宋体"}[Serial2/1/0]{lang="EN-US"}[允许链路空闲的时间为]{style="font-family:宋体"}[50]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 设置接口Serial2/1/0允许链路空闲的时间为50秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_x1941169989}
+\<Sysname\> system-view
 
-[\[Sysname\] interface serial 2/1/0]{lang="EN-US"}
+Sysname interface serial 2/1/0
 
-[\[Sysname-Serial2/1/0\] dialer timer idle 50]{lang="EN-US"}[]{#_Toc32572699}
-:::
-
-::: {#1706783924 .myid}
-[]{#_Toc404785462}[]{#struct_0_x7129_13907_871676757}[]{#_Toc298941333}[]{#_Toc257709118}
+Sysname-Serial2/1/0 dialer timer idle 50
 
 **DDR命令 \-- DDR配置命令 \-- dialer timer wait-carrier**
 
 ------------------------------------------------------------------------
 
-[**[dialer timer wait-carrier]{lang="EN-US"}**]{#struct_0_x7129_13907_x1849978048}[命令用来设定呼叫建立超时定时器（]{style="font-family:
-宋体"}[wait-carrier]{lang="EN-US"}[定时器）的超时时间。]{style="font-family:宋体"}
+**[dialer timer wait-carrier**]命令用来设定呼叫建立超时定时器（wait-carrier定时器）的超时时间。
 
-[**[undo dialer timer wait-carrier]{lang="EN-US"}**]{#struct_0_x7129_13907_1749148888}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo dialer timer wait-carrier**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1980176250}
+【命令】
 
-[**[dialer timer wait-carrier]{lang="EN-US"}**[ *wait-carrier*]{lang="EN-US"}]{#struct_0_x7129_13907_x826735057}
+**[dialer timer wait-carrier** *wait-carrier*]
 
-[**[undo dialer timer wait-carrier]{lang="EN-US"}**]{#struct_0_x7129_13907_876520359}
+**[undo dialer timer wait-carrier**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1603717998}
+【缺省情况】
 
-[[呼叫建立超时时间为]{style="font-family:宋体"}[60]{lang="EN-US"}]{#struct_0_x7129_13907_100303200}[秒。]{style="font-family:宋体"}
+呼叫建立超时时间为60秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x661767500}
+【视图】
 
-[[拨号接口视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_2090291619}
+拨号接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x581904560}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_1749083352}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_64540479}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x794434510}
+【参数】
 
-[*[wait-carrier]{lang="EN-US"}*]{#struct_0_x7129_13907_38598801}[：呼叫建立超时时间，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[wait-carrier*]：呼叫建立超时时间，取值范围为0～65535，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x346090230}
+【使用指导】
 
-[[和某些对端建立]{style="font-family:宋体"}[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_x298512277}[呼叫时，从呼叫发起到连接建立的时间长短不一，为了有效控制发起呼叫到呼叫连接建立之间允许等待的时间，可以配置]{style="font-family:宋体"}[wait-carrier]{lang="EN-US"}[定时器，若在指定时间内呼叫仍未建立，则]{style="font-family:宋体"}[DDR]{lang="EN-US"}[将终止该呼叫。]{style="font-family:宋体"}
+和某些对端建立DDR呼叫时，从呼叫发起到连接建立的时间长短不一，为了有效控制发起呼叫到呼叫连接建立之间允许等待的时间，可以配置wait-carrier定时器，若在指定时间内呼叫仍未建立，则DDR将终止该呼叫。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1270530861}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_2146298638}[设置接口]{style="font-family:宋体"}[Serial2/1/0]{lang="EN-US"}[的呼叫建立超时时间为]{style="font-family:宋体"}[100]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 设置接口Serial2/1/0的呼叫建立超时时间为100秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_963566570}
+\<Sysname\> system-view
 
-[\[Sysname\] interface serial 2/1/0]{lang="EN-US"}
+Sysname interface serial 2/1/0
 
-[\[Sysname-Serial2/1/0\] dialer timer wait-carrier 100]{lang="EN-US"}
-:::
-
-::::: {#605863808 .myid}
-[]{#_Toc404785463}[]{#struct_0_x7129_13907_1748624601}[]{#_Toc298941334}[]{#_Toc257709119}[]{#_Toc317002201}[]{#_Toc317002258}[]{#_Toc317002203}[]{#_Toc317002260}
+Sysname-Serial2/1/0 dialer timer wait-carrier 100
 
 **DDR命令 \-- DDR配置命令 \-- dialer timer warmup**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](DDR命令.files/image001.png){#图片 6 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x7129_13907_471429415}
-:::
+![说明](DDR命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x7129_13907_1037353674}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[dialer timer warmup**]命令用来设置动态路由备份功能在系统启动后的生效延时。
 
-[**[dialer timer warmup]{lang="EN-US"}**]{#struct_0_x7129_13907_x659977768}[命令用来设置动态路由备份功能在系统启动后的生效延时。]{style="font-family:宋体"}
+**[undo dialer timer warmup**]命令用来恢复缺省情况。
 
-[**[undo dialer timer warmup]{lang="EN-US"}**]{#struct_0_x7129_13907_1613152942}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_652745683}
+**[dialer timer warmup** *delay*]
 
-[**[dialer timer warmup]{lang="EN-US"}**[ *delay*]{lang="EN-US"}]{#struct_0_x7129_13907_634203197}
+**[undo dialer timer warmup**]
 
-[**[undo dialer timer warmup]{lang="EN-US"}**]{#struct_0_x7129_13907_x1961256213}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1903002402}
+动态路由备份功能在系统启动30秒后生效。
 
-[[动态路由备份功能在系统启动]{style="font-family:宋体"}[30]{lang="EN-US"}]{#struct_0_x7129_13907_393755316}[秒后生效。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1748559065}
+系统视图
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_x1569760093}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_986480211}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x1151771759}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x360703553}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x574062795}
+*[delay*]：动态路由备份功能在系统启动后不生效的时间，取值范围为0～65535，单位为秒。
 
-[*[delay]{lang="EN-US"}*]{#struct_0_x7129_13907_x446567735}[：动态路由备份功能在系统启动后不生效的时间，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_2138425895}
+配有动态路由备份功能的路由器在启动时，主链路如果在本命令配置的时间内没有协商UP，系统就会触发拨号备份链路；当主链路UP后，系统会切换回主链路。
 
-[[配有动态路由备份功能的路由器在启动时，主链路如果在本命令配置的时间内没有协商]{style="font-family:宋体"}[UP]{lang="EN-US"}]{#struct_0_x7129_13907_x1853177328}[，系统就会触发拨号备份链路；当主链路]{style="font-family:宋体"}[UP]{lang="EN-US"}[后，系统会切换回主链路。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_590976033}
+\# 设置动态路由备份功能在系统启动20秒后开始生效。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_1748755673}[设置动态路由备份功能在系统启动]{style="font-family:宋体"}[20]{lang="EN-US"}[秒后开始生效。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_x1103501924}
-
-[\[Sysname\] dialer timer warmup 20]{lang="EN-US"}
-:::::
-
-::: {#1279611858 .myid}
-[]{#_Toc404785464}[]{#struct_0_x7129_13907_1520686186}[]{#_Toc298941336}[]{#_Toc14925819}
+Sysname dialer timer warmup 20
 
 **DDR命令 \-- DDR配置命令 \-- dialer-group**
 
 ------------------------------------------------------------------------
 
-[**[dialer-group]{lang="EN-US"}**]{#struct_0_x7129_13907_x171160977}[命令用来配置接口关联的拨号访问组，将该接口与拨号控制规则关联起来。]{style="font-family:宋体"}
+**[dialer-group**]命令用来配置接口关联的拨号访问组，将该接口与拨号控制规则关联起来。
 
-[**[undo dialer-group]{lang="EN-US"}**]{#struct_0_x7129_13907_908853751}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo dialer-group**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_280621769}
+【命令】
 
-[**[dialer-group]{lang="EN-US"}**[ *group-number*]{lang="EN-US"}]{#struct_0_x7129_13907_1502377217}
+**[dialer-group** *group-number*]
 
-[**[undo dialer-group]{lang="EN-US"}**]{#struct_0_x7129_13907_x787185188}
+**[undo dialer-group**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1395755877}
+【缺省情况】
 
-[[接口不与任何拨号访问组相关联。]{style="font-family:宋体"}]{#struct_0_x7129_13907_x1945455068}
+接口不与任何拨号访问组相关联。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1748690137}
+【视图】
 
-[[拨号接口视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_2002994066}
+拨号接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_2028464262}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x2147134091}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_267141509}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x136935727}
+【参数】
 
-[*[group-number]{lang="EN-US"}*]{#struct_0_x7129_13907_x501048337}[：接口关联的拨号访问组的序号，这个序号由]{style="font-family:宋体"}**[dialer-group rule]{lang="EN-US"}**[命令设定，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[group-number*]：接口关联的拨号访问组的序号，这个序号由**dialer-group rule**命令设定，取值范围为1～255。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1847945896}
+【使用指导】
 
-[[一个拨号接口只能关联一个拨号访问组，重复配置]{style="font-family:宋体"}**[dialer-group]{lang="EN-US"}**]{#struct_0_x7129_13907_x711432812}[命令则会覆盖上一次的配置。]{style="font-family:宋体"}
+一个拨号接口只能关联一个拨号访问组，重复配置**dialer-group**命令则会覆盖上一次的配置。
 
-[[用户必须配置]{style="font-family:宋体"}**[dialer-group]{lang="EN-US"}**]{#struct_0_x7129_13907_x1798182553}[命令，否则]{style="font-family:宋体"}[DDR]{lang="EN-US"}[将无法发送报文。]{style="font-family:宋体"}
+用户必须配置**dialer-group**命令，否则DDR将无法发送报文。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1748886745}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_1668646703}[配置接口]{style="font-family:宋体"}[Serial2/1/0]{lang="EN-US"}[关联拨号访问组]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置接口Serial2/1/0关联拨号访问组1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_x25424085}
+\<Sysname\> system-view
 
-[\[Sysname\] dialer-group 1 rule acl 3101]{lang="EN-US"}
+Sysname dialer-group 1 rule acl 3101
 
-[\[Sysname\] interface serial 2/1/0]{lang="EN-US"}
+Sysname interface serial 2/1/0
 
-[\[Sysname-Serial2/1/0\] dialer-group 1]{lang="EN-US"}
+Sysname-Serial2/1/0 dialer-group 1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x954469918}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dialer-group rule]{lang="EN-US"}**]{#struct_0_x7129_13907_x552066363}
-:::
-
-::: {#-657898534 .myid}
-[]{#_Toc404785465}[]{#struct_0_x7129_13907_x787859968}[]{#_Toc298941337}[]{#_Toc32572701}[]{#_Toc296420457}[]{#_Toc257709115}
+·**dialer-group rule**
 
 **DDR命令 \-- DDR配置命令 \-- dialer-group rule**
 
 ------------------------------------------------------------------------
 
-[**[dialer-group rule]{lang="EN-US"}**]{#struct_0_x7129_13907_213062958}[命令用来创建拨号访问组，并配置拨号控制规则。]{style="font-family:宋体"}
+**[dialer-group rule**]命令用来创建拨号访问组，并配置拨号控制规则。
 
-[**[undo dialer-group rule]{lang="EN-US"}**]{#struct_0_x7129_13907_x531089135}[命令用来取消该设置。]{style="font-family:宋体"}
+**[undo dialer-group rule**]命令用来取消该设置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_324801006}
+【命令】
 
-[**[dialer-group]{lang="EN-US"}**[ *group-number* **rule** { *protocol-name* { **deny** \| **permit** } \| **acl** { *acl-number* \| **name** *acl-name* } }]{lang="EN-US"}]{#struct_0_x7129_13907_1748821209}
+**[dialer-group**[ *group-number* **rule** { *protocol-name* { **deny** \| **permit** } \| **acl** { *acl-number* \| **name** *acl-name* } }]]
 
-[**[undo dialer-group]{lang="EN-US"}**[ *group-number* **rule**]{lang="EN-US"}]{#struct_0_x7129_13907_1996142440}
+**[undo dialer-group** *group-number* **rule**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x297898148}
+【缺省情况】
 
-[[不存在拨号访问组。]{style="font-family:宋体"}]{#struct_0_x7129_13907_2043642317}
+不存在拨号访问组。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_343756386}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_1742504343}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1084723006}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_189626323}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_1092352795}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_68710291}
+【参数】
 
-[*[group-number]{lang="EN-US"}*]{#struct_0_x7129_13907_1749017817}[：拨号访问组的序号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[group-number*]：拨号访问组的序号，取值范围为1～255。
 
-[*[protocol-name]{lang="EN-US"}*]{#struct_0_x7129_13907_1200880847}[：网络协议名，只能为]{style="font-family:宋体"}**[ip]{lang="EN-US"}**[（表示]{style="font-family:宋体"}[IP]{lang="EN-US"}[协议）。]{style="font-family:宋体"}
+*[protocol-name*]：网络协议名，只能为**ip**（表示IP协议）。
 
-[**[deny]{lang="EN-US"}**]{#struct_0_x7129_13907_2060460774}[：表示禁止相应协议的报文。]{style="font-family:宋体"}
+**[deny**]：表示禁止相应协议的报文。
 
-[**[permit]{lang="EN-US"}**]{#struct_0_x7129_13907_x214022194}[：表示允许相应协议的报文。]{style="font-family:宋体"}
+**[permit**]：表示允许相应协议的报文。
 
-[*[acl-number]{lang="EN-US"}*]{#struct_0_x7129_13907_x1963202438}[：拨号访问组引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[（]{style="font-family:宋体"}[Access Control List]{lang="EN-US"}[，访问控制列表）序号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[acl-number*]：拨号访问组引用的ACL（Access Control List，访问控制列表）序号，取值范围为2000～3999。
 
-[**[name]{lang="EN-US"}***[ acl-name]{lang="EN-US"}*]{#struct_0_x7129_13907_919663932}[：拨号访问组引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[的名称。]{style="font-family:宋体"}
+**[name*** acl-name*]：拨号访问组引用的ACL的名称。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x753771362}
+【使用指导】
 
-[[接口的]{style="font-family:宋体"}[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_x564363758}[拨号控制规则用于控制接口什么时候发起]{style="font-family:宋体"}[DDR]{lang="EN-US"}[呼叫。用户需要在]{style="font-family:宋体"}[DDR]{lang="EN-US"}[呼叫的发起端配置接口的]{style="font-family:宋体"}[DDR]{lang="EN-US"}[拨号控制规则，在]{style="font-family:宋体"}[DDR]{lang="EN-US"}[呼叫的接收端不用配置接口的]{style="font-family:宋体"}[DDR]{lang="EN-US"}[拨号控制规则。]{style="font-family:宋体"}
+接口的DDR拨号控制规则用于控制接口什么时候发起DDR呼叫。用户需要在DDR呼叫的发起端配置接口的DDR拨号控制规则，在DDR呼叫的接收端不用配置接口的DDR拨号控制规则。
 
-[[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_978026190}[拨号控制规则有如下两种：]{style="font-family:宋体"}
+DDR拨号控制规则有如下两种：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[根据协议类型过滤报文：本方法目前只能匹配]{style="font-family:宋体"}]{#struct_0_x7129_13907_597887446}[IP]{lang="EN-US"}[协议报文。]{style="font-family:宋体"}
+·根据协议类型过滤报文：本方法目前只能匹配IP协议报文。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[根据]{style="font-family:宋体"}]{#struct_0_x7129_13907_1748952281}[ACL]{lang="EN-US"}[过滤报文：本方法可以对报文进行更精细的区分。]{style="font-family:宋体"}
+·根据ACL过滤报文：本方法可以对报文进行更精细的区分。
 
-[[根据匹配]{style="font-family:宋体"}[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_x1904780928}[拨号控制规则的结果，报文分为两种：]{style="font-family:宋体"}
+根据匹配DDR拨号控制规则的结果，报文分为两种：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[感兴趣]{style="font-family:宋体"}]{#struct_0_x7129_13907_x455439651}[报文：]{lang="EN-US" style="font-family:宋体"}[permit]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[协议]{style="font-family:宋体"}[报文]{lang="EN-US" style="font-family:宋体"}[或者]{style="font-family:宋体"}[符合]{style="font-family:宋体"}[ACL]{lang="EN-US"}[的]{style="font-family:宋体"}[permit]{lang="EN-US"}[条件的报文]{style="font-family:宋体"}[。]{lang="EN-US" style="font-family:宋体"}
+·感兴趣报文：permit的协议报文或者符合ACL的permit条件的报文。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[非感兴趣报文：]{style="font-family:宋体"}]{#struct_0_x7129_13907_x3988791}[deny]{lang="EN-US"}[的]{style="font-family:宋体"}[协议报文或者不符合]{style="font-family:宋体"}[ACL]{lang="EN-US"}[的]{style="font-family:宋体"}[permit]{lang="EN-US"}[条件的报文或者没有匹配任何规则的报文。]{style="font-family:宋体"}
+·非感兴趣报文：deny的协议报文或者不符合ACL的permit条件的报文或者没有匹配任何规则的报文。
 
-[[对上述两种报文的处理方式如下：]{style="font-family:宋体"}]{#struct_0_x7129_13907_x740348423}
+对上述两种报文的处理方式如下：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于感兴趣报文：如果相应链路没有建立，则发起新呼叫建立链路并发送报文；如果相应链路已经建立，]{style="font-family:宋体"}]{#struct_0_x7129_13907_2129966562}[DDR]{lang="EN-US"}[将通过该链路发送报文，并重置]{style="font-family:宋体"}[Idle]{lang="EN-US"}[超时定时器。]{style="font-family:宋体"}
+·对于感兴趣报文：如果相应链路没有建立，则发起新呼叫建立链路并发送报文；如果相应链路已经建立，DDR将通过该链路发送报文，并重置Idle超时定时器。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于非感兴趣报文：如果相应链路没有建立，则不发起呼叫并丢弃此报文；如果相应链路已经建立，]{style="font-family:宋体"}]{#struct_0_x7129_13907_1172520154}[DDR]{lang="EN-US"}[将通过此链路发送报文，但是不重置]{style="font-family:宋体"}[Idle]{lang="EN-US"}[超时定时器。]{style="font-family:宋体"}
+·对于非感兴趣报文：如果相应链路没有建立，则不发起呼叫并丢弃此报文；如果相应链路已经建立，DDR将通过此链路发送报文，但是不重置Idle超时定时器。
 
-[[用户必须配置]{style="font-family:宋体"}[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_x1982712735}[拨号控制规则，并将拨号接口通过]{style="font-family:宋体"}**[dialer-group]{lang="EN-US"}**[命令与拨号控制规则关联起来，]{style="font-family:宋体"}[DDR]{lang="EN-US"}[才能正常拨号。]{style="font-family:宋体"}
+用户必须配置DDR拨号控制规则，并将拨号接口通过**dialer-group**命令与拨号控制规则关联起来，DDR才能正常拨号。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1844203669}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_1749148889}[设置拨号访问组]{style="font-family:宋体"}[1]{lang="EN-US"}[，对]{style="font-family:宋体"}[IP]{lang="EN-US"}[协议报文进行]{style="font-family:宋体"}[DDR]{lang="EN-US"}[拨号，并将它与接口]{style="font-family:宋体"}[Serial2/1/0]{lang="EN-US"}[关联。]{style="font-family:宋体"}
+\# 设置拨号访问组1，对IP协议报文进行DDR拨号，并将它与接口Serial2/1/0关联。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_x1980110714}
+\<Sysname\> system-view
 
-[\[Sysname\] dialer-group 1 rule ip permit]{lang="EN-US"}
+Sysname dialer-group 1 rule ip permit
 
-[\[Sysname\] interface serial 2/1/0]{lang="EN-US"}
+Sysname interface serial 2/1/0
 
-[\[Sysname-Serial2/1/0\] dialer-group 1]{lang="EN-US"}
+Sysname-Serial2/1/0 dialer-group 1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_621355976}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dialer-group]{lang="EN-US"}**]{#struct_0_x7129_13907_1623922450}
-:::
-
-::: {#-1970667466 .myid}
-[]{#_Toc404785466}[]{#struct_0_x7129_13907_1727601649}[]{#_Toc298941338}[]{#_Toc14925826}
+·**dialer-group**
 
 **DDR命令 \-- DDR配置命令 \-- display dialer**
 
 ------------------------------------------------------------------------
 
-[**[display dialer]{lang="EN-US"}**]{#struct_0_x7129_13907_1704044596}[命令用来显示接口的]{style="font-family:宋体"}[DDR]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[display dialer**]命令用来显示接口的DDR信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_477820494}
+【命令】
 
-[**[display dialer]{lang="EN-US"}**[ \[ **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_x7129_13907_x1724517715}
+**[display dialer** [ **interface** *interface-type interface-number* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_473059307}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_x1715899172}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1749083353}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_64606015}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x7129_13907_x1795639361}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x41972400}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x7129_13907_681616684}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1680920697}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_x7129_13907_437417553}[：显示指定接口的]{style="font-family:宋体"}[DDR]{lang="EN-US"}[信息。]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[用来指定接口类型和编号。如果不指定接口，则显示所有接口的]{style="font-family:
-宋体"}[DDR]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：显示指定接口的DDR信息。*interface-type interface-number*用来指定接口类型和编号。如果不指定接口，则显示所有接口的DDR信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1501332107}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x136731990}[显示所有接口的]{style="font-family:宋体"}[DDR]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+\# 显示所有接口的DDR信息。
 
-[[\<Sysname\> display dialer]{lang="EN-US"}]{#struct_0_x7129_13907_1748624598}
+\<Sysname\> display dialer
 
-[Dialer0:]{lang="EN-US"}
+Dialer0:
 
-[  Dialer Route:]{lang="EN-US"}
+  Dialer Route:
 
-[    NextHop: 111.111.111.111  Dialer number: 123456789012345678901234567890]{lang="EN-US"}
+    NextHop: 111.111.111.111  Dialer number: 123456789012345678901234567890
 
-[    NextHop: 222.222.222.222  Dialer number: 123456789012345678901234567890]{lang="EN-US"}
+    NextHop: 222.222.222.222  Dialer number: 123456789012345678901234567890
 
-[  Dialer number:]{lang="EN-US"}
+  Dialer number:
 
-[  Dialer Timers(in seconds):]{lang="EN-US"}
+  Dialer Timers(in seconds):
 
-[    Auto-dial: 300       Compete: 20            Enable: 5]{lang="EN-US"}
+    Auto-dial: 300       Compete: 20            Enable: 5
 
-[    Idle: 120            Wait-for-Carrier: 60]{lang="EN-US"}
+    Idle: 120            Wait-for-Carrier: 60
 
-[  Total Channels: 1]{lang="EN-US"}
+  Total Channels: 1
 
-[  Free Channels: 1]{lang="EN-US"}
+  Free Channels: 1
 
-[]{#struct_0_x7129_13907_x1102089936}[[表1-1 ]{lang="EN-US"}[display dialer]{lang="EN-US"}]{#_Toc121761884}[命令显示信息描述表]{style="font-family:黑体"}
+表1-1 display dialer命令显示信息描述表
 
-[]{#table_struct_0_1386224010}[[字段]{style="font-family:黑体"}]{#struct_0_x7129_13907_314518201}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1183559168}
+描述
 
-[[Dialer0]{lang="EN-US"}]{#struct_0_x7129_13907_x447659865}
+Dialer0
 
-[[DDR]{lang="EN-US"}]{#struct_0_x7129_13907_517679877}[接口，可以是]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口也可以是物理接口]{style="font-family:宋体"}
+DDR接口，可以是Dialer接口也可以是物理接口
 
-[[Dialer Route:]{lang="EN-US"}]{#struct_0_x7129_13907_1748559062}
+Dialer Route:
 
-[[  NextHop: 111.111.111.111  Dialer number: 123456789012345678901234567890]{lang="EN-US"}]{#struct_0_x7129_13907_x1569563485}
+  NextHop: 111.111.111.111  Dialer number: 123456789012345678901234567890
 
-[[在接口上配置的]{style="font-family:宋体"}**[dialer route]{lang="EN-US"}**]{#struct_0_x7129_13907_1387119277}[命令指定的对端]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，以及对应对端]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址的拨号串]{style="font-family:宋体"}
+在接口上配置的**dialer route**命令指定的对端IP地址，以及对应对端IP地址的拨号串
 
-[[Dialer number]{lang="EN-US"}]{#struct_0_x7129_13907_932136729}
+Dialer number
 
-[[呼叫单个对端的拨号串]{style="font-family:宋体"}]{#struct_0_x7129_13907_1553325433}
+呼叫单个对端的拨号串
 
-[[Dialer Timers(in seconds):]{lang="EN-US"}]{#struct_0_x7129_13907_760077865}
+Dialer Timers(in seconds):
 
-[[  Auto-dial: 300       Compete: 20            Enable: 5]{lang="EN-US"}]{#struct_0_x7129_13907_x1752453519}
+  Auto-dial: 300       Compete: 20            Enable: 5
 
-[[  Idle: 120            Wait-for-Carrier: 60]{lang="EN-US"}]{#struct_0_x7129_13907_1748755670}
+  Idle: 120            Wait-for-Carrier: 60
 
-[[在接口上配置的拨号定时器设置，单位为秒，包括：]{style="font-family:宋体"}]{#struct_0_x7129_13907_x1103305316}
+在接口上配置的拨号定时器设置，单位为秒，包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Auto-dial]{lang="EN-US"}]{#struct_0_x7129_13907_906226478}[：]{style="font-family:宋体"}**[dialer timer autodial]{lang="EN-US"}**[命令设定的]{lang="EN-US" style="font-family:
-  宋体"}[DDR]{lang="EN-US"}[自动拨号的间隔时间]{lang="EN-US" style="font-family:
-  宋体"}
+·Auto-dial：**dialer timer autodial**命令设定的DDR自动拨号的间隔时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Compete]{lang="EN-US"}]{#struct_0_x7129_13907_x1153809398}[：]{style="font-family:宋体"}**[dialer timer compete]{lang="EN-US"}**[命令设定的当接口发生呼叫竞争后的空闲时间]{lang="EN-US" style="font-family:
-  宋体"}
+·Compete：**dialer timer compete**命令设定的当接口发生呼叫竞争后的空闲时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enable]{lang="EN-US"}]{#struct_0_x7129_13907_274579523}[：]{style="font-family:宋体"}**[dialer timer enable]{lang="EN-US"}**[命令设定的当链路断开后进行下次呼叫的间隔时间]{lang="EN-US" style="font-family:
-  宋体"}
+·Enable：**dialer timer enable**命令设定的当链路断开后进行下次呼叫的间隔时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Idle]{lang="EN-US"}]{#struct_0_x7129_13907_369088871}[：]{style="font-family:宋体"}**[dialer timer idle]{lang="EN-US"}**[命令设定的当接口的呼叫建立后，允许链路空闲的时间]{lang="EN-US" style="font-family:
-  宋体"}
+·Idle：**dialer timer idle**命令设定的当接口的呼叫建立后，允许链路空闲的时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Wait-for-Carrier]{lang="EN-US"}]{#struct_0_x7129_13907_x595482133}[：]{style="font-family:宋体"}**[dialer timer wait-carrier]{lang="EN-US"}**[命令设定]{lang="EN-US" style="font-family:宋体"}[的]{style="font-family:宋体"}[呼叫建立超时定时器（]{lang="EN-US" style="font-family:宋体"}[wait-carrier]{lang="EN-US"}[定时器）的超时时间]{lang="EN-US" style="font-family:宋体"}
+·Wait-for-Carrier：**dialer timer wait-carrier**命令设定的呼叫建立超时定时器（wait-carrier定时器）的超时时间
 
-[[Total Channels]{lang="EN-US"}]{#struct_0_x7129_13907_1748690134}
+Total Channels
 
-[[该接口总共的通道数（通道数指的是物理接口的个数，对于]{style="font-family:宋体"}[ISDN]{lang="EN-US"}]{#struct_0_x7129_13907_2003190674}[接口来说，指的是]{style="font-family:宋体"}[B]{lang="EN-US"}[通道的个数）]{style="font-family:宋体"}
+该接口总共的通道数（通道数指的是物理接口的个数，对于ISDN接口来说，指的是B通道的个数）
 
-[[Free Channels]{lang="EN-US"}]{#struct_0_x7129_13907_869078785}
+Free Channels
 
-[[空闲的通道数]{style="font-family:宋体"}]{#struct_0_x7129_13907_x231348534}
-
-[ ]{lang="EN-US"}
-
-::: {#-1672234898 .myid}
-[]{#_Toc404785467}[]{#struct_0_x7129_13907_x1638562035}[]{#_Toc327888471}[]{#_Toc323804934}
+空闲的通道数
 
 **DDR命令 \-- DDR配置命令 \-- display interface dialer**
 
 ------------------------------------------------------------------------
 
-[**[display interface ]{lang="EN-US"}[dialer]{lang="EN-US"}**]{#struct_0_x7129_13907_1065227020}[命令用来显示]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口的相关信息。]{style="font-family:宋体"}
+**[display interface dialer**]命令用来显示Dialer接口的相关信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1748886742}
+【命令】
 
-[**[display interface ]{lang="EN-US"}**[\[ **dialer** \[ *interface-number* \] \] \[ **brief** \[ **description** \| **down** \] \]]{lang="EN-US"}]{#struct_0_x7129_13907_x421124840}
+**[display interface **[ **dialer** [ *interface-number*    **brief** [ **description** \| **down** ] ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_106442341}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_x502943464}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_37387561}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x1663624215}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x7129_13907_489091350}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_1495786640}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x7129_13907_x1956888186}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1748821206}
+【参数】
 
-[*[interface-number]{lang="EN-US"}*]{#struct_0_x7129_13907_1995683688}[：显示指定]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口的信息。]{style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口的编号，取值范围为已创建的]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口的编号。]{style="font-family:宋体"}
+*[interface-number*]：显示指定Dialer接口的信息。*interface-number*表示Dialer接口的编号，取值范围为已创建的Dialer接口的编号。
 
-[**[brief]{lang="EN-US"}**]{#struct_0_x7129_13907_x2104886622}[：显示接口的概要信息。不指定该参数时，将显示接口的详细信息。]{style="font-family:宋体"}
+**[brief**]：显示接口的概要信息。不指定该参数时，将显示接口的详细信息。
 
-[**[description]{lang="EN-US"}**]{#struct_0_x7129_13907_1117711003}[：用来显示用户配置的接口的全部描述信息。如果某接口的描述信息超过]{style="font-family:宋体"}[27]{lang="EN-US"}[个字符，不指定该参数时，只显示描述信息中的前]{style="font-family:宋体"}[27]{lang="EN-US"}[个字符，超出部分不显示；指定该参数时，可以显示全部描述信息。]{style="font-family:宋体"}
+**[description**]：用来显示用户配置的接口的全部描述信息。如果某接口的描述信息超过27个字符，不指定该参数时，只显示描述信息中的前27个字符，超出部分不显示；指定该参数时，可以显示全部描述信息。
 
-[**[down]{lang="EN-US"}**]{#struct_0_x7129_13907_1494746512}[：显示当前物理状态为]{style="font-family:宋体"}[down]{lang="EN-US"}[的接口的信息以及]{style="font-family:宋体"}[down]{lang="EN-US"}[的原因。不指定该参数时，将不会根据接口物理状态来过滤显示信息。]{style="font-family:宋体"}
+**[down**]：显示当前物理状态为down的接口的信息以及down的原因。不指定该参数时，将不会根据接口物理状态来过滤显示信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x599093207}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果不指定]{style="font-family:宋体"}]{#struct_0_x7129_13907_1471793007}**[dialer]{lang="EN-US"}**[参数，将显示设备支持的所有接口的相关信息；]{style="font-family:宋体"}
+·如果不指定**dialer**参数，将显示设备支持的所有接口的相关信息；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定]{style="font-family:宋体"}]{#struct_0_x7129_13907_x1174886079}**[dialer]{lang="EN-US"}**[参数，不指定]{style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[参数，将显示所有已创建的]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口的相关信息。]{style="font-family:宋体"}
+·如果指定**dialer**参数，不指定*interface-number*参数，将显示所有已创建的Dialer接口的相关信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x156351954}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_1749017814}[显示接口]{style="font-family:宋体"}[Dialer1]{lang="EN-US"}[的详细信息。]{style="font-family:宋体"}
+\# 显示接口Dialer1的详细信息。
 
-[[\<Sysname\> display interface dialer 1]{lang="EN-US"}]{#struct_0_x7129_13907_1201077455}
+\<Sysname\> display interface dialer 1
 
-[Dialer1 ]{lang="EN-US"}
+Dialer1
 
-[Current state: UP]{lang="EN-US"}
+Current state: UP
 
-[Line protocol state: UP (spoofing)]{lang="EN-US"}
+Line protocol state: UP (spoofing)
 
-[Description: Dialer1 Interface]{lang="EN-US"}
+Description: Dialer1 Interface
 
-[Bandwidth: 64kbps]{lang="EN-US"}
+Bandwidth: 64kbps
 
-[Maximum Transmit Unit: 1500]{lang="EN-US"}
+Maximum Transmit Unit: 1500
 
-[Hold timer: 10 seconds, retry times: 5]{lang="EN-US"}
+Hold timer: 10 seconds, retry times: 5
 
-[Internet protocol processing: disabled]{lang="EN-US"}
+Internet protocol processing: disabled
 
-[Link layer protocol: PPP]{lang="EN-US"}
+Link layer protocol: PPP
 
-[LCP: initial]{lang="EN-US"}
+LCP: initial
 
-[Physical: Dialer, baudrate: 64000 bps]{lang="EN-US"}
+Physical: Dialer, baudrate: 64000 bps
 
-[Output queue: (Urgent queuing: Length) 50]{lang="EN-US"}
+Output queue: (Urgent queuing: Length) 50
 
-[Output queue: (Protocol queuing: Length) 500]{lang="EN-US"}
+Output queue: (Protocol queuing: Length) 500
 
-[Output queue: (FIFO queuing: Length) 75]{lang="EN-US"}
+Output queue: (FIFO queuing: Length) 75
 
-[Last clearing of counters: Never]{lang="EN-US"}
+Last clearing of counters: Never
 
-[Last 300 seconds input rate: 0 bytes/sec, 0 bits/sec, 0 packets/sec]{lang="EN-US"}
+Last 300 seconds input rate: 0 bytes/sec, 0 bits/sec, 0 packets/sec
 
-[Last 300 seconds output rate: 0 bytes/sec, 0 bits/sec, 0 packets/sec]{lang="EN-US"}
+Last 300 seconds output rate: 0 bytes/sec, 0 bits/sec, 0 packets/sec
 
-[Input: 0 packets, 0 bytes, 0 droped]{lang="EN-US"}
+Input: 0 packets, 0 bytes, 0 droped
 
-[Output: 0 packets, 0 bytes, 0 droped]{lang="EN-US"}
+Output: 0 packets, 0 bytes, 0 droped
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x1078165058}[显示接口]{style="font-family:宋体"}[Dialer1]{lang="EN-US"}[的概要信息。]{style="font-family:宋体"}
+\# 显示接口Dialer1的概要信息。
 
-[[\<Sysname\> display interface dialer 1 brief]{lang="EN-US"}]{#struct_0_x7129_13907_1748952278}
+\<Sysname\> display interface dialer 1 brief
 
-[Brief information on interface(s) under route mode:]{lang="EN-US"}
+Brief information on interface(s) under route mode:
 
-[Link: ADM - administratively down; Stby - standby]{lang="EN-US"}
+Link: ADM - administratively down; Stby - standby
 
-[Protocol: (s) - spoofing]{lang="EN-US"}
+Protocol: (s) - spoofing
 
-[Interface            Link Protocol Main IP         Description]{lang="EN-US"}
+Interface            Link Protocol Main IP         Description
 
-[Dia1                 UP   UP(s)    \--]{lang="EN-US"}
+Dia1                 UP   UP(s)    \--
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x1905239683}[显示当前物理状态为]{style="font-family:宋体"}[down]{lang="EN-US"}[的]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口的信息以及]{style="font-family:宋体"}[down]{lang="EN-US"}[的原因。]{style="font-family:宋体"}
+\# 显示当前物理状态为down的Dialer接口的信息以及down的原因。
 
-[[\<Sysname\> display interface dialer brief down]{lang="EN-US"}]{#struct_0_x7129_13907_1282771255}
+\<Sysname\> display interface dialer brief down
 
-[Brief information on interface(s) under route mode:]{lang="EN-US"}
+Brief information on interface(s) under route mode:
 
-[Link: ADM - administratively down; Stby - standby]{lang="EN-US"}
+Link: ADM - administratively down; Stby - standby
 
-[Interface              Link Cause]{lang="EN-US"}
+Interface              Link Cause
 
-[Dia1                   ADM  Administratively]{lang="EN-US"}
+Dia1                   ADM  Administratively
 
-[[表1-2 ]{lang="EN-US"}[display interface dialer]{lang="EN-US"}]{#struct_0_x7129_13907_944040881}[命令显示信息描述表]{style="font-family:黑体"}
+表1-2 display interface dialer命令显示信息描述表
 
-[]{#table_struct_0_1380173237}[[字段]{style="font-family:黑体"}]{#struct_0_x7129_13907_1723139537}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x7129_13907_1086803252}
+描述
 
-[[Dialer1 ]{lang="EN-US"}]{#struct_0_x7129_13907_465437138}
+Dialer1
 
-[[Current state]{lang="EN-US"}]{#struct_0_x7129_13907_1749148886}
+Current state
 
-[[接口当前的物理状态，可能的取值及含义如下：]{style="font-family:宋体"}]{#struct_0_x7129_13907_x1980307322}
+接口当前的物理状态，可能的取值及含义如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_x7129_13907_871578557}[：该接口的物理状态为开启]{style="font-family:宋体"}
+·UP：该接口的物理状态为开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_x7129_13907_x523010954}[（]{lang="EN-US" style="font-family:宋体"}[Administratively]{lang="EN-US"}[）：表示该接口已经通过]{lang="EN-US" style="font-family:宋体"}**[shutdown]{lang="EN-US"}**[命令被关闭，需要通过]{lang="EN-US" style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**[命令开启]{lang="EN-US" style="font-family:宋体"}
+·DOWN（Administratively）：表示该接口已经通过**shutdown**命令被关闭，需要通过**undo shutdown**命令开启
 
-[[Line protocol state]{lang="EN-US"}]{#struct_0_x7129_13907_149094512}
+Line protocol state
 
-[[接口的链路层协议状态，可能的状态及含义如下：]{style="font-family:宋体"}]{#struct_0_x7129_13907_673166677}
+接口的链路层协议状态，可能的状态及含义如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_x7129_13907_1017253174}[：表示数据链路层协议状态为开启]{style="font-family:宋体"}
+·UP：表示数据链路层协议状态为开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_x7129_13907_1749083350}[：表示数据链路层协议状态为关闭]{style="font-family:宋体"}
+·DOWN：表示数据链路层协议状态为关闭
 
-[[Description]{lang="EN-US"}]{#struct_0_x7129_13907_64409407}
+Description
 
-[[接口的描述信息]{style="font-family:宋体"}]{#struct_0_x7129_13907_x329305285}
+接口的描述信息
 
-[[Bandwidth]{lang="EN-US"}]{#struct_0_x7129_13907_1791075118}
+Bandwidth
 
-[[接口的期望带宽]{style="font-family:宋体"}]{#struct_0_x7129_13907_699053694}
+接口的期望带宽
 
-[[Maximum Transmit Unit]{lang="EN-US"}]{#struct_0_x7129_13907_1280844693}
+Maximum Transmit Unit
 
-[[接口的最大传输单元]{style="font-family:宋体"}]{#struct_0_x7129_13907_1748624599}
+接口的最大传输单元
 
-[[Hold timer]{lang="EN-US"}]{#struct_0_x7129_13907_1059765133}
+Hold timer
 
-[[该接口发送]{style="font-family:宋体"}[keepalive]{lang="EN-US"}]{#struct_0_x7129_13907_x896550011}[报文的周期]{style="font-family:宋体"}
+该接口发送keepalive报文的周期
 
-[[retry times]{lang="EN-US"}]{#struct_0_x7129_13907_x896550006}
+retry times
 
-[[在多少个]{style="font-family:宋体"}[keepalive]{lang="EN-US"}]{#struct_0_x7129_13907_x896550008}[周期内没有收到]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的应答就拆除链路]{style="font-family:宋体"}
+在多少个keepalive周期内没有收到keepalive报文的应答就拆除链路
 
-[[Internet protocol processing]{lang="EN-US"}]{#struct_0_x7129_13907_x1102024400}
+Internet protocol processing
 
-[[网络层协议处理状况]{style="font-family:宋体"}]{#struct_0_x7129_13907_517969554}
+网络层协议处理状况
 
-[[Link layer protocol]{lang="EN-US"}]{#struct_0_x7129_13907_x1642036578}
+Link layer protocol
 
-[[链路层封装的协议]{style="font-family:宋体"}]{#struct_0_x7129_13907_x265198617}
+链路层封装的协议
 
-[[LCP: initial]{lang="EN-US"}]{#struct_0_x7129_13907_556039146}
+LCP: initial
 
-[[LCP]{lang="EN-US"}]{#struct_0_x7129_13907_1748559063}[（链路控制协议）初始化完成]{style="font-family:宋体"}
+LCP（链路控制协议）初始化完成
 
-[[Physical]{lang="EN-US"}]{#struct_0_x7129_13907_x1569629021}
+Physical
 
-[[接口的物理类型]{style="font-family:宋体"}]{#struct_0_x7129_13907_202290441}
+接口的物理类型
 
-[[baudrate]{lang="EN-US"}]{#struct_0_x7129_13907_641553321}
+baudrate
 
-[[接口的波特率]{style="font-family:宋体"}]{#struct_0_x7129_13907_x1722054391}
+接口的波特率
 
-[[Output queue: (Urgent queuing : Length)]{lang="EN-US"}]{#struct_0_x7129_13907_1748755671}
+Output queue: (Urgent queuing : Length)
 
-[[紧急发送队列的报文统计]{style="font-family:宋体"}]{#struct_0_x7129_13907_x1103370852}
+紧急发送队列的报文统计
 
-[[Output queue: (Protocol queuing : Length)]{lang="EN-US"}]{#struct_0_x7129_13907_1244130394}
+Output queue: (Protocol queuing : Length)
 
-[[协议发送队列的报文统计]{style="font-family:宋体"}]{#struct_0_x7129_13907_1241072560}
+协议发送队列的报文统计
 
-[[Output queue: (FIFO queuing : Length)]{lang="EN-US"}]{#struct_0_x7129_13907_x446342490}
+Output queue: (FIFO queuing : Length)
 
-[[先入先出发送队列的报文统计]{style="font-family:宋体"}]{#struct_0_x7129_13907_1748690135}
+先入先出发送队列的报文统计
 
-[[Last clearing of counters: Never]{lang="EN-US"}]{#struct_0_x7129_13907_2003125138}
+Last clearing of counters: Never
 
-[[最后一次清除接口统计信息的时间（]{style="font-family:宋体"}[Never]{lang="EN-US"}]{#struct_0_x7129_13907_x1077649908}[表示未清除过接口的统计信息）]{style="font-family:宋体"}
+最后一次清除接口统计信息的时间（Never表示未清除过接口的统计信息）
 
-[[Last 300 seconds input rate]{lang="EN-US"}]{#struct_0_x7129_13907_1328320110}
+Last 300 seconds input rate
 
-[[最近五分钟时间内接口的输入速率]{style="font-family:宋体"}]{#struct_0_x7129_13907_x1739508732}
+最近五分钟时间内接口的输入速率
 
-[[Last 300 seconds output rate]{lang="EN-US"}]{#struct_0_x7129_13907_1748886743}
+Last 300 seconds output rate
 
-[[最近五分钟时间内接口的输出速率]{style="font-family:宋体"}]{#struct_0_x7129_13907_1669039919}
+最近五分钟时间内接口的输出速率
 
-[[Input: 0 packets, 0 bytes, 0 droped]{lang="EN-US"}]{#struct_0_x7129_13907_1929978767}
+Input: 0 packets, 0 bytes, 0 droped
 
-[[该接口接收的数据报文个数、字节数，以及由于没有接收缓冲而被丢弃的报文个数]{style="font-family:宋体"}]{#struct_0_x7129_13907_x722085997}
+该接口接收的数据报文个数、字节数，以及由于没有接收缓冲而被丢弃的报文个数
 
-[[Output: 0 packets, 0 bytes, 0 droped]{lang="EN-US"}]{#struct_0_x7129_13907_1748821207}
+Output: 0 packets, 0 bytes, 0 droped
 
-[[该接口发送的数据报文个数、字节数，以及由于没有发送缓冲而被丢弃的报文个数]{style="font-family:宋体"}]{#struct_0_x7129_13907_1995749224}
+该接口发送的数据报文个数、字节数，以及由于没有发送缓冲而被丢弃的报文个数
 
-[[Brief information on interface(s) under route mode:]{lang="EN-US"}]{#struct_0_x7129_13907_x2086584613}
+Brief information on interface(s) under route mode:
 
-[[三层接口的概要信息]{style="font-family:宋体"}]{#struct_0_x7129_13907_812864330}
+三层接口的概要信息
 
-[[Link: ADM - administratively down; Stby - standby]{lang="EN-US"}]{#struct_0_x7129_13907_1749017815}
+Link: ADM - administratively down; Stby - standby
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果某接口的]{style="font-family:宋体"}]{#struct_0_x7129_13907_1201011919}[Link]{lang="EN-US"}[属性值为"]{style="font-family:宋体"}[ADM]{lang="EN-US"}["，则表示该接口被管理员手工关闭了，需要在该接口下执行]{style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**[命令才能恢复接口本身的物理状态]{style="font-family:宋体"}
+·如果某接口的Link属性值为"ADM"，则表示该接口被管理员手工关闭了，需要在该接口下执行**undo shutdown**命令才能恢复接口本身的物理状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果某接口的]{lang="EN-US" style="font-family:宋体"}[Link]{lang="EN-US"}]{#struct_0_x7129_13907_x1045784444}[属性值为"]{lang="EN-US" style="font-family:宋体"}[Stby]{lang="EN-US"}["，则表示该接口是一个备份接口，使用]{lang="EN-US" style="font-family:宋体"}**[display interface-backup state]{lang="EN-US"}**[命令可以查看该备份接口对应的主接口]{lang="EN-US" style="font-family:宋体"}
+·如果某接口的Link属性值为"Stby"，则表示该接口是一个备份接口，使用**display interface-backup state**命令可以查看该备份接口对应的主接口
 
-[[Protocol: (s) - spoofing]{lang="EN-US"}]{#struct_0_x7129_13907_406195172}
+Protocol: (s) - spoofing
 
-[[如果某接口的]{style="font-family:宋体"}[Protocol]{lang="EN-US"}]{#struct_0_x7129_13907_1748952279}[属性值中带有"]{style="font-family:宋体"}[(s)]{lang="EN-US"}["，则表示该接口的数据链路层协议状态显示为]{style="font-family:宋体"}[UP]{lang="EN-US"}[，但实际可能没有对应的链路，或者对应的链路不是永久存在而是按需建立的]{style="font-family:宋体"}
+如果某接口的Protocol属性值中带有"(s)"，则表示该接口的数据链路层协议状态显示为UP，但实际可能没有对应的链路，或者对应的链路不是永久存在而是按需建立的
 
-[[Interface]{lang="EN-US"}]{#struct_0_x7129_13907_x1905305219}
+Interface
 
-[[接口名称缩写]{style="font-family:宋体"}]{#struct_0_x7129_13907_842069368}
+接口名称缩写
 
-[[Link]{lang="EN-US"}]{#struct_0_x7129_13907_1613146880}
+Link
 
-[[接口物理连接状态，取值可能为：]{style="font-family:宋体"}]{#struct_0_x7129_13907_1749148887}
+接口物理连接状态，取值可能为：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_x7129_13907_x1980241786}[：表示接口物理上是连通的]{style="font-family:宋体"}
+·UP：表示接口物理上是连通的
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ADM]{lang="EN-US"}]{#struct_0_x7129_13907_410229425}[：表示接口被手工关闭了，需要执行]{lang="EN-US" style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**[命令才能打开接口]{lang="EN-US" style="font-family:宋体"}
+·ADM：表示接口被手工关闭了，需要执行**undo shutdown**命令才能打开接口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Stby]{lang="EN-US"}]{#struct_0_x7129_13907_x636320601}[：表示该接口是一个备份接口]{style="font-family:宋体"}
+·Stby：表示该接口是一个备份接口
 
-[[Protocol]{lang="EN-US"}]{#struct_0_x7129_13907_1749083351}
+Protocol
 
-[[接口数据链路层协议状态，取值可能为：]{style="font-family:宋体"}]{#struct_0_x7129_13907_64474943}
+接口数据链路层协议状态，取值可能为：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_x7129_13907_1377693344}[：表示接口的数据链路层是连通的]{style="font-family:宋体"}
+·UP：表示接口的数据链路层是连通的
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_x7129_13907_1132439900}[：表示接口的数据链路层不通]{style="font-family:宋体"}
+·DOWN：表示接口的数据链路层不通
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP(s)]{lang="EN-US"}]{#struct_0_x7129_13907_x1031191340}[：表示接口的数据链路层协议状态显示为]{style="font-family:宋体"}[UP]{lang="EN-US"}[，但实际可能没有对应的链路，或者对应的链路不是永久存在而是按需建立的]{style="font-family:宋体"}
+·UP(s)：表示接口的数据链路层协议状态显示为UP，但实际可能没有对应的链路，或者对应的链路不是永久存在而是按需建立的
 
-[[Main IP]{lang="EN-US"}]{#struct_0_x7129_13907_x980258753}
+Main IP
 
-[[接口主]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x7129_13907_x1169580181}[地址]{style="font-family:宋体"}
+接口主IP地址
 
-[[Description]{lang="EN-US"}]{#struct_0_x7129_13907_x703273108}
+Description
 
-[[用户通过]{style="font-family:宋体"}**[description]{lang="EN-US"}**]{#struct_0_x7129_13907_x921994204}[命令给接口配置的描述信息。使用]{style="font-family:宋体"}**[display interface brief]{lang="EN-US"}**[命令，不指定]{style="font-family:宋体"}**[description]{lang="EN-US"}**[参数时，该字段最多显示]{style="font-family:宋体"}[27]{lang="EN-US"}[个字符；指定]{style="font-family:宋体"}**[description]{lang="EN-US"}**[参数时，可显示配置的全部描述信息]{style="font-family:宋体"}
+用户通过**description**命令给接口配置的描述信息。使用**display interface brief**命令，不指定**description**参数时，该字段最多显示27个字符；指定**description**参数时，可显示配置的全部描述信息
 
-[[Cause]{lang="EN-US"}]{#struct_0_x7129_13907_x980324289}
+Cause
 
-[[接口物理连接状态为]{style="font-family:宋体"}[down]{lang="EN-US"}]{#struct_0_x7129_13907_x52357379}[的原因，取值为]{style="font-family:宋体"}[Administratively]{lang="EN-US"}[时表示本链路被手工关闭了（配置了]{style="font-family:宋体"}**[shutdown]{lang="EN-US"}**[命令），需要执行]{style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**[命令才能恢复真实的物理状态；取值为]{style="font-family:宋体"}[Not connected]{lang="EN-US"}[时]{style="font-family:宋体"}[表示没有物理连接（可能没有插网线或者网线故障）]{style="font-family:宋体"}
+接口物理连接状态为down的原因，取值为Administratively时表示本链路被手工关闭了（配置了**shutdown**命令），需要执行**undo shutdown**命令才能恢复真实的物理状态；取值为Not connected时表示没有物理连接（可能没有插网线或者网线故障）
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1671782160}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset counters interface]{lang="EN-US"}**]{#struct_0_x7129_13907_x932110891}
-
-::: {#1717908769 .myid}
-[]{#_Toc404785468}[]{#struct_0_x7129_13907_x497753591}[]{#_Toc298941340}[]{#_Toc257709125}[]{#_Toc317002209}[]{#_Toc317002266}[]{#_Toc317002210}[]{#_Toc317002267}[]{#_Toc317002211}[]{#_Toc317002268}[]{#_Toc296420460}[]{#_Toc32572696}[]{#_Toc14925815}[]{#_Toc296420461}[]{#_Toc296420462}[]{#_Toc296420463}[]{#_Toc257709121}[]{#_Toc32572700}
+·**reset counters interface**
 
 **DDR命令 \-- DDR配置命令 \-- interface dialer**
 
 ------------------------------------------------------------------------
 
-[**[interface dialer]{lang="EN-US"}**]{#struct_0_x7129_13907_1921239168}[命令用创建一个]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口。如果当前已经配置该接口，此命令用来进入该接口视图。]{style="font-family:宋体"}
+**[interface dialer**]命令用创建一个Dialer接口。如果当前已经配置该接口，此命令用来进入该接口视图。
 
-[**[undo interface dialer]{lang="EN-US"}**]{#struct_0_x7129_13907_x980127681}[命令用来删除一个指定的]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口。]{style="font-family:宋体"}
+**[undo interface dialer**]命令用来删除一个指定的Dialer接口。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_748528176}
+【命令】
 
-[**[interface dialer]{lang="EN-US"}**[ *number*]{lang="EN-US"}]{#struct_0_x7129_13907_264688203}
+**[interface dialer** *number*]
 
-[**[undo interface dialer]{lang="EN-US"}**[ *number*]{lang="EN-US"}]{#struct_0_x7129_13907_x1918219085}
+**[undo interface dialer** *number*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_207859864}
+【缺省情况】
 
-[[未创建]{style="font-family:宋体"}[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_x208567339}[接口。]{style="font-family:宋体"}
+未创建Dialer接口。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x2032578797}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_1150029016}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1910592845}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x1628431544}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x980193217}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x797126707}
+【参数】
 
-[*[number]{lang="EN-US"}*]{#struct_0_x7129_13907_1935085271}[：]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口序号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[1023]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[number*]：Dialer接口序号，取值范围为0～1023。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1721617945}
+【使用指导】
 
-[[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_1305132798}[接口的波特率恒定为]{style="font-family:宋体"}[64000bps]{lang="EN-US"}[。]{style="font-family:宋体"}
+Dialer接口的波特率恒定为64000bps。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1942996338}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_1343904630}[创建一个接口]{style="font-family:宋体"}[Dialer1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 创建一个接口Dialer1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_1940877378}
+\<Sysname\> system-view
 
-[\[Sysname\] interface dialer 1]{lang="EN-US"}
-:::
-
-::: {#988247972 .myid}
-[]{#_Toc404785469}[]{#struct_0_x7129_13907_371653580}[]{#_Toc327888473}[]{#_Toc296420464}[]{#_Toc257709122}
+Sysname interface dialer 1
 
 **DDR命令 \-- DDR配置命令 \-- mtu**
 
 ------------------------------------------------------------------------
 
-[**[mtu]{lang="EN-US"}**]{#struct_0_x7129_13907_x1018406184}[命令用来设置接口的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[（]{style="font-family:宋体"}[Maximum Transmission Unit]{lang="EN-US"}[，最大传输单元）值。]{style="font-family:宋体"}
+**[mtu**]命令用来设置接口的MTU（Maximum Transmission Unit，最大传输单元）值。
 
-[**[undo mtu]{lang="EN-US"}**]{#struct_0_x7129_13907_x979996609}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo mtu**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1212464774}
+【命令】
 
-[**[mtu]{lang="EN-US"}**[ *size*]{lang="EN-US"}]{#struct_0_x7129_13907_865916682}
+**[mtu** *size*]
 
-[**[undo mtu]{lang="EN-US"}**]{#struct_0_x7129_13907_1868568}
+**[undo mtu**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_501391156}
+【缺省情况】
 
-[[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_1801420409}[接口的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[值为]{style="font-family:宋体"}[1500]{lang="EN-US"}[字节。]{style="font-family:宋体"}
+Dialer接口的MTU值为1500字节。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x34528410}
+【视图】
 
-[[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_x532791744}[接口视图]{style="font-family:宋体"}
+Dialer接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x545690082}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x980062145}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x828679476}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x910353650}
+【参数】
 
-[*[size]{lang="EN-US"}*]{#struct_0_x7129_13907_295924848}[：接口的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[值，单位为字节。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[size*]：接口的MTU值，单位为字节。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x2043953874}
+【使用指导】
 
-[[接口的]{style="font-family:宋体"}[MTU]{lang="EN-US"}]{#struct_0_x7129_13907_469090125}[值影响]{style="font-family:宋体"}[IP]{lang="EN-US"}[协议报文在该接口上传输时的分片与重组。]{style="font-family:宋体"}
+接口的MTU值影响IP协议报文在该接口上传输时的分片与重组。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x229847614}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x1905226432}[设置接口]{style="font-family:宋体"}[Dialer1]{lang="EN-US"}[的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[值为]{style="font-family:宋体"}[1200]{lang="EN-US"}[字节。]{style="font-family:宋体"}
+\# 设置接口Dialer1的MTU值为1200字节。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_322830075}
+\<Sysname\> system-view
 
-[\[Sysname\] interface dialer 1]{lang="EN-US"}
+Sysname interface dialer 1
 
-[[\[Sysname-Dialer1\] mtu 1200]{lang="EN-US"}]{#struct_0_x7129_13907_x979865537}
-:::
-
-::: {#494830852 .myid}
-[]{#_Toc404785470}[]{#struct_0_x7129_13907_1378348704}[]{#_Toc351029823}
+Sysname-Dialer1 mtu 1200
 
 **DDR命令 \-- DDR配置命令 \-- ppp callback**
 
 ------------------------------------------------------------------------
 
-[**[ppp callback]{lang="EN-US"}**]{#struct_0_x7129_13907_1804243026}[命令用来允许]{style="font-family:宋体"}[PPP]{lang="EN-US"}[发送或接受回呼请求。]{style="font-family:宋体"}
+**[ppp callback**]命令用来允许PPP发送或接受回呼请求。
 
-[**[undo ppp callback]{lang="EN-US"}**]{#struct_0_x7129_13907_2044702607}[命令用来禁止]{style="font-family:宋体"}[PPP]{lang="EN-US"}[发送或接受]{style="font-family:宋体"}[PPP]{lang="EN-US"}[回呼请求。]{style="font-family:宋体"}
+**[undo ppp callback**]命令用来禁止PPP发送或接受PPP回呼请求。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1354936832}
+【命令】
 
-[**[ppp callback]{lang="EN-US"}**[ { **client** \| **server** }]{lang="EN-US"}]{#struct_0_x7129_13907_x1277792244}
+**[ppp callback**[ { **client** \| **server** }]]
 
-[**[undo ppp callback]{lang="EN-US"}**[ { **client** \| **server** }]{lang="EN-US"}]{#struct_0_x7129_13907_905891752}
+**[undo ppp callback**[ { **client** \| **server** }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1245975491}
+【缺省情况】
 
-[[系统未启动回呼功能。]{style="font-family:宋体"}]{#struct_0_x7129_13907_1228399847}
+系统未启动回呼功能。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1377758881}
+【视图】
 
-[[拨号接口视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_x1973252154}
+拨号接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x459158962}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_1647482584}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_54024739}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1686806290}
+【使用指导】
 
-[[在]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x7129_13907_x365928536}[回呼的配置中，需要配置发送呼叫方作为]{style="font-family:宋体"}[Client]{lang="EN-US"}[端，同时配置接受呼叫方作为]{style="font-family:宋体"}[Server]{lang="EN-US"}[端。由]{style="font-family:宋体"}[Client]{lang="EN-US"}[端首先发起呼叫，]{style="font-family:宋体"}[Server]{lang="EN-US"}[端确认该呼叫是否进行回呼，若需要回呼，]{style="font-family:宋体"}[Server]{lang="EN-US"}[端则立即挂断该次呼入连接，并根据用户名或回呼字符串等信息向]{style="font-family:宋体"}[Client]{lang="EN-US"}[端再次发起呼叫。]{style="font-family:宋体"}
+在PPP回呼的配置中，需要配置发送呼叫方作为Client端，同时配置接受呼叫方作为Server端。由Client端首先发起呼叫，Server端确认该呼叫是否进行回呼，若需要回呼，Server端则立即挂断该次呼入连接，并根据用户名或回呼字符串等信息向Client端再次发起呼叫。
 
-[[利用]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x7129_13907_1934654672}[回呼功能可以为]{style="font-family:宋体"}[PPP Client]{lang="EN-US"}[端节省通信费用。]{style="font-family:宋体"}
+利用PPP回呼功能可以为PPP Client端节省通信费用。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x650231194}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x622035644}[配置接口]{style="font-family:宋体"}[Serial2/1/0]{lang="EN-US"}[允许接受回呼请求。]{style="font-family:宋体"}
+\# 配置接口Serial2/1/0允许接受回呼请求。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_x964713826}
+\<Sysname\> system-view
 
-[\[Sysname\] interface serial 2/1/0]{lang="EN-US"}
+Sysname interface serial 2/1/0
 
-[\[Sysname-Serial2/1/0\] ppp callback server]{lang="EN-US"}
-:::
-
-::: {#7519082 .myid}
-[]{#_Toc404785471}[]{#struct_0_x7129_13907_1377824417}[]{#_Toc351029824}[]{#_Toc351022527}
+Sysname-Serial2/1/0 ppp callback server
 
 **DDR命令 \-- DDR配置命令 \-- ppp callback ntstring**
 
 ------------------------------------------------------------------------
 
-[**[ppp callback ntstring]{lang="EN-US"}**]{#struct_0_x7129_13907_x1592326550}[命令用来设置从]{style="font-family:宋体"}[Windows NT Server]{lang="EN-US"}[回呼路由器时所需要的拨号串。]{style="font-family:宋体"}
+**[ppp callback ntstring**]命令用来设置从Windows NT Server回呼路由器时所需要的拨号串。
 
-[**[undo ppp callback ntstring]{lang="EN-US"}**]{#struct_0_x7129_13907_x2100513795}[命令用来取消设置的回呼拨号串。]{style="font-family:
-宋体"}
+**[undo ppp callback ntstring**]命令用来取消设置的回呼拨号串。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_2122415621}
+【命令】
 
-[**[ppp callback ntstring]{lang="EN-US"}**[ *dial-number*]{lang="EN-US"}]{#struct_0_x7129_13907_x755250668}
+**[ppp callback ntstring** *dial-number*]
 
-[**[undo ppp callback ntstring]{lang="EN-US"}**]{#struct_0_x7129_13907_2009002464}
+**[undo ppp callback ntstring**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x287232455}
+【缺省情况】
 
-[[没有设置]{style="font-family:宋体"}[Windows NT Server]{lang="EN-US"}]{#struct_0_x7129_13907_1527995149}[回呼拨号串。]{style="font-family:宋体"}
+没有设置Windows NT Server回呼拨号串。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1693199125}
+【视图】
 
-[[拨号接口视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_x158835865}
+拨号接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x2141475836}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x1197008452}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_1377889953}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1529813647}
+【参数】
 
-[*[dial-number]{lang="EN-US"}*]{#struct_0_x7129_13907_70226092}[：从]{style="font-family:宋体"}[Windows NT Server]{lang="EN-US"}[回呼路由器的拨号串，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[64]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[dial-number*]：从Windows NT Server回呼路由器的拨号串，为1～64个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1789969206}
+【使用指导】
 
-[[当路由器作为]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x7129_13907_x116087061}[回呼的]{style="font-family:宋体"}[Client]{lang="EN-US"}[端呼叫作为]{style="font-family:宋体"}[PPP]{lang="EN-US"}[回呼]{style="font-family:宋体"}[Server]{lang="EN-US"}[端的]{style="font-family:宋体"}[Windows NT Server]{lang="EN-US"}[时，如果]{style="font-family:宋体"}[NT Server]{lang="EN-US"}[需要路由器发送回呼号码，则需要配置此命令。]{style="font-family:宋体"}
+当路由器作为PPP回呼的Client端呼叫作为PPP回呼Server端的Windows NT Server时，如果NT Server需要路由器发送回呼号码，则需要配置此命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x231258542}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x1640462651}[设定从]{style="font-family:宋体"}[Windows NT Server]{lang="EN-US"}[回呼路由器的拨号串为]{style="font-family:宋体"}[1234567]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 设定从Windows NT Server回呼路由器的拨号串为1234567。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_x1109901514}
+\<Sysname\> system-view
 
-[\[Sysname\] interface dialer 1]{lang="EN-US"}
+Sysname interface dialer 1
 
-[\[Sysname-Dialer1\] ppp callback ntstring 1234567]{lang="EN-US"}
-:::
-
-::: {#2052875588 .myid}
-[]{#_Toc404785472}[]{#struct_0_x7129_13907_x1127849771}[]{#_Toc327888474}[]{#_Toc323804933}[]{#_Toc317002216}[]{#_Toc317002273}[]{#_Toc317002218}[]{#_Toc317002275}[]{#_Toc296420465}[]{#_Toc257709123}[]{#_Toc32572705}
+Sysname-Dialer1 ppp callback ntstring 1234567
 
 **DDR命令 \-- DDR配置命令 \-- reset counters interface**
 
 ------------------------------------------------------------------------
 
-[**[reset counters interface]{lang="EN-US"}**]{#struct_0_x7129_13907_x1263715369}[命令用来清除]{style="font-family:
-宋体"}[Dialer]{lang="EN-US"}[接口的统计信息。]{style="font-family:宋体"}
+**[reset counters interface**]命令用来清除Dialer接口的统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1304573646}
+【命令】
 
-[**[reset counters interface]{lang="EN-US"}**[ \[ **dialer** \[ *interface-number* \] \]]{lang="EN-US"}]{#struct_0_x7129_13907_1584377512}
+**[reset counters interface** [ **dialer** [ *interface-number*  ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_460641636}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_x582485850}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_987859957}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_319895828}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x543118796}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x979931073}
+【参数】
 
-[**[dialer]{lang="EN-US"}**]{#struct_0_x7129_13907_x340095420}[：清除]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口的统计信息。]{style="font-family:宋体"}
+**[dialer**]：清除Dialer接口的统计信息。
 
-[*[interface-number]{lang="EN-US"}*]{#struct_0_x7129_13907_x1845579109}[：]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口的编号。取值范围为已创建的]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口的编号。]{style="font-family:宋体"}
+*[interface-number*]：Dialer接口的编号。取值范围为已创建的Dialer接口的编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_2086442081}
+【使用指导】
 
-[[在某些情况下，需要统计一定时间内某接口的流量，这就需要在统计开始前清除该接口原有的统计信息，重新进行统计。]{style="font-family:宋体"}]{#struct_0_x7129_13907_1640596023}
+在某些情况下，需要统计一定时间内某接口的流量，这就需要在统计开始前清除该接口原有的统计信息，重新进行统计。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果不指定]{lang="EN-US" style="font-family:宋体"}**[dialer]{lang="EN-US"}**]{#struct_0_x7129_13907_x749041774}[和]{lang="EN-US" style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[，则清除所有接口的统计信息；]{lang="EN-US" style="font-family:宋体"}
+·如果不指定**dialer**和*interface-number*，则清除所有接口的统计信息；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定]{lang="EN-US" style="font-family:宋体"}**[dialer]{lang="EN-US"}**]{#struct_0_x7129_13907_436831491}[而不指定]{lang="EN-US" style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[，则清除所有]{lang="EN-US" style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口]{lang="EN-US" style="font-family:宋体"}[的统计信息；]{lang="EN-US" style="font-family:宋体"}
+·如果指定**dialer**而不指定*interface-number*，则清除所有Dialer接口的统计信息；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果同时指定]{lang="EN-US" style="font-family:宋体"}**[dialer]{lang="EN-US"}**]{#struct_0_x7129_13907_1549799701}[和]{lang="EN-US" style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[，则清除指定]{lang="EN-US" style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口]{lang="EN-US" style="font-family:宋体"}[的统计信息。]{lang="EN-US" style="font-family:宋体"}
+·如果同时指定**dialer**和*interface-number*，则清除指定Dialer接口的统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_922574055}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x979734465}[清除接口]{style="font-family:宋体"}[Dialer1]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+\# 清除接口Dialer1的统计信息。
 
-[[\<Sysname\> reset counters interface dialer 1]{lang="EN-US"}]{#struct_0_x7129_13907_x344861428}
+\<Sysname\> reset counters interface dialer 1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1724676497}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display interface ]{lang="EN-US"}[dialer]{lang="EN-US"}**]{#struct_0_x7129_13907_x491858526}
-:::
-
-::::: {#-780779607 .myid}
-[]{#_Toc404785473}[]{#struct_0_x7129_13907_1494877582}[]{#_Toc356202460}[]{#_Toc355357310}[]{#_Toc342919797}[]{#_Toc335656821}[]{#_Toc303865071}[]{#_Toc215545670}[]{#_Toc215479545}
+·**display interface dialer**
 
 **DDR命令 \-- DDR配置命令 \-- service**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](DDR命令.files/image002.png){#图片 7 width="63" height="25"}]{lang="EN-US"}]{#struct_0_x7129_13907_1494680974}
-:::
+![说明](DDR命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x7129_13907_53303396}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[service**]命令用来指定转发当前Dialer接口流量的业务处理板。
 
-[**[service]{lang="EN-US"}**]{#struct_0_x7129_13907_1494746510}[命令用来指定转发当前]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口流量的业务处理板。]{style="font-family:宋体"}
+**[undo service**]命令用来恢复缺省情况。
 
-[**[undo service]{lang="EN-US"}**]{#struct_0_x7129_13907_x752336509}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x2101004635}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x7129_13907_1494549902}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+**[service slot*** slot-number*]
 
-[**[service slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x7129_13907_1295531671}
+**[undo service slot**]
 
-[**[undo service slot]{lang="EN-US"}**]{#struct_0_x7129_13907_x1384914070}
+分布式设备－IRF模式：
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x7129_13907_1494615438}[模式：]{style="font-family:宋体"}
+**[service chassis ***chassis-number*** slot*** slot-number*]
 
-[**[service ]{lang="EN-US"}[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}***[ slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x7129_13907_x373311943}
+**[undo service chassis**]
 
-[**[undo service ]{lang="EN-US"}[chassis]{lang="EN-US"}**]{#struct_0_x7129_13907_x1697673849}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1495074189}
+没有指定转发当前Dialer接口流量的业务处理板。
 
-[[没有指定转发当前]{style="font-family:宋体"}[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_40643345}[接口流量的业务处理板。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x125430311}
+Dialer接口视图
 
-[[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_1495139725}[接口视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_63520537}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_1494943117}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_2018507190}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1362465447}
+**[slot** *slot-number*]：指定单板所在的槽位号。*slot-number*表示单板所在的槽位号。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x7129_13907_1495008653}[：指定单板所在的槽位号。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot** *slot-number*]：指定设备在IRF中的成员编号。*slot-number*表示设备在IRF中的成员编号。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x7129_13907_842445784}[：指定设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot** *slot-number*]：指定设备在IRF中的成员编号或者PEX的虚拟槽位号。*slot-number*表示设备在IRF中的成员编号。（集中式IRF设备）（支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x7129_13907_x1498219737}[：指定设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：指定成员设备上的指定单板。*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x7129_13907_x533276570}[：指定成员设备上的指定单板。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：指定单板。*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x7129_13907_1230663618}[：指定单板。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1494812045}
+没有通过**service**命令指定Dialer接口流量的业务处理板时，会自动选择主控板作为转发Dialer接口流量的业务处理板。在这种情况下，为了避免主控板处理过多的业务，建议在Dialer接口下通过**service**命令指定转发该接口流量的业务处理板。
 
-[[没有通过]{style="font-family:宋体"}**[service]{lang="EN-US"}**]{#struct_0_x7129_13907_x1896649101}[命令指定]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口流量的业务处理板时，会自动选择主控板作为转发]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口流量的业务处理板。在这种情况下，为了避免主控板处理过多的业务，建议在]{style="font-family:宋体"}[Dialer]{lang="EN-US"}[接口下通过]{style="font-family:宋体"}**[service]{lang="EN-US"}**[命令指定转发该接口流量的业务处理板。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_23410029}
+\# 指定在2号单板处理Dialer1接口的流量。（分布式设备－独立运行模式）
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_1494877581}[指定在]{style="font-family:宋体"}[2]{lang="EN-US"}[号单板处理]{style="font-family:宋体"}[Dialer1]{lang="EN-US"}[接口的流量。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_807455816}
+Sysname interface dialer 1
 
-[\[Sysname\] interface dialer 1]{lang="EN-US"}
+Sysname-Dialer1 service slot 2
 
-[\[Sysname-Dialer1\] service slot 2]{lang="EN-US"}
+\# 指定在2号成员设备处理Dialer1接口的流量。（集中式IRF设备）
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x1875072655}[指定在]{style="font-family:宋体"}[2]{lang="EN-US"}[号成员设备处理]{style="font-family:宋体"}[Dialer1]{lang="EN-US"}[接口的流量。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_1494680973}
+Sysname interface dialer 1
 
-[\[Sysname\] interface dialer 1]{lang="EN-US"}
+Sysname-Dialer1 service slot 2
 
-[\[Sysname-Dialer1\] service slot 2]{lang="EN-US"}
+\# 指定在2号成员设备的2号单板处理Dialer1接口的流量。（分布式设备－IRF模式）
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_53368932}[指定在]{style="font-family:宋体"}[2]{lang="EN-US"}[号成员设备的]{style="font-family:宋体"}[2]{lang="EN-US"}[号单板处理]{style="font-family:宋体"}[Dialer1]{lang="EN-US"}[接口的流量。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_1494746509}
+Sysname interface dialer 1
 
-[\[Sysname\] interface dialer 1]{lang="EN-US"}
-
-[\[Sysname-Dialer1\]]{lang="EN-US"}[ ]{lang="EN-US"}[service ]{lang="IT"}[chassis]{lang="EN-US"}[ ]{lang="EN-US"}[2 slot 2]{lang="IT"}
-:::::
-
-::: {#1170655049 .myid}
-[]{#_Toc404785474}[]{#struct_0_x7129_13907_358187475}[]{#_Toc327888475}[]{#_Toc323804931}[]{#_Toc32572702}[]{#_Toc14925821}[]{#_Toc296420466}[]{#_Toc296420467}
+Sysname-Dialer1service chassis2 slot 2
 
 **DDR命令 \-- DDR配置命令 \-- shutdown**
 
 ------------------------------------------------------------------------
 
-[**[shutdown]{lang="EN-US"}**]{#struct_0_x7129_13907_1909800944}[命令用来关闭接口。]{style="font-family:宋体"}
+**[shutdown**]命令用来关闭接口。
 
-[**[undo]{lang="EN-US"}**[ **shutdown**]{lang="EN-US"}]{#struct_0_x7129_13907_1116611302}[命令用来打开接口。]{style="font-family:宋体"}
+**[undo** **shutdown**]命令用来打开接口。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1337954376}
+【命令】
 
-[**[shutdown]{lang="EN-US"}**]{#struct_0_x7129_13907_961823115}
+**[shutdown**]
 
-[**[undo shutdown]{lang="EN-US"}**]{#struct_0_x7129_13907_1344843352}
+**[undo shutdown**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x979800001}
+【缺省情况】
 
-[[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_x1912274173}[接口处于打开状态。]{style="font-family:宋体"}
+Dialer接口处于打开状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_419342493}
+【视图】
 
-[[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_x1681451367}[接口视图]{style="font-family:宋体"}
+Dialer接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1060588107}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x2039346406}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x1601406334}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_558865565}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x1764184513}[关闭接口]{style="font-family:宋体"}[Dialer1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 关闭接口Dialer1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_x980258752}
+\<Sysname\> system-view
 
-[\[Sysname\] interface dialer 1]{lang="EN-US"}
+Sysname interface dialer 1
 
-[\[Sysname-Dialer1\] shutdown]{lang="EN-US"}
-:::
-
-::: {#1864605471 .myid}
-[]{#_Toc404785475}[]{#struct_0_x7129_13907_x1169514645}[]{#_Toc298941344}[]{#_Toc257709129}[]{#_Toc296420468}[]{#_Toc257709126}[]{#_Toc32572703}[]{#_Toc14925824}[]{#_Toc296420469}[]{#_Toc257709127}[]{#_Toc32572704}[]{#_Toc14925825}[]{#_Toc36458480}[]{#_Toc36458481}[]{#_Toc36458483}[]{#_Toc36458484}[]{#_Toc36458485}[]{#_Toc36458486}[]{#_Toc36458487}[]{#_Toc36458488}[]{#_Toc36458489}[]{#_Toc36458490}[]{#_Toc36458491}[]{#_Toc36458492}[]{#_Toc36458493}[]{#_Toc36458497}[]{#_Toc36458498}[]{#_Toc36458501}[]{#_Toc36458502}[]{#_Toc36458521}[]{#_Toc32572708}[]{#_Toc33360440}[]{#_Toc32572710}[]{#_Toc33360442}[]{#_Toc32572711}[]{#_Toc33360443}[]{#_Toc32572712}[]{#_Toc33360444}[]{#_Toc32572713}[]{#_Toc33360445}[]{#_Toc32572714}[]{#_Toc33360446}[]{#_Toc32572715}[]{#_Toc33360447}[]{#_Toc32572716}[]{#_Toc33360448}[]{#_Toc32572717}[]{#_Toc33360449}[]{#_Toc32572718}[]{#_Toc33360450}[]{#_Toc32572719}[]{#_Toc33360451}[]{#_Toc32572724}[]{#_Toc33360456}[]{#_Toc205799397}[]{#_Toc132770128}[]{#_Toc296420470}[]{#_Toc257709128}[]{#_Toc219967431}[]{#_Toc213490054}[]{#_Toc207010309}[]{#_Toc207010042}
+Sysname-Dialer1 shutdown
 
 **DDR命令 \-- DDR配置命令 \-- standby routing-group**
 
 ------------------------------------------------------------------------
 
-[**[standby routing-group]{lang="EN-US"}**]{#struct_0_x7129_13907_1717886236}[命令用来在备份接口上启用动态路由备份功能，并配置引用的动态路由备份组。]{style="font-family:宋体"}
+**[standby routing-group**]命令用来在备份接口上启用动态路由备份功能，并配置引用的动态路由备份组。
 
-[**[undo standby routing-group]{lang="EN-US"}**]{#struct_0_x7129_13907_x1789465259}[命令用来在备份接口上关闭动态路由备份功能，或取消引用的动态路由备份组。]{style="font-family:
-宋体"}
+**[undo standby routing-group**]命令用来在备份接口上关闭动态路由备份功能，或取消引用的动态路由备份组。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x867248344}
+【命令】
 
-[**[standby routing-group]{lang="EN-US"}**[ *group-number*]{lang="EN-US"}]{#struct_0_x7129_13907_1901296582}
+**[standby routing-group** *group-number*]
 
-[**[undo standby routing-group]{lang="EN-US"}**[ *group-number*]{lang="EN-US"}]{#struct_0_x7129_13907_x1396830886}
+**[undo standby routing-group** *group-number*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x36659061}
+【缺省情况】
 
-[[动态路由备份功能处于关闭状态。]{style="font-family:宋体"}]{#struct_0_x7129_13907_182788390}
+动态路由备份功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_62886057}
+【视图】
 
-[[拨号接口视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_x980324288}
+拨号接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x52422915}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_342497829}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x600453352}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1739752245}
+【参数】
 
-[*[group-number]{lang="EN-US"}*]{#struct_0_x7129_13907_x207369379}[：动态路由备份组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[group-number*]：动态路由备份组号，取值范围为1～255。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1259407995}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[启用动态路由备份功能之前，必须确保备份接口上已经配置了]{style="font-family:宋体"}]{#struct_0_x7129_13907_x494865321}[DDR]{lang="EN-US"}[拨号功能。]{style="font-family:宋体"}
+·启用动态路由备份功能之前，必须确保备份接口上已经配置了DDR拨号功能。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[每个备份接口上可以同时引用多个动态路由备份组。]{style="font-family:宋体"}]{#struct_0_x7129_13907_825132156}
+·每个备份接口上可以同时引用多个动态路由备份组。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x700921246}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x980127680}[在]{style="font-family:宋体"}[BRI2/4/0]{lang="EN-US"}[接口上启用动态路由备份功能，并引用动态路由备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在BRI2/4/0接口上启用动态路由备份功能，并引用动态路由备份组1。
 
-[[\<Sysname\> system-view ]{lang="EN-US"}]{#struct_0_x7129_13907_748462640}
+\<Sysname\> system-view
 
-[\[Sysname\] interface bri 2/4/0]{lang="EN-US"}
+Sysname interface bri 2/4/0
 
-[\[Sysname-Bri2/4/0\] standby routing-group 1]{lang="EN-US"}
-:::
-
-::: {#1939769910 .myid}
-[]{#_Toc404785476}[]{#struct_0_x7129_13907_x116111876}[]{#_Toc298941345}[]{#_Toc132770129}[]{#_Toc296420471}
+Sysname-Bri2/4/0 standby routing-group 1
 
 **DDR命令 \-- DDR配置命令 \-- standby routing-group rule**
 
 ------------------------------------------------------------------------
 
-[**[standby routing-group rule]{lang="EN-US"}**]{#struct_0_x7129_13907_1382833530}[命令用来创建动态路由备份组，并配置需监控的网段。]{style="font-family:
-宋体"}
+**[standby routing-group rule**]命令用来创建动态路由备份组，并配置需监控的网段。
 
-[**[undo standby routing-group rule]{lang="EN-US"}**]{#struct_0_x7129_13907_758448592}[命令用来删除动态路由备份组，或删除动态路由备份组中的需监控网段。]{style="font-family:宋体"}
+**[undo standby routing-group rule**]命令用来删除动态路由备份组，或删除动态路由备份组中的需监控网段。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x697523188}
+【命令】
 
-[**[standby routing-group ]{lang="EN-US"}***[group-number]{lang="EN-US"}***[ rule]{lang="EN-US"}**[ **ip** *ip-address* { *mask* \| *mask-length* } \[ **vpn-instance** *vpn-instance-name* \]]{lang="EN-US"}]{#struct_0_x7129_13907_x1753626564}
+**[standby routing-group ***group-number*** rule**[ **ip** *ip-address* { *mask* \| *mask-length* } [ **vpn-instance** *vpn-instance-name* ]]]
 
-[**[undo]{lang="EN-US"}**[ **standby routing-group** *group-number* **rule** \[ **ip** *ip-address* { *mask* \| *mask-length* } \] \[ **vpn-instance** *vpn-instance-name* \]]{lang="EN-US"}]{#struct_0_x7129_13907_1724417305}
+**[undo**[ **standby routing-group** *group-number* **rule** [ **ip** *ip-address* { *mask* \| *mask-length* } ]  **vpn-instance** *vpn-instance-name* ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1708933440}
+【缺省情况】
 
-[[没有创建动态路由备份组。]{style="font-family:宋体"}]{#struct_0_x7129_13907_x980193216}
+没有创建动态路由备份组。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x797061171}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_x824659804}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1756961549}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_713928530}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x284445620}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x760181773}
+【参数】
 
-[*[group-number]{lang="EN-US"}*]{#struct_0_x7129_13907_1907594584}[：动态路由备份组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[group-number*]：动态路由备份组号，取值范围为1～255。
 
-[**[ip]{lang="EN-US"}***[ ip-address]{lang="EN-US"}*]{#struct_0_x7129_13907_569439675}[：表示需监控的网段地址。]{style="font-family:宋体"}
+**[ip*** ip-address*]：表示需监控的网段地址。
 
-[*[mask]{lang="EN-US"}*]{#struct_0_x7129_13907_x1304350468}[：网络掩码。]{style="font-family:宋体"}
+*[mask*]：网络掩码。
 
-[*[mask-length]{lang="EN-US"}*]{#struct_0_x7129_13907_x979996608}[：网络掩码的长度，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[mask-length*]：网络掩码的长度，取值范围为0～32。
 
-[**[vpn-instance]{lang="EN-US"}**[ *vpn-instance-name*]{lang="EN-US"}]{#struct_0_x7129_13907_1212530310}[：]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[vpn-instance** *vpn-instance-name*]：MPLS L3VPN的VPN实例名称，为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x688126845}
+【使用指导】
 
-[[一个动态路由备份组内，最多可配置]{style="font-family:宋体"}[255]{lang="EN-US"}]{#struct_0_x7129_13907_1383148952}[个被监控网段。只有到一个动态路由备份组内的所有被监控网段都不存在]{style="font-family:宋体"}[[有效路由]{style="font-family:宋体"}]{.ItemListChar}[时，才认为主链路断开。]{style="font-family:宋体"}
+一个动态路由备份组内，最多可配置255个被监控网段。只有到一个动态路由备份组内的所有被监控网段都不存在有效路由{.ItemListChar}时，才认为主链路断开。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1507405184}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_965646122}[设置动态路由备份组]{style="font-family:宋体"}[1]{lang="EN-US"}[，用于监控到达网段]{style="font-family:宋体"}[20.0.0.0/8]{lang="EN-US"}[和]{style="font-family:宋体"}[30.0.0.0/8]{lang="EN-US"}[的路由。]{style="font-family:宋体"}
+\# 设置动态路由备份组1，用于监控到达网段20.0.0.0/8和30.0.0.0/8的路由。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_x1767715429}
+\<Sysname\> system-view
 
-[\[Sysname\] standby routing-group 1 rule ip 20.0.0.1 255.0.0.0]{lang="EN-US"}
+Sysname standby routing-group 1 rule ip 20.0.0.1 255.0.0.0
 
-[\[Sysname\] standby routing-group 1 rule ip 30.0.0.1 255.0.0.0]{lang="EN-US"}
-:::
-
-::: {#-498056319 .myid}
-[]{#_Toc404785477}[]{#struct_0_x7129_13907_1377449618}[]{#_Toc298941346}[]{#_Toc132770127}[]{#_Toc296420472}[]{#_Toc257709130}[]{#_Toc205799398}
+Sysname standby routing-group 1 rule ip 30.0.0.1 255.0.0.0
 
 **DDR命令 \-- DDR配置命令 \-- standby timer routing-disable**
 
 ------------------------------------------------------------------------
 
-[**[standby timer routing-disable]{lang="EN-US"}**]{#struct_0_x7129_13907_1217338127}[命令用来配置主链路接通后断开备份链路的延迟时间。]{style="font-family:
-宋体"}
+**[standby timer routing-disable**]命令用来配置主链路接通后断开备份链路的延迟时间。
 
-[**[undo standby timer routing-disable]{lang="EN-US"}**]{#struct_0_x7129_13907_x980062144}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo standby timer routing-disable**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x828745012}
+【命令】
 
-[**[standby timer routing-disable ]{lang="EN-US"}***[delay]{lang="EN-US"}*]{#struct_0_x7129_13907_1465689003}
+**[standby timer routing-disable ***delay*]
 
-[**[undo]{lang="EN-US"}**[ **standby timer routing-disable**]{lang="EN-US"}]{#struct_0_x7129_13907_1990533965}
+**[undo** **standby timer routing-disable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_522582579}
+【缺省情况】
 
-[[主链路接通后断开备份链路的延迟时间为]{style="font-family:宋体"}[20]{lang="EN-US"}]{#struct_0_x7129_13907_x438123622}[秒。]{style="font-family:宋体"}
+主链路接通后断开备份链路的延迟时间为20秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1125165399}
+【视图】
 
-[[拨号接口视图]{style="font-family:宋体"}]{#struct_0_x7129_13907_x1863022905}
+拨号接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1875911607}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_150978373}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x979865536}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1127915307}
+【参数】
 
-[*[delay]{lang="EN-US"}*]{#struct_0_x7129_13907_x575772600}[：主链路接通后断开备份链路的延迟时间，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[delay*]：主链路接通后断开备份链路的延迟时间，取值范围为0～65535，单位为秒。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1242698793}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_203351460}[在接口]{style="font-family:宋体"}[BRI2/4/0]{lang="EN-US"}[上设置当主链路接通后断开备份链路的延迟时间为]{style="font-family:宋体"}[5]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 在接口BRI2/4/0上设置当主链路接通后断开备份链路的延迟时间为5秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_x416270767}
+\<Sysname\> system-view
 
-[\[Sysname\] interface bri 2/4/0]{lang="EN-US"}
+Sysname interface bri 2/4/0
 
-[\[Sysname-Bri2/4/0\] standby timer routing-disable 5]{lang="EN-US"}
-:::
-
-::: {#1474946988 .myid}
-[]{#_Toc404785478}[]{#struct_0_x7129_13907_469553653}[]{#_Toc327888476}[]{#_Toc317856915}[]{#_Toc309228573}[]{#_Toc205607563}[]{#_Toc355282403}[]{#_Toc355343578}[]{#_Toc355357269}[]{#_Toc317002227}[]{#_Toc317002284}[]{#_Toc296420473}[]{#_Toc257709131}[]{#_Toc205799399}
+Sysname-Bri2/4/0 standby timer routing-disable 5
 
 **DDR命令 \-- DDR配置命令 \-- timer-hold**
 
 ------------------------------------------------------------------------
 
-[**[timer-hold]{lang="EN-US"}**]{#struct_0_x7129_13907_x498717435}[命令用来配置接口发送]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的周期。]{style="font-family:宋体"}
+**[timer-hold**]命令用来配置接口发送keepalive报文的周期。
 
-[**[undo timer-hold]{lang="EN-US"}**]{#struct_0_x7129_13907_2096208614}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo timer-hold**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x979931072}
+【命令】
 
-[**[timer-hold]{lang="EN-US"}**[ *period*]{lang="EN-US"}]{#struct_0_x7129_13907_x340029884}
+**[timer-hold** *period*]
 
-[**[undo timer-hold]{lang="EN-US"}**]{#struct_0_x7129_13907_88549845}
+**[undo timer-hold**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1120420792}
+【缺省情况】
 
-[[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_158544739}[接口发送]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的周期为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+Dialer接口发送keepalive报文的周期为10秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_478991559}
+【视图】
 
-[[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_1207085093}[接口视图]{style="font-family:宋体"}
+Dialer接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1641442024}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x1908188643}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_1830253029}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x979734464}
+【参数】
 
-[*[period]{lang="EN-US"}*]{#struct_0_x7129_13907_x344795892}[：接口发送]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的周期，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[32767]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[period*]：接口发送keepalive报文的周期，取值范围为0～32767，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x2074823767}
+【使用指导】
 
-[[当接口上封装的链路层协议为]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x7129_13907_x742690948}[时，链路层会定期向对端发送]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文。如果在一段时间内无法收到对端发来的]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文，链路层会认为对端故障，上报链路层]{style="font-family:宋体"}[Down]{lang="EN-US"}[。用户可以通过]{style="font-family:宋体"}**[timer-hold]{lang="EN-US"}**[命令修改接口发送]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的周期。]{style="font-family:宋体"}
+当接口上封装的链路层协议为PPP时，链路层会定期向对端发送keepalive报文。如果在一段时间内无法收到对端发来的keepalive报文，链路层会认为对端故障，上报链路层Down。用户可以通过**timer-hold**命令修改接口发送keepalive报文的周期。
 
-[[在速率非常低的链路上，参数]{style="font-family:宋体"}*[period]{lang="EN-US"}*]{#struct_0_x7129_13907_x660598381}[不能配置过小。因为在低速链路上，大报文可能会需要很长的时间才能传送完毕，这样就会延迟]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的发送与接收。而接口如果在多个（可以通过]{style="font-family:宋体"}**[timer-hold retry]{lang="EN-US"}**[命令修改该个数）]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[周期之后仍然无法收到对端的]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文，它就会认为链路发生故障。如果]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文被延迟的时间超过接口的这个限制，链路就会被认为发生故障而被关闭。]{style="font-family:宋体"}
+在速率非常低的链路上，参数*period*不能配置过小。因为在低速链路上，大报文可能会需要很长的时间才能传送完毕，这样就会延迟keepalive报文的发送与接收。而接口如果在多个（可以通过**timer-hold retry**命令修改该个数）keepalive周期之后仍然无法收到对端的keepalive报文，它就会认为链路发生故障。如果keepalive报文被延迟的时间超过接口的这个限制，链路就会被认为发生故障而被关闭。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x237732780}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_x399782924}[配置接口]{style="font-family:宋体"}[Dialer1]{lang="EN-US"}[发送]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的周期为]{style="font-family:宋体"}[1000]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置接口Dialer1发送keepalive报文的周期为1000秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_x1138475756}
+\<Sysname\> system-view
 
-[\[Sysname\] interface dialer 1]{lang="EN-US"}
+Sysname interface dialer 1
 
-[\[Sysname-Dialer1\] timer-hold 1000]{lang="EN-US"}
+Sysname-Dialer1 timer-hold 1000
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_1048206961}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[timer-hold retry]{lang="EN-US"}**]{#struct_0_x7129_13907_1048206958}
-:::
-
-::: {#518520923 .myid}
-[]{#_Toc404785479}[]{#struct_0_x7129_13907_1048206959}[]{#_Toc394763468}
+·**timer-hold retry**
 
 **DDR命令 \-- DDR配置命令 \-- timer-hold retry**
 
 ------------------------------------------------------------------------
 
-[**[timer-hold]{lang="EN-US"}**[ **retry**]{lang="EN-US"}]{#struct_0_x7129_13907_1048206956}[命令用来配置接口在多少个]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[周期内没有收到]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的应答就拆除链路。]{style="font-family:宋体"}
+**[timer-hold** **retry**]命令用来配置接口在多少个keepalive周期内没有收到keepalive报文的应答就拆除链路。
 
-[**[undo timer-hold retry]{lang="EN-US"}**]{#struct_0_x7129_13907_1048206957}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo timer-hold retry**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_670992505}
+【命令】
 
-[**[timer-hold]{lang="EN-US"}**[ **retry** *retry*]{lang="EN-US"}]{#struct_0_x7129_13907_1048206954}
+**[timer-hold** **retry** *retry*]
 
-[**[undo timer-hold retry]{lang="EN-US"}**]{#struct_0_x7129_13907_1048206955}
+**[undo timer-hold retry**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x908108174}
+【缺省情况】
 
-[[接口在]{style="font-family:宋体"}[5]{lang="EN-US"}]{#struct_0_x7129_13907_x458189390}[个]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[周期内没有收到]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的应答就拆除链路。]{style="font-family:宋体"}
+接口在5个keepalive周期内没有收到keepalive报文的应答就拆除链路。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1290445200}
+【视图】
 
-[[Dialer]{lang="EN-US"}]{#struct_0_x7129_13907_x1290445199}[接口视图]{style="font-family:宋体"}
+Dialer接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1290445202}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x7129_13907_x1290445201}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x7129_13907_788469728}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x1290445204}
+【参数】
 
-[*[retry]{lang="EN-US"}*]{#struct_0_x7129_13907_x1290445203}[：接口在多少个]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[周期内没有收到]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的应答就拆除链路，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[retry*]：接口在多少个keepalive周期内没有收到keepalive报文的应答就拆除链路，取值范围为1～255。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x7129_13907_x374329686}
+【使用指导】
 
-[[当接口上封装的链路层协议为]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x7129_13907_x1290445206}[时，链路层会定期（可以通过]{style="font-family:宋体"}**[timer-hold]{lang="EN-US"}**[命令修改]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的发送周期）向对端发送]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文。如果在一段时间内无法收到对端发来的]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文，链路层会认为对端故障，上报链路层]{style="font-family:宋体"}[Down]{lang="EN-US"}[。]{style="font-family:宋体"}
+当接口上封装的链路层协议为PPP时，链路层会定期（可以通过**timer-hold**命令修改keepalive报文的发送周期）向对端发送keepalive报文。如果在一段时间内无法收到对端发来的keepalive报文，链路层会认为对端故障，上报链路层Down。
 
-[[用户可以通过]{style="font-family:宋体"}**[timer-hold retry]{lang="EN-US"}**]{#struct_0_x7129_13907_x1290445205}[命令修改接口在多少个]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[周期内没有收到]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的应答就拆除链路。]{style="font-family:宋体"}
+用户可以通过**timer-hold retry**命令修改接口在多少个keepalive周期内没有收到keepalive报文的应答就拆除链路。
 
-[[在速率非常低的链路上，参数]{style="font-family:宋体"}*[retry]{lang="EN-US"}*]{#struct_0_x7129_13907_283532914}[不能配置过小。因为在低速链路上，大报文可能会需要很长的时间才能传送完毕，这样就会延迟]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的发送与接收。而接口如果在]{style="font-family:宋体"}*[retry]{lang="EN-US"}*[个]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[周期之后仍然无法收到对端的]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文，它就会认为链路发生故障。如果]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文被延迟的时间超过接口的这个限制，链路就会被认为发生故障而被关闭。]{style="font-family:宋体"}
+在速率非常低的链路上，参数*retry*不能配置过小。因为在低速链路上，大报文可能会需要很长的时间才能传送完毕，这样就会延迟keepalive报文的发送与接收。而接口如果在*retry*个keepalive周期之后仍然无法收到对端的keepalive报文，它就会认为链路发生故障。如果keepalive报文被延迟的时间超过接口的这个限制，链路就会被认为发生故障而被关闭。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x7129_13907_283532915}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x7129_13907_1873688623}[配置接口]{style="font-family:宋体"}[Dialer1]{lang="EN-US"}[在]{style="font-family:宋体"}[10]{lang="EN-US"}[个]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[周期内没有收到]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的应答就拆除链路。]{style="font-family:宋体"}
+\# 配置接口Dialer1在10个keepalive周期内没有收到keepalive报文的应答就拆除链路。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x7129_13907_283532912}
+\<Sysname\> system-view
 
-[\[Sysname\] interface dialer 1]{lang="EN-US"}
+Sysname interface dialer 1
 
-[\[Sysname-Dialer1\] timer-hold retry 10]{lang="EN-US"}
+Sysname-Dialer1 timer-hold retry 10
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x7129_13907_283532913}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[timer-hold]{lang="EN-US"}**]{#struct_0_x7129_13907_1873688629}
+·**timer-hold**
 
-[ ]{lang="EN-US"}
-:::

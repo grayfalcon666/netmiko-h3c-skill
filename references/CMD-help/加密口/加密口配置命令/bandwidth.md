@@ -1,457 +1,428 @@
-::: {#1742433432 .myid}
-[]{#_Toc404794146}[]{#struct_0_x2878_x8506_62076976}
 
 **加密口 \-- 加密口配置命令 \-- bandwidth**
 
 ------------------------------------------------------------------------
 
-[**[bandwidth]{lang="EN-US"}**]{#struct_0_x2878_x8506_x915640045}[命令用来配置接口的期望带宽。]{style="font-family:宋体"}
+**[bandwidth**]命令用来配置接口的期望带宽。
 
-[**[undo bandwidth]{lang="EN-US"}**]{#struct_0_x2878_x8506_x1937976605}[命令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo bandwidth**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_x1327906773}
+【命令】
 
-[**[bandwidth]{lang="EN-US"}**[ *bandwidth-value*]{lang="EN-US"}]{#struct_0_x2878_x8506_x585100009}
+**[bandwidth** *bandwidth-value*]
 
-[**[undo bandwidth]{lang="EN-US"}**]{#struct_0_x2878_x8506_x1461304218}
+**[undo bandwidth**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_740854589}
+【缺省情况】
 
-[[加密口的期望带宽＝接口的波特率÷]{style="font-family:宋体"}[1000]{lang="EN-US"}]{#struct_0_x2878_x8506_x1430105903}[（]{style="font-family:宋体"}[kbit/s]{lang="EN-US"}[）。]{style="font-family:宋体"}
+加密口的期望带宽＝接口的波特率÷1000（kbit/s）。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_835530669}
+【视图】
 
-[[加密口视图]{style="font-family:宋体"}]{#struct_0_x2878_x8506_x1183612064}
+加密口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_x368381146}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2878_x8506_412128642}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2878_x8506_2093495787}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_1985522297}
+【参数】
 
-[*[bandwidth-value]{lang="EN-US"}*]{#struct_0_x2878_x8506_x585034473}[：]{style="font-family:宋体"}[表示接口的期望带宽，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[400000000]{lang="EN-US"}[，单位为]{style="font-family:宋体"}[kbit/s]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[bandwidth-value*]：表示接口的期望带宽，取值范围为1～400000000，单位为kbit/s。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_1626150512}
+【使用指导】
 
-[[接口的期望带宽会影响链路开销值，具体介绍请参见"三层技术]{style="font-family:宋体"}[-IP]{lang="EN-US"}]{#struct_0_x2878_x8506_x1637796929}[路由配置指导"中的"]{style="font-family:宋体"}[OSPF]{lang="EN-US"}["、"]{style="font-family:宋体"}[OSPFv3]{lang="EN-US"}["和"]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}["。]{style="font-family:宋体"}
+接口的期望带宽会影响链路开销值，具体介绍请参见"三层技术-IP路由配置指导"中的"OSPF"、"OSPFv3"和"IS-IS"。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_137417527}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2878_x8506_x692022596}[配置加密口]{style="font-family:宋体"}[Encrypt2/4/0]{lang="EN-US"}[的期望带宽为]{style="font-family:宋体"}[50kbit/s]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置加密口Encrypt2/4/0的期望带宽为50kbit/s。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x2878_x8506_x727565309}
+\<Sysname\> system-view
 
-[\[Sysname\] interface encrypt 2/4/0]{lang="EN-US"}
+Sysname interface encrypt 2/4/0
 
-[\[Sysname-Encrypt2/4/0\] bandwidth 50]{lang="EN-US"}
-:::
-
-::: {#-1461383778 .myid}
-[]{#_Toc404794147}[]{#struct_0_x2878_x8506_2079105895}
+Sysname-Encrypt2/4/0 bandwidth 50
 
 **加密口 \-- 加密口配置命令 \-- description**
 
 ------------------------------------------------------------------------
 
-[**[description]{lang="EN-US"}**]{#struct_0_x2878_x8506_x1071741443}[命令用来设置当前接口的描述信息。]{style="font-family:宋体"}
+**[description**]命令用来设置当前接口的描述信息。
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_x2878_x8506_20168184}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo description**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_x584968937}
+【命令】
 
-[**[description]{lang="EN-US"}**[ *text*]{lang="EN-US"}]{#struct_0_x2878_x8506_x1779916681}
+**[description** *text*]
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_x2878_x8506_x998384726}
+**[undo description**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_x55445454}
+【缺省情况】
 
-[[接口的描述信息为"*该接口的接口名*]{style="font-family:宋体"}[ Interface]{lang="EN-US"}]{#struct_0_x2878_x8506_1015226400}["，比如：]{style="font-family:宋体"}[Encrypt2/4/0 Interface]{lang="EN-US"}[。]{style="font-family:宋体"}
+接口的描述信息为"*该接口的接口名* Interface"，比如：Encrypt2/4/0 Interface。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_x293736803}
+【视图】
 
-[[加密口视图]{style="font-family:宋体"}]{#struct_0_x2878_x8506_x437252226}
+加密口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_x1729967323}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2878_x8506_x1424209637}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2878_x8506_x584903401}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_84922547}
+【参数】
 
-[*[text]{lang="EN-US"}*]{#struct_0_x2878_x8506_x1138287577}[：接口描述信息，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[text*]：接口描述信息，为1～255个字符的字符串，区分大小写。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_x1969119106}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2878_x8506_567914618}[设置加密口]{style="font-family:宋体"}[Encrypt2/4/0]{lang="EN-US"}[的描述信息为"]{style="font-family:宋体"}[encrypt-intf]{lang="EN-US"}["。]{style="font-family:宋体"}
+\# 设置加密口Encrypt2/4/0的描述信息为"encrypt-intf"。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x2878_x8506_x1470963827}
+\<Sysname\> system-view
 
-[\[Sysname\] interface encrypt 2/4/0]{lang="EN-US"}
+Sysname interface encrypt 2/4/0
 
-[\[Sysname-Encrypt2/4/0\] description encrypt-intf]{lang="EN-US"}
-:::
-
-::: {#1588189860 .myid}
-[]{#_Toc404794148}[]{#struct_0_x2878_x8506_233409329}
+Sysname-Encrypt2/4/0 description encrypt-intf
 
 **加密口 \-- 加密口配置命令 \-- display interface encrypt**
 
 ------------------------------------------------------------------------
 
-[**[display interface ]{lang="EN-US"}[encrypt]{lang="EN-US"}**]{#struct_0_x2878_x8506_x1311802066}[命令用来显示]{style="font-family:宋体"}[加密口]{style="font-family:宋体"}[的相关信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[display interface encrypt**]命令用来显示加密口的相关信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_x2015792893}
+【命令】
 
-[**[display interface ]{lang="EN-US"}**[\[ **encrypt** \[ *interface-number* \] \] \[ **brief** \[ **description** \| **down** \] \]]{lang="EN-US"}]{#struct_0_x2878_x8506_442052255}
+**[display interface **[ **encrypt** [ *interface-number*    **brief** [ **description** \| **down** ] ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_1616054329}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x2878_x8506_1891424146}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_280242833}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2878_x8506_x1001145144}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x2878_x8506_1775538281}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2878_x8506_608472979}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x2878_x8506_x959436640}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_x585820905}
+【参数】
 
-[*[interface-number]{lang="EN-US"}*]{#struct_0_x2878_x8506_x1030273683}[：显示指定加密口的信息。]{style="font-family:宋体"}
+*[interface-number*]：显示指定加密口的信息。
 
-[**[brief]{lang="EN-US"}**]{#struct_0_x2878_x8506_x1898169809}[：显示接口的概要信息。不指定该参数时，将显示接口的详细信息。]{style="font-family:宋体"}
+**[brief**]：显示接口的概要信息。不指定该参数时，将显示接口的详细信息。
 
-[**[description]{lang="EN-US"}**]{#struct_0_x2878_x8506_x590149739}[：用来显示用户配置的接口的全部描述信息。如果某接口的描述信息超过]{style="font-family:宋体"}[27]{lang="EN-US"}[个字符，不指定该参数时，只显示描述信息中的前]{style="font-family:宋体"}[27]{lang="EN-US"}[个字符，超出部分不显示；指定该参数时，可以显示全部描述信息。]{style="font-family:宋体"}
+**[description**]：用来显示用户配置的接口的全部描述信息。如果某接口的描述信息超过27个字符，不指定该参数时，只显示描述信息中的前27个字符，超出部分不显示；指定该参数时，可以显示全部描述信息。
 
-[**[down]{lang="EN-US"}**]{#struct_0_x2878_x8506_314413301}[：显示当前物理状态为]{style="font-family:宋体"}[down]{lang="EN-US"}[的接口的信息以及]{style="font-family:宋体"}[down]{lang="EN-US"}[的原因。不指定该参数时，将不会根据接口物理状态来过滤显示信息。]{style="font-family:宋体"}
+**[down**]：显示当前物理状态为down的接口的信息以及down的原因。不指定该参数时，将不会根据接口物理状态来过滤显示信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_932187183}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果不指定]{style="font-family:宋体"}]{#struct_0_x2878_x8506_802277132}**[encrypt]{lang="EN-US"}**[参数，将显示设备支持的所有接口的相关信息；]{style="font-family:宋体"}
+·如果不指定**encrypt**参数，将显示设备支持的所有接口的相关信息；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定]{lang="EN-US" style="font-family:宋体"}**[encrypt]{lang="EN-US"}**]{#struct_0_x2878_x8506_580960767}[参数，不指定]{lang="EN-US" style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[参数，将显示所有已创建的]{lang="EN-US" style="font-family:宋体"}[加密口]{style="font-family:宋体"}[的相关信息。]{lang="EN-US" style="font-family:宋体"}
+·如果指定**encrypt**参数，不指定*interface-number*参数，将显示所有已创建的加密口的相关信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_1352954238}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2878_x8506_x1832365699}[显示加密口]{style="font-family:宋体"}[Encrypt2/4/0]{lang="EN-US"}[的详细信息。]{style="font-family:宋体"}
+\# 显示加密口Encrypt2/4/0的详细信息。
 
-[[\<Sysname\> display interface encrypt 2/4/0]{lang="EN-US"}]{#struct_0_x2878_x8506_x585362152}
+\<Sysname\> display interface encrypt 2/4/0
 
-[Encrypt2/4/0]{lang="EN-US"}
+Encrypt2/4/0
 
-[Current state: DOWN]{lang="EN-US"}
+Current state: DOWN
 
-[Line protocol state: DOWN]{lang="EN-US"}
+Line protocol state: DOWN
 
-[Description: Encrypt2/4/0 Interface]{lang="EN-US"}
+Description: Encrypt2/4/0 Interface
 
-[Bandwidth: 64kbps]{lang="EN-US"}
+Bandwidth: 64kbps
 
-[Maximum Transmit Unit: 64000]{lang="EN-US"}
+Maximum Transmit Unit: 64000
 
-[Internet protocol processing: disabled]{lang="EN-US"}
+Internet protocol processing: disabled
 
-[Physical: Encrypt2/4/0, baudrate: 64000 bps]{lang="EN-US"}
+Physical: Encrypt2/4/0, baudrate: 64000 bps
 
-[Last 5 seconds input: 0 bytes/sec, 0 packets/sec]{lang="EN-US"}
+Last 5 seconds input: 0 bytes/sec, 0 packets/sec
 
-[Last 5 seconds output: 0 bytes/sec, 0 packets/sec]{lang="EN-US"}
+Last 5 seconds output: 0 bytes/sec, 0 packets/sec
 
-[Input: 0 packets, 0 bytes, 0 droped]{lang="EN-US"}
+Input: 0 packets, 0 bytes, 0 droped
 
-[Output: 0 packets, 0 bytes, 0 droped]{lang="EN-US"}
+Output: 0 packets, 0 bytes, 0 droped
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2878_x8506_x655271059}[显示加密口]{style="font-family:宋体"}[Encrypt2/4/0]{lang="EN-US"}[的概要信息。]{style="font-family:宋体"}
+\# 显示加密口Encrypt2/4/0的概要信息。
 
-[[\<Sysname\> display interface encrypt 2/4/0 brief]{lang="EN-US"}]{#struct_0_x2878_x8506_x1633190584}
+\<Sysname\> display interface encrypt 2/4/0 brief
 
-[Brief information on interface(s) under route mode:]{lang="EN-US"}
+Brief information on interface(s) under route mode:
 
-[Link: ADM - administratively down; Stby - standby]{lang="EN-US"}
+Link: ADM - administratively down; Stby - standby
 
-[Protocol: (s) - spoofing]{lang="EN-US"}
+Protocol: (s) - spoofing
 
-[Interface            Link Protocol Main IP         Description]{lang="EN-US"}
+Interface            Link Protocol Main IP         Description
 
-[En2/4/0              DOWN DOWN      \--]{lang="EN-US"}
+En2/4/0              DOWN DOWN      \--
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2878_x8506_x585296616}[显示当前物理状态为]{style="font-family:宋体"}[down]{lang="EN-US"}[的加密口的信息以及]{style="font-family:宋体"}[down]{lang="EN-US"}[的原因。]{style="font-family:宋体"}
+\# 显示当前物理状态为down的加密口的信息以及down的原因。
 
-[[\<Sysname\> display interface encrypt brief down]{lang="EN-US"}]{#struct_0_x2878_x8506_826223998}
+\<Sysname\> display interface encrypt brief down
 
-[Brief information on interface(s) under route mode:]{lang="EN-US"}
+Brief information on interface(s) under route mode:
 
-[Link: ADM - administratively down; Stby - standby]{lang="EN-US"}
+Link: ADM - administratively down; Stby - standby
 
-[Interface            Link Cause]{lang="EN-US"}
+Interface            Link Cause
 
-[En2/4/0              ADM   Administratively]{lang="EN-US"}
+En2/4/0              ADM   Administratively
 
-[En2/4/1              DOWN  Not connected]{lang="EN-US"}
+En2/4/1              DOWN  Not connected
 
-[En2/4/2              DOWN  Not connected]{lang="EN-US"}
+En2/4/2              DOWN  Not connected
 
-[En2/4/3              DOWN  Not connected]{lang="EN-US"}
+En2/4/3              DOWN  Not connected
 
-[En2/4/4              DOWN  Not connected]{lang="EN-US"}
+En2/4/4              DOWN  Not connected
 
-[En2/4/5              DOWN  Not connected]{lang="EN-US"}
+En2/4/5              DOWN  Not connected
 
-[En2/4/6              DOWN  Not connected]{lang="EN-US"}
+En2/4/6              DOWN  Not connected
 
-[En2/4/7              DOWN  Not connected]{lang="EN-US"}
+En2/4/7              DOWN  Not connected
 
-[[表1-1 ]{lang="EN-US"}[display interface encrypt]{lang="EN-US"}]{#struct_0_x2878_x8506_1917926754}[命令显示信息描述表]{style="font-family:黑体"}
+表1-1 display interface encrypt命令显示信息描述表
 
-[]{#table_struct_0_x854588723}[[字段]{style="font-family:黑体"}]{#struct_0_x2878_x8506_312732985}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x2878_x8506_870466669}
+描述
 
-[[Encrypt2/4/0 ]{lang="EN-US"}]{#struct_0_x2878_x8506_881141373}
+Encrypt2/4/0
 
-[[Current state]{lang="EN-US"}]{#struct_0_x2878_x8506_x585231080}
+Current state
 
-[[接口当前的物理状态和管理状态，可能的取值及含义如下：]{style="font-family:宋体"}]{#struct_0_x2878_x8506_1264957658}
+接口当前的物理状态和管理状态，可能的取值及含义如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_x2878_x8506_1294893799}[（]{lang="EN-US" style="font-family:宋体"}[Administratively]{lang="EN-US"}[）：表示该接口已经通过]{lang="EN-US" style="font-family:宋体"}**[shutdown]{lang="EN-US"}**[命令被关闭，即管理状态为关闭]{lang="EN-US" style="font-family:宋体"}
+·DOWN（Administratively）：表示该接口已经通过**shutdown**命令被关闭，即管理状态为关闭
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_x2878_x8506_x1778845221}[：表示该接口的管理状态为开启，但物理状态为关闭（可能因为没有物理连线或者线路故障）]{style="font-family:宋体"}
+·DOWN：表示该接口的管理状态为开启，但物理状态为关闭（可能因为没有物理连线或者线路故障）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_x2878_x8506_x1570263582}[：该接口的管理状态和物理状态均为开启]{style="font-family:宋体"}
+·UP：该接口的管理状态和物理状态均为开启
 
-[[Line protocol state]{lang="EN-US"}]{#struct_0_x2878_x8506_x61476448}
+Line protocol state
 
-[[接口的链路层协议状态，可能的状态及含义如下：]{style="font-family:宋体"}]{#struct_0_x2878_x8506_x585165544}
+接口的链路层协议状态，可能的状态及含义如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_x2878_x8506_2031324009}[：表示数据链路层协议状态为开启]{style="font-family:宋体"}
+·UP：表示数据链路层协议状态为开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_x2878_x8506_x1070320245}[：表示数据链路层协议状态为关闭]{style="font-family:宋体"}
+·DOWN：表示数据链路层协议状态为关闭
 
-[[Description]{lang="EN-US"}]{#struct_0_x2878_x8506_x420371323}
+Description
 
-[[用户通过]{style="font-family:宋体"}**[description]{lang="EN-US"}**]{#struct_0_x2878_x8506_x720800364}[命令给接口配置的描述信息。使用]{style="font-family:宋体"}**[display interface brief]{lang="EN-US"}**[命令，不指定]{style="font-family:宋体"}**[description]{lang="EN-US"}**[参数时，该字段最多显示]{style="font-family:宋体"}[27]{lang="EN-US"}[个字符；指定]{style="font-family:宋体"}**[description]{lang="EN-US"}**[参数时，可显示配置的全部描述信息]{style="font-family:宋体"}
+用户通过**description**命令给接口配置的描述信息。使用**display interface brief**命令，不指定**description**参数时，该字段最多显示27个字符；指定**description**参数时，可显示配置的全部描述信息
 
-[[Bandwidth]{lang="EN-US"}]{#struct_0_x2878_x8506_490275289}
+Bandwidth
 
-[[接口的期望带宽]{style="font-family:宋体"}]{#struct_0_x2878_x8506_x585100008}
+接口的期望带宽
 
-[[Maximum Transmit Unit]{lang="EN-US"}]{#struct_0_x2878_x8506_x1461369754}
+Maximum Transmit Unit
 
-[[接口的最大传输单元（]{style="font-family:宋体"}[MTU]{lang="EN-US"}]{#struct_0_x2878_x8506_1091513796}[）。缺省值为]{style="font-family:宋体"}[64000]{lang="EN-US"}[字节。表示长度大于]{style="font-family:宋体"}[MTU]{lang="EN-US"}[的报文，将会被分片后再发送。如果设置了不准分片，报文会被丢弃]{style="font-family:宋体"}
+接口的最大传输单元（MTU）。缺省值为64000字节。表示长度大于MTU的报文，将会被分片后再发送。如果设置了不准分片，报文会被丢弃
 
-[[Physical]{lang="EN-US"}]{#struct_0_x2878_x8506_1776876098}
+Physical
 
-[[物理层链路信息]{style="font-family:宋体"}]{#struct_0_x2878_x8506_x747442263}
+物理层链路信息
 
-[[baudrate]{lang="EN-US"}]{#struct_0_x2878_x8506_x1714345955}
+baudrate
 
-[[接口的带宽]{style="font-family:宋体"}]{#struct_0_x2878_x8506_x585034472}
+接口的带宽
 
-[[Last 5 seconds input: 0 bytes/sec, 0 packets/sec]{lang="EN-US"}]{#struct_0_x2878_x8506_1626216048}
+Last 5 seconds input: 0 bytes/sec, 0 packets/sec
 
-[[最近]{style="font-family:宋体"}[5]{lang="EN-US"}]{#struct_0_x2878_x8506_x1616950545}[秒钟的平均输入速率：]{style="font-family:宋体"}[bytes/sec]{lang="EN-US"}[表示平均每秒输入的字节数，]{style="font-family:宋体"}[packets/sec]{lang="EN-US"}[表示平均每秒输入的包数]{style="font-family:宋体"}
+最近5秒钟的平均输入速率：bytes/sec表示平均每秒输入的字节数，packets/sec表示平均每秒输入的包数
 
-[[Last 5 seconds output:  0 bytes/sec, 0 packets/sec]{lang="EN-US"}]{#struct_0_x2878_x8506_x1003696824}
+Last 5 seconds output:  0 bytes/sec, 0 packets/sec
 
-[[最近]{style="font-family:宋体"}[5]{lang="EN-US"}]{#struct_0_x2878_x8506_x328058271}[秒钟的平均输出速率：]{style="font-family:宋体"}[bytes/sec]{lang="EN-US"}[表示平均每秒输出的字节数，]{style="font-family:宋体"}[packets/sec]{lang="EN-US"}[表示平均每秒输出的包数]{style="font-family:宋体"}
+最近5秒钟的平均输出速率：bytes/sec表示平均每秒输出的字节数，packets/sec表示平均每秒输出的包数
 
-[[Input: 0 packets, 0 bytes, 0 droped]{lang="EN-US"}]{#struct_0_x2878_x8506_x584968936}
+Input: 0 packets, 0 bytes, 0 droped
 
-[[该接口接收的数据报文个数、字节数，以及由于没有接收缓冲而被丢弃的报文个数]{style="font-family:宋体"}]{#struct_0_x2878_x8506_x1779982217}
+该接口接收的数据报文个数、字节数，以及由于没有接收缓冲而被丢弃的报文个数
 
-[[Output: 0 packets, 0 bytes, 0 droped]{lang="EN-US"}]{#struct_0_x2878_x8506_x1426871643}
+Output: 0 packets, 0 bytes, 0 droped
 
-[[该接口发送的数据报文个数、字节数，以及由于没有发送缓冲而被丢弃的报文个数]{style="font-family:宋体"}]{#struct_0_x2878_x8506_1413683437}
+该接口发送的数据报文个数、字节数，以及由于没有发送缓冲而被丢弃的报文个数
 
-[[Brief information on interface(s) under route mode:]{lang="EN-US"}]{#struct_0_x2878_x8506_x1626233073}
+Brief information on interface(s) under route mode:
 
-[[三层接口的概要信息]{style="font-family:宋体"}]{#struct_0_x2878_x8506_x584903400}
+三层接口的概要信息
 
-[[Link: ADM - administratively down; Stby - standby]{lang="EN-US"}]{#struct_0_x2878_x8506_84857011}
+Link: ADM - administratively down; Stby - standby
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果某接口的]{style="font-family:宋体"}]{#struct_0_x2878_x8506_x987505386}[Link]{lang="EN-US"}[属性值为"]{style="font-family:宋体"}[ADM]{lang="EN-US"}["，则表示该接口被管理员手工关闭了，需要在该接口下执行]{style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**[命令才能恢复接口本身的物理状态]{style="font-family:宋体"}
+·如果某接口的Link属性值为"ADM"，则表示该接口被管理员手工关闭了，需要在该接口下执行**undo shutdown**命令才能恢复接口本身的物理状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果某接口的]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x2878_x8506_1920437210}[Link]{lang="EN-US"}[属性值为"]{lang="EN-US" style="font-family:宋体"}[Stby]{lang="EN-US"}["，则表示该接口是一个备份接口，使用]{lang="EN-US" style="font-family:宋体"}**[display interface-backup state]{lang="EN-US"}**[命令可以查看该备份接口对应的主接口]{lang="EN-US" style="font-family:宋体"}
+·如果某接口的Link属性值为"Stby"，则表示该接口是一个备份接口，使用**display interface-backup state**命令可以查看该备份接口对应的主接口
 
-[[Protocol: (s) - spoofing]{lang="EN-US"}]{#struct_0_x2878_x8506_x585886440}
+Protocol: (s) - spoofing
 
-[[如果某接口的]{style="font-family:宋体"}[Protocol]{lang="EN-US"}]{#struct_0_x2878_x8506_441986719}[属性值中带有"]{style="font-family:宋体"}[(s)]{lang="EN-US"}["，则表示该接口的数据链路层协议状态显示为]{style="font-family:宋体"}[UP]{lang="EN-US"}[，但实际可能没有对应的链路，或者对应的链路不是永久存在而是按需建立的]{style="font-family:宋体"}
+如果某接口的Protocol属性值中带有"(s)"，则表示该接口的数据链路层协议状态显示为UP，但实际可能没有对应的链路，或者对应的链路不是永久存在而是按需建立的
 
-[[Interface]{lang="EN-US"}]{#struct_0_x2878_x8506_x1245093042}
+Interface
 
-[[接口名称缩写]{style="font-family:宋体"}]{#struct_0_x2878_x8506_837251475}
+接口名称缩写
 
-[[Link]{lang="EN-US"}]{#struct_0_x2878_x8506_x585820904}
+Link
 
-[[接口物理连接状态，取值可能为：]{style="font-family:宋体"}]{#struct_0_x2878_x8506_x1030339219}
+接口物理连接状态，取值可能为：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_x2878_x8506_x1342646807}[：表示]{style="font-family:宋体"}[接口]{style="font-family:宋体"}[物理上是连通的]{style="font-family:宋体"}
+·UP：表示接口物理上是连通的
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ADM]{lang="EN-US"}]{#struct_0_x2878_x8506_1325539507}[：表示]{style="font-family:宋体"}[接口]{lang="EN-US" style="font-family:宋体"}[被手工关闭了，需要执行]{style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**[命令才能打开]{style="font-family:宋体"}[接口]{lang="EN-US" style="font-family:宋体"}
+·ADM：表示接口被手工关闭了，需要执行**undo shutdown**命令才能打开接口
 
-[[Protocol]{lang="EN-US"}]{#struct_0_x2878_x8506_x585362155}
+Protocol
 
-[[接口]{style="font-family:宋体"}]{#struct_0_x2878_x8506_x655598739}[数据链路层]{style="font-family:宋体"}[协议状态，]{style="font-family:宋体"}[取值可能为：]{style="font-family:宋体"}
+接口数据链路层协议状态，取值可能为：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_x2878_x8506_x1137426911}[：表示接口的数据链路层是连通的]{style="font-family:宋体"}
+·UP：表示接口的数据链路层是连通的
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_x2878_x8506_x1905183322}[：表示接口的数据链路层不通]{style="font-family:宋体"}
+·DOWN：表示接口的数据链路层不通
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP(s)]{lang="EN-US"}]{#struct_0_x2878_x8506_x1835991896}[：表示接口的数据链路层协议状态显示为]{style="font-family:宋体"}[UP]{lang="EN-US"}[，但实际可能没有对应的链路，或者对应的链路不是永久存在而是按需建立的]{style="font-family:宋体"}
+·UP(s)：表示接口的数据链路层协议状态显示为UP，但实际可能没有对应的链路，或者对应的链路不是永久存在而是按需建立的
 
-[[Main IP]{lang="EN-US"}]{#struct_0_x2878_x8506_x585296619}
+Main IP
 
-[[接口主]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x2878_x8506_825765246}[地址]{style="font-family:宋体"}
+接口主IP地址
 
-[[Cause]{lang="EN-US"}]{#struct_0_x2878_x8506_x298625752}
+Cause
 
-[[接口物理连接状态为]{style="font-family:宋体"}[down]{lang="EN-US"}]{#struct_0_x2878_x8506_x585231083}[的原因，]{style="font-family:宋体"}[取值为]{style="font-family:宋体"}[Administratively]{lang="EN-US"}[时表示本链路被手工关闭了（配置了]{style="font-family:宋体"}**[shutdown]{lang="EN-US"}**[命令），需要执行]{style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**[命令才能恢复真实的物理状态；取值为]{style="font-family:宋体"}[Not connected]{lang="EN-US"}[时]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[没有物理连接（可能没有插网线或者网线故障）]{style="font-family:宋体"}
+接口物理连接状态为down的原因，取值为Administratively时表示本链路被手工关闭了（配置了**shutdown**命令），需要执行**undo shutdown**命令才能恢复真实的物理状态；取值为Not connected时表示没有物理连接（可能没有插网线或者网线故障）
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_1264761050}
+·**interface encrypt**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[interface ]{lang="EN-US"}[encrypt]{lang="EN-US"}**]{#struct_0_x2878_x8506_1724958731}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset counters interface]{lang="EN-US"}**]{#struct_0_x2878_x8506_2134038417}
-
-::: {#1533008127 .myid}
-[]{#_Toc404794149}[]{#struct_0_x2878_x8506_1920904563}
+·**reset counters interface**
 
 **加密口 \-- 加密口配置命令 \-- interface encrypt**
 
 ------------------------------------------------------------------------
 
-[**[interface encrypt]{lang="EN-US"}**]{#struct_0_x2878_x8506_x1293787057}[命令用来进入]{style="font-family:宋体"}[加密口]{style="font-family:宋体"}[视图。]{style="font-family:宋体"}
+**[interface encrypt**]命令用来进入加密口视图。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_x369050493}
+【命令】
 
-[**[interface encrypt]{lang="EN-US"}**[ *number*]{lang="EN-US"}]{#struct_0_x2878_x8506_x322101161}
+**[interface encrypt** *number*]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_x139889302}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x2878_x8506_x1894575276}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_x585165547}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2878_x8506_2031520617}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2878_x8506_873859260}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_x2878_x8506_1267406740}
+【参数】
 
-[*[number]{lang="EN-US"}*]{#struct_0_x2878_x8506_54922982}[：]{style="font-family:宋体"}[加密口]{style="font-family:宋体"}[的编号。]{style="font-family:宋体"}
+*[number*]：加密口的编号。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_x1099914346}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2878_x8506_x1543826928}[进入加密口]{style="font-family:宋体"}[Encrypt2/4/0]{lang="EN-US"}[的接口视图。]{style="font-family:宋体"}
+\# 进入加密口Encrypt2/4/0的接口视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x2878_x8506_x1618997388}
+\<Sysname\> system-view
 
-[\[Sysname\] interface encrypt 2/4/0]{lang="EN-US"}
+Sysname interface encrypt 2/4/0
 
-[\[Sysname-Encrypt2/4/0\]]{lang="EN-US"}
-:::
-
-::: {#2052875588 .myid}
-[]{#_Toc404794150}[]{#struct_0_x2878_x8506_2113822453}
+Sysname-Encrypt2/4/0
 
 **加密口 \-- 加密口配置命令 \-- reset counters interface**
 
 ------------------------------------------------------------------------
 
-[**[reset counters interface]{lang="EN-US"}**]{#struct_0_x2878_x8506_x585100011}[命令用来清除]{style="font-family:
-宋体"}[加密口]{style="font-family:宋体"}[的统计信息。]{style="font-family:
-宋体"}
+**[reset counters interface**]命令用来清除加密口的统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_x1461828507}
+【命令】
 
-[**[reset counters interface]{lang="EN-US"}**[ \[ **encrypt** \[ *interface-number* \] \]]{lang="EN-US"}]{#struct_0_x2878_x8506_598233179}
+**[reset counters interface** [ **encrypt** [ *interface-number*  ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_x1337205979}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x2878_x8506_1297778131}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_2056172407}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2878_x8506_583741177}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2878_x8506_644714501}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_600557598}
+【参数】
 
-[**[encrypt]{lang="EN-US"}**]{#struct_0_x2878_x8506_x585034475}[：清除加密口的统计信息。]{style="font-family:宋体"}
+**[encrypt**]：清除加密口的统计信息。
 
-[*[interface-number]{lang="EN-US"}*]{#struct_0_x2878_x8506_1626019440}[：加密口的编号。]{style="font-family:宋体"}
+*[interface-number*]：加密口的编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_x899855018}
+【使用指导】
 
-[[在某些情况下，需要统计一定时间内某接口的流量，这就需要在统计开始前清除该接口原有的统计信息，重新进行统计。]{style="font-family:宋体"}]{#struct_0_x2878_x8506_1293583481}
+在某些情况下，需要统计一定时间内某接口的流量，这就需要在统计开始前清除该接口原有的统计信息，重新进行统计。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果不指定]{lang="EN-US" style="font-family:宋体"}**[encrypt]{lang="EN-US"}**]{#struct_0_x2878_x8506_1077410369}[和]{lang="EN-US" style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[，则清除所有接口的统计信息；]{lang="EN-US" style="font-family:宋体"}
+·如果不指定**encrypt**和*interface-number*，则清除所有接口的统计信息；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定]{lang="EN-US" style="font-family:宋体"}**[encrypt]{lang="EN-US"}**]{#struct_0_x2878_x8506_x1224592255}[而不指定]{lang="EN-US" style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[，则清除所有]{lang="EN-US" style="font-family:宋体"}[加密口]{lang="EN-US" style="font-family:宋体"}[的统计信息；]{lang="EN-US" style="font-family:
-宋体"}
+·如果指定**encrypt**而不指定*interface-number*，则清除所有加密口的统计信息；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果同时指定]{lang="EN-US" style="font-family:宋体"}**[encrypt]{lang="EN-US"}**]{#struct_0_x2878_x8506_x230109307}[和]{lang="EN-US" style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[，则清除指定]{lang="EN-US" style="font-family:宋体"}[加密口]{lang="EN-US" style="font-family:宋体"}[的统计信息。]{lang="EN-US" style="font-family:
-宋体"}
+·如果同时指定**encrypt**和*interface-number*，则清除指定加密口的统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_x1364060094}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2878_x8506_x584968939}[清除加密口]{style="font-family:宋体"}[Encrypt2/4/0]{lang="EN-US"}[上的统计信息。]{style="font-family:宋体"}
+\# 清除加密口Encrypt2/4/0上的统计信息。
 
-[[\<Sysname\> reset counters interface encrypt 2/4/0]{lang="EN-US"}]{#struct_0_x2878_x8506_x1780309897}
+\<Sysname\> reset counters interface encrypt 2/4/0
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_1175412169}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display interface ]{lang="EN-US"}[encrypt]{lang="EN-US"}**]{#struct_0_x2878_x8506_x161473097}
-:::
-
-::: {#1170655049 .myid}
-[]{#_Toc404794151}[]{#struct_0_x2878_x8506_x1232634084}
+·**display interface encrypt**
 
 **加密口 \-- 加密口配置命令 \-- shutdown**
 
 ------------------------------------------------------------------------
 
-[**[shutdown]{lang="EN-US"}**]{#struct_0_x2878_x8506_x841957948}[命令用来关闭接口。]{style="font-family:宋体"}
+**[shutdown**]命令用来关闭接口。
 
-[**[undo]{lang="EN-US"}**[ **shutdown**]{lang="EN-US"}]{#struct_0_x2878_x8506_x164967768}[命令用来打开接口。]{style="font-family:宋体"}
+**[undo** **shutdown**]命令用来打开接口。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_x723168800}
+【命令】
 
-[**[shutdown]{lang="EN-US"}**]{#struct_0_x2878_x8506_x1606376020}
+**[shutdown**]
 
-[**[undo shutdown]{lang="EN-US"}**]{#struct_0_x2878_x8506_x1323395532}
+**[undo shutdown**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_x584903403}
+【缺省情况】
 
-[[接口处于打开状态。]{style="font-family:宋体"}]{#struct_0_x2878_x8506_84791475}
+接口处于打开状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_x657691367}
+【视图】
 
-[[加密口视图]{style="font-family:宋体"}]{#struct_0_x2878_x8506_180518449}
+加密口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_85325360}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2878_x8506_x836231956}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2878_x8506_x142447279}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2878_x8506_x1437349300}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2878_x8506_282303545}[关闭加密口]{style="font-family:宋体"}[Encrypt2/4/0]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 关闭加密口Encrypt2/4/0。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x2878_x8506_x585886443}
+\<Sysname\> system-view
 
-[\[Sysname\] interface encrypt 2/4/0]{lang="EN-US"}
+Sysname interface encrypt 2/4/0
 
-[\[Sysname-Encrypt2/4/0\] shutdown]{lang="EN-US"}
-:::
+Sysname-Encrypt2/4/0 shutdown

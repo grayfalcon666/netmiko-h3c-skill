@@ -1,4213 +1,3871 @@
-::: {#1224304223 .myid}
-[]{#_Toc121110292}[]{#_Toc404789371}[]{#struct_0_x1820_12830_x184012105}
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- display igmp-snooping**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **igmp-snooping**]{lang="EN-US"}]{#struct_0_x1820_12830_x790734128}[命令用来显示]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[的状态信息。]{style="font-family:宋体"}
+**[display** **igmp-snooping**]命令用来显示IGMP Snooping的状态信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1261111119}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **igmp-snooping** \[ **global** \| **vlan** *vlan-id* \| **vsi** *vsi-name* \]]{lang="EN-US"}]{#struct_0_x1820_12830_1844786858}
+**[display**[ **igmp-snooping** [ **global** \| **vlan** *vlan-id* \| **vsi** *vsi-name* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1251927254}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1820_12830_x700255310}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1519466439}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1435636263}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1820_12830_830683252}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1836275011}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1820_12830_1011011157}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_767856781}
+【参数】
 
-[**[global]{lang="EN-US"}**]{#struct_0_x1820_12830_x1111531005}[：显示]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[的全局状态信息。]{style="font-family:宋体"}
+**[global**]：显示IGMP Snooping的全局状态信息。
 
-[**[vlan]{lang="EN-US"}**[ *vlan-id*]{lang="EN-US"}]{#struct_0_x1820_12830_x1503521973}[：显示]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[在指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的状态信息。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vlan** *vlan-id*]：显示IGMP Snooping在指定VLAN内的状态信息。*vlan-id*为VLAN的编号，取值范围为1～4094。
 
-[**[vsi]{lang="EN-US"}**[ *vsi-name*]{lang="EN-US"}]{#struct_0_x1820_12830_x42068230}[：]{style="font-family:宋体"}[显示]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[在指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的状态信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[vsi** *vsi-name*]：显示IGMP Snooping在指定VSI内的状态信息。*vsi-name*为VSI的名称，为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1252123862}
+【使用指导】
 
-[[如果未指定任何可选参数，将显示]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}]{#struct_0_x1820_12830_x802961629}[在全局以及所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[和]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的状态信息。]{style="font-family:宋体"}
+如果未指定任何可选参数，将显示IGMP Snooping在全局以及所有VLAN和VSI内的状态信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1742117280}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_595784049}[显示]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[在全局以及所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[和]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的状态信息。]{style="font-family:宋体"}
+\# 显示IGMP Snooping在全局以及所有VLAN和VSI内的状态信息。
 
-[[\<Sysname\> display igmp-snooping]{lang="EN-US"}]{#struct_0_x1820_12830_1252058326}
+\<Sysname\> display igmp-snooping
 
-[IGMP snooping information: Global]{lang="EN-US"}
+IGMP snooping information: Global
 
-[ IGMP snooping: Enabled]{lang="EN-US"}
+ IGMP snooping: Enabled
 
-[ Drop-unknown: Disabled]{lang="EN-US"}
+ Drop-unknown: Disabled
 
-[ Host-aging-time: 260s]{lang="EN-US"}
+ Host-aging-time: 260s
 
-[ Router-aging-time: 260s]{lang="EN-US"}
+ Router-aging-time: 260s
 
-[ Max-response-time: 10s]{lang="EN-US"}
+ Max-response-time: 10s
 
-[ Last-member-query-interval: 1s]{lang="EN-US"}
+ Last-member-query-interval: 1s
 
-[ Report-aggregation: Enabled]{lang="EN-US"}
+ Report-aggregation: Enabled
 
-[ Dot1p-priority: \--]{lang="EN-US"}
+ Dot1p-priority: \--
 
-[ ]{lang="EN-US"}
+IGMP snooping information: VLAN 1
 
-[IGMP snooping information: VLAN 1]{lang="EN-US"}
+ IGMP snooping: Enabled
 
-[ IGMP snooping: Enabled]{lang="EN-US"}
+ Drop-unknown: Disabled
 
-[ Drop-unknown: Disabled]{lang="EN-US"}
+ Version: 2
 
-[ Version: 2]{lang="EN-US"}
+ Host-aging-time: 260s
 
-[ Host-aging-time: 260s]{lang="EN-US"}
+ Router-aging-time: 260s
 
-[ Router-aging-time: 260s]{lang="EN-US"}
+ Max-response-time: 10s
 
-[ Max-response-time: 10s]{lang="EN-US"}
+ Last-member-query-interval: 1s
 
-[ Last-member-query-interval: 1s]{lang="EN-US"}
+ Querier: Disabled
 
-[ Querier: Disabled]{lang="EN-US"}
+ Query-interval: 125s
 
-[ Query-interval: 125s]{lang="EN-US"}
+ General-query source IP: 1.1.1.1
 
-[ General-query source IP: 1.1.1.1]{lang="EN-US"}
+ Special-query source IP: 2.2.2.2
 
-[ Special-query source IP: 2.2.2.2]{lang="EN-US"}
+ Report source IP: 3.0.0.3
 
-[ Report source IP: 3.0.0.3]{lang="EN-US"}
+ Leave source IP: 1.0.0.1
 
-[ Leave source IP: 1.0.0.1]{lang="EN-US"}
+ Dot1p-priority: 2
 
-[ Dot1p-priority: 2]{lang="EN-US"}
+IGMP snooping information: VLAN 10
 
-[ ]{lang="EN-US"}
+ IGMP snooping: Enabled
 
-[IGMP snooping information: VLAN 10]{lang="EN-US"}
+ Drop-unknown: Enabled
 
-[ IGMP snooping: Enabled]{lang="EN-US"}
+ Version: 3
 
-[ Drop-unknown: Enabled]{lang="EN-US"}
+ Host-aging-time: 260s
 
-[ Version: 3]{lang="EN-US"}
+ Router-aging-time: 260s
 
-[ Host-aging-time: 260s]{lang="EN-US"}
+ Max-response-time: 10s
 
-[ Router-aging-time: 260s]{lang="EN-US"}
+ Last-member-query-interval: 1s
 
-[ Max-response-time: 10s]{lang="EN-US"}
+ Querier: Disabled
 
-[ Last-member-query-interval: 1s]{lang="EN-US"}
+ Query-interval: 125s
 
-[ Querier: Disabled]{lang="EN-US"}
+ General-query source IP: 1.1.1.1
 
-[ Query-interval: 125s]{lang="EN-US"}
+ Special-query source IP: 2.2.2.2
 
-[ General-query source IP: 1.1.1.1]{lang="EN-US"}
+ Report source IP: 3.0.0.3
 
-[ Special-query source IP: 2.2.2.2]{lang="EN-US"}
+ Leave source IP: 1.0.0.1
 
-[ Report source IP: 3.0.0.3]{lang="EN-US"}
+ Dot1p-priority: \--
 
-[ Leave source IP: 1.0.0.1]{lang="EN-US"}
+IGMP snooping information: VSI aaa
 
-[ Dot1p-priority: \--]{lang="EN-US"}
+ IGMP snooping: Enabled
 
-[ ]{lang="EN-US"}
+ Drop-unknown: Enabled
 
-[IGMP snooping information: VSI aaa]{lang="EN-US"}
+ Version: 2
 
-[ IGMP snooping: Enabled]{lang="EN-US"}
+ Host-aging-time: 260s
 
-[ Drop-unknown: Enabled]{lang="EN-US"}
+ Router-aging-time: 260s
 
-[ Version: 2]{lang="EN-US"}
+ Max-response-time: 10s
 
-[ Host-aging-time: 260s]{lang="EN-US"}
+ Last-member-query-interval: 1s
 
-[ Router-aging-time: 260s]{lang="EN-US"}
+ Querier: Disabled
 
-[ Max-response-time: 10s]{lang="EN-US"}
+ Query-interval: 125s
 
-[ Last-member-query-interval: 1s]{lang="EN-US"}
+ General-query source IP: 1.1.1.1
 
-[ Querier: Disabled]{lang="EN-US"}
+ Special-query source IP: 2.2.2.2
 
-[ Query-interval: 125s]{lang="EN-US"}
+表1-1 display igmp-snooping命令显示信息描述表
 
-[ General-query source IP: 1.1.1.1]{lang="EN-US"}
+字段
 
-[ Special-query source IP: 2.2.2.2]{lang="EN-US"}
+描述
 
-[]{#struct_0_x1820_12830_x909915669}[[表1-1 ]{lang="EN-US"}[display igmp-snooping]{lang="EN-US"}]{#_Toc288831908}[命令显示信息描述表]{style="font-family:黑体"}
+IGMP snooping information
 
-[]{#table_struct_0_1305711266}[[字段]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1989658424}
-:::
+IGMP Snooping的状态信息
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1820_12830_x2080876940}
+IGMP snooping
 
-[[IGMP snooping information]{lang="EN-US"}]{#struct_0_x1820_12830_1900993623}
+IGMP Snooping的使能状态：
 
-[[IGMP Snooping]{lang="EN-US"}]{#struct_0_x1820_12830_1252254934}[的状态信息]{style="font-family:宋体"}
+·Enabled：表示已使能
 
-[[IGMP snooping]{lang="EN-US"}]{#struct_0_x1820_12830_x1208331548}
+·Disabled：表示未使能
 
-[[IGMP Snooping]{lang="EN-US"}]{#struct_0_x1820_12830_826689441}[的使能状态：]{style="font-family:宋体"}
+Drop-unknown
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_x1820_12830_x1954791222}[：表示已使能]{lang="EN-US" style="font-family:宋体"}
+丢弃未知组播数据报文功能的使能状态（本字段的支持情况与设备的型号有关，请以设备的实际情况为准）：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_x1820_12830_x1224326486}[：表示未使能]{lang="EN-US" style="font-family:宋体"}
+·Enabled：表示已使能
 
-[[Drop-unknown]{lang="EN-US"}]{#struct_0_x1820_12830_x1684637467}
+·Disabled：表示未使能
 
-[[丢弃未知组播数据报文功能的使能状态（本字段的支持情况与设备的型号有关，请以设备的实际情况为准）：]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1226718621}
+Version
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_x1820_12830_1252189398}[：表示已使能]{lang="EN-US" style="font-family:宋体"}
+IGMP Snooping的版本
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_x1820_12830_650466600}[：表示未使能]{lang="EN-US" style="font-family:宋体"}
+Host-aging-time
 
-[[Version]{lang="EN-US"}]{#struct_0_x1820_12830_667479668}
+动态成员端口的老化时间
 
-[[IGMP Snooping]{lang="EN-US"}]{#struct_0_x1820_12830_x423636460}[的版本]{style="font-family:宋体"}
+Router-aging-time
 
-[[Host-aging-time]{lang="EN-US"}]{#struct_0_x1820_12830_x465954714}
+动态路由器端口老化时间
 
-[[动态成员端口的老化时间]{style="font-family:宋体"}]{#struct_0_x1820_12830_781972502}
+Max-response-time
 
-[[Router-aging-time]{lang="EN-US"}]{#struct_0_x1820_12830_1251730647}
+IGMP普遍组查询的最大响应时间
 
-[[动态路由器端口老化时间]{style="font-family:宋体"}]{#struct_0_x1820_12830_455025844}
+Last-member-query-interval
 
-[[Max-response-time]{lang="EN-US"}]{#struct_0_x1820_12830_x706497245}
+IGMP特定组查询报文的发送间隔
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_x389918922}[普遍组查询的最大响应时间]{style="font-family:宋体"}
+Report-aggregation
 
-[[Last-member-query-interval]{lang="EN-US"}]{#struct_0_x1820_12830_x1625317259}
+IGMP成员关系报告报文抑制功能的使能状态：
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_1251665111}[特定组查询报文的发送间隔]{style="font-family:宋体"}
+·Enabled：表示已使能
 
-[[Report-aggregation]{lang="EN-US"}]{#struct_0_x1820_12830_1454903309}
+·Disabled：表示未使能
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_x1490958823}[成员关系报告报文抑制功能的使能状态：]{style="font-family:宋体"}
+Dot1p-priority
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_x1820_12830_1014912327}[：表示已使能]{lang="EN-US" style="font-family:宋体"}
+IGMP报文的802.1p优先级，"\--"表示没有配置
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_x1820_12830_1454968845}[：表示未使能]{lang="EN-US" style="font-family:宋体"}
+Querier
 
-[[Dot1p-priority]{lang="EN-US"}]{#struct_0_x1820_12830_x724645690}
+IGMP Snooping查询器的使能状态：
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_1455034381}[报文的]{style="font-family:宋体"}[802.1p]{lang="EN-US"}[优先级，"]{style="font-family:宋体"}[\--]{lang="EN-US"}["表示没有配置]{style="font-family:宋体"}
+·Enabled：表示已使能
 
-[[Querier]{lang="EN-US"}]{#struct_0_x1820_12830_1234719389}
+·Disabled：表示未使能
 
-[[IGMP Snooping]{lang="EN-US"}]{#struct_0_x1820_12830_1455099917}[查询器的使能状态：]{style="font-family:宋体"}
+Query-interval
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_x1820_12830_x736602803}[：表示已使能]{lang="EN-US" style="font-family:宋体"}
+IGMP普遍组查询报文的发送间隔
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_x1820_12830_1455165453}[：表示未使能]{lang="EN-US" style="font-family:宋体"}
+General-query source IP
 
-[[Query-interval]{lang="EN-US"}]{#struct_0_x1820_12830_1237507568}
+IGMP普遍组查询报文的源IP地址
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_1454182413}[普遍组查询报文的发送间隔]{style="font-family:宋体"}
+Special-query source IP
 
-[[General-query source IP]{lang="EN-US"}]{#struct_0_x1820_12830_22035389}
+IGMP特定组查询报文的源IP地址
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_882948263}[普遍组查询报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+Report source IP
 
-[[Special-query source IP]{lang="EN-US"}]{#struct_0_x1820_12830_1454247949}
+IGMP成员关系报告报文的源IP地址
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_x660998886}[特定组查询报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+Leave source IP
 
-[[Report source IP]{lang="EN-US"}]{#struct_0_x1820_12830_1454706700}
-
-[[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_x323458802}[成员关系报告报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
-
-[[Leave source IP]{lang="EN-US"}]{#struct_0_x1820_12830_1454772236}
-
-[[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_x1098761347}[离开组报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#391798419 .myid}
-[]{#_Toc109290001}[]{#_Toc109289999}[]{#_Toc52102254}[]{#_Toc404789372}[]{#struct_0_x1820_12830_2027544007}[]{#_Toc123030573}[]{#_Toc121110309}[]{#_Toc114641929}
+IGMP离开组报文的源IP地址
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- display igmp-snooping group**
 
 ------------------------------------------------------------------------
 
-[**[display igmp-snooping group]{lang="EN-US"}**]{#struct_0_x1820_12830_x1575135978}[命令用来显示动态]{style="font-family:
-宋体"}[IGMP Snooping]{lang="EN-US"}[转发表的信息。]{style="font-family:
-宋体"}
+**[display igmp-snooping group**]命令用来显示动态IGMP Snooping转发表的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1103799062}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_x1820_12830_x936821502}
+集中式设备：
 
-[**[display igmp-snooping]{lang="EN-US"}**[ **group** \[ *group-address* \| *source-address* \] \* \[ **vlan** *vlan-id* \| **vsi** *vsi-name* \] \[ **verbose** \] \[ **cpu** *cpu-number* \]]{lang="EN-US"}]{#struct_0_x1820_12830_1944088188}
+**[display igmp-snooping**[ **group** [ *group-address* \| *source-address* ] \* [ **vlan** *vlan-id* \| **vsi** *vsi-name* ]  **verbose**   **cpu** *cpu-number* ]]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1820_12830_x1872172890}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display igmp-snooping]{lang="EN-US"}**]{#struct_0_x1820_12830_1418063613}[[ ]{lang="EN-US" style="font-size:9.0pt"}]{.TableTextChar}**[group]{lang="EN-US"}**[ ]{lang="EN-US"}[\[ *group-address* \| *source-address* \] \* \[ **vlan** *vlan-id* \| **vsi** *vsi-name* \] \[ **verbose** \] \[ **slot** *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}
+**[display igmp-snooping**]{.TableTextChar}**group**[[ *group-address* \| *source-address* ] \* [ **vlan** *vlan-id* \| **vsi** *vsi-name* ]  **verbose**   **slot** *slot-number* [ **cpu** *cpu-number*  ]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1820_12830_1135126355}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display igmp-snooping]{lang="EN-US"}**]{#struct_0_x1820_12830_1251861719}[[ ]{lang="EN-US" style="font-size:9.0pt"}]{.TableTextChar}**[group]{lang="EN-US"}**[ ]{lang="EN-US"}[\[ *group-address* \| *source-address* \] \* \[ **vlan** *vlan-id* \| **vsi** *vsi-name* \] \[ **verbose** \] \[ **chassis** *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}
+**[display igmp-snooping**]{.TableTextChar}**group**[[ *group-address* \| *source-address* ] \* [ **vlan** *vlan-id* \| **vsi** *vsi-name* ]  **verbose**   **chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number*  ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x323637395}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1294430970}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_414313473}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x256025593}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1820_12830_x1092572523}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_464140910}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1820_12830_x10991415}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1251796183}
+【参数】
 
-[*[group-address]{lang="EN-US"}*]{#struct_0_x1820_12830_x716347130}[：显示指定组播组的信息，取值范围为]{style="font-family:宋体"}[224.0.1.0]{lang="EN-US"}[～]{style="font-family:宋体"}[239.255.255.255]{lang="EN-US"}[。如果未指定本参数，将显示所有组播组的信息。]{style="font-family:宋体"}
+*[group-address*]：显示指定组播组的信息，取值范围为224.0.1.0～239.255.255.255。如果未指定本参数，将显示所有组播组的信息。
 
-[*[source-address]{lang="EN-US"}*]{#struct_0_x1820_12830_1687766771}[：显示指定组播源的信息。如果未指定本参数，将显示所有组播源的信息。]{style="font-family:宋体"}
+*[source-address*]：显示指定组播源的信息。如果未指定本参数，将显示所有组播源的信息。
 
-[**[vlan]{lang="EN-US"}**[ *vlan-id*]{lang="EN-US"}]{#struct_0_x1820_12830_857956415}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果未指定本参数，将显示所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[vlan** *vlan-id*]：显示指定VLAN内的信息。*vlan-id*为VLAN的编号，取值范围为1～4094。如果未指定本参数，将显示所有VLAN内的信息。
 
-[**[vsi]{lang="EN-US"}**[ *vsi-name*]{lang="EN-US"}]{#struct_0_x1820_12830_x41478406}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果未指定本参数，将显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[vsi** *vsi-name*]：显示指定VSI内的信息。*vsi-name*为VSI的名称，为1～31个字符的字符串，区分大小写。如果未指定本参数，将显示所有VSI内的信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_x1820_12830_1598496947}[：]{style="font-family:宋体"}[显示详细信息。如果未指定本参数，将显示简要信息。]{style="font-family:宋体"}
+**[verbose**]：显示详细信息。如果未指定本参数，将显示简要信息。
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_638009690}[：]{style="font-family:宋体"}[显示指定单板上的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示主控板上维护的信息。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定单板上的信息，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示主控板上维护的信息。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_x689224925}[：]{style="font-family:宋体"}[显示指定成员设备上的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。如果未指定本参数，将显示主设备上维护的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}[（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备上的信息，*slot-number*表示设备在IRF中的成员编号。如果未指定本参数，将显示主设备上维护的信息。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_x1231539646}[：]{style="font-family:宋体"}[显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[上]{style="font-family:宋体"}[的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号]{style="font-family:宋体"}[或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号]{style="font-family:宋体"}[。如果未指定本参数，将显示主设备上维护的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}[（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备/PEX上的信息，*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果未指定本参数，将显示主设备上维护的信息。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1820_12830_991303345}[：显示指定成员设备指定单板上的信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定成员设备指定单板上的信息，*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1820_12830_x274606937}[：显示指定单板上的信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号]{style="font-family:宋体"}[或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板]{style="font-family:宋体"}[或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定单板上的信息，*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_x1820_12830_307412576}[：显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上的信息，]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的编号。]{style="font-family:宋体"}[只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="color:black"}]{style="font-family:宋体"}
+**[cpu** *cpu-number*]：显示指定CPU上的信息，*cpu-number*表示CPU的编号。只有指定的**slot**支持多CPU时，才能配置该参数。[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1025719073}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_1251992791}[显示]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内动态]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[转发表的详细信息。]{style="font-family:宋体"}
+\# 显示VLAN 2内动态IGMP Snooping转发表的详细信息。
 
-[[\<Sysname\> display igmp-snooping group vlan 2 verbose]{lang="EN-US"}]{#struct_0_x1820_12830_1227045565}
+\<Sysname\> display igmp-snooping group vlan 2 verbose
 
-[Total 1 entries.]{lang="EN-US"}
+Total 1 entries.
 
-[ ]{lang="EN-US"}
+VLAN 2: Total 1 entries.
 
-[VLAN 2: Total 1 entries.]{lang="EN-US"}
+  (0.0.0.0, 224.1.1.1)
 
-[  (0.0.0.0, 224.1.1.1)]{lang="EN-US"}
+    Attribute: local port
 
-[    Attribute: local port]{lang="EN-US"}
+    FSM information: normal
 
-[    FSM information: normal]{lang="EN-US"}
+    Host slots (0 in total):
 
-[    Host slots (0 in total):]{lang="EN-US"}
+    Host ports (1 in total):
 
-[    Host ports (1 in total):]{lang="EN-US"}
+      GE1/0/2                             (00:03:23)
 
-[      GE1/0/2                             (00:03:23)]{lang="EN-US"}
+\# 显示VSI aaa内动态IGMP Snooping转发表的详细信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x41543942}[显示]{style="font-family:宋体"}[VSI aaa]{lang="EN-US"}[内动态]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[转发表的详细信息。]{style="font-family:宋体"}
+\<Sysname\> display igmp-snooping group vsi aaa verbose
 
-[[\<Sysname\> display igmp-snooping group vsi aaa verbose]{lang="EN-US"}]{#struct_0_x1820_12830_179307228}
+Total 1 entries.
 
-[Total 1 entries.]{lang="EN-US"}
+VSI aaa: Total 1 entries.
 
-[ ]{lang="EN-US"}
+  (0.0.0.0, 224.1.1.1)
 
-[VSI aaa: Total 1 entries.]{lang="EN-US"}
+    Attribute: global port
 
-[  (0.0.0.0, 224.1.1.1)]{lang="EN-US"}
+    FSM information: normal
 
-[    Attribute: global port]{lang="EN-US"}
+    Host slots (0 in total):
 
-[    FSM information: normal]{lang="EN-US"}
+    Host ports (1 in total):
 
-[    Host slots (0 in total):]{lang="EN-US"}
+      AC (VSI index 0, link ID 1)         (00:03:35)
 
-[    Host ports (1 in total):]{lang="EN-US"}
+        VLAN pairs (1 in total):
 
-[      AC (VSI index 0, link ID 1)         (00:03:35)]{lang="EN-US"}
+          Out VLAN 5     In VLAN 2        (00:03:35)
 
-[        VLAN pairs (1 in total):]{lang="EN-US"}
+表1-2 display igmp-snooping group命令显示信息描述表
 
-[          Out VLAN 5     In VLAN 2        (00:03:35)]{lang="EN-US"}
+字段
 
-[[表1-2 ]{lang="EN-US"}[display igmp-snooping group]{lang="EN-US"}]{#struct_0_x1820_12830_x2092181995}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#_Toc123030574}[]{#_Toc121110274}[]{#table_struct_0_1306886359}[[字段]{style="font-family:黑体"}]{#struct_0_x1820_12830_1328322233}
-:::
+Total 1 entries
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1820_12830_997203260}
+表项总数
 
-[[Total 1 entries]{lang="EN-US"}]{#struct_0_x1820_12830_1250769861}
+VLAN 2: Total 1 entries
 
-[[表项总数]{style="font-family:宋体"}]{#struct_0_x1820_12830_1251927255}
+VLAN 2内的表项总数
 
-[[VLAN 2: Total 1 entries]{lang="EN-US"}]{#struct_0_x1820_12830_x700320846}
+VSI aaa: Total 1 entries
 
-[[VLAN 2]{lang="EN-US"}]{#struct_0_x1820_12830_1577971996}[内的表项总数]{style="font-family:宋体"}
+VSI aaa内的表项总数
 
-[[VSI aaa: Total 1 entries]{lang="EN-US"}]{#struct_0_x1820_12830_x42002695}
+(0.0.0.0, 224.1.1.1)
 
-[[VSI aaa]{lang="EN-US"}]{#struct_0_x1820_12830_x42068231}[内的表项总数]{style="font-family:宋体"}
+（S，G）表项，0.0.0.0表示所有组播源
 
-[[(0.0.0.0, 224.1.1.1)]{lang="EN-US"}]{#struct_0_x1820_12830_1767161675}
+Attribute
 
-[[（]{style="font-family:宋体"}]{#struct_0_x1820_12830_1119340620}[S]{lang="FR"}[，]{style="font-family:宋体"}[G]{lang="FR"}[）表项，]{style="font-family:
-  宋体"}[0.0.0.0]{lang="FR"}[表示所有组播源]{style="font-family:宋体"}
+表项属性，包括：
 
-[[Attribute]{lang="EN-US"}]{#struct_0_x1820_12830_x2049726532}
+·global port：表示表项中存在全局口
 
-[[表项属性，包括：]{style="font-family:宋体"}]{#struct_0_x1820_12830_x974740023}
+·local port：表示表项中存在本单板的端口
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[global port]{lang="FR"}]{#struct_0_x1820_12830_x2049660996}[：表示表项中存在全局口]{style="font-family:
-  宋体"}
+·slot：表示表项中存在其它单板的端口
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[local port]{lang="FR"}]{#struct_0_x1820_12830_700052309}[：表示表项中存在本单板的端口]{style="font-family:
-  宋体"}
+FSM information
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[slot]{lang="FR"}]{#struct_0_x1820_12830_1013159215}[：表示表项中存在其它单板的端口]{style="font-family:宋体"}
+表项状态机，包括：
 
-[[FSM information]{lang="EN-US"}]{#struct_0_x1820_12830_x2050119748}
+·delete：表示所有成员属性均已删除
 
-[[表项状态机，包括：]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1310792230}
+·dummy：表示新创建的临时表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[delete]{lang="FR"}]{#struct_0_x1820_12830_658772895}[：表示所有成员属性均已删除]{style="font-family:宋体"}
+·no info：表示没有表项存在
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[dummy]{lang="FR"}]{#struct_0_x1820_12830_x2050054212}[：表示新创建的临时表项]{style="font-family:宋体"}
+·normal：表示主控板通知创建的正式表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[no info]{lang="FR"}]{#struct_0_x1820_12830_x838371395}[：表示没有表项存在]{style="font-family:宋体"}
+Host slots (0 in total)
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[normal]{lang="FR"}]{#struct_0_x1820_12830_1595764128}[：表示主控板通知创建的正式表项]{style="font-family:宋体"}
+本字段的支持情况和具体描述与设备的型号有关，请以设备的实际情况为准：
 
-[[Host slots (0 in total)]{lang="EN-US"}]{#struct_0_x1820_12830_x1951791798}
+·集中式设备：不支持本字段
 
-[[本字段的]{style="font-family:宋体"}]{#struct_0_x1820_12830_1252123863}[支持情况和具体描述与设备的型号有关，请以设备的实际情况为准：]{style="font-family:宋体"}
+·分布式设备－独立运行模式：除当前单板外，其它所有有成员端口的单板总数，以及各单板的槽位号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[集中式设备：不支持本字段]{style="font-family:宋体"}]{#struct_0_x1820_12830_x2130777446}
+·集中式IRF设备：除当前成员设备外，其它所有有成员端口的设备总数，以及各成员设备的编号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[分布式设备－独立运行模式：除当前单板外，其它所有有成员端口的单板总数，以及各单板的槽位号]{style="font-family:宋体"}]{#struct_0_x1820_12830_x803333793}
+·分布式设备－IRF模式：除当前单板外，其它所有有成员端口的单板总数，以及各单板所在成员设备的编号和单板的槽位号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[集中式]{style="font-family:宋体"}]{#struct_0_x1820_12830_x2130777447}[IRF]{lang="EN-US"}[设备：除当前成员设备外，其它所有有成员端口的设备总数，以及各成员设备的编号]{style="font-family:宋体"}
+Host ports (1 in total)
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[分布式设备－]{style="font-family:宋体"}]{#struct_0_x1820_12830_762750148}[IRF]{lang="EN-US"}[模式：除当前单板外，其它所有有成员端口的单板总数，以及各单板所在成员设备的编号和单板的槽位号]{style="font-family:宋体"}
+成员端口及总数
 
-[[Host ports (1 in total)]{lang="EN-US"}]{#struct_0_x1820_12830_x803027165}
+(00:03:23)
 
-[[成员端口及总数]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1744286131}
+成员端口的老化剩余时间。需要注意的是，本字段对于全局口（包括二层聚合接口、AC口、N-PW口、U-PW口等）将无条件显示，而对于非全局口：
 
-[[(00:03:23)]{lang="EN-US"}]{#struct_0_x1820_12830_1608255506}
+·在集中式设备上，将无条件显示
 
-[[成员端口的老化剩余时间。需要注意的是，本字段对于全局口（包括二层聚合接口、]{style="font-family:宋体"}[AC]{lang="EN-US"}]{#struct_0_x1820_12830_x1526961358}[口、]{style="font-family:宋体"}[N-PW]{lang="EN-US"}[口、]{style="font-family:宋体"}[U-PW]{lang="EN-US"}[口等）将无条件显示，而对于非全局口：]{style="font-family:宋体"}
+·在分布式设备－独立运行模式上，若该口属于主控板，会显示；否则须指定其所在单板的槽位号才会显示
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在集中式设备上，将无条件显示]{style="font-family:宋体"}]{#struct_0_x1820_12830_x2050381892}
+·在集中式IRF设备上，若该口属于主设备，会显示；否则须指定其所在成员设备的编号才会显示
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在分布式设备－独立运行模式上，若该口属于主控板，会显示；否则须指定其所在单板的槽位号才会显示]{style="font-family:宋体"}]{#struct_0_x1820_12830_x460834353}
+·在分布式设备－IRF模式上，若该口属于主控板，会显示；否则须指定其所在成员设备的编号和单板的槽位号才会显示
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在集中式]{style="font-family:宋体"}]{#struct_0_x1820_12830_1252058327}[IRF]{lang="EN-US"}[设备上，若该口属于主设备，会显示；否则须指定其所在成员设备的编号才会显示]{style="font-family:宋体"}
+AC (VSI index 0, link ID 1)
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在分布式设备－]{style="font-family:宋体"}]{#struct_0_x1820_12830_x909850133}[IRF]{lang="EN-US"}[模式上，若该口属于主控板，会显示；否则须指定其所在成员设备的编号和单板的槽位号才会显示]{style="font-family:宋体"}
+AC（Attachment Circuit，接入电路）口的VSI索引和链路标识符
 
-[[AC (VSI index 0, link ID 1)]{lang="EN-US"}]{#struct_0_x1820_12830_x42264839}
+NPW (VSI index 0, link ID 1)
 
-[[AC]{lang="FR"}]{#struct_0_x1820_12830_x42330375}[（]{style="font-family:宋体"}[Attachment Circuit]{lang="FR"}[，接入电路）口的]{style="font-family:宋体"}[VSI]{lang="FR"}[索引和链路标识符]{style="font-family:宋体"}
+N-PW（Network Pseudowire，网络侧伪线）口的VSI索引和链路标识符
 
-[[NPW (VSI index 0, link ID 1)]{lang="EN-US"}]{#struct_0_x1820_12830_1870749389}
+UPW (VSI index 0, link ID 1)
 
-[[N-PW]{lang="FR"}]{#struct_0_x1820_12830_x42395911}[（]{style="font-family:宋体"}[Network Pseudowire]{lang="FR"}[，网络侧伪线）口的]{style="font-family:宋体"}[VSI]{lang="FR"}[索引和链路标识符]{style="font-family:宋体"}
+U-PW（User facing Pseudowire，用户侧伪线）口的VSI索引和链路标识符
 
-[[UPW (VSI index 0, link ID 1)]{lang="EN-US"}]{#struct_0_x1820_12830_692656945}
+VLAN pairs (1 in total)
 
-[[U-PW]{lang="FR"}]{#struct_0_x1820_12830_x185127164}[（]{style="font-family:宋体"}[User facing Pseudowire]{lang="FR"}[，用户侧伪线）口的]{style="font-family:宋体"}[VSI]{lang="FR"}[索引和链路标识符]{style="font-family:宋体"}
+VLAN对及总数
 
-[[VLAN pairs (1 in total)]{lang="EN-US"}]{#struct_0_x1820_12830_x42461447}
+Out VLAN 5, in VLAN 2
 
-[[VLAN]{lang="FR"}]{#struct_0_x1820_12830_x2139607249}[对及总数]{style="font-family:宋体"}
+外层VLAN为5，内层VLAN为2
 
-[[Out VLAN 5, in VLAN 2]{lang="EN-US"}]{#struct_0_x1820_12830_x41478407}
+【相关命令】
 
-[[外层]{style="font-family:宋体"}]{#struct_0_x1820_12830_x981228245}[VLAN]{lang="FR"}[为]{style="font-family:宋体"}[5]{lang="FR"}[，内层]{style="font-family:
-  宋体"}[VLAN]{lang="FR"}[为]{style="font-family:宋体"}[2]{lang="FR"}
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x417467929}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset igmp-snooping group]{lang="EN-US"}**]{#struct_0_x1820_12830_x311277766}
-
-::: {#-408441163 .myid}
-[]{#_Toc404789373}[]{#struct_0_x1820_12830_1196246672}
+·**reset igmp-snooping group**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- display igmp-snooping router-port**
 
 ------------------------------------------------------------------------
 
-[**[display igmp-snooping router-port]{lang="EN-US"}**]{#struct_0_x1820_12830_1912357414}[命令用来显示动态路由器端口的信息。]{style="font-family:宋体"}
+**[display igmp-snooping router-port**]命令用来显示动态路由器端口的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1023575580}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1615602456}
+集中式设备：
 
-[**[display igmp-snooping]{lang="EN-US"}**]{#struct_0_x1820_12830_1252254935}[[ ]{lang="EN-US" style="font-size:9.0pt"}]{.TableTextChar}**[router-port]{lang="EN-US"}**[ \[ **verbose** \| **vlan** *vlan-id* \| **vsi** *vsi-name* \[ **verbose** \] \] \[ **cpu** *cpu-number* \]]{lang="EN-US"}
+**[display igmp-snooping**]{.TableTextChar}**router-port**[ [ **verbose** \| **vlan** *vlan-id* \| **vsi** *vsi-name* [ **verbose** ] ]  **cpu** *cpu-number* ]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1820_12830_x1208266012}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display igmp-snooping]{lang="EN-US"}**]{#struct_0_x1820_12830_1145079565}[[ ]{lang="EN-US" style="font-size:9.0pt"}]{.TableTextChar}**[router-port]{lang="EN-US"}**[ \[ **verbose** \| **vlan** *vlan-id* \| **vsi** *vsi-name* \[ **verbose** \] \] \[ **slot** *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}
+**[display igmp-snooping**]{.TableTextChar}**router-port**[ [ **verbose** \| **vlan** *vlan-id* \| **vsi** *vsi-name* [ **verbose** ] ]  **slot** *slot-number* [ **cpu** *cpu-number*  ]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1820_12830_1499815247}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display igmp-snooping]{lang="EN-US"}**]{#struct_0_x1820_12830_895202682}[[ ]{lang="EN-US" style="font-size:9.0pt"}]{.TableTextChar}**[router-port]{lang="EN-US"}**[ \[ **verbose** \| **vlan** *vlan-id* \| **vsi** *vsi-name* \[ **verbose** \] \] \[ **chassis** *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}
+**[display igmp-snooping**]{.TableTextChar}**router-port**[ [ **verbose** \| **vlan** *vlan-id* \| **vsi** *vsi-name* [ **verbose** ] ]  **chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number*  ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_32015094}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1820_12830_x2142753437}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x720622528}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1267198669}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1820_12830_1252189399}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_650401064}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1820_12830_x128121240}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1580239508}
+【参数】
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_x1820_12830_x445352753}[：]{style="font-family:宋体"}[显示详细信息。如果未指定本参数，将显示简要信息。]{style="font-family:宋体"}
+**[verbose**]：显示详细信息。如果未指定本参数，将显示简要信息。
 
-[**[vlan]{lang="EN-US"}**[ *vlan-id*]{lang="EN-US"}]{#struct_0_x1820_12830_x322341032}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果未指定本参数，将显示所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[vlan** *vlan-id*]：显示指定VLAN内的信息。*vlan-id*为VLAN的编号，取值范围为1～4094。如果未指定本参数，将显示所有VLAN内的信息。
 
-[**[vsi]{lang="EN-US"}**[ *vsi-name*]{lang="EN-US"}]{#struct_0_x1820_12830_1871325116}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果未指定本参数，将显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[vsi** *vsi-name*]：显示指定VSI内的信息。*vsi-name*为VSI的名称，为1～31个字符的字符串，区分大小写。如果未指定本参数，将显示所有VSI内的信息。
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_1825142165}[：]{style="font-family:宋体"}[显示指定单板上的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示主控板上维护的信息。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定单板上的信息，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示主控板上维护的信息。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_x195486471}[：]{style="font-family:宋体"}[显示指定成员设备上的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。如果未指定本参数，将显示主设备上维护的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}[（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备上的信息，*slot-number*表示设备在IRF中的成员编号。如果未指定本参数，将显示主设备上维护的信息。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_737828822}[：]{style="font-family:宋体"}[显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[上]{style="font-family:宋体"}[的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号]{style="font-family:宋体"}[或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号]{style="font-family:宋体"}[。如果未指定本参数，将显示主设备上维护的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}[（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备/PEX上的信息，*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果未指定本参数，将显示主设备上维护的信息。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1820_12830_2037780320}[：显示指定成员设备指定单板上的信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定成员设备指定单板上的信息，*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1820_12830_201422441}[：显示指定单板上的信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号]{style="font-family:宋体"}[或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板]{style="font-family:宋体"}[或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定单板上的信息，*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_x1820_12830_81906383}[：显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上的信息，]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的编号。]{style="font-family:宋体"}[只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="color:black"}]{style="font-family:宋体"}
+**[cpu** *cpu-number*]：显示指定CPU上的信息，*cpu-number*表示CPU的编号。只有指定的**slot**支持多CPU时，才能配置该参数。[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x674756483}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x1477152705}[显示]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内动态路由器端口的信息。]{style="font-family:宋体"}
+\# 显示VLAN 2内动态路由器端口的信息。
 
-[[\<Sysname\> display igmp-snooping router-port vlan 2]{lang="EN-US"}]{#struct_0_x1820_12830_217446532}
+\<Sysname\> display igmp-snooping router-port vlan 2
 
-[VLAN 2:]{lang="EN-US"}
+VLAN 2:
 
-[  Router slots (0 in total):]{lang="EN-US"}
+  Router slots (0 in total):
 
-[  Router ports (2 in total):]{lang="EN-US"}
+  Router ports (2 in total):
 
-[    GE1/0/1                             (00:01:30)]{lang="EN-US"}
+    GE1/0/1                             (00:01:30)
 
-[    GE1/0/2                             (00:00:23)]{lang="EN-US"}
+    GE1/0/2                             (00:00:23)
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x445418289}[显示]{style="font-family:宋体"}[VSI aaa]{lang="EN-US"}[内动态路由器端口的详细信息。]{style="font-family:宋体"}
+\# 显示VSI aaa内动态路由器端口的详细信息。
 
-[[\<Sysname\> display igmp-snooping router-port vsi aaa verbose]{lang="EN-US"}]{#struct_0_x1820_12830_x445483825}
+\<Sysname\> display igmp-snooping router-port vsi aaa verbose
 
-[VSI aaa:]{lang="EN-US"}
+VSI aaa:
 
-[  Router slots (0 in total):]{lang="EN-US"}
+  Router slots (0 in total):
 
-[  Router ports (1 in total):]{lang="EN-US"}
+  Router ports (1 in total):
 
-[    AC (VSI index 0, link ID 1)         (00:03:35)]{lang="EN-US"}
+    AC (VSI index 0, link ID 1)         (00:03:35)
 
-[      VLAN pairs (1 in total):]{lang="EN-US"}
+      VLAN pairs (1 in total):
 
-[        Out VLAN 5     In VLAN 2        (00:03:35)]{lang="EN-US"}
+        Out VLAN 5     In VLAN 2        (00:03:35)
 
-[[表1-3 ]{lang="EN-US"}[display igmp-snooping router-port]{lang="EN-US"}]{#struct_0_x1820_12830_1782875869}[命令显示信息描述表]{style="font-family:黑体"}
+表1-3 display igmp-snooping router-port命令显示信息描述表
 
-[]{#table_struct_0_1301153860}[[字段]{style="font-family:黑体"}]{#struct_0_x1820_12830_850902390}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1820_12830_1902692567}
+描述
 
-[[VLAN 2]{lang="EN-US"}]{#struct_0_x1820_12830_438844012}
+VLAN 2
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_x1477218241}[的编号]{style="font-family:宋体"}
+VLAN的编号
 
-[[VSI aaa]{lang="EN-US"}]{#struct_0_x1820_12830_x445549361}
+VSI aaa
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1820_12830_1061366436}[的名称]{style="font-family:宋体"}
+VSI的名称
 
-[[Router slots (0 in total)]{lang="EN-US"}]{#struct_0_x1820_12830_649915103}
+Router slots (0 in total)
 
-[[本字段的]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1803499991}[支持情况和具体描述与设备的型号有关，请以设备的实际情况为准：]{style="font-family:宋体"}
+本字段的支持情况和具体描述与设备的型号有关，请以设备的实际情况为准：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[集中式设备：不支持本字段]{style="font-family:宋体"}]{#struct_0_x1820_12830_x2130777436}
+·集中式设备：不支持本字段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[分布式设备－独立运行模式：除当前单板外，其它所有有动态路由器端口的单板总数，以及各单板的槽位号]{style="font-family:宋体"}]{#struct_0_x1820_12830_x803399329}
+·分布式设备－独立运行模式：除当前单板外，其它所有有动态路由器端口的单板总数，以及各单板的槽位号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[集中式]{style="font-family:宋体"}]{#struct_0_x1820_12830_1389103734}[IRF]{lang="EN-US"}[设备：除当前成员设备外，其它所有有动态路由器端口的成员设备总数，以及各成员设备的编号]{style="font-family:宋体"}
+·集中式IRF设备：除当前成员设备外，其它所有有动态路由器端口的成员设备总数，以及各成员设备的编号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[分布式设备－]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1607925065}[IRF]{lang="EN-US"}[模式：除当前单板外，其它所有有动态路由器端口的单板总数，以及各单板所在成员设备的编号和单板的槽位号]{style="font-family:宋体"}
+·分布式设备－IRF模式：除当前单板外，其它所有有动态路由器端口的单板总数，以及各单板所在成员设备的编号和单板的槽位号
 
-[[Router ports (2 in total)]{lang="EN-US"}]{#struct_0_x1820_12830_x214879519}
+Router ports (2 in total)
 
-[[动态路由器端口及总数]{style="font-family:宋体"}]{#struct_0_x1820_12830_1875182429}
+动态路由器端口及总数
 
-[[(00:01:30)]{lang="EN-US"}]{#struct_0_x1820_12830_x624222692}
+(00:01:30)
 
-[[动态路由器]{style="font-family:宋体"}]{#struct_0_x1820_12830_828893668}[端口的老化剩余时间。需要注意的是，本字段对于全局口将无条件显示，而对于非全局口：]{style="font-family:宋体"}
+动态路由器端口的老化剩余时间。需要注意的是，本字段对于全局口将无条件显示，而对于非全局口：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在集中式设备上，将无条件显示]{style="font-family:宋体"}]{#struct_0_x1820_12830_x483708123}
+·在集中式设备上，将无条件显示
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在分布式设备－独立运行模式上，若该口属于主控板，会显示；否则须指定其所在单板的槽位号才会显示]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1477021633}
+·在分布式设备－独立运行模式上，若该口属于主控板，会显示；否则须指定其所在单板的槽位号才会显示
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在集中式]{style="font-family:宋体"}]{#struct_0_x1820_12830_1750040214}[IRF]{lang="EN-US"}[设备上，若该口属于主设备，会显示；否则须指定其所在成员设备的编号才会显示]{style="font-family:宋体"}
+·在集中式IRF设备上，若该口属于主设备，会显示；否则须指定其所在成员设备的编号才会显示
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在分布式设备－]{style="font-family:宋体"}]{#struct_0_x1820_12830_x834853615}[IRF]{lang="EN-US"}[模式上，若该口属于主控板，会显示；否则须指定其所在成员设备的编号和单板的槽位号才会显示]{style="font-family:宋体"}
+·在分布式设备－IRF模式上，若该口属于主控板，会显示；否则须指定其所在成员设备的编号和单板的槽位号才会显示
 
-[[AC (VSI index 0, link ID 1)]{lang="EN-US"}]{#struct_0_x1820_12830_x445680433}
+AC (VSI index 0, link ID 1)
 
-[[AC]{lang="FR"}]{#struct_0_x1820_12830_x445745969}[口的]{style="font-family:宋体"}[VSI]{lang="FR"}[索引和链路标识符]{style="font-family:宋体"}
+AC口的VSI索引和链路标识符
 
-[[NPW (VSI index 0, link ID 1)]{lang="EN-US"}]{#struct_0_x1820_12830_762295198}
+NPW (VSI index 0, link ID 1)
 
-[[N-PW]{lang="FR"}]{#struct_0_x1820_12830_x1737322539}[口的]{style="font-family:宋体"}[VSI]{lang="FR"}[索引和链路标识符]{style="font-family:宋体"}
+N-PW口的VSI索引和链路标识符
 
-[[UPW (VSI index 0, link ID 1)]{lang="EN-US"}]{#struct_0_x1820_12830_x444762929}
+UPW (VSI index 0, link ID 1)
 
-[[U-PW]{lang="FR"}]{#struct_0_x1820_12830_x1209784259}[口的]{style="font-family:宋体"}[VSI]{lang="FR"}[索引和链路标识符]{style="font-family:宋体"}
+U-PW口的VSI索引和链路标识符
 
-[[VLAN pairs (1 in total)]{lang="EN-US"}]{#struct_0_x1820_12830_x444828465}
+VLAN pairs (1 in total)
 
-[[VLAN]{lang="FR"}]{#struct_0_x1820_12830_256226984}[及总数]{style="font-family:宋体"}
+VLAN及总数
 
-[[Out VLAN 5, in VLAN 2]{lang="EN-US"}]{#struct_0_x1820_12830_x445287218}
+Out VLAN 5, in VLAN 2
 
-[[外层]{style="font-family:宋体"}]{#struct_0_x1820_12830_x445352754}[VLAN]{lang="FR"}[为]{style="font-family:宋体"}[5]{lang="FR"}[，内层]{style="font-family:
-  宋体"}[VLAN]{lang="FR"}[为]{style="font-family:宋体"}[2]{lang="FR"}
+外层VLAN为5，内层VLAN为2
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[]{#_Toc293908670}[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_321476529}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset igmp-snooping router-port]{lang="EN-US"}**]{#struct_0_x1820_12830_358242960}
-
-::: {#1264156924 .myid}
-[]{#_Toc404789374}[]{#struct_0_x1820_12830_x522174666}
+·**reset igmp-snooping router-port**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- display igmp-snooping static-group**
 
 ------------------------------------------------------------------------
 
-[**[display igmp-snooping static]{lang="EN-US"}**]{#struct_0_x1820_12830_538521190}[[-]{lang="EN-US" style="font-size:9.0pt"}]{.TableTextChar}**[group]{lang="EN-US"}**[命令用来显示静态]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[转发表的信息。]{style="font-family:宋体"}
+**[display igmp-snooping static**]-{.TableTextChar}**group**命令用来显示静态IGMP Snooping转发表的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1831394123}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1477087169}
+集中式设备：
 
-[**[display igmp-snooping]{lang="EN-US"}**[ **static**]{lang="EN-US"}]{#struct_0_x1820_12830_315180073}[[-]{lang="EN-US" style="font-size:9.0pt"}]{.TableTextChar}**[group]{lang="EN-US"}**[ ]{lang="EN-US"}[\[ *group-address* \| *source-address* \] \* \[ **vlan** *vlan-id* \] \[ **verbose** \] \[ **cpu** *cpu-number* \]]{lang="EN-US"}
+**[display igmp-snooping** **static**]-{.TableTextChar}**group**[[ *group-address* \| *source-address* ] \*  **vlan** *vlan-id*   **verbose**   **cpu** *cpu-number* ]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1820_12830_x1956046044}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display igmp-snooping]{lang="EN-US"}**[ **static**]{lang="EN-US"}]{#struct_0_x1820_12830_927725995}[[-]{lang="EN-US" style="font-size:9.0pt"}]{.TableTextChar}**[group]{lang="EN-US"}**[ ]{lang="EN-US"}[\[ *group-address* \| *source-address* \] \* \[ **vlan** *vlan-id* \] \[ **verbose** \] \[ **slot** *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}
+**[display igmp-snooping** **static**]-{.TableTextChar}**group**[[ *group-address* \| *source-address* ] \*  **vlan** *vlan-id*   **verbose**   **slot** *slot-number* [ **cpu** *cpu-number*  ]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1820_12830_1747073377}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display igmp-snooping]{lang="EN-US"}**[ **static**]{lang="EN-US"}]{#struct_0_x1820_12830_x1333080255}[[-]{lang="EN-US" style="font-size:9.0pt"}]{.TableTextChar}**[group]{lang="EN-US"}**[ ]{lang="EN-US"}[\[ *group-address* \| *source-address* \] \* \[ **vlan** *vlan-id* \] \[ **verbose** \] \[ **chassis** *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}
+**[display igmp-snooping** **static**]-{.TableTextChar}**group**[[ *group-address* \| *source-address* ] \*  **vlan** *vlan-id*   **verbose**   **chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number*  ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1067125116}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1820_12830_1531976230}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x8901954}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1476890561}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1820_12830_x854419593}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1962091213}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1820_12830_x2003318682}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1990138947}
+【参数】
 
-[*[group-address]{lang="EN-US"}*]{#struct_0_x1820_12830_694835923}[：显示指定组播组的信息，取值范围为]{style="font-family:宋体"}[224.0.1.0]{lang="EN-US"}[～]{style="font-family:宋体"}[239.255.255.255]{lang="EN-US"}[。如果未指定本参数，将显示所有组播组的信息。]{style="font-family:宋体"}
+*[group-address*]：显示指定组播组的信息，取值范围为224.0.1.0～239.255.255.255。如果未指定本参数，将显示所有组播组的信息。
 
-[*[source-address]{lang="EN-US"}*]{#struct_0_x1820_12830_x1022869726}[：显示指定组播源的信息。如果未指定本参数，将显示所有组播源的信息。]{style="font-family:宋体"}
+*[source-address*]：显示指定组播源的信息。如果未指定本参数，将显示所有组播源的信息。
 
-[**[vlan]{lang="EN-US"}**[ *vlan-id*]{lang="EN-US"}]{#struct_0_x1820_12830_1309864510}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果未指定本参数，将显示所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[vlan** *vlan-id*]：显示指定VLAN内的信息。*vlan-id*为VLAN的编号，取值范围为1～4094。如果未指定本参数，将显示所有VLAN内的信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_x1820_12830_514061645}[：]{style="font-family:宋体"}[显示详细信息。如果未指定本参数，将显示简要信息。]{style="font-family:宋体"}
+**[verbose**]：显示详细信息。如果未指定本参数，将显示简要信息。
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_x1283295239}[：]{style="font-family:宋体"}[显示指定单板上的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示主控板上维护的信息。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定单板上的信息，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示主控板上维护的信息。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_x1476956097}[：]{style="font-family:宋体"}[显示指定成员设备上的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。如果未指定本参数，将显示主设备上维护的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}[（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备上的信息，*slot-number*表示设备在IRF中的成员编号。如果未指定本参数，将显示主设备上维护的信息。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_x21686065}[：]{style="font-family:宋体"}[显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[上]{style="font-family:宋体"}[的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号]{style="font-family:宋体"}[或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号]{style="font-family:宋体"}[。如果未指定本参数，将显示主设备上维护的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}[（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备/PEX上的信息，*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果未指定本参数，将显示主设备上维护的信息。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1820_12830_x426635410}[：显示指定成员设备指定单板上的信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定成员设备指定单板上的信息，*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1820_12830_x1736322276}[：显示指定单板上的信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号]{style="font-family:宋体"}[或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板]{style="font-family:宋体"}[或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定单板上的信息，*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_x1820_12830_1900693772}[：显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上的信息，]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的编号。]{style="font-family:宋体"}[只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="color:black"}]{style="font-family:宋体"}
+**[cpu** *cpu-number*]：显示指定CPU上的信息，*cpu-number*表示CPU的编号。只有指定的**slot**支持多CPU时，才能配置该参数。[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_851682248}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_669660791}[显示]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内静态]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[转发表的详细信息。]{style="font-family:宋体"}
+\# 显示VLAN 2内静态IGMP Snooping转发表的详细信息。
 
-[[\<Sysname\> display igmp-snooping static-group vlan 2 verbose]{lang="EN-US"}]{#struct_0_x1820_12830_x1367036261}
+\<Sysname\> display igmp-snooping static-group vlan 2 verbose
 
-[Total 1 entries.]{lang="EN-US"}
+Total 1 entries.
 
-[ ]{lang="EN-US"}
+VLAN 2: Total 1 entries.
 
-[VLAN 2: Total 1 entries.]{lang="EN-US"}
+  (0.0.0.0, 224.1.1.1)
 
-[  (0.0.0.0, 224.1.1.1)]{lang="EN-US"}
+    Attribute: local port
 
-[    Attribute: local port]{lang="EN-US"}
+    FSM information: normal
 
-[    FSM information: normal]{lang="EN-US"}
+    Host slots (0 in total):
 
-[    Host slots (0 in total):]{lang="EN-US"}
+    Host ports (1 in total):
 
-[    Host ports (1 in total):]{lang="EN-US"}
+      GE1/0/2
 
-[      GE1/0/2]{lang="EN-US"}
+表1-4 display igmp-snooping static-{.TableTextChar}group命令显示信息描述表
 
-[[表1-4 ]{lang="EN-US"}[display igmp-snooping static]{lang="EN-US"}]{#struct_0_x1820_12830_x1512976902}[[-]{lang="EN-US" style="font-size:9.0pt"}]{.TableTextChar}[group]{lang="EN-US"}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1303047120}[[字段]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1476759489}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1820_12830_1690464236}
+Total 1 entries
 
-[[Total 1 entries]{lang="EN-US"}]{#struct_0_x1820_12830_545925783}
+表项总数
 
-[[表项总数]{style="font-family:宋体"}]{#struct_0_x1820_12830_1708516367}
+VLAN 2: Total 1 entries
 
-[[VLAN 2: Total 1 entries]{lang="EN-US"}]{#struct_0_x1820_12830_x964162438}
+VLAN 2内的表项总数
 
-[[VLAN 2]{lang="EN-US"}]{#struct_0_x1820_12830_1352468982}[内的表项总数]{style="font-family:宋体"}
+(0.0.0.0, 224.1.1.1)
 
-[[(0.0.0.0, 224.1.1.1)]{lang="EN-US"}]{#struct_0_x1820_12830_1278855533}
+（S，G）表项，0.0.0.0表示所有组播源
 
-[[（]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1476825025}[S]{lang="FR"}[，]{style="font-family:宋体"}[G]{lang="FR"}[）表项，]{style="font-family:
-  宋体"}[0.0.0.0]{lang="FR"}[表示所有组播源]{style="font-family:宋体"}
+Attribute
 
-[[Attribute]{lang="EN-US"}]{#struct_0_x1820_12830_x484035804}
+表项属性，包括：
 
-[[表项属性，包括：]{style="font-family:宋体"}]{#struct_0_x1820_12830_x483970268}
+·global port：表示表项中存在全局口
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[global port]{lang="FR"}]{#struct_0_x1820_12830_x483904732}[：表示表项中存在全局口]{style="font-family:
-  宋体"}
+·local port：表示表项中存在本单板的端口
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[local port]{lang="FR"}]{#struct_0_x1820_12830_x1150740550}[：表示表项中存在本单板的端口]{style="font-family:
-  宋体"}
+·slot：表示表项中存在其它单板的端口
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[slot]{lang="FR"}]{#struct_0_x1820_12830_x483839196}[：表示表项中存在其它单板的端口]{style="font-family:宋体"}
+FSM information
 
-[[FSM information]{lang="EN-US"}]{#struct_0_x1820_12830_x1492642504}
+表项状态机，包括：
 
-[[表项状态机，包括：]{style="font-family:宋体"}]{#struct_0_x1820_12830_x484297948}
+·delete：表示所有成员属性均已删除
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[delete]{lang="FR"}]{#struct_0_x1820_12830_x484232412}[：表示所有成员属性均已删除]{style="font-family:宋体"}
+·dummy：表示新创建的临时表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[dummy]{lang="FR"}]{#struct_0_x1820_12830_1854233361}[：表示新创建的临时表项]{style="font-family:宋体"}
+·no info：表示没有表项存在
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[no info]{lang="FR"}]{#struct_0_x1820_12830_x483773661}[：表示没有表项存在]{style="font-family:宋体"}
+·normal：表示主控板通知创建的正式表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[normal]{lang="FR"}]{#struct_0_x1820_12830_x483708125}[：表示主控板通知创建的正式表项]{style="font-family:宋体"}
+Host slots (0 in total)
 
-[[Host slots (0 in total)]{lang="EN-US"}]{#struct_0_x1820_12830_x863934483}
+本字段的支持情况和具体描述与设备的型号有关，请以设备的实际情况为准：
 
-[[本字段的]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1047923683}[支持情况和具体描述与设备的型号有关，请以设备的实际情况为准：]{style="font-family:宋体"}
+·集中式设备：不支持本字段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[集中式设备：不支持本字段]{style="font-family:宋体"}]{#struct_0_x1820_12830_207874720}
+·分布式设备－独立运行模式：除当前单板外，其它所有有成员端口的单板总数，以及各单板的槽位号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[分布式设备－独立运行模式：除当前单板外，其它所有有成员端口的单板总数，以及各单板的槽位号]{style="font-family:宋体"}]{#struct_0_x1820_12830_1678339950}
+·集中式IRF设备：除当前成员设备外，其它所有有成员端口的成员设备总数，以及各成员设备的编号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[集中式]{style="font-family:宋体"}]{#struct_0_x1820_12830_1669929913}[IRF]{lang="EN-US"}[设备：除当前成员设备外，其它所有有成员端口的成员设备总数，以及各成员设备的编号]{style="font-family:宋体"}
+·分布式设备－IRF模式：除当前单板外，其它所有有成员端口的单板总数，以及各单板所在成员设备的编号和单板的槽位号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[分布式设备－]{style="font-family:宋体"}]{#struct_0_x1820_12830_207874719}[IRF]{lang="EN-US"}[模式：除当前单板外，其它所有有成员端口的单板总数，以及各单板所在成员设备的编号和单板的槽位号]{style="font-family:宋体"}
+Host ports (1 in total)
 
-[[Host ports (1 in total)]{lang="EN-US"}]{#struct_0_x1820_12830_908996845}
-
-[[成员端口及总数]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1237782128}
-
-[ ]{lang="EN-US"}
-
-::: {#-1455212073 .myid}
-[]{#_Toc404789375}[]{#struct_0_x1820_12830_x1987098515}
+成员端口及总数
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- display igmp-snooping static-router-port**
 
 ------------------------------------------------------------------------
 
-[**[display igmp-snooping static-router-port]{lang="EN-US"}**]{#struct_0_x1820_12830_x2042859428}[命令用来显示静态路由器端口的信息。]{style="font-family:宋体"}
+**[display igmp-snooping static-router-port**]命令用来显示静态路由器端口的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1476628417}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1428532953}
+集中式设备：
 
-[**[display igmp-snooping]{lang="EN-US"}**]{#struct_0_x1820_12830_716847392}[[ ]{lang="EN-US" style="font-size:9.0pt"}]{.TableTextChar}**[static-router-port]{lang="EN-US"}**[ \[ **vlan** *vlan-id* \] \[ **cpu** *cpu-number* \]]{lang="EN-US"}
+**[display igmp-snooping**]{.TableTextChar}**static-router-port** [ **vlan** *vlan-id*   **cpu** *cpu-number* ]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1820_12830_x1040672975}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display igmp-snooping]{lang="EN-US"}**]{#struct_0_x1820_12830_x732552354}[[ ]{lang="EN-US" style="font-size:9.0pt"}]{.TableTextChar}**[static-router-port]{lang="EN-US"}**[ \[ **vlan** *vlan-id* \] \[ **slot** *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}
+**[display igmp-snooping**]{.TableTextChar}**static-router-port** [ **vlan** *vlan-id*   **slot** *slot-number* [ **cpu** *cpu-number*  ]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1820_12830_x318387284}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display igmp-snooping]{lang="EN-US"}**]{#struct_0_x1820_12830_x158054689}[[ ]{lang="EN-US" style="font-size:9.0pt"}]{.TableTextChar}**[static-router-port]{lang="EN-US"}**[ \[ **vlan** *vlan-id* \] \[ **chassis** *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}
+**[display igmp-snooping**]{.TableTextChar}**static-router-port** [ **vlan** *vlan-id*   **chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number*  ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x2101665999}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1820_12830_x2039708067}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1476693953}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1602376123}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1820_12830_242688180}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_869178098}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1820_12830_x219909590}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1620181832}
+【参数】
 
-[**[vlan]{lang="EN-US"}**[ *vlan-id*]{lang="EN-US"}]{#struct_0_x1820_12830_x79910820}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vlan** *vlan-id*]：显示指定VLAN内的信息。*vlan-id*为VLAN的编号，取值范围为1～4094。
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_588153033}[：]{style="font-family:宋体"}[显示指定单板上的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示主控板上维护的信息。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定单板上的信息，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示主控板上维护的信息。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_1332897490}[：]{style="font-family:宋体"}[显示指定成员设备上的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。如果未指定本参数，将显示主设备上维护的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}[（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备上的信息，*slot-number*表示设备在IRF中的成员编号。如果未指定本参数，将显示主设备上维护的信息。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_x1231474110}[：]{style="font-family:宋体"}[显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[上]{style="font-family:宋体"}[的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号]{style="font-family:宋体"}[或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号]{style="font-family:宋体"}[。如果未指定本参数，将显示主设备上维护的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}[（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备/PEX上的信息，*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果未指定本参数，将显示主设备上维护的信息。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1820_12830_x1477152704}[：显示指定成员设备指定单板上的信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定成员设备指定单板上的信息，*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1820_12830_1688325004}[：显示指定单板上的信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号]{style="font-family:宋体"}[或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板]{style="font-family:宋体"}[或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定单板上的信息，*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_x1820_12830_x549405029}[：显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上的信息，]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的编号。]{style="font-family:宋体"}[只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="color:black"}]{style="font-family:宋体"}
+**[cpu** *cpu-number*]：显示指定CPU上的信息，*cpu-number*表示CPU的编号。只有指定的**slot**支持多CPU时，才能配置该参数。[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1348637409}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x1315517524}[显示]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内静态路由器端口的信息。]{style="font-family:宋体"}
+\# 显示VLAN 2内静态路由器端口的信息。
 
-[[\<Sysname\> display igmp-snooping static-router-port vlan 2]{lang="EN-US"}]{#struct_0_x1820_12830_127926819}
+\<Sysname\> display igmp-snooping static-router-port vlan 2
 
-[VLAN 2:]{lang="EN-US"}
+VLAN 2:
 
-[  Router slots (0 in total):]{lang="EN-US"}
+  Router slots (0 in total):
 
-[  Router ports (2 in total):]{lang="EN-US"}
+  Router ports (2 in total):
 
-[    GE1/0/1]{lang="EN-US"}
+    GE1/0/1
 
-[    GE1/0/2]{lang="EN-US"}
+    GE1/0/2
 
-[[表1-5 ]{lang="EN-US"}[display igmp-snooping static-router-port]{lang="EN-US"}]{#struct_0_x1820_12830_x748122008}[命令显示信息描述表]{style="font-family:黑体"}
+表1-5 display igmp-snooping static-router-port命令显示信息描述表
 
-[]{#table_struct_0_1296829026}[[字段]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1513281644}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1477218240}
+描述
 
-[[VLAN 2]{lang="EN-US"}]{#struct_0_x1820_12830_x916168838}
+VLAN 2
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_670594801}[的编号]{style="font-family:宋体"}
+VLAN的编号
 
-[[Router slots (0 in total)]{lang="EN-US"}]{#struct_0_x1820_12830_480553956}
+Router slots (0 in total)
 
-[[本字段的]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1513281405}[支持情况和具体描述与设备的型号有关，请以设备的实际情况为准：]{style="font-family:宋体"}
+本字段的支持情况和具体描述与设备的型号有关，请以设备的实际情况为准：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[集中式设备：不支持本字段]{style="font-family:宋体"}]{#struct_0_x1820_12830_207874724}
+·集中式设备：不支持本字段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[分布式设备－独立运行模式：除当前单板外，其它所有有静态路由器端口的单板总数，以及各单板的槽位号]{style="font-family:宋体"}]{#struct_0_x1820_12830_1678339954}
+·分布式设备－独立运行模式：除当前单板外，其它所有有静态路由器端口的单板总数，以及各单板的槽位号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[集中式]{style="font-family:宋体"}]{#struct_0_x1820_12830_1670192057}[IRF]{lang="EN-US"}[设备：除当前成员设备外，其它所有有静态路由器端口的成员设备总数，以及各成员设备的编号]{style="font-family:宋体"}
+·集中式IRF设备：除当前成员设备外，其它所有有静态路由器端口的成员设备总数，以及各成员设备的编号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[分布式设备－]{style="font-family:宋体"}]{#struct_0_x1820_12830_628563488}[IRF]{lang="EN-US"}[模式：除当前单板外，其它所有有静态路由器端口的单板总数，以及各单板所在成员设备的编号和单板的槽位号]{style="font-family:宋体"}
+·分布式设备－IRF模式：除当前单板外，其它所有有静态路由器端口的单板总数，以及各单板所在成员设备的编号和单板的槽位号
 
-[[Router ports (2 in total)]{lang="EN-US"}]{#struct_0_x1820_12830_x1902836420}
+Router ports (2 in total)
 
-[[静态路由器端口及总数]{style="font-family:宋体"}]{#struct_0_x1820_12830_724362879}
-
-[ ]{lang="EN-US"}
-
-::: {#-1090782547 .myid}
-[]{#_Toc404789376}[]{#struct_0_x1820_12830_x1477021632}
+静态路由器端口及总数
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- display igmp-snooping statistics**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **igmp**-**snooping** **statistics**]{lang="EN-US"}]{#struct_0_x1820_12830_x978843141}[命令用来显示]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[监听到的]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[报文统计信息。]{style="font-family:宋体"}
+**[display** **igmp**-**snooping** **statistics**]命令用来显示IGMP Snooping监听到的IGMP报文统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1930266726}
+【命令】
 
-[**[display igmp-snooping statistics]{lang="EN-US"}**]{#struct_0_x1820_12830_x63087321}
+**[display igmp-snooping statistics**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1888462926}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1820_12830_2069262874}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x823054278}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1990251003}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1820_12830_x361629858}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1477087168}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1820_12830_1881264014}
+mdc-operator
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1307724319}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_290256374}[显示]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[监听到的]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[报文统计信息。]{style="font-family:宋体"}
+\# 显示IGMP Snooping监听到的IGMP报文统计信息。
 
-[[\<Sysname\> display igmp-snooping statistics]{lang="EN-US"}]{#struct_0_x1820_12830_x765746443}
+\<Sysname\> display igmp-snooping statistics
 
-[Received IGMP general queries:  0]{lang="EN-US"}
+Received IGMP general queries:  0
 
-[Received IGMPv1 reports:  0]{lang="EN-US"}
+Received IGMPv1 reports:  0
 
-[Received IGMPv2 reports:  19]{lang="EN-US"}
+Received IGMPv2 reports:  19
 
-[Received IGMP leaves:  0]{lang="EN-US"}
+Received IGMP leaves:  0
 
-[Received IGMPv2 specific queries:  0]{lang="EN-US"}
+Received IGMPv2 specific queries:  0
 
-[Sent     IGMPv2 specific queries:  0]{lang="EN-US"}
+Sent     IGMPv2 specific queries:  0
 
-[Received IGMPv3 reports:  1]{lang="EN-US"}
+Received IGMPv3 reports:  1
 
-[Received IGMPv3 reports with right and wrong records:  0]{lang="EN-US"}
+Received IGMPv3 reports with right and wrong records:  0
 
-[Received IGMPv3 specific queries:  0]{lang="EN-US"}
+Received IGMPv3 specific queries:  0
 
-[Received IGMPv3 specific sg queries:  0]{lang="EN-US"}
+Received IGMPv3 specific sg queries:  0
 
-[Sent     IGMPv3 specific queries:  0]{lang="EN-US"}
+Sent     IGMPv3 specific queries:  0
 
-[Sent     IGMPv3 specific sg queries:  0]{lang="EN-US"}
+Sent     IGMPv3 specific sg queries:  0
 
-[Received error IGMP messages:  19]{lang="EN-US"}
+Received error IGMP messages:  19
 
-[]{#struct_0_x1820_12830_x1476890560}[[表1-6 ]{lang="EN-US"}[display igmp-snooping statistics]{lang="EN-US"}]{#_Toc288831907}[命令显示信息描述表]{style="font-family:黑体"}
+表1-6 display igmp-snooping statistics命令显示信息描述表
 
-[]{#table_struct_0_1298408104}[[字段]{style="font-family:黑体"}]{#struct_0_x1820_12830_1874463762}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1820_12830_2086709532}
+描述
 
-[[general queries]{lang="EN-US"}]{#struct_0_x1820_12830_x301974890}
+general queries
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_680248380}[普遍组查询报文的数量]{style="font-family:宋体"}
+IGMP普遍组查询报文的数量
 
-[[specific queries]{lang="EN-US"}]{#struct_0_x1820_12830_274960710}
+specific queries
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_1630990479}[特定组查询报文的数量]{style="font-family:宋体"}
+IGMP特定组查询报文的数量
 
-[[reports]{lang="EN-US"}]{#struct_0_x1820_12830_x1476956096}
+reports
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_x1992719351}[成员关系报告报文的数量]{style="font-family:宋体"}
+IGMP成员关系报告报文的数量
 
-[[leaves]{lang="EN-US"}]{#struct_0_x1820_12830_x621313573}
+leaves
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_314269408}[离开组报文的数量]{style="font-family:宋体"}
+IGMP离开组报文的数量
 
-[[reports with right and wrong records]{lang="EN-US"}]{#struct_0_x1820_12830_894658850}
+reports with right and wrong records
 
-[[包含错误和正确纪录的]{style="font-family:宋体"}[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_x836042254}[成员关系报告报文数量]{style="font-family:宋体"}
+包含错误和正确纪录的IGMP成员关系报告报文数量
 
-[[specific sg queries]{lang="EN-US"}]{#struct_0_x1820_12830_x981677344}
+specific sg queries
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_x1476759488}[特定源组查询报文的数量]{style="font-family:宋体"}
+IGMP特定源组查询报文的数量
 
-[[error IGMP messages]{lang="EN-US"}]{#struct_0_x1820_12830_124380295}
+error IGMP messages
 
-[[错误]{style="font-family:宋体"}[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_x940025445}[报文的数量]{style="font-family:宋体"}
+错误IGMP报文的数量
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1181699435}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset igmp-snooping statistics]{lang="EN-US"}**]{#struct_0_x1820_12830_x1404584387}
-
-::: {#-2111393152 .myid}
-[]{#_Toc404789377}[]{#struct_0_x1820_12830_x1703478017}
+·**reset igmp-snooping statistics**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- display l2-multicast ip**
 
 ------------------------------------------------------------------------
 
-[**[display l2-multicast ip]{lang="EN-US"}**]{#struct_0_x1820_12830_60871997}[命令用来显示二层组播的]{style="font-family:宋体"}[IP]{lang="EN-US"}[组播组信息。]{style="font-family:宋体"}
+**[display l2-multicast ip**]命令用来显示二层组播的IP组播组信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1476825024}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_x1820_12830_702149458}
+集中式设备：
 
-[**[display l2-multicast ip]{lang="EN-US"}**[ \[ **group** *group-address* \| **source** *source-address* \] \* \[ **vlan** *vlan-id* \| **vsi** *vsi-name* \] \[ **cpu** *cpu-number* \]]{lang="EN-US"}]{#struct_0_x1820_12830_x1196013822}
+**[display l2-multicast ip**[ [ **group** *group-address* \| **source** *source-address* ] \* [ **vlan** *vlan-id* \| **vsi** *vsi-name* ]  **cpu** *cpu-number* ]]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1820_12830_x1470386317}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display l2-multicast ip]{lang="EN-US"}**[ \[ **group** *group-address* \| **source** *source-address* \] \* \[ **vlan** *vlan-id* \| **vsi** *vsi-name* \] \[ **slot** *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}]{#struct_0_x1820_12830_985630592}
+**[display l2-multicast ip**[ [ **group** *group-address* \| **source** *source-address* ] \* [ **vlan** *vlan-id* \| **vsi** *vsi-name* ]  **slot** *slot-number* [ **cpu** *cpu-number*  ]]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1820_12830_1545600055}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display l2-multicast ip]{lang="EN-US"}**[ \[ **group** *group-address* \| **source** *source-address* \] \* \[ **vlan** *vlan-id* \| **vsi** *vsi-name* \] \[ **chassis** *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}]{#struct_0_x1820_12830_x285981808}
+**[display l2-multicast ip**[ [ **group** *group-address* \| **source** *source-address* ] \* [ **vlan** *vlan-id* \| **vsi** *vsi-name* ]  **chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number*  ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_73382378}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1820_12830_x898062651}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1476628416}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_137550988}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1820_12830_555948793}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x868031402}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1820_12830_x1824418565}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1004904616}
+【参数】
 
-[**[group]{lang="EN-US"}**[ *group-address*]{lang="EN-US"}]{#struct_0_x1820_12830_x1596787408}[：显示指定组播组的信息。如果未指定本参数，将显示所有组播组的信息。]{style="font-family:宋体"}
+**[group** *group-address*]：显示指定组播组的信息。如果未指定本参数，将显示所有组播组的信息。
 
-[**[source]{lang="EN-US"}***[ source-address]{lang="EN-US"}*]{#struct_0_x1820_12830_1243898800}[：显示指定组播源的信息。如果未指定本参数，将显示所有组播源的信息。]{style="font-family:宋体"}
+**[source*** source-address*]：显示指定组播源的信息。如果未指定本参数，将显示所有组播源的信息。
 
-[**[vlan]{lang="EN-US"}**[ *vlan-id*]{lang="EN-US"}]{#struct_0_x1820_12830_x1476693952}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果未指定本参数，将显示所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[vlan** *vlan-id*]：显示指定VLAN内的信息。*vlan-id*为VLAN的编号，取值范围为1～4094。如果未指定本参数，将显示所有VLAN内的信息。
 
-[**[vsi]{lang="EN-US"}**[ *vsi-name*]{lang="EN-US"}]{#struct_0_x1820_12830_x445352751}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果未指定本参数，将显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[vsi** *vsi-name*]：显示指定VSI内的信息。*vsi-name*为VSI的名称，为1～31个字符的字符串，区分大小写。如果未指定本参数，将显示所有VSI内的信息。
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_1126507232}[：]{style="font-family:宋体"}[显示指定单板上的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示主控板上维护的信息。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定单板上的信息，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示主控板上维护的信息。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_1714077345}[：]{style="font-family:宋体"}[显示指定成员设备上的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。如果未指定本参数，将显示主设备上维护的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}[（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备上的信息，*slot-number*表示设备在IRF中的成员编号。如果未指定本参数，将显示主设备上维护的信息。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_737894358}[：]{style="font-family:宋体"}[显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[上]{style="font-family:宋体"}[的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号]{style="font-family:宋体"}[或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号]{style="font-family:宋体"}[。如果未指定本参数，将显示主设备上维护的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}[（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备/PEX上的信息，*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果未指定本参数，将显示主设备上维护的信息。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1820_12830_1028749763}[：显示指定成员设备指定单板上的信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定成员设备指定单板上的信息，*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1820_12830_973836541}[：显示指定单板上的信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号]{style="font-family:宋体"}[或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板]{style="font-family:宋体"}[或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定单板上的信息，*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_x1820_12830_x828189583}[：显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上的信息，]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的编号。]{style="font-family:宋体"}[只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="color:black"}]{style="font-family:宋体"}
+**[cpu** *cpu-number*]：显示指定CPU上的信息，*cpu-number*表示CPU的编号。只有指定的**slot**支持多CPU时，才能配置该参数。[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_546589944}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x1534258913}[显示]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内二层组播的]{style="font-family:宋体"}[IP]{lang="EN-US"}[组播组信息。]{style="font-family:宋体"}
+\# 显示VLAN 2内二层组播的IP组播组信息。
 
-[[\<Sysname\> display l2-multicast ip vlan 2]{lang="EN-US"}]{#struct_0_x1820_12830_1660827669}
+\<Sysname\> display l2-multicast ip vlan 2
 
-[Total 1 entries.]{lang="EN-US"}
+Total 1 entries.
 
-[ ]{lang="EN-US"}
+VLAN 2: Total 1 IP entries.
 
-[VLAN 2: Total 1 IP entries.]{lang="EN-US"}
+  (0.0.0.0, 224.1.1.1)
 
-[  (0.0.0.0, 224.1.1.1)]{lang="EN-US"}
+    Attribute: static, success
 
-[    Attribute: static, success]{lang="EN-US"}
+    Host slots (0 in total):
 
-[    Host slots (0 in total):]{lang="EN-US"}
+    Host ports (1 in total):
 
-[    Host ports (1 in total):]{lang="EN-US"}
+      GE1/0/1                             (S, SUC)
 
-[      GE1/0/1                             (S, SUC)]{lang="EN-US"}
+\# 显示VSI aaa内二层组播的IP组播组信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x445483823}[显示]{style="font-family:宋体"}[VSI aaa]{lang="EN-US"}[内二层组播的]{style="font-family:宋体"}[IP]{lang="EN-US"}[组播组信息。]{style="font-family:宋体"}
+\<Sysname\> display l2-multicast ip vsi aaa
 
-[[\<Sysname\> display l2-multicast ip vsi aaa]{lang="EN-US"}]{#struct_0_x1820_12830_x63071051}
+Total 1 entries.
 
-[Total 1 entries.]{lang="EN-US"}
+VSI aaa: Total 1 IP entries.
 
-[ ]{lang="EN-US"}
+  (0.0.0.0, 224.1.1.1)
 
-[VSI aaa: Total 1 IP entries.]{lang="EN-US"}
+    Attribute: dynamic, success
 
-[  (0.0.0.0, 224.1.1.1)]{lang="EN-US"}
+    Host slots (0 in total):
 
-[    Attribute: ]{lang="EN-US"}[dynamic]{lang="FR"}[, success]{lang="EN-US"}
+    Host ports (1 in total):
 
-[    Host slots (0 in total):]{lang="EN-US"}
+      AC (VSI index 0, link ID 1)         (D, SUC)
 
-[    Host ports (1 in total):]{lang="EN-US"}
+表1-7 display l2-multicast ip命令显示信息描述表
 
-[      AC (VSI index 0, link ID 1)         (D, SUC)]{lang="EN-US"}
+字段
 
-[[表1-7 ]{lang="EN-US"}[display l2-multicast ip]{lang="EN-US"}]{#struct_0_x1820_12830_x1477152707}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_1292843006}[[字段]{style="font-family:黑体"}]{#struct_0_x1820_12830_x945352882}
-:::
+Total 1 entries
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1820_12830_2093557695}
+表项总数
 
-[[Total 1 entries]{lang="EN-US"}]{#struct_0_x1820_12830_x1124548383}
+VLAN 2: Total 1 IP entries
 
-[[表项总数]{style="font-family:宋体"}]{#struct_0_x1820_12830_2004963968}
+VLAN 2内的表项总数
 
-[[VLAN 2: Total 1 IP entries]{lang="EN-US"}]{#struct_0_x1820_12830_x1941921409}
+VSI aaa: Total 1 IP entries
 
-[[VLAN 2]{lang="EN-US"}]{#struct_0_x1820_12830_1060889884}[内的表项总数]{style="font-family:宋体"}
+VSI aaa内的表项总数
 
-[[VSI aaa: Total 1 IP entries]{lang="EN-US"}]{#struct_0_x1820_12830_x445549359}
+(0.0.0.0, 224.1.1.1)
 
-[[VSI aaa]{lang="EN-US"}]{#struct_0_x1820_12830_1060842151}[内的表项总数]{style="font-family:宋体"}
+（S，G）表项，0.0.0.0表示所有组播源
 
-[[(0.0.0.0, 224.1.1.1)]{lang="EN-US"}]{#struct_0_x1820_12830_x1477218243}
+Attribute
 
-[[（]{style="font-family:宋体"}]{#struct_0_x1820_12830_x512884311}[S]{lang="FR"}[，]{style="font-family:宋体"}[G]{lang="FR"}[）表项，]{style="font-family:
-  宋体"}[0.0.0.0]{lang="FR"}[表示所有组播源]{style="font-family:宋体"}
+表项属性，包括：
 
-[[Attribute]{lang="EN-US"}]{#struct_0_x1820_12830_1259120013}
+·dynamic：表示由动态协议创建的表项
 
-[[表项属性，包括：]{style="font-family:宋体"}]{#struct_0_x1820_12830_x2054281997}
+·static：表示由静态协议创建的表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[dynamic]{lang="FR"}]{#struct_0_x1820_12830_1259801606}[：表示由动态协议创建的表项]{style="font-family:宋体"}
+·pim：表示由PIM协议创建的表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[static]{lang="FR"}]{#struct_0_x1820_12830_x874270866}[：表示由静态协议创建的表项]{style="font-family:宋体"}
+·kernel：表示从内核中获取的表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[pim]{lang="FR"}]{#struct_0_x1820_12830_x1477021635}[：表示由]{style="font-family:宋体"}[PIM]{lang="FR"}[协议创建的表项]{style="font-family:宋体"}
+·success：表示处理成功
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[kernel]{lang="FR"}]{#struct_0_x1820_12830_x1382127668}[：表示从内核中获取的表项]{style="font-family:宋体"}
+·fail：表示处理失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[success]{lang="FR"}]{#struct_0_x1820_12830_x1999495078}[：]{style="font-family:宋体"}[表示]{lang="EN-US" style="font-family:宋体"}[处理]{style="font-family:宋体"}[成功]{lang="EN-US" style="font-family:宋体"}
+Host slots (0 in total)
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[fail]{lang="FR"}]{#struct_0_x1820_12830_906845312}[：表示处理失败]{style="font-family:宋体"}
+本字段的支持情况和具体描述与设备的型号有关，请以设备的实际情况为准：
 
-[[Host slots (0 in total)]{lang="EN-US"}]{#struct_0_x1820_12830_1934741187}
+·集中式设备：不支持本字段
 
-[[本字段的]{style="font-family:宋体"}]{#struct_0_x1820_12830_900309015}[支持情况和具体描述与设备的型号有关，请以设备的实际情况为准：]{style="font-family:宋体"}
+·分布式设备－独立运行模式：除当前单板外，其它所有有成员端口的单板总数，以及各单板的槽位号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[集中式设备：不支持本字段]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1748440418}
+·集中式IRF设备：除当前成员设备外，其它所有有成员端口的成员设备总数，以及各成员设备的编号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[分布式设备－独立运行模式：除当前单板外，其它所有有成员端口的单板总数，以及各单板的槽位号]{style="font-family:宋体"}]{#struct_0_x1820_12830_2071089844}
+·分布式设备－IRF模式：除当前单板外，其它所有有成员端口的单板总数，以及各单板所在成员设备的编号和单板的槽位号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[集中式]{style="font-family:宋体"}]{#struct_0_x1820_12830_359010071}[IRF]{lang="EN-US"}[设备：除当前成员设备外，其它所有有成员端口的成员设备总数，以及各成员设备的编号]{style="font-family:宋体"}
+Host ports (1 in total)
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[分布式设备－]{style="font-family:宋体"}]{#struct_0_x1820_12830_x288993270}[IRF]{lang="EN-US"}[模式：除当前单板外，其它所有有成员端口的单板总数，以及各单板所在成员设备的编号和单板的槽位号]{style="font-family:宋体"}
+成员端口及总数
 
-[[Host ports (1 in total)]{lang="EN-US"}]{#struct_0_x1820_12830_x1477087171}
+(S, SUC)
 
-[[成员端口及总数]{style="font-family:宋体"}]{#struct_0_x1820_12830_x40984751}
+端口属性，包括：
 
-[[(S, SUC)]{lang="EN-US"}]{#struct_0_x1820_12830_x2146611274}
+·D：表示动态端口
 
-[[端口属性，包括：]{style="font-family:宋体"}]{#struct_0_x1820_12830_787477447}
+·S：表示静态端口
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[D]{lang="FR"}]{#struct_0_x1820_12830_x269816541}[：表示动态端口]{style="font-family:宋体"}
+·P：表示PIM端口
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[S]{lang="FR"}]{#struct_0_x1820_12830_x1476890563}[：表示静态端口]{style="font-family:宋体"}
+·K：表示从内核中获取的端口
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[P]{lang="FR"}]{#struct_0_x1820_12830_x2017219007}[：表示]{style="font-family:宋体"}[PIM]{lang="FR"}[端口]{style="font-family:宋体"}
+·R：表示从（\*，\*）表项扩展的端口
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[K]{lang="FR"}]{#struct_0_x1820_12830_x1347975574}[：表示从内核中获取的端口]{style="font-family:宋体"}
+·W：表示从（\*，G）表项扩展的端口
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[R]{lang="FR"}]{#struct_0_x1820_12830_x278138265}[：表示从（]{style="font-family:宋体"}[\*]{lang="FR"}[，]{style="font-family:宋体"}[\*]{lang="FR"}[）表项扩展的端口]{style="font-family:宋体"}
+·SUC：表示处理成功
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[W]{lang="FR"}]{#struct_0_x1820_12830_433741086}[：表示从（]{style="font-family:宋体"}[\*]{lang="FR"}[，]{style="font-family:宋体"}[G]{lang="FR"}[）表项扩展的端口]{style="font-family:宋体"}
+·F：表示处理失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[SUC]{lang="FR"}]{#struct_0_x1820_12830_x1476956099}[：表示处理成功]{style="font-family:宋体"}
+AC (VSI index 0, link ID 1)
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[F]{lang="FR"}]{#struct_0_x1820_12830_x876974104}[：表示处理失败]{style="font-family:宋体"}
+AC口的VSI索引和链路标识符
 
-[[AC (VSI index 0, link ID 1)]{lang="EN-US"}]{#struct_0_x1820_12830_x445745967}
+NPW (VSI index 0, link ID 1)
 
-[[AC]{lang="FR"}]{#struct_0_x1820_12830_762950558}[口的]{style="font-family:宋体"}[VSI]{lang="FR"}[索引和链路标识符]{style="font-family:宋体"}
+N-PW口的VSI索引和链路标识符
 
-[[NPW (VSI index 0, link ID 1)]{lang="EN-US"}]{#struct_0_x1820_12830_x444762927}
+UPW (VSI index 0, link ID 1)
 
-[[N-PW]{lang="FR"}]{#struct_0_x1820_12830_x1208866755}[口的]{style="font-family:宋体"}[VSI]{lang="FR"}[索引和链路标识符]{style="font-family:宋体"}
-
-[[UPW (VSI index 0, link ID 1)]{lang="EN-US"}]{#struct_0_x1820_12830_x444828463}
-
-[[U-PW]{lang="FR"}]{#struct_0_x1820_12830_x445287216}[口的]{style="font-family:宋体"}[VSI]{lang="FR"}[索引和链路标识符]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#944819619 .myid}
-[]{#_Toc404789378}[]{#struct_0_x1820_12830_1574819152}
+U-PW口的VSI索引和链路标识符
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- display l2-multicast ip forwarding**
 
 ------------------------------------------------------------------------
 
-[**[display l2-multicast ip forwarding]{lang="EN-US"}**]{#struct_0_x1820_12830_x800843120}[命令用来显示二层组播的]{style="font-family:宋体"}[IP]{lang="EN-US"}[转发表信息。]{style="font-family:宋体"}
+**[display l2-multicast ip forwarding**]命令用来显示二层组播的IP转发表信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x446792371}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_x1820_12830_946677818}
+集中式设备：
 
-[**[display l2-multicast ip forwarding]{lang="EN-US"}**[ \[ **group** *group-address* \| **source** *source-address* \] \* \[ **vlan** *vlan-id* \| **vsi** *vsi-name* \] \[ **cpu** *cpu-number* \]]{lang="EN-US"}]{#struct_0_x1820_12830_1111215267}
+**[display l2-multicast ip forwarding**[ [ **group** *group-address* \| **source** *source-address* ] \* [ **vlan** *vlan-id* \| **vsi** *vsi-name* ]  **cpu** *cpu-number* ]]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1820_12830_1305764666}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display l2-multicast ip forwarding]{lang="EN-US"}**[ \[ **group** *group-address* \| **source** *source-address* \] \* \[ **vlan** *vlan-id* \| **vsi** *vsi-name* \] \[ **slot** *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}]{#struct_0_x1820_12830_x1476759491}
+**[display l2-multicast ip forwarding**[ [ **group** *group-address* \| **source** *source-address* ] \* [ **vlan** *vlan-id* \| **vsi** *vsi-name* ]  **slot** *slot-number* [ **cpu** *cpu-number*  ]]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1820_12830_1334168340}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display l2-multicast ip forwarding]{lang="EN-US"}**[ \[ **group** *group-address* \| **source** *source-address* \] \* \[ **vlan** *vlan-id* \| **vsi** *vsi-name* \] \[ **chassis** *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}]{#struct_0_x1820_12830_x1318864424}
+**[display l2-multicast ip forwarding**[ [ **group** *group-address* \| **source** *source-address* ] \* [ **vlan** *vlan-id* \| **vsi** *vsi-name* ]  **chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number*  ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1845548034}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1820_12830_1054337034}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1198983942}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_650378843}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1820_12830_1111534136}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1317787373}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1820_12830_x1476825027}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_298864931}
+【参数】
 
-[**[group]{lang="EN-US"}**[ *group-address*]{lang="EN-US"}]{#struct_0_x1820_12830_x570606857}[：显示指定组播组的信息。如果未指定本参数，将显示所有组播组的信息。]{style="font-family:宋体"}
+**[group** *group-address*]：显示指定组播组的信息。如果未指定本参数，将显示所有组播组的信息。
 
-[**[source]{lang="EN-US"}***[ source-address]{lang="EN-US"}*]{#struct_0_x1820_12830_1374994023}[：显示指定组播源的信息。如果未指定本参数，将显示所有组播源的信息。]{style="font-family:宋体"}
+**[source*** source-address*]：显示指定组播源的信息。如果未指定本参数，将显示所有组播源的信息。
 
-[**[vlan]{lang="EN-US"}**[ *vlan-id*]{lang="EN-US"}]{#struct_0_x1820_12830_x1896544694}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果未指定本参数，将显示所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[vlan** *vlan-id*]：显示指定VLAN内的信息。*vlan-id*为VLAN的编号，取值范围为1～4094。如果未指定本参数，将显示所有VLAN内的信息。
 
-[**[vsi]{lang="EN-US"}**[ *vsi-name*]{lang="EN-US"}]{#struct_0_x1820_12830_x445418288}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果未指定本参数，将显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[vsi** *vsi-name*]：显示指定VSI内的信息。*vsi-name*为VSI的名称，为1～31个字符的字符串，区分大小写。如果未指定本参数，将显示所有VSI内的信息。
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_x2049475465}[：]{style="font-family:宋体"}[显示指定单板上的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示主控板上维护的信息。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定单板上的信息，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示主控板上维护的信息。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_x1607654228}[：]{style="font-family:宋体"}[显示指定成员设备上的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。如果未指定本参数，将显示主设备上维护的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}[（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备上的信息，*slot-number*表示设备在IRF中的成员编号。如果未指定本参数，将显示主设备上维护的信息。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_1900759308}[：]{style="font-family:宋体"}[显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[上]{style="font-family:宋体"}[的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号]{style="font-family:宋体"}[或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号]{style="font-family:宋体"}[。如果未指定本参数，将显示主设备上维护的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}[（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备/PEX上的信息，*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果未指定本参数，将显示主设备上维护的信息。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1820_12830_x954651911}[：显示指定成员设备指定单板上的信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定成员设备指定单板上的信息，*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1820_12830_481639676}[：显示指定单板上的信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号]{style="font-family:宋体"}[或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板]{style="font-family:宋体"}[或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定单板上的信息，*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_x1820_12830_334675367}[：显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上的信息，]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的编号。]{style="font-family:宋体"}[只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="color:black"}]{style="font-family:宋体"}
+**[cpu** *cpu-number*]：显示指定CPU上的信息，*cpu-number*表示CPU的编号。只有指定的**slot**支持多CPU时，才能配置该参数。[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x909083089}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x1476628419}[显示]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内二层组播的]{style="font-family:宋体"}[IP]{lang="EN-US"}[转发表信息。]{style="font-family:宋体"}
+\# 显示VLAN 2内二层组播的IP转发表信息。
 
-[[\<Sysname\> display l2-multicast ip forwarding vlan 2]{lang="EN-US"}]{#struct_0_x1820_12830_x978194259}
+\<Sysname\> display l2-multicast ip forwarding vlan 2
 
-[Total 1 entries.]{lang="EN-US"}
+Total 1 entries.
 
-[ ]{lang="EN-US"}
+VLAN 2: Total 1 IP entries.
 
-[VLAN 2: Total 1 IP entries.]{lang="EN-US"}
+  (0.0.0.0, 224.1.1.1)
 
-[  (0.0.0.0, 224.1.1.1)]{lang="EN-US"}
+    Host slots (0 in total):
 
-[    Host slots (0 in total):]{lang="EN-US"}
+    Host ports (3 in total):
 
-[    Host ports (3 in total):]{lang="EN-US"}
+      GE1/0/1
 
-[      GE1/0/1]{lang="EN-US"}
+      GE1/0/2
 
-[      GE1/0/2]{lang="EN-US"}
+      GE1/0/3
 
-[      GE1/0/3]{lang="EN-US"}
+\# 显示VSI aaa内二层组播的IP转发表信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x445483824}[显示]{style="font-family:宋体"}[VSI aaa]{lang="EN-US"}[内二层组播的]{style="font-family:宋体"}[IP]{lang="EN-US"}[转发表信息。]{style="font-family:宋体"}
+\<Sysname\> display l2-multicast ip forwarding vsi aaa
 
-[[\<Sysname\> display l2-multicast ip forwarding vsi aaa]{lang="EN-US"}]{#struct_0_x1820_12830_x63136587}
+Total 1 entries.
 
-[Total 1 entries.]{lang="EN-US"}
+VSI aaa: Total 1 IP entries.
 
-[ ]{lang="EN-US"}
+  (0.0.0.0, 224.1.1.1)
 
-[VSI aaa: Total 1 IP entries.]{lang="EN-US"}
+    Host slots (0 in total):
 
-[  (0.0.0.0, 224.1.1.1)]{lang="EN-US"}
+    Host ports (1 in total):
 
-[    Host slots (0 in total):]{lang="EN-US"}
+      AC (VSI index 0, link ID 1)
 
-[    Host ports (1 in total):]{lang="EN-US"}
+表1-8 display l2-multicast ip forwarding命令显示信息描述表
 
-[      AC (VSI index 0, link ID 1)]{lang="EN-US"}
+字段
 
-[[表1-8 ]{lang="EN-US"}[display l2-multicast ip forwarding]{lang="EN-US"}]{#struct_0_x1820_12830_x734342043}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_1322900748}[[字段]{style="font-family:黑体"}]{#struct_0_x1820_12830_1528089475}
-:::
+Total 1 entries
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1919922855}
+表项总数
 
-[[Total 1 entries]{lang="EN-US"}]{#struct_0_x1820_12830_x1476693955}
+VLAN 2: Total 1 IP entries
 
-[[表项总数]{style="font-family:宋体"}]{#struct_0_x1820_12830_1886022119}
+VLAN 2内的表项总数
 
-[[VLAN 2: Total 1 IP entries]{lang="EN-US"}]{#struct_0_x1820_12830_184585787}
+VSI aaa: Total 1 IP entries
 
-[[VLAN 2]{lang="EN-US"}]{#struct_0_x1820_12830_x1587282996}[内的表项总数]{style="font-family:宋体"}
+VSI aaa内的表项总数
 
-[[VSI aaa: Total 1 IP entries]{lang="EN-US"}]{#struct_0_x1820_12830_x445549360}
+(0.0.0.0, 224.1.1.1)
 
-[[VSI aaa]{lang="EN-US"}]{#struct_0_x1820_12830_x445614896}[内的表项总数]{style="font-family:宋体"}
+（S，G）表项，0.0.0.0表示所有组播源
 
-[[(0.0.0.0, 224.1.1.1)]{lang="EN-US"}]{#struct_0_x1820_12830_1828694004}
+Host slots (0 in total)
 
-[[（]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1233100494}[S]{lang="FR"}[，]{style="font-family:宋体"}[G]{lang="FR"}[）表项，]{style="font-family:
-  宋体"}[0.0.0.0]{lang="FR"}[表示所有组播源]{style="font-family:宋体"}
+本字段的支持情况和具体描述与设备的型号有关，请以设备的实际情况为准：
 
-[[Host slots (0 in total)]{lang="EN-US"}]{#struct_0_x1820_12830_1203886720}
+·集中式设备：不支持本字段
 
-[[本字段的]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1477152706}[支持情况和具体描述与设备的型号有关，请以设备的实际情况为准：]{style="font-family:宋体"}
+·分布式设备－独立运行模式：除当前单板外，其它所有有成员端口的单板总数，以及各单板的槽位号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[集中式设备：不支持本字段]{style="font-family:宋体"}]{#struct_0_x1820_12830_590211738}
+·集中式IRF设备：除当前成员设备外，其它所有有成员端口的成员设备总数，以及各成员设备的编号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[分布式设备－独立运行模式：除当前单板外，其它所有有]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1968279392}[成员端口]{style="font-family:宋体"}[的单板总数，以及各单板的槽位号]{style="font-family:宋体"}
+·分布式设备－IRF模式：除当前单板外，其它所有有成员端口的单板总数，以及各单板所在成员设备的编号和单板的槽位号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[集中式]{style="font-family:宋体"}]{#struct_0_x1820_12830_x772877817}[IRF]{lang="EN-US"}[设备：除当前成员设备外，其它所有有]{style="font-family:宋体"}[成员端口]{style="font-family:宋体"}[的成员设备总数，以及各成员设备的编号]{style="font-family:宋体"}
+Host ports (3 in total)
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[分布式设备－]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1245951478}[IRF]{lang="EN-US"}[模式：除当前单板外，其它所有有]{style="font-family:宋体"}[成员端口]{style="font-family:宋体"}[的单板总数，以及各单板所在成员设备的编号和单板的槽位号]{style="font-family:宋体"}
+成员端口及总数
 
-[[Host ports (3 in total)]{lang="EN-US"}]{#struct_0_x1820_12830_1783530473}
+AC (VSI index 0, link ID 1)
 
-[[成员端口及总数]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1118341429}
+AC口的VSI索引和链路标识符
 
-[[AC (VSI index 0, link ID 1)]{lang="EN-US"}]{#struct_0_x1820_12830_x445680432}
+NPW (VSI index 0, link ID 1)
 
-[[AC]{lang="FR"}]{#struct_0_x1820_12830_x445745968}[口的]{style="font-family:宋体"}[VSI]{lang="FR"}[索引和链路标识符]{style="font-family:宋体"}
+N-PW口的VSI索引和链路标识符
 
-[[NPW (VSI index 0, link ID 1)]{lang="EN-US"}]{#struct_0_x1820_12830_762360734}
+UPW (VSI index 0, link ID 1)
 
-[[N-PW]{lang="FR"}]{#struct_0_x1820_12830_x444762928}[口的]{style="font-family:宋体"}[VSI]{lang="FR"}[索引和链路标识符]{style="font-family:宋体"}
-
-[[UPW (VSI index 0, link ID 1)]{lang="EN-US"}]{#struct_0_x1820_12830_x444828464}
-
-[[U-PW]{lang="FR"}]{#struct_0_x1820_12830_256292520}[口的]{style="font-family:宋体"}[VSI]{lang="FR"}[索引和链路标识符]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-229122709 .myid}
-[]{#_Toc404789379}[]{#struct_0_x1820_12830_1742247773}
+U-PW口的VSI索引和链路标识符
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- display l2-multicast mac**
 
 ------------------------------------------------------------------------
 
-[**[display l2-multicast mac]{lang="EN-US"}**]{#struct_0_x1820_12830_x291963629}[命令用来显示二层组播的]{style="font-family:
-宋体"}[MAC]{lang="EN-US"}[组播组信息。]{style="font-family:宋体"}
+**[display l2-multicast mac**]命令用来显示二层组播的MAC组播组信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x323893065}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_x1820_12830_x553689173}
+集中式设备：
 
-[**[display l2-multicast mac]{lang="EN-US"}**[ \[ *mac-address* \] \[ **vlan** *vlan-id* \| **vsi** *vsi-name* \] \[ **cpu** *cpu-number* \]]{lang="EN-US"}]{#struct_0_x1820_12830_x1477218242}
+**[display l2-multicast mac** [ *mac-address*  [ **vlan** *vlan-id* \| **vsi** *vsi-name* ]  **cpu** *cpu-number* ]]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1820_12830_x2078968252}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display l2-multicast mac]{lang="EN-US"}**[ \[ *mac-address* \] \[ **vlan** *vlan-id* \| **vsi** *vsi-name* \] \[ **slot** *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}]{#struct_0_x1820_12830_x1246819104}
+**[display l2-multicast mac** [ *mac-address*  [ **vlan** *vlan-id* \| **vsi** *vsi-name* ]  **slot** *slot-number* [ **cpu** *cpu-number*  ]]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1820_12830_1045081777}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display l2-multicast mac]{lang="EN-US"}**[ \[ *mac-address* \] \[ **vlan** *vlan-id* \| **vsi** *vsi-name* \] \[ **chassis** *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}]{#struct_0_x1820_12830_1729476726}
+**[display l2-multicast mac** [ *mac-address*  [ **vlan** *vlan-id* \| **vsi** *vsi-name* ]  **chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number*  ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1113475623}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1820_12830_1568694900}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1390814709}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x2118374895}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1820_12830_x1477021634}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_183956273}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1820_12830_1589050797}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_980580202}
+【参数】
 
-[*[mac-address]{lang="EN-US"}*]{#struct_0_x1820_12830_109926726}[：显示指定]{style="font-family:宋体"}[MAC]{lang="EN-US"}[组播组的信息。如果未指定本参数，将显示所有]{style="font-family:宋体"}[MAC]{lang="EN-US"}[组播组的信息。]{style="font-family:宋体"}
+*[mac-address*]：显示指定MAC组播组的信息。如果未指定本参数，将显示所有MAC组播组的信息。
 
-[**[vlan]{lang="EN-US"}**[ *vlan-id*]{lang="EN-US"}]{#struct_0_x1820_12830_3329420}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果未指定本参数，将显示所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[vlan** *vlan-id*]：显示指定VLAN内的信息。*vlan-id*为VLAN的编号，取值范围为1～4094。如果未指定本参数，将显示所有VLAN内的信息。
 
-[**[vsi]{lang="EN-US"}**[ *vsi-name*]{lang="EN-US"}]{#struct_0_x1820_12830_x445418293}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果未指定本参数，将显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[vsi** *vsi-name*]：显示指定VSI内的信息。*vsi-name*为VSI的名称，为1～31个字符的字符串，区分大小写。如果未指定本参数，将显示所有VSI内的信息。
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_1530536933}[：]{style="font-family:宋体"}[显示指定单板上的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示主控板上维护的信息。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定单板上的信息，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示主控板上维护的信息。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_x374789310}[：]{style="font-family:宋体"}[显示指定成员设备上的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。如果未指定本参数，将显示主设备上维护的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}[（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备上的信息，*slot-number*表示设备在IRF中的成员编号。如果未指定本参数，将显示主设备上维护的信息。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_1497474781}[：]{style="font-family:宋体"}[显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[上]{style="font-family:宋体"}[的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号]{style="font-family:宋体"}[或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号]{style="font-family:宋体"}[。如果未指定本参数，将显示主设备上维护的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}[（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备/PEX上的信息，*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果未指定本参数，将显示主设备上维护的信息。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1820_12830_x1051530960}[：显示指定成员设备指定单板上的信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定成员设备指定单板上的信息，*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1820_12830_x424839520}[：显示指定单板上的信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号]{style="font-family:宋体"}[或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板]{style="font-family:宋体"}[或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定单板上的信息，*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_x1820_12830_1309416273}[：显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上的信息，]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的编号。]{style="font-family:宋体"}[只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="color:black"}]{style="font-family:宋体"}
+**[cpu** *cpu-number*]：显示指定CPU上的信息，*cpu-number*表示CPU的编号。只有指定的**slot**支持多CPU时，才能配置该参数。[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1477087170}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_1525099190}[显示]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内二层组播的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[组播组信息。]{style="font-family:宋体"}
+\# 显示VLAN 2内二层组播的MAC组播组信息。
 
-[[\<Sysname\> display l2-multicast mac vlan 2]{lang="EN-US"}]{#struct_0_x1820_12830_721440075}
+\<Sysname\> display l2-multicast mac vlan 2
 
-[Total 1 MAC entries.]{lang="EN-US"}
+Total 1 MAC entries.
 
-[ ]{lang="EN-US"}
+VLAN 2: Total 1 MAC entries.
 
-[VLAN 2: Total 1 MAC entries.]{lang="EN-US"}
+  MAC group address: 0100-5e01-0101
 
-[  MAC group address: 0100-5e01-0101]{lang="EN-US"}
+    Attribute: success
 
-[    Attribute: success]{lang="EN-US"}
+    Host slots (0 in total):
 
-[    Host slots (0 in total):]{lang="EN-US"}
+    Host ports (1 in total):
 
-[    Host ports (1 in total):]{lang="EN-US"}
+      GE1/0/1
 
-[      GE1/0/1]{lang="EN-US"}
+\# 显示VSI aaa内二层组播的MAC组播组信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x445483829}[显示]{style="font-family:宋体"}[VSI aaa]{lang="EN-US"}[内二层组播的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[组播组信息。]{style="font-family:宋体"}
+\<Sysname\> display l2-multicast mac vsi aaa
 
-[[\<Sysname\> display l2-multicast mac vsi aaa]{lang="EN-US"}]{#struct_0_x1820_12830_x63464267}
+Total 1 MAC entries.
 
-[Total 1 MAC entries.]{lang="EN-US"}
+VSI aaa: Total 1 MAC entries.
 
-[ ]{lang="EN-US"}
+  MAC group address: 0100-5e01-0101
 
-[VSI aaa: Total 1 MAC entries.]{lang="EN-US"}
+    Attribute: success
 
-[  MAC group address: 0100-5e01-0101]{lang="EN-US"}
+    Host slots (0 in total):
 
-[    Attribute: success]{lang="EN-US"}
+    Host ports (1 in total):
 
-[    Host slots (0 in total):]{lang="EN-US"}
+      AC (VSI index 0, link ID 1)
 
-[    Host ports (1 in total):]{lang="EN-US"}
+表1-9 display l2-multicast mac命令显示信息描述表
 
-[      AC (VSI index 0, link ID 1)]{lang="EN-US"}
+字段
 
-[[表1-9 ]{lang="EN-US"}[display l2-multicast mac]{lang="EN-US"}]{#struct_0_x1820_12830_x425792842}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_1325104094}[[字段]{style="font-family:黑体"}]{#struct_0_x1820_12830_x179443027}
-:::
+Total 1 MAC entries
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1820_12830_312112924}
+表项总数
 
-[[Total 1 MAC entries]{lang="EN-US"}]{#struct_0_x1820_12830_x1476890562}
+VLAN 2: Total 1 MAC entries
 
-[[表项总数]{style="font-family:宋体"}]{#struct_0_x1820_12830_711664348}
+VLAN 2内的表项总数
 
-[[VLAN 2: Total 1 MAC entries]{lang="EN-US"}]{#struct_0_x1820_12830_x1786737504}
+VSI aaa: Total 1 MAC entries
 
-[[VLAN 2]{lang="EN-US"}]{#struct_0_x1820_12830_1858809828}[内的表项总数]{style="font-family:宋体"}
+VSI aaa内的表项总数
 
-[[VSI aaa: Total 1 MAC entries]{lang="EN-US"}]{#struct_0_x1820_12830_x445614901}
+MAC group address
 
-[[VSI aaa]{lang="EN-US"}]{#struct_0_x1820_12830_x1976615132}[内的表项总数]{style="font-family:宋体"}
+MAC组播组的地址
 
-[[MAC group address]{lang="EN-US"}]{#struct_0_x1820_12830_1247958088}
+Attribute
 
-[[MAC]{lang="FR"}]{#struct_0_x1820_12830_680585103}[组播组的地址]{style="font-family:宋体"}
+表项属性，包括：
 
-[[Attribute]{lang="EN-US"}]{#struct_0_x1820_12830_x1476956098}
+·success：表示处理成功
 
-[[表项属性，包括：]{style="font-family:宋体"}]{#struct_0_x1820_12830_1851909251}
+·fail：表示处理失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[success]{lang="FR"}]{#struct_0_x1820_12830_x517057492}[：]{style="font-family:宋体"}[表示处理成功]{lang="EN-US" style="font-family:宋体"}
+Host slots (0 in total)
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[fail]{lang="FR"}]{#struct_0_x1820_12830_x477739444}[：]{style="font-family:宋体"}[表示处理失败]{lang="EN-US" style="font-family:宋体"}
+除当前单板外其它所有有成员端口的单板的槽位及总数。本字段的支持情况与设备的型号有关，请以设备的实际情况为准
 
-[[Host slots (0 in total)]{lang="EN-US"}]{#struct_0_x1820_12830_1651960107}
+Host ports (1 in total)
 
-[[除当前单板外其它所有有成员端口的单板的]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1775950871}[槽位及总数]{style="font-family:
-  宋体"}[。本字段的]{style="font-family:宋体"}[支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:宋体"}
+成员端口及总数
 
-[[Host ports (1 in total)]{lang="EN-US"}]{#struct_0_x1820_12830_x1476759490}
+AC (VSI index 0, link ID 1)
 
-[[成员端口及总数]{style="font-family:宋体"}]{#struct_0_x1820_12830_x231915601}
+AC口的VSI索引和链路标识符
 
-[[AC (VSI index 0, link ID 1)]{lang="EN-US"}]{#struct_0_x1820_12830_x445745973}
+NPW (VSI index 0, link ID 1)
 
-[[AC]{lang="FR"}]{#struct_0_x1820_12830_x444762933}[口的]{style="font-family:宋体"}[VSI]{lang="FR"}[索引和链路标识符]{style="font-family:宋体"}
+N-PW口的VSI索引和链路标识符
 
-[[NPW (VSI index 0, link ID 1)]{lang="EN-US"}]{#struct_0_x1820_12830_x1209128898}
+UPW (VSI index 0, link ID 1)
 
-[[N-PW]{lang="FR"}]{#struct_0_x1820_12830_x444828469}[口的]{style="font-family:宋体"}[VSI]{lang="FR"}[索引和链路标识符]{style="font-family:宋体"}
-
-[[UPW (VSI index 0, link ID 1)]{lang="EN-US"}]{#struct_0_x1820_12830_x445287222}
-
-[[U-PW]{lang="FR"}]{#struct_0_x1820_12830_x445352758}[口的]{style="font-family:宋体"}[VSI]{lang="FR"}[索引和链路标识符]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1179795292 .myid}
-[]{#_Toc404789380}[]{#struct_0_x1820_12830_x26371087}
+U-PW口的VSI索引和链路标识符
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- display l2-multicast mac forwarding**
 
 ------------------------------------------------------------------------
 
-[**[display l2-multicast mac forwarding]{lang="EN-US"}**]{#struct_0_x1820_12830_x2013716122}[命令用来显示二层组播的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[转发表信息。]{style="font-family:宋体"}
+**[display l2-multicast mac forwarding**]命令用来显示二层组播的MAC转发表信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1595925432}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_x1820_12830_207926615}
+集中式设备：
 
-[**[display l2-multicast mac forwarding]{lang="EN-US"}**[ \[ *mac-address* \] \[ **vlan** *vlan-id* \| **vsi** *vsi-name* \] \[ **cpu** *cpu-number* \]]{lang="EN-US"}]{#struct_0_x1820_12830_x1064377373}
+**[display l2-multicast mac forwarding** [ *mac-address*  [ **vlan** *vlan-id* \| **vsi** *vsi-name* ]  **cpu** *cpu-number* ]]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1820_12830_x1285568901}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display l2-multicast mac forwarding]{lang="EN-US"}**[ \[ *mac-address* \] \[ **vlan** *vlan-id* \| **vsi** *vsi-name* \] \[ **slot** *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}]{#struct_0_x1820_12830_x1343215454}
+**[display l2-multicast mac forwarding** [ *mac-address*  [ **vlan** *vlan-id* \| **vsi** *vsi-name* ]  **slot** *slot-number* [ **cpu** *cpu-number*  ]]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1820_12830_x1476825026}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display l2-multicast mac forwarding]{lang="EN-US"}**[ \[ *mac-address* \] \[ **vlan** *vlan-id* \| **vsi** *vsi-name* \] \[ **chassis** *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}]{#struct_0_x1820_12830_1864948872}
+**[display l2-multicast mac forwarding** [ *mac-address*  [ **vlan** *vlan-id* \| **vsi** *vsi-name* ]  **chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number*  ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_2041294288}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1820_12830_2006803631}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1324047927}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1484595556}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1820_12830_1807793619}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1979625199}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1820_12830_x1476628418}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_587889682}
+【参数】
 
-[*[mac-address]{lang="EN-US"}*]{#struct_0_x1820_12830_x1741169089}[：显示指定]{style="font-family:宋体"}[MAC]{lang="EN-US"}[组播组的信息。如果未指定本参数，将显示所有]{style="font-family:宋体"}[MAC]{lang="EN-US"}[组播组的信息。]{style="font-family:宋体"}
+*[mac-address*]：显示指定MAC组播组的信息。如果未指定本参数，将显示所有MAC组播组的信息。
 
-[**[vlan]{lang="EN-US"}**[ *vlan-id*]{lang="EN-US"}]{#struct_0_x1820_12830_1161614914}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果未指定本参数，将显示所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[vlan** *vlan-id*]：显示指定VLAN内的信息。*vlan-id*为VLAN的编号，取值范围为1～4094。如果未指定本参数，将显示所有VLAN内的信息。
 
-[**[vsi]{lang="EN-US"}**[ *vsi-name*]{lang="EN-US"}]{#struct_0_x1820_12830_x445483830}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果未指定本参数，将显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[vsi** *vsi-name*]：显示指定VSI内的信息。*vsi-name*为VSI的名称，为1～31个字符的字符串，区分大小写。如果未指定本参数，将显示所有VSI内的信息。
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_1928275445}[：]{style="font-family:宋体"}[显示指定单板上的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示主控板上维护的信息。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定单板上的信息，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示主控板上维护的信息。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_497407573}[：]{style="font-family:宋体"}[显示指定成员设备上的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。如果未指定本参数，将显示主设备上维护的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}[（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备上的信息，*slot-number*表示设备在IRF中的成员编号。如果未指定本参数，将显示主设备上维护的信息。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1820_12830_737959894}[：]{style="font-family:宋体"}[显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[上]{style="font-family:宋体"}[的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号]{style="font-family:宋体"}[或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号]{style="font-family:宋体"}[。如果未指定本参数，将显示主设备上维护的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}[（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备/PEX上的信息，*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果未指定本参数，将显示主设备上维护的信息。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1820_12830_x1247838764}[：显示指定成员设备指定单板上的信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定成员设备指定单板上的信息，*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1820_12830_x828124047}[：显示指定单板上的信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号]{style="font-family:宋体"}[或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板]{style="font-family:宋体"}[或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定单板上的信息，*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。如果未指定本参数，将显示全局主用主控板上维护的信息。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_x1820_12830_x1260507547}[：显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上的信息，]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的编号。]{style="font-family:宋体"}[只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="color:black"}]{style="font-family:宋体"}
+**[cpu** *cpu-number*]：显示指定CPU上的信息，*cpu-number*表示CPU的编号。只有指定的**slot**支持多CPU时，才能配置该参数。[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_896777864}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x1025980298}[显示]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内二层组播的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[转发表信息。]{style="font-family:宋体"}
+\# 显示VLAN 2内二层组播的MAC转发表信息。
 
-[[\<Sysname\> display l2-multicast mac forwarding vlan 2]{lang="EN-US"}]{#struct_0_x1820_12830_x1476693954}
+\<Sysname\> display l2-multicast mac forwarding vlan 2
 
-[Total 1 MAC entries.]{lang="EN-US"}
+Total 1 MAC entries.
 
-[ ]{lang="EN-US"}
+VLAN 2: Total 1 MAC entries.
 
-[VLAN 2: Total 1 MAC entries.]{lang="EN-US"}
+  MAC group address: 0100-5e01-0101
 
-[  MAC group address: 0100-5e01-0101]{lang="EN-US"}
+    Host slots (0 in total):
 
-[    Host slots (0 in total):]{lang="EN-US"}
+    Host ports (3 in total):
 
-[    Host ports (3 in total):]{lang="EN-US"}
+      GE1/0/1
 
-[      GE1/0/1]{lang="EN-US"}
+      GE1/0/2
 
-[      GE1/0/2]{lang="EN-US"}
+      GE1/0/3
 
-[      GE1/0/3]{lang="EN-US"}
+\# 显示VSI aaa内二层组播的MAC转发表信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x445549366}[显示]{style="font-family:宋体"}[VSI aaa]{lang="EN-US"}[内二层组播的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[转发表信息。]{style="font-family:宋体"}
+\<Sysname\> display l2-multicast mac forwarding vsi aaa
 
-[[\<Sysname\> display l2-multicast mac forwarding vsi aaa]{lang="EN-US"}]{#struct_0_x1820_12830_x445614902}
+Total 1 MAC entries.
 
-[Total 1 MAC entries.]{lang="EN-US"}
+VSI aaa: Total 1 MAC entries.
 
-[ ]{lang="EN-US"}
+  MAC group address: 0100-5e01-0101
 
-[VSI aaa: Total 1 MAC entries.]{lang="EN-US"}
+    Host slots (0 in total):
 
-[  MAC group address: 0100-5e01-0101]{lang="EN-US"}
+    Host ports (1 in total):
 
-[    Host slots (0 in total):]{lang="EN-US"}
+      AC (VSI index 0, link ID 1)
 
-[    Host ports (1 in total):]{lang="EN-US"}
+表1-10 display l2-multicast mac forwarding命令显示信息描述表
 
-[      AC (VSI index 0, link ID 1)]{lang="EN-US"}
+字段
 
-[[表1-10 ]{lang="EN-US"}[display l2-multicast mac forwarding]{lang="EN-US"}]{#struct_0_x1820_12830_319938178}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_1317266255}[[字段]{style="font-family:黑体"}]{#struct_0_x1820_12830_x181937353}
-:::
+Total 1 MAC entries
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1820_12830_221160221}
+表项总数
 
-[[Total 1 MAC entries]{lang="EN-US"}]{#struct_0_x1820_12830_616173489}
+VLAN 2: Total 1 MAC entries
 
-[[表项总数]{style="font-family:宋体"}]{#struct_0_x1820_12830_x22935645}
+VLAN 2内的表项总数
 
-[[VLAN 2: Total 1 MAC entries]{lang="EN-US"}]{#struct_0_x1820_12830_x1477152709}
+VSI aaa: Total 1 MAC entries
 
-[[VLAN 2]{lang="EN-US"}]{#struct_0_x1820_12830_x1395691576}[内的表项总数]{style="font-family:宋体"}
+VSI aaa内的表项总数
 
-[[VSI aaa: Total 1 MAC entries]{lang="EN-US"}]{#struct_0_x1820_12830_x445680438}
+MAC group address
 
-[[VSI aaa]{lang="EN-US"}]{#struct_0_x1820_12830_x445745974}[内的表项总数]{style="font-family:宋体"}
+MAC组播组的地址
 
-[[MAC group address]{lang="EN-US"}]{#struct_0_x1820_12830_876304581}
+Host slots (0 in total)
 
-[[MAC]{lang="FR"}]{#struct_0_x1820_12830_x1760250790}[组播组的地址]{style="font-family:宋体"}
+本字段的支持情况和具体描述与设备的型号有关，请以设备的实际情况为准：
 
-[[Host slots (0 in total)]{lang="EN-US"}]{#struct_0_x1820_12830_1994322517}
+·集中式设备：不支持本字段
 
-[[本字段的]{style="font-family:宋体"}]{#struct_0_x1820_12830_1783787419}[支持情况和具体描述与设备的型号有关，请以设备的实际情况为准：]{style="font-family:宋体"}
+·分布式设备－独立运行模式：除当前单板外，其它所有有成员端口的单板总数，以及各单板的槽位号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[集中式设备：不支持本字段]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1366103397}
+·集中式IRF设备：除当前成员设备外，其它所有有成员端口的成员设备总数，以及各成员设备的编号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[分布式设备－独立运行模式：除当前单板外，其它所有有成员端口的单板总数，以及各单板的槽位号]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1501466171}
+·分布式设备－IRF模式：除当前单板外，其它所有有成员端口的单板总数，以及各单板所在成员设备的编号和单板的槽位号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[集中式]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1366103398}[IRF]{lang="EN-US"}[设备：除当前成员设备外，其它所有有成员端口的成员设备总数，以及各成员设备的编号]{style="font-family:宋体"}
+Host ports (3 in total)
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[分布式设备－]{style="font-family:宋体"}]{#struct_0_x1820_12830_1677755878}[IRF]{lang="EN-US"}[模式：除当前单板外，其它所有有成员端口的单板总数，以及各单板所在成员设备的编号和单板的槽位号]{style="font-family:宋体"}
+成员端口及总数
 
-[[Host ports (3 in total)]{lang="EN-US"}]{#struct_0_x1820_12830_x1477218245}
+AC (VSI index 0, link ID 1)
 
-[[成员端口及总数]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1319453365}
+AC口的VSI索引和链路标识符
 
-[[AC (VSI index 0, link ID 1)]{lang="EN-US"}]{#struct_0_x1820_12830_x444762934}
+NPW (VSI index 0, link ID 1)
 
-[[AC]{lang="FR"}]{#struct_0_x1820_12830_x444828470}[口的]{style="font-family:宋体"}[VSI]{lang="FR"}[索引和链路标识符]{style="font-family:宋体"}
+N-PW口的VSI索引和链路标识符
 
-[[NPW (VSI index 0, link ID 1)]{lang="EN-US"}]{#struct_0_x1820_12830_1120796724}
+UPW (VSI index 0, link ID 1)
 
-[[N-PW]{lang="FR"}]{#struct_0_x1820_12830_1120731188}[口的]{style="font-family:宋体"}[VSI]{lang="FR"}[索引和链路标识符]{style="font-family:宋体"}
-
-[[UPW (VSI index 0, link ID 1)]{lang="EN-US"}]{#struct_0_x1820_12830_1120665652}
-
-[[U-PW]{lang="FR"}]{#struct_0_x1820_12830_1120600116}[口的]{style="font-family:宋体"}[VSI]{lang="FR"}[索引和链路标识符]{style="font-family:宋体"}
-
-[[ ]{lang="EN-US"}]{#_Toc293908672}
-
-::: {#-2119988164 .myid}
-[]{#_Toc404789381}[]{#struct_0_x1820_12830_x474161199}[]{#_Toc354920930}[]{#_Toc293908671}[]{#_Toc208651408}[]{#_Toc207106535}[]{#_Toc207099655}
+U-PW口的VSI索引和链路标识符
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- dot1p-priority (IGMP-Snooping view)**
 
 ------------------------------------------------------------------------
 
-[**[dot1p-priority]{lang="EN-US"}**]{#struct_0_x1820_12830_x224883366}[命令用来全局配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[报文的]{style="font-family:宋体"}[802.1p]{lang="EN-US"}[优先级。]{style="font-family:宋体"}
+**[dot1p-priority**]命令用来全局配置IGMP报文的802.1p优先级。
 
-[**[undo dot1p-priority]{lang="EN-US"}**]{#struct_0_x1820_12830_1101160363}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo dot1p-priority**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1931664435}
+【命令】
 
-[**[dot1p-priority ]{lang="EN-US"}***[priority-number]{lang="EN-US"}*]{#struct_0_x1820_12830_x474226735}
+**[dot1p-priority ***priority-number*]
 
-[**[undo dot1p-priority]{lang="EN-US"}**]{#struct_0_x1820_12830_2071379324}
+**[undo dot1p-priority**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x66187662}
+【缺省情况】
 
-[[没有配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_x474292271}[报文的]{style="font-family:宋体"}[802.1p]{lang="EN-US"}[优先级。]{style="font-family:宋体"}
+没有配置IGMP报文的802.1p优先级。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_922807052}
+【视图】
 
-[[IGMP-Snooping]{lang="EN-US"}]{#struct_0_x1820_12830_1999589738}[视图]{style="font-family:宋体"}
+IGMP-Snooping视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x474357807}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x601667291}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x197701763}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1524321877}
+【参数】
 
-[*[priority-number]{lang="EN-US"}*]{#struct_0_x1820_12830_x474423343}[：]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[报文的]{style="font-family:宋体"}[802.1p]{lang="EN-US"}[优先级，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[7]{lang="EN-US"}[。该数值越大，优先级越高。]{style="font-family:
-宋体"}
+*[priority-number*]：IGMP报文的802.1p优先级，取值范围为0～7。该数值越大，优先级越高。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_547583774}
+【使用指导】
 
-[[对于基于]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_508193182}[的配置，本命令与]{style="font-family:宋体"}**[igmp-snooping dot1p-priority]{lang="EN-US"}**[命令的功能相同，只是作用范围不同：]{style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下的全局配置对所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[都有效，]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[视图下的配置只对当前]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[有效，后者的配置优先级较高；对于基于]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的配置，]{style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下的全局配置对所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[都有效。]{style="font-family:宋体"}
+对于基于VLAN的配置，本命令与**igmp-snooping dot1p-priority**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下的全局配置对所有VLAN都有效，VLAN视图下的配置只对当前VLAN有效，后者的配置优先级较高；对于基于VSI的配置，IGMP-Snooping视图下的全局配置对所有VSI都有效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x473440303}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x2034695553}[全局配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[报文的]{style="font-family:宋体"}[802.1p]{lang="EN-US"}[优先级为]{style="font-family:宋体"}[3]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 全局配置IGMP报文的802.1p优先级为3。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x1520527218}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] dot1p-priority 3]{lang="EN-US"}
+Sysname-igmp-snooping dot1p-priority 3
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x473505839}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping dot1p-priority]{lang="EN-US"}**]{#struct_0_x1820_12830_x1254334416}
-:::
-
-::::: {#-1379387681 .myid}
-[]{#_Toc404789382}[]{#struct_0_x1820_12830_2085163762}
+·**igmp-snooping dot1p-priority**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- drop-unknown (IGMP-Snooping view)**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IGMP%20Snooping命令.files/image001.png){#图片 1 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1820_12830_x605030929}
-:::
+![说明](IGMP%20Snooping命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1820_12830_774697087}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[drop-unknown**]命令用来全局使能丢弃未知组播数据报文功能。
 
-[**[drop-unknown]{lang="EN-US"}**]{#struct_0_x1820_12830_1802578745}[命令用来全局使能丢弃未知组播数据报文功能。]{style="font-family:宋体"}
+**[undo drop-unknown**]命令用来全局关闭丢弃未知组播数据报文功能。
 
-[**[undo drop-unknown]{lang="EN-US"}**]{#struct_0_x1820_12830_x1769355237}[命令用来全局关闭丢弃未知组播数据报文功能。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1053875236}
+**[drop-unknown**]
 
-[**[drop-unknown]{lang="EN-US"}**]{#struct_0_x1820_12830_x1477021637}
+**[undo drop-unknown**]
 
-[**[undo drop-unknown]{lang="EN-US"}**]{#struct_0_x1820_12830_x219328254}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x750618855}
+丢弃未知组播数据报文功能处于关闭状态，即对未知组播数据报文进行广播。
 
-[[丢弃未知组播数据报文功能处于关闭状态，即对未知组播数据报文进行广播。]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1623418969}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x466106149}
+IGMP-Snooping视图
 
-[[IGMP-Snooping]{lang="EN-US"}]{#struct_0_x1820_12830_657972319}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1993116430}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x2010234429}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_2109396451}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1477087173}
+本命令与**igmp-snooping drop-unknown**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下的全局配置对所有VLAN和VSI都有效，VLAN视图/VSI视图下的配置只对当前VLAN/VSI有效。
 
-[[本命令与]{style="font-family:宋体"}**[igmp-snooping drop-unknown]{lang="EN-US"}**]{#struct_0_x1820_12830_x1203784165}[命令的功能相同，只是作用范围不同：]{style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下的全局配置对所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[和]{style="font-family:宋体"}[VSI]{lang="EN-US"}[都有效，]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[视图]{style="font-family:宋体"}[/VSI]{lang="EN-US"}[视图下的配置只对当前]{style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}[有效。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1822860730}
+\# 全局使能丢弃未知组播数据报文功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_1880896217}[全局使能丢弃未知组播数据报文功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x986685537}
+Sysname igmp-snooping
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname-igmp-snooping drop-unknown
 
-[\[Sysname-igmp-snooping\] drop-unknown]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1611822032}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping drop-unknown]{lang="EN-US"}**]{#struct_0_x1820_12830_x1863597218}
-:::::
-
-::: {#661448865 .myid}
-[]{#_Toc404789383}[]{#struct_0_x1820_12830_x999696462}[]{#_Toc345425126}
+·**igmp-snooping drop-unknown**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- enable (IGMP-Snooping view)**
 
 ------------------------------------------------------------------------
 
-[**[enable]{lang="EN-US"}**]{#struct_0_x1820_12830_x1476890565}[命令用来使能指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[enable**]命令用来使能指定VLAN内的IGMP Snooping。
 
-[**[undo enable]{lang="EN-US"}**]{#struct_0_x1820_12830_1471179235}[命令用来关闭指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo enable**]命令用来关闭指定VLAN内的IGMP Snooping。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_2004884340}
+【命令】
 
-[**[enable]{lang="EN-US"}**[ **vlan** *vlan-list*]{lang="EN-US"}]{#struct_0_x1820_12830_x40245039}
+**[enable** **vlan** *vlan-list*]
 
-[**[undo enable]{lang="EN-US"}**[ **vlan** *vlan-list*]{lang="EN-US"}]{#struct_0_x1820_12830_x2129464983}
+**[undo enable** **vlan** *vlan-list*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x144239261}
+【缺省情况】
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_1916348953}[内的]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[处于关闭状态。]{style="font-family:宋体"}
+VLAN内的IGMP Snooping处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1288525283}
+【视图】
 
-[[IGMP-Snooping]{lang="EN-US"}]{#struct_0_x1820_12830_728248928}[视图]{style="font-family:宋体"}
+IGMP-Snooping视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1476956101}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1233663217}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_324484899}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_436461243}
+【参数】
 
-[**[vlan ]{lang="EN-US"}***[vlan-list]{lang="EN-US"}*]{#struct_0_x1820_12830_712779976}[：]{style="font-family:宋体"}[表示对指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，表示一或多个]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，表示方式为]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[ = { *vlan-id* \[ **to** *vlan-id* \] }&\<1-10\>]{lang="EN-US"}[，其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。]{style="font-family:宋体"}
+**[vlan ***vlan-list*]：表示对指定VLAN进行配置。*vlan-list*为VLAN列表，表示一或多个VLAN，表示方式为*vlan-list* = { *vlan-id* [ **to** *vlan-id*  }&\<1-10\>]，其中，*vlan-id*为VLAN的编号，取值范围为1～4094。&\<1-10\>表示前面的参数最多可以输入10次。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1120600115}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在使能]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_1301427101}[内的]{lang="EN-US" style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[之前，必须先全局使能]{lang="EN-US" style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·在使能VLAN内的IGMP Snooping之前，必须先全局使能IGMP Snooping。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于基于]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_1120534579}[的配置，本命令与]{lang="EN-US" style="font-family:宋体"}**[igmp-snooping]{lang="EN-US"}[ enable]{lang="EN-US"}**[命令的功能相同，只是作用范围不同：]{lang="EN-US" style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下可以对指定]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置，]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[视图下只能对当前]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置，二者的配置优先级相同]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:
-宋体"}
+·对于基于VLAN的配置，本命令与**igmp-snooping enable**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下可以对指定VLAN进行配置，VLAN视图下只能对当前VLAN进行配置，二者的配置优先级相同。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_126628610}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_779816880}[全局使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并使能]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[～]{style="font-family:宋体"}[10]{lang="EN-US"}[内的]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 全局使能IGMP Snooping，并使能VLAN 2～10内的IGMP Snooping。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_938187311}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] enable vlan 2 to 10]{lang="EN-US"}
+Sysname-igmp-snooping enable vlan 2 to 10
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1476759493}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping]{lang="EN-US"}**]{#struct_0_x1820_12830_171368926}
+·**igmp-snooping**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping]{lang="EN-US"}**]{#struct_0_x1820_12830_x1568525031}**[ enable]{lang="EN-US"}**
-:::
-
-::: {#418727915 .myid}
-[]{#_Toc404789384}[]{#struct_0_x1820_12830_x1415138008}
+·**igmp-snooping**** enable**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- entry-limit (IGMP-Snooping view)**
 
 ------------------------------------------------------------------------
 
-[**[entry-limit]{lang="EN-US"}**]{#struct_0_x1820_12830_1967404493}[命令用来配置]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[转发表项（包括动态表项和静态表项）的全局最大数量。]{style="font-family:宋体"}
+**[entry-limit**]命令用来配置IGMP Snooping转发表项（包括动态表项和静态表项）的全局最大数量。
 
-[**[undo ]{lang="EN-US"}[entry-limit]{lang="EN-US"}**]{#struct_0_x1820_12830_2041456059}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo entry-limit**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_469335092}
+【命令】
 
-[**[entry-limit ]{lang="EN-US"}***[limit]{lang="EN-US"}*]{#struct_0_x1820_12830_75973512}
+**[entry-limit ***limit*]
 
-[**[undo entry-limit]{lang="EN-US"}**]{#struct_0_x1820_12830_1371591566}
+**[undo entry-limit**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1476825029}
+【缺省情况】
 
-[[IGMP Snooping]{lang="EN-US"}]{#struct_0_x1820_12830_749203625}[转发表项的全局最大数量为]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。]{style="font-family:宋体"}
+IGMP Snooping转发表项的全局最大数量为4294967295。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_539895904}
+【视图】
 
-[[IGMP-Snooping]{lang="EN-US"}]{#struct_0_x1820_12830_1279864107}[视图]{style="font-family:宋体"}
+IGMP-Snooping视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1936393835}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1510700580}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1661221967}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x263583819}
+【参数】
 
-[*[limit]{lang="EN-US"}*]{#struct_0_x1820_12830_1862106871}[：表示]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[转发表项的全局最大数量，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[limit*]：表示IGMP Snooping转发表项的全局最大数量，取值范围为0～4294967295。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1476628421}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x621898363}[配置]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[转发表项的全局最大数量为]{style="font-family:宋体"}[512]{lang="EN-US"}[个。]{style="font-family:宋体"}
+\# 配置IGMP Snooping转发表项的全局最大数量为512个。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x2089376079}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] entry-limit 512]{lang="EN-US"}
-:::
-
-::: {#817256077 .myid}
-[]{#_Toc404789385}[]{#struct_0_x1820_12830_x2052756}[]{#_Toc293908674}
+Sysname-igmp-snooping entry-limit 512
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- fast-leave (IGMP-Snooping view)**
 
 ------------------------------------------------------------------------
 
-[**[fast-leave]{lang="EN-US"}**]{#struct_0_x1820_12830_x2021172822}[命令用来全局使能端口快速离开功能。]{style="font-family:宋体"}
+**[fast-leave**]命令用来全局使能端口快速离开功能。
 
-[**[undo fast-leave]{lang="EN-US"}**]{#struct_0_x1820_12830_x1042889233}[命令用来全局关闭端口快速离开功能。]{style="font-family:宋体"}
+**[undo fast-leave**]命令用来全局关闭端口快速离开功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1662889374}
+【命令】
 
-[**[fast-leave]{lang="EN-US"}**[ \[ **vlan** *vlan-list* \]]{lang="EN-US"}]{#struct_0_x1820_12830_631778407}
+**[fast-leave** [ **vlan** *vlan-list* ]]
 
-[**[undo fast-leave]{lang="EN-US"}**[ \[ **vlan** *vlan-list* \]]{lang="EN-US"}]{#struct_0_x1820_12830_3520770}
+**[undo fast-leave** [ **vlan** *vlan-list* ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1476693957}
+【缺省情况】
 
-[[端口快速离开功能处于关闭状态。]{style="font-family:宋体"}]{#struct_0_x1820_12830_723222705}
+端口快速离开功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1005690245}
+【视图】
 
-[[IGMP-Snooping]{lang="EN-US"}]{#struct_0_x1820_12830_1136927652}[视图]{style="font-family:宋体"}
+IGMP-Snooping视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1670466008}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1294126406}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1342521796}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x809322537}
+【参数】
 
-[**[vlan ]{lang="EN-US"}***[vlan-list]{lang="EN-US"}*]{#struct_0_x1820_12830_x2134702130}[：]{style="font-family:宋体"}[表示对指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，表示一或多个]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，表示方式为]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[ = { *vlan-id* \[ **to** *vlan-id* \] }&\<1-10\>]{lang="EN-US"}[，其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。如果未指定本参数，则表示对所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[和]{style="font-family:宋体"}[VSI]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}
+**[vlan ***vlan-list*]：表示对指定VLAN进行配置。*vlan-list*为VLAN列表，表示一或多个VLAN，表示方式为*vlan-list* = { *vlan-id* [ **to** *vlan-id*  }&\<1-10\>]，其中，*vlan-id*为VLAN的编号，取值范围为1～4094。&\<1-10\>表示前面的参数最多可以输入10次。如果未指定本参数，则表示对所有VLAN和VSI进行配置。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1477152708}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[端口快速离开是指当端口收到主机发来的离开指定组播组的]{style="font-family:宋体"}]{#struct_0_x1820_12830_1333191779}[IGMP]{lang="EN-US"}[离开组报文时，直接将该端口从相应转发表项的出端口列表中删除。]{style="font-family:宋体"}
+·端口快速离开是指当端口收到主机发来的离开指定组播组的IGMP离开组报文时，直接将该端口从相应转发表项的出端口列表中删除。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令与]{lang="EN-US" style="font-family:宋体"}**[igmp-snooping fast-leave]{lang="EN-US"}**]{#struct_0_x1820_12830_763076708}[命令的功能相同，只是作用范围不同：]{lang="EN-US" style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下的全局配置对所有]{lang="EN-US" style="font-family:宋体"}[端口]{style="font-family:
-宋体"}[都有效，]{lang="EN-US" style="font-family:宋体"}[端口]{style="font-family:宋体"}[视图下的配置只对当前]{lang="EN-US" style="font-family:宋体"}[端口]{style="font-family:宋体"}[有效，后者的配置优先级较高]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}
+·本命令与**igmp-snooping fast-leave**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下的全局配置对所有端口都有效，端口视图下的配置只对当前端口有效，后者的配置优先级较高。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_461085942}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_1495604984}[全局使能]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内的端口快速离开功能。]{style="font-family:宋体"}
+\# 全局使能VLAN 2内的端口快速离开功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x1490801953}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] fast-leave vlan 2]{lang="EN-US"}
+Sysname-igmp-snooping fast-leave vlan 2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_115945389}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping fast-leave]{lang="EN-US"}**]{#struct_0_x1820_12830_x206780733}
-:::
-
-::: {#-379503904 .myid}
-[]{#_Toc404789386}[]{#struct_0_x1820_12830_x1477218244}[]{#_Toc293908675}
+·**igmp-snooping fast-leave**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- group-policy (IGMP-Snooping view)**
 
 ------------------------------------------------------------------------
 
-[**[group-policy]{lang="DA"}**]{#struct_0_x1820_12830_1409429990}[命令用来全局配置组播组过滤器]{style="font-family:宋体"}[，]{style="font-family:宋体"}[以限定主机所能加入的组播组。]{style="font-family:宋体"}
+**[group-policy**]命令用来全局配置组播组过滤器，以限定主机所能加入的组播组。
 
-[**[undo group-policy]{lang="DA"}**]{#struct_0_x1820_12830_x668975904}[命令用来删除全局组播组过滤器。]{style="font-family:宋体"}
+**[undo group-policy**]命令用来删除全局组播组过滤器。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x75994961}
+【命令】
 
-[**[group-policy]{lang="EN-US"}**[ *acl-number* \[ **vlan** *vlan-list* \]]{lang="EN-US"}]{#struct_0_x1820_12830_x1025498327}
+**[group-policy** *acl-number* [ **vlan** *vlan-list* ]]
 
-[**[undo group-policy]{lang="EN-US"}**[ \[ **vlan** *vlan-list* \]]{lang="EN-US"}]{#struct_0_x1820_12830_1748026879}
+**[undo group-policy** [ **vlan** *vlan-list* ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1985513530}
+【缺省情况】
 
-[[没有配置组播组过滤器]{style="font-family:宋体"}]{#struct_0_x1820_12830_x686816717}[，]{style="font-family:宋体"}[即主机可以加入任意合法的组播组。]{style="font-family:宋体"}
+没有配置组播组过滤器，即主机可以加入任意合法的组播组。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1559941468}
+【视图】
 
-[[IGMP-Snooping]{lang="DA"}]{#struct_0_x1820_12830_x1477021636}[视图]{style="font-family:宋体"}
+IGMP-Snooping视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1346755687}
+【缺省用户角色】
 
-[[network-admin]{lang="DA"}]{#struct_0_x1820_12830_893379996}
+network-admin
 
-[[mdc-admin]{lang="DA"}]{#struct_0_x1820_12830_x113746216}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1923040265}
+【参数】
 
-[*[acl-number]{lang="DA"}*]{#struct_0_x1820_12830_1381693706}[：]{style="font-family:宋体"}[指定]{style="font-family:宋体"}[IPv4]{lang="DA"}[基本或高级]{style="font-family:宋体"}[ACL]{lang="DA"}[的编号]{style="font-family:宋体"}[，]{style="font-family:宋体"}[取值范围为]{style="font-family:宋体"}[2000]{lang="DA"}[～]{style="font-family:宋体"}[3999]{lang="DA"}[。主机只能加入该]{style="font-family:
-宋体"}[ACL]{lang="DA"}[规则所允许的组播组。当指定的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[不存在或]{style="font-family:宋体"}[ACL]{lang="EN-US"}[中未配置有效规则，将过滤掉所有组播组。]{style="font-family:宋体"}
+*[acl-number*]：指定IPv4基本或高级ACL的编号，取值范围为2000～3999。主机只能加入该ACL规则所允许的组播组。当指定的ACL不存在或ACL中未配置有效规则，将过滤掉所有组播组。
 
-[**[vlan ]{lang="DA"}**]{#struct_0_x1820_12830_1263403669}*[vlan-list]{lang="DA"}*[：]{style="font-family:
-宋体"}[表示对指定]{style="font-family:宋体"}[VLAN]{lang="DA"}[进行配置。]{style="font-family:宋体"}*[vlan-list]{lang="DA"}*[为]{style="font-family:宋体"}[VLAN]{lang="DA"}[列表]{style="font-family:
-宋体"}[，]{style="font-family:宋体"}[表示一或多个]{style="font-family:
-宋体"}[VLAN]{lang="DA"}[，]{style="font-family:宋体"}[表示方式为]{style="font-family:宋体"}*[vlan-list]{lang="DA"}*[ = { *vlan-id* \[ **to** *vlan-id* \] }&\<1-10\>]{lang="DA"}[，]{style="font-family:宋体"}[其中]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[vlan-id]{lang="DA"}*[为]{style="font-family:宋体"}[VLAN]{lang="DA"}[的编号]{style="font-family:
-宋体"}[，]{style="font-family:宋体"}[取值范围为]{style="font-family:
-宋体"}[1]{lang="DA"}[～]{style="font-family:宋体"}[4094]{lang="DA"}[。]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。如果未指定本参数，则表示对所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[和]{style="font-family:宋体"}[VSI]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}
+**[vlan **]*vlan-list*：表示对指定VLAN进行配置。*vlan-list*为VLAN列表，表示一或多个VLAN，表示方式为*vlan-list* = { *vlan-id* [ **to** *vlan-id*  }&\<1-10\>]，其中，*vlan-id*为VLAN的编号，取值范围为1～4094。&\<1-10\>表示前面的参数最多可以输入10次。如果未指定本参数，则表示对所有VLAN和VSI进行配置。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x504909545}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}[对于]{style="font-family:宋体"}]{#struct_0_x1820_12830_1388120885}[IPv4]{lang="DA"}[基本]{style="font-family:宋体"}[ACL]{lang="DA"}[，]{style="font-family:
-宋体"}[该]{style="font-family:宋体"}[ACL]{lang="DA"}[规则中的]{style="font-family:宋体"}**[source]{lang="DA"}**[参数用来指定]{style="font-family:宋体"}[IGMP]{lang="DA"}[报文中的]{style="font-family:宋体"}[组播组地址]{lang="EN-US" style="font-family:宋体"}[范围]{style="font-family:宋体"}[，]{style="font-family:宋体"}[若指定了]{style="font-family:宋体"}**[vpn-instance]{lang="DA"}**[参数则此规则不生效]{style="font-family:宋体"}[，]{style="font-family:宋体"}[而除]{style="font-family:宋体"}**[fragment]{lang="DA"}**[和]{style="font-family:宋体"}**[time-range]{lang="DA"}**[以外的其它可选参数都将被忽略。]{style="font-family:宋体"}
+·对于IPv4基本ACL，该ACL规则中的**source**参数用来指定IGMP报文中的组播组地址范围，若指定了**vpn-instance**参数则此规则不生效，而除**fragment**和**time-range**以外的其它可选参数都将被忽略。
 
-[[·[              ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}[对于]{style="font-family:宋体"}]{#struct_0_x1820_12830_x719353499}[IPv4]{lang="DA"}[高级]{style="font-family:宋体"}[ACL]{lang="DA"}[，]{style="font-family:
-宋体"}[该]{style="font-family:宋体"}[ACL]{lang="DA"}[规则中的]{style="font-family:宋体"}**[source]{lang="DA"}**[参数用来指定]{style="font-family:宋体"}[IGMP]{lang="DA"}[报文中的组播源地址]{lang="EN-US" style="font-family:宋体"}[（]{lang="EN-US" style="font-family:
-宋体"}[对于]{lang="EN-US" style="font-family:宋体"}[IGMPv1/v2]{lang="DA"}[报文和未携带组播源地址的]{lang="EN-US" style="font-family:宋体"}[IS_EX/TO_EX]{lang="DA"}[类型的]{lang="EN-US" style="font-family:宋体"}[IGMPv3]{lang="DA"}[报文]{lang="EN-US" style="font-family:宋体"}[，]{lang="EN-US" style="font-family:
-宋体"}[视其组播源地址为]{lang="EN-US" style="font-family:宋体"}[0.0.0.0]{lang="DA"}[）]{lang="EN-US" style="font-family:宋体"}[范围]{style="font-family:宋体"}[，]{style="font-family:宋体"}**[destination]{lang="DA"}**[参数用来指定]{style="font-family:宋体"}[组播组地址]{lang="EN-US" style="font-family:宋体"}[范围]{style="font-family:宋体"}[，]{style="font-family:宋体"}[若指定了]{style="font-family:宋体"}**[vpn-instance]{lang="DA"}**[参数则此规则不生效]{style="font-family:宋体"}[，]{style="font-family:宋体"}[而除]{style="font-family:宋体"}**[fragment]{lang="DA"}**[和]{style="font-family:宋体"}**[time-range]{lang="DA"}**[以外的其它可选参数都将被忽略。]{style="font-family:宋体"}
+·对于IPv4高级ACL，该ACL规则中的**source**参数用来指定IGMP报文中的组播源地址（对于IGMPv1/v2报文和未携带组播源地址的IS_EX/TO_EX类型的IGMPv3报文，视其组播源地址为0.0.0.0）范围，**destination**参数用来指定组播组地址范围，若指定了**vpn-instance**参数则此规则不生效，而除**fragment**和**time-range**以外的其它可选参数都将被忽略。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[可以为端口在不同的]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1477087172}[VLAN]{lang="EN-US"}[内配置不同的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[规则，但在相同]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内所配置的新规则会取代旧规则。]{style="font-family:宋体"}
+·可以为端口在不同的VLAN内配置不同的ACL规则，但在相同VLAN内所配置的新规则会取代旧规则。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令只对动态组播组有效，对静态组播组无效。]{style="font-family:宋体"}]{#struct_0_x1820_12830_362299776}
+·本命令只对动态组播组有效，对静态组播组无效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令与]{lang="EN-US" style="font-family:宋体"}**[igmp-snooping ]{lang="EN-US"}**]{#struct_0_x1820_12830_x1779059275}**[group-policy]{lang="DA"}**[命令的功能相同，只是作用范围不同：]{lang="EN-US" style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下的全局配置对所有]{lang="EN-US" style="font-family:宋体"}[端口]{style="font-family:
-宋体"}[都有效，]{lang="EN-US" style="font-family:宋体"}[端口]{style="font-family:宋体"}[视图下的配置只对当前]{lang="EN-US" style="font-family:宋体"}[端口]{style="font-family:宋体"}[有效，后者的配置优先级较高]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}
+·本命令与**igmp-snooping ****group-policy**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下的全局配置对所有端口都有效，端口视图下的配置只对当前端口有效，后者的配置优先级较高。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1915370150}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_24905029}[全局配置组播组过滤器，以限定]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内的主机只能加入组播组]{style="font-family:宋体"}[225.1.1.1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 全局配置组播组过滤器，以限定VLAN 2内的主机只能加入组播组225.1.1.1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x1746837668}
+\<Sysname\> system-view
 
-[\[Sysname\] acl basic 2000]{lang="EN-US"}
+Sysname acl basic 2000
 
-[\[Sysname-acl-ipv4-basic-2000\] rule permit source 225.1.1.1 0]{lang="EN-US"}
+Sysname-acl-ipv4-basic-2000 rule permit source 225.1.1.1 0
 
-[\[Sysname-acl-ipv4-basic-2000\] quit]{lang="EN-US"}
+Sysname-acl-ipv4-basic-2000 quit
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] group-policy 2000 vlan 2]{lang="EN-US"}
+Sysname-igmp-snooping group-policy 2000 vlan 2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x53060233}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping ]{lang="EN-US"}**]{#struct_0_x1820_12830_x1476890564}**[group-policy]{lang="DA"}**
-:::
-
-::: {#-392075321 .myid}
-[]{#_Toc404789387}[]{#struct_0_x1820_12830_x94904706}[]{#_Toc293908676}
+·**igmp-snooping ****group-policy**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- host-aging-time (IGMP-Snooping view)**
 
 ------------------------------------------------------------------------
 
-[**[host-aging-time]{lang="EN-US"}**]{#struct_0_x1820_12830_595970401}[命令用来全局配置动态成员端口的老化时间。]{style="font-family:宋体"}
+**[host-aging-time**]命令用来全局配置动态成员端口的老化时间。
 
-[**[undo host-aging-time]{lang="EN-US"}**]{#struct_0_x1820_12830_342508105}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo host-aging-time**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1380212748}
+【命令】
 
-[**[host-aging-time]{lang="EN-US"}**[ *interval*]{lang="EN-US"}]{#struct_0_x1820_12830_1594652826}
+**[host-aging-time** *interval*]
 
-[**[undo host-aging-time]{lang="EN-US"}**]{#struct_0_x1820_12830_663580466}
+**[undo host-aging-time**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_185804339}
+【缺省情况】
 
-[[动态成员端口的老化时间为]{style="font-family:宋体"}[260]{lang="EN-US"}]{#struct_0_x1820_12830_149866295}[秒。]{style="font-family:宋体"}
+动态成员端口的老化时间为260秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1476956100}
+【视图】
 
-[[IGMP-Snooping]{lang="EN-US"}]{#struct_0_x1820_12830_1495220138}[视图]{style="font-family:宋体"}
+IGMP-Snooping视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_2004375788}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x838836779}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1890453026}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1722970964}
+【参数】
 
-[*[interval]{lang="EN-US"}*]{#struct_0_x1820_12830_x406179138}[：表示动态成员端口的老化时间，取值范围为]{style="font-family:宋体"}[200]{lang="EN-US"}[～]{style="font-family:宋体"}[1000]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[interval*]：表示动态成员端口的老化时间，取值范围为200～1000，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1102973521}
+【使用指导】
 
-[[本命令与]{style="font-family:宋体"}**[igmp-snooping host-aging-time]{lang="EN-US"}**]{#struct_0_x1820_12830_x1653101018}[命令的功能相同，只是作用范围不同：]{style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下的全局配置对所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[和]{style="font-family:宋体"}[VSI]{lang="EN-US"}[都有效，]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[视图]{style="font-family:宋体"}[/VSI]{lang="EN-US"}[视图下的配置只对当前]{style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}[有效，后者的配置优先级较高。]{style="font-family:宋体"}
+本命令与**igmp-snooping host-aging-time**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下的全局配置对所有VLAN和VSI都有效，VLAN视图/VSI视图下的配置只对当前VLAN/VSI有效，后者的配置优先级较高。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1476759492}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x1394715015}[全局配置动态成员端口的老化时间为]{style="font-family:宋体"}[300]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 全局配置动态成员端口的老化时间为300秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_968199586}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] host-aging-time 300]{lang="EN-US"}
+Sysname-igmp-snooping host-aging-time 300
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1576459631}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping host-aging-time]{lang="EN-US"}**]{#struct_0_x1820_12830_x1716249838}
-:::
-
-::: {#1377695043 .myid}
-[]{#_Toc404789388}[]{#struct_0_x1820_12830_x1396944258}[]{#_Toc123030578}[]{#_Toc121110275}
+·**igmp-snooping host-aging-time**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping**
 
 ------------------------------------------------------------------------
 
-[**[igmp-snooping]{lang="EN-US"}**]{#struct_0_x1820_12830_x489014512}[命令用来全局使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+**[igmp-snooping**]命令用来全局使能IGMP Snooping，并进入IGMP-Snooping视图。
 
-[**[undo igmp-snooping]{lang="EN-US"}**]{#struct_0_x1820_12830_x1165879695}[命令用来全局关闭]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo igmp-snooping**]命令用来全局关闭IGMP Snooping。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1476825028}
+【命令】
 
-[**[igmp-snooping]{lang="EN-US"}**]{#struct_0_x1820_12830_x1979679730}
+**[igmp-snooping**]
 
-[**[undo igmp-snooping]{lang="EN-US"}**]{#struct_0_x1820_12830_579266732}
+**[undo igmp-snooping**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x213664505}
+【缺省情况】
 
-[[IGMP Snooping]{lang="EN-US"}]{#struct_0_x1820_12830_x1880447669}[处于全局关闭状态。]{style="font-family:宋体"}
+IGMP Snooping处于全局关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1879169310}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1820_12830_1835080566}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_734663969}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x731757932}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1476628420}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_944185578}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_1373373581}[全局使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+\# 全局使能IGMP Snooping，并进入IGMP-Snooping视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_1763617213}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\]]{lang="EN-US"}
+Sysname-igmp-snooping
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_554795975}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[enable]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_x415216840}
+·**enable** (IGMP-Snooping view)
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping enable]{lang="EN-US"}**]{#struct_0_x1820_12830_1424014125}
-:::
-
-::: {#-261994064 .myid}
-[]{#_Toc404789389}[]{#struct_0_x1820_12830_x474226737}[]{#_Toc354920938}[]{#_Toc293908680}
+·**igmp-snooping enable**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping dot1p-priority**
 
 ------------------------------------------------------------------------
 
-[**[igmp-snooping dot1p-priority]{lang="EN-US"}**]{#struct_0_x1820_12830_x474292273}[命令用来在]{style="font-family:
-宋体"}[VLAN]{lang="EN-US"}[内配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[报文的]{style="font-family:宋体"}[802.1p]{lang="EN-US"}[优先级。]{style="font-family:宋体"}
+**[igmp-snooping dot1p-priority**]命令用来在VLAN内配置IGMP报文的802.1p优先级。
 
-[**[undo igmp-snooping dot1p-priority]{lang="EN-US"}**]{#struct_0_x1820_12830_922938124}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo igmp-snooping dot1p-priority**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_10733218}
+【命令】
 
-[**[igmp-snooping dot1p-priority ]{lang="EN-US"}***[priority-number]{lang="EN-US"}*]{#struct_0_x1820_12830_x474357809}
+**[igmp-snooping dot1p-priority ***priority-number*]
 
-[**[undo igmp-snooping dot1p-priority]{lang="EN-US"}**]{#struct_0_x1820_12830_x602060507}
+**[undo igmp-snooping dot1p-priority**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_881127549}
+【缺省情况】
 
-[[没有配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_x474423345}[报文的]{style="font-family:宋体"}[802.1p]{lang="EN-US"}[优先级。]{style="font-family:宋体"}
+没有配置IGMP报文的802.1p优先级。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_547190558}
+【视图】
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_1195278533}[视图]{style="font-family:宋体"}
+VLAN视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x473440305}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x2034302337}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_708853955}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1238422255}
+【参数】
 
-[*[priority-number]{lang="EN-US"}*]{#struct_0_x1820_12830_x473505841}[：]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[报文的]{style="font-family:宋体"}[802.1p]{lang="EN-US"}[优先级，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[7]{lang="EN-US"}[。该数值越大，优先级越高。]{style="font-family:
-宋体"}
+*[priority-number*]：IGMP报文的802.1p优先级，取值范围为0～7。该数值越大，优先级越高。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1254858699}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在配置本命令之前，必须先在]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_x122724106}[内使能]{lang="EN-US" style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·在配置本命令之前，必须先在VLAN内使能IGMP Snooping。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于基于]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_x473964594}[的配置，本命令与]{lang="EN-US" style="font-family:宋体"}**[dot1p-priority]{lang="EN-US"}**[命令的功能相同，只是作用范围不同：]{lang="EN-US" style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下的全局配置对所有]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[都有效，]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[视图下的配置只对当前]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[有效，后者的配置优先级较高]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}
+·对于基于VLAN的配置，本命令与**dot1p-priority**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下的全局配置对所有VLAN都有效，VLAN视图下的配置只对当前VLAN有效，后者的配置优先级较高。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1434047833}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x391334069}[在]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[报文的]{style="font-family:宋体"}[802.1p]{lang="EN-US"}[优先级为]{style="font-family:宋体"}[3]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在VLAN 2内使能IGMP Snooping，并配置IGMP报文的802.1p优先级为3。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x474030130}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vlan 2]{lang="EN-US"}
+Sysname vlan 2
 
-[\[Sysname-vlan2\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping enable
 
-[\[Sysname-vlan2\] igmp-snooping dot1p-priority 3]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping dot1p-priority 3
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1801059940}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dot1p-priority]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_x1759344008}
+·**dot1p-priority** (IGMP-Snooping view)
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[enable]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_1120403509}
+·**enable** (IGMP-Snooping view)
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping enable]{lang="EN-US"}**]{#struct_0_x1820_12830_x474095666}
-:::
-
-::::: {#182485218 .myid}
-[]{#_Toc404789390}[]{#struct_0_x1820_12830_x566337162}[]{#_Toc293908681}
+·**igmp-snooping enable**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping drop-unknown**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IGMP%20Snooping命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1820_12830_x1476693956}
-:::
+![说明](IGMP%20Snooping命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1820_12830_x842861236}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[igmp-snooping drop-unknown**]命令用来在VLAN/VSI内使能丢弃未知组播数据报文功能。
 
-[**[igmp-snooping drop-unknown]{lang="EN-US"}**]{#struct_0_x1820_12830_x1541634450}[命令用来在]{style="font-family:
-宋体"}[VLAN/VSI]{lang="EN-US"}[内使能丢弃未知组播数据报文功能。]{style="font-family:宋体"}
+**[undo igmp-snooping drop-unknown**]命令用来在VLAN/VSI内关闭丢弃未知组播数据报文功能。
 
-[**[undo igmp-snooping drop-unknown]{lang="EN-US"}**]{#struct_0_x1820_12830_1473893090}[命令用来在]{style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}[内关闭丢弃未知组播数据报文功能。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x907564895}
+**[igmp-snooping drop-unknown**]
 
-[**[igmp-snooping drop-unknown]{lang="EN-US"}**]{#struct_0_x1820_12830_883540920}
+**[undo igmp-snooping drop-unknown**]
 
-[**[undo igmp-snooping drop-unknown]{lang="EN-US"}**]{#struct_0_x1820_12830_304045693}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_496140339}
+丢弃未知组播数据报文功能处于关闭状态，即对未知组播数据报文进行广播。
 
-[[丢弃未知组播数据报文功能处于关闭状态，即对未知组播数据报文进行广播。]{style="font-family:宋体"}]{#struct_0_x1820_12830_1615764759}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_88931236}
+VLAN视图/VSI视图
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_467790823}[视图]{style="font-family:宋体"}[/VSI]{lang="EN-US"}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_328956389}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1450509645}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x855345477}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_2007018280}
+·在配置本命令之前，必须先在VLAN/VSI内使能IGMP Snooping。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在配置本命令之前，必须先在]{lang="EN-US" style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}]{#struct_0_x1820_12830_1013759033}[内使能]{lang="EN-US" style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·本命令与**drop-unknown**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下的全局配置对所有VLAN和VSI都有效，VLAN视图/VSI视图下的配置只对当前VLAN/VSI有效，后者的配置优先级较高。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令与]{lang="EN-US" style="font-family:宋体"}**[drop-unknown]{lang="EN-US"}**]{#struct_0_x1820_12830_x572836604}[命令的功能相同，只是作用范围不同：]{lang="EN-US" style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下的全局配置对所有]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[和]{style="font-family:宋体"}[VSI]{lang="EN-US"}[都有效，]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[视图]{lang="EN-US" style="font-family:宋体"}[/VSI]{lang="EN-US"}[视图下的配置只对当前]{lang="EN-US" style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}[有效，后者的配置优先级较高]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:
-宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1507148124}
+\# 在VLAN 2内使能IGMP Snooping，并使能丢弃未知组播数据报文功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_88865700}[在]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并使能丢弃未知组播数据报文功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x1870436231}
+Sysname igmp-snooping
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname vlan 2
 
-[\[Sysname\] vlan 2]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping enable
 
-[\[Sysname-vlan2\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping drop-unknown
 
-[\[Sysname-vlan2\] igmp-snooping drop-unknown]{lang="EN-US"}
+\# 在VSI aaa内使能IGMP Snooping，并使能丢弃未知组播数据报文功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_1120469040}[在]{style="font-family:宋体"}[VSI aaa]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并使能丢弃未知组播数据报文功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_1120403504}
+Sysname igmp-snooping
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname vsi aaa
 
-[\[Sysname\] vsi aaa]{lang="EN-US"}
+Sysname-vsi-aaa igmp-snooping enable
 
-[\[Sysname-vsi-aaa\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vsi-aaa igmp-snooping drop-unknown
 
-[\[Sysname-vsi-aaa\] igmp-snooping drop-unknown]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1212542366}
+·**drop-unknown** (IGMP-Snooping view)
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[drop-unknown]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_x1862001850}
+·**enable** (IGMP-Snooping view)
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[enable]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_1120337968}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping enable]{lang="EN-US"}**]{#struct_0_x1820_12830_1324519724}
-:::::
-
-::: {#-1605170767 .myid}
-[]{#_Toc404789391}[]{#struct_0_x1820_12830_859786414}[]{#_Toc123030580}[]{#_Toc121110295}
+·**igmp-snooping enable**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping enable**
 
 ------------------------------------------------------------------------
 
-[**[igmp-snooping enable]{lang="EN-US"}**]{#struct_0_x1820_12830_106644909}[命令用来在]{style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[igmp-snooping enable**]命令用来在VLAN/VSI内使能IGMP Snooping。
 
-[**[undo igmp-snooping enable]{lang="EN-US"}**]{#struct_0_x1820_12830_89062308}[命令用来在]{style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}[内关闭]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo igmp-snooping enable**]命令用来在VLAN/VSI内关闭IGMP Snooping。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1665002248}
+【命令】
 
-[**[igmp-snooping enable]{lang="EN-US"}**]{#struct_0_x1820_12830_284203607}
+**[igmp-snooping enable**]
 
-[**[undo igmp-snooping enable]{lang="EN-US"}**]{#struct_0_x1820_12830_460684218}
+**[undo igmp-snooping enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1011033152}
+【缺省情况】
 
-[[VLAN/VSI]{lang="EN-US"}]{#struct_0_x1820_12830_x399333545}[内的]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[处于关闭状态。]{style="font-family:宋体"}
+VLAN/VSI内的IGMP Snooping处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1860384777}
+【视图】
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_1290340880}[视图]{style="font-family:宋体"}[/VSI]{lang="EN-US"}[视图]{style="font-family:宋体"}
+VLAN视图/VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1632000200}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_698094874}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_88996772}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x368132526}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在]{lang="EN-US" style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}]{#struct_0_x1820_12830_x1912534539}[内使能]{lang="EN-US" style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[之前，必须先全局使能]{lang="EN-US" style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·在VLAN/VSI内使能IGMP Snooping之前，必须先全局使能IGMP Snooping。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于基于]{style="font-family:宋体"}]{#struct_0_x1820_12830_1120600111}[VLAN]{lang="EN-US"}[的配置，本命令与]{style="font-family:宋体"}**[enable]{lang="EN-US"}**[命令的功能相同，只是作用范围不同：]{style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下可以对指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置，]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[视图下只能对当前]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置，二者的配置优先级相同。]{style="font-family:宋体"}
+·对于基于VLAN的配置，本命令与**enable**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下可以对指定VLAN进行配置，VLAN视图下只能对当前VLAN进行配置，二者的配置优先级相同。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1771359499}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_489233325}[全局使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并在]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 全局使能IGMP Snooping，并在VLAN 2内使能IGMP Snooping。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_567600565}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vlan 2]{lang="EN-US"}
+Sysname vlan 2
 
-[\[Sysname-vlan2\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping enable
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_1120534575}[全局使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并在]{style="font-family:宋体"}[VSI aaa]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 全局使能IGMP Snooping，并在VSI aaa内使能IGMP Snooping。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x1791008564}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vsi aaa]{lang="EN-US"}
+Sysname vsi aaa
 
-[\[Sysname-vsi-aaa\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vsi-aaa igmp-snooping enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1027244496}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[enable]{lang="EN-US"}**]{#struct_0_x1820_12830_89193380}[ ]{lang="EN-US"}[(IGMP-Snooping view)]{lang="EN-US"}
+·**enable**(IGMP-Snooping view)
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping]{lang="EN-US"}**]{#struct_0_x1820_12830_x1388340470}
-:::
-
-::: {#1685853223 .myid}
-[]{#_Toc404789392}[]{#struct_0_x1820_12830_x1461741960}[]{#_Toc293908683}
+·**igmp-snooping**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping fast-leave**
 
 ------------------------------------------------------------------------
 
-[**[igmp-snooping fast-leave]{lang="EN-US"}**]{#struct_0_x1820_12830_2054426660}[命令用来在端口上使能端口快速离开功能。]{style="font-family:
-宋体"}
+**[igmp-snooping fast-leave**]命令用来在端口上使能端口快速离开功能。
 
-[**[undo ]{lang="EN-US"}[igmp-snooping fast-leave]{lang="EN-US"}**]{#struct_0_x1820_12830_1914002800}[命令用来在端口上关闭端口快速离开功能。]{style="font-family:宋体"}
+**[undo igmp-snooping fast-leave**]命令用来在端口上关闭端口快速离开功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1112400913}
+【命令】
 
-[**[igmp-snooping fast-leave]{lang="EN-US"}**[ \[ **vlan** *vlan-list* \]]{lang="EN-US"}]{#struct_0_x1820_12830_1360015848}
+**[igmp-snooping fast-leave** [ **vlan** *vlan-list* ]]
 
-[**[undo igmp-snooping fast-leave]{lang="EN-US"}**[ \[ **vlan** *vlan-list* \]]{lang="EN-US"}]{#struct_0_x1820_12830_1774361303}
+**[undo igmp-snooping fast-leave** [ **vlan** *vlan-list* ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x982794098}
+【缺省情况】
 
-[[端口快速离开功能处于关闭状态。]{style="font-family:宋体"}]{#struct_0_x1820_12830_89127844}
+端口快速离开功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x2100836198}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1820_12830_x111781392}[二层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[二层]{style="font-family:宋体"}[RPR]{lang="EN-US"}[逻辑接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_925064750}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x308997574}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1652314003}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_2000704199}
+【参数】
 
-[**[vlan ]{lang="EN-US"}***[vlan-list]{lang="EN-US"}*]{#struct_0_x1820_12830_x176756307}[：]{style="font-family:宋体"}[表示对指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，表示一或多个]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，表示方式为]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[ = { *vlan-id* \[ **to** *vlan-id* \] }&\<1-10\>]{lang="EN-US"}[，其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。如果未指定本参数，则表示对所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}
+**[vlan ***vlan-list*]：表示对指定VLAN进行配置。*vlan-list*为VLAN列表，表示一或多个VLAN，表示方式为*vlan-list* = { *vlan-id* [ **to** *vlan-id*  }&\<1-10\>]，其中，*vlan-id*为VLAN的编号，取值范围为1～4094。&\<1-10\>表示前面的参数最多可以输入10次。如果未指定本参数，则表示对所有VLAN进行配置。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1890664892}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[端口快速离开是指当端口收到主机发来的离开指定组播组的]{style="font-family:宋体"}]{#struct_0_x1820_12830_89324452}[IGMP]{lang="EN-US"}[离开组报文时，直接将该端口从相应转发表项的出端口列表中删除。]{style="font-family:宋体"}
+·端口快速离开是指当端口收到主机发来的离开指定组播组的IGMP离开组报文时，直接将该端口从相应转发表项的出端口列表中删除。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令与]{lang="EN-US" style="font-family:宋体"}**[fast-leave]{lang="EN-US"}**]{#struct_0_x1820_12830_x27082980}[命令的功能相同，只是作用范围不同：]{lang="EN-US" style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下的全局配置对所有]{lang="EN-US" style="font-family:宋体"}[端口]{style="font-family:宋体"}[都有效，]{lang="EN-US" style="font-family:宋体"}[端口]{style="font-family:宋体"}[视图下的配置只对当前]{lang="EN-US" style="font-family:宋体"}[端口]{style="font-family:宋体"}[有效，后者的配置优先级较高]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}
+·本命令与**fast-leave**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下的全局配置对所有端口都有效，端口视图下的配置只对当前端口有效，后者的配置优先级较高。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x549525104}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x1350716579}[将端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[在]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内使能端口快速离开功能。]{style="font-family:宋体"}
+\# 将端口GigabitEthernet1/0/1在VLAN 2内使能端口快速离开功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x1742530530}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] igmp-snooping fast-leave vlan 2]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 igmp-snooping fast-leave vlan 2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_707068260}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[fast-leave]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_x93125743}
-:::
-
-::: {#1394306567 .myid}
-[]{#_Toc404789393}[]{#struct_0_x1820_12830_x473505842}[]{#_Toc354920942}[]{#_Toc293908684}[]{#_Toc123030581}[]{#_Toc121110287}[]{#_Toc109290008}
+·**fast-leave** (IGMP-Snooping view)
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping general-query source-ip**
 
 ------------------------------------------------------------------------
 
-[**[igmp-snooping general-query source-ip]{lang="EN-US"}**]{#struct_0_x1820_12830_x1254924235}[命令用来配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[普遍组查询报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[igmp-snooping general-query source-ip**]命令用来配置IGMP普遍组查询报文的源IP地址。
 
-[**[undo igmp-snooping general-query source-ip]{lang="EN-US"}**]{#struct_0_x1820_12830_1092119352}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo igmp-snooping general-query source-ip**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1080475872}
+【命令】
 
-[**[igmp-snooping general-query source-ip]{lang="EN-US"}**[ *ip-address*]{lang="EN-US"}]{#struct_0_x1820_12830_x1691826802}
+**[igmp-snooping general-query source-ip** *ip-address*]
 
-[**[undo igmp-snooping general-query source-ip]{lang="EN-US"}**]{#struct_0_x1820_12830_1092053816}
+**[undo igmp-snooping general-query source-ip**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1850803493}
+【缺省情况】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1565778861}[VLAN]{lang="EN-US"}[内，]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[普遍组查询报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为当前]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址；若当前]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口没有]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，则采用]{style="font-family:宋体"}[0.0.0.0]{lang="EN-US"}[。]{style="font-family:宋体"}
+·在VLAN内，IGMP普遍组查询报文的源IP地址为当前VLAN接口的IP地址；若当前VLAN接口没有IP地址，则采用0.0.0.0。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在]{style="font-family:宋体"}]{#struct_0_x1820_12830_717315589}[VSI]{lang="EN-US"}[内，]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[普遍组查询报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[0.0.0.0]{lang="EN-US"}[。]{style="font-family:宋体"}
+·在VSI内，IGMP普遍组查询报文的源IP地址为0.0.0.0。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1091988280}
+【视图】
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_x189418826}[视图]{style="font-family:宋体"}[/VSI]{lang="EN-US"}[视图]{style="font-family:宋体"}
+VLAN视图/VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_856596500}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_201241986}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1091922744}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_208891476}
+【参数】
 
-[*[ip-address]{lang="EN-US"}*]{#struct_0_x1820_12830_x1663484914}[：表示]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[普遍组查询报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[ip-address*]：表示IGMP普遍组查询报文的源IP地址。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1091857208}
+【使用指导】
 
-[[在配置本命令之前，必须先在]{style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}]{#struct_0_x1820_12830_x1393177536}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{style="font-family:宋体"}
+在配置本命令之前，必须先在VLAN/VSI内使能IGMP Snooping。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_583916321}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_1091791672}[在]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[普遍组查询报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[10.1.1.1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在VLAN 2内使能IGMP Snooping，并配置IGMP普遍组查询报文的源IP地址为10.1.1.1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_966321080}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vlan 2]{lang="EN-US"}
+Sysname vlan 2
 
-[\[Sysname-vlan2\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping enable
 
-[\[Sysname-vlan2\] igmp-snooping general-query source-ip 10.1.1.1]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping general-query source-ip 10.1.1.1
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_717053445}[在]{style="font-family:宋体"}[VSI aaa]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[普遍组查询报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[10.1.1.1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在VSI aaa内使能IGMP Snooping，并配置IGMP普遍组查询报文的源IP地址为10.1.1.1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_718036485}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vsi aaa]{lang="EN-US"}
+Sysname vsi aaa
 
-[\[Sysname-vsi-aaa\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vsi-aaa igmp-snooping enable
 
-[\[Sysname-vsi-aaa\] igmp-snooping general-query source-ip 10.1.1.1]{lang="EN-US"}
+Sysname-vsi-aaa igmp-snooping general-query source-ip 10.1.1.1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1091726136}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[enable]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_717970949}
+·**enable** (IGMP-Snooping view)
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping enable]{lang="EN-US"}**]{#struct_0_x1820_12830_x1378008699}
-:::
-
-::: {#1018834762 .myid}
-[]{#_Toc404789394}[]{#struct_0_x1820_12830_1176798237}[]{#_Toc293908685}
+·**igmp-snooping enable**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping group-limit**
 
 ------------------------------------------------------------------------
 
-[**[igmp-snooping group-limit]{lang="DA"}**]{#struct_0_x1820_12830_507875281}[命令用来[]{#_Toc127795919}[配置端口加入的组播组最大数量]{#_Ref127672022}。]{style="font-family:宋体"}
+**[igmp-snooping group-limit**]命令用来[配置端口加入的组播组最大数量。]
 
-[**[undo ]{lang="DA"}**]{#struct_0_x1820_12830_89258916}**[igmp-snooping group-limit]{lang="DA"}**[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo **]**igmp-snooping group-limit**命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x320431729}
+【命令】
 
-[**[igmp-snooping group-limit]{lang="EN-US"}**[ *limit* \[ **vlan** *vlan-list* \]]{lang="EN-US"}]{#struct_0_x1820_12830_x1564969483}
+**[igmp-snooping group-limit** *limit* [ **vlan** *vlan-list* ]]
 
-[**[undo igmp-snooping group-limit]{lang="EN-US"}**[ \[ **vlan** *vlan-list* \]]{lang="EN-US"}]{#struct_0_x1820_12830_1910799858}
+**[undo igmp-snooping group-limit** [ **vlan** *vlan-list* ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1455961350}
+【缺省情况】
 
-[[端口加入的组播组最大数量为]{style="font-family:宋体"}[4294967295]{lang="EN-US"}]{#struct_0_x1820_12830_842051412}[。]{style="font-family:宋体"}
+端口加入的组播组最大数量为4294967295。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1101169990}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1820_12830_348042906}[二层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[二层]{style="font-family:宋体"}[RPR]{lang="EN-US"}[逻辑接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x206487751}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_89455524}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x582595673}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_2136968150}
+【参数】
 
-[*[limit]{lang="EN-US"}*]{#struct_0_x1820_12830_x534664156}[：表示端口加入的组播组最大数量，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[limit*]：表示端口加入的组播组最大数量，取值范围为0～4294967295。
 
-[**[vlan ]{lang="EN-US"}***[vlan-list]{lang="EN-US"}*]{#struct_0_x1820_12830_542380141}[：]{style="font-family:宋体"}[表示对指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，表示一或多个]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，表示方式为]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[ = { *vlan-id* \[ **to** *vlan-id* \] }&\<1-10\>]{lang="EN-US"}[，其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。如果未指定本参数，则表示对所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}
+**[vlan ***vlan-list*]：表示对指定VLAN进行配置。*vlan-list*为VLAN列表，表示一或多个VLAN，表示方式为*vlan-list* = { *vlan-id* [ **to** *vlan-id*  }&\<1-10\>]，其中，*vlan-id*为VLAN的编号，取值范围为1～4094。&\<1-10\>表示前面的参数最多可以输入10次。如果未指定本参数，则表示对所有VLAN进行配置。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x866019826}
+【使用指导】
 
-[[本命令只对动态组播组有效，对静态组播组无效。]{style="font-family:宋体"}]{#struct_0_x1820_12830_755888165}
+本命令只对动态组播组有效，对静态组播组无效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1498650620}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x1006675863}[配置端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[在]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内加入的组播组最大数量为]{style="font-family:宋体"}[10]{lang="EN-US"}[个。]{style="font-family:宋体"}
+\# 配置端口GigabitEthernet1/0/1在VLAN 2内加入的组播组最大数量为10个。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_89389988}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] igmp-snooping group-limit 10 vlan 2]{lang="EN-US"}
-:::
-
-::: {#-1701725406 .myid}
-[]{#_Toc404789395}[]{#struct_0_x1820_12830_x924931322}[]{#_Toc293908686}
+Sysname-GigabitEthernet1/0/1 igmp-snooping group-limit 10 vlan 2
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping group-policy**
 
 ------------------------------------------------------------------------
 
-[**[igmp-snooping group-policy]{lang="DA"}**]{#struct_0_x1820_12830_389903958}[命令用来[]{#_Toc127848451}[]{#_Toc125123262}[]{#_Toc122232024}[在端口上配置组播组过滤器]{#_Ref114841739}]{style="font-family:宋体"}[，]{style="font-family:宋体"}[以限定主机所能加入的组播组。]{style="font-family:宋体"}
+**[igmp-snooping group-policy**]命令用来[在端口上配置组播组过滤器]，以限定主机所能加入的组播组。
 
-[**[undo ]{lang="DA"}**]{#struct_0_x1820_12830_x193841472}**[igmp-snooping group-policy]{lang="DA"}**[命令用来删除端口上的组播组过滤器。]{style="font-family:宋体"}
+**[undo **]**igmp-snooping group-policy**命令用来删除端口上的组播组过滤器。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x2113228277}
+【命令】
 
-[**[igmp-snooping group-policy]{lang="EN-US"}**[ *acl-number* \[ **vlan** *vlan-list* \]]{lang="EN-US"}]{#struct_0_x1820_12830_x1501486530}
+**[igmp-snooping group-policy** *acl-number* [ **vlan** *vlan-list* ]]
 
-[**[undo igmp-snooping group-policy]{lang="EN-US"}**[ \[ **vlan** *vlan-list* \]]{lang="EN-US"}]{#struct_0_x1820_12830_x2108375540}
+**[undo igmp-snooping group-policy** [ **vlan** *vlan-list* ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1415457176}
+【缺省情况】
 
-[[没有配置组播组过滤器，即主机可以加入任意合法的组播组。]{style="font-family:宋体"}]{#struct_0_x1820_12830_88931237}
+没有配置组播组过滤器，即主机可以加入任意合法的组播组。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1870861337}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1820_12830_1892105670}[二层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[二层]{style="font-family:宋体"}[RPR]{lang="EN-US"}[逻辑接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1004620190}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x103444836}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1083753423}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1085866616}
+【参数】
 
-[*[acl-number]{lang="EN-US"}*]{#struct_0_x1820_12830_1330077599}[：指定]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[基本或高级]{style="font-family:宋体"}[ACL]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[。主机只能加入该]{style="font-family:宋体"}[ACL]{lang="EN-US"}[规则所允许的组播组。当指定的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[不存在或]{style="font-family:宋体"}[ACL]{lang="EN-US"}[中未配置有效规则，将过滤掉所有组播组。]{style="font-family:宋体"}
+*[acl-number*]：指定IPv4基本或高级ACL的编号，取值范围为2000～3999。主机只能加入该ACL规则所允许的组播组。当指定的ACL不存在或ACL中未配置有效规则，将过滤掉所有组播组。
 
-[**[vlan ]{lang="EN-US"}***[vlan-list]{lang="EN-US"}*]{#struct_0_x1820_12830_2098313025}[：]{style="font-family:宋体"}[表示对指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，表示一或多个]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，表示方式为]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[ = { *vlan-id* \[ **to** *vlan-id* \] }&\<1-10\>]{lang="EN-US"}[，其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。如果未指定本参数，则表示对所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}
+**[vlan ***vlan-list*]：表示对指定VLAN进行配置。*vlan-list*为VLAN列表，表示一或多个VLAN，表示方式为*vlan-list* = { *vlan-id* [ **to** *vlan-id*  }&\<1-10\>]，其中，*vlan-id*为VLAN的编号，取值范围为1～4094。&\<1-10\>表示前面的参数最多可以输入10次。如果未指定本参数，则表示对所有VLAN进行配置。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_88865701}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}[对于]{style="font-family:宋体"}]{#struct_0_x1820_12830_468215929}[IPv4]{lang="DA"}[基本]{style="font-family:宋体"}[ACL]{lang="DA"}[，]{style="font-family:
-宋体"}[该]{style="font-family:宋体"}[ACL]{lang="DA"}[规则中的]{style="font-family:宋体"}**[source]{lang="DA"}**[参数用来指定]{style="font-family:宋体"}[IGMP]{lang="DA"}[报文中的]{style="font-family:宋体"}[组播组地址]{lang="EN-US" style="font-family:宋体"}[范围]{style="font-family:宋体"}[，]{style="font-family:宋体"}[若指定了]{style="font-family:宋体"}**[vpn-instance]{lang="DA"}**[参数则此规则不生效]{style="font-family:宋体"}[，]{style="font-family:宋体"}[而除]{style="font-family:宋体"}**[fragment]{lang="DA"}**[和]{style="font-family:宋体"}**[time-range]{lang="DA"}**[以外的其它可选参数都将被忽略。]{style="font-family:宋体"}
+·对于IPv4基本ACL，该ACL规则中的**source**参数用来指定IGMP报文中的组播组地址范围，若指定了**vpn-instance**参数则此规则不生效，而除**fragment**和**time-range**以外的其它可选参数都将被忽略。
 
-[[·[              ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}[对于]{style="font-family:宋体"}]{#struct_0_x1820_12830_847713478}[IPv4]{lang="DA"}[高级]{style="font-family:宋体"}[ACL]{lang="DA"}[，]{style="font-family:
-宋体"}[该]{style="font-family:宋体"}[ACL]{lang="DA"}[规则中的]{style="font-family:宋体"}**[source]{lang="DA"}**[参数用来指定]{style="font-family:宋体"}[IGMP]{lang="DA"}[报文中的组播源地址]{lang="EN-US" style="font-family:宋体"}[（]{lang="EN-US" style="font-family:
-宋体"}[对于]{lang="EN-US" style="font-family:宋体"}[IGMPv1/v2]{lang="DA"}[报文和未携带组播源地址的]{lang="EN-US" style="font-family:宋体"}[IS_EX/TO_EX]{lang="DA"}[类型的]{lang="EN-US" style="font-family:宋体"}[IGMPv3]{lang="DA"}[报文]{lang="EN-US" style="font-family:宋体"}[，]{lang="EN-US" style="font-family:
-宋体"}[视其组播源地址为]{lang="EN-US" style="font-family:宋体"}[0.0.0.0]{lang="DA"}[）]{lang="EN-US" style="font-family:宋体"}[范围]{style="font-family:宋体"}[，]{style="font-family:宋体"}**[destination]{lang="DA"}**[参数用来指定]{style="font-family:宋体"}[组播组地址]{lang="EN-US" style="font-family:宋体"}[范围]{style="font-family:宋体"}[，]{style="font-family:宋体"}[若指定了]{style="font-family:宋体"}**[vpn-instance]{lang="DA"}**[参数则此规则不生效]{style="font-family:宋体"}[，]{style="font-family:宋体"}[而除]{style="font-family:宋体"}**[fragment]{lang="DA"}**[和]{style="font-family:宋体"}**[time-range]{lang="DA"}**[以外的其它可选参数都将被忽略。]{style="font-family:宋体"}
+·对于IPv4高级ACL，该ACL规则中的**source**参数用来指定IGMP报文中的组播源地址（对于IGMPv1/v2报文和未携带组播源地址的IS_EX/TO_EX类型的IGMPv3报文，视其组播源地址为0.0.0.0）范围，**destination**参数用来指定组播组地址范围，若指定了**vpn-instance**参数则此规则不生效，而除**fragment**和**time-range**以外的其它可选参数都将被忽略。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[可以为端口在不同的]{style="font-family:宋体"}]{#struct_0_x1820_12830_316027353}[VLAN]{lang="EN-US"}[内配置不同的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[规则，但在相同]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内所配置的新规则会取代旧规则。]{style="font-family:宋体"}
+·可以为端口在不同的VLAN内配置不同的ACL规则，但在相同VLAN内所配置的新规则会取代旧规则。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令只对动态组播组有效，对静态组播组无效。]{style="font-family:宋体"}]{#struct_0_x1820_12830_x441145126}
+·本命令只对动态组播组有效，对静态组播组无效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令与]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1820_12830_1756803832}**[group-policy]{lang="DA"}**[命令的功能相同，只是作用范围不同：]{lang="EN-US" style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下的全局配置对所有]{lang="EN-US" style="font-family:宋体"}[端口]{style="font-family:宋体"}[都有效，]{lang="EN-US" style="font-family:宋体"}[端口]{style="font-family:宋体"}[视图下的配置只对当前]{lang="EN-US" style="font-family:宋体"}[端口]{style="font-family:宋体"}[有效，后者的配置优先级较高]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}
+·本命令与**group-policy**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下的全局配置对所有端口都有效，端口视图下的配置只对当前端口有效，后者的配置优先级较高。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x766720454}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x466476695}[在端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置组播组过滤器]{style="font-family:宋体"}[，]{style="font-family:宋体"}[以限定]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内的主机只能加入组播组]{style="font-family:宋体"}[225.1.1.1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在端口GigabitEthernet1/0/1上配置组播组过滤器，以限定VLAN 2内的主机只能加入组播组225.1.1.1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_89062309}
+\<Sysname\> system-view
 
-[\[Sysname\] acl basic 2000]{lang="EN-US"}
+Sysname acl basic 2000
 
-[\[Sysname-acl-ipv4-basic-2000\] rule permit source 225.1.1.1 0]{lang="EN-US"}
+Sysname-acl-ipv4-basic-2000 rule permit source 225.1.1.1 0
 
-[\[Sysname-acl-ipv4-basic-2000\] quit]{lang="EN-US"}
+Sysname-acl-ipv4-basic-2000 quit
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] igmp-snooping group-policy 2000 vlan 2]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 igmp-snooping group-policy 2000 vlan 2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_673649912}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[group-policy]{lang="DA"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_619521772}
-:::
-
-::: {#-2023558763 .myid}
-[]{#_Toc404789396}[]{#struct_0_x1820_12830_1659481983}[]{#_Toc293908687}
+·**group-policy** (IGMP-Snooping view)
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping host-aging-time**
 
 ------------------------------------------------------------------------
 
-[**[igmp-snooping host-aging-time]{lang="EN-US"}**]{#struct_0_x1820_12830_x1610633223}[命令用来在]{style="font-family:
-宋体"}[VLAN/VSI]{lang="EN-US"}[内配置动态成员端口的老化时间。]{style="font-family:宋体"}
+**[igmp-snooping host-aging-time**]命令用来在VLAN/VSI内配置动态成员端口的老化时间。
 
-[**[undo igmp-snooping host-aging-time]{lang="EN-US"}**]{#struct_0_x1820_12830_1395430377}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo igmp-snooping host-aging-time**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1982375898}
+【命令】
 
-[**[igmp-snooping host-aging-time]{lang="EN-US"}**[ *interval*]{lang="EN-US"}]{#struct_0_x1820_12830_x1581096561}
+**[igmp-snooping host-aging-time** *interval*]
 
-[**[undo igmp-snooping host-aging-time]{lang="EN-US"}**]{#struct_0_x1820_12830_55122614}
+**[undo igmp-snooping host-aging-time**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_88996773}
+【缺省情况】
 
-[[动态成员端口的老化时间为]{style="font-family:宋体"}[260]{lang="EN-US"}]{#struct_0_x1820_12830_1588182610}[秒。]{style="font-family:宋体"}
+动态成员端口的老化时间为260秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_581537307}
+【视图】
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_x1325820294}[视图]{style="font-family:宋体"}[/VSI]{lang="EN-US"}[视图]{style="font-family:宋体"}
+VLAN视图/VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1246664741}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_706179364}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1412327602}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_2081997355}
+【参数】
 
-[*[interval]{lang="EN-US"}*]{#struct_0_x1820_12830_413648756}[：表示动态成员端口的老化时间，取值范围为]{style="font-family:宋体"}[200]{lang="EN-US"}[～]{style="font-family:宋体"}[1000]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[interval*]：表示动态成员端口的老化时间，取值范围为200～1000，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_89193381}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在配置本命令之前，必须先在]{lang="EN-US" style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}]{#struct_0_x1820_12830_567974666}[内使能]{lang="EN-US" style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·在配置本命令之前，必须先在VLAN/VSI内使能IGMP Snooping。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令与]{lang="EN-US" style="font-family:宋体"}**[host-aging-time]{lang="EN-US"}**]{#struct_0_x1820_12830_485351501}[命令的功能相同，只是作用范围不同：]{lang="EN-US" style="font-family:
-宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下的全局配置对所有]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[和]{style="font-family:宋体"}[VSI]{lang="EN-US"}[都有效，]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[视图]{lang="EN-US" style="font-family:宋体"}[/VSI]{lang="EN-US"}[视图下的配置只对当前]{lang="EN-US" style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}[有效，后者的配置优先级较高]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:
-宋体"}
+·本命令与**host-aging-time**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下的全局配置对所有VLAN和VSI都有效，VLAN视图/VSI视图下的配置只对当前VLAN/VSI有效，后者的配置优先级较高。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_986892585}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x1502823991}[在]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并配置动态成员端口的老化时间为]{style="font-family:宋体"}[300]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 在VLAN 2内使能IGMP Snooping，并配置动态成员端口的老化时间为300秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_1374890132}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vlan 2]{lang="EN-US"}
+Sysname vlan 2
 
-[\[Sysname-vlan2\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping enable
 
-[\[Sysname-vlan2\] igmp-snooping host-aging-time 300]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping host-aging-time 300
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_717315590}[在]{style="font-family:宋体"}[VSI aaa]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并配置动态成员端口的老化时间为]{style="font-family:宋体"}[300]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 在VSI aaa内使能IGMP Snooping，并配置动态成员端口的老化时间为300秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_717250054}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vsi aaa]{lang="EN-US"}
+Sysname vsi aaa
 
-[\[Sysname-vsi-aaa\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vsi-aaa igmp-snooping enable
 
-[\[Sysname-vsi-aaa\] igmp-snooping host-aging-time 300]{lang="EN-US"}
+Sysname-vsi-aaa igmp-snooping host-aging-time 300
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1883425792}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[enable]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_717184518}
+·**enable** (IGMP-Snooping view)
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[host-aging-time]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_799155125}
+·**host-aging-time** (IGMP-Snooping view)
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping enable]{lang="EN-US"}**]{#struct_0_x1820_12830_89127845}
-:::
-
-::: {#1378260319 .myid}
-[]{#_Toc404789397}[]{#struct_0_x1820_12830_1091922743}[]{#_Toc354920946}[]{#_Toc293908688}
+·**igmp-snooping enable**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping host-join**
 
 ------------------------------------------------------------------------
 
-[**[igmp-snooping]{lang="DA"}[ ]{lang="DA"}[host-join]{lang="EN-US"}**]{#struct_0_x1820_12830_1091857207}[命令用来[]{#_Toc127848457}[]{#_Toc125123268}[配置模拟主机加入]{#_Ref125123127}组播组或组播源组。模拟主机加入就是将二层设备的端口配置为组播组的成员。]{style="font-family:宋体"}
+**[igmp-snoopinghost-join**]命令用来[配置模拟主机加入组播组或组播源组。模拟主机加入就是将二层设备的端口配置为组播组的成员。]
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1820_12830_x1392194496}**[igmp-snooping]{lang="DA"}[ ]{lang="DA"}[host-join]{lang="EN-US"}**[命令用来删除模拟主机加入的配置。]{style="font-family:
-宋体"}
+**[undo **]**igmp-snoopinghost-join**命令用来删除模拟主机加入的配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1274894393}
+【命令】
 
-[**[igmp-snooping]{lang="DA"}[ ]{lang="DA"}[host-join ]{lang="EN-US"}***[group-address]{lang="EN-US"}*[ \[ **source-ip** *source-address* \] **vlan** *vlan-id*]{lang="EN-US"}]{#struct_0_x1820_12830_1091791671}
+**[igmp-snoopinghost-join ***group-address* [ **source-ip** *source-address*  **vlan** *vlan-id*]]
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1820_12830_966255544}**[igmp-snooping]{lang="DA"}[ ]{lang="DA"}[host-join]{lang="EN-US"}**[ { *group-address* \[ **source-ip** *source-address* \] **vlan** *vlan-id* \| **all** }]{lang="EN-US"}
+**[undo **]**igmp-snoopinghost-join** { *group-address* [ **source-ip** *source-address*  **vlan** *vlan-id* \| **all** }]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1550337965}
+【缺省情况】
 
-[[没有配置模拟主机加入组播组或组播源组。]{style="font-family:宋体"}]{#struct_0_x1820_12830_1091726135}
+没有配置模拟主机加入组播组或组播源组。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1378205307}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1820_12830_x316640757}[二层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[二层]{style="font-family:宋体"}[RPR]{lang="EN-US"}[逻辑接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1091660599}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_980899954}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1738169426}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1092643639}
+【参数】
 
-[*[group-address]{lang="EN-US"}*]{#struct_0_x1820_12830_x701695337}[：表示模拟主机要加入的组播组的地址，取值范围为]{style="font-family:宋体"}[224.0.1.0]{lang="EN-US"}[～]{style="font-family:宋体"}[239.255.255.255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[group-address*]：表示模拟主机要加入的组播组的地址，取值范围为224.0.1.0～239.255.255.255。
 
-[**[source-ip ]{lang="EN-US"}***[source-address]{lang="EN-US"}*]{#struct_0_x1820_12830_x1585235799}[：表示模拟主机要加入的组播源的地址。如果指定了本参数，表示加入组播源组；如果未指定本参数，则表示加入组播组。配置有本参数的模拟主机，只在]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[版本]{style="font-family:宋体"}[3]{lang="EN-US"}[下生效。]{style="font-family:宋体"}
+**[source-ip ***source-address*]：表示模拟主机要加入的组播源的地址。如果指定了本参数，表示加入组播源组；如果未指定本参数，则表示加入组播组。配置有本参数的模拟主机，只在IGMP Snooping版本3下生效。
 
-[**[vlan]{lang="EN-US"}**[ *vlan-id*]{lang="EN-US"}]{#struct_0_x1820_12830_1092578103}[：表示]{style="font-family:宋体"}[对指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vlan** *vlan-id*]：表示对指定VLAN进行配置。*vlan-id*为VLAN的编号，取值范围为1～4094。
 
-[**[all]{lang="EN-US"}**]{#struct_0_x1820_12830_717184513}[：表示对所有组播组和组播源组进行配置。]{style="font-family:宋体"}
+**[all**]：表示对所有组播组和组播源组进行配置。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1252897586}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[与静态成员端口不同，配置了模拟主机加入的端口将作为动态成员端口参与动态成员端口的老化过程。]{style="font-family:宋体"}]{#struct_0_x1820_12830_717118977}
+·与静态成员端口不同，配置了模拟主机加入的端口将作为动态成员端口参与动态成员端口的老化过程。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[模拟主机]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1820_12830_x48630828}[所]{style="font-family:宋体"}[采用的]{lang="EN-US" style="font-family:宋体"}[IGMP]{lang="EN-US"}[版本与]{lang="EN-US" style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[的版本一致。]{lang="EN-US" style="font-family:宋体"}
+·模拟主机所采用的IGMP版本与IGMP Snooping的版本一致。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1080606944}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_1389939514}[在端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置模拟主机加入]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内的组播源组（]{style="font-family:宋体"}[1.1.1.1]{lang="EN-US"}[，]{style="font-family:宋体"}[232.1.1.1]{lang="EN-US"}[）。]{style="font-family:宋体"}
+\# 在端口GigabitEthernet1/0/1上配置模拟主机加入VLAN 2内的组播源组（1.1.1.1，232.1.1.1）。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_1092053814}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vlan 2]{lang="EN-US"}
+Sysname vlan 2
 
-[\[Sysname-vlan2\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping enable
 
-[\[Sysname-vlan2\] igmp-snooping version 3]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping version 3
 
-[\[Sysname-vlan2\] quit]{lang="EN-US"}
+Sysname-vlan2 quit
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] igmp-snooping host-join 232.1.1.1 source-ip 1.1.1.1 vlan 2]{lang="EN-US"}
-:::
-
-::: {#782860140 .myid}
-[]{#_Toc404789398}[]{#struct_0_x1820_12830_237815962}[]{#_Toc293908696}
+Sysname-GigabitEthernet1/0/1 igmp-snooping host-join 232.1.1.1 source-ip 1.1.1.1 vlan 2
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping last-member-query-interval**
 
 ------------------------------------------------------------------------
 
-[**[igmp-snooping last-member-query-interval]{lang="EN-US"}**]{#struct_0_x1820_12830_1026625200}[命令用来在]{style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}[内配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[特定组查询报文的发送间隔。]{style="font-family:宋体"}
+**[igmp-snooping last-member-query-interval**]命令用来在VLAN/VSI内配置IGMP特定组查询报文的发送间隔。
 
-[**[undo igmp-snooping last-member-query-interval]{lang="EN-US"}**]{#struct_0_x1820_12830_756864461}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo igmp-snooping last-member-query-interval**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_697830284}
+【命令】
 
-[**[igmp-snooping last-member-query-interval ]{lang="EN-US"}***[interval]{lang="EN-US"}*]{#struct_0_x1820_12830_x1048551}
+**[igmp-snooping last-member-query-interval ***interval*]
 
-[**[undo igmp-snooping last-member-query-interval]{lang="EN-US"}**]{#struct_0_x1820_12830_x1615832656}
+**[undo igmp-snooping last-member-query-interval**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_489246119}
+【缺省情况】
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_x619065460}[特定组查询报文的发送间隔为]{style="font-family:宋体"}[1]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+IGMP特定组查询报文的发送间隔为1秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_89324453}
+【视图】
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_x1983398116}[视图]{style="font-family:宋体"}[/VSI]{lang="EN-US"}[视图]{style="font-family:宋体"}
+VLAN视图/VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1846660525}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1014152302}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_428540933}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x696175947}
+【参数】
 
-[*[interval]{lang="EN-US"}*]{#struct_0_x1820_12830_x190217362}[：表示]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[特定组查询报文的发送间隔，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[5]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[interval*]：表示IGMP特定组查询报文的发送间隔，取值范围为1～5，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x808019432}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在配置本命令之前，必须先在]{lang="EN-US" style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}]{#struct_0_x1820_12830_x616625678}[内使能]{lang="EN-US" style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·在配置本命令之前，必须先在VLAN/VSI内使能IGMP Snooping。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令与]{lang="EN-US" style="font-family:宋体"}**[last-member-query-interval]{lang="EN-US"}**]{#struct_0_x1820_12830_89258917}[命令的功能相同，只是作用范围不同：]{lang="EN-US" style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下的全局配置对所有]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[和]{style="font-family:宋体"}[VSI]{lang="EN-US"}[都有效，]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[视图]{lang="EN-US" style="font-family:宋体"}[/VSI]{lang="EN-US"}[视图下的配置只对当前]{lang="EN-US" style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}[有效，后者的配置优先级较高]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:
-宋体"}
+·本命令与**last-member-query-interval**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下的全局配置对所有VLAN和VSI都有效，VLAN视图/VSI视图下的配置只对当前VLAN/VSI有效，后者的配置优先级较高。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1635883407}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_542345389}[在]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[特定组查询报文的发送间隔为]{style="font-family:宋体"}[3]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 在VLAN 2内使能IGMP Snooping，并配置IGMP特定组查询报文的发送间隔为3秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x1986428632}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="NL"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vlan 2]{lang="EN-US"}
+Sysname vlan 2
 
-[\[Sysname-vlan2\] igmp-snooping enable]{lang="NL"}
+Sysname-vlan2 igmp-snooping enable
 
-[\[Sysname-vlan2\] igmp-snooping last-member-query-interval 3]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping last-member-query-interval 3
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x2011567766}[在]{style="font-family:宋体"}[VSI aaa]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[特定组查询报文的发送间隔为]{style="font-family:宋体"}[3]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 在VSI aaa内使能IGMP Snooping，并配置IGMP特定组查询报文的发送间隔为3秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x2011633302}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="NL"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vsi aaa]{lang="EN-US"}
+Sysname vsi aaa
 
-[\[Sysname-vsi-aaa\] igmp-snooping enable]{lang="NL"}
+Sysname-vsi-aaa igmp-snooping enable
 
-[\[Sysname-vsi-aaa\] igmp-snooping last-member-query-interval 3]{lang="EN-US"}
+Sysname-vsi-aaa igmp-snooping last-member-query-interval 3
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1732378458}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[enable]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_x2011698838}
+·**enable** (IGMP-Snooping view)
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping enable]{lang="EN-US"}**]{#struct_0_x1820_12830_x320226792}
+·**igmp-snooping enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[last-member-query-interval]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_x1155917961}
-:::
-
-::: {#483249982 .myid}
-[]{#_Toc404789399}[]{#struct_0_x1820_12830_1091857206}[]{#_Toc354920948}[]{#_Toc293908691}
+·**last-member-query-interval** (IGMP-Snooping view)
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping leave source-ip**
 
 ------------------------------------------------------------------------
 
-[**[igmp-snooping leave source-ip]{lang="EN-US"}**]{#struct_0_x1820_12830_x1392260032}[命令用来配置]{style="font-family:
-宋体"}[IGMP]{lang="EN-US"}[离开组报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[igmp-snooping leave source-ip**]命令用来配置IGMP离开组报文的源IP地址。
 
-[**[undo igmp-snooping leave source-ip]{lang="EN-US"}**]{#struct_0_x1820_12830_1091791670}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo igmp-snooping leave source-ip**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_966190008}
+【命令】
 
-[**[igmp-snooping leave source-ip]{lang="EN-US"}**[ *ip-address*]{lang="EN-US"}]{#struct_0_x1820_12830_x1039764812}
+**[igmp-snooping leave source-ip** *ip-address*]
 
-[**[undo igmp-snooping leave source-ip]{lang="EN-US"}**]{#struct_0_x1820_12830_1091726134}
+**[undo igmp-snooping leave source-ip**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1378139771}
+【缺省情况】
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_1091660598}[离开组报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为当前]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址；若当前]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口没有]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，则采用]{style="font-family:宋体"}[0.0.0.0]{lang="EN-US"}[。]{style="font-family:宋体"}
+IGMP离开组报文的源IP地址为当前VLAN接口的IP地址；若当前VLAN接口没有IP地址，则采用0.0.0.0。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_980965490}
+【视图】
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_x646573124}[视图]{style="font-family:宋体"}
+VLAN视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1092643638}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x701629801}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1152060182}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1092578102}
+【参数】
 
-[*[ip-address]{lang="EN-US"}*]{#struct_0_x1820_12830_1252832050}[：表示]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[离开组报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[ip-address*]：表示IGMP离开组报文的源IP地址。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x841598250}
+【使用指导】
 
-[[在配置本命令之前，必须先在]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_1092119349}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{style="font-family:宋体"}
+在配置本命令之前，必须先在VLAN内使能IGMP Snooping。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1081065697}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_1112833475}[在]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[离开组报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[10.1.1.1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在VLAN 2内使能IGMP Snooping，并配置IGMP离开组报文的源IP地址为10.1.1.1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_1092053813}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vlan 2]{lang="EN-US"}
+Sysname vlan 2
 
-[\[Sysname-vlan2\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping enable
 
-[\[Sysname-vlan2\] igmp-snooping leave source-ip 10.1.1.1]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping leave source-ip 10.1.1.1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1851000101}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[enable]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_x2011371159}
+·**enable** (IGMP-Snooping view)
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping enable]{lang="EN-US"}**]{#struct_0_x1820_12830_1091988277}
-:::
-
-::: {#-1116450163 .myid}
-[]{#_Toc404789400}[]{#struct_0_x1820_12830_89455525}[]{#_Toc293908692}[]{#_Toc301367126}[]{#_Toc301427692}[]{#_Toc301367127}[]{#_Toc301427693}
+·**igmp-snooping enable**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping max-response-time**
 
 ------------------------------------------------------------------------
 
-[**[igmp-snooping max-response-time]{lang="EN-US"}**]{#struct_0_x1820_12830_1373719463}[命令用来在]{style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}[内配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[普遍组查询的最大响应时间。]{style="font-family:宋体"}
+**[igmp-snooping max-response-time**]命令用来在VLAN/VSI内配置IGMP普遍组查询的最大响应时间。
 
-[**[undo igmp-snooping max-response-time]{lang="EN-US"}**]{#struct_0_x1820_12830_x1716184263}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo igmp-snooping max-response-time**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1122242167}
+【命令】
 
-[**[igmp-snooping max-response-time]{lang="EN-US"}**[ *interval*]{lang="EN-US"}]{#struct_0_x1820_12830_x1284627384}
+**[igmp-snooping max-response-time** *interval*]
 
-[**[undo igmp-snooping max-response-time]{lang="EN-US"}**]{#struct_0_x1820_12830_602378156}
+**[undo igmp-snooping max-response-time**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1358465517}
+【缺省情况】
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_2061753733}[普遍组查询的最大响应时间为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+IGMP普遍组查询的最大响应时间为10秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_551789822}
+【视图】
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_89389989}[视图]{style="font-family:宋体"}[/VSI]{lang="EN-US"}[视图]{style="font-family:宋体"}
+VLAN视图/VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1413720838}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x8321849}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1159057049}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1435096414}
+【参数】
 
-[*[interval]{lang="EN-US"}*]{#struct_0_x1820_12830_727017859}[：表示]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[普遍组查询的最大响应时间，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[25]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[interval*]：表示IGMP普遍组查询的最大响应时间，取值范围为1～25，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_981235347}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在配置本命令之前，必须先在]{lang="EN-US" style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}]{#struct_0_x1820_12830_1157023102}[内使能]{lang="EN-US" style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·在配置本命令之前，必须先在VLAN/VSI内使能IGMP Snooping。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[为避免误删组播组成员，请确保]{style="font-family:宋体"}]{#struct_0_x1820_12830_1091857205}[IGMP]{lang="EN-US"}[普遍组查询的最大响应时间小于]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[普遍组查询报文的发送间隔，否则配置虽能生效但系统会给出提示。]{style="font-family:宋体"}
+·为避免误删组播组成员，请确保IGMP普遍组查询的最大响应时间小于IGMP普遍组查询报文的发送间隔，否则配置虽能生效但系统会给出提示。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令与]{lang="EN-US" style="font-family:宋体"}**[max-response-time]{lang="EN-US"}**]{#struct_0_x1820_12830_x2011502228}[命令的功能相同，只是作用范围不同：]{lang="EN-US" style="font-family:
-宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下的全局配置对所有]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[和]{style="font-family:宋体"}[VSI]{lang="EN-US"}[都有效，]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[视图]{lang="EN-US" style="font-family:宋体"}[/VSI]{lang="EN-US"}[视图]{style="font-family:宋体"}[下的配置只对当前]{lang="EN-US" style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}[有效，后者的配置优先级较高]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}
+·本命令与**max-response-time**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下的全局配置对所有VLAN和VSI都有效，VLAN视图/VSI视图下的配置只对当前VLAN/VSI有效，后者的配置优先级较高。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_88931234}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_850127847}[在]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[普遍组查询的最大响应时间为]{style="font-family:宋体"}[5]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 在VLAN 2内使能IGMP Snooping，并配置IGMP普遍组查询的最大响应时间为5秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x657464691}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vlan 2]{lang="EN-US"}
+Sysname vlan 2
 
-[\[Sysname-vlan2\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping enable
 
-[\[Sysname-vlan2\] igmp-snooping max-response-time 5]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping max-response-time 5
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x2011567764}[在]{style="font-family:宋体"}[VSI aaa]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[普遍组查询的最大响应时间为]{style="font-family:宋体"}[5]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 在VSI aaa内使能IGMP Snooping，并配置IGMP普遍组查询的最大响应时间为5秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x2011633300}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vsi aaa]{lang="EN-US"}
+Sysname vsi aaa
 
-[\[Sysname-vsi-aaa\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vsi-aaa igmp-snooping enable
 
-[\[Sysname-vsi-aaa\] igmp-snooping max-response-time 5]{lang="EN-US"}
+Sysname-vsi-aaa igmp-snooping max-response-time 5
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x2106712027}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[enable]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_x2011698836}
+·**enable** (IGMP-Snooping view)
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping enable]{lang="EN-US"}**]{#struct_0_x1820_12830_x871995292}
+·**igmp-snooping enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping query-interval]{lang="EN-US"}**]{#struct_0_x1820_12830_1091791669}
+·**igmp-snooping query-interval**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[max-response-time]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_1193828542}
-:::
-
-::: {#744886306 .myid}
-[]{#_Toc404789401}[]{#struct_0_x1820_12830_x2065976623}[]{#_Toc293908693}[]{#_Toc301367129}[]{#_Toc301427695}
+·**max-response-time** (IGMP-Snooping view)
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping overflow-replace**
 
 ------------------------------------------------------------------------
 
-[**[igmp-snooping]{lang="DA"}[ overflow-replace]{lang="EN-US"}**]{#struct_0_x1820_12830_88865698}[命令用来在端口上使能组播组替换功能。]{style="font-family:宋体"}
+**[igmp-snooping overflow-replace**]命令用来在端口上使能组播组替换功能。
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1820_12830_x1027196868}**[igmp-snooping]{lang="DA"}[ overflow-replace]{lang="EN-US"}**[命令用来在端口上关闭组播组替换功能。]{style="font-family:宋体"}
+**[undo **]**igmp-snooping overflow-replace**命令用来在端口上关闭组播组替换功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1350789241}
+【命令】
 
-[**[igmp-snooping overflow-replace]{lang="EN-US"}**[ \[ **vlan** *vlan-list* \]]{lang="EN-US"}]{#struct_0_x1820_12830_1364088049}
+**[igmp-snooping overflow-replace** [ **vlan** *vlan-list* ]]
 
-[**[undo igmp-snooping overflow-replace]{lang="EN-US"}**[ \[ **vlan** *vlan-list* \]]{lang="EN-US"}]{#struct_0_x1820_12830_x1582321928}
+**[undo igmp-snooping overflow-replace** [ **vlan** *vlan-list* ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1333792545}
+【缺省情况】
 
-[[组播组替换功能处于关闭状态。]{style="font-family:宋体"}]{#struct_0_x1820_12830_742391284}
+组播组替换功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x428997515}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1820_12830_x885748445}[二层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[二层]{style="font-family:宋体"}[RPR]{lang="EN-US"}[逻辑接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_89062306}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1011356920}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1173361024}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1151860170}
+【参数】
 
-[**[vlan ]{lang="EN-US"}***[vlan-list]{lang="EN-US"}*]{#struct_0_x1820_12830_x1574886386}[：]{style="font-family:宋体"}[表示对指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，表示一或多个]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，表示方式为]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[ = { *vlan-id* \[ **to** *vlan-id* \] }&\<1-10\>]{lang="EN-US"}[，其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。如果未指定本参数，则表示对所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}
+**[vlan ***vlan-list*]：表示对指定VLAN进行配置。*vlan-list*为VLAN列表，表示一或多个VLAN，表示方式为*vlan-list* = { *vlan-id* [ **to** *vlan-id*  }&\<1-10\>]，其中，*vlan-id*为VLAN的编号，取值范围为1～4094。&\<1-10\>表示前面的参数最多可以输入10次。如果未指定本参数，则表示对所有VLAN进行配置。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1676862364}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令只对动态组播组有效，对静态组播组无效。]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1575552003}
+·本命令只对动态组播组有效，对静态组播组无效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令与]{lang="EN-US" style="font-family:宋体"}**[overflow-replace]{lang="EN-US"}**]{#struct_0_x1820_12830_x1397177516}[命令的功能相同，只是作用范围不同：]{lang="EN-US" style="font-family:
-宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下的全局配置对所有]{lang="EN-US" style="font-family:宋体"}[端口]{style="font-family:
-宋体"}[都有效，]{lang="EN-US" style="font-family:宋体"}[端口]{style="font-family:宋体"}[视图下的配置只对当前]{lang="EN-US" style="font-family:宋体"}[端口]{style="font-family:宋体"}[有效，后者的配置优先级较高]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}
+·本命令与**overflow-replace**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下的全局配置对所有端口都有效，端口视图下的配置只对当前端口有效，后者的配置优先级较高。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_583785373}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_88996770}[将端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[在]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内使能组播组替换功能。]{style="font-family:宋体"}
+\# 将端口GigabitEthernet1/0/1在VLAN 2内使能组播组替换功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x750469550}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] igmp-snooping overflow-replace vlan 2]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 igmp-snooping overflow-replace vlan 2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1262083382}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[overflow-replace]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_1972634733}
-:::
-
-::: {#728833438 .myid}
-[]{#_Toc404789402}[]{#struct_0_x1820_12830_1091660597}[]{#_Toc354920951}[]{#_Toc293908695}
+·**overflow-replace** (IGMP-Snooping view)
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping querier**
 
 ------------------------------------------------------------------------
 
-[**[igmp-snooping querier]{lang="EN-US"}**]{#struct_0_x1820_12830_1092643637}[命令用来使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[查询器。]{style="font-family:宋体"}
+**[igmp-snooping querier**]命令用来使能IGMP Snooping查询器。
 
-[**[undo ]{lang="EN-US"}[igmp-snooping querier]{lang="EN-US"}**]{#struct_0_x1820_12830_x702612841}[命令用来关闭]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[查询器。]{style="font-family:宋体"}
+**[undo igmp-snooping querier**]命令用来关闭IGMP Snooping查询器。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1092578101}
+【命令】
 
-[**[igmp-snooping querier]{lang="EN-US"}**]{#struct_0_x1820_12830_1253028658}
+**[igmp-snooping querier**]
 
-[**[undo igmp-snooping querier]{lang="EN-US"}**]{#struct_0_x1820_12830_1845283308}
+**[undo igmp-snooping querier**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1092119348}
+【缺省情况】
 
-[[IGMP Snooping]{lang="EN-US"}]{#struct_0_x1820_12830_x1081131233}[查询器处于关闭状态。]{style="font-family:宋体"}
+IGMP Snooping查询器处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1068833444}
+【视图】
 
-[[VLAN]{lang="SV"}]{#struct_0_x1820_12830_1092053812}[视图]{style="font-family:宋体"}[/VSI]{lang="EN-US"}[视图]{style="font-family:宋体"}
+VLAN视图/VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1851065637}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1091988276}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x189287759}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_843424276}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在配置本命令之前，必须先在]{lang="EN-US" style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}]{#struct_0_x1820_12830_1091922740}[内使能]{lang="EN-US" style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·在配置本命令之前，必须先在VLAN/VSI内使能IGMP Snooping。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果在组播]{style="font-family:宋体"}]{#struct_0_x1820_12830_208629332}[VLAN]{lang="EN-US"}[的子]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内配置了本命令，只有当该子]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[被从组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[中删除后，]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[查询器才会生效。]{style="font-family:宋体"}
+·如果在组播VLAN的子VLAN内配置了本命令，只有当该子VLAN被从组播VLAN中删除后，IGMP Snooping查询器才会生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1091857204}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x1392391104}[在]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[查询器。]{style="font-family:宋体"}
+\# 在VLAN 2内使能IGMP Snooping，并使能IGMP Snooping查询器。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_1091791668}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vlan 2]{lang="EN-US"}
+Sysname vlan 2
 
-[\[Sysname-vlan2\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping enable
 
-[\[Sysname-vlan2\] igmp-snooping querier]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping querier
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x2010846869}[在]{style="font-family:宋体"}[VSI aaa]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[查询器。]{style="font-family:宋体"}
+\# 在VSI aaa内使能IGMP Snooping，并使能IGMP Snooping查询器。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x2010912405}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vsi aaa]{lang="EN-US"}
+Sysname vsi aaa
 
-[\[Sysname-vsi-aaa\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vsi-aaa igmp-snooping enable
 
-[\[Sysname-vsi-aaa\] igmp-snooping querier]{lang="EN-US"}
+Sysname-vsi-aaa igmp-snooping querier
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_966714295}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[enable]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_x2011371162}
+·**enable** (IGMP-Snooping view)
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping enable]{lang="EN-US"}**]{#struct_0_x1820_12830_125721325}
+·**igmp-snooping enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[subvlan]{lang="EN-US"}**[ (multicast-VLAN view)]{lang="EN-US"}]{#struct_0_x1820_12830_1091726132}[（]{style="font-family:宋体"}[IP]{lang="EN-US"}[组播命令参考]{style="font-family:宋体"}[/]{lang="EN-US"}[组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[）]{style="font-family:宋体"}
-:::
-
-::: {#1311972975 .myid}
-[]{#_Toc404789403}[]{#struct_0_x1820_12830_x1378270843}[]{#_Toc354920952}
+·**subvlan** (multicast-VLAN view)（IP组播命令参考/组播VLAN）
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping query-interval**
 
 ------------------------------------------------------------------------
 
-[**[igmp-snooping query-interval]{lang="EN-US"}**]{#struct_0_x1820_12830_x1201420993}[命令用来在]{style="font-family:
-宋体"}[VLAN/VSI]{lang="EN-US"}[内配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[普遍组查询报文的发送间隔。]{style="font-family:宋体"}
+**[igmp-snooping query-interval**]命令用来在VLAN/VSI内配置IGMP普遍组查询报文的发送间隔。
 
-[**[undo igmp-snooping query-interval]{lang="EN-US"}**]{#struct_0_x1820_12830_1091660596}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo igmp-snooping query-interval**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_980310130}
+【命令】
 
-[**[igmp-snooping query-interval]{lang="EN-US"}**[ *interval*]{lang="EN-US"}]{#struct_0_x1820_12830_1092643636}
+**[igmp-snooping query-interval** *interval*]
 
-[**[undo igmp-snooping query-interval]{lang="EN-US"}**]{#struct_0_x1820_12830_x702547305}
+**[undo igmp-snooping query-interval**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1393708819}
+【缺省情况】
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_1092578100}[普遍组查询报文的发送间隔为]{style="font-family:宋体"}[125]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+IGMP普遍组查询报文的发送间隔为125秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1252963122}
+【视图】
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_1092119347}[视图]{style="font-family:宋体"}[/VSI]{lang="EN-US"}[视图]{style="font-family:宋体"}
+VLAN视图/VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1080672481}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x255504137}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1092053811}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1851131173}
+【参数】
 
-[*[interval]{lang="EN-US"}*]{#struct_0_x1820_12830_1461770036}[：表示]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[普遍组查询报文的发送间隔，取值范围为]{style="font-family:宋体"}[2]{lang="EN-US"}[～]{style="font-family:宋体"}[300]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[interval*]：表示IGMP普遍组查询报文的发送间隔，取值范围为2～300，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1091988275}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在配置本命令之前，必须先在]{lang="EN-US" style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}]{#struct_0_x1820_12830_x189222223}[内使能]{lang="EN-US" style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·在配置本命令之前，必须先在VLAN/VSI内使能IGMP Snooping。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[为避免误删组播组成员，请确保]{style="font-family:宋体"}]{#struct_0_x1820_12830_1091922739}[IGMP]{lang="EN-US"}[普遍组查询报文的发送间隔大于]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[普遍组查询的最大响应时间，否则配置虽能生效但系统会给出提示。]{style="font-family:宋体"}
+·为避免误删组播组成员，请确保IGMP普遍组查询报文的发送间隔大于IGMP普遍组查询的最大响应时间，否则配置虽能生效但系统会给出提示。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_208039503}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x1544965802}[在]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[普遍组查询报文的发送间隔为]{style="font-family:宋体"}[20]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 在VLAN 2内使能IGMP Snooping，并配置IGMP普遍组查询报文的发送间隔为20秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_1091857203}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vlan 2]{lang="EN-US"}
+Sysname vlan 2
 
-[\[Sysname-vlan2\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping enable
 
-[\[Sysname-vlan2\] igmp-snooping query-interval 20]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping query-interval 20
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x2010846874}[在]{style="font-family:宋体"}[VSI aaa]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[普遍组查询报文的发送间隔为]{style="font-family:宋体"}[20]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 在VSI aaa内使能IGMP Snooping，并配置IGMP普遍组查询报文的发送间隔为20秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x2010912410}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vsi aaa]{lang="EN-US"}
+Sysname vsi aaa
 
-[\[Sysname-vsi-aaa\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vsi-aaa igmp-snooping enable
 
-[\[Sysname-vsi-aaa\] igmp-snooping query-interval 20]{lang="EN-US"}
+Sysname-vsi-aaa igmp-snooping query-interval 20
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1392456640}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[enable]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_x2011371163}
+·**enable** (IGMP-Snooping view)
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping enable]{lang="EN-US"}**]{#struct_0_x1820_12830_1091791667}
+·**igmp-snooping enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping max-response-time]{lang="EN-US"}**]{#struct_0_x1820_12830_966124471}
+·**igmp-snooping max-response-time**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping querier]{lang="EN-US"}**]{#struct_0_x1820_12830_x1426504702}
+·**igmp-snooping querier**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[max-response-time]{lang="EN-US"}**]{#struct_0_x1820_12830_1091726131}
-:::
-
-::: {#-460834078 .myid}
-[]{#_Toc404789404}[]{#struct_0_x1820_12830_x1378467451}[]{#_Toc354920953}[]{#_Toc293908697}
+·**max-response-time**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping report source-ip**
 
 ------------------------------------------------------------------------
 
-[**[igmp-snooping report source-ip]{lang="EN-US"}**]{#struct_0_x1820_12830_1091660595}[命令用来配置]{style="font-family:
-宋体"}[IGMP]{lang="EN-US"}[成员关系报告报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[igmp-snooping report source-ip**]命令用来配置IGMP成员关系报告报文的源IP地址。
 
-[**[undo igmp-snooping report source-ip]{lang="EN-US"}**]{#struct_0_x1820_12830_980113522}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo igmp-snooping report source-ip**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1876855000}
+【命令】
 
-[**[igmp-snooping report source-ip]{lang="EN-US"}**[ *ip-address*]{lang="EN-US"}]{#struct_0_x1820_12830_1092643635}
+**[igmp-snooping report source-ip** *ip-address*]
 
-[**[undo igmp-snooping report source-ip]{lang="EN-US"}**]{#struct_0_x1820_12830_x702481769}
+**[undo igmp-snooping report source-ip**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1092578099}
+【缺省情况】
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_x1085099205}[成员关系报告报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为当前]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址；若当前]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口没有]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，则采用]{style="font-family:宋体"}[0.0.0.0]{lang="EN-US"}[。]{style="font-family:宋体"}
+IGMP成员关系报告报文的源IP地址为当前VLAN接口的IP地址；若当前VLAN接口没有IP地址，则采用0.0.0.0。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x601051340}
+【视图】
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_x1636764003}[视图]{style="font-family:宋体"}
+VLAN视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x896652908}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1636829539}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x96943747}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x2053353082}
+【参数】
 
-[*[ip-address]{lang="EN-US"}*]{#struct_0_x1820_12830_x1636895075}[：表示]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[成员关系报告报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[ip-address*]：表示IGMP成员关系报告报文的源IP地址。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1610374153}
+【使用指导】
 
-[[在配置本命令之前，必须先在]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_710727606}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{style="font-family:宋体"}
+在配置本命令之前，必须先在VLAN内使能IGMP Snooping。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1636960611}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x1536933792}[在]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[成员关系报告报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[10.1.1.1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在VLAN 2内使能IGMP Snooping，并配置IGMP成员关系报告报文的源IP地址为10.1.1.1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x1637026147}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vlan 2]{lang="EN-US"}
+Sysname vlan 2
 
-[\[Sysname-vlan2\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping enable
 
-[\[Sysname-vlan2\] igmp-snooping report source-ip 10.1.1.1]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping report source-ip 10.1.1.1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1936293118}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[enable]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_x2011698843}
+·**enable** (IGMP-Snooping view)
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping enable]{lang="EN-US"}**]{#struct_0_x1820_12830_x1637091683}
-:::
-
-::: {#265301931 .myid}
-[]{#_Toc404789405}[]{#struct_0_x1820_12830_458098478}[]{#_Toc293908698}
+·**igmp-snooping enable**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping router-aging-time**
 
 ------------------------------------------------------------------------
 
-[**[igmp-snooping router-aging-time]{lang="EN-US"}**]{#struct_0_x1820_12830_715338633}[命令用来在]{style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}[内配置动态路由器端口的老化时间。]{style="font-family:宋体"}
+**[igmp-snooping router-aging-time**]命令用来在VLAN/VSI内配置动态路由器端口的老化时间。
 
-[**[undo igmp-snooping router-aging-time]{lang="EN-US"}**]{#struct_0_x1820_12830_x899002489}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo igmp-snooping router-aging-time**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x228377597}
+【命令】
 
-[**[igmp-snooping router-aging-time]{lang="EN-US"}**[ *interval*]{lang="EN-US"}]{#struct_0_x1820_12830_x729904027}
+**[igmp-snooping router-aging-time** *interval*]
 
-[**[undo igmp-snooping router-aging-time]{lang="EN-US"}**]{#struct_0_x1820_12830_89193378}
+**[undo igmp-snooping router-aging-time**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1781306675}
+【缺省情况】
 
-[[动态路由器端口的老化时间为]{style="font-family:宋体"}[260]{lang="EN-US"}]{#struct_0_x1820_12830_2021618934}[秒。]{style="font-family:宋体"}
+动态路由器端口的老化时间为260秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_737135736}
+【视图】
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_x850435543}[视图]{style="font-family:宋体"}[/VSI]{lang="EN-US"}[视图]{style="font-family:宋体"}
+VLAN视图/VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1505733510}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_268938988}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x942392808}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1064970167}
+【参数】
 
-[*[interval]{lang="EN-US"}*]{#struct_0_x1820_12830_89127842}[：表示动态路由器端口的老化时间，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1000]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[interval*]：表示动态路由器端口的老化时间，取值范围为1～1000，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x953825126}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在配置本命令之前，必须先在]{lang="EN-US" style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}]{#struct_0_x1820_12830_x1562661880}[内使能]{lang="EN-US" style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·在配置本命令之前，必须先在VLAN/VSI内使能IGMP Snooping。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令与]{lang="EN-US" style="font-family:宋体"}**[router-aging-time]{lang="EN-US"}**]{#struct_0_x1820_12830_x1870919511}[命令的功能相同，只是作用范围不同：]{lang="EN-US" style="font-family:
-宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下的全局配置对所有]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[和]{style="font-family:宋体"}[VSI]{lang="EN-US"}[都有效，]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[视图]{lang="EN-US" style="font-family:宋体"}[/VSI]{lang="EN-US"}[视图]{style="font-family:宋体"}[下的配置只对当前]{lang="EN-US" style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}[有效，后者的配置优先级较高]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}
+·本命令与**router-aging-time**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下的全局配置对所有VLAN和VSI都有效，VLAN视图/VSI视图下的配置只对当前VLAN/VSI有效，后者的配置优先级较高。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x825361011}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x589793901}[在]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并配置动态路由器端口的老化时间为]{style="font-family:宋体"}[100]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 在VLAN 2内使能IGMP Snooping，并配置动态路由器端口的老化时间为100秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_139120753}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vlan 2]{lang="EN-US"}
+Sysname vlan 2
 
-[\[Sysname-vlan2\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping enable
 
-[\[Sysname-vlan2\] igmp-snooping router-aging-time 100]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping router-aging-time 100
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_1880835899}[在]{style="font-family:宋体"}[VSI aaa]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并配置动态路由器端口的老化时间为]{style="font-family:宋体"}[100]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 在VSI aaa内使能IGMP Snooping，并配置动态路由器端口的老化时间为100秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_1880770363}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vsi aaa]{lang="EN-US"}
+Sysname vsi aaa
 
-[\[Sysname-vsi-aaa\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vsi-aaa igmp-snooping enable
 
-[\[Sysname-vsi-aaa\] igmp-snooping router-aging-time 100]{lang="EN-US"}
+Sysname-vsi-aaa igmp-snooping router-aging-time 100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_89324450}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[enable]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_1880311610}
+·**enable** (IGMP-Snooping view)
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping enable]{lang="EN-US"}**]{#struct_0_x1820_12830_x409420004}
+·**igmp-snooping enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[router-aging-time]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_1349906786}
-:::
-
-::: {#792071963 .myid}
-[]{#_Toc404789406}[]{#struct_0_x1820_12830_x1637222755}[]{#_Toc354920955}[]{#_Toc293908699}
+·**router-aging-time** (IGMP-Snooping view)
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping router-port-deny**
 
 ------------------------------------------------------------------------
 
-[**[igmp-snooping router-port-deny]{lang="EN-US"}**]{#struct_0_x1820_12830_x1636239715}[命令用来禁止端口成为动态路由器端口。]{style="font-family:
-宋体"}
+**[igmp-snooping router-port-deny**]命令用来禁止端口成为动态路由器端口。
 
-[**[undo igmp-snooping router-port-deny]{lang="EN-US"}**]{#struct_0_x1820_12830_1826925528}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo igmp-snooping router-port-deny**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1636305251}
+【命令】
 
-[**[igmp-snooping router-port-deny]{lang="EN-US"}**[ \[ **vlan** *vlan-list* \]]{lang="EN-US"}]{#struct_0_x1820_12830_x1049536934}
+**[igmp-snooping router-port-deny** [ **vlan** *vlan-list* ]]
 
-[**[undo igmp-snooping router-port-deny]{lang="EN-US"}**[ \[ **vlan** *vlan-list* \]]{lang="EN-US"}]{#struct_0_x1820_12830_495315802}
+**[undo igmp-snooping router-port-deny** [ **vlan** *vlan-list* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1636764004}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1820_12830_x1299937435}[二层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[二层]{style="font-family:宋体"}[RPR]{lang="EN-US"}[逻辑接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1636829540}
+【缺省情况】
 
-[[允许端口成为动态路由器端口。]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1306469648}
+允许端口成为动态路由器端口。
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_540166922}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1636895076}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_44290212}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x237332453}
+【参数】
 
-[**[vlan ]{lang="EN-US"}***[vlan-list]{lang="EN-US"}*]{#struct_0_x1820_12830_x1636960612}[：]{style="font-family:宋体"}[表示对指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，表示多个]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。其表示方式为]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[ = { *vlan-id* \[ **to** *vlan-id* \] }&\<1-10\>]{lang="EN-US"}[，其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。如果指定了本参数，只有当该端口属于指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[时，本配置才生效；如果未指定本参数，则本配置将对该端口所属的所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[和]{style="font-family:宋体"}[VSI]{lang="EN-US"}[都生效。]{style="font-family:宋体"}
+**[vlan ***vlan-list*]：表示对指定VLAN进行配置。*vlan-list*为VLAN列表，表示多个VLAN。其表示方式为*vlan-list* = { *vlan-id* [ **to** *vlan-id*  }&\<1-10\>]，其中，*vlan-id*为VLAN的编号，取值范围为1～4094。&\<1-10\>表示前面的参数最多可以输入10次。如果指定了本参数，只有当该端口属于指定VLAN时，本配置才生效；如果未指定本参数，则本配置将对该端口所属的所有VLAN和VSI都生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1176778231}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x1637091684}[禁止端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[在]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内成为动态路由器端口。]{style="font-family:宋体"}
+\# 禁止端口GigabitEthernet1/0/1在VLAN 2内成为动态路由器端口。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x566368435}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] igmp-snooping router-port-deny vlan 2]{lang="EN-US"}
-:::
-
-::::: {#1696259932 .myid}
-[]{#_Toc293908702}[]{#_Toc404789407}[]{#struct_0_x1820_12830_x1191213291}
+Sysname-GigabitEthernet1/0/1 igmp-snooping router-port-deny vlan 2
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping source-deny**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IGMP%20Snooping命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1820_12830_x1063104301}
-:::
+![说明](IGMP%20Snooping命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1820_12830_980322155}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[igmp-snoopingsource-deny**]命令用来使能当前端口的组播数据报文源端口过滤功能。
 
-[**[igmp-snooping]{lang="DA"}[ ]{lang="DA"}[source-deny]{lang="EN-US"}**]{#struct_0_x1820_12830_x2139441582}[命令用来使能当前端口的组播数据报文源端口过滤功能。]{style="font-family:宋体"}
+**[undo **]**igmp-snoopingsource-deny**命令用来关闭当前端口的组播数据报文源端口过滤功能。
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1820_12830_x1485316538}**[igmp-snooping]{lang="DA"}[ ]{lang="DA"}[source-deny]{lang="EN-US"}**[命令用来关闭当前端口的组播数据报文源端口过滤功能。]{style="font-family:
-宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_321275336}
+**[igmp-snoopingsource-deny**]
 
-[**[igmp-snooping]{lang="DA"}[ ]{lang="DA"}[source-deny]{lang="EN-US"}**]{#struct_0_x1820_12830_89258914}
+**[undo igmp-snooping source-deny**]
 
-[**[undo igmp-snooping source-deny]{lang="EN-US"}**]{#struct_0_x1820_12830_x702768753}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1377539679}
+组播数据报文源端口过滤功能处于关闭状态。
 
-[[组播数据报文源端口过滤功能处于关闭状态。]{style="font-family:宋体"}]{#struct_0_x1820_12830_1198988012}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x164253009}
+二层以太网接口视图
 
-[[二层以太网接口视图]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1484489101}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_665600347}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1733798331}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1463895666}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_89455522}
+本命令与**source-deny**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下可以对指定端口进行配置，端口视图下只能对当前端口进行配置，二者的配置优先级相同。
 
-[[本命令与]{style="font-family:宋体"}**[source-deny]{lang="EN-US"}**]{#struct_0_x1820_12830_x964932697}[命令的功能相同，只是作用范围不同：]{style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下可以对指定端口进行配置，端口视图下只能对当前端口进行配置，二者的配置优先级相同。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_980355816}
+\# 在端口GigabitEthernet1/0/1上使能组播数据报文源端口过滤功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x983964095}[在端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上使能组播数据报文源端口过滤功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_1372854212}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 igmp-snooping source-deny
 
-[\[Sysname-GigabitEthernet1/0/1\] igmp-snooping source-deny]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1758067094}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[source-deny]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_1633158365}
-:::::
-
-::: {#-1387648976 .myid}
-[]{#_Toc404789408}[]{#struct_0_x1820_12830_x1636239716}[]{#_Toc354920957}[]{#_Toc293908701}
+·**source-deny** (IGMP-Snooping view)
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping special-query source-ip**
 
 ------------------------------------------------------------------------
 
-[**[igmp-snooping special-query source-ip]{lang="EN-US"}**]{#struct_0_x1820_12830_x2064757241}[命令用来配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[特定组查询报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[igmp-snooping special-query source-ip**]命令用来配置IGMP特定组查询报文的源IP地址。
 
-[**[undo igmp-snooping special-query source-ip]{lang="EN-US"}**]{#struct_0_x1820_12830_1627188540}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo igmp-snooping special-query source-ip**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1636305252}
+【命令】
 
-[**[igmp-snooping special-query source-ip]{lang="EN-US"}**[ *ip-address*]{lang="EN-US"}]{#struct_0_x1820_12830_516547007}
+**[igmp-snooping special-query source-ip** *ip-address*]
 
-[**[undo igmp-snooping special-query source-ip]{lang="EN-US"}**]{#struct_0_x1820_12830_x1636764005}
+**[undo igmp-snooping special-query source-ip**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_266146506}
+【缺省情况】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在]{style="font-family:宋体"}]{#struct_0_x1820_12830_x267284777}[VLAN]{lang="EN-US"}[内，如果收到过]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[普遍组查询报文，则以其源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址作为]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[特定组查询报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址；否则，采用当前]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址；若当前]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口没有]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，则采用]{style="font-family:宋体"}[0.0.0.0]{lang="EN-US"}[。]{style="font-family:宋体"}
+·在VLAN内，如果收到过IGMP普遍组查询报文，则以其源IP地址作为IGMP特定组查询报文的源IP地址；否则，采用当前VLAN接口的IP地址；若当前VLAN接口没有IP地址，则采用0.0.0.0。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在]{style="font-family:宋体"}]{#struct_0_x1820_12830_1880311612}[VSI]{lang="EN-US"}[内，如果收到过]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[普遍组查询报文，则以其源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址作为]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[特定组查询报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址；否则，采用]{style="font-family:宋体"}[0.0.0.0]{lang="EN-US"}[。]{style="font-family:宋体"}
+·在VSI内，如果收到过IGMP普遍组查询报文，则以其源IP地址作为IGMP特定组查询报文的源IP地址；否则，采用0.0.0.0。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1636829541}
+【视图】
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_259614293}[视图]{style="font-family:宋体"}[/VSI]{lang="EN-US"}[视图]{style="font-family:宋体"}
+VLAN视图/VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1636895077}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1521793729}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_439926668}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1636960613}
+【参数】
 
-[*[ip-address]{lang="EN-US"}*]{#struct_0_x1820_12830_x374134378}[：表示]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[特定组查询报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[ip-address*]：表示IGMP特定组查询报文的源IP地址。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1637026149}
+【使用指导】
 
-[[在配置本命令之前，必须先在]{style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}]{#struct_0_x1820_12830_x1552105124}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{style="font-family:宋体"}
+在配置本命令之前，必须先在VLAN/VSI内使能IGMP Snooping。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1637091685}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x2132452376}[在]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[特定组查询报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[10.1.1.1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在VLAN 2内使能IGMP Snooping，并配置IGMP特定组查询报文的源IP地址为10.1.1.1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x1637157221}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vlan 2]{lang="EN-US"}
+Sysname vlan 2
 
-[\[Sysname-vlan2\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping enable
 
-[\[Sysname-vlan2\] igmp-snooping special-query source-ip 10.1.1.1]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping special-query source-ip 10.1.1.1
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_1879983932}[在]{style="font-family:宋体"}[VSI aaa]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[特定组查询报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[10.1.1.1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在VSI aaa内使能IGMP Snooping，并配置IGMP特定组查询报文的源IP地址为10.1.1.1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_1879918396}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vsi aaa]{lang="EN-US"}
+Sysname vsi aaa
 
-[\[Sysname-vsi-aaa\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vsi-aaa igmp-snooping enable
 
-[\[Sysname-vsi-aaa\] igmp-snooping special-query source-ip 10.1.1.1]{lang="EN-US"}
+Sysname-vsi-aaa igmp-snooping special-query source-ip 10.1.1.1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1095760572}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[enable]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_1879852860}
+·**enable** (IGMP-Snooping view)
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping enable]{lang="EN-US"}**]{#struct_0_x1820_12830_x1249486765}
-:::
-
-::: {#82628605 .myid}
-[]{#_Toc404789409}[]{#struct_0_x1820_12830_x1258047015}
+·**igmp-snooping enable**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping static-group**
 
 ------------------------------------------------------------------------
 
-[**[igmp-snooping]{lang="DA"}[ static-group]{lang="EN-US"}**]{#struct_0_x1820_12830_89389986}[命令用来配置]{style="font-family:宋体"}[静态成员端口，即配置端口静态加入组播组或组播源组。]{style="font-family:宋体"}
+**[igmp-snooping static-group**]命令用来配置静态成员端口，即配置端口静态加入组播组或组播源组。
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1820_12830_693676806}**[igmp-snooping]{lang="DA"}[ static-group]{lang="EN-US"}**[命令用来删除静态成员端口的配置]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo **]**igmp-snooping static-group**命令用来删除静态成员端口的配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1920244581}
+【命令】
 
-[**[igmp-snooping]{lang="DA"}[ static-group]{lang="EN-US"}**[ *group-address* \[ **source-ip** *source-address* \] **vlan** *vlan-id*]{lang="EN-US"}]{#struct_0_x1820_12830_x1300209234}
+**[igmp-snooping static-group** *group-address* [ **source-ip** *source-address*  **vlan** *vlan-id*]]
 
-[**[undo igmp-snooping static-group]{lang="EN-US"}**[ { *group-address* \[ **source-ip** *source-address* \] **vlan** *vlan-id* \| **all** }]{lang="EN-US"}]{#struct_0_x1820_12830_x2054322322}
+**[undo igmp-snooping static-group** { *group-address* [ **source-ip** *source-address*  **vlan** *vlan-id* \| **all** }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x104207249}
+【缺省情况】
 
-[[端口不是静态成员端口。]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1005760883}
+端口不是静态成员端口。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x270184287}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1820_12830_1695077472}[二层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[二层]{style="font-family:宋体"}[RPR]{lang="EN-US"}[逻辑接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_88931235}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1488524313}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1626190147}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1211546306}
+【参数】
 
-[*[group-address]{lang="EN-US"}*]{#struct_0_x1820_12830_974878223}[：表示静态加入的组播组地址，取值范围为]{style="font-family:宋体"}[224.0.1.0]{lang="EN-US"}[～]{style="font-family:宋体"}[239.255.255.255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[group-address*]：表示静态加入的组播组地址，取值范围为224.0.1.0～239.255.255.255。
 
-[**[source-ip ]{lang="EN-US"}***[source-address]{lang="EN-US"}*]{#struct_0_x1820_12830_x1877641117}[：表示静态加入的组播源地址。如果指定了本参数，表示加入组播源组；如果未指定本参数，则表示加入组播组。配置有本参数的静态成员端口，只在]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[版本]{style="font-family:宋体"}[3]{lang="EN-US"}[下生效。]{style="font-family:宋体"}
+**[source-ip ***source-address*]：表示静态加入的组播源地址。如果指定了本参数，表示加入组播源组；如果未指定本参数，则表示加入组播组。配置有本参数的静态成员端口，只在IGMP Snooping版本3下生效。
 
-[**[vlan]{lang="EN-US"}**[ *vlan-id*]{lang="EN-US"}]{#struct_0_x1820_12830_x1304301173}[：]{style="font-family:宋体"}[表示对指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vlan** *vlan-id*]：表示对指定VLAN进行配置。*vlan-id*为VLAN的编号，取值范围为1～4094。
 
-[**[all]{lang="EN-US"}**]{#struct_0_x1820_12830_1879852855}[：]{style="font-family:宋体"}[表示对所有组播组和组播源组进行配置。]{style="font-family:宋体"}
+**[all**]：表示对所有组播组和组播源组进行配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1311455292}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_1171219065}[将端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[配置为]{style="font-family:宋体"}[组播源组（]{style="font-family:宋体"}[1.1.1.1]{lang="EN-US"}[，]{style="font-family:宋体"}[225.0.0.1]{lang="EN-US"}[）在]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内的静态成员端口。]{style="font-family:宋体"}
+\# 将端口GigabitEthernet1/0/1配置为组播源组（1.1.1.1，225.0.0.1）在VLAN 2内的静态成员端口。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_1689459672}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vlan 2]{lang="EN-US"}
+Sysname vlan 2
 
-[\[Sysname-vlan2\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping enable
 
-[\[Sysname-vlan2\] igmp-snooping version 3]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping version 3
 
-[\[Sysname-vlan2\] quit]{lang="EN-US"}
+Sysname-vlan2 quit
 
-[\[Sysname\] interface Gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface Gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] igmp-snooping static-group 225.0.0.1 source-ip 1.1.1.1 vlan 2]{lang="EN-US"}
-:::
-
-::: {#-1703652813 .myid}
-[]{#_Toc404789410}[]{#struct_0_x1820_12830_1467827887}[]{#_Toc293908703}[]{#_Toc123030607}[]{#_Toc121110291}
+Sysname-GigabitEthernet1/0/1 igmp-snooping static-group 225.0.0.1 source-ip 1.1.1.1 vlan 2
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping static-router-port**
 
 ------------------------------------------------------------------------
 
-[**[igmp-snooping]{lang="DA"}[ static-router-port]{lang="EN-US"}**]{#struct_0_x1820_12830_x938376439}[命令用来配置静态路由器端口。]{style="font-family:宋体"}
+**[igmp-snooping static-router-port**]命令用来配置静态路由器端口。
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1820_12830_89062307}**[igmp-snooping]{lang="DA"}[ static-router-port]{lang="EN-US"}**[命令用来删除静态路由器端口的配置。]{style="font-family:宋体"}
+**[undo **]**igmp-snooping static-router-port**命令用来删除静态路由器端口的配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x944958216}
+【命令】
 
-[**[igmp-snooping]{lang="DA"}[ static-router-port vlan ]{lang="EN-US"}***[vlan-id]{lang="EN-US"}*]{#struct_0_x1820_12830_x319637876}
+**[igmp-snooping static-router-port vlan ***vlan-id*]
 
-[**[undo igmp-snooping static-router-port]{lang="EN-US"}**[ { **all** \| **vlan** *vlan-id* }]{lang="EN-US"}]{#struct_0_x1820_12830_x1751103621}
+**[undo igmp-snooping static-router-port**[ { **all** \| **vlan** *vlan-id* }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x2024353081}
+【缺省情况】
 
-[[端口不是静态路由器端口。]{style="font-family:宋体"}]{#struct_0_x1820_12830_110911957}
+端口不是静态路由器端口。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1406680385}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1820_12830_x1625480272}[二层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[二层]{style="font-family:宋体"}[RPR]{lang="EN-US"}[逻辑接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1937940870}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x422964233}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_88996771}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1205845586}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_x1820_12830_x191862287}[：表示对所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}
+**[all**]：表示对所有VLAN进行配置。
 
-[**[vlan]{lang="EN-US"}**[ *vlan-id*]{lang="EN-US"}]{#struct_0_x1820_12830_x1192346245}[：]{style="font-family:宋体"}[表示对指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vlan** *vlan-id*]：表示对指定VLAN进行配置。*vlan-id*为VLAN的编号，取值范围为1～4094。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x734327427}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_1537574014}[将端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[配置为]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内的静态路由器端口。]{style="font-family:宋体"}
+\# 将端口GigabitEthernet1/0/1配置为VLAN 2内的静态路由器端口。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x750435830}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] igmp-snooping static-router-port vlan 2]{lang="EN-US"}
-:::
-
-::: {#381858590 .myid}
-[]{#_Toc404789411}[]{#struct_0_x1820_12830_1551281028}[]{#_Toc293908704}
+Sysname-GigabitEthernet1/0/1 igmp-snooping static-router-port vlan 2
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- igmp-snooping version**
 
 ------------------------------------------------------------------------
 
-[**[igmp-snooping version]{lang="EN-US"}**]{#struct_0_x1820_12830_89193379}[命令用来在]{style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}[内配置]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[的版本。]{style="font-family:宋体"}
+**[igmp-snooping version**]命令用来在VLAN/VSI内配置IGMP Snooping的版本。
 
-[**[undo igmp-snooping version]{lang="EN-US"}**]{#struct_0_x1820_12830_175008461}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo igmp-snooping version**]命令用来恢复缺省情况。
 
-[[【命]{style="font-family:黑体"}]{#struct_0_x1820_12830_392385189}[令]{style="font-family:黑体"}[】]{style="font-family:黑体"}
+【命令】
 
-[**[igmp-snooping version ]{lang="EN-US"}***[version-number]{lang="EN-US"}*]{#struct_0_x1820_12830_1701551752}
+**[igmp-snooping version ***version-number*]
 
-[**[undo igmp-snooping version]{lang="EN-US"}**]{#struct_0_x1820_12830_x404580388}
+**[undo igmp-snooping version**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1636823371}
+【缺省情况】
 
-[[VLAN/VSI]{lang="EN-US"}]{#struct_0_x1820_12830_2010482868}[内]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[的版本为]{style="font-family:宋体"}[2]{lang="EN-US"}[。]{style="font-family:宋体"}
+VLAN/VSI内IGMP Snooping的版本为2。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1950412816}
+【视图】
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_x783700184}[视图]{style="font-family:宋体"}[/VSI]{lang="EN-US"}[视图]{style="font-family:宋体"}
+VLAN视图/VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_89127843}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1384827034}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1783944252}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_62343353}
+【参数】
 
-[*[version-number]{lang="EN-US"}*]{#struct_0_x1820_12830_1801960815}[：表示]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[的版本号，取值范围为]{style="font-family:宋体"}[2]{lang="EN-US"}[～]{style="font-family:宋体"}[3]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[version-number*]：表示IGMP Snooping的版本号，取值范围为2～3。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x806542652}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在配置本命令之前，必须先在]{lang="EN-US" style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}]{#struct_0_x1820_12830_730859538}[内使能]{lang="EN-US" style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·在配置本命令之前，必须先在VLAN/VSI内使能IGMP Snooping。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于基于]{style="font-family:宋体"}]{#struct_0_x1820_12830_x849030497}[VLAN]{lang="EN-US"}[的配置，]{style="font-family:宋体"}[本命令与]{lang="EN-US" style="font-family:宋体"}**[version]{lang="EN-US"}**[命令的功能相同，只是作用范围不同：]{lang="EN-US" style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下可以对指定]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置，]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[视图下只能对当前]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置，二者的配置优先级相同]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}
+·对于基于VLAN的配置，本命令与**version**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下可以对指定VLAN进行配置，VLAN视图下只能对当前VLAN进行配置，二者的配置优先级相同。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1098297136}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_1515868679}[在]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并配置该]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[版本为]{style="font-family:宋体"}[3]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在VLAN 2内使能IGMP Snooping，并配置该VLAN内的IGMP Snooping版本为3。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_89324451}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vlan 2]{lang="EN-US"}
+Sysname vlan 2
 
-[\[Sysname-vlan2\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping enable
 
-[\[Sysname-vlan2\] igmp-snooping version 3]{lang="EN-US"}
+Sysname-vlan2 igmp-snooping version 3
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x848571742}[在]{style="font-family:宋体"}[VSI aaa]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并配置该]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[版本为]{style="font-family:宋体"}[3]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在VSI aaa内使能IGMP Snooping，并配置该VSI内的IGMP Snooping版本为3。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x848637278}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vsi aaa]{lang="EN-US"}
+Sysname vsi aaa
 
-[\[Sysname-vsi-aaa\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vsi-aaa igmp-snooping enable
 
-[\[Sysname-vsi-aaa\] igmp-snooping version 3]{lang="EN-US"}
+Sysname-vsi-aaa igmp-snooping version 3
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1929232156}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[enable]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_x848702814}
+·**enable** (IGMP-Snooping view)
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping enable]{lang="EN-US"}**]{#struct_0_x1820_12830_473963867}
+·**igmp-snooping enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[version]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_x848833886}
-:::
-
-::: {#-2124547157 .myid}
-[]{#_Toc404789412}[]{#struct_0_x1820_12830_1987880374}[]{#_Toc293908705}
+·**version** (IGMP-Snooping view)
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- last-member-query-interval (IGMP-Snooping view)**
 
 ------------------------------------------------------------------------
 
-[**[last-member-query-interval]{lang="EN-US"}**]{#struct_0_x1820_12830_1178367599}[命令用来全局配置]{style="font-family:
-宋体"}[IGMP]{lang="EN-US"}[特定组查询报文的发送间隔。]{style="font-family:宋体"}
+**[last-member-query-interval**]命令用来全局配置IGMP特定组查询报文的发送间隔。
 
-[**[undo last-member-query-interval]{lang="EN-US"}**]{#struct_0_x1820_12830_x863077334}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo last-member-query-interval**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x648654690}
+【命令】
 
-[**[last-member-query-interval ]{lang="EN-US"}***[interval]{lang="EN-US"}*]{#struct_0_x1820_12830_692076332}
+**[last-member-query-interval ***interval*]
 
-[**[undo last-member-query-interval]{lang="EN-US"}**]{#struct_0_x1820_12830_89258915}
+**[undo last-member-query-interval**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1253546383}
+【缺省情况】
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_x820090668}[特定组查询报文的发送间隔为]{style="font-family:宋体"}[1]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+IGMP特定组查询报文的发送间隔为1秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1456209806}
+【视图】
 
-[[IGMP-Snooping]{lang="EN-US"}]{#struct_0_x1820_12830_x432465382}[视图]{style="font-family:宋体"}
+IGMP-Snooping视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1870554220}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1395588795}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1580027077}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_123069437}
+【参数】
 
-[*[interval]{lang="EN-US"}*]{#struct_0_x1820_12830_89455523}[：表示]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[特定组查询报文的发送间隔，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[5]{lang="EN-US"}[，单位为秒。]{style="font-family:
-宋体"}
+*[interval*]：表示IGMP特定组查询报文的发送间隔，取值范围为1～5，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_991382439}
+【使用指导】
 
-[[本命令与]{style="font-family:宋体"}**[igmp-snooping last-member-query-interval]{lang="EN-US"}**]{#struct_0_x1820_12830_1708062232}[命令的功能相同，只是作用范围不同：]{style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下的全局配置对所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[和]{style="font-family:宋体"}[VSI]{lang="EN-US"}[都有效，]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[视图]{style="font-family:宋体"}[/VSI]{lang="EN-US"}[视图下的配置只对当前]{style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}[有效，后者的配置优先级较高。]{style="font-family:宋体"}
+本命令与**igmp-snooping last-member-query-interval**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下的全局配置对所有VLAN和VSI都有效，VLAN视图/VSI视图下的配置只对当前VLAN/VSI有效，后者的配置优先级较高。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1346553162}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_1978518472}[全局配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[特定组查询报文的发送间隔为]{style="font-family:宋体"}[3]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 全局配置IGMP特定组查询报文的发送间隔为3秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_479891335}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] last-member-query-interval 3]{lang="EN-US"}
+Sysname-igmp-snooping last-member-query-interval 3
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_2135483532}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping]{lang="EN-US"}**[ **last-member-query-interval**]{lang="EN-US"}]{#struct_0_x1820_12830_x1571521092}
-:::
-
-::: {#-204830081 .myid}
-[]{#_Toc404789413}[]{#struct_0_x1820_12830_89389987}[]{#_Toc293908706}
+·**igmp-snooping** **last-member-query-interval**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- max-response-time (IGMP-Snooping view)**
 
 ------------------------------------------------------------------------
 
-[**[max-response-time]{lang="EN-US"}**]{#struct_0_x1820_12830_x1262638330}[命令用来全局配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[普遍组查询的最大响应时间。]{style="font-family:宋体"}
+**[max-response-time**]命令用来全局配置IGMP普遍组查询的最大响应时间。
 
-[**[undo max-response-time]{lang="EN-US"}**]{#struct_0_x1820_12830_1559912432}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo max-response-time**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x49661260}
+【命令】
 
-[**[max-response-time]{lang="EN-US"}**[ *interval*]{lang="EN-US"}]{#struct_0_x1820_12830_x481149647}
+**[max-response-time** *interval*]
 
-[**[undo max-response-time]{lang="EN-US"}**]{#struct_0_x1820_12830_211358758}
+**[undo max-response-time**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1559990950}
+【缺省情况】
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_1984759008}[普遍组查询的最大响应时间为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+IGMP普遍组查询的最大响应时间为10秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_902645460}
+【视图】
 
-[[IGMP-Snooping]{lang="EN-US"}]{#struct_0_x1820_12830_88931232}[视图]{style="font-family:宋体"}
+IGMP-Snooping视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x296883225}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_446875866}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1772053928}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1444309143}
+【参数】
 
-[*[interval]{lang="EN-US"}*]{#struct_0_x1820_12830_x1971572583}[：表示]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[普遍组查询的最大响应时间，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[25]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[interval*]：表示IGMP普遍组查询的最大响应时间，取值范围为1～25，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1370637719}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[为避免误删组播组成员，请确保]{style="font-family:宋体"}]{#struct_0_x1820_12830_x1636239718}[IGMP]{lang="EN-US"}[普遍组查询的最大响应时间小于]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[普遍组查询报文的发送间隔，否则配置虽能生效但系统会给出提示。]{style="font-family:宋体"}
+·为避免误删组播组成员，请确保IGMP普遍组查询的最大响应时间小于IGMP普遍组查询报文的发送间隔，否则配置虽能生效但系统会给出提示。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令与]{lang="EN-US" style="font-family:宋体"}**[igmp-snooping max-response-time]{lang="EN-US"}**]{#struct_0_x1820_12830_x848964964}[命令的功能相同，只是作用范围不同：]{lang="EN-US" style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下的全局配置对所有]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[和]{style="font-family:宋体"}[VSI]{lang="EN-US"}[都有效，]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[视图]{lang="EN-US" style="font-family:宋体"}[/VSI]{lang="EN-US"}[视图]{style="font-family:宋体"}[下的配置只对当前]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[/VSI]{lang="EN-US"}[有效，后者的配置优先级较高]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}
+·本命令与**igmp-snooping max-response-time**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下的全局配置对所有VLAN和VSI都有效，VLAN视图/VSI视图下的配置只对当前VLAN/VSI有效，后者的配置优先级较高。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_911485424}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x1281362395}[全局配置]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[普遍组查询的最大响应时间为]{style="font-family:宋体"}[5]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 全局配置IGMP普遍组查询的最大响应时间为5秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_88865696}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] max-response-time 5]{lang="EN-US"}
+Sysname-igmp-snooping max-response-time 5
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1649162300}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping max-response-time]{lang="EN-US"}**]{#struct_0_x1820_12830_1835948672}
+·**igmp-snooping max-response-time**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping query-interval]{lang="EN-US"}**]{#struct_0_x1820_12830_x1636305254}
-:::
-
-::: {#1208320838 .myid}
-[]{#_Toc404789414}[]{#struct_0_x1820_12830_x507201329}[]{#_Toc293908707}[]{#_Toc301367137}[]{#_Toc301427703}
+·**igmp-snooping query-interval**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- overflow-replace (IGMP-Snooping view)**
 
 ------------------------------------------------------------------------
 
-[**[overflow-replace]{lang="EN-US"}**]{#struct_0_x1820_12830_555115864}[命令用来全局使能组播组替换功能。]{style="font-family:宋体"}
+**[overflow-replace**]命令用来全局使能组播组替换功能。
 
-[**[undo overflow-replace]{lang="EN-US"}**]{#struct_0_x1820_12830_459847873}[命令用来全局关闭组播组替换功能。]{style="font-family:宋体"}
+**[undo overflow-replace**]命令用来全局关闭组播组替换功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_767008598}
+【命令】
 
-[**[overflow-replace]{lang="EN-US"}**[ \[ **vlan** *vlan-list* \]]{lang="EN-US"}]{#struct_0_x1820_12830_x131106471}
+**[overflow-replace** [ **vlan** *vlan-list* ]]
 
-[**[undo overflow-replace]{lang="EN-US"}**[ \[ **vlan** *vlan-list* \]]{lang="EN-US"}]{#struct_0_x1820_12830_89062304}
+**[undo overflow-replace** [ **vlan** *vlan-list* ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_629019896}
+【缺省情况】
 
-[[组播组替换功能处于关闭状态。]{style="font-family:宋体"}]{#struct_0_x1820_12830_x690186767}
+组播组替换功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_920194773}
+【视图】
 
-[[IGMP-Snooping]{lang="EN-US"}]{#struct_0_x1820_12830_1254727851}[视图]{style="font-family:宋体"}
+IGMP-Snooping视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1434252408}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1635123565}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1436717962}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x2090223889}
+【参数】
 
-[**[vlan ]{lang="EN-US"}***[vlan-list]{lang="EN-US"}*]{#struct_0_x1820_12830_88996768}[：]{style="font-family:
-宋体"}[表示对指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，表示一或多个]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，表示方式为]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[ = { *vlan-id* \[ **to** *vlan-id* \] }&\<1-10\>]{lang="EN-US"}[，其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。如果未指定本参数，则表示对所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}
+**[vlan ***vlan-list*]：表示对指定VLAN进行配置。*vlan-list*为VLAN列表，表示一或多个VLAN，表示方式为*vlan-list* = { *vlan-id* [ **to** *vlan-id*  }&\<1-10\>]，其中，*vlan-id*为VLAN的编号，取值范围为1～4094。&\<1-10\>表示前面的参数最多可以输入10次。如果未指定本参数，则表示对所有VLAN进行配置。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x787205395}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令只对动态组播组有效，对静态组播组无效。]{style="font-family:宋体"}]{#struct_0_x1820_12830_996444999}
+·本命令只对动态组播组有效，对静态组播组无效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令与]{lang="EN-US" style="font-family:宋体"}**[igmp-snooping overflow-replace]{lang="EN-US"}**]{#struct_0_x1820_12830_x1689698134}[命令的功能相同，只是作用范围不同：]{lang="EN-US" style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下的全局配置对所有]{lang="EN-US" style="font-family:宋体"}[端口]{style="font-family:
-宋体"}[都有效，]{lang="EN-US" style="font-family:宋体"}[端口]{style="font-family:宋体"}[视图下的配置只对当前]{lang="EN-US" style="font-family:宋体"}[端口]{style="font-family:宋体"}[有效，后者的配置优先级较高]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}
+·本命令与**igmp-snooping overflow-replace**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下的全局配置对所有端口都有效，端口视图下的配置只对当前端口有效，后者的配置优先级较高。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1173022610}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x1991958980}[全局使能]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[内的组播组替换功能。]{style="font-family:宋体"}
+\# 全局使能VLAN 2内的组播组替换功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x28015843}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] overflow-replace vlan 2]{lang="EN-US"}
+Sysname-igmp-snooping overflow-replace vlan 2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_735485838}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping overflow-replace]{lang="EN-US"}**]{#struct_0_x1820_12830_89193376}
-:::
-
-::: {#-1792376404 .myid}
-[]{#_Toc293908709}[]{#_Toc404789415}[]{#struct_0_x1820_12830_601975501}[]{#_Toc293908708}
+·**igmp-snooping overflow-replace**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- report-aggregation (IGMP-Snooping view)**
 
 ------------------------------------------------------------------------
 
-[**[report-aggregation]{lang="EN-US"}**]{#struct_0_x1820_12830_x1763949463}[命令用来使能]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[成员关系报告报文抑制功能。]{style="font-family:宋体"}
+**[report-aggregation**]命令用来使能IGMP成员关系报告报文抑制功能。
 
-[**[undo report-aggregation]{lang="EN-US"}**]{#struct_0_x1820_12830_x247949771}[命令用来关闭]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[成员关系报告报文抑制功能。]{style="font-family:宋体"}
+**[undo report-aggregation**]命令用来关闭IGMP成员关系报告报文抑制功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x74765535}
+【命令】
 
-[**[report-aggregation]{lang="EN-US"}**]{#struct_0_x1820_12830_1802548163}
+**[report-aggregation**]
 
-[**[undo report-aggregation]{lang="EN-US"}**]{#struct_0_x1820_12830_x1389049831}
+**[undo report-aggregation**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_64031488}
+【缺省情况】
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1820_12830_x1077626849}[成员关系报告报文抑制功能处于使能状态。]{style="font-family:宋体"}
+IGMP成员关系报告报文抑制功能处于使能状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1232462634}
+【视图】
 
-[[IGMP-Snooping]{lang="EN-US"}]{#struct_0_x1820_12830_89127840}[视图]{style="font-family:宋体"}
+IGMP-Snooping视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1336162150}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x133519825}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1704989359}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_115424312}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x1045182592}[关闭]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[成员关系报告报文抑制功能。]{style="font-family:宋体"}
+\# 关闭IGMP成员关系报告报文抑制功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_406964103}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] undo report-aggregation]{lang="EN-US"}
-:::
-
-::: {#558726975 .myid}
-[]{#_Toc404789416}[]{#struct_0_x1820_12830_x784878547}
+Sysname-igmp-snooping undo report-aggregation
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- reset igmp-snooping group**
 
 ------------------------------------------------------------------------
 
-[**[reset ]{lang="EN-US"}**]{#struct_0_x1820_12830_89324448}**[igmp-snooping]{lang="DA"}[ group]{lang="EN-US"}**[命令用来清除动态]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[转发表的信息。]{style="font-family:宋体"}
+**[reset **]**igmp-snooping group**命令用来清除动态IGMP Snooping转发表的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_790115255}
+【命令】
 
-[**[reset igmp-snooping group]{lang="EN-US"}**[ { *group-address* \[ *source-address* \] \| **all** } \[ **vlan** *vlan-id* \| **vsi** *vsi-name* \]]{lang="EN-US"}]{#struct_0_x1820_12830_545399052}
+**[reset igmp-snooping group** { *group-address* [ *source-address*  \| **all** } [ **vlan** *vlan-id* \| **vsi** *vsi-name* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x632089852}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x1820_12830_685249000}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_979699464}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1627239923}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1675389705}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1603707275}
+【参数】
 
-[*[group-address]{lang="EN-US"}*]{#struct_0_x1820_12830_89258912}[：清除指定组播组的信息，取值范围为]{style="font-family:宋体"}[224.0.1.0]{lang="EN-US"}[～]{style="font-family:宋体"}[239.255.255.255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[group-address*]：清除指定组播组的信息，取值范围为224.0.1.0～239.255.255.255。
 
-[*[source-address]{lang="EN-US"}*]{#struct_0_x1820_12830_x1085105777}[：清除指定组播源的信息。如果未指定本参数，将清除所有组播源的信息。]{style="font-family:宋体"}
+*[source-address*]：清除指定组播源的信息。如果未指定本参数，将清除所有组播源的信息。
 
-[**[all]{lang="EN-US"}**]{#struct_0_x1820_12830_x579780442}[：清除所有组播组的信息。]{style="font-family:宋体"}
+**[all**]：清除所有组播组的信息。
 
-[**[vlan]{lang="EN-US"}***[ vlan-id]{lang="EN-US"}*]{#struct_0_x1820_12830_813302437}[：清除指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果未指定本参数，将清除所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[vlan*** vlan-id*]：清除指定VLAN内的信息。*vlan-id*为VLAN的编号，取值范围为1～4094。如果未指定本参数，将清除所有VLAN内的信息。
 
-[**[vsi]{lang="EN-US"}**[ *vsi-name*]{lang="EN-US"}]{#struct_0_x1820_12830_1517789795}[：]{style="font-family:宋体"}[清除指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果未指定本参数，将清除所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[vsi** *vsi-name*]：清除指定VSI内的信息。*vsi-name*为VSI的名称，为1～31个字符的字符串，区分大小写。如果未指定本参数，将清除所有VSI内的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_567761979}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_x1206121650}[清除所有动态]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[转发表的信息。]{style="font-family:宋体"}
+\# 清除所有动态IGMP Snooping转发表的信息。
 
-[[\<Sysname\> reset ]{lang="EN-US"}]{#struct_0_x1820_12830_x1530151549}[igmp-snooping]{lang="DA"}[ ]{lang="DA"}[group all]{lang="EN-US"}
+\<Sysname\> reset igmp-snoopinggroup all
 
-[]{#_Toc293908710}[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x93457721}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display igmp-snooping group]{lang="EN-US"}**]{#struct_0_x1820_12830_1315013796}
-:::
-
-::: {#433399686 .myid}
-[]{#_Toc404789417}[]{#struct_0_x1820_12830_89455520}
+·**display igmp-snooping group**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- reset igmp-snooping router-port**
 
 ------------------------------------------------------------------------
 
-[**[reset ]{lang="EN-US"}**]{#struct_0_x1820_12830_x1347269721}**[igmp-snooping]{lang="DA"}[ ]{lang="DA"}[router-port]{lang="EN-US"}**[命令用来清除动态路由器端口的信息。]{style="font-family:
-宋体"}
+**[reset **]**igmp-snoopingrouter-port**命令用来清除动态路由器端口的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x875160917}
+【命令】
 
-[**[reset igmp-snooping router-port]{lang="EN-US"}**[ { **all** \| **vlan** *vlan-id* \| **vsi** *vsi-name* }]{lang="EN-US"}]{#struct_0_x1820_12830_2142437885}
+**[reset igmp-snooping router-port**[ { **all** \| **vlan** *vlan-id* \| **vsi** *vsi-name* }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_952168650}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x1820_12830_x530618353}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x2007791695}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_1528016758}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_101403310}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_89389984}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_x1820_12830_1076013830}[：清除所有动态路由器端口的信息。]{style="font-family:宋体"}
+**[all**]：清除所有动态路由器端口的信息。
 
-[**[vlan]{lang="EN-US"}***[ vlan-id]{lang="EN-US"}*]{#struct_0_x1820_12830_1912383907}[：清除指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果未指定本参数，将清除所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[vlan*** vlan-id*]：清除指定VLAN内的信息。*vlan-id*为VLAN的编号，取值范围为1～4094。如果未指定本参数，将清除所有VLAN内的信息。
 
-[**[vsi]{lang="EN-US"}**[ *vsi-name*]{lang="EN-US"}]{#struct_0_x1820_12830_1517593186}[：]{style="font-family:宋体"}[清除指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果未指定本参数，将清除所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[vsi** *vsi-name*]：清除指定VSI内的信息。*vsi-name*为VSI的名称，为1～31个字符的字符串，区分大小写。如果未指定本参数，将清除所有VSI内的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1752914057}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_547746163}[清除所有动态路由器端口的信息。]{style="font-family:宋体"}
+\# 清除所有动态路由器端口的信息。
 
-[[\<Sysname\> reset ]{lang="EN-US"}]{#struct_0_x1820_12830_1633660909}[igmp-snooping]{lang="DA"}[ ]{lang="DA"}[router-port all]{lang="EN-US"}
+\<Sysname\> reset igmp-snoopingrouter-port all
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1539118296}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display igmp-snooping router-port]{lang="EN-US"}**]{#struct_0_x1820_12830_x1396524598}
-:::
-
-::: {#-508772165 .myid}
-[]{#_Toc404789418}[]{#struct_0_x1820_12830_x2039537337}
+·**display igmp-snooping router-port**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- reset igmp-snooping statistics**
 
 ------------------------------------------------------------------------
 
-[**[reset igmp-snooping statistics]{lang="EN-US"}**]{#struct_0_x1820_12830_88931233}[命令用来清除]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[监听到的]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[报文统计信息。]{style="font-family:宋体"}
+**[reset igmp-snooping statistics**]命令用来清除IGMP Snooping监听到的IGMP报文统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1659431911}
+【命令】
 
-[**[reset igmp-snooping statistics]{lang="EN-US"}**]{#struct_0_x1820_12830_x1584746510}
+**[reset igmp-snooping statistics**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1393974095}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x1820_12830_1104182603}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1017496939}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x362423019}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1884193004}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1521216562}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_88865697}[清除]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[监听到的]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[报文统计信息。]{style="font-family:宋体"}
+\# 清除IGMP Snooping监听到的IGMP报文统计信息。
 
-[[\<Sysname\> reset igmp-snooping statistics]{lang="EN-US"}]{#struct_0_x1820_12830_x307152836}
+\<Sysname\> reset igmp-snooping statistics
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1058342824}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display igmp-snooping statistics]{lang="EN-US"}**]{#struct_0_x1820_12830_1952922624}
-:::
-
-::: {#1158905413 .myid}
-[]{#_Toc404789419}[]{#struct_0_x1820_12830_x793757006}[]{#_Toc293908711}
+·**display igmp-snooping statistics**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- router-aging-time (IGMP-Snooping view)**
 
 ------------------------------------------------------------------------
 
-[**[router-aging-time]{lang="EN-US"}**]{#struct_0_x1820_12830_2147130082}[命令用来全局配置动态路由器端口的老化时间。]{style="font-family:宋体"}
+**[router-aging-time**]命令用来全局配置动态路由器端口的老化时间。
 
-[**[undo router-aging-time]{lang="EN-US"}**]{#struct_0_x1820_12830_265303804}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo router-aging-time**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1177009507}
+【命令】
 
-[**[router-aging-time]{lang="EN-US"}**[ *interval*]{lang="EN-US"}]{#struct_0_x1820_12830_89062305}
+**[router-aging-time** *interval*]
 
-[**[undo router-aging-time]{lang="EN-US"}**]{#struct_0_x1820_12830_x1327295240}
+**[undo router-aging-time**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1487541414}
+【缺省情况】
 
-[[动态路由器端口的老化时间为]{style="font-family:宋体"}[260]{lang="EN-US"}]{#struct_0_x1820_12830_988801899}[秒。]{style="font-family:宋体"}
+动态路由器端口的老化时间为260秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1167200215}
+【视图】
 
-[[IGMP-Snooping]{lang="EN-US"}]{#struct_0_x1820_12830_x1880697625}[视图]{style="font-family:宋体"}
+IGMP-Snooping视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_492855271}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1088878539}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x1963151994}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_88996769}
+【参数】
 
-[*[interval]{lang="EN-US"}*]{#struct_0_x1820_12830_1169109741}[：表示动态路由器端口的老化时间，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1000]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[interval*]：表示动态路由器端口的老化时间，取值范围为1～1000，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_234955636}
+【使用指导】
 
-[[本命令与]{style="font-family:宋体"}**[igmp-snooping router-aging-time]{lang="EN-US"}**]{#struct_0_x1820_12830_x423593000}[命令的功能相同，只是作用范围不同：]{style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下的全局配置对所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[和]{style="font-family:宋体"}[VSI]{lang="EN-US"}[都有效，]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[视图]{style="font-family:宋体"}[/VSI]{lang="EN-US"}[视图下的配置只对当前]{style="font-family:宋体"}[VLAN/VSI]{lang="EN-US"}[有效，后者的配置优先级较高。]{style="font-family:宋体"}
+本命令与**igmp-snooping router-aging-time**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下的全局配置对所有VLAN和VSI都有效，VLAN视图/VSI视图下的配置只对当前VLAN/VSI有效，后者的配置优先级较高。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x484090102}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_283329542}[全局配置动态路由器端口的老化时间为]{style="font-family:宋体"}[100]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 全局配置动态路由器端口的老化时间为100秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_2051195215}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] router-aging-time 100]{lang="EN-US"}[]{#_Toc138647989}[]{#_Toc138648274}[]{#_Toc138648543}[]{#_Toc138647990}[]{#_Toc138648275}[]{#_Toc138648544}[]{#_Toc138647993}[]{#_Toc138648278}[]{#_Toc138648547}[]{#_Toc134006615}[]{#_Toc138647998}[]{#_Toc138648283}[]{#_Toc138648552}[]{#_Toc135732953}[]{#_Toc136006430}[]{#_Toc136009014}[]{#_Toc136009484}[]{#_Toc136009706}[]{#_Toc136659547}[]{#_Toc134006634}
+Sysname-igmp-snooping router-aging-time 100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_581161255}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping router-aging-time]{lang="EN-US"}**]{#struct_0_x1820_12830_2072120244}
-:::
-
-::::: {#1980124287 .myid}
-[]{#_Toc404789420}[]{#struct_0_x1820_12830_89193377}
+·**igmp-snooping router-aging-time**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- source-deny (IGMP-Snooping view)**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IGMP%20Snooping命令.files/image002.png){#图片 2 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1820_12830_x1736676659}
-:::
+![说明](IGMP%20Snooping命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1820_12830_238599960}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[source-deny**]命令用来使能指定端口的组播数据报文源端口过滤功能。
 
-[**[source-deny]{lang="EN-US"}**]{#struct_0_x1820_12830_x2117060245}[命令用来使能指定端口的组播数据报文源端口过滤功能。]{style="font-family:宋体"}
+**[undo source-deny**]命令用来关闭指定端口的组播数据报文源端口过滤功能。
 
-[**[undo source-deny]{lang="EN-US"}**]{#struct_0_x1820_12830_347012688}[命令用来关闭指定端口的组播数据报文源端口过滤功能。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1577641984}
+**[source-deny port** *interface-list*]
 
-[**[source-deny port]{lang="EN-US"}**[ *interface-list*]{lang="EN-US"}]{#struct_0_x1820_12830_1769324593}
+**[undo source-deny port** *interface-list*]
 
-[**[undo source-deny port]{lang="EN-US"}**[ *interface-list*]{lang="EN-US"}]{#struct_0_x1820_12830_x627104175}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_89127841}
+组播数据报文源端口过滤功能处于关闭状态。
 
-[[组播数据报文源端口过滤功能处于关闭状态。]{style="font-family:宋体"}]{#struct_0_x1820_12830_1002490010}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x297000091}
+IGMP-Snooping视图
 
-[[IGMP-Snooping]{lang="EN-US"}]{#struct_0_x1820_12830_462300472}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x194294670}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_2027812840}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_x845279343}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1829120539}
+**[port** *interface-list*]：表示对指定端口进行配置。*interface-list*为端口列表，表示一或多个端口，表示方式为*interface-list* = { *interface-type* *interface-number* [ **to** *interface-type* *interface-number*  }]，其中，*interface-type*为接口类型，*interface-number*为接口编号。
 
-[**[port]{lang="EN-US"}**[ *interface-list*]{lang="EN-US"}]{#struct_0_x1820_12830_x1254083648}[：表示对指定端口进行配置。]{style="font-family:宋体"}*[interface-list]{lang="EN-US"}*[为端口列表，表示一或多个端口，表示方式为]{style="font-family:宋体"}*[interface-list]{lang="EN-US"}*[ = { *interface-type* *interface-number* \[ **to** *interface-type* *interface-number* \] }]{lang="EN-US"}[，其中，]{style="font-family:宋体"}*[interface-type]{lang="EN-US"}*[为接口类型，]{style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[为接口编号。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1290256570}
+本命令与**igmp-snooping source-deny**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下可以对指定端口进行配置，端口视图下只能对当前端口进行配置，二者的配置优先级相同。
 
-[[本命令与]{style="font-family:宋体"}**[igmp-snooping source-deny]{lang="EN-US"}**]{#struct_0_x1820_12830_89324449}[命令的功能相同，只是作用范围不同：]{style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下可以对指定端口进行配置，端口视图下只能对当前端口进行配置，二者的配置优先级相同。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x1166199881}
+\# 使能端口GigabitEthernet1/0/1～GigabitEthernet1/0/4上的组播数据报文源端口过滤功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_100396875}[使能端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[～]{style="font-family:宋体"}[GigabitEthernet1/0/4]{lang="EN-US"}[上的组播数据报文源端口过滤功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_x1109866592}
+Sysname igmp-snooping
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname-igmp-snooping source-deny port gigabitethernet 1/0/1 to gigabitethernet 1/0/4
 
-[\[Sysname-igmp-snooping\] source-deny port gigabitethernet 1/0/1 to gigabitethernet 1/0/4]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1367187644}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping]{lang="DA"}[ ]{lang="DA"}[source-deny]{lang="EN-US"}**]{#struct_0_x1820_12830_600671214}
-:::::
-
-::: {#-618713921 .myid}
-[]{#_Toc404789421}[]{#struct_0_x1820_12830_1432755236}[]{#_Toc345425154}
+·**igmp-snoopingsource-deny**
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- version (IGMP-Snooping view)**
 
 ------------------------------------------------------------------------
 
-[**[version]{lang="EN-US"}**]{#struct_0_x1820_12830_87805366}[命令用来配置指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[的版本。]{style="font-family:宋体"}
+**[version**]命令用来配置指定VLAN内的IGMP Snooping的版本。
 
-[**[undo version]{lang="EN-US"}**]{#struct_0_x1820_12830_89258913}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo version**]命令用来恢复缺省情况。
 
-[[【命]{style="font-family:黑体"}]{#struct_0_x1820_12830_871209359}[令]{style="font-family:黑体"}[】]{style="font-family:黑体"}
+【命令】
 
-[**[version ]{lang="EN-US"}***[version-number]{lang="EN-US"}*[ **vlan** *vlan-list*]{lang="EN-US"}]{#struct_0_x1820_12830_x1917402909}
+**[version ***version-number* **vlan** *vlan-list*]
 
-[**[undo version]{lang="EN-US"}**[ **vlan** *vlan-list*]{lang="EN-US"}]{#struct_0_x1820_12830_268498373}
+**[undo version** **vlan** *vlan-list*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1820_12830_2087777547}
+【缺省情况】
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_74172583}[内]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[的版本为]{style="font-family:宋体"}[2]{lang="EN-US"}[。]{style="font-family:宋体"}
+VLAN内IGMP Snooping的版本为2。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x429680264}
+【视图】
 
-[[IGMP-Snooping]{lang="EN-US"}]{#struct_0_x1820_12830_1430651292}[视图]{style="font-family:宋体"}
+IGMP-Snooping视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1381212229}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1820_12830_89455521}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1820_12830_609045415}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x622588651}
+【参数】
 
-[*[version-number]{lang="EN-US"}*]{#struct_0_x1820_12830_x1037982189}[：表示]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[的版本号，取值范围为]{style="font-family:宋体"}[2]{lang="EN-US"}[～]{style="font-family:宋体"}[3]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[version-number*]：表示IGMP Snooping的版本号，取值范围为2～3。
 
-[**[vlan ]{lang="EN-US"}***[vlan-list]{lang="EN-US"}*]{#struct_0_x1820_12830_293455132}[：]{style="font-family:宋体"}[表示对指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，表示一或多个]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，表示方式为]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[ = { *vlan-id* \[ **to** *vlan-id* \] }&\<1-10\>]{lang="EN-US"}[，其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。]{style="font-family:宋体"}
+**[vlan ***vlan-list*]：表示对指定VLAN进行配置。*vlan-list*为VLAN列表，表示一或多个VLAN，表示方式为*vlan-list* = { *vlan-id* [ **to** *vlan-id*  }&\<1-10\>]，其中，*vlan-id*为VLAN的编号，取值范围为1～4094。&\<1-10\>表示前面的参数最多可以输入10次。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1820_12830_517182496}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在配置本命令之前，必须先在]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_x1055460091}[内使能]{lang="EN-US" style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·在配置本命令之前，必须先在VLAN内使能IGMP Snooping。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于基于]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1820_12830_1517593183}[的配置，本命令与]{lang="EN-US" style="font-family:宋体"}**[igmp-snooping]{lang="EN-US"}[ version]{lang="EN-US"}**[命令的功能相同，只是作用范围不同：]{lang="EN-US" style="font-family:宋体"}[IGMP-Snooping]{lang="EN-US"}[视图下可以对指定]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置，]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[视图下只能对当前]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[进行配置，二者的配置优先级相同]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:
-宋体"}
+·对于基于VLAN的配置，本命令与**igmp-snooping version**命令的功能相同，只是作用范围不同：IGMP-Snooping视图下可以对指定VLAN进行配置，VLAN视图下只能对当前VLAN进行配置，二者的配置优先级相同。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1820_12830_1087477664}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1820_12830_2030556349}[使能]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[～]{style="font-family:宋体"}[10]{lang="EN-US"}[内的]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，并配置这些]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[版本为]{style="font-family:宋体"}[3]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 使能VLAN 2～10内的IGMP Snooping，并配置这些VLAN内的IGMP Snooping版本为3。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1820_12830_89389985}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] enable vlan 2 to 10]{lang="EN-US"}
+Sysname-igmp-snooping enable vlan 2 to 10
 
-[\[Sysname-igmp-snooping\] version 3 vlan 2 to 10]{lang="EN-US"}
+Sysname-igmp-snooping version 3 vlan 2 to 10
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1820_12830_x880301306}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[enable]{lang="EN-US"}**[ (IGMP-Snooping view)]{lang="EN-US"}]{#struct_0_x1820_12830_x1400391388}
+·**enable** (IGMP-Snooping view)
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping enable]{lang="EN-US"}**]{#struct_0_x1820_12830_x1460323545}
+·**igmp-snooping enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping]{lang="EN-US"}**]{#struct_0_x1820_12830_1517658719}**[ version]{lang="EN-US"}**
+·**igmp-snooping**** version**
 
-[ ]{lang="EN-US"}
-:::

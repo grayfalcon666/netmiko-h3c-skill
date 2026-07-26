@@ -1,351 +1,336 @@
-::: {#1520867867 .myid}
-[]{#_Toc340320660}[]{#_Toc343536561}[]{#_Toc340320655}[]{#_Ref335832846}[]{#_Ref335832845}[]{#_Ref335832841}[]{#_Toc404787493}[]{#struct_0_19345_x2375_x1951444283}[]{#_Toc343536562}[]{#_Toc340320656}
 
 **静态路由 \-- 静态路由调试命令 \-- debugging route-static nib**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19345_x2375_x735197017}
+【命令】
 
-[**[debugging route-static nib]{lang="EN-US"}**[ \[ *nib-id* \]]{lang="EN-US"}]{#struct_0_19345_x2375_1572045885}
+**[debugging route-static nib** [ *nib-id* ]]
 
-[**[undo debugging route-static nib]{lang="EN-US"}**]{#struct_0_19345_x2375_2055377615}
+**[undo debugging route-static nib**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19345_x2375_722921391}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_19345_x2375_1341416}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19345_x2375_x1126755052}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19345_x2375_x368259241}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19345_x2375_1649012833}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19345_x2375_1011571362}
+【参数】
 
-[*[nib-id]{lang="EN-US"}*]{#struct_0_19345_x2375_1137151969}[：下一跳]{style="font-family:宋体"}[ID]{lang="EN-US"}[，十六进制，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[FFFFFFFF]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[nib-id*]：下一跳ID，十六进制，取值范围为1～FFFFFFFF。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_19345_x2375_x1698979741}
+【描述】
 
-[**[debugging route-static nib]{lang="EN-US"}**]{#struct_0_19345_x2375_x1251603698}[命令用来打开]{style="font-family:
-宋体"}[IPv4]{lang="EN-US"}[单播静态路由下一跳信息的调试信息开关。]{style="font-family:宋体"}**[undo debugging route-static nib]{lang="EN-US"}**[用来关闭]{style="font-family:
-宋体"}[IPv4]{lang="EN-US"}[单播静态路由下一跳信息的调试信息开关。]{style="font-family:宋体"}
+**[debugging route-static nib**]命令用来打开IPv4单播静态路由下一跳信息的调试信息开关。**undo debugging route-static nib**用来关闭IPv4单播静态路由下一跳信息的调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[IPv4]{lang="EN-US"}]{#struct_0_19345_x2375_1722252419}[单播静态路由下一跳信息的调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，IPv4单播静态路由下一跳信息的调试信息开关处于关闭状态。
 
-[[表1-1 ]{lang="EN-US"}[debugging route-static nib]{lang="EN-US"}]{#struct_0_19345_x2375_x813359784}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging route-static nib命令输出信息描述表
 
-[]{#table_struct_0_x235698997}[[字段]{style="font-family:黑体"}]{#struct_0_19345_x2375_x2025258367}
-:::
+字段
 
-[[含义]{style="font-family:黑体"}]{#struct_0_19345_x2375_x1126820588}
+含义
 
-[[Add/Delete/Modify NIB]{lang="EN-US"}]{#struct_0_19345_x2375_568671317}
+Add/Delete/Modify NIB
 
-[[添加]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_19345_x2375_1992684154}[删除]{style="font-family:宋体"}[/]{lang="EN-US"}[修改下一跳信息]{style="font-family:宋体"}
+添加/删除/修改下一跳信息
 
-[[Seq]{lang="EN-US"}]{#struct_0_19345_x2375_x41932078}
+Seq
 
-[[序号]{style="font-family:宋体"}]{#struct_0_19345_x2375_x70004156}
+序号
 
-[[Errno]{lang="EN-US"}]{#struct_0_19345_x2375_x1187355370}
+Errno
 
-[[错误码]{style="font-family:宋体"}]{#struct_0_19345_x2375_1528423941}
+错误码
 
-[[PrefixIndex]{lang="EN-US"}]{#struct_0_19345_x2375_1251730650}
+PrefixIndex
 
-[[前缀编号]{style="font-family:宋体"}]{#struct_0_19345_x2375_455091381}
+前缀编号
 
-[[Vrf]{lang="EN-US"}]{#struct_0_19345_x2375_x1432768268}
+Vrf
 
-[[实例名]{style="font-family:宋体"}]{#struct_0_19345_x2375_777924689}
+实例名
 
-[[OrigNexthop]{lang="EN-US"}]{#struct_0_19345_x2375_x2125015319}
+OrigNexthop
 
-[[原始下一跳]{style="font-family:宋体"}]{#struct_0_19345_x2375_1033893392}
+原始下一跳
 
-[[RealNexthop]{lang="EN-US"}]{#struct_0_19345_x2375_1251796186}
+RealNexthop
 
-[[真实下一跳]{style="font-family:宋体"}]{#struct_0_19345_x2375_x716150522}
+真实下一跳
 
-[[Interface]{lang="EN-US"}]{#struct_0_19345_x2375_x280833509}
+Interface
 
-[[出接口名]{style="font-family:宋体"}]{#struct_0_19345_x2375_712954067}
+出接口名
 
-[[Localaddr]{lang="EN-US"}]{#struct_0_19345_x2375_753736126}
+Localaddr
 
-[[本地接口地址]{style="font-family:宋体"}]{#struct_0_19345_x2375_1251861722}
+本地接口地址
 
-[[RelyDepth]{lang="EN-US"}]{#struct_0_19345_x2375_x324227216}
+RelyDepth
 
-[[迭代深度]{style="font-family:宋体"}]{#struct_0_19345_x2375_534285338}
+迭代深度
 
-[[Msgtype]{lang="EN-US"}]{#struct_0_19345_x2375_x1199391545}
+Msgtype
 
-[[消息类型]{style="font-family:宋体"}]{#struct_0_19345_x2375_39108390}
+消息类型
 
-[[TunnelCnt]{lang="EN-US"}]{#struct_0_19345_x2375_1251927258}
+TunnelCnt
 
-[[隧道个数]{style="font-family:宋体"}]{#struct_0_19345_x2375_x701041742}
+隧道个数
 
-[[TunnelID]{lang="EN-US"}]{#struct_0_19345_x2375_x400071404}
+TunnelID
 
-[[隧道号]{style="font-family:宋体"}]{#struct_0_19345_x2375_1135830297}
+隧道号
 
-[[Topology]{lang="EN-US"}]{#struct_0_19345_x2375_x1469698616}
+Topology
 
-[[拓扑名称，]{style="font-size:10.0pt;font-family:宋体"}]{#struct_0_19345_x2375_x276105886}[base]{lang="EN-US" style="font-size:10.0pt"}[为公网拓扑（目前]{style="font-size:10.0pt;font-family:
-  宋体"}[IPv6]{lang="EN-US" style="font-size:10.0pt"}[不支持子拓扑，显示为空）]{style="font-size:10.0pt;font-family:宋体"}
+拓扑名称，base为公网拓扑（目前IPv6不支持子拓扑，显示为空）
 
-[ ]{lang="EN-US"}
+【举例】
 
-[]{#struct_0_19345_x2375_1966347290}[]{#表NBR_3}[【举例】]{style="font-family:黑体"}
+\# 打开IPv4单播静态路由下一跳信息的调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_19345_x2375_1994687525}[打开]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[单播静态路由下一跳信息的调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging route-static nib
 
-[[\<Sysname\> debugging route-static nib]{lang="EN-US"}]{#struct_0_19345_x2375_1251992794}
+\*Aug 23 15:44:45:833 2012 Sysname NIB/7/DEBUG: -MDC=1; USR delete NIB 11000000 w
 
-[\*Aug 23 15:44:45:833 2012 Sysname NIB/7/DEBUG: -MDC=1; USR delete NIB 11000000 w]{lang="EN-US"}
+ith seq 2
 
-[ith seq 2]{lang="EN-US"}
+*// 删除NIB*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_19345_x2375_1227242173}*[删除]{style="font-family:宋体"}[NIB]{lang="EN-US"}*
+\*Sep 19 09:16:18:606 2012 Sysname NIB/7/DEBUG: -MDC=1; USR add NIB 0001/0/2
 
-[[\*Sep 19 09:16:18:606 2012 Sysname NIB/7/DEBUG: -MDC=1; USR add NIB 0001/0/2]{lang="EN-US"}]{#struct_0_19345_x2375_x567599783}
+/0/2/1.2.3.4, id 11000004 seq 4, errno 0
 
-[/0/2/1.2.3.4, id 11000004 seq 4, errno 0]{lang="EN-US"}
+ 1 Nexthop Value(s):
 
-[ 1 Nexthop Value(s):]{lang="EN-US"}
+PrefixIndex: 0              OrigNexthop: 1.2.3.4
 
-[PrefixIndex: 0              OrigNexthop: 1.2.3.4]{lang="EN-US"}
+  RelyDepth: 0              RealNexthop: 1.2.3.4
 
-[  RelyDepth: 0              RealNexthop: 1.2.3.4]{lang="EN-US"}
+  Interface: GE1/0/2           LocalAddr: 11.1.1.2
 
-[  Interface: GE1/0/2           LocalAddr: 11.1.1.2]{lang="EN-US"}
+  TunnelCnt: 0                      Vrf: default-vrf
 
-[  TunnelCnt: 0                      Vrf: default-vrf]{lang="EN-US"}
+   TunnelID: N/A               Topology: base
 
-[   TunnelID: N/A               Topology: base]{lang="EN-US"}
+*// 添加基础NIB*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_19345_x2375_x1434849041}*[添加基础]{style="font-family:宋体"}[NIB]{lang="EN-US"}*
+\*Sep 19 09:16:18:657 2012 Sysname NIB/7/DEBUG: -MDC=1;
 
-[[\*Sep 19 09:16:18:657 2012 Sysname NIB/7/DEBUG: -MDC=1;]{lang="EN-US"}]{#struct_0_19345_x2375_1833379704}
+ USR sync NIB 11000004 to RIB, msgtype ADD, bytes 200
 
-[ USR sync NIB 11000004 to RIB, msgtype ADD, bytes 200]{lang="EN-US"}
+ 1 Nexthop Value(s):
 
-[ 1 Nexthop Value(s):]{lang="EN-US"}
+PrefixIndex: 0              OrigNexthop: 1.2.3.4
 
-[PrefixIndex: 0              OrigNexthop: 1.2.3.4]{lang="EN-US"}
+  RelyDepth: 0              RealNexthop: 1.2.3.4
 
-[  RelyDepth: 0              RealNexthop: 1.2.3.4]{lang="EN-US"}
+  Interface: GE1/0/2           LocalAddr: 11.1.1.2
 
-[  Interface: GE1/0/2           LocalAddr: 11.1.1.2]{lang="EN-US"}
+  TunnelCnt: 0                      Vrf: default-vrf
 
-[  TunnelCnt: 0                      Vrf: default-vrf]{lang="EN-US"}
+   TunnelID: N/A               Topology: base
 
-[   TunnelID: N/A               Topology: base]{lang="EN-US"}
+*// 同步基础NIB给RIB*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_19345_x2375_1252058330}*[同步基础]{style="font-family:宋体"}[NIB]{lang="EN-US"}[给]{style="font-family:宋体"}[RIB]{lang="EN-US"}*
+\*Sep 19 09:16:18:708 2012 Sysname NIB/7/DEBUG: -MDC=1; USR add NIB 100011000004
 
-[[\*Sep 19 09:16:18:708 2012 Sysname NIB/7/DEBUG: -MDC=1; USR add NIB 1000\[11000004]{lang="EN-US"}]{#struct_0_19345_x2375_x909522454}
+/4/2/1/011000001/1/2/1/0, id 11000005 seq 5, errno 0
 
-[/4/2/1/0\]\[11000001/1/2/1/0\], id 11000005 seq 5, errno 0]{lang="EN-US"}
+ 1 Nexthop Value(s):
 
-[ 1 Nexthop Value(s):]{lang="EN-US"}
+       PrefixIndex: 0
 
-[       PrefixIndex: 0]{lang="EN-US"}
+               Vrf: default-vrf
 
-[               Vrf: default-vrf]{lang="EN-US"}
+  Orig/RealNexthop: 1.2.3.4/1.2.3.4
 
-[  Orig/RealNexthop: 1.2.3.4/1.2.3.4]{lang="EN-US"}
+         Interface: GE1/0/2
 
-[         Interface: GE1/0/2]{lang="EN-US"}
+         LocalAddr: 11.1.1.2
 
-[         LocalAddr: 11.1.1.2]{lang="EN-US"}
+         RelyDepth: 0
 
-[         RelyDepth: 0]{lang="EN-US"}
+Backup Nexthop Value:
 
-[Backup Nexthop Value:]{lang="EN-US"}
+PrefixIndex: 0              OrigNexthop: 1.2.3.4
 
-[PrefixIndex: 0              OrigNexthop: 1.2.3.4]{lang="EN-US"}
+  RelyDepth: 0              RealNexthop: 0.0.0.0
 
-[  RelyDepth: 0              RealNexthop: 0.0.0.0]{lang="EN-US"}
+  Interface: NULL0            LocalAddr: 0.0.0.0
 
-[  Interface: NULL0            LocalAddr: 0.0.0.0]{lang="EN-US"}
+  TunnelCnt: 0                      Vrf: default-vrf
 
-[  TunnelCnt: 0                      Vrf: default-vrf]{lang="EN-US"}
+   TunnelID: N/A               Topology: base
 
-[   TunnelID: N/A               Topology: base]{lang="EN-US"}
+*// 添加FRR的NIB*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_19345_x2375_2230290}*[添加]{style="font-family:宋体"}[FRR]{lang="EN-US"}[的]{style="font-family:宋体"}[NIB]{lang="EN-US"}*
+\*Sep 19 09:16:18:761 2012 Sysname NIB/7/DEBUG: -MDC=1;
 
-[[\*Sep 19 09:16:18:761 2012 Sysname NIB/7/DEBUG: -MDC=1;]{lang="EN-US"}]{#struct_0_19345_x2375_1252123866}
+ USR sync NIB 11000005 to RIB, msgtype ADD, bytes 320
 
-[ USR sync NIB 11000005 to RIB, msgtype ADD, bytes 320]{lang="EN-US"}
+ 1 Nexthop Value(s):
 
-[ 1 Nexthop Value(s):]{lang="EN-US"}
+PrefixIndex: 0              OrigNexthop: 1.2.3.4
 
-[PrefixIndex: 0              OrigNexthop: 1.2.3.4]{lang="EN-US"}
+  RelyDepth: 0              RealNexthop: 1.2.3.4
 
-[  RelyDepth: 0              RealNexthop: 1.2.3.4]{lang="EN-US"}
+  Interface: GE1/0/2           LocalAddr: 11.1.1.2
 
-[  Interface: GE1/0/2           LocalAddr: 11.1.1.2]{lang="EN-US"}
+  TunnelCnt: 0                      Vrf: default-vrf
 
-[  TunnelCnt: 0                      Vrf: default-vrf]{lang="EN-US"}
+   TunnelID: N/A               Topology: base
 
-[   TunnelID: N/A               Topology: base]{lang="EN-US"}
+Backup Nexthop Value:
 
-[Backup Nexthop Value:]{lang="EN-US"}
+PrefixIndex: 0              OrigNexthop: 1.2.3.4
 
-[PrefixIndex: 0              OrigNexthop: 1.2.3.4]{lang="EN-US"}
+  RelyDepth: 0              RealNexthop: 0.0.0.0
 
-[  RelyDepth: 0              RealNexthop: 0.0.0.0]{lang="EN-US"}
+  Interface: NULL0            LocalAddr: 0.0.0.0
 
-[  Interface: NULL0            LocalAddr: 0.0.0.0]{lang="EN-US"}
+  TunnelCnt: 0                      Vrf: default-vrf
 
-[  TunnelCnt: 0                      Vrf: default-vrf]{lang="EN-US"}
+   TunnelID: N/A               Topology: base
 
-[   TunnelID: N/A               Topology: base]{lang="EN-US"}
+*// 同步FRR的NIB*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_19345_x2375_x802699485}*[同步]{style="font-family:宋体"}[FRR]{lang="EN-US"}[的]{style="font-family:宋体"}[NIB]{lang="EN-US"}*
+\*Sep 19 09:15:23:313 2012 Sysname NIB/7/DEBUG: -MDC=1;
 
-[[\*Sep 19 09:15:23:313 2012 Sysname NIB/7/DEBUG: -MDC=1;]{lang="EN-US"}]{#struct_0_19345_x2375_x1733293281}
+ USR modify NIB 11000000 with nexthop 2.2.2.2:
 
-[ USR modify NIB 11000000 with nexthop 2.2.2.2:]{lang="EN-US"}
+ Old value:
 
-[ Old value:]{lang="EN-US"}
+ 1 Nexthop Value(s):
 
-[ 1 Nexthop Value(s):]{lang="EN-US"}
+PrefixIndex: 0              OrigNexthop: 2.2.2.2
 
-[PrefixIndex: 0              OrigNexthop: 2.2.2.2]{lang="EN-US"}
+  RelyDepth: 1              RealNexthop: 0.0.0.0
 
-[  RelyDepth: 1              RealNexthop: 0.0.0.0]{lang="EN-US"}
+  Interface: NULL0            LocalAddr: 0.0.0.0
 
-[  Interface: NULL0            LocalAddr: 0.0.0.0]{lang="EN-US"}
+  TunnelCnt: 0                      Vrf: default-vrf
 
-[  TunnelCnt: 0                      Vrf: default-vrf]{lang="EN-US"}
+   TunnelID: N/A               Topology: base
 
-[   TunnelID: N/A               Topology: base]{lang="EN-US"}
+ New value:
 
-[ New value:]{lang="EN-US"}
+ 1 Nexthop Value(s):
 
-[ 1 Nexthop Value(s):]{lang="EN-US"}
+PrefixIndex: 0              OrigNexthop: 2.2.2.2
 
-[PrefixIndex: 0              OrigNexthop: 2.2.2.2]{lang="EN-US"}
+  RelyDepth: 1              RealNexthop: 1.2.3.4
 
-[  RelyDepth: 1              RealNexthop: 1.2.3.4]{lang="EN-US"}
+  Interface: GE1/0/2           LocalAddr: 11.1.1.2
 
-[  Interface: GE1/0/2           LocalAddr: 11.1.1.2]{lang="EN-US"}
+  TunnelCnt: 0                      Vrf: default-vrf
 
-[  TunnelCnt: 0                      Vrf: default-vrf]{lang="EN-US"}
+   TunnelID: N/A               Topology: base
 
-[   TunnelID: N/A               Topology: base]{lang="EN-US"}
+*// 修改NIB*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_19345_x2375_1252189402}*[修改]{style="font-family:宋体"}[NIB]{lang="EN-US"}*
+\*Sep 19 09:15:23:370 2012 Sysname NIB/7/DEBUG: -MDC=1;
 
-[[\*Sep 19 09:15:23:370 2012 Sysname NIB/7/DEBUG: -MDC=1;]{lang="EN-US"}]{#struct_0_19345_x2375_1459377455}
+ USR sync NIB 11000000 to RIB, msgtype MOD, bytes 192
 
-[ USR sync NIB 11000000 to RIB, msgtype MOD, bytes 192]{lang="EN-US"}
+ 1 Nexthop Value(s):
 
-[ 1 Nexthop Value(s):]{lang="EN-US"}
+PrefixIndex: 0              OrigNexthop: 2.2.2.2
 
-[PrefixIndex: 0              OrigNexthop: 2.2.2.2]{lang="EN-US"}
+  RelyDepth: 1              RealNexthop: 0.0.0.0
 
-[  RelyDepth: 1              RealNexthop: 0.0.0.0]{lang="EN-US"}
+  Interface: NULL0            LocalAddr: 0.0.0.0
 
-[  Interface: NULL0            LocalAddr: 0.0.0.0]{lang="EN-US"}
+  TunnelCnt: 0                      Vrf: default-vrf
 
-[  TunnelCnt: 0                      Vrf: default-vrf]{lang="EN-US"}
+   TunnelID: N/A               Topology: base
 
-[   TunnelID: N/A               Topology: base]{lang="EN-US"}
+*// 修改NIB同步给RIB*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_19345_x2375_x590547724}*[修改]{style="font-family:宋体"}[NIB]{lang="EN-US"}[同步给]{style="font-family:宋体"}[RIB]{lang="EN-US"}*
+\*Sep 19 09:15:23:421 2012 Sysname NIB/7/DEBUG: -MDC=1;
 
-[[\*Sep 19 09:15:23:421 2012 Sysname NIB/7/DEBUG: -MDC=1;]{lang="EN-US"}]{#struct_0_19345_x2375_x1843029342}
+ USR re-rely route under NIB 11000000
 
-[ USR re-rely route under NIB 11000000]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_19345_x2375_x1460591695}*[处理一个]{style="font-family:宋体"}[NIB]{lang="EN-US"}[的重新迭代]{style="font-family:宋体"}*
-
-::: {#-1000075257 .myid}
-[]{#_Toc404787494}[]{#struct_0_19345_x2375_1237477560}
+*// 处理一个NIB的重新迭代*
 
 **静态路由 \-- 静态路由调试命令 \-- debugging route-static process**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19345_x2375_x785598780}
+【命令】
 
-[**[debugging route-static process]{lang="EN-US"}**]{#struct_0_19345_x2375_1251206362}
+**[debugging route-static process**]
 
-[**[undo debugging route-static process]{lang="EN-US"}**]{#struct_0_19345_x2375_x314480205}
+**[undo debugging route-static process**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19345_x2375_542233245}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_19345_x2375_x452654022}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19345_x2375_x2142691235}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19345_x2375_1224523296}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19345_x2375_x1216114409}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19345_x2375_310225933}
+【参数】
 
-[[无]{style="font-family:宋体"}]{#struct_0_19345_x2375_1009726618}
+无
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_19345_x2375_x1879372608}
+【描述】
 
-[**[debugging route-static process]{lang="EN-US"}**]{#struct_0_19345_x2375_1251271898}[命令用来打开]{style="font-family:
-宋体"}[IPv4]{lang="EN-US"}[单播静态路由的调试信息开关。]{style="font-family:宋体"}**[undo debugging route-static process]{lang="EN-US"}**[用来关闭]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[单播静态路由的调试信息开关。]{style="font-family:宋体"}
+**[debugging route-static process**]命令用来打开IPv4单播静态路由的调试信息开关。**undo debugging route-static process**用来关闭IPv4单播静态路由的调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[IPv4]{lang="EN-US"}]{#struct_0_19345_x2375_864989359}[单播静态路由的调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，IPv4单播静态路由的调试信息开关处于关闭状态。
 
-[]{#struct_0_19345_x2375_x908400190}[[表1-2 ]{lang="EN-US"}[debugging route-static process]{lang="EN-US"}]{#_Ref291766152}[命令输出信息描述表]{style="font-family:黑体"}
+表1-2 debugging route-static process命令输出信息描述表
 
-[]{#table_struct_0_x240023797}[[字段]{style="font-family:黑体"}]{#struct_0_19345_x2375_x814681751}
-:::
+字段
 
-[[含义]{style="font-family:黑体"}]{#struct_0_19345_x2375_1798856263}
+含义
 
-[[Add/Delete/Modify route]{lang="EN-US"}]{#struct_0_19345_x2375_548552928}
+Add/Delete/Modify route
 
-[[添加]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_19345_x2375_1495414414}[删除]{style="font-family:宋体"}[/]{lang="EN-US"}[修改路由]{style="font-family:宋体"}
+添加/删除/修改路由
 
-[[NibID]{lang="EN-US"}]{#struct_0_19345_x2375_x1154602348}
+NibID
 
-[[下一跳]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_19345_x2375_1251730651}
+下一跳ID
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19345_x2375_455156917}
+\# 打开IPv4单播静态路由的调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_19345_x2375_76103796}[打开]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[单播静态路由的调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging route-static process
 
-[[\<Sysname\> debugging route-static process]{lang="EN-US"}]{#struct_0_19345_x2375_1118840030}
+%May  9 10:41:38:990 2012 Sysname STATICRT/7/DEBUG: -MDC=1;
 
-[%May  9 10:41:38:990 2012 Sysname STATICRT/7/DEBUG: -MDC=1;]{lang="EN-US"}
+ Add static route 101.1.1.0/24
 
-[ Add static route 101.1.1.0/24]{lang="EN-US"}
+%May  9 10:41:38:991 2012 Sysname STATICRT/7/DEBUG: -MDC=1;
 
-[%May  9 10:41:38:991 2012 Sysname STATICRT/7/DEBUG: -MDC=1;]{lang="EN-US"}
+ USR: Add route 101.1.1.0/24 with NibID 0x11000003 to RIB
 
-[ USR: Add route 101.1.1.0/24 with NibID 0x11000003 to RIB]{lang="EN-US"}
+*// 添加目的地址为101.1.1.0/24的静态路由*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_19345_x2375_1941505054}*[添加目的地址为]{style="font-family:宋体"}[101.1.1.0/24]{lang="EN-US"}[的静态路由]{style="font-family:宋体"}*
+%May  9 10:42:13:279 2012 Sysname STATICRT/7/DEBUG: -MDC=1;
 
-[[%May  9 10:42:13:279 2012 Sysname STATICRT/7/DEBUG: -MDC=1;]{lang="EN-US"}]{#struct_0_19345_x2375_363128159}
+ Add static route 101.1.1.0/24
 
-[ Add static route 101.1.1.0/24]{lang="EN-US"}
+%May  9 10:42:13:279 2012 Sysname STATICRT/7/DEBUG: -MDC=1;
 
-[%May  9 10:42:13:279 2012 Sysname STATICRT/7/DEBUG: -MDC=1;]{lang="EN-US"}
+ USR: Modify route 101.1.1.0/24 with NibID 0x11000003
 
-[ USR: Modify route 101.1.1.0/24 with NibID 0x11000003]{lang="EN-US"}
+*// 修改目的地址为101.1.1.0/24的静态路由*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_19345_x2375_x725706812}*[修改目的地址为]{style="font-family:宋体"}[101.1.1.0/24]{lang="EN-US"}[的静态路由]{style="font-family:宋体"}*
+%May  9 10:40:58:530 2012 Sysname STATICRT/7/DEBUG: -MDC=1;
 
-[[%May  9 10:40:58:530 2012 Sysname STATICRT/7/DEBUG: -MDC=1;]{lang="EN-US"}]{#struct_0_19345_x2375_1251796187}
+ USR: Delete route 101.1.1.0/24 with NibID 0x11000003
 
-[ USR: Delete route 101.1.1.0/24 with NibID 0x11000003]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_19345_x2375_x716084986}*[删除目的地址为]{style="font-family:宋体"}[101.1.1.0/24]{lang="EN-US"}[的静态路由]{style="font-family:宋体"}*
+*// 删除目的地址为101.1.1.0/24的静态路由*

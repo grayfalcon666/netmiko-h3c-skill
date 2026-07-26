@@ -1,2969 +1,2763 @@
-::: {#-260358525 .myid}
-[]{#_Toc404796720}[]{#struct_0_19838_x1039_1767900310}
 
 **PTP \-- PTP配置命令 \-- display ptp clock**
 
 ------------------------------------------------------------------------
 
-[**[display ptp clock]{lang="EN-US"}**]{#struct_0_19838_x1039_1130910371}[命令用来显示设备的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[时钟信息。]{style="font-family:宋体"}
+**[display ptp clock**]命令用来显示设备的PTP时钟信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x2123266297}
+【命令】
 
-[**[display ptp clock]{lang="EN-US"}**]{#struct_0_19838_x1039_1925441282}
+**[display ptp clock**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x412964865}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_19838_x1039_1541580136}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1110983475}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_170370608}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_19838_x1039_1028000966}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_146813926}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_19838_x1039_1708532594}
+mdc-operator
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x2123725048}
+【使用指导】
 
-[[如果]{style="font-family:宋体"}]{#struct_0_19838_x1039_1048066991}[PTP profile]{lang="EN-US"}[和]{style="font-family:宋体"}[PTP mode]{lang="EN-US"}[没有指定，则显示信息为空。]{style="font-family:宋体"}
+如果PTP profile和PTP mode没有指定，则显示信息为空。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_657885227}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_1601503680}[显示设备的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[时钟信息。]{style="font-family:宋体"}
+\# 显示设备的PTP时钟信息。
 
-[[\<Sysname\> display ptp clock]{lang="EN-US"}]{#struct_0_19838_x1039_x2123790584}
+\<Sysname\> display ptp clock
 
-[PTP profile         : IEEE 1588 Version 2]{lang="EN-US"}
+PTP profile         : IEEE 1588 Version 2
 
-[PTP mode            : BC]{lang="EN-US"}
+PTP mode            : BC
 
-[Slave only          : No]{lang="EN-US"}
+Slave only          : No
 
-[Clock ID            : 000FE2-FFFE-FF0000]{lang="EN-US"}
+Clock ID            : 000FE2-FFFE-FF0000
 
-[Clock type          : ToD1]{lang="EN-US"}
+Clock type          : ToD1
 
-[ ToD direction  : In]{lang="EN-US"}
+ ToD direction  : In
 
-[ ToD delay time : 0 (ns)]{lang="EN-US"}
+ ToD delay time : 0 (ns)
 
-[Clock domain        : 0]{lang="EN-US"}
+Clock domain        : 0
 
-[Number of PTP ports : 2]{lang="EN-US"}
+Number of PTP ports : 2
 
-[Priority1     : 128]{lang="EN-US"}
+Priority1     : 128
 
-[Priority2     : 128]{lang="EN-US"}
+Priority2     : 128
 
-[Clock quality :]{lang="EN-US"}
+Clock quality :
 
-[ Class                 : 248]{lang="EN-US"}
+ Class                 : 248
 
-[ Accuracy              : 254]{lang="EN-US"}
+ Accuracy              : 254
 
-[ Offset (log variance) : 65535]{lang="EN-US"}
+ Offset (log variance) : 65535
 
-[Offset from master : 0 (ns)]{lang="EN-US"}
+Offset from master : 0 (ns)
 
-[Mean path delay    : 0 (ns)]{lang="EN-US"}
+Mean path delay    : 0 (ns)
 
-[Steps removed      : 1]{lang="EN-US"}
+Steps removed      : 1
 
-[Local clock time   : Sun Jan 15 20:57:29 2011]{lang="EN-US"}
+Local clock time   : Sun Jan 15 20:57:29 2011
 
-[[表1-1 ]{lang="EN-US"}[display ptp clock]{lang="EN-US"}]{#struct_0_19838_x1039_x456838397}[命令显示信息描述表]{style="font-family:黑体"}
+表1-1 display ptp clock命令显示信息描述表
 
-[]{#table_struct_0_x1007263370}[[字段]{style="font-family:黑体"}]{#struct_0_19838_x1039_x512714772}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_19838_x1039_511747372}
+描述
 
-[[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x955935018}
+PTP profile
 
-[[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_1046457320}[协议遵循的标准：]{style="font-family:宋体"}
+PTP协议遵循的标准：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IEEE 1588 Version 2]{lang="EN-US"}]{#struct_0_19838_x1039_1644035149}[：]{lang="EN-US" style="font-family:
-  宋体"}[PTP]{lang="EN-US"}[协议遵循]{lang="EN-US" style="font-family:
-  宋体"}[IEEE1588 ]{lang="EN-US"}[v]{lang="EN-US"}[ersion 2]{lang="EN-US"}[标准]{lang="EN-US" style="font-family:宋体"}
+·IEEE 1588 Version 2：PTP协议遵循IEEE1588 version 2标准
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IEEE 802.1AS]{lang="EN-US"}]{#struct_0_19838_x1039_x2123593976}[：]{lang="EN-US" style="font-family:宋体"}[PTP]{lang="EN-US"}[协议遵循]{lang="EN-US" style="font-family:宋体"}[IEEE 802.1AS]{lang="EN-US"}[标准]{lang="EN-US" style="font-family:宋体"}
+·IEEE 802.1AS：PTP协议遵循IEEE 802.1AS标准
 
-[[PTP mode]{lang="EN-US"}]{#struct_0_19838_x1039_300162109}
+PTP mode
 
-[[时钟节点类型：]{style="font-family:宋体"}]{#struct_0_19838_x1039_x1334996932}
+时钟节点类型：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[BC]{lang="EN-US"}]{#struct_0_19838_x1039_x269931694}[：表示]{lang="EN-US" style="font-family:宋体"}[BC]{lang="EN-US"}[类型]{lang="EN-US" style="font-family:宋体"}
+·BC：表示BC类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[E2ETC]{lang="EN-US"}]{#struct_0_19838_x1039_x1296132531}[：表示]{lang="EN-US" style="font-family:宋体"}[E2ETC]{lang="EN-US"}[类型]{lang="EN-US" style="font-family:宋体"}
+·E2ETC：表示E2ETC类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[E2ETC-OC]{lang="EN-US"}]{#struct_0_19838_x1039_x2123659512}[：表示]{lang="EN-US" style="font-family:宋体"}[E2ETC+OC]{lang="EN-US"}[类型]{lang="EN-US" style="font-family:宋体"}
+·E2ETC-OC：表示E2ETC+OC类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[OC]{lang="EN-US"}]{#struct_0_19838_x1039_240963257}[：表示]{lang="EN-US" style="font-family:宋体"}[OC]{lang="EN-US"}[类型]{lang="EN-US" style="font-family:宋体"}
+·OC：表示OC类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[P2PTC]{lang="EN-US"}]{#struct_0_19838_x1039_1378037368}[：表示]{lang="EN-US" style="font-family:宋体"}[P2PTC]{lang="EN-US"}[类型]{lang="EN-US" style="font-family:宋体"}
+·P2PTC：表示P2PTC类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[P2PTC-OC]{lang="EN-US"}]{#struct_0_19838_x1039_x628851692}[：表示]{lang="EN-US" style="font-family:宋体"}[P2PTC+OC]{lang="EN-US"}[类型]{lang="EN-US" style="font-family:宋体"}
+·P2PTC-OC：表示P2PTC+OC类型
 
-[[Slave only]{lang="EN-US"}]{#struct_0_19838_x1039_1733785215}
+Slave only
 
-[[OC]{lang="EN-US"}]{#struct_0_19838_x1039_x234762831}[的工作模式是否为]{style="font-family:宋体"}[Slave only]{lang="EN-US"}[：]{style="font-family:宋体"}
+OC的工作模式是否为Slave only：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Yes]{lang="EN-US"}]{#struct_0_19838_x1039_x2123462904}[：表示是]{lang="EN-US" style="font-family:宋体"}
+·Yes：表示是
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No]{lang="EN-US"}]{#struct_0_19838_x1039_1780779320}[：表示不是]{lang="EN-US" style="font-family:宋体"}
+·No：表示不是
 
-[[Clock ID]{lang="EN-US"}]{#struct_0_19838_x1039_1387546321}
+Clock ID
 
-[[本设备的时钟编号]{style="font-family:宋体"}]{#struct_0_19838_x1039_1694130179}
+本设备的时钟编号
 
-[[Clock type]{lang="EN-US"}]{#struct_0_19838_x1039_1465604242}
+Clock type
 
-[[本设备的时钟类型：]{style="font-family:宋体"}]{#struct_0_19838_x1039_x2123528440}
+本设备的时钟类型：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Local]{lang="EN-US"}]{#struct_0_19838_x1039_1356437211}[：本地时钟]{lang="EN-US" style="font-family:宋体"}
+·Local：本地时钟
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ToD0]{lang="EN-US"}]{#struct_0_19838_x1039_x1740529053}[：第一路]{style="font-family:宋体"}[ToD]{lang="EN-US"}[时钟]{style="font-family:宋体"}
+·ToD0：第一路ToD时钟
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ToD1]{lang="EN-US"}]{#struct_0_19838_x1039_x1740332445}[：第二路]{style="font-family:宋体"}[ToD]{lang="EN-US"}[时钟]{style="font-family:宋体"}
+·ToD1：第二路ToD时钟
 
-[[ToD direction]{lang="EN-US"}]{#struct_0_19838_x1039_228506140}
+ToD direction
 
-[[ToD]{lang="FR"}]{#struct_0_19838_x1039_x1918247028}[时钟方向，取值为]{style="font-family:宋体"}[In]{lang="EN-US"}[。本设备的时钟类型为]{style="font-family:宋体"}[Local]{lang="EN-US"}[时，不显示该字段]{style="font-family:宋体"}
+ToD时钟方向，取值为In。本设备的时钟类型为Local时，不显示该字段
 
  
 
-[[ToD delay time]{lang="EN-US"}]{#struct_0_19838_x1039_1240029118}
+ToD delay time
 
-[[ToD]{lang="FR"}]{#struct_0_19838_x1039_x1740397981}[时钟时延校正时间，单位为纳秒。本设备的时钟类型为]{style="font-family:宋体"}[Local]{lang="EN-US"}[时，不显示该字段]{style="font-family:宋体"}
+ToD时钟时延校正时间，单位为纳秒。本设备的时钟类型为Local时，不显示该字段
 
  
 
-[[Clock domain]{lang="EN-US"}]{#struct_0_19838_x1039_x2123331832}
+Clock domain
 
-[[本设备所在的]{style="font-family:宋体"}[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_1993067630}[域]{style="font-family:宋体"}
+本设备所在的PTP域
 
-[[Number of PTP ports]{lang="EN-US"}]{#struct_0_19838_x1039_x832844471}
+Number of PTP ports
 
-[[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_x1857482584}[接口的数量]{style="font-family:宋体"}
+PTP接口的数量
 
-[[Priority1]{lang="EN-US"}]{#struct_0_19838_x1039_x158498894}
+Priority1
 
-[[本设备上时钟优先级一的值]{style="font-family:宋体"}]{#struct_0_19838_x1039_x2123397368}
+本设备上时钟优先级一的值
 
-[[Priority2]{lang="EN-US"}]{#struct_0_19838_x1039_1655464085}
+Priority2
 
-[[本设备上时钟优先级二的值]{style="font-family:宋体"}]{#struct_0_19838_x1039_x1227206104}
+本设备上时钟优先级二的值
 
-[[Clock quality]{lang="EN-US"}]{#struct_0_19838_x1039_1380506369}
+Clock quality
 
-[[时钟品质特性]{style="font-family:宋体"}]{#struct_0_19838_x1039_x2123200760}
+时钟品质特性
 
-[[Class]{lang="EN-US"}]{#struct_0_19838_x1039_18392788}
+Class
 
-[[本设备上时钟的时间等级值]{style="font-family:宋体"}]{#struct_0_19838_x1039_x135353800}
+本设备上时钟的时间等级值
 
-[[Accuracy]{lang="EN-US"}]{#struct_0_19838_x1039_x1524476211}
+Accuracy
 
-[[本设备上时钟的时间精度值]{style="font-family:宋体"}]{#struct_0_19838_x1039_x2123266296}
+本设备上时钟的时间精度值
 
-[[Offset (log variance)]{lang="EN-US"}]{#struct_0_19838_x1039_x803442073}
+Offset (log variance)
 
-[[最优时钟的偏差度量]{style="font-family:宋体"}]{#struct_0_19838_x1039_x167770063}
+最优时钟的偏差度量
 
-[[Offset from master]{lang="EN-US"}]{#struct_0_19838_x1039_x25747099}
+Offset from master
 
-[[与父节点的时钟偏差，单位为纳秒，]{style="font-family:宋体"}[N/A]{lang="EN-US"}]{#struct_0_19838_x1039_x2123725051}[表示无意义]{style="font-family:宋体"}
+与父节点的时钟偏差，单位为纳秒，N/A表示无意义
 
-[[Mean path delay]{lang="EN-US"}]{#struct_0_19838_x1039_x874181774}
+Mean path delay
 
-[[平均路径延时，单位为纳秒，]{style="font-family:宋体"}[N/A]{lang="EN-US"}]{#struct_0_19838_x1039_952208732}[表示无意义]{style="font-family:宋体"}
+平均路径延时，单位为纳秒，N/A表示无意义
 
-[[Steps removed]{lang="EN-US"}]{#struct_0_19838_x1039_x2123790587}
+Steps removed
 
-[[最优时钟到本时钟节点的跳数，]{style="font-family:宋体"}[N/A]{lang="EN-US"}]{#struct_0_19838_x1039_x2022922338}[表示无意义]{style="font-family:宋体"}
+最优时钟到本时钟节点的跳数，N/A表示无意义
 
-[[Local clock time]{lang="EN-US"}]{#struct_0_19838_x1039_284242640}
+Local clock time
 
-[[当前的本地系统时间]{style="font-family:宋体"}]{#struct_0_19838_x1039_x306152393}
-
-[ ]{lang="EN-US"}
-
-::: {#-1263206742 .myid}
-[]{#_Toc404796721}[]{#struct_0_19838_x1039_1465649058}
+当前的本地系统时间
 
 **PTP \-- PTP配置命令 \-- display ptp corrections**
 
 ------------------------------------------------------------------------
 
-[**[display ptp corrections]{lang="EN-US"}**]{#struct_0_19838_x1039_x2123593979}[命令用来显示]{style="font-family:宋体"}[Slave]{lang="EN-US"}[端口时间校正的历史信息。]{style="font-family:宋体"}
+**[display ptp corrections**]命令用来显示Slave端口时间校正的历史信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1622152192}
+【命令】
 
-[**[display ptp corrections]{lang="EN-US"}**]{#struct_0_19838_x1039_x707367281}
+**[display ptp corrections**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x400929047}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_19838_x1039_x2045310154}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_564853444}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_1071145166}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_19838_x1039_x2055433541}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x2123659515}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_19838_x1039_x1325120684}
+mdc-operator
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1256495145}
+【使用指导】
 
-[[当设备每通过]{style="font-family:宋体"}[Slave]{lang="EN-US"}]{#struct_0_19838_x1039_x1880367742}[端口进行过一次时间]{style="font-family:宋体"}[/]{lang="EN-US"}[频率同步，就会记录一条对应信息，从而显示信息不为空，具体为：如果指定]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}[和]{style="font-family:宋体"}[PTP mode]{lang="EN-US"}[，且设备存在]{style="font-family:宋体"}[Slave]{lang="EN-US"}[端口时，通过该]{style="font-family:宋体"}[Slave]{lang="EN-US"}[端口进行了时间同步，则显示信息不为空。若]{style="font-family:宋体"}[Slave]{lang="EN-US"}[端口更换，记录会被清空。]{style="font-family:宋体"}
+当设备每通过Slave端口进行过一次时间/频率同步，就会记录一条对应信息，从而显示信息不为空，具体为：如果指定PTP profile和PTP mode，且设备存在Slave端口时，通过该Slave端口进行了时间同步，则显示信息不为空。若Slave端口更换，记录会被清空。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_508576532}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_2115415582}[显示]{style="font-family:宋体"}[Slave]{lang="EN-US"}[端口时间校正的历史信息。]{style="font-family:宋体"}
+\# 显示Slave端口时间校正的历史信息。
 
-[[\<Sysname\> display ptp corrections]{lang="EN-US"}]{#struct_0_19838_x1039_x115190031}
+\<Sysname\> display ptp corrections
 
-[Slave port   Correction time          Corrections(s,ns)     Rate ratio]{lang="EN-US"}
+Slave port   Correction time          Corrections(s,ns)     Rate ratio
 
-[GE1/0/1      Mar 11 03:14:54 2012     0,74                  0.999999973]{lang="EN-US"}
+GE1/0/1      Mar 11 03:14:54 2012     0,74                  0.999999973
 
-[GE1/0/1      Mar 11 03:14:55 2012    -1,17                  0.999999980]{lang="EN-US"}
+GE1/0/1      Mar 11 03:14:55 2012    -1,17                  0.999999980
 
-[[表1-2 ]{lang="EN-US"}[display ptp corrections]{lang="EN-US"}]{#struct_0_19838_x1039_1844564505}[命令显示信息描述表]{style="font-family:黑体"}
+表1-2 display ptp corrections命令显示信息描述表
 
-[]{#table_struct_0_x1018116298}[[字段]{style="font-family:黑体"}]{#struct_0_19838_x1039_x2123462907}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_19838_x1039_1377494793}
+描述
 
-[[Slave port]{lang="EN-US"}]{#struct_0_19838_x1039_x35453194}
+Slave port
 
-[[Slave]{lang="EN-US"}]{#struct_0_19838_x1039_x1552319021}[端口名称]{style="font-family:宋体"}
+Slave端口名称
 
-[[Correction time]{lang="EN-US"}]{#struct_0_19838_x1039_x95761421}
+Correction time
 
-[[时间偏差的校正时间]{style="font-family:宋体"}]{#struct_0_19838_x1039_x640081826}
+时间偏差的校正时间
 
-[[Corrections(s,ns)]{lang="EN-US"}]{#struct_0_19838_x1039_x2123528443}
+Corrections(s,ns)
 
-[[时间偏差（秒，纳秒），]{style="font-family:宋体"}[N/A]{lang="EN-US"}]{#struct_0_19838_x1039_953152684}[表示本次没有校正]{style="font-family:宋体"}
+时间偏差（秒，纳秒），N/A表示本次没有校正
 
-[[Rate ratio]{lang="EN-US"}]{#struct_0_19838_x1039_x1926018715}
+Rate ratio
 
-[[本端口与]{style="font-family:宋体"}[Master]{lang="EN-US"}]{#struct_0_19838_x1039_214610007}[端口的频率比，]{style="font-family:宋体"}[N/A]{lang="EN-US"}[表示本次没有校正]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-790250591 .myid}
-[]{#_Toc404796722}[]{#struct_0_19838_x1039_x519686419}
+本端口与Master端口的频率比，N/A表示本次没有校正
 
 **PTP \-- PTP配置命令 \-- display ptp foreign-masters-record**
 
 ------------------------------------------------------------------------
 
-[**[display ptp foreign-masters-record]{lang="EN-US"}**]{#struct_0_19838_x1039_x1472218091}[命令用来显示外部主节点的信息。]{style="font-family:宋体"}
+**[display ptp foreign-masters-record**]命令用来显示外部主节点的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_649718296}
+【命令】
 
-[**[display ptp foreign-masters-record ]{lang="EN-US"}**[\[ **interface** *interface-type* *interface-number* \]]{lang="EN-US"}]{#struct_0_19838_x1039_x2123331835}
+**[display ptp foreign-masters-record ** **interface** *interface-type* *interface-number* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1542384779}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_19838_x1039_138205020}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1985251470}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_834175884}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_19838_x1039_x1848376784}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_134368761}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_19838_x1039_x808452980}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x240646092}
+【参数】
 
-[**[interface]{lang="EN-US"}***[ interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}]{#struct_0_19838_x1039_x2123397371}[：显示指定接口上的外部主节点信息，]{style="font-family:宋体"}*[interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}[表示接口类型和接口编号。如未指定本参数，将显示所有接口的外部主节点信息。]{style="font-family:宋体"}
+**[interface*** interface-type* *interface-number*]：显示指定接口上的外部主节点信息，*interface-type* *interface-number*表示接口类型和接口编号。如未指定本参数，将显示所有接口的外部主节点信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x717123374}
+【使用指导】
 
-[[在指定]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x613911483}[为]{style="font-family:宋体"}[IEEE 1588 version 2]{lang="EN-US"}[，同时指定]{style="font-family:宋体"}[PTP mode]{lang="EN-US"}[，且设备存在]{style="font-family:宋体"}[Slave]{lang="EN-US"}[或]{style="font-family:宋体"}[Uncalibrated]{lang="EN-US"}[端口时，显示信息才不为空。]{style="font-family:宋体"}
+在指定PTP profile为IEEE 1588 version 2，同时指定PTP mode，且设备存在Slave或Uncalibrated端口时，显示信息才不为空。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x584229266}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_x250866684}[显示所有接口的外部主节点信息。]{style="font-family:宋体"}
+\# 显示所有接口的外部主节点信息。
 
-[[\<Sysname\> display ptp foreign-masters-record]{lang="EN-US"}]{#struct_0_19838_x1039_x293914765}
+\<Sysname\> display ptp foreign-masters-record
 
-[P1=Priority1, P2=Priority2, C=Class, A=Accuracy,]{lang="EN-US"}
+P1=Priority1, P2=Priority2, C=Class, A=Accuracy,
 
-[OSLV=Offset-scaled-log-variance, SR=Steps-removed]{lang="EN-US"}
+OSLV=Offset-scaled-log-variance, SR=Steps-removed
 
-[GM=Grandmaster]{lang="EN-US"}
+GM=Grandmaster
 
-[\-\-\-\-\-\-\-\-- \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-- \-\-\-- \-\-\-- \-\-\-- \-\-\-- \-\-\-\-- \-\-\-\-\-\-\-\--]{lang="EN-US"}
+\-\-\-\-\-\-\-\-- \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-- \-\-\-- \-\-\-- \-\-\-- \-\-\-- \-\-\-\-- \-\-\-\-\-\-\-\--
 
-[Interface    Clock ID             P1   P2   C    A    OSLV   SR   GM]{lang="EN-US"}
+Interface    Clock ID             P1   P2   C    A    OSLV   SR   GM
 
-[\-\-\-\-\-\-\-\-- \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-- \-\-\-- \-\-\-- \-\-\-- \-\-\-- \-\-\-\-- \-\-\-\-\-\-\-\--]{lang="EN-US"}
+\-\-\-\-\-\-\-\-- \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-- \-\-\-- \-\-\-- \-\-\-- \-\-\-- \-\-\-\-- \-\-\-\-\-\-\-\--
 
-[GE1/0/1      000FE2-FFFE-FF0000   0    128  248  254  65535  0    Yes]{lang="EN-US"}
+GE1/0/1      000FE2-FFFE-FF0000   0    128  248  254  65535  0    Yes
 
-[GE1/0/2      000FE2-FFFE-FF0001   0    128  248  254  65535  1    No]{lang="EN-US"}
+GE1/0/2      000FE2-FFFE-FF0001   0    128  248  254  65535  1    No
 
-[[表1-3 ]{lang="EN-US"}[display ptp foreign-masters-record]{lang="EN-US"}]{#struct_0_19838_x1039_x2123200763}[命令显示信息描述表]{style="font-family:黑体"}
+表1-3 display ptp foreign-masters-record命令显示信息描述表
 
-[]{#table_struct_0_x1018177450}[[字段]{style="font-family:黑体"}]{#struct_0_19838_x1039_1584476729}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_19838_x1039_1643929637}
+描述
 
-[[Interface]{lang="EN-US"}]{#struct_0_19838_x1039_x1310172126}
+Interface
 
-[[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_912251544}[接口的名称]{style="font-family:宋体"}
+PTP接口的名称
 
-[[Clock ID]{lang="EN-US"}]{#struct_0_19838_x1039_x1136462960}
+Clock ID
 
-[[外部主时钟节点的编号]{style="font-family:宋体"}]{#struct_0_19838_x1039_25737069}
+外部主时钟节点的编号
 
-[[P1]{lang="EN-US"}]{#struct_0_19838_x1039_x2123266299}
+P1
 
-[[时钟优先级一的值]{style="font-family:宋体"}]{#struct_0_19838_x1039_x1919187320}
+时钟优先级一的值
 
-[[P2]{lang="EN-US"}]{#struct_0_19838_x1039_x302979486}
+P2
 
-[[时钟优先级二的值]{style="font-family:宋体"}]{#struct_0_19838_x1039_1688603458}
+时钟优先级二的值
 
-[[C]{lang="EN-US"}]{#struct_0_19838_x1039_x511049071}
+C
 
-[[时钟的时间等级值]{style="font-family:宋体"}]{#struct_0_19838_x1039_x1316683276}
+时钟的时间等级值
 
-[[A]{lang="EN-US"}]{#struct_0_19838_x1039_x2123725050}
+A
 
-[[时钟的时间精度值]{style="font-family:宋体"}]{#struct_0_19838_x1039_691902167}
+时钟的时间精度值
 
-[[OSLV]{lang="EN-US"}]{#struct_0_19838_x1039_125858564}
+OSLV
 
-[[最优时钟的偏差度量]{style="font-family:宋体"}]{#struct_0_19838_x1039_x474423965}
+最优时钟的偏差度量
 
-[[SR]{lang="EN-US"}]{#struct_0_19838_x1039_x599820512}
+SR
 
-[[最优时钟到该时钟节点的跳数]{style="font-family:宋体"}]{#struct_0_19838_x1039_x2123790586}
+最优时钟到该时钟节点的跳数
 
-[[GM]{lang="EN-US"}]{#struct_0_19838_x1039_705961017}
+GM
 
-[[最优时钟节点：]{style="font-family:宋体"}]{#struct_0_19838_x1039_39651938}
+最优时钟节点：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Yes]{lang="EN-US"}]{#struct_0_19838_x1039_1896325535}[：表示该节点是最优时钟节点]{style="font-family:宋体"}
+·Yes：表示该节点是最优时钟节点
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No]{lang="EN-US"}]{#struct_0_19838_x1039_x1282492764}[：表示该节点不是最优时钟节点]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-709071388 .myid}
-[]{#_Toc404796723}[]{#struct_0_19838_x1039_x2123593978}
+·No：表示该节点不是最优时钟节点
 
 **PTP \-- PTP配置命令 \-- display ptp interface**
 
 ------------------------------------------------------------------------
 
-[**[display ptp interface]{lang="EN-US"}**]{#struct_0_19838_x1039_1106731163}[命令用来显示接口的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[运行信息。]{style="font-family:宋体"}
+**[display ptp interface**]命令用来显示接口的PTP运行信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_818452522}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **ptp** **interface** \[ *interface-type* *interface-number* \| **brief** \]]{lang="EN-US"}]{#struct_0_19838_x1039_x1582049345}
+**[display**[ **ptp** **interface** [ *interface-type* *interface-number* \| **brief** ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1306936888}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_19838_x1039_x471331839}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_441027974}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x704634715}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_19838_x1039_93242384}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x2123659514}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_19838_x1039_1403762671}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x555337126}
+【参数】
 
-[*[interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}]{#struct_0_19838_x1039_1049739784}[：详细显示指定接口的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[运行信息，]{style="font-family:宋体"}*[interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}[表示接口类型和接口编号。如未指定本参数，将显示所有接口的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[运行信息。]{style="font-family:宋体"}
+*[interface-type* *interface-number*]：详细显示指定接口的PTP运行信息，*interface-type* *interface-number*表示接口类型和接口编号。如未指定本参数，将显示所有接口的PTP运行信息。
 
-[**[brief]{lang="EN-US"}**]{#struct_0_19838_x1039_1433361632}[：简要显示所有接口的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[运行信息。如果未指定本参数，将详细显示指定接口或所有接口的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[运行信息。]{style="font-family:宋体"}
+**[brief**]：简要显示所有接口的PTP运行信息。如果未指定本参数，将详细显示指定接口或所有接口的PTP运行信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1099587418}
+【使用指导】
 
-[[如果接口使能了]{style="font-family:宋体"}[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_1919760884}[功能，则详细显示信息不为空。只有接口]{style="font-family:宋体"}[PTP]{lang="EN-US"}[功能实际工作时，简要显示信息才不为空。]{style="font-family:宋体"}
+如果接口使能了PTP功能，则详细显示信息不为空。只有接口PTP功能实际工作时，简要显示信息才不为空。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x29450574}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_x2123462906}[简要显示所有接口的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[运行信息。]{style="font-family:宋体"}
+\# 简要显示所有接口的PTP运行信息。
 
-[[\<Sysname\> display ptp interface brief]{lang="EN-US"}]{#struct_0_19838_x1039_x1351388562}
+\<Sysname\> display ptp interface brief
 
-[Name         State        Delay mechanism  Clock step  Asymmetry correction]{lang="EN-US"}
+Name         State        Delay mechanism  Clock step  Asymmetry correction
 
-[GE1/0/1      Slave        E2E              Two         0]{lang="EN-US"}
+GE1/0/1      Slave        E2E              Two         0
 
-[GE1/0/2      Passive      E2E              Two         0]{lang="EN-US"}
+GE1/0/2      Passive      E2E              Two         0
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_x914223833}[详细显示接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[运行信息。]{style="font-family:宋体"}
+\# 详细显示接口GigabitEthernet1/0/1的PTP运行信息。
 
-[[\<Sysname\> display ptp interface gigabitethernet 1/0/1]{lang="EN-US"}]{#struct_0_19838_x1039_x2123528442}
+\<Sysname\> display ptp interface gigabitethernet 1/0/1
 
-[Clock ID                    : 000FE2-FFFE-FF0000]{lang="EN-US"}
+Clock ID                    : 000FE2-FFFE-FF0000
 
-[Port number                 : 15]{lang="EN-US"}
+Port number                 : 15
 
-[PTP version                 : 2]{lang="EN-US"}
+PTP version                 : 2
 
-[PTP enable                  : Enabled]{lang="EN-US"}
+PTP enable                  : Enabled
 
-[Transport of PTP            : User Datagram Protocol (IPv4)]{lang="EN-US"}
+Transport of PTP            : User Datagram Protocol (IPv4)
 
-[Unicast destination address : 10.10.10.2]{lang="EN-US"}
+Unicast destination address : 10.10.10.2
 
-[DSCP priority               : 56]{lang="EN-US"}
+DSCP priority               : 56
 
-[Port state                  : Slave]{lang="EN-US"}
+Port state                  : Slave
 
-[Force state                 : No]{lang="EN-US"}
+Force state                 : No
 
-[Clock step                  : Two]{lang="EN-US"}
+Clock step                  : Two
 
-[Asymmetry correction        : 0]{lang="EN-US"}
+Asymmetry correction        : 0
 
-[Delay mechanism             : End to End]{lang="EN-US"}
+Delay mechanism             : End to End
 
-[Announce interval (log mean)           : 1]{lang="EN-US"}
+Announce interval (log mean)           : 1
 
-[Announce receipt time out              : 3]{lang="EN-US"}
+Announce receipt time out              : 3
 
-[Sync interval (log mean)               : 2]{lang="EN-US"}
+Sync interval (log mean)               : 2
 
-[Delay request interval (log mean)      : 2]{lang="EN-US"}
+Delay request interval (log mean)      : 2
 
-[Peer delay request interval (log mean) : 0]{lang="EN-US"}
+Peer delay request interval (log mean) : 0
 
-[Mean path delay                        : 0 (ns)]{lang="EN-US"}
+Mean path delay                        : 0 (ns)
 
-[[表1-4 ]{lang="EN-US"}[display ptp interface]{lang="EN-US"}]{#struct_0_19838_x1039_x1775730671}[命令显示信息描述表]{style="font-family:黑体"}
+表1-4 display ptp interface命令显示信息描述表
 
-[]{#table_struct_0_x1023126506}[[字段]{style="font-family:黑体"}]{#struct_0_19838_x1039_x2072057052}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_19838_x1039_881489917}
+描述
 
-[[Name]{lang="EN-US"}]{#struct_0_19838_x1039_1778143222}
+Name
 
-[[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_x1281971836}[接口的名称]{style="font-family:宋体"}
+PTP接口的名称
 
-[[State]{lang="EN-US"}]{#struct_0_19838_x1039_x2123331834}
+State
 
-[[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_1186498576}[接口的状态：]{style="font-family:宋体"}
+PTP接口的状态：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Slave]{lang="EN-US"}]{#struct_0_19838_x1039_1031197203}[：接口状态为]{style="font-family:宋体"}[Slave]{lang="EN-US"}[，跟踪外部时间信息]{style="font-family:宋体"}
+·Slave：接口状态为Slave，跟踪外部时间信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Uncalibrated]{lang="EN-US"}]{#struct_0_19838_x1039_2026682155}[：接口状态为]{lang="EN-US" style="font-family:宋体"}[Uncalibrated]{lang="EN-US"}[，]{lang="EN-US" style="font-family:宋体"}[Slave]{lang="EN-US"}[状态前的临时状态]{lang="EN-US" style="font-family:宋体"}
+·Uncalibrated：接口状态为Uncalibrated，Slave状态前的临时状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Passive]{lang="EN-US"}]{#struct_0_19838_x1039_x835055396}[：接口状态为]{style="font-family:宋体"}[Passive]{lang="EN-US"}[（端口收到对端的]{style="font-family:宋体"}[Announce]{lang="EN-US"}[报文后，计算出的状态），不跟踪外部时间信息，也不对外发布时间信息]{style="font-family:宋体"}
+·Passive：接口状态为Passive（端口收到对端的Announce报文后，计算出的状态），不跟踪外部时间信息，也不对外发布时间信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Master]{lang="EN-US"}]{#struct_0_19838_x1039_x426534241}[：接口状态为]{lang="EN-US" style="font-family:宋体"}[Master]{lang="EN-US"}[，对外发布时间信息]{lang="EN-US" style="font-family:宋体"}
+·Master：接口状态为Master，对外发布时间信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Premaster]{lang="EN-US"}]{#struct_0_19838_x1039_2035494609}[：接口状态为]{lang="EN-US" style="font-family:宋体"}[Premaster]{lang="EN-US"}[，]{lang="EN-US" style="font-family:宋体"}[Master]{lang="EN-US"}[状态前的临时状态]{lang="EN-US" style="font-family:宋体"}
+·Premaster：接口状态为Premaster，Master状态前的临时状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Listening]{lang="EN-US"}]{#struct_0_19838_x1039_x2123397370}[：接口状态为]{lang="EN-US" style="font-family:宋体"}[Listening]{lang="EN-US"}[（端口初始化后，即进入]{style="font-family:宋体"}[Listening]{lang="EN-US"}[状态）]{style="font-family:宋体"}[，不跟踪外部时间信息，也不对外发布时间信息]{lang="EN-US" style="font-family:宋体"}
+·Listening：接口状态为Listening（端口初始化后，即进入Listening状态），不跟踪外部时间信息，也不对外发布时间信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Faulty]{lang="EN-US"}]{#struct_0_19838_x1039_2011759981}[：接口状态为]{style="font-family:宋体"}[Faulty]{lang="EN-US"}[，该状态为]{style="font-family:宋体"}[PTP]{lang="EN-US"}[协议的错误状态（即检测到错误），接口不处理]{style="font-family:宋体"}[PTP]{lang="EN-US"}[协议报文]{style="font-family:宋体"}
+·Faulty：接口状态为Faulty，该状态为PTP协议的错误状态（即检测到错误），接口不处理PTP协议报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_19838_x1039_x413783878}[：接口状态为]{lang="EN-US" style="font-family:宋体"}[Disabled]{lang="EN-US"}[，]{lang="EN-US" style="font-family:宋体"}[接口上]{style="font-family:宋体"}[PTP]{lang="EN-US"}[协议未运行]{style="font-family:宋体"}[，接口不处理]{lang="EN-US" style="font-family:宋体"}[协议报文]{style="font-family:宋体"}
+·Disabled：接口状态为Disabled，接口上PTP协议未运行，接口不处理协议报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Initializing]{lang="EN-US"}]{#struct_0_19838_x1039_374633710}[：接口状态为]{lang="EN-US" style="font-family:宋体"}[Initializing]{lang="EN-US"}[，]{lang="EN-US" style="font-family:宋体"}[接口位于]{style="font-family:宋体"}[初始化状态，接口不处理]{lang="EN-US" style="font-family:宋体"}[协议报文]{style="font-family:宋体"}
+·Initializing：接口状态为Initializing，接口位于初始化状态，接口不处理协议报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[N/A]{lang="EN-US"}]{#struct_0_19838_x1039_624751595}[：表示无意义]{lang="EN-US" style="font-family:宋体"}
+·N/A：表示无意义
 
-[[Delay mechanism]{lang="EN-US"}]{#struct_0_19838_x1039_x2123200762}
+Delay mechanism
 
-[[接口的延时测量机制：]{style="font-family:宋体"}]{#struct_0_19838_x1039_x1144406626}
+接口的延时测量机制：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[End to End]{lang="EN-US"}]{#struct_0_19838_x1039_723708818}[：请求应答机制]{lang="EN-US" style="font-family:宋体"}
+·End to End：请求应答机制
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Peer to Peer]{lang="EN-US"}]{#struct_0_19838_x1039_x82075531}[：端延时机制]{lang="EN-US" style="font-family:宋体"}
+·Peer to Peer：端延时机制
 
-[[Clock step]{lang="EN-US"}]{#struct_0_19838_x1039_2023924651}
+Clock step
 
-[[时间戳的携带模式：]{style="font-family:宋体"}]{#struct_0_19838_x1039_x2123266298}
+时间戳的携带模式：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[One]{lang="EN-US"}]{#struct_0_19838_x1039_x353103379}[：表示单步模式]{lang="EN-US" style="font-family:宋体"}
+·One：表示单步模式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Two]{lang="EN-US"}]{#struct_0_19838_x1039_x1425042384}[：表示双步模式]{lang="EN-US" style="font-family:宋体"}
+·Two：表示双步模式
 
-[[Asymmetry correction]{lang="EN-US"}]{#struct_0_19838_x1039_677955975}
+Asymmetry correction
 
-[[非对称延迟校正时间，单位为纳秒]{style="font-family:宋体"}]{#struct_0_19838_x1039_x66126522}
+非对称延迟校正时间，单位为纳秒
 
-[[Clock ID]{lang="EN-US"}]{#struct_0_19838_x1039_x201410746}
+Clock ID
 
-[[接口所在设备的时钟编号]{style="font-family:宋体"}]{#struct_0_19838_x1039_1667887462}
+接口所在设备的时钟编号
 
-[[Port number]{lang="EN-US"}]{#struct_0_19838_x1039_900891398}
+Port number
 
-[[接口号]{style="font-family:宋体"}]{#struct_0_19838_x1039_1994116664}
+接口号
 
-[[PTP version]{lang="EN-US"}]{#struct_0_19838_x1039_x201476282}
+PTP version
 
-[[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_1634720416}[版本号：取值只能为]{style="font-family:宋体"}[2]{lang="EN-US"}[，表示]{style="font-family:宋体"}[PTP]{lang="EN-US"}[版本号为]{style="font-family:宋体"}[2]{lang="EN-US"}
+PTP版本号：取值只能为2，表示PTP版本号为2
 
-[[PTP enable]{lang="EN-US"}]{#struct_0_19838_x1039_1352144056}
+PTP enable
 
-[[接口的]{style="font-family:宋体"}[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_2087015051}[状态：]{style="font-family:宋体"}
+接口的PTP状态：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_19838_x1039_58700285}[：表示接口的]{lang="EN-US" style="font-family:宋体"}[PTP]{lang="EN-US"}[处于激活状态]{lang="EN-US" style="font-family:宋体"}
+·Enabled：表示接口的PTP处于激活状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_19838_x1039_x201279674}[：表示接口的]{lang="EN-US" style="font-family:宋体"}[PTP]{lang="EN-US"}[处于未激活状态]{lang="EN-US" style="font-family:宋体"}
+·Disabled：表示接口的PTP处于未激活状态
 
-[[Transport of PTP]{lang="EN-US"}]{#struct_0_19838_x1039_x1502475732}
+Transport of PTP
 
-[[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_1314638238}[报文封装格式：]{style="font-family:宋体"}
+PTP报文封装格式：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[User Datagram Protocol (IPv4)]{lang="EN-US"}]{#struct_0_19838_x1039_905292216}[：]{lang="EN-US" style="font-family:宋体"}[PTP]{lang="EN-US"}[报文采用]{lang="EN-US" style="font-family:宋体"}[UDP]{lang="EN-US"}[（]{lang="EN-US" style="font-family:宋体"}[IPv4]{lang="EN-US"}[）封装格式]{lang="EN-US" style="font-family:宋体"}
+·User Datagram Protocol (IPv4)：PTP报文采用UDP（IPv4）封装格式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IEEE 802.3/Ethernet]{lang="EN-US"}]{#struct_0_19838_x1039_x201345210}[：]{lang="EN-US" style="font-family:
-  宋体"}[PTP]{lang="EN-US"}[报文采用]{lang="EN-US" style="font-family:
-  宋体"}[IEEE 802.3/Ethernet]{lang="EN-US"}[封装格式]{lang="EN-US" style="font-family:宋体"}
+·IEEE 802.3/Ethernet：PTP报文采用IEEE 802.3/Ethernet封装格式
 
-[[Unicast destination address]{lang="EN-US"}]{#struct_0_19838_x1039_x1740266907}
+Unicast destination address
 
-[[采用]{style="font-family:宋体"}[UDP]{lang="EN-US"}]{#struct_0_19838_x1039_774380086}[（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[）]{style="font-family:宋体"}[封装格式的单播]{style="font-family:宋体"}[PTP]{lang="EN-US"}[报文的目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。未配置]{style="font-family:宋体"}**[ptp]{lang="EN-US"}**[ **unicast-destination**]{lang="EN-US"}[命令，不显示该字段]{style="font-family:宋体"}
+采用UDP（IPv4）封装格式的单播PTP报文的目的IP地址。未配置**ptp** **unicast-destination**命令，不显示该字段
 
  
 
-[[DSCP priority]{lang="EN-US"}]{#struct_0_19838_x1039_x1740070299}
+DSCP priority
 
-[[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_654294514}[报文封装]{style="font-family:宋体"}[格式]{style="font-family:宋体"}[为]{style="font-family:宋体"}[UDP]{lang="EN-US"}[（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[）]{style="font-family:宋体"}[时]{style="font-family:宋体"}[的]{style="font-family:宋体"}[DSCP]{lang="EN-US"}[优先级。未配置]{style="font-family:宋体"}**[ptp dscp]{lang="EN-US"}**[命令时，不显示该字段]{style="font-family:宋体"}
-
- 
-
-[[VLAN]{lang="EN-US"}]{#struct_0_19838_x1039_1409861930}
-
-[[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_x1016555650}[报文的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。未配置]{style="font-family:宋体"}**[ptp vlan]{lang="EN-US"}**[命令时，不显示该字段]{style="font-family:宋体"}
+PTP报文封装格式为UDP（IPv4）时的DSCP优先级。未配置**ptp dscp**命令时，不显示该字段
 
  
 
-[[Dot1p priority]{lang="EN-US"}]{#struct_0_19838_x1039_x1740135835}
+VLAN
 
-[[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_x713246184}[报文的]{style="font-family:宋体"}[802.1p]{lang="EN-US"}[优先级。未配置]{style="font-family:宋体"}**[ptp vlan]{lang="EN-US"}**[命令时，不显示该字段]{style="font-family:宋体"}
+PTP报文的VLAN。未配置**ptp vlan**命令时，不显示该字段
 
  
 
-[[Force state]{lang="EN-US"}]{#struct_0_19838_x1039_1229010953}
+Dot1p priority
 
-[[是否配置强制状态生效：]{style="font-family:宋体"}]{#struct_0_19838_x1039_403518435}
+PTP报文的802.1p优先级。未配置**ptp vlan**命令时，不显示该字段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Yes]{lang="EN-US"}]{#struct_0_19838_x1039_1788357958}[：表示已配置]{lang="EN-US" style="font-family:宋体"}
+ 
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No]{lang="EN-US"}]{#struct_0_19838_x1039_x201148602}[：表示未配置]{lang="EN-US" style="font-family:宋体"}
+Force state
 
-[[Announce interval (log mean)]{lang="EN-US"}]{#struct_0_19838_x1039_61183415}
+是否配置强制状态生效：
 
-[[Announce]{lang="EN-US"}]{#struct_0_19838_x1039_595951589}[报文的发送周期＝]{style="font-family:宋体"}[2*^value^*]{lang="EN-US"}[（单位为秒），本字段就是]{style="font-family:宋体"}*[value]{lang="EN-US"}*[的值]{style="font-family:宋体"}
+·Yes：表示已配置
 
-[[Announce receipt time out]{lang="EN-US"}]{#struct_0_19838_x1039_x201214138}
+·No：表示未配置
 
-[[Announce]{lang="EN-US"}]{#struct_0_19838_x1039_80200489}[报文的接收超时倍数，在倍数的发送周期内，若未收到主节点的]{style="font-family:宋体"}[Announce]{lang="EN-US"}[报文，则认为主节点失效]{style="font-family:宋体"}
+Announce interval (log mean)
 
-[[Sync interval (log mean)]{lang="EN-US"}]{#struct_0_19838_x1039_x64960060}
+Announce报文的发送周期＝2*^value^*（单位为秒），本字段就是*value*的值
 
-[[Sync]{lang="EN-US"}]{#struct_0_19838_x1039_261624207}[报文的发送周期＝]{style="font-family:宋体"}[2*^value^*]{lang="EN-US"}[（单位为秒），本字段就是]{style="font-family:宋体"}*[value]{lang="EN-US"}*[的值]{style="font-family:宋体"}
+Announce receipt time out
 
-[[Delay request interval (log mean)]{lang="EN-US"}]{#struct_0_19838_x1039_x201017530}
+Announce报文的接收超时倍数，在倍数的发送周期内，若未收到主节点的Announce报文，则认为主节点失效
 
-[[Delay_Req]{lang="EN-US"}]{#struct_0_19838_x1039_882134608}[报文的最小发送间隔＝]{style="font-family:宋体"}[2*^value^*]{lang="EN-US"}[（单位为秒），本字段就是]{style="font-family:宋体"}*[value]{lang="EN-US"}*[的值]{style="font-family:宋体"}
+Sync interval (log mean)
 
-[[Peer delay request interval (log mean)]{lang="EN-US"}]{#struct_0_19838_x1039_x716610404}
+Sync报文的发送周期＝2*^value^*（单位为秒），本字段就是*value*的值
 
-[[Pdelay_Req]{lang="EN-US"}]{#struct_0_19838_x1039_x201083066}[报文的发送周期＝]{style="font-family:宋体"}[2*^value^*]{lang="EN-US"}[（单位为秒），本字段就是]{style="font-family:宋体"}*[value]{lang="EN-US"}*[的值]{style="font-family:宋体"}
+Delay request interval (log mean)
 
-[[Mean path delay]{lang="EN-US"}]{#struct_0_19838_x1039_1644985313}
+Delay_Req报文的最小发送间隔＝2*^value^*（单位为秒），本字段就是*value*的值
 
-[[接口与对端的平均路径延时，单位为纳秒]{style="font-family:宋体"}]{#struct_0_19838_x1039_1333322972}
+Peer delay request interval (log mean)
 
-[ ]{lang="EN-US"}
+Pdelay_Req报文的发送周期＝2*^value^*（单位为秒），本字段就是*value*的值
 
-::: {#1317133954 .myid}
-[]{#_Toc304915245}[]{#_Toc404796724}[]{#struct_0_19838_x1039_x1534198157}
+Mean path delay
+
+接口与对端的平均路径延时，单位为纳秒
 
 **PTP \-- PTP配置命令 \-- display ptp parent**
 
 ------------------------------------------------------------------------
 
-[**[display ptp parent]{lang="EN-US"}**]{#struct_0_19838_x1039_857003741}[命令用来显示当前]{style="font-family:宋体"}[PTP]{lang="EN-US"}[设备父节点信息。]{style="font-family:宋体"}
+**[display ptp parent**]命令用来显示当前PTP设备父节点信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x200886458}
+【命令】
 
-[**[display ptp parent]{lang="EN-US"}**]{#struct_0_19838_x1039_x306849001}
+**[display ptp parent**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1295774887}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_19838_x1039_753829104}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1369143621}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x129526185}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_19838_x1039_1945507851}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x1793655767}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_19838_x1039_2088952170}
+mdc-operator
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x200951994}
+【使用指导】
 
-[[如果]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x1455921557}[和]{style="font-family:宋体"}[PTP mode]{lang="EN-US"}[没有指定、]{style="font-family:宋体"}[PTP mode]{lang="EN-US"}[指定为]{style="font-family:宋体"}[TC]{lang="EN-US"}[或配置了强制状态生效，则显示信息为空。]{style="font-family:宋体"}
+如果PTP profile和PTP mode没有指定、PTP mode指定为TC或配置了强制状态生效，则显示信息为空。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x489533241}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_1555877940}[显示当前]{style="font-family:宋体"}[PTP]{lang="EN-US"}[设备父节点信息。]{style="font-family:宋体"}
+\# 显示当前PTP设备父节点信息。
 
-[[\<Sysname\> display ptp parent]{lang="EN-US"}]{#struct_0_19838_x1039_x470551601}
+\<Sysname\> display ptp parent
 
-[Parent clock:]{lang="EN-US"}
+Parent clock:
 
-[ Parent clock ID                         : 000FE2-FFFE-FF0005]{lang="EN-US"}
+ Parent clock ID                         : 000FE2-FFFE-FF0005
 
-[ Parent port number                      : 15]{lang="EN-US"}
+ Parent port number                      : 15
 
-[ Observed parent offset (log variance)   : N/A]{lang="EN-US"}
+ Observed parent offset (log variance)   : N/A
 
-[ Observed parent clock phase change rate : N/A]{lang="EN-US"}
+ Observed parent clock phase change rate : N/A
 
-[Grandmaster clock:]{lang="EN-US"}
+Grandmaster clock:
 
-[ Grandmaster clock ID: 000FE2-FFFE-FF0000]{lang="EN-US"}
+ Grandmaster clock ID: 000FE2-FFFE-FF0000
 
-[ Grandmaster clock quality:]{lang="EN-US"}
+ Grandmaster clock quality:
 
-[  Class                 : 248]{lang="EN-US"}
+  Class                 : 248
 
-[  Accuracy              : 254]{lang="EN-US"}
+  Accuracy              : 254
 
-[  Offset (log variance) : 65535]{lang="EN-US"}
+  Offset (log variance) : 65535
 
-[  Priority1             : 128]{lang="EN-US"}
+  Priority1             : 128
 
-[  Priority2             : 128]{lang="EN-US"}
+  Priority2             : 128
 
-[[表1-5 ]{lang="EN-US"}[display ptp parent]{lang="EN-US"}]{#struct_0_19838_x1039_x201410745}[命令显示信息描述表]{style="font-family:黑体"}
+表1-5 display ptp parent命令显示信息描述表
 
-[]{#table_struct_0_x990245226}[[字段]{style="font-family:黑体"}]{#struct_0_19838_x1039_1668084070}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_19838_x1039_1882793534}
+描述
 
-[[Parent clock]{lang="EN-US"}]{#struct_0_19838_x1039_1640497785}
+Parent clock
 
-[[父时钟信息]{style="font-family:宋体"}]{#struct_0_19838_x1039_x1123615662}
+父时钟信息
 
-[[Parent clock ID]{lang="EN-US"}]{#struct_0_19838_x1039_203468494}
+Parent clock ID
 
-[[父时钟的编号]{style="font-family:宋体"}]{#struct_0_19838_x1039_x524994956}
+父时钟的编号
 
-[[Parent port number]{lang="EN-US"}]{#struct_0_19838_x1039_x201476281}
+Parent port number
 
-[[父时钟节点的输出接口号]{style="font-family:宋体"}]{#struct_0_19838_x1039_1634654880}
+父时钟节点的输出接口号
 
-[[Observed parent offset (log variance)]{lang="EN-US"}]{#struct_0_19838_x1039_1030177396}
+Observed parent offset (log variance)
 
-[[父时钟节点的偏差度量，]{style="font-family:宋体"}[N/A]{lang="EN-US"}]{#struct_0_19838_x1039_x1474578652}[表示无意义]{style="font-family:宋体"}
+父时钟节点的偏差度量，N/A表示无意义
 
-[[Observed parent clock phase change rate]{lang="EN-US"}]{#struct_0_19838_x1039_1074206895}
+Observed parent clock phase change rate
 
-[[父时钟节点的相位变化比率，]{style="font-family:宋体"}[N/A]{lang="EN-US"}]{#struct_0_19838_x1039_x1888620318}[表示无意义]{style="font-family:宋体"}
+父时钟节点的相位变化比率，N/A表示无意义
 
-[[Grandmaster clock]{lang="EN-US"}]{#struct_0_19838_x1039_x201279673}
+Grandmaster clock
 
-[[最优时钟节点信息]{style="font-family:宋体"}]{#struct_0_19838_x1039_x1502541268}
+最优时钟节点信息
 
-[[Grandmaster clock ID]{lang="EN-US"}]{#struct_0_19838_x1039_x981645086}
+Grandmaster clock ID
 
-[[最优时钟节点编号]{style="font-family:宋体"}]{#struct_0_19838_x1039_x463958981}
+最优时钟节点编号
 
-[[Grandmaster clock quality]{lang="EN-US"}]{#struct_0_19838_x1039_x548700967}
+Grandmaster clock quality
 
-[[最优时钟节点品质特性]{style="font-family:宋体"}]{#struct_0_19838_x1039_x201345209}
+最优时钟节点品质特性
 
-[[Class]{lang="EN-US"}]{#struct_0_19838_x1039_1229469704}
+Class
 
-[[最优时钟的时间等级值]{style="font-family:宋体"}]{#struct_0_19838_x1039_1574456527}
+最优时钟的时间等级值
 
-[[Accuracy]{lang="EN-US"}]{#struct_0_19838_x1039_x2043744218}
+Accuracy
 
-[[最优时钟的时间精度值]{style="font-family:宋体"}]{#struct_0_19838_x1039_x1283057336}
+最优时钟的时间精度值
 
-[[Offset (log variance)]{lang="EN-US"}]{#struct_0_19838_x1039_x201148601}
+Offset (log variance)
 
-[[最优时钟的偏差度量]{style="font-family:宋体"}]{#struct_0_19838_x1039_60986807}
+最优时钟的偏差度量
 
-[[Priority1]{lang="EN-US"}]{#struct_0_19838_x1039_1207846917}
+Priority1
 
-[[最优时钟优先级一的值]{style="font-family:宋体"}]{#struct_0_19838_x1039_1243810839}
+最优时钟优先级一的值
 
-[[Priority2]{lang="EN-US"}]{#struct_0_19838_x1039_x1732885809}
+Priority2
 
-[[最优时钟优先级二的值]{style="font-family:宋体"}]{#struct_0_19838_x1039_x201214137}
-
-[ ]{lang="EN-US"}
-
-::: {#-1080832621 .myid}
-[]{#_Toc404796725}[]{#struct_0_19838_x1039_80921385}
+最优时钟优先级二的值
 
 **PTP \-- PTP配置命令 \-- display ptp statistics**
 
 ------------------------------------------------------------------------
 
-[**[display ptp statistics]{lang="EN-US"}**]{#struct_0_19838_x1039_100771040}[命令用来显示]{style="font-family:宋体"}[PTP]{lang="EN-US"}[统计信息。]{style="font-family:宋体"}
+**[display ptp statistics**]命令用来显示PTP统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_276243337}
+【命令】
 
-[**[display ptp statistics ]{lang="EN-US"}**[\[ **interface** *interface-type* *interface-number* \]]{lang="EN-US"}]{#struct_0_19838_x1039_545432992}
+**[display ptp statistics ** **interface** *interface-type* *interface-number* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1126874001}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_19838_x1039_444948880}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1639984081}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x201017529}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_19838_x1039_881675857}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_1218560892}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_19838_x1039_x752876405}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x152029334}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type* *interface-number*]{lang="EN-US"}]{#struct_0_19838_x1039_604250595}[：显示指定接口上的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[统计信息。]{style="font-family:宋体"}*[interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}[表示接口类型和接口编号。如未指定本参数，将显示所有接口的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[统计信息。]{style="font-family:宋体"}
+**[interface** *interface-type* *interface-number*]：显示指定接口上的PTP统计信息。*interface-type* *interface-number*表示接口类型和接口编号。如未指定本参数，将显示所有接口的PTP统计信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_367118262}
+【使用指导】
 
-[[如果]{lang="EN-US" style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_1027347865}[和]{lang="EN-US" style="font-family:宋体"}[PTP mode]{lang="EN-US"}[没有指定，则显示信息为空。]{lang="EN-US" style="font-family:宋体"}
+如果PTP profile和PTP mode没有指定，则显示信息为空。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x448938138}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_x1600080246}[显示接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[统计信息。]{style="font-family:宋体"}
+\# 显示接口GigabitEthernet1/0/1上的PTP统计信息。
 
-[[\<Sysname\> display ptp statistics interface gigabitethernet 1/0/1]{lang="EN-US"}]{#struct_0_19838_x1039_x201083065}
+\<Sysname\> display ptp statistics interface gigabitethernet 1/0/1
 
-[                     Received packets]{lang="EN-US"}
+                     Received packets
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[Announce :0          Sync      :0          Signaling          :0]{lang="EN-US"}
+Announce :0          Sync      :0          Signaling          :0
 
-[DelayReq :0          DelayResp :0          FollowUp           :0]{lang="EN-US"}
+DelayReq :0          DelayResp :0          FollowUp           :0
 
-[PdelayReq:0          PdelayResp:0          PdelayRespFollowUp :0]{lang="EN-US"}
+PdelayReq:0          PdelayResp:0          PdelayRespFollowUp :0
 
-[ ]{lang="EN-US"}
+                     Sent packets
 
-[                     Sent packets]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+Announce :476        Sync      :2543       Signaling          :0
 
-[Announce :476        Sync      :2543       Signaling          :0]{lang="EN-US"}
+DelayReq :0          DelayResp :0          FollowUp           :2542
 
-[DelayReq :0          DelayResp :0          FollowUp           :2542]{lang="EN-US"}
+PdelayReq:238        PdelayResp:0          PdelayRespFollowUp :0
 
-[PdelayReq:238        PdelayResp:0          PdelayRespFollowUp :0]{lang="EN-US"}
+                     Discarded packets
 
-[ ]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                     Discarded packets]{lang="EN-US"}
+Announce :0          Sync      :0          Signaling          :0
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+DelayReq :0          DelayResp :0          FollowUp           :0
 
-[Announce :0          Sync      :0          Signaling          :0]{lang="EN-US"}
+PdelayReq:0          PdelayResp:0          PdelayRespFollowUp :0
 
-[DelayReq :0          DelayResp :0          FollowUp           :0]{lang="EN-US"}
+表1-6 display ptp statistics命令显示信息描述表
 
-[PdelayReq:0          PdelayResp:0          PdelayRespFollowUp :0]{lang="EN-US"}
+字段
 
-[[表1-6 ]{lang="EN-US"}[display ptp statistics]{lang="EN-US"}]{#struct_0_19838_x1039_1644788705}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x996018346}[[字段]{style="font-family:黑体"}]{#struct_0_19838_x1039_2050549836}
-:::
+Received packets
 
-[[描述]{style="font-family:黑体"}]{#struct_0_19838_x1039_x200886457}
+收到的PTP协议报文数量的统计信息
 
-[[Received packets]{lang="EN-US"}]{#struct_0_19838_x1039_x307045609}
+Sent packets
 
-[[收到的]{style="font-family:宋体"}[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_310065029}[协议报文数量的统计信息]{style="font-family:宋体"}
+发出的PTP协议报文数量的统计信息
 
-[[Sent packets]{lang="EN-US"}]{#struct_0_19838_x1039_x1151525983}
+Discarded packets
 
-[[发出的]{style="font-family:宋体"}[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_1325105124}[协议报文数量的统计信息]{style="font-family:宋体"}
-
-[[Discarded packets]{lang="EN-US"}]{#struct_0_19838_x1039_x1795828242}
-
-[[丢弃的]{style="font-family:宋体"}[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_x200951993}[协议报文数量的统计信息]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#881671741 .myid}
-[]{#_Toc404796726}[]{#struct_0_19838_x1039_x1455724949}
+丢弃的PTP协议报文数量的统计信息
 
 **PTP \-- PTP配置命令 \-- display ptp time-property**
 
 ------------------------------------------------------------------------
 
-[**[display ptp time-property]{lang="EN-US"}**]{#struct_0_19838_x1039_x696127407}[命令用来显示]{style="font-family:
-宋体"}[PTP]{lang="EN-US"}[时钟节点时间特性。]{style="font-family:宋体"}
+**[display ptp time-property**]命令用来显示PTP时钟节点时间特性。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1404659140}
+【命令】
 
-[**[display ptp time-property]{lang="EN-US"}**]{#struct_0_19838_x1039_x1923036467}
+**[display ptp time-property**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1112908957}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_19838_x1039_90660732}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1012817208}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x1124241022}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_19838_x1039_x201410748}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_1667232102}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_19838_x1039_x1406714557}
+mdc-operator
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_995379408}
+【使用指导】
 
-[[如果]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x775983020}[和]{style="font-family:宋体"}[PTP mode]{lang="EN-US"}[没有指定、]{style="font-family:宋体"}[PTP mode]{lang="EN-US"}[指定为]{style="font-family:宋体"}[TC]{lang="EN-US"}[或配置了强制状态生效，则显示信息为空。]{style="font-family:宋体"}
+如果PTP profile和PTP mode没有指定、PTP mode指定为TC或配置了强制状态生效，则显示信息为空。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x955680896}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_287175378}[显示]{style="font-family:宋体"}[PTP]{lang="EN-US"}[节点时间特性。]{style="font-family:宋体"}
+\# 显示PTP节点时间特性。
 
-[[\<Sysname\> display ptp time-property]{lang="EN-US"}]{#struct_0_19838_x1039_x201476284}
+\<Sysname\> display ptp time-property
 
-[PTP clock time property:]{lang="EN-US"}
+PTP clock time property:
 
-[ Current UTC offset valid : True]{lang="EN-US"}
+ Current UTC offset valid : True
 
-[ Current UTC offset       : 33]{lang="EN-US"}
+ Current UTC offset       : 33
 
-[ Leap59 : Yes]{lang="EN-US"}
+ Leap59 : Yes
 
-[ Leap61 : No]{lang="EN-US"}
+ Leap61 : No
 
-[ Time traceable      : True]{lang="EN-US"}
+ Time traceable      : True
 
-[ Frequency traceable : True]{lang="EN-US"}
+ Frequency traceable : True
 
-[ PTP timescale       : True]{lang="EN-US"}
+ PTP timescale       : True
 
-[ Time source         : 0xA0 (Internal oscillator)]{lang="EN-US"}
+ Time source         : 0xA0 (Internal oscillator)
 
-[[表1-7 ]{lang="EN-US"}[display ptp time-property]{lang="EN-US"}]{#struct_0_19838_x1039_1634851488}[命令显示信息描述表]{style="font-family:黑体"}
+表1-7 display ptp time-property命令显示信息描述表
 
-[]{#table_struct_0_x1000755306}[[字段]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1374576769}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_19838_x1039_1101746886}
+描述
 
-[[PTP clock time property]{lang="EN-US"}]{#struct_0_19838_x1039_x346813257}
+PTP clock time property
 
-[[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_1282317618}[时钟节点时间特性]{style="font-family:宋体"}
+PTP时钟节点时间特性
 
-[[Current UTC offset valid]{lang="EN-US"}]{#struct_0_19838_x1039_x201279676}
+Current UTC offset valid
 
-[[当前偏移量是否有效：]{style="font-family:宋体"}]{#struct_0_19838_x1039_x1502344660}
+当前偏移量是否有效：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[True]{lang="EN-US"}]{#struct_0_19838_x1039_x655186938}[：有效]{lang="EN-US" style="font-family:宋体"}
+·True：有效
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[False]{lang="EN-US"}]{#struct_0_19838_x1039_x2000341404}[：无效]{lang="EN-US" style="font-family:宋体"}
+·False：无效
 
-[[Current UTC offset]{lang="EN-US"}]{#struct_0_19838_x1039_1315409923}
+Current UTC offset
 
-[[最优时钟的]{style="font-family:宋体"}[UTC]{lang="EN-US"}]{#struct_0_19838_x1039_x219925280}[时间相对于]{style="font-family:宋体"}[TAI]{lang="EN-US"}[时间的累计偏移量（单位为秒）]{style="font-family:宋体"}
+最优时钟的UTC时间相对于TAI时间的累计偏移量（单位为秒）
 
-[[Leap59]{lang="EN-US"}]{#struct_0_19838_x1039_x201345212}
+Leap59
 
-[[是否对累计偏移量减一：]{style="font-family:宋体"}]{#struct_0_19838_x1039_1229142025}
+是否对累计偏移量减一：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Yes]{lang="EN-US"}]{#struct_0_19838_x1039_x1926226699}[：表示是]{lang="EN-US" style="font-family:宋体"}
+·Yes：表示是
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No]{lang="EN-US"}]{#struct_0_19838_x1039_1243276775}[：表示不是]{lang="EN-US" style="font-family:宋体"}
+·No：表示不是
 
-[[Leap61]{lang="EN-US"}]{#struct_0_19838_x1039_x1356822409}
+Leap61
 
-[[是否对累计偏移量加一：]{style="font-family:宋体"}]{#struct_0_19838_x1039_x1354292920}
+是否对累计偏移量加一：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Yes]{lang="EN-US"}]{#struct_0_19838_x1039_x201148604}[：表示是]{lang="EN-US" style="font-family:宋体"}
+·Yes：表示是
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No]{lang="EN-US"}]{#struct_0_19838_x1039_60790199}[：表示不是]{lang="EN-US" style="font-family:宋体"}
+·No：表示不是
 
-[[Time traceable]{lang="EN-US"}]{#struct_0_19838_x1039_2095123186}
+Time traceable
 
-[[时间可跟踪性：]{style="font-family:宋体"}]{#struct_0_19838_x1039_x1601966590}
+时间可跟踪性：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Ture]{lang="EN-US"}]{#struct_0_19838_x1039_1646572593}[：]{style="font-family:宋体"}[PTP]{lang="EN-US"}[时间可跟踪]{style="font-family:宋体"}
+·Ture：PTP时间可跟踪
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[False]{lang="EN-US"}]{#struct_0_19838_x1039_x201214140}[：]{style="font-family:宋体"}[PTP]{lang="EN-US"}[时间不可跟踪]{style="font-family:宋体"}
+·False：PTP时间不可跟踪
 
-[[Frequency traceable]{lang="EN-US"}]{#struct_0_19838_x1039_80724776}
+Frequency traceable
 
-[[频率可跟踪性：]{style="font-family:宋体"}]{#struct_0_19838_x1039_153709846}
+频率可跟踪性：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Ture]{lang="EN-US"}]{#struct_0_19838_x1039_1137228280}[：频率可跟踪]{lang="EN-US" style="font-family:宋体"}
+·Ture：频率可跟踪
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[False]{lang="EN-US"}]{#struct_0_19838_x1039_x201017532}[：频率不可跟踪]{lang="EN-US" style="font-family:宋体"}
+·False：频率不可跟踪
 
-[[PTP timescale]{lang="EN-US"}]{#struct_0_19838_x1039_882003536}
+PTP timescale
 
-[[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_2028269466}[时间标识：]{style="font-family:宋体"}
+PTP时间标识：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[True]{lang="EN-US"}]{#struct_0_19838_x1039_x1413988214}[：]{style="font-family:宋体"}[PTP]{lang="EN-US"}[时间标识]{style="font-family:宋体"}
+·True：PTP时间标识
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[False]{lang="EN-US"}]{#struct_0_19838_x1039_491358212}[：非]{style="font-family:宋体"}[PTP]{lang="EN-US"}[时间标识]{style="font-family:宋体"}
+·False：非PTP时间标识
 
-[[Time source]{lang="EN-US"}]{#struct_0_19838_x1039_x201083068}
+Time source
 
-[[最优时钟的属性值，代表的时钟类别包括：]{style="font-family:宋体"}]{#struct_0_19838_x1039_1645116385}
+最优时钟的属性值，代表的时钟类别包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Atomic clock]{lang="EN-US"}]{#struct_0_19838_x1039_x1370716148}[：原子时钟]{lang="EN-US" style="font-family:宋体"}
+·Atomic clock：原子时钟
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[GPS]{lang="EN-US"}]{#struct_0_19838_x1039_1677239175}[：]{lang="EN-US" style="font-family:宋体"}[Global Positioning System]{lang="EN-US"}[，全球定位系统]{lang="EN-US" style="font-family:
-  宋体"}
+·GPS：Global Positioning System，全球定位系统
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Handset]{lang="EN-US"}]{#struct_0_19838_x1039_x200886460}[：手持设备]{lang="EN-US" style="font-family:宋体"}
+·Handset：手持设备
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Internal oscillator]{lang="EN-US"}]{#struct_0_19838_x1039_x307373286}[：内部振荡器]{lang="EN-US" style="font-family:
-  宋体"}
+·Internal oscillator：内部振荡器
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NTP]{lang="EN-US"}]{#struct_0_19838_x1039_1871477870}[：]{lang="EN-US" style="font-family:宋体"}[Network Time Protocol]{lang="EN-US"}[，网络时间协议]{lang="EN-US" style="font-family:
-  宋体"}
+·NTP：Network Time Protocol，网络时间协议
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Other]{lang="EN-US"}]{#struct_0_19838_x1039_x200951996}[：其他]{lang="EN-US" style="font-family:宋体"}
+·Other：其他
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_x1456052629}[：]{lang="EN-US" style="font-family:宋体"}[Precision Time Protocol]{lang="EN-US"}[，精确时间协议]{lang="EN-US" style="font-family:
-  宋体"}
+·PTP：Precision Time Protocol，精确时间协议
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Terrestrial radio]{lang="EN-US"}]{#struct_0_19838_x1039_2123132906}[：陆基无线电]{lang="EN-US" style="font-family:
-  宋体"}
+·Terrestrial radio：陆基无线电
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown]{lang="EN-US"}]{#struct_0_19838_x1039_1602097204}[：未知]{lang="EN-US" style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-784425857 .myid}
-[]{#_Toc404796727}[]{#struct_0_19838_x1039_x744324678}
+·Unknown：未知
 
 **PTP \-- PTP配置命令 \-- ptp active force-state**
 
 ------------------------------------------------------------------------
 
-[**[ptp active force-state]{lang="EN-US"}**]{#struct_0_19838_x1039_x201410747}[命令用来配置强制状态生效。]{style="font-family:宋体"}
+**[ptp active force-state**]命令用来配置强制状态生效。
 
-[**[undo ptp active force-state]{lang="EN-US"}**]{#struct_0_19838_x1039_1667952998}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo ptp active force-state**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_126303201}
+【命令】
 
-[**[ptp]{lang="EN-US"}**[ **active** **force-state**]{lang="EN-US"}]{#struct_0_19838_x1039_682769665}
+**[ptp** **active** **force-state**]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **active** **force-state**]{lang="EN-US"}]{#struct_0_19838_x1039_x1032180740}
+**[undo** **ptp** **active** **force-state**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1167139390}
+【缺省情况】
 
-[[未配置强制状态生效功能。]{style="font-family:宋体"}]{#struct_0_19838_x1039_x1216927042}
+未配置强制状态生效功能。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_253404855}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_19838_x1039_x201476283}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1634785952}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_609865133}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x363018906}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x629179512}
+【使用指导】
 
-[[必须先配置]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_922294854}[和]{style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{style="font-family:宋体"}
+必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1215690669}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_x1231354659}[配置强制状态生效。]{style="font-family:宋体"}
+\# 配置强制状态生效。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_x201279675}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+Sysname ptp mode oc
 
-[\[Sysname\] ptp active force-state]{lang="EN-US"}
+Sysname ptp active force-state
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1502410196}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **profile**]{lang="EN-US"}]{#struct_0_19838_x1039_422878814}
+·**ptp** **profile**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **mode**]{lang="EN-US"}]{#struct_0_19838_x1039_x1189624802}
+·**ptp** **mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp force-state]{lang="EN-US"}**]{#struct_0_19838_x1039_678723803}
-:::
-
-::: {#1143437204 .myid}
-[]{#_Toc404796728}[]{#struct_0_19838_x1039_x1702710061}[]{#_Toc304915246}
+·**ptp force-state**
 
 **PTP \-- PTP配置命令 \-- ptp announce-interval**
 
 ------------------------------------------------------------------------
 
-[**[ptp]{lang="EN-US"}**[ **announce-interval**]{lang="EN-US"}]{#struct_0_19838_x1039_2065726680}[命令用来配置]{style="font-family:宋体"}[Announce]{lang="EN-US"}[报文的发送周期。]{style="font-family:宋体"}
+**[ptp** **announce-interval**]命令用来配置Announce报文的发送周期。
 
-[**[undo]{lang="EN-US"}**[ **ptp** **announce-interval**]{lang="EN-US"}]{#struct_0_19838_x1039_263258822}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **ptp** **announce-interval**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1033874834}
+【命令】
 
-[**[ptp]{lang="EN-US"}**[ **announce-interval** *value*]{lang="EN-US"}]{#struct_0_19838_x1039_x201345211}
+**[ptp** **announce-interval** *value*]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **announce-interval**]{lang="EN-US"}]{#struct_0_19838_x1039_1228945417}
+**[undo** **ptp** **announce-interval**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_60675305}
+【缺省情况】
 
-[[不同]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_984040229}[的缺省情况不同：]{style="font-family:宋体"}
+不同PTP profile的缺省情况不同：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_2138339259}[为]{lang="EN-US" style="font-family:宋体"}[IEEE 1588 ]{lang="EN-US"}[v]{lang="EN-US"}[ersion 2]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}[Announce]{lang="EN-US"}[报文的发送周期为]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}[（即]{lang="EN-US" style="font-family:宋体"}[2^1^]{lang="EN-US"}[）秒。]{lang="EN-US" style="font-family:宋体"}
+·当PTP profile为IEEE 1588 version 2时，Announce报文的发送周期为2（即2^1^）秒。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x1089783761}[为]{lang="EN-US" style="font-family:宋体"}[IEEE 802.1AS]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}[Announce]{lang="EN-US"}[报文的发送周期为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[（即]{lang="EN-US" style="font-family:宋体"}[2^0^]{lang="EN-US"}[）秒。]{lang="EN-US" style="font-family:宋体"}
+·当PTP profile为IEEE 802.1AS时，Announce报文的发送周期为1（即2^0^）秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x819107280}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_19838_x1039_x2039331155}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x201148603}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_61117879}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x5936873}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x340542459}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_19838_x1039_913057790}[：]{style="font-family:宋体"}[Announce]{lang="EN-US"}[报文的发送周期＝]{style="font-family:宋体"}[2*^value^*]{lang="EN-US"}[，单位为秒。当]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}[为]{style="font-family:宋体"}[IEEE 1588 version 2]{lang="EN-US"}[时，]{style="font-family:宋体"}*[value]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[4]{lang="EN-US"}[；当]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}[为]{style="font-family:宋体"}[IEEE 802.1AS]{lang="EN-US"}[时，]{style="font-family:宋体"}*[value]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[6]{lang="EN-US"}[。]{style="font-family:
-宋体"}
+*[value*]：Announce报文的发送周期＝2*^value^*，单位为秒。当PTP profile为IEEE 1588 version 2时，*value*的取值范围为0～4；当PTP profile为IEEE 802.1AS时，*value*的取值范围为0～6。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1469371599}
+【使用指导】
 
-[[必须先配置]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_134924419}[和]{style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{style="font-family:宋体"}
+必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_359035299}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_x1827641702}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置]{style="font-family:宋体"}[Announce]{lang="EN-US"}[报文的发送周期为]{style="font-family:宋体"}[4]{lang="EN-US"}[（即]{style="font-family:宋体"}[2^2^]{lang="EN-US"}[）秒。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置Announce报文的发送周期为4（即2^2^）秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_x201214139}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+Sysname ptp mode oc
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ptp announce-interval 2]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 ptp announce-interval 2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_80266025}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp profile]{lang="EN-US"}**]{#struct_0_19838_x1039_x455733728}
+·**ptp profile**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp mode]{lang="EN-US"}**]{#struct_0_19838_x1039_433755357}
-:::
-
-::: {#-263787410 .myid}
-[]{#_Toc404796729}[]{#struct_0_19838_x1039_1339913435}[]{#_Toc304915247}
+·**ptp mode**
 
 **PTP \-- PTP配置命令 \-- ptp announce-timeout**
 
 ------------------------------------------------------------------------
 
-[**[ptp]{lang="EN-US"}**[ **announce-timeout**]{lang="EN-US"}]{#struct_0_19838_x1039_x28342130}[命令用来配置]{style="font-family:宋体"}[Announce]{lang="EN-US"}[报文的接收超时倍数。]{style="font-family:宋体"}
+**[ptp** **announce-timeout**]命令用来配置Announce报文的接收超时倍数。
 
-[**[undo]{lang="EN-US"}**[ **ptp** **announce-timeout**]{lang="EN-US"}]{#struct_0_19838_x1039_x1368082043}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **ptp** **announce-timeout**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x540501610}
+【命令】
 
-[**[ptp]{lang="EN-US"}**[ **announce-timeout** *multiple-value*]{lang="EN-US"}]{#struct_0_19838_x1039_x201017531}
+**[ptp** **announce-timeout** *multiple-value*]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **announce-timeout**]{lang="EN-US"}]{#struct_0_19838_x1039_882200144}
+**[undo** **ptp** **announce-timeout**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1902821896}
+【缺省情况】
 
-[[Announce]{lang="EN-US"}]{#struct_0_19838_x1039_1211733892}[报文的接收超时倍数为]{style="font-family:宋体"}[3]{lang="EN-US"}[。]{style="font-family:宋体"}
+Announce报文的接收超时倍数为3。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_276145900}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_19838_x1039_1112283025}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1202825108}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x1613403671}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x1035708993}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x201083067}
+【参数】
 
-[*[multiple-value]{lang="EN-US"}*]{#struct_0_19838_x1039_1644919777}[：表示]{style="font-family:宋体"}[Announce]{lang="EN-US"}[报文的接收超时倍数，取值范围为]{style="font-family:宋体"}[2]{lang="EN-US"}[～]{style="font-family:宋体"}[10]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[multiple-value*]：表示Announce报文的接收超时倍数，取值范围为2～10。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_506027046}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[必须先配置]{lang="EN-US" style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_2123907844}[和]{lang="EN-US" style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{lang="EN-US" style="font-family:宋体"}
+·必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[主节点会周期性地发送]{lang="EN-US" style="font-family:宋体"}[Announce]{lang="EN-US"}]{#struct_0_19838_x1039_51229047}[报文给从节点，当]{lang="EN-US" style="font-family:宋体"}[PTP profile]{lang="EN-US"}[为]{lang="EN-US" style="font-family:宋体"}[IEEE 1588 ]{lang="EN-US"}[v]{lang="EN-US"}[ersion 2]{lang="EN-US"}[时，如果从节点在本端配置的]{lang="EN-US" style="font-family:宋体"}[Announce]{lang="EN-US"}[报文发送周期的]{lang="EN-US" style="font-family:宋体"}*[multiple-value]{lang="EN-US"}*[倍时间之内未收到主节点发来的]{lang="EN-US" style="font-family:宋体"}[Announce]{lang="EN-US"}[报文，便认为该主节点失效；当]{lang="EN-US" style="font-family:宋体"}[PTP profile]{lang="EN-US"}[为]{lang="EN-US" style="font-family:宋体"}[IEEE 802.1AS]{lang="EN-US"}[时，如果从节点在对端配置的]{lang="EN-US" style="font-family:宋体"}[Announce]{lang="EN-US"}[报文发送周期的]{lang="EN-US" style="font-family:宋体"}*[multiple-value]{lang="EN-US"}*[倍时间之内未收到主节点发来的]{lang="EN-US" style="font-family:宋体"}[Announce]{lang="EN-US"}[报文，便认为该主节点失效。]{lang="EN-US" style="font-family:宋体"}
+·主节点会周期性地发送Announce报文给从节点，当PTP profile为IEEE 1588 version 2时，如果从节点在本端配置的Announce报文发送周期的*multiple-value*倍时间之内未收到主节点发来的Announce报文，便认为该主节点失效；当PTP profile为IEEE 802.1AS时，如果从节点在对端配置的Announce报文发送周期的*multiple-value*倍时间之内未收到主节点发来的Announce报文，便认为该主节点失效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[为了保证]{style="font-family:宋体"}]{#struct_0_19838_x1039_x1338093268}[PTP]{lang="EN-US"}[网络的稳定，请根据网络环境配置合理的值。一般情况下，建议将]{style="font-family:宋体"}[Announce]{lang="EN-US"}[报文的接收超时倍数配置为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[7]{lang="EN-US"}[。]{style="font-family:
-宋体"}
+·为了保证PTP网络的稳定，请根据网络环境配置合理的值。一般情况下，建议将Announce报文的接收超时倍数配置为5～7。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1229811759}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_1220323190}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置]{style="font-family:宋体"}[Announce]{lang="EN-US"}[报文的接收超时倍数为]{style="font-family:宋体"}[5]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置Announce报文的接收超时倍数为5。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_x200886459}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+Sysname ptp mode oc
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ptp announce-timeout 5]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 ptp announce-timeout 5
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x306914537}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp announce-interval]{lang="EN-US"}**]{#struct_0_19838_x1039_1032504370}
+·**ptp announce-interval**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp mode]{lang="EN-US"}**]{#struct_0_19838_x1039_1139360263}
+·**ptp mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp profile]{lang="EN-US"}**]{#struct_0_19838_x1039_x1464920772}
-:::
-
-::: {#1290654071 .myid}
-[]{#_Toc404796730}[]{#struct_0_19838_x1039_x1238431265}[]{#_Toc304915248}
+·**ptp profile**
 
 **PTP \-- PTP配置命令 \-- ptp asymmetry-correction**
 
 ------------------------------------------------------------------------
 
-[**[ptp]{lang="EN-US"}**[ **asymmetry-correction**]{lang="EN-US"}]{#struct_0_19838_x1039_x1742785657}[命令用来配置非对称延迟校正时间。]{style="font-family:宋体"}
+**[ptp** **asymmetry-correction**]命令用来配置非对称延迟校正时间。
 
-[**[undo]{lang="EN-US"}**[ **ptp** **asymmetry-correction**]{lang="EN-US"}]{#struct_0_19838_x1039_28253749}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **ptp** **asymmetry-correction**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x200951995}
+【命令】
 
-[**[ptp]{lang="EN-US"}**[ **asymmetry-correction** { **minus** \| **plus** } *value*]{lang="EN-US"}]{#struct_0_19838_x1039_x1455856021}
+**[ptp**[ **asymmetry-correction** { **minus** \| **plus** } *value*]]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **asymmetry-correction**]{lang="EN-US"}]{#struct_0_19838_x1039_1214040751}
+**[undo** **ptp** **asymmetry-correction**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x431356632}
+【缺省情况】
 
-[[接口的非对称延迟校正时间为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_19838_x1039_x563676929}[纳秒，即不进行校正。]{style="font-family:宋体"}
+接口的非对称延迟校正时间为0纳秒，即不进行校正。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1209475803}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_19838_x1039_x452634656}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1756438626}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_1852164454}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x201410750}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1667756389}
+【参数】
 
-[**[minus]{lang="EN-US"}**]{#struct_0_19838_x1039_540282644}[：表示进行负的非对称延迟校正。]{style="font-family:宋体"}
+**[minus**]：表示进行负的非对称延迟校正。
 
-[**[plus]{lang="EN-US"}**]{#struct_0_19838_x1039_x172492112}[：表示进行正的非对称延迟校正。]{style="font-family:宋体"}
+**[plus**]：表示进行正的非对称延迟校正。
 
-[*[value]{lang="EN-US"}*]{#struct_0_19838_x1039_x847516748}[：表示非对称延迟的校正时间值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[2000000]{lang="EN-US"}[，单位为纳秒。]{style="font-family:宋体"}
+*[value*]：表示非对称延迟的校正时间值，取值范围为0～2000000，单位为纳秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1699523183}
+【使用指导】
 
-[[必须先配置]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x1158459476}[和]{style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{style="font-family:宋体"}
+必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x779729872}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_x101258961}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置非对称延迟的校正时间]{style="font-family:宋体"}[100]{lang="EN-US"}[纳秒。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置非对称延迟的校正时间100纳秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_x201476286}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+Sysname ptp mode oc
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ptp asymmetry-correction plus 100]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 ptp asymmetry-correction plus 100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1634982560}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp mode]{lang="EN-US"}**]{#struct_0_19838_x1039_531103023}
+·**ptp mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **profile**]{lang="EN-US"}]{#struct_0_19838_x1039_1562702882}
-:::
-
-::: {#1715489589 .myid}
-[]{#_Toc404796731}[]{#struct_0_19838_x1039_x1986577240}[]{#_Toc304915249}
+·**ptp** **profile**
 
 **PTP \-- PTP配置命令 \-- ptp clock-source**
 
 ------------------------------------------------------------------------
 
-[**[ptp]{lang="EN-US"}[ clock-source]{lang="EN-US"}**]{#struct_0_19838_x1039_x969734319}[命令用来配置外接]{style="font-family:宋体"}[ToD]{lang="EN-US"}[时钟源的相关参数。]{style="font-family:宋体"}
+**[ptp clock-source**]命令用来配置外接ToD时钟源的相关参数。
 
-[**[undo ptp]{lang="EN-US"}[ clock-source]{lang="EN-US"}**]{#struct_0_19838_x1039_1454765012}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ptp clock-source**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x201279678}
+【命令】
 
-[**[ptp]{lang="EN-US"}[ clock-source ]{lang="EN-US"}**[{ **tod0** \| **tod1** }]{lang="EN-US"}[ { **accuracy** *acc-value* \| **class** *class-value* \| **time-source** *ts-value* }]{lang="EN-US"}]{#struct_0_19838_x1039_1334821356}
+**[ptp clock-source **[{ **tod0** \| **tod1** }  { **accuracy** *acc-value* \| **class** *class-value* \| **time-source** *ts-value* }]]
 
-[**[undo ptp]{lang="EN-US"}[ clock-source ]{lang="EN-US"}**[{ **tod0** \| **tod1** } ]{lang="EN-US"}[{ **accuracy** \| **class** \| **time-source** }]{lang="EN-US"}]{#struct_0_19838_x1039_x173986361}
+**[undo ptp clock-source **[{ **tod0** \| **tod1** }  { **accuracy** \| **class** \| **time-source** }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x118055045}
+【缺省情况】
 
-[[外接]{style="font-family:宋体"}[ToD]{lang="EN-US"}]{#struct_0_19838_x1039_1531522950}[时钟源的时间精度值为]{style="font-family:宋体"}[32]{lang="EN-US"}[，时间等级值为]{style="font-family:宋体"}[6]{lang="EN-US"}[，属性值为]{style="font-family:宋体"}[32]{lang="EN-US"}[。]{style="font-family:宋体"}
+外接ToD时钟源的时间精度值为32，时间等级值为6，属性值为32。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1935934040}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_19838_x1039_x271259898}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_223144033}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x201345214}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_1228748809}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1986668457}
+【参数】
 
-[**[tod0]{lang="EN-US"}**]{#struct_0_19838_x1039_x1251674378}[：表示配置第一路外接]{style="font-family:宋体"}[ToD]{lang="EN-US"}[时钟源的参数。]{style="font-family:宋体"}
+**[tod0**]：表示配置第一路外接ToD时钟源的参数。
 
-[**[tod1]{lang="EN-US"}**]{#struct_0_19838_x1039_x174051897}[：表示配置第二路外接]{style="font-family:宋体"}[ToD]{lang="EN-US"}[时钟源的参数。本参数的支持情况和设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[tod1**]：表示配置第二路外接ToD时钟源的参数。本参数的支持情况和设备的型号有关，请以设备的实际情况为准。
 
-[**[accuracy]{lang="EN-US"}**[ *acc-value*]{lang="EN-US"}]{#struct_0_19838_x1039_729998589}[：表示时钟的时间精度。]{style="font-family:宋体"}*[acc-value]{lang="EN-US"}*[为时间精度值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[，数值越小精度越高，具体取值及其含义如]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-8]{lang="EN-US"}](?1715489589#_Ref268612052)[所示。]{style="font-family:宋体"}
+**[accuracy** *acc-value*]：表示时钟的时间精度。*acc-value*为时间精度值，取值范围为0～255，数值越小精度越高，具体取值及其含义如[表]1-8(?1715489589#_Ref268612052)所示。
 
-[]{#struct_0_19838_x1039_x2128896550}[[表1-8 ]{lang="EN-US"}[时间精度值及其含义]{style="font-family:
-黑体"}]{#_Ref268612052}
+表1-8 时间精度值及其含义
 
-[]{#table_struct_0_x999408810}[[时间精度值（十六进制）]{style="font-family:黑体"}]{#struct_0_19838_x1039_2126317130}
-:::
+时间精度值（十六进制）
 
-[[含义]{style="font-family:黑体"}]{#struct_0_19838_x1039_x201148606}
+含义
 
-[[00]{lang="EN-US"}]{#struct_0_19838_x1039_60921271}[～]{style="font-family:宋体"}[1F]{lang="EN-US"}
+00～1F
 
-[[Reserved]{lang="EN-US"}]{#struct_0_19838_x1039_x344474459}[（保留）]{style="font-family:宋体"}
+Reserved（保留）
 
-[[20]{lang="EN-US"}]{#struct_0_19838_x1039_1804353253}
+20
 
-[[时间精确到]{style="font-family:宋体"}[25]{lang="EN-US"}]{#struct_0_19838_x1039_1667215215}[纳秒（]{style="font-family:宋体"}[1]{lang="EN-US"}[纳秒＝]{style="font-family:宋体"}[10^-9^]{lang="EN-US"}[秒）以内]{style="font-family:宋体"}
+时间精确到25纳秒（1纳秒＝10^-9^秒）以内
 
-[[21]{lang="EN-US"}]{#struct_0_19838_x1039_141662997}
+21
 
-[[时间精确到]{style="font-family:宋体"}[100]{lang="EN-US"}]{#struct_0_19838_x1039_x294439655}[纳秒以内]{style="font-family:宋体"}
+时间精确到100纳秒以内
 
-[[22]{lang="EN-US"}]{#struct_0_19838_x1039_x201214142}
+22
 
-[[时间精确到]{style="font-family:宋体"}[250]{lang="EN-US"}]{#struct_0_19838_x1039_80593704}[纳秒以内]{style="font-family:宋体"}
+时间精确到250纳秒以内
 
-[[23]{lang="EN-US"}]{#struct_0_19838_x1039_1211831838}
+23
 
-[[时间精确到]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_19838_x1039_1438289795}[微秒（]{style="font-family:宋体"}[1]{lang="EN-US"}[微秒＝]{style="font-family:宋体"}[10^-6^]{lang="EN-US"}[秒）以内]{style="font-family:宋体"}
+时间精确到1微秒（1微秒＝10^-6^秒）以内
 
-[[24]{lang="EN-US"}]{#struct_0_19838_x1039_387204497}
+24
 
-[[时间精确到]{style="font-family:宋体"}[2.5]{lang="EN-US"}]{#struct_0_19838_x1039_x201017534}[微秒以内]{style="font-family:宋体"}
+时间精确到2.5微秒以内
 
-[[25]{lang="EN-US"}]{#struct_0_19838_x1039_882396752}
+25
 
-[[时间精确到]{style="font-family:宋体"}[10]{lang="EN-US"}]{#struct_0_19838_x1039_701749751}[微秒以内]{style="font-family:宋体"}
+时间精确到10微秒以内
 
-[[26]{lang="EN-US"}]{#struct_0_19838_x1039_1953128277}
+26
 
-[[时间精确到]{style="font-family:宋体"}[25]{lang="EN-US"}]{#struct_0_19838_x1039_1509476813}[微秒以内]{style="font-family:宋体"}
+时间精确到25微秒以内
 
-[[27]{lang="EN-US"}]{#struct_0_19838_x1039_x201083070}
+27
 
-[[时间精确到]{style="font-family:宋体"}[100]{lang="EN-US"}]{#struct_0_19838_x1039_1644592096}[微秒以内]{style="font-family:宋体"}
+时间精确到100微秒以内
 
-[[28]{lang="EN-US"}]{#struct_0_19838_x1039_2111789571}
+28
 
-[[时间精确到]{style="font-family:宋体"}[250]{lang="EN-US"}]{#struct_0_19838_x1039_134490311}[微秒以内]{style="font-family:宋体"}
+时间精确到250微秒以内
 
-[[29]{lang="EN-US"}]{#struct_0_19838_x1039_x1320432107}
+29
 
-[[时间精确到]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_19838_x1039_x200886462}[毫秒（]{style="font-family:宋体"}[1]{lang="EN-US"}[毫秒＝]{style="font-family:宋体"}[10^-3^]{lang="EN-US"}[秒）以内]{style="font-family:宋体"}
+时间精确到1毫秒（1毫秒＝10^-3^秒）以内
 
-[[2A]{lang="EN-US"}]{#struct_0_19838_x1039_x307242214}
+2A
 
-[[时间精确到]{style="font-family:宋体"}[2.5]{lang="EN-US"}]{#struct_0_19838_x1039_x847378551}[毫秒以内]{style="font-family:宋体"}
+时间精确到2.5毫秒以内
 
-[[2B]{lang="EN-US"}]{#struct_0_19838_x1039_x1778862646}
+2B
 
-[[时间精确到]{style="font-family:宋体"}[10]{lang="EN-US"}]{#struct_0_19838_x1039_1637817253}[毫秒以内]{style="font-family:宋体"}
+时间精确到10毫秒以内
 
-[[2C]{lang="EN-US"}]{#struct_0_19838_x1039_x200951998}
+2C
 
-[[时间精确到]{style="font-family:宋体"}[25]{lang="EN-US"}]{#struct_0_19838_x1039_x1455135125}[毫秒以内]{style="font-family:宋体"}
+时间精确到25毫秒以内
 
-[[2D]{lang="EN-US"}]{#struct_0_19838_x1039_x624775918}
+2D
 
-[[时间精确到]{style="font-family:宋体"}[100]{lang="EN-US"}]{#struct_0_19838_x1039_502571944}[毫秒以内]{style="font-family:宋体"}
+时间精确到100毫秒以内
 
-[[2E]{lang="EN-US"}]{#struct_0_19838_x1039_x201410749}
+2E
 
-[[时间精确到]{style="font-family:宋体"}[250]{lang="EN-US"}]{#struct_0_19838_x1039_1667297638}[毫秒以内]{style="font-family:宋体"}
+时间精确到250毫秒以内
 
-[[2F]{lang="EN-US"}]{#struct_0_19838_x1039_524256329}
+2F
 
-[[时间精确到]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_19838_x1039_955891349}[秒以内]{style="font-family:宋体"}
+时间精确到1秒以内
 
-[[30]{lang="EN-US"}]{#struct_0_19838_x1039_x201476285}
+30
 
-[[时间精确到]{style="font-family:宋体"}[10]{lang="EN-US"}]{#struct_0_19838_x1039_1634917024}[秒以内]{style="font-family:宋体"}
+时间精确到10秒以内
 
-[[31]{lang="EN-US"}]{#struct_0_19838_x1039_984528420}
+31
 
-[[时间精确到大于]{style="font-family:宋体"}[10]{lang="EN-US"}]{#struct_0_19838_x1039_x1217884364}[秒]{style="font-family:宋体"}
+时间精确到大于10秒
 
-[[32]{lang="EN-US"}]{#struct_0_19838_x1039_x201279677}[～]{style="font-family:宋体"}[7F]{lang="EN-US"}
+32～7F
 
-[[Reserved]{lang="EN-US"}]{#struct_0_19838_x1039_x1502279124}[（保留）]{style="font-family:宋体"}
+Reserved（保留）
 
-[[80]{lang="EN-US"}]{#struct_0_19838_x1039_1056802118}[～]{style="font-family:宋体"}[FD]{lang="EN-US"}
+80～FD
 
-[[For use by alternate PTP profiles]{lang="EN-US"}]{#struct_0_19838_x1039_x201345213}[（为]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}[预留）]{style="font-family:宋体"}
+For use by alternate PTP profiles（为PTP profile预留）
 
-[[FE]{lang="EN-US"}]{#struct_0_19838_x1039_1229076489}
+FE
 
-[[Unknown]{lang="EN-US"}]{#struct_0_19838_x1039_x719369566}[（未知）]{style="font-family:宋体"}
+Unknown（未知）
 
-[[FF]{lang="EN-US"}]{#struct_0_19838_x1039_1105265298}
+FF
 
-[[Reserved]{lang="EN-US"}]{#struct_0_19838_x1039_x201148605}[（保留）]{style="font-family:宋体"}
+Reserved（保留）
 
-[ ]{lang="EN-US"}
+**[class** *class-value*]：表示时钟的时间等级。*class-value*为时间等级值，取值范围为0～255，数值越小等级越高，具体取值及其含义如[表]1-9(?1715489589#_Ref268612094)所示（未列出的取值均被协议所保留）。
 
-[**[class]{lang="EN-US"}**[ *class-value*]{lang="EN-US"}]{#struct_0_19838_x1039_60724663}[：表示时钟的时间等级。]{style="font-family:宋体"}*[class-value]{lang="EN-US"}*[为时间等级值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[，数值越小等级越高，具体取值及其含义如]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-9]{lang="EN-US"}](?1715489589#_Ref268612094)[所示（未列出的取值均被协议所保留）。]{style="font-family:宋体"}
+表1-9 时间等级值及其含义
 
-[]{#struct_0_19838_x1039_1690886147}[[表1-9 ]{lang="EN-US"}[时间等级值及其含义]{style="font-family:
-黑体"}]{#_Ref268612094}
+时间等级值（十进制）
 
-[]{#table_struct_0_x973198410}[[时间等级值（十进制）]{style="font-family:黑体"}]{#struct_0_19838_x1039_2067218654}
+含义
 
-[[含义]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1310612946}
+6
 
-[[6]{lang="EN-US"}]{#struct_0_19838_x1039_x1693509606}
+表示与主参考时间源保持同步的时钟节点，由PTP来分配时间表。时间等级值为6的时钟节点不可成为该域中其他时钟的从时钟
 
-[[表示与主参考时间源保持同步的时钟节点，由]{style="font-family:宋体"}[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_1048884112}[来分配时间表。时间等级值为]{style="font-family:宋体"}[6]{lang="EN-US"}[的时钟节点不可成为该域中其他时钟的从时钟]{style="font-family:宋体"}
+7
 
-[[7]{lang="EN-US"}]{#struct_0_19838_x1039_x201214141}
+表示先前时间等级值为6、但已无法与特定用途时间源保持同步的时钟节点，已进入续任模式且满足续任条件的时钟节点，由PTP来分配时间表。时间等级值为7的时钟节点不可成为该域中其他时钟的从时钟
 
-[[表示先前时间等级值为]{style="font-family:宋体"}[6]{lang="EN-US"}]{#struct_0_19838_x1039_80790312}[、但已无法与特定用途时间源保持同步的时钟节点，已进入续任模式且满足续任条件的时钟节点，由]{style="font-family:宋体"}[PTP]{lang="EN-US"}[来分配时间表。时间等级值为]{style="font-family:宋体"}[7]{lang="EN-US"}[的时钟节点不可成为该域中其他时钟的从时钟]{style="font-family:宋体"}
+13
 
-[[13]{lang="EN-US"}]{#struct_0_19838_x1039_x652103304}
+表示与特定用途的时间源保持同步的时钟节点，由ARB来分配时间表。时间等级值为13的时钟节点不可成为该域中其他时钟的从时钟
 
-[[表示与特定用途的时间源保持同步的时钟节点，由]{style="font-family:宋体"}[ARB]{lang="EN-US"}]{#struct_0_19838_x1039_x1137535948}[来分配时间表。时间等级值为]{style="font-family:宋体"}[13]{lang="EN-US"}[的时钟节点不可成为该域中其他时钟的从时钟]{style="font-family:宋体"}
+14
 
-[[14]{lang="EN-US"}]{#struct_0_19838_x1039_x1033020671}
+表示先前时间等级值为13、但已无法与特定用途时间源保持同步的时钟节点，已进入续任模式且满足续任条件的时钟节点，由ARB来分配时间表。时间等级值为14的时钟节点不可成为该域中其他时钟的从时钟
 
-[[表示先前时间等级值为]{style="font-family:宋体"}[13]{lang="EN-US"}]{#struct_0_19838_x1039_1816861095}[、但已无法与特定用途时间源保持同步的时钟节点，已进入续任模式且满足续任条件的时钟节点，由]{style="font-family:宋体"}[ARB]{lang="EN-US"}[来分配时间表。时间等级值为]{style="font-family:宋体"}[14]{lang="EN-US"}[的时钟节点不可成为该域中其他时钟的从时钟]{style="font-family:宋体"}
+52
 
-[[52]{lang="EN-US"}]{#struct_0_19838_x1039_x201017533}
+表示时间等级值为7的时钟节点由于不满足续任条件而降级为备选时钟A。时间等级值为52的时钟节点不可成为该域中其他时钟的从时钟
 
-[[表示时间等级值为]{style="font-family:宋体"}[7]{lang="EN-US"}]{#struct_0_19838_x1039_882069072}[的时钟节点由于不满足续任条件而降级为备选时钟]{style="font-family:宋体"}[A]{lang="EN-US"}[。时间等级值为]{style="font-family:宋体"}[52]{lang="EN-US"}[的时钟节点不可成为该域中其他时钟的从时钟]{style="font-family:宋体"}
+58
 
-[[58]{lang="EN-US"}]{#struct_0_19838_x1039_881937705}
+表示时间等级值为14的时钟节点由于不满足续任条件而降级为备选时钟A。时间等级值为58的时钟节点不可成为该域中其他时钟的从时钟
 
-[[表示时间等级值为]{style="font-family:宋体"}[14]{lang="EN-US"}]{#struct_0_19838_x1039_1865651117}[的时钟节点由于不满足续任条件而降级为备选时钟]{style="font-family:宋体"}[A]{lang="EN-US"}[。时间等级值为]{style="font-family:宋体"}[58]{lang="EN-US"}[的时钟节点不可成为该域中其他时钟的从时钟]{style="font-family:宋体"}
+187
 
-[[187]{lang="EN-US"}]{#struct_0_19838_x1039_810993700}
+表示时间等级值为7的时钟节点由于不满足续任条件而降级为备选时钟B。时间等级值为187的时钟节点可成为该域中其他时钟的从时钟
 
-[[表示时间等级值为]{style="font-family:宋体"}[7]{lang="EN-US"}]{#struct_0_19838_x1039_x201083069}[的时钟节点由于不满足续任条件而降级为备选时钟]{style="font-family:宋体"}[B]{lang="EN-US"}[。时间等级值为]{style="font-family:宋体"}[187]{lang="EN-US"}[的时钟节点可成为该域中其他时钟的从时钟]{style="font-family:宋体"}
+193
 
-[[193]{lang="EN-US"}]{#struct_0_19838_x1039_1645050849}
+表示时间等级值为14的时钟节点由于不满足续任条件而降级为备选时钟B。时间等级值为193的时钟节点可成为该域中其他时钟的从时钟
 
-[[表示时间等级值为]{style="font-family:宋体"}[14]{lang="EN-US"}]{#struct_0_19838_x1039_x1741929511}[的时钟节点由于不满足续任条件而降级为备选时钟]{style="font-family:宋体"}[B]{lang="EN-US"}[。时间等级值为]{style="font-family:宋体"}[193]{lang="EN-US"}[的时钟节点可成为该域中其他时钟的从时钟]{style="font-family:宋体"}
+248
 
-[[248]{lang="EN-US"}]{#struct_0_19838_x1039_1373394779}
+时间等级值的缺省取值
 
-[[时间等级值的缺省取值]{style="font-family:宋体"}]{#struct_0_19838_x1039_957941653}
+255
 
-[[255]{lang="EN-US"}]{#struct_0_19838_x1039_x200886461}
+表示工作模式为Slave-only的时钟节点
 
-[[表示工作模式为]{style="font-family:宋体"}[Slave-only]{lang="EN-US"}]{#struct_0_19838_x1039_x307438822}[的时钟节点]{style="font-family:宋体"}
+**[time-source** *ts-value*]：表示时钟的属性。*ts-value*为属性值，取值范围为0～255，具体取值及其含义如[表]1-10(?1715489589#_Ref268612150)所示（未列出的取值均被协议所保留）。
 
-[ ]{lang="EN-US"}
+表1-10 属性值及其含义
 
-[**[time-source]{lang="EN-US"}**[ *ts-value*]{lang="EN-US"}]{#struct_0_19838_x1039_x1730570692}[：表示时钟的属性。]{style="font-family:宋体"}*[ts-value]{lang="EN-US"}*[为属性值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[，具体取值及其含义如]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-10]{lang="EN-US"}](?1715489589#_Ref268612150)[所示（未列出的取值均被协议所保留）。]{style="font-family:宋体"}
+属性值（十六进制）
 
-[]{#struct_0_19838_x1039_x263686425}[[表1-10 ]{lang="EN-US"}[属性值及其含义]{style="font-family:
-黑体"}]{#_Ref268612150}
+含义
 
-[]{#table_struct_0_x977698730}[[属性值（十六进制）]{style="font-family:黑体"}]{#struct_0_19838_x1039_x542384858}
+10
 
-[[含义]{style="font-family:黑体"}]{#struct_0_19838_x1039_x921682277}
+Atomic clock（原子时钟）
 
-[[10]{lang="EN-US"}]{#struct_0_19838_x1039_1804528337}
+20
 
-[[Atomic clock]{lang="EN-US"}]{#struct_0_19838_x1039_x200951997}[（原子时钟）]{style="font-family:宋体"}
+GPS（Global Positioning System，全球定位系统）
 
-[[20]{lang="EN-US"}]{#struct_0_19838_x1039_x1455987093}
+30
 
-[[GPS]{lang="EN-US"}]{#struct_0_19838_x1039_1214297560}[（]{style="font-family:宋体"}[Global Positioning System]{lang="EN-US"}[，全球定位系统）]{style="font-family:宋体"}
+Terrestrial radio（陆基无线电）
 
-[[30]{lang="EN-US"}]{#struct_0_19838_x1039_x1625720316}
+40
 
-[[Terrestrial radio]{lang="EN-US"}]{#struct_0_19838_x1039_524546389}[（陆基无线电）]{style="font-family:宋体"}
+PTP（Precision Time Protocol，精确时间协议）
 
-[[40]{lang="EN-US"}]{#struct_0_19838_x1039_95993522}
+50
 
-[[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_1364673195}[（]{style="font-family:宋体"}[Precision Time Protocol]{lang="EN-US"}[，精确时间协议）]{style="font-family:宋体"}
+NTP（Network Time Protocol，网络时间协议）
 
-[[50]{lang="EN-US"}]{#struct_0_19838_x1039_724152674}
+60
 
-[[NTP]{lang="EN-US"}]{#struct_0_19838_x1039_1912892943}[（]{style="font-family:宋体"}[Network Time Protocol]{lang="EN-US"}[，网络时间协议）]{style="font-family:宋体"}
+Handset（手持设备）
 
-[[60]{lang="EN-US"}]{#struct_0_19838_x1039_977869547}
+90
 
-[[Handset]{lang="EN-US"}]{#struct_0_19838_x1039_x480989128}[（手持设备）]{style="font-family:宋体"}
+Other（其他）
 
-[[90]{lang="EN-US"}]{#struct_0_19838_x1039_1364607659}
+A0
 
-[[Other]{lang="EN-US"}]{#struct_0_19838_x1039_1094812610}[（其他）]{style="font-family:宋体"}
+Internal oscillator（内部振荡器）
 
-[[A0]{lang="EN-US"}]{#struct_0_19838_x1039_x1229164946}
+F0～FE
 
-[[Internal oscillator]{lang="EN-US"}]{#struct_0_19838_x1039_x1211976565}[（内部振荡器）]{style="font-family:宋体"}
+For use by alternate PTP profiles（为PTP profile预留）
 
-[[F0]{lang="EN-US"}]{#struct_0_19838_x1039_x1661506121}[～]{style="font-family:宋体"}[FE]{lang="EN-US"}
+FF
 
-[[For use by alternate PTP profiles]{lang="EN-US"}]{#struct_0_19838_x1039_x1476349079}[（为]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}[预留）]{style="font-family:宋体"}
+Reserved（保留）
 
-[[FF]{lang="EN-US"}]{#struct_0_19838_x1039_1364804267}
+【使用指导】
 
-[[Reserved]{lang="EN-US"}]{#struct_0_19838_x1039_734340406}[（保留）]{style="font-family:宋体"}
+必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1555388154}
+\# 配置第一路外接ToD时钟源的时间精度值为44。
 
-[[必须先配置]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x988100082}[和]{style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x599243681}
+Sysname ptp profile 1588v2
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_737593257}[配置]{style="font-family:宋体"}[第一路外接]{style="font-family:宋体"}[ToD]{lang="EN-US"}[时钟源的]{style="font-family:宋体"}[时间精度值为]{style="font-family:宋体"}[44]{lang="EN-US"}[。]{style="font-family:宋体"}
+Sysname ptp mode oc
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_1364738731}
+Sysname ptp clock-source tod0 accuracy 44
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+【相关命令】
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+·**ptp mode**
 
-[\[Sysname\] ptp clock-source tod0 accuracy 44]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1144630934}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp mode]{lang="EN-US"}**]{#struct_0_19838_x1039_23217041}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **profile**]{lang="EN-US"}]{#struct_0_19838_x1039_x826191529}
-
-::: {#883623633 .myid}
-[]{#_Toc404796732}[]{#struct_0_19838_x1039_2031449454}[]{#_Toc304915250}
+·**ptp** **profile**
 
 **PTP \-- PTP配置命令 \-- ptp clock-step**
 
 ------------------------------------------------------------------------
 
-[**[ptp]{lang="EN-US"}**[ **clock-step**]{lang="EN-US"}]{#struct_0_19838_x1039_x1886045864}[命令用来[配置时间戳的携带]{#_Toc260994363}模式。]{style="font-family:宋体"}
+**[ptp** **clock-step**]命令用来[配置时间戳的携带模式。]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **clock-step**]{lang="EN-US"}]{#struct_0_19838_x1039_2023849085}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **ptp** **clock-step**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x994820142}
+【命令】
 
-[**[ptp]{lang="EN-US"}**[ **clock-step** { **one-step** \| **two-step** }]{lang="EN-US"}]{#struct_0_19838_x1039_1364935339}
+**[ptp**[ **clock-step** { **one-step** \| **two-step** }]]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **clock-step**]{lang="EN-US"}]{#struct_0_19838_x1039_1496226219}
+**[undo** **ptp** **clock-step**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1076904484}
+【缺省情况】
 
-[[时间戳的携带模式为双步模式。]{style="font-family:宋体"}]{#struct_0_19838_x1039_x489552300}
+时间戳的携带模式为双步模式。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_796220309}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_19838_x1039_x1239115812}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1590114905}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_468140099}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x1506581783}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1364869803}
+【参数】
 
-[**[one-step]{lang="EN-US"}**]{#struct_0_19838_x1039_x361815417}[：表示时间戳的携带模式为单步模式。]{style="font-family:宋体"}
+**[one-step**]：表示时间戳的携带模式为单步模式。
 
-[**[two-step]{lang="EN-US"}**]{#struct_0_19838_x1039_x972920626}[：表示时间戳的携带模式为双步模式。]{style="font-family:宋体"}
+**[two-step**]：表示时间戳的携带模式为双步模式。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_86835938}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[必须先配置]{lang="EN-US" style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x1613564962}[和]{lang="EN-US" style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{lang="EN-US" style="font-family:宋体"}
+·必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}[profile]{lang="EN-US"}]{#struct_0_19838_x1039_x1642881643}[为]{lang="EN-US" style="font-family:宋体"}[IEEE 802.1AS]{lang="EN-US"}[时，只支持双步模式。]{lang="EN-US" style="font-family:宋体"}
+·当profile为IEEE 802.1AS时，只支持双步模式。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}[mode]{lang="EN-US"}]{#struct_0_19838_x1039_1983733248}[为]{lang="EN-US" style="font-family:宋体"}[E2ETC]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[P2PTC]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[E2ETC+OC]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[P2PTC+OC]{lang="EN-US"}[时，只支持双步模式。]{lang="EN-US" style="font-family:宋体"}
+·当mode为E2ETC、P2PTC、E2ETC+OC或P2PTC+OC时，只支持双步模式。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x686085020}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_x1175155954}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置时间戳的携带模式为双步模式。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置时间戳的携带模式为双步模式。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_1365066411}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+Sysname ptp mode oc
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ptp clock-step two-step]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 ptp clock-step two-step
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x462876819}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp mode]{lang="EN-US"}**]{#struct_0_19838_x1039_550755689}
+·**ptp mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp profile]{lang="EN-US"}**]{#struct_0_19838_x1039_x1052836745}
-:::
-
-::: {#-1656001142 .myid}
-[]{#_Toc304915251}[]{#_Toc404796733}[]{#struct_0_19838_x1039_60090947}
+·**ptp profile**
 
 **PTP \-- PTP配置命令 \-- ptp delay-mechanism**
 
 ------------------------------------------------------------------------
 
-[**[ptp]{lang="EN-US"}**[ **delay-mechanism**]{lang="EN-US"}]{#struct_0_19838_x1039_841672116}[命令用来配置]{style="font-family:宋体"}[BC]{lang="EN-US"}[或]{style="font-family:宋体"}[OC]{lang="EN-US"}[的延时测量机制。]{style="font-family:宋体"}
+**[ptp** **delay-mechanism**]命令用来配置BC或OC的延时测量机制。
 
-[**[undo]{lang="EN-US"}**[ **ptp** **delay-mechanism**]{lang="EN-US"}]{#struct_0_19838_x1039_878684682}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **ptp** **delay-mechanism**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1795783482}
+【命令】
 
-[**[ptp]{lang="EN-US"}**[ **delay-mechanism** { **e2e** \| **p2p** }]{lang="EN-US"}]{#struct_0_19838_x1039_1365000875}
+**[ptp**[ **delay-mechanism** { **e2e** \| **p2p** }]]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **delay-mechanism**]{lang="EN-US"}]{#struct_0_19838_x1039_x1954393135}
+**[undo** **ptp** **delay-mechanism**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_82562572}
+【缺省情况】
 
-[[不同]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x949754398}[的缺省情况不同：]{style="font-family:宋体"}
+不同PTP profile的缺省情况不同：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}[profile]{lang="EN-US"}]{#struct_0_19838_x1039_1368997646}[为]{lang="EN-US" style="font-family:宋体"}[IEEE 1588 ]{lang="EN-US"}[v]{lang="EN-US"}[ersion 2]{lang="EN-US"}[时，缺省延时测量机制为请求应答机制。]{lang="EN-US" style="font-family:宋体"}
+·当profile为IEEE 1588 version 2时，缺省延时测量机制为请求应答机制。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{style="font-family:宋体"}]{#struct_0_19838_x1039_409830118}[profile]{lang="EN-US"}[为]{style="font-family:宋体"}[IEEE 802.1AS]{lang="EN-US"}[时，缺省延时测量机制为端延时机制。]{style="font-family:宋体"}
+·当profile为IEEE 802.1AS时，缺省延时测量机制为端延时机制。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_25808632}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_19838_x1039_x1519521103}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1653140773}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_1365197483}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x2055109662}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1243665957}
+【参数】
 
-[**[e2e]{lang="EN-US"}**]{#struct_0_19838_x1039_x601997526}[：表示]{style="font-family:宋体"}[E2ETC]{lang="EN-US"}[所使用的请求应答机制。]{style="font-family:宋体"}
+**[e2e**]：表示E2ETC所使用的请求应答机制。
 
-[**[p2p]{lang="EN-US"}**]{#struct_0_19838_x1039_581062553}[：表示]{style="font-family:宋体"}[P2PTC]{lang="EN-US"}[所使用的端延时机制。]{style="font-family:宋体"}
+**[p2p**]：表示P2PTC所使用的端延时机制。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1871490379}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[只有当设备的时钟节点类型为]{style="font-family:宋体"}]{#struct_0_19838_x1039_1612145394}[BC]{lang="EN-US"}[或]{style="font-family:宋体"}[OC]{lang="EN-US"}[时，才允许配置该命令。]{style="font-family:宋体"}
+·只有当设备的时钟节点类型为BC或OC时，才允许配置该命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}[profile]{lang="EN-US"}]{#struct_0_19838_x1039_x1370266931}[为]{lang="EN-US" style="font-family:宋体"}[IEEE 802.1AS]{lang="EN-US"}[时，只支持端延时机制，不允许配置该命令。]{lang="EN-US" style="font-family:宋体"}
+·当profile为IEEE 802.1AS时，只支持端延时机制，不允许配置该命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_906339585}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_1365131947}[配置设备的时钟节点类型为]{style="font-family:宋体"}[OC]{lang="EN-US"}[，并在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置延时测量机制为请求应答机制。]{style="font-family:宋体"}
+\# 配置设备的时钟节点类型为OC，并在接口GigabitEthernet1/0/1上配置延时测量机制为请求应答机制。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_x1575368628}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+Sysname ptp mode oc
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ptp delay-mechanism e2e]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 ptp delay-mechanism e2e
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1948167694}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp profile]{lang="EN-US"}**]{#struct_0_19838_x1039_x1333592919}
+·**ptp profile**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp mode]{lang="EN-US"}**]{#struct_0_19838_x1039_x1648166218}
-:::
-
-::: {#1506135845 .myid}
-[]{#_Toc404796734}[]{#struct_0_19838_x1039_1442077205}[]{#_Toc304915252}[]{#_Toc345342931}[]{#_Toc345342997}[]{#_Toc345342932}[]{#_Toc345342998}[]{#_Toc345342933}[]{#_Toc345342999}[]{#_Toc345342934}[]{#_Toc345343000}[]{#_Toc345342935}[]{#_Toc345343001}[]{#_Toc345342936}[]{#_Toc345343002}[]{#_Toc345342937}[]{#_Toc345343003}[]{#_Toc345342938}[]{#_Toc345343004}[]{#_Toc345342939}[]{#_Toc345343005}[]{#_Toc345342940}[]{#_Toc345343006}[]{#_Toc345342941}[]{#_Toc345343007}[]{#_Toc345342942}[]{#_Toc345343008}[]{#_Toc345342943}[]{#_Toc345343009}[]{#_Toc345342944}[]{#_Toc345343010}[]{#_Toc345342945}[]{#_Toc345343011}[]{#_Toc345342946}[]{#_Toc345343012}[]{#_Toc345342947}[]{#_Toc345343013}[]{#_Toc345342948}[]{#_Toc345343014}[]{#_Toc345342949}[]{#_Toc345343015}[]{#_Toc345342950}[]{#_Toc345343016}[]{#_Toc345342951}[]{#_Toc345343017}[]{#_Toc345342952}[]{#_Toc345343018}[]{#_Toc345342953}[]{#_Toc345343019}[]{#_Toc345342954}[]{#_Toc345343020}[]{#_Toc345342955}[]{#_Toc345343021}[]{#_Toc345342956}[]{#_Toc345343022}[]{#_Toc345342957}[]{#_Toc345343023}[]{#_Toc345342958}[]{#_Toc345343024}[]{#_Toc345342959}[]{#_Toc345343025}[]{#_Toc345342960}[]{#_Toc345343026}
+·**ptp mode**
 
 **PTP \-- PTP配置命令 \-- ptp destination-mac**
 
 ------------------------------------------------------------------------
 
-[**[ptp]{lang="EN-US"}**[ **destination-mac**]{lang="EN-US"}]{#struct_0_19838_x1039_x1502348081}[命令用来配置非]{style="font-family:宋体"}[Pdelay]{lang="EN-US"}[报文的目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[ptp** **destination-mac**]命令用来配置非Pdelay报文的目的MAC地址。
 
-[**[undo]{lang="EN-US"}**[ **ptp** **destination-mac**]{lang="EN-US"}]{#struct_0_19838_x1039_1364673196}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **ptp** **destination-mac**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_724349282}
+【命令】
 
-[**[ptp]{lang="EN-US"}**[ **destination-mac** *mac-address*]{lang="EN-US"}]{#struct_0_19838_x1039_1383481396}
+**[ptp** **destination-mac** *mac-address*]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **destination-mac**]{lang="EN-US"}]{#struct_0_19838_x1039_x1595937904}
+**[undo** **ptp** **destination-mac**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1323040537}
+【缺省情况】
 
-[[非]{style="font-family:宋体"}[Pdelay]{lang="EN-US"}]{#struct_0_19838_x1039_1350770945}[报文的目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为]{style="font-family:宋体"}[011B-1900-0000]{lang="EN-US"}[。]{style="font-family:宋体"}
+非Pdelay报文的目的MAC地址为011B-1900-0000。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_648815796}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_19838_x1039_x1992837281}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_994144742}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_1364607660}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_1095271361}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x67836842}
+【参数】
 
-[*[mac-address]{lang="EN-US"}*]{#struct_0_19838_x1039_x226337437}[：表示非]{style="font-family:宋体"}[Pdelay]{lang="EN-US"}[报文的目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，取值为]{style="font-family:宋体"}[0180-C200-000E]{lang="EN-US"}[或]{style="font-family:宋体"}[011B-1900-0000]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[mac-address*]：表示非Pdelay报文的目的MAC地址，取值为0180-C200-000E或011B-1900-0000。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x2129163169}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[必须先配置]{lang="EN-US" style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_1700693837}[和]{lang="EN-US" style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{lang="EN-US" style="font-family:宋体"}
+·必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Pdelay]{lang="EN-US"}]{#struct_0_19838_x1039_x1135694069}[报文（包括]{lang="EN-US" style="font-family:宋体"}[Pdelay_Req]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[Pdelay_Resp]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[Pdelay_Resp_Follow_Up]{lang="EN-US"}[等）默认的目的]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为]{lang="EN-US" style="font-family:宋体"}[0180-C200-000E]{lang="EN-US"}[，不可修改。]{lang="EN-US" style="font-family:宋体"}
+·Pdelay报文（包括Pdelay_Req、Pdelay_Resp、Pdelay_Resp_Follow_Up等）默认的目的MAC地址为0180-C200-000E，不可修改。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}[profile]{lang="EN-US"}]{#struct_0_19838_x1039_x1713574855}[为]{lang="EN-US" style="font-family:宋体"}[IEEE 802.1AS]{lang="EN-US"}[时，不允许配置该命令。]{lang="EN-US" style="font-family:宋体"}
+·当profile为IEEE 802.1AS时，不允许配置该命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[该命令在]{style="font-family:宋体"}]{#struct_0_19838_x1039_1364804268}[PTP]{lang="EN-US"}[报文采用]{style="font-family:宋体"}[IEEE 802.3/Ethernet]{lang="EN-US"}[封装格式时才生效。]{style="font-family:宋体"}
+·该命令在PTP报文采用IEEE 802.3/Ethernet封装格式时才生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_733357366}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_x9277549}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置非]{style="font-family:宋体"}[Pdelay]{lang="EN-US"}[报文的目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为]{style="font-family:宋体"}[0180-C200-000E]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置非Pdelay报文的目的MAC地址为0180-C200-000E。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_1525698610}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+Sysname ptp mode oc
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ptp destination-mac 0180-c200-000e]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 ptp destination-mac 0180-c200-000e
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1478219894}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp mode]{lang="EN-US"}**]{#struct_0_19838_x1039_x530048051}
+·**ptp mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **profile**]{lang="EN-US"}]{#struct_0_19838_x1039_345867907}
-:::
-
-::: {#1398621534 .myid}
-[]{#_Toc304915253}[]{#_Toc404796735}[]{#struct_0_19838_x1039_x1059500781}
+·**ptp** **profile**
 
 **PTP \-- PTP配置命令 \-- ptp domain**
 
 ------------------------------------------------------------------------
 
-[**[ptp]{lang="EN-US"}**[ **domain**]{lang="EN-US"}]{#struct_0_19838_x1039_1364738732}[命令用来配置设备所属的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[域。]{style="font-family:宋体"}
+**[ptp** **domain**]命令用来配置设备所属的PTP域。
 
-[**[undo ptp]{lang="EN-US"}**[ **domain**]{lang="EN-US"}]{#struct_0_19838_x1039_1144827542}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ptp** **domain**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1563950027}
+【命令】
 
-[**[ptp]{lang="EN-US"}**[ **domain** *domain-number*]{lang="EN-US"}]{#struct_0_19838_x1039_x833269082}
+**[ptp** **domain** *domain-number*]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **domain**]{lang="EN-US"}]{#struct_0_19838_x1039_x359984602}
+**[undo** **ptp** **domain**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x698343294}
+【缺省情况】
 
-[[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_20826121}[设备缺省属于域]{style="font-family:宋体"}[0]{lang="EN-US"}[。]{style="font-family:宋体"}
+PTP设备缺省属于域0。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1244955104}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_19838_x1039_x359536213}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1364935340}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_1495767472}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x745091858}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_781419777}
+【参数】
 
-[*[domain-number]{lang="EN-US"}*]{#struct_0_19838_x1039_x1327931366}[：表示设备加入的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[域，]{style="font-family:宋体"}*[domain-number]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[domain-number*]：表示设备加入的PTP域，*domain-number*的取值范围为0～255。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_965058663}
+【使用指导】
 
-[[必须先配置]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x595228940}[和]{style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{style="font-family:宋体"}
+必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x82870106}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_1364869804}[配置设备所属的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[域为]{style="font-family:宋体"}[2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置设备所属的PTP域为2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_x361487737}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+Sysname ptp mode oc
 
-[\[Sysname\] ptp domain 2]{lang="EN-US"}
+Sysname ptp domain 2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1776463486}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp mode]{lang="EN-US"}**]{#struct_0_19838_x1039_1780620137}
+·**ptp mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **profile**]{lang="EN-US"}]{#struct_0_19838_x1039_x589662418}
-:::
-
-::: {#670813199 .myid}
-[]{#_Toc404796736}[]{#struct_0_19838_x1039_x174379575}[]{#_Toc385854902}[]{#_Toc383589558}
+·**ptp** **profile**
 
 **PTP \-- PTP配置命令 \-- ptp dscp**
 
 ------------------------------------------------------------------------
 
-[**[ptp dscp]{lang="EN-US"}**]{#struct_0_19838_x1039_244508850}[命令用来配置]{style="font-family:宋体"}[PTP]{lang="EN-US"}[报文封装格式为]{style="font-family:宋体"}[UDP]{lang="EN-US"}[（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[）时的]{style="font-family:宋体"}[DSCP]{lang="EN-US"}[优先级。]{style="font-family:宋体"}
+**[ptp dscp**]命令用来配置PTP报文封装格式为UDP（IPv4）时的DSCP优先级。
 
-[**[undo ptp dscp]{lang="EN-US"}**]{#struct_0_19838_x1039_x1314202579}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ptp dscp**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1184859562}
+【命令】
 
-[**[ptp dscp]{lang="FR"}**[ ]{lang="FR"}*[dscp]{lang="EN-US"}*]{#struct_0_19838_x1039_x794278349}
+**[ptp dscp***dscp*]
 
-[**[undo ]{lang="FR"}[ptp dscp]{lang="EN-US"}**]{#struct_0_19838_x1039_x174445111}
+**[undo ptp dscp**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x2130878385}
+【缺省情况】
 
-[[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_x1175089665}[报文封装格式为]{style="font-family:宋体"}[UDP]{lang="EN-US"}[（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[）时的]{style="font-family:宋体"}[DSCP]{lang="EN-US"}[优先级为]{style="font-family:宋体"}[56]{lang="EN-US"}[。]{style="font-family:宋体"}
+PTP报文封装格式为UDP（IPv4）时的DSCP优先级为56。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_445912189}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_19838_x1039_886807321}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x288830681}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_2122794358}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x397519657}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x174248503}
+【参数】
 
-[*[dscp]{lang="SV"}*]{#struct_0_19838_x1039_x1319281403}[：]{style="font-family:宋体"}[DSCP]{lang="SV"}[优先级，]{style="font-family:
-宋体"}[取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[dscp*]：DSCP优先级，取值范围为0～63。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1956122126}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[必须先配置]{lang="EN-US" style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x1832043590}[和]{lang="EN-US" style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{lang="EN-US" style="font-family:宋体"}
+·必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}[profile]{lang="EN-US"}]{#struct_0_19838_x1039_1044621600}[为]{lang="EN-US" style="font-family:宋体"}[IEEE 802.1AS]{lang="EN-US"}[时，不允许配置该命令。]{lang="EN-US" style="font-family:宋体"}
+·当profile为IEEE 802.1AS时，不允许配置该命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[只有当]{style="font-family:宋体"}]{#struct_0_19838_x1039_x1762609105}[PTP]{lang="EN-US"}[报文封装格式为]{style="font-family:宋体"}[UDP]{lang="EN-US"}[（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[）时，该命令才生效。]{style="font-family:宋体"}
+·只有当PTP报文封装格式为UDP（IPv4）时，该命令才生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1162412097}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_x177652603}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置]{style="font-family:宋体"}[PTP]{lang="EN-US"}[报文]{style="font-family:宋体"}[封装格式为]{style="font-family:宋体"}[UDP]{lang="EN-US"}[（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[）时的]{style="font-family:宋体"}[DSCP]{lang="EN-US"}[优先级为]{style="font-family:宋体"}[63]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置PTP报文封装格式为UDP（IPv4）时的DSCP优先级为63。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_x174314039}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+Sysname ptp mode oc
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ptp transport-protocol udp]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 ptp transport-protocol udp
 
-[\[Sysname-GigabitEthernet1/0/1\] ptp dscp 63]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 ptp dscp 63
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1739008883}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **profile**]{lang="EN-US"}]{#struct_0_19838_x1039_x1463733874}
+·**ptp** **profile**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[ptp mode]{lang="EN-US"}**]{#struct_0_19838_x1039_x2051399310}
+·**ptp mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[ptp transport-protocol]{lang="EN-US"}**]{#struct_0_19838_x1039_1502773565}
-:::
-
-::: {#292474422 .myid}
-[]{#_Toc404796737}[]{#struct_0_19838_x1039_1783913462}
+·**ptp transport-protocol**
 
 **PTP \-- PTP配置命令 \-- ptp enable**
 
 ------------------------------------------------------------------------
 
-[**[ptp]{lang="EN-US"}**[ **enable**]{lang="EN-US"}]{#struct_0_19838_x1039_451871157}[命令用来使能接口的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[ptp** **enable**]命令用来使能接口的PTP功能。
 
-[**[undo]{lang="EN-US"}**[ **ptp** **enable**]{lang="EN-US"}]{#struct_0_19838_x1039_504462318}[命令用来关闭接口的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo** **ptp** **enable**]命令用来关闭接口的PTP功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1365066412}
+【命令】
 
-[**[ptp]{lang="EN-US"}**[ **enable**]{lang="EN-US"}]{#struct_0_19838_x1039_x463073427}
+**[ptp** **enable**]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **enable**]{lang="EN-US"}]{#struct_0_19838_x1039_x262242765}
+**[undo** **ptp** **enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1842743762}
+【缺省情况】
 
-[[接口的]{style="font-family:宋体"}[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_x1126117664}[功能处于关闭状态。]{style="font-family:宋体"}
+接口的PTP功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_740225995}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_19838_x1039_x956030056}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1289351584}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x628888536}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_1365000876}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1954327599}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[必须先配置]{lang="EN-US" style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x2080083701}[和]{lang="EN-US" style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{lang="EN-US" style="font-family:宋体"}
+·必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当设备时钟节点类型为]{style="font-family:宋体"}]{#struct_0_19838_x1039_x740988695}[OC]{lang="EN-US"}[时，只允许在一个接口上使能]{style="font-family:宋体"}[PTP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+·当设备时钟节点类型为OC时，只允许在一个接口上使能PTP功能。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[建议在完成]{style="font-family:宋体"}]{#struct_0_19838_x1039_1773188753}[PTP]{lang="EN-US"}[相关参数配置后，再在接口上使能]{style="font-family:宋体"}[PTP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+·建议在完成PTP相关参数配置后，再在接口上使能PTP功能。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1969713134}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_387291568}[配置设备的时钟节点类型为]{style="font-family:宋体"}[OC]{lang="EN-US"}[，并在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上使能]{style="font-family:宋体"}[PTP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 配置设备的时钟节点类型为OC，并在接口GigabitEthernet1/0/1上使能PTP功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_1365197484}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+Sysname ptp mode oc
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ptp enable]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 ptp enable
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_x2055175198}[配置设备的时钟节点类型为]{style="font-family:宋体"}[E2ETC]{lang="EN-US"}[，并在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[和]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[上使能]{style="font-family:宋体"}[PTP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 配置设备的时钟节点类型为E2ETC，并在接口GigabitEthernet1/0/1和GigabitEthernet1/0/2上使能PTP功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_381988073}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode e2etc]{lang="EN-US"}
+Sysname ptp mode e2etc
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ptp enable]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 ptp enable
 
-[\[Sysname-GigabitEthernet1/0/1\] interface gigabitethernet 1/0/2]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 interface gigabitethernet 1/0/2
 
-[\[Sysname-GigabitEthernet1/0/2\] ptp enable]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/2 ptp enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_738851640}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **mode**]{lang="EN-US"}]{#struct_0_19838_x1039_x844478849}
+·**ptp** **mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **profile**]{lang="EN-US"}]{#struct_0_19838_x1039_x1257195990}
-:::
-
-::: {#-1739243069 .myid}
-[]{#_Toc404796738}[]{#struct_0_19838_x1039_1962999107}[]{#_Toc304915254}
+·**ptp** **profile**
 
 **PTP \-- PTP配置命令 \-- ptp force-state**
 
 ------------------------------------------------------------------------
 
-[**[ptp force-state]{lang="EN-US"}**]{#struct_0_19838_x1039_1365131948}[命令用来[配置]{#_Toc260994359}]{style="font-family:宋体"}[PTP]{lang="EN-US"}[接口的]{style="font-family:宋体"}[强制角色。]{style="font-family:宋体"}
+**[ptp force-state**]命令用来[配置]PTP接口的强制角色。
 
-[**[undo]{lang="EN-US"}**[ **ptp** **force-state**]{lang="EN-US"}]{#struct_0_19838_x1039_x1574647732}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **ptp** **force-state**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x2141769704}
+【命令】
 
-[**[ptp force-state]{lang="EN-US"}**[ { **master** \| **passive** \| **slave** }]{lang="EN-US"}]{#struct_0_19838_x1039_x1060075256}
+**[ptp force-state**[ { **master** \| **passive** \| **slave** }]]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **force-state**]{lang="EN-US"}]{#struct_0_19838_x1039_x255980385}
+**[undo** **ptp** **force-state**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x602737930}
+【缺省情况】
 
-[[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_x297578670}[接口的角色由]{style="font-family:宋体"}[BMC]{lang="EN-US"}[算法自动生成。]{style="font-family:宋体"}
+PTP接口的角色由BMC算法自动生成。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1047232207}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_19838_x1039_646858978}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1364673193}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_724021602}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x447254930}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1358446141}
+【参数】
 
-[**[master]{lang="EN-US"}**]{#struct_0_19838_x1039_101738727}[：表示]{style="font-family:宋体"}[PTP]{lang="EN-US"}[接口的角色为]{style="font-family:宋体"}[Master]{lang="EN-US"}[端口。]{style="font-family:宋体"}
+**[master**]：表示PTP接口的角色为Master端口。
 
-[**[passive]{lang="EN-US"}**]{#struct_0_19838_x1039_376994274}[：表示]{style="font-family:宋体"}[PTP]{lang="EN-US"}[接口的角色为]{style="font-family:宋体"}[Passive]{lang="EN-US"}[端口。]{style="font-family:宋体"}
+**[passive**]：表示PTP接口的角色为Passive端口。
 
-[**[slave]{lang="EN-US"}**]{#struct_0_19838_x1039_x1414974604}[：表示]{style="font-family:宋体"}[PTP]{lang="EN-US"}[接口的角色为]{style="font-family:宋体"}[Slave]{lang="EN-US"}[端口。]{style="font-family:宋体"}
+**[slave**]：表示PTP接口的角色为Slave端口。
 
-[[【使用指导】]{style="font-family:
-黑体"}]{#struct_0_19838_x1039_9824370}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[必须先配置]{lang="EN-US" style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x1265949426}[和]{lang="EN-US" style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{lang="EN-US" style="font-family:宋体"}
+·必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[一台设备上最多只允许配置一个]{style="font-family:宋体"}]{#struct_0_19838_x1039_1364607657}[Slave]{lang="EN-US"}[端口。]{style="font-family:宋体"}
+·一台设备上最多只允许配置一个Slave端口。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1095730114}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_x2007410611}[配置设备的时钟节点类型为]{style="font-family:宋体"}[OC]{lang="EN-US"}[，]{style="font-family:宋体"}[并配置]{style="font-family:宋体"}[PTP]{lang="EN-US"}[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的强制角色为]{style="font-family:宋体"}[Slave]{lang="EN-US"}[端口。]{style="font-family:宋体"}
+\# 配置设备的时钟节点类型为OC，并配置PTP接口GigabitEthernet1/0/1的强制角色为Slave端口。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_819937802}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+Sysname ptp mode oc
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ptp force-state slave]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 ptp force-state slave
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_627559869}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp mode]{lang="EN-US"}**]{#struct_0_19838_x1039_1860858332}
+·**ptp mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp profile]{lang="EN-US"}**]{#struct_0_19838_x1039_700952045}
+·**ptp profile**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp slave-only]{lang="EN-US"}**]{#struct_0_19838_x1039_1364804265}
-:::
-
-::: {#351199196 .myid}
-[]{#_Toc404796739}[]{#struct_0_19838_x1039_734209334}[]{#_Toc304915255}
+·**ptp slave-only**
 
 **PTP \-- PTP配置命令 \-- ptp min-delayreq-interval**
 
 ------------------------------------------------------------------------
 
-[**[ptp]{lang="EN-US"}**[ **min-delayreq-interval**]{lang="EN-US"}]{#struct_0_19838_x1039_x1225345607}[命令用来配置]{style="font-family:宋体"}[Delay_Req]{lang="EN-US"}[报文的最小发送间隔。]{style="font-family:宋体"}
+**[ptp** **min-delayreq-interval**]命令用来配置Delay_Req报文的最小发送间隔。
 
-[**[undo]{lang="EN-US"}**[ **ptp** **min-delayreq-interval**]{lang="EN-US"}]{#struct_0_19838_x1039_x1462763045}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **ptp** **min-delayreq-interval**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1822580155}
+【命令】
 
-[**[ptp]{lang="EN-US"}**[ **min-delayreq-interval** *value*]{lang="EN-US"}]{#struct_0_19838_x1039_x1409968711}
+**[ptp** **min-delayreq-interval** *value*]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **min-delayreq-interval**]{lang="EN-US"}]{#struct_0_19838_x1039_1625888738}
+**[undo** **ptp** **min-delayreq-interval**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x795945038}
+【缺省情况】
 
-[[不同]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x712080293}[的缺省情况不同：]{style="font-family:宋体"}
+不同PTP profile的缺省情况不同：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}[profile]{lang="EN-US"}]{#struct_0_19838_x1039_1364738729}[为]{lang="EN-US" style="font-family:宋体"}[IEEE 1588 ]{lang="EN-US"}[v]{lang="EN-US"}[ersion 2]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}[Delay_Req]{lang="EN-US"}[报文的最小发送间隔为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[（即]{lang="EN-US" style="font-family:宋体"}[2^0^]{lang="EN-US"}[）秒。]{lang="EN-US" style="font-family:宋体"}
+·当profile为IEEE 1588 version 2时，Delay_Req报文的最小发送间隔为1（即2^0^）秒。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}[profile]{lang="EN-US"}]{#struct_0_19838_x1039_1145155221}[为]{lang="EN-US" style="font-family:宋体"}[IEEE 802.1AS]{lang="EN-US"}[时，不允许配置该命令。]{lang="EN-US" style="font-family:宋体"}
+·当profile为IEEE 802.1AS时，不允许配置该命令。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_770237924}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_19838_x1039_x1761467527}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1904715266}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_655387286}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x1934090401}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1594211668}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_19838_x1039_124075661}[：]{style="font-family:宋体"}[Delay_Req]{lang="EN-US"}[报文的最小发送间隔＝]{style="font-family:宋体"}[2*^value^*]{lang="EN-US"}[，单位为秒，]{style="font-family:宋体"}*[value]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[-4]{lang="EN-US"}[～]{style="font-family:宋体"}[6]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[value*]：Delay_Req报文的最小发送间隔＝2*^value^*，单位为秒，*value*的取值范围为-4～6。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1364935337}
+【使用指导】
 
-[[必须先配置]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_1495570859}[和]{style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{style="font-family:宋体"}
+必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1076752622}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_133986531}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置]{style="font-family:宋体"}[Delay_Req]{lang="EN-US"}[报文的最小发送间隔为]{style="font-family:宋体"}[4]{lang="EN-US"}[（即]{style="font-family:宋体"}[2^2^]{lang="EN-US"}[）秒。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置Delay_Req报文的最小发送间隔为4（即2^2^）秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_x405549813}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+Sysname ptp mode oc
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ptp min-delayreq-interval 2]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 ptp min-delayreq-interval 2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_2052852407}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp mode]{lang="EN-US"}**]{#struct_0_19838_x1039_1364869801}
+·**ptp mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **profile**]{lang="EN-US"}]{#struct_0_19838_x1039_x361684345}
-:::
-
-::: {#1766724365 .myid}
-[]{#_Toc404796740}[]{#struct_0_19838_x1039_x608635914}[]{#_Toc304915256}
+·**ptp** **profile**
 
 **PTP \-- PTP配置命令 \-- ptp mode**
 
 ------------------------------------------------------------------------
 
-[**[ptp]{lang="EN-US"}**[ **mode**]{lang="EN-US"}]{#struct_0_19838_x1039_762853547}[命令用来配置设备的时钟节点类型。]{style="font-family:宋体"}
+**[ptp** **mode**]命令用来配置设备的时钟节点类型。
 
-[**[undo]{lang="EN-US"}**[ **ptp** **mode**]{lang="EN-US"}]{#struct_0_19838_x1039_x212616194}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **ptp** **mode**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_88259612}
+【命令】
 
-[**[ptp]{lang="EN-US"}**[ **mode** { **bc** \| **e2etc** \| **e2etc-oc** \| **oc** \| **p2ptc** \| **p2ptc-oc** }]{lang="EN-US"}]{#struct_0_19838_x1039_x1079600754}
+**[ptp**[ **mode** { **bc** \| **e2etc** \| **e2etc-oc** \| **oc** \| **p2ptc** \| **p2ptc-oc** }]]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **mode**]{lang="EN-US"}]{#struct_0_19838_x1039_861159714}
+**[undo** **ptp** **mode**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1486263039}
+【缺省情况】
 
-[[设备上没有配置任何时钟节点类型。]{style="font-family:宋体"}]{#struct_0_19838_x1039_1365066409}
+设备上没有配置任何时钟节点类型。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x463401106}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_19838_x1039_x236284449}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x440987775}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x987379033}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_1959072847}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1264108577}
+【参数】
 
-[**[bc]{lang="EN-US"}**]{#struct_0_19838_x1039_1053970980}[：表示时钟节点类型为]{style="font-family:宋体"}[BC]{lang="EN-US"}[（]{style="font-family:宋体"}[Boundary Clock]{lang="EN-US"}[，边界时钟）。]{style="font-family:宋体"}
+**[bc**]：表示时钟节点类型为BC（Boundary Clock，边界时钟）。
 
-[**[e2etc]{lang="EN-US"}**]{#struct_0_19838_x1039_1365000873}[：表示时钟节点类型为]{style="font-family:宋体"}[E2ETC]{lang="EN-US"}[（]{style="font-family:宋体"}[End-to-End Transparent Clock]{lang="EN-US"}[，端到端透明时钟）。]{style="font-family:宋体"}
+**[e2etc**]：表示时钟节点类型为E2ETC（End-to-End Transparent Clock，端到端透明时钟）。
 
-[**[e2etc-oc]{lang="EN-US"}**]{#struct_0_19838_x1039_x1954524207}[：表示时钟节点类型为]{style="font-family:宋体"}[E2ETC+OC]{lang="EN-US"}[（端到端透明时钟与普通时钟混合）。]{style="font-family:宋体"}
+**[e2etc-oc**]：表示时钟节点类型为E2ETC+OC（端到端透明时钟与普通时钟混合）。
 
-[**[oc]{lang="EN-US"}**]{#struct_0_19838_x1039_1529818284}[：表示时钟节点类型为]{style="font-family:宋体"}[OC]{lang="EN-US"}[（]{style="font-family:宋体"}[Ordinary Clock]{lang="EN-US"}[，普通时钟）。]{style="font-family:宋体"}
+**[oc**]：表示时钟节点类型为OC（Ordinary Clock，普通时钟）。
 
-[**[p2ptc]{lang="EN-US"}**]{#struct_0_19838_x1039_1594349495}[：表示时钟节点类型为]{style="font-family:宋体"}[P2PTC]{lang="EN-US"}[（]{style="font-family:宋体"}[Peer-to-Peer Transparent Clock]{lang="EN-US"}[，点到点透明时钟）。]{style="font-family:宋体"}
+**[p2ptc**]：表示时钟节点类型为P2PTC（Peer-to-Peer Transparent Clock，点到点透明时钟）。
 
-[**[p2ptc-oc]{lang="EN-US"}**]{#struct_0_19838_x1039_1041579859}[：表示时钟节点类型为]{style="font-family:宋体"}[P2PTC+OC]{lang="EN-US"}[（点到点透明时钟与普通时钟混合）。]{style="font-family:宋体"}
+**[p2ptc-oc**]：表示时钟节点类型为P2PTC+OC（点到点透明时钟与普通时钟混合）。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1215257763}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[必须先配置]{lang="EN-US" style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x833127932}[后，才允许配置该命令。]{lang="EN-US" style="font-family:宋体"}
+·必须先配置PTP profile后，才允许配置该命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}[profile]{lang="EN-US"}]{#struct_0_19838_x1039_x1445493698}[为]{lang="EN-US" style="font-family:宋体"}[IEEE 802.1AS]{lang="EN-US"}[时，不允许配置为]{lang="EN-US" style="font-family:宋体"}[E2ETC]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[E2ETC+OC]{lang="EN-US"}[类型。]{lang="EN-US" style="font-family:宋体"}
+·当profile为IEEE 802.1AS时，不允许配置为E2ETC或E2ETC+OC类型。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[改变设备的时钟节点类型，会清空除]{style="font-family:宋体"}]{#struct_0_19838_x1039_x704431123}[profile]{lang="EN-US"}[类型外的所有配置。]{style="font-family:宋体"}
+·改变设备的时钟节点类型，会清空除profile类型外的所有配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1365197481}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_x2054978590}[配置设备的时钟节点类型为]{style="font-family:宋体"}[OC]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置设备的时钟节点类型为OC。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_x2100211230}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}[]{#_Toc135292481}[]{#_Toc135292482}[]{#_Toc135292483}[]{#_Toc135292484}[]{#_Toc135292485}[]{#_Toc135292486}[]{#_Toc135292487}[]{#_Toc135292488}[]{#_Toc135292489}[]{#_Toc135292490}[]{#_Toc135292491}[]{#_Toc135292492}[]{#_Toc135292493}[]{#_Toc135292494}[]{#_Toc135292495}[]{#_Toc135292562}[]{#_Toc135292563}[]{#_Toc135292577}[]{#_Toc135292578}[]{#_Toc135292579}[]{#_Toc135292580}[]{#_Toc135292583}[]{#_Toc135292584}[]{#_Toc135292585}[]{#_Toc135292586}[]{#_Toc135292587}[]{#_Toc135292588}[]{#_Toc135292589}[]{#_Toc135292590}[]{#_Toc135292591}[]{#_Toc135292592}[]{#_Toc135292593}[]{#_Toc135292594}[]{#_Toc135292595}[]{#_Toc135292596}[]{#_Toc135292597}[]{#_Toc135292598}[]{#_Toc135292599}[]{#_Toc135292600}[]{#_Toc135292601}[]{#_Toc135292602}[]{#_Toc135292603}[]{#_Toc135292604}[]{#_Toc135292605}[]{#_Toc135292606}[]{#_Toc135292633}[]{#_Toc135292634}[]{#_Toc135292635}[]{#_Toc135292639}[]{#_Toc135292641}[]{#_Toc135292642}[]{#_Toc135292643}[]{#_Toc135292644}[]{#_Toc135292645}[]{#_Toc135292646}[]{#_Toc135292647}[]{#_Toc135292648}[]{#_Toc135292649}[]{#_Toc135292650}[]{#_Toc135292651}[]{#_Toc135292652}[]{#_Toc135292653}[]{#_Toc135292654}[]{#_Toc135292655}[]{#_Toc135292656}[]{#_Toc135292657}[]{#_Toc135292658}[]{#_Toc135292659}[]{#_Toc135292660}[]{#_Toc135292670}[]{#_Toc135292671}[]{#_Toc135292672}[]{#_Toc135292673}[]{#_Toc135292678}[]{#_Toc135292680}[]{#_Toc135292683}[]{#_Toc135292684}[]{#_Toc135292685}[]{#_Toc135292686}[]{#_Toc135292687}[]{#_Toc135292688}[]{#_Toc135292689}[]{#_Toc135292690}[]{#_Toc135292691}[]{#_Toc135292692}[]{#_Toc135292693}[]{#_Toc135292694}[]{#_Toc135292695}[]{#_Toc135292696}[]{#_Toc135292697}[]{#_Toc135292698}[]{#_Toc135292699}[]{#_Toc135292719}[]{#_Toc135292720}[]{#_Toc135292727}[]{#_Toc135292728}[]{#_Toc135292729}[]{#_Toc135292735}[]{#_Toc135292736}[]{#_Toc135292737}[]{#_Toc135292747}[]{#_Toc135292748}
+Sysname ptp mode oc
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1666595567}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp profile]{lang="EN-US"}**]{#struct_0_19838_x1039_169660583}
-:::
-
-::: {#-1596367016 .myid}
-[]{#_Toc404796741}[]{#struct_0_19838_x1039_1752086074}[]{#_Toc304915257}
+·**ptp profile**
 
 **PTP \-- PTP配置命令 \-- ptp pdelay-req-interval**
 
 ------------------------------------------------------------------------
 
-[**[ptp pdelay-req-interval]{lang="EN-US"}**]{#struct_0_19838_x1039_647260533}[命令用来配置]{style="font-family:宋体"}[Pdelay_Req]{lang="EN-US"}[报文的发送周期。]{style="font-family:宋体"}
+**[ptp pdelay-req-interval**]命令用来配置Pdelay_Req报文的发送周期。
 
-[**[undo]{lang="EN-US"}**[ **ptp** **pdelay-req-interval**]{lang="EN-US"}]{#struct_0_19838_x1039_x2086570964}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **ptp** **pdelay-req-interval**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1365131945}
+【命令】
 
-[**[ptp]{lang="EN-US"}**[ **pdelay-req-interval** *value*]{lang="EN-US"}]{#struct_0_19838_x1039_x1575499700}
+**[ptp** **pdelay-req-interval** *value*]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **pdelay-req-interval**]{lang="EN-US"}]{#struct_0_19838_x1039_1309148246}
+**[undo** **ptp** **pdelay-req-interval**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_2034550951}
+【缺省情况】
 
-[[Pdelay_Req]{lang="EN-US"}]{#struct_0_19838_x1039_1810434240}[报文的发送周期为]{style="font-family:宋体"}[1]{lang="EN-US"}[（即]{style="font-family:宋体"}[2^0^]{lang="EN-US"}[）秒。]{style="font-family:宋体"}
+Pdelay_Req报文的发送周期为1（即2^0^）秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1095706871}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_19838_x1039_546449889}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1248763499}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_946130643}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_1364673194}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_724218210}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_19838_x1039_170344699}[：]{style="font-family:宋体"}[Pdelay_Req]{lang="EN-US"}[报文的发送周期＝]{style="font-family:宋体"}[2*^value^*]{lang="EN-US"}[，单位为秒，]{style="font-family:宋体"}*[value]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[-4]{lang="EN-US"}[～]{style="font-family:宋体"}[6]{lang="EN-US"}[。当]{style="font-family:宋体"}[profile]{lang="EN-US"}[为]{style="font-family:宋体"}[IEEE 1588 version 2]{lang="EN-US"}[时，]{style="font-family:宋体"}*[value]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[5]{lang="EN-US"}[。]{style="font-family:
-宋体"}
+*[value*]：Pdelay_Req报文的发送周期＝2*^value^*，单位为秒，*value*的取值范围为-4～6。当profile为IEEE 1588 version 2时，*value*的取值范围为0～5。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1446317220}
+【使用指导】
 
-[[必须先配置]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x971440908}[和]{style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{style="font-family:宋体"}
+必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1401094783}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_x461441458}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置]{style="font-family:宋体"}[Pdelay_Req]{lang="EN-US"}[报文的发送周期为]{style="font-family:宋体"}[4]{lang="EN-US"}[（即]{style="font-family:宋体"}[2^2^]{lang="EN-US"}[）秒。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置Pdelay_Req报文的发送周期为4（即2^2^）秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_1364607658}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+Sysname ptp mode oc
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ptp pdelay-req-interval 2]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 ptp pdelay-req-interval 2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1094747074}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp mode]{lang="EN-US"}**]{#struct_0_19838_x1039_x2021667602}
+·**ptp mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **profile**]{lang="EN-US"}]{#struct_0_19838_x1039_x1382693686}
-:::
-
-::: {#1412475333 .myid}
-[]{#_Toc404796742}[]{#struct_0_19838_x1039_772888631}[]{#_Toc304915258}
+·**ptp** **profile**
 
 **PTP \-- PTP配置命令 \-- ptp port-mode**
 
 ------------------------------------------------------------------------
 
-[**[ptp]{lang="EN-US"}**[ **port-mode**]{lang="EN-US"}]{#struct_0_19838_x1039_743322156}[命令用来配置]{style="font-family:宋体"}[TC+OC]{lang="EN-US"}[（包括]{style="font-family:宋体"}[E2ETC+OC]{lang="EN-US"}[和]{style="font-family:宋体"}[P2PTC+OC]{lang="EN-US"}[）的接口类型为]{style="font-family:宋体"}[OC]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[ptp** **port-mode**]命令用来配置TC+OC（包括E2ETC+OC和P2PTC+OC）的接口类型为OC。
 
-[**[undo ptp]{lang="EN-US"}**[ **port-mode**]{lang="EN-US"}]{#struct_0_19838_x1039_1227130558}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ptp** **port-mode**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1810248646}
+【命令】
 
-[**[ptp]{lang="EN-US"}**[ **port-mode** **oc**]{lang="EN-US"}]{#struct_0_19838_x1039_456239683}
+**[ptp** **port-mode** **oc**]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **port-mode**]{lang="EN-US"}]{#struct_0_19838_x1039_1364804266}
+**[undo** **ptp** **port-mode**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_734274870}
+【缺省情况】
 
-[[E2ETC+OC]{lang="EN-US"}]{#struct_0_19838_x1039_1123208803}[和]{style="font-family:宋体"}[P2PTC+OC]{lang="EN-US"}[上各接口的类型都为]{style="font-family:宋体"}[TC]{lang="EN-US"}[。]{style="font-family:宋体"}
+E2ETC+OC和P2PTC+OC上各接口的类型都为TC。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1158948614}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_19838_x1039_1538395811}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_2130562613}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_278065650}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x201370520}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1281093891}
+【参数】
 
-[**[oc]{lang="EN-US"}**]{#struct_0_19838_x1039_1364738730}[：表示]{style="font-family:宋体"}[TC+OC]{lang="EN-US"}[的接口类型为]{style="font-family:宋体"}[OC]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[oc**]：表示TC+OC的接口类型为OC。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1144696470}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[必须先配置]{lang="EN-US" style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_763267051}[和]{lang="EN-US" style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{lang="EN-US" style="font-family:宋体"}
+·必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[只有当设备的时钟节点类型为]{style="font-family:宋体"}]{#struct_0_19838_x1039_1901722223}[E2ETC+OC]{lang="EN-US"}[或]{style="font-family:宋体"}[P2PTC+OC]{lang="EN-US"}[时才允许配置该命令。]{style="font-family:宋体"}
+·只有当设备的时钟节点类型为E2ETC+OC或P2PTC+OC时才允许配置该命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x251708843}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_x337930368}[配置设备的时钟节点类型为]{style="font-family:宋体"}[P2PTC+OC]{lang="EN-US"}[，并配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的类型为]{style="font-family:宋体"}[OC]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置设备的时钟节点类型为P2PTC+OC，并配置接口GigabitEthernet1/0/1的类型为OC。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_x1020140814}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode p2ptc-oc]{lang="EN-US"}
+Sysname ptp mode p2ptc-oc
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ptp port-mode oc]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 ptp port-mode oc
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1364935338}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **mode**]{lang="EN-US"}]{#struct_0_19838_x1039_1496291755}
+·**ptp** **mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **profile**]{lang="EN-US"}]{#struct_0_19838_x1039_273409111}
-:::
-
-::: {#-539347923 .myid}
-[]{#_Toc404796743}[]{#struct_0_19838_x1039_x4484099}[]{#_Toc304915259}[]{#_Toc302131798}
+·**ptp** **profile**
 
 **PTP \-- PTP配置命令 \-- ptp priority**
 
 ------------------------------------------------------------------------
 
-[**[ptp]{lang="EN-US"}**[ **priority** **clock-source**]{lang="EN-US"}]{#struct_0_19838_x1039_x1756607484}[命令用来配置时钟参与]{style="font-family:宋体"}[BMC]{lang="EN-US"}[算法的优先级参数。]{style="font-family:宋体"}
+**[ptp** **priority** **clock-source**]命令用来配置时钟参与BMC算法的优先级参数。
 
-[**[undo ptp]{lang="EN-US"}**[ **priority** **clock-source**]{lang="EN-US"}]{#struct_0_19838_x1039_2139715013}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ptp** **priority** **clock-source**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1686028659}
+【命令】
 
-[**[ptp]{lang="EN-US"}**[ **priority** **clock-source** { **local** \| **tod0** \| **tod1** } { **priority1** *pri1-value* \| **priority2** *pri2-value* }]{lang="EN-US"}]{#struct_0_19838_x1039_534655816}
+**[ptp**[ **priority** **clock-source** { **local** \| **tod0** \| **tod1** } { **priority1** *pri1-value* \| **priority2** *pri2-value* }]]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **priority** **clock-source** { **local** \| **tod0** \| **tod1** } { **priority1** \| **priority2** }]{lang="EN-US"}]{#struct_0_19838_x1039_x174445117}
+**[undo**[ **ptp** **priority** **clock-source** { **local** \| **tod0** \| **tod1** } { **priority1** \| **priority2** }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1364869802}
+【缺省情况】
 
-[[不同]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x361880953}[的缺省情况不同：]{style="font-family:宋体"}
+不同PTP profile的缺省情况不同：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}[profile]{lang="EN-US"}]{#struct_0_19838_x1039_x551083581}[为]{lang="EN-US" style="font-family:宋体"}[IEEE 1588 ]{lang="EN-US"}[v]{lang="EN-US"}[ersion 2]{lang="EN-US"}[时，时钟优先级一、二的缺省值均为]{lang="EN-US" style="font-family:宋体"}[128]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·当profile为IEEE 1588 version 2时，时钟优先级一、二的缺省值均为128。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{style="font-family:宋体"}]{#struct_0_19838_x1039_2054001611}[profile]{lang="EN-US"}[为]{style="font-family:宋体"}[IEEE 802.1AS]{lang="EN-US"}[时，时钟优先级一的缺省值均为]{style="font-family:宋体"}[246]{lang="EN-US"}[，时钟优先级二的缺省值均为]{style="font-family:宋体"}[248]{lang="EN-US"}[。]{style="font-family:宋体"}
+·当profile为IEEE 802.1AS时，时钟优先级一的缺省值均为246，时钟优先级二的缺省值均为248。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1617189898}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_19838_x1039_224669664}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1485798393}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_711184946}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_1365066410}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x462942355}
+【参数】
 
-[**[local]{lang="EN-US"}**]{#struct_0_19838_x1039_1717354244}[：表示配置本地时钟的优先级参数。]{style="font-family:宋体"}
+**[local**]：表示配置本地时钟的优先级参数。
 
-[**[tod0]{lang="EN-US"}**]{#struct_0_19838_x1039_x174314045}[：表示配置第一路]{style="font-family:宋体"}[ToD]{lang="EN-US"}[时钟的优先级参数。]{style="font-family:宋体"}
+**[tod0**]：表示配置第一路ToD时钟的优先级参数。
 
-[**[tod1]{lang="EN-US"}**]{#struct_0_19838_x1039_x1738222450}[：表示配置第二路]{style="font-family:宋体"}[ToD]{lang="EN-US"}[时钟的优先级参数。]{style="font-family:宋体"}[本参数的支持情况和设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[tod1**]：表示配置第二路ToD时钟的优先级参数。本参数的支持情况和设备的型号有关，请以设备的实际情况为准。
 
-[**[priority1]{lang="EN-US"}**[ *pri1-value*]{lang="EN-US"}]{#struct_0_19838_x1039_x657008713}[：表示时钟的优先级一。]{style="font-family:宋体"}*[pri1-value]{lang="EN-US"}*[为]{style="font-family:宋体"}[优先级一的值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[，数值越小优先级越高。]{style="font-family:宋体"}
+**[priority1** *pri1-value*]：表示时钟的优先级一。*pri1-value*为优先级一的值，取值范围为0～255，数值越小优先级越高。
 
-[**[priority2]{lang="EN-US"}**[ *pri2-value*]{lang="EN-US"}]{#struct_0_19838_x1039_x1776380291}[：表示时钟的优先级二。]{style="font-family:宋体"}*[pri2-value]{lang="EN-US"}*[为]{style="font-family:宋体"}[优先级二的值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[，数值越小优先级越高。]{style="font-family:宋体"}
+**[priority2** *pri2-value*]：表示时钟的优先级二。*pri2-value*为优先级二的值，取值范围为0～255，数值越小优先级越高。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x510749768}
+【使用指导】
 
-[[必须先配置]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x909638914}[和]{style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{style="font-family:宋体"}
+必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1365000874}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_x1954458671}[配置本地时钟的优先级一值为]{style="font-family:宋体"}[10]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置本地时钟的优先级一值为10。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_487550179}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+Sysname ptp mode oc
 
-[\[Sysname\] ptp priority clock-source local priority1 10]{lang="EN-US"}
+Sysname ptp priority clock-source local priority1 10
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_2104142723}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp mode]{lang="EN-US"}**]{#struct_0_19838_x1039_1329802704}
+·**ptp mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **profile**]{lang="EN-US"}]{#struct_0_19838_x1039_x552788978}
-:::
-
-::: {#-1144791783 .myid}
-[]{#_Toc304915260}[]{#_Toc404796744}[]{#struct_0_19838_x1039_1107793796}
+·**ptp** **profile**
 
 **PTP \-- PTP配置命令 \-- ptp profile**
 
 ------------------------------------------------------------------------
 
-[**[ptp profile]{lang="EN-US"}**]{#struct_0_19838_x1039_x1110724889}[命令用来配置设备采用的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[协议标准。]{style="font-family:宋体"}
+**[ptp profile**]命令用来配置设备采用的PTP协议标准。
 
-[**[undo ptp profile]{lang="EN-US"}**]{#struct_0_19838_x1039_1365197482}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ptp profile**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x2055044126}
+【命令】
 
-[**[ptp]{lang="EN-US"}**[ **profile** { **1588v2** \| **8021as** }]{lang="EN-US"}]{#struct_0_19838_x1039_x1221256142}
+**[ptp**[ **profile** { **1588v2** \| **8021as** }]]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **profile**]{lang="EN-US"}]{#struct_0_19838_x1039_x447961908}
+**[undo** **ptp** **profile**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_2115143246}
+【缺省情况】
 
-[[未配置设备采用的]{style="font-family:宋体"}[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_x1650091410}[协议标准，]{style="font-family:宋体"}[PTP]{lang="EN-US"}[协议不运行。]{style="font-family:宋体"}
+未配置设备采用的PTP协议标准，PTP协议不运行。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_440544587}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_19838_x1039_x275687819}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1365131946}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x1575303092}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_1054494688}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1232645591}
+【参数】
 
-[**[1588v2]{lang="EN-US"}**]{#struct_0_19838_x1039_965744667}[：表示采用的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[协议标准为]{style="font-family:宋体"}[IEEE 1588 version 2]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[1588v2**]：表示采用的PTP协议标准为IEEE 1588 version 2。
 
-[**[8021as]{lang="EN-US"}**]{#struct_0_19838_x1039_1018070673}[：表示采用的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[协议标准为]{style="font-family:宋体"}[IEEE 802.1AS]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[8021as**]：表示采用的PTP协议标准为IEEE 802.1AS。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_997852458}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[必须首先配置设备支持的]{style="font-family:宋体"}]{#struct_0_19838_x1039_1210721520}[PTP]{lang="EN-US"}[协议标准，否则不允许执行其他]{style="font-family:宋体"}[PTP]{lang="EN-US"}[配置命令。]{style="font-family:宋体"}
+·必须首先配置设备支持的PTP协议标准，否则不允许执行其他PTP配置命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当改变或取消设备采用的]{style="font-family:宋体"}]{#struct_0_19838_x1039_x534802389}[PTP]{lang="EN-US"}[协议标准时，]{style="font-family:宋体"}[PTP]{lang="EN-US"}[功能不工作，将会清空用户在之前]{style="font-family:宋体"}[PTP]{lang="EN-US"}[协议标准下的所有]{style="font-family:宋体"}[PTP]{lang="EN-US"}[配置。]{style="font-family:宋体"}
+·当改变或取消设备采用的PTP协议标准时，PTP功能不工作，将会清空用户在之前PTP协议标准下的所有PTP配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1364673191}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_723890530}[配置设备采用的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[协议标准为]{style="font-family:宋体"}[IEEE 1588 version 2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置设备采用的PTP协议标准为IEEE 1588 version 2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_x1366444681}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
-:::
-
-::: {#-1812690354 .myid}
-[]{#_Toc404796745}[]{#struct_0_19838_x1039_x265316804}
+Sysname ptp profile 1588v2
 
 **PTP \-- PTP配置命令 \-- ptp slave-only**
 
 ------------------------------------------------------------------------
 
-[**[ptp]{lang="EN-US"}**[ **slave-only**]{lang="EN-US"}]{#struct_0_19838_x1039_1741675653}[命令用来配置]{style="font-family:宋体"}[OC]{lang="EN-US"}[的工作模式为]{style="font-family:宋体"}[Slave-only]{lang="EN-US"}[，即]{style="font-family:宋体"}[OC]{lang="EN-US"}[只能作为从时钟。]{style="font-family:宋体"}
+**[ptp** **slave-only**]命令用来配置OC的工作模式为Slave-only，即OC只能作为从时钟。
 
-[**[undo]{lang="EN-US"}**[ **ptp** **slave-only**]{lang="EN-US"}]{#struct_0_19838_x1039_x960305729}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **ptp** **slave-only**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_844982252}
+【命令】
 
-[**[ptp]{lang="EN-US"}**[ **slave-only**]{lang="EN-US"}]{#struct_0_19838_x1039_811234607}
+**[ptp** **slave-only**]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **slave-only**]{lang="EN-US"}]{#struct_0_19838_x1039_1364607655}
+**[undo** **ptp** **slave-only**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1095599042}
+【缺省情况】
 
-[[OC]{lang="EN-US"}]{#struct_0_19838_x1039_1527987859}[的工作模式不是]{style="font-family:宋体"}[Slave-only]{lang="EN-US"}[，即]{style="font-family:宋体"}[OC]{lang="EN-US"}[既可作为主时钟也可作为从时钟。]{style="font-family:宋体"}
+OC的工作模式不是Slave-only，即OC既可作为主时钟也可作为从时钟。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x959267296}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_19838_x1039_1121042849}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x628155110}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x1400986878}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x1847830045}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_454922450}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[必须先配置]{lang="EN-US" style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_1364804263}[和]{lang="EN-US" style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{lang="EN-US" style="font-family:宋体"}
+·必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[只有当设备的时钟节点类型为]{style="font-family:宋体"}]{#struct_0_19838_x1039_734078262}[OC]{lang="EN-US"}[时，才允许配置该命令。]{style="font-family:宋体"}
+·只有当设备的时钟节点类型为OC时，才允许配置该命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}[OC]{lang="EN-US"}]{#struct_0_19838_x1039_502087763}[的工作模式为]{lang="EN-US" style="font-family:宋体"}[Slave-only]{lang="EN-US"}[时，也允许将其]{lang="EN-US" style="font-family:宋体"}[PTP]{lang="EN-US"}[接口强制配置为]{lang="EN-US" style="font-family:宋体"}[Master]{lang="EN-US"}[端口或]{lang="EN-US" style="font-family:宋体"}[Passive]{lang="EN-US"}[端口，通过]{lang="EN-US" style="font-family:宋体"}**[ptp force-state]{lang="EN-US"}**[命令进行生效配置。]{lang="EN-US" style="font-family:宋体"}
+·当OC的工作模式为Slave-only时，也允许将其PTP接口强制配置为Master端口或Passive端口，通过**ptp force-state**命令进行生效配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x422662950}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_1130949331}[配置设备的时钟节点类型为]{style="font-family:宋体"}[OC]{lang="EN-US"}[，并配置其工作模式为]{style="font-family:宋体"}[Slave-only]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置设备的时钟节点类型为OC，并配置其工作模式为Slave-only。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_x158514128}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+Sysname ptp mode oc
 
-[\[Sysname\] ptp slave-only]{lang="EN-US"}
+Sysname ptp slave-only
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1391665148}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp force-state]{lang="EN-US"}**]{#struct_0_19838_x1039_1006089784}
+·**ptp force-state**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **mode**]{lang="EN-US"}]{#struct_0_19838_x1039_1364738727}
+·**ptp** **mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **profile**]{lang="EN-US"}]{#struct_0_19838_x1039_1144499861}
-:::
-
-::: {#-1155245561 .myid}
-[]{#_Toc304915261}[]{#_Toc404796746}[]{#struct_0_19838_x1039_747723971}[]{#_Toc345342972}[]{#_Toc345343038}
+·**ptp** **profile**
 
 **PTP \-- PTP配置命令 \-- ptp source**
 
 ------------------------------------------------------------------------
 
-[**[ptp]{lang="EN-US"}**[ **source**]{lang="EN-US"}]{#struct_0_19838_x1039_x1067712053}[命令用来配置采用]{style="font-family:宋体"}[UDP]{lang="EN-US"}[（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[）封装格式的组播]{style="font-family:宋体"}[PTP]{lang="EN-US"}[报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[ptp** **source**]命令用来配置采用UDP（IPv4）封装格式的组播PTP报文的源IP地址。
 
-[**[undo ptp]{lang="EN-US"}**[ **source**]{lang="EN-US"}]{#struct_0_19838_x1039_1626530875}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ptp** **source**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1979370695}
+【命令】
 
-[**[ptp]{lang="EN-US"}**[ **source** *ip-address* \[ **vpn-instance** *vpn-instance-name* \]]{lang="EN-US"}]{#struct_0_19838_x1039_x2017448014}
+**[ptp** **source** *ip-address* [ **vpn-instance** *vpn-instance-name* ]]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **source** *ip-address* \[ **vpn-instance** *vpn-instance-name* \]]{lang="EN-US"}]{#struct_0_19838_x1039_x1683123954}
+**[undo** **ptp** **source** *ip-address* [ **vpn-instance** *vpn-instance-name* ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1364935335}
+【缺省情况】
 
-[[未配置采用]{style="font-family:宋体"}[UDP]{lang="EN-US"}]{#struct_0_19838_x1039_1495439787}[（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[）封装格式的组播]{style="font-family:宋体"}[PTP]{lang="EN-US"}[报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+未配置采用UDP（IPv4）封装格式的组播PTP报文的源IP地址。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_63389374}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_19838_x1039_1102882479}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1863334321}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x238475683}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x177824876}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_853267820}
+【参数】
 
-[*[ip-address]{lang="EN-US"}*]{#struct_0_19838_x1039_994956121}[：表示采用]{style="font-family:宋体"}[UDP]{lang="EN-US"}[（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[）封装格式的组播]{style="font-family:宋体"}[PTP]{lang="EN-US"}[报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[ip-address*]：表示采用UDP（IPv4）封装格式的组播PTP报文的源IP地址。
 
-[**[vpn-instance ]{lang="EN-US"}***[vpn-instance-name]{lang="EN-US"}*]{#struct_0_19838_x1039_1364869799}[：指定本端设备和对端设备通信时使用的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[，]{style="font-family:宋体"}*[vpn-instance-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果未指定本参数，则表示对端设备位于公网中。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[vpn-instance ***vpn-instance-name*]：指定本端设备和对端设备通信时使用的VPN，*vpn-instance-name*表示MPLS L3VPN的VPN实例名称，为1～31个字符的字符串，区分大小写。如果未指定本参数，则表示对端设备位于公网中。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1469159098}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[必须先配置]{lang="EN-US" style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x1408687255}[和]{lang="EN-US" style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{lang="EN-US" style="font-family:宋体"}
+·必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}[profile]{lang="EN-US"}]{#struct_0_19838_x1039_1573065806}[为]{lang="EN-US" style="font-family:宋体"}[IEEE 802.1AS]{lang="EN-US"}[时，不允许配置该命令。]{lang="EN-US" style="font-family:宋体"}
+·当profile为IEEE 802.1AS时，不允许配置该命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[该命令在]{style="font-family:宋体"}]{#struct_0_19838_x1039_x2132940294}[PTP]{lang="EN-US"}[报文]{style="font-family:宋体"}[采用]{style="font-family:宋体"}[UDP]{lang="EN-US"}[（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[）]{style="font-family:宋体"}[封装格式]{style="font-family:宋体"}[时才生效。]{style="font-family:宋体"}
+·该命令在PTP报文采用UDP（IPv4）封装格式时才生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1058335279}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_446619180}[配置采用]{style="font-family:宋体"}[UDP]{lang="EN-US"}[（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[）封装格式的组播]{style="font-family:宋体"}[PTP]{lang="EN-US"}[报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[3.5.1.5]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置采用UDP（IPv4）封装格式的组播PTP报文的源IP地址为3.5.1.5。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_1365066407}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+Sysname ptp mode oc
 
-[\[Sysname\] ptp source 3.5.1.5]{lang="EN-US"}
+Sysname ptp source 3.5.1.5
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x462745746}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp mode]{lang="EN-US"}**]{#struct_0_19838_x1039_1314482282}
+·**ptp mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp profile]{lang="EN-US"}**]{#struct_0_19838_x1039_x620749965}
+·**ptp profile**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp transport-protocol]{lang="EN-US"}**]{#struct_0_19838_x1039_x1647699217}
-:::
-
-::: {#-1725020127 .myid}
-[]{#_Toc404796747}[]{#struct_0_19838_x1039_x25672414}
+·**ptp transport-protocol**
 
 **PTP \-- PTP配置命令 \-- ptp syn-interval**
 
 ------------------------------------------------------------------------
 
-[**[ptp]{lang="EN-US"}**[ **syn-interval**]{lang="EN-US"}]{#struct_0_19838_x1039_868687932}[命令用来配置]{style="font-family:宋体"}[Sync]{lang="EN-US"}[报文的发送周期。]{style="font-family:宋体"}
+**[ptp** **syn-interval**]命令用来配置Sync报文的发送周期。
 
-[**[undo ptp]{lang="EN-US"}**[ **syn-interval**]{lang="EN-US"}]{#struct_0_19838_x1039_x1100389945}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ptp** **syn-interval**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1365000871}
+【命令】
 
-[**[ptp]{lang="EN-US"}**[ **syn-interval** *value*]{lang="EN-US"}]{#struct_0_19838_x1039_x1954655279}
+**[ptp** **syn-interval** *value*]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **syn-interval**]{lang="EN-US"}]{#struct_0_19838_x1039_x623898185}
+**[undo** **ptp** **syn-interval**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_2090903227}
+【缺省情况】
 
-[[不同]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x961221360}[的缺省情况不同：]{style="font-family:宋体"}
+不同PTP profile的缺省情况不同：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}[profile]{lang="EN-US"}]{#struct_0_19838_x1039_454137143}[为]{lang="EN-US" style="font-family:宋体"}[IEEE 1588 ]{lang="EN-US"}[v]{lang="EN-US"}[ersion 2]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}[Sync]{lang="EN-US"}[报文的发送周期为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[（即]{lang="EN-US" style="font-family:宋体"}[2^0^]{lang="EN-US"}[）秒。]{lang="EN-US" style="font-family:宋体"}
+·当profile为IEEE 1588 version 2时，Sync报文的发送周期为1（即2^0^）秒。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}[profile]{lang="EN-US"}]{#struct_0_19838_x1039_1150526285}[为]{lang="EN-US" style="font-family:宋体"}[IEEE 802.1AS]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}[Sync]{lang="EN-US"}[报文的发送周期为]{lang="EN-US" style="font-family:宋体"}[1/8]{lang="EN-US"}[（即]{lang="EN-US" style="font-family:宋体"}[2^-3^]{lang="EN-US"}[）秒。]{lang="EN-US" style="font-family:宋体"}
+·当profile为IEEE 802.1AS时，Sync报文的发送周期为1/8（即2^-3^）秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_412444884}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_19838_x1039_x1686911939}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1365197479}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x2055502867}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_1972620304}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1104923451}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_19838_x1039_x1473246249}[：]{style="font-family:宋体"}[Sync]{lang="EN-US"}[报文的发送周期＝]{style="font-family:宋体"}[2*^value^*]{lang="EN-US"}[，单位为秒，当]{style="font-family:宋体"}[profile]{lang="EN-US"}[为]{style="font-family:宋体"}[IEEE 802.1AS]{lang="EN-US"}[时，]{style="font-family:宋体"}*[value]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[-4]{lang="EN-US"}[～]{style="font-family:宋体"}[6]{lang="EN-US"}[；当]{style="font-family:
-宋体"}[profile]{lang="EN-US"}[为]{style="font-family:宋体"}[IEEE 1588 version 2]{lang="EN-US"}[时，]{style="font-family:宋体"}*[value]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[-1]{lang="EN-US"}[～]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[value*]：Sync报文的发送周期＝2*^value^*，单位为秒，当profile为IEEE 802.1AS时，*value*的取值范围为-4～6；当profile为IEEE 1588 version 2时，*value*的取值范围为-1～1。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1899375042}
+【使用指导】
 
-[[必须先配置]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_1290712733}[和]{style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{style="font-family:宋体"}
+必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1098223847}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_1365131943}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置]{style="font-family:宋体"}[Sync]{lang="EN-US"}[报文的发送周期为]{style="font-family:宋体"}[2]{lang="EN-US"}[（即]{style="font-family:宋体"}[2^1^]{lang="EN-US"}[）秒。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置Sync报文的发送周期为2（即2^1^）秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_x1575106484}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+Sysname ptp mode oc
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ptp syn-interval 1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 ptp syn-interval 1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_645335942}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp mode]{lang="EN-US"}**]{#struct_0_19838_x1039_x640141528}
+·**ptp mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **profile**]{lang="EN-US"}]{#struct_0_19838_x1039_x1522301593}
-:::
-
-::: {#1365054246 .myid}
-[]{#_Toc404796748}[]{#struct_0_19838_x1039_x173658684}[]{#_Toc385854914}[]{#_Toc383589570}
+·**ptp** **profile**
 
 **PTP \-- PTP配置命令 \-- ptp tod**
 
 ------------------------------------------------------------------------
 
-[**[ptp tod]{lang="FR"}**]{#struct_0_19838_x1039_764370417}[命令用来配置]{style="font-family:宋体"}[ToD]{lang="FR"}[时钟信号的方向和收发时延校正时间。]{style="font-family:宋体"}
+**[ptp tod**]命令用来配置ToD时钟信号的方向和收发时延校正时间。
 
-[**[undo ]{lang="FR"}**]{#struct_0_19838_x1039_x858958053}**[ptp tod]{lang="FR"}**[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo **]**ptp tod**命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x577401960}
+【命令】
 
-[**[ptp ]{lang="FR"}**]{#struct_0_19838_x1039_1760398825}[{ **tod0** \| **tod1** } { **input** \[ **delay** *input-delay-time* \] \| **output** \[ **delay** *output-delay-time* \] }]{lang="FR"}
+**[ptp ** { **tod0** \| **tod1** } { **input** [ **delay** *input-delay-time* ] \| **output**  **delay** *output-delay-time*  }]
 
-[**[undo ptp ]{lang="FR"}**]{#struct_0_19838_x1039_390115092}[{ **tod0** \| **tod1** } { **input** \| **output** }]{lang="FR"}
+**[undo ptp ** { **tod0** \| **tod1** } { **input** \| **output** }]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_943528779}
+【缺省情况】
 
-[[ToD]{lang="EN-US"}]{#struct_0_19838_x1039_701486363}[时钟信号方向]{style="font-family:宋体"}[为入方向，收发时延校正时间为[0]{lang="EN-US"}]{style="font-family:宋体"}[纳秒。]{style="font-family:宋体"}
+ToD时钟信号方向为入方向，收发时延校正时间为[0]纳秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_2063568595}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_19838_x1039_x577467496}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1011304846}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x1956063312}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_716505212}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1472453766}
+【参数】
 
-[**[tod0]{lang="FR"}**]{#struct_0_19838_x1039_1914733342}[：]{style="font-family:宋体"}[第一路]{style="font-family:宋体"}[ToD]{lang="EN-US"}[时钟]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[tod0**]：第一路ToD时钟。
 
-[**[tod1]{lang="FR"}**]{#struct_0_19838_x1039_x349395209}[：第二路]{style="font-family:宋体"}[ToD]{lang="EN-US"}[时钟]{style="font-family:宋体"}[。本参数的支持情况和设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[tod1**]：第二路ToD时钟。本参数的支持情况和设备的型号有关，请以设备的实际情况为准。
 
-[**[input]{lang="SV"}**]{#struct_0_19838_x1039_x577270888}[：时钟信号方向为入方向，即此时设备接收外部时间信号]{style="font-family:宋体"}[。]{style="font-family:
-宋体"}
+**[input**]：时钟信号方向为入方向，即此时设备接收外部时间信号。
 
-[*[input-delay-time]{lang="FR"}*]{#struct_0_19838_x1039_x1755905580}[：]{style="font-family:宋体"}[ToD]{lang="EN-US"}[时钟信号的接收延迟校正时间，]{style="font-family:宋体"}[单位为纳秒，取值范围]{style="font-family:宋体"}[与设备的型号有关，请以设备的实际情况为准]{style="font-family:宋体"}[。]{style="font-family:
-宋体"}
+*[input-delay-time*]：ToD时钟信号的接收延迟校正时间，单位为纳秒，取值范围与设备的型号有关，请以设备的实际情况为准。
 
-[**[output]{lang="FR"}**]{#struct_0_19838_x1039_419842001}[：]{style="font-family:宋体"}[时钟信号方向为出方向，即此时设备向外提供时间信号]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[output**]：时钟信号方向为出方向，即此时设备向外提供时间信号。
 
-[*[output-delay-time]{lang="FR"}*]{#struct_0_19838_x1039_210584623}[：]{style="font-family:宋体"}[ToD]{lang="EN-US"}[时钟信号的发送延迟校正时间，]{style="font-family:宋体"}[单位为纳秒，取值范围]{style="font-family:宋体"}[与设备的型号有关，请以设备的实际情况为准]{style="font-family:宋体"}[。]{style="font-family:
-宋体"}
+*[output-delay-time*]：ToD时钟信号的发送延迟校正时间，单位为纳秒，取值范围与设备的型号有关，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_2097676186}
+【使用指导】
 
-[[必须先配置]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x586140260}[和]{style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{style="font-family:宋体"}
+必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1587133340}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_x577336424}[配置]{style="font-family:宋体"}[PTP]{lang="FR"}[第一路]{style="font-family:宋体"}[ToD]{lang="EN-US"}[时钟信号为入方向、接收时延校正时间为]{style="font-family:宋体"}[1000]{lang="EN-US"}[纳秒，]{style="font-family:宋体"}[第二路]{style="font-family:宋体"}[ToD]{lang="EN-US"}[时钟信号为出方向、发送时延校正时间为]{style="font-family:宋体"}[100]{lang="EN-US"}[纳秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置PTP第一路ToD时钟信号为入方向、接收时延校正时间为1000纳秒，第二路ToD时钟信号为出方向、发送时延校正时间为100纳秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_x569917987}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+Sysname ptp mode oc
 
-[\[Sysname\] ptp tod0 input delay 1000]{lang="EN-US"}
+Sysname ptp tod0 input delay 1000
 
-[\[Sysname\] ptp tod1 output delay 100]{lang="EN-US"}
+Sysname ptp tod1 output delay 100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1404195309}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **profile**]{lang="EN-US"}]{#struct_0_19838_x1039_x1893242158}
+·**ptp** **profile**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[ptp mode]{lang="EN-US"}**]{#struct_0_19838_x1039_x508539329}
-:::
-
-::: {#554664590 .myid}
-[]{#_Toc304915262}[]{#_Toc404796749}[]{#struct_0_19838_x1039_x77115560}
+·**ptp mode**
 
 **PTP \-- PTP配置命令 \-- ptp transport-protocol**
 
 ------------------------------------------------------------------------
 
-[**[ptp]{lang="EN-US"}**[ **transport-protocol**]{lang="EN-US"}]{#struct_0_19838_x1039_x742039604}[命令用来配置当前接口的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[报文封装格式为]{style="font-family:宋体"}[UDP]{lang="EN-US"}[（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[）格式。]{style="font-family:宋体"}
+**[ptp** **transport-protocol**]命令用来配置当前接口的PTP报文封装格式为UDP（IPv4）格式。
 
-[**[undo ptp]{lang="EN-US"}**[ **transport-protocol**]{lang="EN-US"}]{#struct_0_19838_x1039_1364673192}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ptp** **transport-protocol**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_724087138}
+【命令】
 
-[**[ptp]{lang="EN-US"}**[ **transport-protocol udp**]{lang="EN-US"}]{#struct_0_19838_x1039_x867917845}
+**[ptp** **transport-protocol udp**]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **transport-protocol**]{lang="EN-US"}]{#struct_0_19838_x1039_x146779678}
+**[undo** **ptp** **transport-protocol**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x589550877}
+【缺省情况】
 
-[[PTP]{lang="EN-US"}]{#struct_0_19838_x1039_935937231}[报文的封装格式为]{style="font-family:宋体"}[IEEE 802.3/Ethernet]{lang="EN-US"}[格式。]{style="font-family:宋体"}
+PTP报文的封装格式为IEEE 802.3/Ethernet格式。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1093314041}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_19838_x1039_400114056}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1418399364}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_1364607656}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_1095664578}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1076505296}
+【参数】
 
-[**[udp]{lang="EN-US"}**]{#struct_0_19838_x1039_694063678}[：表示配置接口下]{style="font-family:宋体"}[PTP]{lang="EN-US"}[报文的封装格式为]{style="font-family:宋体"}[UDP]{lang="EN-US"}[（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[）。]{style="font-family:宋体"}
+**[udp**]：表示配置接口下PTP报文的封装格式为UDP（IPv4）。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1179085185}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[必须先配置]{lang="EN-US" style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x871722288}[和]{lang="EN-US" style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{lang="EN-US" style="font-family:宋体"}
+·必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}[profile]{lang="EN-US"}]{#struct_0_19838_x1039_x1562645536}[为]{lang="EN-US" style="font-family:宋体"}[IEEE 802.1AS]{lang="EN-US"}[时，不允许配置该命令。]{lang="EN-US" style="font-family:宋体"}
+·当profile为IEEE 802.1AS时，不允许配置该命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1881514752}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_1947407544}[配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的]{style="font-family:宋体"}[PTP]{lang="EN-US"}[报文封装格式为]{style="font-family:宋体"}[UDP]{lang="EN-US"}[（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[）格式。]{style="font-family:宋体"}
+\# 配置接口GigabitEthernet1/0/1的PTP报文封装格式为UDP（IPv4）格式。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_1364804264}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+Sysname ptp mode oc
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ptp transport-protocol udp]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 ptp transport-protocol udp
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_734143798}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp mode]{lang="EN-US"}**]{#struct_0_19838_x1039_x1020796323}
+·**ptp mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **profile**]{lang="EN-US"}]{#struct_0_19838_x1039_x1026713688}
-:::
-
-::: {#1569373447 .myid}
-[]{#_Toc404796750}[]{#struct_0_19838_x1039_x577533032}[]{#_Toc385854916}[]{#_Toc383589572}
+·**ptp** **profile**
 
 **PTP \-- PTP配置命令 \-- ptp unicast-destination**
 
 ------------------------------------------------------------------------
 
-[**[ptp]{lang="EN-US"}**[ **unicast-destination**]{lang="EN-US"}]{#struct_0_19838_x1039_x564627717}[命令用来配置]{style="font-family:宋体"}[采用]{style="font-family:宋体"}[UDP]{lang="EN-US"}[（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[）]{style="font-family:宋体"}[封装格式的单播]{style="font-family:宋体"}[PTP]{lang="EN-US"}[报文的目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[ptp** **unicast-destination**]命令用来配置采用UDP（IPv4）封装格式的单播PTP报文的目的IP地址。
 
-[**[undo]{lang="EN-US"}**[ **ptp** **unicast-destination**]{lang="EN-US"}]{#struct_0_19838_x1039_x999009853}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **ptp** **unicast-destination**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x66974775}
+【命令】
 
-[**[ptp]{lang="EN-US"}**[ **unicast-destination** *ip-address*]{lang="EN-US"}]{#struct_0_19838_x1039_x577598568}
+**[ptp** **unicast-destination** *ip-address*]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **unicast-destination** *ip-address*]{lang="EN-US"}]{#struct_0_19838_x1039_1816944013}
+**[undo** **ptp** **unicast-destination** *ip-address*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_81188459}
+【缺省情况】
 
-[[未配置采用]{style="font-family:宋体"}[UDP]{lang="EN-US"}]{#struct_0_19838_x1039_920605706}[（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[）]{style="font-family:宋体"}[封装格式的单播]{style="font-family:宋体"}[PTP]{lang="EN-US"}[报文的目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+未配置采用UDP（IPv4）封装格式的单播PTP报文的目的IP地址。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x297754807}
+【视图】
 
-[[三层以太网接口视图]{style="font-family:宋体"}]{#struct_0_19838_x1039_11335860}
+三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x44164059}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x576877672}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_2132625928}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_587776467}
+【参数】
 
-[*[ip-address]{lang="EN-US"}*]{#struct_0_19838_x1039_x1131874539}[：表示]{style="font-family:宋体"}[采用]{style="font-family:宋体"}[UDP]{lang="EN-US"}[（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[）]{style="font-family:宋体"}[封装格式的单播]{style="font-family:宋体"}[PTP]{lang="EN-US"}[报文的目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+*[ip-address*]：表示采用UDP（IPv4）封装格式的单播PTP报文的目的IP地址。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x167574112}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[必须先配置]{lang="EN-US" style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x38734958}[和]{lang="EN-US" style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{lang="EN-US" style="font-family:宋体"}
+·必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}[profile]{lang="EN-US"}]{#struct_0_19838_x1039_x1776544684}[为]{lang="EN-US" style="font-family:宋体"}[IEEE 802.1AS]{lang="EN-US"}[时，不允许配置该命令。]{lang="EN-US" style="font-family:宋体"}
+·当profile为IEEE 802.1AS时，不允许配置该命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[该命令在]{style="font-family:宋体"}]{#struct_0_19838_x1039_x576943208}[PTP]{lang="EN-US"}[报文]{style="font-family:宋体"}[采用]{style="font-family:宋体"}[UDP]{lang="EN-US"}[（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[）]{style="font-family:宋体"}[封装格式]{style="font-family:宋体"}[时才生效。]{style="font-family:宋体"}
+·该命令在PTP报文采用UDP（IPv4）封装格式时才生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x956008578}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_447977082}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置]{style="font-family:宋体"}[采用]{style="font-family:宋体"}[UDP]{lang="EN-US"}[（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[）]{style="font-family:宋体"}[封装格式的单播]{style="font-family:宋体"}[PTP]{lang="EN-US"}[报文的]{style="font-family:宋体"}[目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[10.10.10.2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置采用UDP（IPv4）封装格式的单播PTP报文的目的IP地址为10.10.10.2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_x950787993}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+Sysname ptp mode oc
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ptp transport-protocol udp]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 ptp transport-protocol udp
 
-[\[Sysname-GigabitEthernet1/0/1\] ptp unicast-destination 10.10.10.2]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 ptp unicast-destination 10.10.10.2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x616250760}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **profile**]{lang="EN-US"}]{#struct_0_19838_x1039_330945012}
+·**ptp** **profile**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[ptp mode]{lang="EN-US"}**]{#struct_0_19838_x1039_x1047847958}
+·**ptp mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[ptp transport-protocol]{lang="EN-US"}**]{#struct_0_19838_x1039_x577401959}
-:::
-
-::: {#607177758 .myid}
-[]{#_Toc404796751}[]{#struct_0_19838_x1039_x1776061846}
+·**ptp transport-protocol**
 
 **PTP \-- PTP配置命令 \-- ptp utc**
 
 ------------------------------------------------------------------------
 
-[**[ptp]{lang="EN-US"}**[ **utc**]{lang="EN-US"}]{#struct_0_19838_x1039_1521228653}[命令用来配置]{style="font-family:宋体"}[UTC]{lang="EN-US"}[的校正日期。]{style="font-family:宋体"}
+**[ptp** **utc**]命令用来配置UTC的校正日期。
 
-[**[undo]{lang="EN-US"}**[ **ptp** **utc**]{lang="EN-US"}]{#struct_0_19838_x1039_x560604930}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **ptp** **utc**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1364738728}
+【命令】
 
-[**[ptp]{lang="EN-US"}**[ **utc** { **leap59-date** \| **leap61-date** } *date*]{lang="EN-US"}]{#struct_0_19838_x1039_1145220757}
+**[ptp**[ **utc** { **leap59-date** \| **leap61-date** } *date*]]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **utc** { **leap59-date** \| **leap61-date** }]{lang="EN-US"}]{#struct_0_19838_x1039_x1187691493}
+**[undo**[ **ptp** **utc** { **leap59-date** \| **leap61-date** }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1140688251}
+【缺省情况】
 
-[[没有配置]{style="font-family:宋体"}]{#struct_0_19838_x1039_x1434559809}[UTC]{lang="EN-US"}[的校正日期。]{style="font-family:宋体"}
+没有配置UTC的校正日期。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1768154185}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_19838_x1039_x272947696}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_404965876}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x1299065745}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_1364935336}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1495636395}
+【参数】
 
-[**[leap59-date]{lang="EN-US"}**]{#struct_0_19838_x1039_x748207704}[：表示在指定日期的最后一分钟（]{style="font-family:宋体"}[23]{lang="EN-US"}[点]{style="font-family:宋体"}[59]{lang="EN-US"}[分）对当前设备的]{style="font-family:宋体"}[UTC]{lang="EN-US"}[进行校正，使其比]{style="font-family:宋体"}[TAI]{lang="EN-US"}[慢一秒。]{style="font-family:宋体"}
+**[leap59-date**]：表示在指定日期的最后一分钟（23点59分）对当前设备的UTC进行校正，使其比TAI慢一秒。
 
-[**[leap61-date]{lang="EN-US"}**]{#struct_0_19838_x1039_85182884}[：表示在指定日期的最后一分钟（]{style="font-family:宋体"}[23]{lang="EN-US"}[点]{style="font-family:宋体"}[59]{lang="EN-US"}[分）对当前设备的]{style="font-family:宋体"}[UTC]{lang="EN-US"}[进行校正，使其比]{style="font-family:宋体"}[TAI]{lang="EN-US"}[快一秒。]{style="font-family:宋体"}
+**[leap61-date**]：表示在指定日期的最后一分钟（23点59分）对当前设备的UTC进行校正，使其比TAI快一秒。
 
-[*[date]{lang="EN-US"}*]{#struct_0_19838_x1039_1333500683}[：表示指定日期，格式为]{style="font-family:宋体"}[YYYY/MM/DD]{lang="EN-US"}[。]{style="font-family:宋体"}[YYYY]{lang="EN-US"}[表示年，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[2035]{lang="EN-US"}[；]{style="font-family:宋体"}[MM]{lang="EN-US"}[表示月，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[12]{lang="EN-US"}[；]{style="font-family:宋体"}[DD]{lang="EN-US"}[表示日，取值范围取决于所输入的月份。指定日期请不要早于系统的当前日期，否则配置将不会生效。]{style="font-family:宋体"}
+*[date*]：表示指定日期，格式为YYYY/MM/DD。YYYY表示年，取值范围为2000～2035；MM表示月，取值范围为1～12；DD表示日，取值范围取决于所输入的月份。指定日期请不要早于系统的当前日期，否则配置将不会生效。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1557992576}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[必须先配置]{lang="EN-US" style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_1293105848}[和]{lang="EN-US" style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{lang="EN-US" style="font-family:宋体"}
+·必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[leap59]{lang="EN-US"}]{#struct_0_19838_x1039_x2006337949}[和]{style="font-family:宋体"}[leap61]{lang="EN-US"}[的配置不能够同时存在，后配置的会覆盖前面的配置。]{style="font-family:宋体"}
+·leap59和leap61的配置不能够同时存在，后配置的会覆盖前面的配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_2138691348}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_1364869800}[假设系统的当前日期为]{style="font-family:宋体"}[2010]{lang="EN-US"}[年]{style="font-family:宋体"}[8]{lang="EN-US"}[月]{style="font-family:
-宋体"}[8]{lang="EN-US"}[日，配置设备的时钟节点类型为]{style="font-family:宋体"}[BC]{lang="EN-US"}[，并指定在]{style="font-family:宋体"}[2010]{lang="EN-US"}[年]{style="font-family:宋体"}[12]{lang="EN-US"}[月]{style="font-family:宋体"}[31]{lang="EN-US"}[日的最后一分钟对当前设备的]{style="font-family:宋体"}[UTC]{lang="EN-US"}[进行校正，使其比]{style="font-family:宋体"}[TAI]{lang="EN-US"}[慢一秒。]{style="font-family:宋体"}
+\# 假设系统的当前日期为2010年8月8日，配置设备的时钟节点类型为BC，并指定在2010年12月31日的最后一分钟对当前设备的UTC进行校正，使其比TAI慢一秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_x361749881}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode bc]{lang="EN-US"}
+Sysname ptp mode bc
 
-[\[Sysname\] ptp utc leap59-date 2010/12/31]{lang="EN-US"}
+Sysname ptp utc leap59-date 2010/12/31
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x108924622}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **mode**]{lang="EN-US"}]{#struct_0_19838_x1039_1829225521}
+·**ptp** **mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **profile**]{lang="EN-US"}]{#struct_0_19838_x1039_x851323313}
-:::
-
-::: {#-1734826423 .myid}
-[]{#_Toc404796752}[]{#struct_0_19838_x1039_x83979176}[]{#_Toc304915263}
+·**ptp** **profile**
 
 **PTP \-- PTP配置命令 \-- ptp utc offset**
 
 ------------------------------------------------------------------------
 
-[**[ptp]{lang="EN-US"}**[ **utc** **offset**]{lang="EN-US"}]{#struct_0_19838_x1039_2024762905}[命令用来配置]{style="font-family:宋体"}[UTC]{lang="EN-US"}[相对于]{style="font-family:宋体"}[TAI]{lang="EN-US"}[的累计偏移量。]{style="font-family:宋体"}
+**[ptp** **utc** **offset**]命令用来配置UTC相对于TAI的累计偏移量。
 
-[**[undo ptp]{lang="EN-US"}**[ **utc** **offset**]{lang="EN-US"}]{#struct_0_19838_x1039_1365066408}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ptp** **utc** **offset**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x463466642}
+【命令】
 
-[**[ptp]{lang="EN-US"}**[ **utc** **offset** *utc-offset*]{lang="EN-US"}]{#struct_0_19838_x1039_x1045898006}
+**[ptp** **utc** **offset** *utc-offset*]
 
-[**[undo]{lang="EN-US"}**[ **ptp** **utc** **offset**]{lang="EN-US"}]{#struct_0_19838_x1039_x742567579}
+**[undo** **ptp** **utc** **offset**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x685585876}
+【缺省情况】
 
-[[UTC]{lang="EN-US"}]{#struct_0_19838_x1039_2106559446}[相对于]{style="font-family:宋体"}[TAI]{lang="EN-US"}[的累计偏移量为]{style="font-family:宋体"}[0]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+UTC相对于TAI的累计偏移量为0秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x412208893}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_19838_x1039_x432507190}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1094548308}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_1365000872}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_x1954589743}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x177865523}
+【参数】
 
-[*[utc-offset]{lang="EN-US"}*]{#struct_0_19838_x1039_2073321686}[：表示当前设备的]{style="font-family:宋体"}[UTC]{lang="EN-US"}[相对于]{style="font-family:宋体"}[TAI]{lang="EN-US"}[的累计偏移量，单位为秒，取值范围与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[utc-offset*]：表示当前设备的UTC相对于TAI的累计偏移量，单位为秒，取值范围与设备的型号有关，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1387154608}
+【使用指导】
 
-[[必须先配置]{style="font-family:宋体"}[PTP profile]{lang="EN-US"}]{#struct_0_19838_x1039_x1878304330}[和]{style="font-family:宋体"}[PTP mode]{lang="EN-US"}[后，才允许配置该命令。]{style="font-family:宋体"}
+必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_2093847131}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_451067842}[配置]{style="font-family:宋体"}[UTC]{lang="EN-US"}[相对于]{style="font-family:宋体"}[TAI]{lang="EN-US"}[的累计偏移量为]{style="font-family:宋体"}[33]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置UTC相对于TAI的累计偏移量为33秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_1365197480}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+Sysname ptp mode oc
 
-[\[Sysname\] ptp utc offset 33]{lang="EN-US"}
+Sysname ptp utc offset 33
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x2054913054}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp mode]{lang="EN-US"}**]{#struct_0_19838_x1039_x1053790339}
+·**ptp mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ptp profile]{lang="EN-US"}**]{#struct_0_19838_x1039_1427335152}
-:::
-
-::: {#-2080262825 .myid}
-[]{#_Toc404796753}[]{#struct_0_19838_x1039_x577729639}[]{#_Toc385854919}[]{#_Toc383589575}
+·**ptp profile**
 
 **PTP \-- PTP配置命令 \-- ptp vlan**
 
 ------------------------------------------------------------------------
 
-[**[ptp vlan]{lang="FR"}**]{#struct_0_19838_x1039_1070328107}[命令用来配置]{style="font-family:宋体"}[PTP]{lang="EN-US"}[报文]{style="font-family:宋体"}[的]{style="font-family:宋体"}[VLAN Tag]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[ptp vlan**]命令用来配置PTP报文的VLAN Tag。
 
-[**[undo ]{lang="FR"}**]{#struct_0_19838_x1039_1889964114}**[ptp vlan]{lang="FR"}**[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo **]**ptp vlan**命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_370493624}
+【命令】
 
-[**[ptp vlan ]{lang="FR"}**]{#struct_0_19838_x1039_122946450}*[vlan-id]{lang="FR"}***[ ]{lang="FR"}**[\[ **dot1p** *dot1p-value* \]]{lang="FR"}
+**[ptp vlan **]*vlan-id***** **dot1p** *dot1p-value*
 
-[**[undo ptp vlan ]{lang="FR"}**]{#struct_0_19838_x1039_73490672}[\[ **dot1p** \]]{lang="FR"}
+**[undo ptp vlan **] **dot1p**
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19838_x1039_285142092}
+【缺省情况】
 
-[[PTP]{lang="FR"}]{#struct_0_19838_x1039_1899108630}[报文不带]{style="font-family:宋体"}[VLAN Tag]{lang="FR"}[。]{style="font-family:宋体"}
+PTP报文不带VLAN Tag。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_960082869}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}]{#struct_0_19838_x1039_x577533031}
+二层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x564562181}
+【缺省用户角色】
 
-[[network-admin]{lang="FR"}]{#struct_0_19838_x1039_x2132604318}
+network-admin
 
-[[mdc-admin]{lang="FR"}]{#struct_0_19838_x1039_x67351711}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1045018267}
+【参数】
 
-[**[vlan]{lang="FR"}**]{#struct_0_19838_x1039_x1161918938}*[ vlan-id]{lang="FR"}*[：]{style="font-family:宋体"}[VLAN]{lang="FR"}[的编号]{style="font-family:宋体"}[，]{style="font-family:宋体"}[不同型号的设备支持的取值范围不同]{style="font-family:宋体"}[，]{style="font-family:宋体"}[请以设备的实际情况为准]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[vlan**]* vlan-id*：VLAN的编号，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[**[dot1p ]{lang="FR"}**]{#struct_0_19838_x1039_x1025777956}*[dot1p-value]{lang="FR"}*[：]{style="font-family:
-宋体"}[802.1p]{lang="FR"}[优先级，取值范围为]{style="font-family:宋体"}[0]{lang="FR"}[～]{style="font-family:宋体"}[7]{lang="FR"}[。如果未指定本参数，表示]{style="font-family:宋体"}[802.1p]{lang="FR"}[优先级为]{style="font-family:宋体"}[7]{lang="FR"}[，即最高优先级。]{style="font-family:
-宋体"}
+**[dot1p **]*dot1p-value*：802.1p优先级，取值范围为0～7。如果未指定本参数，表示802.1p优先级为7，即最高优先级。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1608489168}
+【使用指导】
 
-[[必须先配置]{style="font-family:宋体"}]{#struct_0_19838_x1039_1532443862}[PTP profile]{lang="FR"}[和]{style="font-family:宋体"}[PTP mode]{lang="FR"}[后]{style="font-family:宋体"}[，]{style="font-family:宋体"}[才允许配置该命令。]{style="font-family:宋体"}
+必须先配置PTP profile和PTP mode后，才允许配置该命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x577598567}
+【举例】
 
-[[\# ]{lang="FR"}]{#struct_0_19838_x1039_1817271693}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="FR"}[上配置]{style="font-family:宋体"}[PTP]{lang="FR"}[报文的]{style="font-family:宋体"}[VLAN ID]{lang="FR"}[为]{style="font-family:宋体"}[2]{lang="FR"}[、]{style="font-family:
-宋体"}[802.1p]{lang="FR"}[优先级为]{style="font-family:宋体"}[6]{lang="FR"}[。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置PTP报文的VLAN ID为2、802.1p优先级为6。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19838_x1039_x1039167293}
+\<Sysname\> system-view
 
-[\[Sysname\] ptp profile 1588v2]{lang="EN-US"}
+Sysname ptp profile 1588v2
 
-[\[Sysname\] ptp mode oc]{lang="EN-US"}
+Sysname ptp mode oc
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ptp vlan 2 dot1p 6]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 ptp vlan 2 dot1p 6
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x51621605}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[ptp]{lang="EN-US"}**[ **profile**]{lang="EN-US"}]{#struct_0_19838_x1039_x2070889683}
+·**ptp** **profile**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[ptp mode]{lang="EN-US"}**]{#struct_0_19838_x1039_x1554391675}
-:::
-
-::: {#-800427886 .myid}
-[]{#_Toc404796754}[]{#struct_0_19838_x1039_x1467754961}[]{#_Toc304915264}
+·**ptp mode**
 
 **PTP \-- PTP配置命令 \-- reset ptp statistics**
 
 ------------------------------------------------------------------------
 
-[**[reset]{lang="EN-US"}**[ **ptp statistics**]{lang="EN-US"}]{#struct_0_19838_x1039_1632553722}[命令用来清除]{style="font-family:宋体"}[PTP]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+**[reset** **ptp statistics**]命令用来清除PTP的统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_712476948}
+【命令】
 
-[**[reset]{lang="EN-US"}**[ **ptp** **statistics** \[ **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_19838_x1039_x954649856}
+**[reset** **ptp** **statistics** [ **interface** *interface-type interface-number* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1365131944}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_19838_x1039_x1575434164}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x646243758}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19838_x1039_29924365}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19838_x1039_1628778953}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19838_x1039_85842001}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type* *interface-number*]{lang="EN-US"}]{#struct_0_19838_x1039_170551424}[：清除指定接口上的统计信息。]{style="font-family:宋体"}*[interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}[表示接口类型和接口编号。若未指定接口类型和接口编号，将清除所有接口上的统计信息。]{style="font-family:宋体"}
+**[interface** *interface-type* *interface-number*]：清除指定接口上的统计信息。*interface-type* *interface-number*表示接口类型和接口编号。若未指定接口类型和接口编号，将清除所有接口上的统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19838_x1039_x1456212562}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19838_x1039_x1522305436}[]{#_Toc139807263}[清除接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上]{style="font-family:宋体"}[PTP]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+\# 清除接口GigabitEthernet1/0/1上PTP的统计信息。
 
-[[\<Sysname\>]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_19838_x1039_x1364210160}[]{#_Toc139807265}[reset ptp statistics interface gigabitethernet 1/0/1]{lang="EN-US"}
+\<Sysname\>reset ptp statistics interface gigabitethernet 1/0/1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19838_x1039_1142835523}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display ptp statistics]{lang="EN-US"}**]{#struct_0_19838_x1039_922936575}
+·**display ptp statistics**
 
-[ ]{lang="EN-US"}
-:::

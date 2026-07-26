@@ -1,626 +1,567 @@
-::: {#1653696269 .myid}
-[]{#_Toc404794730}[]{#struct_0_16200_x1222_375155350}
 
 **MAC-BAC \-- MAC-BAC配置命令 \-- display wlan ap-list**
 
 ------------------------------------------------------------------------
 
-[**[display wlan ap-list]{lang="IT"}**]{#struct_0_16200_x1222_1920843554}[命令用来显示]{style="font-family:宋体"}[AP]{lang="EN-US"}[列表的信息。]{style="font-family:宋体"}
+**[display wlan ap-list**]命令用来显示AP列表的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16200_x1222_621777068}
+【命令】
 
-[**[display wlan ap-list ]{lang="IT"}**]{#struct_0_16200_x1222_1050797713}[\[ *ap-list-name* \]]{lang="IT"}
+**[display wlan ap-list **] *ap-list-name*
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16200_x1222_333690692}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_16200_x1222_570368574}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x1314301258}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16200_x1222_x1148448498}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_16200_x1222_335880898}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16200_x1222_1168883703}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_16200_x1222_570208405}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16200_x1222_1424090446}
+【参数】
 
-[*[ap-list-name]{lang="EN-US"}*]{#struct_0_16200_x1222_168047588}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[列表的名字，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果未指定本参数，则显示所有的]{style="font-family:宋体"}[AP]{lang="EN-US"}[列表信息。]{style="font-family:宋体"}
+*[ap-list-name*]：AP列表的名字，为1～31个字符的字符串，区分大小写。如果未指定本参数，则显示所有的AP列表信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16200_x1222_334149445}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16200_x1222_503474543}[显示所有的]{style="font-family:宋体"}[AP]{lang="EN-US"}[列表信息。]{style="font-family:宋体"}
+\# 显示所有的AP列表信息。
 
-[[\<Sysname\> display wlan ap-list]{lang="IT"}]{#struct_0_16200_x1222_1005108666}
+\<Sysname\> display wlan ap-list
 
-[AP-list name: name1]{lang="IT"}
+AP-list name: name1
 
-[Number of APs: 2 ]{lang="IT"}
+Number of APs: 2
 
-[ mac-address 0000-e27c-6e80]{lang="IT"}
+ mac-address 0000-e27c-6e80
 
-[ mac-address 0000-e27c-79fa  ]{lang="IT"}
+ mac-address 0000-e27c-79fa 
 
-[[表1-1 ]{lang="EN-US"}[display wlan ap-list]{lang="EN-US"}]{#struct_0_16200_x1222_x2017474395}[命令显示信息描述表]{style="font-family:黑体"}
+表1-1 display wlan ap-list命令显示信息描述表
 
-[]{#table_struct_0_x926236870}[[字段]{style="font-family:黑体"}]{#struct_0_16200_x1222_x793238415}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16200_x1222_x170491733}
+描述
 
-[[AP-list name]{lang="EN-US"}]{#struct_0_16200_x1222_x1859088923}
+AP-list name
 
-[[AP]{lang="EN-US"}]{#struct_0_16200_x1222_334214981}[列表名称]{style="font-family:宋体"}
+AP列表名称
 
-[[Number of APs]{lang="IT"}]{#struct_0_16200_x1222_366433449}
+Number of APs
 
-[[AP]{lang="EN-US"}]{#struct_0_16200_x1222_1808538971}[列表中的]{style="font-family:宋体"}[AP]{lang="EN-US"}[数量]{style="font-family:宋体"}
+AP列表中的AP数量
 
-[[mac-address]{lang="IT"}]{#struct_0_16200_x1222_1282787354}
+mac-address
 
-[[AP]{lang="EN-US"}]{#struct_0_16200_x1222_139515111}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1961809581 .myid}
-[]{#_Toc404794731}[]{#struct_0_16200_x1222_x784407564}
+AP的MAC地址
 
 **MAC-BAC \-- MAC-BAC配置命令 \-- display wlan bas-ac**
 
 ------------------------------------------------------------------------
 
-[**[display wlan bas-ac]{lang="IT"}**]{#struct_0_16200_x1222_311141056}[命令用来显示]{style="font-family:宋体"}[Master AC]{lang="EN-US"}[管理的]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[display wlan bas-ac**]命令用来显示Master AC管理的BAS AC信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x1775895255}
+【命令】
 
-[**[display ]{lang="EN-US"}**]{#struct_0_16200_x1222_334280517}**[wlan bas-ac]{lang="IT"}**[ ]{lang="IT"}[\[ ]{lang="EN-US"}**[mac-address ]{lang="IT"}***[mac-address]{lang="IT"}[ ]{lang="IT"}*[\] \[ **verbose** \]]{lang="EN-US"}
+**[display **]**wlan bas-ac**\**[mac-address ***mac-address*  **verbose** ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16200_x1222_1543953428}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_16200_x1222_1778961941}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16200_x1222_1794883400}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16200_x1222_100596179}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_16200_x1222_x1999726745}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16200_x1222_x1882998673}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_16200_x1222_x104052389}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16200_x1222_559286080}
+【参数】
 
-[**[mac-address ]{lang="IT"}**]{#struct_0_16200_x1222_334346053}*[mac-address]{lang="IT"}*[：显示指定]{style="font-family:
-宋体"}[MAC]{lang="EN-US"}[地址的]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}[的信息。如果未指定本参数，则显示所有]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[mac-address **]*mac-address*：显示指定MAC地址的BAS AC的信息。如果未指定本参数，则显示所有BAS AC的信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_16200_x1222_x1983628331}[：显示]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}[的详细信息。如果未指定本参数，则显示]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}[的简要信息。]{style="font-family:宋体"}
+**[verbose**]：显示BAS AC的详细信息。如果未指定本参数，则显示BAS AC的简要信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x991917539}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16200_x1222_x284517596}[显示指定]{style="font-family:宋体"}[MAC]{lang="IT"}[地址的]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}[的简要]{style="font-family:宋体"}[信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 显示指定MAC地址的BAS AC的简要信息。
 
-[[\<Sysname\> display wlan bas-ac mac-address 000f-e212-ff01]{lang="IT"}]{#struct_0_16200_x1222_804758181}
+\<Sysname\> display wlan bas-ac mac-address 000f-e212-ff01
 
-[MAC address            IP address             AP count/Maximum AP capacity]{lang="IT"}
+MAC address            IP address             AP count/Maximum AP capacity
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="IT"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[000f-e212-ff01         192.168.33.21          1/192]{lang="IT"}
+000f-e212-ff01         192.168.33.21          1/192
 
-[[\# ]{lang="IT"}]{#struct_0_16200_x1222_420073908}[显示指定]{style="font-family:宋体"}[MAC]{lang="IT"}[地址的]{style="font-family:宋体"}[BAS AC]{lang="IT"}[的详细信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 显示指定MAC地址的BAS AC的详细信息。
 
-[[\<Sysname\> display wlan bas-ac mac-address 000f-e212-ff01 verbose]{lang="IT"}]{#struct_0_16200_x1222_334411589}
+\<Sysname\> display wlan bas-ac mac-address 000f-e212-ff01 verbose
 
-[MAC address                 :000f-e212-ff01]{lang="IT"}
+MAC address                 :000f-e212-ff01
 
-[IP address                  :192.168.33.21]{lang="IT"}
+IP address                  :192.168.33.21
 
-[CAPWAP IP address           :192.168.33.22]{lang="IT"}
+CAPWAP IP address           :192.168.33.22
 
-[CAPWAP IPv6 address         :NA]{lang="IT"}
+CAPWAP IPv6 address         :NA
 
-[AP count                    :1]{lang="IT"}
+AP count                    :1
 
-[Maximum AP capacity         :192]{lang="IT"}
+Maximum AP capacity         :192
 
-[[表1-2 ]{lang="EN-US"}[display wlan bas-ac]{lang="EN-US"}]{#struct_0_16200_x1222_x2058429091}[命令显示信息描述表]{style="font-family:黑体"}
+表1-2 display wlan bas-ac命令显示信息描述表
 
-[]{#table_struct_0_x924690566}[[字段]{style="font-family:黑体"}]{#struct_0_16200_x1222_x1370916777}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16200_x1222_x351569766}
+描述
 
-[[MAC address]{lang="IT"}]{#struct_0_16200_x1222_x168877399}
+MAC address
 
-[[BAS AC]{lang="EN-US"}]{#struct_0_16200_x1222_x627355124}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+BAS AC的MAC地址
 
-[[IP address]{lang="IT"}]{#struct_0_16200_x1222_x1597136061}
+IP address
 
-[[BAS AC]{lang="EN-US"}]{#struct_0_16200_x1222_334477125}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+BAS AC的IP地址
 
-[[AP count/Maximum AP capacity]{lang="IT"}]{#struct_0_16200_x1222_1418506263}
+AP count/Maximum AP capacity
 
-[[与]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}]{#struct_0_16200_x1222_x1640239694}[建立隧道的]{style="font-family:宋体"}[AP]{lang="EN-US"}[数量]{style="font-family:宋体"}[/BAS AC]{lang="EN-US"}[上可支持隧道连接的最大]{style="font-family:宋体"}[AP]{lang="EN-US"}[数量]{style="font-family:宋体"}
+与BAS AC建立隧道的AP数量/BAS AC上可支持隧道连接的最大AP数量
 
-[[CAPWAP IP address]{lang="IT"}]{#struct_0_16200_x1222_x1025886700}
+CAPWAP IP address
 
-[[Master AC]{lang="IT"}]{#struct_0_16200_x1222_x1012998577}[获取到]{style="font-family:宋体"}[BAS AC]{lang="IT"}[上报的]{style="font-family:宋体"}[CAPWAP IPv4]{lang="IT"}[地址]{style="font-family:宋体"}
+Master AC获取到BAS AC上报的CAPWAP IPv4地址
 
-[[NA]{lang="IT"}]{#struct_0_16200_x1222_1589101944}[表示]{style="font-family:宋体"}[Master AC]{lang="IT"}[没有获取到]{style="font-family:宋体"}[BAS AC]{lang="IT"}[上报的]{style="font-family:宋体"}[CAPWAP IP]{lang="IT"}[地址]{style="font-family:宋体"}
+NA表示Master AC没有获取到BAS AC上报的CAPWAP IP地址
 
-[[CAPWAP IPv6 address]{lang="IT"}]{#struct_0_16200_x1222_334542661}
+CAPWAP IPv6 address
 
-[[Master AC]{lang="IT"}]{#struct_0_16200_x1222_1803059253}[获取到]{style="font-family:宋体"}[BAS AC]{lang="IT"}[上报的]{style="font-family:宋体"}[CAPWAP IPv6]{lang="IT"}[地址]{style="font-family:宋体"}
+Master AC获取到BAS AC上报的CAPWAP IPv6地址
 
-[[NA]{lang="IT"}]{#struct_0_16200_x1222_x592495264}[表示]{style="font-family:宋体"}[Master AC]{lang="IT"}[没有获取到]{style="font-family:宋体"}[BAS AC]{lang="IT"}[上]{style="font-family:宋体"}[报]{style="font-family:宋体"}[的]{style="font-family:宋体"}[CAPWAP IPv6]{lang="IT"}[地址]{style="font-family:宋体"}
-
-[ ]{lang="IT"}
-
-::: {#-499069877 .myid}
-[]{#_Toc404794732}[]{#struct_0_16200_x1222_x1252490245}[]{#_Toc339986074}
+NA表示Master AC没有获取到BAS AC上报的CAPWAP IPv6地址
 
 **MAC-BAC \-- MAC-BAC配置命令 \-- display wlan client**
 
 ------------------------------------------------------------------------
 
-[**[display wlan client]{lang="IT"}**]{#struct_0_16200_x1222_1959418436}[命令用来显示]{style="font-family:宋体"}[Master AC]{lang="EN-US"}[管理的各]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}[上的客户端信息。]{style="font-family:宋体"}
+**[display wlan client**]命令用来显示Master AC管理的各BAS AC上的客户端信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x2036020890}
+【命令】
 
-[**[display wlan client]{lang="IT"}**[ ]{lang="IT"}[\[]{lang="EN-US"}]{#struct_0_16200_x1222_317034215}[ ]{lang="EN-US"}**[mac-address]{lang="IT"}**[ *mac-address* \| **bas-ac mac-address** *mac-address* ]{lang="IT"}[\]]{lang="EN-US"}
+**[display wlan client****mac-address**[ *mac-address* \| **bas-ac mac-address** *mac-address* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x1103555241}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_16200_x1222_334608197}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x1436504088}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16200_x1222_1903368041}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_16200_x1222_1143982305}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16200_x1222_126114169}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_16200_x1222_1583597633}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x1772104544}
+【参数】
 
-[**[mac-address]{lang="EN-US"}***[ mac-address]{lang="EN-US"}*]{#struct_0_16200_x1222_x704678696}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[MAC]{lang="IT"}[地址的客户端信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[mac-address*** mac-address*]：显示指定MAC地址的客户端信息。
 
-[**[bas-ac ]{lang="EN-US"}**]{#struct_0_16200_x1222_73307780}**[mac-address ]{lang="IT"}***[mac-address]{lang="IT"}*[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[MAC]{lang="IT"}[地址]{style="font-family:宋体"}[的]{style="font-family:
-宋体"}[BAS AC]{lang="IT"}[上的所有客户端信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[bas-ac **]**mac-address ***mac-address*：显示指定MAC地址的BAS AC上的所有客户端信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16200_x1222_333625157}
+【使用指导】
 
-[[如果未指定]{style="font-family:宋体"}]{#struct_0_16200_x1222_1304795065}**[mac-address]{lang="IT"}**[或]{style="font-family:宋体"}**[bas-ac mac-address]{lang="IT"}**[参数，则显示]{style="font-family:宋体"}[Master AC]{lang="IT"}[管理的所有客户端的信息。]{style="font-family:宋体"}
+如果未指定**mac-address**或**bas-ac mac-address**参数，则显示Master AC管理的所有客户端的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16200_x1222_375220886}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16200_x1222_x1352613598}[显示指定]{style="font-family:宋体"}[MAC]{lang="IT"}[地址的客户端信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 显示指定MAC地址的客户端信息。
 
-[[\<]{lang="EN-US"}]{#struct_0_16200_x1222_499360709}[Sysname\> display wlan client mac-address 001c-f08f-f804]{lang="IT"}
+\<Sysname\> display wlan client mac-address 001c-f08f-f804
 
-[MAC address       IP address        BAS-AC MAC address       BAS-AC IP address  ]{lang="IT"}
+MAC address       IP address        BAS-AC MAC address       BAS-AC IP address 
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--  ]{lang="IT"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-- 
 
-[001c-f08f-f804    192.168.11.11     000f-e212-ff01           192.168.33.21]{lang="IT"}
+001c-f08f-f804    192.168.11.11     000f-e212-ff01           192.168.33.21
 
-[[表1-3 ]{lang="EN-US"}[display wlan client]{lang="EN-US"}]{#struct_0_16200_x1222_x1207715580}[命令显示信息描述表]{style="font-family:黑体"}
+表1-3 display wlan client命令显示信息描述表
 
-[]{#table_struct_0_x931043174}[[字段]{style="font-family:黑体"}]{#struct_0_16200_x1222_1992416292}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16200_x1222_1118519654}
+描述
 
-[[MAC Address]{lang="EN-US"}]{#struct_0_16200_x1222_333690693}
+MAC Address
 
-[[客户端的]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_16200_x1222_570368575}[地址]{style="font-family:宋体"}
+客户端的MAC地址
 
-[[IP Address]{lang="EN-US"}]{#struct_0_16200_x1222_x1314301257}
+IP Address
 
-[[客户端的]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_16200_x1222_1130096163}[地址]{style="font-family:宋体"}
+客户端的IP地址
 
-[[BAS-AC MAC Address]{lang="EN-US"}]{#struct_0_16200_x1222_1418669035}
+BAS-AC MAC Address
 
-[[客户端所在]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}]{#struct_0_16200_x1222_x493669091}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+客户端所在BAS AC的MAC地址
 
-[[BAS-AC IP Address]{lang="EN-US"}]{#struct_0_16200_x1222_998182139}
+BAS-AC IP Address
 
-[[客户端所在]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}]{#struct_0_16200_x1222_334149442}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-636046328 .myid}
-[]{#_Toc404794733}[]{#struct_0_16200_x1222_503474538}
+客户端所在BAS AC的IP地址
 
 **MAC-BAC \-- MAC-BAC配置命令 \-- mac-address**
 
 ------------------------------------------------------------------------
 
-[**[mac-addres]{lang="IT"}[s]{lang="EN-US"}**]{#struct_0_16200_x1222_x2098217553}[命令用来将与指定]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址匹配的]{style="font-family:宋体"}[AP]{lang="EN-US"}[加入到]{style="font-family:宋体"}[AP]{lang="EN-US"}[列表中。]{style="font-family:宋体"}
+**[mac-address**]命令用来将与指定MAC地址匹配的AP加入到AP列表中。
 
-[**[undo mac-addres]{lang="IT"}[s]{lang="EN-US"}**]{#struct_0_16200_x1222_x823240398}[命令用来删除已配置的]{style="font-family:
-宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[undo mac-address**]命令用来删除已配置的MAC地址。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x2008612691}
+【命令】
 
-[**[mac-address ]{lang="IT"}**]{#struct_0_16200_x1222_1092567659}*[mac-address]{lang="IT"}*
+**[mac-address **]*mac-address*
 
-[**[undo mac-address ]{lang="IT"}**]{#struct_0_16200_x1222_1619578018}[\[ *mac-address*]{lang="IT"}[ ]{lang="IT"}[\]]{lang="IT"}
+**[undo mac-address **] *mac-address*
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x1412585128}
+【缺省情况】
 
-[[AP]{lang="EN-US"}]{#struct_0_16200_x1222_334214978}[列表中不存在]{style="font-family:宋体"}[AP]{lang="EN-US"}[成员。]{style="font-family:宋体"}
+AP列表中不存在AP成员。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x442870624}
+【视图】
 
-[[AP]{lang="EN-US"}]{#struct_0_16200_x1222_x1507585580}[列表视图]{style="font-family:宋体"}
+AP列表视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16200_x1222_1779154610}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16200_x1222_x905640110}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16200_x1222_x1285426781}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x26523512}
+【参数】
 
-[*[mac-address]{lang="IT"}*]{#struct_0_16200_x1222_x1791400025}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[成员的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，与该]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址匹配的]{style="font-family:宋体"}[AP]{lang="EN-US"}[加入到]{style="font-family:宋体"}[AP]{lang="EN-US"}[列表中。]{style="font-family:宋体"}
+*[mac-address*]：AP成员的MAC地址，与该MAC地址匹配的AP加入到AP列表中。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16200_x1222_1313895676}
+【使用指导】
 
-[[执行]{style="font-family:宋体"}]{#struct_0_16200_x1222_334280514}**[undo mac-address]{lang="IT"}**[命令时，如果未指定任何参数，则删除]{style="font-family:宋体"}[AP]{lang="EN-US"}[列表中的所有]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+执行**undo mac-address**命令时，如果未指定任何参数，则删除AP列表中的所有MAC地址。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16200_x1222_1543953431}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16200_x1222_1779420692}[将]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为]{style="font-family:宋体"}[000f-e233-9000]{lang="EN-US"}[的]{style="font-family:宋体"}[AP]{lang="EN-US"}[加入到名字为]{style="font-family:宋体"}[name1]{lang="EN-US"}[的]{style="font-family:宋体"}[AP]{lang="EN-US"}[列表。]{style="font-family:宋体"}
+\# 将MAC地址为000f-e233-9000的AP加入到名字为name1的AP列表。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16200_x1222_1072182411}
+\<Sysname\> system-view
 
-[\[Sysname\] ]{lang="EN-US"}[wlan ap-list name1]{lang="IT"}
+Sysname wlan ap-list name1
 
-[\[Sysname-]{lang="EN-US"}[wlan-aplist-name1]{lang="IT"}[\] mac-address 000f-e233-9000]{lang="EN-US"}
-:::
-
-::: {#1451909681 .myid}
-[]{#_Toc404794734}[]{#struct_0_16200_x1222_560078367}
+Sysname-wlan-aplist-name1 mac-address 000f-e233-9000
 
 **MAC-BAC \-- MAC-BAC配置命令 \-- wlan ap-list**
 
 ------------------------------------------------------------------------
 
-[**[wlan ap-list]{lang="IT"}**]{#struct_0_16200_x1222_x575037710}[命令用来创建]{style="font-family:宋体"}[AP]{lang="EN-US"}[列表。]{style="font-family:宋体"}
+**[wlan ap-list**]命令用来创建AP列表。
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_16200_x1222_301680802}**[wlan ap-list]{lang="IT"}**[命令用来删除]{style="font-family:宋体"}[AP]{lang="EN-US"}[列表。]{style="font-family:宋体"}
+**[undo **]**wlan ap-list**命令用来删除AP列表。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16200_x1222_1914937361}
+【命令】
 
-[**[wlan ap-list]{lang="IT"}[ ]{lang="IT"}**]{#struct_0_16200_x1222_1976268955}*[ap-list-name]{lang="IT"}*
+**[wlan ap-list**]*ap-list-name*
 
-[**[undo wlan ap-list ]{lang="IT"}**]{#struct_0_16200_x1222_334346050}[\[ *ap-list-name* \]]{lang="IT"}
+**[undo wlan ap-list **] *ap-list-name*
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x1983628328}
+【缺省情况】
 
-[[不存在]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_16200_x1222_217870506}[列表。]{style="font-family:宋体"}
+不存在AP列表。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16200_x1222_696747582}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_16200_x1222_x1528857396}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16200_x1222_1003346626}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16200_x1222_2042432837}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16200_x1222_754339494}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16200_x1222_1820153734}
+【参数】
 
-[*[ap-list-name]{lang="EN-US"}*]{#struct_0_16200_x1222_334411586}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[列表的名字，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[ap-list-name*]：AP列表的名字，为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x2058429078}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[一个]{style="font-family:宋体"}]{#struct_0_16200_x1222_550742164}[AP]{lang="EN-US"}[可以加入不同的]{style="font-family:宋体"}[AP]{lang="EN-US"}[列表。]{style="font-family:宋体"}
+·一个AP可以加入不同的AP列表。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[执行]{lang="EN-US" style="font-family:宋体"}]{#struct_0_16200_x1222_2129692680}**[undo wlan ap-list]{lang="IT"}**[命令时，如果]{lang="EN-US" style="font-family:宋体"}[未]{style="font-family:宋体"}[指定任何参数，则删除]{lang="EN-US" style="font-family:宋体"}[所有]{style="font-family:宋体"}[AP]{lang="EN-US"}[列表。]{lang="EN-US" style="font-family:宋体"}
+·执行**undo wlan ap-list**命令时，如果未指定任何参数，则删除所有AP列表。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16200_x1222_1904677071}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16200_x1222_x127762062}[创建名字为]{style="font-family:宋体"}[name1]{lang="EN-US"}[的]{style="font-family:宋体"}[AP]{lang="IT"}[列表]{style="font-family:
-宋体"}[。]{style="font-family:宋体"}
+\# 创建名字为name1的AP列表。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16200_x1222_1708386991}
+\<Sysname\> system-view
 
-[\[Sysname\] ]{lang="EN-US"}[wlan ap-list name1]{lang="IT"}
+Sysname wlan ap-list name1
 
-[\[Sysname-]{lang="EN-US"}[wlan-aplist-name1]{lang="IT"}[\]]{lang="EN-US"}
-:::
-
-::: {#-1944594370 .myid}
-[]{#_Toc404794735}[]{#struct_0_16200_x1222_971181369}[]{#_Toc339986071}[]{#_Toc337825417}[]{#_Toc354316827}[]{#_Toc354316828}[]{#_Toc354316829}[]{#_Toc354316830}[]{#_Toc354316831}[]{#_Toc354316832}[]{#_Toc354316833}[]{#_Toc354316834}[]{#_Toc354316835}[]{#_Toc354316836}[]{#_Toc354316837}[]{#_Toc354316838}[]{#_Toc354316839}[]{#_Toc354316840}[]{#_Toc354316841}[]{#_Toc354316842}[]{#_Toc354316843}[]{#_Toc354316844}[]{#_Toc354316845}[]{#_Toc167869181}[]{#_Toc167869182}[]{#_Toc167869183}[]{#_Toc167869184}[]{#_Toc167869185}[]{#_Toc167869186}[]{#_Toc167869187}[]{#_Toc167869188}[]{#_Toc167869189}[]{#_Toc167869190}[]{#_Toc167869191}[]{#_Toc167869192}[]{#_Toc167869193}[]{#_Toc167869194}[]{#_Toc167869195}[]{#_Toc167869196}[]{#_Toc167869197}[]{#_Toc167869198}[]{#_Toc167869200}[]{#_Toc167869201}[]{#_Toc167869203}[]{#_Toc167869204}[]{#_Toc167869206}[]{#_Toc167869207}[]{#_Toc167869208}[]{#_Toc167869209}[]{#_Toc167869210}[]{#_Toc167869211}[]{#_Toc167869212}[]{#_Hlt19451604}[]{#_Toc167869213}[]{#_Toc167869214}[]{#_Toc167869215}[]{#_Toc167869216}[]{#_Toc167869217}[]{#_Toc167869218}[]{#_Toc167869219}[]{#_Toc167869220}[]{#_Toc167869221}[]{#_Toc167869223}[]{#_Toc167869224}[]{#_Toc167869225}[]{#_Toc167869226}[]{#_Toc248810082}[]{#_Toc248810083}[]{#_Toc248810084}[]{#_Toc248810085}
+Sysname-wlan-aplist-name1
 
 **MAC-BAC \-- MAC-BAC配置命令 \-- wlan bas-ac ap aging-time**
 
 ------------------------------------------------------------------------
 
-[**[wlan bas-ac ap aging-time]{lang="IT"}**]{#struct_0_16200_x1222_334477122}[命令用来配置]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}[与]{style="font-family:宋体"}[Master AC]{lang="EN-US"}[断开连接后，]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}[上]{style="font-family:宋体"}[AP]{lang="EN-US"}[信息的老化时间。]{style="font-family:宋体"}
+**[wlan bas-ac ap aging-time**]命令用来配置BAS AC与Master AC断开连接后，BAS AC上AP信息的老化时间。
 
-[**[undo wlan bas-ac ap aging-time]{lang="IT"}**]{#struct_0_16200_x1222_1418506256}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo wlan bas-ac ap aging-time**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x1640436299}
+【命令】
 
-[**[wlan bas-ac ap aging-time ]{lang="IT"}**]{#struct_0_16200_x1222_x1839540153}*[seconds]{lang="IT"}*
+**[wlan bas-ac ap aging-time **]*seconds*
 
-[**[undo wlan bas-ac ap aging-time]{lang="IT"}**]{#struct_0_16200_x1222_x938008888}
+**[undo wlan bas-ac ap aging-time**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x245594497}
+【缺省情况】
 
-[[BAS AC]{lang="EN-US"}]{#struct_0_16200_x1222_x1513341236}[上]{style="font-family:宋体"}[AP]{lang="EN-US"}[信息的老化时间为]{style="font-family:宋体"}[30]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+BAS AC上AP信息的老化时间为30秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x148182867}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_16200_x1222_430974863}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16200_x1222_1266856993}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16200_x1222_334542658}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16200_x1222_x917929938}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x545586370}
+【参数】
 
-[*[seconds]{lang="IT"}*]{#struct_0_16200_x1222_x1459137135}[：]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}[上]{style="font-family:宋体"}[AP]{lang="EN-US"}[信息的老化时间]{style="font-family:宋体"}[，]{style="font-family:宋体"}[取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[60]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[seconds*]：BAS AC上AP信息的老化时间，取值范围为1～60，单位为秒。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x892621418}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16200_x1222_578597323}[配置]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}[上的]{style="font-family:宋体"}[AP]{lang="EN-US"}[信息老化时间为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置BAS AC上的AP信息老化时间为10秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16200_x1222_325513420}
+\<Sysname\> system-view
 
-[\[Sysname\] ]{lang="EN-US"}[wlan bas-ac ap aging-time 10]{lang="IT"}
-:::
-
-::: {#-727366310 .myid}
-[]{#_Toc404794736}[]{#struct_0_16200_x1222_x569226748}[]{#_Toc342314391}
+Sysname wlan bas-ac ap aging-time 10
 
 **MAC-BAC \-- MAC-BAC配置命令 \-- wlan bas-ac authentication**
 
 ------------------------------------------------------------------------
 
-[**[wlan bas-ac authentication]{lang="EN-US"}**]{#struct_0_16200_x1222_334608194}[命令用来配置用于验证]{style="font-family:
-宋体"}[BAS AC]{lang="EN-US"}[报文的密钥。]{style="font-family:
-宋体"}
+**[wlan bas-ac authentication**]命令用来配置用于验证BAS AC报文的密钥。
 
-[**[undo wlan bas-ac authentication]{lang="EN-US"}**]{#struct_0_16200_x1222_x1436504085}[命令用来删除已配置的密钥。]{style="font-family:宋体"}
+**[undo wlan bas-ac authentication**]命令用来删除已配置的密钥。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16200_x1222_1856313874}
+【命令】
 
-[**[wlan bas-ac authentication]{lang="EN-US"}**[ { **cipher** \| **simple** } *authentication-key*]{lang="EN-US"}]{#struct_0_16200_x1222_372688738}
+**[wlan bas-ac authentication**[ { **cipher** \| **simple** } *authentication-key*]]
 
-[**[undo wlan bas-ac authentication]{lang="EN-US"}**]{#struct_0_16200_x1222_x656165550}
+**[undo wlan bas-ac authentication**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x1369199879}
+【缺省情况】
 
-[[没有配置用于验证]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}]{#struct_0_16200_x1222_x1694232676}[报文的密钥。]{style="font-family:宋体"}
+没有配置用于验证BAS AC报文的密钥。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x487240246}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_16200_x1222_x1357888444}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16200_x1222_333625154}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16200_x1222_1304795064}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16200_x1222_375286422}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x2135734088}
+【参数】
 
-[**[cipher]{lang="EN-US"}**]{#struct_0_16200_x1222_x1091478858}[：以密文方式设置密钥。]{style="font-family:宋体"}
+**[cipher**]：以密文方式设置密钥。
 
-[**[simple]{lang="EN-US"}**]{#struct_0_16200_x1222_x286115871}[：以明文方式设置密钥。]{style="font-family:宋体"}
+**[simple**]：以明文方式设置密钥。
 
-[*[authentication-key]{lang="EN-US"}*]{#struct_0_16200_x1222_1897565033}[：设置的明文密钥或密文密钥，区分大小写。明文密钥为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[16]{lang="EN-US"}[个字符的字符串，密文密钥为]{style="font-family:宋体"}[24]{lang="EN-US"}[～]{style="font-family:宋体"}[53]{lang="EN-US"}[个字符的字符串。]{style="font-family:宋体"}
+*[authentication-key*]：设置的明文密钥或密文密钥，区分大小写。明文密钥为1～16个字符的字符串，密文密钥为24～53个字符的字符串。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16200_x1222_686470618}
+【使用指导】
 
-[[配置认证功能后，]{style="font-family:宋体"}[Master AC]{lang="EN-US"}]{#struct_0_16200_x1222_191809801}[发送报文时会使用]{style="font-family:宋体"}[MD5]{lang="EN-US"}[算法对报文内容计算出消息摘要，并将消息摘要添加到发送的报文中。]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}[接收到报文后，也进行同样地计算，并将计算结果和消息中的摘要进行比较。如果一致，则认证通过，接收该消息；否则认证失败，丢弃该消息。]{style="font-family:宋体"}
+配置认证功能后，Master AC发送报文时会使用MD5算法对报文内容计算出消息摘要，并将消息摘要添加到发送的报文中。BAS AC接收到报文后，也进行同样地计算，并将计算结果和消息中的摘要进行比较。如果一致，则认证通过，接收该消息；否则认证失败，丢弃该消息。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_16200_x1222_x1474844164}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[以明文或密文方式设置的密钥，均以密文的方式保存在配置文件中。]{style="font-family:宋体"}]{#struct_0_16200_x1222_1173811418}
+·以明文或密文方式设置的密钥，均以密文的方式保存在配置文件中。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在]{style="font-family:宋体"}]{#struct_0_16200_x1222_494616129}[BAS AC]{lang="EN-US"}[和]{style="font-family:宋体"}[MAC AC]{lang="EN-US"}[上需要配置相同的]{style="font-family:宋体"}[密钥]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}
+·在BAS AC和MAC AC上需要配置相同的密钥。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x1217544349}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16200_x1222_333690690}[配置]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}[的密钥为明文]{style="font-family:宋体"}[12345]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置BAS AC的密钥为明文12345。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16200_x1222_570368572}
+\<Sysname\> system-view
 
-[\[Sysname\] wlan bas-ac authentication simple 12345]{lang="EN-US"}
-:::
-
-::: {#1518563548 .myid}
-[]{#_Toc404794737}[]{#struct_0_16200_x1222_x1314301264}[]{#_Toc339986072}[]{#_Toc337825418}
+Sysname wlan bas-ac authentication simple 12345
 
 **MAC-BAC \-- MAC-BAC配置命令 \-- wlan bas-ac client aging-time**
 
 ------------------------------------------------------------------------
 
-[**[wlan bas-ac client aging-time]{lang="IT"}**]{#struct_0_16200_x1222_1533315154}[命令用来配置]{style="font-family:宋体"}[BAS AC]{lang="IT"}[与]{style="font-family:宋体"}[Master AC]{lang="IT"}[断开连接后]{style="font-family:宋体"}[，]{style="font-family:
-宋体"}[BAS AC]{lang="IT"}[上]{style="font-family:宋体"}[客户端]{style="font-family:宋体"}[信息的老化时间。]{style="font-family:宋体"}
+**[wlan bas-ac client aging-time**]命令用来配置BAS AC与Master AC断开连接后，BAS AC上客户端信息的老化时间。
 
-[**[undo wlan bas-ac client aging-time]{lang="IT"}**]{#struct_0_16200_x1222_x2072064455}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo wlan bas-ac client aging-time**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x24221307}
+【命令】
 
-[**[wlan bas-ac client aging-time ]{lang="IT"}**]{#struct_0_16200_x1222_580033546}*[seconds]{lang="IT"}*
+**[wlan bas-ac client aging-time **]*seconds*
 
-[**[undo wlan bas-ac client aging-time]{lang="IT"}**]{#struct_0_16200_x1222_x54175210}
+**[undo wlan bas-ac client aging-time**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16200_x1222_334149443}
+【缺省情况】
 
-[[BAS AC]{lang="EN-US"}]{#struct_0_16200_x1222_503474537}[上客户端信息的老化时间为]{style="font-family:宋体"}[30]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+BAS AC上客户端信息的老化时间为30秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x2098217546}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_16200_x1222_x1582689749}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x2024679588}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16200_x1222_x1358546833}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16200_x1222_478511034}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16200_x1222_728719881}
+【参数】
 
-[*[seconds]{lang="IT"}*]{#struct_0_16200_x1222_313243894}[：]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}[上客户端信息的老化时间]{style="font-family:宋体"}[，]{style="font-family:宋体"}[取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[60]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[seconds*]：BAS AC上客户端信息的老化时间，取值范围为1～60，单位为秒。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16200_x1222_1698738681}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16200_x1222_334214979}[配置]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}[上客户端信息老化时间为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置BAS AC上客户端信息老化时间为10秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16200_x1222_x442870623}
+\<Sysname\> system-view
 
-[\[Sysname\] ]{lang="EN-US"}[wlan bas-ac client aging-time 10]{lang="IT"}
-:::
-
-::: {#1434429038 .myid}
-[]{#_Toc404794738}[]{#struct_0_16200_x1222_x1507913260}
+Sysname wlan bas-ac client aging-time 10
 
 **MAC-BAC \-- MAC-BAC配置命令 \-- wlan load-balance ap ap-list**
 
 ------------------------------------------------------------------------
 
-[**[wlan ]{lang="IT"}[load-]{lang="EN-US"}**]{#struct_0_16200_x1222_1348133764}**[balance ap ap-list]{lang="IT"}**[命令用来配置基于热点分配]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}[功能，即将]{style="font-family:宋体"}[AP]{lang="EN-US"}[列表下的]{style="font-family:宋体"}[AP]{lang="IT"}[分配到同一个]{style="font-family:宋体"}[BAS AC]{lang="IT"}[上]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[wlan load-**]**balance ap ap-list**命令用来配置基于热点分配BAS AC功能，即将AP列表下的AP分配到同一个BAS AC上。
 
-[**[undo wlan ]{lang="IT"}[load-]{lang="EN-US"}**]{#struct_0_16200_x1222_x1609380066}**[balance ap ap-list]{lang="IT"}**[命令取消配置基于热点分配]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo wlan load-**]**balance ap ap-list**命令取消配置基于热点分配BAS AC功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x271158152}
+【命令】
 
-[**[wlan ]{lang="IT"}[load-]{lang="EN-US"}**]{#struct_0_16200_x1222_2142068001}**[balance ap ap-list ]{lang="IT"}***[ap-list-name]{lang="IT"}*
+**[wlan load-**]**balance ap ap-list ***ap-list-name*
 
-[**[undo wlan ]{lang="IT"}[load-]{lang="EN-US"}**]{#struct_0_16200_x1222_x700130259}**[balance ap ap-list]{lang="IT"}**[ \[ *ap-list-name* \]]{lang="IT"}
+**[undo wlan load-**]**balance ap ap-list** [ *ap-list-name* ]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16200_x1222_334280515}
+【缺省情况】
 
-[[没有配置基于热点分配]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}]{#struct_0_16200_x1222_1543953430}[功能，即由]{style="font-family:宋体"}[Master AC]{lang="EN-US"}[根据负载均衡算法为]{style="font-family:宋体"}[AP]{lang="EN-US"}[指定]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}[。]{style="font-family:宋体"}
+没有配置基于热点分配BAS AC功能，即由Master AC根据负载均衡算法为AP指定BAS AC。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16200_x1222_1779486228}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_16200_x1222_1051521062}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x1755205683}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16200_x1222_x1119306647}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16200_x1222_x690986874}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x1800859716}
+【参数】
 
-[*[ap-list-name]{lang="IT"}*]{#struct_0_16200_x1222_x614042799}[：基于热点分配]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}[的]{style="font-family:宋体"}[AP]{lang="EN-US"}[列表]{style="font-family:宋体"}[，]{style="font-family:宋体"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[31]{lang="EN-US"}[个字符的字符串]{style="font-family:宋体"}[，]{style="font-family:宋体"}[区分大小写]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+*[ap-list-name*]：基于热点分配BAS AC的AP列表，为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x1862866821}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[多次执行]{lang="EN-US" style="font-family:宋体"}]{#struct_0_16200_x1222_334346051}**[wlan ]{lang="IT"}[load-]{lang="EN-US"}[balance ap ap-list]{lang="IT"}**[命令，可以配置]{lang="EN-US" style="font-family:宋体"}[对]{style="font-family:宋体"}[多个]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[列表开启]{style="font-family:宋体"}[基于热点分配]{lang="EN-US" style="font-family:宋体"}[BAS AC]{lang="EN-US"}[功能。]{lang="EN-US" style="font-family:宋体"}
+·多次执行**wlan load-balance ap ap-list**命令，可以配置对多个AP列表开启基于热点分配BAS AC功能。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[执行]{lang="EN-US" style="font-family:宋体"}**[undo wlan load-balance ap ap-list]{lang="EN-US"}**]{#struct_0_16200_x1222_x1983628329}[命令时，如果]{lang="EN-US" style="font-family:宋体"}[未]{style="font-family:宋体"}[指定任何参数，则取消所有已配置的基于热点分配]{lang="EN-US" style="font-family:宋体"}[BAS AC]{lang="EN-US"}[功能。]{lang="EN-US" style="font-family:宋体"}
+·执行**undo wlan load-balance ap ap-list**命令时，如果未指定任何参数，则取消所有已配置的基于热点分配BAS AC功能。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x1348213435}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16200_x1222_1836813858}[配置基于热点分配]{style="font-family:宋体"}[BAS AC]{lang="EN-US"}[功能，将名字为]{style="font-family:宋体"}[name1]{lang="IT"}[的]{style="font-family:宋体"}[AP]{lang="IT"}[列表]{style="font-family:
-宋体"}[下的]{style="font-family:宋体"}[AP]{lang="IT"}[分配到同一个]{style="font-family:宋体"}[BAS AC]{lang="IT"}[上。]{style="font-family:宋体"}
+\# 配置基于热点分配BAS AC功能，将名字为name1的AP列表下的AP分配到同一个BAS AC上。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16200_x1222_x1313568591}
+\<Sysname\> system-view
 
-[\[Sysname\] ]{lang="EN-US"}[wlan load-balance ap ap-list name1]{lang="IT"}
-:::
-
-::: {#-2117243782 .myid}
-[]{#_Toc404794739}[]{#struct_0_16200_x1222_x1151460819}
+Sysname wlan load-balance ap ap-list name1
 
 **MAC-BAC \-- MAC-BAC配置命令 \-- wlan master-ac enable**
 
 ------------------------------------------------------------------------
 
-[**[wlan master-ac enable]{lang="IT"}**]{#struct_0_16200_x1222_x351006271}[命令用来开启]{style="font-family:宋体"}[Master AC]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[wlan master-ac enable**]命令用来开启Master AC功能。
 
-[**[undo wlan master-ac enable]{lang="IT"}**]{#struct_0_16200_x1222_1814312448}[命令用来关闭]{style="font-family:宋体"}[Master AC]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo wlan master-ac enable**]命令用来关闭Master AC功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16200_x1222_334411587}
+【命令】
 
-[**[wlan master-ac enable]{lang="IT"}**]{#struct_0_16200_x1222_x2058429077}
+**[wlan master-ac enable**]
 
-[**[undo wlan master-ac enable]{lang="IT"}**]{#struct_0_16200_x1222_1760595745}
+**[undo wlan master-ac enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x68117973}
+【缺省情况】
 
-[[Master AC]{lang="EN-US"}]{#struct_0_16200_x1222_2028213290}[功能处于关闭状态。]{style="font-family:宋体"}
+Master AC功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x214006537}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_16200_x1222_1122810608}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x1158991144}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16200_x1222_x1623349123}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16200_x1222_x1540846480}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16200_x1222_334477123}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16200_x1222_1418506257}[开启]{style="font-family:宋体"}[Master AC]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 开启Master AC功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16200_x1222_x1640501835}
+\<Sysname\> system-view
 
-[\[Sysname\] wlan master-ac enable]{lang="EN-US"}
-:::
-
-::: {#-132061420 .myid}
-[]{#_Toc404794740}[]{#struct_0_16200_x1222_1675110298}
+Sysname wlan master-ac enable
 
 **MAC-BAC \-- MAC-BAC配置命令 \-- wlan master-ac port**
 
 ------------------------------------------------------------------------
 
-[**[wlan master-ac port]{lang="IT"}**]{#struct_0_16200_x1222_1183724766}[命令用来配置]{style="font-family:宋体"}[Master AC]{lang="EN-US"}[的端口号。]{style="font-family:宋体"}
+**[wlan master-ac port**]命令用来配置Master AC的端口号。
 
-[**[undo wlan master-ac port]{lang="IT"}**]{#struct_0_16200_x1222_x1070708349}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo wlan master-ac port**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16200_x1222_898837438}
+【命令】
 
-[**[wlan master-ac port ]{lang="EN-US"}***[port-number]{lang="EN-US"}*]{#struct_0_16200_x1222_x615488560}
+**[wlan master-ac port ***port-number*]
 
-[**[undo wlan master-ac port]{lang="EN-US"}**[ *port-number*]{lang="EN-US"}]{#struct_0_16200_x1222_334542659}
+**[undo wlan master-ac port** *port-number*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x917929939}
+【缺省情况】
 
-[[Master AC]{lang="EN-US"}]{#struct_0_16200_x1222_x545520834}[的端口号为]{style="font-family:宋体"}[35001]{lang="EN-US"}[。]{style="font-family:宋体"}
+Master AC的端口号为35001。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16200_x1222_x1810558673}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_16200_x1222_27596161}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16200_x1222_425351507}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16200_x1222_342411567}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16200_x1222_206949749}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16200_x1222_1932359685}
+【参数】
 
-[*[port-number]{lang="EN-US"}*]{#struct_0_16200_x1222_x1730198157}[：]{style="font-family:宋体"}[Master AC]{lang="EN-US"}[的端口号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[port-number*]：Master AC的端口号，取值范围为1～65535。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16200_x1222_334608195}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16200_x1222_x1436504086}[配置]{style="font-family:宋体"}[Master AC]{lang="EN-US"}[的端口号为]{style="font-family:宋体"}[5000]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置Master AC的端口号为5000。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16200_x1222_1453029347}
+\<Sysname\> system-view
 
-[\[Sysname\] wlan master-ac port 5000]{lang="EN-US"}
+Sysname wlan master-ac port 5000
 
-[ ]{lang="IT"}
-:::

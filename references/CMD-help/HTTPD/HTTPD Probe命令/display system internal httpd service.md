@@ -1,156 +1,143 @@
-::: {#372542212 .myid}
-[]{#_Toc404798921}[]{#struct_0_x1598_x1733_x792392975}
 
 **HTTPD \-- HTTPD Probe命令 \-- display system internal httpd service**
 
 ------------------------------------------------------------------------
 
-[**[display system internal httpd service]{lang="EN-US"}**]{#struct_0_x1598_x1733_x1694810970}[命令用来显示]{style="font-family:宋体"}[HTTPD]{lang="EN-US"}[服务相关信息。]{style="font-family:宋体"}
+**[display system internal httpd service**]命令用来显示HTTPD服务相关信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1598_x1733_x1399015613}
+【命令】
 
-[**[display system internal httpd service]{lang="EN-US"}**]{#struct_0_x1598_x1733_2141812535}
+**[display system internal httpd service**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1598_x1733_x513192678}
+【视图】
 
-[[Probe]{lang="EN-US"}]{#struct_0_x1598_x1733_512485600}[视图]{style="font-family:宋体"}
+Probe视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1598_x1733_x1678755778}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1598_x1733_x1550934032}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1598_x1733_1153445974}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1598_x1733_694410627}
+【使用指导】
 
-[[通过本命令可以查看]{style="font-family:宋体"}[HTTPD]{lang="EN-US"}]{#struct_0_x1598_x1733_138504783}[服务信息，包括打开的服务端口，注册的]{style="font-family:宋体"}[URL]{lang="EN-US"}[，内部]{style="font-family:宋体"}[LIPC]{lang="EN-US"}[端口号等。]{style="font-family:宋体"}
+通过本命令可以查看HTTPD服务信息，包括打开的服务端口，注册的URL，内部LIPC端口号等。
 
-[[本命令仅在]{style="font-family:宋体"}[Debug]{lang="EN-US"}]{#struct_0_x1598_x1733_x1398950077}[版本支持，]{style="font-family:宋体"}[Release]{lang="EN-US"}[版本不提供。]{style="font-family:宋体"}
+本命令仅在Debug版本支持，Release版本不提供。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1598_x1733_44247516}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1598_x1733_x1886742496}[显示]{style="font-family:宋体"}[HTTPD]{lang="EN-US"}[服务信息。]{style="font-family:宋体"}
+\# 显示HTTPD服务信息。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1598_x1733_x1252563537}
+\<Sysname\> system-view
 
-[\[Sysname\] probe]{lang="EN-US"}
+Sysname probe
 
-[\[Sysname-probe\] display system internal httpd service]{lang="EN-US"}
+Sysname-probe display system internal httpd service
 
-[Address family: IPv4]{lang="EN-US"}
+Address family: IPv4
 
-[Port: 80]{lang="EN-US"}
+Port: 80
 
-[URL: /wnm/]{lang="EN-US"}
+URL: /wnm/
 
-[Application family: LIPC]{lang="EN-US"}
+Application family: LIPC
 
-[Application address: 0x0]{lang="EN-US"}
+Application address: 0x0
 
-[Application port: 10529]{lang="EN-US"}
+Application port: 10529
 
-[ ]{lang="EN-US"}
+Address family: IPv6
 
-[Address family: IPv6]{lang="EN-US"}
+Port: 80
 
-[Port: 80]{lang="EN-US"}
+URL: /wnm/
 
-[URL: /wnm/]{lang="EN-US"}
+Application family: LIPC
 
-[Application family: LIPC]{lang="EN-US"}
+Application address: 0x0
 
-[Application address: 0x0]{lang="EN-US"}
+Application port: 10529
 
-[Application port: 10529]{lang="EN-US"}
+表1-1 display system internal httpd service命令显示信息描述表
 
-[]{#struct_0_x1598_x1733_1591134784}[[表1-1 ]{lang="EN-US"}[display ]{lang="EN-US"}]{#_Toc94583061}[system internal httpd service]{lang="EN-US"}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1733813147}[[字段]{style="font-family:黑体"}]{#struct_0_x1598_x1733_x1398884541}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1598_x1733_175908086}
+Address family
 
-[[Address family]{lang="EN-US"}]{#struct_0_x1598_x1733_x1010162410}
+HTTPD服务的协议族类型，IPv4或者IPv6
 
-[[HTTPD]{lang="PT-BR"}]{#struct_0_x1598_x1733_x835080799}[服务的协议族类型，]{style="font-family:宋体"}[IPv4]{lang="PT-BR"}[或者]{style="font-family:宋体"}[IPv6]{lang="PT-BR"}
+Port
 
-[[Port]{lang="EN-US"}]{#struct_0_x1598_x1733_1116266918}
+HTTPD服务打开的端口号
 
-[[HTT]{lang="EN-US"}]{#struct_0_x1598_x1733_x975638884}[PD]{lang="PT-BR"}[服务打开的端口号]{style="font-family:
-  宋体"}
+URL
 
-[[URL]{lang="EN-US"}]{#struct_0_x1598_x1733_x362193423}
+HTTPD服务访问的目标资源地址
 
-[[HTTPD]{lang="PT-BR"}]{#struct_0_x1598_x1733_1628077712}[服务访问的目标资源地址]{style="font-family:宋体"}
+Application family
 
-[[Application family]{lang="EN-US"}]{#struct_0_x1598_x1733_x1398819005}
+后台服务的协议族类型，LIPC或者TCP，目前仅支持LIPC
 
-[[后台服务的协议族类型，]{style="font-family:宋体"}]{#struct_0_x1598_x1733_x645034458}[LIPC]{lang="PT-BR"}[或者]{style="font-family:宋体"}[TCP]{lang="PT-BR"}[，目前仅支持]{style="font-family:宋体"}[LIPC]{lang="PT-BR"}
+Application address
 
-[[Application address]{lang="EN-US"}]{#struct_0_x1598_x1733_x1777910278}
+后台服务的地址，LIPC类型为LIPC地址，TCP类型为IP地址
 
-[[后台服务的地址，]{style="font-family:宋体"}]{#struct_0_x1598_x1733_x592068099}[LIPC]{lang="PT-BR"}[类型为]{style="font-family:宋体"}[LIPC]{lang="PT-BR"}[地址，]{style="font-family:宋体"}[TCP]{lang="PT-BR"}[类型为]{style="font-family:宋体"}[IP]{lang="PT-BR"}[地址]{style="font-family:宋体"}
+Application port
 
-[[Application port]{lang="EN-US"}]{#struct_0_x1598_x1733_x1553432479}
-
-[[后台服务打开的端口号]{style="font-family:宋体"}]{#struct_0_x1598_x1733_x1649272982}
-
-[ ]{lang="EN-US"}
-
-::: {#358293646 .myid}
-[]{#_Toc404798922}[]{#struct_0_x1598_x1733_x1398753469}
+后台服务打开的端口号
 
 **HTTPD \-- HTTPD Probe命令 \-- debugging system internal httpd**
 
 ------------------------------------------------------------------------
 
-[**[debugging system internal httpd]{lang="EN-US"}**]{#struct_0_x1598_x1733_x883956358}[命令用来打开]{style="font-family:宋体"}[HTTPD]{lang="EN-US"}[的调试信息开关。]{style="font-family:宋体"}
+**[debugging system internal httpd**]命令用来打开HTTPD的调试信息开关。
 
-[**[undo debugging system internal httpd]{lang="EN-US"}**]{#struct_0_x1598_x1733_1996041858}[命令用来关闭]{style="font-family:宋体"}[HTTPD]{lang="EN-US"}[的调试信息开关。]{style="font-family:宋体"}
+**[undo debugging system internal httpd**]命令用来关闭HTTPD的调试信息开关。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1598_x1733_136438805}
+【命令】
 
-[**[debugging system internal httpd ]{lang="EN-US"}**[{ **all** \| **event** \| **process** \| **error** }]{lang="EN-US"}]{#struct_0_x1598_x1733_x1586057452}
+**[debugging system internal httpd **[{ **all** \| **event** \| **process** \| **error** }]]
 
-[**[undo debugging system internal httpd ]{lang="EN-US"}**[{ **all** \| **event** \| **process** \| **error** }]{lang="EN-US"}]{#struct_0_x1598_x1733_x1657950993}
+**[undo debugging system internal httpd **[{ **all** \| **event** \| **process** \| **error** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1598_x1733_x106598562}
+【视图】
 
-[[Probe]{lang="EN-US"}]{#struct_0_x1598_x1733_x810838499}[视图]{style="font-family:宋体"}
+Probe视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1598_x1733_848132096}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1598_x1733_x1398687933}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1598_x1733_1217728056}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1598_x1733_x1731155551}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_x1598_x1733_1453563104}**[：]{style="font-family:宋体"}**[打开]{style="font-family:宋体"}[HTTPD]{lang="EN-US"}[模块全部调试信息开关。]{style="font-family:宋体"}
+**[all**]**：**打开HTTPD模块全部调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_x1598_x1733_x970602851}**[：]{style="font-family:宋体"}**[打开]{style="font-family:宋体"}[HTTPD]{lang="EN-US"}[模块的事件调试信息开关。]{style="font-family:宋体"}
+**[event**]**：**打开HTTPD模块的事件调试信息开关。
 
-[**[process]{lang="EN-US"}**]{#struct_0_x1598_x1733_x169284614}**[：]{style="font-family:宋体"}**[打开]{style="font-family:宋体"}[HTTPD]{lang="EN-US"}[模块的处理调试信息开关。]{style="font-family:宋体"}
+**[process**]**：**打开HTTPD模块的处理调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_x1598_x1733_x1785531635}**[：]{style="font-family:宋体"}**[打开]{style="font-family:宋体"}[HTTPD]{lang="EN-US"}[模块的错误调试信息开关。]{style="font-family:宋体"}
+**[error**]**：**打开HTTPD模块的错误调试信息开关。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1598_x1733_x1677673753}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1598_x1733_x2046841634}[打开]{style="font-family:宋体"}[HTTPD]{lang="EN-US"}[所有调试信息开关。]{style="font-family:宋体"}
+\# 打开HTTPD所有调试信息开关。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1598_x1733_x1398622397}
+\<Sysname\> system-view
 
-[\[Sysname\] probe]{lang="EN-US"}
+Sysname probe
 
-[\[Sysname-probe\] debugging system internal httpd all]{lang="EN-US"}
+Sysname-probe debugging system internal httpd all
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1598_x1733_1414800432}[打开]{style="font-family:宋体"}[HTTPD]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}
+\# 打开HTTPD事件调试信息开关。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1598_x1733_1773143070}
+\<Sysname\> system-view
 
-[\[Sysname\] probe]{lang="EN-US"}
+Sysname probe
 
-[\[Sysname-probe\] debugging system internal httpd event]{lang="EN-US"}
+Sysname-probe debugging system internal httpd event
 
-[ ]{lang="EN-US"}
-:::

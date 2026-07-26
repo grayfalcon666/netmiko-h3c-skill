@@ -1,159 +1,146 @@
-::: {#2110356285 .myid}
-[]{#_Toc404797152}[]{#struct_0_27289_x6771_207812095}[]{#_Toc55050581}[]{#_Toc28576987}
 
 **Sampler \-- Sampler配置命令 \-- display sampler**
 
 ------------------------------------------------------------------------
 
-[**[display sampler]{lang="EN-US"}**]{#struct_0_27289_x6771_878520352}[命令用来查看采样器的配置信息。]{style="font-family:宋体"}
+**[display sampler**]命令用来查看采样器的配置信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_27289_x6771_x1615651681}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_27289_x6771_1118108282}
+集中式设备：
 
-[**[display sampler ]{lang="EN-US"}**[\[ *sampler-name* \]]{lang="EN-US"}]{#struct_0_27289_x6771_1923918294}
+**[display sampler ** *sampler-name* ]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_27289_x6771_1378173609}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display sampler ]{lang="EN-US"}**[\[ *sampler-name* \] \[ **slot** *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}]{#struct_0_27289_x6771_x1755272829}
+**[display sampler ** *sampler-name* ]  **slot** *slot-number* [ **cpu** *cpu-number*  ]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_27289_x6771_90578062}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display sampler ]{lang="EN-US"}**[\[ *sampler-name* \] \[ **chassis** *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}]{#struct_0_27289_x6771_1802984098}
+**[display sampler ** *sampler-name* ]  **chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number*  ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_27289_x6771_x1734806216}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_27289_x6771_716106268}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_27289_x6771_x45210748}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_27289_x6771_1780990401}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_27289_x6771_616986186}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_27289_x6771_539012072}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_27289_x6771_1378108073}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_27289_x6771_604409875}
+【参数】
 
-[*[sampler-name]{lang="EN-US"}*]{#struct_0_27289_x6771_x1810576602}[：采样器名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写。未指定该参数时，将显示所有采样器的信息。]{style="font-family:宋体"}
+*[sampler-name*]：采样器名称，为1～31个字符的字符串，不区分大小写。未指定该参数时，将显示所有采样器的信息。
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_27289_x6771_x896507044}[：查看指定单板上的信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板的槽位号。未指定该参数，将显示主用主控板上的信息。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot ***slot-number*]：查看指定单板上的信息。*slot-number*表示单板的槽位号。未指定该参数，将显示主用主控板上的信息。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_27289_x6771_x1249273179}[：查看指定成员设备上的信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。未指定该参数时，将显示主用设备上的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot** *slot-number*]：查看指定成员设备上的信息。*slot-number*表示设备在IRF中的成员编号。未指定该参数时，将显示主用设备上的信息。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_27289_x6771_x1565334466}[：查看指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[上的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。如果未指定本参数时，将显示主用设备上的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：查看指定成员设备/PEX上的信息，*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果未指定本参数时，将显示主用设备上的信息。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_27289_x6771_1305142759}[：查看指定成员设备上指定单板上的信息。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板的槽位号。未指定该参数时，将显示主用设备主用主控板上的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：查看指定成员设备上指定单板上的信息。*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板的槽位号。未指定该参数时，将显示主用设备主用主控板上的信息。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_27289_x6771_x649854069}[：查看指定单板上的信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的槽位号。如果未指定该参数时，将显示主用设备主用主控板上的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：查看指定单板上的信息，*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX的槽位号。如果未指定该参数时，将显示主用设备主用主控板上的信息。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu ]{lang="EN-US"}***[cpu-number]{lang="EN-US"}*]{#struct_0_27289_x6771_x1672331421}[：显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上的信息，]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的编号。只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[cpu ***cpu-number*]：显示指定CPU上的信息，*cpu-number*表示CPU的编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_27289_x6771_x1924646246}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_27289_x6771_2048564122}[查看采样器]{style="font-family:宋体"}[256]{lang="EN-US"}[的配置信息。]{style="font-family:宋体"}
+\# 查看采样器256的配置信息。
 
-[[\<Sysname\> display sampler 256]{lang="EN-US"}]{#struct_0_27289_x6771_291529994}
+\<Sysname\> display sampler 256
 
-[ Sampler name: 256]{lang="EN-US"}
+ Sampler name: 256
 
-[  Mode: Fixed;  Packet-interval: 8]{lang="EN-US"}
+  Mode: Fixed;  Packet-interval: 8
 
-[[\# ]{lang="EN-US"}]{#struct_0_27289_x6771_1377649322}[查看采样器]{style="font-family:宋体"}[256]{lang="EN-US"}[的]{style="font-family:宋体"}[1]{lang="EN-US"}[号单板上的配置信息。（分布式设备－独立运行模式）]{style="font-family:
-宋体"}
+\# 查看采样器256的1号单板上的配置信息。（分布式设备－独立运行模式）
 
-[[\<Sysname\> display sampler 256 slot 1]{lang="EN-US"}]{#struct_0_27289_x6771_x355984560}
+\<Sysname\> display sampler 256 slot 1
 
-[ Sampler name: 256]{lang="EN-US"}
+ Sampler name: 256
 
-[  Mode: Fixed;  Packet-interval: 8]{lang="EN-US"}
+  Mode: Fixed;  Packet-interval: 8
 
-[[\# ]{lang="EN-US"}]{#struct_0_27289_x6771_1538990204}[查看采样器]{style="font-family:宋体"}[256]{lang="EN-US"}[的]{style="font-family:宋体"}[1]{lang="EN-US"}[号框]{style="font-family:
-宋体"}[1]{lang="EN-US"}[号单板上的配置信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\# 查看采样器256的1号框1号单板上的配置信息。（分布式设备－IRF模式）
 
-[[\<Sysname\> display sampler 256 chassis 1 slot 1]{lang="EN-US"}]{#struct_0_27289_x6771_978195443}
+\<Sysname\> display sampler 256 chassis 1 slot 1
 
-[ Sampler name: 256]{lang="EN-US"}
+ Sampler name: 256
 
-[  Mode: Fixed;  Packet-interval: 8]{lang="EN-US"}
+  Mode: Fixed;  Packet-interval: 8
 
-[[表1-1 ]{lang="EN-US"}[display sampler]{lang="EN-US"}]{#struct_0_27289_x6771_x593205041}[命令显示信息描述表]{style="font-family:黑体"}
+表1-1 display sampler命令显示信息描述表
 
-[]{#table_struct_0_x683665165}[[字段]{style="font-family:黑体"}]{#struct_0_27289_x6771_x828931249}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_27289_x6771_x876710316}
+描述
 
-[[Sampler name]{lang="EN-US"}]{#struct_0_27289_x6771_1377583786}
+Sampler name
 
-[[采样器名称]{style="font-family:宋体"}]{#struct_0_27289_x6771_372680967}
+采样器名称
 
-[[Mode]{lang="EN-US"}]{#struct_0_27289_x6771_x728415389}
+Mode
 
-[[采样器模式，包括固定采样（]{style="font-family:宋体"}[Fixed]{lang="EN-US"}]{#struct_0_27289_x6771_x2005621874}[）和随机采样（]{style="font-family:宋体"}[Random]{lang="EN-US"}[）]{style="font-family:宋体"}
+采样器模式，包括固定采样（Fixed）和随机采样（Random）
 
-[[Packet-interval]{lang="EN-US"}]{#struct_0_27289_x6771_x2139660046}
+Packet-interval
 
-[[采样率]{style="font-family:宋体"}]{#struct_0_27289_x6771_x977112277}
-
-[]{#_Toc150663363}[ ]{lang="EN-US"}
-
-::: {#-1071821280 .myid}
-[]{#_Toc404797153}[]{#struct_0_27289_x6771_x1727599827}
+采样率
 
 **Sampler \-- Sampler配置命令 \-- sampler**
 
 ------------------------------------------------------------------------
 
-[**[sampler]{lang="EN-US"}**]{#struct_0_27289_x6771_1243096835}[命令用来创建采样器。]{style="font-family:宋体"}
+**[sampler**]命令用来创建采样器。
 
-[**[undo sampler]{lang="EN-US"}**]{#struct_0_27289_x6771_1377518250}[命令用来删除指定采样器。]{style="font-family:宋体"}
+**[undo sampler**]命令用来删除指定采样器。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_27289_x6771_401444745}
+【命令】
 
-[**[sampler ]{lang="EN-US"}***[sampler-name]{lang="EN-US"}***[ mode ]{lang="EN-US"}**[{ **fixed** \| **random** } **packet-interval** *rate*]{lang="EN-US"}]{#struct_0_27289_x6771_480863558}
+**[sampler ***sampler-name*** mode **[{ **fixed** \| **random** } **packet-interval** *rate*]]
 
-[**[undo sampler ]{lang="EN-US"}***[sampler-name]{lang="EN-US"}*]{#struct_0_27289_x6771_x609069396}
+**[undo sampler ***sampler-name*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_27289_x6771_x1941304855}
+【缺省情况】
 
-[[未创建任何采样器。]{style="font-family:宋体"}]{#struct_0_27289_x6771_x1570650246}
+未创建任何采样器。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_27289_x6771_1881439114}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_27289_x6771_x970438992}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_27289_x6771_656498094}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_27289_x6771_x563267855}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_27289_x6771_1377452714}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_27289_x6771_x1173938760}
+【参数】
 
-[*[sampler-name]{lang="EN-US"}*]{#struct_0_27289_x6771_1155803710}[：采样器名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+*[sampler-name*]：采样器名称，为1～31个字符的字符串，不区分大小写。
 
-[**[fixed]{lang="EN-US"}**]{#struct_0_27289_x6771_515294775}[：采样方式为固定采样，表示每组报文中的第一个报文被抽取。]{style="font-family:宋体"}
+**[fixed**]：采样方式为固定采样，表示每组报文中的第一个报文被抽取。
 
-[**[random]{lang="EN-US"}**]{#struct_0_27289_x6771_274064070}[：采样方式为随机采样，表示每组报文中，任意一个报文都有可能被抽取。]{style="font-family:宋体"}
+**[random**]：采样方式为随机采样，表示每组报文中，任意一个报文都有可能被抽取。
 
-[*[rate]{lang="EN-US"}*]{#struct_0_27289_x6771_x568248426}[：采样率，即在指定的多个报文中抽取一个报文进行采样。对于硬件采样，按照]{style="font-family:宋体"}[2]{lang="EN-US"}[的]{style="font-family:宋体"}*[rate]{lang="EN-US"}*[次方进行计算。例如，该参数设为]{style="font-family:宋体"}[8]{lang="EN-US"}[，表示在]{style="font-family:宋体"}[256]{lang="EN-US"}[（]{style="font-family:宋体"}[2]{lang="EN-US"}[的]{style="font-family:
-宋体"}[8]{lang="EN-US"}[次方）个报文中采样]{style="font-family:宋体"}[1]{lang="EN-US"}[个报文；该参数设为]{style="font-family:宋体"}[10]{lang="EN-US"}[，表示在]{style="font-family:宋体"}[1024]{lang="EN-US"}[（]{style="font-family:宋体"}[2]{lang="EN-US"}[的]{style="font-family:
-宋体"}[10]{lang="EN-US"}[次方）个报文中采样]{style="font-family:宋体"}[1]{lang="EN-US"}[个报文；对于软件采样，按照用户输入的实际参数进行采样。例如，该参数设为]{style="font-family:宋体"}[100]{lang="EN-US"}[，表示在]{style="font-family:宋体"}[100]{lang="EN-US"}[个报文中采样]{style="font-family:宋体"}[1]{lang="EN-US"}[个报文。不同型号的设备支持的取值范围和实际采样率不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[rate*]：采样率，即在指定的多个报文中抽取一个报文进行采样。对于硬件采样，按照2的*rate*次方进行计算。例如，该参数设为8，表示在256（2的8次方）个报文中采样1个报文；该参数设为10，表示在1024（2的10次方）个报文中采样1个报文；对于软件采样，按照用户输入的实际参数进行采样。例如，该参数设为100，表示在100个报文中采样1个报文。不同型号的设备支持的取值范围和实际采样率不同，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_27289_x6771_x1598391353}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不同型号的设备支持的采样器数目不同，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_27289_x6771_648938743}
+·不同型号的设备支持的采样器数目不同，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[该命令对所有单板生效。（分布式设备－独立运行模式]{style="font-family:宋体"}]{#struct_0_27289_x6771_x1574652132}[/]{lang="EN-US"}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+·该命令对所有单板生效。（分布式设备－独立运行模式/分布式设备－IRF模式）
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_27289_x6771_1377387178}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_27289_x6771_x449545168}[创建一个名为]{style="font-family:宋体"}[abc]{lang="EN-US"}[的采样器，采用固定采样方式，设置采样率为]{style="font-family:宋体"}[8]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 创建一个名为abc的采样器，采用固定采样方式，设置采样率为8。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_27289_x6771_x1137396896}
+\<Sysname\> system-view
 
-[\[Sysname\] sampler abc mode fixed packet-interval 8]{lang="EN-US"}
-:::
+Sysname sampler abc mode fixed packet-interval 8

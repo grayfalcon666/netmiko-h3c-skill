@@ -1,3324 +1,2957 @@
-::: {#435281283 .myid}
-[]{#_Toc404798402}[]{#struct_0_x9563_11471_193579069}[]{#_Toc348873558}
 
 **OpenFlow \-- OpenFlow配置命令 \-- active instance**
 
 ------------------------------------------------------------------------
 
-[**[active instance]{lang="EN-US"}**]{#struct_0_x9563_11471_x1048243021}[命令用来激活]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例。]{style="font-family:宋体"}
+**[active instance**]命令用来激活OpenFlow实例。
 
-[**[undo active instance]{lang="EN-US"}**]{#struct_0_x9563_11471_x1931575368}[命令用来取消配置。]{style="font-family:宋体"}
+**[undo active instance**]命令用来取消配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1252412008}
+【命令】
 
-[**[active instance]{lang="IT"}**]{#struct_0_x9563_11471_x846447785}
+**[active instance**]
 
-[**[undo active instance]{lang="IT"}**]{#struct_0_x9563_11471_x1049992779}
+**[undo active instance**]
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_x9563_11471_x1387017649}
+【缺省情况】
 
-[[未激活]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_x736361209}[实例。]{style="font-family:宋体"}
+未激活OpenFlow实例。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1724748362}
+【视图】
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_x595487085}[实例视图]{style="font-family:宋体"}[/OpenFlow OAP]{lang="EN-US"}[实例视图]{style="font-family:宋体"}
+OpenFlow实例视图/OpenFlow OAP实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_160580264}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_326973871}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_1871357590}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1155105750}
+【使用指导】
 
-[[新配置的实例信息（如]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1677780051}[VLAN]{lang="IT"}[配置、]{style="font-family:宋体"}[Table]{lang="IT"}[配置）必须通过重新激活实例来生效。若当前实例已经与控制器建立连接，激活新配置后会重新建立连接。]{style="font-family:宋体"}
+新配置的实例信息（如VLAN配置、Table配置）必须通过重新激活实例来生效。若当前实例已经与控制器建立连接，激活新配置后会重新建立连接。
 
-[[【举例】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_562590774}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_434875701}[激活]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 激活OpenFlow实例1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x9563_11471_x817371088}
+\<Sysname\> system-view
 
-[\[Sysname\] openflow instance 1]{lang="EN-US"}
+Sysname openflow instance 1
 
-[\[Sysname-of-inst-1\] active instance]{lang="EN-US"}
-:::
-
-::: {#1433120220 .myid}
-[]{#_Toc404798403}[]{#struct_0_x9563_11471_107371945}[]{#_Toc348873548}
+Sysname-of-inst-1 active instance
 
 **OpenFlow \-- OpenFlow配置命令 \-- classification**
 
 ------------------------------------------------------------------------
 
-[**[classification]{lang="EN-US"}**]{#struct_0_x9563_11471_160514728}[命令用来配置]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例的类型。]{style="font-family:宋体"}
+**[classification**]命令用来配置OpenFlow实例的类型。
 
-[**[undo classification]{lang="EN-US"}**]{#struct_0_x9563_11471_330465683}[命令用来取消配置。]{style="font-family:宋体"}
+**[undo classification**]命令用来取消配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x725613343}
+【命令】
 
-[**[classification ]{lang="EN-US"}**[{ **global** \| **port** \| **vlan** *vlan-id* \[ **mask** *vlan-mask* \] \[ **loosen** \] }]{lang="EN-US"}]{#struct_0_x9563_11471_1782603630}
+**[classification **[{ **global** \| **port** \| **vlan** *vlan-id* [ **mask** *vlan-mask* ]  **loosen**  }]]
 
-[**[undo classification]{lang="EN-US"}**]{#struct_0_x9563_11471_x1472658797}
+**[undo classification**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x9563_11471_2012286595}
+【缺省情况】
 
-[[没有配置]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_x549002847}[实例的类型。]{style="font-family:宋体"}
+没有配置OpenFlow实例的类型。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_946284335}
+【视图】
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_913100848}[实例视图]{style="font-family:宋体"}
+OpenFlow实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_160449192}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x1213163518}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x507100721}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1356001504}
+【参数】
 
-[**[global]{lang="EN-US"}**]{#struct_0_x9563_11471_x742096962}[：全局实例。]{style="font-family:宋体"}
+**[global**]：全局实例。
 
-[**[port]{lang="EN-US"}**]{#struct_0_x9563_11471_977960352}[：接口实例，实例按接口划分。]{style="font-family:宋体"}
+**[port**]：接口实例，实例按接口划分。
 
-[**[vlan]{lang="EN-US"}**]{#struct_0_x9563_11471_146363589}[：]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[实例，实例按]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[划分。]{style="font-family:宋体"}
+**[vlan**]：VLAN实例，实例按VLAN划分。
 
-[*[vlan-id]{lang="EN-US"}*]{#struct_0_x9563_11471_1019392118}[：]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[vlan-id*]：VLAN ID，取值范围为1～4094。
 
-[*[vlan-mask]{lang="EN-US"}*]{#struct_0_x9563_11471_x576316397}[：]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[掩码，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[4095]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[4095]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[vlan-mask*]：VLAN掩码，取值范围为0～4095，缺省值为4095。
 
-[**[loosen]{lang="EN-US"}**]{#struct_0_x9563_11471_x849215513}[：]{style="font-family:宋体"}[loosen]{lang="EN-US"}[模式。配置]{style="font-family:宋体"}[loosen]{lang="EN-US"}[模式后，如果接口所在]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[与实例配置]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[存在交集，则接口就属于]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例。没有配置]{style="font-family:宋体"}[loosen]{lang="EN-US"}[模式时，只有当实例配置的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[是接口所在]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的子集，该接口才属于]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例。]{style="font-family:宋体"}
+**[loosen**]：loosen模式。配置loosen模式后，如果接口所在VLAN与实例配置VLAN存在交集，则接口就属于OpenFlow实例。没有配置loosen模式时，只有当实例配置的VLAN是接口所在VLAN的子集，该接口才属于OpenFlow实例。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x9563_11471_2127478230}
+【使用指导】
 
-[[多次执行该命令，后配置覆盖前配置。]{style="font-family:宋体"}]{#struct_0_x9563_11471_513002686}
+多次执行该命令，后配置覆盖前配置。
 
-[[VLAN & mask]{lang="EN-US"}]{#struct_0_x9563_11471_160383656}[为实际生效]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[区间。]{style="font-family:宋体"}[mask]{lang="EN-US"}[比特位为]{style="font-family:宋体"}[1]{lang="EN-US"}[表示符合，可以不连续；比特位为]{style="font-family:宋体"}[0]{lang="EN-US"}[表示忽略。生效]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[区间，可通过]{style="font-family:宋体"}**[display openflow instance]{lang="EN-US"}**[查看。]{style="font-family:宋体"}
+VLAN & mask为实际生效VLAN区间。mask比特位为1表示符合，可以不连续；比特位为0表示忽略。生效VLAN区间，可通过**display openflow instance**查看。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x329708515}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_x1741642156}[配置]{style="font-family:宋体"}[OpenFlow VLAN]{lang="EN-US"}[实例]{style="font-family:宋体"}[1]{lang="EN-US"}[对应的的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[为]{style="font-family:宋体"}[255]{lang="EN-US"}[，掩码为]{style="font-family:宋体"}[7]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置OpenFlow VLAN实例1对应的的VLAN为255，掩码为7。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x9563_11471_1180657788}
+\<Sysname\> system-view
 
-[\[Sysname\] openflow instance 1]{lang="EN-US"}
+Sysname openflow instance 1
 
-[\[Sysname-of-inst-1\] classification vlan 255 mask 7]{lang="EN-US"}
+Sysname-of-inst-1 classification vlan 255 mask 7
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1722100471}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display openflow ]{lang="EN-US"}**]{#struct_0_x9563_11471_489375557}**[instance]{lang="EN-US"}**
-:::
-
-::: {#1895679317 .myid}
-[]{#_Toc404798404}[]{#struct_0_x9563_11471_160318120}[]{#_Toc348873551}
+·**display openflow ****instance**
 
 **OpenFlow \-- OpenFlow配置命令 \-- controller address**
 
 ------------------------------------------------------------------------
 
-[**[controller address]{lang="EN-US"}**]{#struct_0_x9563_11471_x1890740123}[命令用来配置主连接。]{style="font-family:宋体"}
+**[controller address**]命令用来配置主连接。
 
-[**[undo controller address]{lang="EN-US"}**]{#struct_0_x9563_11471_2116951421}[命令用来取消配置。]{style="font-family:宋体"}
+**[undo controller address**]命令用来取消配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x627211586}
+【命令】
 
-[**[controller ]{lang="EN-US"}***[controller-id]{lang="EN-US"}***[ address]{lang="EN-US"}**[ { **ip** *ip-address* \| **ipv6** *ipv6-address* } \[ **port** *port-number* \] \[ **local address** { **ip** *local-ip-address* \| **ipv6** *local-ipv6-address* } \[ **port** *local-port- number* \] \] \[ **ssl** *ssl-policy-name* \] \[ **vrf** *vrf-name* \]]{lang="EN-US"}]{#struct_0_x9563_11471_x45517496}
+**[controller ***controller-id*** address**[ { **ip** *ip-address* \| **ipv6** *ipv6-address* } [ **port** *port-number*   **local address** { **ip** *local-ip-address* \| **ipv6** *local-ipv6-address* } [ **port** *local-port- number* ] ]  **ssl** *ssl-policy-name*   **vrf** *vrf-name* ]]
 
-[**[undo controller ]{lang="EN-US"}***[controller-id ]{lang="EN-US"}***[address]{lang="EN-US"}**]{#struct_0_x9563_11471_x667345004}
+**[undo controller ***controller-id ***address**]
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_x9563_11471_535128073}
+【缺省情况】
 
-[[没有配置主连接。]{style="font-family:宋体"}]{#struct_0_x9563_11471_x2116086708}
+没有配置主连接。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1348189583}
+【视图】
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_160252584}[实例视图]{style="font-family:宋体"}
+OpenFlow实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1474532791}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x2042438967}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_1504135186}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1704367415}
+【参数】
 
-[*[controller-id]{lang="IT"}*]{#struct_0_x9563_11471_717065039}[：控制器的]{style="font-family:宋体"}[ID]{lang="IT"}[号，取值范围为]{style="font-family:宋体"}[0]{lang="IT"}[～]{style="font-family:宋体"}[63]{lang="IT"}[。]{style="font-family:
-宋体"}
+*[controller-id*]：控制器的ID号，取值范围为0～63。
 
-[**[ip]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x9563_11471_x1087183212}*[ip-address]{lang="IT"}*[：]{style="font-family:宋体"}[控制器的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[ip**]*ip-address*：控制器的IP地址。
 
-[**[ipv6]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x9563_11471_x1217738810}*[ipv6-address]{lang="IT"}*[：]{style="font-family:宋体"}[控制器的]{style="font-family:宋体"}[IPv6]{lang="IT"}[地址。]{style="font-family:宋体"}
+**[ipv6**]*ipv6-address*：控制器的IPv6地址。
 
-[**[port]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x9563_11471_x1813582811}*[port-number]{lang="IT"}*[：]{style="font-family:宋体"}[控制器建立连接使用的端口号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[6633]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[port**]*port-number*：控制器建立连接使用的端口号，取值范围为1～65535，缺省值为6633。
 
-[**[local address]{lang="EN-US"}**]{#struct_0_x9563_11471_x1360691810}[：指交换机与控制器连接的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，当交换机与控制器之间存在多条链路可以连接时，只要有一条链路能够连接，]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[就不会断开连接。]{style="font-family:宋体"}
+**[local address**]：指交换机与控制器连接的源IP地址，当交换机与控制器之间存在多条链路可以连接时，只要有一条链路能够连接，OpenFlow就不会断开连接。
 
-[**[ip]{lang="EN-US"}**[ *local-*]{lang="EN-US"}]{#struct_0_x9563_11471_x1553730352}*[ip-address]{lang="IT"}*[：源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[ip** *local-*]*ip-address*：源IP地址。
 
-[**[ipv6]{lang="EN-US"}**[ *local-*]{lang="EN-US"}]{#struct_0_x9563_11471_x1360691805}*[ipv6-address]{lang="IT"}*[：源]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[ipv6** *local-*]*ipv6-address*：源IPv6地址。
 
-[**[port]{lang="EN-US"}**[ *local-*]{lang="EN-US"}]{#struct_0_x9563_11471_x1360691804}*[port-number]{lang="IT"}*[：源端口号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[0]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[port** *local-*]*port-number*：源端口号，取值范围为0～65535，缺省值为0。
 
-[**[ssl]{lang="IT"}**]{#struct_0_x9563_11471_503736431}*[ ssl-policy-name]{lang="IT"}*[：]{style="font-family:宋体"}[安全连接的客户端安全策略，用于控制器认证交换机，每个控制器连接配置独立的安全策略。]{style="font-family:宋体"}*[ssl-policy-name]{lang="IT"}*[为]{style="font-family:宋体"}[1]{lang="IT"}[～]{style="font-family:宋体"}[31]{lang="IT"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+**[ssl**]* ssl-policy-name*：安全连接的客户端安全策略，用于控制器认证交换机，每个控制器连接配置独立的安全策略。*ssl-policy-name*为1～31个字符的字符串，不区分大小写。
 
-[**[vrf ]{lang="IT"}**]{#struct_0_x9563_11471_1728052758}*[vrf-name]{lang="IT"}*[：]{style="font-family:
-宋体"}[指定控制器所在的]{style="font-family:宋体"}[VRF]{lang="IT"}[，]{style="font-family:宋体"}*[vrf-name]{lang="IT"}*[表示]{style="font-family:宋体"}[MPLS L3VPN]{lang="IT"}[的]{style="font-family:宋体"}[VPN]{lang="IT"}[实例名称]{style="font-family:
-宋体"}[，]{style="font-family:宋体"}[为]{style="font-family:
-宋体"}[1]{lang="IT"}[～]{style="font-family:宋体"}[31]{lang="IT"}[个字符的字符串]{style="font-family:宋体"}[，]{style="font-family:宋体"}[区分大小写。如果未指定本参数，则表示]{style="font-family:宋体"}[控制器]{style="font-family:宋体"}[位于公网中。本参数的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[vrf **]*vrf-name*：指定控制器所在的VRF，*vrf-name*表示MPLS L3VPN的VPN实例名称，为1～31个字符的字符串，区分大小写。如果未指定本参数，则表示控制器位于公网中。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_161235624}
+【使用指导】
 
-[[多次执行该命令可以添加多个控制器，与每个控制器仅允许建立一个主连接。]{style="font-family:宋体"}]{#struct_0_x9563_11471_x2144080255}
+多次执行该命令可以添加多个控制器，与每个控制器仅允许建立一个主连接。
 
-[[主连接一般用于控制消息的处理（下发流表项、获取数据、信息上报等）。]{style="font-family:宋体"}]{#struct_0_x9563_11471_x465073865}
+主连接一般用于控制消息的处理（下发流表项、获取数据、信息上报等）。
 
-[[建议控制器的]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x9563_11471_x1000830597}[地址使用单播地址，否则交换机和控制器之间可能无法建立连接。]{style="font-family:宋体"}
+建议控制器的IP地址使用单播地址，否则交换机和控制器之间可能无法建立连接。
 
-[[建议源]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x9563_11471_215448991}[地址使用单播地址，且该]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址是]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例下一个端口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，否则交换机和控制器之间可能无法建立连接。]{style="font-family:宋体"}
+建议源IP地址使用单播地址，且该IP地址是OpenFlow实例下一个端口的IP地址，否则交换机和控制器之间可能无法建立连接。
 
-[[【举例】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_2006613551}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_630366997}[配置实例]{style="font-family:宋体"}[1]{lang="EN-US"}[的控制器]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1.1.1.1]{lang="EN-US"}[，端口号为]{style="font-family:宋体"}[6666]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置实例1的控制器1的IP地址为1.1.1.1，端口号为6666。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x9563_11471_x627892563}
+\<Sysname\> system-view
 
-[\[Sysname\] openflow instance 1]{lang="EN-US"}
+Sysname openflow instance 1
 
-[\[Sysname-of-inst-1\] controller 1 address ip 1.1.1.1 port 6666]{lang="EN-US"}
-:::
-
-::: {#-1596721595 .myid}
-[]{#struct_0_x9563_11471_x742096966}[]{#_Toc404798405}[]{#_Toc384108849}
+Sysname-of-inst-1 controller 1 address ip 1.1.1.1 port 6666
 
 **OpenFlow \-- OpenFlow配置命令 \-- controller auxiliary**
 
 ------------------------------------------------------------------------
 
-[**[controller auxiliary]{lang="EN-US"}**]{#struct_0_x9563_11471_x742096967}[命令用来配置辅助连接。]{style="font-family:宋体"}
+**[controller auxiliary**]命令用来配置辅助连接。
 
-[**[undo controller auxiliary]{lang="EN-US"}**]{#struct_0_x9563_11471_146560197}[命令用来取消配置。]{style="font-family:
-宋体"}
+**[undo controller auxiliary**]命令用来取消配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1500592098}
+【命令】
 
-[**[controller]{lang="EN-US"}**[ *id* **auxiliary** *auxiliary-id* **transport** { **tcp** \| **udp** \| **ssl** *ssl-policy-name* } \[ **address** { **ip** *ip-address* \| **ipv6** *ipv6-address* } \] \[ **port** *port-number* \]]{lang="EN-US"}]{#struct_0_x9563_11471_x707251253}
+**[controller**[ *id* **auxiliary** *auxiliary-id* **transport** { **tcp** \| **udp** \| **ssl** *ssl-policy-name* } [ **address** { **ip** *ip-address* \| **ipv6** *ipv6-address* } ]  **port** *port-number* ]]
 
-[**[undo]{lang="EN-US"}**[ **controller** *id* **auxiliary** *auxiliary-id*]{lang="EN-US"}]{#struct_0_x9563_11471_x1557633705}
+**[undo** **controller** *id* **auxiliary** *auxiliary-id*]
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_x9563_11471_1171099437}
+【缺省情况】
 
-[[没有配置辅助连接。]{style="font-family:宋体"}]{#struct_0_x9563_11471_907615125}
+没有配置辅助连接。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1641292198}
+【视图】
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_x742096968}[实例视图]{style="font-family:宋体"}
+OpenFlow实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_145970373}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x227031326}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_626881809}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x490958224}
+【参数】
 
-[**[controller ]{lang="EN-US"}***[id]{lang="EN-US"}*]{#struct_0_x9563_11471_x1999928912}[：实例下]{style="font-family:宋体"}[controller]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[controller ***id*]：实例下controller的编号，取值范围为0～63。
 
-[**[auxiliary ]{lang="EN-US"}***[auxiliary-id]{lang="EN-US"}*]{#struct_0_x9563_11471_1596555201}[：辅助连接编号]{style="font-family:宋体"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[auxiliary ***auxiliary-id*]：辅助连接编号，取值范围为1～255。
 
-[**[ssl ]{lang="EN-US"}**]{#struct_0_x9563_11471_x692865574}*[ssl-policy-name]{lang="IT"}*[：]{style="font-family:宋体"}[SSL]{lang="IT"}[策略的名称，为]{style="font-family:
-宋体"}[1]{lang="IT"}[～]{style="font-family:宋体"}[31]{lang="IT"}[字符的字符串]{style="font-family:宋体"}[，]{style="font-family:宋体"}[不区分大小写。]{style="font-family:宋体"}
+**[ssl **]*ssl-policy-name*：SSL策略的名称，为1～31字符的字符串，不区分大小写。
 
-[**[ip ]{lang="EN-US"}***[ip-address]{lang="EN-US"}*]{#struct_0_x9563_11471_41256056}[：控制器的]{style="font-family:
-宋体"}[IPv4]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[ip ***ip-address*]：控制器的IPv4地址。
 
-[**[ipv6 ]{lang="EN-US"}***[ipv6-address]{lang="EN-US"}*]{#struct_0_x9563_11471_1633273269}[：控制器的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[ipv6 ***ipv6-address*]：控制器的IPv6地址。
 
-[**[port ]{lang="IT"}**]{#struct_0_x9563_11471_x838170119}*[port-number]{lang="IT"}*[：]{style="font-family:
-宋体"}[控制器的端口号]{style="font-family:宋体"}[，]{style="font-family:
-宋体"}[取值范围为]{style="font-family:宋体"}[1]{lang="IT"}[～]{style="font-family:宋体"}[65535]{lang="IT"}[。]{style="font-family:宋体"}
+**[port **]*port-number*：控制器的端口号，取值范围为1～65535。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x9563_11471_411755025}
+【使用指导】
 
-[[OpenFlow]{lang="IT"}]{#struct_0_x9563_11471_1739780168}[通道可以由一个主连接和多个辅助连接组成。辅助连接用于提高控制器和]{style="font-family:宋体"}[OpenFlow]{lang="IT"}[交换机的通信能力。]{style="font-family:宋体"}
+OpenFlow通道可以由一个主连接和多个辅助连接组成。辅助连接用于提高控制器和OpenFlow交换机的通信能力。
 
-[[辅助连接命令行和主连接命令行不做额外的检查处理。如果配置冲突，辅助连接将无法建立。]{style="font-family:宋体"}]{#struct_0_x9563_11471_1596555200}
+辅助连接命令行和主连接命令行不做额外的检查处理。如果配置冲突，辅助连接将无法建立。
 
-[[辅助连接的目的地址和端口号可以和主连接不一致。目的地址和端口号未配置时，和主连接一致。]{style="font-family:宋体"}]{#struct_0_x9563_11471_x692800038}
+辅助连接的目的地址和端口号可以和主连接不一致。目的地址和端口号未配置时，和主连接一致。
 
-[[【举例】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_x1142151509}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_x605303867}[为实例]{style="font-family:宋体"}[1]{lang="EN-US"}[下编号为]{style="font-family:宋体"}[10]{lang="EN-US"}[控制器配置编号为]{style="font-family:宋体"}[1]{lang="EN-US"}[的辅助连接。]{style="font-family:宋体"}
+\# 为实例1下编号为10控制器配置编号为1的辅助连接。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x9563_11471_382434431}
+\<Sysname\> system-view
 
-[\[Sysname\] openflow instance 1]{lang="EN-US"}
+Sysname openflow instance 1
 
-[\[Sysname-of-inst-1\] controller 10 auxiliary 1 transport tcp]{lang="EN-US"}
-:::
-
-::: {#-164170884 .myid}
-[]{#_Toc404798406}[]{#struct_0_x9563_11471_x1626477809}[]{#_Toc348873554}[]{#_Toc328657561}
+Sysname-of-inst-1 controller 10 auxiliary 1 transport tcp
 
 **OpenFlow \-- OpenFlow配置命令 \-- controller connect interval**
 
 ------------------------------------------------------------------------
 
-[**[controller connect interval]{lang="EN-US"}**]{#struct_0_x9563_11471_1332588463}[命令用来配置]{style="font-family:
-宋体"}[OpenFlow]{lang="EN-US"}[实例与控制器重连尝试的时间间隔。]{style="font-family:宋体"}
+**[controller connect interval**]命令用来配置OpenFlow实例与控制器重连尝试的时间间隔。
 
-[**[undo controller connect interval]{lang="EN-US"}**]{#struct_0_x9563_11471_161170088}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo controller connect interval**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x418183989}
+【命令】
 
-[**[controller connect interval ]{lang="EN-US"}**]{#struct_0_x9563_11471_1826583617}*[interval-value]{lang="IT"}*
+**[controller connect interval **]*interval-value*
 
-[**[undo controller connect interval]{lang="EN-US"}**]{#struct_0_x9563_11471_1232113935}
+**[undo controller connect interval**]
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_x9563_11471_x157251178}
+【缺省情况】
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_784366917}[实例与控制器重连尝试的时间间隔为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+OpenFlow实例与控制器重连尝试的时间间隔为60秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1173766810}
+【视图】
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_x1586696119}[实例视图]{style="font-family:宋体"}
+OpenFlow实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_406962261}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_1726795280}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_134141365}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_499830450}
+【参数】
 
-[*[interval-value]{lang="IT"}*]{#struct_0_x9563_11471_312612343}[：重连]{style="font-family:宋体"}[尝试的时间间隔，取值范围为]{style="font-family:宋体"}[10]{lang="IT"}[～]{style="font-family:宋体"}[120]{lang="IT"}[，单位为秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+*[interval-value*]：重连尝试的时间间隔，取值范围为10～120，单位为秒。
 
-[[【举例】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_128354579}
+【举例】
 
-[[\# ]{lang="SV"}]{#struct_0_x9563_11471_1709227487}[配置实例]{style="font-family:宋体"}[1]{lang="SV"}[与控制器重连尝试的时间间隔]{style="font-family:
-宋体"}[为]{style="font-family:宋体"}[10]{lang="SV"}[秒。]{style="font-family:宋体"}
+\# 配置实例1与控制器重连尝试的时间间隔为10秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x9563_11471_x170098188}
+\<Sysname\> system-view
 
-[\[Sysname\] openflow instance 1]{lang="EN-US"}
+Sysname openflow instance 1
 
-[\[Sysname-of-inst-1\] controller connect interval 10]{lang="EN-US"}
-:::
-
-::: {#-386738565 .myid}
-[]{#_Toc404798407}[]{#struct_0_x9563_11471_1661033659}[]{#_Toc348873553}
+Sysname-of-inst-1 controller connect interval 10
 
 **OpenFlow \-- OpenFlow配置命令 \-- controller echo-request interval**
 
 ------------------------------------------------------------------------
 
-[**[controller echo-request interval]{lang="EN-US"}**]{#struct_0_x9563_11471_1726729744}[命令用来配置发送]{style="font-family:宋体"}[Echo request]{lang="EN-US"}[报文的时间间隔。]{style="font-family:宋体"}
+**[controller echo-request interval**]命令用来配置发送Echo request报文的时间间隔。
 
-[**[undo controller echo-request interval]{lang="EN-US"}**]{#struct_0_x9563_11471_1609321709}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo controller echo-request interval**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1224448167}
+【命令】
 
-[**[controller echo-request interval ]{lang="EN-US"}***[interval-value]{lang="EN-US"}*]{#struct_0_x9563_11471_x2043881422}
+**[controller echo-request interval ***interval-value*]
 
-[**[undo controller echo-request interval]{lang="EN-US"}**]{#struct_0_x9563_11471_62113604}
+**[undo controller echo-request interval**]
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_x9563_11471_370930816}
+【缺省情况】
 
-[[发送]{style="font-family:宋体"}[Echo request]{lang="EN-US"}]{#struct_0_x9563_11471_x983580708}[报文的时间间隔为]{style="font-family:宋体"}[5]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+发送Echo request报文的时间间隔为5秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1406682315}
+【视图】
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_1506687601}[实例视图]{style="font-family:宋体"}[/OpenFlow OAP]{lang="EN-US"}[实例视图]{style="font-family:宋体"}
+OpenFlow实例视图/OpenFlow OAP实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1726664208}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_1669488945}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x824660373}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x2146238053}
+【参数】
 
-[*[interval-value]{lang="EN-US"}*]{#struct_0_x9563_11471_718035054}[：发送]{style="font-family:宋体"}[Echo request]{lang="EN-US"}[报文的时间间隔，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[10]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[interval-value*]：发送Echo request报文的时间间隔，取值范围为1～10，单位为秒。
 
-[[【举例】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_x935961201}
+【举例】
 
-[[\# ]{lang="SV"}]{#struct_0_x9563_11471_x269390243}[配置实例]{style="font-family:宋体"}[1]{lang="SV"}[发送]{style="font-family:
-宋体"}[Echo request]{lang="EN-US"}[报文的时间间隔]{style="font-family:宋体"}[为]{style="font-family:宋体"}[10]{lang="SV"}[秒。]{style="font-family:
-宋体"}
+\# 配置实例1发送Echo request报文的时间间隔为10秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x9563_11471_1013194983}
+\<Sysname\> system-view
 
-[\[Sysname\] openflow instance 1]{lang="EN-US"}
+Sysname openflow instance 1
 
-[\[Sysname-of-inst-1\] controller echo-request interval 10]{lang="EN-US"}
-:::
-
-::: {#-391790199 .myid}
-[]{#_Toc404798408}[]{#struct_0_x9563_11471_1726598672}[]{#_Toc348873557}
+Sysname-of-inst-1 controller echo-request interval 10
 
 **OpenFlow \-- OpenFlow配置命令 \-- controller mode**
 
 ------------------------------------------------------------------------
 
-[**[controller mode]{lang="EN-US"}**]{#struct_0_x9563_11471_851630097}[命令用来配置实例内的多个]{style="font-family:宋体"}[控制器]{style="font-family:宋体"}[的连接模式。]{style="font-family:宋体"}
+**[controller mode**]命令用来配置实例内的多个控制器的连接模式。
 
-[**[undo controller mode]{lang="IT"}**]{#struct_0_x9563_11471_1872764689}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo controller mode**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1688402166}
+【命令】
 
-[**[controller mode]{lang="EN-US"}**[ { ]{lang="EN-US"}]{#struct_0_x9563_11471_x2137541522}**[multiple]{lang="IT"}**[ \| **single** }]{lang="EN-US"}
+**[controller mode****multiple**[ \| **single** }]
 
-[**[undo controller mode]{lang="EN-US"}**]{#struct_0_x9563_11471_x1488003580}
+**[undo controller mode**]
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_x9563_11471_1596046462}
+【缺省情况】]
 
-[[连接模式为]{style="font-family:宋体"}]{#struct_0_x9563_11471_1261847016}[Multiple]{lang="IT"}[。]{style="font-family:宋体"}
+连接模式为Multiple。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1162380032}
+【视图】
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_1726533136}[实例视图]{style="font-family:宋体"}
+OpenFlow实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1262653710}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_274968922}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x376024821}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1154339849}
+【参数】
 
-[**[multiple]{lang="EN-US"}**]{#struct_0_x9563_11471_909989229}[：多连接模式。]{style="font-family:宋体"}
+**[multiple**]：多连接模式。
 
-[**[single]{lang="EN-US"}**]{#struct_0_x9563_11471_404459006}[：单连接模式。]{style="font-family:宋体"}
+**[single**]：单连接模式。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x592826628}
+【使用指导】
 
-[[当连接模式是]{style="font-family:宋体"}]{#struct_0_x9563_11471_x425455648}[Single]{lang="IT"}[时，一次仅连接一个]{style="font-family:宋体"}[控制器]{style="font-family:宋体"}[，其它作为备份，仅当连接断开才根据]{style="font-family:宋体"}[ID]{lang="IT"}[顺序连接备份]{style="font-family:宋体"}[控制器]{style="font-family:宋体"}[，直到连接成功。]{style="font-family:宋体"}
+当连接模式是Single时，一次仅连接一个控制器，其它作为备份，仅当连接断开才根据ID顺序连接备份控制器，直到连接成功。
 
-[[当连接模式为]{style="font-family:宋体"}]{#struct_0_x9563_11471_1726467600}[Multiple]{lang="IT"}[时，同时连接所有]{style="font-family:宋体"}[控制器]{style="font-family:宋体"}[，]{style="font-family:宋体"}[当一个或者多个控制器失效或者连接断开时]{style="font-family:宋体"}[，]{style="font-family:宋体"}[仍然能保证]{style="font-family:宋体"}[OpenFlow]{lang="IT"}[交换机正常工作。]{style="font-family:宋体"}
+当连接模式为Multiple时，同时连接所有控制器，当一个或者多个控制器失效或者连接断开时，仍然能保证OpenFlow交换机正常工作。
 
-[[【举例】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_2031402688}
+【举例】
 
-[[\# ]{lang="IT"}]{#struct_0_x9563_11471_2040132172}[配置实例]{style="font-family:宋体"}[1]{lang="IT"}[的控制器连接模式为]{style="font-family:
-宋体"}[Single]{lang="IT"}[。]{style="font-family:宋体"}
+\# 配置实例1的控制器连接模式为Single。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x9563_11471_59264439}
+\<Sysname\> system-view
 
-[\[Sysname\] openflow instance 1]{lang="IT"}
+Sysname openflow instance 1
 
-[\[Sysname-of-inst-1\] controller mode single]{lang="IT"}
-:::
-
-::: {#1891831073 .myid}
-[]{#_Toc404798409}[]{#struct_0_x9563_11471_717523791}[]{#_Toc362963992}
+Sysname-of-inst-1 controller mode single
 
 **OpenFlow \-- OpenFlow配置命令 \-- datapath-id**
 
 ------------------------------------------------------------------------
 
-[**[datapath-id]{lang="EN-US"}**]{#struct_0_x9563_11471_x2088148411}[命令用来配置]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例的]{style="font-family:宋体"}[Datapath ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[datapath-id**]命令用来配置OpenFlow实例的Datapath ID。
 
-[**[undo datapath-id]{lang="EN-US"}**]{#struct_0_x9563_11471_x1383314844}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo datapath-id**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_717065040}
+【命令】
 
-[**[datapath-id ]{lang="EN-US"}***[id]{lang="EN-US"}*]{#struct_0_x9563_11471_x1076880805}
+**[datapath-id ***id*]
 
-[**[undo datapath-id]{lang="EN-US"}**]{#struct_0_x9563_11471_x1847528065}
+**[undo datapath-id**]
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_x9563_11471_x582587591}
+【缺省情况】
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_x1366515038}[实例的]{style="font-family:宋体"}[Datapath ID]{lang="EN-US"}[是由实例]{style="font-family:宋体"}[ID]{lang="EN-US"}[和设备桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}[组成，前]{style="font-family:宋体"}[16]{lang="EN-US"}[个比特是实例]{style="font-family:宋体"}[ID]{lang="EN-US"}[，后]{style="font-family:宋体"}[48]{lang="EN-US"}[个比特是设备桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}[。]{style="font-family:宋体"}
+OpenFlow实例的Datapath ID是由实例ID和设备桥MAC组成，前16个比特是实例ID，后48个比特是设备桥MAC。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_98018478}
+【视图】
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_716999504}[实例视图]{style="font-family:宋体"}[/OpenFlow OAP]{lang="EN-US"}[实例视图]{style="font-family:宋体"}
+OpenFlow实例视图/OpenFlow OAP实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1320124978}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_1594581336}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x1738480785}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x606587352}
+【参数】
 
-[*[id]{lang="EN-US"}*]{#struct_0_x9563_11471_717196112}[：]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例的]{style="font-family:宋体"}[Datapath ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[0xFFFFFFFFFFFFFFFF]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[id*]：OpenFlow实例的Datapath ID，取值范围为1～0xFFFFFFFFFFFFFFFF。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x294279215}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_232066063}[配置实例]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[Datapath ID]{lang="EN-US"}[为]{style="font-family:宋体"}[0x123456]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置实例1的Datapath ID为0x123456。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x9563_11471_1968842656}
+\<Sysname\> system-view
 
-[\[Sysname\] openflow instance 1]{lang="EN-US"}
+Sysname openflow instance 1
 
-[\[Sysname-of-inst-1\] datapath-id 123456]{lang="IT"}
-:::
-
-::: {#50529872 .myid}
-[]{#_Toc404798410}[]{#struct_0_x9563_11471_x359759935}[]{#_Toc384108854}[]{#_Toc377731832}
+Sysname-of-inst-1 datapath-id 123456
 
 **OpenFlow \-- OpenFlow配置命令 \-- default table-miss permit**
 
 ------------------------------------------------------------------------
 
-[**[default table-miss permit]{lang="EN-US"}**]{#struct_0_x9563_11471_x1152703764}[命令用来配置]{style="font-family:
-宋体"}[OpenFlow]{lang="EN-US"}[实例缺省的]{style="font-family:宋体"}[table miss ]{lang="EN-US"}[动作。]{style="font-family:宋体"}
+**[default table-miss permit**]命令用来配置OpenFlow实例缺省的table miss 动作。
 
-[**[undo default table-miss permit]{lang="EN-US"}**]{#struct_0_x9563_11471_554453172}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo default table-miss permit**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_84125651}
+【命令】
 
-[**[default table-miss permit]{lang="EN-US"}**]{#struct_0_x9563_11471_x1744284675}
+**[default table-miss permit**]
 
-[**[undo default table-miss permit]{lang="EN-US"}**]{#struct_0_x9563_11471_x985385555}
+**[undo default table-miss permit**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x359759936}
+【缺省情况】
 
-[[缺省]{style="font-family:宋体"}[table miss]{lang="EN-US"}]{#struct_0_x9563_11471_x1152769300}[动作为丢弃]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+缺省table miss动作为丢弃。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x357946598}
+【视图】
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_x859949227}[实例视图]{style="font-family:宋体"}[/OpenFlow OAP]{lang="EN-US"}[实例视图]{style="font-family:宋体"}
+OpenFlow实例视图/OpenFlow OAP实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_877404969}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_1389507875}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_673109147}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x359759937}
+【使用指导】
 
-[[如果配置了本命令，则实例下所有流表的缺省]{style="font-family:宋体"}[table miss]{lang="EN-US"}]{#struct_0_x9563_11471_x1152834836}[动作为走正常二三层转发；如果没有配置本命令，则实例下所有流表的缺省]{style="font-family:宋体"}[table miss]{lang="EN-US"}[动作为丢弃。]{style="font-family:宋体"}
+如果配置了本命令，则实例下所有流表的缺省table miss动作为走正常二三层转发；如果没有配置本命令，则实例下所有流表的缺省table miss动作为丢弃。
 
-[[【举例】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_287654072}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_395520167}[配置]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例]{style="font-family:宋体"}[1]{lang="EN-US"}[的缺省]{style="font-family:宋体"}[table miss]{lang="EN-US"}[动作。]{style="font-family:宋体"}
+\# 配置OpenFlow实例1的缺省table miss动作。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x9563_11471_220374959}
+\<Sysname\> system-view
 
-[\[Sysname\] openflow instance 1]{lang="EN-US"}
+Sysname openflow instance 1
 
-[\[Sysname-of-inst-1\] default table-miss permit]{lang="EN-US"}
-:::
-
-::: {#-1461383778 .myid}
-[]{#_Toc404798411}[]{#struct_0_x9563_11471_x12287628}[]{#_Toc348873549}
+Sysname-of-inst-1 default table-miss permit
 
 **OpenFlow \-- OpenFlow配置命令 \-- description**
 
 ------------------------------------------------------------------------
 
-[**[description]{lang="EN-US"}**]{#struct_0_x9563_11471_x1559881554}[命令用来配置]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例的描述信息。]{style="font-family:宋体"}
+**[description**]命令用来配置OpenFlow实例的描述信息。
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_x9563_11471_x1430518277}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo description**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1875986345}
+【命令】
 
-[**[description ]{lang="EN-US"}***[text]{lang="EN-US"}*]{#struct_0_x9563_11471_x1018826874}
+**[description ***text*]
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_x9563_11471_1726402064}
+**[undo description**]
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_x9563_11471_500112527}
+【缺省情况】
 
-[[没有配置]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_1372936649}[实例的描述信息。]{style="font-family:宋体"}
+没有配置OpenFlow实例的描述信息。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1372328058}
+【视图】
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_833524987}[实例视图]{style="font-family:宋体"}[/OpenFlow OAP]{lang="EN-US"}[实例视图]{style="font-family:宋体"}
+OpenFlow实例视图/OpenFlow OAP实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1841717026}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x583926672}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x180081023}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_215529635}
+【参数】
 
-[*[text]{lang="EN-US"}*]{#struct_0_x9563_11471_1726336528}[：]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例的描述信息，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[text*]：OpenFlow实例的描述信息，为1～255个字符的字符串，区分大小写。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1267944138}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_31008016}[配置实例]{style="font-family:宋体"}[1]{lang="EN-US"}[的描述信息为]{style="font-family:宋体"}[test-desc]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置实例1的描述信息为test-desc。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x9563_11471_627607678}
+\<Sysname\> system-view
 
-[\[Sysname\] openflow instance 1]{lang="EN-US"}
+Sysname openflow instance 1
 
-[\[Sysname-of-inst-1\] description test-desc]{lang="EN-US"}
-:::
-
-::: {#-176519058 .myid}
-[]{#_Toc404798412}[]{#struct_0_x9563_11471_x359759939}[]{#_Toc384108856}
+Sysname-of-inst-1 description test-desc
 
 **OpenFlow \-- OpenFlow配置命令 \-- display openflow auxiliary**
 
 ------------------------------------------------------------------------
 
-[**[display openflow auxiliary]{lang="EN-US"}**]{#struct_0_x9563_11471_x1153490196}[命令用来]{style="font-family:
-宋体"}[显示]{style="font-family:宋体"}[OpenFlow]{lang="IT"}[实例的辅助连接信息和收发的报文统计信息等]{style="font-family:宋体"}[。]{style="font-family:
-宋体"}
+**[display openflow auxiliary**]命令用来显示OpenFlow实例的辅助连接信息和收发的报文统计信息等。
 
-[[【命令】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_1390263908}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **openflow** **instance** *instance-id* **auxiliary** \[ *controller-id* \[ **auxiliary** *auxiliary-id* \] \]]{lang="EN-US"}]{#struct_0_x9563_11471_x118359266}
+**[display** **openflow** **instance** *instance-id* **auxiliary** [ *controller-id* [ **auxiliary** *auxiliary-id*  ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x359759940}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1152900379}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_629033825}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x1860201040}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x9563_11471_1328255218}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_243848784}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x9563_11471_x359759941}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1152965915}
+【参数】
 
-[**[instance]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x9563_11471_1914013925}*[instance-id]{lang="IT"}*[：]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[instance**]*instance-id*：OpenFlow实例号，取值范围为1～4094。
 
-[*[controller-id]{lang="EN-US"}*]{#struct_0_x9563_11471_x1500403882}[：控制器编号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[controller-id*]：控制器编号，取值范围为0～63。
 
-[**[auxiliary ]{lang="EN-US"}***[auxiliary-id]{lang="EN-US"}*]{#struct_0_x9563_11471_1504434808}[：辅助连接编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[auxiliary ***auxiliary-id*]：辅助连接编号，取值范围为1～255。
 
-[[【举例】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_289600977}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_720253632}[显示]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例]{style="font-family:宋体"}[100]{lang="EN-US"}[的控制器辅助连接信息。]{style="font-family:宋体"}
+\# 显示OpenFlow实例100的控制器辅助连接信息。
 
-[[\<Sysname\> display openflow instance 100 auxiliary]{lang="EN-US"}]{#struct_0_x9563_11471_x359759942}
+\<Sysname\> display openflow instance 100 auxiliary
 
-[Controller ID: 1    Auxiliary connection number: 2]{lang="EN-US"}
+Controller ID: 1    Auxiliary connection number: 2
 
-[ Auxiliary connection ID : 1]{lang="EN-US"}
+ Auxiliary connection ID : 1
 
-[  Controller IP address  : 192.168.49.48]{lang="EN-US"}
+  Controller IP address  : 192.168.49.48
 
-[  Controller port        : 6633]{lang="EN-US"}
+  Controller port        : 6633
 
-[  Connect type           : TCP]{lang="EN-US"}
+  Connect type           : TCP
 
-[  Connect state          : Established]{lang="EN-US"}
+  Connect state          : Established
 
-[  Packets sent           : 9]{lang="EN-US"}
+  Packets sent           : 9
 
-[  Packets received       : 9]{lang="EN-US"}
+  Packets received       : 9
 
-[  SSL policy             : \--]{lang="EN-US"}
+  SSL policy             : \--
 
-[ ]{lang="EN-US"}
+ Auxiliary connection ID : 2
 
-[ Auxiliary connection ID : 2]{lang="EN-US"}
+  Controller IP address  : 192.168.49.49
 
-[  Controller IP address  : 192.168.49.49]{lang="EN-US"}
+   Controller port       : 6633
 
-[   Controller port       : 6633]{lang="EN-US"}
+   Connect type          : TCP
 
-[   Connect type          : TCP]{lang="EN-US"}
+   Connect state         : Established
 
-[   Connect state         : Established]{lang="EN-US"}
+   Packets sent          : 9
 
-[   Packets sent          : 9]{lang="EN-US"}
+   Packets received      : 9
 
-[   Packets received      : 9]{lang="EN-US"}
+   SSL policy            : \--
 
-[   SSL policy            : \--]{lang="EN-US"}
+表1-1 display openflow auxiliary命令显示描述表
 
-[[表1-1 ]{lang="EN-US"}[display openflow auxiliary]{lang="EN-US"}]{#struct_0_x9563_11471_x1153031451}[命令显示描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1832450891}[[字段]{style="font-family:黑体"}]{#struct_0_x9563_11471_x359759943}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1153096987}
+Controller ID
 
-[[Controller ID]{lang="EN-US"}]{#struct_0_x9563_11471_x359759944}
+控制器ID
 
-[[控制器]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x9563_11471_x1152638235}
+Auxiliary connection number
 
-[[Auxiliary connection number]{lang="EN-US"}]{#struct_0_x9563_11471_1978892225}
+辅助连接总数量
 
-[[辅助连接总数量]{style="font-family:宋体"}]{#struct_0_x9563_11471_1978892224}
+Auxiliary connection ID
 
-[[Auxiliary connection ID]{lang="EN-US"}]{#struct_0_x9563_11471_x1896276681}
+辅助连接的ID
 
-[[辅助连接的]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x9563_11471_1978892223}
+Controller IP address
 
-[[Controller IP address]{lang="EN-US"}]{#struct_0_x9563_11471_x1896473289}
+已经配置在实例下的Controller的IP地址
 
-[[已经配置在实例下的]{style="font-family:宋体"}[Controller]{lang="EN-US"}]{#struct_0_x9563_11471_1978892222}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+Controller port
 
-[[Controller port]{lang="EN-US"}]{#struct_0_x9563_11471_x1896407753}
+当前连接Controller的TCP端口号
 
-[[当前连接]{style="font-family:宋体"}[Controller]{lang="EN-US"}]{#struct_0_x9563_11471_1978892221}[的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号]{style="font-family:宋体"}
+Connect type
 
-[[Connect type]{lang="EN-US"}]{#struct_0_x9563_11471_1978892220}
+连接类型，
 
-[[连接类型，]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1896538825}
+·TCP：使用TCP连接Controller
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TCP]{lang="EN-US"}]{#struct_0_x9563_11471_1978892219}[：使用]{lang="EN-US" style="font-family:宋体"}[TCP]{lang="EN-US"}[连接]{lang="EN-US" style="font-family:宋体"}[Controller]{lang="EN-US"}
+·SSL：使用SSL连接Controller
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SSL]{lang="EN-US"}]{#struct_0_x9563_11471_x1897128652}[：使用]{lang="EN-US" style="font-family:宋体"}[SSL]{lang="EN-US"}[连接]{lang="EN-US" style="font-family:宋体"}[Controller]{lang="EN-US"}
+·UDP：使用UDP连接Controller
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UDP]{lang="EN-US"}]{#struct_0_x9563_11471_1978892218}[：使用]{lang="EN-US" style="font-family:宋体"}[UDP]{lang="EN-US"}[连接]{lang="EN-US" style="font-family:宋体"}[Controller]{lang="EN-US"}
+Connect state
 
-[[Connect state]{lang="EN-US"}]{#struct_0_x9563_11471_x1897063116}
+连接状态：
 
-[[连接状态：]{style="font-family:宋体"}]{#struct_0_x9563_11471_1978892217}
+·Idle：未建立连接
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Idle]{lang="EN-US"}]{#struct_0_x9563_11471_1978892216}[：未建立连接]{lang="EN-US" style="font-family:宋体"}
+·Established：成功建立连接
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Established]{lang="EN-US"}]{#struct_0_x9563_11471_x1896145612}[：成功建立连接]{lang="EN-US" style="font-family:宋体"}
+Packets sent
 
-[[Packets sent]{lang="EN-US"}]{#struct_0_x9563_11471_22577089}
+Controller发送的报文的计数
 
-[[Controller]{lang="EN-US"}]{#struct_0_x9563_11471_921352652}[发送的报文的计数]{style="font-family:宋体"}
+Packets received
 
-[[Packets received]{lang="EN-US"}]{#struct_0_x9563_11471_22577088}
+Controller接收的报文的计数
 
-[[Controller]{lang="EN-US"}]{#struct_0_x9563_11471_x1034962484}[接收的报文的计数]{style="font-family:宋体"}
+SSL policy
 
-[[SSL policy]{lang="EN-US"}]{#struct_0_x9563_11471_22577087}
-
-[[用于]{style="font-family:宋体"}[SSL]{lang="EN-US"}]{#struct_0_x9563_11471_22577086}[连接的]{style="font-family:宋体"}[SSL]{lang="EN-US"}[策略的名称]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#1012948448 .myid}
-[]{#_Toc404798413}[]{#struct_0_x9563_11471_x1049046228}[]{#_Toc348873561}
+用于SSL连接的SSL策略的名称
 
 **OpenFlow \-- OpenFlow配置命令 \-- display openflow controller**
 
 ------------------------------------------------------------------------
 
-[**[display openflow controller]{lang="EN-US"}**]{#struct_0_x9563_11471_x1076159990}[命令用来]{style="font-family:
-宋体"}[显示]{style="font-family:宋体"}[OpenFlow]{lang="IT"}[实例对应的控制器信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[display openflow controller**]命令用来显示OpenFlow实例对应的控制器信息。
 
-[[【命令】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_95642142}
+【命令】
 
-[**[display openflow]{lang="EN-US"}**[ { **instance** *instance-id* { **controller** \[ *controller-id* \] \| **listened** } \| **oap-instance** **listened** }]{lang="EN-US"}]{#struct_0_x9563_11471_668866405}
+**[display openflow** { **instance** *instance-id* { **controller** [ *controller-id*  \| **listened** } \| **oap-instance** **listened** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1727319568}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x9563_11471_97537399}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1122023816}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x1335186088}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x9563_11471_x1745398635}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x1495724047}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x9563_11471_449739693}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_654847166}
+【参数】
 
-[*[instance-id]{lang="IT"}*]{#struct_0_x9563_11471_1385601537}[：]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例号]{style="font-family:宋体"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[instance-id*]：OpenFlow实例号，取值范围为1～4094。
 
-[*[controller-id]{lang="IT"}*]{#struct_0_x9563_11471_716933968}[：控制器的]{style="font-family:宋体"}[ID]{lang="IT"}[号，取值范围为]{style="font-family:宋体"}[0]{lang="IT"}[～]{style="font-family:宋体"}[63]{lang="IT"}[。如果未指定本参数，将显示实例下所有控制器的信息。]{style="font-family:
-宋体"}
+*[controller-id*]：控制器的ID号，取值范围为0～63。如果未指定本参数，将显示实例下所有控制器的信息。
 
-[**[listened]{lang="IT"}**]{#struct_0_x9563_11471_22577084}[：实例启动的服务端连接的客户端]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[listened**]：实例启动的服务端连接的客户端。
 
-[**[oap-instance]{lang="IT"}**]{#struct_0_x9563_11471_965982668}[：]{style="font-family:宋体"}[OpenFlow OAP]{lang="IT"}[实例。]{style="font-family:宋体"}
+**[oap-instance**]：OpenFlow OAP实例。
 
-[[【举例】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_1943539144}
+【举例】
 
-[[\# ]{lang="IT"}]{#struct_0_x9563_11471_980442274}[显示]{style="font-family:宋体"}[OpenFlow]{lang="IT"}[实例]{style="font-family:宋体"}[100]{lang="IT"}[对应的控制器信息。]{style="font-family:
-宋体"}
+\# 显示OpenFlow实例100对应的控制器信息。
 
-[[\<Sysname\> display openflow instance 100 controller]{lang="EN-US"}]{#struct_0_x9563_11471_2042582996}
+\<Sysname\> display openflow instance 100 controller
 
-[OpenFlow instance ID: 100]{lang="EN-US"}
+OpenFlow instance ID: 100
 
-[ Reconnect interval : 60 (s)]{lang="EN-US"}
+ Reconnect interval : 60 (s)
 
-[ Echo interval      : 5  (s)]{lang="EN-US"}
+ Echo interval      : 5  (s)
 
-[ ]{lang="EN-US"}
+ Controller ID           : 1
 
-[ Controller ID           : 1]{lang="EN-US"}
+ Controller IP address   : 192.168.49.49
 
-[ Controller IP address   : 192.168.49.49]{lang="EN-US"}
+ Controller port         : 6633
 
-[ Controller port         : 6633]{lang="EN-US"}
+ Local IP address        : 192.0.0.1
 
-[ Local IP address        : 192.0.0.1]{lang="EN-US"}
+ Local port              : 5566
 
-[ Local port              : 5566]{lang="EN-US"}
+ Controller role         : Equal
 
-[ Controller role         : Equal]{lang="EN-US"}
+ Connect type            : TCP
 
-[ Connect type            : TCP]{lang="EN-US"}
+ Connect state           : Established
 
-[ Connect state           : Established]{lang="EN-US"}
+ Packets sent            : 9
 
-[ Packets sent            : 9]{lang="EN-US"}
+ Packets received        : 9
 
-[ Packets received        : 9]{lang="EN-US"}
+ SSL policy              : \--
 
-[ SSL policy              : \--]{lang="EN-US"}
+ VRF name                : \--
 
-[ VRF name                : \--]{lang="EN-US"}
+表1-1 display openflow controller命令显示信息描述表
 
-[[表1-1 ]{lang="EN-US"}[display openflow controller]{lang="EN-US"}]{#struct_0_x9563_11471_x1212985799}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1141477450}[[字段]{style="font-family:黑体"}]{#struct_0_x9563_11471_1726795281}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x9563_11471_134075829}
+OpenFlow instance ID
 
-[[OpenFlow instance ID]{lang="EN-US"}]{#struct_0_x9563_11471_x1000896133}
+OpenFlow实例号
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_x744515674}[实例号]{style="font-family:宋体"}
+Reconnect interval
 
-[[Reconnect interval]{lang="EN-US"}]{#struct_0_x9563_11471_717589328}
+实例内所有控制器的断开重连时间间隔，单位为秒
 
-[[实例内所有控制器的断开重连时间间隔，单位为秒]{style="font-family:宋体"}]{#struct_0_x9563_11471_717523792}
+Echo interval
 
-[[Echo interval]{lang="EN-US"}]{#struct_0_x9563_11471_x2088148408}
+实例内所有控制器发送保活报文的时间间隔，单位为秒
 
-[[实例内所有控制器发送保活报文的时间间隔，单位为秒]{style="font-family:宋体"}]{#struct_0_x9563_11471_717065037}
+Controller ID
 
-[[Controller ID]{lang="EN-US"}]{#struct_0_x9563_11471_565187808}
+控制器的ID号
 
-[[控制器的]{style="font-family:宋体"}]{#struct_0_x9563_11471_917878644}[ID]{lang="IT"}[号]{style="font-family:宋体"}
+Controller IP address
 
-[[Controller IP address]{lang="EN-US"}]{#struct_0_x9563_11471_x457619727}
+OpenFlow实例对应的控制器的IP地址
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_x69197050}[实例对应的控制器的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+Controller port
 
-[[Controller port]{lang="EN-US"}]{#struct_0_x9563_11471_1726729745}
+当前连接控制器的TCP端口号
 
-[[当前连接控制器的]{style="font-family:宋体"}[TCP]{lang="EN-US"}]{#struct_0_x9563_11471_1609387245}[端口号]{style="font-family:宋体"}
+Local IP address
 
-[[Local IP address]{lang="EN-US"}]{#struct_0_x9563_11471_191659513}
+OpenFlow实例对应的控制器的源IP地址
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_191659519}[实例对应的控制器的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+Local port
 
-[[Local port]{lang="EN-US"}]{#struct_0_x9563_11471_191659518}
+当前连接控制器的源TCP端口号
 
-[[当前连接控制器的源]{style="font-family:宋体"}[TCP]{lang="EN-US"}]{#struct_0_x9563_11471_191659517}[端口号]{style="font-family:宋体"}
+Controller role
 
-[[Controller role]{lang="EN-US"}]{#struct_0_x9563_11471_1166901729}
+控制器的角色：
 
-[[控制器的角色：]{style="font-family:宋体"}]{#struct_0_x9563_11471_1120257854}
+·\--：未连接，未配置角色
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[\--]{lang="EN-US"}]{#struct_0_x9563_11471_x1016086646}[：未连接，未配置角色]{lang="EN-US" style="font-family:宋体"}
+·Equal：控制器的角色是Equal
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Equal]{lang="EN-US"}]{#struct_0_x9563_11471_1992357241}[：控制器的角色是]{lang="EN-US" style="font-family:宋体"}[Equal]{lang="EN-US"}
+·Master：控制器的角色是Master
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Master]{lang="EN-US"}]{#struct_0_x9563_11471_1726664209}[：控制器的角色是]{lang="EN-US" style="font-family:宋体"}[Master]{lang="EN-US"}
+·Slave：控制器的角色是Slave
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Slave]{lang="EN-US"}]{#struct_0_x9563_11471_1669554481}[：控制器的角色是]{lang="EN-US" style="font-family:宋体"}[Slave]{lang="EN-US"}
+Connect type
 
-[[Connect type]{lang="EN-US"}]{#struct_0_x9563_11471_1932404124}
+连接类型，
 
-[[连接类型，]{style="font-family:宋体"}]{#struct_0_x9563_11471_1042956845}
+·TCP：使用TCP连接控制器
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[TCP]{lang="EN-US"}]{#struct_0_x9563_11471_x1575450863}[：使用]{lang="EN-US" style="font-family:宋体"}[TCP]{lang="EN-US"}[连接控制器]{lang="EN-US" style="font-family:宋体"}
+·SSL：使用SSL连接控制器
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[SSL]{lang="EN-US"}]{#struct_0_x9563_11471_x1658993828}[：使用]{lang="EN-US" style="font-family:宋体"}[SSL]{lang="EN-US"}[连接控制器]{lang="EN-US" style="font-family:宋体"}
+Connect state
 
-[[Connect state]{lang="EN-US"}]{#struct_0_x9563_11471_1726598673}
+连接状态：
 
-[[连接状态：]{style="font-family:宋体"}]{#struct_0_x9563_11471_851564561}
+·Idle：未建立连接
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Idle]{lang="EN-US"}]{#struct_0_x9563_11471_x1962902437}[：未建立连接]{lang="EN-US" style="font-family:宋体"}
+·Established：成功建立连接
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Established]{lang="EN-US"}]{#struct_0_x9563_11471_x674535026}[：成功建立连接]{lang="EN-US" style="font-family:宋体"}
+Packets sent
 
-[[Packets sent]{lang="EN-US"}]{#struct_0_x9563_11471_x381722574}
+已经向控制器发送的报文的计数
 
-[[已经向控制器发送的报文的计数]{style="font-family:宋体"}]{#struct_0_x9563_11471_1726533137}
+Packets received
 
-[[Packets received]{lang="EN-US"}]{#struct_0_x9563_11471_1262588174}
+已经接收控制器的报文的计数
 
-[[已经接收控制器的报文的计数]{style="font-family:宋体"}]{#struct_0_x9563_11471_698003020}
+SSL policy
 
-[[SSL policy]{lang="EN-US"}]{#struct_0_x9563_11471_1917409773}
+用于SSL连接的SSL策略的名称
 
-[[用于]{style="font-family:宋体"}[SSL]{lang="EN-US"}]{#struct_0_x9563_11471_1726467601}[连接的]{style="font-family:宋体"}[SSL]{lang="EN-US"}[策略的名称]{style="font-family:宋体"}
+VRF name
 
-[[VRF name]{lang="EN-US"}]{#struct_0_x9563_11471_1324702695}
-
-[[控制器所在的]{style="font-family:宋体"}[VRF]{lang="EN-US"}]{#struct_0_x9563_11471_900734126}[名称]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#995838192 .myid}
-[]{#_Toc404798414}[]{#struct_0_x9563_11471_2031468224}[]{#_Toc348873560}
+控制器所在的VRF名称
 
 **OpenFlow \-- OpenFlow配置命令 \-- display openflow flow-table**
 
 ------------------------------------------------------------------------
 
-[**[display openflow flow-table]{lang="EN-US"}**]{#struct_0_x9563_11471_1985523192}[命令用来]{style="font-family:
-宋体"}[显示]{style="font-family:宋体"}[OpenFlow]{lang="IT"}[实例的流表信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[display openflow flow-table**]命令用来显示OpenFlow实例的流表信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1449065923}
+【命令】
 
-[**[display openflow instance]{lang="EN-US"}**[ { *instance-id* \| **oap-instance** } **flow-table** \[ *table-id* \]]{lang="EN-US"}]{#struct_0_x9563_11471_x760271174}
+**[display openflow instance**[ { *instance-id* \| **oap-instance** } **flow-table** [ *table-id* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1275357897}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1514745141}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1993991864}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_1970136190}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x9563_11471_1726402065}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_500178063}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x9563_11471_x164228208}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1801421878}
+【参数】
 
-[*[instance-id]{lang="SV" style="color:black"}*]{#struct_0_x9563_11471_2066966498}[：]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例号]{style="font-family:宋体"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[instance-id*]：OpenFlow实例号，取值范围为1～4094。
 
-[**[oap-instance]{lang="EN-US"}**]{#struct_0_x9563_11471_x1933738050}[：]{style="font-family:宋体"}[OpenFlow OAP]{lang="EN-US"}[实例。]{style="font-family:宋体"}
+**[oap-instance**]：OpenFlow OAP实例。
 
-[*[table-id]{lang="SV" style="color:black"}*]{#struct_0_x9563_11471_x643432037}[：]{style="font-family:宋体"}[流表]{style="font-family:宋体"}[ID]{lang="IT"}[，取值范围为]{style="font-family:
-宋体"}[0]{lang="IT"}[～]{style="font-family:宋体"}[254]{lang="IT"}[。如果未指定本参数，将显示所有流表的信息。]{style="font-family:宋体"}
+*[table-id*]：流表ID，取值范围为0～254。如果未指定本参数，将显示所有流表的信息。
 
-[[【举例】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_x1646581734}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_1238326668}[显示]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例]{style="font-family:宋体"}[100]{lang="EN-US"}[的所有流表信息。]{style="font-family:宋体"}
+\# 显示OpenFlow实例100的所有流表信息。
 
-[[\<Sysname\> display openflow instance 100 flow-table]{lang="EN-US"}]{#struct_0_x9563_11471_1727319569}
+\<Sysname\> display openflow instance 100 flow-table
 
-[Instance 100 flow table information:]{lang="EN-US"}
+Instance 100 flow table information:
 
-[ ]{lang="EN-US"}
+Table 0 information:
 
-[Table 0 information:]{lang="EN-US"}
+ Table type: MAC-IP, flow entry count: 1, total flow entry count: 2
 
-[ Table type: MAC-IP, flow entry count: 1, total flow entry count: 2]{lang="EN-US"}
+MissRule (default) Flow entry information:
 
-[ ]{lang="EN-US"}
+ cookie: 0x0, priority: 0, hard time: 0, idle time: 0, flags: reset_counts
 
-[MissRule (default) Flow entry information:]{lang="EN-US"}
+[ \|no_pkt_counts\|no_byte_counts, byte count: \--, packet count: \--]
 
-[ cookie: 0x0, priority: 0, hard time: 0, idle time: 0, flags: reset_counts]{lang="EN-US"}
+Match information: any
 
-[ \|no_pkt_counts\|no_byte_counts, byte count: \--, packet count: \--]{lang="EN-US"}
+Instruction information:
 
-[Match information: any]{lang="EN-US"}
+ Write actions:
 
-[Instruction information:]{lang="EN-US"}
+  Drop
 
-[ Write actions:]{lang="EN-US"}
+Flow entry rule 1 information:
 
-[  Drop]{lang="EN-US"}
+ cookie: 0x0, priority: 1, hard time: 0, idle time: 0, flags: none,
 
-[ ]{lang="EN-US"}
+ byte count: \--, packet count: \--
 
-[Flow entry rule 1 information:]{lang="EN-US"}
+Match information:
 
-[ cookie: 0x0, priority: 1, hard time: 0, idle time: 0, flags: none,]{lang="EN-US"}
+ Ethernet destination MAC address: 0000-0000-0001
 
-[ byte count: \--, packet count: \--]{lang="EN-US"}
+ Ethernet destination MAC address mask: ffff-ffff-ffff
 
-[Match information:]{lang="EN-US"}
+ VLAN ID: 100, mask: 0xfff
 
-[ Ethernet destination MAC address: 0000-0000-0001]{lang="EN-US"}
+Instruction information:
 
-[ Ethernet destination MAC address mask: ffff-ffff-ffff]{lang="EN-US"}
+ Write actions:
 
-[ VLAN ID: 100, mask: 0xfff]{lang="EN-US"}
+  Output interface: GE1/0/4
 
-[Instruction information:]{lang="EN-US"}
+ Write metadata/mask: 0x0000000000000001/0xffffffffffffffff
 
-[ Write actions:]{lang="EN-US"}
+ Goto table: 1
 
-[  Output interface: GE1/0/4]{lang="EN-US"}
+Table 1 information:
 
-[ Write metadata/mask: 0x0000000000000001/0xffffffffffffffff]{lang="EN-US"}
+ Table type: Extensibility, flow entry count: 2, total flow entry count: 2
 
-[ Goto table: 1]{lang="EN-US"}
+MissRule (default) Flow entry information:
 
-[ ]{lang="EN-US"}
+ cookie: 0x0, priority: 0, hard time: 0, idle time: 0, flags: none,
 
-[Table 1 information:]{lang="EN-US"}
+ byte count: \--, packet count: 60
 
-[ Table type: Extensibility, flow entry count: 2, total flow entry count: 2]{lang="EN-US"}
+Match information: any
 
-[ ]{lang="EN-US"}
+Instruction information:
 
-[MissRule (default) Flow entry information:]{lang="EN-US"}
+ Write actions:
 
-[ cookie: 0x0, priority: 0, hard time: 0, idle time: 0, flags: none,]{lang="EN-US"}
+  Drop
 
-[ byte count: \--, packet count: 60]{lang="EN-US"}
+Flow entry rule 1 information:
 
-[Match information: any]{lang="EN-US"}
+ cookie: 0x0, priority: 0, hard time: 0, idle time: 0, flags: flow_send_rem
 
-[Instruction information:]{lang="EN-US"}
+[ \|check_overlap, byte count: \--, packet count: 1]
 
-[ Write actions:]{lang="EN-US"}
+Match information:
 
-[  Drop]{lang="EN-US"}
+ Input interface: GE1/0/3
 
-[ ]{lang="EN-US"}
+ Ethernet source MAC address: 0000-0000-0001
 
-[Flow entry rule 1 information:]{lang="EN-US"}
+ Ethernet source MAC address mask: ffff-ffff-ffff
 
-[ cookie: 0x0, priority: 0, hard time: 0, idle time: 0, flags: flow_send_rem]{lang="EN-US"}
+Instruction information:
 
-[ \|check_overlap, byte count: \--, packet count: 1]{lang="EN-US"}
+ Set meter: 100
 
-[Match information:]{lang="EN-US"}
+ Apply actions:
 
-[ Input interface: GE1/0/3]{lang="EN-US"}
+  Output interface: GE1/0/4
 
-[ Ethernet source MAC address: 0000-0000-0001]{lang="EN-US"}
+ Write actions:
 
-[ Ethernet source MAC address mask: ffff-ffff-ffff]{lang="EN-US"}
+  Output interface: Controller, send length: 128 bytes
 
-[Instruction information:]{lang="EN-US"}
+表1-2 display openflow flow-table命令显示信息描述表
 
-[ Set meter: 100]{lang="EN-US"}
+字段
 
-[ Apply actions:]{lang="EN-US"}
+描述
 
-[  Output interface: GE1/0/4]{lang="EN-US"}
+Table information
 
-[ Write actions:]{lang="EN-US"}
+流表信息
 
-[  Output interface: Controller, send length: 128 bytes]{lang="EN-US"}
+Table type
 
-[[表1-2 ]{lang="EN-US"}[display openflow flow-table]{lang="EN-US"}]{#struct_0_x9563_11471_97471863}[命令显示信息描述表]{style="font-family:黑体"}
+流表类型：
 
-[]{#table_struct_0_1172186250}[[字段]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1858438816}
-:::
+·MAC-IP：MAC-IP流表
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1495238031}
+·Extensibility：Extensibility流表
 
-[[Table information]{lang="EN-US"}]{#struct_0_x9563_11471_1923436352}
+flow entry count
 
-[[流表信息]{style="font-family:宋体"}]{#struct_0_x9563_11471_1727254033}
+控制器下发的流表项个数
 
-[[Table type]{lang="EN-US"}]{#struct_0_x9563_11471_x1660643455}
+total flow entry count
 
-[[流表类型：]{style="font-family:宋体"}]{#struct_0_x9563_11471_1726795278}
+流表中流表项总个数
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[MAC-IP]{lang="EN-US"}]{#struct_0_x9563_11471_133617062}[：]{lang="EN-US" style="font-family:宋体"}[MAC-IP]{lang="EN-US"}[流表]{lang="EN-US" style="font-family:宋体"}
+Flow entry rule information
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Extensibility]{lang="EN-US"}]{#struct_0_x9563_11471_2073040122}[：]{lang="EN-US" style="font-family:宋体"}[Extensibility]{lang="EN-US"}[流表]{lang="EN-US" style="font-family:宋体"}
+流表项信息
 
-[[flow entry]{lang="EN-US"}]{#struct_0_x9563_11471_716737358}[ count]{lang="EN-US"}
+cookie
 
-[[控制器下发的流表项个数]{style="font-family:宋体"}]{#struct_0_x9563_11471_716933966}
+流表项cookie
 
-[[total flow entry]{lang="EN-US"}]{#struct_0_x9563_11471_x1384109944}[ count]{lang="EN-US"}
+priority
 
-[[流表中流表项总个数]{style="font-family:宋体"}]{#struct_0_x9563_11471_x909932457}
+流表项的优先级，数值越大，优先级越高
 
-[[Flow entry]{lang="EN-US"}[ rule]{lang="EN-US"}]{#struct_0_x9563_11471_4589710}[ information]{lang="EN-US"}
+hard time
 
-[[流表项信息]{style="font-family:宋体"}]{#struct_0_x9563_11471_1726729742}
+流表项的hard time超时时间，单位为秒，0代表永不超时。当定时器超时后就清除该流表项，无论该流表项是否匹配到数据流
 
-[[cookie]{lang="EN-US"}]{#struct_0_x9563_11471_2136856040}
+idle time
 
-[[流表项]{style="font-family:宋体"}[cookie]{lang="EN-US"}]{#struct_0_x9563_11471_x108061088}
+流表项的idle time超时时间，单位为秒，0代表永不超时。如果idle time超时时间内没有数据流匹配到该流表项，该流表项被清除
 
-[[priority]{lang="EN-US"}]{#struct_0_x9563_11471_1726664206}
+flags
 
-[[流表项的优先级，数值越大，优先级越高]{style="font-family:宋体"}]{#struct_0_x9563_11471_1669620017}
+流表项的标志位：
 
-[[hard time]{lang="EN-US"}]{#struct_0_x9563_11471_368661386}
+·flow_send_rem：发送流表项删除消息
 
-[[流表项的]{style="font-family:宋体"}[hard time]{lang="EN-US"}]{#struct_0_x9563_11471_x1875314020}[超时时间，单位为秒，]{style="font-family:宋体"}[0]{lang="EN-US"}[代表永不超时。当定时器超时后就清除该流表项，无论该流表项是否匹配到数据流]{style="font-family:宋体"}
+·check_overlap：检查流表项重复
 
-[[idle time]{lang="EN-US"}]{#struct_0_x9563_11471_x897092878}
+·reset_counts：重置流表项统计信息
 
-[[流表项的]{style="font-family:宋体"}]{#struct_0_x9563_11471_1726598670}[idle ]{lang="EN-US"}[time]{lang="EN-US"}[超时时间，单位为秒，]{style="font-family:宋体"}[0]{lang="EN-US"}[代表永不超时。如果]{style="font-family:宋体"}[idle ]{lang="EN-US"}[time]{lang="EN-US"}[超时时间内没有数据流匹配到该流表项，该流表项被清除]{style="font-family:
-  宋体"}
+·no_pkt_counts：不统计报文计数
 
-[[flags]{lang="EN-US"}]{#struct_0_x9563_11471_851761169}
+·no_byte_counts：不统计字节计数
 
-[[流表项的标志位：]{style="font-family:宋体"}]{#struct_0_x9563_11471_x2030589465}
+·none：无标志位
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[flow_send_rem]{lang="EN-US"}]{#struct_0_x9563_11471_x659581316}[：发送流表项删除消息]{lang="EN-US" style="font-family:宋体"}
+byte count
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[check_overlap]{lang="EN-US"}]{#struct_0_x9563_11471_1726533134}[：检查流表项重复]{lang="EN-US" style="font-family:宋体"}
+匹配当前流表项的字节计数
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[reset_counts]{lang="EN-US"}]{#struct_0_x9563_11471_1262522638}[：重置流表项统计信息]{lang="EN-US" style="font-family:宋体"}
+packet count
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[no_pkt_counts]{lang="EN-US"}]{#struct_0_x9563_11471_x483115938}[：不统计报文计数]{lang="EN-US" style="font-family:宋体"}
+匹配当前流表项的报文计数
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[no_byte_counts]{lang="EN-US"}]{#struct_0_x9563_11471_x335967379}[：不统计字节计数]{lang="EN-US" style="font-family:宋体"}
+Match information
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[none]{lang="EN-US"}]{#struct_0_x9563_11471_1726467598}[：无标志位]{lang="EN-US" style="font-family:宋体"}
+匹配规则信息（ 表1-3(?995838192#_Ref349812296)）
 
-[[byte count]{lang="EN-US"}]{#struct_0_x9563_11471_x307773751}
+Instruction information
 
-[[匹配当前流表项的字节计数]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1232306969}
+动作指令集信息
 
-[[packet count]{lang="EN-US"}]{#struct_0_x9563_11471_894098651}
+Set meter
 
-[[匹配当前流表项的报文计数]{style="font-family:宋体"}]{#struct_0_x9563_11471_1726402062}
+应用指定的Meter表
 
-[[Match information]{lang="EN-US"}]{#struct_0_x9563_11471_500505743}
+Write metadata
 
-[[匹配规则信息（]{style="font-family:宋体"}]{#struct_0_x9563_11471_1125871800}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-3]{lang="EN-US"}](?995838192#_Ref349812296)[）]{style="font-family:宋体"}
+写入元数据，元数据用来在不同流表间传递信息
 
-[[Instruction information]{lang="EN-US"}]{#struct_0_x9563_11471_1470867315}
+Write metadata mask
 
-[[动作指令集信息]{style="font-family:宋体"}]{#struct_0_x9563_11471_1726336526}
+元数据掩码
 
-[[Set meter]{lang="EN-US"}]{#struct_0_x9563_11471_1267813066}
+Goto table
 
-[[应用指定的]{style="font-family:宋体"}[Meter]{lang="EN-US"}]{#struct_0_x9563_11471_x352997221}[表]{style="font-family:宋体"}
+进入下一级流表
 
-[[Write metadata]{lang="EN-US"}]{#struct_0_x9563_11471_x1452490065}
+Clear actions
 
-[[写入元数据，元数据用来在不同流表间传递信息]{style="font-family:宋体"}]{#struct_0_x9563_11471_1727319566}
+清除动作集中的所有动作
 
-[[Write metadata mask]{lang="EN-US"}]{#struct_0_x9563_11471_97144183}
+Apply actions
 
-[[元数据掩码]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1110205660}
+立即执行动作序列中的动作（ 表1-4(?995838192#_Ref349812331)）
 
-[[Goto table]{lang="EN-US"}]{#struct_0_x9563_11471_1727254030}
+Write actions
 
-[[进入下一级流表]{style="font-family:宋体"}]{#struct_0_x9563_11471_2078040500}
+更改动作集中的所有动作（ 表1-4(?995838192#_Ref349812331)）
 
-[[Clear actions]{lang="EN-US"}]{#struct_0_x9563_11471_x1416681338}
+表1-3 流表项匹配规则信息
 
-[[清除动作集中的所有动作]{style="font-family:宋体"}]{#struct_0_x9563_11471_1899322126}
+匹配字段名称
 
-[[Apply actions]{lang="EN-US"}]{#struct_0_x9563_11471_1726795279}
+匹配掩码字段名称
 
-[[立即执行动作序列中的动作（]{style="font-family:宋体"}]{#struct_0_x9563_11471_133551526}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-4]{lang="EN-US"}](?995838192#_Ref349812331)[）]{style="font-family:宋体"}
+描述
 
-[[Write actions]{lang="EN-US"}]{#struct_0_x9563_11471_1060752747}
+Input interface
 
-[[更改动作集中的所有动作（]{style="font-family:宋体"}]{#struct_0_x9563_11471_1726729743}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-4]{lang="EN-US"}](?995838192#_Ref349812331)[）]{style="font-family:宋体"}
+无
 
-[ ]{lang="EN-US"}
+入端口（ 表1-5(?995838192#_Ref349812380)）
 
-[]{#struct_0_x9563_11471_1608994029}[[表1-3 ]{lang="EN-US"}[流表项匹配规则信息]{style="font-family:
-黑体"}]{#_Ref349812296}
+Physical input interface
 
-[]{#table_struct_0_1162917514}[[匹配字段名称]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1559300816}
+无
 
-[[匹配掩码字段名称]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1562828072}
+入物理端口
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x9563_11471_x80014893}
+Metadata
 
-[[Input interface]{lang="EN-US"}]{#struct_0_x9563_11471_1110021558}
+Metadata mask
 
-[[无]{style="font-family:宋体"}]{#struct_0_x9563_11471_x602369907}
+元数据/掩码
 
-[[入端口（]{style="font-family:宋体"}]{#struct_0_x9563_11471_1726664207}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-5]{lang="EN-US"}](?995838192#_Ref349812380)[）]{style="font-family:宋体"}
+Ethernet destination MAC address
 
-[[Physical input interface]{lang="EN-US"}]{#struct_0_x9563_11471_1669685553}
+Ethernet destination MAC address mask
 
-[[无]{style="font-family:宋体"}]{#struct_0_x9563_11471_x2002543987}
+以太网目的MAC地址/掩码
 
-[[入物理端口]{style="font-family:宋体"}]{#struct_0_x9563_11471_4654299}
+Ethernet source MAC address
 
-[[Metadata]{lang="EN-US"}]{#struct_0_x9563_11471_1649689840}
+Ethernet source MAC address mask
 
-[[Metadata mask]{lang="EN-US"}]{#struct_0_x9563_11471_943021314}
+以太网源MAC地址/掩码
 
-[[元数据]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x9563_11471_1726598671}[掩码]{style="font-family:宋体"}
+Ethernet type
 
-[[Ethernet destination MAC address]{lang="EN-US"}]{#struct_0_x9563_11471_851695633}
+无
 
-[[Ethernet destination MAC address]{lang="EN-US"}[ mask]{lang="EN-US"}]{#struct_0_x9563_11471_658770189}
+以太网类型
 
-[[以太网目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x9563_11471_x1233990279}[地址]{style="font-family:宋体"}[/]{lang="EN-US"}[掩码]{style="font-family:宋体"}
+VLAN ID
 
-[[Ethernet source MAC address]{lang="EN-US"}]{#struct_0_x9563_11471_x1837260400}
+mask
 
-[[Ethernet source MAC address ]{lang="EN-US"}[mask]{lang="EN-US"}]{#struct_0_x9563_11471_1726533135}
+VLAN ID/掩码
 
-[[以太网源]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x9563_11471_1262457102}[地址]{style="font-family:宋体"}[/]{lang="EN-US"}[掩码]{style="font-family:宋体"}
+VLAN PCP
 
-[[Ethernet type]{lang="EN-US"}]{#struct_0_x9563_11471_x1312193659}
+无
 
-[[无]{style="font-family:宋体"}]{#struct_0_x9563_11471_2007235174}
+VLAN优先级
 
-[[以太网类型]{style="font-family:宋体"}]{#struct_0_x9563_11471_x543334871}
+IP DSCP
 
-[[VLAN ID]{lang="EN-US"}]{#struct_0_x9563_11471_1726467599}
+无
 
-[[mask]{lang="EN-US"}]{#struct_0_x9563_11471_x307708215}
+DSCP（Differentiated Services Code Point，区分服务编码点）值
 
-[[VLAN ID/]{lang="EN-US"}]{#struct_0_x9563_11471_663590494}[掩码]{style="font-family:宋体"}
+IP ECN
 
-[[VLAN PCP]{lang="EN-US"}]{#struct_0_x9563_11471_x534239788}
+无
 
-[[无]{style="font-family:宋体"}]{#struct_0_x9563_11471_863310373}
+IP头的ECN（Explicit Congestion Notification，显式拥塞通知）值
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x9563_11471_1726402063}[优先级]{style="font-family:宋体"}
+IP protocol
 
-[[IP DSCP]{lang="EN-US"}]{#struct_0_x9563_11471_500571279}
+无
 
-[[无]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1581307312}
+IPv4或IPv6协议号
 
-[[DSCP]{lang="EN-US"}]{#struct_0_x9563_11471_1048304352}[（]{style="font-family:宋体"}[Differentiated Services Code Point]{lang="EN-US"}[，区分服务编码点）值]{style="font-family:
-  宋体"}
+IPv4 source address
 
-[[IP ECN]{lang="EN-US"}]{#struct_0_x9563_11471_1726336527}
+mask
 
-[[无]{style="font-family:宋体"}]{#struct_0_x9563_11471_1267747530}
+IPv4源地址/掩码
 
-[[IP]{lang="EN-US"}]{#struct_0_x9563_11471_x1137474645}[头的]{style="font-family:宋体"}[ECN]{lang="EN-US"}[（]{style="font-family:宋体"}[Explicit Congestion Notification]{lang="EN-US"}[，显式拥塞通知）值]{style="font-family:宋体"}
+IPv4 destination address
 
-[[IP protocol]{lang="EN-US"}]{#struct_0_x9563_11471_1454018307}
+mask
 
-[[无]{style="font-family:宋体"}]{#struct_0_x9563_11471_1727319567}
+IPv4目的地址/掩码
 
-[[IPv4]{lang="EN-US"}]{#struct_0_x9563_11471_97078647}[或]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[协议号]{style="font-family:宋体"}
+TCP source port
 
-[[IPv4 source address]{lang="EN-US"}]{#struct_0_x9563_11471_x540350583}
+mask
 
-[[mask]{lang="EN-US"}]{#struct_0_x9563_11471_x29028092}
+TCP源端口
 
-[[IPv4]{lang="EN-US"}]{#struct_0_x9563_11471_1727254031}[源地址]{style="font-family:宋体"}[/]{lang="EN-US"}[掩码]{style="font-family:宋体"}
+TCP destination port
 
-[[IPv4 destination address]{lang="EN-US"}]{#struct_0_x9563_11471_2077974964}
+mask
 
-[[mask]{lang="EN-US"}]{#struct_0_x9563_11471_x1295058525}
+TCP目的端口
 
-[[IPv4]{lang="EN-US"}]{#struct_0_x9563_11471_602299949}[目的地址]{style="font-family:宋体"}[/]{lang="EN-US"}[掩码]{style="font-family:宋体"}
+UDP source port
 
-[[TCP source port]{lang="EN-US"}]{#struct_0_x9563_11471_1726795276}
+mask
 
-[[mask]{lang="EN-US"}]{#struct_0_x9563_11471_134272422}
+UDP源端口
 
-[[TCP]{lang="EN-US"}]{#struct_0_x9563_11471_1149399307}[源端口]{style="font-family:宋体"}
+UDP destination port
 
-[[TCP destination port]{lang="EN-US"}]{#struct_0_x9563_11471_1726729740}
+mask
 
-[[mask]{lang="EN-US"}]{#struct_0_x9563_11471_1609059565}
+UDP目的端口
 
-[[TCP]{lang="EN-US"}]{#struct_0_x9563_11471_1200504162}[目的端口]{style="font-family:宋体"}
+SCTP source port
 
-[[UDP source port]{lang="EN-US"}]{#struct_0_x9563_11471_x318769747}
+mask
 
-[[mask]{lang="EN-US"}]{#struct_0_x9563_11471_1726664204}
+SCTP（Stream Control Transmission Protocol，流控制传输协议）源端口
 
-[[UDP]{lang="EN-US"}]{#struct_0_x9563_11471_1669751089}[源端口]{style="font-family:宋体"}
+SCTP destination port
 
-[[UDP destination port]{lang="EN-US"}]{#struct_0_x9563_11471_x1195128819}
+mask
 
-[[mask]{lang="EN-US"}]{#struct_0_x9563_11471_1726598668}
+SCTP目的端口
 
-[[UDP]{lang="EN-US"}]{#struct_0_x9563_11471_851236882}[目的端口]{style="font-family:宋体"}
+ICMPv4 type
 
-[[SCTP source port]{lang="EN-US"}]{#struct_0_x9563_11471_x632241180}
+无
 
-[[mask]{lang="EN-US"}]{#struct_0_x9563_11471_1726533132}
+ICMPv4类型
 
-[[SCTP]{lang="EN-US"}]{#struct_0_x9563_11471_1262391566}[（]{style="font-family:宋体"}[Stream Control Transmission Protocol]{lang="EN-US"}[，流控制传输协议）源端口]{style="font-family:
-  宋体"}
+ICMPv4 code
 
-[[SCTP destination port]{lang="EN-US"}]{#struct_0_x9563_11471_x1278687096}
+无
 
-[[mask]{lang="EN-US"}]{#struct_0_x9563_11471_1440339970}
+ICMPv4代号
 
-[[SCTP]{lang="EN-US"}]{#struct_0_x9563_11471_1726467596}[目的端口]{style="font-family:宋体"}
+ARP opcode
 
-[[ICMPv4 type]{lang="EN-US"}]{#struct_0_x9563_11471_x307642679}
+无
 
-[[无]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1612248977}
+ARP操作类型
 
-[[ICMPv4]{lang="EN-US"}]{#struct_0_x9563_11471_1726402060}[类型]{style="font-family:宋体"}
+ARP source IPv4 address
 
-[[ICMPv4 code]{lang="EN-US"}]{#struct_0_x9563_11471_500374671}
+mask
 
-[[无]{style="font-family:宋体"}]{#struct_0_x9563_11471_x298976060}
+ARP源IP地址
 
-[[ICMPv4]{lang="EN-US"}]{#struct_0_x9563_11471_1726336524}[代号]{style="font-family:宋体"}
+ARP target IPv4 address
 
-[[ARP opcode]{lang="EN-US"}]{#struct_0_x9563_11471_1267681994}
+mask
 
-[[无]{style="font-family:宋体"}]{#struct_0_x9563_11471_1727319564}
+ARP目标IP地址
 
-[[ARP]{lang="EN-US"}]{#struct_0_x9563_11471_97275255}[操作类型]{style="font-family:宋体"}
+ARP source MAC address
 
-[[ARP source IPv4 address]{lang="EN-US"}]{#struct_0_x9563_11471_1932576567}
+ARP source MAC address  mask
 
-[[mask]{lang="EN-US"}]{#struct_0_x9563_11471_1727254028}
+ARP源MAC地址
 
-[[ARP]{lang="EN-US"}]{#struct_0_x9563_11471_2077516211}[源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+ARP target MAC address
 
-[[ARP target IPv4 address]{lang="EN-US"}]{#struct_0_x9563_11471_308012106}
+ARP target MAC address mask
 
-[[mask]{lang="EN-US"}]{#struct_0_x9563_11471_1726795277}
+ARP目的MAC地址
 
-[[ARP]{lang="EN-US"}]{#struct_0_x9563_11471_134206886}[目标]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+IPv6 source address
 
-[[ARP source MAC address]{lang="EN-US"}]{#struct_0_x9563_11471_1928194228}
+IPv6 source address mask
 
-[[ARP source MAC address ]{lang="EN-US"}[ mask]{lang="EN-US"}]{#struct_0_x9563_11471_1726729741}
+IPv6源地址
 
-[[ARP]{lang="EN-US"}]{#struct_0_x9563_11471_1609125101}[源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+IPv6 destination address
 
-[[ARP target MAC address]{lang="EN-US"}]{#struct_0_x9563_11471_1726664205}
+IPv6 destination address mask
 
-[[ARP target MAC address]{lang="EN-US"}[ mask]{lang="EN-US"}]{#struct_0_x9563_11471_1669816625}
+IPv6目的地址
 
-[[ARP]{lang="EN-US"}]{#struct_0_x9563_11471_x826339737}[目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+IPv6 flow label
 
-[[IPv6 source address]{lang="EN-US"}]{#struct_0_x9563_11471_1726598669}
+mask
 
-[[IPv6 source address]{lang="EN-US"}[ mask]{lang="EN-US"}]{#struct_0_x9563_11471_851171346}
+IPv6流标签
 
-[[IPv6]{lang="EN-US"}]{#struct_0_x9563_11471_1726533133}[源地址]{style="font-family:宋体"}
+ICMPv6 type
 
-[[IPv6 destination address]{lang="EN-US"}]{#struct_0_x9563_11471_1262326030}
+无
 
-[[IPv6 ]{lang="EN-US"}[destination address mask]{lang="EN-US"}]{#struct_0_x9563_11471_x2069622892}
+ICMPv6类型
 
-[[IPv6]{lang="EN-US"}]{#struct_0_x9563_11471_1726467597}[目的地址]{style="font-family:宋体"}
+ICMPv6 code
 
-[[IPv6 flow label]{lang="EN-US"}]{#struct_0_x9563_11471_x307577143}
+无
 
-[[mask]{lang="EN-US"}]{#struct_0_x9563_11471_1726402061}
+ICMPv6代号
 
-[[IPv6]{lang="EN-US"}]{#struct_0_x9563_11471_500440207}[流标签]{style="font-family:宋体"}
+IPv6 ND target address
 
-[[ICMPv6 type]{lang="EN-US"}]{#struct_0_x9563_11471_x1175836103}
+无
 
-[[无]{style="font-family:宋体"}]{#struct_0_x9563_11471_1726336525}
+IPv6邻居发现协议报文的目的IP地址
 
-[[ICMPv6]{lang="EN-US"}]{#struct_0_x9563_11471_1267616458}[类型]{style="font-family:宋体"}
+IPv6 ND source MAC address
 
-[[ICMPv6 code]{lang="EN-US"}]{#struct_0_x9563_11471_1727319565}
+无
 
-[[无]{style="font-family:宋体"}]{#struct_0_x9563_11471_97209719}
+IPv6邻居发现协议报文的源MAC地址
 
-[[ICMPv6]{lang="EN-US"}]{#struct_0_x9563_11471_1727254029}[代号]{style="font-family:宋体"}
+IPv6 ND target MAC address
 
-[[IPv6 ND target address]{lang="EN-US"}]{#struct_0_x9563_11471_2077450675}
+无
 
-[[无]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1002088075}
+IPv6邻居发现协议的目的MAC地址
 
-[[IPv6]{lang="EN-US"}]{#struct_0_x9563_11471_x1198483774}[邻居发现协议报文的目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+MPLS label
 
-[[IPv6 ND source MAC address]{lang="EN-US"}]{#struct_0_x9563_11471_x498002661}
+无
 
-[[无]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1002153611}
+MPLS第一个头部的标签
 
-[[IPv6]{lang="EN-US"}]{#struct_0_x9563_11471_324428077}[邻居发现协议报文的源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+MPLS tc
 
-[[IPv6 ND target MAC address]{lang="EN-US"}]{#struct_0_x9563_11471_x1002219147}
+无
 
-[[无]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1785494108}
+MPLS第一个头部的TC（Traffic Class，流量等级）
 
-[[IPv6]{lang="EN-US"}]{#struct_0_x9563_11471_x1002284683}[邻居发现协议的目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+Tunnel ID
 
-[[MPLS label]{lang="EN-US"}]{#struct_0_x9563_11471_1757958750}
+mask
 
-[[无]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1002350219}
+与一个逻辑口相关的MetaData
 
-[[MPLS]{lang="EN-US"}]{#struct_0_x9563_11471_x161366951}[第一个头部的标签]{style="font-family:宋体"}
+IPv6 extension header
 
-[[MPLS tc]{lang="EN-US"}]{#struct_0_x9563_11471_x1002415755}
+mask
 
-[[无]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1171165484}
+IPv6扩展头
 
-[[MPLS]{lang="EN-US"}]{#struct_0_x9563_11471_x1002481291}[第一个头部的]{style="font-family:宋体"}[TC]{lang="EN-US"}[（]{style="font-family:宋体"}[Traffic Class]{lang="EN-US"}[，流量等级）]{style="font-family:宋体"}
+Output interface
 
-[[Tunnel ID]{lang="EN-US"}]{#struct_0_x9563_11471_x86152916}
+无
 
-[[mask]{lang="EN-US"}]{#struct_0_x9563_11471_x1002546827}
+出接口
 
-[[与一个逻辑口相关的]{style="font-family:宋体"}[MetaData]{lang="EN-US"}]{#struct_0_x9563_11471_602342620}
+VRF index
 
-[[IPv6 extension header]{lang="EN-US"}]{#struct_0_x9563_11471_x1001563787}
+无
 
-[[mask]{lang="EN-US"}]{#struct_0_x9563_11471_1828748740}
+VPN索引
 
-[[IPv6]{lang="EN-US"}]{#struct_0_x9563_11471_x1001629323}[扩展头]{style="font-family:宋体"}
+Fragment
 
-[[Output interface]{lang="EN-US"}]{#struct_0_x9563_11471_1238338373}
+无
 
-[[无]{style="font-family:宋体"}]{#struct_0_x9563_11471_1238534981}
+分片标志
 
-[[出接口]{style="font-family:宋体"}]{#struct_0_x9563_11471_1238666053}
+Physical output interface
 
-[[VRF index]{lang="EN-US"}]{#struct_0_x9563_11471_1238600517}
+无
 
-[[无]{style="font-family:宋体"}]{#struct_0_x9563_11471_1237748549}
+出物理端口
 
-[[VPN]{lang="EN-US"}]{#struct_0_x9563_11471_1237683013}[索引]{style="font-family:宋体"}
+CVLAN ID
 
-[[Fragment]{lang="EN-US"}]{#struct_0_x9563_11471_1238272836}
+mask
 
-[[无]{style="font-family:宋体"}]{#struct_0_x9563_11471_1238207300}
+CVLAN ID/掩码
 
-[[分片标志]{style="font-family:宋体"}]{#struct_0_x9563_11471_1238403908}
+表1-4 流表项动作类型
 
-[[Physical output interface]{lang="EN-US"}]{#struct_0_x9563_11471_1238338372}
+动作名称
 
-[[无]{style="font-family:宋体"}]{#struct_0_x9563_11471_1238469444}
+描述
 
-[[出物理端口]{style="font-family:宋体"}]{#struct_0_x9563_11471_1238666052}
+Drop
 
-[[CVLAN ID]{lang="EN-US"}]{#struct_0_x9563_11471_1238600516}
+丢弃报文（非协议Action）
 
-[[mask]{lang="EN-US"}]{#struct_0_x9563_11471_1237748548}
+Output interface
 
-[[CVLAN ID/]{lang="EN-US"}]{#struct_0_x9563_11471_1237683012}[掩码]{style="font-family:宋体"}
+从指定端口发送报文（ 表1-5(?995838192#_Ref349812380)）
 
-[ ]{lang="EN-US"}
+send length
 
-[]{#struct_0_x9563_11471_1237659720}[[表1-4 ]{lang="EN-US"}[流表项动作类型]{style="font-family:
-黑体"}]{#_Ref349812331}
+当output类型为Controller时，指定上送报文的字节长度
 
-[]{#table_struct_0_1179793162}[[动作名称]{style="font-family:黑体"}]{#struct_0_x9563_11471_346768660}
+Group
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x9563_11471_x2064578770}
+根据指定Group表处理报文
 
-[[Drop]{lang="EN-US"}]{#struct_0_x9563_11471_x1948102172}
+Set queue
 
-[[丢弃报文（非协议]{style="font-family:宋体"}[Action]{lang="EN-US"}]{#struct_0_x9563_11471_1957379363}[）]{style="font-family:宋体"}
+将流表项映射到指定队列ID
 
-[[Output interface]{lang="EN-US"}]{#struct_0_x9563_11471_x1002088074}
+Set field
 
-[[从指定端口发送报文（]{style="font-family:宋体"}]{#struct_0_x9563_11471_1530399581}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-5]{lang="EN-US"}](?995838192#_Ref349812380)[）]{style="font-family:宋体"}
+修改报文指定的域
 
-[[send length]{lang="EN-US"}]{#struct_0_x9563_11471_x839367310}
+Set MPLS TTL
 
-[[当]{style="font-family:宋体"}[output]{lang="EN-US"}]{#struct_0_x9563_11471_1593148514}[类型为]{style="font-family:宋体"}[Controller]{lang="EN-US"}[时，指定上送报文的字节长度]{style="font-family:宋体"}
+设定MPLS的TTL域值
 
-[[Group]{lang="EN-US"}]{#struct_0_x9563_11471_1947972532}
+Set IP TTL
 
-[[根据指定]{style="font-family:宋体"}[Group]{lang="EN-US"}]{#struct_0_x9563_11471_791435640}[表处理报文]{style="font-family:宋体"}
+设定IP头的TTL域值
 
-[[Set queue]{lang="EN-US"}]{#struct_0_x9563_11471_x1002153610}
+Push VLAN tag
 
-[[将流表项映射到指定队列]{style="font-family:宋体"}[ID ]{lang="EN-US"}]{#struct_0_x9563_11471_1890512018}
+添加一个新的VLAN Tag
 
-[[Set field]{lang="EN-US"}]{#struct_0_x9563_11471_x1642697003}
+Push MPLS tag
 
-[[修改报文指定的域]{style="font-family:宋体"}]{#struct_0_x9563_11471_960960199}
+添加一个新的MPLS Tag
 
-[[Set MPLS TTL]{lang="EN-US"}]{#struct_0_x9563_11471_x1166756381}
+Pop MPLS tag
 
-[[设定]{style="font-family:宋体"}[MPLS]{lang="EN-US"}]{#struct_0_x9563_11471_x1002219146}[的]{style="font-family:宋体"}[TTL]{lang="EN-US"}[域值]{style="font-family:宋体"}
+删除最外层的MPLS Tag
 
-[[Set IP TTL]{lang="EN-US"}]{#struct_0_x9563_11471_x219410167}
+Push PBB tag
 
-[[设定]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x9563_11471_460706467}[头的]{style="font-family:宋体"}[TTL]{lang="EN-US"}[域值]{style="font-family:宋体"}
+添加一个新的PBB服务Tag
 
-[[Push VLAN tag]{lang="EN-US"}]{#struct_0_x9563_11471_1802101071}
+Pop VLAN tag
 
-[[添加一个新的]{style="font-family:宋体"}[VLAN Tag]{lang="EN-US"}]{#struct_0_x9563_11471_x1348364183}
+删除最外层的VLAN Tag
 
-[[Push MPLS tag]{lang="EN-US"}]{#struct_0_x9563_11471_x1002284682}
+Pop PBB tag
 
-[[添加一个新的]{style="font-family:宋体"}[MPLS Tag]{lang="EN-US"}]{#struct_0_x9563_11471_191874809}
+删除最外层PBB服务Tag
 
-[[Pop MPLS tag]{lang="EN-US"}]{#struct_0_x9563_11471_x1498633835}
+Decrement MPLS TTL
 
-[[删除最外层的]{style="font-family:宋体"}[MPLS Tag]{lang="EN-US"}]{#struct_0_x9563_11471_882647639}
+MPLS的TTL减一
 
-[[Push PBB tag]{lang="EN-US"}]{#struct_0_x9563_11471_x1002350218}
+Decrement IP TTL
 
-[[添加一个新的]{style="font-family:宋体"}[PBB]{lang="EN-US"}]{#struct_0_x9563_11471_1404716990}[服务]{style="font-family:宋体"}[Tag]{lang="EN-US"}
+IP的TTL减一
 
-[[Pop VLAN tag]{lang="EN-US"}]{#struct_0_x9563_11471_1674710200}
+Copy TTL inwards
 
-[[删除最外层的]{style="font-family:宋体"}[VLAN Tag]{lang="EN-US"}]{#struct_0_x9563_11471_x365480795}
+将最外层的TTL拷贝到紧接最外层
 
-[[Pop PBB tag]{lang="EN-US"}]{#struct_0_x9563_11471_x1634000565}
+Copy TTL outwards
 
-[[删除最外层]{style="font-family:宋体"}[PBB]{lang="EN-US"}]{#struct_0_x9563_11471_x1002415754}[服务]{style="font-family:宋体"}[Tag]{lang="EN-US"}
+将紧接最外层的TTL拷贝到最外层
 
-[[Decrement MPLS TTL]{lang="EN-US"}]{#struct_0_x9563_11471_394918457}
+表1-5 流表项端口类型
 
-[[MPLS]{lang="EN-US"}]{#struct_0_x9563_11471_247490768}[的]{style="font-family:宋体"}[TTL]{lang="EN-US"}[减一]{style="font-family:宋体"}
+![说明](OpenFlow命令.files/image001.png)
 
-[[Decrement IP TTL]{lang="EN-US"}]{#struct_0_x9563_11471_1300327996}
+具体支持情况和设备的型号有关，请以设备的实际情况为准。
 
-[[IP]{lang="EN-US"}]{#struct_0_x9563_11471_x1002481290}[的]{style="font-family:宋体"}[TTL]{lang="EN-US"}[减一]{style="font-family:宋体"}
+端口名称
 
-[[Copy TTL inwards]{lang="EN-US"}]{#struct_0_x9563_11471_x1652236857}
+入端口
 
-[[将最外层的]{style="font-family:宋体"}[TTL]{lang="EN-US"}]{#struct_0_x9563_11471_468405530}[拷贝到紧接最外层]{style="font-family:宋体"}
+出端口
 
-[[Copy TTL outwards]{lang="EN-US"}]{#struct_0_x9563_11471_544647541}
+说明
 
-[[将紧接最外层的]{style="font-family:宋体"}[TTL]{lang="EN-US"}]{#struct_0_x9563_11471_x1002546826}[拷贝到最外层]{style="font-family:宋体"}
+In port
 
-[ ]{lang="EN-US"}
+不支持
 
-[]{#struct_0_x9563_11471_x963741321}[[表1-5 ]{lang="EN-US"}[流表项端口类型]{style="font-family:
-黑体"}]{#_Ref349812380}
+支持
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](OpenFlow命令.files/image001.png){border="0" width="62" height="25"}]{lang="EN-US"}]{#struct_0_x9563_11471_x53570044}
-:::
+报文从入接口转发
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[具体支持情况和设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x9563_11471_2062017209}
-:::
+Table
 
-[ ]{lang="EN-US"}
+不支持
 
-[]{#table_struct_0_1174920330}[[端口名称]{style="font-family:黑体"}]{#struct_0_x9563_11471_1177515912}
+支持
 
-[[入端口]{style="font-family:黑体"}]{#struct_0_x9563_11471_70292022}
+报文重新进入流表进行匹配
 
-[[出端口]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1001563786}
+Normal
 
-[[说明]{style="font-family:黑体"}]{#struct_0_x9563_11471_262664799}
+不支持
 
-[[In port]{lang="EN-US"}]{#struct_0_x9563_11471_1928246012}
+支持
 
-[[不支持]{style="font-family:宋体"}]{#struct_0_x9563_11471_x310162709}
+报文正常转发
 
-[[支持]{style="font-family:宋体"}]{#struct_0_x9563_11471_438692068}
+Flood
 
-[[报文从入接口转发]{style="font-family:宋体"}]{#struct_0_x9563_11471_x695836386}
+不支持
 
-[[Table]{lang="EN-US"}]{#struct_0_x9563_11471_x1001629322}
+支持
 
-[[不支持]{style="font-family:宋体"}]{#struct_0_x9563_11471_x328424221}
+报文广播发送
 
-[[支持]{style="font-family:宋体"}]{#struct_0_x9563_11471_1803890414}
+All
 
-[[报文重新进入流表进行匹配]{style="font-family:宋体"}]{#struct_0_x9563_11471_1789862625}
+不支持
 
-[[Normal]{lang="EN-US"}]{#struct_0_x9563_11471_1991609653}
+支持
 
-[[不支持]{style="font-family:宋体"}]{#struct_0_x9563_11471_914898675}
+报文从所有接口发送
 
-[[支持]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1002088077}
+Controller
 
-[[报文正常转发]{style="font-family:宋体"}]{#struct_0_x9563_11471_x35684360}
+支持
 
-[[Flood]{lang="EN-US"}]{#struct_0_x9563_11471_x2094492356}
+支持
 
-[[不支持]{style="font-family:宋体"}]{#struct_0_x9563_11471_899961221}
+报文上送控制器
 
-[[支持]{style="font-family:宋体"}]{#struct_0_x9563_11471_709396671}
+Local
 
-[[报文广播发送]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1002153613}
+支持
 
-[[All]{lang="EN-US"}]{#struct_0_x9563_11471_x838371337}
+支持
 
-[[不支持]{style="font-family:宋体"}]{#struct_0_x9563_11471_1595633050}
+报文上送本地CPU
 
-[[支持]{style="font-family:宋体"}]{#struct_0_x9563_11471_243333782}
+Any
 
-[[报文从所有接口发送]{style="font-family:宋体"}]{#struct_0_x9563_11471_111127080}
+不支持
 
-[[Controller]{lang="EN-US"}]{#struct_0_x9563_11471_x1002219149}
+不支持
 
-[[支持]{style="font-family:宋体"}]{#struct_0_x9563_11471_2059134494}
+接口通配描述，不能作为入接口以及出接口
 
-[[支持]{style="font-family:宋体"}]{#struct_0_x9563_11471_x717077046}
+（端口名称）
 
-[[报文上送控制器]{style="font-family:宋体"}]{#struct_0_x9563_11471_124405327}
+支持
 
-[[Local]{lang="EN-US"}]{#struct_0_x9563_11471_x1002284685}
+支持
 
-[[支持]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1730439492}
-
-[[支持]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1357583783}
-
-[[报文上送本地]{style="font-family:宋体"}[CPU]{lang="EN-US"}]{#struct_0_x9563_11471_x565733068}
-
-[[Any]{lang="EN-US"}]{#struct_0_x9563_11471_x1002350221}
-
-[[不支持]{style="font-family:宋体"}]{#struct_0_x9563_11471_194797873}
-
-[[不支持]{style="font-family:宋体"}]{#struct_0_x9563_11471_1925113734}
-
-[[接口通配描述，不能作为入接口以及出接口]{style="font-family:宋体"}]{#struct_0_x9563_11471_x815165039}
-
-[[（端口名称）]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1002415757}
-
-[[支持]{style="font-family:宋体"}]{#struct_0_x9563_11471_1961002398}
-
-[[支持]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1115734791}
-
-[[实例有效端口，包含物理接口和逻辑接口（如聚合接口）]{style="font-family:宋体"}]{#struct_0_x9563_11471_872300870}
-
-[ ]{lang="EN-US"}
-
-::: {#-1550264228 .myid}
-[]{#_Toc404798415}[]{#struct_0_x9563_11471_x2011818319}[]{#_Toc362963998}
+实例有效端口，包含物理接口和逻辑接口（如聚合接口）
 
 **OpenFlow \-- OpenFlow配置命令 \-- display openflow group**
 
 ------------------------------------------------------------------------
 
-[**[display openflow group]{lang="EN-US"}**]{#struct_0_x9563_11471_x1953896899}[命令用来显示]{style="font-family:宋体"}[OpenFlow]{lang="IT"}[实例的]{style="font-family:宋体"}[Group]{lang="EN-US"}[表项]{style="font-family:宋体"}[信息。]{style="font-family:宋体"}
+**[display openflow group**]命令用来显示OpenFlow实例的Group表项信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x2011883855}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **openflow** **instance** { *instance-id* \| **oap-instance** } **group** \[ *group-id* \]]{lang="EN-US"}]{#struct_0_x9563_11471_2043647705}
+**[display**[ **openflow** **instance** { *instance-id* \| **oap-instance** } **group** [ *group-id* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x2011687247}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x9563_11471_x540442603}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x2011752783}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x1071024105}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x9563_11471_x2012080463}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_1388466784}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x9563_11471_x2012145999}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1100653665}
+【参数】
 
-[*[instance-id]{lang="IT"}*]{#struct_0_x9563_11471_x2011949391}[：]{style="font-family:宋体"}[OpenFlow]{lang="IT"}[实例号]{style="font-family:宋体"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[instance-id*]：OpenFlow实例号，取值范围为1～4094。
 
-[**[oap-instance]{lang="EN-US"}**]{#struct_0_x9563_11471_x361922628}[：]{style="font-family:宋体"}[OpenFlow OAP]{lang="EN-US"}[实例。]{style="font-family:宋体"}
+**[oap-instance**]：OpenFlow OAP实例。
 
-[*[group-]{lang="IT"}*[id]{lang="EN-US"}]{#struct_0_x9563_11471_1976191328}[：]{style="font-family:宋体"}[Group ID]{lang="EN-US"}[，]{style="font-family:宋体"}[取值范围为]{style="font-family:宋体"}[0]{lang="IT"}[～]{style="font-family:宋体"}[0xffffff00]{lang="IT"}[。如果未指定本参数，将显示实例所有]{style="font-family:宋体"}[Group]{lang="EN-US"}[表项]{style="font-family:宋体"}[的信息。]{style="font-family:宋体"}
+*[group-*id]：Group ID，取值范围为0～0xffffff00。如果未指定本参数，将显示实例所有Group表项的信息。
 
-[[【举例】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_x2012014927}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_x2021620324}[显示]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例]{style="font-family:宋体"}[100]{lang="EN-US"}[的]{style="font-family:宋体"}[Group]{lang="EN-US"}[表项信息。]{style="font-family:宋体"}
+\# 显示OpenFlow实例100的Group表项信息。
 
-[[\<Sysname\> display openflow instance 100 group]{lang="EN-US"}]{#struct_0_x9563_11471_x2011294031}
+\<Sysname\> display openflow instance 100 group
 
-[Instance 100 group table information:]{lang="EN-US"}
+Instance 100 group table information:
 
-[ Group count: 2]{lang="EN-US"}
+ Group count: 2
 
-[ ]{lang="EN-US"}
+Group entry 103:
 
-[Group entry 103:]{lang="EN-US"}
+ Type: All, byte count: 55116, packet count: 401
 
-[ Type: All, byte count: 55116, packet count: 401]{lang="EN-US"}
+ Bucket 1 information:
 
-[ Bucket 1 information: ]{lang="EN-US"}
+Action count 1, watch port: any, watch group: any
 
-[Action count 1, watch port: any, watch group: any]{lang="EN-US"}
+Byte count 55116, packet count 401
 
-[Byte count 55116, packet count 401]{lang="EN-US"}
+  Output interface: BAGG100
 
-[ ]{lang="EN-US"}
+ Bucket 2 information:
 
-[  Output interface: BAGG100]{lang="EN-US"}
+ Action count 1, watch port: any, watch group: any
 
-[ Bucket 2 information:]{lang="EN-US"}
+  Byte count \--, packet count \--
 
-[ Action count 1, watch port: any, watch group: any]{lang="EN-US"}
+  Output interface: Controller, send length: 128 bytes
 
-[  Byte count \--, packet count \--]{lang="EN-US"}
+ Referencedinformation:
 
-[  Output interface: Controller, send length: 128 bytes]{lang="EN-US"}
+  Count: 3
 
-[ Referencedinformation:]{lang="EN-US"}
+  Flow table 0
 
-[  Count: 3]{lang="EN-US"}
+  Flow entry: 1, 2, 3
 
-[  Flow table 0]{lang="EN-US"}
+Group entry 104:
 
-[  Flow entry: 1, 2, 3]{lang="EN-US"}
+ Type: All, byte count: 0, packet count: 0
 
-[ ]{lang="EN-US"}
+ Bucket 1 information:
 
-[Group entry 104:]{lang="EN-US"}
+  Action count 1, watch port: any, watch group: any
 
-[ Type: All, byte count: 0, packet count: 0]{lang="EN-US"}
+  Byte count \--, packet count \--
 
-[ Bucket 1 information:]{lang="EN-US"}
+  Output interface: Controller, send length: 128 bytes
 
-[  Action count 1, watch port: any, watch group: any]{lang="EN-US"}
+ Referencedinformation:
 
-[  Byte count \--, packet count \--]{lang="EN-US"}
+  Count: 0
 
-[  Output interface: Controller, send length: 128 bytes]{lang="EN-US"}
+表1-6 display openflow group命令显示信息描述表
 
-[ Referencedinformation:]{lang="EN-US"}
+字段
 
-[  Count: 0]{lang="EN-US"}
+描述
 
-[[表1-6 ]{lang="EN-US"}[display openflow group]{lang="EN-US"}]{#struct_0_x9563_11471_x2011359567}[命令显示信息描述表]{style="font-family:黑体"}
+Group count
 
-[]{#table_struct_0_1405318402}[[字段]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1558558075}
-:::
+当前实例包含的Group表项的总个数
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x9563_11471_x445734375}
+Type
 
-[[Group count]{lang="EN-US"}]{#struct_0_x9563_11471_x445799911}
+当前Group表项的类型，
 
-[[当前实例包含的]{style="font-family:宋体"}[Group]{lang="EN-US"}]{#struct_0_x9563_11471_x445603303}[表项的总个数]{style="font-family:宋体"}
+·All：执行所有动作桶，用于组播或者广播
 
-[[Type]{lang="EN-US"}]{#struct_0_x9563_11471_x445668839}
+·Select：自动选择一个动作桶执行
 
-[[当前]{style="font-family:宋体"}[Group]{lang="EN-US"}]{#struct_0_x9563_11471_x445996519}[表项的类型，]{style="font-family:宋体"}
+·Indirect：始终执行固定的动作桶
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[All]{lang="EN-US"}]{#struct_0_x9563_11471_x446062055}[：执行所有动作桶，用于组播或者广播]{style="font-family:宋体"}
+·Fast failover：始终执行第一个活跃的动作桶
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Select]{lang="EN-US"}]{#struct_0_x9563_11471_x445865447}[：自动选择一个动作桶执行]{style="font-family:
-  宋体"}
+Bucket
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Indirect]{lang="EN-US"}]{#struct_0_x9563_11471_x445930983}[：始终执行固定的]{style="font-family:
-  宋体"}[动作桶]{lang="EN-US" style="font-family:宋体"}
+Group表项包含的bucket
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Fast failover]{lang="EN-US"}]{#struct_0_x9563_11471_x445210087}[：始终]{style="font-family:宋体"}[执行第一个活跃的动作桶]{lang="EN-US" style="font-family:宋体"}
+Action count
 
-[[Bucket]{lang="EN-US"}]{#struct_0_x9563_11471_x445275623}
+当前bucket包含的action的个数
 
-[[Group]{lang="EN-US"}]{#struct_0_x9563_11471_x445734374}[表项包含的]{style="font-family:宋体"}[bucket]{lang="EN-US"}
+Byte count
 
-[[Action count]{lang="EN-US"}]{#struct_0_x9563_11471_x445799910}
+group/bucket的字节统计计数，"\--"表示不支持
 
-[[当前]{style="font-family:宋体"}[bucket]{lang="EN-US"}]{#struct_0_x9563_11471_x445603302}[包含的]{style="font-family:宋体"}[action]{lang="EN-US"}[的个数]{style="font-family:宋体"}
+packet count
 
-[[Byte count]{lang="EN-US"}]{#struct_0_x9563_11471_x445668838}
+group/bucket的报文统计计数，"\--"表示不支持
 
-[[group/bucket]{lang="EN-US"}]{#struct_0_x9563_11471_x445996518}[的字节统计计数，"]{style="font-family:宋体"}[\--]{lang="EN-US"}["表示不支持]{style="font-family:宋体"}
+watch port
 
-[[packet count]{lang="EN-US"}]{#struct_0_x9563_11471_x862235118}
+影响bucket的live状态的端口
 
-[[group/bucket]{lang="EN-US"}]{#struct_0_x9563_11471_x446062054}[的报文统计计数，"]{style="font-family:宋体"}[\--]{lang="EN-US"}["表示不支持]{style="font-family:宋体"}
+watch group
 
-[[watch port]{lang="EN-US"}]{#struct_0_x9563_11471_x445865446}
+影响bucket的live状态的group ID
 
-[[影响]{style="font-family:宋体"}[bucket]{lang="EN-US"}]{#struct_0_x9563_11471_x445930982}[的]{style="font-family:宋体"}[live]{lang="EN-US"}[状态的端口]{style="font-family:宋体"}
+Output interface
 
-[[watch group]{lang="EN-US"}]{#struct_0_x9563_11471_x445210086}
+Group表项中包含的出端口
 
-[[影响]{style="font-family:宋体"}[bucket]{lang="EN-US"}]{#struct_0_x9563_11471_x445275622}[的]{style="font-family:宋体"}[live]{lang="EN-US"}[状态的]{style="font-family:宋体"}[group ID]{lang="EN-US"}
+Referenced information
 
-[[Output interface]{lang="EN-US"}]{#struct_0_x9563_11471_x445734377}
+Group表项被流表项引用的信息
 
-[[Group]{lang="EN-US"}]{#struct_0_x9563_11471_x445799913}[表项中包含的出端口]{style="font-family:宋体"}
+Count
 
-[[Referenced information]{lang="EN-US"}]{#struct_0_x9563_11471_x445603305}
+引用Group表项的流表项的总个数
 
-[[Group]{lang="EN-US"}]{#struct_0_x9563_11471_x445996521}[表项]{lang="EN-US" style="font-family:宋体"}[被流表项引用的信息]{style="font-family:宋体"}
+Flow table
 
-[[Count]{lang="EN-US"}]{#struct_0_x9563_11471_x862693873}
+引用Group表项的流表项所在的流表ID
 
-[[引用]{style="font-family:宋体"}[Group]{lang="EN-US"}]{#struct_0_x9563_11471_x446062057}[表项的流表项的总个数]{style="font-family:宋体"}
+Flow entry
 
-[[Flow table]{lang="EN-US"}]{#struct_0_x9563_11471_x445865449}
-
-[[引用]{style="font-family:宋体"}[Group]{lang="EN-US"}]{#struct_0_x9563_11471_x445930985}[表项的流表项所在的流表]{style="font-family:宋体"}[ID]{lang="EN-US"}
-
-[[Flow entry]{lang="EN-US"}]{#struct_0_x9563_11471_x445210089}
-
-[[引用]{style="font-family:宋体"}[Group]{lang="EN-US"}]{#struct_0_x9563_11471_x445275625}[表项的流表项]{style="font-family:宋体"}[ID]{lang="EN-US"}[列表]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1593445552 .myid}
-[]{#_Toc404798416}[]{#struct_0_x9563_11471_x1002481293}[]{#_Toc348873559}
+引用Group表项的流表项ID列表
 
 **OpenFlow \-- OpenFlow配置命令 \-- display openflow instance**
 
 ------------------------------------------------------------------------
 
-[**[display openflow instance]{lang="EN-US"}**]{#struct_0_x9563_11471_1076646498}[命令用来显示]{style="font-family:
-宋体"}[OpenFlow]{lang="IT"}[实例的详细信息。]{style="font-family:宋体"}
+**[display openflow instance**]命令用来显示OpenFlow实例的详细信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_664858734}
+【命令】
 
-[**[display openflow instance ]{lang="EN-US"}**[\[ *instance-id* \| **oap-instance** \]]{lang="EN-US"}]{#struct_0_x9563_11471_1039457920}
+**[display openflow instance **[[ *instance-id* \| **oap-instance** ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x2050050360}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x9563_11471_860446962}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1255778685}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_1214642565}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x9563_11471_x1002546829}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_1052681314}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x9563_11471_436711475}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1322970929}
+【参数】
 
-[*[instance-id]{lang="IT"}*]{#struct_0_x9563_11471_97252421}[：]{style="font-family:宋体"}[OpenFlow]{lang="IT"}[实例号]{style="font-family:宋体"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果未指定本参数，将显示所有实例的详细信息]{style="font-family:宋体"}[。]{style="font-family:
-宋体"}
+*[instance-id*]：OpenFlow实例号，取值范围为1～4094。如果未指定本参数，将显示所有实例的详细信息。
 
-[**[oap-instance]{lang="IT"}**]{#struct_0_x9563_11471_1976729536}[：]{style="font-family:宋体"}[OpenFlow OAP]{lang="IT"}[实例。]{style="font-family:宋体"}
+**[oap-instance**]：OpenFlow OAP实例。
 
-[[【举例】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_x1106112957}
+【举例】
 
-[[\# ]{lang="IT"}]{#struct_0_x9563_11471_x938973077}[显示所有]{style="font-family:宋体"}[OpenFlow]{lang="IT"}[实例的详细信息。]{style="font-family:宋体"}
+\# 显示所有OpenFlow实例的详细信息。
 
-[[\<Sysname\> display openflow instance]{lang="IT"}]{#struct_0_x9563_11471_x1001563789}
+\<Sysname\> display openflow instance
 
-[Instance 100 verbose information:]{lang="IT"}
+Instance 100 verbose information:
 
-[ ]{lang="IT"}
+Configuration information:
 
-[Configuration information:]{lang="EN-US"}
+ Description   : test-desc
 
-[ Description   : test-desc]{lang="EN-US"}
+ Active status : Active
 
-[ Active status : Active]{lang="EN-US"}
+ Inactive configuration:
 
-[ Inactive configuration:]{lang="EN-US"}
+  Classification: VLAN, total VLANs(1)
 
-[  Classification: VLAN, total VLANs(1)]{lang="EN-US"}
+   3
 
-[   3]{lang="EN-US"}
+  Flow table:
 
-[  Flow table:]{lang="EN-US"}
+   Table ID(type): 0(MAC-IP)
 
-[   Table ID(type): 0(MAC-IP)]{lang="EN-US"}
+   Table ID(type): 1(Extensibility)
 
-[   Table ID(type): 1(Extensibility)]{lang="EN-US"}
+ Active configuration:
 
-[ Active configuration:]{lang="EN-US"}
+  Classification: VLAN, loosen mode, total VLANs(1)
 
-[  Classification: VLAN, loosen mode, total VLANs(1)]{lang="EN-US"}
+   2
 
-[   2]{lang="EN-US"}
+  In-band management VLAN, total VLANs(0)
 
-[  In-band management VLAN, total VLANs(0)]{lang="EN-US"}
+   Empty VLAN
 
-[   Empty VLAN]{lang="EN-US"}
+  Connect mode: Multiple
 
-[  Connect mode: Multiple]{lang="EN-US"}
+  MAC-address learning: Disabled
 
-[  MAC-address learning: Disabled]{lang="EN-US"}
+  Flow table:
 
-[  Flow table:]{lang="EN-US"}
+   Table ID(type): 0(MAC-IP), count: 0
 
-[   Table ID(type): 0(MAC-IP), count: 0]{lang="EN-US"}
+  Flow-entry max-limit: 65535
 
-[  Flow-entry max-limit: 65535]{lang="EN-US"}
+  Datapath ID: 0x0000001234567891
 
-[  Datapath ID: 0x0000001234567891]{lang="EN-US"}
+  Default table-miss: Drop
 
-[  Default table-miss: Drop]{lang="EN-US"}
+  Forbidden port: None
 
-[  Forbidden port: None]{lang="EN-US"}
+Port information:
 
-[Port information:]{lang="EN-US"}
+ GigabitEthernet1/0/3
 
-[ GigabitEthernet1/0/3]{lang="EN-US"}
+Active channel information:
 
-[Active channel information:]{lang="EN-US"}
+ Controller 1 IP address: 192.168.49.49  port: 6633
 
-[ Controller 1 IP address: 192.168.49.49  port: 6633]{lang="EN-US"}
+ Controller 2 IP address: 192.168.43.49  port: 6633
 
-[ Controller 2 IP address: 192.168.43.49  port: 6633]{lang="EN-US"}
+Instance 200 verbose information:
 
-[ ]{lang="EN-US"}
+Configuration information:
 
-[Instance 200 verbose information:]{lang="EN-US"}
+ Description   : test
 
-[ ]{lang="EN-US"}
+ Active status : Active
 
-[Configuration information:]{lang="EN-US"}
+ Inactive configuration:
 
-[ Description   : test]{lang="EN-US"}
+  Classification: VLAN, total VLANs(1)
 
-[ Active status : Active]{lang="EN-US"}
+   1
 
-[ Inactive configuration:]{lang="EN-US"}
+  Flow table:
 
-[  Classification: VLAN, total VLANs(1)]{lang="EN-US"}
+   Table ID(type): 0(MAC-IP)
 
-[   1]{lang="EN-US"}
+   Table ID(type): 1(Extensibility)
 
-[  Flow table:]{lang="EN-US"}
+ Active configuration:
 
-[   Table ID(type): 0(MAC-IP)]{lang="EN-US"}
+  Classification: VLAN, total VLANs(1)
 
-[   Table ID(type): 1(Extensibility)]{lang="EN-US"}
+   4
 
-[ Active configuration:]{lang="EN-US"}
+  In-band management VLAN, total VLANs(0)
 
-[  Classification: VLAN, total VLANs(1)]{lang="EN-US"}
+   Empty VLAN
 
-[   4]{lang="EN-US"}
+  Connect mode: Multiple
 
-[  In-band management VLAN, total VLANs(0)]{lang="EN-US"}
+  MAC-address learning: Disabled
 
-[   Empty VLAN]{lang="EN-US"}
+  Flow table:
 
-[  Connect mode: Multiple]{lang="EN-US"}
+   Table ID(type): 0(MAC-IP), count: 0
 
-[  MAC-address learning: Disabled]{lang="EN-US"}
+  Flow-entry max-limit: 65535
 
-[  Flow table:]{lang="EN-US"}
+  Datapath ID: 0x0000001234567890
 
-[   Table ID(type): 0(MAC-IP), count: 0]{lang="EN-US"}
+  Default table-miss: Permit
 
-[  Flow-entry max-limit: 65535]{lang="EN-US"}
+  Forbidden port: VLAN interface
 
-[  Datapath ID: 0x0000001234567890]{lang="EN-US"}
+Port information:
 
-[  Default table-miss: Permit]{lang="EN-US"}
+ GigabitEthernet0/1/3
 
-[  Forbidden port: VLAN interface]{lang="EN-US"}
+Active channel information:
 
-[Port information:]{lang="EN-US"}
+ Fail-open mode: Secure
 
-[ GigabitEthernet0/1/3]{lang="EN-US"}
+Instance 300 verbose information:
 
-[Active channel information:]{lang="EN-US"}
+Configuration information:
 
-[ Fail-open mode: Secure]{lang="EN-US"}
+ Description   : test
 
-[ ]{lang="EN-US"}
+ Active status : Active
 
-[Instance 300 verbose information:]{lang="EN-US"}
+ Inactive configuration:
 
-[ ]{lang="EN-US"}
+  None
 
-[Configuration information:]{lang="EN-US"}
+ Active configuration:
 
-[ Description   : test]{lang="EN-US"}
+  Classification: VLAN, total VLANs(4)
 
-[ Active status : Active]{lang="EN-US"}
+   8, 10, 12, 14
 
-[ Inactive configuration:]{lang="EN-US"}
+  In-band management VLAN, total VLANs(1)
 
-[  None]{lang="EN-US"}
+   10
 
-[ Active configuration:]{lang="EN-US"}
+  Connect mode: Multiple
 
-[  Classification: VLAN, total VLANs(4)]{lang="EN-US"}
+  MAC-address learning: Disabled
 
-[   8, 10, 12, 14]{lang="EN-US"}
+  Flow table:
 
-[  In-band management VLAN, total VLANs(1)]{lang="EN-US"}
+   Table ID(type): 0(MAC-IP), count: 0
 
-[   10]{lang="EN-US"}
+  Flow-entry max-limit: 65535
 
-[  Connect mode: Multiple]{lang="EN-US"}
+  Datapath ID: 0x0000001234567801
 
-[  MAC-address learning: Disabled]{lang="EN-US"}
+  Default table-miss: Drop
 
-[  Flow table:]{lang="EN-US"}
+  Forbidden port: None
 
-[   Table ID(type): 0(MAC-IP), count: 0]{lang="EN-US"}
+Port information:
 
-[  Flow-entry max-limit: 65535]{lang="EN-US"}
+ GigabitEthernet0/1/3
 
-[  Datapath ID: 0x0000001234567801]{lang="EN-US"}
+Active channel information:
 
-[  Default table-miss: Drop]{lang="EN-US"}
+ Failopen mode: Secure
 
-[  Forbidden port: None]{lang="EN-US"}
+Instance 400 information:
 
-[Port information:]{lang="EN-US"}
+Configuration information:
 
-[ GigabitEthernet0/1/3]{lang="EN-US"}
+ Description   : \--
 
-[Active channel information:]{lang="EN-US"}
+ Active status : inactive
 
-[ Failopen mode: Secure]{lang="EN-US"}
+ Inactive configuration:
 
-[ ]{lang="EN-US"}
+  Classification: Port
 
-[Instance 400 information:]{lang="EN-US"}
+  Port configuration information:
 
-[ ]{lang="EN-US"}
+   GigabitEthernet2/0/1
 
-[Configuration information:]{lang="EN-US"}
+   GigabitEthernet2/0/2
 
-[ Description   : \--]{lang="EN-US"}
+   GigabitEthernet2/0/3
 
-[ Active status : inactive]{lang="EN-US"}
+  In-band management VLAN, total VLANs(0)
 
-[ Inactive configuration:]{lang="EN-US"}
+   empty VLAN
 
-[  Classification: Port]{lang="IT"}
+  Connect mode: multiple
 
-[  Port configuration information:]{lang="IT"}
+  MAC address learning: Enabled
 
-[   GigabitEthernet2/0/1]{lang="IT"}
+  Flow table:
 
-[   GigabitEthernet2/0/2]{lang="IT"}
+   Table ID(type): 0(Extensibility)
 
-[   GigabitEthernet2/0/3]{lang="IT"}
+  Flow-entry max-limit: 65535
 
-[  In-band management VLAN, total VLANs(0)]{lang="EN-US"}
+  Datapath ID: 0x000100e001000000
 
-[   empty VLAN]{lang="EN-US"}
+Active configuration:
 
-[  Connect mode: multiple]{lang="EN-US"}
+  none
 
-[  MAC address learning: Enabled]{lang="EN-US"}
+Instance 500 information:
 
-[  Flow table:]{lang="EN-US"}
+Configuration information:
 
-[   Table ID(type): 0(Extensibility)]{lang="EN-US"}
+ Description   : \--
 
-[  Flow-entry max-limit: 65535 ]{lang="EN-US"}
+ Active status : active
 
-[  Datapath ID: 0x000100e001000000]{lang="EN-US"}
+ Inactive configuration:
 
-[Active configuration:]{lang="EN-US"}
+  none
 
-[  none]{lang="EN-US"}
+ Active configuration:
 
-[ ]{lang="EN-US"}
+  Classification: Port
 
-[Instance 500 information:]{lang="EN-US"}
+  In-band management VLAN, total VLANs(0)
 
-[ ]{lang="EN-US"}
+   empty VLAN
 
-[Configuration information: ]{lang="EN-US"}
+  Connect mode: multiple
 
-[ Description   : \--]{lang="EN-US"}
+  MAC address learning: Enabled
 
-[ Active status : active]{lang="EN-US"}
+  Flow table:
 
-[ Inactive configuration:]{lang="EN-US"}
+   Table ID(type): 0(Extensibility), count: 0
 
-[  none]{lang="EN-US"}
+  Flow-entry max-limit: 65535
 
-[ Active configuration:]{lang="EN-US"}
+  Datapath ID: 0x000100e001000000
 
-[  Classification: Port]{lang="IT"}
+Port information:
 
-[  In-band management VLAN, total VLANs(0)]{lang="EN-US"}
+ GigabitEthernet2/0/1
 
-[   empty VLAN]{lang="EN-US"}
+ GigabitEthernet2/0/2
 
-[  Connect mode: multiple]{lang="EN-US"}
+ GigabitEthernet2/0/3
 
-[  MAC address learning: Enabled]{lang="EN-US"}
+Active channel information:
 
-[  Flow table:]{lang="EN-US"}
+ Failopen mode: secure
 
-[   Table ID(type): 0(Extensibility), count: 0]{lang="EN-US"}
+表1-7 display openflow instance命令显示信息描述表
 
-[  Flow-entry max-limit: 65535]{lang="EN-US"}
+字段
 
-[  Datapath ID: 0x000100e001000000]{lang="EN-US"}
+描述
 
-[Port information:]{lang="EN-US"}
+Configuration information
 
-[ GigabitEthernet2/0/1]{lang="EN-US"}
+配置信息
 
-[ GigabitEthernet2/0/2]{lang="EN-US"}
+Description
 
-[ GigabitEthernet2/0/3]{lang="EN-US"}
+实例的描述信息
 
-[Active channel information:]{lang="EN-US"}
+Active status
 
-[ Failopen mode: secure]{lang="EN-US"}
+实例状态：
 
-[[表1-7 ]{lang="EN-US"}[display openflow instance]{lang="EN-US"}]{#struct_0_x9563_11471_1378410046}[命令显示信息描述表]{style="font-family:黑体"}
+·Active：激活
 
-[]{#table_struct_0_1206011594}[[字段]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1001629325}
-:::
+·Inactive：未激活
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x9563_11471_431090666}
+Inactive configuration
 
-[[Configuration information]{lang="EN-US"}]{#struct_0_x9563_11471_418633741}
+未生效的实例配置
 
-[[配置信息]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1332232160}
+Active configuration
 
-[[Description]{lang="EN-US"}]{#struct_0_x9563_11471_x1991777284}
+已生效的实例配置
 
-[[实例的描述信息]{style="font-family:宋体"}]{#struct_0_x9563_11471_839398432}
+Classification: VLAN, total VLANs
 
-[[Active status]{lang="EN-US"}]{#struct_0_x9563_11471_x445996523}
+实例VLAN信息及VLAN总个数
 
-[[实例状态：]{style="font-family:宋体"}]{#struct_0_x9563_11471_x446062059}
+Classification: Port
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Active]{lang="EN-US"}]{#struct_0_x9563_11471_1774288388}[：]{lang="EN-US" style="font-family:宋体"}[激活]{style="font-family:宋体"}
+实例处于Port模式
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[Inactive]{lang="EN-US"}]{#struct_0_x9563_11471_964984315}[：未]{style="font-family:
-  宋体"}[激活]{lang="EN-US" style="font-family:宋体"}
+loose mode
 
-[[Inactive configuration]{lang="EN-US"}]{#struct_0_x9563_11471_x1002088076}
+处于loosen模式
 
-[[未生效的实例配置]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1601768301}
+In-band management VLAN, total VLANs
 
-[[Active configuration]{lang="EN-US"}]{#struct_0_x9563_11471_1285261468}
+带内管理VLAN列表及VLAN个数
 
-[[已生效的实例配置]{style="font-family:宋体"}]{#struct_0_x9563_11471_1285458076}
+Connect mode
 
-[[Classification: VLAN, total VLANs]{lang="EN-US"}]{#struct_0_x9563_11471_x802013288}
+控制器连接模式：
 
-[[实例]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x9563_11471_x2121892901}[信息及]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[总个数]{style="font-family:宋体"}
+·Single：串行
 
-[[Classification: Port]{lang="EN-US"}]{#struct_0_x9563_11471_964984318}
+·Multiple：并行
 
-[[实例处于]{style="font-family:宋体"}[Port]{lang="EN-US"}]{#struct_0_x9563_11471_964984323}[模式]{style="font-family:宋体"}
+MAC-address learning
 
-[[loose mode]{lang="EN-US"}]{#struct_0_x9563_11471_x1002153612}
+MAC地址学习：
 
-[[处于]{style="font-family:宋体"}[loosen]{lang="EN-US"}]{#struct_0_x9563_11471_727712604}[模式]{style="font-family:宋体"}
+·Enabled：允许
 
-[[In-band management VLAN, total VLANs]{lang="EN-US"}]{#struct_0_x9563_11471_x446062058}
+·Disabled：禁止
 
-[[带内管理]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x9563_11471_x445865450}[列表及]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[个数]{style="font-family:宋体"}
+Flow table
 
-[[Connect mode]{lang="EN-US"}]{#struct_0_x9563_11471_x445930986}
+实例的流表信息
 
-[[控制器连接模式：]{style="font-family:宋体"}]{#struct_0_x9563_11471_x445275626}
+Table ID(type)
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Single]{lang="EN-US"}]{#struct_0_x9563_11471_x1373667841}[：串行]{lang="EN-US" style="font-family:宋体"}
+流表ID，类型
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Multiple]{lang="EN-US"}]{#struct_0_x9563_11471_x1373667843}[：并行]{lang="EN-US" style="font-family:宋体"}
+·MAC-IP：MAC-IP类型流表
 
-[[MAC-address learning]{lang="EN-US"}]{#struct_0_x9563_11471_1476579926}
+·Extensibility：Extensibility类型流表
 
-[[MAC]{lang="EN-US"}]{#struct_0_x9563_11471_1476514390}[地址学习：]{style="font-family:宋体"}
+count
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_x9563_11471_202472956}[：允许]{lang="EN-US" style="font-family:宋体"}
+对应流表的流表项总个数
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_x9563_11471_202472954}[：禁止]{lang="EN-US" style="font-family:宋体"}
+Flow-entry max-limit
 
-[[Flow table]{lang="EN-US"}]{#struct_0_x9563_11471_x330401961}
+当前实例的流表最大个数限制
 
-[[实例的流表信息]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1002219148}
+Datapath ID
 
-[[Table ID(type)]{lang="EN-US"}]{#struct_0_x9563_11471_x669748861}
+当前实例的Datapath ID
 
-[[流表]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x9563_11471_1546484880}[，类型]{style="font-family:宋体"}
+Default table-miss
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[MAC-IP]{lang="EN-US"}]{#struct_0_x9563_11471_x385584915}[：]{lang="EN-US" style="font-family:宋体"}[MAC-IP]{lang="EN-US"}[类型流表]{lang="EN-US" style="font-family:宋体"}
+缺省table miss动作：
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Extensibility]{lang="EN-US"}]{#struct_0_x9563_11471_1416435512}[：]{lang="EN-US" style="font-family:宋体"}[Extensibility]{lang="EN-US"}[类型流表]{lang="EN-US" style="font-family:宋体"}
+·Permit：允许
 
-[[count]{lang="EN-US"}]{#struct_0_x9563_11471_x1002284684}
+·Drop：丢弃
 
-[[对应流表的流表项总个数]{style="font-family:宋体"}]{#struct_0_x9563_11471_998443863}
+Forbidden port
 
-[[Flow-entry max-limit]{lang="EN-US"}]{#struct_0_x9563_11471_1476252246}
+禁止上送Controller的端口类型：
 
-[[当前实例的流表最大个数限制]{style="font-family:宋体"}]{#struct_0_x9563_11471_1476448854}
+·VLAN interface：VLAN接口
 
-[[Datapath ID]{lang="EN-US"}]{#struct_0_x9563_11471_1476383318}
+·Virtual Switch Interface：VSI接口
 
-[[当前实例的]{style="font-family:宋体"}[Datapath ID]{lang="EN-US"}]{#struct_0_x9563_11471_1477104214}
+Port information
 
-[[Default table-miss]{lang="EN-US"}]{#struct_0_x9563_11471_x179864064}
+已加入实例的端口的名称列表
 
-[[缺省]{style="font-family:宋体"}[table miss]{lang="EN-US"}]{#struct_0_x9563_11471_x179864066}[动作：]{style="font-family:宋体"}
+Active channel information
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Permit]{lang="EN-US"}]{#struct_0_x9563_11471_x179864067}[：允许]{lang="EN-US" style="font-family:宋体"}
+生效的控制通道信息
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Drop]{lang="EN-US"}]{#struct_0_x9563_11471_1776451068}[：丢弃]{lang="EN-US" style="font-family:宋体"}
+IP address
 
-[[Forbidden port]{lang="EN-US"}]{#struct_0_x9563_11471_1776451066}
+已经配置在实例下的的控制器的IP地址
 
-[[禁止上送]{style="font-family:宋体"}[Controller]{lang="EN-US"}]{#struct_0_x9563_11471_1776451071}[的端口类型：]{style="font-family:宋体"}
+Port
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[VLAN interface]{lang="EN-US"}]{#struct_0_x9563_11471_1776451069}[：]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口]{lang="EN-US" style="font-family:宋体"}
+当前连接Controller的TCP端口号
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Virtual Switch Interface]{lang="EN-US"}]{#struct_0_x9563_11471_1776451075}[：]{lang="EN-US" style="font-family:宋体"}[VSI]{lang="EN-US"}[接口]{lang="EN-US" style="font-family:宋体"}
+Fail-open mode
 
-[[Port information]{lang="EN-US"}]{#struct_0_x9563_11471_1477038678}
+连接中断时的运行模式：
 
-[[已加入实例的端口的名称列表]{style="font-family:宋体"}]{#struct_0_x9563_11471_1476514391}
+·Standalone：标准模式
 
-[[Active channel information]{lang="EN-US"}]{#struct_0_x9563_11471_1476710999}
-
-[[生效的控制通道信息]{style="font-family:宋体"}]{#struct_0_x9563_11471_1476645463}
-
-[[IP address]{lang="EN-US"}]{#struct_0_x9563_11471_x1059234426}
-
-[[已经配置在实例下的的控制器的]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x9563_11471_x1002350220}[地址]{style="font-family:宋体"}
-
-[[Port]{lang="EN-US"}]{#struct_0_x9563_11471_1760881814}
-
-[[当前连接]{style="font-family:宋体"}[Controller]{lang="EN-US"}]{#struct_0_x9563_11471_x813840545}[的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号]{style="font-family:宋体"}
-
-[[Fail-open mode]{lang="EN-US"}]{#struct_0_x9563_11471_1476514388}
-
-[[连接中断时的运行模式：]{style="font-family:宋体"}]{#struct_0_x9563_11471_1476645460}
-
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[Standalone]{lang="EN-US"}]{#struct_0_x9563_11471_967147012}[：标准模式]{lang="EN-US" style="font-family:宋体"}
-
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Secure]{lang="EN-US"}]{#struct_0_x9563_11471_x1371505157}[：安全模式]{lang="EN-US" style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#1890025421 .myid}
-[]{#_Toc404798417}[]{#struct_0_x9563_11471_799445648}[]{#_Toc362963999}
+·Secure：安全模式
 
 **OpenFlow \-- OpenFlow配置命令 \-- display openflow meter**
 
 ------------------------------------------------------------------------
 
-[**[display openflow meter]{lang="EN-US"}**]{#struct_0_x9563_11471_1476317780}[命令用来显示]{style="font-family:宋体"}[OpenFlow]{lang="IT"}[实例的]{style="font-family:宋体"}[Meter]{lang="EN-US"}[表项]{style="font-family:宋体"}[信息。]{style="font-family:宋体"}
+**[display openflow meter**]命令用来显示OpenFlow实例的Meter表项信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_377584681}
+【命令】
 
-[**[display openflow instance ]{lang="EN-US"}**[{ *instance-id* \| **oap-instance** } **meter** \[ *meter-id* \]]{lang="EN-US"}]{#struct_0_x9563_11471_1476252244}
+**[display openflow instance **[{ *instance-id* \| **oap-instance** } **meter** [ *meter-id* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1980898947}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x9563_11471_1476448852}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1476383316}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_1560324550}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x9563_11471_1477104212}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x1138423979}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x9563_11471_1477038676}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x296579020}
+【参数】
 
-[*[instance-id]{lang="IT"}*]{#struct_0_x9563_11471_1476579925}[：]{style="font-family:宋体"}[OpenFlow]{lang="IT"}[实例号]{style="font-family:宋体"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[instance-id*]：OpenFlow实例号，取值范围为1～4094。
 
-[**[oap-instance]{lang="EN-US"}**]{#struct_0_x9563_11471_20414398}[：]{style="font-family:宋体"}[OpenFlow OAP]{lang="EN-US"}[实例。]{style="font-family:宋体"}
+**[oap-instance**]：OpenFlow OAP实例。
 
-[*[meter-]{lang="IT"}*[id]{lang="EN-US"}]{#struct_0_x9563_11471_1476514389}[：]{style="font-family:宋体"}[Meter ID]{lang="EN-US"}[，]{style="font-family:宋体"}[取值范围为]{style="font-family:宋体"}[0]{lang="IT"}[～]{style="font-family:宋体"}[0xffff0000]{lang="IT"}[。如果未指定本参数，将显示实例所有]{style="font-family:宋体"}[Meter]{lang="EN-US"}[表项]{style="font-family:宋体"}[的信息。]{style="font-family:宋体"}
+*[meter-*id]：Meter ID，取值范围为0～0xffff0000。如果未指定本参数，将显示实例所有Meter表项的信息。
 
-[[【举例】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_1178535640}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_1476710997}[显示]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例]{style="font-family:宋体"}[100]{lang="EN-US"}[的]{style="font-family:宋体"}[Meter]{lang="EN-US"}[表项信息。]{style="font-family:宋体"}
+\# 显示OpenFlow实例100的Meter表项信息。
 
-[[\<Sysname\> display openflow instance 100 meter]{lang="EN-US"}]{#struct_0_x9563_11471_1476645461}
+\<Sysname\> display openflow instance 100 meter
 
-[Meter flags: KBPS  \-- Rate value in kb/s, PKTPS \-- Rate value in packet/sec]{lang="EN-US"}
+Meter flags: KBPS  \-- Rate value in kb/s, PKTPS \-- Rate value in packet/sec
 
-[             BURST \-- Do burst size,      STATS \-- Collect statistics]{lang="EN-US"}
+             BURST \-- Do burst size,      STATS \-- Collect statistics
 
-[ ]{lang="EN-US"}
+Instance 100 meter table information:
 
-[Instance 100 meter table information:]{lang="EN-US"}
+ meter entry count: 2
 
-[ meter entry count: 2]{lang="EN-US"}
+Meter entry 100 information:
 
-[ ]{lang="EN-US"}
+ Meter flags: KBPS
 
-[Meter entry 100 information:]{lang="EN-US"}
+ Band 1 information
 
-[ Meter flags: KBPS]{lang="EN-US"}
+ Type: drop, rate: 1024, burst size: 65536
 
-[ Band 1 information]{lang="EN-US"}
+ Byte count: \--, packet count: \--
 
-[ Type: drop, rate: 1024, burst size: 65536]{lang="EN-US"}
+ Referencedinformation:
 
-[ Byte count: \--, packet count: \--]{lang="EN-US"}
+  Count: 3
 
-[ Referencedinformation:]{lang="EN-US"}
+  Flow table: 0
 
-[  Count: 3]{lang="EN-US"}
+  Flow entry: 1, 2, 3
 
-[  Flow table: 0]{lang="EN-US"}
+Meter entry 200 information:
 
-[  Flow entry: 1, 2, 3]{lang="EN-US"}
+ Meter flags: KBPS
 
-[ ]{lang="EN-US"}
+ Band 1 information
 
-[Meter entry 200 information:]{lang="EN-US"}
+ Type: drop, rate: 10240, burst size: 655360
 
-[ Meter flags: KBPS]{lang="EN-US"}
+ Byte count: \--, packet count: \--
 
-[ Band 1 information]{lang="EN-US"}
+ Referenced information:
 
-[ Type: drop, rate: 10240, burst size: 655360]{lang="EN-US"}
+  Count: 0
 
-[ Byte count: \--, packet count: \--]{lang="EN-US"}
+表1-8 display openflow meter命令显示信息描述表
 
-[ Referenced information:]{lang="EN-US"}
+字段
 
-[  Count: 0]{lang="EN-US"}
+描述
 
-[[表1-8 ]{lang="EN-US"}[display openflow meter]{lang="EN-US"}]{#struct_0_x9563_11471_799380112}[命令显示信息描述表]{style="font-family:黑体"}
+Meter entry count
 
-[]{#table_struct_0_1458888989}[[字段]{style="font-family:黑体"}]{#struct_0_x9563_11471_1476317781}
-:::
+当前实例包含的Meter表项的总个数
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x9563_11471_1476448853}
+Meter flags
 
-[[Meter entry count]{lang="EN-US"}]{#struct_0_x9563_11471_1476383317}
+当前Meter表项的所携带的flags：
 
-[[当前实例包含的]{style="font-family:宋体"}[Meter]{lang="EN-US"}]{#struct_0_x9563_11471_1477104213}[表项的总个数]{style="font-family:宋体"}
+·KBPS：速率值以kbps为单位
 
-[[Meter flags]{lang="EN-US"}]{#struct_0_x9563_11471_1477038677}
+·PKTPS：速率值以packet/sec（包/秒）为单位
 
-[[当前]{style="font-family:宋体"}[Meter]{lang="EN-US"}]{#struct_0_x9563_11471_1476579922}[表项的所携带的]{style="font-family:宋体"}[flags]{lang="EN-US"}[：]{style="font-family:宋体"}
+·BURST：帧大小
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[KBPS]{lang="EN-US"}]{#struct_0_x9563_11471_1476514386}[：速率值以]{style="font-family:宋体"}[kbps]{lang="EN-US"}[为单位]{style="font-family:宋体"}
+·STATS：收集统计信息
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[PKTPS]{lang="EN-US"}]{#struct_0_x9563_11471_1476710994}[：速率值以]{style="font-family:宋体"}[packet/sec]{lang="EN-US"}[（包]{style="font-family:宋体"}[/]{lang="EN-US"}[秒]{style="font-family:宋体"}[）]{lang="EN-US" style="font-family:宋体"}[为单位]{style="font-family:宋体"}
+Band
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[BURST]{lang="EN-US"}]{#struct_0_x9563_11471_1476645458}[：帧大小]{style="font-family:宋体"}
+Meter表项包含的band
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[STATS]{lang="EN-US"}]{#struct_0_x9563_11471_1476252242}[：收集统计信息]{style="font-family:宋体"}
+Type
 
-[[Band]{lang="EN-US"}]{#struct_0_x9563_11471_1476448850}
+band类型：
 
-[[Meter]{lang="EN-US"}]{#struct_0_x9563_11471_1476383314}[表项包含的]{style="font-family:宋体"}[band]{lang="EN-US"}
+·drop：丢弃数据包
 
-[[Type]{lang="EN-US"}]{#struct_0_x9563_11471_1477104210}
+·dscp_remark：修改数据包IP头部的dscp
 
-[[band]{lang="EN-US"}]{#struct_0_x9563_11471_1476579923}[类型：]{style="font-family:宋体"}
+rate
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[drop]{lang="EN-US"}]{#struct_0_x9563_11471_1476514387}[：丢弃数据包]{style="font-family:宋体"}
+速率
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[dscp_remark]{lang="EN-US"}]{#struct_0_x9563_11471_1476645459}[：修改数据包]{style="font-family:
-  宋体"}[IP]{lang="EN-US"}[头部的]{style="font-family:宋体"}[dscp]{lang="EN-US"}
+burst size
 
-[[rate]{lang="EN-US"}]{#struct_0_x9563_11471_1476317779}
+帧大小
 
-[[速率]{style="font-family:宋体"}]{#struct_0_x9563_11471_1476252243}
+Byte count
 
-[[burst size]{lang="EN-US"}]{#struct_0_x9563_11471_1476448851}
+band的字节统计计数，"\--"表示不支持
 
-[[帧大小]{style="font-family:宋体"}]{#struct_0_x9563_11471_1476383315}
+packet count
 
-[[Byte count]{lang="EN-US"}]{#struct_0_x9563_11471_1477104211}
+band的报文统计计数，"\--"表示不支持
 
-[[band]{lang="EN-US"}]{#struct_0_x9563_11471_1477038675}[的字节统计计数，"]{style="font-family:宋体"}[\--]{lang="EN-US"}["表示不支持]{style="font-family:宋体"}
+Reference information
 
-[[packet count]{lang="EN-US"}]{#struct_0_x9563_11471_x1252368965}
+Meter表项被流表项引用的信息
 
-[[band]{lang="EN-US"}]{#struct_0_x9563_11471_x1252172357}[的报文统计计数，"]{style="font-family:宋体"}[\--]{lang="EN-US"}["表示不支持]{style="font-family:宋体"}
+Count
 
-[[Reference information]{lang="EN-US"}]{#struct_0_x9563_11471_x1252237893}
+引用Meter表项的流表项的总个数
 
-[[Meter]{lang="EN-US"}]{#struct_0_x9563_11471_x1252565573}[表项]{lang="EN-US" style="font-family:宋体"}[被流表项引用的信息]{style="font-family:宋体"}
+Flow table
 
-[[Count]{lang="EN-US"}]{#struct_0_x9563_11471_x1252631109}
+引用Meter表项的流表项所在的流表ID
 
-[[引用]{style="font-family:宋体"}[Meter]{lang="EN-US"}]{#struct_0_x9563_11471_x1252500037}[表项的流表项的总个数]{style="font-family:宋体"}
+Flow entry
 
-[[Flow table]{lang="EN-US"}]{#struct_0_x9563_11471_x1251779141}
-
-[[引用]{style="font-family:宋体"}[Meter]{lang="EN-US"}]{#struct_0_x9563_11471_x1251844677}[表项的流表项所在的流表]{style="font-family:宋体"}[ID]{lang="EN-US"}
-
-[[Flow entry]{lang="EN-US"}]{#struct_0_x9563_11471_x1252303428}
-
-[[引用]{style="font-family:宋体"}[Meter]{lang="EN-US"}]{#struct_0_x9563_11471_x1252368964}[表项的流表项]{style="font-family:宋体"}[ID]{lang="EN-US"}[列表]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#570150521 .myid}
-[]{#_Toc404798418}[]{#struct_0_x9563_11471_20414394}[]{#_Toc384108862}
+引用Meter表项的流表项ID列表
 
 **OpenFlow \-- OpenFlow配置命令 \-- display openflow oap-context**
 
 ------------------------------------------------------------------------
 
-[**[display openflow oap-context]{lang="EN-US"}**]{#struct_0_x9563_11471_20414393}[命令显示]{style="font-family:宋体"}[OAP]{lang="EN-US"}[的]{style="font-family:宋体"}[Context]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[display openflow oap-context**]命令显示OAP的Context信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_400182575}
+【命令】
 
-[**[display openflow oap-context ]{lang="EN-US"}**[\[ **oap-interface** *oap-interface-type oap-interface-number* \| **in-interface** *in-interface-type in-interface-number* \| **out-interface** *out-interface-type out-interface-number* \]]{lang="EN-US"}]{#struct_0_x9563_11471_x1730390909}
+**[display openflow oap-context **[[ **oap-interface** *oap-interface-type oap-interface-number* \| **in-interface** *in-interface-type in-interface-number* \| **out-interface** *out-interface-type out-interface-number* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x385425011}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x9563_11471_x563901456}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_20414392}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x1556132561}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x9563_11471_x1290027804}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_441880255}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x9563_11471_x2012478079}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1354804325}
+【参数】
 
-[**[oap-interface]{lang="EN-US"}**[ *oap-interface-type oap-interface-number*]{lang="EN-US"}]{#struct_0_x9563_11471_x1935900735}[：]{lang="EN-US" style="font-family:宋体"}[OAP]{lang="EN-US"}[接口。]{lang="EN-US" style="font-family:宋体"}
+**[oap-interface** *oap-interface-type oap-interface-number*]：OAP接口。
 
-[**[in-interface]{lang="EN-US"}**[ *in-interface-type in-interface-number*]{lang="EN-US"}]{#struct_0_x9563_11471_x1201223703}[：入接口。]{lang="EN-US" style="font-family:宋体"}
+**[in-interface** *in-interface-type in-interface-number*]：入接口。
 
-[**[out-interface]{lang="EN-US"}***[ out-interface-type out-interface-number]{lang="EN-US"}*]{#struct_0_x9563_11471_1476997458}[：出接口。]{lang="EN-US" style="font-family:宋体"}
+**[out-interface*** out-interface-type out-interface-number*]：出接口。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1934785260}
+【使用指导】
 
-[[如果未指定任何接口，则显示所有]{style="font-family:宋体"}[OAP Context]{lang="EN-US"}]{#struct_0_x9563_11471_172871097}[信息。]{style="font-family:宋体"}
+如果未指定任何接口，则显示所有OAP Context信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x496618633}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_324567436}[显示]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[的]{style="font-family:宋体"}[OAP Context]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+\# 显示OpenFlow的OAP Context信息。
 
-[[\<Sysname\> display openflow oap-context]{lang="EN-US"}]{#struct_0_x9563_11471_x1935900736}
+\<Sysname\> display openflow oap-context
 
-[Total number: 2]{lang="EN-US"}
+Total number: 2
 
-[ OAP client: 3]{lang="EN-US"}
+ OAP client: 3
 
-[  Input interface  : GigabitEthernet1/0/1]{lang="EN-US"}
+  Input interface  : GigabitEthernet1/0/1
 
-[  Output interface : GigabitEthernet1/0/2]{lang="EN-US"}
+  Output interface : GigabitEthernet1/0/2
 
-[  OAP interface    : GigabitEthernet1/0/3]{lang="EN-US"}
+  OAP interface    : GigabitEthernet1/0/3
 
-[  VRF name         : \--]{lang="EN-US"}
+  VRF name         : \--
 
-[  OAP context      : 0xFFFFFFFFFFFFFFFF]{lang="EN-US"}
+  OAP context      : 0xFFFFFFFFFFFFFFFF
 
-[ ]{lang="EN-US"}
+OAP client: 4
 
-[OAP client: 4]{lang="EN-US"}
+  Input interface  : GigabitEthernet1/0/1
 
-[  Input interface  : GigabitEthernet1/0/1]{lang="EN-US"}
+  Output interface : GigabitEthernet1/0/2
 
-[  Output interface : GigabitEthernet1/0/2]{lang="EN-US"}
+  OAP interface    : GigabitEthernet1/0/3
 
-[  OAP interface    : GigabitEthernet1/0/3]{lang="EN-US"}
+  VRF name         : \--
 
-[  VRF name         : \--]{lang="EN-US"}
+  OAP context      : 0xFFFFFFFFFFFFFFFF
 
-[  OAP context      : 0xFFFFFFFFFFFFFFFF]{lang="EN-US"}
+表1-2 display openflow instance oap-mode context命令显示描述表
 
-[[表1-2 ]{lang="EN-US"}[display openflow instance oap-mode context]{lang="EN-US"}]{#struct_0_x9563_11471_x797939176}[命令显示描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1660970071}[[字段]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1935900737}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1935900738}
+Total number
 
-[[Total number]{lang="EN-US"}]{#struct_0_x9563_11471_x1935900739}
+控制器（OAP client）的总数
 
-[[控制器（]{style="font-family:宋体"}[OAP client]{lang="EN-US"}]{#struct_0_x9563_11471_x1935900740}[）的总数]{style="font-family:宋体"}
+Controller
 
-[[Controller]{lang="EN-US"}]{#struct_0_x9563_11471_x1935900741}
+控制器的编号
 
-[[控制器的编号]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1935900742}
+Input interface
 
-[[Input interface]{lang="EN-US"}]{#struct_0_x9563_11471_x1935900743}
+入接口的接口名
 
-[[入接口的接口名]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1935900744}
+Output interface
 
-[[Output interface]{lang="EN-US"}]{#struct_0_x9563_11471_x746422335}
+出接口的接口名
 
-[[出接口的接口名]{style="font-family:宋体"}]{#struct_0_x9563_11471_x746422336}
+OAP interface
 
-[[OAP interface]{lang="EN-US"}]{#struct_0_x9563_11471_x746422337}
+OAP接口的接口名
 
-[[OAP]{lang="EN-US"}]{#struct_0_x9563_11471_x746422338}[接口的接口名]{style="font-family:宋体"}
+VRF name
 
-[[VRF name]{lang="EN-US"}]{#struct_0_x9563_11471_x746422339}
+绑定的Vpn接口索引
 
-[[绑定的]{style="font-family:宋体"}[Vpn]{lang="EN-US"}]{#struct_0_x9563_11471_x746422340}[接口索引]{style="font-family:宋体"}
+OAP context
 
-[[OAP context]{lang="EN-US"}]{#struct_0_x9563_11471_x746422341}
-
-[[分配的]{style="font-family:宋体"}[OAP context]{lang="EN-US"}]{#struct_0_x9563_11471_x746422342}
-
-[ ]{lang="EN-US"}
-
-::: {#1243415769 .myid}
-[]{#_Toc404798419}[]{#struct_0_x9563_11471_x1252172356}[]{#_Toc362963997}
+分配的OAP context
 
 **OpenFlow \-- OpenFlow配置命令 \-- display openflow summary**
 
 ------------------------------------------------------------------------
 
-[**[display openflow summary]{lang="EN-US"}**]{#struct_0_x9563_11471_1445823586}[命令用来显示]{style="font-family:
-宋体"}[OpenFlow]{lang="IT"}[实例的概要信息。]{style="font-family:宋体"}
+**[display openflow summary**]命令用来显示OpenFlow实例的概要信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1252237892}
+【命令】
 
-[**[display openflow summary]{lang="EN-US"}**]{#struct_0_x9563_11471_x1252565572}
+**[display openflow summary**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_919808017}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1252631108}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_121879322}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x1252434500}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x9563_11471_x1252500036}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_1395645668}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x9563_11471_x1251779140}
+mdc-operator
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x9563_11471_2107260967}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_x1251844676}[显示]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[概要信息。]{style="font-family:宋体"}
+\# 显示OpenFlow概要信息。
 
-[[\<Sysname\> display openflow summary]{lang="EN-US"}]{#struct_0_x9563_11471_x1252303431}
+\<Sysname\> display openflow summary
 
-[Fail Open mode: Se \-- secure mode, Sa \-- standalone mode]{lang="EN-US"}
+Fail Open mode: Se \-- secure mode, Sa \-- standalone mode
 
-[Reactive flags: Y \-- Need active instance,]{lang="EN-US"}
+Reactive flags: Y \-- Need active instance,
 
-[                N \-- Needn\'t active instance]{lang="EN-US"}
+                N \-- Needn\'t active instance
 
-[ ]{lang="EN-US"}
+ID    Status    Datapath-ID         Channel    Table num  Port num  Reactive
 
-[ID    Status    Datapath-ID         Channel    Table num  Port num  Reactive]{lang="EN-US"}
+1     Active    0x0000000100001221  Connected  2          8         Y
 
-[1     Active    0x0000000100001221  Connected  2          8         Y]{lang="EN-US"}
+10    Inactive  -                   -          -          -         -
 
-[10    Inactive  -                   -          -          -         -]{lang="EN-US"}
+4094  Active    0x00000ffe00001221  Fail(Sa)   2          0         N
 
-[4094  Active    0x00000ffe00001221  Fail(Sa)   2          0         N]{lang="EN-US"}
+OAP   Active    0x0000100200001221  Fail(Sa)   1          8         N
 
-[OAP   Active    0x0000100200001221  Fail(Sa)   1          8         N]{lang="EN-US"}
+表1-9 display openflow summary命令显示信息描述表
 
-[[表1-9 ]{lang="EN-US"}[display openflow summary]{lang="EN-US"}]{#struct_0_x9563_11471_514954713}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1468248698}[[字段]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1252368967}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1252172359}
+ID
 
-[[ID]{lang="EN-US"}]{#struct_0_x9563_11471_x1252565575}
+实例ID或OAP实例
 
-[[实例]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x9563_11471_x1252631111}[或]{style="font-family:宋体"}[OAP]{lang="EN-US"}[实例]{style="font-family:宋体"}
+Status
 
-[[Status]{lang="EN-US"}]{#struct_0_x9563_11471_x1252434503}
+实例激活状态
 
-[[实例激活状态]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1252500039}
+·Active：实例已经激活
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[A]{lang="EN-US"}[ctive]{lang="EN-US"}]{#struct_0_x9563_11471_x1251779143}[：实例已经激活]{style="font-family:宋体"}
+·Inactive：实例尚未激活
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Inactive]{lang="EN-US"}]{#struct_0_x9563_11471_x1251844679}[：实例尚未激活]{style="font-family:
-  宋体"}
+Datapath-ID
 
-[[Datapath-ID]{lang="EN-US"}]{#struct_0_x9563_11471_x1252303430}
+实例的Datapath ID，未激活实例无取值
 
-[[实例的]{style="font-family:宋体"}[Datapath ID]{lang="EN-US"}]{#struct_0_x9563_11471_x1252368966}[，未激活实例无取值]{style="font-family:宋体"}
+Channel
 
-[[Channel]{lang="EN-US"}]{#struct_0_x9563_11471_x1252237894}
+与控制器连接通道的状态，未激活实例无取值
 
-[[与控制器连接通道的状态，未激活实例无取值]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1252631110}
+·Connected：与控制器已经建立安全通道
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Connected]{lang="EN-US"}]{#struct_0_x9563_11471_x1252500038}[：与]{style="font-family:
-  宋体"}[控制器]{lang="EN-US" style="font-family:宋体"}[已经建立安全通道]{style="font-family:宋体"}
+·Fail(Se)：连接通道断开，连接中断模式为Secure模式
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Fail(Se)]{lang="EN-US"}]{#struct_0_x9563_11471_x1251779142}[：连接通道断开，连接中断模式为]{style="font-family:
-  宋体"}[Secure]{lang="EN-US"}[模式]{style="font-family:宋体"}
+·Fail(Sa)：连接通道断开，连接中断模式为Standalone模式
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Fail(Sa)]{lang="EN-US"}]{#struct_0_x9563_11471_x1251844678}[：连接通道断开，连接中断模式为]{style="font-family:
-  宋体"}[Standalone]{lang="EN-US"}[模式]{style="font-family:宋体"}
+Table-num
 
-[[Table-num]{lang="EN-US"}]{#struct_0_x9563_11471_x1252303433}
+实例中流表数目，未激活实例无取值
 
-[[实例中流表数目，未激活实例无取值]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1252368969}
+Port-num
 
-[[Port-num]{lang="EN-US"}]{#struct_0_x9563_11471_x1252237897}
+属于该实例的接口数目，未激活实例无取值
 
-[[属于该实例的接口数目，未激活实例无取值]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1252565577}
+Reactive
 
-[[Reactive]{lang="EN-US"}]{#struct_0_x9563_11471_x1252631113}
+是否在激活实例后重新更改了配置，需要重新激活
 
-[[是否在激活实例后重新更改了配置，需要重新激活]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1252434505}
+·Y：配置已经改变了，需要重新激活
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Y]{lang="EN-US"}]{#struct_0_x9563_11471_x1252500041}[：配置已经改变了，需要重新激活]{style="font-family:宋体"}
-
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[N]{lang="EN-US"}]{#struct_0_x9563_11471_x1251779145}[：配置未改变，不需要重新激活]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1532446382 .myid}
-[]{#_Toc404798420}[]{#struct_0_x9563_11471_x489437443}[]{#_Toc348873550}
+·N：配置未改变，不需要重新激活
 
 **OpenFlow \-- OpenFlow配置命令 \-- fail-open mode**
 
 ------------------------------------------------------------------------
 
-[**[fail-open mode]{lang="EN-US"}**]{#struct_0_x9563_11471_x1560632641}[命令用来配置交换机与控制器连接中断时的运行模式。]{style="font-family:宋体"}
+**[fail-open mode**]命令用来配置交换机与控制器连接中断时的运行模式。
 
-[**[undo fail-open mode]{lang="EN-US"}**]{#struct_0_x9563_11471_x1143751751}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo fail-open mode**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x253726486}
+【命令】
 
-[**[fail-open mode]{lang="EN-US"}**[ { **secure** \| **standalone** }]{lang="EN-US"}]{#struct_0_x9563_11471_x1616365806}
+**[fail-open mode**[ { **secure** \| **standalone** }]]
 
-[**[undo]{lang="EN-US"}**[ **fail-open** **mode**]{lang="EN-US"}]{#struct_0_x9563_11471_829714595}
+**[undo** **fail-open** **mode**]
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_x9563_11471_x761999319}
+【缺省情况】
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_x819728022}[实例建立时，缺省为]{style="font-family:宋体"}[Secure]{lang="EN-US"}[模式，且为该实例下发]{style="font-family:宋体"}[Table Miss]{lang="EN-US"}[表项（动作为]{style="font-family:宋体"}[drop]{lang="EN-US"}[）。]{style="font-family:宋体"}
+OpenFlow实例建立时，缺省为Secure模式，且为该实例下发Table Miss表项（动作为drop）。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1002546828}
+【视图】
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_x513402627}[实例视图]{style="font-family:宋体"}
+OpenFlow实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_534243688}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x1927252052}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x1187484416}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1093391485}
+【参数】
 
-[**[secure]{lang="EN-US"}**]{#struct_0_x9563_11471_837725944}[：]{style="font-family:宋体"}[Secure]{lang="EN-US"}[模式，连接断开后，交换机根据流表项转发。]{style="font-family:宋体"}
+**[secure**]：Secure模式，连接断开后，交换机根据流表项转发。
 
-[**[standalone]{lang="EN-US"}**]{#struct_0_x9563_11471_1594897755}[：]{style="font-family:宋体"}[Standalone]{lang="EN-US"}[模式，连接断开后，交换机正常转发。]{style="font-family:宋体"}
+**[standalone**]：Standalone模式，连接断开后，交换机正常转发。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x9563_11471_191089732}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_x1001563788}[配置交换机与控制器连接中断时的运行模式为]{style="font-family:宋体"}[Standalone]{lang="EN-US"}[模式。]{style="font-family:宋体"}
+\# 配置交换机与控制器连接中断时的运行模式为Standalone模式。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x9563_11471_x187673895}
+\<Sysname\> system-view
 
-[\[Sysname\] openflow instance 1]{lang="EN-US"}
+Sysname openflow instance 1
 
-[\[Sysname-of-inst-1\] fail-open mode standalone]{lang="EN-US"}
-:::
-
-::: {#-334951453 .myid}
-[]{#_Toc404798421}[]{#struct_0_x9563_11471_x2119184232}[]{#_Toc348873552}
+Sysname-of-inst-1 fail-open mode standalone
 
 **OpenFlow \-- OpenFlow配置命令 \-- flow-entry max-limit**
 
 ------------------------------------------------------------------------
 
-[**[flow-entry max-limit]{lang="EN-US"}**]{#struct_0_x9563_11471_x1889075661}[命令用来配置]{style="font-family:宋体"}[Extensibility]{lang="EN-US"}[表的流表项个数上限。]{style="font-family:宋体"}
+**[flow-entry max-limit**]命令用来配置Extensibility表的流表项个数上限。
 
-[**[undo flow-entry max-limit]{lang="EN-US"}**]{#struct_0_x9563_11471_x281546746}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo flow-entry max-limit**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1083059717}
+【命令】
 
-[**[flow-entry]{lang="EN-US"}**[ **max-limit** *limit-value*]{lang="EN-US"}]{#struct_0_x9563_11471_x828291276}
+**[flow-entry** **max-limit** *limit-value*]
 
-[**[undo]{lang="EN-US"}**[ **flow-entry** **max-limit**]{lang="EN-US"}]{#struct_0_x9563_11471_x855804598}
+**[undo** **flow-entry** **max-limit**]
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_x9563_11471_x1001629324}
+【缺省情况】
 
-[[本命令的缺省情况和设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1134993275}
+本命令的缺省情况和设备的型号有关，请以设备的实际情况为准。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1529855686}
+【视图】
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_886035726}[实例视图]{style="font-family:宋体"}[/OpenFlow OAP]{lang="EN-US"}[实例视图]{style="font-family:宋体"}
+OpenFlow实例视图/OpenFlow OAP实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_639671797}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x1293504839}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_439868717}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_818788618}
+【参数】
 
-[*[limit-value]{lang="EN-US"}*]{#struct_0_x9563_11471_x1002088079}[：流表项上限值。取值范围和设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[limit-value*]：流表项上限值。取值范围和设备的型号有关，请以设备的实际情况为准。
 
-[[【举例】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_770884694}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_942011557}[配置]{style="font-family:宋体"}[Extensibility]{lang="EN-US"}[表的流表项个数上限为]{style="font-family:宋体"}[256]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置Extensibility表的流表项个数上限为256。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x9563_11471_863040507}
+\<Sysname\> system-view
 
-[\[Sysname\] openflow instance 1]{lang="EN-US"}
+Sysname openflow instance 1
 
-[\[Sysname-of-inst-1\] flow-entry max-limit 256]{lang="EN-US"}
-:::
-
-::::: {#-387907546 .myid}
-[]{#_Toc404798422}[]{#struct_0_x9563_11471_x714676427}[]{#_Toc348873556}
+Sysname-of-inst-1 flow-entry max-limit 256
 
 **OpenFlow \-- OpenFlow配置命令 \-- flow-table**
 
 ------------------------------------------------------------------------
 
-[**[flow-table]{lang="EN-US"}**]{#struct_0_x9563_11471_x1728857070}[命令用来动态配置实例下的流表类型和]{style="font-family:宋体"}[ID]{lang="IT"}[。]{style="font-family:宋体"}
+**[flow-table**]命令用来动态配置实例下的流表类型和ID。
 
-[**[undo flow-table]{lang="IT"}**]{#struct_0_x9563_11471_309662341}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo flow-table**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_981594779}
+【命令】
 
-[**[flow-table]{lang="IT"}**[ { ]{lang="EN-US"}]{#struct_0_x9563_11471_x1002153615}**[extensibility ]{lang="IT"}***[extensibility-table-id]{lang="IT"}***[ ]{lang="IT"}**[\| ]{lang="EN-US"}**[mac-ip]{lang="IT"}**[ *mac-ip-table-id*]{lang="IT"}[ }]{lang="EN-US"}[&\<1-n\>]{lang="IT"}
+**[flow-table****extensibility ***extensibility-table-id*****[\| ]**mac-ip** *mac-ip-table-id* }&\<1-n\>
 
-[**[undo flow-table]{lang="IT"}**]{#struct_0_x9563_11471_x1644940391}
+**[undo flow-table**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1089505785}
+【缺省情况】]
 
-[[实例包含了一个]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1751033876}[Extensibility]{lang="IT"}[流表]{style="font-family:宋体"}[，]{style="font-family:宋体"}[流表]{style="font-family:宋体"}[ID]{lang="IT"}[为]{style="font-family:
-宋体"}[0]{lang="IT"}[。]{style="font-family:宋体"}
+实例包含了一个Extensibility流表，流表ID为0。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x68765063}
+【视图】
 
-[[OpenFlow]{lang="IT"}]{#struct_0_x9563_11471_2028553514}[实例视图]{style="font-family:宋体"}
+OpenFlow实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1733920082}
+【缺省用户角色】
 
-[[network-admin]{lang="IT"}]{#struct_0_x9563_11471_885527547}
+network-admin
 
-[[mdc-admin]{lang="IT"}]{#struct_0_x9563_11471_2006382548}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1002219151}
+【参数】
 
-[**[extensibility ]{lang="IT"}**]{#struct_0_x9563_11471_1702969670}*[extensibility-table-id]{lang="IT"}*[：]{style="font-family:宋体"}[Extensibility]{lang="IT"}[流表]{style="font-family:宋体"}[ID]{lang="IT"}[，取值范围为]{style="font-family:
-宋体"}[0]{lang="IT"}[～]{style="font-family:宋体"}[254]{lang="IT"}[。]{style="font-family:宋体"}[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:
-宋体"}
+**[extensibility **]*extensibility-table-id*：Extensibility流表ID，取值范围为0～254。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[mac-ip]{lang="IT"}**]{#struct_0_x9563_11471_1767849018}[ *mac-ip-table-id*]{lang="IT"}[：]{style="font-family:宋体"}[MAC-IP]{lang="IT"}[流表]{style="font-family:宋体"}[ID]{lang="IT"}[，取值范围为]{style="font-family:宋体"}[0]{lang="IT"}[～]{style="font-family:宋体"}[254]{lang="IT"}[。]{style="font-family:
-宋体"}[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[mac-ip**] *mac-ip-table-id*：MAC-IP流表ID，取值范围为0～254。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[[&\<1-n\>]{lang="IT"}]{#struct_0_x9563_11471_1921458823}[：表示前面的参数最多可以输入]{style="font-family:宋体"}[n]{lang="IT"}[次，]{style="font-family:宋体"}[n]{lang="IT"}[的取值范围和设备的型号有关，请以设备的实际情况为准。需要注意的是，对于]{style="font-family:
-宋体"}[MAC-IP]{lang="IT"}[流表，只能输入一次。]{style="font-family:宋体"}
+&\<1-n\>：表示前面的参数最多可以输入n次，n的取值范围和设备的型号有关，请以设备的实际情况为准。需要注意的是，对于MAC-IP流表，只能输入一次。
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](OpenFlow命令.files/image001.png){border="0" width="62" height="25"}]{lang="EN-US"}]{#struct_0_x9563_11471_1743111608}
-:::
+![说明](OpenFlow命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[有的产品只支持先输入]{style="font-family:KaiTi_GB2312"}]{#struct_0_x9563_11471_1743111609}**[mac-ip]{lang="IT"}**[后输入]{style="font-family:KaiTi_GB2312"}**[extensibility]{lang="IT"}**[，不支持先输入]{style="font-family:KaiTi_GB2312"}**[extensibility]{lang="IT"}**[后输入]{style="font-family:KaiTi_GB2312"}**[mac-ip]{lang="IT"}**[。具体和设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}
-:::
+有的产品只支持先输入**mac-ip**后输入**extensibility**，不支持先输入**extensibility**后输入**mac-ip**。具体和设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x935667658}
+用户激活实例之前配置当前实例将要使用的流表类型以及与之对应的流表ID。
 
-[[用户激活实例之前配置当前实例将要使用的流表类型以及与之对应的流表]{style="font-family:宋体"}]{#struct_0_x9563_11471_x667056889}[ID]{lang="IT"}[。]{style="font-family:宋体"}
+多次配置本命令，新配置将覆盖旧配置。
 
-[[多次配置本命令，新配置将覆盖旧配置]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1252500040}[。]{style="font-family:
-宋体"}
+输入的Extensibility流表ID要大于MAC-IP流表ID。
 
-[[输入的]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1251779144}[Extensibility]{lang="IT"}[流表]{style="font-family:宋体"}[ID]{lang="IT"}[要大于]{style="font-family:
-宋体"}[MAC-IP]{lang="IT"}[流表]{style="font-family:宋体"}[ID]{lang="IT"}[。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_495639545}
+\# 配置实例1流表类型为MAC-IP表ID为0，Extensibility表ID为1。
 
-[[\# ]{lang="IT"}]{#struct_0_x9563_11471_1306314979}[配置实例]{style="font-family:宋体"}[1]{lang="IT"}[流表类型为]{style="font-family:
-宋体"}[MAC-IP]{lang="IT"}[表]{style="font-family:宋体"}[ID]{lang="IT"}[为]{style="font-family:宋体"}[0]{lang="IT"}[，]{style="font-family:宋体"}[Extensibility]{lang="IT"}[表]{style="font-family:宋体"}[ID]{lang="IT"}[为]{style="font-family:
-宋体"}[1]{lang="IT"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x9563_11471_x1002284687}
+Sysname openflow instance 1
 
-[\[Sysname\] openflow instance 1]{lang="EN-US"}
-
-[\[Sysname-of-inst-1\] flow-table mac-ip 0 extensibility 1]{lang="EN-US"}
-:::::
-
-::::: {#1175827259 .myid}
-[]{#_Toc404798423}[]{#struct_0_x9563_11471_933807550}[]{#_Toc381014869}
+Sysname-of-inst-1 flow-table mac-ip 0 extensibility 1
 
 **OpenFlow \-- OpenFlow配置命令 \-- forbidden port**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](OpenFlow命令.files/image002.png){border="0" width="63" height="25"}]{lang="EN-US"}]{#struct_0_x9563_11471_x1956385892}
-:::
+![说明](OpenFlow命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x9563_11471_933807551}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[forbidden port**]命令用来配置禁止上送Controller的端口类型。
 
-[**[forbidden port]{lang="EN-US"}**]{#struct_0_x9563_11471_933807548}[命令用来配置禁止上送]{style="font-family:宋体"}[Controller]{lang="EN-US"}[的端口类型。]{style="font-family:宋体"}
+**[undo forbidden port**]命令用来取消该配置。
 
-[**[undo forbidden port]{lang="EN-US"}**]{#struct_0_x9563_11471_x70748}[命令用来取消该配置。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_933807549}
+**[forbidden port **[{ **vlan-interface** \| **vsi-interface** } \*]]
 
-[**[forbidden port ]{lang="EN-US"}**[{ **vlan-interface** \| **vsi-interface** } \*]{lang="EN-US"}]{#struct_0_x9563_11471_x70749}
+**[undo forbidden port**]
 
-[**[undo forbidden port]{lang="EN-US"}**]{#struct_0_x9563_11471_933807546}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_x70750}
+所有接口都上送Controller。
 
-[[所有接口都上送]{style="font-family:宋体"}[Controller]{lang="EN-US"}]{#struct_0_x9563_11471_933807547}[。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_x70751}
+OpenFlow实例视图
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_933807544}[实例视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_x70752}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_933807545}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x1404844608}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x395427599}
+**[vlan-interface**]：VLAN接口。
 
-[**[vlan-interface]{lang="EN-US"}**]{#struct_0_x9563_11471_x1404844607}[：]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口。]{style="font-family:宋体"}
+**[vsi-interface**]：VSI接口。
 
-[**[vsi-interface]{lang="EN-US"}**]{#struct_0_x9563_11471_x1404844610}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[接口。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x751592423}
+\# 配置OpenFlow实例1禁止上送VLAN接口。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_x1576859339}[配置]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例]{style="font-family:宋体"}[1]{lang="EN-US"}[禁止上送]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x9563_11471_x1404844612}
+Sysname openflow instance 1
 
-[\[Sysname\] openflow instance 1]{lang="EN-US"}
-
-[\[Sysname-of-inst-1\] forbidden port vlan-interface]{lang="EN-US"}
-:::::
-
-::: {#-60448219 .myid}
-[]{#_Toc404798424}[]{#struct_0_x9563_11471_313452832}[]{#_Toc362964003}
+Sysname-of-inst-1 forbidden port vlan-interface
 
 **OpenFlow \-- OpenFlow配置命令 \-- in-band management vlan**
 
 ------------------------------------------------------------------------
 
-[**[in-band management vlan]{lang="EN-US"}**]{#struct_0_x9563_11471_x1179274792}[命令用来配置带内管理]{style="font-family:宋体"}[VLAN]{lang="IT"}[。]{style="font-family:宋体"}
+**[in-band management vlan**]命令用来配置带内管理VLAN。
 
-[**[undo in-band management vlan]{lang="EN-US"}**]{#struct_0_x9563_11471_313649440}[命令用来取消该配置。]{style="font-family:
-宋体"}
+**[undo in-band management vlan**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x513787215}
+【命令】
 
-[**[in-band management vlan ]{lang="EN-US"}**[{ *vlan-id* \[ **to** *vlan-id* \] } &\<1-10\>]{lang="EN-US"}]{#struct_0_x9563_11471_313583904}
+**[in-band management vlan **{ *vlan-id* [ **to** *vlan-id*  } &\<1-10\>]]
 
-[**[undo in-bandmanagement vlan]{lang="EN-US"}**]{#struct_0_x9563_11471_314304800}
+**[undo in-bandmanagement vlan**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x9563_11471_76341292}
+【缺省情况】
 
-[[没有配置带内管理]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x9563_11471_313780513}[。]{style="font-family:宋体"}
+没有配置带内管理VLAN。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_313714977}
+【视图】
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_313911585}[实例视图]{style="font-family:宋体"}
+OpenFlow实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1078606472}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_313846049}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_313518369}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1146454286}
+【参数】
 
-[*[vlan-id]{lang="EN-US"}*]{#struct_0_x9563_11471_313452833}[：]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[vlan-id*]：VLAN ID，取值范围为1～4094。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1179274791}
+【使用指导】
 
-[[缺省情况下]{style="font-family:宋体"}]{#struct_0_x9563_11471_314239265}[，]{style="font-family:宋体"}[OpenFlow]{lang="IT"}[实例内的]{style="font-family:宋体"}[VLAN]{lang="IT"}[都是进行]{style="font-family:宋体"}[OpenFlow]{lang="IT"}[转发的]{style="font-family:宋体"}[，]{style="font-family:宋体"}[实例无法通过这些]{style="font-family:宋体"}[VLAN]{lang="IT"}[与控制器建立连接。配置带内管理]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[后，这些]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内流量是正常转发的，可以用于实例与控制器建立连接。]{style="font-family:宋体"}
+缺省情况下，OpenFlow实例内的VLAN都是进行OpenFlow转发的，实例无法通过这些VLAN与控制器建立连接。配置带内管理VLAN后，这些VLAN内流量是正常转发的，可以用于实例与控制器建立连接。
 
-[[【举例】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_313780510}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_313911582}[在实例]{style="font-family:宋体"}[1]{lang="EN-US"}[中配置]{style="font-family:宋体"}[VLAN 10]{lang="EN-US"}[为带内管理]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在实例1中配置VLAN 10为带内管理VLAN。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x9563_11471_x1078606475}
+\<Sysname\> system-view
 
-[\[Sysname\] openflow instance 1]{lang="EN-US"}
+Sysname openflow instance 1
 
-[\[Sysname-of-inst-1\] in-band management vlan 10]{lang="EN-US"}
-:::
-
-::: {#-799172938 .myid}
-[]{#_Toc404798425}[]{#struct_0_x9563_11471_x364085313}[]{#_Toc384108868}
+Sysname-of-inst-1 in-band management vlan 10
 
 **OpenFlow \-- OpenFlow配置命令 \-- listening port**
 
 ------------------------------------------------------------------------
 
-[**[listening prot]{lang="EN-US"}**]{#struct_0_x9563_11471_1489332070}[命令用来为]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例启动]{style="font-family:宋体"}[SSL]{lang="EN-US"}[服务器。]{style="font-family:宋体"}
+**[listening prot**]命令用来为OpenFlow实例启动SSL服务器。
 
-[**[undo listening port]{lang="EN-US"}**]{#struct_0_x9563_11471_x364085314}[命令用来取消该配置。]{style="font-family:宋体"}
+**[undo listening port**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1489397606}
+【命令】
 
-[**[listening port ]{lang="EN-US"}***[port-number]{lang="EN-US"}***[ ssl ]{lang="EN-US"}***[ssl-policy-name]{lang="EN-US"}*]{#struct_0_x9563_11471_x1190800026}
+**[listening port ***port-number*** ssl ***ssl-policy-name*]
 
-[**[undo listening port]{lang="EN-US"}**]{#struct_0_x9563_11471_x406066520}
+**[undo listening port**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x52110922}
+【缺省情况】
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_x1369695671}[实例下没有启动]{style="font-family:宋体"}[SSL]{lang="EN-US"}[服务器。]{style="font-family:宋体"}
+OpenFlow实例下没有启动SSL服务器。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x364085315}
+【视图】
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_1489463142}[实例视图]{style="font-family:宋体"}[/OpenFlow OAP]{lang="EN-US"}[实例视图]{style="font-family:宋体"}
+OpenFlow实例视图/OpenFlow OAP实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1154350513}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x1574574622}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x1250225836}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1594484188}
+【参数】
 
-[**[port ]{lang="EN-US"}***[port-number]{lang="EN-US"}*]{#struct_0_x9563_11471_1380344681}[：服务器的端口号，取值范围为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[～]{lang="EN-US" style="font-family:宋体"}[65535]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+**[port ***port-number*]：服务器的端口号，取值范围为1～65535。
 
-[**[ssl ]{lang="EN-US"}**]{#struct_0_x9563_11471_x1451406855}*[ssl-policy-name]{lang="EN-US"}*[：]{style="font-family:宋体"}[SSL]{lang="EN-US"}[策略的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[字符的字符串，不区分大小写。]{style="font-family:宋体"}
+**[ssl **]*ssl-policy-name*：SSL策略的名称，为1～31字符的字符串，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x364085316}
+【使用指导】
 
-[[没有启动]{style="font-family:宋体"}[SSL]{lang="EN-US"}]{#struct_0_x9563_11471_1489528678}[服务器时，设备作为]{style="font-family:宋体"}[TCP/SSL]{lang="EN-US"}[客户端主动连接控制器（]{style="font-family:宋体"}[SSL]{lang="EN-US"}[服务器，需要相应配置）；启动]{style="font-family:宋体"}[SSL]{lang="EN-US"}[服务器之后，设备作为]{style="font-family:宋体"}[SSL]{lang="EN-US"}[服务器端被动等待控制器（]{style="font-family:宋体"}[SSL]{lang="EN-US"}[客户端）连接。]{style="font-family:宋体"}
+没有启动SSL服务器时，设备作为TCP/SSL客户端主动连接控制器（SSL服务器，需要相应配置）；启动SSL服务器之后，设备作为SSL服务器端被动等待控制器（SSL客户端）连接。
 
-[[一个实例只能启动一个]{style="font-family:宋体"}[SSL]{lang="EN-US"}]{#struct_0_x9563_11471_x1128607246}[服务器。必须先删掉已有配置才能进行新的配置。]{style="font-family:宋体"}
+一个实例只能启动一个SSL服务器。必须先删掉已有配置才能进行新的配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x9563_11471_883289106}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_x1466844397}[为]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例]{style="font-family:宋体"}[1]{lang="EN-US"}[启动端口号为]{style="font-family:宋体"}[20000]{lang="EN-US"}[的]{style="font-family:宋体"}[SSL]{lang="EN-US"}[服务器。]{style="font-family:宋体"}
+\# 为OpenFlow实例1启动端口号为20000的SSL服务器。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x9563_11471_887605734}
+\<Sysname\> system-view
 
-[\[Sysname\] openflow instance 1]{lang="EN-US"}
+Sysname openflow instance 1
 
-[\[Sysname-of-inst-1\] listening port 20000 ssl ssl_name]{lang="EN-US"}
-:::
-
-::: {#1727447375 .myid}
-[]{#_Toc404798426}[]{#struct_0_x9563_11471_x567640078}[]{#_Toc348873555}
+Sysname-of-inst-1 listening port 20000 ssl ssl_name
 
 **OpenFlow \-- OpenFlow配置命令 \-- mac-ip dynamic-mac aware**
 
 ------------------------------------------------------------------------
 
-[**[mac-ip dynamic-mac aware]{lang="EN-US"}**]{#struct_0_x9563_11471_x292216440}[命令用来配置支持动态]{style="font-family:
-宋体"}[MAC]{lang="IT"}[地址]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[mac-ip dynamic-mac aware**]命令用来配置支持动态MAC地址。
 
-[**[undo mac-ip dynamic-mac aware]{lang="EN-US"}**]{#struct_0_x9563_11471_x461107531}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo mac-ip dynamic-mac aware**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x2074980099}
+【命令】
 
-[**[mac-ip dynamic-mac aware]{lang="EN-US"}**]{#struct_0_x9563_11471_187441865}
+**[mac-ip dynamic-mac aware**]
 
-[**[undo mac-ip dynamic-mac aware]{lang="EN-US"}**]{#struct_0_x9563_11471_973967270}
+**[undo mac-ip dynamic-mac aware**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x9563_11471_447159222}
+【缺省情况】
 
-[[不支持动态]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x9563_11471_1936918879}[地址，即忽略控制器下发的此类消息。]{style="font-family:宋体"}
+不支持动态MAC地址，即忽略控制器下发的此类消息。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1002350223}
+【视图】
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_x968001541}[实例视图]{style="font-family:宋体"}
+OpenFlow实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_302617847}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_1082511390}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x865539213}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1115426583}
+【使用指导】
 
-[[此功能仅在支持]{style="font-family:宋体"}]{#struct_0_x9563_11471_x58788625}[MAC-IP]{lang="IT"}[流表情况下]{style="font-family:宋体"}[，]{style="font-family:宋体"}[决定是否支持控制器在查询或者删除流表项时包含动态]{style="font-family:宋体"}[MAC]{lang="IT"}[地址]{style="font-family:宋体"}[（]{style="font-family:宋体"}[动态]{style="font-family:宋体"}[MAC]{lang="IT"}[表项变化不需要上报控制器]{style="font-family:
-宋体"}[）]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+此功能仅在支持MAC-IP流表情况下，决定是否支持控制器在查询或者删除流表项时包含动态MAC地址（动态MAC表项变化不需要上报控制器）。
 
-[[【举例】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_x434098528}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_x1002415759}[配置实例]{style="font-family:宋体"}[1]{lang="EN-US"}[支持动态]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+\# 配置实例1支持动态MAC地址。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x9563_11471_1510663704}
+\<Sysname\> system-view
 
-[\[Sysname\] openflow instance 1]{lang="EN-US"}
+Sysname openflow instance 1
 
-[\[Sysname-of-inst-1\] mac-ip dynamic-mac aware]{lang="EN-US"}
-:::
-
-::: {#-666783653 .myid}
-[]{#_Toc404798427}[]{#struct_0_x9563_11471_314304798}[]{#_Toc362964005}
+Sysname-of-inst-1 mac-ip dynamic-mac aware
 
 **OpenFlow \-- OpenFlow配置命令 \-- mac-learning forbidden**
 
 ------------------------------------------------------------------------
 
-[**[mac-learning forbidden]{lang="EN-US"}**]{#struct_0_x9563_11471_x612436907}[命令用来在实例配置的]{style="font-family:宋体"}[VLAN]{lang="IT"}[上禁止]{style="font-family:宋体"}[MAC]{lang="IT"}[地址学习]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[mac-learning forbidden**]命令用来在实例配置的VLAN上禁止MAC地址学习。
 
-[**[undo mac-learning forbidden]{lang="EN-US"}**]{#struct_0_x9563_11471_314239262}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo mac-learning forbidden**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_313780511}
+【命令】
 
-[**[mac-learning forbidden]{lang="EN-US"}**]{#struct_0_x9563_11471_x1247558615}
+**[mac-learning forbidden**]
 
-[**[undo mac-learning forbidden]{lang="EN-US"}**]{#struct_0_x9563_11471_313714975}
+**[undo mac-learning forbidden**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x9563_11471_278609084}
+【缺省情况】
 
-[[实例配置的]{style="font-family:宋体"}]{#struct_0_x9563_11471_313911583}[VLAN]{lang="IT"}[上]{style="font-family:宋体"}[允许]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址学习。]{style="font-family:宋体"}
+实例配置的VLAN上允许MAC地址学习。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_313846047}
+【视图】
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_895683870}[实例视图]{style="font-family:宋体"}
+OpenFlow实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_313518367}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_313452831}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x1179274793}
+mdc-admin
 
-[[【举例】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_313649439}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_313583903}[配置实例]{style="font-family:宋体"}[1]{lang="EN-US"}[禁止]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址学习。]{style="font-family:宋体"}
+\# 配置实例1禁止MAC地址学习。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x9563_11471_x787661973}
+\<Sysname\> system-view
 
-[\[Sysname\] openflow instance 1]{lang="EN-US"}
+Sysname openflow instance 1
 
-[\[Sysname-of-inst-1\] mac-learning forbidden]{lang="EN-US"}
-:::
-
-::: {#139248904 .myid}
-[]{#_Toc404798428}[]{#struct_0_x9563_11471_1870898961}[]{#_Toc348873547}
+Sysname-of-inst-1 mac-learning forbidden
 
 **OpenFlow \-- OpenFlow配置命令 \-- openflow instance**
 
 ------------------------------------------------------------------------
 
-[**[openflow instance]{lang="EN-US"}**]{#struct_0_x9563_11471_883789613}[命令用来创建]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例，并进入]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例视图。]{style="font-family:宋体"}
+**[openflow instance**]命令用来创建OpenFlow实例，并进入OpenFlow实例视图。
 
-[**[undo openflow instance]{lang="EN-US"}**]{#struct_0_x9563_11471_x919845259}[命令用来删除]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例。]{style="font-family:宋体"}
+**[undo openflow instance**]命令用来删除OpenFlow实例。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1093324563}
+【命令】
 
-[**[openflow instance]{lang="EN-US"}**[ *instance-id*]{lang="EN-US"}]{#struct_0_x9563_11471_x57003920}
+**[openflow instance** *instance-id*]
 
-[**[undo openflow instance]{lang="EN-US"}**[ *instance-id*]{lang="EN-US"}]{#struct_0_x9563_11471_242804775}
+**[undo openflow instance** *instance-id*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1002481295}
+【缺省情况】
 
-[[没有配置]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_1883215552}[实例。]{style="font-family:宋体"}
+没有配置OpenFlow实例。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1546928450}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x9563_11471_70104298}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_748889307}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_377547354}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_1729733031}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_305631564}
+【参数】
 
-[*[instance-id]{lang="SV" style="color:black"}*]{#struct_0_x9563_11471_1383716131}[：]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[instance-id*]：OpenFlow实例号，取值范围为1～4094。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1002546831}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_1408846138}[创建]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例]{style="font-family:宋体"}[1]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例视图。]{style="font-family:宋体"}
+\# 创建OpenFlow实例1，并进入OpenFlow实例视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x9563_11471_x214889447}
+\<Sysname\> system-view
 
-[\[Sysname\] openflow instance 1]{lang="EN-US"}
+Sysname openflow instance 1
 
-[\[Sysname-of-inst-1\]]{lang="EN-US"}
-:::
-
-::: {#-36456422 .myid}
-[]{#_Toc404798429}[]{#struct_0_x9563_11471_1974566848}[]{#_Toc384108872}
+Sysname-of-inst-1
 
 **OpenFlow \-- OpenFlow配置命令 \-- openflow instance oap-instance**
 
 ------------------------------------------------------------------------
 
-[**[openflow instance]{lang="EN-US"}**[ **oap-instance**]{lang="EN-US"}]{#struct_0_x9563_11471_x1606946814}[命令用来创建]{style="font-family:宋体"}[OpenFlow OAP]{lang="EN-US"}[实例，并进入]{style="font-family:宋体"}[OpenFlow OAP]{lang="EN-US"}[实例视图。]{style="font-family:宋体"}
+**[openflow instance** **oap-instance**]命令用来创建OpenFlow OAP实例，并进入OpenFlow OAP实例视图。
 
-[**[undo openflow instance oap-instance]{lang="EN-US"}**]{#struct_0_x9563_11471_x377022337}[命令用来删除]{style="font-family:宋体"}[OpenFlow OAP]{lang="EN-US"}[实例。]{style="font-family:宋体"}
+**[undo openflow instance oap-instance**]命令用来删除OpenFlow OAP实例。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1974566847}
+【命令】
 
-[**[openflow instance oap-instance]{lang="EN-US"}**]{#struct_0_x9563_11471_x1607012350}
+**[openflow instance oap-instance**]
 
-[**[undo openflow instance oap-instance]{lang="EN-US"}**]{#struct_0_x9563_11471_415431062}
+**[undo openflow instance oap-instance**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x9563_11471_896667629}
+【缺省情况】
 
-[[没有配置]{style="font-family:宋体"}[OpenFlow OAP]{lang="EN-US"}]{#struct_0_x9563_11471_x730978114}[实例。]{style="font-family:宋体"}
+没有配置OpenFlow OAP实例。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1779398706}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1319158270}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1974566846}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x1607077886}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x292847789}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x475161780}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_1324387673}[创建]{style="font-family:宋体"}[OpenFlow OAP]{lang="EN-US"}[实例，并进入]{style="font-family:宋体"}[OpenFlow OAP]{lang="EN-US"}[实例视图。]{style="font-family:宋体"}
+\# 创建OpenFlow OAP实例，并进入OpenFlow OAP实例视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x9563_11471_1286586215}
+\<Sysname\> system-view
 
-[\[Sysname\] openflow instance oap-instance]{lang="EN-US"}
+Sysname openflow instance oap-instance
 
-[\[Sysname-of-inst-oap\]]{lang="EN-US"}
-:::
-
-::::: {#-262067582 .myid}
-[]{#_Toc404798430}[]{#struct_0_x9563_11471_2035413277}[]{#_Toc392924131}
+Sysname-of-inst-oap
 
 **OpenFlow \-- OpenFlow配置命令 \-- openflow lossless enable**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](OpenFlow命令.files/image002.png){#图片 1 border="0" width="63" height="25"}]{lang="EN-US"}]{#struct_0_x9563_11471_609910200}
-:::
+![说明](OpenFlow命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x9563_11471_37245329}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[openflow lossless enable**]命令用来开启OpenFlow的无丢包模式。
 
-[**[openflow lossless enable]{lang="EN-US"}**]{#struct_0_x9563_11471_1257901340}[命令用来开启]{style="font-family:
-宋体"}[OpenFlow]{lang="EN-US"}[的无丢包模式。]{style="font-family:宋体"}
+**[undo openflow lossless enable**]命令用来恢复缺省情况。
 
-[**[undo openflow lossless enable]{lang="EN-US"}**]{#struct_0_x9563_11471_483569491}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_415182451}
+**[openflow lossless enable**]
 
-[**[openflow lossless enable]{lang="EN-US"}**]{#struct_0_x9563_11471_x364692421}
+**[undo openflow lossless enable**]
 
-[**[undo openflow lossless enable]{lang="EN-US"}**]{#struct_0_x9563_11471_696453818}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1416532130}
+没有开启OpenFlow的无丢包模式。
 
-[[没有开启]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_x1849091253}[的无丢包模式]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1946793370}
+系统视图
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x9563_11471_x693470078}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x348248533}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_1877849473}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x1862198639}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1711447346}
+在某些设备的OpenFlow场景中，OpenFlow的流表下发过程中设备可能会出现丢包，从而引发很多问题，比如流量误上送Controller，导致误下发OpenFlow表项等，此时需要开启OpenFlow的无丢包模式。在无丢包模式下，设备不会丢包，OpenFlow在实际网络中可以正常使用，但是匹配能力会受限制，比如不能匹配IPv6地址。
 
-[[在某些设备的]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_918448250}[场景中，]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[的流表下发过程中设备可能会出现丢包，从而引发很多问题，比如流量误上送]{style="font-family:宋体"}[Controller]{lang="EN-US"}[，导致误下发]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[表项等，此时需要]{style="font-family:宋体"}[开启]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[的无丢包模式]{style="font-family:宋体"}[。在无丢包模式下，设备不会丢包，]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[在实际网络中可以正常使用，但是匹配能力会受限制，比如不能匹配]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+在非OpenFlow场景中，请不要开启OpenFlow的无丢包模式，否则会影响转发效率和能力级匹配。
 
-[[在非]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_x40326304}[场景中，请不要]{style="font-family:宋体"}[开启]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[的无丢包模式]{style="font-family:宋体"}[，否则会影响转发效率和能力级匹配。]{style="font-family:宋体"}
+不同设备的OpenFlow场景是否需要使用此配置不同，请根据实际需要配置。
 
-[[不同设备的]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_1788116001}[场景是否需要使用此配置不同，请根据实际需要配置。]{style="font-family:宋体"}
+要使配置生效，必须在配置后重启设备。在重启设备前，请保存当前配置。
 
-[[要使配置生效，必须在配置后重启设备。在重启设备前，请保存当前配置。]{style="font-family:宋体"}]{#struct_0_x9563_11471_x366387064}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x9563_11471_963662118}
+\# 开启OpenFlow的无丢包模式。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_462274013}[开启]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[的无丢包模式。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x9563_11471_872613863}
+Sysname openflow lossless enable
 
-[\[Sysname\] openflow lossless enable]{lang="EN-US"}
+ Enable lossless traffic function? [Y/N:y]
 
-[ Enable lossless traffic function? \[Y/N\]:y]{lang="EN-US"}
-
-[ For the setting to take effect, save the configuration, and then reboot the device.]{lang="EN-US"}
-:::::
-
-::: {#139260955 .myid}
-[]{#_Toc404798431}[]{#struct_0_x9563_11471_1745274301}[]{#_Toc391545529}
+ For the setting to take effect, save the configuration, and then reboot the device.
 
 **OpenFlow \-- OpenFlow配置命令 \-- openflow-instance**
 
 ------------------------------------------------------------------------
 
-[**[openflow-instance]{lang="EN-US"}**]{#struct_0_x9563_11471_1745274298}[命令用来在接口下绑定]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例。]{style="font-family:宋体"}
+**[openflow-instance**]命令用来在接口下绑定OpenFlow实例。
 
-[**[undo openflow-instance]{lang="EN-US"}**]{#struct_0_x9563_11471_1905422756}[命令用来取消该配置。]{style="font-family:宋体"}
+**[undo openflow-instance**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1745274299}
+【命令】
 
-[**[openflow-instance]{lang="EN-US"}**[ *instance-id*]{lang="EN-US"}]{#struct_0_x9563_11471_1905357220}
+**[openflow-instance** *instance-id*]
 
-[**[undo openflow-instance]{lang="EN-US"}**[ *instance-id*]{lang="EN-US"}]{#struct_0_x9563_11471_1745274296}
+**[undo openflow-instance** *instance-id*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1745274297}
+【缺省情况】
 
-[[接口下没有绑定]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_1905750436}[实例。]{style="font-family:宋体"}
+接口下没有绑定OpenFlow实例。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_935970240}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x9563_11471_96164226}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_935970241}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_935970238}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_x1095476854}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_935970239}
+【参数】
 
-[*[instance-id]{lang="SV" style="color:black"}*]{#struct_0_x9563_11471_x1095476853}[：]{style="font-family:宋体"}[OpenFlow]{lang="EN-US"}[实例号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[instance-id*]：OpenFlow实例号，取值范围为1～4094。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x9563_11471_935970236}
+【举例】
 
-[[\# OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_935970237}[实例]{style="font-family:宋体"}[1]{lang="EN-US"}[已存在，且为接口模式，配置接口]{style="font-family:宋体"}[GigabitEthernet]{lang="EN-US"}[1/0/1]{lang="EN-US"}[下绑定实例]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# OpenFlow实例1已存在，且为接口模式，配置接口GigabitEthernet1/0/1下绑定实例1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x9563_11471_935970234}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] openflow-instance 1]{lang="EN-US"}
-:::
-
-::: {#1212291552 .myid}
-[]{#_Toc404798432}[]{#struct_0_x9563_11471_x1095476858}[]{#_Toc391545530}
+Sysname-GigabitEthernet1/0/1 openflow-instance 1
 
 **OpenFlow \-- OpenFlow配置命令 \-- port**
 
 ------------------------------------------------------------------------
 
-[**[port]{lang="EN-US"}**]{#struct_0_x9563_11471_935970235}[命令用来在实例下绑定接口。]{style="font-family:宋体"}
+**[port**]命令用来在实例下绑定接口。
 
-[**[undo port]{lang="EN-US"}**]{#struct_0_x9563_11471_x1095476857}[命令用来取消该配置。]{style="font-family:宋体"}
+**[undo port**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_935970232}
+【命令】
 
-[**[port]{lang="EN-US"}**[ *interface-type interface-number1* \[ **to** *interface-type interface-number2* \]]{lang="EN-US"}]{#struct_0_x9563_11471_x1402681928}
+**[port** *interface-type interface-number1* [ **to** *interface-type interface-number2* ]]
 
-[**[undo port]{lang="EN-US"}***[ interface-type interface-number1]{lang="EN-US"}*[ \[ **to** *interface-type interface-number2* \]]{lang="EN-US"}]{#struct_0_x9563_11471_1529043492}
+**[undo port*** interface-type interface-number1* [ **to** *interface-type interface-number2* ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1402681927}
+【缺省情况】
 
-[[实例下没有绑定接口。]{style="font-family:宋体"}]{#struct_0_x9563_11471_164808128}
+实例下没有绑定接口。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x215366210}
+【视图】
 
-[[OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_1740948929}[实例视图]{style="font-family:宋体"}
+OpenFlow实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x590616696}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_1740948926}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_1740948927}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x590747768}
+【参数】
 
-[*[interface-type interface-number1 ]{lang="EN-US"}*[\[ **to** *interface-type interface-number2* \]]{lang="EN-US"}]{#struct_0_x9563_11471_1740948924}[：接口类型和编号，]{style="font-family:宋体"}*[interface-number2]{lang="EN-US"}*[的值要大于或等于]{style="font-family:宋体"}*[interface-number1]{lang="EN-US"}*[的值]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+*[interface-type interface-number1 * **to** *interface-type interface-number2* ]：接口类型和编号，*interface-number2*的值要大于或等于*interface-number1*的值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1740948925}
+【举例】
 
-[[\# OpenFlow]{lang="EN-US"}]{#struct_0_x9563_11471_x590878840}[实例下绑定接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[到]{style="font-family:宋体"}[GigabitEthernet1/0/3]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# OpenFlow实例下绑定接口GigabitEthernet1/0/1到GigabitEthernet1/0/3。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x9563_11471_1740948922}
+\<Sysname\> system-view
 
-[\[Sysname\] openflow instance 1]{lang="EN-US"}
+Sysname openflow instance 1
 
-[\[Sysname-of-inst-1\] port gigabitethernet 1/0/1 to gigabitethernet 1/0/3]{lang="EN-US"}
-:::
-
-::: {#-925099402 .myid}
-[]{#_Toc396293583}[]{#_Toc404798433}[]{#struct_0_x9563_11471_1110163353}
+Sysname-of-inst-1 port gigabitethernet 1/0/1 to gigabitethernet 1/0/3
 
 **OpenFlow \-- OpenFlow配置命令 \-- reset openflow instance controller statistics**
 
 ------------------------------------------------------------------------
 
-[**[reset openflow instance controller statistics]{lang="EN-US"}**]{#struct_0_x9563_11471_x1390762182}[命令用来清除控制器发送和接收报文的统计计数。]{style="font-family:宋体"}
+**[reset openflow instance controller statistics**]命令用来清除控制器发送和接收报文的统计计数。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1214561235}
+【命令】
 
-[**[reset openflow instance]{lang="EN-US"}**[ { *instance-id* { **controller** \[ *controller-id* \] \| **listened** } \| **[oap-instance]{style="color:black"}** **listened** } **statistics**]{lang="EN-US"}]{#struct_0_x9563_11471_x1964535834}
+**[reset openflow instance** { *instance-id* { **controller** [ *controller-id*  \| **listened** } \| **oap-instance** **listened** } **statistics**]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x9563_11471_397773148}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x9563_11471_x1703692283}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x9563_11471_x1988733939}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x9563_11471_273600061}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x9563_11471_1110097817}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x9563_11471_1724938687}
+【参数】
 
-[*[instance-id]{lang="IT"}*]{#struct_0_x9563_11471_x201992296}[：]{style="font-family:宋体"}[OpenFlow]{lang="IT"}[实例号，取值范围为]{style="font-family:宋体"}[1]{lang="IT"}[～]{style="font-family:宋体"}[4094]{lang="IT"}[。]{style="font-family:
-宋体"}
+*[instance-id*]：OpenFlow实例号，取值范围为1～4094。
 
-[*[controller-id]{lang="IT"}*]{#struct_0_x9563_11471_x703854438}[：控制器的]{style="font-family:宋体"}[ID]{lang="IT"}[号，取值范围为]{style="font-family:宋体"}[0]{lang="IT"}[～]{style="font-family:宋体"}[63]{lang="IT"}[。如果未指定本参数，清除实例下所有控制器发送和接收报文的统计计数。]{style="font-family:
-宋体"}
+*[controller-id*]：控制器的ID号，取值范围为0～63。如果未指定本参数，清除实例下所有控制器发送和接收报文的统计计数。
 
-[**[listened]{lang="IT" style="font-size:9.5pt;color:black"}**]{#struct_0_x9563_11471_x1349794732}[：]{style="font-size:9.5pt;font-family:宋体;color:black"}[实例启动的服务端连接的客户端。]{style="font-size:9.5pt;font-family:宋体;color:black"}
+**[listened**]：实例启动的服务端连接的客户端。
 
-[**[oap-instance]{lang="IT" style="font-size:9.5pt;color:black"}**]{#struct_0_x9563_11471_x380621909}[：]{style="font-size:9.5pt;font-family:宋体;color:black"}[OpenFlow OAP]{lang="IT" style="font-size:9.5pt;color:black"}[实例。]{style="font-size:
-9.5pt;font-family:宋体;color:black"}
+**[oap-instance**]：OpenFlow OAP实例。
 
-[[【举例】]{style="font-family:
-黑体"}]{#struct_0_x9563_11471_895728071}
+【举例】
 
-[[\# ]{lang="IT"}]{#struct_0_x9563_11471_x1398325539}[清除]{style="font-family:宋体"}[OpenFlow]{lang="IT"}[实例]{style="font-family:宋体"}[1]{lang="IT"}[对应的所有]{style="font-family:
-宋体"}[控制器发送和接收报文的统计计数]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 清除OpenFlow实例1对应的所有控制器发送和接收报文的统计计数。
 
-[[\<Sysname\> reset openflow instance 1 controller statistics]{lang="EN-US"}]{#struct_0_x9563_11471_835556892}
+\<Sysname\> reset openflow instance 1 controller statistics
 
-[[\# ]{lang="EN-US"}]{#struct_0_x9563_11471_1945297711}[清除]{style="font-family:宋体"}[OAP]{lang="EN-US"}[实例]{style="font-family:宋体"}[启动的服务端连接的客户端]{style="font-size:9.5pt;font-family:宋体;
-color:black"}[发送和接收报文的统计计数]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 清除OAP实例启动的服务端连接的客户端发送和接收报文的统计计数。
 
-[[\<Sysname\> reset openflow instance oap-instance listened statistics]{lang="EN-US"}]{#struct_0_x9563_11471_x1436746480}
+\<Sysname\> reset openflow instance oap-instance listened statistics
 
-[ ]{lang="EN-US"}
-:::

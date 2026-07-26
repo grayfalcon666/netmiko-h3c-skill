@@ -1,852 +1,822 @@
-::: {#-1573386013 .myid}
-[]{#_Toc118791469}[]{#_Toc404784910}[]{#struct_0_x8353_x2033_1981975245}[]{#_Toc123629827}[]{#_Toc277669731}[]{#_Toc277669732}[]{#_Toc277669735}[]{#_Toc277669736}[]{#_Toc277669737}[]{#_Toc277669738}[]{#_Toc277669739}[]{#_Toc277669740}[]{#_Toc277669741}[]{#_Toc277669742}[]{#_Toc277669743}[]{#_Toc277669744}[]{#_Toc277669745}[]{#_Toc277669746}[]{#_Toc277669795}[]{#_Toc277669796}[]{#_Toc277669824}[]{#_Toc277669825}[]{#_Toc277669845}[]{#_Toc277669846}[]{#_Toc277669865}[]{#_Toc277669866}[]{#_Toc277669867}[]{#_Toc277669868}[]{#_Toc277669869}[]{#_Toc277669871}[]{#_Toc277669872}[]{#_Toc277669873}[]{#_Toc277669874}[]{#_Toc277669879}[]{#_Toc277669883}[]{#_Toc277669887}[]{#_Toc277669888}[]{#_Toc277669891}[]{#_Toc277669892}[]{#_Toc277669894}[]{#_Toc277669899}[]{#_Toc277669900}[]{#_Toc277669901}[]{#_Toc277669902}[]{#_Toc277669903}[]{#_Toc277669904}[]{#_Toc277669905}[]{#_Toc277669906}[]{#_Toc277669907}[]{#_Toc277669908}[]{#_Toc277669910}[]{#_Toc277669912}[]{#_Toc277669916}[]{#_Toc277669920}[]{#_Toc277669921}[]{#_Toc277669924}[]{#_Toc277669925}[]{#_Toc277669926}[]{#_Toc277669927}[]{#_Toc277669930}[]{#_Toc277669931}[]{#_Toc277669932}[]{#_Toc277669933}[]{#_Toc277669934}[]{#_Toc277669935}[]{#_Toc277669936}[]{#_Toc277669937}[]{#_Toc277669938}[]{#_Toc277669939}[]{#_Toc277669940}[]{#_Toc277669941}[]{#_Toc277669990}[]{#_Toc277669991}[]{#_Toc277670043}[]{#_Toc277670044}[]{#_Toc277670067}[]{#_Toc277670068}[]{#_Toc277670087}[]{#_Toc277670088}[]{#_Toc277670089}[]{#_Toc277670090}[]{#_Toc277670091}[]{#_Toc277670092}[]{#_Toc277670095}[]{#_Toc277670097}[]{#_Toc277670098}[]{#_Toc277670099}[]{#_Toc277670100}[]{#_Toc277670105}[]{#_Toc277670109}[]{#_Toc277670115}[]{#_Toc277670119}[]{#_Toc277670122}[]{#_Toc277670127}[]{#_Toc277670128}[]{#_Toc277670129}[]{#_Toc277670131}[]{#_Toc277670133}[]{#_Toc277670134}[]{#_Toc277670138}[]{#_Toc277670139}[]{#_Toc277670140}[]{#_Toc277670141}[]{#_Toc277670142}[]{#_Toc277670143}[]{#_Toc277670144}[]{#_Toc277670145}[]{#_Toc277670149}[]{#_Toc277670150}[]{#_Toc277670153}[]{#_Toc277670157}[]{#_Toc277670161}[]{#_Toc277670162}
 
 **L2TP \-- L2TP调试命令 \-- debugging l2tp**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x8353_x2033_x75186858}
+【命令】
 
-[**[debugging l2tp]{lang="EN-US"}**[ { **all** \| **avp**-**hidden** \| **control-packet** \| **data-packet** \| **dump** \| **error** \| **event** }]{lang="EN-US"}]{#struct_0_x8353_x2033_1871615980}
+**[debugging l2tp**[ { **all** \| **avp**-**hidden** \| **control-packet** \| **data-packet** \| **dump** \| **error** \| **event** }]]
 
-[**[undo debugging l2tp]{lang="EN-US"}**[ { **all** \| **avp**-**hidden** \| **control-packet** \| **data-packet** \| **dump** \| **error** \| **event** }]{lang="EN-US"}]{#struct_0_x8353_x2033_1221038750}
+**[undo debugging l2tp**[ { **all** \| **avp**-**hidden** \| **control-packet** \| **data-packet** \| **dump** \| **error** \| **event** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x8353_x2033_1746000059}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x8353_x2033_598473635}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x8353_x2033_1659457608}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x8353_x2033_x347474865}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x8353_x2033_x673366296}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x8353_x2033_x640696874}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_x8353_x2033_2016368112}[：表示所有]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示所有L2TP调试信息开关。
 
-[**[avp-hidden]{lang="EN-US"}**]{#struct_0_x8353_x2033_x51077928}[：表示隐藏]{style="font-family:宋体"}[AVP]{lang="EN-US"}[的调试信息开关。]{style="font-family:宋体"}
+**[avp-hidden**]：表示隐藏AVP的调试信息开关。
 
-[**[control-packet]{lang="EN-US"}**]{#struct_0_x8353_x2033_1810891524}[：表示]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[控制报文调试信息开关。]{style="font-family:宋体"}
+**[control-packet**]：表示L2TP控制报文调试信息开关。
 
-[**[data-packet]{lang="EN-US"}**]{#struct_0_x8353_x2033_122457988}[：表示]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[数据报文调试信息开关。]{style="font-family:宋体"}
+**[data-packet**]：表示L2TP数据报文调试信息开关。
 
-[**[dump]{lang="EN-US"}**]{#struct_0_x8353_x2033_1115507896}[：表示]{style="font-family:宋体"}[PPP]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}
+**[dump**]：表示PPP报文调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_x8353_x2033_598408099}[：表示错误调试信息开关。]{style="font-family:宋体"}
+**[error**]：表示错误调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_x8353_x2033_x635214219}[：表示事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示事件调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_x8353_x2033_x577171579}
+【描述】
 
-[**[debugging l2tp]{lang="EN-US"}**]{#struct_0_x8353_x2033_x527594147}[命令用来打开]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[的调试信息开关。]{style="font-family:宋体"}**[undo debugging l2tp]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[的调试信息开关。]{style="font-family:宋体"}
+**[debugging l2tp**]命令用来打开L2TP的调试信息开关。**undo debugging l2tp**命令用来关闭L2TP的调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_x8353_x2033_x126734640}[的调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，L2TP的调试信息开关处于关闭状态。
 
-[[表1-1 ]{lang="EN-US"}[debugging l2tp avp-hidden]{lang="EN-US"}]{#struct_0_x8353_x2033_x1414844661}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging l2tp avp-hidden命令输出信息描述表
 
-[]{#table_struct_0_x2037429722}[[字段]{style="font-family:黑体"}]{#struct_0_x8353_x2033_916989822}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x8353_x2033_586730886}
+描述
 
-[*[AVP-type]{lang="EN-US"}*[ AVP was hidden.]{lang="EN-US"}]{#struct_0_x8353_x2033_598342563}
+*[AVP-type* AVP was hidden.]
 
-[[隐藏了类型为]{style="font-family:宋体"}*[AVP-type]{lang="EN-US"}*]{#struct_0_x8353_x2033_200584698}[的]{style="font-family:宋体"}[AVP]{lang="EN-US"}
+隐藏了类型为*AVP-type*的AVP
 
-[ ]{lang="EN-US"}
+表1-2 debugging l2tp control-packet命令输出信息描述表
 
-[[表1-2 ]{lang="EN-US"}[debugging l2tp control-packet]{lang="EN-US"}]{#struct_0_x8353_x2033_x1942880353}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x2036328023}[[字段]{style="font-family:黑体"}]{#struct_0_x8353_x2033_1241870526}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x8353_x2033_716849872}
+Received *message-type* packet from port 1701 (TunnelID=*tunnel-id*, length=*length*, Ns=*ns*, Nr=*nr*). Packet content: *content*
 
-[[Received *message-type* packet from port 1701 (TunnelID=*tunnel-id*, length=*length*, Ns=*ns*, Nr=*nr*). Packet content: *content*]{lang="EN-US"}]{#struct_0_x8353_x2033_612013192}
+从端口1701接收到*message-type*类型的报文，报文所属隧道的Tunnel ID为*tunnel-id*，报文长度为*length*，Ns为*ns*，Nr为*nr*，报文内容为*content*
 
-[[从端口]{style="font-family:宋体"}[1701]{lang="EN-US"}]{#struct_0_x8353_x2033_x1795323245}[接收到]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[类型的报文，报文所属隧道的]{style="font-family:宋体"}[Tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[，报文长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*[，]{style="font-family:宋体"}[Ns]{lang="EN-US"}[为]{style="font-family:宋体"}*[ns]{lang="EN-US"}*[，]{style="font-family:宋体"}[Nr]{lang="EN-US"}[为]{style="font-family:宋体"}*[nr]{lang="EN-US"}*[，报文内容为]{style="font-family:宋体"}*[content]{lang="EN-US"}*
+其中，*message-type*取值包括ZLB-ACK、UNKNOWN、Reserved、SCCRP、SCCCN、StopCCN、Hello、ICRQ、ICRP、ICCN、CDN、WEN和SLI
 
-[[其中，]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*]{#struct_0_x8353_x2033_599325603}[取值包括]{style="font-family:宋体"}[ZLB-ACK]{lang="EN-US"}[、]{style="font-family:宋体"}[UNKNOWN]{lang="EN-US"}[、]{style="font-family:宋体"}[Reserved]{lang="EN-US"}[、]{style="font-family:宋体"}[SCCRP]{lang="EN-US"}[、]{style="font-family:宋体"}[SCCCN]{lang="EN-US"}[、]{style="font-family:宋体"}[StopCCN]{lang="EN-US"}[、]{style="font-family:宋体"}[Hello]{lang="EN-US"}[、]{style="font-family:宋体"}[ICRQ]{lang="EN-US"}[、]{style="font-family:宋体"}[ICRP]{lang="EN-US"}[、]{style="font-family:宋体"}[ICCN]{lang="EN-US"}[、]{style="font-family:宋体"}[CDN]{lang="EN-US"}[、]{style="font-family:宋体"}[WEN]{lang="EN-US"}[和]{style="font-family:宋体"}[SLI]{lang="EN-US"}
+Received *message-type* packet from port 1701 (length=*length*, Ns=*ns*, Nr=*nr*). Packet content: *content*
 
-[[Received *message-type* packet from port 1701 (length=*length*, Ns=*ns*, Nr=*nr*). Packet content: *content*]{lang="EN-US"}]{#struct_0_x8353_x2033_1510355230}
+从端口1701接收到*message-type*类型的报文，报文长度为*length*，Ns为*ns*，Nr为*nr*，报文内容为*content*
 
-[[从端口]{style="font-family:宋体"}[1701]{lang="EN-US"}]{#struct_0_x8353_x2033_x520068331}[接收到]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[类型的报文，报文长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*[，]{style="font-family:宋体"}[Ns]{lang="EN-US"}[为]{style="font-family:宋体"}*[ns]{lang="EN-US"}*[，]{style="font-family:宋体"}[Nr]{lang="EN-US"}[为]{style="font-family:宋体"}*[nr]{lang="EN-US"}*[，报文内容为]{style="font-family:宋体"}*[content]{lang="EN-US"}*
+其中，*message-type*取值包括SCCRQ、UNKNOWN和Reserved
 
-[[其中，]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*]{#struct_0_x8353_x2033_1002546510}[取值包括]{style="font-family:宋体"}[SCCRQ]{lang="EN-US"}[、]{style="font-family:宋体"}[UNKNOWN]{lang="EN-US"}[和]{style="font-family:宋体"}[Reserved]{lang="EN-US"}
+Encapsulated *AVP-type* AVP: *encapsulated-avp*
 
-[[Encapsulated *AVP-type* AVP: *encapsulated-avp*]{lang="EN-US"}]{#struct_0_x8353_x2033_x1844507522}
+封装类型为*AVP-type*的AVP。封装后AVP的内容为*encapsulated-avp*
 
-[[封装类型为]{style="font-family:宋体"}*[AVP-type]{lang="EN-US"}*]{#struct_0_x8353_x2033_x771357068}[的]{style="font-family:宋体"}[AVP]{lang="EN-US"}[。封装后]{style="font-family:宋体"}[AVP]{lang="EN-US"}[的内容为]{style="font-family:宋体"}*[encapsulated-avp]{lang="EN-US"}*
+表1-3 debugging l2tp data-packet命令输出信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表1-3 ]{lang="EN-US"}[debugging l2tp data-packet]{lang="EN-US"}]{#struct_0_x8353_x2033_803621182}[命令输出信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x2041350479}[[字段]{style="font-family:黑体"}]{#struct_0_x8353_x2033_599260067}
+Encapsulated an L2TP data packet on interface *interface-name* (length*=length*):
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x8353_x2033_x807974800}
+ Source IP: *source-ip*
 
-[[Encapsulated an L2TP data packet on interface *interface-name* (length*=length*):]{lang="EN-US"}]{#struct_0_x8353_x2033_1092797491}
+**[Destination IP: *destination-ip*]
 
-[[ Source IP: *source-ip*]{lang="EN-US"}]{#struct_0_x8353_x2033_1230490848}
+ Source port: *source-port*
 
-[*[ ]{lang="EN-US"}*[Destination IP: *destination-ip*]{lang="EN-US"}]{#struct_0_x8353_x2033_x1214704493}
+ Destination port: *destination-port*
 
-[[ Source port: *source-port*]{lang="EN-US"}]{#struct_0_x8353_x2033_x76722308}
+ Tunnel ID: *tunnel-id*
 
-[[ Destination port: *destination-port*]{lang="EN-US"}]{#struct_0_x8353_x2033_x853836182}
+ Session ID: *session-id*
 
-[[ Tunnel ID: *tunnel-id*]{lang="EN-US"}]{#struct_0_x8353_x2033_598801312}
+在接口*interface-name*上封装一个L2TP数据报文
 
-[[ Session ID: *session-id*]{lang="EN-US"}]{#struct_0_x8353_x2033_x988352043}
+·{.TableTextChar}报文长度为*length*
 
-[[在接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1766368425}[上封装一个]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[数据报文]{style="font-family:宋体"}
+·{.TableTextChar}源IP地址为*source-ip*
 
-[[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:
-  Symbol"}]{.TableTextChar}[报文长度为]{lang="EN-US" style="font-family:宋体"}*[length]{lang="EN-US"}*]{#struct_0_x8353_x2033_787517444}
+·{.TableTextChar}目的IP地址为*destination-ip*
 
-[[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:
-  Symbol"}]{.TableTextChar}[源]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x8353_x2033_514190794}[地址为]{lang="EN-US" style="font-family:宋体"}*[source-ip]{lang="EN-US"}*
+·{.TableTextChar}源端口号为*source-port*
 
-[[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:
-  Symbol"}]{.TableTextChar}[目的]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x8353_x2033_x871568704}[地址为]{lang="EN-US" style="font-family:宋体"}*[destination-ip]{lang="EN-US"}*
+·{.TableTextChar}目的端口号为*destination-port*
 
-[[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:
-  Symbol"}]{.TableTextChar}[源端口号为]{lang="EN-US" style="font-family:宋体"}*[source-port]{lang="EN-US"}*]{#struct_0_x8353_x2033_598735776}
+·{.TableTextChar}隧道ID为*tunnel-id*
 
-[[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:
-  Symbol"}]{.TableTextChar}[目的端口号为]{lang="EN-US" style="font-family:宋体"}*[destination-port]{lang="EN-US"}*]{#struct_0_x8353_x2033_x14826392}
+·会话ID为*session-id*
 
-[[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:
-  Symbol"}]{.TableTextChar}[隧道]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x8353_x2033_1213176847}[为]{lang="EN-US" style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+Received an L2TP data packet:
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[会话]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x8353_x2033_1295117888}[为]{lang="EN-US" style="font-family:宋体"}*[session-id]{lang="EN-US"}*
+ Source IP: *source-ip*
 
-[[Received an L2TP data packet:]{lang="EN-US"}]{#struct_0_x8353_x2033_1391578401}
+**[Destination IP: *destination-ip*]
 
-[[ Source IP: *source-ip*]{lang="EN-US"}]{#struct_0_x8353_x2033_598670240}
+ Source port: *source-port*
 
-[*[ ]{lang="EN-US"}*[Destination IP: *destination-ip*]{lang="EN-US"}]{#struct_0_x8353_x2033_x1592164897}
+ Destination port: *destination-port*
 
-[[ Source port: *source-port*]{lang="EN-US"}]{#struct_0_x8353_x2033_292888435}
+接收到一个L2TP数据报文
 
-[[ Destination port: *destination-port*]{lang="EN-US"}]{#struct_0_x8353_x2033_510481392}
+·源IP地址为*source-ip*
 
-[[接收到一个]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_x8353_x2033_x2144559899}[数据报文]{style="font-family:宋体"}
+·目的IP地址为*destination-ip*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[源]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x8353_x2033_529124468}[地址为]{lang="EN-US" style="font-family:宋体"}*[source-ip]{lang="EN-US"}*
+·源端口号为*source-port*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[目的]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x8353_x2033_598604704}[地址为]{lang="EN-US" style="font-family:宋体"}*[destination-ip]{lang="EN-US"}*
+·目的端口号为*destination-port*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[源端口号为]{lang="EN-US" style="font-family:宋体"}*[source-port]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1605974981}
+Successfully parsed the L2TP header (L2TP header length=*length*):
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[目的端口号为]{lang="EN-US" style="font-family:宋体"}*[destination-port]{lang="EN-US"}*]{#struct_0_x8353_x2033_1116736119}
+ Tunnel ID: *tunnel-id*
 
-[[Successfully parsed the L2TP header (L2TP header length=*length*):]{lang="EN-US"}]{#struct_0_x8353_x2033_555937275}
+ Session ID: *session-id*
 
-[[ Tunnel ID: *tunnel-id*]{lang="EN-US"}]{#struct_0_x8353_x2033_598539168}
+ Ns: *ns*
 
-[[ Session ID: *session-id*]{lang="EN-US"}]{#struct_0_x8353_x2033_x1081746652}
+ Type: *type*
 
-[[ Ns: *ns*]{lang="EN-US"}]{#struct_0_x8353_x2033_11773740}
+ Length: *length*
 
-[[ Type: *type*]{lang="EN-US"}]{#struct_0_x8353_x2033_x879495239}
+ Sequence: *sequence*
 
-[[ Length: *length*]{lang="EN-US"}]{#struct_0_x8353_x2033_x1700306863}
+ Offset: *offset*
 
-[[ Sequence: *sequence*]{lang="EN-US"}]{#struct_0_x8353_x2033_598473632}
+ Priority: *priority*
 
-[[ Offset: *offset*]{lang="EN-US"}]{#struct_0_x8353_x2033_1659457613}
+成功解析L2TP数据报文头，报文头长度为*length*，报文头的内容为：
 
-[[ Priority: *priority*]{lang="EN-US"}]{#struct_0_x8353_x2033_x347016112}
+·隧道ID为*tunnel-id*
 
-[[成功解析]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_x8353_x2033_x1413851961}[数据报文头，报文头长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*[，报文头的内容为：]{style="font-family:宋体"}
+·会话ID为*session-id*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[隧道]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x8353_x2033_598408096}[为]{lang="EN-US" style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+·{.TableTextChar}Ns为*ns*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[会话]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x8353_x2033_x635214228}[为]{lang="EN-US" style="font-family:宋体"}*[session-id]{lang="EN-US"}*
+·{.TableTextChar}报文类型值为*type*
 
-[[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:
-  Symbol"}]{.TableTextChar}[Ns]{lang="EN-US"}]{#struct_0_x8353_x2033_x577237118}[为]{style="font-family:
-  宋体"}*[ns]{lang="EN-US"}*
+·{.TableTextChar}报文长度为*length*
 
-[[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:
-  Symbol"}]{.TableTextChar}[报文类型值为]{style="font-family:宋体"}]{#struct_0_x8353_x2033_x577025820}*[type]{lang="EN-US"}*
+·{.TableTextChar}报文的序列号为*sequence*
 
-[[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:
-  Symbol"}]{.TableTextChar}[报文长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*]{#struct_0_x8353_x2033_598342560}
+·{.TableTextChar}报文的偏移量为*offset*
 
-[[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:
-  Symbol"}]{.TableTextChar}[报文的序列号为]{style="font-family:宋体"}*[sequence]{lang="EN-US"}*]{#struct_0_x8353_x2033_200584697}
+·报文的优先级为*priority*
 
-[[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:
-  Symbol"}]{.TableTextChar}[报文的偏移量为]{style="font-family:宋体"}*[offset]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1942880354}
+FlowCtrl: Received an L2TP data packet. TunnelID=*tunnel-id*, SessionID=*session-id*, Ns=*Ns*, ENs=*ENs1*. After receiving the packet, ENs changed to *ENs2*.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[报文的优先级为]{style="font-family:宋体"}*[priority]{lang="EN-US"}*]{#struct_0_x8353_x2033_1645155053}
+流控：收到了隧道ID为*tunnel-id*、会话ID为*session-id*的L2TP数据报文。报文的Ns为*Ns*，期望的报文序列号为*ENs1*。接收到该L2TP报文后，期望的报文序列号变成*ENs2*
 
-[[FlowCtrl: Received an L2TP data packet. TunnelID=*tunnel-id*, SessionID=*session-id*, Ns=*Ns*, ENs=*ENs1*. After receiving the packet, ENs changed to *ENs2*.]{lang="EN-US"}]{#struct_0_x8353_x2033_599325600}
+No FlowCtrl: Received an L2TP data packet. TunnelID*=tunnel-id*, SessionID*=session-id.*
 
-[[流控：收到了隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x8353_x2033_1510355233}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[、会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[session-id]{lang="EN-US"}*[的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[数据报文。报文的]{style="font-family:宋体"}[Ns]{lang="EN-US"}[为]{style="font-family:宋体"}*[Ns]{lang="EN-US"}*[，期望的报文序列号为]{style="font-family:宋体"}*[ENs1]{lang="EN-US"}*[。接收到该]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[报文后，期望的报文序列号变成]{style="font-family:宋体"}*[ENs2]{lang="EN-US"}*
+非流控：收到了隧道ID为*tunnel-id*、会话ID为*session-id*的L2TP数据报文
 
-[[No FlowCtrl: Received an L2TP data packet. TunnelID*=tunnel-id*, SessionID*=session-id.*]{lang="EN-US"}]{#struct_0_x8353_x2033_x520002795}
+Invalid FlowCtrl: Dropped an L2TP data packet. TunnelID=*tunnel-id*, SessionID=*session-id*.
 
-[[非流控：收到了隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x8353_x2033_1031203234}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[、会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[session-id]{lang="EN-US"}*[的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[数据报文]{style="font-family:宋体"}
+异常的流控：丢弃隧道ID为*tunnel-id*、会话ID为*session-id*的L2TP数据报文
 
-[[Invalid FlowCtrl: Dropped an L2TP data packet. TunnelID=*tunnel-id*, SessionID=*session-id*.]{lang="EN-US"}]{#struct_0_x8353_x2033_599260064}
+Transparently transmitted an L2TP data packet to slot *slot-value*. TunnelID=*tunnel-id*, SessionID=*session-id*.
 
-[[异常的流控：丢弃隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x8353_x2033_x807974797}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[、会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[session-id]{lang="EN-US"}*[的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[数据报文]{style="font-family:宋体"}
+把隧道ID为*tunnel-id*、会话ID为*session-id*的数据报文透传到目的板*slot-value*
 
-[[Transparently transmitted an L2TP data packet to slot *slot-value*. TunnelID=*tunnel-id*, SessionID=*session-id*.]{lang="EN-US"}]{#struct_0_x8353_x2033_372425788}
+Processed an L2TP data packet. TunnelID*=tunnel-id*, SessionID*=session-id*.
 
-[[把隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x8353_x2033_598801313}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[、会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[session-id]{lang="EN-US"}*[的数据报文透传到目的板]{style="font-family:宋体"}*[slot-value]{lang="EN-US"}*
+处理隧道ID为*tunnel-id*、会话ID为*session-id*的L2TP数据报文
 
-[[Processed an L2TP data packet. TunnelID*=tunnel-id*, SessionID*=session-id*.]{lang="EN-US"}]{#struct_0_x8353_x2033_x988352044}
+Dropped an L2TP data packet.
 
-[[处理隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x8353_x2033_x1766696105}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[、会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[session-id]{lang="EN-US"}*[的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[数据报文]{style="font-family:宋体"}
+丢弃一个L2TP数据报文
 
-[[Dropped an L2TP data packet.]{lang="EN-US"}]{#struct_0_x8353_x2033_409979208}
+表1-4 debugging l2tp dump命令输出信息描述表
 
-[[丢弃一个]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_x8353_x2033_598735777}[数据报文]{style="font-family:宋体"}
+字段
 
-[ ]{lang="EN-US"}
+描述
 
-[[表1-4 ]{lang="EN-US"}[debugging l2tp dump]{lang="EN-US"}]{#struct_0_x8353_x2033_x14826391}[命令输出信息描述表]{style="font-family:黑体"}
+Received a packet from PPP on interface *interface-name* (length=*length*): *packet-content*
 
-[]{#table_struct_0_x2038869791}[[字段]{style="font-family:黑体"}]{#struct_0_x8353_x2033_1213176848}
+在接口*interface-name*上从PPP收到一个数据报文，报文长度为*length*，报文内容为*packet-content*
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x8353_x2033_1294134848}
+Sent a packet to PPP on interface *interface-name* (length=*length*): *packet-content*
 
-[[Received a packet from PPP on interface *interface-name* (length=*length*): *packet-content*]{lang="EN-US"}]{#struct_0_x8353_x2033_208612094}
+在接口*interface-name*上向PPP发送一个数据报文，报文长度为*length*，报文内容为*packet-content*
 
-[[在接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_x8353_x2033_x681022836}[上从]{style="font-family:宋体"}[PPP]{lang="EN-US"}[收到一个数据报文，报文长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*[，报文内容为]{style="font-family:宋体"}*[packet-content]{lang="EN-US"}*
+表1-5 debugging l2tp error命令输出信息描述表
 
-[[Sent a packet to PPP on interface *interface-name* (length=*length*): *packet-content*]{lang="EN-US"}]{#struct_0_x8353_x2033_598670241}
+字段
 
-[[在接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1592164896}[上向]{style="font-family:宋体"}[PPP]{lang="EN-US"}[发送一个数据报文，报文长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*[，报文内容为]{style="font-family:宋体"}*[packet-content]{lang="EN-US"}*
+描述
 
-[ ]{lang="EN-US"}
+Failed to reclaim tunnel ID *tunnel-id*.
 
-[[表1-5 ]{lang="EN-US"}[debugging l2tp error]{lang="EN-US"}]{#struct_0_x8353_x2033_1858972376}[命令输出信息描述表]{style="font-family:黑体"}
+回收值为*tunnel-id*的隧道ID失败
 
-[]{#table_struct_0_x2039865324}[[字段]{style="font-family:黑体"}]{#struct_0_x8353_x2033_x1415628105}
+Failed to delete interface *interface-name*.
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x8353_x2033_x1142528796}
+删除名为*interface-name*的接口失败
 
-[[Failed to reclaim tunnel ID *tunnel-id*.]{lang="EN-US"}]{#struct_0_x8353_x2033_369798489}
+TunnelID=*tunnel-id*: Failed to save tunnel information to database.
 
-[[回收值为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_x283565690}[的隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}[失败]{style="font-family:宋体"}
+将隧道ID为*tunnel-id*的隧道信息保存到数据库失败
 
-[[Failed to delete interface *interface-name*.]{lang="EN-US"}]{#struct_0_x8353_x2033_598604705}
+TunnelID=*tunnel-id*, SessionID=*session-id*: Failed to save session information to database.
 
-[[删除名为]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1605974982}[的接口失败]{style="font-family:宋体"}
+将隧道ID为*tunnel-id*、会话ID为*session-id*的会话信息保存到数据库失败
 
-[[TunnelID=*tunnel-id*: Failed to save tunnel information to database.]{lang="EN-US"}]{#struct_0_x8353_x2033_1520020646}
+TunnelID=*tunnel-id*: Failed to update Ns and Nr information to database.
 
-[[将隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x8353_x2033_1829647331}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[的隧道信息保存到数据库失败]{style="font-family:宋体"}
+在隧道*tunnel-id*中，更新隧道的Ns和Nr信息到数据库失败
 
-[[TunnelID=*tunnel-id*, SessionID=*session-id*: Failed to save session information to database.]{lang="EN-US"}]{#struct_0_x8353_x2033_1456258816}
+TunnelID=*tunnel-id*: Failed to resend packet, Ns=*ns*, Nr=*nr*.
 
-[[将隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x8353_x2033_x454899158}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[、会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[session-id]{lang="EN-US"}*[的会话信息保存到数据库失败]{style="font-family:宋体"}
+在隧道*tunnel-id*中，重发Ns为*ns*、Nr为*nr*的报文失败
 
-[[TunnelID=*tunnel-id*: Failed to update Ns and Nr information to database.]{lang="EN-US"}]{#struct_0_x8353_x2033_598539169}
+TunnelID=*tunnel-id*: Failed to send packet.
 
-[[在隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1081746651}[中，更新隧道的]{style="font-family:宋体"}[Ns]{lang="EN-US"}[和]{style="font-family:宋体"}[Nr]{lang="EN-US"}[信息到数据库失败]{style="font-family:宋体"}
+在隧道*tunnel-id*中，发送报文失败
 
-[[TunnelID=*tunnel-id*: Failed to resend packet, Ns=*ns*, Nr=*nr*.]{lang="EN-US"}]{#struct_0_x8353_x2033_415058267}
+Received StopCCN packet. Due to the invalid tunnel ID, processed the packet without using the state machine.
 
-[[在隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_1948788480}[中，重发]{style="font-family:宋体"}[Ns]{lang="EN-US"}[为]{style="font-family:宋体"}*[ns]{lang="EN-US"}*[、]{style="font-family:宋体"}[Nr]{lang="EN-US"}[为]{style="font-family:宋体"}*[nr]{lang="EN-US"}*[的报文失败]{style="font-family:宋体"}
+收到StopCCN报文，但报文头中的隧道ID为无效值，所以不利用状态机处理此报文
 
-[[TunnelID=*tunnel-id*: Failed to send packet.]{lang="EN-US"}]{#struct_0_x8353_x2033_185854021}
+TunnelId=*tunnel-id*: Failed to reset ACK timer when acknowledging transmit window.
 
-[[在隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_1702896751}[中，发送报文失败]{style="font-family:宋体"}
+在隧道*tunnel-id*中，确认发送窗口时刷新ACK定时器失败
 
-[[Received StopCCN packet. Due to the invalid tunnel ID, processed the packet without using the state machine.]{lang="EN-US"}]{#struct_0_x8353_x2033_598473633}
+TunnelID= *tunnel-id*: Failed to reset Hello timer.
 
-[[收到]{style="font-family:宋体"}[StopCCN]{lang="EN-US"}]{#struct_0_x8353_x2033_1659457614}[报文，但报文头中的隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}[为无效值，所以不利用状态机处理此报文]{style="font-family:宋体"}
+在隧道*tunnel-id*中，重置Hello定时器失败
 
-[[TunnelId=*tunnel-id*: Failed to reset ACK timer when acknowledging transmit window.]{lang="EN-US"}]{#struct_0_x8353_x2033_x346688432}
+TunnelID=*tunnel-id*: Failed to reset ACK timer.
 
-[[在隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_444446309}[中，确认发送窗口时刷新]{style="font-family:宋体"}[ACK]{lang="EN-US"}[定时器失败]{style="font-family:宋体"}
+在隧道*tunnel-id*中，重置ACK定时器失败
 
-[[TunnelID= *tunnel-id*: Failed to reset Hello timer.]{lang="EN-US"}]{#struct_0_x8353_x2033_707246773}
+TunnelID= *tunnel-id*: Failed to reset Hello timer by command.
 
-[[在隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_598408097}[中，重置]{style="font-family:宋体"}[Hello]{lang="EN-US"}[定时器失败]{style="font-family:宋体"}
+在隧道*tunnel-id*中，命令触发的Hello定时器刷新失败
 
-[[TunnelID=*tunnel-id*: Failed to reset ACK timer.]{lang="EN-US"}]{#struct_0_x8353_x2033_x635214229}
+TunnelID=*tunnel-id*: Failed to send ZLB-ACK packet*, Ns=ns, Nr=nr*.
 
-[[在隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_x577171582}[中，重置]{style="font-family:宋体"}[ACK]{lang="EN-US"}[定时器失败]{style="font-family:宋体"}
+在隧道*tunnel-id*中，发送ZLB-ACK报文失败，报文的Ns为*ns*、Nr为*nr*
 
-[[TunnelID= *tunnel-id*: Failed to reset Hello timer by command.]{lang="EN-US"}]{#struct_0_x8353_x2033_x527135400}
+Failed to send packet.
 
-[[在隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_x99114237}[中，命令触发的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[定时器刷新失败]{style="font-family:宋体"}
+发送报文失败
 
-[[TunnelID=*tunnel-id*: Failed to send ZLB-ACK packet*, Ns=ns, Nr=nr*.]{lang="EN-US"}]{#struct_0_x8353_x2033_598342561}
+TunnelID=*tunnel-id*: Failed to create *timer-type* timer.
 
-[[在隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_200584696}[中，发送]{style="font-family:宋体"}[ZLB-ACK]{lang="EN-US"}[报文失败，报文的]{style="font-family:宋体"}[Ns]{lang="EN-US"}[为]{style="font-family:宋体"}*[ns]{lang="EN-US"}*[、]{style="font-family:宋体"}[Nr]{lang="EN-US"}[为]{style="font-family:宋体"}*[nr]{lang="EN-US"}*
+在隧道*tunnel-id*中，创建类型为*timer-type*的定时器失败
 
-[[Failed to send packet.]{lang="EN-US"}]{#struct_0_x8353_x2033_x1942880355}
+其中，*timer-type*取值包括ACK、Delay-Cleanup、Hello和Delay-ACK
 
-[[发送报文失败]{style="font-family:宋体"}]{#struct_0_x8353_x2033_79071112}
+Failed to send packet, because the transmit window was full.
 
-[[TunnelID=*tunnel-id*: Failed to create *timer-type* timer.]{lang="EN-US"}]{#struct_0_x8353_x2033_599325601}
+发送报文失败，因为发送窗口已满
 
-[[在隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_1510355232}[中，创建类型为]{style="font-family:宋体"}*[timer-type]{lang="EN-US"}*[的定时器失败]{style="font-family:宋体"}
+Processed SCCRQ packet, but failed to allocate resource for a new tunnel on the server.
 
-[[其中，]{style="font-family:宋体"}*[timer-type]{lang="EN-US"}*]{#struct_0_x8353_x2033_x519937259}[取值包括]{style="font-family:宋体"}[ACK]{lang="EN-US"}[、]{style="font-family:宋体"}[Delay-Cleanup]{lang="EN-US"}[、]{style="font-family:宋体"}[Hello]{lang="EN-US"}[和]{style="font-family:宋体"}[Delay-ACK]{lang="EN-US"}
+处理SCCRQ报文时，在LNS上为新隧道分配资源失败
 
-[[Failed to send packet, because the transmit window was full.]{lang="EN-US"}]{#struct_0_x8353_x2033_1263355799}
+The packet is invalid, because it is not a ICRQ or CDN packet but the session ID in the packet header is invalid.
 
-[[发送报文失败，因为发送窗口已满]{style="font-family:宋体"}]{#struct_0_x8353_x2033_x1690264849}
+此报文非法，因为收到的报文不是ICRQ、CDN报文，但是该报文头中的会话ID是无效值
 
-[[Processed SCCRQ packet, but failed to allocate resource for a new tunnel on the server.]{lang="EN-US"}]{#struct_0_x8353_x2033_599260065}
+The packet is invalid, because it is not a SCCRQ or StopCCN packet but the tunnel ID in the packet header is invalid.
 
-[[处理]{style="font-family:宋体"}[SCCRQ]{lang="EN-US"}]{#struct_0_x8353_x2033_x807974798}[报文时，在]{style="font-family:宋体"}[LNS]{lang="EN-US"}[上为新隧道分配资源失败]{style="font-family:宋体"}
+此报文非法，因为收到的报文不是SCCRQ、StopCCN，但是报文头中的隧道ID是无效值
 
-[[The packet is invalid, because it is not a ICRQ or CDN packet but the session ID in the packet header is invalid.]{lang="EN-US"}]{#struct_0_x8353_x2033_372229180}
+ICRQ packet is invalid, because the session ID in the packet header is valid.
 
-[[此报文非法，因为收到的报文不是]{style="font-family:宋体"}[ICRQ]{lang="EN-US"}]{#struct_0_x8353_x2033_x2130082039}[、]{style="font-family:宋体"}[CDN]{lang="EN-US"}[报文，但是该报文头中的会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[是无效值]{style="font-family:宋体"}
+ICRQ报文非法，因为报文头中的会话ID是有效值
 
-[[The packet is invalid, because it is not a SCCRQ or StopCCN packet but the tunnel ID in the packet header is invalid.]{lang="EN-US"}]{#struct_0_x8353_x2033_1627567589}
+SCCRQ packet is invalid, because the tunnel ID in the packet header is valid.
 
-[[此报文非法，因为收到的报文不是]{style="font-family:宋体"}[SCCRQ]{lang="EN-US"}]{#struct_0_x8353_x2033_x1193492823}[、]{style="font-family:宋体"}[StopCCN]{lang="EN-US"}[，但是报文头中的隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}[是无效值]{style="font-family:宋体"}
+SCCRQ报文非法，因为报文头中的隧道ID是有效值
 
-[[ICRQ packet is invalid, because the session ID in the packet header is valid.]{lang="EN-US"}]{#struct_0_x8353_x2033_x1176143347}
+Invalid packet header.
 
-[[ICRQ]{lang="EN-US"}]{#struct_0_x8353_x2033_x2130147575}[报文非法，因为报文头中的会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[是有效值]{style="font-family:宋体"}
+报文头非法
 
-[[SCCRQ packet is invalid, because the tunnel ID in the packet header is valid.]{lang="EN-US"}]{#struct_0_x8353_x2033_175508792}
+Invalid packet length.
 
-[[SCCRQ]{lang="EN-US"}]{#struct_0_x8353_x2033_x605752107}[报文非法，因为报文头中的隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}[是有效值]{style="font-family:宋体"}
+报文长度异常
 
-[[Invalid packet header.]{lang="EN-US"}]{#struct_0_x8353_x2033_1146226766}
+Unknown packet type.
 
-[[报文头非法]{style="font-family:宋体"}]{#struct_0_x8353_x2033_x2130213111}
+报文类型无法识别
 
-[[Invalid packet length.]{lang="EN-US"}]{#struct_0_x8353_x2033_784420979}
+The tunnel with the TunnelID *tunnel-id* in the packet header doesn\'t exist.
 
-[[报文长度异常]{style="font-family:宋体"}]{#struct_0_x8353_x2033_1435190152}
+报文头中*tunnel-id*指定的隧道不存在
 
-[[Unknown packet type.]{lang="EN-US"}]{#struct_0_x8353_x2033_x847571711}
+The session with the SessionID *session-id* in the packet header doesn't exist.
 
-[[报文类型无法识别]{style="font-family:宋体"}]{#struct_0_x8353_x2033_x2130278647}
+报文头中*session-id*指定的会话不存在
 
-[[The tunnel with the TunnelID *tunnel-id* in the packet header doesn\'t exist.]{lang="EN-US"}]{#struct_0_x8353_x2033_1978442950}
+The number of necessary AVPs is wrong in *message-type* packet.
 
-[[报文头中]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1967055436}[指定的隧道不存在]{style="font-family:宋体"}
+在类型为*message-type*的报文中必备AVP个数错误
 
-[[The session with the SessionID *session-id* in the packet header doesn't exist.]{lang="EN-US"}]{#struct_0_x8353_x2033_x2130344183}
+其中，*message-type*取值包括SCCRQ、SCCRP、SCCCN、StopCCN、ICRQ、ICRP、ICCN、CDN、SLI
 
-[[报文头中]{style="font-family:宋体"}*[session-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_584012186}[指定的会话不存在]{style="font-family:宋体"}
+TunnelID=*tunnel-id*, SessionID=*session-id*: Failed to process *packet-type* packet in *session-state* state, so deleted the local session.
 
-[[The number of necessary AVPs is wrong in *message-type* packet.]{lang="EN-US"}]{#struct_0_x8353_x2033_583706440}
+在隧道ID为*tunnel-id*、会话ID为*session-id*的会话中，在状态*session-state*下处理类型为*packet-type*的报文失败，删除本地会话
 
-[[在类型为]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*]{#struct_0_x8353_x2033_x541118037}[的报文中必备]{style="font-family:宋体"}[AVP]{lang="EN-US"}[个数错误]{style="font-family:宋体"}
+·当*session-state*为Wait-Reply时，*packet-type*为ICRP
 
-[[其中，]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2130409719}[取值包括]{style="font-family:宋体"}[SCCRQ]{lang="EN-US"}[、]{style="font-family:宋体"}[SCCRP]{lang="EN-US"}[、]{style="font-family:宋体"}[SCCCN]{lang="EN-US"}[、]{style="font-family:宋体"}[StopCCN]{lang="EN-US"}[、]{style="font-family:宋体"}[ICRQ]{lang="EN-US"}[、]{style="font-family:宋体"}[ICRP]{lang="EN-US"}[、]{style="font-family:宋体"}[ICCN]{lang="EN-US"}[、]{style="font-family:宋体"}[CDN]{lang="EN-US"}[、]{style="font-family:宋体"}[SLI]{lang="EN-US"}
+·当*session-state*为Idle时，*packet-type*为ICRQ
 
-[[TunnelID=*tunnel-id*, SessionID=*session-id*: Failed to process *packet-type* packet in *session-state* state, so deleted the local session.]{lang="EN-US"}]{#struct_0_x8353_x2033_102809530}
+·当*session-state*为Wait-Connect时，*packet-type*为ICCN
 
-[[在隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x8353_x2033_x1380002289}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[、会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[session-id]{lang="EN-US"}*[的会话中，在状态]{style="font-family:宋体"}*[session-state]{lang="EN-US"}*[下处理类型为]{style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[的报文失败，删除本地会话]{style="font-family:宋体"}
+TunnelID=*tunnel-id*, SessionID=*session-id*: When processing *packet-type* packet in *session-state* state, failed to allocate resource, so sent CDN packet to the peer and deleted the local session.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[session-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2130475255}[为]{lang="EN-US" style="font-family:宋体"}[Wait-Reply]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[ICRP]{lang="EN-US"}
+在隧道ID为*tunnel-id*、会话ID为*session-id*的会话中，在状态*session-state*下处理类型为*packet-type*的报文时申请资源失败，发送CDN报文给对端，并删除本地会话
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[session-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_1654885888}[为]{lang="EN-US" style="font-family:宋体"}[Idle]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[ICRQ]{lang="EN-US"}
+·当*session-state*为Wait-Reply时，*packet-type*为ICRP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[session-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2011767543}[为]{lang="EN-US" style="font-family:宋体"}[Wait-Connect]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[ICCN]{lang="EN-US"}
+·当*session-state*为Idle时，*packet-type*为ICRQ
 
-[[TunnelID=*tunnel-id*, SessionID=*session-id*: When processing *packet-type* packet in *session-state* state, failed to allocate resource, so sent CDN packet to the peer and deleted the local session.]{lang="EN-US"}]{#struct_0_x8353_x2033_x2130540791}
+·当*session-state*为Wait-Connect时，*packet-type*为ICCN
 
-[[在隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x8353_x2033_x2024457522}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[、会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[session-id]{lang="EN-US"}*[的会话中，在状态]{style="font-family:宋体"}*[session-state]{lang="EN-US"}*[下处理类型为]{style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[的报文时申请资源失败，发送]{style="font-family:宋体"}[CDN]{lang="EN-US"}[报文给对端，并删除本地会话]{style="font-family:宋体"}
+TunnelID=*tunnel-id*: Failed to start the session negotiation, so sent StopCCN packet to the peer and deleted the local tunnel.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[session-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_1039467527}[为]{lang="EN-US" style="font-family:宋体"}[Wait-Reply]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[ICRP]{lang="EN-US"}
+在隧道*tunnel-id*中，发起会话协商失败，发送StopCCN给对端，并删除本地隧道
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[session-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2129557751}[为]{lang="EN-US" style="font-family:宋体"}[Idle]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[ICRQ]{lang="EN-US"}
+TunnelID=*tunnel-id*: Failed to process *packet-type* packet in *tunnel-state* state, so deleted the local tunnel.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[session-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_x165580380}[为]{lang="EN-US" style="font-family:宋体"}[Wait-Connect]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[ICCN]{lang="EN-US"}
+在隧道*tunnel-id*中，在状态*tunnel-state*下处理类型为*packet-type*的报文失败，删除本地隧道
 
-[[TunnelID=*tunnel-id*: Failed to start the session negotiation, so sent StopCCN packet to the peer and deleted the local tunnel.]{lang="EN-US"}]{#struct_0_x8353_x2033_2038702381}
+·当*tunnel-state*为Idle时，*packet-type*为SCCRQ
 
-[[在隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2129623287}[中，发起会话协商失败，发送]{style="font-family:宋体"}[StopCCN]{lang="EN-US"}[给对端，并删除本地隧道]{style="font-family:宋体"}
+·当*tunnel-state*为Wait-Connect时，*packet-type*为SCCCN
 
-[[TunnelID=*tunnel-id*: Failed to process *packet-type* packet in *tunnel-state* state, so deleted the local tunnel.]{lang="EN-US"}]{#struct_0_x8353_x2033_1456874240}
+·当*tunnel-state*为Wait-Reply时，*packet-type*为SCCRP
 
-[[在隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2130082038}[中，在状态]{style="font-family:宋体"}*[tunnel-state]{lang="EN-US"}*[下处理类型为]{style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[的报文失败，删除本地隧道]{style="font-family:宋体"}
+TunnelID=*tunnel-id*: When processing *packet-type* packet in *tunnel-state* state, failed to allocate resource, so sent StopCCN packet to the peer and deleted the local tunnel.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[tunnel-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1101315766}[为]{lang="EN-US" style="font-family:宋体"}[Idle]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[SCCRQ]{lang="EN-US"}
+在隧道*tunnel-id*中，在状态*tunnel-state*下处理类型为*packet-type*的报文时申请资源失败，发送StopCCN报文给对端，并删除本地隧道
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[tunnel-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_1928059957}[为]{lang="EN-US" style="font-family:宋体"}[Wait-Connect]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[SCCCN]{lang="EN-US"}
+·当*tunnel-state*为Wait-Connect时，*packet-type*为SCCCN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[tunnel-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2130147574}[为]{lang="EN-US" style="font-family:宋体"}[Wait-Reply]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[SCCRP]{lang="EN-US"}
+·当*tunnel-state*为Wait-Reply时，*packet-type*为SCCRP
 
-[[TunnelID=*tunnel-id*: When processing *packet-type* packet in *tunnel-state* state, failed to allocate resource, so sent StopCCN packet to the peer and deleted the local tunnel.]{lang="EN-US"}]{#struct_0_x8353_x2033_1741592733}
+Failed to report PPP-UP event on interface *interface-name*.
 
-[[在隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_x542156291}[中，在状态]{style="font-family:宋体"}*[tunnel-state]{lang="EN-US"}*[下处理类型为]{style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[的报文时申请资源失败，发送]{style="font-family:宋体"}[StopCCN]{lang="EN-US"}[报文给对端，并删除本地隧道]{style="font-family:宋体"}
+上报接口*interface-name*上的PPP-UP事件失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[tunnel-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2130213110}[为]{lang="EN-US" style="font-family:宋体"}[Wait-Connect]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[SCCCN]{lang="EN-US"}
+Failed to report PPP-DOWN event on interface *interface-name*.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[tunnel-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_x781662962}[为]{lang="EN-US" style="font-family:宋体"}[Wait-Reply]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[SCCRP]{lang="EN-US"}
+上报接口*interface-name*上的PPP-DOWN事件失败
 
-[[Failed to report PPP-UP event on interface *interface-name*.]{lang="EN-US"}]{#struct_0_x8353_x2033_1399544823}
+Failed to create a session for LAC. TunnelID=*tunnel-id*, SessionID=*session-id*.
 
-[[上报接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2130278646}[上的]{style="font-family:宋体"}[PPP-UP]{lang="EN-US"}[事件失败]{style="font-family:宋体"}
+为LAC创建会话失败，隧道ID为*tunnel-id*，会话ID为*session-id*
 
-[[Failed to report PPP-DOWN event on interface *interface-name*.]{lang="EN-US"}]{#struct_0_x8353_x2033_412359009}
+Failed to create a session for LNS. TunnelID*=tunnel-id* , SessionID*=session-id* .
 
-[[上报接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_x8353_x2033_x8380681}[上的]{style="font-family:宋体"}[PPP-DOWN]{lang="EN-US"}[事件失败]{style="font-family:宋体"}
+为LNS创建会话失败，隧道ID为*tunnel-id*，会话ID为*session-id*
 
-[[Failed to create a session for LAC. TunnelID=*tunnel-id*, SessionID=*session-id*.]{lang="EN-US"}]{#struct_0_x8353_x2033_x2130344182}
+Failed to process the IF-CREATE event for interface *interface-name*.
 
-[[为]{style="font-family:宋体"}[LAC]{lang="EN-US"}]{#struct_0_x8353_x2033_x2144871169}[创建会话失败，隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[，会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[session-id]{lang="EN-US"}*
+接口*interface-name*的创建事件处理失败
 
-[[Failed to create a session for LNS. TunnelID*=tunnel-id* , SessionID*=session-id* .]{lang="EN-US"}]{#struct_0_x8353_x2033_x2130409718}
+Failed to send the packet to PPP on interface *interface-name*.
 
-[[为]{style="font-family:宋体"}[LNS]{lang="EN-US"}]{#struct_0_x8353_x2033_1668893471}[创建会话失败，隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[，会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[session-id]{lang="EN-US"}*
+在接口*interface-name*上发送报文到PPP失败
 
-[[Failed to process the IF-CREATE event for interface *interface-name*.]{lang="EN-US"}]{#struct_0_x8353_x2033_x2130475254}
+Failed to encapsulate the PPP packet on interface *interface-name*.
 
-[[接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_x8353_x2033_88801947}[的创建事件处理失败]{style="font-family:宋体"}
+在接口*interface-name*上封装PPP报文失败
 
-[[Failed to send the packet to PPP on interface *interface-name*.]{lang="EN-US"}]{#struct_0_x8353_x2033_844380905}
+表1-6 debugging l2tp event命令输出信息描述表
 
-[[在接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2130540790}[上发送报文到]{style="font-family:宋体"}[PPP]{lang="EN-US"}[失败]{style="font-family:宋体"}
+字段
 
-[[Failed to encapsulate the PPP packet on interface *interface-name*.]{lang="EN-US"}]{#struct_0_x8353_x2033_x458373581}
+描述
 
-[[在接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2129557750}[上封装]{style="font-family:宋体"}[PPP]{lang="EN-US"}[报文失败]{style="font-family:宋体"}
+TunnelID=*tunnel-id*, SessionID=*session-id*: Processed *packet-type* packet in *session-state* state, sent CDN packet to the peer and deleted the local session.
 
-[ ]{lang="EN-US"}
+在隧道ID为*tunnel-id*、会话ID为*session-id*的会话中，在状态*session-state*下处理类型为*packet-type*的报文，给对端发送CDN报文，并删除本地会话
 
-[[表1-6 ]{lang="EN-US"}[debugging l2tp event]{lang="EN-US"}]{#struct_0_x8353_x2033_x1731664321}[命令输出信息描述表]{style="font-family:黑体"}
+·当*session-state*为Wait-Reply时，*packet-type*为ICRQ
 
-[]{#table_struct_0_x2020488799}[[字段]{style="font-family:黑体"}]{#struct_0_x8353_x2033_x809094807}
+·当*session-state*为Idle时，*packet-type*为invalid ICRQ、ICRP
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x8353_x2033_1718993642}
+·当*session-state*为Wait-Connect时，*packet-type*为invalid ICCN、ICRQ、ICRP
 
-[[TunnelID=*tunnel-id*, SessionID=*session-id*: Processed *packet-type* packet in *session-state* state, sent CDN packet to the peer and deleted the local session.]{lang="EN-US"}]{#struct_0_x8353_x2033_789030448}
+·当*session-state*为Established时，*packet-type*为ICRQ、ICRP、ICCN
 
-[[在隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x8353_x2033_1077285178}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[、会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[session-id]{lang="EN-US"}*[的会话中，在状态]{style="font-family:宋体"}*[session-state]{lang="EN-US"}*[下处理类型为]{style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[的报文，给对端发送]{style="font-family:宋体"}[CDN]{lang="EN-US"}[报文，并删除本地会话]{style="font-family:宋体"}
+TunnelID=*tunnel-id*, SessionID=*session-id*: Proccessed invalid *packet-type* packet in *session-state* state, sent CDN packet to the peer and deleted the local session.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[session-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1259826405}[为]{lang="EN-US" style="font-family:宋体"}[Wait-Reply]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[ICRQ]{lang="EN-US"}
+在隧道ID为*tunnel-id*、会话ID为*session-id*的会话中，在状态*session-state*下处理类型为*packet-type*的非法报文，给对端发送CDN报文，并删除本地会话
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[session-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2129623286}[为]{lang="EN-US" style="font-family:宋体"}[Idle]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[invalid ICRQ]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[ICRP]{lang="EN-US"}
+·当*session-state*为Wait-Reply时，*packet-type*为ICRP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[session-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1272009115}[为]{lang="EN-US" style="font-family:宋体"}[Wait-Connect]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[invalid ICCN]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[ICRQ]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[ICRP]{lang="EN-US"}
+·当*session-state*为Idle时，*packet-type*为ICRQ
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[session-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2008651704}[为]{lang="EN-US" style="font-family:宋体"}[Established]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[ICRQ]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[ICRP]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[ICCN]{lang="EN-US"}
+·当*session-state*为Wait-Connect时，*packet-type*为ICCN
 
-[[TunnelID=*tunnel-id*, SessionID=*session-id*: Proccessed invalid *packet-type* packet in *session-state* state, sent CDN packet to the peer and deleted the local session.]{lang="EN-US"}]{#struct_0_x8353_x2033_x277495769}
+TunnelID=*tunnel-id*, SessionID=*session-id*: Processed *packet-type* packet in *session-state1* state, and changed the session state to *session-state2*.
 
-[[在隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x8353_x2033_1743413334}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[、会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[session-id]{lang="EN-US"}*[的会话中，在状态]{style="font-family:宋体"}*[session-state]{lang="EN-US"}*[下处理类型为]{style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[的非法报文，给对端发送]{style="font-family:宋体"}[CDN]{lang="EN-US"}[报文，并删除本地会话]{style="font-family:宋体"}
+在隧道ID为*tunnel-id*、会话ID为*session-id*的会话中，在状态*session-state1*下处理类型为*packet-type*的报文，会话状态变为*session-state2*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[session-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1857302855}[为]{lang="EN-US" style="font-family:宋体"}[Wait-Reply]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[ICRP]{lang="EN-US"}
+·当*session-state1*为Wait-Reply，*session-state2*为Established时，*packet-type*为ICRP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[session-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2130082041}[为]{lang="EN-US" style="font-family:宋体"}[Idle]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[ICRQ]{lang="EN-US"}
+·当*session-state1*为Idle，*session-state2*为Wait-Connect时，*packet-type*为ICRQ
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[session-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_1983994557}[为]{lang="EN-US" style="font-family:宋体"}[Wait-Connect]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[ICCN]{lang="EN-US"}
+·当*session-state1*为Wait-Connect，*session-state2*为Established时，*packet-type*为ICCN
 
-[[TunnelID=*tunnel-id*, SessionID=*session-id*: Processed *packet-type* packet in *session-state1* state, and changed the session state to *session-state2*.]{lang="EN-US"}]{#struct_0_x8353_x2033_x177452868}
+TunnelID=*tunnel-id*, SessionID=*session-id*: Processed *packet-type* packet in *session-state* state, and deleted the local session.
 
-[[在隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x8353_x2033_x328209477}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[、会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[session-id]{lang="EN-US"}*[的会话中，在状态]{style="font-family:宋体"}*[session-state1]{lang="EN-US"}*[下处理类型为]{style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[的报文，会话状态变为]{style="font-family:宋体"}*[session-state2]{lang="EN-US"}*
+在隧道ID为*tunnel-id*、会话ID为*session-id*的会话中，在状态*session-state*下处理类型为*packet-type*的报文，删除本地会话
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[session-state1]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1752950238}[为]{lang="EN-US" style="font-family:宋体"}[Wait-Reply]{lang="EN-US"}[，]{lang="EN-US" style="font-family:宋体"}*[session-state2]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[Established]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[ICRP]{lang="EN-US"}
+其中，*session-state*的取值包括Wait-Reply、Idle和Wait-Connect；*packet-type*取值为ICCN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[session-state1]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2130147577}[为]{lang="EN-US" style="font-family:宋体"}[Idle]{lang="EN-US"}[，]{lang="EN-US" style="font-family:宋体"}*[session-state2]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[Wait-Connect]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[ICRQ]{lang="EN-US"}
+TunnelID=*tunnel-id*: Processed StopCCN packet in Stopping state, and sent ZLB-ACK packet to the peer. Ns=*ns*, Nr=*nr*.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[session-state1]{lang="EN-US"}*]{#struct_0_x8353_x2033_x987290622}[为]{lang="EN-US" style="font-family:宋体"}[Wait-Connect]{lang="EN-US"}[，]{lang="EN-US" style="font-family:宋体"}*[session-state2]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[Established]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[ICCN]{lang="EN-US"}
+在隧道*tunnel-id*中，在Stopping状态下处理StopCCN报文，发送ZLB-ACK报文给对端，报文中Ns为*ns*、Nr为*nr*
 
-[[TunnelID=*tunnel-id*, SessionID=*session-id*: Processed *packet-type* packet in *session-state* state, and deleted the local session.]{lang="EN-US"}]{#struct_0_x8353_x2033_x1540733882}
+TunnelID=*tunnel-id*: Processed *packet-type* packet in *tunnel-state1* state, and changed the tunnel state to *tunnel-state2*.
 
-[[在隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x8353_x2033_974383431}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[、会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[session-id]{lang="EN-US"}*[的会话中，在状态]{style="font-family:宋体"}*[session-state]{lang="EN-US"}*[下处理类型为]{style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[的报文，删除本地会话]{style="font-family:宋体"}
+在隧道*tunnel-id*中，在状态*tunnel-state1*下处理类型为*packet-type*的报文，隧道状态变为*tunnel-state2*
 
-[[其中，]{style="font-family:宋体"}*[session-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1457549318}[的取值包括]{style="font-family:宋体"}[Wait-Reply]{lang="EN-US"}[、]{style="font-family:宋体"}[Idle]{lang="EN-US"}[和]{style="font-family:宋体"}[Wait-Connect]{lang="EN-US"}[；]{style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[取值为]{style="font-family:宋体"}[ICCN]{lang="EN-US"}
+·当*tunnel-state1*为Wait-Reply，*tunnel-state2*为Established时，*packet-type*为SCCRP
 
-[[TunnelID=*tunnel-id*: Processed StopCCN packet in Stopping state, and sent ZLB-ACK packet to the peer. Ns=*ns*, Nr=*nr*.]{lang="EN-US"}]{#struct_0_x8353_x2033_x2130213113}
+·当*tunnel-state1*为Idle，*tunnel-state2*为Wait-Connect时，*packet-type*为SCCRQ
 
-[[在隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_1947220393}[中，在]{style="font-family:宋体"}[Stopping]{lang="EN-US"}[状态下处理]{style="font-family:宋体"}[StopCCN]{lang="EN-US"}[报文，发送]{style="font-family:宋体"}[ZLB-ACK]{lang="EN-US"}[报文给对端，报文中]{style="font-family:宋体"}[Ns]{lang="EN-US"}[为]{style="font-family:宋体"}*[ns]{lang="EN-US"}*[、]{style="font-family:宋体"}[Nr]{lang="EN-US"}[为]{style="font-family:宋体"}*[nr]{lang="EN-US"}*
+·当*tunnel-state1*为Wait-Connect，*tunnel-state2*为Established时，*packet-type*为SCCCN
 
-[[TunnelID=*tunnel-id*: Processed *packet-type* packet in *tunnel-state1* state, and changed the tunnel state to *tunnel-state2*.]{lang="EN-US"}]{#struct_0_x8353_x2033_x1953545201}
+·当*tunnel-state1*为Established、Wait-Connect或Wait-Reply，*tunnel-state2*为Stopping时，*packet-type*为StopCCN
 
-[[在隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_554611203}[中，在状态]{style="font-family:宋体"}*[tunnel-state1]{lang="EN-US"}*[下处理类型为]{style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[的报文，隧道状态变为]{style="font-family:宋体"}*[tunnel-state2]{lang="EN-US"}*
+TunnelID=*tunnel-id*: Processed *packet-type* packet in *tunnel-state* state, sent StopCCN packet to the peer and deleted the local tunnel.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[tunnel-state1]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1970124419}[为]{lang="EN-US" style="font-family:宋体"}[Wait-Reply]{lang="EN-US"}[，]{lang="EN-US" style="font-family:宋体"}*[tunnel-state2]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[Established]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[SCCRP]{lang="EN-US"}
+在隧道*tunnel-id*中，在状态*tunnel-state*下处理类型为*packet-type*的报文，给对端发送StopCCN报文，并删除本地隧道
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[tunnel-state1]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2130278649}[为]{lang="EN-US" style="font-family:宋体"}[Idle]{lang="EN-US"}[，]{lang="EN-US" style="font-family:宋体"}*[tunnel-state2]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[Wait-Connect]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[SCCRQ]{lang="EN-US"}
+·当*tunnel-state*为Wait-Connect时，*packet-type*为SCCRQ、SCCRP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[tunnel-state1]{lang="EN-US"}*]{#struct_0_x8353_x2033_1528104256}[为]{lang="EN-US" style="font-family:宋体"}[Wait-Connect]{lang="EN-US"}[，]{lang="EN-US" style="font-family:宋体"}*[tunnel-state2]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[Established]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[SCCCN]{lang="EN-US"}
+·当*tunnel-state*为Wait-Reply时，*packet-type*为invalid SCCRP、SCCCN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[tunnel-state1]{lang="EN-US"}*]{#struct_0_x8353_x2033_1665032535}[为]{lang="EN-US" style="font-family:宋体"}[Established]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[Wait-Connect]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[Wait-Reply]{lang="EN-US"}[，]{lang="EN-US" style="font-family:宋体"}*[tunnel-state2]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[Stopping]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[StopCCN]{lang="EN-US"}
+·当*tunnel-state*为Established时，*packet-type*为SCCRQ、SCCRP、SCCCN
 
-[[TunnelID=*tunnel-id*: Processed *packet-type* packet in *tunnel-state* state, sent StopCCN packet to the peer and deleted the local tunnel.]{lang="EN-US"}]{#struct_0_x8353_x2033_x909624060}
+·当*tunnel-state*为Idle时，*packet-type*为invalid SCCRQ、SCCRP
 
-[[在隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2130344185}[中，在状态]{style="font-family:宋体"}*[tunnel-state]{lang="EN-US"}*[下处理类型为]{style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[的报文，给对端发送]{style="font-family:宋体"}[StopCCN]{lang="EN-US"}[报文，并删除本地隧道]{style="font-family:宋体"}
+TunnelID=*tunnel-id*: Processed *packet-type* packet in *tunnel-state* state, and deleted the local tunnel.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[tunnel-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_x222556868}[为]{lang="EN-US" style="font-family:宋体"}[Wait-Connect]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[SCCRQ]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[SCCRP]{lang="EN-US"}
+在隧道*tunnel-id*中，在状态*tunnel-state*下处理类型为*packet-type*的报文，删除本地隧道
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[tunnel-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_889919493}[为]{lang="EN-US" style="font-family:宋体"}[Wait-Reply]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[invalid SCCRP]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[SCCCN]{lang="EN-US"}
+·当*tunnel-state*为Wait-Connect时，*packet-type*为SCCCN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[tunnel-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1057405758}[为]{lang="EN-US" style="font-family:宋体"}[Established]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[SCCRQ]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[SCCRP]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[SCCCN]{lang="EN-US"}
+·当*tunnel-state*为Idle时，*packet-type*为SCCCN、StopCCN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[tunnel-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2130409721}[为]{lang="EN-US" style="font-family:宋体"}[Idle]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[invalid SCCRQ]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[SCCRP]{lang="EN-US"}
+·当*tunnel-state*为Stopping时，*packet-type*为ZLB-ACK
 
-[[TunnelID=*tunnel-id*: Processed *packet-type* packet in *tunnel-state* state, and deleted the local tunnel.]{lang="EN-US"}]{#struct_0_x8353_x2033_x253224222}
+TunnelID=*tunnel-id*: Processed invalid *packet-type* packet in *tunnel-state* state, sent StopCCN packet to the peer and deleted the local tunnel.
 
-[[在隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1600839815}[中，在状态]{style="font-family:宋体"}*[tunnel-state]{lang="EN-US"}*[下处理类型为]{style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[的报文，删除本地隧道]{style="font-family:宋体"}
+在隧道*tunnel-id*中，在状态*tunnel-state*下处理类型为*packet-type*的非法报文，给对端发送StopCCN报文，并删除本地隧道
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[tunnel-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_1188276905}[为]{lang="EN-US" style="font-family:宋体"}[Wait-Connect]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[SCCCN]{lang="EN-US"}
+·当*tunnel-state*为Wait-Reply时，*packet-type*为SCCRP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[tunnel-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_x369729302}[为]{lang="EN-US" style="font-family:宋体"}[Idle]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[SCCCN]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[StopCCN]{lang="EN-US"}
+·当*tunnel-state*为Idle时，*packet-type*为SCCRQ
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[tunnel-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2130475257}[为]{lang="EN-US" style="font-family:宋体"}[Stopping]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[ZLB-ACK]{lang="EN-US"}
+·当*tunnel-state*为Wait-Connect时，*packet-type*为SCCCN
 
-[[TunnelID=*tunnel-id*: Processed invalid *packet-type* packet in *tunnel-state* state, sent StopCCN packet to the peer and deleted the local tunnel.]{lang="EN-US"}]{#struct_0_x8353_x2033_492086474}
+L2TP service was not enabled, so L2TP packet *packet-type* can't be parsed.
 
-[[在隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1677243643}[中，在状态]{style="font-family:宋体"}*[tunnel-state]{lang="EN-US"}*[下处理类型为]{style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[的非法报文，给对端发送]{style="font-family:宋体"}[StopCCN]{lang="EN-US"}[报文，并删除本地隧道]{style="font-family:宋体"}
+L2TP服务未使能，无法解析L2TP控制报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[tunnel-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_427980622}[为]{lang="EN-US" style="font-family:宋体"}[Wait-Reply]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[SCCRP]{lang="EN-US"}
+其中，*packet-type*取值包括ICRQ、SCCRQ、StoppCCN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[tunnel-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2130540793}[为]{lang="EN-US" style="font-family:宋体"}[Idle]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[SCCRQ]{lang="EN-US"}
+TunnelID=*tunnel-id*: Adjusting the sequence number of control packets dynamically.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}*[tunnel-state]{lang="EN-US"}*]{#struct_0_x8353_x2033_1107710360}[为]{lang="EN-US" style="font-family:宋体"}[Wait-Connect]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}*[packet-type]{lang="EN-US"}*[为]{lang="EN-US" style="font-family:宋体"}[SCCCN]{lang="EN-US"}
+隧道*tunnel-id*正在动态调整控制报文的序列号
 
-[[L2TP service was not enabled, so L2TP packet *packet-type* can't be parsed.]{lang="EN-US"}]{#struct_0_x8353_x2033_x1895226481}
+TunnelID=*tunnel-id*: Received duplicate Hello packet for *times* times.
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x8353_x2033_x2129557753}[服务未使能，无法解析]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[控制报文]{style="font-family:宋体"}
+隧道*tunnel-id*收到重复的Hello报文*times*次
 
-[[其中，]{style="font-family:宋体"}*[packet-type]{lang="EN-US"}*]{#struct_0_x8353_x2033_997219034}[取值包括]{style="font-family:宋体"}[ICRQ]{lang="EN-US"}[、]{style="font-family:宋体"}[SCCRQ]{lang="EN-US"}[、]{style="font-family:宋体"}[StoppCCN]{lang="EN-US"}
+TunnelID=*tunnel-id*: Received a duplicate packet, so sent ZLB-ACK packet to notify the peer to adjust transmit window. Ns=*ns*, Nr=*nr*.
 
-[[TunnelID=*tunnel-id*: Adjusting the sequence number of control packets dynamically.]{lang="EN-US"}]{#struct_0_x8353_x2033_x1090694412}
+隧道*tunnel-id*收到重复的报文，发送ZLB ACK报文通知对端调整发送窗口，报文中的Ns为*ns*、Nr为*nr*
 
-[[隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_x328391928}[正在动态调整控制报文的序列号]{style="font-family:宋体"}
+Parsed *AVP-type* AVP: *avp-value*.
 
-[[TunnelID=*tunnel-id*: Received duplicate Hello packet for *times* times.]{lang="EN-US"}]{#struct_0_x8353_x2033_x2129623289}
+解析类型为*AVP-type*的AVP，AVP值为*avp-value*
 
-[[隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1319063282}[收到重复的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}*[times]{lang="EN-US"}*[次]{style="font-family:宋体"}
+Parsed Protocol-Version AVP. Version=*version*, Revision=*revision*.
 
-[[TunnelID=*tunnel-id*: Received a duplicate packet, so sent ZLB-ACK packet to notify the peer to adjust transmit window. Ns=*ns*, Nr=*nr*.]{lang="EN-US"}]{#struct_0_x8353_x2033_x1939161829}
+解析Protocol-Version AVP，版本号为*version*，Revision为*revision*
 
-[[隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2130082040}[收到重复的报文，发送]{style="font-family:宋体"}[ZLB ACK]{lang="EN-US"}[报文通知对端调整发送窗口，报文中的]{style="font-family:宋体"}[Ns]{lang="EN-US"}[为]{style="font-family:宋体"}*[ns]{lang="EN-US"}*[、]{style="font-family:宋体"}[Nr]{lang="EN-US"}[为]{style="font-family:宋体"}*[nr]{lang="EN-US"}*
+Parsed Sequencing-Required AVP.
 
-[[Parsed *AVP-type* AVP: *avp-value*.]{lang="EN-US"}]{#struct_0_x8353_x2033_x744888798}
+解析Sequencing-Required AVP
 
-[[解析类型为]{style="font-family:宋体"}*[AVP-type]{lang="EN-US"}*]{#struct_0_x8353_x2033_1881454258}[的]{style="font-family:宋体"}[AVP]{lang="EN-US"}[，]{style="font-family:宋体"}[AVP]{lang="EN-US"}[值为]{style="font-family:宋体"}*[avp-value]{lang="EN-US"}*
+Parsed Q.931-Cause-Code AVP. Cause-code=*cause-code*, Cause-Message=*cause-message*, Advisory-Message=*advisory-message*.
 
-[[Parsed Protocol-Version AVP. Version=*version*, Revision=*revision*.]{lang="EN-US"}]{#struct_0_x8353_x2033_x2130147576}
+解析Q.931-Cause-Code AVP
 
-[[解析]{style="font-family:宋体"}[Protocol-Version AVP]{lang="EN-US"}]{#struct_0_x8353_x2033_578793319}[，版本号为]{style="font-family:宋体"}*[version]{lang="EN-US"}*[，]{style="font-family:宋体"}[Revision]{lang="EN-US"}[为]{style="font-family:宋体"}*[revision]{lang="EN-US"}*
+·{.TableTextChar}原因码为*cause-code*
 
-[[Parsed Sequencing-Required AVP.]{lang="EN-US"}]{#struct_0_x8353_x2033_x2119044926}
+·{.TableTextChar}原因信息为*cause-message*
 
-[[解析]{style="font-family:宋体"}[Sequencing-Required AVP]{lang="EN-US"}]{#struct_0_x8353_x2033_1003401406}
+·警告信息为*advisory-message*
 
-[[Parsed Q.931-Cause-Code AVP. Cause-code=*cause-code*, Cause-Message=*cause-message*, Advisory-Message=*advisory-message*.]{lang="EN-US"}]{#struct_0_x8353_x2033_x2130213112}
+Parsed ACCM AVP. Send-ACCM=*Send-ACCM*, Receive-ACCM=*recv-ACCM*.
 
-[[解析]{style="font-family:宋体"}[Q.931-Cause-Code AVP]{lang="EN-US"}]{#struct_0_x8353_x2033_381136452}
+解析ACCM AVP。发送ACCM为*send-ACCM*，接收ACCM为*recv-ACCM*
 
-[[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:
-  Symbol"}]{.TableTextChar}[原因码为]{lang="EN-US" style="font-family:宋体"}*[cause-code]{lang="EN-US"}*]{#struct_0_x8353_x2033_1250414252}
+Parsed Result-Code AVP. Result-Code=*recode-code*, Error-Code=*error-code*, Error-Message=*error-message*.
 
-[[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:
-  Symbol"}]{.TableTextChar}[原因信息为]{lang="EN-US" style="font-family:宋体"}*[cause-message]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2130278648}
+解析Result code AVP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[警告信息为]{lang="EN-US" style="font-family:宋体"}*[advisory-message]{lang="EN-US"}*]{#struct_0_x8353_x2033_x37979685}
+·{.TableTextChar}结果码为*result-code*
 
-[[Parsed ACCM AVP. Send-ACCM=*Send-ACCM*, Receive-ACCM=*recv-ACCM*.]{lang="EN-US"}]{#struct_0_x8353_x2033_x1850360255}
+·错误码为*error-code*
 
-[[解析]{style="font-family:宋体"}[ACCM AVP]{lang="EN-US"}]{#struct_0_x8353_x2033_x2130344184}[。发送]{style="font-family:宋体"}[ACCM]{lang="EN-US"}[为]{style="font-family:宋体"}*[send-ACCM]{lang="EN-US"}*[，接收]{style="font-family:宋体"}[ACCM]{lang="EN-US"}[为]{style="font-family:宋体"}*[recv-ACCM]{lang="EN-US"}*
+·错误信息为*error-message*
 
-[[Parsed Result-Code AVP. Result-Code=*recode-code*, Error-Code=*error-code*, Error-Message=*error-message*.]{lang="EN-US"}]{#struct_0_x8353_x2033_1343527073}
+Parsed unknown mandatory AVP in *message-type* packet.
 
-[[解析]{style="font-family:宋体"}[Result code AVP]{lang="EN-US"}]{#struct_0_x8353_x2033_x1174733785}
+在*message-type*报文中解析到不可识别的强制AVP
 
-[[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:
-  Symbol"}]{.TableTextChar}[结果码为]{lang="EN-US" style="font-family:宋体"}*[result-code]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2130409720}
+其中，*message-type*取值包括SCCRQ、SCCRP、SCCCN、StopCCN、ICRQ、ICRP、ICCN、CDN、SLI
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[错误码为]{lang="EN-US" style="font-family:宋体"}*[error-code]{lang="EN-US"}*]{#struct_0_x8353_x2033_1312859719}
+TunnelID=*tunnel-id*: Delay-ACK timer expired, received duplicate Hello packet for *times* times and sent ZLB-ACK packet for *times* times. Ns=*ns*, Nr=*nr*.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[错误信息为]{lang="EN-US" style="font-family:宋体"}*[error-message]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2130475256}
+隧道*tunnel-id*的Delay-ACK定时器超时，已经收到重复的Hello报文*times*次，发送ZLB-ACK报文*times*次。 报文中的Ns为*ns*、Nr为*nr*
 
-[[Parsed unknown mandatory AVP in *message-type* packet.]{lang="EN-US"}]{#struct_0_x8353_x2033_x1073997467}
+TunnelID=*tunnel-id*: Resent the packet for *times* times.
 
-[[在]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*]{#struct_0_x8353_x2033_x533180121}[报文中解析到不可识别的强制]{style="font-family:宋体"}[AVP]{lang="EN-US"}
+隧道*tunnel-id*已经重发报文*times*次
 
-[[其中，]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2130540792}[取值包括]{style="font-family:宋体"}[SCCRQ]{lang="EN-US"}[、]{style="font-family:宋体"}[SCCRP]{lang="EN-US"}[、]{style="font-family:宋体"}[SCCCN]{lang="EN-US"}[、]{style="font-family:宋体"}[StopCCN]{lang="EN-US"}[、]{style="font-family:宋体"}[ICRQ]{lang="EN-US"}[、]{style="font-family:宋体"}[ICRP]{lang="EN-US"}[、]{style="font-family:宋体"}[ICCN]{lang="EN-US"}[、]{style="font-family:宋体"}[CDN]{lang="EN-US"}[、]{style="font-family:宋体"}[SLI]{lang="EN-US"}
+TunnelID=*tunnel-id*: Delay-Cleanup timer expired and deleted the local tunnel.
 
-[[TunnelID=*tunnel-id*: Delay-ACK timer expired, received duplicate Hello packet for *times* times and sent ZLB-ACK packet for *times* times. Ns=*ns*, Nr=*nr*.]{lang="EN-US"}]{#struct_0_x8353_x2033_x1621172995}
+隧道*tunnel-id*的Delay-Cleanup定时器超时，删除本地隧道
 
-[[隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1392976785}[的]{style="font-family:宋体"}[Delay-ACK]{lang="EN-US"}[定时器超时，已经收到重复的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}*[times]{lang="EN-US"}*[次，发送]{style="font-family:宋体"}[ZLB-ACK]{lang="EN-US"}[报文]{style="font-family:宋体"}*[times]{lang="EN-US"}*[次。]{style="font-family:宋体"} [报文中的]{style="font-family:宋体"}[Ns]{lang="EN-US"}[为]{style="font-family:宋体"}*[ns]{lang="EN-US"}*[、]{style="font-family:宋体"}[Nr]{lang="EN-US"}[为]{style="font-family:宋体"}*[nr]{lang="EN-US"}*
+Received invalid packet from port 1701, and dropped it.
 
-[[TunnelID=*tunnel-id*: Resent the packet for *times* times.]{lang="EN-US"}]{#struct_0_x8353_x2033_x2129557752}
+从1701端口收到不合法的报文，丢弃该报文
 
-[[隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_x568864907}[已经重发报文]{style="font-family:宋体"}*[times]{lang="EN-US"}*[次]{style="font-family:宋体"}
+Created a new session during batch synchronization. TunnelID=*tunnel-id*, SessionID=*session-id*.
 
-[[TunnelID=*tunnel-id*: Delay-Cleanup timer expired and deleted the local tunnel.]{lang="EN-US"}]{#struct_0_x8353_x2033_x2129623288}
+批量平滑过程中创建一个新的会话，会话所属的隧道ID为*tunnel-id*，会话ID为*session-id*
 
-[[隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_247020659}[的]{style="font-family:宋体"}[Delay-Cleanup]{lang="EN-US"}[定时器超时，删除本地隧道]{style="font-family:宋体"}
+An old session found during batch synchronization. TunnelID*=tunnel-id*, SessionID*=session-id*.
 
-[[Received invalid packet from port 1701, and dropped it.]{lang="EN-US"}]{#struct_0_x8353_x2033_390325231}
+批量平滑过程中发现一个旧的会话，会话所属的隧道ID为*tunnel-id*，会话ID为*session-id*
 
-[[从]{style="font-family:宋体"}[1701]{lang="EN-US"}]{#struct_0_x8353_x2033_x2130082043}[端口收到不合法的报文，丢弃该报文]{style="font-family:宋体"}
+Interface *interface-name* deleted.
 
-[[Created a new session during batch synchronization. TunnelID=*tunnel-id*, SessionID=*session-id*.]{lang="EN-US"}]{#struct_0_x8353_x2033_821195143}
+删除接口*interface-name*
 
-[[批量平滑过程中创建一个新的会话，会话所属的隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x8353_x2033_x2130147579}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[，会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[session-id]{lang="EN-US"}*
+Interface *interface-name* created.
 
-[[An old session found during batch synchronization. TunnelID*=tunnel-id*, SessionID*=session-id*.]{lang="EN-US"}]{#struct_0_x8353_x2033_1788646900}
+创建接口*interface-name*
 
-[[批量平滑过程中发现一个旧的会话，会话所属的隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x8353_x2033_x2130213115}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[，会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[session-id]{lang="EN-US"}*
+TunnelID=*tunnel-id*: Sent a Hello packet. Ns=*ns*, Nr=*nr*.
 
-[[Interface *interface-name* deleted.]{lang="EN-US"}]{#struct_0_x8353_x2033_x1541177849}
+隧道*tunnel-id*成功发送Hello报文，报文中的Ns为*ns*、Nr为*nr*
 
-[[删除接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_x8353_x2033_x202317009}
+【举例】
 
-[[Interface *interface-name* created.]{lang="EN-US"}]{#struct_0_x8353_x2033_x2130278651}
+\# 在LNS侧设备上打开L2TP控制报文调试信息开关。使用PC拨号上线时，LNS侧设备上会打印如下调试信息。
 
-[[创建接口]{style="font-family:宋体"}*[interface-name]{lang="EN-US"}*]{#struct_0_x8353_x2033_1171808360}
+\<Sysname\> debugging l2tp control-packet
 
-[[TunnelID=*tunnel-id*: Sent a Hello packet. Ns=*ns*, Nr=*nr*.]{lang="EN-US"}]{#struct_0_x8353_x2033_x2130344187}
+\*Aug 28 00:39:40:302 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1;
 
-[[隧道]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1385356282}[成功发送]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文，报文中的]{style="font-family:宋体"}[Ns]{lang="EN-US"}[为]{style="font-family:宋体"}*[ns]{lang="EN-US"}*[、]{style="font-family:宋体"}[Nr]{lang="EN-US"}[为]{style="font-family:宋体"}*[nr]{lang="EN-US"}*
+ Received SCCRQ packet from port 1701 (length=114, Ns=0, Nr=0). Packet content:
 
-[ ]{lang="EN-US"}
+ c8 02 00 72  00 00 00 00  00 00 00 00  80 08 00 00
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x8353_x2033_1169214310}
+ 00 00 00 01  80 08 00 00  00 02 01 00  80 09 00 00
 
-[[\# ]{lang="EN-US"}]{#struct_0_x8353_x2033_946153081}[在]{style="font-family:宋体"}[LNS]{lang="EN-US"}[侧设备上打开]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[控制报文调试信息开关。使用]{style="font-family:宋体"}[PC]{lang="EN-US"}[拨号上线时，]{style="font-family:宋体"}[LNS]{lang="EN-US"}[侧设备上会打印如下调试信息。]{style="font-family:宋体"}
+ 00 07 6c 61  63 00 13 00  00 00 08 48  33 43 20 53
 
-[[\<Sysname\> debugging l2tp control-packet]{lang="EN-US"}]{#struct_0_x8353_x2033_x2130409723}
+ 69 6d 77 61  72 65 33 32  80 0a 00 00  00 03 00 00
 
-[\*Aug 28 00:39:40:302 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1; ]{lang="EN-US"}
+ 00 03 80 08  00 00 00 09  7a 31 80 0a  00 00 00 04
 
-[ Received SCCRQ packet from port 1701 (length=114, Ns=0, Nr=0). Packet content: ]{lang="EN-US"}
+ 00 00 00 03  80 08 00 00  00 0a 04 00  80 16 00 00
 
-[ c8 02 00 72  00 00 00 00  00 00 00 00  80 08 00 00 ]{lang="EN-US"}
+ 00 0b fc dc  b2 27 82 dd  ba 9f 9b f3  0d bb 12 0c
 
-[ 00 00 00 01  80 08 00 00  00 02 01 00  80 09 00 00 ]{lang="EN-US"}
+ 57 ff
 
-[ 00 07 6c 61  63 00 13 00  00 00 08 48  33 43 20 53 ]{lang="EN-US"}
+*// 接收到SCCRQ报文，长度是114字节，Ns为0，Nr为0。*
 
-[ 69 6d 77 61  72 65 33 32  80 0a 00 00  00 03 00 00 ]{lang="EN-US"}
+\*Aug 28 00:39:40:305 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1;
 
-[ 00 03 80 08  00 00 00 09  7a 31 80 0a  00 00 00 04 ]{lang="EN-US"}
+ Encapsulated Message-Type AVP:
 
-[ 00 00 00 03  80 08 00 00  00 0a 04 00  80 16 00 00 ]{lang="EN-US"}
+ 80 08 00 00  00 00 00 02
 
-[ 00 0b fc dc  b2 27 82 dd  ba 9f 9b f3  0d bb 12 0c ]{lang="EN-US"}
+\*Aug 28 00:39:40:305 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1;
 
-[ 57 ff ]{lang="EN-US"}
+ Encapsulated Protocol-Version AVP:
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1416023636}*[接收到]{style="font-family:宋体"}[SCCRQ]{lang="EN-US"}[报文，长度是]{style="font-family:宋体"}[114]{lang="EN-US"}[字节，]{style="font-family:宋体"}[Ns]{lang="EN-US"}[为]{style="font-family:宋体"}[0]{lang="EN-US"}[，]{style="font-family:宋体"}[Nr]{lang="EN-US"}[为]{style="font-family:宋体"}[0]{lang="EN-US"}[。]{style="font-family:宋体"}*
+ 80 08 00 00  00 02 01 00
 
-[[\*Aug 28 00:39:40:305 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1; ]{lang="EN-US"}]{#struct_0_x8353_x2033_x2130540795}
+\*Aug 28 00:39:40:305 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1;
 
-[ Encapsulated Message-Type AVP: ]{lang="EN-US"}
+ Encapsulated Host-Name AVP:
 
-[ 80 08 00 00  00 00 00 02 ]{lang="EN-US"}
+ 80 09 00 00  00 07 6c 6e  73
 
-[\*Aug 28 00:39:40:305 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1; ]{lang="EN-US"}
+\*Aug 28 00:39:40:306 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1;
 
-[ Encapsulated Protocol-Version AVP: ]{lang="EN-US"}
+ Encapsulated Vendor-Name AVP:
 
-[ 80 08 00 00  00 02 01 00 ]{lang="EN-US"}
+ 00 13 00 00  00 08 48 33  43 20 53 69  6d 77 61 72
 
-[\*Aug 28 00:39:40:305 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1; ]{lang="EN-US"}
+ 65 33 32
 
-[ Encapsulated Host-Name AVP: ]{lang="EN-US"}
+\*Aug 28 00:39:40:306 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1;
 
-[ 80 09 00 00  00 07 6c 6e  73 ]{lang="EN-US"}
+ Encapsulated Framing-Capabilities AVP:
 
-[\*Aug 28 00:39:40:306 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1; ]{lang="EN-US"}
+ 80 0a 00 00  00 03 00 00  00 03
 
-[ Encapsulated Vendor-Name AVP: ]{lang="EN-US"}
+\*Aug 28 00:39:40:306 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1;
 
-[ 00 13 00 00  00 08 48 33  43 20 53 69  6d 77 61 72 ]{lang="EN-US"}
+ Encapsulated Assigned-Tunnel-ID AVP:
 
-[ 65 33 32 ]{lang="EN-US"}
+ 80 08 00 00  00 09 32 ce
 
-[\*Aug 28 00:39:40:306 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1; ]{lang="EN-US"}
+\*Aug 28 00:39:40:307 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1;
 
-[ Encapsulated Framing-Capabilities AVP: ]{lang="EN-US"}
+ Encapsulated Bearer-Capabilities AVP:
 
-[ 80 0a 00 00  00 03 00 00  00 03 ]{lang="EN-US"}
+ 80 0a 00 00  00 04 00 00  00 03
 
-[\*Aug 28 00:39:40:306 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1; ]{lang="EN-US"}
+\*Aug 28 00:39:40:307 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1;
 
-[ Encapsulated Assigned-Tunnel-ID AVP: ]{lang="EN-US"}
+ Encapsulated Receive-Window-Size AVP:
 
-[ 80 08 00 00  00 09 32 ce ]{lang="EN-US"}
+ 80 08 00 00  00 0a 04 00
 
-[\*Aug 28 00:39:40:307 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1; ]{lang="EN-US"}
+\*Aug 28 00:39:40:307 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1;
 
-[ Encapsulated Bearer-Capabilities AVP: ]{lang="EN-US"}
+ Encapsulated Challenge AVP:
 
-[ 80 0a 00 00  00 04 00 00  00 03 ]{lang="EN-US"}
+ 80 16 00 00  00 0b 3a df  ba 35 68 60  5a 00 91 a1
 
-[\*Aug 28 00:39:40:307 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1; ]{lang="EN-US"}
+ 79 61 24 23  4d 73
 
-[ Encapsulated Receive-Window-Size AVP: ]{lang="EN-US"}
+\*Aug 28 00:39:40:307 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1;
 
-[ 80 08 00 00  00 0a 04 00 ]{lang="EN-US"}
+ Encapsulated Challenge-Response AVP:
 
-[\*Aug 28 00:39:40:307 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1; ]{lang="EN-US"}
+ 80 16 00 00  00 0d b4 30  82 a4 9b 10  60 46 8c 99
 
-[ Encapsulated Challenge AVP: ]{lang="EN-US"}
+ 7d 92 4c 1a  b0 71
 
-[ 80 16 00 00  00 0b 3a df  ba 35 68 60  5a 00 91 a1]{lang="EN-US"}
+*// 封装SCCRP报文。*
 
-[ 79 61 24 23  4d 73]{lang="EN-US"}
+\*Aug 28 00:39:40:312 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1;
 
-[\*Aug 28 00:39:40:307 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1;]{lang="EN-US"}
+ Received SCCCN packet from port 1701 (TunnelID=13006, length=42, Ns=1, Nr=1). Packet content:
 
-[ Encapsulated Challenge-Response AVP:]{lang="EN-US"}
+ c8 02 00 2a  32 ce 00 00  00 01 00 01  80 08 00 00
 
-[ 80 16 00 00  00 0d b4 30  82 a4 9b 10  60 46 8c 99 ]{lang="EN-US"}
+ 00 00 00 03  80 16 00 00  00 0d 73 e1  b8 1a 43 ff
 
-[ 7d 92 4c 1a  b0 71 ]{lang="EN-US"}
+ 50 47 55 9d  9c b6 93 f6  7d 67
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x8353_x2033_301141306}*[封装]{style="font-family:宋体"}[SCCRP]{lang="EN-US"}[报文。]{style="font-family:宋体"}*
+*// 接收到SCCCN报文，隧道ID为13006，长度是42字节，Ns为1，Nr为1。*
 
-[[\*Aug 28 00:39:40:312 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1;]{lang="EN-US"}]{#struct_0_x8353_x2033_1944821592}
+\*Aug 28 00:39:40:313 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1;
 
-[ Received SCCCN packet from port 1701 (TunnelID=13006, length=42, Ns=1, Nr=1). Packet content:]{lang="EN-US"}
+ Received ICRQ packet from port 1701 (TunnelID=13006, length=38, Ns=2, Nr=1). Packet content:
 
-[ c8 02 00 2a  32 ce 00 00  00 01 00 01  80 08 00 00]{lang="EN-US"}
+ c8 02 00 26  32 ce 00 00  00 02 00 01  80 08 00 00
 
-[ 00 00 00 03  80 16 00 00  00 0d 73 e1  b8 1a 43 ff ]{lang="EN-US"}
+ 00 00 00 0a  80 08 00 00  00 0e 11 31  80 0a 00 00
 
-[ 50 47 55 9d  9c b6 93 f6  7d 67 ]{lang="EN-US"}
+ 00 0f 00 00  11 31
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x8353_x2033_1252833136}*[接收到]{style="font-family:宋体"}[SCCCN]{lang="EN-US"}[报文，隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[13006]{lang="EN-US"}[，长度是]{style="font-family:宋体"}[42]{lang="EN-US"}[字节，]{style="font-family:宋体"}[Ns]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[，]{style="font-family:宋体"}[Nr]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}*
+*// 接收到ICRQ报文，隧道ID为13006，长度是38字节，Ns为2，Nr为1。*
 
-[[\*Aug 28 00:39:40:313 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1;]{lang="EN-US"}]{#struct_0_x8353_x2033_x2129557755}
+\*Aug 28 00:39:40:317 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1;
 
-[ Received ICRQ packet from port 1701 (TunnelID=13006, length=38, Ns=2, Nr=1). Packet content:]{lang="EN-US"}
+ Encapsulated Message-Type AVP:
 
-[ c8 02 00 26  32 ce 00 00  00 02 00 01  80 08 00 00]{lang="EN-US"}
+ 80 08 00 00  00 00 00 0b
 
-[ 00 00 00 0a  80 08 00 00  00 0e 11 31  80 0a 00 00 ]{lang="EN-US"}
+\*Aug 28 00:39:40:317 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1;
 
-[ 00 0f 00 00  11 31 ]{lang="EN-US"}
+ Encapsulated Assigned-Session-ID AVP:
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x8353_x2033_x2134948848}*[接收到]{style="font-family:宋体"}[ICRQ]{lang="EN-US"}[报文，隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[13006]{lang="EN-US"}[，长度是]{style="font-family:宋体"}[38]{lang="EN-US"}[字节，]{style="font-family:宋体"}[Ns]{lang="EN-US"}[为]{style="font-family:宋体"}[2]{lang="EN-US"}[，]{style="font-family:宋体"}[Nr]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}*
+ 80 08 00 00  00 0e c4 b0    
 
-[[\*Aug 28 00:39:40:317 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1;]{lang="EN-US"}]{#struct_0_x8353_x2033_247538250}
+*// 封装ICRP报文。*
 
-[ Encapsulated Message-Type AVP:]{lang="EN-US"}
+\*Aug 28 00:39:40:318 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1;
 
-[ 80 08 00 00  00 00 00 0b]{lang="EN-US"}
+ Received ICCN packet from port 1701 (TunnelID=13006, length=40, Ns=3, Nr=2). Packet content:
 
-[\*Aug 28 00:39:40:317 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1;]{lang="EN-US"}
+ c8 02 00 28  32 ce c4 b0  00 03 00 02  80 08 00 00
 
-[ Encapsulated Assigned-Session-ID AVP: ]{lang="EN-US"}
+ 00 00 00 0c  80 0a 00 00  00 18 00 00  00 00 80 0a
 
-[ 80 08 00 00  00 0e c4 b0    ]{lang="EN-US"}
+ 00 00 00 13  00 00 00 00
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x8353_x2033_514003225}*[封装]{style="font-family:宋体"}[ICRP]{lang="EN-US"}[报文。]{style="font-family:宋体"}*
+*// 收到ICCN报文，隧道ID为13006，长度是40字节，Ns为3，Nr为2。*
 
-[[\*Aug 28 00:39:40:318 2012 Sysname L2TPV2/7/CONTROL-PKT: -MDC=1;]{lang="EN-US"}]{#struct_0_x8353_x2033_1428965783}
+\# 在LNS侧设备上打开L2TP事件调试信息开关，PC拨号上线时，LNS侧设备上会打印如下调试信息。
 
-[ Received ICCN packet from port 1701 (TunnelID=13006, length=40, Ns=3, Nr=2). Packet content:]{lang="EN-US"}
+\<Sysname\> debugging l2tp event
 
-[ c8 02 00 28  32 ce c4 b0  00 03 00 02  80 08 00 00]{lang="EN-US"}
+\*Aug 28 00:39:40:303 2012 Sysname L2TPV2/7/EVENT: -MDC=1;
 
-[ 00 00 00 0c  80 0a 00 00  00 18 00 00  00 00 80 0a]{lang="EN-US"}
+ Parsed Message-Type AVP: 1.
 
-[ 00 00 00 13  00 00 00 00 ]{lang="EN-US"}
+\*Aug 28 00:39:40:303 2012 Sysname L2TPV2/7/EVENT: -MDC=1;
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x8353_x2033_1887491312}*[收到]{style="font-family:宋体"}[ICCN]{lang="EN-US"}[报文，隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[13006]{lang="EN-US"}[，长度是]{style="font-family:宋体"}[40]{lang="EN-US"}[字节，]{style="font-family:宋体"}[Ns]{lang="EN-US"}[为]{style="font-family:宋体"}[3]{lang="EN-US"}[，]{style="font-family:宋体"}[Nr]{lang="EN-US"}[为]{style="font-family:宋体"}[2]{lang="EN-US"}[。]{style="font-family:宋体"}*
+ Parsed Protocol-Version AVP, Version=1, Revision=0.
 
-[[\# ]{lang="EN-US"}]{#struct_0_x8353_x2033_x171709560}[在]{style="font-family:宋体"}[LNS]{lang="EN-US"}[侧设备上打开]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[事件调试信息开关，]{style="font-family:宋体"}[PC]{lang="EN-US"}[拨号上线时，]{style="font-family:宋体"}[LNS]{lang="EN-US"}[侧设备上会打印如下调试信息。]{style="font-family:宋体"}
+\*Aug 28 00:39:40:303 2012 Sysname L2TPV2/7/EVENT: -MDC=1;
 
-[[\<Sysname\> debugging l2tp event]{lang="EN-US"}]{#struct_0_x8353_x2033_x2129623291}
+ Parsed Host-Name AVP: lac.
 
-[\*Aug 28 00:39:40:303 2012 Sysname L2TPV2/7/EVENT: -MDC=1;]{lang="EN-US"}
+\*Aug 28 00:39:40:304 2012 Sysname L2TPV2/7/EVENT: -MDC=1;
 
-[ Parsed Message-Type AVP: 1. ]{lang="EN-US"}
+ Parsed Vendor-Name AVP: TEST.
 
-[\*Aug 28 00:39:40:303 2012 Sysname L2TPV2/7/EVENT: -MDC=1;]{lang="EN-US"}
+\*Aug 28 00:39:40:304 2012 Sysname L2TPV2/7/EVENT: -MDC=1;
 
-[ Parsed Protocol-Version AVP, Version=1, Revision=0. ]{lang="EN-US"}
+ Parsed Framing-Capabilities AVP: 3.
 
-[\*Aug 28 00:39:40:303 2012 Sysname L2TPV2/7/EVENT: -MDC=1;]{lang="EN-US"}
+\*Aug 28 00:39:40:304 2012 Sysname L2TPV2/7/EVENT: -MDC=1;
 
-[ Parsed Host-Name AVP: lac. ]{lang="EN-US"}
+ Parsed Assigned-Tunnel-ID AVP: 31281.
 
-[\*Aug 28 00:39:40:304 2012 Sysname L2TPV2/7/EVENT: -MDC=1;]{lang="EN-US"}
+\*Aug 28 00:39:40:304 2012 Sysname L2TPV2/7/EVENT: -MDC=1;
 
-[ Parsed Vendor-Name AVP: TEST. ]{lang="EN-US"}
+ Parsed Bearer-Capabilities AVP: 3.
 
-[\*Aug 28 00:39:40:304 2012 Sysname L2TPV2/7/EVENT: -MDC=1;]{lang="EN-US"}
+\*Aug 28 00:39:40:305 2012 Sysname L2TPV2/7/EVENT: -MDC=1;
 
-[ Parsed Framing-Capabilities AVP: 3. ]{lang="EN-US"}
+ Parsed Receive-Window-Size AVP: 1024.
 
-[\*Aug 28 00:39:40:304 2012 Sysname L2TPV2/7/EVENT: -MDC=1;]{lang="EN-US"}
+\*Aug 28 00:39:40:305 2012 Sysname L2TPV2/7/EVENT: -MDC=1;
 
-[ Parsed Assigned-Tunnel-ID AVP: 31281. ]{lang="EN-US"}
+ Parsed Challenge AVP: fc dc b2 27 82 dd ba 9f 9b f3 0d bb 12 0c 57 ff
 
-[\*Aug 28 00:39:40:304 2012 Sysname L2TPV2/7/EVENT: -MDC=1;]{lang="EN-US"}
+*// 解析SCCRQ报文中携带的AVP，并输出对应的值。*
 
-[ Parsed Bearer-Capabilities AVP: 3. ]{lang="EN-US"}
+\# PC拨号上线成功后，在LNS侧设备上打开L2TP数据报文调试信息开关，会打印如下调试信息。
 
-[\*Aug 28 00:39:40:305 2012 Sysname L2TPV2/7/EVENT: -MDC=1;]{lang="EN-US"}
+\<Sysname\> debugging l2tp data-packet
 
-[ Parsed Receive-Window-Size AVP: 1024. ]{lang="EN-US"}
+\*Aug 28 00:39:40:319 2012 Sysname L2TPV2/7/KDATA-PKT: -MDC=1;
 
-[\*Aug 28 00:39:40:305 2012 Sysname L2TPV2/7/EVENT: -MDC=1; ]{lang="EN-US"}
+ Received an L2TP data packet:
 
-[ Parsed Challenge AVP: fc dc b2 27 82 dd ba 9f 9b f3 0d bb 12 0c 57 ff]{lang="EN-US"}
+  Source IP: 192.168.4.7
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1675359178}*[解析]{style="font-family:宋体"}[SCCRQ]{lang="EN-US"}[报文中携带的]{style="font-family:宋体"}[AVP]{lang="EN-US"}[，并输出对应的值。]{style="font-family:宋体"}*
+  Destination IP: 192.168.4.8
 
-[[\# PC]{lang="EN-US"}]{#struct_0_x8353_x2033_1146527569}[拨号上线成功后，在]{style="font-family:宋体"}[LNS]{lang="EN-US"}[侧设备上打开]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[数据报文调试信息开关，会打印如下调试信息。]{style="font-family:宋体"}
+  Source port: 1701
 
-[[\<Sysname\> debugging l2tp data-packet]{lang="EN-US"}]{#struct_0_x8353_x2033_x2130082042}
+  Destination port: 1701
 
-[\*Aug 28 00:39:40:319 2012 Sysname L2TPV2/7/KDATA-PKT: -MDC=1;]{lang="EN-US"}
+*// 收到一个L2TP数据报文，报文的源IP地址是192.168.4.7，目的IP地址是192.168.4.8，源端口号和目的端口号均是1701。*
 
-[ Received an L2TP data packet:]{lang="EN-US"}
+\*Aug 28 00:39:40:319 2012 Sysname L2TPV2/7/KDATA-PKT: -MDC=1;
 
-[  Source IP: 192.168.4.7]{lang="EN-US"}
+ Successfully parsed the L2TP header (L2TP header length=8):
 
-[  Destination IP: 192.168.4.8]{lang="EN-US"}
+  Tunnel ID: 13006
 
-[  Source port: 1701 ]{lang="EN-US"}
+  Session ID: 50352
 
-[  Destination port: 1701]{lang="EN-US"}
+  Ns: 61811
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x8353_x2033_x1907688212}*[收到一个]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[数据报文，报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址是]{style="font-family:宋体"}[192.168.4.7]{lang="EN-US"}[，目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址是]{style="font-family:宋体"}[192.168.4.8]{lang="EN-US"}[，源端口号和目的端口号均是]{style="font-family:宋体"}[1701]{lang="EN-US"}[。]{style="font-family:宋体"}*
+  Type: 0
 
-[[\*Aug 28 00:39:40:319 2012 Sysname L2TPV2/7/KDATA-PKT: -MDC=1;]{lang="EN-US"}]{#struct_0_x8353_x2033_x896795411}
+  Length: 0
 
-[ Successfully parsed the L2TP header (L2TP header length=8):]{lang="EN-US"}
+  Sequence: 0
 
-[  Tunnel ID: 13006]{lang="EN-US"}
+  Offset: 1
 
-[  Session ID: 50352]{lang="EN-US"}
+  Priority: 0
 
-[  Ns: 61811]{lang="EN-US"}
+*// 成功解析了L2TP数据报文，L2TP报文头长度是8字节，报文中的隧道ID为13006，会话ID为50352，报文序列号为61811，类型值为0，长度、序列号和优先级未置位，偏移量置位。*
 
-[  Type: 0]{lang="EN-US"}
+\# PC拨号上线成功后，在LNS侧设备上打开L2TP的PPP报文调试信息开关，会打印如下调试信息。
 
-[  Length: 0]{lang="EN-US"}
+\<Sysname\> debugging l2tp dump
 
-[  Sequence: 0]{lang="EN-US"}
+\*Aug 28 00:39:40:335 2012 Sysname L2TPV2/7/KDUMP: -MDC=1;
 
-[  Offset: 1 ]{lang="EN-US"}
+ Send a packet to PPP on interface Virtual-Access0 (length=19):
 
-[  Priority: 0]{lang="EN-US"}
+ ff 03 c0 21 02 00 00 0f 03 05 c2 23 05 05 06 34
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x8353_x2033_701662234}*[成功解析了]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[数据报文，]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[报文头长度是]{style="font-family:宋体"}[8]{lang="EN-US"}[字节，报文中的隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[13006]{lang="EN-US"}[，会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[50352]{lang="EN-US"}[，报文序列号为]{style="font-family:宋体"}[61811]{lang="EN-US"}[，类型值为]{style="font-family:宋体"}[0]{lang="EN-US"}[，长度、序列号和优先级未置位，偏移量置位。]{style="font-family:宋体"}*
+ 73 72 b6
 
-[[\# PC]{lang="EN-US"}]{#struct_0_x8353_x2033_x2130147578}[拨号上线成功后，在]{style="font-family:宋体"}[LNS]{lang="EN-US"}[侧设备上打开]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[的]{style="font-family:宋体"}[PPP]{lang="EN-US"}[报文调试信息开关，会打印如下调试信息。]{style="font-family:宋体"}
-
-[[\<Sysname\> debugging l2tp dump]{lang="EN-US"}]{#struct_0_x8353_x2033_x940236455}
-
-[\*Aug 28 00:39:40:335 2012 Sysname L2TPV2/7/KDUMP: -MDC=1;]{lang="EN-US"}
-
-[ Send a packet to PPP on interface Virtual-Access0 (length=19):]{lang="EN-US"}
-
-[ ff 03 c0 21 02 00 00 0f 03 05 c2 23 05 05 06 34 ]{lang="EN-US"}
-
-[ 73 72 b6]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_x8353_x2033_x775990011}*[在接口]{style="font-family:宋体"}[Virtual-Access0]{lang="EN-US"}[下，将长度为]{style="font-family:宋体"}[19]{lang="EN-US"}[字节的报文发送给了]{style="font-family:宋体"}[PPP]{lang="EN-US"}[。]{style="font-family:宋体"}*
+*// 在接口Virtual-Access0下，将长度为19字节的报文发送给了PPP。*

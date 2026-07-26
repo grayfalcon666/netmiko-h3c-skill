@@ -1,737 +1,721 @@
-::: {#2010215296 .myid}
-[]{#_Toc404785344}[]{#struct_0_97620_x1630_1236591834}
 
 **DDR \-- DDR调试命令 \-- debugging dialer**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_97620_x1630_1154457564}
+【命令】
 
-[**[debugging dialer]{lang="EN-US"}**[ { **all** \| **event** \| **packet** }]{lang="EN-US"}]{#struct_0_97620_x1630_1685386318}
+**[debugging dialer**[ { **all** \| **event** \| **packet** }]]
 
-[**[undo debugging dialer]{lang="EN-US"}**[ { **all** \| **event** \| **packet** }]{lang="EN-US"}]{#struct_0_97620_x1630_2082496713}
+**[undo debugging dialer**[ { **all** \| **event** \| **packet** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_97620_x1630_1081562284}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_97620_x1630_1999080865}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_97620_x1630_x1259120461}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_97620_x1630_362784470}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_97620_x1630_x1179428983}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_97620_x1630_908820700}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_97620_x1630_1236526298}[：表示]{style="font-family:宋体"}[DDR]{lang="EN-US"}[所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示DDR所有调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_97620_x1630_360131403}[：表示]{style="font-family:宋体"}[DDR]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示DDR事件调试信息开关。
 
-[**[packet]{lang="EN-US"}**]{#struct_0_97620_x1630_2134961523}[：表示]{style="font-family:宋体"}[DDR]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}
+**[packet**]：表示DDR报文调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_97620_x1630_1172279988}
+【描述】
 
-[**[debugging dialer]{lang="EN-US"}**]{#struct_0_97620_x1630_1978538958}[命令用来打开]{style="font-family:宋体"}[DDR]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}**[undo]{lang="EN-US"}**[ **debugging dialer**]{lang="EN-US"}[命令用来关闭]{style="font-family:宋体"}[DDR]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}
+**[debugging dialer**]命令用来打开DDR调试信息开关。**undo** **debugging dialer**命令用来关闭DDR调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[DDR]{lang="EN-US"}]{#struct_0_97620_x1630_822316937}[调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，DDR调试信息开关处于关闭状态。
 
-[[表1-1 ]{lang="EN-US"}[debugging dialer event]{lang="EN-US"}]{#struct_0_97620_x1630_437937920}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging dialer event命令输出信息描述表
 
-[]{#table_struct_0_x166210597}[[字段]{style="font-family:黑体"}]{#struct_0_97620_x1630_x959314318}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_97620_x1630_x1614405699}
+描述
 
-[[Call up on interface *interface-name*]{lang="EN-US"}]{#struct_0_97620_x1630_1236985050}
+Call up on interface *interface-name*
 
-[[接口上的呼叫]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_97620_x1630_359976178}[，即呼叫建立]{style="font-family:宋体"}
+接口上的呼叫up，即呼叫建立
 
-[[Config interface]{lang="EN-US"}]{#struct_0_97620_x1630_x437134422}
+Config interface
 
-[[配置接口，使用此接口配置进行协商]{style="font-family:宋体"}]{#struct_0_97620_x1630_x1318711390}
+配置接口，使用此接口配置进行协商
 
-[[Call direction]{lang="EN-US"}]{#struct_0_97620_x1630_x2104568530}
+Call direction
 
-[[呼叫方向，入呼叫]{style="font-family:宋体"}[call in]{lang="EN-US"}]{#struct_0_97620_x1630_545175335}[；出呼叫]{style="font-family:宋体"}[call out]{lang="EN-US"}
+呼叫方向，入呼叫call in；出呼叫call out
 
-[[Calling number]{lang="EN-US"}]{#struct_0_97620_x1630_1236919514}
+Calling number
 
-[[主叫号码，入呼叫时有效]{style="font-family:宋体"}]{#struct_0_97620_x1630_1865696306}
+主叫号码，入呼叫时有效
 
-[[Call down on interface *interface-name*]{lang="EN-US"}]{#struct_0_97620_x1630_1978208044}
+Call down on interface *interface-name*
 
-[[接口上的呼叫]{style="font-family:宋体"}[down]{lang="EN-US"}]{#struct_0_97620_x1630_1242665077}[，即呼叫拆除]{style="font-family:宋体"}
+接口上的呼叫down，即呼叫拆除
 
-[[Link up on interface *interface-name*]{lang="EN-US"}]{#struct_0_97620_x1630_x586553924}
+Link up on interface *interface-name*
 
-[[接口上的链接]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_97620_x1630_399822897}[，即链接建立]{style="font-family:宋体"}
+接口上的链接up，即链接建立
 
-[[Peer address]{lang="EN-US"}]{#struct_0_97620_x1630_1236853978}
+Peer address
 
-[[对端地址]{style="font-family:宋体"}]{#struct_0_97620_x1630_369854643}
+对端地址
 
-[[Link down on interface *interface-name*]{lang="EN-US"}]{#struct_0_97620_x1630_394607042}
+Link down on interface *interface-name*
 
-[[接口上的链接]{style="font-family:宋体"}[down]{lang="EN-US"}]{#struct_0_97620_x1630_740244306}[，即链接拆除]{style="font-family:宋体"}
+接口上的链接down，即链接拆除
 
-[[Map info:]{lang="EN-US"}]{#struct_0_97620_x1630_1008440543}
+Map info:
 
-[[  Interface: *interface-name*]{lang="EN-US"}]{#struct_0_97620_x1630_x1873861790}
+  Interface: *interface-name*
 
-[[  Map type: *type*]{lang="EN-US"}]{#struct_0_97620_x1630_1236788442}
+  Map type: *type*
 
-[[  NextHop: *nexthop*]{lang="EN-US"}]{#struct_0_97620_x1630_x2054440554}
+  NextHop: *nexthop*
 
-[[  Mask: *mask*]{lang="EN-US"}]{#struct_0_97620_x1630_467993993}
+  Mask: *mask*
 
-[[  VPN instance: *vpnindex*]{lang="EN-US"}]{#struct_0_97620_x1630_2072642890}
+  VPN instance: *vpnindex*
 
-[[  Broadcast: *broadcast*]{lang="EN-US"}]{#struct_0_97620_x1630_x195882505}
+  Broadcast: *broadcast*
 
-[[map]{lang="EN-US"}]{#struct_0_97620_x1630_1237247194}[表项信息：]{style="font-family:宋体"}
+map表项信息：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Interface]{lang="EN-US"}]{#struct_0_97620_x1630_x23480445}[：]{lang="EN-US" style="font-family:宋体"}[m]{lang="EN-US"}[ap]{lang="EN-US"}[所属接口]{lang="EN-US" style="font-family:宋体"}
+·Interface：map所属接口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Map type]{lang="EN-US"}]{#struct_0_97620_x1630_x695070554}[：]{lang="EN-US" style="font-family:宋体"}[m]{lang="EN-US"}[ap]{lang="EN-US"}[类型，]{lang="EN-US" style="font-family:宋体"}[包括]{style="font-family:宋体"}[pppoec]{lang="EN-US"}[、]{style="font-family:宋体"}[dialer number]{lang="EN-US"}[、]{style="font-family:宋体"}[static]{lang="EN-US"}[（]{style="font-family:宋体"}[静态]{lang="EN-US" style="font-family:宋体"}[map]{lang="EN-US"}[）、]{style="font-family:宋体"}[dynamic]{lang="EN-US"}[（]{style="font-family:宋体"}[动态]{lang="EN-US" style="font-family:宋体"}[map]{lang="EN-US"}[）]{style="font-family:宋体"}
+·Map type：map类型，包括pppoec、dialer number、static（静态map）、dynamic（动态map）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Next]{lang="EN-US"}]{#struct_0_97620_x1630_x1654184643}[H]{lang="EN-US"}[op]{lang="EN-US"}[：目的地址]{lang="EN-US" style="font-family:宋体"}
+·NextHop：目的地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Mask]{lang="EN-US"}]{#struct_0_97620_x1630_1237181658}[：目的地址掩码]{lang="EN-US" style="font-family:宋体"}
+·Mask：目的地址掩码
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[V]{lang="EN-US"}]{#struct_0_97620_x1630_x1971871642}[PN ]{lang="EN-US"}[instance]{lang="EN-US"}[：]{lang="EN-US" style="font-family:宋体"}[VPN]{lang="EN-US"}[索引]{lang="EN-US" style="font-family:宋体"}
+·VPN instance：VPN索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Broad]{lang="EN-US"}]{#struct_0_97620_x1630_x1494691591}[c]{lang="EN-US"}[ast]{lang="EN-US"}[：广播属性，]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[广播；]{lang="EN-US" style="font-family:宋体"}[0]{lang="EN-US"}[单播]{lang="EN-US" style="font-family:宋体"}
+·Broadcast：广播属性，1广播；0单播
 
-[[Diagnose timer timed out on interface *interface-name*, and link disconnected.]{lang="EN-US"}]{#struct_0_97620_x1630_282594256}
+Diagnose timer timed out on interface *interface-name*, and link disconnected.
 
-[[接口上诊断定时器超时，拆除呼叫]{style="font-family:宋体"}]{#struct_0_97620_x1630_1236722907}
+接口上诊断定时器超时，拆除呼叫
 
-[[Enable timer timed out on interface *interface-name*.]{lang="EN-US"}]{#struct_0_97620_x1630_x1181680144}
+Enable timer timed out on interface *interface-name*.
 
-[[接口上使能定时器超时]{style="font-family:宋体"}]{#struct_0_97620_x1630_x461630440}
+接口上使能定时器超时
 
-[[Wait-carrier timer timed out on interface *interface-name*, and call disconnected.]{lang="EN-US"}]{#struct_0_97620_x1630_x1664933494}
+Wait-carrier timer timed out on interface *interface-name*, and call disconnected.
 
-[[接口上等待载波定时器超时，拆除呼叫]{style="font-family:宋体"}]{#struct_0_97620_x1630_583838617}
+接口上等待载波定时器超时，拆除呼叫
 
-[[Wait-nego timer timed out on interface *interface-name*, and link disconnected.]{lang="EN-US"}]{#struct_0_97620_x1630_1236657371}
+Wait-nego timer timed out on interface *interface-name*, and link disconnected.
 
-[[接口上等待协商定时器超时，拆除链接]{style="font-family:宋体"}]{#struct_0_97620_x1630_x44517631}
+接口上等待协商定时器超时，拆除链接
 
-[[Routing-disable timer timed out on interface *interface-name*, and standby link disconnected.]{lang="EN-US"}]{#struct_0_97620_x1630_x1222421206}
+Routing-disable timer timed out on interface *interface-name*, and standby link disconnected.
 
-[[接口上的备份链路延迟断开定时器超时，拆除备份链接]{style="font-family:宋体"}]{#struct_0_97620_x1630_x2092402627}
+接口上的备份链路延迟断开定时器超时，拆除备份链接
 
-[[Disconnecting link-call on interface *interface-name*.]{lang="EN-US"}]{#struct_0_97620_x1630_1236591835}
+Disconnecting link-call on interface *interface-name*.
 
-[[拆除接口上的链接呼叫]{style="font-family:宋体"}]{#struct_0_97620_x1630_1154523100}
+拆除接口上的链接呼叫
 
-[[Link negotiation up on interface *interface-name*.]{lang="EN-US"}]{#struct_0_97620_x1630_x1029060963}
+Link negotiation up on interface *interface-name*.
 
-[[接口上链路层链路协商]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_97620_x1630_1236526299}
+接口上链路层链路协商up
 
-[[Link negotiation down on interface *interface-name*.]{lang="EN-US"}]{#struct_0_97620_x1630_360065867}
+Link negotiation down on interface *interface-name*.
 
-[[接口上链路层链路协商]{style="font-family:宋体"}[down]{lang="EN-US"}]{#struct_0_97620_x1630_x1756774264}
+接口上链路层链路协商down
 
-[[Link network up on interface *interface-name*.]{lang="EN-US"}]{#struct_0_97620_x1630_x952248866}
+Link network up on interface *interface-name*.
 
-[[接口上链路层网络协商]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_97620_x1630_1236985051}
+接口上链路层网络协商up
 
-[[Link network down on interface *interface-name*.]{lang="EN-US"}]{#struct_0_97620_x1630_359910642}
+Link network down on interface *interface-name*.
 
-[[接口上链路层网络协商]{style="font-family:宋体"}[down]{lang="EN-US"}]{#struct_0_97620_x1630_1102919999}
+接口上链路层网络协商down
 
-[[Received a disconnect indication on interface *interface-name*, with user ID *userid* and call ID *callid.*]{lang="EN-US"}]{#struct_0_97620_x1630_1236919515}
+Received a disconnect indication on interface *interface-name*, with user ID *userid* and call ID *callid.*
 
-[[接口上收到呼叫拆除指示，]{style="font-family:宋体"}[user ID]{lang="EN-US"}]{#struct_0_97620_x1630_1865761842}[信息，]{style="font-family:宋体"}[call ID]{lang="EN-US"}[信息]{style="font-family:宋体"}
+接口上收到呼叫拆除指示，user ID信息，call ID信息
 
-[[Dialing *called-number* on interface *interface-name*, with user ID *userid*.]{lang="EN-US"}]{#struct_0_97620_x1630_1611384842}
+Dialing *called-number* on interface *interface-name*, with user ID *userid*.
 
-[[接口上发起呼叫，]{style="font-family:宋体"}[user ID]{lang="EN-US"}]{#struct_0_97620_x1630_1887098807}[信息]{style="font-family:宋体"}
+接口上发起呼叫，user ID信息
 
-[[Disconnecting call on interface *interface-name*, with user ID *userid* and call ID *callid*.]{lang="EN-US"}]{#struct_0_97620_x1630_1236853979}
+Disconnecting call on interface *interface-name*, with user ID *userid* and call ID *callid*.
 
-[[接口上拆除呼叫，]{style="font-family:宋体"}[user ID]{lang="EN-US"}]{#struct_0_97620_x1630_369920179}[信息，]{style="font-family:宋体"}[call ID]{lang="EN-US"}[信息]{style="font-family:宋体"}
+接口上拆除呼叫，user ID信息，call ID信息
 
-[[Received a connect indication on interface *interface-name*, with user ID *userid* and call ID *callid.*]{lang="EN-US"}]{#struct_0_97620_x1630_x383067306}
+Received a connect indication on interface *interface-name*, with user ID *userid* and call ID *callid.*
 
-[[接口上收到出呼叫应答，]{style="font-family:宋体"}[user ID]{lang="EN-US"}]{#struct_0_97620_x1630_1236788443}[信息，]{style="font-family:宋体"}[call ID]{lang="EN-US"}[信息]{style="font-family:宋体"}
+接口上收到出呼叫应答，user ID信息，call ID信息
 
-[[Callout failed on interface *interface-name*, and call disconnected.]{lang="EN-US"}]{#struct_0_97620_x1630_x2054506090}
+Callout failed on interface *interface-name*, and call disconnected.
 
-[[接口上查找出呼叫失败，拆除呼叫]{style="font-family:宋体"}]{#struct_0_97620_x1630_x2097409234}
+接口上查找出呼叫失败，拆除呼叫
 
-[[Received a caller *calling-number* on interface *interface-name*, with call ID *callid*.]{lang="EN-US"}]{#struct_0_97620_x1630_1236657368}
+Received a caller *calling-number* on interface *interface-name*, with call ID *callid*.
 
-[[接口上收到一个入呼叫，]{style="font-family:宋体"}[call ID]{lang="EN-US"}]{#struct_0_97620_x1630_1236591832}[信息]{style="font-family:宋体"}
+接口上收到一个入呼叫，call ID信息
 
-[[The caller *calling-number* should be rejected.]{lang="EN-US"}]{#struct_0_97620_x1630_1154064348}
+The caller *calling-number* should be rejected.
 
-[[此入呼叫被拒绝]{style="font-family:宋体"}]{#struct_0_97620_x1630_145511081}
+此入呼叫被拒绝
 
-[[The caller *calling-number* should be allowed.]{lang="EN-US"}]{#struct_0_97620_x1630_1236526296}
+The caller *calling-number* should be allowed.
 
-[[此入呼叫允许接入]{style="font-family:宋体"}]{#struct_0_97620_x1630_360786763}
+此入呼叫允许接入
 
-[[The caller *calling-number* should be called back.]{lang="EN-US"}]{#struct_0_97620_x1630_x926779441}
+The caller *calling-number* should be called back.
 
-[[此入呼叫进行回呼]{style="font-family:宋体"}]{#struct_0_97620_x1630_1236985048}
+此入呼叫进行回呼
 
-[[Found a route matching *calling-number*, and started the enable timer to call back.]{lang="EN-US"}]{#struct_0_97620_x1630_360500465}
+Found a route matching *calling-number*, and started the enable timer to call back.
 
-[[找到匹配主叫号码的]{style="font-family:宋体"}[route]{lang="EN-US"}]{#struct_0_97620_x1630_1236919512}[，启动使能定时器准备回呼]{style="font-family:宋体"}
+找到匹配主叫号码的route，启动使能定时器准备回呼
 
-[[Found no route matching *calling-number*, and callback failed.]{lang="EN-US"}]{#struct_0_97620_x1630_1865303090}
+Found no route matching *calling-number*, and callback failed.
 
-[[没有找到匹配主叫号码的]{style="font-family:宋体"}[route]{lang="EN-US"}]{#struct_0_97620_x1630_19313081}[，回呼失败]{style="font-family:宋体"}
+没有找到匹配主叫号码的route，回呼失败
 
-[[The interface *interface-name* is in shutdown state, and dial failed.]{lang="EN-US"}]{#struct_0_97620_x1630_1236853976}
+The interface *interface-name* is in shutdown state, and dial failed.
 
-[[接口处于]{style="font-family:宋体"}[shutdown]{lang="EN-US"}]{#struct_0_97620_x1630_368937139}[状态，拨号失败]{style="font-family:宋体"}
+接口处于shutdown状态，拨号失败
 
-[[Standby routing is effective on interface *interface-name*, and dial failed.]{lang="EN-US"}]{#struct_0_97620_x1630_1236788440}
+Standby routing is effective on interface *interface-name*, and dial failed.
 
-[[接口上路由备份功能生效，拨号失败]{style="font-family:宋体"}]{#struct_0_97620_x1630_x2054571626}
+接口上路由备份功能生效，拨号失败
 
-[[No available channel on interface *interface-name*, and competition started.]{lang="EN-US"}]{#struct_0_97620_x1630_458886535}
+No available channel on interface *interface-name*, and competition started.
 
-[[接口上没有空闲通道，竞争启动]{style="font-family:宋体"}]{#struct_0_97620_x1630_1237247192}
+接口上没有空闲通道，竞争启动
 
-[[No available channel on interface *interface-name*, and dial failed.]{lang="EN-US"}]{#struct_0_97620_x1630_x23087229}
+No available channel on interface *interface-name*, and dial failed.
 
-[[接口上没有空闲通道，拨号失败]{style="font-family:宋体"}]{#struct_0_97620_x1630_1237181656}
+接口上没有空闲通道，拨号失败
 
-[[Enable timer of interface *interface-name* is effective, and dial failed.]{lang="EN-US"}]{#struct_0_97620_x1630_x1972002714}
+Enable timer of interface *interface-name* is effective, and dial failed.
 
-[[接口上的使能定时器生效，拨号失败]{style="font-family:宋体"}]{#struct_0_97620_x1630_1236722905}
+接口上的使能定时器生效，拨号失败
 
-[[The route has no dialer number, and dial failed.]{lang="EN-US"}]{#struct_0_97620_x1630_x1181549072}
+The route has no dialer number, and dial failed.
 
-[[Route]{lang="EN-US"}]{#struct_0_97620_x1630_1236657369}[没有配置拨号串，拨号失败]{style="font-family:宋体"}
+Route没有配置拨号串，拨号失败
 
-[[The interface *interface-name* isn\'t a son of interface *interface-name*, and dial failed.]{lang="EN-US"}]{#struct_0_97620_x1630_x43993342}
+The interface *interface-name* isn\'t a son of interface *interface-name*, and dial failed.
 
-[[接口之间没有父子关系，拨号失败]{style="font-family:宋体"}]{#struct_0_97620_x1630_40064913}
+接口之间没有父子关系，拨号失败
 
-[[Found a matching map on interface *interface-name*, and trying to dial with it.]{lang="EN-US"}]{#struct_0_97620_x1630_1236591833}
+Found a matching map on interface *interface-name*, and trying to dial with it.
 
-[[在接口上找到匹配的]{style="font-family:宋体"}[map]{lang="EN-US"}]{#struct_0_97620_x1630_1236526297}[，开始拨号]{style="font-family:宋体"}
+在接口上找到匹配的map，开始拨号
 
-[[Enable timer timed out, and performing callback on interface *interface-name*.]{lang="EN-US"}]{#struct_0_97620_x1630_360721227}
+Enable timer timed out, and performing callback on interface *interface-name*.
 
-[[使能定时器超时，在接口上回呼]{style="font-family:宋体"}]{#struct_0_97620_x1630_x932433426}
+使能定时器超时，在接口上回呼
 
-[[Idle timer timed out on interface *interface-name*, and link disconnected.]{lang="EN-US"}]{#struct_0_97620_x1630_1236985049}
+Idle timer timed out on interface *interface-name*, and link disconnected.
 
-[[接口上的空闲定时器超时，拆除链接]{style="font-family:宋体"}]{#struct_0_97620_x1630_360434929}
+接口上的空闲定时器超时，拆除链接
 
-[[Auto dial timer timed out, and trying to dial on interface *interface-name*.]{lang="EN-US"}]{#struct_0_97620_x1630_1236919513}
+Auto dial timer timed out, and trying to dial on interface *interface-name*.
 
-[[自动拨号定时器超时，在接口上拨号]{style="font-family:宋体"}]{#struct_0_97620_x1630_1865368626}
+自动拨号定时器超时，在接口上拨号
 
-[[Found free channel on interface *interface-name*, and trying to dial with it.]{lang="EN-US"}]{#struct_0_97620_x1630_1236853977}
+Found free channel on interface *interface-name*, and trying to dial with it.
 
-[[接口上找到空闲通道，发起呼叫]{style="font-family:宋体"}]{#struct_0_97620_x1630_369002675}
+接口上找到空闲通道，发起呼叫
 
-[[The interface *interface-name* is in shutdown state, and call-in failed.]{lang="EN-US"}]{#struct_0_97620_x1630_1236788441}
+The interface *interface-name* is in shutdown state, and call-in failed.
 
-[[接口处于]{style="font-family:宋体"}[shutdown]{lang="EN-US"}]{#struct_0_97620_x1630_x2054637162}[状态，入呼叫失败]{style="font-family:宋体"}
+接口处于shutdown状态，入呼叫失败
 
-[[Standby routing is effective on interface *interface-name*, and call-in failed.]{lang="EN-US"}]{#struct_0_97620_x1630_x2099307736}
+Standby routing is effective on interface *interface-name*, and call-in failed.
 
-[[接口上动态路由备份生效，入呼叫失败]{style="font-family:宋体"}]{#struct_0_97620_x1630_1237247193}
+接口上动态路由备份生效，入呼叫失败
 
-[[User authentication failed, and link disconnected.]{lang="EN-US"}]{#struct_0_97620_x1630_x23152765}
+User authentication failed, and link disconnected.
 
-[[对端用户验证失败，拆除链接]{style="font-family:宋体"}]{#struct_0_97620_x1630_1237181657}
+对端用户验证失败，拆除链接
 
-[[Peer address authentication failed, and disconnect the link.]{lang="EN-US"}]{#struct_0_97620_x1630_x1972068250}
+Peer address authentication failed, and disconnect the link.
 
-[[对端地址验证失败，拆除链接]{style="font-family:宋体"}]{#struct_0_97620_x1630_1236722902}
+对端地址验证失败，拆除链接
 
-[[Creating dynamic map failed.]{lang="EN-US"}]{#struct_0_97620_x1630_x1181876752}
+Creating dynamic map failed.
 
-[[创建动态]{style="font-family:宋体"}[map]{lang="EN-US"}]{#struct_0_97620_x1630_1236657366}[失败]{style="font-family:宋体"}
+创建动态map失败
 
-[[Link has already been disconnected.]{lang="EN-US"}]{#struct_0_97620_x1630_x44976382}
+Link has already been disconnected.
 
-[[链接已经拆除]{style="font-family:宋体"}]{#struct_0_97620_x1630_1236591830}
+链接已经拆除
 
-[[Link already up.]{lang="EN-US"}]{#struct_0_97620_x1630_1154195420}
+Link already up.
 
-[[链接已经]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_97620_x1630_1236526294}
+链接已经up
 
-[[Peer address conflict, disconnect the link.]{lang="EN-US"}]{#struct_0_97620_x1630_360917835}
+Peer address conflict, disconnect the link.
 
-[[对端地址冲突，拆除链接]{style="font-family:宋体"}]{#struct_0_97620_x1630_1236985046}
+对端地址冲突，拆除链接
 
-[[ACL created, match dialer-group *group-number* rule, and updated ACL number to a valid value.]{lang="EN-US"}]{#struct_0_97620_x1630_360369393}
+ACL created, match dialer-group *group-number* rule, and updated ACL number to a valid value.
 
-[[ACL]{lang="EN-US"}]{#struct_0_97620_x1630_1236919510}[创建，匹配]{style="font-family:宋体"}[dialer-group rule]{lang="EN-US"}[，更新]{style="font-family:宋体"}[ACL number]{lang="EN-US"}[为有效值]{style="font-family:宋体"}
+ACL创建，匹配dialer-group rule，更新ACL number为有效值
 
-[[ACL deleted, match dialer-group *group-number* rule, and updated ACL number to an invalid value.]{lang="EN-US"}]{#struct_0_97620_x1630_1865434162}
+ACL deleted, match dialer-group *group-number* rule, and updated ACL number to an invalid value.
 
-[[ACL]{lang="EN-US"}]{#struct_0_97620_x1630_1236853974}[删除，匹配]{style="font-family:宋体"}[dialer-group rule]{lang="EN-US"}[，更新]{style="font-family:宋体"}[ACL number]{lang="EN-US"}[为无效值]{style="font-family:宋体"}
+ACL删除，匹配dialer-group rule，更新ACL number为无效值
 
-[[Warmup timer timed out. Standby routing started.]{lang="EN-US"}]{#struct_0_97620_x1630_369068211}
+Warmup timer timed out. Standby routing started.
 
-[[动态路由备份功能启动定时器超时，启动路由备份]{style="font-family:宋体"}]{#struct_0_97620_x1630_1236788438}
+动态路由备份功能启动定时器超时，启动路由备份
 
-[[The route of standby routing-group *group-number* is up.]{lang="EN-US"}]{#struct_0_97620_x1630_x2054047339}
+The route of standby routing-group *group-number* is up.
 
-[[动态路由备份监控组的路由]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_97620_x1630_1237247190}
+动态路由备份监控组的路由up
 
-[[The route of standby routing-group *group-number* is down.]{lang="EN-US"}]{#struct_0_97620_x1630_x23218301}
+The route of standby routing-group *group-number* is down.
 
-[[动态路由备份监控组的路由]{style="font-family:宋体"}[down]{lang="EN-US"}]{#struct_0_97620_x1630_1237181654}
+动态路由备份监控组的路由down
 
-[[Refresh wadj: interface = *interface-name*, nexthop = *nexthop*, result = *result*]{lang="EN-US"}]{#struct_0_97620_x1630_x1972133786}
+Refresh wadj: interface = *interface-name*, nexthop = *nexthop*, result = *result*
 
-[[  Peer Address: *peer*]{lang="EN-US"}]{#struct_0_97620_x1630_1236722903}
+  Peer Address: *peer*
 
-[[  Phy interface: *interface-name*]{lang="EN-US"}]{#struct_0_97620_x1630_x1181942288}
+  Phy interface: *interface-name*
 
-[[  VA interface: *interface-name*]{lang="EN-US"}]{#struct_0_97620_x1630_1236657367}
+  VA interface: *interface-name*
 
-[[  MTU: *mtu*]{lang="EN-US"}]{#struct_0_97620_x1630_1236591831}
+  MTU: *mtu*
 
-[[  Slot: *slot*]{lang="EN-US"}]{#struct_0_97620_x1630_1154260956}
+  Slot: *slot*
 
-[[添加邻接表]{style="font-family:宋体"}]{#struct_0_97620_x1630_1236526295}
+添加邻接表
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[interface]{lang="EN-US"}]{#struct_0_97620_x1630_360852299}[：路由接口]{lang="EN-US" style="font-family:宋体"}
+·interface：路由接口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[nexthop]{lang="EN-US"}]{#struct_0_97620_x1630_1236985047}[：下一跳]{lang="EN-US" style="font-family:宋体"}
+·nexthop：下一跳
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[result]{lang="EN-US"}]{#struct_0_97620_x1630_360303857}[：]{lang="EN-US" style="font-family:宋体"}[0]{lang="EN-US"}[成功，非]{style="font-family:宋体"}[0]{lang="EN-US"}[失败]{style="font-family:宋体"}
+·result：0成功，非0失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Peer Address]{lang="EN-US"}]{#struct_0_97620_x1630_1236919511}[：对端地址]{lang="EN-US" style="font-family:宋体"}
+·Peer Address：对端地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Phy interface]{lang="EN-US"}]{#struct_0_97620_x1630_1865499698}[：物理接口]{lang="EN-US" style="font-family:宋体"}
+·Phy interface：物理接口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[V]{lang="EN-US"}]{#struct_0_97620_x1630_1236853975}[A]{lang="EN-US"}[ interface]{lang="EN-US"}[：虚拟接口]{lang="EN-US" style="font-family:宋体"}
+·VA interface：虚拟接口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[M]{lang="EN-US"}]{#struct_0_97620_x1630_369133747}[TU]{lang="EN-US"}[：]{lang="EN-US" style="font-family:宋体"}[mtu]{lang="EN-US"}
+·MTU：mtu
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[S]{lang="EN-US"}[lot]{lang="EN-US"}]{#struct_0_97620_x1630_1236788439}[：槽号]{lang="EN-US" style="font-family:宋体"}
+·Slot：槽号
 
-[[Delete wadj: interface = *interface-name*, nexthop = *nexthop*, result = *result*]{lang="EN-US"}]{#struct_0_97620_x1630_1237247191}
+Delete wadj: interface = *interface-name*, nexthop = *nexthop*, result = *result*
 
-[[删除邻接表]{style="font-family:宋体"}]{#struct_0_97620_x1630_x23283837}
+删除邻接表
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[interface]{lang="EN-US"}]{#struct_0_97620_x1630_1237181655}[：路由接口]{lang="EN-US" style="font-family:宋体"}
+·interface：路由接口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[nexthop]{lang="EN-US"}]{#struct_0_97620_x1630_x1972199322}[：下一跳]{lang="EN-US" style="font-family:宋体"}
+·nexthop：下一跳
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[result]{lang="EN-US"}]{#struct_0_97620_x1630_x1492160449}[：]{lang="EN-US" style="font-family:宋体"}[0]{lang="EN-US"}[成功，非]{lang="EN-US" style="font-family:宋体"}[0]{lang="EN-US"}[失败]{lang="EN-US" style="font-family:宋体"}
+·result：0成功，非0失败
 
-[ ]{lang="EN-US"}
+表1-2 debugging dialer packet命令输出信息描述表
 
-[]{#struct_0_97620_x1630_33340340}[[表1-2 ]{lang="EN-US"}[debugging dialer packet]{lang="EN-US"}]{#_Toc130718927}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x143661973}[[字段]{style="font-family:黑体"}]{#struct_0_97620_x1630_x1727188304}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_97620_x1630_1929953586}
+Sending interesting unicast packet out of interface *interface-name*, nexthop is *nexthop*
 
-[[Sending interesting unicast packet out of interface *interface-name*, nexthop is *nexthop*]{lang="EN-US"}]{#struct_0_97620_x1630_x1492225985}
+在接口上发送感兴趣单播报文
 
-[[在接口上发送感兴趣单播报文]{style="font-family:宋体"}]{#struct_0_97620_x1630_1761174615}
+Sending uninteresting unicast packet out of interface *interface-name*, nexthop is *nexthop*
 
-[[Sending uninteresting unicast packet out of interface *interface-name*, nexthop is *nexthop*]{lang="EN-US"}]{#struct_0_97620_x1630_679290391}
+在接口上发送非感兴趣单播报文
 
-[[在接口上发送非感兴趣单播报文]{style="font-family:宋体"}]{#struct_0_97620_x1630_x143008258}
+Sending interesting broadcast packet out of interface *interface-name.*
 
-[[Sending interesting broadcast packet out of interface *interface-name.*]{lang="EN-US"}]{#struct_0_97620_x1630_x294734531}
+在接口上发送感兴趣广播报文
 
-[[在接口上发送感兴趣广播报文]{style="font-family:宋体"}]{#struct_0_97620_x1630_546896055}
+Sending uninteresting broadcast packet out of interface *interface-name.*
 
-[[Sending uninteresting broadcast packet out of interface *interface-name.*]{lang="EN-US"}]{#struct_0_97620_x1630_x1492291521}
+在接口上发送非感兴趣广播报文
 
-[[在接口上发送非感兴趣广播报文]{style="font-family:宋体"}]{#struct_0_97620_x1630_291834662}
+There is no matching map on interface *interface-name*, and discard packet.
 
-[[There is no matching map on interface *interface-name*, and discard packet.]{lang="EN-US"}]{#struct_0_97620_x1630_x1839079111}
+在接口上没有匹配的map表项，报文丢弃
 
-[[在接口上没有匹配的]{style="font-family:宋体"}[map]{lang="EN-US"}]{#struct_0_97620_x1630_1868689421}[表项，报文丢弃]{style="font-family:宋体"}
+Find an up link on interface *interface-name*, and send the packet.
 
-[[Find an up link on interface *interface-name*, and send the packet.]{lang="EN-US"}]{#struct_0_97620_x1630_2129666891}
+在接口上找到一条处于up状态的链路，发送报文
 
-[[在接口上找到一条处于]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_97620_x1630_x1492357057}[状态的链路，发送报文]{style="font-family:宋体"}
+Find a connecting link. Please wait.
 
-[[Find a connecting link. Please wait.]{lang="EN-US"}]{#struct_0_97620_x1630_183796517}
+链接正在建立，请等待
 
-[[链接正在建立，请等待]{style="font-family:宋体"}]{#struct_0_97620_x1630_x549008144}
+There is not a matching up link the address. Discard the uninteresting packet.
 
-[[There is not a matching up link the address. Discard the uninteresting packet.]{lang="EN-US"}]{#struct_0_97620_x1630_x1402620611}
+没有找到up的链接，丢弃非感兴趣报文
 
-[[没有找到]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_97620_x1630_9582278}[的链接，丢弃非感兴趣报文]{style="font-family:宋体"}
+Enqueue the packet.
 
-[[Enqueue the packet.]{lang="EN-US"}]{#struct_0_97620_x1630_917029831}
+报文入缓存队列
 
-[[报文入缓存队列]{style="font-family:宋体"}]{#struct_0_97620_x1630_x1491898305}
+Queue is not set. Discard this packet.
 
-[[Queue is not set. Discard this packet.]{lang="EN-US"}]{#struct_0_97620_x1630_1390665141}
+没有设置缓冲区! 丢弃报文
 
-[[没有设置缓冲区]{style="font-family:宋体"}[! ]{lang="EN-US"}]{#struct_0_97620_x1630_605009464}[丢弃报文]{style="font-family:宋体"}
+Queue is full. Discard this packet.
 
-[[Queue is full. Discard this packet.]{lang="EN-US"}]{#struct_0_97620_x1630_997930268}
+缓冲区已满! 丢弃报文
 
-[[缓冲区已满]{style="font-family:宋体"}[! ]{lang="EN-US"}]{#struct_0_97620_x1630_x1491963841}[丢弃报文]{style="font-family:宋体"}
+Receive interesting packet on interface *interface-name*, whose father interface is *interface-name*.
 
-[[Receive interesting packet on interface *interface-name*, whose father interface is *interface-name*.]{lang="EN-US"}]{#struct_0_97620_x1630_x474081545}
+在接口上收到感兴趣报文，父接口信息
 
-[[在接口上收到感兴趣报文，父接口信息]{style="font-family:宋体"}]{#struct_0_97620_x1630_512134396}
+Receive uninteresting packet on interface *interface-name*, whose father interface is *interface-name*.
 
-[[Receive uninteresting packet on interface *interface-name*, whose father interface is *interface-name*.]{lang="EN-US"}]{#struct_0_97620_x1630_x241663786}
+在接口上收到非感兴趣报文，父接口信息
 
-[[在接口上收到非感兴趣报文，父接口信息]{style="font-family:宋体"}]{#struct_0_97620_x1630_x1628463875}
+Find a matching map on interface *interface-name.*
 
-[[Find a matching map on interface *interface-name.*]{lang="EN-US"}]{#struct_0_97620_x1630_x1492029377}
+在接口上匹配到map表项
 
-[[在接口上匹配到]{style="font-family:宋体"}[map]{lang="EN-US"}]{#struct_0_97620_x1630_x1011909849}[表项]{style="font-family:宋体"}
+Try to dial on the interface *interface-name.*
 
-[[Try to dial on the interface *interface-name.*]{lang="EN-US"}]{#struct_0_97620_x1630_x1469591995}
+在接口上尝试拨号
 
-[[在接口上尝试拨号]{style="font-family:宋体"}]{#struct_0_97620_x1630_1237477900}
+Link up on interface *interface-name*. Dequeue and send packets.
 
-[[Link up on interface *interface-name*. Dequeue and send packets.]{lang="EN-US"}]{#struct_0_97620_x1630_x1492094913}
+接口上链接up，报文出队发送
 
-[[接口上链接]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_97620_x1630_x473685524}[，报文出队发送]{style="font-family:宋体"}
+Map down on interface *interface-name*. Dequeue and drop packets.
 
-[[Map down on interface *interface-name*. Dequeue and drop packets. ]{lang="EN-US"}]{#struct_0_97620_x1630_x1323278192}
+接口上map down，报文出队丢弃
 
-[[接口上]{style="font-family:宋体"}[map down]{lang="EN-US"}]{#struct_0_97620_x1630_436252041}[，报文出队丢弃]{style="font-family:宋体"}
+Map info:
 
-[[Map info:]{lang="EN-US"}]{#struct_0_97620_x1630_x1491636161}
+  Interface: *interface-name*
 
-[[  Interface: *interface-name*]{lang="EN-US"}]{#struct_0_97620_x1630_x1041084707}
+  Map type: *type*
 
-[[  Map type: *type*]{lang="EN-US"}]{#struct_0_97620_x1630_x1148944366}
+  NextHop: *nexthop*
 
-[[  NextHop: *nexthop*]{lang="EN-US"}]{#struct_0_97620_x1630_233025749}
+  Mask: *mask*
 
-[[  Mask: *mask*]{lang="EN-US"}]{#struct_0_97620_x1630_x1491701697}
+  VPN instance: *vpnindex*
 
-[[  VPN instance: *vpnindex*]{lang="EN-US"}]{#struct_0_97620_x1630_x1846672771}
+  Broadcast: *broadcast*
 
-[[  Broadcast: *broadcast*]{lang="EN-US"}]{#struct_0_97620_x1630_1071902698}
+map表项信息
 
-[[map]{lang="EN-US"}]{#struct_0_97620_x1630_1475484959}[表项信息]{style="font-family:宋体"}
+·Interface：Map所属接口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Interface]{lang="EN-US"}]{#struct_0_97620_x1630_x1492160448}[：]{lang="EN-US" style="font-family:宋体"}[Map]{lang="EN-US"}[所属接口]{lang="EN-US" style="font-family:宋体"}
+·Map type：Map类型，包括pppoec、dialer number、static（静态map）、dynamic（动态map）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Map type]{lang="EN-US"}]{#struct_0_97620_x1630_x1532743601}[：]{lang="EN-US" style="font-family:宋体"}[Map]{lang="EN-US"}[类型，]{lang="EN-US" style="font-family:宋体"}[包括]{style="font-family:宋体"}[pppoec]{lang="EN-US"}[、]{style="font-family:宋体"}[dialer number]{lang="EN-US"}[、]{style="font-family:宋体"}[static]{lang="EN-US"}[（]{style="font-family:宋体"}[静态]{lang="EN-US" style="font-family:宋体"}[map]{lang="EN-US"}[）、]{style="font-family:宋体"}[dynamic]{lang="EN-US"}[（]{style="font-family:宋体"}[动态]{lang="EN-US" style="font-family:宋体"}[map]{lang="EN-US"}[）]{style="font-family:宋体"}
+·NextHop：目的地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Next]{lang="EN-US"}]{#struct_0_97620_x1630_x2014701407}[H]{lang="EN-US"}[op]{lang="EN-US"}[：目的地址]{lang="EN-US" style="font-family:宋体"}
+·Mask：目的地址掩码
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Mask]{lang="EN-US"}]{#struct_0_97620_x1630_x1492225984}[：目的地址掩码]{lang="EN-US" style="font-family:宋体"}
+·VPN instance：VPN索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[V]{lang="EN-US"}]{#struct_0_97620_x1630_195090674}[PN ]{lang="EN-US"}[instance]{lang="EN-US"}[：]{lang="EN-US" style="font-family:宋体"}[VPN]{lang="EN-US"}[索引]{lang="EN-US" style="font-family:宋体"}
+·Broadcast：广播属性，1广播；0单播
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Broad]{lang="EN-US"}]{#struct_0_97620_x1630_x1814075316}[c]{lang="EN-US"}[ast]{lang="EN-US"}[：广播属性，]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[广播；]{lang="EN-US" style="font-family:宋体"}[0]{lang="EN-US"}[单播]{lang="EN-US" style="font-family:宋体"}
+【举例】
 
-[ ]{lang="EN-US"}
+两台设备通过CE1/PRI背靠背相连：
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_97620_x1630_1845835439}
+Router A配置：
 
-[[两台设备通过]{style="font-family:宋体"}[CE1/PRI]{lang="EN-US"}]{#struct_0_97620_x1630_1875502334}[背靠背相连：]{style="font-family:宋体"}
+\#
 
-[[Router A]{lang="EN-US"}]{#struct_0_97620_x1630_x1492291520}[配置：]{style="font-family:宋体"}
+ dialer-group 1 rule ip permit
 
-[[\#]{lang="EN-US"}]{#struct_0_97620_x1630_1857918603}
+\#
 
-[ dialer-group 1 rule ip permit]{lang="EN-US"}
+controller E1 2/3/0
 
-[\#]{lang="EN-US"}
+ pri-set
 
-[controller E1 2/3/0]{lang="EN-US"}
+\#
 
-[ pri-set]{lang="EN-US"}
+interface Dialer1
 
-[\#]{lang="EN-US"}
+ dialer circular enable
 
-[interface Dialer1]{lang="EN-US"}
+ dialer-group 1
 
-[ dialer circular enable]{lang="EN-US"}
+ dialer number 12345678
 
-[ dialer-group 1]{lang="EN-US"}
+ ip address 1.2.3.1 255.255.255.0
 
-[ dialer number 12345678]{lang="EN-US"}
+\#
 
-[ ip address 1.2.3.1 255.255.255.0]{lang="EN-US"}
+interface Serial2/3/0:15
 
-[\#]{lang="EN-US"}
+ dialer circular-group 1
 
-[interface Serial2/3/0:15]{lang="EN-US"}
+\#
 
-[ dialer circular-group 1]{lang="EN-US"}
+Router B配置：
 
-[\#]{lang="EN-US"}
+\#
 
-[[Router B]{lang="EN-US"}]{#struct_0_97620_x1630_1492437186}[配置：]{style="font-family:宋体"}
+ dialer-group 1 rule ip permit
 
-[[\#]{lang="EN-US"}]{#struct_0_97620_x1630_x1492357056}
+\#
 
-[ dialer-group 1 rule ip permit]{lang="EN-US"}
+controller E1 2/3/0
 
-[\#]{lang="EN-US"}
+ pri-set
 
-[controller E1 2/3/0]{lang="EN-US"}
+\#
 
-[ pri-set]{lang="EN-US"}
+interface Dialer1
 
-[\#]{lang="EN-US"}
+ dialer circular enable
 
-[interface Dialer1]{lang="EN-US"}
+ dialer-group 1
 
-[ dialer circular enable]{lang="EN-US"}
+ ip address 1.2.3.4 255.255.255.0
 
-[ dialer-group 1]{lang="EN-US"}
+\#
 
-[ ip address 1.2.3.4 255.255.255.0]{lang="EN-US"}
+interface Serial2/3/0:15
 
-[\#]{lang="EN-US"}
+ dialer circular-group 1
 
-[interface Serial2/3/0:15]{lang="EN-US"}
+ isdn protocol-mode network
 
-[ dialer circular-group 1]{lang="EN-US"}
+\#
 
-[ isdn protocol-mode network]{lang="EN-US"}
+\# 打开Router A的DDR事件调试信息开关。从Router A ping Router B，调试信息分析如下：
 
-[\#]{lang="EN-US"}
+\<RouteA\> debugging dialer event
 
-[ ]{lang="EN-US"}
+\<RouteA\> ping 1.2.3.4
 
-[[\# ]{lang="EN-US"}]{#struct_0_97620_x1630_1749880458}[打开]{style="font-family:宋体"}[Router A]{lang="EN-US"}[的]{style="font-family:宋体"}[DDR]{lang="EN-US"}[事件调试信息开关。从]{style="font-family:宋体"}[Router A ping Router B]{lang="EN-US"}[，调试信息分析如下：]{style="font-family:宋体"}
+Ping 1.2.3.4 (1.2.3.4): 56 data bytes, press CTRL_C to break
 
-[[\<RouteA\> debugging dialer event]{lang="SV"}]{#struct_0_97620_x1630_x310557998}
+\*Dec 14 14:06:34:716 2011 RouteA DDR/7/EVENT:
 
-[\<RouteA\> ping 1.2.3.4]{lang="SV"}
+Found a matching map on interface Dialer1, and trying to dial with it.
 
-[Ping 1.2.3.4 (1.2.3.4): 56 data bytes, press CTRL_C to break]{lang="SV"}
+*// 在Dialer1接口上找到匹配的map，尝试拨号*
 
-[\*Dec 14 14:06:34:716 2011 RouteA DDR/7/EVENT:]{lang="SV"}
+\*Dec 14 14:06:34:716 2011 RouteA DDR/7/EVENT:
 
-[Found a matching map on interface Dialer1, and trying to dial with it.]{lang="SV"}
+Found free channel on interface Serial2/3/0:15, and trying to dial with it.
 
-[*[// ]{lang="SV"}*]{#struct_0_97620_x1630_x349026526}*[在]{style="font-family:宋体"}[Dialer1]{lang="SV"}[接口上找到匹配的]{style="font-family:宋体"}[map]{lang="SV"}[，]{style="font-family:宋体"}[尝试拨号]{style="font-family:宋体"}*
+*// 在Serial2/3/0:15接口上找到空闲通道，尝试拨号*
 
-[[\*Dec 14 14:06:34:716 2011 RouteA DDR/7/EVENT:]{lang="SV"}]{#struct_0_97620_x1630_x1578674998}
+\*Dec 14 14:06:34:717 2011 RouteA DDR/7/EVENT:
 
-[Found free channel on interface Serial2/3/0:15, and trying to dial with it.]{lang="SV"}
+Dialing 12345678 on interface Serial2/3/0:15, with user ID 0.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_97620_x1630_x1491898304}*[在]{style="font-family:宋体"}[Serial2/3/0:15]{lang="EN-US"}[接口上找到空闲通道，尝试拨号]{style="font-family:宋体"}*
+*// 在Serial2/3/0:15接口上呼叫号码12345678，用户id为0*
 
-[[\*Dec 14 14:06:34:717 2011 RouteA DDR/7/EVENT:]{lang="SV"}]{#struct_0_97620_x1630_x1338218214}
+\*Dec 14 14:06:34:732 2011 RouteA DDR/7/EVENT:
 
-[Dialing 12345678 on interface Serial2/3/0:15, with user ID 0.]{lang="SV"}
+Received a connect indication on interface Serial2/3/0:15, with user ID 0 and call ID 65535.
 
-[*[// ]{lang="SV"}*]{#struct_0_97620_x1630_1063453379}*[在]{style="font-family:宋体"}[Serial2/3/0:15]{lang="SV"}[接口上呼叫号码]{style="font-family:宋体"}[12345678]{lang="SV"}[，]{style="font-family:宋体"}[用户]{style="font-family:宋体"}[id]{lang="SV"}[为]{style="font-family:宋体"}[0]{lang="SV"}*
+*// 在Serial2/3/0:15接口上收到呼叫确认，用户id为0，呼叫id为65535*
 
-[[\*Dec 14 14:06:34:732 2011 RouteA DDR/7/EVENT:]{lang="SV"}]{#struct_0_97620_x1630_818917654}
+\*Dec 14 14:06:34:734 2011 RouteA DDR/7/EVENT:
 
-[Received a connect indication on interface Serial2/3/0:15, with user ID 0 and call ID 65535.]{lang="SV"}
+Call up on interface Serial2/3/0:0
 
-[*[// ]{lang="SV"}*]{#struct_0_97620_x1630_2034268756}*[在]{style="font-family:宋体"}[Serial2/3/0:15]{lang="SV"}[接口上收到呼叫确认]{style="font-family:宋体"}[，]{style="font-family:宋体"}[用户]{style="font-family:宋体"}[id]{lang="SV"}[为]{style="font-family:宋体"}[0]{lang="SV"}[，]{style="font-family:宋体"}[呼叫]{style="font-family:宋体"}[id]{lang="SV"}[为]{style="font-family:宋体"}[65535]{lang="SV"}*
+  Config interface: Dialer1
 
-[[\*Dec 14 14:06:34:734 2011 RouteA DDR/7/EVENT:]{lang="SV"}]{#struct_0_97620_x1630_x219108051}
+  Call direction: call out
 
-[Call up on interface Serial2/3/0:0]{lang="SV"}
+  Calling number:
 
-[  Config interface: Dialer1]{lang="SV"}
+*// 接口Serial2/3/0:0呼叫up，配置接口为Dialer1，出呼叫，主叫号码为空*
 
-[  Call direction: call out]{lang="SV"}
+\*Dec 14 14:06:34:748 2011 RouteA DDR/7/EVENT:
 
-[  Calling number:]{lang="SV"}
+Link negotiation up on interface Serial2/3/0:0.
 
-[*[// ]{lang="SV"}*]{#struct_0_97620_x1630_x1137608977}*[接口]{style="font-family:宋体"}[Serial2/3/0:0]{lang="SV"}[呼叫]{style="font-family:宋体"}[up]{lang="SV"}[，]{style="font-family:宋体"}[配置接口为]{style="font-family:宋体"}[Dialer1]{lang="SV"}[，]{style="font-family:宋体"}[出呼叫]{style="font-family:宋体"}[，]{style="font-family:宋体"}[主叫号码为空]{style="font-family:宋体"}*
+*// 接口Serial2/3/0:0链路协议链路层协商up*
 
-[[\*Dec 14 14:06:34:748 2011 RouteA DDR/7/EVENT:]{lang="SV"}]{#struct_0_97620_x1630_x1491963840}
+\*Dec 14 14:06:34:763 2011 RouteA DDR/7/EVENT:
 
-[Link negotiation up on interface Serial2/3/0:0.]{lang="SV"}
+Link network up on interface Serial2/3/0:0.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_97620_x1630_x2040165486}*[接口]{style="font-family:宋体"}[Serial2/3/0:0]{lang="EN-US"}[链路协议链路层协商]{style="font-family:宋体"}[up]{lang="EN-US"}*
+*// 接口Serial2/3/0:0链路协议网络层协商up*
 
-[[\*Dec 14 14:06:34:763 2011 RouteA DDR/7/EVENT:]{lang="SV"}]{#struct_0_97620_x1630_31912447}
+\*Dec 14 14:06:34:764 2011 RouteA DDR/7/EVENT:
 
-[Link network up on interface Serial2/3/0:0.]{lang="SV"}
+Link up on interface Serial2/3/0:0
 
-[*[// ]{lang="EN-US"}*]{#struct_0_97620_x1630_x1002693864}*[接口]{style="font-family:宋体"}[Serial2/3/0:0]{lang="EN-US"}[链路协议网络层协商]{style="font-family:宋体"}[up]{lang="EN-US"}*
+  Peer address: 1.2.3.4
 
-[[\*Dec 14 14:06:34:764 2011 RouteA DDR/7/EVENT:]{lang="SV"}]{#struct_0_97620_x1630_x997246448}
+  Map info:
 
-[Link up on interface Serial2/3/0:0]{lang="SV"}
+    Interface: Dialer1
 
-[  Peer address: 1.2.3.4]{lang="SV"}
+    Map type: dialer number
 
-[  Map info:]{lang="SV"}
+    NextHop: 0.0.0.0
 
-[    Interface: Dialer1]{lang="SV"}
+    Mask: 0.0.0.0
 
-[    Map type: dialer number]{lang="SV"}
+    VPN instance: 0
 
-[    NextHop: 0.0.0.0]{lang="SV"}
+    Broadcast: 1
 
-[    Mask: 0.0.0.0]{lang="SV"}
+*// 接口Serial2/3/0:0链接建立，对端地址为1.2.3.4，对应的map信息：接口为Dialer1接口，类型为dialer number，下一跳为0.0.0.0，掩码为0.0.0.0，VPN索引为0，广播类型为广播*
 
-[    VPN instance: 0]{lang="SV"}
+\*Dec 14 14:06:34:764 2011 RouteA DDR/7/EVENT:
 
-[    Broadcast: 1]{lang="SV"}
+Refresh wadj: interface = Dialer1, nexthop = 1.2.3.4, result = 0x0
 
-[*[// ]{lang="SV"}*]{#struct_0_97620_x1630_1281822389}*[接口]{style="font-family:宋体"}[Serial2/3/0:0]{lang="SV"}[链接建立]{style="font-family:宋体"}[，]{style="font-family:宋体"}[对端地址为]{style="font-family:宋体"}[1.2.3.4]{lang="SV"}[，]{style="font-family:宋体"}[对应的]{style="font-family:宋体"}[map]{lang="SV"}[信息]{style="font-family:宋体"}[：]{style="font-family:宋体"}[接口为]{style="font-family:宋体"}[Dialer1]{lang="SV"}[接口]{style="font-family:宋体"}[，]{style="font-family:宋体"}[类型为]{style="font-family:宋体"}[dialer number]{lang="SV"}[，]{style="font-family:宋体"}[下一跳为]{style="font-family:宋体"}[0.0.0.0]{lang="SV"}[，]{style="font-family:宋体"}[掩码为]{style="font-family:宋体"}[0.0.0.0]{lang="SV"}[，]{style="font-family:宋体"}[VPN]{lang="SV"}[索引为]{style="font-family:宋体"}[0]{lang="SV"}[，]{style="font-family:宋体"}[广播类型为广播]{style="font-family:宋体"}*
+  Peer Address: 1.2.3.4
 
-[[\*Dec 14 14:06:34:764 2011 RouteA DDR/7/EVENT:]{lang="SV"}]{#struct_0_97620_x1630_x1492029376}
+  Phy interface: Serial2/3/0:0
 
-[Refresh wadj: interface = Dialer1, nexthop = 1.2.3.4, result = 0x0]{lang="SV"}
+  VA interface: N/A
 
-[  Peer Address: 1.2.3.4]{lang="SV"}
+  MTU: 1500
 
-[  Phy interface: Serial2/3/0:0]{lang="SV"}
+  Slot: 0
 
-[  VA interface: N/A]{lang="SV"}
+*// 添加邻接表成功，接口为Dialer1，下一跳为1.2.3.4，对端地址为1.2.3.4，物理接口为Serial2/3/0:0，VA接口为无效，MTU为1500，所在板号为0*
 
-[  MTU: 1500]{lang="SV"}
+Request time out
 
-[  Slot: 0]{lang="SV"}
+56 bytes from 1.2.3.4: icmp_seq=1 ttl=255 time=25.637 ms
 
-[*[// ]{lang="SV"}*]{#struct_0_97620_x1630_1716973506}*[添加邻接表成功]{style="font-family:宋体"}[，]{style="font-family:宋体"}[接口为]{style="font-family:宋体"}[Dialer1]{lang="SV"}[，]{style="font-family:宋体"}[下一跳为]{style="font-family:宋体"}[1.2.3.4]{lang="SV"}[，]{style="font-family:宋体"}[对端地址为]{style="font-family:宋体"}[1.2.3.4]{lang="SV"}[，]{style="font-family:宋体"}[物理接口为]{style="font-family:宋体"}[Serial2/3/0:0]{lang="SV"}[，]{style="font-family:宋体"}[VA]{lang="SV"}[接口为无效]{style="font-family:宋体"}[，]{style="font-family:宋体"}[MTU]{lang="SV"}[为]{style="font-family:宋体"}[1500]{lang="SV"}[，]{style="font-family:宋体"}[所在板号为]{style="font-family:宋体"}[0]{lang="SV"}*
+56 bytes from 1.2.3.4: icmp_seq=2 ttl=255 time=25.310 ms
 
-[[Request time out]{lang="SV"}]{#struct_0_97620_x1630_118138412}
+56 bytes from 1.2.3.4: icmp_seq=3 ttl=255 time=25.350 ms
 
-[56 bytes from 1.2.3.4: icmp_seq=1 ttl=255 time=25.637 ms]{lang="SV"}
+56 bytes from 1.2.3.4: icmp_seq=4 ttl=255 time=25.243 ms
 
-[56 bytes from 1.2.3.4: icmp_seq=2 ttl=255 time=25.310 ms]{lang="SV"}
+\-\-- Ping statistics for 1.2.3.4 \-\--
 
-[56 bytes from 1.2.3.4: icmp_seq=3 ttl=255 time=25.350 ms]{lang="SV"}
+5 packet(s) transmitted, 4 packet(s) received, 20.0% packet loss
 
-[56 bytes from 1.2.3.4: icmp_seq=4 ttl=255 time=25.243 ms]{lang="SV"}
+round-trip min/avg/max/stddev = 25.243/25.385/25.637/0.150 ms
 
-[ ]{lang="SV"}
+\# 打开Router A的DDR报文调试开关。从Router A ping Router B，调试信息分析如下：
 
-[\-\-- Ping statistics for 1.2.3.4 \-\--]{lang="SV"}
+\<RouteA\> debugging dialer packet
 
-[5 packet(s) transmitted, 4 packet(s) received, 20.0% packet loss]{lang="SV"}
+\<RouteA\> ping 1.2.3.4
 
-[round-trip min/avg/max/stddev = 25.243/25.385/25.637/0.150 ms]{lang="SV"}
+Ping 1.2.3.4 (1.2.3.4): 56 data bytes, press CTRL_C to break
 
-[ ]{lang="EN-US"}
+\*Dec 14 14:06:59:080 2011 RouteA DDR/7/PACKET:
 
-[[\# ]{lang="EN-US"}]{#struct_0_97620_x1630_x1745466877}[打开]{style="font-family:宋体"}[Router A]{lang="EN-US"}[的]{style="font-family:宋体"}[DDR]{lang="EN-US"}[报文调试开关。从]{style="font-family:宋体"}[Router A ping Router B]{lang="EN-US"}[，调试信息分析如下：]{style="font-family:宋体"}
+Sending interesting unicast packet out of interface Dialer1, nexthop is 1.2.3.4
 
-[[\<RouteA\> debugging dialer packet]{lang="SV"}]{#struct_0_97620_x1630_x1492094912}
+*[// Dialer1*]*接口上发送感兴趣单播报文，下一跳为1.2.3.4*
 
-[\<RouteA\> ping 1.2.3.4]{lang="SV"}
+\*Dec 14 14:06:59:081 2011 RouteA DDR/7/PACKET:
 
-[Ping 1.2.3.4 (1.2.3.4): 56 data bytes, press CTRL_C to break]{lang="SV"}
+Find a matching map on interface Dialer1.
 
-[\*Dec 14 14:06:59:080 2011 RouteA DDR/7/PACKET:]{lang="SV"}
+  Map info:
 
-[Sending interesting unicast packet out of interface Dialer1, nexthop is 1.2.3.4]{lang="SV"}
+    Interface: Dialer1
 
-[*[// Dialer1]{lang="EN-US"}*]{#struct_0_97620_x1630_1092398417}*[接口上发送感兴趣单播报文，下一跳为]{style="font-family:宋体"}[1.2.3.4]{lang="EN-US"}*
+    Map type: dialer number
 
-[[\*Dec 14 14:06:59:081 2011 RouteA DDR/7/PACKET:]{lang="SV"}]{#struct_0_97620_x1630_x1854753799}
+    NextHop: 0.0.0.0
 
-[Find a matching map on interface Dialer1.]{lang="SV"}
+    Mask: 0.0.0.0
 
-[  Map info:]{lang="SV"}
+    VPN instance: 0
 
-[    Interface: Dialer1]{lang="SV"}
+    Broadcast: 1
 
-[    Map type: dialer number]{lang="SV"}
+*[// Dialer1*]*接口上找到匹配的map，对应的map信息：接口为Dialer1接口，类型为dialer number，下一跳为0.0.0.0，掩码为0.0.0.0，VPN索引为0，广播类型为广播*
 
-[    NextHop: 0.0.0.0]{lang="SV"}
+\*Dec 14 14:06:59:081 2011 RouteA DDR/7/PACKET:
 
-[    Mask: 0.0.0.0]{lang="SV"}
+Try to dial on the interface Dialer1.
 
-[    VPN instance: 0]{lang="SV"}
+  Map info:
 
-[    Broadcast: 1]{lang="SV"}
+    Interface: Dialer1
 
-[*[// Dialer1]{lang="SV"}*]{#struct_0_97620_x1630_x1888669729}*[接口上找到匹配的]{style="font-family:宋体"}[map]{lang="SV"}[，]{style="font-family:宋体"}[对应的]{style="font-family:宋体"}[map]{lang="SV"}[信息]{style="font-family:宋体"}[：]{style="font-family:宋体"}[接口为]{style="font-family:宋体"}[Dialer1]{lang="SV"}[接口]{style="font-family:宋体"}[，]{style="font-family:宋体"}[类型为]{style="font-family:宋体"}[dialer number]{lang="SV"}[，]{style="font-family:宋体"}[下一跳为]{style="font-family:宋体"}[0.0.0.0]{lang="SV"}[，]{style="font-family:宋体"}[掩码为]{style="font-family:宋体"}[0.0.0.0]{lang="SV"}[，]{style="font-family:宋体"}[VPN]{lang="SV"}[索引为]{style="font-family:宋体"}[0]{lang="SV"}[，]{style="font-family:宋体"}[广播类型为广播]{style="font-family:宋体"}*
+    Map type: dialer number
 
-[[\*Dec 14 14:06:59:081 2011 RouteA DDR/7/PACKET:]{lang="SV"}]{#struct_0_97620_x1630_x1491636160}
+    NextHop: 0.0.0.0
 
-[Try to dial on the interface Dialer1.]{lang="SV"}
+    Mask: 0.0.0.0
 
-[  Map info:]{lang="SV"}
+    VPN instance: 0
 
-[    Interface: Dialer1]{lang="SV"}
+    Broadcast: 1
 
-[    Map type: dialer number]{lang="SV"}
+*[// Dialer1*]*接口上尝试拨号，对应的map信息：接口为Dialer1接口，类型为dialer number，下一跳为0.0.0.0，掩码为0.0.0.0，VPN索引为0，广播类型为广播*
 
-[    NextHop: 0.0.0.0]{lang="SV"}
+\*Dec 14 14:06:59:081 2011 RouteA DDR/7/PACKET:
 
-[    Mask: 0.0.0.0]{lang="SV"}
+Queue is not set. Discard this packet.
 
-[    VPN instance: 0]{lang="SV"}
+*// 队列没有设置，报文丢弃*
 
-[    Broadcast: 1]{lang="SV"}
+\*Dec 14 14:06:59:123 2011 RouteA DDR/7/PACKET:
 
-[*[// Dialer1]{lang="SV"}*]{#struct_0_97620_x1630_524999234}*[接口上尝试拨号]{style="font-family:宋体"}[，]{style="font-family:宋体"}[对应的]{style="font-family:宋体"}[map]{lang="SV"}[信息]{style="font-family:宋体"}[：]{style="font-family:宋体"}[接口为]{style="font-family:宋体"}[Dialer1]{lang="SV"}[接口]{style="font-family:宋体"}[，]{style="font-family:宋体"}[类型为]{style="font-family:宋体"}[dialer number]{lang="SV"}[，]{style="font-family:宋体"}[下一跳为]{style="font-family:宋体"}[0.0.0.0]{lang="SV"}[，]{style="font-family:宋体"}[掩码为]{style="font-family:宋体"}[0.0.0.0]{lang="SV"}[，]{style="font-family:宋体"}[VPN]{lang="SV"}[索引为]{style="font-family:宋体"}[0]{lang="SV"}[，]{style="font-family:宋体"}[广播类型为广播]{style="font-family:宋体"}*
+Link up on interface Dialer1. Dequeue and send packets.
 
-[[\*Dec 14 14:06:59:081 2011 RouteA DDR/7/PACKET:]{lang="SV"}]{#struct_0_97620_x1630_2090158225}
+  Map info:
 
-[Queue is not set. Discard this packet.]{lang="SV"}
+    Interface: Dialer1
 
-[*[// ]{lang="SV"}*]{#struct_0_97620_x1630_x1731156239}*[队列没有设置]{style="font-family:宋体"}[，]{style="font-family:宋体"}[报文丢弃]{style="font-family:宋体"}*
+    Map type: dialer number
 
-[[\*Dec 14 14:06:59:123 2011 RouteA DDR/7/PACKET:]{lang="SV"}]{#struct_0_97620_x1630_1231091721}
+    NextHop: 0.0.0.0
 
-[Link up on interface Dialer1. Dequeue and send packets.]{lang="SV"}
+    Mask: 0.0.0.0
 
-[  Map info:]{lang="SV"}
+    VPN instance: 0
 
-[    Interface: Dialer1]{lang="SV"}
+    Broadcast: 1
 
-[    Map type: dialer number]{lang="SV"}
+*[// Dialer1*]*接口上链接up，报文出队发送，对应的map信息：接口为Dialer1接口，类型为dialer number，下一跳为0.0.0.0，掩码为0.0.0.0，VPN索引为0，广播类型为广播*
 
-[    NextHop: 0.0.0.0]{lang="SV"}
+Request time out
 
-[    Mask: 0.0.0.0]{lang="SV"}
+56 bytes from 1.2.3.4: icmp_seq=1 ttl=255 time=25.577 ms
 
-[    VPN instance: 0]{lang="SV"}
+56 bytes from 1.2.3.4: icmp_seq=2 ttl=255 time=25.225 ms
 
-[    Broadcast: 1]{lang="SV"}
+56 bytes from 1.2.3.4: icmp_seq=3 ttl=255 time=25.174 ms
 
-[*[// Dialer1]{lang="SV"}*]{#struct_0_97620_x1630_x56713086}*[接口上链接]{style="font-family:宋体"}[up]{lang="SV"}[，]{style="font-family:宋体"}[报文出队发送]{style="font-family:宋体"}[，]{style="font-family:宋体"}[对应的]{style="font-family:宋体"}[map]{lang="SV"}[信息]{style="font-family:宋体"}[：]{style="font-family:宋体"}[接口为]{style="font-family:宋体"}[Dialer1]{lang="SV"}[接口]{style="font-family:宋体"}[，]{style="font-family:宋体"}[类型为]{style="font-family:宋体"}[dialer number]{lang="SV"}[，]{style="font-family:宋体"}[下一跳为]{style="font-family:宋体"}[0.0.0.0]{lang="SV"}[，]{style="font-family:宋体"}[掩码为]{style="font-family:宋体"}[0.0.0.0]{lang="SV"}[，]{style="font-family:宋体"}[VPN]{lang="SV"}[索引为]{style="font-family:宋体"}[0]{lang="SV"}[，]{style="font-family:宋体"}[广播类型为广播]{style="font-family:宋体"}*
+56 bytes from 1.2.3.4: icmp_seq=4 ttl=255 time=25.391 ms
 
-[[Request time out]{lang="SV"}]{#struct_0_97620_x1630_x1491701696}
+\-\-- Ping statistics for 1.2.3.4 \-\--
 
-[56 bytes from 1.2.3.4: icmp_seq=1 ttl=255 time=25.577 ms]{lang="SV"}
+5 packet(s) transmitted, 4 packet(s) received, 20.0% packet loss
 
-[56 bytes from 1.2.3.4: icmp_seq=2 ttl=255 time=25.225 ms]{lang="SV"}
+round-trip min/avg/max/stddev = 25.174/25.342/25.577/0.158 ms
 
-[56 bytes from 1.2.3.4: icmp_seq=3 ttl=255 time=25.174 ms]{lang="SV"}
+\<RouteA\>
 
-[56 bytes from 1.2.3.4: icmp_seq=4 ttl=255 time=25.391 ms]{lang="SV"}
+\*Dec 14 14:07:01:532 2011 RouteA DDR/7/PACKET:
 
-[ ]{lang="SV"}
+Receive interesting packet on interface Serial2/3/0:0, whose father interface is Dialer1.
 
-[\-\-- Ping statistics for 1.2.3.4 \-\--]{lang="SV"}
+*[// Serial2/3/0:0*]*接口上收到感兴趣报文，父接口为Dialer1接口*
 
-[5 packet(s) transmitted, 4 packet(s) received, 20.0% packet loss]{lang="SV"}
+\*Dec 14 14:07:01:758 2011 RouteA DDR/7/PACKET:
 
-[round-trip min/avg/max/stddev = 25.174/25.342/25.577/0.158 ms]{lang="SV"}
+Receive interesting packet on interface Serial2/3/0:0, whose father interface is Dialer1.
 
-[\<RouteA\>]{lang="SV"}
+*[// Serial2/3/0:0*]*接口上收到感兴趣报文，父接口为Dialer1接口*
 
-[\*Dec 14 14:07:01:532 2011 RouteA DDR/7/PACKET:]{lang="SV"}
+\*Dec 14 14:07:01:983 2011 RouteA DDR/7/PACKET:
 
-[Receive interesting packet on interface Serial2/3/0:0, whose father interface is Dialer1.]{lang="SV"}
+Receive interesting packet on interface Serial2/3/0:0, whose father interface is Dialer1.
 
-[*[// Serial2/3/0:0]{lang="SV"}*]{#struct_0_97620_x1630_882210584}*[接口上收到感兴趣报文]{style="font-family:宋体"}[，]{style="font-family:宋体"}[父接口为]{style="font-family:宋体"}[Dialer1]{lang="SV"}[接口]{style="font-family:宋体"}*
+*[// Serial2/3/0:0*]*接口上收到感兴趣报文，父接口为Dialer1接口*
 
-[[\*Dec 14 14:07:01:758 2011 RouteA DDR/7/PACKET:]{lang="SV"}]{#struct_0_97620_x1630_x1187450949}
-
-[Receive interesting packet on interface Serial2/3/0:0, whose father interface is Dialer1.]{lang="SV"}
-
-[*[// Serial2/3/0:0]{lang="SV"}*]{#struct_0_97620_x1630_x1965306728}*[接口上收到感兴趣报文]{style="font-family:宋体"}[，]{style="font-family:宋体"}[父接口为]{style="font-family:宋体"}[Dialer1]{lang="SV"}[接口]{style="font-family:宋体"}*
-
-[[\*Dec 14 14:07:01:983 2011 RouteA DDR/7/PACKET:]{lang="SV"}]{#struct_0_97620_x1630_x1492160451}
-
-[Receive interesting packet on interface Serial2/3/0:0, whose father interface is Dialer1.]{lang="SV"}
-
-[*[// Serial2/3/0:0]{lang="SV"}*]{#struct_0_97620_x1630_x322955556}*[接口上收到感兴趣报文]{style="font-family:宋体"}[，]{style="font-family:宋体"}[父接口为]{style="font-family:宋体"}[Dialer1]{lang="SV"}[接口]{style="font-family:宋体"}*
-
-[ ]{lang="SV"}

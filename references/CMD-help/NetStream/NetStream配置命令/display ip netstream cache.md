@@ -1,2348 +1,2139 @@
-::: {#1153695161 .myid}
-[]{#_Toc404797263}[]{#struct_0_84792_x5137_206243796}[]{#_Toc250995600}[]{#_Toc55050581}[]{#_Toc28576987}
 
 **NetStream \-- NetStream配置命令 \-- display ip netstream cache**
 
 ------------------------------------------------------------------------
 
-[**[display ip netstream cache]{lang="EN-US"}**]{#struct_0_84792_x5137_1601665034}[命令用来查看]{style="font-family:
-宋体"}[NetStream]{lang="EN-US"}[流缓存区的配置和状态信息。]{style="font-family:
-宋体"}
+**[display ip netstream cache**]命令用来查看NetStream流缓存区的配置和状态信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1941925947}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_84792_x5137_794092770}
+集中式设备：
 
-[**[display ip netstream cache ]{lang="EN-US"}**[\[ **verbose** \]]{lang="EN-US"}]{#struct_0_84792_x5137_x384834510}
+**[display ip netstream cache ** **verbose** ]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_84792_x5137_x979888167}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display ip netstream]{lang="EN-US"}**[ **cache** \[ **slot** *slot-number* \[ *cpu cpu-number* \] \] \[ **verbose** \]]{lang="EN-US"}]{#struct_0_84792_x5137_x294756823}
+**[display ip netstream** **cache** [ **slot** *slot-number* [ *cpu cpu-number*  ]  **verbose** ]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_84792_x5137_x966717568}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display ip netstream]{lang="EN-US"}**[ **cache** \[ **chassis** *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \] \] \[ **verbose** \]]{lang="EN-US"}]{#struct_0_84792_x5137_429805986}
+**[display ip netstream** **cache** [ **chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number*  ]  **verbose** ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1288951247}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_84792_x5137_x1718335485}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_84792_x5137_238205828}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_84792_x5137_1941991483}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_84792_x5137_1943189330}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_84792_x5137_608787753}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_84792_x5137_75544777}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1110959181}
+【参数】
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_84792_x5137_499659843}[：显示指定单板上的信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示所有单板上的信息。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定单板上的信息。*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示所有单板上的信息。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_84792_x5137_533503734}[：显示指定成员设备上的信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示成员设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。如果未指定本参数，将显示所有设备上的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备上的信息。*slot-number*表示成员设备在IRF中的成员编号。如果未指定本参数，将显示所有设备上的信息。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_84792_x5137_1114226585}[：显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[上的信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示成员设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。如果未指定本参数，将显示所有设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[上的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备/PEX上的信息。*slot-number*表示成员设备在IRF中的成员编号或者PEX的虚拟槽位号。如果未指定本参数，将显示所有设备/PEX上的信息。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number slot* *slot-number*]{lang="EN-US"}]{#struct_0_84792_x5137_x119429566}[：显示指定成员设备上指定单板上的信息。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示所有设备上的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number slot* *slot-number*]：显示指定成员设备上指定单板上的信息。*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示所有设备上的信息。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number slot* *slot-number*]{lang="EN-US"}]{#struct_0_84792_x5137_1114423193}[：显示指定单板上的信息。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。如果未指定本参数，将显示所有设备上的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number slot* *slot-number*]：显示指定单板上的信息。*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。如果未指定本参数，将显示所有设备上的信息。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu ]{lang="EN-US"}***[cpu-number]{lang="EN-US"}*]{#struct_0_84792_x5137_220695365}[：显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上的信息。]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的编号。只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[cpu ***cpu-number*]：显示指定CPU上的信息。*cpu-number*表示CPU的编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_84792_x5137_1557332704}[：显示]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[流缓冲区的详细信息。]{style="font-family:宋体"}
+**[verbose**]：显示NetStream流缓冲区的详细信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1942057019}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_x1321272114}[查看]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[流缓冲区详细信息。（集中式设备）]{style="font-family:宋体"}
+\# 查看NetStream流缓冲区详细信息。（集中式设备）
 
-[[\<Sysname\> display ip netstream cache verbose]{lang="EN-US"}]{#struct_0_84792_x5137_1941663803}
+\<Sysname\> display ip netstream cache verbose
 
-[IP NetStream cache information:]{lang="EN-US"}
+IP NetStream cache information:
 
-[  Active flow timeout             : 60 min]{lang="EN-US"}
+  Active flow timeout             : 60 min
 
-[  Inactive flow timeout           : 10 sec]{lang="EN-US"}
+  Inactive flow timeout           : 10 sec
 
-[  Max number of entries           : 1000]{lang="EN-US"}
+  Max number of entries           : 1000
 
-[  IP active flow entries          : 1]{lang="EN-US"}
+  IP active flow entries          : 1
 
-[  MPLS active flow entries        : 2]{lang="EN-US"}
+  MPLS active flow entries        : 2
 
-[  L2 active flow entries          : 1]{lang="EN-US"}
+  L2 active flow entries          : 1
 
-[  IPL2 active flow entries        : 1]{lang="EN-US"}
+  IPL2 active flow entries        : 1
 
-[  IP flow entries counted         : 10]{lang="EN-US"}
+  IP flow entries counted         : 10
 
-[  MPLS flow entries counted       : 20]{lang="EN-US"}
+  MPLS flow entries counted       : 20
 
-[  L2 flow entries counted         : 10]{lang="EN-US"}
+  L2 flow entries counted         : 10
 
-[  IPL2 flow entries counted       : 20]{lang="EN-US"}
+  IPL2 flow entries counted       : 20
 
-[  Last statistics resetting time  : 01/01/2000 at 00:01:02]{lang="EN-US"}
+  Last statistics resetting time  : 01/01/2000 at 00:01:02
 
-[ ]{lang="EN-US"}
+IP packet size distribution (1103746 packets in total):
 
-[IP packet size distribution (1103746 packets in total):]{lang="EN-US"}
+1-32   64   96  128  160  192  224  256  288  320  352  384  416  448  480
 
-[1-32   64   96  128  160  192  224  256  288  320  352  384  416  448  480]{lang="EN-US"}
+.249 .694 .000 .000 .000 .000 .000 .000 .000 .000 .000 .000 .000 .000 .000
 
-[.249 .694 .000 .000 .000 .000 .000 .000 .000 .000 .000 .000 .000 .000 .000]{lang="EN-US"}
+ 512  544  576 1024 1536 2048 2560 3072 3584 4096 4608 \>4608
 
-[ ]{lang="EN-US"}
+.000 .000 .027 .000 .027 .000 .000 .000 .000 .000 .000 .000
 
-[ 512  544  576 1024 1536 2048 2560 3072 3584 4096 4608 \>4608]{lang="EN-US"}
+Protocol          Total Packets    Flows  Packets Active(sec) Idle(sec)
 
-[.000 .000 .027 .000 .027 .000 .000 .000 .000 .000 .000 .000]{lang="EN-US"}
+                  Flows /sec       /sec   /flow   /flow       /flow
 
-[ ]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[Protocol          Total Packets    Flows  Packets Active(sec) Idle(sec)]{lang="EN-US"}
+TCP-Telnet      2656855     372        4       86          49        27
 
-[                  Flows /sec       /sec   /flow   /flow       /flow]{lang="EN-US"}
+TCP-FTP         5900082      86        9        9          11        33
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+TCP-FTPD        3200453    1006        5      193          45        33
 
-[TCP-Telnet      2656855     372        4       86          49        27]{lang="EN-US"}
+TCP-WWW       546778274   11170      887       12           8        32
 
-[TCP-FTP         5900082      86        9        9          11        33]{lang="EN-US"}
+TCP-other      49148540    3752       79       47          30        32
 
-[TCP-FTPD        3200453    1006        5      193          45        33]{lang="EN-US"}
+UDP-DNS       117240379     570      190        3           7        34
 
-[TCP-WWW       546778274   11170      887       12           8        32]{lang="EN-US"}
+UDP-other      45502422    2272       73       30           8        37
 
-[TCP-other      49148540    3752       79       47          30        32]{lang="EN-US"}
+ICMP           14837957     125       24        5          12        34
 
-[UDP-DNS       117240379     570      190        3           7        34]{lang="EN-US"}
+IP-other          77406       5        0       47          52        27
 
-[UDP-other      45502422    2272       73       30           8        37]{lang="EN-US"}
+Type DstIP(Port)            SrcIP(Port)            Pro ToS If(Direct)  Pkts
 
-[ICMP           14837957     125       24        5          12        34]{lang="EN-US"}
+     DstMAC(VLAN)           SrcMAC(VLAN)
 
-[IP-other          77406       5        0       47          52        27]{lang="EN-US"}
+     TopLblType(IP/Mask)    Lbl-Exp-S-List
 
-[ ]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[Type DstIP(Port)            SrcIP(Port)            Pro ToS If(Direct)  Pkts]{lang="EN-US"}
+IP   11.1.1.1(1024)         11.1.1.2(21)           6   128 ET1/1(I)    42996
 
-[     DstMAC(VLAN)           SrcMAC(VLAN)]{lang="EN-US"}
+   TCPFlag:      27
 
-[     TopLblType(IP/Mask)    Lbl-Exp-S-List]{lang="EN-US"}
+     DstMask:      24       SrcMask:      24       NextHop:      0.0.0.0
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+     DstAS:         0       SrcAS:         0       BGPNextHop:   0.0.0.0
 
-[IP   11.1.1.1(1024)         11.1.1.2(21)           6   128 ET1/1(I)    42996]{lang="DA"}
+InVRF:        10
 
-[  ]{lang="DA"}[   TCPFlag:      27]{lang="EN-US"}
+     SamplerMode:   2       SamplerInt:  256
 
-[     DstMask:      24       SrcMask:      24       NextHop:      0.0.0.0]{lang="EN-US"}
+     Active:  120.600       Bytes/Pkt:   152
 
-[     DstAS:         0       SrcAS:         0       BGPNextHop:   0.0.0.0]{lang="EN-US"}
+L2   0012-3f86-e94c(10)     0012-3f86-e86a(0)              GE1/4/1(I)  1253
 
-[     ]{lang="EN-US"}[InVRF:        10]{lang="NO-BOK"}
+     SamplerMode:   1       SamplerInt:   64
 
-[     SamplerMode:   2       SamplerInt:  256]{lang="NO-BOK"}
+     Active:    5.510       Bytes/Pkt:   210
 
-[     Active:  120.600       Bytes/Pkt:   152]{lang="NO-BOK"}
+MPLS LDP(3.3.3.3/24)        1:18-6-0                       GE1/0/2(O)  291
 
-[L2   0012-3f86-e94c(10)     0012-3f86-e86a(0)              GE1/4/1(I)  1253]{lang="DA"}
+2:24-6-0
 
-[     SamplerMode:   1       SamplerInt:   64 ]{lang="NO-BOK"}
+                            3:30-6-1
 
-[     Active:    5.510       Bytes/Pkt:   210]{lang="NO-BOK"}
+     SamplerMode:   0       SamplerInt:    0
 
-[MPLS LDP(3.3.3.3/24)        1:18-6-0                       GE1/0/2(O)  291]{lang="DA"}
+     Active:  660.084       Bytes/Pkt:   100
 
-[                            ]{lang="DA"}[2:24-6-0]{lang="EN-US"}
+IP&  192.168.123.1(2048)    192.168.1.1(0)         1   0   GE1/0/2(O)  10
 
-[                            3:30-6-1]{lang="EN-US"}
+L2   0012-3f86-e95d(0)      0012-3f86-e116(1008)
 
-[     SamplerMode:   0       SamplerInt:    0]{lang="NO-BOK"}
+TCPFlag:      27
 
-[     Active:  660.084       Bytes/Pkt:   100]{lang="NO-BOK"}
+     DstMask:      24       SrcMask:      24       NextHop:    192.168.1.2
 
-[IP&  192.168.123.1(2048)    192.168.1.1(0)         1   0   GE1/0/2(O)  10]{lang="EN-US"}
+     DstAS:         0       SrcAS:         0       BGPNextHop: 0.0.0.0
 
-[L2   0012-3f86-e95d(0)      0012-3f86-e116(1008)]{lang="EN-US"}
+     OutVRF:        0       TCPFlag:    0
 
-[     ]{lang="NO-BOK"}[TCPFlag:      27]{lang="EN-US"}
+     SamplerMode:   0       SamplerInt:    0
 
-[     DstMask:      24       SrcMask:      24       NextHop:    192.168.1.2]{lang="NO-BOK"}
+     Active:   12.030       Bytes/Pkt:    86
 
-[     DstAS:         0       SrcAS:         0       BGPNextHop: 0.0.0.0]{lang="NO-BOK"}
+IP&  172.16.1.1(68)         172.16.2.1(67)         17  64  GE1/0/3(I)  1848
 
-[     OutVRF:        0       TCPFlag:    0]{lang="NO-BOK"}
+MPLS LDP(4.4.4.4/24)        1:55-6-0
 
-[     SamplerMode:   0       SamplerInt:    0]{lang="NO-BOK"}
+                            2:16-6-1
 
-[     Active:   12.030       Bytes/Pkt:    86]{lang="NO-BOK"}
+     TCPFlag:       0
 
-[ ]{lang="NO-BOK"}
+     DstMask:      24       SrcMask:      24       NextHop:    172.16.2.10
 
-[IP&  172.16.1.1(68)         172.16.2.1(67)         17  64  GE1/0/3(I)  1848]{lang="EN-US"}
+     DstAS:         0       SrcAS:         0       BGPNextHop: 0.0.0.0
 
-[MPLS LDP(4.4.4.4/24)        1:55-6-0]{lang="EN-US"}
+InVRF:         0
 
-[                            2:16-6-1]{lang="EN-US"}
+     SamplerMode:   0       SamplerInt:    0
 
-[     TCPFlag:       0]{lang="NO-BOK"}
+     Active:  382.542       Bytes/Pkt:  1426
 
-[     DstMask:      24       SrcMask:      24       NextHop:    172.16.2.10]{lang="NO-BOK"}
+\# 查看NetStream流缓冲区详细信息。（分布式设备－独立运行模式）
 
-[     DstAS:         0       SrcAS:         0       BGPNextHop: 0.0.0.0]{lang="NO-BOK"}
+\<Sysname\> display ip netstream cache slot 1 verbose
 
-[     ]{lang="NO-BOK"}[InVRF:         0]{lang="EN-US"}
+IP NetStream information:
 
-[     SamplerMode:   0       SamplerInt:    0]{lang="EN-US"}
+  Active flow timeout                : 60 min
 
-[     Active:  382.542       Bytes/Pkt:  1426]{lang="EN-US"}
+  Inactive flow timeout              : 10 sec
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_x7811335}[查看]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[流缓冲区详细信息。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+  Max number of entries              : 1000
 
-[[\<Sysname\> display ip netstream cache slot 1 verbose]{lang="EN-US"}]{#struct_0_84792_x5137_1942384699}
+  IP active flow entries             : 1
 
-[IP NetStream information:]{lang="EN-US"}
+  MPLS active flow entries           : 2
 
-[  Active flow timeout                : 60 min]{lang="EN-US"}
+  L2 active flow entries             : 1
 
-[  Inactive flow timeout              : 10 sec]{lang="EN-US"}
+  IPL2 active flow entries           : 1
 
-[  Max number of entries              : 1000]{lang="EN-US"}
+  IP flow entries counted            : 10
 
-[  IP active flow entries             : 1]{lang="EN-US"}
+  MPLS flow entries counted          : 20
 
-[  MPLS active flow entries           : 2]{lang="EN-US"}
+  L2 flow entries counted            : 10
 
-[  L2 active flow entries             : 1]{lang="EN-US"}
+  IPL2 flow entries counted          : 20
 
-[  IPL2 active flow entries           : 1]{lang="EN-US"}
+  Last statistics resetting time     : 01/01/2012 at 00:01:02
 
-[  IP flow entries counted            : 10]{lang="EN-US"}
+IP packet size distribution (1103746 packets in total):
 
-[  MPLS flow entries counted          : 20]{lang="EN-US"}
+1-32   64   96  128  160  192  224  256  288  320  352  384  416  448  480
 
-[  L2 flow entries counted            : 10]{lang="EN-US"}
+.249 .694 .000 .000 .000 .000 .000 .000 .000 .000 .000 .000 .000 .000 .000
 
-[  IPL2 flow entries counted          : 20]{lang="EN-US"}
+ 512  544  576 1024 1536 2048 2560 3072 3584 4096 4608 \>4608
 
-[  Last statistics resetting time     : 01/01/2012 at 00:01:02]{lang="EN-US"}
+.000 .000 .027 .000 .027 .000 .000 .000 .000 .000 .000 .000
 
-[ ]{lang="EN-US"}
+Protocol          Total Packets    Flows  Packets Active(sec) Idle(sec)
 
-[IP packet size distribution (1103746 packets in total):]{lang="EN-US"}
+                  Flows /sec       /sec   /flow   /flow       /flow
 
-[1-32   64   96  128  160  192  224  256  288  320  352  384  416  448  480]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[.249 .694 .000 .000 .000 .000 .000 .000 .000 .000 .000 .000 .000 .000 .000]{lang="EN-US"}
+TCP-Telnet      2656855     372        4       86          49        27
 
-[ ]{lang="EN-US"}
+TCP-FTP         5900082      86        9        9          11        33
 
-[ 512  544  576 1024 1536 2048 2560 3072 3584 4096 4608 \>4608]{lang="EN-US"}
+TCP-FTPD        3200453    1006        5      193          45        33
 
-[.000 .000 .027 .000 .027 .000 .000 .000 .000 .000 .000 .000]{lang="EN-US"}
+TCP-WWW       546778274   11170      887       12           8        32
 
-[ ]{lang="EN-US"}
+TCP-other      49148540    3752       79       47          30        32
 
-[Protocol          Total Packets    Flows  Packets Active(sec) Idle(sec)]{lang="EN-US"}
+UDP-DNS       117240379     570      190        3           7        34
 
-[                  Flows /sec       /sec   /flow   /flow       /flow]{lang="EN-US"}
+UDP-other      45502422    2272       73       30           8        37
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ICMP           14837957     125       24        5          12        34
 
-[TCP-Telnet      2656855     372        4       86          49        27]{lang="EN-US"}
+IP-other          77406       5        0       47          52        27
 
-[TCP-FTP         5900082      86        9        9          11        33]{lang="EN-US"}
+Type DstIP(Port)            SrcIP(Port)            Pro ToS If(Direct)  Pkts
 
-[TCP-FTPD        3200453    1006        5      193          45        33]{lang="EN-US"}
+     DstMAC(VLAN)           SrcMAC(VLAN)
 
-[TCP-WWW       546778274   11170      887       12           8        32]{lang="EN-US"}
+     TopLblType(IP/Mask)    Lbl-Exp-S-List
 
-[TCP-other      49148540    3752       79       47          30        32]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[UDP-DNS       117240379     570      190        3           7        34]{lang="EN-US"}
+IP   11.1.1.1(1024)         11.1.1.2(21)           6   128 ET1/1(I)    42996
 
-[UDP-other      45502422    2272       73       30           8        37]{lang="EN-US"}
+     TCPFlag:      27
 
-[ICMP           14837957     125       24        5          12        34]{lang="EN-US"}
+     DstMask:      24       SrcMask:      24       NextHop:      0.0.0.0
 
-[IP-other          77406       5        0       47          52        27]{lang="EN-US"}
+     DstAS:         0       SrcAS:         0       BGPNexthop:   0.0.0.0
 
-[ ]{lang="EN-US"}
+InVRF:        10
 
-[Type DstIP(Port)            SrcIP(Port)            Pro ToS If(Direct)  Pkts]{lang="EN-US"}
+     SamplerMode:   2       SamplerInt:  256
 
-[     DstMAC(VLAN)           SrcMAC(VLAN)]{lang="EN-US"}
+     Active:  120.600       Bytes/Pkt:   152
 
-[     TopLblType(IP/Mask)    Lbl-Exp-S-List]{lang="EN-US"}
+L2   0012-3f86-e94c(10)     0012-3f86-e86a(0)              GE1/4/1(I)  1253
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+     SamplerMode:   1       SamplerInt:   64
 
-[IP   11.1.1.1(1024)         11.1.1.2(21)           6   128 ET1/1(I)    42996]{lang="EN-US"}
+     Active:    5.510       Bytes/Pkt:   210
 
-[     TCPFlag:      27]{lang="EN-US"}
+MPLS LDP(3.3.3.3/24)        1:18-6-0                       GE1/0/2(O)  291
 
-[     DstMask:      24       SrcMask:      24       NextHop:      0.0.0.0]{lang="EN-US"}
+                            2:24-6-0
 
-[     DstAS:         0       SrcAS:         0       BGPNexthop:   0.0.0.0]{lang="EN-US"}
+                            3:30-6-1
 
-[     ]{lang="EN-US"}[InVRF:        10]{lang="NO-BOK"}
+     SamplerMode:   0       SamplerInt:    0
 
-[     SamplerMode:   2       SamplerInt:  256]{lang="NO-BOK"}
+     Active:  660.084       Bytes/Pkt:   100
 
-[     Active:  120.600       Bytes/Pkt:   152]{lang="NO-BOK"}
+IP&  192.168.123.1(2048)    192.168.1.1(0)         1   0   GE1/0/2(O)  10
 
-[L2   0012-3f86-e94c(10)     0012-3f86-e86a(0)              GE1/4/1(I)  1253]{lang="NO-BOK"}
+L2   0012-3f86-e95d(0)      0012-3f86-e116(1008)
 
-[     SamplerMode:   1       SamplerInt:   64]{lang="NO-BOK"}
+     DstMask:      24       SrcMask:      24       NextHop:    192.168.1.2
 
-[     Active:    5.510       Bytes/Pkt:   210]{lang="NO-BOK"}
+     DstAS:         0       SrcAS:         0       BGPNexthop: 0.0.0.0
 
-[ ]{lang="NO-BOK"}
+     OutVRF:        0       TCPFlag:    0
 
-[MPLS LDP(3.3.3.3/24)        1:18-6-0                       GE1/0/2(O)  291]{lang="NO-BOK"}
+     SamplerMode:   0       SamplerInt:    0
 
-[                            2:24-6-0]{lang="NO-BOK"}
+     Active:   12.030       Bytes/Pkt:    86
 
-[                            3:30-6-1]{lang="NO-BOK"}
+IP&  172.16.1.1(68)         172.16.2.1(67)         17  64  GE1/0/3(I)  1848
 
-[     SamplerMode:   0       SamplerInt:    0]{lang="NO-BOK"}
+MPLS LDP(4.4.4.4/24)        1:55-6-0
 
-[     Active:  660.084       Bytes/Pkt:   100]{lang="NO-BOK"}
+                            2:16-6-1
 
-[ ]{lang="NO-BOK"}
+     DstMask:      24       SrcMask:      24       NextHop:    172.16.2.10
 
-[IP&  192.168.123.1(2048)    192.168.1.1(0)         1   0   GE1/0/2(O)  10]{lang="NO-BOK"}
+     DstAS:         0       SrcAS:         0       BGPNextHop: 0.0.0.0
 
-[L2   0012-3f86-e95d(0)      0012-3f86-e116(1008)]{lang="NO-BOK"}
+InVRF:         0
 
-[     DstMask:      24       SrcMask:      24       NextHop:    192.168.1.2]{lang="NO-BOK"}
+     SamplerMode:   0       SamplerInt:    0
 
-[     DstAS:         0       SrcAS:         0       BGPNexthop: 0.0.0.0]{lang="NO-BOK"}
+     Active:  382.542       Bytes/Pkt:  1426
 
-[     OutVRF:        0       TCPFlag:    0]{lang="NO-BOK"}
+表1-1 display ip netstream cache命令显示信息描述表
 
-[     SamplerMode:   0       SamplerInt:    0]{lang="NO-BOK"}
+字段
 
-[     Active:   12.030       Bytes/Pkt:    86]{lang="NO-BOK"}
+描述
 
-[ ]{lang="NO-BOK"}
+IP NetStream information
 
-[IP&  172.16.1.1(68)         172.16.2.1(67)         17  64  GE1/0/3(I)  1848]{lang="NO-BOK"}
+NetStream流缓存区信息
 
-[MPLS LDP(4.4.4.4/24)        1:55-6-0]{lang="NO-BOK"}
+Active flow timeout
 
-[                            2:16-6-1 ]{lang="NO-BOK"}
+活跃流的老化时间，单位为分钟
 
-[     DstMask:      24       SrcMask:      24       NextHop:    172.16.2.10]{lang="NO-BOK"}
+Inactive flow timeout
 
-[     DstAS:         0       SrcAS:         0       BGPNextHop: 0.0.0.0]{lang="NO-BOK"}
+不活跃流的老化时间，单位为秒
 
-[     ]{lang="NO-BOK"}[InVRF:         0]{lang="EN-US"}
+Max number of entries
 
-[     SamplerMode:   0       SamplerInt:    0]{lang="EN-US"}
+NetStream流缓存区中允许的最大流数
 
-[     Active:  382.542       Bytes/Pkt:  1426]{lang="EN-US"}
+IP active flow entries
 
-[[表1-1 ]{lang="EN-US"}[display ip netstream cache]{lang="EN-US"}]{#struct_0_84792_x5137_1047228806}[命令显示信息描述表]{style="font-family:黑体"}
+NetStream流缓存区中活跃的IP流数
 
-[]{#table_struct_0_x517174841}[[字段]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1936070416}
-:::
+MPLS active flow entries
 
-[[描述]{style="font-family:黑体"}]{#struct_0_84792_x5137_529681333}
+NetStream流缓存区中活跃的MPLS流数
 
-[[IP NetStream information]{lang="EN-US"}]{#struct_0_84792_x5137_x1493309327}
+L2 active flow entries
 
-[[NetStream]{lang="EN-US"}]{#struct_0_84792_x5137_1385235112}[流缓存区信息]{style="font-family:宋体"}
+NetStream流缓存区中活跃的二层流数
 
-[[Active flow timeout]{lang="EN-US"}]{#struct_0_84792_x5137_1942450235}
+IPL2 active flow entries
 
-[[活跃流的老化时间，单位为分钟]{style="font-family:宋体"}]{#struct_0_84792_x5137_x179158189}
+NetStream流缓存区中活跃的二层和三层流数
 
-[[Inactive flow timeout]{lang="EN-US"}]{#struct_0_84792_x5137_x822256356}
+IP flow entries counted
 
-[[不活跃流的老化时间，单位为秒]{style="font-family:宋体"}]{#struct_0_84792_x5137_1491736443}
+已经被统计的IP流数
 
-[[Max number of entries]{lang="EN-US"}]{#struct_0_84792_x5137_x91995770}
+MPLS flow entries counted
 
-[[NetStream]{lang="EN-US"}]{#struct_0_84792_x5137_x1065138275}[流缓存区中允许的最大流数]{style="font-family:宋体"}
+已经被统计的MPLS流数
 
-[[IP active flow entries]{lang="EN-US"}]{#struct_0_84792_x5137_1941860412}
+L2 flow entries counted
 
-[[NetStream]{lang="EN-US"}]{#struct_0_84792_x5137_x809286963}[流缓存区中活跃的]{style="font-family:宋体"}[IP]{lang="EN-US"}[流数]{style="font-family:宋体"}
+已经被统计的二层流数
 
-[[MPLS active flow entries]{lang="EN-US"}]{#struct_0_84792_x5137_x1788945936}
+IPL2 flow entries counted
 
-[[NetStream]{lang="EN-US"}]{#struct_0_84792_x5137_x196384375}[流缓存区中活跃的]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[流数]{style="font-family:宋体"}
+已经被统计的二层和三层流数
 
-[[L2 active flow entries]{lang="EN-US"}]{#struct_0_84792_x5137_345962551}
+Last statistics resetting time
 
-[[NetStream]{lang="EN-US"}]{#struct_0_84792_x5137_x1776495159}[流缓存区中活跃的二层流数]{style="font-family:宋体"}
+上次清除统计的时间
 
-[[IPL2 active flow entries]{lang="EN-US"}]{#struct_0_84792_x5137_1941925948}
+该字段只在执行了**reset ip netstream statistics**命令后才会显示为时间，否则显示为Never
 
-[[NetStream]{lang="EN-US"}]{#struct_0_84792_x5137_794682594}[流缓存区中活跃的二层和三层流数]{style="font-family:宋体"}
+IP packet size distribution (1103746 packets in total)
 
-[[IP flow entries counted]{lang="EN-US"}]{#struct_0_84792_x5137_1198968203}
+IP报文按大小分布情况，括号中为IP报文总数。
 
-[[已经被统计的]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_84792_x5137_x533286226}[流数]{style="font-family:宋体"}
+分布值按占IP报文总数的比率显示，只显示3位小数，如".027"表示占IP报文总数的0.027
 
-[[MPLS flow entries counted]{lang="EN-US"}]{#struct_0_84792_x5137_x536414024}
+1-32   64   96  128  160  192  224  256  288
 
-[[已经被统计的]{style="font-family:宋体"}[MPLS]{lang="EN-US"}]{#struct_0_84792_x5137_1941991484}[流数]{style="font-family:宋体"}
+320  352  384  416  448  480 512  544  576
 
-[[L2 flow entries counted]{lang="EN-US"}]{#struct_0_84792_x5137_1943385938}
+1024 1536 2048 2560 3072 3584 4096 4608
 
-[[已经被统计的二层流数]{style="font-family:宋体"}]{#struct_0_84792_x5137_1074390571}
+IP报文尺寸区间（报文长度不包括二层链路层的头）。长度不超过576字节时，以32字节为单位递增，例如："1-32"是长度为1～32个字节的报文数目，"64"是长度为33～64字节的报文数。长度超过1024字节时，以512字节为单位递增，例如"1536"是长度为1025～1536字节的报文数。长度在577～1024间的报文记录在1024项中
 
-[[IPL2 flow entries counted]{lang="EN-US"}]{#struct_0_84792_x5137_x763808471}
+Protocol     Total Flows     Packets /sec
 
-[[已经被统计的二层和三层流数]{style="font-family:宋体"}]{#struct_0_84792_x5137_x570131218}
+Flows/sec   Packets/flow
 
-[[Last statistics resetting time]{lang="EN-US"}]{#struct_0_84792_x5137_1942057020}
+Active(sec)/flow     Idle(sec)/flow
 
-[[上次清除统计的时间]{style="font-family:宋体"}]{#struct_0_84792_x5137_x1320682287}
+按协议分类的报文统计信息：协议类型、总流数、每秒的报文数、每秒的流数、平均每条流的报文数、平均每条流的活跃时间、平均每条流的非活跃时间
 
-[[该字段只在执行了]{style="font-family:宋体"}**[reset ip netstream statistics]{lang="EN-US"}**]{#struct_0_84792_x5137_x279716041}[命令后才会显示为时间，否则显示为]{style="font-family:宋体"}[Never]{lang="EN-US"}
+Type DstIP(Port)            SrcIP(Port)            Pro ToS If(Direct)  Pkts
 
-[[IP packet size distribution (1103746 packets in total)]{lang="EN-US"}]{#struct_0_84792_x5137_1145683520}
+当前流缓存区中活跃流的IP层信息：流的类型、目的IP地址（目的端口号）、源IP地址（源端口号）、协议号、服务类型、接口名（方向）、包数
 
-[[IP]{lang="EN-US"}]{#struct_0_84792_x5137_x25506057}[报文按大小分布情况，括号中为]{style="font-family:宋体"}[IP]{lang="EN-US"}[报文总数。]{style="font-family:宋体"}
+其中流的类型有五种：IP流（IP）、二层流（L2）、二三层混合流（IP&L2）、不带IP选项的MPLS流（MPLS)、带IP选项的MPLS流（IP&MPLS）
 
-[[分布值按占]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_84792_x5137_1941598268}[报文总数的比率显示，只显示]{style="font-family:宋体"}[3]{lang="EN-US"}[位小数，如"]{style="font-family:宋体"}[.027]{lang="EN-US"}["表示占]{style="font-family:宋体"}[IP]{lang="EN-US"}[报文总数的]{style="font-family:宋体"}[0.027]{lang="EN-US"}
+需要注意的是，对于ICMP报文只有Type和Code字段，因此用目的端口号的高8位为Type字段、低8位为Code字段，源端口号为0
 
-[[1-32   64   96  128  160  192  224  256  288]{lang="EN-US"}]{#struct_0_84792_x5137_716957701}
+DstMAC(VLAN)          SrcMAC(VLAN)
 
-[[320  352  384  416  448  480 512  544  576]{lang="EN-US"}]{#struct_0_84792_x5137_x1799067167}
+当前流缓存区中活跃流的二层信息：目的MAC地址、目的VLAN ID、源MAC地址、源VLAN ID
 
-[[1024 1536 2048 2560 3072 3584 4096 4608]{lang="EN-US"}]{#struct_0_84792_x5137_50731913}
+TopLblType(IP/Mask)      Lbl-Exp-S-List
 
-[[IP]{lang="EN-US"}]{#struct_0_84792_x5137_x594497492}[报文尺寸区间（报文长度不包括二层链路层的头）。长度不超过]{style="font-family:宋体"}[576]{lang="EN-US"}[字节时，以]{style="font-family:宋体"}[32]{lang="EN-US"}[字节为单位递增，例如："]{style="font-family:宋体"}[1-32]{lang="EN-US"}["是长度为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[个字节的报文数目，"]{style="font-family:宋体"}[64]{lang="EN-US"}["是长度为]{style="font-family:宋体"}[33]{lang="EN-US"}[～]{style="font-family:宋体"}[64]{lang="EN-US"}[字节的报文数。长度超过]{style="font-family:宋体"}[1024]{lang="EN-US"}[字节时，以]{style="font-family:宋体"}[512]{lang="EN-US"}[字节为单位递增，例如"]{style="font-family:宋体"}[1536]{lang="EN-US"}["是长度为]{style="font-family:宋体"}[1025]{lang="EN-US"}[～]{style="font-family:宋体"}[1536]{lang="EN-US"}[字节的报文数。长度在]{style="font-family:宋体"}[577]{lang="EN-US"}[～]{style="font-family:宋体"}[1024]{lang="EN-US"}[间的报文记录在]{style="font-family:宋体"}[1024]{lang="EN-US"}[项中]{style="font-family:宋体"}
+当前流缓存区中活跃流的MPLS信息：栈顶标签的类型（栈顶标签对应的IP地址及掩码长度）、标签列表
 
-[[Protocol     Total Flows     Packets /sec]{lang="EN-US"}]{#struct_0_84792_x5137_1941663804}
+标签列表中至多列出三层标签
 
-[[Flows/sec   Packets/flow]{lang="EN-US"}]{#struct_0_84792_x5137_x7745799}
+TCPFlag:
 
-[[Active(sec)/flow     Idle(sec)/flow]{lang="EN-US"}]{#struct_0_84792_x5137_2044004944}
+DstMask:      SrcMask:             NextHop:
 
-[[按协议分类的报文统计信息：协议类型、总流数、每秒的报文数、每秒的流数、平均每条流的报文数、平均每条流的活跃时间、平均每条流的非活跃时间]{style="font-family:宋体"}]{#struct_0_84792_x5137_x2090572563}
+DstAS:           SrcAS:            BGPNextHop:
 
-[[Type DstIP(Port)            SrcIP(Port)            Pro ToS If(Direct)  Pkts]{lang="EN-US"}]{#struct_0_84792_x5137_1941729340}
+OutVRF:       InVRF:
 
-[[当前流缓存区中活跃流的]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_84792_x5137_1092705516}[层信息：流的类型、目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址（目的端口号）、源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址（源端口号）、协议号、服务类型、接口名（方向）、包数]{style="font-family:宋体"}
+SamplerMode:                     SamplerInt:
 
-[[其中流的类型有五种：]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_84792_x5137_456373790}[流（]{style="font-family:宋体"}[IP]{lang="EN-US"}[）、二层流（]{style="font-family:宋体"}[L2]{lang="EN-US"}[）、二三层混合流（]{style="font-family:宋体"}[IP&L2]{lang="EN-US"}[）、不带]{style="font-family:宋体"}[IP]{lang="EN-US"}[选项的]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[流（]{style="font-family:宋体"}[MPLS)]{lang="EN-US"}[、带]{style="font-family:宋体"}[IP]{lang="EN-US"}[选项的]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[流（]{style="font-family:宋体"}[IP&MPLS]{lang="EN-US"}[）]{style="font-family:宋体"}
+Active:       Bytes/Pkt:
 
-[[需要注意的是，对于]{style="font-family:宋体"}[ICMP]{lang="EN-US"}]{#struct_0_84792_x5137_1512402794}[报文只有]{style="font-family:宋体"}[Type]{lang="EN-US"}[和]{style="font-family:宋体"}[Code]{lang="EN-US"}[字段，因此用目的端口号的高]{style="font-family:宋体"}[8]{lang="EN-US"}[位为]{style="font-family:宋体"}[Type]{lang="EN-US"}[字段、低]{style="font-family:宋体"}[8]{lang="EN-US"}[位为]{style="font-family:宋体"}[Code]{lang="EN-US"}[字段，源端口号为]{style="font-family:宋体"}[0]{lang="EN-US"}
+当前流缓存区中活跃流的其他信息：TCP标记、目的掩码、源掩码、路由下一跳、目的自治系统、源自治系统、BGP下一跳、出方向报文所属VPN、入方向报文所属VPN、采样模式、采样间隔、流活跃时间、平均每个包的字节数
 
-[[DstMAC(VLAN)          SrcMAC(VLAN)]{lang="EN-US"}]{#struct_0_84792_x5137_1941794876}
+NetStream采样模式，目前支持三种：
 
-[[当前流缓存区中活跃流的二层信息：目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_84792_x5137_419328272}[地址、目的]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[、源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址、源]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}
+·0：表示不采样，统计所有报文
 
-[[TopLblType(IP/Mask)      Lbl-Exp-S-List]{lang="EN-US"}]{#struct_0_84792_x5137_1015175864}
+·1：表示固定采样
 
-[[当前流缓存区中活跃流的]{style="font-family:宋体"}[MPLS]{lang="EN-US"}]{#struct_0_84792_x5137_1942384700}[信息：栈顶标签的类型（栈顶标签对应的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址及掩码长度）、标签列表]{style="font-family:宋体"}
-
-[[标签列表中至多列出三层标签]{style="font-family:宋体"}]{#struct_0_84792_x5137_x908627571}
-
-[[TCPFlag:]{lang="EN-US"}]{#struct_0_84792_x5137_x1978249354}
-
-[[DstMask:      SrcMask:             NextHop:]{lang="EN-US"}]{#struct_0_84792_x5137_1044511214}
-
-[[DstAS:           SrcAS:            BGPNextHop:]{lang="EN-US"}]{#struct_0_84792_x5137_1942450236}
-
-[[OutVRF:       InVRF:]{lang="EN-US"}]{#struct_0_84792_x5137_x178961581}
-
-[[SamplerMode:                     SamplerInt:]{lang="EN-US"}]{#struct_0_84792_x5137_x55996847}
-
-[[Active:       Bytes/Pkt:]{lang="EN-US"}]{#struct_0_84792_x5137_x787022940}
-
-[[当前流缓存区中活跃流的其他信息：]{style="font-family:宋体"}[TCP]{lang="EN-US"}]{#struct_0_84792_x5137_981686987}[标记、目的掩码、源掩码、路由下一跳、目的自治系统、源自治系统、]{style="font-family:宋体"}[BGP]{lang="EN-US"}[下一跳、出方向报文所属]{style="font-family:宋体"}[VPN]{lang="EN-US"}[、入方向报文所属]{style="font-family:宋体"}[VPN]{lang="EN-US"}[、采样模式、采样间隔、流活跃时间、平均每个包的字节数]{style="font-family:宋体"}
-
-[[NetStream]{lang="EN-US"}]{#struct_0_84792_x5137_x1854516233}[采样模式，目前支持三种：]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0]{lang="EN-US"}]{#struct_0_84792_x5137_x2092296894}[：表示不采样，统计所有报文]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[1]{lang="EN-US"}]{#struct_0_84792_x5137_x786957404}[：表示固定采样]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[2]{lang="EN-US"}]{#struct_0_84792_x5137_x1772641505}[：表示随机采样]{lang="EN-US" style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1586400033 .myid}
-[]{#_Toc404797264}[]{#struct_0_84792_x5137_232881953}[]{#_Toc250995601}
+·2：表示随机采样
 
 **NetStream \-- NetStream配置命令 \-- display ip netstream export**
 
 ------------------------------------------------------------------------
 
-[**[display ip netstream export]{lang="EN-US"}**]{#struct_0_84792_x5137_579944397}[命令用来查看]{style="font-family:
-宋体"}[NetStream]{lang="EN-US"}[统计输出报文的各种信息。]{style="font-family:
-宋体"}
+**[display ip netstream export**]命令用来查看NetStream统计输出报文的各种信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x786891868}
+【命令】
 
-[**[display ip netstream export]{lang="EN-US"}**]{#struct_0_84792_x5137_x910902778}
+**[display ip netstream export**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1073539527}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_84792_x5137_593042159}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x385576969}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_84792_x5137_267988483}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_84792_x5137_1208285574}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_84792_x5137_x1265276108}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_84792_x5137_614786403}
+mdc-operator
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x786826332}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_84792_x5137_1758473894}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_x1422539068}[查看]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[统计输出信息。]{style="font-family:宋体"}
+\# 查看NetStream统计输出信息。
 
-[[\<Sysname\> display ip netstream export]{lang="EN-US"}]{#struct_0_84792_x5137_x787285084}
+\<Sysname\> display ip netstream export
 
-[IP export information:]{lang="EN-US"}
+IP export information:
 
-[  Flow source interface                            : GigabitEthernet1/0/1]{lang="EN-US"}
+  Flow source interface                            : GigabitEthernet1/0/1
 
-[  Flow destination VPN instance                    : VPN1]{lang="EN-US"}
+  Flow destination VPN instance                    : VPN1
 
-[  Flow destination IP address (UDP)                : 10.10.0.10 (30000)]{lang="EN-US"}
+  Flow destination IP address (UDP)                : 10.10.0.10 (30000)
 
-[  Version 5 exported flows number                  : 16]{lang="EN-US"}
+  Version 5 exported flows number                  : 16
 
-[  Version 5 exported UDP datagrams number (failed) : 16 (0)]{lang="EN-US"}
+  Version 5 exported UDP datagrams number (failed) : 16 (0)
 
-[  Version 9 exported flows number                  : 20]{lang="EN-US"}
+  Version 9 exported flows number                  : 20
 
-[  Version 9 exported UDP datagrams number (failed) : 2 (0)]{lang="EN-US"}
+  Version 9 exported UDP datagrams number (failed) : 2 (0)
 
-[ ]{lang="EN-US"}
+MPLS export information:
 
-[MPLS export information:]{lang="EN-US"}
+  Flow source interface                            : GigabitEthernet1/0/1
 
-[  Flow source interface                            : GigabitEthernet1/0/1]{lang="EN-US"}
+  Flow destination VPN instance                    : VPN1
 
-[  Flow destination VPN instance                    : VPN1]{lang="EN-US"}
+  Flow destination IP address (UDP)                : 10.10.0.10 (30000)
 
-[  Flow destination IP address (UDP)                : 10.10.0.10 (30000)]{lang="EN-US"}
+  Version 9 exported flows number                  : 20
 
-[  Version 9 exported flows number                  : 20]{lang="EN-US"}
+  Version 9 exported UDP datagrams number (failed) : 2 (0)
 
-[  Version 9 exported UDP datagrams number (failed) : 2 (0)]{lang="EN-US"}
+as aggregation export information:
 
-[ ]{lang="EN-US"}
+  Flow source interface                            : GigabitEthernet1/0/1
 
-[as aggregation export information:]{lang="EN-US"}
+  Flow destination VPN instance                    : VPN1
 
-[  Flow source interface                            : GigabitEthernet1/0/1]{lang="EN-US"}
+  Flow destination IP address (UDP)                : 10.10.0.10 (30000)
 
-[  Flow destination VPN instance                    : VPN1]{lang="EN-US"}
+  Version 8 exported flows number                  : 16
 
-[  Flow destination IP address (UDP)                : 10.10.0.10 (30000)]{lang="EN-US"}
+  Version 8 exported UDP datagrams number (failed) : 2 (0)
 
-[  Version 8 exported flows number                  : 16]{lang="EN-US"}
+  Version 9 exported flows number                  : 16
 
-[  Version 8 exported UDP datagrams number (failed) : 2 (0)]{lang="EN-US"}
+  Version 9 exported UDP datagrams number (failed) : 2 (0)
 
-[  Version 9 exported flows number                  : 16]{lang="EN-US"}
+表1-2 display ip netstream export命令显示信息描述表
 
-[  Version 9 exported UDP datagrams number (failed) : 2 (0)]{lang="EN-US"}
+字段
 
-[[表1-2 ]{lang="EN-US"}[display ip netstream export]{lang="EN-US"}]{#struct_0_84792_x5137_x560297146}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x487773721}[]{#struct_0_84792_x5137_x1943383846}[]{#_Toc157417828}[]{#_Toc157417866}[]{#_Toc158434518}[字段]{style="font-family:
-   黑体"}
-:::
+IP export information
 
-[[描述]{style="font-family:黑体"}]{#struct_0_84792_x5137_631450115}
+版本5和版本9统计输出信息
 
-[[IP export information]{lang="EN-US"}]{#struct_0_84792_x5137_548172347}
+Flow source interface
 
-[[版本]{style="font-family:宋体"}[5]{lang="EN-US"}]{#struct_0_84792_x5137_x993725831}[和版本]{style="font-family:宋体"}[9]{lang="EN-US"}[统计输出信息]{style="font-family:宋体"}
+输出信息的源接口
 
-[[Flow source interface]{lang="EN-US"}]{#struct_0_84792_x5137_x787219548}
+Flow destination VPN instance
 
-[[输出信息的源接口]{style="font-family:宋体"}]{#struct_0_84792_x5137_x2073357306}
+输出信息的目的地址所在的VPN
 
-[[Flow destination VPN instance]{lang="EN-US"}]{#struct_0_84792_x5137_x1085781331}
+Flow destination IP address (UDP)
 
-[[输出信息的目的地址所在的]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_84792_x5137_x1086690896}
+输出信息的目的IP地址（UDP端口号）
 
-[[Flow destination IP address (UDP)]{lang="EN-US"}]{#struct_0_84792_x5137_1002459598}
+Version 5 exported flows number
 
-[[输出信息的目的]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_84792_x5137_75250912}[地址（]{style="font-family:宋体"}[UDP]{lang="EN-US"}[端口号）]{style="font-family:宋体"}
+使用版本5格式发送的流信息数
 
-[[Version 5 exported flows number]{lang="EN-US"}]{#struct_0_84792_x5137_x1110009864}
+Version 5 exported UDP datagrams number (failed)
 
-[[使用版本]{style="font-family:宋体"}[5]{lang="EN-US"}]{#struct_0_84792_x5137_x787154012}[格式发送的流信息数]{style="font-family:宋体"}
+使用版本5格式发送的UDP报文数（发送失败的报文数）
 
-[[Version 5 exported UDP datagrams number (failed)]{lang="EN-US"}]{#struct_0_84792_x5137_975705809}
+Version 9 exported flows number
 
-[[使用版本]{style="font-family:宋体"}[5]{lang="EN-US"}]{#struct_0_84792_x5137_1485498233}[格式发送的]{style="font-family:宋体"}[UDP]{lang="EN-US"}[报文数（发送失败的报文数）]{style="font-family:宋体"}
+使用版本9格式发送的流信息数
 
-[[Version 9 exported flows number]{lang="EN-US"}]{#struct_0_84792_x5137_x1245130217}
+Version 9 exported UDP datagrams number (failed)
 
-[[使用版本]{style="font-family:宋体"}[9]{lang="EN-US"}]{#struct_0_84792_x5137_1402489258}[格式发送的流信息数]{style="font-family:宋体"}
+使用版本9格式发送的UDP报文数（发送失败的报文数）
 
-[[Version 9 exported UDP datagrams number (failed)]{lang="EN-US"}]{#struct_0_84792_x5137_x787088476}
+MPLS export information
 
-[[使用版本]{style="font-family:宋体"}[9]{lang="EN-US"}]{#struct_0_84792_x5137_1854381868}[格式发送的]{style="font-family:宋体"}[UDP]{lang="EN-US"}[报文数（发送失败的报文数）]{style="font-family:宋体"}
+版本9的MPLS流统计输出信息
 
-[[MPLS export information]{lang="EN-US"}]{#struct_0_84792_x5137_1278390423}
+根据不同的聚合方式，下面的显示信息会有差异，请以实际配置的聚合方式为准，这里以"自治系统"聚合方式为例
 
-[[版本]{style="font-family:宋体"}[9]{lang="EN-US"}]{#struct_0_84792_x5137_386151724}[的]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[流统计输出信息]{style="font-family:宋体"}
+as aggregation export information
 
-[[根据不同的聚合方式，下面的显示信息会有差异，请以实际配置的聚合方式为准，这里以"自治系统"聚合方式为例]{style="font-family:宋体"}]{#struct_0_84792_x5137_x2097972248}
+启用自治系统聚合的版本8统计输出信息
 
-[[as aggregation export information]{lang="EN-US"}]{#struct_0_84792_x5137_x786498652}
+Version 8 exported flows number
 
-[[启用自治系统聚合的版本]{style="font-family:宋体"}[8]{lang="EN-US"}]{#struct_0_84792_x5137_x1319264234}[统计输出信息]{style="font-family:宋体"}
+使用版本8格式发送的流信息数
 
-[[Version 8 exported flows number]{lang="EN-US"}]{#struct_0_84792_x5137_1867502565}
+Version 8 exported UDP datagrams number (failed)
 
-[[使用版本]{style="font-family:宋体"}[8]{lang="EN-US"}]{#struct_0_84792_x5137_x1249952679}[格式发送的流信息数]{style="font-family:宋体"}
+使用版本8格式发送的UDP报文数（发送失败的报文数）
 
-[[Version 8 exported UDP datagrams number (failed)]{lang="EN-US"}]{#struct_0_84792_x5137_1693767146}
+·交换应用
 
-[[使用版本]{style="font-family:宋体"}[8]{lang="EN-US"}]{#struct_0_84792_x5137_x786433116}[格式发送的]{style="font-family:宋体"}[UDP]{lang="EN-US"}[报文数（发送失败的报文数）]{style="font-family:宋体"}
+\# 查看NetStream统计输出信息。
 
-[ ]{lang="EN-US"}
+\<Sysname\> display ip netstream export
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_84792_x5137_1773588559}
+IP export information:
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_x1588031610}[查看]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[统计输出信息。]{style="font-family:宋体"}
+  Flow source interface                           : Vlan-interface2
 
-[[\<Sysname\> display ip netstream export]{lang="EN-US"}]{#struct_0_84792_x5137_x787022939}
+  Flow destination VPN instance                   : Not specified
 
-[IP export information:]{lang="EN-US"}
+  Flow destination IP address (UDP)               : 192.168.0.5 (5000)
 
-[  Flow source interface                           : Vlan-interface2]{lang="EN-US"}
+  Version 5 exported flows number                 : 27
 
-[  Flow destination VPN instance                   : Not specified]{lang="EN-US"}
+  Version 5 exported UDP datagrams number (failed): 21 (0)
 
-[  Flow destination IP address (UDP)               : 192.168.0.5 (5000)]{lang="EN-US"}
+  Version 9 exported flows number                 : 0
 
-[  Version 5 exported flows number                 : 27]{lang="EN-US"}
+  Version 9 exported UDP datagram number (failed) : 0 (0)
 
-[  Version 5 exported UDP datagrams number (failed): 21 (0)]{lang="EN-US"}
+L2 export information:
 
-[  Version 9 exported flows number                 : 0]{lang="EN-US"}
+  Flow source interface                           : Vlan-interface2
 
-[  Version 9 exported UDP datagram number (failed) : 0 (0)]{lang="EN-US"}
+  Flow destination VPN instance                   : Not specified
 
-[ ]{lang="EN-US"}
+  Flow destination IP address (UDP)               : 192.168.0.5 (5000)
 
-[L2 export information:]{lang="EN-US"}
+  Version 9 exported flows number                 : 0
 
-[  Flow source interface                           : Vlan-interface2]{lang="EN-US"}
+  Version 9 exported UDP datagrams number (failed): 0 (0)
 
-[  Flow destination VPN instance                   : Not specified]{lang="EN-US"}
+protocol-port aggregation export information:
 
-[  Flow destination IP address (UDP)               : 192.168.0.5 (5000)]{lang="EN-US"}
+Flow source interface                           : Vlan-interface2
 
-[  Version 9 exported flows number                 : 0]{lang="EN-US"}
+  Flow destination VPN instance                   : Not specified
 
-[  Version 9 exported UDP datagrams number (failed): 0 (0)]{lang="EN-US"}
+  Flow destination IP address (UDP)               : 192.168.0.5 (5000)
 
-[ ]{lang="EN-US"}
+  Version 8 exported flows number                 : 24
 
-[protocol-port aggregation export information:]{lang="FR"}
+  Version 8 exported UDP datagrams number (failed): 21 (0)
 
-[  ]{lang="FR"}[Flow source interface                           : Vlan-interface2]{lang="EN-US"}
+  Version 9 exported flows number                 : 0
 
-[  Flow destination VPN instance                   : Not specified]{lang="EN-US"}
+  Version 9 exported UDP datagrams number (failed): 0 (0)
 
-[  Flow destination IP address (UDP)               : 192.168.0.5 (5000)]{lang="EN-US"}
+表1-3 display ip netstream export命令显示信息描述表
 
-[  Version 8 exported flows number                 : 24]{lang="EN-US"}
+字段
 
-[  Version 8 exported UDP datagrams number (failed): 21 (0)]{lang="EN-US"}
+描述
 
-[  Version 9 exported flows number                 : 0]{lang="EN-US"}
+IP export information
 
-[  Version 9 exported UDP datagrams number (failed): 0 (0)]{lang="EN-US"}
+版本5和版本9统计输出信息
 
-[[表1-3 ]{lang="EN-US"}[display ip netstream export]{lang="EN-US"}]{#struct_0_84792_x5137_982276818}[命令显示信息描述表]{style="font-family:黑体"}
+Flow source interface
 
-[]{#table_struct_0_x491273049}[[字段]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1674447257}
+输出信息的源接口
 
-[[描述]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1018738277}
+Flow destination VPN instance
 
-[[IP export information]{lang="EN-US"}]{#struct_0_84792_x5137_1043548483}
+输出信息的目的地址所在的VPN
 
-[[版本]{style="font-family:宋体"}[5]{lang="EN-US"}]{#struct_0_84792_x5137_1053747219}[和版本]{style="font-family:宋体"}[9]{lang="EN-US"}[统计输出信息]{style="font-family:宋体"}
+Flow destination IP address (UDP)
 
-[[Flow source interface]{lang="EN-US"}]{#struct_0_84792_x5137_x786957403}
+输出信息的目的IP地址（UDP端口号）
 
-[[输出信息的源接口]{style="font-family:宋体"}]{#struct_0_84792_x5137_x1772575969}
+Version 5 exported flows number
 
-[[Flow destination VPN instance]{lang="EN-US"}]{#struct_0_84792_x5137_1255021562}
+使用版本5格式发送的流信息数
 
-[[输出信息的目的地址所在的]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_84792_x5137_1366995068}
+Version 5 exported UDP datagram number (failed)
 
-[[Flow destination IP address (UDP)]{lang="EN-US"}]{#struct_0_84792_x5137_x204170834}
+使用版本5格式发送的UDP报文数（发送失败的报文数）
 
-[[输出信息的目的]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_84792_x5137_x1688080162}[地址（]{style="font-family:宋体"}[UDP]{lang="EN-US"}[端口号）]{style="font-family:宋体"}
+Version 9 exported flows number
 
-[[Version 5 exported flows number]{lang="EN-US"}]{#struct_0_84792_x5137_x786891867}
+使用版本9格式发送的流信息数
 
-[[使用版本]{style="font-family:宋体"}[5]{lang="EN-US"}]{#struct_0_84792_x5137_x910312954}[格式发送的流信息数]{style="font-family:宋体"}
+Version 9 exported UDP datagram number (failed)
 
-[[Version 5 exported UDP datagram number (failed)]{lang="EN-US"}]{#struct_0_84792_x5137_692971787}
+使用版本9格式发送的UDP报文数（发送失败的报文数）
 
-[[使用版本]{style="font-family:宋体"}[5]{lang="EN-US"}]{#struct_0_84792_x5137_444768438}[格式发送的]{style="font-family:宋体"}[UDP]{lang="EN-US"}[报文数（发送失败的报文数）]{style="font-family:宋体"}
+L2 export information
 
-[[Version 9 exported flows number]{lang="EN-US"}]{#struct_0_84792_x5137_x580297435}
+二层流统计输出信息
 
-[[使用版本]{style="font-family:宋体"}[9]{lang="EN-US"}]{#struct_0_84792_x5137_323658263}[格式发送的流信息数]{style="font-family:宋体"}
+根据不同的聚合方式，下面的显示信息会有差异，请以实际配置的聚合方式为准，这里以"协议－端口"聚合方式为例
 
-[[Version 9 exported UDP datagram number (failed)]{lang="EN-US"}]{#struct_0_84792_x5137_x786826331}
+protocol-port aggregation export information
 
-[[使用版本]{style="font-family:宋体"}[9]{lang="EN-US"}]{#struct_0_84792_x5137_1758670502}[格式发送的]{style="font-family:宋体"}[UDP]{lang="EN-US"}[报文数（发送失败的报文数）]{style="font-family:宋体"}
+启用协议－端口聚合的版本8统计输出信息
 
-[[L2 export information]{lang="EN-US"}]{#struct_0_84792_x5137_x1780800306}
+Version 8 exported flows number
 
-[[二层流统计输出信息]{style="font-family:宋体"}]{#struct_0_84792_x5137_x363140809}
+使用版本8格式发送的流信息数
 
-[[根据不同的聚合方式，下面的显示信息会有差异，请以实际配置的聚合方式为准，这里以"协议－端口"聚合方式为例]{style="font-family:宋体"}]{#struct_0_84792_x5137_2080645313}
+Version 8 exported UDP datagram number (failed)
 
-[[protocol-port aggregation export information]{lang="EN-US"}]{#struct_0_84792_x5137_x787285083}
-
-[[启用协议－端口聚合的版本]{style="font-family:宋体"}[8]{lang="EN-US"}]{#struct_0_84792_x5137_x559838394}[统计输出信息]{style="font-family:宋体"}
-
-[[Version 8 exported flows number]{lang="EN-US"}]{#struct_0_84792_x5137_281647085}
-
-[[使用版本]{style="font-family:宋体"}[8]{lang="EN-US"}]{#struct_0_84792_x5137_520288549}[格式发送的流信息数]{style="font-family:宋体"}
-
-[[Version 8 exported UDP datagram number (failed)]{lang="EN-US"}]{#struct_0_84792_x5137_x446015364}
-
-[[使用版本]{style="font-family:宋体"}[8]{lang="EN-US"}]{#struct_0_84792_x5137_x787219547}[格式发送的]{style="font-family:宋体"}[UDP]{lang="EN-US"}[报文数（发送失败的报文数）]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-730756559 .myid}
-[]{#_Toc404797265}[]{#struct_0_84792_x5137_x2073816058}[]{#_Toc250995602}
+使用版本8格式发送的UDP报文数（发送失败的报文数）
 
 **NetStream \-- NetStream配置命令 \-- display ip netstream template**
 
 ------------------------------------------------------------------------
 
-[**[display ip netstream template]{lang="EN-US"}**]{#struct_0_84792_x5137_x1480989088}[命令用来查看]{style="font-family:
-宋体"}[NetStream]{lang="EN-US"}[模板的配置和状态信息。]{style="font-family:
-宋体"}
+**[display ip netstream template**]命令用来查看NetStream模板的配置和状态信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x558736917}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_84792_x5137_1477129992}
+集中式设备：
 
-[**[display ip netstream template]{lang="EN-US"}**]{#struct_0_84792_x5137_1609767790}
+**[display ip netstream template**]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_84792_x5137_x1899527840}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display ip netstream template]{lang="EN-US"}**[ \[ **slot** *slot-number* \[ *cpu cpu-number* \] \]]{lang="EN-US"}]{#struct_0_84792_x5137_2057178546}
+**[display ip netstream template** [ **slot** *slot-number* [ *cpu cpu-number*  ]]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_84792_x5137_x981287677}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display ip netstream template]{lang="EN-US"}**[ \[ **chassis** *chassis-number* **slot** *slot-number* \[ *cpu cpu-number* \] \]]{lang="EN-US"}]{#struct_0_84792_x5137_x787154011}
+**[display ip netstream template** [ **chassis** *chassis-number* **slot** *slot-number* [ *cpu cpu-number*  ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_84792_x5137_975771345}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_84792_x5137_776529153}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_84792_x5137_456044193}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_84792_x5137_1656009704}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_84792_x5137_1681741133}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_84792_x5137_x1531450456}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_84792_x5137_979753398}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x448522152}
+【参数】
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_84792_x5137_x787088475}[：显示指定单板上的信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示主用主控板上的信息。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定单板上的信息。*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示主用主控板上的信息。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_84792_x5137_1854316332}[：显示指定成员设备的信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示成员设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。如果未指定本参数，将显示主用设备上的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备的信息。*slot-number*表示成员设备在IRF中的成员编号。如果未指定本参数，将显示主用设备上的信息。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_84792_x5137_1114816402}[：显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[的信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示成员设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。如果未指定本参数，将显示主用设备上的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备/PEX的信息。*slot-number*表示成员设备在IRF中的成员编号或者PEX的虚拟槽位号。如果未指定本参数，将显示主用设备上的信息。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number slot* *slot-number*]{lang="EN-US"}]{#struct_0_84792_x5137_x300717675}[：显示指定成员设备上指定单板的信息。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示主用设备主用主控板上的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number slot* *slot-number*]：显示指定成员设备上指定单板的信息。*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示主用设备主用主控板上的信息。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number slot* *slot-number*]{lang="EN-US"}]{#struct_0_84792_x5137_1114750866}[：显示指定单板的信息。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。如果未指定本参数，将显示主用设备主用主控板上的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number slot* *slot-number*]：显示指定单板的信息。*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。如果未指定本参数，将显示主用设备主用主控板上的信息。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu ]{lang="EN-US"}***[cpu-number]{lang="EN-US"}*]{#struct_0_84792_x5137_267552925}[：显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上的信息。]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的编号。只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[cpu ***cpu-number*]：显示指定CPU上的信息。*cpu-number*表示CPU的编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1840009045}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_84792_x5137_x1824301747}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_x1496793233}[使能自治系统聚合。查看]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[模板信息。]{style="font-family:宋体"}
+\# 使能自治系统聚合。查看NetStream模板信息。
 
-[[\<Sysname\> display ip netstream template]{lang="EN-US"}]{#struct_0_84792_x5137_x786433115}
+\<Sysname\> display ip netstream template
 
-[ Flow template refresh frequency            : 20]{lang="EN-US"}
+ Flow template refresh frequency            : 20
 
-[ Flow template refresh interval             : 30 min]{lang="EN-US"}
+ Flow template refresh interval             : 30 min
 
-[ Active flow templates                      : 2]{lang="EN-US"}
+ Active flow templates                      : 2
 
-[ Created flow templates                     : 2]{lang="EN-US"}
+ Created flow templates                     : 2
 
-[ ]{lang="EN-US"}
+AS outbound template:
 
-[AS outbound template:]{lang="EN-US"}
+ Template ID                : 3258
 
-[ Template ID                : 3258]{lang="EN-US"}
+ Packets                    : 0
 
-[ Packets                    : 0]{lang="EN-US"}
+ Last template export time  : Never
 
-[ Last template export time  : Never]{lang="EN-US"}
+ Field count                : 14
 
-[ Field count                : 14]{lang="EN-US"}
+ Field type                   Field length (bytes)
 
-[ Field type                   Field length (bytes)]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ Flows                        4
 
-[ Flows                        4]{lang="EN-US"}
+ Out packets                  8
 
-[ Out packets                  8]{lang="EN-US"}
+ Out bytes                    8
 
-[ Out bytes                    8]{lang="EN-US"}
+ First forwarded              4
 
-[ First forwarded              4]{lang="EN-US"}
+ Last forwarded               4
 
-[ Last forwarded               4]{lang="EN-US"}
+ Source AS                    4
 
-[ Source AS                    4]{lang="EN-US"}
+ Destination AS               4
 
-[ Destination AS               4]{lang="EN-US"}
+ Input interface index        4
 
-[ Input interface index        4]{lang="EN-US"}
+ Output interface index       4
 
-[ Output interface index       4]{lang="EN-US"}
+ Direction                    1
 
-[ Direction                    1]{lang="EN-US"}
+ Sampling algorithm           1
 
-[ Sampling algorithm           1]{lang="EN-US"}
+ PAD                          1
 
-[ PAD                          1]{lang="EN-US"}
+ Sampling interval            4
 
-[ Sampling interval            4]{lang="EN-US"}
+AS inbound template:
 
-[ ]{lang="EN-US"}
+ Template ID                : 3257
 
-[AS inbound template:]{lang="EN-US"}
+ Packets                    : 0
 
-[ Template ID                : 3257]{lang="EN-US"}
+ Last template export time  : Never
 
-[ Packets                    : 0]{lang="EN-US"}
+ Field count                : 14
 
-[ Last template export time  : Never]{lang="EN-US"}
+ Field type                   Field length (bytes)
 
-[ Field count                : 14]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ Field type                   Field length (bytes)]{lang="EN-US"}
+ Flows                        4
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ In packets                   8
 
-[ Flows                        4]{lang="EN-US"}
+ In bytes                     8
 
-[ In packets                   8]{lang="EN-US"}
+ First forwarded              4
 
-[ In bytes                     8]{lang="EN-US"}
+ Last forwarded               4
 
-[ First forwarded              4]{lang="EN-US"}
+ Source AS                    4
 
-[ Last forwarded               4]{lang="EN-US"}
+ Destination AS               4
 
-[ Source AS                    4]{lang="EN-US"}
+ Input interface index        4
 
-[ Destination AS               4]{lang="EN-US"}
+ Output interface index       4
 
-[ Input interface index        4]{lang="EN-US"}
+ Direction                    1
 
-[ Output interface index       4]{lang="EN-US"}
+ Sampling algorithm           1
 
-[ Direction                    1]{lang="EN-US"}
+ PAD                          1
 
-[ Sampling algorithm           1]{lang="EN-US"}
+ Sampling interval            4
 
-[ PAD                          1]{lang="EN-US"}
+表1-4 display ip netstream template命令显示信息描述表
 
-[ Sampling interval            4]{lang="EN-US"}
+字段
 
-[[表1-4 ]{lang="EN-US"}[display ip netstream template]{lang="EN-US"}]{#struct_0_84792_x5137_1773391951}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x498765369}[[字段]{style="font-family:黑体"}]{#struct_0_84792_x5137_x787022942}
-:::
+Flow template refresh frequency
 
-[[描述]{style="font-family:黑体"}]{#struct_0_84792_x5137_981555915}
+模板的包刷新率
 
-[[Flow template refresh frequency]{lang="EN-US"}]{#struct_0_84792_x5137_x2141105436}
+Flow template refresh interval
 
-[[模板的包刷新率]{style="font-family:宋体"}]{#struct_0_84792_x5137_395766533}
+模板的时间刷新率，单位为分钟
 
-[[Flow template refresh interval]{lang="EN-US"}]{#struct_0_84792_x5137_x1414801973}
+Active flow templates
 
-[[模板的时间刷新率，单位为分钟]{style="font-family:宋体"}]{#struct_0_84792_x5137_1113534625}
+当前激活的模板数
 
-[[Active flow templates]{lang="EN-US"}]{#struct_0_84792_x5137_x786957406}
+Created flow templates
 
-[[当前激活的模板数]{style="font-family:宋体"}]{#struct_0_84792_x5137_x1772772577}
+创建的模板总数
 
-[[Created flow templates]{lang="EN-US"}]{#struct_0_84792_x5137_1663918172}
+根据不同的聚合方式，下面的显示信息会有差异，请以实际配置的聚合方式为准，这里以"自治系统"聚合方式为例
 
-[[创建的模板总数]{style="font-family:宋体"}]{#struct_0_84792_x5137_829074897}
+AS outbound template
 
-[[根据不同的聚合方式，下面的显示信息会有差异，请以实际配置的聚合方式为准，这里以"自治系统"聚合方式为例]{style="font-family:宋体"}]{#struct_0_84792_x5137_x683684524}
+AS出方向模板信息
 
-[[AS outbound template]{lang="EN-US"}]{#struct_0_84792_x5137_x934865003}
+AS inbound template
 
-[[AS]{lang="EN-US"}]{#struct_0_84792_x5137_x786891870}[出方向模板信息]{style="font-family:宋体"}
+AS入方向模板信息
 
-[[AS inbound template]{lang="EN-US"}]{#struct_0_84792_x5137_x910378489}
+Template ID
 
-[[AS]{lang="EN-US"}]{#struct_0_84792_x5137_634943260}[入方向模板信息]{style="font-family:宋体"}
+模板ID
 
-[[Template ID]{lang="EN-US"}]{#struct_0_84792_x5137_x831964009}
+Packets
 
-[[模板]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_84792_x5137_x581431156}
+使用该模板的发送报文数
 
-[[Packets]{lang="EN-US"}]{#struct_0_84792_x5137_x786826334}
+Last template export time
 
-[[使用该模板的发送报文数]{style="font-family:宋体"}]{#struct_0_84792_x5137_1758867110}
+该模板最近的一次输出时间
 
-[[Last template export time]{lang="EN-US"}]{#struct_0_84792_x5137_1354363852}
+Field count
 
-[[该模板最近的一次输出时间]{style="font-family:宋体"}]{#struct_0_84792_x5137_x744962208}
+模板的域总数
 
-[[Field count]{lang="EN-US"}]{#struct_0_84792_x5137_1517496444}
+Field type
 
-[[模板的域总数]{style="font-family:宋体"}]{#struct_0_84792_x5137_x787285086}
+域类型
 
-[[Field type]{lang="EN-US"}]{#struct_0_84792_x5137_x560166074}
+Field length (bytes)
 
-[[域类型]{style="font-family:宋体"}]{#struct_0_84792_x5137_1613421663}
+域长度，单位为字节
 
-[[Field length (bytes)]{lang="EN-US"}]{#struct_0_84792_x5137_x960327677}
+Flows
 
-[[域长度，单位为字节]{style="font-family:宋体"}]{#struct_0_84792_x5137_x327200473}
+聚合流数量
 
-[[Flows]{lang="EN-US"}]{#struct_0_84792_x5137_x787219550}
+Out packets
 
-[[聚合流数量]{style="font-family:宋体"}]{#struct_0_84792_x5137_x2073881593}
+输出的数据包个数
 
-[[Out packets]{lang="EN-US"}]{#struct_0_84792_x5137_x483336689}
+In packets
 
-[[输出的数据包个数]{style="font-family:宋体"}]{#struct_0_84792_x5137_19475911}
+输入的数据包个数
 
-[[In packets]{lang="EN-US"}]{#struct_0_84792_x5137_x787154014}
+Out bytes
 
-[[输入的数据包个数]{style="font-family:宋体"}]{#struct_0_84792_x5137_975574737}
+输出的数据个数，单位为字节
 
-[[Out bytes]{lang="EN-US"}]{#struct_0_84792_x5137_1279988371}
+In bytes
 
-[[输出的数据个数，单位为字节]{style="font-family:宋体"}]{#struct_0_84792_x5137_x375681269}
+输入的数据个数，单位为字节
 
-[[In bytes]{lang="EN-US"}]{#struct_0_84792_x5137_x787088478}
+First forwarded
 
-[[输入的数据个数，单位为字节]{style="font-family:宋体"}]{#struct_0_84792_x5137_1853988652}
+记录转发第一个报文时的系统时间，时间精确到毫秒
 
-[[First forwarded]{lang="EN-US"}]{#struct_0_84792_x5137_x1798125369}
+Last forwarded
 
-[[记录转发第一个报文时的系统时间，时间精确到毫秒]{style="font-family:宋体"}]{#struct_0_84792_x5137_x621759602}
+记录转发最后一个报文时的系统时间，时间精确到毫秒
 
-[[Last forwarded]{lang="EN-US"}]{#struct_0_84792_x5137_x2057692435}
+Source AS
 
-[[记录转发最后一个报文时的系统时间，时间精确到毫秒]{style="font-family:宋体"}]{#struct_0_84792_x5137_x786498654}
+源AS号
 
-[[Source AS]{lang="EN-US"}]{#struct_0_84792_x5137_x1318871018}
+Destination AS
 
-[[源]{style="font-family:宋体"}[AS]{lang="EN-US"}]{#struct_0_84792_x5137_x1473025521}[号]{style="font-family:宋体"}
+目的AS
 
-[[Destination AS]{lang="EN-US"}]{#struct_0_84792_x5137_x786433118}
+Input interface index
 
-[[目的]{style="font-family:宋体"}[AS ]{lang="EN-US"}]{#struct_0_84792_x5137_1773719631}
+输入接口的索引
 
-[[Input interface index]{lang="EN-US"}]{#struct_0_84792_x5137_1911102255}
+Output interface index
 
-[[输入接口的索引]{style="font-family:宋体"}]{#struct_0_84792_x5137_1048058837}
+输出接口的索引
 
-[[Output interface index]{lang="EN-US"}]{#struct_0_84792_x5137_x787022941}
+Direction
 
-[[输出接口的索引]{style="font-family:宋体"}]{#struct_0_84792_x5137_981752523}
+方向字段
 
-[[Direction]{lang="EN-US"}]{#struct_0_84792_x5137_2054520954}
+Sampling algorithm
 
-[[方向字段]{style="font-family:宋体"}]{#struct_0_84792_x5137_x786957405}
+采样算法
 
-[[Sampling algorithm]{lang="EN-US"}]{#struct_0_84792_x5137_x1772707041}
+PAD
 
-[[采样算法]{style="font-family:宋体"}]{#struct_0_84792_x5137_x711142738}
+空白占位符
 
-[[PAD]{lang="EN-US"}]{#struct_0_84792_x5137_x786891869}
+Sampling interval
 
-[[空白占位符]{style="font-family:宋体"}]{#struct_0_84792_x5137_x910968314}
+采样率
 
-[[Sampling interval]{lang="EN-US"}]{#struct_0_84792_x5137_x942311461}
+·交换应用
 
-[[采样率]{style="font-family:宋体"}]{#struct_0_84792_x5137_1409516942}
+\# 使能协议－端口聚合。查看NetStream模板信息。
 
-[ ]{lang="EN-US"}
+\<Sysname\> display ip netstream template
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_84792_x5137_x786826333}
+ Flow template refresh frequency            : 20
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_1758539430}[使能协议－端口聚合。查看]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[模板信息。]{style="font-family:宋体"}
+ Flow template refresh interval             : 30 min
 
-[[\<Sysname\> display ip netstream template]{lang="EN-US"}]{#struct_0_84792_x5137_x787219549}
+ Active flow templates                      : 8
 
-[ Flow template refresh frequency            : 20]{lang="EN-US"}
+ Created flow templates                     : 8
 
-[ Flow template refresh interval             : 30 min]{lang="EN-US"}
+Protocol port outbound template:
 
-[ Active flow templates                      : 8]{lang="EN-US"}
+ Template ID                : 3272
 
-[ Created flow templates                     : 8]{lang="EN-US"}
+ Field count                : 16
 
-[ ]{lang="EN-US"}
+ Field type                   Field length (bytes)
 
-[Protocol port outbound template:]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ Template ID                : 3272]{lang="EN-US"}
+ Flows                        4
 
-[ Field count                : 16]{lang="EN-US"}
+ Out packets                  8
 
-[ Field type                   Field length (bytes)]{lang="EN-US"}
+ Out bytes                    8
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ First forwarded              4
 
-[ Flows                        4]{lang="EN-US"}
+ Last forwarded               4
 
-[ Out packets                  8]{lang="EN-US"}
+ Protocol                     1
 
-[ Out bytes                    8]{lang="EN-US"}
+Direction                    1
 
-[ First forwarded              4]{lang="EN-US"}
+ PAD                          1
 
-[ Last forwarded               4]{lang="EN-US"}
+ PAD                          1
 
-[ Protocol                     1]{lang="EN-US"}
+ L4 source port               2
 
-[ ]{lang="EN-US"}[Direction                    1]{lang="FR"}
+ L4 destination port          2
 
-[ PAD                          1]{lang="FR"}
+ Sampling algorithm           1
 
-[ PAD                          1]{lang="FR"}
+PAD                          1
 
-[ L4 source port               2]{lang="FR"}
+ Sampling interval            4
 
-[ L4 destination port          2]{lang="FR"}
+Protocol-port inbound template:
 
-[ Sampling algorithm           1]{lang="FR"}
+ Template ID                : 3271
 
-[ ]{lang="FR"}[PAD                          1]{lang="SV"}
+ Field count                : 16
 
-[ Sampling interval            4]{lang="SV"}
+ Field type                   Field length (bytes)
 
-[ ]{lang="SV"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[Protocol-port inbound template:]{lang="EN-US"}
+ Flows                        4
 
-[ Template ID                : 3271]{lang="EN-US"}
+ In packets                   8
 
-[ Field count                : 16]{lang="EN-US"}
+ In bytes                     8
 
-[ Field type                   Field length (bytes)]{lang="EN-US"}
+ First forwarded              4
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ Last forwarded               4
 
-[ Flows                        4]{lang="EN-US"}
+ Protocol                     1
 
-[ In packets                   8]{lang="EN-US"}
+Direction                    1
 
-[ In bytes                     8]{lang="EN-US"}
+ PAD                          1
 
-[ First forwarded              4]{lang="EN-US"}
+ L4 source port               2
 
-[ Last forwarded               4]{lang="EN-US"}
+ L4 destination port          2
 
-[ Protocol                     1]{lang="EN-US"}
+ Sampling algorithm           1
 
-[ ]{lang="EN-US"}[Direction                    1]{lang="FR"}
+PAD                          1
 
-[ PAD                          1]{lang="FR"}
+ Sampling interval            4
 
-[ L4 source port               2]{lang="FR"}
+表1-5 display ip netstream template命令显示信息描述表
 
-[ L4 destination port          2]{lang="FR"}
+字段
 
-[ Sampling algorithm           1]{lang="FR"}
+描述
 
-[ ]{lang="FR"}[PAD                          1]{lang="EN-US"}
+Flow template refresh frequency
 
-[ Sampling interval            4]{lang="EN-US"}
+模板的包刷新率
 
-[[表1-5 ]{lang="EN-US"}[display ip netstream template]{lang="EN-US"}]{#struct_0_84792_x5137_x2073422842}[命令显示信息描述表]{style="font-family:黑体"}
+Flow template refresh interval
 
-[]{#table_struct_0_x499612441}[[字段]{style="font-family:黑体"}]{#struct_0_84792_x5137_666823701}
+模板的时间刷新率，单位为分钟
 
-[[描述]{style="font-family:黑体"}]{#struct_0_84792_x5137_1506436672}
+Active flow templates
 
-[[Flow template refresh frequency]{lang="EN-US"}]{#struct_0_84792_x5137_2070285466}
+当前活跃的模板数
 
-[[模板的包刷新率]{style="font-family:宋体"}]{#struct_0_84792_x5137_x1273592305}
+Created flow templates
 
-[[Flow template refresh interval]{lang="EN-US"}]{#struct_0_84792_x5137_x1827054966}
+创建的模板总数
 
-[[模板的时间刷新率，单位为分钟]{style="font-family:宋体"}]{#struct_0_84792_x5137_x787154013}
+根据不同的聚合方式，下面的显示信息会有差异，请以实际配置的聚合方式为准，这里以"协议－端口聚合"聚合方式为例
 
-[[Active flow templates]{lang="EN-US"}]{#struct_0_84792_x5137_975640273}
+Protocol-port outbound template
 
-[[当前活跃的模板数]{style="font-family:宋体"}]{#struct_0_84792_x5137_x1616029439}
+协议－端口聚合出方向模板信息
 
-[[Created flow templates]{lang="EN-US"}]{#struct_0_84792_x5137_x326450818}
+Protocol-port inbound template
 
-[[创建的模板总数]{style="font-family:宋体"}]{#struct_0_84792_x5137_x1904541353}
+协议－端口聚合入方向模板信息
 
-[[根据不同的聚合方式，下面的显示信息会有差异，请以实际配置的聚合方式为准，这里以"协议－端口聚合"聚合方式为例]{style="font-family:宋体"}]{#struct_0_84792_x5137_1792097736}
+Template ID
 
-[[Protocol-port outbound template]{lang="EN-US"}]{#struct_0_84792_x5137_x787088477}
+模板ID
 
-[[协议－端口聚合出方向模板信息]{style="font-family:宋体"}]{#struct_0_84792_x5137_1854447404}
+Field count
 
-[[Protocol-port inbound template]{lang="EN-US"}]{#struct_0_84792_x5137_60421200}
+模板的域总数
 
-[[协议－端口聚合入方向模板信息]{style="font-family:宋体"}]{#struct_0_84792_x5137_x1244908749}
+Field type
 
-[[Template ID]{lang="EN-US"}]{#struct_0_84792_x5137_x1939087989}
+域类型
 
-[[模板]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_84792_x5137_x1795883041}
+Field length (bytes)
 
-[[Field count]{lang="EN-US"}]{#struct_0_84792_x5137_x786498653}
+域长度，单位为字节
 
-[[模板的域总数]{style="font-family:宋体"}]{#struct_0_84792_x5137_x1319329770}
+Flows
 
-[[Field type]{lang="EN-US"}]{#struct_0_84792_x5137_x3553734}
+聚合流数量
 
-[[域类型]{style="font-family:宋体"}]{#struct_0_84792_x5137_x2026654214}
+Out packets
 
-[[Field length (bytes)]{lang="EN-US"}]{#struct_0_84792_x5137_638697446}
+输出的数据包大小
 
-[[域长度，单位为字节]{style="font-family:宋体"}]{#struct_0_84792_x5137_x786433117}
+In packets
 
-[[Flows]{lang="EN-US"}]{#struct_0_84792_x5137_1773523023}
+输入的数据包大小
 
-[[聚合流数量]{style="font-family:宋体"}]{#struct_0_84792_x5137_x1245140736}
+Out bytes
 
-[[Out packets]{lang="EN-US"}]{#struct_0_84792_x5137_1106998903}
+输出的数据大小，单位为字节
 
-[[输出的数据包大小]{style="font-family:宋体"}]{#struct_0_84792_x5137_x787022944}
+In bytes
 
-[[In packets]{lang="EN-US"}]{#struct_0_84792_x5137_981949131}
+输入的数据大小，单位为字节
 
-[[输入的数据包大小]{style="font-family:宋体"}]{#struct_0_84792_x5137_x1223184979}
+First forwarded
 
-[[Out bytes]{lang="EN-US"}]{#struct_0_84792_x5137_x250883242}
+记录转发第一个报文时的系统时间，时间精确到毫秒
 
-[[输出的数据大小，单位为字节]{style="font-family:宋体"}]{#struct_0_84792_x5137_54891832}
+Last forwarded
 
-[[In bytes]{lang="EN-US"}]{#struct_0_84792_x5137_x786957408}
+记录转发最后一个报文时的系统时间，时间精确到毫秒
 
-[[输入的数据大小，单位为字节]{style="font-family:宋体"}]{#struct_0_84792_x5137_x1772903649}
+Protocol
 
-[[First forwarded]{lang="EN-US"}]{#struct_0_84792_x5137_x1615385136}
+协议
 
-[[记录转发第一个报文时的系统时间，时间精确到毫秒]{style="font-family:宋体"}]{#struct_0_84792_x5137_500397045}
+Direction
 
-[[Last forwarded]{lang="EN-US"}]{#struct_0_84792_x5137_x786891872}
+方向
 
-[[记录转发最后一个报文时的系统时间，时间精确到毫秒]{style="font-family:宋体"}]{#struct_0_84792_x5137_x910509561}
+L4 source port
 
-[[Protocol]{lang="EN-US"}]{#struct_0_84792_x5137_245564093}
+TCP/UDP的源端口号
 
-[[协议]{style="font-family:宋体"}]{#struct_0_84792_x5137_x786826336}
+L4 destination port
 
-[[Direction]{lang="EN-US"}]{#struct_0_84792_x5137_1758736038}
+TCP/UDP的目的端口号
 
-[[方向]{style="font-family:宋体"}]{#struct_0_84792_x5137_1753704714}
+Sampling algorithm
 
-[[L4 source port]{lang="EN-US"}]{#struct_0_84792_x5137_620450370}
+采样算法
 
-[[TCP/UDP]{lang="EN-US"}]{#struct_0_84792_x5137_x787285088}[的源端口号]{style="font-family:宋体"}
+PAD
 
-[[L4 destination port]{lang="EN-US"}]{#struct_0_84792_x5137_x560559290}
+空白占位符
 
-[[TCP/UDP]{lang="EN-US"}]{#struct_0_84792_x5137_104919278}[的目的端口号]{style="font-family:宋体"}
+Sampling interval
 
-[[Sampling algorithm]{lang="EN-US"}]{#struct_0_84792_x5137_1468226169}
-
-[[采样算法]{style="font-family:宋体"}]{#struct_0_84792_x5137_x787219552}
-
-[[PAD]{lang="EN-US"}]{#struct_0_84792_x5137_x2074012665}
-
-[[空白占位符]{style="font-family:宋体"}]{#struct_0_84792_x5137_1180170984}
-
-[[Sampling interval]{lang="EN-US"}]{#struct_0_84792_x5137_x787154016}
-
-[[采样率]{style="font-family:宋体"}]{#struct_0_84792_x5137_975443665}
-
-[ ]{lang="EN-US"}
-
-::: {#-366434638 .myid}
-[]{#_Toc404797266}[]{#struct_0_84792_x5137_1270711951}[]{#_Toc250995603}[]{#_Toc157337215}[]{#_Toc157413423}[]{#_Toc157417829}[]{#_Toc157417867}[]{#_Toc158434519}
+采样率
 
 **NetStream \-- NetStream配置命令 \-- enable**
 
 ------------------------------------------------------------------------
 
-[**[enable]{lang="EN-US"}**]{#struct_0_84792_x5137_2142224400}[命令用来开启当前聚合视图对应的聚合功能。]{style="font-family:宋体"}
+**[enable**]命令用来开启当前聚合视图对应的聚合功能。
 
-[**[undo enable]{lang="EN-US"}**]{#struct_0_84792_x5137_156918951}[命令用来关闭当前聚合视图对应的聚合功能。]{style="font-family:宋体"}
+**[undo enable**]命令用来关闭当前聚合视图对应的聚合功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x453368978}[]{#_Toc157337216}[]{#_Toc157413424}[]{#_Toc157417830}[]{#_Toc157417868}[]{#_Toc158434520}
+【命令】
 
-[**[enable]{lang="EN-US"}**]{#struct_0_84792_x5137_x787088480}[]{#_Toc157337217}[]{#_Toc157413425}[]{#_Toc157417831}[]{#_Toc157417869}[]{#_Toc158434521}
+**[enable**]
 
-[**[undo]{lang="EN-US"}***[ ]{lang="EN-US"}***[enable]{lang="EN-US"}**]{#struct_0_84792_x5137_1854512933}[]{#_Toc157337218}[]{#_Toc157413426}[]{#_Toc157417832}[]{#_Toc157417870}[]{#_Toc158434522}
+**[undo******enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_84792_x5137_877935415}
+【缺省情况】
 
-[[未开启任何]{style="font-family:宋体"}[NetStream]{lang="EN-US"}]{#struct_0_84792_x5137_1431970145}[聚合功能。]{style="font-family:宋体"}
+未开启任何NetStream聚合功能。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x786498656}[]{#_Toc157337219}[]{#_Toc157413427}[]{#_Toc157417833}[]{#_Toc157417871}[]{#_Toc158434523}
+【视图】
 
-[[NetStream]{lang="EN-US"}]{#struct_0_84792_x5137_x1319002090}[聚合视图]{style="font-family:宋体"}[]{#_Toc157337220}[]{#_Toc157413428}[]{#_Toc157417834}[]{#_Toc157417872}[]{#_Toc158434524}
+NetStream聚合视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1192511927}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_84792_x5137_x1976866953}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_84792_x5137_x845378581}[]{#_Toc157337221}[]{#_Toc157413429}[]{#_Toc157417835}[]{#_Toc157417873}[]{#_Toc158434525}[]{#_Toc157337222}[]{#_Toc157413430}[]{#_Toc157417836}[]{#_Toc157417874}[]{#_Toc158434526}
+mdc-admin
 
-[]{#struct_0_84792_x5137_x517294643}[]{#_Toc157337229}[]{#_Toc157413437}[]{#_Toc157417843}[]{#_Toc157417881}[]{#_Toc158434533}[【举例】]{style="font-family:
-黑体"}[]{#_Toc157337230}[]{#_Toc157413438}[]{#_Toc157417844}[]{#_Toc157417882}[]{#_Toc158434534}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_x1287281566}[开启]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[的自治系统聚合功能。]{style="font-family:宋体"}[]{#_Toc157337231}[]{#_Toc157413439}[]{#_Toc157417845}[]{#_Toc157417883}[]{#_Toc158434535}
+\# 开启NetStream的自治系统聚合功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_84792_x5137_x786433120}[]{#_Toc157337232}[]{#_Toc157413440}[]{#_Toc157417846}[]{#_Toc157417884}[]{#_Toc158434536}
+\<Sysname\> system-view
 
-[\[Sysname\] ip netstream aggregation as[]{#_Toc157337233}[]{#_Toc157413441}[]{#_Toc157417847}[]{#_Toc157417885}[]{#_Toc158434537}]{lang="EN-US"}
+Sysname ip netstream aggregation as
 
-[\[Sysname-ns-aggregation-as\] enable]{lang="EN-US"}[]{#_Toc157337234}[]{#_Toc157413442}[]{#_Toc157417848}[]{#_Toc157417886}[]{#_Toc158434538}
+Sysname-ns-aggregation-as enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1773195344}
+【相关命令】
 
-[]{#_Toc250995605}[]{#_Toc55050573}[]{#_Toc28576979}[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ip netstream aggregation]{lang="EN-US"}**]{#struct_0_84792_x5137_1507234492}
-:::
-
-::::::: {#1941388863 .myid}
-[]{#_Toc404797267}[]{#struct_0_84792_x5137_2105407120}
+·**ip netstream aggregation**
 
 **NetStream \-- NetStream配置命令 \-- ip netstream**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](NetStream命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_84792_x5137_2117367232}
-:::
+![说明](NetStream命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的视图支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_84792_x5137_183463069}
-:::
+本命令的视图支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[ip netstream]{lang="EN-US"}**]{#struct_0_84792_x5137_1890522336}[命令用来在全局或当前接口开启]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[ip netstream**]命令用来在全局或当前接口开启NetStream功能。
 
-[**[undo ip netstream]{lang="EN-US"}**]{#struct_0_84792_x5137_302804691}[命令用来在全局或当前接口关闭]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo ip netstream**]命令用来在全局或当前接口关闭NetStream功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1027915225}
+【命令】
 
-[[系统视图：]{style="font-family:宋体"}]{#struct_0_84792_x5137_x787022943}
+系统视图：
 
-[**[ip netstream]{lang="EN-US"}**]{#struct_0_84792_x5137_981621451}
+**[ip netstream**]
 
-[**[undo ip netstream]{lang="EN-US"}**]{#struct_0_84792_x5137_x1098386086}
+**[undo ip netstream**]
 
-[[接口视图：]{style="font-family:宋体"}]{#struct_0_84792_x5137_991819193}
+接口视图：
 
-[**[ip netstream]{lang="EN-US"}**[ { **inbound** \| **outbound** }]{lang="EN-US"}]{#struct_0_84792_x5137_x691949966}
+**[ip netstream**[ { **inbound** \| **outbound** }]]
 
-[**[undo ip netstream]{lang="EN-US"}**[ { **inbound** \| **outbound** }]{lang="EN-US"}]{#struct_0_84792_x5137_1019415828}
+**[undo ip netstream**[ { **inbound** \| **outbound** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x786957407}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_84792_x5137_x1772838113}[接口视图]{style="font-family:宋体"}
+系统视图/接口视图
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![](NetStream命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_84792_x5137_1716089069}
-:::
+!(NetStream命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[不同型号的设备支持的视图不同，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_84792_x5137_x1431947929}
-:::
+不同型号的设备支持的视图不同，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x17104536}
+全局和接口NetStream功能处于关闭状态。
 
-[[全局和接口]{style="font-family:宋体"}[NetStream]{lang="EN-US"}]{#struct_0_84792_x5137_x1885642902}[功能处于关闭状态。]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_84792_x5137_722703079}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_84792_x5137_1429477985}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_84792_x5137_1831583433}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x558003950}
+**[inbound**]：对入方向的流量进行NetStream统计。
 
-[**[inbound]{lang="EN-US"}**]{#struct_0_84792_x5137_1076335568}[：对入方向的流量进行]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[统计。]{style="font-family:宋体"}
+**[outbound**]：对出方向的流量进行NetStream统计。
 
-[**[outbound]{lang="EN-US"}**]{#struct_0_84792_x5137_x786891871}[：对出方向的流量进行]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[统计。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x910444025}
+全局开启NetStream功能后，将开启所有接口入方向及出方向的NetStream功能。
 
-[[全局开启]{style="font-family:宋体"}[NetStream]{lang="EN-US"}]{#struct_0_84792_x5137_x931945205}[功能后，将开启所有接口入方向及出方向的]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1161927665}
+\# 全局开启NetStream功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_1716154605}[全局开启]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_84792_x5137_88266609}
+Sysname ip netstream
 
-[\[Sysname\] ip netstream]{lang="EN-US"}
+\# 在GigabitEthernet1/0/1接口的入方向上开启NetStream功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_725910244}[在]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[接口的入方向上开启]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_84792_x5137_305930802}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
-
-[\[Sysname-GigabitEthernet1/0/1\] ip netstream inbound]{lang="EN-US"}
-:::::::
-
-::::: {#-1190816823 .myid}
-[]{#_Toc404797268}[]{#struct_0_84792_x5137_x1050454280}[]{#_Toc250995614}[]{#_Toc142468160}[]{#_Toc143941786}[]{#_Toc144007555}[]{#_Toc142468163}[]{#_Toc143941789}[]{#_Toc144007558}
+Sysname-GigabitEthernet1/0/1 ip netstream inbound
 
 **NetStream \-- NetStream配置命令 \-- ip netstream { inbound \| outbound } filter**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](NetStream命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_84792_x5137_249323763}
-:::
+![说明](NetStream命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_84792_x5137_x1404977020}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[ip netstream filter]{lang="EN-US"}**]{#struct_0_84792_x5137_x1927955752}[命令用来配置]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[过滤功能，根据指定]{style="font-family:宋体"}[ACL]{lang="EN-US"}[规则对报文进行过滤。]{style="font-family:宋体"}
+**[ip netstream filter**]命令用来配置NetStream过滤功能，根据指定ACL规则对报文进行过滤。
 
-[**[undo]{lang="EN-US"}**[ **ip netstream filter**]{lang="EN-US"}]{#struct_0_84792_x5137_x545624833}[命令用来取消已有配置。]{style="font-family:宋体"}
+**[undo** **ip netstream filter**]命令用来取消已有配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_158744354}
+【命令】
 
-[**[ip netstream ]{lang="EN-US"}**[{ **inbound** \| **outbound** } **filter acl** *acl-number*]{lang="EN-US"}]{#struct_0_84792_x5137_1569129038}
+**[ip netstream **[{ **inbound** \| **outbound** } **filter acl** *acl-number*]]
 
-[**[undo ip netstream]{lang="EN-US"}**[ { **inbound** \| **outbound** } **filter**]{lang="EN-US"}]{#struct_0_84792_x5137_x1620761744}
+**[undo ip netstream**[ { **inbound** \| **outbound** } **filter**]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_84792_x5137_779650826}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[NetStream]{lang="EN-US"}]{#struct_0_84792_x5137_x793929275}[过滤功能，此时统计所有]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+未配置NetStream过滤功能，此时统计所有IPv4报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_84792_x5137_255069459}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_84792_x5137_x1075624356}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1453123102}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_84792_x5137_x1499723398}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_84792_x5137_2059555141}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x729493072}
+【参数】
 
-[**[inbound]{lang="EN-US"}**]{#struct_0_84792_x5137_779060999}[：入方向过滤，即对从当前接口收到的报文进行过滤统计。]{style="font-family:宋体"}
+**[inbound**]：入方向过滤，即对从当前接口收到的报文进行过滤统计。
 
-[**[outbound]{lang="EN-US"}**]{#struct_0_84792_x5137_395781254}[：出方向过滤，即对从当前接口发出的报文进行过滤统计。]{style="font-family:宋体"}
+**[outbound**]：出方向过滤，即对从当前接口发出的报文进行过滤统计。
 
-[**[acl]{lang="EN-US"}***[ acl-number]{lang="EN-US"}*]{#struct_0_84792_x5137_530570998}[：]{style="font-family:宋体"}[ACL]{lang="EN-US"}[规则号，基本]{style="font-family:宋体"}[ACL]{lang="EN-US"}[取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[2999]{lang="EN-US"}[，高级]{style="font-family:宋体"}[ACL]{lang="EN-US"}[取值范围为]{style="font-family:宋体"}[3000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[acl*** acl-number*]：ACL规则号，基本ACL取值范围为2000～2999，高级ACL取值范围为3000～3999。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_84792_x5137_2096706029}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_983315781}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置根据]{style="font-family:宋体"}[ACL 2003]{lang="EN-US"}[规则进行出方向过滤。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置根据ACL 2003规则进行出方向过滤。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_84792_x5137_894031156}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ip netstream outbound]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 ip netstream outbound
 
-[\[Sysname-GigabitEthernet1/0/1\] ip netstream outbound filter acl 2003]{lang="EN-US"}
-:::::
-
-::::: {#396119178 .myid}
-[]{#_Toc404797269}
+Sysname-GigabitEthernet1/0/1 ip netstream outbound filter acl 2003
 
 **NetStream \-- NetStream配置命令 \-- ip netstream { inbound \| outbound } mirror-to**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[![](NetStream命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}
-:::
+!(NetStream命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**ip**[ **netstream** { **inbound** \| **outbound** } **mirror**-**to**]命令用来将端口流量镜像到业务板。（分布式设备－独立运行模式/分布式设备－IRF模式）
 
-**[ip]{lang="EN-US"}**[ **netstream** { **inbound** \| **outbound** } **mirror**-**to**]{lang="EN-US"}[命令用来将端口流量镜像到业务板。（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**ip**[ **netstream** { **inbound** \| **outbound** } **mirror**-**to**]命令用来将端口流量镜像到业务设备。（集中式IRF设备）
 
-**[ip]{lang="EN-US"}**[ **netstream** { **inbound** \| **outbound** } **mirror**-**to**]{lang="EN-US"}[命令用来将端口流量镜像到业务设备。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**undo ip netstream **[{ **inbound** \| **outbound** } **mirror-to**]命令用来恢复缺省情况。
 
-**[undo ip netstream ]{lang="EN-US"}**[{ **inbound** \| **outbound** } **mirror-to**]{lang="EN-US"}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+【命令】
 
-[【命令】]{style="font-family:黑体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+**ip netstream **[{ inbound \| outbound } **mirror-to service slot** *slot-number* [ **backup slot** *slot-number* ]]
 
-**[ip netstream ]{lang="EN-US"}**[{ inbound \| outbound } **mirror-to service slot** *slot-number* \[ **backup slot** *slot-number* \]]{lang="EN-US"}
+**undo ip netstream **[{ inbound \| outbound } **mirror-to**]
 
-**[undo ip netstream ]{lang="EN-US"}**[{ inbound \| outbound } **mirror-to**]{lang="EN-US"}
+分布式设备－IRF模式：
 
-[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式：]{style="font-family:宋体"}
+**ip netstream**[ { **inbound** \| **outbound** } **mirror-to service chassis** *chassis-number* **slot** *slot-number* [ **backup chassis** *chassis-number* **slot** *slot-number* ]]
 
-**[ip netstream]{lang="EN-US"}**[ { **inbound** \| **outbound** } **mirror-to service chassis** *chassis-number* **slot** *slot-number* \[ **backup chassis** *chassis-number* **slot** *slot-number* \]]{lang="EN-US"}
+**undo ip netstream**[ { **inbound** \| **outbound** } **mirror-to**]
 
-**[undo ip netstream]{lang="EN-US"}**[ { **inbound** \| **outbound** } **mirror-to**]{lang="EN-US"}
+【缺省情况】
 
-[【缺省情况】]{style="font-family:黑体"}
+不对端口流量进行镜像。
 
-[不对端口流量进行镜像。]{style="font-family:宋体"}
+【视图】
 
-[【视图】]{style="font-family:黑体"}
+接口视图
 
-[接口视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[【缺省用户角色】]{style="font-family:黑体"}
+network-admin
 
-[network-admin]{lang="EN-US"}
+mdc-admin
 
-[mdc-admin]{lang="EN-US"}
+【参数】
 
-[【参数】]{style="font-family:黑体"}
+**inbound**：对接口的入方向流量进行镜像。
 
-**[inbound]{lang="EN-US"}**[：对接口的入方向流量进行镜像。]{style="font-family:宋体"}
+**outbound**：对接口的出方向流量进行镜像。
 
-**[outbound]{lang="EN-US"}**[：对接口的出方向流量进行镜像。]{style="font-family:宋体"}
+**service slot** *slot-number*：指定主用业务板所在的槽位号。*slot-number*表示业务板所在的槽位号。（分布式设备－独立运行模式）
 
-**[service slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}[：指定主用业务板所在的槽位号。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示业务板所在的槽位号。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**service slot** *slot-number*：指定主用业务设备在IRF中的成员编号。*slot-number*表示设备在IRF中的成员编号。（集中式IRF设备）
 
-**[service slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}[：指定主用业务设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**service chassis** *chassis-number* **slot** *slot-number*：指定成员设备上的指定业务板作为主用业务板。*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示业务板所在的槽位号。（分布式设备－IRF模式）
 
-**[service chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}[：指定成员设备上的指定业务板作为主用业务板。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示业务板所在的槽位号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**backup slot** *slot-number*：指定备用业务板所在的槽位号。若未指定该参数，表示未配置备用业务板。（分布式设备－独立运行模式）
 
-**[backup slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}[：指定备用业务板所在的槽位号。若未指定该参数，表示未配置备用业务板。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**backup slot** *slot-number*：指定备用业务设备在IRF中的成员编号。*slot-number*表示设备在IRF中的成员编号。若未指定该参数，表示未配置备用业务设备。（集中式IRF设备）
 
-**[backup slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}[：指定备用业务设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。若未指定该参数，表示未配置备用业务设备。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**backup chassis** *chassis-number* **slot** *slot-number*：指定成员设备上的指定业务板作为备用业务板。*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示业务板所在的槽位号。（分布式设备－IRF模式）
 
-**[backup chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}[：指定成员设备上的指定业务板作为备用业务板。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示业务板所在的槽位号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+【使用指导】
 
-[【使用指导】]{style="font-family:黑体"}
+只有当主用业务板出现故障时，流量才可以被镜像到备用业务板。主用业务板恢复，备用业务板恢复为备份身份，流量镜像到主用业务板。（分布式设备－独立运行模式/分布式设备－IRF模式）
 
-[只有当主用业务板出现故障时，流量才可以被镜像到备用业务板。主用业务板恢复，备用业务板恢复为备份身份，流量镜像到主用业务板。（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+只有当主用业务设备出现故障时，流量才可以被镜像到备用业务设备。主用业务设备恢复，备用业务设备恢复为备份身份，流量镜像到主用业务设备。（集中式IRF设备）
 
-[只有当主用业务设备出现故障时，流量才可以被镜像到备用业务设备。主用业务设备恢复，备用业务设备恢复为备份身份，流量镜像到主用业务设备。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+【举例】
 
-[【举例】]{style="font-family:黑体"}
+\# 在接口GigabitEthernet 1/0/1上配置入方向流量镜像，将流量镜像到3号槽的业务板。
 
-[\# ]{lang="EN-US"}[在接口]{style="font-family:宋体"}[GigabitEthernet 1/0/1]{lang="EN-US"}[上配置入方向流量镜像，将流量镜像到]{style="font-family:宋体"}[3]{lang="EN-US"}[号槽的业务板。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[\<Sysname\> system-view]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
-
-[\[Sysname-GigabitEthernet1/0/1\] ip netstream inbound mirror-to service slot 3]{lang="EN-US"}
-:::::
-
-::: {#-121622093 .myid}
-[]{#_Toc404797270}[]{#struct_0_84792_x5137_x180318750}[]{#_Toc250995618}
+Sysname-GigabitEthernet1/0/1 ip netstream inbound mirror-to service slot 3
 
 **NetStream \-- NetStream配置命令 \-- ip netstream { inbound \| outbound } sampler**
 
 ------------------------------------------------------------------------
 
-[**[ip netstream sampler]{lang="EN-US"}**]{#struct_0_84792_x5137_x1666932810}[命令用来启用]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[采样功能。]{style="font-family:宋体"}
+**[ip netstream sampler**]命令用来启用NetStream采样功能。
 
-[**[undo ip netstream sampler]{lang="EN-US"}**]{#struct_0_84792_x5137_x1252164021}[命令用来禁用]{style="font-family:
-宋体"}[NetStream]{lang="EN-US"}[采样功能。]{style="font-family:
-宋体"}
+**[undo ip netstream sampler**]命令用来禁用NetStream采样功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_391611879}
+【命令】
 
-[**[ip netstream]{lang="EN-US"}**[ { **inbound** \| **outbound** } **sampler** *sampler-name*]{lang="EN-US"}]{#struct_0_84792_x5137_1395433813}
+**[ip netstream**[ { **inbound** \| **outbound** } **sampler** *sampler-name*]]
 
-[**[undo ip netstream]{lang="EN-US"}**[ { **inbound** \| **outbound** } **sampler**]{lang="EN-US"}]{#struct_0_84792_x5137_x1151862185}
+**[undo ip netstream**[ { **inbound** \| **outbound** } **sampler**]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_84792_x5137_779585287}
+【缺省情况】
 
-[[未启用]{style="font-family:宋体"}[NetStream]{lang="EN-US"}]{#struct_0_84792_x5137_1288197883}[采样功能。]{style="font-family:宋体"}
+未启用NetStream采样功能。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_84792_x5137_79156508}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_84792_x5137_154793116}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_84792_x5137_371242831}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_84792_x5137_x836918785}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_84792_x5137_1328056280}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1321710942}
+【参数】
 
-[**[inbound]{lang="EN-US"}**]{#struct_0_84792_x5137_779650823}[：对入方向的报文进行采样。]{style="font-family:宋体"}
+**[inbound**]：对入方向的报文进行采样。
 
-[**[outbound]{lang="EN-US"}**]{#struct_0_84792_x5137_x793929272}[：对出方向的报文进行采样。]{style="font-family:宋体"}
+**[outbound**]：对出方向的报文进行采样。
 
-[**[sampler ]{lang="EN-US"}***[sampler-name]{lang="EN-US"}*]{#struct_0_84792_x5137_886801358}[：采样器名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+**[sampler ***sampler-name*]：采样器名称，为1～31个字符的字符串，不区分大小写。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_84792_x5137_254610707}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_x1564676121}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上启用]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[采样功能，使用名为]{style="font-family:宋体"}[abc]{lang="EN-US"}[的采样器对入方向的报文进行采样，]{style="font-family:宋体"}[Netstream]{lang="EN-US"}[根据采样结果进行报文统计。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上启用NetStream采样功能，使用名为abc的采样器对入方向的报文进行采样，Netstream根据采样结果进行报文统计。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_84792_x5137_x1114792782}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ip netstream inbound]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 ip netstream inbound
 
-[\[Sysname-GigabitEthernet1/0/1\] ip netstream inbound sampler abc]{lang="EN-US"}
-:::
-
-::::: {#-785124074 .myid}
-[]{#_Toc404797271}[]{#struct_0_84792_x5137_x786826335}[]{#_Toc250995606}[]{#_Toc55050574}[]{#_Toc28576980}[]{#_Toc345334432}
+Sysname-GigabitEthernet1/0/1 ip netstream inbound sampler abc
 
 **NetStream \-- NetStream配置命令 \-- ip netstream aggregation**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](NetStream命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_84792_x5137_1758932646}
-:::
+![说明](NetStream命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令中各参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_84792_x5137_x1362806089}
-:::
+本命令中各参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[ip netstream aggregation]{lang="EN-US"}**]{#struct_0_84792_x5137_x1462628246}[命令用来设置]{style="font-family:
-宋体"}[NetStream]{lang="EN-US"}[流聚合方式，并进入相应的]{style="font-family:
-宋体"}[NetStream]{lang="EN-US"}[聚合视图。]{style="font-family:
-宋体"}
+**[ip netstream aggregation**]命令用来设置NetStream流聚合方式，并进入相应的NetStream聚合视图。
 
-[**[undo ip netstream aggregation]{lang="EN-US"}**]{#struct_0_84792_x5137_x2117411934}[命令用来关闭]{style="font-family:
-宋体"}[NetStream]{lang="EN-US"}[流聚合方式，并删除流聚合方式相应的配置。]{style="font-family:
-宋体"}
+**[undo ip netstream aggregation**]命令用来关闭NetStream流聚合方式，并删除流聚合方式相应的配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_660272051}
+【命令】
 
-[**[ip netstream aggregation]{lang="EN-US"}**[ { **as** \| **destination-prefix** \| **prefix** \| **prefix-port** \| **protocol-port** \| **source-prefix** \| **tos-as** \| **tos-bgp-nexthop** \| **tos-destination-prefix** \| **tos-prefix** \| **tos-protocol-port** \| **tos-source-prefix** }]{lang="EN-US"}]{#struct_0_84792_x5137_869270878}
+**[ip netstream aggregation**[ { **as** \| **destination-prefix** \| **prefix** \| **prefix-port** \| **protocol-port** \| **source-prefix** \| **tos-as** \| **tos-bgp-nexthop** \| **tos-destination-prefix** \| **tos-prefix** \| **tos-protocol-port** \| **tos-source-prefix** }]]
 
-[**[undo ip netstream aggregation]{lang="EN-US"}**[ { **as** \| **destination-prefix** \| **prefix** \| **prefix-port** \| **protocol-port** \| **source-prefix** \| **tos-as** \| **tos-bgp-nexthop** \| **tos-destination-prefix** \| **tos-prefix** \| **tos-protocol-port** \| **tos-source-prefix** }]{lang="EN-US"}]{#struct_0_84792_x5137_454282578}
+**[undo ip netstream aggregation**[ { **as** \| **destination-prefix** \| **prefix** \| **prefix-port** \| **protocol-port** \| **source-prefix** \| **tos-as** \| **tos-bgp-nexthop** \| **tos-destination-prefix** \| **tos-prefix** \| **tos-protocol-port** \| **tos-source-prefix** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1023201169}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_84792_x5137_x787285087}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x560100538}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_84792_x5137_x313188159}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_84792_x5137_x541362449}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1558652882}
+【参数】
 
-[**[as]{lang="EN-US"}**]{#struct_0_84792_x5137_1469004704}[：自治系统聚合，根据]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[流的源自治系统号、目的自治系统号、输入接口索引和输出接口索引]{style="font-family:宋体"}[4]{lang="EN-US"}[个关键项对流分类，本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[as**]：自治系统聚合，根据NetStream流的源自治系统号、目的自治系统号、输入接口索引和输出接口索引4个关键项对流分类，本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[destination-prefix]{lang="EN-US"}**]{#struct_0_84792_x5137_111879736}[：目的前缀聚合，根据]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[流的目的自治系统号、目的掩码长度、目的前缀和输出接口索引]{style="font-family:宋体"}[4]{lang="EN-US"}[个关键项对流分类，本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[destination-prefix**]：目的前缀聚合，根据NetStream流的目的自治系统号、目的掩码长度、目的前缀和输出接口索引4个关键项对流分类，本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[prefix]{lang="EN-US"}**]{#struct_0_84792_x5137_x1977190043}[：源和目的前缀聚合，根据]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[流的源自治系统号、目的自治系统号、源掩码长度、目的掩码长度，源前缀、目的前缀、输入接口索引和输出接口索引]{style="font-family:宋体"}[8]{lang="EN-US"}[个关键项对流分类，本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[prefix**]：源和目的前缀聚合，根据NetStream流的源自治系统号、目的自治系统号、源掩码长度、目的掩码长度，源前缀、目的前缀、输入接口索引和输出接口索引8个关键项对流分类，本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[prefix-port]{lang="EN-US"}**]{#struct_0_84792_x5137_1622194022}[：前缀端口聚合，根据]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[流的源前缀、目的前缀、源掩码长度、目的掩码长度、]{style="font-family:宋体"}[ToS]{lang="EN-US"}[、协议号、源端口、目的端口、输入接口索引、输出接口索引]{style="font-family:宋体"}[10]{lang="EN-US"}[个关键项对流分类，本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[prefix-port**]：前缀端口聚合，根据NetStream流的源前缀、目的前缀、源掩码长度、目的掩码长度、ToS、协议号、源端口、目的端口、输入接口索引、输出接口索引10个关键项对流分类，本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[protocol-port]{lang="EN-US"}**]{#struct_0_84792_x5137_x787219551}[：协议－端口聚合，根据]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[流的协议号、源端口和目的端口]{style="font-family:宋体"}[3]{lang="EN-US"}[个关键项对流分类，本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[protocol-port**]：协议－端口聚合，根据NetStream流的协议号、源端口和目的端口3个关键项对流分类，本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[source-prefix]{lang="EN-US"}**]{#struct_0_84792_x5137_x2073947129}[：源前缀聚合，根据]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[流的源自治系统号、源掩码长度、源前缀和输入接口索引]{style="font-family:宋体"}[4]{lang="EN-US"}[个关键项对流分类，本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[source-prefix**]：源前缀聚合，根据NetStream流的源自治系统号、源掩码长度、源前缀和输入接口索引4个关键项对流分类，本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[tos-as]{lang="EN-US"}**]{#struct_0_84792_x5137_1688601213}[：服务类型－自治系统聚合，根据]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[流的]{style="font-family:宋体"}[ToS]{lang="EN-US"}[、源自治系统号、目的自治系统号、输入接口索引和输出接口索引]{style="font-family:宋体"}[5]{lang="EN-US"}[个关键项对流分类，本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[tos-as**]：服务类型－自治系统聚合，根据NetStream流的ToS、源自治系统号、目的自治系统号、输入接口索引和输出接口索引5个关键项对流分类，本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[tos-bgp-nexthop]{lang="EN-US"}**]{#struct_0_84792_x5137_1033628619}[：服务类型]{style="font-family:宋体"}[-BGP]{lang="EN-US"}[下一跳聚合，根据]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[流的服务类型、]{style="font-family:宋体"}[BGP]{lang="EN-US"}[下一跳]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址、输出接口索引]{style="font-family:宋体"}[3]{lang="EN-US"}[个关键项对流分类。服务类型]{style="font-family:宋体"}[-BGP]{lang="EN-US"}[下一跳聚合只在]{style="font-family:宋体"}[V9]{lang="EN-US"}[模板下生效，本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[tos-bgp-nexthop**]：服务类型-BGP下一跳聚合，根据NetStream流的服务类型、BGP下一跳IP地址、输出接口索引3个关键项对流分类。服务类型-BGP下一跳聚合只在V9模板下生效，本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[tos-destination-prefix]{lang="EN-US"}**]{#struct_0_84792_x5137_x2033337936}[：服务类型－目的前缀聚合，根据]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[流的]{style="font-family:宋体"}[ToS]{lang="EN-US"}[、目的自治系统号、目的掩码长度、目的前缀和输出接口索引]{style="font-family:宋体"}[5]{lang="EN-US"}[个关键项对流分类，本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[tos-destination-prefix**]：服务类型－目的前缀聚合，根据NetStream流的ToS、目的自治系统号、目的掩码长度、目的前缀和输出接口索引5个关键项对流分类，本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[tos-prefix]{lang="EN-US"}**]{#struct_0_84792_x5137_1732105162}[：服务类型－前缀聚合，根据]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[流的]{style="font-family:宋体"}[ToS]{lang="EN-US"}[、源自治系统号、源前缀、源掩码长度、目的自治系统号、目的掩码长度、目的前缀、输入接口索引和输出接口索引]{style="font-family:宋体"}[9]{lang="EN-US"}[个关键项对流分类，本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[tos-prefix**]：服务类型－前缀聚合，根据NetStream流的ToS、源自治系统号、源前缀、源掩码长度、目的自治系统号、目的掩码长度、目的前缀、输入接口索引和输出接口索引9个关键项对流分类，本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[tos-protocol-port]{lang="EN-US"}**]{#struct_0_84792_x5137_1685245434}[：服务类型－协议－端口聚合，根据]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[流的]{style="font-family:宋体"}[ToS]{lang="EN-US"}[、协议号、源端口、目的端口、输入接口索引和输出接口索引]{style="font-family:宋体"}[6]{lang="EN-US"}[个关键项对流分类，本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[tos-protocol-port**]：服务类型－协议－端口聚合，根据NetStream流的ToS、协议号、源端口、目的端口、输入接口索引和输出接口索引6个关键项对流分类，本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[tos-source-prefix]{lang="EN-US"}**]{#struct_0_84792_x5137_138264249}[：服务类型－源前缀聚合，根据]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[流的]{style="font-family:宋体"}[ToS]{lang="EN-US"}[、源自治系统号、源前缀、源掩码长度和输入接口索引]{style="font-family:宋体"}[5]{lang="EN-US"}[个关键项对流分类，本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[tos-source-prefix**]：服务类型－源前缀聚合，根据NetStream流的ToS、源自治系统号、源前缀、源掩码长度和输入接口索引5个关键项对流分类，本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x787154015}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在聚合视图下，可以启用或关闭聚合功能，以及设置]{style="font-family:宋体"}]{#struct_0_84792_x5137_x787088479}[NetStream]{lang="EN-US"}[统计输出报文源接口、目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址以及目的端口号。]{style="font-family:宋体"}
+·在聚合视图下，可以启用或关闭聚合功能，以及设置NetStream统计输出报文源接口、目的IP地址以及目的端口号。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果一条流同时满足多个聚合方式，则该流会被统计到多个聚合流中。]{style="font-family:宋体"}]{#struct_0_84792_x5137_1854054188}
+·如果一条流同时满足多个聚合方式，则该流会被统计到多个聚合流中。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1236161181}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_742170713}[设置]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[流聚合方式为自治系统聚合，并进入]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[自治系统聚合视图。]{style="font-family:宋体"}
+\# 设置NetStream流聚合方式为自治系统聚合，并进入NetStream自治系统聚合视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_84792_x5137_x1104960263}
+\<Sysname\> system-view
 
-[\[Sysname\] ip netstream aggregation as]{lang="EN-US"}
+Sysname ip netstream aggregation as
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1008790281}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[enable]{lang="EN-US"}**]{#struct_0_84792_x5137_x377847225}
-:::::
-
-::::: {#-1961236626 .myid}
-[]{#_Toc404797272}[]{#struct_0_84792_x5137_x786498655}
+·**enable**
 
 **NetStream \-- NetStream配置命令 \-- ip netstream aggregation advanced**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](NetStream命令.files/image001.png){#图片 1 width="62" height="25"}]{lang="EN-US"}]{#struct_0_84792_x5137_x1318936554}
-:::
+![说明](NetStream命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_84792_x5137_59357066}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[ip netstream aggregation advanced]{lang="EN-US"}**]{#struct_0_84792_x5137_1386355627}[命令用来使能硬件流聚合功能。]{style="font-family:宋体"}
+**[ip netstream aggregation advanced**]命令用来使能硬件流聚合功能。
 
-[**[undo ip netstream aggregation advanced]{lang="EN-US"}**]{#struct_0_84792_x5137_73514654}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ip netstream aggregation advanced**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x959328893}
+【命令】
 
-[**[ip netstream aggregation advanced]{lang="EN-US"}**]{#struct_0_84792_x5137_260085513}
+**[ip netstream aggregation advanced**]
 
-[**[undo ip netstream aggregation advanced]{lang="EN-US"}**]{#struct_0_84792_x5137_2132172036}
+**[undo ip netstream aggregation advanced**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x786433119}
+【缺省情况】
 
-[[NetStream]{lang="EN-US"}]{#struct_0_84792_x5137_1773654095}[硬件流聚合功能处于关闭状态。]{style="font-family:宋体"}
+NetStream硬件流聚合功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1657272519}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_84792_x5137_x1435682070}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1924052440}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_84792_x5137_1916411162}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_84792_x5137_1459458052}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1838167712}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[使能硬件流聚合功能时，系统根据]{style="font-family:宋体"}]{#struct_0_84792_x5137_1047544956}[NetStream]{lang="EN-US"}[统计功能是否配置了统计信息输出的目的地址以及配置的聚合类型来决定是否进行硬件聚合。如果在系统视图下配置了统计信息输出的目的地址或硬件聚合不支持配置的聚合类型，则硬件聚合配置不生效。]{style="font-family:宋体"}
+·使能硬件流聚合功能时，系统根据NetStream统计功能是否配置了统计信息输出的目的地址以及配置的聚合类型来决定是否进行硬件聚合。如果在系统视图下配置了统计信息输出的目的地址或硬件聚合不支持配置的聚合类型，则硬件聚合配置不生效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[使能硬件流聚合功能以后，硬件聚合流表项添加到普通流表项记录中，并进行表项的输出。]{style="font-family:宋体"}]{#struct_0_84792_x5137_779061001}
+·使能硬件流聚合功能以后，硬件聚合流表项添加到普通流表项记录中，并进行表项的输出。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1625539071}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_x532251166}[使能硬件流聚合功能。]{style="font-family:宋体"}
+\# 使能硬件流聚合功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_84792_x5137_x138842801}
+\<Sysname\> system-view
 
-[\[Sysname\] ip netstream aggregation advanced]{lang="EN-US"}
+Sysname ip netstream aggregation advanced
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_56413261}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ip netstream aggregation]{lang="EN-US"}**]{#struct_0_84792_x5137_2021488630}
+·**ip netstream aggregation**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ip netstream export host]{lang="EN-US"}**]{#struct_0_84792_x5137_x87176002}
-:::::
-
-::: {#1811555797 .myid}
-[]{#_Toc404797273}[]{#struct_0_84792_x5137_1181156004}
+·**ip netstream export host**
 
 **NetStream \-- NetStream配置命令 \-- ip netstream export host**
 
 ------------------------------------------------------------------------
 
-[**[ip netstream export host]{lang="EN-US"}**]{#struct_0_84792_x5137_779126537}[命令用来配置]{style="font-family:
-宋体"}[NetStream]{lang="EN-US"}[统计输出报文的目的地址和目的]{style="font-family:
-宋体"}[UDP]{lang="EN-US"}[端口号。]{style="font-family:
-宋体"}**[undo ip netstream export host]{lang="EN-US"}**[命令用来删除已有配置。]{style="font-family:宋体"}
+**[ip netstream export host**]命令用来配置NetStream统计输出报文的目的地址和目的UDP端口号。**undo ip netstream export host**命令用来删除已有配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1083022524}
+【命令】
 
-[**[ip netstream export host]{lang="EN-US"}**[ *ip-address udp-port* \[ **vpn-instance** *vpn-instance-name* \]]{lang="EN-US"}]{#struct_0_84792_x5137_319721022}
+**[ip netstream export host** *ip-address udp-port* [ **vpn-instance** *vpn-instance-name* ]]
 
-[**[undo ip netstream export host ]{lang="EN-US"}**[\[ *ip-address* \[ **vpn-instance** *vpn-instance-name* \] \]]{lang="EN-US"}]{#struct_0_84792_x5137_7688171}
+**[undo ip netstream export host ** *ip-address*  **vpn-instance** *vpn-instance-name*  ]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1629561973}
+【缺省情况】
 
-[[系统视图和聚合视图下均没有配置目的地址和目的]{style="font-family:宋体"}[UDP]{lang="EN-US"}]{#struct_0_84792_x5137_x601937472}[端口号。]{style="font-family:宋体"}
+系统视图和聚合视图下均没有配置目的地址和目的UDP端口号。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1355198572}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}[/NetStream]{lang="EN-US"}]{#struct_0_84792_x5137_667934424}[聚合视图]{style="font-family:宋体"}
+系统视图/NetStream聚合视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_84792_x5137_87222606}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_84792_x5137_779192073}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_84792_x5137_730284044}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1389360272}
+【参数】
 
-[*[ip-address]{lang="EN-US"}*]{#struct_0_84792_x5137_1388100891}[：]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[统计输出报文的目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[ip-address*]：NetStream统计输出报文的目的IP地址。
 
-[*[udp-port]{lang="EN-US"}*]{#struct_0_84792_x5137_292124492}[：]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[统计输出报文的目的]{style="font-family:宋体"}[UDP]{lang="EN-US"}[端口号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[udp-port*]：NetStream统计输出报文的目的UDP端口号，取值范围为0～65535。
 
-[*[vpn-instance vpn-instance-name]{lang="EN-US"}*]{#struct_0_84792_x5137_x1662233425}[：指定]{style="font-family:
-宋体"}[NetStream]{lang="EN-US"}[统计输出报文的目的地址所属的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[。]{style="font-family:宋体"}*[vpn-instance-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果未指定本参数，则表示]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[统计输出报文的目的地址位于公网中。]{style="font-family:宋体"}
+*[vpn-instance vpn-instance-name*]：指定NetStream统计输出报文的目的地址所属的VPN。*vpn-instance-name*表示MPLS L3VPN的VPN实例名称，为1～31个字符的字符串，区分大小写。如果未指定本参数，则表示NetStream统计输出报文的目的地址位于公网中。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x2117388716}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若某类聚合视图没有使能，则无法通过]{lang="EN-US" style="font-family:宋体"}**[display ip netstream export]{lang="EN-US"}**]{#struct_0_84792_x5137_620309382}[命令查看它的相关信息（包括目的地址的目的]{lang="EN-US" style="font-family:宋体"}[UDP]{lang="EN-US"}[端口号）。]{lang="EN-US" style="font-family:宋体"}
+·若某类聚合视图没有使能，则无法通过**display ip netstream export**命令查看它的相关信息（包括目的地址的目的UDP端口号）。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[执行]{lang="EN-US" style="font-family:宋体"}[undo ip netstream export host]{lang="EN-US"}]{#struct_0_84792_x5137_x1127137259}[命令时未指定地址，表示取消指定本视图下配置的所有地址]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:
-宋体"}
+·执行undo ip netstream export host命令时未指定地址，表示取消指定本视图下配置的所有地址。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不同聚合视图下可以配置相同的目的地址和目的]{style="font-family:宋体"}]{#struct_0_84792_x5137_975300191}[UDP]{lang="EN-US"}[端口号。]{style="font-family:宋体"}
+·不同聚合视图下可以配置相同的目的地址和目的UDP端口号。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若聚合视图下没有配置目的地址和目的]{style="font-family:宋体"}]{#struct_0_84792_x5137_779257609}[UDP]{lang="EN-US"}[端口号，则使用系统视图下的配置；若聚合视图下配置了目的地址和目的]{style="font-family:宋体"}[UDP]{lang="EN-US"}[端口号，则使用聚合视图下的配置。]{style="font-family:宋体"}
+·若聚合视图下没有配置目的地址和目的UDP端口号，则使用系统视图下的配置；若聚合视图下配置了目的地址和目的UDP端口号，则使用聚合视图下的配置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[一个视图下最多可配置]{style="font-family:宋体"}]{#struct_0_84792_x5137_x207935536}[4]{lang="EN-US"}[组目的地址，包括不同]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例。在同一视图下，若先后配置了]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址相同、]{style="font-family:宋体"}[UDP]{lang="EN-US"}[端口号不同的目的地址，则后配置的目的地址生效。在用户配置了不同的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例名称时，允许配置相同的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址和]{style="font-family:宋体"}[UDP]{lang="EN-US"}[端口号。]{style="font-family:宋体"}
+·一个视图下最多可配置4组目的地址，包括不同VPN实例。在同一视图下，若先后配置了IP地址相同、UDP端口号不同的目的地址，则后配置的目的地址生效。在用户配置了不同的VPN实例名称时，允许配置相同的IP地址和UDP端口号。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[普通流统计输出报文会发给系统视图下配置的所有目的地址。聚合流统计输出报文会发给聚合类型对应的聚合视图下配置的所有目的地址。]{style="font-family:宋体"}]{#struct_0_84792_x5137_x1442498355}[为了减少对网络带宽的占用，可以只在聚合视图下配置]{lang="EN-US" style="font-family:宋体"}**[ip netstream export host]{lang="EN-US"}**[命令，此时设备只会输出聚合流信息。]{lang="EN-US" style="font-family:宋体"}
+·普通流统计输出报文会发给系统视图下配置的所有目的地址。聚合流统计输出报文会发给聚合类型对应的聚合视图下配置的所有目的地址。为了减少对网络带宽的占用，可以只在聚合视图下配置**ip netstream export host**命令，此时设备只会输出聚合流信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在执行]{lang="EN-US" style="font-family:宋体"}**[undo ip netstream export host]{lang="EN-US"}**]{#struct_0_84792_x5137_635297172}[命令时，如果未指定]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址，则取消本视图下配置的所有]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{lang="EN-US" style="font-family:宋体"}
+·在执行**undo ip netstream export host**命令时，如果未指定IP地址，则取消本视图下配置的所有IP地址。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x664431722}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_x127756832}[配置全局]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[统计输出报文的目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[172.16.105.48]{lang="EN-US"}[，]{style="font-family:宋体"}[UDP]{lang="EN-US"}[端口号为]{style="font-family:宋体"}[5000]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置全局NetStream统计输出报文的目的IP地址为172.16.105.48，UDP端口号为5000。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_84792_x5137_901453896}
+\<Sysname\> system-view
 
-[\[Sysname\] ip netstream export host 172.16.105.48 5000]{lang="EN-US"}
+Sysname ip netstream export host 172.16.105.48 5000
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_x1012597674}[配置]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[自治系统聚合统计输出报文的目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[172.16.105.50]{lang="EN-US"}[，]{style="font-family:宋体"}[UDP]{lang="EN-US"}[端口号为]{style="font-family:宋体"}[6000]{lang="EN-US"}[。]{style="font-family:宋体"}[.]{lang="EN-US"}
+\# 配置NetStream自治系统聚合统计输出报文的目的IP地址为172.16.105.50，UDP端口号为6000。.
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_84792_x5137_x638305774}
+\<Sysname\> system-view
 
-[\[Sysname\] ip netstream aggregation as]{lang="EN-US"}
+Sysname ip netstream aggregation as
 
-[\[Sysname-ns-aggregation-as\] ip netstream export host 172.16.105.50 6000]{lang="EN-US"}
+Sysname-ns-aggregation-as ip netstream export host 172.16.105.50 6000
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1840658564}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ip netstream aggregation]{lang="EN-US"}**]{#struct_0_84792_x5137_1189567621}
+·**ip netstream aggregation**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ip netstream export source]{lang="EN-US"}**]{#struct_0_84792_x5137_778798857}
-:::
-
-::: {#1113114618 .myid}
-[]{#_Toc404797274}[]{#struct_0_84792_x5137_x487278083}
+·**ip netstream export source**
 
 **NetStream \-- NetStream配置命令 \-- ip netstream export rate**
 
 ------------------------------------------------------------------------
 
-[**[ip netstream export rate]{lang="EN-US"}**]{#struct_0_84792_x5137_x1338335384}[命令用来配置输出速率限制，即限制每秒钟输出的最多报文数。]{style="font-family:
-宋体"}
+**[ip netstream export rate**]命令用来配置输出速率限制，即限制每秒钟输出的最多报文数。
 
-[**[undo ip netstream export rate]{lang="EN-US"}**]{#struct_0_84792_x5137_x342378608}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo ip netstream export rate**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1223510587}
+【命令】
 
-[**[ip netstream export rate ]{lang="EN-US"}***[rate]{lang="EN-US"}*]{#struct_0_84792_x5137_x539423771}
+**[ip netstream export rate ***rate*]
 
-[**[undo ip netstream export rate]{lang="EN-US"}**]{#struct_0_84792_x5137_x2116331724}
+**[undo ip netstream export rate**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1309837484}
+【缺省情况】
 
-[[NetStream]{lang="EN-US"}]{#struct_0_84792_x5137_108560571}[统计输出报文的输出速率不受限制。]{style="font-family:宋体"}
+NetStream统计输出报文的输出速率不受限制。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_84792_x5137_778864393}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_84792_x5137_x395450323}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1969412569}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_84792_x5137_926301147}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_84792_x5137_x1285757452}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1305893581}
+【参数】
 
-[*[rate]{lang="EN-US"}*]{#struct_0_84792_x5137_x1776771124}[：]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[统计输出报文的输出速率限制，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1000]{lang="EN-US"}[，单位为每秒允许输出的最多报文个数。]{style="font-family:宋体"}
+*[rate*]：NetStream统计输出报文的输出速率限制，取值范围为1～1000，单位为每秒允许输出的最多报文个数。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x35727905}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_778929929}[设置每秒最多允许]{style="font-family:宋体"}[10]{lang="EN-US"}[个报文被输出。]{style="font-family:宋体"}
+\# 设置每秒最多允许10个报文被输出。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_84792_x5137_2028219765}
+\<Sysname\> system-view
 
-[\[Sysname\] ip netstream export rate 10]{lang="EN-US"}
-:::
-
-::: {#-590963205 .myid}
-[]{#_Toc404797275}[]{#struct_0_84792_x5137_553205898}[]{#_Toc250995610}[]{#_Toc55050577}[]{#_Toc28576983}
+Sysname ip netstream export rate 10
 
 **NetStream \-- NetStream配置命令 \-- ip netstream export source**
 
 ------------------------------------------------------------------------
 
-[**[ip netstream export source]{lang="EN-US"}**]{#struct_0_84792_x5137_1417586934}[命令用来配置]{style="font-family:
-宋体"}[NetStream]{lang="EN-US"}[统计输出报文的源接口。]{style="font-family:
-宋体"}
+**[ip netstream export source**]命令用来配置NetStream统计输出报文的源接口。
 
-[**[undo ip netstream export source]{lang="EN-US"}**]{#struct_0_84792_x5137_x1904939593}[命令用来取消配置的输出报文的源接口。]{style="font-family:宋体"}
+**[undo ip netstream export source**]命令用来取消配置的输出报文的源接口。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1255770455}
+【命令】
 
-[**[ip netstream export source interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_84792_x5137_2129339573}
+**[ip netstream export source interface** *interface-type interface-number*]
 
-[**[undo ip netstream export source]{lang="EN-US"}**]{#struct_0_84792_x5137_1127432236}
+**[undo ip netstream export source**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1328356499}
+【缺省情况】
 
-[[采用统计输出报文的出接口作为源接口。]{style="font-family:宋体"}]{#struct_0_84792_x5137_778995465}
+采用统计输出报文的出接口作为源接口。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1190539587}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}[/NetStream]{lang="EN-US"}]{#struct_0_84792_x5137_1589853855}[聚合视图]{style="font-family:宋体"}
+系统视图/NetStream聚合视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1793064493}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_84792_x5137_x2141566886}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_84792_x5137_x1106087365}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x356349580}
+【参数】
 
-[*[interface-type interface-number]{lang="EN-US"}*]{#struct_0_84792_x5137_1383998061}[：]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[统计输出报文的源接口，由接口类型和接口编号组成。]{style="font-family:宋体"}
+*[interface-type interface-number*]：NetStream统计输出报文的源接口，由接口类型和接口编号组成。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1964781195}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[通过本命令配置源接口后，会将]{style="font-family:宋体"}]{#struct_0_84792_x5137_779585289}[NetStream]{lang="EN-US"}[统计输出报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址设置为该接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+·通过本命令配置源接口后，会将NetStream统计输出报文的源IP地址设置为该接口的IP地址。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不同聚合视图下可以配置不同的源接口。]{style="font-family:宋体"}]{#struct_0_84792_x5137_1288197873}
+·不同聚合视图下可以配置不同的源接口。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[聚合视图下若没有配置源接口，则使用系统视图下的配置。]{style="font-family:宋体"}]{#struct_0_84792_x5137_79156519}
+·聚合视图下若没有配置源接口，则使用系统视图下的配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x617775103}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_x813158256}[将]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[统计输出报文源接口设置为]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 将NetStream统计输出报文源接口设置为GigabitEthernet1/0/1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_84792_x5137_x2017233169}
+\<Sysname\> system-view
 
-[\[Sysname\] ip netstream export source interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname ip netstream export source interface gigabitethernet 1/0/1
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_x1012335530}[将]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[自治系统聚合统计输出报文源接口设置为]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 将NetStream自治系统聚合统计输出报文源接口设置为GigabitEthernet1/0/2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_84792_x5137_x1012532138}
+\<Sysname\> system-view
 
-[\[Sysname\] ip netstream aggregation as]{lang="EN-US"}
+Sysname ip netstream aggregation as
 
-[\[Sysname-ns-aggregation-as\] ip netstream export source interface gigabitethernet 1/0/2]{lang="EN-US"}
+Sysname-ns-aggregation-as ip netstream export source interface gigabitethernet 1/0/2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1440208623}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ip netstream aggregation]{lang="EN-US"}**]{#struct_0_84792_x5137_2108418286}
-:::
-
-::: {#-1197763210 .myid}
-[]{#_Toc404797276}[]{#struct_0_84792_x5137_779650825}
+·**ip netstream aggregation**
 
 **NetStream \-- NetStream配置命令 \-- ip netstream export v9-template refresh-rate packet**
 
 ------------------------------------------------------------------------
 
-[**[ip netstream export v9-template refresh-rate packet]{lang="EN-US"}**]{#struct_0_84792_x5137_x793929274}[命令用来配置]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[统计输出报文版本]{style="font-family:宋体"}[9]{lang="EN-US"}[模板的包刷新率。]{style="font-family:宋体"}
+**[ip netstream export v9-template refresh-rate packet**]命令用来配置NetStream统计输出报文版本9模板的包刷新率。
 
-[**[undo ip netstream export v9-template refresh-rate packet]{lang="EN-US"}**]{#struct_0_84792_x5137_255003923}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ip netstream export v9-template refresh-rate packet**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1237600457}
+【命令】
 
-[**[ip netstream export v9-template refresh-rate packet ]{lang="EN-US"}***[packets]{lang="EN-US"}*]{#struct_0_84792_x5137_1156453588}
+**[ip netstream export v9-template refresh-rate packet ***packets*]
 
-[**[undo ip netstream export v9-template refresh-rate packet]{lang="EN-US"}**]{#struct_0_84792_x5137_x15415612}
+**[undo ip netstream export v9-template refresh-rate packet**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x644073886}
+【缺省情况】
 
-[[每隔]{style="font-family:宋体"}[20]{lang="EN-US"}]{#struct_0_84792_x5137_x955212858}[个包设备发送一次版本]{style="font-family:宋体"}[9]{lang="EN-US"}[模板。]{style="font-family:宋体"}
+每隔20个包设备发送一次版本9模板。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x890500948}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_84792_x5137_779061002}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1625539070}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_84792_x5137_1033832775}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_84792_x5137_728431950}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x713347762}
+【参数】
 
-[*[packets]{lang="EN-US"}*]{#struct_0_84792_x5137_1936344816}[：]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[统计输出报文版本]{style="font-family:宋体"}[9]{lang="EN-US"}[模板的包刷新率，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[600]{lang="EN-US"}[，单位为包数，即每隔多少个包更新一次模板，并通知]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[服务器最新的]{style="font-family:宋体"}[V9]{lang="EN-US"}[模板格式。]{style="font-family:宋体"}
+*[packets*]：NetStream统计输出报文版本9模板的包刷新率，取值范围为1～600，单位为包数，即每隔多少个包更新一次模板，并通知NetStream服务器最新的V9模板格式。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1998275283}
+【使用指导】
 
-[[V9]{lang="EN-US"}]{#struct_0_84792_x5137_779126538}[版本是基于模板方式的、支持自定义格式，由于]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[服务器不会永久保存模板，所以设备需要定期通知]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[服务器最新的]{style="font-family:宋体"}[V9]{lang="EN-US"}[模板格式。用户可以根据实际情况，配置版本]{style="font-family:宋体"}[9]{lang="EN-US"}[模板的包刷新率，及时更新模板。]{style="font-family:宋体"}
+V9版本是基于模板方式的、支持自定义格式，由于NetStream服务器不会永久保存模板，所以设备需要定期通知NetStream服务器最新的V9模板格式。用户可以根据实际情况，配置版本9模板的包刷新率，及时更新模板。
 
-[[可以同时配置包刷新率和时间刷新率，只要满足任意一个刷新条件，设备就会将符合条件的模板发送给]{style="font-family:宋体"}[NetStream]{lang="EN-US"}]{#struct_0_84792_x5137_1083022525}[服务器。]{style="font-family:宋体"}
+可以同时配置包刷新率和时间刷新率，只要满足任意一个刷新条件，设备就会将符合条件的模板发送给NetStream服务器。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_84792_x5137_319655486}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_393618170}[将]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[统计输出报文版本]{style="font-family:宋体"}[9]{lang="EN-US"}[模板的包刷新率设为]{style="font-family:宋体"}[100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 将NetStream统计输出报文版本9模板的包刷新率设为100。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_84792_x5137_x1952540705}
+\<Sysname\> system-view
 
-[\[Sysname\] ip netstream export v9-template refresh-rate packet 100]{lang="EN-US"}
+Sysname ip netstream export v9-template refresh-rate packet 100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1013087195}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ip netstream export v9-template refresh-rate time]{lang="EN-US"}**]{#struct_0_84792_x5137_x1766156540}
-:::
-
-::: {#113470092 .myid}
-[]{#_Toc404797277}[]{#struct_0_84792_x5137_1181021057}
+·**ip netstream export v9-template refresh-rate time**
 
 **NetStream \-- NetStream配置命令 \-- ip netstream export v9-template refresh-rate time**
 
 ------------------------------------------------------------------------
 
-[**[ip netstream export v9-template refresh-rate time]{lang="EN-US"}**]{#struct_0_84792_x5137_779192074}[命令用来配置]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[统计输出报文版本]{style="font-family:宋体"}[9]{lang="EN-US"}[模板的时间刷新率。]{style="font-family:宋体"}
+**[ip netstream export v9-template refresh-rate time**]命令用来配置NetStream统计输出报文版本9模板的时间刷新率。
 
-[**[undo ip netstream export v9-template refresh-rate time]{lang="EN-US"}**]{#struct_0_84792_x5137_730284051}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ip netstream export v9-template refresh-rate time**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_949291883}
+【命令】
 
-[**[ip netstream export v9-template refresh-rate time ]{lang="EN-US"}***[minutes]{lang="EN-US"}*]{#struct_0_84792_x5137_1408488133}
+**[ip netstream export v9-template refresh-rate time ***minutes*]
 
-[**[undo ip netstream export v9-template refresh-rate time]{lang="EN-US"}**]{#struct_0_84792_x5137_x1053374401}
+**[undo ip netstream export v9-template refresh-rate time**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_84792_x5137_2103827687}
+【缺省情况】
 
-[[每隔]{style="font-family:宋体"}[30]{lang="EN-US"}]{#struct_0_84792_x5137_279868474}[分钟设备发送一次版本]{style="font-family:宋体"}[9]{lang="EN-US"}[模板。]{style="font-family:宋体"}
+每隔30分钟设备发送一次版本9模板。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x982376739}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_84792_x5137_779257610}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_84792_x5137_2130716633}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_84792_x5137_x2049695930}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_84792_x5137_1085083028}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_84792_x5137_582681305}
+【参数】
 
-[*[minutes]{lang="EN-US"}*]{#struct_0_84792_x5137_73039680}[：]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[统计输出报文版本]{style="font-family:宋体"}[9]{lang="EN-US"}[模板的时间刷新率，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为分钟，即每隔多少分钟更新一次模板，并通知]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[服务器最新的]{style="font-family:宋体"}[V9]{lang="EN-US"}[模板格式。]{style="font-family:宋体"}
+*[minutes*]：NetStream统计输出报文版本9模板的时间刷新率，取值范围为1～3600，单位为分钟，即每隔多少分钟更新一次模板，并通知NetStream服务器最新的V9模板格式。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_84792_x5137_449558600}
+【使用指导】
 
-[[V9]{lang="EN-US"}]{#struct_0_84792_x5137_778798858}[版本是基于模板方式的、支持自定义格式，由于]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[服务器不会永久保存模板，所以设备需要定期通知]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[服务器最新的]{style="font-family:宋体"}[V9]{lang="EN-US"}[模板格式。用户可以根据实际情况，配置版本]{style="font-family:宋体"}[9]{lang="EN-US"}[模板的时间刷新率，及时更新模板。]{style="font-family:宋体"}
+V9版本是基于模板方式的、支持自定义格式，由于NetStream服务器不会永久保存模板，所以设备需要定期通知NetStream服务器最新的V9模板格式。用户可以根据实际情况，配置版本9模板的时间刷新率，及时更新模板。
 
-[[可以同时配置包刷新率和时间刷新率，只要满足任意一个刷新条件，设备就会将符合条件的模板发送给]{style="font-family:宋体"}[NetStream]{lang="EN-US"}]{#struct_0_84792_x5137_x487278092}[服务器。]{style="font-family:宋体"}
+可以同时配置包刷新率和时间刷新率，只要满足任意一个刷新条件，设备就会将符合条件的模板发送给NetStream服务器。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1338400921}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_2042637066}[将]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[统计输出报文版本]{style="font-family:宋体"}[9]{lang="EN-US"}[模板的时间刷新率设为]{style="font-family:宋体"}[60]{lang="EN-US"}[分钟。]{style="font-family:宋体"}
+\# 将NetStream统计输出报文版本9模板的时间刷新率设为60分钟。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_84792_x5137_x1608060782}
+\<Sysname\> system-view
 
-[\[Sysname\] ip netstream export v9-template refresh-rate time 60]{lang="EN-US"}
+Sysname ip netstream export v9-template refresh-rate time 60
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_2028707438}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ip netstream export v9-template refresh-rate packet]{lang="EN-US"}**]{#struct_0_84792_x5137_1374532262}
-:::
-
-::: {#-494163086 .myid}
-[]{#_Toc404797278}[]{#struct_0_84792_x5137_864492948}
+·**ip netstream export v9-template refresh-rate packet**
 
 **NetStream \-- NetStream配置命令 \-- ip netstream export version**
 
 ------------------------------------------------------------------------
 
-[**[ip netstream export version 5]{lang="EN-US"}**]{#struct_0_84792_x5137_778864394}[命令用来配置]{style="font-family:
-宋体"}[NetStream]{lang="EN-US"}[版本]{style="font-family:
-宋体"}[5]{lang="EN-US"}[的自治系统选项。]{style="font-family:宋体"}
+**[ip netstream export version 5**]命令用来配置NetStream版本5的自治系统选项。
 
-[**[ip netstream export version 9]{lang="EN-US"}**]{#struct_0_84792_x5137_x395450330}[命令用来配置]{style="font-family:
-宋体"}[NetStream]{lang="EN-US"}[版本]{style="font-family:
-宋体"}[9]{lang="EN-US"}[的自治系统选项和]{style="font-family:宋体"}[BGP]{lang="EN-US"}[下一跳选项。]{style="font-family:宋体"}
+**[ip netstream export version 9**]命令用来配置NetStream版本9的自治系统选项和BGP下一跳选项。
 
-[**[undo ip netstream export version]{lang="EN-US"}**]{#struct_0_84792_x5137_x1969215962}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ip netstream export version**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1297384174}
+【命令】
 
-[**[ip netstream export version]{lang="EN-US"}**[ *5* \[ **origin-as** \| **peer-as** \]]{lang="EN-US"}]{#struct_0_84792_x5137_432286523}
+**[ip netstream export version**[ *5* [ **origin-as** \| **peer-as** ]]]
 
-[**[ip netstream export version]{lang="EN-US"}**[ 9 \[ **origin-as** \| **peer-as** \] \[ **bgp-nexthop** \]]{lang="EN-US"}]{#struct_0_84792_x5137_x125714525}
+**[ip netstream export version**[ 9 [ **origin-as** \| **peer-as** ]  **bgp-nexthop** ]]
 
-[**[undo ip netstream export version]{lang="EN-US"}**]{#struct_0_84792_x5137_671231761}
+**[undo ip netstream export version**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1565434984}
+【缺省情况】
 
-[[普通流信息通过版本]{style="font-family:宋体"}[9]{lang="EN-US"}]{#struct_0_84792_x5137_x1818879398}[的]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[统计输出报文发送，]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[流信息不输出。自治系统选项使用邻接自治系统号（]{style="font-family:宋体"}**[peer-as]{lang="EN-US"}**[），流信息中不记录]{style="font-family:宋体"}[BGP]{lang="EN-US"}[下一跳地址。]{style="font-family:宋体"}
+普通流信息通过版本9的NetStream统计输出报文发送，MPLS流信息不输出。自治系统选项使用邻接自治系统号（**peer-as**），流信息中不记录BGP下一跳地址。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_84792_x5137_778929930}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_84792_x5137_x310432404}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1532434073}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_84792_x5137_1727821046}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_84792_x5137_x1448695946}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x697204493}
+【参数】
 
-[**[origin-as]{lang="EN-US"}**]{#struct_0_84792_x5137_1737881575}[：流信息中记录的自治系统号为起始自治系统号。]{style="font-family:宋体"}
+**[origin-as**]：流信息中记录的自治系统号为起始自治系统号。
 
-[**[peer-as]{lang="EN-US"}**]{#struct_0_84792_x5137_x94593154}[：流信息中记录的自治系统号为邻接自治系统号。]{style="font-family:宋体"}
+**[peer-as**]：流信息中记录的自治系统号为邻接自治系统号。
 
-[**[bgp-nexthop]{lang="EN-US"}**]{#struct_0_84792_x5137_1655342666}[：流信息中记录]{style="font-family:宋体"}[BGP]{lang="EN-US"}[下一跳。]{style="font-family:宋体"}
+**[bgp-nexthop**]：流信息中记录BGP下一跳。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_84792_x5137_778995466}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NetStream]{lang="EN-US"}]{#struct_0_84792_x5137_1190539586}[流信息中会记录流的源]{style="font-family:
-宋体"}[IP]{lang="EN-US"}[地址及其对应的自治系统号；目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址及其对应的自治系统号。设备会根据用户实际配置的自治系统参数来确定记录的自治系统号。]{style="font-family:宋体"}
+·NetStream流信息中会记录流的源IP地址及其对应的自治系统号；目的IP地址及其对应的自治系统号。设备会根据用户实际配置的自治系统参数来确定记录的自治系统号。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[只有在版本号为]{style="font-family:宋体"}]{#struct_0_84792_x5137_1589919391}[9]{lang="EN-US"}[时，才可以配置]{style="font-family:宋体"}[BGP]{lang="EN-US"}[下一跳。]{style="font-family:宋体"}
+·只有在版本号为9时，才可以配置BGP下一跳。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[设备上同时只允许一种版本存在，]{style="font-family:宋体"}]{#struct_0_84792_x5137_x186104300}[V5]{lang="EN-US"}[和]{style="font-family:宋体"}[V9]{lang="EN-US"}[不能同时配置。]{style="font-family:宋体"}
+·设备上同时只允许一种版本存在，V5和V9不能同时配置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当设备上配置了聚合时，如果配置输出报文版本为]{style="font-family:宋体"}]{#struct_0_84792_x5137_x941025581}[V5]{lang="EN-US"}[，则流统计信息采用]{style="font-family:宋体"}[V8]{lang="EN-US"}[版本输出；如果配置输出版本为]{style="font-family:宋体"}[V9]{lang="EN-US"}[，则流统计信息采用]{style="font-family:宋体"}[V9]{lang="EN-US"}[版本输出。]{style="font-family:宋体"}
+·当设备上配置了聚合时，如果配置输出报文版本为V5，则流统计信息采用V8版本输出；如果配置输出版本为V9，则流统计信息采用V9版本输出。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令重复配置时，新配置会覆盖旧配置。]{style="font-family:宋体"}]{#struct_0_84792_x5137_1558885009}
+·本命令重复配置时，新配置会覆盖旧配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_84792_x5137_316464385}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_1283893600}[将]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[统计输出报文版本号设为]{style="font-family:宋体"}[5]{lang="EN-US"}[，并设置流信息中记录的自治系统号为起始自治系统号。]{style="font-family:宋体"}
+\# 将NetStream统计输出报文版本号设为5，并设置流信息中记录的自治系统号为起始自治系统号。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_84792_x5137_779585290}
+\<Sysname\> system-view
 
-[\[Sysname\] ip netstream export version 5 origin-as]{lang="EN-US"}
-:::
-
-::: {#-126248018 .myid}
-[]{#_Toc404797279}[]{#struct_0_84792_x5137_x815541667}[]{#_Toc250995616}
+Sysname ip netstream export version 5 origin-as
 
 **NetStream \-- NetStream配置命令 \-- ip netstream max-entry**
 
 ------------------------------------------------------------------------
 
-[**[ip netstream max-entry]{lang="EN-US"}**]{#struct_0_84792_x5137_984636901}[命令用来配置]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[流缓存区中流表项的最大数目及达到最大数目时的处理方式。]{style="font-family:宋体"}
+**[ip netstream max-entry**]命令用来配置NetStream流缓存区中流表项的最大数目及达到最大数目时的处理方式。
 
-[**[undo ip netstream max-entry]{lang="EN-US"}**]{#struct_0_84792_x5137_1083022522}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo ip netstream max-entry**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_319589950}
+【命令】
 
-[**[ip netstream max-entry]{lang="EN-US"}**[ { *max-entries* \| *aging* \| *disable-caching* }]{lang="EN-US"}]{#struct_0_84792_x5137_x127173270}
+**[ip netstream max-entry**[ { *max-entries* \| *aging* \| *disable-caching* }]]
 
-[**[undo ip netstream max-entry]{lang="EN-US"}**]{#struct_0_84792_x5137_x246522207}
+**[undo ip netstream max-entry**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1225578503}
+【缺省情况】
 
-[[本命令的缺省情况与设备的型号相关，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_84792_x5137_457267033}
+本命令的缺省情况与设备的型号相关，请以设备的实际情况为准。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1882251066}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_84792_x5137_779192071}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_84792_x5137_730284046}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_84792_x5137_x1389360274}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_84792_x5137_225301477}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1114981931}
+【参数】
 
-[*[max-entries]{lang="EN-US"}*]{#struct_0_84792_x5137_x852521118}[：]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[流缓存区中流表项的最大数目。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[max-entries*]：NetStream流缓存区中流表项的最大数目。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[**[aging]{lang="EN-US"}**]{#struct_0_84792_x5137_563051984}[：达到流表项的最大数目时，强制老化部分流表项。]{style="font-family:宋体"}
+**[aging**]：达到流表项的最大数目时，强制老化部分流表项。
 
-[**[disable-caching]{lang="EN-US"}**]{#struct_0_84792_x5137_439956668}[：达到流表项的最大数目时，禁止新建流表项。]{style="font-family:宋体"}
+**[disable-caching**]：达到流表项的最大数目时，禁止新建流表项。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1632316667}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[max-entries]{lang="EN-US"}*]{#struct_0_84792_x5137_779257607}[参数值在各单板上单独生效，而不是各单板的总和。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+·*max-entries*参数值在各单板上单独生效，而不是各单板的总和。（分布式设备－独立运行模式）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[max-entries]{lang="EN-US"}*]{#struct_0_84792_x5137_x207935534}[参数值在各成员设备的各单板上单独生效，而不是各单板的总和。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+·*max-entries*参数值在各成员设备的各单板上单独生效，而不是各单板的总和。（分布式设备－IRF模式）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[max-entries]{lang="EN-US"}*]{#struct_0_84792_x5137_x1442629427}[参数值在各成员设备上单独生效，而不是各成员设备的总和。]{style="font-family:宋体"}[（集中式]{lang="EN-US" style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{lang="EN-US" style="font-family:宋体"}
+·*max-entries*参数值在各成员设备上单独生效，而不是各成员设备的总和。（集中式IRF设备）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ip netstream max-entry]{lang="EN-US"}**[ *max-entries*]{lang="EN-US"}]{#struct_0_84792_x5137_x2047902938}[命令可重复配置，以最后一次配置为准。]{lang="EN-US" style="font-family:
-宋体"}
+·**ip netstream max-entry** *max-entries*命令可重复配置，以最后一次配置为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ip netstream max-entry]{lang="EN-US"}**]{#struct_0_84792_x5137_x1012335533}**[ ]{lang="EN-US"}**[{ **aging** \| **disable-caching** }]{lang="EN-US"}[命令可以重复配置，以最后一次配置为准。]{lang="EN-US" style="font-family:宋体"}
+·**ip netstream max-entry******[{ **aging** \| **disable-caching** }]命令可以重复配置，以最后一次配置为准。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_84792_x5137_784286615}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_x1506447431}[设置]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[流缓存区中流表项的最大数目为]{style="font-family:宋体"}[5000]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 设置NetStream流缓存区中流表项的最大数目为5000。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_84792_x5137_x2094196337}
+\<Sysname\> system-view
 
-[\[Sysname\] ip netstream max-entry 5000]{lang="EN-US"}
+Sysname ip netstream max-entry 5000
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_x123681248}[设置]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[在达到流表项的最大数目时，禁止新建流表项。]{style="font-family:宋体"}
+\# 设置NetStream在达到流表项的最大数目时，禁止新建流表项。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_84792_x5137_778798855}
+\<Sysname\> system-view
 
-[\[Sysname\] ip netstream max-entry disable-caching]{lang="EN-US"}
+Sysname ip netstream max-entry disable-caching
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_x487278081}[设置]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[在达到流表项的最大数目时，强制老化部分流表项。]{style="font-family:宋体"}
+\# 设置NetStream在达到流表项的最大数目时，强制老化部分流表项。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_84792_x5137_x1338204312}
+\<Sysname\> system-view
 
-[\[Sysname\] ip netstream max-entry aging]{lang="EN-US"}
-:::
-
-::: {#-738592420 .myid}
-[]{#_Toc404797280}[]{#struct_0_84792_x5137_x45834337}[]{#_Toc250995617}
+Sysname ip netstream max-entry aging
 
 **NetStream \-- NetStream配置命令 \-- ip netstream mpls**
 
 ------------------------------------------------------------------------
 
-[**[ip netstream mpls]{lang="EN-US"}**]{#struct_0_84792_x5137_x620063650}[命令用来开启]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[报文统计功能，即统计和输出]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[格式的报文。]{style="font-family:宋体"}
+**[ip netstream mpls**]命令用来开启MPLS报文统计功能，即统计和输出MPLS格式的报文。
 
-[**[undo ip netstream mpls]{lang="EN-US"}**]{#struct_0_84792_x5137_1501650497}[用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ip netstream mpls**]用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1018747984}
+【命令】
 
-[**[ip netstream mpls ]{lang="EN-US"}**[\[ **label-positions** *label-position1* \[ *label-position2* \[ *label-position3* \] \] \] \[ **no-ip-fields** \]]{lang="EN-US"}]{#struct_0_84792_x5137_1873908086}
+**[ip netstream mpls ** **label-positions** *label-position1*  *label-position2* [ *label-position3*  ] ]  **no-ip-fields**
 
-[**[undo ip netstream mpls]{lang="EN-US"}**]{#struct_0_84792_x5137_1102679824}
+**[undo ip netstream mpls**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_84792_x5137_778864391}
+【缺省情况】
 
-[[未开启]{style="font-family:宋体"}[MPLS]{lang="EN-US"}]{#struct_0_84792_x5137_x395450325}[报文统计功能。]{style="font-family:宋体"}
+未开启MPLS报文统计功能。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1969019353}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_84792_x5137_1334114175}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_84792_x5137_665600659}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_84792_x5137_180767728}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_84792_x5137_744063361}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x981814130}
+【参数】
 
-[**[label-positions]{lang="EN-US"}**]{#struct_0_84792_x5137_778929927}[：统计的]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[报文的标签位置。]{style="font-family:宋体"}
+**[label-positions**]：统计的MPLS报文的标签位置。
 
-[*[label-position1]{lang="EN-US"}*]{#struct_0_84792_x5137_2028219763}[：指定统计的]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[报文的第一个标签位置，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[6]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[label-position1*]：指定统计的MPLS报文的第一个标签位置，取值范围为1～6。
 
-[*[label-position2]{lang="EN-US"}*]{#struct_0_84792_x5137_553599114}[：指定统计的]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[报文的第二个标签位置，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[6]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[label-position2*]：指定统计的MPLS报文的第二个标签位置，取值范围为1～6。
 
-[*[label-position3]{lang="EN-US"}*]{#struct_0_84792_x5137_505319024}[：指定统计的]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[报文的第三个标签位置，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[6]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[label-position3*]：指定统计的MPLS报文的第三个标签位置，取值范围为1～6。
 
-[**[no-ip-fields]{lang="EN-US"}**]{#struct_0_84792_x5137_845026282}[：不统计]{style="font-family:宋体"}[IP]{lang="EN-US"}[选项。]{style="font-family:宋体"}
+**[no-ip-fields**]：不统计IP选项。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1512396200}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[该命令不仅使能]{lang="EN-US" style="font-family:宋体"}[IPv4 NetStream]{lang="EN-US"}]{#struct_0_84792_x5137_2054614653}[对]{lang="EN-US" style="font-family:宋体"}[MPLS]{lang="EN-US"}[报文的统计功能，同时也使能了]{lang="EN-US" style="font-family:宋体"}[IPv6 NetStream]{lang="EN-US"}[对]{lang="EN-US" style="font-family:宋体"}[MPLS]{lang="EN-US"}[报文的统计功能。]{lang="EN-US" style="font-family:宋体"}
+·该命令不仅使能IPv4 NetStream对MPLS报文的统计功能，同时也使能了IPv6 NetStream对MPLS报文的统计功能。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若未指定任何参数，表示基于]{style="font-family:宋体"}]{#struct_0_84792_x5137_x1215674773}[MPLS]{lang="EN-US"}[报文的首标签并且带有]{style="font-family:宋体"}[IP]{lang="EN-US"}[选项进行统计。]{style="font-family:宋体"}
+·若未指定任何参数，表示基于MPLS报文的首标签并且带有IP选项进行统计。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当需要统计]{style="font-family:宋体"}]{#struct_0_84792_x5137_x211527849}[MPLS]{lang="EN-US"}[报文的多个标签时，指定的标签位置不允许重复，最终统计的多个标签的位置依据从小到大的顺序取指定值。]{style="font-family:宋体"}
+·当需要统计MPLS报文的多个标签时，指定的标签位置不允许重复，最终统计的多个标签的位置依据从小到大的顺序取指定值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_84792_x5137_778995463}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_1190539581}[开启]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[报文统计功能，基于]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[报文的首标签并且不带]{style="font-family:宋体"}[IP]{lang="EN-US"}[选项进行统计。]{style="font-family:宋体"}
+\# 开启MPLS报文统计功能，基于MPLS报文的首标签并且不带IP选项进行统计。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_84792_x5137_1589722783}
+\<Sysname\> system-view
 
-[\[Sysname\] ip netstream mpls no-ip-fields]{lang="EN-US"}
-:::
-
-::: {#1620236268 .myid}
-[]{#_Toc404797281}[]{#struct_0_84792_x5137_x1745883386}[]{#_Toc250995619}[]{#_Toc55050579}[]{#_Toc28576985}
+Sysname ip netstream mpls no-ip-fields
 
 **NetStream \-- NetStream配置命令 \-- ip netstream timeout active**
 
 ------------------------------------------------------------------------
 
-[**[ip netstream timeout active]{lang="EN-US"}**]{#struct_0_84792_x5137_779061000}[命令用来配置流的活跃老化时间。]{style="font-family:
-宋体"}
+**[ip netstream timeout active**]命令用来配置流的活跃老化时间。
 
-[**[undo ip netstream timeout active]{lang="EN-US"}**]{#struct_0_84792_x5137_x1625539072}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ip netstream timeout active**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x128966639}
+【命令】
 
-[**[ip netstream timeout active]{lang="EN-US"}**[ *minutes*]{lang="EN-US"}]{#struct_0_84792_x5137_x1950738298}
+**[ip netstream timeout active** *minutes*]
 
-[**[undo ip netstream timeout active]{lang="EN-US"}**]{#struct_0_84792_x5137_x326912506}
+**[undo ip netstream timeout active**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x412554509}
+【缺省情况】
 
-[[流的活跃老化时间为]{style="font-family:宋体"}[30]{lang="EN-US"}]{#struct_0_84792_x5137_351577322}[分钟。]{style="font-family:宋体"}
+流的活跃老化时间为30分钟。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_84792_x5137_779126536}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_84792_x5137_1083022523}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_84792_x5137_319524414}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_84792_x5137_102703697}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_84792_x5137_x1217836369}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x250692637}
+【参数】
 
-[*[minutes]{lang="EN-US"}*]{#struct_0_84792_x5137_779192072}[：流的活跃老化时间，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[60]{lang="EN-US"}[，单位为分钟。]{style="font-family:宋体"}
+*[minutes*]：流的活跃老化时间，取值范围为1～60，单位为分钟。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_84792_x5137_730284045}
+【使用指导】
 
-[[从采集到的第一个报文]{style="font-family:宋体"}]{#struct_0_84792_x5137_x1389360273}[开始，该]{style="font-family:宋体"}[流在]{style="font-family:宋体"}[指定的时间内能被采集到，则该流属于活跃的流，指定的时间称为流的活跃老化时间。]{style="font-family:宋体"}
+从采集到的第一个报文开始，该流在指定的时间内能被采集到，则该流属于活跃的流，指定的时间称为流的活跃老化时间。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x177983050}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_779257608}[将流的活跃老化时间设置为]{style="font-family:宋体"}[60]{lang="EN-US"}[分钟。]{style="font-family:宋体"}
+\# 将流的活跃老化时间设置为60分钟。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_84792_x5137_x207935535}
+\<Sysname\> system-view
 
-[\[Sysname\] ip netstream timeout active 60]{lang="EN-US"}
+Sysname ip netstream timeout active 60
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1442563891}
+【相关命令】
 
-[]{#_Toc250995620}[]{#_Toc55050580}[]{#_Toc28576986}[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ip netstream timeout inactive]{lang="EN-US"}**]{#struct_0_84792_x5137_1191450328}
-:::
-
-::: {#-1093526609 .myid}
-[]{#_Toc404797282}[]{#struct_0_84792_x5137_1916164139}
+·**ip netstream timeout inactive**
 
 **NetStream \-- NetStream配置命令 \-- ip netstream timeout inactive**
 
 ------------------------------------------------------------------------
 
-[**[ip netstream timeout inactive]{lang="EN-US"}**]{#struct_0_84792_x5137_x2081892495}[命令用来配置流的不活跃老化时间。]{style="font-family:
-宋体"}
+**[ip netstream timeout inactive**]命令用来配置流的不活跃老化时间。
 
-[**[undo ip netstream timeout inactive]{lang="EN-US"}**]{#struct_0_84792_x5137_778798856}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ip netstream timeout inactive**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x487278082}
+【命令】
 
-[**[ip netstream timeout inactive]{lang="EN-US"}**[ *seconds*]{lang="EN-US"}]{#struct_0_84792_x5137_x1338400920}
+**[ip netstream timeout inactive** *seconds*]
 
-[**[undo ip netstream timeout inactive]{lang="EN-US"}**]{#struct_0_84792_x5137_x686246289}
+**[undo ip netstream timeout inactive**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x357880459}
+【缺省情况】
 
-[[流的不活跃老化时间为]{style="font-family:宋体"}[30]{lang="EN-US"}]{#struct_0_84792_x5137_647295752}[秒。]{style="font-family:宋体"}
+流的不活跃老化时间为30秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x2059968722}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_84792_x5137_778864392}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x395450324}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_84792_x5137_x1968953817}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_84792_x5137_307189407}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x1292108414}
+【参数】
 
-[*[seconds]{lang="EN-US"}*]{#struct_0_84792_x5137_x1111238089}[：流的不活跃老化时间，取值范围为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[600]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[seconds*]：流的不活跃老化时间，取值范围为10～600，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1778116023}
+【使用指导】
 
-[[从采集到的最后一个报文]{style="font-family:宋体"}]{#struct_0_84792_x5137_778929928}[开始，该]{style="font-family:宋体"}[流在]{style="font-family:宋体"}[指定的时间内没有被采集到，则该流属于不活跃的流，指定的时间称为流的不活跃老化时间。]{style="font-family:宋体"}
+从采集到的最后一个报文开始，该流在指定的时间内没有被采集到，则该流属于不活跃的流，指定的时间称为流的不活跃老化时间。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_84792_x5137_2028219764}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_553140362}[将流的不活跃老化时间设置为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 将流的不活跃老化时间设置为60秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_84792_x5137_778995464}
+\<Sysname\> system-view
 
-[\[Sysname\] ip netstream timeout inactive 60]{lang="EN-US"}[]{#_Toc143514304}[]{#_Toc143517533}[]{#_Toc143514305}[]{#_Toc143517534}[]{#_Toc143514306}[]{#_Toc143517535}[]{#_Toc143514307}[]{#_Toc143517536}[]{#_Toc143514308}[]{#_Toc143517537}[]{#_Toc143514309}[]{#_Toc143517538}[]{#_Toc143514310}[]{#_Toc143517539}[]{#_Toc143514311}[]{#_Toc143517540}[]{#_Toc143514312}[]{#_Toc143517541}[]{#_Toc143514313}[]{#_Toc143517542}[]{#_Toc143514314}[]{#_Toc143517543}[]{#_Toc143514315}[]{#_Toc143517544}[]{#_Toc143514318}[]{#_Toc143517547}[]{#_Toc143514326}[]{#_Toc143517555}[]{#_Toc143514342}[]{#_Toc143517571}[]{#_Hlt11753812}
+Sysname ip netstream timeout inactive 60
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1190539588}
+【相关命令】
 
-[]{#_Toc250995622}[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[ip netstream timeout active]{lang="EN-US"}**]{#struct_0_84792_x5137_1589264031}
-:::
-
-::: {#53358021 .myid}
-[]{#_Toc404797283}[]{#struct_0_84792_x5137_1742621214}
+·**ip netstream timeout active**
 
 **NetStream \-- NetStream配置命令 \-- reset ip netstream statistics**
 
 ------------------------------------------------------------------------
 
-[**[reset ip netstream statistics]{lang="EN-US"}**]{#struct_0_84792_x5137_1626847279}[命令用来将流缓存区中所有流强制老化，输出报文信息，并清空]{style="font-family:
-宋体"}[NetStream]{lang="EN-US"}[缓冲区的状态信息。]{style="font-family:宋体"}
+**[reset ip netstream statistics**]命令用来将流缓存区中所有流强制老化，输出报文信息，并清空NetStream缓冲区的状态信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1503837763}
+【命令】
 
-[**[reset ip netstream statistics]{lang="EN-US"}**]{#struct_0_84792_x5137_1944223928}
+**[reset ip netstream statistics**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_84792_x5137_2091372411}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_84792_x5137_779585288}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_84792_x5137_1288197872}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_84792_x5137_79090983}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_84792_x5137_x353257409}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_84792_x5137_x262815318}
+【使用指导】
 
-[[在执行清空缓冲区中老化流的动作时，命令行会给出提示，告知用户这个动作可能要持续几分钟，在这段时间内不能统计。]{style="font-family:宋体"}]{#struct_0_84792_x5137_x2084411186}
+在执行清空缓冲区中老化流的动作时，命令行会给出提示，告知用户这个动作可能要持续几分钟，在这段时间内不能统计。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_84792_x5137_2061570475}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_84792_x5137_x1388296337}[将流缓存区中所有流老化，输出报文信息，并清空]{style="font-family:宋体"}[NetStream]{lang="EN-US"}[缓冲区的状态信息。]{style="font-family:宋体"}
+\# 将流缓存区中所有流老化，输出报文信息，并清空NetStream缓冲区的状态信息。
 
-[[\<Sysname\> reset ip netstream statistics]{lang="EN-US"}]{#struct_0_84792_x5137_x1277172535}
+\<Sysname\> reset ip netstream statistics
 
-[This process may take a few minutes.]{lang="EN-US"}
+This process may take a few minutes.
 
-[Netstream statistic function is disabled during this process.]{lang="EN-US"}
+Netstream statistic function is disabled during this process.
 
-[ ]{lang="EN-US"}
-:::

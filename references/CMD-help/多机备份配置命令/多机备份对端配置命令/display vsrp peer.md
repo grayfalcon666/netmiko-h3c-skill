@@ -1,2866 +1,2559 @@
-::: {#1969371457 .myid}
-[]{#_Toc404796088}[]{#struct_0_16980_17120_468451780}[]{#_Toc350446335}[]{#_Toc350329042}[]{#_Toc349805340}
 
 **多机备份配置命令 \-- 多机备份对端配置命令 \-- display vsrp peer**
 
 ------------------------------------------------------------------------
 
-[**[display vsrp peer]{lang="EN-US"}**]{#struct_0_16980_17120_182501474}[命令用来显示]{style="font-family:宋体"}[多机备份]{style="font-family:宋体"}[组信息。]{style="font-family:宋体"}
+**[display vsrp peer**]命令用来显示多机备份组信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_1770283384}
+【命令】
 
-[**[display vsrp peer]{lang="EN-US"}**[ \[ *peer-name* \]]{lang="EN-US"}]{#struct_0_16980_17120_x319182373}
+**[display vsrp peer** [ *peer-name* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_x544806689}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_16980_17120_119690807}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_x748047695}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_2033437019}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_16980_17120_1924442958}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_1958485133}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_16980_17120_x817635961}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_1630810290}
+【参数】
 
-[*[peer-name]{lang="EN-US"}*]{#struct_0_16980_17120_x336391141}*[：]{style="font-family:宋体"}*[多机备份组名称，取值为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[peer-name*]*：*多机备份组名称，取值为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_x642985827}
+【使用指导】
 
-[[不指定多机备份组名称时，命令显示所有的多机备份组信息。]{style="font-family:宋体"}]{#struct_0_16980_17120_1874572259}
+不指定多机备份组名称时，命令显示所有的多机备份组信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_1718033815}
+【举例】
 
-[]{#_Toc136937987}[]{#_Toc99445936}[]{#_Toc34203769}[]{#_Toc33197993}[]{#_Toc350446336}[]{#_Toc350329043}[]{#_Toc349805341}[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_x850876588}[显示已创建的多机备份组]{style="font-family:宋体"}[pname]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+\# 显示已创建的多机备份组pname的信息。
 
-[[\<Sysname\> display vsrp peer pname]{lang="EN-US"}]{#struct_0_16980_17120_x1230162061}
+\<Sysname\> display vsrp peer pname
 
-[VSRP peer name: pname]{lang="EN-US"}
+VSRP peer name: pname
 
-[ TCP status: Connected]{lang="EN-US"}
+ TCP status: Connected
 
-[ Peer IP: 11.0.0.3]{lang="EN-US"}
+ Peer IP: 11.0.0.3
 
-[ Local IP: 10.0.0.3]{lang="EN-US"}
+ Local IP: 10.0.0.3
 
-[ Port: 6000]{lang="EN-US"}
+ Port: 6000
 
-[ Track ID: 5]{lang="EN-US"}
+ Track ID: 5
 
-[ Track status: Positive]{lang="EN-US"}
+ Track status: Positive
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_1351690196}[显示全部已创建的多机备份组的信息]{style="font-family:宋体"}
+\# 显示全部已创建的多机备份组的信息
 
-[[\<Sysname\> display vsrp peer]{lang="EN-US"}]{#struct_0_16980_17120_x1735252778}
+\<Sysname\> display vsrp peer
 
-[VSRP peer name: pname1]{lang="EN-US"}
+VSRP peer name: pname1
 
-[ TCP status: Connected]{lang="EN-US"}
+ TCP status: Connected
 
-[ Peer IP: 11.0.0.3]{lang="EN-US"}
+ Peer IP: 11.0.0.3
 
-[ Local IP: 10.0.0.3]{lang="EN-US"}
+ Local IP: 10.0.0.3
 
-[ Port: 6000]{lang="EN-US"}
+ Port: 6000
 
-[ Track ID: 5]{lang="EN-US"}
+ Track ID: 5
 
-[ Track status: Positive]{lang="EN-US"}
+ Track status: Positive
 
-[VSRP peer name: pname2]{lang="EN-US"}
+VSRP peer name: pname2
 
-[ TCP status]{lang="EN-US"}[：]{style="font-family:宋体"}[Disconnected]{lang="EN-US"}
+ TCP status：Disconnected
 
-[ Peer IP: 10.0.0.2]{lang="EN-US"}
+ Peer IP: 10.0.0.2
 
-[ Local IP: 11.0.0.2]{lang="EN-US"}
+ Local IP: 11.0.0.2
 
-[ Port: 5000]{lang="EN-US"}
+ Port: 5000
 
-[ Track ID: 5]{lang="EN-US"}
+ Track ID: 5
 
-[ Track status: Negative]{lang="EN-US"}
+ Track status: Negative
 
-[[表]{style="font-family:宋体"}[1-1 display vsrp peer]{lang="EN-US"}]{#struct_0_16980_17120_211119373}[命令显示信息描述表]{style="font-family:黑体"}
+表1-1 display vsrp peer命令显示信息描述表
 
-[]{#table_struct_0_1744435953}[[字段]{style="font-size:10.0pt;font-family:黑体"}]{#struct_0_16980_17120_923098114}
-:::
+字段
 
-[[描述]{style="font-size:10.0pt;
-   font-family:黑体"}]{#struct_0_16980_17120_x77217931}
+描述
 
-[[VSRP peer name]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16980_17120_x841095033}
+VSRP peer name
 
-[[多机备份组名]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_16980_17120_596488858}
+多机备份组名
 
-[[TCP status]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16980_17120_x2098619264}
+TCP status
 
-[[多机备份组]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_16980_17120_x1768096920}[TCP]{lang="EN-US" style="font-size:9.0pt"}[连接状态，取值包含：]{style="font-size:9.0pt;font-family:宋体"}
+多机备份组TCP连接状态，取值包含：
 
-[[Disconnected]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_16980_17120_10889059}[：连接已断开]{style="font-size:9.0pt;font-family:宋体"}
+Disconnected：连接已断开
 
-[[Connected]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16980_17120_x954683723}[：连接已建立]{style="font-size:9.0pt;font-family:宋体"}
+Connected：连接已建立
 
-[[Peer IP]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16980_17120_x138373896}
+Peer IP
 
-[[多机备份组中]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_16980_17120_1620006614}[TCP]{lang="EN-US" style="font-size:9.0pt"}[连接的对端]{style="font-size:9.0pt;font-family:宋体"}[IP]{lang="EN-US" style="font-size:9.0pt"}[地址]{style="font-size:9.0pt;font-family:
-  宋体"}
+多机备份组中TCP连接的对端IP地址
 
-[[Local IP]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_16980_17120_728910506}
+Local IP
 
-[[多机备份组中]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_16980_17120_x999281723}[TCP]{lang="EN-US" style="font-size:9.0pt"}[连接的本端]{style="font-size:9.0pt;font-family:宋体"}[IP]{lang="EN-US" style="font-size:9.0pt"}[地址]{style="font-size:9.0pt;font-family:
-  宋体"}
+多机备份组中TCP连接的本端IP地址
 
-[[Port]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_16980_17120_351187174}
+Port
 
-[[多机备份组中]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_16980_17120_x99973477}[TCP]{lang="EN-US" style="font-size:9.0pt"}[连接绑定的端口号]{style="font-size:9.0pt;font-family:宋体"}
+多机备份组中TCP连接绑定的端口号
 
-[[Track ID]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16980_17120_1098774707}
+Track ID
 
-[[多机备份组关联的]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_16980_17120_x373871944}[Track]{lang="EN-US" style="font-size:9.0pt"}[项]{style="font-size:9.0pt;font-family:宋体"}
+多机备份组关联的Track项
 
-[[Track status]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16980_17120_x1692889500}
+Track status
 
-[[多机备份组关联的]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_16980_17120_1013090870}[Track]{lang="EN-US" style="font-size:9.0pt"}[项状态，取值包含：]{style="font-size:9.0pt;font-family:宋体"}
+多机备份组关联的Track项状态，取值包含：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Positive]{lang="EN-US"}]{#struct_0_16980_17120_261621034}[：表示状态正常]{lang="EN-US" style="font-family:宋体"}
+·Positive：表示状态正常
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NotReady]{lang="EN-US"}]{#struct_0_16980_17120_x441321379}[：表示无效值]{lang="EN-US" style="font-family:宋体"}
+·NotReady：表示无效值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Negative]{lang="EN-US"}]{#struct_0_16980_17120_157123983}[：表示状态异常]{lang="EN-US" style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#1903411553 .myid}
-[]{#_Toc404796089}[]{#struct_0_16980_17120_566802218}
+·Negative：表示状态异常
 
 **多机备份配置命令 \-- 多机备份对端配置命令 \-- peer**
 
 ------------------------------------------------------------------------
 
-[**[peer]{lang="EN-US"}**]{#struct_0_16980_17120_x1211552763}[命令用来配置到多机备份对端的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接。]{style="font-family:宋体"}
+**[peer**]命令用来配置到多机备份对端的TCP连接。
 
-[**[undo peer]{lang="EN-US"}**]{#struct_0_16980_17120_1581783393}[命令用来删除到多机备份对端的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接。]{style="font-family:宋体"}
+**[undo peer**]命令用来删除到多机备份对端的TCP连接。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_1883636348}
+【命令】
 
-[**[peer ]{lang="EN-US"}***[peer-ip-address]{lang="EN-US"}***[ local ]{lang="EN-US"}***[local-ip-address]{lang="EN-US"}***[ ]{lang="EN-US"}**[\[ **port** *port-id* \]]{lang="EN-US"}]{#struct_0_16980_17120_2000380002}
+**[peer ***peer-ip-address*** local ***local-ip-address***** **port** *port-id* ]
 
-[**[undo peer]{lang="EN-US"}**]{#struct_0_16980_17120_x562882874}
+**[undo peer**]
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_16980_17120_x2010313988}
+【缺省情况】
 
-[[未配置到]{style="font-family:宋体"}]{#struct_0_16980_17120_x1573686983}[多机备份]{style="font-family:宋体"}[对端的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接]{style="font-family:宋体"}[。]{style="font-family:宋体;color:black"}
+未配置到多机备份对端的TCP连接。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_1870517508}
+【视图】
 
-[[多机备份]{style="font-family:宋体"}]{#struct_0_16980_17120_x1547601045}[对端视图]{style="font-family:宋体"}
+多机备份对端视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_x638317628}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_704152702}
+network-admin
 
-[[mdc-admin ]{lang="EN-US"}]{#struct_0_16980_17120_x1093082456}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_459142360}
+【参数】
 
-[*[peer-ip-address]{lang="EN-US"}*]{#struct_0_16980_17120_x671357348}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[多机备份中]{style="font-family:宋体"}[的对端设备]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[peer-ip-address*]：表示多机备份中的对端设备IP地址。
 
-[**[local]{lang="EN-US"}***[ local-ip-address]{lang="EN-US"}*]{#struct_0_16980_17120_2132886159}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[多机备份中]{style="font-family:宋体"}[的本端设备]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[local*** local-ip-address*]：表示多机备份中的本端设备IP地址。
 
-[**[port]{lang="EN-US"}***[ port-id]{lang="EN-US"}*]{#struct_0_16980_17120_1693326945}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接绑定的端口号，取值范围为]{style="font-family:宋体"}[1024]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，默认端口号为]{style="font-family:宋体"}[60032]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[port*** port-id*]：表示TCP连接绑定的端口号，取值范围为1024～65535，默认端口号为60032。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_1235108361}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置]{style="font-family:宋体"}]{#struct_0_16980_17120_52869590}[TCP]{lang="EN-US"}[连接时，本端和对端设备]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址必须为单播地址，且不允许配置为全零地址或环回地址。]{style="font-family:宋体"}
+·配置TCP连接时，本端和对端设备IP地址必须为单播地址，且不允许配置为全零地址或环回地址。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置]{style="font-family:宋体"}]{#struct_0_16980_17120_482817773}[TCP]{lang="EN-US"}[连接时，本端和对端设备]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址不能相同；任意两个多机备份组内]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接的本端和对端]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址不能完全相同。]{style="font-family:宋体"}
+·配置TCP连接时，本端和对端设备IP地址不能相同；任意两个多机备份组内TCP连接的本端和对端IP地址不能完全相同。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置]{style="font-family:宋体"}]{#struct_0_16980_17120_x475813406}[TCP]{lang="EN-US"}[连接时，绑定的端口号不能与已有的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[监听服务使用的端口号冲突。]{style="font-family:宋体"}
+·配置TCP连接时，绑定的端口号不能与已有的TCP监听服务使用的端口号冲突。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若多机备份组内已配置]{style="font-family:宋体"}]{#struct_0_16980_17120_142571422}[TCP]{lang="EN-US"}[连接，重新配置一条]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接时，需要先删除当前]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接，否则无法配置成功。]{style="font-family:宋体"}
+·若多机备份组内已配置TCP连接，重新配置一条TCP连接时，需要先删除当前TCP连接，否则无法配置成功。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1737924331}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_x243640313}[在名为]{style="font-family:宋体"}[pname]{lang="EN-US"}[的多机备份组中，创建]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接，本端设备]{style="font-family:宋体"}[IP]{lang="EN-US"}[为]{style="font-family:宋体"}[11.0.0.2]{lang="EN-US"}[，对端设备]{style="font-family:宋体"}[IP]{lang="EN-US"}[为]{style="font-family:宋体"}[10.0.0.1]{lang="EN-US"}[，]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接绑定的端口号为]{style="font-family:宋体"}[7000]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在名为pname的多机备份组中，创建TCP连接，本端设备IP为11.0.0.2，对端设备IP为10.0.0.1，TCP连接绑定的端口号为7000。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_1364332943}
+\<Sysname\> system-view
 
-[\[Sysname\] vsrp peer pname]{lang="EN-US"}
+Sysname vsrp peer pname
 
-[\[Sysname-vsrp-peer-pname\] peer 10.0.0.1 local 11.0.0.2 port 7000]{lang="EN-US"}
-:::
-
-::: {#-679178060 .myid}
-[]{#_Toc404796090}[]{#struct_0_16980_17120_x2054207690}
+Sysname-vsrp-peer-pname peer 10.0.0.1 local 11.0.0.2 port 7000
 
 **多机备份配置命令 \-- 多机备份对端配置命令 \-- peer ipv6**
 
 ------------------------------------------------------------------------
 
-[**[peer ipv6]{lang="EN-US"}**]{#struct_0_16980_17120_x1949691084}[命令用来配置到多机备份对端的]{style="font-family:宋体"}[IPv6 TCP]{lang="EN-US"}[连接。]{style="font-family:宋体"}
+**[peer ipv6**]命令用来配置到多机备份对端的IPv6 TCP连接。
 
-[**[undo peer ipv6]{lang="EN-US"}**]{#struct_0_16980_17120_x1185290948}[命令用来删除到多机备份对端的]{style="font-family:宋体"}[IPv6 TCP]{lang="EN-US"}[连接。]{style="font-family:宋体"}
+**[undo peer ipv6**]命令用来删除到多机备份对端的IPv6 TCP连接。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_211902685}
+【命令】
 
-[**[peer ipv6 ]{lang="EN-US"}***[peer-ipv6-address]{lang="EN-US"}***[ local ]{lang="EN-US"}***[local-ipv6-address]{lang="EN-US"}***[ ]{lang="EN-US"}**[\[ **port** *port-id* \]]{lang="EN-US"}]{#struct_0_16980_17120_1132519903}
+**[peer ipv6 ***peer-ipv6-address*** local ***local-ipv6-address***** **port** *port-id* ]
 
-[**[undo peer ipv6]{lang="EN-US"}**]{#struct_0_16980_17120_x1035451211}
+**[undo peer ipv6**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16980_17120_x2054666441}
+【缺省情况】
 
-[[未配置到]{style="font-family:宋体"}]{#struct_0_16980_17120_354654147}[多机备份]{style="font-family:宋体"}[对端的]{style="font-family:宋体"}[IPv6 TCP]{lang="EN-US"}[连接]{style="font-family:宋体"}[。]{style="font-family:宋体;color:black"}
+未配置到多机备份对端的IPv6 TCP连接。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1597919148}
+【视图】
 
-[[多机备份]{style="font-family:宋体"}]{#struct_0_16980_17120_x974635349}[对端视图]{style="font-family:宋体"}
+多机备份对端视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_x2002362218}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_30102205}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_1929901348}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1878546600}
+【参数】
 
-[*[peer-ipv6-address]{lang="EN-US"}*]{#struct_0_16980_17120_x2054731977}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[多机备份中]{style="font-family:宋体"}[的对端设备]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[peer-ipv6-address*]：表示多机备份中的对端设备IPv6地址。
 
-[**[local]{lang="EN-US"}***[ local-ipv6-address]{lang="EN-US"}*]{#struct_0_16980_17120_x2056661975}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[多机备份中]{style="font-family:宋体"}[的本端设备]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[local*** local-ipv6-address*]：表示多机备份中的本端设备IPv6地址。
 
-[**[port]{lang="EN-US"}***[ port-id]{lang="EN-US"}*]{#struct_0_16980_17120_x677680524}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[ ]{lang="EN-US" style="font-family:\"Calibri\",\"sans-serif\""}[TCP]{lang="EN-US"}[连接绑定的端口号，取值范围为]{style="font-family:宋体"}[1024]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，默认端口号为]{style="font-family:宋体"}[60032]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[port*** port-id*]：表示IPv6TCP连接绑定的端口号，取值范围为1024～65535，默认端口号为60032。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_x2056518978}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置]{style="font-family:宋体"}]{#struct_0_16980_17120_x1453922550}[IPv6 TCP]{lang="EN-US"}[连接时，本端和对端设备]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址必须为单播地址，且不允许配置为全零地址或环回地址。]{style="font-family:宋体"}
+·配置IPv6 TCP连接时，本端和对端设备IPv6地址必须为单播地址，且不允许配置为全零地址或环回地址。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置]{style="font-family:宋体"}]{#struct_0_16980_17120_1481449544}[IPv6 TCP]{lang="EN-US"}[连接时，本端和对端设备]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址不能相同；任意两个多机备份组内]{style="font-family:宋体"}[IPv6 TCP]{lang="EN-US"}[连接的本端和对端]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址不能完全相同。]{style="font-family:宋体"}
+·配置IPv6 TCP连接时，本端和对端设备IPv6地址不能相同；任意两个多机备份组内IPv6 TCP连接的本端和对端IPv6地址不能完全相同。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置]{style="font-family:宋体"}]{#struct_0_16980_17120_1785546413}[IPv6 TCP]{lang="EN-US"}[连接时，绑定的端口号不能与已有的]{style="font-family:宋体"}[IPv6 TCP]{lang="EN-US"}[监听服务使用的端口号冲突。]{style="font-family:宋体"}
+·配置IPv6 TCP连接时，绑定的端口号不能与已有的IPv6 TCP监听服务使用的端口号冲突。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若多机备份组内已配置]{style="font-family:宋体"}]{#struct_0_16980_17120_x2054535369}[IPv6 TCP]{lang="EN-US"}[连接，重新配置一条]{style="font-family:宋体"}[IPv6 TCP]{lang="EN-US"}[连接时，需要先删除当前]{style="font-family:宋体"}[IPv6 TCP]{lang="EN-US"}[连接，否则无法配置成功。]{style="font-family:宋体"}
+·若多机备份组内已配置IPv6 TCP连接，重新配置一条IPv6 TCP连接时，需要先删除当前IPv6 TCP连接，否则无法配置成功。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1078369743}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_1566146934}[在名为]{style="font-family:宋体"}[pname]{lang="EN-US"}[的多机备份组中，创建]{style="font-family:宋体"}[IPv6 TCP]{lang="EN-US"}[连接，本端设备]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1::1]{lang="EN-US"}[，对端设备]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址为]{style="font-family:宋体"}[2::2]{lang="EN-US"}[，]{style="font-family:宋体"}[IPv6 TCP]{lang="EN-US"}[连接绑定的端口号为]{style="font-family:宋体"}[7000]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在名为pname的多机备份组中，创建IPv6 TCP连接，本端设备IPv6地址为1::1，对端设备IPv6地址为2::2，IPv6 TCP连接绑定的端口号为7000。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_x1072689329}
+\<Sysname\> system-view
 
-[\[Sysname\] vsrp peer pname]{lang="EN-US"}
+Sysname vsrp peer pname
 
-[\[Sysname-vsrp-peer-pname\] peer ipv6 2::2 local 1::1 port 7000]{lang="EN-US"}
-:::
-
-::: {#1609214304 .myid}
-[]{#_Toc404796091}[]{#struct_0_16980_17120_752106785}
+Sysname-vsrp-peer-pname peer ipv6 2::2 local 1::1 port 7000
 
 **多机备份配置命令 \-- 多机备份对端配置命令 \-- track**
 
 ------------------------------------------------------------------------
 
-[**[track]{lang="EN-US"}**]{#struct_0_16980_17120_x492460605}[命令用来配置监视指定的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项。]{style="font-family:宋体"}
+**[track**]命令用来配置监视指定的Track项。
 
-[**[undo track]{lang="EN-US"}**]{#struct_0_16980_17120_x1377753563}[命令用来取消监视指定的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项。]{style="font-family:宋体"}
+**[undo track**]命令用来取消监视指定的Track项。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_1793034057}
+【命令】
 
-[**[track]{lang="EN-US"}***[ track-entry-number]{lang="EN-US"}*]{#struct_0_16980_17120_1746807581}
+**[track*** track-entry-number*]
 
-[**[undo track]{lang="EN-US"}**]{#struct_0_16980_17120_x595997196}
+**[undo track**]
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_16980_17120_210606891}
+【缺省情况】
 
-[[未配置监视指定的]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_16980_17120_1206172738}[项]{style="font-family:宋体"}[。]{style="font-family:宋体;color:black"}
+未配置监视指定的Track项。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1863828844}
+【视图】
 
-[[多机备份]{style="font-family:宋体"}]{#struct_0_16980_17120_468889371}[对端视图]{style="font-family:宋体"}
+多机备份对端视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_1426451562}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_1234085877}
+network-admin
 
-[[mdc-admin ]{lang="EN-US"}]{#struct_0_16980_17120_x1436824039}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_166386824}
+【参数】
 
-[*[track-entry-number]{lang="EN-US"}*]{#struct_0_16980_17120_x1497584145}*[：]{style="font-family:宋体"}*[被监视]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的序号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1024]{lang="EN-US"}[，本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[track-entry-number*]*：*被监视Track项的序号，取值范围为1～1024，本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_532616172}
+【使用指导】
 
-[[用户可以通过多机备份组关联]{style="font-family:宋体"}[Track]{lang="EN-US"}]{#struct_0_16980_17120_1543804758}[来快速检测通道是否可用。未关联]{style="font-family:宋体"}[Track]{lang="EN-US"}[项时，多机备份组只能依靠]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接的状态来检查通道是否可用。当关联]{style="font-family:宋体"}[Track]{lang="EN-US"}[状态为]{style="font-family:宋体"}[Positive]{lang="EN-US"}[或]{style="font-family:宋体"}[NotReady]{lang="EN-US"}[时，多机备份模块才会尝试与对端设备建立]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接；当关联]{style="font-family:宋体"}[Track]{lang="EN-US"}[的状态为]{style="font-family:宋体"}[Negative]{lang="EN-US"}[时，断开与对端设备的控制]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接。]{style="font-family:宋体"}
+用户可以通过多机备份组关联Track来快速检测通道是否可用。未关联Track项时，多机备份组只能依靠TCP连接的状态来检查通道是否可用。当关联Track状态为Positive或NotReady时，多机备份模块才会尝试与对端设备建立TCP连接；当关联Track的状态为Negative时，断开与对端设备的控制TCP连接。
 
-[[当]{style="font-family:宋体"}[TCP]{lang="EN-US"}]{#struct_0_16980_17120_x539987866}[连接有效时，设备上的]{style="font-family:宋体"}[多机备份]{style="font-family:宋体"}[功能才是生效的。]{style="font-family:宋体"}
+当TCP连接有效时，设备上的多机备份功能才是生效的。
 
-[[Track]{lang="EN-US"}]{#struct_0_16980_17120_x219970268}[项的详细介绍请参见"可靠性配置指导"中的"]{style="font-family:宋体"}[Track]{lang="EN-US"}["。]{style="font-family:宋体"}
+Track项的详细介绍请参见"可靠性配置指导"中的"Track"。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1118317828}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_x745706665}[在名为]{style="font-family:宋体"}[pname]{lang="EN-US"}[的多机备份对端视图下，配置关联]{style="font-family:宋体"}[Track]{lang="EN-US"}[项，]{style="font-family:宋体"}[Track]{lang="EN-US"}[序号为]{style="font-family:宋体"}[10]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在名为pname的多机备份对端视图下，配置关联Track项，Track序号为10。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_1326317105}
+\<Sysname\> system-view
 
-[\[Sysname\] vsrp peer pname]{lang="EN-US"}
+Sysname vsrp peer pname
 
-[\[Sysname-vsrp-peer-pname\] track 10]{lang="EN-US"}
-:::
-
-::: {#-1747699635 .myid}
-[]{#_Toc404796092}[]{#struct_0_16980_17120_x773865624}
+Sysname-vsrp-peer-pname track 10
 
 **多机备份配置命令 \-- 多机备份对端配置命令 \-- vsrp peer**
 
 ------------------------------------------------------------------------
 
-[**[vsrp peer]{lang="EN-US"}**]{#struct_0_16980_17120_284844245}[命令用来创建多机备份对端并进入多机备份对端视图。如果已创建多机备份对端，执行该命令直接进入多机备份对端视图。]{style="font-family:宋体"}
+**[vsrp peer**]命令用来创建多机备份对端并进入多机备份对端视图。如果已创建多机备份对端，执行该命令直接进入多机备份对端视图。
 
-[**[undo vsrp peer]{lang="EN-US"}**]{#struct_0_16980_17120_x1146204512}[命令用来删除指定的多机备份对端。]{style="font-family:宋体"}
+**[undo vsrp peer**]命令用来删除指定的多机备份对端。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1500266947}
+【命令】
 
-[**[vsrp peer ]{lang="EN-US"}***[peer-name]{lang="EN-US"}*]{#struct_0_16980_17120_1466965808}
+**[vsrp peer ***peer-name*]
 
-[**[undo vsrp peer]{lang="EN-US"}***[ peer-name]{lang="EN-US"}*]{#struct_0_16980_17120_x1640588884}
+**[undo vsrp peer*** peer-name*]
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_16980_17120_x1851171747}
+【缺省情况】
 
-[[未创建]{style="font-family:宋体;color:black"}]{#struct_0_16980_17120_1797731878}[多机备份]{style="font-family:宋体"}[对端。]{style="font-family:宋体;color:black"}
+未创建多机备份对端。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1242569815}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_16980_17120_x169192030}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_1722354166}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_x1198235240}
+network-admin
 
-[[mdc-admin ]{lang="EN-US"}]{#struct_0_16980_17120_x1543326077}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1402566250}
+【参数】
 
-[*[peer-name]{lang="EN-US"}*]{#struct_0_16980_17120_x199586951}[：多机备份对端名称，取值为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[peer-name*]：多机备份对端名称，取值为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_1329663809}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[设备上最多支持创建]{style="font-family:宋体"}]{#struct_0_16980_17120_2135069039}[64]{lang="EN-US"}[个多机备份对端。]{style="font-family:宋体"}
+·设备上最多支持创建64个多机备份对端。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[删除多机备份对端时，若已有多机备份实例关联该多机备份对端，需先解除关联关系，否则无法删除。]{style="font-family:宋体"}]{#struct_0_16980_17120_x791463718}
+·删除多机备份对端时，若已有多机备份实例关联该多机备份对端，需先解除关联关系，否则无法删除。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_1121241172}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_127903934}[创建名称为]{style="font-family:宋体"}[pname]{lang="EN-US"}[的多机备份组并进入多机备份对端视图。]{style="font-family:宋体"}
+\# 创建名称为pname的多机备份组并进入多机备份对端视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_1211112344}
+\<Sysname\> system-view
 
-[\[Sysname\] vsrp peer pname]{lang="EN-US"}
+Sysname vsrp peer pname
 
-[\[Sysname-vsrp-peer-pname\]]{lang="EN-US"}
-:::
-
-::: {#275825121 .myid}
-[]{#_Toc136937988}[]{#_Toc99445937}[]{#_Toc34203770}[]{#_Toc33197994}[]{#_Toc404796094}[]{#struct_0_16980_17120_x1114679663}[]{#_Toc350446338}[]{#_Toc350329045}[]{#_Toc349805343}
+Sysname-vsrp-peer-pname
 
 **多机备份配置命令 \-- 多机备份实例配置命令 \-- backup id**
 
 ------------------------------------------------------------------------
 
-[**[backup id]{lang="EN-US"}**]{#struct_0_16980_17120_x179406818}[命令用来配置]{style="font-family:宋体"}[多机备份]{style="font-family:宋体"}[实例的备份]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[backup id**]命令用来配置多机备份实例的备份ID。
 
-[**[undo backup id]{lang="EN-US"}**]{#struct_0_16980_17120_x1685537248}[命令用来删除]{style="font-family:宋体"}[多机备份]{style="font-family:宋体"}[实例的备份]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo backup id**]命令用来删除多机备份实例的备份ID。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x834771859}
+【命令】
 
-[**[backup id ]{lang="EN-US"}***[backup-id]{lang="EN-US"}***[ peer ]{lang="EN-US"}***[peer-name]{lang="EN-US"}*]{#struct_0_16980_17120_163517691}
+**[backup id ***backup-id*** peer ***peer-name*]
 
-[**[undo backup]{lang="EN-US"}***[ ]{lang="EN-US"}***[id]{lang="EN-US"}**]{#struct_0_16980_17120_643705796}
+**[undo backup******id**]
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_16980_17120_1379703235}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}]{#struct_0_16980_17120_561031492}[多机备份实例的备份]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体;color:black"}
+未配置多机备份实例的备份ID。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_x830749011}
+【视图】
 
-[[多机备份]{style="font-family:宋体"}]{#struct_0_16980_17120_x1407642892}[实例视图]{style="font-family:宋体"}
+多机备份实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_155878772}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_348910704}
+network-admin
 
-[[mdc-admin ]{lang="EN-US"}]{#struct_0_16980_17120_x792671066}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_196260301}
+【参数】
 
-[*[backup-id]{lang="EN-US"}*]{#struct_0_16980_17120_x1239109286}[：表示]{style="font-family:宋体"}[多机备份]{style="font-family:宋体"}[实例的备份标识符，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1024]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[backup-id*]：表示多机备份实例的备份标识符，取值范围为1～1024。
 
-[*[peer-name]{lang="EN-US"}*]{#struct_0_16980_17120_1246163466}[：表示关联的]{style="font-family:宋体"}[多机备份]{style="font-family:宋体"}[对端名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[peer-name*]：表示关联的多机备份对端名称，为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_1876545310}
+【使用指导】
 
-[[需要注意的是[:]{lang="EN-US"}]{style="font-family:宋体"}]{#struct_0_16980_17120_x797018336}
+需要注意的是:
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置多机备份实例备份]{style="font-family:宋体"}]{#struct_0_16980_17120_1178632299}[ID]{lang="EN-US"}[时，多机备份对端必须已存在，且]{style="font-family:宋体"}*[backup-id]{lang="EN-US"}*[在该多机备份对端内未被使用过。]{style="font-family:宋体"}
+·配置多机备份实例备份ID时，多机备份对端必须已存在，且*backup-id*在该多机备份对端内未被使用过。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置多机备份实例备份]{style="font-family:宋体"}]{#struct_0_16980_17120_1729601632}[ID]{lang="EN-US"}[时，若多机备份实例已配置备份]{style="font-family:宋体"}[ID]{lang="EN-US"}[，则需先删除当前备份]{style="font-family:宋体"}[ID]{lang="EN-US"}[后，才能配置新的备份]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+·配置多机备份实例备份ID时，若多机备份实例已配置备份ID，则需先删除当前备份ID后，才能配置新的备份ID。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1228625865}
+【举例】
 
-[]{#_Toc350446339}[]{#_Toc350329046}[]{#_Toc349805344}[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_x1148839012}[配置名为]{style="font-family:宋体"}[aaa]{lang="EN-US"}[的多机备份实例在多机备份对端]{style="font-family:宋体"}[pname]{lang="EN-US"}[中的备份]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[5]{lang="EN-US"}[。]{style="font-family:
-宋体"}
+\# 配置名为aaa的多机备份实例在多机备份对端pname中的备份ID为5。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_x1070740149}
+\<Sysname\> system-view
 
-[\[Sysname\] vsrp instance aaa]{lang="EN-US"}
+Sysname vsrp instance aaa
 
-[\[Sysname-vsrp-instance-aaa\] backup id 5 peer pname]{lang="EN-US"}
-:::
-
-::: {#1428856670 .myid}
-[]{#_Toc404796095}[]{#struct_0_16980_17120_692847096}
+Sysname-vsrp-instance-aaa backup id 5 peer pname
 
 **多机备份配置命令 \-- 多机备份实例配置命令 \-- backup mode**
 
 ------------------------------------------------------------------------
 
-[**[backup mode]{lang="EN-US"}**]{#struct_0_16980_17120_429004253}[命令用来设置]{style="font-family:宋体"}[多机备份]{style="font-family:宋体"}[实例的备份模式]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[backup mode**]命令用来设置多机备份实例的备份模式。
 
-[**[undo backup mode ]{lang="EN-US"}**]{#struct_0_16980_17120_x725591437}[命令用来恢复缺省]{style="font-family:宋体"}[情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo backup mode **]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x936610348}
+【命令】
 
-[**[backup mode ]{lang="EN-US"}**[{ **hot** \| **warm** }]{lang="EN-US"}]{#struct_0_16980_17120_x6233383}
+**[backup mode **[{ **hot** \| **warm** }]]
 
-[**[undo backup mode]{lang="EN-US"}**]{#struct_0_16980_17120_1738983282}
+**[undo backup mode**]
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_16980_17120_x691369834}
+【缺省情况】
 
-[[多机备份实例的备份模式为热备份]{style="font-family:宋体"}]{#struct_0_16980_17120_x932705171}[。]{style="font-family:宋体;
-color:black"}
+多机备份实例的备份模式为热备份。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1686135890}
+【视图】
 
-[[多机备份]{style="font-family:宋体"}]{#struct_0_16980_17120_x737998416}[实例视图]{style="font-family:宋体"}
+多机备份实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_1028163534}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_1731105169}
+network-admin
 
-[[mdc-admin ]{lang="EN-US"}]{#struct_0_16980_17120_x643051363}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_x472087294}
+【参数】
 
-[**[hot]{lang="EN-US"}**]{#struct_0_16980_17120_1011828889}[：表示热备份。]{style="font-family:宋体"}
+**[hot**]：表示热备份。
 
-[**[warm]{lang="EN-US"}**]{#struct_0_16980_17120_364488957}[：表示温备份。]{style="font-family:宋体"}
+**[warm**]：表示温备份。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_870273881}
+【使用指导】
 
-[[在不同的备份模式下，对于收到的备份信息，设备有以下处理方式：]{style="font-family:宋体"}]{#struct_0_16980_17120_x2098404792}
+在不同的备份模式下，对于收到的备份信息，设备有以下处理方式：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[热备份：当备用设备收到主用设备的备份信息后，立即下发备份信息到转发平面。这样，主用设备发生故障时，备用设备能马上指导报文转发，可以实现业务终端快速切换。]{style="font-family:宋体"}]{#struct_0_16980_17120_480938058}
+·热备份：当备用设备收到主用设备的备份信息后，立即下发备份信息到转发平面。这样，主用设备发生故障时，备用设备能马上指导报文转发，可以实现业务终端快速切换。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[温备份：当备用设备收到主用设备的备份信息后，不会立即下发备份信息到转发平面，当主用设备发生故障后，设备的主备状态发生切换，备用设备才开始才开始下发备份信息到转发平面，并指导报文转发。业务切换到备用设备上的时间比热备份切换时间稍长。]{style="font-family:宋体"}]{#struct_0_16980_17120_x947450160}
+·温备份：当备用设备收到主用设备的备份信息后，不会立即下发备份信息到转发平面，当主用设备发生故障后，设备的主备状态发生切换，备用设备才开始才开始下发备份信息到转发平面，并指导报文转发。业务切换到备用设备上的时间比热备份切换时间稍长。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1580265132}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_x335250167}[设置多机备份实例备份模式为温备份。]{style="font-family:宋体"}
+\# 设置多机备份实例备份模式为温备份。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_x893066773}
+\<Sysname\> system-view
 
-[\[Sysname\] vsrp instance aaa]{lang="EN-US"}
+Sysname vsrp instance aaa
 
-[\[Sysname-vsrp-instance-aaa\] backup mode warm]{lang="EN-US"}
-:::
-
-::: {#-1805665752 .myid}
-[]{#_Toc404796096}[]{#struct_0_16980_17120_x239333772}
+Sysname-vsrp-instance-aaa backup mode warm
 
 **多机备份配置命令 \-- 多机备份实例配置命令 \-- bind vrrp vrid**
 
 ------------------------------------------------------------------------
 
-[**[bind vrrp vrid]{lang="EN-US"}**]{#struct_0_16980_17120_x1765779756}[命令用来绑定多机备份实例和]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[备份组。]{style="font-family:宋体"}
+**[bind vrrp vrid**]命令用来绑定多机备份实例和VRRP备份组。
 
-[**[undo bind vrrp]{lang="EN-US"}**]{#struct_0_16980_17120_x497816500}[命令用来解]{style="font-family:宋体"}[除多机备份实例和]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[备份组的绑定]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo bind vrrp**]命令用来解除多机备份实例和VRRP备份组的绑定。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1622929441}
+【命令】
 
-[**[bind vrrp vrid]{lang="EN-US"}***[ virtual-router-id ]{lang="EN-US"}***[interface]{lang="EN-US"}***[ interface-type interface-number]{lang="EN-US"}*]{#struct_0_16980_17120_923032578}
+**[bind vrrp vrid*** virtual-router-id ***interface*** interface-type interface-number*]
 
-[**[undo bind vrrp]{lang="EN-US"}**]{#struct_0_16980_17120_766766151}
+**[undo bind vrrp**]
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_16980_17120_x597905989}
+【缺省情况】
 
-[[未绑定]{style="font-family:宋体"}]{#struct_0_16980_17120_x1102150558}[多机备份实例和]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[。]{style="font-family:宋体;color:black"}
+未绑定多机备份实例和VRRP备份组。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_1764048992}
+【视图】
 
-[[多机备份]{style="font-family:宋体"}]{#struct_0_16980_17120_x1050300692}[实例视图]{style="font-family:宋体"}
+多机备份实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_1778526482}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_x900730867}
+network-admin
 
-[[mdc-admin ]{lang="EN-US"}]{#struct_0_16980_17120_x1782713981}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_1202814159}
+【参数】
 
-[*[virtual-router-id]{lang="EN-US"}*]{#struct_0_16980_17120_x53611183}[：表示]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[virtual-router-id*]：表示VRRP备份组ID，取值范围为1～255。
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_16980_17120_815689077}[：表示]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[备份组所属接口的接口类型和接口编号。]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：表示VRRP备份组所属接口的接口类型和接口编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_x44482651}
+【使用指导】
 
-[[多机备份实例通过绑定]{style="font-family:宋体"}[VRRP]{lang="EN-US"}]{#struct_0_16980_17120_x1252567505}[备份组来确定自身的主备身份。一个多机备份实例只能绑定一个]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[备份组。指定]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[备份组时，]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[备份组可以不存在于指定的接口下。]{style="font-family:宋体"}
+多机备份实例通过绑定VRRP备份组来确定自身的主备身份。一个多机备份实例只能绑定一个VRRP备份组。指定VRRP备份组时，VRRP备份组可以不存在于指定的接口下。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_x2076658826}
+【举例】
 
-[]{#_Toc350446340}[]{#_Toc350329047}[]{#_Toc349805345}[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_1194085205}[配置多机备份实例]{style="font-family:宋体"}[aaa]{lang="EN-US"}[与接口]{style="font-family:宋体"}[GigabitEthernet 2/0/2]{lang="EN-US"}[上]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[的]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[2]{lang="EN-US"}[绑定。]{style="font-family:宋体"}
+\# 配置多机备份实例aaa与接口GigabitEthernet 2/0/2上IPv4的VRRP备份组2绑定。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_x999347259}
+\<Sysname\> system-view
 
-[\[Sysname\] vsrp instance aaa]{lang="EN-US"}
+Sysname vsrp instance aaa
 
-[\[Sysname-vsrp-instance-aaa\] bind vrrp vrid 2 interface gigabitethernet 2/0/2]{lang="EN-US"}
-:::
-
-::: {#46809331 .myid}
-[]{#_Toc404796097}[]{#struct_0_16980_17120_x488516961}
+Sysname-vsrp-instance-aaa bind vrrp vrid 2 interface gigabitethernet 2/0/2
 
 **多机备份配置命令 \-- 多机备份实例配置命令 \-- bind vrrp ipv6 vrid**
 
 ------------------------------------------------------------------------
 
-[**[bind vrrp ipv6 vrid]{lang="EN-US"}**]{#struct_0_16980_17120_x488320353}[命令用来绑定多机备份实例和]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组。]{style="font-family:宋体"}
+**[bind vrrp ipv6 vrid**]命令用来绑定多机备份实例和IPv6 VRRP备份组。
 
-[**[undo bind vrrp ipv6]{lang="EN-US"}**]{#struct_0_16980_17120_781796494}[命令用来解除]{style="font-family:宋体"}[多机备份实例和]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组的绑定]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo bind vrrp ipv6**]命令用来解除多机备份实例和IPv6 VRRP备份组的绑定。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_52805360}
+【命令】
 
-[**[bind vrrp ipv6 vrid]{lang="EN-US"}***[ virtual-router-id ]{lang="EN-US"}***[interface]{lang="EN-US"}***[ interface-type interface-number]{lang="EN-US"}*]{#struct_0_16980_17120_x1529982868}
+**[bind vrrp ipv6 vrid*** virtual-router-id ***interface*** interface-type interface-number*]
 
-[**[undo bind vrrp ipv6]{lang="EN-US"}**]{#struct_0_16980_17120_1703961559}
+**[undo bind vrrp ipv6**]
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_16980_17120_1003525984}
+【缺省情况】
 
-[[未绑定]{style="font-family:宋体"}]{#struct_0_16980_17120_1688758870}[多机备份实例和]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[。]{style="font-family:宋体;color:black"}
+未绑定多机备份实例和IPv6 VRRP备份组。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_x133246415}
+【视图】
 
-[[多机备份]{style="font-family:宋体"}]{#struct_0_16980_17120_911210682}[实例视图]{style="font-family:宋体"}
+多机备份实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_x488385889}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_1094421400}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_1879761806}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_1381875723}
+【参数】
 
-[*[virtual-router-id]{lang="EN-US"}*]{#struct_0_16980_17120_476822899}[：表示]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[virtual-router-id*]：表示IPv6 VRRP备份组ID，取值范围为1～255。
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_16980_17120_x1419666887}[：表示]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组所属接口的接口类型和接口编号。]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：表示IPv6 VRRP备份组所属接口的接口类型和接口编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_2106655013}
+【使用指导】
 
-[[多机备份实例中的设备通过绑定]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}]{#struct_0_16980_17120_792682163}[备份组来确定自身的主备身份。一个多机备份实例只能绑定一个]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组。指定]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组时，]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组可以不存在于指定的接口下。]{style="font-family:宋体"}
+多机备份实例中的设备通过绑定IPv6 VRRP备份组来确定自身的主备身份。一个多机备份实例只能绑定一个IPv6 VRRP备份组。指定IPv6 VRRP备份组时，IPv6 VRRP备份组可以不存在于指定的接口下。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_x488189281}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_796398626}[配置多机备份实例]{style="font-family:宋体"}[aaa]{lang="EN-US"}[与接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上]{style="font-family:宋体"}[IPv6 VRRP]{lang="EN-US"}[备份组]{style="font-family:宋体"}[2]{lang="EN-US"}[绑定。]{style="font-family:宋体"}
+\# 配置多机备份实例aaa与接口GigabitEthernet1/0/1上IPv6 VRRP备份组2绑定。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_x1223428401}
+\<Sysname\> system-view
 
-[\[Sysname\] vsrp instance aaa]{lang="EN-US"}
+Sysname vsrp instance aaa
 
-[\[Sysname-vsrp-instance-aaa\] bind vrrp ipv6 vrid 2 interface gigabitethernet 1/0/1]{lang="EN-US"}
-:::
-
-::: {#297699834 .myid}
-[]{#_Toc404796098}[]{#struct_0_16980_17120_298097252}
+Sysname-vsrp-instance-aaa bind vrrp ipv6 vrid 2 interface gigabitethernet 1/0/1
 
 **多机备份配置命令 \-- 多机备份实例配置命令 \-- display vsrp instance**
 
 ------------------------------------------------------------------------
 
-[**[display vsrp instance]{lang="EN-US"}**]{#struct_0_16980_17120_x1592688528}[命令显示]{style="font-family:宋体"}[多机备份]{style="font-family:宋体"}[实例信息。]{style="font-family:宋体"}
+**[display vsrp instance**]命令显示多机备份实例信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x222403901}
+【命令】
 
-[**[display vsrp instance ]{lang="EN-US"}**[\[ *instance-name* \]]{lang="EN-US"}]{#struct_0_16980_17120_x296788183}
+**[display vsrp instance ** *instance-name* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_1643544952}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_16980_17120_1918595265}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_1679516237}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_1242165254}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_16980_17120_x204020245}
+network-operator
 
-[[mdc-admin ]{lang="EN-US"}]{#struct_0_16980_17120_x530452358}
+mdc-admin
 
-[[mdc-operator ]{lang="EN-US"}]{#struct_0_16980_17120_x1193161779}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_1022985869}
+【参数】
 
-[*[instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_x1702898454}*[：]{style="font-family:宋体"}*[多机备份实例名，取值为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[instance-name*]*：*多机备份实例名，取值为1～31个字符的字符串，区分大小写。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_16980_17120_724796419}
+【描述】
 
-[[不指定多机备份实例名称时，显示所有的多机备份实例信息。]{style="font-family:宋体"}]{#struct_0_16980_17120_x42247994}
+不指定多机备份实例名称时，显示所有的多机备份实例信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_566736682}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_499318410}[显示已创建的多机备份实例]{style="font-family:宋体"}[aaa]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+\# 显示已创建的多机备份实例aaa信息。
 
-[[\<Sysname\> display vsrp instance aaa]{lang="EN-US"}]{#struct_0_16980_17120_362616245}
+\<Sysname\> display vsrp instance aaa
 
-[VSRP instance name: aaa]{lang="EN-US"}
+VSRP instance name: aaa
 
-[ VSRP peer name: pname1]{lang="EN-US"}
+ VSRP peer name: pname1
 
-[ Backup ID: 10]{lang="EN-US"}
+ Backup ID: 10
 
-[ Bound VRID: VRRP VRID 1 interface GigabitEthernet2/0/1]{lang="EN-US"}
+ Bound VRID: VRRP VRID 1 interface GigabitEthernet2/0/1
 
-[ Instance status: Master]{lang="EN-US"}
+ Instance status: Master
 
-[ Local status: Master]{lang="EN-US"}
+ Local status: Master
 
-[ Peer status: Backup]{lang="EN-US"}
+ Peer status: Backup
 
-[ Backup mode: Warm]{lang="EN-US"}
+ Backup mode: Warm
 
-[ Traffic backup interval: 10(minutes)]{lang="EN-US"}
+ Traffic backup interval: 10(minutes)
 
-[ Traffic backup threshold: 50(MB)]{lang="EN-US"}
+ Traffic backup threshold: 50(MB)
 
-[ NAS IP: 10.0.0.1]{lang="EN-US"}
+ NAS IP: 10.0.0.1
 
-[ NAS port: GigabitEthernet2/0/2]{lang="EN-US"}
+ NAS port: GigabitEthernet2/0/2
 
-[ NAS ID: h3c]{lang="EN-US"}
+ NAS ID: h3c
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_1484657775}[显示全部已创建的多机备份实例信息。]{style="font-family:宋体"}
+\# 显示全部已创建的多机备份实例信息。
 
-[[\<Sysname\> display vsrp instance]{lang="EN-US"}]{#struct_0_16980_17120_2132820623}
+\<Sysname\> display vsrp instance
 
-[VSRP instance name: aaa]{lang="EN-US"}
+VSRP instance name: aaa
 
-[ VSRP peer name: pname1]{lang="EN-US"}
+ VSRP peer name: pname1
 
-[ Backup ID: 10]{lang="EN-US"}
+ Backup ID: 10
 
-[ Bound VRID: VRRP VRID 1 interface GigabitEthernet2/0/1]{lang="EN-US"}
+ Bound VRID: VRRP VRID 1 interface GigabitEthernet2/0/1
 
-[ Instance status : Master]{lang="EN-US"}
+ Instance status : Master
 
-[ Local status: Master]{lang="EN-US"}
+ Local status: Master
 
-[ Peer status: Backup]{lang="EN-US"}
+ Peer status: Backup
 
-[ Backup mode: Warm]{lang="EN-US"}
+ Backup mode: Warm
 
-[ Traffic backup interval: 10(minutes)]{lang="EN-US"}
+ Traffic backup interval: 10(minutes)
 
-[ Traffic backup threshold: 50(MB)]{lang="EN-US"}
+ Traffic backup threshold: 50(MB)
 
-[ NAS IP: 10.0.0.1]{lang="EN-US"}
+ NAS IP: 10.0.0.1
 
-[ NAS port: GigabitEthernet2/0/2]{lang="EN-US"}
+ NAS port: GigabitEthernet2/0/2
 
-[ NAS ID: h3c]{lang="EN-US"}
+ NAS ID: h3c
 
-[VSRP instance name: bbb]{lang="EN-US"}
+VSRP instance name: bbb
 
-[ VSRP peer name: pname2]{lang="EN-US"}
+ VSRP peer name: pname2
 
-[ Backup ID: 10]{lang="EN-US"}
+ Backup ID: 10
 
-[ Bound VRID: VRRP VRID 2 interface GigabitEthernet3/0/1]{lang="EN-US"}
+ Bound VRID: VRRP VRID 2 interface GigabitEthernet3/0/1
 
-[ Instance status : Master]{lang="EN-US"}
+ Instance status : Master
 
-[ Local status: Master]{lang="EN-US"}
+ Local status: Master
 
-[ Peer status: Backup]{lang="EN-US"}
+ Peer status: Backup
 
-[ Backup mode: Warm]{lang="EN-US"}
+ Backup mode: Warm
 
-[ Traffic backup interval: 5(minutes)]{lang="EN-US"}
+ Traffic backup interval: 5(minutes)
 
-[ Traffic backup threshold: 100(MB)]{lang="EN-US"}
+ Traffic backup threshold: 100(MB)
 
-[ NAS IP: 10.0.0.2]{lang="EN-US"}
+ NAS IP: 10.0.0.2
 
-[ NAS port: GigabitEthernet3/0/2]{lang="EN-US"}
+ NAS port: GigabitEthernet3/0/2
 
-[ NAS ID: h3c]{lang="EN-US"}
+ NAS ID: h3c
 
-[[表]{style="font-family:宋体"}[1-2 display vsrp instance]{lang="EN-US"}]{#struct_0_16980_17120_156370836}[命令显示信息描述表]{style="font-family:黑体"}
+表1-2 display vsrp instance命令显示信息描述表
 
-[]{#table_struct_0_1738512209}[[字段]{style="font-size:10.0pt;font-family:黑体"}]{#struct_0_16980_17120_378711692}
-:::
+字段
 
-[[描述]{style="font-size:10.0pt;
-   font-family:黑体"}]{#struct_0_16980_17120_x988653564}
+描述
 
-[[VSRP instance name]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16980_17120_x1758801773}
+VSRP instance name
 
-[[多机备份实例名]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_16980_17120_x604652281}
+多机备份实例名
 
-[[VSRP peer name]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16980_17120_x1976563595}
+VSRP peer name
 
-[[多机备份实例关联的多机备份对端名]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_16980_17120_x81824483}
+多机备份实例关联的多机备份对端名
 
-[[Backup ID]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16980_17120_x596062732}
+Backup ID
 
-[[多机备份实例备份]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_16980_17120_1661811725}[ID]{lang="EN-US" style="font-size:9.0pt"}
+多机备份实例备份ID
 
-[[Bound VRID]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16980_17120_x1030961312}
+Bound VRID
 
-[[多机备份实例绑定接口下的]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_16980_17120_x1366702992}[VRID]{lang="EN-US" style="font-size:
-  9.0pt"}
+多机备份实例绑定接口下的VRID
 
-[[Instance status]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16980_17120_x967568386}
+Instance status
 
-[[多机备份实例状态，状态取值包括：]{style="font-family:宋体"}]{#struct_0_16980_17120_1694399573}
+多机备份实例状态，状态取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Master]{lang="EN-US"}]{#struct_0_16980_17120_x873971875}[：表示在该多机备份实例中，本设备作为主用设备]{style="font-family:宋体"}
+·Master：表示在该多机备份实例中，本设备作为主用设备
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Backup]{lang="EN-US"}]{#struct_0_16980_17120_1490783812}[：表示在该多级备份实例中，本设备作为备用设备]{style="font-family:宋体"}
+·Backup：表示在该多级备份实例中，本设备作为备用设备
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Down]{lang="EN-US"}]{#struct_0_16980_17120_1877473916}[：表示在该多机备份实例中，本设备不运行]{style="font-family:宋体"}
+·Down：表示在该多机备份实例中，本设备不运行
 
-[[Local status]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16980_17120_x385963747}
+Local status
 
-[[本端本地状态，状态取值包括：]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_16980_17120_x940191568}
+本端本地状态，状态取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Master]{lang="EN-US"}]{#struct_0_16980_17120_1326251569}[：表示主用状态]{lang="EN-US" style="font-family:宋体"}
+·Master：表示主用状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Backup]{lang="EN-US"}]{#struct_0_16980_17120_1161996479}[：表示备用状态]{style="font-family:宋体"}
+·Backup：表示备用状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Init]{lang="EN-US"}]{#struct_0_16980_17120_1882328650}[：表示初始化状态]{lang="EN-US" style="font-family:宋体"}
+·Init：表示初始化状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Down]{lang="EN-US"}]{#struct_0_16980_17120_2029114042}[：表示未获取到本端本地状态]{style="font-family:宋体"}
+·Down：表示未获取到本端本地状态
 
-[[Peer status]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16980_17120_x969845618}
+Peer status
 
-[[对端本地状态，状态取值包括：]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_16980_17120_1448765646}
+对端本地状态，状态取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Master]{lang="EN-US"}]{#struct_0_16980_17120_x733157976}[：表示主用状态]{lang="EN-US" style="font-family:宋体"}
+·Master：表示主用状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Backup]{lang="EN-US"}]{#struct_0_16980_17120_1706918971}[：表示备用状态]{style="font-family:宋体"}
+·Backup：表示备用状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Init]{lang="EN-US"}]{#struct_0_16980_17120_779011999}[：表示初始化状态]{lang="EN-US" style="font-family:宋体"}
+·Init：表示初始化状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Down]{lang="EN-US"}]{#struct_0_16980_17120_x1402631786}[：表示未获取到对端本地状态]{style="font-family:宋体"}
+·Down：表示未获取到对端本地状态
 
-[[Backup mode]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_16980_17120_211129789}
+Backup mode
 
-[[多机备份实例备份模式，取值为：]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_16980_17120_x1785303802}
+多机备份实例备份模式，取值为：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Hot]{lang="EN-US"}]{#struct_0_16980_17120_2111618159}[：热备份]{lang="EN-US" style="font-family:宋体"}
+·Hot：热备份
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Warm]{lang="EN-US"}]{#struct_0_16980_17120_x656630333}[：温备份]{lang="EN-US" style="font-family:宋体"}
+·Warm：温备份
 
-[[Traffic backup interval]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16980_17120_x1002507575}
+Traffic backup interval
 
-[[流量备份时间间隔]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_16980_17120_x486254875}
+流量备份时间间隔
 
-[[Traffic backup threshold]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16980_17120_x965667155}
+Traffic backup threshold
 
-[[流量备份阈值]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_16980_17120_163452155}
+流量备份阈值
 
-[[NAS IP]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_16980_17120_959160279}
+NAS IP
 
-[[业务逻辑]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_16980_17120_x285438763}[IP]{lang="EN-US" style="font-size:9.0pt"}[地址]{style="font-size:9.0pt;font-family:宋体"}
+业务逻辑IP地址
 
-[[NAS port]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_16980_17120_1640210456}
+NAS port
 
-[[业务逻辑接口名]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_16980_17120_1989559324}
+业务逻辑接口名
 
-[[NAS ID]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_16980_17120_596461200}
+NAS ID
 
-[[业务逻辑主机名]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_16980_17120_592587972}
-
-[ ]{lang="EN-US"}
-
-::: {#-175403411 .myid}
-[]{#_Toc404796099}[]{#struct_0_16980_17120_1729536096}
+业务逻辑主机名
 
 **多机备份配置命令 \-- 多机备份实例配置命令 \-- nas**
 
 ------------------------------------------------------------------------
 
-[**[nas]{lang="EN-US"}**]{#struct_0_16980_17120_x453424627}[命令用来配置]{style="font-family:宋体"}[NAS]{lang="EN-US"}[参数。]{style="font-family:宋体"}
+**[nas**]命令用来配置NAS参数。
 
-[**[undo nas]{lang="EN-US"}**]{#struct_0_16980_17120_x987619297}[命令用来删除已配置的]{style="font-family:宋体"}[NAS]{lang="EN-US"}[参数。]{style="font-family:宋体"}
+**[undo nas**]命令用来删除已配置的NAS参数。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_1579488502}
+【命令】
 
-[**[nas]{lang="EN-US"}**[ { **id** *host-name* **\| ip** *ip-address* \| **port** *interface-type interface-number* }]{lang="EN-US"}]{#struct_0_16980_17120_x1881567318}
+**[nas**[ { **id** *host-name* **\| ip** *ip-address* \| **port** *interface-type interface-number* }]]
 
-[**[undo]{lang="EN-US"}**[ **nas** \[ **id** \| **ip** \| **port** \]]{lang="EN-US"}]{#struct_0_16980_17120_1301841877}
+**[undo**[ **nas** [ **id** \| **ip** \| **port** ]]]
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_16980_17120_1094162306}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[NAS]{lang="EN-US"}]{#struct_0_16980_17120_333737816}[参数]{style="font-family:宋体"}[。]{style="font-family:宋体;color:black"}
+未配置NAS参数。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_x272387830}
+【视图】
 
-[[多机备份]{style="font-family:宋体"}]{#struct_0_16980_17120_x750565080}[实例视图]{style="font-family:宋体"}
+多机备份实例视图
 
-[[【]{style="font-family:黑体"}]{#struct_0_16980_17120_x1222923414}[缺省用户角色]{style="font-family:黑体"}[】]{style="font-family:黑体"}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_756911877}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_1510184271}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_x2111973514}
+【参数】
 
-[**[id]{lang="EN-US"}***[ host-name]{lang="EN-US"}*]{#struct_0_16980_17120_99484407}[：表示]{style="font-family:宋体"}[业务逻辑主机名]{style="font-family:宋体"}[，]{style="font-family:宋体"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[127]{lang="EN-US"}[个字符的字符串，不区分大小写]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[id*** host-name*]：表示业务逻辑主机名，为1～127个字符的字符串，不区分大小写。
 
-[**[ip]{lang="EN-US"}***[ ip-address]{lang="EN-US"}*]{#struct_0_16980_17120_1089090813}[：表示业务逻辑]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[ip*** ip-address*]：表示业务逻辑IP地址。
 
-[**[port]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_16980_17120_x643116899}[：表示]{style="font-family:宋体"}[业务逻辑的]{style="font-family:宋体"}[接口类型和接口编号，目前支持接口类型为[:]{lang="EN-US"}三层]{style="font-family:宋体"}[以太网接口类型和三层聚合接口类型。]{style="font-family:宋体"}
+**[port** *interface-type interface-number*]：表示业务逻辑的接口类型和接口编号，目前支持接口类型为[:三层]以太网接口类型和三层聚合接口类型。
 
-[[【]{style="font-family:黑体"}]{#struct_0_16980_17120_x1210755809}[使用指导]{style="font-family:黑体"}[】]{style="font-family:黑体"}
+【使用指导】
 
-[[NAS(Network Access Server)]{lang="EN-US"}]{#struct_0_16980_17120_1716901023}[表示网络接入服务。用户可以通过本命令在多机备份实例下配置业务逻辑]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址、业务逻辑接口和业务逻辑主机名，使互为备份的设备上发送给]{style="font-family:宋体"}[RADIUS]{lang="EN-US"}[（]{style="font-family:宋体"}[Remote Authentication Dial-In User Service]{lang="EN-US"}[，远程认证拨号用户服务）]{style="font-family:宋体"}[服务器报文的]{style="font-family:宋体"}[NAS-IP-Address]{lang="EN-US"}[、]{style="font-family:宋体"}[NAS-Port]{lang="EN-US"}[属性以及上送给]{style="font-family:宋体"}[DHCP]{lang="EN-US"}[服务器报文的]{style="font-family:宋体"}[Option82]{lang="EN-US"}[字段信息保持一致。]{style="font-family:宋体"}
+NAS(Network Access Server)表示网络接入服务。用户可以通过本命令在多机备份实例下配置业务逻辑IP地址、业务逻辑接口和业务逻辑主机名，使互为备份的设备上发送给RADIUS（Remote Authentication Dial-In User Service，远程认证拨号用户服务）服务器报文的NAS-IP-Address、NAS-Port属性以及上送给DHCP服务器报文的Option82字段信息保持一致。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_16980_17120_x1804824732}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置业务逻辑]{style="font-family:宋体"}]{#struct_0_16980_17120_1921459220}[IP]{lang="EN-US"}[地址时，必须配置为单播地址，且不允许配置为全零地址或环回地址。]{style="font-family:宋体"}
+·配置业务逻辑IP地址时，必须配置为单播地址，且不允许配置为全零地址或环回地址。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置业务逻辑接口时，允许配置成当前设备上不存在的接口。逻辑接口的位置信息格式为"槽位号]{style="font-family:宋体"}]{#struct_0_16980_17120_x590132015}[/]{lang="EN-US"}[子卡号]{style="font-family:宋体"}[/]{lang="EN-US"}[接口号"。]{style="font-family:宋体"}
+·配置业务逻辑接口时，允许配置成当前设备上不存在的接口。逻辑接口的位置信息格式为"槽位号/子卡号/接口号"。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_1652309098}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_1956271463}[配置业务逻辑]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[2.2.2.2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置业务逻辑IP地址为2.2.2.2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_x681725766}
+\<Sysname\> system-view
 
-[\[Sysname\] vsrp instance aaa]{lang="EN-US"}
+Sysname vsrp instance aaa
 
-[\[Sysname-vsrp-instance-aaa\] nas ip 2.2.2.2]{lang="EN-US"}
+Sysname-vsrp-instance-aaa nas ip 2.2.2.2
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_407014421}[配置业务逻辑接口为]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置业务逻辑接口为GigabitEthernet1/0/1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_1842999822}
+\<Sysname\> system-view
 
-[\[Sysname\] vsrp instance aaa]{lang="EN-US"}
+Sysname vsrp instance aaa
 
-[\[Sysname-vsrp-instance-aaa\] nas port gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname-vsrp-instance-aaa nas port gigabitethernet 1/0/1
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_1232690208}[配置业务逻辑主机名为]{style="font-family:宋体"}[bbb]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置业务逻辑主机名为bbb。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_964760793}
+\<Sysname\> system-view
 
-[\[Sysname\] vsrp instance aaa]{lang="EN-US"}
+Sysname vsrp instance aaa
 
-[\[Sysname-vsrp-instance-aaa\] nas id bbb]{lang="EN-US"}
-:::
-
-::: {#-1619988208 .myid}
-[]{#_Toc136937990}[]{#_Toc99445939}[]{#_Toc34203772}[]{#_Toc33197996}[]{#_Toc404796100}[]{#struct_0_16980_17120_x1522918861}[]{#_Toc350446341}[]{#_Toc350329048}[]{#_Toc349805346}
+Sysname-vsrp-instance-aaa nas id bbb
 
 **多机备份配置命令 \-- 多机备份实例配置命令 \-- traffic backup**
 
 ------------------------------------------------------------------------
 
-[**[traffic backup]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_16980_17120_922967042}[命令用来设置]{style="font-family:宋体"}[流量备份时间间隔或流量阈值]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[traffic backup**]命令用来设置流量备份时间间隔或流量阈值。
 
-[**[undo traffic backup]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_16980_17120_444944708}[命令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo traffic backup**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_35842120}
+【命令】
 
-[**[traffic backup]{lang="EN-US"}**[ { **interval** *interval-value* \| **threshold** *threshold-value* } \*]{lang="EN-US"}]{#struct_0_16980_17120_964001339}
+**[traffic backup**[ { **interval** *interval-value* \| **threshold** *threshold-value* } \*]]
 
-[**[undo traffic backup]{lang="EN-US"}**[ \[ **interval** \| **threshold** \]]{lang="EN-US"}]{#struct_0_16980_17120_1983114443}
+**[undo traffic backup**[ [ **interval** \| **threshold** ]]]
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_16980_17120_2143635907}
+【缺省情况】
 
-[[多机备份实例的流量备份时间间隔为]{style="font-family:宋体"}[10]{lang="EN-US"}]{#struct_0_16980_17120_560191942}[分钟，流量阈值缺省值为]{style="font-family:宋体"}[50MB]{lang="EN-US"}[。]{style="font-family:宋体;color:black"}
+多机备份实例的流量备份时间间隔为10分钟，流量阈值缺省值为50MB。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_2129800019}
+【视图】
 
-[[多机备份]{style="font-family:宋体"}]{#struct_0_16980_17120_1147414104}[实例视图]{style="font-family:宋体"}
+多机备份实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_x107908890}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_x1577281880}
+network-admin
 
-[[mdc-admin ]{lang="EN-US"}]{#struct_0_16980_17120_806433624}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_x2051069604}
+【参数】
 
-[*[interval-value]{lang="EN-US"}*]{#struct_0_16980_17120_1964307719}[：表示流量备份时间间隔，]{style="font-family:宋体"}[取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[1440]{lang="EN-US"}[，单位为分钟（]{style="font-family:宋体"}[min]{lang="EN-US"}[）。]{style="font-family:宋体"}
+*[interval-value*]：表示流量备份时间间隔，取值范围为0～1440，单位为分钟（min）。
 
-[*[threshold-value]{lang="EN-US"}*]{#struct_0_16980_17120_x222264275}[：表示流量阈值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[100000]{lang="EN-US"}[，单位为兆字节（]{style="font-family:宋体"}[MB]{lang="EN-US"}[）。]{style="font-family:宋体"}
+*[threshold-value*]：表示流量阈值，取值范围为0～100000，单位为兆字节（MB）。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_1644310083}
+【使用指导】
 
-[[多机备份实例支持配置流量备份时间间隔和流量备份阈值。以特定业务为例，当业务持续转发时间达到流量备份时间间隔或转发业务的流量达到阈值时，多机备份实例需要对该业务模块数据进行备份操作。]{style="font-family:宋体"}]{#struct_0_16980_17120_x865129531}
+多机备份实例支持配置流量备份时间间隔和流量备份阈值。以特定业务为例，当业务持续转发时间达到流量备份时间间隔或转发业务的流量达到阈值时，多机备份实例需要对该业务模块数据进行备份操作。
 
-[[当流量备份时间间隔和流量阈值均为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_16980_17120_1216868483}[时，表示不备份用户流量。]{style="font-family:宋体"}
+当流量备份时间间隔和流量阈值均为0时，表示不备份用户流量。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1759467267}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_2027857643}[当流量备份时间达到为]{style="font-family:宋体"}[50]{lang="EN-US"}[分钟时，进行业务模块数据的备份操作。]{style="font-family:宋体"}
+\# 当流量备份时间达到为50分钟时，进行业务模块数据的备份操作。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_1168159168}
+\<Sysname\> system-view
 
-[\[Sysname\] vsrp instance aaa]{lang="EN-US"}
+Sysname vsrp instance aaa
 
-[\[Sysname-vsrp-instance-aaa\] traffic backup interval 50]{lang="EN-US"}
+Sysname-vsrp-instance-aaa traffic backup interval 50
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_201073522}[当转发流量达到]{style="font-family:宋体"}[200MB]{lang="EN-US"}[时，进行业务模块数据的备份操作。]{style="font-family:宋体"}
+\# 当转发流量达到200MB时，进行业务模块数据的备份操作。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_x32418216}
+\<Sysname\> system-view
 
-[\[Sysname\] vsrp instance aaa]{lang="EN-US"}
+Sysname vsrp instance aaa
 
-[\[Sysname-vsrp-instance-aaa\] traffic backup threshold 200]{lang="EN-US"}
+Sysname-vsrp-instance-aaa traffic backup threshold 200
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_x1458705915}[恢复流量备份时间和流量阈值为缺省值。]{style="font-family:宋体"}
+\# 恢复流量备份时间和流量阈值为缺省值。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_1837463596}
+\<Sysname\> system-view
 
-[\[Sysname\] vsrp instance aaa]{lang="EN-US"}
+Sysname vsrp instance aaa
 
-[\[Sysname-vsrp-instance-aaa\] undo traffic backup]{lang="EN-US"}
-:::
-
-::: {#-1572398753 .myid}
-[]{#_Toc404796101}[]{#struct_0_16980_17120_x2121430727}
+Sysname-vsrp-instance-aaa undo traffic backup
 
 **多机备份配置命令 \-- 多机备份实例配置命令 \-- vsrp instance（系统视图）**
 
 ------------------------------------------------------------------------
 
-[**[vsrp instance]{lang="EN-US"}**]{#struct_0_16980_17120_1712663056}[命令用来创建]{style="font-family:宋体"}[多机备份]{style="font-family:宋体"}[实例并进入]{style="font-family:宋体"}[多机备份]{style="font-family:宋体"}[实例视图。如果指定的]{style="font-family:宋体"}[多机备份]{style="font-family:宋体"}[实例已创建，则该命令直接用来进入该]{style="font-family:宋体"}[多机备份]{style="font-family:宋体"}[实例视图。]{style="font-family:宋体"}
+**[vsrp instance**]命令用来创建多机备份实例并进入多机备份实例视图。如果指定的多机备份实例已创建，则该命令直接用来进入该多机备份实例视图。
 
-[**[undo vsrp instance]{lang="EN-US"}**]{#struct_0_16980_17120_771925774}[命令用来删除已创建的]{style="font-family:宋体"}[多机备份]{style="font-family:宋体"}[实例。]{style="font-family:宋体"}
+**[undo vsrp instance**]命令用来删除已创建的多机备份实例。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1995087877}
+【命令】
 
-[**[vsrp instance]{lang="EN-US"}***[ instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_x2053792032}
+**[vsrp instance*** instance-name*]
 
-[**[undo vsrp instance]{lang="EN-US"}***[ instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_700954410}
+**[undo vsrp instance*** instance-name*]
 
-[[【缺省情况】]{style="font-family:黑体;color:#0096d6"}]{#struct_0_16980_17120_1615125549}
+【缺省情况】
 
-[[未创建]{style="font-family:宋体"}]{#struct_0_16980_17120_x322608422}[多机备份实例]{style="font-family:宋体"}[。]{style="font-family:宋体;color:black"}
+未创建多机备份实例。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1320835472}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_16980_17120_x818819859}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_1819018073}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_x492787198}
+network-admin
 
-[[mdc-admin ]{lang="EN-US"}]{#struct_0_16980_17120_x251487508}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_87671372}
+【参数】
 
-[*[instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_1312912660}[：表示]{style="font-family:宋体"}[多机备份]{style="font-family:宋体"}[实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[instance-name*]：表示多机备份实例名称，为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_x877716790}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[多机备份实例作为业务应用模块的关联实体，在实际应用中，须配置关联多机备份对端并绑定]{style="font-family:宋体"}]{#struct_0_16980_17120_2003418701}[VRRP]{lang="EN-US"}[备份组，备份模式及流量备份方式。]{style="font-family:宋体"}
+·多机备份实例作为业务应用模块的关联实体，在实际应用中，须配置关联多机备份对端并绑定VRRP备份组，备份模式及流量备份方式。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[设备上最多支持创建]{style="font-family:宋体"}]{#struct_0_16980_17120_x1095713595}[1024]{lang="EN-US"}[个多机备份实例。]{style="font-family:宋体"}
+·设备上最多支持创建1024个多机备份实例。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_1691578211}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_x589319376}[创建名为]{style="font-family:宋体"}[aaa]{lang="EN-US"}[的多机备份实例，并进入多机备份实例视图。]{style="font-family:宋体"}
+\# 创建名为aaa的多机备份实例，并进入多机备份实例视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_x2027928945}
+\<Sysname\> system-view
 
-[\[Sysname\] vsrp instance aaa]{lang="EN-US"}
+Sysname vsrp instance aaa
 
-[\[Sysname-vsrp-instance-aaa\]]{lang="EN-US"}
-:::
-
-::: {#-1991023472 .myid}
-[]{#_Toc404796103}[]{#struct_0_16980_17120_350640715}
+Sysname-vsrp-instance-aaa
 
 **多机备份配置命令 \-- 配置IPv6虚拟地址 \-- ipv6 virtual-address**
 
 ------------------------------------------------------------------------
 
-[**[ipv6 virtual-address]{lang="EN-US"}**]{#struct_0_16980_17120_1694857665}[命令用来配置]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[虚拟地址，并绑定多机备份实例。]{style="font-family:宋体"}
+**[ipv6 virtual-address**]命令用来配置IPv6虚拟地址，并绑定多机备份实例。
 
-[**[undo ]{lang="EN-US"}[ipv6 virtual-address]{lang="EN-US"}**]{#struct_0_16980_17120_x2051683259}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ipv6 virtual-address**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x179166652}
+【命令】
 
-[**[ipv6 virtual-address ]{lang="EN-US"}***[ipv6-address ]{lang="EN-US"}***[vsrp ]{lang="EN-US"}***[vsrp-instance]{lang="EN-US"}*]{#struct_0_16980_17120_694074779}
+**[ipv6 virtual-address ***ipv6-address ***vsrp ***vsrp-instance*]
 
-[**[undo ipv6 virtual-address]{lang="EN-US"}**]{#struct_0_16980_17120_x397812166}
+**[undo ipv6 virtual-address**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16980_17120_1039351153}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_16980_17120_1878565024}[虚拟地址。]{style="font-family:宋体"}
+未配置IPv6虚拟地址。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1120880226}
+【视图】
 
-[[三层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_16980_17120_x393270654}[三层以太网子接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层聚合子接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层]{style="font-family:宋体"}[RPR]{lang="EN-US"}[逻辑接口视图]{style="font-family:宋体"}[/VLAN]{lang="EN-US"}[接口视图]{style="font-family:宋体"}
+三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图/三层RPR逻辑接口视图/VLAN接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_97592702}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_x1955588546}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_91528925}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_463416590}
+【参数】
 
-[*[ipv6-address]{lang="EN-US"}*]{#struct_0_16980_17120_643152047}[：配置的]{style="font-family:宋体;color:black"}[IPv6]{lang="EN-US"}[虚拟地址，该地址必须为链路本地地址，]{style="font-family:宋体"}[局域网内的主机可以通过这个虚拟地址与外部网络进行通信]{style="font-family:宋体"}[。]{style="font-family:
-宋体"}
+*[ipv6-address*]：配置的IPv6虚拟地址，该地址必须为链路本地地址，局域网内的主机可以通过这个虚拟地址与外部网络进行通信。
 
-[**[vsrp ]{lang="EN-US"}***[vsrp-instance]{lang="EN-US"}*]{#struct_0_16980_17120_202569418}[：]{style="font-family:宋体"}[绑定的多机备份实例名称。]{style="font-family:宋体"}*[vsrp-instance]{lang="EN-US"}*[为多机备份的实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[vsrp ***vsrp-instance*]：绑定的多机备份实例名称。*vsrp-instance*为多机备份的实例名称，为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_104224045}
+【使用指导】
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:6.5pt;font-family:Wingdings"}[接口上使能]{style="font-family:宋体"}]{#struct_0_16980_17120_x1618787301}[IPv6 IPoE]{lang="EN-US"}[或]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[的多机备份功能时，必须与本命令配合使用，本命令绑定的多机备份实例必须与该接口上]{style="font-family:宋体"}[IPv6 IPoE]{lang="EN-US"}[或]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[绑定的多机备份实例保持一致，否则会影响多机备份功能正常使用，导致多机备份后倒换后]{style="font-family:宋体"}[,]{lang="EN-US" style="font-family:宋体"}[局域网内的主机无法访问外部网络]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+l接口上使能IPv6 IPoE或DHCPv6的多机备份功能时，必须与本命令配合使用，本命令绑定的多机备份实例必须与该接口上IPv6 IPoE或DHCPv6绑定的多机备份实例保持一致，否则会影响多机备份功能正常使用，导致多机备份后倒换后,局域网内的主机无法访问外部网络。
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:6.5pt;font-family:Wingdings"}[接口上未开启]{style="font-family:宋体"}]{#struct_0_16980_17120_627447495}[IPv6 IPoE]{lang="EN-US"}[或]{style="font-family:宋体"}[DHCPv6]{lang="EN-US"}[的多机备份功能时，请不要在该接口上配置]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[虚拟地址，否则可能导致设备上原来的链路本地地址不可用。]{style="font-family:宋体"}
+l接口上未开启IPv6 IPoE或DHCPv6的多机备份功能时，请不要在该接口上配置IPv6虚拟地址，否则可能导致设备上原来的链路本地地址不可用。
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:6.5pt;font-family:Wingdings"}[请不要将此命令与]{style="font-family:宋体"}]{#struct_0_16980_17120_x861017745}[IPv6 VRRP]{lang="EN-US"}[备份组配置在同一个接口上，否则可能导致多机备份功能不能正常使用。]{style="font-family:宋体"}
+l请不要将此命令与IPv6 VRRP备份组配置在同一个接口上，否则可能导致多机备份功能不能正常使用。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_x905490279}
+【举例】
 
-[[\# ]{lang="SV"}]{#struct_0_16980_17120_x1120945762}[配置]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[虚拟]{style="font-family:宋体"}[地址为]{style="font-family:宋体"}[fe80::10]{lang="EN-US"}[，并绑定多机备份实例]{style="font-family:宋体"}[aaa]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置IPv6虚拟地址为fe80::10，并绑定多机备份实例aaa。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_x1402151683}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ipv6 virtual-address fe80::10 vsrp aaa]{lang="EN-US"}
-:::
-
-::: {#1491388115 .myid}
-[]{#_Toc404796105}[]{#struct_0_16980_17120_x454894252}[]{#_Toc380605116}
+Sysname-GigabitEthernet1/0/1 ipv6 virtual-address fe80::10 vsrp aaa
 
 **多机备份配置命令 \-- IPoE支持多机备份功能配置命令 \-- ip subscriber vsrp-instance**
 
 ------------------------------------------------------------------------
 
-[**[ip subscriber vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_2011766940}[命令用来指定接口上]{style="font-family:
-宋体"}[IPv4 IPoE]{lang="EN-US"}[功能绑定的多机备份实例。]{style="font-family:
-宋体"}
+**[ip subscriber vsrp-instance**]命令用来指定接口上IPv4 IPoE功能绑定的多机备份实例。
 
-[**[undo ip subscriber vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_x1175658049}[用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ip subscriber vsrp-instance**]用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1594283490}
+【命令】
 
-[**[ip subscriber vsrp-instance ]{lang="EN-US"}***[instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_366657174}
+**[ip subscriber vsrp-instance ***instance-name*]
 
-[**[undo ip subscriber vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_914276429}
+**[undo ip subscriber vsrp-instance**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16980_17120_1292144410}
+【缺省情况】
 
-[[接口上的]{style="font-family:宋体"}[IPv4 IPoE]{lang="EN-US"}]{#struct_0_16980_17120_695085819}[功能未绑定多机备份实例。]{style="font-family:宋体"}
+接口上的IPv4 IPoE功能未绑定多机备份实例。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1128223387}
+【视图】
 
-[[三层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_16980_17120_x1121011298}[三层以太网子接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层聚合子接口视图]{style="font-family:宋体"}
+三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1135187386}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_x414176444}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_x1356350644}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_x768452816}
+【参数】
 
-[*[instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_2049837690}[：表示接口绑定]{style="font-family:宋体"}[的多机备份实例名]{style="font-family:宋体"}[，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[instance-name*]：表示接口绑定的多机备份实例名，为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_x72880305}
+【使用指导】
 
-[[IPoE]{lang="EN-US"}]{#struct_0_16980_17120_x1500732827}[支持多机备份是指当一台设备故障时（包括设备故障、链路故障等），]{style="font-family:宋体"}[IPoE]{lang="EN-US"}[用户的业务可以自动切换到备用设备上来，已上线的]{style="font-family:宋体"}[IPoE]{lang="EN-US"}[用户不需要重新拨号，计费、授权信息不丢失。]{style="font-family:宋体"}
+IPoE支持多机备份是指当一台设备故障时（包括设备故障、链路故障等），IPoE用户的业务可以自动切换到备用设备上来，已上线的IPoE用户不需要重新拨号，计费、授权信息不丢失。
 
-[[用户通过该命令配置接口下]{style="font-family:宋体"}[IPv4 IPoE]{lang="EN-US"}]{#struct_0_16980_17120_x470786135}[会话和指定多机备份实例关联，继而就可以通过多机备份提供的数据备份通道实时备份此接口上接入的动态]{style="font-family:宋体"}[IPv4 IPoE]{lang="EN-US"}[会话信息。]{style="font-family:宋体"}
+用户通过该命令配置接口下IPv4 IPoE会话和指定多机备份实例关联，继而就可以通过多机备份提供的数据备份通道实时备份此接口上接入的动态IPv4 IPoE会话信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_1134214727}
+【举例】
 
-[[\# ]{lang="SV"}]{#struct_0_16980_17120_1191330543}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="SV"}[上使能]{style="font-family:宋体"}[IPv4 IPoE]{lang="SV"}[会话]{style="font-family:宋体"}[多机备份的功能]{style="font-family:宋体"}[，]{style="font-family:宋体"}[并绑定]{style="font-family:宋体"}[多机备份]{style="font-family:宋体"}[实例]{style="font-family:宋体"}[instance1]{lang="SV"}[。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上使能IPv4 IPoE会话多机备份的功能，并绑定多机备份实例instance1。
 
-[[\<Sysname\> system-view]{lang="SV"}]{#struct_0_16980_17120_781408460}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="SV"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ip subscriber vsrp-instance instance1]{lang="SV"}
+Sysname-GigabitEthernet1/0/1 ip subscriber vsrp-instance instance1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_222936587}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[ip subscriber ]{lang="EN-US"}**]{#struct_0_16980_17120_x1154889496}**[vsrp-port]{lang="EN-US"}**
-:::
-
-::: {#438323134 .myid}
-[]{#_Toc404796106}[]{#struct_0_16980_17120_x1121076834}[]{#_Toc380605117}
+·**ip subscriber ****vsrp-port**
 
 **多机备份配置命令 \-- IPoE支持多机备份功能配置命令 \-- ip subscriber vsrp-port**
 
 ------------------------------------------------------------------------
 
-[**[ip subscriber vsrp-port]{lang="EN-US"}**]{#struct_0_16980_17120_597689074}[命令用来配置]{style="font-family:宋体"}[IPoE]{lang="EN-US"}[建立]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[数据备份通道使用的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号。]{style="font-family:宋体"}
+**[ip subscriber vsrp-port**]命令用来配置IPoE建立IPv4数据备份通道使用的TCP端口号。
 
-[**[undo ip subscriber vsrp-port]{lang="EN-US"}**]{#struct_0_16980_17120_209527447}[用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo ip subscriber vsrp-port**]用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x881320367}
+【命令】
 
-[**[ip subscriber vsrp-port ]{lang="EN-US"}***[port-number]{lang="EN-US"}*]{#struct_0_16980_17120_1327907983}
+**[ip subscriber vsrp-port ***port-number*]
 
-[**[undo ip subscriber vsrp-port]{lang="EN-US"}**]{#struct_0_16980_17120_1164033574}
+**[undo ip subscriber vsrp-port**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16980_17120_1631629730}
+【缺省情况】
 
-[[IPoE]{lang="EN-US"}]{#struct_0_16980_17120_37635348}[建立]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[数据备份通道使用的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号为]{style="font-family:宋体"}[60033]{lang="EN-US"}[。]{style="font-family:宋体"}
+IPoE建立IPv4数据备份通道使用的TCP端口号为60033。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_33625662}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_16980_17120_x1961885836}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1506763156}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_x1946440765}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_1619327404}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_189037026}
+【参数】
 
-[*[port-number]{lang="ES-AR"}*]{#struct_0_16980_17120_x1120618082}[：]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号]{style="font-family:宋体"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[port-number*]：TCP端口号，取值范围为1～65535。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_872001093}
+【使用指导】
 
-[[IPoE]{lang="EN-US"}]{#struct_0_16980_17120_1713048219}[在进行数据备份之前，需要与对端备份设备建立一条数据备份通道，此条通道为]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接，可以通过本命令调整]{style="font-family:宋体"}[IPoE]{lang="EN-US"}[建立]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[数据备份通道使用的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号。]{style="font-family:宋体"}
+IPoE在进行数据备份之前，需要与对端备份设备建立一条数据备份通道，此条通道为TCP连接，可以通过本命令调整IPoE建立IPv4数据备份通道使用的TCP端口号。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_1138141693}
+【举例】
 
-[[\#]{lang="SV"}[ ]{lang="SV"}]{#struct_0_16980_17120_2078187610}[配置]{style="font-family:宋体"}[IPoE]{lang="EN-US"}[建立]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[数据备份通道使用的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号为]{style="font-family:宋体"}[20000]{lang="EN-US"}[。]{style="font-family:宋体"}
+\#配置IPoE建立IPv4数据备份通道使用的TCP端口号为20000。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_908160811}
+\<Sysname\> system-view
 
-[\[Sysname\] ip subscriber vsrp-port 20000]{lang="EN-US"}
+Sysname ip subscriber vsrp-port 20000
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_94760959}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[ip subscriber ]{lang="EN-US"}**]{#struct_0_16980_17120_709329923}**[vsrp-instance]{lang="EN-US"}**
-:::
-
-::: {#824932745 .myid}
-[]{#_Toc404796107}[]{#struct_0_16980_17120_878781811}[]{#_Toc380605155}
+·**ip subscriber ****vsrp-instance**
 
 **多机备份配置命令 \-- IPoE支持多机备份功能配置命令 \-- ipv6 subscriber vsrp-instance**
 
 ------------------------------------------------------------------------
 
-[**[ipv6 subscriber vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_257944873}[命令用来指定接口上的]{style="font-family:
-宋体"}[IPv6 IPoE]{lang="EN-US"}[功能绑定的多机备份实例。]{style="font-family:
-宋体"}
+**[ipv6 subscriber vsrp-instance**]命令用来指定接口上的IPv6 IPoE功能绑定的多机备份实例。
 
-[**[undo ip subscriber vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_x1470004178}[用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ip subscriber vsrp-instance**]用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1120683618}
+【命令】
 
-[**[ipv6 subscriber vsrp-instance ]{lang="EN-US"}***[instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_x1944567480}
+**[ipv6 subscriber vsrp-instance ***instance-name*]
 
-[**[undo ipv6 subscriber vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_735027824}
+**[undo ipv6 subscriber vsrp-instance**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16980_17120_x185749467}
+【缺省情况】
 
-[[接口上的]{style="font-family:宋体"}[IPv6 IPoE]{lang="EN-US"}]{#struct_0_16980_17120_1951929550}[功能未绑定多机备份实例。]{style="font-family:宋体"}
+接口上的IPv6 IPoE功能未绑定多机备份实例。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_86856748}
+【视图】
 
-[[三层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_16980_17120_x585352472}[三层以太网子接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层聚合子接口视图]{style="font-family:宋体"}
+三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1857594517}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_1274020636}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_691156232}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1292108381}
+【参数】
 
-[*[instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_x1514981367}[：表示接口绑定的]{style="font-family:宋体"}[多机备份]{style="font-family:宋体"}[实例名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[instance-name*]：表示接口绑定的多机备份实例名，为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_1201740900}
+【使用指导】
 
-[[用户通过该命令配置接口下]{style="font-family:宋体;color:windowtext"}]{#struct_0_16980_17120_514139017}[IPv6]{lang="EN-US" style="color:windowtext"}[ ]{lang="EN-US"}[IPoE]{lang="EN-US" style="color:windowtext"}[会话和指定多机备份实例关联，继而就可以通过多机备份提供的数据备份通道实时备份此接口上接入的动态]{style="font-family:宋体;
-color:windowtext"}[IPv6]{lang="EN-US" style="color:windowtext"}[ ]{lang="EN-US"}[IPoE]{lang="EN-US" style="color:windowtext"}[会话信息。]{style="font-family:宋体;
-color:windowtext"}
+用户通过该命令配置接口下IPv6IPoE会话和指定多机备份实例关联，继而就可以通过多机备份提供的数据备份通道实时备份此接口上接入的动态IPv6IPoE会话信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1121142371}
+【举例】
 
-[[\# ]{lang="SV"}]{#struct_0_16980_17120_1837316913}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="SV"}[上使能]{style="font-family:宋体"}[IPv6 IPoE]{lang="SV"}[会话]{style="font-family:宋体"}[多机备份的功能]{style="font-family:宋体"}[，]{style="font-family:宋体"}[并绑定]{style="font-family:宋体"}[多机备份]{style="font-family:宋体"}[实例为]{style="font-family:宋体"}[instance1]{lang="SV"}[。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上使能IPv6 IPoE会话多机备份的功能，并绑定多机备份实例为instance1。
 
-[[\<Sysname\> system-view]{lang="SV" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_16980_17120_593439753}
+\<Sysname\> system-view
 
-[[\[Sysname\] interface gigabitethernet 1/0/1]{lang="SV" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_16980_17120_527345260}
+Sysname interface gigabitethernet 1/0/1
 
-[[\[Sysname-GigabitEthernet1/0/1\] ipv6 subscriber vsrp-instance instance1]{lang="SV" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_16980_17120_x1938879043}
+Sysname-GigabitEthernet1/0/1 ipv6 subscriber vsrp-instance instance1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_1314302404}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[ipv6 subscriber ]{lang="EN-US"}**]{#struct_0_16980_17120_543693842}**[vsrp-port]{lang="EN-US"}**
-:::
-
-::: {#-1259751003 .myid}
-[]{#_Toc404796108}[]{#struct_0_16980_17120_2109646822}[]{#_Toc380605156}
+·**ipv6 subscriber ****vsrp-port**
 
 **多机备份配置命令 \-- IPoE支持多机备份功能配置命令 \-- ipv6 subscriber vsrp-port**
 
 ------------------------------------------------------------------------
 
-[**[ipv6 subscriber vsrp-port]{lang="EN-US"}**]{#struct_0_16980_17120_x181403425}[命令用来配置]{style="font-family:
-宋体"}[IPoE]{lang="EN-US"}[建立]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[数据备份通道使用的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号。]{style="font-family:宋体"}
+**[ipv6 subscriber vsrp-port**]命令用来配置IPoE建立IPv6数据备份通道使用的TCP端口号。
 
-[**[undo ipv6 subscriber vsrp-port]{lang="EN-US"}**]{#struct_0_16980_17120_x910241711}[用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo ipv6 subscriber vsrp-port**]用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x499557025}
+【命令】
 
-[**[ipv6 subscriber vsrp-port ]{lang="EN-US"}***[port-number]{lang="EN-US"}*]{#struct_0_16980_17120_x641951073}
+**[ipv6 subscriber vsrp-port ***port-number*]
 
-[**[undo ipv6 subscriber vsrp-port]{lang="EN-US"}**]{#struct_0_16980_17120_1981122122}
+**[undo ipv6 subscriber vsrp-port**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16980_17120_x418542053}
+【缺省情况】
 
-[[IPoE]{lang="EN-US"}]{#struct_0_16980_17120_x1121207907}[建立]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[数据备份通道使用的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号为]{style="font-family:宋体"}[60040]{lang="EN-US"}[。]{style="font-family:宋体"}
+IPoE建立IPv6数据备份通道使用的TCP端口号为60040。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_x674406499}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_16980_17120_x22561239}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_x445453609}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_x1651729229}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_x246866300}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1221241296}
+【参数】
 
-[*[port-number]{lang="ES-AR"}*]{#struct_0_16980_17120_736458254}[：]{style="font-family:宋体"}[TCP]{lang="SV"}[端口号，取值范围为]{style="font-family:
-宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[port-number*]：TCP端口号，取值范围为1～65535。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1258675491}
+【使用指导】
 
-[[IPoE]{lang="EN-US"}]{#struct_0_16980_17120_2072824974}[支持多机备份是指当一台设备故障时（包括设备故障、链路故障等），]{style="font-family:宋体"}[IPoE]{lang="EN-US"}[用户的业务可以自动切换到备用设备上来，已上线的]{style="font-family:宋体"}[IPoE]{lang="EN-US"}[用户不需要重新拨号，计费、授权信息不丢失。]{style="font-family:宋体"}
+IPoE支持多机备份是指当一台设备故障时（包括设备故障、链路故障等），IPoE用户的业务可以自动切换到备用设备上来，已上线的IPoE用户不需要重新拨号，计费、授权信息不丢失。
 
-[[IPoE]{lang="EN-US"}]{#struct_0_16980_17120_x984811023}[在进行数据备份之前，需要与对端备份设备建立一条数据备份通道，此条通道为]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接，可以通过本命令调整]{style="font-family:宋体"}[IPoE]{lang="EN-US"}[建立]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[数据备份通道使用的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号。]{style="font-family:宋体"}
+IPoE在进行数据备份之前，需要与对端备份设备建立一条数据备份通道，此条通道为TCP连接，可以通过本命令调整IPoE建立IPv6数据备份通道使用的TCP端口号。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_1266006539}
+【举例】
 
-[[\# ]{lang="SV"}]{#struct_0_16980_17120_1564348271}[配置]{style="font-family:宋体"}[IPoE]{lang="EN-US"}[建立]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[数据备份通道使用的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号为]{style="font-family:宋体"}[20000]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置IPoE建立IPv6数据备份通道使用的TCP端口号为20000。
 
-[[\<Sysname\> system-view]{lang="SV"}]{#struct_0_16980_17120_x1121273443}
+\<Sysname\> system-view
 
-[\[Sysname\] ipv6 subscriber vsrp-port 20000]{lang="SV"}
+Sysname ipv6 subscriber vsrp-port 20000
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1633716335}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[ipv6 subscriber ]{lang="EN-US"}**]{#struct_0_16980_17120_621189953}**[vsrp-instance]{lang="EN-US"}**
-:::
-
-::: {#-649471501 .myid}
-[]{#_Toc404796110}[]{#struct_0_16980_17120_x10873247}[]{#_Toc375318229}[]{#_Toc359232048}[]{#_Toc357684243}
+·**ipv6 subscriber ****vsrp-instance**
 
 **多机备份配置命令 \-- PPPoE支持多机备份功能配置命令 \-- display ppp sync-session**
 
 ------------------------------------------------------------------------
 
-[**[display ppp sync-session]{lang="EN-US"}**]{#struct_0_16980_17120_x1282275250}[命令用来查看同步的]{style="font-family:
-宋体"}[PPP]{lang="EN-US"}[会话信息。]{style="font-family:宋体"}
+**[display ppp sync-session**]命令用来查看同步的PPP会话信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_1291307882}
+【命令】
 
-[**[display ppp sync-session ]{lang="EN-US"}**[\[ ]{lang="EN-US"}**[vsrp-instance]{lang="EN-US"}**[ ]{lang="EN-US"}*[vsrp-instance-name]{lang="EN-US"}*[ \]]{lang="EN-US"}]{#struct_0_16980_17120_858705251}
+**[display ppp sync-session **\**[vsrp-instance***vsrp-instance-name* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1161910333}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_16980_17120_x887044753}[]{#_Toc32639298}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1121338979}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_1916724656}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_16980_17120_1029363509}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_2133496276}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_16980_17120_x250208281}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_24942263}
+【参数】
 
-[**[vsrp-instance]{lang="EN-US"}***[ ]{lang="EN-US"}[vsrp-instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_x2033765949}[：显示指定多机备份]{style="font-family:宋体"}[实例同步的]{style="font-family:宋体"}[PPP]{lang="EN-US"}[会话信息。]{style="font-family:宋体"}*[vsrp-instance-name]{lang="EN-US"}*[表示多机备份实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，将显示所有多机备份实例同步的]{style="font-family:宋体"}[PPP]{lang="EN-US"}[会话信息。]{style="font-family:宋体"}
+**[vsrp-instance***vsrp-instance-name*]：显示指定多机备份实例同步的PPP会话信息。*vsrp-instance-name*表示多机备份实例名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，将显示所有多机备份实例同步的PPP会话信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_1267523182}
+【使用指导】
 
-[[在主用设备和备用设备上都可以查询同步的]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_16980_17120_1609412866}[会话信息：]{style="font-family:宋体"}
+在主用设备和备用设备上都可以查询同步的PPP会话信息：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在主用设备上查看的是主用设备同步给备用设备的]{style="font-family:宋体"}]{#struct_0_16980_17120_1575893549}[PPP]{lang="EN-US"}[会话信息。]{style="font-family:宋体"}
+·在主用设备上查看的是主用设备同步给备用设备的PPP会话信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在备用设备上查看的是备用设备从主用设备同步过来的]{style="font-family:宋体"}]{#struct_0_16980_17120_1868605597}[PPP]{lang="EN-US"}[会话信息。]{style="font-family:宋体"}
+·在备用设备上查看的是备用设备从主用设备同步过来的PPP会话信息。
 
-[]{#struct_0_16980_17120_x1456956776}[[【举例】]{style="font-family:黑体"}]{#_Toc32639300}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_x1120880227}[查看同步的]{style="font-family:宋体"}[PPP]{lang="EN-US"}[会话信息。]{style="font-family:宋体"}
+\# 查看同步的PPP会话信息。
 
-[[\<Sysname\> display ppp sync-session]{lang="EN-US"}]{#struct_0_16980_17120_x1959354595}
+\<Sysname\> display ppp sync-session
 
-[VSRP instance: vsrp1]{lang="EN-US"}
+VSRP instance: vsrp1
 
-[VSRP instance state: Master]{lang="EN-US"}
+VSRP instance state: Master
 
-[Total synchronized PPP sessions: 2]{lang="EN-US"}
+Total synchronized PPP sessions: 2
 
-[SID    MAC address     Interface     IP address       Username]{lang="EN-US"}
+SID    MAC address     Interface     IP address       Username
 
-[1      00e0-1500-0410  GE1/0/1       2.2.2.2          user1@isp1]{lang="EN-US"}
+1      00e0-1500-0410  GE1/0/1       2.2.2.2          user1@isp1
 
-[2      00e0-1500-0411  GE1/0/1       2.2.2.3          user1@isp1]{lang="EN-US"}
+2      00e0-1500-0411  GE1/0/1       2.2.2.3          user1@isp1
 
-[ ]{lang="EN-US"}
+VSRP instance: vsrp2
 
-[VSRP instance: vsrp2]{lang="EN-US"}
+VSRP instance state: Backup
 
-[VSRP instance state: Backup]{lang="EN-US"}
+Total synchronized PPP sessions: 1
 
-[Total synchronized PPP sessions: 1]{lang="EN-US"}
+SID    MAC address     Interface     IP address       Username
 
-[SID    MAC address     Interface     IP address       Username]{lang="EN-US"}
+1      00e0-1500-0413  GE1/0/2       2.3.2.2          user1@isp1
 
-[1      00e0-1500-0413  GE1/0/2       2.3.2.2          user1@isp1]{lang="EN-US"}
+VSRP instance: vsrp3
 
-[ ]{lang="EN-US"}
+VSRP instance state: Down
 
-[VSRP instance: vsrp3]{lang="EN-US"}
+Total synchronized PPP sessions: 0
 
-[VSRP instance state: Down]{lang="EN-US"}
+SID    MAC address     Interface     IP address       Username
 
-[Total synchronized PPP sessions: 0]{lang="EN-US"}
+表1-3  display ppp sync-session命令显示信息描述表
 
-[SID    MAC address     Interface     IP address       Username]{lang="EN-US"}
+字段
 
-[[表1-3 ]{lang="EN-US"}[ display ppp sync-session]{lang="EN-US"}]{#struct_0_16980_17120_1212825515}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x1931769880}[[字段]{style="font-family:黑体"}]{#struct_0_16980_17120_x1120945763}
-:::
+VSRP instance
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16980_17120_1326731672}
+多机备份实例名称
 
-[[VSRP instance]{lang="EN-US"}]{#struct_0_16980_17120_x806574047}
+VSRP instance state
 
-[[多机备份实例名称]{style="font-family:宋体"}]{#struct_0_16980_17120_x1121011299}
+多机备份实例状态：
 
-[[VSRP instance state]{lang="EN-US"}]{#struct_0_16980_17120_430896555}
+·Master：表示在该多机备份实例中，本设备作为主用设备，此时显示的是本设备同步给备用设备的PPP会话信息
 
-[[多机备份实例状态：]{style="font-family:宋体"}]{#struct_0_16980_17120_x1121076835}
+·Backup：表示在该多机备份实例中，本设备作为备用设备，此时显示的是本设备从主用设备同步过来的PPP会话信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Master]{lang="EN-US"}]{#struct_0_16980_17120_x2131194281}[：表示在该多机备份实例中，本设备作为主用设备，此时显示的是本设备同步给备用设备的]{style="font-family:宋体"}[PPP]{lang="EN-US"}[会话信息]{style="font-family:宋体"}
+·Down：表示在该多机备份实例中，本设备不运行，此时没有同步的PPP会话信息（在下面两种情况下设备会处于Down状态：一是当VRRP备份组处于initialize状态时，互相备份的两台设备在对应VSRP实例中将都处于无法运行状态；二是本端VSRP实例不存在或者配置不完整）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Backup]{lang="EN-US"}]{#struct_0_16980_17120_x1120618083}[：表示在该多机备份实例中，本设备作为备用设备，此时显示的是本设备从主用设备同步过来的]{style="font-family:宋体"}[PPP]{lang="EN-US"}[会话信息]{style="font-family:宋体"}
+Total synchronized PPP sessions
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Down]{lang="EN-US"}]{#struct_0_16980_17120_x1856882262}[：表示在该多机备份实例中，本设备不运行，此时没有同步的]{style="font-family:宋体"}[PPP]{lang="EN-US"}[会话信息（在下面两种情况下设备会处于]{style="font-family:宋体"}[Down]{lang="EN-US"}[状态：一是当]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[备份组处于]{style="font-family:宋体"}[initialize]{lang="EN-US"}[状态时，互相备份的两台设备在对应]{style="font-family:宋体"}[VSRP]{lang="EN-US"}[实例中将都处于无法运行状态；二是本端]{style="font-family:宋体"}[VSRP]{lang="EN-US"}[实例不存在或者配置不完整）]{style="font-family:宋体"}
+同步的PPP会话数目
 
-[[Total synchronized PPP sessions]{lang="EN-US"}]{#struct_0_16980_17120_x1120683619}
+SID
 
-[[同步的]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_16980_17120_784315875}[会话数目]{style="font-family:宋体"}
+PPPoE会话session ID
 
-[[SID]{lang="EN-US"}]{#struct_0_16980_17120_x1121142372}
+MAC address
 
-[[PPPoE]{lang="EN-US"}]{#struct_0_16980_17120_x2054365856}[会话]{style="font-family:宋体"}[session ID]{lang="EN-US"}
+用户MAC地址
 
-[[MAC address]{lang="EN-US"}]{#struct_0_16980_17120_x1121207908}
+Interface
 
-[[用户]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_16980_17120_441338748}[地址]{style="font-family:宋体"}
+接入的接口名称
 
-[[Interface]{lang="EN-US"}]{#struct_0_16980_17120_x1121273444}
+IP address
 
-[[接入的接口名称]{style="font-family:宋体"}]{#struct_0_16980_17120_x67632394}
+用户IP地址
 
-[[IP address]{lang="EN-US"}]{#struct_0_16980_17120_x1121338980}
+Username
 
-[[用户]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_16980_17120_x6179469}[地址]{style="font-family:宋体"}
-
-[[Username]{lang="EN-US"}]{#struct_0_16980_17120_x2010784485}
-
-[[用户名称]{style="font-family:宋体"}]{#struct_0_16980_17120_x1120880228}
-
-[ ]{lang="EN-US"}
-
-::: {#1166932525 .myid}
-[]{#_Toc404796111}[]{#struct_0_16980_17120_x1556070068}[]{#_Toc375318230}[]{#_Toc359246082}[]{#_Toc357684244}
+用户名称
 
 **多机备份配置命令 \-- PPPoE支持多机备份功能配置命令 \-- display pppoe-server sync-session**
 
 ------------------------------------------------------------------------
 
-[**[display pppoe-server sync-session]{lang="EN-US"}**]{#struct_0_16980_17120_1470811442}[命令用来查看同步的]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[会话信息。]{style="font-family:宋体"}
+**[display pppoe-server sync-session**]命令用来查看同步的PPPoE会话信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_425574248}
+【命令】
 
-[**[display pppoe-server sync-session]{lang="EN-US"}**[ \[ **vsrp-instance** *vsrp-instance-name* \]]{lang="EN-US"}]{#struct_0_16980_17120_960767797}
+**[display pppoe-server sync-session** [ **vsrp-instance** *vsrp-instance-name* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_x586899685}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_16980_17120_x1120945764}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_2086246559}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_x1519889438}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_16980_17120_x1256692789}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_x273666665}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_16980_17120_391691877}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_1395433563}
+【参数】
 
-[**[vsrp-instance]{lang="EN-US"}***[ ]{lang="EN-US"}[vsrp-instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_x1196492202}[：显示指定多机备份]{style="font-family:宋体"}[实例同步的]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[会话信息。]{style="font-family:宋体"}*[vsrp-instance-name]{lang="EN-US"}*[表示多机备份实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，将显示所有多机备份实例同步的]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[会话信息。]{style="font-family:宋体"}
+**[vsrp-instance***vsrp-instance-name*]：显示指定多机备份实例同步的PPPoE会话信息。*vsrp-instance-name*表示多机备份实例名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，将显示所有多机备份实例同步的PPPoE会话信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_1552871233}
+【使用指导】
 
-[[在主用设备和备用设备上都可以查询同步的]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}]{#struct_0_16980_17120_1921232752}[会话信息：]{style="font-family:宋体"}
+在主用设备和备用设备上都可以查询同步的PPPoE会话信息：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在主用设备上查看的是主用设备同步给备用设备的]{style="font-family:宋体"}]{#struct_0_16980_17120_x1310057125}[PPPoE]{lang="EN-US"}[会话信息。]{style="font-family:宋体"}
+·在主用设备上查看的是主用设备同步给备用设备的PPPoE会话信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在备用设备上查看的是备用设备从主用设备同步过来的]{style="font-family:宋体"}]{#struct_0_16980_17120_x1665330775}[PPPoE]{lang="EN-US"}[会话信息。]{style="font-family:宋体"}
+·在备用设备上查看的是备用设备从主用设备同步过来的PPPoE会话信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1121011300}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_x1490958993}[查看同步的]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[会话信息。]{style="font-family:宋体"}
+\# 查看同步的PPPoE会话信息。
 
-[[\<Sysname\> display pppoe-server sync-session]{lang="EN-US"}]{#struct_0_16980_17120_1015240006}
+\<Sysname\> display pppoe-server sync-session
 
-[VSRP instance: vsrp1]{lang="EN-US"}
+VSRP instance: vsrp1
 
-[VSRP instance state: Master]{lang="EN-US"}
+VSRP instance state: Master
 
-[Total synchronized PPPoE sessions: 2]{lang="EN-US"}
+Total synchronized PPPoE sessions: 2
 
-[SID    Service VLAN  Customer VLAN  MAC address    Interface]{lang="EN-US"}
+SID    Service VLAN  Customer VLAN  MAC address    Interface
 
-[1      1             1              00e0-1500-0410 GE1/0/1]{lang="EN-US"}
+1      1             1              00e0-1500-0410 GE1/0/1
 
-[2      1             1              00e0-1500-0411 GE1/0/1]{lang="EN-US"}
+2      1             1              00e0-1500-0411 GE1/0/1
 
-[ ]{lang="EN-US"}
+VSRP instance: vsrp2
 
-[VSRP instance: vsrp2]{lang="EN-US"}
+VSRP instance state: Backup
 
-[VSRP instance state: Backup]{lang="EN-US"}
+Total synchronized PPPoE sessions: 1
 
-[Total synchronized PPPoE sessions: 1]{lang="EN-US"}
+SID    Service VLAN  Customer VLAN  MAC address    Interface
 
-[SID    Service VLAN  Customer VLAN  MAC address    Interface]{lang="EN-US"}
+1      1             2              00e0-1500-0413 XGE1/0/2
 
-[1      1             2              00e0-1500-0413 XGE1/0/2]{lang="EN-US"}
+VSRP instance: vsrp3
 
-[ ]{lang="EN-US"}
+VSRP instance state: Down
 
-[VSRP instance: vsrp3]{lang="EN-US"}
+Total synchronized PPPoE sessions: 0
 
-[VSRP instance state: Down]{lang="EN-US"}
+SID    Service VLAN  Customer VLAN  MAC address    Interface
 
-[Total synchronized PPPoE sessions: 0]{lang="EN-US"}
+表1-4 display pppoe-server sync-session命令显示信息描述表
 
-[SID    Service VLAN  Customer VLAN  MAC address    Interface]{lang="EN-US"}
+字段
 
-[[表1-4 ]{lang="EN-US"}[display pppoe-server sync-session]{lang="EN-US"}]{#struct_0_16980_17120_2069038439}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x1939980436}[[字段]{style="font-family:黑体"}]{#struct_0_16980_17120_x1121076836}
-:::
+VSRP instance
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16980_17120_x565110340}
+VSRP实例名称
 
-[[VSRP instance]{lang="EN-US"}]{#struct_0_16980_17120_x1120618084}
+VSRP instance state
 
-[[VSRP]{lang="EN-US"}]{#struct_0_16980_17120_1678570147}[实例名称]{style="font-family:宋体"}
+多机备份实例状态：
 
-[[VSRP instance state]{lang="EN-US"}]{#struct_0_16980_17120_x1060686753}
+·Master：表示在该多机备份实例中，本设备作为主用设备，此时显示的是本设备同步给备用设备的PPPoE会话信息
 
-[[多机备份实例状态：]{style="font-family:宋体"}]{#struct_0_16980_17120_x1120683620}
+·Backup：表示在该多机备份实例中，本设备作为备用设备，此时显示的是本设备从主用设备同步过来的PPPoE会话信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Master]{lang="EN-US"}]{#struct_0_16980_17120_x1588271584}[：表示在该多机备份实例中，本设备作为主用设备，此时显示的是本设备同步给备用设备的]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[会话信息]{style="font-family:宋体"}
+·Down：表示在该多机备份实例中，本设备不运行，此时没有同步的PPPoE会话信息（在下面两种情况下设备会处于Down状态：一是当VRRP备份组处于initialize状态时，互相备份的两台设备在对应VSRP实例中将都处于无法运行状态；二是本端多机备份实例不存在或者配置不完整）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Backup]{lang="EN-US"}]{#struct_0_16980_17120_x1121142373}[：表示在该多机备份实例中，本设备作为备用设备，此时显示的是本设备从主用设备同步过来的]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[会话信息]{style="font-family:宋体"}
+Total synchronized PPPoE sessions
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Down]{lang="EN-US"}]{#struct_0_16980_17120_674517499}[：表示在该多机备份实例中，本设备不运行，此时没有同步的]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[会话信息（在下面两种情况下设备会处于]{style="font-family:宋体"}[Down]{lang="EN-US"}[状态：一是当]{style="font-family:宋体"}[VRRP]{lang="EN-US"}[备份组处于]{style="font-family:宋体"}[initialize]{lang="EN-US"}[状态时，互相备份的两台设备在对应]{style="font-family:宋体"}[VSRP]{lang="EN-US"}[实例中将都处于无法运行状态；二是本端多机备份实例不存在或者配置不完整）]{style="font-family:宋体"}
+同步的PPPoE会话数目
 
-[[Total synchronized PPPoE sessions]{lang="EN-US"}]{#struct_0_16980_17120_x1121207909}
+SID
 
-[[同步的]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}]{#struct_0_16980_17120_x1124745193}[会话数目]{style="font-family:宋体"}
+PPPoE会话session ID
 
-[[SID]{lang="EN-US"}]{#struct_0_16980_17120_x1121273445}
+Service VLAN
 
-[[PPPoE]{lang="EN-US"}]{#struct_0_16980_17120_1498451547}[会话]{style="font-family:宋体"}[session ID]{lang="EN-US"}
+服务提供商VLAN
 
-[[Service VLAN]{lang="EN-US"}]{#struct_0_16980_17120_x1121338981}
+Customer VLAN
 
-[[服务提供商]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_16980_17120_1559904472}
+用户VLAN
 
-[[Customer VLAN]{lang="EN-US"}]{#struct_0_16980_17120_x1206365822}
+MAC address
 
-[[用户]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_16980_17120_x1120880229}
+用户MAC地址
 
-[[MAC address]{lang="EN-US"}]{#struct_0_16980_17120_1172813287}
+Interface
 
-[[用户]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_16980_17120_x1120945765}[地址]{style="font-family:宋体"}
-
-[[Interface]{lang="EN-US"}]{#struct_0_16980_17120_520162618}
-
-[[接入的接口名称]{style="font-family:宋体"}]{#struct_0_16980_17120_x1121011301}
-
-[ ]{lang="EN-US"}
-
-::: {#-433610411 .myid}
-[]{#_Toc404796112}[]{#struct_0_16980_17120_75124948}
+接入的接口名称
 
 **多机备份配置命令 \-- PPPoE支持多机备份功能配置命令 \-- ppp vsrp-port**
 
 ------------------------------------------------------------------------
 
-[**[ppp vsrp-port]{lang="EN-US"}**]{#struct_0_16980_17120_1404487434}[命令用来配置]{style="font-family:宋体"}[PPP]{lang="EN-US"}[会话数据备份通道的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号。]{style="font-family:宋体"}
+**[ppp vsrp-port**]命令用来配置PPP会话数据备份通道的TCP端口号。
 
-[**[undo ppp vsrp-port]{lang="EN-US"}**]{#struct_0_16980_17120_42172728}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ppp vsrp-port**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1989407855}
+【命令】
 
-[**[ppp vsrp-port ]{lang="EN-US"}***[port-number]{lang="EN-US"}*]{#struct_0_16980_17120_x1863989134}
+**[ppp vsrp-port ***port-number*]
 
-[**[undo ppp vsrp-port]{lang="EN-US"}**]{#struct_0_16980_17120_1175420722}
+**[undo ppp vsrp-port**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16980_17120_x165858171}
+【缺省情况】
 
-[[PPP]{lang="EN-US"}]{#struct_0_16980_17120_x1121076837}[会话数据备份通道的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号为]{style="font-family:宋体"}[60035]{lang="EN-US"}[。]{style="font-family:宋体"}
+PPP会话数据备份通道的TCP端口号为60035。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_1000973601}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_16980_17120_x141316568}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_1455445329}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_x1479811704}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_x1701891551}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1239728868}
+【参数】
 
-[*[port-number]{lang="ES-AR"}*]{#struct_0_16980_17120_x337045292}[：]{style="font-family:宋体"}[PPP]{lang="SV"}[会话]{style="font-family:宋体"}[数]{style="font-family:
-宋体"}[据备份通道的]{style="font-family:宋体"}[TCP]{lang="SV"}[端口号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[port-number*]：PPP会话数据备份通道的TCP端口号，取值范围为1～65535。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_577936031}
+【使用指导】
 
-[[PPP]{lang="EN-US"}]{#struct_0_16980_17120_x513465308}[会话在进行数据备份之前，需要与对端备份设备建立一条数据备份通道，此通道为]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接。]{style="font-family:宋体"}
+PPP会话在进行数据备份之前，需要与对端备份设备建立一条数据备份通道，此通道为TCP连接。
 
-[[用户可以通过本命令指定]{style="font-family:宋体"}[TCP]{lang="EN-US"}]{#struct_0_16980_17120_x1796788115}[连接的端口号，如果不指定则用缺省端口号发起连接。]{style="font-family:宋体"}
+用户可以通过本命令指定TCP连接的端口号，如果不指定则用缺省端口号发起连接。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_16980_17120_x1120618085}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[指定的端口号不能与系统中已经使用的端口号冲突。]{style="font-family:宋体"}]{#struct_0_16980_17120_x1050313208}
+·指定的端口号不能与系统中已经使用的端口号冲突。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[主用设备和备用设备上配置的对应端口号必须一致，否则]{style="font-family:宋体"}]{#struct_0_16980_17120_1577969119}[TCP]{lang="EN-US"}[连接将建立失败，数据备份通道不通]{style="font-family:宋体"}
+·主用设备和备用设备上配置的对应端口号必须一致，否则TCP连接将建立失败，数据备份通道不通
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_x112649621}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_x1947073766}[指定]{style="font-family:宋体"}[PPP]{lang="EN-US"}[会话数据备份通道的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号为]{style="font-family:宋体"}[20000]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 指定PPP会话数据备份通道的TCP端口号为20000。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_808012689}
+\<Sysname\> system-view
 
-[\[Sysname\] ppp vsrp-port 20000]{lang="EN-US"}
-:::
-
-::: {#-2062090440 .myid}
-[]{#_Toc336084869}[]{#_Toc332298259}[]{#_Toc404796113}[]{#struct_0_16980_17120_1634761303}[]{#_Toc375318232}[]{#_Toc359246092}[]{#_Toc357684248}
+Sysname ppp vsrp-port 20000
 
 **多机备份配置命令 \-- PPPoE支持多机备份功能配置命令 \-- pppoe-server vsrp-instance**
 
 ------------------------------------------------------------------------
 
-[**[pppoe-server vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_x176250850}[命令用来配置接口下]{style="font-family:
-宋体"}[PPPoE Server]{lang="EN-US"}[绑定指定的多机备份实例。]{style="font-family:
-宋体"}
+**[pppoe-server vsrp-instance**]命令用来配置接口下PPPoE Server绑定指定的多机备份实例。
 
-[**[undo pppoe-server vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_x1039269416}[命令用来取消接口下]{style="font-family:宋体"}[PPPoE Server]{lang="EN-US"}[绑定的多机备份实例。]{style="font-family:宋体"}
+**[undo pppoe-server vsrp-instance**]命令用来取消接口下PPPoE Server绑定的多机备份实例。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_1701901128}
+【命令】
 
-[**[pppoe-server vsrp-instance ]{lang="EN-US"}***[vsrp-instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_x8677537}
+**[pppoe-server vsrp-instance ***vsrp-instance-name*]
 
-[**[undo pppoe-server vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_x1120683621}
+**[undo pppoe-server vsrp-instance**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16980_17120_1140611771}
+【缺省情况】
 
-[[接口下]{style="font-family:宋体"}[PPPoE Server]{lang="EN-US"}]{#struct_0_16980_17120_x1700743128}[未绑定多机备份实例。]{style="font-family:宋体"}
+接口下PPPoE Server未绑定多机备份实例。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_1709134159}
+【视图】
 
-[[三层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_16980_17120_978712121}[三层以太网子接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层聚合子接口视图]{style="font-family:宋体"}[/EFM]{lang="EN-US"}[接口视图]{style="font-family:宋体"}[/EFM]{lang="EN-US"}[子接口视图]{style="font-family:宋体"}
+三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图/EFM接口视图/EFM子接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_1002244596}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_x682101105}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_x1674397439}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_x884253068}
+【参数】
 
-[*[vsrp-instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_309120935}[：多机备份实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[vsrp-instance-name*]：多机备份实例名称，为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_x947833231}
+【使用指导】
 
-[[在接口下配置本命令后，就可以通过多机备份模块提供的数据备份通道实时备份接口上接入的]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}]{#struct_0_16980_17120_1952947512}[会话信息和]{style="font-family:宋体"}[PPP]{lang="EN-US"}[会话信息。]{style="font-family:宋体"}
+在接口下配置本命令后，就可以通过多机备份模块提供的数据备份通道实时备份接口上接入的PPPoE会话信息和PPP会话信息。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_16980_17120_x1121142366}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置本命令时，多机备份实例可以不存在，但只有配置了多机备份实例后本命令才生效。]{style="font-family:宋体"}]{#struct_0_16980_17120_271298508}
+·配置本命令时，多机备份实例可以不存在，但只有配置了多机备份实例后本命令才生效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[一个接口只能绑定一个多机备份实例，同一接口下的多个子接口可以绑定同一个多机备份实例。]{style="font-family:宋体"}]{#struct_0_16980_17120_x830173}
+·一个接口只能绑定一个多机备份实例，同一接口下的多个子接口可以绑定同一个多机备份实例。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不同接口不能绑定同一个多机备份实例。如果要绑定的多机备份实例已经与其它的接口绑定，则需要先与其它接口解绑定后，才能配置成功。]{style="font-family:宋体"}]{#struct_0_16980_17120_x2063632274}
+·不同接口不能绑定同一个多机备份实例。如果要绑定的多机备份实例已经与其它的接口绑定，则需要先与其它接口解绑定后，才能配置成功。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在接口下配置本命令，会清除接口下所有已经上线的用户。]{style="font-family:宋体"}]{#struct_0_16980_17120_x746758360}
+·在接口下配置本命令，会清除接口下所有已经上线的用户。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_2119546442}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_x1171463679}[配置]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[接口下]{style="font-family:宋体"}[PPPoE Server]{lang="EN-US"}[绑定名为]{style="font-family:宋体"}[vsrp1]{lang="EN-US"}[的多机备份实例。]{style="font-family:宋体"}
+\# 配置GigabitEthernet1/0/1接口下PPPoE Server绑定名为vsrp1的多机备份实例。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_297079235}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] pppoe-server vsrp-instance vsrp1]{lang="EN-US"}
-:::
-
-::: {#164939516 .myid}
-[]{#_Toc404796114}[]{#struct_0_16980_17120_x960360032}[]{#_Toc375318233}[]{#_Toc359246101}[]{#_Toc357684249}
+Sysname-GigabitEthernet1/0/1 pppoe-server vsrp-instance vsrp1
 
 **多机备份配置命令 \-- PPPoE支持多机备份功能配置命令 \-- pppoe-server vsrp-port**
 
 ------------------------------------------------------------------------
 
-[**[pppoe-server vsrp-port]{lang="EN-US"}**]{#struct_0_16980_17120_x1110957850}[命令用来配置]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[会话数据备份通道的]{style="font-family:宋体"}[TCP]{lang="SV"}[端口号。]{style="font-family:宋体"}
+**[pppoe-server vsrp-port**]命令用来配置PPPoE会话数据备份通道的TCP端口号。
 
-[**[undo pppoe-server vsrp-port]{lang="EN-US"}**]{#struct_0_16980_17120_x1687886605}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo pppoe-server vsrp-port**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x2047022897}
+【命令】
 
-[**[pppoe-server vsrp-port ]{lang="EN-US"}***[port-number]{lang="EN-US"}*]{#struct_0_16980_17120_x836893853}
+**[pppoe-server vsrp-port ***port-number*]
 
-[**[undo pppoe-server vsrp-port]{lang="EN-US"}**]{#struct_0_16980_17120_x1121207902}
+**[undo pppoe-server vsrp-port**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1077691026}
+【缺省情况】
 
-[[PPPoE]{lang="EN-US"}]{#struct_0_16980_17120_1411434050}[会话数据备份通道的]{style="font-family:宋体"}[TCP]{lang="SV"}[端口号为]{style="font-family:宋体"}[60034]{lang="EN-US"}[。]{style="font-family:宋体"}
+PPPoE会话数据备份通道的TCP端口号为60034。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_x718678264}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_16980_17120_1478326200}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_x165744436}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_x1496386602}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_1844158321}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_x2063734643}
+【参数】
 
-[*[port-number]{lang="ES-AR"}*]{#struct_0_16980_17120_x256334285}[：]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[会话数据备份通道的]{style="font-family:宋体"}[TCP]{lang="SV"}[端口号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[port-number*]：PPPoE会话数据备份通道的TCP端口号，取值范围为1～65535。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1086709820}
+【使用指导】
 
-[[PPPoE]{lang="EN-US"}]{#struct_0_16980_17120_1700437725}[会话在进行数据备份之前，需要与对端备份设备建立一条数据备份通道，此通道为]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接。]{style="font-family:宋体"}
+PPPoE会话在进行数据备份之前，需要与对端备份设备建立一条数据备份通道，此通道为TCP连接。
 
-[[用户可以通过本命令指定]{style="font-family:宋体"}[TCP]{lang="EN-US"}]{#struct_0_16980_17120_x1121273438}[连接的端口号，如果不指定则用缺省端口号发起连接。]{style="font-family:宋体"}
+用户可以通过本命令指定TCP连接的端口号，如果不指定则用缺省端口号发起连接。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_16980_17120_x1680311750}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[指定的端口号不能与系统中已经使用的端口号冲突。]{style="font-family:宋体"}]{#struct_0_16980_17120_x986122103}
+·指定的端口号不能与系统中已经使用的端口号冲突。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[主用设备和备用设备上配置的对应端口号必须一致，否则]{style="font-family:宋体"}]{#struct_0_16980_17120_x16819407}[TCP]{lang="EN-US"}[连接将建立失败，数据备份通道不通。]{style="font-family:宋体"}
+·主用设备和备用设备上配置的对应端口号必须一致，否则TCP连接将建立失败，数据备份通道不通。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_2102194984}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_x1670911620}[指定]{style="font-family:宋体"}[PPPoE]{lang="EN-US"}[会话数据备份通道的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号为]{style="font-family:宋体"}[30000]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 指定PPPoE会话数据备份通道的TCP端口号为30000。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_x465539803}
+\<Sysname\> system-view
 
-[\[Sysname\] pppoe-server vsrp-port 30000]{lang="EN-US"}
-:::
-
-::: {#371253597 .myid}
-[]{#_Toc404796116}[]{#struct_0_16980_17120_x1607769366}[]{#_Toc379813159}[]{#_Toc369009550}
+Sysname pppoe-server vsrp-port 30000
 
 **多机备份配置命令 \-- L2TP支持多机备份功能配置命令 \-- display l2tp session vsrp**
 
 ------------------------------------------------------------------------
 
-[**[display l2tp session vsrp]{lang="EN-US"}**]{#struct_0_16980_17120_986017919}[命令用来显示多机备份实例下的]{style="font-family:
-宋体"}[L2TP]{lang="EN-US"}[会话信息。]{style="font-family:
-宋体"}
+**[display l2tp session vsrp**]命令用来显示多机备份实例下的L2TP会话信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1121338974}
+【命令】
 
-[**[display l2tp session vsrp]{lang="EN-US"}**[ \[ *vsrp-instance-name* \]]{lang="EN-US"}]{#struct_0_16980_17120_x1974958113}
+**[display l2tp session vsrp** [ *vsrp-instance-name* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_1709540262}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_16980_17120_1375806276}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_454750118}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_369075080}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_16980_17120_1362841677}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_877971300}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_16980_17120_x112409817}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_1209664217}
+【参数】
 
-[*[vsrp-instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_x94570989}[：多机备份实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则显示所有多机备份实例下的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[会话信息。]{style="font-family:宋体"}
+*[vsrp-instance-name*]：多机备份实例名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，则显示所有多机备份实例下的L2TP会话信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1120880222}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_1932328174}[显示多机备份实例]{style="font-family:宋体"}[abc]{lang="EN-US"}[下的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[会话信息。]{style="font-family:宋体"}
+\# 显示多机备份实例abc下的L2TP会话信息。
 
-[[\<Sysname\> display l2tp session vsrp abc]{lang="EN-US"}]{#struct_0_16980_17120_x566380011}
+\<Sysname\> display l2tp session vsrp abc
 
-[]{#_Toc95359215}[]{#_Toc85604325}[]{#_Toc81386704}[]{#_Toc74661827}[]{#_Toc72589790}[]{#_Toc72589517}[]{#_Toc72589002}[]{#_Toc65921172}[]{#_Toc65919120}[]{#_Toc65919095}[]{#_Toc65910729}[]{#_Toc65909974}[]{#_Toc60125184}[VSRP instance name: abc]{lang="EN-US"}
+VSRP instance name: abc
 
-[Local session ID: 1]{lang="EN-US"}
+Local session ID: 1
 
-[Remote session ID: 1]{lang="EN-US"}
+Remote session ID: 1
 
-[Local tunnel ID: 1]{lang="EN-US"}
+Local tunnel ID: 1
 
-[State: Established]{lang="EN-US"}
+State: Established
 
-[User ID: 00e0fc112233000300000004]{lang="EN-US"}
+User ID: 00e0fc112233000300000004
 
-[Interface: Virtual-Access0]{lang="EN-US"}
+Interface: Virtual-Access0
 
-[[表1-5 ]{lang="EN-US"}[display l2tp session vsrp]{lang="EN-US"}]{#struct_0_16980_17120_x1107877631}[命令显示信息描述表]{style="font-family:黑体"}
+表1-5 display l2tp session vsrp命令显示信息描述表
 
-[]{#table_struct_0_x1916684333}[[字段]{style="font-family:黑体"}]{#struct_0_16980_17120_x1120945758}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16980_17120_x595779237}
+描述
 
-[[VSRP instance name]{lang="EN-US"}]{#struct_0_16980_17120_x1121011294}
+VSRP instance name
 
-[[会话所属的多机备份实例的名称]{style="font-family:宋体"}]{#struct_0_16980_17120_x1121076830}
+会话所属的多机备份实例的名称
 
-[[Local session ID]{lang="EN-US"}]{#struct_0_16980_17120_x1371679394}
+Local session ID
 
-[[本端的会话]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_16980_17120_x1120618078}
+本端的会话ID
 
-[[Remote session ID]{lang="EN-US"}]{#struct_0_16980_17120_66415079}
+Remote session ID
 
-[[远端的会话]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_16980_17120_x1120683614}
+远端的会话ID
 
-[[Local tunnel ID]{lang="EN-US"}]{#struct_0_16980_17120_x1121142367}
+Local tunnel ID
 
-[[本端的隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_16980_17120_x1294785433}
+本端的隧道ID
 
-[[State]{lang="EN-US"}]{#struct_0_16980_17120_x1121207903}
+State
 
-[[会话的状态，取值包括：]{style="font-family:宋体"}]{#struct_0_16980_17120_1651192329}
+会话的状态，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Idle]{lang="EN-US"}]{#struct_0_16980_17120_x1121273439}[：空闲状态]{lang="EN-US" style="font-family:宋体"}
+·Idle：空闲状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Wait-tunnel]{lang="EN-US"}]{#struct_0_16980_17120_x1121338975}[：等待建立隧道]{lang="EN-US" style="font-family:宋体"}
+·Wait-tunnel：等待建立隧道
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Wait-reply]{lang="EN-US"}]{#struct_0_16980_17120_x408874172}[：等待]{lang="EN-US" style="font-family:宋体"}[ICRP]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+·Wait-reply：等待ICRP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Established]{lang="EN-US"}]{#struct_0_16980_17120_x1120880223}[：会话成功建立]{lang="EN-US" style="font-family:宋体"}
+·Established：会话成功建立
 
-[[User ID]{lang="EN-US"}]{#struct_0_16980_17120_x1120945759}
+User ID
 
-[[用户]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_16980_17120_2133104118}
+用户ID
 
-[[Interface]{lang="EN-US"}]{#struct_0_16980_17120_x1121011295}
+Interface
 
-[[LAC]{lang="EN-US"}]{#struct_0_16980_17120_2044034663}[侧]{style="font-family:宋体"}[PPP]{lang="EN-US"}[链路的]{style="font-family:宋体"}[VA]{lang="EN-US"}[接口]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#1993718314 .myid}
-[]{#_Toc404796117}[]{#struct_0_16980_17120_x1121076831}[]{#_Toc379813160}[]{#_Toc369009551}
+LAC侧PPP链路的VA接口
 
 **多机备份配置命令 \-- L2TP支持多机备份功能配置命令 \-- display l2tp tunnel vsrp**
 
 ------------------------------------------------------------------------
 
-[**[display l2tp tunnel vsrp]{lang="DE"}**]{#struct_0_16980_17120_194404547}[命令用来显示多机备份实例下的]{style="font-family:宋体"}[L2TP]{lang="DE"}[隧道信息。]{style="font-family:宋体"}
+**[display l2tp tunnel vsrp**]命令用来显示多机备份实例下的L2TP隧道信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_873588234}
+【命令】
 
-[**[display l2tp tunnel vsrp]{lang="EN-US"}**[ \[ *vsrp-instance-name* \]]{lang="EN-US"}]{#struct_0_16980_17120_378411237}
+**[display l2tp tunnel vsrp** [ *vsrp-instance-name* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1600420461}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_16980_17120_x1286642392}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_1854317670}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_x308742922}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_16980_17120_x1077540783}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_x117260639}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_16980_17120_x1120618079}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_1632499020}
+【参数】
 
-[*[vsrp-instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_x2074131243}[：]{style="font-family:宋体"}[多机备份实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则显示所有多机备份实例下的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道信息。]{style="font-family:宋体"}
+*[vsrp-instance-name*]：多机备份实例名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，则显示所有多机备份实例下的L2TP隧道信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_519874192}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_1336726455}[显示多机备份实例]{style="font-family:宋体"}[abc]{lang="EN-US"}[下]{style="font-family:宋体"}[的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道信息。]{style="font-family:宋体"}
+\# 显示多机备份实例abc下的L2TP隧道信息。
 
-[[\<Sysname\> display l2tp tunnel vsrp abc]{lang="EN-US"}]{#struct_0_16980_17120_524364681}
+\<Sysname\> display l2tp tunnel vsrp abc
 
-[VSRP instance name: abc]{lang="EN-US"}
+VSRP instance name: abc
 
-[Local tunnel ID: 1]{lang="EN-US"}
+Local tunnel ID: 1
 
-[Remote tunnel ID: 1]{lang="EN-US"}
+Remote tunnel ID: 1
 
-[State: Established]{lang="EN-US"}
+State: Established
 
-[Sessions: 1]{lang="EN-US"}
+Sessions: 1
 
-[Remote address: 20.1.1.2]{lang="EN-US"}
+Remote address: 20.1.1.2
 
-[Remote port: 1701]{lang="EN-US"}
+Remote port: 1701
 
-[Remote name: lns]{lang="EN-US"}
+Remote name: lns
 
-[Local address: 2.2.2.2]{lang="EN-US"}
+Local address: 2.2.2.2
 
-[Sequence number sent (Ns): 2]{lang="EN-US"}
+Sequence number sent (Ns): 2
 
-[Sequence number expected (Nr): 3]{lang="EN-US"}
+Sequence number expected (Nr): 3
 
-[[表1-6 ]{lang="EN-US"}[display l2tp tunnel vsrp]{lang="EN-US"}]{#struct_0_16980_17120_x935626763}[命令显示信息描述表]{style="font-family:黑体"}
+表1-6 display l2tp tunnel vsrp命令显示信息描述表
 
-[]{#table_struct_0_x1896246686}[[字段]{style="font-family:黑体"}]{#struct_0_16980_17120_x1120683615}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16980_17120_36866401}
+描述
 
-[[VSRP instance name]{lang="EN-US"}]{#struct_0_16980_17120_440625013}
+VSRP instance name
 
-[[隧道所属的多机备份实例的名称]{style="font-family:宋体"}]{#struct_0_16980_17120_36931937}
+隧道所属的多机备份实例的名称
 
-[[Local tunnel ID]{lang="EN-US"}]{#struct_0_16980_17120_x1899369762}
+Local tunnel ID
 
-[[本端的隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_16980_17120_36735329}
+本端的隧道ID
 
-[[Remote tunnel ID]{lang="EN-US"}]{#struct_0_16980_17120_36800865}
+Remote tunnel ID
 
-[[远端的隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_16980_17120_34623657}
+远端的隧道ID
 
-[[State]{lang="EN-US"}]{#struct_0_16980_17120_36604257}
+State
 
-[[隧道的状态，取值包括：]{style="font-family:宋体"}]{#struct_0_16980_17120_36669793}
+隧道的状态，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Idle]{lang="EN-US"}]{#struct_0_16980_17120_x205384823}[：空闲状态]{lang="EN-US" style="font-family:宋体"}
+·Idle：空闲状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Wait-reply]{lang="EN-US"}]{#struct_0_16980_17120_36473185}[：等待]{lang="EN-US" style="font-family:宋体"}[SCCRP]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+·Wait-reply：等待SCCRP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Established]{lang="EN-US"}]{#struct_0_16980_17120_1609750702}[：隧道成功建立]{lang="EN-US" style="font-family:宋体"}
+·Established：隧道成功建立
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Stopping]{lang="EN-US"}]{#struct_0_16980_17120_36538721}[：正在]{lang="EN-US" style="font-family:宋体"}[断开隧道]{style="font-family:宋体"}
+·Stopping：正在断开隧道
 
-[[Sessions]{lang="EN-US"}]{#struct_0_16980_17120_37390689}
+Sessions
 
-[[隧道上的会话数目]{style="font-family:宋体"}]{#struct_0_16980_17120_1786358260}
+隧道上的会话数目
 
-[[Remote address]{lang="EN-US"}]{#struct_0_16980_17120_37456225}
+Remote address
 
-[[对端的]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_16980_17120_36866400}[地址]{style="font-family:宋体"}
+对端的IP地址
 
-[[Remote port]{lang="EN-US"}]{#struct_0_16980_17120_x1898027147}
+Remote port
 
-[[对端]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_16980_17120_36931936}[使用的]{style="font-family:宋体"}[UDP]{lang="EN-US"}[端口号]{style="font-family:宋体"}
+对端L2TP使用的UDP端口号
 
-[[Remote name]{lang="EN-US"}]{#struct_0_16980_17120_36735328}
+Remote name
 
-[[隧道对端的名称]{style="font-family:宋体"}]{#struct_0_16980_17120_181538371}
+隧道对端的名称
 
-[[Local address]{lang="EN-US"}]{#struct_0_16980_17120_36800864}
+Local address
 
-[[本端的]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_16980_17120_36604256}[地址]{style="font-family:宋体"}
+本端的IP地址
 
-[[Sequence number sent (Ns)]{lang="EN-US"}]{#struct_0_16980_17120_2099743448}
+Sequence number sent (Ns)
 
-[[发送报文的序号]{style="font-family:宋体"}]{#struct_0_16980_17120_36669792}
+发送报文的序号
 
-[[Sequence number expected (Nr)]{lang="EN-US"}]{#struct_0_16980_17120_36473184}
+Sequence number expected (Nr)
 
-[[期望接收到的下一个控制报文中]{style="font-family:宋体"}[Ns]{lang="EN-US"}]{#struct_0_16980_17120_x346564434}[字段的值]{style="font-family:宋体"}
+期望接收到的下一个控制报文中Ns字段的值
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_2079342274}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[reset l2tp tunnel]{lang="EN-US"}**]{#struct_0_16980_17120_x661778154}[（]{lang="EN-US" style="font-family:宋体"}[二层技术]{style="font-family:宋体"}[-]{lang="EN-US"}[广域网接入]{style="font-family:宋体"}[/L2TP]{lang="EN-US"}[）]{lang="EN-US" style="font-family:宋体"}
-
-::: {#-36031710 .myid}
-[]{#_Toc404796118}[]{#struct_0_16980_17120_36538720}[]{#_Toc379813161}[]{#_Toc369009552}
+·**reset l2tp tunnel**（二层技术-广域网接入/L2TP）
 
 **多机备份配置命令 \-- L2TP支持多机备份功能配置命令 \-- display l2tp vsrp**
 
 ------------------------------------------------------------------------
 
-[**[display l2tp vsrp]{lang="DE"}**]{#struct_0_16980_17120_x332125228}[命令用来显示应用于]{style="font-family:宋体"}[L2TP]{lang="DE"}[的多机备份实例的运行信息。]{style="font-family:宋体"}
+**[display l2tp vsrp**]命令用来显示应用于L2TP的多机备份实例的运行信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_10459911}
+【命令】
 
-[**[display l2tp vsrp ]{lang="EN-US"}**[\[ *vsrp-instance-name* \]]{lang="EN-US"}]{#struct_0_16980_17120_196782253}
+**[display l2tp vsrp ** *vsrp-instance-name* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1452459013}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_16980_17120_2068439286}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_1993086858}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_5456358}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_16980_17120_356497835}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_255632741}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_16980_17120_x654514256}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_37390688}
+【参数】
 
-[*[vsrp-instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_x169956876}[：]{style="font-family:宋体"}[多机备份实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则显示应用于]{style="font-family:宋体"}[L2TP]{lang="DE"}[的所有多机备份实例的运行信息。]{style="font-family:宋体"}
+*[vsrp-instance-name*]：多机备份实例名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，则显示应用于L2TP的所有多机备份实例的运行信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_1290853702}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_459143636}[显示应用于]{style="font-family:宋体"}[L2TP]{lang="DE"}[的多机备份实例]{style="font-family:宋体"}[abc]{lang="EN-US"}[的运行信息。]{style="font-family:宋体"}
+\# 显示应用于L2TP的多机备份实例abc的运行信息。
 
-[[\<Sysname\> display l2tp vsrp abc]{lang="EN-US"}]{#struct_0_16980_17120_37456224}
+\<Sysname\> display l2tp vsrp abc
 
-[VSRP instance name: abc]{lang="EN-US"}
+VSRP instance name: abc
 
-[VSRP mode: Hot]{lang="EN-US"}
+VSRP mode: Hot
 
-[VSRP status: Switched]{lang="EN-US"}
+VSRP status: Switched
 
-[Local VSRP state: Master/Up]{lang="EN-US"}
+Local VSRP state: Master/Up
 
-[Remote VSRP state: Backup]{lang="EN-US"}
+Remote VSRP state: Backup
 
-[VSRP channel state: Synced]{lang="EN-US"}
+VSRP channel state: Synced
 
-[Sent messages: 13005]{lang="EN-US"}
+Sent messages: 13005
 
-[Received messages: 23]{lang="EN-US"}
+Received messages: 23
 
-[Discarded sent messages: 22]{lang="EN-US"}
+Discarded sent messages: 22
 
-[Discarded received messages: 13]{lang="EN-US"}
+Discarded received messages: 13
 
-[Sent tunnel add messages: 8000]{lang="EN-US"}
+Sent tunnel add messages: 8000
 
-[Received tunnel add messages: 0]{lang="EN-US"}
+Received tunnel add messages: 0
 
-[Sent tunnel delete messages: 5500]{lang="EN-US"}
+Sent tunnel delete messages: 5500
 
-[Received tunnel delete messages: 0]{lang="EN-US"}
+Received tunnel delete messages: 0
 
-[Sent session add messages: 20000]{lang="EN-US"}
+Sent session add messages: 20000
 
-[Received session add messages: 0]{lang="EN-US"}
+Received session add messages: 0
 
-[Sent session delete messages: 10000]{lang="EN-US"}
+Sent session delete messages: 10000
 
-[Received session delete messages: 0]{lang="EN-US"}
+Received session delete messages: 0
 
-[Current tunnels: 2500]{lang="EN-US"}
+Current tunnels: 2500
 
-[Current sessions: 10000]{lang="EN-US"}
+Current sessions: 10000
 
-[Added tunnels: 8000]{lang="EN-US"}
+Added tunnels: 8000
 
-[Deleted tunnels: 5500]{lang="EN-US"}
+Deleted tunnels: 5500
 
-[Added sessions: 20000]{lang="EN-US"}
+Added sessions: 20000
 
-[Deleted sessions: 10000]{lang="EN-US"}
+Deleted sessions: 10000
 
-[[表1-7 ]{lang="EN-US"}[display l2tp vsrp]{lang="EN-US"}]{#struct_0_16980_17120_x610579805}[命令显示信息描述表]{style="font-family:黑体"}
+表1-7 display l2tp vsrp命令显示信息描述表
 
-[]{#table_struct_0_x1891539546}[[字段]{style="font-family:黑体"}]{#struct_0_16980_17120_734003898}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16980_17120_36866399}
+描述
 
-[[VSRP instance name]{lang="EN-US"}]{#struct_0_16980_17120_1283864376}
+VSRP instance name
 
-[[多机备份实例的名称]{style="font-family:宋体"}]{#struct_0_16980_17120_36931935}
+多机备份实例的名称
 
-[[VSRP mode]{lang="EN-US"}]{#struct_0_16980_17120_36735327}
+VSRP mode
 
-[[备份模式，取值包括：]{style="font-family:宋体"}]{#struct_0_16980_17120_x245428669}
+备份模式，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Hot]{lang="EN-US"}]{#struct_0_16980_17120_36800863}[：热]{lang="EN-US" style="font-family:宋体"}[备份]{style="font-family:宋体"}
+·Hot：热备份
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Warm]{lang="EN-US"}]{#struct_0_16980_17120_36604255}[：温]{lang="EN-US" style="font-family:宋体"}[备份]{style="font-family:宋体"}
+·Warm：温备份
 
-[[VSRP status]{lang="EN-US"}]{#struct_0_16980_17120_525765336}
+VSRP status
 
-[[多机备份组的主备切换状态，取值包括：]{style="font-family:宋体"}]{#struct_0_16980_17120_36669791}
+多机备份组的主备切换状态，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Switching]{lang="EN-US"}]{#struct_0_16980_17120_x587721847}[：]{lang="EN-US" style="font-family:宋体"}[正在进行主备]{style="font-family:宋体"}[切换]{lang="EN-US" style="font-family:宋体"}
+·Switching：正在进行主备切换
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Switched]{lang="EN-US"}]{#struct_0_16980_17120_36473183}[：]{lang="EN-US" style="font-family:宋体"}[主备]{style="font-family:宋体"}[切换完成]{lang="EN-US" style="font-family:宋体"}
+·Switched：主备切换完成
 
-[[Local VSRP state]{lang="EN-US"}]{#struct_0_16980_17120_36538719}
+Local VSRP state
 
-[[本端多机备份组状态，取值包括：]{style="font-family:宋体"}]{#struct_0_16980_17120_x1471242129}
+本端多机备份组状态，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Master/Up]{lang="EN-US"}]{#struct_0_16980_17120_37390687}[：]{lang="EN-US" style="font-family:宋体"}[本端作为主设备]{style="font-family:宋体"}[/]{lang="EN-US"}[多机备份组可用]{style="font-family:宋体"}
+·Master/Up：本端作为主设备/多机备份组可用
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Backup/Up]{lang="EN-US"}]{#struct_0_16980_17120_37456223}[：本端作为备设备]{style="font-family:宋体"}[/]{lang="EN-US"}[多机备份组可用]{style="font-family:宋体"}
+·Backup/Up：本端作为备设备/多机备份组可用
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Master/Down]{lang="EN-US"}]{#struct_0_16980_17120_963398307}[：]{lang="EN-US" style="font-family:宋体"}[本端作为主设备]{style="font-family:宋体"}[/]{lang="EN-US"}[多机备份组不可用]{style="font-family:宋体"}
+·Master/Down：本端作为主设备/多机备份组不可用
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Backup/Down]{lang="EN-US"}]{#struct_0_16980_17120_36866398}[：]{lang="EN-US" style="font-family:宋体"}[本端作为备设备]{style="font-family:宋体"}[/]{lang="EN-US"}[多机备份组不可用]{style="font-family:宋体"}
+·Backup/Down：本端作为备设备/多机备份组不可用
 
-[[Remote VSRP state]{lang="EN-US"}]{#struct_0_16980_17120_x1054787784}
+Remote VSRP state
 
-[[对端多机备份组状态，取值包括：]{style="font-family:宋体"}]{#struct_0_16980_17120_36931934}
+对端多机备份组状态，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Master]{lang="EN-US"}]{#struct_0_16980_17120_36735326}[：]{lang="EN-US" style="font-family:宋体"}[对端作为主设备]{style="font-family:宋体"}
+·Master：对端作为主设备
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Backup]{lang="EN-US"}]{#struct_0_16980_17120_2093223491}[：对端作为备设备]{style="font-family:宋体"}
+·Backup：对端作为备设备
 
-[[VSRP channel state]{lang="EN-US"}]{#struct_0_16980_17120_36800862}
+VSRP channel state
 
-[[数据备份通道状态，取值包括：]{style="font-family:宋体"}]{#struct_0_16980_17120_36604254}
+数据备份通道状态，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disconnected]{lang="EN-US"}]{#struct_0_16980_17120_x1812886824}[：断开]{lang="EN-US" style="font-family:宋体"}
+·Disconnected：断开
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Snycing]{lang="EN-US"}]{#struct_0_16980_17120_36669790}[：正在]{lang="EN-US" style="font-family:宋体"}[数据同步]{style="font-family:宋体"}
+·Snycing：正在数据同步
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Synced]{lang="EN-US"}]{#struct_0_16980_17120_36473182}[：数据同步]{lang="EN-US" style="font-family:宋体"}[完成]{style="font-family:宋体"}
+·Synced：数据同步完成
 
-[[Sent messages]{lang="EN-US"}]{#struct_0_16980_17120_35772590}
+Sent messages
 
-[[本设备发送的备份消息数]{style="font-family:宋体"}]{#struct_0_16980_17120_36538718}
+本设备发送的备份消息数
 
-[[Received messages]{lang="EN-US"}]{#struct_0_16980_17120_37390686}
+Received messages
 
-[[本设备接收的备份消息数]{style="font-family:宋体"}]{#struct_0_16980_17120_x2081641996}
+本设备接收的备份消息数
 
-[[Discarded sent messages]{lang="EN-US"}]{#struct_0_16980_17120_37456222}
+Discarded sent messages
 
-[[本设备在发送方向丢弃的消息数]{style="font-family:宋体"}]{#struct_0_16980_17120_36866405}
+本设备在发送方向丢弃的消息数
 
-[[Discarded received messages]{lang="EN-US"}]{#struct_0_16980_17120_1205299061}
+Discarded received messages
 
-[[本设备在接收方向丢弃的消息数]{style="font-family:宋体"}]{#struct_0_16980_17120_36931941}
+本设备在接收方向丢弃的消息数
 
-[[Sent tunnel add messages]{lang="EN-US"}]{#struct_0_16980_17120_36735333}
+Sent tunnel add messages
 
-[[本设备发送的新建隧道消息数]{style="font-family:宋体"}]{#struct_0_16980_17120_555981224}
+本设备发送的新建隧道消息数
 
-[[Received tunnel add messages]{lang="EN-US"}]{#struct_0_16980_17120_36800869}
+Received tunnel add messages
 
-[[本设备接收的新建隧道消息数]{style="font-family:宋体"}]{#struct_0_16980_17120_36604261}
+本设备接收的新建隧道消息数
 
-[[Sent tunnel delete messages]{lang="EN-US"}]{#struct_0_16980_17120_x275644557}
+Sent tunnel delete messages
 
-[[本设备发送的删除隧道消息数]{style="font-family:宋体"}]{#struct_0_16980_17120_36669797}
+本设备发送的删除隧道消息数
 
-[[Received tunnel delete messages]{lang="EN-US"}]{#struct_0_16980_17120_36473189}
+Received tunnel delete messages
 
-[[本设备接收的删除隧道消息数]{style="font-family:宋体"}]{#struct_0_16980_17120_x391194450}
+本设备接收的删除隧道消息数
 
-[[Sent session add messages]{lang="EN-US"}]{#struct_0_16980_17120_36538725}
+Sent session add messages
 
-[[本设备发送的新建会话消息数]{style="font-family:宋体"}]{#struct_0_16980_17120_37390693}
+本设备发送的新建会话消息数
 
-[[Received session add messages]{lang="EN-US"}]{#struct_0_16980_17120_x2089536167}
+Received session add messages
 
-[[本设备接收的新建会话消息数]{style="font-family:宋体"}]{#struct_0_16980_17120_37456229}
+本设备接收的新建会话消息数
 
-[[Sent session delete messages]{lang="EN-US"}]{#struct_0_16980_17120_36866404}
+Sent session delete messages
 
-[[本设备发送的删除会话消息数]{style="font-family:宋体"}]{#struct_0_16980_17120_x1133353099}
+本设备发送的删除会话消息数
 
-[[Received session delete messages]{lang="EN-US"}]{#struct_0_16980_17120_36931940}
+Received session delete messages
 
-[[本设备接收的删除会话消息数]{style="font-family:宋体"}]{#struct_0_16980_17120_36735332}
+本设备接收的删除会话消息数
 
-[[Current tunnels]{lang="EN-US"}]{#struct_0_16980_17120_x1400333912}
+Current tunnels
 
-[[多机备份实例下的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_16980_17120_36800868}[隧道数]{style="font-family:宋体"}
+多机备份实例下的L2TP隧道数
 
-[[Current sessions]{lang="EN-US"}]{#struct_0_16980_17120_36604260}
+Current sessions
 
-[[多机备份实例下的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_16980_17120_36669796}[会话数]{style="font-family:宋体"}
+多机备份实例下的L2TP会话数
 
-[[Added tunnels]{lang="EN-US"}]{#struct_0_16980_17120_x1779362935}
+Added tunnels
 
-[[多机备份实例下新建]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_16980_17120_36473188}[隧道的次数]{style="font-family:宋体"}
+多机备份实例下新建L2TP隧道的次数
 
-[[Deleted tunnels]{lang="EN-US"}]{#struct_0_16980_17120_36538724}
+Deleted tunnels
 
-[[多机备份实例下删除]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_16980_17120_432548820}[隧道的次数]{style="font-family:宋体"}
+多机备份实例下删除L2TP隧道的次数
 
-[[Added sessions]{lang="EN-US"}]{#struct_0_16980_17120_37390692}
+Added sessions
 
-[[多机备份实例下新建]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_16980_17120_37456228}[会话的次数]{style="font-family:宋体"}
+多机备份实例下新建L2TP会话的次数
 
-[[Deleted sessions]{lang="EN-US"}]{#struct_0_16980_17120_1602950342}
+Deleted sessions
 
-[[多机备份实例下删除]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_16980_17120_2021597894}[会话的次数]{style="font-family:宋体"}
-
-[]{#_Toc96758199}[]{#_Toc54583756}[]{#_Toc35242896}[]{#_Toc16936660}[]{#_Toc15876338}[ ]{lang="EN-US"}
-
-::: {#602584322 .myid}
-[]{#_Toc404796119}[]{#struct_0_16980_17120_x26627362}[]{#_Toc379813162}[]{#_Toc369009553}[]{#_Toc359316247}
+多机备份实例下删除L2TP会话的次数
 
 **多机备份配置命令 \-- L2TP支持多机备份功能配置命令 \-- l2tp tunnel-id**
 
 ------------------------------------------------------------------------
 
-[**[l2tp tunnel-id]{lang="EN-US"}**]{#struct_0_16980_17120_6585969}[命令用来配置]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}[的分配范围。]{style="font-family:宋体"}
+**[l2tp tunnel-id**]命令用来配置L2TP隧道ID的分配范围。
 
-[**[undo ]{lang="EN-US"}[l2tp tunnel-id]{lang="EN-US"}**]{#struct_0_16980_17120_1603015878}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo l2tp tunnel-id**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x693212425}
+【命令】
 
-[**[l2tp tunnel-id]{lang="EN-US"}**[ *low high*]{lang="EN-US"}]{#struct_0_16980_17120_x759022518}
+**[l2tp tunnel-id** *low high*]
 
-[**[undo ]{lang="EN-US"}[l2tp tunnel-id]{lang="EN-US"}**]{#struct_0_16980_17120_1766328431}
+**[undo l2tp tunnel-id**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16980_17120_x822890733}
+【缺省情况】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_16980_17120_1915617757}[隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}[的分配范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+L2TP隧道ID的分配范围为1～65535。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_x391612039}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_16980_17120_x1719452370}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_x228257179}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_30575636}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_1602819270}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1535427493}
+【参数】
 
-[*[low]{lang="SV"}*]{#struct_0_16980_17120_x1667165606}[：]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}[分配范围的下边界值，取值为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[low*]：L2TP隧道ID分配范围的下边界值，取值为1～65535。
 
-[*[high]{lang="SV"}*]{#struct_0_16980_17120_527766185}[：]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}[分配范围的上边界值，取值为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，并且上边界值不能小于下边界值。]{style="font-family:宋体"}
+*[high*]：L2TP隧道ID分配范围的上边界值，取值为1～65535，并且上边界值不能小于下边界值。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_149139505}
+【使用指导】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_16980_17120_x905267554}[多机备份组网中的两台]{style="font-family:宋体"}[LAC]{lang="EN-US"}[设备可以利用不同的多机备份实例来实现负载分担，比如：在多机备份实例]{style="font-family:宋体"}[1]{lang="EN-US"}[中]{style="font-family:宋体"}[LAC1]{lang="EN-US"}[为主用设备，]{style="font-family:宋体"}[LAC2]{lang="EN-US"}[为备用设备；而在多机备份实例]{style="font-family:宋体"}[2]{lang="EN-US"}[中]{style="font-family:宋体"}[LAC2]{lang="EN-US"}[为主用设备，]{style="font-family:宋体"}[LAC1]{lang="EN-US"}[为备用设备。这种情况下，要求不同多机备份实例中的主用]{style="font-family:宋体"}[LAC]{lang="EN-US"}[设备建立的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道的]{style="font-family:宋体"}[ID]{lang="EN-US"}[不能冲突，因此需要为两台]{style="font-family:宋体"}[LAC]{lang="EN-US"}[设备配置不同的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}[分配范围。]{style="font-family:宋体"}
+L2TP多机备份组网中的两台LAC设备可以利用不同的多机备份实例来实现负载分担，比如：在多机备份实例1中LAC1为主用设备，LAC2为备用设备；而在多机备份实例2中LAC2为主用设备，LAC1为备用设备。这种情况下，要求不同多机备份实例中的主用LAC设备建立的L2TP隧道的ID不能冲突，因此需要为两台LAC设备配置不同的L2TP隧道ID分配范围。
 
-[[需要注意的是，当]{style="font-family:宋体"}[LAC]{lang="EN-US"}]{#struct_0_16980_17120_x921547124}[设备上存在]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道时，不能修改]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}[分配范围。]{style="font-family:宋体"}
+需要注意的是，当LAC设备上存在L2TP隧道时，不能修改L2TP隧道ID分配范围。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_x537490276}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_1164239513}[配置]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}[的分配范围为]{style="font-family:宋体"}[20]{lang="EN-US"}[～]{style="font-family:宋体"}[100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置L2TP隧道ID的分配范围为20～100。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_112141264}
+\<Sysname\> system-view
 
-[\[Sysname\] l2tp tunnel-id 20 100]{lang="EN-US"}
-:::
-
-::: {#2139316113 .myid}
-[]{#_Toc404796120}[]{#struct_0_16980_17120_1602884806}[]{#_Toc379813163}[]{#_Toc369009563}[]{#_Toc359316248}[]{#_Toc352760605}
+Sysname l2tp tunnel-id 20 100
 
 **多机备份配置命令 \-- L2TP支持多机备份功能配置命令 \-- l2tp vsrp-port**
 
 ------------------------------------------------------------------------
 
-[**[l2tp vsrp-port]{lang="EN-US"}**]{#struct_0_16980_17120_66647373}[命令用来配置]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[数据备份通道的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号。]{style="font-family:宋体"}
+**[l2tp vsrp-port**]命令用来配置L2TP数据备份通道的TCP端口号。
 
-[**[undo l2tp vsrp-port]{lang="EN-US"}**]{#struct_0_16980_17120_x1688439968}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo l2tp vsrp-port**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_1591960857}
+【命令】
 
-[**[l2tp vsrp-port]{lang="EN-US"}**[ *port-number*]{lang="EN-US"}]{#struct_0_16980_17120_2085050248}
+**[l2tp vsrp-port** *port-number*]
 
-[**[undo l2tp vsrp-port]{lang="EN-US"}**]{#struct_0_16980_17120_x595498251}
+**[undo l2tp vsrp-port**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16980_17120_x153452207}
+【缺省情况】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_16980_17120_x524482221}[数据备份通道的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号为]{style="font-family:宋体"}[60036]{lang="EN-US"}[。]{style="font-family:宋体"}
+L2TP数据备份通道的TCP端口号为60036。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_x30545265}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_16980_17120_409143343}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_1602688198}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_1964886152}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_978062953}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_1014981785}
+【参数】
 
-[*[port-number]{lang="ES-AR"}*]{#struct_0_16980_17120_1269075819}[：]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[数]{style="font-family:宋体"}[据备份通道的]{style="font-family:宋体"}[TCP]{lang="SV"}[端口号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[port-number*]：L2TP数据备份通道的TCP端口号，取值范围为1～65535。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1362650414}
+【使用指导】
 
-[[在进行]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_16980_17120_x626567610}[数据备份之前，主用和备用]{style="font-family:宋体"}[LAC]{lang="EN-US"}[设备之间需要先建立一条]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[数据备份通道，此通道为]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接。通过此命令可以调整]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接使用的端口号。]{style="font-family:宋体"}
+在进行L2TP数据备份之前，主用和备用LAC设备之间需要先建立一条L2TP数据备份通道，此通道为TCP连接。通过此命令可以调整TCP连接使用的端口号。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_16980_17120_x2021552996}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[主用和备用]{style="font-family:宋体"}]{#struct_0_16980_17120_x1333144090}[LAC]{lang="EN-US"}[设备必须配置相同的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号，才能正确建立]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[数据备份通道。]{style="font-family:宋体"}
+·主用和备用LAC设备必须配置相同的TCP端口号，才能正确建立L2TP数据备份通道。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[指定的]{style="font-family:宋体"}]{#struct_0_16980_17120_x655321705}[L2TP]{lang="EN-US"}[数据备份通道的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号不能与系统中已经使用的端口号冲突。]{style="font-family:宋体"}
+·指定的L2TP数据备份通道的TCP端口号不能与系统中已经使用的端口号冲突。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_1602753734}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_x1471566102}[配置]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[数据备份通道的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号为]{style="font-family:宋体"}[20000]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置L2TP数据备份通道的TCP端口号为20000。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_240314732}
+\<Sysname\> system-view
 
-[\[Sysname\] l2tp vsrp-port 20000]{lang="EN-US"}
-:::
-
-::: {#-575546779 .myid}
-[]{#_Toc404796121}[]{#struct_0_16980_17120_1397060823}[]{#_Toc379813164}[]{#_Toc369009564}[]{#_Toc359316246}
+Sysname l2tp vsrp-port 20000
 
 **多机备份配置命令 \-- L2TP支持多机备份功能配置命令 \-- tunnel vsrp source-ip**
 
 ------------------------------------------------------------------------
 
-[**[tunnel vsrp source-ip]{lang="EN-US"}**]{#struct_0_16980_17120_1786206383}[命令用来设置多机备份情况下]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道的源端地址，即封装后]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道报文的源地址。]{style="font-family:宋体"}
+**[tunnel vsrp source-ip**]命令用来设置多机备份情况下L2TP隧道的源端地址，即封装后L2TP隧道报文的源地址。
 
-[**[undo tunnel vsrp source-ip]{lang="EN-US"}**]{#struct_0_16980_17120_1763139809}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo tunnel vsrp source-ip**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x145546385}
+【命令】
 
-[**[tunnel vsrp source-ip]{lang="EN-US"}**[ *ip-address*]{lang="EN-US"}]{#struct_0_16980_17120_x1158916715}
+**[tunnel vsrp source-ip** *ip-address*]
 
-[**[undo tunnel vsrp source-ip]{lang="EN-US"}**]{#struct_0_16980_17120_1297276222}
+**[undo tunnel vsrp source-ip**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16980_17120_1236615715}
+【缺省情况】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_16980_17120_1602557126}[隧道的源端地址为本端]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道出接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+L2TP隧道的源端地址为本端L2TP隧道出接口的IP地址。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_1236238617}
+【视图】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_16980_17120_x1652704716}[组视图]{style="font-family:宋体"}
+L2TP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_x945531535}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_1656587721}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_2108683314}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_x143416559}
+【参数】
 
-[*[ip-address]{lang="SV"}*]{#struct_0_16980_17120_x1042459217}[：多机备份情况下]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道的源端]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[ip-address*]：多机备份情况下L2TP隧道的源端IP地址。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1512945049}
+【使用指导】
 
-[[主用和备用]{style="font-family:宋体"}[LAC]{lang="EN-US"}]{#struct_0_16980_17120_x1650213505}[设备必须使用本命令配置相同的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道源端]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。配置了本命令后，主用]{style="font-family:宋体"}[LAC]{lang="EN-US"}[设备上会生成到源端地址的静态路由，路由的出接口为]{style="font-family:宋体"}[Loopback]{lang="EN-US"}[接口。当主用]{style="font-family:宋体"}[LAC]{lang="EN-US"}[设备故障，发生主备倒换后，原主用]{style="font-family:宋体"}[LAC]{lang="EN-US"}[设备将删除该静态路由，并利用动态路由协议发布路由删除消息。新的主用]{style="font-family:宋体"}[LAC]{lang="EN-US"}[设备（即原备用]{style="font-family:宋体"}[LAC]{lang="EN-US"}[设备）会生成到源端地址的静态路由，并利用动态路由协议发布路由添加消息。这样，]{style="font-family:宋体"}[LNS]{lang="EN-US"}[到远端的下行流量会自动切换到新的主用]{style="font-family:宋体"}[LAC]{lang="EN-US"}[设备上，]{style="font-family:宋体"}[LNS]{lang="EN-US"}[会认为原来的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道仍然保持建立。]{style="font-family:宋体"}
+主用和备用LAC设备必须使用本命令配置相同的L2TP隧道源端IP地址。配置了本命令后，主用LAC设备上会生成到源端地址的静态路由，路由的出接口为Loopback接口。当主用LAC设备故障，发生主备倒换后，原主用LAC设备将删除该静态路由，并利用动态路由协议发布路由删除消息。新的主用LAC设备（即原备用LAC设备）会生成到源端地址的静态路由，并利用动态路由协议发布路由添加消息。这样，LNS到远端的下行流量会自动切换到新的主用LAC设备上，LNS会认为原来的L2TP隧道仍然保持建立。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_16980_17120_1602622662}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[L2TP]{lang="EN-US"}]{#struct_0_16980_17120_2048146027}[隧道的源端地址可以不是本设备上接口的地址，若是设备接口的地址必须保证是]{style="font-family:宋体"}[32]{lang="EN-US"}[位掩码的]{style="font-family:宋体"}[Loopback]{lang="EN-US"}[接口地址，只要保证源端地址不与网络中的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址冲突即可。]{style="font-family:宋体"}
+·L2TP隧道的源端地址可以不是本设备上接口的地址，若是设备接口的地址必须保证是32位掩码的Loopback接口地址，只要保证源端地址不与网络中的IP地址冲突即可。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[建议为不同的]{style="font-family:宋体"}]{#struct_0_16980_17120_1603540166}[L2TP]{lang="EN-US"}[组配置不同的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道源端]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+·建议为不同的L2TP组配置不同的L2TP隧道源端IP地址。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[必须先配置]{style="font-family:宋体"}]{#struct_0_16980_17120_2043487044}[L2TP]{lang="EN-US"}[组关联的多机备份实例，才能为该]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组配置]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道的源端]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+·必须先配置L2TP组关联的多机备份实例，才能为该L2TP组配置L2TP隧道的源端IP地址。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[当]{style="font-family:宋体"}]{#struct_0_16980_17120_x834866994}[L2TP]{lang="EN-US"}[组下存在]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道时，不能修改或删除为该]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组配置的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道源端]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+·当L2TP组下存在L2TP隧道时，不能修改或删除为该L2TP组配置的L2TP隧道源端IP地址。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[在]{lang="EN-US" style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_16980_17120_1142553064}[多机备份的情况下，如果]{lang="EN-US" style="font-family:宋体"}[L2TP]{lang="EN-US"}[组]{lang="EN-US" style="font-family:宋体"}[视图]{style="font-family:宋体"}[下同时配置了]{lang="EN-US" style="font-family:宋体"}**[tunnel vsrp source-ip]{lang="EN-US"}**[和]{lang="EN-US" style="font-family:宋体"}**[source-ip]{lang="EN-US"}**[命令，将使用]{lang="EN-US" style="font-family:宋体"}**[tunnel vsrp source-ip]{lang="EN-US"}**[命令指定的地址作为]{lang="EN-US" style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道的源端地址；如果]{lang="EN-US" style="font-family:宋体"}[L2TP]{lang="EN-US"}[组]{lang="EN-US" style="font-family:宋体"}[视图]{style="font-family:宋体"}[下配置了]{lang="EN-US" style="font-family:宋体"}**[source-ip]{lang="EN-US"}**[命令，没有配置]{lang="EN-US" style="font-family:宋体"}**[tunnel vsrp source-ip]{lang="EN-US"}**[命令]{lang="EN-US" style="font-family:宋体"}[，将会导致]{lang="EN-US" style="font-family:宋体"}[L2TP]{lang="EN-US"}[多机备份故障]{lang="EN-US" style="font-family:宋体"}[。]{lang="EN-US" style="font-family:宋体"}
+·在L2TP多机备份的情况下，如果L2TP组视图下同时配置了**tunnel vsrp source-ip**和**source-ip**命令，将使用**tunnel vsrp source-ip**命令指定的地址作为L2TP隧道的源端地址；如果L2TP组视图下配置了**source-ip**命令，没有配置**tunnel vsrp source-ip**命令，将会导致L2TP多机备份故障。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_498716306}
+【举例】
 
-[[\# ]{lang="SV"}]{#struct_0_16980_17120_1151724913}[设置]{style="font-family:宋体"}[多机备份情况下]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道的源端地址]{style="font-family:宋体"}[为]{style="font-family:宋体"}[2.2.2.2]{lang="SV"}[。]{style="font-family:宋体"}
+\# 设置多机备份情况下L2TP隧道的源端地址为2.2.2.2。
 
-[[\<Sysname\> system-view]{lang="SV"}]{#struct_0_16980_17120_1602950341}
+\<Sysname\> system-view
 
-[\[Sysname\] l2tp-group 1 mode lac]{lang="SV"}
+Sysname l2tp-group 1 mode lac
 
-[\[Sysname-l2tp1\] tunnel vsrp source-ip 2.2.2.2]{lang="SV"}
+Sysname-l2tp1 tunnel vsrp source-ip 2.2.2.2
 
-[]{#struct_0_16980_17120_2021794502}[]{#_Toc365465925}[]{#_Toc365465926}[]{#_Toc365465927}[]{#_Toc365465928}[]{#_Toc365465929}[]{#_Toc365465931}[]{#_Toc365465932}[]{#_Toc365465933}[【相关命令】]{style="font-family:
-黑体"}
+【相关命令】
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:6.5pt;
-font-family:Wingdings"}**[source-ip]{lang="EN-US"}**]{#struct_0_16980_17120_x1196927788}[（二层技术]{lang="EN-US" style="font-family:宋体"}[-]{lang="EN-US"}[广域网接入命令参考]{lang="EN-US" style="font-family:宋体"}[/L2TP]{lang="EN-US"}[）]{lang="EN-US" style="font-family:宋体"}
-:::
-
-::: {#134190839 .myid}
-[]{#_Toc404796122}[]{#struct_0_16980_17120_x178111405}[]{#_Toc379813165}
+l**source-ip**（二层技术-广域网接入命令参考/L2TP）
 
 **多机备份配置命令 \-- L2TP支持多机备份功能配置命令 \-- vsrp-instance（L2TP组视图）**
 
 ------------------------------------------------------------------------
 
-[**[vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_1898417505}[命令用来设置]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组关联的多机备份实例。]{style="font-family:宋体"}
+**[vsrp-instance**]命令用来设置L2TP组关联的多机备份实例。
 
-[**[undo vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_928697540}[命令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo vsrp-instance**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x106701462}
+【命令】
 
-[**[vsrp]{lang="EN-US"}[-instance ]{lang="EN-US"}***[vsrp-instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_x753441250}
+**[vsrp-instance ***vsrp-instance-name*]
 
-[**[undo vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_1782742514}
+**[undo vsrp-instance**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16980_17120_2041351641}
+【缺省情况】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_16980_17120_1603015877}[组没有关联任何多机备份实例。]{style="font-family:宋体"}
+L2TP组没有关联任何多机备份实例。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_x694064393}
+【视图】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_16980_17120_x875169883}[组视图]{style="font-family:宋体"}
+L2TP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_1396238465}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_x133975015}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_547658738}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_x405509273}
+【参数】
 
-[*[vsrp-instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_x339080519}[：]{style="font-family:宋体"}[多机备份实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[vsrp-instance-name*]：多机备份实例名称，为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_x810950226}
+【使用指导】
 
-[[为了实现]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_16980_17120_1602819269}[业务多机备份功能，需要将]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组与多机备份实例进行关联。关联生效之后，主用]{style="font-family:宋体"}[LAC]{lang="EN-US"}[设备将向备用]{style="font-family:宋体"}[LAC]{lang="EN-US"}[设备实时备份此]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组的业务信息。某些情况下（如设备重启），备用]{style="font-family:宋体"}[LAC]{lang="EN-US"}[设备也会向主用]{style="font-family:宋体"}[LAC]{lang="EN-US"}[设备请求]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组的业务信息。]{style="font-family:宋体"}
+为了实现L2TP业务多机备份功能，需要将L2TP组与多机备份实例进行关联。关联生效之后，主用LAC设备将向备用LAC设备实时备份此L2TP组的业务信息。某些情况下（如设备重启），备用LAC设备也会向主用LAC设备请求L2TP组的业务信息。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_16980_17120_x1534837670}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[一对主用和备用]{style="font-family:宋体"}]{#struct_0_16980_17120_1718080367}[LAC]{lang="EN-US"}[设备上的对应]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组必须关联相同的多机备份实例。]{style="font-family:宋体"}
+·一对主用和备用LAC设备上的对应L2TP组必须关联相同的多机备份实例。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[配置]{style="font-family:宋体"}]{#struct_0_16980_17120_x799472342}[L2TP]{lang="EN-US"}[组关联的多机备份实例时，该]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组下所有已建立的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道将会被清除。]{style="font-family:宋体"}
+·配置L2TP组关联的多机备份实例时，该L2TP组下所有已建立的L2TP隧道将会被清除。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[当]{style="font-family:宋体"}]{#struct_0_16980_17120_1723940082}[L2TP]{lang="EN-US"}[组下存在]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道时，不能修改或取消该]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组关联的多机备份实例。]{style="font-family:宋体"}
+·当L2TP组下存在L2TP隧道时，不能修改或取消该L2TP组关联的多机备份实例。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_x422497600}
+【举例】
 
-[[\# ]{lang="SV"}]{#struct_0_16980_17120_318934205}[配置]{style="font-family:宋体"}[L2TP]{lang="SV"}[组]{style="font-family:宋体"}[1]{lang="SV"}[与多机备份实例]{style="font-family:
-宋体"}[abc]{lang="SV"}[关联。]{style="font-family:宋体"}
+\# 配置L2TP组1与多机备份实例abc关联。
 
-[[\<Sysname\> system-view]{lang="SV"}]{#struct_0_16980_17120_x1485142698}
+\<Sysname\> system-view
 
-[\[Sysname\] l2tp-group 1 mode lac]{lang="SV"}
+Sysname l2tp-group 1 mode lac
 
-[\[Sysname-l2tp1\] vsrp-instance []{#_Toc364952656}abc]{lang="EN-US"}
-:::
-
-::: {#1018063022 .myid}
-[]{#struct_0_16980_17120_x2080705826}[]{#_Toc365963511}[]{#_Toc404796124}[]{#_Toc380606431}[]{#_Toc371518635}
+Sysname-l2tp1 vsrp-instance abc
 
 **多机备份配置命令 \-- Portal支持多机备份功能配置命令 \-- portal vsrp-instance**
 
 ------------------------------------------------------------------------
 
-[**[portal vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_1602884805}[命令用来配置接口上的]{style="font-family:宋体"}[Portal]{lang="EN-US"}[功能绑定的多机备份实例。]{style="font-family:宋体"}
+**[portal vsrp-instance**]命令用来配置接口上的Portal功能绑定的多机备份实例。
 
-[**[undo]{lang="EN-US"}**[ **portal vsrp-instance**]{lang="EN-US"}]{#struct_0_16980_17120_66450765}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo** **portal vsrp-instance**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x972916846}
+【命令】
 
-[**[portal]{lang="EN-US"}**[ **vsrp-instance** *vsrp-instance-name*]{lang="EN-US"}]{#struct_0_16980_17120_x1868513662}
+**[portal** **vsrp-instance** *vsrp-instance-name*]
 
-[**[undo]{lang="EN-US"}**[ **portal** **vsrp-instance** ]{lang="EN-US"}]{#struct_0_16980_17120_1182435933}
+**[undo** **portal** **vsrp-instance** ]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16980_17120_x661602826}
+【缺省情况】
 
-[[接口上的]{style="font-family:宋体"}[Portal]{lang="EN-US"}]{#struct_0_16980_17120_x1403319623}[功能未绑定多机备份实例。]{style="font-family:宋体"}
+接口上的Portal功能未绑定多机备份实例。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_x919702076}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_16980_17120_2066934153}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_x226224023}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_1806315080}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_1519217420}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_111573503}
+【参数】
 
-[*[vsrp-instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_1464033944}[：表示]{style="font-family:宋体"}[多机备份实例名称]{style="font-family:宋体"}[，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+*[vsrp-instance-name*]：表示多机备份实例名称，为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_1602688197}
+【使用指导】
 
-[[接口上引用多机备份实例后，接口上的]{style="font-family:宋体"}[Portal]{lang="EN-US"}]{#struct_0_16980_17120_1965213832}[多机备份功能对于该接口上的]{style="font-family:宋体"}[IPv4 Portal]{lang="EN-US"}[和]{style="font-family:宋体"}[IPv6 Portal]{lang="EN-US"}[用户都生效。]{style="font-family:宋体"}[Portal]{lang="EN-US"}[多机备份功能是指当主设备故障或链路故障时，主设备通过指定的多机备份实例将其上的]{style="font-family:宋体"}[Portal]{lang="EN-US"}[业务信息备份到备设备上，从而保证主设备故障时，主设备上的]{style="font-family:宋体"}[Portal]{lang="EN-US"}[业务可以自动切换到备用设备上，已上线的]{style="font-family:宋体"}[Portal]{lang="EN-US"}[用户不需要重新认证，计费、授权信息不丢失。]{style="font-family:宋体"}
+接口上引用多机备份实例后，接口上的Portal多机备份功能对于该接口上的IPv4 Portal和IPv6 Portal用户都生效。Portal多机备份功能是指当主设备故障或链路故障时，主设备通过指定的多机备份实例将其上的Portal业务信息备份到备设备上，从而保证主设备故障时，主设备上的Portal业务可以自动切换到备用设备上，已上线的Portal用户不需要重新认证，计费、授权信息不丢失。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_16980_17120_x1717653028}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[同一设备上的不同主接口上引用的多机备份实例不能相同。]{style="font-family:宋体"}]{#struct_0_16980_17120_x445813428}
+·同一设备上的不同主接口上引用的多机备份实例不能相同。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[同一接口下的不同子接口可以引用相同的]{style="font-family:宋体"}]{#struct_0_16980_17120_x2042782407}[VSRP]{lang="EN-US"}[实例，也可以引用不同的多机备份实例。]{style="font-family:宋体"}
+·同一接口下的不同子接口可以引用相同的VSRP实例，也可以引用不同的多机备份实例。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[当接口上有在线]{style="font-family:宋体"}]{#struct_0_16980_17120_x284917772}[Portal]{lang="EN-US"}[用户时，配置、修改、取消接口上引用的]{style="font-family:宋体"}[VSRP]{lang="EN-US"}[实例，都会导致接口上的]{style="font-family:宋体"}[Portal]{lang="EN-US"}[用户下线。]{style="font-family:宋体"}
+·当接口上有在线Portal用户时，配置、修改、取消接口上引用的VSRP实例，都会导致接口上的Portal用户下线。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[多机备份运行环境下，如果备用设备的接口上取消引用多机备份实例，则该接口上的]{style="font-family:宋体"}]{#struct_0_16980_17120_422159131}[Portal]{lang="EN-US"}[用户信息会被删除；如果主设备的接口上取消引用多机备份实例，则该接口上的]{style="font-family:宋体"}[Portal]{lang="EN-US"}[用户不会下线。]{style="font-family:宋体"}
+·多机备份运行环境下，如果备用设备的接口上取消引用多机备份实例，则该接口上的Portal用户信息会被删除；如果主设备的接口上取消引用多机备份实例，则该接口上的Portal用户不会下线。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_x456740846}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_x808848728}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上使能]{style="font-family:宋体"}[Portal]{lang="EN-US"}[多机备份功能，并引用]{style="font-family:宋体"}[VSRP]{lang="EN-US"}[实例]{style="font-family:宋体"}[aaa]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上使能Portal多机备份功能，并引用VSRP实例aaa。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_x1402759488}
+\<Sysname\> system-view
 
-[\[Sysname\] interface ]{lang="EN-US"}[gigabit]{lang="EN-US"}[ethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-]{lang="EN-US"}[Gigabit]{lang="EN-US"}[Ethernet1/0/1\] portal vsrp-instance ]{lang="EN-US"}[aaa]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 portal vsrp-instance aaa
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1572901120}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[display portal interface]{lang="EN-US"}**]{#struct_0_16980_17120_1928607890}
+·**display portal interface**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[portal vsrp-port]{lang="EN-US"}**]{#struct_0_16980_17120_1602753733}
-:::
-
-::: {#-108891013 .myid}
-[]{#_Toc404796125}[]{#struct_0_16980_17120_x1471893782}[]{#_Toc380606432}[]{#_Toc371518636}[]{#_Toc365963512}
+·**portal vsrp-port**
 
 **多机备份配置命令 \-- Portal支持多机备份功能配置命令 \-- portal vsrp-port**
 
 ------------------------------------------------------------------------
 
-[**[portal vsrp-port]{lang="EN-US"}**]{#struct_0_16980_17120_1113727503}[命令用来配置]{style="font-family:宋体"}[Portal]{lang="EN-US"}[建立数据备份通道使用的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号。]{style="font-family:宋体"}
+**[portal vsrp-port**]命令用来配置Portal建立数据备份通道使用的TCP端口号。
 
-[**[undo portal vsrp-port]{lang="EN-US"}**]{#struct_0_16980_17120_x1535018657}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo portal vsrp-port**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x877254071}
+【命令】
 
-[**[portal vsrp-port ]{lang="EN-US"}***[port-number]{lang="EN-US"}*]{#struct_0_16980_17120_22729794}
+**[portal vsrp-port ***port-number*]
 
-[**[undo portal vsrp-port]{lang="EN-US"}**]{#struct_0_16980_17120_217647981}
+**[undo portal vsrp-port**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16980_17120_175968152}
+【缺省情况】
 
-[[Portal]{lang="EN-US"}]{#struct_0_16980_17120_218214449}[建立数据备份通道使用的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号为]{style="font-family:宋体"}[60038]{lang="EN-US"}[。]{style="font-family:宋体"}
+Portal建立数据备份通道使用的TCP端口号为60038。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_x679068413}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_16980_17120_560618691}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_1781332987}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_1408601686}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_1602557125}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_1236435225}
+【参数】
 
-[*[port-number]{lang="EN-US"}*]{#struct_0_16980_17120_761712018}[：]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[port-number*]：TCP端口号，取值范围为1～65535。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_x419828857}
+【使用指导】
 
-[[多机备份组网环境中，本端设备在进行]{style="font-family:宋体"}[Portal]{lang="EN-US"}]{#struct_0_16980_17120_244545524}[数据备份之前，需要与对端备份设备建立一条多机备份数据备份通道，此通道为]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接。两端成功建立了]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接后，]{style="font-family:宋体"}[Portal]{lang="EN-US"}[业务的数据信息将通过该通道进行实时备份。]{style="font-family:宋体"}
+多机备份组网环境中，本端设备在进行Portal数据备份之前，需要与对端备份设备建立一条多机备份数据备份通道，此通道为TCP连接。两端成功建立了TCP连接后，Portal业务的数据信息将通过该通道进行实时备份。
 
-[[需要注意的是，本命令中指定的]{style="font-family:宋体"}[TCP]{lang="EN-US"}]{#struct_0_16980_17120_717281796}[端口号不能与系统中已经使用的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号冲突。]{style="font-family:宋体"}
+需要注意的是，本命令中指定的TCP端口号不能与系统中已经使用的TCP端口号冲突。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_1533043602}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_x142505547}[配置]{style="font-family:宋体"}[Portal]{lang="EN-US"}[建立数据备份通道使用的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号]{style="font-family:宋体"}[20000]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置Portal建立数据备份通道使用的TCP端口号20000。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_925348706}
+\<Sysname\> system-view
 
-[\[Sysname\] portal vsrp-port 20000]{lang="EN-US"}
+Sysname portal vsrp-port 20000
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x839839242}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[portal vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_1168642896}
-:::
-
-::: {#-96613770 .myid}
-[]{#_Toc404796127}[]{#struct_0_16980_17120_524945136}[]{#_Toc377552895}
+·**portal vsrp-instance**
 
 **多机备份配置命令 \-- DHCP支持多机备份功能配置命令 \-- dhcp vsrp-instance**
 
 ------------------------------------------------------------------------
 
-[**[dhcp vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_1602622661}[命令用来配置接口绑定指定多机备份实例。]{style="font-family:宋体"}
+**[dhcp vsrp-instance**]命令用来配置接口绑定指定多机备份实例。
 
-[**[undo dhcp vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_2048211563}[命令用来取消接口绑定多机备份实例。]{style="font-family:宋体"}
+**[undo dhcp vsrp-instance**]命令用来取消接口绑定多机备份实例。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_297380776}
+【命令】
 
-[**[dhcp vsrp-instance ]{lang="EN-US"}***[vsrp-instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_55340683}
+**[dhcp vsrp-instance ***vsrp-instance-name*]
 
-[**[undo dhcp vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_x1387746894}
+**[undo dhcp vsrp-instance**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16980_17120_1302709175}
+【缺省情况】
 
-[[接口下未绑定多机备份实例。]{style="font-family:宋体"}*[ ]{style="color:blue"}*]{#struct_0_16980_17120_498941187}
+接口下未绑定多机备份实例。**
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_149149585}
+【视图】
 
-[[三层以太网接口]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_16980_17120_1860351477}[三层以太网子接口]{style="font-family:宋体"}[/]{lang="EN-US"}[三层聚合口]{style="font-family:宋体"}[/]{lang="EN-US"}[三层聚合子接口]{style="font-family:宋体"}[/]{lang="EN-US"}[三层]{style="font-family:宋体"}[RPR]{lang="EN-US"}[逻辑接口视图]{style="font-family:宋体"}
+三层以太网接口/三层以太网子接口/三层聚合口/三层聚合子接口/三层RPR逻辑接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_1065404553}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_678569391}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_400417834}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_x2006273190}
+【参数】
 
-[*[vsrp-instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_x2044928635}[：多机备份实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[vsrp-instance-name*]：多机备份实例名称，为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_1603474629}
+【使用指导】
 
-[[配置本命令时，多机备份实例名称可以不存在，但只有配置了多机备份实例后，本命令才生效。]{style="font-family:宋体"}]{#struct_0_16980_17120_x1498417709}
+配置本命令时，多机备份实例名称可以不存在，但只有配置了多机备份实例后，本命令才生效。
 
-[[该配置用于匹配主用设备和备用设备用户所在接口。一个接口只能绑定一个多机备份实例，同一接口下的多个子接口可以绑定同一个多机备份实例。不同接口不能绑定同一个多机备份实例。如果要绑定的实例已经与其它的接口绑定，则需要先与其它接口解绑定后，才能配置成功。]{style="font-family:宋体"}]{#struct_0_16980_17120_x1550468354}
+该配置用于匹配主用设备和备用设备用户所在接口。一个接口只能绑定一个多机备份实例，同一接口下的多个子接口可以绑定同一个多机备份实例。不同接口不能绑定同一个多机备份实例。如果要绑定的实例已经与其它的接口绑定，则需要先与其它接口解绑定后，才能配置成功。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_1155085828}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_x1001988596}[配置接口]{style="font-family:宋体"}[GigabitEthernet 1/0/1]{lang="EN-US"}[绑定多机备份实例]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置接口GigabitEthernet 1/0/1绑定多机备份实例1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_x1625164625}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] dhcp vsrp-instance vsrp1]{lang="EN-US"}
-:::
-
-::: {#2047367763 .myid}
-[]{#_Toc404796128}[]{#struct_0_16980_17120_1239290475}[]{#_Toc377552888}
+Sysname-GigabitEthernet1/0/1 dhcp vsrp-instance vsrp1
 
 **多机备份配置命令 \-- DHCP支持多机备份功能配置命令 \-- dhcp vsrp port**
 
 ------------------------------------------------------------------------
 
-[**[dhcp vsrp port]{lang="EN-US"}**]{#struct_0_16980_17120_1735202142}[命令用来配置]{style="font-family:宋体"}[DHCP]{lang="EN-US"}[服务器数据备份通道的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[端口号。]{style="font-family:宋体"}
+**[dhcp vsrp port**]命令用来配置DHCP服务器数据备份通道的TCP端口号。
 
-[**[undo dhcp vsrp port]{lang="EN-US"}**]{#struct_0_16980_17120_x17957226}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo dhcp vsrp port**]命令用来恢复缺省情况。
 
-[[【]{style="font-size:10.0pt;
-font-family:黑体;color:#0096d6"}]{#struct_0_16980_17120_x872289384}[命令]{style="font-family:黑体;
-color:#0096d6"}[】]{style="font-size:10.0pt;font-family:黑体;color:#0096d6"}
+【命令】
 
-[**[dhcp vsrp port ]{lang="EN-US"}***[port-number]{lang="EN-US"}*]{#struct_0_16980_17120_328198242}
+**[dhcp vsrp port ***port-number*]
 
-[**[undo dhcp vsrp port]{lang="EN-US"}**]{#struct_0_16980_17120_702121109}
+**[undo dhcp vsrp port**]
 
-[[【]{style="font-size:10.0pt;
-font-family:黑体;color:#0096d6"}]{#struct_0_16980_17120_x1610838342}[缺省情况]{style="font-family:黑体;
-color:#0096d6"}[】]{style="font-size:10.0pt;font-family:黑体;
-color:#0096d6"}
+【缺省情况】
 
-[[默认端口号为]{style="font-family:宋体"}[60037]{lang="EN-US"}]{#struct_0_16980_17120_1603540165}[。]{style="font-family:宋体"}
+默认端口号为60037。
 
-[[【]{style="font-size:10.0pt;
-font-family:黑体;color:#0096d6"}]{#struct_0_16980_17120_2043290436}[视图]{style="font-family:黑体;
-color:#0096d6"}[】]{style="font-size:10.0pt;font-family:黑体;color:#0096d6"}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_16980_17120_686896914}
+系统视图
 
-[[【]{style="font-size:10.0pt;font-family:
-黑体;color:#0096d6"}]{#struct_0_16980_17120_910952117}[缺省用户角色]{style="font-family:黑体;color:#0096d6"}[】]{style="font-size:10.0pt;font-family:黑体;color:#0096d6"}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_1821619717}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_822103312}
+mdc-admin
 
-[[【]{style="font-size:10.0pt;
-font-family:黑体;color:#0096d6"}]{#struct_0_16980_17120_1369877304}[参数]{style="font-family:黑体;
-color:#0096d6"}[】]{style="font-size:10.0pt;font-family:黑体;color:#0096d6"}
+【参数】
 
-[*[port-number]{lang="EN-US" style="color:black"}*]{#struct_0_16980_17120_404718337}[：]{style="font-family:宋体;
-color:black"}[DHCP]{lang="EN-US" style="color:black"}[服务器]{style="font-family:宋体;color:black"}[数据备份通道]{style="font-family:宋体;
-color:black"}[TCP]{lang="EN-US" style="color:black"}[的端口号，取值范围为]{style="font-family:宋体;color:black"}[1]{lang="EN-US" style="color:black"}[～]{style="font-family:宋体;color:black"}[65535]{lang="EN-US" style="color:black"}[。]{style="font-family:宋体;
-color:black"}
+*[port-number*]：DHCP服务器数据备份通道TCP的端口号，取值范围为1～65535。
 
-[[【]{style="font-size:10.0pt;
-font-family:黑体;color:#0096d6"}]{#struct_0_16980_17120_x698107436}[使用指导]{style="font-family:黑体;
-color:#0096d6"}[】]{style="font-size:10.0pt;font-family:黑体;
-color:#0096d6"}
+【使用指导】
 
-[[DHCP]{lang="EN-US"}]{#struct_0_16980_17120_1955043901}[服务器在进行数据备份之前，需要与对端备份设备建立一条数据备份通道，此通道为]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接。用户可以通过命令指定]{style="font-family:宋体"}[TCP]{lang="EN-US"}[连接的端口号，如果不指定则用默认端口号发起连接。]{style="font-family:宋体"}
+DHCP服务器在进行数据备份之前，需要与对端备份设备建立一条数据备份通道，此通道为TCP连接。用户可以通过命令指定TCP连接的端口号，如果不指定则用默认端口号发起连接。
 
-[[使用本命令指定的端口号不能与系统中已经使用的端口号冲突。]{style="font-family:宋体"}]{#struct_0_16980_17120_x1672100032}
+使用本命令指定的端口号不能与系统中已经使用的端口号冲突。
 
-[[【]{style="font-size:10.0pt;
-font-family:黑体;color:#0096d6"}]{#struct_0_16980_17120_x2128074780}[举例]{style="font-family:黑体;
-color:#0096d6"}[】]{style="font-size:10.0pt;font-family:黑体;color:#0096d6"}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_x1037314454}[指定]{style="font-family:宋体"}[DHCP]{lang="EN-US"}[服务器的数据备份通道端口号为]{style="font-family:宋体"}[30000]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 指定DHCP服务器的数据备份通道端口号为30000。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_1602950340}
+\<Sysname\> system-view
 
-[\[Sysname\] dhcp vsrp port 30000]{lang="EN-US"}
-:::
-
-::: {#-327991275 .myid}
-[]{#_Toc404796129}[]{#struct_0_16980_17120_2021728966}[]{#_Toc377552898}
+Sysname dhcp vsrp port 30000
 
 **多机备份配置命令 \-- DHCP支持多机备份功能配置命令 \-- ipv6 dhcp vsrp-instance**
 
 ------------------------------------------------------------------------
 
-[**[ipv6 dhcp vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_735497246}[命令用来配置接口绑定指定]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[多机备份实例。]{style="font-family:宋体"}
+**[ipv6 dhcp vsrp-instance**]命令用来配置接口绑定指定IPv6多机备份实例。
 
-[**[undo ipv6 dhcp vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_x22207684}[命令用来取消接口绑定]{style="font-family:
-宋体"}[IPv6]{lang="EN-US"}[多机备份实例。]{style="font-family:宋体"}
+**[undo ipv6 dhcp vsrp-instance**]命令用来取消接口绑定IPv6多机备份实例。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_894768954}
+【命令】
 
-[**[ipv6 dhcp vsrp-instance ]{lang="EN-US"}***[vsrp-instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_765163156}
+**[ipv6 dhcp vsrp-instance ***vsrp-instance-name*]
 
-[**[undo ipv6 dhcp vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_x984246841}
+**[undo ipv6 dhcp vsrp-instance**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16980_17120_x1838011014}
+【缺省情况】
 
-[[接口下未绑定]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_16980_17120_1745300622}[多机备份实例。]{style="font-family:宋体"}*[ ]{style="color:blue"}*
+接口下未绑定IPv6多机备份实例。**
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_718619638}
+【视图】
 
-[[三层以太网接口]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_16980_17120_x2126428405}[三层以太网子接口]{style="font-family:宋体"}[/]{lang="EN-US"}[三层聚合口]{style="font-family:宋体"}[/]{lang="EN-US"}[三层聚合子接口]{style="font-family:宋体"}[/]{lang="EN-US"}[三层]{style="font-family:宋体"}[RPR]{lang="EN-US"}[逻辑接口视图]{style="font-family:宋体"}
+三层以太网接口/三层以太网子接口/三层聚合口/三层聚合子接口/三层RPR逻辑接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_1762015661}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16980_17120_x1391879464}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16980_17120_x1928662592}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_1603015876}
+【参数】
 
-[*[vsrp-instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_x694129929}[：]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[多机备份实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不包含空格，区分大小写。]{style="font-family:宋体"}
+*[vsrp-instance-name*]：IPv6多机备份实例名称，为1～31个字符的字符串，不包含空格，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_1149045808}
+【使用指导】
 
-[[配置本命令时，]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_16980_17120_x1504909819}[多机备份实例名称可以不存在。]{style="font-family:宋体"}
+配置本命令时，IPv6多机备份实例名称可以不存在。
 
-[[该配置用于匹配主备设备中用户所在接口。一个接口只能绑定一个]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_16980_17120_1532662885}[多机备份实例，同一接口下的多个子接口可以绑定同一个]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[多机备份实例。不同接口不能绑定同一个]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[多机备份实例。如果要绑定的实例已经与其它的接口绑定，则需要先与其它接口解绑定后，才能配置成功。]{style="font-family:宋体"}
+该配置用于匹配主备设备中用户所在接口。一个接口只能绑定一个IPv6多机备份实例，同一接口下的多个子接口可以绑定同一个IPv6多机备份实例。不同接口不能绑定同一个IPv6多机备份实例。如果要绑定的实例已经与其它的接口绑定，则需要先与其它接口解绑定后，才能配置成功。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_x105054698}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_16980_17120_x272514335}[配置接口]{style="font-family:宋体"}[GigabitEthernet 1/0/1]{lang="EN-US"}[接口绑定]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[多机备份实例]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置接口GigabitEthernet 1/0/1接口绑定IPv6多机备份实例1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_786486475}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ipv6 dhcp vsrp-instance vsrp1]{lang="EN-US"}
-:::
-
-::: {#643989992 .myid}
-[]{#_Toc404796130}[]{#struct_0_16980_17120_380374461}[]{#_Toc377552899}
+Sysname-GigabitEthernet1/0/1 ipv6 dhcp vsrp-instance vsrp1
 
 **多机备份配置命令 \-- DHCP支持多机备份功能配置命令 \-- ipv6 dhcp vsrp port**
 
 ------------------------------------------------------------------------
 
-[**[ipv6 dhcp vsrp port]{lang="EN-US" style="color:black"}**]{#struct_0_16980_17120_x590746120}[命令用来配置]{style="font-family:宋体;color:black"}[DHCPv6]{lang="EN-US" style="color:black"}[服务器]{style="font-family:宋体;
-color:black"}[数据备份通道的]{style="font-family:宋体;color:black"}[TCP]{lang="EN-US" style="color:black"}[端口号。]{style="font-family:宋体;
-color:black"}
+**[ipv6 dhcp vsrp port**]命令用来配置DHCPv6服务器数据备份通道的TCP端口号。
 
-[**[undo ipv6 dhcp vsrp port]{lang="EN-US" style="color:black"}**]{#struct_0_16980_17120_2032603003}[命令用来恢复缺省情况。]{style="font-family:宋体;color:black"}
+**[undo ipv6 dhcp vsrp port**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16980_17120_x822313609}
+【命令】
 
-[**[ipv6 dhcp vsrp port ]{lang="EN-US" style="color:black"}**]{#struct_0_16980_17120_1602819268}*[port-number]{lang="EN-US" style="color:black"}*
+**[ipv6 dhcp vsrp port **]*port-number*
 
-[**[undo ipv6 dhcp vsrp port]{lang="EN-US" style="color:black"}**]{#struct_0_16980_17120_x1534903206}
+**[undo ipv6 dhcp vsrp port**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_16980_17120_136555986}
+【缺省情况】
 
-[[默认端口号为]{style="font-family:宋体;
-color:black"}]{#struct_0_16980_17120_421274342}[60039]{lang="EN-US" style="color:black"}[。]{style="font-family:宋体;color:black"}
+默认端口号为60039。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16980_17120_510366388}
+【视图】
 
-[[系统视图]{style="font-family:宋体;
-color:black"}]{#struct_0_16980_17120_325820169}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16980_17120_1868474297}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US" style="color:black"}]{#struct_0_16980_17120_x1852103237}
+network-admin
 
-[[mdc-admin]{lang="EN-US" style="color:black"}]{#struct_0_16980_17120_414009899}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16980_17120_x176958540}
+【参数】
 
-[*[port-number]{lang="EN-US" style="color:black"}*]{#struct_0_16980_17120_x1057792504}[：]{style="font-family:宋体;
-color:black"}[DHCPv6]{lang="EN-US" style="color:black"}[服务器]{style="font-family:宋体;color:black"}[数据备份通道]{style="font-family:宋体;
-color:black"}[TCP]{lang="EN-US" style="color:black"}[的端口号，取值范围为]{style="font-family:宋体;color:black"}[1]{lang="EN-US" style="color:black"}[～]{style="font-family:宋体;color:black"}[65535]{lang="EN-US" style="color:black"}[。]{style="font-family:宋体;
-color:black"}
+*[port-number*]：DHCPv6服务器数据备份通道TCP的端口号，取值范围为1～65535。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_16980_17120_1919266677}
+【使用指导】
 
-[[DHCPv6]{lang="EN-US" style="color:black"}]{#struct_0_16980_17120_x288756066}[服务器]{style="font-family:宋体;color:black"}[在进行数据备份之前，需要与对端备份设备建立一条数据备份通道，此通道为]{style="font-family:宋体;color:black"}[TCP]{lang="EN-US" style="color:black"}[连接。用户可以通过命令指定]{style="font-family:宋体;
-color:black"}[TCP]{lang="EN-US" style="color:black"}[连接的端口号，如果不指定则用默认端口号发起连接。]{style="font-family:宋体;color:black"}
+DHCPv6服务器在进行数据备份之前，需要与对端备份设备建立一条数据备份通道，此通道为TCP连接。用户可以通过命令指定TCP连接的端口号，如果不指定则用默认端口号发起连接。
 
-[[使用本命令指定的端口号不能与系统中已经使用的端口号冲突。]{style="font-family:宋体;
-color:black"}]{#struct_0_16980_17120_1602884804}
+使用本命令指定的端口号不能与系统中已经使用的端口号冲突。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16980_17120_66516301}
+【举例】
 
-[[\# ]{lang="EN-US" style="color:black"}]{#struct_0_16980_17120_x1776020375}[指定]{style="font-family:宋体;color:black"}[DHCPv6]{lang="EN-US" style="color:black"}[服务器]{style="font-family:宋体;
-color:black"}[的数据备份通道端口号为]{style="font-family:宋体;color:black"}[30000]{lang="EN-US" style="color:black"}[。]{style="font-family:宋体;
-color:black"}
+\# 指定DHCPv6服务器的数据备份通道端口号为30000。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_16980_17120_49811737}
+\<Sysname\> system-view
 
-[\[Sysname\] ipv6 dhcp vsrp port 30000]{lang="EN-US"}
-:::
-
-::: {#-1670226942 .myid}
-[]{#_Toc404796131}[]{#struct_0_16980_17120_1244066422}[]{#_Toc377552914}
+Sysname ipv6 dhcp vsrp port 30000
 
 **多机备份配置命令 \-- DHCP支持多机备份功能配置命令 \-- vsrp-instance(DHCPv4/DHCPv6地址池视图)**
 
 ------------------------------------------------------------------------
 
-[**[vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_849512502}[命令用来配置]{style="font-family:宋体"}[DHCPv4/DHCPv6]{lang="EN-US"}[服务器地址池绑定指定多机备份实例。]{style="font-family:宋体"}
+**[vsrp-instance**]命令用来配置DHCPv4/DHCPv6服务器地址池绑定指定多机备份实例。
 
-[**[undo vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_x358887384}[命令用来取消]{style="font-family:宋体"}[DHCPv4/DHCPv6]{lang="EN-US"}[服务器地址池绑定的多机备份实例。]{style="font-family:宋体"}
+**[undo vsrp-instance**]命令用来取消DHCPv4/DHCPv6服务器地址池绑定的多机备份实例。
 
-[[【]{style="font-size:10.0pt;
-font-family:黑体;color:#0096d6"}]{#struct_0_16980_17120_1259717336}[命令]{style="font-family:黑体;
-color:#0096d6"}[】]{style="font-size:10.0pt;font-family:黑体;color:#0096d6"}
+【命令】
 
-[**[vsrp-instance ]{lang="EN-US"}***[vsrp-instance-name]{lang="EN-US"}*]{#struct_0_16980_17120_x1643973514}
+**[vsrp-instance ***vsrp-instance-name*]
 
-[**[undo vsrp-instance]{lang="EN-US"}**]{#struct_0_16980_17120_804808706}
+**[undo vsrp-instance**]
 
-[[【]{style="font-size:10.0pt;
-font-family:黑体;color:#0096d6"}]{#struct_0_16980_17120_x488630694}[缺省情况]{style="font-family:黑体;
-color:#0096d6"}[】]{style="font-size:10.0pt;font-family:黑体;
-color:#0096d6"}
+【缺省情况】
 
-[[DHCPv4/DHCPv6]{lang="EN-US"}]{#struct_0_16980_17120_1971078451}[服务器地址池未绑定多机备份实例。]{style="font-family:宋体"}
+DHCPv4/DHCPv6服务器地址池未绑定多机备份实例。
 
-[[【]{style="font-size:10.0pt;
-font-family:黑体;color:#0096d6"}]{#struct_0_16980_17120_1602688196}[视图]{style="font-family:黑体;
-color:#0096d6"}[】]{style="font-size:10.0pt;font-family:黑体;color:#0096d6"}
+【视图】
 
-[[DHCPv4/DHCPv6]{lang="EN-US"}]{#struct_0_16980_17120_1965279368}[地址池视图]{style="font-family:宋体"}
+DHCPv4/DHCPv6地址池视图
 
-[[【]{style="font-size:10.0pt;font-family:
-黑体;color:#0096d6"}]{#struct_0_16980_17120_628433875}[缺省用户角色]{style="font-family:黑体;color:#0096d6"}[】]{style="font-size:10.0pt;font-family:黑体;color:#0096d6"}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US" style="color:black"}]{#struct_0_16980_17120_474723445}
+network-admin
 
-[[mdc-admin]{lang="EN-US" style="color:black"}]{#struct_0_16980_17120_1034312867}
+mdc-admin
 
-[[【]{style="font-size:10.0pt;font-family:
-黑体;color:#0096d6"}]{#struct_0_16980_17120_643104370}[参数]{style="font-family:黑体;color:#0096d6"}[】]{style="font-size:10.0pt;font-family:黑体;color:#0096d6"}
+【参数】
 
-[*[vsrp-instance-name]{lang="EN-US" style="color:black"}*]{#struct_0_16980_17120_988113969}[：]{style="font-family:
-宋体;color:black"}[多机备份]{style="font-family:宋体;color:black"}[实例名称，为]{style="font-family:宋体;color:black"}[1]{lang="EN-US" style="color:black"}[～]{style="font-family:宋体;color:black"}[31]{lang="EN-US" style="color:black"}[个字符的字符串，区分大小写。]{style="font-family:宋体;color:black"}
+*[vsrp-instance-name*]：多机备份实例名称，为1～31个字符的字符串，区分大小写。
 
-[[【]{style="font-size:10.0pt;font-family:
-黑体;color:#0096d6"}]{#struct_0_16980_17120_984573223}[使用指导]{style="font-family:黑体;color:#0096d6"}[】]{style="font-size:10.0pt;font-family:黑体;color:#0096d6"}
+【使用指导】
 
-[[在地址池下配置本命令后，就可以通过]{style="font-family:宋体;
-color:black"}]{#struct_0_16980_17120_x74549174}[多机备份]{style="font-family:宋体;
-color:black"}[模块提供的数据备份通道实时备份]{style="font-family:宋体;color:black"}[DHCP]{lang="EN-US" style="color:black"}[服务器地址池的表项信息。配置本命令时]{style="font-family:宋体;
-color:black"}[多机备份]{style="font-family:宋体;color:black"}[实例可以不存在，但只有配置了]{style="font-family:宋体;color:black"}[多机备份]{style="font-family:
-宋体;color:black"}[实例后本命令才生效。]{style="font-family:宋体;color:black"}
+在地址池下配置本命令后，就可以通过多机备份模块提供的数据备份通道实时备份DHCP服务器地址池的表项信息。配置本命令时多机备份实例可以不存在，但只有配置了多机备份实例后本命令才生效。
 
-[[【]{style="font-size:10.0pt;
-font-family:黑体;color:#0096d6"}]{#struct_0_16980_17120_1120699884}[举例]{style="font-family:黑体;
-color:#0096d6"}[】]{style="font-size:10.0pt;font-family:黑体;color:#0096d6"}
+【举例】
 
-[[\# ]{lang="EN-US" style="color:black"}]{#struct_0_16980_17120_494816537}[配置]{style="font-family:宋体;color:black"}[DHCPv4]{lang="EN-US" style="color:black"}[服务器地址池绑定多机备份实例]{style="font-family:宋体;
-color:black"}[vsrp1]{lang="EN-US" style="color:black"}[。]{style="font-family:宋体;color:black"}
+\# 配置DHCPv4服务器地址池绑定多机备份实例vsrp1。
 
-[[\<Sysname\> system-view]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_16980_17120_x1359556450}
+\<Sysname\> system-view
 
-[[\[Sysname\] dhcp server ip-pool p1]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_16980_17120_740239801}
+Sysname dhcp server ip-pool p1
 
-[[\[Sysname-dhcp-pool-p1\] vsrp-instance vsrp1]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_16980_17120_1602753732}
+Sysname-dhcp-pool-p1 vsrp-instance vsrp1
 
-[[\#]{lang="EN-US" style="color:black"}]{#struct_0_16980_17120_x1471959318}[配置]{style="font-family:宋体;color:black"}[DHCPv6]{lang="EN-US" style="color:black"}[服务器地址池绑定多机备份实例]{style="font-family:宋体;
-color:black"}[vsrp1]{lang="EN-US" style="color:black"}[。]{style="font-family:宋体;color:black"}
+\#配置DHCPv6服务器地址池绑定多机备份实例vsrp1。
 
-[[\<Sysname\> system-view]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_16980_17120_110814141}
+\<Sysname\> system-view
 
-[[\[Sysname\] ipv6 dhcp pool p1]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_16980_17120_x1696360345}
+Sysname ipv6 dhcp pool p1
 
-[[\[Sysname-dhcp6-pool-p1\] vsrp-instance vsrp1]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_16980_17120_x433909049}
+Sysname-dhcp6-pool-p1 vsrp-instance vsrp1
 
-[ ]{lang="EN-US"}
-:::

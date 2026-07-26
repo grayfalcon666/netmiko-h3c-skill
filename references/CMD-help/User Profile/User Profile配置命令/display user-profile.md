@@ -1,1010 +1,920 @@
-::: {#558364840 .myid}
-[]{#_Toc185927308}[]{#_Toc123026768}[]{#_Toc404792854}[]{#struct_0_x1090_x8456_1289999239}[]{#_Toc361324561}[]{#_Toc350844407}
 
 **User Profile \-- User Profile配置命令 \-- display user-profile**
 
 ------------------------------------------------------------------------
 
-[**[display user-profile]{lang="EN-US"}**]{#struct_0_x1090_x8456_170292426}[用来显示]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[的配置信息和在线用户信息。]{style="font-family:宋体"}
+**[display user-profile**]用来显示User Profile的配置信息和在线用户信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_x1802222067}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_x1090_x8456_1271955774}
+集中式设备：
 
-[**[display user-profile]{lang="EN-US"}**[ \[ **session-group** \] \[ **name** *profile-name* \]]{lang="EN-US"}]{#struct_0_x1090_x8456_1712558516}
+**[display user-profile** [ **session-group**   **name** *profile-name* ]]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1090_x8456_1217926390}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display]{lang="EN-US"}**[ **user-profile** \[ **session-group** \] \[ **name** *profile-name* \] \[ **slot**]{lang="EN-US"}]{#struct_0_x1090_x8456_649260349}[ ]{lang="EN-US" style="font-size:10.0pt;font-family:宋体;color:blue"}*[slot-number ]{lang="EN-US"}*[\[ **cpu** *cpu-number* \] \]]{lang="EN-US"}
+**[display** **user-profile** [ **session-group**   **name** *profile-name*   **slot**]*slot-number * **cpu** *cpu-number* ]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1090_x8456_x1364468694}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display]{lang="EN-US"}**[ **user-profile** \[ **session-group** \] \[ **name** *profile-name* \] \[]{lang="EN-US"}]{#struct_0_x1090_x8456_1462388771}[ ]{lang="EN-US" style="font-size:10.0pt;font-family:宋体;color:blue"}**[chassis]{lang="EN-US"}**[ ]{lang="EN-US" style="font-size:10.0pt;
-font-family:宋体;color:blue"}*[chassis-number]{lang="EN-US"}*[ ]{lang="EN-US" style="font-size:10.0pt;font-family:宋体;color:blue"}**[slot]{lang="EN-US"}**[ ]{lang="EN-US" style="font-size:10.0pt;font-family:
-宋体;color:blue"}*[slot-number]{lang="EN-US"}*[ ]{lang="EN-US" style="font-size:10.0pt;font-family:宋体;color:blue"}[\[ **cpu** *cpu-number* \] \]]{lang="EN-US"}
+**[display** **user-profile** [ **session-group**   **name** *profile-name*  ]**chassis***chassis-number***slot***slot-number* **cpu** *cpu-number* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_166309654}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1090_x8456_1127288689}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_x257697550}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1090_x8456_888455825}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1090_x8456_x1997083687}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1090_x8456_1704894232}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1090_x8456_1306195280}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_1025665738}
+【参数】
 
-[**[session-group]{lang="EN-US"}**]{#struct_0_x1090_x8456_170357962}[：显示]{style="font-family:宋体"}[Session Group Profile]{lang="EN-US"}[的配置信息和在线用户信息。]{style="font-family:宋体"}
+**[session-group**]：显示Session Group Profile的配置信息和在线用户信息。
 
-[**[name]{lang="EN-US"}***[ profile-name]{lang="EN-US"}*]{#struct_0_x1090_x8456_x309013046}[：表示]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，只能包含英文字母]{style="font-family:宋体"}[\[a-z,A-Z\]]{lang="EN-US"}[、数字、下划线，且必须以英文字母开始，区分大小写。]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[的名称必须全局唯一。如果未指定本参数，将显示所有]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[的配置信息和在线用户信息。]{style="font-family:宋体"}
+**[name*** profile-name*]：表示User Profile的名称，为1～31个字符的字符串，只能包含英文字母a-z,A-Z、数字、下划线，且必须以英文字母开始，区分大小写。User Profile的名称必须全局唯一。如果未指定本参数，将显示所有User Profile的配置信息和在线用户信息。
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1090_x8456_x1448182817}[：显示]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[的配置信息和指定单板的在线用户信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[的配置信息和所有在位单板的在线用户信息。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示User Profile的配置信息和指定单板的在线用户信息，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示User Profile的配置信息和所有在位单板的在线用户信息。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1090_x8456_1218385142}[：显示]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[的配置信息和指定成员设备的在线用户信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。如果未指定本参数，将显示]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[的配置信息和所有成员设备的在线用户信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示User Profile的配置信息和指定成员设备的在线用户信息，*slot-number*表示设备在IRF中的成员编号。如果未指定本参数，将显示User Profile的配置信息和所有成员设备的在线用户信息。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1090_x8456_728697165}[：显示]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[的配置信息和指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[的在线用户信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。如果未指定本参数，将显示]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[的配置信息和所有成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[的在线用户信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示User Profile的配置信息和指定成员设备/PEX的在线用户信息，*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果未指定本参数，将显示User Profile的配置信息和所有成员设备/PEX的在线用户信息。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1090_x8456_x359570667}[：显示]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[的配置信息和指定成员设备上指定单板的在线用户信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[的配置信息和所有成员设备上在位单板的在线用户信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示User Profile的配置信息和指定成员设备上指定单板的在线用户信息，*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示User Profile的配置信息和所有成员设备上在位单板的在线用户信息。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1090_x8456_x2049977491}[：显示]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[的配置信息和指定单板的在线用户信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。如果未指定本参数，将显示]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[的配置信息和所有单板的在线用户信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示User Profile的配置信息和指定单板的在线用户信息，*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。如果未指定本参数，将显示User Profile的配置信息和所有单板的在线用户信息。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_x1090_x8456_1642721900}[：指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[号。]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的编号。]{style="font-family:宋体"}[只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。]{style="font-family:宋体"}[本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}[（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[/]{lang="EN-US"}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**[cpu** *cpu-number*]：指定CPU号。*cpu-number*表示CPU的编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。（分布式设备－独立运行模式/集中式IRF设备/分布式设备－IRF模式）
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_x2022983665}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1090_x8456_943555071}[显示在]{style="font-family:宋体"}[名称为]{style="font-family:宋体"}[aaa]{lang="EN-US"}[的]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[配置信息及被授权该]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[的在线用户信息。（集中式设备）]{style="font-family:宋体"}
+\# 显示在名称为aaa的User Profile配置信息及被授权该User Profile的在线用户信息。（集中式设备）
 
-[[\<Sysname\> display user-profile name aaa]{lang="EN-US"}]{#struct_0_x1090_x8456_942899710}
+\<Sysname\> display user-profile name aaa
 
-[  User-Profile: aaa]{lang="EN-US"}
+  User-Profile: aaa
 
-[    Inbound:]{lang="EN-US"}
+    Inbound:
 
-[      CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)]{lang="EN-US"}
+      CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[      Policy: p1]{lang="EN-US"}
+      Policy: p1
 
-[    Outbound:]{lang="EN-US"}
+    Outbound:
 
-[      CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)]{lang="EN-US"}
+      CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[      Policy: p2]{lang="EN-US"}
+      Policy: p2
 
-[    Connection-limit amount: 1000]{lang="EN-US"}
+    Connection-limit amount: 1000
 
-[    Connection-limit rate: 100]{lang="EN-US"}
+    Connection-limit rate: 100
 
-[ ]{lang="EN-US"}
+    User user_1:
 
-[    User user_1:]{lang="EN-US"}
+      Authentication type: 802.1X
 
-[      Authentication type: 802.1X]{lang="EN-US"}
+      Network attributes:
 
-[      Network attributes:]{lang="EN-US"}
+        Interface    : GigabitEthernet1/0/1
 
-[        Interface    : GigabitEthernet1/0/1]{lang="EN-US"}
+        MAC address  : 0000-1111-2222
 
-[        MAC address  : 0000-1111-2222]{lang="EN-US"}
+      Failed action list:
 
-[      Failed action list:]{lang="EN-US"}
+        Inbound: Policy p1
 
-[        Inbound: Policy p1 ]{lang="EN-US"}
+        Inbound: CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[        Inbound: CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps) ]{lang="EN-US"}
+        Connection-limit rate: 100
 
-[        Connection-limit rate: 100]{lang="EN-US"}
+    User user_2:
 
-[    User user_2:]{lang="EN-US"}
+      Authentication type: Portal
 
-[      Authentication type: Portal]{lang="EN-US"}
+      Network attributes:
 
-[      Network attributes:]{lang="EN-US"}
+        Interface    : GigabitEthernet1/0/3
 
-[        Interface    : GigabitEthernet1/0/3]{lang="EN-US"}
+        IP address   : 172.16.187.16
 
-[        IP address   : 172.16.187.16]{lang="EN-US"}
+        VPN          : N/A
 
-[        VPN          : N/A]{lang="EN-US"}
+        Service VLAN : 100
 
-[        Service VLAN : 100]{lang="EN-US"}
+\# 显示设备上的Session Group Profile配置信息及被授权该Session Group Profile的在线用户信息。（集中式设备）
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1090_x8456_x120332746}[显示设备上]{style="font-family:宋体"}[的]{style="font-family:
-宋体"}[Session Group Profile]{lang="EN-US"}[配置信息及被授权该]{style="font-family:宋体"}[Session Group Profile]{lang="EN-US"}[的在线用户信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}[（集中式设备）]{style="font-family:宋体"}
+\<Sysname\> display user-profile session-group
 
-[[\<Sysname\> display user-profile session-group]{lang="EN-US"}]{#struct_0_x1090_x8456_943620606}
+  Session-Group-Profile: aaa
 
-[  Session-Group-Profile: aaa]{lang="EN-US"}
+    Outbound:
 
-[    Outbound:]{lang="EN-US"}
+      CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[      CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)]{lang="EN-US"}
+    QMProfile: a
 
-[    QMProfile: a]{lang="EN-US"}
+    User user_1:
 
-[ ]{lang="EN-US"}
+      Authentication type: 802.1X
 
-[    User user_1:]{lang="EN-US"}
+      Network attributes:
 
-[      Authentication type: 802.1X]{lang="EN-US"}
+        Interface    : Ethernet1/2/0/1
 
-[      Network attributes:]{lang="EN-US"}
+        MAC address  : 0000-1111-2222
 
-[        Interface    : Ethernet1/2/0/1]{lang="EN-US"}
+      Failed action list:
 
-[        MAC address  : 0000-1111-2222]{lang="EN-US"}
+        Outbound: CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[      Failed action list:]{lang="EN-US"}
+        QMProfile: a
 
-[        Outbound: CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)]{lang="EN-US"}
+    User user_2:
 
-[        QMProfile: a]{lang="EN-US"}
+      Authentication type: Portal
 
-[    User user_2:]{lang="EN-US"}
+      Network attributes:
 
-[      Authentication type: Portal]{lang="EN-US"}
+        Interface    : GigabitEthernet1/0/3
 
-[      Network attributes:]{lang="EN-US"}
+        IP address   : 172.16.187.16
 
-[        Interface    : GigabitEthernet1/0/3]{lang="EN-US"}
+        VPN          : N/A
 
-[        IP address   : 172.16.187.16]{lang="EN-US"}
+        Service VLAN : 100
 
-[        VPN          : N/A]{lang="EN-US"}
+  Session-Group-Profile: bbb
 
-[        Service VLAN : 100]{lang="EN-US"}
+    Outbound:
 
-[ ]{lang="EN-US"}
+      CIR 512 (kbps), CBS 1062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[  Session-Group-Profile: bbb]{lang="EN-US"}
+    QMProfile: a
 
-[    Outbound:]{lang="EN-US"}
+    User user_4:
 
-[      CIR 512 (kbps), CBS 1062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)]{lang="EN-US"}
+      Authentication type: Portal
 
-[    QMProfile: a]{lang="EN-US"}
+      Network attributes:
 
-[ ]{lang="EN-US"}
+        Interface    : GigabitEthernet1/0/2
 
-[    User user_4:]{lang="EN-US"}
+        IP address   : 172.16.187.166
 
-[      Authentication type: Portal]{lang="EN-US"}
+        VPN          : N/A
 
-[      Network attributes:]{lang="EN-US"}
+        Service VLAN : 100
 
-[        Interface    : GigabitEthernet1/0/2]{lang="EN-US"}
+\# 显示2号单板上的User Profile配置信息及被授权该User Profile的在线用户信息。（分布式设备－独立运行模式）
 
-[        IP address   : 172.16.187.166]{lang="EN-US"}
+\<Sysname\> display user-profile slot 2
 
-[        VPN          : N/A]{lang="EN-US"}
+  User-Profile: aaa
 
-[        Service VLAN : 100]{lang="EN-US"}
+    Inbound:
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1090_x8456_x171882063}[显示]{style="font-family:宋体"}[2]{lang="EN-US"}[号单板上]{style="font-family:宋体"}[的]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[配置信息及被授权该]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[的在线用户信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}[（分布式设备－独立运行模式）]{style="font-family:宋体"}
+      CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[[\<Sysname\> display user-profile slot 2]{lang="EN-US"}]{#struct_0_x1090_x8456_943358461}
+      Policy: p1
 
-[  User-Profile: aaa]{lang="EN-US"}
+    Outbound:
 
-[    Inbound:]{lang="EN-US"}
+      CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[      CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)]{lang="EN-US"}
+      Policy: p2
 
-[      Policy: p1]{lang="EN-US"}
+    Connection-limit amount: 1000
 
-[    Outbound:]{lang="EN-US"}
+    Connection-limit rate: 100
 
-[      CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)]{lang="EN-US"}
+    User user_1:
 
-[      Policy: p2]{lang="EN-US"}
+      Authentication type: 802.1X
 
-[    Connection-limit amount: 1000]{lang="EN-US"}
+      Network attributes:
 
-[    Connection-limit rate: 100]{lang="EN-US"}
+        Interface    : GigabitEthernet1/0/1
 
-[ ]{lang="EN-US"}
+        MAC address  : 0000-1111-2222
 
-[    User user_1:]{lang="EN-US"}
+      Failed action list:
 
-[      Authentication type: 802.1X]{lang="EN-US"}
+        Inbound: Policy p1
 
-[      Network attributes:]{lang="EN-US"}
+        Inbound: CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[        Interface    : GigabitEthernet1/0/1]{lang="EN-US"}
+        Connection-limit rate: 100
 
-[        MAC address  : 0000-1111-2222]{lang="EN-US"}
+    User user_2:
 
-[      Failed action list:]{lang="EN-US"}
+      Authentication type: Portal
 
-[        Inbound: Policy p1]{lang="EN-US"}
+      Network attributes:
 
-[        Inbound: CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)]{lang="EN-US"}
+        Interface    : GigabitEthernet1/0/3
 
-[        Connection-limit rate: 100]{lang="EN-US"}
+        IP address   : 172.16.187.16
 
-[    User user_2:]{lang="EN-US"}
+        VPN          : N/A
 
-[      Authentication type: Portal]{lang="EN-US"}
+        Service VLAN : 100
 
-[      Network attributes:]{lang="EN-US"}
+  User-Profile: bbb
 
-[        Interface    : GigabitEthernet1/0/3]{lang="EN-US"}
+    Inbound:
 
-[        IP address   : 172.16.187.16]{lang="EN-US"}
+      CIR 512 (kbps), CBS 1062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[        VPN          : N/A]{lang="EN-US"}
+      Policy: p3
 
-[        Service VLAN : 100]{lang="EN-US"}
+      Connection-limit rate: 200
 
-[ ]{lang="EN-US"}
+    User user_4:
 
-[  User-Profile: bbb]{lang="EN-US"}
+    Authentication type: Portal
 
-[    Inbound:]{lang="EN-US"}
+    Network attributes:
 
-[      CIR 512 (kbps), CBS 1062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)]{lang="EN-US"}
+      Interface    : GigabitEthernet1/0/2
 
-[      Policy: p3]{lang="EN-US"}
+      IP address   : 172.16.187.166
 
-[      Connection-limit rate: 200]{lang="EN-US"}
+      VPN          : N/A
 
-[ ]{lang="EN-US"}
+      Service VLAN : 100
 
-[    User user_4:]{lang="EN-US"}
+\# 显示2号成员设备上的Session Group Profile配置信息及被授权该Session Group Profile的在线用户信息。（集中式IRF设备）
 
-[    Authentication type: Portal]{lang="EN-US"}
+\<Sysname\> display user-profile session-group slot 2
 
-[    Network attributes:]{lang="EN-US"}
+  Session-Group-Profile: aaa
 
-[      Interface    : GigabitEthernet1/0/2]{lang="EN-US"}
+    Outbound:
 
-[      IP address   : 172.16.187.166]{lang="EN-US"}
+      CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[      VPN          : N/A]{lang="EN-US"}
+    QMProfile: a
 
-[      Service VLAN : 100]{lang="EN-US"}
+    User user_1:
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1090_x8456_x721199051}[显示]{style="font-family:宋体"}[2]{lang="EN-US"}[号成员设备上]{style="font-family:宋体"}[的]{style="font-family:宋体"}[Session Group Profile]{lang="EN-US"}[配置信息及被授权该]{style="font-family:宋体"}[Session Group Profile]{lang="EN-US"}[的在线用户信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}[（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+      Authentication type: 802.1X
 
-[[\<Sysname\> display user-profile session-group slot 2]{lang="EN-US"}]{#struct_0_x1090_x8456_x1429556673}
+      Network attributes:
 
-[  Session-Group-Profile: aaa]{lang="EN-US"}
+        Interface    : Ethernet1/2/0/1
 
-[    Outbound:]{lang="EN-US"}
+        MAC address  : 0000-1111-2222
 
-[      CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)]{lang="EN-US"}
+      Failed action list:
 
-[    QMProfile: a]{lang="EN-US"}
+        Outbound: CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[ ]{lang="EN-US"}
+        QMProfile: a
 
-[    User user_1:]{lang="EN-US"}
+    User user_2:
 
-[      Authentication type: 802.1X]{lang="EN-US"}
+      Authentication type: Portal
 
-[      Network attributes:]{lang="EN-US"}
+      Network attributes:
 
-[        Interface    : Ethernet1/2/0/1]{lang="EN-US"}
+        Interface    : GigabitEthernet1/0/3
 
-[        MAC address  : 0000-1111-2222]{lang="EN-US"}
+        IP address   : 172.16.187.16
 
-[      Failed action list:]{lang="EN-US"}
+        VPN          : N/A
 
-[        Outbound: CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)]{lang="EN-US"}
+        Service VLAN : 100
 
-[        QMProfile: a]{lang="EN-US"}
+  Session-Group-Profile: bbb
 
-[    User user_2:]{lang="EN-US"}
+    Outbound:
 
-[      Authentication type: Portal]{lang="EN-US"}
+      CIR 512 (kbps), CBS 1062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[      Network attributes:]{lang="EN-US"}
+    QMProfile: a
 
-[        Interface    : GigabitEthernet1/0/3]{lang="EN-US"}
+    User user_4:
 
-[        IP address   : 172.16.187.16]{lang="EN-US"}
+      Authentication type: Portal
 
-[        VPN          : N/A]{lang="EN-US"}
+      Network attributes:
 
-[        Service VLAN : 100]{lang="EN-US"}
+        Interface    : GigabitEthernet1/0/2
 
-[ ]{lang="EN-US"}
+        IP address   : 172.16.187.166
 
-[  Session-Group-Profile: bbb]{lang="EN-US"}
+        VPN          : N/A
 
-[    Outbound:]{lang="EN-US"}
+        Service VLAN : 100
 
-[      CIR 512 (kbps), CBS 1062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)]{lang="EN-US"}
+\# 显示在1号成员设备2号单板上名称为aaa的User Profile配置信息及被授权该User Profile的在线用户信息。（分布式设备－IRF模式）
 
-[    QMProfile: a]{lang="EN-US"}
+\<Sysname\> display user-profile name aaa chassis 1 slot 2
 
-[ ]{lang="EN-US"}
+  User-Profile: aaa
 
-[    User user_4:]{lang="EN-US"}
+    Inbound:
 
-[      Authentication type: Portal]{lang="EN-US"}
+      CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[      Network attributes:]{lang="EN-US"}
+      Policy: p1
 
-[        Interface    : GigabitEthernet1/0/2]{lang="EN-US"}
+    Outbound:
 
-[        IP address   : 172.16.187.166]{lang="EN-US"}
+      CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[        VPN          : N/A]{lang="EN-US"}
+      Policy: p2
 
-[        Service VLAN : 100]{lang="EN-US"}
+    Connection-limit amount: 1000
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1090_x8456_1217991923}[显示在]{style="font-family:宋体"}[1]{lang="EN-US"}[号成员设备]{style="font-family:宋体"}[2]{lang="EN-US"}[号单板上]{style="font-family:宋体"}[名称为]{style="font-family:宋体"}[aaa]{lang="EN-US"}[的]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[配置信息及被授权该]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[的在线用户信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}[（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+    Connection-limit rate: 100
 
-[[\<Sysname\> display user-profile name aaa chassis 1 slot 2]{lang="EN-US"}]{#struct_0_x1090_x8456_170292427}
+    User user_1:
 
-[  User-Profile: aaa]{lang="EN-US"}
+      Authentication type: 802.1X
 
-[    Inbound:]{lang="EN-US"}
+      Network attributes:
 
-[      CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)]{lang="EN-US"}
+        Interface    : GigabitEthernet1/0/1
 
-[      Policy: p1]{lang="EN-US"}
+        MAC address  : 0000-1111-2222
 
-[    Outbound:]{lang="EN-US"}
+      Failed action list:
 
-[      CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)]{lang="EN-US"}
+        Inbound: Policy p1
 
-[      Policy: p2]{lang="EN-US"}
+        Inbound: CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[    Connection-limit amount: 1000]{lang="EN-US"}
+        Connection-limit rate: 100
 
-[    Connection-limit rate: 100]{lang="EN-US"}
+    User user_2:
 
-[ ]{lang="EN-US"}
+      Authentication type: Portal
 
-[    User user_1:]{lang="EN-US"}
+      Network attributes:
 
-[      Authentication type: 802.1X]{lang="EN-US"}
+        Interface    : GigabitEthernet1/0/3
 
-[      Network attributes:]{lang="EN-US"}
+        IP address   : 172.16.187.16
 
-[        Interface    : GigabitEthernet1/0/1]{lang="EN-US"}
+        VPN          : N/A
 
-[        MAC address  : 0000-1111-2222]{lang="EN-US"}
+        Service VLAN : 100
 
-[      Failed action list:]{lang="EN-US"}
+\# 显示在1号成员设备2号单板上名称为aaa的Session Group Profile配置信息及被授权该Session Group Profile的在线用户信息。（分布式设备－IRF模式）
 
-[        Inbound: Policy p1 ]{lang="EN-US"}
+\<Sysname\> display user-profile session-group name aaa chassis 1 slot 2
 
-[        Inbound: CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps) ]{lang="EN-US"}
+  Session-Group-Profile: aaa
 
-[        Connection-limit rate: 100]{lang="EN-US"}
+    Outbound:
 
-[    User user_2:]{lang="EN-US"}
+      CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[      Authentication type: Portal]{lang="EN-US"}
+    QMProfile: a
 
-[      Network attributes:]{lang="EN-US"}
+    User user_1:
 
-[        Interface    : GigabitEthernet1/0/3]{lang="EN-US"}
+      Authentication type: 802.1X
 
-[        IP address   : 172.16.187.16]{lang="EN-US"}
+      Network attributes:
 
-[        VPN          : N/A]{lang="EN-US"}
+        Interface    : GigabitEthernet1/0/1
 
-[        Service VLAN : 100]{lang="EN-US"}
+        MAC address  : 0000-1111-2222
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1090_x8456_1784804659}[显示在]{style="font-family:宋体"}[1]{lang="EN-US"}[号成员设备]{style="font-family:宋体"}[2]{lang="EN-US"}[号单板上]{style="font-family:宋体"}[名称为]{style="font-family:宋体"}[aaa]{lang="EN-US"}[的]{style="font-family:宋体"}[Session Group Profile]{lang="EN-US"}[配置信息及被授权该]{style="font-family:宋体"}[Session Group Profile]{lang="EN-US"}[的在线用户信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}[（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+      Failed action list:
 
-[[\<Sysname\> display user-profile session-group name aaa chassis 1 slot 2]{lang="EN-US"}]{#struct_0_x1090_x8456_170357963}
+        Outbound: CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[  Session-Group-Profile: aaa]{lang="EN-US"}
+        QMProfile: a
 
-[    Outbound:]{lang="EN-US"}
+    User user_2:
 
-[      CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)]{lang="EN-US"}
+      Authentication type: Portal
 
-[    QMProfile: a]{lang="EN-US"}
+      Network attributes:
 
-[ ]{lang="EN-US"}
+        Interface    : GigabitEthernet1/0/3
 
-[    User user_1:]{lang="EN-US"}
+        IP address   : 172.16.187.16
 
-[      Authentication type: 802.1X ]{lang="EN-US"}
+        VPN          : N/A
 
-[      Network attributes:]{lang="EN-US"}
+        Service VLAN : 100
 
-[        Interface    : GigabitEthernet1/0/1]{lang="EN-US"}
+\# 显示名称为bbb的User Profile配置信息及被授权该User Profile的在线用户信息。（分布式设备－IRF模式）
 
-[        MAC address  : 0000-1111-2222]{lang="EN-US"}
+\<Sysname\> display user-profile name bbb
 
-[      Failed action list:]{lang="EN-US"}
+  User-Profile: bbb
 
-[        Outbound: CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps) ]{lang="EN-US"}
+    Inbound:
 
-[        QMProfile: a]{lang="EN-US"}
+      CIR 512 (kbps), CBS 1062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[    User user_2:]{lang="EN-US"}
+      Policy: p3
 
-[      Authentication type: Portal]{lang="EN-US"}
+    Connection-limit rate: 200
 
-[      Network attributes:]{lang="EN-US"}
+    Chassis 1 Slot 2:
 
-[        Interface    : GigabitEthernet1/0/3]{lang="EN-US"}
+      User user_3:
 
-[        IP address   : 172.16.187.16]{lang="EN-US"}
+        Authentication type: 802.1X
 
-[        VPN          : N/A]{lang="EN-US"}
+        Network attributes:
 
-[        Service VLAN : 100]{lang="EN-US"}
+          Interface    : GigabitEthernet1/0/1
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1090_x8456_x977453894}[显示]{style="font-family:宋体"}[名称为]{style="font-family:宋体"}[bbb]{lang="EN-US"}[的]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[配置信息及被授权该]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[的在线用户信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}[（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+          MAC address  : 1111-2222-3333
 
-[[\<Sysname\> display user-profile name bbb]{lang="EN-US"}]{#struct_0_x1090_x8456_1735852083}
+        Failed action list:
 
-[  User-Profile: bbb]{lang="EN-US"}
+          Connection-limit rate: 200
 
-[    Inbound:]{lang="EN-US"}
+      User user_4:
 
-[      CIR 512 (kbps), CBS 1062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)]{lang="EN-US"}
+        Authentication type: PPP
 
-[      Policy: p3]{lang="EN-US"}
+        Network attributes:
 
-[    Connection-limit rate: 200]{lang="EN-US"}
+          Interface    : GigabitEthernet1/0/2
 
-[ ]{lang="EN-US"}
+    Chassis 1 Slot 5:
 
-[    Chassis 1 Slot 2:]{lang="EN-US"}
+      User user_5:
 
-[      User user_3:]{lang="EN-US"}
+        Authentication type: IPoE
 
-[        Authentication type: 802.1X]{lang="EN-US"}
+        Network attributes:
 
-[        Network attributes:]{lang="EN-US"}
+          MAC address  : 2222-3333-4444
 
-[          Interface    : GigabitEthernet1/0/1]{lang="EN-US"}
+\# 显示指定名称为bbb的Session Group Profile配置信息及被授权该Session Group Profile的在线用户信息。（分布式设备－IRF模式）
 
-[          MAC address  : 1111-2222-3333]{lang="EN-US"}
+\<Sysname\> display user-profile session-group name bbb
 
-[        Failed action list:]{lang="EN-US"}
+  Session-Group-Profile: bbb
 
-[          Connection-limit rate: 200]{lang="EN-US"}
+    Outbound:
 
-[      User user_4:]{lang="EN-US"}
+      CIR 512 (kbps), CBS 1062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[        Authentication type: PPP]{lang="EN-US"}
+    QMProfile: a
 
-[        Network attributes:]{lang="EN-US"}
+    Chassis 1 Slot 2:
 
-[          Interface    : GigabitEthernet1/0/2]{lang="EN-US"}
+      User user_3:
 
-[ ]{lang="EN-US"}
+        Authentication type: 802.1X
 
-[    Chassis 1 Slot 5:]{lang="EN-US"}
+        Network attributes:
 
-[      User user_5:]{lang="EN-US"}
+          Interface    : GigabitEthernet1/0/1
 
-[        Authentication type: IPoE]{lang="EN-US"}
+          MAC address  : 1111-2222-3333
 
-[        Network attributes:]{lang="EN-US"}
+        Failed action list:
 
-[          MAC address  : 2222-3333-4444]{lang="EN-US"}
+          Outbound: CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1090_x8456_x1987510960}[显示指定]{style="font-family:宋体"}[名称为]{style="font-family:
-宋体"}[bbb]{lang="EN-US"}[的]{style="font-family:宋体"}[Session Group Profile]{lang="EN-US"}[配置信息及被授权该]{style="font-family:宋体"}[Session Group Profile]{lang="EN-US"}[的在线用户信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}[（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+          QMProfile: a
 
-[[\<Sysname\> display user-profile session-group name bbb]{lang="EN-US"}]{#struct_0_x1090_x8456_x1356728505}
+      User user_4:
 
-[  Session-Group-Profile: bbb]{lang="EN-US"}
+        Authentication type: PPP
 
-[    Outbound:]{lang="EN-US"}
+        Network attributes:
 
-[      CIR 512 (kbps), CBS 1062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)]{lang="EN-US"}
+          Interface    : GigabitEthernet1/0/2
 
-[    QMProfile: a]{lang="EN-US"}
+    Chassis 1 Slot 5:
 
-[ ]{lang="EN-US"}
+      User user_5:
 
-[    Chassis 1 Slot 2:]{lang="EN-US"}
+        Authentication type: IPoE
 
-[      User user_3:]{lang="EN-US"}
+        Network attributes:
 
-[        Authentication type: 802.1X]{lang="EN-US"}
+          MAC address  : 2222-3333-4444
 
-[        Network attributes:]{lang="EN-US"}
+\# 显示所有的User Profile配置信息及被授权该User Profile的在线用户信息。（分布式设备－IRF模式）
 
-[          Interface    : GigabitEthernet1/0/1]{lang="EN-US"}
+\<Sysname\> display user-profile
 
-[          MAC address  : 1111-2222-3333]{lang="EN-US"}
+  User-Profile: aaa
 
-[        Failed action list:]{lang="EN-US"}
+    Inbound:
 
-[          Outbound: CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps) ]{lang="EN-US"}
+      CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[          QMProfile: a]{lang="EN-US"}
+      Policy: p1
 
-[      User user_4:]{lang="EN-US"}
+    Connection-limit amount: 1000
 
-[        Authentication type: PPP]{lang="EN-US"}
+    Connection-limit rate: 100
 
-[        Network attributes:]{lang="EN-US"}
+    Chassis 1 Slot 2:
 
-[          Interface    : GigabitEthernet1/0/2]{lang="EN-US"}
+      User user_1:
 
-[ ]{lang="EN-US"}
+        Authentication type: 802.1X
 
-[    Chassis 1 Slot 5:]{lang="EN-US"}
+        Network attributes:
 
-[      User user_5:]{lang="EN-US"}
+          Interface    : GigabitEthernet1/0/1
 
-[        Authentication type: IPoE]{lang="EN-US"}
+          MAC address  : 0000-1111-2222
 
-[        Network attributes:]{lang="EN-US"}
+        Failed action list:
 
-[          MAC address  : 2222-3333-4444]{lang="EN-US"}
+          Inbound: Policy p1
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1090_x8456_x1561777281}[显示所有]{style="font-family:宋体"}[的]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[配置信息及被授权该]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[的在线用户信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}[（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+    Chassis 1 Slot 5:
 
-[[\<Sysname\> display user-profile]{lang="EN-US"}]{#struct_0_x1090_x8456_1735589939}
+      User user_6:
 
-[  User-Profile: aaa]{lang="EN-US"}
+        Authentication type: PPP
 
-[    Inbound:]{lang="EN-US"}
+        Network attributes:
 
-[      CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)]{lang="EN-US"}
+          Interface    : GigabitEthernet1/0/3
 
-[      Policy: p1]{lang="EN-US"}
+  User-Profile: bbb
 
-[    Connection-limit amount: 1000]{lang="EN-US"}
+    Inbound:
 
-[    Connection-limit rate: 100]{lang="EN-US"}
+      CIR 512 (kbps), CBS 1062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[ ]{lang="EN-US"}
+      Policy: p3
 
-[    Chassis 1 Slot 2:]{lang="EN-US"}
+    Connection-limit rate: 200
 
-[      User user_1:]{lang="EN-US"}
+    Chassis 1 Slot 5:
 
-[        Authentication type: 802.1X]{lang="EN-US"}
+      User user_7:
 
-[        Network attributes:]{lang="EN-US"}
+        Authentication type: IPoE
 
-[          Interface    : GigabitEthernet1/0/1]{lang="EN-US"}
+        Network attributes:
 
-[          MAC address  : 0000-1111-2222]{lang="EN-US"}
+          Interface    : GigabitEthernet1/0/2
 
-[        Failed action list:]{lang="EN-US"}
+          MAC address  : 0000-1111-2222
 
-[          Inbound: Policy p1]{lang="EN-US"}
+          IP address   : 172.16.187.166
 
-[ ]{lang="EN-US"}
+          VPN          : N/A
 
-[    Chassis 1 Slot 5:]{lang="EN-US"}
+          Service VLAN : 100
 
-[      User user_6:]{lang="EN-US"}
+\# 显示所有的Session Group Profile配置信息及被授权该Session Group Profile的在线用户信息。（分布式设备－IRF模式）
 
-[        Authentication type: PPP]{lang="EN-US"}
+\<Sysname\> display user-profile session-group
 
-[        Network attributes:]{lang="EN-US"}
+  Session-Group-Profile: aaa
 
-[          Interface    : GigabitEthernet1/0/3]{lang="EN-US"}
+    Outbound:
 
-[ ]{lang="EN-US"}
+      CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[  User-Profile: bbb]{lang="EN-US"}
+    QMProfile: a
 
-[    Inbound:]{lang="EN-US"}
+    Chassis 1 Slot 2:
 
-[      CIR 512 (kbps), CBS 1062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)]{lang="EN-US"}
+      User user_1:
 
-[      Policy: p3]{lang="EN-US"}
+        Authentication type: 802.1X
 
-[    Connection-limit rate: 200]{lang="EN-US"}
+        Network attributes:
 
-[ ]{lang="EN-US"}
+          Interface    : GigabitEthernet1/0/1
 
-[    Chassis 1 Slot 5:]{lang="EN-US"}
+          MAC address  : 0000-1111-2222
 
-[      User user_7:]{lang="EN-US"}
+        Failed action list:
 
-[        Authentication type: IPoE]{lang="EN-US"}
+          Outbound: CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[        Network attributes:]{lang="EN-US"}
+          QMProfile: a
 
-[          Interface    : GigabitEthernet1/0/2]{lang="EN-US"}
+    Chassis 1 Slot 5:
 
-[          MAC address  : 0000-1111-2222]{lang="EN-US"}
+      User user_6:
 
-[          IP address   : 172.16.187.166]{lang="EN-US"}
+        Authentication type: PPP
 
-[          VPN          : N/A]{lang="EN-US"}
+        Network attributes:
 
-[          Service VLAN : 100]{lang="EN-US"}
+          Interface    : GigabitEthernet1/0/3
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1090_x8456_x771078987}[显示所有]{style="font-family:宋体"}[的]{style="font-family:宋体"}[Session Group Profile]{lang="EN-US"}[配置信息及被授权该]{style="font-family:宋体"}[Session Group Profile]{lang="EN-US"}[的在线用户信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}[（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+  Session-Group-Profile: bbb
 
-[[\<Sysname\> display user-profile session-group]{lang="EN-US"}]{#struct_0_x1090_x8456_1735655475}
+    Outbound:
 
-[  Session-Group-Profile: aaa]{lang="EN-US"}
+      CIR 512 (kbps), CBS 1062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)
 
-[    Outbound:]{lang="EN-US"}
+    QMProfile: a
 
-[      CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps) ]{lang="EN-US"}
+    Chassis 1 Slot 5:
 
-[    QMProfile: a]{lang="EN-US"}
+      User user_7:
 
-[ ]{lang="EN-US"}
+        Authentication type: IPoE
 
-[    Chassis 1 Slot 2:]{lang="EN-US"}
+        Network attributes:
 
-[      User user_1:]{lang="EN-US"}
+          Interface    : GigabitEthernet1/0/2
 
-[        Authentication type: 802.1X]{lang="EN-US"}
+          MAC address  : 0000-1111-2222
 
-[        Network attributes:]{lang="EN-US"}
+          IP address   : 172.16.187.166
 
-[          Interface    : GigabitEthernet1/0/1]{lang="EN-US"}
+          VPN          : N/A
 
-[          MAC address  : 0000-1111-2222]{lang="EN-US"}
+          Service VLAN : 100
 
-[        Failed action list:]{lang="EN-US"}
+表1-1 表1-1 display user-profile 命令显示信息描述表
 
-[          Outbound: CIR 33 (kbps), CBS 2062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps) ]{lang="EN-US"}
+字段
 
-[          QMProfile: a]{lang="EN-US"}
+描述
 
-[ ]{lang="EN-US"}
+User-Profile
 
-[    Chassis 1 Slot 5:]{lang="EN-US"}
+User Profile名称
 
-[      User user_6:]{lang="EN-US"}
+Inbound
 
-[        Authentication type: PPP]{lang="EN-US"}
+在入方向上应用的策略
 
-[        Network attributes:]{lang="EN-US"}
+Outbound
 
-[          Interface    : GigabitEthernet1/0/3]{lang="EN-US"}
+在出方向上应用的策略
 
-[ ]{lang="EN-US"}
+Session-Group-Profile
 
-[  Session-Group-Profile: bbb]{lang="EN-US"}
+Session Group Profile名称
 
-[    Outbound:]{lang="EN-US"}
+CIR
 
-[      CIR 512 (kbps), CBS 1062 (Bytes), EBS 0 (Bytes), PIR 888 (kbps)]{lang="EN-US"}
+承诺信息速率，单位为kbps
 
-[    QMProfile: a]{lang="EN-US"}
+CBS
 
-[ ]{lang="EN-US"}
+承诺突发尺寸，也就是容纳突发流量的令牌桶深度，单位为byte
 
-[    Chassis 1 Slot 5:]{lang="EN-US"}
+EBS
 
-[      User user_7:]{lang="EN-US"}
+超出突发尺寸，在双令牌桶算法中超出突发流量超过承诺突发流量的部分，单位为byte
 
-[        Authentication type: IPoE]{lang="EN-US"}
+PIR
 
-[        Network attributes:]{lang="EN-US"}
+峰值信息速率
 
-[          Interface    : GigabitEthernet1/0/2]{lang="EN-US"}
+Connection-limit amount
 
-[          MAC address  : 0000-1111-2222]{lang="EN-US"}
+用户最大连接数
 
-[          IP address   : 172.16.187.166]{lang="EN-US"}
+Connection-limit rate
 
-[          VPN          : N/A]{lang="EN-US"}
+用户最大连接速率
 
-[          Service VLAN : 100]{lang="EN-US"}
+Policy
 
-[]{#struct_0_x1090_x8456_x1354461343}[[表1-1 ]{lang="EN-US"}[表]{style="font-family:
-黑体"}[1-1 ]{lang="EN-US"}]{#_Ref298418812}[display user-profile ]{lang="EN-US"}[命令显示信息描述表]{style="font-family:黑体"}
+策略名
 
-[]{#table_struct_0_x844140864}[[字段]{style="font-family:黑体"}]{#struct_0_x1090_x8456_x1186153287}
-:::
+QMProfile
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1090_x8456_2015243558}
+队列调度策略
 
-[[User-Profile ]{lang="EN-US"}]{#struct_0_x1090_x8456_899259022}
+User user_1
 
-[[User Profile]{lang="EN-US"}]{#struct_0_x1090_x8456_x28151309}[名称]{style="font-family:宋体"}
+与User Profile或Session Group Profile关联的用户信息
 
-[[Inbound]{lang="EN-US"}]{#struct_0_x1090_x8456_1149685196}
+Authentication type
 
-[[在入方向上应用的策略]{style="font-family:宋体"}]{#struct_0_x1090_x8456_x1086986806}
+用户认证类型
 
-[[Outbound]{lang="EN-US"}]{#struct_0_x1090_x8456_1735458867}
+·802.1X
 
-[[在出方向上应用的策略]{style="font-family:宋体"}]{#struct_0_x1090_x8456_x28722836}
+·Portal
 
-[[Session-Group-Profile]{lang="EN-US"}]{#struct_0_x1090_x8456_1217926387}
+·PPP
 
-[[Session Group Profile]{lang="EN-US"}]{#struct_0_x1090_x8456_649325884}[名称]{style="font-family:宋体"}
+·IPoE
 
-[[CIR]{lang="EN-US"}]{#struct_0_x1090_x8456_x2093836782}
+·MACA
 
-[[承诺信息速率，单位为]{style="font-family:宋体"}[kbps]{lang="EN-US"}]{#struct_0_x1090_x8456_x1099389388}
+Network attributes
 
-[[CBS]{lang="EN-US"}]{#struct_0_x1090_x8456_593377783}
+用户特征信息
 
-[[承诺突发尺寸，也就是容纳突发流量的令牌桶深度，单位为]{style="font-family:宋体"}[byte]{lang="EN-US"}]{#struct_0_x1090_x8456_684238576}
+Failed action list
 
-[[EBS]{lang="EN-US"}]{#struct_0_x1090_x8456_2033174499}
-
-[[超出突发尺寸，在双令牌桶算法中超出突发流量超过承诺突发流量的部分，单位为]{style="font-family:宋体"}[byte]{lang="EN-US"}]{#struct_0_x1090_x8456_x47368748}
-
-[[PIR]{lang="EN-US"}]{#struct_0_x1090_x8456_x2113386032}
-
-[[峰值信息速率]{style="font-family:宋体"}]{#struct_0_x1090_x8456_1218385139}
-
-[[Connection-limit amount]{lang="EN-US"}]{#struct_0_x1090_x8456_x359242980}
-
-[[用户最大连接数]{style="font-family:宋体"}]{#struct_0_x1090_x8456_63309993}
-
-[[Connection-limit rate]{lang="EN-US"}]{#struct_0_x1090_x8456_x353880899}
-
-[[用户最大连接速率]{style="font-family:宋体"}]{#struct_0_x1090_x8456_x652938476}
-
-[[Policy]{lang="EN-US"}]{#struct_0_x1090_x8456_x372336702}
-
-[[策略名]{style="font-family:宋体"}]{#struct_0_x1090_x8456_965983680}
-
-[[QMProfile]{lang="EN-US"}]{#struct_0_x1090_x8456_x4618242}
-
-[[队列调度策略]{style="font-family:宋体"}]{#struct_0_x1090_x8456_1688278263}
-
-[[User user_1]{lang="EN-US"}]{#struct_0_x1090_x8456_1735524403}
-
-[[与]{style="font-family:宋体"}[User Profile]{lang="EN-US"}]{#struct_0_x1090_x8456_x407551477}[或]{style="font-family:宋体"}[Session Group Profile]{lang="EN-US"}[关联的用户信息]{style="font-family:宋体"}
-
-[[Authentication type]{lang="EN-US"}]{#struct_0_x1090_x8456_1218319603}
-
-[[用户认证类型]{style="font-family:宋体"}]{#struct_0_x1090_x8456_x1504561787}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[802.1X]{lang="EN-US"}]{#struct_0_x1090_x8456_511189026}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Portal]{lang="EN-US"}]{#struct_0_x1090_x8456_1692463799}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PPP]{lang="EN-US"}]{#struct_0_x1090_x8456_1229322848}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IPoE]{lang="EN-US"}]{#struct_0_x1090_x8456_x384099019}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MACA]{lang="EN-US"}]{#struct_0_x1090_x8456_247337928}
-
-[[Network attributes]{lang="EN-US"}]{#struct_0_x1090_x8456_1217860852}
-
-[[用户特征信息]{style="font-family:宋体"}]{#struct_0_x1090_x8456_x566950880}
-
-[[Failed action list]{lang="EN-US"}]{#struct_0_x1090_x8456_136330660}
-
-[[在该用户上应用失败的动作]{style="font-family:宋体"}]{#struct_0_x1090_x8456_136789412}
-
-[ ]{lang="EN-US"}
-
-::: {#1603098714 .myid}
-[]{#_Toc404792855}[]{#struct_0_x1090_x8456_1683562928}
+在该用户上应用失败的动作
 
 **User Profile \-- User Profile配置命令 \-- qos queue**
 
 ------------------------------------------------------------------------
 
-[**[qos queue]{lang="EN-US"}**]{#struct_0_x1090_x8456_1908968858}[命令用来在]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[中为会话指定进入的队列。]{style="font-family:宋体"}
+**[qos queue**]命令用来在User Profile中为会话指定进入的队列。
 
-[**[undo qos queue]{lang="EN-US"}**]{#struct_0_x1090_x8456_x1271543904}[命令用来取消配置。]{style="font-family:宋体"}
+**[undo qos queue**]命令用来取消配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_1089679106}
+【命令】
 
-[**[qos queue ]{lang="EN-US"}**[{ *queue-id* \| *queue-name* }]{lang="EN-US"}]{#struct_0_x1090_x8456_x82163981}
+**[qos queue **[{ *queue-id* \| *queue-name* }]]
 
-[**[undo qos queue]{lang="EN-US"}**]{#struct_0_x1090_x8456_2008423180}
+**[undo qos queue**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_461415242}
+【缺省情况】
 
-[[User Profile]{lang="EN-US"}]{#struct_0_x1090_x8456_475399820}[下没有指定进入的队列。]{style="font-family:宋体"}
+User Profile下没有指定进入的队列。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_593539996}
+【视图】
 
-[[User Profile]{lang="EN-US"}]{#struct_0_x1090_x8456_154023037}[视图]{style="font-family:宋体"}
+User Profile视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_349979674}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1090_x8456_x658753144}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1090_x8456_1217795316}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_x940350826}
+【参数】
 
-[**[queue ]{lang="EN-US"}**[{ ]{lang="EN-US"}*[queue-id ]{lang="EN-US"}*[\| *queue-name* }]{lang="EN-US"}]{#struct_0_x1090_x8456_1936527599}[：让应用此]{style="font-family:宋体"}[user profile]{lang="EN-US"}[的会话进入指定队列，]{style="font-family:宋体"}*[queue-id]{lang="EN-US"}*[表示队列序号，]{style="font-family:宋体"}*[queue-name]{lang="EN-US"}*[表示队列名称。]{style="font-family:宋体"}
+**[queue ***[queue-id *[\| *queue-name* }]]：让应用此user profile的会话进入指定队列，*queue-id*表示队列序号，*queue-name*表示队列名称。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_781760176}
+【使用指导】]
 
-[[若指定进入的队列对应的是四队列调度策略，则可以配置的队列序号范围是]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_x1090_x8456_1736441907}[～]{style="font-family:宋体"}[3]{lang="EN-US"}[，超出范围则配置失败，不会进入指定队列。]{style="font-family:宋体"}
+若指定进入的队列对应的是四队列调度策略，则可以配置的队列序号范围是0～3，超出范围则配置失败，不会进入指定队列。
 
-[[应用此命令可以为对多个会话指定不同的队列从而决定其不同优先级的调度方式。]{style="font-family:宋体"}]{#struct_0_x1090_x8456_x1026000821}
+应用此命令可以为对多个会话指定不同的队列从而决定其不同优先级的调度方式。
 
-[*[queue-id]{lang="EN-US"}*]{#struct_0_x1090_x8456_1735852084}[和]{style="font-family:宋体"}*[queue-name]{lang="EN-US"}*[的对应情况如]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:
-宋体"}1-2]{lang="EN-US"}](?1603098714#_Ref386643034)[所示。]{style="font-family:
-宋体"}
+*[queue-id*]和*queue-name*的对应情况如[表]1-2(?1603098714#_Ref386643034)所示。
 
-[]{#struct_0_x1090_x8456_x1987576496}[[表1-2 ]{lang="EN-US"}*[queue-id]{lang="EN-US"}*]{#_Ref386643034}[数字和关键字对应表]{style="font-family:黑体"}
+表1-2 *queue-id*数字和关键字对应表
 
-[]{#table_struct_0_510564096}[*[queue-id]{lang="EN-US" style="font-size:10.0pt"}*]{#struct_0_x1090_x8456_x28554354}[数字]{style="font-size:10.0pt;font-family:黑体"}
-:::
+*[queue-id*]数字
 
-[*[queue-id]{lang="EN-US" style="font-size:10.0pt"}*]{#struct_0_x1090_x8456_x1129066444}[关键字]{style="font-size:10.0pt;
-   font-family:黑体"}
+*[queue-id*]关键字
 
-[[0]{lang="EN-US" style="font-size:
-  10.0pt"}]{#struct_0_x1090_x8456_1735917620}
+0
 
-[[be]{lang="EN-US" style="font-size:
-  10.0pt"}]{#struct_0_x1090_x8456_x1593264604}
+be
 
-[[1]{lang="EN-US" style="font-size:10.0pt"}]{#struct_0_x1090_x8456_707445233}
+1
 
-[[af1]{lang="EN-US" style="font-size:
-  10.0pt"}]{#struct_0_x1090_x8456_1735721012}
+af1
 
-[[2]{lang="EN-US" style="font-size:
-  10.0pt"}]{#struct_0_x1090_x8456_x1575575523}
+2
 
-[[af2]{lang="EN-US" style="font-size:
-  10.0pt"}]{#struct_0_x1090_x8456_1612547535}
+af2
 
-[[3]{lang="EN-US" style="font-size:
-  10.0pt"}]{#struct_0_x1090_x8456_1735786548}
+3
 
-[[af3]{lang="EN-US" style="font-size:
-  10.0pt"}]{#struct_0_x1090_x8456_x1562236033}
+af3
 
-[[4]{lang="EN-US" style="font-size:
-  10.0pt"}]{#struct_0_x1090_x8456_1735589940}
+4
 
-[[af4]{lang="EN-US" style="font-size:
-  10.0pt"}]{#struct_0_x1090_x8456_x770620240}
+af4
 
-[[5]{lang="EN-US" style="font-size:
-  10.0pt"}]{#struct_0_x1090_x8456_x1113128252}
+5
 
-[[ef]{lang="EN-US" style="font-size:
-  10.0pt"}]{#struct_0_x1090_x8456_1735655476}
+ef
 
-[[6]{lang="EN-US" style="font-size:
-  10.0pt"}]{#struct_0_x1090_x8456_1149619660}
+6
 
-[[cs6]{lang="EN-US" style="font-size:
-  10.0pt"}]{#struct_0_x1090_x8456_x732996351}
+cs6
 
-[[7]{lang="EN-US" style="font-size:
-  10.0pt"}]{#struct_0_x1090_x8456_1735458868}
+7
 
-[[cs7]{lang="EN-US" style="font-size:10.0pt"}]{#struct_0_x1090_x8456_x28788372}
+cs7
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_1431775810}
+\# 在名称为user的User Profile中，指定会话进入队列7。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1090_x8456_x1311846988}[在名称为]{style="font-family:宋体"}[user]{lang="EN-US"}[的]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[中，指定会话进入队列]{style="font-family:宋体"}[7]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1090_x8456_247609926}
+Sysname user-profile user
 
-[\[Sysname\] user-profile user]{lang="EN-US"}
-
-[\[Sysname-user-profile-user\] qos queue 7]{lang="EN-US"}
-
-::: {#-1196132117 .myid}
-[]{#_Toc404792856}[]{#struct_0_x1090_x8456_2003308313}
+Sysname-user-profile-user qos queue 7
 
 **User Profile \-- User Profile配置命令 \-- qos session-group identify**
 
 ------------------------------------------------------------------------
 
-[**[qos session-group identify]{lang="EN-US"}**]{#struct_0_x1090_x8456_x1858618467}[命令用来在接口下配置会话组识别方式。]{style="font-family:
-宋体"}
+**[qos session-group identify**]命令用来在接口下配置会话组识别方式。
 
-[**[undo qos session-group identify]{lang="EN-US"}**]{#struct_0_x1090_x8456_1762542420}[命令用来取消会话组识别方式的配置。]{style="font-family:宋体"}
+**[undo qos session-group identify**]命令用来取消会话组识别方式的配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_x1373160352}
+【命令】
 
-[**[qos session-group identify ]{lang="EN-US"}**[{ **customer-vlan** \| **service-vlan** \| **customer-service-vlan \| subscriber-id** }]{lang="EN-US"}]{#struct_0_x1090_x8456_1658401013}
+**[qos session-group identify **[{ **customer-vlan** \| **service-vlan** \| **customer-service-vlan \| subscriber-id** }]]
 
-[**[undo qos session-group identify ]{lang="EN-US"}**]{#struct_0_x1090_x8456_1217729780}
+**[undo qos session-group identify **]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_644101369}
+【缺省情况】
 
-[[接口下没有配置会话组识别方式。]{style="font-family:宋体"}]{#struct_0_x1090_x8456_571191743}
+接口下没有配置会话组识别方式。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_x1431541835}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x1090_x8456_x1561242495}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_1257034171}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1090_x8456_1271550634}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1090_x8456_159528035}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_x2134681357}
+【参数】
 
-[**[customer-vlan]{lang="EN-US"}**]{#struct_0_x1090_x8456_x1643208704}[：按内层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[识别会话组，内层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[为用户的私网]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[customer-vlan**]：按内层VLAN识别会话组，内层VLAN为用户的私网VLAN。
 
-[**[service-vlan]{lang="EN-US"}**]{#struct_0_x1090_x8456_1333304519}[：按外层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[识别会话组，外层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[为运营商分配给用户的公网]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[service-vlan**]：按外层VLAN识别会话组，外层VLAN为运营商分配给用户的公网VLAN。
 
-[**[customer-service-vlan]{lang="EN-US"}**]{#struct_0_x1090_x8456_1570390739}[：按内层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[和外层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[识别会话组。]{style="font-family:宋体"}
+**[customer-service-vlan**]：按内层VLAN和外层VLAN识别会话组。
 
-[**[subscriber-id]{lang="EN-US"}**]{#struct_0_x1090_x8456_585774374}[：按]{style="font-family:宋体"}[subscriber id]{lang="EN-US"}[识别会话组。]{style="font-family:宋体"}
+**[subscriber-id**]：按subscriber id识别会话组。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_x811223329}
+【使用指导】
 
-[[若要配置]{style="font-family:宋体"}[Session Group Profile]{lang="EN-US"}]{#struct_0_x1090_x8456_1217664244}[，则必须首先指定会话组的识别方式。]{style="font-family:宋体"}
+若要配置Session Group Profile，则必须首先指定会话组的识别方式。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_x153168053}
+【举例】
 
-[[\#]{lang="EN-US"}]{#struct_0_x1090_x8456_1387960027}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置基于外层]{style="font-family:宋体"}[vlan]{lang="EN-US"}[的会话组识别方式。]{style="font-family:宋体"}
+\#在接口GigabitEthernet1/0/1上配置基于外层vlan的会话组识别方式。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1090_x8456_x1046841783}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] qos session-group identify service-vlan]{lang="EN-US"}
-:::
-
-::: {#1744588217 .myid}
-[]{#_Toc404792857}[]{#struct_0_x1090_x8456_2126197597}[]{#_Toc361324560}[]{#_Toc206560160}
+Sysname-GigabitEthernet1/0/1 qos session-group identify service-vlan
 
 **User Profile \-- User Profile配置命令 \-- user-profile**
 
 ------------------------------------------------------------------------
 
-[**[user-profile]{lang="EN-US"}**]{#struct_0_x1090_x8456_116896362}[命令用来创建]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[或]{style="font-family:宋体"}[Session Group Profile]{lang="EN-US"}[并进入相应的视图]{style="font-family:宋体"}
+**[user-profile**]命令用来创建User Profile或Session Group Profile并进入相应的视图
 
-[**[undo]{lang="EN-US"}**[ **user-profile**]{lang="EN-US"}]{#struct_0_x1090_x8456_x1758547852}[命令用来删除指定的]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo** **user-profile**]命令用来删除指定的User Profile。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_737807289}
+【命令】
 
-[**[user-profile]{lang="EN-US"}**[ *profile-name* \[ **type session-group** \]]{lang="EN-US"}]{#struct_0_x1090_x8456_x643365698}
+**[user-profile** *profile-name* [ **type session-group** ]]
 
-[**[undo user-profile]{lang="EN-US"}**[ *profile-name*]{lang="EN-US"}]{#struct_0_x1090_x8456_311538482}
+**[undo user-profile** *profile-name*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_x1650864468}
+【缺省情况】
 
-[[不存在任何]{style="font-family:宋体"}[User Profile]{lang="EN-US"}]{#struct_0_x1090_x8456_x300102334}[。]{style="font-family:宋体"}
+不存在任何User Profile。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_x104200280}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1090_x8456_x602017608}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_1218122996}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1090_x8456_431889353}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1090_x8456_x532901656}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_1432055383}
+【参数】
 
-[*[profile-name]{lang="EN-US"}*]{#struct_0_x1090_x8456_x1868182004}[：表示]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，只能包含英文字母]{style="font-family:宋体"}[\[a-z,A-Z\]]{lang="EN-US"}[、数字、下划线，且必须以英文字母开始，区分大小写。]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[的名称必须全局唯一。]{style="font-family:宋体"}
+*[profile-name*]：表示User Profile的名称，为1～31个字符的字符串，只能包含英文字母a-z,A-Z、数字、下划线，且必须以英文字母开始，区分大小写。User Profile的名称必须全局唯一。
 
-[**[type session-group]{lang="EN-US"}**]{#struct_0_x1090_x8456_1735852085}[：指定创建的类型为]{style="font-family:宋体"}[Session Group Profile]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[type session-group**]：指定创建的类型为Session Group Profile。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_x12353514}
+【使用指导】
 
-[[如果指定名称的]{style="font-family:宋体"}[User Profile]{lang="EN-US"}]{#struct_0_x1090_x8456_x1922129044}[或]{style="font-family:宋体"}[Session Group Profile]{lang="EN-US"}[已存在，则直接进入该]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[或]{style="font-family:宋体"}[Session Group Profile]{lang="EN-US"}[的视图。]{style="font-family:宋体"}
+如果指定名称的User Profile或Session Group Profile已存在，则直接进入该User Profile或Session Group Profile的视图。
 
-[[User Profile]{lang="EN-US"}]{#struct_0_x1090_x8456_x1987642032}[的名称必须全局唯一。]{style="font-family:宋体"}
+User Profile的名称必须全局唯一。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1090_x8456_1499480786}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1090_x8456_x1827252175}[创建名称为]{style="font-family:宋体"}[a123]{lang="EN-US"}[的]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[，并进入其视图。]{style="font-family:宋体"}
+\# 创建名称为a123的User Profile，并进入其视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1090_x8456_x1954033107}
+\<Sysname\> system-view
 
-[\[Sysname\] user-profile a123]{lang="EN-US"}
+Sysname user-profile a123
 
-[\[Sysname-user-profile-a123\]]{lang="EN-US"}[]{#_Toc166647677}
+Sysname-user-profile-a123
 
-[[\# ]{lang="PT-BR"}]{#struct_0_x1090_x8456_x1168887730}[创建名称为]{style="font-family:宋体"}[a123]{lang="PT-BR"}[的]{style="font-family:宋体"}[Session Group Profile]{lang="PT-BR"}[，并进入其视图。]{style="font-family:宋体"}
+\# 创建名称为a123的Session Group Profile，并进入其视图。
 
-[[\<Sysname\> system-view]{lang="PT-BR"}]{#struct_0_x1090_x8456_1218057460}
+\<Sysname\> system-view
 
-[\[Sysname\] user-profile a123 type session-group]{lang="PT-BR"}
+Sysname user-profile a123 type session-group
 
-[\[Sysname-session-group-profile-a123\]]{lang="PT-BR"}
-:::
+Sysname-session-group-profile-a123

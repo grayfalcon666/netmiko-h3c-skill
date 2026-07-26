@@ -1,2175 +1,1886 @@
-::::: {#-1111221821 .myid}
-[]{#_Toc404783296}[]{#struct_0_10889_x4909_x441677171}[]{#_Toc365648364}
 
 **Context \-- Context命令 \-- allocate context**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](Context命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_10889_x4909_587582090}
-:::
+![说明](Context命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_10889_x4909_x2142625125}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[allocate context]{lang="EN-US"}**]{#struct_0_10889_x4909_272447684}[命令用来批量指定]{style="font-family:宋体"}[Context]{lang="EN-US"}[所属的]{style="font-family:宋体"}[MDC]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[allocate context**]命令用来批量指定Context所属的MDC。
 
-[**[undo allocate context]{lang="EN-US"}**]{#struct_0_10889_x4909_654327472}[命令用来将]{style="font-family:宋体"}[Context]{lang="EN-US"}[的所属]{style="font-family:宋体"}[MDC]{lang="EN-US"}[恢复为缺省]{style="font-family:宋体"}[MDC]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo allocate context**]命令用来将Context的所属MDC恢复为缺省MDC。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x532851804}
+【命令】
 
-[**[allocate]{lang="EN-US"}**[ **context** *start-context-id* **to** *end-context-id*]{lang="EN-US"}]{#struct_0_10889_x4909_287993467}
+**[allocate** **context** *start-context-id* **to** *end-context-id*]
 
-[**[undo allocate]{lang="EN-US"}**[ **context** *start-context-id* **to** *end-context-id*]{lang="EN-US"}]{#struct_0_10889_x4909_241695138}
+**[undo allocate** **context** *start-context-id* **to** *end-context-id*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1276150456}
+【缺省情况】
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_1325741293}[属于缺省]{style="font-family:宋体"}[MDC]{lang="EN-US"}[。]{style="font-family:宋体"}
+Context属于缺省MDC。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1035622381}
+【视图】
 
-[[MDC]{lang="EN-US"}]{#struct_0_10889_x4909_2079594978}[视图]{style="font-family:宋体"}
+MDC视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1633318268}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_1209553977}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x2051952985}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_170180380}
+【参数】
 
-[*[start-context-id]{lang="EN-US"}*]{#struct_0_10889_x4909_x365842874}[：]{style="font-family:宋体"}[起始]{style="font-family:宋体"}[Context]{lang="EN-US"}[的]{style="font-family:宋体"}[ID]{lang="EN-US"}[。该]{style="font-family:宋体"}[Context]{lang="EN-US"}[必须是已创建、未启动的]{style="font-family:宋体"}[Context]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[start-context-id*]：起始Context的ID。该Context必须是已创建、未启动的Context。
 
-[*[end-context-id]{lang="EN-US"}*]{#struct_0_10889_x4909_x783545605}[：终止]{style="font-family:宋体"}[Context]{lang="EN-US"}[的]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}[该]{style="font-family:宋体"}[Context]{lang="EN-US"}[必须是已创建、未启动的]{style="font-family:宋体"}[Context]{lang="EN-US"}[，且]{style="font-family:宋体"}*[end-context-id]{lang="EN-US"}*[必须大于等于]{style="font-family:宋体"}*[start-context-id]{lang="EN-US"}*[。]{style="font-family:宋体"}
+*[end-context-id*]：终止Context的ID。该Context必须是已创建、未启动的Context，且*end-context-id*必须大于等于*start-context-id*。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x738882607}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MDC]{lang="EN-US"}]{#struct_0_10889_x4909_1272630348}[视图下的]{lang="EN-US" style="font-family:
-宋体"}**[allocate context]{lang="EN-US"}**[命令与]{lang="EN-US" style="font-family:宋体"}[Context]{lang="EN-US"}[视图下的]{lang="EN-US" style="font-family:宋体"}**[join mdc]{lang="EN-US"}**[命令功能]{lang="EN-US" style="font-family:宋体"}[相同，]{style="font-family:宋体"}[都是为]{lang="EN-US" style="font-family:宋体"}[Context]{lang="EN-US"}[设置归属]{lang="EN-US" style="font-family:宋体"}[MDC]{lang="EN-US"}[。]{style="font-family:宋体"}**[allocate context]{lang="EN-US"}**[可以]{lang="EN-US" style="font-family:宋体"}[为]{style="font-family:宋体"}[Context]{lang="EN-US"}[批量设置归属]{lang="EN-US" style="font-family:宋体"}[MDC]{lang="EN-US"}[，]{style="font-family:宋体"}**[join mdc]{lang="EN-US"}**[是]{lang="EN-US" style="font-family:宋体"}[单个]{style="font-family:宋体"}[设置归属]{lang="EN-US" style="font-family:宋体"}[MDC]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·MDC视图下的**allocate context**命令与Context视图下的**join mdc**命令功能相同，都是为Context设置归属MDC。**allocate context**可以为Context批量设置归属MDC，**join mdc**是单个设置归属MDC。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[执行]{lang="EN-US" style="font-family:宋体"}]{#struct_0_10889_x4909_x1535626047}**[a]{lang="EN-US"}[llcoate context]{lang="EN-US"}**[命令设置归属]{lang="EN-US" style="font-family:宋体"}[MDC]{lang="EN-US"}[时，]{lang="EN-US" style="font-family:宋体"}[系统]{style="font-family:宋体"}[会逐个设置。]{lang="EN-US" style="font-family:宋体"}[如果某个]{style="font-family:宋体"}[Context]{lang="EN-US"}[配置失败，则命令会终止执行，该]{style="font-family:宋体"}[Context]{lang="EN-US"}[之前的]{style="font-family:宋体"}[Context]{lang="EN-US"}[会加入当前]{style="font-family:宋体"}[MDC]{lang="EN-US"}[，该]{style="font-family:宋体"}[Context]{lang="EN-US"}[及其后的]{style="font-family:宋体"}[Context]{lang="EN-US"}[不会加入当前]{style="font-family:宋体"}[MDC]{lang="EN-US"}[。]{style="font-family:宋体"}
+·执行**allcoate context**命令设置归属MDC时，系统会逐个设置。如果某个Context配置失败，则命令会终止执行，该Context之前的Context会加入当前MDC，该Context及其后的Context不会加入当前MDC。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1633318267}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_x1163099018}[指定]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[2]{lang="EN-US"}[到]{style="font-family:
-宋体"}[80]{lang="EN-US"}[的]{style="font-family:宋体"}[Context]{lang="EN-US"}[属于名称]{style="font-family:宋体"}[为]{style="font-family:宋体"}[cnt2]{lang="EN-US"}[的]{style="font-family:宋体"}[MDC]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 指定ID为2到80的Context属于名称为cnt2的MDC。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_1317197101}
+\<Sysname\> system-view
 
-[\[Sysname\] mdc cnt2]{lang="EN-US"}
+Sysname mdc cnt2
 
-[\[Sysname-mdc-2-cnt2\] allocate context 2 to 80]{lang="EN-US"}
+Sysname-mdc-2-cnt2 allocate context 2 to 80
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1933018719}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[j]{lang="EN-US"}[oin mdc]{lang="EN-US"}**]{#struct_0_10889_x4909_x2008556210}
-:::::
-
-::: {#1546310888 .myid}
-[]{#_Toc404783297}[]{#struct_0_10889_x4909_x1672155712}[]{#_Toc359421730}
+·**join mdc**
 
 **Context \-- Context命令 \-- allocate interface**
 
 ------------------------------------------------------------------------
 
-[**[allocate interface]{lang="EN-US"}**]{#struct_0_10889_x4909_x739646684}[命令用来为]{style="font-family:宋体"}[Context]{lang="EN-US"}[分配接口。]{style="font-family:宋体"}
+**[allocate interface**]命令用来为Context分配接口。
 
-[**[undo allocate interface]{lang="EN-US"}**]{#struct_0_10889_x4909_470088102}[命令用来将接口从]{style="font-family:宋体"}[Context]{lang="EN-US"}[中删除。]{style="font-family:宋体"}
+**[undo allocate interface**]命令用来将接口从Context中删除。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1559593499}
+【命令】
 
-[**[allocate interface]{lang="EN-US"}**[ {]{lang="EN-US"}[ *interface-type interface-number* }&\<1-24\> \[ **share** \]]{lang="EN-US"}]{#struct_0_10889_x4909_1500497571}
+**[allocate interface** [ *interface-type interface-number* }&\<1-24\> [ **share** ]]
 
-[**[undo allocate interface]{lang="EN-US"}**[ { *interface-type interface-number* }&\<1-24\>]{lang="EN-US"}]{#struct_0_10889_x4909_108364085}
+**[undo allocate interface** { *interface-type interface-number* }&\<1-24\>]
 
-[**[allocate interface ]{lang="EN-US"}***[interface-type]{lang="EN-US"}*[ ]{lang="EN-US"}]{#struct_0_10889_x4909_1519417131}*[interface-number1]{lang="EN-US"}*[ **to** ]{lang="EN-US"}*[interface-type]{lang="EN-US"}[ interface-number2 ]{lang="EN-US"}*[\[ **share** \]]{lang="EN-US"}
+**[allocate interface ***interface-type*]*interface-number1* **to** *interface-type interface-number2 * **share** ]
 
-[**[undo allocate interface ]{lang="EN-US"}***[interface-type]{lang="EN-US"}*[ ]{lang="EN-US"}]{#struct_0_10889_x4909_x1462470338}*[interface-number1]{lang="EN-US"}*[ **to** ]{lang="EN-US"}*[interface-type]{lang="EN-US"}[ interface-number2]{lang="EN-US"}*
+**[undo allocate interface ***interface-type*]*interface-number1* **to** *interface-type interface-number2*
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1242944422}
+【缺省情况】
 
-[[设备上的所有接口都属于缺省]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x1633318270}[，不属于任何非缺省]{style="font-family:宋体"}[Context]{lang="EN-US"}[。（集中式防火墙]{style="font-family:宋体"}[/]{lang="EN-US"}[分布式防火墙]{style="font-family:宋体"}[/]{lang="EN-US"}[防火墙]{style="font-family:宋体"}[IRF]{lang="EN-US"}[）]{style="font-family:宋体"}
+设备上的所有接口都属于缺省Context，不属于任何非缺省Context。（集中式防火墙/分布式防火墙/防火墙IRF）
 
-[[接口不属于任何]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_1565718801}[。（防火墙插卡）]{style="font-family:宋体"}
+接口不属于任何Context。（防火墙插卡）
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1834856082}
+【视图】
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_342239973}[视图]{style="font-family:宋体"}
+Context视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x117291921}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x1425842850}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x1307862020}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x494033391}
+【参数】
 
-[[{]{lang="EN-US"}[ *interface-type interface-number* }&\<1-24\>]{lang="EN-US"}]{#struct_0_10889_x4909_1621149543}[：表示给]{style="font-family:宋体"}[Context]{lang="EN-US"}[分配非连续的接口。]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[表示接口类型和编号，]{style="font-family:宋体"}[&\<1-24\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[24]{lang="EN-US"}[次]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+ *interface-type interface-number* }&\<1-24\>：表示给Context分配非连续的接口。*interface-type interface-number*表示接口类型和编号，&\<1-24\>表示前面的参数最多可以输入24次。
 
-[*[interface-type]{lang="EN-US"}*[ ]{lang="EN-US"}]{#struct_0_10889_x4909_x481473225}*[interface-number1]{lang="EN-US"}*[ **to** ]{lang="EN-US"}*[interface-type]{lang="EN-US"}[ interface-number2]{lang="EN-US"}*[：表示给]{style="font-family:宋体"}[Context]{lang="EN-US"}[分配一组连续的接口。其中，]{style="font-family:宋体"}*[interface-type]{lang="EN-US"}*[表示接口类型，]{style="font-family:宋体"}*[interface-number1]{lang="EN-US"}*[表示起始接口的编号，]{style="font-family:宋体"}*[interface-number2]{lang="EN-US"}*[表示结束接口的编号。起始接口和结束接口的类型必须相同，并且处于同一接口板上，否则将配置失败。]{style="font-family:宋体"}
+*[interface-type*]*interface-number1* **to** *interface-type interface-number2*：表示给Context分配一组连续的接口。其中，*interface-type*表示接口类型，*interface-number1*表示起始接口的编号，*interface-number2*表示结束接口的编号。起始接口和结束接口的类型必须相同，并且处于同一接口板上，否则将配置失败。
 
-[**[share]{lang="EN-US"}**]{#struct_0_10889_x4909_163369041}[：表示接口是否共享。不指定该参数表示独占。防火墙插卡上不支持该参数。]{style="font-family:宋体"}
+**[share**]：表示接口是否共享。不指定该参数表示独占。防火墙插卡上不支持该参数。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1846154457}
+【使用指导】
 
-[[物理接口和逻辑接口均可以独占或共享方式分配给某个]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x1374064304}[。]{style="font-family:宋体"}
+物理接口和逻辑接口均可以独占或共享方式分配给某个Context。
 
-[[(1)[      ]{style="font:7.0pt "}]{lang="EN-US"}[包装防火墙]{style="font-family:宋体"}]{#struct_0_10889_x4909_1037322270}[/]{lang="EN-US"}[集中式防火墙]{style="font-family:宋体"}[IRF]{lang="EN-US"}
+(1)包装防火墙/集中式防火墙IRF
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[独占方式分配（不带]{style="font-family:宋体"}]{#struct_0_10889_x4909_x1455292813}**[share]{lang="EN-US"}**[参数）。使用该方式分配的接口仅归该]{style="font-family:宋体"}[Context]{lang="EN-US"}[所有、使用。用户登录该]{style="font-family:宋体"}[Context]{lang="EN-US"}[后，能查看到该接口，并执行接口支持的所有命令。]{style="font-family:宋体"}
+·独占方式分配（不带**share**参数）。使用该方式分配的接口仅归该Context所有、使用。用户登录该Context后，能查看到该接口，并执行接口支持的所有命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[共享方式分配（带]{style="font-family:宋体"}]{#struct_0_10889_x4909_x1633318269}**[share]{lang="EN-US"}**[参数）。使用该方式分配的接口归多个]{style="font-family:宋体"}[Context]{lang="EN-US"}[所有、使用。在缺省]{style="font-family:宋体"}[Context]{lang="EN-US"}[内仍然存在该接口，可执行接口支持的所有命令；在分配给的非缺省]{style="font-family:宋体"}[Context]{lang="EN-US"}[内，会新建同名接口，用户登录这些]{style="font-family:宋体"}[Context]{lang="EN-US"}[后，能查看到该接口，但只能执行]{style="font-family:宋体"}**[shutdown]{lang="EN-US"}**[、]{style="font-family:宋体"}**[description]{lang="EN-US"}**[、以及网络]{style="font-family:宋体"}[/]{lang="EN-US"}[安全相关的命令。]{style="font-family:宋体"}
+·共享方式分配（带**share**参数）。使用该方式分配的接口归多个Context所有、使用。在缺省Context内仍然存在该接口，可执行接口支持的所有命令；在分配给的非缺省Context内，会新建同名接口，用户登录这些Context后，能查看到该接口，但只能执行**shutdown**、**description**、以及网络/安全相关的命令。
 
-[[(2)[      ]{style="font:7.0pt "}]{lang="EN-US"}[插卡防火墙]{lang="EN-US" style="font-family:宋体"}]{#struct_0_10889_x4909_741003898}
+(2)插卡防火墙
 
-[[同一接口只能分配给一个]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_1633259647}[使用。分配后的接口仍然在]{style="font-family:宋体"}[Context]{lang="EN-US"}[所属的]{style="font-family:宋体"}[MDC]{lang="EN-US"}[内，但接口下的安全业务会被清除。请登录]{style="font-family:宋体"}[Context]{lang="EN-US"}[来配置该接口下的安全业务，接口下的其它命令请在]{style="font-family:宋体"}[Context]{lang="EN-US"}[所属的]{style="font-family:宋体"}[MDC]{lang="EN-US"}[下配置。]{style="font-family:宋体"}
+同一接口只能分配给一个Context使用。分配后的接口仍然在Context所属的MDC内，但接口下的安全业务会被清除。请登录Context来配置该接口下的安全业务，接口下的其它命令请在Context所属的MDC下配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x883735139}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_1979485207}[将接口]{style="font-family:宋体"}[Ethernet1/1]{lang="EN-US"}[和]{style="font-family:宋体"}[Ethernet1/3]{lang="EN-US"}[以共享的方式分配给]{style="font-family:宋体"}[context sub1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 将接口Ethernet1/1和Ethernet1/3以共享的方式分配给context sub1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_x1915776428}
+\<Sysname\> system-view
 
-[\[Sysname\] context sub1]{lang="EN-US"}
+Sysname context sub1
 
-[\[Sysname-context-2-sub1\] allocate interface ethernet 1/1 ethernet 1/3 share]{lang="EN-US"}
+Sysname-context-2-sub1 allocate interface ethernet 1/1 ethernet 1/3 share
 
-[[The interfaces will be shared by contexts. Continue? \[Y/N\]:y]{lang="EN-US" style="font-size:8.5pt"}]{.TerminalDisplayChar}
-:::
-
-::::: {#-666378434 .myid}
-[]{#_Toc404783298}[]{#struct_0_10889_x4909_x623025634}[]{#_Toc359421738}
+The interfaces will be shared by contexts. Continue? Y/N:y{.TerminalDisplayChar}
 
 **Context \-- Context命令 \-- allocate vlan**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](Context命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_10889_x4909_585474725}
-:::
+![说明](Context命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_10889_x4909_x1085283212}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[allocate vlan]{lang="EN-US"}**]{#struct_0_10889_x4909_x1633318264}[命令用来为]{style="font-family:宋体"}[Context]{lang="EN-US"}[分配]{style="font-family:宋体"}[VLAN]{lang="EN-US"}**[。]{style="font-family:宋体"}**
+**[allocate vlan**]命令用来为Context分配VLAN**。**
 
-[**[undo allocate vlan]{lang="EN-US"}**]{#struct_0_10889_x4909_x759814491}[命令用来取消为]{style="font-family:宋体"}[Context]{lang="EN-US"}[分配的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo allocate vlan**]命令用来取消为Context分配的VLAN。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1355407191}
+【命令】
 
-[**[allocate]{lang="EN-US"}**[ **vlan** *vlan-id*&\<1-24\>]{lang="EN-US"}]{#struct_0_10889_x4909_x1108167226}
+**[allocate** **vlan** *vlan-id*&\<1-24\>]
 
-[**[undo allocate vlan]{lang="EN-US"}**[ *vlan-id*&\<1-24\>]{lang="EN-US"}]{#struct_0_10889_x4909_x725585076}
+**[undo allocate vlan** *vlan-id*&\<1-24\>]
 
-[**[allocate vlan]{lang="EN-US"}***[ vlan-id1]{lang="EN-US"}*[ **to** *vlan-id2*]{lang="EN-US"}]{#struct_0_10889_x4909_274244460}
+**[allocate vlan*** vlan-id1* **to** *vlan-id2*]
 
-[**[undo allocate vlan ]{lang="EN-US"}***[vlan-id1]{lang="EN-US"}*[ **to** *vlan-id2*]{lang="EN-US"}]{#struct_0_10889_x4909_94922092}
+**[undo allocate vlan ***vlan-id1* **to** *vlan-id2*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10889_x4909_466628711}
+【缺省情况】
 
-[[没有为]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x1071747258}[分配]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+没有为Context分配VLAN。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1098871363}
+【视图】
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_863517594}[视图]{style="font-family:宋体"}
+Context视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1046996927}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_1289717515}
+network-admin
 
-[[context-admin]{lang="EN-US"}]{#struct_0_10889_x4909_543151331}
+context-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1746303256}
+【参数】
 
-[*[vlan-id]{lang="EN-US"}*[&\<1-24\>]{lang="EN-US"}]{#struct_0_10889_x4909_x1633318263}**[：]{style="font-family:宋体"}**[表示给]{style="font-family:宋体"}[Context]{lang="EN-US"}[分配非连续的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，]{style="font-family:宋体"}[&\<1-24\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[24]{lang="EN-US"}[次。]{style="font-family:宋体"}
+*[vlan-id*&\<1-24\>]**：**表示给Context分配非连续的VLAN。*vlan-id*表示VLAN的编号，&\<1-24\>表示前面的参数最多可以输入24次。
 
-[*[vlan-id1]{lang="EN-US"}***[ to ]{lang="EN-US"}***[vlan-id2]{lang="EN-US"}*]{#struct_0_10889_x4909_1162499810}**[：]{style="font-family:宋体"}**[表示给]{style="font-family:宋体"}[Context]{lang="EN-US"}[分配一组连续的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。其中，]{style="font-family:宋体"}*[vlan-id1]{lang="EN-US"}*[表示起始]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，]{style="font-family:宋体"}*[vlan-id2]{lang="EN-US"}*[表示结束]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号。]{style="font-family:宋体"}
+*[vlan-id1*** to ***vlan-id2*]**：**表示给Context分配一组连续的VLAN。其中，*vlan-id1*表示起始VLAN的编号，*vlan-id2*表示结束VLAN的编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x514776310}
+【使用指导】
 
-[[(1)[      ]{style="font:7.0pt "}]{lang="EN-US"}[包装防火墙]{lang="EN-US" style="font-family:宋体"}]{#struct_0_10889_x4909_x17355054}
+(1)包装防火墙
 
-[[创建]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x370426892}[时，通过]{style="font-family:宋体"}**[vlan-unshared]{lang="EN-US"}**[参数可选择是否和其]{style="font-family:宋体"}[它]{style="font-family:宋体"}[Context]{lang="EN-US"}[共享]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[：]{style="font-family:宋体"}
+创建Context时，通过**vlan-unshared**参数可选择是否和其它Context共享VLAN：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果选择和其它]{lang="EN-US" style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x834403740}[共享]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[，则设备上所有]{lang="EN-US" style="font-family:宋体"}[Context]{lang="EN-US"}[共享]{lang="EN-US" style="font-family:宋体"}[VLAN 1]{lang="EN-US" style="color:black"}[～]{lang="EN-US" style="font-family:
-宋体;color:black"}[VLAN 4094]{lang="EN-US" style="color:black"}[。]{style="font-family:宋体;color:black"}[这些]{lang="EN-US" style="font-family:
-宋体;color:black"}[VLAN]{lang="EN-US" style="color:black"}[通过]{lang="EN-US" style="font-family:宋体;color:black"}**[allocate]{lang="EN-US"}**[ **vlan**]{lang="EN-US"}[命令分配。如果]{lang="EN-US" style="font-family:宋体"}[某]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[已经分配给某]{lang="EN-US" style="font-family:宋体"}[Context]{lang="EN-US"}[，则不能再分配给其它]{lang="EN-US" style="font-family:宋体"}[Context]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·如果选择和其它Context共享VLAN，则设备上所有Context共享VLAN 1～VLAN 4094。这些VLAN通过**allocate** **vlan**命令分配。如果某VLAN已经分配给某Context，则不能再分配给其它Context。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果选择]{lang="EN-US" style="font-family:宋体"}]{#struct_0_10889_x4909_x1632872654}[不]{style="font-family:宋体"}[和其它]{lang="EN-US" style="font-family:宋体"}[Context]{lang="EN-US"}[共享]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[，]{lang="EN-US" style="font-family:宋体"}[请登录该]{style="font-family:宋体"}[Context]{lang="EN-US"}[，并]{style="font-family:宋体"}[使用]{lang="EN-US" style="font-family:宋体"}**[vlan]{lang="EN-US"}**[命令创建]{lang="EN-US" style="font-family:宋体"}[VLAN 1]{lang="EN-US"}[～]{lang="EN-US" style="font-family:宋体"}[VLAN 4094]{lang="EN-US"}[。]{style="font-family:宋体"}[Context]{lang="EN-US"}[各自使用和]{style="font-family:宋体"}[管理]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[，]{lang="EN-US" style="font-family:宋体"}[互不干扰]{style="font-family:宋体"}[。]{lang="EN-US" style="font-family:宋体"}
+·如果选择不和其它Context共享VLAN，请登录该Context，并使用**vlan**命令创建VLAN 1～VLAN 4094。Context各自使用和管理VLAN，互不干扰。
 
-[[(2)[      ]{style="font:7.0pt "}]{lang="EN-US"}[防火墙插卡]{lang="EN-US" style="font-family:宋体"}]{#struct_0_10889_x4909_801073078}
+(2)防火墙插卡
 
-[[设备上所有]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x1583438995}[共享]{style="font-family:宋体"}[VLAN 1]{lang="EN-US" style="color:black"}[～]{style="font-family:宋体;color:black"}[VLAN 4094]{lang="EN-US" style="color:black"}[。这些]{style="font-family:宋体;color:black"}[VLAN]{lang="EN-US" style="color:black"}[通过]{style="font-family:宋体;color:black"}**[allocate]{lang="EN-US"}**[ **vlan**]{lang="EN-US"}[命令分配。如果某]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[已经分配给某]{style="font-family:宋体"}[Context]{lang="EN-US"}[了，则不能再分配给其它]{style="font-family:宋体"}[Context]{lang="EN-US"}[。]{style="font-family:宋体"}
+设备上所有Context共享VLAN 1～VLAN 4094。这些VLAN通过**allocate** **vlan**命令分配。如果某VLAN已经分配给某Context了，则不能再分配给其它Context。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1513602600}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_534584236}[将]{style="font-family:宋体"}[VLAN100]{lang="EN-US"}[分配给]{style="font-family:宋体"}[context sub1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 将VLAN100分配给context sub1。
 
-[[\<Sysname\> system-view]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10889_x4909_1038305330}
+\<Sysname\> system-view
 
-[[\[Sysname\] context sub1]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10889_x4909_x1220555206}
+Sysname context sub1
 
-[[\[Sysname-context-2-sub1\] allocate vlan 100]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10889_x4909_1636225536}
+Sysname-context-2-sub1 allocate vlan 100
 
-[[The VLAN will be allocated to context sub1. Continue? \[Y/N\]:y]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10889_x4909_x1095905708}
+The VLAN will be allocated to context sub1. Continue? Y/N:y
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1741952414}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display context vlan]{lang="EN-US"}**]{#struct_0_10889_x4909_x1641857266}
-:::::
-
-::::: {#620472932 .myid}
-[]{#_Toc404783299}[]{#struct_0_10889_x4909_x274250929}[]{#_Toc356459224}
+·**display context vlan**
 
 **Context \-- Context命令 \-- blade-controller-team**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](Context命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_10889_x4909_1103561179}
-:::
+![说明](Context命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_10889_x4909_682006493}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[blade-controller-team]{lang="EN-US"}**]{#struct_0_10889_x4909_x1633318266}[命令用来创建安全引擎组并进入该安全引擎组视图。]{style="font-family:宋体"}
+**[blade-controller-team**]命令用来创建安全引擎组并进入该安全引擎组视图。
 
-[**[undo]{lang="EN-US"}**[ **blade-controller-team**]{lang="EN-US"}]{#struct_0_10889_x4909_402984923}[命令用来删除指定的安全引擎组。]{style="font-family:宋体"}
+**[undo** **blade-controller-team**]命令用来删除指定的安全引擎组。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_518338279}
+【命令】
 
-[**[blade-controller-team]{lang="EN-US"}**[ *blade-controller-team-name* \[ **id** *blade-controller-team-id* \]]{lang="EN-US"}]{#struct_0_10889_x4909_x288785068}
+**[blade-controller-team** *blade-controller-team-name* [ **id** *blade-controller-team-id* ]]
 
-[**[undo blade-controller-team]{lang="EN-US"}**[ { *blade-controller-team-name \|* **id** *blade-controller-team-id* }]{lang="EN-US"}]{#struct_0_10889_x4909_x284783598}
+**[undo blade-controller-team**[ { *blade-controller-team-name \|* **id** *blade-controller-team-id* }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1535717253}
+【缺省情况】
 
-[[设备上有一个安全引擎组，名字为]{style="font-family:宋体"}[Default]{lang="EN-US"}]{#struct_0_10889_x4909_x124233767}[，编号为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+设备上有一个安全引擎组，名字为Default，编号为1。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1813732993}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_10889_x4909_1571888007}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x179859674}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x1595545203}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_136392690}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1080226233}
+【参数】
 
-[*[blade-controller-team-name]{lang="EN-US"}*]{#struct_0_10889_x4909_x1633318265}[：安全引擎组的名称，]{style="font-family:宋体"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+*[blade-controller-team-name*]：安全引擎组的名称，为1～31个字符的字符串，区分大小写。
 
-[**[id]{lang="EN-US"}***[ blade-controller-team-id]{lang="EN-US"}*]{#struct_0_10889_x4909_1969068864}[：安全引擎组的编号，取值范围为]{style="font-family:
-宋体"}[2]{lang="EN-US"}[～]{style="font-family:
-宋体"}[256]{lang="EN-US"}[。不指定该参数时，系统会自动分配一个当前空闲的最小编号。]{style="font-family:宋体"}
+**[id*** blade-controller-team-id*]：安全引擎组的编号，取值范围为2～256。不指定该参数时，系统会自动分配一个当前空闲的最小编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x2047234310}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[缺省安全引擎组不能创建、删除，且不能进入缺省安全引擎组的视图。]{style="font-family:宋体"}]{#struct_0_10889_x4909_x1655587458}
+·缺省安全引擎组不能创建、删除，且不能进入缺省安全引擎组的视图。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当删除安全引擎组时，如果该组中有]{lang="EN-US" style="font-family:宋体"}]{#struct_0_10889_x4909_1564320821}[进驻]{style="font-family:宋体"}[的]{lang="EN-US" style="font-family:宋体"}[安全引擎]{style="font-family:宋体"}[，请先用]{lang="EN-US" style="font-family:宋体"}**[undo ]{lang="EN-US"}[location]{lang="EN-US"}[ ]{lang="EN-US"}[blade-controller]{lang="EN-US"}**[命令取消]{lang="EN-US" style="font-family:宋体"}[进驻]{style="font-family:宋体"}[后，再删除该组]{lang="EN-US" style="font-family:宋体"}[。]{lang="EN-US" style="font-family:宋体"}
+·当删除安全引擎组时，如果该组中有进驻的安全引擎，请先用**undo locationblade-controller**命令取消进驻后，再删除该组。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1417892844}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_x1887102229}[创建名为]{style="font-family:宋体"}[abc]{lang="EN-US" style="font-family:\"Arial Unicode MS\",\"sans-serif\""}[的]{style="font-family:宋体"}[安全引擎组]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 创建名为abc的安全引擎组。
 
-[[\<sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_x1537539091}
+\<sysname\> system-view
 
-[\[sysname\] blade-controller-team abc]{lang="EN-US"}
+sysname blade-controller-team abc
 
-[\[sysname-blade-controller-team-3-abc\]]{lang="EN-US"}[]{#_Toc365648361}
-:::::
-
-::::: {#-1465104500 .myid}
-[]{#_Toc404783300}[]{#struct_0_10889_x4909_2016824738}[]{#_Toc382551694}
+sysname-blade-controller-team-3-abc
 
 **Context \-- Context命令 \-- capability object-policy-rule maximum**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](Context命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_10889_x4909_x1221670389}
-:::
+![说明](Context命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{lang="EN-US" style="font-family:KaiTi_GB2312"}]{#struct_0_10889_x4909_450740797}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[capability object-policy-rule maximum**]命令用来设置Context的对象策略规则总数限制。
 
-[**[capability object-policy-rule maximum]{lang="EN-US"}**]{#struct_0_10889_x4909_x669094592}[命令用来设置]{style="font-family:宋体"}[Context]{lang="EN-US"}[的对象策略规则总数限制。]{style="font-family:宋体"}
+**[undo capability object-policy-rule maximum**]命令用来恢复缺省情况。
 
-[**[undo capability object-policy-rule maximum]{lang="EN-US"}**]{#struct_0_10889_x4909_x430312764}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1751594130}
+**[capability object-policy-rule maximum ***max-value*]
 
-[**[capability object-policy-rule maximum ]{lang="EN-US"}***[max-value]{lang="EN-US"}*]{#struct_0_10889_x4909_119481942}
+**[undo capability object-policy-rule maximum**]
 
-[**[undo capability object-policy-rule maximum]{lang="EN-US"}**]{#struct_0_10889_x4909_1312767540}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10889_x4909_685996387}
+本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。
 
-[[本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_10889_x4909_502573667}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_470694476}
+Context视图
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_1124392967}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1446780215}
+network-admin
 
-[[network-admin]{lang="EN-US" style="color:black"}]{#struct_0_10889_x4909_x233815178}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US" style="color:black"}]{#struct_0_10889_x4909_x1715495923}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1488563114}
+*[max-value*]：表示Context内可配置的对象策略规则总数的最大值。
 
-[*[max-value]{lang="EN-US"}*]{#struct_0_10889_x4909_459104012}[：表示]{lang="EN-US" style="font-family:宋体"}[Context]{lang="EN-US"}[内可配置的对象策略规则总数的最大值。]{lang="EN-US" style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1268335531}
+配置本命令后，该Context已进驻的每个安全引擎上都将获得相同的对象策略规则总数限制。
 
-[[配置本命令后，该]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x2092852487}[已进驻的每个安全引擎上都将获得相同的对象策略规则总数限制。]{style="font-family:宋体"}
+当规则总数达到最大值时，不能新增规则。
 
-[[当规则总数达到最大值时，不能新增规则。]{style="font-family:宋体"}]{#struct_0_10889_x4909_246958693}
+如果当前设置的最大值比之前设置的最大值小，则可能存在最大值比当前存在的规则总数小的情况，但配置仍会成功，多出的规则不会删除，后续不能新增规则。
 
-[[如果当前设置的最大值比之前设置的最大值小，则可能存在最大值比当前存在的规则总数小的情况，但配置仍会成功，多出的规则不会删除，后续不能新增规则。]{style="font-family:宋体"}]{#struct_0_10889_x4909_x1128791283}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_98466540}
+\#{.apple-converted-space}配置Context的安全策略规则数最多为1000条。
 
-[[\#]{lang="EN-US" style="font-size:10.5pt;
-font-family:\"Arial\",\"sans-serif\";color:black"}]{#struct_0_10889_x4909_1275159187}[[ ]{lang="EN-US" style="font-size:8.5pt;font-family:
-\"Courier New\";color:black"}]{.apple-converted-space}[配置]{style="font-size:10.5pt;
-color:black"}[Context]{lang="EN-US" style="font-size:10.5pt;font-family:
-\"Arial\",\"sans-serif\";color:black"}[的]{style="font-size:10.5pt;
-color:black"}[安全策略规则数最多为]{style="font-size:10.5pt;color:black"}[1000]{lang="EN-US" style="font-size:10.5pt;font-family:\"Arial\",\"sans-serif\";color:black"}[条]{style="font-size:10.5pt;color:black"}[。]{style="font-size:10.5pt;
-color:black"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US" style="font-size:8.5pt;
-font-family:\"Courier New\";color:black"}]{#struct_0_10889_x4909_x1115343144}
+Sysname context cnt2
 
-[[\[Sysname\] context cnt2]{lang="EN-US" style="font-size:8.5pt;
-font-family:\"Courier New\";color:black"}]{#struct_0_10889_x4909_1427806568}
+Sysname-context-2-cnt2 capability object-policy-rule maximum 1000
 
-[[\[Sysname-context-2-cnt2\] capability object-policy-rule maximum 1000]{lang="EN-US" style="color:black"}]{#struct_0_10889_x4909_503466408}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1329974679}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[display]{lang="EN-US"}**[ **object-policy ip**]{lang="EN-US"}]{#struct_0_10889_x4909_633009487}[（安全命令参考]{lang="EN-US" style="font-family:宋体"}[/]{lang="EN-US"}[对象策略）]{lang="EN-US" style="font-family:宋体"}
-:::::
-
-::::: {#1277096323 .myid}
-[]{#_Toc404783301}[]{#struct_0_10889_x4909_541074729}
+·**display** **object-policy ip**（安全命令参考/对象策略）
 
 **Context \-- Context命令 \-- capability session maximum**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](Context命令.files/image001.png){#图片 4 width="62" height="25"}]{lang="EN-US"}]{#struct_0_10889_x4909_x1469879972}
-:::
+![说明](Context命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{lang="EN-US" style="font-family:
-KaiTi_GB2312"}]{#struct_0_10889_x4909_x1316611817}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[capability session maximum**]命令用来设置Context的会话并发数限制。
 
-[**[capability session maximum]{lang="EN-US"}**]{#struct_0_10889_x4909_274048182}[命令用来设置]{style="font-family:
-宋体"}[Context]{lang="EN-US"}[的会话并发数限制。]{style="font-family:宋体"}
+**[undo capability session maximum**]命令用来恢复缺省情况。
 
-[**[undo capability session maximum]{lang="EN-US"}**]{#struct_0_10889_x4909_x534401935}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1403294214}
+**[capability session maximum*** max-number*]
 
-[**[capability session maximum]{lang="EN-US"}***[ max-number]{lang="EN-US"}*]{#struct_0_10889_x4909_1185442111}
+**[undo capability session maximum**]
 
-[**[undo capability session maximum]{lang="EN-US"}**]{#struct_0_10889_x4909_1613540211}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1008338048}
+未对该Context允许的会话并发数进行限制，由该Context上各安全引擎当前的内存能力决定。
 
-[[未对该]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_1205324001}[允许的会话并发数进行限制，由该]{style="font-family:宋体"}[Context]{lang="EN-US"}[上各安全引擎当前的内存能力决定。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1333725575}
+Context视图
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x613086075}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1774011667}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_1487598107}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_596890103}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1268271525}
+*[max-number*]：允许同时存在的最大会话数目，取值范围为1～4294967295。
 
-[*[max-number]{lang="EN-US"}*]{#struct_0_10889_x4909_168622625}[：允许同时存在的最大会话数目，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x364748562}
+配置本命令后，该Context己进驻的每个安全引擎都将获得相同的会话并发数限制。当安全引擎上的会话总数达到最大数目后，该安全引擎上将不允许新建会话；如果本次设置的数值小于当前安全引擎上的会话总数，则配置可以成功，但不再允许新建会话，且已经创建的会话不会被删除，直到已建立的会话通过老化机制使得会话总数低于配置的最大值后，系统才允许新建会话。
 
-[[配置本命令后，该]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x308774090}[己进驻的每个安全引擎都将获得相同的会话并发数限制。当安全引擎上的会话总数达到最大数目后，该安全引擎上将不允许新建会话；如果本次设置的数值小于当前安全引擎上的会话总数，则配置可以成功，但不再允许新建会话，且已经创建的会话不会被删除，直到已建立的会话通过老化机制使得会话总数低于配置的最大值后，系统才允许新建会话。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1467956230}
+\# 配置Context cnt2上的会话并发数为1000000。
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_x213827698}[配置]{style="font-family:宋体"}[Context cnt2]{lang="EN-US"}[上的会话并发数为]{style="font-family:宋体"}[1000000]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_487606211}
+Sysname context cnt2
 
-[\[Sysname\] context cnt2]{lang="EN-US"}
+Sysname-context-2-cnt2 capability session maximum 1000000
 
-[\[Sysname-context-2-cnt2\] capability session maximum 1000000]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_406980923}
+·**context**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[context]{lang="EN-US"}**]{#struct_0_10889_x4909_x750121693}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display session statistics]{lang="EN-US"}**]{#struct_0_10889_x4909_x29459103}[（安全命令参考]{lang="EN-US" style="font-family:宋体"}[/]{lang="EN-US"}[会话管理）]{lang="EN-US" style="font-family:宋体"}
-:::::
-
-::::: {#1490664607 .myid}
-[]{#_Toc404783302}[]{#struct_0_10889_x4909_958378346}
+·**display session statistics**（安全命令参考/会话管理）
 
 **Context \-- Context命令 \-- capability session rate**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![](Context命令.files/image002.png){width="63" height="25"}]{lang="EN-US"}]{#struct_0_10889_x4909_580657303}
-:::
+!(Context命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{lang="EN-US" style="font-family:
-KaiTi_GB2312"}]{#struct_0_10889_x4909_x1983209809}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[capability session rate**]命令用来设置Context的会话新建速率限制。
 
-[**[capability session rate]{lang="EN-US"}**]{#struct_0_10889_x4909_x1874858031}[命令用来设置]{style="font-family:宋体"}[Context]{lang="EN-US"}[的会话新建速率限制。]{style="font-family:宋体"}
+**[undo capability session rate**]命令用来恢复缺省情况。
 
-[**[undo capability session rate]{lang="EN-US"}**]{#struct_0_10889_x4909_1352502018}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1054196935}
+**[capability session rate** *max-value*]
 
-[**[capability session rate]{lang="EN-US"}**[ *max-value*]{lang="EN-US"}]{#struct_0_10889_x4909_x1340785983}
+**[undo capablility session rate**]
 
-[**[undo capablility session rate]{lang="EN-US"}**]{#struct_0_10889_x4909_1529482432}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1236802708}
+未对该Context允许的会话新建速率进行限制，由该Context上各安全引擎当前的内存能力决定。
 
-[[未对该]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_1489763657}[允许的会话新建速率进行限制，由该]{style="font-family:宋体"}[Context]{lang="EN-US"}[上各安全引擎当前的内存能力决定。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_802161275}
+Context视图
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x1602931102}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1455349875}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x633621818}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_1141337658}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_854025324}
+*[max-value*]：允许的会话新建速率最大值，单位为每秒会话个数。
 
-[*[max-value]{lang="EN-US"}*]{#struct_0_10889_x4909_x418256631}[：允许的会话新建速率最大值，单位为每秒会话个数。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1896921902}
+配置本命令后，该Context己进驻的每个安全引擎都将获得相同的会话新建速率限制。当安全引擎上的会话新建速率达到最大值后，该安全引擎上将不允许新建会话。
 
-[[配置本命令后，该]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x1607212309}[己进驻的每个安全引擎都将获得相同的会话新建速率限制。当安全引擎上的会话新建速率达到最大值后，该安全引擎上将不允许新建会话。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1502885543}
+\# 配置Context cnt2上的会话新建速率最大值为每秒20000个会话数。
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_x952284848}[配置]{style="font-family:宋体"}[Context cnt2]{lang="EN-US"}[上的会话新建速率最大值为每秒]{style="font-family:宋体"}[20000]{lang="EN-US"}[个会话数。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_1204100983}
+Sysname context cnt2
 
-[\[Sysname\] context cnt2]{lang="EN-US"}
+Sysname-context-2-cnt2 capability session rate 20000
 
-[\[Sysname-context-2-cnt2\] capability session rate 20000]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_656745411}
+·**context**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[context]{lang="EN-US"}**]{#struct_0_10889_x4909_x310048819}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display session statistics]{lang="EN-US"}**]{#struct_0_10889_x4909_x758942064}[（安全命令参考]{lang="EN-US" style="font-family:宋体"}[/]{lang="EN-US"}[会话管理）]{lang="EN-US" style="font-family:宋体"}
-:::::
-
-::::: {#1288995370 .myid}
-[]{#_Toc404783303}[]{#struct_0_10889_x4909_x213907019}[]{#_Toc382551693}
+·**display session statistics**（安全命令参考/会话管理）
 
 **Context \-- Context命令 \-- capability throughput**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](Context命令.files/image001.png){#图片 3 width="62" height="25"}]{lang="EN-US"}]{#struct_0_10889_x4909_x712058617}
-:::
+![说明](Context命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_10889_x4909_348812945}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[capability throughput**]命令用来设置Context的吞吐量限制。
 
-[**[capability throughput]{lang="EN-US"}**]{#struct_0_10889_x4909_430259865}[命令用来设置]{style="font-family:宋体"}[Context]{lang="EN-US"}[的吞吐量限制。]{style="font-family:宋体"}
+**[undo capability throughput**]命令用来恢复缺省情况。
 
-[**[undo capability throughput]{lang="EN-US"}**]{#struct_0_10889_x4909_x678906907}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x348995963}
+**[capability throughput **[\| **pps**]} *value*
 
-[**[capability throughput ]{lang="EN-US"}**[{ **kbps**]{lang="EN-US"}]{#struct_0_10889_x4909_x106646564}[ ]{lang="EN-US"}[\| **pps**]{lang="EN-US"}[ ]{lang="EN-US"}[} *value*]{lang="EN-US"}
+**[undo capability throughput**]
 
-[**[undo capability throughput]{lang="EN-US"}**]{#struct_0_10889_x4909_10345180}
+【缺省情况】]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10889_x4909_965585459}
+各Context不做吞吐量限制，按实际能力转发。
 
-[[各]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_1488285997}[不做吞吐量限制，按实际能力转发。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x861749582}
+Context视图
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x850333390}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1244031904}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x291062163}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_448019465}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1411369867}
+**[kbps**]：表示吞吐量按每秒千比特计算。
 
-[**[kbps]{lang="EN-US"}**]{#struct_0_10889_x4909_x1248133075}[：表示吞吐量按每秒千比特计算。]{style="font-family:宋体"}
+**[pps**]：表示吞吐量按每秒报文数计算。
 
-[**[pps]{lang="EN-US"}**]{#struct_0_10889_x4909_x1595395195}[：表示吞吐量按每秒报文数计算。]{style="font-family:宋体"}
+*[value*]：表示吞吐量限制值，取值范围为1000～100000000。
 
-[*[value]{lang="EN-US"}*]{#struct_0_10889_x4909_x1948455542}[：表示吞吐量限制值，取值范围为]{style="font-family:宋体"}[1000]{lang="EN-US"}[～]{style="font-family:宋体"}[100000000]{lang="EN-US"}[。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1355387556}
+配置本命令后，该Context已进驻的每个安全引擎上都将获得相同的吞吐量限制。
 
-[[配置本命令后，该]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x329129985}[已进驻的每个安全引擎上都将获得相同的吞吐量限制。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1018553792}
+\#{.apple-converted-space}配置Context的吞吐量为100Mbps。
 
-[[\#]{lang="EN-US" style="font-size:10.5pt;
-font-family:\"Arial\",\"sans-serif\";color:black"}]{#struct_0_10889_x4909_1660594378}[[ ]{lang="EN-US" style="font-size:8.5pt;font-family:
-\"Courier New\";color:black"}]{.apple-converted-space}[配置]{style="font-size:10.5pt;
-color:black"}[Context]{lang="EN-US" style="font-size:10.5pt;font-family:
-\"Arial\",\"sans-serif\";color:black"}[的]{style="font-size:10.5pt;
-color:black"}[吞吐量为]{style="font-size:10.5pt;color:black"}[100Mbps]{lang="EN-US" style="font-size:10.5pt;font-family:\"Arial\",\"sans-serif\";color:black"}[。]{style="font-size:10.5pt;color:black"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US" style="font-size:8.5pt;
-font-family:\"Courier New\";color:black"}]{#struct_0_10889_x4909_x1851447919}
+Sysname context cnt2
 
-[[\[Sysname\] context cnt2]{lang="EN-US" style="font-size:8.5pt;
-font-family:\"Courier New\";color:black"}]{#struct_0_10889_x4909_1731213131}
+Sysname-context-2-cnt2 capability throughput kbps 100000
 
-[[\[Sysname-context-2-cnt2\] capability throughput kbps 100000]{lang="EN-US" style="font-size:8.5pt;
-font-family:\"Courier New\";color:black"}]{#struct_0_10889_x4909_1006012918}
+\#{.apple-converted-space}配置Context的吞吐量为10000pps。
 
-[[\#]{lang="EN-US" style="font-size:10.5pt;
-font-family:\"Arial\",\"sans-serif\";color:black"}]{#struct_0_10889_x4909_x98157901}[[ ]{lang="EN-US" style="font-size:8.5pt;font-family:
-\"Courier New\";color:black"}]{.apple-converted-space}[配置]{style="font-size:10.5pt;
-color:black"}[Context]{lang="EN-US" style="font-size:10.5pt;font-family:
-\"Arial\",\"sans-serif\";color:black"}[的]{style="font-size:10.5pt;
-color:black"}[吞吐量为]{style="font-size:10.5pt;color:black"}[10000pps]{lang="EN-US" style="font-size:10.5pt;font-family:\"Arial\",\"sans-serif\";color:black"}[。]{style="font-size:10.5pt;color:black"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US" style="font-size:8.5pt;
-font-family:\"Courier New\";color:black"}]{#struct_0_10889_x4909_1152783503}
+Sysname context cnt2
 
-[[\[Sysname\] context cnt2]{lang="EN-US" style="font-size:8.5pt;
-font-family:\"Courier New\";color:black"}]{#struct_0_10889_x4909_x2083207457}
-
-[[\[Sysname-context-2-cnt2\] capability throughput pps 10000]{lang="EN-US" style="color:black"}]{#struct_0_10889_x4909_x234405787}
-:::::
-
-::: {#1340338390 .myid}
-[]{#_Toc404783304}[]{#struct_0_10889_x4909_330653425}
+Sysname-context-2-cnt2 capability throughput pps 10000
 
 **Context \-- Context命令 \-- context**
 
 ------------------------------------------------------------------------
 
-[**[context]{lang="EN-US"}**]{#struct_0_10889_x4909_x1691292106}[命令用来创建]{style="font-family:宋体"}[Context]{lang="EN-US"}[并进入]{style="font-family:宋体"}[Context]{lang="EN-US"}[视图]{style="font-family:宋体"}[。如果]{style="font-family:宋体"}[Context]{lang="EN-US"}[已创建，则直接进入]{style="font-family:宋体"}[Context]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+**[context**]命令用来创建Context并进入Context视图。如果Context已创建，则直接进入Context视图。
 
-[**[undo context]{lang="EN-US"}**]{#struct_0_10889_x4909_x1044918304}[命令用来删除]{style="font-family:宋体"}[Context]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo context**]命令用来删除Context。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1543174883}
+【命令】
 
-[[包装防火墙：]{style="font-family:宋体"}]{#struct_0_10889_x4909_x107122366}
+包装防火墙：
 
-[**[context ]{lang="EN-US"}**]{#struct_0_10889_x4909_x1633318260}*[context-name]{lang="EN-US"}***[ ]{lang="EN-US"}**[\[]{lang="EN-US"}*[ ]{lang="EN-US"}***[id ]{lang="EN-US"}***[context-id ]{lang="EN-US"}*[\]]{lang="EN-US"}*[ ]{lang="EN-US"}*[\[ ]{lang="EN-US"}**[vlan-unshared]{lang="EN-US"}***[ ]{lang="EN-US"}*[\]]{lang="EN-US"}
+**[context **]*context-name*****\****[id ***context-id *]**\**[vlan-unshared****]
 
-[**[undo context ]{lang="EN-US"}**]{#struct_0_10889_x4909_1565784337}*[context-name]{lang="EN-US"}*
+**[undo context **]*context-name*
 
-[[防火墙插卡：]{style="font-family:宋体"}]{#struct_0_10889_x4909_x222747181}
+防火墙插卡：
 
-[**[context ]{lang="EN-US"}**]{#struct_0_10889_x4909_1256298058}*[context-name]{lang="EN-US"}***[ ]{lang="EN-US"}**[\[]{lang="EN-US"}*[ ]{lang="EN-US"}***[id ]{lang="EN-US"}***[context-id ]{lang="EN-US"}*[\]]{lang="EN-US"}
+**[context **]*context-name*****\****[id ***context-id *]
 
-[**[undo context ]{lang="EN-US"}**]{#struct_0_10889_x4909_1191889454}*[context-name]{lang="EN-US"}*
+**[undo context **]*context-name*
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1231384568}
+【缺省情况】
 
-[[设备上存在缺省]{style="font-family:宋体"}]{#struct_0_10889_x4909_1513441219}[Context]{lang="EN-US"}[，名称为]{style="font-family:宋体"}[Admin]{lang="EN-US"}[，编号为]{style="font-family:宋体"}[1]{lang="EN-US"}[。（]{style="font-family:宋体"}[包装防火墙]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+设备上存在缺省Context，名称为Admin，编号为1。（包装防火墙）
 
-[[设备上没有]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x1787981818}[。（防火墙插卡）]{style="font-family:宋体"}
+设备上没有Context。（防火墙插卡）
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_2144876667}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_10889_x4909_393444017}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x664400610}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x902749884}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_1556941568}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_884518740}
+【参数】
 
-[*[context-name]{lang="EN-US"}*]{#struct_0_10889_x4909_730535543}[：]{style="font-family:宋体"}[Context]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[15]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[context-name*]：Context的名称，为1～15个字符的字符串，区分大小写。
 
-[*[context-id]{lang="EN-US"}*]{#struct_0_10889_x4909_x1633318259}[：]{style="font-family:宋体"}[Context]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65279]{lang="EN-US"}[。不指定该参数时，系统会自动给]{style="font-family:宋体"}[Context]{lang="EN-US"}[分配一个当前空闲的最小编号。]{style="font-family:宋体"}
+*[context-id*]：Context的编号，取值范围为1～65279。不指定该参数时，系统会自动给Context分配一个当前空闲的最小编号。
 
-[**[vlan-unshared]{lang="EN-US"}**]{#struct_0_10889_x4909_x356464428}[：不和其它]{style="font-family:宋体"}[Context]{lang="EN-US"}[共享]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。不指定该参数时，表示和其它]{style="font-family:宋体"}[Context]{lang="EN-US"}[共享]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。（包装防火墙）]{style="font-family:宋体"}
+**[vlan-unshared**]：不和其它Context共享VLAN。不指定该参数时，表示和其它Context共享VLAN。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。（包装防火墙）
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x912449505}
+【使用指导】
 
-[[创建]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_506528474}[时，通过]{style="font-family:宋体"}**[vlan-unshared]{lang="EN-US"}**[参数可选择是否和其]{style="font-family:宋体"}[它]{style="font-family:宋体"}[Context]{lang="EN-US"}[共享]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[：]{style="font-family:宋体"}
+创建Context时，通过**vlan-unshared**参数可选择是否和其它Context共享VLAN：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果选择和其它]{lang="EN-US" style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_1040651634}[共享]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[，则设备上所有]{lang="EN-US" style="font-family:宋体"}[Context]{lang="EN-US"}[共享]{lang="EN-US" style="font-family:宋体"}[VLAN 1]{lang="EN-US" style="color:black"}[～]{lang="EN-US" style="font-family:
-宋体;color:black"}[VLAN 4094]{lang="EN-US" style="color:black"}[。]{style="font-family:宋体;color:black"}[这些]{lang="EN-US" style="font-family:
-宋体;color:black"}[VLAN]{lang="EN-US" style="color:black"}[通过]{lang="EN-US" style="font-family:宋体;color:black"}**[allocate]{lang="EN-US"}**[ **vlan**]{lang="EN-US"}[命令分配。如果]{lang="EN-US" style="font-family:宋体"}[某]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[已经分配给某]{lang="EN-US" style="font-family:宋体"}[Context]{lang="EN-US"}[了，则不能再分配给其它]{lang="EN-US" style="font-family:宋体"}[Context]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·如果选择和其它Context共享VLAN，则设备上所有Context共享VLAN 1～VLAN 4094。这些VLAN通过**allocate** **vlan**命令分配。如果某VLAN已经分配给某Context了，则不能再分配给其它Context。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[如果选择]{lang="EN-US" style="font-family:宋体"}]{#struct_0_10889_x4909_461355052}[不]{style="font-family:宋体"}[和其它]{lang="EN-US" style="font-family:宋体"}[Context]{lang="EN-US"}[共享]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[，]{lang="EN-US" style="font-family:宋体"}[请登录该]{style="font-family:宋体"}[Context]{lang="EN-US"}[，并]{style="font-family:宋体"}[使用]{lang="EN-US" style="font-family:宋体"}**[vlan]{lang="EN-US"}**[命令创建]{lang="EN-US" style="font-family:宋体"}[VLAN 1]{lang="EN-US"}[～]{lang="EN-US" style="font-family:宋体"}[VLAN 4094]{lang="EN-US"}[。]{style="font-family:宋体"}[Context]{lang="EN-US"}[各自使用和]{style="font-family:宋体"}[管理]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[，]{lang="EN-US" style="font-family:宋体"}[互不干扰]{style="font-family:宋体"}[。]{lang="EN-US" style="font-family:宋体"}
+·如果选择不和其它Context共享VLAN，请登录该Context，并使用**vlan**命令创建VLAN 1～VLAN 4094。Context各自使用和管理VLAN，互不干扰。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x184225722}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_1524534093}[创建一个名称为]{style="font-family:宋体"}[test]{lang="EN-US"}[的]{style="font-family:宋体"}[Context]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 创建一个名称为test的Context。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_1179672791}
+\<Sysname\> system-view
 
-[\[Sysname\] context test]{lang="EN-US"}
+Sysname context test
 
-[\[Sysname-context-2-test\]]{lang="EN-US"}
+Sysname-context-2-test
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_318250498}[创建一个名称为]{style="font-family:宋体"}[test]{lang="EN-US"}[，]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[2]{lang="EN-US"}[的]{style="font-family:
-宋体"}[Context]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 创建一个名称为test，ID为2的Context。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_903561657}
+\<Sysname\> system-view
 
-[\[Sysname\] context test id 2]{lang="EN-US"}
+Sysname context test id 2
 
-[\[Sysname-context-2-test\]]{lang="EN-US"}
-:::
-
-::: {#1430433195 .myid}
-[]{#_Toc404783305}[]{#struct_0_10889_x4909_x941995708}[]{#_Toc365648365}
+Sysname-context-2-test
 
 **Context \-- Context命令 \-- context start**
 
 ------------------------------------------------------------------------
 
-[**[context start]{lang="EN-US"}**]{#struct_0_10889_x4909_1955640290}[命令用来启动]{style="font-family:宋体"}[Context]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[context start**]命令用来启动Context。
 
-[**[undo context start]{lang="EN-US"}**]{#struct_0_10889_x4909_705333892}[命令用来停止该]{style="font-family:宋体"}[Context]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo context start**]命令用来停止该Context。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_2023534592}
+【命令】
 
-[**[context start]{lang="EN-US"}**]{#struct_0_10889_x4909_612914445}
+**[context start**]
 
-[**[undo context start]{lang="EN-US"}**]{#struct_0_10889_x4909_x1954200687}
+**[undo context start**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x523736518}
+【视图】
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_1285429315}[视图]{style="font-family:宋体"}
+Context视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x688503120}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x1703227343}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x523014579}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_118238726}
+【使用指导】
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_2025379172}[创建后需要执行]{style="font-family:宋体"}**[context]{lang="EN-US"}[ ]{lang="EN-US"}[start]{lang="EN-US"}**[命令，才能完成新]{style="font-family:宋体"}[Context]{lang="EN-US"}[的初始化，相当于上电启动。启动后，用户可以登录到该]{style="font-family:宋体"}[Context]{lang="EN-US"}[执行配置。]{style="font-family:宋体"}
+Context创建后需要执行**contextstart**命令，才能完成新Context的初始化，相当于上电启动。启动后，用户可以登录到该Context执行配置。
 
-[[请先配置]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_1223114796}[所属的]{style="font-family:宋体"}[MDC]{lang="EN-US"}[，再登录该]{style="font-family:宋体"}[MDC]{lang="EN-US"}[，在这个]{style="font-family:宋体"}[MDC]{lang="EN-US"}[下使用该命令启动]{style="font-family:宋体"}[Context]{lang="EN-US"}[。例如，]{style="font-family:宋体"}[Context cnt2]{lang="EN-US"}[属于]{style="font-family:宋体"}[MDC test]{lang="EN-US"}[，则必须先通过]{style="font-family:宋体"}**[switchto mdc test]{lang="EN-US"}**[命令或者]{style="font-family:宋体"}[Telnet]{lang="EN-US"}[等方式登录到]{style="font-family:宋体"}[MDC test]{lang="EN-US"}[，才可以启动]{style="font-family:宋体"}[Context cnt2]{lang="EN-US"}[。]{style="font-family:宋体"}
+请先配置Context所属的MDC，再登录该MDC，在这个MDC下使用该命令启动Context。例如，Context cnt2属于MDC test，则必须先通过**switchto mdc test**命令或者Telnet等方式登录到MDC test，才可以启动Context cnt2。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_10889_x4909_92430670}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[停止]{style="font-family:宋体"}]{#struct_0_10889_x4909_705333893}[Context]{lang="EN-US"}[会导致该]{style="font-family:宋体"}[Context]{lang="EN-US"}[的业务中断，以及登录该]{style="font-family:宋体"}[Context]{lang="EN-US"}[的用户自动退出，请谨慎使用。]{style="font-family:宋体"}
+·停止Context会导致该Context的业务中断，以及登录该Context的用户自动退出，请谨慎使用。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[停止]{style="font-family:宋体"}]{#struct_0_10889_x4909_2023534593}[Context]{lang="EN-US"}[前]{style="font-family:宋体"}[请保存]{style="font-family:宋体"}[Context]{lang="EN-US"}[的配置，否则，可能导]{style="font-family:宋体"}[致]{style="font-family:宋体"}[Context]{lang="EN-US"}[的当前配置丢失。]{style="font-family:宋体"}
+·停止Context前请保存Context的配置，否则，可能导致Context的当前配置丢失。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_612979981}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_1444753094}[启动]{style="font-family:宋体"}[Context cnt2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 启动Context cnt2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_712429267}
+\<Sysname\> system-view
 
-[\[Sysname\] context cnt2]{lang="EN-US"}
+Sysname context cnt2
 
-[\[Sysname-context-2-cnt2\] context start]{lang="EN-US"}
+Sysname-context-2-cnt2 context start
 
-[It will take some time to start the context\...]{lang="EN-US"}
+It will take some time to start the context\...
 
-[Context started successfully.]{lang="EN-US"}
-:::
-
-::: {#-1461383778 .myid}
-[]{#_Toc404783306}[]{#struct_0_10889_x4909_1020527443}[]{#_Toc365648366}
+Context started successfully.
 
 **Context \-- Context命令 \-- description**
 
 ------------------------------------------------------------------------
 
-[**[description]{lang="EN-US"}**]{#struct_0_10889_x4909_x30622050}[命令用来配置]{style="font-family:宋体"}[Context]{lang="EN-US"}[的描述信息。]{style="font-family:宋体"}
+**[description**]命令用来配置Context的描述信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1293750080}
+【命令】
 
-[**[description ]{lang="EN-US"}**]{#struct_0_10889_x4909_1260108727}*[text]{lang="EN-US"}*
+**[description **]*text*
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_10889_x4909_x699420973}
+**[undo description**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x30202325}
+【缺省情况】
 
-[[缺省]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_1310751710}[描述信息为]{style="font-family:宋体"}[DefaultContext]{lang="EN-US"}[。非缺省]{style="font-family:宋体"}[Context]{lang="EN-US"}[没有配置描述信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+缺省Context描述信息为DefaultContext。非缺省Context没有配置描述信息。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1128951766}
+【视图】
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_1409524226}[视图]{style="font-family:宋体"}
+Context视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_705333890}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_2023534594}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_613307661}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_528092769}
+【参数】
 
-[*[text]{lang="EN-US"}*]{#struct_0_10889_x4909_316916529}[：]{style="font-family:宋体"}[Context]{lang="EN-US"}[的描述信息，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[text*]：Context的描述信息，为1～255个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1717604907}
+【使用指导】
 
-[[当设备上配置的]{style="font-family:宋体"}]{#struct_0_10889_x4909_x1070868658}[Context]{lang="EN-US"}[较多时，用户可以为]{style="font-family:宋体"}[Context]{lang="EN-US"}[配置特定的描述信息，以便记忆和管理]{style="font-family:宋体"}[Context]{lang="EN-US"}[。]{style="font-family:宋体"}
+当设备上配置的Context较多时，用户可以为Context配置特定的描述信息，以便记忆和管理Context。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1464106342}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_7278419}[将]{style="font-family:宋体"}[Context]{lang="EN-US"}[的描述信息配置为]{style="font-family:宋体"}[test]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 将Context的描述信息配置为test。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_x942601459}
+\<Sysname\> system-view
 
-[\[Sysname\] context cnt2]{lang="EN-US"}
+Sysname context cnt2
 
-[\[Sysname-context-2-cnt2\] description test]{lang="EN-US"}
-:::
-
-::::: {#1598154567 .myid}
-[]{#_Toc404783307}[]{#struct_0_10889_x4909_1408140846}[]{#_Toc356459226}
+Sysname-context-2-cnt2 description test
 
 **Context \-- Context命令 \-- display blade-controller-team**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](Context命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_10889_x4909_2108629967}
-:::
+![说明](Context命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_10889_x4909_x986369760}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[display blade-controller-team**]命令用来显示安全引擎组的信息。
 
-[**[display blade-controller-team]{lang="EN-US"}**]{#struct_0_10889_x4909_361829458}[命令用来显示安全引擎组的信息。]{style="font-family:
-宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1318047444}
+**[display blade-controller-team**[ [ *blade-controller-team-name* \| **id** *blade-controller-team-id* ]]]
 
-[**[display blade-controller-team]{lang="EN-US"}**[ \[ *blade-controller-team-name* \| **id** *blade-controller-team-id* \]]{lang="EN-US"}]{#struct_0_10889_x4909_705333891}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_2023534595}
+任意视图
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10889_x4909_613373197}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x984710671}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x1080670964}
+network-operator
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10889_x4909_x925651261}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x410880457}
+mdc-operator
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_10889_x4909_x315698404}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1470335049}
+*[blade-controller-team-name*]：安全引擎组的名称，为1～31个字符的字符串，区分大小写。
 
-[*[blade-controller-team-name]{lang="EN-US"}*]{#struct_0_10889_x4909_x1984219896}[：安全引擎组的名称，为]{style="font-family:
-宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[id*** blade-controller-team-id*]：安全引擎组的编号，取值范围为1～256。
 
-[**[id]{lang="EN-US"}***[ blade-controller-team-id]{lang="EN-US"}*]{#struct_0_10889_x4909_1255904843}[：安全引擎组的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[256]{lang="EN-US"}[。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1810780546}
+不指定任何参数时，显示所有安全引擎组的信息。
 
-[[不指定任何参数时，显示所有安全引擎组的信息。]{style="font-family:宋体"}]{#struct_0_10889_x4909_x1449589560}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_589434349}
+\# 显示安全引擎组的信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_1211230708}[显示]{style="font-family:宋体"}[安全引擎组的]{style="font-family:宋体"}[信息。]{style="font-family:宋体"}
+\<Sysname\> display blade-controller-team
 
-[[\<Sysname\> display blade-controller-team]{lang="EN-US"}]{#struct_0_10889_x4909_x1319434905}
+ID          Name
 
-[ID          Name]{lang="EN-US"}
+1           abc
 
-[1           abc]{lang="EN-US"}
+2           fff
 
-[2           fff]{lang="EN-US"}
+\# 显示名称为abc的安全引擎组的信息。（集中式设备[/分布式设备－独立运行模式]/集中式IRF设备）
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_1908032222}[显示名]{style="font-family:宋体"}[称为]{style="font-family:宋体"}[abc]{lang="EN-US"}[的安全引擎组的]{style="font-family:宋体"}[信息。（集中式设备[/]{lang="EN-US"}分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+\<Sysname\> display blade-controller-team abc
 
-[[\<Sysname\> display blade-controller-team abc]{lang="EN-US"}]{#struct_0_10889_x4909_705333896}
+ID: 2        Name: abc
 
-[ID: 2        Name: abc]{lang="EN-US"}
+Slot    CPU    Status
 
-[Slot    CPU    Status]{lang="EN-US"}
+1       1      Absent
 
-[1       1      Absent]{lang="EN-US"}
+\* 1       1      Normal
 
-[\* 1       1      Normal]{lang="EN-US"}
+\*  : Primary blade controller of the team.
 
-[ ]{lang="EN-US"}
+\# 显示名称为abc的安全引擎组的信息。（分布式设备－IRF模式）
 
-[\*  : Primary blade controller of the team.]{lang="EN-US"}
+\<Sysname\> display blade-controller-team abc
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_2023534596}[显示名]{style="font-family:宋体"}[称为]{style="font-family:宋体"}[abc]{lang="EN-US"}[的安全引擎组的]{style="font-family:宋体"}[信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+ID: 2        Name: abc
 
-[[\<Sysname\> display blade-controller-team abc]{lang="EN-US"}]{#struct_0_10889_x4909_613176589}
+Chassis    Slot    CPU    Status
 
-[ID: 2        Name: abc]{lang="EN-US"}
+1          1       1      Absent
 
-[Chassis    Slot    CPU    Status]{lang="EN-US"}
+\* 1          7       1      Normal
 
-[1          1       1      Absent]{lang="EN-US"}
+\*  : Primary blade controller of the team.
 
-[\* 1          7       1      Normal]{lang="EN-US"}
+表1-1 display blade-controller-team命令显示信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[\*  : Primary blade controller of the team.]{lang="EN-US"}
+描述
 
-[[表1-1 ]{lang="EN-US"}[display blade-controller-team]{lang="EN-US"}]{#struct_0_10889_x4909_x1245925505}[命令显示信息描述表]{style="font-family:黑体"}
+ID
 
-[]{#table_struct_0_x496132865}[[字段]{style="font-size:10.0pt;
-   font-family:黑体"}]{#struct_0_10889_x4909_x1992877322}
-:::::
+安全引擎组的编号
 
-[[描述]{style="font-size:10.0pt;
-   font-family:黑体"}]{#struct_0_10889_x4909_1994923318}
+Name
 
-[[ID]{lang="EN-US"}]{#struct_0_10889_x4909_x2091517514}
+安全引擎组的名称
 
-[[安全引擎组]{style="font-family:宋体"}]{#struct_0_10889_x4909_x435094948}[的]{style="font-family:宋体"}[编号]{style="font-family:宋体"}
+Chassis
 
-[[Name]{lang="EN-US"}]{#struct_0_10889_x4909_x407171265}
+安全引擎所在设备的成员编号（分布式设备－IRF模式）
 
-[[安全引擎组]{style="font-family:宋体"}]{#struct_0_10889_x4909_x1189386892}[的名称]{style="font-family:宋体"}
+Slot
 
-[[Chassis]{lang="EN-US"}]{#struct_0_10889_x4909_613242125}
+安全引擎所在的槽位号
 
-[[安全引擎]{style="font-family:宋体"}]{#struct_0_10889_x4909_x1811185028}[所在设备的成员编号]{style="font-family:宋体"}[（]{style="font-family:宋体"}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+CPU
 
-[[Slot]{lang="EN-US"}]{#struct_0_10889_x4909_239960504}
+安全引擎的CPU号
 
-[[安全引擎]{style="font-family:宋体"}]{#struct_0_10889_x4909_444246595}[所在的槽位号]{style="font-family:宋体"}
+Status
 
-[[CPU]{lang="EN-US"}]{#struct_0_10889_x4909_85971339}
+安全引擎的状态：
 
-[[安全引擎]{style="font-family:宋体"}]{#struct_0_10889_x4909_x218305561}[的]{style="font-family:宋体"}[CPU]{lang="EN-US"}[号]{style="font-family:宋体"}
+·Absent：表示该位置没有插入安全引擎
 
-[[Status]{lang="EN-US"}]{#struct_0_10889_x4909_1255511627}
+·Fault：表示该节点的单板不能正常启动
 
-[[安全引擎的状态：]{style="font-family:宋体"}]{#struct_0_10889_x4909_x213012527}
+·Normal：表示该位置的安全引擎运行正常
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Absent]{lang="EN-US"}]{#struct_0_10889_x4909_x1071060859}[：表示该位置没有插入安全引擎]{lang="EN-US" style="font-family:宋体"}
+\*  : Primary blade controller of the team.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Fault]{lang="EN-US"}]{#struct_0_10889_x4909_986444380}[：表示该节点的单板不能正常启动]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Normal]{lang="EN-US"}]{#struct_0_10889_x4909_1255708235}[：表示该位置的安全引擎运行正常]{lang="EN-US" style="font-family:宋体"}
-
-[[\*  : Primary blade controller of the team.]{lang="EN-US"}]{#struct_0_10889_x4909_x776804405}
-
-[[\*]{lang="EN-US"}]{#struct_0_10889_x4909_1595848590}[表示安全引擎组的主安全引擎]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#491971759 .myid}
-[]{#_Toc404783308}[]{#struct_0_10889_x4909_x1107152877}[]{#_Toc365648371}
+\*表示安全引擎组的主安全引擎
 
 **Context \-- Context命令 \-- display context**
 
 ------------------------------------------------------------------------
 
-[**[display context]{lang="EN-US"}**]{#struct_0_10889_x4909_x1147261679}[命令用来显示]{style="font-family:宋体"}[已经创建的]{style="font-family:宋体"}[Context]{lang="EN-US"}[的信息，包括编号和状态等]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[display context**]命令用来显示已经创建的Context的信息，包括编号和状态等。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x2140567800}
+【命令】
 
-[**[display context]{lang="EN-US"}**]{#struct_0_10889_x4909_705333894}[ \[ **name** *context-name* \]]{lang="EN-US"}
+**[display context**  **name** *context-name* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_2023534598}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10889_x4909_612521229}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1821835096}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_857134350}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10889_x4909_x168639605}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_2109458827}
+mdc-admin
 
-[[mdc-operato]{lang="EN-US"}]{#struct_0_10889_x4909_x994394937}[r]{lang="EN-US"}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1013724486}
+【参数】
 
-[**[name]{lang="EN-US"}**]{#struct_0_10889_x4909_601675560}[ ]{lang="EN-US"}*[context-name]{lang="EN-US"}*[：]{style="font-family:宋体"}[Context]{lang="EN-US"}[的]{style="font-family:宋体"}[名字，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[15]{lang="EN-US"}[个字符的字符串，区分大小写]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[name**]*context-name*：Context的名字，为1～15个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1999027094}
+【使用指导】
 
-[[(1)[      ]{style="font:7.0pt "}]{lang="EN-US"}[包装防火墙]{style="font-family:宋体"}]{#struct_0_10889_x4909_x172538919}
+(1)包装防火墙
 
-[[在缺省]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_419978633}[中，可使用]{style="font-family:宋体"}**[name]{lang="EN-US"}***[ context-name]{lang="EN-US"}*[参数查看指定]{style="font-family:宋体"}[Context]{lang="EN-US"}[的信息。不指定]{style="font-family:宋体"}**[name]{lang="EN-US"}***[ context-name]{lang="EN-US"}*[参数时，则]{style="font-family:宋体"}[显示设备上创建的所有]{style="font-family:宋体"}[Context]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+在缺省Context中，可使用**name*** context-name*参数查看指定Context的信息。不指定**name*** context-name*参数时，则显示设备上创建的所有Context的信息。
 
-[[(2)[      ]{style="font:7.0pt "}]{lang="EN-US"}[防火墙插卡]{lang="EN-US" style="font-family:宋体"}]{#struct_0_10889_x4909_179449154}
+(2)防火墙插卡
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在缺省]{style="font-family:宋体"}]{#struct_0_10889_x4909_x698227831}[MDC]{lang="EN-US"}[下，]{style="font-family:宋体"}[可使用]{style="font-family:宋体"}**[name]{lang="EN-US"}***[ context-name]{lang="EN-US"}*[参数查看指定]{style="font-family:宋体"}[Context]{lang="EN-US"}[的信息；不指定]{style="font-family:宋体"}**[name]{lang="EN-US"}***[ context-name]{lang="EN-US"}*[参数时，则]{style="font-family:宋体"}[显示设备上创建的所有]{style="font-family:宋体"}[Context]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+·在缺省MDC下，可使用**name*** context-name*参数查看指定Context的信息；不指定**name*** context-name*参数时，则显示设备上创建的所有Context的信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[非缺省]{style="font-family:宋体"}]{#struct_0_10889_x4909_705333895}[MDC]{lang="EN-US"}[下，不能指定]{style="font-family:宋体"}**[name ]{lang="EN-US"}***[context-name]{lang="EN-US"}*[参数，]{style="font-family:宋体"}[只能显示属于该]{style="font-family:宋体"}[MDC]{lang="EN-US"}[的所有]{style="font-family:宋体"}[Context]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+·非缺省MDC下，不能指定**name ***context-name*参数，只能显示属于该MDC的所有Context的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_2023534599}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_612586765}[显示]{style="font-family:宋体"}[已经创建的]{style="font-family:宋体"}[Context]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+\# 显示已经创建的Context的信息。
 
-[[\<Sysname\> display context]{lang="EN-US"}]{#struct_0_10889_x4909_x1307335995}
+\<Sysname\> display context
 
-[ID     Name          Status           BelongTo        Description]{lang="EN-US"}
+ID     Name          Status           BelongTo        Description
 
-[1      cnt1          active           Admin           context1]{lang="EN-US"}
+1      cnt1          active           Admin           context1
 
-[2      cnt2          inactive         MDC3            context2]{lang="EN-US"}
+2      cnt2          inactive         MDC3            context2
 
-[3      cnt3          inactive         MDC2            context3]{lang="EN-US"}
+3      cnt3          inactive         MDC2            context3
 
-[[表1-2 ]{lang="EN-US"}[display context]{lang="EN-US"}]{#struct_0_10889_x4909_1677738652}[命令显示信息描述表]{style="font-family:黑体"}
+表1-2 display context命令显示信息描述表
 
-[]{#table_struct_0_x499691187}[[字段]{style="font-family:黑体"}]{#struct_0_10889_x4909_x430141496}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10889_x4909_1000893806}
+描述
 
-[[ID]{lang="EN-US"}]{#struct_0_10889_x4909_x528175545}
+ID
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_2062459647}[的编号]{style="font-family:宋体"}
+Context的编号
 
-[[Name]{lang="EN-US"}]{#struct_0_10889_x4909_855447438}
+Name
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x127439935}[的名称]{style="font-family:宋体"}
+Context的名称
 
-[[Status]{lang="EN-US"}]{#struct_0_10889_x4909_x1471210804}
+Status
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_705333900}[的状态：]{style="font-family:宋体"}
+Context的状态：
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[a]{lang="EN-US"}[ctive]{lang="EN-US"}]{#struct_0_10889_x4909_x1132315801}[：]{style="font-family:宋体"}[表示]{lang="EN-US" style="font-family:宋体"}[Context]{lang="EN-US"}[正常运行]{lang="EN-US" style="font-family:宋体"}
+·active：表示Context正常运行
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[inactive]{lang="EN-US"}]{#struct_0_10889_x4909_x92254034}[：表示]{style="font-family:
-  宋体"}[Context]{lang="EN-US"}[处于未启动状态]{style="font-family:宋体"}
+·inactive：表示Context处于未启动状态
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[starting]{lang="EN-US"}]{#struct_0_10889_x4909_x1853816515}[：表示]{style="font-family:
-  宋体"}[Context]{lang="EN-US"}[正在启动]{style="font-family:宋体"}
+·starting：表示Context正在启动
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[updating]{lang="EN-US"}]{#struct_0_10889_x4909_1037577134}[：表示正在将]{style="font-family:
-  宋体"}[Context]{lang="EN-US"}[加入安全引擎组]{style="font-family:
-  宋体"}
+·updating：表示正在将Context加入安全引擎组
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[stopping]{lang="EN-US"}]{#struct_0_10889_x4909_112899750}[：表示]{style="font-family:宋体"}[Context]{lang="EN-US"}[正在停止]{style="font-family:宋体"}
+·stopping：表示Context正在停止
 
-[[Belongto]{lang="EN-US"}]{#struct_0_10889_x4909_x813646306}
+Belongto
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_740604949}[所属的]{style="font-family:宋体"}[MDC]{lang="EN-US"}[的名称（防火墙插卡）]{style="font-family:宋体"}
+Context所属的MDC的名称（防火墙插卡）
 
-[[Description]{lang="EN-US"}]{#struct_0_10889_x4909_x467262498}
+Description
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_311364047}[描述信息]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1588442510 .myid}
-[]{#_Toc404783309}[]{#struct_0_10889_x4909_x1941570326}[]{#_Toc359421726}[]{#_Toc348877442}
+Context描述信息
 
 **Context \-- Context命令 \-- display context interface**
 
 ------------------------------------------------------------------------
 
-[**[display context interface]{lang="EN-US"}**]{#struct_0_10889_x4909_659114731}[命令用来显示]{style="font-family:
-宋体"}[Context]{lang="EN-US"}[的接口列表。]{style="font-family:宋体"}
+**[display context interface**]命令用来显示Context的接口列表。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_84586338}
+【命令】
 
-[**[display context ]{lang="EN-US"}**[\[ **name** *context-name* \] **interface**]{lang="EN-US"}]{#struct_0_10889_x4909_705333901}
+**[display context ** **name** *context-name* ] **interface**
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1132315800}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10889_x4909_x1658337975}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1759000453}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_976823573}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10889_x4909_1312536731}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x512823881}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_10889_x4909_x590645929}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1063287755}
+【参数】
 
-[**[name]{lang="EN-US"}***[ context-name]{lang="EN-US"}*]{#struct_0_10889_x4909_1429206235}[：]{style="font-family:宋体"}[Context]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[15]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[name*** context-name*]：Context的名称，为1～15个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_291392233}
+【使用指导】
 
-[[(1)[      ]{style="font:7.0pt "}]{lang="EN-US"}[包装防火墙]{lang="EN-US" style="font-family:宋体"}]{#struct_0_10889_x4909_x1780347358}
+(1)包装防火墙
 
-[[在缺省]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x994362702}[中，可使用]{style="font-family:宋体"}**[name]{lang="EN-US"}***[ context-name]{lang="EN-US"}*[参数查看指定]{style="font-family:宋体"}[Context]{lang="EN-US"}[的接口列表；不指定]{style="font-family:宋体"}**[name]{lang="EN-US"}***[ context-name]{lang="EN-US"}*[参数时，则]{style="font-family:宋体"}[显示设备上创建的所有]{style="font-family:宋体"}[C]{lang="EN-US"}[ontext]{lang="EN-US"}[的接口列表]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+在缺省Context中，可使用**name*** context-name*参数查看指定Context的接口列表；不指定**name*** context-name*参数时，则显示设备上创建的所有Context的接口列表。
 
-[[(2)[      ]{style="font:7.0pt "}]{lang="EN-US"}[防火墙插卡]{lang="EN-US" style="font-family:宋体"}]{#struct_0_10889_x4909_1657797053}
+(2)防火墙插卡
 
-[[使用该命令：]{style="font-family:宋体"}]{#struct_0_10889_x4909_x586615699}
+使用该命令：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在缺省]{lang="EN-US" style="font-family:宋体"}]{#struct_0_10889_x4909_x77493189}[MDC]{lang="EN-US"}[下，]{lang="EN-US" style="font-family:宋体"}[可使用]{lang="EN-US" style="font-family:宋体"}**[name]{lang="EN-US"}***[ context-name]{lang="EN-US"}*[参数查看指定]{lang="EN-US" style="font-family:宋体"}[Context]{lang="EN-US"}[的接口列表；不]{lang="EN-US" style="font-family:宋体"}[指定]{style="font-family:宋体"}**[name]{lang="EN-US"}***[ context-name]{lang="EN-US"}*[参数]{lang="EN-US" style="font-family:宋体"}[时，]{style="font-family:宋体"}[则]{lang="EN-US" style="font-family:宋体"}[显示设备上创建的所有]{lang="EN-US" style="font-family:宋体"}[C]{lang="EN-US"}[ontext]{lang="EN-US"}[的接口列表。]{lang="EN-US" style="font-family:宋体"}
+·在缺省MDC下，可使用**name*** context-name*参数查看指定Context的接口列表；不指定**name*** context-name*参数时，则显示设备上创建的所有Context的接口列表。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在非缺省]{style="font-family:宋体"}]{#struct_0_10889_x4909_1903463044}[MDC]{lang="EN-US"}[下，不能指定]{style="font-family:宋体"}**[name ]{lang="EN-US"}***[context-name]{lang="EN-US"}*[参数，]{style="font-family:宋体"}[只能显示属于该]{style="font-family:宋体"}[MDC]{lang="EN-US"}[的所有]{style="font-family:宋体"}[C]{lang="EN-US"}[ontext]{lang="EN-US"}[的接口列表。]{style="font-family:宋体"}
+·在非缺省MDC下，不能指定**name ***context-name*参数，只能显示属于该MDC的所有Context的接口列表。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1940934969}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_1083100357}[显示所有]{style="font-family:宋体"}[Context]{lang="EN-US"}[的接口列表。]{style="font-family:宋体"}
+\# 显示所有Context的接口列表。
 
-[[\<Sysname\> display context interface]{lang="EN-US"}]{#struct_0_10889_x4909_339638104}
+\<Sysname\> display context interface
 
-[Context stub1\'s interfaces:]{lang="EN-US"}
+Context stub1\'s interfaces:
 
-[  GigabitEthernet0/1/4]{lang="EN-US"}
+  GigabitEthernet0/1/4
 
-[Context stub2\'s interfaces:]{lang="EN-US"}
+Context stub2\'s interfaces:
 
-[  FortyGigE0/1/8]{lang="EN-US"}
+  FortyGigE0/1/8
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1014225707}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[allocate interface]{lang="EN-US"}**]{#struct_0_10889_x4909_x687185096}
-:::
-
-::: {#-966498513 .myid}
-[]{#_Toc404783310}[]{#struct_0_10889_x4909_x391279772}
+·**allocate interface**
 
 **Context \-- Context命令 \-- display context resource**
 
 ------------------------------------------------------------------------
 
-[**[display context]{lang="EN-US"}[ resource]{lang="EN-US"}**]{#struct_0_10889_x4909_x2063791095}[命令用来显示]{style="font-family:宋体"}[Context]{lang="EN-US"}[对]{style="font-family:宋体"}[CPU/]{lang="EN-US"}[磁盘]{style="font-family:宋体"}[/]{lang="EN-US"}[内存资源的使用情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[display context resource**]命令用来显示Context对CPU/磁盘/内存资源的使用情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x460440999}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_10889_x4909_x860544693}
+集中式设备：
 
-[**[display context ]{lang="EN-US"}**]{#struct_0_10889_x4909_274854810}[\[ **name** *context-name* \] ]{lang="EN-US"}**[resource]{lang="EN-US"}**[ \[ **cpu** \| **disk** \| **memory[ ]{style="color:red"}**\]]{lang="EN-US"}
+**[display context **] **name** *context-name*  **resource**[ [ **cpu** \| **disk** \| **memory**]]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}]{#struct_0_10889_x4909_x1958552497}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display context ]{lang="EN-US"}**]{#struct_0_10889_x4909_305878675}[\[ **name** *context-name* \] ]{lang="EN-US"}**[resource]{lang="EN-US"}**[ \[ **cpu** \| **disk** \| **memory[ ]{style="color:red"}**\] \[ **slot** *slot-number* **cpu** *cpu-number* \]]{lang="EN-US"}
+**[display context **] **name** *context-name*  **resource**[ [ **cpu** \| **disk** \| **memory**]  **slot** *slot-number* **cpu** *cpu-number* ]
 
-[[分布式设备－]{style="font-family:宋体"}]{#struct_0_10889_x4909_x721919723}[IRF]{lang="EN-US"}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display context ]{lang="EN-US"}**]{#struct_0_10889_x4909_1903463045}[\[ **name** *context-name* \] ]{lang="EN-US"}**[resource ]{lang="EN-US"}**[\[ **cpu** \| **disk** \| **memory** \] \[ **chassis** *chassis-number* **slot** *slot-number* **cpu** *cpu-number* \]]{lang="EN-US"}
+**[display context **] **name** *context-name*  **resource **[[ **cpu** \| **disk** \| **memory** ]  **chassis** *chassis-number* **slot** *slot-number* **cpu** *cpu-number* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1940869433}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10889_x4909_1667759957}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1336877864}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x200821176}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10889_x4909_88827518}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x1206330090}
+mdc-admin
 
-[[mdc-operato]{lang="EN-US"}]{#struct_0_10889_x4909_1315957820}[r]{lang="EN-US"}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1367574377}
+【参数】
 
-[**[name]{lang="EN-US"}**]{#struct_0_10889_x4909_110686829}[ *context-name*]{lang="EN-US"}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[Context]{lang="EN-US"}[对]{style="font-family:宋体"}[CPU]{lang="EN-US"}[/]{lang="EN-US" style="font-family:宋体"}[磁盘[/]{lang="EN-US"}内存资源的使用情况。]{style="font-family:宋体"}*[context-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[Context]{lang="EN-US"}[的]{style="font-family:宋体"}[名字，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[15]{lang="EN-US"}[个字符的字符串，区分大小写]{style="font-family:宋体"}[。不指定该参数时，显示]{style="font-family:宋体"}[当前]{style="font-family:宋体"}[MDC]{lang="EN-US"}[下]{style="font-family:宋体"}[所有]{style="font-family:宋体"}[Context]{lang="EN-US"}[对]{style="font-family:宋体"}[CPU]{lang="EN-US"}[/]{lang="EN-US" style="font-family:宋体"}[磁盘[/]{lang="EN-US"}内存资源的使用情况。]{style="font-family:宋体"}
+**[name**] *context-name*：显示指定Context对CPU/磁盘[/内存资源的使用情况。]*context-name*表示Context的名字，为1～15个字符的字符串，区分大小写。不指定该参数时，显示当前MDC下所有Context对CPU/磁盘[/内存资源的使用情况。]
 
-[**[cpu]{lang="EN-US"}**]{#struct_0_10889_x4909_779208641}[：显示]{style="font-family:宋体"}[Context]{lang="EN-US"}[对]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的]{style="font-family:宋体"}[使用情况。]{style="font-family:宋体"}
+**[cpu**]：显示Context对CPU的使用情况。
 
-[**[disk]{lang="EN-US"}**]{#struct_0_10889_x4909_x940169123}[：显示]{style="font-family:宋体"}[Context]{lang="EN-US"}[对磁盘的使用情况。]{style="font-family:宋体"}
+**[disk**]：显示Context对磁盘的使用情况。
 
-[**[memory]{lang="EN-US"}**]{#struct_0_10889_x4909_300231228}[：显示]{style="font-family:宋体"}[Context]{lang="EN-US"}[对内存的使用情况。]{style="font-family:宋体"}
+**[memory**]：显示Context对内存的使用情况。
 
-[**[slot]{lang="EN-US"}**]{#struct_0_10889_x4909_x1059114535}[ *slot-number* **cpu** *cpu-number*]{lang="EN-US"}[：显示]{style="font-family:宋体"}[Context]{lang="EN-US"}[对指定安全引擎的]{style="font-family:宋体"}[CPU/]{lang="EN-US"}[磁盘]{style="font-family:宋体"}[/]{lang="EN-US"}[内存资源的使用情况，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示安全引擎所在的槽位号，]{style="font-family:宋体"}*[cpu-number]{lang="EN-US" style="color:black"}*[表示安全引擎的]{style="font-family:宋体;
-color:black"}[CPU]{lang="EN-US" style="color:black"}[的编号]{style="font-family:宋体;color:black"}[。不指定该参数时，显示]{style="font-family:宋体"}[Context]{lang="EN-US"}[对所有安全引擎的]{style="font-family:宋体"}[CPU/]{lang="EN-US"}[磁盘]{style="font-family:宋体"}[/]{lang="EN-US"}[内存资源的使用情况。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot**] *slot-number* **cpu** *cpu-number*：显示Context对指定安全引擎的CPU/磁盘/内存资源的使用情况，*slot-number*表示安全引擎所在的槽位号，*cpu-number*表示安全引擎的CPU的编号。不指定该参数时，显示Context对所有安全引擎的CPU/磁盘/内存资源的使用情况。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**]{#struct_0_10889_x4909_56294212}[ *slot-number* **cpu** *cpu-number*]{lang="EN-US"}[：显示]{style="font-family:宋体"}[Context]{lang="EN-US"}[对指定成员设备上安全引擎的]{style="font-family:宋体"}[CPU/]{lang="EN-US"}[磁盘]{style="font-family:宋体"}[/]{lang="EN-US"}[内存资源的使用情况，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[cpu-number]{lang="EN-US" style="color:black"}*[表示安全引擎的]{style="font-family:宋体;color:black"}[CPU]{lang="EN-US" style="color:black"}[的编号。不指定该参数时]{style="font-family:宋体;color:black"}[，显示]{style="font-family:宋体"}[Context]{lang="EN-US"}[对所有安全引擎的]{style="font-family:宋体"}[CPU/]{lang="EN-US"}[磁盘]{style="font-family:宋体"}[/]{lang="EN-US"}[内存资源的使用情况。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**[slot**] *slot-number* **cpu** *cpu-number*：显示Context对指定成员设备上安全引擎的CPU/磁盘/内存资源的使用情况，*slot-number*表示设备在IRF中的成员编号，*cpu-number*表示安全引擎的CPU的编号。不指定该参数时，显示Context对所有安全引擎的CPU/磁盘/内存资源的使用情况。（集中式IRF设备）
 
-[**[chassis]{lang="EN-US"}**]{#struct_0_10889_x4909_x241395650}[ *chassis-number* **slot** *slot-number* **cpu** *cpu-number*]{lang="EN-US"}[：显示]{style="font-family:宋体"}[Context]{lang="EN-US"}[对指定成员设备安全引擎的]{style="font-family:宋体"}[CPU/]{lang="EN-US"}[磁盘]{style="font-family:宋体"}[/]{lang="EN-US"}[内存资源的使用情况，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示安全引擎所在的槽位号，]{style="font-family:宋体"}*[cpu-number]{lang="EN-US" style="color:black"}*[表示安全引擎的]{style="font-family:宋体;
-color:black"}[CPU]{lang="EN-US" style="color:black"}[的编号]{style="font-family:宋体;color:black"}[。不指定该参数时，显示]{style="font-family:宋体"}[Context]{lang="EN-US"}[对]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中所有安全引擎的]{style="font-family:宋体"}[CPU/]{lang="EN-US"}[磁盘]{style="font-family:宋体"}[/]{lang="EN-US"}[内存资源的使用情况。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**[chassis**] *chassis-number* **slot** *slot-number* **cpu** *cpu-number*：显示Context对指定成员设备安全引擎的CPU/磁盘/内存资源的使用情况，*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示安全引擎所在的槽位号，*cpu-number*表示安全引擎的CPU的编号。不指定该参数时，显示Context对IRF中所有安全引擎的CPU/磁盘/内存资源的使用情况。（分布式设备－IRF模式）
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1903463042}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_x1941066041}[显示所有]{style="font-family:宋体"}[Context]{lang="EN-US"}[对]{style="font-family:宋体"}[CPU/]{lang="EN-US"}[磁盘]{style="font-family:宋体"}[/]{lang="EN-US"}[内存资源的使用情况。（集中式设备）]{style="font-family:宋体"}
+\# 显示所有Context对CPU/磁盘/内存资源的使用情况。（集中式设备）
 
-[[\<Sysname\> display context resource]{lang="EN-US"}]{#struct_0_10889_x4909_x682420604}
+\<Sysname\> display context resource
 
-[Memory usage:]{lang="EN-US"}
+Memory usage:
 
-[Slot 0 CPU 0]{lang="EN-US"}
+Slot 0 CPU 0
 
-[Used 120.7MB, Free 375.4MB, Total 496.1MB]{lang="EN-US"}
+Used 120.7MB, Free 375.4MB, Total 496.1MB
 
-[  ID   Name        Quota(MB)    Used(MB)    Free(MB)]{lang="EN-US"}
+  ID   Name        Quota(MB)    Used(MB)    Free(MB)
 
-[  1    Admin       496.1        94.9        375.4]{lang="EN-US"}
+  1    Admin       496.1        94.9        375.4
 
-[  2    cnt2        496.1        25.8        375.4]{lang="EN-US"}
+  2    cnt2        496.1        25.8        375.4
 
-[ ]{lang="EN-US"}
+CPU usage:
 
-[CPU usage:]{lang="EN-US"}
+Slot 0 CPU 0
 
-[Slot 0 CPU 0]{lang="EN-US"}
+  ID   Name        Weight       Usage(%)
 
-[  ID   Name        Weight       Usage(%)]{lang="EN-US"}
+  1    Admin       10           3
 
-[  1    Admin       10           3]{lang="EN-US"}
+  2    cnt2        10           0
 
-[  2    cnt2        10           0]{lang="EN-US"}
+Disk usage:
 
-[ ]{lang="EN-US"}
+Slot 0 CPU 0
 
-[Disk usage:]{lang="EN-US"}
+flash: Used 0.3MB, Free 462.3MB, Total 462.6MB
 
-[Slot 0 CPU 0]{lang="EN-US"}
+  ID   Name        Quota(MB)    Used(MB)    Free(MB)
 
-[flash: Used 0.3MB, Free 462.3MB, Total 462.6MB]{lang="EN-US"}
+  1    Admin       416.3        0.3         416
 
-[  ID   Name        Quota(MB)    Used(MB)    Free(MB)]{lang="EN-US"}
+  2    cnt2        46.3         0.0         46.3
 
-[  1    Admin       416.3        0.3         416]{lang="EN-US"}
+\# 显示Context对所有安全引擎上CPU资源的使用情况。（分布式设备/集中式IRF设备）
 
-[  2    cnt2        46.3         0.0         46.3]{lang="EN-US"}
+\<Sysname\> display context resource cpu
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_1470055657}[显示]{style="font-family:宋体"}[Context]{lang="EN-US"}[对所有安全引擎上]{style="font-family:宋体"}[CPU]{lang="EN-US"}[资源的使用情况。（分布式设备]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+CPU usage:
 
-[[\<Sysname\> display context resource cpu]{lang="EN-US"}]{#struct_0_10889_x4909_x1917676837}
+Slot 2 CPU 1:
 
-[CPU usage:]{lang="EN-US"}
+  ID   Name        Weight       Usage(%)
 
-[Slot 2 CPU 1:]{lang="EN-US"}
+  1    cnt1        10           24
 
-[  ID   Name        Weight       Usage(%)]{lang="EN-US"}
+  2    cnt2        10           0
 
-[  1    cnt1        10           24]{lang="EN-US"}
+Slot 3 CPU 1:
 
-[  2    cnt2        10           0]{lang="EN-US"}
+  ID   Name        Weight       Usage(%)
 
-[ ]{lang="EN-US"}
+  1    cnt3        10           0
 
-[Slot 3 CPU 1:]{lang="EN-US"}
+  2    cnt4        10           0
 
-[  ID   Name        Weight       Usage(%)]{lang="EN-US"}
+\# 显示Context对所有安全引擎上CPU资源的使用情况。（分布式设备－IRF模式）
 
-[  1    cnt3        10           0]{lang="EN-US"}
+\<Sysname\> display context resource cpu
 
-[  2    cnt4        10           0]{lang="EN-US"}
+CPU usage:
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_2112542463}[显示]{style="font-family:宋体"}[Context]{lang="EN-US"}[对所有安全引擎上]{style="font-family:宋体"}[CPU]{lang="EN-US"}[资源的使用情况。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+Chassis 1 slot 2 CPU 1:
 
-[[\<Sysname\> display context resource cpu]{lang="EN-US"}]{#struct_0_10889_x4909_1903463043}
+  ID   Name        Weight       Usage(%)
 
-[CPU usage:]{lang="EN-US"}
+  1    cnt1        10           24
 
-[Chassis 1 slot 2 CPU 1:]{lang="EN-US"}
+  2    cnt2        10           0
 
-[  ID   Name        Weight       Usage(%)]{lang="EN-US"}
+Chassis 1 slot 3 CPU 1:
 
-[  1    cnt1        10           24]{lang="EN-US"}
+  ID   Name        Weight       Usage(%)
 
-[  2    cnt2        10           0]{lang="EN-US"}
+  1    cnt3        10           0
 
-[ ]{lang="EN-US"}
+  2    cnt4        10           0
 
-[Chassis 1 slot 3 CPU 1:]{lang="EN-US"}
+表1-3 display context resource命令显示信息描述表
 
-[  ID   Name        Weight       Usage(%)]{lang="EN-US"}
+字段
 
-[  1    cnt3        10           0]{lang="EN-US"}
+描述
 
-[  2    cnt4        10           0]{lang="EN-US"}
+Memory
 
-[[表1-3 ]{lang="EN-US"}[display context resource]{lang="EN-US"}]{#struct_0_10889_x4909_x1941000505}[命令显示信息描述表]{style="font-family:黑体"}
+表示下面显示的是内存的使用情况
 
-[]{#table_struct_0_x500681964}[[字段]{style="font-size:10.0pt;
-   font-family:黑体"}]{#struct_0_10889_x4909_x1033255041}
-:::
+CPU
 
-[[描述]{style="font-size:10.0pt;
-   font-family:黑体"}]{#struct_0_10889_x4909_148595060}
+表示下面显示的是CPU的使用情况
 
-[[Memory]{lang="EN-US"}]{#struct_0_10889_x4909_x97421749}
+Disk
 
-[[表示下面显示的是内存的使用情况]{style="font-family:宋体"}]{#struct_0_10889_x4909_x2037036837}
+表示下面显示的是磁盘的使用情况
 
-[[CPU]{lang="EN-US"}]{#struct_0_10889_x4909_29706472}
+Slot 0 CPU 0
 
-[[表示下面显示的是]{style="font-family:宋体"}[CPU]{lang="EN-US"}]{#struct_0_10889_x4909_x105157646}[的使用情况]{style="font-family:宋体"}
+表示Context对指定安全引擎上资源的使用情况（集中式设备）
 
-[[Disk]{lang="EN-US"}]{#struct_0_10889_x4909_1292914348}
+Slot 2 CPU 1
 
-[[表示下面显示的是磁盘的使用情况]{style="font-family:宋体"}]{#struct_0_10889_x4909_x108123658}
+表示Context对指定安全引擎上资源的使用情况（分布式设备－独立运行模式）
 
-[[Slot 0 CPU 0]{lang="EN-US"}]{#struct_0_10889_x4909_1069055041}
+Slot 2 CPU 1
 
-[[表示]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_1903463048}[对指定安全引擎上资源的使用情况（集中式设备）]{style="font-family:宋体"}
+表示Context对指定安全引擎上资源的使用情况（集中式IRF设备）
 
-[[Slot 2 CPU 1]{lang="EN-US"}]{#struct_0_10889_x4909_x1940672825}
+Chassis 1 slot 2 CPU 1
 
-[[表示]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x628506850}[对指定安全引擎上资源的使用情况（分布式设备－独立运行模式）]{style="font-family:宋体"}
+表示Context对指定安全引擎上资源的使用情况（分布式设备－IRF模式）
 
-[[Slot 2 CPU 1]{lang="EN-US"}]{#struct_0_10889_x4909_511973381}
+Used 238.1MB, Free 249.3MB, Total 487.4MB
 
-[[表示]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_370841336}[对指定安全引擎上资源的使用情况（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+内存的使用情况，Used表示内存已使用空间的大小（单位为MB），Free表示当前空闲内存的大小（单位为MB），Total表示整个内存大小（单位为MB）。如果Context没有启动，则Used会显示为0
 
-[[Chassis 1 slot 2 CPU 1]{lang="EN-US"}]{#struct_0_10889_x4909_x559896750}
+Cfa0: Used 0MB,  Free 61MB, Total 61MB
 
-[[表示]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x51955865}[对指定安全引擎上资源的使用情况（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+Cfa0表示磁盘的名称，Used表示整个磁盘已使用空间的大小（单位为MB），Free表示整个磁盘当前空闲空间的大小（单位为MB），Total表示整个磁盘空间大小（单位为MB）。如果Context没有启动，则Used会显示为0
 
-[[Used 238.1MB, Free 249.3MB, Total 487.4MB]{lang="EN-US"}]{#struct_0_10889_x4909_x1869056168}
+ID
 
-[[内存的使用情况，]{style="font-family:宋体"}[Used]{lang="EN-US"}]{#struct_0_10889_x4909_325493979}[表示内存已使用空间的大小（单位为]{style="font-family:宋体"}[MB]{lang="EN-US"}[），]{style="font-family:宋体"}[Free]{lang="EN-US"}[表示当前空闲内存的大小（单位为]{style="font-family:宋体"}[MB]{lang="EN-US"}[），]{style="font-family:宋体"}[Total]{lang="EN-US"}[表示整个内存大小（单位为]{style="font-family:宋体"}[MB]{lang="EN-US"}[）。]{style="font-family:宋体"}[如果]{style="font-family:宋体"}[Context]{lang="EN-US"}[没有启动，]{style="font-family:宋体"}[则]{style="font-family:宋体"}[Used]{lang="EN-US"}[会显示为]{style="font-family:宋体"}[0]{lang="EN-US"}
+Context的编号
 
-[[Cfa0: Used 0MB,  Free 61MB, Total 61MB]{lang="EN-US"}]{#struct_0_10889_x4909_938363822}
+name
 
-[[Cfa0]{lang="EN-US"}]{#struct_0_10889_x4909_1959849982}[表示磁盘的名称，]{style="font-family:宋体"}[Used]{lang="EN-US"}[表示整个磁盘已使用空间的大小（单位为]{style="font-family:宋体"}[MB]{lang="EN-US"}[），]{style="font-family:宋体"}[Free]{lang="EN-US"}[表示整个磁盘当前空闲空间的大小（单位为]{style="font-family:宋体"}[MB]{lang="EN-US"}[），]{style="font-family:宋体"}[Total]{lang="EN-US"}[表示整个磁盘空间大小（单位为]{style="font-family:宋体"}[MB]{lang="EN-US"}[）。]{style="font-family:宋体"}[如果]{style="font-family:宋体"}[Context]{lang="EN-US"}[没有启动，]{style="font-family:宋体"}[则]{style="font-family:宋体"}[Used]{lang="EN-US"}[会显示为]{style="font-family:宋体"}[0]{lang="EN-US"}
+Context的名字
 
-[[ID]{lang="EN-US"}]{#struct_0_10889_x4909_1903463049}
+Weight
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x1940607289}[的编号]{style="font-family:宋体"}
+Context使用CPU的权重值
 
-[[name]{lang="EN-US"}]{#struct_0_10889_x4909_529593527}
+Usage(%)
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_176989294}[的名字]{style="font-family:宋体"}
+Context对CPU的实际占用率，用百分比表示
 
-[[Weight]{lang="EN-US"}]{#struct_0_10889_x4909_520502269}
+Quota(MB)
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_616769975}[使用]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的权重值]{style="font-family:宋体"}
+Context使用磁盘/内存的限制值，单位为MB
 
-[[Usage(%)]{lang="EN-US"}]{#struct_0_10889_x4909_x1150483231}
+Used(MB)
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x975772124}[对]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的实际占用率，用百分比表示]{style="font-family:宋体"}
+Context当前已使用的磁盘/内存空间的大小，单位为MB
 
-[[Quota(MB)]{lang="EN-US"}]{#struct_0_10889_x4909_340454362}
+Free(MB)
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_1658562356}[使用磁盘]{style="font-family:宋体"}[/]{lang="EN-US"}[内存的限制值，单位为]{style="font-family:宋体"}[MB]{lang="EN-US"}
-
-[[Used(MB)]{lang="EN-US"}]{#struct_0_10889_x4909_1903463046}
-
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x1940803897}[当前已使用的磁盘]{style="font-family:宋体"}[/]{lang="EN-US"}[内存空间的大小，单位为]{style="font-family:宋体"}[MB]{lang="EN-US"}
-
-[[Free(MB)]{lang="EN-US"}]{#struct_0_10889_x4909_x2078876189}
-
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x909362961}[还可以使用的磁盘]{style="font-family:宋体"}[/]{lang="EN-US"}[内存空间的大小，单位为]{style="font-family:宋体"}[MB]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-::::: {#-564377485 .myid}
-[]{#_Toc404783311}[]{#struct_0_10889_x4909_979036762}
+Context还可以使用的磁盘/内存空间的大小，单位为MB
 
 **Context \-- Context命令 \-- display context vlan**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](Context命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_10889_x4909_x54465680}
-:::
+![说明](Context命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_10889_x4909_x1789241875}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[display context vlan]{lang="EN-US"}**]{#struct_0_10889_x4909_861992144}[命令用来显示]{style="font-family:宋体"}[Context]{lang="EN-US"}[的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表。]{style="font-family:宋体"}
+**[display context vlan**]命令用来显示Context的VLAN列表。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x976639171}
+【命令】
 
-[**[display context]{lang="EN-US"}**[ \[ **name** *context-name* \] **vlan**]{lang="EN-US"}]{#struct_0_10889_x4909_260368719}
+**[display context** [ **name** *context-name*  **vlan**]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1610708338}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10889_x4909_x1651594856}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_979036761}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x54465679}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10889_x4909_x1833871882}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x785357847}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_10889_x4909_744333941}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x794279069}
+【参数】
 
-[**[name]{lang="EN-US"}**[ *context-name*]{lang="EN-US"}]{#struct_0_10889_x4909_107351049}[：]{style="font-family:宋体"}[Context]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[15]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[name** *context-name*]：Context的名称，为1～15个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1727018093}
+【使用指导】
 
-[[(1)[      ]{style="font:7.0pt "}]{lang="EN-US"}[包装防火墙]{lang="EN-US" style="font-family:宋体"}]{#struct_0_10889_x4909_471259312}
+(1)包装防火墙
 
-[[在缺省]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x1152740747}[中，可使用]{style="font-family:宋体"}**[name]{lang="EN-US"}**[ *context-name*]{lang="EN-US"}[参数查看指定]{style="font-family:宋体"}[Context]{lang="EN-US"}[的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表；不指定]{style="font-family:宋体"}**[name]{lang="EN-US"}**[ *context-name*]{lang="EN-US"}[参数时，则显示设备上创建的所有]{style="font-family:宋体"}[Context]{lang="EN-US"}[的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表。]{style="font-family:宋体"}
+在缺省Context中，可使用**name** *context-name*参数查看指定Context的VLAN列表；不指定**name** *context-name*参数时，则显示设备上创建的所有Context的VLAN列表。
 
-[[(2)[      ]{style="font:7.0pt "}]{lang="EN-US"}[防火墙插卡]{lang="EN-US" style="font-family:宋体"}]{#struct_0_10889_x4909_883339175}
+(2)防火墙插卡
 
-[[可使用]{style="font-family:宋体"}**[name]{lang="EN-US"}**[ *context-name*]{lang="EN-US"}]{#struct_0_10889_x4909_1655814765}[参数查看指定]{style="font-family:宋体"}[Context]{lang="EN-US"}[的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表；不指定]{style="font-family:宋体"}**[name]{lang="EN-US"}**[ *context-name*]{lang="EN-US"}[参数时，则显示所有属于当前登录]{style="font-family:宋体"}[MDC]{lang="EN-US"}[的]{style="font-family:宋体"}[Context]{lang="EN-US"}[的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表。]{style="font-family:宋体"}
+可使用**name** *context-name*参数查看指定Context的VLAN列表；不指定**name** *context-name*参数时，则显示所有属于当前登录MDC的Context的VLAN列表。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1860719010}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_979036764}[显示所有]{style="font-family:宋体"}[Context]{lang="EN-US"}[的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表。]{style="font-family:宋体"}
+\# 显示所有Context的VLAN列表。
 
-[[\<Sysname\> display context vlan]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10889_x4909_x54465674}
+\<Sysname\> display context vlan
 
-[[Context stub1\'s VLAN(s):]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10889_x4909_x1833871887}
+Context stub1\'s VLAN(s):
 
-[ ]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}
+Context stub2\'s VLAN(s):
 
-[[Context stub2\'s VLAN(s):]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10889_x4909_x25842960}
+  2,4094
 
-[[  2,4094]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10889_x4909_x2065947962}
+Context stub3\'s VLAN(s):
 
-[[Context stub3\'s VLAN(s):]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10889_x4909_471484878}
+  5,6,800-3000,3400
 
-[[  5,6,800-3000,3400]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10889_x4909_x573467767}
+\# 显示Context sub1的VLAN列表。
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_x715830901}[显示]{style="font-family:宋体"}[Context sub1]{lang="EN-US"}[的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表。]{style="font-family:宋体"}
+\<Sysname\> display context name sub1 vlan
 
-[[\<Sysname\> display context name sub1 vlan]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10889_x4909_1856295712}
+Context stub1\'s VLAN(s):
 
-[[Context stub1\'s VLAN(s):]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10889_x4909_x52371893}
+  5,6,11-23,3400
 
-[[  5,6,11-23,3400]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10889_x4909_506635855}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x2146591208}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[allocate vlan]{lang="EN-US"}**]{#struct_0_10889_x4909_1621647667}
-:::::
-
-::::: {#866923171 .myid}
-[]{#_Toc404783312}[]{#struct_0_10889_x4909_x50722863}[]{#_Toc365648363}[]{#_Toc393298492}
+·**allocate vlan**
 
 **Context \-- Context命令 \-- join mdc**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](Context命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_10889_x4909_x242969194}
-:::
+![说明](Context命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_10889_x4909_139143983}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[join]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_10889_x4909_x879870281}**[mdc]{lang="EN-US"}**[命令用来配置]{style="font-family:宋体"}[Context]{lang="EN-US"}[所属的]{style="font-family:宋体"}[MDC]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[join**]**mdc**命令用来配置Context所属的MDC。
 
-[**[undo ]{lang="EN-US"}[join]{lang="EN-US"}**]{#struct_0_10889_x4909_x1324678389}[命令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo join**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1187050737}
+【命令】
 
-[**[join]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_10889_x4909_x114526349}**[mdc ]{lang="EN-US"}***[mdc-name]{lang="EN-US"}*
+**[join**]**mdc ***mdc-name*
 
-[**[undo ]{lang="EN-US"}[join]{lang="EN-US"}**]{#struct_0_10889_x4909_1903463047}
+**[undo join**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1940738361}
+【缺省情况】
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x1236766297}[属于缺省]{style="font-family:宋体"}[MDC]{lang="EN-US"}[。]{style="font-family:宋体"}
+Context属于缺省MDC。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x350928958}
+【视图】
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_1003067331}[视图]{style="font-family:宋体"}
+Context视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1663992252}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x5751843}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_1182397995}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1845635745}
+【参数】
 
-[*[mdc-name]{lang="EN-US"}*]{#struct_0_10889_x4909_x201551725}[：指定]{style="font-family:宋体"}[Context]{lang="EN-US"}[所属的]{style="font-family:宋体"}[MDC]{lang="EN-US"}[的]{style="font-family:宋体"}[名称]{style="font-family:宋体"}[。该]{style="font-family:宋体"}[Context]{lang="EN-US"}[必须是已创建、未启动的]{style="font-family:宋体"}[Context]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[mdc-name*]：指定Context所属的MDC的名称。该Context必须是已创建、未启动的Context。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_92825052}
+【使用指导】
 
-[[MDC]{lang="EN-US"}]{#struct_0_10889_x4909_x1283346527}[视图下的]{style="font-family:宋体"}**[allocate context]{lang="EN-US"}**[命令与]{style="font-family:宋体"}[Context]{lang="EN-US"}[视图下的]{style="font-family:宋体"}**[join mdc]{lang="EN-US"}**[命令功能相同，都是为]{style="font-family:宋体"}[Context]{lang="EN-US"}[设置归属]{style="font-family:宋体"}[MDC]{lang="EN-US"}[。]{style="font-family:宋体"}**[allocate context]{lang="EN-US"}**[可以批量设置归属]{style="font-family:宋体"}[MDC]{lang="EN-US"}[，]{style="font-family:宋体"}**[join mdc]{lang="EN-US"}**[是为单个]{style="font-family:宋体"}[Context]{lang="EN-US"}[设置归属]{style="font-family:宋体"}[MDC]{lang="EN-US"}[。]{style="font-family:宋体"}
+MDC视图下的**allocate context**命令与Context视图下的**join mdc**命令功能相同，都是为Context设置归属MDC。**allocate context**可以批量设置归属MDC，**join mdc**是为单个Context设置归属MDC。
 
-[[配置]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_1903463052}[所属的]{style="font-family:宋体"}[MDC]{lang="EN-US"}[后，]{style="font-family:宋体"}[MDC]{lang="EN-US"}[才能对外提供安全业务。]{style="font-family:宋体"}[一个]{style="font-family:宋体"}[MDC]{lang="EN-US"}[下可以存在多个]{style="font-family:宋体"}[Context]{lang="EN-US"}[，一个]{style="font-family:宋体"}[Context]{lang="EN-US"}[只能隶属于一个]{style="font-family:宋体"}[MDC]{lang="EN-US"}[，使用这个]{style="font-family:宋体"}[MDC]{lang="EN-US"}[上的物理资源。]{style="font-family:宋体"}
+配置Context所属的MDC后，MDC才能对外提供安全业务。一个MDC下可以存在多个Context，一个Context只能隶属于一个MDC，使用这个MDC上的物理资源。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1941066042}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_2046462751}[指定]{style="font-family:宋体"}[Context]{lang="EN-US"}[（名称为]{style="font-family:宋体"}[cnt2]{lang="EN-US"}[）]{style="font-family:宋体"}[归属的]{style="font-family:宋体"}[MDC]{lang="EN-US"}[（名称为]{style="font-family:宋体"}[test2]{lang="EN-US"}[）。]{style="font-family:宋体"}
+\# 指定Context（名称为cnt2）归属的MDC（名称为test2）。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_2003062432}
+\<Sysname\> system-view
 
-[\[Sysname\] context cnt2]{lang="EN-US"}
+Sysname context cnt2
 
-[\[Sysname-context-2-cnt2\] join mdc test2]{lang="EN-US"}
+Sysname-context-2-cnt2 join mdc test2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_95366710}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[allocate context]{lang="EN-US"}**]{#struct_0_10889_x4909_x1866493527}
-:::::
-
-::: {#305021740 .myid}
-[]{#_Toc404783313}[]{#struct_0_10889_x4909_1558577985}[]{#_Toc365648370}[]{#_Toc371341031}[]{#_Toc371341032}
+·**allocate context**
 
 **Context \-- Context命令 \-- limit-resource cpu**
 
 ------------------------------------------------------------------------
 
-[**[limit-resource cpu]{lang="EN-US"}**]{#struct_0_10889_x4909_x1242434504}[命令用来配置]{style="font-family:宋体"}[Context]{lang="EN-US"}[的]{style="font-family:宋体"}[CPU]{lang="EN-US"}[权重]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[limit-resource cpu**]命令用来配置Context的CPU权重。
 
-[**[undo limit-resource cpu]{lang="EN-US"}**]{#struct_0_10889_x4909_x701383233}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo limit-resource cpu**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1566473346}
+【命令】
 
-[**[limit-resource cpu]{lang="EN-US"}**[ **weight** *weight-value*]{lang="EN-US"}]{#struct_0_10889_x4909_1240117524}
+**[limit-resource cpu** **weight** *weight-value*]
 
-[**[undo limit-resource cpu]{lang="EN-US"}**]{#struct_0_10889_x4909_x440140626}
+**[undo limit-resource cpu**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1761153225}
+【缺省情况】
 
-[[各]{style="font-family:宋体"}]{#struct_0_10889_x4909_x1280593537}[Context]{lang="EN-US"}[的]{style="font-family:宋体"}[CPU]{lang="EN-US"}[权重均为]{style="font-family:宋体"}[10]{lang="EN-US"}[。]{style="font-family:宋体"}
+各Context的CPU权重均为10。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_90224592}
+【视图】
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x1790165382}[视图]{style="font-family:宋体"}
+Context视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1903463053}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x1941000506}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x629970514}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_2131755451}
+【参数】
 
-[**[weight ]{lang="EN-US"}***[weight-value]{lang="EN-US"}*]{#struct_0_10889_x4909_x488849033}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[Context]{lang="EN-US"}[在指定安全引擎上的]{style="font-family:宋体"}[CPU]{lang="EN-US"}[权重，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[10]{lang="EN-US"}[。]{style="font-family:宋体"}[系统根据]{style="font-family:宋体"}[Context]{lang="EN-US"}[的权重为]{style="font-family:宋体"}[Context]{lang="EN-US"}[分配]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时间。]{style="font-family:宋体"}
+**[weight ***weight-value*]：表示Context在指定安全引擎上的CPU权重，取值范围为1～10。系统根据Context的权重为Context分配CPU时间。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1210848562}
+【使用指导】
 
-[[进驻到同一安全引擎的]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x1757501189}[共享该安全引擎的]{style="font-family:宋体"}[CPU]{lang="EN-US"}[资源。]{style="font-family:宋体"}[配置本命令后，]{style="font-family:宋体"}[Context]{lang="EN-US"}[在己进驻的安全引擎上都将获得相同的]{style="font-family:宋体"}[CPU]{lang="EN-US"}[权重。]{style="font-family:宋体"}
+进驻到同一安全引擎的Context共享该安全引擎的CPU资源。配置本命令后，Context在己进驻的安全引擎上都将获得相同的CPU权重。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x624619068}
+【举例】
 
-[[\#]{lang="EN-US" style="font-size:10.5pt;font-family:\"Arial\",\"sans-serif\""}[ ]{lang="EN-US"}]{#struct_0_10889_x4909_x1931797746}[配置]{style="font-size:10.5pt;font-family:宋体"}[Context]{lang="EN-US" style="font-size:10.5pt;font-family:\"Arial\",\"sans-serif\""}[的]{style="font-size:10.5pt;font-family:宋体"}[CPU]{lang="EN-US" style="font-size:10.5pt;font-family:\"Arial\",\"sans-serif\""}[权重为]{style="font-size:10.5pt;font-family:宋体"}[2]{lang="EN-US" style="font-size:10.5pt;font-family:\"Arial\",\"sans-serif\""}[。]{style="font-size:10.5pt;font-family:宋体"}
+\#配置Context的CPU权重为2。
 
-[\<Sysname\> system-view]{lang="EN-US"}
+\<Sysname\> system-view
 
-[\[Sysname\] context cnt2]{lang="EN-US"}
+Sysname context cnt2
 
-[\[Sysname-context-2-cnt2\] limit-resource cpu weight 2]{lang="EN-US"}
-:::
-
-::: {#-1683769703 .myid}
-[]{#_Toc404783314}[]{#struct_0_10889_x4909_x172962427}[]{#_Toc365648368}
+Sysname-context-2-cnt2 limit-resource cpu weight 2
 
 **Context \-- Context命令 \-- limit-resource disk**
 
 ------------------------------------------------------------------------
 
-[**[limit-resource disk]{lang="EN-US"}**]{#struct_0_10889_x4909_363785240}[命令用来]{style="font-family:宋体"}[配置]{style="font-family:宋体"}[Context]{lang="EN-US"}[可使用的磁盘空间上限]{style="font-family:宋体"}[（用百分比表示）。]{style="font-family:宋体"}
+**[limit-resource disk**]命令用来配置Context可使用的磁盘空间上限（用百分比表示）。
 
-[**[undo limit-resource disk]{lang="EN-US"}**]{#struct_0_10889_x4909_2041115750}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo limit-resource disk**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x52852092}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_10889_x4909_x347406022}
+集中式设备：
 
-[**[limit-resource disk ratio ]{lang="EN-US"}**]{#struct_0_10889_x4909_931419566}*[limit-ratio]{lang="EN-US" style="font-size:11.0pt"}*
+**[limit-resource disk ratio **]*limit-ratio*
 
-[**[undo limit-resource disk]{lang="EN-US"}**]{#struct_0_10889_x4909_898007265}
+**[undo limit-resource disk**]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}]{#struct_0_10889_x4909_x18700342}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[limit-resource disk slot]{lang="EN-US"}**[ *slot-number* **cpu** *cpu-number* **ratio** *limit-ratio*]{lang="EN-US"}]{#struct_0_10889_x4909_x110375059}
+**[limit-resource disk slot** *slot-number* **cpu** *cpu-number* **ratio** *limit-ratio*]
 
-[**[undo limit-resource disk slot]{lang="EN-US"}**[ *slot-number* **cpu** *cpu-number*]{lang="EN-US"}]{#struct_0_10889_x4909_135213074}
+**[undo limit-resource disk slot** *slot-number* **cpu** *cpu-number*]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_10889_x4909_2055808246}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[limit-resource disk chassis]{lang="EN-US"}***[ chassis-number ]{lang="EN-US"}***[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}***[ cpu]{lang="EN-US"}**[ *cpu-number* **ratio** *limit-ratio*]{lang="EN-US"}]{#struct_0_10889_x4909_x2042839964}
+**[limit-resource disk chassis*** chassis-number ***slot ***slot-number*** cpu** *cpu-number* **ratio** *limit-ratio*]
 
-[**[undo limit-resource disk chassis]{lang="EN-US"}***[ chassis-number ]{lang="EN-US"}***[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}***[ cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_10889_x4909_1765403201}
+**[undo limit-resource disk chassis*** chassis-number ***slot ***slot-number*** cpu** *cpu-number*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x731729640}
+【缺省情况】
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x2072004195}[可以使用物理设备上的所有空闲磁盘空间。（集中式设备）]{style="font-family:宋体"}
+Context可以使用物理设备上的所有空闲磁盘空间。（集中式设备）
 
-[[进驻到同一安全引擎的所有]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x2137124106}[共享该安全引擎的所有磁盘空间，每个]{style="font-family:宋体"}[Context]{lang="EN-US"}[可使用的磁盘空间上限为该安全引擎的空闲磁盘空间值。（]{style="font-family:宋体"}[分布式设备－独立运行模式]{style="line-height:150%;font-family:宋体"}[/]{lang="EN-US" style="line-height:150%"}[集中式]{style="line-height:150%;font-family:
-宋体"}[IRF]{lang="EN-US" style="line-height:150%"}[设备[/]{lang="EN-US"}]{style="line-height:150%;font-family:宋体"}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+进驻到同一安全引擎的所有Context共享该安全引擎的所有磁盘空间，每个Context可使用的磁盘空间上限为该安全引擎的空闲磁盘空间值。（分布式设备－独立运行模式/集中式IRF设备[/]分布式设备－IRF模式）
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1301696986}
+【视图】
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x1854908331}[视图]{style="font-family:宋体"}
+Context视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_795149938}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_1247820508}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x52852091}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x347406025}
+【参数】
 
-[**[slot]{lang="EN-US" style="color:black"}**]{#struct_0_10889_x4909_931616174}[ *slot-number* **cpu** *cpu-number*]{lang="EN-US" style="color:black"}[：表示安全引擎所在的位置，其中，]{style="font-family:宋体;color:black"}*[slot-number]{lang="EN-US" style="color:black"}*[表示安全引擎所在的槽位号，]{style="font-family:宋体;
-color:black"}*[cpu-number]{lang="EN-US" style="color:black"}*[表示安全引擎的]{style="font-family:宋体;color:black"}[CPU]{lang="EN-US" style="color:black"}[的编号。]{style="font-family:宋体;color:black"}[（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot**] *slot-number* **cpu** *cpu-number*：表示安全引擎所在的位置，其中，*slot-number*表示安全引擎所在的槽位号，*cpu-number*表示安全引擎的CPU的编号。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**[ *slot-number* **cpu** *cpu-number*]{lang="EN-US"}]{#struct_0_10889_x4909_1967304311}[：表示成员设备安全引擎所在的位置，其中，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示安全引擎所在的设备的成员编号，]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示安全引擎的]{style="font-family:宋体;color:black"}[CPU]{lang="EN-US" style="color:black"}[的编号。]{style="font-family:宋体;color:black"}[（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**[slot** *slot-number* **cpu** *cpu-number*]：表示成员设备安全引擎所在的位置，其中，*slot-number*表示安全引擎所在的设备的成员编号，*cpu-number*表示安全引擎的CPU的编号。（集中式IRF设备）
 
-[**[chassis]{lang="EN-US"}***[ chassis-number ]{lang="EN-US"}***[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}***[ cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_10889_x4909_85272156}[：表示成员设备安全引擎所在的位置，其中，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示安全引擎所在的设备的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示安全引擎所在的槽位号，]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示安全引擎的]{style="font-family:宋体;color:black"}[CPU]{lang="EN-US" style="color:black"}[的编号。]{style="font-family:宋体;
-color:black"}[（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**[chassis*** chassis-number ***slot ***slot-number*** cpu** *cpu-number*]：表示成员设备安全引擎所在的位置，其中，*chassis-number*表示安全引擎所在的设备的成员编号，*slot-number*表示安全引擎所在的槽位号，*cpu-number*表示安全引擎的CPU的编号。（分布式设备－IRF模式）
 
-[**[ratio ]{lang="EN-US"}**]{#struct_0_10889_x4909_x488582494}*[limit-ratio]{lang="EN-US"}*[：表示]{style="font-family:宋体"}[Context]{lang="EN-US"}[在设备上最多可使用的磁盘空间大小与该设备整个磁盘空间大小的百分比，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[100]{lang="EN-US"}[。（集中式设备）]{style="font-family:宋体"}
+**[ratio **]*limit-ratio*：表示Context在设备上最多可使用的磁盘空间大小与该设备整个磁盘空间大小的百分比，取值范围为1～100。（集中式设备）
 
-[**[ratio ]{lang="EN-US"}**]{#struct_0_10889_x4909_x401684707}*[limit-ratio]{lang="EN-US"}*[：表示]{style="font-family:宋体"}[Context]{lang="EN-US"}[在指定安全引擎上最多可使用的磁盘空间大小与该安全引擎整个磁盘空间大小的百分比，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[100]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[ratio **]*limit-ratio*：表示Context在指定安全引擎上最多可使用的磁盘空间大小与该安全引擎整个磁盘空间大小的百分比，取值范围为1～100。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x466369520}
+【使用指导】
 
-[[缺省情况下，所有的]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_310767784}[共享]{style="font-family:宋体"}[已进驻的安全引擎的所有磁盘空间]{style="font-family:宋体"}[。只要磁盘物理空间足够，就可以无限制使用。为了防止单个]{style="font-family:宋体"}[Context]{lang="EN-US"}[过多的占用磁盘而影响其它]{style="font-family:宋体"}[Context]{lang="EN-US"}[，特别是为防止异常情况下对磁盘的占用，可以为指定的]{style="font-family:宋体"}[Context]{lang="EN-US"}[配置]{style="font-family:宋体"}[磁盘上限。]{style="font-family:宋体"}
+缺省情况下，所有的Context共享已进驻的安全引擎的所有磁盘空间。只要磁盘物理空间足够，就可以无限制使用。为了防止单个Context过多的占用磁盘而影响其它Context，特别是为防止异常情况下对磁盘的占用，可以为指定的Context配置磁盘上限。
 
-[[请在]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_1948547455}[启动后配置磁盘上限。执行]{style="font-family:宋体"}**[limit-resource disk]{lang="EN-US"}**[命令前，请使用]{style="font-family:宋体"}**[display context resource]{lang="EN-US"}**[命令查看]{style="font-family:宋体"}[Context]{lang="EN-US"}[当前实际已经使用的磁盘空间大小。配置值应大于]{style="font-family:宋体"}[Context]{lang="EN-US"}[当前实际已经使用的磁盘空间大小，否则，会导致]{style="font-family:宋体"}[Context]{lang="EN-US"}[申请新的磁盘空间失败，从而无法进行文件夹创建、文件拷贝和保存等操作。]{style="font-family:宋体"}
+请在Context启动后配置磁盘上限。执行**limit-resource disk**命令前，请使用**display context resource**命令查看Context当前实际已经使用的磁盘空间大小。配置值应大于Context当前实际已经使用的磁盘空间大小，否则，会导致Context申请新的磁盘空间失败，从而无法进行文件夹创建、文件拷贝和保存等操作。
 
-[[如果设备上有多块磁盘，该命令对所有磁盘生效。]{style="font-family:宋体"}]{#struct_0_10889_x4909_x2071807587}
+如果设备上有多块磁盘，该命令对所有磁盘生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_788466113}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_x492449438}[配置]{style="font-family:宋体"}[Context cnt2]{lang="EN-US"}[最多可使用设备磁盘空间的]{style="font-family:宋体"}[30%]{lang="EN-US"}[。（集中式设备）]{style="font-family:宋体"}
+\# 配置Context cnt2最多可使用设备磁盘空间的30%。（集中式设备）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_x546632525}
+\<Sysname\> system-view
 
-[\[Sysname\] context cnt2]{lang="EN-US"}
+Sysname context cnt2
 
-[\[Sysname-context-2-cnt2\] limit-resource disk ratio 30]{lang="EN-US"}
+Sysname-context-2-cnt2 limit-resource disk ratio 30
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_1136142423}[配置]{style="font-family:宋体"}[Context cnt2]{lang="EN-US"}[最多可使用]{style="font-family:宋体"}[3]{lang="EN-US"}[号单板上安全引擎磁盘空间的]{style="font-family:宋体"}[20%]{lang="EN-US"}[。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+\# 配置Context cnt2最多可使用3号单板上安全引擎磁盘空间的20%。（分布式设备－独立运行模式）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_x52852094}
+\<Sysname\> system-view
 
-[\[Sysname\] context cnt2]{lang="EN-US"}
+Sysname context cnt2
 
-[\[Sysname-context-2-cnt2\] limit-resource disk slot 3 cpu 1 ratio 20]{lang="EN-US"}
+Sysname-context-2-cnt2 limit-resource disk slot 3 cpu 1 ratio 20
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_x347406020}[配置]{style="font-family:宋体"}[Context cnt2]{lang="EN-US"}[最多可使用]{style="font-family:宋体"}[2]{lang="EN-US"}[号成员设备上安全引擎磁盘空间的]{style="font-family:宋体"}[30%]{lang="EN-US"}[。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\# 配置Context cnt2最多可使用2号成员设备上安全引擎磁盘空间的30%。（集中式IRF设备）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_931288494}
+\<Sysname\> system-view
 
-[\[Sysname\] context cnt2]{lang="EN-US"}
+Sysname context cnt2
 
-[\[Sysname-context-2-cnt2\] limit-resource disk slot 2 cpu 1 ratio 30]{lang="EN-US"}
+Sysname-context-2-cnt2 limit-resource disk slot 2 cpu 1 ratio 30
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_x506726875}[配置]{style="font-family:宋体"}[Context cnt2]{lang="EN-US"}[最多可使用]{style="font-family:宋体"}[2]{lang="EN-US"}[号成员设备]{style="font-family:宋体"}[3]{lang="EN-US"}[号单板上安全引擎]{style="font-family:宋体"}[磁盘空间的]{style="font-family:宋体"}[30%]{lang="EN-US"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\# 配置Context cnt2最多可使用2号成员设备3号单板上安全引擎磁盘空间的30%。（分布式设备－IRF模式）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_x599270725}
+\<Sysname\> system-view
 
-[\[Sysname\] context cnt2]{lang="EN-US"}
+Sysname context cnt2
 
-[\[Sysname-context-2-cnt2\] limit-resource disk chassis 2 slot 3 cpu 1 ratio 30]{lang="EN-US"}
-:::
-
-::: {#2136473035 .myid}
-[]{#_Toc404783315}[]{#struct_0_10889_x4909_x2006243968}[]{#_Toc365648369}
+Sysname-context-2-cnt2 limit-resource disk chassis 2 slot 3 cpu 1 ratio 30
 
 **Context \-- Context命令 \-- limit-resource memory**
 
 ------------------------------------------------------------------------
 
-[**[limit-resource memory]{lang="EN-US"}**]{#struct_0_10889_x4909_x1096476176}[命令用来]{style="font-family:宋体"}[配置]{style="font-family:宋体"}[Context]{lang="EN-US"}[可使用的内存空间上限]{style="font-family:宋体"}[（用百分比表示）]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[limit-resource memory**]命令用来配置Context可使用的内存空间上限（用百分比表示）。
 
-[**[undo limit-resource memory]{lang="EN-US"}**]{#struct_0_10889_x4909_602315047}[命令用来恢复到缺省情况。]{style="font-family:宋体"}
+**[undo limit-resource memory**]命令用来恢复到缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_979047931}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_10889_x4909_1527667806}
+集中式设备：
 
-[**[limit-resource ]{lang="EN-US"}**]{#struct_0_10889_x4909_x922370302}**[memory]{lang="EN-US"}[ ratio]{lang="EN-US"}[ ]{lang="EN-US"}***[limit-ratio]{lang="EN-US"}*
+**[limit-resource **]**memory ratio***limit-ratio*
 
-[**[undo limit-resource ]{lang="EN-US"}**]{#struct_0_10889_x4909_x1848639241}**[memory]{lang="EN-US"}**
+**[undo limit-resource **]**memory**
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_10889_x4909_x564239455}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[limit-resource ]{lang="EN-US"}**]{#struct_0_10889_x4909_x52852093}**[memory]{lang="EN-US"}**[ **slot** *slot-number* **cpu** *cpu-number* **ratio** *limit-ratio*]{lang="EN-US"}
+**[limit-resource **]**memory** **slot** *slot-number* **cpu** *cpu-number* **ratio** *limit-ratio*
 
-[**[undo limit-resource ]{lang="EN-US"}**]{#struct_0_10889_x4909_x347406023}**[memory]{lang="EN-US"}**[ **slot** *slot-number* **cpu** *cpu-number*]{lang="EN-US"}
+**[undo limit-resource **]**memory** **slot** *slot-number* **cpu** *cpu-number*
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_10889_x4909_x499221585}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[limit-resource ]{lang="EN-US"}**]{#struct_0_10889_x4909_x624185120}**[memory]{lang="EN-US"}**[ **chassis** *chassis-number* **slot** *slot-number* **cpu** *cpu-number* **ratio** *limit-ratio*]{lang="EN-US"}
+**[limit-resource **]**memory** **chassis** *chassis-number* **slot** *slot-number* **cpu** *cpu-number* **ratio** *limit-ratio*
 
-[**[undo limit-resource ]{lang="EN-US"}**]{#struct_0_10889_x4909_1997906693}**[memory]{lang="EN-US"}**[ **chassis** *chassis-number* **slot** *slot-number* **cpu** *cpu-number*]{lang="EN-US"}
+**[undo limit-resource **]**memory** **chassis** *chassis-number* **slot** *slot-number* **cpu** *cpu-number*
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10889_x4909_906510533}
+【缺省情况】
 
-[[所有]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x2071742051}[共享物理设备上的所有内存空间，每个]{style="font-family:宋体"}[Context]{lang="EN-US"}[可使用的内存空间上限为空闲内存空间值。（集中式设备）]{style="font-family:宋体"}
+所有Context共享物理设备上的所有内存空间，每个Context可使用的内存空间上限为空闲内存空间值。（集中式设备）
 
-[[进驻到同一安全引擎的所有]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x1272792901}[共享该安全引擎的所有内存空间，每个]{style="font-family:宋体"}[Context]{lang="EN-US"}[可使用的内存空间上限为该安全引擎的空闲内存空间值。（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[/]{lang="EN-US"}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+进驻到同一安全引擎的所有Context共享该安全引擎的所有内存空间，每个Context可使用的内存空间上限为该安全引擎的空闲内存空间值。（分布式设备－独立运行模式/集中式IRF设备/分布式设备－IRF模式）
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_146638801}
+【视图】
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x1251234024}[视图]{style="font-family:宋体"}
+Context视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_2143040126}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_1679177559}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x664568847}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1137343568}
+【参数】
 
-[**[slot]{lang="EN-US" style="color:black"}**]{#struct_0_10889_x4909_x52852088}[ *slot-number* **cpu** *cpu-number*]{lang="EN-US" style="color:black"}[：表示安全引擎所在的位置，其中，]{style="font-family:宋体;color:black"}*[slot-number]{lang="EN-US" style="color:black"}*[表示安全引擎所在的槽位号，]{style="font-family:宋体;
-color:black"}*[cpu-number]{lang="EN-US" style="color:black"}*[表示安全引擎的]{style="font-family:宋体;color:black"}[CPU]{lang="EN-US" style="color:black"}[的编号。]{style="font-family:宋体;color:black"}[（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot**] *slot-number* **cpu** *cpu-number*：表示安全引擎所在的位置，其中，*slot-number*表示安全引擎所在的槽位号，*cpu-number*表示安全引擎的CPU的编号。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**[ *slot-number* **cpu** *cpu-number*]{lang="EN-US"}]{#struct_0_10889_x4909_1608909120}[：表示成员设备安全引擎所在的位置，其中，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备的成员编号，]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示安全引擎的]{style="font-family:宋体;color:black"}[CPU]{lang="EN-US" style="color:black"}[的编号。]{style="font-family:宋体;color:black"}[（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**[slot** *slot-number* **cpu** *cpu-number*]：表示成员设备安全引擎所在的位置，其中，*slot-number*表示设备的成员编号，*cpu-number*表示安全引擎的CPU的编号。（集中式IRF设备）
 
-[**[chassis]{lang="EN-US"}***[ chassis-number ]{lang="EN-US"}***[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}***[ cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_10889_x4909_1556560951}[：表示成员设备安全引擎所在的位置，其中，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示安全引擎所在的设备的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示安全引擎所在的槽位号，]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示安全引擎的]{style="font-family:宋体;color:black"}[CPU]{lang="EN-US" style="color:black"}[的编号。]{style="font-family:宋体;
-color:black"}[（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**[chassis*** chassis-number ***slot ***slot-number*** cpu** *cpu-number*]：表示成员设备安全引擎所在的位置，其中，*chassis-number*表示安全引擎所在的设备的成员编号，*slot-number*表示安全引擎所在的槽位号，*cpu-number*表示安全引擎的CPU的编号。（分布式设备－IRF模式）
 
-[**[ratio ]{lang="EN-US"}**]{#struct_0_10889_x4909_x488516958}*[limit-ratio]{lang="EN-US"}*[：表示]{style="font-family:宋体"}[Context]{lang="EN-US"}[在设备上最多可使用的内存大小与该设备整个内存大小的百分比，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[100]{lang="EN-US"}[。（集中式设备）]{style="font-family:宋体"}
+**[ratio **]*limit-ratio*：表示Context在设备上最多可使用的内存大小与该设备整个内存大小的百分比，取值范围为1～100。（集中式设备）
 
-[**[ratio ]{lang="EN-US"}**]{#struct_0_10889_x4909_x1472912980}*[limit-ratio]{lang="EN-US"}*[：表示]{style="font-family:宋体"}[Context]{lang="EN-US"}[在指定安全引擎上最多可使用的内存大小与该安全引擎整个内存大小的百分比，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[100]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[ratio **]*limit-ratio*：表示Context在指定安全引擎上最多可使用的内存大小与该安全引擎整个内存大小的百分比，取值范围为1～100。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_395533994}
+【使用指导】
 
-[[缺省情况下，所有的]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_569655012}[共享使用]{style="font-family:宋体"}[已进驻的安全引擎的所有内存空间]{style="font-family:宋体"}[。只要物理内存足够，就可以无限制使用。为了防止单个]{style="font-family:宋体"}[Context]{lang="EN-US"}[过多的占用内存而影响其它]{style="font-family:宋体"}[Context]{lang="EN-US"}[，特别是为防止异常情况下对内存的占用，可以为指定的]{style="font-family:宋体"}[Context]{lang="EN-US"}[配置内存上限。]{style="font-family:宋体"}
+缺省情况下，所有的Context共享使用已进驻的安全引擎的所有内存空间。只要物理内存足够，就可以无限制使用。为了防止单个Context过多的占用内存而影响其它Context，特别是为防止异常情况下对内存的占用，可以为指定的Context配置内存上限。
 
-[[需要注意的是，请在]{style="font-family:宋体"}]{#struct_0_10889_x4909_1739212815}[Context]{lang="EN-US"}[启动后再配置内存上限，并且配置的上限值不应过小，以免]{style="font-family:宋体"}[Context]{lang="EN-US"}[内业务申请不到内存而引起功能异常。]{style="font-family:宋体"}
+需要注意的是，请在Context启动后再配置内存上限，并且配置的上限值不应过小，以免Context内业务申请不到内存而引起功能异常。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_414645907}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_x1740355379}[配置]{style="font-family:宋体"}[Context cnt2]{lang="EN-US"}[最多可使用设备内存的]{style="font-family:宋体"}[30%]{lang="EN-US"}[。（集中式设备）]{style="font-family:宋体"}
+\# 配置Context cnt2最多可使用设备内存的30%。（集中式设备）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_978122667}
+\<Sysname\> system-view
 
-[\[Sysname\] context cnt2]{lang="EN-US"}
+Sysname context cnt2
 
-[\[Sysname-context-2-cnt2\] limit-resource memory ratio 30]{lang="EN-US"}
+Sysname-context-2-cnt2 limit-resource memory ratio 30
 
-[\# ]{lang="EN-US" style="font-size:10.5pt;font-family:
-\"Arial\",\"sans-serif\""}[配置]{style="font-size:10.5pt;font-family:宋体"}[Context cnt2]{lang="EN-US" style="font-size:10.5pt;font-family:\"Arial\",\"sans-serif\""}[最多可使用]{style="font-size:10.5pt;font-family:宋体"}[1]{lang="EN-US" style="font-size:10.5pt;font-family:\"Arial\",\"sans-serif\""}[号单板安全引擎内存的]{style="font-size:10.5pt;font-family:宋体"}[30%]{lang="EN-US" style="font-size:10.5pt;font-family:\"Arial\",\"sans-serif\""}[。（分布式设备－独立运行模式）]{style="font-size:10.5pt;font-family:宋体"}
+\# 配置Context cnt2最多可使用1号单板安全引擎内存的30%。（分布式设备－独立运行模式）
 
-[\<Sysname\> system-view]{lang="EN-US"}
+\<Sysname\> system-view
 
-[\[Sysname\] context cnt2]{lang="EN-US"}
+Sysname context cnt2
 
-[\[Sysname-context-2-cnt2\] limit-resource memory slot 1 cpu 1 ratio 30]{lang="EN-US"}
+Sysname-context-2-cnt2 limit-resource memory slot 1 cpu 1 ratio 30
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_x1367179660}[配置]{style="font-family:宋体"}[Context cnt2]{lang="EN-US"}[最多可使用]{style="font-family:宋体"}[2]{lang="EN-US"}[号成员设备安全引擎内存的]{style="font-family:宋体"}[30%]{lang="EN-US"}[。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\# 配置Context cnt2最多可使用2号成员设备安全引擎内存的30%。（集中式IRF设备）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_x1942734481}
+\<Sysname\> system-view
 
-[\[Sysname\] context cnt2]{lang="EN-US"}
+Sysname context cnt2
 
-[\[Sysname-context-2-cnt2\] limit-resource memory slot 2 cpu 1 ratio 30]{lang="EN-US"}
+Sysname-context-2-cnt2 limit-resource memory slot 2 cpu 1 ratio 30
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_1452437988}[配置]{style="font-family:宋体"}[Context cnt2]{lang="EN-US"}[最多可使用]{style="font-family:宋体"}[2]{lang="EN-US"}[号成员设备]{style="font-family:宋体"}[1]{lang="EN-US"}[号单板安全引擎内存的]{style="font-family:宋体"}[30%]{lang="EN-US"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\# 配置Context cnt2最多可使用2号成员设备1号单板安全引擎内存的30%。（分布式设备－IRF模式）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_x52852087}
+\<Sysname\> system-view
 
-[\[Sysname\] context cnt2]{lang="EN-US"}
+Sysname context cnt2
 
-[\[Sysname-context-2-cnt2\] limit-resource memory chassis 2 slot 1 cpu 1 ratio 30]{lang="EN-US"}
-:::
-
-::::: {#870708914 .myid}
-[]{#_Toc404783316}[]{#struct_0_10889_x4909_1608909117}[]{#_Toc356459225}
+Sysname-context-2-cnt2 limit-resource memory chassis 2 slot 1 cpu 1 ratio 30
 
 **Context \-- Context命令 \-- location blade-controller**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](Context命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_10889_x4909_1556364340}
-:::
+![说明](Context命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_10889_x4909_910316235}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[location blade-controller]{lang="EN-US"}**]{#struct_0_10889_x4909_700274850}[命令用来将安全引擎加入安全引擎组。]{style="font-family:
-宋体"}
+**[location blade-controller**]命令用来将安全引擎加入安全引擎组。
 
-[**[undo]{lang="EN-US"}**[ **location blade-controller**]{lang="EN-US"}]{#struct_0_10889_x4909_1640738423}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **location blade-controller**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1944262582}
+【命令】
 
-[[集中式设备[/]{lang="EN-US"}分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_10889_x4909_x1709405275}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[：]{style="font-family:宋体"}
+集中式设备/分布式设备－独立运行模式/集中式IRF设备：
 
-[**[location blade-controller slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*[ **cpu** *cpu-number*]{lang="EN-US"}]{#struct_0_10889_x4909_x1684310558}
+**[location blade-controller slot ***slot-number* **cpu** *cpu-number*]
 
-[**[undo location blade-controller slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*[ **cpu** *cpu-number*]{lang="EN-US"}]{#struct_0_10889_x4909_x1208462181}
+**[undo location blade-controller slot ***slot-number* **cpu** *cpu-number*]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_10889_x4909_1000286523}[模式]{style="font-family:宋体"}[：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[location blade-controller chassis]{lang="EN-US"}***[ chassis-number ]{lang="EN-US"}***[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*[ **cpu** *cpu-number*]{lang="EN-US"}]{#struct_0_10889_x4909_x2121134752}
+**[location blade-controller chassis*** chassis-number ***slot ***slot-number* **cpu** *cpu-number*]
 
-[**[undo location blade-controller chassis]{lang="EN-US"}***[ chassis-number ]{lang="EN-US"}***[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*[ **cpu** *cpu-number*]{lang="EN-US"}]{#struct_0_10889_x4909_x52852090}
+**[undo location blade-controller chassis*** chassis-number ***slot ***slot-number* **cpu** *cpu-number*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x347406024}
+【缺省情况】
 
-[[安全引擎插入时会自动加入缺省安全引擎组。]{style="font-family:宋体"}]{#struct_0_10889_x4909_931550638}
+安全引擎插入时会自动加入缺省安全引擎组。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_928910296}
+【视图】
 
-[[安全引擎组]{style="font-family:宋体"}]{#struct_0_10889_x4909_2076224551}[视图]{style="font-family:宋体"}
+安全引擎组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1844443821}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x48968007}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x406698707}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x499542404}
+【参数】
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_10889_x4909_x1000850224}[：表示安全引擎所在的槽位号。（]{style="font-family:宋体"}[集中式设备[/]{lang="EN-US"}分布式设备－独立运行模式]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+**[slot*** slot-number*]：表示安全引擎所在的槽位号。（集中式设备[/分布式设备－独立运行模式]）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_10889_x4909_x2072135266}[：表示安全引擎所在设备的成员编号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：表示安全引擎所在设备的成员编号。（集中式IRF设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}*]{#struct_0_10889_x4909_x223756604}[：表示安全引擎所在设备的成员编号。（]{style="font-family:宋体"}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+**[chassis ***chassis-number*]：表示安全引擎所在设备的成员编号。（分布式设备－IRF模式）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_10889_x4909_x710141883}[：表示安全引擎所在的槽位号。（]{style="font-family:宋体"}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+**[slot*** slot-number*]：表示安全引擎所在的槽位号。（分布式设备－IRF模式）
 
-[**[cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_10889_x4909_148790646}[：表示安全引擎的]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[cpu** *cpu-number*]：表示安全引擎的CPU编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x589340797}
+【使用指导】
 
-[[使用该命令可以：]{style="font-family:宋体"}]{#struct_0_10889_x4909_x1473371732}
+使用该命令可以：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[将一个已经在位的安全引擎加入安全引擎组，这样的命令会立即生效。]{style="font-family:宋体"}]{#struct_0_10889_x4909_x2002642865}
+·将一个已经在位的安全引擎加入安全引擎组，这样的命令会立即生效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[将一个不在位的安全引擎加入安全引擎组，这样的命令会在安全引擎插入后生效。这样的配置方式称为预配置，能够帮助用户先完成配置，再进行硬件部署。使用该方式配置前，请先规划安全引擎即将插入的位置。因为，如果配置的位置误插入非安全引擎，设备会自动将该命令删除，以后插入安全引擎时，需要重新配置。]{style="font-family:宋体"}]{#struct_0_10889_x4909_x1018815578}
+·将一个不在位的安全引擎加入安全引擎组，这样的命令会在安全引擎插入后生效。这样的配置方式称为预配置，能够帮助用户先完成配置，再进行硬件部署。使用该方式配置前，请先规划安全引擎即将插入的位置。因为，如果配置的位置误插入非安全引擎，设备会自动将该命令删除，以后插入安全引擎时，需要重新配置。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_10889_x4909_x856264027}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[一个安全引擎只能属于一个安全引擎组。]{style="font-family:宋体"}]{#struct_0_10889_x4909_x52852089}
+·一个安全引擎只能属于一个安全引擎组。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当前，每个安全引擎组中可加入的安全引擎个数没有限制。]{style="font-family:宋体"}]{#struct_0_10889_x4909_1608909119}
+·当前，每个安全引擎组中可加入的安全引擎个数没有限制。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[将安全引擎从一个安全引擎组切换到另外一个安全引擎组时，防火墙插卡会自动重启。（防火墙插卡）]{style="font-family:宋体"}]{#struct_0_10889_x4909_1557019700}
+·将安全引擎从一个安全引擎组切换到另外一个安全引擎组时，防火墙插卡会自动重启。（防火墙插卡）
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x283749043}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_986911948}[将安全引擎加入安全引擎组]{style="font-family:宋体"}[abc]{lang="EN-US"}[。]{style="font-family:宋体"}[（]{style="font-family:宋体"}[集中式设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+\# 将安全引擎加入安全引擎组abc。（集中式设备）
 
-[[\<sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_x1393213056}
+\<sysname\> system-view
 
-[\[sysname\] blade-controller-team abc]{lang="EN-US"}
+sysname blade-controller-team abc
 
-[\[Sysname-blade-controller-team-2-abc\] location blade-controller slot 0 cpu 1]{lang="EN-US"}
+Sysname-blade-controller-team-2-abc location blade-controller slot 0 cpu 1
 
-[This operation will also reboot the blade controller. Continue? \[Y/N\]:y]{lang="EN-US"}
+This operation will also reboot the blade controller. Continue? [Y/N:y]
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_1745819814}[将]{style="font-family:宋体"}[2]{lang="EN-US"}[号槽位上]{style="font-family:宋体"}[1]{lang="EN-US"}[号]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的安全引擎加入安全引擎组]{style="font-family:宋体"}[abc]{lang="EN-US"}[。]{style="font-family:宋体"}[（]{style="font-family:宋体"}[分布式设备－独立运行模式]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+\# 将2号槽位上1号CPU的安全引擎加入安全引擎组abc。（分布式设备－独立运行模式）
 
-[[\<sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_1121147969}
+\<sysname\> system-view
 
-[\[sysname\] blade-controller-team abc]{lang="EN-US"}
+sysname blade-controller-team abc
 
-[\[Sysname-blade-controller-team-2-abc\] location blade-controller slot 2 cpu 1]{lang="EN-US"}
+Sysname-blade-controller-team-2-abc location blade-controller slot 2 cpu 1
 
-[This operation will also reboot the blade controller. Continue? \[Y/N\]:y]{lang="EN-US"}
+This operation will also reboot the blade controller. Continue? [Y/N:y]
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_1731444520}[将]{style="font-family:宋体"}[2]{lang="EN-US"}[号成员设备上]{style="font-family:宋体"}[1]{lang="EN-US"}[号]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的安全引擎加入安全引擎组]{style="font-family:宋体"}[abc]{lang="EN-US"}[。]{style="font-family:宋体"}[（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\# 将2号成员设备上1号CPU的安全引擎加入安全引擎组abc。（集中式IRF设备）
 
-[[\<sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_x52852084}
+\<sysname\> system-view
 
-[\[sysname\] blade-controller-team abc]{lang="EN-US"}
+sysname blade-controller-team abc
 
-[\[Sysname-blade-controller-team-2-abc\] location blade-controller slot 2 cpu 1]{lang="EN-US"}
+Sysname-blade-controller-team-2-abc location blade-controller slot 2 cpu 1
 
-[This operation will also reboot the blade controller. Continue? \[Y/N\]:y]{lang="EN-US"}
+This operation will also reboot the blade controller. Continue? [Y/N:y]
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_1608909116}[将]{style="font-family:宋体"}[2]{lang="EN-US"}[号成员设备]{style="font-family:宋体"}[2]{lang="EN-US"}[号槽位上]{style="font-family:宋体"}[1]{lang="EN-US"}[号]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的安全引擎加入安全引擎组]{style="font-family:宋体"}[abc]{lang="EN-US"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\# 将2号成员设备2号槽位上1号CPU的安全引擎加入安全引擎组abc。（分布式设备－IRF模式）
 
-[[\<sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_1556429876}
+\<sysname\> system-view
 
-[\[sysname\] blade-controller-team abc]{lang="EN-US"}
+sysname blade-controller-team abc
 
-[\[Sysname-blade-controller-team-2-abc\] location blade-controller chassis 2 slot 2 cpu 1]{lang="EN-US"}
+Sysname-blade-controller-team-2-abc location blade-controller chassis 2 slot 2 cpu 1
 
-[This operation will also reboot the blade controller. Continue? \[Y/N\]:y]{lang="EN-US"}
+This operation will also reboot the blade controller. Continue? [Y/N:y]
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_x1473175124}[将]{style="font-family:宋体"}[3]{lang="EN-US"}[号槽位上]{style="font-family:宋体"}[1]{lang="EN-US"}[号]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的安全引擎（不在位）加入安全引擎组]{style="font-family:宋体"}[abc]{lang="EN-US"}[。]{style="font-family:宋体"}[（]{style="font-family:宋体"}[分布式设备－独立运行模式]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+\# 将3号槽位上1号CPU的安全引擎（不在位）加入安全引擎组abc。（分布式设备－独立运行模式）
 
-[[\<sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_x664511321}
+\<sysname\> system-view
 
-[\[sysname\] blade-controller-team abc]{lang="EN-US"}
+sysname blade-controller-team abc
 
-[\[Sysname-blade-controller-team-2-abc\] location blade-controller slot 3 cpu 1]{lang="EN-US"}
+Sysname-blade-controller-team-2-abc location blade-controller slot 3 cpu 1
 
-[Operation successed, but the blade controller is absent.]{lang="EN-US"}
+Operation successed, but the blade controller is absent.
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_x896821823}[将]{style="font-family:宋体"}[3]{lang="EN-US"}[号成员设备上]{style="font-family:宋体"}[1]{lang="EN-US"}[号]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的安全引擎（不在位）加入安全引擎组]{style="font-family:宋体"}[abc]{lang="EN-US"}[。]{style="font-family:宋体"}[（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\# 将3号成员设备上1号CPU的安全引擎（不在位）加入安全引擎组abc。（集中式IRF设备）
 
-[[\<sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_349024784}
+\<sysname\> system-view
 
-[\[sysname\] blade-controller-team abc]{lang="EN-US"}
+sysname blade-controller-team abc
 
-[\[Sysname-blade-controller-team-2-abc\] location blade-controller slot 3 cpu 1]{lang="EN-US"}
+Sysname-blade-controller-team-2-abc location blade-controller slot 3 cpu 1
 
-[Operation successed, but the blade controller is absent.]{lang="EN-US"}
+Operation successed, but the blade controller is absent.
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_x62667648}[将]{style="font-family:宋体"}[2]{lang="EN-US"}[号成员设备]{style="font-family:
-宋体"}[3]{lang="EN-US"}[号槽位上]{style="font-family:宋体"}[1]{lang="EN-US"}[号]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的安全引擎（不在位）加入安全引擎组]{style="font-family:宋体"}[abc]{lang="EN-US"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\# 将2号成员设备3号槽位上1号CPU的安全引擎（不在位）加入安全引擎组abc。（分布式设备－IRF模式）
 
-[[\<sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_x838789013}
+\<sysname\> system-view
 
-[\[sysname\] blade-controller-team abc]{lang="EN-US"}
+sysname blade-controller-team abc
 
-[\[Sysname-blade-controller-team-2-abc\] location blade-controller chassis 2 slot 3 cpu 1]{lang="EN-US"}
+Sysname-blade-controller-team-2-abc location blade-controller chassis 2 slot 3 cpu 1
 
-[Operation successed, but the blade controller is absent.]{lang="EN-US"}
-:::::
-
-::: {#-102726406 .myid}
-[]{#_Toc404783317}[]{#struct_0_10889_x4909_899634376}[]{#_Toc365648362}
+Operation successed, but the blade controller is absent.
 
 **Context \-- Context命令 \-- location blade-controller-team (Context view)**
 
 ------------------------------------------------------------------------
 
-[**[location]{lang="EN-US"}**]{#struct_0_10889_x4909_x304737080}**[ blade-controller-team]{lang="EN-US"}**[命令用]{style="font-family:宋体"}[于使]{style="font-family:宋体"}[Context]{lang="EN-US"}[进驻对应的安全引擎组。]{style="font-family:宋体"}
+**[location**]** blade-controller-team**命令用于使Context进驻对应的安全引擎组。
 
-[**[undo location]{lang="EN-US"}**]{#struct_0_10889_x4909_x776384674}**[ blade-controller-team]{lang="EN-US"}**[命令用于将]{style="font-family:宋体"}[Context]{lang="EN-US"}[从安全引擎组中移除]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo location**]** blade-controller-team**命令用于将Context从安全引擎组中移除。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x728443742}
+【命令】
 
-[**[location blade-controller-team]{lang="EN-US"}**]{#struct_0_10889_x4909_715480876}*[ team-id]{lang="EN-US"}*
+**[location blade-controller-team**]* team-id*
 
-[**[undo location blade-controller-team]{lang="EN-US"}**]{#struct_0_10889_x4909_x701255315}*[ team-id]{lang="EN-US"}*
+**[undo location blade-controller-team**]* team-id*
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1609484345}
+【缺省情况】
 
-[[缺省]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x1308694254}[进驻了所有安全引擎组，非缺省]{style="font-family:宋体"}[Context]{lang="EN-US"}[没有进驻任何安全引擎组。（包装防火墙）]{style="font-family:宋体"}
+缺省Context进驻了所有安全引擎组，非缺省Context没有进驻任何安全引擎组。（包装防火墙）
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x488058206}[未进驻任何安全引擎组。（防火墙插卡）]{style="font-family:宋体"}
+Context未进驻任何安全引擎组。（防火墙插卡）
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x959036773}
+【视图】
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_756692480}[视图]{style="font-family:宋体"}
+Context视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x286913126}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x2017734478}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x629579185}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x52852083}
+【参数】
 
-[*[team-id]{lang="EN-US"}*]{#struct_0_10889_x4909_1608909113}[：]{style="font-family:宋体"}[当前已经创建的]{style="font-family:宋体"}[安全引擎组的编号。]{style="font-family:宋体"}
+*[team-id*]：当前已经创建的安全引擎组的编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1556626484}
+【使用指导】
 
-[[如果没有进驻安全引擎]{style="font-family:宋体"}]{#struct_0_10889_x4909_2077780276}**[，]{style="font-family:宋体"}**[即使]{style="font-family:宋体"}[Context]{lang="EN-US"}[已经启动，]{style="font-family:宋体"}[Context]{lang="EN-US"}[也没有实际运行的环境，无法运行业务。]{style="font-family:宋体"}
+如果没有进驻安全引擎**，**即使Context已经启动，Context也没有实际运行的环境，无法运行业务。
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_1099376748}[进驻安全引擎组后，才能使用安全引擎组中安全引擎上的资源，包括]{style="font-family:宋体"}[CPU]{lang="EN-US"}[、磁盘和内存。]{style="font-family:宋体"}
+Context进驻安全引擎组后，才能使用安全引擎组中安全引擎上的资源，包括CPU、磁盘和内存。
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_x369475070}[和安全引擎组的关系如下：]{style="font-family:宋体"}
+Context和安全引擎组的关系如下：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[一个]{style="font-family:宋体"}]{#struct_0_10889_x4909_1197959248}[Context]{lang="EN-US"}[只能进驻一个安全引擎组。如果该]{style="font-family:宋体"}[Context]{lang="EN-US"}[已经进驻一个安全引擎组，请先执行]{style="font-family:宋体"}**[undo location]{lang="EN-US"}[ blade-controller-team]{lang="EN-US"}**[命令退出已进驻的安全引擎组，再配置]{style="font-family:宋体"}**[location]{lang="EN-US"}[ blade-controller-team]{lang="EN-US"}**[命令，进驻其它安全引擎组。]{style="font-family:宋体"}
+·一个Context只能进驻一个安全引擎组。如果该Context已经进驻一个安全引擎组，请先执行**undo location blade-controller-team**命令退出已进驻的安全引擎组，再配置**location blade-controller-team**命令，进驻其它安全引擎组。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在不同的]{style="font-family:宋体"}]{#struct_0_10889_x4909_1208368663}[Context]{lang="EN-US"}[视图下执行该命令可以使多个]{style="font-family:宋体"}[Context]{lang="EN-US"}[进驻同一个安全引擎组。最多可以有]{style="font-family:宋体"}[256]{lang="EN-US"}[个]{style="font-family:宋体"}[Context]{lang="EN-US"}[进驻到同一个安全引擎组，安全引擎组和]{style="font-family:宋体"}[Context]{lang="EN-US"}[是一对多的关系。]{style="font-family:宋体"}
+·在不同的Context视图下执行该命令可以使多个Context进驻同一个安全引擎组。最多可以有256个Context进驻到同一个安全引擎组，安全引擎组和Context是一对多的关系。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[安全引擎组中加入新的安全引擎后，安全引擎组上已进驻的]{style="font-family:宋体"}]{#struct_0_10889_x4909_x82065181}[Context]{lang="EN-US"}[会自动进驻到新加入的安全引擎上，不需要再次配置。]{style="font-family:宋体"}
+·安全引擎组中加入新的安全引擎后，安全引擎组上已进驻的Context会自动进驻到新加入的安全引擎上，不需要再次配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_863860276}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_x494266447}[将]{style="font-family:宋体"}[Context cnt2]{lang="EN-US"}[进驻到安全引擎组]{style="font-family:宋体"}[2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 将Context cnt2进驻到安全引擎组2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_1199967925}
+\<Sysname\> system-view
 
-[\[Sysname\] context cnt2]{lang="EN-US"}
+Sysname context cnt2
 
-[\[Sysname-context-2-cnt2\] location blade-controller-team 2]{lang="EN-US"}
+Sysname-context-2-cnt2 location blade-controller-team 2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1385968609}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[blade-controller-team]{lang="EN-US"}**]{#struct_0_10889_x4909_248233796}
+·**blade-controller-team**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[location blade-controller-team]{lang="EN-US"}**[ (MDC view)]{lang="EN-US"}]{#struct_0_10889_x4909_x2071676514}
-:::
-
-::::: {#1091136757 .myid}
-[]{#_Toc404783318}[]{#struct_0_10889_x4909_x1903179747}
+·**location blade-controller-team** (MDC view)
 
 **Context \-- Context命令 \-- location blade-controller-team (MDC view)**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](Context命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_10889_x4909_1521126020}
-:::
+![说明](Context命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令只有防火墙插卡设备支持。]{style="font-family:KaiTi_GB2312"}]{#struct_0_10889_x4909_x1697494388}
-:::
+本命令只有防火墙插卡设备支持。
 
-[ ]{lang="EN-US"}
+**[location**]** blade-controller-team**命令用来使MDC进驻对应的安全引擎组。
 
-[**[location]{lang="EN-US"}**]{#struct_0_10889_x4909_1265000086}**[ blade-controller-team]{lang="EN-US"}**[命令用]{style="font-family:宋体"}[来使]{style="font-family:宋体"}[MDC]{lang="EN-US"}[进驻对应的安全引擎组。]{style="font-family:宋体"}
+**[undo location**]** blade-controller-team**命令用来将MDC从安全引擎组中移除。
 
-[**[undo location]{lang="EN-US"}**]{#struct_0_10889_x4909_x215198780}**[ blade-controller-team]{lang="EN-US"}**[命令用来将]{style="font-family:宋体"}[MDC]{lang="EN-US"}[从安全引擎组中移除]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1080588010}
+**[location blade-controller-team**]* team-id*
 
-[**[location blade-controller-team]{lang="EN-US"}**]{#struct_0_10889_x4909_1635242488}*[ team-id]{lang="EN-US"}*
+**[undo location blade-controller-team**]* team-id*
 
-[**[undo location blade-controller-team]{lang="EN-US"}**]{#struct_0_10889_x4909_x991822198}*[ team-id]{lang="EN-US"}*
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10889_x4909_885800314}
+缺省MDC进驻了所有安全引擎组，非缺省MDC没有进驻任何安全引擎组。
 
-[[缺省]{style="font-family:宋体"}[MDC]{lang="EN-US"}]{#struct_0_10889_x4909_540860621}[进驻了所有安全引擎组，非缺省]{style="font-family:宋体"}[MDC]{lang="EN-US"}[没有进驻任何安全引擎组。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1347812577}
+MDC视图
 
-[[MDC]{lang="EN-US"}]{#struct_0_10889_x4909_146758045}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x875670746}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_529990341}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_695920850}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x78992350}
+*[team-id*]：当前已经创建的安全引擎组的编号。
 
-[*[team-id]{lang="EN-US"}*]{#struct_0_10889_x4909_1521126021}[：]{style="font-family:宋体"}[当前已经创建的]{style="font-family:宋体"}[安全引擎组的编号。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1697428852}
+Context从属于MDC，Context必须依附于所属MDC环境。为了使Context能进驻安全引擎，必须先将其所属的MDC进驻到该安全引擎。
 
-[[Context]{lang="EN-US"}]{#struct_0_10889_x4909_638829580}[从属于]{style="font-family:宋体"}[MDC]{lang="EN-US"}[，]{style="font-family:宋体"}[Context]{lang="EN-US"}[必须依附于所属]{style="font-family:宋体"}[MDC]{lang="EN-US"}[环境。为了使]{style="font-family:宋体"}[Context]{lang="EN-US"}[能进驻安全引擎，必须先将其所属的]{style="font-family:宋体"}[MDC]{lang="EN-US"}[进驻到该安全引擎。]{style="font-family:宋体"}
+MDC和安全引擎组的关系如下：
 
-[[MDC]{lang="EN-US"}]{#struct_0_10889_x4909_1028956338}[和安全引擎组的关系如下：]{style="font-family:宋体"}
+·多次执行该命令可以使一个MDC进驻多个不同的安全引擎组。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[多次执行该命令可以使一个]{lang="EN-US" style="font-family:宋体"}[MDC]{lang="EN-US"}]{#struct_0_10889_x4909_1355958658}[进驻多个不同的安全引擎组。]{lang="EN-US" style="font-family:宋体"}
+·在不同的MDC视图下执行该命令可以使多个MDC进驻同一个安全引擎组。MDC进驻安全引擎组后，该MDC会进驻引擎组内所有安全引擎。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在不同的]{lang="EN-US" style="font-family:宋体"}[MDC]{lang="EN-US"}]{#struct_0_10889_x4909_x1629042489}[视图下执行该命令可以使多个]{lang="EN-US" style="font-family:宋体"}[MDC]{lang="EN-US"}[进驻同一个安全引擎组。]{lang="EN-US" style="font-family:宋体"}[MDC]{lang="EN-US"}[进驻安全引擎组后，该]{lang="EN-US" style="font-family:宋体"}[MDC]{lang="EN-US"}[会进驻引擎组内所有安全引擎。]{lang="EN-US" style="font-family:宋体"}
+需要注意的是：
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_10889_x4909_x1937649265}
+·该命令用于MDC进驻引擎组。要使MDC下的Context进驻安全引擎组，请在对应的Context视图下执行**location blade-controller-team**命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[该命令用于]{style="font-family:宋体"}]{#struct_0_10889_x4909_x1609893490}[MDC]{lang="EN-US"}[进驻引擎组。]{style="font-family:宋体"}[要使]{lang="EN-US" style="font-family:宋体"}[MDC]{lang="EN-US"}[下的]{lang="EN-US" style="font-family:宋体"}[Context]{lang="EN-US"}[进驻安全引擎组，请在对应的]{lang="EN-US" style="font-family:宋体"}[Context]{lang="EN-US"}[视图下执行]{lang="EN-US" style="font-family:宋体"}**[location ]{lang="EN-US"}[blade-controller-team]{lang="EN-US"}**[命令。]{lang="EN-US" style="font-family:宋体"}
+·执行**undo** **location** **blade-controller-team**命令时，要求本MDC内不存在任何Context。否则，命令执行失败。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[执行]{lang="EN-US" style="font-family:宋体"}**[undo]{lang="EN-US"}**[ **location** ]{lang="EN-US"}]{#struct_0_10889_x4909_x673127668}**[blade-controller-team]{lang="EN-US"}**[命令时，要求本]{lang="EN-US" style="font-family:
-宋体"}[MDC]{lang="EN-US"}[内不存在任何]{lang="EN-US" style="font-family:
-宋体"}[Context]{lang="EN-US"}[。否则，命令执行失败。]{lang="EN-US" style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1681803520}
+\# 使MDC sub1进驻安全引擎组2。
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_827326928}[使]{style="font-family:宋体"}[MDC sub1]{lang="EN-US"}[进驻安全引擎组]{style="font-family:宋体"}[2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_1640641895}
+Sysname mdc sub1
 
-[\[Sysname\] mdc sub1]{lang="EN-US"}
+Sysname-mdc-2-sub1 location blade-controller-team 2
 
-[\[Sysname-mdc-2-sub1\] location blade-controller-team 2]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x329926601}
+·**blade-controller-team**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[blade-controller-team]{lang="EN-US"}**]{#struct_0_10889_x4909_x544270201}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[location blade-controller-team]{lang="EN-US"}**[ (Context view)]{lang="EN-US"}]{#struct_0_10889_x4909_x2071610978}
-:::::
-
-::::: {#-1594610173 .myid}
-[]{#_Toc404783319}[]{#struct_0_10889_x4909_x1472585300}
+·**location blade-controller-team** (Context view)
 
 **Context \-- Context命令 \-- reset blade-controller-team**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](Context命令.files/image001.png){#图片 1 width="62" height="25"}]{lang="EN-US"}]{#struct_0_10889_x4909_1242114541}
-:::
+![说明](Context命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_10889_x4909_x1738641073}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[reset blade-controller-team**]命令用来清除指定安全引擎组中不在位的安全引擎的数据信息。
 
-[**[reset blade-controller-team]{lang="EN-US"}**]{#struct_0_10889_x4909_x1473044051}[命令用来清除指定安全引擎组中不在位的安全引擎的数据信息。]{style="font-family:
-宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1271629032}
+集中式设备/分布式设备－独立运行模式/集中式IRF设备：
 
-[[集中式设备[/]{lang="EN-US"}分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_10889_x4909_1766857551}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[：]{style="font-family:宋体"}
+**[reset blade-controller-team** *team-id* **member slot** *slot-number* **cpu** *cpu-number*]
 
-[**[reset blade-controller-team]{lang="EN-US"}**[ *team-id* **member slot** *slot-number* **cpu** *cpu-number*]{lang="EN-US"}]{#struct_0_10889_x4909_x509377787}
+分布式IRF设备：
 
-[[分布式]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_10889_x4909_x1972875543}[设备：]{style="font-family:宋体"}
+**[reset blade-controller-team ***team-id ***member chassis*** chassis-number ***slot ***slot-number* **cpu** *cpu-number*]
 
-[**[reset blade-controller-team ]{lang="EN-US"}***[team-id ]{lang="EN-US"}***[member chassis]{lang="EN-US"}***[ chassis-number ]{lang="EN-US"}***[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*[ **cpu** *cpu-number*]{lang="EN-US"}]{#struct_0_10889_x4909_1769751926}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_2061289475}
+用户视图
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_10889_x4909_982456007}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_193417568}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_916901357}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_1366282026}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_204291394}
+*[team-id*]：安全引擎所属安全引擎组的编号，取值范围为1～256。可使用**display blade-controller-team**命令查看。
 
-[*[team-id]{lang="EN-US"}*]{#struct_0_10889_x4909_x1473109587}[：安全引擎所属安全引擎组的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[256]{lang="EN-US"}[。可使用]{style="font-family:宋体"}**[display blade-controller-team]{lang="EN-US"}**[命令查看。]{style="font-family:宋体"}
+**[slot*** slot-number*]：表示安全引擎所在的槽位号。（集中式[/分布式设备－独立运行模式]）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_10889_x4909_389778959}[：表示]{style="font-family:宋体"}[安全引擎]{style="font-family:宋体"}[所在的槽位号。（]{style="font-family:宋体"}[集中式[/]{lang="EN-US"}分布式设备－独立运行模式]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+**[slot*** slot-number*]：表示安全引擎所在设备的成员编号。（集中式IRF设备）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_10889_x4909_x488451429}[：表示安全引擎所在设备的成员编号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number ***slot*** slot-number*]：*chassis-number*表示安全引擎所在设备的成员编号，*slot-number*表示安全引擎所在的槽位号。（分布式IRF设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number ]{lang="EN-US"}***[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_10889_x4909_x772458796}[：]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[安全引擎所在设备]{style="font-family:宋体"}[的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示安全引擎所在的槽位号]{style="font-family:宋体"}[。（]{style="font-family:宋体"}[分布式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+**[cpu** *cpu-number*]：表示安全引擎的CPU编号。
 
-[**[cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_10889_x4909_1128095151}[：表示]{style="font-family:宋体"}[安全引擎]{style="font-family:宋体"}[的]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1212885486}
+\# 清除安全引擎组abc中安全引擎（编号为1，所在位置为2号槽位1号CPU）的数据信息。（分布式设备－独立运行模式/集中式IRF设备）
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_x1339467862}[清除安全引擎组]{style="font-family:宋体"}[abc]{lang="EN-US"}[中]{style="font-family:宋体"}[安全引擎（编号]{style="font-family:宋体"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[，所]{style="font-family:
-宋体"}[在位置为]{style="font-family:宋体"}[2]{lang="EN-US"}[号槽位]{style="font-family:宋体"}[1]{lang="EN-US"}[号]{style="font-family:宋体"}[CPU]{lang="EN-US"}[）]{style="font-family:宋体"}[的数据信息]{style="font-family:宋体"}[。（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+\<sysname\> reset blade-controller-team 1 member slot 2 cpu 1
 
-[[\<sysname\> reset blade-controller-team 1 member slot 2 cpu 1]{lang="EN-US"}]{#struct_0_10889_x4909_x1700872923}
+This operation will cause a short interruption of NAT session. Are you sure? [Y/N:y]
 
-[This operation will cause a short interruption of NAT session. Are you sure? \[Y/N\]:y]{lang="EN-US"}
+Erasing the controller data successed.
 
-[Erasing the controller data successed.]{lang="EN-US"}
+\# 清除安全引擎组abc中安全引擎（编号为1，所在位置为1号成员设备2号槽位1号CPU）的数据信息。（分布式设备－IRF模式）
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_1218052677}[清除安全引擎组]{style="font-family:宋体"}[abc]{lang="EN-US"}[中]{style="font-family:宋体"}[安全引擎（编号]{style="font-family:宋体"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[，]{style="font-family:
-宋体"}[所在位]{style="font-family:宋体"}[置为]{style="font-family:
-宋体"}[1]{lang="EN-US"}[号成员设备]{style="font-family:宋体"}[2]{lang="EN-US"}[号槽位]{style="font-family:宋体"}[1]{lang="EN-US"}[号]{style="font-family:宋体"}[CPU]{lang="EN-US"}[）]{style="font-family:宋体"}[的数据信息]{style="font-family:宋体"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+\<sysname\> reset blade-controller-team 1 member chassis 1 slot 2 cpu 1
 
-[[\<sysname\> reset blade-controller-team 1 member chassis 1 slot 2 cpu 1]{lang="EN-US"}]{#struct_0_10889_x4909_x1472912979}
+This operation will cause a short interruption of NAT session. Are you sure? [Y/N:y]
 
-[This operation will cause a short interruption of NAT session. Are you sure? \[Y/N\]:y]{lang="EN-US"}
-
-[Erasing the controller data successed.]{lang="EN-US"}
-:::::
-
-::: {#1786297017 .myid}
-[]{#_Toc404783320}[]{#struct_0_10889_x4909_1521126018}[]{#_Toc380149851}
+Erasing the controller data successed.
 
 **Context \-- Context命令 \-- switchto context**
 
 ------------------------------------------------------------------------
 
-[**[switchto context]{lang="EN-US"}**]{#struct_0_10889_x4909_x1698018679}[命令用来登录到指定的]{style="font-family:宋体"}[Context]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[switchto context**]命令用来登录到指定的Context。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10889_x4909_553765301}
+【命令】
 
-[**[switchto context ]{lang="EN-US"}**]{#struct_0_10889_x4909_5536120}*[context-name]{lang="EN-US"}*
+**[switchto context **]*context-name*
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10889_x4909_276038875}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_10889_x4909_x1180851764}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x991709340}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10889_x4909_x659026735}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10889_x4909_40646149}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10889_x4909_1875645918}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_10889_x4909_1743164053}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1253732685}
+【参数】
 
-[*[context-name]{lang="EN-US"}*]{#struct_0_10889_x4909_324549490}[：已启动的]{style="font-family:宋体"}[Context]{lang="EN-US"}[的]{style="font-family:宋体"}[名称。]{style="font-family:宋体"}
+*[context-name*]：已启动的Context的名称。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10889_x4909_x1850185364}
+【使用指导】
 
-[[只要用户和物理设备之间路由可达，就能]{style="font-family:宋体"}]{#struct_0_10889_x4909_x290226513}[使用该命令，通过物理设备]{style="font-family:
-宋体"}[和]{style="font-family:宋体"}[Context]{lang="EN-US"}[的内联接口，登录]{style="font-family:宋体"}[Context]{lang="EN-US"}[。（不]{style="font-family:宋体"}[支]{style="font-family:宋体"}[持]{style="font-family:宋体"}[MDC]{lang="EN-US"}[的设]{style="font-family:宋体"}[备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+只要用户和物理设备之间路由可达，就能使用该命令，通过物理设备和Context的内联接口，登录Context。（不支持MDC的设备）
 
-[[只要用户和]{style="font-family:宋体"}[MDC]{lang="EN-US"}]{#struct_0_10889_x4909_1615924920}[之间路由可达，就能]{style="font-family:宋体"}[使用该命令，通过]{style="font-family:宋体"}[MDC]{lang="EN-US"}[和]{style="font-family:宋体"}[Context]{lang="EN-US"}[的内联接口，登录]{style="font-family:宋体"}[Context]{lang="EN-US"}[。请在]{style="font-family:宋体"}[Context]{lang="EN-US"}[所属的]{style="font-family:宋体"}[MDC]{lang="EN-US"}[环境下执行该命令。例如，]{style="font-family:宋体"}[Context cnt2]{lang="EN-US"}[属于]{style="font-family:宋体"}[MDC test]{lang="EN-US"}[，则必须先通过]{style="font-family:宋体"}**[switchto mdc]{lang="EN-US"}**[命令或者]{style="font-family:宋体"}[Telnet]{lang="EN-US"}[等方式登录到]{style="font-family:宋体"}[MDC test]{lang="EN-US"}[，再通过]{style="font-family:宋体"}**[switchto context]{lang="EN-US"}**[命令登录到]{style="font-family:宋体"}[cnt2]{lang="EN-US"}[。]{style="font-family:宋体"}[（支]{style="font-family:宋体"}[持]{style="font-family:宋体"}[MDC]{lang="EN-US"}[的设]{style="font-family:宋体"}[备）]{style="font-family:宋体"}
+只要用户和MDC之间路由可达，就能使用该命令，通过MDC和Context的内联接口，登录Context。请在Context所属的MDC环境下执行该命令。例如，Context cnt2属于MDC test，则必须先通过**switchto mdc**命令或者Telnet等方式登录到MDC test，再通过**switchto context**命令登录到cnt2。（支持MDC的设备）
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10889_x4909_1521126019}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10889_x4909_x1697953143}[切换到]{style="font-family:宋体"}[Context test2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 切换到Context test2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10889_x4909_996860913}
+\<Sysname\> system-view
 
-[\[Sysname\] switchto context test2]{lang="EN-US"}
+Sysname switchto context test2
 
-[\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*]{lang="EN-US"}
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 
-[\* Copyright (c) 2004-2013 Hangzhou H3C Tech. Co., Ltd. All rights reserved.  \*]{lang="EN-US"}
+\* Copyright (c) 2004-2013 Hangzhou H3C Tech. Co., Ltd. All rights reserved.  \*
 
-[\* Without the owner\'s prior written consent,                                 \*]{lang="EN-US"}
+\* Without the owner\'s prior written consent,                                 \*
 
-[\* no decompiling or reverse-engineering shall be allowed.                    \*]{lang="EN-US"}
+\* no decompiling or reverse-engineering shall be allowed.                    \*
 
-[\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*]{lang="EN-US"}
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 
-[ ]{lang="EN-US"}
-
-[\<Context2\>]{lang="EN-US"}
-:::
+\<Context2\>

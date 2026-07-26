@@ -1,4923 +1,4596 @@
-::: {#-1204032224 .myid}
-[]{#_Toc404784690}[]{#struct_0_x1289_x1771_1326472709}[]{#_Toc352678892}[]{#_Toc352661499}
 
 **LLDP \-- LLDP配置命令 \-- cdp voice-vlan**
 
 ------------------------------------------------------------------------
 
-[**[cdp voice-vlan]{lang="EN-US"}**]{#struct_0_x1289_x1771_x26076014}[命令用来配置]{style="font-family:宋体"}[CDP]{lang="EN-US"}[报文携带的]{style="font-family:宋体"}[Voice VLAN ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[cdp voice-vlan**]命令用来配置CDP报文携带的Voice VLAN ID。
 
-[**[undo cdp voice-vlan]{lang="EN-US"}**]{#struct_0_x1289_x1771_796008803}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo cdp voice-vlan**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1442540181}
+【命令】
 
-[**[cdp voice-vlan ]{lang="EN-US"}***[vlan-id]{lang="EN-US"}*]{#struct_0_x1289_x1771_775300821}
+**[cdp voice-vlan ***vlan-id*]
 
-[**[undo cdp voice-vlan]{lang="EN-US"}**]{#struct_0_x1289_x1771_578400355}
+**[undo cdp voice-vlan**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x2017332785}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[CDP]{lang="EN-US"}]{#struct_0_x1289_x1771_x1378197591}[报文携带的]{style="font-family:宋体"}[Voice VLAN ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+未配置CDP报文携带的Voice VLAN ID。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1948947754}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1525643953}
+二层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_218378237}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_1326407173}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_x766984514}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x76090349}
+【参数】
 
-[*[vlan-id]{lang="EN-US"}*]{#struct_0_x1289_x1771_1093435264}[：要发布的]{style="font-family:宋体"}[Voice VLAN ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[vlan-id*]：要发布的Voice VLAN ID，取值范围为1～4094。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x722160136}
+【使用指导】
 
-[[配置本命令后，设备当前接口向对端]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x1289_x1771_1120993493}[电话发送的]{style="font-family:宋体"}[CDP]{lang="EN-US"}[报文携带的]{style="font-family:宋体"}[Voice VLAN ID]{lang="EN-US"}[为本命令配置的]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+配置本命令后，设备当前接口向对端IP电话发送的CDP报文携带的Voice VLAN ID为本命令配置的VLAN ID。
 
-[[对端]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x1289_x1771_2065862803}[电话收到本端发送的]{style="font-family:宋体"}[CDP]{lang="EN-US"}[报文后，会根据报文中携带的]{style="font-family:宋体"}[Voice VLAN ID]{lang="EN-US"}[发送语音数据。]{style="font-family:宋体"}
+对端IP电话收到本端发送的CDP报文后，会根据报文中携带的Voice VLAN ID发送语音数据。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x452317319}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_972341740}[配置]{style="font-family:宋体"}[CDP]{lang="EN-US"}[报文携带的]{style="font-family:宋体"}[Voice VLAN ID]{lang="EN-US"}[为]{style="font-family:宋体"}[100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置CDP报文携带的Voice VLAN ID为100。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_1911479400}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] cdp voice-vlan 100]{lang="EN-US"}
-:::
-
-::::: {#-1868338396 .myid}
-[]{#_Toc404784691}[]{#struct_0_x1289_x1771_499737374}[]{#_Toc362275727}
+Sysname-GigabitEthernet1/0/1 cdp voice-vlan 100
 
 **LLDP \-- LLDP配置命令 \-- dcbx version**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](LLDP命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1289_x1771_2100028854}
-:::
+![说明](LLDP命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1289_x1771_x1924285370}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[dcbx version]{lang="EN-US"}**]{#struct_0_x1289_x1771_x148118017}[命令用来配置]{style="font-family:宋体"}[DCBX]{lang="EN-US"}[版本。]{style="font-family:宋体"}
+**[dcbx version**]命令用来配置DCBX版本。
 
-[**[undo dcbx version]{lang="EN-US"}**]{#struct_0_x1289_x1771_431732132}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo dcbx version**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_830962534}
+【命令】
 
-[**[dcbx version ]{lang="EN-US"}**[{ **rev100** \| **rev101** \| **standard** }]{lang="EN-US"}]{#struct_0_x1289_x1771_83199036}
+**[dcbx version **[{ **rev100** \| **rev101** \| **standard** }]]
 
-[**[undo dcbx version]{lang="EN-US"}**]{#struct_0_x1289_x1771_499671838}
+**[undo dcbx version**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1822449873}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[DCBX]{lang="EN-US"}]{#struct_0_x1289_x1771_x96854600}[版本，此时]{style="font-family:宋体"}[DCBX]{lang="EN-US"}[版本由两端端口自协商决定。]{style="font-family:宋体"}
+未配置DCBX版本，此时DCBX版本由两端端口自协商决定。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x517415737}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x2044907408}
+二层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_114901871}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_x1504515923}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_58218497}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x67158774}
+【参数】
 
-[**[rev100]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1714599574}[：表示采用预标准版]{style="font-family:宋体"}[1.00]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[rev100**]：表示采用预标准版1.00。
 
-[**[rev101]{lang="EN-US"}**]{#struct_0_x1289_x1771_962888876}[：表示采用预标准版]{style="font-family:宋体"}[1.01]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[rev101**]：表示采用预标准版1.01。
 
-[**[standard]{lang="EN-US"}**]{#struct_0_x1289_x1771_1672869709}[：表示采用标准版。]{style="font-family:宋体"}
+**[standard**]：表示采用标准版。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_499606302}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置本命令时，配置的]{style="font-family:宋体"}]{#struct_0_x1289_x1771_508880343}[DCBX]{lang="EN-US"}[版本需要视对端设备支持的版本而定，要求两端端口的]{style="font-family:宋体"}[DCBX]{lang="EN-US"}[版本配置一致，否则版本无法兼容，将会导致]{style="font-family:宋体"}[DCBX]{lang="EN-US"}[无法正常工作。建议配置两端设备都支持的最高版本（版本从高到低的顺序为：标准版]{style="font-family:宋体"}[-\>]{lang="EN-US"}[预标准版]{style="font-family:宋体"}[1.01-\>]{lang="EN-US"}[预标准版]{style="font-family:宋体"}[1.00]{lang="EN-US"}[）。]{style="font-family:宋体"}
+·配置本命令时，配置的DCBX版本需要视对端设备支持的版本而定，要求两端端口的DCBX版本配置一致，否则版本无法兼容，将会导致DCBX无法正常工作。建议配置两端设备都支持的最高版本（版本从高到低的顺序为：标准版-\>预标准版1.01-\>预标准版1.00）。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置本命令后，本端端口发送的]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x86511508}[LLDP]{lang="EN-US"}[报文中携带的]{style="font-family:宋体"}[DCBX]{lang="EN-US"}[版本为配置的版本，不再与对端端口进行]{style="font-family:宋体"}[DCBX]{lang="EN-US"}[版本协商。]{style="font-family:宋体"}
+·配置本命令后，本端端口发送的LLDP报文中携带的DCBX版本为配置的版本，不再与对端端口进行DCBX版本协商。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当端口的]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1187407808}[DCBX]{lang="EN-US"}[版本采用自协商决定，协商的初始版本为]{style="font-family:宋体"}[DCBX]{lang="EN-US"}[标准版，以保证优先协商到该版本。]{style="font-family:宋体"}
+·当端口的DCBX版本采用自协商决定，协商的初始版本为DCBX标准版，以保证优先协商到该版本。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_216913087}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_2111588067}[配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的]{style="font-family:宋体"}[DCBX]{lang="EN-US"}[版本为预标准版]{style="font-family:宋体"}[1.01]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置接口GigabitEthernet1/0/1的DCBX版本为预标准版1.01。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_1671863713}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] dcbx version rev101]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 dcbx version rev101
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_288008346}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[lldp tlv-enable]{lang="EN-US"}**]{#struct_0_x1289_x1771_x968886692}
-:::::
-
-::::: {#491889923 .myid}
-[]{#_Toc404784692}[]{#struct_0_x1289_x1771_x1516057613}[]{#_Toc144347671}[]{#_Toc378693091}[]{#_Toc379979755}
+·**lldp tlv-enable**
 
 **LLDP \-- LLDP配置命令 \-- display lldp local-information**
 
 ------------------------------------------------------------------------
 
-[**[display lldp local-information]{lang="EN-US"}**]{#struct_0_x1289_x1771_x973311939}[命令用来显示]{style="font-family:
-宋体"}[LLDP]{lang="EN-US"}[本地信息，这些信息将根据端口]{style="font-family:宋体"}[TLV]{lang="EN-US"}[开启情况被组织成]{style="font-family:宋体"}[TLV]{lang="EN-US"}[发送给邻居设备。]{style="font-family:宋体"}
+**[display lldp local-information**]命令用来显示LLDP本地信息，这些信息将根据端口TLV开启情况被组织成TLV发送给邻居设备。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1050440314}
+【命令】
 
-[**[display lldp local-information]{lang="EN-US"}**[ \[]{lang="EN-US"}[ **global** \| **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_x1289_x1771_401343651}
+**[display lldp local-information**[ [ **global** \| **interface** *interface-type interface-number* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1393809885}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x602128838}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1874160201}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_x1719172343}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1289_x1771_796263318}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_1101698793}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1289_x1771_1935394951}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x973901762}
+【参数】
 
-[**[global]{lang="EN-US"}**]{#struct_0_x1289_x1771_858623555}[：显示全局]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[本地信息。]{style="font-family:宋体"}
+**[global**]：显示全局LLDP本地信息。
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_x1289_x1771_1883756614}[：显示指定接口上的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[本地信息，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[表示接口类型和接口编号。]{style="font-family:
-宋体"}
+**[interface** *interface-type interface-number*]：显示指定接口上的LLDP本地信息，*interface-type interface-number*表示接口类型和接口编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_804151368}
+【使用指导】
 
-[[如果未指定任何参数，将显示所有]{style="font-family:宋体"}[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_856680567}[本地信息，包括全局]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[信息以及所有开启了]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[功能且状态为]{style="font-family:宋体"}[up]{lang="EN-US"}[的接口上的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+如果未指定任何参数，将显示所有LLDP本地信息，包括全局LLDP信息以及所有开启了LLDP功能且状态为up的接口上的LLDP信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_819049832}
+【举例】
 
-[]{#struct_0_x1289_x1771_385469688}[]{#_Toc135620324}[]{#_Toc135620327}[]{#_Toc135620328}[]{#_Toc135620329}[]{#_Toc135620330}[]{#_Toc135620331}[]{#_Toc135620332}[]{#_Toc135620333}[]{#_Toc135620334}[]{#_Toc135620335}[]{#_Toc135620336}[]{#_Toc135620337}[]{#_Toc135620338}[]{#_Toc135620339}[]{#_Toc135620340}[]{#_Toc135620341}[]{#_Toc135620342}[]{#_Toc135620343}[]{#_Toc135620345}[]{#_Toc135620346}[]{#_Toc135620347}[]{#_Toc135620348}[]{#_Toc135620349}[]{#_Toc135620350}[]{#_Toc135620351}[]{#_Toc135620352}[]{#_Toc135620354}[]{#_Toc135620355}[]{#_Toc135620356}[]{#_Toc135620357}[]{#_Toc135620358}[]{#_Toc135620359}[]{#_Hlt5077351}[]{#_Toc135620360}[]{#_Toc135620361}[]{#_Toc135620362}[]{#_Toc135620363}[]{#_Toc135620364}[]{#_Toc135620365}[]{#_Toc135620366}[]{#_Toc135620367}[]{#_Toc135620368}[]{#_Toc135620369}[\# ]{lang="EN-US"}[显示所有]{style="font-family:
-宋体"}[LLDP]{lang="EN-US"}[本地信息（假设]{style="font-family:宋体"}[DCBX]{lang="EN-US"}[的版本为标准版）。]{style="font-family:宋体"}
+\# 显示所有LLDP本地信息（假设DCBX的版本为标准版）。
 
-[[\<Sysname\> display lldp local-information]{lang="EN-US"}]{#struct_0_x1289_x1771_x973639618}
+\<Sysname\> display lldp local-information
 
-[Global LLDP local-information:]{lang="EN-US"}
+Global LLDP local-information:
 
-[ Chassis ID          : 00e0-fc00-5600]{lang="EN-US"}
+ Chassis ID          : 00e0-fc00-5600
 
-[ System name         : Sysname]{lang="EN-US"}
+ System name         : Sysname
 
-[ System description  : H3C Comware Platform Software]{lang="EN-US"}
+ System description  : H3C Comware Platform Software
 
-[ System capabilities supported  : Bridge, Router, Customer Bridge, Service Bridge]{lang="EN-US"}
+ System capabilities supported  : Bridge, Router, Customer Bridge, Service Bridge
 
-[ System capabilities enabled    : Bridge, Router, Service Bridge]{lang="EN-US"}
+ System capabilities enabled    : Bridge, Router, Service Bridge
 
-[ ]{lang="EN-US"}
+ MED information:
 
-[ MED information:]{lang="EN-US"}
+ Device class               : Connectivity device
 
-[ Device class               : Connectivity device]{lang="EN-US"}
+ MED inventory information of master board:
 
-[ MED inventory information of master board:]{lang="EN-US"}
+ HardwareRev                : REV.A
 
-[ HardwareRev                : REV.A]{lang="EN-US"}
+ FirmwareRev                : 109
 
-[ FirmwareRev                : 109]{lang="EN-US"}
+ SoftwareRev                : 5.20 Alpha 2101
 
-[ SoftwareRev                : 5.20 Alpha 2101]{lang="EN-US"}
+ SerialNum                  : NONE
 
-[ SerialNum                  : NONE]{lang="EN-US"}
+ Manufacturer name          : H3C
 
-[ Manufacturer name          : H3C]{lang="EN-US"}
+ Model name                 : H3C Comware
 
-[ Model name                 : H3C Comware]{lang="EN-US"}
+ Asset tracking identifier  : Unknown
 
-[ Asset tracking identifier  : Unknown]{lang="EN-US"}
+LLDP local-information of port 52[GigabitEthernet1/0/3:]
 
-[LLDP local-information of port 52\[GigabitEthernet1/0/3\]:]{lang="EN-US"}
+ Port ID type       : Interface name
 
-[ Port ID type       : Interface name]{lang="EN-US"}
+ Port ID            : GigabitEthernet1/0/3
 
-[ Port ID            : GigabitEthernet1/0/3]{lang="EN-US"}
+ Port description   : GigabitEthernet1/0/3 Interface
 
-[ Port description   : GigabitEthernet1/0/3 Interface]{lang="EN-US"}
+ LLDP agent nearest-bridge management address:
 
-[ LLDP agent nearest-bridge management address:]{lang="EN-US"}
+ Management address type           : IPv4
 
-[ Management address type           : IPv4]{lang="EN-US"}
+ Management address                : 192.168.80.60
 
-[ Management address                : 192.168.80.60]{lang="EN-US"}
+ Management address interface type : IfIndex
 
-[ Management address interface type : IfIndex]{lang="EN-US"}
+ Management address interface ID   : Unknown
 
-[ Management address interface ID   : Unknown]{lang="EN-US"}
+ Management address OID            : 0
 
-[ Management address OID            : 0]{lang="EN-US"}
+ LLDP agent nearest-nontpmr management address:
 
-[ LLDP agent nearest-nontpmr management address:]{lang="EN-US"}
+ Management address type           : IPv4
 
-[ Management address type           : IPv4]{lang="EN-US"}
+ Management address                : 192.168.80.61
 
-[ Management address                : 192.168.80.61]{lang="EN-US"}
+ Management address interface type : IfIndex
 
-[ Management address interface type : IfIndex]{lang="EN-US"}
+ Management address interface ID   : Unknown
 
-[ Management address interface ID   : Unknown]{lang="EN-US"}
+ Management address OID            : 0
 
-[ Management address OID            : 0]{lang="EN-US"}
+ LLDP agent nearest-customer management address:
 
-[ LLDP agent nearest-customer management address:]{lang="EN-US"}
+ Management address type           : IPv4
 
-[ Management address type           : IPv4]{lang="EN-US"}
+ Management address                : 192.168.80.62
 
-[ Management address                : 192.168.80.62]{lang="EN-US"}
+ Management address interface type : IfIndex
 
-[ Management address interface type : IfIndex]{lang="EN-US"}
+ Management address interface ID   : Unknown
 
-[ Management address interface ID   : Unknown]{lang="EN-US"}
+ Management address OID            : 0
 
-[ Management address OID            : 0]{lang="EN-US"}
+ DCBX Control info:
 
-[ DCBX Control info:]{lang="EN-US"}
+ Oper version       : Standard
 
-[ Oper version       : Standard]{lang="EN-US"}
+ DCBX ETS configuration info:
 
-[ DCBX ETS configuration info:]{lang="EN-US"}
+  CBS                : False
 
-[  CBS                : False]{lang="EN-US"}
+  Max TCs            : 8
 
-[  Max TCs            : 8]{lang="EN-US"}
+  CoS     Local Priority      Percentage        TSA
 
-[  CoS     Local Priority      Percentage        TSA]{lang="EN-US"}
+   0            0                 15            ETS
 
-[   0            0                 15            ETS]{lang="EN-US"}
+   1            1                 0             SP
 
-[   1            1                 0             SP]{lang="EN-US"}
+   2            2                 15            ETS
 
-[   2            2                 15            ETS]{lang="EN-US"}
+   3            3                 14            ETS
 
-[   3            3                 14            ETS]{lang="EN-US"}
+   4            4                 14            ETS
 
-[   4            4                 14            ETS]{lang="EN-US"}
+   5            5                 14            ETS
 
-[   5            5                 14            ETS]{lang="EN-US"}
+   6            6                 14            ETS
 
-[   6            6                 14            ETS]{lang="EN-US"}
+   7            7                 14            ETS
 
-[   7            7                 14            ETS]{lang="EN-US"}
+ DCBX ETS recommendation info:
 
-[ DCBX ETS recommendation info:]{lang="EN-US"}
+  CoS     Local Priority      Percentage        TSA
 
-[  CoS     Local Priority      Percentage        TSA]{lang="EN-US"}
+   0            0                 15            ETS
 
-[   0            0                 15            ETS]{lang="EN-US"}
+   1            1                 0             SP
 
-[   1            1                 0             SP]{lang="EN-US"}
+   2            2                 15            ETS
 
-[   2            2                 15            ETS]{lang="EN-US"}
+   3            3                 14            ETS
 
-[   3            3                 14            ETS]{lang="EN-US"}
+   4            4                 14            ETS
 
-[   4            4                 14            ETS]{lang="EN-US"}
+   5            5                 14            ETS
 
-[   5            5                 14            ETS]{lang="EN-US"}
+   6            6                 14            ETS
 
-[   6            6                 14            ETS]{lang="EN-US"}
+   7            7                 14            ETS
 
-[   7            7                 14            ETS]{lang="EN-US"}
+ DCBX PFC info:
 
-[ DCBX PFC info:]{lang="EN-US"}
+  P0-0     P1-1     P2-1     P3-1     P4-0     P5-0     P6-0     P7-0
 
-[  P0-0     P1-1     P2-1     P3-1     P4-0     P5-0     P6-0     P7-0]{lang="EN-US"}
+  Number of traffic classes supported: 8
 
-[  Number of traffic classes supported: 8]{lang="EN-US"}
+  Value of MBC: 0
 
-[  Value of MBC: 0]{lang="EN-US"}
+ DCBX APP info:
 
-[ DCBX APP info:]{lang="EN-US"}
+  Selected Field  Protocol ID  Priority
 
-[  Selected Field  Protocol ID  Priority]{lang="EN-US"}
+  UDP/DCCP        100          0x3
 
-[  UDP/DCCP        100          0x3]{lang="EN-US"}
+  TCP/SCTP        200          0x3
 
-[  TCP/SCTP        200          0x3]{lang="EN-US"}
+  Ethertype       0x1234       0x3
 
-[  Ethertype       0x1234       0x3]{lang="EN-US"}
+  Ethertype       0x8906       0x3
 
-[  Ethertype       0x8906       0x3]{lang="EN-US"}
+ Port VLAN ID(PVID): 1
 
-[ Port VLAN ID(PVID): 1]{lang="EN-US"}
+ Port and protocol VLAN ID(PPVID) : 12
 
-[ Port and protocol VLAN ID(PPVID) : 12]{lang="EN-US"}
+ Port and protocol VLAN supported : Yes
 
-[ Port and protocol VLAN supported : Yes]{lang="EN-US"}
+ Port and protocol VLAN enabled   : Yes
 
-[ Port and protocol VLAN enabled   : Yes]{lang="EN-US"}
+ VLAN name of VLAN 12: VLAN 0012
 
-[ VLAN name of VLAN 12: VLAN 0012]{lang="EN-US"}
+ Management VLAN ID  : 5
 
-[ Management VLAN ID  : 5]{lang="EN-US"}
+ Auto-negotiation supported : Yes
 
-[ Auto-negotiation supported : Yes]{lang="EN-US"}
+ Auto-negotiation enabled   : Yes
 
-[ Auto-negotiation enabled   : Yes]{lang="EN-US"}
+ OperMau                    : Speed(1000)/Duplex(Full)
 
-[ OperMau                    : Speed(1000)/Duplex(Full)]{lang="EN-US"}
+ Power port class           : PD
 
-[ Power port class           : PD]{lang="EN-US"}
+ PSE power supported        : Yes
 
-[ PSE power supported        : Yes]{lang="EN-US"}
+ PSE power enabled          : Yes
 
-[ PSE power enabled          : Yes]{lang="EN-US"}
+ PSE pairs control ability  : Yes
 
-[ PSE pairs control ability  : Yes]{lang="EN-US"}
+ Power pairs                : Signal
 
-[ Power pairs                : Signal]{lang="EN-US"}
+ Port power classification  : Class 0
 
-[ Port power classification  : Class 0]{lang="EN-US"}
+ Power type                 : Type 2 PSE
 
-[ Power type                 : Type 2 PSE]{lang="EN-US"}
+ Power source               : Primary
 
-[ Power source               : Primary]{lang="EN-US"}
+ Power priority             : High
 
-[ Power priority             : High]{lang="EN-US"}
+ PD requested power value   : 21.1 w
 
-[ PD requested power value   : 21.1 w]{lang="EN-US"}
+ PSE allocated power value  : 15.3 w
 
-[ PSE allocated power value  : 15.3 w]{lang="EN-US"}
+ Link aggregation supported : Yes
 
-[ Link aggregation supported : Yes]{lang="EN-US"}
+ Link aggregation enabled   : Yes
 
-[ Link aggregation enabled   : Yes]{lang="EN-US"}
+ Aggregation port ID        : 52
 
-[ Aggregation port ID        : 52]{lang="EN-US"}
+ Congestion notification TLV info:
 
-[ Congestion notification TLV info:]{lang="EN-US"}
+  Dot1p          CNPV         Ready
 
-[  Dot1p          CNPV         Ready]{lang="EN-US"}
+  0              Yes          Yes
 
-[  0              Yes          Yes]{lang="EN-US"}
+  1              No           No
 
-[  1              No           No]{lang="EN-US"}
+  2              No           No
 
-[  2              No           No]{lang="EN-US"}
+  3              No           No
 
-[  3              No           No]{lang="EN-US"}
+  4              Yes          No
 
-[  4              Yes          No]{lang="EN-US"}
+  5              Yes          Yes
 
-[  5              Yes          Yes]{lang="EN-US"}
+  6              No           No
 
-[  6              No           No]{lang="EN-US"}
+  7              No           No
 
-[  7              No           No]{lang="EN-US"}
+ Maximum frame size         : 1500
 
-[ Maximum frame size         : 1500]{lang="EN-US"}
+ Transmit Tw                : 100 us
 
-[ Transmit Tw                : 100 us]{lang="EN-US"}
+ Receive Tw                 : 90 us
 
-[ Receive Tw                 : 90 us]{lang="EN-US"}
+ Fallback Tw                : 90 us
 
-[ Fallback Tw                : 90 us]{lang="EN-US"}
+ Echo Transmit Tw           : 0 us
 
-[ Echo Transmit Tw           : 0 us]{lang="EN-US"}
+ Echo Receive Tw            : 0 us
 
-[ Echo Receive Tw            : 0 us]{lang="EN-US"}
+ Location format       : Civic Address LCI
 
-[ Location format       : Civic Address LCI]{lang="EN-US"}
+ Location information  :
 
-[ Location information  :]{lang="EN-US"}
+  What(1)  Country(CN)
 
-[  What(1)  Country(CN)]{lang="EN-US"}
+  CA type  CA value
 
-[  CA type  CA value]{lang="EN-US"}
+  0        Chinese
 
-[  0        Chinese]{lang="EN-US"}
+  1        Zhejiang
 
-[  1        Zhejiang]{lang="EN-US"}
+  2        Hangzhou
 
-[  2        Hangzhou]{lang="EN-US"}
+ MED port information:
 
-[ MED port information:]{lang="EN-US"}
+  Media policy type        : Unknown
 
-[  Media policy type        : Unknown]{lang="EN-US"}
+  Unknown policy           : Yes
 
-[  Unknown policy           : Yes]{lang="EN-US"}
+  VLAN tagged              : No
 
-[  VLAN tagged              : No]{lang="EN-US"}
+  Media policy VLANID      : 0
 
-[  Media policy VLANID      : 0]{lang="EN-US"}
+  Media policy L2 priority : 0
 
-[  Media policy L2 priority : 0]{lang="EN-US"}
+  Media policy DSCP        : 0
 
-[  Media policy DSCP        : 0]{lang="EN-US"}
+ PoE PSE power source       : Primary
 
-[ PoE PSE power source       : Primary]{lang="EN-US"}
+ Port PSE priority          : Critical
 
-[ Port PSE priority          : Critical]{lang="EN-US"}
+ Port available power value : 30.0 w
 
-[ Port available power value : 30.0 w]{lang="EN-US"}
+![说明](LLDP命令.files/image001.png)
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](LLDP命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1289_x1771_x1446909619}
-:::
+本命令的显示信息与设备的型号有关，请以设备的实际情况为准。
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的显示信息与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1289_x1771_782410448}
-:::
+表1-1 display lldp local-information命令显示信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[]{#_Toc144347672}[[表1-1 ]{lang="EN-US"}[display lldp local-information]{lang="EN-US"}]{#struct_0_x1289_x1771_x1354545193}[命令显示信息描述表]{style="font-family:
-黑体"}
+描述
 
-[]{#table_struct_0_x157647143}[[字段]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x973574082}
-:::::
+Global LLDP local-information
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x720710444}
+本设备的全局LLDP本地信息
 
-[[Global LLDP local-information]{lang="EN-US"}]{#struct_0_x1289_x1771_2058420606}
+Chassis ID
 
-[[本设备的全局]{style="font-family:宋体"}[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_444340500}[本地信息]{style="font-family:宋体"}
+Chassis ID值，为本设备的桥MAC地址
 
-[[Chassis ID]{lang="EN-US"}]{#struct_0_x1289_x1771_56349062}
+System name
 
-[[Chassis ID]{lang="EN-US"}]{#struct_0_x1289_x1771_x948823139}[值，为本设备的桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+系统名称
 
-[[System name]{lang="EN-US"}]{#struct_0_x1289_x1771_x973770690}
+System description
 
-[[系统名称]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1631126187}
+系统描述
 
-[[System description]{lang="EN-US"}]{#struct_0_x1289_x1771_1629367229}
+System capabilities supported
 
-[[系统描述]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1404715163}
+系统所支持的功能：
 
-[[System capabilities supported]{lang="EN-US"}]{#struct_0_x1289_x1771_x1464175074}
+·Bridge：表示支持交换功能
 
-[[系统所支持的功能：]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x2105647865}
+·Router：表示支持路由功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Bridge]{lang="EN-US"}]{#struct_0_x1289_x1771_x973705154}[：表示支持交换功能]{lang="EN-US" style="font-family:宋体"}
+·WlanAccessPoint：表示支持无线接入点功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Router]{lang="EN-US"}]{#struct_0_x1289_x1771_x1492688784}[：表示支持路由功能]{lang="EN-US" style="font-family:宋体"}
+·Router：表示支持路由功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[WlanAccessPoint]{lang="EN-US"}]{#struct_0_x1289_x1771_1665238970}[：表示支持无线接入点功能]{lang="EN-US" style="font-family:
-  宋体"}
+·Telephone：表示支持电话功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Router]{lang="EN-US"}]{#struct_0_x1289_x1771_x428036296}[：表示支持路由功能]{lang="EN-US" style="font-family:宋体"}
+·DocsisCableDevice：表示支持电缆设备功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Telephone]{lang="EN-US"}]{#struct_0_x1289_x1771_x1263724747}[：表示支持电话功能]{lang="EN-US" style="font-family:宋体"}
+·StationOnly：表示支持只作站点功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DocsisCableDevice]{lang="EN-US"}]{#struct_0_x1289_x1771_x973377474}[：表示支持电缆设备功能]{lang="EN-US" style="font-family:
-  宋体"}
+·Customer Bridge：表示支持客户桥功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[StationOnly]{lang="EN-US"}]{#struct_0_x1289_x1771_x1522251476}[：表示支持只作站点功能]{lang="EN-US" style="font-family:宋体"}
+·Service Bridge：表示支持服务桥功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Customer Bridge]{lang="EN-US"}]{#struct_0_x1289_x1771_756537751}[：表示支持客户桥功能]{lang="EN-US" style="font-family:
-  宋体"}
+·TPMR：表示支持双端口MAC中继功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Service Bridge]{lang="EN-US"}]{#struct_0_x1289_x1771_x212112864}[：表示支持服务桥功能]{lang="EN-US" style="font-family:宋体"}
+·Other：表示支持不在上述列表的其它功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TPMR]{lang="EN-US"}]{#struct_0_x1289_x1771_x1810372386}[：表示支持双端口]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[中继功能]{lang="EN-US" style="font-family:宋体"}
+System capabilities enabled
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Other]{lang="EN-US"}]{#struct_0_x1289_x1771_905983435}[：表示支持不在上述列表的其它功能]{lang="EN-US" style="font-family:宋体"}
+系统已开启的功能：
 
-[[System capabilities enabled]{lang="EN-US"}]{#struct_0_x1289_x1771_x973311938}
+·Bridge：表示交换功能已开启
 
-[[系统已开启的功能：]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1050374778}
+·Router：表示路由功能已开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Bridge]{lang="EN-US"}]{#struct_0_x1289_x1771_181578784}[：表示交换功能已开启]{style="font-family:宋体"}
+·WlanAccessPoint：表示无线接入点功能已开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Router]{lang="EN-US"}]{#struct_0_x1289_x1771_x501450397}[：表示路由功能已开启]{lang="EN-US" style="font-family:宋体"}
+·Router：表示路由功能已开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[WlanAccessPoint]{lang="EN-US"}]{#struct_0_x1289_x1771_2084565354}[：表示无线接入点功能已开启]{lang="EN-US" style="font-family:
-  宋体"}
+·Telephone：表示电话功能已开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Router]{lang="EN-US"}]{#struct_0_x1289_x1771_x973901765}[：表示路由功能已开启]{lang="EN-US" style="font-family:宋体"}
+·DocsisCableDevice：表示电缆设备功能已开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Telephone]{lang="EN-US"}]{#struct_0_x1289_x1771_859082307}[：表示电话功能已开启]{lang="EN-US" style="font-family:宋体"}
+·StationOnly：表示只作站点功能已开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DocsisCableDevice]{lang="EN-US"}]{#struct_0_x1289_x1771_x1073015439}[：表示电缆设备功能已开启]{lang="EN-US" style="font-family:
-  宋体"}
+·Customer Bridge：表示客户桥功能已开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[StationOnly]{lang="EN-US"}]{#struct_0_x1289_x1771_x98799159}[：表示只作站点功能已开启]{lang="EN-US" style="font-family:宋体"}
+·Service Bridge：表示服务桥功能已开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Customer Bridge]{lang="EN-US"}]{#struct_0_x1289_x1771_x973836229}[：表示客户桥功能已开启]{lang="EN-US" style="font-family:
-  宋体"}
+·TPMR：表示双端口MAC中继功能已开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Service Bridge]{lang="EN-US"}]{#struct_0_x1289_x1771_66895527}[：表示服务桥功能已开启]{lang="EN-US" style="font-family:宋体"}
+·Other：表示不在上述列表的其它功能已开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TPMR]{lang="EN-US"}]{#struct_0_x1289_x1771_x104694379}[：表示双端口]{style="font-family:宋体"}[MAC]{lang="EN-US"}[中继功能已开启]{style="font-family:宋体"}
+MED information
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Other]{lang="EN-US"}]{#struct_0_x1289_x1771_x255933423}[：表示不在上述列表的其它功能已开启]{lang="EN-US" style="font-family:宋体"}
+MED设备相关信息
 
-[[MED information]{lang="EN-US"}]{#struct_0_x1289_x1771_x974032837}
+Device class
 
-[[MED]{lang="EN-US"}]{#struct_0_x1289_x1771_372632274}[设备相关信息]{style="font-family:宋体"}
+MED设备类型：
 
-[[Device class]{lang="EN-US"}]{#struct_0_x1289_x1771_x316402642}
+·Connectivity device：表示网络设备
 
-[[MED]{lang="EN-US"}]{#struct_0_x1289_x1771_1193666923}[设备类型：]{style="font-family:宋体"}
+·Class I：表示一般终端设备，即所有需要LLDP发现服务的终端设备
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Connectivity device]{lang="EN-US"}]{#struct_0_x1289_x1771_x973967301}[：表示网络设备]{lang="EN-US" style="font-family:
-  宋体"}
+·Class II：表示媒体终端设备，即具备媒体能力的终端设备，其能力包含了一般终端设备的能力。该类设备支持媒体流
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Class I]{lang="EN-US"}]{#struct_0_x1289_x1771_x716748309}[：表示一般终端设备，即所有需要]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[发现服务的终端设备]{style="font-family:宋体"}
+·Class III：表示通讯终端设备，即直接支持目标用户IP通讯系统的终端设备，其能力包含了一般终端设备和媒体终端设备的所有能力。该类设备直接被目标用户所使用
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Class II]{lang="EN-US"}]{#struct_0_x1289_x1771_x301959273}[：表示媒体终端设备，即具备媒体能力的终端设备，其能力包含了一般终端设备的能力。]{style="font-family:宋体"}[该类设备支持媒体流]{lang="EN-US" style="font-family:宋体"}
+MED inventory information of master board
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Class III]{lang="EN-US"}]{#struct_0_x1289_x1771_x939390155}[：表示通讯终端设备，即直接支持目标用户]{style="font-family:宋体"}[IP]{lang="EN-US"}[通讯系统的终端设备，其能力包含了一般终端设备和媒体终端设备的所有能力。]{style="font-family:宋体"}[该类设备直接被目标用户所使用]{lang="EN-US" style="font-family:宋体"}
+主控板MED资产信息
 
-[[MED inventory information of master board]{lang="EN-US"}]{#struct_0_x1289_x1771_x973639621}
+HardwareRev
 
-[[主控板]{style="font-family:宋体"}[MED]{lang="EN-US"}]{#struct_0_x1289_x1771_x1447499444}[资产信息]{style="font-family:宋体"}
+产品的硬件版本
 
-[[HardwareRev]{lang="EN-US"}]{#struct_0_x1289_x1771_2067425725}
+FirmwareRev
 
-[[产品的硬件版本]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1759612632}
+产品的固件版本
 
-[[FirmwareRev]{lang="EN-US"}]{#struct_0_x1289_x1771_x973574085}
+SoftwareRev
 
-[[产品的固件版本]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x720907052}
+产品的软件版本
 
-[[SoftwareRev]{lang="EN-US"}]{#struct_0_x1289_x1771_100437276}
+SerialNum
 
-[[产品的软件版本]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1534343893}
+序列号
 
-[[SerialNum]{lang="EN-US"}]{#struct_0_x1289_x1771_x973770693}
+Manufacturer name
 
-[[序列号]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1630929579}
+制造厂商
 
-[[Manufacturer name]{lang="EN-US"}]{#struct_0_x1289_x1771_x745913291}
+Model name
 
-[[制造厂商]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x973705157}
+模块名称
 
-[[Model name]{lang="EN-US"}]{#struct_0_x1289_x1771_x1492754320}
+Asset tracking identifier
 
-[[模块名称]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1068223017}
+资产跟踪ID
 
-[[Asset tracking identifier]{lang="EN-US"}]{#struct_0_x1289_x1771_x398282274}
+LLDP local-information of port 1
 
-[[资产跟踪]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1289_x1771_x973377477}
+端口1上LLDP本地信息
 
-[[LLDP local-information of port 1]{lang="EN-US"}]{#struct_0_x1289_x1771_x1522448084}
+Port ID type
 
-[[端口]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_x1289_x1771_2090324384}[上]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[本地信息]{style="font-family:宋体"}
+端口ID类型：
 
-[[Port ID type]{lang="EN-US"}]{#struct_0_x1289_x1771_x973311941}
+·MAC address：表示MAC地址
 
-[[端口]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1289_x1771_x1050964601}[类型：]{style="font-family:宋体"}
+·Interface name：表示接口名称
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MAC address]{lang="EN-US"}]{#struct_0_x1289_x1771_536319705}[：表示]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+Port ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Interface name]{lang="EN-US"}]{#struct_0_x1289_x1771_x973901764}[：表示接口名称]{lang="EN-US" style="font-family:宋体"}
+端口ID值，根据本设备的Port ID type取相应类型的值
 
-[[Port ID]{lang="EN-US"}]{#struct_0_x1289_x1771_859016771}
+Port description
 
-[[端口]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1289_x1771_x1842092304}[值，根据本设备的]{style="font-family:宋体"}[Port ID type]{lang="EN-US"}[取相应类型的值]{style="font-family:宋体"}
+端口描述
 
-[[Port description]{lang="EN-US"}]{#struct_0_x1289_x1771_x973836228}
+LLDP agent nearest-bridge management address
 
-[[端口描述]{style="font-family:宋体"}]{#struct_0_x1289_x1771_66961063}
+LLDP缺省代理，即最近桥代理的管理地址
 
-[[LLDP agent nearest-bridge management address]{lang="EN-US"}]{#struct_0_x1289_x1771_x974032836}
+LLDP agent nearest-customer management address
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_372697810}[缺省代理，即最近桥代理的管理地址]{style="font-family:宋体"}
+LLDP最近客户桥代理的管理地址
 
-[[LLDP agent nearest-customer management address]{lang="EN-US"}]{#struct_0_x1289_x1771_2014170926}
+LLDP agent nearest-nontpmr management address
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_x973967300}[最近客户桥代理的管理地址]{style="font-family:宋体"}
+LLDP最近非TPMR桥代理的管理地址
 
-[[LLDP agent nearest-nontpmr management address]{lang="EN-US"}]{#struct_0_x1289_x1771_x716813845}
+Management address type
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_x208374453}[最近非]{style="font-family:宋体"}[TPMR]{lang="EN-US"}[桥代理的管理地址]{style="font-family:宋体"}
+管理地址类型
 
-[[Management address type]{lang="EN-US"}]{#struct_0_x1289_x1771_x973639620}
+Management address
 
-[[管理地址类型]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1447433908}
+管理地址
 
-[[Management address]{lang="EN-US"}]{#struct_0_x1289_x1771_1419064856}
+Management address interface type
 
-[[管理地址]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x973574084}
+管理地址所在接口的编码方式
 
-[[Management address interface type]{lang="EN-US"}]{#struct_0_x1289_x1771_x720841516}
+Management address interface ID
 
-[[管理地址所在接口的编码方式]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x973770692}
+管理地址接口索引
 
-[[Management address interface ID]{lang="EN-US"}]{#struct_0_x1289_x1771_1630995115}
+Management address OID
 
-[[管理地址接口索引]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1609682155}
+管理地址对象标识符
 
-[[Management address OID]{lang="EN-US"}]{#struct_0_x1289_x1771_x973705156}
+DCBX control info
 
-[[管理地址对象标识符]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1492819856}
+显示DCBX控制TLV的信息，在标准DCBX中显示版本信息
 
-[[DCBX control info]{lang="EN-US"}]{#struct_0_x1289_x1771_x973377476}
+Oper version
 
-[[显示]{style="font-family:宋体"}[DCBX]{lang="EN-US"}]{#struct_0_x1289_x1771_x1522382548}[控制]{style="font-family:宋体"}[TLV]{lang="EN-US"}[的信息，在标准]{style="font-family:宋体"}[DCBX]{lang="EN-US"}[中显示版本信息]{style="font-family:宋体"}
+DCBX版本号
 
-[[Oper version]{lang="EN-US"}]{#struct_0_x1289_x1771_1725457091}
+Sequence number
 
-[[DCBX]{lang="EN-US"}]{#struct_0_x1289_x1771_x973311940}[版本号]{style="font-family:宋体"}
+DCBX TLV内容改变的次数
 
-[[Sequence number]{lang="EN-US"}]{#struct_0_x1289_x1771_x1050899065}
+Acknowledge number
 
-[[DCBX TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_592182180}[内容改变的次数]{style="font-family:宋体"}
+对端设备同步配置的次数
 
-[[Acknowledge number]{lang="EN-US"}]{#struct_0_x1289_x1771_1448908303}
+DCBX ETS info
 
-[[对端设备同步配置的次数]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1976768633}
+CoS与本地优先级的映射关系及对应的带宽分配情况
 
-[[DCBX ETS info]{lang="EN-US"}]{#struct_0_x1289_x1771_592247716}
+CoS
 
-[[CoS]{lang="EN-US"}]{#struct_0_x1289_x1771_x667898165}[与本地优先级的映射关系及对应的带宽分配情况]{style="font-family:宋体"}
+CoS值
 
-[[CoS]{lang="EN-US"}]{#struct_0_x1289_x1771_592051108}
+Local Priority
 
-[[CoS]{lang="EN-US"}]{#struct_0_x1289_x1771_x2107205676}[值]{style="font-family:宋体"}
+本地优先级
 
-[[Local Priority]{lang="EN-US"}]{#struct_0_x1289_x1771_979757997}
+Percentage
 
-[[本地优先级]{style="font-family:宋体"}]{#struct_0_x1289_x1771_592116644}
+对应的带宽分配
 
-[[Percentage]{lang="EN-US"}]{#struct_0_x1289_x1771_x1686750845}
+P0-     P1-     P2-     P3-     P4-     P5-     P6-     P7-
 
-[[对应的带宽分配]{style="font-family:宋体"}]{#struct_0_x1289_x1771_592444324}
+本端的no-drop标记值对应的支持的优先级数
 
-[[P0-     P1-     P2-     P3-     P4-     P5-     P6-     P7-]{lang="EN-US"}]{#struct_0_x1289_x1771_x797671115}
+Number of traffic classes supported
 
-[[本端的]{style="font-family:宋体"}[no-drop]{lang="EN-US"}]{#struct_0_x1289_x1771_592509860}[标记值对应的支持的优先级数]{style="font-family:宋体"}
+PFC支持的能力集，只在1.01版本中显示该项
 
-[[Number of traffic classes supported]{lang="EN-US"}]{#struct_0_x1289_x1771_x1995978828}
+DCBX APP info
 
-[[PFC]{lang="EN-US"}]{#struct_0_x1289_x1771_1322607138}[支持的能力集，只在]{style="font-family:宋体"}[1.01]{lang="EN-US"}[版本中显示该项]{style="font-family:宋体"}
+显示APP TLV信息
 
-[[DCBX APP info]{lang="EN-US"}]{#struct_0_x1289_x1771_592313252}
+Selected Field
 
-[[显示]{style="font-family:宋体"}[APP TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_103812081}[信息]{style="font-family:宋体"}
+选择域
 
-[[Selected Field]{lang="EN-US"}]{#struct_0_x1289_x1771_592378788}
+Priority
 
-[[选择域]{style="font-family:宋体"}]{#struct_0_x1289_x1771_566865632}
+优先级
 
-[[Priority]{lang="EN-US"}]{#struct_0_x1289_x1771_592706468}
+Protocol ID
 
-[[优先级]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1866420344}
+应用协议号
 
-[[Protocol ID]{lang="EN-US"}]{#struct_0_x1289_x1771_592772004}
+CoS map
 
-[[应用协议号]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1052713855}
+应用协议与CoS的映射关系
 
-[[CoS map]{lang="EN-US"}]{#struct_0_x1289_x1771_592182181}
+DCBX ETS configuration info
 
-[[应用协议与]{style="font-family:宋体"}[CoS]{lang="EN-US"}]{#struct_0_x1289_x1771_1448908302}[的映射关系]{style="font-family:宋体"}
+显示ETS配置TLV信息
 
-[[DCBX ETS configuration info]{lang="EN-US"}]{#struct_0_x1289_x1771_592247717}
+CBS
 
-[[显示]{style="font-family:宋体"}[ETS]{lang="EN-US"}]{#struct_0_x1289_x1771_x667898166}[配置]{style="font-family:宋体"}[TLV]{lang="EN-US"}[信息]{style="font-family:宋体"}
+是否支持CBS，表示本端是否支持令牌桶限速算法：
 
-[[CBS]{lang="EN-US"}]{#struct_0_x1289_x1771_1349156077}
+·False：表示不支持令牌桶限速算法
 
-[[是否支持]{style="font-family:宋体"}[CBS]{lang="EN-US"}]{#struct_0_x1289_x1771_592051109}[，表示本端是否支持令牌桶限速算法：]{style="font-family:宋体"}
+·True：表示支持令牌桶限速算法
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[False]{lang="EN-US"}]{#struct_0_x1289_x1771_x2107205675}[：表示不支持令牌桶限速算法]{lang="EN-US" style="font-family:宋体"}
+Max TCs
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[True]{lang="EN-US"}]{#struct_0_x1289_x1771_592116645}[：表示支持令牌桶限速算法]{lang="EN-US" style="font-family:宋体"}
+支持的最大优先级数目
 
-[[Max TCs]{lang="EN-US"}]{#struct_0_x1289_x1771_x1686750844}
+TSA
 
-[[支持的最大优先级数目]{style="font-family:宋体"}]{#struct_0_x1289_x1771_592444325}
+传输选择算法
 
-[[TSA]{lang="EN-US"}]{#struct_0_x1289_x1771_592509861}
+DCBX ETS recommendation info
 
-[[传输选择算法]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1995978829}
+显示ETS推荐TLV信息
 
-[[DCBX ETS recommendation info]{lang="EN-US"}]{#struct_0_x1289_x1771_592313253}
+DCBX PFC info
 
-[[显示]{style="font-family:宋体"}[ETS]{lang="EN-US"}]{#struct_0_x1289_x1771_103812082}[推荐]{style="font-family:宋体"}[TLV]{lang="EN-US"}[信息]{style="font-family:宋体"}
+显示PFC TLV信息
 
-[[DCBX PFC info]{lang="EN-US"}]{#struct_0_x1289_x1771_592378789}
+Value of MBC
 
-[[显示]{style="font-family:宋体"}[PFC TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_566865633}[信息]{style="font-family:宋体"}
+支持的MBC状态（MBC表示报文避开MACsec的能力，占1个bit，取值为0表示MACsec去开启时，报文可以避开MACsec，取值为1表示MACsec关闭时，报文不可以避开MACsec）
 
-[[Value of MBC]{lang="EN-US"}]{#struct_0_x1289_x1771_592706469}
+Port VLAN ID(PVID)
 
-[[支持的]{style="font-family:宋体"}[MBC]{lang="EN-US"}]{#struct_0_x1289_x1771_1866420343}[状态（]{style="font-family:宋体"}[MBC]{lang="EN-US"}[表示报文避开]{style="font-family:宋体"}[MACsec]{lang="EN-US"}[的能力，占]{style="font-family:宋体"}[1]{lang="EN-US"}[个]{style="font-family:宋体"}[bit]{lang="EN-US"}[，取值为]{style="font-family:宋体"}[0]{lang="EN-US"}[表示]{style="font-family:宋体"}[MACsec]{lang="EN-US"}[去开启时，报文可以避开]{style="font-family:宋体"}[MACsec]{lang="EN-US"}[，取值为]{style="font-family:宋体"}[1]{lang="EN-US"}[表示]{style="font-family:宋体"}[MACsec]{lang="EN-US"}[关闭时，报文不可以避开]{style="font-family:宋体"}[MACsec]{lang="EN-US"}[）]{style="font-family:宋体"}
+端口VLAN ID
 
-[[Port VLAN ID(PVID)]{lang="EN-US"}]{#struct_0_x1289_x1771_592772005}
+Port and protocol VLAN ID(PPVID)
 
-[[端口]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}]{#struct_0_x1289_x1771_1052713856}
+端口协议VLAN ID
 
-[[Port and protocol VLAN ID(PPVID)]{lang="EN-US"}]{#struct_0_x1289_x1771_592182178}
+Port and protocol VLAN supported
 
-[[端口协议]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}]{#struct_0_x1289_x1771_257267207}
+是否支持端口协议VLAN
 
-[[Port and protocol VLAN supported]{lang="EN-US"}]{#struct_0_x1289_x1771_592247714}
+Port and protocol VLAN enabled
 
-[[是否支持端口协议]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1289_x1771_x667898167}
+是否已开启端口协议VLAN
 
-[[Port and protocol VLAN enabled]{lang="EN-US"}]{#struct_0_x1289_x1771_592051106}
+VLAN name of VLAN 12
 
-[[是否已开启端口协议]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1289_x1771_x2107205666}
+VLAN 12的名称
 
-[[VLAN name of VLAN 12]{lang="EN-US"}]{#struct_0_x1289_x1771_592116642}
+Management VLAN ID
 
-[[VLAN 12]{lang="EN-US"}]{#struct_0_x1289_x1771_x1686750843}[的名称]{style="font-family:宋体"}
+管理VLAN ID
 
-[[Management VLAN ID]{lang="EN-US"}]{#struct_0_x1289_x1771_592444322}
+Auto-negotiation supported
 
-[[管理]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}]{#struct_0_x1289_x1771_592509858}
+端口是否支持自协商
 
-[[Auto-negotiation supported]{lang="EN-US"}]{#struct_0_x1289_x1771_x422000708}
+Auto-negotiation enabled
 
-[[端口是否支持自协商]{style="font-family:宋体"}]{#struct_0_x1289_x1771_592313250}
+端口是否已开启自协商
 
-[[Auto-negotiation enabled]{lang="EN-US"}]{#struct_0_x1289_x1771_103812083}
+OperMau
 
-[[端口是否已开启自协商]{style="font-family:宋体"}]{#struct_0_x1289_x1771_592378786}
+端口自适应的速率和双工状态
 
-[[OperMau]{lang="EN-US"}]{#struct_0_x1289_x1771_566865638}
+Power port class
 
-[[端口自适应的速率和双工状态]{style="font-family:宋体"}]{#struct_0_x1289_x1771_592706466}
+PoE类型：
 
-[[Power port class]{lang="EN-US"}]{#struct_0_x1289_x1771_592772002}
+·PSE（Power Sourcing Equipment,供电设备）
 
-[[PoE]{lang="EN-US"}]{#struct_0_x1289_x1771_1052713861}[类型：]{style="font-family:宋体"}
+·PD（Powered Device，受电设备）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_592182179}[（]{lang="EN-US" style="font-family:宋体"}[Power Sourcing Equipment]{lang="EN-US"}[,]{lang="EN-US"}[供电设备）]{lang="EN-US" style="font-family:宋体"}
+PSE power supported
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PD]{lang="EN-US"}]{#struct_0_x1289_x1771_257267206}[（]{lang="EN-US" style="font-family:宋体"}[Powered Device]{lang="EN-US"}[，受电设备）]{lang="EN-US" style="font-family:宋体"}
+是否支持PSE供电
 
-[[PSE power supported]{lang="EN-US"}]{#struct_0_x1289_x1771_592247715}
+PSE power enabled
 
-[[是否支持]{style="font-family:宋体"}[PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_592051107}[供电]{style="font-family:宋体"}
+是否已开启PSE供电
 
-[[PSE power enabled]{lang="EN-US"}]{#struct_0_x1289_x1771_x2107205665}
+PSE pairs control ability
 
-[[是否已开启]{style="font-family:宋体"}[PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_592116643}[供电]{style="font-family:宋体"}
+供电方式是否可控
 
-[[PSE pairs control ability]{lang="EN-US"}]{#struct_0_x1289_x1771_x1686750842}
+Power pairs
 
-[[供电方式是否可控]{style="font-family:宋体"}]{#struct_0_x1289_x1771_592444323}
+PoE端口的远程供电模式：
 
-[[Power pairs]{lang="EN-US"}]{#struct_0_x1289_x1771_x797671118}
+·Signal：表示信号线供电模式
 
-[[PoE]{lang="EN-US"}]{#struct_0_x1289_x1771_592509859}[端口的远程供电模式：]{style="font-family:宋体"}
+·Spare：表示空闲线供电模式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Signal]{lang="EN-US"}]{#struct_0_x1289_x1771_592313251}[：表示信号线供电模式]{lang="EN-US" style="font-family:宋体"}
+Port power classification
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Spare]{lang="EN-US"}]{#struct_0_x1289_x1771_103812084}[：表示空闲线供电模式]{lang="EN-US" style="font-family:宋体"}
+PD的端口控制级别：
 
-[[Port power classification]{lang="EN-US"}]{#struct_0_x1289_x1771_592378787}
+·Class 0：表示级别0
 
-[[PD]{lang="EN-US"}]{#struct_0_x1289_x1771_566865639}[的端口控制级别：]{style="font-family:宋体"}
+·Class 1：表示级别1
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Class 0]{lang="EN-US"}]{#struct_0_x1289_x1771_592706467}[：表示级别]{lang="EN-US" style="font-family:宋体"}[0]{lang="EN-US"}
+·Class 2：表示级别2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Class 1]{lang="EN-US"}]{#struct_0_x1289_x1771_592772003}[：表示级别]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}
+·Class 3：表示级别3
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Class 2]{lang="EN-US"}]{#struct_0_x1289_x1771_1052713862}[：表示级别]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·Class 4：表示级别4
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Class 3]{lang="EN-US"}]{#struct_0_x1289_x1771_592182176}[：表示级别]{lang="EN-US" style="font-family:宋体"}[3]{lang="EN-US"}
+Power type
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Class 4]{lang="EN-US"}]{#struct_0_x1289_x1771_592247712}[：表示级别]{lang="EN-US" style="font-family:宋体"}[4]{lang="EN-US"}
+供电类型：
 
-[[Power type]{lang="EN-US"}]{#struct_0_x1289_x1771_2065952382}
+·Type 1 PD：表示类型1 PD
 
-[[供电类型：]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x876925136}
+·Type 2 PD：表示类型2 PD
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Type 1 PD]{lang="EN-US"}]{#struct_0_x1289_x1771_2065886846}[：表示类型]{lang="EN-US" style="font-family:宋体"}[1 PD]{lang="EN-US"}
+·Type 1 PSE：表示类型1 PSE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Type 2 PD]{lang="EN-US"}]{#struct_0_x1289_x1771_1869021673}[：表示类型]{lang="EN-US" style="font-family:宋体"}[2 PD]{lang="EN-US"}
+·Type 2 PSE：表示类型2 PSE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Type 1 PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_2065821310}[：表示类型]{lang="EN-US" style="font-family:宋体"}[1 PSE]{lang="EN-US"}
+Power source
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Type 2 PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_695384799}[：表示类型]{lang="EN-US" style="font-family:宋体"}[2 PSE]{lang="EN-US"}
+功率来源（功率来源根据供电类型为PD类型或PSE类型，取值不同）：
 
-[[Power source]{lang="EN-US"}]{#struct_0_x1289_x1771_30464080}
+PSE
 
-[[功率来源（功率来源根据供电类型为]{style="font-family:宋体"}[PD]{lang="EN-US"}]{#struct_0_x1289_x1771_2065755774}[类型或]{style="font-family:宋体"}[PSE]{lang="EN-US"}[类型，取值不同）：]{style="font-family:宋体"}
+·Unknown：表示采用的电源类型未知
 
-[[PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_x515404232}
+·Primary：表示采用主用电源作为电源
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown]{lang="EN-US"}]{#struct_0_x1289_x1771_2065690238}[：表示采用的电源类型未知]{lang="EN-US" style="font-family:宋体"}
+·Backup：表示采用备用电源作为电源
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Primary]{lang="EN-US"}]{#struct_0_x1289_x1771_290670476}[：表示采用主用电源作为电源]{lang="EN-US" style="font-family:宋体"}
+·Reserved：保留
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Backup]{lang="EN-US"}]{#struct_0_x1289_x1771_2065624702}[：表示采用备用电源作为电源]{style="font-family:宋体"}
+PD
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Reserved]{lang="EN-US"}]{#struct_0_x1289_x1771_1056905721}[：保留]{lang="EN-US" style="font-family:宋体"}
+·Unknown：表示采用的电源类型未知
 
-[[PD]{lang="EN-US"}]{#struct_0_x1289_x1771_2065559166}
+·PSE：表示采用PSE作为电源
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown]{lang="EN-US"}]{#struct_0_x1289_x1771_x49146061}[：表示采用的电源类型未知]{lang="EN-US" style="font-family:宋体"}
+·Local：表示采用本地电源作为电源
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_x864868828}[：表示采用]{style="font-family:宋体"}[PSE]{lang="EN-US"}[作为电源]{style="font-family:宋体"}
+·PSE and local：表示采用PSE和本地电源作为电源
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Local]{lang="EN-US"}]{#struct_0_x1289_x1771_2065493630}[：表示采用本地电源作为电源]{lang="EN-US" style="font-family:宋体"}
+Power priority
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PSE and local]{lang="EN-US"}]{#struct_0_x1289_x1771_651535779}[：表示采用]{lang="EN-US" style="font-family:宋体"}[PSE]{lang="EN-US"}[和本地电源作为电源]{lang="EN-US" style="font-family:宋体"}
+功率优先级：
 
-[[Power priority]{lang="EN-US"}]{#struct_0_x1289_x1771_2066476670}
+·Unknown：表示优先级未知
 
-[[功率优先级：]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x263650448}
+·Critical：表示优先级为1级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown]{lang="EN-US"}]{#struct_0_x1289_x1771_2066411134}[：表示优先级未知]{lang="EN-US" style="font-family:宋体"}
+·High：表示优先级为2级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Critical]{lang="EN-US"}]{#struct_0_x1289_x1771_181189741}[：表示优先级为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[级]{lang="EN-US" style="font-family:宋体"}
+·Low：表示优先级为3级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[High]{lang="EN-US"}]{#struct_0_x1289_x1771_2065952385}[：表示优先级为]{style="font-family:宋体"}[2]{lang="EN-US"}[级]{style="font-family:宋体"}
+PD requested power value
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Low]{lang="EN-US"}]{#struct_0_x1289_x1771_x876728528}[：表示优先级为]{style="font-family:宋体"}[3]{lang="EN-US"}[级]{style="font-family:宋体"}
+PD请求功率值，单位为瓦特
 
-[[PD requested power value]{lang="EN-US"}]{#struct_0_x1289_x1771_x341353012}
+PSE allocated power value
 
-[[PD]{lang="EN-US"}]{#struct_0_x1289_x1771_2065886849}[请求功率值，单位为瓦特]{style="font-family:宋体"}
+PSE分配功率值，单位为瓦特
 
-[[PSE allocated power value]{lang="EN-US"}]{#struct_0_x1289_x1771_1869349353}
+Link aggregation supported
 
-[[PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_2065821313}[分配功率值，单位为瓦特]{style="font-family:宋体"}
+端口是否支持链路聚合
 
-[[Link aggregation supported]{lang="EN-US"}]{#struct_0_x1289_x1771_x667898169}
+Link aggregation enabled
 
-[[端口是否支持链路聚合]{style="font-family:宋体"}]{#struct_0_x1289_x1771_592051104}
+端口是否已开启链路聚合
 
-[[Link aggregation enabled]{lang="EN-US"}]{#struct_0_x1289_x1771_592116640}
+Aggregation port ID
 
-[[端口是否已开启链路聚合]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1686750841}
+聚合组中该成员端口的编号，未开启链路聚合功能时为0
 
-[[Aggregation port ID]{lang="EN-US"}]{#struct_0_x1289_x1771_592444320}
+Congestion notification TLV info
 
-[[聚合组中该成员端口的编号，未开启链路聚合功能时为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_x1289_x1771_x797671119}
+拥塞通知TLV信息。本字段的支持情况与设备型号有关，请以设备的实际情况为准
 
-[[Congestion notification TLV info]{lang="EN-US"}]{#struct_0_x1289_x1771_x393804802}
+Dot1p
 
-[[拥塞通知]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x393935874}[信息。本字段的支持情况与设备型号有关，请以设备的实际情况为准]{style="font-family:宋体"}
+802.1p优先级
 
-[[Dot1p]{lang="EN-US"}]{#struct_0_x1289_x1771_x394001410}
+CNPV
 
-[[802.1p]{lang="EN-US"}]{#struct_0_x1289_x1771_1531556005}[优先级]{style="font-family:宋体"}
+802.1p优先级是否被配置为CNPV（Congestion Notification Priority Value，拥塞通知优先级值），表明是否加入了对应CNPV域：
 
-[[CNPV]{lang="EN-US"}]{#struct_0_x1289_x1771_x395367615}
+·Yes：表示802.1p优先级被配置为CNPV
 
-[[802.1p]{lang="EN-US"}]{#struct_0_x1289_x1771_x393542658}[优先级是否被配置为]{style="font-family:宋体"}[CNPV]{lang="EN-US"}[（]{style="font-family:宋体"}[Congestion Notification Priority Value]{lang="EN-US"}[，拥塞通知优先级值），表明是否加入了对应]{style="font-family:宋体"}[CNPV]{lang="EN-US"}[域：]{style="font-family:宋体"}
+·No：表示802.1p优先级未被配置为CNPV
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Yes]{lang="EN-US"}]{#struct_0_x1289_x1771_x1055310635}[：表示]{lang="EN-US" style="font-family:宋体"}[802.1p]{lang="EN-US"}[优先级被配置为]{lang="EN-US" style="font-family:宋体"}[CNPV]{lang="EN-US"}
+Ready
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No]{lang="EN-US"}]{#struct_0_x1289_x1771_x393608194}[：表示]{style="font-family:宋体"}[802.1p]{lang="EN-US"}[优先级未被配置为]{style="font-family:宋体"}[CNPV]{lang="EN-US"}
+表明设备接口是否已经关闭了802.1p优先级与隔离优先级的映射：
 
-[[Ready]{lang="EN-US"}]{#struct_0_x1289_x1771_1317372310}
+·Yes：表示关闭优先级映射
 
-[[表明设备接口是否已经关闭了]{style="font-family:宋体"}[802.1p]{lang="EN-US"}]{#struct_0_x1289_x1771_x393673730}[优先级与隔离优先级的映射：]{style="font-family:宋体"}
+·No：表示未关闭优先级映射
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Yes]{lang="EN-US"}]{#struct_0_x1289_x1771_x1838036845}[：表示关闭优先级映射]{style="font-family:宋体"}
+Maximum frame size
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No]{lang="EN-US"}]{#struct_0_x1289_x1771_60068155}[：表示未关闭优先级映射]{style="font-family:宋体"}
+端口支持的最大帧长度
 
-[[Maximum frame size]{lang="EN-US"}]{#struct_0_x1289_x1771_592509856}
+Media policy type
 
-[[端口支持的最大帧长度]{style="font-family:宋体"}]{#struct_0_x1289_x1771_592313248}
+媒体策略类型：
 
-[[Media policy type]{lang="EN-US"}]{#struct_0_x1289_x1771_592378784}
+·Unknown：表示类型未知
 
-[[媒体策略类型：]{style="font-family:宋体"}]{#struct_0_x1289_x1771_566865636}
+·Voice：表示语音
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown]{lang="EN-US"}]{#struct_0_x1289_x1771_592706464}[：表示类型未知]{lang="EN-US" style="font-family:宋体"}
+·VoiceSignaling：表示语音信号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Voice]{lang="EN-US"}]{#struct_0_x1289_x1771_592772000}[：表示语音]{lang="EN-US" style="font-family:宋体"}
+·GuestVoice：表示访客语音
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VoiceSignaling]{lang="EN-US"}]{#struct_0_x1289_x1771_1052713859}[：表示语音信号]{lang="EN-US" style="font-family:宋体"}
+·GuestVoiceSignaling：表示访客语音信号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[GuestVoice]{lang="EN-US"}]{#struct_0_x1289_x1771_592182177}[：表示访客语音]{lang="EN-US" style="font-family:宋体"}
+·SoftPhoneVoice：表示软体电话语音
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[GuestVoiceSignaling]{lang="EN-US"}]{#struct_0_x1289_x1771_592247713}[：表示访客语音信号]{lang="EN-US" style="font-family:
-  宋体"}
+·Videoconferencing：表示视频会议
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SoftPhoneVoice]{lang="EN-US"}]{#struct_0_x1289_x1771_x667898170}[：表示软体电话语音]{lang="EN-US" style="font-family:宋体"}
+·StreamingVideo：表示流视频
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Videoconferencing]{lang="EN-US"}]{#struct_0_x1289_x1771_592051105}[：表示视频会议]{lang="EN-US" style="font-family:
-  宋体"}
+·VideoSignaling：表示视频信号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[StreamingVideo]{lang="EN-US"}]{#struct_0_x1289_x1771_592116641}[：表示流视频]{lang="EN-US" style="font-family:宋体"}
+Unknown policy
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VideoSignaling]{lang="EN-US"}]{#struct_0_x1289_x1771_x1686750840}[：表示视频信号]{lang="EN-US" style="font-family:宋体"}
+媒体策略类型是否未知：
 
-[[Unknown policy]{lang="EN-US"}]{#struct_0_x1289_x1771_592444321}
+·Yes：表示策略类型未知
 
-[[媒体策略类型是否未知：]{style="font-family:宋体"}]{#struct_0_x1289_x1771_592509857}
+·No：表示策略类型已知
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Yes]{lang="EN-US"}]{#struct_0_x1289_x1771_x422000719}[：表示策略类型未知]{lang="EN-US" style="font-family:宋体"}
+VLAN tagged
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No]{lang="EN-US"}]{#struct_0_x1289_x1771_592313249}[：表示策略类型已知]{style="font-family:宋体"}
+媒体VLAN是否带Tag
 
-[[VLAN tagged]{lang="EN-US"}]{#struct_0_x1289_x1771_592378785}
+Media policy VLANID
 
-[[媒体]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1289_x1771_592706465}[是否带]{style="font-family:宋体"}[Tag]{lang="EN-US"}
+媒体VLAN的VLAN ID
 
-[[Media policy VLANID]{lang="EN-US"}]{#struct_0_x1289_x1771_1866420331}
+Media policy L2 priority
 
-[[媒体]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1289_x1771_592772001}[的]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}
+二层优先级
 
-[[Media policy L2 priority]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136701175}
+Media policy DSCP
 
-[[二层优先级]{style="font-family:宋体"}]{#struct_0_x1289_x1771_647645598}
+DSCP的值
 
-[[Media policy DSCP]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136635639}
+Location format
 
-[[DSCP]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136832247}[的值]{style="font-family:宋体"}
+位置信息格式：
 
-[[Location format]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136766711}
+·Invalid：表示无效位置数据类型
 
-[[位置信息格式：]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x2006111230}
+·Coordinate-based LCI：表示基于坐标的位置信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Invalid]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136439031}[：表示无效位置数据类型]{lang="EN-US" style="font-family:宋体"}
+·Civic Address LCI：表示普通地址信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Coordinate-based LCI]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136373495}[：表示基于坐标的位置信息]{lang="EN-US" style="font-family:
-  宋体"}
+·ECS ELIN：表示紧急电话号码
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Civic Address LCI]{lang="EN-US"}]{#struct_0_x1289_x1771_x1825927384}[：表示普通地址信息]{lang="EN-US" style="font-family:
-  宋体"}
+Location information
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ECS ELIN]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136570103}[：表示紧急电话号码]{style="font-family:宋体"}
+位置信息
 
-[[Location information]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136504567}
+PoE PSE power source
 
-[[位置信息]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x2136176887}
+PSE所采用的电源类型：
 
-[[PoE PSE power source]{lang="EN-US"}]{#struct_0_x1289_x1771_632399350}
+·Unknown：表示采用的电源类型未知
 
-[[PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136111351}[所采用的电源类型：]{style="font-family:宋体"}
+·Primary：表示采用主用电源作为电源
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136701174}[：表示采用的电源类型未知]{lang="EN-US" style="font-family:宋体"}
+·Backup：表示采用备用电源作为电源
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Primary]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136635638}[：表示采用主用电源作为电源]{lang="EN-US" style="font-family:宋体"}
+PoE PD power source
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Backup]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136832246}[：表示采用备用电源作为电源]{style="font-family:宋体"}
+PD所采用的电源类型：
 
-[[PoE PD power source]{lang="EN-US"}]{#struct_0_x1289_x1771_508272499}
+·Unknown：表示采用的电源类型未知
 
-[[PD]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136766710}[所采用的电源类型：]{style="font-family:宋体"}
+·PSE：表示采用PSE作为电源
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136439030}[：表示采用的电源类型未知]{lang="EN-US" style="font-family:宋体"}
+·Local：表示采用本地电源作为电源
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136373494}[：表示采用]{style="font-family:宋体"}[PSE]{lang="EN-US"}[作为电源]{style="font-family:宋体"}
+·PSE and local：表示采用PSE和本地电源作为电源
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Local]{lang="EN-US"}]{#struct_0_x1289_x1771_902955971}[：表示采用本地电源作为电源]{lang="EN-US" style="font-family:宋体"}
+Port PSE priority
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PSE and local]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136570102}[：表示采用]{lang="EN-US" style="font-family:宋体"}[PSE]{lang="EN-US"}[和本地电源作为电源]{lang="EN-US" style="font-family:宋体"}
+PSE上端口的供电优先级：
 
-[[Port PSE priority]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136504566}
+·Unknown：表示优先级未知
 
-[[PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136176886}[上端口的供电优先级：]{style="font-family:宋体"}
+·Critical：表示优先级为1级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136111350}[：表示优先级未知]{lang="EN-US" style="font-family:宋体"}
+·High：表示优先级为2级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Critical]{lang="EN-US"}]{#struct_0_x1289_x1771_x1055406542}[：表示优先级为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[级]{lang="EN-US" style="font-family:宋体"}
+·Low：表示优先级为3级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[High]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136701177}[：表示优先级为]{style="font-family:宋体"}[2]{lang="EN-US"}[级]{style="font-family:宋体"}
+Port PD priority
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Low]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136635641}[：表示优先级为]{style="font-family:宋体"}[3]{lang="EN-US"}[级]{style="font-family:宋体"}
+PD上端口的受电优先级：
 
-[[Port PD priority]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136832249}
+·Unknown：表示优先级未知
 
-[[PD]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136766713}[上端口的受电优先级：]{style="font-family:宋体"}
+·Critical：表示优先级为1级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136439033}[：表示优先级未知]{lang="EN-US" style="font-family:宋体"}
+·High：表示优先级为2级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Critical]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136373497}[：表示优先级为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[级]{lang="EN-US" style="font-family:宋体"}
+·Low：表示优先级为3级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[High]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136570105}[：表示优先级为]{style="font-family:宋体"}[2]{lang="EN-US"}[级]{style="font-family:宋体"}
+Port available power value
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Low]{lang="EN-US"}]{#struct_0_x1289_x1771_2054852387}[：表示优先级为]{style="font-family:宋体"}[3]{lang="EN-US"}[级]{style="font-family:宋体"}
+PSE上端口可提供的功率，或PD上端口所需的功率，单位为瓦特
 
-[[Port available power value]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136504569}
+Transmit Tw
 
-[[PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136176889}[上端口可提供的功率，或]{style="font-family:宋体"}[PD]{lang="EN-US"}[上端口所需的功率，单位为瓦特]{style="font-family:宋体"}
+本端发送的等待时间，单位为微秒
 
-[[Transmit Tw]{lang="EN-US"}]{#struct_0_x1289_x1771_1869498170}
+Receive Tw
 
-[[本端发送的等待时间，单位为微秒]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1869563706}
+本端向对端请求的等待时间，单位为微秒
 
-[[Receive Tw]{lang="EN-US"}]{#struct_0_x1289_x1771_1870153530}
+Fallback Tw
 
-[[本端向对端请求的等待时间，单位为微秒]{style="font-family:宋体"}]{#struct_0_x1289_x1771_412592514}
+本端向对端请求的候选等待时间，单位为微秒
 
-[[Fallback Tw]{lang="EN-US"}]{#struct_0_x1289_x1771_1870219066}
+Echo Transmit Tw
 
-[[本端向对端请求的候选等待时间，单位为微秒]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1869629245}
+收到的对端发送的等待时间，单位为微秒
 
-[[Echo Transmit Tw]{lang="EN-US"}]{#struct_0_x1289_x1771_1869694781}
+Echo Receive Tw
 
-[[收到的对端发送的等待时间，单位为微秒]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1869760317}
-
-[[Echo Receive Tw]{lang="EN-US"}]{#struct_0_x1289_x1771_1869825853}
-
-[[收到的对端请求的等待时间，单位为微秒]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x721905202}
-
-[ ]{lang="EN-US"}
-
-::: {#2060811889 .myid}
-[]{#_Toc404784693}[]{#struct_0_x1289_x1771_182060656}
+收到的对端请求的等待时间，单位为微秒
 
 **LLDP \-- LLDP配置命令 \-- display lldp neighbor-information**
 
 ------------------------------------------------------------------------
 
-[**[display lldp neighbor-information]{lang="EN-US"}**]{#struct_0_x1289_x1771_82004578}[命令用来显示由邻居设备发来的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[信息，这些信息是由邻居设备组织成]{style="font-family:宋体"}[TLV]{lang="EN-US"}[并发送给本设备的。]{style="font-family:宋体"}
+**[display lldp neighbor-information**]命令用来显示由邻居设备发来的LLDP信息，这些信息是由邻居设备组织成TLV并发送给本设备的。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1409905347}
+【命令】
 
-[**[display lldp neighbor-information]{lang="EN-US"}**[ \[ \[ \[ **interface** *interface-type interface-number* \] \[ **agent** { **nearest-bridge** \| **nearest-customer** \| **nearest-nontpmr** } \] \[ **verbose** \] \] \| **list** \[ **system-name** *system-name* \] \]]{lang="EN-US"}]{#struct_0_x1289_x1771_157247950}
+**[display lldp neighbor-information** [ [ [ **interface** *interface-type interface-number*  [ **agent** { **nearest-bridge** \| **nearest-customer** \| **nearest-nontpmr** } ]  **verbose**  ] \| **list**  **system-name** *system-name*  ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x2136111353}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1673476813}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1789661147}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_x591455351}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1289_x1771_1244103674}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_1231408927}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1289_x1771_1900984689}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_935654711}
+【参数】
 
-[**[interface ]{lang="EN-US"}***[interface-type interface-number]{lang="EN-US"}*]{#struct_0_x1289_x1771_1066537562}[：显示指定接口收到的由邻居设备发来的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[信息，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[表示接口类型和接口编号。如果未指定该参数，将显示所有接口收到的由邻居设备发来的]{style="font-family:
-宋体"}[LLDP]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[interface ***interface-type interface-number*]：显示指定接口收到的由邻居设备发来的LLDP信息，*interface-type interface-number*表示接口类型和接口编号。如果未指定该参数，将显示所有接口收到的由邻居设备发来的LLDP信息。
 
-[**[agent]{lang="EN-US"}**]{#struct_0_x1289_x1771_x2136701176}[：显示指定类型]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[代理收到的由邻居设备发来的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[信息。如果未指定该参数，将显示所有类型]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[代理收到的由邻居设备发来的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[agent**]：显示指定类型LLDP代理收到的由邻居设备发来的LLDP信息。如果未指定该参数，将显示所有类型LLDP代理收到的由邻居设备发来的LLDP信息。
 
-[**[nearest-bridge]{lang="EN-US"}**]{#struct_0_x1289_x1771_1050930125}[：表示最近桥代理。]{style="font-family:宋体"}
+**[nearest-bridge**]：表示最近桥代理。
 
-[**[nearest-customer]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1768479768}[：表示最近客户桥代理。]{style="font-family:宋体"}
+**[nearest-customer**]：表示最近客户桥代理。
 
-[**[nearest-nontpmr]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1302419317}[：表示最近非]{style="font-family:宋体"}[TPMR]{lang="EN-US"}[桥代理。]{style="font-family:宋体"}
+**[nearest-nontpmr**]：表示最近非TPMR桥代理。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_x1289_x1771_970630087}[：显示由邻居设备发来的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[详细信息。如果未指定该参数，将显示由邻居设备发来的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[概要信息。]{style="font-family:宋体"}
+**[verbose**]：显示由邻居设备发来的LLDP详细信息。如果未指定该参数，将显示由邻居设备发来的LLDP概要信息。
 
-[**[list]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1912585707}[：按列表显示由邻居设备发来的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[list**]：按列表显示由邻居设备发来的LLDP信息。
 
-[**[system-name]{lang="EN-US"}**[ *system-name*]{lang="EN-US"}]{#struct_0_x1289_x1771_x803496370}[：按列表显示由指定邻居设备发来的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[信息。]{style="font-family:宋体"}*[system-name]{lang="EN-US"}*[表示邻居设备的系统名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[个字符的字符串。如果未指定该参数，将按列表显示由所有邻居设备发来的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[system-name** *system-name*]：按列表显示由指定邻居设备发来的LLDP信息。*system-name*表示邻居设备的系统名称，为1～255个字符的字符串。如果未指定该参数，将按列表显示由所有邻居设备发来的LLDP信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x532751715}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_x521376231}[显示所有接口最近桥代理收到的由邻居设备发来的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[详细信息（假设]{style="font-family:宋体"}[DCBX]{lang="EN-US"}[的版本为标准版）。]{style="font-family:宋体"}
+\# 显示所有接口最近桥代理收到的由邻居设备发来的LLDP详细信息（假设DCBX的版本为标准版）。
 
-[[\<Sysname\> display lldp neighbor-information agent nearest-bridge verbose]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136373496}
+\<Sysname\> display lldp neighbor-information agent nearest-bridge verbose
 
-[LLDP neighbor-information of port 1\[GigabitEthernet1/0/1\]:]{lang="EN-US"}
+LLDP neighbor-information of port 1[GigabitEthernet1/0/1:]
 
-[LLDP agent nearest-bridge:]{lang="EN-US"}
+LLDP agent nearest-bridge:
 
-[ LLDP Neighbor index : 1]{lang="EN-US"}
+ LLDP Neighbor index : 1
 
-[ Update time         : 0 days, 0 hours, 1 minutes, 1 seconds ]{lang="EN-US"}
+ Update time         : 0 days, 0 hours, 1 minutes, 1 seconds
 
-[ LLDP mac type       : Nearest Bridge]{lang="EN-US"}
+ LLDP mac type       : Nearest Bridge
 
-[ Chassis type        : MAC address]{lang="EN-US"}
+ Chassis type        : MAC address
 
-[ Chassis ID          : 000f-0055-0002]{lang="EN-US"}
+ Chassis ID          : 000f-0055-0002
 
-[ Port ID type        : Interface name]{lang="EN-US"}
+ Port ID type        : Interface name
 
-[ Port ID             : GigabitEthernet1/0/1]{lang="EN-US"}
+ Port ID             : GigabitEthernet1/0/1
 
-[ Time to live        : 121]{lang="EN-US"}
+ Time to live        : 121
 
-[ Port description    : GigabitEthernet1/0/1 Interface]{lang="EN-US"}
+ Port description    : GigabitEthernet1/0/1 Interface
 
-[ System name         : Sysname]{lang="EN-US"}
+ System name         : Sysname
 
-[ System description  : H3C Comware Platform Software]{lang="EN-US"}
+ System description  : H3C Comware Platform Software
 
-[ System capabilities supported : Bridge, Router, Customer Bridge, Service Bridge]{lang="EN-US"}
+ System capabilities supported : Bridge, Router, Customer Bridge, Service Bridge
 
-[ System capabilities enabled   : Bridge, Router, Customer Bridge]{lang="EN-US"}
+ System capabilities enabled   : Bridge, Router, Customer Bridge
 
-[ Management address type           : IPv4]{lang="EN-US"}
+ Management address type           : IPv4
 
-[ Management address                : 192.168.1.55]{lang="EN-US"}
+ Management address                : 192.168.1.55
 
-[ Management address interface type : IfIndex]{lang="EN-US"}
+ Management address interface type : IfIndex
 
-[ Management address interface ID   : Unknown]{lang="EN-US"}
+ Management address interface ID   : Unknown
 
-[ Management address OID            : 0]{lang="EN-US"}
+ Management address OID            : 0
 
-[ DCBX Control info:]{lang="EN-US"}
+ DCBX Control info:
 
-[ Oper version       : Standard]{lang="EN-US"}
+ Oper version       : Standard
 
-[ DCBX ETS configuration info:]{lang="EN-US"}
+ DCBX ETS configuration info:
 
-[  CBS                : False]{lang="EN-US"}
+  CBS                : False
 
-[  Max TCs            : 8]{lang="EN-US"}
+  Max TCs            : 8
 
-[  CoS     Local priority      Percentage        TSA]{lang="EN-US"}
+  CoS     Local priority      Percentage        TSA
 
-[   0            0                 15            ETS]{lang="EN-US"}
+   0            0                 15            ETS
 
-[   1            1                 0             SP]{lang="EN-US"}
+   1            1                 0             SP
 
-[   2            2                 15            ETS]{lang="EN-US"}
+   2            2                 15            ETS
 
-[   3            3                 14            ETS]{lang="EN-US"}
+   3            3                 14            ETS
 
-[   4            4                 14            ETS]{lang="EN-US"}
+   4            4                 14            ETS
 
-[   5            5                 14            ETS]{lang="EN-US"}
+   5            5                 14            ETS
 
-[   6            6                 14            ETS]{lang="EN-US"}
+   6            6                 14            ETS
 
-[   7            7                 14            ETS]{lang="EN-US"}
+   7            7                 14            ETS
 
-[ DCBX ETS recommendation info:]{lang="EN-US"}
+ DCBX ETS recommendation info:
 
-[  CoS     Local priority      Percentage        TSA]{lang="EN-US"}
+  CoS     Local priority      Percentage        TSA
 
-[   0            0                 15            ETS]{lang="EN-US"}
+   0            0                 15            ETS
 
-[   1            1                 0             SP]{lang="EN-US"}
+   1            1                 0             SP
 
-[   2            2                 15            ETS]{lang="EN-US"}
+   2            2                 15            ETS
 
-[   3            3                 14            ETS]{lang="EN-US"}
+   3            3                 14            ETS
 
-[   4            4                 14            ETS]{lang="EN-US"}
+   4            4                 14            ETS
 
-[   5            5                 14            ETS]{lang="EN-US"}
+   5            5                 14            ETS
 
-[   6            6                 14            ETS]{lang="EN-US"}
+   6            6                 14            ETS
 
-[   7            7                 14            ETS]{lang="EN-US"}
+   7            7                 14            ETS
 
-[ DCBX PFC info:]{lang="EN-US"}
+ DCBX PFC info:
 
-[  P0-0     P1-1     P2-1     P3-1     P4-0     P5-0     P6-0     P7-0]{lang="EN-US"}
+  P0-0     P1-1     P2-1     P3-1     P4-0     P5-0     P6-0     P7-0
 
-[  Number of traffic classes supported: 8]{lang="EN-US"}
+  Number of traffic classes supported: 8
 
-[  Value of MBC: 0]{lang="EN-US"}
+  Value of MBC: 0
 
-[ DCBX APP info:]{lang="EN-US"}
+ DCBX APP info:
 
-[  Selected Field              Protocol ID Priority]{lang="EN-US"}
+  Selected Field              Protocol ID Priority
 
-[  UDP/ DCCP                   100         0x3]{lang="EN-US"}
+  UDP/ DCCP                   100         0x3
 
-[  TCP/SCTP                    200         0x3]{lang="EN-US"}
+  TCP/SCTP                    200         0x3
 
-[  Ethertype                   0x1234      0x3]{lang="EN-US"}
+  Ethertype                   0x1234      0x3
 
-[  Ethertype                   0x8906      0x3 ]{lang="EN-US"}
+  Ethertype                   0x8906      0x3
 
-[ Port VLAN ID(PVID): 1]{lang="EN-US"}
+ Port VLAN ID(PVID): 1
 
-[ Port and protocol VLAN ID(PPVID) : 12]{lang="EN-US"}
+ Port and protocol VLAN ID(PPVID) : 12
 
-[ Port and protocol VLAN supported : Yes]{lang="EN-US"}
+ Port and protocol VLAN supported : Yes
 
-[ Port and protocol VLAN enabled   : Yes]{lang="EN-US"}
+ Port and protocol VLAN enabled   : Yes
 
-[ VLAN name of VLAN 12: VLAN 0012]{lang="EN-US"}
+ VLAN name of VLAN 12: VLAN 0012
 
-[ Management VLAN ID  : 5]{lang="EN-US"}
+ Management VLAN ID  : 5
 
-[ Auto-negotiation supported : Yes]{lang="EN-US"}
+ Auto-negotiation supported : Yes
 
-[ Auto-negotiation enabled   : Yes]{lang="EN-US"}
+ Auto-negotiation enabled   : Yes
 
-[ OperMau                    : Speed(1000)/Duplex(Full)]{lang="EN-US"}
+ OperMau                    : Speed(1000)/Duplex(Full)
 
-[ Power port class           : PD]{lang="EN-US"}
+ Power port class           : PD
 
-[ PSE power supported        : Yes]{lang="EN-US"}
+ PSE power supported        : Yes
 
-[ PSE power enabled          : Yes]{lang="EN-US"}
+ PSE power enabled          : Yes
 
-[ PSE pairs control ability  : Yes]{lang="EN-US"}
+ PSE pairs control ability  : Yes
 
-[ Power pairs                : Signal]{lang="EN-US"}
+ Power pairs                : Signal
 
-[ Port power classification  : Class 0]{lang="EN-US"}
+ Port power classification  : Class 0
 
-[ Power type                 : Type 2 PD]{lang="EN-US"}
+ Power type                 : Type 2 PD
 
-[ Power source               : PSE and local]{lang="EN-US"}
+ Power source               : PSE and local
 
-[ Power priority             : High]{lang="EN-US"}
+ Power priority             : High
 
-[ PD requested power value   : 21.1 w]{lang="EN-US"}
+ PD requested power value   : 21.1 w
 
-[ PSE allocated power value  : 15.3 w]{lang="EN-US"}
+ PSE allocated power value  : 15.3 w
 
-[ Link aggregation supported : Yes]{lang="EN-US"}
+ Link aggregation supported : Yes
 
-[ Link aggregation enabled   : Yes]{lang="EN-US"}
+ Link aggregation enabled   : Yes
 
-[ Aggregation port ID        : 52]{lang="EN-US"}
+ Aggregation port ID        : 52
 
-[ Congestion notification TLV info:]{lang="EN-US"}
+ Congestion notification TLV info:
 
-[  Dot1p          CNPV         Ready]{lang="EN-US"}
+  Dot1p          CNPV         Ready
 
-[  0              Yes          Yes]{lang="EN-US"}
+  0              Yes          Yes
 
-[  1              No           No]{lang="EN-US"}
+  1              No           No
 
-[  2              No           No]{lang="EN-US"}
+  2              No           No
 
-[  3              No           No]{lang="EN-US"}
+  3              No           No
 
-[  4              Yes          No]{lang="EN-US"}
+  4              Yes          No
 
-[  5              Yes          Yes]{lang="EN-US"}
+  5              Yes          Yes
 
-[  6              No           No]{lang="EN-US"}
+  6              No           No
 
-[  7              No           No]{lang="EN-US"}
+  7              No           No
 
-[ Maximum frame size         : 1500]{lang="EN-US"}
+ Maximum frame size         : 1500
 
-[ Transmit Tw                : 100 us]{lang="EN-US"}
+ Transmit Tw                : 100 us
 
-[ Receive Tw                 : 90 us]{lang="EN-US"}
+ Receive Tw                 : 90 us
 
-[ Fallback Tw                : 90 us]{lang="EN-US"}
+ Fallback Tw                : 90 us
 
-[ Echo Transmit Tw           : 0 us]{lang="EN-US"}
+ Echo Transmit Tw           : 0 us
 
-[ Echo Receive Tw            : 0 us]{lang="EN-US"}
+ Echo Receive Tw            : 0 us
 
-[ MED information]{lang="EN-US"}[：]{style="font-family:宋体"}
+ MED information：
 
-[ Device class               : Connectivity device]{lang="EN-US"}
+ Device class               : Connectivity device
 
-[ Media policy type          : Unknown]{lang="EN-US"}
+ Media policy type          : Unknown
 
-[ Unknown policy             : No]{lang="EN-US"}
+ Unknown policy             : No
 
-[ VLAN tagged                : No]{lang="EN-US"}
+ VLAN tagged                : No
 
-[ Media policy VLAN ID       : 1000]{lang="EN-US"}
+ Media policy VLAN ID       : 1000
 
-[ Media policy L2 priority   : 6]{lang="EN-US"}
+ Media policy L2 priority   : 6
 
-[ Media policy DSCP          : 10]{lang="EN-US"}
+ Media policy DSCP          : 10
 
-[ Location format       : Civic Address LCI]{lang="EN-US"}
+ Location format       : Civic Address LCI
 
-[ Location information  :]{lang="EN-US"}
+ Location information  :
 
-[  What(1)  Country(CN)]{lang="EN-US"}
+  What(1)  Country(CN)
 
-[  CA type  CA value]{lang="EN-US"}
+  CA type  CA value
 
-[  0        Chinese]{lang="EN-US"}
+  0        Chinese
 
-[  1        Zhejiang]{lang="EN-US"}
+  1        Zhejiang
 
-[  2        Hangzhou]{lang="EN-US"}
+  2        Hangzhou
 
-[ MED port information:]{lang="EN-US"}
+ MED port information:
 
-[  Media policy type          : Unknown]{lang="EN-US"}
+  Media policy type          : Unknown
 
-[  Unknown policy             : No]{lang="EN-US"}
+  Unknown policy             : No
 
-[  VLAN tagged                : No]{lang="EN-US"}
+  VLAN tagged                : No
 
-[  Media policy VLANID        : 1000]{lang="EN-US"}
+  Media policy VLANID        : 1000
 
-[  Media policy L2 priority   : 6]{lang="EN-US"}
+  Media policy L2 priority   : 6
 
-[  Media policy DSCP          : 10]{lang="EN-US"}
+  Media policy DSCP          : 10
 
-[ PoE PSE power source       : Primary]{lang="EN-US"}
+ PoE PSE power source       : Primary
 
-[ Port PSE priority          : Low]{lang="EN-US"}
+ Port PSE priority          : Low
 
-[ Port available power value : 2.2 w]{lang="EN-US"}
+ Port available power value : 2.2 w
 
-[ Unknown basic TLV:]{lang="EN-US"}
+ Unknown basic TLV:
 
-[  TLV type           : 23]{lang="EN-US"}
+  TLV type           : 23
 
-[  TLV information    : 0x00140014]{lang="EN-US"}
+  TLV information    : 0x00140014
 
-[ Unknown organizationally-defined TLV:]{lang="EN-US"}
+ Unknown organizationally-defined TLV:
 
-[  TLV OUI            : 00-12-bb]{lang="EN-US"}
+  TLV OUI            : 00-12-bb
 
-[  TLV subtype        : 21]{lang="EN-US"}
+  TLV subtype        : 21
 
-[  Index              : 1]{lang="EN-US"}
+  Index              : 1
 
-[  TLV information    : 0x556e6b6e 6f776e]{lang="EN-US"}
+  TLV information    : 0x556e6b6e 6f776e
 
-[ ]{lang="EN-US"}
+CDP neighbor-information of port 1[GigabitEthernet1/0/1:]
 
-[CDP neighbor-information of port 1\[GigabitEthernet1/0/1\]:]{lang="EN-US"}
+LLDP agent nearest-bridge:
 
-[LLDP agent nearest-bridge:]{lang="EN-US"}
+ CDP neighbor index  : 4
 
-[ CDP neighbor index  : 4]{lang="EN-US"}
+ Chassis ID          : SEP00260B5C0548
 
-[ Chassis ID          : SEP00260B5C0548]{lang="EN-US"}
+ Port ID             : Port 1
 
-[ Port ID             : Port 1]{lang="EN-US"}
+ Software version    : SCCP41.8-4-1S
 
-[ Software version    : SCCP41.8-4-1S]{lang="EN-US"}
+ Platform version    : Cisco IP Phone 7941
 
-[ Platform version    : Cisco IP Phone 7941]{lang="EN-US"}
+ Duplex              : Full
 
-[ Duplex              : Full]{lang="EN-US"}
+ Time to live        : 180
 
-[ Time to live        : 180]{lang="EN-US"}
+\# 显示所有接口所有类型LLDP代理收到的由邻居设备发来的LLDP详细信息（假设DCBX的版本为标准版）。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_x259843443}[显示所有接口所有类型]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[代理收到的由邻居设备发来的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[详细信息（假设]{style="font-family:宋体"}[DCBX]{lang="EN-US"}[的版本为标准版）。]{style="font-family:宋体"}
+\<Sysname\> display lldp neighbor-information verbose
 
-[[\<Sysname\> display lldp neighbor-information verbose]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136766715}
+LLDP neighbor-information of port 1[GigabitEthernet1/0/1:]
 
-[LLDP neighbor-information of port 1\[GigabitEthernet1/0/1\]:]{lang="EN-US"}
+LLDP agent nearest-bridge:
 
-[LLDP agent nearest-bridge:]{lang="EN-US"}
+ LLDP Neighbor index : 1
 
-[ LLDP Neighbor index : 1]{lang="EN-US"}
+ Update time         : 0 days, 0 hours, 1 minutes, 1 seconds
 
-[ Update time         : 0 days, 0 hours, 1 minutes, 1 seconds]{lang="EN-US"}
+ LLDP mac type       : Nearest Bridge
 
-[ LLDP mac type       : Nearest Bridge]{lang="EN-US"}
+ Chassis type        : MAC address
 
-[ Chassis type        : MAC address]{lang="EN-US"}
+ Chassis ID          : 000f-0055-0002
 
-[ Chassis ID          : 000f-0055-0002]{lang="EN-US"}
+ Port ID type        : Interface name
 
-[ Port ID type        : Interface name]{lang="EN-US"}
+ Port ID             : GigabitEthernet1/0/1
 
-[ Port ID             : GigabitEthernet1/0/1]{lang="EN-US"}
+ Time to live        : 121
 
-[ Time to live        : 121]{lang="EN-US"}
+ Port description    : GigabitEthernet1/0/1 Interface
 
-[ Port description    : GigabitEthernet1/0/1 Interface]{lang="EN-US"}
+ System name         : Sysname
 
-[ System name         : Sysname]{lang="EN-US"}
+ System description  : H3C Comware Platform Software
 
-[ System description  : H3C Comware Platform Software]{lang="EN-US"}
+ System capabilities supported : Bridge, Router, Customer Bridge, Service Bridge
 
-[ System capabilities supported : Bridge, Router, Customer Bridge, Service Bridge]{lang="EN-US"}
+ System capabilities enabled   : Bridge, Router, Customer Bridge
 
-[ System capabilities enabled   : Bridge, Router, Customer Bridge]{lang="EN-US"}
+ Management address type           : IPv4
 
-[ Management address type           : IPv4]{lang="EN-US"}
+ Management address                : 192.168.1.55
 
-[ Management address                : 192.168.1.55]{lang="EN-US"}
+ Management address interface type : IfIndex
 
-[ Management address interface type : IfIndex]{lang="EN-US"}
+ Management address interface ID   : Unknown
 
-[ Management address interface ID   : Unknown]{lang="EN-US"}
+ Management address OID            : 0
 
-[ Management address OID            : 0]{lang="EN-US"}
+ DCBX control info:
 
-[ DCBX control info:]{lang="EN-US"}
+  Oper version       : Standard
 
-[  Oper version       : Standard]{lang="EN-US"}
+ DCBX ETS configuration info:
 
-[ DCBX ETS configuration info:]{lang="EN-US"}
+  CBS                : False
 
-[  CBS                : False]{lang="EN-US"}
+  Max TCs            : 8
 
-[  Max TCs            : 8]{lang="EN-US"}
+  CoS     Local Priority      Percentage        TSA
 
-[  CoS     Local Priority      Percentage        TSA]{lang="EN-US"}
+   0            0                 15            ETS
 
-[   0            0                 15            ETS]{lang="EN-US"}
+   1            1                 0             SP
 
-[   1            1                 0             SP]{lang="EN-US"}
+   2            2                 15            ETS
 
-[   2            2                 15            ETS]{lang="EN-US"}
+   3            3                 14            ETS
 
-[   3            3                 14            ETS]{lang="EN-US"}
+   4            4                 14            ETS
 
-[   4            4                 14            ETS]{lang="EN-US"}
+   5            5                 14            ETS
 
-[   5            5                 14            ETS]{lang="EN-US"}
+   6            6                 14            ETS
 
-[   6            6                 14            ETS]{lang="EN-US"}
+   7            7                 14            ETS
 
-[   7            7                 14            ETS]{lang="EN-US"}
+ DCBX ETS recommendation info:
 
-[ DCBX ETS recommendation info:]{lang="EN-US"}
+  CoS     Local Priority      Percentage        TSA
 
-[  CoS     Local Priority      Percentage        TSA]{lang="EN-US"}
+   0            0                 15            ETS
 
-[   0            0                 15            ETS]{lang="EN-US"}
+   1            1                 0             SP
 
-[   1            1                 0             SP]{lang="EN-US"}
+   2            2                 15            ETS
 
-[   2            2                 15            ETS]{lang="EN-US"}
+   3            3                 14            ETS
 
-[   3            3                 14            ETS]{lang="EN-US"}
+   4            4                 14            ETS
 
-[   4            4                 14            ETS]{lang="EN-US"}
+   5            5                 14            ETS
 
-[   5            5                 14            ETS]{lang="EN-US"}
+   6            6                 14            ETS
 
-[   6            6                 14            ETS]{lang="EN-US"}
+   7            7                 14            ETS
 
-[   7            7                 14            ETS]{lang="EN-US"}
+ DCBX PFC info:
 
-[ DCBX PFC info:]{lang="EN-US"}
+  P0-0     P1-1     P2-1     P3-1     P4-0     P5-0     P6-0     P7-0
 
-[  P0-0     P1-1     P2-1     P3-1     P4-0     P5-0     P6-0     P7-0]{lang="EN-US"}
+  Number of traffic classes supported: 8
 
-[  Number of traffic classes supported: 8]{lang="EN-US"}
+  Value of MBC: 0
 
-[  Value of MBC: 0]{lang="EN-US"}
+ DCBX APP info:
 
-[ DCBX APP info:]{lang="EN-US"}
+  Selected Field  Protocol ID  Priority
 
-[  Selected Field  Protocol ID  Priority]{lang="EN-US"}
+  UDP/DCCP        100          0x3
 
-[  UDP/DCCP        100          0x3]{lang="EN-US"}
+  TCP/SCTP        200          0x3
 
-[  TCP/SCTP        200          0x3]{lang="EN-US"}
+  Ethertype       0x1234       0x3
 
-[  Ethertype       0x1234       0x3]{lang="EN-US"}
+  Ethertype       0x8906       0x3
 
-[  Ethertype       0x8906       0x3]{lang="EN-US"}
+ Port VLAN ID(PVID): 1
 
-[ Port VLAN ID(PVID): 1]{lang="EN-US"}
+ Port and protocol VLAN ID(PPVID) : 12
 
-[ Port and protocol VLAN ID(PPVID) : 12]{lang="EN-US"}
+ Port and protocol VLAN supported : Yes
 
-[ Port and protocol VLAN supported : Yes]{lang="EN-US"}
+ Port and protocol VLAN enabled   : Yes
 
-[ Port and protocol VLAN enabled   : Yes]{lang="EN-US"}
+ VLAN name of VLAN 12: VLAN 0012
 
-[ VLAN name of VLAN 12: VLAN 0012]{lang="EN-US"}
+ Management VLAN ID  : 5
 
-[ Management VLAN ID  : 5]{lang="EN-US"}
+ Auto-negotiation supported : Yes
 
-[ Auto-negotiation supported : Yes]{lang="EN-US"}
+ Auto-negotiation enabled   : Yes
 
-[ Auto-negotiation enabled   : Yes]{lang="EN-US"}
+ OperMau                    : Speed(1000)/Duplex(Full)
 
-[ OperMau                    : Speed(1000)/Duplex(Full)]{lang="EN-US"}
+ Power port class           : PD
 
-[ Power port class           : PD]{lang="EN-US"}
+ PSE power supported        : Yes
 
-[ PSE power supported        : Yes]{lang="EN-US"}
+ PSE power enabled          : Yes
 
-[ PSE power enabled          : Yes]{lang="EN-US"}
+ PSE pairs control ability  : Yes
 
-[ PSE pairs control ability  : Yes]{lang="EN-US"}
+ Power pairs                : Signal
 
-[ Power pairs                : Signal]{lang="EN-US"}
+ Port power classification  : Class 0
 
-[ Port power classification  : Class 0]{lang="EN-US"}
+ Power type                 : Type 2 PD
 
-[ Power type                 : Type 2 PD]{lang="EN-US"}
+ Power source               : PSE and local
 
-[ Power source               : PSE and local]{lang="EN-US"}
+ Power priority             : High
 
-[ Power priority             : High]{lang="EN-US"}
+ PD requested power value   : 21.1 w
 
-[ PD requested power value   : 21.1 w]{lang="EN-US"}
+ PSE allocated power value  : 15.3 w
 
-[ PSE allocated power value  : 15.3 w]{lang="EN-US"}
+ Link aggregation supported : Yes
 
-[ Link aggregation supported : Yes]{lang="EN-US"}
+ Link aggregation enabled   : Yes
 
-[ Link aggregation enabled   : Yes]{lang="EN-US"}
+ Aggregation port ID        : 52
 
-[ Aggregation port ID        : 52]{lang="EN-US"}
+ Maximum frame size         : 1500
 
-[ Maximum frame size         : 1500]{lang="EN-US"}
+ Transmit Tw                : 100 us
 
-[ Transmit Tw                : 100 us]{lang="EN-US"}
+ Receive Tw                 : 90 us
 
-[ Receive Tw                 : 90 us]{lang="EN-US"}
+ Fallback Tw                : 90 us
 
-[ Fallback Tw                : 90 us]{lang="EN-US"}
+ Echo Transmit Tw           : 0 us
 
-[ Echo Transmit Tw           : 0 us]{lang="EN-US"}
+ Echo Receive Tw            : 0 us
 
-[ Echo Receive Tw            : 0 us]{lang="EN-US"}
+ Device class               : Connectivity device
 
-[ Device class               : Connectivity device]{lang="EN-US"}
+ HardwareRev               : Unknown
 
-[ HardwareRev               : Unknown]{lang="EN-US"}
+ FirmwareRev               : Unknown
 
-[ FirmwareRev               : Unknown]{lang="EN-US"}
+ SoftwareRev               : Unknown
 
-[ SoftwareRev               : Unknown]{lang="EN-US"}
+ SerialNum                 : Unknown
 
-[ SerialNum                 : Unknown]{lang="EN-US"}
+ Manufacturer name         : Unknown
 
-[ Manufacturer name         : Unknown]{lang="EN-US"}
+ Model name                : Unknown
 
-[ Model name                : Unknown]{lang="EN-US"}
+ Asset tracking identifier : Unknown
 
-[ Asset tracking identifier : Unknown]{lang="EN-US"}
+ Location format       : Civic Address LCI
 
-[ Location format       : Civic Address LCI]{lang="EN-US"}
+ Location information  :
 
-[ Location information  :]{lang="EN-US"}
+  What(1)  Country(CN)
 
-[  What(1)  Country(CN)]{lang="EN-US"}
+  CA type  CA value
 
-[  CA type  CA value]{lang="EN-US"}
+  0        Chinese
 
-[  0        Chinese]{lang="EN-US"}
+  1        Zhejiang
 
-[  1        Zhejiang]{lang="EN-US"}
+  2        Hangzhou
 
-[  2        Hangzhou]{lang="EN-US"}
+ MED port information:
 
-[ MED port information:]{lang="EN-US"}
+  Media policy type          : Unknown
 
-[  Media policy type          : Unknown]{lang="EN-US"}
+  Unknown policy             : No
 
-[  Unknown policy             : No]{lang="EN-US"}
+  VLAN tagged                : No
 
-[  VLAN tagged                : No]{lang="EN-US"}
+  Media policy VLANID        : 1000
 
-[  Media policy VLANID        : 1000]{lang="EN-US"}
+  Media policy L2 priority   : 6
 
-[  Media policy L2 priority   : 6]{lang="EN-US"}
+  Media policy DSCP          : 10
 
-[  Media policy DSCP          : 10]{lang="EN-US"}
+ PoE PSE power source       : Primary
 
-[ PoE PSE power source       : Primary]{lang="EN-US"}
+ Port PSE priority          : Low
 
-[ Port PSE priority          : Low]{lang="EN-US"}
+ Port available power value : 2.2 w
 
-[ Port available power value : 2.2 w]{lang="EN-US"}
+ Unknown basic TLV:
 
-[ Unknown basic TLV:]{lang="EN-US"}
+  TLV type           : 23
 
-[  TLV type           : 23]{lang="EN-US"}
+  TLV information    : 0x00140014
 
-[  TLV information    : 0x00140014]{lang="EN-US"}
+ Unknown organizationally-defined TLV:
 
-[ Unknown organizationally-defined TLV:]{lang="EN-US"}
+  TLV OUI            : 00-12-bb
 
-[  TLV OUI            : 00-12-bb]{lang="EN-US"}
+  TLV subtype        : 21
 
-[  TLV subtype        : 21]{lang="EN-US"}
+  Index              : 1
 
-[  Index              : 1]{lang="EN-US"}
+  TLV information    : 0x556e6b6e 6f776e
 
-[  TLV information    : 0x556e6b6e 6f776e]{lang="EN-US"}
+CDP neighbor-information of port 1[GigabitEthernet1/0/1:]
 
-[ ]{lang="EN-US"}
+ LLDP agent nearest-bridge:
 
-[CDP neighbor-information of port 1\[GigabitEthernet1/0/1\]:]{lang="EN-US"}
+ CDP neighbor index  : 4
 
-[ LLDP agent nearest-bridge:]{lang="EN-US"}
+ Chassis ID          : SEP00260B5C0548
 
-[ CDP neighbor index  : 4]{lang="EN-US"}
+ Port ID             : Port 1
 
-[ Chassis ID          : SEP00260B5C0548]{lang="EN-US"}
+ Software version    : SCCP41.8-4-1S
 
-[ Port ID             : Port 1]{lang="EN-US"}
+ Platform version    : Cisco IP Phone 7941
 
-[ Software version    : SCCP41.8-4-1S]{lang="EN-US"}
+ Duplex              : Full
 
-[ Platform version    : Cisco IP Phone 7941]{lang="EN-US"}
+ Time to live        : 180
 
-[ Duplex              : Full]{lang="EN-US"}
+LLDP neighbor-information of port 1[GigabitEthernet1/0/1:]
 
-[ Time to live        : 180]{lang="EN-US"}
+LLDP agent nearest-nontpmr:
 
-[LLDP neighbor-information of port 1\[GigabitEthernet1/0/1\]:]{lang="EN-US"}
+ LLDP Neighbor index : 1
 
-[LLDP agent nearest-nontpmr:]{lang="EN-US"}
+ Update time         : 0 days, 0 hours, 1 minutes, 1 seconds
 
-[ LLDP Neighbor index : 1]{lang="EN-US"}
+ Chassis type        : MAC address
 
-[ Update time         : 0 days, 0 hours, 1 minutes, 1 seconds]{lang="EN-US"}
+ Chassis ID          : 000f-0055-0002
 
-[ Chassis type        : MAC address]{lang="EN-US"}
+ Port ID type        : Interface name
 
-[ Chassis ID          : 000f-0055-0002]{lang="EN-US"}
+ Port ID             : GigabitEthernet1/0/1
 
-[ Port ID type        : Interface name]{lang="EN-US"}
+ Time to live        : 121
 
-[ Port ID             : GigabitEthernet1/0/1]{lang="EN-US"}
+ Port description    : GigabitEthernet1/0/1 Interface
 
-[ Time to live        : 121]{lang="EN-US"}
+ System name         : Sysname
 
-[ Port description    : GigabitEthernet1/0/1 Interface]{lang="EN-US"}
+ System description  : H3C Comware Platform Software
 
-[ System name         : Sysname]{lang="EN-US"}
+ System capabilities supported : Bridge, Router, Customer Bridge, Service Bridge
 
-[ System description  : H3C Comware Platform Software]{lang="EN-US"}
+ System capabilities enabled   : Bridge, Router, Customer Bridge
 
-[ System capabilities supported : Bridge, Router, Customer Bridge, Service Bridge]{lang="EN-US"}
+ Management address type           : IPv4
 
-[ System capabilities enabled   : Bridge, Router, Customer Bridge]{lang="EN-US"}
+ Management address                : 192.168.1.55
 
-[ Management address type           : IPv4]{lang="EN-US"}
+ Management address interface type : IfIndex
 
-[ Management address                : 192.168.1.55]{lang="EN-US"}
+ Management address interface ID   : Unknown
 
-[ Management address interface type : IfIndex]{lang="EN-US"}
+ Management address OID            : 0
 
-[ Management address interface ID   : Unknown]{lang="EN-US"}
+ Port VLAN ID(PVID): 1
 
-[ Management address OID            : 0]{lang="EN-US"}
+ Port and protocol VLAN ID(PPVID) : 12
 
-[ Port VLAN ID(PVID): 1]{lang="EN-US"}
+ Port and protocol VLAN supported : Yes
 
-[ Port and protocol VLAN ID(PPVID) : 12]{lang="EN-US"}
+ Port and protocol VLAN enabled   : Yes
 
-[ Port and protocol VLAN supported : Yes]{lang="EN-US"}
+ VLAN name of VLAN 12: VLAN 0012
 
-[ Port and protocol VLAN enabled   : Yes]{lang="EN-US"}
+ Auto-negotiation supported : Yes
 
-[ VLAN name of VLAN 12: VLAN 0012 ]{lang="EN-US"}
+ Auto-negotiation enabled   : Yes
 
-[ Auto-negotiation supported : Yes]{lang="EN-US"}
+ OperMau                    : Speed(1000)/Duplex(Full)
 
-[ Auto-negotiation enabled   : Yes]{lang="EN-US"}
+ Power port class           : PD
 
-[ OperMau                    : Speed(1000)/Duplex(Full)]{lang="EN-US"}
+ PSE power supported        : Yes
 
-[ Power port class           : PD]{lang="EN-US"}
+ PSE power enabled          : Yes
 
-[ PSE power supported        : Yes]{lang="EN-US"}
+ PSE pairs control ability  : Yes
 
-[ PSE power enabled          : Yes]{lang="EN-US"}
+ Power pairs                : Signal
 
-[ PSE pairs control ability  : Yes]{lang="EN-US"}
+ Port power classification  : Class 0
 
-[ Power pairs                : Signal]{lang="EN-US"}
+ Power type                 : Type 2 PD
 
-[ Port power classification  : Class 0]{lang="EN-US"}
+ Power source               : PSE and local
 
-[ Power type                 : Type 2 PD]{lang="EN-US"}
+ Power priority             : High
 
-[ Power source               : PSE and local]{lang="EN-US"}
+ PD requested power value   : 21.1 w
 
-[ Power priority             : High]{lang="EN-US"}
+ PSE allocated power value  : 15.3 w
 
-[ PD requested power value   : 21.1 w]{lang="EN-US"}
+ Link aggregation supported : Yes
 
-[ PSE allocated power value  : 15.3 w]{lang="EN-US"}
+ Link aggregation enabled   : Yes
 
-[ Link aggregation supported : Yes]{lang="EN-US"}
+ Aggregation port ID        : 52
 
-[ Link aggregation enabled   : Yes]{lang="EN-US"}
+ Congestion notification TLV info:
 
-[ Aggregation port ID        : 52]{lang="EN-US"}
+  Dot1p          CNPV         Ready
 
-[ Congestion notification TLV info:]{lang="EN-US"}
+  0              Yes          Yes
 
-[  Dot1p          CNPV         Ready]{lang="EN-US"}
+  1              No           No
 
-[  0              Yes          Yes]{lang="EN-US"}
+  2              No           No
 
-[  1              No           No]{lang="EN-US"}
+  3              No           No
 
-[  2              No           No]{lang="EN-US"}
+  4              Yes          No
 
-[  3              No           No]{lang="EN-US"}
+  5              Yes          Yes
 
-[  4              Yes          No]{lang="EN-US"}
+  6              No           No
 
-[  5              Yes          Yes]{lang="EN-US"}
+  7              No           No
 
-[  6              No           No]{lang="EN-US"}
+ Maximum frame size         : 1500
 
-[  7              No           No]{lang="EN-US"}
+ Transmit Tw                : 100 us
 
-[ Maximum frame size         : 1500]{lang="EN-US"}
+ Receive Tw                 : 90 us
 
-[ Transmit Tw                : 100 us]{lang="EN-US"}
+ Fallback Tw                : 90 us
 
-[ Receive Tw                 : 90 us]{lang="EN-US"}
+ Echo Transmit Tw           : 0 us
 
-[ Fallback Tw                : 90 us]{lang="EN-US"}
+ Echo Receive Tw            : 0 us
 
-[ Echo Transmit Tw           : 0 us]{lang="EN-US"}
+ Device class              : Connectivity device
 
-[ Echo Receive Tw            : 0 us]{lang="EN-US"}
+ HardwareRev               : Unknown
 
-[ Device class              : Connectivity device]{lang="EN-US"}
+ FirmwareRev               : Unknown
 
-[ HardwareRev               : Unknown]{lang="EN-US"}
+ SoftwareRev               : Unknown
 
-[ FirmwareRev               : Unknown]{lang="EN-US"}
+ SerialNum                 : Unknown
 
-[ SoftwareRev               : Unknown]{lang="EN-US"}
+ Manufacturer name         : Unknown
 
-[ SerialNum                 : Unknown]{lang="EN-US"}
+ Model name                : Unknown
 
-[ Manufacturer name         : Unknown]{lang="EN-US"}
+ Asset tracking identifier : Unknown
 
-[ Model name                : Unknown]{lang="EN-US"}
+ Location format       : Civic Address LCI
 
-[ Asset tracking identifier : Unknown]{lang="EN-US"}
+ Location information  :
 
-[ Location format       : Civic Address LCI]{lang="EN-US"}
+  What(1)  Country(CN)
 
-[ Location information  :]{lang="EN-US"}
+  CA type  CA value
 
-[  What(1)  Country(CN)]{lang="EN-US"}
+  0        Chinese
 
-[  CA type  CA value]{lang="EN-US"}
+  1        Zhejiang
 
-[  0        Chinese]{lang="EN-US"}
+  2        Hangzhou
 
-[  1        Zhejiang]{lang="EN-US"}
+ MED port information:
 
-[  2        Hangzhou]{lang="EN-US"}
+  Media policy type          : Unknown
 
-[ MED port information:]{lang="EN-US"}
+  Unknown policy             : No
 
-[  Media policy type          : Unknown]{lang="EN-US"}
+  VLAN tagged                : No
 
-[  Unknown policy             : No]{lang="EN-US"}
+  Media policy VLANID        : 1000
 
-[  VLAN tagged                : No]{lang="EN-US"}
+  Media policy L2 priority   : 6
 
-[  Media policy VLANID        : 1000]{lang="EN-US"}
+  Media policy DSCP          : 10
 
-[  Media policy L2 priority   : 6]{lang="EN-US"}
+PoE PSE power source      : Primary
 
-[  Media policy DSCP          : 10]{lang="EN-US"}
+Port PSE priority         : Low
 
-[PoE PSE power source      : Primary]{lang="EN-US"}
+Port available power value: 2.2 w
 
-[Port PSE priority         : Low]{lang="EN-US"}
+Unknown basic TLV:
 
-[Port available power value: 2.2 w]{lang="EN-US"}
+  TLV type           : 23
 
-[Unknown basic TLV:]{lang="EN-US"}
+  TLV information    : 0x00140014
 
-[  TLV type           : 23]{lang="EN-US"}
+ Unknown organizationally-defined TLV:
 
-[  TLV information    : 0x00140014]{lang="EN-US"}
+  TLV OUI            : 00-12-bb
 
-[ Unknown organizationally-defined TLV:]{lang="EN-US"}
+  TLV subtype        : 21
 
-[  TLV OUI            : 00-12-bb]{lang="EN-US"}
+  Index              : 1
 
-[  TLV subtype        : 21]{lang="EN-US"}
+  TLV information    : 0x556e6b6e 6f776e
 
-[  Index              : 1]{lang="EN-US"}
+\# 显示所有接口所有类型LLDP代理收到的由邻居设备发来的LLDP概要信息。
 
-[  TLV information    : 0x556e6b6e 6f776e]{lang="EN-US"}
+\<Sysname\> display lldp neighbor-information
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_319487598}[显示所有接口所有类型]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[代理收到的由邻居设备发来的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[概要信息。]{style="font-family:宋体"}
+LLDP neighbor-information of port 52[GigabitEthernet1/0/3:]
 
-[[\<Sysname\> display lldp neighbor-information]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136439035}
+LLDP agent nearest-bridge:
 
-[LLDP neighbor-information of port 52\[GigabitEthernet1/0/3\]:]{lang="EN-US"}
+ LLDP neighbor index : 3
 
-[LLDP agent nearest-bridge:]{lang="EN-US"}
+ LLDP mac type       : Nearest Bridge
 
-[ LLDP neighbor index : 3]{lang="EN-US"}
+ ChassisID/subtype   : 0011-2233-4400/MAC address
 
-[ LLDP mac type       : Nearest Bridge]{lang="EN-US"}
+ PortID/subtype      : 000c-29f5-c71f/MAC address
 
-[ ChassisID/subtype   : 0011-2233-4400/MAC address]{lang="EN-US"}
+ Capabilities        : Bridge, Router, Customer Bridge
 
-[ PortID/subtype      : 000c-29f5-c71f/MAC address]{lang="EN-US"}
+ LLDP neighbor index : 6
 
-[ Capabilities        : Bridge, Router, Customer Bridge]{lang="EN-US"}
+ LLDP mac type       : Nearest Bridge
 
-[ ]{lang="EN-US"}
+ ChassisID/subtype   : 0011-2233-4400/MAC address
 
-[ LLDP neighbor index : 6]{lang="EN-US"}
+ PortID/subtype      : 000c-29f5-c715/MAC address
 
-[ LLDP mac type       : Nearest Bridge]{lang="EN-US"}
+ Capabilities        : None
 
-[ ChassisID/subtype   : 0011-2233-4400/MAC address]{lang="EN-US"}
+CDP neighbor-information of port 52[GigabitEthernet1/0/3:]
 
-[ PortID/subtype      : 000c-29f5-c715/MAC address]{lang="EN-US"}
+LLDP agent nearest-bridge：
 
-[ Capabilities        : None]{lang="EN-US"}
+ CDP neighbor index  : 4
 
-[ ]{lang="EN-US"}
+ Chassis ID          : SEP00260B5C0548
 
-[CDP neighbor-information of port 52\[GigabitEthernet1/0/3\]:]{lang="EN-US"}
+ Port ID             : Port 1
 
-[LLDP agent nearest-bridge]{lang="EN-US"}[：]{style="font-family:宋体"}
+ CDP neighbor index  : 5
 
-[ CDP neighbor index  : 4]{lang="EN-US"}
+ Chassis ID          : 0011-2233-4400
 
-[ Chassis ID          : SEP00260B5C0548]{lang="EN-US"}
+ Port ID             : GigabitEthernet1/0/4
 
-[ Port ID             : Port 1]{lang="EN-US"}
+LLDP neighbor-information of port 52[GigabitEthernet1/0/3:]
 
-[ ]{lang="EN-US"}
+LLDP agent nearest-nontpmr:
 
-[ CDP neighbor index  : 5]{lang="EN-US"}
+ LLDP neighbor index : 6
 
-[ Chassis ID          : 0011-2233-4400]{lang="EN-US"}
+ ChassisID/subtype   : 0011-2233-4400/MAC address
 
-[ Port ID             : GigabitEthernet1/0/4]{lang="EN-US"}
+ PortID/subtype      : 000c-29f5-c715/MAC address
 
-[ ]{lang="EN-US"}
+ Capabilities        : None
 
-[LLDP neighbor-information of port 52\[GigabitEthernet1/0/3\]:]{lang="EN-US"}
+\# 按列表显示类型LLDP代理所有邻居设备发来的LLDP信息。
 
-[LLDP agent nearest-nontpmr:]{lang="EN-US"}
+\<Sysname\> display lldp neighbor-information list
 
-[ LLDP neighbor index : 6]{lang="EN-US"}
+Chassis ID : \* \-- \--Nearest nontpmr bridge neighbor
 
-[ ChassisID/subtype   : 0011-2233-4400/MAC address]{lang="EN-US"}
+             \# \-- \--Nearest customer bridge neighbor
 
-[ PortID/subtype      : 000c-29f5-c715/MAC address]{lang="EN-US"}
+             Default \-- \-- Nearest bridge neighbor
 
-[ Capabilities        : None]{lang="EN-US"}
+System Name          Local Interface   Chassis ID       Port ID
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136373499}[按列表显示类型]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[代理所有邻居设备发来的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+System1              GE1/0/1           000f-e25d-ee91   GigabitEthernet1/0/5
 
-[[\<Sysname\> display lldp neighbor-information list]{lang="EN-US"}]{#struct_0_x1289_x1771_855901804}
+System2              GE1/0/2           000f-e25d-ee92\*  GigabitEthernet1/0/6
 
-[Chassis ID : \* \-- \--Nearest nontpmr bridge neighbor]{lang="EN-US"}
+System3              GE1/0/3           000f-e25d-ee93#  GigabitEthernet1/0/7
 
-[             \# \-- \--Nearest customer bridge neighbor]{lang="EN-US"}
+表1-2 display lldp neighbor-information命令显示信息描述表
 
-[             Default \-- \-- Nearest bridge neighbor]{lang="EN-US"}
+字段
 
-[System Name          Local Interface   Chassis ID       Port ID]{lang="EN-US"}
+描述
 
-[System1              GE1/0/1           000f-e25d-ee91   GigabitEthernet1/0/5]{lang="EN-US"}
+LLDP agent nearest-bridge
 
-[System2              GE1/0/2           000f-e25d-ee92\*  GigabitEthernet1/0/6]{lang="EN-US"}
+LLDP缺省代理，即最近桥代理
 
-[System3              GE1/0/3           000f-e25d-ee93#  GigabitEthernet1/0/7]{lang="EN-US"}
+LLDP agent nearest-customer
 
-[[表1-2 ]{lang="EN-US"}[display lldp neighbor-information]{lang="EN-US"}]{#struct_0_x1289_x1771_x2060000395}[命令显示信息描述表]{style="font-family:黑体"}
+LLDP最近客户桥代理
 
-[]{#table_struct_0_x149285769}[[字段]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x736906118}
-:::
+LLDP agent nearest-nontpmr
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x2136570107}
+LLDP最近非TPMR桥代理
 
-[[LLDP agent nearest-bridge]{lang="EN-US"}]{#struct_0_x1289_x1771_892052973}
+LLDP neighbor-information of port 1
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_x552835432}[缺省代理，即最近桥代理]{style="font-family:宋体"}
+端口1上收到的LLDP邻居信息
 
-[[LLDP agent nearest-customer]{lang="EN-US"}]{#struct_0_x1289_x1771_x1559974904}
+LLDP Neighbor index
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_x1770367462}[最近客户桥代理]{style="font-family:宋体"}
+邻居索引
 
-[[LLDP agent nearest-nontpmr]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136504571}
+Update time
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_x1996284914}[最近非]{style="font-family:宋体"}[TPMR]{lang="EN-US"}[桥代理]{style="font-family:宋体"}
+邻居信息最新更新时间
 
-[[LLDP neighbor-information of port 1]{lang="EN-US"}]{#struct_0_x1289_x1771_813175771}
+LLDP mac type
 
-[[端口]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_x1289_x1771_x1281240881}[上收到的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[邻居信息]{style="font-family:宋体"}
+邻居MAC地址类型：
 
-[[LLDP Neighbor index]{lang="EN-US"}]{#struct_0_x1289_x1771_29038647}
+·Nearest brige：最近桥代理
 
-[[邻居索引]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x2136176891}
+·Nearest customer bridge：最近客户桥代理
 
-[[Update time]{lang="EN-US"}]{#struct_0_x1289_x1771_x174104168}
+·Nearest non-tpmr bridge：最近非TPMR桥代理
 
-[[邻居信息最新更新时间]{style="font-family:宋体"}]{#struct_0_x1289_x1771_606065762}
+Chassis type
 
-[[LLDP mac type ]{lang="EN-US"}]{#struct_0_x1289_x1771_x626760356}
+Chassis ID类型：
 
-[[邻居]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1289_x1771_x2013527683}[地址类型：]{style="font-family:宋体"}
+·Chassis component：表示底架组件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Nearest brige]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136111355}[：最近桥代理]{style="font-family:宋体"}
+·Interface alias：表示接口化名
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Nearest customer bridge]{lang="EN-US"}]{#struct_0_x1289_x1771_x1814921429}[：最近客户桥代理]{style="font-family:宋体"}
+·Port component：表示端口组件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Nearest non-tpmr bridge]{lang="EN-US"}]{#struct_0_x1289_x1771_x306252842}[：最近非]{style="font-family:宋体"}[TPMR]{lang="EN-US"}[桥代理]{style="font-family:宋体"}
+·MAC address：表示MAC地址
 
-[[Chassis type]{lang="EN-US"}]{#struct_0_x1289_x1771_1510344582}
+·Network address(ipv4)：表示网络地址（括号里表示地址类型）
 
-[[Chassis ID]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136701178}[类型：]{style="font-family:宋体"}
+·Interface name：表示接口名称
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Chassis component]{lang="EN-US"}]{#struct_0_x1289_x1771_600591431}[：表示底架组件]{lang="EN-US" style="font-family:
-  宋体"}
+·Locally assigned：表示邻居自定义
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Interface alias]{lang="EN-US"}]{#struct_0_x1289_x1771_1142413687}[：表示接口化名]{lang="EN-US" style="font-family:
-  宋体"}
+Chassis ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Port component]{lang="EN-US"}]{#struct_0_x1289_x1771_125619903}[：表示端口组件]{lang="EN-US" style="font-family:宋体"}
+Chassis ID值，根据邻居设备的Chassis type取相应类型的值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MAC address]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136635642}[：表示]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+Port ID type
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Network address(ipv4)]{lang="EN-US"}]{#struct_0_x1289_x1771_1820642571}[：表示网络地址（括号里表示地址类型）]{lang="EN-US" style="font-family:
-  宋体"}
+端口ID类型：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Interface name]{lang="EN-US"}]{#struct_0_x1289_x1771_x1897128755}[：表示接口名称]{lang="EN-US" style="font-family:宋体"}
+·Interface alias：表示接口化名
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Locally assigned]{lang="EN-US"}]{#struct_0_x1289_x1771_190212920}[：表示]{lang="EN-US" style="font-family:
-  宋体"}[邻居自定义]{style="font-family:宋体"}
+·Port component：表示端口组件
 
-[[Chassis ID]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136832250}
+·MAC address：表示MAC地址
 
-[[Chassis ID]{lang="EN-US"}]{#struct_0_x1289_x1771_x654592451}[值，根据邻居设备的]{style="font-family:宋体"}[Chassis type]{lang="EN-US"}[取相应类型的值]{style="font-family:宋体"}
+·Network Address(ipv4)：表示网络地址（括号里表示地址类型）
 
-[[Port ID type]{lang="EN-US"}]{#struct_0_x1289_x1771_x114095818}
+·Interface name：表示接口名称
 
-[[端口]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1289_x1771_x871485559}[类型：]{style="font-family:宋体"}
+·Agent circuit ID：表示代理巡回标识
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Interface alias]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136766714}[：表示接口化名]{lang="EN-US" style="font-family:
-  宋体"}
+·Locally assigned：表示邻居自定义
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Port component]{lang="EN-US"}]{#struct_0_x1289_x1771_1885571539}[：表示端口组件]{lang="EN-US" style="font-family:宋体"}
+Port ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MAC address]{lang="EN-US"}]{#struct_0_x1289_x1771_678751081}[：表示]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+端口ID值，根据邻居设备的Port ID type取相应类型的值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Network Address(ipv4)]{lang="EN-US"}]{#struct_0_x1289_x1771_187193640}[：表示网络地址（括号里表示地址类型）]{lang="EN-US" style="font-family:
-  宋体"}
+Time to live
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Interface name]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136439034}[：表示接口名称]{lang="EN-US" style="font-family:宋体"}
+邻居信息在本地的存活时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Agent circuit ID]{lang="EN-US"}]{#struct_0_x1289_x1771_x1678210901}[：表示代理巡回标识]{lang="EN-US" style="font-family:
-  宋体"}
+Port description
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Locally assigned]{lang="EN-US"}]{#struct_0_x1289_x1771_994507259}[：表示]{lang="EN-US" style="font-family:
-  宋体"}[邻居自定义]{style="font-family:宋体"}
+端口描述
 
-[[Port ID]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136373498}
+System name
 
-[[端口]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1289_x1771_x710182137}[值，根据邻居设备的]{style="font-family:宋体"}[Port ID type]{lang="EN-US"}[取相应类型的值]{style="font-family:宋体"}
+系统名称
 
-[[Time to live]{lang="EN-US"}]{#struct_0_x1289_x1771_1313597668}
+System description
 
-[[邻居信息在本地的存活时间]{style="font-family:宋体"}]{#struct_0_x1289_x1771_251951383}
+系统描述
 
-[[Port description]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136570106}
+System capabilities supported
 
-[[端口描述]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x674030968}
+系统所支持的功能：
 
-[[System name]{lang="EN-US"}]{#struct_0_x1289_x1771_829948312}
+·Repeater：表示支持信号中继功能
 
-[[系统名称]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x2136504570}
+·Bridge：表示支持交换功能
 
-[[System description]{lang="EN-US"}]{#struct_0_x1289_x1771_x430200973}
+·WlanAccessPoint：表示支持无线接入点功能
 
-[[系统描述]{style="font-family:宋体"}]{#struct_0_x1289_x1771_999809514}
+·Router：表示支持路由功能
 
-[[System capabilities supported]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136176890}
+·Telephone：表示支持电话功能
 
-[[系统所支持的功能：]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1740188109}
+·DocsisCableDevice：表示支持电缆设备功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Repeater]{lang="EN-US"}]{#struct_0_x1289_x1771_x1002460154}[：表示支持信号中继功能]{lang="EN-US" style="font-family:宋体"}
+·StationOnly：表示支持只作站点功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Bridge]{lang="EN-US"}]{#struct_0_x1289_x1771_x2136111354}[：表示支持交换功能]{lang="EN-US" style="font-family:宋体"}
+·Customer Bridge：表示支持客户桥功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[WlanAccessPoint]{lang="EN-US"}]{#struct_0_x1289_x1771_913961926}[：表示支持无线接入点功能]{lang="EN-US" style="font-family:
-  宋体"}
+·Service Bridge：表示支持服务桥功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Router]{lang="EN-US"}]{#struct_0_x1289_x1771_456221368}[：表示支持路由功能]{lang="EN-US" style="font-family:宋体"}
+·TPMR：表示支持双端口MAC中继功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Telephone]{lang="EN-US"}]{#struct_0_x1289_x1771_x214386874}[：表示支持电话功能]{lang="EN-US" style="font-family:宋体"}
+·Other：表示支持不在上述列表的其它功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DocsisCableDevice]{lang="EN-US"}]{#struct_0_x1289_x1771_767736697}[：表示支持电缆设备功能]{lang="EN-US" style="font-family:
-  宋体"}
+System capabilities enabled
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[StationOnly]{lang="EN-US"}]{#struct_0_x1289_x1771_x535374138}[：表示支持只作站点功能]{lang="EN-US" style="font-family:宋体"}
+系统已开启的功能：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Customer Bridge]{lang="EN-US"}]{#struct_0_x1289_x1771_x214321338}[：表示支持客户桥功能]{lang="EN-US" style="font-family:
-  宋体"}
+·Repeater：表示信号中继功能已开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Service Bridge]{lang="EN-US"}]{#struct_0_x1289_x1771_382557604}[：表示支持服务桥功能]{lang="EN-US" style="font-family:宋体"}
+·Bridge：表示交换功能已开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TPMR]{lang="EN-US"}]{#struct_0_x1289_x1771_x183221623}[：表示支持双端口]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[中继功能]{lang="EN-US" style="font-family:宋体"}
+·WlanAccessPoint：表示无线接入点功能已开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Other]{lang="EN-US"}]{#struct_0_x1289_x1771_x214517946}[：表示支持不在上述列表的其它功能]{lang="EN-US" style="font-family:宋体"}
+·Router：表示路由功能已开启
 
-[[System capabilities enabled]{lang="EN-US"}]{#struct_0_x1289_x1771_392644381}
+·Telephone：表示电话功能已开启
 
-[[系统已开启的功能：]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1676899918}
+·DocsisCableDevice：表示电缆设备功能已开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Repeater]{lang="EN-US"}]{#struct_0_x1289_x1771_x214452410}[：表示信号中继功能已开启]{lang="EN-US" style="font-family:宋体"}
+·StationOnly：表示只作站点功能已开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Bridge]{lang="EN-US"}]{#struct_0_x1289_x1771_742517094}[：表示交换功能已开启]{style="font-family:宋体"}
+·Customer Bridge：表示支持客户桥功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[WlanAccessPoint]{lang="EN-US"}]{#struct_0_x1289_x1771_636623415}[：表示无线接入点功能已开启]{lang="EN-US" style="font-family:
-  宋体"}
+·Service Bridge：表示支持服务桥功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Router]{lang="EN-US"}]{#struct_0_x1289_x1771_x214124730}[：表示路由功能已开启]{lang="EN-US" style="font-family:宋体"}
+·TPMR：表示支持双端口MAC中继功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Telephone]{lang="EN-US"}]{#struct_0_x1289_x1771_1907270789}[：表示电话功能已开启]{lang="EN-US" style="font-family:宋体"}
+·Other：表示不在上述列表的其它功能已开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DocsisCableDevice]{lang="EN-US"}]{#struct_0_x1289_x1771_x214059194}[：表示电缆设备功能已开启]{lang="EN-US" style="font-family:
-  宋体"}
+Management address type
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[StationOnly]{lang="EN-US"}]{#struct_0_x1289_x1771_1106379245}[：表示只作站点功能已开启]{lang="EN-US" style="font-family:宋体"}
+管理地址类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Customer Bridge]{lang="EN-US"}]{#struct_0_x1289_x1771_x790413956}[：表示支持客户桥功能]{lang="EN-US" style="font-family:
-  宋体"}
+Management address
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Service Bridge]{lang="EN-US"}]{#struct_0_x1289_x1771_x214255802}[：表示支持服务桥功能]{lang="EN-US" style="font-family:宋体"}
+管理地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TPMR]{lang="EN-US"}]{#struct_0_x1289_x1771_x792121396}[：表示支持双端口]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[中继功能]{lang="EN-US" style="font-family:宋体"}
+Management address interface type
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Other]{lang="EN-US"}]{#struct_0_x1289_x1771_x1364545283}[：表示不在上述列表的其它功能已开启]{lang="EN-US" style="font-family:宋体"}
+管理地址接口类型
 
-[[Management address type]{lang="EN-US"}]{#struct_0_x1289_x1771_x214190266}
+Management address interface ID
 
-[[管理地址类型]{style="font-family:宋体"}]{#struct_0_x1289_x1771_749785620}
+管理地址接口索引
 
-[[Management address]{lang="EN-US"}]{#struct_0_x1289_x1771_x213862586}
+Management address OID
 
-[[管理地址]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1073944077}
+管理地址对象标识符
 
-[[Management address interface type]{lang="EN-US"}]{#struct_0_x1289_x1771_x1559916406}
+DCBX control info:
 
-[[管理地址接口类型]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x213797050}
+显示DCBX控制TLV的信息，在标准DCBX中显示版本信息
 
-[[Management address interface ID]{lang="EN-US"}]{#struct_0_x1289_x1771_82134872}
+Oper version
 
-[[管理地址接口索引]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x214386873}
+DCBX版本号
 
-[[Management address OID]{lang="EN-US"}]{#struct_0_x1289_x1771_767540089}
+Sequence number
 
-[[管理地址对象标识符]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x214321337}
+DCBX TLV内容改变的次数
 
-[[DCBX control info:]{lang="EN-US"}]{#struct_0_x1289_x1771_383147428}
+Acknowledge number
 
-[[显示]{style="font-family:宋体"}[DCBX]{lang="EN-US"}]{#struct_0_x1289_x1771_x214517945}[控制]{style="font-family:宋体"}[TLV]{lang="EN-US"}[的信息，在标准]{style="font-family:宋体"}[DCBX]{lang="EN-US"}[中显示版本信息]{style="font-family:宋体"}
+对端设备同步配置的次数
 
-[[Oper version]{lang="EN-US"}]{#struct_0_x1289_x1771_392840989}
+DCBX ETS info
 
-[[DCBX]{lang="EN-US"}]{#struct_0_x1289_x1771_1181959500}[版本号]{style="font-family:宋体"}
+CoS与本地优先级的映射关系及对应的带宽分配情况
 
-[[Sequence number]{lang="EN-US"}]{#struct_0_x1289_x1771_x214452409}
+CoS
 
-[[DCBX TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_743106919}[内容改变的次数]{style="font-family:宋体"}
+CoS值
 
-[[Acknowledge number]{lang="EN-US"}]{#struct_0_x1289_x1771_x214124729}
+Local Priority
 
-[[对端设备同步配置的次数]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1906680964}
+本地优先级
 
-[[DCBX ETS info]{lang="EN-US"}]{#struct_0_x1289_x1771_x214059193}
+Percentage
 
-[[CoS]{lang="EN-US"}]{#struct_0_x1289_x1771_1106575853}[与本地优先级的映射关系及对应的带宽分配情况]{style="font-family:宋体"}
+对应的带宽分配
 
-[[CoS]{lang="EN-US"}]{#struct_0_x1289_x1771_x214255801}
+P0-   P1-   P2-   P3-   P4-   P5-   P6-   P7-
 
-[[CoS]{lang="EN-US"}]{#struct_0_x1289_x1771_x791924788}[值]{style="font-family:宋体"}
+本端的no-drop标记值对应的支持的优先级数
 
-[[Local Priority]{lang="EN-US"}]{#struct_0_x1289_x1771_x214190265}
+Number of traffic classes supported
 
-[[本地优先级]{style="font-family:宋体"}]{#struct_0_x1289_x1771_749982228}
+PFC支持的能力集，在1.01版本和标准版本中显示该项
 
-[[Percentage]{lang="EN-US"}]{#struct_0_x1289_x1771_129783537}
+DCBX APP info
 
-[[对应的带宽分配]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x213862585}
+显示APP TLV信息
 
-[[P0-   P1-   P2-   P3-   P4-   P5-   P6-   P7-]{lang="EN-US"}]{#struct_0_x1289_x1771_x1073878541}
+Protocol ID
 
-[[本端的]{style="font-family:宋体"}[no-drop]{lang="EN-US"}]{#struct_0_x1289_x1771_x213797049}[标记值对应的支持的优先级数]{style="font-family:宋体"}
+应用协议号
 
-[[Number of traffic classes supported]{lang="EN-US"}]{#struct_0_x1289_x1771_82724695}
+CoS map
 
-[[PFC]{lang="EN-US"}]{#struct_0_x1289_x1771_x214386876}[支持的能力集，在]{style="font-family:宋体"}[1.01]{lang="EN-US"}[版本和标准版本中显示该项]{style="font-family:宋体"}
+应用协议与CoS的映射关系
 
-[[DCBX APP info]{lang="EN-US"}]{#struct_0_x1289_x1771_767867769}
+DCBX ETS configuration info
 
-[[显示]{style="font-family:宋体"}[APP TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x214321340}[信息]{style="font-family:宋体"}
+显示ETS配置TLV信息
 
-[[Protocol ID]{lang="EN-US"}]{#struct_0_x1289_x1771_383081893}
+CBS
 
-[[应用协议号]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x214517948}
+是否支持CBS，表示本端是否支持令牌桶限速算法：
 
-[[CoS map]{lang="EN-US"}]{#struct_0_x1289_x1771_391989021}
+·False：表示不支持令牌桶限速算法
 
-[[应用协议与]{style="font-family:宋体"}[CoS]{lang="EN-US"}]{#struct_0_x1289_x1771_x214452412}[的映射关系]{style="font-family:宋体"}
+·True：表示支持令牌桶限速算法
 
-[[DCBX ETS configuration info]{lang="EN-US"}]{#struct_0_x1289_x1771_742386022}
+Max TCs
 
-[[显示]{style="font-family:宋体"}[ETS]{lang="EN-US"}]{#struct_0_x1289_x1771_x214124732}[配置]{style="font-family:宋体"}[TLV]{lang="EN-US"}[信息]{style="font-family:宋体"}
+显示支持的最大优先级数目
 
-[[CBS]{lang="EN-US"}]{#struct_0_x1289_x1771_1907139717}
+TSA
 
-[[是否支持]{style="font-family:宋体"}[CBS]{lang="EN-US"}]{#struct_0_x1289_x1771_x214059196}[，表示本端是否支持令牌桶限速算法：]{style="font-family:宋体"}
+显示传输选择算法
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[False]{lang="EN-US"}]{#struct_0_x1289_x1771_1106248173}[：表示不支持令牌桶限速算法]{lang="EN-US" style="font-family:宋体"}
+DCBX ETS recommendation info
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[True]{lang="EN-US"}]{#struct_0_x1289_x1771_x214255804}[：表示支持令牌桶限速算法]{lang="EN-US" style="font-family:宋体"}
+显示ETS推荐TLV信息
 
-[[Max TCs]{lang="EN-US"}]{#struct_0_x1289_x1771_x792252468}
+DCBX PFC info
 
-[[显示支持的最大优先级数目]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x214190268}
+显示PFC TLV信息
 
-[[TSA]{lang="EN-US"}]{#struct_0_x1289_x1771_750178836}
+Value of MBC
 
-[[显示传输选择算法]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x213862588}
+支持的MBC状态
 
-[[DCBX ETS recommendation info]{lang="EN-US"}]{#struct_0_x1289_x1771_x1073026573}
+Selected Field
 
-[[显示]{style="font-family:宋体"}[ETS]{lang="EN-US"}]{#struct_0_x1289_x1771_x213797052}[推荐]{style="font-family:宋体"}[TLV]{lang="EN-US"}[信息]{style="font-family:宋体"}
+选择域
 
-[[DCBX PFC info]{lang="EN-US"}]{#struct_0_x1289_x1771_x214386875}
+Port VLAN ID
 
-[[显示]{style="font-family:宋体"}[PFC TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_767671161}[信息]{style="font-family:宋体"}
+端口VLAN ID
 
-[[Value of MBC]{lang="EN-US"}]{#struct_0_x1289_x1771_x214321339}
+Port and protocol VLAN ID(PPVID)
 
-[[支持的]{style="font-family:宋体"}[MBC]{lang="EN-US"}]{#struct_0_x1289_x1771_382492068}[状态]{style="font-family:宋体"}
+端口协议VLAN ID
 
-[[Selected Field]{lang="EN-US"}]{#struct_0_x1289_x1771_x214517947}
+Port and protocol VLAN supported
 
-[[选择域]{style="font-family:宋体"}]{#struct_0_x1289_x1771_392709917}
+是否支持端口协议VLAN
 
-[[Port VLAN ID]{lang="EN-US"}]{#struct_0_x1289_x1771_x214452411}
+Port and protocol VLAN enabled
 
-[[端口]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}]{#struct_0_x1289_x1771_742582630}
+是否开启端口协议VLAN
 
-[[Port and protocol VLAN ID(PPVID)]{lang="EN-US"}]{#struct_0_x1289_x1771_x214124731}
+VLAN name of VLAN 12
 
-[[端口协议]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}]{#struct_0_x1289_x1771_x214059195}
+VLAN 12的名称
 
-[[Port and protocol VLAN supported]{lang="EN-US"}]{#struct_0_x1289_x1771_1106444781}
+Management VLAN ID
 
-[[是否支持端口协议]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1289_x1771_x214255803}
+管理VLAN ID
 
-[[Port and protocol VLAN enabled]{lang="EN-US"}]{#struct_0_x1289_x1771_x792055860}
+Auto-negotiation supported
 
-[[是否开启端口协议]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1289_x1771_x214190267}
+端口是否支持自协商
 
-[[VLAN name of VLAN 12]{lang="EN-US"}]{#struct_0_x1289_x1771_749851156}
+Auto-negotiation enabled
 
-[[VLAN 12]{lang="EN-US"}]{#struct_0_x1289_x1771_x213862587}[的名称]{style="font-family:宋体"}
+端口是否已开启自协商
 
-[[Management VLAN ID]{lang="EN-US"}]{#struct_0_x1289_x1771_x213797051}
+OperMau
 
-[[管理]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}]{#struct_0_x1289_x1771_82200408}
+端口自适应的速率和双工状态
 
-[[Auto-negotiation supported]{lang="EN-US"}]{#struct_0_x1289_x1771_x214386878}
+Power port class
 
-[[端口是否支持自协商]{style="font-family:宋体"}]{#struct_0_x1289_x1771_767998841}
+PoE类型：
 
-[[Auto-negotiation enabled]{lang="EN-US"}]{#struct_0_x1289_x1771_x214321342}
+·PSE：表示供电设备
 
-[[端口是否已开启自协商]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x214517950}
+·PD：表示受电设备
 
-[[OperMau]{lang="EN-US"}]{#struct_0_x1289_x1771_392513310}
+PSE power supported
 
-[[端口自适应的速率和双工状态]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x214452414}
+是否支持PSE供电
 
-[[Power port class]{lang="EN-US"}]{#struct_0_x1289_x1771_x214124734}
+PSE power enabled
 
-[[PoE]{lang="EN-US"}]{#struct_0_x1289_x1771_1907532933}[类型：]{style="font-family:宋体"}
+是否已开启PSE供电
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_x214059198}[：表示供电设备]{lang="EN-US" style="font-family:宋体"}
+PSE pairs control ability
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PD]{lang="EN-US"}]{#struct_0_x1289_x1771_1107165677}[：表示受电设备]{lang="EN-US" style="font-family:宋体"}
+供电方式是否可控
 
-[[PSE power supported]{lang="EN-US"}]{#struct_0_x1289_x1771_x214255806}
+Power pairs
 
-[[是否支持]{style="font-family:宋体"}[PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_x214190270}[供电]{style="font-family:宋体"}
+PoE端口的远程供电模式：
 
-[[PSE power enabled]{lang="EN-US"}]{#struct_0_x1289_x1771_749654549}
+·Signal：表示信号线供电模式
 
-[[是否已开启]{style="font-family:宋体"}[PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_x213862590}[供电]{style="font-family:宋体"}
+·Spare：表示空闲线供电模式
 
-[[PSE pairs control ability]{lang="EN-US"}]{#struct_0_x1289_x1771_x213797054}
+Port power classification
 
-[[供电方式是否可控]{style="font-family:宋体"}]{#struct_0_x1289_x1771_82397016}
+PD的端口控制级别：
 
-[[Power pairs]{lang="EN-US"}]{#struct_0_x1289_x1771_x214386877}
+·Class 0：表示级别0
 
-[[PoE]{lang="EN-US"}]{#struct_0_x1289_x1771_x214321341}[端口的远程供电模式：]{style="font-family:宋体"}
+·Class 1：表示级别1
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Signal]{lang="EN-US"}]{#struct_0_x1289_x1771_383016357}[：表示信号线供电模式]{lang="EN-US" style="font-family:宋体"}
+·Class 2：表示级别2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Spare]{lang="EN-US"}]{#struct_0_x1289_x1771_x214517949}[：表示空闲线供电模式]{lang="EN-US" style="font-family:宋体"}
+·Class 3：表示级别3
 
-[[Port power classification]{lang="EN-US"}]{#struct_0_x1289_x1771_x214452413}
+·Class 4：表示级别4
 
-[[PD]{lang="EN-US"}]{#struct_0_x1289_x1771_742451558}[的端口控制级别：]{style="font-family:宋体"}
+Power type
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Class 0]{lang="EN-US"}]{#struct_0_x1289_x1771_x214124733}[：表示级别]{lang="EN-US" style="font-family:宋体"}[0]{lang="EN-US"}
+供电类型：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Class 1]{lang="EN-US"}]{#struct_0_x1289_x1771_x214059197}[：表示级别]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}
+·Type 1 PD：表示类型1 PD
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Class 2]{lang="EN-US"}]{#struct_0_x1289_x1771_1106313709}[：表示级别]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}
+·Type 2 PD：表示类型2 PD
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Class 3]{lang="EN-US"}]{#struct_0_x1289_x1771_x214255805}[：表示级别]{lang="EN-US" style="font-family:宋体"}[3]{lang="EN-US"}
+·Type 1 PSE：表示类型1 PSE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Class 4]{lang="EN-US"}]{#struct_0_x1289_x1771_x214190269}[：表示级别]{lang="EN-US" style="font-family:宋体"}[4]{lang="EN-US"}
+·Type 2 PSE：表示类型2 PSE
 
-[[Power type]{lang="EN-US"}]{#struct_0_x1289_x1771_2066411138}
+Power source
 
-[[供电类型：]{style="font-family:宋体"}]{#struct_0_x1289_x1771_180927597}
+功率来源（功率来源根据供电类型为PD类型或PSE类型，取值不同）：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Type 1 PD]{lang="EN-US"}]{#struct_0_x1289_x1771_x662930972}[：表示类型]{lang="EN-US" style="font-family:宋体"}[1 PD]{lang="EN-US"}
+PSE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Type 2 PD]{lang="EN-US"}]{#struct_0_x1289_x1771_x662996508}[：表示类型]{lang="EN-US" style="font-family:宋体"}[2 PD]{lang="EN-US"}
+·Unknown：表示采用的电源类型未知
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Type 1 PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_x663062044}[：表示类型]{lang="EN-US" style="font-family:宋体"}[1 PSE]{lang="EN-US"}
+·Primary：表示采用主用电源作为电源
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Type 2 PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_407177617}[：表示类型]{lang="EN-US" style="font-family:宋体"}[2 PSE]{lang="EN-US"}
+·Backup：表示采用备用电源作为电源
 
-[[Power source]{lang="EN-US"}]{#struct_0_x1289_x1771_x663127580}
+·Reserved：保留
 
-[[功率来源（功率来源根据供电类型为]{style="font-family:宋体"}[PD]{lang="EN-US"}]{#struct_0_x1289_x1771_x663193116}[类型或]{style="font-family:宋体"}[PSE]{lang="EN-US"}[类型，取值不同）：]{style="font-family:宋体"}
+PD
 
-[[PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_x663258652}
+·Unknown：表示采用的电源类型未知
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown]{lang="EN-US"}]{#struct_0_x1289_x1771_x663324188}[：表示采用的电源类型未知]{lang="EN-US" style="font-family:宋体"}
+·PSE：表示采用PSE作为电源
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Primary]{lang="EN-US"}]{#struct_0_x1289_x1771_x777063578}[：表示采用主用电源作为电源]{lang="EN-US" style="font-family:宋体"}
+·Local：表示采用本地电源作为电源
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Backup]{lang="EN-US"}]{#struct_0_x1289_x1771_x663389724}[：表示采用备用电源作为电源]{style="font-family:宋体"}
+·PSE and local：表示采用PSE和本地电源作为电源
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Reserved]{lang="EN-US"}]{#struct_0_x1289_x1771_x662406684}[：保留]{lang="EN-US" style="font-family:宋体"}
+Power priority
 
-[[PD]{lang="EN-US"}]{#struct_0_x1289_x1771_x662472220}
+功率优先级：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown]{lang="EN-US"}]{#struct_0_x1289_x1771_x662930973}[：表示采用的电源类型未知]{lang="EN-US" style="font-family:宋体"}
+·Unknown：表示优先级未知
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_x741072475}[：表示采用]{style="font-family:宋体"}[PSE]{lang="EN-US"}[作为电源]{style="font-family:宋体"}
+·Critical：表示优先级为1级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Local]{lang="EN-US"}]{#struct_0_x1289_x1771_x662996509}[：表示采用本地电源作为电源]{lang="EN-US" style="font-family:宋体"}
+·High：表示优先级为2级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PSE and local]{lang="EN-US"}]{#struct_0_x1289_x1771_x663062045}[：表示采用]{lang="EN-US" style="font-family:宋体"}[PSE]{lang="EN-US"}[和本地电源作为电源]{lang="EN-US" style="font-family:宋体"}
+·Low：表示优先级为3级
 
-[[Power priority]{lang="EN-US"}]{#struct_0_x1289_x1771_x663127581}
+PD requested power value
 
-[[功率优先级：]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x416263947}
+PD请求功率值，单位为瓦特
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown]{lang="EN-US"}]{#struct_0_x1289_x1771_x663193117}[：表示优先级未知]{lang="EN-US" style="font-family:宋体"}
+PSE allocated power value
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Critical]{lang="EN-US"}]{#struct_0_x1289_x1771_x663258653}[：表示优先级为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[级]{lang="EN-US" style="font-family:宋体"}
+PSE分配功率值，单位为瓦特
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[High]{lang="EN-US"}]{#struct_0_x1289_x1771_x663324189}[：表示优先级为]{style="font-family:宋体"}[2]{lang="EN-US"}[级]{style="font-family:宋体"}
+Link aggregation supported
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Low]{lang="EN-US"}]{#struct_0_x1289_x1771_x663389725}[：表示优先级为]{style="font-family:宋体"}[3]{lang="EN-US"}[级]{style="font-family:宋体"}
+端口是否支持链路聚合
 
-[[PD requested power value]{lang="EN-US"}]{#struct_0_x1289_x1771_x376442685}
+Link aggregation enabled
 
-[[PD]{lang="EN-US"}]{#struct_0_x1289_x1771_x662406685}[请求功率值，单位为瓦特]{style="font-family:宋体"}
+端口是否已开启链路聚合
 
-[[PSE allocated power value]{lang="EN-US"}]{#struct_0_x1289_x1771_x662472221}
+Congestion notification TLV info
 
-[[PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_x662930970}[分配功率值，单位为瓦特]{style="font-family:宋体"}
+拥塞通知TLV信息。本字段的支持情况与设备型号有关，请以设备的实际情况为准
 
-[[Link aggregation supported]{lang="EN-US"}]{#struct_0_x1289_x1771_750244372}
+Dot1p
 
-[[端口是否支持链路聚合]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x213862589}
+802.1p优先级
 
-[[Link aggregation enabled]{lang="EN-US"}]{#struct_0_x1289_x1771_x213797053}
+CNPV
 
-[[端口是否已开启链路聚合]{style="font-family:宋体"}]{#struct_0_x1289_x1771_82069336}
+802.1p优先级是否被配置为CNPV，即是否匹配该优先级的报文具有QCN功能：
 
-[[Congestion notification TLV info]{lang="EN-US"}]{#struct_0_x1289_x1771_x393739264}
+·Yes：表示802.1p优先级被配置为CNPV
 
-[[拥塞通知]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x394329088}[信息。本字段的支持情况与设备型号有关，请以设备的实际情况为准]{style="font-family:宋体"}
+·No：表示802.1p优先级未被配置为CNPV
 
-[[Dot1p]{lang="EN-US"}]{#struct_0_x1289_x1771_406850649}
+Ready
 
-[[802.1p]{lang="EN-US"}]{#struct_0_x1289_x1771_x394394624}[优先级]{style="font-family:宋体"}
+表明设备接口是否已经关闭了802.1p优先级与隔离优先级的映射：
 
-[[CNPV]{lang="EN-US"}]{#struct_0_x1289_x1771_1172279138}
+·Yes：表示关闭优先级映射
 
-[[802.1p]{lang="EN-US"}]{#struct_0_x1289_x1771_1172213602}[优先级是否被配置为]{style="font-family:宋体"}[CNPV]{lang="EN-US"}[，即是否匹配该优先级的报文具有]{style="font-family:宋体"}[QCN]{lang="EN-US"}[功能：]{style="font-family:宋体"}
+·No：表示未关闭优先级映射
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Yes]{lang="EN-US"}]{#struct_0_x1289_x1771_x1985107484}[：表示]{lang="EN-US" style="font-family:宋体"}[802.1p]{lang="EN-US"}[优先级被配置为]{lang="EN-US" style="font-family:宋体"}[CNPV]{lang="EN-US"}
+Maximum frame size
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No]{lang="EN-US"}]{#struct_0_x1289_x1771_1172148066}[：表示]{style="font-family:宋体"}[802.1p]{lang="EN-US"}[优先级未被配置为]{style="font-family:宋体"}[CNPV]{lang="EN-US"}
+端口支持的最大帧长度
 
-[[Ready]{lang="EN-US"}]{#struct_0_x1289_x1771_1172082530}
+MED information
 
-[[表明设备接口是否已经关闭了]{style="font-family:宋体"}[802.1p]{lang="EN-US"}]{#struct_0_x1289_x1771_1172541282}[优先级与隔离优先级的映射：]{style="font-family:宋体"}
+MED设备相关信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Yes]{lang="EN-US"}]{#struct_0_x1289_x1771_1909178321}[：表示关闭优先级映射]{style="font-family:宋体"}
+Device class
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No]{lang="EN-US"}]{#struct_0_x1289_x1771_1172475746}[：表示未关闭优先级映射]{style="font-family:宋体"}
+MED设备类型：
 
-[[Maximum frame size]{lang="EN-US"}]{#struct_0_x1289_x1771_1351697067}
+·Connectivity device：表示网络设备
 
-[[端口支持的最大帧长度]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1351762603}
+·Class I：表示一般终端设备，即所有需要LLDP发现服务的终端设备
 
-[[MED information]{lang="EN-US"}]{#struct_0_x1289_x1771_1351565995}
+·Class II：表示媒体终端设备，即具备媒体能力的终端设备，其能力包含了一般终端设备的能力。该类设备支持媒体流
 
-[[MED]{lang="EN-US"}]{#struct_0_x1289_x1771_297459056}[设备相关信息]{style="font-family:宋体"}
+·Class III：表示通讯终端设备，即直接支持目标用户IP通讯系统的终端设备，其能力包含了一般终端设备和媒体终端设备的所有能力。该类设备直接被目标用户所使用
 
-[[Device class]{lang="EN-US"}]{#struct_0_x1289_x1771_1351631531}
+Media policy type
 
-[[MED]{lang="EN-US"}]{#struct_0_x1289_x1771_1351959211}[设备类型：]{style="font-family:宋体"}
+媒体策略类型：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Connectivity device]{lang="EN-US"}]{#struct_0_x1289_x1771_x1362734040}[：表示网络设备]{lang="EN-US" style="font-family:
-  宋体"}
+·Unknown：表示类型未知
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Class I]{lang="EN-US"}]{#struct_0_x1289_x1771_1352024747}[：表示一般终端设备，即所有需要]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[发现服务的终端设备]{style="font-family:宋体"}
+·Voice：表示语音
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Class II]{lang="EN-US"}]{#struct_0_x1289_x1771_1351828139}[：表示媒体终端设备，即具备媒体能力的终端设备，其能力包含了一般终端设备的能力。]{style="font-family:宋体"}[该类设备支持媒体流]{lang="EN-US" style="font-family:宋体"}
+·VoiceSignaling：表示语音信号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Class III]{lang="EN-US"}]{#struct_0_x1289_x1771_1351893675}[：表示通讯终端设备，即直接支持目标用户]{style="font-family:宋体"}[IP]{lang="EN-US"}[通讯系统的终端设备，其能力包含了一般终端设备和媒体终端设备的所有能力。]{style="font-family:宋体"}[该类设备直接被目标用户所使用]{lang="EN-US" style="font-family:宋体"}
+·GuestVoice：表示访客语音
 
-[[Media policy type]{lang="EN-US"}]{#struct_0_x1289_x1771_624412221}
+·GuestVoiceSignaling：表示访客语音信号
 
-[[媒体策略类型：]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1352221355}
+·SoftPhoneVoice：表示软体电话语音
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown]{lang="EN-US"}]{#struct_0_x1289_x1771_1352286891}[：表示类型未知]{lang="EN-US" style="font-family:宋体"}
+·Videoconferencing：表示视频会议
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Voice]{lang="EN-US"}]{#struct_0_x1289_x1771_x630888024}[：表示语音]{lang="EN-US" style="font-family:宋体"}
+·StreamingVideo：表示流视频
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VoiceSignaling]{lang="EN-US"}]{#struct_0_x1289_x1771_1351697068}[：表示语音信号]{lang="EN-US" style="font-family:宋体"}
+·VideoSignaling：表示视频信号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[GuestVoice]{lang="EN-US"}]{#struct_0_x1289_x1771_1351762604}[：表示访客语音]{lang="EN-US" style="font-family:宋体"}
+Unknown policy
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[GuestVoiceSignaling]{lang="EN-US"}]{#struct_0_x1289_x1771_1351565996}[：表示访客语音信号]{lang="EN-US" style="font-family:
-  宋体"}
+媒体策略类型是否未知：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SoftPhoneVoice]{lang="EN-US"}]{#struct_0_x1289_x1771_297262448}[：表示软体电话语音]{lang="EN-US" style="font-family:宋体"}
+·Yes：表示策略类型未知
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Videoconferencing]{lang="EN-US"}]{#struct_0_x1289_x1771_1351631532}[：表示视频会议]{lang="EN-US" style="font-family:
-  宋体"}
+·No：表示策略类型已知
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[StreamingVideo]{lang="EN-US"}]{#struct_0_x1289_x1771_1351959212}[：表示流视频]{lang="EN-US" style="font-family:宋体"}
+VLAN tagged
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VideoSignaling]{lang="EN-US"}]{#struct_0_x1289_x1771_1352024748}[：表示视频信号]{lang="EN-US" style="font-family:宋体"}
+媒体VLAN是否带Tag
 
-[[Unknown policy]{lang="EN-US"}]{#struct_0_x1289_x1771_x263957847}
+Media policy VLAN ID
 
-[[媒体策略类型是否未知：]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1351828140}
+媒体VLAN的VLAN ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Yes]{lang="EN-US"}]{#struct_0_x1289_x1771_1351893676}[：表示策略类型未知]{lang="EN-US" style="font-family:宋体"}
+Media policy L2 priority
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No]{lang="EN-US"}]{#struct_0_x1289_x1771_1352221356}[：表示策略类型已知]{style="font-family:宋体"}
+二层优先级
 
-[[VLAN tagged]{lang="EN-US"}]{#struct_0_x1289_x1771_96514235}
+Media policy DSCP
 
-[[媒体]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1289_x1771_1352286892}[是否带]{style="font-family:宋体"}[Tag]{lang="EN-US"}
+DSCP的值
 
-[[Media policy VLAN ID]{lang="EN-US"}]{#struct_0_x1289_x1771_1351697065}
+Location format
 
-[[媒体]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1289_x1771_1351762601}[的]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}
+位置信息格式：
 
-[[Media policy L2 priority]{lang="EN-US"}]{#struct_0_x1289_x1771_1351565993}
+·Invalid：表示无效位置数据类型
 
-[[二层优先级]{style="font-family:宋体"}]{#struct_0_x1289_x1771_297065840}
+·Coordinate-based LCI：表示基于坐标的位置信息
 
-[[Media policy DSCP]{lang="EN-US"}]{#struct_0_x1289_x1771_1351631529}
+·Civic Address LCI：表示普通地址信息
 
-[[DSCP]{lang="EN-US"}]{#struct_0_x1289_x1771_1351959209}[的值]{style="font-family:宋体"}
+·ECS ELIN：表示紧急电话号码
 
-[[Location format]{lang="EN-US"}]{#struct_0_x1289_x1771_1352024745}
+Location information
 
-[[位置信息格式：]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1351828137}
+位置信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Invalid]{lang="EN-US"}]{#struct_0_x1289_x1771_x1361721118}[：表示无效位置数据类型]{lang="EN-US" style="font-family:宋体"}
+PoE PSE power source
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Coordinate-based LCI]{lang="EN-US"}]{#struct_0_x1289_x1771_1351893673}[：表示基于坐标的位置信息]{lang="EN-US" style="font-family:
-  宋体"}
+PSE所采用的电源类型：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Civic Address LCI]{lang="EN-US"}]{#struct_0_x1289_x1771_1352221353}[：表示普通地址信息]{lang="EN-US" style="font-family:
-  宋体"}
+·Unknown：表示采用的电源类型未知
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ECS ELIN]{lang="EN-US"}]{#struct_0_x1289_x1771_1352286889}[：表示紧急电话号码]{style="font-family:宋体"}
+·Primary：表示采用主用电源作为电源
 
-[[Location information]{lang="EN-US"}]{#struct_0_x1289_x1771_1351697066}
+·Backup：表示采用备用电源作为电源
 
-[[位置信息]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1318914932}
+PoE PD power source
 
-[[PoE PSE power source]{lang="EN-US"}]{#struct_0_x1289_x1771_1351762602}
+PD所采用的电源类型：
 
-[[PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_1351565994}[所采用的电源类型：]{style="font-family:宋体"}
+·Unknown：表示采用的电源类型未知
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown]{lang="EN-US"}]{#struct_0_x1289_x1771_1351631530}[：表示采用的电源类型未知]{lang="EN-US" style="font-family:宋体"}
+·PSE：表示采用PSE作为电源
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Primary]{lang="EN-US"}]{#struct_0_x1289_x1771_1351959210}[：表示采用主用电源作为电源]{lang="EN-US" style="font-family:宋体"}
+·Local：表示采用本地电源作为电源
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Backup]{lang="EN-US"}]{#struct_0_x1289_x1771_x1362668504}[：表示采用备用电源作为电源]{style="font-family:宋体"}
+·PSE and local：表示采用PSE和本地电源作为电源
 
-[[PoE PD power source]{lang="EN-US"}]{#struct_0_x1289_x1771_1352024746}
+PoE service type
 
-[[PD]{lang="EN-US"}]{#struct_0_x1289_x1771_1351828138}[所采用的电源类型：]{style="font-family:宋体"}
+PoE服务类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown]{lang="EN-US"}]{#struct_0_x1289_x1771_1351893674}[：表示采用的电源类型未知]{lang="EN-US" style="font-family:宋体"}
+Port PSE priority
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_1352221354}[：表示采用]{style="font-family:宋体"}[PSE]{lang="EN-US"}[作为电源]{style="font-family:宋体"}
+PSE上端口的供电优先级：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Local]{lang="EN-US"}]{#struct_0_x1289_x1771_1352286890}[：表示采用本地电源作为电源]{lang="EN-US" style="font-family:宋体"}
+·Unknown：表示优先级未知
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PSE and local]{lang="EN-US"}]{#struct_0_x1289_x1771_x630953560}[：表示采用]{lang="EN-US" style="font-family:宋体"}[PSE]{lang="EN-US"}[和本地电源作为电源]{lang="EN-US" style="font-family:宋体"}
+·Critical：表示优先级为1级
 
-[[PoE service type]{lang="EN-US"}]{#struct_0_x1289_x1771_1351697063}
+·High：表示优先级为2级
 
-[[PoE]{lang="EN-US"}]{#struct_0_x1289_x1771_1351762599}[服务类型]{style="font-family:宋体"}
+·Low：表示优先级为3级
 
-[[Port PSE priority]{lang="EN-US"}]{#struct_0_x1289_x1771_1351565991}
+Port PD priority
 
-[[PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_1351631527}[上端口的供电优先级：]{style="font-family:宋体"}
+PD上端口的受电优先级：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown]{lang="EN-US"}]{#struct_0_x1289_x1771_1351959207}[：表示优先级未知]{lang="EN-US" style="font-family:宋体"}
+·Unknown：表示优先级未知
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Critical]{lang="EN-US"}]{#struct_0_x1289_x1771_x1362602969}[：表示优先级为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[级]{lang="EN-US" style="font-family:宋体"}
+·Critical：表示优先级为1级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[High]{lang="EN-US"}]{#struct_0_x1289_x1771_1352024743}[：表示优先级为]{style="font-family:宋体"}[2]{lang="EN-US"}[级]{style="font-family:宋体"}
+·High：表示优先级为2级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Low]{lang="EN-US"}]{#struct_0_x1289_x1771_1351828135}[：表示优先级为]{style="font-family:宋体"}[3]{lang="EN-US"}[级]{style="font-family:宋体"}
+·Low：表示优先级为3级
 
-[[Port PD priority]{lang="EN-US"}]{#struct_0_x1289_x1771_1351893671}
+Port available power value
 
-[[PD]{lang="EN-US"}]{#struct_0_x1289_x1771_1352221351}[上端口的受电优先级：]{style="font-family:宋体"}
+PSE上端口可提供的功率，或PD上端口所需的功率，单位为瓦特
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown]{lang="EN-US"}]{#struct_0_x1289_x1771_1352286887}[：表示优先级未知]{lang="EN-US" style="font-family:宋体"}
+HardwareRev
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Critical]{lang="EN-US"}]{#struct_0_x1289_x1771_x630494807}[：表示优先级为]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[级]{lang="EN-US" style="font-family:宋体"}
+产品的硬件版本
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[High]{lang="EN-US"}]{#struct_0_x1289_x1771_1351697064}[：表示优先级为]{style="font-family:宋体"}[2]{lang="EN-US"}[级]{style="font-family:宋体"}
+FirmwareRev
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Low]{lang="EN-US"}]{#struct_0_x1289_x1771_1351762600}[：表示优先级为]{style="font-family:宋体"}[3]{lang="EN-US"}[级]{style="font-family:宋体"}
+产品的固件版本
 
-[[Port available power value]{lang="EN-US"}]{#struct_0_x1289_x1771_1351565992}
+SoftwareRev
 
-[[PSE]{lang="EN-US"}]{#struct_0_x1289_x1771_1351631528}[上端口可提供的功率，或]{style="font-family:宋体"}[PD]{lang="EN-US"}[上端口所需的功率，单位为瓦特]{style="font-family:宋体"}
+产品的软件版本
 
-[[HardwareRev]{lang="EN-US"}]{#struct_0_x1289_x1771_1351959208}
+SerialNum
 
-[[产品的硬件版本]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1363192793}
+序列号
 
-[[FirmwareRev]{lang="EN-US"}]{#struct_0_x1289_x1771_1352024744}
+Manufacturer name
 
-[[产品的固件版本]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1351828136}
+制造厂商
 
-[[SoftwareRev]{lang="EN-US"}]{#struct_0_x1289_x1771_1351893672}
+Model name
 
-[[产品的软件版本]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1352221352}
+模块名称
 
-[[SerialNum]{lang="EN-US"}]{#struct_0_x1289_x1771_1352286888}
+Asset tracking identifier
 
-[[序列号]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1377186288}
+资产跟踪ID
 
-[[Manufacturer name]{lang="EN-US"}]{#struct_0_x1289_x1771_x1377120752}
+Unknown basic TLV
 
-[[制造厂商]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1377317360}
+未知的基本TLV
 
-[[Model name]{lang="EN-US"}]{#struct_0_x1289_x1771_x1377251824}
+TLV type
 
-[[模块名称]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1376924144}
+未知的基本TLV类型
 
-[[Asset tracking identifier]{lang="EN-US"}]{#struct_0_x1289_x1771_805506338}
+TLV information
 
-[[资产跟踪]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1289_x1771_x1376858608}
+未知的基本TLV的具体信息
 
-[[Unknown basic TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x1377055216}
+Unknown organizationally-defined TLV
 
-[[未知的基本]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x1376989680}
+未知组织定义TLV
 
-[[TLV type]{lang="EN-US"}]{#struct_0_x1289_x1771_x1376662000}
+TLV OUI
 
-[[未知的基本]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x1376596464}[类型]{style="font-family:宋体"}
+未知组织定义TLV的对象唯一标识
 
-[[TLV information]{lang="EN-US"}]{#struct_0_x1289_x1771_x1377186287}
+TLV subtype
 
-[[未知的基本]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x1377120751}[的具体信息]{style="font-family:宋体"}
+未知的组织定义TLV类型
 
-[[Unknown organizationally-defined TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x1377317359}
+Index
 
-[[未知组织定义]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x1377251823}
+未知组织的索引
 
-[[TLV OUI]{lang="EN-US"}]{#struct_0_x1289_x1771_x1376924143}
+CDP neighbor-information of port 1
 
-[[未知组织定义]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x1376858607}[的对象唯一标识]{style="font-family:宋体"}
+端口1的CDP邻居信息
 
-[[TLV subtype]{lang="EN-US"}]{#struct_0_x1289_x1771_x1377055215}
+CDP neighbor index
 
-[[未知的组织定义]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x1376989679}[类型]{style="font-family:宋体"}
+CDP邻居索引
 
-[[Index]{lang="EN-US"}]{#struct_0_x1289_x1771_x1376661999}
+Chassis ID/subtype
 
-[[未知组织的索引]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1376596463}
+Chassis ID值及Chassis ID类型
 
-[[CDP neighbor-information of port 1]{lang="EN-US"}]{#struct_0_x1289_x1771_x1377186290}
+Port ID/subtype
 
-[[端口]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_x1289_x1771_x1377120754}[的]{style="font-family:宋体"}[CDP]{lang="EN-US"}[邻居信息]{style="font-family:宋体"}
+Port ID值及PortID类型
 
-[[CDP neighbor index]{lang="EN-US"}]{#struct_0_x1289_x1771_x1377317362}
+Software version
 
-[[CDP]{lang="EN-US"}]{#struct_0_x1289_x1771_x1377251826}[邻居索引]{style="font-family:宋体"}
+邻居软件版本
 
-[[Chassis ID/subtype]{lang="EN-US"}]{#struct_0_x1289_x1771_x1376924146}
+Platform version
 
-[[Chassis ID]{lang="EN-US"}]{#struct_0_x1289_x1771_x1376858610}[值及]{style="font-family:宋体"}[Chassis ID]{lang="EN-US"}[类型]{style="font-family:宋体"}
+邻居平台版本
 
-[[Port ID/subtype]{lang="EN-US"}]{#struct_0_x1289_x1771_x1377055218}
+Duplex
 
-[[Port ID]{lang="EN-US"}]{#struct_0_x1289_x1771_x1376989682}[值及]{style="font-family:宋体"}[PortID]{lang="EN-US"}[类型]{style="font-family:宋体"}
+双工状态
 
-[[Software version]{lang="EN-US"}]{#struct_0_x1289_x1771_x1376662002}
+Capabilities
 
-[[邻居软件版本]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1376596466}
+系统已开启的功能：
 
-[[Platform version]{lang="EN-US"}]{#struct_0_x1289_x1771_x1377186289}
+·Repeater：表示开启信号中继功能
 
-[[邻居平台版本]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1377120753}
+·Bridge：表示开启交换功能
 
-[[Duplex]{lang="EN-US"}]{#struct_0_x1289_x1771_x1377317361}
+·WlanAccessPoint：表示开启无线接入点功能
 
-[[双工状态]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1377251825}
+·Router：表示开启路由功能
 
-[[Capabilities]{lang="EN-US"}]{#struct_0_x1289_x1771_x1376924145}
+·Telephone：表示开启电话功能
 
-[[系统已开启的功能：]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1376858609}
+·DocsisCableDevice：表示开启电缆设备功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Repeater]{lang="EN-US"}]{#struct_0_x1289_x1771_x1377055217}[：表示开启信号中继功能]{lang="EN-US" style="font-family:宋体"}
+·StationOnly：表示开启只作站点功能，与其他功能不能同时出现
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Bridge]{lang="EN-US"}]{#struct_0_x1289_x1771_x1376989681}[：表示开启交换功能]{style="font-family:宋体"}
+·Other：表示开启不在上述列表的其他功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[WlanAccessPoint]{lang="EN-US"}]{#struct_0_x1289_x1771_x1376662001}[：表示开启无线接入点功能]{lang="EN-US" style="font-family:
-  宋体"}
+·None：表示该邻居未发布该TLV
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Router]{lang="EN-US"}]{#struct_0_x1289_x1771_x1376596465}[：表示开启路由功能]{lang="EN-US" style="font-family:宋体"}
+Local Interface
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Telephone]{lang="EN-US"}]{#struct_0_x1289_x1771_x1377186292}[：表示开启电话功能]{lang="EN-US" style="font-family:宋体"}
+接收LLDP信息的本端端口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DocsisCableDevice]{lang="EN-US"}]{#struct_0_x1289_x1771_x1377120756}[：表示开启电缆设备功能]{lang="EN-US" style="font-family:
-  宋体"}
+Chassis ID : \* \-- \-- Nearest nontpmr bridge neighbor                              
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[StationOnly]{lang="EN-US"}]{#struct_0_x1289_x1771_x1377317364}[：表示开启只作站点功能，与其他功能不能同时出现]{lang="EN-US" style="font-family:宋体"}
+                    #\-- \-- Nearest customer bridge neighbor
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Other]{lang="EN-US"}]{#struct_0_x1289_x1771_x1377251828}[：表示开启不在上述列表的其他功能]{lang="EN-US" style="font-family:宋体"}
+·\*符号：表示该邻居是最近非TPMR桥代理类型邻居
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[None]{lang="EN-US"}]{#struct_0_x1289_x1771_x1376924148}[：表示该邻居未发布该]{style="font-family:宋体"}[TLV]{lang="EN-US"}
+·\#符号：表示该邻居是最近客户桥代理类型邻居
 
-[[Local Interface]{lang="EN-US"}]{#struct_0_x1289_x1771_x1376858612}
+Transmit Tw
 
-[[接收]{style="font-family:宋体"}[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_x1377055220}[信息的本端端口]{style="font-family:宋体"}
+本端发送的等待时间，单位为微秒
 
-[[Chassis ID : \* \-- \-- Nearest nontpmr bridge neighbor                               ]{lang="EN-US"}]{#struct_0_x1289_x1771_x1376989684}
+Receive Tw
 
-[[                    #\-- \-- Nearest customer bridge neighbor]{lang="EN-US"}]{#struct_0_x1289_x1771_x1376662004}
+本端向对端请求的等待时间，单位为微秒
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[\*]{lang="EN-US"}]{#struct_0_x1289_x1771_x1376596468}[符号：表示该邻居是最近非]{style="font-family:宋体"}[TPMR]{lang="EN-US"}[桥代理类型邻居]{style="font-family:宋体"}
+Fallback Tw
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[\#]{lang="EN-US"}]{#struct_0_x1289_x1771_x1377120755}[符号：表示该邻居是最近客户桥代理类型邻居]{style="font-family:宋体"}
+本端向对端请求的候选等待时间，单位为微秒
 
-[[Transmit Tw]{lang="EN-US"}]{#struct_0_x1289_x1771_x859516257}
+Echo Transmit Tw
 
-[[本端发送的等待时间，单位为微秒]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x859450721}
+收到的对端发送的等待时间，单位为微秒
 
-[[Receive Tw]{lang="EN-US"}]{#struct_0_x1289_x1771_x859319649}
+Echo Receive Tw
 
-[[本端向对端请求的等待时间，单位为微秒]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x858729825}
-
-[[Fallback Tw]{lang="EN-US"}]{#struct_0_x1289_x1771_x859254110}
-
-[[本端向对端请求的候选等待时间，单位为微秒]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x859188574}
-
-[[Echo Transmit Tw]{lang="EN-US"}]{#struct_0_x1289_x1771_x859123038}
-
-[[收到的对端发送的等待时间，单位为微秒]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x859516254}
-
-[[Echo Receive Tw]{lang="EN-US"}]{#struct_0_x1289_x1771_x859450718}
-
-[[收到的对端请求的等待时间，单位为微秒]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x859385182}
-
-[ ]{lang="EN-US"}
-
-::: {#-1172730649 .myid}
-[]{#_Toc404784694}[]{#struct_0_x1289_x1771_x848716233}[]{#_Toc144347673}[]{#_Toc287965202}[]{#_Toc295980444}[]{#_Toc287965410}[]{#_Toc295980652}
+收到的对端请求的等待时间，单位为微秒
 
 **LLDP \-- LLDP配置命令 \-- display lldp statistics**
 
 ------------------------------------------------------------------------
 
-[**[display lldp statistics]{lang="EN-US"}**]{#struct_0_x1289_x1771_1217549778}[命令用来显示]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+**[display lldp statistics**]命令用来显示LLDP的统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_631649466}
+【命令】
 
-[**[display lldp statistics]{lang="EN-US"}**[ \[ **global** \| \[ **interface** *interface-type interface-number* \] \[ **agent** ]{lang="EN-US"}]{#struct_0_x1289_x1771_364362126}[{]{lang="EN-US"}[ **nearest-bridge** \| **nearest-customer** \| **nearest-nontpmr** } \] \]]{lang="EN-US"}
+**[display lldp statistics**[ [ **global** \| [ **interface** *interface-type interface-number* ]  **agent**  [ **nearest-bridge** \| **nearest-customer** \| **nearest-nontpmr** } ] ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1861201974}
+【视图】]
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1251817302}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1377055219}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_1265386224}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1289_x1771_x656863341}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_x588802761}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1289_x1771_x1351132107}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_34518665}
+【参数】
 
-[**[global]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1729865368}[：显示全局]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[统计信息。]{style="font-family:宋体"}
+**[global**]：显示全局LLDP统计信息。
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_x1289_x1771_1935041166}[：显示指定接口上的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[统计信息，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[表示接口类型和接口编号。]{style="font-family:
-宋体"}
+**[interface** *interface-type interface-number*]：显示指定接口上的LLDP统计信息，*interface-type interface-number*表示接口类型和接口编号。
 
-[**[agent]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1376989683}[：显示指定类型]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[代理的统计信息。如果未指定该参数，将显示所有类型]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[代理的统计信息。]{style="font-family:宋体"}
+**[agent**]：显示指定类型LLDP代理的统计信息。如果未指定该参数，将显示所有类型LLDP代理的统计信息。
 
-[**[nearest-bridge]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1130915498}[：表示最近桥代理。]{style="font-family:宋体"}
+**[nearest-bridge**]：表示最近桥代理。
 
-[**[nearest-customer]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1323275805}[：表示最近客户桥代理。]{style="font-family:宋体"}
+**[nearest-customer**]：表示最近客户桥代理。
 
-[**[nearest-nontpmr]{lang="EN-US"}**]{#struct_0_x1289_x1771_2139913555}[：表示最近非]{style="font-family:宋体"}[TPMR]{lang="EN-US"}[桥代理。]{style="font-family:宋体"}
+**[nearest-nontpmr**]：表示最近非TPMR桥代理。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_2071231463}
+【使用指导】
 
-[[如果未指定任何参数，将同时显示全局和接口上的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_1490531235}[统计信息。]{style="font-family:宋体"}
+如果未指定任何参数，将同时显示全局和接口上的LLDP统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x90512530}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_x129550362}[显示全局和接口上的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[统计信息。]{style="font-family:宋体"}
+\# 显示全局和接口上的LLDP统计信息。
 
-[[\<Sysname\> display lldp statistics]{lang="EN-US"}]{#struct_0_x1289_x1771_x1376596467}
+\<Sysname\> display lldp statistics
 
-[LLDP statistics global information:]{lang="EN-US"}
+LLDP statistics global information:
 
-[LLDP neighbor information last change time:0 days, 0 hours, 4 minutes, 40 seconds]{lang="EN-US"}
+LLDP neighbor information last change time:0 days, 0 hours, 4 minutes, 40 seconds
 
-[The number of LLDP neighbor information inserted : 1]{lang="EN-US"}
+The number of LLDP neighbor information inserted : 1
 
-[The number of LLDP neighbor information deleted  : 1]{lang="EN-US"}
+The number of LLDP neighbor information deleted  : 1
 
-[The number of LLDP neighbor information dropped  : 0]{lang="EN-US"}
+The number of LLDP neighbor information dropped  : 0
 
-[The number of LLDP neighbor information aged out : 1]{lang="EN-US"}
+The number of LLDP neighbor information aged out : 1
 
-[ ]{lang="EN-US"}
+LLDP statistics information of port 1 [GigabitEthernet1/0/1:]
 
-[LLDP statistics information of port 1 \[GigabitEthernet1/0/1\]:]{lang="EN-US"}
+LLDP agent nearest-bridge:
 
-[LLDP agent nearest-bridge:]{lang="EN-US"}
+The number of LLDP frames transmitted            : 0
 
-[The number of LLDP frames transmitted            : 0]{lang="EN-US"}
+The number of LLDP frames received               : 0
 
-[The number of LLDP frames received               : 0]{lang="EN-US"}
+The number of LLDP frames discarded              : 0
 
-[The number of LLDP frames discarded              : 0]{lang="EN-US"}
+The number of LLDP error frames                  : 0
 
-[The number of LLDP error frames                  : 0]{lang="EN-US"}
+The number of LLDP TLVs discarded                : 0
 
-[The number of LLDP TLVs discarded                : 0]{lang="EN-US"}
+The number of LLDP TLVs unrecognized             : 0
 
-[The number of LLDP TLVs unrecognized             : 0]{lang="EN-US"}
+The number of LLDP neighbor information aged out : 0
 
-[The number of LLDP neighbor information aged out : 0]{lang="EN-US"}
+The number of CDP frames transmitted             : 0
 
-[The number of CDP frames transmitted             : 0]{lang="EN-US"}
+The number of CDP frames received                : 0
 
-[The number of CDP frames received                : 0]{lang="EN-US"}
+The number of CDP frames discarded               : 0
 
-[The number of CDP frames discarded               : 0]{lang="EN-US"}
+The number of CDP error frames                   : 0
 
-[The number of CDP error frames                   : 0]{lang="EN-US"}
+LLDP agent nearest-nontpmr:
 
-[ ]{lang="EN-US"}
+The number of LLDP frames transmitted            : 0
 
-[LLDP agent nearest-nontpmr:]{lang="EN-US"}
+The number of LLDP frames received               : 0
 
-[The number of LLDP frames transmitted            : 0]{lang="EN-US"}
+The number of LLDP frames discarded              : 0
 
-[The number of LLDP frames received               : 0]{lang="EN-US"}
+The number of LLDP error frames                  : 0
 
-[The number of LLDP frames discarded              : 0]{lang="EN-US"}
+The number of LLDP TLVs discarded                : 0
 
-[The number of LLDP error frames                  : 0]{lang="EN-US"}
+The number of LLDP TLVs unrecognized             : 0
 
-[The number of LLDP TLVs discarded                : 0]{lang="EN-US"}
+The number of LLDP neighbor information aged out : 0
 
-[The number of LLDP TLVs unrecognized             : 0]{lang="EN-US"}
+The number of CDP frames transmitted             : 0
 
-[The number of LLDP neighbor information aged out : 0]{lang="EN-US"}
+The number of CDP frames received                : 0
 
-[The number of CDP frames transmitted             : 0]{lang="EN-US"}
+The number of CDP frames discarded               : 0
 
-[The number of CDP frames received                : 0]{lang="EN-US"}
+The number of CDP error frames                   : 0
 
-[The number of CDP frames discarded               : 0]{lang="EN-US"}
+LLDP agent nearest-customer:
 
-[The number of CDP error frames                   : 0]{lang="EN-US"}
+The number of LLDP frames transmitted            : 0
 
-[ ]{lang="EN-US"}
+The number of LLDP frames received               : 0
 
-[LLDP agent nearest-customer:]{lang="EN-US"}
+The number of LLDP frames discarded              : 0
 
-[The number of LLDP frames transmitted            : 0]{lang="EN-US"}
+The number of LLDP error frames                  : 0
 
-[The number of LLDP frames received               : 0]{lang="EN-US"}
+The number of LLDP TLVs discarded                : 0
 
-[The number of LLDP frames discarded              : 0]{lang="EN-US"}
+The number of LLDP TLVs unrecognized             : 0
 
-[The number of LLDP error frames                  : 0]{lang="EN-US"}
+The number of LLDP neighbor information aged out : 0
 
-[The number of LLDP TLVs discarded                : 0]{lang="EN-US"}
+The number of CDP frames transmitted             : 0
 
-[The number of LLDP TLVs unrecognized             : 0]{lang="EN-US"}
+The number of CDP frames received                : 0
 
-[The number of LLDP neighbor information aged out : 0]{lang="EN-US"}
+The number of CDP frames discarded               : 0
 
-[The number of CDP frames transmitted             : 0]{lang="EN-US"}
+The number of CDP error frames                   : 0
 
-[The number of CDP frames received                : 0]{lang="EN-US"}
+\# 显示接口GigabitEthernet1/0/1的最近客户桥代理上的LLDP统计信息。
 
-[The number of CDP frames discarded               : 0]{lang="EN-US"}
+\<Sysname\> display lldp statistics interface gigabitethernet 1/0/1 agent nearest-customer
 
-[The number of CDP error frames                   : 0]{lang="EN-US"}
+LLDP statistics information of port 1 [GigabitEthernet1/0/1:]
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_1397368383}[显示接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的最近客户桥代理上的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[统计信息。]{style="font-family:宋体"}
+LLDP agent nearest-customer:
 
-[[\<Sysname\> display lldp statistics interface gigabitethernet 1/0/1 agent nearest-customer]{lang="EN-US"}]{#struct_0_x1289_x1771_188897653}
+The number of LLDP frames transmitted            : 0
 
-[LLDP statistics information of port 1 \[GigabitEthernet1/0/1\]:]{lang="EN-US"}
+The number of LLDP frames received               : 0
 
-[LLDP agent nearest-customer:]{lang="EN-US"}
+The number of LLDP frames discarded              : 0
 
-[The number of LLDP frames transmitted            : 0]{lang="EN-US"}
+The number of LLDP error frames                  : 0
 
-[The number of LLDP frames received               : 0]{lang="EN-US"}
+The number of LLDP TLVs discarded                : 0
 
-[The number of LLDP frames discarded              : 0]{lang="EN-US"}
+The number of LLDP TLVs unrecognized             : 0
 
-[The number of LLDP error frames                  : 0]{lang="EN-US"}
+The number of LLDP neighbor information aged out : 0
 
-[The number of LLDP TLVs discarded                : 0]{lang="EN-US"}
+The number of CDP frames transmitted             : 0
 
-[The number of LLDP TLVs unrecognized             : 0]{lang="EN-US"}
+The number of CDP frames received                : 0
 
-[The number of LLDP neighbor information aged out : 0]{lang="EN-US"}
+The number of CDP frames discarded               : 0
 
-[The number of CDP frames transmitted             : 0]{lang="EN-US"}
+The number of CDP error frames                   : 0
 
-[The number of CDP frames received                : 0]{lang="EN-US"}
+表1-3 display lldp statistics命令显示信息描述表
 
-[The number of CDP frames discarded               : 0]{lang="EN-US"}
+字段
 
-[The number of CDP error frames                   : 0]{lang="EN-US"}
+描述
 
-[[表1-3 ]{lang="EN-US"}[display lldp statistics]{lang="EN-US"}]{#struct_0_x1289_x1771_x1955176576}[命令显示信息描述表]{style="font-family:黑体"}
+LLDP agent nearest-bridge
 
-[]{#table_struct_0_155439350}[[字段]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x342121516}
-:::
+LLDP缺省代理，即最近桥代理
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1191672473}
+LLDP agent nearest-customer
 
-[[LLDP agent nearest-bridge]{lang="EN-US"}]{#struct_0_x1289_x1771_1645115281}
+LLDP最近客户桥代理
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_188963189}[缺省代理，即最近桥代理]{style="font-family:宋体"}
+LLDP agent nearest-nontpmr
 
-[[LLDP agent nearest-customer]{lang="EN-US"}]{#struct_0_x1289_x1771_358935506}
+LLDP最近非TPMR桥代理
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_166835603}[最近客户桥代理]{style="font-family:宋体"}
+LLDP statistics global information
 
-[[LLDP agent nearest-nontpmr]{lang="EN-US"}]{#struct_0_x1289_x1771_x1218113651}
+全局LLDP统计信息
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_x2797279}[最近非]{style="font-family:宋体"}[TPMR]{lang="EN-US"}[桥代理]{style="font-family:宋体"}
+LLDP neighbor information last change time
 
-[[LLDP statistics global information]{lang="EN-US"}]{#struct_0_x1289_x1771_1640524492}
+邻居信息的最后更新时间
 
-[[全局]{style="font-family:宋体"}[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_188766581}[统计信息]{style="font-family:宋体"}
+The number of LLDP neighbor information inserted
 
-[[LLDP neighbor information last change time]{lang="EN-US"}]{#struct_0_x1289_x1771_2075639350}
+邻居信息的增加次数
 
-[[邻居信息的最后更新时间]{style="font-family:宋体"}]{#struct_0_x1289_x1771_478285658}
+The number of LLDP neighbor information deleted
 
-[[The number of LLDP neighbor information inserted]{lang="EN-US"}]{#struct_0_x1289_x1771_66406964}
+邻居信息的删除次数
 
-[[邻居信息的增加次数]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1484097652}
+The number of LLDP neighbor information dropped
 
-[[The number of LLDP neighbor information deleted]{lang="EN-US"}]{#struct_0_x1289_x1771_188832117}
+由于空间不足而导致丢弃邻居信息的次数
 
-[[邻居信息的删除次数]{style="font-family:宋体"}]{#struct_0_x1289_x1771_382069807}
+The number of LLDP neighbor information aged out
 
-[[The number of LLDP neighbor information dropped]{lang="EN-US"}]{#struct_0_x1289_x1771_46518397}
+邻居信息的老化数量
 
-[[由于空间不足而导致丢弃邻居信息的次数]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x236043034}
+LLDP statistics Information of port 1
 
-[[The number of LLDP neighbor information aged out]{lang="EN-US"}]{#struct_0_x1289_x1771_x438217141}
+端口1上的LLDP统计信息
 
-[[邻居信息的老化数量]{style="font-family:宋体"}]{#struct_0_x1289_x1771_189159797}
+The number of LLDP frames transmitted
 
-[[LLDP statistics Information of port 1]{lang="EN-US"}]{#struct_0_x1289_x1771_x819278688}
+发送的LLDP帧总数
 
-[[端口]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_x1289_x1771_x886737205}[上的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[统计信息]{style="font-family:宋体"}
+The number of LLDP frames received
 
-[[The number of LLDP frames transmitted]{lang="EN-US"}]{#struct_0_x1289_x1771_x1006001442}
+收到的LLDP帧总数
 
-[[发送的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_648185871}[帧总数]{style="font-family:宋体"}
+The number of LLDP frames discarded
 
-[[The number of LLDP frames received]{lang="EN-US"}]{#struct_0_x1289_x1771_189225333}
+丢弃的LLDP帧总数
 
-[[收到的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_x1393034469}[帧总数]{style="font-family:宋体"}
+The number of LLDP error frames
 
-[[The number of LLDP frames discarded]{lang="EN-US"}]{#struct_0_x1289_x1771_x1762735409}
+收到的错误LLDP帧总数
 
-[[丢弃的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_1095255491}[帧总数]{style="font-family:宋体"}
+The number of LLDP TLVs discarded
 
-[[The number of LLDP error frames]{lang="EN-US"}]{#struct_0_x1289_x1771_189028725}
+丢弃的LLDP TLV总数
 
-[[收到的错误]{style="font-family:宋体"}[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_1880214925}[帧总数]{style="font-family:宋体"}
+The number of LLDP TLVs unrecognized
 
-[[The number of LLDP TLVs discarded]{lang="EN-US"}]{#struct_0_x1289_x1771_1350322718}
+不可识别的LLDP TLV总数
 
-[[丢弃的]{style="font-family:宋体"}[LLDP TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x133612545}[总数]{style="font-family:宋体"}
+The number of LLDP neighbor information aged out
 
-[[The number of LLDP TLVs unrecognized]{lang="EN-US"}]{#struct_0_x1289_x1771_189094261}
+老化的LLDP邻居信息总数
 
-[[不可识别的]{style="font-family:宋体"}[LLDP TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_1492872785}[总数]{style="font-family:宋体"}
+The number of CDP frames transmitted
 
-[[The number of LLDP neighbor information aged out]{lang="EN-US"}]{#struct_0_x1289_x1771_x203788681}
+发送的CDP帧总数
 
-[[老化的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_1084790373}[邻居信息总数]{style="font-family:宋体"}
+The number of CDP frames received
 
-[[The number of CDP frames transmitted]{lang="EN-US"}]{#struct_0_x1289_x1771_189421941}
+收到的CDP帧总数
 
-[[发送的]{style="font-family:宋体"}[CDP]{lang="EN-US"}]{#struct_0_x1289_x1771_2028617595}[帧总数]{style="font-family:宋体"}
+The number of CDP frames discarded
 
-[[The number of CDP frames received]{lang="EN-US"}]{#struct_0_x1289_x1771_x583486721}
+丢弃的CDP帧总数
 
-[[收到的]{style="font-family:宋体"}[CDP]{lang="EN-US"}]{#struct_0_x1289_x1771_1748250145}[帧总数]{style="font-family:宋体"}
+The number of CDP error frames
 
-[[The number of CDP frames discarded]{lang="EN-US"}]{#struct_0_x1289_x1771_189487477}
-
-[[丢弃的]{style="font-family:宋体"}[CDP]{lang="EN-US"}]{#struct_0_x1289_x1771_792734230}[帧总数]{style="font-family:宋体"}
-
-[[The number of CDP error frames]{lang="EN-US"}]{#struct_0_x1289_x1771_x518454481}
-
-[[收到的错误]{style="font-family:宋体"}[CDP]{lang="EN-US"}]{#struct_0_x1289_x1771_x1067145968}[帧总数]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#61811945 .myid}
-[]{#_Toc404784695}[]{#struct_0_x1289_x1771_188897654}[]{#_Toc144347674}
+收到的错误CDP帧总数
 
 **LLDP \-- LLDP配置命令 \-- display lldp status**
 
 ------------------------------------------------------------------------
 
-[**[display lldp status]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1955176571}[命令用来显示]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[的状态信息。]{style="font-family:宋体"}
+**[display lldp status**]命令用来显示LLDP的状态信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1101636403}
+【命令】
 
-[**[display lldp status ]{lang="EN-US"}**[\[ **interface** *interface-type interface-number* \] \[ **agent** ]{lang="EN-US"}]{#struct_0_x1289_x1771_x119253083}[{]{lang="EN-US"}[ **nearest-bridge** \| **nearest-customer** \| **nearest-nontpmr** } \]]{lang="EN-US"}
+**[display lldp status ** **interface** *interface-type interface-number* ]  **agent** [[ **nearest-bridge** \| **nearest-customer** \| **nearest-nontpmr** } ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1172474846}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1405617532}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1490517642}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_x797572962}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1289_x1771_x2022097707}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_188963190}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1289_x1771_x1979716661}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1840914256}
+【参数】
 
-[**[interface ]{lang="EN-US"}***[interface-type interface-number]{lang="EN-US"}*]{#struct_0_x1289_x1771_33898994}[：显示指定接口上的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[状态信息，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[表示接口类型和接口编号。如果未指定该参数，将显示所有开启了]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[功能的接口上的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[状态信息。]{style="font-family:宋体"}
+**[interface ***interface-type interface-number*]：显示指定接口上的LLDP状态信息，*interface-type interface-number*表示接口类型和接口编号。如果未指定该参数，将显示所有开启了LLDP功能的接口上的LLDP状态信息。
 
-[**[agent]{lang="EN-US"}**]{#struct_0_x1289_x1771_1093482286}[：显示指定类型]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[代理的状态信息。如果未指定该参数，将显示所有类型]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[代理的状态信息。]{style="font-family:宋体"}
+**[agent**]：显示指定类型LLDP代理的状态信息。如果未指定该参数，将显示所有类型LLDP代理的状态信息。
 
-[**[nearest-bridge]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1492750597}[：表示最近桥代理。]{style="font-family:宋体"}
+**[nearest-bridge**]：表示最近桥代理。
 
-[**[nearest-customer]{lang="EN-US"}**]{#struct_0_x1289_x1771_x226262240}[：表示最近客户桥代理。]{style="font-family:宋体"}
+**[nearest-customer**]：表示最近客户桥代理。
 
-[**[nearest-nontpmr]{lang="EN-US"}**]{#struct_0_x1289_x1771_1373628904}[：表示最近非]{style="font-family:宋体"}[TPMR]{lang="EN-US"}[桥代理。]{style="font-family:宋体"}
+**[nearest-nontpmr**]：表示最近非TPMR桥代理。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_676958189}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_188766582}[显示全局和所有接口上的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[状态信息。]{style="font-family:宋体"}
+\# 显示全局和所有接口上的LLDP状态信息。
 
-[[\<Sysname\> display lldp status]{lang="EN-US"}]{#struct_0_x1289_x1771_188832118}
+\<Sysname\> display lldp status
 
-[Global status of LLDP: Enable]{lang="EN-US"}
+Global status of LLDP: Enable
 
-[Bridge mode of LLDP: customer-bridge]{lang="EN-US"}
+Bridge mode of LLDP: customer-bridge
 
-[The current number of LLDP neighbors: 0]{lang="EN-US"}
+The current number of LLDP neighbors: 0
 
-[The current number of CDP neighbors: 0]{lang="EN-US"}
+The current number of CDP neighbors: 0
 
-[LLDP neighbor information last changed time: 0 days, 0 hours, 4 minutes, 40 seconds]{lang="EN-US"}
+LLDP neighbor information last changed time: 0 days, 0 hours, 4 minutes, 40 seconds
 
-[Transmit interval              : 30s]{lang="EN-US"}
+Transmit interval              : 30s
 
-[Fast transmit interval         : 1s]{lang="EN-US"}
+Fast transmit interval         : 1s
 
-[Transmit max credit            : 5]{lang="EN-US"}
+Transmit max credit            : 5
 
-[Hold multiplier                : 4]{lang="EN-US"}
+Hold multiplier                : 4
 
-[Reinit delay                   : 2s]{lang="EN-US"}
+Reinit delay                   : 2s
 
-[Trap interval                  : 5s]{lang="EN-US"}
+Trap interval                  : 5s
 
-[Fast start times               : 3]{lang="EN-US"}
+Fast start times               : 3
 
-[ ]{lang="EN-US"}
+LLDP status information of port 1 [GigabitEthernet1/0/1:]
 
-[LLDP status information of port 1 \[GigabitEthernet1/0/1\]:]{lang="EN-US"}
+LLDP agent  nearest-bridge:
 
-[LLDP agent  nearest-bridge:]{lang="EN-US"}
+Port status of LLDP            : Enable
 
-[Port status of LLDP            : Enable]{lang="EN-US"}
+Admin status                   : Tx_Rx
 
-[Admin status                   : Tx_Rx]{lang="EN-US"}
+Trap flag                      : No
 
-[Trap flag                      : No]{lang="EN-US"}
+MED trap flag                  : No
 
-[MED trap flag                  : No]{lang="EN-US"}
+Polling interval               : 0s
 
-[Polling interval               : 0s]{lang="EN-US"}
+Number of LLDP neighbors       : 5
 
-[Number of LLDP neighbors       : 5]{lang="EN-US"}
+Number of MED neighbors        : 2
 
-[Number of MED neighbors        : 2]{lang="EN-US"}
+Number of CDP neighbors        : 0
 
-[Number of CDP neighbors        : 0]{lang="EN-US"}
+Number of sent optional TLV    : 12
 
-[Number of sent optional TLV    : 12]{lang="EN-US"}
+Number of received unknown TLV : 5
 
-[Number of received unknown TLV : 5]{lang="EN-US"}
+LLDP agent nearest-nontpmr:
 
-[LLDP agent nearest-nontpmr:]{lang="EN-US"}
+Port status of LLDP            : Enable
 
-[Port status of LLDP            : Enable]{lang="EN-US"}
+Admin status                   : Tx_Rx
 
-[Admin status                   : Tx_Rx]{lang="EN-US"}
+Trap flag                      : No
 
-[Trap flag                      : No]{lang="EN-US"}
+Polling interval               : 0s
 
-[Polling interval               : 0s]{lang="EN-US"}
+Number of LLDP neighbors       : 5
 
-[Number of LLDP neighbors       : 5]{lang="EN-US"}
+Number of MED neighbors        : 2
 
-[Number of MED neighbors        : 2]{lang="EN-US"}
+Number of CDP neighbors        : 0
 
-[Number of CDP neighbors        : 0]{lang="EN-US"}
+Number of sent optional TLV    : 12
 
-[Number of sent optional TLV    : 12]{lang="EN-US"}
+Number of received unknown TLV : 5
 
-[Number of received unknown TLV : 5]{lang="EN-US"}
+LLDP agent nearest-customer:
 
-[ ]{lang="EN-US"}
+Port status of LLDP            : Enable
 
-[LLDP agent nearest-customer:]{lang="EN-US"}
+Admin status                   : Tx_Rx
 
-[Port status of LLDP            : Enable]{lang="EN-US"}
+Trap flag                      : No
 
-[Admin status                   : Tx_Rx]{lang="EN-US"}
+Polling interval               : 0s
 
-[Trap flag                      : No]{lang="EN-US"}
+Number of LLDP neighbors       : 5
 
-[Polling interval               : 0s]{lang="EN-US"}
+Number of MED neighbors        : 2
 
-[Number of LLDP neighbors       : 5]{lang="EN-US"}
+Number of CDP neighbors        : 0
 
-[Number of MED neighbors        : 2]{lang="EN-US"}
+Number of sent optional TLV    : 12
 
-[Number of CDP neighbors        : 0]{lang="EN-US"}
+Number of received unknown TLV : 5
 
-[Number of sent optional TLV    : 12]{lang="EN-US"}
+表1-4 display lldp status命令显示信息描述表
 
-[Number of received unknown TLV : 5]{lang="EN-US"}
+字段
 
-[[表1-4 ]{lang="EN-US"}[display lldp status]{lang="EN-US"}]{#struct_0_x1289_x1771_382069800}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_153632314}[[字段]{style="font-family:黑体"}]{#struct_0_x1289_x1771_189159798}
-:::
+Bridge mode of LLDP
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x819278675}
+LLDP桥模式：
 
-[[Bridge mode of LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_x886409524}
+·service-bridge：表示服务桥模式
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_193860783}[桥模式：]{style="font-family:宋体"}
+·customer-bridge：表示客户桥模式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[service-bridge]{lang="EN-US"}]{#struct_0_x1289_x1771_x195905787}[：表示服务桥模式]{lang="EN-US" style="font-family:宋体"}
+LLDP agent nearest-bridge
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[customer-bridge]{lang="EN-US"}]{#struct_0_x1289_x1771_x1467186077}[：表示客户桥模式]{lang="EN-US" style="font-family:
-  宋体"}
+LLDP缺省代理，即最近桥代理
 
-[[LLDP agent nearest-bridge]{lang="EN-US"}]{#struct_0_x1289_x1771_189225334}
+LLDP agent nearest-customer
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_x1393034462}[缺省代理，即最近桥代理]{style="font-family:宋体"}
+LLDP最近客户桥代理
 
-[[LLDP agent nearest-customer]{lang="EN-US"}]{#struct_0_x1289_x1771_x1809789576}
+LLDP agent nearest-nontpmr
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_x1118636913}[最近客户桥代理]{style="font-family:宋体"}
+LLDP最近非TPMR桥代理
 
-[[LLDP agent nearest-nontpmr]{lang="EN-US"}]{#struct_0_x1289_x1771_x552314697}
+Global status of LLDP
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_1546854354}[最近非]{style="font-family:宋体"}[TPMR]{lang="EN-US"}[桥代理]{style="font-family:宋体"}
+LLDP功能是否已全局开启
 
-[[Global status of LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_189028726}
+The current number of LLDP neighbors
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_1880214924}[功能是否已全局开启]{style="font-family:宋体"}
+当前设备的LLDP邻居总数
 
-[[The current number of LLDP neighbors]{lang="EN-US"}]{#struct_0_x1289_x1771_1350257182}
+The current number of CDP neighbors
 
-[[当前设备的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_259847438}[邻居总数]{style="font-family:宋体"}
+当前设备的CDP邻居总数
 
-[[The current number of CDP neighbors]{lang="EN-US"}]{#struct_0_x1289_x1771_x81453293}
+LLDP neighbor information last changed time
 
-[[当前设备的]{style="font-family:宋体"}[CDP]{lang="EN-US"}]{#struct_0_x1289_x1771_189094262}[邻居总数]{style="font-family:宋体"}
+邻居信息的最后更新时间
 
-[[LLDP neighbor information last changed time]{lang="EN-US"}]{#struct_0_x1289_x1771_1492872782}
+Transmit interval
 
-[[邻居信息的最后更新时间]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x204247433}
+LLDP报文的发送间隔
 
-[[Transmit interval]{lang="EN-US"}]{#struct_0_x1289_x1771_200167054}
+Hold multiplier
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_189421942}[报文的发送间隔]{style="font-family:宋体"}
+TTL乘数
 
-[[Hold multiplier]{lang="EN-US"}]{#struct_0_x1289_x1771_2028617594}
+Reinit delay
 
-[[TTL]{lang="EN-US"}]{#struct_0_x1289_x1771_x583552257}[乘数]{style="font-family:宋体"}
+端口初始化延迟时间
 
-[[Reinit delay]{lang="EN-US"}]{#struct_0_x1289_x1771_1022778263}
+Transmit max credit
 
-[[端口初始化延迟时间]{style="font-family:宋体"}]{#struct_0_x1289_x1771_163502173}
+LLDP报文发包限速令牌桶的最大值
 
-[[Transmit max credit]{lang="EN-US"}]{#struct_0_x1289_x1771_189487478}
+Trap interval
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_792734233}[报文发包限速令牌桶的最大值]{style="font-family:宋体"}
+Trap信息的发送间隔
 
-[[Trap interval]{lang="EN-US"}]{#struct_0_x1289_x1771_x518454482}
+Fast start times
 
-[[Trap]{lang="EN-US"}]{#struct_0_x1289_x1771_x1066949360}[信息的发送间隔]{style="font-family:宋体"}
+快速发送LLDP报文的个数
 
-[[Fast start times]{lang="EN-US"}]{#struct_0_x1289_x1771_188897651}
+LLDP status infomation of port 1
 
-[[快速发送]{style="font-family:宋体"}[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_x1955176574}[报文的个数]{style="font-family:宋体"}
+端口1上的LLDP状态信息
 
-[[LLDP status infomation of port 1]{lang="EN-US"}]{#struct_0_x1289_x1771_x1504920930}
+Port status of LLDP
 
-[[端口]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_x1289_x1771_x1494764373}[上的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[状态信息]{style="font-family:宋体"}
+LLDP功能是否已在端口上开启
 
-[[Port status of LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_188963187}
+Admin status
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_358935492}[功能是否已在端口上开启]{style="font-family:宋体"}
+端口LLDP工作模式：
 
-[[Admin status]{lang="EN-US"}]{#struct_0_x1289_x1771_923615484}
+·Tx_Rx：表示既发送也接收LLDP报文
 
-[[端口]{style="font-family:宋体"}[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_1567187100}[工作模式：]{style="font-family:宋体"}
+·Rx_Only：表示只接收不发送LLDP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Tx_Rx]{lang="EN-US"}]{#struct_0_x1289_x1771_188766579}[：表示既发送也接收]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文]{style="font-family:宋体"}
+·Tx_Only：表示只发送不接收LLDP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Rx_Only]{lang="EN-US"}]{#struct_0_x1289_x1771_1355595326}[：表示只接收不发送]{lang="EN-US" style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+·Disable：表示既不发送也不接收LLDP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Tx_Only]{lang="EN-US"}]{#struct_0_x1289_x1771_x1576870555}[：表示只发送不接收]{lang="EN-US" style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+Trap Flag
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disable]{lang="EN-US"}]{#struct_0_x1289_x1771_1747569292}[：表示既不发送也不接收]{lang="EN-US" style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+LLDP Trap功能是否已开启
 
-[[Trap Flag]{lang="EN-US"}]{#struct_0_x1289_x1771_188832115}
+MED trap flag
 
-[[LLDP Trap]{lang="EN-US"}]{#struct_0_x1289_x1771_382069805}[功能是否已开启]{style="font-family:宋体"}
+LLDP-MED Trap功能是否已开启
 
-[[MED trap flag]{lang="EN-US"}]{#struct_0_x1289_x1771_46518395}
+Polling interval
 
-[[LLDP-MED Trap]{lang="EN-US"}]{#struct_0_x1289_x1771_189159795}[功能是否已开启]{style="font-family:宋体"}
+轮询间隔，0表示轮询功能处于关闭状态
 
-[[Polling interval]{lang="EN-US"}]{#struct_0_x1289_x1771_x819278686}
+Number of neighbors
 
-[[轮询间隔，]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_x1289_x1771_x886606133}[表示轮询功能处于关闭状态]{style="font-family:宋体"}
+端口LLDP邻居数量
 
-[[Number of neighbors]{lang="EN-US"}]{#struct_0_x1289_x1771_x1781125537}
+Number of MED neighbors
 
-[[端口]{style="font-family:宋体"}[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_189225331}[邻居数量]{style="font-family:宋体"}
+端口MED邻居设备的数量
 
-[[Number of MED neighbors]{lang="EN-US"}]{#struct_0_x1289_x1771_x1393034467}
+Number of CDP neighbors
 
-[[端口]{style="font-family:宋体"}[MED]{lang="EN-US"}]{#struct_0_x1289_x1771_2081893193}[邻居设备的数量]{style="font-family:宋体"}
+端口CDP邻居设备的数量
 
-[[Number of CDP neighbors]{lang="EN-US"}]{#struct_0_x1289_x1771_189028723}
+Number of sent optional TLV
 
-[[端口]{style="font-family:宋体"}[CDP]{lang="EN-US"}]{#struct_0_x1289_x1771_1880214919}[邻居设备的数量]{style="font-family:宋体"}
+端口在一个LLDP报文中发送的可选TLV总数
 
-[[Number of sent optional TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_1351109151}
+Number of received unknown TLV
 
-[[端口在一个]{style="font-family:宋体"}[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_189094259}[报文中发送的可选]{style="font-family:宋体"}[TLV]{lang="EN-US"}[总数]{style="font-family:宋体"}
-
-[[Number of received unknown TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x81105319}
-
-[[端口在所有]{style="font-family:宋体"}[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_99251167}[报文中收到的不能识别的]{style="font-family:宋体"}[TLV]{lang="EN-US"}[总数]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::::: {#1411816975 .myid}
-[]{#_Toc404784696}[]{#struct_0_x1289_x1771_2038643670}[]{#_Toc144347675}
+端口在所有LLDP报文中收到的不能识别的TLV总数
 
 **LLDP \-- LLDP配置命令 \-- display lldp tlv-config**
 
 ------------------------------------------------------------------------
 
-[**[display lldp tlv-config]{lang="EN-US"}**]{#struct_0_x1289_x1771_x844137094}[命令用来显示接口上可发送的可选]{style="font-family:宋体"}[TLV]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[display lldp tlv-config**]命令用来显示接口上可发送的可选TLV信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_189421939}
+【命令】
 
-[**[display lldp tlv-config ]{lang="EN-US"}**[\[ **interface** *interface-type interface-number* \] \[ **agent** { **nearest-bridge** \| **nearest-customer** \| **nearest-nontpmr** } \]]{lang="EN-US"}]{#struct_0_x1289_x1771_x1074708621}
+**[display lldp tlv-config **[ **interface** *interface-type interface-number*  [ **agent** { **nearest-bridge** \| **nearest-customer** \| **nearest-nontpmr** } ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_542738383}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1579712723}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_37232089}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_585418935}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1289_x1771_828982312}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_x1014882970}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1289_x1771_x1692737934}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_189487475}
+【参数】
 
-[**[interface ]{lang="EN-US"}***[interface-type interface-number]{lang="EN-US"}*]{#struct_0_x1289_x1771_792734228}[：显示指定接口上可发送的可选]{style="font-family:宋体"}[TLV]{lang="EN-US"}[信息，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[表示接口类型和接口编号。如果未指定该参数，将显示所有接口上可发送的可选]{style="font-family:
-宋体"}[TLV]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[interface ***interface-type interface-number*]：显示指定接口上可发送的可选TLV信息，*interface-type interface-number*表示接口类型和接口编号。如果未指定该参数，将显示所有接口上可发送的可选TLV信息。
 
-[**[agent]{lang="EN-US"}**]{#struct_0_x1289_x1771_1820197687}[：显示指定类型]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[代理的可选]{style="font-family:宋体"}[TLV]{lang="EN-US"}[信息。如果未指定该参数，将显示所有类型]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[代理的可选]{style="font-family:宋体"}[TLV]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[agent**]：显示指定类型LLDP代理的可选TLV信息。如果未指定该参数，将显示所有类型LLDP代理的可选TLV信息。
 
-[**[nearest-bridge]{lang="EN-US"}**]{#struct_0_x1289_x1771_110346014}[：表示最近桥代理。]{style="font-family:宋体"}
+**[nearest-bridge**]：表示最近桥代理。
 
-[**[nearest-customer]{lang="EN-US"}**]{#struct_0_x1289_x1771_x2049563806}[：表示最近客户桥代理。]{style="font-family:宋体"}
+**[nearest-customer**]：表示最近客户桥代理。
 
-[**[nearest-nontpmr]{lang="EN-US"}**]{#struct_0_x1289_x1771_827126612}[：表示最近非]{style="font-family:宋体"}[TPMR]{lang="EN-US"}[桥代理。]{style="font-family:宋体"}
+**[nearest-nontpmr**]：表示最近非TPMR桥代理。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1695091318}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_188897652}[显示接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上可发送的可选]{style="font-family:宋体"}[TLV]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+\# 显示接口GigabitEthernet1/0/1上可发送的可选TLV信息。
 
-[[\<Sysname\> display lldp tlv-config interface gigabitethernet 1/0/1]{lang="EN-US"}]{#struct_0_x1289_x1771_188766580}
+\<Sysname\> display lldp tlv-config interface gigabitethernet 1/0/1
 
-[LLDP tlv-config of port 1\[GigabitEthernet1/0/1\]:]{lang="EN-US"}
+LLDP tlv-config of port 1[GigabitEthernet1/0/1:]
 
-[LLDP agent nearest-bridge:]{lang="EN-US"}
+LLDP agent nearest-bridge:
 
-[NAME                              STATUS    DEFAULT]{lang="EN-US"}
+NAME                              STATUS    DEFAULT
 
-[Basic optional TLV:]{lang="EN-US"}
+Basic optional TLV:
 
-[ Port Description TLV             YES       YES]{lang="EN-US"}
+ Port Description TLV             YES       YES
 
-[ System Name TLV                  YES       YES]{lang="EN-US"}
+ System Name TLV                  YES       YES
 
-[ System Description TLV           YES       YES]{lang="EN-US"}
+ System Description TLV           YES       YES
 
-[ System Capabilities TLV          YES       YES]{lang="EN-US"}
+ System Capabilities TLV          YES       YES
 
-[ Management Address TLV           YES       YES]{lang="EN-US"}
+ Management Address TLV           YES       YES
 
-[IEEE 802.1 extend TLV:]{lang="EN-US"}
+IEEE 802.1 extend TLV:
 
-[ Port VLAN ID TLV                 YES       YES]{lang="EN-US"}
+ Port VLAN ID TLV                 YES       YES
 
-[ Port And Protocol VLAN ID TLV    YES       YES]{lang="EN-US"}
+ Port And Protocol VLAN ID TLV    YES       YES
 
-[ VLAN Name TLV                    YES       YES]{lang="EN-US"}
+ VLAN Name TLV                    YES       YES
 
-[ DCBX TLV                         NO        NO]{lang="EN-US"}
+ DCBX TLV                         NO        NO
 
-[ EVB TLV                          NO        NO]{lang="EN-US"}
+ EVB TLV                          NO        NO
 
-[ Link Aggregation TLV             YES       YES]{lang="EN-US"}
+ Link Aggregation TLV             YES       YES
 
-[ Management VID TLV               YES       YES]{lang="EN-US"}
+ Management VID TLV               YES       YES
 
-[ Congestion notification TLV      NO        NO]{lang="EN-US"}
+ Congestion notification TLV      NO        NO
 
-[IEEE 802.3 extend TLV:]{lang="EN-US"}
+IEEE 802.3 extend TLV:
 
-[ MAC-Physic TLV                   YES       YES]{lang="EN-US"}
+ MAC-Physic TLV                   YES       YES
 
-[ Power via MDI TLV                YES       YES]{lang="EN-US"}
+ Power via MDI TLV                YES       YES
 
-[ Maximum Frame Size TLV           YES       YES]{lang="EN-US"}
+ Maximum Frame Size TLV           YES       YES
 
-[ Energy-Efficient Ethernet TLV    NO        NO]{lang="EN-US"}
+ Energy-Efficient Ethernet TLV    NO        NO
 
-[LLDP-MED extend TLV:]{lang="EN-US"}
+LLDP-MED extend TLV:
 
-[ Capabilities TLV                 YES        YES]{lang="EN-US"}
+ Capabilities TLV                 YES        YES
 
-[ Network Policy TLV               YES        YES]{lang="EN-US"}
+ Network Policy TLV               YES        YES
 
-[ Location Identification TLV      NO         NO]{lang="EN-US"}
+ Location Identification TLV      NO         NO
 
-[ Extended Power via MDI TLV       YES        YES]{lang="EN-US"}
+ Extended Power via MDI TLV       YES        YES
 
-[ Inventory TLV                    YES        YES]{lang="EN-US"}
+ Inventory TLV                    YES        YES
 
-[LLDP agent nearest-nontpmr:]{lang="EN-US"}
+LLDP agent nearest-nontpmr:
 
-[NAME                              STATUS    DEFAULT]{lang="EN-US"}
+NAME                              STATUS    DEFAULT
 
-[Basic optional TLV:]{lang="EN-US"}
+Basic optional TLV:
 
-[ Port Description TLV             YES       NO]{lang="EN-US"}
+ Port Description TLV             YES       NO
 
-[ System Name TLV                  YES       NO]{lang="EN-US"}
+ System Name TLV                  YES       NO
 
-[ System Description TLV           YES       NO]{lang="EN-US"}
+ System Description TLV           YES       NO
 
-[ System Capabilities TLV          YES       NO]{lang="EN-US"}
+ System Capabilities TLV          YES       NO
 
-[ Management Address TLV           YES       NO]{lang="EN-US"}
+ Management Address TLV           YES       NO
 
-[IEEE 802.1 extend TLV:]{lang="EN-US"}
+IEEE 802.1 extend TLV:
 
-[ Port VLAN ID TLV                 YES       NO]{lang="EN-US"}
+ Port VLAN ID TLV                 YES       NO
 
-[ Port And Protocol VLAN ID TLV    YES       NO]{lang="EN-US"}
+ Port And Protocol VLAN ID TLV    YES       NO
 
-[ VLAN Name TLV                    YES       NO]{lang="EN-US"}
+ VLAN Name TLV                    YES       NO
 
-[ DCBX TLV                         NO        NO]{lang="EN-US"}
+ DCBX TLV                         NO        NO
 
-[ EVB TLV                          YES       YES]{lang="EN-US"}
+ EVB TLV                          YES       YES
 
-[ Link Aggregation TLV             YES       NO]{lang="EN-US"}
+ Link Aggregation TLV             YES       NO
 
-[ Management VID TLV               NO        NO]{lang="EN-US"}
+ Management VID TLV               NO        NO
 
-[IEEE 802.3 extend TLV:]{lang="EN-US"}
+IEEE 802.3 extend TLV:
 
-[ MAC-Physic TLV                   YES       NO]{lang="EN-US"}
+ MAC-Physic TLV                   YES       NO
 
-[ Power via MDI TLV                YES       NO]{lang="EN-US"}
+ Power via MDI TLV                YES       NO
 
-[ Maximum Frame Size TLV           YES       NO]{lang="EN-US"}
+ Maximum Frame Size TLV           YES       NO
 
-[ Energy-Efficient Ethernet TLV    NO        NO]{lang="EN-US"}
+ Energy-Efficient Ethernet TLV    NO        NO
 
-[LLDP-MED extend TLV:]{lang="EN-US"}
+LLDP-MED extend TLV:
 
-[ Capabilities TLV                 YES        NO]{lang="EN-US"}
+ Capabilities TLV                 YES        NO
 
-[ Network Policy TLV               YES        NO]{lang="EN-US"}
+ Network Policy TLV               YES        NO
 
-[ Location Identification TLV      NO         NO]{lang="EN-US"}
+ Location Identification TLV      NO         NO
 
-[ Extended Power via MDI TLV       YES        NO]{lang="EN-US"}
+ Extended Power via MDI TLV       YES        NO
 
-[ Inventory TLV                    YES        NO]{lang="EN-US"}
+ Inventory TLV                    YES        NO
 
-[ ]{lang="EN-US"}
+LLDP agent nearest-customer:
 
-[LLDP agent nearest-customer:]{lang="EN-US"}
+NAME                              STATUS    DEFAULT
 
-[NAME                              STATUS    DEFAULT]{lang="EN-US"}
+Basic optional TLV:
 
-[Basic optional TLV:]{lang="EN-US"}
+ Port Description TLV             YES       YES
 
-[ Port Description TLV             YES       YES]{lang="EN-US"}
+ System Name TLV                  YES       YES
 
-[ System Name TLV                  YES       YES]{lang="EN-US"}
+ System Description TLV           YES       YES
 
-[ System Description TLV           YES       YES]{lang="EN-US"}
+ System Capabilities TLV          YES       YES
 
-[ System Capabilities TLV          YES       YES]{lang="EN-US"}
+ Management Address TLV           YES       YES
 
-[ Management Address TLV           YES       YES]{lang="EN-US"}
+IEEE 802.1 extend TLV:
 
-[IEEE 802.1 extend TLV:]{lang="EN-US"}
+ Port VLAN ID TLV                 YES       YES
 
-[ Port VLAN ID TLV                 YES       YES]{lang="EN-US"}
+ Port And Protocol VLAN ID TLV    YES       YES
 
-[ Port And Protocol VLAN ID TLV    YES       YES]{lang="EN-US"}
+ VLAN Name TLV                    YES       YES
 
-[ VLAN Name TLV                    YES       YES]{lang="EN-US"}
+ DCBX TLV                         NO        NO
 
-[ DCBX TLV                         NO        NO]{lang="EN-US"}
+ EVB TLV                          NO        NO
 
-[ EVB TLV                          NO        NO]{lang="EN-US"}
+ Link Aggregation TLV             YES       NO
 
-[ Link Aggregation TLV             YES       NO]{lang="EN-US"}
+ Management VID TLV               YES       YES
 
-[ Management VID TLV               YES       YES]{lang="EN-US"}
+IEEE 802.3 extend TLV:
 
-[IEEE 802.3 extend TLV:]{lang="EN-US"}
+ MAC-Physic TLV                   YES       NO
 
-[ MAC-Physic TLV                   YES       NO]{lang="EN-US"}
+ Power via MDI TLV                YES       NO
 
-[ Power via MDI TLV                YES       NO]{lang="EN-US"}
+ Maximum Frame Size TLV           YES       NO
 
-[ Maximum Frame Size TLV           YES       NO]{lang="EN-US"}
+ Energy-Efficient Ethernet TLV    NO        NO
 
-[ Energy-Efficient Ethernet TLV    NO        NO]{lang="EN-US"}
+LLDP-MED extend TLV:
 
-[LLDP-MED extend TLV:]{lang="EN-US"}
+ Capabilities TLV                 YES        YES
 
-[ Capabilities TLV                 YES        YES]{lang="EN-US"}
+ Network Policy TLV               YES        YES
 
-[ Network Policy TLV               YES        YES]{lang="EN-US"}
+ Location Identification TLV      NO         NO
 
-[ Location Identification TLV      NO         NO]{lang="EN-US"}
+ Extended Power via MDI TLV       YES        NO
 
-[ Extended Power via MDI TLV       YES        NO]{lang="EN-US"}
+ Inventory TLV                    YES        YES
 
-[ Inventory TLV                    YES        YES]{lang="EN-US"}
+![说明](LLDP命令.files/image001.png)
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](LLDP命令.files/image001.png){#图片 1 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1289_x1771_x859254117}
-:::
+本命令的显示信息与设备的型号有关，请以设备的实际情况为准。
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的显示信息与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1289_x1771_x1791352966}
-:::
+表1-5 display lldp tlv-config命令显示信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表1-5 ]{lang="EN-US"}[display lldp tlv-config]{lang="EN-US"}]{#struct_0_x1289_x1771_188832116}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_180291758}[[字段]{style="font-family:黑体"}]{#struct_0_x1289_x1771_382069806}
-:::::
+LLDP agent nearest-bridge
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1289_x1771_46518398}
+LLDP 缺省代理，即最近桥代理
 
-[[LLDP agent nearest-bridge]{lang="EN-US"}]{#struct_0_x1289_x1771_955598054}
+LLDP agent nearest-customer
 
-[[LLDP ]{lang="EN-US"}]{#struct_0_x1289_x1771_x576240635}[缺省代理，即最近桥代理]{style="font-family:宋体"}
+LLDP最近客户桥代理
 
-[[LLDP agent nearest-customer]{lang="EN-US"}]{#struct_0_x1289_x1771_1375601115}
+LLDP agent nearest-nontpmr
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_189159796}[最近客户桥代理]{style="font-family:宋体"}
+LLDP最近非TPMR桥代理
 
-[[LLDP agent nearest-nontpmr]{lang="EN-US"}]{#struct_0_x1289_x1771_x819278689}
+LLDP tlv-config of port 1
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_x886671669}[最近非]{style="font-family:宋体"}[TPMR]{lang="EN-US"}[桥代理]{style="font-family:宋体"}
+端口1上可发送的可选TLV类型
 
-[[LLDP tlv-config of port 1]{lang="EN-US"}]{#struct_0_x1289_x1771_x1411466807}
+NAME
 
-[[端口]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_x1289_x1771_2102853677}[上可发送的可选]{style="font-family:宋体"}[TLV]{lang="EN-US"}[类型]{style="font-family:宋体"}
+TLV类型
 
-[[NAME]{lang="EN-US"}]{#struct_0_x1289_x1771_681091533}
+STATUS
 
-[[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_189225332}[类型]{style="font-family:宋体"}
+端口是否配置发布指定类型TLV
 
-[[STATUS]{lang="EN-US"}]{#struct_0_x1289_x1771_x1393034468}
+DEFAULT
 
-[[端口是否配置发布指定类型]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_966147946}
+端口发布指定类型TLV的缺省情况
 
-[[DEFAULT]{lang="EN-US"}]{#struct_0_x1289_x1771_583352496}
+Basic optional TLV
 
-[[端口发布指定类型]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_123613714}[的缺省情况]{style="font-family:宋体"}
+端口可以发送的基本TLV类型
 
-[[Basic optional TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_189028724}
+Port Description TLV
 
-[[端口可以发送的基本]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_1880214926}[类型]{style="font-family:宋体"}
+端口描述TLV
 
-[[Port Description TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_1350388254}
+System Name TLV
 
-[[端口描述]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x201799159}
+系统名称TLV
 
-[[System Name TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_189094260}
+System Description TLV
 
-[[系统名称]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_1492872784}
+系统描述TLV
 
-[[System Description TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x203854217}
+System Capabilities TLV
 
-[[系统描述]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x1999125423}
+系统能力集TLV
 
-[[System Capabilities TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_2011788306}
+Management Address TLV
 
-[[系统能力集]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_189421940}
+管理地址TLV
 
-[[Management Address TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_2028617596}
+Congestion notification TLV
 
-[[管理地址]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x583421185}
+拥塞通知TLV。本字段的支持情况与设备型号有关，请以设备的实际情况为准
 
-[[Congestion notification TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_1172213604}
+IEEE 802.1 extended TLV
 
-[[拥塞通知]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_1172148068}[。本字段的支持情况与设备型号有关，请以设备的实际情况为准]{style="font-family:宋体"}
+端口可发送的IEEE 802.1组织定义的TLV类型
 
-[[IEEE 802.1 extended TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x1334789748}
+Port VLAN ID TLV
 
-[[端口可发送的]{style="font-family:宋体"}[IEEE 802.1]{lang="EN-US"}]{#struct_0_x1289_x1771_189487476}[组织定义的]{style="font-family:宋体"}[TLV]{lang="EN-US"}[类型]{style="font-family:宋体"}
+端口VLAN ID TLV
 
-[[Port VLAN ID TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_792734231}
+Port And Protocol VLAN ID TLV
 
-[[端口]{style="font-family:宋体"}[VLAN ID TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x518454480}
+协议VLAN ID TLV
 
-[[Port And Protocol VLAN ID TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x1067080432}
+VLAN Name TLV
 
-[[协议]{style="font-family:宋体"}[VLAN ID TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_188897649}
+VLAN名称TLV
 
-[[VLAN Name TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_1138570}
+DCBX TLV
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1289_x1771_x1590098597}[名称]{style="font-family:宋体"}[TLV]{lang="EN-US"}
+DCBX（Data Center Bridging Exchange Protocol，数据中心桥能力交换协议） TLV。本字段的支持情况与设备型号有关，请以设备的实际情况为准
 
-[[DCBX TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_1770903029}
+EVB TLV
 
-[[DCBX]{lang="EN-US"}]{#struct_0_x1289_x1771_188963185}[（]{style="font-family:宋体"}[Data Center Bridging Exchange Protocol]{lang="EN-US"}[，数据中心桥能力交换协议）]{style="font-family:宋体"}[ TLV]{lang="EN-US"}[。本字段的支持情况与设备型号有关，请以设备的实际情况为准]{style="font-family:宋体"}
+EVB（Edge Virtual Bridging，边缘虚拟桥接）模块TLV。本字段的支持情况与设备型号有关，请以设备的实际情况为准
 
-[[EVB TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_358935494}
+Management VID TLV
 
-[[EVB]{lang="EN-US"}]{#struct_0_x1289_x1771_923615478}[（]{style="font-family:宋体"}[Edge Virtual Bridging]{lang="EN-US"}[，边缘虚拟桥接）模块]{style="font-family:宋体"}[TLV]{lang="EN-US"}[。本字段的支持情况与设备型号有关，请以设备的实际情况为准]{style="font-family:宋体"}
+管理VLAN TLV
 
-[[Management VID TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x2007736160}
+IEEE 802.3 extended TLV
 
-[[管理]{style="font-family:宋体"}[VLAN TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_188766577}
+端口可发送的IEEE 802.3组织定义的TLV类型
 
-[[IEEE 802.3 extended TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_1355595312}
+MAC-Physic TLV
 
-[[端口可发送的]{style="font-family:宋体"}[IEEE 802.3]{lang="EN-US"}]{#struct_0_x1289_x1771_x1576608408}[组织定义的]{style="font-family:宋体"}[TLV]{lang="EN-US"}[类型]{style="font-family:宋体"}
+端口物理属性TLV
 
-[[MAC-Physic TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_188832113}
+Power via MDI TLV
 
-[[端口物理属性]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_382069811}
+供电能力TLV
 
-[[Power via MDI TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x1909796745}
+Link Aggregation TLV
 
-[[供电能力]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_818311324}
+链路聚合TLV
 
-[[Link Aggregation TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_189159793}
+Maximum Frame Size TLV
 
-[[链路聚合]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x819278684}
+最大帧长度TLV
 
-[[Maximum Frame Size TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x886475061}
+LLDP-MED extend TLV
 
-[[最大帧长度]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_189225329}
+LLDP-MED TLV
 
-[[LLDP-MED extend TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_563280661}
+Capabilities TLV
 
-[[LLDP-MED TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x1232529031}
+MED能力集TLV
 
-[[Capabilities TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_1715292162}
+Network Policy TLV
 
-[[MED]{lang="EN-US"}]{#struct_0_x1289_x1771_189028721}[能力集]{style="font-family:宋体"}[TLV]{lang="EN-US"}
+网络策略TLV
 
-[[Network Policy TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_1880214921}
+Location Identification TLV
 
-[[网络策略]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_1350584862}
+位置标识TLV
 
-[[Location Identification TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_189094257}
+Extended Power via MDI TLV
 
-[[位置标识]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x81105325}
+扩展供电能力TLV
 
-[[Extended Power via MDI TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x1474726941}
+Inventory TLV
 
-[[扩展供电能力]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_189421937}
+资产信息TLV，包括以下几种：
 
-[[Inventory TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x1074708611}
+·Hardware Revision TLV：终端设备硬件版本
 
-[[资产信息]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_542803919}[，包括以下几种：]{style="font-family:宋体"}
+·Firmware Revision TLV：终端设备固件版本
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Hardware Revision TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_189487473}[：终端设备硬件版本]{lang="EN-US" style="font-family:
-  宋体"}
+·Software Revision TLV：终端设备软件版本
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Firmware Revision TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_792734226}[：终端设备固件版本]{lang="EN-US" style="font-family:
-  宋体"}
+·Serial Number TLV：终端设备序列号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Software Revision TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_1820197681}[：终端设备软件版本]{lang="EN-US" style="font-family:
-  宋体"}
+·Manufacturer Name TLV：终端设备的制造厂商名称
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Serial Number TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_188897650}[：终端设备序列号]{lang="EN-US" style="font-family:
-  宋体"}
+·Model name TLV：终端设备的模块名称
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Manufacturer Name TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x1955176575}[：终端设备的制造厂商名称]{lang="EN-US" style="font-family:
-  宋体"}
+·Asset ID TLV：终端设备的资产标识符，以便目录管理和资产跟踪
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Model name TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_1223962425}[：终端设备的模块名称]{lang="EN-US" style="font-family:宋体"}
+Energy-Efficient Ethernet TLV
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Asset ID TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_188963186}[：终端设备的资产标识符，以便目录管理和资产跟踪]{style="font-family:宋体"}
-
-[[Energy-Efficient Ethernet TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x858664293}
-
-[[节能以太网]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x628023194}[。本字段的支持情况与设备型号有关，请以设备的实际情况为准]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::::: {#-71100106 .myid}
-[]{#_Toc404784697}[]{#struct_0_x1289_x1771_358935493}[]{#_Toc144347676}
+节能以太网TLV。本字段的支持情况与设备型号有关，请以设备的实际情况为准
 
 **LLDP \-- LLDP配置命令 \-- lldp admin-status**
 
 ------------------------------------------------------------------------
 
-[**[lldp admin-status]{lang="EN-US"}**]{#struct_0_x1289_x1771_923615483}[命令用来配置]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[的工作模式。]{style="font-family:宋体"}
+**[lldp admin-status**]命令用来配置LLDP的工作模式。
 
-[**[undo lldp admin-status]{lang="EN-US"}**]{#struct_0_x1289_x1771_1567187095}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo lldp admin-status**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1598194656}
+【命令】
 
-[[在二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1289_x1771_1080830716}[三层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图下：]{style="font-family:宋体"}
+在二层以太网接口视图/三层以太网接口视图/管理以太网接口视图下：
 
-[**[lldp ]{lang="EN-US"}**[\[ **agent** { **nearest-customer** \| **nearest-nontpmr** } \] **admin-status** { **disable** \| **rx** \| **tx** \| **txrx** }]{lang="EN-US"}]{#struct_0_x1289_x1771_x1100777879}
+**[lldp **[[ **agent** { **nearest-customer** \| **nearest-nontpmr** } ] **admin-status** { **disable** \| **rx** \| **tx** \| **txrx** }]]
 
-[**[undo lldp ]{lang="EN-US"}**[\[ **agent** { **nearest-customer** \| **nearest-nontpmr** } \] **admin-status**]{lang="EN-US"}]{#struct_0_x1289_x1771_188766578}
+**[undo lldp **[[ **agent** { **nearest-customer** \| **nearest-nontpmr** } ] **admin-status**]]
 
-[[在二层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1289_x1771_1355595327}[三层聚合接口视图下：]{style="font-family:宋体"}
+在二层聚合接口视图/三层聚合接口视图下：
 
-[**[lldp agent ]{lang="EN-US"}**[{ **nearest-customer** \| **nearest-nontpmr** } **admin-status** { **disable** \| **rx** \| **tx** \| **txrx** }]{lang="EN-US"}]{#struct_0_x1289_x1771_x1576936091}
+**[lldp agent **[{ **nearest-customer** \| **nearest-nontpmr** } **admin-status** { **disable** \| **rx** \| **tx** \| **txrx** }]]
 
-[**[undo lldp agent ]{lang="EN-US"}**[{ **nearest-customer** \| **nearest-nontpmr** } **admin-status**]{lang="EN-US"}]{#struct_0_x1289_x1771_10665185}
+**[undo lldp agent **[{ **nearest-customer** \| **nearest-nontpmr** } **admin-status**]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1755619124}
+【缺省情况】
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_453006601}[最近桥代理的工作模式为]{style="font-family:宋体"}[TxRx]{lang="EN-US"}[，既发送也接收]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文。其他类型的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[代理的工作模式为]{style="font-family:宋体"}[Disable]{lang="EN-US"}[，即不发送也不接收]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+LLDP最近桥代理的工作模式为TxRx，既发送也接收LLDP报文。其他类型的LLDP代理的工作模式为Disable，即不发送也不接收LLDP报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1172039968}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1289_x1771_1669320389}[二层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图/三层以太网接口视图/三层聚合接口视图/管理以太网接口视图
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](LLDP命令.files/image001.png){#图片 2 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1289_x1771_x1586736154}
-:::
+![说明](LLDP命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[不同型号的设备支持的视图不同，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1289_x1771_188832114}
-:::
+不同型号的设备支持的视图不同，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_382069804}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_46518396}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_2102609126}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_641478940}
+**[agent**]：配置指定类型LLDP代理的工作模式。在以太网接口视图/管理以太网接口视图下，未指定时表示配置最近桥代理的工作模式。
 
-[**[agent]{lang="EN-US"}**]{#struct_0_x1289_x1771_x619833642}[：配置指定类型]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[代理的工作模式。在以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图下，未指定时表示配置最近桥代理的工作模式。]{style="font-family:宋体"}
+**[nearest-customer**]：表示最近客户桥代理。
 
-[**[nearest-customer]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1755876021}[：表示最近客户桥代理。]{style="font-family:宋体"}
+**[nearest-nontpmr**]：表示最近非TPMR桥代理。
 
-[**[nearest-nontpmr]{lang="EN-US"}**]{#struct_0_x1289_x1771_x823101522}[：表示最近非]{style="font-family:宋体"}[TPMR]{lang="EN-US"}[桥代理。]{style="font-family:宋体"}
+**[disable**]：表示工作模式为Disable，既不发送也不接收LLDP报文。
 
-[**[disable]{lang="EN-US"}**]{#struct_0_x1289_x1771_189159794}[：表示工作模式为]{style="font-family:宋体"}[Disable]{lang="EN-US"}[，既不发送也不接收]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+**[rx**]：表示工作模式为Rx，只接收不发送LLDP报文。
 
-[**[rx]{lang="EN-US"}**]{#struct_0_x1289_x1771_x819278687}[：表示工作模式为]{style="font-family:宋体"}[Rx]{lang="EN-US"}[，只接收不发送]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+**[tx**]：表示工作模式为Tx，只发送不接收LLDP报文。
 
-[**[tx]{lang="EN-US"}**]{#struct_0_x1289_x1771_x886540597}[：表示工作模式为]{style="font-family:宋体"}[Tx]{lang="EN-US"}[，只发送不接收]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+**[txrx**]：表示工作模式为TxRx，既发送也接收LLDP报文。
 
-[**[txrx]{lang="EN-US"}**]{#struct_0_x1289_x1771_2108900564}[：表示工作模式为]{style="font-family:宋体"}[TxRx]{lang="EN-US"}[，既发送也接收]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x2074536422}
+\# 配置接口GigabitEthernet1/0/1上最近客户桥代理LLDP的工作模式为Rx。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_x385803475}[配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上最近客户桥代理]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[的工作模式为]{style="font-family:宋体"}[Rx]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_1011929296}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
-
-[\[Sysname-GigabitEthernet1/0/1\] lldp agent nearest-customer admin-status rx]{lang="EN-US"}
-:::::
-
-::::: {#1145925097 .myid}
-[]{#_Toc404784698}[]{#struct_0_x1289_x1771_189225330}[]{#_Toc144347677}[]{#_Toc345180593}[]{#_Toc345180594}[]{#_Toc345180595}[]{#_Toc345180596}[]{#_Toc345180597}[]{#_Toc345180598}[]{#_Toc345180599}[]{#_Toc345180600}[]{#_Toc345180601}[]{#_Toc345180602}[]{#_Toc345180603}[]{#_Toc345180604}[]{#_Toc345180605}[]{#_Toc345180606}[]{#_Toc345180607}[]{#_Toc345180608}[]{#_Toc345180609}[]{#_Toc345180610}[]{#_Toc345180611}[]{#_Toc345180612}[]{#_Toc345180613}[]{#_Toc345180614}[]{#_Toc345180615}
+Sysname-GigabitEthernet1/0/1 lldp agent nearest-customer admin-status rx
 
 **LLDP \-- LLDP配置命令 \-- lldp check-change-interval**
 
 ------------------------------------------------------------------------
 
-[**[lldp check-change-interval]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1393034466}[命令用来开启轮询功能并配置轮询间隔。]{style="font-family:
-宋体"}
+**[lldp check-change-interval**]命令用来开启轮询功能并配置轮询间隔。
 
-[**[undo lldp check-change-interval]{lang="EN-US"}**]{#struct_0_x1289_x1771_515809252}[命令用来关闭轮询功能。]{style="font-family:宋体"}
+**[undo lldp check-change-interval**]命令用来关闭轮询功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1774070489}
+【命令】
 
-[[在二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1289_x1771_555955454}[三层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图下：]{style="font-family:宋体"}
+在二层以太网接口视图/三层以太网接口视图/管理以太网接口视图下：
 
-[**[lldp ]{lang="EN-US"}**[\[ **agent** { **nearest-customer** \| **nearest-nontpmr** } \] **check-change-interval** *interval*]{lang="EN-US"}]{#struct_0_x1289_x1771_753418761}
+**[lldp **[[ **agent** { **nearest-customer** \| **nearest-nontpmr** } ] **check-change-interval** *interval*]]
 
-[**[undo lldp ]{lang="EN-US"}**[\[ **agent** { **nearest-customer** \| **nearest-nontpmr** } \] **check-change-interval**]{lang="EN-US"}]{#struct_0_x1289_x1771_1281662371}
+**[undo lldp **[[ **agent** { **nearest-customer** \| **nearest-nontpmr** } ] **check-change-interval**]]
 
-[[在二层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1289_x1771_x473461261}[三层聚合接口视图下：]{style="font-family:宋体"}
+在二层聚合接口视图/三层聚合接口视图下：
 
-[**[lldp agent ]{lang="EN-US"}**[{ **nearest-customer** \| **nearest-nontpmr** } **check-change-interval** *interval*]{lang="EN-US"}]{#struct_0_x1289_x1771_1865846250}
+**[lldp agent **[{ **nearest-customer** \| **nearest-nontpmr** } **check-change-interval** *interval*]]
 
-[**[undo lldp agent ]{lang="EN-US"}**[{ **nearest-customer** \| **nearest-nontpmr** } **check-change-interval**]{lang="EN-US"}]{#struct_0_x1289_x1771_189028722}
+**[undo lldp agent **[{ **nearest-customer** \| **nearest-nontpmr** } **check-change-interval**]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1880214920}
+【缺省情况】
 
-[[轮询功能处于关闭状态。]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1350519326}
+轮询功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x581741399}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1289_x1771_x1216693842}[二层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图/三层以太网接口视图/三层聚合接口视图/管理以太网接口视图
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](LLDP命令.files/image001.png){#图片 3 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1289_x1771_173961724}
-:::
+![说明](LLDP命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[不同型号的设备支持的视图不同，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1289_x1771_x1491028221}
-:::
+不同型号的设备支持的视图不同，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1952696599}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_189094258}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_x81105320}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1474726936}
+**[agent**]：配置指定类型LLDP代理的轮询功能。在以太网接口视图/管理以太网接口视图下，未指定时表示配置最近桥代理的轮询功能。
 
-[**[agent]{lang="EN-US"}**]{#struct_0_x1289_x1771_2005392461}[：配置指定类型]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[代理的轮询功能。在以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图下，未指定时表示配置最近桥代理的轮询功能。]{style="font-family:宋体"}
+**[nearest-customer**]：表示最近客户桥代理。
 
-[**[nearest-customer]{lang="EN-US"}**]{#struct_0_x1289_x1771_356724110}[：表示最近客户桥代理。]{style="font-family:宋体"}
+**[nearest-nontpmr**]：表示最近非TPMR桥代理。
 
-[**[nearest-nontpmr]{lang="EN-US"}**]{#struct_0_x1289_x1771_95403938}[：表示最近非]{style="font-family:宋体"}[TPMR]{lang="EN-US"}[桥代理。]{style="font-family:宋体"}
+*[interval*]：表示轮询间隔，取值范围为1～30，单位为秒。
 
-[*[interval]{lang="EN-US"}*]{#struct_0_x1289_x1771_x1491419031}[：表示轮询间隔，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[30]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1761763026}
+\# 在接口GigabitEthernet1/0/1的最近客户桥代理上开启轮询功能，并配置轮询间隔为30秒。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_189421938}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的最近客户桥代理上开启轮询功能，并配置轮询间隔为]{style="font-family:宋体"}[30]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_x1074708620}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
-
-[\[Sysname-GigabitEthernet1/0/1\] lldp agent nearest-customer check-change-interval 30]{lang="EN-US"}
-:::::
-
-::::::: {#-738009646 .myid}
-[]{#_Toc144347678}[]{#_Toc404784699}[]{#struct_0_x1289_x1771_2108822324}
+Sysname-GigabitEthernet1/0/1 lldp agent nearest-customer check-change-interval 30
 
 **LLDP \-- LLDP配置命令 \-- lldp compliance admin-status cdp**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](LLDP命令.files/image001.png){#图片 4 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1289_x1771_1443769645}
-:::
+![说明](LLDP命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1289_x1771_x1166779156}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[lldp compliance admin-status cdp**]命令用来配置LLDP兼容CDP功能的工作模式。
 
-[**[lldp compliance admin-status cdp]{lang="EN-US"}**]{#struct_0_x1289_x1771_1702757991}[命令用来配置]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[兼容]{style="font-family:宋体"}[CDP]{lang="EN-US"}[功能的工作模式。]{style="font-family:宋体"}
+**[undo lldp compliance admin-status cdp**]命令用来恢复缺省情况。
 
-[**[undo lldp compliance admin-status cdp]{lang="EN-US"}**]{#struct_0_x1289_x1771_x522616480}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1305876587}
+**[lldp compliance admin-status cdp**[ { **disable** \| **txrx** }]]
 
-[**[lldp compliance admin-status cdp]{lang="EN-US"}**[ { **disable** \| **txrx** }]{lang="EN-US"}]{#struct_0_x1289_x1771_189487474}
+**[undo lldp compliance admin-status cdp**]
 
-[**[undo lldp compliance admin-status cdp]{lang="EN-US"}**]{#struct_0_x1289_x1771_792734229}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1820197688}
+LLDP兼容CDP功能的工作模式为Disable，既不发送也不接收CDP报文。
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_109887262}[兼容]{style="font-family:宋体"}[CDP]{lang="EN-US"}[功能的工作模式为]{style="font-family:宋体"}[Disable]{lang="EN-US"}[，既不发送也不接收]{style="font-family:宋体"}[CDP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1904578959}
+二层以太网接口视图/三层以太网接口视图/管理以太网接口视图
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1289_x1771_1639443877}[三层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图]{style="font-family:宋体"}
+![说明](LLDP命令.files/image001.png)
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](LLDP命令.files/image001.png){#图片 5 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1289_x1771_x2089318096}
-:::
+不同型号的设备支持的视图不同，请以设备的实际情况为准。
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[不同型号的设备支持的视图不同，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1289_x1771_1134301713}
-:::
+【缺省用户角色】
 
-[ ]{lang="EN-US"}
+network-admin
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_2111211954}
+mdc-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_x975273020}
+【参数】
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_x49514890}
+**[disable**]：表示工作模式为Disable，既不发送也不接收CDP报文。
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_128090314}
+**[txrx**]：表示工作模式为TxRx，既发送也接收CDP报文。
 
-[**[disable]{lang="EN-US"}**]{#struct_0_x1289_x1771_1472659892}[：表示工作模式为]{style="font-family:宋体"}[Disable]{lang="EN-US"}[，既不发送也不接收]{style="font-family:宋体"}[CDP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+【使用指导】
 
-[**[txrx]{lang="EN-US"}**]{#struct_0_x1289_x1771_x418899111}[：表示工作模式为]{style="font-family:宋体"}[TxRx]{lang="EN-US"}[，既发送也接收]{style="font-family:宋体"}[CDP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+欲使LLDP兼容CDP的功能生效，必须先开启LLDP兼容CDP功能，同时将LLDP兼容CDP功能的工作模式配置为TxRx。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1821180765}
+【举例】
 
-[[欲使]{style="font-family:宋体"}[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_2043163587}[兼容]{style="font-family:宋体"}[CDP]{lang="EN-US"}[的功能生效，必须先开启]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[兼容]{style="font-family:宋体"}[CDP]{lang="EN-US"}[功能，同时将]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[兼容]{style="font-family:宋体"}[CDP]{lang="EN-US"}[功能的工作模式配置为]{style="font-family:宋体"}[TxRx]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 开启LLDP兼容CDP功能，并在接口GigabitEthernet1/0/1上配置LLDP兼容CDP功能的工作模式为TxRx。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x79379871}
+\<Sysname\> system-view
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_2111277490}[开启]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[兼容]{style="font-family:宋体"}[CDP]{lang="EN-US"}[功能，并在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[兼容]{style="font-family:宋体"}[CDP]{lang="EN-US"}[功能的工作模式为]{style="font-family:宋体"}[TxRx]{lang="EN-US"}[。]{style="font-family:宋体"}
+Sysname lldp compliance cdp
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_x1008702202}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname\] lldp compliance cdp]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 lldp compliance admin-status cdp txrx
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+【相关命令】
 
-[\[Sysname-GigabitEthernet1/0/1\] lldp compliance admin-status cdp txrx]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1038911567}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[lldp compliance cdp]{lang="EN-US"}**]{#struct_0_x1289_x1771_720609115}
-:::::::
-
-::::: {#1415279429 .myid}
-[]{#_Toc404784700}[]{#struct_0_x1289_x1771_869433090}
+·**lldp compliance cdp**
 
 **LLDP \-- LLDP配置命令 \-- lldp compliance cdp**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](LLDP命令.files/image001.png){#图片 6 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1289_x1771_x62229866}
-:::
+![说明](LLDP命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1289_x1771_x1032608377}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[lldp compliance cdp**]命令用来开启LLDP兼容CDP功能。
 
-[**[lldp compliance cdp]{lang="EN-US"}**]{#struct_0_x1289_x1771_2111080882}[命令用来开启]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[兼容]{style="font-family:宋体"}[CDP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo lldp compliance cdp**]命令用来恢复缺省情况。
 
-[**[undo lldp compliance cdp]{lang="EN-US"}**]{#struct_0_x1289_x1771_x214042468}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_745072769}
+**[lldp compliance cdp**]
 
-[**[lldp compliance cdp]{lang="EN-US"}**]{#struct_0_x1289_x1771_1126554242}
+**[undo lldp compliance cdp**]
 
-[**[undo lldp compliance cdp]{lang="EN-US"}**]{#struct_0_x1289_x1771_2102616269}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1050738915}
+LLDP兼容CDP功能处于关闭状态。
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_1353369993}[兼容]{style="font-family:宋体"}[CDP]{lang="EN-US"}[功能处于关闭状态。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1048291990}
+系统视图
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1289_x1771_2111146418}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1722737016}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_357809890}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_11896748}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x949798369}
+由于CDP报文所携Time To Live TLV中TTL的最大值为255，而CDP报文的发送间隔由LLDP报文的发送间隔控制，因此为保证LLDP兼容CDP功能的正常运行，建议配置LLDP报文的发送间隔值不大于实际TTL的1/3。
 
-[[由于]{style="font-family:宋体"}[CDP]{lang="EN-US"}]{#struct_0_x1289_x1771_x220350905}[报文所携]{style="font-family:宋体"}[Time To Live TLV]{lang="EN-US"}[中]{style="font-family:宋体"}[TTL]{lang="EN-US"}[的最大值为]{style="font-family:宋体"}[255]{lang="EN-US"}[，而]{style="font-family:宋体"}[CDP]{lang="EN-US"}[报文的发送间隔由]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文的发送间隔控制，因此为保证]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[兼容]{style="font-family:宋体"}[CDP]{lang="EN-US"}[功能的正常运行，建议配置]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文的发送间隔值不大于实际]{style="font-family:宋体"}[TTL]{lang="EN-US"}[的]{style="font-family:宋体"}[1/3]{lang="EN-US"}[。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x172097289}
+\# 开启LLDP兼容CDP功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_1088178330}[开启]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[兼容]{style="font-family:宋体"}[CDP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_2111474098}
+Sysname lldp compliance cdp
 
-[\[Sysname\] lldp compliance cdp]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x646788211}
+·**lldp hold-multiplier**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[lldp hold-multiplier]{lang="EN-US"}**]{#struct_0_x1289_x1771_x20072889}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[lldp timer tx-interval]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1860135322}
-:::::
-
-::::: {#-928948148 .myid}
-[]{#_Toc404784701}[]{#struct_0_x1289_x1771_x763475090}
+·**lldp timer tx-interval**
 
 **LLDP \-- LLDP配置命令 \-- lldp enable**
 
 ------------------------------------------------------------------------
 
-[**[lldp enable]{lang="EN-US"}**]{#struct_0_x1289_x1771_x236361645}[命令用来在接口上开启]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[lldp enable**]命令用来在接口上开启LLDP功能。
 
-[**[undo lldp enable]{lang="EN-US"}**]{#struct_0_x1289_x1771_x449745509}[命令用来在接口上关闭]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo lldp enable**]命令用来在接口上关闭LLDP功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1902136416}
+【命令】
 
-[**[lldp enable]{lang="EN-US"}**]{#struct_0_x1289_x1771_1898172341}
+**[lldp enable**]
 
-[**[undo lldp enable]{lang="EN-US"}**]{#struct_0_x1289_x1771_2111539634}
+**[undo lldp enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1424021247}
+【缺省情况】
 
-[[接口上的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_933592014}[功能处于开启状态。]{style="font-family:宋体"}
+接口上的LLDP功能处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x902876144}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1289_x1771_x785982696}[二层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图/三层以太网接口视图/三层聚合接口视图/管理以太网接口视图
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](LLDP命令.files/image001.png){#图片 7 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1289_x1771_x1603249121}
-:::
+![说明](LLDP命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[不同型号的设备支持的视图不同，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1289_x1771_x618236506}
-:::
+不同型号的设备支持的视图不同，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_176208688}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_2111343026}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_1726978610}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_823580559}
+只有当全局和接口上都开启了LLDP功能后，该功能才会生效。
 
-[[只有当全局和接口上都开启了]{style="font-family:宋体"}[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_x683612002}[功能后，该功能才会生效。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1467374581}
+\# 在接口GigabitEthernet1/0/1上关闭LLDP功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_x865917357}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上关闭]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_394875363}
+Sysname interface gigabitethernet 1/0/1
 
-[[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}]{#_Toc144348964}
+Sysname-GigabitEthernet1/0/1 undo lldp enable
 
-[\[Sysname-GigabitEthernet1/0/1\] undo lldp enable]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_988399323}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[lldp global enable]{lang="EN-US"}**]{#struct_0_x1289_x1771_2111408562}
-:::::
-
-::::: {#1250753595 .myid}
-[]{#_Toc404784702}[]{#struct_0_x1289_x1771_x1414488578}
+·**lldp global enable**
 
 **LLDP \-- LLDP配置命令 \-- lldp encapsulation snap**
 
 ------------------------------------------------------------------------
 
-[**[lldp encapsulation snap]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1463264558}[命令用来配置]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文的封装格式为]{style="font-family:宋体"}[SNAP]{lang="EN-US"}[格式。]{style="font-family:宋体"}
+**[lldp encapsulation snap**]命令用来配置LLDP报文的封装格式为SNAP格式。
 
-[**[undo lldp encapsulation]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1988451020}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo lldp encapsulation**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_821134379}
+【命令】
 
-[[在二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1289_x1771_x929709755}[三层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图下：]{style="font-family:宋体"}
+在二层以太网接口视图/三层以太网接口视图/管理以太网接口视图下：
 
-[**[lldp ]{lang="EN-US"}**[\[ **agent** { **nearest-customer** \| **nearest-nontpmr** } \] **encapsulation snap**]{lang="EN-US"}]{#struct_0_x1289_x1771_2007767787}
+**[lldp **[[ **agent** { **nearest-customer** \| **nearest-nontpmr** } ] **encapsulation snap**]]
 
-[**[undo lldp ]{lang="EN-US"}**[\[ **agent** { **nearest-customer** \| **nearest-nontpmr** } \] **encapsulation**]{lang="EN-US"}]{#struct_0_x1289_x1771_1434744083}
+**[undo lldp **[[ **agent** { **nearest-customer** \| **nearest-nontpmr** } ] **encapsulation**]]
 
-[[在二层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1289_x1771_2111736242}[三层聚合接口视图下：]{style="font-family:宋体"}
+在二层聚合接口视图/三层聚合接口视图下：
 
-[**[lldp agent ]{lang="EN-US"}**[{ **nearest-customer** \| **nearest-nontpmr** } **encapsulation snap**]{lang="EN-US"}]{#struct_0_x1289_x1771_x1419255361}
+**[lldp agent **[{ **nearest-customer** \| **nearest-nontpmr** } **encapsulation snap**]]
 
-[**[undo lldp agent ]{lang="EN-US"}**[{ **nearest-customer** \| **nearest-nontpmr** } **encapsulation**]{lang="EN-US"}]{#struct_0_x1289_x1771_648757197}
+**[undo lldp agent **[{ **nearest-customer** \| **nearest-nontpmr** } **encapsulation**]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_938593724}
+【缺省情况】
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_x1349716936}[报文的封装格式为]{style="font-family:宋体"}[Ethernet II]{lang="EN-US"}[格式。]{style="font-family:宋体"}
+LLDP报文的封装格式为Ethernet II格式。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1309140619}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1289_x1771_x1678331958}[二层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图/三层以太网接口视图/三层聚合接口视图/管理以太网接口视图
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](LLDP命令.files/image001.png){#图片 8 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1289_x1771_x1082402380}
-:::
+![说明](LLDP命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[不同型号的设备支持的视图不同，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1289_x1771_2111801778}
-:::
+不同型号的设备支持的视图不同，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_177308424}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_x2012215434}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_845150780}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1532562968}
+**[agent**]：配置指定类型LLDP代理的封装格式。在以太网接口视图/管理以太网接口视图下，未指定时表示配置最近桥代理的封装格式。
 
-[**[agent]{lang="EN-US"}**]{#struct_0_x1289_x1771_x2061697621}[：配置指定类型]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[代理的封装格式。在以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图下，未指定时表示配置最近桥代理的封装格式。]{style="font-family:宋体"}
+**[nearest-customer**]：表示最近客户桥代理。
 
-[**[nearest-customer]{lang="EN-US"}**]{#struct_0_x1289_x1771_1064176797}[：表示最近客户桥代理。]{style="font-family:宋体"}
+**[nearest-nontpmr**]：表示最近非TPMR桥代理。
 
-[**[nearest-nontpmr]{lang="EN-US"}**]{#struct_0_x1289_x1771_1042222920}[：表示最近非]{style="font-family:宋体"}[TPMR]{lang="EN-US"}[桥代理。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1200137504}
+·LLDP CDP报文的封装格式只能为SNAP格式，不能为Ethernet II格式。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LLDP CDP]{lang="EN-US"}]{#struct_0_x1289_x1771_2111211955}[报文的封装格式只能为]{lang="EN-US" style="font-family:宋体"}[SNAP]{lang="EN-US"}[格式，不能为]{lang="EN-US" style="font-family:宋体"}[Ethernet II]{lang="EN-US"}[格式。]{lang="EN-US" style="font-family:宋体"}
+·携带EVB模块TLV的LLDP报文不能通过SNAP格式封装和发送。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[携带]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x975338556}[EVB]{lang="EN-US"}[模块]{style="font-family:宋体"}[TLV]{lang="EN-US"}[的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文不能通过]{style="font-family:宋体"}[SNAP]{lang="EN-US"}[格式封装和发送。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x406954677}
+\# 配置接口GigabitEthernet1/0/1上发送的LLDP报文的封装格式为SNAP格式。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_x843398098}[配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上发送的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文的封装格式为]{style="font-family:宋体"}[SNAP]{lang="EN-US"}[格式。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_816494030}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
-
-[\[Sysname-GigabitEthernet1/0/1\] lldp encapsulation snap]{lang="EN-US"}
-:::::
-
-::: {#1385165723 .myid}
-[]{#_Toc404784703}[]{#struct_0_x1289_x1771_877883004}
+Sysname-GigabitEthernet1/0/1 lldp encapsulation snap
 
 **LLDP \-- LLDP配置命令 \-- lldp fast-count**
 
 ------------------------------------------------------------------------
 
-[**[lldp fast-count]{lang="EN-US"}**]{#struct_0_x1289_x1771_665341851}[命令用来配置快速发送]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文的个数。]{style="font-family:宋体"}
+**[lldp fast-count**]命令用来配置快速发送LLDP报文的个数。
 
-[**[undo lldp fast-count]{lang="EN-US"}**]{#struct_0_x1289_x1771_2111277491}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo lldp fast-count**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1008767738}
+【命令】
 
-[**[lldp fast-count ]{lang="EN-US"}***[count]{lang="EN-US"}*]{#struct_0_x1289_x1771_351491042}
+**[lldp fast-count ***count*]
 
-[**[undo lldp fast-count]{lang="EN-US"}**]{#struct_0_x1289_x1771_1558182809}
+**[undo lldp fast-count**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1442528187}
+【缺省情况】
 
-[[快速发送]{style="font-family:宋体"}[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_1562568723}[报文的个数为]{style="font-family:宋体"}[4]{lang="EN-US"}[个。]{style="font-family:宋体"}
+快速发送LLDP报文的个数为4个。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x6640046}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1435636975}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_767896476}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_2111080883}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_x213976932}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1043874761}
+【参数】
 
-[*[count]{lang="EN-US"}*]{#struct_0_x1289_x1771_420172165}[：表示快速发送]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文的个数，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[8]{lang="EN-US"}[，单位为个。]{style="font-family:宋体"}
+*[count*]：表示快速发送LLDP报文的个数，取值范围为1～8，单位为个。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1851423766}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_290297890}[配置快速发送]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文的个数为]{style="font-family:宋体"}[5]{lang="EN-US"}[个。]{style="font-family:宋体"}
+\# 配置快速发送LLDP报文的个数为5个。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_1170193144}
+\<Sysname\> system-view
 
-[\[Sysname\] lldp fast-count 5]{lang="EN-US"}
-:::
-
-::: {#1075645974 .myid}
-[]{#_Toc144363257}[]{#_Toc144348965}[]{#_Toc404784704}[]{#struct_0_x1289_x1771_450931079}
+Sysname lldp fast-count 5
 
 **LLDP \-- LLDP配置命令 \-- lldp global enable**
 
 ------------------------------------------------------------------------
 
-[**[lldp global enable]{lang="EN-US"}**]{#struct_0_x1289_x1771_2111146419}[命令用来全局开启]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[lldp global enable**]命令用来全局开启LLDP功能。
 
-[**[undo lldp global enable]{lang="EN-US"}**]{#struct_0_x1289_x1771_1722802552}[命令用来全局关闭]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo lldp global enable**]命令用来全局关闭LLDP功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1538923538}
+【命令】
 
-[**[lldp global enable]{lang="EN-US"}**]{#struct_0_x1289_x1771_1394051215}
+**[lldp global enable**]
 
-[**[undo lldp global enable]{lang="EN-US"}**]{#struct_0_x1289_x1771_387048465}
+**[undo lldp global enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1606025080}
+【缺省情况】
 
-[[本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_x1289_x1771_593521384}
+本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1013024528}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1289_x1771_895431449}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_2111474099}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_x646853747}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_28613938}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1367253372}
+【使用指导】
 
-[[只有当全局和接口上都开启了]{style="font-family:宋体"}[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_1015263712}[功能后，该功能才会生效。]{style="font-family:宋体"}
+只有当全局和接口上都开启了LLDP功能后，该功能才会生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1276880789}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_x254004217}[全局关闭]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 全局关闭LLDP功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_x2120933576}
+\<Sysname\> system-view
 
-[\[Sysname\] undo lldp global enable]{lang="EN-US"}
+Sysname undo lldp global enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_2111539635}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[lldp enable]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1424086783}
-:::
-
-::: {#1701684818 .myid}
-[]{#_Toc404784705}[]{#struct_0_x1289_x1771_258878103}
+·**lldp enable**
 
 **LLDP \-- LLDP配置命令 \-- lldp hold-multiplier**
 
 ------------------------------------------------------------------------
 
-[**[lldp hold-multiplier]{lang="EN-US"}**]{#struct_0_x1289_x1771_1328406383}[命令用来配置]{style="font-family:宋体"}[TTL]{lang="EN-US"}[乘数。]{style="font-family:宋体"}
+**[lldp hold-multiplier**]命令用来配置TTL乘数。
 
-[**[undo lldp hold-multiplier]{lang="EN-US"}**]{#struct_0_x1289_x1771_1014843950}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo lldp hold-multiplier**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1796954545}
+【命令】
 
-[**[lldp hold-multiplier ]{lang="EN-US"}***[value]{lang="EN-US"}*]{#struct_0_x1289_x1771_x1196569793}
+**[lldp hold-multiplier ***value*]
 
-[**[undo lldp hold-multiplier]{lang="EN-US"}**]{#struct_0_x1289_x1771_1462375736}
+**[undo lldp hold-multiplier**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_2111343027}
+【缺省情况】
 
-[[TTL]{lang="EN-US"}]{#struct_0_x1289_x1771_1727044146}[乘数为]{style="font-family:宋体"}[4]{lang="EN-US"}[。]{style="font-family:宋体"}
+TTL乘数为4。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x255958665}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1431922752}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x2121481653}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_307851746}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_1306817519}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1695448910}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_x1289_x1771_x806032757}[：表示]{style="font-family:宋体"}[TTL]{lang="EN-US"}[乘数，取值范围为]{style="font-family:宋体"}[2]{lang="EN-US"}[～]{style="font-family:宋体"}[10]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[value*]：表示TTL乘数，取值范围为2～10。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_2111408563}
+【使用指导】
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_2111736243}[报文所携]{style="font-family:宋体"}[Time To Live TLV]{lang="EN-US"}[中]{style="font-family:宋体"}[TTL]{lang="EN-US"}[的值用来设置邻居信息在本地设备上的老化时间，由于]{style="font-family:宋体"}[TTL]{lang="EN-US"}[＝]{style="font-family:宋体"}[Min]{lang="EN-US"}[（]{style="font-family:宋体"}[65535]{lang="EN-US"}[，（]{style="font-family:宋体"}[TTL]{lang="EN-US"}[乘数×]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文的发送间隔＋]{style="font-family:宋体"}[1]{lang="EN-US"}[）），即取]{style="font-family:宋体"}[65535]{lang="EN-US"}[与（]{style="font-family:宋体"}[TTL]{lang="EN-US"}[乘数×]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文的发送间隔＋]{style="font-family:宋体"}[1]{lang="EN-US"}[）中的最小值，因此通过调整]{style="font-family:宋体"}[TTL]{lang="EN-US"}[乘数可以控制本设备信息在邻居设备上的老化时间。]{style="font-family:宋体"}
+LLDP报文所携Time To Live TLV中TTL的值用来设置邻居信息在本地设备上的老化时间，由于TTL＝Min（65535，（TTL乘数×LLDP报文的发送间隔＋1）），即取65535与（TTL乘数×LLDP报文的发送间隔＋1）中的最小值，因此通过调整TTL乘数可以控制本设备信息在邻居设备上的老化时间。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1419320897}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_2111801779}[配置]{style="font-family:宋体"}[TTL]{lang="EN-US"}[乘数为]{style="font-family:宋体"}[6]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置TTL乘数为6。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_177373960}
+\<Sysname\> system-view
 
-[\[Sysname\] lldp hold-multiplier 6]{lang="EN-US"}
+Sysname lldp hold-multiplier 6
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1907890994}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[lldp timer tx-interval]{lang="EN-US"}**]{#struct_0_x1289_x1771_537862889}
-:::
-
-::: {#346521027 .myid}
-[]{#_Toc404784706}[]{#struct_0_x1289_x1771_x1402803866}[]{#_Toc385951286}[]{#_Toc385238235}
+·**lldp timer tx-interval**
 
 **LLDP \-- LLDP配置命令 \-- lldp management-address**
 
 ------------------------------------------------------------------------
 
-[**[lldp management-address]{lang="EN-US"}**]{#struct_0_x1289_x1771_1770551031}[命令用来配置接口收到]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文后下发]{style="font-family:宋体"}[ARP]{lang="EN-US"}[表项或]{style="font-family:宋体"}[ND]{lang="EN-US"}[表项。]{style="font-family:宋体"}
+**[lldp management-address**]命令用来配置接口收到LLDP报文后下发ARP表项或ND表项。
 
-[**[undo lldp management-address]{lang="EN-US"}**]{#struct_0_x1289_x1771_826654665}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo lldp management-address**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x403167059}
+【命令】
 
-[**[lldp management-address]{lang="EN-US"}**[ { **arp-learning** \| **nd-learning** } \[ **vlan** *vlan-id* \]]{lang="EN-US"}]{#struct_0_x1289_x1771_2124719149}
+**[lldp management-address**[ { **arp-learning** \| **nd-learning** } [ **vlan** *vlan-id* ]]]
 
-[**[undo lldp ]{lang="EN-US"}[management-address]{lang="EN-US"}**[ { **arp-learning** \| **nd-learning** }]{lang="EN-US"}]{#struct_0_x1289_x1771_619856055}
+**[undo lldp management-address**[ { **arp-learning** \| **nd-learning** }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_2135215666}
+【缺省情况】
 
-[[接口收到]{style="font-family:宋体"}[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_1967505739}[报文后不下发]{style="font-family:宋体"}[ARP]{lang="EN-US"}[表项和]{style="font-family:宋体"}[ND]{lang="EN-US"}[表项。]{style="font-family:宋体"}
+接口收到LLDP报文后不下发ARP表项和ND表项。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_2050005551}
+【视图】
 
-[[三层以太网接口视图]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1008259470}
+三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1402869402}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_x1230462399}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_1705823405}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1832079802}
+【参数】
 
-[**[arp-learning]{lang="EN-US"}**]{#struct_0_x1289_x1771_1775909470}[：表示接口收到携带]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[格式]{style="font-family:宋体"}[Management Address TLV]{lang="EN-US"}[的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文后，会下发该报文携带的管理地址与报文源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址组成的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[表项。]{style="font-family:宋体"}
+**[arp-learning**]：表示接口收到携带IPv4格式Management Address TLV的LLDP报文后，会下发该报文携带的管理地址与报文源MAC地址组成的ARP表项。
 
-[**[nd-learning]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1727325583}[：表示接口收到携带]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[格式]{style="font-family:宋体"}[Management Address TLV]{lang="EN-US"}[的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文后，会下发该报文携带的管理地址与报文源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址组成的]{style="font-family:宋体"}[ND]{lang="EN-US"}[表项。]{style="font-family:宋体"}
+**[nd-learning**]：表示接口收到携带IPv6格式Management Address TLV的LLDP报文后，会下发该报文携带的管理地址与报文源MAC地址组成的ND表项。
 
-[**[vlan]{lang="EN-US"}**[ *vlan-id*]{lang="EN-US"}]{#struct_0_x1289_x1771_302539672}[：指定]{style="font-family:宋体"}[Dot1q]{lang="EN-US"}[终结中三层以太网子接口关联的]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1\~4094]{lang="EN-US"}[。指定该参数后，下发]{style="font-family:宋体"}[ARP]{lang="EN-US"}[表项或]{style="font-family:宋体"}[ND]{lang="EN-US"}[表项到该]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[关联的三层以太网子接口；如果该]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[没有关联的三层以太网子接口，则将对应表项下发到当前接口。不指定该参数时表示将对应表项下发到当前接口。]{style="font-family:宋体"}
+**[vlan** *vlan-id*]：指定Dot1q终结中三层以太网子接口关联的VLAN ID，取值范围为1\~4094。指定该参数后，下发ARP表项或ND表项到该VLAN ID关联的三层以太网子接口；如果该VLAN ID没有关联的三层以太网子接口，则将对应表项下发到当前接口。不指定该参数时表示将对应表项下发到当前接口。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1880931899}
+【使用指导】
 
-[[ARP]{lang="EN-US"}]{#struct_0_x1289_x1771_792902999}[表项和]{style="font-family:宋体"}[ND]{lang="EN-US"}[表项下发互不影响，可同时配置。]{style="font-family:宋体"}
+ARP表项和ND表项下发互不影响，可同时配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x368364588}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_x735120553}[配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[收到携带]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[格式]{style="font-family:宋体"}[Management Address TLV]{lang="EN-US"}[的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文后，下发]{style="font-family:宋体"}[ARP]{lang="EN-US"}[表项到]{style="font-family:宋体"}[Dot1q]{lang="EN-US"}[终结中]{style="font-family:宋体"}[VLAN 4094]{lang="EN-US"}[关联的三层以太网子接口上。]{style="font-family:宋体"}
+\# 配置接口GigabitEthernet1/0/1收到携带IPv4格式Management Address TLV的LLDP报文后，下发ARP表项到Dot1q终结中VLAN 4094关联的三层以太网子接口上。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_x420617718}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] lldp management-address arp-learning vlan 4094]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 lldp management-address arp-learning vlan 4094
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1641909502}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[lldp source-mac vlan]{lang="EN-US"}**]{#struct_0_x1289_x1771_x772383711}
-:::
-
-::::: {#1441681564 .myid}
-[]{#_Toc144363258}[]{#_Toc144348966}[]{#_Toc404784707}[]{#struct_0_x1289_x1771_2126086120}
+·**lldp source-mac vlan**
 
 **LLDP \-- LLDP配置命令 \-- lldp management-address-format string**
 
 ------------------------------------------------------------------------
 
-[**[lldp management-address-format string]{lang="EN-US"}**]{#struct_0_x1289_x1771_924335659}[命令用来配置管理地址在]{style="font-family:宋体"}[TLV]{lang="EN-US"}[中的封装格式为字符串格式。]{style="font-family:宋体"}
+**[lldp management-address-format string**]命令用来配置管理地址在TLV中的封装格式为字符串格式。
 
-[**[undo lldp management-address-format]{lang="EN-US"}**]{#struct_0_x1289_x1771_x978082200}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo lldp management-address-format**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1898583343}
+【命令】
 
-[[在二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1289_x1771_2111211952}[三层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图下：]{style="font-family:宋体"}
+在二层以太网接口视图/三层以太网接口视图/管理以太网接口视图下：
 
-[**[lldp ]{lang="EN-US"}**[\[ **agent** { **nearest-customer** \| **nearest-nontpmr** } \] **management-address-format string**]{lang="EN-US"}]{#struct_0_x1289_x1771_x975404092}
+**[lldp **[[ **agent** { **nearest-customer** \| **nearest-nontpmr** } ] **management-address-format string**]]
 
-[**[undo lldp ]{lang="EN-US"}**[\[ **agent** { **nearest-customer** \| **nearest-nontpmr** } \] **management-address-format**]{lang="EN-US"}]{#struct_0_x1289_x1771_x452733710}
+**[undo lldp **[[ **agent** { **nearest-customer** \| **nearest-nontpmr** } ] **management-address-format**]]
 
-[[在二层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1289_x1771_x1765567268}[三层聚合接口视图下：]{style="font-family:宋体"}
+在二层聚合接口视图/三层聚合接口视图下：
 
-[**[lldp]{lang="EN-US"}[ agent ]{lang="EN-US"}**[{ **nearest-customer** \| **nearest-nontpmr** } **management-address-format string**]{lang="EN-US"}]{#struct_0_x1289_x1771_x474294620}
+**[lldp agent **[{ **nearest-customer** \| **nearest-nontpmr** } **management-address-format string**]]
 
-[**[undo lldp agent ]{lang="EN-US"}**[{ **nearest-customer** \| **nearest-nontpmr** } **management-address-format**]{lang="EN-US"}]{#struct_0_x1289_x1771_x1444752313}
+**[undo lldp agent **[{ **nearest-customer** \| **nearest-nontpmr** } **management-address-format**]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x539470284}
+【缺省情况】
 
-[[管理地址在]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x1739398502}[中的封装格式为数字格式。]{style="font-family:宋体"}
+管理地址在TLV中的封装格式为数字格式。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_2111277488}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1289_x1771_x1008177915}[二层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图/三层以太网接口视图/三层聚合接口视图/管理以太网接口视图
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](LLDP命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1289_x1771_x827054890}
-:::
+![说明](LLDP命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[不同型号的设备支持的视图不同，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1289_x1771_456470015}
-:::
+不同型号的设备支持的视图不同，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_983383858}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_806672507}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_162968658}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_937839215}
+**[agent**]：配置指定LLDP代理类型管理地址在TLV中的封装格式。在以太网接口视图/管理以太网接口视图下，未指定时表示配置最近桥代理的管理地址在TLV中的封装格式。
 
-[**[agent]{lang="EN-US"}**]{#struct_0_x1289_x1771_2111080880}[：配置指定]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[代理类型管理地址在]{style="font-family:宋体"}[TLV]{lang="EN-US"}[中的封装格式。在以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图下，未指定时表示配置最近桥代理的管理地址在]{style="font-family:宋体"}[TLV]{lang="EN-US"}[中的封装格式。]{style="font-family:宋体"}
+**[nearest-customer**]：表示最近客户桥代理。
 
-[**[nearest-customer]{lang="EN-US"}**]{#struct_0_x1289_x1771_x213911396}[：表示最近客户桥代理。]{style="font-family:宋体"}
+**[nearest-nontpmr**]：表示最近非TPMR桥代理。
 
-[**[nearest-nontpmr]{lang="EN-US"}**]{#struct_0_x1289_x1771_510746224}[：表示最近非]{style="font-family:宋体"}[TPMR]{lang="EN-US"}[桥代理。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x720491976}
+如果邻居将管理地址以字符串格式封装在TLV中，用户可在本地设备上也将封装格式改为字符串，以保证与邻居设备的正常通信。
 
-[[如果邻居将管理地址以字符串格式封装在]{style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_2083485177}[中，用户可在本地设备上也将封装格式改为字符串，以保证与邻居设备的正常通信。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1464185467}
+\# 在接口GigabitEthernet1/0/1的最近客户桥代理上配置管理地址在TLV中的封装格式为字符串格式。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_357800630}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的最近客户桥代理上配置管理地址在]{style="font-family:宋体"}[TLV]{lang="EN-US"}[中的封装格式为字符串格式。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_1964304422}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
-
-[\[Sysname-GigabitEthernet1/0/1\] ]{lang="EN-US"}[lldp agent nearest-customer management-address-format string]{lang="EN-US"}
-:::::
-
-::: {#1929990489 .myid}
-[]{#struct_0_x1289_x1771_2111146416}[]{#_Toc404784708}[]{#_Toc340510137}[]{#_Toc333218581}
+Sysname-GigabitEthernet1/0/1 lldp agent nearest-customer management-address-format string
 
 **LLDP \-- LLDP配置命令 \-- lldp max-credit**
 
 ------------------------------------------------------------------------
 
-[**[lldp max-credit]{lang="EN-US"}**]{#struct_0_x1289_x1771_1721819512}[命令用来配置限制发送报文速率的令牌桶大小。]{style="font-family:宋体"}
+**[lldp max-credit**]命令用来配置限制发送报文速率的令牌桶大小。
 
-[**[undo lldp max-credit]{lang="EN-US"}**]{#struct_0_x1289_x1771_x706458549}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo lldp max-credit**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1229023683}
+【命令】
 
-[**[lldp max-credit ]{lang="EN-US"}***[credit-value]{lang="EN-US"}*]{#struct_0_x1289_x1771_1183396409}
+**[lldp max-credit ***credit-value*]
 
-[**[undo lldp max-credit]{lang="EN-US"}**]{#struct_0_x1289_x1771_460087499}
+**[undo lldp max-credit**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x2121736223}
+【缺省情况】
 
-[[限制发送报文速率的令牌桶大小为]{style="font-family:宋体"}[5]{lang="EN-US"}]{#struct_0_x1289_x1771_x342861913}[。]{style="font-family:宋体"}
+限制发送报文速率的令牌桶大小为5。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1947367828}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1289_x1771_2111474096}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x647705715}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_1261286302}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_763760560}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x274353305}
+【参数】
 
-[*[credit-value]{lang="EN-US"}*]{#struct_0_x1289_x1771_683701945}[：表示]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[发包限速的令牌桶大小，取值范围]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[100]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[credit-value*]：表示LLDP发包限速的令牌桶大小，取值范围1～100。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x573036592}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_x1914651339}[配置]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[发包限速的令牌桶大小为]{style="font-family:宋体"}[10]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置LLDP发包限速的令牌桶大小为10。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_2111539632}
+\<Sysname\> system-view
 
-[\[Sysname\] lldp max-credit 10]{lang="EN-US"}
-:::
-
-::::: {#686093785 .myid}
-[]{#_Toc404784709}[]{#struct_0_x1289_x1771_x1424414463}[]{#_Toc340510134}[]{#_Toc333218578}
+Sysname lldp max-credit 10
 
 **LLDP \-- LLDP配置命令 \-- lldp mode**
 
 ------------------------------------------------------------------------
 
-[**[lldp mode]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1081444829}[命令用来配置]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[桥模式。]{style="font-family:宋体"}
+**[lldp mode**]命令用来配置LLDP桥模式。
 
-[**[undo lldp mode]{lang="EN-US"}**]{#struct_0_x1289_x1771_x206723967}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo lldp mode**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1800045336}
+【命令】
 
-[**[lldp mode service-bridge]{lang="EN-US"}**]{#struct_0_x1289_x1771_x110795642}
+**[lldp mode service-bridge**]
 
-[**[undo lldp mode]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1025101683}
+**[undo lldp mode**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1841032431}
+【缺省情况】
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_2111343024}[桥模式为客户桥模式。]{style="font-family:宋体"}
+LLDP桥模式为客户桥模式。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1727109682}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1289_x1771_2059816235}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x728998935}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_x123951467}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_x802392494}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1686304812}
+【参数】
 
-[**[service-bridge]{lang="EN-US"}**]{#struct_0_x1289_x1771_106553801}[：表示服务桥模式。]{style="font-family:宋体"}
+**[service-bridge**]：表示服务桥模式。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x434393518}
+【使用指导】
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_2111408560}[桥模式命令用于控制设备支持不同的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[代理。]{style="font-family:宋体"}
+LLDP桥模式命令用于控制设备支持不同的LLDP代理。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[工作于服务桥模式时，设备可支持最近桥代理和最近非]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1414357506}[TPMR]{lang="EN-US"}[桥代理，即对上述类型的代理]{style="font-family:宋体"}[MAC]{lang="EN-US"}[的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文进行处理，其他目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文进行]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内透传。]{style="font-family:宋体"}
+·工作于服务桥模式时，设备可支持最近桥代理和最近非TPMR桥代理，即对上述类型的代理MAC的LLDP报文进行处理，其他目的MAC的LLDP报文进行VLAN内透传。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[工作于客户桥模式时，设备可支持最近桥代理、最近非]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1547563217}[TPMR]{lang="EN-US"}[桥代理及最近客户桥代理，即对上述类型的代理]{style="font-family:宋体"}[MAC]{lang="EN-US"}[的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文进行处理，其他目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[的]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文进行]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内透传。]{style="font-family:宋体"}
+·工作于客户桥模式时，设备可支持最近桥代理、最近非TPMR桥代理及最近客户桥代理，即对上述类型的代理MAC的LLDP报文进行处理，其他目的MAC的LLDP报文进行VLAN内透传。
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](LLDP命令.files/image001.png){#图片 9 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1289_x1771_1271996482}
-:::
+![说明](LLDP命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[桥模式配置只在]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1289_x1771_x1037897846}[LLDP]{lang="EN-US"}[全局开启后才能生效，]{style="font-family:KaiTi_GB2312"}[LLDP]{lang="EN-US"}[全局关闭时，只能作为客户桥对三种类型代理]{style="font-family:KaiTi_GB2312"}[MAC]{lang="EN-US"}[的]{style="font-family:KaiTi_GB2312"}[LLDP]{lang="EN-US"}[报文进行拦截。]{style="font-family:KaiTi_GB2312"}
-:::
+桥模式配置只在LLDP全局开启后才能生效，LLDP全局关闭时，只能作为客户桥对三种类型代理MAC的LLDP报文进行拦截。
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x2091691601}
+\# 配置LLDP桥模式为服务桥模式。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_x1066368712}[配置]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[桥模式为服务桥模式。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_2111736240}
+Sysname lldp mode service-bridge
 
-[\[Sysname\] lldp mode service-bridge]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1419124289}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[lldp global enable]{lang="EN-US"}**]{#struct_0_x1289_x1771_1001184425}
-:::::
-
-::::: {#-186219939 .myid}
-[]{#_Toc144363259}[]{#_Toc144348967}[]{#_Toc404784710}[]{#struct_0_x1289_x1771_1782380085}[]{#_Toc298833923}[]{#_Toc287965425}[]{#_Toc295980667}[]{#_Toc287965426}[]{#_Toc295980668}[]{#_Toc287965427}[]{#_Toc295980669}[]{#_Toc287965428}[]{#_Toc295980670}[]{#_Toc287965429}[]{#_Toc295980671}[]{#_Toc287965430}[]{#_Toc295980672}[]{#_Toc287965431}[]{#_Toc295980673}[]{#_Toc287965432}[]{#_Toc295980674}[]{#_Toc287965433}[]{#_Toc295980675}[]{#_Toc287965434}[]{#_Toc295980676}[]{#_Toc287965435}[]{#_Toc295980677}[]{#_Toc287965436}[]{#_Toc295980678}[]{#_Toc287965437}[]{#_Toc295980679}[]{#_Toc287965438}[]{#_Toc295980680}[]{#_Toc287965439}[]{#_Toc295980681}[]{#_Toc287965440}[]{#_Toc295980682}[]{#_Toc287965441}[]{#_Toc295980683}[]{#_Toc287965442}[]{#_Toc295980684}[]{#_Toc287965443}[]{#_Toc295980685}[]{#_Toc287965444}[]{#_Toc295980686}[]{#_Toc287965445}[]{#_Toc295980687}[]{#_Toc287965446}[]{#_Toc295980688}[]{#_Toc287965447}[]{#_Toc295980689}[]{#_Toc287965448}[]{#_Toc295980690}[]{#_Toc287965450}[]{#_Toc295980692}
+·**lldp global enable**
 
 **LLDP \-- LLDP配置命令 \-- lldp notification med-topology-change enable**
 
 ------------------------------------------------------------------------
 
-[**[lldp notification med-topology-change enable]{lang="EN-US"}**]{#struct_0_x1289_x1771_1655666572}[命令用来开启]{style="font-family:宋体"}[LLDP-MED Trap]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[lldp notification med-topology-change enable**]命令用来开启LLDP-MED Trap功能。
 
-[**[undo lldp notification med-topology-change enable]{lang="EN-US"}**]{#struct_0_x1289_x1771_330656039}[命令用来关闭]{style="font-family:宋体"}[LLDP-MED Trap]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo lldp notification med-topology-change enable**]命令用来关闭LLDP-MED Trap功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1667425338}
+【命令】
 
-[**[lldp notification med-topology-change enable]{lang="EN-US"}**]{#struct_0_x1289_x1771_x408769900}
+**[lldp notification med-topology-change enable**]
 
-[**[undo lldp notification med-topology-change enable]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1062008072}
+**[undo lldp notification med-topology-change enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_2111801776}
+【缺省情况】
 
-[[LLDP-MED Trap]{lang="EN-US"}]{#struct_0_x1289_x1771_177963784}[功能处于关闭状态。]{style="font-family:宋体"}
+LLDP-MED Trap功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x556762169}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1289_x1771_1690306935}[三层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图/管理以太网接口视图
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](LLDP命令.files/image001.png){#图片 10 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1289_x1771_561332738}
-:::
+![说明](LLDP命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[不同型号的设备支持的视图不同，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1289_x1771_1391159526}
-:::
+不同型号的设备支持的视图不同，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1853177625}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_196408499}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_2111211953}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x975469628}
+\# 在接口GigabitEthernet1/0/1上开启LLDP-MED Trap功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_x425137906}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上开启]{style="font-family:宋体"}[LLDP-MED Trap]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_x2102358982}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
-
-[\[Sysname-GigabitEthernet1/0/1\] lldp notification med-topology-change enable]{lang="EN-US"}
-:::::
-
-::::: {#-1639006138 .myid}
-[]{#_Toc404784711}[]{#struct_0_x1289_x1771_134205034}
+Sysname-GigabitEthernet1/0/1 lldp notification med-topology-change enable
 
 **LLDP \-- LLDP配置命令 \-- lldp notification remote-change enable**
 
 ------------------------------------------------------------------------
 
-[**[lldp notification remote-change enable]{lang="EN-US"}**]{#struct_0_x1289_x1771_1529496538}[命令用来开启]{style="font-family:宋体"}[LLDP Trap]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[lldp notification remote-change enable**]命令用来开启LLDP Trap功能。
 
-[**[undo lldp notification remote-change enable]{lang="EN-US"}**]{#struct_0_x1289_x1771_869157416}[命令用来关闭]{style="font-family:宋体"}[LLDP Trap]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo lldp notification remote-change enable**]命令用来关闭LLDP Trap功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_2111277489}
+【命令】
 
-[[在二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1289_x1771_x1008243451}[三层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图下：]{style="font-family:宋体"}
+在二层以太网接口视图/三层以太网接口视图/管理以太网接口视图下：
 
-[**[lldp ]{lang="EN-US"}**[\[ **agent** { **nearest-customer** \| **nearest-nontpmr** } \] **notification remote-change enable**]{lang="EN-US"}]{#struct_0_x1289_x1771_758467172}
+**[lldp **[[ **agent** { **nearest-customer** \| **nearest-nontpmr** } ] **notification remote-change enable**]]
 
-[**[undo lldp ]{lang="EN-US"}**[\[ **agent** { **nearest-customer** \| **nearest-nontpmr** } \] **notification remote-change enable**]{lang="EN-US"}]{#struct_0_x1289_x1771_x1083322014}
+**[undo lldp **[[ **agent** { **nearest-customer** \| **nearest-nontpmr** } ] **notification remote-change enable**]]
 
-[[在二层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1289_x1771_1494900904}[三层聚合接口视图下：]{style="font-family:宋体"}
+在二层聚合接口视图/三层聚合接口视图下：
 
-[**[lldp agent ]{lang="EN-US"}**[{ **nearest-customer** \| **nearest-nontpmr** } **notification remote-change enable**]{lang="EN-US"}]{#struct_0_x1289_x1771_76896134}
+**[lldp agent **[{ **nearest-customer** \| **nearest-nontpmr** } **notification remote-change enable**]]
 
-[**[undo lldp agent ]{lang="EN-US"}**[{ **nearest-customer** \| **nearest-nontpmr** } **notification remote-change enable**]{lang="EN-US"}]{#struct_0_x1289_x1771_285274702}
+**[undo lldp agent **[{ **nearest-customer** \| **nearest-nontpmr** } **notification remote-change enable**]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x970725322}
+【缺省情况】
 
-[[LLDP Trap]{lang="EN-US"}]{#struct_0_x1289_x1771_1754685557}[功能处于关闭状态。]{style="font-family:宋体"}
+LLDP Trap功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_2111080881}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1289_x1771_x213845860}[二层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图/三层以太网接口视图/三层聚合接口视图/管理以太网接口视图
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](LLDP命令.files/image001.png){#图片 11 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1289_x1771_x273731344}
-:::
+![说明](LLDP命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[不同型号的设备支持的视图不同，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1289_x1771_x332296701}
-:::
+不同型号的设备支持的视图不同，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1163327675}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_1758364715}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_x196128058}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x741113657}
+**[agent**]：开启指定类型LLDP代理的LLDP Trap功能。在以太网接口视图/管理以太网接口视图下，未指定时表示开启最近桥代理类型LLDP代理的LLDP Trap功能。
 
-[**[agent]{lang="EN-US"}**]{#struct_0_x1289_x1771_2111146417}[：开启指定类型]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[代理的]{style="font-family:宋体"}[LLDP Trap]{lang="EN-US"}[功能。在以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图下，未指定时表示开启最近桥代理类型]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[代理的]{style="font-family:宋体"}[LLDP Trap]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[nearest-customer**]：表示最近客户桥代理。
 
-[**[nearest-customer]{lang="EN-US"}**]{#struct_0_x1289_x1771_1721885048}[：表示最近客户桥代理。]{style="font-family:宋体"}
+**[nearest-nontpmr**]：表示最近非TPMR桥代理。
 
-[**[nearest-nontpmr]{lang="EN-US"}**]{#struct_0_x1289_x1771_x261696246}[：表示最近非]{style="font-family:宋体"}[TPMR]{lang="EN-US"}[桥代理。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1194599124}
+\# 在接口GigabitEthernet1/0/1最近客户桥代理上开启LLDP Trap功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_1683764062}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[最近客户桥代理上开启]{style="font-family:宋体"}[LLDP Trap]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_675826038}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
-
-[\[Sysname-GigabitEthernet1/0/1\] lldp agent nearest-customer notification remote-change enable]{lang="EN-US"}
-:::::
-
-::: {#-343440181 .myid}
-[]{#_Toc404784712}[]{#struct_0_x1289_x1771_x1806088390}[]{#_Toc385951292}
+Sysname-GigabitEthernet1/0/1 lldp agent nearest-customer notification remote-change enable
 
 **LLDP \-- LLDP配置命令 \-- lldp source-mac vlan**
 
 ------------------------------------------------------------------------
 
-[**[lldp source-mac vlan]{lang="EN-US"}**]{#struct_0_x1289_x1771_188734882}[命令用来配置]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[关联三层以太网子接口的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[lldp source-mac vlan**]命令用来配置LLDP报文源MAC地址为指定VLAN关联三层以太网子接口的MAC地址。
 
-[**[undo lldp source-mac vlan]{lang="EN-US"}**]{#struct_0_x1289_x1771_964219583}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo lldp source-mac vlan**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1880097774}
+【命令】
 
-[**[lldp source-mac vlan ]{lang="EN-US"}***[vlan-id]{lang="EN-US"}*]{#struct_0_x1289_x1771_x978987704}
+**[lldp source-mac vlan ***vlan-id*]
 
-[**[undo ]{lang="EN-US"}[lldp source-mac vlan]{lang="EN-US"}**]{#struct_0_x1289_x1771_x727627285}
+**[undo lldp source-mac vlan**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1301318918}
+【缺省情况】
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_663406822}[报文源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为当前接口的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+LLDP报文源MAC地址为当前接口的MAC地址。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_567254123}
+【视图】
 
-[[三层以太网接口视图]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1705029581}
+三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1643003220}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_697225020}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_839653184}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1806153926}
+【参数】
 
-[*[vlan-id]{lang="EN-US"}*]{#struct_0_x1289_x1771_x1406372735}[：指定]{style="font-family:宋体"}[Dot1q]{lang="EN-US"}[终结中三层以太网子接口关联的]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1\~4094]{lang="EN-US"}[。指定该参数后，]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为该]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[关联的三层以太网子接口；如果该]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[没有关联的三层以太网子接口，则]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为当前接口的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[vlan-id*]：指定Dot1q终结中三层以太网子接口关联的VLAN ID，取值范围为1\~4094。指定该参数后，LLDP报文源MAC地址为该VLAN ID关联的三层以太网子接口；如果该VLAN ID没有关联的三层以太网子接口，则LLDP报文源MAC地址为当前接口的MAC地址。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1905042102}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_x519780082}[配置]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为]{style="font-family:宋体"}[Dot1q]{lang="EN-US"}[终结中]{style="font-family:宋体"}[VLAN 4094]{lang="EN-US"}[关联的三层以太网子接口的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+\# 配置LLDP报文源MAC地址为Dot1q终结中VLAN 4094关联的三层以太网子接口的MAC地址。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_x1870015801}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] lldp source-mac vlan 4094]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 lldp source-mac vlan 4094
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_805043594}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[lldp management-address arp-learning]{lang="EN-US"}**]{#struct_0_x1289_x1771_238352171}
-:::
-
-::: {#-1759646567 .myid}
-[]{#_Toc404784713}[]{#struct_0_x1289_x1771_x1397487791}[]{#_Toc340510140}[]{#_Toc333218616}
+·**lldp management-address arp-learning**
 
 **LLDP \-- LLDP配置命令 \-- lldp timer fast-interval**
 
 ------------------------------------------------------------------------
 
-[**[lldp timer fast-interval]{lang="EN-US"}**]{#struct_0_x1289_x1771_50996377}[命令用来配置]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[快速发送报文的时间间隔。]{style="font-family:宋体"}
+**[lldp timer fast-interval**]命令用来配置LLDP快速发送报文的时间间隔。
 
-[**[undo lldp timer fast-interval]{lang="EN-US"}**]{#struct_0_x1289_x1771_2111474097}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo lldp timer fast-interval**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x647771251}
+【命令】
 
-[**[lldp timer fast-interval ]{lang="EN-US"}***[interval]{lang="EN-US"}*]{#struct_0_x1289_x1771_x1888385522}
+**[lldp timer fast-interval ***interval*]
 
-[**[undo lldp timer fast-interval]{lang="EN-US"}**]{#struct_0_x1289_x1771_x317339880}
+**[undo lldp timer fast-interval**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1139344001}
+【缺省情况】
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_117654226}[快速发送报文的时间间隔为]{style="font-family:宋体"}[1]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+LLDP快速发送报文的时间间隔为1秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_2038439316}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1455044956}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x661892440}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_2111539633}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_x1424479999}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1687213138}
+【参数】
 
-[*[interval]{lang="EN-US"}*]{#struct_0_x1289_x1771_x1901133033}[：表示]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[快速发送报文的时间间隔，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[interval*]：表示LLDP快速发送报文的时间间隔，取值范围为1～3600，单位为秒。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_469338321}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_x358160966}[配置]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[快速发送报文的时间间隔为]{style="font-family:宋体"}[2]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置LLDP快速发送报文的时间间隔为2秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_820244992}
+\<Sysname\> system-view
 
-[\[Sysname\] lldp timer fast-interval 2]{lang="EN-US"}
-:::
-
-::: {#232210342 .myid}
-[]{#_Toc404784714}[]{#struct_0_x1289_x1771_x832743808}[]{#_Toc144363261}[]{#_Toc144348969}
+Sysname lldp timer fast-interval 2
 
 **LLDP \-- LLDP配置命令 \-- lldp timer notification-interval**
 
 ------------------------------------------------------------------------
 
-[**[lldp timer notification-interval]{lang="EN-US"}**]{#struct_0_x1289_x1771_2111343025}[命令用来配置]{style="font-family:宋体"}[LLDP Trap]{lang="EN-US"}[和]{style="font-family:宋体"}[LLDP-MED Trap]{lang="EN-US"}[信息的发送间隔。]{style="font-family:宋体"}
+**[lldp timer notification-interval**]命令用来配置LLDP Trap和LLDP-MED Trap信息的发送间隔。
 
-[**[undo lldp timer notification-interval]{lang="EN-US"}**]{#struct_0_x1289_x1771_1727175218}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo lldp timer notification-interval**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_124769774}
+【命令】
 
-[**[lldp timer notification-interval ]{lang="EN-US"}***[interval]{lang="EN-US"}*]{#struct_0_x1289_x1771_366017673}
+**[lldp timer notification-interval ***interval*]
 
-[**[undo lldp timer notification-interval]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1423571255}
+**[undo lldp timer notification-interval**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x2073011032}
+【缺省情况】
 
-[[LLDP Trap]{lang="EN-US"}]{#struct_0_x1289_x1771_642668626}[和]{style="font-family:宋体"}[LLDP-MED Trap]{lang="EN-US"}[信息的发送间隔均为]{style="font-family:宋体"}[30]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+LLDP Trap和LLDP-MED Trap信息的发送间隔均为30秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1110823943}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x469371876}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_2111408561}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_x1414291970}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_x1439525063}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1216524643}
+【参数】
 
-[*[interval]{lang="EN-US"}*]{#struct_0_x1289_x1771_1961505310}[：表示]{style="font-family:宋体"}[LLDP Trap]{lang="EN-US"}[和]{style="font-family:宋体"}[LLDP-MED Trap]{lang="EN-US"}[信息的发送间隔，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[interval*]：表示LLDP Trap和LLDP-MED Trap信息的发送间隔，取值范围为5～3600，单位为秒。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1519543759}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_1849474689}[配置]{style="font-family:宋体"}[LLDP Trap]{lang="EN-US"}[和]{style="font-family:宋体"}[LLDP-MED Trap]{lang="EN-US"}[信息的发送间隔为]{style="font-family:宋体"}[8]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置LLDP Trap和LLDP-MED Trap信息的发送间隔为8秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_x1142132498}
+\<Sysname\> system-view
 
-[\[Sysname\] lldp timer notification-interval 8]{lang="EN-US"}
-:::
-
-::: {#571325864 .myid}
-[]{#_Toc404784715}[]{#struct_0_x1289_x1771_2111736241}[]{#_Toc144363262}[]{#_Toc144348970}
+Sysname lldp timer notification-interval 8
 
 **LLDP \-- LLDP配置命令 \-- lldp timer reinit-delay**
 
 ------------------------------------------------------------------------
 
-[**[lldp timer reinit-delay]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1419189825}[命令用来配置接口初始化的延迟时间。]{style="font-family:宋体"}
+**[lldp timer reinit-delay**]命令用来配置接口初始化的延迟时间。
 
-[**[undo lldp timer reinit-delay]{lang="EN-US"}**]{#struct_0_x1289_x1771_x2086136779}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo lldp timer reinit-delay**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1270994702}
+【命令】
 
-[**[lldp timer reinit-delay ]{lang="EN-US"}***[delay]{lang="EN-US"}*]{#struct_0_x1289_x1771_x1028389300}
+**[lldp timer reinit-delay ***delay*]
 
-[**[undo lldp timer reinit-delay]{lang="EN-US"}**]{#struct_0_x1289_x1771_x328278288}
+**[undo lldp timer reinit-delay**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_192456070}
+【缺省情况】
 
-[[接口初始化的延迟时间为]{style="font-family:宋体"}[2]{lang="EN-US"}]{#struct_0_x1289_x1771_x1581698243}[秒。]{style="font-family:宋体"}
+接口初始化的延迟时间为2秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x660732947}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1289_x1771_2111801777}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_178029320}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_x1728445672}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_x1262840044}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_583544554}
+【参数】
 
-[*[delay]{lang="EN-US"}*]{#struct_0_x1289_x1771_x47792744}[：接口初始化的延迟时间，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[10]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[delay*]：接口初始化的延迟时间，取值范围为1～10，单位为秒。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1200769511}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_x328450819}[配置接口初始化的延迟时间为]{style="font-family:宋体"}[4]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置接口初始化的延迟时间为4秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_2111211950}
+\<Sysname\> system-view
 
-[\[Sysname\] lldp timer reinit-delay 4]{lang="EN-US"}
-:::
-
-::: {#1016981977 .myid}
-[]{#_Toc404784716}[]{#struct_0_x1289_x1771_x975535164}[]{#_Toc144363264}[]{#_Toc144348972}[]{#_Toc345180632}[]{#_Toc345180633}[]{#_Toc345180634}[]{#_Toc345180635}[]{#_Toc345180636}[]{#_Toc345180637}[]{#_Toc345180638}[]{#_Toc345180639}[]{#_Toc345180640}[]{#_Toc345180641}[]{#_Toc345180642}[]{#_Toc345180643}[]{#_Toc345180644}[]{#_Toc345180645}[]{#_Toc345180646}[]{#_Toc345180647}[]{#_Toc345180648}[]{#_Toc345180649}[]{#_Toc345180650}[]{#_Toc345180651}[]{#_Toc345180652}[]{#_Toc345180653}[]{#_Toc345180654}[]{#_Toc345180655}
+Sysname lldp timer reinit-delay 4
 
 **LLDP \-- LLDP配置命令 \-- lldp timer tx-interval**
 
 ------------------------------------------------------------------------
 
-[**[lldp timer tx-interval]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1218551757}[命令用来配置]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文的发送间隔。]{style="font-family:宋体"}
+**[lldp timer tx-interval**]命令用来配置LLDP报文的发送间隔。
 
-[**[undo lldp timer tx-interval]{lang="EN-US"}**]{#struct_0_x1289_x1771_x342341634}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo lldp timer tx-interval**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1160086923}
+【命令】
 
-[**[lldp timer tx-interval ]{lang="EN-US"}***[interval]{lang="EN-US"}*]{#struct_0_x1289_x1771_x1616834704}
+**[lldp timer tx-interval ***interval*]
 
-[**[undo lldp timer tx-interval]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1839909059}
+**[undo lldp timer tx-interval**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_729416749}
+【缺省情况】
 
-[[LLDP]{lang="EN-US"}]{#struct_0_x1289_x1771_x1398295636}[报文的发送间隔为]{style="font-family:宋体"}[30]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+LLDP报文的发送间隔为30秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_2111277486}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1009095419}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x322183862}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_1432641184}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_77176902}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1542190236}
+【参数】
 
-[*[interval]{lang="EN-US"}*]{#struct_0_x1289_x1771_x976927817}[：表示]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文的发送间隔，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[32768]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[interval*]：表示LLDP报文的发送间隔，取值范围为5～32768，单位为秒。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_234965484}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_2111080878}[配置]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文的发送间隔为]{style="font-family:宋体"}[20]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置LLDP报文的发送间隔为20秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_x213387093}
+\<Sysname\> system-view
 
-[\[Sysname\] lldp timer tx-interval 20]{lang="EN-US"}
-:::
-
-::::: {#97394087 .myid}
-[]{#_Toc404784717}[]{#struct_0_x1289_x1771_84231904}[]{#_Toc144363265}[]{#_Toc144348973}[]{#_Toc345180657}[]{#_Toc345180658}
+Sysname lldp timer tx-interval 20
 
 **LLDP \-- LLDP配置命令 \-- lldp tlv-enable**
 
 ------------------------------------------------------------------------
 
-[**[lldp tlv-enable]{lang="EN-US"}**]{#struct_0_x1289_x1771_577119467}[命令用来配置接口上允许发布的]{style="font-family:宋体"}[TLV]{lang="EN-US"}[类型。]{style="font-family:宋体"}
+**[lldp tlv-enable**]命令用来配置接口上允许发布的TLV类型。
 
-[**[undo lldp tlv-enable]{lang="EN-US"}**]{#struct_0_x1289_x1771_2012804684}[命令用来配置接口上禁止发布的]{style="font-family:宋体"}[TLV]{lang="EN-US"}[类型。]{style="font-family:宋体"}
+**[undo lldp tlv-enable**]命令用来配置接口上禁止发布的TLV类型。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1325151728}
+【命令】
 
-[[在二层以太网接口视图下：]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1303094919}
+在二层以太网接口视图下：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置最近桥代理]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1714488650}[LLDP]{lang="EN-US"}[接口上允许发布的]{style="font-family:宋体"}[TLV]{lang="EN-US"}[类型]{style="font-family:宋体"}
+·配置最近桥代理LLDP接口上允许发布的TLV类型
 
-[**[lldp]{lang="EN-US"}**[ **tlv-enable** { **basic-tlv** { **all** \| **port-description** \| **system-capability** \| **system-description** \| **system-name** \| **management-address-tlv** \[ **ipv6** \] \[ *ip-address* \] } \| **dot1-tlv** { **all** \| **congestion-notification** \| **port-vlan-id** \| **link-aggregation** \| **dcbx** \| **protocol-vlan-id** \[ *vlan-id* \] \| **vlan-name** \[ *vlan-id* \] \| **management-vid** \[ *mvlan-id* \] } \| **dot3-tlv** { **all** \| **mac-physic** \| **max-frame-size** \| **power** \| **eee** } \| **med-tlv** { **all** \| **capability** \| **inventory** \| **network-policy** \[ *vlan-id* \] \| **power-over-ethernet** \| **location-id** { **civic-address** *device-type country-code* { *ca-type ca-value* }&\<1-10\> \| **elin-address** *tel-number* } } }]{lang="EN-US"}]{#struct_0_x1289_x1771_2111146414}
+**[lldp**[ **tlv-enable** { **basic-tlv** { **all** \| **port-description** \| **system-capability** \| **system-description** \| **system-name** \| **management-address-tlv** [ **ipv6** ]  *ip-address*  } \| **dot1-tlv** { **all** \| **congestion-notification** \| **port-vlan-id** \| **link-aggregation** \| **dcbx** \| **protocol-vlan-id**  *vlan-id*  \| **vlan-name**  *vlan-id*  \| **management-vid**  *mvlan-id*  } \| **dot3-tlv** { **all** \| **mac-physic** \| **max-frame-size** \| **power** \| **eee** } \| **med-tlv** { **all** \| **capability** \| **inventory** \| **network-policy**  *vlan-id*  \| **power-over-ethernet** \| **location-id** { **civic-address** *device-type country-code* { *ca-type ca-value* }&\<1-10\> \| **elin-address** *tel-number* } } }]]
 
-[**[undo lldp]{lang="EN-US"}**[ **tlv-enable** { **basic-tlv** { **all** \| **port-description** \| **system-capability** \| **system-description** \| **system-name** \| **management-address-tlv** \[ **ipv6** \] \[ *ip-address* \] } \| **dot1-tlv** { **all** \| **congestion-notification** \| **port-vlan-id** \| **link-aggregation** \| **dcbx** \| **protocol-vlan-id** \| **vlan-name** \| **management-vid** } \| **dot3-tlv** { **all** \| **mac-physic** \| **max-frame-size** \| **power** \| **eee** } \| **med-tlv** { **all** \| **capability** \| **inventory** \| **network-policy** \[ *vlan-id* \] \| **power-over-ethernet** \| **location-id** } }]{lang="EN-US"}]{#struct_0_x1289_x1771_1721950584}
+**[undo lldp**[ **tlv-enable** { **basic-tlv** { **all** \| **port-description** \| **system-capability** \| **system-description** \| **system-name** \| **management-address-tlv** [ **ipv6** ]  *ip-address*  } \| **dot1-tlv** { **all** \| **congestion-notification** \| **port-vlan-id** \| **link-aggregation** \| **dcbx** \| **protocol-vlan-id** \| **vlan-name** \| **management-vid** } \| **dot3-tlv** { **all** \| **mac-physic** \| **max-frame-size** \| **power** \| **eee** } \| **med-tlv** { **all** \| **capability** \| **inventory** \| **network-policy**  *vlan-id*  \| **power-over-ethernet** \| **location-id** } }]]
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置最近非]{style="font-family:宋体"}]{#struct_0_x1289_x1771_496710336}[TPMR]{lang="EN-US"}[代理]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[接口上允许发布的]{style="font-family:宋体"}[TLV]{lang="EN-US"}[类型]{style="font-family:宋体"}
+·配置最近非TPMR代理LLDP接口上允许发布的TLV类型
 
-[**[lldp agent nearest-nontpmr tlv-enable]{lang="EN-US"}**[ { **basic-tlv** { **all** \| **port-description** \| **system-capability** \| **system-description** \| **system-name** \| **management-address-tlv** \[ **ipv6** \] \[ *ip-address* \] } \| **dot1-tlv** { **all** \| **congestion-notification** \| **evb** \| **port-vlan-id** \| **link-aggregation** } }]{lang="EN-US"}]{#struct_0_x1289_x1771_1654430775}
+**[lldp agent nearest-nontpmr tlv-enable**[ { **basic-tlv** { **all** \| **port-description** \| **system-capability** \| **system-description** \| **system-name** \| **management-address-tlv** [ **ipv6** ]  *ip-address*  } \| **dot1-tlv** { **all** \| **congestion-notification** \| **evb** \| **port-vlan-id** \| **link-aggregation** } }]]
 
-[**[undo lldp agent nearest-nontpmr tlv-enable]{lang="EN-US"}**[ { **basic-tlv** { **all** \| **port-description** \| **system-capability** \| **system-description** \| **system-name** \| **management-address-tlv** \[ **ipv6** \] \[ *ip-address* \] } \| **dot1-tlv** { **all** \| **congestion-notification** \| **evb** \| **port-vlan-id** \| **link-aggregation** } }]{lang="EN-US"}]{#struct_0_x1289_x1771_x1270143861}
+**[undo lldp agent nearest-nontpmr tlv-enable**[ { **basic-tlv** { **all** \| **port-description** \| **system-capability** \| **system-description** \| **system-name** \| **management-address-tlv** [ **ipv6** ]  *ip-address*  } \| **dot1-tlv** { **all** \| **congestion-notification** \| **evb** \| **port-vlan-id** \| **link-aggregation** } }]]
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置最近客户桥代理]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1858237863}[LLDP]{lang="EN-US"}[接口上允许发布的]{style="font-family:宋体"}[TLV]{lang="EN-US"}[类型]{style="font-family:宋体"}
+·配置最近客户桥代理LLDP接口上允许发布的TLV类型
 
-[**[lldp agent nearest-customer]{lang="EN-US"}**[ **tlv-enable** { **basic-tlv** { **all** \| **port-description** \| **system-capability** \| **system-description** \| **system-name** \| **management-address-tlv** \[ **ipv6** \] \[ *ip-address* \] } \| **dot1-tlv** { **all** \| **congestion-notification** \| **port-vlan-id** \| **link-aggregation** } }]{lang="EN-US"}]{#struct_0_x1289_x1771_1699738904}
+**[lldp agent nearest-customer**[ **tlv-enable** { **basic-tlv** { **all** \| **port-description** \| **system-capability** \| **system-description** \| **system-name** \| **management-address-tlv** [ **ipv6** ]  *ip-address*  } \| **dot1-tlv** { **all** \| **congestion-notification** \| **port-vlan-id** \| **link-aggregation** } }]]
 
-[**[undo lldp agent nearest-customer]{lang="EN-US"}**[ **tlv-enable** { **basic-tlv** { **all** \| **port-description** \| **system-capability** \| **system-description** \| **system-name** \| **management-address-tlv** \[ **ipv6** \] \[ *ip-address* \] } \| **dot1-tlv** { **all** \| **congestion-notification** \| **port-vlan-id** \| **link-aggregation** } }]{lang="EN-US"}]{#struct_0_x1289_x1771_2111474094}
+**[undo lldp agent nearest-customer**[ **tlv-enable** { **basic-tlv** { **all** \| **port-description** \| **system-capability** \| **system-description** \| **system-name** \| **management-address-tlv** [ **ipv6** ]  *ip-address*  } \| **dot1-tlv** { **all** \| **congestion-notification** \| **port-vlan-id** \| **link-aggregation** } }]]
 
-[[在三层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1289_x1771_x647574643}[管理以太网接口视图下：]{style="font-family:宋体"}
+在三层以太网接口视图/管理以太网接口视图下：
 
-[**[lldp]{lang="EN-US"}**[ **tlv-enable** { **basic-tlv** { **all** \| **port-description** \| **system-capability** \| **system-description** \| **system-name** \| **management-address-tlv** \[ **ipv6** \] \[ *ip-address* \| **interface** **loopback** *interface-number* \] } \| **dot1-tlv** { **all** \| **link-aggregation** } \| **dot3-tlv** { **all** \| **mac-physic** \| **max-frame-size** \| **power** \| **eee** } \| **med-tlv** { **all** \| **capability** \| **inventory** \| **power-over-ethernet** \| **location-id** { **civic-address** *device-type country-code* { *ca-type ca-value* }&\<1-10\> \| **elin-address** *tel-number* } } }]{lang="EN-US"}]{#struct_0_x1289_x1771_882523846}
+**[lldp**[ **tlv-enable** { **basic-tlv** { **all** \| **port-description** \| **system-capability** \| **system-description** \| **system-name** \| **management-address-tlv** [ **ipv6**   *ip-address* \| **interface** **loopback** *interface-number* ] } \| **dot1-tlv** { **all** \| **link-aggregation** } \| **dot3-tlv** { **all** \| **mac-physic** \| **max-frame-size** \| **power** \| **eee** } \| **med-tlv** { **all** \| **capability** \| **inventory** \| **power-over-ethernet** \| **location-id** { **civic-address** *device-type country-code* { *ca-type ca-value* }&\<1-10\> \| **elin-address** *tel-number* } } }]]
 
-[**[lldp agent]{lang="EN-US"}**[ { **nearest-nontpmr** \| **nearest-customer** } **tlv-enable** { **basic-tlv** { **all** \| **port-description** \| **system-capability** \| **system-description** \| **system-name** \| **management-address-tlv** \[ **ipv6** \] \[ *ip-address* \] } \| **dot1-tlv** { **all** \| **link-aggregation** } }]{lang="EN-US"}]{#struct_0_x1289_x1771_2109141633}
+**[lldp agent**[ { **nearest-nontpmr** \| **nearest-customer** } **tlv-enable** { **basic-tlv** { **all** \| **port-description** \| **system-capability** \| **system-description** \| **system-name** \| **management-address-tlv** [ **ipv6** ]  *ip-address*  } \| **dot1-tlv** { **all** \| **link-aggregation** } }]]
 
-[**[undo lldp]{lang="EN-US"}**[ **tlv-enable** { **basic-tlv** { **all** \| **port-description** \| **system-capability** \| **system-description** \| **system-name** \| **management-address-tlv** \[ **ipv6** \] \[ *ip-address* \| **interface** **loopback** *interface-number* \] } \| **dot1-tlv** { **all** \| **link-aggregation** } \| **dot3-tlv** { **all** \| **mac-physic** \| **max-frame-size** \| **power** \| **eee** } \| **med-tlv** { **all** \| **capability** \| **inventory** \| **power-over-ethernet** \| **location-id** } }]{lang="EN-US"}]{#struct_0_x1289_x1771_x526939232}
+**[undo lldp**[ **tlv-enable** { **basic-tlv** { **all** \| **port-description** \| **system-capability** \| **system-description** \| **system-name** \| **management-address-tlv** [ **ipv6**   *ip-address* \| **interface** **loopback** *interface-number* ] } \| **dot1-tlv** { **all** \| **link-aggregation** } \| **dot3-tlv** { **all** \| **mac-physic** \| **max-frame-size** \| **power** \| **eee** } \| **med-tlv** { **all** \| **capability** \| **inventory** \| **power-over-ethernet** \| **location-id** } }]]
 
-[**[undo lldp agent]{lang="EN-US"}**[ { **nearest-nontpmr** \| **nearest-customer** } **tlv-enable** { **basic-tlv** { **all** \| **port-description** \| **system-capability** \| **system-description** \| **system-name** \| **management-address-tlv** \[ **ipv6** \] \[ *ip-address* \] } \| **dot1-tlv** { **all** \| **link-aggregation** } }]{lang="EN-US"}]{#struct_0_x1289_x1771_x1349379280}
+**[undo lldp agent**[ { **nearest-nontpmr** \| **nearest-customer** } **tlv-enable** { **basic-tlv** { **all** \| **port-description** \| **system-capability** \| **system-description** \| **system-name** \| **management-address-tlv** [ **ipv6** ]  *ip-address*  } \| **dot1-tlv** { **all** \| **link-aggregation** } }]]
 
-[[在二层聚合接口视图下：]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x620051178}
+在二层聚合接口视图下：
 
-[**[lldp agent nearest-nontpmr tlv-enable]{lang="EN-US"}**[ { **basic-tlv** { **all** \| **management-address-tlv** \[ **ipv6** \] \[ *ip-address* \] \| **port-description** \| **system-capability** \| **system-description** \| **system-name** } \| **dot1-tlv** { **all** \| **evb** \| **port-vlan-id** } }]{lang="EN-US"}]{#struct_0_x1289_x1771_2111539630}
+**[lldp agent nearest-nontpmr tlv-enable**[ { **basic-tlv** { **all** \| **management-address-tlv** [ **ipv6** ]  *ip-address*  \| **port-description** \| **system-capability** \| **system-description** \| **system-name** } \| **dot1-tlv** { **all** \| **evb** \| **port-vlan-id** } }]]
 
-[**[lldp agent nearest-customer]{lang="EN-US"}**[ **tlv-enable** { **basic-tlv** { **all** \| **management-address-tlv** \[ **ipv6** \] \[ *ip-address* \] \| **port-description** \| **system-capability** \| **system-description** \| **system-name** } \| **dot1-tlv** { **all** \| **port-vlan-id** } }]{lang="EN-US"}]{#struct_0_x1289_x1771_x1424283391}
+**[lldp agent nearest-customer**[ **tlv-enable** { **basic-tlv** { **all** \| **management-address-tlv** [ **ipv6** ]  *ip-address*  \| **port-description** \| **system-capability** \| **system-description** \| **system-name** } \| **dot1-tlv** { **all** \| **port-vlan-id** } }]]
 
-[**[lldp tlv-enable]{lang="EN-US"}**[ **dot1-tlv** { **protocol-vlan-id** \[ *vlan-id* \] \| **vlan-name** \[ *vlan-id* \] \| **management-vid** \[ *mvlan-id* \] }]{lang="EN-US"}]{#struct_0_x1289_x1771_x1568980643}
+**[lldp tlv-enable** **dot1-tlv** { **protocol-vlan-id** [ *vlan-id*  \| **vlan-name**  *vlan-id*  \| **management-vid**  *mvlan-id*  }]]
 
-[**[undo lldp agent nearest-nontpmr tlv-enable]{lang="EN-US"}**[ { **basic-tlv** { **all** \| **management-address-tlv** \[ **ipv6** \] \[ *ip-address* \] \| **port-description** \| **system-capability** \| **system-description** \| **system-name** } \| **dot1-tlv** { **all** \| **evb** \| **port-vlan-id** } }]{lang="EN-US"}]{#struct_0_x1289_x1771_946197982}
+**[undo lldp agent nearest-nontpmr tlv-enable**[ { **basic-tlv** { **all** \| **management-address-tlv** [ **ipv6** ]  *ip-address*  \| **port-description** \| **system-capability** \| **system-description** \| **system-name** } \| **dot1-tlv** { **all** \| **evb** \| **port-vlan-id** } }]]
 
-[**[undo lldp agent nearest-customer]{lang="EN-US"}**[ **tlv-enable** { **basic-tlv** { **all** \| **management-address-tlv** \[ **ipv6** \] \[ *ip-address* \] \| **port-description** \| **system-capability** \| **system-description** \| **system-name** } \| **dot1-tlv** { **all** \| **port-vlan-id** } }]{lang="EN-US"}]{#struct_0_x1289_x1771_x47234434}
+**[undo lldp agent nearest-customer**[ **tlv-enable** { **basic-tlv** { **all** \| **management-address-tlv** [ **ipv6** ]  *ip-address*  \| **port-description** \| **system-capability** \| **system-description** \| **system-name** } \| **dot1-tlv** { **all** \| **port-vlan-id** } }]]
 
-[**[undo lldp tlv-enable]{lang="EN-US"}**[ **dot1-tlv** { **protocol-vlan-id** \| **vlan-name** \| **management-vid** } ]{lang="EN-US"}]{#struct_0_x1289_x1771_650957966}
+**[undo lldp tlv-enable**[ **dot1-tlv** { **protocol-vlan-id** \| **vlan-name** \| **management-vid** } ]]
 
-[[在三层聚合接口视图下：]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x439804148}
+在三层聚合接口视图下：
 
-[**[lldp agent]{lang="EN-US"}**[ { **nearest-customer** \| **nearest-nontpmr** } **tlv-enable basic-tlv** { **all** \| **management-address-tlv** \[ **ipv6** \] \[ *ip-address* \] \| **port-description** \| **system-capability** \| **system-description** \| **system-name** }]{lang="EN-US"}]{#struct_0_x1289_x1771_2007371943}
+**[lldp agent**[ { **nearest-customer** \| **nearest-nontpmr** } **tlv-enable basic-tlv** { **all** \| **management-address-tlv** [ **ipv6** ]  *ip-address*  \| **port-description** \| **system-capability** \| **system-description** \| **system-name** }]]
 
-[**[undo lldp agent]{lang="EN-US"}**[ { **nearest-customer** \| **nearest-nontpmr** } **tlv-enable** **basic-tlv** { **all** \| **management-address-tlv** \[ **ipv6** \] \[ *ip-address* \] \| **port-description** \| **system-capability** \| **system-description** \| **system-name** }]{lang="EN-US"}]{#struct_0_x1289_x1771_2111343022}
+**[undo lldp agent**[ { **nearest-customer** \| **nearest-nontpmr** } **tlv-enable** **basic-tlv** { **all** \| **management-address-tlv** [ **ipv6** ]  *ip-address*  \| **port-description** \| **system-capability** \| **system-description** \| **system-name** }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1727240754}
+【缺省情况】
 
-[[二层以太网接口上：]{style="font-family:宋体"}]{#struct_0_x1289_x1771_922498086}
+二层以太网接口上：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[最近桥代理允许发布除]{lang="EN-US" style="font-family:宋体"}[DCBX TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x1984736557}[、]{lang="EN-US" style="font-family:宋体"}[Location-id TLV]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[Port And Protocol VLAN ID TLV]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[VLAN Name TLV]{lang="EN-US"}[、]{style="font-family:宋体"}[Management VLAN ID TLV]{lang="EN-US"}[和]{style="font-family:宋体"}[EEE TLV]{lang="EN-US"}[之外所有类型的]{lang="EN-US" style="font-family:宋体"}[TLV]{lang="EN-US"}[；]{lang="EN-US" style="font-family:宋体"}
+·最近桥代理允许发布除DCBX TLV、Location-id TLV、Port And Protocol VLAN ID TLV、VLAN Name TLV、Management VLAN ID TLV和EEE TLV之外所有类型的TLV；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[最近非]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1833018429}[TPMR]{lang="EN-US"}[桥代理只允许发布]{style="font-family:宋体"}[EVB TLV]{lang="EN-US"}[；]{style="font-family:宋体"}
+·最近非TPMR桥代理只允许发布EVB TLV；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[最近客户桥代理允许发布基本]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1209348644}[TLV]{lang="EN-US"}[和]{style="font-family:宋体"}[IEEE 802.1]{lang="EN-US"}[组织定义]{style="font-family:宋体"}[TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+·最近客户桥代理允许发布基本TLV和IEEE 802.1组织定义TLV。
 
-[[三层以太网接口]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1289_x1771_x1443143640}[管理以太网接口上：]{style="font-family:宋体"}
+三层以太网接口/管理以太网接口上：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[最近桥代理允许发布除]{lang="EN-US" style="font-family:宋体"}[Network Policy TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x648504392}[和]{style="font-family:宋体"}[EEE TLV]{lang="EN-US"}[之外所有类型的]{lang="EN-US" style="font-family:宋体"}[TLV]{lang="EN-US"}[，其中]{lang="EN-US" style="font-family:宋体"}[IEEE 802.1]{lang="EN-US"}[组织定义的]{lang="EN-US" style="font-family:宋体"}[TLV]{lang="EN-US"}[只支持]{lang="EN-US" style="font-family:宋体"}[Link Aggregation TLV]{lang="EN-US"}[；]{lang="EN-US" style="font-family:宋体"}
+·最近桥代理允许发布除Network Policy TLV和EEE TLV之外所有类型的TLV，其中IEEE 802.1组织定义的TLV只支持Link Aggregation TLV；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[最近非]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x506052919}[TPMR]{lang="EN-US"}[桥代理不发布任何]{style="font-family:宋体"}[TLV]{lang="EN-US"}[；]{style="font-family:宋体"}
+·最近非TPMR桥代理不发布任何TLV；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[最近客户桥代理允许发布基本]{lang="EN-US" style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_2111408558}[和]{lang="EN-US" style="font-family:宋体"}[IEEE 802.1]{lang="EN-US"}[组织定义]{lang="EN-US" style="font-family:宋体"}[TLV]{lang="EN-US"}[，其中]{lang="EN-US" style="font-family:宋体"}[IEEE 802.1]{lang="EN-US"}[组织定义的]{lang="EN-US" style="font-family:宋体"}[TLV]{lang="EN-US"}[只支持]{lang="EN-US" style="font-family:宋体"}[Link Aggregation TLV]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·最近客户桥代理允许发布基本TLV和IEEE 802.1组织定义TLV，其中IEEE 802.1组织定义的TLV只支持Link Aggregation TLV。
 
-[[二层聚合接口上：]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1414881795}
+二层聚合接口上：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不存在最近桥代理；]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1289_x1771_1127224269}
+·不存在最近桥代理；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[最近非]{style="font-family:宋体"}]{#struct_0_x1289_x1771_2140692920}[TPMR]{lang="EN-US"}[桥代理只允许发布]{style="font-family:宋体"}[EVB TLV]{lang="EN-US"}[；]{style="font-family:宋体"}
+·最近非TPMR桥代理只允许发布EVB TLV；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[最近客户桥代理允许发布基本]{lang="EN-US" style="font-family:宋体"}[TLV]{lang="EN-US"}]{#struct_0_x1289_x1771_x1697034657}[和]{lang="EN-US" style="font-family:宋体"}[IEEE 802.1]{lang="EN-US"}[组织定义]{lang="EN-US" style="font-family:宋体"}[TLV]{lang="EN-US"}[，其中]{lang="EN-US" style="font-family:宋体"}[IEEE 802.1]{lang="EN-US"}[组织定义的]{lang="EN-US" style="font-family:宋体"}[TLV]{lang="EN-US"}[只支持]{lang="EN-US" style="font-family:宋体"}[Port And Protocol VLAN ID TLV]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[VLAN Name TLV]{lang="EN-US"}[及]{lang="EN-US" style="font-family:宋体"}[Management VLAN ID TLV]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·最近客户桥代理允许发布基本TLV和IEEE 802.1组织定义TLV，其中IEEE 802.1组织定义的TLV只支持Port And Protocol VLAN ID TLV、VLAN Name TLV及Management VLAN ID TLV。
 
-[[三层聚合接口上：]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1253916032}
+三层聚合接口上：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不存在最近桥代理；]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1289_x1771_966736244}
+·不存在最近桥代理；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[最近非]{style="font-family:宋体"}]{#struct_0_x1289_x1771_174676784}[TPMR]{lang="EN-US"}[桥代理不发布任何]{style="font-family:宋体"}[TLV]{lang="EN-US"}[；]{style="font-family:宋体"}
+·最近非TPMR桥代理不发布任何TLV；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[最近客户桥代理只允许发布基本]{style="font-family:宋体"}]{#struct_0_x1289_x1771_2111736238}[TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+·最近客户桥代理只允许发布基本TLV。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x1419648580}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1289_x1771_x101213067}[二层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图/三层以太网接口视图/三层聚合接口视图/管理以太网接口视图
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](LLDP命令.files/image001.png){#图片 12 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1289_x1771_1588821023}
-:::
+![说明](LLDP命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[不同型号的设备支持的视图不同，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1289_x1771_1353378566}
-:::
+不同型号的设备支持的视图不同，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x326252022}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_787999210}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1289_x1771_1439172000}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x753729998}
+**[agent**]：配置指定类型LLDP代理允许发布的TLV类型。在以太网接口视图/管理以太网接口视图下，未指定时表示配置最近桥代理允许发布的TLV类型。
 
-[**[agent]{lang="EN-US"}**]{#struct_0_x1289_x1771_2111801774}[：配置指定类型]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[代理允许发布的]{style="font-family:宋体"}[TLV]{lang="EN-US"}[类型。在以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图下，未指定时表示配置最近桥代理允许发布的]{style="font-family:宋体"}[TLV]{lang="EN-US"}[类型。]{style="font-family:宋体"}
+**[nearest-customer**]：表示最近客户桥代理。
 
-[**[nearest-customer]{lang="EN-US"}**]{#struct_0_x1289_x1771_178094856}[：表示最近客户桥代理。]{style="font-family:宋体"}
+**[nearest-nontpmr**]：表示最近非TPMR桥代理。
 
-[**[nearest-nontpmr]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1718234760}[：表示最近非]{style="font-family:宋体"}[TPMR]{lang="EN-US"}[桥代理。]{style="font-family:宋体"}
+**[all**]：在二层以太网接口视图/二层聚合接口视图/三层以太网接口视图/管理以太网接口视图下指定**basic-tlv**、**dot1-tlv**或**dot3-tlv**，或者在三层聚合接口视图下指定**basic-tlv**时，本参数表示该类型下所有的可选TLV；而在二层以太网接口视图/三层以太网接口视图/管理以太网接口视图下指定**med-tlv**时，本参数都表示该类型下除**location-id**以外所有的可选TLV。
 
-[**[all]{lang="EN-US"}**]{#struct_0_x1289_x1771_2125177908}[：在二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[二层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图下指定]{style="font-family:宋体"}**[basic-tlv]{lang="EN-US"}**[、]{style="font-family:宋体"}**[dot1-tlv]{lang="EN-US"}**[或]{style="font-family:宋体"}**[dot3-tlv]{lang="EN-US"}**[，或者在三层聚合接口视图下指定]{style="font-family:宋体"}**[basic-tlv]{lang="EN-US"}**[时，本参数表示该类型下所有的可选]{style="font-family:宋体"}[TLV]{lang="EN-US"}[；而在二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图下指定]{style="font-family:宋体"}**[med-tlv]{lang="EN-US"}**[时，本参数都表示该类型下除]{style="font-family:宋体"}**[location-id]{lang="EN-US"}**[以外所有的可选]{style="font-family:宋体"}[TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[basic-tlv**]：表示基本类型TLV。
 
-[**[basic-tlv]{lang="EN-US"}**]{#struct_0_x1289_x1771_x2030063005}[：表示基本类型]{style="font-family:宋体"}[TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[management-address-tlv** [ **ipv6**  [ *ip-address* \| **interface** **loopback** *interface-number* ]]]：表示Management Address TLV。其中，**ipv6**表示LLDP报文中所要发布的管理地址为IPv6格式的地址，当未指定**ipv6**时，表示LLDP报文中所要发布的管理地址为IPv4格式的地址。*ip-address*表示在LLDP报文中发布的管理地址为指定的IP地址，**interface** **loopback** *interface-number*表示在LLDP报文中发布的管理地址为指定的LoopBack接口的IP地址。其缺省值根据当前接口视图确定：
 
-[**[management-address-tlv]{lang="EN-US"}**[ \[ **ipv6** \] \[ *ip-address* \| **interface** **loopback** *interface-number* \]]{lang="EN-US"}]{#struct_0_x1289_x1771_x604871010}[：表示]{style="font-family:宋体"}[Management Address TLV]{lang="EN-US"}[。其中，]{style="font-family:宋体"}**[ipv6]{lang="EN-US"}**[表示]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文中所要发布的管理地址为]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[格式的地址，当未指定]{style="font-family:宋体"}**[ipv6]{lang="EN-US"}**[时，表示]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文中所要发布的管理地址为]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[格式的地址。]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*[表示在]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文中发布的管理地址为指定的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，]{style="font-family:宋体"}**[interface]{lang="EN-US"}**[ **loopback** *interface-number*]{lang="EN-US"}[表示在]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文中发布的管理地址为指定的]{style="font-family:宋体"}[LoopBack]{lang="EN-US"}[接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。其缺省值根据当前接口视图确定：]{style="font-family:宋体"}
+·在二层以太网接口视图/二层聚合接口视图下：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在二层以太网接口视图]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x1993251199}[/]{lang="EN-US"}[二层聚合接口视图下：]{style="font-family:宋体"}
+当未指定**ipv6**参数时，若未指定*ip-address*，则发布的管理地址为当前接口允许通过的、对应VLAN接口上配置有IPv4地址且处于up状态的最小VLAN的主IPv4地址（如果当前接口允许通过的所有VLAN所对应的VLAN接口上都未配置IPv4地址或均处于down状态，则发布当前接口的MAC地址）；
 
-[[当未指定]{style="font-family:宋体"}**[ipv6]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1168657532}[参数时，若未指定]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*[，则发布的管理地址为当前接口允许通过的、对应]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口上配置有]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址且处于]{style="font-family:宋体"}[up]{lang="EN-US"}[状态的最小]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的主]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址（如果当前接口允许通过的所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[所对应的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口上都未配置]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址或均处于]{style="font-family:宋体"}[down]{lang="EN-US"}[状态，则发布当前接口的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址）；]{style="font-family:宋体"}
+当指定了**ipv6**参数时，若未指定*ip-address*，则发布的管理地址为当前接口允许通过的、对应VLAN接口上配置有IPv6地址且处于up状态的最小VLAN的主IPv6地址（如果当前接口允许通过的所有VLAN所对应的VLAN接口上都未配置IPv6地址或均处于down状态，则发布当前接口的MAC地址）。
 
-[[当指定了]{style="font-family:宋体"}**[ipv6]{lang="EN-US"}**]{#struct_0_x1289_x1771_2125243444}[参数时，若未指定]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*[，则发布的管理地址为当前接口允许通过的、对应]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口上配置有]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址且处于]{style="font-family:宋体"}[up]{lang="EN-US"}[状态的最小]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的主]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址（如果当前接口允许通过的所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[所对应的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口上都未配置]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址或均处于]{style="font-family:宋体"}[down]{lang="EN-US"}[状态，则发布当前接口的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址）。]{style="font-family:宋体"}
+·在三层以太网接口视图/三层聚合接口视图/管理以太网接口视图下：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在三层以太网接口视图]{style="font-family:宋体"}]{#struct_0_x1289_x1771_634488042}[/]{lang="EN-US"}[三层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图下：]{style="font-family:宋体"}
+当未指定**ipv6**参数时，若未指定*ip-address、*指定的LoopBack接口不存在或LoopBack接口没有配置IPv4地址，则发布的管理地址为当前接口的IPv4地址（如果当前接口未配置IPv4地址，则发布当前接口的MAC地址）；
 
-[[当未指定]{style="font-family:宋体"}**[ipv6]{lang="EN-US"}**]{#struct_0_x1289_x1771_x182835365}[参数时，若未指定]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}[、]{style="font-family:宋体"}*[指定的]{style="font-family:宋体"}[LoopBack]{lang="EN-US"}[接口不存在或]{style="font-family:宋体"}[LoopBack]{lang="EN-US"}[接口没有配置]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址，则发布的管理地址为当前接口的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址（如果当前接口未配置]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址，则发布当前接口的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址）；]{style="font-family:宋体"}
+当指定了**ipv6**参数时，若未指定*ip-address*、指定的LoopBack接口不存在或LoopBack接口没有配置IPv6地址，则发布的管理地址为当前接口的IPv6地址（如果当前接口未配置IPv6地址，则发布当前接口的MAC地址）。
 
-[[当指定了]{style="font-family:宋体"}**[ipv6]{lang="EN-US"}**]{#struct_0_x1289_x1771_1250462835}[参数时，若未指定]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*[、指定的]{style="font-family:宋体"}[LoopBack]{lang="EN-US"}[接口不存在或]{style="font-family:宋体"}[LoopBack]{lang="EN-US"}[接口没有配置]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址，则发布的管理地址为当前接口的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址（如果当前接口未配置]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址，则发布当前接口的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址）。]{style="font-family:宋体"}
+·在二层以太网接口视图/二层聚合接口视图/三层以太网接口视图/三层聚合接口视图/管理以太网接口视图下：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在二层以太网接口视图]{style="font-family:宋体"}]{#struct_0_x1289_x1771_1649294168}[/]{lang="EN-US"}[二层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[三层聚合接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}[管理以太网接口视图下：]{style="font-family:宋体"}
+执行**undo**命令时，如果不带**ipv6**、*ip-address*和**interface** **loopback** *interface-number*参数表示不发布该TLV；如果带**ipv6**、*ip-address*或**interface** **loopback** *interface-number*参数表示按缺省值发布该TLV。
 
-[[执行]{style="font-family:宋体"}**[undo]{lang="EN-US"}**]{#struct_0_x1289_x1771_260075949}[命令时，如果不带]{style="font-family:宋体"}**[ipv6]{lang="EN-US"}**[、]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*[和]{style="font-family:宋体"}**[interface]{lang="EN-US"}**[ **loopback** *interface-number*]{lang="EN-US"}[参数表示不发布该]{style="font-family:宋体"}[TLV]{lang="EN-US"}[；如果带]{style="font-family:宋体"}**[ipv6]{lang="EN-US"}**[、]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*[或]{style="font-family:宋体"}**[interface]{lang="EN-US"}**[ **loopback** *interface-number*]{lang="EN-US"}[参数表示按缺省值发布该]{style="font-family:宋体"}[TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[port-description**]：表示Port Description TLV。
 
-[**[port-description]{lang="EN-US"}**]{#struct_0_x1289_x1771_x700877023}[：表示]{style="font-family:宋体"}[Port Description TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[system-capability**]：表示System Capabilities TLV。
 
-[**[system-capability]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1603907656}[：表示]{style="font-family:宋体"}[System Capabilities TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[system-description**]：表示System Description TLV。
 
-[**[system-description]{lang="EN-US"}**]{#struct_0_x1289_x1771_2111211951}[：表示]{style="font-family:宋体"}[System Description TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[system-name**]：表示System Name TLV。
 
-[**[system-name]{lang="EN-US"}**]{#struct_0_x1289_x1771_x975600700}[：表示]{style="font-family:宋体"}[System Name TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[dot1-tlv**]：表示IEEE 802.1组织定义的TLV。
 
-[**[dot1-tlv]{lang="EN-US"}**]{#struct_0_x1289_x1771_325124801}[：表示]{style="font-family:宋体"}[IEEE 802.1]{lang="EN-US"}[组织定义的]{style="font-family:宋体"}[TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[congestion-notification**]：表示QCN（Quantized Congestion Notification，量化拥塞通知）模块TLV，目前QCN模块只支持LLDP中三种代理类型中的最近桥代理类型。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[congestion-notification]{lang="EN-US"}**]{#struct_0_x1289_x1771_1172410213}[：表示]{style="font-family:宋体"}[QCN]{lang="EN-US"}[（]{style="font-family:宋体"}[Quantized Congestion Notification]{lang="EN-US"}[，量化拥塞通知）模块]{style="font-family:宋体"}[TLV]{lang="EN-US"}[，目前]{style="font-family:宋体"}[QCN]{lang="EN-US"}[模块只支持]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[中三种代理类型中的最近桥代理类型。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[dcbx**]：表示Data Center Bridging Exchange Protocol TLV。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[dcbx]{lang="EN-US"}**]{#struct_0_x1289_x1771_1179566372}[：表示]{style="font-family:宋体"}[Data Center Bridging Exchange Protocol TLV]{lang="EN-US"}[。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[evb**]：表示EVB（Edge Virtual Bridging，边缘虚拟桥接）模块TLV。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[evb]{lang="EN-US"}**]{#struct_0_x1289_x1771_x879890431}[：表示]{style="font-family:宋体"}[EVB]{lang="EN-US"}[（]{style="font-family:宋体"}[Edge Virtual Bridging]{lang="EN-US"}[，边缘虚拟桥接）模块]{style="font-family:宋体"}[TLV]{lang="EN-US"}[。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[port-vlan-id**]：表示Port VLAN ID TLV。
 
-[**[port-vlan-id]{lang="EN-US"}**]{#struct_0_x1289_x1771_1851458308}[：表示]{style="font-family:宋体"}[Port VLAN ID TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[protocol-vlan-id** [ *vlan-id* ]]：表示Port And Protocol VLAN ID TLV，*vlan-id*为所要发布VLAN的VLAN ID，取值范围为1～4094，缺省值为该端口所属VLAN中最小的VLAN ID。
 
-[**[protocol-vlan-id]{lang="EN-US"}**[ \[ *vlan-id* \]]{lang="EN-US"}]{#struct_0_x1289_x1771_x128530075}[：表示]{style="font-family:宋体"}[Port And Protocol VLAN ID TLV]{lang="EN-US"}[，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为所要发布]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[，缺省值为该端口所属]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[中最小的]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vlan-name** [ *vlan-id* ]]：表示VLAN Name TLV，*vlan-id*为所要发布VLAN的VLAN ID，取值范围为1～4094，缺省值为该端口所属VLAN中最小的VLAN ID。
 
-[**[vlan-name]{lang="EN-US"}**[ \[ *vlan-id* \]]{lang="EN-US"}]{#struct_0_x1289_x1771_362021180}[：表示]{style="font-family:宋体"}[VLAN Name TLV]{lang="EN-US"}[，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为所要发布]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[，缺省值为该端口所属]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[中最小的]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[management-vid** [ *mvlan-id* ]]：表示Management VLAN ID TLV。*mvlan-id*指定要发布管理VLAN的VLAN ID，取值范围为1～4094。如果未指定该参数，则表示发布0，表示当前LLDP agent未配置管理VLAN。
 
-[**[management-vid]{lang="EN-US"}**[ \[ *mvlan-id* \]]{lang="EN-US"}]{#struct_0_x1289_x1771_x57434186}[：表示]{style="font-family:宋体"}[Management VLAN ID TLV]{lang="EN-US"}[。]{style="font-family:宋体"}*[mvlan-id]{lang="EN-US"}*[指定要发布管理]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果未指定该参数，则表示发布]{style="font-family:宋体"}[0]{lang="EN-US"}[，表示当前]{style="font-family:宋体"}[LLDP agent]{lang="EN-US"}[未配置管理]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[link-aggregation**]：表示Link Aggregation TLV。
 
-[**[link-aggregation]{lang="EN-US"}**]{#struct_0_x1289_x1771_2111277487}[：表示]{style="font-family:宋体"}[Link Aggregation TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[dot3-tlv**]：表示IEEE 802.3组织定义的TLV。
 
-[**[dot3-tlv]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1009160955}[：表示]{style="font-family:宋体"}[IEEE 802.3]{lang="EN-US"}[组织定义的]{style="font-family:宋体"}[TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[link-aggregation**]：表示Link Aggregation TLV。
 
-[**[link-aggregation]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1428985872}[：表示]{style="font-family:宋体"}[Link Aggregation TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[mac-physic**]：表示MAC/PHY Configuration/Status TLV。
 
-[**[mac-physic]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1196122183}[：表示]{style="font-family:宋体"}[MAC/PHY Configuration/Status TLV]{lang="EN-US"}[。]{style="font-family:
-宋体"}
+**[max-frame-size**]：表示Maximum Frame Size TLV。
 
-[**[max-frame-size]{lang="EN-US"}**]{#struct_0_x1289_x1771_x1590823606}[：表示]{style="font-family:宋体"}[Maximum Frame Size TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[power**]：表示Power Via MDI TLV和Power Stateful Control TLV。
 
-[**[power]{lang="EN-US"}**]{#struct_0_x1289_x1771_970747744}[：表示]{style="font-family:宋体"}[Power Via MDI TLV]{lang="EN-US"}[和]{style="font-family:宋体"}[Power Stateful Control TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[eee**]：表示Energy-Efficient Ethernet TLV。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[eee]{lang="EN-US"}**]{#struct_0_x1289_x1771_1515364958}[：表示]{style="font-family:宋体"}[Energy-Efficient Ethernet TLV]{lang="EN-US"}[。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[med-tlv**]：表示LLDP-MED TLV。
 
-[**[med-tlv]{lang="EN-US"}**]{#struct_0_x1289_x1771_x782328102}[：表示]{style="font-family:宋体"}[LLDP-MED TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[capability**]：表示LLDP-MED Capabilities TLV。
 
-[**[capability]{lang="EN-US"}**]{#struct_0_x1289_x1771_x678453296}[：表示]{style="font-family:宋体"}[LLDP-MED Capabilities TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[inventory**]：表示Hardware Revision TLV、Firmware Revision TLV、Software Revision TLV、Serial Number TLV、Manufacturer Name TLV、Model Name TLV和Asset ID TLV。
 
-[**[inventory]{lang="EN-US"}**]{#struct_0_x1289_x1771_2111080879}[：表示]{style="font-family:宋体"}[Hardware Revision TLV]{lang="EN-US"}[、]{style="font-family:宋体"}[Firmware Revision TLV]{lang="EN-US"}[、]{style="font-family:宋体"}[Software Revision TLV]{lang="EN-US"}[、]{style="font-family:宋体"}[Serial Number TLV]{lang="EN-US"}[、]{style="font-family:宋体"}[Manufacturer Name TLV]{lang="EN-US"}[、]{style="font-family:宋体"}[Model Name TLV]{lang="EN-US"}[和]{style="font-family:宋体"}[Asset ID TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[location-id**]：表示Location Identification TLV。
 
-[**[location-id]{lang="EN-US"}**]{#struct_0_x1289_x1771_x213321557}[：表示]{style="font-family:宋体"}[Location Identification TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[civic-address**]：表示Location Identification TLV封装网络设备的普通地址信息。
 
-[**[civic-address]{lang="EN-US"}**]{#struct_0_x1289_x1771_1664048550}[：表示]{style="font-family:宋体"}[Location Identification TLV]{lang="EN-US"}[封装网络设备的普通地址信息。]{style="font-family:宋体"}
+*[device-type*]：表示设备类型，取值范围为0～2。0表示设备类型为DHCP server，1表示设备类型为Network device，2表示设备类型为LLDP-MED Endpoint。
 
-[*[device-type]{lang="EN-US"}*]{#struct_0_x1289_x1771_1470672632}[：表示设备类型，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[2]{lang="EN-US"}[。]{style="font-family:宋体"}[0]{lang="EN-US"}[表示设备类型为]{style="font-family:
-宋体"}[DHCP server]{lang="EN-US"}[，]{style="font-family:
-宋体"}[1]{lang="EN-US"}[表示设备类型为]{style="font-family:宋体"}[Network device]{lang="EN-US"}[，]{style="font-family:宋体"}[2]{lang="EN-US"}[表示设备类型为]{style="font-family:宋体"}[LLDP-MED Endpoint]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[country-code*]：表示国家编码，取值范围请参考ISO 3166。
 
-[*[country-code]{lang="EN-US"}*]{#struct_0_x1289_x1771_x355983880}[：表示国家编码，取值范围请参考]{style="font-family:宋体"}[ISO 3166]{lang="EN-US"}[。]{style="font-family:宋体"}
+{ *ca-type ca-value* }&\<1-10\>：地址信息。*ca-type*表示地址信息类型，取值范围为0～255；*ca-value*表示地址信息，为1～250个字符的字符串。&\<1-10\>表示前面的参数最多可以输入10次。
 
-[[{ *ca-type ca-value* }&\<1-10\>]{lang="EN-US"}]{#struct_0_x1289_x1771_17536293}[：地址信息。]{style="font-family:
-宋体"}*[ca-type]{lang="EN-US"}*[表示地址信息类型，取值范围为]{style="font-family:
-宋体"}[0]{lang="EN-US"}[～]{style="font-family:
-宋体"}[255]{lang="EN-US"}[；]{style="font-family:宋体"}*[ca-value]{lang="EN-US"}*[表示地址信息，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[250]{lang="EN-US"}[个字符的字符串。]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。]{style="font-family:宋体"}
+**[elin-address**]：Location Identification TLV封装紧急电话号码。
 
-[**[elin-address]{lang="EN-US"}**]{#struct_0_x1289_x1771_25052559}[：]{style="font-family:宋体"}[Location Identification TLV]{lang="EN-US"}[封装紧急电话号码。]{style="font-family:宋体"}
+*[tel-number*]：表示紧急电话号码，为10～25个字符的字符串，只能包含数字。
 
-[*[tel-number]{lang="EN-US"}*]{#struct_0_x1289_x1771_1543330513}[：表示紧急电话号码，为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[25]{lang="EN-US"}[个字符的字符串，只能包含数字。]{style="font-family:宋体"}
+**[network-policy** [ *vlan-id* ]]：表示Network Policy TLV，*vlan-id*为要发布的Voice VLAN ID，取值范围为1～4094。
 
-[**[network-policy]{lang="EN-US"}**[ \[ *vlan-id* \]]{lang="EN-US"}]{#struct_0_x1289_x1771_x2129771529}[：表示]{style="font-family:宋体"}[Network Policy TLV]{lang="EN-US"}[，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为要发布的]{style="font-family:宋体"}[Voice VLAN ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[power-over-ethernet**]：表示Extended Power-via-MDI TLV。
 
-[**[power-over-ethernet]{lang="EN-US"}**]{#struct_0_x1289_x1771_2111146415}[：表示]{style="font-family:宋体"}[Extended Power-via-MDI TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_1722016120}
+·在使用本命令时若不指定**all**参数，每次只能配置某类型下的一种可选TLV，此时可通过多次使用该命令来配置各类型下的多种可选TLV。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在使用本命令时若不指定]{style="font-family:宋体"}]{#struct_0_x1289_x1771_x28489045}**[all]{lang="EN-US"}**[参数，每次只能配置某类型下的一种可选]{style="font-family:宋体"}[TLV]{lang="EN-US"}[，此时可通过多次使用该命令来配置各类型下的多种可选]{style="font-family:宋体"}[TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+·如果禁止发布802.3的组织定义的MAC/PHY Configuration/Status TLV，则LLDP-MED TLV将不会被发布，不论其是否被允许发布；如果禁止发布LLDP-MED Capabilities TLV，则其它LLDP-MED TLV将不会被发布，不论其是否被允许发布。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果禁止发布]{lang="EN-US" style="font-family:宋体"}[802.3]{lang="EN-US"}]{#struct_0_x1289_x1771_x1146993303}[的组织定义的]{lang="EN-US" style="font-family:宋体"}[MAC/PHY Configuration/Status TLV]{lang="EN-US"}[，则]{lang="EN-US" style="font-family:宋体"}[LLDP-MED TLV]{lang="EN-US"}[将不会被发布，不论其是否被允许发布；如果禁止发布]{lang="EN-US" style="font-family:宋体"}[LLDP-MED Capabilities TLV]{lang="EN-US"}[，则其它]{lang="EN-US" style="font-family:
-宋体"}[LLDP-MED TLV]{lang="EN-US"}[将不会被发布，不论其是否被允许发布。]{lang="EN-US" style="font-family:宋体"}
+·IEEE 802.1组织定义的TLV的Port And Protocol VLAN ID TLV、VLAN Name TLV及Management VLAN ID TLV只能基于最近桥代理配置，但是其配置会被最近非TPMR桥代理和最近客户桥代理继承。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IEEE 802.1]{lang="EN-US"}]{#struct_0_x1289_x1771_599554725}[组织定义的]{lang="EN-US" style="font-family:宋体"}[TLV]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Port And Protocol VLAN ID TLV]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[VLAN Name TLV]{lang="EN-US"}[及]{lang="EN-US" style="font-family:宋体"}[Management VLAN ID TLV]{lang="EN-US"}[只能基于最近桥代理配置，但是其配置会被最近非]{lang="EN-US" style="font-family:宋体"}[TPMR]{lang="EN-US"}[桥代理和最近客户桥代理继承。]{lang="EN-US" style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1289_x1771_x566248274}
+\# 配置接口GigabitEthernet1/0/1上最近客户桥代理允许发布IEEE 802.1组织定义的Link Aggregation可选TLV。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1289_x1771_x1049330748}[配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上最近客户桥代理允许发布]{style="font-family:宋体"}[IEEE 802.1]{lang="EN-US"}[组织定义的]{style="font-family:宋体"}[Link Aggregation]{lang="EN-US"}[可选]{style="font-family:宋体"}[TLV]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1289_x1771_x836869488}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
-
-[\[Sysname-GigabitEthernet1/0/1\] lldp agent nearest-customer tlv-enable dot1-tlv link-aggregation]{lang="EN-US"}
-:::::
+Sysname-GigabitEthernet1/0/1 lldp agent nearest-customer tlv-enable dot1-tlv link-aggregation

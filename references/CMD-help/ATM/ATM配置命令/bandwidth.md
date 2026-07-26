@@ -1,3272 +1,3068 @@
-::: {#1742433432 .myid}
-[]{#_Toc348095196}[]{#_Toc404785233}[]{#struct_0_19500_x1656_x1908919557}[]{#_Toc350872242}[]{#_Toc345946912}
 
 **ATM \-- ATM配置命令 \-- bandwidth**
 
 ------------------------------------------------------------------------
 
-[**[bandwidth]{lang="EN-US"}**]{#struct_0_19500_x1656_973183433}[命令用来配置接口的期望带宽。]{style="font-family:宋体"}
+**[bandwidth**]命令用来配置接口的期望带宽。
 
-[**[undo bandwidth]{lang="EN-US"}**]{#struct_0_19500_x1656_625631553}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo bandwidth**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1097678877}
+【命令】
 
-[**[bandwidth]{lang="EN-US"}***[ bandwidth-value]{lang="EN-US"}*]{#struct_0_19500_x1656_1997409708}
+**[bandwidth*** bandwidth-value*]
 
-[**[undo bandwidth]{lang="EN-US"}**]{#struct_0_19500_x1656_x1384497482}
+**[undo bandwidth**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x664196273}
+【缺省情况】
 
-[[接口的期望带宽＝接口的波特率÷]{style="font-family:宋体"}[1000]{lang="EN-US"}]{#struct_0_19500_x1656_1767957722}[（]{style="font-family:宋体"}[kbit/s]{lang="EN-US"}[）。]{style="font-family:宋体"}
+接口的期望带宽＝接口的波特率÷1000（kbit/s）。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x2019458333}
+【视图】
 
-[[VE]{lang="EN-US"}]{#struct_0_19500_x1656_266172675}[接口视图]{style="font-family:宋体"}[/VE]{lang="EN-US"}[子接口视图]{style="font-family:宋体"}
+VE接口视图/VE子接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x268041518}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x133982982}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x1404449738}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_14827760}
+【参数】
 
-[*[bandwidth-value]{lang="EN-US"}*]{#struct_0_19500_x1656_x1266528022}[：表示接口的期望带宽，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[400000000]{lang="EN-US"}[，单位为]{style="font-family:宋体"}[kbit/s]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[bandwidth-value*]：表示接口的期望带宽，取值范围为1～400000000，单位为kbit/s。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1972652262}
+【使用指导】
 
-[[接口的期望带宽会影响链路开销值，具体介绍请参见"三层技术]{style="font-family:宋体"}[-IP]{lang="EN-US"}]{#struct_0_19500_x1656_2005736949}[路由配置指导"中的"]{style="font-family:宋体"}[OSPF]{lang="EN-US"}["、"]{style="font-family:宋体"}[OSPFv3]{lang="EN-US"}["和"]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}["。]{style="font-family:宋体"}
+接口的期望带宽会影响链路开销值，具体介绍请参见"三层技术-IP路由配置指导"中的"OSPF"、"OSPFv3"和"IS-IS"。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1768023258}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x1418415711}[配置]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口]{style="font-family:宋体"}[Virtual-Ethernet2/4/1]{lang="EN-US"}[的期望带宽为]{style="font-family:宋体"}[50kbit/s]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置VE接口Virtual-Ethernet2/4/1的期望带宽为50kbit/s。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_71327702}
+\<Sysname\> system-view
 
-[\[Sysname\] interface virtual-ethernet 2/4/1]{lang="EN-US"}
+Sysname interface virtual-ethernet 2/4/1
 
-[\[Sysname-Virtual-Ethernet2/4/1\] bandwidth 50]{lang="EN-US"}
-:::
-
-::: {#-389412524 .myid}
-[]{#_Toc404785234}[]{#struct_0_19500_x1656_717292691}
+Sysname-Virtual-Ethernet2/4/1 bandwidth 50
 
 **ATM \-- ATM配置命令 \-- broadcast**
 
 ------------------------------------------------------------------------
 
-[**[broadcast]{lang="EN-US"}**]{#struct_0_19500_x1656_x26552307}[命令用来打开当前]{style="font-family:宋体"}[PVC]{lang="EN-US"}[或]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[的广播属性。]{style="font-family:宋体"}
+**[broadcast**]命令用来打开当前PVC或PVC-group的广播属性。
 
-[**[undo broadcast]{lang="EN-US"}**]{#struct_0_19500_x1656_x617709831}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo broadcast**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1074266873}
+【命令】
 
-[**[broadcast]{lang="EN-US"}**]{#struct_0_19500_x1656_x1901727508}
+**[broadcast**]
 
-[**[undo broadcast]{lang="EN-US"}**]{#struct_0_19500_x1656_1768088794}
+**[undo broadcast**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_223457004}
+【缺省情况】
 
-[[广播属性处于关闭状态。]{style="font-family:宋体"}]{#struct_0_19500_x1656_863701185}
+广播属性处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_434813451}
+【视图】
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x822453243}[视图]{style="font-family:宋体"}[/PVC-group]{lang="EN-US"}[视图]{style="font-family:宋体"}
+PVC视图/PVC-group视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x87597267}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x266277867}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x344764199}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x910147826}
+【使用指导】
 
-[[如果某]{style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x2058205517}[或]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[配置了广播属性，则]{style="font-family:宋体"}[PVC]{lang="EN-US"}[或]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[所属接口上的广播或组播报文都要在该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[或]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[上发送一份。]{style="font-family:宋体"}
+如果某PVC或PVC-group配置了广播属性，则PVC或PVC-group所属接口上的广播或组播报文都要在该PVC或PVC-group上发送一份。
 
-[[如果在]{style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_1768154330}[或]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[上需要发送广播或者组播报文，请务必配置此关键字。例如：]{style="font-family:宋体"}[PIM]{lang="EN-US"}[组播如果要想在以]{style="font-family:宋体"}[ATM]{lang="EN-US"}[链路相连的路由器间建立]{style="font-family:宋体"}[PIM]{lang="EN-US"}[邻居，则链路两端的]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口下的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[必须配置广播属性，因为建立]{style="font-family:宋体"}[PIM]{lang="EN-US"}[邻居时需要通过]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口来发送]{style="font-family:宋体"}[IP]{lang="EN-US"}[组播报文。]{style="font-family:宋体"}
+如果在PVC或PVC-group上需要发送广播或者组播报文，请务必配置此关键字。例如：PIM组播如果要想在以ATM链路相连的路由器间建立PIM邻居，则链路两端的ATM接口下的PVC必须配置广播属性，因为建立PIM邻居时需要通过ATM接口来发送IP组播报文。
 
-[[本命令不能在]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_x654957031}[下的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[下配置。]{style="font-family:宋体"}
+本命令不能在PVC-group下的PVC下配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1614429519}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x334970565}[打开]{style="font-family:宋体"}[PVC 0/100]{lang="EN-US"}[的广播属性。]{style="font-family:宋体"}
+\# 打开PVC 0/100的广播属性。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_x534256910}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/1.1]{lang="EN-US"}
+Sysname interface atm 2/4/1.1
 
-[\[Sysname-ATM2/4/1.1\] pvc 0/100]{lang="EN-US"}
+Sysname-ATM2/4/1.1 pvc 0/100
 
-[\[Sysname-ATM2/4/1.1-pvc-0/100\] broadcast]{lang="EN-US"}
-:::
-
-::: {#1948332219 .myid}
-[]{#_Toc404785235}[]{#struct_0_19500_x1656_165279931}[]{#_Toc350872243}[]{#_Toc345946913}
+Sysname-ATM2/4/1.1-pvc-0/100 broadcast
 
 **ATM \-- ATM配置命令 \-- default**
 
 ------------------------------------------------------------------------
 
-[**[default]{lang="EN-US"}**]{#struct_0_19500_x1656_363484395}[命令用来恢复当前接口的缺省配置。]{style="font-family:宋体"}
+**[default**]命令用来恢复当前接口的缺省配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x167739448}
+【命令】
 
-[**[default]{lang="EN-US"}**]{#struct_0_19500_x1656_1768219866}
+**[default**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1028185134}
+【视图】
 
-[[VE]{lang="EN-US"}]{#struct_0_19500_x1656_1101270146}[接口视图]{style="font-family:宋体"}[/VE]{lang="EN-US"}[子接口视图]{style="font-family:宋体"}
+VE接口视图/VE子接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1974019120}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x11658346}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x1795394385}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_874450926}
+【使用指导】
 
-[[接口下的某些配置恢复到缺省情况后，会对设备上当前运行的业务产生影响。建议您在执行该命令前，完全了解其对网络产生的影响。]{style="font-family:宋体"}]{#struct_0_19500_x1656_1487107722}
+接口下的某些配置恢复到缺省情况后，会对设备上当前运行的业务产生影响。建议您在执行该命令前，完全了解其对网络产生的影响。
 
-[[您可以在执行]{style="font-family:宋体"}]{#struct_0_19500_x1656_x578431710}**[default]{lang="EN-US"}**[命令后通过]{style="font-family:宋体"}**[display this]{lang="EN-US"}**[命令确认执行效果。对于未能成功恢复缺省的配置，建议您查阅相关功能的命令手册，手工执行恢复该配置缺省情况的命令。如果操作仍然不能成功，您可以通过设备的提示信息定位原因。]{style="font-family:宋体"}
+您可以在执行**default**命令后通过**display this**命令确认执行效果。对于未能成功恢复缺省的配置，建议您查阅相关功能的命令手册，手工执行恢复该配置缺省情况的命令。如果操作仍然不能成功，您可以通过设备的提示信息定位原因。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1768285402}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x616719596}[将]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口]{style="font-family:宋体"}[Virtual-Ethernet2/4/1]{lang="EN-US"}[恢复为缺省配置。]{style="font-family:宋体"}
+\# 将VE接口Virtual-Ethernet2/4/1恢复为缺省配置。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_1861878531}
+\<Sysname\> system-view
 
-[\[Sysname\] interface virtual-ethernet 2/4/1]{lang="EN-US"}
+Sysname interface virtual-ethernet 2/4/1
 
-[\[Sysname-Virtual-Ethernet2/4/1\] default]{lang="EN-US"}
-:::
-
-::: {#-1461383778 .myid}
-[]{#_Toc404785236}[]{#struct_0_19500_x1656_717991405}[]{#_Toc350872244}[]{#_Toc345946914}[]{#_Toc349121969}[]{#_Toc349122126}[]{#_Toc349121997}[]{#_Toc349122154}
+Sysname-Virtual-Ethernet2/4/1 default
 
 **ATM \-- ATM配置命令 \-- description**
 
 ------------------------------------------------------------------------
 
-[**[description]{lang="EN-US"}**]{#struct_0_19500_x1656_x87494957}[命令用来配置当前接口的描述信息。]{style="font-family:宋体"}
+**[description**]命令用来配置当前接口的描述信息。
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_19500_x1656_955246956}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo description**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x822447505}
+【命令】
 
-[**[description]{lang="EN-US"}**[ *text*]{lang="EN-US"}]{#struct_0_19500_x1656_x1226339139}
+**[description** *text*]
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_19500_x1656_578075646}
+**[undo description**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1768350938}
+【缺省情况】
 
-[[接口的描述信息为"]{style="font-family:宋体"}]{#struct_0_19500_x1656_x1069394965}*[该接口的接口名]{style="font-family:宋体"}* [Interface]{lang="EN-US"}["，比如：]{style="font-family:宋体"}[Virtual-Ethernet2/4/1 Interface]{lang="EN-US"}[。]{style="font-family:宋体"}
+接口的描述信息为"*该接口的接口名* Interface"，比如：Virtual-Ethernet2/4/1 Interface。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x924239064}
+【视图】
 
-[[VE]{lang="EN-US"}]{#struct_0_19500_x1656_x1209787869}[接口视图]{style="font-family:宋体"}[/VE]{lang="EN-US"}[子接口视图]{style="font-family:宋体"}
+VE接口视图/VE子接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x368847845}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x1178381823}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x1617428900}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1678779689}
+【参数】
 
-[*[text]{lang="EN-US"}*]{#struct_0_19500_x1656_x1872872628}[：接口描述信息，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[text*]：接口描述信息，为1～255个字符的字符串，区分大小写。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1768416474}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_2088636136}[配置]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口]{style="font-family:宋体"}[Virtual-Ethernet2/4/1]{lang="EN-US"}[的描述信息为"]{style="font-family:宋体"}[Virtual-Ethernet]{lang="EN-US"}["。]{style="font-family:宋体"}
+\# 配置VE接口Virtual-Ethernet2/4/1的描述信息为"Virtual-Ethernet"。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_x1684515736}
+\<Sysname\> system-view
 
-[\[Sysname\] interface virtual-ethernet 2/4/1]{lang="EN-US"}
+Sysname interface virtual-ethernet 2/4/1
 
-[\[Sysname-Virtual-Ethernet2/4/1\] description Virtual-Ethernet]{lang="EN-US"}
-:::
-
-::: {#-1424534882 .myid}
-[]{#_Toc404785237}[]{#struct_0_19500_x1656_x1626468289}[]{#_Toc348095174}[]{#_Toc328667708}
+Sysname-Virtual-Ethernet2/4/1 description Virtual-Ethernet
 
 **ATM \-- ATM配置命令 \-- display atm map-info**
 
 ------------------------------------------------------------------------
 
-[**[display atm map-info]{lang="EN-US"}**]{#struct_0_19500_x1656_x196418252}[命令用来显示]{style="font-family:宋体"}[PVC]{lang="EN-US"}[或]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[的映射信息。]{style="font-family:宋体"}
+**[display atm map-info**]命令用来显示PVC或PVC-group的映射信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x368803504}
+【命令】
 
-[**[display atm map-info]{lang="EN-US"}**[ \[ **interface** *interface-type* { *interface-number* \| *interface-number.subnumber* } \[ **pvc** { *pvc-name* \| *vpi/vci* } \| **pvc-group** *group-number* \] \]]{lang="EN-US"}]{#struct_0_19500_x1656_827424665}
+**[display atm map-info**[ [ **interface** *interface-type* { *interface-number* \| *interface-number.subnumber* } [ **pvc** { *pvc-name* \| *vpi/vci* } \| **pvc-group** *group-number* ] ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x131659151}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_19500_x1656_1767433434}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1621446373}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_2077854796}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_19500_x1656_328530419}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x1125564156}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_19500_x1656_x621776216}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1241638845}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type* { *interface-number* \| *interface-number.subnumber* }]{lang="EN-US"}]{#struct_0_19500_x1656_x656199050}[：显示指定接口的映射信息。支持]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口、]{style="font-family:宋体"}[ATM]{lang="EN-US"}[子接口。]{style="font-family:宋体"}
+**[interface**[ *interface-type* { *interface-number* \| *interface-number.subnumber* }]]：显示指定接口的映射信息。支持ATM接口、ATM子接口。
 
-[**[pvc]{lang="EN-US"}**]{#struct_0_19500_x1656_x1820908995}[：显示指定]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的映射信息。]{style="font-family:宋体"}
+**[pvc**]：显示指定PVC的映射信息。
 
-[*[pvc-name]{lang="EN-US"}*]{#struct_0_19500_x1656_1767498970}[：]{style="font-family:宋体"}[PVC]{lang="EN-US"}[名，长度为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[15]{lang="EN-US"}[个字符的字符串，区分大小写，]{style="font-family:宋体"}[PVC]{lang="EN-US"}[名中不允许使用"]{style="font-family:宋体"}[/]{lang="EN-US"}["和"]{style="font-family:宋体"}[-]{lang="EN-US"}["，如"]{style="font-family:宋体"}[1/20]{lang="EN-US"}["、"]{style="font-family:宋体"}[a-b]{lang="EN-US"}["就不允许作为]{style="font-family:宋体"}[PVC]{lang="EN-US"}[名。]{style="font-family:宋体"}
+*[pvc-name*]：PVC名，长度为1～15个字符的字符串，区分大小写，PVC名中不允许使用"/"和"-"，如"1/20"、"a-b"就不允许作为PVC名。
 
-[*[vpi/vci]{lang="EN-US"}*]{#struct_0_19500_x1656_x1597657490}[：]{style="font-family:宋体"}*[vpi]{lang="EN-US"}*[为]{style="font-family:宋体"}[VPI]{lang="EN-US"}[值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[；]{style="font-family:宋体"}*[vci]{lang="EN-US"}*[为]{style="font-family:宋体"}[VCI]{lang="EN-US"}[值，取值范围与接口类型相关，请参见"]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-8]{lang="EN-US"}](?-1864992396#_Ref337389143)["。]{style="font-family:宋体"}*[vpi]{lang="EN-US"}*[与]{style="font-family:宋体"}*[vci]{lang="EN-US"}*[不能同时为]{style="font-family:宋体"}[0]{lang="EN-US"}[。通常，]{style="font-family:宋体"}*[vci]{lang="EN-US"}*[取值]{style="font-family:宋体"}[0]{lang="EN-US"}[到]{style="font-family:宋体"}[31]{lang="EN-US"}[保留用于特定用途，建议用户不要使用。]{style="font-family:宋体"}
+*[vpi/vci*]：*vpi*为VPI值，取值范围为0～255；*vci*为VCI值，取值范围与接口类型相关，请参见"[表]1-8(?-1864992396#_Ref337389143)"。*vpi*与*vci*不能同时为0。通常，*vci*取值0到31保留用于特定用途，建议用户不要使用。
 
-[**[pvc-group]{lang="EN-US"}**[ *group-number*]{lang="EN-US"}]{#struct_0_19500_x1656_1303757714}[：显示指定]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[的映射信息。]{style="font-family:宋体"}*[group-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[128]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[pvc-group** *group-number*]：显示指定PVC-group的映射信息。*group-number*表示PVC-group编号，取值范围为1～128。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_2091745627}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果不指定接口，则显示所有接口下]{style="font-family:宋体"}]{#struct_0_19500_x1656_x992957984}[所有]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}[和]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}[的映射信息。]{style="font-family:宋体"}
+·如果不指定接口，则显示所有接口下所有PVC和PVC-group的映射信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定接口而不指定]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x1190356179}[或]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}[，则显示指定接口下所有]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}[和]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}[的映射信息。]{lang="EN-US" style="font-family:宋体"}
+·如果指定接口而不指定PVC或PVC-group，则显示指定接口下所有PVC和PVC-group的映射信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定接口并且指定]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x1588147321}[或]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}[，则显示指定接口下指定]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}[的映射信息。]{lang="EN-US" style="font-family:宋体"}
+·如果指定接口并且指定PVC或PVC-group，则显示指定接口下指定PVC或PVC-group的映射信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1205541326}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_1395169248}[显示所有接口下所有]{style="font-family:宋体"}[PVC]{lang="EN-US"}[和]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[的映射信息。]{style="font-family:宋体"}
+\# 显示所有接口下所有PVC和PVC-group的映射信息。
 
-[[\<Sysname\> display atm map-info]{lang="EN-US"}]{#struct_0_19500_x1656_1767957723}
+\<Sysname\> display atm map-info
 
-[ATM2/4/0]{lang="EN-US"}
+ATM2/4/0
 
-[  PVC 1/32:]{lang="EN-US"}
+  PVC 1/32:
 
-[    Protocol: PPP, Interface: Virtual-Template10, State: UP]{lang="EN-US"}
+    Protocol: PPP, Interface: Virtual-Template10, State: UP
 
-[    Protocol: IP, IP address: 100.11.1.1, State: UP]{lang="EN-US"}
+    Protocol: IP, IP address: 100.11.1.1, State: UP
 
-[  PVC-group 1:]{lang="EN-US"}
+  PVC-group 1:
 
-[    Protocol: IP InARP, IP address: 100.22.22.2, Interval: 2 minutes, State: UP]{lang="EN-US"}
+    Protocol: IP InARP, IP address: 100.22.22.2, Interval: 2 minutes, State: UP
 
-[    Protocol: ETH, Interface: Virtual-Ethernet2, State: UP]{lang="EN-US"}
+    Protocol: ETH, Interface: Virtual-Ethernet2, State: UP
 
-[ATM2/4/1]{lang="EN-US"}
+ATM2/4/1
 
-[  PVC 2/32:]{lang="EN-US"}
+  PVC 2/32:
 
-[    Protocol: IP InARP, IP address: no IP address, Interval: 3 minutes, State: UP]{lang="EN-US"}
+    Protocol: IP InARP, IP address: no IP address, Interval: 3 minutes, State: UP
 
-[[表1-1 ]{lang="EN-US"}[display atm map-info]{lang="EN-US"}]{#struct_0_19500_x1656_x2019523869}[命令显示信息描述表]{style="font-family:黑体"}
+表1-1 display atm map-info命令显示信息描述表
 
-[]{#table_struct_0_x1629839683}[[字段]{style="font-family:黑体"}]{#struct_0_19500_x1656_1848164167}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_19500_x1656_788754765}
+描述
 
-[[ATM2/4/0]{lang="EN-US"}]{#struct_0_19500_x1656_x1759200481}
+ATM2/4/0
 
-[[接口名称]{style="font-family:宋体"}]{#struct_0_19500_x1656_1768023259}
+接口名称
 
-[[PVC 1/32]{lang="EN-US"}]{#struct_0_19500_x1656_x1418350175}
+PVC 1/32
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_1942515072}[的]{style="font-family:宋体"}[VPI/VCI]{lang="EN-US"}[值对]{style="font-family:宋体"}
+PVC的VPI/VCI值对
 
-[[PVC-group 1]{lang="EN-US"}]{#struct_0_19500_x1656_x151198371}
+PVC-group 1
 
-[[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_x855730471}[名称]{style="font-family:宋体"}
+PVC-group名称
 
-[[Protocol]{lang="EN-US"}]{#struct_0_19500_x1656_x1519324501}
+Protocol
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_1893673377}[或]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[支持的上层协议的类型，可能的取值及含义如下：]{style="font-family:宋体"}
+PVC或PVC-group支持的上层协议的类型，可能的取值及含义如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PPP]{lang="EN-US"}]{#struct_0_19500_x1656_1768088795}[：]{lang="EN-US" style="font-family:宋体"}[PPP]{lang="EN-US"}[协议]{lang="EN-US" style="font-family:宋体"}
+·PPP：PPP协议
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IP]{lang="EN-US"}]{#struct_0_19500_x1656_223522540}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[协议]{lang="EN-US" style="font-family:宋体"}
+·IP：IP协议
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IP InARP ]{lang="EN-US"}]{#struct_0_19500_x1656_1659355473}[：]{lang="EN-US" style="font-family:宋体"}[IP InARP]{lang="EN-US"}[协议]{lang="EN-US" style="font-family:宋体"}
+·IP InARP ：IP InARP协议
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ETH]{lang="EN-US"}]{#struct_0_19500_x1656_433446445}[：以太网协议]{lang="EN-US" style="font-family:宋体"}
+·ETH：以太网协议
 
-[[State]{lang="EN-US"}]{#struct_0_19500_x1656_x900518347}
+State
 
-[[对应映射的状态，可能的取值及含义如下：]{style="font-family:宋体"}]{#struct_0_19500_x1656_1768154331}
+对应映射的状态，可能的取值及含义如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_19500_x1656_x655022567}[：对于]{lang="EN-US" style="font-family:宋体"}[PPP]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[（包括]{lang="EN-US" style="font-family:宋体"}[InARP]{lang="EN-US"}[）映射，表示其]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}[状态为]{lang="EN-US" style="font-family:宋体"}[UP]{lang="EN-US"}[；对于]{lang="EN-US" style="font-family:宋体"}[ETH]{lang="EN-US"}[映射，表示其]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}[状态和]{lang="EN-US" style="font-family:宋体"}[VE]{lang="EN-US"}[口状态均为]{lang="EN-US" style="font-family:宋体"}[UP]{lang="EN-US"}
+·UP：对于PPP、IP（包括InARP）映射，表示其PVC或PVC-group状态为UP；对于ETH映射，表示其PVC或PVC-group状态和VE口状态均为UP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_19500_x1656_x1647703956}[：对于]{lang="EN-US" style="font-family:宋体"}[PPP]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[（包括]{lang="EN-US" style="font-family:宋体"}[InARP]{lang="EN-US"}[）映射，表示其]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}[状态为]{lang="EN-US" style="font-family:宋体"}[DOWN]{lang="EN-US"}[；对于]{lang="EN-US" style="font-family:宋体"}[ETH]{lang="EN-US"}[映射，表示其]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}[状态和]{lang="EN-US" style="font-family:宋体"}[VE]{lang="EN-US"}[口状态至少一个为]{lang="EN-US" style="font-family:宋体"}[DOWN]{lang="EN-US"}
+·DOWN：对于PPP、IP（包括InARP）映射，表示其PVC或PVC-group状态为DOWN；对于ETH映射，表示其PVC或PVC-group状态和VE口状态至少一个为DOWN
 
-[[IP address]{lang="EN-US"}]{#struct_0_19500_x1656_x782060521}
+IP address
 
-[[IP]{lang="EN-US"}]{#struct_0_19500_x1656_x1101642745}[地址]{style="font-family:宋体"}
+IP地址
 
-[[Interval]{lang="EN-US"}]{#struct_0_19500_x1656_1768219867}
+Interval
 
-[[发送]{style="font-family:宋体"}[InARP]{lang="EN-US"}]{#struct_0_19500_x1656_x1028250670}[报文的间隔时间，单位为分钟]{style="font-family:宋体"}
+发送InARP报文的间隔时间，单位为分钟
 
-[[Interface]{lang="EN-US"}]{#struct_0_19500_x1656_2014113212}
+Interface
 
-[[承载]{style="font-family:宋体"}[PPPoA]{lang="EN-US"}]{#struct_0_19500_x1656_1313118833}[或]{style="font-family:宋体"}[EoA]{lang="EN-US"}[的虚拟接口]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-892522285 .myid}
-[]{#_Toc404785238}[]{#struct_0_19500_x1656_278112733}[]{#_Toc348095175}
+承载PPPoA或EoA的虚拟接口
 
 **ATM \-- ATM配置命令 \-- display atm pvc-group**
 
 ------------------------------------------------------------------------
 
-[**[display atm pvc-group]{lang="EN-US"}**]{#struct_0_19500_x1656_x212285345}[命令用来显示]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[display atm pvc-group**]命令用来显示PVC-group的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1110822968}
+【命令】
 
-[**[display atm pvc-group]{lang="EN-US"}**[ \[ **interface** *interface-type* { *interface-number* \| *interface-number.subnumber* } \[ **pvc-group** *group-number* \] \]]{lang="EN-US"}]{#struct_0_19500_x1656_1768285403}
+**[display atm pvc-group**[ [ **interface** *interface-type* { *interface-number* \| *interface-number.subnumber* } [ **pvc-group** *group-number* ] ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x616654060}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_19500_x1656_x829119156}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1689183675}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1589766413}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_19500_x1656_x184721339}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x1566328405}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_19500_x1656_x1631025322}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1768350939}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type* { *interface-number* \| *interface-number.subnumber* }]{lang="EN-US"}]{#struct_0_19500_x1656_x1069460501}[：显示指定接口的]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[信息。支持]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口、]{style="font-family:宋体"}[ATM]{lang="EN-US"}[子接口。]{style="font-family:宋体"}
+**[interface**[ *interface-type* { *interface-number* \| *interface-number.subnumber* }]]：显示指定接口的PVC-group信息。支持ATM接口、ATM子接口。
 
-[**[pvc-group]{lang="EN-US"}**[ *group-number*]{lang="EN-US"}]{#struct_0_19500_x1656_1231263777}[：显示指定]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[的信息。]{style="font-family:宋体"}*[group-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[128]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[pvc-group** *group-number*]：显示指定PVC-group的信息。*group-number*表示PVC-group编号，取值范围为1～128。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1120569849}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果不指定接口，则显示所有接口的]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_513428652}[的简要信息。]{lang="EN-US" style="font-family:宋体"}
+·如果不指定接口，则显示所有接口的PVC-group的简要信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定接口而不指定]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_x1572922591}[，则显示指定接口的所有]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}[的简要信息。]{lang="EN-US" style="font-family:宋体"}
+·如果指定接口而不指定PVC-group，则显示指定接口的所有PVC-group的简要信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定接口并且指定]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_x383732739}[，则显示指定接口的指定]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}[的详细信息。]{lang="EN-US" style="font-family:宋体"}
+·如果指定接口并且指定PVC-group，则显示指定接口的指定PVC-group的详细信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x421307430}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_472157279}[显示所有接口的]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[的简要信息。]{style="font-family:宋体"}
+\# 显示所有接口的PVC-group的简要信息。
 
-[[\<Sysname\> display atm pvc-group]{lang="EN-US"}]{#struct_0_19500_x1656_1768416475}
+\<Sysname\> display atm pvc-group
 
-[ATM2/4/0, State UP]{lang="EN-US"}
+ATM2/4/0, State UP
 
-[  PVC-group: 1]{lang="EN-US"}
+  PVC-group: 1
 
-[    Encapsulation: SNAP, Protocol: IP]{lang="EN-US"}
+    Encapsulation: SNAP, Protocol: IP
 
-[    VPI/VCI  PVC name   Precedence        State]{lang="EN-US"}
+    VPI/VCI  PVC name   Precedence        State
 
-[    1/32     aa         Default           UP]{lang="EN-US"}
+    1/32     aa         Default           UP
 
-[    2/32     N/A        2-3               UP]{lang="EN-US"}
+    2/32     N/A        2-3               UP
 
-[    3/32     N/A        5                 UP]{lang="EN-US"}
+    3/32     N/A        5                 UP
 
-[  PVC-group: 3]{lang="EN-US"}
+  PVC-group: 3
 
-[    Encapsulation: SNAP, Protocol: IP]{lang="EN-US"}
+    Encapsulation: SNAP, Protocol: IP
 
-[    VPI/VCI  PVC name   Precedence        State]{lang="EN-US"}
+    VPI/VCI  PVC name   Precedence        State
 
-[    3/64     bb         4                 UP]{lang="EN-US"}
+    3/64     bb         4                 UP
 
-[    4/64     N/A        Default           UP]{lang="EN-US"}
+    4/64     N/A        Default           UP
 
-[ ]{lang="EN-US"}
+ATM2/4/1, State UP
 
-[ATM2/4/1, State UP]{lang="EN-US"}
+  PVC-group: 1
 
-[  PVC-group: 1]{lang="EN-US"}
+    Encapsulation: SNAP, Protocol: IP
 
-[    Encapsulation: SNAP, Protocol: IP]{lang="EN-US"}
+    VPI/VCI  PVC name   Precedence        State
 
-[    VPI/VCI  PVC name   Precedence        State]{lang="EN-US"}
+    1/32     aa         Default           UP
 
-[    1/32     aa         Default           UP]{lang="EN-US"}
+表1-2 display atm pvc-group命令显示信息描述表
 
-[[表1-2 ]{lang="EN-US"}[display atm pvc-group]{lang="EN-US"}]{#struct_0_19500_x1656_2088570600}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1628664732}[[字段]{style="font-family:黑体"}]{#struct_0_19500_x1656_x2046792940}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_19500_x1656_1767433435}
+ATM2/4/0, State UP
 
-[[ATM2/4/0, State UP ]{lang="EN-US"}]{#struct_0_19500_x1656_x1621511909}
+PVC-group所属的接口名及接口物理状态和管理状态
 
-[[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_x1677080407}[所属的接口名及接口物理状态和管理状态]{style="font-family:宋体"}
+如果不是子接口，可能的状态及含义如下：
 
-[[如果不是子接口，可能的状态及含义如下：]{style="font-family:宋体"}]{#struct_0_19500_x1656_x589198596}
+·UP：该接口的管理状态和物理状态均为开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_19500_x1656_217685893}[：该接口的管理状态和物理状态均为开启]{style="font-family:宋体"}
+·DOWN：表示该接口的管理状态为开启，但物理状态为关闭（可能因为没有物理连线或者线路故障）或者该接口已经通过**shutdown**命令被关闭，即管理状态为关闭
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_19500_x1656_944210601}[：表示该接口的管理状态为开启，但物理状态为关闭（可能因为没有物理连线或者线路故障）或者该接口已经通过]{style="font-family:宋体"}**[shutdown]{lang="EN-US"}**[命令被关闭，即管理状态为关闭]{style="font-family:宋体"}
+如果是子接口，可能的状态及含义如下：
 
-[[如果是子接口，可能的状态及含义如下：]{style="font-family:宋体"}]{#struct_0_19500_x1656_x324360674}
+·UP：该接口的管理状态和其父接口的物理状态和管理状态均为开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_19500_x1656_1767498971}[：该接口的管理状态和其父接口的物理状态和管理状态均为开启]{style="font-family:宋体"}
+·DOWN：表示该接口或其父接口已经通过shutdown命令被关闭或者其父接口物理状态为关闭
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_19500_x1656_x1597723026}[：表示该接口或其父接口已经通过]{style="font-family:宋体"}[shutdown]{lang="EN-US"}[命令被关闭或者其父接口物理状态为关闭]{style="font-family:宋体"}
+PVC-group：1
 
-[[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_977236073}[：]{style="font-family:宋体"}[1]{lang="EN-US"}
+PVC-group对应的PVC-group编号
 
-[[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_1481528110}[对应的]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[编号]{style="font-family:宋体"}
+Encapsulation
 
-[[Encapsulation]{lang="EN-US"}]{#struct_0_19500_x1656_x191901192}
+PVC-group的AAL5封装类型，目前只可能取值SNAP，表示LLC（Logical Link Control，逻辑链接控制）/SNAP（Subnet Access Protocol，子网访问协议）封装类型
 
-[[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_x1180716552}[的]{style="font-family:宋体"}[AAL5]{lang="EN-US"}[封装类型，目前只可能取值]{style="font-family:宋体"}[SNAP]{lang="EN-US"}[，表示]{style="font-family:宋体"}[LLC]{lang="EN-US"}[（]{style="font-family:宋体"}[Logical Link Control]{lang="EN-US"}[，逻辑链接控制）]{style="font-family:宋体"}[/SNAP]{lang="EN-US"}[（]{style="font-family:宋体"}[Subnet Access Protocol]{lang="EN-US"}[，子网访问协议）封装类型]{style="font-family:宋体"}
+Protocol
 
-[[Protocol]{lang="EN-US"}]{#struct_0_19500_x1656_1767957720}
+PVC-group支持的上层协议的类型，可能的取值及含义如下：
 
-[[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_x2019327261}[支持的上层协议的类型，可能的取值及含义如下：]{style="font-family:宋体"}
+·PPP：PPP协议
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PPP]{lang="EN-US"}]{#struct_0_19500_x1656_2040732261}[：]{lang="EN-US" style="font-family:宋体"}[PPP]{lang="EN-US"}[协议]{lang="EN-US" style="font-family:宋体"}
+·IP：IP协议
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IP]{lang="EN-US"}]{#struct_0_19500_x1656_1633439238}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[协议]{lang="EN-US" style="font-family:宋体"}
+·ETH：以太协议
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ETH]{lang="EN-US"}]{#struct_0_19500_x1656_x1653455658}[：以太协议]{lang="EN-US" style="font-family:宋体"}
+·None：未配置任何协议
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[None]{lang="EN-US"}]{#struct_0_19500_x1656_1768023256}[：未配置任何协议]{lang="EN-US" style="font-family:宋体"}
+VPI/VCI
 
-[[VPI/VCI]{lang="EN-US"}]{#struct_0_19500_x1656_x1418808927}
+PVC的VPI/VCI值对
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_81068945}[的]{style="font-family:宋体"}[VPI/VCI]{lang="EN-US"}[值对]{style="font-family:宋体"}
+PVC name
 
-[[PVC name]{lang="EN-US"}]{#struct_0_19500_x1656_982443882}
+PVC名称，N/A表示没有PVC名称
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x968886818}[名称，]{style="font-family:宋体"}[N/A]{lang="EN-US"}[表示没有]{style="font-family:宋体"}[PVC]{lang="EN-US"}[名称]{style="font-family:宋体"}
+Precedence
 
-[[Precedence]{lang="EN-US"}]{#struct_0_19500_x1656_1768088792}
+PVC-group下PVC承载的IP包的优先级，可能的取值及含义如下：
 
-[[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_223850220}[下]{style="font-family:宋体"}[PVC]{lang="EN-US"}[承载的]{style="font-family:宋体"}[IP]{lang="EN-US"}[包的优先级，可能的取值及含义如下：]{style="font-family:宋体"}
+·Default：表示该PVC为缺省PVC，则没有指定PVC承载的优先级别的IP包将从缺省PVC进行传输
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Default]{lang="EN-US"}]{#struct_0_19500_x1656_x1782779405}[：表示该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[为缺省]{style="font-family:宋体"}[PVC]{lang="EN-US"}[，则没有指定]{style="font-family:宋体"}[PVC]{lang="EN-US"}[承载的优先级别的]{style="font-family:宋体"}[IP]{lang="EN-US"}[包将从缺省]{style="font-family:宋体"}[PVC]{lang="EN-US"}[进行传输]{style="font-family:宋体"}
+·a-b：表示该PVC承载的IP包的最小优先级到最大优先级（a，b表示数字0\~7，a\<b）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[a-b]{lang="EN-US"}]{#struct_0_19500_x1656_x82908222}[：表示该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[承载的]{style="font-family:宋体"}[IP]{lang="EN-US"}[包的最小优先级到最大优先级（]{style="font-family:宋体"}[a]{lang="EN-US"}[，]{style="font-family:宋体"}[b]{lang="EN-US"}[表示数字]{style="font-family:宋体"}[0\~7]{lang="EN-US"}[，]{style="font-family:宋体"}[a\<b]{lang="EN-US"}[）]{style="font-family:宋体"}
+·c：表示该PVC承载的IP包的优先级（c表示数字0\~7）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[c]{lang="EN-US"}]{#struct_0_19500_x1656_x876287572}[：表示该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[承载的]{style="font-family:宋体"}[IP]{lang="EN-US"}[包的优先级（]{style="font-family:宋体"}[c]{lang="EN-US"}[表示数字]{style="font-family:宋体"}[0\~7]{lang="EN-US"}[）]{style="font-family:宋体"}
+·-：表示该PVC下没有配置承载IP包优先级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[-]{lang="EN-US"}]{#struct_0_19500_x1656_1768154328}[：表示该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[下没有配置承载]{style="font-family:宋体"}[IP]{lang="EN-US"}[包优先级]{style="font-family:宋体"}
+State
 
-[[State]{lang="EN-US"}]{#struct_0_19500_x1656_x655481318}
+PVC的状态，可能的取值及含义如下：
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_670858734}[的状态，可能的取值及含义如下：]{style="font-family:宋体"}
+·UP：该PVC所属ATM接口的状态、shutdown状态和OAM状态均为UP状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_19500_x1656_1785160556}[：该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[所属]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口的状态、]{style="font-family:宋体"}[shutdown]{lang="EN-US"}[状态和]{style="font-family:宋体"}[OAM]{lang="EN-US"}[状态均为]{style="font-family:宋体"}[UP]{lang="EN-US"}[状态]{style="font-family:宋体"}
+·DOWN：PVC所属ATM接口的状态、shutdown状态和OAM状态中至少其中一个为DOWN状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_19500_x1656_1768219864}[：]{style="font-family:宋体"}[PVC]{lang="EN-US"}[所属]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口的状态、]{style="font-family:宋体"}[shutdown]{lang="EN-US"}[状态和]{style="font-family:宋体"}[OAM]{lang="EN-US"}[状态中至少其中一个为]{style="font-family:宋体"}[DOWN]{lang="EN-US"}[状态]{style="font-family:宋体"}
+\# 显示指定PVC-group的详细信息。
 
-[ ]{lang="EN-US"}
+\<Sysname\> display atm pvc-group interface atm 2/4/0 pvc-group 1
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x1028054062}[显示指定]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[的详细信息。]{style="font-family:宋体"}
+ATM2/4/0, PVC-group: 1
 
-[[\<Sysname\> display atm pvc-group interface atm 2/4/0 pvc-group 1]{lang="EN-US"}]{#struct_0_19500_x1656_1768285400}
+  Encapsulation: SNAP, Protocol: None
 
-[ATM2/4/0, PVC-group: 1]{lang="EN-US"}
+  PVC VPI/VCI: 0/34
 
-[  Encapsulation: SNAP, Protocol: None]{lang="EN-US"}
+    Precedence: default
 
-[  PVC VPI/VCI: 0/34]{lang="EN-US"}
+    Service-type: CBR, Output-pcr: 200 kbps, CDVT: 500 us
 
-[    Precedence: default]{lang="EN-US"}
+    Transmit-Priority: 0
 
-[    Service-type: CBR, Output-pcr: 200 kbps, CDVT: 500 us]{lang="EN-US"}
+    OAM loopback interval: 0 sec(disabled), OAM loopback retry interval: 1 sec
 
-[    Transmit-Priority: 0]{lang="EN-US"}
+    OAM loopback retry count (up/down): 3/5
 
-[    OAM loopback interval: 0 sec(disabled), OAM loopback retry interval: 1 sec]{lang="EN-US"}
+    OAM AIS-RDI count (up/down): 3/1          
 
-[    OAM loopback retry count (up/down): 3/5]{lang="EN-US"}
+    Interface State: UP, OAM State: UP, PVC State: UP
 
-[    OAM AIS-RDI count (up/down): 3/1           ]{lang="EN-US"}
+    Input: 0 packets, 0 bytes, 0 errors
 
-[    Interface State: UP, OAM State: UP, PVC State: UP]{lang="EN-US"}
+    Output: 0 packets, 0 bytes, 0 errors
 
-[    Input: 0 packets, 0 bytes, 0 errors]{lang="EN-US"}
+    Output queue: (Urgent queuing : Size/Length/Discards)  0/100/0
 
-[    Output: 0 packets, 0 bytes, 0 errors]{lang="EN-US"}
+    Output queue: (Protocol queuing : Size/Length/Discards)  0/500/0
 
-[    Output queue: (Urgent queuing : Size/Length/Discards)  0/100/0]{lang="EN-US"}
+    Output queue: (FIFO queuing : Size/Length/Discards)  0/75/0
 
-[    Output queue: (Protocol queuing : Size/Length/Discards)  0/500/0]{lang="EN-US"}
+    OAM cells received: 42
 
-[    Output queue: (FIFO queuing : Size/Length/Discards)  0/75/0]{lang="EN-US"}
+      F5 Loopback: 0, F5 AIS: 42, F5 RDI: 0
 
-[    OAM cells received: 42]{lang="EN-US"}
+    OAM cells sent: 0
 
-[      F5 Loopback: 0, F5 AIS: 42, F5 RDI: 0]{lang="EN-US"}
+      F5 Loopback: 0
 
-[    OAM cells sent: 0]{lang="EN-US"}
+    OAM cell drops: 0
 
-[      F5 Loopback: 0]{lang="EN-US"}
+    OAM AIS State: No AIS Alarm
 
-[    OAM cell drops: 0]{lang="EN-US"}
+    OAM RDI State: No RDI Alarm
 
-[    OAM AIS State: No AIS Alarm]{lang="EN-US"}
+    OAM CC State: No CC Alarm
 
-[    OAM RDI State: No RDI Alarm]{lang="EN-US"}
+  PVC VPI/VCI: 0/35
 
-[    OAM CC State: No CC Alarm]{lang="EN-US"}
+    Precedence: -
 
-[  PVC VPI/VCI: 0/35]{lang="EN-US"}
+    Service-type: UBR, Output-pcr: 200 kbps
 
-[    Precedence: -]{lang="EN-US"}
+    Transmit-Priority: 0
 
-[    Service-type: UBR, Output-pcr: 200 kbps]{lang="EN-US"}
+    OAM loopback interval: 0 sec(disabled), OAM loopback retry interval: 1 sec
 
-[    Transmit-Priority: 0]{lang="EN-US"}
+    OAM loopback retry count (up/down): 3/5
 
-[    OAM loopback interval: 0 sec(disabled), OAM loopback retry interval: 1 sec]{lang="EN-US"}
+    OAM AIS-RDI count (up/down): 3/1
 
-[    OAM loopback retry count (up/down): 3/5]{lang="EN-US"}
+    Interface State: UP, OAM State: UP, PVC State: UP
 
-[    OAM AIS-RDI count (up/down): 3/1]{lang="EN-US"}
+    Input: 0 packets, 0 bytes, 0 errors
 
-[    Interface State: UP, OAM State: UP, PVC State: UP]{lang="EN-US"}
+    Output: 0 packets, 0 bytes, 0 errors
 
-[    Input: 0 packets, 0 bytes, 0 errors]{lang="EN-US"}
+    Output queue: (Urgent queuing : Size/Length/Discards)  0/100/0
 
-[    Output: 0 packets, 0 bytes, 0 errors]{lang="EN-US"}
+    Output queue: (Protocol queuing : Size/Length/Discards)  0/500/0
 
-[    Output queue: (Urgent queuing : Size/Length/Discards)  0/100/0]{lang="EN-US"}
+    Output queue: (FIFO queuing : Size/Length/Discards)  0/75/0
 
-[    Output queue: (Protocol queuing : Size/Length/Discards)  0/500/0]{lang="EN-US"}
+    OAM cells received: 42
 
-[    Output queue: (FIFO queuing : Size/Length/Discards)  0/75/0]{lang="EN-US"}
+      F5 Loopback: 0, F5 AIS: 42, F5 RDI: 0
 
-[    OAM cells received: 42]{lang="EN-US"}
+    OAM cells sent: 0
 
-[      F5 Loopback: 0, F5 AIS: 42, F5 RDI: 0]{lang="EN-US"}
+      F5 Loopback: 0
 
-[    OAM cells sent: 0]{lang="EN-US"}
+    OAM cell drops: 0
 
-[      F5 Loopback: 0]{lang="EN-US"}
+    OAM AIS State: No AIS Alarm
 
-[    OAM cell drops: 0]{lang="EN-US"}
+    OAM RDI State: No RDI Alarm
 
-[    OAM AIS State: No AIS Alarm]{lang="EN-US"}
+    OAM CC State: No CC Alarm
 
-[    OAM RDI State: No RDI Alarm]{lang="EN-US"}
+表1-3 display atm pvc-group命令指定PVC-group显示信息描述表
 
-[    OAM CC State: No CC Alarm]{lang="EN-US"}
+字段
 
-[[表1-3 ]{lang="EN-US"}[display atm pvc-group]{lang="EN-US"}]{#struct_0_19500_x1656_x616850668}[命令指定]{style="font-family:黑体"}[PVC-group]{lang="EN-US"}[显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x1631822784}[[字段]{style="font-family:黑体"}]{#struct_0_19500_x1656_1768350936}
+ATM2/4/0,PVC-group： 1
 
-[[描述]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1069263893}
+表示PVC-group所在接口及对应的PVC-group编号
 
-[[ATM2/4/0,PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_2004910434}[：]{style="font-family:宋体"}[ 1]{lang="EN-US"}
+Encapsulation
 
-[[表示]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_752490013}[所在接口及对应的]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[编号]{style="font-family:宋体"}
+PVC-group的AAL5封装类型，目前只可能取值SNAP，表示LLC（Logical Link Control，逻辑链接控制）/SNAP（Subnet Access Protocol，子网访问协议）封装类型
 
-[[Encapsulation]{lang="EN-US"}]{#struct_0_19500_x1656_1548032831}
+Protocol
 
-[[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_160520866}[的]{style="font-family:宋体"}[AAL5]{lang="EN-US"}[封装类型，目前只可能取值]{style="font-family:宋体"}[SNAP]{lang="EN-US"}[，表示]{style="font-family:宋体"}[LLC]{lang="EN-US"}[（]{style="font-family:宋体"}[Logical Link Control]{lang="EN-US"}[，逻辑链接控制）]{style="font-family:宋体"}[/SNAP]{lang="EN-US"}[（]{style="font-family:宋体"}[Subnet Access Protocol]{lang="EN-US"}[，子网访问协议）封装类型]{style="font-family:宋体"}
+PVC-group支持的上层协议的类型，可能的取值及含义如下：
 
-[[Protocol]{lang="EN-US"}]{#struct_0_19500_x1656_1768416472}
+·PPP：PPP协议
 
-[[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_2088242920}[支持的上层协议的类型，可能的取值及含义如下：]{style="font-family:宋体"}
+·IP：IP协议
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PPP]{lang="EN-US"}]{#struct_0_19500_x1656_1811775863}[：]{lang="EN-US" style="font-family:宋体"}[PPP]{lang="EN-US"}[协议]{lang="EN-US" style="font-family:宋体"}
+·ETH：以太协议
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IP]{lang="EN-US"}]{#struct_0_19500_x1656_100754075}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[协议]{lang="EN-US" style="font-family:宋体"}
+·None：未配置任何协议
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ETH]{lang="EN-US"}]{#struct_0_19500_x1656_1839407940}[：以太协议]{lang="EN-US" style="font-family:宋体"}
+PVC VPI/ VCI
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[None]{lang="EN-US"}]{#struct_0_19500_x1656_x1543915838}[：未配置任何协议]{lang="EN-US" style="font-family:宋体"}
+PVC的VPI/VCI值对
 
-[[PVC VPI/ VCI]{lang="EN-US"}]{#struct_0_19500_x1656_1767433432}
+Precedence
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x1621577445}[的]{style="font-family:宋体"}[VPI/VCI]{lang="EN-US"}[值对]{style="font-family:宋体"}
+PVC-group下PVC承载的IP包的优先级，可能的取值及含义如下：
 
-[[Precedence]{lang="EN-US"}]{#struct_0_19500_x1656_x999629710}
+·Default：表示该PVC为缺省PVC，则没有指定PVC承载的优先级别的IP包将从缺省PVC进行传输
 
-[[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_x17953549}[下]{style="font-family:宋体"}[PVC]{lang="EN-US"}[承载的]{style="font-family:宋体"}[IP]{lang="EN-US"}[包的优先级，可能的取值及含义如下：]{style="font-family:宋体"}
+·a-b：表示该PVC承载的IP包的最小优先级到最大优先级（a，b表示数字0\~7，a\<b）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Default]{lang="EN-US"}]{#struct_0_19500_x1656_718233658}[：表示该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[为缺省]{style="font-family:宋体"}[PVC]{lang="EN-US"}[，则没有指定]{style="font-family:宋体"}[PVC]{lang="EN-US"}[承载的优先级别的]{style="font-family:宋体"}[IP]{lang="EN-US"}[包将从缺省]{style="font-family:宋体"}[PVC]{lang="EN-US"}[进行传输]{style="font-family:宋体"}
+· c：表示该PVC承载的IP包的优先级（c表示数字0\~7）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[a-b]{lang="EN-US"}]{#struct_0_19500_x1656_507594441}[：表示该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[承载的]{style="font-family:宋体"}[IP]{lang="EN-US"}[包的最小优先级到最大优先级（]{style="font-family:宋体"}[a]{lang="EN-US"}[，]{style="font-family:宋体"}[b]{lang="EN-US"}[表示数字]{style="font-family:宋体"}[0\~7]{lang="EN-US"}[，]{style="font-family:宋体"}[a\<b]{lang="EN-US"}[）]{style="font-family:宋体"}
+·- ：表示该PVC下没有配置承载IP包优先级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ c]{lang="EN-US"}]{#struct_0_19500_x1656_1767498968}[：表示该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[承载的]{style="font-family:宋体"}[IP]{lang="EN-US"}[包的优先级（]{style="font-family:宋体"}[c]{lang="EN-US"}[表示数字]{style="font-family:宋体"}[0\~7]{lang="EN-US"}[）]{style="font-family:宋体"}
+Service-type
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[- ]{lang="EN-US"}]{#struct_0_19500_x1656_x1598181779}[：表示该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[下没有配置承载]{style="font-family:宋体"}[IP]{lang="EN-US"}[包优先级]{style="font-family:宋体"}
+服务类型，可能的类型如下：
 
-[[Service-type]{lang="EN-US"}]{#struct_0_19500_x1656_x585312122}
+·CBR：恒定速率
 
-[[服务类型，可能的类型如下：]{style="font-family:宋体"}]{#struct_0_19500_x1656_x674604176}
+·UBR：非确定速率
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[CBR]{lang="EN-US"}]{#struct_0_19500_x1656_1767957721}[：恒定速率]{lang="EN-US" style="font-family:宋体"}
+·VBR-NRT：非实时可变速率
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UBR]{lang="EN-US"}]{#struct_0_19500_x1656_x2019392797}[：非确定速率]{lang="EN-US" style="font-family:宋体"}
+·VBR-RT：实时可变速率
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VBR-NRT]{lang="EN-US"}]{#struct_0_19500_x1656_342410879}[：非实时可变速率]{style="font-family:宋体"}
+Output-pcr
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VBR-RT]{lang="EN-US"}]{#struct_0_19500_x1656_x1798582256}[：实时可变速率]{style="font-family:宋体"}
+输出ATM信元的峰值速率
 
-[[Output-pcr]{lang="EN-US"}]{#struct_0_19500_x1656_602778312}
+CDVT
 
-[[输出]{style="font-family:宋体"}[ATM]{lang="EN-US"}]{#struct_0_19500_x1656_1768023257}[信元的峰值速率]{style="font-family:宋体"}
+信元时延变化容限（Cell Delay Variation Tolerance），单位为微秒
 
-[[CDVT]{lang="EN-US"}]{#struct_0_19500_x1656_x1418743391}
+Transmit-Priority
 
-[[信元时延变化容限（]{style="font-family:宋体"}[Cell Delay Variation Tolerance]{lang="EN-US"}]{#struct_0_19500_x1656_254486525}[），单位为微秒]{style="font-family:宋体"}
+传输优先级
 
-[[Transmit-Priority]{lang="EN-US"}]{#struct_0_19500_x1656_x1039017962}
+OAM loopback interval
 
-[[传输优先级]{style="font-family:宋体"}]{#struct_0_19500_x1656_1768088793}
+发送OAM F5 Loopback信元的间隔时间，单位为秒
 
-[[OAM loopback interval]{lang="EN-US"}]{#struct_0_19500_x1656_223915756}
+OAM loopback retry interval
 
-[[发送]{style="font-family:宋体"}[OAM F5 Loopback]{lang="EN-US"}]{#struct_0_19500_x1656_x190797214}[信元的间隔时间，单位为秒]{style="font-family:宋体"}
+OAM F5 Loopback重传验证的间隔时间，单位为秒
 
-[[OAM loopback retry interval]{lang="EN-US"}]{#struct_0_19500_x1656_1131125476}
+OAM loopback retry count (up/down)
 
-[[OAM F5 Loopback]{lang="EN-US"}]{#struct_0_19500_x1656_x469578248}[重传验证的间隔时间，单位为秒]{style="font-family:宋体"}
+OAM验证UP和DOWN的信元数量
 
-[[OAM loopback retry count (up/down)]{lang="EN-US"}]{#struct_0_19500_x1656_1768154329}
+OAM AIS-RDI count (up/down)
 
-[[OAM]{lang="EN-US"}]{#struct_0_19500_x1656_x655546854}[验证]{style="font-family:宋体"}[UP]{lang="EN-US"}[和]{style="font-family:宋体"}[DOWN]{lang="EN-US"}[的信元数量]{style="font-family:宋体"}
+OAM AIS-RDI验证UP的秒数、OAM AIS-RDI验证DOWN的信元数量
 
-[[OAM AIS-RDI count (up/down)]{lang="EN-US"}]{#struct_0_19500_x1656_371341002}
+Interface State
 
-[[OAM AIS-RDI]{lang="EN-US"}]{#struct_0_19500_x1656_1166998820}[验证]{style="font-family:宋体"}[UP]{lang="EN-US"}[的秒数、]{style="font-family:宋体"}[OAM AIS-RDI]{lang="EN-US"}[验证]{style="font-family:宋体"}[DOWN]{lang="EN-US"}[的信元数量]{style="font-family:宋体"}
+该PVC所属的接口名及接口物理状态和管理状态
 
-[[Interface State]{lang="EN-US"}]{#struct_0_19500_x1656_1768219865}
+如果不是子接口，可能的状态及含义如下：
 
-[[该]{style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x1028119598}[所属的接口名及接口物理状态和管理状态]{style="font-family:宋体"}
+·UP：该接口的管理状态和物理状态均为开启
 
-[[如果不是子接口，可能的状态及含义如下：]{style="font-family:宋体"}]{#struct_0_19500_x1656_x433950043}
+·DOWN：表示该接口的管理状态为开启，但物理状态为关闭（可能因为没有物理连线或者线路故障）或者该接口已经通过shutdown命令被关闭，即管理状态为关闭
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_19500_x1656_1249305332}[：该接口的管理状态和物理状态均为开启]{style="font-family:宋体"}
+如果是子接口，可能的状态及含义如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_19500_x1656_1768285401}[：表示该接口的管理状态为开启，但物理状态为关闭（可能因为没有物理连线或者线路故障）或者该接口已经通过]{style="font-family:宋体"}[shutdown]{lang="EN-US"}[命令被关闭，即管理状态为关闭]{style="font-family:宋体"}
+·UP：该接口的管理状态和其父接口的物理状态和管理状态均为开启
 
-[[如果是子接口，可能的状态及含义如下：]{style="font-family:宋体"}]{#struct_0_19500_x1656_x616785132}
+·DOWN：表示该接口或其父接口已经通过shutdown命令被关闭或者其父接口物理状态关闭
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_19500_x1656_x1249431411}[：该接口的管理状态和其父接口的物理状态和管理状态均为开启]{style="font-family:宋体"}
+OAM State
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_19500_x1656_1768350937}[：表示该接口或其父接口已经通过]{style="font-family:宋体"}[shutdown]{lang="EN-US"}[命令被关闭或者其父接口物理状态关闭]{style="font-family:宋体"}
+OAM协议状态，可能的取值及含义如下：
 
-[[OAM State]{lang="EN-US"}]{#struct_0_19500_x1656_x1069329429}
+·UP：协议状态开启
 
-[[OAM]{lang="EN-US"}]{#struct_0_19500_x1656_x1199104756}[协议状态，可能的取值及含义如下：]{style="font-family:宋体"}
+·DOWN：协议状态关闭
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_19500_x1656_140766188}[：协议状态开启]{lang="EN-US" style="font-family:宋体"}
+PVC State
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_19500_x1656_1768416473}[：协议状态关闭]{style="font-family:宋体"}
+PVC的状态，可能的取值及含义如下：
 
-[[PVC State]{lang="EN-US"}]{#struct_0_19500_x1656_2088177384}
+·UP：该PVC所属ATM接口的状态、shutdown状态和OAM状态均为UP状态
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_652986473}[的状态，可能的取值及含义如下：]{style="font-family:宋体"}
+·DOWN：PVC所属ATM接口的状态、shutdown状态和OAM状态中至少其中一个为DOWN状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_19500_x1656_1767433433}[：该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[所属]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口的状态、]{style="font-family:宋体"}[shutdown]{lang="EN-US"}[状态和]{style="font-family:宋体"}[OAM]{lang="EN-US"}[状态均为]{style="font-family:宋体"}[UP]{lang="EN-US"}[状态]{style="font-family:宋体"}
+Input: 0 packets, 0 bytes, 0 errors
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_19500_x1656_x1621642981}[：]{style="font-family:宋体"}[PVC]{lang="EN-US"}[所属]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口的状态、]{style="font-family:宋体"}[shutdown]{lang="EN-US"}[状态和]{style="font-family:宋体"}[OAM]{lang="EN-US"}[状态中至少其中一个为]{style="font-family:宋体"}[DOWN]{lang="EN-US"}[状态]{style="font-family:宋体"}
+接收的报文数、字节数以及接收报文的错误数
 
-[[Input: 0 packets, 0 bytes, 0 errors]{lang="EN-US"}]{#struct_0_19500_x1656_x1585744516}
+Output: 0 packets, 0 bytes, 0 errors
 
-[[接收的报文数、字节数以及接收报文的错误数]{style="font-family:宋体"}]{#struct_0_19500_x1656_x855185166}
+发送的报文数、字节数以及发送报文的错误数
 
-[[Output: 0 packets, 0 bytes, 0 errors]{lang="EN-US"}]{#struct_0_19500_x1656_1767498969}
+Output queue
 
-[[发送的报文数、字节数以及发送报文的错误数]{style="font-family:宋体"}]{#struct_0_19500_x1656_x1598247315}
+PVC的QoS发送报文队列信息
 
-[[Output queue]{lang="EN-US"}]{#struct_0_19500_x1656_x1274787998}
+OAM cells received
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_1767957718}[的]{style="font-family:宋体"}[QoS]{lang="EN-US"}[发送报文队列信息]{style="font-family:宋体"}
+收到的OAM信元个数
 
-[[OAM cells received]{lang="EN-US"}]{#struct_0_19500_x1656_x2019851552}
+F5 Loopback
 
-[[收到的]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_19500_x1656_886506598}[信元个数]{style="font-family:宋体"}
+收到的F5 Loopback信元个数
 
-[[F5 Loopback]{lang="EN-US"}]{#struct_0_19500_x1656_1768023254}
+F5 AIS
 
-[[收到的]{style="font-family:宋体"}[F5 Loopback]{lang="EN-US"}]{#struct_0_19500_x1656_x1418677855}[信元个数]{style="font-family:宋体"}
+收到的AIS信元个数。如果不支持AIS告警状态，则只显示信元个数，不显示告警状态（即OAM AIS State字段）
 
-[[F5 AIS]{lang="EN-US"}]{#struct_0_19500_x1656_x1670488685}
+F5 RDI
 
-[[收到的]{style="font-family:宋体"}[AIS]{lang="EN-US"}]{#struct_0_19500_x1656_1768088790}[信元个数。如果不支持]{style="font-family:宋体"}[AIS]{lang="EN-US"}[告警状态，则只显示信元个数，不显示告警状态（即]{style="font-family:宋体"}[OAM AIS State]{lang="EN-US"}[字段）]{style="font-family:宋体"}
+收到的RDI信元个数。如果不支持RDI告警状态，则只显示信元个数，不显示告警状态（即OAM RDI State字段）
 
-[[F5 RDI]{lang="EN-US"}]{#struct_0_19500_x1656_223719148}
+OAM cells sent
 
-[[收到的]{style="font-family:宋体"}[RDI]{lang="EN-US"}]{#struct_0_19500_x1656_x1591045210}[信元个数。如果不支持]{style="font-family:宋体"}[RDI]{lang="EN-US"}[告警状态，则只显示信元个数，不显示告警状态（即]{style="font-family:宋体"}[OAM RDI State]{lang="EN-US"}[字段）]{style="font-family:宋体"}
+发送的OAM信元个数
 
-[[OAM cells sent]{lang="EN-US"}]{#struct_0_19500_x1656_1768154326}
+F5 Loopback
 
-[[发送的]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_19500_x1656_x655350246}[信元个数]{style="font-family:宋体"}
+发送的F5 Loopback信元个数
 
-[[F5 Loopback]{lang="EN-US"}]{#struct_0_19500_x1656_1474294339}
+OAM cell drops
 
-[[发送的]{style="font-family:宋体"}[F5 Loopback]{lang="EN-US"}]{#struct_0_19500_x1656_1768219862}[信元个数]{style="font-family:宋体"}
+OAM信元丢弃的个数
 
-[[OAM cell drops]{lang="EN-US"}]{#struct_0_19500_x1656_x1028447278}
+OAM AIS State
 
-[[OAM]{lang="EN-US"}]{#struct_0_19500_x1656_x930145747}[信元丢弃的个数]{style="font-family:宋体"}
+AIS告警状态，可能的取值及含义如下：
 
-[[OAM AIS State]{lang="EN-US"}]{#struct_0_19500_x1656_1768285398}
+·No AIS Alarm：无OAM AIS告警
 
-[[AIS]{lang="EN-US"}]{#struct_0_19500_x1656_2103614221}[告警状态，可能的取值及含义如下：]{style="font-family:宋体"}
+·E2E AIS Alarm：端到端OAM AIS告警
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No AIS Alarm]{lang="EN-US"}]{#struct_0_19500_x1656_1768350934}[：无]{lang="EN-US" style="font-family:宋体"}[OAM AIS]{lang="EN-US"}[告警]{lang="EN-US" style="font-family:宋体"}
+如果支持告警状态，则只显示告警状态，不显示信元个数（即F5 AIS字段）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[E2E AIS Alarm]{lang="EN-US"}]{#struct_0_19500_x1656_x1069132821}[：端到端]{lang="EN-US" style="font-family:宋体"}[OAM AIS]{lang="EN-US"}[告警]{lang="EN-US" style="font-family:宋体"}
+OAM RDI State
 
-[[如果支持告警状态，则只显示告警状态，不显示信元个数（即]{style="font-family:宋体"}[F5 AIS]{lang="EN-US"}]{#struct_0_19500_x1656_x1218527803}[字段）]{style="font-family:宋体"}
+RDI告警状态，可能的取值及含义如下：
 
-[[OAM RDI State]{lang="EN-US"}]{#struct_0_19500_x1656_1768416470}
+·No RDI Alarm：无OAM RDI告警
 
-[[RDI]{lang="EN-US"}]{#struct_0_19500_x1656_2088373992}[告警状态，可能的取值及含义如下：]{style="font-family:宋体"}
+·E2E RDI Alarm：端到端OAM RDI告警
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No RDI Alarm]{lang="EN-US"}]{#struct_0_19500_x1656_1767433430}[：无]{lang="EN-US" style="font-family:宋体"}[OAM RDI]{lang="EN-US"}[告警]{lang="EN-US" style="font-family:宋体"}
+如果支持告警状态，则只显示告警状态，不显示信元个数（即F5 RDI字段）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[E2E RDI Alarm]{lang="EN-US"}]{#struct_0_19500_x1656_x1621708517}[：端到端]{lang="EN-US" style="font-family:宋体"}[OAM RDI]{lang="EN-US"}[告警]{lang="EN-US" style="font-family:宋体"}
+OAM CC State
 
-[[如果支持告警状态，则只显示告警状态，不显示信元个数（即]{style="font-family:宋体"}[F5 RDI]{lang="EN-US"}]{#struct_0_19500_x1656_1474707146}[字段）]{style="font-family:宋体"}
+CC告警状态，可能的取值及含义如下：
 
-[[OAM CC State]{lang="EN-US"}]{#struct_0_19500_x1656_1767498966}
+·No CC Alarm：无OAM CC告警
 
-[[CC]{lang="EN-US"}]{#struct_0_19500_x1656_x1597526419}[告警状态，可能的取值及含义如下：]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No CC Alarm]{lang="EN-US"}]{#struct_0_19500_x1656_1767957719}[：无]{lang="EN-US" style="font-family:宋体"}[OAM CC]{lang="EN-US"}[告警]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[E2E CC Alarm]{lang="EN-US"}]{#struct_0_19500_x1656_x2019917088}[：端到端]{lang="EN-US" style="font-family:宋体"}[OAM CC]{lang="EN-US"}[告警]{lang="EN-US" style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#1932741536 .myid}
-[]{#_Toc404785239}[]{#struct_0_19500_x1656_x1058704757}[]{#_Toc348095176}
+·E2E CC Alarm：端到端OAM CC告警
 
 **ATM \-- ATM配置命令 \-- display atm pvc-info**
 
 ------------------------------------------------------------------------
 
-[**[display atm pvc-info]{lang="EN-US"}**]{#struct_0_19500_x1656_1637862568}[命令用来显示]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[display atm pvc-info**]命令用来显示PVC的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x292750002}
+【命令】
 
-[**[display atm pvc-info]{lang="EN-US"}**[ \[ **interface** *interface-type* { *interface-number* \| *interface-number.subnumber* } \[ **pvc** { *pvc-name* \| *vpi/vci* } \] \]]{lang="EN-US"}]{#struct_0_19500_x1656_x868014520}
+**[display atm pvc-info**[ [ **interface** *interface-type* { *interface-number* \| *interface-number.subnumber* } [ **pvc** { *pvc-name* \| *vpi/vci* } ] ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1768023255}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_19500_x1656_x1418612319}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1217807614}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1348459262}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_19500_x1656_x1651221309}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x1302847867}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_19500_x1656_1756307635}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x416287501}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type* { *interface-number* \| *interface-number.subnumber* }]{lang="EN-US"}]{#struct_0_19500_x1656_x1505016170}[：显示指定接口的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[信息。支持]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口、]{style="font-family:宋体"}[ATM]{lang="EN-US"}[子接口。]{style="font-family:宋体"}
+**[interface**[ *interface-type* { *interface-number* \| *interface-number.subnumber* }]]：显示指定接口的PVC信息。支持ATM接口、ATM子接口。
 
-[**[pvc]{lang="EN-US"}**]{#struct_0_19500_x1656_2041045825}[：显示指定]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[pvc**]：显示指定PVC的信息。
 
-[*[pvc-name]{lang="EN-US"}*]{#struct_0_19500_x1656_1768088791}[：]{style="font-family:宋体"}[PVC]{lang="EN-US"}[名，长度为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[15]{lang="EN-US"}[个字符的字符串，区分大小写，]{style="font-family:宋体"}[PVC]{lang="EN-US"}[名中不允许使用"]{style="font-family:宋体"}[/]{lang="EN-US"}["和"]{style="font-family:宋体"}[-]{lang="EN-US"}["，如"]{style="font-family:宋体"}[1/20]{lang="EN-US"}["、"]{style="font-family:宋体"}[a-b]{lang="EN-US"}["就不允许作为]{style="font-family:宋体"}[PVC]{lang="EN-US"}[名。]{style="font-family:宋体"}
+*[pvc-name*]：PVC名，长度为1～15个字符的字符串，区分大小写，PVC名中不允许使用"/"和"-"，如"1/20"、"a-b"就不允许作为PVC名。
 
-[*[vpi/vci]{lang="EN-US"}*]{#struct_0_19500_x1656_223784684}[：]{style="font-family:宋体"}*[vpi]{lang="EN-US"}*[为]{style="font-family:宋体"}[VPI]{lang="EN-US"}[值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[；]{style="font-family:宋体"}*[vci]{lang="EN-US"}*[为]{style="font-family:宋体"}[VCI]{lang="EN-US"}[值，取值范围与接口类型相关，请参见"]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-8]{lang="EN-US"}](?-1864992396#_Ref337389143)["。]{style="font-family:宋体"}*[vpi]{lang="EN-US"}*[与]{style="font-family:宋体"}*[vci]{lang="EN-US"}*[不能同时为]{style="font-family:宋体"}[0]{lang="EN-US"}[。通常，]{style="font-family:宋体"}*[vci]{lang="EN-US"}*[取值]{style="font-family:宋体"}[0]{lang="EN-US"}[到]{style="font-family:宋体"}[31]{lang="EN-US"}[保留用于特定用途，建议用户不要使用。]{style="font-family:宋体"}
+*[vpi/vci*]：*vpi*为VPI值，取值范围为0～255；*vci*为VCI值，取值范围与接口类型相关，请参见"[表]1-8(?-1864992396#_Ref337389143)"。*vpi*与*vci*不能同时为0。通常，*vci*取值0到31保留用于特定用途，建议用户不要使用。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x2019418528}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果不指定接口，则显示所有接口的]{style="font-family:宋体"}]{#struct_0_19500_x1656_x378965368}[PVC]{lang="EN-US"}[的简要信息。]{style="font-family:宋体"}
+·如果不指定接口，则显示所有接口的PVC的简要信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定接口而不指定]{style="font-family:宋体"}]{#struct_0_19500_x1656_x1777704785}[PVC]{lang="EN-US"}[，则显示指定接口的所有]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的简要信息。]{style="font-family:宋体"}
+·如果指定接口而不指定PVC，则显示指定接口的所有PVC的简要信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定接口并且指定]{style="font-family:宋体"}]{#struct_0_19500_x1656_857342214}[PVC]{lang="EN-US"}[，则显示指定接口的指定]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的详细信息。]{style="font-family:宋体"}
+·如果指定接口并且指定PVC，则显示指定接口的指定PVC的详细信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x706594979}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x1529822285}[显示所有接口的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的简要信息。]{style="font-family:宋体"}
+\# 显示所有接口的PVC的简要信息。
 
-[[\<Sysname\> display atm pvc-info]{lang="EN-US"}]{#struct_0_19500_x1656_1768154327}
+\<Sysname\> display atm pvc-info
 
-[VPI/VCI   State    PVC name    Encap    Protocol   Interface]{lang="EN-US"}
+VPI/VCI   State    PVC name    Encap    Protocol   Interface
 
-[1/32      UP       aa          SNAP     IP         ATM2/4/0]{lang="EN-US"}
+1/32      UP       aa          SNAP     IP         ATM2/4/0
 
-[1/33      UP       Sysname     MUX      None       ATM2/4/0]{lang="EN-US"}
+1/33      UP       Sysname     MUX      None       ATM2/4/0
 
-[1/55      UP       datacomm    SNAP     PPP        ATM2/4/0.1]{lang="EN-US"}
+1/55      UP       datacomm    SNAP     PPP        ATM2/4/0.1
 
-[2/66      UP       N/A         SNAP     IP         ATM2/4/0.4]{lang="EN-US"}
+2/66      UP       N/A         SNAP     IP         ATM2/4/0.4
 
-[2/101     UP       beijing     SNAP     ETH  []{#_Hlt23233413}      ATM2/4/0.2]{lang="EN-US"}
+2/101     UP       beijing     SNAP     ETH        ATM2/4/0.2
 
-[[表1-4 ]{lang="EN-US"}[display atm pvc-info]{lang="EN-US"}]{#struct_0_19500_x1656_x655415782}[命令显示信息描述表]{style="font-family:黑体"}
+表1-4 display atm pvc-info命令显示信息描述表
 
-[]{#_Toc328667711}[]{#table_struct_0_x1641643614}[[字段]{style="font-family:黑体"}]{#struct_0_19500_x1656_x868111479}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1819372201}
+描述
 
-[[VPI/VCI]{lang="EN-US"}]{#struct_0_19500_x1656_146993162}
+VPI/VCI
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x1446197442}[的]{style="font-family:宋体"}[VPI/VCI]{lang="EN-US"}[值对]{style="font-family:宋体"}
+PVC的VPI/VCI值对
 
-[[State]{lang="EN-US"}]{#struct_0_19500_x1656_1768219863}
+State
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x1028512814}[的状态，可能的取值及含义如下：]{style="font-family:宋体"}
+PVC的状态，可能的取值及含义如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_19500_x1656_x33948818}[：该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[所属]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口的状态、]{style="font-family:宋体"}[shutdown]{lang="EN-US"}[状态和]{style="font-family:宋体"}[OAM]{lang="EN-US"}[状态均为]{style="font-family:宋体"}[UP]{lang="EN-US"}[状态]{style="font-family:宋体"}
+·UP：该PVC所属ATM接口的状态、shutdown状态和OAM状态均为UP状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_19500_x1656_306218867}[：]{style="font-family:宋体"} [PVC]{lang="EN-US"}[所属]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口的状态、]{style="font-family:宋体"}[shutdown]{lang="EN-US"}[状态和]{style="font-family:宋体"}[OAM]{lang="EN-US"}[状态中至少其中一个为]{style="font-family:宋体"}[DOWN]{lang="EN-US"}[状态]{style="font-family:宋体"}
+·DOWN： PVC所属ATM接口的状态、shutdown状态和OAM状态中至少其中一个为DOWN状态
 
-[[PVC name]{lang="EN-US"}]{#struct_0_19500_x1656_x1883658662}
+PVC name
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x1637441167}[名称，]{style="font-family:宋体"}[N/A]{lang="EN-US"}[表示没有]{style="font-family:宋体"}[PVC]{lang="EN-US"}[名称]{style="font-family:宋体"}
+PVC名称，N/A表示没有PVC名称
 
-[[Encap]{lang="EN-US"}]{#struct_0_19500_x1656_1768285399}
+Encap
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_2103679757}[的]{style="font-family:宋体"}[AAL5]{lang="EN-US"}[封装类型，可能的取值及含义如下：]{style="font-family:宋体"}
+PVC的AAL5封装类型，可能的取值及含义如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SNAP]{lang="EN-US"}]{#struct_0_19500_x1656_1414213923}[：表示]{lang="EN-US" style="font-family:宋体"}[LLC]{lang="EN-US"}[（]{lang="EN-US" style="font-family:宋体"}[Logical Link Control]{lang="EN-US"}[，逻辑链接控制）]{lang="EN-US" style="font-family:
-  宋体"}[/SNAP]{lang="EN-US"}[（]{lang="EN-US" style="font-family:宋体"}[Subnet Access Protocol]{lang="EN-US"}[，子网访问协议）封装类型]{lang="EN-US" style="font-family:宋体"}
+·SNAP：表示LLC（Logical Link Control，逻辑链接控制）/SNAP（Subnet Access Protocol，子网访问协议）封装类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NLPID]{lang="EN-US"}]{#struct_0_19500_x1656_x2075613292}[：表示]{lang="EN-US" style="font-family:宋体"}[RFC1490]{lang="EN-US"}[封装类型]{lang="EN-US" style="font-family:宋体"}
+·NLPID：表示RFC1490封装类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MUX]{lang="EN-US"}]{#struct_0_19500_x1656_906516626}[：表示]{style="font-family:宋体"}[MUX]{lang="EN-US"}[复用封装类型]{style="font-family:宋体"}
+·MUX：表示MUX复用封装类型
 
-[[Protocol]{lang="EN-US"}]{#struct_0_19500_x1656_x513200807}
+Protocol
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_1768350935}[支持的上层协议的类型，可能的取值及含义如下：]{style="font-family:宋体"}
+PVC支持的上层协议的类型，可能的取值及含义如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PPP]{lang="EN-US"}]{#struct_0_19500_x1656_x1069198357}[：]{lang="EN-US" style="font-family:宋体"}[PPP]{lang="EN-US"}[协议]{lang="EN-US" style="font-family:宋体"}
+·PPP：PPP协议
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IP]{lang="EN-US"}]{#struct_0_19500_x1656_x484617752}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[协议]{lang="EN-US" style="font-family:宋体"}
+·IP：IP协议
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ETH]{lang="EN-US"}]{#struct_0_19500_x1656_279683840}[：以太协议]{lang="EN-US" style="font-family:宋体"}
+·ETH：以太协议
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[None]{lang="EN-US"}]{#struct_0_19500_x1656_x418077205}[：未配置任何协议]{lang="EN-US" style="font-family:宋体"}
+·None：未配置任何协议
 
-[[Interface]{lang="EN-US"}]{#struct_0_19500_x1656_1768416471}
+Interface
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_2088308456}[所属的接口]{style="font-family:宋体"}
+PVC所属的接口
 
-[ ]{lang="EN-US"}
+\# 显示指定PVC的详细信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x344833499}[显示指定]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的详细信息。]{style="font-family:宋体"}
+\<Sysname\> display atm pvc-info interface atm 2/4/1 pvc 1/100
 
-[[\<Sysname\> display atm pvc-info interface atm 2/4/1 pvc 1/100]{lang="EN-US"}]{#struct_0_19500_x1656_1767498967}
+ATM2/4/1, VPI: 1, VCI: 100
 
-[ATM2/4/1, VPI: 1, VCI: 100]{lang="EN-US"}
+  Encapsulation: SNAP, Protocol: IP
 
-[  Encapsulation: SNAP, Protocol: IP]{lang="EN-US"}
+  Service-type: UBR, Output-pcr: 200 kbps
 
-[  Service-type: UBR, Output-pcr: 200 kbps]{lang="EN-US"}
+  Transmit-Priority: 0
 
-[  Transmit-Priority: 0]{lang="EN-US"}
+  OAM loopback interval: 0 sec(disabled), OAM loopback retry interval: 1 sec
 
-[  OAM loopback interval: 0 sec(disabled), OAM loopback retry interval: 1 sec]{lang="EN-US"}
+  OAM loopback retry count (up/down): 3/5
 
-[  OAM loopback retry count (up/down): 3/5]{lang="EN-US"}
+  OAM AIS-RDI count (up/down): 3/1
 
-[  OAM AIS-RDI count (up/down): 3/1]{lang="EN-US"}
+  Interface State: UP, OAM State: UP, PVC State: UP
 
-[  Interface State: UP, OAM State: UP, PVC State: UP]{lang="EN-US"}
+  Input: 0 packets, 0 bytes, 0 errors
 
-[  Input: 0 packets, 0 bytes, 0 errors]{lang="EN-US"}
+  Output: 0 packets, 0 bytes, 0 errors
 
-[  Output: 0 packets, 0 bytes, 0 errors]{lang="EN-US"}
+  Output queue: (Urgent queuing : Size/Length/Discards)  0/100/0
 
-[  Output queue: (Urgent queuing : Size/Length/Discards)  0/100/0]{lang="EN-US"}
+  Output queue: (Protocol queuing : Size/Length/Discards)  0/500/0
 
-[  Output queue: (Protocol queuing : Size/Length/Discards)  0/500/0]{lang="EN-US"}
+  Output queue: (FIFO queuing : Size/Length/Discards)  0/75/0
 
-[  Output queue: (FIFO queuing : Size/Length/Discards)  0/75/0]{lang="EN-US"}
+  OAM cells received: 42
 
-[  OAM cells received: 42]{lang="EN-US"}
+    F5 Loopback: 0, F5 AIS: 42, F5 RDI: 0
 
-[    F5 Loopback: 0, F5 AIS: 42, F5 RDI: 0]{lang="EN-US"}
+  OAM cells sent: 0
 
-[  OAM cells sent: 0]{lang="EN-US"}
+    F5 Loopback: 0
 
-[    F5 Loopback: 0]{lang="EN-US"}
+  OAM cell drops: 0
 
-[  OAM cell drops: 0]{lang="EN-US"}
+  OAM AIS State: No AIS Alarm
 
-[  OAM AIS State: No AIS Alarm]{lang="EN-US"}
+  OAM RDI State: No RDI Alarm
 
-[  OAM RDI State: No RDI Alarm]{lang="EN-US"}
+  OAM CC State: No CC Alarm
 
-[  OAM CC State: No CC Alarm]{lang="EN-US"}
+表1-5 display atm pvc-info命令指定PVC显示信息描述表
 
-[[表1-5 ]{lang="EN-US"}[display atm pvc-info]{lang="EN-US"}]{#struct_0_19500_x1656_x1597591955}[命令指定]{style="font-family:黑体"}[PVC]{lang="EN-US"}[显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1613960430}[[字段]{style="font-family:黑体"}]{#struct_0_19500_x1656_x960925633}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1489737553}
+ATM2/4/1
 
-[[ATM2/4/1]{lang="EN-US"}]{#struct_0_19500_x1656_413874423}
+PVC所属的接口名
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x1051906546}[所属的接口名]{style="font-family:宋体"}
+VPI
 
-[[VPI]{lang="EN-US"}]{#struct_0_19500_x1656_x1371187450}
+虚路径标识符
 
-[[虚路径标识符]{style="font-family:宋体"}]{#struct_0_19500_x1656_x1968364560}
+VCI
 
-[[VCI]{lang="EN-US"}]{#struct_0_19500_x1656_x705554554}
+虚通道标识符
 
-[[虚通道标识符]{style="font-family:宋体"}]{#struct_0_19500_x1656_x960860097}
+Encapsulation
 
-[[Encapsulation]{lang="EN-US"}]{#struct_0_19500_x1656_x1110629937}
+PVC的AAL5封装类型，可能的取值及含义如下：
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x1443159632}[的]{style="font-family:宋体"}[AAL5]{lang="EN-US"}[封装类型，可能的取值及含义如下：]{style="font-family:宋体"}
+·SNAP：表示LLC（Logical Link Control，逻辑链接控制）/SNAP（Subnet Access Protocol，子网访问协议）封装类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SNAP]{lang="EN-US"}]{#struct_0_19500_x1656_1700520253}[：表示]{lang="EN-US" style="font-family:宋体"}[LLC]{lang="EN-US"}[（]{lang="EN-US" style="font-family:宋体"}[Logical Link Control]{lang="EN-US"}[，逻辑链接控制）]{lang="EN-US" style="font-family:
-  宋体"}[/SNAP]{lang="EN-US"}[（]{lang="EN-US" style="font-family:宋体"}[Subnet Access Protocol]{lang="EN-US"}[，子网访问协议）封装类型]{lang="EN-US" style="font-family:宋体"}
+·NLPID：表示RFC1490封装类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NLPID]{lang="EN-US"}]{#struct_0_19500_x1656_x1570167999}[：表示]{lang="EN-US" style="font-family:宋体"}[RFC1490]{lang="EN-US"}[封装类型]{lang="EN-US" style="font-family:宋体"}
+·MUX：表示MUX复用封装类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MUX]{lang="EN-US"}]{#struct_0_19500_x1656_x960794561}[：表示]{style="font-family:宋体"}[MUX]{lang="EN-US"}[复用封装类型]{style="font-family:宋体"}
+Protocol
 
-[[Protocol]{lang="EN-US"}]{#struct_0_19500_x1656_x1482886191}
+PVC支持的上层协议的类型，可能的取值及含义如下：
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x1629077319}[支持的上层协议的类型，可能的取值及含义如下：]{style="font-family:宋体"}
+·PPP：PPP协议
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PPP]{lang="EN-US"}]{#struct_0_19500_x1656_1341304777}[：]{lang="EN-US" style="font-family:宋体"}[PPP]{lang="EN-US"}[协议]{lang="EN-US" style="font-family:宋体"}
+·IP：IP协议
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IP]{lang="EN-US"}]{#struct_0_19500_x1656_x1429769844}[：]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[协议]{lang="EN-US" style="font-family:宋体"}
+·ETH：以太协议
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ETH]{lang="EN-US"}]{#struct_0_19500_x1656_x1783865610}[：以太协议]{lang="EN-US" style="font-family:宋体"}
+·None：未配置任何协议
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[None]{lang="EN-US"}]{#struct_0_19500_x1656_x960729025}[：未配置任何协议]{lang="EN-US" style="font-family:宋体"}
+Service-type
 
-[[Service-type]{lang="EN-US"}]{#struct_0_19500_x1656_1270018348}
+服务类型，可能的类型如下：
 
-[[服务类型，可能的类型如下：]{style="font-family:宋体"}]{#struct_0_19500_x1656_1366331443}
+·CBR：恒定速率
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[CBR]{lang="EN-US"}]{#struct_0_19500_x1656_x1753626490}[：恒定速率]{lang="EN-US" style="font-family:宋体"}
+·UBR：非确定速率
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UBR]{lang="EN-US"}]{#struct_0_19500_x1656_x960663489}[：非确定速率]{lang="EN-US" style="font-family:宋体"}
+·VBR-NRT：非实时可变速率
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VBR-NRT]{lang="EN-US"}]{#struct_0_19500_x1656_2016509791}[：非实时可变速率]{style="font-family:宋体"}
+·VBR-RT：实时可变速率
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VBR-RT]{lang="EN-US"}]{#struct_0_19500_x1656_x1620170501}[：实时可变速率]{style="font-family:宋体"}
+Output-pcr
 
-[[Output-pcr]{lang="EN-US"}]{#struct_0_19500_x1656_844761508}
+输出ATM信元的峰值速率
 
-[[输出]{style="font-family:宋体"}[ATM]{lang="EN-US"}]{#struct_0_19500_x1656_594083668}[信元的峰值速率]{style="font-family:宋体"}
+Transmit-Priority
 
-[[Transmit-Priority]{lang="EN-US"}]{#struct_0_19500_x1656_x960597953}
+传输优先级
 
-[[传输优先级]{style="font-family:宋体"}]{#struct_0_19500_x1656_1644253543}
+OAM loopback interval
 
-[[OAM loopback interval]{lang="EN-US"}]{#struct_0_19500_x1656_x621752448}
+发送OAM F5 Loopback信元的间隔时间
 
-[[发送]{style="font-family:宋体"}[OAM F5 Loopback]{lang="EN-US"}]{#struct_0_19500_x1656_x67769676}[信元的间隔时间]{style="font-family:宋体"}
+OAM loopback retry interval
 
-[[OAM loopback retry interval]{lang="EN-US"}]{#struct_0_19500_x1656_x960532417}
+OAM F5 Loopback重传验证的间隔时间
 
-[[OAM F5 Loopback]{lang="EN-US"}]{#struct_0_19500_x1656_x702215588}[重传验证的间隔时间]{style="font-family:宋体"}
+OAM loopback retry count (up/down)
 
-[[OAM loopback retry count (up/down)]{lang="EN-US"}]{#struct_0_19500_x1656_1411987390}
+OAM验证UP和DOWN的信元数量
 
-[[OAM]{lang="EN-US"}]{#struct_0_19500_x1656_2006022306}[验证]{style="font-family:宋体"}[UP]{lang="EN-US"}[和]{style="font-family:宋体"}[DOWN]{lang="EN-US"}[的信元数量]{style="font-family:宋体"}
+OAM AIS-RDI count (up/down)
 
-[[OAM AIS-RDI count (up/down)]{lang="EN-US"}]{#struct_0_19500_x1656_x960466881}
+OAM AIS-RDI验证UP的秒数、OAM AIS-RDI验证DOWN的信元数量
 
-[[OAM AIS-RDI]{lang="EN-US"}]{#struct_0_19500_x1656_848026862}[验证]{style="font-family:宋体"}[UP]{lang="EN-US"}[的秒数、]{style="font-family:宋体"}[OAM AIS-RDI]{lang="EN-US"}[验证]{style="font-family:宋体"}[DOWN]{lang="EN-US"}[的信元数量]{style="font-family:宋体"}
+Interface State
 
-[[Interface State]{lang="EN-US"}]{#struct_0_19500_x1656_221244519}
+该PVC所属的接口名及接口物理状态和管理状态
 
-[[该]{style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x1487841550}[所属的接口名及接口物理状态和管理状态]{style="font-family:宋体"}
+如果不是子接口，可能的状态及含义如下：
 
-[[如果不是子接口，可能的状态及含义如下：]{style="font-family:宋体"}]{#struct_0_19500_x1656_x961449921}
+·UP：该接口的管理状态和物理状态均为开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_19500_x1656_x1824591607}[：该接口的管理状态和物理状态均为开启]{style="font-family:宋体"}
+·DOWN：表示该接口的管理状态为开启，但物理状态为关闭（可能因为没有物理连线或者线路故障）或者该接口已经通过shutdown命令被关闭，即管理状态为关闭
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_19500_x1656_x239568995}[：表示该接口的管理状态为开启，但物理状态为关闭（可能因为没有物理连线或者线路故障）或者该接口已经通过]{style="font-family:宋体"}[shutdown]{lang="EN-US"}[命令被关闭，即管理状态为关闭]{style="font-family:宋体"}
+如果是子接口，可能的状态及含义如下：
 
-[[如果是子接口，可能的状态及含义如下：]{style="font-family:宋体"}]{#struct_0_19500_x1656_2061141845}
+·UP：该接口的管理状态和其父接口的物理状态和管理状态均为开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_19500_x1656_x961384385}[：该接口的管理状态和其父接口的物理状态和管理状态均为开启]{style="font-family:宋体"}
+·DOWN：表示该接口或其父接口已经通过shutdown命令被关闭或者其父接口物理状态关闭
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_19500_x1656_64156503}[：表示该接口或其父接口已经通过]{style="font-family:宋体"}[shutdown]{lang="EN-US"}[命令被关闭或者其父接口物理状态关闭]{style="font-family:宋体"}
+OAM State
 
-[[OAM State]{lang="EN-US"}]{#struct_0_19500_x1656_x289016707}
+OAM协议状态，可能的取值及含义如下：
 
-[[OAM]{lang="EN-US"}]{#struct_0_19500_x1656_x960925632}[协议状态，可能的取值及含义如下：]{style="font-family:宋体"}
+·UP：协议状态开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_19500_x1656_x1489803089}[：协议状态开启]{lang="EN-US" style="font-family:宋体"}
+·DOWN：协议状态关闭
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_19500_x1656_x1505320207}[：协议状态关闭]{style="font-family:宋体"}
+PVC State
 
-[[PVC State]{lang="EN-US"}]{#struct_0_19500_x1656_449111232}
+PVC的状态，可能的取值及含义如下：
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x960860096}[的状态，可能的取值及含义如下：]{style="font-family:宋体"}
+·UP：该PVC所属ATM接口的状态、shutdown状态和OAM状态均为UP状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_19500_x1656_x1110695473}[：该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[所属]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口的状态、]{style="font-family:宋体"}[shutdown]{lang="EN-US"}[状态和]{style="font-family:宋体"}[OAM]{lang="EN-US"}[状态均为]{style="font-family:宋体"}[UP]{lang="EN-US"}[状态]{style="font-family:宋体"}
+·DOWN：PVC所属ATM接口的状态、shutdown状态和OAM状态中至少其中一个为DOWN状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_19500_x1656_763722110}[：]{style="font-family:宋体"}[PVC]{lang="EN-US"}[所属]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口的状态、]{style="font-family:宋体"}[shutdown]{lang="EN-US"}[状态和]{style="font-family:宋体"}[OAM]{lang="EN-US"}[状态中至少其中一个为]{style="font-family:宋体"}[DOWN]{lang="EN-US"}[状态]{style="font-family:宋体"}
+Input: 0 packets, 0 bytes, 0 errors
 
-[[Input: 0 packets, 0 bytes, 0 errors]{lang="EN-US"}]{#struct_0_19500_x1656_x960794560}
+接收的报文数、字节数以及接收报文的错误数
 
-[[接收的报文数、字节数以及接收报文的错误数]{style="font-family:宋体"}]{#struct_0_19500_x1656_x1482820655}
+Output: 0 packets, 0 bytes, 0 errors
 
-[[Output: 0 packets, 0 bytes, 0 errors]{lang="EN-US"}]{#struct_0_19500_x1656_968516698}
+发送的报文数、字节数以及发送报文的错误数
 
-[[发送的报文数、字节数以及发送报文的错误数]{style="font-family:宋体"}]{#struct_0_19500_x1656_x960729024}
+Output queue
 
-[[Output queue]{lang="EN-US"}]{#struct_0_19500_x1656_1269952812}
+PVC的QoS发送报文队列信息
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x963363876}[的]{style="font-family:宋体"}[QoS]{lang="EN-US"}[发送报文队列信息]{style="font-family:宋体"}
+OAM cells received
 
-[[OAM cells received]{lang="EN-US"}]{#struct_0_19500_x1656_x1991541061}
+收到的OAM信元个数
 
-[[收到的]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_19500_x1656_x960663488}[信元个数]{style="font-family:宋体"}
+F5 Loopback
 
-[[F5 Loopback]{lang="EN-US"}]{#struct_0_19500_x1656_2016444255}
+收到的F5 Loopback信元个数
 
-[[收到的]{style="font-family:宋体"}[F5 Loopback]{lang="EN-US"}]{#struct_0_19500_x1656_x34157679}[信元个数]{style="font-family:宋体"}
+F5 AIS
 
-[[F5 AIS]{lang="EN-US"}]{#struct_0_19500_x1656_x960597952}
+收到的AIS信元个数。如果不支持AIS告警状态，则只显示信元个数，不显示告警状态（即OAM AIS State字段）
 
-[[收到的]{style="font-family:宋体"}[AIS]{lang="EN-US"}]{#struct_0_19500_x1656_1644319079}[信元个数。如果不支持]{style="font-family:宋体"}[AIS]{lang="EN-US"}[告警状态，则只显示信元个数，不显示告警状态（即]{style="font-family:宋体"}[OAM AIS State]{lang="EN-US"}[字段）]{style="font-family:宋体"}
+F5 RDI
 
-[[F5 RDI]{lang="EN-US"}]{#struct_0_19500_x1656_2080922988}
+收到的RDI信元个数。如果不支持RDI告警状态，则只显示信元个数，不显示告警状态（即OAM RDI State字段）
 
-[[收到的]{style="font-family:宋体"}[RDI]{lang="EN-US"}]{#struct_0_19500_x1656_x960532416}[信元个数。如果不支持]{style="font-family:宋体"}[RDI]{lang="EN-US"}[告警状态，则只显示信元个数，不显示告警状态（即]{style="font-family:宋体"}[OAM RDI State]{lang="EN-US"}[字段）]{style="font-family:宋体"}
+OAM cells sent
 
-[[OAM cells sent]{lang="EN-US"}]{#struct_0_19500_x1656_x702150052}
+发送的OAM信元个数
 
-[[发送的]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_19500_x1656_x960466880}[信元个数]{style="font-family:宋体"}
+F5 Loopback
 
-[[F5 Loopback]{lang="EN-US"}]{#struct_0_19500_x1656_847961326}
+发送的F5 Loopback信元个数
 
-[[发送的]{style="font-family:宋体"}[F5 Loopback]{lang="EN-US"}]{#struct_0_19500_x1656_626770671}[信元个数]{style="font-family:宋体"}
+OAM cell drops
 
-[[OAM cell drops]{lang="EN-US"}]{#struct_0_19500_x1656_x961449920}
+OAM信元丢弃的个数
 
-[[OAM]{lang="EN-US"}]{#struct_0_19500_x1656_x1824657143}[信元丢弃的个数]{style="font-family:宋体"}
+OAM AIS State
 
-[[OAM AIS State]{lang="EN-US"}]{#struct_0_19500_x1656_x754117018}
+AIS告警状态，可能的取值及含义如下：
 
-[[AIS]{lang="EN-US"}]{#struct_0_19500_x1656_x961384384}[告警状态，可能的取值及含义如下：]{style="font-family:宋体"}
+·No AIS Alarm：无OAM AIS告警
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No AIS Alarm]{lang="EN-US"}]{#struct_0_19500_x1656_64090967}[：无]{lang="EN-US" style="font-family:宋体"}[OAM AIS]{lang="EN-US"}[告警]{lang="EN-US" style="font-family:宋体"}
+·E2E AIS Alarm：端到端OAM AIS告警
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[E2E AIS Alarm]{lang="EN-US"}]{#struct_0_19500_x1656_x329778050}[：端到端]{lang="EN-US" style="font-family:宋体"}[OAM AIS]{lang="EN-US"}[告警]{lang="EN-US" style="font-family:宋体"}
+如果支持告警状态，则只显示告警状态，不显示信元个数（即F5 AIS字段）
 
-[[如果支持告警状态，则只显示告警状态，不显示信元个数（即]{style="font-family:宋体"}[F5 AIS]{lang="EN-US"}]{#struct_0_19500_x1656_x960925635}[字段）]{style="font-family:宋体"}
+OAM RDI State
 
-[[OAM RDI State]{lang="EN-US"}]{#struct_0_19500_x1656_x1490130769}
+RDI告警状态，可能的取值及含义如下：
 
-[[RDI]{lang="EN-US"}]{#struct_0_19500_x1656_x960860099}[告警状态，可能的取值及含义如下：]{style="font-family:宋体"}
+·No RDI Alarm：无OAM RDI告警
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No RDI Alarm]{lang="EN-US"}]{#struct_0_19500_x1656_x1110498865}[：无]{lang="EN-US" style="font-family:宋体"}[OAM RDI]{lang="EN-US"}[告警]{lang="EN-US" style="font-family:宋体"}
+·E2E RDI Alarm：端到端OAM RDI告警
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[E2E RDI Alarm]{lang="EN-US"}]{#struct_0_19500_x1656_1966783960}[：端到端]{lang="EN-US" style="font-family:宋体"}[OAM RDI]{lang="EN-US"}[告警]{lang="EN-US" style="font-family:宋体"}
+如果支持告警状态，则只显示告警状态，不显示信元个数（即F5 RDI字段）
 
-[[如果支持告警状态，则只显示告警状态，不显示信元个数（即]{style="font-family:宋体"}[F5 RDI]{lang="EN-US"}]{#struct_0_19500_x1656_x960794563}[字段）]{style="font-family:宋体"}
+OAM CC State
 
-[[OAM CC State]{lang="EN-US"}]{#struct_0_19500_x1656_x1482755119}
+CC告警状态，可能的取值及含义如下：
 
-[[CC]{lang="EN-US"}]{#struct_0_19500_x1656_x377887842}[告警状态，可能的取值及含义如下：]{style="font-family:宋体"}
+·No CC Alarm：无OAM CC告警
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No CC Alarm]{lang="EN-US"}]{#struct_0_19500_x1656_x960729027}[：无]{lang="EN-US" style="font-family:宋体"}[OAM CC]{lang="EN-US"}[告警]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[E2E CC Alarm]{lang="EN-US"}]{#struct_0_19500_x1656_1270149420}[：端到端]{lang="EN-US" style="font-family:宋体"}[OAM CC]{lang="EN-US"}[告警]{lang="EN-US" style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#1246997622 .myid}
-[]{#_Toc404785240}[]{#struct_0_19500_x1656_205331315}[]{#_Toc350872245}[]{#_Toc345946916}
+·E2E CC Alarm：端到端OAM CC告警
 
 **ATM \-- ATM配置命令 \-- display interface virtual-ethernet**
 
 ------------------------------------------------------------------------
 
-[**[display interface ]{lang="EN-US"}[virtual-ethernet]{lang="EN-US"}**]{#struct_0_19500_x1656_x690701801}[命令用来显示]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口的相关信息。]{style="font-family:宋体"}
+**[display interface virtual-ethernet**]命令用来显示VE接口的相关信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1373785684}
+【命令】
 
-[**[display interface]{lang="EN-US"}**[ \[ **virtual-ethernet** \[ *interface-number* \] \] \[ **brief** \[ **description** \| **down** \] \]]{lang="EN-US"}]{#struct_0_19500_x1656_2015985502}
+**[display interface** [ **virtual-ethernet** [ *interface-number*    **brief** [ **description** \| **down** ] ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_83383596}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_19500_x1656_x2054998427}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x575254136}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_725472327}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_19500_x1656_608808176}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x1279668602}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_19500_x1656_x960597955}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1644384615}
+【参数】
 
-[*[interface-number]{lang="EN-US"}*]{#struct_0_19500_x1656_1325035915}[：显示指定]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口的信息。]{style="font-family:宋体"}
+*[interface-number*]：显示指定VE接口的信息。
 
-[**[brief]{lang="EN-US"}**]{#struct_0_19500_x1656_958518798}[：显示接口的概要信息。不指定该参数时，将显示接口的详细信息。]{style="font-family:宋体"}
+**[brief**]：显示接口的概要信息。不指定该参数时，将显示接口的详细信息。
 
-[**[description]{lang="EN-US"}**]{#struct_0_19500_x1656_x1831782800}[：用来显示用户配置的接口的全部描述信息。如果某接口的描述信息超过]{style="font-family:宋体"}[27]{lang="EN-US"}[个字符，不指定该参数时，只显示描述信息中的前]{style="font-family:宋体"}[27]{lang="EN-US"}[个字符，超出部分不显示；指定该参数时，可以显示全部描述信息。]{style="font-family:宋体"}
+**[description**]：用来显示用户配置的接口的全部描述信息。如果某接口的描述信息超过27个字符，不指定该参数时，只显示描述信息中的前27个字符，超出部分不显示；指定该参数时，可以显示全部描述信息。
 
-[**[down]{lang="EN-US"}**]{#struct_0_19500_x1656_x2071812160}[：显示当前物理状态为]{style="font-family:宋体"}[down]{lang="EN-US"}[的接口的信息以及]{style="font-family:宋体"}[down]{lang="EN-US"}[的原因。不指定该参数时，将不会根据接口物理状态来过滤显示信息。]{style="font-family:宋体"}
+**[down**]：显示当前物理状态为down的接口的信息以及down的原因。不指定该参数时，将不会根据接口物理状态来过滤显示信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x275587880}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果不指定]{lang="EN-US" style="font-family:宋体"}]{#struct_0_19500_x1656_301222255}**[virtual-ethernet]{lang="EN-US"}**[参数，将显示设备支持的所有接口的相关信息。]{lang="EN-US" style="font-family:宋体"}
+·如果不指定**virtual-ethernet**参数，将显示设备支持的所有接口的相关信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定]{lang="EN-US" style="font-family:宋体"}**[virtual-ethernet]{lang="EN-US"}**]{#struct_0_19500_x1656_1430000422}[参数，不指定]{lang="EN-US" style="font-family:
-宋体"}*[interface-number]{lang="EN-US"}*[参数，将显示所有已创建的]{lang="EN-US" style="font-family:宋体"}[VE]{lang="EN-US"}[接口的相关信息。]{lang="EN-US" style="font-family:宋体"}
+·如果指定**virtual-ethernet**参数，不指定*interface-number*参数，将显示所有已创建的VE接口的相关信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x960532419}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x701822372}[显示]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口]{style="font-family:宋体"}[Virtual-Ethernet2/4/1]{lang="EN-US"}[的详细信息。]{style="font-family:宋体"}
+\# 显示VE接口Virtual-Ethernet2/4/1的详细信息。
 
-[[\<Sysname\> display interface virtual-ethernet 2/4/1]{lang="EN-US"}]{#struct_0_19500_x1656_771950766}
+\<Sysname\> display interface virtual-ethernet 2/4/1
 
-[Virtual-Ethernet2/4/1]{lang="EN-US"}
+Virtual-Ethernet2/4/1
 
-[Current state: UP]{lang="EN-US"}
+Current state: UP
 
-[Line protocol state: UP]{lang="EN-US"}
+Line protocol state: UP
 
-[Description: Virtual-Ethernet2/4/1 Interface]{lang="EN-US"}
+Description: Virtual-Ethernet2/4/1 Interface
 
-[Bandwidth: 20000kbps]{lang="EN-US"}
+Bandwidth: 20000kbps
 
-[Maximum Transmit Unit: 1500]{lang="EN-US"}
+Maximum Transmit Unit: 1500
 
-[Internet protocol processing: disabled]{lang="EN-US"}
+Internet protocol processing: disabled
 
-[IP Packet Frame Type:PKTFMT_ETHNT_2, Hardware Address: 00e0-fc0d-9485]{lang="EN-US"}
+IP Packet Frame Type:PKTFMT_ETHNT_2, Hardware Address: 00e0-fc0d-9485
 
-[IPv6 Packet Frame Type:PKTFMT_ETHNT_2, Hardware Address: 00e0-fc0d-9485]{lang="EN-US"}
+IPv6 Packet Frame Type:PKTFMT_ETHNT_2, Hardware Address: 00e0-fc0d-9485
 
-[Last clearing of counters: Never]{lang="EN-US"}
+Last clearing of counters: Never
 
-[Last 300 seconds input rate: 0 bytes/sec, 0 packets/sec]{lang="EN-US"}
+Last 300 seconds input rate: 0 bytes/sec, 0 packets/sec
 
-[Last 300 seconds output rate: 0 bytes/sec, 0 packets/sec]{lang="EN-US"}
+Last 300 seconds output rate: 0 bytes/sec, 0 packets/sec
 
-[Input: 0 packets, 0 bytes, 0 drops]{lang="EN-US"}
+Input: 0 packets, 0 bytes, 0 drops
 
-[Output: 0 packets, 0 bytes, 0 drops]{lang="EN-US"}
+Output: 0 packets, 0 bytes, 0 drops
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_354377648}[显示]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口]{style="font-family:宋体"}[Virtual-Ethernet2/4/1]{lang="EN-US"}[的概要信息。]{style="font-family:宋体"}
+\# 显示VE接口Virtual-Ethernet2/4/1的概要信息。
 
-[[\<Sysname\> display interface virtual-ethernet 2/4/1 brief]{lang="EN-US"}]{#struct_0_19500_x1656_x960466883}
+\<Sysname\> display interface virtual-ethernet 2/4/1 brief
 
-[Brief information on interface(s) under route mode:]{lang="EN-US"}
+Brief information on interface(s) under route mode:
 
-[Link: ADM - administratively down; Stby - standby]{lang="EN-US"}
+Link: ADM - administratively down; Stby - standby
 
-[Protocol: (s) - spoofing]{lang="EN-US"}
+Protocol: (s) - spoofing
 
-[Interface            Link Protocol Main IP         Description]{lang="EN-US"}
+Interface            Link Protocol Main IP         Description
 
-[VE1                  DOWN DOWN     \--]{lang="EN-US"}
+VE1                  DOWN DOWN     \--
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_848157934}[显示当前物理状态为]{style="font-family:宋体"}[down]{lang="EN-US"}[的]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口的信息以及]{style="font-family:宋体"}[down]{lang="EN-US"}[的原因。]{style="font-family:宋体"}
+\# 显示当前物理状态为down的VE接口的信息以及down的原因。
 
-[[\<Sysname\> display interface virtual-ethernet brief down]{lang="EN-US"}]{#struct_0_19500_x1656_x1367973771}
+\<Sysname\> display interface virtual-ethernet brief down
 
-[Brief information on interface(s) under bridge mode:]{lang="EN-US"}
+Brief information on interface(s) under bridge mode:
 
-[Link: ADM - administratively down; Stby - standby]{lang="EN-US"}
+Link: ADM - administratively down; Stby - standby
 
-[Interface            Link Cause]{lang="EN-US"}
+Interface            Link Cause
 
-[VE2/4/1              DOWN Not connected]{lang="EN-US"}
+VE2/4/1              DOWN Not connected
 
-[[表1-6 ]{lang="EN-US"}[display interface virtual-ethernet]{lang="EN-US"}]{#struct_0_19500_x1656_x570118645}[命令显示信息描述表]{style="font-family:
-黑体"}
+表1-6 display interface virtual-ethernet命令显示信息描述表
 
-[]{#table_struct_0_x1622471579}[[字段]{style="font-family:黑体"}]{#struct_0_19500_x1656_x2093654753}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_19500_x1656_x961449923}
+描述
 
-[[Current state]{lang="EN-US"}]{#struct_0_19500_x1656_x1824722679}
+Current state
 
-[[该接口的物理状态，状态可能为：]{style="font-family:宋体"}]{#struct_0_19500_x1656_x551160872}
+该接口的物理状态，状态可能为：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Administratively DOWN]{lang="EN-US"}]{#struct_0_19500_x1656_x1033637374}[：表示该接口已经通过]{lang="EN-US" style="font-family:
-  宋体"}**[shutdown]{lang="EN-US"}**[命令被关闭，即管理状态为关闭]{lang="EN-US" style="font-family:宋体"}
+·Administratively DOWN：表示该接口已经通过**shutdown**命令被关闭，即管理状态为关闭
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_19500_x1656_495905422}[：表示该接口的管理状态为开启，但物理状态为关闭（可能因为没有物理连线或者线路故障）]{style="font-family:宋体"}
+·DOWN：表示该接口的管理状态为开启，但物理状态为关闭（可能因为没有物理连线或者线路故障）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_19500_x1656_714030496}[：该端口的管理状态和物理状态均为开启]{style="font-family:宋体"}
+·UP：该端口的管理状态和物理状态均为开启
 
-[[Line protocol state]{lang="EN-US"}]{#struct_0_19500_x1656_x961384387}
+Line protocol state
 
-[[该接口的链路层协议状态，可能的状态及含义如下：]{style="font-family:宋体"}]{#struct_0_19500_x1656_64025431}
+该接口的链路层协议状态，可能的状态及含义如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_19500_x1656_x1078747480}[：表示数据链路层协议状态为开启]{style="font-family:宋体"}
+·UP：表示数据链路层协议状态为开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_19500_x1656_x741788774}[：表示数据链路层协议状态为关闭]{style="font-family:宋体"}
+·DOWN：表示数据链路层协议状态为关闭
 
-[[Description]{lang="EN-US"}]{#struct_0_19500_x1656_983152201}
+Description
 
-[[该接口的描述信息]{style="font-family:宋体"}]{#struct_0_19500_x1656_x960925634}
+该接口的描述信息
 
-[[Bandwidth]{lang="EN-US"}]{#struct_0_19500_x1656_x1490196305}
+Bandwidth
 
-[[该接口的期望带宽]{style="font-family:宋体"}]{#struct_0_19500_x1656_x1554457258}
+该接口的期望带宽
 
-[[Maximum Transmit Unit]{lang="EN-US"}]{#struct_0_19500_x1656_510057704}
+Maximum Transmit Unit
 
-[[该接口的最大传输单元]{style="font-family:宋体"}]{#struct_0_19500_x1656_x1168150240}
+该接口的最大传输单元
 
-[[Internet protocol processing]{lang="EN-US"}]{#struct_0_19500_x1656_1294686976}
+Internet protocol processing
 
-[[该接口网络层协议处理状况]{style="font-family:宋体"}]{#struct_0_19500_x1656_x960860098}
+该接口网络层协议处理状况
 
-[[IP Packet Frame Type]{lang="EN-US"}]{#struct_0_19500_x1656_x1110564401}
+IP Packet Frame Type
 
-[[该接口]{style="font-family:宋体"}[IPv4]{lang="EN-US"}]{#struct_0_19500_x1656_x1525339433}[报文帧格式，取值为]{style="font-family:宋体"}[PKTFMT_ETHNT_2]{lang="EN-US"}[表示报文以]{style="font-family:宋体"}[Ethernet II]{lang="EN-US"}[型帧格式封装]{style="font-family:宋体"}
+该接口IPv4报文帧格式，取值为PKTFMT_ETHNT_2表示报文以Ethernet II型帧格式封装
 
-[[IPv6 Packet Frame Type]{lang="EN-US"}]{#struct_0_19500_x1656_x1190038147}
+IPv6 Packet Frame Type
 
-[[该接口]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_19500_x1656_x960794562}[报文帧格式]{style="font-family:宋体"}
+该接口IPv6报文帧格式
 
-[[Hardware Address]{lang="EN-US"}]{#struct_0_19500_x1656_x1482689583}
+Hardware Address
 
-[[该接口的]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_19500_x1656_1832200683}[地址]{style="font-family:宋体"}
+该接口的MAC地址
 
-[[Last clearing of counters: Never]{lang="EN-US"}]{#struct_0_19500_x1656_856888661}
+Last clearing of counters: Never
 
-[[最近一次使用]{style="font-family:宋体"}**[reset counters interface]{lang="EN-US"}**]{#struct_0_19500_x1656_1834691069}[命令清除接口下的统计信息的时间。如果从设备启动一直没有执行]{style="font-family:宋体"}**[reset counters interface]{lang="EN-US"}**[命令清除过该接口下的统计信息，则显示]{style="font-family:宋体"}[Never]{lang="EN-US"}
+最近一次使用**reset counters interface**命令清除接口下的统计信息的时间。如果从设备启动一直没有执行**reset counters interface**命令清除过该接口下的统计信息，则显示Never
 
-[[Last 300 seconds input rate]{lang="EN-US"}]{#struct_0_19500_x1656_x960729026}
+Last 300 seconds input rate
 
-[[该接口在最近]{style="font-family:宋体"}[300]{lang="EN-US"}]{#struct_0_19500_x1656_1270083884}[秒接收报文的平均速率]{style="font-family:宋体"}
+该接口在最近300秒接收报文的平均速率
 
-[[Last 300 seconds output rate]{lang="EN-US"}]{#struct_0_19500_x1656_951298458}
+Last 300 seconds output rate
 
-[[该接口在最近]{style="font-family:宋体"}[300]{lang="EN-US"}]{#struct_0_19500_x1656_115209849}[秒发送报文的平均速率]{style="font-family:宋体"}
+该接口在最近300秒发送报文的平均速率
 
-[[Input]{lang="EN-US"}]{#struct_0_19500_x1656_x960663490}
+Input
 
-[[输入报文统计信息：]{style="font-family:宋体"}]{#struct_0_19500_x1656_2015919966}
+输入报文统计信息：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[packets]{lang="EN-US"}]{#struct_0_19500_x1656_130230162}[：]{style="font-family:宋体"}[数据包的个数]{lang="EN-US" style="font-family:宋体"}
+·packets：数据包的个数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[bytes]{lang="EN-US"}]{#struct_0_19500_x1656_1713215658}[：总字节数]{style="font-family:宋体"}
+·bytes：总字节数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[drops]{lang="EN-US"}]{#struct_0_19500_x1656_x960597954}[：丢弃的报文个数]{style="font-family:宋体"}
+·drops：丢弃的报文个数
 
-[[Output]{lang="EN-US"}]{#struct_0_19500_x1656_1644450151}
+Output
 
-[[输出报文统计信息：]{style="font-family:宋体"}]{#struct_0_19500_x1656_1342587726}
+输出报文统计信息：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[packets]{lang="EN-US"}]{#struct_0_19500_x1656_x14943190}[：]{style="font-family:宋体"}[数据包的个数]{lang="EN-US" style="font-family:宋体"}
+·packets：数据包的个数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[bytes]{lang="EN-US"}]{#struct_0_19500_x1656_x960532418}[：总字节数]{style="font-family:宋体"}
+·bytes：总字节数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[drops]{lang="EN-US"}]{#struct_0_19500_x1656_x701756836}[：丢弃的报文个数]{style="font-family:宋体"}
+·drops：丢弃的报文个数
 
-[[Brief information on interface(s) under route mode]{lang="EN-US"}]{#struct_0_19500_x1656_x779298121}
+Brief information on interface(s) under route mode
 
-[[三层接口的概要信息]{style="font-family:宋体"}]{#struct_0_19500_x1656_x1225040638}
+三层接口的概要信息
 
-[[Link: ADM - administratively down; Stby - standby]{lang="EN-US"}]{#struct_0_19500_x1656_x960466882}
+Link: ADM - administratively down; Stby - standby
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果某接口的]{style="font-family:宋体"}]{#struct_0_19500_x1656_848092398}[Link]{lang="EN-US"}[属性值为"]{style="font-family:宋体"}[ADM]{lang="EN-US"}["，则表示该接口被管理员手工关闭了，需要在该接口下执行]{style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**[命令才能恢复端口本身的物理状态]{style="font-family:宋体"}
+·如果某接口的Link属性值为"ADM"，则表示该接口被管理员手工关闭了，需要在该接口下执行**undo shutdown**命令才能恢复端口本身的物理状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果某接口的]{lang="EN-US" style="font-family:宋体"}[Link]{lang="EN-US"}]{#struct_0_19500_x1656_x203743873}[属性值为"]{lang="EN-US" style="font-family:宋体"}[Stby]{lang="EN-US"}["，则表示该接口是一个备份接口，使用]{lang="EN-US" style="font-family:宋体"}**[display interface-backup state]{lang="EN-US"}**[命令可以查看该备份接口对应的主接口]{lang="EN-US" style="font-family:宋体"}
+·如果某接口的Link属性值为"Stby"，则表示该接口是一个备份接口，使用**display interface-backup state**命令可以查看该备份接口对应的主接口
 
-[[Protocol: (s) - spoofing]{lang="EN-US"}]{#struct_0_19500_x1656_x961449922}
+Protocol: (s) - spoofing
 
-[[如果某接口的]{style="font-family:宋体"}[Protocol]{lang="EN-US"}]{#struct_0_19500_x1656_x1824788215}[属性值中带有"]{style="font-family:宋体"}[(s)]{lang="EN-US"}["，则表示该接口的数据链路层协议状态显示为]{style="font-family:宋体"}[UP]{lang="EN-US"}[，但实际可能没有对应的链路，或者对应的链路不是永久存在而是按需建立的]{style="font-family:宋体"}
+如果某接口的Protocol属性值中带有"(s)"，则表示该接口的数据链路层协议状态显示为UP，但实际可能没有对应的链路，或者对应的链路不是永久存在而是按需建立的
 
-[[Interface]{lang="EN-US"}]{#struct_0_19500_x1656_x334260642}
+Interface
 
-[[接口名称缩写]{style="font-family:宋体"}]{#struct_0_19500_x1656_x961384386}
+接口名称缩写
 
-[[Link]{lang="EN-US"}]{#struct_0_19500_x1656_63959895}
+Link
 
-[[接口物理连接状态，取值可能为：]{style="font-family:宋体"}]{#struct_0_19500_x1656_x440455521}
+接口物理连接状态，取值可能为：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_19500_x1656_588362623}[：表示接口物理上是连通的]{style="font-family:宋体"}
+·UP：表示接口物理上是连通的
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ADM]{lang="EN-US"}]{#struct_0_19500_x1656_x960925637}[：表示]{style="font-family:宋体"}[接口]{lang="EN-US" style="font-family:宋体"}[被手工关闭了，需要执行]{style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**[命令才能打开接口]{style="font-family:宋体"}
+·ADM：表示接口被手工关闭了，需要执行**undo shutdown**命令才能打开接口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Stby]{lang="EN-US"}]{#struct_0_19500_x1656_x623475544}[：表示该接口是一个备份接口]{style="font-family:宋体"}
+·Stby：表示该接口是一个备份接口
 
-[[Protocol]{lang="EN-US"}]{#struct_0_19500_x1656_x1489999697}
+Protocol
 
-[[接口数据链路层协议状态，取值可能为：]{style="font-family:宋体"}]{#struct_0_19500_x1656_x14355102}
+接口数据链路层协议状态，取值可能为：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_19500_x1656_1227629000}[：表示接口的数据链路层是连通的]{style="font-family:宋体"}
+·UP：表示接口的数据链路层是连通的
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_19500_x1656_x1508255785}[：表示接口的数据链路层不通]{style="font-family:宋体"}
+·DOWN：表示接口的数据链路层不通
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP(s)]{lang="EN-US"}]{#struct_0_19500_x1656_1448115437}[：表示接口的数据链路层协议状态显示为]{style="font-family:宋体"}[UP]{lang="EN-US"}[，但实际可能没有对应的链路，或者对应的链路不是永久存在而是按需建立的]{style="font-family:宋体"}
+·UP(s)：表示接口的数据链路层协议状态显示为UP，但实际可能没有对应的链路，或者对应的链路不是永久存在而是按需建立的
 
-[[Main IP]{lang="EN-US"}]{#struct_0_19500_x1656_x588690159}
+Main IP
 
-[[接口主]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_19500_x1656_x960794565}[地址]{style="font-family:宋体"}
+接口主IP地址
 
-[[Description]{lang="EN-US"}]{#struct_0_19500_x1656_x1482624047}
+Description
 
-[[用户通过]{style="font-family:宋体"}**[description]{lang="EN-US"}**]{#struct_0_19500_x1656_354188074}[命令给接口配置的描述信息。使用]{style="font-family:宋体"}**[display interface brief]{lang="EN-US"}**[命令，不指定]{style="font-family:宋体"}**[description]{lang="EN-US"}**[参数时，该字段最多显示]{style="font-family:宋体"}[27]{lang="EN-US"}[个字符；指定]{style="font-family:宋体"}**[description]{lang="EN-US"}**[参数时，可显示配置的全部描述信息]{style="font-family:宋体"}
+用户通过**description**命令给接口配置的描述信息。使用**display interface brief**命令，不指定**description**参数时，该字段最多显示27个字符；指定**description**参数时，可显示配置的全部描述信息
 
-[[Cause]{lang="EN-US"}]{#struct_0_19500_x1656_x960729029}
+Cause
 
-[[接口物理连接状态为]{style="font-family:宋体"}[down]{lang="EN-US"}]{#struct_0_19500_x1656_1270804780}[的原因，取值为]{style="font-family:宋体"}[Administratively]{lang="EN-US"}[时表示本链路被手工关闭了（配置了]{style="font-family:宋体"}**[shutdown]{lang="EN-US"}**[命令），需要执行]{style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**[命令才能恢复真实的物理状态；取值为]{style="font-family:宋体"}[Not connected]{lang="EN-US"}[时]{style="font-family:宋体"}[表示没有物理连接（可能没有插网线或者网线故障）]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-900899430 .myid}
-[]{#_Toc404785241}[]{#struct_0_19500_x1656_x1008925069}[]{#_Toc348095177}[]{#_Ref337902442}[]{#_Toc328667714}
+接口物理连接状态为down的原因，取值为Administratively时表示本链路被手工关闭了（配置了**shutdown**命令），需要执行**undo shutdown**命令才能恢复真实的物理状态；取值为Not connected时表示没有物理连接（可能没有插网线或者网线故障）
 
 **ATM \-- ATM配置命令 \-- encapsulation**
 
 ------------------------------------------------------------------------
 
-[**[encapsulation]{lang="EN-US"}**]{#struct_0_19500_x1656_x2092908706}[命令用来配置]{style="font-family:宋体"}[PVC]{lang="EN-US"}[或]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[的]{style="font-family:宋体"}[ATM AAL5]{lang="EN-US"}[封装类型。]{style="font-family:宋体"}
+**[encapsulation**]命令用来配置PVC或PVC-group的ATM AAL5封装类型。
 
-[**[undo encapsulation]{lang="EN-US"}**]{#struct_0_19500_x1656_832484532}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo encapsulation**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1720381598}
+【命令】
 
-[**[encapsulation]{lang="EN-US"}**[ { **aal5mux** *\|* **aal5nlpid** *\|* **aal5snap** }]{lang="EN-US"}]{#struct_0_19500_x1656_x960663493}
+**[encapsulation**[ { **aal5mux** *\|* **aal5nlpid** *\|* **aal5snap** }]]
 
-[**[undo encapsulation]{lang="EN-US"}**]{#struct_0_19500_x1656_2016116574}
+**[undo encapsulation**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1530716530}
+【缺省情况】
 
-[[ATM AAL5]{lang="EN-US"}]{#struct_0_19500_x1656_385756032}[封装类型为]{style="font-family:宋体"}**[aal5snap]{lang="EN-US"}**[。]{style="font-family:宋体"}
+ATM AAL5封装类型为**aal5snap**。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x454157066}
+【视图】
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x1471888957}[视图]{style="font-family:宋体"}[/PVC-group]{lang="EN-US"}[视图]{style="font-family:宋体"}
+PVC视图/PVC-group视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x903706663}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x1957897543}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_694990691}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1361406805}
+【参数】
 
-[**[aal5mux]{lang="EN-US"}**]{#struct_0_19500_x1656_x960597957}[：]{style="font-family:宋体"}[MUX]{lang="EN-US"}[复用封装类型。]{style="font-family:宋体"}
+**[aal5mux**]：MUX复用封装类型。
 
-[**[aal5nlpid]{lang="EN-US"}**]{#struct_0_19500_x1656_1644515687}[：]{style="font-family:宋体"}[RFC1490]{lang="EN-US"}[封装类型。]{style="font-family:宋体"}
+**[aal5nlpid**]：RFC1490封装类型。
 
-[**[aal5snap]{lang="EN-US"}**]{#struct_0_19500_x1656_x219486871}[：]{style="font-family:宋体"}[LLC]{lang="EN-US"}[（]{style="font-family:宋体"}[Logical Link Control]{lang="EN-US"}[，逻辑链接控制）]{style="font-family:宋体"}[/SNAP]{lang="EN-US"}[（]{style="font-family:宋体"}[Subnet Access Protocol]{lang="EN-US"}[，子网访问协议）封装类型。]{style="font-family:宋体"}
+**[aal5snap**]：LLC（Logical Link Control，逻辑链接控制）/SNAP（Subnet Access Protocol，子网访问协议）封装类型。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1181006808}
+【使用指导】
 
-[[不同的]{style="font-family:宋体"}[ATM AAL5]{lang="EN-US"}]{#struct_0_19500_x1656_x2079039320}[封装类型支持的映射类型如下：]{style="font-family:宋体"}
+不同的ATM AAL5封装类型支持的映射类型如下：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[aal5snap]{lang="EN-US"}**]{#struct_0_19500_x1656_1016738391}[封装支持]{lang="EN-US" style="font-family:宋体"}[IPoA]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[I]{lang="EN-US"}[P]{lang="EN-US"}[oEoA]{lang="EN-US"}[、]{style="font-family:宋体"}[PPPoA]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[PPPoEoA]{lang="EN-US"}[映射。]{lang="EN-US" style="font-family:宋体"}
+·**aal5snap**封装支持IPoA、IPoEoA、PPPoA、PPPoEoA映射。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[aal5mux]{lang="EN-US"}**]{#struct_0_19500_x1656_337815957}[封装支持]{lang="EN-US" style="font-family:宋体"}[IPoA]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[I]{lang="EN-US"}[P]{lang="EN-US"}[oEoA]{lang="EN-US"}[、]{style="font-family:宋体"}[PPPoA]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[PPPoEoA]{lang="EN-US"}[映射，但不支持同时承载多种协议。]{lang="EN-US" style="font-family:宋体"}
+·**aal5mux**封装支持IPoA、IPoEoA、PPPoA、PPPoEoA映射，但不支持同时承载多种协议。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[aal5nlpid]{lang="EN-US"}**]{#struct_0_19500_x1656_x547351814}[封装只支持]{lang="EN-US" style="font-family:宋体"}[IPoA]{lang="EN-US"}[映射。]{lang="EN-US" style="font-family:宋体"}
+·**aal5nlpid**封装只支持IPoA映射。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_19500_x1656_x960532421}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[相互通信的两端设备上配置的]{style="font-family:宋体"}]{#struct_0_19500_x1656_x702346663}[ATM AAL5]{lang="EN-US"}[封装类型要保持一致。]{style="font-family:宋体"}
+·相互通信的两端设备上配置的ATM AAL5封装类型要保持一致。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[只有]{lang="EN-US" style="font-family:宋体"}**[aal5snap]{lang="EN-US"}**]{#struct_0_19500_x1656_x143664560}[封装支持]{lang="EN-US" style="font-family:宋体"}[InARP]{lang="EN-US"}[协议，当采用]{lang="EN-US" style="font-family:宋体"}**[aal5mux]{lang="EN-US"}**[和]{lang="EN-US" style="font-family:宋体"}**[aal5nlpid]{lang="EN-US"}**[封装时不能配置]{lang="EN-US" style="font-family:宋体"}[InARP]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·只有**aal5snap**封装支持InARP协议，当采用**aal5mux**和**aal5nlpid**封装时不能配置InARP。
 
-[]{#struct_0_19500_x1656_122961702}[]{#_Hlt23234097}[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:
-Symbol"}[PVC/PVC-group]{lang="EN-US"}[支持同时承载多种协议，但某些类型的封装可能并不支持部分应用方式（即]{style="font-family:
-宋体"}[IPoA]{lang="EN-US"}[、]{style="font-family:宋体"}[IPoEoA]{lang="EN-US"}[、]{style="font-family:宋体"}[PPPoA]{lang="EN-US"}[、]{style="font-family:宋体"}[PPPoEoA]{lang="EN-US"}[中的一种或几种）。当出现不能支持的情况时，系统会给出错误提示。]{style="font-family:宋体"}
+·PVC/PVC-group支持同时承载多种协议，但某些类型的封装可能并不支持部分应用方式（即IPoA、IPoEoA、PPPoA、PPPoEoA中的一种或几种）。当出现不能支持的情况时，系统会给出错误提示。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在]{style="font-family:宋体"}]{#struct_0_19500_x1656_x1514946815}[PVC/PVC-group]{lang="EN-US"}[切换封装时，如果已经配置了与切换后封装类型冲突的映射，切换封装后的]{style="font-family:宋体"}[PVC/PVC-group]{lang="EN-US"}[将会删除所有冲突的映射对应的配置。]{style="font-family:宋体"}
+·在PVC/PVC-group切换封装时，如果已经配置了与切换后封装类型冲突的映射，切换封装后的PVC/PVC-group将会删除所有冲突的映射对应的配置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令不能在]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_x439073051}[下的]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}[下配置。]{lang="EN-US" style="font-family:宋体"}
+·本命令不能在PVC-group下的PVC下配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_812406341}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x148067525}[指定]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口]{style="font-family:宋体"}[2/4/0]{lang="EN-US"}[的]{style="font-family:宋体"}[PVC 1/32]{lang="EN-US"}[的]{style="font-family:宋体"}[AAL5]{lang="EN-US"}[封装类型为]{style="font-family:宋体"}**[aal5snap]{lang="EN-US"}**[。]{style="font-family:宋体"}
+\# 指定ATM接口2/4/0的PVC 1/32的AAL5封装类型为**aal5snap**。
 
-[[\<Sysname\>system-view]{lang="EN-US"}]{#struct_0_19500_x1656_x960466885}
+\<Sysname\>system-view
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc 1/32]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc 1/32
 
-[\[Sysname-ATM2/4/0-pvc-1/32\] encapsulation aal5snap]{lang="EN-US"}
-:::
-
-::: {#-1023592256 .myid}
-[]{#_Toc404785242}[]{#struct_0_19500_x1656_848289006}
+Sysname-ATM2/4/0-pvc-1/32 encapsulation aal5snap
 
 **ATM \-- ATM配置命令 \-- interface virtual-ethernet**
 
 ------------------------------------------------------------------------
 
-[**[interface virtual-ethernet]{lang="EN-US"}**]{#struct_0_19500_x1656_1972802053}[命令用来创建]{style="font-family:
-宋体"}[VE]{lang="EN-US"}[（]{style="font-family:宋体"}[Virtual Ethernet]{lang="EN-US"}[，三层虚拟以太网）接口或子接口，并进入]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口或子接口视图。如果该]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口或子接口已经存在，则直接进入]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口或子接口视图。]{style="font-family:宋体"}
+**[interface virtual-ethernet**]命令用来创建VE（Virtual Ethernet，三层虚拟以太网）接口或子接口，并进入VE接口或子接口视图。如果该VE接口或子接口已经存在，则直接进入VE接口或子接口视图。
 
-[**[undo interface virtual-ethernet]{lang="EN-US"}**]{#struct_0_19500_x1656_1627725112}[命令用来删除]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口或子接口。]{style="font-family:宋体"}
+**[undo interface virtual-ethernet**]命令用来删除VE接口或子接口。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1599810132}
+【命令】
 
-[**[interface virtual-ethernet]{lang="EN-US"}***[ ]{lang="EN-US"}*[{ *interface-number* \| *interface-number.subnumber* }]{lang="EN-US"}]{#struct_0_19500_x1656_1487654139}
+**[interface virtual-ethernet****[{ *interface-number* \| *interface-number.subnumber* }]]
 
-[**[undo interface virtual-ethernet]{lang="EN-US"}**[ { *interface-number* \| *interface-number.subnumber* }]{lang="EN-US"}]{#struct_0_19500_x1656_x991213159}
+**[undo interface virtual-ethernet**[ { *interface-number* \| *interface-number.subnumber* }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1845442643}
+【缺省情况】
 
-[[不存在]{style="font-family:宋体"}[VE]{lang="EN-US"}]{#struct_0_19500_x1656_x519430587}[接口和子接口。]{style="font-family:宋体"}
+不存在VE接口和子接口。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x961449925}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_19500_x1656_x1824853751}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x139788382}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_834307990}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x1194690862}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1825369865}
+【参数】
 
-[*[interface-number]{lang="EN-US"}*]{#struct_0_19500_x1656_x1763160716}[：]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口编号。]{style="font-family:宋体"}
+*[interface-number*]：VE接口编号。
 
-[*[interface-number.subnumber]{lang="EN-US"}*]{#struct_0_19500_x1656_1278221001}[：]{style="font-family:
-宋体"}[VE]{lang="EN-US"}[子接口编号，其中]{style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[为主接口编号；]{style="font-family:宋体"}*[subnumber]{lang="EN-US"}*[为子接口编号。]{style="font-family:宋体"}
+*[interface-number.subnumber*]：VE子接口编号，其中*interface-number*为主接口编号；*subnumber*为子接口编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1554399058}
+【使用指导】
 
-[[VE]{lang="EN-US"}]{#struct_0_19500_x1656_x961384389}[接口的波特率为]{style="font-family:宋体"}[10000000bit/s]{lang="EN-US"}[。]{style="font-family:宋体"}
+VE接口的波特率为10000000bit/s。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_63370071}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x284973400}[创建]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口并进入]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口视图。]{style="font-family:宋体"}
+\# 创建VE接口并进入VE接口视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_431018164}
+\<Sysname\> system-view
 
-[\[Sysname\] interface virtual-ethernet 2/4/1]{lang="EN-US"}
+Sysname interface virtual-ethernet 2/4/1
 
-[\[Sysname-Virtual-Ethernet2/4/1\]]{lang="EN-US"}
+Sysname-Virtual-Ethernet2/4/1
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_804616994}[创建]{style="font-family:宋体"}[VE]{lang="EN-US"}[子接口并进入]{style="font-family:宋体"}[VE]{lang="EN-US"}[子接口视图。]{style="font-family:宋体"}
+\# 创建VE子接口并进入VE子接口视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_x723421451}
+\<Sysname\> system-view
 
-[\[Sysname\] interface virtual-ethernet 2/4/1.1]{lang="EN-US"}
+Sysname interface virtual-ethernet 2/4/1.1
 
-[\[Sysname-Virtual-Ethernet2/4/1.1\]]{lang="EN-US"}
-:::
-
-::: {#-636046328 .myid}
-[]{#_Toc348095179}[]{#_Toc328667720}[]{#_Toc404785243}[]{#struct_0_19500_x1656_x1219660297}[]{#_Toc348877553}[]{#_Hlt24951205}[]{#_Toc337389348}[]{#_Toc337476133}[]{#_Toc337480910}[]{#_Toc337540984}[]{#_Toc337555768}[]{#_Toc337389349}[]{#_Toc337476134}[]{#_Toc337480911}[]{#_Toc337540985}[]{#_Toc337555769}[]{#_Toc337389350}[]{#_Toc337476135}[]{#_Toc337480912}[]{#_Toc337540986}[]{#_Toc337555770}[]{#_Toc337389351}[]{#_Toc337476136}[]{#_Toc337480913}[]{#_Toc337540987}[]{#_Toc337555771}[]{#_Toc337389352}[]{#_Toc337476137}[]{#_Toc337480914}[]{#_Toc337540988}[]{#_Toc337555772}[]{#_Toc337389353}[]{#_Toc337476138}[]{#_Toc337480915}[]{#_Toc337540989}[]{#_Toc337555773}[]{#_Toc337389354}[]{#_Toc337476139}[]{#_Toc337480916}[]{#_Toc337540990}[]{#_Toc337555774}[]{#_Toc337389355}[]{#_Toc337476140}[]{#_Toc337480917}[]{#_Toc337540991}[]{#_Toc337555775}[]{#_Toc337389356}[]{#_Toc337476141}[]{#_Toc337480918}[]{#_Toc337540992}[]{#_Toc337555776}[]{#_Toc337389357}[]{#_Toc337476142}[]{#_Toc337480919}[]{#_Toc337540993}[]{#_Toc337555777}[]{#_Toc337389358}[]{#_Toc337476143}[]{#_Toc337480920}[]{#_Toc337540994}[]{#_Toc337555778}[]{#_Toc337389359}[]{#_Toc337476144}[]{#_Toc337480921}[]{#_Toc337540995}[]{#_Toc337555779}[]{#_Toc337389360}[]{#_Toc337476145}[]{#_Toc337480922}[]{#_Toc337540996}[]{#_Toc337555780}[]{#_Toc337389361}[]{#_Toc337476146}[]{#_Toc337480923}[]{#_Toc337540997}[]{#_Toc337555781}[]{#_Toc337389362}[]{#_Toc337476147}[]{#_Toc337480924}[]{#_Toc337540998}[]{#_Toc337555782}[]{#_Toc337389363}[]{#_Toc337476148}[]{#_Toc337480925}[]{#_Toc337540999}[]{#_Toc337555783}[]{#_Toc337389364}[]{#_Toc337476149}[]{#_Toc337480926}[]{#_Toc337541000}[]{#_Toc337555784}[]{#_Toc337389365}[]{#_Toc337476150}[]{#_Toc337480927}[]{#_Toc337541001}[]{#_Toc337555785}[]{#_Toc337389366}[]{#_Toc337476151}[]{#_Toc337480928}[]{#_Toc337541002}[]{#_Toc337555786}[]{#_Toc337389367}[]{#_Toc337476152}[]{#_Toc337480929}[]{#_Toc337541003}[]{#_Toc337555787}[]{#_Toc337389368}[]{#_Toc337476153}[]{#_Toc337480930}[]{#_Toc337541004}[]{#_Toc337555788}[]{#_Toc337389369}[]{#_Toc337476154}[]{#_Toc337480931}[]{#_Toc337541005}[]{#_Toc337555789}[]{#_Toc337389370}[]{#_Toc337476155}[]{#_Toc337480932}[]{#_Toc337541006}[]{#_Toc337555790}[]{#_Toc337389371}[]{#_Toc337476156}[]{#_Toc337480933}[]{#_Toc337541007}[]{#_Toc337555791}[]{#_Toc337389372}[]{#_Toc337476157}[]{#_Toc337480934}[]{#_Toc337541008}[]{#_Toc337555792}[]{#_Toc337389373}[]{#_Toc337476158}[]{#_Toc337480935}[]{#_Toc337541009}[]{#_Toc337555793}[]{#_Toc337389374}[]{#_Toc337476159}[]{#_Toc337480936}[]{#_Toc337541010}[]{#_Toc337555794}[]{#_Toc337389375}[]{#_Toc337476160}[]{#_Toc337480937}[]{#_Toc337541011}[]{#_Toc337555795}[]{#_Toc337389376}[]{#_Toc337476161}[]{#_Toc337480938}[]{#_Toc337541012}[]{#_Toc337555796}[]{#_Toc337389377}[]{#_Toc337476162}[]{#_Toc337480939}[]{#_Toc337541013}[]{#_Toc337555797}[]{#_Toc337389378}[]{#_Toc337476163}[]{#_Toc337480940}[]{#_Toc337541014}[]{#_Toc337555798}[]{#_Toc337389379}[]{#_Toc337476164}[]{#_Toc337480941}[]{#_Toc337541015}[]{#_Toc337555799}[]{#_Toc337389380}[]{#_Toc337476165}[]{#_Toc337480942}[]{#_Toc337541016}[]{#_Toc337555800}[]{#_Toc337389381}[]{#_Toc337476166}[]{#_Toc337480943}[]{#_Toc337541017}[]{#_Toc337555801}[]{#_Toc337389382}[]{#_Toc337476167}[]{#_Toc337480944}[]{#_Toc337541018}[]{#_Toc337555802}[]{#_Toc337389383}[]{#_Toc337476168}[]{#_Toc337480945}[]{#_Toc337541019}[]{#_Toc337555803}[]{#_Toc337389384}[]{#_Toc337476169}[]{#_Toc337480946}[]{#_Toc337541020}[]{#_Toc337555804}[]{#_Toc337389385}[]{#_Toc337476170}[]{#_Toc337480947}[]{#_Toc337541021}[]{#_Toc337555805}[]{#_Toc337389386}[]{#_Toc337476171}[]{#_Toc337480948}[]{#_Toc337541022}[]{#_Toc337555806}[]{#_Toc337389387}[]{#_Toc337476172}[]{#_Toc337480949}[]{#_Toc337541023}[]{#_Toc337555807}[]{#_Toc337389388}[]{#_Toc337476173}[]{#_Toc337480950}[]{#_Toc337541024}[]{#_Toc337555808}
+Sysname-Virtual-Ethernet2/4/1.1
 
 **ATM \-- ATM配置命令 \-- mac-address**
 
 ------------------------------------------------------------------------
 
-[**[mac-address]{lang="EN-US"}**]{#struct_0_19500_x1656_x960925636}[命令用来配置]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[mac-address**]命令用来配置VE接口的MAC地址。
 
-[**[undo mac-address]{lang="EN-US"}**]{#struct_0_19500_x1656_x1490065233}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo mac-address**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x810209942}
+【命令】
 
-[**[mac-address]{lang="EN-US"}**[ *mac-address*]{lang="EN-US"}]{#struct_0_19500_x1656_x309525964}
+**[mac-address** *mac-address*]
 
-[**[undo mac-address]{lang="EN-US"}**]{#struct_0_19500_x1656_1233074252}
+**[undo mac-address**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1328921934}
+【缺省情况】
 
-[[VE]{lang="EN-US"}]{#struct_0_19500_x1656_1105893585}[接口在创建时会使用设备的桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址作为自己的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+VE接口在创建时会使用设备的桥MAC地址作为自己的MAC地址。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_532983375}
+【视图】
 
-[[VE]{lang="EN-US"}]{#struct_0_19500_x1656_x2128773312}[接口视图]{style="font-family:宋体"}
+VE接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x960860100}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1227563464}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x555708152}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x964388986}
+【参数】
 
-[*[mac-address]{lang="EN-US"}*]{#struct_0_19500_x1656_x100697069}[：]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，形式为]{style="font-family:宋体"}[H-H-H]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[mac-address*]：MAC地址，形式为H-H-H。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1181724809}
+【使用指导】
 
-[[VE]{lang="EN-US"}]{#struct_0_19500_x1656_x1700286432}[接口在创建时会使用设备的桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址作为自己的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，这样，所有的]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口都共用一个]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。如果同一设备的多个]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口通过不同的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[连接到同一个]{style="font-family:宋体"}[DHCP]{lang="EN-US"}[服务器，而]{style="font-family:宋体"}[DHCP]{lang="EN-US"}[服务器上采用静态绑定方式给]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口进行]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址分配，则需要使用]{style="font-family:宋体"}**[mac-address]{lang="EN-US"}**[命令为不同的]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口配置不同的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+VE接口在创建时会使用设备的桥MAC地址作为自己的MAC地址，这样，所有的VE接口都共用一个MAC地址。如果同一设备的多个VE接口通过不同的PVC连接到同一个DHCP服务器，而DHCP服务器上采用静态绑定方式给VE接口进行IP地址分配，则需要使用**mac-address**命令为不同的VE接口配置不同的MAC地址。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_619674566}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_343250928}[配置]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口]{style="font-family:宋体"}[Virtual-Ethernet2/4/1]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为]{style="font-family:宋体"}[0001-0001-0001]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置VE接口Virtual-Ethernet2/4/1的MAC地址为0001-0001-0001。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_x960794564}
+\<Sysname\> system-view
 
-[\[Sysname\] interface virtual-ethernet 2/4/1]{lang="EN-US"}
+Sysname interface virtual-ethernet 2/4/1
 
-[\[Sysname-Virtual-Ethernet2/4/1\] mac-address 1-1-1]{lang="EN-US"}
-:::
-
-::: {#-406764260 .myid}
-[]{#_Toc404785244}[]{#struct_0_19500_x1656_x1482558511}
+Sysname-Virtual-Ethernet2/4/1 mac-address 1-1-1
 
 **ATM \-- ATM配置命令 \-- map bridge**
 
 ------------------------------------------------------------------------
 
-[**[map bridge]{lang="EN-US"}**]{#struct_0_19500_x1656_2083733186}[命令用来为]{style="font-family:宋体"}[PVC]{lang="EN-US"}[或]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[创建]{style="font-family:宋体"}[IPoEoA]{lang="EN-US"}[映射、]{style="font-family:宋体"}[PPPoEoA]{lang="EN-US"}[映射。]{style="font-family:宋体"}
+**[map bridge**]命令用来为PVC或PVC-group创建IPoEoA映射、PPPoEoA映射。
 
-[**[undo map bridge]{lang="EN-US"}**]{#struct_0_19500_x1656_x2013202897}[命令用来删除该映射。]{style="font-family:宋体"}
+**[undo map bridge**]命令用来删除该映射。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x72269719}
+【命令】
 
-[**[map bridge virtual-ethernet]{lang="EN-US"}**[ *interface-number*]{lang="EN-US"}]{#struct_0_19500_x1656_x1576235769}
+**[map bridge virtual-ethernet** *interface-number*]
 
-[**[undo map bridge]{lang="EN-US"}**]{#struct_0_19500_x1656_x452061174}
+**[undo map bridge**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x209486585}
+【缺省情况】
 
-[[没有配置任何映射。]{style="font-family:宋体"}]{#struct_0_19500_x1656_x960729028}
+没有配置任何映射。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1270739244}
+【视图】
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_598350647}[视图]{style="font-family:宋体"}[/PVC-group]{lang="EN-US"}[视图]{style="font-family:宋体"}
+PVC视图/PVC-group视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_981880844}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x2044868463}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1354846396}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1146656658}
+【参数】
 
-[**[virtual-ethernet]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*]{#struct_0_19500_x1656_1992048971}[：]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口。]{style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口编号。该接口必须已经创建。]{style="font-family:宋体"}
+**[virtual-ethernet*** interface-number*]：VE接口。*interface-number*表示VE接口编号。该接口必须已经创建。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x960663492}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[aal5snap]{lang="EN-US"}**]{#struct_0_19500_x1656_2016051038}[和]{lang="EN-US" style="font-family:宋体"}**[aal5mux]{lang="EN-US"}**[封装支持]{lang="EN-US" style="font-family:宋体"}[IPoEoA]{lang="EN-US"}[映射、]{lang="EN-US" style="font-family:宋体"}[PPPoEoA]{lang="EN-US"}[映射。]{lang="EN-US" style="font-family:宋体"}
+·**aal5snap**和**aal5mux**封装支持IPoEoA映射、PPPoEoA映射。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[每个]{style="font-family:宋体"}]{#struct_0_19500_x1656_x1178237940}[VE]{lang="EN-US"}[接口上最多允许创建]{style="font-family:宋体"}[512]{lang="EN-US"}[条映射。]{style="font-family:宋体"}
+·每个VE接口上最多允许创建512条映射。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[每个]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x1103484125}[或]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}[只能映射到一个]{lang="EN-US" style="font-family:宋体"}[VE]{lang="EN-US"}[接口。]{lang="EN-US" style="font-family:宋体"}
+·每个PVC或PVC-group只能映射到一个VE接口。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本板]{lang="EN-US" style="font-family:宋体"}[VE]{lang="EN-US"}]{#struct_0_19500_x1656_x499152683}[接口只能绑定到本板]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}[，使用前可以看]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口]{lang="EN-US" style="font-family:宋体"}[的接口编号中对应的板号和]{style="font-family:宋体"}[PVC]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}[所在]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口对应板号是否一致]{style="font-family:宋体"}[。]{lang="EN-US" style="font-family:
-宋体"}
+·本板VE接口只能绑定到本板PVC或PVC-group，使用前可以看VE接口的接口编号中对应的板号和PVC或PVC-group所在ATM接口对应板号是否一致。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令不能在]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_x620610460}[下的]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}[下配置。]{lang="EN-US" style="font-family:宋体"}
+·本命令不能在PVC-group下的PVC下配置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置]{style="font-family:宋体"}]{#struct_0_19500_x1656_x2022702693}[IPoEoA]{lang="EN-US"}[、]{style="font-family:宋体"}[PPPoEoA]{lang="EN-US"}[应用时，必须指定一个]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口与之对应。]{style="font-family:宋体"}
+·配置IPoEoA、PPPoEoA应用时，必须指定一个VE接口与之对应。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1907813754}
+【举例】
 
-[[下面这个例子展示了一个完整的]{style="font-family:宋体"}[IPoEoA]{lang="EN-US"}]{#struct_0_19500_x1656_1742415057}[配置过程。]{style="font-family:宋体"}
+下面这个例子展示了一个完整的IPoEoA配置过程。
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x960597956}[创建]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口]{style="font-family:宋体"}[Virtual-Ethernet2/4/1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 创建VE接口Virtual-Ethernet2/4/1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_1644581223}
+\<Sysname\> system-view
 
-[\[Sysname\] interface virtual-ethernet 2/4/1]{lang="EN-US"}
+Sysname interface virtual-ethernet 2/4/1
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_1320269775}[为该]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口配置]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[10.1.1.1/16]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 为该VE接口配置IP地址10.1.1.1/16。
 
-[[\[Sysname-Virtual-Ethernet2/4/1\] ip address 10.1.1.1 255.255.0.0]{lang="EN-US"}]{#struct_0_19500_x1656_x1193849450}
+Sysname-Virtual-Ethernet2/4/1 ip address 10.1.1.1 255.255.0.0
 
-[\[Sysname-Virtual-Ethernet2/4/1\] quit]{lang="EN-US"}
+Sysname-Virtual-Ethernet2/4/1 quit
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_1580910269}[在]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口]{style="font-family:宋体"}[ATM2/4/0]{lang="EN-US"}[下创建]{style="font-family:宋体"}[VPI/VCI]{lang="EN-US"}[为]{style="font-family:宋体"}[1/102]{lang="EN-US"}[的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在ATM接口ATM2/4/0下创建VPI/VCI为1/102的PVC。
 
-[[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}]{#struct_0_19500_x1656_1125283408}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc 1/102]{lang="EN-US"}[]{#_Hlt16595042}
+Sysname-ATM2/4/0 pvc 1/102
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_626627059}[在]{style="font-family:宋体"}[PVC]{lang="EN-US"}[视图下使用已经创建的]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口来创建]{style="font-family:宋体"}[IPoEoA]{lang="EN-US"}[映射。]{style="font-family:宋体"}
+\# 在PVC视图下使用已经创建的VE接口来创建IPoEoA映射。
 
-[[\[Sysname-ATM2/4/0-pvc-1/102\] map bridge virtual-ethernet 2/4/1]{lang="EN-US"}]{#struct_0_19500_x1656_x1928776178}
+Sysname-ATM2/4/0-pvc-1/102 map bridge virtual-ethernet 2/4/1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x960532420}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[encapsulation]{lang="EN-US"}**]{#struct_0_19500_x1656_x702281127}
-:::
-
-::: {#1511778876 .myid}
-[]{#_Toc404785245}[]{#struct_0_19500_x1656_x125868712}[]{#_Toc348095180}[]{#_Toc348114933}
+·**encapsulation**
 
 **ATM \-- ATM配置命令 \-- map ip**
 
 ------------------------------------------------------------------------
 
-[**[map ip]{lang="EN-US"}**]{#struct_0_19500_x1656_x557603149}[命令用来为]{style="font-family:宋体"}[PVC]{lang="EN-US"}[或]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[创建]{style="font-family:宋体"}[IPoA]{lang="EN-US"}[映射，使]{style="font-family:宋体"}[PVC]{lang="EN-US"}[或]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[承载]{style="font-family:宋体"}[IP]{lang="EN-US"}[协议报文。]{style="font-family:宋体"}
+**[map ip**]命令用来为PVC或PVC-group创建IPoA映射，使PVC或PVC-group承载IP协议报文。
 
-[**[undo map ip]{lang="EN-US"}**]{#struct_0_19500_x1656_x648833795}[命令用来删除该映射。]{style="font-family:宋体"}
+**[undo map ip**]命令用来删除该映射。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1671520961}
+【命令】
 
-[**[map ip]{lang="EN-US"}**[ { *ip-address* \| **default** \| **inarp** \[ *minutes* \] }]{lang="EN-US"}]{#struct_0_19500_x1656_x853163177}
+**[map ip**[ { *ip-address* \| **default** \| **inarp** [ *minutes* ] }]]
 
-[**[undo map ip]{lang="EN-US"}**[ \[ *ip-address* \| **default** \| **inarp** \]]{lang="EN-US"}]{#struct_0_19500_x1656_x205351888}
+**[undo map ip**[ [ *ip-address* \| **default** \| **inarp** ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1820747172}
+【缺省情况】
 
-[[没有配置任何映射。]{style="font-family:宋体"}]{#struct_0_19500_x1656_x960466884}
+没有配置任何映射。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_848223470}
+【视图】
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_1972724649}[视图]{style="font-family:宋体"}[/PVC-group]{lang="EN-US"}[视图]{style="font-family:宋体"}
+PVC视图/PVC-group视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1881798890}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x1657029101}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_120177669}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_870976696}
+【参数】
 
-[*[ip-address]{lang="EN-US"}*]{#struct_0_19500_x1656_1339369119}[：映射到]{style="font-family:宋体"}[PVC]{lang="EN-US"}[或]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[的对端接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[ip-address*]：映射到PVC或PVC-group的对端接口的IP地址。
 
-[**[default]{lang="EN-US"}**]{#struct_0_19500_x1656_1896629628}[：配置一个具有缺省路由属性的映射。若某个报文在接口上找不到下一跳地址和]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*[相同的映射，但某条]{style="font-family:宋体"}[PVC]{lang="EN-US"}[或]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[配置了]{style="font-family:宋体"}[default]{lang="EN-US"}[映射，则报文将从该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[或]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[上发送。]{style="font-family:宋体"}
+**[default**]：配置一个具有缺省路由属性的映射。若某个报文在接口上找不到下一跳地址和*ip-address*相同的映射，但某条PVC或PVC-group配置了default映射，则报文将从该PVC或PVC-group上发送。
 
-[**[inarp]{lang="EN-US"}**]{#struct_0_19500_x1656_x961449924}[：使能反向地址解析]{style="font-family:宋体"}[InARP]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[inarp**]：使能反向地址解析InARP。
 
-[*[minutes]{lang="EN-US"}*]{#struct_0_19500_x1656_x1824919287}[：发送]{style="font-family:宋体"}[InARP]{lang="EN-US"}[报文的间隔时间，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[600]{lang="EN-US"}[，单位为分钟，缺省值为]{style="font-family:宋体"}[15]{lang="EN-US"}[分钟。]{style="font-family:宋体"}
+*[minutes*]：发送InARP报文的间隔时间，取值范围为1～600，单位为分钟，缺省值为15分钟。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x305875087}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[所有的封装类型都支持]{style="font-family:宋体"}]{#struct_0_19500_x1656_1179400437}[IPoA]{lang="EN-US"}[映射。]{style="font-family:宋体"}[但只有]{lang="EN-US" style="font-family:宋体"}**[aal5snap]{lang="EN-US"}**[封装支持配置]{lang="EN-US" style="font-family:宋体"}[InARP]{lang="EN-US"}[映射]{style="font-family:宋体"}[，当采用]{lang="EN-US" style="font-family:宋体"}**[aal5mux]{lang="EN-US"}**[和]{lang="EN-US" style="font-family:宋体"}**[aal5nlpid]{lang="EN-US"}**[封装时不能配置]{lang="EN-US" style="font-family:宋体"}[InARP]{lang="EN-US"}[映射]{style="font-family:宋体"}[。]{lang="EN-US" style="font-family:宋体"}
+·所有的封装类型都支持IPoA映射。但只有**aal5snap**封装支持配置InARP映射，当采用**aal5mux**和**aal5nlpid**封装时不能配置InARP映射。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[相同]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_1122710660}[或]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}[下可以映射多个]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址，且]{lang="EN-US" style="font-family:宋体"}[静态]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址映射、]{lang="EN-US" style="font-family:宋体"}[default]{lang="EN-US"}[映射和]{lang="EN-US" style="font-family:宋体"}[InARP]{lang="EN-US"}[映射三者可以同时配置。]{lang="EN-US" style="font-family:宋体"}
+·相同PVC或PVC-group下可以映射多个IP地址，且静态IP地址映射、default映射和InARP映射三者可以同时配置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[相同接口下不同的]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x1158466683}[或]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}[不能映射到同一个]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{lang="EN-US" style="font-family:宋体"}
+·相同接口下不同的PVC或PVC-group不能映射到同一个IP地址。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[同一个接口下的]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_365142236}[和]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}[最多只能配置一个]{lang="EN-US" style="font-family:宋体"}[default]{lang="EN-US"}[映射。]{lang="EN-US" style="font-family:宋体"}
+·同一个接口下的PVC和PVC-group最多只能配置一个default映射。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[执行]{lang="EN-US" style="font-family:宋体"}**[undo]{lang="EN-US"}**]{#struct_0_19500_x1656_1726690270}[命令时，如果不指定任何参数，则删除该]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}[下所有的]{lang="EN-US" style="font-family:宋体"}[静态]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址映射、]{lang="EN-US" style="font-family:宋体"}[default]{lang="EN-US"}[映射和]{lang="EN-US" style="font-family:宋体"}[InARP]{lang="EN-US"}[映射。]{lang="EN-US" style="font-family:宋体"}
+·执行**undo**命令时，如果不指定任何参数，则删除该PVC或PVC-group下所有的静态IP地址映射、default映射和InARP映射。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令不能在]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_x269143144}[下的]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}[下配置。]{lang="EN-US" style="font-family:宋体"}
+·本命令不能在PVC-group下的PVC下配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x961384388}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_63304535}[在]{style="font-family:宋体"}[PVC 1/32]{lang="EN-US"}[上创建一个静态]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址映射，指定对端]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[61.123.30.169]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在PVC 1/32上创建一个静态IP地址映射，指定对端IP地址为61.123.30.169。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_71137552}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc 1/32]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc 1/32
 
-[\[Sysname-ATM2/4/0-pvc-1/32\] map ip 61.123.30.169]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-1/32 map ip 61.123.30.169
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_615535214}[在]{style="font-family:宋体"}[PVC 1/33]{lang="EN-US"}[上使能]{style="font-family:宋体"}[InARP]{lang="EN-US"}[映射，每]{style="font-family:宋体"}[10]{lang="EN-US"}[分钟发送一次]{style="font-family:宋体"}[InARP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+\# 在PVC 1/33上使能InARP映射，每10分钟发送一次InARP报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_2083200439}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc 1/33]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc 1/33
 
-[\[Sysname-ATM2/4/0-pvc-1/33\] map ip inarp 10]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-1/33 map ip inarp 10
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x470324562}[在]{style="font-family:宋体"}[PVC 1/33]{lang="EN-US"}[上删除所有类型的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址映射。]{style="font-family:宋体"}
+\# 在PVC 1/33上删除所有类型的IP地址映射。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_605158308}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc 1/33]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc 1/33
 
-[\[Sysname-ATM2/4/0-pvc-1/33\] undo map ip]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-1/33 undo map ip
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1360701678}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[encapsulation]{lang="EN-US"}**]{#struct_0_19500_x1656_x163592179}
-:::
-
-::: {#-1693452895 .myid}
-[]{#_Toc404785246}[]{#struct_0_19500_x1656_x1749480866}[]{#_Toc348095181}[]{#_Toc328667722}
+·**encapsulation**
 
 **ATM \-- ATM配置命令 \-- map ppp**
 
 ------------------------------------------------------------------------
 
-[**[map ppp]{lang="EN-US"}**]{#struct_0_19500_x1656_x2029213009}[命令用来为]{style="font-family:宋体"}[PVC]{lang="EN-US"}[或]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[创建]{style="font-family:宋体"}[PPPoA]{lang="EN-US"}[映射。]{style="font-family:宋体"}
+**[map ppp**]命令用来为PVC或PVC-group创建PPPoA映射。
 
-[**[undo map ppp]{lang="EN-US"}**]{#struct_0_19500_x1656_1034348326}[命令用来删除该映射。]{style="font-family:宋体"}
+**[undo map ppp**]命令用来删除该映射。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x979715560}
+【命令】
 
-[**[map ppp virtual-template]{lang="EN-US"}**[ *vt-number*]{lang="EN-US"}]{#struct_0_19500_x1656_x1121951631}
+**[map ppp virtual-template** *vt-number*]
 
-[**[undo map ppp]{lang="EN-US"}**]{#struct_0_19500_x1656_605223844}
+**[undo map ppp**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_47885350}
+【缺省情况】
 
-[[没有配置任何映射。]{style="font-family:宋体"}]{#struct_0_19500_x1656_x547246564}
+没有配置任何映射。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1989104899}
+【视图】
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x254522952}[视图]{style="font-family:宋体"}[/PVC-group]{lang="EN-US"}[视图]{style="font-family:宋体"}
+PVC视图/PVC-group视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_237373753}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x213291153}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_875584859}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x354098064}
+【参数】
 
-[*[vt-number]{lang="EN-US"}*]{#struct_0_19500_x1656_605289380}[：]{style="font-family:宋体"}[PPPoA]{lang="EN-US"}[对应的虚拟模板接口编号。该虚拟模板接口必须已经创建。]{style="font-family:宋体"}
+*[vt-number*]：PPPoA对应的虚拟模板接口编号。该虚拟模板接口必须已经创建。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x682710333}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[aal5snap]{lang="EN-US"}**]{#struct_0_19500_x1656_272254217}[和]{lang="EN-US" style="font-family:宋体"}**[aal5mux]{lang="EN-US"}**[封装支持]{lang="EN-US" style="font-family:宋体"}[PPPoA]{lang="EN-US"}[映射。]{lang="EN-US" style="font-family:宋体"}
+·**aal5snap**和**aal5mux**封装支持PPPoA映射。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[每个]{style="font-family:宋体"}]{#struct_0_19500_x1656_x2003300166}[PVC]{lang="EN-US"}[或]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[只能映射到一个虚拟模板接口。]{style="font-family:宋体"}
+·每个PVC或PVC-group只能映射到一个虚拟模板接口。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令不能在]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_x1474579203}[下的]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}[下配置。]{lang="EN-US" style="font-family:宋体"}
+·本命令不能在PVC-group下的PVC下配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1520458736}
+【举例】
 
-[[下面这个例子展示了一个完整的]{style="font-family:宋体"}[PPPoA]{lang="EN-US"}]{#struct_0_19500_x1656_1948571990}[配置过程。]{style="font-family:宋体"}
+下面这个例子展示了一个完整的PPPoA配置过程。
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x1416251433}[创建虚拟模板接口]{style="font-family:宋体"}[10]{lang="EN-US"}[并为该接口配置]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+\# 创建虚拟模板接口10并为该接口配置IP地址。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_605354916}
+\<Sysname\> system-view
 
-[\[Sysname\] interface virtual-template 10]{lang="EN-US"}
+Sysname interface virtual-template 10
 
-[\[Sysname-Virtual-Template10\] ip address 202.38.160.1 255.255.255.0[]{#_Hlt23220430}]{lang="EN-US"}
+Sysname-Virtual-Template10 ip address 202.38.160.1 255.255.255.0
 
-[\[Sysname-Virtual-Template10\] quit]{lang="EN-US"}
+Sysname-Virtual-Template10 quit
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_817510142}[在]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口]{style="font-family:宋体"}[ATM2/4/0]{lang="EN-US"}[下创建]{style="font-family:宋体"}[VPI/VCI]{lang="EN-US"}[为]{style="font-family:宋体"}[1/101]{lang="EN-US"}[的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在ATM接口ATM2/4/0下创建VPI/VCI为1/101的PVC。
 
-[[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}]{#struct_0_19500_x1656_x946021866}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc 1/101]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc 1/101
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_1182631171}[使用已经创建的虚拟模板接口来创建]{style="font-family:宋体"}[PPPoA]{lang="EN-US"}[映射。]{style="font-family:宋体"}
+\# 使用已经创建的虚拟模板接口来创建PPPoA映射。
 
-[[\[Sysname-ATM2/4/0-pvc-1/101\] map ppp virtual-template 10]{lang="EN-US"}]{#struct_0_19500_x1656_x1457722428}
+Sysname-ATM2/4/0-pvc-1/101 map ppp virtual-template 10
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1137867755}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[encapsulation]{lang="EN-US"}**]{#struct_0_19500_x1656_x1232619963}
-:::
-
-::: {#988247972 .myid}
-[]{#_Toc348095182}[]{#_Toc328667724}[]{#_Toc404785247}[]{#struct_0_19500_x1656_x1547028182}[]{#_Toc354243982}
+·**encapsulation**
 
 **ATM \-- ATM配置命令 \-- mtu**
 
 ------------------------------------------------------------------------
 
-[**[mtu]{lang="EN-US"}**]{#struct_0_19500_x1656_605420452}[命令用来配置接口的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[（]{style="font-family:宋体"}[Maximum Transmission Unit]{lang="EN-US"}[，最大传输单元）值。]{style="font-family:宋体"}
+**[mtu**]命令用来配置接口的MTU（Maximum Transmission Unit，最大传输单元）值。
 
-[**[undo mtu]{lang="EN-US"}**]{#struct_0_19500_x1656_1503999196}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo mtu**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_735853628}
+【命令】
 
-[**[mtu]{lang="EN-US"}**[ *size*]{lang="EN-US"}]{#struct_0_19500_x1656_1657360206}
+**[mtu** *size*]
 
-[**[undo mtu]{lang="EN-US"}**]{#struct_0_19500_x1656_983770419}
+**[undo mtu**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x2102108065}
+【缺省情况】
 
-[[接口的]{style="font-family:宋体"}[MTU]{lang="EN-US"}]{#struct_0_19500_x1656_1239632059}[值为]{style="font-family:宋体"}[1500]{lang="EN-US"}[字节。]{style="font-family:宋体"}
+接口的MTU值为1500字节。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x611451382}
+【视图】
 
-[[VE]{lang="EN-US"}]{#struct_0_19500_x1656_730553865}[接口视图]{style="font-family:宋体"}[/VE]{lang="EN-US"}[子接口视图]{style="font-family:宋体"}
+VE接口视图/VE子接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_605485988}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1112750281}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1183777980}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1431186214}
+【参数】
 
-[*[size]{lang="EN-US"}*]{#struct_0_19500_x1656_x583432226}[：接口的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[值，单位为字节。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[size*]：接口的MTU值，单位为字节。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1017732021}
+【使用指导】
 
-[[接口的]{style="font-family:宋体"}[MTU]{lang="EN-US"}]{#struct_0_19500_x1656_1176771472}[值影响]{style="font-family:宋体"}[IP]{lang="EN-US"}[协议报文在该接口上传输时的分片与重组。]{style="font-family:宋体"}
+接口的MTU值影响IP协议报文在该接口上传输时的分片与重组。
 
-[[需要注意的是，配置了]{style="font-family:宋体"}**[mtu]{lang="EN-US"}**]{#struct_0_19500_x1656_x1469923310}[命令后需要执行命令]{style="font-family:宋体"}**[shutdown]{lang="EN-US"}**[和]{style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**[，这样该配置才能在接口上生效。]{style="font-family:宋体"}
+需要注意的是，配置了**mtu**命令后需要执行命令**shutdown**和**undo shutdown**，这样该配置才能在接口上生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1491673352}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_605551524}[配置接口]{style="font-family:宋体"}[VE2/4/0]{lang="EN-US"}[的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[值为]{style="font-family:宋体"}[200]{lang="EN-US"}[字节。]{style="font-family:宋体"}
+\# 配置接口VE2/4/0的MTU值为200字节。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_1135263676}
+\<Sysname\> system-view
 
-[\[Sysname\] interface virtual-ethernet 2/4/0]{lang="EN-US"}
+Sysname interface virtual-ethernet 2/4/0
 
-[\[Sysname- Virtual-Ethernet2/4/0\] mtu 200]{lang="EN-US"}
-:::
-
-::: {#-593357428 .myid}
-[]{#_Toc404785248}[]{#struct_0_19500_x1656_1162971641}
+Sysname- Virtual-Ethernet2/4/0 mtu 200
 
 **ATM \-- ATM配置命令 \-- oam ais-rdi**
 
 ------------------------------------------------------------------------
 
-[**[oam ais-rdi]{lang="EN-US"}**]{#struct_0_19500_x1656_1001375556}[命令用来修改]{style="font-family:宋体"}[AIS/RDI]{lang="EN-US"}[（]{style="font-family:宋体"}[Alarm Indication Signal/Remote Defect Indication]{lang="EN-US"}[，告警指示信号]{style="font-family:宋体"}[/]{lang="EN-US"}[远程故障指示）告警信元检测的相关参数。]{style="font-family:宋体"}
+**[oam ais-rdi**]命令用来修改AIS/RDI（Alarm Indication Signal/Remote Defect Indication，告警指示信号/远程故障指示）告警信元检测的相关参数。
 
-[**[undo oam ais-rdi]{lang="EN-US"}**]{#struct_0_19500_x1656_x2120652015}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo oam ais-rdi**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1764836044}
+【命令】
 
-[**[oam ais-rdi]{lang="EN-US"}**[ **up** *up-seconds* **down** *down-seconds*]{lang="EN-US"}]{#struct_0_19500_x1656_1983123049}
+**[oam ais-rdi** **up** *up-seconds* **down** *down-seconds*]
 
-[**[undo oam ais-rdi]{lang="EN-US"}**]{#struct_0_19500_x1656_622265020}
+**[undo oam ais-rdi**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_605617060}
+【缺省情况】
 
-[[参数]{style="font-family:宋体"}*[up-seconds]{lang="EN-US"}*]{#struct_0_19500_x1656_2130249515}[为]{style="font-family:宋体"}[3]{lang="EN-US"}[秒，参数]{style="font-family:
-宋体"}*[down-seconds]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[秒。即当系统连续]{style="font-family:
-宋体"}[1]{lang="EN-US"}[秒收到]{style="font-family:宋体"}[AIS/RDI]{lang="EN-US"}[告警信元后，]{style="font-family:宋体"}[PVC]{lang="EN-US"}[状态转变为]{style="font-family:宋体"}[DOWN]{lang="EN-US"}[，当连续]{style="font-family:宋体"}[3]{lang="EN-US"}[秒没有收到]{style="font-family:宋体"}[AIS/RDI]{lang="EN-US"}[告警信元后，]{style="font-family:宋体"}[PVC]{lang="EN-US"}[状态转变为]{style="font-family:宋体"}[UP]{lang="EN-US"}[。]{style="font-family:宋体"}
+参数*up-seconds*为3秒，参数*down-seconds*为1秒。即当系统连续1秒收到AIS/RDI告警信元后，PVC状态转变为DOWN，当连续3秒没有收到AIS/RDI告警信元后，PVC状态转变为UP。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x541116266}
+【视图】
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_361059622}[视图]{style="font-family:宋体"}[/PVC-group]{lang="EN-US"}[下]{style="font-family:宋体"}[PVC]{lang="EN-US"}[视图]{style="font-family:宋体"}
+PVC视图/PVC-group下PVC视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1092478523}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_488223571}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1193847225}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x2097492926}
+【参数】
 
-[**[up]{lang="EN-US"}***[ up-seconds]{lang="EN-US"}*]{#struct_0_19500_x1656_900420016}[：连续]{style="font-family:宋体"}*[up-seconds]{lang="EN-US"}*[秒没有收到]{style="font-family:宋体"}[AIS/RDI]{lang="EN-US"}[告警信元，]{style="font-family:宋体"}[PVC]{lang="EN-US"}[状态转变为]{style="font-family:宋体"}[UP]{lang="EN-US"}[。]{style="font-family:宋体"}*[up-seconds]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[3]{lang="EN-US"}[～]{style="font-family:宋体"}[60]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+**[up*** up-seconds*]：连续*up-seconds*秒没有收到AIS/RDI告警信元，PVC状态转变为UP。*up-seconds*的取值范围为3～60，单位为秒。
 
-[**[down]{lang="EN-US"}***[ down-seconds]{lang="EN-US"}*]{#struct_0_19500_x1656_604634020}[：连续]{style="font-family:宋体"}*[down-seconds]{lang="EN-US"}*[秒收到]{style="font-family:宋体"}[AIS/RDI]{lang="EN-US"}[告警信元后，]{style="font-family:宋体"}[PVC]{lang="EN-US"}[状态转变为]{style="font-family:宋体"}[DOWN]{lang="EN-US"}[。]{style="font-family:宋体"}*[down-seconds]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[60]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+**[down*** down-seconds*]：连续*down-seconds*秒收到AIS/RDI告警信元后，PVC状态转变为DOWN。*down-seconds*的取值范围为1～60，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_63776174}
+【使用指导】
 
-[[系统使用一个超时时间为]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_19500_x1656_1080519526}[秒的定时器来检测每秒内是否收到了]{style="font-family:宋体"}[AIS/RDI]{lang="EN-US"}[告警信元。当连续]{style="font-family:宋体"}*[down-seconds]{lang="EN-US"}*[秒收到]{style="font-family:宋体"}[AIS/RDI]{lang="EN-US"}[告警信元后，]{style="font-family:宋体"}[PVC]{lang="EN-US"}[状态转变为]{style="font-family:宋体"}[DOWN]{lang="EN-US"}[，当连续]{style="font-family:宋体"}*[up-seconds]{lang="EN-US"}*[秒没有收到]{style="font-family:宋体"}[AIS/RDI]{lang="EN-US"}[告警信元后，]{style="font-family:宋体"}[PVC]{lang="EN-US"}[状态转变为]{style="font-family:宋体"}[UP]{lang="EN-US"}[。]{style="font-family:宋体"}
+系统使用一个超时时间为1秒的定时器来检测每秒内是否收到了AIS/RDI告警信元。当连续*down-seconds*秒收到AIS/RDI告警信元后，PVC状态转变为DOWN，当连续*up-seconds*秒没有收到AIS/RDI告警信元后，PVC状态转变为UP。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1658275472}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x346038706}[在]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口下的]{style="font-family:宋体"}[PVC1/32]{lang="EN-US"}[上修改]{style="font-family:宋体"}[AIS-RDI]{lang="EN-US"}[告警检测参数，]{style="font-family:宋体"}*[up-seconds]{lang="EN-US"}*[为]{style="font-family:宋体"}[5]{lang="EN-US"}[，]{style="font-family:
-宋体"}*[down-seconds]{lang="EN-US"}*[为]{style="font-family:
-宋体"}[5]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在ATM接口下的PVC1/32上修改AIS-RDI告警检测参数，*up-seconds*为5，*down-seconds*为5。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_x1123175102}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc 1/32]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc 1/32
 
-[\[Sysname-ATM2/4/0-pvc-1/32\] oam ais-rdi up 5 down 5]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-1/32 oam ais-rdi up 5 down 5
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_1888087123}[在]{style="font-family:宋体"}[PVC-group2]{lang="EN-US"}[下的]{style="font-family:宋体"}[PVC1/33]{lang="EN-US"}[上修改]{style="font-family:宋体"}[AIS-RDI]{lang="EN-US"}[告警检测参数，]{style="font-family:宋体"}*[up-seconds]{lang="EN-US"}*[为]{style="font-family:宋体"}[5]{lang="EN-US"}[，]{style="font-family:
-宋体"}*[down-secondst]{lang="EN-US"}*[为]{style="font-family:
-宋体"}[5]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在PVC-group2下的PVC1/33上修改AIS-RDI告警检测参数，*up-seconds*为5，*down-secondst*为5。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_604699556}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc-group 2]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc-group 2
 
-[\[Sysname-ATM2/4/0-pvc-group-2\] pvc 1/33]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-group-2 pvc 1/33
 
-[\[Sysname-ATM2/4/0-pvc-group-2-pvc-1/33\] oam ais-rdi up 5 down 5]{lang="EN-US"}
-:::
-
-::: {#-1666329201 .myid}
-[]{#_Toc404785249}[]{#struct_0_19500_x1656_x1113405143}[]{#_Toc348095183}[]{#_Toc328667725}
+Sysname-ATM2/4/0-pvc-group-2-pvc-1/33 oam ais-rdi up 5 down 5
 
 **ATM \-- ATM配置命令 \-- oam cc**
 
 ------------------------------------------------------------------------
 
-[**[oam cc]{lang="EN-US"}**]{#struct_0_19500_x1656_2029138483}[命令用来启动]{style="font-family:宋体"}[OAM CC]{lang="EN-US"}[（]{style="font-family:宋体"}[Continuity Check]{lang="EN-US"}[，连续性检测）功能。]{style="font-family:宋体"}
+**[oam cc**]命令用来启动OAM CC（Continuity Check，连续性检测）功能。
 
-[**[undo oam cc]{lang="EN-US"}**]{#struct_0_19500_x1656_942787550}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo oam cc**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_2072376479}
+【命令】
 
-[**[oam cc]{lang="EN-US"}**[ { **both** \| **sink** \| **source** }]{lang="EN-US"}]{#struct_0_19500_x1656_x1406344318}
+**[oam cc**[ { **both** \| **sink** \| **source** }]]
 
-[**[undo oam cc]{lang="EN-US"}**]{#struct_0_19500_x1656_x380223190}
+**[undo oam cc**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1261686692}
+【缺省情况】
 
-[[OAM CC]{lang="EN-US"}]{#struct_0_19500_x1656_605158309}[功能处于关闭状态。]{style="font-family:宋体"}
+OAM CC功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1360701677}
+【视图】
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x162609139}[视图]{style="font-family:宋体"}[/PVC-group]{lang="EN-US"}[下]{style="font-family:宋体"}[PVC]{lang="EN-US"}[视图]{style="font-family:宋体"}
+PVC视图/PVC-group下PVC视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x918556346}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1265089464}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x1390271595}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_729578691}
+【参数】
 
-[**[both]{lang="EN-US"}**]{#struct_0_19500_x1656_1763911577}[：]{style="font-family:宋体"}[PVC]{lang="EN-US"}[作为接收端时启动]{style="font-family:宋体"}[CC]{lang="EN-US"}[信元的检测功能，以及作为发送端时启动]{style="font-family:宋体"}[CC]{lang="EN-US"}[信元的发送功能。]{style="font-family:宋体"}
+**[both**]：PVC作为接收端时启动CC信元的检测功能，以及作为发送端时启动CC信元的发送功能。
 
-[**[sink]{lang="EN-US"}**]{#struct_0_19500_x1656_169985860}[：]{style="font-family:宋体"}[PVC]{lang="EN-US"}[作为接收端时启动]{style="font-family:宋体"}[CC]{lang="EN-US"}[信元的检测功能。]{style="font-family:宋体"}
+**[sink**]：PVC作为接收端时启动CC信元的检测功能。
 
-[**[source]{lang="EN-US"}**]{#struct_0_19500_x1656_44085964}[：]{style="font-family:宋体"}[PVC]{lang="EN-US"}[作为发送端时启动]{style="font-family:宋体"}[CC]{lang="EN-US"}[信元的发送功能。]{style="font-family:宋体"}
+**[source**]：PVC作为发送端时启动CC信元的发送功能。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_605223845}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在配置]{lang="EN-US" style="font-family:宋体"}[OAM CC]{lang="EN-US"}]{#struct_0_19500_x1656_47885351}[功能时，一端配置为]{lang="EN-US" style="font-family:宋体"}**[source]{lang="EN-US"}**[，另一端配置为]{lang="EN-US" style="font-family:宋体"}**[sink]{lang="EN-US"}**[。]{lang="EN-US" style="font-family:宋体"}
+·在配置OAM CC功能时，一端配置为**source**，另一端配置为**sink**。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[启动]{style="font-family:宋体"}]{#struct_0_19500_x1656_1791405596}[OAM CC]{lang="EN-US"}[功能后，一端作为接收端启动]{style="font-family:宋体"}[CC]{lang="EN-US"}[信元的检测功能，一端作为发送端启动]{style="font-family:宋体"}[CC]{lang="EN-US"}[信元的发送功能。如果检测端]{style="font-family:宋体"}[3]{lang="EN-US"}[秒内收不到]{style="font-family:宋体"}[CC]{lang="EN-US"}[信元，]{style="font-family:宋体"}[PVC]{lang="EN-US"}[状态变为]{style="font-family:宋体"}[DOWN]{lang="EN-US"}[。当再收到]{style="font-family:宋体"}[CC]{lang="EN-US"}[信元后，]{style="font-family:宋体"}[PVC]{lang="EN-US"}[状态变为]{style="font-family:宋体"}[UP]{lang="EN-US"}[。]{style="font-family:宋体"}
+·启动OAM CC功能后，一端作为接收端启动CC信元的检测功能，一端作为发送端启动CC信元的发送功能。如果检测端3秒内收不到CC信元，PVC状态变为DOWN。当再收到CC信元后，PVC状态变为UP。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x47991294}
+【举例】
 
-[]{#struct_0_19500_x1656_x2130973674}[[\# ]{lang="EN-US"}]{#_Toc160877085}[在]{style="font-family:
-宋体"}[ATM]{lang="EN-US"}[接口下的]{style="font-family:宋体"}[PVC1/32]{lang="EN-US"}[上]{style="font-family:宋体"}[启动]{style="font-family:宋体"}[OAM CC]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 在ATM接口下的PVC1/32上启动OAM CC功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_881984151}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc 1/32]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc 1/32
 
-[\[Sysname-ATM2/4/0-pvc-1/32\] oam cc sink]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-1/32 oam cc sink
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_1896655644}[在]{style="font-family:宋体"}[PVC-group2]{lang="EN-US"}[下的]{style="font-family:宋体"}[PVC1/33]{lang="EN-US"}[上启动]{style="font-family:宋体"}[OAM CC]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 在PVC-group2下的PVC1/33上启动OAM CC功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_605289381}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc-group 2]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc-group 2
 
-[\[Sysname-ATM2/4/0-pvc-group-2\] pvc 1/33]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-group-2 pvc 1/33
 
-[\[Sysname-ATM2/4/0-pvc-group-2-pvc-1/33\] oam cc both]{lang="EN-US"}
-:::
-
-::: {#-346654571 .myid}
-[]{#_Toc404785250}[]{#struct_0_19500_x1656_x682710332}[]{#_Toc348095184}[]{#_Toc328667726}[]{#_Hlt24528571}
+Sysname-ATM2/4/0-pvc-group-2-pvc-1/33 oam cc both
 
 **ATM \-- ATM配置命令 \-- oam loopback**
 
 ------------------------------------------------------------------------
 
-[**[oam loopback]{lang="EN-US"}**]{#struct_0_19500_x1656_272188681}[命令用来启动]{style="font-family:宋体"}[OAM F5 Loopback]{lang="EN-US"}[信元的发送以及重传检测，同时修改相关参数。]{style="font-family:宋体"}**[undo oam loopback]{lang="EN-US"}**[命令用来停止]{style="font-family:宋体"}[OAM F5 Loopback]{lang="EN-US"}[信元的发送以及重传检测。]{style="font-family:宋体"}
+**[oam loopback**]命令用来启动OAM F5 Loopback信元的发送以及重传检测，同时修改相关参数。**undo oam loopback**命令用来停止OAM F5 Loopback信元的发送以及重传检测。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_935214271}
+【命令】
 
-[**[oam loopback]{lang="EN-US"}**[ *interval* \[ **up** *up-count* **down** *down-count* **retry** *retry-interval* \]]{lang="EN-US"}]{#struct_0_19500_x1656_908155333}
+**[oam loopback** *interval* [ **up** *up-count* **down** *down-count* **retry** *retry-interval* ]]
 
-[**[undo oam loopback]{lang="EN-US"}**]{#struct_0_19500_x1656_x1902043045}
+**[undo oam loopback**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1268906183}
+【缺省情况】
 
-[[不启动]{style="font-family:宋体"}[OAM F5 Loopback]{lang="EN-US"}]{#struct_0_19500_x1656_1398410831}[信元的发送，但如果收到]{style="font-family:宋体"}[OAM F5 Loopback]{lang="EN-US"}[信元，则要进行应答。]{style="font-family:宋体"}
+不启动OAM F5 Loopback信元的发送，但如果收到OAM F5 Loopback信元，则要进行应答。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_605354917}
+【视图】
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_817510141}[视图]{style="font-family:宋体"}[/PVC-group]{lang="EN-US"}[下]{style="font-family:宋体"}[PVC]{lang="EN-US"}[视图]{style="font-family:宋体"}
+PVC视图/PVC-group下PVC视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x946021869}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1183352067}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1672777309}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1052869716}
+【参数】
 
-[*[interval]{lang="EN-US"}*]{#struct_0_19500_x1656_x1252139491}[：发送]{style="font-family:宋体"}[OAM F5 Loopback]{lang="EN-US"}[信元的间隔时间，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[600]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[interval*]：发送OAM F5 Loopback信元的间隔时间，取值范围为1～600，单位为秒。
 
-[**[up]{lang="EN-US"}***[ up-count]{lang="EN-US"}*]{#struct_0_19500_x1656_x1182274732}[：]{style="font-family:宋体"}[PVC]{lang="EN-US"}[状态转变为]{style="font-family:宋体"}[UP]{lang="EN-US"}[之前，必须连续正确收到]{style="font-family:宋体"}[OAM F5 Loopback]{lang="EN-US"}[信元的数量，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[600]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[3]{lang="EN-US"}[个。]{style="font-family:宋体"}
+**[up*** up-count*]：PVC状态转变为UP之前，必须连续正确收到OAM F5 Loopback信元的数量，取值范围为1～600，缺省值为3个。
 
-[**[down]{lang="EN-US"}***[ down-count]{lang="EN-US"}*]{#struct_0_19500_x1656_788327434}[：]{style="font-family:宋体"}[PVC]{lang="EN-US"}[状态转变为]{style="font-family:宋体"}[DOWN]{lang="EN-US"}[之前，连续未收到的]{style="font-family:宋体"}[OAM F5 Loopback ]{lang="EN-US"}[信元的数量，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[600]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[5]{lang="EN-US"}[个。]{style="font-family:宋体"}
+**[down*** down-count*]：PVC状态转变为DOWN之前，连续未收到的OAM F5 Loopback 信元的数量，取值范围为1～600，缺省值为5个。
 
-[**[retry]{lang="EN-US"}***[ retry-interval]{lang="EN-US"}*]{#struct_0_19500_x1656_605420453}[：]{style="font-family:宋体"}[PVC]{lang="EN-US"}[状态改变前，]{style="font-family:宋体"}[OAM F5 Loopback]{lang="EN-US"}[在进行重传验证时的信元发送间隔时间，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1000]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[1]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+**[retry*** retry-interval*]：PVC状态改变前，OAM F5 Loopback在进行重传验证时的信元发送间隔时间，取值范围为1～1000，单位为秒，缺省值为1秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1503999197}
+【使用指导】
 
-[[启动]{style="font-family:宋体"}[OAM F5 Loopback]{lang="EN-US"}]{#struct_0_19500_x1656_735788092}[信元的发送以及重传检测功能后，每隔]{style="font-family:宋体"}*[interval]{lang="EN-US"}*[秒发送]{style="font-family:宋体"}[OAM F5 Loopback]{lang="EN-US"}[信元。如果发出]{style="font-family:宋体"}[OAM F5 Loopback]{lang="EN-US"}[信元后在]{style="font-family:宋体"}*[retry-interval]{lang="EN-US"}*[秒内未正确收到回应信元，则会立即重发]{style="font-family:宋体"}[OAM F5 Loopback]{lang="EN-US"}[信元。]{style="font-family:宋体"}
+启动OAM F5 Loopback信元的发送以及重传检测功能后，每隔*interval*秒发送OAM F5 Loopback信元。如果发出OAM F5 Loopback信元后在*retry-interval*秒内未正确收到回应信元，则会立即重发OAM F5 Loopback信元。
 
-[[在]{style="font-family:宋体"}[OAM F5 Loopback]{lang="EN-US"}]{#struct_0_19500_x1656_598936721}[信元的发送以及重传检测过程中根据收发信元情况更新]{style="font-family:宋体"}[PVC]{lang="EN-US"}[状态：]{style="font-family:宋体"}
+在OAM F5 Loopback信元的发送以及重传检测过程中根据收发信元情况更新PVC状态：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_162776163}[状态为]{lang="EN-US" style="font-family:宋体"}[DOWN]{lang="EN-US"}[，当连续正确收到]{lang="EN-US" style="font-family:宋体"}*[up-count]{lang="EN-US"}*[ ]{lang="EN-US"}[个]{lang="EN-US" style="font-family:宋体"}[OAM F5 Loopback]{lang="EN-US"}[信元后，]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}[状态转变为]{lang="EN-US" style="font-family:宋体"}[UP]{lang="EN-US"}[；]{lang="EN-US" style="font-family:宋体"}
+·如果PVC状态为DOWN，当连续正确收到*up-count*个OAM F5 Loopback信元后，PVC状态转变为UP；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_1923065878}[状态为]{lang="EN-US" style="font-family:宋体"}[UP]{lang="EN-US"}[，当连续未收到]{lang="EN-US" style="font-family:宋体"}*[down-count]{lang="EN-US"}*[个]{lang="EN-US" style="font-family:宋体"}[OAM F5 Loopback]{lang="EN-US"}[信元后，]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}[状态转变为]{lang="EN-US" style="font-family:宋体"}[DOWN]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·如果PVC状态为UP，当连续未收到*down-count*个OAM F5 Loopback信元后，PVC状态转变为DOWN。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x620177900}
+【举例】
 
-[]{#_Toc31686800}[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_1130335289}[在]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口下的]{style="font-family:宋体"}[PVC1/32]{lang="EN-US"}[上启动]{style="font-family:宋体"}[OAM F5 Loopback]{lang="EN-US"}[检测，周期为]{style="font-family:宋体"}[12]{lang="EN-US"}[秒，]{style="font-family:宋体"}*[up-count]{lang="EN-US"}*[为]{style="font-family:宋体"}[4]{lang="EN-US"}[，]{style="font-family:
-宋体"}*[down-count]{lang="EN-US"}*[为]{style="font-family:
-宋体"}[4]{lang="EN-US"}[，重传验证周期为]{style="font-family:宋体"}[1]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 在ATM接口下的PVC1/32上启动OAM F5 Loopback检测，周期为12秒，*up-count*为4，*down-count*为4，重传验证周期为1秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_605485989}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc 1/32]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc 1/32
 
-[\[Sysname-ATM2/4/0-pvc-1/32\] oam loopback 12 up 4 down 4 retry 1]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-1/32 oam loopback 12 up 4 down 4 retry 1
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_1112750282}[在]{style="font-family:宋体"}[PVC-group2]{lang="EN-US"}[下的]{style="font-family:宋体"}[PVC1/33]{lang="EN-US"}[上启动]{style="font-family:宋体"}[OAM F5 Loopback]{lang="EN-US"}[检测，周期为]{style="font-family:宋体"}[12]{lang="EN-US"}[秒，]{style="font-family:宋体"}*[up-count]{lang="EN-US"}*[为]{style="font-family:宋体"}[4]{lang="EN-US"}[，]{style="font-family:
-宋体"}*[down-count]{lang="EN-US"}*[为]{style="font-family:
-宋体"}[3]{lang="EN-US"}[，重传验证周期为]{style="font-family:宋体"}[2]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 在PVC-group2下的PVC1/33上启动OAM F5 Loopback检测，周期为12秒，*up-count*为4，*down-count*为3，重传验证周期为2秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_1183974588}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc-group 2]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc-group 2
 
-[\[Sysname-ATM2/4/0-pvc-group-2\] pvc 1/33]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-group-2 pvc 1/33
 
-[\[Sysname-ATM2/4/0-pvc-group-2-pvc-1/33\] oam loopback 12 up 4 down 3 retry 2]{lang="EN-US"}
-:::
-
-::: {#-900849868 .myid}
-[]{#_Toc404785251}[]{#struct_0_19500_x1656_x702723905}[]{#_Toc348095185}[]{#_Toc328667727}
+Sysname-ATM2/4/0-pvc-group-2-pvc-1/33 oam loopback 12 up 4 down 3 retry 2
 
 **ATM \-- ATM配置命令 \-- oam ping**
 
 ------------------------------------------------------------------------
 
-[**[oam ping]{lang="EN-US"}**]{#struct_0_19500_x1656_1455717609}[命令用来在指定接口的特定]{style="font-family:宋体"}[PVC]{lang="EN-US"}[上发送]{style="font-family:宋体"}[OAM F5 end-to-end]{lang="EN-US"}[信元，检测链路的连接情况。]{style="font-family:宋体"}
+**[oam ping**]命令用来在指定接口的特定PVC上发送OAM F5 end-to-end信元，检测链路的连接情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_450163827}
+【命令】
 
-[**[oam ping interface ]{lang="EN-US"}***[interface-type]{lang="EN-US"}***[ ]{lang="EN-US"}**[{ *interface-number* \| *interface-number.subnumber* } **pvc** { *pvc-name* \| *vpi/vci* } \[ *number* *timeout* \]]{lang="EN-US"}]{#struct_0_19500_x1656_480883845}
+**[oam ping interface ***interface-type*****[{ *interface-number* \| *interface-number.subnumber* } **pvc** { *pvc-name* \| *vpi/vci* } [ *number* *timeout* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_605551525}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_19500_x1656_1135263675}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1162906105}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_197987911}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1250499211}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1571837129}
+【参数】
 
-[**[interface ]{lang="EN-US"}***[interface-type]{lang="EN-US"}*[ { *interface-number* \| *interface-number.subnumber* }]{lang="EN-US"}]{#struct_0_19500_x1656_x1380418809}[：在指定接口上发送]{style="font-family:宋体"}[OAM F5 end-to-end]{lang="EN-US"}[信元。支持]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口、]{style="font-family:宋体"}[ATM]{lang="EN-US"}[子接口。]{style="font-family:宋体"}
+**[interface ***interface-type*[ { *interface-number* \| *interface-number.subnumber* }]]：在指定接口上发送OAM F5 end-to-end信元。支持ATM接口、ATM子接口。
 
-[**[pvc]{lang="EN-US"}**]{#struct_0_19500_x1656_1809122298}[：在指定]{style="font-family:宋体"}[PVC]{lang="EN-US"}[上发送]{style="font-family:宋体"}[OAM F5 end-to-end]{lang="EN-US"}[信元。]{style="font-family:宋体"}
+**[pvc**]：在指定PVC上发送OAM F5 end-to-end信元。
 
-[*[pvc-name]{lang="EN-US"}*]{#struct_0_19500_x1656_1351170702}[：]{style="font-family:宋体"}[PVC]{lang="EN-US"}[名，长度为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[15]{lang="EN-US"}[个字符的字符串，区分大小写，]{style="font-family:宋体"}[PVC]{lang="EN-US"}[名中不允许使用"]{style="font-family:宋体"}[/]{lang="EN-US"}["和"]{style="font-family:宋体"}[-]{lang="EN-US"}["，如"]{style="font-family:宋体"}[1/20]{lang="EN-US"}["、"]{style="font-family:宋体"}[a-b]{lang="EN-US"}["就不允许作为]{style="font-family:宋体"}[PVC]{lang="EN-US"}[名。]{style="font-family:宋体"}
+*[pvc-name*]：PVC名，长度为1～15个字符的字符串，区分大小写，PVC名中不允许使用"/"和"-"，如"1/20"、"a-b"就不允许作为PVC名。
 
-[*[vpi/vci]{lang="EN-US"}*]{#struct_0_19500_x1656_605617061}[：]{style="font-family:宋体"}*[vpi]{lang="EN-US"}*[为]{style="font-family:宋体"}[VPI]{lang="EN-US"}[值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[；]{style="font-family:宋体"}*[vci]{lang="EN-US"}*[为]{style="font-family:宋体"}[VCI]{lang="EN-US"}[值，取值范围与接口类型相关，请参见"]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-8]{lang="EN-US"}](?-1864992396#_Ref337389143)["。]{style="font-family:宋体"}*[vpi]{lang="EN-US"}*[与]{style="font-family:宋体"}*[vci]{lang="EN-US"}*[不能同时为]{style="font-family:宋体"}[0]{lang="EN-US"}[。通常，]{style="font-family:宋体"}*[vci]{lang="EN-US"}*[取值]{style="font-family:宋体"}[0]{lang="EN-US"}[到]{style="font-family:宋体"}[31]{lang="EN-US"}[保留用于特定用途，建议用户不要使用。]{style="font-family:宋体"}
+*[vpi/vci*]：*vpi*为VPI值，取值范围为0～255；*vci*为VCI值，取值范围与接口类型相关，请参见"[表]1-8(?-1864992396#_Ref337389143)"。*vpi*与*vci*不能同时为0。通常，*vci*取值0到31保留用于特定用途，建议用户不要使用。
 
-[*[number]{lang="EN-US"}*]{#struct_0_19500_x1656_2130249514}[：发送的]{style="font-family:宋体"}[OAM F5 end-to-end]{lang="EN-US"}[信元的个数，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1000]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[5]{lang="EN-US"}[个。]{style="font-family:宋体"}
+*[number*]：发送的OAM F5 end-to-end信元的个数，取值范围为1～1000，缺省值为5个。
 
-[*[timeout]{lang="EN-US"}*]{#struct_0_19500_x1656_x541181802}[：接收]{style="font-family:宋体"}[OAM F5 end-to-end]{lang="EN-US"}[信元应答的超时时间，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[30]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[2]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+*[timeout*]：接收OAM F5 end-to-end信元应答的超时时间，取值范围为1～30，单位为秒，缺省值为2秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_354452837}
+【使用指导】
 
-[[本命令用来在指定]{style="font-family:宋体"}[ATM]{lang="EN-US"}]{#struct_0_19500_x1656_1243930769}[接口的特定]{style="font-family:宋体"}[PVC]{lang="EN-US"}[上发送]{style="font-family:宋体"}[OAM F5 end-to-end]{lang="EN-US"}[信元，根据在设定的时间内是否收到应答来判断链路的连接情况。]{style="font-family:宋体"}
+本命令用来在指定ATM接口的特定PVC上发送OAM F5 end-to-end信元，根据在设定的时间内是否收到应答来判断链路的连接情况。
 
-[[配置]{style="font-family:宋体"}**[oam ping]{lang="EN-US"}**]{#struct_0_19500_x1656_2139439793}[命令后，系统先发送一个]{style="font-family:宋体"}[OAM F5 end-to-end]{lang="EN-US"}[信元，如果在]{style="font-family:宋体"}*[timeout]{lang="EN-US"}*[超时前收到应答，则收到应答后系统马上再发送一个]{style="font-family:宋体"}[OAM F5 end-to-end]{lang="EN-US"}[信元，如果在]{style="font-family:宋体"}*[timeout]{lang="EN-US"}*[超时时还没有收到应答，则在]{style="font-family:宋体"}*[timeout]{lang="EN-US"}*[超时后再发送一个]{style="font-family:宋体"}[OAM F5 end-to-end]{lang="EN-US"}[信元。一次]{style="font-family:宋体"}**[oam ping]{lang="EN-US"}**[过程中一共发送]{style="font-family:宋体"}*[number]{lang="EN-US"}*[个]{style="font-family:宋体"}[OAM F5 end-to-end]{lang="EN-US"}[信元。如果没有收到应答，可能是链路不通，也可能是链路太忙而发生丢包。]{style="font-family:宋体"}
+配置**oam ping**命令后，系统先发送一个OAM F5 end-to-end信元，如果在*timeout*超时前收到应答，则收到应答后系统马上再发送一个OAM F5 end-to-end信元，如果在*timeout*超时时还没有收到应答，则在*timeout*超时后再发送一个OAM F5 end-to-end信元。一次**oam ping**过程中一共发送*number*个OAM F5 end-to-end信元。如果没有收到应答，可能是链路不通，也可能是链路太忙而发生丢包。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1650932052}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x1394722122}[检测]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口]{style="font-family:宋体"}[2/4/0]{lang="EN-US"}[下]{style="font-family:宋体"}[PVC1/32]{lang="EN-US"}[的链路状况，发送]{style="font-family:宋体"}[3]{lang="EN-US"}[个信元，超时时间为]{style="font-family:宋体"}[1]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 检测ATM接口2/4/0下PVC1/32的链路状况，发送3个信元，超时时间为1秒。
 
-[[\<Sysname\> oam ping interface atm 2/4/0 pvc 1/32 3 1]{lang="EN-US"}]{#struct_0_19500_x1656_604634021}
+\<Sysname\> oam ping interface atm 2/4/0 pvc 1/32 3 1
 
-[PING interface ATM2/4/0 pvc 1/32 with 3 of 53 bytes of oam F5 end-to-end cell(s),]{lang="EN-US"}
+PING interface ATM2/4/0 pvc 1/32 with 3 of 53 bytes of oam F5 end-to-end cell(s),
 
-[timeout is 1 second(s), press CTRL_C to break]{lang="EN-US"}
+timeout is 1 second(s), press CTRL_C to break
 
-[Receive reply from pvc 1/32: time=1 ms]{lang="EN-US"}
+Receive reply from pvc 1/32: time=1 ms
 
-[Receive reply from pvc 1/32: time=1 ms]{lang="EN-US"}
+Receive reply from pvc 1/32: time=1 ms
 
-[Receive reply from pvc 1/32: time=1 ms ]{lang="EN-US"}
+Receive reply from pvc 1/32: time=1 ms
 
-[oam ping statistics:]{lang="EN-US"}
+oam ping statistics:
 
-[Cells: Sent = 3, Received = 3, Lost = 0 (0.00% loss)]{lang="EN-US"}
+Cells: Sent = 3, Received = 3, Lost = 0 (0.00% loss)
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_63776173}[检测]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口]{style="font-family:宋体"}[2/4/0]{lang="EN-US"}[下]{style="font-family:宋体"}[PVC 5/100]{lang="EN-US"}[的链路状况，发送]{style="font-family:宋体"}[3]{lang="EN-US"}[个信元，超时时间为]{style="font-family:宋体"}[1]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 检测ATM接口2/4/0下PVC 5/100的链路状况，发送3个信元，超时时间为1秒。
 
-[[\<Sysname\> oam ping interface atm 2/4/0 pvc 5/100 3 1]{lang="EN-US"}]{#struct_0_19500_x1656_x875795610}
+\<Sysname\> oam ping interface atm 2/4/0 pvc 5/100 3 1
 
-[PING interface ATM2/4/0 pvc 5/100 with 3 of 53 bytes of oam F5 end-to-end cell(s),]{lang="EN-US"}
+PING interface ATM2/4/0 pvc 5/100 with 3 of 53 bytes of oam F5 end-to-end cell(s),
 
-[timeout is 1 second(s), press CTRL_C to break]{lang="EN-US"}
+timeout is 1 second(s), press CTRL_C to break
 
-[Request time out!]{lang="EN-US"}
+Request time out!
 
-[Request time out!]{lang="EN-US"}
+Request time out!
 
-[Request time out!]{lang="EN-US"}
+Request time out!
 
-[oam ping statistics:]{lang="EN-US"}
+oam ping statistics:
 
-[Cells: Sent = 3, Received = 0, Lost = 3 (100.00% loss)]{lang="EN-US"}
+Cells: Sent = 3, Received = 0, Lost = 3 (100.00% loss)
 
-[[表1-7 ]{lang="EN-US"}[oam ping]{lang="EN-US"}]{#struct_0_19500_x1656_x1801035660}[命令显示信息描述表]{style="font-family:黑体"}
+表1-7 oam ping命令显示信息描述表
 
-[]{#table_struct_0_x1864835581}[[字段]{style="font-family:黑体"}]{#struct_0_19500_x1656_x23138825}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_19500_x1656_604699557}
+描述
 
-[[PING interface ATM2/4/0 pvc 1/32]{lang="EN-US"}]{#struct_0_19500_x1656_x1113405144}
+PING interface ATM2/4/0 pvc 1/32
 
-[[检测]{style="font-family:宋体"}[ATM2/4/0 pvc 1/32]{lang="EN-US"}]{#struct_0_19500_x1656_x1862544286}[链路是否可达]{style="font-family:宋体"}
+检测ATM2/4/0 pvc 1/32链路是否可达
 
-[[53 bytes]{lang="EN-US"}]{#struct_0_19500_x1656_81266420}
+53 bytes
 
-[[每个信元的字节数]{style="font-family:宋体"}]{#struct_0_19500_x1656_729288224}
+每个信元的字节数
 
-[[timeout is 1 second(s)]{lang="EN-US"}]{#struct_0_19500_x1656_x1658104067}
+timeout is 1 second(s)
 
-[[允许]{style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_605158306}[的回应时间为]{style="font-family:宋体"}[1]{lang="EN-US"}[秒]{style="font-family:宋体"}
+允许PVC的回应时间为1秒
 
-[[Receive reply from pvc 1/32: time=1 ms]{lang="EN-US"}]{#struct_0_19500_x1656_1360701680}
+Receive reply from pvc 1/32: time=1 ms
 
-[[收到]{style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x163067906}[的应答，]{style="font-family:宋体"}[time]{lang="EN-US"}[表示响应时间]{style="font-family:宋体"}
+收到PVC的应答，time表示响应时间
 
-[[Request time out]{lang="EN-US"}]{#struct_0_19500_x1656_1794920605}
+Request time out
 
-[[在允许的时间内未收到]{style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x706324603}[的应答]{style="font-family:宋体"}
+在允许的时间内未收到PVC的应答
 
-[[Sent = 3]{lang="EN-US"}]{#struct_0_19500_x1656_x1206860916}
+Sent = 3
 
-[[发送的信元数]{style="font-family:宋体"}]{#struct_0_19500_x1656_605223842}
+发送的信元数
 
-[[Received = 0]{lang="EN-US"}]{#struct_0_19500_x1656_47885344}
+Received = 0
 
-[[收到的应答数]{style="font-family:宋体"}]{#struct_0_19500_x1656_254163329}
+收到的应答数
 
-[[Lost = 3(100.00% loss)]{lang="EN-US"}]{#struct_0_19500_x1656_1126089458}
+Lost = 3(100.00% loss)
 
-[[未响应请求信元数及其占发送的总请求信元数的百分比]{style="font-family:宋体"}]{#struct_0_19500_x1656_x696169130}
-
-[[ ]{lang="EN-US"}]{#_Toc328667728}
-
-::: {#-1037826138 .myid}
-[]{#_Toc404785252}[]{#struct_0_19500_x1656_605289378}[]{#_Toc348095178}[]{#_Toc328667718}
+未响应请求信元数及其占发送的总请求信元数的百分比
 
 **ATM \-- ATM配置命令 \-- precedence**
 
 ------------------------------------------------------------------------
 
-[**[precedence]{lang="EN-US"}**]{#struct_0_19500_x1656_x1492014405}[命令用来设置]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[中的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[承载的]{style="font-family:宋体"}[IP]{lang="EN-US"}[包的优先级。]{style="font-family:宋体"}
+**[precedence**]命令用来设置PVC-group中的PVC承载的IP包的优先级。
 
-[**[undo precedence]{lang="EN-US"}**]{#struct_0_19500_x1656_1273901339}[命令用来删除]{style="font-family:宋体"}[PVC]{lang="EN-US"}[承载的]{style="font-family:宋体"}[IP]{lang="EN-US"}[包的优先级设置。]{style="font-family:宋体"}
+**[undo precedence**]命令用来删除PVC承载的IP包的优先级设置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x334905532}
+【命令】
 
-[**[precedence]{lang="EN-US"}**[ { *min* \[ **to** *max* \] *\|* **default** }]{lang="EN-US"}]{#struct_0_19500_x1656_x1291805712}
+**[precedence** { *min* [ **to** *max*  *\|* **default** }]]
 
-[**[undo precedence]{lang="EN-US"}**]{#struct_0_19500_x1656_1781318539}
+**[undo precedence**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1310666055}
+【缺省情况】
 
-[[不设置优先级。]{style="font-family:宋体"}]{#struct_0_19500_x1656_25118521}
+不设置优先级。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1918766025}
+【视图】
 
-[[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_605354914}[下]{style="font-family:宋体"}[PVC]{lang="EN-US"}[视图]{style="font-family:宋体"}
+PVC-group下PVC视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_817510144}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x946021864}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1182500099}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_2066314968}
+【参数】
 
-[*[min]{lang="EN-US"}*]{#struct_0_19500_x1656_x1751705326}[：该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[承载的]{style="font-family:宋体"}[IP]{lang="EN-US"}[包的最小优先级，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[7]{lang="EN-US"}[。]{style="font-family:
-宋体"}
+*[min*]：该PVC承载的IP包的最小优先级，取值范围为0～7。
 
-[*[max]{lang="EN-US"}*]{#struct_0_19500_x1656_x730636751}[：该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[承载的]{style="font-family:宋体"}[IP]{lang="EN-US"}[包的最大优先级，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[7]{lang="EN-US"}[。]{style="font-family:
-宋体"}*[max]{lang="EN-US"}*[值必须大于等于]{style="font-family:宋体"}*[min]{lang="EN-US"}*[值。]{style="font-family:宋体"}
+*[max*]：该PVC承载的IP包的最大优先级，取值范围为0～7。*max*值必须大于等于*min*值。
 
-[**[default]{lang="EN-US"}**]{#struct_0_19500_x1656_x143722077}[：指定该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[为缺省]{style="font-family:宋体"}[PVC]{lang="EN-US"}[。没有指定]{style="font-family:宋体"}[PVC]{lang="EN-US"}[承载的优先级别的]{style="font-family:宋体"}[IP]{lang="EN-US"}[包将从缺省]{style="font-family:宋体"}[PVC]{lang="EN-US"}[进行传输。]{style="font-family:宋体"}
+**[default**]：指定该PVC为缺省PVC。没有指定PVC承载的优先级别的IP包将从缺省PVC进行传输。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1426642886}
+【使用指导】
 
-[[本命令只能对该]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_605420450}[内的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[进行设置。]{style="font-family:宋体"}
+本命令只能对该PVC-group内的PVC进行设置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果没有]{style="font-family:宋体"}]{#struct_0_19500_x1656_1503999198}[PVC]{lang="EN-US"}[被]{style="font-family:宋体"}**[precedence]{lang="EN-US"}**[命令指定]{style="font-family:宋体"}**[default]{lang="EN-US"}**[参数，则没有指定]{style="font-family:宋体"}[PVC]{lang="EN-US"}[承载的优先级别的]{style="font-family:宋体"}[IP]{lang="EN-US"}[包将从未设置优先级的所有]{style="font-family:宋体"}[PVC]{lang="EN-US"}[轮询地进行传输。]{style="font-family:宋体"}
+·如果没有PVC被**precedence**命令指定**default**参数，则没有指定PVC承载的优先级别的IP包将从未设置优先级的所有PVC轮询地进行传输。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果未找到]{style="font-family:宋体"}]{#struct_0_19500_x1656_735460412}[IP]{lang="EN-US"}[包对应优先级别的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[，而且既没有]{style="font-family:宋体"}[PVC]{lang="EN-US"}[被]{style="font-family:宋体"}**[precedence]{lang="EN-US"}**[命令指定]{style="font-family:宋体"}**[default]{lang="EN-US"}**[参数，也没有未设置优先级的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[，则该包将做丢弃处理。]{style="font-family:宋体"}
+·如果未找到IP包对应优先级别的PVC，而且既没有PVC被**precedence**命令指定**default**参数，也没有未设置优先级的PVC，则该包将做丢弃处理。
 
-[[需要注意的是，本命令并不能改变]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_19500_x1656_386807803}[包的优先级。]{style="font-family:宋体"}
+需要注意的是，本命令并不能改变IP包的优先级。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_140551791}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_511344921}[设置名为"]{style="font-family:宋体"}[aa]{lang="EN-US"}["、]{style="font-family:宋体"}[VPI/VCI]{lang="EN-US"}[为]{style="font-family:宋体"}[1/32]{lang="EN-US"}[的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[承载优先级为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[3]{lang="EN-US"}[的]{style="font-family:
-宋体"}[IP]{lang="EN-US"}[包。]{style="font-family:宋体"}
+\# 设置名为"aa"、VPI/VCI为1/32的PVC承载优先级为0～3的IP包。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_605485986}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc-group 1]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc-group 1
 
-[\[Sysname-ATM2/4/0-pvc-group-1\] pvc aa 1/32]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-group-1 pvc aa 1/32
 
-[\[Sysname-ATM2/4/0-pvc-group-1-pvc-aa-1/32\] precedence 0 to 3]{lang="EN-US"}
-:::
-
-::: {#537778219 .myid}
-[]{#_Toc404785253}[]{#struct_0_19500_x1656_1112750287}[]{#_Toc348095186}
+Sysname-ATM2/4/0-pvc-group-1-pvc-aa-1/32 precedence 0 to 3
 
 **ATM \-- ATM配置命令 \-- pvc**
 
 ------------------------------------------------------------------------
 
-[[在]{style="font-family:宋体"}[ATM]{lang="EN-US"}]{#struct_0_19500_x1656_1183646908}[接口视图、]{style="font-family:宋体"}[ATM]{lang="EN-US"}[子接口视图下：]{style="font-family:宋体"}
+在ATM接口视图、ATM子接口视图下：
 
-[**[pvc]{lang="EN-US"}**]{#struct_0_19500_x1656_137453670}[命令用来创建一条]{style="font-family:宋体"}[PVC]{lang="EN-US"}[并进入]{style="font-family:宋体"}[PVC]{lang="EN-US"}[视图。如果指定的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[已创建，则直接进入该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的视图。]{style="font-family:宋体"}
+**[pvc**]命令用来创建一条PVC并进入PVC视图。如果指定的PVC已创建，则直接进入该PVC的视图。
 
-[**[undo pvc]{lang="EN-US"}**]{#struct_0_19500_x1656_1999368198}[命令用来删除指定的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo pvc**]命令用来删除指定的PVC。
 
-[[在]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_x1209814031}[视图下：]{style="font-family:宋体"}
+在PVC-group视图下：
 
-[**[pvc]{lang="EN-US"}**]{#struct_0_19500_x1656_553013508}[命令用来创建一条属于该]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[并进入]{style="font-family:宋体"}[PVC]{lang="EN-US"}[视图。如果指定的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[在]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[已经存在，则直接进入该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的视图。]{style="font-family:宋体"}
+**[pvc**]命令用来创建一条属于该PVC-group的PVC并进入PVC视图。如果指定的PVC在PVC-group已经存在，则直接进入该PVC的视图。
 
-[**[undo pvc]{lang="EN-US"}**]{#struct_0_19500_x1656_x779567880}[命令用来将指定的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[从]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[中退出，并删除该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo pvc**]命令用来将指定的PVC从PVC-group中退出，并删除该PVC。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x566408850}
+【命令】
 
-[**[pvc]{lang="EN-US"}**[ { *pvc-name* \[ *vpi/vci* \] \| *vpi/vci* }]{lang="EN-US"}]{#struct_0_19500_x1656_605551522}
+**[pvc** { *pvc-name* [ *vpi/vci*  \| *vpi/vci* }]]
 
-[**[undo pvc]{lang="EN-US"}**[ { *pvc-name* \| *vpi/vci* }]{lang="EN-US"}]{#struct_0_19500_x1656_1135263678}
+**[undo pvc**[ { *pvc-name* \| *vpi/vci* }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1162054137}
+【缺省情况】
 
-[[没有创建]{style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x980343239}[。]{style="font-family:宋体"}
+没有创建PVC。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x823799823}
+【视图】
 
-[]{#struct_0_19500_x1656_x1995891984}[]{#OLE_LINK6}[[ATM]{lang="EN-US"}]{#OLE_LINK5}[接口视图]{style="font-family:宋体"}[/ATM]{lang="EN-US"}[子接口视图]{style="font-family:宋体"}[/PVC-group]{lang="EN-US"}[视图]{style="font-family:宋体"}
+ATM接口视图/ATM子接口视图/PVC-group视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1976624321}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1756563247}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1125238424}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_605617058}
+【参数】
 
-[*[pvc-name]{lang="EN-US"}*]{#struct_0_19500_x1656_x208402637}[：]{style="font-family:宋体"}[PVC]{lang="EN-US"}[名，长度为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[15]{lang="EN-US"}[个字符的字符串，区分大小写，]{style="font-family:宋体"}[PVC]{lang="EN-US"}[名中不允许使用"]{style="font-family:宋体"}[/]{lang="EN-US"}["和"]{style="font-family:宋体"}[-]{lang="EN-US"}["，如"]{style="font-family:宋体"}[1/20]{lang="EN-US"}["、"]{style="font-family:宋体"}[a-b]{lang="EN-US"}["就不允许作为]{style="font-family:宋体"}[PVC]{lang="EN-US"}[名。]{style="font-family:宋体"}
+*[pvc-name*]：PVC名，长度为1～15个字符的字符串，区分大小写，PVC名中不允许使用"/"和"-"，如"1/20"、"a-b"就不允许作为PVC名。
 
-[*[vpi/vci]{lang="EN-US"}*]{#struct_0_19500_x1656_x1596258259}[：]{style="font-family:宋体"}*[vpi]{lang="EN-US"}*[为]{style="font-family:宋体"}[VPI]{lang="EN-US"}[值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[；]{style="font-family:宋体"}*[vci]{lang="EN-US"}*[为]{style="font-family:宋体"}[VCI]{lang="EN-US"}[值，取值范围与接口类型相关，请参见"]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-8]{lang="EN-US"}](?-1864992396#_Ref337389143)["。]{style="font-family:宋体"}*[vpi]{lang="EN-US"}*[与]{style="font-family:宋体"}*[vci]{lang="EN-US"}*[不能同时为]{style="font-family:宋体"}[0]{lang="EN-US"}[。通常，]{style="font-family:宋体"}*[vci]{lang="EN-US"}*[取值]{style="font-family:宋体"}[0]{lang="EN-US"}[到]{style="font-family:宋体"}[31]{lang="EN-US"}[保留用于特定用途，建议用户不要使用。]{style="font-family:宋体"}
+*[vpi/vci*]：*vpi*为VPI值，取值范围为0～255；*vci*为VCI值，取值范围与接口类型相关，请参见"[表]1-8(?-1864992396#_Ref337389143)"。*vpi*与*vci*不能同时为0。通常，*vci*取值0到31保留用于特定用途，建议用户不要使用。
 
-[]{#struct_0_19500_x1656_1762194416}[]{#_Toc95359221}[]{#_Toc85604331}[]{#_Toc81386710}[]{#_Toc74661833}[]{#_Toc72589796}[]{#_Toc72589523}[]{#_Toc72589008}[]{#_Toc65921178}[]{#_Toc65919126}[]{#_Toc65919101}[]{#_Toc65910735}[]{#_Toc65909980}[]{#_Toc60125190}[]{#_Toc60111189}[[表1-8 ]{lang="EN-US"}[不同接口对应的]{style="font-family:黑体"}[VCI]{lang="EN-US"}]{#_Ref57541113}[取值范围]{style="font-family:黑体"}[]{#_Ref337389143}
+表1-8 不同接口对应的VCI取值范围
 
-[]{#table_struct_0_x1864113371}[[接口类型]{style="font-family:黑体"}]{#struct_0_19500_x1656_x190634473}
-:::
+接口类型
 
-[[VCI]{lang="EN-US"}]{#struct_0_19500_x1656_366672084}[取值范围]{style="font-family:黑体"}
+VCI取值范围
 
-[[ATM ADSL]{lang="EN-US"}]{#struct_0_19500_x1656_1749502832}
+ATM ADSL
 
-[[\<0-255\>]{lang="EN-US"}]{#struct_0_19500_x1656_604634018}
+\<0-255\>
 
-[[ATM ADSL2+]{lang="EN-US"}]{#struct_0_19500_x1656_2020091318}
+ATM ADSL2+
 
-[[\<0-255\>]{lang="EN-US"}]{#struct_0_19500_x1656_x456352773}
+\<0-255\>
 
-[[ATM G.SHDSL]{lang="EN-US"}]{#struct_0_19500_x1656_x1253570311}
+ATM G.SHDSL
 
-[[\<0-255\>]{lang="EN-US"}]{#struct_0_19500_x1656_x1830761552}
+\<0-255\>
 
-[[ATM SHDSL_4WIRE]{lang="EN-US"}]{#struct_0_19500_x1656_1310737170}
+ATM SHDSL_4WIRE
 
-[[\<0-255\>]{lang="EN-US"}]{#struct_0_19500_x1656_604699554}
+\<0-255\>
 
-[[ATM SHDSL_4WIRE_BIS]{lang="EN-US"}]{#struct_0_19500_x1656_x1113405141}
+ATM SHDSL_4WIRE_BIS
 
-[[\<0-255\>]{lang="EN-US"}]{#struct_0_19500_x1656_x1103029399}
+\<0-255\>
 
-[[ATM SHDSL_8WIRE_BIS]{lang="EN-US"}]{#struct_0_19500_x1656_x290672563}
+ATM SHDSL_8WIRE_BIS
 
-[[\<0-255\>]{lang="EN-US"}]{#struct_0_19500_x1656_x719962829}
+\<0-255\>
 
-[[ATM E1]{lang="EN-US"}]{#struct_0_19500_x1656_x1642206771}
+ATM E1
 
-[[\<0-511\>]{lang="EN-US"}]{#struct_0_19500_x1656_605158307}
+\<0-511\>
 
-[[ATM T1]{lang="EN-US"}]{#struct_0_19500_x1656_1360701679}
+ATM T1
 
-[[\<0-511\>]{lang="EN-US"}]{#struct_0_19500_x1656_x163526643}
+\<0-511\>
 
-[[ATM E3]{lang="EN-US"}]{#struct_0_19500_x1656_x970138421}
+ATM E3
 
-[[\<0-1023\>]{lang="EN-US"}]{#struct_0_19500_x1656_x917414622}
+\<0-1023\>
 
-[[ATM T3]{lang="EN-US"}]{#struct_0_19500_x1656_605223843}
+ATM T3
 
-[[\<0-1023\>]{lang="EN-US"}]{#struct_0_19500_x1656_47885345}
+\<0-1023\>
 
-[[ATM OC-3c/STM-1]{lang="EN-US"}]{#struct_0_19500_x1656_x1702151807}
+ATM OC-3c/STM-1
 
-[[\<0-1023\>]{lang="EN-US"}]{#struct_0_19500_x1656_x2116493030}
+\<0-1023\>
 
-[[ATM OC-12c/STM-4]{lang="EN-US"}]{#struct_0_19500_x1656_1588790797}
+ATM OC-12c/STM-4
 
-[[\<0-1023\>]{lang="EN-US"}]{#struct_0_19500_x1656_605289379}
+\<0-1023\>
 
-[[ATM 25M]{lang="EN-US"}]{#struct_0_19500_x1656_x1492014404}
+ATM 25M
 
-[[\<0-1023\>]{lang="EN-US"}]{#struct_0_19500_x1656_x1454982016}
+\<0-1023\>
 
-[[ATM]{lang="EN-US"}]{#struct_0_19500_x1656_1212158920}[子接口]{style="font-family:宋体"}
+ATM子接口
 
-[[与]{style="font-family:宋体"}[ATM]{lang="EN-US"}]{#struct_0_19500_x1656_605354915}[子接口所属]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口的取值范围相同]{style="font-family:宋体"}
+与ATM子接口所属ATM接口的取值范围相同
 
-[[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_817510143}
+PVC-group
 
-[[与]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_x946021867}[所属]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口的取值范围相同]{style="font-family:宋体"}
+与PVC-group所属ATM接口的取值范围相同
 
-[ ]{lang="EN-US"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1182696707}
+·创建PVC时必须指定*vpi/vci*。每条PVC的VPI/VCI值对在一个接口范围内（包括接口和子接口以及它们的PVC-group）唯一。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[创建]{style="font-family:宋体"}]{#struct_0_19500_x1656_867590246}[PVC]{lang="EN-US"}[时必须指定]{style="font-family:宋体"}*[vpi/vci]{lang="EN-US"}*[。每条]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的]{style="font-family:宋体"}[VPI/VCI]{lang="EN-US"}[值对在一个接口范围内（包括接口和子接口以及它们的]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[）唯一。]{style="font-family:宋体"}
+·如果创建PVC时指定了*pvc-name*，则可以通过命令**pvc** *pvc-name* [ *vpi/vci* ]进入该PVC视图。在删除该PVC时，既可以通过命令**undo pvc** *pvc-name* [ *vpi/vci* ]，也可以通过命令**undo pvc** *vpi/vci*来完成。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果创建]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x1567737614}[时指定了]{lang="EN-US" style="font-family:宋体"}*[pvc-name]{lang="EN-US"}*[，则可以通过命令]{lang="EN-US" style="font-family:宋体"}**[pvc]{lang="EN-US"}**[ *pvc-name* \[ *vpi/vci* \]]{lang="EN-US"}[进入该]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}[视图]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}[在删除该]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}[时，既可以通过命令]{lang="EN-US" style="font-family:宋体"}**[undo pvc]{lang="EN-US"}**[ *pvc-name* \[ *vpi/vci* \]]{lang="EN-US"}[，也可以通过命令]{lang="EN-US" style="font-family:宋体"}**[undo pv]{lang="EN-US"}[c]{lang="EN-US"}**[ *vpi/vci*]{lang="EN-US"}[来完成]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}
+·ATM P2P子接口只允许配置一个PVC。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ATM P2P]{lang="EN-US"}]{#struct_0_19500_x1656_2071796369}[子接口只允许配置一个]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}[。]{style="font-family:宋体"}
+·一个PVC-group下最多允许创建8个PVC。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[一个]{style="font-family:宋体"}]{#struct_0_19500_x1656_605420451}[PVC-group]{lang="EN-US"}[下最多允许创建]{style="font-family:宋体"}[8]{lang="EN-US"}[个]{style="font-family:宋体"}[PVC]{lang="EN-US"}[。]{style="font-family:宋体"}
+·在ATM接口/ATM子接口下不能删除PVC-group内的PVC。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在]{style="font-family:宋体"}]{#struct_0_19500_x1656_1503999199}[ATM]{lang="EN-US"}[接口]{style="font-family:宋体"}[/ATM]{lang="EN-US"}[子接口下不能删除]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[内的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[。]{style="font-family:宋体"}
+·实际可以创建的PVC数量与设备的型号有关，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[实际可以创建的]{style="font-family:宋体"}]{#struct_0_19500_x1656_735394876}[PVC]{lang="EN-US"}[数量与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x701451958}
+\# 在ATM接口下创建一条名为"aa"、VPI/VCI为1/101的PVC。
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x1551997439}[在]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口下创建一条名为"]{style="font-family:宋体"}[aa]{lang="EN-US"}["、]{style="font-family:宋体"}[VPI/VCI]{lang="EN-US"}[为]{style="font-family:宋体"}[1/101]{lang="EN-US"}[的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_105323870}
+Sysname interface atm 2/4/0
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc aa 1/101
 
-[\[Sysname-ATM2/4/0\] pvc aa 1/101 ]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-aa-1/101
 
-[\[Sysname-ATM2/4/0-pvc-aa-1/101\] ]{lang="EN-US"}
+\# 在PVC-group下创建一条名为"bb"、VPI/VCI为1/102的PVC。
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x359740885}[在]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[下创建一条名为"]{style="font-family:宋体"}[bb]{lang="EN-US"}["、]{style="font-family:宋体"}[VPI/VCI]{lang="EN-US"}[为]{style="font-family:宋体"}[1/102]{lang="EN-US"}[的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_605485987}
+Sysname interface atm 2/4/0
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc-group 1
 
-[\[Sysname-ATM2/4/0\] pvc-group 1]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-group-1 pvc bb 1/102
 
-[\[Sysname-ATM2/4/0-pvc-group-1\] pvc bb 1/102]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-group-1-pvc-bb-1/102
 
-[\[Sysname-ATM2/4/0-pvc-group-1-pvc-bb-1/102\]]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1112750288}
+·**display atm pvc-info**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display atm pvc-info]{lang="EN-US"}**]{#struct_0_19500_x1656_1184367804}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pvc-group]{lang="EN-US"}**]{#struct_0_19500_x1656_397858150}
-
-::: {#1584937201 .myid}
-[]{#_Toc404785254}[]{#struct_0_19500_x1656_464173135}[]{#_Toc348095187}
+·**pvc-group**
 
 **ATM \-- ATM配置命令 \-- pvc-group**
 
 ------------------------------------------------------------------------
 
-[**[pvc-group]{lang="EN-US"}**]{#struct_0_19500_x1656_21603287}[命令用来创建一个]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[或进入已经创建的]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+**[pvc-group**]命令用来创建一个PVC-group或进入已经创建的PVC-group视图。
 
-[**[undo pvc-group]{lang="EN-US"}**]{#struct_0_19500_x1656_x965697837}[命令用来删除指定的]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo pvc-group**]命令用来删除指定的PVC-group。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_625430976}
+【命令】
 
-[**[pvc-group]{lang="EN-US"}**[ *group-number*]{lang="EN-US"}]{#struct_0_19500_x1656_931870508}
+**[pvc-group** *group-number*]
 
-[**[undo]{lang="EN-US"}**[ **pvc-group** *group-number*]{lang="EN-US"}]{#struct_0_19500_x1656_605551523}
+**[undo** **pvc-group** *group-number*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1135263677}
+【缺省情况】
 
-[[没有创建]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_1163037177}[。]{style="font-family:宋体"}
+没有创建PVC-group。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x968719346}
+【视图】
 
-[[ATM]{lang="EN-US"}]{#struct_0_19500_x1656_331084070}[接口视图]{style="font-family:宋体"}[/ATM]{lang="EN-US"}[子接口视图]{style="font-family:宋体"}
+ATM接口视图/ATM子接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1603140411}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_851387337}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x994983447}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_605617059}
+【参数】
 
-[*[group-number]{lang="EN-US"}*]{#struct_0_19500_x1656_x208402638}[：]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[128]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[group-number*]：PVC-group编号，取值范围为1～128。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1597110227}
+【使用指导】
 
-[[使用]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_1095510667}[后，可以在]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[下的各]{style="font-family:宋体"}[PVC]{lang="EN-US"}[上进行流量的负载分担，将不同优先级的]{style="font-family:宋体"}[IP]{lang="EN-US"}[包通过不同的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[进行传输。用户可以配置每条]{style="font-family:宋体"}[PVC]{lang="EN-US"}[承载的]{style="font-family:宋体"}[IP]{lang="EN-US"}[包的优先级。]{style="font-family:宋体"}
+使用PVC-group后，可以在PVC-group下的各PVC上进行流量的负载分担，将不同优先级的IP包通过不同的PVC进行传输。用户可以配置每条PVC承载的IP包的优先级。
 
-[[当收到]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_19500_x1656_1482250244}[包后，根据]{style="font-family:宋体"}[IP]{lang="EN-US"}[包的优先级来找到对应的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[进行传输，如果没有找到对应的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[，则从缺省]{style="font-family:宋体"}[PVC]{lang="EN-US"}[（]{style="font-family:宋体"}**[precedence]{lang="EN-US"}**[命令中使用了]{style="font-family:宋体"}**[default]{lang="EN-US"}**[参数）进行传输，如果没有配置缺省]{style="font-family:宋体"}[PVC]{lang="EN-US"}[，则从未设置优先级的所有]{style="font-family:宋体"}[PVC]{lang="EN-US"}[轮询地进行传输。如果没有未设置优先级的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[，则将该]{style="font-family:宋体"}[IP]{lang="EN-US"}[包丢弃。]{style="font-family:宋体"}
+当收到IP包后，根据IP包的优先级来找到对应的PVC进行传输，如果没有找到对应的PVC，则从缺省PVC（**precedence**命令中使用了**default**参数）进行传输，如果没有配置缺省PVC，则从未设置优先级的所有PVC轮询地进行传输。如果没有未设置优先级的PVC，则将该IP包丢弃。
 
-[[如果收到的不是]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_19500_x1656_x1915193416}[包，则从该]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[下所有]{style="font-family:宋体"}[PVC]{lang="EN-US"}[轮询地进行传输。]{style="font-family:宋体"}
+如果收到的不是IP包，则从该PVC-group下所有PVC轮询地进行传输。
 
-[[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_x415248910}[下的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的封装类型、承载的协议类型直接从]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[获取。]{style="font-family:宋体"}
+PVC-group下的PVC的封装类型、承载的协议类型直接从PVC-group获取。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_19500_x1656_x1710524718}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[一个]{lang="EN-US" style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_1799044487}[只能属于一个]{lang="EN-US" style="font-family:宋体"}[PVC-group]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·一个PVC只能属于一个PVC-group。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令可以在]{lang="EN-US" style="font-family:宋体"}[ATM P2MP]{lang="EN-US"}]{#struct_0_19500_x1656_604634019}[子接口下配置，不能在]{lang="EN-US" style="font-family:宋体"}[ATM P2P]{lang="EN-US"}[子接口下配置。]{lang="EN-US" style="font-family:宋体"}
+·本命令可以在ATM P2MP子接口下配置，不能在ATM P2P子接口下配置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_2020091317}[的编号在一个接口范围内（包括接口和子接口）唯一。]{style="font-family:
-宋体"}
+·PVC-group的编号在一个接口范围内（包括接口和子接口）唯一。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x456942597}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x1634006591}[创建一个编号为]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 创建一个编号为1的PVC-group。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_x914270691}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc-group 1]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc-group 1
 
-[\[Sysname-ATM2/4/0-pvc-group-1\]]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-group-1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1961808370}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display atm pvc-group]{lang="EN-US"}**]{#struct_0_19500_x1656_1659678193}
+·**display atm pvc-group**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[precedence]{lang="EN-US"}**]{#struct_0_19500_x1656_x20198993}
-:::
-
-::: {#743086101 .myid}
-[]{#_Toc404785255}[]{#struct_0_19500_x1656_1060355720}[]{#_Toc356993805}
+·**precedence**
 
 **ATM \-- ATM配置命令 \-- remark atm-clp**
 
 ------------------------------------------------------------------------
 
-[**[remark atm-clp]{lang="EN-US"}**]{#struct_0_19500_x1656_1060945543}[命令用来重新标记]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元的]{style="font-family:宋体"}[CLP]{lang="EN-US"}[标志位的值。]{style="font-family:宋体"}
+**[remark atm-clp**]命令用来重新标记ATM信元的CLP标志位的值。
 
-[**[undo remark atm-clp]{lang="EN-US"}**]{#struct_0_19500_x1656_932223408}[命令用来取消重新标记]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元的]{style="font-family:宋体"}[CLP]{lang="EN-US"}[标志位的值。]{style="font-family:宋体"}
+**[undo remark atm-clp**]命令用来取消重新标记ATM信元的CLP标志位的值。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1060880007}
+【命令】
 
-[**[remark]{lang="EN-US"}**[ \[ **green** \| **red** \| **yellow** \] **atm-clp** *atm-clp-value*]{lang="EN-US"}]{#struct_0_19500_x1656_1061076615}
+**[remark**[ [ **green** \| **red** \| **yellow** ] **atm-clp** *atm-clp-value*]]
 
-[**[undo remark]{lang="EN-US"}**[ \[ **green** \| **red** \| **yellow** \] **atm-clp**]{lang="EN-US"}]{#struct_0_19500_x1656_1061011079}
+**[undo remark**[ [ **green** \| **red** \| **yellow** ] **atm-clp**]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_2117978220}
+【缺省情况】
 
-[[没有配置重新标记]{style="font-family:宋体"}[ATM]{lang="EN-US"}]{#struct_0_19500_x1656_1060683399}[信元的]{style="font-family:宋体"}[CLP]{lang="EN-US"}[标志位的值。]{style="font-family:宋体"}
+没有配置重新标记ATM信元的CLP标志位的值。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1060617863}
+【视图】
 
-[[流行为视图]{style="font-family:宋体"}]{#struct_0_19500_x1656_1060814471}
+流行为视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_166536501}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1060748935}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1060421255}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1060355719}
+【参数】
 
-[**[green]{lang="EN-US"}**]{#struct_0_19500_x1656_547592951}[：对绿色报文进行重新标记。]{style="font-family:宋体"}
+**[green**]：对绿色报文进行重新标记。
 
-[**[red]{lang="EN-US"}**]{#struct_0_19500_x1656_1060945542}[：对红色报文进行重新标记。]{style="font-family:宋体"}
+**[red**]：对红色报文进行重新标记。
 
-[**[yellow]{lang="EN-US"}**]{#struct_0_19500_x1656_1060880006}[：对黄色报文进行重新标记。]{style="font-family:宋体"}
+**[yellow**]：对黄色报文进行重新标记。
 
-[*[atm-clp-value]{lang="EN-US"}*]{#struct_0_19500_x1656_1061076614}[：]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元]{style="font-family:宋体"}[CLP]{lang="EN-US"}[（]{style="font-family:宋体"}[Cell Loss Priority]{lang="EN-US"}[，信元丢失优先级）标志位的值，取值为]{style="font-family:宋体"}[0]{lang="EN-US"}[或]{style="font-family:宋体"}[1]{lang="EN-US"}[。发生拥塞时优先丢弃]{style="font-family:
-宋体"}[CLP]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[的信元。]{style="font-family:宋体"}
+*[atm-clp-value*]：ATM信元CLP（Cell Loss Priority，信元丢失优先级）标志位的值，取值为0或1。发生拥塞时优先丢弃CLP为1的信元。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1812590739}
+【使用指导】
 
-[[配置了该特性的策略只能应用在]{style="font-family:宋体"}[ATM PVC]{lang="EN-US"}]{#struct_0_19500_x1656_1061011078}[出方向上。]{style="font-family:宋体"}
+配置了该特性的策略只能应用在ATM PVC出方向上。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1060683398}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_1060617862}[重新标记]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元的]{style="font-family:宋体"}[CLP]{lang="EN-US"}[标志位的值为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 重新标记ATM信元的CLP标志位的值为1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_1060814470}
+\<Sysname\> system-view
 
-[\[Sysname\] traffic behavior database]{lang="EN-US"}
+Sysname traffic behavior database
 
-[\[Sysname-behavior-database\] remark atm-clp 1]{lang="EN-US"}
-:::
-
-::: {#-922020787 .myid}
-[]{#_Toc404785256}[]{#struct_0_19500_x1656_604699555}[]{#_Toc348095189}[]{#_Toc136937659}[]{#_Toc348114943}[]{#_Toc348114944}
+Sysname-behavior-database remark atm-clp 1
 
 **ATM \-- ATM配置命令 \-- reset atm interface**
 
 ------------------------------------------------------------------------
 
-[**[reset atm interface]{lang="EN-US"}**]{#struct_0_19500_x1656_x1113405142}[命令用来清除]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+**[reset atm interface**]命令用来清除PVC的统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x699744872}
+【命令】
 
-[**[reset atm interface]{lang="EN-US"}**[ \[ *interface-type* { *interface-number* \| *interface-number.subnumber* } \]]{lang="EN-US"}]{#struct_0_19500_x1656_343734452}
+**[reset atm interface**[ [ *interface-type* { *interface-number* \| *interface-number.subnumber* } ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_649607626}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_19500_x1656_1084105820}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1774501464}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_2139602886}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_849146378}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_605158304}
+【参数】
 
-[*[interface-type ]{lang="EN-US"}*[{ *interface-number* \| *interface-number.subnumber* }]{lang="EN-US"}]{#struct_0_19500_x1656_1360701682}[：清除指定接口下的所有]{style="font-family:宋体"}[PVC]{lang="EN-US"}[（包括接口下的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[和]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}[下的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[）的统计信息。支持]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口、]{style="font-family:宋体"}[ATM]{lang="EN-US"}[子接口。不指定本参数时，将清除所有接口下的所有]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+*[interface-type *[{ *interface-number* \| *interface-number.subnumber* }]]：清除指定接口下的所有PVC（包括接口下的PVC和PVC-group下的PVC）的统计信息。支持ATM接口、ATM子接口。不指定本参数时，将清除所有接口下的所有PVC的统计信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x162936834}
+【使用指导】
 
-[[本命令只能清除]{style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_622845258}[的统计信息，不能清除接口的统计信息，接口的统计信息可以通过]{style="font-family:宋体"}**[reset counters interface]{lang="EN-US"}**[命令来清除。]{style="font-family:宋体"}
+本命令只能清除PVC的统计信息，不能清除接口的统计信息，接口的统计信息可以通过**reset counters interface**命令来清除。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1136918763}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x1772864815}[清除接口]{style="font-family:宋体"}[ATM2/4/0]{lang="EN-US"}[下的所有]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+\# 清除接口ATM2/4/0下的所有PVC的统计信息。
 
-[[\<Sysname\> reset atm interface atm 2/4/0]{lang="EN-US"}]{#struct_0_19500_x1656_339316500}
-:::
-
-::: {#998864996 .myid}
-[]{#_Toc404785257}[]{#struct_0_19500_x1656_x685068835}[]{#_Toc350872247}[]{#_Toc345946920}
+\<Sysname\> reset atm interface atm 2/4/0
 
 **ATM \-- ATM配置命令 \-- reset counters interface virtual-ethernet**
 
 ------------------------------------------------------------------------
 
-[**[reset counters interface virtual-ethernet]{lang="EN-US"}**]{#struct_0_19500_x1656_605223840}[命令用来清除]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口的统计信息。]{style="font-family:宋体"}
+**[reset counters interface virtual-ethernet**]命令用来清除VE接口的统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_47885346}
+【命令】
 
-[**[reset counters interface]{lang="EN-US"}**[ \[ **virtual-ethernet** \[ *interface-number* \] \]]{lang="EN-US"}]{#struct_0_19500_x1656_x128173695}
+**[reset counters interface** [ **virtual-ethernet** [ *interface-number*  ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1197449569}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_19500_x1656_x333474051}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1152249814}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1700400503}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_390734693}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1675559996}
+【参数】
 
-[**[virtual-ethernet]{lang="EN-US"}**]{#struct_0_19500_x1656_605289376}[：清除]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口的统计信息。]{style="font-family:宋体"}
+**[virtual-ethernet**]：清除VE接口的统计信息。
 
-[*[interface-number]{lang="EN-US"}*]{#struct_0_19500_x1656_x1492014399}[：]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口的编号。]{style="font-family:宋体"}
+*[interface-number*]：VE接口的编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1408386600}
+【使用指导】
 
-[[在某些情况下，需要统计一定时间内某接口的流量，这就需要在统计开始前清除该接口原有的统计信息，重新进行统计。]{style="font-family:宋体"}]{#struct_0_19500_x1656_2112206457}
+在某些情况下，需要统计一定时间内某接口的流量，这就需要在统计开始前清除该接口原有的统计信息，重新进行统计。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果不指定]{lang="EN-US" style="font-family:宋体"}]{#struct_0_19500_x1656_1214833045}**[virtual-ethernet]{lang="EN-US"}**[参数，则清除所有接口的统计信息；]{lang="EN-US" style="font-family:宋体"}
+·如果不指定**virtual-ethernet**参数，则清除所有接口的统计信息；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定]{lang="EN-US" style="font-family:宋体"}**[virtual-ethernet]{lang="EN-US"}**]{#struct_0_19500_x1656_1556719184}[参数而不指定]{lang="EN-US" style="font-family:
-宋体"}*[interface-number]{lang="EN-US"}*[，则清除所有]{lang="EN-US" style="font-family:宋体"}[VE]{lang="EN-US"}[接口的统计信息；]{lang="EN-US" style="font-family:宋体"}
+·如果指定**virtual-ethernet**参数而不指定*interface-number*，则清除所有VE接口的统计信息；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果同时指定]{lang="EN-US" style="font-family:宋体"}**[virtual-ethernet]{lang="EN-US"}**]{#struct_0_19500_x1656_461329652}[和]{lang="EN-US" style="font-family:
-宋体"}*[interface-number]{lang="EN-US"}*[，则清除指定]{lang="EN-US" style="font-family:宋体"}[VE]{lang="EN-US"}[接口的统计信息。]{lang="EN-US" style="font-family:宋体"}
+·如果同时指定**virtual-ethernet**和*interface-number*，则清除指定VE接口的统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_952621463}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x1703575748}[清除]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口]{style="font-family:宋体"}[Virtual-Ethernet2/4/2]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+\# 清除VE接口Virtual-Ethernet2/4/2的统计信息。
 
-[[\<Sysname\> reset counters interface virtual-ethernet 2/4/2]{lang="EN-US"}]{#struct_0_19500_x1656_605354912}
-:::
-
-::: {#1437517977 .myid}
-[]{#_Toc404785258}[]{#struct_0_19500_x1656_817510146}[]{#_Toc348095190}[]{#_Toc348114947}[]{#_Toc348114948}
+\<Sysname\> reset counters interface virtual-ethernet 2/4/2
 
 **ATM \-- ATM配置命令 \-- service cbr**
 
 ------------------------------------------------------------------------
 
-[**[service]{lang="EN-US"}**[ **cbr**]{lang="EN-US"}]{#struct_0_19500_x1656_x946021862}[命令用来指定]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的服务类型为]{style="font-family:宋体"}[CBR]{lang="EN-US"}[（]{style="font-family:宋体"}[Constant Bit Rate]{lang="EN-US"}[，恒定速率），并指定相关的服务参数。]{style="font-family:宋体"}
+**[service** **cbr**]命令用来指定PVC的服务类型为CBR（Constant Bit Rate，恒定速率），并指定相关的服务参数。
 
-[**[undo service]{lang="EN-US"}**]{#struct_0_19500_x1656_1182893315}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo service**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_2035417550}
+【命令】
 
-[**[service]{lang="EN-US"}**[ **cbr** *output-pcr* \[ **cdvt** *cdvt_value* \]]{lang="EN-US"}]{#struct_0_19500_x1656_623029066}
+**[service** **cbr** *output-pcr* [ **cdvt** *cdvt_value* ]]
 
-[**[undo service]{lang="EN-US"}**]{#struct_0_19500_x1656_x831850666}
+**[undo service**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1371398933}
+【缺省情况】
 
-[[创建一个]{style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_605420448}[后，该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的服务类型为]{style="font-family:宋体"}[UBR]{lang="EN-US"}[，输出]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元的峰值速率为]{style="font-family:宋体"}[PVC]{lang="EN-US"}[所在接口的最大带宽。]{style="font-family:宋体"}
+创建一个PVC后，该PVC的服务类型为UBR，输出ATM信元的峰值速率为PVC所在接口的最大带宽。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x834652954}
+【视图】
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x817705970}[视图]{style="font-family:宋体"}[/PVC-group]{lang="EN-US"}[下]{style="font-family:宋体"}[PVC]{lang="EN-US"}[视图]{style="font-family:宋体"}
+PVC视图/PVC-group下PVC视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1628713104}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_2078511439}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_2111878155}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x660693895}
+【参数】
 
-[*[output-pcr]{lang="EN-US"}*]{#struct_0_19500_x1656_524255071}[：输出]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元的峰值速率，不同接口的]{style="font-family:宋体"}*[output-pcr]{lang="EN-US"}*[取值范围请参见]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-9]{lang="EN-US"}](?1437517977#_Ref57606154)[，单位为]{style="font-family:宋体"}[Kbit/s]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[output-pcr*]：输出ATM信元的峰值速率，不同接口的*output-pcr*取值范围请参见[表]1-9(?1437517977#_Ref57606154)，单位为Kbit/s。
 
-[]{#struct_0_19500_x1656_961622840}[]{#_Toc95359224}[]{#_Toc85604334}[]{#_Toc81386713}[]{#_Toc74661836}[]{#_Toc72589799}[]{#_Toc72589526}[]{#_Toc72589011}[]{#_Toc65921181}[]{#_Toc65919129}[]{#_Toc65919104}[]{#_Toc65910738}[]{#_Toc65909983}[]{#_Toc60125193}[]{#_Toc60111192}[[表1-9 ]{lang="EN-US"}*[output-pcr]{lang="EN-US"}*]{#_Ref57606154}[的取值范围]{style="font-family:黑体"}
+表1-9 *output-pcr*的取值范围
 
-[]{#table_struct_0_x1873799611}[[接口类型]{style="font-family:黑体"}]{#struct_0_19500_x1656_605485984}
-:::
+接口类型
 
-[[output-pcr]{lang="EN-US"}]{#struct_0_19500_x1656_1112750285}[取值范围]{style="font-family:黑体"}
+output-pcr取值范围
 
-[[ATM ADSL]{lang="EN-US"}]{#struct_0_19500_x1656_1183515836}
+ATM ADSL
 
-[[\<64-640\>]{lang="EN-US"}]{#struct_0_19500_x1656_2074983893}
+\<64-640\>
 
-[[ATM ADSL2+]{lang="EN-US"}]{#struct_0_19500_x1656_1629133775}
+ATM ADSL2+
 
-[[\<64-640\>]{lang="EN-US"}]{#struct_0_19500_x1656_2102759830}
+\<64-640\>
 
-[[ATM G.SHDSL]{lang="EN-US"}]{#struct_0_19500_x1656_605551520}
+ATM G.SHDSL
 
-[[\<64-2312\>]{lang="EN-US"}]{#struct_0_19500_x1656_1135263680}
+\<64-2312\>
 
-[[ATM SHDSL_4WIRE]{lang="EN-US"}]{#struct_0_19500_x1656_1162578416}
+ATM SHDSL_4WIRE
 
-[[\<128-4624\>]{lang="EN-US"}]{#struct_0_19500_x1656_1828564562}
+\<128-4624\>
 
-[[ATM SHDSL_4WIRE_BIS]{lang="EN-US"}]{#struct_0_19500_x1656_306733259}
+ATM SHDSL_4WIRE_BIS
 
-[[\<128-11392\>]{lang="EN-US"}]{#struct_0_19500_x1656_605617056}
+\<128-11392\>
 
-[[ATM SHDSL_8WIRE_BIS]{lang="EN-US"}]{#struct_0_19500_x1656_x208402643}
+ATM SHDSL_8WIRE_BIS
 
-[[\<256-22784\>]{lang="EN-US"}]{#struct_0_19500_x1656_x1596520400}
+\<256-22784\>
 
-[[ATM E1]{lang="EN-US"}]{#struct_0_19500_x1656_1913500906}
+ATM E1
 
-[[\<64-1920\>]{lang="EN-US"}]{#struct_0_19500_x1656_x1771895678}
+\<64-1920\>
 
-[[ATM T1]{lang="EN-US"}]{#struct_0_19500_x1656_1925368615}
+ATM T1
 
-[[\<64-1536\>]{lang="EN-US"}]{#struct_0_19500_x1656_604634016}
+\<64-1536\>
 
-[[ATM E3]{lang="EN-US"}]{#struct_0_19500_x1656_2020091316}
+ATM E3
 
-[[\<64-34000\>]{lang="EN-US"}]{#struct_0_19500_x1656_x457008133}
+\<64-34000\>
 
-[[ATM T3]{lang="EN-US"}]{#struct_0_19500_x1656_x486893954}
+ATM T3
 
-[[\<64-44000\>]{lang="EN-US"}]{#struct_0_19500_x1656_604699552}
+\<64-44000\>
 
-[[ATM OC-3c/STM-1]{lang="EN-US"}]{#struct_0_19500_x1656_x1113405147}
+ATM OC-3c/STM-1
 
-[[\<64-155000\>]{lang="EN-US"}]{#struct_0_19500_x1656_x296460345}
+\<64-155000\>
 
-[[ATM OC-12c/STM-4]{lang="EN-US"}]{#struct_0_19500_x1656_x1900272087}
+ATM OC-12c/STM-4
 
-[[不支持]{style="font-family:宋体"}]{#struct_0_19500_x1656_2018039280}
+不支持
 
-[[ATM 25M]{lang="EN-US"}]{#struct_0_19500_x1656_605158305}
+ATM 25M
 
-[[不支持]{style="font-family:宋体"}]{#struct_0_19500_x1656_1360701681}
+不支持
 
-[[ATM]{lang="EN-US"}]{#struct_0_19500_x1656_x163002370}[子接口]{style="font-family:宋体"}
+ATM子接口
 
-[[与]{style="font-family:宋体"}[ATM]{lang="EN-US"}]{#struct_0_19500_x1656_x2108618349}[子接口所属]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口的取值范围相同]{style="font-family:宋体"}
+与ATM子接口所属ATM接口的取值范围相同
 
-[[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_605223841}
+PVC-group
 
-[[与]{style="font-family:宋体"}[PVC-group]{lang="EN-US"}]{#struct_0_19500_x1656_47885347}[所属]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口的取值范围相同]{style="font-family:宋体"}
+与PVC-group所属ATM接口的取值范围相同
 
-[ ]{lang="EN-US"}
+**[cdvt ***cdvt_value*]：信元时延变化容限（Cell Delay Variation Tolerance），取值范围为0～10000，单位为μs，缺省值为500μs，表示信元的最大时延是500μs。设置该参数后，当超出峰值速率后，会根据该参数分配缓存，保证业务的稳定。该参数的值配置的越小，要求的硬件资源越多，越不容易配置成功。若配置不成功，可将*cdvt_value*的值调大，再试着配置，此情况会在命令行中给出提示（Failed to set service parameter. Please adjust cdvt value.）
 
-[**[cdvt ]{lang="EN-US"}***[cdvt_value]{lang="EN-US"}*]{#struct_0_19500_x1656_x2084488831}[：信元时延变化容限（]{style="font-family:宋体"}[Cell Delay Variation Tolerance]{lang="EN-US"}[），取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[10000]{lang="EN-US"}[，单位为μ]{style="font-family:宋体"}[s]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[500]{lang="EN-US"}[μ]{style="font-family:宋体"}[s]{lang="EN-US"}[，表示信元的最大时延是]{style="font-family:
-宋体"}[500]{lang="EN-US"}[μ]{style="font-family:宋体"}[s]{lang="EN-US"}[。设置该参数后，当超出峰值速率后，会根据该参数分配缓存，保证业务的稳定。该参数的值配置的越小，要求的硬件资源越多，越不容易配置成功。若配置不成功，可将]{style="font-family:宋体"}*[cdvt_value]{lang="EN-US"}*[的值调大，再试着配置，此情况会在命令行中给出提示（]{style="font-family:宋体"}[Failed to set service parameter. Please adjust cdvt value.]{lang="EN-US"}[）]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1954584104}
+可以使用本命令以及**service ubr**、**service** **vbr-nrt**，**service** **vbr-rt**命令来设置PVC的服务类型和服务参数。新指定的PVC服务类型将会覆盖已有的服务类型。
 
-[[可以使用本命令以及]{style="font-family:宋体"}**[service ubr]{lang="EN-US"}**]{#struct_0_19500_x1656_x352090068}[、]{style="font-family:宋体"}**[service]{lang="EN-US"}**[ **vbr-nrt**]{lang="EN-US"}[，]{style="font-family:宋体"}**[service]{lang="EN-US"}**[ **vbr-rt**]{lang="EN-US"}[命令来设置]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的服务类型和服务参数。新指定的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[服务类型将会覆盖已有的服务类型。]{style="font-family:宋体"}
+因为每个PVC的带宽是独占的，所以建议在设置CBR带宽时先设置需要大带宽的PVC，再设置需要小带宽的PVC。
 
-[[因为每个]{style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_87028131}[的带宽是独占的，所以建议在设置]{style="font-family:宋体"}[CBR]{lang="EN-US"}[带宽时先设置需要大带宽的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[，再设置需要小带宽的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[。]{style="font-family:宋体"}
+本命令不支持ATM E1接口和ATM E3接口。
 
-[[本命令不支持]{style="font-family:宋体"}[ATM E1]{lang="EN-US"}]{#struct_0_19500_x1656_x1089757085}[接口和]{style="font-family:宋体"}[ATM E3]{lang="EN-US"}[接口。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_605289377}
+\# 在ATM接口下创建一条名为"aa"、VPI/VCI为1/101的PVC，并指定该PVC的服务类型为CBR，ATM信元峰值发送速率为50,000Kbit/s，信元时延变化容限为1000μs。
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x1492014398}[在]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口下创建一条名为"]{style="font-family:宋体"}[aa]{lang="EN-US"}["、]{style="font-family:宋体"}[VPI/VCI]{lang="EN-US"}[为]{style="font-family:宋体"}[1/101]{lang="EN-US"}[的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[，并指定该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的服务类型为]{style="font-family:宋体"}[CBR]{lang="EN-US"}[，]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元峰值发送速率为]{style="font-family:宋体"}[50,000Kbit/s]{lang="EN-US"}[，信元时延变化容限为]{style="font-family:宋体"}[1000]{lang="EN-US"}[μ]{style="font-family:宋体"}[s]{lang="EN-US"}[。]{style="font-family:
-宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_157697341}
+Sysname interface atm 2/4/0
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc aa 1/101
 
-[\[Sysname-ATM2/4/0\] pvc aa 1/101]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-aa-1/101 service cbr 50000 cdvt 1000
 
-[\[Sysname-ATM2/4/0-pvc-aa-1/101\] service cbr 50000 cdvt 1000]{lang="EN-US"}
+\# 在PVC-group1下创建一条名为"aa"、VPI/VCI为1/101的PVC，并指定该PVC的服务类型为CBR，ATM信元峰值发送速率为50,000Kbit/s，信元时延变化容限为1000μs。
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x574117767}[在]{style="font-family:宋体"}[PVC-group1]{lang="EN-US"}[下创建一条名为"]{style="font-family:宋体"}[aa]{lang="EN-US"}["、]{style="font-family:宋体"}[VPI/VCI]{lang="EN-US"}[为]{style="font-family:宋体"}[1/101]{lang="EN-US"}[的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[，并指定该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的服务类型为]{style="font-family:宋体"}[CBR]{lang="EN-US"}[，]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元峰值发送速率为]{style="font-family:宋体"}[50,000Kbit/s]{lang="EN-US"}[，信元时延变化容限为]{style="font-family:宋体"}[1000]{lang="EN-US"}[μ]{style="font-family:宋体"}[s]{lang="EN-US"}[。]{style="font-family:
-宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_x869185280}
+Sysname interface atm 2/4/0
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc-group 1
 
-[\[Sysname-ATM2/4/0\] pvc-group 1]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-group-1 pvc aa 1/101
 
-[\[Sysname-ATM2/4/0-pvc-group-1\] pvc aa 1/101]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-group-1-pvc-aa-1/101 service cbr 50000 cdvt 1000
 
-[\[Sysname-ATM2/4/0-pvc-group-1-pvc-aa-1/101\] service cbr 50000 cdvt 1000]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1847367744}
+·**service ubr**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[service ubr]{lang="EN-US"}**]{#struct_0_19500_x1656_x234005785}
+·**service vbr-nrt**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[service vbr-nrt]{lang="EN-US"}**]{#struct_0_19500_x1656_605354913}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[service vbr-rt]{lang="EN-US"}**]{#struct_0_19500_x1656_817510145}
-
-::: {#1437517963 .myid}
-[]{#_Toc404785259}[]{#struct_0_19500_x1656_x946021865}[]{#_Toc348095191}
+·**service vbr-rt**
 
 **ATM \-- ATM配置命令 \-- service ubr**
 
 ------------------------------------------------------------------------
 
-[**[service]{lang="EN-US"}**[ **ubr**]{lang="EN-US"}]{#struct_0_19500_x1656_1182565635}[命令用来指定]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的服务类型为]{style="font-family:宋体"}[UBR]{lang="EN-US"}[（]{style="font-family:宋体"}[Unspecified Bit Rate]{lang="EN-US"}[，非确定速率），并指定相关的服务参数。]{style="font-family:宋体"}
+**[service** **ubr**]命令用来指定PVC的服务类型为UBR（Unspecified Bit Rate，非确定速率），并指定相关的服务参数。
 
-[**[undo service]{lang="EN-US"}**]{#struct_0_19500_x1656_x1855013419}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo service**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x601269885}
+【命令】
 
-[**[service]{lang="EN-US"}**[ **ubr** *output-pcr*]{lang="EN-US"}]{#struct_0_19500_x1656_1379273258}
+**[service** **ubr** *output-pcr*]
 
-[**[undo service]{lang="EN-US"}**]{#struct_0_19500_x1656_558148071}
+**[undo service**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x443914510}
+【缺省情况】
 
-[[创建一个]{style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_605420449}[后，该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的服务类型为]{style="font-family:宋体"}[UBR]{lang="EN-US"}[，输出]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元的峰值速率为]{style="font-family:宋体"}[PVC]{lang="EN-US"}[所在接口的最大带宽。]{style="font-family:宋体"}
+创建一个PVC后，该PVC的服务类型为UBR，输出ATM信元的峰值速率为PVC所在接口的最大带宽。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x834652953}
+【视图】
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x817771506}[视图]{style="font-family:宋体"}[/PVC-group]{lang="EN-US"}[下]{style="font-family:宋体"}[PVC]{lang="EN-US"}[视图]{style="font-family:宋体"}
+PVC视图/PVC-group下PVC视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1299144229}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x534762760}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_118279149}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x286594139}
+【参数】
 
-[*[output-pcr]{lang="EN-US"}*]{#struct_0_19500_x1656_x1275062474}[：输出]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元的峰值速率，取值范围请参见]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-9]{lang="EN-US"}](?1437517977#_Ref57606154)[，单位为]{style="font-family:宋体"}[Kbit/s]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[output-pcr*]：输出ATM信元的峰值速率，取值范围请参见[表]1-9(?1437517977#_Ref57606154)，单位为Kbit/s。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_688668519}
+【使用指导】
 
-[[可以使用本命令以及]{style="font-family:宋体"}**[service]{lang="EN-US"}**[ **cbr**]{lang="EN-US"}]{#struct_0_19500_x1656_605485985}[、]{style="font-family:宋体"}**[service]{lang="EN-US"}**[ **vbr-nrt**]{lang="EN-US"}[、]{style="font-family:宋体"}**[service]{lang="EN-US"}**[ **vbr-rt**]{lang="EN-US"}[命令来设置]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的服务类型和服务参数。新指定的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[服务类型将会覆盖已有的服务类型。]{style="font-family:宋体"}
+可以使用本命令以及**service** **cbr**、**service** **vbr-nrt**、**service** **vbr-rt**命令来设置PVC的服务类型和服务参数。新指定的PVC服务类型将会覆盖已有的服务类型。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1112750286}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_1183712444}[在]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口下创建一条名为"]{style="font-family:宋体"}[aa]{lang="EN-US"}["、]{style="font-family:宋体"}[VPI/VCI]{lang="EN-US"}[为]{style="font-family:宋体"}[1/101]{lang="EN-US"}[的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[，并指定该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的服务类型为]{style="font-family:宋体"}[UBR]{lang="EN-US"}[，]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元峰值发送速率为]{style="font-family:宋体"}[100,000Kbit/s]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在ATM接口下创建一条名为"aa"、VPI/VCI为1/101的PVC，并指定该PVC的服务类型为UBR，ATM信元峰值发送速率为100,000Kbit/s。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_x1848406561}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc aa 1/101]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc aa 1/101
 
-[\[Sysname-ATM2/4/0-pvc-aa-1/101\] service ubr 100000]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-aa-1/101 service ubr 100000
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x228349665}[在]{style="font-family:宋体"}[PVC-group1]{lang="EN-US"}[下创建一条名为"]{style="font-family:宋体"}[aa]{lang="EN-US"}["、]{style="font-family:宋体"}[VPI/VCI]{lang="EN-US"}[为]{style="font-family:宋体"}[1/101]{lang="EN-US"}[的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[，并指定该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的服务类型为]{style="font-family:宋体"}[UBR]{lang="EN-US"}[，]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元峰值发送速率为]{style="font-family:宋体"}[100,000Kbit/s]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在PVC-group1下创建一条名为"aa"、VPI/VCI为1/101的PVC，并指定该PVC的服务类型为UBR，ATM信元峰值发送速率为100,000Kbit/s。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_x1934943632}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc-group 1]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc-group 1
 
-[\[Sysname-ATM2/4/0-pvc-group-1\] pvc aa 1/101]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-group-1 pvc aa 1/101
 
-[\[Sysname-ATM2/4/0-pvc-group-1-pvc-aa-1/101\] service ubr 100000]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-group-1-pvc-aa-1/101 service ubr 100000
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_605551521}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[service]{lang="EN-US"}**[ **cbr**]{lang="EN-US"}]{#struct_0_19500_x1656_1135263679}
+·**service** **cbr**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[service vbr-nrt]{lang="EN-US"}**]{#struct_0_19500_x1656_1162119673}
+·**service vbr-nrt**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[service vbr-rt]{lang="EN-US"}**]{#struct_0_19500_x1656_649601907}
-:::
-
-::: {#-1320464405 .myid}
-[]{#_Toc404785260}[]{#struct_0_19500_x1656_744497588}[]{#_Toc348095192}
+·**service vbr-rt**
 
 **ATM \-- ATM配置命令 \-- service vbr-nrt**
 
 ------------------------------------------------------------------------
 
-[**[service]{lang="EN-US"}**[ **vbr-nrt**]{lang="EN-US"}]{#struct_0_19500_x1656_x1982739104}[命令用来指定]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的服务类型为]{style="font-family:宋体"}[VBR-NRT]{lang="EN-US"}[（]{style="font-family:宋体"}[Variable Bit Rate-Non Real Time]{lang="EN-US"}[，非实时可变速率），并指定相关的服务参数。]{style="font-family:宋体"}
+**[service** **vbr-nrt**]命令用来指定PVC的服务类型为VBR-NRT（Variable Bit Rate-Non Real Time，非实时可变速率），并指定相关的服务参数。
 
-[**[undo service]{lang="EN-US"}**]{#struct_0_19500_x1656_50641134}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo service**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x897867427}
+【命令】
 
-[**[service]{lang="EN-US"}**[ **vbr-nrt** *output-pcr output-scr output-mbs*]{lang="EN-US"}]{#struct_0_19500_x1656_x1241277626}
+**[service** **vbr-nrt** *output-pcr output-scr output-mbs*]
 
-[**[undo service]{lang="EN-US"}**]{#struct_0_19500_x1656_605617057}
+**[undo service**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x208402644}
+【缺省情况】
 
-[[创建一个]{style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x1596323792}[后，该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的服务类型为]{style="font-family:宋体"}[UBR]{lang="EN-US"}[，输出]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元的峰值速率为]{style="font-family:宋体"}[PVC]{lang="EN-US"}[所在接口的最大带宽。]{style="font-family:宋体"}
+创建一个PVC后，该PVC的服务类型为UBR，输出ATM信元的峰值速率为PVC所在接口的最大带宽。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1340170723}
+【视图】
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_1167931495}[视图]{style="font-family:宋体"}[/PVC-group]{lang="EN-US"}[下]{style="font-family:宋体"}[PVC]{lang="EN-US"}[视图]{style="font-family:宋体"}
+PVC视图/PVC-group下PVC视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1947518793}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1930553364}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1147308301}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x2097223471}
+【参数】
 
-[*[output-pcr]{lang="EN-US"}*]{#struct_0_19500_x1656_604634017}[：输出]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元的峰值速率，取值范围请参见]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-9]{lang="EN-US"}](?1437517977#_Ref57606154)[，单位为]{style="font-family:宋体"}[Kbit/s]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[output-pcr*]：输出ATM信元的峰值速率，取值范围请参见[表]1-9(?1437517977#_Ref57606154)，单位为Kbit/s。
 
-[*[output-scr]{lang="EN-US"}*]{#struct_0_19500_x1656_2020091315}[：输出]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元的可承受速率，取值范围与]{style="font-family:宋体"}*[output-pcr]{lang="EN-US"}*[相同，并且]{style="font-family:宋体"}*[output-scr]{lang="EN-US"}*[小于等于]{style="font-family:宋体"}*[output-pcr]{lang="EN-US"}*[，单位为]{style="font-family:宋体"}[Kbit/s]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[output-scr*]：输出ATM信元的可承受速率，取值范围与*output-pcr*相同，并且*output-scr*小于等于*output-pcr*，单位为Kbit/s。
 
-[*[output-mbs]{lang="EN-US"}*]{#struct_0_19500_x1656_x457073669}[：输出]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元的最大突发长度，即接口输出]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元的最大缓冲数量，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[512]{lang="EN-US"}[，单位为信元数。]{style="font-family:宋体"}
+*[output-mbs*]：输出ATM信元的最大突发长度，即接口输出ATM信元的最大缓冲数量，取值范围为1～512，单位为信元数。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_753832914}
+【使用指导】
 
-[[可以使用本命令以及]{style="font-family:宋体"}**[service]{lang="EN-US"}**[ **cbr**]{lang="EN-US"}]{#struct_0_19500_x1656_1349528436}[、]{style="font-family:宋体"}**[service]{lang="EN-US"}**[ **ubr**]{lang="EN-US"}[、]{style="font-family:宋体"}**[service]{lang="EN-US"}**[ **vbr-rt**]{lang="EN-US"}[命令来设置]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的服务类型和服务参数。新指定的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[服务类型将会覆盖已有的服务类型。]{style="font-family:宋体"}
+可以使用本命令以及**service** **cbr**、**service** **ubr**、**service** **vbr-rt**命令来设置PVC的服务类型和服务参数。新指定的PVC服务类型将会覆盖已有的服务类型。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_309651466}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x1002233094}[在]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口下创建一条名为"]{style="font-family:宋体"}[aa]{lang="EN-US"}["、]{style="font-family:宋体"}[VPI/VCI]{lang="EN-US"}[为]{style="font-family:宋体"}[1/101]{lang="EN-US"}[的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[，并指定该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的服务类型为]{style="font-family:宋体"}[VBR-NRT]{lang="EN-US"}[，且]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元峰值发送速率为]{style="font-family:宋体"}[100,000Kbit/s]{lang="EN-US"}[、可承受发送速率为]{style="font-family:宋体"}[50,000Kbit/s]{lang="EN-US"}[、最大突发长度为]{style="font-family:宋体"}[320]{lang="EN-US"}[个信元。]{style="font-family:宋体"}
+\# 在ATM接口下创建一条名为"aa"、VPI/VCI为1/101的PVC，并指定该PVC的服务类型为VBR-NRT，且ATM信元峰值发送速率为100,000Kbit/s、可承受发送速率为50,000Kbit/s、最大突发长度为320个信元。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_604699553}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc aa 1/101]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc aa 1/101
 
-[]{#_Hlt23223772}[\[Sysname-ATM2/4/0-pvc-aa-1/101\] service vbr-nrt 100000 50000 320]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-aa-1/101 service vbr-nrt 100000 50000 320
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x1113405148}[在]{style="font-family:宋体"}[PVC-group  1]{lang="EN-US"}[下]{style="font-family:宋体"} [创建一条名为"]{style="font-family:宋体"}[aa]{lang="EN-US"}["、]{style="font-family:宋体"}[VPI/VCI]{lang="EN-US"}[为]{style="font-family:宋体"}[1/101]{lang="EN-US"}[的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[，并指定该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的服务类型为]{style="font-family:宋体"}[VBR-NRT]{lang="EN-US"}[，且]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元峰值发送速率为]{style="font-family:宋体"}[100,000Kbit/s]{lang="EN-US"}[、可承受发送速率为]{style="font-family:宋体"}[50,000Kbit/s]{lang="EN-US"}[、最大突发长度为]{style="font-family:宋体"}[320]{lang="EN-US"}[个信元。]{style="font-family:宋体"}
+\# 在PVC-group  1下 创建一条名为"aa"、VPI/VCI为1/101的PVC，并指定该PVC的服务类型为VBR-NRT，且ATM信元峰值发送速率为100,000Kbit/s、可承受发送速率为50,000Kbit/s、最大突发长度为320个信元。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_819284902}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc-group 1]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc-group 1
 
-[\[Sysname-ATM2/4/0-pvc-group-1\] pvc aa 1/101]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-group-1 pvc aa 1/101
 
-[\[Sysname-ATM2/4/0-pvc-group-1-pvc-aa-1/101\] service vbr-nrt 100000 50000 320]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-group-1-pvc-aa-1/101 service vbr-nrt 100000 50000 320
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_273832393}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[service]{lang="EN-US"}**[ **cbr**]{lang="EN-US"}]{#struct_0_19500_x1656_x760906604}
+·**service** **cbr**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[service]{lang="EN-US"}**[ **ubr**]{lang="EN-US"}]{#struct_0_19500_x1656_310697290}
+·**service** **ubr**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[service]{lang="EN-US"}**[ **vbr-rt**]{lang="EN-US"}]{#struct_0_19500_x1656_x315018997}
-:::
-
-::: {#1458201989 .myid}
-[]{#_Toc404785261}[]{#struct_0_19500_x1656_x1793034616}[]{#_Toc348095193}
+·**service** **vbr-rt**
 
 **ATM \-- ATM配置命令 \-- service vbr-rt**
 
 ------------------------------------------------------------------------
 
-[**[service]{lang="EN-US"}**[ **vbr-rt**]{lang="EN-US"}]{#struct_0_19500_x1656_x2123725047}[命令用来指定]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的服务类型为]{style="font-family:宋体"}[VBR-RT]{lang="EN-US"}[（]{style="font-family:宋体"}[Variable Bit Rate-Real Time]{lang="EN-US"}[，实时可变速率），并指定相关的服务参数。]{style="font-family:宋体"}
+**[service** **vbr-rt**]命令用来指定PVC的服务类型为VBR-RT（Variable Bit Rate-Real Time，实时可变速率），并指定相关的服务参数。
 
-[**[undo service]{lang="EN-US"}**]{#struct_0_19500_x1656_x2037046724}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo service**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1528598797}
+【命令】
 
-[**[service]{lang="EN-US"}**[ **vbr-rt** *output-pcr output-scr output-mbs*]{lang="EN-US"}]{#struct_0_19500_x1656_1604507675}
+**[service** **vbr-rt** *output-pcr output-scr output-mbs*]
 
-[**[undo service]{lang="EN-US"}**]{#struct_0_19500_x1656_x459374316}
+**[undo service**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_2109284285}
+【缺省情况】
 
-[[创建一个]{style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x173807205}[后，该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的服务类型为]{style="font-family:宋体"}[UBR]{lang="EN-US"}[，输出]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元的峰值速率为]{style="font-family:宋体"}[PVC]{lang="EN-US"}[所在接口的最大带宽。]{style="font-family:宋体"}
+创建一个PVC后，该PVC的服务类型为UBR，输出ATM信元的峰值速率为PVC所在接口的最大带宽。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1131039242}
+【视图】
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x942062244}[视图]{style="font-family:宋体"}[/PVC-group]{lang="EN-US"}[下]{style="font-family:宋体"}[PVC]{lang="EN-US"}[视图]{style="font-family:宋体"}
+PVC视图/PVC-group下PVC视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x2123659511}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_644247784}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_881647306}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1842036621}
+【参数】
 
-[*[output-pcr]{lang="EN-US"}*]{#struct_0_19500_x1656_x1765318029}[：输出]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元的峰值速率，取值范围请参见]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-9]{lang="EN-US"}](?1437517977#_Ref57606154)[，单位为]{style="font-family:宋体"}[Kbit/s]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[output-pcr*]：输出ATM信元的峰值速率，取值范围请参见[表]1-9(?1437517977#_Ref57606154)，单位为Kbit/s。
 
-[*[output-scr]{lang="EN-US"}*]{#struct_0_19500_x1656_x1168296364}[：输出]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元的可承受速率，取值范围与]{style="font-family:宋体"}*[output-pcr]{lang="EN-US"}*[相同，并且]{style="font-family:宋体"}*[output-scr]{lang="EN-US"}*[小于等于]{style="font-family:宋体"}*[output-pcr]{lang="EN-US"}*[，单位为]{style="font-family:宋体"}[Kbit/s]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[output-scr*]：输出ATM信元的可承受速率，取值范围与*output-pcr*相同，并且*output-scr*小于等于*output-pcr*，单位为Kbit/s。
 
-[*[output-mbs]{lang="EN-US"}*]{#struct_0_19500_x1656_1906354303}[：输出]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元的最大突发长度，即接口输出]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元的最大缓冲数量，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[512]{lang="EN-US"}[，单位为信元数。用于]{style="font-family:宋体"}[ATM E3]{lang="EN-US"}[接口时，该参数的取值范围也为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[512]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[output-mbs*]：输出ATM信元的最大突发长度，即接口输出ATM信元的最大缓冲数量，取值范围为1～512，单位为信元数。用于ATM E3接口时，该参数的取值范围也为1～512。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1290729081}
+【使用指导】
 
-[[可以使用本命令以及]{style="font-family:宋体"}**[service]{lang="EN-US"}**[ **cbr**]{lang="EN-US"}]{#struct_0_19500_x1656_89145041}[、]{style="font-family:宋体"}**[service]{lang="EN-US"}**[ **ubr**]{lang="EN-US"}[、]{style="font-family:宋体"}**[service]{lang="EN-US"}**[ **vbr-nrt**]{lang="EN-US"}[命令来设置]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的服务类型和服务参数。新指定的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[服务类型将会覆盖已有的服务类型。]{style="font-family:宋体"}
+可以使用本命令以及**service** **cbr**、**service** **ubr**、**service** **vbr-nrt**命令来设置PVC的服务类型和服务参数。新指定的PVC服务类型将会覆盖已有的服务类型。
 
-[[本命令不支持]{style="font-family:宋体"}[ATM E1]{lang="EN-US"}]{#struct_0_19500_x1656_x2123593975}[接口。]{style="font-family:宋体"}
+本命令不支持ATM E1接口。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_703446636}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_1789137269}[在]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口下创建一条名为"]{style="font-family:宋体"}[aa]{lang="EN-US"}["、]{style="font-family:宋体"}[VPI/VCI]{lang="EN-US"}[为]{style="font-family:宋体"}[1/101]{lang="EN-US"}[的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[，并指定该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的服务类型为]{style="font-family:宋体"}[VBR-RT]{lang="EN-US"}[，且]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元峰值发送速率为]{style="font-family:宋体"}[100,000Kbit/s]{lang="EN-US"}[、可承受发送速率为]{style="font-family:宋体"}[50,000Kbit/s]{lang="EN-US"}[、最大突发长度为]{style="font-family:宋体"}[320]{lang="EN-US"}[个信元。]{style="font-family:宋体"}
+\# 在ATM接口下创建一条名为"aa"、VPI/VCI为1/101的PVC，并指定该PVC的服务类型为VBR-RT，且ATM信元峰值发送速率为100,000Kbit/s、可承受发送速率为50,000Kbit/s、最大突发长度为320个信元。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_x769927895}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc aa 1/101]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc aa 1/101
 
-[\[Sysname-ATM2/4/0-pvc-aa-1/101\] service vbr-rt 100000 50000 320]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-aa-1/101 service vbr-rt 100000 50000 320
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x692301332}[在]{style="font-family:宋体"}[PVC-group1]{lang="EN-US"}[下创建一条名为"]{style="font-family:宋体"}[aa]{lang="EN-US"}["、]{style="font-family:宋体"}[VPI/VCI]{lang="EN-US"}[为]{style="font-family:宋体"}[1/101]{lang="EN-US"}[的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[，并指定该]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的服务类型为]{style="font-family:宋体"}[VBR-RT]{lang="EN-US"}[，且]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元峰值发送速率为]{style="font-family:宋体"}[100,000Kbit/s]{lang="EN-US"}[、可承受发送速率为]{style="font-family:宋体"}[50,000Kbit/s]{lang="EN-US"}[、最大突发长度为]{style="font-family:宋体"}[320]{lang="EN-US"}[个信元。]{style="font-family:宋体"}
+\# 在PVC-group1下创建一条名为"aa"、VPI/VCI为1/101的PVC，并指定该PVC的服务类型为VBR-RT，且ATM信元峰值发送速率为100,000Kbit/s、可承受发送速率为50,000Kbit/s、最大突发长度为320个信元。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_x1150439099}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc-group 1]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc-group 1
 
-[\[Sysname-ATM2/4/0-pvc-group-1\] pvc aa 1/101]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-group-1 pvc aa 1/101
 
-[\[Sysname-ATM2/4/0-pvc-group-1-pvc-aa-1/101\] service vbr-rt 100000 50000 320]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-group-1-pvc-aa-1/101 service vbr-rt 100000 50000 320
 
-[]{#_Toc328667740}[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x2123528439}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[service cbr]{lang="EN-US"}**]{#struct_0_19500_x1656_146780238}
+·**service cbr**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[service ubr]{lang="EN-US"}**]{#struct_0_19500_x1656_x1651885054}
+·**service ubr**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[service vbr-nrt]{lang="EN-US"}**]{#struct_0_19500_x1656_x851366775}
-:::
-
-::: {#1170655049 .myid}
-[]{#_Toc404785262}[]{#struct_0_19500_x1656_x452315507}[]{#_Toc350872248}[]{#_Toc345946921}
+·**service vbr-nrt**
 
 **ATM \-- ATM配置命令 \-- shutdown**
 
 ------------------------------------------------------------------------
 
-[**[shutdown]{lang="EN-US"}**]{#struct_0_19500_x1656_989047585}[命令用来关闭接口。]{style="font-family:宋体"}
+**[shutdown**]命令用来关闭接口。
 
-[**[undo shutdown]{lang="EN-US"}**]{#struct_0_19500_x1656_1867895709}[命令用来打开接口。]{style="font-family:宋体"}
+**[undo shutdown**]命令用来打开接口。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x2012571189}
+【命令】
 
-[**[shutdown]{lang="EN-US"}**]{#struct_0_19500_x1656_416263268}
+**[shutdown**]
 
-[**[undo shutdown]{lang="EN-US"}**]{#struct_0_19500_x1656_x2123462903}
+**[undo shutdown**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x948104035}
+【缺省情况】
 
-[[接口处于打开状态。]{style="font-family:宋体"}]{#struct_0_19500_x1656_x1748287906}
+接口处于打开状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1877453517}
+【视图】
 
-[[VE]{lang="EN-US"}]{#struct_0_19500_x1656_1618061597}[接口视图]{style="font-family:宋体"}[/VE]{lang="EN-US"}[子接口视图]{style="font-family:宋体"}
+VE接口视图/VE子接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_589860994}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1700671232}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1146001473}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1318012810}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x2123397367}[关闭]{style="font-family:宋体"}[VE]{lang="EN-US"}[接口]{style="font-family:宋体"}[Virtual-Ethernet2/4/1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 关闭VE接口Virtual-Ethernet2/4/1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_x1879988324}
+\<Sysname\> system-view
 
-[\[Sysname\] interface virtual-ethernet 2/4/1]{lang="EN-US"}
+Sysname interface virtual-ethernet 2/4/1
 
-[\[Sysname-Virtual-Ethernet2/4/1\] shutdown]{lang="EN-US"}
-:::
-
-::::: {#-716074350 .myid}
-[]{#_Toc404785263}[]{#struct_0_19500_x1656_x730431498}[]{#_Toc348095195}[]{#_Toc335742616}
+Sysname-Virtual-Ethernet2/4/1 shutdown
 
 **ATM \-- ATM配置命令 \-- shutdown**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](ATM命令.files/image001.png){#图片 7 border="0" width="63" height="25"}]{lang="EN-US"}]{#struct_0_19500_x1656_629435904}
-:::
+![说明](ATM命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_19500_x1656_610803990}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[shutdown]{lang="EN-US"}**]{#struct_0_19500_x1656_x991617064}[命令用来关闭当前]{style="font-family:宋体"}[PVC]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[shutdown**]命令用来关闭当前PVC。
 
-[**[undo shutdown]{lang="EN-US"}**]{#struct_0_19500_x1656_x1476355324}[命令用来打开当前]{style="font-family:宋体"}[PVC]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo shutdown**]命令用来打开当前PVC。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x2123331831}
+【命令】
 
-[**[shutdown]{lang="EN-US"}**]{#struct_0_19500_x1656_426983689}
+**[shutdown**]
 
-[**[undo shutdown]{lang="EN-US"}**]{#struct_0_19500_x1656_1376385276}
+**[undo shutdown**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_324506362}
+【缺省情况】
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x1522612553}[处于打开状态。]{style="font-family:宋体"}
+PVC处于打开状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x353544365}
+【视图】
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_149954560}[视图]{style="font-family:宋体"}[/PVC-group]{lang="EN-US"}[下]{style="font-family:宋体"}[PVC]{lang="EN-US"}[视图]{style="font-family:宋体"}
+PVC视图/PVC-group下PVC视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_137606619}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1895624864}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x2123266295}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_762641868}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_1049607749}[打开]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口下]{style="font-family:宋体"}[PVC0/100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 打开ATM接口下PVC0/100。
 
-[[\<Sysname\> system-view ]{lang="EN-US"}]{#struct_0_19500_x1656_1889205385}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/0.1]{lang="EN-US"}
+Sysname interface atm 2/4/0.1
 
-[\[Sysname-ATM2/4/0.1\] pvc 0/100]{lang="EN-US"}
+Sysname-ATM2/4/0.1 pvc 0/100
 
-[\[Sysname-ATM2/4/0.1-pvc-0/100\] undo shutdown]{lang="EN-US"}
+Sysname-ATM2/4/0.1-pvc-0/100 undo shutdown
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x801915213}[打开]{style="font-family:宋体"}[PVC-group1]{lang="EN-US"}[下]{style="font-family:宋体"}[PVC1/101]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 打开PVC-group1下PVC1/101。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_1882405071}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc-group 1]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc-group 1
 
-[\[Sysname-ATM2/4/0-pvc-group-1\] pvc aa 1/101]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-group-1 pvc aa 1/101
 
-[\[Sysname-ATM2/4/0-pvc-group-1-pvc-aa-1/101\] undo shutdown]{lang="EN-US"}
-:::::
-
-::::: {#-1726874890 .myid}
-[]{#_Toc348095194}[]{#_Toc328667741}[]{#_Toc404785264}[]{#struct_0_19500_x1656_x2124249335}[]{#_Toc345510478}[]{#_Toc263323280}[]{#_Toc252280809}
+Sysname-ATM2/4/0-pvc-group-1-pvc-aa-1/101 undo shutdown
 
 **ATM \-- ATM配置命令 \-- sub-interface rate-statistic**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](ATM命令.files/image002.jpg){#图片 8 border="0" width="62" height="24"}]{lang="EN-US"}]{#struct_0_19500_x1656_1150160418}
-:::
+![说明](ATM命令.files/image002.jpg)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_19500_x1656_x785439501}
+·本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[开启本功能后可能需要耗费大量系统资源，请谨慎使用。]{style="font-family:KaiTi_GB2312"}]{#struct_0_19500_x1656_x816704340}
-:::
+·开启本功能后可能需要耗费大量系统资源，请谨慎使用。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[sub-interface rate-statistic]{lang="EN-US"}**]{#struct_0_19500_x1656_x1486052056}[命令用来开启]{style="font-family:
-宋体"}[VE]{lang="EN-US"}[子接口的速率统计功能。]{style="font-family:宋体"}
+**[sub-interface rate-statistic**]命令用来开启VE子接口的速率统计功能。
 
-[**[undo sub-interface rate-statistic]{lang="EN-US"}**]{#struct_0_19500_x1656_1515720558}[命令用来关闭]{style="font-family:宋体"}[VE]{lang="EN-US"}[子接口的速率统计功能。]{style="font-family:宋体"}
+**[undo sub-interface rate-statistic**]命令用来关闭VE子接口的速率统计功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_12649662}
+【命令】
 
-[**[sub-interface rate-statistic]{lang="EN-US"}**]{#struct_0_19500_x1656_1842282410}
+**[sub-interface rate-statistic**]
 
-[**[undo sub-interface rate-statistic]{lang="EN-US"}**]{#struct_0_19500_x1656_2037930721}
+**[undo sub-interface rate-statistic**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x2124183799}
+【缺省情况】
 
-[[VE]{lang="EN-US"}]{#struct_0_19500_x1656_853128910}[子接口的速率统计功能处于关闭状态。]{style="font-family:宋体"}
+VE子接口的速率统计功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_328163106}
+【视图】
 
-[[VE]{lang="EN-US"}]{#struct_0_19500_x1656_1087300563}[接口视图]{style="font-family:宋体"}
+VE接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_492599187}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1995280940}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1067276531}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_565055405}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_1742684680}[开启接口]{style="font-family:宋体"}[VE2/4/0]{lang="EN-US"}[的子接口速率统计功能。]{style="font-family:宋体"}
+\# 开启接口VE2/4/0的子接口速率统计功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_x2123725046}
+\<Sysname\> system-view
 
-[\[Sysname\] interface virtual-ethernet 2/4/0]{lang="EN-US"}
+Sysname interface virtual-ethernet 2/4/0
 
-[\[Sysname-Virtual-Ethernet2/4/0\] sub-interface rate-statistic]{lang="EN-US"}
-:::::
-
-::: {#2022929075 .myid}
-[]{#_Toc404785265}[]{#struct_0_19500_x1656_x470962783}
+Sysname-Virtual-Ethernet2/4/0 sub-interface rate-statistic
 
 **ATM \-- ATM配置命令 \-- transmit-priority**
 
 ------------------------------------------------------------------------
 
-[**[transmit-priority]{lang="EN-US"}**]{#struct_0_19500_x1656_1984883746}[命令用来配置]{style="font-family:宋体"}[UBR]{lang="EN-US"}[、]{style="font-family:宋体"}[VBR-NRT]{lang="EN-US"}[、]{style="font-family:宋体"}[VBR-RT]{lang="EN-US"}[服务下的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的传输优先级。]{style="font-family:宋体"}
+**[transmit-priority**]命令用来配置UBR、VBR-NRT、VBR-RT服务下的PVC的传输优先级。
 
-[**[undo transmit-priority]{lang="EN-US"}**]{#struct_0_19500_x1656_x1455423021}[命令用来按照]{style="font-family:宋体"}[PVC]{lang="EN-US"}[服务类型恢复对应的缺省传输优先级。]{style="font-family:宋体"}
+**[undo transmit-priority**]命令用来按照PVC服务类型恢复对应的缺省传输优先级。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_63935776}
+【命令】
 
-[**[transmit-priority]{lang="EN-US"}**[ *value*]{lang="EN-US"}]{#struct_0_19500_x1656_x1527268191}
+**[transmit-priority** *value*]
 
-[**[undo]{lang="EN-US"}**[ **transmit-priority**]{lang="EN-US"}]{#struct_0_19500_x1656_x1150809737}
+**[undo** **transmit-priority**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x2004620635}
+【缺省情况】
 
-[[UBR]{lang="EN-US"}]{#struct_0_19500_x1656_x439423884}[服务的传输优先级为]{style="font-family:宋体"}[0]{lang="EN-US"}[；]{style="font-family:宋体"}[VBR-NRT]{lang="EN-US"}[服务的传输优先级为]{style="font-family:宋体"}[5]{lang="EN-US"}[；]{style="font-family:宋体"}[VBR-RT]{lang="EN-US"}[服务的传输优先级为]{style="font-family:宋体"}[8]{lang="EN-US"}[。]{style="font-family:宋体"}
+UBR服务的传输优先级为0；VBR-NRT服务的传输优先级为5；VBR-RT服务的传输优先级为8。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x1960159434}
+【视图】
 
-[[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x2123659510}[视图]{style="font-family:宋体"}[/PVC-group]{lang="EN-US"}[下]{style="font-family:宋体"}[PVC]{lang="EN-US"}[视图]{style="font-family:宋体"}
+PVC视图/PVC-group下PVC视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x921836157}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_1041832097}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x1495049825}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_432887029}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_19500_x1656_x162194066}[：传输优先级，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[9]{lang="EN-US"}[，数值大的优先级高。]{style="font-family:宋体"}[UBR]{lang="EN-US"}[服务的传输优先级取值范围是]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[4]{lang="EN-US"}[；]{style="font-family:
-宋体"}[VBR-NRT]{lang="EN-US"}[服务的传输优先级取值范围是]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[7]{lang="EN-US"}[；]{style="font-family:宋体"}[VBR-RT]{lang="EN-US"}[服务的传输优先级取值范围是]{style="font-family:宋体"}[8]{lang="EN-US"}[～]{style="font-family:宋体"}[9]{lang="EN-US"}[。]{style="font-family:
-宋体"}
+*[value*]：传输优先级，取值范围为0～9，数值大的优先级高。UBR服务的传输优先级取值范围是0～4；VBR-NRT服务的传输优先级取值范围是5～7；VBR-RT服务的传输优先级取值范围是8～9。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_967897895}
+【使用指导】
 
-[[传输优先级高的]{style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_113553186}[优先占有带宽，相同传输优先级的]{style="font-family:宋体"}[PVC]{lang="EN-US"}[占有相同的带宽。]{style="font-family:宋体"}
+传输优先级高的PVC优先占有带宽，相同传输优先级的PVC占有相同的带宽。
 
-[[当改变]{style="font-family:宋体"}[PVC]{lang="EN-US"}]{#struct_0_19500_x1656_x2123593974}[的服务类型时，传输优先级变为当前服务的缺省值。]{style="font-family:宋体"}
+当改变PVC的服务类型时，传输优先级变为当前服务的缺省值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x862637305}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x278507069}[配置]{style="font-family:宋体"}[ATM]{lang="EN-US"}[接口下]{style="font-family:宋体"}[PVC1/32]{lang="EN-US"}[的传输优先级为]{style="font-family:宋体"}[3]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置ATM接口下PVC1/32的传输优先级为3。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_1929136489}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc 1/32]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc 1/32
 
-[\[Sysname-ATM2/4/0-pvc-1/32\] transmit-priority 3]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-1/32 transmit-priority 3
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x277329277}[配置]{style="font-family:宋体"}[PVC-group1]{lang="EN-US"}[下]{style="font-family:宋体"}[PVC1/101]{lang="EN-US"}[的传输优先级为]{style="font-family:宋体"}[4]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置PVC-group1下PVC1/101的传输优先级为4。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_x2106922830}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] pvc-group 1]{lang="EN-US"}
+Sysname-ATM2/4/0 pvc-group 1
 
-[\[Sysname-ATM2/4/0-pvc-group-1\] pvc aa 1/101]{lang="EN-US"}
+Sysname-ATM2/4/0-pvc-group-1 pvc aa 1/101
 
-[\[Sysname-ATM2/4/0-pvc-group-1-pvc-aa-1/101\] transmit-priority 4]{lang="EN-US"}
-:::
-
-::: {#-529007086 .myid}
-[]{#_Toc404785266}[]{#struct_0_19500_x1656_297834370}[]{#_Toc348095188}[]{#_Toc328667732}
+Sysname-ATM2/4/0-pvc-group-1-pvc-aa-1/101 transmit-priority 4
 
 **ATM \-- ATM配置命令 \-- vp limit**
 
 ------------------------------------------------------------------------
 
-[**[vp limit]{lang="EN-US"}**]{#struct_0_19500_x1656_x2123528438}[命令用来配置]{style="font-family:宋体"}[VP]{lang="EN-US"}[监管的参数。]{style="font-family:宋体"}
+**[vp limit**]命令用来配置VP监管的参数。
 
-[**[undo vp limit]{lang="EN-US"}**]{#struct_0_19500_x1656_1712864179}[命令用来取消]{style="font-family:宋体"}[VP]{lang="EN-US"}[监管。]{style="font-family:宋体"}
+**[undo vp limit**]命令用来取消VP监管。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_737859215}
+【命令】
 
-[**[vp limit]{lang="EN-US"}**[ *vpi* *scr*]{lang="EN-US"}]{#struct_0_19500_x1656_144311321}
+**[vp limit** *vpi* *scr*]
 
-[**[undo vp limit]{lang="EN-US"}**[ *vpi*]{lang="EN-US"}]{#struct_0_19500_x1656_838979357}
+**[undo vp limit** *vpi*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x2013127594}
+【缺省情况】
 
-[[不进行]{style="font-family:宋体"}[VP]{lang="EN-US"}]{#struct_0_19500_x1656_x1499373395}[监管。]{style="font-family:宋体"}
+不进行VP监管。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1092574571}
+【视图】
 
-[[ATM]{lang="EN-US"}]{#struct_0_19500_x1656_x1124783503}[接口视图]{style="font-family:宋体"}
+ATM接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x2123462902}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_19500_x1656_617979906}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_19500_x1656_x1220543226}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_19500_x1656_449934769}
+【参数】
 
-[*[vpi]{lang="EN-US"}*]{#struct_0_19500_x1656_x1025198035}[：]{style="font-family:宋体"}[VPI]{lang="EN-US"}[值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[vpi*]：VPI值，取值范围为0～255。
 
-[*[scr]{lang="EN-US"}*]{#struct_0_19500_x1656_x1381650634}[：可承受速率，取值范围请参见]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-9]{lang="EN-US"}](?1437517977#_Ref57606154)[，单位为]{style="font-family:宋体"}[Kbit/s]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[scr*]：可承受速率，取值范围请参见[表]1-9(?1437517977#_Ref57606154)，单位为Kbit/s。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_19500_x1656_x442268000}
+【使用指导】
 
-[[VP]{lang="EN-US"}]{#struct_0_19500_x1656_x767249020}[是具有相同]{style="font-family:宋体"}[VPI]{lang="EN-US"}[的所有]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的集合，]{style="font-family:宋体"}[VP]{lang="EN-US"}[监管用来管理]{style="font-family:宋体"}[VP]{lang="EN-US"}[的最大带宽，对一个物理接口下的虚通道（]{style="font-family:宋体"}[VP]{lang="EN-US"}[）流量进行入方向、出方向的监管，即保证]{style="font-family:宋体"}[VP]{lang="EN-US"}[的最大传输速率不能超过设定值，超出的流量将被丢弃。在应用]{style="font-family:宋体"}[VP]{lang="EN-US"}[监管时，]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的参数仍然有效，只有满足]{style="font-family:宋体"}[PVC]{lang="EN-US"}[的参数与]{style="font-family:宋体"}[VP]{lang="EN-US"}[监管的参数时，分组才会被接收或发送。在计算流量时，已经包括了]{style="font-family:宋体"}[LLC/SNAP]{lang="EN-US"}[、]{style="font-family:宋体"}[MUX]{lang="EN-US"}[和]{style="font-family:宋体"}[NLPID]{lang="EN-US"}[封装头部，[]{#_Hlt23222623}但不包括]{style="font-family:宋体"}[ATM]{lang="EN-US"}[信元头。]{style="font-family:宋体"}
+VP是具有相同VPI的所有PVC的集合，VP监管用来管理VP的最大带宽，对一个物理接口下的虚通道（VP）流量进行入方向、出方向的监管，即保证VP的最大传输速率不能超过设定值，超出的流量将被丢弃。在应用VP监管时，PVC的参数仍然有效，只有满足PVC的参数与VP监管的参数时，分组才会被接收或发送。在计算流量时，已经包括了LLC/SNAP、MUX和NLPID封装头部，但不包括ATM信元头。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_19500_x1656_1920921698}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_19500_x1656_x2123397366}[配置]{style="font-family:宋体"}[VPI]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:
-宋体"}[VP]{lang="EN-US"}[的流量为]{style="font-family:宋体"}[2Mbit/s]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置VPI为1的VP的流量为2Mbit/s。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_19500_x1656_848895031}
+\<Sysname\> system-view
 
-[\[Sysname\] interface atm 2/4/0]{lang="EN-US"}
+Sysname interface atm 2/4/0
 
-[\[Sysname-ATM2/4/0\] vp limit 1 2000]{lang="EN-US"}
+Sysname-ATM2/4/0 vp limit 1 2000
 
-[]{#_Toc328667733}[[【相关命令】]{style="font-family:黑体"}]{#struct_0_19500_x1656_793743905}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[service cbr]{lang="EN-US"}**]{#struct_0_19500_x1656_x18142487}
+·**service cbr**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[service ubr]{lang="EN-US"}**]{#struct_0_19500_x1656_x914548901}
+·**service ubr**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[service vbr-nrt]{lang="EN-US"}**]{#struct_0_19500_x1656_x1556187306}
+·**service vbr-nrt**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[service vbr-rt]{lang="EN-US"}**]{#struct_0_19500_x1656_908926114}
-:::
+·**service vbr-rt**

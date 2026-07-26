@@ -1,291 +1,278 @@
-::: {#-1618505991 .myid}
-[]{#_Toc404795330}[]{#struct_0_18628_x5113_x1060518542}[]{#_Toc347412450}
 
 **接口备份 \-- 接口备份调试命令 \-- debugging interface-backup**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18628_x5113_1395087306}
+【命令】
 
-[**[debugging ]{lang="EN-US"}[interface-backup]{lang="EN-US"}**[ { **event** \| **track** }]{lang="EN-US"}]{#struct_0_18628_x5113_740478280}
+**[debugging interface-backup**[ { **event** \| **track** }]]
 
-[**[undo debugging ]{lang="EN-US"}[interface-backup]{lang="EN-US"}**[ { **event** \| **track** }]{lang="EN-US"}]{#struct_0_18628_x5113_1287004265}
+**[undo debugging interface-backup**[ { **event** \| **track** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18628_x5113_1101875684}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_18628_x5113_395012593}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18628_x5113_536794476}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18628_x5113_x1312156633}
+network-admin
 
-[[vd-admin]{lang="EN-US"}]{#struct_0_18628_x5113_x998812092}
+vd-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18628_x5113_x455787142}
+【参数】
 
-[**[event]{lang="EN-US"}**]{#struct_0_18628_x5113_1238221419}[：表示接口备份事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示接口备份事件调试信息开关。
 
-[**[track]{lang="EN-US"}**]{#struct_0_18628_x5113_x1754947391}[：表示接口备份]{style="font-family:宋体"}[Track]{lang="EN-US"}[项调试信息开关。]{style="font-family:宋体"}
+**[track**]：表示接口备份Track项调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_18628_x5113_1133227357}
+【描述】
 
-[**[debugging interface-backup]{lang="EN-US"}**]{#struct_0_18628_x5113_x995248241}[命令用来打开接口备份调试信息开关。]{style="font-family:
-宋体"}
+**[debugging interface-backup**]命令用来打开接口备份调试信息开关。
 
-[**[undo debugging interface-backup]{lang="EN-US"}**]{#struct_0_18628_x5113_191940872}[命令用来关闭接口备份调试信息开关。]{style="font-family:宋体"}
+**[undo debugging interface-backup**]命令用来关闭接口备份调试信息开关。
 
-[[缺省情况下，接口备份调试信息开关处于关闭状态。]{style="font-family:宋体"}]{#struct_0_18628_x5113_868002171}
+缺省情况下，接口备份调试信息开关处于关闭状态。
 
-[[表1-1 ]{lang="EN-US"}[debugging interface-backup event]{lang="EN-US"}]{#struct_0_18628_x5113_1207305620}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging interface-backup event命令输出信息描述表
 
-[]{#table_struct_0_x509430689}[[字段]{style="font-family:黑体"}]{#struct_0_18628_x5113_511666966}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_18628_x5113_118957350}
+描述
 
-[[Deactivated the primary interface *interface-name.*]{lang="EN-US"}]{#struct_0_18628_x5113_x1857420748}
+Deactivated the primary interface *interface-name.*
 
-[[去激活主接口]{style="font-family:宋体"}]{#struct_0_18628_x5113_1230888234}
+去激活主接口
 
-[[Deleted the primary interface *interface-name.*]{lang="EN-US"}]{#struct_0_18628_x5113_290306284}
+Deleted the primary interface *interface-name.*
 
-[[删除主接口]{style="font-family:宋体"}]{#struct_0_18628_x5113_x1901318601}
+删除主接口
 
-[[Deactivated the backup interface *interface-name*.]{lang="EN-US"}]{#struct_0_18628_x5113_x2003664393}
+Deactivated the backup interface *interface-name*.
 
-[[去激活备份接口]{style="font-family:宋体"}]{#struct_0_18628_x5113_338710618}
+去激活备份接口
 
-[[Deleted the backup interface *interface-name*.]{lang="EN-US"}]{#struct_0_18628_x5113_2064603135}
+Deleted the backup interface *interface-name*.
 
-[[删除备份接口]{style="font-family:宋体"}]{#struct_0_18628_x5113_1078699357}
+删除备份接口
 
-[[Activated the backup interface *interface-name*.]{lang="EN-US"}]{#struct_0_18628_x5113_191875336}
+Activated the backup interface *interface-name*.
 
-[[激活备份接口]{style="font-family:宋体"}]{#struct_0_18628_x5113_502572793}
+激活备份接口
 
-[[Activated the primary interface *interface-name*.]{lang="EN-US"}]{#struct_0_18628_x5113_x1817596181}
+Activated the primary interface *interface-name*.
 
-[[激活主接口]{style="font-family:宋体"}]{#struct_0_18628_x5113_x788319395}
+激活主接口
 
-[[Primary interface *interface-name* came up.]{lang="EN-US"}]{#struct_0_18628_x5113_x1494936478}
+Primary interface *interface-name* came up.
 
-[[主接口链路]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_18628_x5113_149370352}
+主接口链路up
 
-[[Backup interface *interface-name* came up.]{lang="EN-US"}]{#struct_0_18628_x5113_x1389757827}
+Backup interface *interface-name* came up.
 
-[[备份接口链路]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_18628_x5113_623782341}
+备份接口链路up
 
-[[Primary interface *interface-name* went down.]{lang="EN-US"}]{#struct_0_18628_x5113_x408785606}
+Primary interface *interface-name* went down.
 
-[[主接口链路]{style="font-family:宋体"}[down]{lang="EN-US"}]{#struct_0_18628_x5113_159004812}
+主接口链路down
 
-[[Backup interface *interface-name* went down.]{lang="EN-US"}]{#struct_0_18628_x5113_191809800}
+Backup interface *interface-name* went down.
 
-[[备份接口链路]{style="font-family:宋体"}[down]{lang="EN-US"}]{#struct_0_18628_x5113_x1474844163}
+备份接口链路down
 
-[[Bandwidth of primary interface *interface-name* changed.]{lang="EN-US"}]{#struct_0_18628_x5113_91331602}
+Bandwidth of primary interface *interface-name* changed.
 
-[[主接口带宽发生变化]{style="font-family:宋体"}]{#struct_0_18628_x5113_736691783}
+主接口带宽发生变化
 
-[[Added a backup interface for primary interface *interface-name.*]{lang="EN-US"}]{#struct_0_18628_x5113_x553948305}
+Added a backup interface for primary interface *interface-name.*
 
-[[在主接口上添加一个备份接口]{style="font-family:宋体"}]{#struct_0_18628_x5113_x1605396539}
+在主接口上添加一个备份接口
 
-[[Deleted a backup interface from primary interface *interface-name.*]{lang="EN-US"}]{#struct_0_18628_x5113_867881713}
+Deleted a backup interface from primary interface *interface-name.*
 
-[[在主接口上删除一个备份接口]{style="font-family:宋体"}]{#struct_0_18628_x5113_x313026913}
+在主接口上删除一个备份接口
 
-[[Enabled load balancing of primary interface *interface-name*.]{lang="EN-US"}]{#struct_0_18628_x5113_191744264}
+Enabled load balancing of primary interface *interface-name*.
 
-[[启动主接口的负载分担模式]{style="font-family:宋体"}]{#struct_0_18628_x5113_316218215}
+启动主接口的负载分担模式
 
-[[Disabled load balancing of primary interface *interface-name*.]{lang="EN-US"}]{#struct_0_18628_x5113_2146579558}
+Disabled load balancing of primary interface *interface-name*.
 
-[[停止主接口的负载分担模式]{style="font-family:宋体"}]{#struct_0_18628_x5113_1366773998}
+停止主接口的负载分担模式
 
-[[Changed the priority of backup interface *interface-name*.]{lang="EN-US"}]{#struct_0_18628_x5113_x538136267}
+Changed the priority of backup interface *interface-name*.
 
-[[修改备份接口的优先级]{style="font-family:宋体"}]{#struct_0_18628_x5113_x165283625}
+修改备份接口的优先级
 
-[[Changed the UP_DELAY timer interval of interface *Interface-name*.]{lang="EN-US"}]{#struct_0_18628_x5113_444104305}
+Changed the UP_DELAY timer interval of interface *Interface-name*.
 
-[[修改接口的]{style="font-family:宋体"}[UP_DELAY]{lang="EN-US"}]{#struct_0_18628_x5113_960018997}[定时器参数]{style="font-family:宋体"}
+修改接口的UP_DELAY定时器参数
 
-[[Changed the DOWN_DELAY timer interval of interface *Interface-name*.]{lang="EN-US"}]{#struct_0_18628_x5113_191678728}
+Changed the DOWN_DELAY timer interval of interface *Interface-name*.
 
-[[修改接口的]{style="font-family:宋体"}[DOWN_DELAY]{lang="EN-US"}]{#struct_0_18628_x5113_684226903}[定时器参数]{style="font-family:宋体"}
+修改接口的DOWN_DELAY定时器参数
 
-[[Changed the flow check interval of primary interface *interface-name*.]{lang="EN-US"}]{#struct_0_18628_x5113_x1566556287}
+Changed the flow check interval of primary interface *interface-name*.
 
-[[修改主接口的流量检测间隔]{style="font-family:宋体"}]{#struct_0_18628_x5113_x600837817}
+修改主接口的流量检测间隔
 
-[[DOWN_DELAY timer on primary interface *interface-name* expired. ]{lang="EN-US"}]{#struct_0_18628_x5113_1391415223}
+DOWN_DELAY timer on primary interface *interface-name* expired.
 
-[[主接口]{style="font-family:宋体"}[DOWN_DELAY]{lang="EN-US"}]{#struct_0_18628_x5113_x578243076}[定时器超时]{style="font-family:宋体"}
+主接口DOWN_DELAY定时器超时
 
-[[DOWN_DELAY timer on backup interface *interface-name* expired.]{lang="EN-US"}]{#struct_0_18628_x5113_x739608974}
+DOWN_DELAY timer on backup interface *interface-name* expired.
 
-[[备份接口]{style="font-family:宋体"}[DOWN_DELAY]{lang="EN-US"}]{#struct_0_18628_x5113_191613192}[定时器超时]{style="font-family:宋体"}
+备份接口DOWN_DELAY定时器超时
 
-[[UP_DELAY timer on backup interface *interface-name* expired.]{lang="EN-US"}]{#struct_0_18628_x5113_x66744215}
+UP_DELAY timer on backup interface *interface-name* expired.
 
-[[备份接口]{style="font-family:宋体"}[UP_DELAY]{lang="EN-US"}]{#struct_0_18628_x5113_x1403647362}[定时器超时]{style="font-family:宋体"}
+备份接口UP_DELAY定时器超时
 
-[[UP_DELAY timer on primary interface *interface-name* expired.]{lang="EN-US"}]{#struct_0_18628_x5113_558400747}
+UP_DELAY timer on primary interface *interface-name* expired.
 
-[[主接口]{style="font-family:宋体"}[UP_DELAY]{lang="EN-US"}]{#struct_0_18628_x5113_x1887648707}[定时器超时]{style="font-family:宋体"}
+主接口UP_DELAY定时器超时
 
-[[Load balancing timer on primary interface *interface-name* expired.]{lang="EN-US"}]{#struct_0_18628_x5113_x1019481872}
+Load balancing timer on primary interface *interface-name* expired.
 
-[[主接口上的负载分担定时器超时]{style="font-family:宋体"}]{#struct_0_18628_x5113_x120141810}
+主接口上的负载分担定时器超时
 
-[[Traffic amount reached the upper limit of primary interface *interface-name*, and it is required to activate a backup interface.]{lang="EN-US"}]{#struct_0_18628_x5113_191547656}
+Traffic amount reached the upper limit of primary interface *interface-name*, and it is required to activate a backup interface.
 
-[[主接口的流量达到了主接口下配置的阈值上限，需要启用一个备份接口]{style="font-family:宋体"}]{#struct_0_18628_x5113_1949232597}
+主接口的流量达到了主接口下配置的阈值上限，需要启用一个备份接口
 
-[[Total traffic amount reached the lower limit of primary interface *interface-name*, and it is required to deactivate a backup interface.]{lang="EN-US"}]{#struct_0_18628_x5113_1396267737}
+Total traffic amount reached the lower limit of primary interface *interface-name*, and it is required to deactivate a backup interface.
 
-[[主接口和备份接口的流量总和小于主接口下配置的阈值下限，需要关闭一个备份接口]{style="font-family:宋体"}]{#struct_0_18628_x5113_1392692615}
+主接口和备份接口的流量总和小于主接口下配置的阈值下限，需要关闭一个备份接口
 
-[[Interface *interface-name* transitioned from *state1* to *state2.*]{lang="EN-US"}]{#struct_0_18628_x5113_1660972852}
+Interface *interface-name* transitioned from *state1* to *state2.*
 
-[[接口状态由]{style="font-family:宋体"}*[state1]{lang="EN-US"}*]{#struct_0_18628_x5113_2118859741}[迁移到]{style="font-family:宋体"}*[state2]{lang="EN-US"}*[，可能的状态如下：]{style="font-family:宋体"}
+接口状态由*state1*迁移到*state2*，可能的状态如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[INVALID]{lang="EN-US"}]{#struct_0_18628_x5113_191482120}[：初始]{style="font-family:宋体"}[无效]{lang="EN-US" style="font-family:宋体"}[状态]{style="font-family:宋体"}
+·INVALID：初始无效状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[STANDBY]{lang="EN-US"}]{#struct_0_18628_x5113_x1524002942}[：备用]{lang="EN-US" style="font-family:宋体"}[状态]{style="font-family:宋体"}
+·STANDBY：备用状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_18628_x5113_1357962091}[：]{lang="EN-US" style="font-family:宋体"}[UP]{lang="EN-US"}[状态]{style="font-family:宋体"}
+·UP：UP状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_18628_x5113_270285501}[：]{lang="EN-US" style="font-family:宋体"}[DOWN]{lang="EN-US"}[状态]{style="font-family:宋体"}
+·DOWN：DOWN状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP_DELAY]{lang="EN-US"}]{#struct_0_18628_x5113_x170107642}[：延时]{lang="EN-US" style="font-family:宋体"}[UP]{lang="EN-US"}[状态]{style="font-family:宋体"}
+·UP_DELAY：延时UP状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN_DELAY]{lang="EN-US"}]{#struct_0_18628_x5113_192465160}[：延时]{lang="EN-US" style="font-family:宋体"}[DOWN]{lang="EN-US"}[状态]{style="font-family:宋体"}
+·DOWN_DELAY：延时DOWN状态
 
-[ ]{lang="EN-US"}
+表1-2 debugging interface-backup track命令输出信息描述表
 
-[[表1-2 ]{lang="EN-US"}[debugging interface-backup track]{lang="EN-US"}]{#struct_0_18628_x5113_x1197955015}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x519339385}[[字段]{style="font-family:黑体"}]{#struct_0_18628_x5113_1473594323}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_18628_x5113_263325390}
+Track add: Interface *interface-name* was associated with track entry *number*.
 
-[[Track add: Interface *interface-name* was associated with track entry *number*.]{lang="EN-US"}]{#struct_0_18628_x5113_x31687438}
+配置了一个关联track项的备份接口
 
-[[配置了一个关联]{style="font-family:宋体"}[track]{lang="EN-US"}]{#struct_0_18628_x5113_1959962005}[项的备份接口]{style="font-family:宋体"}
+Track modify: Track entry *number* associated with interface *interface-name* transitioned to *state*.
 
-[[Track modify: Track entry *number* associated with interface *interface-name* transitioned to *state*.]{lang="EN-US"}]{#struct_0_18628_x5113_1498167988}
+Track项*number*的状态变为*state*，可能的状态如下：
 
-[[Track]{lang="EN-US"}]{#struct_0_18628_x5113_x1855533791}[项]{style="font-family:宋体"}*[number]{lang="EN-US"}*[的状态变为]{style="font-family:宋体"}*[state]{lang="EN-US"}*[，可能的状态如下：]{style="font-family:宋体"}
+·Positive：Track项跟踪的主链路正常
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Positive]{lang="EN-US"}]{#struct_0_18628_x5113_22670948}[：]{style="font-family:宋体"}[Track]{lang="EN-US"}[项跟踪的主链路正常]{style="font-family:宋体"}
+·Negative：Track项跟踪的主链路故障
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[N]{lang="EN-US"}[egative]{lang="EN-US"}]{#struct_0_18628_x5113_x652339686}[：]{style="font-family:
-  宋体"}[Track]{lang="EN-US"}[项跟踪的主链路故障]{style="font-family:宋体"}
+·Not ready：Track项未生效
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not ready]{lang="EN-US"}]{#struct_0_18628_x5113_1576084092}[：]{style="font-family:宋体"}[Track]{lang="EN-US"}[项未生效]{style="font-family:宋体"}
+Track delete: Association between interface *interface-name* and track entry *number* was removed.
 
-[[Track delete: Association between interface *interface-name* and track entry *number* was removed.]{lang="EN-US"}]{#struct_0_18628_x5113_x1773467797}
+删除接口与track项的关联
 
-[[删除接口与]{style="font-family:宋体"}[track]{lang="EN-US"}]{#struct_0_18628_x5113_x412637650}[项的关联]{style="font-family:宋体"}
+【举例】
 
-[ ]{lang="EN-US"}
+\# 打开接口备份的事件调试信息开关，当在主接口GigabitEthernet1/0/2下添加一个备份接口GigabitEthernet1/0/4时，将输出如下调试信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18628_x5113_192399624}
+\<Sysname\> debugging interface-backup event
 
-[[\# ]{lang="EN-US"}]{#struct_0_18628_x5113_x1017165433}[打开接口备份的事件调试信息开关，当在主接口]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[下添加一个备份接口]{style="font-family:宋体"}[GigabitEthernet1/0/4]{lang="EN-US"}[时，将输出如下调试信息。]{style="font-family:宋体"}
+\<Sysname\> terminal monitor
 
-[[\<Sysname\> debugging interface-backup event]{lang="EN-US"}]{#struct_0_18628_x5113_505565399}
+\<Sysname\> terminal  debugging
 
-[\<Sysname\> terminal monitor]{lang="EN-US"}
+\<Sysname\> system-view
 
-[\<Sysname\> terminal  debugging]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/2
 
-[\<Sysname\> system-view]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/2 backup interface gigabitethernet 1/0/4
 
-[\[Sysname\] interface gigabitethernet 1/0/2]{lang="EN-US"}
+\*Feb 27 21:12:49:639 2013 Sysname IB/7/EVENT: -MDC=1; Added a backup interface for primary interface GigabitEthernet1/0/2.
 
-[\[Sysname-GigabitEthernet1/0/2\] backup interface gigabitethernet 1/0/4]{lang="EN-US"}
+\*Feb 27 21:12:49:640 2013 Sysname IB/7/EVENT: -MDC=1; Interface GigabitEthernet1/0/2 transitioned from INVALID to UP.
 
-[\*Feb 27 21:12:49:639 2013 Sysname IB/7/EVENT: -MDC=1; Added a backup interface for primary interface GigabitEthernet1/0/2.]{lang="EN-US"}
+\*Feb 27 21:12:49:640 2013 Sysname IB/7/EVENT: -MDC=1; Interface GigabitEthernet1/0/4 transitioned from INVALID to UP.
 
-[\*Feb 27 21:12:49:640 2013 Sysname IB/7/EVENT: -MDC=1; Interface GigabitEthernet1/0/2 transitioned from INVALID to UP.]{lang="EN-US"}
+\*Feb 27 21:12:49:650 2013 Sysname IB/7/EVENT: -MDC=1; Interface GigabitEthernet1/0/4 transitioned from UP to STANDBY.
 
-[\*Feb 27 21:12:49:640 2013 Sysname IB/7/EVENT: -MDC=1; Interface GigabitEthernet1/0/4 transitioned from INVALID to UP.]{lang="EN-US"}
+\*Feb 27 21:12:49:650 2013 Sysname IB/7/EVENT: -MDC=1; Backup interface GigabitEthernet1/0/4 went down.
 
-[\*Feb 27 21:12:49:650 2013 Sysname IB/7/EVENT: -MDC=1; Interface GigabitEthernet1/0/4 transitioned from UP to STANDBY.]{lang="EN-US"}
+*// 主接口GigabitEthernet1/0/2下添加了一个备份接口，由于主接口当前处于UP状态，备份接口GigabitEthernet1/0/4直接被shutdown，当前备份接口处于STANDBY状态*
 
-[\*Feb 27 21:12:49:650 2013 Sysname IB/7/EVENT: -MDC=1; Backup interface GigabitEthernet1/0/4 went down.]{lang="EN-US"}
+\# 配置主备接口的切换延时为10秒，当将主接口shutdown时，将输出如下调试信息。
 
-[*[// ]{lang="EN-US"}*]{#struct_0_18628_x5113_x1960921351}*[主接口]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[下添加了一个备份接口，由于主接口当前处于]{style="font-family:宋体"}[UP]{lang="EN-US"}[状态，备份接口]{style="font-family:宋体"}[GigabitEthernet1/0/4]{lang="EN-US"}[直接被]{style="font-family:宋体"}[shutdown]{lang="EN-US"}[，当前备份接口处于]{style="font-family:宋体"}[STANDBY]{lang="EN-US"}[状态]{style="font-family:宋体"}*
+Sysname-GigabitEthernet1/0/2 backup timer delay 10 10
 
-[[\# ]{lang="EN-US"}]{#struct_0_18628_x5113_x1064758019}[配置主备接口的切换延时为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒，当将主接口]{style="font-family:宋体"}[shutdown]{lang="EN-US"}[时，将输出如下调试信息。]{style="font-family:宋体"}
+Sysname-GigabitEthernet1/0/2 shutdown
 
-[[\[Sysname-GigabitEthernet1/0/2\] backup timer delay 10 10]{lang="EN-US"}]{#struct_0_18628_x5113_x1087354782}
+\*Feb 27 21:15:42:912 2013 Sysname IB/7/EVENT: -MDC=1; Primary interface GigabitEthernet1/0/2 went down.
 
-[\[Sysname-GigabitEthernet1/0/2\] shutdown]{lang="EN-US"}
+\*Feb 27 21:15:42:913 2013 Sysname IB/7/EVENT: -MDC=1; Interface GigabitEthernet1/0/2 transitioned from UP to DOWN_DELAY.
 
-[\*Feb 27 21:15:42:912 2013 Sysname IB/7/EVENT: -MDC=1; Primary interface GigabitEthernet1/0/2 went down.]{lang="EN-US"}
+%Feb 27 21:15:42:914 2013 Sysname IFNET/3/PHY_UPDOWN: -MDC=1; GigabitEthernet1/0/2 link status is down.
 
-[\*Feb 27 21:15:42:913 2013 Sysname IB/7/EVENT: -MDC=1; Interface GigabitEthernet1/0/2 transitioned from UP to DOWN_DELAY.]{lang="EN-US"}
+%Feb 27 21:15:42:915 2013 Sysname IFNET/5/LINK_UPDOWN: -MDC=1; Line protocol on the interface GigabitEthernet1/0/2 is down.
 
-[%Feb 27 21:15:42:914 2013 Sysname IFNET/3/PHY_UPDOWN: -MDC=1; GigabitEthernet1/0/2 link status is down.]{lang="EN-US"}
+\*Feb 27 21:15:53:914 2013 Sysname IB/7/EVENT: -MDC=1; DOWN_DELAY timer on primary interface GigabitEthernet1/0/2 expired.
 
-[%Feb 27 21:15:42:915 2013 Sysname IFNET/5/LINK_UPDOWN: -MDC=1; Line protocol on the interface GigabitEthernet1/0/2 is down.]{lang="EN-US"}
+\*Feb 27 21:15:53:914 2013 Sysname IB/7/EVENT: -MDC=1; Interface GigabitEthernet1/0/2 transitioned from DOWN_DELAY to DOWN.
 
-[\*Feb 27 21:15:53:914 2013 Sysname IB/7/EVENT: -MDC=1; DOWN_DELAY timer on primary interface GigabitEthernet1/0/2 expired.]{lang="EN-US"}
+\*Feb 27 21:15:54:136 2013 Sysname IB/7/EVENT: -MDC=1; Interface GigabitEthernet1/0/4 transitioned from STANDBY to UP_DELAY.
 
-[\*Feb 27 21:15:53:914 2013 Sysname IB/7/EVENT: -MDC=1; Interface GigabitEthernet1/0/2 transitioned from DOWN_DELAY to DOWN.]{lang="EN-US"}
+\*Feb 27 21:15:55:474 2013 Sysname IB/7/EVENT: -MDC=1; Backup interface GigabitEthernet1/0/4 came up.
 
-[\*Feb 27 21:15:54:136 2013 Sysname IB/7/EVENT: -MDC=1; Interface GigabitEthernet1/0/4 transitioned from STANDBY to UP_DELAY.]{lang="EN-US"}
+%Feb 27 21:15:55:475 2013 Sysname IFNET/3/PHY_UPDOWN: -MDC=1; GigabitEthernet1/0/4 link status is up.
 
-[\*Feb 27 21:15:55:474 2013 Sysname IB/7/EVENT: -MDC=1; Backup interface GigabitEthernet1/0/4 came up.]{lang="EN-US"}
+%Feb 27 21:15:55:475 2013 Sysname IFNET/5/LINK_UPDOWN: -MDC=1; Line protocol on the interface GigabitEthernet1/0/4 is up.
 
-[%Feb 27 21:15:55:475 2013 Sysname IFNET/3/PHY_UPDOWN: -MDC=1; GigabitEthernet1/0/4 link status is up.]{lang="EN-US"}
+\*Feb 27 21:16:03:914 2013 Sysname IB/7/EVENT: -MDC=1; UP_DELAY timer on backup interface GigabitEthernet1/0/4 expired.
 
-[%Feb 27 21:15:55:475 2013 Sysname IFNET/5/LINK_UPDOWN: -MDC=1; Line protocol on the interface GigabitEthernet1/0/4 is up.]{lang="EN-US"}
+\*Feb 27 21:16:03:914 2013 Sysname IB/7/EVENT: -MDC=1; Interface GigabitEthernet1/0/4 transitioned from UP_DELAY to UP.
 
-[\*Feb 27 21:16:03:914 2013 Sysname IB/7/EVENT: -MDC=1; UP_DELAY timer on backup interface GigabitEthernet1/0/4 expired.]{lang="EN-US"}
+*// 主接口报链路down事件，主接口的状态由UP切换到DOWN_DELAY，待主接口的DOWN_DELAY定时器超时后，主接口的状态由DOWN_DELAY切换到DOWN，备份接口由STANDBY切换到UP_DELAY，待备份接口上的UPDELAY定时器超时后，备份接口状态由UP_DELAY切换到UP*
 
-[\*Feb 27 21:16:03:914 2013 Sysname IB/7/EVENT: -MDC=1; Interface GigabitEthernet1/0/4 transitioned from UP_DELAY to UP.]{lang="EN-US"}
+\# 打开接口备份的Track项调试信息开关，配置接口GigabitEthernet1/0/4与Track项1关联时，将输出如下调试信息。
 
-[*[// ]{lang="EN-US"}*]{#struct_0_18628_x5113_135529510}*[主接口报链路]{style="font-family:宋体"}[down]{lang="EN-US"}[事件，主接口的状态由]{style="font-family:宋体"}[UP]{lang="EN-US"}[切换到]{style="font-family:宋体"}[DOWN_DELAY]{lang="EN-US"}[，待主接口的]{style="font-family:宋体"}[DOWN_DELAY]{lang="EN-US"}[定时器超时后，主接口的状态由]{style="font-family:宋体"}[DOWN_DELAY]{lang="EN-US"}[切换到]{style="font-family:宋体"}[DOWN]{lang="EN-US"}[，备份接口由]{style="font-family:宋体"}[STANDBY]{lang="EN-US"}[切换到]{style="font-family:宋体"}[UP_DELAY]{lang="EN-US"}[，待备份接口上的]{style="font-family:宋体"}[UPDELAY]{lang="EN-US"}[定时器超时后，备份接口状态由]{style="font-family:宋体"}[UP_DELAY]{lang="EN-US"}[切换到]{style="font-family:宋体"}[UP]{lang="EN-US"}*
+\<Sysname\> debugging standby track
 
-[ ]{lang="EN-US"}
+\<Sysname\> terminal monitor
 
-[[\# ]{lang="EN-US"}]{#struct_0_18628_x5113_191940871}[打开]{style="font-family:宋体"}[接口备份的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项调试信息开关，配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/4]{lang="EN-US"}[与]{style="font-family:宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[关联时，]{style="font-family:宋体"}[将输出如下调试信息。]{style="font-family:宋体"}
+\<Sysname\> terminal debugging
 
-[[\<Sysname\> debugging standby track]{lang="EN-US"}]{#struct_0_18628_x5113_868002168}
+\<Sysname\> system-view
 
-[\<Sysname\> terminal monitor]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/4
 
-[\<Sysname\> terminal debugging]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/4 backup track 1
 
-[\<Sysname\> system-view]{lang="EN-US"}
+\*Feb 27 21:20:46:614 2013 Sysname IB/7/TRACK: -MDC=1; Track add: Interface GigabitEthernet1/0/4 was associated with track entry 1.
 
-[\[Sysname\] interface gigabitethernet 1/0/4]{lang="EN-US"}
+\*Feb 27 21:20:46:616 2013 Sysname IB/7/TRACK: -MDC=1; Track modify: Track entry 1 associated with interface GigabitEthernet1/0/4 transitioned to Not ready.
 
-[\[Sysname-GigabitEthernet1/0/4\] backup track 1]{lang="EN-US"}
+*// 添加一个关联Track的备份接口，由于Track项当前未建立，Track项的状态为Not ready，此时备份接口的链路状态保持原始状态不变*
 
-[\*Feb 27 21:20:46:614 2013 Sysname IB/7/TRACK: -MDC=1; Track add: Interface GigabitEthernet1/0/4 was associated with track entry 1.]{lang="EN-US"}
+\# 配置Track项1跟踪的主链路为接口GigabitEthernet1/0/2时，将输出如下调试信息。
 
-[\*Feb 27 21:20:46:616 2013 Sysname IB/7/TRACK: -MDC=1; Track modify: Track entry 1 associated with interface GigabitEthernet1/0/4 transitioned to Not ready.]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/4 quit
 
-[*[// ]{lang="EN-US"}*]{#struct_0_18628_x5113_x1131346531}*[添加一个关联]{style="font-family:宋体"}[Track]{lang="EN-US"}[的备份接口，由于]{style="font-family:宋体"}[Track]{lang="EN-US"}[项当前未建立，]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态为]{style="font-family:宋体"}[Not ready]{lang="EN-US"}[，此时备份接口的链路状态保持原始状态不变]{style="font-family:宋体"}*
+Sysname track 1 interface GigabitEthernet1/0/2
 
-[[\# ]{lang="EN-US"}]{#struct_0_18628_x5113_1943550767}[配置]{style="font-family:宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[跟踪的主链路为接口]{style="font-family:
-宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[时，将输出如下调试信息。]{style="font-family:宋体"}
+\*Feb 27 21:37:00:144 2013 Sysname IB/7/TRACK: -MDC=1; Track modify: Track entry 1 associated with interface GigabitEthernet1/0/4 transitioned to Positive.
 
-[[\[Sysname-GigabitEthernet1/0/4\] quit]{lang="EN-US"}]{#struct_0_18628_x5113_x1733672147}
+%Feb 27 21:37:00:153 2013 Sysname IFNET/3/PHY_UPDOWN: -MDC=1; GigabitEthernet1/0/4 link status is down.
 
-[\[Sysname\] track 1 interface GigabitEthernet1/0/2]{lang="EN-US"}
+%Feb 27 21:37:00:154 2013 Sysname IFNET/5/LINK_UPDOWN: -MDC=1; Line protocol on the interface GigabitEthernet1/0/4 is down.
 
-[\*Feb 27 21:37:00:144 2013 Sysname IB/7/TRACK: -MDC=1; Track modify: Track entry 1 associated with interface GigabitEthernet1/0/4 transitioned to Positive.]{lang="EN-US"}
-
-[%Feb 27 21:37:00:153 2013 Sysname IFNET/3/PHY_UPDOWN: -MDC=1; GigabitEthernet1/0/4 link status is down.]{lang="EN-US"}
-
-[%Feb 27 21:37:00:154 2013 Sysname IFNET/5/LINK_UPDOWN: -MDC=1; Line protocol on the interface GigabitEthernet1/0/4 is down.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_18628_x5113_x388704962}*[新创建]{style="font-family:宋体"}[Track]{lang="EN-US"}[项关联时，由于]{style="font-family:宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[跟踪的主接口]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[处于]{style="font-family:宋体"}[UP]{lang="EN-US"}[状态，]{style="font-family:宋体"}[Track]{lang="EN-US"}[状态变为]{style="font-family:宋体"}[positive]{lang="EN-US"}[，此时需要将备份接口]{style="font-family:宋体"}[GigabitEthernet1/0/4 shutdown]{lang="EN-US"}[，备份接口状态转换为]{style="font-family:
-宋体"}[STANDBY]{lang="EN-US"}[状态]{style="font-family:宋体"}*
+*// 新创建Track项关联时，由于Track项1跟踪的主接口GigabitEthernet1/0/2处于UP状态，Track状态变为positive，此时需要将备份接口GigabitEthernet1/0/4 shutdown，备份接口状态转换为STANDBY状态*

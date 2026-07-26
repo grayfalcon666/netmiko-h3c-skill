@@ -1,748 +1,681 @@
-::: {#-589257817 .myid}
-[]{#_Toc404788728}[]{#struct_0_x1345_19630_1932304756}[]{#_Toc205710794}[]{#_Toc135644129}[]{#_Toc146504496}[]{#_Toc146504497}[]{#_Toc146504498}[]{#_Toc146504499}[]{#_Toc146504500}[]{#_Toc146504501}[]{#_Toc146504502}[]{#_Toc146504503}[]{#_Toc146504504}[]{#_Toc146504505}[]{#_Toc146504506}[]{#_Toc146504510}[]{#_Toc146504514}[]{#_Toc146504542}[]{#_Toc146504544}[]{#_Toc146504545}[]{#_Toc146504546}[]{#_Toc146504547}[]{#_Toc146504548}[]{#_Toc146504549}[]{#_Toc146504550}[]{#_Toc146504551}[]{#_Toc146504552}[]{#_Toc146504553}[]{#_Toc146504554}[]{#_Toc146504555}[]{#_Toc146504559}[]{#_Toc146504562}[]{#_Toc146504565}[]{#_Toc146504566}[]{#_Toc146504567}[]{#_Toc146504568}[]{#_Toc146504569}[]{#_Toc146504570}[]{#_Toc146504571}[]{#_Toc146504572}[]{#_Toc146504573}[]{#_Toc146504574}[]{#_Toc146504575}[]{#_Toc146504576}[]{#_Toc146504577}[]{#_Toc146504578}[]{#_Toc146504579}[]{#_Toc146504580}[]{#_Toc146504581}[]{#_Toc146504583}[]{#_Toc146504584}[]{#_Toc146504587}[]{#_Toc146504588}[]{#_Toc146504589}[]{#_Toc146504591}[]{#_Toc146504592}[]{#_Toc146504595}[]{#_Toc146504596}[]{#_Toc146504597}[]{#_Toc146504600}[]{#_Toc146504603}[]{#_Toc146504604}[]{#_Toc146504605}[]{#_Toc146504606}[]{#_Toc146504607}[]{#_Toc146504608}[]{#_Toc146504609}[]{#_Toc146504610}[]{#_Toc146504611}[]{#_Toc146504612}[]{#_Toc146504613}[]{#_Toc146504614}[]{#_Toc146504615}[]{#_Toc146504616}[]{#_Toc146504617}[]{#_Toc146504621}[]{#_Toc146504625}[]{#_Toc146504629}[]{#_Toc146504632}[]{#_Toc146504633}[]{#_Toc146504635}[]{#_Toc146504636}[]{#_Toc146504637}[]{#_Toc146504638}[]{#_Toc146504639}[]{#_Toc146504640}[]{#_Toc146504641}[]{#_Toc146504642}[]{#_Toc146504643}[]{#_Toc146504644}[]{#_Toc146504645}[]{#_Toc146504646}[]{#_Toc146504649}[]{#_Toc146504652}[]{#_Toc146504653}[]{#_Toc146504655}[]{#_Toc146504656}[]{#_Toc146504657}[]{#_Toc146504658}[]{#_Toc146504659}[]{#_Toc146504660}[]{#_Toc146504661}[]{#_Toc146504662}[]{#_Toc146504663}[]{#_Toc146504664}[]{#_Toc146504665}[]{#_Toc146504666}[]{#_Toc146504667}[]{#_Toc146504670}[]{#_Toc146504673}[]{#_Toc146504677}[]{#_Toc146504679}[]{#_Toc146504680}[]{#_Toc146504682}[]{#_Toc146504683}[]{#_Toc146504684}[]{#_Toc146504685}[]{#_Toc146504686}[]{#_Toc146504687}[]{#_Toc146504688}[]{#_Toc146504690}[]{#_Toc146504691}[]{#_Toc146504700}[]{#_Toc146504701}[]{#_Toc146504726}[]{#_Toc146504728}[]{#_Toc146504730}[]{#_Toc146504731}[]{#_Toc146504732}[]{#_Toc146504733}[]{#_Toc146504734}[]{#_Toc146504735}[]{#_Toc146504736}[]{#_Toc146504737}[]{#_Hlt6909217}[]{#_Toc146504740}[]{#_Toc146504741}[]{#_Toc146504749}[]{#_Toc146504750}[]{#_Toc146504751}[]{#_Toc146504800}
 
 **IPv6静态路由 \-- IPv6静态路由配置命令 \-- delete ipv6 static-routes all**
 
 ------------------------------------------------------------------------
 
-[**[delete ipv6 static-routes all]{lang="EN-US"}**]{#struct_0_x1345_19630_660488911}[命令用来删除所有]{style="font-family:
-宋体"}[IPv6]{lang="EN-US"}[静态路由。]{style="font-family:宋体"}
+**[delete ipv6 static-routes all**]命令用来删除所有IPv6静态路由。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1345_19630_670245086}
+【命令】
 
-[**[delete ipv6 ]{lang="EN-US"}**[\[ **vpn-instance** *vpn-instance-name* \] **static-routes all**]{lang="EN-US"}]{#struct_0_x1345_19630_1835992442}
+**[delete ipv6 ** **vpn-instance** *vpn-instance-name* ] **static-routes all**
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1345_19630_x52495058}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1345_19630_x1975778876}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1345_19630_x368204841}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1345_19630_x783486198}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1345_19630_1263480360}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1345_19630_x1873490417}
+【参数】
 
-[**[vpn-instance]{lang="EN-US"}**[ *vpn-instance-name*]{lang="EN-US"}]{#struct_0_x1345_19630_2062877343}[：]{style="font-family:宋体"}[删除指定]{style="font-family:宋体"}[VPN]{lang="EN-US"}[的所]{style="font-family:宋体"}[有]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[静]{style="font-family:宋体"}[态路由。]{style="font-family:宋体"}*[vpn-instance-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}[如果不指定该参数，则删除公网实例下的所有]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[静态路由。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[vpn-instance** *vpn-instance-name*]：删除指定VPN的所有IPv6静态路由。*vpn-instance-name*表示MPLS L3VPN的VPN实例名称，为1～31个字符的字符串，区分大小写。如果不指定该参数，则删除公网实例下的所有IPv6静态路由。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1345_19630_x791382396}
+【使用指导】
 
-[[使用本命令删除]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_x1345_19630_356793508}[静态路由时，系统会提示确认，确认后才会删除所配置的所有]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[静态路由。]{style="font-family:宋体"}
+使用本命令删除IPv6静态路由时，系统会提示确认，确认后才会删除所配置的所有IPv6静态路由。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1345_19630_458199361}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1345_19630_x836309877}[删除所有]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[静态路由。]{style="font-family:宋体"}
+\# 删除所有IPv6静态路由。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1345_19630_x2126966154}
+\<Sysname\> system-view
 
-[\[Sysname\] delete ipv6 static-routes all]{lang="EN-US"}
+Sysname delete ipv6 static-routes all
 
-[This will erase all IPv6 static routes and their configurations, you must reconf]{lang="EN-US"}
+This will erase all IPv6 static routes and their configurations, you must reconf
 
-[igure all static routes.]{lang="EN-US"}
+igure all static routes.
 
-[Are you sure?\[Y/N\]:y]{lang="EN-US"}
+Are you sure?[Y/N:y]
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1345_19630_x1988982319}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ipv6 route-static]{lang="EN-US"}**]{#struct_0_x1345_19630_1530593270}
-:::
-
-::: {#-790366003 .myid}
-[]{#_Toc205710795}[]{#_Toc135644130}[]{#_Toc86723765}[]{#_Toc77992821}[]{#_Toc65740890}[]{#_Toc53707319}[]{#_Toc52486322}[]{#_Toc404788729}[]{#struct_0_x1345_19630_x1874080244}[]{#_Toc343694578}[]{#_Toc340320638}[]{#_Toc337654555}
+·**ipv6 route-static**
 
 **IPv6静态路由 \-- IPv6静态路由配置命令 \-- display ipv6 route-static nib**
 
 ------------------------------------------------------------------------
 
-[**[display ipv6 route-static nib]{lang="EN-US"}**]{#struct_0_x1345_19630_364478356}[命令用来显示]{style="font-family:
-宋体"}[IPv6]{lang="EN-US"}[静态路由下一跳信息。]{style="font-family:宋体"}
+**[display ipv6 route-static nib**]命令用来显示IPv6静态路由下一跳信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1345_19630_x648755487}
+【命令】
 
-[**[display ipv6 route-static nib ]{lang="EN-US"}**[\[ *nib-id* \] \[ **verbose** \]]{lang="EN-US"}]{#struct_0_x1345_19630_x491474009}
+**[display ipv6 route-static nib ** *nib-id* ]  **verbose**
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1345_19630_1843722385}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1345_19630_844192311}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1345_19630_x1391597078}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1345_19630_x30052570}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1345_19630_1045706826}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1345_19630_x513177643}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1345_19630_x1874014708}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1345_19630_x1251160514}
+【参数】
 
-[*[nib-id]{lang="EN-US"}*]{#struct_0_x1345_19630_167460604}[：路由邻居]{style="font-family:宋体"}[ID]{lang="EN-US"}[值，取值范围]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[FFFFFFFF]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[nib-id*]：路由邻居ID值，取值范围1～FFFFFFFF。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_x1345_19630_x790826910}[：显示详细信息。如果未指定本参数，则显示概要信息。]{style="font-family:宋体"}
+**[verbose**]：显示详细信息。如果未指定本参数，则显示概要信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1345_19630_347541471}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1345_19630_2078605172}[显示]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[静态路由邻居信息与下一跳信息。]{style="font-family:宋体"}
+\# 显示IPv6静态路由邻居信息与下一跳信息。
 
-[[\<Sysname\> display ipv6 route-static nib]{lang="EN-US"}]{#struct_0_x1345_19630_x1874211316}
+\<Sysname\> display ipv6 route-static nib
 
-[Total number of nexthop(s): 35]{lang="EN-US"}
+Total number of nexthop(s): 35
 
-[ ]{lang="EN-US"}
+      NibID: 0x21000000        Sequence: 0
 
-[      NibID: 0x21000000        Sequence: 0]{lang="EN-US"}
+       Type: 0x41               Flushed: Yes
 
-[       Type: 0x41               Flushed: Yes]{lang="EN-US"}
+   UserKey0: 0x0                VrfNthp: 0
 
-[   UserKey0: 0x0                VrfNthp: 0]{lang="EN-US"}
+   UserKey1: 0x0                Nexthop: 2::3
 
-[   UserKey1: 0x0                Nexthop: 2::3]{lang="EN-US"}
+    IFIndex: 0x0              LocalAddr: ::
 
-[    IFIndex: 0x0              LocalAddr: ::]{lang="EN-US"}
+   TopoNthp: Invalid
 
-[   TopoNthp: Invalid]{lang="EN-US"}
+      NibID: 0x21000001        Sequence: 1
 
-[ ]{lang="EN-US"}
+       Type: 0x41               Flushed: Yes
 
-[      NibID: 0x21000001        Sequence: 1]{lang="EN-US"}
+   UserKey0: 0x0                VrfNthp: 0
 
-[       Type: 0x41               Flushed: Yes]{lang="EN-US"}
+   UserKey1: 0x0                Nexthop: 3::4
 
-[   UserKey0: 0x0                VrfNthp: 0]{lang="EN-US"}
+    IFIndex: 0x0              LocalAddr: ::
 
-[   UserKey1: 0x0                Nexthop: 3::4]{lang="EN-US"}
+   TopoNthp: Invalid
 
-[    IFIndex: 0x0              LocalAddr: ::]{lang="EN-US"}
+\...\...（省略部分显示信息）
 
-[   TopoNthp: Invalid]{lang="EN-US"}
+表1-1 display ipv6 route-static nib命令显示信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[\...\...]{lang="EN-US"}[（省略部分显示信息）]{style="font-family:
-宋体"}
+描述
 
-[]{#struct_0_x1345_19630_x485640336}[]{#_Ref343698066}[]{#表NBR_2}[表1-1 ]{lang="EN-US"}[display ipv6 route-static nib]{lang="EN-US"}[命令显示信息描述表]{style="font-family:黑体"}
+Total number of nexthop(s)
 
-[]{#table_struct_0_1965965543}[[字段]{style="font-family:黑体"}]{#struct_0_x1345_19630_1095320873}
-:::
+总的NIB个数
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1345_19630_x1196271409}
+NibID
 
-[[Total number of nexthop(s)]{lang="EN-US"}]{#struct_0_x1345_19630_x720959892}
+NIB ID号
 
-[[总的]{style="font-family:宋体"}[NIB]{lang="EN-US"}]{#struct_0_x1345_19630_76946230}[个数]{style="font-family:宋体"}
+Sequence
 
-[[NibID]{lang="EN-US"}]{#struct_0_x1345_19630_x458692013}
+NIB序列号
 
-[[NIB ID]{lang="EN-US"}]{#struct_0_x1345_19630_x1874145780}[号]{style="font-family:宋体"}
+Type
 
-[[Sequence]{lang="EN-US"}]{#struct_0_x1345_19630_233512551}
+NIB类型
 
-[[NIB]{lang="EN-US"}]{#struct_0_x1345_19630_x897728207}[序列号]{style="font-family:宋体"}
+Flushed
 
-[[Type]{lang="EN-US"}]{#struct_0_x1345_19630_357990768}
+是否下刷FIB
 
-[[NIB]{lang="EN-US"}]{#struct_0_x1345_19630_1975743100}[类型]{style="font-family:宋体"}
+UserKey0
 
-[[Flushed]{lang="EN-US"}]{#struct_0_x1345_19630_1900456257}
+NIB协议保留数据1
 
-[[是否下刷]{style="font-family:宋体"}[FIB]{lang="EN-US"}]{#struct_0_x1345_19630_515968151}
+UserKey1
 
-[[UserKey0]{lang="EN-US"}]{#struct_0_x1345_19630_x1873818100}
+NIB协议保留数据2
 
-[[NIB]{lang="EN-US"}]{#struct_0_x1345_19630_1776054961}[协议保留数据]{style="font-family:宋体"}[1]{lang="EN-US"}
+VrfNthp
 
-[[UserKey1]{lang="EN-US"}]{#struct_0_x1345_19630_x1096153224}
+下一跳所在VPN
 
-[[NIB]{lang="EN-US"}]{#struct_0_x1345_19630_x1241727002}[协议保留数据]{style="font-family:宋体"}[2]{lang="EN-US"}
+Nexthop
 
-[[VrfNthp]{lang="EN-US"}]{#struct_0_x1345_19630_x146037262}
+下一跳信息
 
-[[下一跳所在]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_x1345_19630_x895891103}
+IFIndex
 
-[[Nexthop]{lang="EN-US"}]{#struct_0_x1345_19630_x1873752564}
+接口索引
 
-[[下一跳信息]{style="font-family:宋体"}]{#struct_0_x1345_19630_x837758547}
+LocalAddr
 
-[[IFIndex]{lang="EN-US"}]{#struct_0_x1345_19630_x189954166}
+本地接口地址
 
-[[接口索引]{style="font-family:宋体"}]{#struct_0_x1345_19630_x338749515}
+TopoNthp
 
-[[LocalAddr]{lang="EN-US"}]{#struct_0_x1345_19630_734860020}
+下一跳所在拓扑，0为公网拓扑（目前IPv6不支持子拓扑，显示为Invalid）
 
-[[本地接口地址]{style="font-family:宋体"}]{#struct_0_x1345_19630_x446682838}
+\# 显示IPv6静态路由邻居与下一跳的详细信息。
 
-[[TopoNthp]{lang="EN-US"}]{#struct_0_x1345_19630_987222119}
+\<Sysname\> display ipv6 route-static nib verbose
 
-[[下一跳所在拓扑，]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_x1345_19630_987156583}[为公网拓扑（目前]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[不支持子拓扑，显示为]{style="font-family:宋体"}[Invalid]{lang="EN-US"}[）]{style="font-family:宋体"}
+Total number of nexthop(s): 35
 
-[ ]{lang="EN-US"}
+      NibID: 0x21000000        Sequence: 0
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1345_19630_x1873949172}[显示]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[静态路由邻居与下一跳的详细信息。]{style="font-family:宋体"}
+       Type: 0x41               Flushed: Yes
 
-[[\<Sysname\> display ipv6 route-static nib verbose]{lang="EN-US"}]{#struct_0_x1345_19630_x1873883636}
+   UserKey0: 0x0                VrfNthp: 0
 
-[Total number of nexthop(s): 35]{lang="EN-US"}
+   UserKey1: 0x0                Nexthop: 2::3
 
-[ ]{lang="EN-US"}
+    IFIndex: 0x0              LocalAddr: ::
 
-[      NibID: 0x21000000        Sequence: 0]{lang="EN-US"}
+   TopoNthp: Invalid
 
-[       Type: 0x41               Flushed: Yes]{lang="EN-US"}
+     RefCnt: 1              FlushRefCnt: 0
 
-[   UserKey0: 0x0                VrfNthp: 0]{lang="EN-US"}
+       Flag: 0x12               Version: 1
 
-[   UserKey1: 0x0                Nexthop: 2::3]{lang="EN-US"}
+ 1 nexthop(s):
 
-[    IFIndex: 0x0              LocalAddr: ::]{lang="EN-US"}
+PrefixIndex: 0              OrigNexthop: 2::3
 
-[   TopoNthp: Invalid]{lang="EN-US"}
+  RelyDepth: 2              RealNexthop: ::
 
-[     RefCnt: 1              FlushRefCnt: 0]{lang="EN-US"}
+  Interface: NULL0            LocalAddr: ::
 
-[       Flag: 0x12               Version: 1]{lang="EN-US"}
+  TunnelCnt: 0                      Vrf: default-vrf
 
-[ 1 nexthop(s):]{lang="EN-US"}
+   TunnelID: N/A               Topology:
 
-[PrefixIndex: 0              OrigNexthop: 2::3]{lang="EN-US"}
+      NibID: 0x21000001        Sequence: 1
 
-[  RelyDepth: 2              RealNexthop: ::]{lang="EN-US"}
+       Type: 0x41               Flushed: Yes
 
-[  Interface: NULL0            LocalAddr: ::]{lang="EN-US"}
+   UserKey0: 0x0                VrfNthp: 0
 
-[  TunnelCnt: 0                      Vrf: default-vrf]{lang="EN-US"}
+   UserKey1: 0x0                Nexthop: 3::4
 
-[   TunnelID: N/A               Topology:]{lang="EN-US"}
+    IFIndex: 0x0              LocalAddr: ::
 
-[ ]{lang="EN-US"}
+   TopoNthp: Invalid
 
-[      NibID: 0x21000001        Sequence: 1]{lang="EN-US"}
+     RefCnt: 1              FlushRefCnt: 0
 
-[       Type: 0x41               Flushed: Yes]{lang="EN-US"}
+       Flag: 0x12               Version: 1
 
-[   UserKey0: 0x0                VrfNthp: 0]{lang="EN-US"}
+ 1 nexthop(s):
 
-[   UserKey1: 0x0                Nexthop: 3::4]{lang="EN-US"}
+PrefixIndex: 0              OrigNexthop: 3::4
 
-[    IFIndex: 0x0              LocalAddr: ::]{lang="EN-US"}
+  RelyDepth: 1              RealNexthop: ::
 
-[   TopoNthp: Invalid]{lang="EN-US"}
+  Interface: NULL0            LocalAddr: ::
 
-[     RefCnt: 1              FlushRefCnt: 0]{lang="EN-US"}
+  TunnelCnt: 0                      Vrf: default-vrf
 
-[       Flag: 0x12               Version: 1]{lang="EN-US"}
+   TunnelID: N/A               Topology:
 
-[ 1 nexthop(s):]{lang="EN-US"}
+\...\...（省略部分显示信息）
 
-[PrefixIndex: 0              OrigNexthop: 3::4]{lang="EN-US"}
+表1-2 display ipv6 route-static nib verbose命令显示信息描述表
 
-[  RelyDepth: 1              RealNexthop: ::]{lang="EN-US"}
+字段
 
-[  Interface: NULL0            LocalAddr: ::]{lang="EN-US"}
+描述
 
-[  TunnelCnt: 0                      Vrf: default-vrf]{lang="EN-US"}
+*[x* nexthop(s)]
 
-[   TunnelID: N/A               Topology:]{lang="EN-US"}
+下一跳具体值（前面数值表示下一跳个数）
 
-[ ]{lang="EN-US"}
+Tnl-Policy
 
-[\...\...]{lang="EN-US"}[（省略部分显示信息）]{style="font-family:
-宋体"}
+隧道策略
 
-[]{#_Toc343694579}[]{#_Toc340320637}[]{#_Toc337654554}[]{#struct_0_x1345_19630_x414280191}[[表1-2 ]{lang="EN-US"}[display ipv6 route-static nib verbose]{lang="EN-US"}]{#_Ref343698076}[命令显示信息描述表]{style="font-family:黑体"}
+PrefixIndex
 
-[]{#table_struct_0_1994750558}[[字段]{style="font-family:黑体"}]{#struct_0_x1345_19630_x971386382}
+等价时下一跳序号
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1345_19630_x1764508216}
+Vrf
 
-[*[x]{lang="EN-US"}*[ nexthop(s)]{lang="EN-US"}]{#struct_0_x1345_19630_882269879}
+实例名
 
-[[下一跳具体值（前面数值表示下一跳个数）]{style="font-family:宋体"}]{#struct_0_x1345_19630_x2024345080}
+OrigNexthop
 
-[[Tnl-Policy]{lang="EN-US"}]{#struct_0_x1345_19630_x228344193}
+原始下一跳
 
-[[隧道策略]{style="font-family:宋体"}]{#struct_0_x1345_19630_435367572}
+RealNexthop
 
-[[PrefixIndex]{lang="EN-US"}]{#struct_0_x1345_19630_x1873555956}
+真实下一跳
 
-[[等价时下一跳序号]{style="font-family:宋体"}]{#struct_0_x1345_19630_x1603147653}
+Interface
 
-[[Vrf]{lang="EN-US"}]{#struct_0_x1345_19630_x2059432843}
+出接口
 
-[[实例名]{style="font-family:宋体"}]{#struct_0_x1345_19630_x135747845}
+localAddr
 
-[[OrigNexthop]{lang="EN-US"}]{#struct_0_x1345_19630_451052769}
+本地接口地址
 
-[[原始下一跳]{style="font-family:宋体"}]{#struct_0_x1345_19630_1846306008}
+RelyDepth
 
-[[RealNexthop]{lang="EN-US"}]{#struct_0_x1345_19630_x1873490420}
+迭代深度
 
-[[真实下一跳]{style="font-family:宋体"}]{#struct_0_x1345_19630_x309972260}
+TunnelCnt
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1345_19630_504957067}
+迭代到隧道的个数
 
-[[出接口]{style="font-family:宋体"}]{#struct_0_x1345_19630_679031610}
+TunnelID
 
-[[localAddr]{lang="EN-US"}]{#struct_0_x1345_19630_1875911610}
+迭代到隧道的ID
 
-[[本地接口地址]{style="font-family:宋体"}]{#struct_0_x1345_19630_151043910}
+Topology
 
-[[RelyDepth]{lang="EN-US"}]{#struct_0_x1345_19630_x1874080243}
+拓扑名称，base为公网拓扑（目前IPv6不支持子拓扑，显示为空）
 
-[[迭代深度]{style="font-family:宋体"}]{#struct_0_x1345_19630_x38806171}
+RefCnt
 
-[[TunnelCnt]{lang="EN-US"}]{#struct_0_x1345_19630_x1610565472}
+下一跳信息的引用计数
 
-[[迭代到隧道的个数]{style="font-family:宋体"}]{#struct_0_x1345_19630_x1509057275}
+FlushRefCnt
 
-[[TunnelID]{lang="EN-US"}]{#struct_0_x1345_19630_1712291023}
+下一跳信息的下刷引用计数
 
-[[迭代到隧道的]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1345_19630_1965134025}
+Flag
 
-[[Topology]{lang="EN-US"}]{#struct_0_x1345_19630_986959975}
+下一跳信息的标志位
 
-[[拓扑名称，]{style="font-family:宋体"}[base]{lang="EN-US"}]{#struct_0_x1345_19630_962740497}[为公网拓扑（目前]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[不支持子拓扑，显示为空）]{style="font-family:宋体"}
+Version
 
-[[RefCnt]{lang="EN-US"}]{#struct_0_x1345_19630_x1874014707}
-
-[[下一跳信息的引用计数]{style="font-family:宋体"}]{#struct_0_x1345_19630_1477722841}
-
-[[FlushRefCnt]{lang="EN-US"}]{#struct_0_x1345_19630_x393798176}
-
-[[下一跳信息的下刷引用计数]{style="font-family:宋体"}]{#struct_0_x1345_19630_1295155567}
-
-[[Flag]{lang="EN-US"}]{#struct_0_x1345_19630_x1874211315}
-
-[[下一跳信息的标志位]{style="font-family:宋体"}]{#struct_0_x1345_19630_x2051724277}
-
-[[Version]{lang="EN-US"}]{#struct_0_x1345_19630_22973976}
-
-[[下一跳信息的版本号]{style="font-family:宋体"}]{#struct_0_x1345_19630_1779744039}
-
-[ ]{lang="EN-US"}
-
-::: {#-2124202930 .myid}
-[]{#_Toc404788730}[]{#struct_0_x1345_19630_x518453490}
+下一跳信息的版本号
 
 **IPv6静态路由 \-- IPv6静态路由配置命令 \-- display ipv6 route-static routing-table**
 
 ------------------------------------------------------------------------
 
-[**[display ipv6 route-static routing-table]{lang="EN-US"}**]{#struct_0_x1345_19630_1305572564}[命令用来显示]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[静态路由表信息。]{style="font-family:宋体"}
+**[display ipv6 route-static routing-table**]命令用来显示IPv6静态路由表信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1345_19630_x1874145779}
+【命令】
 
-[**[display ipv6 route-static routing-table]{lang="EN-US"}**[ \[ **vpn-instance** *vpn-instance-name* \] \[ *ipv6-address prefix-length* \]]{lang="EN-US"}]{#struct_0_x1345_19630_x975489062}
+**[display ipv6 route-static routing-table** [ **vpn-instance** *vpn-instance-name*   *ipv6-address prefix-length* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1345_19630_x1551177454}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1345_19630_x1886759643}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1345_19630_950539947}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1345_19630_x188916856}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1345_19630_1591619202}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1345_19630_892485367}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1345_19630_x35148731}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1345_19630_1021231691}
+【参数】
 
-[**[vpn-instance ]{lang="EN-US"}***[vpn-instance-name]{lang="EN-US"}*]{#struct_0_x1345_19630_x1873818099}[：显示指定]{style="font-family:宋体"}[VPN]{lang="EN-US"}[的信息。]{style="font-family:宋体"}*[vpn-instance-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果未指定本参数，则显示公网的信息。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[vpn-instance ***vpn-instance-name*]：显示指定VPN的信息。*vpn-instance-name*表示MPLS L3VPN的VPN实例名称，为1～31个字符的字符串，区分大小写。如果未指定本参数，则显示公网的信息。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[*[ipv6-address]{lang="EN-US"}*]{#struct_0_x1345_19630_x1308468931}[：目的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[ipv6-address*]：目的IPv6地址。
 
-[*[prefix-length]{lang="EN-US"}*]{#struct_0_x1345_19630_x1248060652}[：前缀长度，]{style="font-family:宋体"}[取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[128]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[prefix-length*]：前缀长度，取值范围为0～128。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1345_19630_831293195}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1345_19630_x1255429315}[显示]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[静态路由表信息。]{style="font-family:宋体"}
+\# 显示IPv6静态路由表信息。
 
-[[\<Sysname\> display ipv6 route-static routing-table]{lang="EN-US"}]{#struct_0_x1345_19630_x1873752563}
+\<Sysname\> display ipv6 route-static routing-table
 
-[Total number of routes: 5]{lang="EN-US"}
+Total number of routes: 5
 
-[ ]{lang="EN-US"}
+Status: \* - valid
 
-[Status: \* - valid]{lang="EN-US"}
+\*Destination: 1::1/128
 
-[ ]{lang="EN-US"}
+       NibID: 0x21000000        NextHop: 2::2
 
-[\*Destination: 1::1/128]{lang="EN-US"}
+   MainNibID: N/A             BkNextHop: N/A
 
-[       NibID: 0x21000000        NextHop: 2::2]{lang="EN-US"}
+     BkNibID: N/A             Interface: GigabitEthernet1/0/1
 
-[   MainNibID: N/A             BkNextHop: N/A]{lang="EN-US"}
+     TableID: 0xa           BkInterface: N/A
 
-[     BkNibID: N/A             Interface: GigabitEthernet1/0/1]{lang="EN-US"}
+        Flag: 0x80d0a          BfdSrcIp: N/A
 
-[     TableID: 0xa           BkInterface: N/A]{lang="EN-US"}
+     DbIndex: 0x3            BfdIfIndex: 0x0
 
-[        Flag: 0x80d0a          BfdSrcIp: N/A]{lang="EN-US"}
+        Type: Normal        BfdVrfIndex: 0
 
-[     DbIndex: 0x3            BfdIfIndex: 0x0]{lang="EN-US"}
+  TrackIndex: 0xffffffff          Label: NULL
 
-[        Type: Normal        BfdVrfIndex: 0]{lang="EN-US"}
+  Preference: 60            vrfIndexDst: 0
 
-[  TrackIndex: 0xffffffff          Label: NULL]{lang="EN-US"}
+     BfdMode: N/A            vrfIndexNH: 0
 
-[  Preference: 60            vrfIndexDst: 0]{lang="EN-US"}
+   Permanent: 0                     Tag: 0
 
-[     BfdMode: N/A            vrfIndexNH: 0]{lang="EN-US"}
+\*Destination: 1::1234/128
 
-[   Permanent: 0                     Tag: 0]{lang="EN-US"}
+      NibID: 0x21000000        NextHop: 2::2
 
-[ ]{lang="EN-US"}
+   MainNibID: N/A             BkNextHop: N/A
 
-[\*Destination: 1::1234/128]{lang="EN-US"}
+     BkNibID: N/A             Interface: NULL0
 
-[      NibID: 0x21000000        NextHop: 2::2]{lang="EN-US"}
+     TableID: 0xa           BkInterface: N/A
 
-[   MainNibID: N/A             BkNextHop: N/A]{lang="EN-US"}
+        Flag: 0x80d0a          BfdSrcIp: N/A
 
-[     BkNibID: N/A             Interface: NULL0]{lang="EN-US"}
+     DbIndex: 0x1            BfdIfIndex: 0x0
 
-[     TableID: 0xa           BkInterface: N/A]{lang="EN-US"}
+        Type: Normal        BfdVrfIndex: 0
 
-[        Flag: 0x80d0a          BfdSrcIp: N/A]{lang="EN-US"}
+  TrackIndex: 0xffffffff          Label: NULL
 
-[     DbIndex: 0x1            BfdIfIndex: 0x0]{lang="EN-US"}
+  Preference: 60            vrfIndexDst: 0
 
-[        Type: Normal        BfdVrfIndex: 0]{lang="EN-US"}
+     BfdMode: N/A            vrfIndexNH: 0
 
-[  TrackIndex: 0xffffffff          Label: NULL]{lang="EN-US"}
+   Permanent: 0                     Tag: 0
 
-[  Preference: 60            vrfIndexDst: 0]{lang="EN-US"}
+\...\...（省略部分显示信息）
 
-[     BfdMode: N/A            vrfIndexNH: 0]{lang="EN-US"}
+\# 显示目的IPv6地址为1::1/128的IPv6静态路由信息。
 
-[   Permanent: 0                     Tag: 0]{lang="EN-US"}
+\<Sysname\> display ipv6 route-static routing-table 1::1 128
 
-[ ]{lang="EN-US"}
+\*Destination: 1::1/128
 
-[\...\...]{lang="EN-US"}[（省略部分显示信息）]{style="font-family:
-宋体"}
+       NibID: 0x21000001        NextHop: 2::2
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1345_19630_1534894448}[显示目的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1::1/128]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[静态路由信息。]{style="font-family:宋体"}
+   MainNibID: N/A             BkNextHop: N/A
 
-[[\<Sysname\> display ipv6 route-static routing-table 1::1 128]{lang="EN-US"}]{#struct_0_x1345_19630_x1873949171}
+     BkNibID: N/A             Interface: GigabitEthernet1/0/1
 
-[ ]{lang="EN-US"}
+     TableID: 0xa           BkInterface: N/A
 
-[\*Destination: 1::1/128]{lang="EN-US"}
+        Flag: 0x80d0b          BfdSrcIp: N/A
 
-[       NibID: 0x21000001        NextHop: 2::2]{lang="EN-US"}
+     DbIndex: 0x2            BfdIfIndex: 0x0
 
-[   MainNibID: N/A             BkNextHop: N/A]{lang="EN-US"}
+        Type: Normal        BfdVrfIndex: 0
 
-[     BkNibID: N/A             Interface: GigabitEthernet1/0/1]{lang="EN-US"}
+  TrackIndex: 0xffffffff          Label: NULL
 
-[     TableID: 0xa           BkInterface: N/A]{lang="EN-US"}
+  Preference: 60            vrfIndexDst: 0
 
-[        Flag: 0x80d0b          BfdSrcIp: N/A]{lang="EN-US"}
+     BfdMode: N/A            vrfIndexNH: 0
 
-[     DbIndex: 0x2            BfdIfIndex: 0x0]{lang="EN-US"}
+   Permanent: 0                     Tag: 429496729
 
-[        Type: Normal        BfdVrfIndex: 0]{lang="EN-US"}
+表1-3 display ipv6 route-static routing-table命令显示信息描述表
 
-[  TrackIndex: 0xffffffff          Label: NULL]{lang="EN-US"}
+字段
 
-[  Preference: 60            vrfIndexDst: 0]{lang="EN-US"}
+描述
 
-[     BfdMode: N/A            vrfIndexNH: 0]{lang="EN-US"}
+Total number of routes
 
-[   Permanent: 0                     Tag: 429496729]{lang="EN-US"}
+总的路由条数
 
-[[表1-3 ]{lang="EN-US"}[display ipv6 route-static routing-table]{lang="EN-US"}]{#struct_0_x1345_19630_1339265693}[命令显示信息描述表]{style="font-family:黑体"}
+Destination
 
-[]{#table_struct_0_1990425712}[[字段]{style="font-family:黑体"}]{#struct_0_x1345_19630_1171508813}
-:::
+目的地址/掩码
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1345_19630_x1399877747}
+NibID
 
-[[Total number of routes]{lang="EN-US"}]{#struct_0_x1345_19630_2139252546}
+下一跳信息ID
 
-[[总的路由条数]{style="font-family:宋体"}]{#struct_0_x1345_19630_496169354}
+MainNibID
 
-[[Destination]{lang="EN-US"}]{#struct_0_x1345_19630_483892572}
+FRR静态路由主下一跳信息ID
 
-[[目的地址]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1345_19630_x1490962486}[掩码]{style="font-family:宋体"}
+BkNibID
 
-[[NibID]{lang="EN-US"}]{#struct_0_x1345_19630_x1873883635}
+FRR静态路由备下一跳信息ID
 
-[[下一跳信息]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1345_19630_x817564718}
+NextHop
 
-[[MainNibID]{lang="EN-US"}]{#struct_0_x1345_19630_1669833963}
+此路由的下一跳地址
 
-[[FRR]{lang="EN-US"}]{#struct_0_x1345_19630_x845303654}[静态路由主下一跳信息]{style="font-family:宋体"}[ID]{lang="EN-US"}
+BkNextHop
 
-[[BkNibID]{lang="EN-US"}]{#struct_0_x1345_19630_x876700585}
+此路由的备份下一跳地址
 
-[[FRR]{lang="EN-US"}]{#struct_0_x1345_19630_18875050}[静态路由备下一跳信息]{style="font-family:宋体"}[ID]{lang="EN-US"}
+Interface
 
-[[NextHop]{lang="EN-US"}]{#struct_0_x1345_19630_x1873555955}
+出接口，即到该目的网段的数据包将从此接口发出
 
-[[此路由的下一跳地址]{style="font-family:宋体"}]{#struct_0_x1345_19630_1125735702}
+BkInterface
 
-[[BkNextHop]{lang="EN-US"}]{#struct_0_x1345_19630_x508504658}
+备份出接口
 
-[[此路由的备份下一跳地址]{style="font-family:宋体"}]{#struct_0_x1345_19630_1539818417}
+TableID
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1345_19630_1751365867}
+路由所在的表ID
 
-[[出接口，即到该目的网段的数据包将从此接口发出]{style="font-family:宋体"}]{#struct_0_x1345_19630_x1968579026}
+Flag
 
-[[BkInterface]{lang="EN-US"}]{#struct_0_x1345_19630_x1873490419}
+路由标志位
 
-[[备份出接口]{style="font-family:宋体"}]{#struct_0_x1345_19630_1612538649}
+DbIndex
 
-[[TableID]{lang="EN-US"}]{#struct_0_x1345_19630_573811029}
+路由所在DB的DB索引
 
-[[路由所在的表]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1345_19630_851969022}
+Type
 
-[[Flag]{lang="EN-US"}]{#struct_0_x1345_19630_x1486545271}
+路由类型：
 
-[[路由标志位]{style="font-family:宋体"}]{#struct_0_x1345_19630_x315086920}
+·Normal：普通类型的静态路由
 
-[[DbIndex]{lang="EN-US"}]{#struct_0_x1345_19630_x307996299}
+·DHCP：DHCP类型的静态路由
 
-[[路由所在]{style="font-family:宋体"}[DB]{lang="EN-US"}]{#struct_0_x1345_19630_1447680774}[的]{style="font-family:宋体"}[DB]{lang="EN-US"}[索引]{style="font-family:宋体"}
+·NAT：NAT类型的静态路由
 
-[[Type]{lang="EN-US"}]{#struct_0_x1345_19630_977224589}
+BfdSrcIp
 
-[[路由类型：]{style="font-family:宋体"}]{#struct_0_x1345_19630_1891872938}
+BFD非直连会话源地址
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Normal]{lang="EN-US"}]{#struct_0_x1345_19630_x443650448}[：普通类型的静态路由]{lang="EN-US" style="font-family:宋体"}
+BfdIfIndex
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[DHCP]{lang="EN-US"}]{#struct_0_x1345_19630_x307930763}[：]{style="font-family:宋体"}[DHCP]{lang="EN-US"}[类型的静态路由]{style="font-family:宋体"}
+BFD使用的接口索引
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[NAT]{lang="EN-US"}]{#struct_0_x1345_19630_1488056769}[：]{style="font-family:宋体"}[NAT]{lang="EN-US"}[类型的静态路由]{style="font-family:宋体"}
+BfdVrfIndex
 
-[[BfdSrcIp]{lang="EN-US"}]{#struct_0_x1345_19630_1190355118}
+BFD所在VPN实例索引
 
-[[BFD]{lang="EN-US"}]{#struct_0_x1345_19630_728872610}[非直连会话源地址]{style="font-family:宋体"}
+BfdMode
 
-[[BfdIfIndex]{lang="EN-US"}]{#struct_0_x1345_19630_x1819851171}
+BFD模式：
 
-[[BFD]{lang="EN-US"}]{#struct_0_x1345_19630_x308127371}[使用的接口索引]{style="font-family:宋体"}
+·N/A：未配置BFD会话
 
-[[BfdVrfIndex]{lang="EN-US"}]{#struct_0_x1345_19630_2052214443}
+·Ctrl：控制报文方式的BFD会话
 
-[[BFD]{lang="EN-US"}]{#struct_0_x1345_19630_1664501214}[所在]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例索引]{style="font-family:宋体"}
+·Echo：echo报文方式的BFD会话
 
-[[BfdMode]{lang="EN-US"}]{#struct_0_x1345_19630_1061210050}
+TrackIndex
 
-[[BFD]{lang="EN-US"}]{#struct_0_x1345_19630_x308061835}[模式：]{style="font-family:宋体"}
+NQA Track索引
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[N/A]{lang="EN-US"}]{#struct_0_x1345_19630_471360794}[：未配置]{style="font-family:宋体"}[BFD]{lang="EN-US"}[会话]{style="font-family:宋体"}
+Label
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[Ctrl]{lang="EN-US"}]{#struct_0_x1345_19630_30041478}[：控制报文方式的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[会话]{style="font-family:宋体"}
+标签
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Echo]{lang="EN-US"}]{#struct_0_x1345_19630_1949725117}[：]{style="font-family:宋体"}[echo]{lang="EN-US"}[报文方式的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[会话]{style="font-family:宋体"}
+Preference
 
-[[TrackIndex]{lang="EN-US"}]{#struct_0_x1345_19630_x307734155}
+路由优先级
 
-[[NQA Track]{lang="EN-US"}]{#struct_0_x1345_19630_665306094}[索引]{style="font-family:宋体"}
+vrfIndexDst
 
-[[Label]{lang="EN-US"}]{#struct_0_x1345_19630_1254229903}
+目的所在VPN
 
-[[标签]{style="font-family:宋体"}]{#struct_0_x1345_19630_x972532336}
+vrfIndexNH
 
-[[Preference]{lang="EN-US"}]{#struct_0_x1345_19630_x307668619}
+下一跳所在VPN
 
-[[路由优先级]{style="font-family:宋体"}]{#struct_0_x1345_19630_x97544581}
+Permanent
 
-[[vrfIndexDst]{lang="EN-US"}]{#struct_0_x1345_19630_x421371825}
+永久静态路由标志（1表示永久静态路由）
 
-[[目的所在]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_x1345_19630_872904084}
+Tag
 
-[[vrfIndexNH]{lang="EN-US"}]{#struct_0_x1345_19630_x307865227}
-
-[[下一跳所在]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_x1345_19630_1071069423}
-
-[[Permanent]{lang="EN-US"}]{#struct_0_x1345_19630_1127816086}
-
-[[永久静态路由标志（]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_x1345_19630_x307799691}[表示永久静态路由）]{style="font-family:宋体"}
-
-[[Tag]{lang="EN-US"}]{#struct_0_x1345_19630_x1689122047}
-
-[[路由标记]{style="font-family:宋体"}]{#struct_0_x1345_19630_1118534975}
-
-[ ]{lang="EN-US"}
-
-::: {#-2893689 .myid}
-[]{#_Toc404788731}[]{#struct_0_x1345_19630_x448014615}
+路由标记
 
 **IPv6静态路由 \-- IPv6静态路由配置命令 \-- ipv6 route-static**
 
 ------------------------------------------------------------------------
 
-[**[ipv6 route-static]{lang="EN-US"}**]{#struct_0_x1345_19630_826490365}[命令用来配置]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[静态路由。]{style="font-family:宋体"}
+**[ipv6 route-static**]命令用来配置IPv6静态路由。
 
-[**[undo ipv6 route-static]{lang="EN-US"}**]{#struct_0_x1345_19630_x1023685552}[命令用来删除已配置的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[静态路由。]{style="font-family:宋体"}
+**[undo ipv6 route-static**]命令用来删除已配置的IPv6静态路由。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1345_19630_x307472011}
+【命令】
 
-[**[ipv6 route-static]{lang="EN-US"}**[ *ipv6-address prefix-length* { *interface-type* *interface-number* \[ *next-hop-address* \] \[ **bfd** { **control-packet** \| **echo-packet** } \[ **bfd-source** *ipv6-address* \] \| **permanent** \] \| \[ **vpn-instance** *d-vpn-instance-name* \] *next-hop-address* \[ **bfd** **control-packet** **bfd-source** *ipv6-address* \| **permanent** \] } \[ **preference** *preference-value* \] \[ **tag** *tag-value* \] \[ **description** *description-text* \]]{lang="EN-US"}]{#struct_0_x1345_19630_x475527125}
+**[ipv6 route-static** *ipv6-address prefix-length* { *interface-type* *interface-number* [ *next-hop-address*  [ **bfd** { **control-packet** \| **echo-packet** } [ **bfd-source** *ipv6-address* ] \| **permanent** ] \|  **vpn-instance** *d-vpn-instance-name*  *next-hop-address* [ **bfd** **control-packet** **bfd-source** *ipv6-address* \| **permanent** ] }  **preference** *preference-value*   **tag** *tag-value*   **description** *description-text* ]]
 
-[**[undo ipv6 route-static]{lang="EN-US"}**[ ]{lang="EN-US"}*[ipv6-address]{lang="EN-US"}[ prefix-length]{lang="EN-US"}*[ \[ *interface-type* *interface-number* \[ *next-hop-address* \] \| \[ **vpn-instance** *d-vpn-instance-name* \] *next-hop-address* \] \[ **preference** *preference-value* \]]{lang="EN-US"}]{#struct_0_x1345_19630_x638170779}
+**[undo ipv6 route-static***ipv6-address prefix-length* [ *interface-type* *interface-number* [ *next-hop-address*  \|  **vpn-instance** *d-vpn-instance-name*  *next-hop-address* ]  **preference** *preference-value* ]]
 
-[**[ipv6 route-static]{lang="EN-US"}**[ **vpn-instance** *s-vpn-instance-name* *ipv6-address prefix-length* { *interface-type interface-number* \[ *next-hop-address* \] \[ **bfd** { **control-packet** \| **echo-packet** } \[ **bfd-source** *ipv6-address* \] \| **permanent** \] \| *next-hop-address* \[ **public** \] \[ **bfd** **control-packet** **bfd-source** *ipv6-address* \| **permanent** \] \| **vpn-instance** *d-vpn-instance-name next-hop-address* \[ **bfd** **control-packet** **bfd-source** *ipv6-address* \| **permanent** \] } \[ **preference** *preference-value* \] \[ **tag** *tag-value* \] \[ **description** *description-text* \]]{lang="EN-US"}]{#struct_0_x1345_19630_x1643453940}
+**[ipv6 route-static** **vpn-instance** *s-vpn-instance-name* *ipv6-address prefix-length* { *interface-type interface-number* [ *next-hop-address*  [ **bfd** { **control-packet** \| **echo-packet** } [ **bfd-source** *ipv6-address* ] \| **permanent** ] \| *next-hop-address*  **public**  [ **bfd** **control-packet** **bfd-source** *ipv6-address* \| **permanent** ] \| **vpn-instance** *d-vpn-instance-name next-hop-address* [ **bfd** **control-packet** **bfd-source** *ipv6-address* \| **permanent** ] }  **preference** *preference-value*   **tag** *tag-value*   **description** *description-text* ]]
 
-[**[undo ipv6 route-static]{lang="EN-US"}**[ ]{lang="EN-US"}**[vpn-instance]{lang="EN-US"}**[ *s-vpn-instance-name* *ipv6-address* *prefix-length* \[ *interface-type interface-number* \[ *next-hop-address* \] \| *next-hop-address* \[ **public** \] \| **vpn-instance** *d-vpn-instance-name next-hop-address* \] \[ **preference** *preference-value* \]]{lang="EN-US"}]{#struct_0_x1345_19630_x1223653980}
+**[undo ipv6 route-static****vpn-instance** *s-vpn-instance-name* *ipv6-address* *prefix-length* [ *interface-type interface-number* [ *next-hop-address*  \| *next-hop-address*  **public**  \| **vpn-instance** *d-vpn-instance-name next-hop-address* ]  **preference** *preference-value* ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1345_19630_2005842880}
+【缺省情况】
 
-[[没有配置]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_x1345_19630_x1926681293}[静态路由。]{style="font-family:宋体"}
+没有配置IPv6静态路由。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1345_19630_873361827}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1345_19630_858575698}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1345_19630_x307406475}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1345_19630_1087822493}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1345_19630_1664388411}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1345_19630_x900288747}
+【参数】
 
-[*[ipv6-address prefix-length]{lang="EN-US"}*]{#struct_0_x1345_19630_1305580948}[：]{style="font-family:
-宋体"}[IPv6]{lang="EN-US"}[地址及前缀长度。]{style="font-family:宋体"}
+*[ipv6-address prefix-length*]：IPv6地址及前缀长度。
 
-[*[interface-type interface-number]{lang="EN-US"}*]{#struct_0_x1345_19630_831791939}[：路由出接口的类型和编号。对于接口类型为非]{style="font-family:宋体"}[P2P]{lang="EN-US"}[接口（包括]{style="font-family:宋体"}[NBMA]{lang="EN-US"}[类型接口或广播类型接口，如以太网接口、]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口等），必须指定下一跳地址。]{style="font-family:宋体"}
+*[interface-type interface-number*]：路由出接口的类型和编号。对于接口类型为非P2P接口（包括NBMA类型接口或广播类型接口，如以太网接口、VLAN接口等），必须指定下一跳地址。
 
-[*[next-hop-address]{lang="EN-US"}*]{#struct_0_x1345_19630_1189367817}[：下一跳]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[next-hop-address*]：下一跳IPv6地址。
 
-[**[bfd]{lang="EN-US"}**]{#struct_0_x1345_19630_811652455}[：使能]{style="font-family:宋体"}[BFD]{lang="EN-US"}[（]{style="font-family:宋体"}[Bidirectional Forwarding Detection]{lang="EN-US"}[，双向转发检测）功能，对静态路由下一跳的可达性进行快速检测。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[bfd**]：使能BFD（Bidirectional Forwarding Detection，双向转发检测）功能，对静态路由下一跳的可达性进行快速检测。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[control-packet]{lang="EN-US"}**]{#struct_0_x1345_19630_x1807748912}[：通过]{style="font-family:宋体"}[BFD]{lang="EN-US"}[控制报文方式实现]{style="font-family:宋体"}[BFD]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[control-packet**]：通过BFD控制报文方式实现BFD功能。
 
-[**[bfd-source]{lang="EN-US"}**[ *ipv6-address*]{lang="EN-US"}]{#struct_0_x1345_19630_x307996298}[：]{style="font-family:宋体"}[BFD]{lang="EN-US"}[源]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[bfd-source** *ipv6-address*]：BFD源IPv6地址。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[echo-packet]{lang="EN-US"}**]{#struct_0_x1345_19630_1447746310}[：通过]{style="font-family:宋体"}[BFD echo]{lang="EN-US"}[报文方式实现]{style="font-family:宋体"}[BFD]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[echo-packet**]：通过BFD echo报文方式实现BFD功能。
 
-[**[permanent]{lang="EN-US"}**]{#struct_0_x1345_19630_x1713993772}[：指定为永久]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[静态路由。即使在出接口]{style="font-family:宋体"}[down]{lang="EN-US"}[时，配置的永久]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[静态路由仍然保持]{style="font-family:宋体"}[active]{lang="EN-US"}[状态。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[permanent**]：指定为永久IPv6静态路由。即使在出接口down时，配置的永久IPv6静态路由仍然保持active状态。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[public]{lang="EN-US"}**]{#struct_0_x1345_19630_422430893}[：指定静态路由下一跳处于公网实例。]{style="font-family:宋体"}
+**[public**]：指定静态路由下一跳处于公网实例。
 
-[**[vpn-instance]{lang="FR"}**]{#struct_0_x1345_19630_727434131}[ *d-vpn-instance-name*]{lang="FR"}[：]{style="font-family:宋体"}[指定目的]{style="font-family:宋体"}[VPN]{lang="FR"}[。]{style="font-family:宋体"}*[d-vpn-instance-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果指定目的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[，]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[静态路由将根据配置的下一跳]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址在目的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[中查找出接口。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[vpn-instance**] *d-vpn-instance-name*：指定目的VPN。*d-vpn-instance-name*表示MPLS L3VPN的VPN实例名称，为1～31个字符的字符串，区分大小写。如果指定目的VPN，IPv6静态路由将根据配置的下一跳IPv6地址在目的VPN中查找出接口。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[preference]{lang="EN-US"}***[ preference-value]{lang="EN-US"}*]{#struct_0_x1345_19630_x480008570}[：路由的优先级，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[60]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[preference*** preference-value*]：路由的优先级，取值范围为1～255，缺省值为60。
 
-[**[tag ]{lang="EN-US"}***[tag-value]{lang="EN-US"}*]{#struct_0_x1345_19630_x1353933013}[：静态路由]{style="font-family:宋体"}[Tag]{lang="EN-US"}[值，用于标识该条静态路由，以便在路由策略中根据]{style="font-family:宋体"}[Tag]{lang="EN-US"}[对路由进行灵活的控制。]{style="font-family:宋体"}*[tag-value]{lang="EN-US"}*[的]{style="font-family:宋体"}[取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[0]{lang="EN-US"}[。关于路由策略的详细信息，请参见"三层技术]{style="font-family:宋体"}[-IP]{lang="EN-US"}[路由配置指导"中的"路由策略"。]{style="font-family:宋体"}
+**[tag ***tag-value*]：静态路由Tag值，用于标识该条静态路由，以便在路由策略中根据Tag对路由进行灵活的控制。*tag-value*的取值范围为1～4294967295，缺省值为0。关于路由策略的详细信息，请参见"三层技术-IP路由配置指导"中的"路由策略"。
 
-[**[description ]{lang="EN-US"}***[description-text]{lang="EN-US"}*]{#struct_0_x1345_19630_2120410174}[：静态路由描述信息。]{style="font-family:宋体"}*[description-text]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[60]{lang="EN-US"}[个字符的字符串，除"]{style="font-family:宋体"}[?]{lang="EN-US"}["外，可以包含空格等特殊字符。]{style="font-family:宋体"}
+**[description ***description-text*]：静态路由描述信息。*description-text*为1～60个字符的字符串，除"?"外，可以包含空格等特殊字符。
 
-[**[vpn-instance]{lang="EN-US"}**[ *s-vpn-instance-name*]{lang="EN-US"}]{#struct_0_x1345_19630_1295001570}[：指定源]{style="font-family:宋体"}[VPN]{lang="EN-US"}[。]{style="font-family:宋体"}*[s-vpn-instance-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。每个]{style="font-family:宋体"}[VPN]{lang="EN-US"}[都有自己的路由表，配置的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[静态路由将被加入指定]{style="font-family:宋体"}[VPN]{lang="EN-US"}[的路由表。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[vpn-instance** *s-vpn-instance-name*]：指定源VPN。*s-vpn-instance-name*表示MPLS L3VPN的VPN实例名称，为1～31个字符的字符串，区分大小写。每个VPN都有自己的路由表，配置的IPv6静态路由将被加入指定VPN的路由表。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1345_19630_x307930762}
+【使用指导】
 
-[[如果配置的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_x1345_19630_1488122305}[静态路由指定目的地址为]{style="font-family:宋体"}[::/0]{lang="EN-US"}[（前缀长度为]{style="font-family:宋体"}[0]{lang="EN-US"}[），则表示配置了一条]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[缺省路由。如果报文的目的地址无法匹配路由表中的任何一项，设备将选择]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[缺省路由来转发]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+如果配置的IPv6静态路由指定目的地址为::/0（前缀长度为0），则表示配置了一条IPv6缺省路由。如果报文的目的地址无法匹配路由表中的任何一项，设备将选择IPv6缺省路由来转发IPv6报文。
 
-[[在配置静态路由时，可以指定出接口（]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*]{#struct_0_x1345_19630_x381383139}[），也可指定下一跳地址（]{style="font-family:宋体"}*[next-hop-address]{lang="EN-US"}*[），具体采用哪种方法，需要根据实际情况而定：]{style="font-family:宋体"}
+在配置静态路由时，可以指定出接口（*interface-type interface-number*），也可指定下一跳地址（*next-hop-address*），具体采用哪种方法，需要根据实际情况而定：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果出接口类型为广播（如以太网接口、]{style="font-family:宋体"}]{#struct_0_x1345_19630_1650970609}[VLAN]{lang="EN-US"}[接口等）或者]{style="font-family:宋体"}[NBMA]{lang="EN-US"}[类型（如封装]{style="font-family:宋体"}[X.25]{lang="EN-US"}[或者帧中继的接口等），必须指定下一跳地址。]{style="font-family:宋体"}
+·如果出接口类型为广播（如以太网接口、VLAN接口等）或者NBMA类型（如封装X.25或者帧中继的接口等），必须指定下一跳地址。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果出接口类型为点到点类型（如串口等），配置时可以只指定出接口，不指定下一跳地址。]{style="font-family:宋体"}]{#struct_0_x1345_19630_x1370872855}[这样，即使对端地址发生了变化也无须改变配置]{style="font-family:宋体"}[。]{style="font-family:
-宋体"}
+·如果出接口类型为点到点类型（如串口等），配置时可以只指定出接口，不指定下一跳地址。这样，即使对端地址发生了变化也无须改变配置。
 
-[[配置]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_x1345_19630_1811720726}[静态路由与]{style="font-family:宋体"}[BFD]{lang="EN-US"}[联动时，需要注意的是：]{style="font-family:宋体"}
+配置IPv6静态路由与BFD联动时，需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于直连下一跳，当指定的出接口类型为非]{style="font-family:宋体"}]{#struct_0_x1345_19630_x686947130}[P2P]{lang="EN-US"}[接口时，建议用户通过]{style="font-family:宋体"}**[bfd-source]{lang="EN-US"}**[命令指定]{style="font-family:宋体"}[BFD]{lang="EN-US"}[源]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址，该地址必须为出接口的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址，且与下一跳]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址处在同一网段。如果下一跳]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址指定的是链路本地地址，本参数也必须是链路本地地址。]{style="font-family:宋体"}
+·对于直连下一跳，当指定的出接口类型为非P2P接口时，建议用户通过**bfd-source**命令指定BFD源IPv6地址，该地址必须为出接口的IPv6地址，且与下一跳IPv6地址处在同一网段。如果下一跳IPv6地址指定的是链路本地地址，本参数也必须是链路本地地址。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于直连下一跳或者非直连下一跳，如果要指定]{style="font-family:宋体"}]{#struct_0_x1345_19630_32940832}[BFD]{lang="EN-US"}[源]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址，那么下一跳]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址和]{style="font-family:宋体"}[BFD]{lang="EN-US"}[源]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址必须成对配置，即本端指定的下一跳]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址是对端的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[源]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址，本端指定的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[源]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址是对端的下一跳]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+·对于直连下一跳或者非直连下一跳，如果要指定BFD源IPv6地址，那么下一跳IPv6地址和BFD源IPv6地址必须成对配置，即本端指定的下一跳IPv6地址是对端的BFD源IPv6地址，本端指定的BFD源IPv6地址是对端的下一跳IPv6地址。
 
-[[配置]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_x1345_19630_x2117477743}[静态路由时需要注意的是：]{style="font-family:宋体"}
+配置IPv6静态路由时需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由振荡时，使能]{style="font-family:宋体"}]{#struct_0_x1345_19630_x920684486}[BFD]{lang="EN-US"}[检测功能可能会加剧振荡，需谨慎使用。关于]{style="font-family:宋体"}[BFD]{lang="EN-US"}[的详细介绍，请参考"可靠性配置指导"中的"]{style="font-family:宋体"}[BFD]{lang="EN-US"}["。]{style="font-family:宋体"}
+·路由振荡时，使能BFD检测功能可能会加剧振荡，需谨慎使用。关于BFD的详细介绍，请参考"可靠性配置指导"中的"BFD"。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置]{style="font-family:宋体"}]{#struct_0_x1345_19630_680013622}[BFD echo]{lang="EN-US"}[报文方式时，]{style="font-family:宋体"}[下一跳]{style="font-family:
-宋体"}[IPv6]{lang="EN-US"}[地址必须为全球单播地址。]{style="font-family:宋体"}
+·配置BFD echo报文方式时，下一跳IPv6地址必须为全球单播地址。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[参数]{lang="EN-US" style="font-family:宋体"}**[permanent]{lang="EN-US"}**]{#struct_0_x1345_19630_731443000}[不能和]{lang="EN-US" style="font-family:宋体"}**[bfd]{lang="EN-US"}**[、]{lang="EN-US" style="font-family:宋体"}**[track]{lang="EN-US"}**[一起进行配置。]{lang="EN-US" style="font-family:宋体"}
+·参数**permanent**不能和**bfd**、**track**一起进行配置。
 
-[[【**举例】**]{style="font-family:黑体"}]{#struct_0_x1345_19630_931916475}
+【**举例】**
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1345_19630_x308127370}[配置]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[静态路由，该路由的目的地址为]{style="font-family:宋体"}[1:1:2::/64]{lang="EN-US"}[，下一跳地址为]{style="font-family:宋体"}[1:1:3::1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置IPv6静态路由，该路由的目的地址为1:1:2::/64，下一跳地址为1:1:3::1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1345_19630_2052148907}
+\<Sysname\> system-view
 
-[\[Sysname\] ipv6 route-static 1:1:2:: 64 1:1:3::1]{lang="EN-US"}
+Sysname ipv6 route-static 1:1:2:: 64 1:1:3::1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1345_19630_1618066695}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display ipv6 routing-table protocol]{lang="EN-US"}**]{#struct_0_x1345_19630_1760685651}[（三层技术]{lang="EN-US" style="font-family:宋体"}[-IP]{lang="EN-US"}[路由命令参考]{lang="EN-US" style="font-family:宋体"}[/IP]{lang="EN-US"}[路由基础）]{lang="EN-US" style="font-family:宋体"}
-:::
-
-::: {#-609191916 .myid}
-[]{#_Toc404788732}[]{#struct_0_x1345_19630_1894423181}[]{#_Toc306635618}[]{#_Toc206489349}[]{#_Toc135643973}[]{#_Toc73872319}
+·**display ipv6 routing-table protocol**（三层技术-IP路由命令参考/IP路由基础）
 
 **IPv6静态路由 \-- IPv6静态路由配置命令 \-- ipv6 route-static default-preference**
 
 ------------------------------------------------------------------------
 
-[**[ipv6 route-static default-preference]{lang="EN-US"}**]{#struct_0_x1345_19630_x1508640160}[命令用来配置]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[静态路由的缺省优先级。]{style="font-family:宋体"}
+**[ipv6 route-static default-preference**]命令用来配置IPv6静态路由的缺省优先级。
 
-[**[undo ipv6 route-static default-preference]{lang="EN-US"}**]{#struct_0_x1345_19630_x1192778447}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ipv6 route-static default-preference**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1345_19630_x1490901754}
+【命令】
 
-[**[ipv6 route-static default-preference ]{lang="EN-US"}***[default-preference-value]{lang="EN-US"}*]{#struct_0_x1345_19630_x293827196}
+**[ipv6 route-static default-preference ***default-preference-value*]
 
-[**[undo ipv6 route-static default-preference]{lang="EN-US"}**]{#struct_0_x1345_19630_x308061834}
+**[undo ipv6 route-static default-preference**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1345_19630_471295258}
+【缺省情况】
 
-[[IPv6]{lang="EN-US"}]{#struct_0_x1345_19630_785515930}[静态路由的缺省优先级为]{style="font-family:宋体"}[60]{lang="EN-US"}[。]{style="font-family:宋体"}
+IPv6静态路由的缺省优先级为60。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1345_19630_1971534761}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1345_19630_592119498}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1345_19630_x1638444967}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1345_19630_x948716817}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1345_19630_x1379707440}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1345_19630_x823645472}
+【参数】
 
-[*[default-preference-value]{lang="EN-US"}*]{#struct_0_x1345_19630_x307734154}[：]{style="font-family:
-宋体"}[IPv6]{lang="EN-US"}[静态路由缺省优先级的值]{style="font-family:宋体"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[default-preference-value*]：IPv6静态路由缺省优先级的值，取值范围为1～255。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1345_19630_665371630}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果在配置]{style="font-family:宋体"}]{#struct_0_x1345_19630_x1097970974}[IPv6]{lang="EN-US"}[静态路由时没有指定优先级，就会使用缺省优先级。]{style="font-family:宋体"}
+·如果在配置IPv6静态路由时没有指定优先级，就会使用缺省优先级。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[重新配置缺省优先级后，新设置的缺省优先级仅对新增的]{style="font-family:宋体"}]{#struct_0_x1345_19630_x842616868}[IPv6]{lang="EN-US"}[静态路由有效。]{style="font-family:宋体"}
+·重新配置缺省优先级后，新设置的缺省优先级仅对新增的IPv6静态路由有效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1345_19630_x1062775312}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1345_19630_1702312560}[配置]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[静态路由的缺省优先级为]{style="font-family:宋体"}[120]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置IPv6静态路由的缺省优先级为120。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1345_19630_x510838056}
+\<Sysname\> system-view
 
-[\[Sysname\] ipv6 route-static default-preference 120]{lang="EN-US"}
+Sysname ipv6 route-static default-preference 120
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1345_19630_617052149}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display ip]{lang="EN-US"}**]{#struct_0_x1345_19630_504341017}**[v6]{lang="EN-US"}[ routing-table protocol]{lang="EN-US"}**[（三层技术]{lang="EN-US" style="font-family:
-宋体"}[-IP]{lang="EN-US"}[路由命令参考]{lang="EN-US" style="font-family:
-宋体"}[/IP]{lang="EN-US"}[路由基础）]{lang="EN-US" style="font-family:
-宋体"}
+·**display ip****v6 routing-table protocol**（三层技术-IP路由命令参考/IP路由基础）
 
-[ ]{lang="EN-US"}
-:::

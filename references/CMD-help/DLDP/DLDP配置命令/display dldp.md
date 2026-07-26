@@ -1,750 +1,692 @@
-::: {#673058815 .myid}
-[]{#_Toc404795542}[]{#struct_0_x1288_x1726_90002508}[]{#_Toc107481926}
 
 **DLDP \-- DLDP配置命令 \-- display dldp**
 
 ------------------------------------------------------------------------
 
-[**[display dldp]{lang="EN-US"}**]{#struct_0_x1288_x1726_1817515287}[命令用来显示]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[的全局配置信息和接口的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[display dldp**]命令用来显示DLDP的全局配置信息和接口的DLDP信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_2061984347}
+【命令】
 
-[**[display dldp ]{lang="EN-US"}**[\[ **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_x1288_x1726_x256370582}
+**[display dldp ** **interface** *interface-type interface-number* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x343412176}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1288_x1726_375924765}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x1811081961}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1288_x1726_920610878}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1288_x1726_x341055821}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1288_x1726_x1802456421}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1288_x1726_826605303}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x1144730843}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_x1288_x1726_x435595212}[：显示指定接口的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[信息，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[为接口类型和接口编号。如果未指定本参数，将显示]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[的全局配置信息和所有接口的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：显示指定接口的DLDP信息，*interface-type interface-number*为接口类型和接口编号。如果未指定本参数，将显示DLDP的全局配置信息和所有接口的DLDP信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_1113889646}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1288_x1726_x406965154}[显示]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[的全局配置信息和所有接口的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+\# 显示DLDP的全局配置信息和所有接口的DLDP信息。
 
-[[\<Sysname\> display dldp]{lang="EN-US"}]{#struct_0_x1288_x1726_x1811016425}
+\<Sysname\> display dldp
 
-[ DLDP global status: Enabled]{lang="EN-US"}
+ DLDP global status: Enabled
 
-[ DLDP advertisement interval: 5s]{lang="EN-US"}
+ DLDP advertisement interval: 5s
 
-[ DLDP authentication-mode: Simple]{lang="EN-US"}
+ DLDP authentication-mode: Simple
 
-[ DLDP authentication-password: \*\*\*\*\*\*]{lang="EN-US"}
+ DLDP authentication-password: \*\*\*\*\*\*
 
-[ DLDP unidirectional-shutdown mode: Auto]{lang="EN-US"}
+ DLDP unidirectional-shutdown mode: Auto
 
-[ DLDP delaydown-timer value: 1s]{lang="EN-US"}
+ DLDP delaydown-timer value: 1s
 
-[ Number of enabled ports: 2]{lang="EN-US"}
+ Number of enabled ports: 2
 
-[ ]{lang="EN-US"}
+Interface GigabitEthernet1/0/1
 
-[Interface GigabitEthernet1/0/1]{lang="EN-US"}
+ DLDP port state: Bidirectional
 
-[ DLDP port state: Bidirectional]{lang="EN-US"}
+ Number of the port's neighbors: 1
 
-[ Number of the port's neighbors: 1]{lang="EN-US"}
+  Neighbor MAC address: 0023-8956-3600
 
-[  Neighbor MAC address: 0023-8956-3600]{lang="EN-US"}
+  Neighbor port index: 79
 
-[  Neighbor port index: 79]{lang="EN-US"}
+  Neighbor state: Confirmed
 
-[  Neighbor state: Confirmed]{lang="EN-US"}
+  Neighbor aged time: 13s
 
-[  Neighbor aged time: 13s]{lang="EN-US"}
+Interface GigabitEthernet1/0/2
 
-[ ]{lang="EN-US"}
+ DLDP port state: Inactive
 
-[Interface GigabitEthernet1/0/2]{lang="EN-US"}
+ Number of the port's neighbors: 0 (Maximum number ever detected: 1)
 
-[ DLDP port state: Inactive]{lang="EN-US"}
+\# 显示接口GigabitEthernet1/0/1的DLDP信息。
 
-[ Number of the port's neighbors: 0 (Maximum number ever detected: 1)]{lang="EN-US"}
+\<Sysname\> display dldp interface gigabitethernet 1/0/1
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1288_x1726_66101278}[显示接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+Interface GigabitEthernet1/0/1
 
-[[\<Sysname\> display dldp interface gigabitethernet 1/0/1]{lang="EN-US"}]{#struct_0_x1288_x1726_x1810426601}
+ DLDP port state: Bidirectional
 
-[Interface GigabitEthernet1/0/1]{lang="EN-US"}
+ Number of the port's neighbors: 1
 
-[ DLDP port state: Bidirectional]{lang="EN-US"}
+  Neighbor MAC address: 0023-8956-3600
 
-[ Number of the port's neighbors: 1]{lang="EN-US"}
+  Neighbor port index: 79
 
-[  Neighbor MAC address: 0023-8956-3600]{lang="EN-US"}
+  Neighbor state: Confirmed
 
-[  Neighbor port index: 79]{lang="EN-US"}
+  Neighbor aged time: 13s
 
-[  Neighbor state: Confirmed]{lang="EN-US"}
+表1-1 display dldp命令显示信息描述表
 
-[  Neighbor aged time: 13s]{lang="EN-US"}
+字段
 
-[[表1-1 ]{lang="EN-US"}[display dldp]{lang="EN-US"}]{#struct_0_x1288_x1726_198744004}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x1725807460}[[字段]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x418679062}
-:::
+DLDP global status
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x496041186}
+DLDP的全局状态：
 
-[[DLDP global status]{lang="EN-US"}]{#struct_0_x1288_x1726_x845827938}
+·Enabled：表示已使能
 
-[[DLDP]{lang="EN-US"}]{#struct_0_x1288_x1726_368560844}[的全局状态：]{style="font-family:宋体"}
+·Disabled：表示已关闭
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_x1288_x1726_x989541795}[：表示已使能]{lang="EN-US" style="font-family:宋体"}
+DLDP advertisement interval
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_x1288_x1726_x1810361065}[：表示已关闭]{lang="EN-US" style="font-family:宋体"}
+Advertisement报文的发送间隔，单位为秒
 
-[[DLDP advertisement interval]{lang="EN-US"}]{#struct_0_x1288_x1726_1476322630}
+DLDP authentication-mode
 
-[[Advertisement]{lang="EN-US"}]{#struct_0_x1288_x1726_x1560076701}[报文的发送间隔，单位为秒]{style="font-family:宋体"}
+当前设备与邻居设备间的DLDP认证模式：
 
-[[DLDP authentication-mode]{lang="EN-US"}]{#struct_0_x1288_x1726_x1110598708}
+·MD5：表示MD5认证
 
-[[当前设备与邻居设备间的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}]{#struct_0_x1288_x1726_x1930862580}[认证模式：]{style="font-family:宋体"}
+·None：表示不认证
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MD5]{lang="EN-US"}]{#struct_0_x1288_x1726_1257808259}[：表示]{lang="EN-US" style="font-family:宋体"}[MD5]{lang="EN-US"}[认证]{lang="EN-US" style="font-family:宋体"}
+·Simple：表示明文认证
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[None]{lang="EN-US"}]{#struct_0_x1288_x1726_1611778276}[：表示不认证]{lang="EN-US" style="font-family:宋体"}
+DLDP authentication-password
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Simple]{lang="EN-US"}]{#struct_0_x1288_x1726_x1810950888}[：表示明文认证]{lang="EN-US" style="font-family:宋体"}
+当前设备与邻居设备间的DLDP认证密码：
 
-[[DLDP authentication-password]{lang="EN-US"}]{#struct_0_x1288_x1726_2033659630}
+·\*\*\*\*\*\*：表示已配置密码
 
-[[当前设备与邻居设备间的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}]{#struct_0_x1288_x1726_x473024232}[认证密码：]{style="font-family:宋体"}
+·Not configured：表示已配置认证模式但尚未配置密码
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[\*\*\*\*\*\*]{lang="EN-US"}]{#struct_0_x1288_x1726_x1678060536}[：表示已配置密码]{style="font-family:宋体"}
+DLDP unidirectional-shutdown mode
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not configured]{lang="EN-US"}]{#struct_0_x1288_x1726_1305940743}[：表示已配置认证模式但尚未配置密码]{lang="EN-US" style="font-family:宋体"}
+DLDP发现单向链路后接口的关闭模式：
 
-[[DLDP unidirectional-shutdown mode]{lang="EN-US"}]{#struct_0_x1288_x1726_x1810885352}
+·Auto：表示自动模式
 
-[[DLDP]{lang="EN-US"}]{#struct_0_x1288_x1726_1035781558}[发现单向链路后接口的关闭模式：]{style="font-family:宋体"}
+·Manual：表示手动模式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Auto]{lang="EN-US"}]{#struct_0_x1288_x1726_1771085860}[：表示自动模式]{lang="EN-US" style="font-family:宋体"}
+DLDP delaydown-timer value
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Manual]{lang="EN-US"}]{#struct_0_x1288_x1726_x1857776931}[：表示手动模式]{lang="EN-US" style="font-family:宋体"}
+DelayDown定时器的超时时间，单位为秒
 
-[[DLDP delaydown-timer value]{lang="EN-US"}]{#struct_0_x1288_x1726_1662286648}
+Number of enabled ports
 
-[[DelayDown]{lang="EN-US"}]{#struct_0_x1288_x1726_x1810819816}[定时器的超时时间，单位为秒]{style="font-family:宋体"}
+使能DLDP的接口数
 
-[[Number of enabled ports]{lang="EN-US"}]{#struct_0_x1288_x1726_1389511144}
+Interface
 
-[[使能]{style="font-family:宋体"}[DLDP]{lang="EN-US"}]{#struct_0_x1288_x1726_x69670042}[的接口数]{style="font-family:宋体"}
+使能DLDP的接口名称
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1288_x1726_154412613}
+DLDP port state
 
-[[使能]{style="font-family:宋体"}[DLDP]{lang="EN-US"}]{#struct_0_x1288_x1726_2076608533}[的接口名称]{style="font-family:宋体"}
+DLDP接口的状态：
 
-[[DLDP port state]{lang="EN-US"}]{#struct_0_x1288_x1726_x1810754280}
+·Bidirectional：表示双通状态
 
-[[DLDP]{lang="EN-US"}]{#struct_0_x1288_x1726_x2069001696}[接口的状态：]{style="font-family:宋体"}
+·Inactive：表示非活动状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Bidirectional]{lang="EN-US"}]{#struct_0_x1288_x1726_x467511317}[：表示双通状态]{lang="EN-US" style="font-family:宋体"}
+·Initial：表示初始状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Inactive]{lang="EN-US"}]{#struct_0_x1288_x1726_x84240959}[：表示非活动状态]{lang="EN-US" style="font-family:宋体"}
+·Unidirectional：表示单通状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Initial]{lang="EN-US"}]{#struct_0_x1288_x1726_20392648}[：表示初始状态]{lang="EN-US" style="font-family:宋体"}
+Number of the port's neighbors
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unidirectional]{lang="EN-US"}]{#struct_0_x1288_x1726_x1811213032}[：表示单通状态]{lang="EN-US" style="font-family:宋体"}
+接口的邻居数
 
-[[Number of the port's neighbors]{lang="EN-US"}]{#struct_0_x1288_x1726_x1896999747}
+Maximum number ever detected
 
-[[接口的邻居数]{style="font-family:宋体"}]{#struct_0_x1288_x1726_2101573594}
+接口曾收到的最大邻居数（只有在接口的当前邻居数与其曾收到的最大邻居数不一致时，才会显示本字段）
 
-[[Maximum number ever detected]{lang="EN-US"}]{#struct_0_x1288_x1726_x1519410456}
+Neighbor MAC address
 
-[[接口曾收到的最大邻居数（只有在接口的当前邻居数与其曾收到的最大邻居数不一致时，才会显示本字段）]{style="font-family:宋体"}]{#struct_0_x1288_x1726_x1811147496}
+邻居的MAC地址
 
-[[Neighbor MAC address]{lang="EN-US"}]{#struct_0_x1288_x1726_x15244062}
+Neighbor port index
 
-[[邻居的]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1288_x1726_x142282101}[地址]{style="font-family:宋体"}
+邻居的接口索引
 
-[[Neighbor port index]{lang="EN-US"}]{#struct_0_x1288_x1726_106506102}
+Neighbor state
 
-[[邻居的接口索引]{style="font-family:宋体"}]{#struct_0_x1288_x1726_x1811081960}
+DLDP邻居的状态：
 
-[[Neighbor state]{lang="EN-US"}]{#struct_0_x1288_x1726_x645473063}
+·Confirmed：表示确定状态
 
-[[DLDP]{lang="EN-US"}]{#struct_0_x1288_x1726_1358470328}[邻居的状态：]{style="font-family:宋体"}
+·Unconfirmed：表示未确定状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Confirmed]{lang="EN-US"}]{#struct_0_x1288_x1726_x1098439537}[：表示确定状态]{lang="EN-US" style="font-family:宋体"}
+Neighbor aged time
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unconfirmed]{lang="EN-US"}]{#struct_0_x1288_x1726_x1811016424}[：表示未确定状态]{lang="EN-US" style="font-family:宋体"}
-
-[[Neighbor aged time]{lang="EN-US"}]{#struct_0_x1288_x1726_1632185219}
-
-[[邻居的老化时间，单位为秒]{style="font-family:宋体"}]{#struct_0_x1288_x1726_x85602829}
-
-[ ]{lang="EN-US"}
-
-::: {#-1173018129 .myid}
-[]{#_Toc404795543}[]{#struct_0_x1288_x1726_x2064935308}
+邻居的老化时间，单位为秒
 
 **DLDP \-- DLDP配置命令 \-- display dldp statistics**
 
 ------------------------------------------------------------------------
 
-[**[display dldp statistics]{lang="EN-US"}**]{#struct_0_x1288_x1726_x1810426600}[命令用来显示接口的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[报文统计信息。]{style="font-family:宋体"}
+**[display dldp statistics**]命令用来显示接口的DLDP报文统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x1367339937}
+【命令】
 
-[**[display dldp statistics ]{lang="EN-US"}**[\[ **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_x1288_x1726_1388033847}
+**[display dldp statistics ** **interface** *interface-type interface-number* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_1847263963}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1288_x1726_1718669183}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_1468609831}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1288_x1726_x669506742}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1288_x1726_1132321994}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1288_x1726_x1381326692}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1288_x1726_x1810361064}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x89761311}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_x1288_x1726_x829503339}[：显示指定接口的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[报文统计信息，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[为接口类型和接口编号。如果未指定本参数，将显示所有接口的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[报文统计信息。]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：显示指定接口的DLDP报文统计信息，*interface-type interface-number*为接口类型和接口编号。如果未指定本参数，将显示所有接口的DLDP报文统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x506044663}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1288_x1726_x1051147545}[显示所有接口的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[报文统计信息。]{style="font-family:宋体"}
+\# 显示所有接口的DLDP报文统计信息。
 
-[]{#_Toc148329745}[[\<Sysname\> display dldp statistics]{lang="EN-US"}]{#struct_0_x1288_x1726_x1810950891}
+\<Sysname\> display dldp statistics
 
-[Interface GigabitEthernet1/0/1]{lang="EN-US"}
+Interface GigabitEthernet1/0/1
 
-[ Packets sent: 6]{lang="EN-US"}
+ Packets sent: 6
 
-[ Packets received: 5]{lang="EN-US"}
+ Packets received: 5
 
-[ Invalid packets received: 2]{lang="EN-US"}
+ Invalid packets received: 2
 
-[ Loopback packets received: 0]{lang="EN-US"}
+ Loopback packets received: 0
 
-[ Authentication-failed packets received: 0]{lang="EN-US"}
+ Authentication-failed packets received: 0
 
-[ Valid packets received: 3]{lang="EN-US"}
+ Valid packets received: 3
 
-[ ]{lang="EN-US"}
+Interface GigabitEthernet1/0/2
 
-[Interface GigabitEthernet1/0/2]{lang="EN-US"}
+ Packets sent: 7
 
-[ Packets sent: 7]{lang="EN-US"}
+ Packets received: 7
 
-[ Packets received: 7]{lang="EN-US"}
+ Invalid packets received: 3
 
-[ Invalid packets received: 3]{lang="EN-US"}
+ Loopback packets received: 0
 
-[ Loopback packets received: 0]{lang="EN-US"}
+ Authentication-failed packets received: 0
 
-[ Authentication-failed packets received: 0]{lang="EN-US"}
+ Valid packets received: 4
 
-[ Valid packets received: 4]{lang="EN-US"}
+表1-2 display dldp statistics命令显示信息描述表
 
-[[表1-2 ]{lang="EN-US"}[display dldp statistics]{lang="EN-US"}]{#struct_0_x1288_x1726_111279793}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1695785470}[[字段]{style="font-family:黑体"}]{#struct_0_x1288_x1726_37124450}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1288_x1726_200954619}
+Interface
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1288_x1726_452329657}
+使能DLDP的接口名称
 
-[[使能]{style="font-family:宋体"}[DLDP]{lang="EN-US"}]{#struct_0_x1288_x1726_1264334305}[的接口名称]{style="font-family:宋体"}
+Packets sent
 
-[[Packets sent]{lang="EN-US"}]{#struct_0_x1288_x1726_x1010555301}
+发送的报文总数
 
-[[发送的报文总数]{style="font-family:宋体"}]{#struct_0_x1288_x1726_x1810885355}
+Packets received
 
-[[Packets received]{lang="EN-US"}]{#struct_0_x1288_x1726_x886532743}
+收到的报文总数
 
-[[收到的报文总数]{style="font-family:宋体"}]{#struct_0_x1288_x1726_1337416601}
+Invalid packets received
 
-[[Invalid packets received]{lang="EN-US"}]{#struct_0_x1288_x1726_x605213855}
+收到的错误报文数
 
-[[收到的错误报文数]{style="font-family:宋体"}]{#struct_0_x1288_x1726_380402721}
+Loopback packets received
 
-[[Loopback packets received]{lang="EN-US"}]{#struct_0_x1288_x1726_x301237960}
+收到的自环报文数
 
-[[收到的自环报文数]{style="font-family:宋体"}]{#struct_0_x1288_x1726_x100970869}
+Authentication-failed packets received
 
-[[Authentication-failed packets received]{lang="EN-US"}]{#struct_0_x1288_x1726_x1810819819}
+收到的认证失败报文数
 
-[[收到的认证失败报文数]{style="font-family:宋体"}]{#struct_0_x1288_x1726_x1339372211}
+Valid packets received
 
-[[Valid packets received]{lang="EN-US"}]{#struct_0_x1288_x1726_132665467}
+收到的合法报文数
 
-[[收到的合法报文数]{style="font-family:宋体"}]{#struct_0_x1288_x1726_x1552195285}
+【相关命令】
 
-[[ ]{lang="EN-US"}]{#_Toc107481928}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x1935783211}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset]{lang="EN-US"}[ dldp statistics]{lang="EN-US"}**]{#struct_0_x1288_x1726_x1626776968}
-
-::: {#-273564874 .myid}
-[]{#_Toc404795544}[]{#struct_0_x1288_x1726_x1264829677}
+·**reset dldp statistics**
 
 **DLDP \-- DLDP配置命令 \-- dldp authentication-mode**
 
 ------------------------------------------------------------------------
 
-[**[dldp authentication-mode]{lang="EN-US"}**]{#struct_0_x1288_x1726_x1810754283}[命令用来配置当前设备与邻居设备间的]{style="font-family:
-宋体"}[DLDP]{lang="EN-US"}[认证模式。]{style="font-family:
-宋体"}
+**[dldp authentication-mode**]命令用来配置当前设备与邻居设备间的DLDP认证模式。
 
-[**[undo dldp authentication-mode]{lang="EN-US"}**]{#struct_0_x1288_x1726_x502917755}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo dldp authentication-mode**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_773410706}
+【命令】
 
-[**[dldp authentication-mode]{lang="EN-US"}**[ { **md5** \| **none** \| **simple** }]{lang="EN-US"}]{#struct_0_x1288_x1726_773889446}
+**[dldp authentication-mode**[ { **md5** \| **none** \| **simple** }]]
 
-[**[undo dldp authentication-mode]{lang="EN-US"}**]{#struct_0_x1288_x1726_x1838667214}
+**[undo dldp authentication-mode**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x113091765}
+【缺省情况】
 
-[[当前设备与邻居设备间的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}]{#struct_0_x1288_x1726_1186815260}[认证模式为不认证。]{style="font-family:宋体"}
+当前设备与邻居设备间的DLDP认证模式为不认证。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x557138569}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1288_x1726_x1462724901}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x1811213035}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1288_x1726_x330915806}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1288_x1726_2123013105}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_1561101616}
+【参数】
 
-[**[md5]{lang="EN-US"}**]{#struct_0_x1288_x1726_1242482758}[：表示认证模式为]{style="font-family:宋体"}[MD5]{lang="EN-US"}[认证。]{style="font-family:宋体"}
+**[md5**]：表示认证模式为MD5认证。
 
-[**[none]{lang="EN-US"}**]{#struct_0_x1288_x1726_x208315881}[：表示认证模式为不认证。]{style="font-family:宋体"}
+**[none**]：表示认证模式为不认证。
 
-[**[simple]{lang="EN-US"}**]{#struct_0_x1288_x1726_x1294845936}[：表示认证模式为明文认证。]{style="font-family:宋体"}
+**[simple**]：表示认证模式为明文认证。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_376469146}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[请确保两台设备间通过光纤]{style="font-family:宋体"}]{#struct_0_x1288_x1726_2010693676}[/]{lang="EN-US"}[网线连接的接口上配置的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[认证模式和认证密码都相同，否则]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[将无法正常工作。]{style="font-family:宋体"}
+·请确保两台设备间通过光纤/网线连接的接口上配置的DLDP认证模式和认证密码都相同，否则DLDP将无法正常工作。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在配置认证模式为明文认证或]{style="font-family:宋体"}]{#struct_0_x1288_x1726_x1811147499}[MD5]{lang="EN-US"}[认证后若未配置认证密码，则认证模式将仍为不认证。]{style="font-family:宋体"}
+·在配置认证模式为明文认证或MD5认证后若未配置认证密码，则认证模式将仍为不认证。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x1581328003}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1288_x1726_349639154}[配置]{style="font-family:宋体"}[Device A]{lang="EN-US"}[和]{style="font-family:宋体"}[Device B]{lang="EN-US"}[通过光纤]{style="font-family:宋体"}[/]{lang="EN-US"}[网线连接的接口间的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[认证模式均为明文认证，认证密码均为]{style="font-family:宋体"}[abc]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置Device A和Device B通过光纤/网线连接的接口间的DLDP认证模式均为明文认证，认证密码均为abc。
 
-[[·[              ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[Device A]{lang="FR"}]{#struct_0_x1288_x1726_x108209365}[上的配置]{lang="EN-US" style="font-family:宋体"}[：]{lang="EN-US" style="font-family:宋体"}
+·Device A上的配置：
 
-[[\<DeviceA\> system-view]{lang="EN-US"}]{#struct_0_x1288_x1726_1392970285}
+\<DeviceA\> system-view
 
-[\[DeviceA\] dldp authentication-mode simple]{lang="EN-US"}
+DeviceA dldp authentication-mode simple
 
-[\[DeviceA\] dldp authentication-password simple abc]{lang="EN-US"}
+DeviceA dldp authentication-password simple abc
 
-[[·[              ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[Device B]{lang="FR"}]{#struct_0_x1288_x1726_x686467186}[上的配置]{lang="EN-US" style="font-family:宋体"}[：]{lang="EN-US" style="font-family:宋体"}
+·Device B上的配置：
 
-[[\<DeviceB\> system-view]{lang="EN-US"}]{#struct_0_x1288_x1726_37397186}
+\<DeviceB\> system-view
 
-[\[DeviceB\] dldp authentication-mode simple]{lang="EN-US"}
+DeviceB dldp authentication-mode simple
 
-[\[DeviceB\] dldp authentication-password simple abc]{lang="EN-US"}
+DeviceB dldp authentication-password simple abc
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x2081314313}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display dldp]{lang="EN-US"}**]{#struct_0_x1288_x1726_x793946065}
+·**display dldp**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dldp authentication-password]{lang="EN-US"}**]{#struct_0_x1288_x1726_x1811081963}
-:::
-
-::: {#205826797 .myid}
-[]{#_Toc404795545}[]{#struct_0_x1288_x1726_2083410292}
+·**dldp authentication-password**
 
 **DLDP \-- DLDP配置命令 \-- dldp authentication-password**
 
 ------------------------------------------------------------------------
 
-[**[dldp authentication-password]{lang="EN-US"}**]{#struct_0_x1288_x1726_x1618646162}[命令用来配置当前设备与邻居设备间的]{style="font-family:
-宋体"}[DLDP]{lang="EN-US"}[认证密码。]{style="font-family:
-宋体"}
+**[dldp authentication-password**]命令用来配置当前设备与邻居设备间的DLDP认证密码。
 
-[**[undo dldp authentication-password]{lang="EN-US"}**]{#struct_0_x1288_x1726_372441582}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo dldp authentication-password**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x2061578738}
+【命令】
 
-[**[dldp authentication-password]{lang="EN-US"}**[ { **cipher** *cipher* \| **simple** *simple* }]{lang="EN-US"}]{#struct_0_x1288_x1726_1990896767}
+**[dldp authentication-password**[ { **cipher** *cipher* \| **simple** *simple* }]]
 
-[**[undo dldp authentication-password]{lang="EN-US"}**]{#struct_0_x1288_x1726_1677541601}
+**[undo dldp authentication-password**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_1498333128}
+【缺省情况】
 
-[[没有配置当前设备与邻居设备间的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}]{#struct_0_x1288_x1726_x1425147135}[认证密码。]{style="font-family:宋体"}
+没有配置当前设备与邻居设备间的DLDP认证密码。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x1811016427}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1288_x1726_x1096698136}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_34427333}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1288_x1726_x1261387969}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1288_x1726_x936954683}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_382144660}
+【参数】
 
-[**[cipher]{lang="EN-US"}**[ *cipher*]{lang="EN-US"}]{#struct_0_x1288_x1726_x1098956116}[：表示以密文方式输入的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[认证密码。]{style="font-family:宋体"}*[cipher]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[53]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[cipher** *cipher*]：表示以密文方式输入的DLDP认证密码。*cipher*为1～53个字符的字符串，区分大小写。
 
-[**[simple]{lang="EN-US"}**[ *simple*]{lang="EN-US"}]{#struct_0_x1288_x1726_x2020354317}[：表示以明文方式输入的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[认证密码。]{style="font-family:宋体"}*[simple]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[16]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[simple** *simple*]：表示以明文方式输入的DLDP认证密码。*simple*为1～16个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x2083435992}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[以明文或密文方式设置的]{style="font-family:宋体"}]{#struct_0_x1288_x1726_x1810426603}[DLDP]{lang="EN-US"}[认证密码，均以密文的方式保存在配置文件中。]{style="font-family:宋体"}
+·以明文或密文方式设置的DLDP认证密码，均以密文的方式保存在配置文件中。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[请确保两台设备间通过光纤]{style="font-family:宋体"}]{#struct_0_x1288_x1726_x964055410}[/]{lang="EN-US"}[网线连接的接口上配置的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[认证模式和认证密码都相同，否则]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[将无法正常工作。]{style="font-family:宋体"}
+·请确保两台设备间通过光纤/网线连接的接口上配置的DLDP认证模式和认证密码都相同，否则DLDP将无法正常工作。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在配置认证模式为明文认证或]{style="font-family:宋体"}]{#struct_0_x1288_x1726_948463462}[MD5]{lang="EN-US"}[认证后若未配置认证密码，则认证模式将仍为不认证。]{style="font-family:宋体"}
+·在配置认证模式为明文认证或MD5认证后若未配置认证密码，则认证模式将仍为不认证。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_666527554}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1288_x1726_x1303544561}[配置]{style="font-family:宋体"}[Device A]{lang="EN-US"}[和]{style="font-family:宋体"}[Device B]{lang="EN-US"}[通过光纤]{style="font-family:宋体"}[/]{lang="EN-US"}[网线连接的接口间的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[认证模式均为明文认证，认证密码均为]{style="font-family:宋体"}[abc]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置Device A和Device B通过光纤/网线连接的接口间的DLDP认证模式均为明文认证，认证密码均为abc。
 
-[[·[              ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[Device A]{lang="FR"}]{#struct_0_x1288_x1726_x1507718601}[上的配置]{lang="EN-US" style="font-family:宋体"}[：]{lang="EN-US" style="font-family:宋体"}
+·Device A上的配置：
 
-[[\<DeviceA\> system-view]{lang="EN-US"}]{#struct_0_x1288_x1726_x430936347}
+\<DeviceA\> system-view
 
-[\[DeviceA\] dldp authentication-mode simple]{lang="EN-US"}
+DeviceA dldp authentication-mode simple
 
-[\[DeviceA\] dldp authentication-password simple abc]{lang="EN-US"}
+DeviceA dldp authentication-password simple abc
 
-[[·[              ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[Device B]{lang="FR"}]{#struct_0_x1288_x1726_977533374}[上的配置]{lang="EN-US" style="font-family:宋体"}[：]{lang="EN-US" style="font-family:宋体"}
+·Device B上的配置：
 
-[[\<DeviceB\> system-view]{lang="FR"}]{#struct_0_x1288_x1726_x1810361067}
+\<DeviceB\> system-view
 
-[\[DeviceB\] dldp authentication-mode simple]{lang="FR"}
+DeviceB dldp authentication-mode simple
 
-[\[DeviceB\] dldp authentication-password ]{lang="FR"}[simple]{lang="EN-US"}[ ]{lang="EN-US"}[abc]{lang="FR"}
+DeviceB dldp authentication-password simpleabc
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_313523216}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display dldp]{lang="EN-US"}**]{#struct_0_x1288_x1726_409138571}
+·**display dldp**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dldp authentication-mode]{lang="EN-US"}**]{#struct_0_x1288_x1726_952017243}
-:::
-
-::: {#-268472010 .myid}
-[]{#_Toc404795546}[]{#struct_0_x1288_x1726_x917226753}
+·**dldp authentication-mode**
 
 **DLDP \-- DLDP配置命令 \-- dldp delaydown-timer**
 
 ------------------------------------------------------------------------
 
-[**[dldp delaydown-timer]{lang="EN-US"}**]{#struct_0_x1288_x1726_313178924}[命令用来配置]{style="font-family:宋体"}[DelayDown]{lang="EN-US"}[定时器的超时时间。]{style="font-family:宋体"}
+**[dldp delaydown-timer**]命令用来配置DelayDown定时器的超时时间。
 
-[**[undo dldp delaydown-timer]{lang="EN-US"}**]{#struct_0_x1288_x1726_x960348931}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo dldp delaydown-timer**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x660177906}
+【命令】
 
-[**[dldp delaydown-timer]{lang="EN-US"}**[ *time*]{lang="EN-US"}]{#struct_0_x1288_x1726_921784573}
+**[dldp delaydown-timer** *time*]
 
-[**[undo dldp delaydown-timer]{lang="EN-US"}**]{#struct_0_x1288_x1726_x1697611385}
+**[undo dldp delaydown-timer**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x1810950890}
+【缺省情况】
 
-[[DelayDown]{lang="EN-US"}]{#struct_0_x1288_x1726_1677363734}[定时器的超时时间为]{style="font-family:宋体"}[1]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+DelayDown定时器的超时时间为1秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_327133633}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1288_x1726_2088232901}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_1814135161}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1288_x1726_x567975207}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1288_x1726_83519663}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x584885630}
+【参数】
 
-[*[time]{lang="EN-US"}*]{#struct_0_x1288_x1726_x1127641993}[：表示]{style="font-family:宋体"}[DelayDown]{lang="EN-US"}[定时器的超时时间，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[5]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[time*]：表示DelayDown定时器的超时时间，取值范围为1～5，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x1810885354}
+【使用指导】
 
-[[本配置将应用于所有使能了]{style="font-family:宋体"}[DLDP]{lang="EN-US"}]{#struct_0_x1288_x1726_1842350612}[功能的接口上。]{style="font-family:宋体"}
+本配置将应用于所有使能了DLDP功能的接口上。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x731364358}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1288_x1726_615452640}[配置]{style="font-family:宋体"}[DelayDown]{lang="EN-US"}[定时器的超时时间为]{style="font-family:宋体"}[2]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置DelayDown定时器的超时时间为2秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1288_x1726_2092059429}
+\<Sysname\> system-view
 
-[\[Sysname\] dldp delaydown-timer 2]{lang="EN-US"}
+Sysname dldp delaydown-timer 2
 
-[]{#_Toc107481927}[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x280415557}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display dldp]{lang="EN-US"}**]{#struct_0_x1288_x1726_x97285132}
-:::
-
-::: {#-928954876 .myid}
-[]{#_Toc107481929}[]{#_Toc404795547}[]{#struct_0_x1288_x1726_449416810}
+·**display dldp**
 
 **DLDP \-- DLDP配置命令 \-- dldp enable**
 
 ------------------------------------------------------------------------
 
-[**[dldp enable]{lang="EN-US"}**]{#struct_0_x1288_x1726_1251450481}[命令用来在接口上使能]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[dldp enable**]命令用来在接口上使能DLDP功能。
 
-[**[undo dldp enable]{lang="EN-US"}**]{#struct_0_x1288_x1726_x1810819818}[命令用来在接口上关闭]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo dldp enable**]命令用来在接口上关闭DLDP功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_226711730}
+【命令】
 
-[**[dldp enable]{lang="EN-US"}**]{#struct_0_x1288_x1726_x747473113}
+**[dldp enable**]
 
-[**[undo dldp enable]{lang="EN-US"}**]{#struct_0_x1288_x1726_x950494029}
+**[undo dldp enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x1827332065}
+【缺省情况】
 
-[[接口上的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}]{#struct_0_x1288_x1726_x44527406}[功能处于关闭状态。]{style="font-family:宋体"}
+接口上的DLDP功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_1896693306}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1288_x1726_x830604646}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_1794117741}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1288_x1726_x1810754282}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1288_x1726_1063166186}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_796004167}
+【使用指导】
 
-[[要启用]{style="font-family:宋体"}[DLDP]{lang="EN-US"}]{#struct_0_x1288_x1726_469610210}[功能，必须在全局和接口上都使能]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+要启用DLDP功能，必须在全局和接口上都使能DLDP功能。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_565598738}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1288_x1726_1481106112}[全局使能]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[功能，并在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上使能]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 全局使能DLDP功能，并在接口GigabitEthernet1/0/1上使能DLDP功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1288_x1726_1331323018}
+\<Sysname\> system-view
 
-[\[Sysname\] dldp global enable]{lang="EN-US"}
+Sysname dldp global enable
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] dldp enable]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 dldp enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x662205990}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display dldp]{lang="EN-US"}**]{#struct_0_x1288_x1726_15951777}
+·**display dldp**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dldp global enable]{lang="EN-US"}**]{#struct_0_x1288_x1726_x1811213034}
-:::
-
-::: {#1081430494 .myid}
-[]{#_Toc404795548}[]{#struct_0_x1288_x1726_1235168135}
+·**dldp global enable**
 
 **DLDP \-- DLDP配置命令 \-- dldp global enable**
 
 ------------------------------------------------------------------------
 
-[**[dldp global enable]{lang="EN-US"}**]{#struct_0_x1288_x1726_x334054957}[命令用来全局使能]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[dldp global enable**]命令用来全局使能DLDP功能。
 
-[**[undo dldp global enable]{lang="EN-US"}**]{#struct_0_x1288_x1726_x854716610}[命令用来全局关闭]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo dldp global enable**]命令用来全局关闭DLDP功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x1874839797}
+【命令】
 
-[**[dldp global enable]{lang="EN-US"}**]{#struct_0_x1288_x1726_x1698822833}
+**[dldp global enable**]
 
-[**[undo dldp global enable]{lang="EN-US"}**]{#struct_0_x1288_x1726_x1295233070}
+**[undo dldp global enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_293661659}
+【缺省情况】
 
-[[DLDP]{lang="EN-US"}]{#struct_0_x1288_x1726_x788258913}[功能处于全局关闭状态。]{style="font-family:宋体"}
+DLDP功能处于全局关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x1811147498}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1288_x1726_1147555352}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x2065111713}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1288_x1726_1836508156}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1288_x1726_175028557}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_384491086}
+【使用指导】
 
-[[要启用]{style="font-family:宋体"}[DLDP]{lang="EN-US"}]{#struct_0_x1288_x1726_x1603126733}[功能，必须在全局和接口上都使能]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+要启用DLDP功能，必须在全局和接口上都使能DLDP功能。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_682249964}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1288_x1726_x1634128050}[全局使能]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 全局使能DLDP功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1288_x1726_x1811081962}
+\<Sysname\> system-view
 
-[\[Sysname\] dldp global enable]{lang="EN-US"}
+Sysname dldp global enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_517326351}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display dldp]{lang="EN-US"}**]{#struct_0_x1288_x1726_1900976351}
+·**display dldp**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dldp enable]{lang="EN-US"}**]{#struct_0_x1288_x1726_x1435890690}
-:::
-
-::: {#-846709120 .myid}
-[]{#_Toc404795549}[]{#struct_0_x1288_x1726_x1347578091}
+·**dldp enable**
 
 **DLDP \-- DLDP配置命令 \-- dldp interval**
 
 ------------------------------------------------------------------------
 
-[**[dldp interval]{lang="EN-US"}**]{#struct_0_x1288_x1726_1067929659}[命令用来配置]{style="font-family:宋体"}[Advertisement]{lang="EN-US"}[报文的发送间隔。]{style="font-family:宋体"}
+**[dldp interval**]命令用来配置Advertisement报文的发送间隔。
 
-[**[undo dldp interval]{lang="EN-US"}**]{#struct_0_x1288_x1726_1415651949}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo dldp interval**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x503148476}
+【命令】
 
-[**[dldp interval ]{lang="EN-US"}***[time]{lang="EN-US"}*]{#struct_0_x1288_x1726_1140757939}
+**[dldp interval ***time*]
 
-[**[undo dldp interval]{lang="EN-US"}**]{#struct_0_x1288_x1726_x1811016426}
+**[undo dldp interval**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_469385805}
+【缺省情况】
 
-[[Advertisement]{lang="EN-US"}]{#struct_0_x1288_x1726_x707224220}[报文的发送间隔为]{style="font-family:宋体"}[5]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+Advertisement报文的发送间隔为5秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x1952136407}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1288_x1726_x275192193}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x106894549}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1288_x1726_1158857806}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1288_x1726_977400780}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x963864171}
+【参数】
 
-[*[time]{lang="EN-US"}*]{#struct_0_x1288_x1726_x72289231}[：表示]{style="font-family:宋体"}[Advertisement]{lang="EN-US"}[报文的发送间隔，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[100]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[time*]：表示Advertisement报文的发送间隔，取值范围为1～100，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x1810426602}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本配置将应用于所有使能了]{style="font-family:宋体"}]{#struct_0_x1288_x1726_1764827945}[DLDP]{lang="EN-US"}[功能的接口上。]{style="font-family:宋体"}
+·本配置将应用于所有使能了DLDP功能的接口上。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[请确保通过光纤]{style="font-family:宋体"}]{#struct_0_x1288_x1726_1232765700}[/]{lang="EN-US"}[网线连接的两台设备上]{style="font-family:宋体"}[Advertisement]{lang="EN-US"}[报文的发送间隔相同，否则]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[将无法正常工作。]{style="font-family:宋体"}
+·请确保通过光纤/网线连接的两台设备上Advertisement报文的发送间隔相同，否则DLDP将无法正常工作。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_1793707443}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1288_x1726_x1369649950}[配置]{style="font-family:宋体"}[Advertisement]{lang="EN-US"}[报文的发送间隔为]{style="font-family:宋体"}[20]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置Advertisement报文的发送间隔为20秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1288_x1726_x354481407}
+\<Sysname\> system-view
 
-[\[Sysname\] dldp interval 20]{lang="EN-US"}
+Sysname dldp interval 20
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x1604157970}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display dldp]{lang="EN-US"}**]{#struct_0_x1288_x1726_x1178827261}
-:::
-
-::: {#1890490380 .myid}
-[]{#_Toc404795550}[]{#struct_0_x1288_x1726_1745328062}
+·**display dldp**
 
 **DLDP \-- DLDP配置命令 \-- dldp unidirectional-shutdown**
 
 ------------------------------------------------------------------------
 
-[**[dldp unidirectional-shutdown]{lang="EN-US"}**]{#struct_0_x1288_x1726_x1810361066}[命令用来配置]{style="font-family:
-宋体"}[DLDP]{lang="EN-US"}[发现单向链路后接口的关闭模式。]{style="font-family:宋体"}
+**[dldp unidirectional-shutdown**]命令用来配置DLDP发现单向链路后接口的关闭模式。
 
-[**[undo dldp unidirectional-shutdown]{lang="EN-US"}**]{#struct_0_x1288_x1726_x1252560725}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo dldp unidirectional-shutdown**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x1407077516}
+【命令】
 
-[**[dldp unidirectional-shutdown]{lang="EN-US"}**[ { **auto** \| **manual** }]{lang="EN-US"}]{#struct_0_x1288_x1726_1227805122}
+**[dldp unidirectional-shutdown**[ { **auto** \| **manual** }]]
 
-[**[undo]{lang="EN-US"}**[ **dldp unidirectional-shutdown**]{lang="EN-US"}]{#struct_0_x1288_x1726_x1318398711}
+**[undo** **dldp unidirectional-shutdown**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x722427801}
+【缺省情况】
 
-[[DLDP]{lang="EN-US"}]{#struct_0_x1288_x1726_x1165521732}[发现单向链路后接口的关闭模式为自动模式。]{style="font-family:宋体"}
+DLDP发现单向链路后接口的关闭模式为自动模式。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_170718445}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1288_x1726_1978988089}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x1810950893}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1288_x1726_x1051519621}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1288_x1726_x181089083}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_643306433}
+【参数】
 
-[**[auto]{lang="EN-US"}**]{#struct_0_x1288_x1726_492053805}[：表示自动模式。在此模式下，当]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[检测到单向链路时会自动关闭单通接口。]{style="font-family:宋体"}
+**[auto**]：表示自动模式。在此模式下，当DLDP检测到单向链路时会自动关闭单通接口。
 
-[**[manual]{lang="EN-US"}**]{#struct_0_x1288_x1726_x180567077}[：表示手动模式。在此模式下，当]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[检测到单向链路时不会直接关闭单通接口，而是需要用户手工将其关闭；当单向链路恢复为双向链路后，还需要用户手工将其打开。]{style="font-family:宋体"}
+**[manual**]：表示手动模式。在此模式下，当DLDP检测到单向链路时不会直接关闭单通接口，而是需要用户手工将其关闭；当单向链路恢复为双向链路后，还需要用户手工将其打开。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_1391829663}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1288_x1726_272383544}[配置]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[发现单向链路后接口的关闭模式为手动模式。]{style="font-family:宋体"}
+\# 配置DLDP发现单向链路后接口的关闭模式为手动模式。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1288_x1726_744343585}
+\<Sysname\> system-view
 
-[\[Sysname\] dldp unidirectional-shutdown manual]{lang="EN-US"}
+Sysname dldp unidirectional-shutdown manual
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x1810885357}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display dldp]{lang="EN-US"}**]{#struct_0_x1288_x1726_276266671}
-:::
-
-::: {#-1672584776 .myid}
-[]{#_Toc404795551}[]{#struct_0_x1288_x1726_x629013715}
+·**display dldp**
 
 **DLDP \-- DLDP配置命令 \-- reset dldp statistics**
 
 ------------------------------------------------------------------------
 
-[**[reset dldp statistics]{lang="EN-US"}**]{#struct_0_x1288_x1726_2097897029}[命令用来清除接口的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[报文统计信息。]{style="font-family:宋体"}
+**[reset dldp statistics**]命令用来清除接口的DLDP报文统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x979714111}
+【命令】
 
-[**[reset dldp statistics ]{lang="EN-US"}**[\[ **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_x1288_x1726_x1923427057}
+**[reset dldp statistics ** **interface** *interface-type interface-number* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_290103524}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x1288_x1726_1671388788}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_1460965449}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1288_x1726_x1679320656}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1288_x1726_x1810819821}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_x983338459}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_x1288_x1726_x533487690}[：清除指定接口的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[报文统计信息，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[为接口类型和接口编号。如果未指定本参数，将清除所有接口的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[报文统计信息。]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：清除指定接口的DLDP报文统计信息，*interface-type interface-number*为接口类型和接口编号。如果未指定本参数，将清除所有接口的DLDP报文统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_1794737354}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1288_x1726_x704852767}[清除所有接口的]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[报文统计信息。]{style="font-family:宋体"}
+\# 清除所有接口的DLDP报文统计信息。
 
-[[\<]{lang="EN-US"}]{#struct_0_x1288_x1726_896927917}[Sysname]{lang="FR"}[\> reset dldp statistics]{lang="EN-US"}
+\<Sysname\> reset dldp statistics
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1288_x1726_1109343577}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display dldp statistics]{lang="EN-US"}**]{#struct_0_x1288_x1726_x116019343}
-:::
+·**display dldp statistics**

@@ -1,100 +1,92 @@
-::: {#118604133 .myid}
-[]{#_Toc404795794}[]{#struct_0_x6711_x2124_2086638777}
 
 **Monitor Link \-- Monitor Link调试命令 \-- debugging monitor-link**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x6711_x2124_1640416862}
+【命令】
 
-[**[debugging monitor-link]{lang="EN-US"}**[ \[ **group** *group-id* \] { **all** \| **error** \| **event** }]{lang="EN-US"}]{#struct_0_x6711_x2124_2031716269}
+**[debugging monitor-link** [ **group** *group-id*  { **all** \| **error** \| **event** }]]
 
-[**[undo debugging monitor-link]{lang="EN-US"}**[ \[ **group** *group-id* \] { **all** \| **error** \| **event** }]{lang="EN-US"}]{#struct_0_x6711_x2124_477241163}
+**[undo debugging monitor-link** [ **group** *group-id*  { **all** \| **error** \| **event** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x6711_x2124_719760365}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x6711_x2124_x351543253}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x6711_x2124_1772348634}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x6711_x2124_x1205628850}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x6711_x2124_x322978520}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x6711_x2124_1015654035}
+【参数】
 
-[**[group]{lang="EN-US"}***[ group-id]{lang="EN-US"}*]{#struct_0_x6711_x2124_98359116}[：表示指定]{style="font-family:宋体"}[Monitor Link]{lang="EN-US"}[组的调试信息开关。如果未指定本参数，则表示所有]{style="font-family:宋体"}[Monitor Link]{lang="EN-US"}[组的调试信息开关。]{style="font-family:宋体"}
+**[group*** group-id*]：表示指定Monitor Link组的调试信息开关。如果未指定本参数，则表示所有Monitor Link组的调试信息开关。
 
-[**[all]{lang="EN-US"}**]{#struct_0_x6711_x2124_x173305420}[：表示]{style="font-family:宋体"}[Monitor Link]{lang="EN-US"}[组的所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示Monitor Link组的所有调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_x6711_x2124_1114922993}[：表示]{style="font-family:宋体"}[Monitor Link]{lang="EN-US"}[组错误调试信息开关。]{style="font-family:宋体"}
+**[error**]：表示Monitor Link组错误调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_x6711_x2124_735320785}[：表示]{style="font-family:宋体"}[Monitor Link]{lang="EN-US"}[组事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示Monitor Link组事件调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_x6711_x2124_1733286671}
+【描述】
 
-[**[debugging monitor-link]{lang="EN-US"}**]{#struct_0_x6711_x2124_126889001}[命令用来打开]{style="font-family:宋体"}[Monitor Link]{lang="EN-US"}[组调试信息开关。]{style="font-family:宋体"}**[undo debugging monitor-link]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[Monitor Link]{lang="EN-US"}[组调试信息开关。]{style="font-family:宋体"}
+**[debugging monitor-link**]命令用来打开Monitor Link组调试信息开关。**undo debugging monitor-link**命令用来关闭Monitor Link组调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[Monitor Link]{lang="EN-US"}]{#struct_0_x6711_x2124_x152022333}[组调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，Monitor Link组调试信息开关处于关闭状态。
 
-[[表1-1 ]{lang="EN-US"}[debugging monitor-link error]{lang="EN-US"}]{#struct_0_x6711_x2124_1772807386}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging monitor-link error命令输出信息描述表
 
-[]{#table_struct_0_x2123250499}[[字段]{style="font-family:黑体"}]{#struct_0_x6711_x2124_x1273267443}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x6711_x2124_958700790}
+描述
 
-[[Failed to allocate memory for batch backup]{lang="EN-US"}]{#struct_0_x6711_x2124_1885139658}
+Failed to allocate memory for batch backup
 
-[[为批量备份分配内存失败]{style="font-family:宋体"}]{#struct_0_x6711_x2124_x1243920613}
+为批量备份分配内存失败
 
-[[Failed to allocate memory for realtime backup]{lang="EN-US"}]{#struct_0_x6711_x2124_1808675199}
+Failed to allocate memory for realtime backup
 
-[[为实时备份分配内存失败]{style="font-family:宋体"}]{#struct_0_x6711_x2124_149646006}
+为实时备份分配内存失败
 
-[[Failed to send batch backup message]{lang="EN-US"}]{#struct_0_x6711_x2124_x463185881}
+Failed to send batch backup message
 
-[[发送批量备份消息失败]{style="font-family:宋体"}]{#struct_0_x6711_x2124_x1419614272}
+发送批量备份消息失败
 
-[[Failed to send realtime backup message]{lang="EN-US"}]{#struct_0_x6711_x2124_1772741850}
+Failed to send realtime backup message
 
-[[发送实时备份消息失败]{style="font-family:宋体"}]{#struct_0_x6711_x2124_x430587899}
+发送实时备份消息失败
 
-[[Failed to allocate memory for the monitor link group]{lang="EN-US"}]{#struct_0_x6711_x2124_x959544148}
+Failed to allocate memory for the monitor link group
 
-[[为]{style="font-family:宋体"}]{#struct_0_x6711_x2124_x2006376446}[Monitor Link]{lang="SV"}[组]{style="font-family:宋体"}[分配内存失败]{style="font-family:宋体"}
+为Monitor Link组分配内存失败
 
-[[Failed to allocate memory for the monitor link port]{lang="EN-US"}]{#struct_0_x6711_x2124_2111215916}
+Failed to allocate memory for the monitor link port
 
-[[为]{style="font-family:宋体"}]{#struct_0_x6711_x2124_1350456884}[Monitor Link]{lang="SV"}[组的成员端口]{style="font-family:宋体"}[分配内存失败]{style="font-family:宋体"}
+为Monitor Link组的成员端口分配内存失败
 
-[ ]{lang="EN-US"}
+表1-2 debugging monitor-link event命令输出信息描述表
 
-[[表1-2 ]{lang="EN-US"}[debugging monitor-link event]{lang="EN-US"}]{#struct_0_x6711_x2124_x878876429}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x2129606869}[[字段]{style="font-family:黑体"}]{#struct_0_x6711_x2124_1772283099}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x6711_x2124_x2007914020}
+Monitor link group *group-id* is up
 
-[[Monitor link group *group-id* is up]{lang="EN-US"}]{#struct_0_x6711_x2124_x1384133263}
+Monitor Link组*group-id*处于up状态
 
-[[Monitor Link]{lang="EN-US"}]{#struct_0_x6711_x2124_x753903300}[组]{style="font-family:宋体"}*[group-id]{lang="EN-US"}*[处于]{style="font-family:宋体"}[up]{lang="EN-US"}[状态]{style="font-family:宋体"}
+Monitor link group *group-id* is down
 
-[[Monitor link group *group-id* is down]{lang="EN-US"}]{#struct_0_x6711_x2124_x1710058212}
+Monitor Link组*group-id*处于down状态
 
-[[Monitor Link]{lang="EN-US"}]{#struct_0_x6711_x2124_x43112471}[组]{style="font-family:宋体"}*[group-id]{lang="EN-US"}*[处于]{style="font-family:宋体"}[down]{lang="EN-US"}[状态]{style="font-family:宋体"}
+【举例】
 
-[ ]{lang="EN-US"}
+\# 打开Monitor Link组1的事件调试信息开关。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x6711_x2124_215617445}
+\<Sysname\> debugging monitor-link group 1 event
 
-[[\# ]{lang="EN-US"}]{#struct_0_x6711_x2124_x783137346}[打开]{style="font-family:宋体"}[Monitor Link]{lang="EN-US"}[组]{style="font-family:宋体"}[1]{lang="EN-US"}[的事件调试信息开关。]{style="font-family:
-宋体"}
+\*Dec 28 19:37:47:543 2011 SysnameMTLK/7/Event:
 
-[[\<Sysname\> debugging monitor-link group 1 event]{lang="EN-US"}]{#struct_0_x6711_x2124_1772217563}
+ Monitor link group 1 is down
 
-[\*Dec 28 19:37:47:543 2011 ]{lang="EN-US"}[Sysname]{lang="NO-BOK"}[ ]{lang="NO-BOK"}[MTLK/7/Event:]{lang="EN-US"}
-
-[ Monitor link group 1 is down]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}[Monitor Link]{lang="EN-US"}*]{#struct_0_x6711_x2124_1868266577}*[组]{style="font-family:宋体"}[1]{lang="EN-US"}[处于]{style="font-family:宋体"}[down]{lang="EN-US"}[状态]{style="font-family:宋体"}*
+*[// Monitor Link*]*组1处于down状态*

@@ -1,4458 +1,4110 @@
-::: {#927173033 .myid}
-[]{#_Toc404798343}[]{#struct_0_20244_20619_504778375}[]{#_Toc309203838}[]{#_Toc303421790}
 
 **EVI \-- EVI配置命令 \-- display evi arp-suppression**
 
 ------------------------------------------------------------------------
 
-[**[display evi arp-suppression]{lang="EN-US"}**]{#struct_0_20244_20619_x1462780197}[命令用来显示]{style="font-family:
-宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}
+**[display evi arp-suppression**]命令用来显示EVI ARP泛洪抑制表项。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_71731136}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_20244_20619_x1194763915}
+集中式设备：
 
-[**[display evi arp-suppression interface]{lang="EN-US"}[ tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*[ \[ **vlan** *vlan-id* \] \[ **count** \]]{lang="EN-US"}]{#struct_0_20244_20619_x862650830}
+**[display evi arp-suppression interface tunnel*** interface-number* [ **vlan** *vlan-id*   **count** ]]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_20244_20619_2134122883}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display evi arp-suppression interface]{lang="EN-US"}[ tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*[ \[ **vlan** *vlan-id* \] \[ **slot** *slot-number* \[ **cpu** *cpu-number* \] \] \[ **count** \]]{lang="EN-US"}]{#struct_0_20244_20619_439939447}
+**[display evi arp-suppression interface tunnel*** interface-number* [ **vlan** *vlan-id*   **slot** *slot-number* [ **cpu** *cpu-number*  ]  **count** ]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_20244_20619_x1905977872}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display evi arp-suppression interface]{lang="EN-US"}[ tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*[ \[ **vlan** *vlan-id* \] \[ **chassis** *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \] \] \[ **count** \]]{lang="EN-US"}]{#struct_0_20244_20619_x1142874684}
+**[display evi arp-suppression interface tunnel*** interface-number* [ **vlan** *vlan-id*   **chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number*  ]  **count** ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_24445653}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_20244_20619_1374082538}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_48963134}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_x1194698379}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_20244_20619_801369177}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_1401792984}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_20244_20619_x801818037}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_1096521407}
+【参数】
 
-[**[interface]{lang="EN-US"}[ tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*]{#struct_0_20244_20619_x2147097745}[：显示指定]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口下的]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}
+**[interface tunnel*** interface-number*]：显示指定EVI隧道接口下的EVI ARP泛洪抑制表项。
 
-[**[vlan ]{lang="EN-US"}***[vlan-id]{lang="EN-US"}*]{#struct_0_20244_20619_961527526}[：显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[如果不指定本参数，]{style="font-family:宋体"}[将显示所有]{style="font-family:宋体"}[VLAN]{lang="FR"}[的]{style="font-family:宋体"}[EVI ARP]{lang="FR"}[泛洪抑制表项。]{style="font-family:宋体"}
+**[vlan ***vlan-id*]：显示指定VLAN的EVI ARP泛洪抑制表项。*vlan-id*表示VLAN编号，取值范围为1～4094。如果不指定本参数，将显示所有VLAN的EVI ARP泛洪抑制表项。
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_20244_20619_1640923329}[：显示指定]{style="font-family:宋体"}[单板的]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位]{style="font-family:宋体"}[号。]{style="font-family:宋体"}[如果不指定本参数，]{style="font-family:宋体"}[将显示主用主控板上的]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定单板的EVI ARP泛洪抑制表项。*slot-number*表示单板所在的槽位号。如果不指定本参数，将显示主用主控板上的EVI ARP泛洪抑制表项。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_20244_20619_1988873749}[：显示指定成员设备的]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。]{style="font-family:宋体"}[如果不指定本参数，]{style="font-family:宋体"}[将显示]{style="font-family:宋体"}[Master]{lang="EN-US"}[设备上的]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备的EVI ARP泛洪抑制表项。*slot-number*表示设备在IRF中的成员编号。如果不指定本参数，将显示Master设备上的EVI ARP泛洪抑制表项。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_20244_20619_1110097817}[：]{style="font-family:宋体"}[显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[的]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。如果不指定本参数，将显示]{style="font-family:宋体"}[Master]{lang="EN-US"}[设备上的]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备/PEX的EVI ARP泛洪抑制表项。*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果不指定本参数，将显示Master设备上的EVI ARP泛洪抑制表项。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_20244_20619_x1194370699}[：显示指定成员设备上指定单板的]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}*[chassis]{lang="EN-US"}[-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位]{style="font-family:宋体"}[号。]{style="font-family:宋体"}[如果不指定本参数，]{style="font-family:宋体"}[将显示全局主用主控板上的]{style="font-family:宋体"}[EVI ARP]{lang="FR"}[泛洪抑制表项。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定成员设备上指定单板的EVI ARP泛洪抑制表项。*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果不指定本参数，将显示全局主用主控板上的EVI ARP泛洪抑制表项。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_20244_20619_1724938687}[：]{style="font-family:宋体"}[显示指定单板的]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项]{style="font-family:宋体"}[。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。如果不指定本参数，将显示全局主用主控板上的]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定单板的EVI ARP泛洪抑制表项。*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。如果不指定本参数，将显示全局主用主控板上的EVI ARP泛洪抑制表项。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu ]{lang="EN-US"}***[cpu-number]{lang="EN-US"}*]{#struct_0_20244_20619_x1475930455}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上的]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号。只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[cpu ***cpu-number*]：显示指定CPU上的EVI ARP泛洪抑制表项。*cpu-number*表示CPU编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[count]{lang="EN-US"}**]{#struct_0_20244_20619_x861796820}[：显示]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项的数目。]{style="font-family:宋体"}
+**[count**]：显示EVI ARP泛洪抑制表项的数目。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_1869733131}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x1451380417}[显示]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口]{style="font-family:宋体"}[Tunnel101]{lang="EN-US"}[下的]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}
+\# 显示EVI隧道接口Tunnel101下的EVI ARP泛洪抑制表项。
 
-[[\<Sysname\> display evi arp-suppression interface tunnel 101]{lang="EN-US"}]{#struct_0_20244_20619_x64518180}
+\<Sysname\> display evi arp-suppression interface tunnel 101
 
-[IP Address      MAC Address    VLAN ID  Interface                Aging Status]{lang="EN-US"}
+IP Address      MAC Address    VLAN ID  Interface                Aging Status
 
-[1.1.1.2         000f-e201-0101 1        EVI-link1                14    Valid]{lang="EN-US"}
+1.1.1.2         000f-e201-0101 1        EVI-link1                14    Valid
 
-[1.1.1.3         000f-e201-0202 1        EVI-link1                18    Invalid]{lang="EN-US"}
+1.1.1.3         000f-e201-0202 1        EVI-link1                18    Invalid
 
-[1.1.1.4         000f-e201-0203 1        EVI-link1                10    Collision]{lang="EN-US"}
+1.1.1.4         000f-e201-0203 1        EVI-link1                10    Collision
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_960333157}[显示]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口]{style="font-family:宋体"}[Tunnel101]{lang="EN-US"}[下的]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项的数目。]{style="font-family:宋体"}
+\# 显示EVI隧道接口Tunnel101下的EVI ARP泛洪抑制表项的数目。
 
-[[\<Sysname\> display evi arp-suppression interface tunnel 101 count]{lang="EN-US"}]{#struct_0_20244_20619_1236383408}
+\<Sysname\> display evi arp-suppression interface tunnel 101 count
 
-[Total entries: 3]{lang="EN-US"}
+Total entries: 3
 
-[[表1-1 ]{lang="EN-US"}[display evi arp-suppression]{lang="EN-US"}]{#struct_0_20244_20619_x1194305163}[命令显示信息描述表]{style="font-family:黑体"}
+表1-1 display evi arp-suppression命令显示信息描述表
 
-[]{#table_struct_0_2054191011}[[字段]{style="font-family:黑体"}]{#struct_0_20244_20619_1038430866}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20244_20619_x894233451}
+描述
 
-[[IP Address]{lang="EN-US"}]{#struct_0_20244_20619_1218824109}
+IP Address
 
-[[EVI ARP]{lang="EN-US"}]{#struct_0_20244_20619_x1904748919}[泛洪抑制表项的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+EVI ARP泛洪抑制表项的IP地址
 
-[[MAC Address]{lang="EN-US"}]{#struct_0_20244_20619_225758172}
+MAC Address
 
-[[EVI ARP]{lang="EN-US"}]{#struct_0_20244_20619_x301554666}[泛洪抑制表项的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+EVI ARP泛洪抑制表项的MAC地址
 
-[[VLAN ID]{lang="EN-US"}]{#struct_0_20244_20619_x1194501771}
+VLAN ID
 
-[[EVI ARP]{lang="EN-US"}]{#struct_0_20244_20619_1652366286}[泛洪抑制表项所属的激活]{style="font-family:宋体"}[VLAN]{lang="EN-US"}
+EVI ARP泛洪抑制表项所属的激活VLAN
 
-[[Interface]{lang="EN-US"}]{#struct_0_20244_20619_1235446153}
+Interface
 
-[[EVI ARP]{lang="EN-US"}]{#struct_0_20244_20619_x1857016996}[泛洪抑制表项对应的入接口，也就是学习到]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项的接口]{style="font-family:宋体"}
+EVI ARP泛洪抑制表项对应的入接口，也就是学习到EVI ARP泛洪抑制表项的接口
 
-[[Aging]{lang="EN-US"}]{#struct_0_20244_20619_x1674528869}
+Aging
 
-[[EVI ARP]{lang="EN-US"}]{#struct_0_20244_20619_2014453521}[泛洪抑制表项的老化时间，单位为分钟]{style="font-family:宋体"}
+EVI ARP泛洪抑制表项的老化时间，单位为分钟
 
-[[Status]{lang="EN-US"}]{#struct_0_20244_20619_x1194436235}
+Status
 
-[[EVI ARP]{lang="EN-US"}]{#struct_0_20244_20619_1933906896}[泛洪抑制表项的表项状态：]{style="font-family:宋体"}
+EVI ARP泛洪抑制表项的表项状态：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Valid]{lang="EN-US"}]{#struct_0_20244_20619_x878368057}[：有效。表项建立的初始状态为有效，有效时可以根据该表项进行代答]{style="font-family:宋体"}
+·Valid：有效。表项建立的初始状态为有效，有效时可以根据该表项进行代答
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Invalid]{lang="EN-US"}]{#struct_0_20244_20619_1441094987}[：无效。表项自最后一次更新后]{style="font-family:宋体"}[15]{lang="EN-US"}[分钟内没有收到]{style="font-family:宋体"}[ARP]{lang="EN-US"}[更新报文，变为无效状态，此时不能根据该表项代答。无效状态能保持]{style="font-family:宋体"}[10]{lang="EN-US"}[分钟，]{style="font-family:宋体"}[10]{lang="EN-US"}[分钟内无更新报文，则删除该表项]{style="font-family:宋体"}
+·Invalid：无效。表项自最后一次更新后15分钟内没有收到ARP更新报文，变为无效状态，此时不能根据该表项代答。无效状态能保持10分钟，10分钟内无更新报文，则删除该表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Collision]{lang="EN-US"}]{#struct_0_20244_20619_1765896546}[：冲突。如果收到]{style="font-family:宋体"}[ARP]{lang="EN-US"}[报文时发现相同]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址的泛洪抑制表项已经存在，但是]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址发生变化，则认为发生攻击，此时泛洪抑制表项处于冲突状态，不能根据该表项代答，并在]{style="font-family:宋体"}[25]{lang="EN-US"}[分钟后删除此表项]{style="font-family:宋体"}
+·Collision：冲突。如果收到ARP报文时发现相同IP地址的泛洪抑制表项已经存在，但是MAC地址发生变化，则认为发生攻击，此时泛洪抑制表项处于冲突状态，不能根据该表项代答，并在25分钟后删除此表项
 
-[[Total entries]{lang="EN-US"}]{#struct_0_20244_20619_x1194108555}
+Total entries
 
-[[EVI ARP]{lang="EN-US"}]{#struct_0_20244_20619_x1869199008}[泛洪抑制表项的数目]{style="font-family:宋体"}
+EVI ARP泛洪抑制表项的数目
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_883480694}
+·**evi arp-suppression enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[evi arp-suppression enable]{lang="EN-US"}**]{#struct_0_20244_20619_1156859514}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset]{lang="EN-US"}[ evi arp-suppression]{lang="EN-US"}**]{#struct_0_20244_20619_1502827589}
-
-::: {#-349076811 .myid}
-[]{#_Toc404798344}[]{#struct_0_20244_20619_401637562}[]{#_Toc312867793}
+·**reset evi arp-suppression**
 
 **EVI \-- EVI配置命令 \-- display evi isis brief**
 
 ------------------------------------------------------------------------
 
-[**[display evi isis brief]{lang="EN-US"}**]{#struct_0_20244_20619_x2003350062}[命令用来显示]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的摘要信息。]{style="font-family:宋体"}
+**[display evi isis brief**]命令用来显示EVI IS-IS进程的摘要信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_669451171}
+【命令】
 
-[**[display evi isis brief]{lang="EN-US"}**[ \[ *process-id* \]]{lang="EN-US"}]{#struct_0_20244_20619_x1194043019}
+**[display evi isis brief** [ *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_478975709}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_20244_20619_x1156005731}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x105601167}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_954754625}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_20244_20619_411739571}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_x1775481389}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_20244_20619_x26134480}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1194632842}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_20244_20619_643484879}[：显示指定]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的摘要信息。]{style="font-family:宋体"}*[process-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}[如果不指定本参数]{style="font-family:宋体"}[，将显示所有]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的摘要信息。]{style="font-family:宋体"}
+*[process-id*]：显示指定EVI IS-IS进程的摘要信息。*process-id*表示EVI IS-IS进程号，取值范围为0～65535。如果不指定本参数，将显示所有EVI IS-IS进程的摘要信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x485974673}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x2072242250}[显示]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的摘要信息。]{style="font-family:宋体"}
+\# 显示EVI IS-IS进程的摘要信息。
 
-[[\<Sysname\> display evi isis brief]{lang="EN-US"}]{#struct_0_20244_20619_x1329515914}
+\<Sysname\> display evi isis brief
 
-[Site ID: 10]{lang="EN-US"}
+Site ID: 10
 
-[Isolation Count: 0]{lang="EN-US"}
+Isolation Count: 0
 
-[ ]{lang="EN-US"}
+Process ID: 0
 
-[Process ID: 0]{lang="EN-US"}
+Network-entity: 00.0011.2200.0001.00
 
-[Network-entity: 00.0011.2200.0001.00]{lang="EN-US"}
+LSP-length receive: 16384
 
-[LSP-length receive: 16384]{lang="EN-US"}
+LSP-length originate: 1400
 
-[LSP-length originate: 1400]{lang="EN-US"}
+Timers:
 
-[Timers:]{lang="EN-US"}
+  LSP-max-age: 1200s
 
-[  LSP-max-age: 1200s]{lang="EN-US"}
+  LSP-refresh: 900s
 
-[  LSP-refresh: 900s]{lang="EN-US"}
+表1-2 display evi isis brief显示信息描述表
 
-[[表1-2 ]{lang="EN-US"}[display evi isis brief]{lang="EN-US"}]{#struct_0_20244_20619_272106155}[显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_2048450563}[[字段]{style="font-family:黑体"}]{#struct_0_20244_20619_x1072325644}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20244_20619_x1194567306}
+Site ID
 
-[[Site ID]{lang="EN-US"}]{#struct_0_20244_20619_x853475352}
+本地站点ID
 
-[[本地站点]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_20244_20619_x1744065659}
+Isolation Count
 
-[[Isolation Count]{lang="EN-US"}]{#struct_0_20244_20619_x437856565}
+本设备被多少其他站点所隔离。若该数目不为0，则表示本地站点ID仍与其他站点ID有冲突且本设备被隔离，则本设备不对外发布Hello报文；若该数目为0，则表示本设备未被隔离，此时对外发布Hello报文
 
-[[本设备被多少其他站点所隔离。若该数目不为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_20244_20619_x853540888}[，则表示本地站点]{style="font-family:宋体"}[ID]{lang="EN-US"}[仍与其他站点]{style="font-family:宋体"}[ID]{lang="EN-US"}[有冲突且本设备被隔离，则本设备不对外发布]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文；若该数目为]{style="font-family:宋体"}[0]{lang="EN-US"}[，则表示本设备未被隔离，此时对外发布]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+Process ID
 
-[[Process ID]{lang="EN-US"}]{#struct_0_20244_20619_x1897434425}
+进程实例号
 
-[[进程实例号]{style="font-family:宋体"}]{#struct_0_20244_20619_x390164274}
+Network-entity
 
-[[Network-entity]{lang="EN-US"}]{#struct_0_20244_20619_613087241}
+网络实体名称
 
-[[网络实体名称]{style="font-family:宋体"}]{#struct_0_20244_20619_654893525}
+LSP-length receive
 
-[[LSP-length receive]{lang="EN-US"}]{#struct_0_20244_20619_x183973589}
+可以接收LSP的最大长度
 
-[[可以接收]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_20244_20619_x1194763914}[的最大长度]{style="font-family:宋体"}
+LSP-length originate
 
-[[LSP-length originate]{lang="EN-US"}]{#struct_0_20244_20619_703433111}
+生成的LSP的最大长度
 
-[[生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_20244_20619_616203930}[的最大长度]{style="font-family:宋体"}
+Timers
 
-[[Timers]{lang="EN-US"}]{#struct_0_20244_20619_x536738294}
+LSP-max-age
 
-[[LSP-max-age]{lang="EN-US"}]{#struct_0_20244_20619_1520535444}
+LSP的最大生存时间
 
-[[LSP]{lang="EN-US"}]{#struct_0_20244_20619_x1686710937}[的最大生存时间]{style="font-family:宋体"}
+LSP-refresh
 
-[[LSP-refresh]{lang="EN-US"}]{#struct_0_20244_20619_x1194698378}
-
-[[LSP]{lang="EN-US"}]{#struct_0_20244_20619_x764714764}[的刷新周期]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-138722627 .myid}
-[]{#_Toc404798345}[]{#struct_0_20244_20619_x749341740}[]{#_Toc312867794}[]{#_Toc338171755}[]{#_Toc338432171}[]{#_Toc338171756}[]{#_Toc338432172}
+LSP的刷新周期
 
 **EVI \-- EVI配置命令 \-- display evi isis graceful-restart status**
 
 ------------------------------------------------------------------------
 
-[**[display evi isis graceful-restart status]{lang="EN-US"}**]{#struct_0_20244_20619_436569507}[命令用来显示]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[协议的]{style="font-family:宋体"}[GR]{lang="EN-US"}[状态。]{style="font-family:宋体"}
+**[display evi isis graceful-restart status**]命令用来显示EVI IS-IS协议的GR状态。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_311527061}
+【命令】
 
-[**[display evi isis graceful-restart status]{lang="EN-US"}**[ \[ *process-id* \]]{lang="EN-US"}]{#struct_0_20244_20619_x1289290656}
+**[display evi isis graceful-restart status** [ *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_1541489789}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_20244_20619_x1194370698}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_1867086535}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_1092947823}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_20244_20619_476236831}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_585996754}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_20244_20619_2134237893}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x326325616}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_20244_20619_1168614183}[：显示指定]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的]{style="font-family:宋体"}[GR]{lang="EN-US"}[状态。]{style="font-family:宋体"}*[process-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}[如果不指定本参数]{style="font-family:宋体"}[，将显示所有]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的]{style="font-family:宋体"}[GR]{lang="EN-US"}[状态。]{style="font-family:宋体"}
+*[process-id*]：显示指定EVI IS-IS进程的GR状态。*process-id*表示EVI IS-IS进程号，取值范围为0～65535。如果不指定本参数，将显示所有EVI IS-IS进程的GR状态。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_162211326}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x1194305162}[显示]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[协议的]{style="font-family:宋体"}[GR]{lang="EN-US"}[状态。]{style="font-family:宋体"}
+\# 显示EVI IS-IS协议的GR状态。
 
-[[\<Sysname\> display evi isis graceful-restart status]{lang="EN-US"}]{#struct_0_20244_20619_x1690452489}
+\<Sysname\> display evi isis graceful-restart status
 
-[Process ID: 0]{lang="EN-US"}
+Process ID: 0
 
-[Restart status: RESTARTING]{lang="EN-US"}
+Restart status: RESTARTING
 
-[Restart phase: LSDB synchronization]{lang="EN-US"}
+Restart phase: LSDB synchronization
 
-[Restart interval: 300s]{lang="EN-US"}
+Restart interval: 300s
 
-[T3 remaining time: 65531s]{lang="EN-US"}
+T3 remaining time: 65531s
 
-[Total number of interfaces: 1]{lang="EN-US"}
+Total number of interfaces: 1
 
-[Number of waiting LSPs: 0]{lang="EN-US"}
+Number of waiting LSPs: 0
 
-[T2 remaining time: 56s]{lang="EN-US"}
+T2 remaining time: 56s
 
-[  Interface: EVI-Link0]{lang="EN-US"}
+  Interface: EVI-Link0
 
-[    T1 remaining time: 2]{lang="EN-US"}
+    T1 remaining time: 2
 
-[    RA received: N]{lang="EN-US"}
+    RA received: N
 
-[    CSNP received: N]{lang="EN-US"}
+    CSNP received: N
 
-[    T1 expired number: 3]{lang="EN-US"}
+    T1 expired number: 3
 
-[[表1-3 ]{lang="EN-US"}[display evi isis ]{lang="EN-US"}[graceful]{lang="EN-US"}]{#struct_0_20244_20619_71671431}[-restart status]{lang="EN-US"}[显示信息描述表]{style="font-family:黑体"}
+表1-3 display evi isis graceful-restart status显示信息描述表
 
-[]{#table_struct_0_2049178307}[[字段]{style="font-family:黑体"}]{#struct_0_20244_20619_1338876187}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20244_20619_x1194501770}
+描述
 
-[[Process ID]{lang="EN-US"}]{#struct_0_20244_20619_x1076517069}
+Process ID
 
-[[进程实例号]{style="font-family:宋体"}]{#struct_0_20244_20619_153907816}
+进程实例号
 
-[[Restart status]{lang="EN-US"}]{#struct_0_20244_20619_191609336}
+Restart status
 
-[[重启状态：]{style="font-family:宋体"}]{#struct_0_20244_20619_695117658}
+重启状态：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[COMPLETE]{lang="EN-US"}]{#struct_0_20244_20619_x1036563567}[：重启完成]{lang="EN-US" style="font-family:宋体"}
+·COMPLETE：重启完成
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[STARTING]{lang="EN-US"}]{#struct_0_20244_20619_x1849852271}[：重启开始]{lang="EN-US" style="font-family:宋体"}
+·STARTING：重启开始
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RESTARTING]{lang="EN-US"}]{#struct_0_20244_20619_x1194436234}[：重启中]{lang="EN-US" style="font-family:宋体"}
+·RESTARTING：重启中
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UNKNOWN]{lang="EN-US"}]{#struct_0_20244_20619_367822955}[：未知状态]{lang="EN-US" style="font-family:宋体"}
+·UNKNOWN：未知状态
 
-[[Restart phase]{lang="EN-US"}]{#struct_0_20244_20619_x625208628}
+Restart phase
 
-[[重启阶段：]{style="font-family:宋体"}]{#struct_0_20244_20619_1567335819}
+重启阶段：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Initialization]{lang="EN-US"}]{#struct_0_20244_20619_1986960116}[：]{style="font-family:宋体"}[初始阶段]{lang="EN-US" style="font-family:宋体"}
+·Initialization：初始阶段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSDB synchronization]{lang="EN-US"}]{#struct_0_20244_20619_x1194108554}[：]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步阶段]{style="font-family:宋体"}
+·LSDB synchronization：LSDB同步阶段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MAC receiving]{lang="EN-US"}]{#struct_0_20244_20619_x303115067}[：]{style="font-family:宋体"}[接收]{lang="EN-US" style="font-family:宋体"}[本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}[上报]{lang="EN-US" style="font-family:宋体"}[的]{style="font-family:宋体"}[阶段]{lang="EN-US" style="font-family:宋体"}
+·MAC receiving：接收本地MAC地址上报的阶段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSP stable]{lang="EN-US"}]{#struct_0_20244_20619_906508256}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[生成的阶段]{lang="EN-US" style="font-family:宋体"}
+·LSP stable：LSP生成的阶段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSP generation]{lang="EN-US"}]{#struct_0_20244_20619_x504472944}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[刷新和泛洪的]{style="font-family:宋体"}[阶段]{lang="EN-US" style="font-family:宋体"}
+·LSP generation：LSP刷新和泛洪的阶段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Finish]{lang="EN-US"}]{#struct_0_20244_20619_x851769297}[：]{style="font-family:宋体"}[GR]{lang="EN-US"}[完成的阶段]{lang="EN-US" style="font-family:宋体"}
+·Finish：GR完成的阶段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknow]{lang="EN-US"}]{#struct_0_20244_20619_x1194043018}[n]{lang="EN-US"}[：]{style="font-family:
-  宋体"}[未知阶段]{lang="EN-US" style="font-family:宋体"}
+·Unknown：未知阶段
 
-[[Restart interval]{lang="EN-US"}]{#struct_0_20244_20619_2045059650}
+Restart interval
 
-[[重启间隔]{style="font-family:宋体"}]{#struct_0_20244_20619_135942349}
+重启间隔
 
-[[T3 remaining time]{lang="EN-US"}]{#struct_0_20244_20619_1657915075}
+T3 remaining time
 
-[[定时器]{style="font-family:宋体"}[T3]{lang="EN-US"}]{#struct_0_20244_20619_591256807}[的剩余时间]{style="font-family:宋体"}
+定时器T3的剩余时间
 
-[[Total number of interfaces]{lang="EN-US"}]{#struct_0_20244_20619_x1194632845}
+Total number of interfaces
 
-[[进程实例下的所有接口数]{style="font-family:宋体"}]{#struct_0_20244_20619_1402999766}
+进程实例下的所有接口数
 
-[[Number of waiting LSPs]{lang="EN-US"}]{#struct_0_20244_20619_164379704}
+Number of waiting LSPs
 
-[[等待的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_20244_20619_x1264321431}[报文数]{style="font-family:宋体"}
+等待的LSP报文数
 
-[[T2 remaining time]{lang="EN-US"}]{#struct_0_20244_20619_377005689}
+T2 remaining time
 
-[[定时器]{style="font-family:宋体"}[T2]{lang="EN-US"}]{#struct_0_20244_20619_x1194567309}[的剩余时间]{style="font-family:宋体"}
+定时器T2的剩余时间
 
-[[Interface]{lang="EN-US"}]{#struct_0_20244_20619_1281787624}
+Interface
 
-[[接口名]{style="font-family:宋体"}]{#struct_0_20244_20619_1847383268}
+接口名
 
-[[T1 remaining time]{lang="EN-US"}]{#struct_0_20244_20619_x2121740452}
+T1 remaining time
 
-[[定时器]{style="font-family:宋体"}[T1]{lang="EN-US"}]{#struct_0_20244_20619_x1194763917}[的剩余时间]{style="font-family:宋体"}
+定时器T1的剩余时间
 
-[[RA received]{lang="EN-US"}]{#struct_0_20244_20619_300148584}
+RA received
 
-[[RA]{lang="EN-US"}]{#struct_0_20244_20619_x551722249}[接收标记位]{style="font-family:宋体"}
+RA接收标记位
 
-[[CSNP received]{lang="EN-US"}]{#struct_0_20244_20619_x293992071}
+CSNP received
 
-[[CSNP]{lang="EN-US"}]{#struct_0_20244_20619_x1194698381}[接收标记位]{style="font-family:宋体"}
+CSNP接收标记位
 
-[[T1 expired number]{lang="EN-US"}]{#struct_0_20244_20619_1156616497}
+T1 expired number
 
-[[定时器]{style="font-family:宋体"}[T1]{lang="EN-US"}]{#struct_0_20244_20619_x1942329036}[的超时次数]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#482573732 .myid}
-[]{#_Toc404798346}[]{#struct_0_20244_20619_x1382011896}[]{#_Toc312867796}
+定时器T1的超时次数
 
 **EVI \-- EVI配置命令 \-- display evi isis local-mac**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}[ evi isis local-mac]{lang="EN-US"}**]{#struct_0_20244_20619_1638799453}[命令用来显示]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[的本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+**[display evi isis local-mac**]命令用来显示EVI IS-IS的本地MAC地址信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1194370701}
+【命令】
 
-[**[display]{lang="EN-US"}[ evi isis local-mac]{lang="EN-US"}**[ { **dynamic** \| **static** } \[ **interface** **tunnel** *interface-number* \[ **vlan** *vlan-id* \] \[ **filtered** \| **passed** \] \[ **count** \] \]]{lang="EN-US"}]{#struct_0_20244_20619_x1217437357}
+**[display evi isis local-mac**[ { **dynamic** \| **static** } [ **interface** **tunnel** *interface-number* [ **vlan** *vlan-id*   **filtered** \| **passed** ]  **count**  ]]]
 
-[**[display]{lang="EN-US"}[ evi isis local-mac]{lang="EN-US"}**[ **nonadvertised** \[ **interface** **tunnel** *interface-number* \[ **vlan** *vlan-id* \] \[ **count** \] \]]{lang="EN-US"}]{#struct_0_20244_20619_x852819992}
+**[display evi isis local-mac** **nonadvertised** [ **interface** **tunnel** *interface-number* [ **vlan** *vlan-id*   **count**  ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_1410550257}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_20244_20619_97256575}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_61780078}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_x1101960340}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_20244_20619_x605636960}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_1937955547}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_20244_20619_x1518351119}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1194305165}
+【参数】
 
-[**[dynamic]{lang="EN-US"}**]{#struct_0_20244_20619_x124368548}[：显示本地动态]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+**[dynamic**]：显示本地动态MAC地址信息。
 
-[**[nonadvertised]{lang="EN-US"}**]{#struct_0_20244_20619_x1342265901}[：显示本地非发布]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。非发布]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址包括：泛洪]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址、黑洞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址、多端口单播]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址、组播]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[nonadvertised**]：显示本地非发布MAC地址信息。非发布MAC地址包括：泛洪MAC地址、黑洞MAC地址、多端口单播MAC地址、组播MAC地址。
 
-[**[static]{lang="EN-US"}**]{#struct_0_20244_20619_1812994526}[：显示本地静态]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+**[static**]：显示本地静态MAC地址信息。
 
-[**[interface]{lang="EN-US"}[ tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*]{#struct_0_20244_20619_1149884008}[：显示指定]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口下的本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。如果不指定本参数，将显示所有]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口下的]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[的本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+**[interface tunnel*** interface-number*]：显示指定EVI隧道接口下的本地MAC地址信息。如果不指定本参数，将显示所有EVI隧道接口下的EVI IS-IS的本地MAC地址信息。
 
-[**[vlan ]{lang="EN-US"}***[vlan-id]{lang="EN-US"}*]{#struct_0_20244_20619_x1476824990}[：显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果不指定本参数，将显示所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+**[vlan ***vlan-id*]：显示指定VLAN的本地MAC地址信息。*vlan-id*表示VLAN编号，取值范围为1～4094。如果不指定本参数，将显示所有VLAN的本地MAC地址信息。
 
-[**[filtered]{lang="EN-US"}**]{#struct_0_20244_20619_x852885528}[：只显示本地存在，但是被路由策略过滤掉、不能发布的本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+**[filtered**]：只显示本地存在，但是被路由策略过滤掉、不能发布的本地MAC地址信息。
 
-[**[passed]{lang="EN-US"}**]{#struct_0_20244_20619_1788324872}[：只显示没有被路由策略过滤掉、允许发布的本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+**[passed**]：只显示没有被路由策略过滤掉、允许发布的本地MAC地址信息。
 
-[**[count]{lang="EN-US"}**]{#struct_0_20244_20619_x1756618515}[：显示本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的数目。]{style="font-family:宋体"}
+**[count**]：显示本地MAC地址的数目。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_1010829604}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x1194501773}[显示所有]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口下的]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[的本地动态]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+\# 显示所有EVI隧道接口下的EVI IS-IS的本地动态MAC地址信息。
 
-[[\<Sysname\> display evi isis local-mac dynamic]{lang="EN-US"}]{#struct_0_20244_20619_489566872}
+\<Sysname\> display evi isis local-mac dynamic
 
-[Process ID: 0]{lang="EN-US"}
+Process ID: 0
 
-[Tunnel interface: Tunnel0]{lang="EN-US"}
+Tunnel interface: Tunnel0
 
-[  VLAN ID: 100]{lang="EN-US"}
+  VLAN ID: 100
 
-[    MAC address: 00aa-00bb-00cc]{lang="EN-US"}
+    MAC address: 00aa-00bb-00cc
 
-[    MAC address: 00aa-00cc-00bb (Filtered)]{lang="EN-US"}
+    MAC address: 00aa-00cc-00bb (Filtered)
 
-[    MAC address: 00cc-00aa-00bb]{lang="EN-US"}
+    MAC address: 00cc-00aa-00bb
 
-[  VLAN ID: 50]{lang="EN-US"}
+  VLAN ID: 50
 
-[    MAC address: 00bb-00aa-00cc]{lang="EN-US"}
+    MAC address: 00bb-00aa-00cc
 
-[    MAC address: 00bb-00cc-00aa]{lang="EN-US"}
+    MAC address: 00bb-00cc-00aa
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x853344279}[显示]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口]{style="font-family:宋体"}[Tunnel0]{lang="EN-US"}[下允许发布的]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[的本地动态]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+\# 显示EVI隧道接口Tunnel0下允许发布的EVI IS-IS的本地动态MAC地址信息。
 
-[[\<Sysname\> display evi isis local-mac dynamic interface tunnel 0 passed]{lang="EN-US"}]{#struct_0_20244_20619_x973987901}
+\<Sysname\> display evi isis local-mac dynamic interface tunnel 0 passed
 
-[Process ID: 0]{lang="EN-US"}
+Process ID: 0
 
-[Tunnel interface: Tunnel0]{lang="EN-US"}
+Tunnel interface: Tunnel0
 
-[  VLAN ID: 100]{lang="EN-US"}
+  VLAN ID: 100
 
-[    MAC address: 00aa-00bb-00cc]{lang="EN-US"}
+    MAC address: 00aa-00bb-00cc
 
-[    MAC address: 00cc-00aa-00bb]{lang="EN-US"}
+    MAC address: 00cc-00aa-00bb
 
-[  VLAN ID: 50]{lang="EN-US"}
+  VLAN ID: 50
 
-[    MAC address: 00bb-00aa-00cc]{lang="EN-US"}
+    MAC address: 00bb-00aa-00cc
 
-[    MAC address: 00bb-00cc-00aa]{lang="EN-US"}
+    MAC address: 00bb-00cc-00aa
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x724918374}[显示所有]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口下的]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[的本地非发布]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+\# 显示所有EVI隧道接口下的EVI IS-IS的本地非发布MAC地址信息。
 
-[[\<Sysname\> display evi isis local-mac nonadvertised]{lang="EN-US"}]{#struct_0_20244_20619_1376233105}
+\<Sysname\> display evi isis local-mac nonadvertised
 
-[MAC Flags: F-Flooding, B-Blackhole, P-Multiport, M-Multicast]{lang="EN-US"}
+MAC Flags: F-Flooding, B-Blackhole, P-Multiport, M-Multicast
 
-[Process ID: 3]{lang="EN-US"}
+Process ID: 3
 
-[  Tunnel interface: Tunnel3]{lang="EN-US"}
+  Tunnel interface: Tunnel3
 
-[  VLAN ID: 111]{lang="EN-US"}
+  VLAN ID: 111
 
-[    MAC address: 0005-0005-0005]{lang="EN-US"}
+    MAC address: 0005-0005-0005
 
-[          Flags: F]{lang="EN-US"}
+          Flags: F
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x1194436237}[显示所有]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口下的]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[的本地静态]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+\# 显示所有EVI隧道接口下的EVI IS-IS的本地静态MAC地址信息。
 
-[[\<Sysname\> display evi isis local-mac static]{lang="EN-US"}]{#struct_0_20244_20619_771107482}
+\<Sysname\> display evi isis local-mac static
 
-[Process ID: 0]{lang="EN-US"}
+Process ID: 0
 
-[Tunnel interface: Tunnel0]{lang="EN-US"}
+Tunnel interface: Tunnel0
 
-[  VLAN ID: 100]{lang="EN-US"}
+  VLAN ID: 100
 
-[    MAC address: 00aa-00bb-00cc]{lang="EN-US"}
+    MAC address: 00aa-00bb-00cc
 
-[    MAC address: 00aa-00cc-00bb (Filtered)]{lang="EN-US"}
+    MAC address: 00aa-00cc-00bb (Filtered)
 
-[    MAC address: 00cc-00aa-00bb]{lang="EN-US"}
+    MAC address: 00cc-00aa-00bb
 
-[  VLAN ID: 50]{lang="EN-US"}
+  VLAN ID: 50
 
-[    MAC address: 00bb-00aa-00cc]{lang="EN-US"}
+    MAC address: 00bb-00aa-00cc
 
-[    MAC address: 00bb-00cc-00aa]{lang="EN-US"}
+    MAC address: 00bb-00cc-00aa
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x853409815}[显示]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口]{style="font-family:宋体"}[Tunnel0]{lang="EN-US"}[下被路由策略过滤不允许发布的]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[的本地静态]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+\# 显示EVI隧道接口Tunnel0下被路由策略过滤不允许发布的EVI IS-IS的本地静态MAC地址信息。
 
-[[\<Sysname\> display evi isis local-mac static interface tunnel 0 filtered]{lang="EN-US"}]{#struct_0_20244_20619_x853475351}
+\<Sysname\> display evi isis local-mac static interface tunnel 0 filtered
 
-[Process ID: 0]{lang="EN-US"}
+Process ID: 0
 
-[Tunnel interface: Tunnel0]{lang="EN-US"}
+Tunnel interface: Tunnel0
 
-[  VLAN ID: 100]{lang="EN-US"}
+  VLAN ID: 100
 
-[    MAC address: 00aa-00cc-00bb (Filtered)]{lang="EN-US"}
+    MAC address: 00aa-00cc-00bb (Filtered)
 
-[  VLAN ID: 50]{lang="EN-US"}
+  VLAN ID: 50
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_1682488840}[显示]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口]{style="font-family:宋体"}[Tunnel0]{lang="EN-US"}[下的本地动态]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的数目。]{style="font-family:宋体"}
+\# 显示EVI隧道接口Tunnel0下的本地动态MAC地址的数目。
 
-[[\<Sysname\> display evi isis local-mac dynamic interface tunnel 0 count]{lang="EN-US"}]{#struct_0_20244_20619_x60829167}
+\<Sysname\> display evi isis local-mac dynamic interface tunnel 0 count
 
-[5 MAC addresses found.]{lang="EN-US"}
+5 MAC addresses found.
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x1743869051}[显示]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口]{style="font-family:宋体"}[Tunnel0]{lang="EN-US"}[下允许发布的本地动态]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的数目。]{style="font-family:宋体"}
+\# 显示EVI隧道接口Tunnel0下允许发布的本地动态MAC地址的数目。
 
-[[\<Sysname\> display evi isis local-mac dynamic interface tunnel 0 passed count]{lang="EN-US"}]{#struct_0_20244_20619_x853540887}
+\<Sysname\> display evi isis local-mac dynamic interface tunnel 0 passed count
 
-[4 MAC addresses found.]{lang="EN-US"}
+4 MAC addresses found.
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_204730994}[显示]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口]{style="font-family:宋体"}[Tunnel0]{lang="EN-US"}[下被路由策略过滤不允许发布的本地静态]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的数目。]{style="font-family:宋体"}
+\# 显示EVI隧道接口Tunnel0下被路由策略过滤不允许发布的本地静态MAC地址的数目。
 
-[[\<Sysname\> display evi isis local-mac static interface tunnel 0 filtered count]{lang="EN-US"}]{#struct_0_20244_20619_x1545056223}
+\<Sysname\> display evi isis local-mac static interface tunnel 0 filtered count
 
-[1 MAC addresses found.]{lang="EN-US"}
+1 MAC addresses found.
 
-[[表1-4 ]{lang="EN-US"}[display ]{lang="EN-US"}[evi isis local-mac]{lang="EN-US"}]{#struct_0_20244_20619_1991337301}[显示信息描述表]{style="font-family:黑体"}
+表1-4 display evi isis local-mac显示信息描述表
 
-[]{#table_struct_0_2078406787}[[字段]{style="font-family:黑体"}]{#struct_0_20244_20619_866307435}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20244_20619_x1194108557}
+描述
 
-[[Process ID]{lang="EN-US"}]{#struct_0_20244_20619_1262968874}
+Process ID
 
-[[进程实例号]{style="font-family:宋体"}]{#struct_0_20244_20619_1137421776}
+进程实例号
 
-[[Tunnel interface]{lang="EN-US"}]{#struct_0_20244_20619_x61628423}
+Tunnel interface
 
-[[进程实例对应的]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_x473848731}[接口]{style="font-family:宋体"}
+进程实例对应的Tunnel接口
 
-[[VLAN ID]{lang="EN-US"}]{#struct_0_20244_20619_x1626120660}
+VLAN ID
 
-[[进程实例下的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_20244_20619_x1194043021}
+进程实例下的VLAN
 
-[[MAC address]{lang="EN-US"}]{#struct_0_20244_20619_835009461}
+MAC address
 
-[[MAC]{lang="EN-US"}]{#struct_0_20244_20619_641100847}[地址]{style="font-family:宋体"}
+MAC地址
 
-[[(Filtered)]{lang="EN-US"}]{#struct_0_20244_20619_x853082135}
+(Filtered)
 
-[[被路由策略过滤掉、不能发布的]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_20244_20619_x1742862224}[地址]{style="font-family:宋体"}
+被路由策略过滤掉、不能发布的MAC地址
 
-[[Flags]{lang="EN-US"}]{#struct_0_20244_20619_845450359}
+Flags
 
-[[EVI IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_x347545477}[本地非发布]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址标记：]{style="font-family:宋体"}
+EVI IS-IS本地非发布MAC地址标记：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[F-Flooding]{lang="EN-US"}]{#struct_0_20244_20619_x228084895}[：泛洪]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址（即通过]{style="font-family:宋体"}**[evi selective-flooding mac-address]{lang="EN-US"}**[命令配置的]{style="font-family:宋体"}[选择性泛洪的]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}[）]{style="font-family:宋体"}
+·F-Flooding：泛洪MAC地址（即通过**evi selective-flooding mac-address**命令配置的选择性泛洪的MAC地址）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[B-Blackhole]{lang="EN-US"}]{#struct_0_20244_20619_x1194632844}[：黑洞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+·B-Blackhole：黑洞MAC地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[P-Multiport]{lang="EN-US"}]{#struct_0_20244_20619_x163084175}[：多端口单播]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+·P-Multiport：多端口单播MAC地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[M-Multicast]{lang="EN-US"}]{#struct_0_20244_20619_x580455735}[：组播]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+·M-Multicast：组播MAC地址
 
-[[5 MAC addresses found]{lang="EN-US"}]{#struct_0_20244_20619_x827814925}
+5 MAC addresses found
 
-[[本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_20244_20619_x1873727630}[地址的数目，本例中本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的数目为]{style="font-family:宋体"}[5]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1888154093 .myid}
-[]{#_Toc404798347}[]{#struct_0_20244_20619_x1194567308}[]{#_Toc312867795}
+本地MAC地址的数目，本例中本地MAC地址的数目为5
 
 **EVI \-- EVI配置命令 \-- display evi isis lsdb**
 
 ------------------------------------------------------------------------
 
-[**[display evi isis lsdb]{lang="EN-US"}**]{#struct_0_20244_20619_x1447095731}[命令用来显示]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[的链路状态数据库。]{style="font-family:宋体"}
+**[display evi isis lsdb**]命令用来显示EVI IS-IS的链路状态数据库。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_872877039}
+【命令】
 
-[**[display evi isis lsdb]{lang="EN-US"}**[ \[ **local** \| **lsp-id** *lspid* \| **verbose** \] \* \[ *process-id* \]]{lang="EN-US"}]{#struct_0_20244_20619_1873694046}
+**[display evi isis lsdb**[ [ **local** \| **lsp-id** *lspid* \| **verbose** ] \*  *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x487061715}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_20244_20619_x1736591200}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_2108142205}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_x907792942}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_20244_20619_x625080245}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_x1194763916}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_20244_20619_1866232525}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x120111806}
+【参数】
 
-[**[local]{lang="EN-US"}**]{#struct_0_20244_20619_156005744}[：显示当前设备产生的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[local**]：显示当前设备产生的LSP的信息。
 
-[**[lsp-id]{lang="EN-US"}**[ *lspid*]{lang="EN-US"}]{#struct_0_20244_20619_x726694900}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[标识，形式为]{style="font-family:宋体"}[SYSID*.*Pseudonode ID-fragment num]{lang="EN-US"}[，其中，]{style="font-family:宋体"}[SYSID]{lang="EN-US"}[是]{style="font-family:宋体"}[产生该]{style="font-family:宋体"}[LSP]{lang="EN-GB"}[的结点或伪结点的]{style="font-family:宋体"}[SystemID]{lang="EN-US"}[，]{style="font-family:宋体"}[fragment num]{lang="EN-US"}[是该]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的分片号。]{style="font-family:宋体"}
+**[lsp-id** *lspid*]：LSP标识，形式为SYSID*.*Pseudonode ID-fragment num，其中，SYSID是产生该LSP的结点或伪结点的SystemID，fragment num是该LSP的分片号。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_20244_20619_2127179565}[：显示链路状态数据库中的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的详细信息。如果不指定本参数，将显示链路状态数据库中的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的摘要信息。]{style="font-family:宋体"}
+**[verbose**]：显示链路状态数据库中的LSP的详细信息。如果不指定本参数，将显示链路状态数据库中的LSP的摘要信息。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_20244_20619_520568939}[：显示指定]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的链路状态信息。]{style="font-family:宋体"}*[process-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。如果不指定本参数，将显示所有]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的链路状态信息。]{style="font-family:宋体"}
+*[process-id*]：显示指定EVI IS-IS进程的链路状态信息。*process-id*表示EVI IS-IS进程号，取值范围为0～65535。如果不指定本参数，将显示所有EVI IS-IS进程的链路状态信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_1739730198}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x1194698380}[显示链路状态数据库的摘要信息。]{style="font-family:宋体"}
+\# 显示链路状态数据库的摘要信息。
 
-[[\<Sysname\> display evi isis lsdb]{lang="EN-US"}]{#struct_0_20244_20619_x409467444}
+\<Sysname\> display evi isis lsdb
 
-[ ]{lang="EN-US"}
+               Link state database information for EVI-ISIS(0)
 
-[               Link state database information for EVI-ISIS(0)]{lang="EN-US"}
+LSP ID                 Seq num     Checksum  Holdtime  Length    Overload
 
-[LSP ID                 Seq num     Checksum  Holdtime  Length    Overload]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+0011.2200.0001.00-00\*  0x000000f3  0xd95e    45        47        0
 
-[0011.2200.0001.00-00\*  0x000000f3  0xd95e    45        47        0]{lang="EN-US"}
+0011.2200.0101.00-00   0x00000017  0xbb6f    1139      85        0
 
-[0011.2200.0101.00-00   0x00000017  0xbb6f    1139      85        0]{lang="EN-US"}
+0011.2200.0101.02-00   0x00000002  0x7973    805       54        0
 
-[0011.2200.0101.02-00   0x00000002  0x7973    805       54        0]{lang="EN-US"}
+Flags: \*-Self LSP, +-Self LSP(Extended)
 
-[ ]{lang="EN-US"}
+\# 显示链路状态数据库的详细信息。
 
-[Flags: \*-Self LSP, +-Self LSP(Extended)]{lang="EN-US"}
+\<Sysname\> display evi isis lsdb verbose
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_191123255}[显示链路状态数据库的详细信息。]{style="font-family:宋体"}
+                Link state database information for EVI-ISIS(1)
 
-[[\<Sysname\> display evi isis lsdb verbose]{lang="EN-US"}]{#struct_0_20244_20619_x1194370700}
+LSP ID: 3822.d69e.ee00.00-00\*
 
-[ ]{lang="EN-US"}
+Sequence number: 0x00000001
 
-[                Link state database information for EVI-ISIS(1)]{lang="EN-US"}
+Checksum: 0xe0b5
 
-[ ]{lang="EN-US"}
+Holdtime: 820s
 
-[LSP ID: 3822.d69e.ee00.00-00\*]{lang="EN-US"}
+Length: 47
 
-[Sequence number: 0x00000001]{lang="EN-US"}
+Overload: 0
 
-[Checksum: 0xe0b5]{lang="EN-US"}
+Source: 3822.d69e.ee00.00
 
-[Holdtime: 820s]{lang="EN-US"}
+Neighbour
 
-[Length: 47]{lang="EN-US"}
+    ID: 3ce5.a600.7600.02, Cost: 16777214
 
-[Overload: 0]{lang="EN-US"}
+LSP ID: 3ce5.a600.7600.00-00
 
-[Source: 3822.d69e.ee00.00]{lang="EN-US"}
+Sequence number: 0x00000007
 
-[Neighbour]{lang="EN-US"}
+Checksum: 0xc98a
 
-[    ID: 3ce5.a600.7600.02, Cost: 16777214]{lang="EN-US"}
+Holdtime: 1163s
 
-[ ]{lang="EN-US"}
+Length: 72
 
-[LSP ID: 3ce5.a600.7600.00-00]{lang="EN-US"}
+Overload: 0
 
-[Sequence number: 0x00000007]{lang="EN-US"}
+Source: 3ce5.a600.7600.00
 
-[Checksum: 0xc98a]{lang="EN-US"}
+Neighbour
 
-[Holdtime: 1163s]{lang="EN-US"}
+    ID: 3ce5.a600.7600.02, Cost: 16777214
 
-[Length: 72]{lang="EN-US"}
+MAC addresses:
 
-[Overload: 0]{lang="EN-US"}
+  VLAN ID: 1   Confidence: 1
 
-[Source: 3ce5.a600.7600.00]{lang="EN-US"}
+    3822-d69e-ef68
 
-[Neighbour]{lang="EN-US"}
+    d485-64aa-7f23
 
-[    ID: 3ce5.a600.7600.02, Cost: 16777214]{lang="EN-US"}
+    3408-0499-b44c
 
-[MAC addresses:]{lang="EN-US"}
+LSP ID: 3ce5.a600.7600.02-00
 
-[  VLAN ID: 1   Confidence: 1]{lang="EN-US"}
+Sequence number: 0x00000001
 
-[    3822-d69e-ef68]{lang="EN-US"}
+Checksum: 0xe16d
 
-[    d485-64aa-7f23]{lang="EN-US"}
+Holdtime: 819s
 
-[    3408-0499-b44c]{lang="EN-US"}
+Length: 54
 
-[ ]{lang="EN-US"}
+Overload: 0
 
-[LSP ID: 3ce5.a600.7600.02-00]{lang="EN-US"}
+Source: 3ce5.a600.7600.02
 
-[Sequence number: 0x00000001]{lang="EN-US"}
+Neighbour
 
-[Checksum: 0xe16d]{lang="EN-US"}
+    ID: 3822.d69e.ee00.00, Cost: 0
 
-[Holdtime: 819s]{lang="EN-US"}
+    ID: 3ce5.a600.7600.00, Cost: 0
 
-[Length: 54]{lang="EN-US"}
+Flags: \*-Self LSP, +-Self LSP(Extended)
 
-[Overload: 0]{lang="EN-US"}
+表1-5 display evi isis lsdb命令显示信息描述表
 
-[Source: 3ce5.a600.7600.02]{lang="EN-US"}
+字段
 
-[Neighbour]{lang="EN-US"}
+描述
 
-[    ID: 3822.d69e.ee00.00, Cost: 0]{lang="EN-US"}
+Link state database information for EVI-ISIS(0)
 
-[    ID: 3ce5.a600.7600.00, Cost: 0]{lang="EN-US"}
+EVI IS-IS进程0的链路状态数据库信息
 
-[ ]{lang="EN-US"}
+LSP ID
 
-[Flags: \*-Self LSP, +-Self LSP(Extended)]{lang="EN-US"}
+链路状态报文ID
 
-[[表1-5 ]{lang="EN-US"}[display evi isis lsdb]{lang="EN-US"}]{#struct_0_20244_20619_x1194305164}[命令显示信息描述表]{style="font-family:黑体"}
+Seqence number
 
-[]{#table_struct_0_2072362019}[[字段]{style="font-family:黑体"}]{#struct_0_20244_20619_1441715393}
-:::
+LSP序列号
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20244_20619_2128536989}
+Checksum
 
-[[Link state database information for EVI-ISIS(0)]{lang="EN-US"}]{#struct_0_20244_20619_x1228521916}
+LSP校验和
 
-[[EVI IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_x2098824852}[进程]{style="font-family:宋体"}[0]{lang="EN-US"}[的链路状态数据库信息]{style="font-family:宋体"}
+Holdtime
 
-[[LSP ID]{lang="EN-US"}]{#struct_0_20244_20619_x1571248653}
+LSP生存时间，随着时间推移递减
 
-[[链路状态报文]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_20244_20619_1719188207}
+Length
 
-[[Seqence number]{lang="EN-US"}]{#struct_0_20244_20619_x1194501772}
+LSP长度
 
-[[LSP]{lang="EN-US"}]{#struct_0_20244_20619_2055650813}[序列号]{style="font-family:宋体"}
+Overload
 
-[[Checksum]{lang="EN-US"}]{#struct_0_20244_20619_x26404653}
+LSP中Overload bit的置位情况。1表示置位，0表示没有置位
 
-[[LSP]{lang="EN-US"}]{#struct_0_20244_20619_1285348355}[校验和]{style="font-family:宋体"}
+Source
 
-[[Holdtime]{lang="EN-US"}]{#struct_0_20244_20619_864080570}
+LSP生成路由器的System ID
 
-[[LSP]{lang="EN-US"}]{#struct_0_20244_20619_x1194436236}[生存时间，随着时间推移递减]{style="font-family:宋体"}
+Neighbour ID
 
-[[Length]{lang="EN-US"}]{#struct_0_20244_20619_x794976459}
+LSP生成路由器邻居的System ID
 
-[[LSP]{lang="EN-US"}]{#struct_0_20244_20619_824971194}[长度]{style="font-family:宋体"}
+Cost
 
-[[Overload]{lang="EN-US"}]{#struct_0_20244_20619_x1443769869}
+开销值
 
-[[LSP]{lang="EN-US"}]{#struct_0_20244_20619_x1940472831}[中]{style="font-family:宋体"}[Overload bit]{lang="EN-US"}[的置位情况。]{style="font-family:宋体"}[1]{lang="EN-US"}[表示置位，]{style="font-family:宋体"}[0]{lang="EN-US"}[表示没有置位]{style="font-family:宋体"}
+MAC address
 
-[[Source]{lang="EN-US"}]{#struct_0_20244_20619_1692569994}
+LSP生成路由器的MAC地址信息
 
-[[LSP]{lang="SV"}]{#struct_0_20244_20619_x1194108556}[生成路由器的]{style="font-family:宋体"}[System ID]{lang="SV"}
+VLAN ID
 
-[[Neighbour ID]{lang="EN-US"}]{#struct_0_20244_20619_x1465914481}
+LSP生成路由器的MAC地址所在的VLAN ID
 
-[[LSP]{lang="EN-US"}]{#struct_0_20244_20619_1055845023}[生成路由器邻居的]{style="font-family:宋体"}[System ID]{lang="EN-US"}
+Confidence
 
-[[Cost]{lang="EN-US"}]{#struct_0_20244_20619_745069828}
+可信度
 
-[[开销值]{style="font-family:宋体"}]{#struct_0_20244_20619_x136007883}
+Flags: \*-Self LSP, +-Self LSP(Extended)
 
-[[MAC address]{lang="EN-US"}]{#struct_0_20244_20619_x1194043020}
+带\*号表示是本地生成的、原始系统LSP
 
-[[LSP]{lang="EN-US"}]{#struct_0_20244_20619_x1893873894}[生成路由器的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息]{style="font-family:宋体"}
-
-[[VLAN ID]{lang="EN-US"}]{#struct_0_20244_20619_x1134801633}
-
-[[LSP]{lang="EN-US"}]{#struct_0_20244_20619_1731932825}[生成路由器的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址所在的]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}
-
-[[Confidence]{lang="EN-US"}]{#struct_0_20244_20619_x1194632847}
-
-[[可信度]{style="font-family:宋体"}]{#struct_0_20244_20619_240200352}
-
-[[Flags: \*-Self LSP, +-Self LSP(Extended)]{lang="EN-US"}]{#struct_0_20244_20619_x1721195824}
-
-[[带]{style="font-family:宋体"}[\*]{lang="EN-US"}]{#struct_0_20244_20619_312902686}[号表示是本地生成的、原始系统]{style="font-family:宋体"}[LSP]{lang="EN-US"}
-
-[[带]{style="font-family:宋体"}[+]{lang="EN-US"}]{#struct_0_20244_20619_1515602466}[号表示是本地生成的、虚拟系统]{style="font-family:宋体"}[LSP]{lang="EN-US"}[（]{style="font-family:宋体"}[LSP]{lang="EN-US"}[扩展分片）]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1111785451 .myid}
-[]{#_Toc404798348}[]{#struct_0_20244_20619_x1194567311}[]{#_Toc312867797}
+带+号表示是本地生成的、虚拟系统LSP（LSP扩展分片）
 
 **EVI \-- EVI配置命令 \-- display evi isis peer**
 
 ------------------------------------------------------------------------
 
-[**[display evi isis peer]{lang="EN-US"}**]{#struct_0_20244_20619_1637952448}[命令用来显示]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[的邻居信息。]{style="font-family:宋体"}
+**[display evi isis peer**]命令用来显示EVI IS-IS的邻居信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_2039545133}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **evi isis** **peer** \[ *process-id* \]]{lang="EN-US"}]{#struct_0_20244_20619_x445398605}
+**[display** **evi isis** **peer** [ *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_1408218565}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_20244_20619_x1795962618}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_116941325}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_556970260}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_20244_20619_x1194763919}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_750487278}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_20244_20619_1060708909}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x939938157}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_20244_20619_971278285}[：显示指定的]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程下的邻居信息。]{style="font-family:宋体"}*[process-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。如果不指定本参数，将显示所有]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的邻居信息。]{style="font-family:宋体"}
+*[process-id*]：显示指定的EVI IS-IS进程下的邻居信息。*process-id*表示EVI IS-IS进程号，取值范围为0～65535。如果不指定本参数，将显示所有EVI IS-IS进程的邻居信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_2005285296}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_1898798647}[显示]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[0]{lang="EN-US"}[的邻居信息。（此例为无冲突的站点内邻居）]{style="font-family:宋体"}
+\# 显示EVI IS-IS进程0的邻居信息。（此例为无冲突的站点内邻居）
 
-[[\<Sysname\> display evi isis peer 0]{lang="EN-US"}]{#struct_0_20244_20619_x1194698383}
+\<Sysname\> display evi isis peer 0
 
-[Process ID: 0]{lang="EN-US"}
+Process ID: 0
 
-[System ID: 0011.2200.0101]{lang="EN-US"}
+System ID: 0011.2200.0101
 
-[Link interface: Tunnel0]{lang="EN-US"}
+Link interface: Tunnel0
 
-[Circuit ID: 0011.2200.0301.01]{lang="EN-US"}
+Circuit ID: 0011.2200.0301.01
 
-[State: Up]{lang="EN-US"}
+State: Up
 
-[Site ID: 1]{lang="EN-US"}
+Site ID: 1
 
-[Hold time: 29s]{lang="EN-US"}
+Hold time: 29s
 
-[Neighbour DED priority: 64]{lang="EN-US"}
+Neighbour DED priority: 64
 
-[Uptime: 00:10:56]{lang="EN-US"}
+Uptime: 00:10:56
 
-[ ]{lang="EN-US"}
+Process ID: 0
 
-[Process ID: 0]{lang="EN-US"}
+System ID: 0011.2200.0101
 
-[System ID: 0011.2200.0101]{lang="EN-US"}
+Link interface: EVI-Link0
 
-[Link interface: EVI-Link0]{lang="EN-US"}
+Circuit ID: \-\--
 
-[Circuit ID: \-\--]{lang="EN-US"}
+State: Init
 
-[State: Init]{lang="EN-US"}
+Site ID: 1
 
-[Site ID: 1]{lang="EN-US"}
+Hold time: 29s
 
-[Hold time: 29s]{lang="EN-US"}
+Neighbour DED priority: 64
 
-[Neighbour DED priority: 64]{lang="EN-US"}
+Uptime: 00:00:58
 
-[Uptime: 00:00:58]{lang="EN-US"}
+\# 显示EVI IS-IS进程0的邻居信息（此例为有冲突的站点间邻居）。
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x853082138}[显示]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[0]{lang="EN-US"}[的邻居信息（此例为有冲突的站点间邻居）。]{style="font-family:宋体"}
+\<Sysname\> display evi isis peer 0
 
-[[\<Sysname\> display evi isis peer 0]{lang="EN-US"}]{#struct_0_20244_20619_x853147674}
+Process ID: 0
 
-[Process ID: 0]{lang="EN-US"}
+System ID: 0011.2200.0301
 
-[System ID: 0011.2200.0301]{lang="EN-US"}
+Link interface: EVI-Link0
 
-[Link interface: EVI-Link0]{lang="EN-US"}
+Circuit ID: \-\--
 
-[Circuit ID: \-\--]{lang="EN-US"}
+State: Init
 
-[State: Init]{lang="EN-US"}
+Site ID: 1 (Conflict)
 
-[Site ID: 1 (Conflict)]{lang="EN-US"}
+Hold time: 27s
 
-[Hold time: 27s]{lang="EN-US"}
+Neighbor DED priority: 64
 
-[Neighbor DED priority: 64]{lang="EN-US"}
+Uptime: 00:00:00
 
-[Uptime: 00:00:00]{lang="EN-US"}
+表1-6 display evi isis peer命令显示信息描述表
 
-[[表1-6 ]{lang="EN-US"}[display evi isis peer]{lang="EN-US"}]{#struct_0_20244_20619_x1975551385}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_2071062563}[[字段]{style="font-family:黑体"}]{#struct_0_20244_20619_2117222185}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20244_20619_x1361244364}
+Process ID
 
-[[Process ID]{lang="EN-US"}]{#struct_0_20244_20619_x1194370703}
+进程实例号
 
-[[进程实例号]{style="font-family:宋体"}]{#struct_0_20244_20619_1914730525}
+System ID
 
-[[System ID]{lang="EN-US"}]{#struct_0_20244_20619_394659014}
+邻居的系统ID
 
-[[邻居的系统]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_20244_20619_x1959117899}
+Link interface
 
-[[Link interface]{lang="EN-US"}]{#struct_0_20244_20619_382352358}
+·Tunnel：与对端相连的本地Tunnel接口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_x1258976884}[：与对端相连的本地]{lang="EN-US" style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口]{lang="EN-US" style="font-family:宋体"}
+·EVI-link：与对端相连的本地EVI-Link接口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[EVI]{lang="EN-US"}]{#struct_0_20244_20619_x1194305167}[-]{lang="EN-US"}[link]{lang="EN-US"}[：与对端相连的本地]{lang="EN-US" style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口]{lang="EN-US" style="font-family:宋体"}
+Circuit ID
 
-[[Circuit ID]{lang="EN-US"}]{#struct_0_20244_20619_x1287167962}
+链路ID
 
-[[链路]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_20244_20619_3114677}
+State
 
-[[State]{lang="EN-US"}]{#struct_0_20244_20619_x1267177021}
+邻居状态：
 
-[[邻居状态：]{style="font-family:宋体"}]{#struct_0_20244_20619_1680198705}
+·Init：邻居初始化
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Init]{lang="EN-US"}]{#struct_0_20244_20619_x1896426886}[：]{lang="EN-US" style="font-family:宋体"}[邻居初始化]{style="font-family:宋体"}
+·Up：邻接关系建立
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Up]{lang="EN-US"}]{#struct_0_20244_20619_x1194501775}[：邻接关系建立]{style="font-family:宋体"}
+·Down：邻接关系断开
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Down]{lang="EN-US"}]{#struct_0_20244_20619_x673232542}[：邻接关系断开]{style="font-family:宋体"}
+Site ID
 
-[[Site ID]{lang="EN-US"}]{#struct_0_20244_20619_x853213210}
+邻居的站点ID。括号中的Conflict表示邻居的站点ID与本地站点ID有冲突。当站点间邻居的站点ID与本地站点ID一致、或者站点内邻居的站点ID与本地站点ID不一致，则认为邻居的站点ID与本地站点ID有冲突
 
-[[邻居的站点]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_20244_20619_x853082137}[。括号中的]{style="font-family:宋体"}[Conflict]{lang="EN-US"}[表示邻居的站点]{style="font-family:宋体"}[ID]{lang="EN-US"}[与本地站点]{style="font-family:宋体"}[ID]{lang="EN-US"}[有冲突。当站点间邻居的站点]{style="font-family:宋体"}[ID]{lang="EN-US"}[与本地站点]{style="font-family:宋体"}[ID]{lang="EN-US"}[一致、或者站点内邻居的站点]{style="font-family:宋体"}[ID]{lang="EN-US"}[与本地站点]{style="font-family:宋体"}[ID]{lang="EN-US"}[不一致，则认为邻居的站点]{style="font-family:宋体"}[ID]{lang="EN-US"}[与本地站点]{style="font-family:宋体"}[ID]{lang="EN-US"}[有冲突]{style="font-family:宋体"}
+Hold time
 
-[[Hold time]{lang="EN-US"}]{#struct_0_20244_20619_126348046}
+存活时间，随着时间推移递减，如果在存活时间内还没有收到邻居发送的Hello报文，则认为邻居已经失效，如果收到了Hello报文，则存活时间将重置为初始值
 
-[[存活时间，随着时间推移递减，如果在存活时间内还没有收到邻居发送的]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_20244_20619_260854598}[报文，则认为邻居已经失效，如果收到了]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文，则存活时间将重置为初始值]{style="font-family:宋体"}
+Neighbour DED Priority
 
-[[Neighbour DED Priority]{lang="EN-US"}]{#struct_0_20244_20619_765812362}
+邻居接口DED优先级
 
-[[邻居接口]{style="font-family:宋体"}[DED]{lang="EN-US"}]{#struct_0_20244_20619_x1194436239}[优先级]{style="font-family:宋体"}
+Uptime
 
-[[Uptime]{lang="EN-US"}]{#struct_0_20244_20619_x35461572}
-
-[[邻居关系保持的时间]{style="font-family:宋体"}]{#struct_0_20244_20619_x1961907262}
-
-[ ]{lang="EN-US"}
-
-::: {#-679947844 .myid}
-[]{#_Toc404798349}[]{#struct_0_20244_20619_x584142666}
+邻居关系保持的时间
 
 **EVI \-- EVI配置命令 \-- display evi isis remote-mac**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}[ evi isis remote-mac]{lang="EN-US"}**]{#struct_0_20244_20619_1277385518}[命令用来显示]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+**[display evi isis remote-mac**]命令用来显示EVI IS-IS的远端MAC地址信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_2127729404}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **evi isis** **remote-mac** \[ **interface** **tunnel** *interface-number* \[ **vlan** *vlan-id* \] \[ **count** \] \]]{lang="EN-US"}]{#struct_0_20244_20619_x1194108559}
+**[display** **evi isis** **remote-mac** [ **interface** **tunnel** *interface-number* [ **vlan** *vlan-id*   **count**  ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_812630180}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_20244_20619_962183781}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x431890987}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_1382802207}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_20244_20619_1144032564}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_1154439846}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_20244_20619_910709958}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1194043023}
+【参数】
 
-[**[interface]{lang="EN-US"}[ tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*]{#struct_0_20244_20619_x327789953}[：显示指定]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口下的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。如果不指定本参数，将显示所有]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口下的]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+**[interface tunnel*** interface-number*]：显示指定EVI隧道接口下的远端MAC地址信息。如果不指定本参数，将显示所有EVI隧道接口下的EVI IS-IS的远端MAC地址信息。
 
-[**[vlan ]{lang="EN-US"}***[vlan-id]{lang="EN-US"}*]{#struct_0_20244_20619_x1629218069}[：显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果不指定本参数，将显示所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+**[vlan ***vlan-id*]：显示指定VLAN的远端MAC地址信息。*vlan-id*表示VLAN编号，取值范围为1～4094。如果不指定本参数，将显示所有VLAN的远端MAC地址信息。
 
-[**[count]{lang="EN-US"}**]{#struct_0_20244_20619_x452867688}[：显示远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的数目。]{style="font-family:宋体"}
+**[count**]：显示远端MAC地址的数目。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2124692776}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_440278170}[显示所有]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口下的]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+\# 显示所有EVI隧道接口下的EVI IS-IS的远端MAC地址信息。
 
-[[\<Sysname\> display evi isis remote-mac]{lang="EN-US"}]{#struct_0_20244_20619_x1194632846}
+\<Sysname\> display evi isis remote-mac
 
-[Process ID: 0]{lang="EN-US"}
+Process ID: 0
 
-[  Tunnel interface: Tunnel0]{lang="EN-US"}
+  Tunnel interface: Tunnel0
 
-[  VLAN ID: 3]{lang="EN-US"}
+  VLAN ID: 3
 
-[    MAC address: 0033-0011-0022]{lang="EN-US"}
+    MAC address: 0033-0011-0022
 
-[      Interface:  EVI-Link0]{lang="EN-US"}
+      Interface:  EVI-Link0
 
-[          Flags:  0x2]{lang="EN-US"}
+          Flags:  0x2
 
-[  VLAN ID: 2]{lang="EN-US"}
+  VLAN ID: 2
 
-[    MAC address: 0022-0033-0011]{lang="EN-US"}
+    MAC address: 0022-0033-0011
 
-[      Interface:  EVI-Link0]{lang="EN-US"}
+      Interface:  EVI-Link0
 
-[    MAC address: 0033-0022-0011]{lang="EN-US"}
+    MAC address: 0033-0022-0011
 
-[      Interface:  EVI-Link0]{lang="EN-US"}
+      Interface:  EVI-Link0
 
-[          Flags:  0x2]{lang="EN-US"}
+          Flags:  0x2
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x1325883589}[显示]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口]{style="font-family:宋体"}[Tunnel0]{lang="EN-US"}[下的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的数目。]{style="font-family:宋体"}
+\# 显示EVI隧道接口Tunnel0下的远端MAC地址的数目。
 
-[[\<Sysname\> display evi isis remote-mac interface tunnel 0 count]{lang="EN-US"}]{#struct_0_20244_20619_737265973}
+\<Sysname\> display evi isis remote-mac interface tunnel 0 count
 
-[3 mac address(es) found.]{lang="EN-US"}
+3 mac address(es) found.
 
-[[表1-7 ]{lang="EN-US"}[display evi isis ]{lang="EN-US"}[remote-mac]{lang="EN-US"}]{#struct_0_20244_20619_x1298661143}[显示信息描述表]{style="font-family:黑体"}
+表1-7 display evi isis remote-mac显示信息描述表
 
-[]{#table_struct_0_2065466083}[[字段]{style="font-family:黑体"}]{#struct_0_20244_20619_1137971825}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20244_20619_643211095}
+描述
 
-[[Process ID]{lang="EN-US"}]{#struct_0_20244_20619_x1194567310}
+Process ID
 
-[[进程实例号]{style="font-family:宋体"}]{#struct_0_20244_20619_x1090930907}
+进程实例号
 
-[[Tunnel interface]{lang="EN-US"}]{#struct_0_20244_20619_x1037809712}
+Tunnel interface
 
-[[进程实例对应的]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_x1976137749}[接口]{style="font-family:宋体"}
+进程实例对应的Tunnel接口
 
-[[VLAN ID]{lang="EN-US"}]{#struct_0_20244_20619_x1775948858}
+VLAN ID
 
-[[进程实例下的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_20244_20619_x231749960}
+进程实例下的VLAN
 
-[[MAC address]{lang="EN-US"}]{#struct_0_20244_20619_x836889871}
+MAC address
 
-[[MAC]{lang="EN-US"}]{#struct_0_20244_20619_x1194763918}[地址]{style="font-family:宋体"}
+MAC地址
 
-[[Interface]{lang="EN-US"}]{#struct_0_20244_20619_x1978396077}
+Interface
 
-[[EVI]{lang="EN-US"}]{#struct_0_20244_20619_104064347}[链路索引]{style="font-family:宋体"}
+EVI链路索引
 
-[[Flags]{lang="EN-US"}]{#struct_0_20244_20619_x320483598}
+Flags
 
-[[EVI IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_x26386640}[远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址标记：]{style="font-family:宋体"}
+EVI IS-IS远端MAC地址标记：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x1]{lang="EN-US"}]{#struct_0_20244_20619_x1194698382}[：该]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址与]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[本地动态]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址冲突]{style="font-family:宋体"}
+·0x1：该MAC地址与EVI IS-IS本地动态MAC地址冲突
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x2]{lang="EN-US"}]{#struct_0_20244_20619_753331970}[：该]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址已经下发到远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表]{style="font-family:宋体"}
+·0x2：该MAC地址已经下发到远端MAC地址表
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x4]{lang="EN-US"}]{#struct_0_20244_20619_993405808}[：该]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址与]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[本地的静态或泛洪]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址冲突]{style="font-family:宋体"}
+·0x4：该MAC地址与EVI IS-IS本地的静态或泛洪MAC地址冲突
 
-[[3 mac address(es) found]{lang="EN-US"}]{#struct_0_20244_20619_1645991811}
+3 mac address(es) found
 
-[[远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_20244_20619_963622728}[地址的数目，本例中远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的数目为]{style="font-family:宋体"}[3]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-::: {#114951646 .myid}
-[]{#_Toc404798350}[]{#struct_0_20244_20619_1638126875}[]{#_Toc312867798}[]{#_Toc338171761}[]{#_Toc338432177}[]{#_Toc338171762}[]{#_Toc338432178}[]{#_Toc338171763}[]{#_Toc338432179}[]{#_Toc338171764}[]{#_Toc338432180}[]{#_Toc338171765}[]{#_Toc338432181}[]{#_Toc338171766}[]{#_Toc338432182}[]{#_Toc338171767}[]{#_Toc338432183}[]{#_Toc338171768}[]{#_Toc338432184}[]{#_Toc338171769}[]{#_Toc338432185}[]{#_Toc338171770}[]{#_Toc338432186}[]{#_Toc338171771}[]{#_Toc338432187}[]{#_Toc338171772}[]{#_Toc338432188}[]{#_Toc338171773}[]{#_Toc338432189}[]{#_Toc338171774}[]{#_Toc338432190}[]{#_Toc338171775}[]{#_Toc338432191}[]{#_Toc338171776}[]{#_Toc338432192}[]{#_Toc338171777}[]{#_Toc338432193}[]{#_Toc338171778}[]{#_Toc338432194}[]{#_Toc338171779}[]{#_Toc338432195}[]{#_Toc338171780}[]{#_Toc338432196}[]{#_Toc338171781}[]{#_Toc338432197}[]{#_Toc338171782}[]{#_Toc338432198}[]{#_Toc338171783}[]{#_Toc338432199}[]{#_Toc338171784}[]{#_Toc338432200}[]{#_Toc338171785}[]{#_Toc338432201}[]{#_Toc338171786}[]{#_Toc338432202}[]{#_Toc338171787}[]{#_Toc338432203}[]{#_Toc338171788}[]{#_Toc338432204}[]{#_Toc338171789}[]{#_Toc338432205}[]{#_Toc338171790}[]{#_Toc338432206}[]{#_Toc338171791}[]{#_Toc338432207}[]{#_Toc338171792}[]{#_Toc338432208}[]{#_Toc338171793}[]{#_Toc338432209}[]{#_Toc338171794}[]{#_Toc338432210}[]{#_Toc338171795}[]{#_Toc338432211}[]{#_Toc338171796}[]{#_Toc338432212}[]{#_Toc338171797}[]{#_Toc338432213}[]{#_Toc338171798}[]{#_Toc338432214}[]{#_Toc338171799}[]{#_Toc338432215}[]{#_Toc338171800}[]{#_Toc338432216}[]{#_Toc338171801}[]{#_Toc338432217}[]{#_Toc338171802}[]{#_Toc338432218}[]{#_Toc338171803}[]{#_Toc338432219}[]{#_Toc338171804}[]{#_Toc338432220}[]{#_Toc338171805}[]{#_Toc338432221}[]{#_Toc338171806}[]{#_Toc338432222}[]{#_Toc338171807}[]{#_Toc338432223}[]{#_Toc338171808}[]{#_Toc338432224}[]{#_Toc338171809}[]{#_Toc338432225}[]{#_Toc338171810}[]{#_Toc338432226}[]{#_Toc338171811}[]{#_Toc338432227}[]{#_Toc338171812}[]{#_Toc338432228}[]{#_Toc338171813}[]{#_Toc338432229}[]{#_Toc338171814}[]{#_Toc338432230}[]{#_Toc338171815}[]{#_Toc338432231}[]{#_Toc338171816}[]{#_Toc338432232}[]{#_Toc338171817}[]{#_Toc338432233}[]{#_Toc338171818}[]{#_Toc338432234}[]{#_Toc338171819}[]{#_Toc338432235}[]{#_Toc338171820}[]{#_Toc338432236}[]{#_Toc338171821}[]{#_Toc338432237}[]{#_Toc338171822}[]{#_Toc338432238}[]{#_Toc338171823}[]{#_Toc338432239}[]{#_Toc338171824}[]{#_Toc338432240}[]{#_Toc338171825}[]{#_Toc338432241}[]{#_Toc338171826}[]{#_Toc338432242}[]{#_Toc338171827}[]{#_Toc338432243}[]{#_Toc338171828}[]{#_Toc338432244}[]{#_Toc338171829}[]{#_Toc338432245}[]{#_Toc338171830}[]{#_Toc338432246}[]{#_Toc338171831}[]{#_Toc338432247}[]{#_Toc338171832}[]{#_Toc338432248}[]{#_Toc338171833}[]{#_Toc338432249}[]{#_Toc338171834}[]{#_Toc338432250}[]{#_Toc338171835}[]{#_Toc338432251}[]{#_Toc338171836}[]{#_Toc338432252}[]{#_Toc338171837}[]{#_Toc338432253}[]{#_Toc338171838}[]{#_Toc338432254}[]{#_Toc338171839}[]{#_Toc338432255}[]{#_Toc338171840}[]{#_Toc338432256}[]{#_Toc338171841}[]{#_Toc338432257}[]{#_Toc338171842}[]{#_Toc338432258}[]{#_Toc338171843}[]{#_Toc338432259}[]{#_Toc338171844}[]{#_Toc338432260}[]{#_Toc338171845}[]{#_Toc338432261}[]{#_Toc338171846}[]{#_Toc338432262}[]{#_Toc338171847}[]{#_Toc338432263}[]{#_Toc338171848}[]{#_Toc338432264}[]{#_Toc338171849}[]{#_Toc338432265}[]{#_Toc338171850}[]{#_Toc338432266}[]{#_Toc338171851}[]{#_Toc338432267}[]{#_Toc338171852}[]{#_Toc338432268}[]{#_Toc338171853}[]{#_Toc338432269}[]{#_Toc338171854}[]{#_Toc338432270}[]{#_Toc338171855}[]{#_Toc338432271}[]{#_Toc338171889}[]{#_Toc338432305}[]{#_Toc303068831}[]{#_Toc303068832}[]{#_Toc338171890}[]{#_Toc338432306}[]{#_Toc338171891}[]{#_Toc338432307}[]{#_Toc338171892}[]{#_Toc338432308}[]{#_Toc338171893}[]{#_Toc338432309}[]{#_Toc338171894}[]{#_Toc338432310}[]{#_Toc338171895}[]{#_Toc338432311}[]{#_Toc338171896}[]{#_Toc338432312}[]{#_Toc338171897}[]{#_Toc338432313}[]{#_Toc338171898}[]{#_Toc338432314}[]{#_Toc338171899}[]{#_Toc338432315}[]{#_Toc338171900}[]{#_Toc338432316}[]{#_Toc338171901}[]{#_Toc338432317}[]{#_Toc338171902}[]{#_Toc338432318}[]{#_Toc338171903}[]{#_Toc338432319}[]{#_Toc338171904}[]{#_Toc338432320}[]{#_Toc338171905}[]{#_Toc338432321}[]{#_Toc338171906}[]{#_Toc338432322}[]{#_Toc338171907}[]{#_Toc338432323}[]{#_Toc338171908}[]{#_Toc338432324}[]{#_Toc338171909}[]{#_Toc338432325}[]{#_Toc338171910}[]{#_Toc338432326}[]{#_Toc338171911}[]{#_Toc338432327}[]{#_Toc338171941}[]{#_Toc338432357}[]{#_Toc338171942}[]{#_Toc338432358}[]{#_Toc338171943}[]{#_Toc338432359}[]{#_Toc338171944}[]{#_Toc338432360}[]{#_Toc338171945}[]{#_Toc338432361}[]{#_Toc338171946}[]{#_Toc338432362}[]{#_Toc338171947}[]{#_Toc338432363}[]{#_Toc338171948}[]{#_Toc338432364}[]{#_Toc338171949}[]{#_Toc338432365}[]{#_Toc338171950}[]{#_Toc338432366}[]{#_Toc338171951}[]{#_Toc338432367}[]{#_Toc338171952}[]{#_Toc338432368}[]{#_Toc338171953}[]{#_Toc338432369}[]{#_Toc338171954}[]{#_Toc338432370}[]{#_Toc338171955}[]{#_Toc338432371}[]{#_Toc338171956}[]{#_Toc338432372}[]{#_Toc338171957}[]{#_Toc338432373}[]{#_Toc338171958}[]{#_Toc338432374}[]{#_Toc338171959}[]{#_Toc338432375}[]{#_Toc338171960}[]{#_Toc338432376}[]{#_Toc338171961}[]{#_Toc338432377}[]{#_Toc338171962}[]{#_Toc338432378}[]{#_Toc338171963}[]{#_Toc338432379}[]{#_Toc338171964}[]{#_Toc338432380}[]{#_Toc338171965}[]{#_Toc338432381}[]{#_Toc338171966}[]{#_Toc338432382}[]{#_Toc338171967}[]{#_Toc338432383}[]{#_Toc338171968}[]{#_Toc338432384}[]{#_Toc338171969}[]{#_Toc338432385}[]{#_Toc338171970}[]{#_Toc338432386}[]{#_Toc338171971}[]{#_Toc338432387}[]{#_Toc338171972}[]{#_Toc338432388}[]{#_Toc338171973}[]{#_Toc338432389}[]{#_Toc338171974}[]{#_Toc338432390}[]{#_Toc338171975}[]{#_Toc338432391}[]{#_Toc338171976}[]{#_Toc338432392}[]{#_Toc338171977}[]{#_Toc338432393}[]{#_Toc338171978}[]{#_Toc338432394}[]{#_Toc338171979}[]{#_Toc338432395}[]{#_Toc338171980}[]{#_Toc338432396}[]{#_Toc338171981}[]{#_Toc338432397}[]{#_Toc338171982}[]{#_Toc338432398}[]{#_Toc338171983}[]{#_Toc338432399}[]{#_Toc338171984}[]{#_Toc338432400}[]{#_Toc338171985}[]{#_Toc338432401}[]{#_Toc338171986}[]{#_Toc338432402}[]{#_Toc338171987}[]{#_Toc338432403}[]{#_Toc338171988}[]{#_Toc338432404}[]{#_Toc338171989}[]{#_Toc338432405}[]{#_Toc338171990}[]{#_Toc338432406}[]{#_Toc338171991}[]{#_Toc338432407}[]{#_Toc338171992}[]{#_Toc338432408}[]{#_Toc338171993}[]{#_Toc338432409}[]{#_Toc338171994}[]{#_Toc338432410}[]{#_Toc338171995}[]{#_Toc338432411}[]{#_Toc338171996}[]{#_Toc338432412}[]{#_Toc338171997}[]{#_Toc338432413}[]{#_Toc338171998}[]{#_Toc338432414}[]{#_Toc338171999}[]{#_Toc338432415}[]{#_Toc338172000}[]{#_Toc338432416}[]{#_Toc338172001}[]{#_Toc338432417}[]{#_Toc338172002}[]{#_Toc338432418}[]{#_Toc338172003}[]{#_Toc338432419}[]{#_Toc338172004}[]{#_Toc338432420}[]{#_Toc338172005}[]{#_Toc338432421}[]{#_Toc338172006}[]{#_Toc338432422}[]{#_Toc338172007}[]{#_Toc338432423}[]{#_Toc338172008}[]{#_Toc338432424}[]{#_Toc338172009}[]{#_Toc338432425}[]{#_Toc338172010}[]{#_Toc338432426}[]{#_Toc338172011}[]{#_Toc338432427}[]{#_Toc338172012}[]{#_Toc338432428}[]{#_Toc338172013}[]{#_Toc338432429}[]{#_Toc338172038}[]{#_Toc338432454}[]{#_Toc338172039}[]{#_Toc338432455}[]{#_Toc338172040}[]{#_Toc338432456}[]{#_Toc338172041}[]{#_Toc338432457}[]{#_Toc338172042}[]{#_Toc338432458}[]{#_Toc338172043}[]{#_Toc338432459}[]{#_Toc338172044}[]{#_Toc338432460}[]{#_Toc338172045}[]{#_Toc338432461}[]{#_Toc338172046}[]{#_Toc338432462}[]{#_Toc338172047}[]{#_Toc338432463}[]{#_Toc338172048}[]{#_Toc338432464}[]{#_Toc338172049}[]{#_Toc338432465}[]{#_Toc338172050}[]{#_Toc338432466}[]{#_Toc338172051}[]{#_Toc338432467}[]{#_Toc338172052}[]{#_Toc338432468}[]{#_Toc338172053}[]{#_Toc338432469}[]{#_Toc338172054}[]{#_Toc338432470}[]{#_Toc338172055}[]{#_Toc338432471}[]{#_Toc338172056}[]{#_Toc338432472}[]{#_Toc338172057}[]{#_Toc338432473}[]{#_Toc338172058}[]{#_Toc338432474}[]{#_Toc338172059}[]{#_Toc338432475}[]{#_Toc338172078}[]{#_Toc338432494}[]{#_Toc338172079}[]{#_Toc338432495}[]{#_Toc338172080}[]{#_Toc338432496}[]{#_Toc338172081}[]{#_Toc338432497}
+远端MAC地址的数目，本例中远端MAC地址的数目为3
 
 **EVI \-- EVI配置命令 \-- display evi isis tunnel**
 
 ------------------------------------------------------------------------
 
-[**[display evi isis tunnel]{lang="EN-US"}**]{#struct_0_20244_20619_x1194370702}[命令用来显示]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口的]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[display evi isis tunnel**]命令用来显示Tunnel接口的EVI IS-IS信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_348646584}
+【命令】
 
-[**[display evi isis tunnel]{lang="EN-US"}**[ \[ *tunnel-number* \]]{lang="EN-US"}]{#struct_0_20244_20619_1757984383}
+**[display evi isis tunnel** [ *tunnel-number* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_409096581}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_20244_20619_1363976241}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1884156341}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_x168427618}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_20244_20619_578310528}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_x1498370723}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_20244_20619_x1194305166}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_278915979}
+【参数】
 
-[*[tunnel-number]{lang="EN-US"}*]{#struct_0_20244_20619_x1101055397}[：显示指定]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口的]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[信息。如果不指定本参数，将显示所有]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口上的]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+*[tunnel-number*]：显示指定Tunnel接口的EVI IS-IS信息。如果不指定本参数，将显示所有Tunnel接口上的EVI IS-IS信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1007801246}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x1694714494}[显示]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口]{style="font-family:宋体"}[101]{lang="EN-US"}[上的]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+\# 显示Tunnel接口101上的EVI IS-IS信息。
 
-[[\<Sysname\> display evi isis tunnel 101]{lang="EN-US"}]{#struct_0_20244_20619_x1194501774}
+\<Sysname\> display evi isis tunnel 101
 
-[Tunnel101]{lang="EN-US"}
+Tunnel101
 
-[MTU: 1400]{lang="EN-US"}
+MTU: 1400
 
-[DED: Yes]{lang="EN-US"}
+DED: Yes
 
-[DED priority: 80]{lang="EN-US"}
+DED priority: 80
 
-[Hello timer: 10s]{lang="EN-US"}
+Hello timer: 10s
 
-[Hello multiplier: 3]{lang="EN-US"}
+Hello multiplier: 3
 
-[CSNP timer: 10s]{lang="EN-US"}
+CSNP timer: 10s
 
-[LSP timer: 100ms]{lang="EN-US"}
+LSP timer: 100ms
 
-[LSP transmit-throttle count: 5]{lang="EN-US"}
+LSP transmit-throttle count: 5
 
-[AEF: Yes]{lang="EN-US"}
+AEF: Yes
 
-[EVI-Link0    DED: Yes]{lang="EN-US"}
+EVI-Link0    DED: Yes
 
-[LAV:]{lang="EN-US"}
+LAV:
 
-[  1,50,100]{lang="EN-US"}
+  1,50,100
 
-[[表1-8 ]{lang="EN-US"}[display ]{lang="EN-US"}[evi isis]{lang="EN-US"}]{#struct_0_20244_20619_892851399}[ tunnel]{lang="EN-US"}[显示信息描述表]{style="font-family:黑体"}
+表1-8 display evi isis tunnel显示信息描述表
 
-[]{#table_struct_0_2065712771}[[字段]{style="font-family:黑体"}]{#struct_0_20244_20619_30059244}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20244_20619_x833165744}
+描述
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_x703554811}
+Tunnel
 
-[[EVI]{lang="EN-US"}]{#struct_0_20244_20619_651609005}[隧道接口编号]{style="font-family:宋体"}
+EVI隧道接口编号
 
-[[MTU]{lang="EN-US"}]{#struct_0_20244_20619_1043982242}
+MTU
 
-[[链路]{style="font-family:宋体"}[MTU]{lang="EN-US"}]{#struct_0_20244_20619_x1620878979}[值]{style="font-family:宋体"}
+链路MTU值
 
-[[DED]{lang="EN-US"}]{#struct_0_20244_20619_x1194436238}
+DED
 
-[[是否被选举为]{style="font-family:宋体"}[DED]{lang="EN-US"}]{#struct_0_20244_20619_x1601545513}[：]{style="font-family:宋体"}[Yes]{lang="EN-US"}[表示是；]{style="font-family:宋体"}[No]{lang="EN-US"}[表示否]{style="font-family:宋体"}
+是否被选举为DED：Yes表示是；No表示否
 
-[[DED priority]{lang="EN-US"}]{#struct_0_20244_20619_1958841418}
+DED priority
 
-[[DED]{lang="EN-US"}]{#struct_0_20244_20619_x1619677331}[优先级]{style="font-family:宋体"}
+DED优先级
 
-[[Hello timer]{lang="EN-US"}]{#struct_0_20244_20619_1104284401}
+Hello timer
 
-[[Hello]{lang="EN-US"}]{#struct_0_20244_20619_x1194108558}[报文发送时间间隔]{style="font-family:宋体"}
+Hello报文发送时间间隔
 
-[[Hello multiplier]{lang="EN-US"}]{#struct_0_20244_20619_x1916253175}
+Hello multiplier
 
-[[Hello]{lang="EN-US"}]{#struct_0_20244_20619_1531044281}[报文失效数目]{style="font-family:宋体"}
+Hello报文失效数目
 
-[[CSNP timer]{lang="EN-US"}]{#struct_0_20244_20619_x1169603930}
+CSNP timer
 
-[[CSNP]{lang="EN-US"}]{#struct_0_20244_20619_x1531372489}[报文发送时间间隔]{style="font-family:宋体"}
+CSNP报文发送时间间隔
 
-[[LSP timer]{lang="EN-US"}]{#struct_0_20244_20619_326296371}
+LSP timer
 
-[[LSP]{lang="EN-US"}]{#struct_0_20244_20619_x1194043022}[的最小发送时间间隔]{style="font-family:宋体"}
+LSP的最小发送时间间隔
 
-[[LSP transmit-throttle count]{lang="EN-US"}]{#struct_0_20244_20619_1238293988}
+LSP transmit-throttle count
 
-[[LSP]{lang="EN-US"}]{#struct_0_20244_20619_x276985360}[的最大传输数量]{style="font-family:宋体"}
+LSP的最大传输数量
 
-[[AEF]{lang="EN-US"}]{#struct_0_20244_20619_712674127}
+AEF
 
-[[本设备是否可以作为扩展]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_20244_20619_712608591}[的授权转发设备。如果双归属站点内某设备核心侧故障，其该属性显示为]{style="font-family:宋体"}[No]{lang="EN-US"}[，表示本设备不能作为任何]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的授权转发设备；如果某设备核心侧正常，其该属性显示为]{style="font-family:宋体"}[Yes]{lang="EN-US"}[，表示本设备可以作为扩展]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的授权转发设备]{style="font-family:宋体"}
+本设备是否可以作为扩展VLAN的授权转发设备。如果双归属站点内某设备核心侧故障，其该属性显示为No，表示本设备不能作为任何VLAN的授权转发设备；如果某设备核心侧正常，其该属性显示为Yes，表示本设备可以作为扩展VLAN的授权转发设备
 
-[[EVI-link]{lang="EN-US"}]{#struct_0_20244_20619_x1422434129}
+EVI-link
 
-[[EVI]{lang="EN-US"}]{#struct_0_20244_20619_727681458}[虚拟链接]{style="font-family:宋体"}
+EVI虚拟链接
 
-[[LAV]{lang="EN-US"}]{#struct_0_20244_20619_1705111277}
+LAV
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_x1053910934}[接口下的激活]{style="font-family:宋体"}[VLAN]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1469832405 .myid}
-[]{#_Toc404798351}[]{#struct_0_20244_20619_x991531227}[]{#_Toc302983407}[]{#_Toc303068837}[]{#_Toc302983408}[]{#_Toc303068838}
+Tunnel接口下的激活VLAN
 
 **EVI \-- EVI配置命令 \-- display evi link**
 
 ------------------------------------------------------------------------
 
-[**[display evi link]{lang="EN-US"}**]{#struct_0_20244_20619_2042278249}[命令用来显示指定]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道创建的]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口信息。]{style="font-family:宋体"}
+**[display evi link**]命令用来显示指定EVI隧道创建的EVI-Link接口信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x118170649}
+【命令】
 
-[**[display evi link interface]{lang="EN-US"}[ tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*]{#struct_0_20244_20619_792908310}
+**[display evi link interface tunnel*** interface-number*]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1078167509}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_20244_20619_727746994}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_1749221670}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_x1515407179}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_20244_20619_1114281023}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_x1661955894}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_20244_20619_x1034957704}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x14630997}
+【参数】
 
-[**[interface]{lang="EN-US"}[ tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*]{#struct_0_20244_20619_x920245657}[：显示指定]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口下的]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口信息。]{style="font-family:宋体"}
+**[interface tunnel*** interface-number*]：显示指定EVI隧道接口下的EVI-Link接口信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1292721440}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_727550386}[显示]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口]{style="font-family:宋体"}[Tunnel0]{lang="EN-US"}[创建的]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口信息。]{style="font-family:宋体"}
+\# 显示EVI隧道接口Tunnel0创建的EVI-Link接口信息。
 
-[[\<Sysname\> ]{lang="EN-US"}]{#struct_0_20244_20619_x2010214529}[display evi link interface tunnel 0]{lang="IT"}
+\<Sysname\> display evi link interface tunnel 0
 
-[Interface     Status Source          Destination]{lang="IT"}
+Interface     Status Source          Destination
 
-[EVI]{lang="EN-US"}[-Link0     UP     1.1.1.1         1.1.2.1]{lang="IT"}
+EVI-Link0     UP     1.1.1.1         1.1.2.1
 
-[EVI]{lang="EN-US"}[-Link1     UP     1.1.1.1         1.1.3.1]{lang="IT"}
+EVI-Link1     UP     1.1.1.1         1.1.3.1
 
-[[表1-9 ]{lang="EN-US"}[display evi link]{lang="EN-US"}]{#struct_0_20244_20619_1827071448}[命令显示信息描述表]{style="font-family:黑体"}
+表1-9 display evi link命令显示信息描述表
 
-[]{#table_struct_0_2096729987}[[字段]{style="font-family:黑体"}]{#struct_0_20244_20619_x1080776577}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20244_20619_x532804456}
+描述
 
-[[Interface]{lang="EN-US"}]{#struct_0_20244_20619_1453002919}
+Interface
 
-[[EVI-Link]{lang="EN-US"}]{#struct_0_20244_20619_224803802}[接口名]{style="font-family:宋体"}
+EVI-Link接口名
 
-[[Status]{lang="EN-US"}]{#struct_0_20244_20619_508156975}
+Status
 
-[[EVI-Link]{lang="EN-US"}]{#struct_0_20244_20619_727615922}[接口的链路]{style="font-family:宋体"}[UP/DOWN]{lang="EN-US"}[状态]{style="font-family:宋体"}
+EVI-Link接口的链路UP/DOWN状态
 
-[[Source]{lang="EN-US"}]{#struct_0_20244_20619_x2140274191}
+Source
 
-[[EVI-Link]{lang="EN-US"}]{#struct_0_20244_20619_x291282839}[接口的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道本端地址]{style="font-family:宋体"}
+EVI-Link接口的EVI隧道本端地址
 
-[[Destination]{lang="EN-US"}]{#struct_0_20244_20619_1245002826}
+Destination
 
-[[EVI-Link]{lang="EN-US"}]{#struct_0_20244_20619_1669946018}[接口的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道对端地址]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1900788069 .myid}
-[]{#_Toc404798352}[]{#struct_0_20244_20619_x433648059}
+EVI-Link接口的EVI隧道对端地址
 
 **EVI \-- EVI配置命令 \-- display evi mac-address**
 
 ------------------------------------------------------------------------
 
-[**[display evi mac-address]{lang="EN-US"}**]{#struct_0_20244_20619_1606780848}[命令用来显示远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+**[display evi mac-address**]命令用来显示远端MAC地址信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_727943602}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_20244_20619_1150998077}
+集中式设备：
 
-[**[display evi mac-address interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*[ \[ **vlan** *vlan-id* \] \[ **count** \]]{lang="EN-US"}]{#struct_0_20244_20619_316983493}
+**[display evi mac-address interface tunnel*** interface-number* [ **vlan** *vlan-id*   **count** ]]
 
-[**[display evi mac-address interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*[ **mac-address** *mac-address* **vlan** *vlan-id*]{lang="EN-US"}]{#struct_0_20244_20619_2098535499}
+**[display evi mac-address interface tunnel*** interface-number* **mac-address** *mac-address* **vlan** *vlan-id*]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_20244_20619_x755586537}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display evi mac-address interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*[ \[ **vlan** *vlan-id* \] \[ **slot** *slot-number* \[ **cpu** *cpu-number* \] \] \[ **count** \]]{lang="EN-US"}]{#struct_0_20244_20619_125253320}
+**[display evi mac-address interface tunnel*** interface-number* [ **vlan** *vlan-id*   **slot** *slot-number* [ **cpu** *cpu-number*  ]  **count** ]]
 
-[**[display evi mac-address interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*[ **mac-address** *mac-address* **vlan** *vlan-id* \[ **slot** *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}]{#struct_0_20244_20619_1107871389}
+**[display evi mac-address interface tunnel*** interface-number* **mac-address** *mac-address* **vlan** *vlan-id* [ **slot** *slot-number* [ **cpu** *cpu-number*  ]]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_20244_20619_829790085}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display evi mac-address interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*[ \[ **vlan** *vlan-id* \] \[ **chassis** *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \] \] \[ **count** \]]{lang="EN-US"}]{#struct_0_20244_20619_1988588384}
+**[display evi mac-address interface tunnel*** interface-number* [ **vlan** *vlan-id*   **chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number*  ]  **count** ]]
 
-[**[display evi mac-address interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*[ **mac-address** *mac-address* **vlan** *vlan-id* \[ **chassis** *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}]{#struct_0_20244_20619_1018548735}
+**[display evi mac-address interface tunnel*** interface-number* **mac-address** *mac-address* **vlan** *vlan-id* [ **chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number*  ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_728009138}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_20244_20619_x2056990065}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x483312900}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_2037209939}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_20244_20619_x1119012716}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_1363008797}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_20244_20619_1289727723}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_931321060}
+【参数】
 
-[**[interface]{lang="EN-US"}[ tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*]{#struct_0_20244_20619_1834820335}[：显示指定]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口下的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+**[interface tunnel*** interface-number*]：显示指定EVI隧道接口下的远端MAC地址信息。
 
-[**[mac-address ]{lang="EN-US"}***[mac-address]{lang="EN-US"}*]{#struct_0_20244_20619_727812530}[：显示指定]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}[如果不指定本参数，]{style="font-family:宋体"}[将显示所有]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+**[mac-address ***mac-address*]：显示指定MAC地址的远端MAC地址信息。如果不指定本参数，将显示所有MAC地址的远端MAC地址信息。
 
-[**[vlan ]{lang="EN-US"}***[vlan-id]{lang="EN-US"}*]{#struct_0_20244_20619_x1570539213}[：显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[如果不指定本参数，]{style="font-family:宋体"}[将显示所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的]{style="font-family:宋体"}[远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+**[vlan ***vlan-id*]：显示指定VLAN的远端MAC地址信息。*vlan-id*表示VLAN编号，取值范围为1～4094。如果不指定本参数，将显示所有VLAN的远端MAC地址信息。
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_20244_20619_x558979853}[：显示指定]{style="font-family:宋体"}[单板的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位]{style="font-family:宋体"}[号。]{style="font-family:宋体"}[如果不指定本参数，]{style="font-family:宋体"}[将显示主用主控板上的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定单板的远端MAC地址信息。*slot-number*表示单板所在的槽位号。如果不指定本参数，将显示主用主控板上的远端MAC地址信息。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_20244_20619_263136037}[：显示指定成员设备的]{style="font-family:宋体"}[远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。]{style="font-family:宋体"}[如果不指定本参数，]{style="font-family:宋体"}[将显示]{style="font-family:宋体"}[Master]{lang="EN-US"}[设备上的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备的远端MAC地址信息。*slot-number*表示设备在IRF中的成员编号。如果不指定本参数，将显示Master设备上的远端MAC地址信息。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_20244_20619_x1618785540}[：]{style="font-family:宋体"}[显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。如果不指定本参数，将显示]{style="font-family:宋体"}[Master]{lang="EN-US"}[设备上的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备/PEX的远端MAC地址信息。*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果不指定本参数，将显示Master设备上的远端MAC地址信息。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_20244_20619_x1114503179}[：显示指定成员设备上指定单板的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}*[chassis]{lang="EN-US"}[-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位]{style="font-family:宋体"}[号。]{style="font-family:宋体"}[如果不指定本参数，]{style="font-family:宋体"}[将显示全局主用主控板上的远端]{style="font-family:宋体"}[MAC]{lang="FR"}[地址信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定成员设备上指定单板的远端MAC地址信息。*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果不指定本参数，将显示全局主用主控板上的远端MAC地址信息。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_20244_20619_x671118500}[：显示指定单板的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}*[chassis]{lang="EN-US"}[-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。如果不指定本参数，将显示全局主用主控板上的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定单板的远端MAC地址信息。*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。如果不指定本参数，将显示全局主用主控板上的远端MAC地址信息。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu ]{lang="EN-US"}***[cpu-number]{lang="EN-US"}*]{#struct_0_20244_20619_1252821830}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号。只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[cpu ***cpu-number*]：显示指定CPU上的远端MAC地址信息。*cpu-number*表示CPU编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[count]{lang="EN-US"}**]{#struct_0_20244_20619_x1556430688}[：显示远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息的数目。]{style="font-family:宋体"}
+**[count**]：显示远端MAC地址信息的数目。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_185443184}
+【举例】
 
-[[\# ]{lang="FR"}]{#struct_0_20244_20619_1262596078}[显示]{style="font-family:宋体"}[EVI]{lang="FR"}[隧道接口]{style="font-family:
-宋体"}[Tunnel101]{lang="FR"}[下的远端]{style="font-family:宋体"}[MAC]{lang="FR"}[地址信息。]{style="font-family:宋体"}
+\# 显示EVI隧道接口Tunnel101下的远端MAC地址信息。
 
-[[\<Sysname\> display evi mac-address interface tunnel 101]{lang="FR"}]{#struct_0_20244_20619_x2092757306}
+\<Sysname\> display evi mac-address interface tunnel 101
 
-[MAC Address      VLAN ID   Port]{lang="EN-US"}
+MAC Address      VLAN ID   Port
 
-[000f-e201-0101   1         EVI-link1]{lang="EN-US"}
+000f-e201-0101   1         EVI-link1
 
-[000f-e202-0101   2         EVI-link1, EVI-link2]{lang="EN-US"}
+000f-e202-0101   2         EVI-link1, EVI-link2
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_727878066}[显示]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口]{style="font-family:宋体"}[Tunnel101]{lang="EN-US"}[下的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息的数目。]{style="font-family:宋体"}
+\# 显示EVI隧道接口Tunnel101下的远端MAC地址信息的数目。
 
-[[\<Sysname\> display evi mac-address interface tunnel 101 count]{lang="EN-US"}]{#struct_0_20244_20619_2759350}
+\<Sysname\> display evi mac-address interface tunnel 101 count
 
-[Total entries: 2]{lang="EN-US"}
+Total entries: 2
 
-[[表1-10 ]{lang="EN-US"}[display evi mac-address]{lang="EN-US"}]{#struct_0_20244_20619_x1751640848}[命令显示信息描述表]{style="font-family:黑体"}
+表1-10 display evi mac-address命令显示信息描述表
 
-[]{#table_struct_0_2090232835}[[字段]{style="font-family:黑体"}]{#struct_0_20244_20619_611960388}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20244_20619_368674977}
+描述
 
-[[MAC Address]{lang="EN-US"}]{#struct_0_20244_20619_x342212902}
+MAC Address
 
-[[远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_20244_20619_x1554831498}[地址]{style="font-family:宋体"}
+远端MAC地址
 
-[[VLAN ID]{lang="EN-US"}]{#struct_0_20244_20619_310747952}
+VLAN ID
 
-[[远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_20244_20619_728205746}[地址所属]{style="font-family:宋体"}[VLAN]{lang="EN-US"}
+远端MAC地址所属VLAN
 
-[[Port]{lang="EN-US"}]{#struct_0_20244_20619_956218303}
+Port
 
-[[远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_20244_20619_x2043621498}[地址对应的出端口（]{style="font-family:宋体"}[N/A]{lang="EN-US"}[表示出端口无效，已被删除）]{style="font-family:宋体"}
+远端MAC地址对应的出端口（N/A表示出端口无效，已被删除）
 
-[[Total entries]{lang="EN-US"}]{#struct_0_20244_20619_680473368}
+Total entries
 
-[[远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_20244_20619_x1860005701}[地址信息的数目]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1709292840 .myid}
-[]{#_Toc404798353}[]{#struct_0_20244_20619_x777452150}[]{#_Toc302983411}[]{#_Toc303068841}[]{#_Toc302983412}[]{#_Toc303068842}
+远端MAC地址信息的数目
 
 **EVI \-- EVI配置命令 \-- display evi neighbor-discovery client member**
 
 ------------------------------------------------------------------------
 
-[**[display evi neighbor-discovery client member]{lang="EN-US"}**]{#struct_0_20244_20619_x327881799}[命令用来在]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[上显示]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[学到的邻居信息。]{style="font-family:宋体"}
+**[display evi neighbor-discovery client member**]命令用来在ENDC上显示ENDC学到的邻居信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_728271282}
+【命令】
 
-[**[display evi neighbor-discovery]{lang="EN-US"}**[ \[ **ipv6** \] **client** **member** \[ **interface tunnel** *interface-number* \| **local** *local-ip* ]{lang="EN-US"}]{#struct_0_20244_20619_x559320081}[｜]{style="font-family:宋体"} **[remote ]{lang="EN-US"}***[client-ip]{lang="EN-US"}*[ \| **server** *server-ip* \]]{lang="EN-US"}
+**[display evi neighbor-discovery** [ **ipv6**  **client** **member** [ **interface tunnel** *interface-number* \| **local** *local-ip* ]]｜ **remote ***client-ip*[ \| **server** *server-ip* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_1888416319}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_20244_20619_x1558224861}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1406487248}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_x1967301873}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_20244_20619_1806580939}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_1579361094}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_20244_20619_x1114455931}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_160723275}
+【参数】
 
-[**[ipv6]{lang="EN-US"}**]{#struct_0_20244_20619_727681459}[：显示]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[学到的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[邻居信息。不指定本参数，则显示]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[学到的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[邻居信息。]{style="font-family:宋体"}
+**[ipv6**]：显示ENDC学到的IPv6邻居信息。不指定本参数，则显示ENDC学到的IPv4邻居信息。
 
-[**[interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*]{#struct_0_20244_20619_1705111276}[：显示通过指定]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口学到的邻居信息。]{style="font-family:宋体"}
+**[interface tunnel*** interface-number*]：显示通过指定EVI隧道接口学到的邻居信息。
 
-[**[local ]{lang="EN-US"}***[local-ip]{lang="EN-US"}*]{#struct_0_20244_20619_x1053845398}[：显示通过指定]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址]{style="font-family:宋体"}[/IPv6]{lang="EN-US"}[地址对应的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口学到的邻居信息。]{style="font-family:宋体"}*[local-ip]{lang="EN-US"}*[表示本地]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址]{style="font-family:宋体"}[/IPv6]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[local ***local-ip*]：显示通过指定IPv4地址/IPv6地址对应的EVI隧道接口学到的邻居信息。*local-ip*表示本地ENDC的IPv4地址/IPv6地址。
 
-[**[remote ]{lang="EN-US"}***[client-ip]{lang="EN-US"}*]{#struct_0_20244_20619_1604685284}[：显示设备学到的指定邻居]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的信息。]{style="font-family:宋体"}*[client-ip]{lang="EN-US"}*[表示邻居]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址]{style="font-family:宋体"}[/IPv6]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[remote ***client-ip*]：显示设备学到的指定邻居ENDC的信息。*client-ip*表示邻居ENDC的IPv4地址/IPv6地址。
 
-[**[server ]{lang="EN-US"}***[server-ip]{lang="EN-US"}*]{#struct_0_20244_20619_x84776266}[：显示通过指定]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[学到的邻居信息。]{style="font-family:宋体"}*[server-ip]{lang="EN-US"}*[表示]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址]{style="font-family:宋体"}[/IPv6]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[server ***server-ip*]：显示通过指定ENDS学到的邻居信息。*server-ip*表示ENDS的IPv4地址/IPv6地址。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1346951111}
+【使用指导】
 
-[[通过本命令可以查看]{style="font-family:宋体"}[ENDC]{lang="EN-US"}]{#struct_0_20244_20619_136069219}[学到的邻居信息，包括邻居的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址]{style="font-family:宋体"}[/IPv6]{lang="EN-US"}[地址、桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址、创建时间、老化时间、邻居之间的]{style="font-family:宋体"}[EVI Link]{lang="EN-US"}[状态等信息。]{style="font-family:宋体"}
+通过本命令可以查看ENDC学到的邻居信息，包括邻居的IPv4地址/IPv6地址、桥MAC地址、创建时间、老化时间、邻居之间的EVI Link状态等信息。
 
-[[如果不指定任何参数，将显示设备上本地]{style="font-family:宋体"}[ENDC]{lang="EN-US"}]{#struct_0_20244_20619_1733901511}[学到的所有邻居信息。]{style="font-family:宋体"}
+如果不指定任何参数，将显示设备上本地ENDC学到的所有邻居信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_882155351}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_727746995}[显示设备上]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[学到的所有]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[邻居信息。]{style="font-family:宋体"}
+\# 显示设备上ENDC学到的所有IPv4邻居信息。
 
-[[\<Sysname\> display evi neighbor-discovery client member]{lang="EN-US"}]{#struct_0_20244_20619_1749221669}
+\<Sysname\> display evi neighbor-discovery client member
 
-[Interface: Tunnel0    Network ID: 1]{lang="EN-US"}
+Interface: Tunnel0    Network ID: 1
 
-[Local Address: 20.0.0.2]{lang="EN-US"}
+Local Address: 20.0.0.2
 
-[Server Address: 20.0.1.1]{lang="EN-US"}
+Server Address: 20.0.1.1
 
-[Neighbor        System ID         Created Time           Expire    Status ]{lang="EN-US"}
+Neighbor        System ID         Created Time           Expire    Status
 
-[20.0.2.1        000F-0000-0A3E    2011/01/01 12:12:12    13        Up ]{lang="EN-US"}
+20.0.2.1        000F-0000-0A3E    2011/01/01 12:12:12    13        Up
 
-[20.0.3.1        000F-0000-0A3F    2011/01/01 12:12:12    12        Up ]{lang="EN-US"}
+20.0.3.1        000F-0000-0A3F    2011/01/01 12:12:12    12        Up
 
-[ ]{lang="EN-US"}
+Interface: Tunnel0    Network ID: 1
 
-[Interface: Tunnel0    Network ID: 1]{lang="EN-US"}
+Local Address: 20.0.0.2
 
-[Local Address: 20.0.0.2]{lang="EN-US"}
+Server Address: 20.0.1.2
 
-[Server Address: 20.0.1.2]{lang="EN-US"}
+Neighbor        System ID         Created Time           Expire    Status
 
-[Neighbor        System ID         Created Time           Expire    Status ]{lang="EN-US"}
+20.0.2.1        000F-0000-0A3E    2011/01/01 12:12:12    25        Up
 
-[20.0.2.1        000F-0000-0A3E    2011/01/01 12:12:12    25        Up ]{lang="EN-US"}
+20.0.3.1        000F-0000-0A3F    2011/01/01 12:12:12    19        Up
 
-[20.0.3.1        000F-0000-0A3F    2011/01/01 12:12:12    19        Up ]{lang="EN-US"}
+Interface: Tunnel1    Network ID: 2
 
-[ ]{lang="EN-US"}
+Local Address: 21.0.0.1
 
-[Interface: Tunnel1    Network ID: 2]{lang="EN-US"}
+Server Address: 21.0.1.2
 
-[Local Address: 21.0.0.1]{lang="EN-US"}
+Neighbor        System ID         Created Time           Expire    Status
 
-[Server Address: 21.0.1.2]{lang="EN-US"}
+21.0.2.1        000F-0000-0A3E    2011/01/01 12:12:12    25        Up
 
-[Neighbor        System ID         Created Time           Expire    Status]{lang="EN-US"}
+21.0.3.1        000F-0000-0A3F    2011/01/01 12:12:12    19        Down
 
-[21.0.2.1        000F-0000-0A3E    2011/01/01 12:12:12    25        Up ]{lang="EN-US"}
+Interface: Tunnel2    Network ID: 3
 
-[21.0.3.1        000F-0000-0A3F    2011/01/01 12:12:12    19        Down ]{lang="EN-US"}
+Local Address: 21.0.0.2
 
-[ ]{lang="EN-US"}
+Server Address: NA
 
-[Interface: Tunnel2    Network ID: 3]{lang="EN-US"}
+Neighbor        System ID         Created Time           Expire    Status
 
-[Local Address: 21.0.0.2]{lang="EN-US"}
+21.0.2.1        NA                2011/01/01 12:12:12    25        Up
 
-[Server Address: NA]{lang="EN-US"}
+21.0.3.1        NA                2011/01/01 12:12:12    19        Up
 
-[Neighbor        System ID         Created Time           Expire    Status]{lang="EN-US"}
+\# 显示设备上ENDC学到的所有IPv6邻居信息。
 
-[21.0.2.1        NA                2011/01/01 12:12:12    25        Up ]{lang="EN-US"}
+\<Sysname\> display evi neighbor-discovery ipv6 client member
 
-[21.0.3.1        NA                2011/01/01 12:12:12    19        Up ]{lang="EN-US"}
+Interface: Tunnel0    Network ID: 1                                   
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x1514817356}[显示设备上]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[学到的所有]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[邻居信息。]{style="font-family:宋体"}
+Local Address: 2000::2                                                
 
-[[\<Sysname\> display evi neighbor-discovery ipv6 client member]{lang="EN-US"}]{#struct_0_20244_20619_727550387}
+Server Address: 2000::1:1                                             
 
-[Interface: Tunnel0    Network ID: 1                                    ]{lang="EN-US"}
+Neighbor        System ID         Created Time           Expire    Status
 
-[Local Address: 2000::2                                                 ]{lang="EN-US"}
+2000::2:1       000F-0000-0A3E    2011/01/01 12:12:12    13        Up 
 
-[Server Address: 2000::1:1                                              ]{lang="EN-US"}
+2000::3:1       000F-0000-0A3F    2011/01/01 12:12:12    12        Up 
 
-[Neighbor        System ID         Created Time           Expire    Status]{lang="EN-US"}
+Interface: Tunnel0    Network ID: 1                                   
 
-[2000::2:1       000F-0000-0A3E    2011/01/01 12:12:12    13        Up  ]{lang="EN-US"}
+Local Address: 2000::2                                                
 
-[2000::3:1       000F-0000-0A3F    2011/01/01 12:12:12    12        Up  ]{lang="EN-US"}
+Server Address: 2000::1:2                                             
 
-[                                                                       ]{lang="EN-US"}
+Neighbor        System ID         Created Time           Expire    Status
 
-[Interface: Tunnel0    Network ID: 1                                    ]{lang="EN-US"}
+2000::2:1       000F-0000-0A3E    2011/01/01 12:12:12    25        Up 
 
-[Local Address: 2000::2                                                 ]{lang="EN-US"}
+2000::3:1       000F-0000-0A3F    2011/01/01 12:12:12    19        Up 
 
-[Server Address: 2000::1:2                                              ]{lang="EN-US"}
+Interface: Tunnel1    Network ID: 2                                   
 
-[Neighbor        System ID         Created Time           Expire    Status]{lang="EN-US"}
+Local Address: 2001::1                                                
 
-[2000::2:1       000F-0000-0A3E    2011/01/01 12:12:12    25        Up  ]{lang="EN-US"}
+Server Address: 2001::1:1                                             
 
-[2000::3:1       000F-0000-0A3F    2011/01/01 12:12:12    19        Up  ]{lang="EN-US"}
+Neighbor        System ID         Created Time           Expire    Status
 
-[                                                                       ]{lang="EN-US"}
+2001::2:1       000F-0000-0A3E    2011/01/01 12:12:12    25        Up 
 
-[Interface: Tunnel1    Network ID: 2                                    ]{lang="EN-US"}
+2001::3:1       000F-0000-0A3F    2011/01/01 12:12:12    19        Down
 
-[Local Address: 2001::1                                                 ]{lang="EN-US"}
+Interface: Tunnel1    Network ID: 2                                   
 
-[Server Address: 2001::1:1                                              ]{lang="EN-US"}
+Local Address: 2002::2                                                
 
-[Neighbor        System ID         Created Time           Expire    Status]{lang="EN-US"}
+Server Address: NA                                                    
 
-[2001::2:1       000F-0000-0A3E    2011/01/01 12:12:12    25        Up  ]{lang="EN-US"}
+Neighbor        System ID         Created Time           Expire    Status
 
-[2001::3:1       000F-0000-0A3F    2011/01/01 12:12:12    19        Down]{lang="EN-US"}
+2002::1         NA                2011/01/01 12:12:12    25        Up 
 
-[                                                                       ]{lang="EN-US"}
+2002::3:1       NA                2011/01/01 12:12:12    19        Up 
 
-[Interface: Tunnel1    Network ID: 2                                    ]{lang="EN-US"}
+表1-11 display evi neighbor-discovery client member命令显示信息描述表
 
-[Local Address: 2002::2                                                 ]{lang="EN-US"}
+字段
 
-[Server Address: NA                                                     ]{lang="EN-US"}
+描述
 
-[Neighbor        System ID         Created Time           Expire    Status]{lang="EN-US"}
+Interface
 
-[2002::1         NA                2011/01/01 12:12:12    25        Up  ]{lang="EN-US"}
+启动ENDC功能的接口名称
 
-[2002::3:1       NA                2011/01/01 12:12:12    19        Up  ]{lang="EN-US"}
+Network ID
 
-[[表1-11 ]{lang="EN-US"}[display evi neighbor-discovery client member]{lang="EN-US"}]{#struct_0_20244_20619_x2010214528}[命令显示信息描述表]{style="font-family:黑体"}
+配置的Network ID
 
-[]{#table_struct_0_2092264163}[[字段]{style="font-family:黑体"}]{#struct_0_20244_20619_727615923}
-:::
+Local Address
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20244_20619_x2140274190}
+EVI隧道接口的源端地址
 
-[[Interface]{lang="EN-US"}]{#struct_0_20244_20619_x1857366780}
+Server Address
 
-[[启动]{style="font-family:宋体"}[ENDC]{lang="EN-US"}]{#struct_0_20244_20619_x1199436146}[功能的接口名称]{style="font-family:宋体"}
+ENDS的IPv4地址/IPv6地址，NA表示ENDS未知
 
-[[Network ID]{lang="EN-US"}]{#struct_0_20244_20619_x795172967}
+Neighbor
 
-[[配置的]{style="font-family:宋体"}[Network ID]{lang="EN-US"}]{#struct_0_20244_20619_x1053934487}
+通过ENDS学到的邻居IPv4地址/IPv6地址
 
-[[Local Address]{lang="EN-US"}]{#struct_0_20244_20619_1484575685}
+System ID
 
-[[EVI]{lang="EN-US"}]{#struct_0_20244_20619_727943603}[隧道接口的源端地址]{style="font-family:宋体"}
+邻居的桥MAC地址，NA表示桥MAC地址未知
 
-[[Server Address]{lang="EN-US"}]{#struct_0_20244_20619_1150998076}
+Created Time
 
-[[ENDS]{lang="EN-US"}]{#struct_0_20244_20619_317049029}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址]{style="font-family:宋体"}[/IPv6]{lang="EN-US"}[地址，]{style="font-family:宋体"}[NA]{lang="EN-US"}[表示]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[未知]{style="font-family:宋体"}
+邻居创建的时间
 
-[[Neighbor]{lang="EN-US"}]{#struct_0_20244_20619_x703189760}
+Expire
 
-[[通过]{style="font-family:宋体"}[ENDS]{lang="EN-US"}]{#struct_0_20244_20619_1014434383}[学到的邻居]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址]{style="font-family:宋体"}[/IPv6]{lang="EN-US"}[地址]{style="font-family:宋体"}
+邻居的老化时间，单位为秒
 
-[[System ID]{lang="EN-US"}]{#struct_0_20244_20619_1274599189}
+Status
 
-[[邻居的桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_20244_20619_728009139}[地址，]{style="font-family:宋体"}[NA]{lang="EN-US"}[表示桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址未知]{style="font-family:宋体"}
+与邻居之间EVI Link的状态：
 
-[[Created Time]{lang="EN-US"}]{#struct_0_20244_20619_x2056990066}
+·Up：表示可以通过EVI Link进行传输
 
-[[邻居创建的时间]{style="font-family:宋体"}]{#struct_0_20244_20619_1082771041}
+·Down：表示不可以通过EVI Link进行传输
 
-[[Expire ]{lang="EN-US"}]{#struct_0_20244_20619_695528368}
-
-[[邻居的老化时间，单位为秒]{style="font-family:宋体"}]{#struct_0_20244_20619_x925128319}
-
-[[Status]{lang="EN-US"}]{#struct_0_20244_20619_x817715794}
-
-[[与邻居之间]{style="font-family:宋体"}[EVI Link]{lang="EN-US"}]{#struct_0_20244_20619_727812531}[的状态：]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Up]{lang="EN-US"}]{#struct_0_20244_20619_x1570539212}[：表示可以通过]{style="font-family:宋体"}[EVI Link]{lang="EN-US"}[进行传输]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Down]{lang="EN-US"}]{#struct_0_20244_20619_1007104088}[：表示不可以通过]{style="font-family:宋体"}[EVI Link]{lang="EN-US"}[进行传输]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NA]{lang="EN-US"}]{#struct_0_20244_20619_x927992273}[：表示尚未创建]{style="font-family:宋体"}[EVI Link]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1953980108 .myid}
-[]{#_Toc404798354}[]{#struct_0_20244_20619_1845095150}[]{#_Toc303068844}[]{#_Toc303068845}
+·NA：表示尚未创建EVI Link
 
 **EVI \-- EVI配置命令 \-- display evi neighbor-discovery client statistics**
 
 ------------------------------------------------------------------------
 
-[**[display evi neighbor-discovery client statistics]{lang="EN-US"}**]{#struct_0_20244_20619_x1206786552}[命令用来在]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[上显示]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+**[display evi neighbor-discovery client statistics**]命令用来在ENDC上显示ENDC的统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_727878067}
+【命令】
 
-[**[display evi neighbor-discovery client statistics interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*]{#struct_0_20244_20619_2759351}
+**[display evi neighbor-discovery client statistics interface tunnel*** interface-number*]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x185556907}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_20244_20619_398142977}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1557381320}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_553661267}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_20244_20619_x1206194667}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_1498593533}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_20244_20619_2091842104}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_728205747}
+【参数】
 
-[**[interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*]{#struct_0_20244_20619_956218302}[：显示指定]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口对应的]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+**[interface tunnel*** interface-number*]：显示指定EVI隧道接口对应的ENDC的统计信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2043621497}
+【使用指导】
 
-[[通过本命令可以查看使能]{style="font-family:宋体"}[ENDC]{lang="EN-US"}]{#struct_0_20244_20619_x1241840933}[功能后，接口收到和发送]{style="font-family:宋体"}[ENDP]{lang="EN-US"}[报文的统计信息。]{style="font-family:宋体"}
+通过本命令可以查看使能ENDC功能后，接口收到和发送ENDP报文的统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_336408322}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x2015450855}[显示]{style="font-family:宋体"}[IPv4 EVI]{lang="EN-US"}[隧道接口]{style="font-family:宋体"}[Tunnel0]{lang="EN-US"}[对应的]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+\# 显示IPv4 EVI隧道接口Tunnel0对应的ENDC的统计信息。
 
-[[\<Sysname\> display evi neighbor-discovery client statistics interface tunnel 0]{lang="EN-US"}]{#struct_0_20244_20619_728271283}
+\<Sysname\> display evi neighbor-discovery client statistics interface tunnel 0
 
-[Server Address: 10.0.0.1]{lang="EN-US"}
+Server Address: 10.0.0.1
 
-[Received packets:]{lang="EN-US"}
+Received packets:
 
-[  Reply:        170              Error:      1]{lang="EN-US"}
+  Reply:        170              Error:      1
 
-[ ]{lang="EN-US"}
+Sent packets:
 
-[Sent packets:]{lang="EN-US"}
+  Register:     170              Purge:      0
 
-[  Register:     170              Purge:      0]{lang="EN-US"}
+Server Address: 10.0.0.2
 
-[ ]{lang="EN-US"}
+Received packets:
 
-[Server Address: 10.0.0.2]{lang="EN-US"}
+  Reply:        99               Error:      1
 
-[Received packets:]{lang="EN-US"}
+Sent packets:
 
-[  Reply:        99               Error:      1]{lang="EN-US"}
+  Register:     100              Purge:      0
 
-[ ]{lang="EN-US"}
+\# 显示IPv6 EVI隧道接口Tunnel1对应的ENDC的统计信息。
 
-[Sent packets:]{lang="EN-US"}
+\<Sysname\> display evi neighbor-discovery client statistics interface tunnel 1
 
-[  Register:     100              Purge:      0]{lang="EN-US"}
+Server Address: 2000::1:1
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x559320080}[显示]{style="font-family:宋体"}[IPv6 EVI]{lang="EN-US"}[隧道接口]{style="font-family:宋体"}[Tunnel1]{lang="EN-US"}[对应的]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+Received packets:
 
-[[\<Sysname\> display evi neighbor-discovery client statistics interface tunnel 1]{lang="EN-US"}]{#struct_0_20244_20619_1888350783}
+  Reply:        170              Error:      1
 
-[Server Address: 2000::1:1]{lang="EN-US"}
+Sent packets:
 
-[Received packets:]{lang="EN-US"}
+  Register:     170              Purge:      13
 
-[  Reply:        170              Error:      1]{lang="EN-US"}
+Server Address: 2000::1:2
 
-[ ]{lang="EN-US"}
+Received packets:
 
-[Sent packets:]{lang="EN-US"}
+  Reply:        99               Error:      1
 
-[  Register:     170              Purge:      13]{lang="EN-US"}
+Sent packets:
 
-[ ]{lang="EN-US"}
+  Register:     100              Purge:      0
 
-[Server Address: 2000::1:2]{lang="EN-US"}
+表1-12 display evi neighbor-discovery client statistics命令显示信息描述表
 
-[Received packets:]{lang="EN-US"}
+字段
 
-[  Reply:        99               Error:      1]{lang="EN-US"}
+描述
 
-[ ]{lang="EN-US"}
+Server Address
 
-[Sent packets:]{lang="EN-US"}
+ENDC对应的ENDS的IP地址
 
-[  Register:     100              Purge:      0]{lang="EN-US"}
+Received packets
 
-[[表1-12 ]{lang="EN-US"}[display evi neighbor-discovery client statistics]{lang="EN-US"}]{#struct_0_20244_20619_800225165}[命令显示信息描述表]{style="font-family:黑体"}
+ENDC收到的报文统计信息：
 
-[]{#table_struct_0_2086527811}[[字段]{style="font-family:黑体"}]{#struct_0_20244_20619_2059252301}
-:::
+·Reply：表示注册应答报文
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20244_20619_x750440680}
+·Error：表示错误指示报文
 
-[[Server Address]{lang="EN-US"}]{#struct_0_20244_20619_727681456}
+Sent packets
 
-[[ENDC]{lang="EN-US"}]{#struct_0_20244_20619_1705111287}[对应的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+ENDC发送的报文统计信息：
 
-[[Received packets]{lang="EN-US"}]{#struct_0_20244_20619_x1053910947}
+·Register：表示注册报文
 
-[[ENDC]{lang="EN-US"}]{#struct_0_20244_20619_x588050092}[收到的报文统计信息：]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Reply]{lang="EN-US"}]{#struct_0_20244_20619_x1377614850}[：表示注册应答报文]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Error]{lang="EN-US"}]{#struct_0_20244_20619_1772636527}[：]{style="font-family:宋体"}[表示错误指示报文]{lang="EN-US" style="font-family:宋体"}
-
-[[Sent packets]{lang="EN-US"}]{#struct_0_20244_20619_298381412}
-
-[[ENDC]{lang="EN-US"}]{#struct_0_20244_20619_727746992}[发送的报文统计信息：]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Register]{lang="EN-US"}]{#struct_0_20244_20619_1749221672}[：]{style="font-family:宋体"}[表示注册报文]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Purge]{lang="EN-US"}]{#struct_0_20244_20619_x1515538251}[：]{style="font-family:宋体"}[表示注销报文]{lang="EN-US" style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#1866244963 .myid}
-[]{#_Toc404798355}[]{#struct_0_20244_20619_x50831699}
+·Purge：表示注销报文
 
 **EVI \-- EVI配置命令 \-- display evi neighbor-discovery client summary**
 
 ------------------------------------------------------------------------
 
-[**[display evi neighbor-discovery client summary]{lang="EN-US"}**]{#struct_0_20244_20619_1091230285}[命令用来在]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[上显示]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的运行信息。]{style="font-family:宋体"}
+**[display evi neighbor-discovery client summary**]命令用来在ENDC上显示ENDC的运行信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_178084071}
+【命令】
 
-[**[display evi neighbor-discovery]{lang="EN-US"}**[ \[ **ipv6** \] **client summary**]{lang="EN-US"}]{#struct_0_20244_20619_x1744341398}
+**[display evi neighbor-discovery** [ **ipv6**  **client summary**]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_1943163445}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_20244_20619_727550384}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2010214531}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_1470775552}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_20244_20619_798921340}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_987293967}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_20244_20619_1503279752}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_1146371491}
+【参数】
 
-[**[ipv6]{lang="EN-US"}**]{#struct_0_20244_20619_x1328695155}[：显示]{style="font-family:宋体"}[IPv6 ENDC]{lang="EN-US"}[的运行信息。不指定本参数，则显示]{style="font-family:宋体"}[IPv4 ENDC]{lang="EN-US"}[的运行信息。]{style="font-family:宋体"}
+**[ipv6**]：显示IPv6 ENDC的运行信息。不指定本参数，则显示IPv4 ENDC的运行信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_719965693}
+【使用指导】
 
-[[通过本命令可以查看]{style="font-family:宋体"}[ENDC]{lang="EN-US"}]{#struct_0_20244_20619_1332946744}[的运行信息，包括]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的配置信息、]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[与]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的连接状态。]{style="font-family:宋体"}
+通过本命令可以查看ENDC的运行信息，包括ENDC的配置信息、ENDC与ENDS的连接状态。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_727615920}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x2140274193}[显示]{style="font-family:宋体"}[IPv4 ENDC]{lang="EN-US"}[的运行信息。]{style="font-family:宋体"}
+\# 显示IPv4 ENDC的运行信息。
 
-[[\<Sysname\> display evi neighbor-discovery client summary]{lang="EN-US"}]{#struct_0_20244_20619_x1454082253}
+\<Sysname\> display evi neighbor-discovery client summary
 
-[                         Status: I-Init  E-Establish  P-Probe]{lang="EN-US"}
+                         Status: I-Init  E-Establish  P-Probe
 
-[Interface    Local Address   Server Address  Network ID  Reg  Auth      Status ]{lang="EN-US"}
+Interface    Local Address   Server Address  Network ID  Reg  Auth      Status
 
-[Tunnel0      20.0.0.2        20.0.0.1        1           15   enabled   E      ]{lang="EN-US"}
+Tunnel0      20.0.0.2        20.0.0.1        1           15   enabled   E     
 
-[Tunnel0      20.0.0.2        20.0.0.3        1           15   enabled   P      ]{lang="EN-US"}
+Tunnel0      20.0.0.2        20.0.0.3        1           15   enabled   P     
 
-[Tunnel1      21.0.0.2        21.0.0.1        2           15   disabled  P  ]{lang="EN-US"}
+Tunnel1      21.0.0.2        21.0.0.1        2           15   disabled  P  
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_1639495161}[显示]{style="font-family:宋体"}[IPv6 ENDC]{lang="EN-US"}[的运行信息。]{style="font-family:宋体"}
+\# 显示IPv6 ENDC的运行信息。
 
-[[\<Sysname\> display evi neighbor-discovery ipv6 client summary]{lang="EN-US"}]{#struct_0_20244_20619_x881930867}
+\<Sysname\> display evi neighbor-discovery ipv6 client summary
 
-[                         Status: I-Init  E-Establish  P-Probe]{lang="EN-US"}
+                         Status: I-Init  E-Establish  P-Probe
 
-[Interface    Local Address   Server Address  Network ID  Reg  Auth      Status]{lang="EN-US"}
+Interface    Local Address   Server Address  Network ID  Reg  Auth      Status
 
-[Tunnel0      2000::1:1       2000::2:1       1           15   enabled   E     ]{lang="EN-US"}
+Tunnel0      2000::1:1       2000::2:1       1           15   enabled   E    
 
-[Tunnel0      2000::1:1       2000::3:1       1           15   enabled   P     ]{lang="EN-US"}
+Tunnel0      2000::1:1       2000::3:1       1           15   enabled   P    
 
-[Tunnel1      2001::1:2       2001::1:1       2           15   disabled  P      ]{lang="EN-US"}
+Tunnel1      2001::1:2       2001::1:1       2           15   disabled  P      
 
-[[表1-13 ]{lang="EN-US"}[display evi neighbor-discovery client summary]{lang="EN-US"}]{#struct_0_20244_20619_1761101129}[命令显示信息描述表]{style="font-family:黑体"}
+表1-13 display evi neighbor-discovery client summary命令显示信息描述表
 
-[]{#table_struct_0_2088078083}[[字段]{style="font-family:黑体"}]{#struct_0_20244_20619_727943600}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20244_20619_1150998079}
+描述
 
-[[Interface]{lang="EN-US"}]{#struct_0_20244_20619_317114565}
+Interface
 
-[[启动]{style="font-family:宋体"}[ENDC]{lang="EN-US"}]{#struct_0_20244_20619_x311653828}[功能的接口名称]{style="font-family:宋体"}
+启动ENDC功能的接口名称
 
-[[Local Address]{lang="EN-US"}]{#struct_0_20244_20619_65697036}
+Local Address
 
-[[本地]{style="font-family:宋体"}[EVI]{lang="EN-US"}]{#struct_0_20244_20619_x410083084}[隧道接口的源端地址，]{style="font-family:宋体"}[NA]{lang="EN-US"}[表示未配置]{style="font-family:宋体"}
+本地EVI隧道接口的源端地址，NA表示未配置
 
-[[Server Address]{lang="EN-US"}]{#struct_0_20244_20619_852456416}
+Server Address
 
-[[配置的远端]{style="font-family:宋体"}[ENDS]{lang="EN-US"}]{#struct_0_20244_20619_728009136}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址]{style="font-family:宋体"}[/IPv6]{lang="EN-US"}[地址]{style="font-family:宋体"}
+配置的远端ENDS的IPv4地址/IPv6地址
 
-[[Network ID]{lang="EN-US"}]{#struct_0_20244_20619_x2056990071}
+Network ID
 
-[[配置的]{style="font-family:宋体"}[Network ID]{lang="EN-US"}]{#struct_0_20244_20619_1842351464}[，]{style="font-family:宋体"}[NA]{lang="EN-US"}[表示未配置]{style="font-family:宋体"}
+配置的Network ID，NA表示未配置
 
-[[Reg]{lang="EN-US"}]{#struct_0_20244_20619_1615313042}
+Reg
 
-[[注册时间间隔]{style="font-family:宋体"}]{#struct_0_20244_20619_2050991994}
+注册时间间隔
 
-[[Auth]{lang="EN-US"}]{#struct_0_20244_20619_x1745313117}
+Auth
 
-[[是否使能认证功能：]{style="font-family:宋体"}]{#struct_0_20244_20619_x429955438}
+是否使能认证功能：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[enabled]{lang="EN-US"}]{#struct_0_20244_20619_727812528}[：]{style="font-family:宋体"}[表示已使能]{lang="EN-US" style="font-family:宋体"}
+·enabled：表示已使能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[disabled]{lang="EN-US"}]{#struct_0_20244_20619_385775931}[：]{style="font-family:宋体"}[表示未使能]{lang="EN-US" style="font-family:宋体"}
+·disabled：表示未使能
 
-[[Status]{lang="EN-US"}]{#struct_0_20244_20619_1474645232}
+Status
 
-[[ENDC]{lang="EN-US"}]{#struct_0_20244_20619_x615476589}[与]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的连接状态：]{style="font-family:宋体"}
+ENDC与ENDS的连接状态：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[I]{lang="EN-US"}]{#struct_0_20244_20619_1249164250}[：表示初始状态]{lang="EN-US" style="font-family:宋体"}
+·I：表示初始状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[E]{lang="EN-US"}]{#struct_0_20244_20619_727878064}[：表示已建立连接]{lang="EN-US" style="font-family:宋体"}
+·E：表示已建立连接
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[P]{lang="EN-US"}]{#struct_0_20244_20619_2759352}[：表示未建立连接正在探测]{style="font-family:宋体"}
+·P：表示未建立连接正在探测
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_1380527034}
+·**evi neighbor-discovery authentication**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[evi neighbor-discovery authentication]{lang="EN-US"}**]{#struct_0_20244_20619_1248384159}
+·**evi neighbor-discovery client enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[evi neighbor-discovery client enable]{lang="EN-US"}**]{#struct_0_20244_20619_144798090}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[evi neighbor-discovery client register-interval]{lang="EN-US"}**]{#struct_0_20244_20619_x637975889}
-
-::: {#-1612608302 .myid}
-[]{#_Toc404798356}[]{#struct_0_20244_20619_x1879335944}[]{#_Toc302983416}[]{#_Toc303068848}[]{#_Toc302983419}[]{#_Toc303068851}[]{#_Toc302983420}[]{#_Toc303068852}[]{#_Toc302983421}[]{#_Toc303068853}
+·**evi neighbor-discovery client register-interval**
 
 **EVI \-- EVI配置命令 \-- display evi neighbor-discovery server member**
 
 ------------------------------------------------------------------------
 
-[**[display evi neighbor-discovery server member]{lang="EN-US"}**]{#struct_0_20244_20619_1488883997}[命令用来在]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[上显示]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[学到的成员信息。]{style="font-family:宋体"}
+**[display evi neighbor-discovery server member**]命令用来在ENDS上显示ENDS学到的成员信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x55180842}
+【命令】
 
-[**[display evi neighbor-discovery ]{lang="EN-US"}**[\[ **ipv6** \] **server member** \[ **interface tunnel** *interface-number* \| **local** *local-ip* \| **remote** *client-ip* \]]{lang="EN-US"}]{#struct_0_20244_20619_728205744}
+**[display evi neighbor-discovery **[ **ipv6**  **server member** [ **interface tunnel** *interface-number* \| **local** *local-ip* \| **remote** *client-ip* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_956218305}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_20244_20619_x2043621496}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_1487042422}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_1391693374}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_20244_20619_x2125596013}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_566721095}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_20244_20619_x1043578106}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1506436986}
+【参数】
 
-[**[ipv6]{lang="EN-US"}**]{#struct_0_20244_20619_x1173350384}[：显示]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[学到的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[成员信息。不指定本参数，则显示]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[学到的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[成员信息。]{style="font-family:宋体"}
+**[ipv6**]：显示ENDS学到的IPv6成员信息。不指定本参数，则显示ENDS学到的IPv4成员信息。
 
-[**[interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*]{#struct_0_20244_20619_728271280}[：显示通过指定]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口学到的成员信息。]{style="font-family:宋体"}
+**[interface tunnel*** interface-number*]：显示通过指定EVI隧道接口学到的成员信息。
 
-[**[local ]{lang="EN-US"}***[local-ip]{lang="EN-US"}*]{#struct_0_20244_20619_x559320079}[：显示通过指定]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[学到的成员信息。]{style="font-family:宋体"}*[local-ip]{lang="EN-US"}*[表示本地]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址]{style="font-family:宋体"}[/IPv6]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[local ***local-ip*]：显示通过指定ENDS学到的成员信息。*local-ip*表示本地ENDS的IPv4地址/IPv6地址。
 
-[**[remote ]{lang="EN-US"}***[client-ip]{lang="EN-US"}*]{#struct_0_20244_20619_1887892032}[：显示]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[学到的指定]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址]{style="font-family:宋体"}[/IPv6]{lang="EN-US"}[地址的成员信息。]{style="font-family:宋体"}*[client-ip]{lang="EN-US"}*[表示]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址]{style="font-family:宋体"}[/IPv6]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[remote ***client-ip*]：显示ENDS学到的指定IPv4地址/IPv6地址的成员信息。*client-ip*表示ENDC的IPv4地址/IPv6地址。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1342403275}
+【使用指导】
 
-[[通过本命令可以查看]{style="font-family:宋体"}[ENDS]{lang="EN-US"}]{#struct_0_20244_20619_351337543}[学到的成员信息，包括成员的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址]{style="font-family:宋体"}[/IPv6]{lang="EN-US"}[地址、桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址、创建时间、老化时间等信息。]{style="font-family:宋体"}
+通过本命令可以查看ENDS学到的成员信息，包括成员的IPv4地址/IPv6地址、桥MAC地址、创建时间、老化时间等信息。
 
-[[如果不指定任何参数，将显示设备上]{style="font-family:宋体"}[ENDS]{lang="EN-US"}]{#struct_0_20244_20619_1684101651}[学到的所有成员信息。]{style="font-family:宋体"}
+如果不指定任何参数，将显示设备上ENDS学到的所有成员信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_932310000}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x131640887}[显示设备上]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[学到的所有]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[成员信息。]{style="font-family:宋体"}
+\# 显示设备上ENDS学到的所有IPv4成员信息。
 
-[[\<Sysname\> display evi neighbor-discovery server member]{lang="EN-US"}]{#struct_0_20244_20619_727681457}
+\<Sysname\> display evi neighbor-discovery server member
 
-[Interface: Tunnel0    Network ID: 1]{lang="EN-US"}
+Interface: Tunnel0    Network ID: 1
 
-[IP Address: 11.0.0.1]{lang="EN-US"}
+IP Address: 11.0.0.1
 
-[Client Address  System ID         Expire    Created Time     ]{lang="EN-US"}
+Client Address  System ID         Expire    Created Time    
 
-[11.0.0.3        000F-0001-0001    25        2011/01/01 00:00:43]{lang="EN-US"}
+11.0.0.3        000F-0001-0001    25        2011/01/01 00:00:43
 
-[11.0.0.4        000F-0001-0002    15        2011/01/01 01:00:46]{lang="EN-US"}
+11.0.0.4        000F-0001-0002    15        2011/01/01 01:00:46
 
-[11.0.0.5        000F-0001-0003    20        2011/01/01 01:02:13]{lang="EN-US"}
+11.0.0.5        000F-0001-0003    20        2011/01/01 01:02:13
 
-[ ]{lang="EN-US"}
+Interface: Tunnel1    Network ID: 2
 
-[Interface: Tunnel1    Network ID: 2]{lang="EN-US"}
+IP Address: 11.0.1.2
 
-[IP Address: 11.0.1.2]{lang="EN-US"}
+Client Address  System ID         Expire    Created Time      
 
-[Client Address  System ID         Expire    Created Time       ]{lang="EN-US"}
+11.0.1.3        000F-0001-0011    19        2011/01/01 00:19:31
 
-[11.0.1.3        000F-0001-0011    19        2011/01/01 00:19:31]{lang="EN-US"}
+11.0.1.4        000F-0001-0012    30        2011/01/01 02:00:43
 
-[11.0.1.4        000F-0001-0012    30        2011/01/01 02:00:43]{lang="EN-US"}
+11.0.1.5        000F-0001-0013    20        2011/01/01 01:02:13
 
-[11.0.1.5        000F-0001-0013    20        2011/01/01 01:02:13]{lang="EN-US"}
+Interface: Tunnel2    Network ID: 3
 
-[ ]{lang="EN-US"}
+IP Address: 12.0.0.1
 
-[Interface: Tunnel2    Network ID: 3]{lang="EN-US"}
+Client Address  System ID         Expire    Created Time 
 
-[IP Address: 12.0.0.1]{lang="EN-US"}
+12.0.0.2        000F-0002-0001    30        2011/01/01 03:20:43
 
-[Client Address  System ID         Expire    Created Time  ]{lang="EN-US"}
+12.0.0.3        000F-0002-0002    37        2011/01/01 03:27:46
 
-[12.0.0.2        000F-0002-0001    30        2011/01/01 03:20:43]{lang="EN-US"}
+\# 显示设备上ENDS学到的所有IPv6成员信息。
 
-[12.0.0.3        000F-0002-0002    37        2011/01/01 03:27:46]{lang="EN-US"}
+\<Sysname\> display evi neighbor-discovery ipv6 server member
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_1705111286}[显示设备上]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[学到的所有]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[成员信息。]{style="font-family:宋体"}
+Interface: Tunnel0    Network ID: 1
 
-[[\<Sysname\> display evi neighbor-discovery ipv6 server member]{lang="EN-US"}]{#struct_0_20244_20619_727746993}
+IP Address: 2000::1
 
-[Interface: Tunnel0    Network ID: 1]{lang="EN-US"}
+Client Address  System ID         Expire    Created Time    
 
-[IP Address: 2000::1]{lang="EN-US"}
+2000::3         000F-0001-0001    25        2011/01/01 00:00:43
 
-[Client Address  System ID         Expire    Created Time     ]{lang="EN-US"}
+2000::4         000F-0001-0002    15        2011/01/01 01:00:46
 
-[2000::3         000F-0001-0001    25        2011/01/01 00:00:43]{lang="EN-US"}
+2000::5         000F-0001-0003    20        2011/01/01 01:02:13
 
-[2000::4         000F-0001-0002    15        2011/01/01 01:00:46]{lang="EN-US"}
+Interface: Tunnel1    Network ID: 2
 
-[2000::5         000F-0001-0003    20        2011/01/01 01:02:13]{lang="EN-US"}
+IP Address: 2000::2
 
-[ ]{lang="EN-US"}
+Client Address  System ID         Expire    Created Time        
 
-[Interface: Tunnel1    Network ID: 2]{lang="EN-US"}
+2000::3         000F-0001-0001    19        2011/01/01 00:19:31
 
-[IP Address: 2000::2]{lang="EN-US"}
+2000::4         000F-0001-0002    30        2011/01/01 02:00:43
 
-[Client Address  System ID         Expire    Created Time         ]{lang="EN-US"}
+2000::5         000F-0001-0003    20        2011/01/01 01:02:13
 
-[2000::3         000F-0001-0001    19        2011/01/01 00:19:31]{lang="EN-US"}
+Interface: Tunnel2    Network ID: 3
 
-[2000::4         000F-0001-0002    30        2011/01/01 02:00:43]{lang="EN-US"}
+IP Address: 3000::1
 
-[2000::5         000F-0001-0003    20        2011/01/01 01:02:13]{lang="EN-US"}
+Client Address  System ID         Expire    Created Time      
 
-[ ]{lang="EN-US"}
+3000::2         000F-0002-0001    30        2011/01/01 03:20:43
 
-[Interface: Tunnel2    Network ID: 3]{lang="EN-US"}
+3000::3         000F-0002-0002    37        2011/01/01 03:27:46
 
-[IP Address: 3000::1]{lang="EN-US"}
+表1-14 display evi neighbor-discovery server member命令显示信息描述表
 
-[Client Address  System ID         Expire    Created Time       ]{lang="EN-US"}
+字段
 
-[3000::2         000F-0002-0001    30        2011/01/01 03:20:43]{lang="EN-US"}
+描述
 
-[3000::3         000F-0002-0002    37        2011/01/01 03:27:46]{lang="EN-US"}
+Interface
 
-[[表1-14 ]{lang="EN-US"}[display evi neighbor-discovery server member]{lang="EN-US"}]{#struct_0_20244_20619_1749221671}[命令显示信息描述表]{style="font-family:黑体"}
+启动ENDS功能的接口名称
 
-[]{#table_struct_0_2080898275}[[字段]{style="font-family:黑体"}]{#struct_0_20244_20619_x1515341643}
-:::
+Network ID
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20244_20619_611790838}
+配置的Network ID
 
-[[Interface]{lang="EN-US"}]{#struct_0_20244_20619_x231830249}
+IP Address
 
-[[启动]{style="font-family:宋体"}[ENDS]{lang="EN-US"}]{#struct_0_20244_20619_1501618963}[功能的接口名称]{style="font-family:宋体"}
+ENDS的IPv4地址/IPv6地址
 
-[[Network ID]{lang="EN-US"}]{#struct_0_20244_20619_727550385}
+Client Address
 
-[[配置的]{style="font-family:宋体"}[Network ID]{lang="EN-US"}]{#struct_0_20244_20619_x2010214530}
+学到的成员的IPv4地址/IPv6地址
 
-[[IP Address]{lang="EN-US"}]{#struct_0_20244_20619_x1258107803}
+System ID
 
-[[ENDS]{lang="EN-US"}]{#struct_0_20244_20619_1138065473}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址]{style="font-family:宋体"}[/IPv6]{lang="EN-US"}[地址]{style="font-family:宋体"}
+学到的成员的桥MAC地址
 
-[[Client Address]{lang="EN-US"}]{#struct_0_20244_20619_139513369}
+Expire
 
-[[学到的成员的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}]{#struct_0_20244_20619_1525480118}[地址]{style="font-family:宋体"}[/IPv6]{lang="EN-US"}[地址]{style="font-family:宋体"}
+成员的剩余老化时间
 
-[[System ID]{lang="EN-US"}]{#struct_0_20244_20619_1928737628}
+Created Time
 
-[[学到的成员的桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_20244_20619_727615921}[地址]{style="font-family:宋体"}
-
-[[Expire ]{lang="EN-US"}]{#struct_0_20244_20619_x2140274192}
-
-[[成员的剩余老化时间]{style="font-family:宋体"}]{#struct_0_20244_20619_1274801102}
-
-[[Created Time]{lang="EN-US"}]{#struct_0_20244_20619_x85737628}
-
-[[成员的创建时间]{style="font-family:宋体"}]{#struct_0_20244_20619_x1601751410}
-
-[ ]{lang="EN-US"}
-
-::: {#-1627752222 .myid}
-[]{#_Toc404798357}[]{#struct_0_20244_20619_x1986886283}
+成员的创建时间
 
 **EVI \-- EVI配置命令 \-- display evi neighbor-discovery server statistics**
 
 ------------------------------------------------------------------------
 
-[**[display evi neighbor-discovery server statistics]{lang="EN-US"}**]{#struct_0_20244_20619_554070435}[命令用来在]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[上显示]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+**[display evi neighbor-discovery server statistics**]命令用来在ENDS上显示ENDS的统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_727943601}
+【命令】
 
-[**[display evi neighbor-discovery server statistics interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*]{#struct_0_20244_20619_1150998078}
+**[display evi neighbor-discovery server statistics interface tunnel*** interface-number*]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_317180101}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_20244_20619_2048702081}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x871543304}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_1956738811}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_20244_20619_116050313}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_330019065}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_20244_20619_x2067588274}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_760578239}
+【参数】
 
-[**[interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*]{#struct_0_20244_20619_728009137}[：显示指定]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口对应的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+**[interface tunnel*** interface-number*]：显示指定EVI隧道接口对应的ENDS的统计信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2056990072}
+【使用指导】
 
-[[通过本命令可以查看使能]{style="font-family:宋体"}[ENDS]{lang="EN-US"}]{#struct_0_20244_20619_x886531891}[功能后，接口收到和发送报文的统计信息。]{style="font-family:宋体"}
+通过本命令可以查看使能ENDS功能后，接口收到和发送报文的统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_214219119}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x302142570}[显示]{style="font-family:宋体"}[IPv4 EVI]{lang="EN-US"}[隧道接口]{style="font-family:宋体"}[Tunnel0]{lang="EN-US"}[对应的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+\# 显示IPv4 EVI隧道接口Tunnel0对应的ENDS的统计信息。
 
-[[\<Sysname\> display evi neighbor-discovery server statistics interface tunnel 0]{lang="EN-US"}]{#struct_0_20244_20619_x210368604}
+\<Sysname\> display evi neighbor-discovery server statistics interface tunnel 0
 
-[Received packets:]{lang="EN-US"}
+Received packets:
 
-[  Register:     170              Purge:      13   ]{lang="EN-US"}
+  Register:     170              Purge:      13  
 
-[ ]{lang="EN-US"}
+Sent packets:
 
-[Sent packets:]{lang="EN-US"}
+  Reply:        170              Error:      1   
 
-[  Reply:        170              Error:      1    ]{lang="EN-US"}
+\# 显示IPv6 EVI隧道接口Tunnel1对应的ENDS的统计信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x179603692}[显示]{style="font-family:宋体"}[IPv6 EVI]{lang="EN-US"}[隧道接口]{style="font-family:宋体"}[Tunnel1]{lang="EN-US"}[对应的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+\<Sysname\> display evi neighbor-discovery server statistics interface tunnel 1
 
-[[\<Sysname\> display evi neighbor-discovery server statistics interface tunnel 1]{lang="EN-US"}]{#struct_0_20244_20619_727812529}
+Received packets:
 
-[Received packets:]{lang="EN-US"}
+  Register:     170              Purge:      13  
 
-[  Register:     170              Purge:      13   ]{lang="EN-US"}
+Sent packets:
 
-[ ]{lang="EN-US"}
+  Reply:        170              Error:      1   
 
-[Sent packets:]{lang="EN-US"}
+表1-15 display evi neighbor-discovery server statistics命令显示信息描述表
 
-[  Reply:        170              Error:      1    ]{lang="EN-US"}
+字段
 
-[[表1-15 ]{lang="EN-US"}[display evi neighbor-discovery server statistics]{lang="EN-US"}]{#struct_0_20244_20619_385775932}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_2110953379}[[字段]{style="font-family:黑体"}]{#struct_0_20244_20619_1474645229}
-:::
+Received packets
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20244_20619_x615935340}
+ENDS收到的报文统计信息：
 
-[[Received packets]{lang="EN-US"}]{#struct_0_20244_20619_x707448626}
+·Register：表示注册报文
 
-[[ENDS]{lang="EN-US"}]{#struct_0_20244_20619_x395143621}[收到的报文统计信息：]{style="font-family:宋体"}
+·Purge：表示注销报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Register]{lang="EN-US"}]{#struct_0_20244_20619_1543817167}[：表示注册报文]{lang="EN-US" style="font-family:宋体"}
+Sent packets
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Purge]{lang="EN-US"}]{#struct_0_20244_20619_727878065}[：表示注销报文]{lang="EN-US" style="font-family:宋体"}
+ENDS发送的报文统计信息：
 
-[[Sent packets]{lang="EN-US"}]{#struct_0_20244_20619_2759353}
+·Reply：表示注册应答报文
 
-[[ENDS]{lang="EN-US"}]{#struct_0_20244_20619_x1348356321}[发送的报文统计信息：]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Reply]{lang="EN-US"}]{#struct_0_20244_20619_23740583}[：表示注册应答报文]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Error]{lang="EN-US"}]{#struct_0_20244_20619_1634238481}[：表示错误指示报文]{lang="EN-US" style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1593401250 .myid}
-[]{#_Toc404798358}[]{#struct_0_20244_20619_1706801708}[]{#_Toc302983424}[]{#_Toc303068856}[]{#_Toc302983425}[]{#_Toc303068857}
+·Error：表示错误指示报文
 
 **EVI \-- EVI配置命令 \-- display evi neighbor-discovery server summary**
 
 ------------------------------------------------------------------------
 
-[**[display evi neighbor-discovery server summary]{lang="EN-US"}**]{#struct_0_20244_20619_1540003708}[命令用来在]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[上显示]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的运行信息。]{style="font-family:宋体"}
+**[display evi neighbor-discovery server summary**]命令用来在ENDS上显示ENDS的运行信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_1152896826}
+【命令】
 
-[**[display evi neighbor-discovery]{lang="EN-US"}**[ \[ **ipv6** \] **server summary**]{lang="EN-US"}]{#struct_0_20244_20619_728205745}
+**[display evi neighbor-discovery** [ **ipv6**  **server summary**]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_956218304}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_20244_20619_x2043621495}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x79041519}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_309822462}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_20244_20619_1590305367}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_75216546}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_20244_20619_1125994731}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_1036017740}
+【参数】
 
-[**[ipv6]{lang="EN-US"}**]{#struct_0_20244_20619_728271281}[：显示]{style="font-family:宋体"}[IPv6 ENDS]{lang="EN-US"}[的运行信息。不指定本参数，则显示]{style="font-family:宋体"}[IPv4 ENDS]{lang="EN-US"}[的运行信息。]{style="font-family:宋体"}
+**[ipv6**]：显示IPv6 ENDS的运行信息。不指定本参数，则显示IPv4 ENDS的运行信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_x559320078}
+【使用指导】
 
-[[通过本命令可以查看]{style="font-family:宋体"}[ENDS]{lang="EN-US"}]{#struct_0_20244_20619_1887826496}[的运行信息，包括]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的配置信息、通过该]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[学习到的]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[个数。]{style="font-family:宋体"}
+通过本命令可以查看ENDS的运行信息，包括ENDS的配置信息、通过该ENDS学习到的ENDC个数。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_190799783}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x1823047533}[显示]{style="font-family:宋体"}[IPv4 ENDS]{lang="EN-US"}[的运行信息。]{style="font-family:宋体"}
+\# 显示IPv4 ENDS的运行信息。
 
-[[\<Sysname\> display evi neighbor-discovery server summary]{lang="EN-US"}]{#struct_0_20244_20619_x891281914}
+\<Sysname\> display evi neighbor-discovery server summary
 
-[Interface      Local Address   Network ID    Auth        Members]{lang="EN-US"}
+Interface      Local Address   Network ID    Auth        Members
 
-[Tunnel0        20.0.0.1        1             enabled     10      ]{lang="EN-US"}
+Tunnel0        20.0.0.1        1             enabled     10     
 
-[Tunnel2        21.0.0.1        2             disabled    20      ]{lang="EN-US"}
+Tunnel2        21.0.0.1        2             disabled    20     
 
-[Tunnel3        22.0.0.1        NA            disabled    0        ]{lang="EN-US"}
+Tunnel3        22.0.0.1        NA            disabled    0       
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x1987137305}[显示]{style="font-family:宋体"}[IPv6 ENDS]{lang="EN-US"}[的运行信息。]{style="font-family:宋体"}
+\# 显示IPv6 ENDS的运行信息。
 
-[[\<Sysname\> display evi neighbor-discovery ipv6 server summary]{lang="EN-US"}]{#struct_0_20244_20619_727681454}
+\<Sysname\> display evi neighbor-discovery ipv6 server summary
 
-[Interface      Local Address   Network ID    Auth        Members]{lang="EN-US"}
+Interface      Local Address   Network ID    Auth        Members
 
-[Tunnel0        2000::1         1             enabled     10      ]{lang="EN-US"}
+Tunnel0        2000::1         1             enabled     10     
 
-[Tunnel2        2000::2         2             disabled    20      ]{lang="EN-US"}
+Tunnel2        2000::2         2             disabled    20     
 
-[Tunnel1        2000::3         NA            disabled    0       ]{lang="EN-US"}
+Tunnel1        2000::3         NA            disabled    0      
 
-[[表1-16 ]{lang="EN-US"}[display evi neighbor-discovery server summary]{lang="EN-US"}]{#struct_0_20244_20619_1705111289}[命令显示信息描述表]{style="font-family:黑体"}
+表1-16 display evi neighbor-discovery server summary命令显示信息描述表
 
-[]{#table_struct_0_2110266627}[[字段]{style="font-family:黑体"}]{#struct_0_20244_20619_x1053517731}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20244_20619_x2055615244}
+描述
 
-[[Interface]{lang="EN-US"}]{#struct_0_20244_20619_x1307152548}
+Interface
 
-[[启动]{style="font-family:宋体"}[ENDS]{lang="EN-US"}]{#struct_0_20244_20619_x1148102219}[功能的接口名称]{style="font-family:宋体"}
+启动ENDS功能的接口名称
 
-[[Local Address]{lang="EN-US"}]{#struct_0_20244_20619_x754794201}
+Local Address
 
-[[接口的源端地址，]{style="font-family:宋体"}[NA]{lang="EN-US"}]{#struct_0_20244_20619_1689329727}[表示未配置]{style="font-family:宋体"}
+接口的源端地址，NA表示未配置
 
-[[Network ID]{lang="EN-US"}]{#struct_0_20244_20619_727746990}
+Network ID
 
-[[接口下配置的]{style="font-family:宋体"}[Network ID]{lang="EN-US"}]{#struct_0_20244_20619_1749221674}[，]{style="font-family:宋体"}[NA]{lang="EN-US"}[表示未配置]{style="font-family:宋体"}
+接口下配置的Network ID，NA表示未配置
 
-[[Auth]{lang="EN-US"}]{#struct_0_20244_20619_x1515145035}
+Auth
 
-[[是否使能认证功能：]{style="font-family:宋体"}]{#struct_0_20244_20619_x19970370}
+是否使能认证功能：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[enabled]{lang="EN-US"}]{#struct_0_20244_20619_x1327445897}[：表示已使能]{lang="EN-US" style="font-family:宋体"}
+·enabled：表示已使能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[disabled]{lang="EN-US"}]{#struct_0_20244_20619_1744445832}[：表示未使能]{lang="EN-US" style="font-family:宋体"}
+·disabled：表示未使能
 
-[[Members]{lang="EN-US"}]{#struct_0_20244_20619_727550382}
+Members
 
-[[通过该]{style="font-family:宋体"}[ENDS]{lang="EN-US"}]{#struct_0_20244_20619_x2010214533}[学习到的]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[个数]{style="font-family:宋体"}
+通过该ENDS学习到的ENDC个数
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_307976138}
+·**evi neighbor-discovery authentication**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[evi neighbor-discovery authentication]{lang="EN-US"}**]{#struct_0_20244_20619_1690613765}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[evi neighbor-discovery server enable]{lang="EN-US"}**]{#struct_0_20244_20619_182254227}
-
-::: {#-58272938 .myid}
-[]{#_Toc404798359}[]{#struct_0_20244_20619_712805197}[]{#_Toc364422900}[]{#_Toc351711391}
+·**evi neighbor-discovery server enable**
 
 **EVI \-- EVI配置命令 \-- display evi vlan-mapping**
 
 ------------------------------------------------------------------------
 
-[**[display evi vlan-mapping]{lang="EN-US"}**]{#struct_0_20244_20619_x1643147530}[命令用来显示]{style="font-family:
-宋体"}[EVI IS-IS]{lang="EN-US"}[的]{style="font-family:
-宋体"}[VLAN]{lang="EN-US"}[映射信息。]{style="font-family:宋体"}
+**[display evi vlan-mapping**]命令用来显示EVI IS-IS的VLAN映射信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_1254615621}
+【命令】
 
-[**[display evi ]{lang="EN-US"}[vlan-mapping]{lang="EN-US"}**[ \[ *process-id* \[ **vlan** *vlan-id* \] \]]{lang="EN-US"}]{#struct_0_20244_20619_713263949}
+**[display evi vlan-mapping** [ *process-id* [ **vlan** *vlan-id*  ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_1690839715}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_20244_20619_713198413}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_660679189}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_1010924017}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_20244_20619_x1214851477}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_712739662}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_20244_20619_x1782632255}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1265059232}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_20244_20619_712674126}[：显示指定的]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程下的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[映射信息。]{style="font-family:宋体"}*[process-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。如果不指定本参数，将显示所有]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[映射信息。]{style="font-family:宋体"}
+*[process-id*]：显示指定的EVI IS-IS进程下的VLAN映射信息。*process-id*表示EVI IS-IS进程号，取值范围为0～65535。如果不指定本参数，将显示所有EVI IS-IS进程的VLAN映射信息。
 
-[*[vlan-id]{lang="EN-US"}*]{#struct_0_20244_20619_x1429762518}[：显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的映射信息，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[如果不指定本参数，将显示所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的映射信息。]{style="font-family:宋体"}
+*[vlan-id*]：显示指定VLAN的映射信息，取值范围为1～4094。如果不指定本参数，将显示所有VLAN的映射信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x663080617}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x410312608}[显示所有]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程下的所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的映射信息。]{style="font-family:宋体"}
+\# 显示所有EVI IS-IS进程下的所有VLAN的映射信息。
 
-[[\<Sysname\> display evi vlan-mapping]{lang="EN-US"}]{#struct_0_20244_20619_712608590}
+\<Sysname\> display evi vlan-mapping
 
-[                         VLAN mappings for EVI IS-IS(0)]{lang="EN-US"}
+                         VLAN mappings for EVI IS-IS(0)
 
-[Local-VID  Peer-ID          Remote-VID  Interface   Remote-site]{lang="EN-US"}
+Local-VID  Peer-ID          Remote-VID  Interface   Remote-site
 
-[120        c4ca.d9e0.b804   121         EVI-Link2   10]{lang="EN-US"}
+120        c4ca.d9e0.b804   121         EVI-Link2   10
 
-[ ]{lang="EN-US"}
+                         VLAN mappings for EVI IS-IS(1)
 
-[                         VLAN mappings for EVI IS-IS(1)]{lang="EN-US"}
+Local-VID  Peer-ID          Remote-VID  Interface   Remote-site
 
-[Local-VID  Peer-ID          Remote-VID  Interface   Remote-site]{lang="EN-US"}
+150        3822.d659.6204   180         EVI-Link1   2
 
-[150        3822.d659.6204   180         EVI-Link1   2]{lang="EN-US"}
+300        3822.d659.6204   301         EVI-Link1   2
 
-[300        3822.d659.6204   301         EVI-Link1   2]{lang="EN-US"}
+表1-17 display evi vlan-mapping显示信息描述表
 
-[[表1-17 ]{lang="EN-US"}[display evi vlan-mapping]{lang="EN-US"}]{#struct_0_20244_20619_957922441}[显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1958761540}[[字段]{style="font-family:黑体"}]{#struct_0_20244_20619_712543054}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20244_20619_x1292953230}
+VLAN mappings for EVI IS-IS(0)
 
-[[VLAN mappings for EVI IS-IS(0)]{lang="EN-US"}]{#struct_0_20244_20619_713001806}
+EVI IS-IS进程0的VLAN映射信息
 
-[[EVI IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_617324655}[进程]{style="font-family:宋体"}[0]{lang="EN-US"}[的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[映射信息]{style="font-family:宋体"}
+Local-VID
 
-[[Local-VID]{lang="EN-US"}]{#struct_0_20244_20619_712936270}
+本设备上的VLAN号
 
-[[本设备上的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_20244_20619_x417791185}[号]{style="font-family:宋体"}
+Peer-ID
 
-[[Peer-ID]{lang="EN-US"}]{#struct_0_20244_20619_712870734}
+与本设备关于上述VLAN有映射关系的EVI IS-IS邻居的System ID
 
-[[与本设备关于上述]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_20244_20619_x411851530}[有映射关系的]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[邻居的]{style="font-family:宋体"}[System ID]{lang="EN-US"}
+Remote-VID
 
-[[Remote-VID]{lang="EN-US"}]{#struct_0_20244_20619_712870731}
+邻居上与上述VLAN映射的VLAN号
 
-[[邻居上与上述]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_20244_20619_x411851525}[映射的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[号]{style="font-family:宋体"}
+Interface
 
-[[Interface]{lang="EN-US"}]{#struct_0_20244_20619_712805195}
+邻居所属的EVI-Link接口
 
-[[邻居所属的]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}]{#struct_0_20244_20619_x1643147528}[接口]{style="font-family:宋体"}
+Remote-site
 
-[[Remote-site]{lang="EN-US"}]{#struct_0_20244_20619_713263947}
-
-[[VLAN]{lang="EN-US"}]{#struct_0_20244_20619_1690839721}[映射所对应的远端站点]{style="font-family:宋体"}[ID]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-::: {#489325041 .myid}
-[]{#_Toc307929275}[]{#_Toc309203840}[]{#_Toc404798360}[]{#struct_0_20244_20619_1475091566}[]{#_Toc313451969}
+VLAN映射所对应的远端站点ID
 
 **EVI \-- EVI配置命令 \-- display interface evi-link**
 
 ------------------------------------------------------------------------
 
-[**[display interface evi-link]{lang="EN-US"}**]{#struct_0_20244_20619_918798450}[命令用来显示]{style="font-family:
-宋体"}[EVI-Link]{lang="EN-US"}[接口的相关信息。]{style="font-family:宋体"}
+**[display interface evi-link**]命令用来显示EVI-Link接口的相关信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1706792753}
+【命令】
 
-[**[display interface]{lang="EN-US"}**[ \[ **evi-link** \[ *interface-number* \] \] \[ **brief** \[ **description** \| **down** \] \]]{lang="EN-US"}]{#struct_0_20244_20619_727615918}
+**[display interface** [ **evi-link** [ *interface-number*    **brief** [ **description** \| **down** ] ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x183959049}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_20244_20619_913904910}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_2023711456}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_x579560482}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_20244_20619_850133607}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_905127692}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_20244_20619_x2097510601}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x77315574}
+【参数】
 
-[*[interface-number]{lang="EN-US"}*]{#struct_0_20244_20619_727943598}[：显示指定]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口的信息。]{style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口编号，取值为已创建的]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口的编号。]{style="font-family:宋体"}
+*[interface-number*]：显示指定EVI-Link接口的信息。*interface-number*表示EVI-Link接口编号，取值为已创建的EVI-Link接口的编号。
 
-[**[brief]{lang="EN-US"}**]{#struct_0_20244_20619_744978534}[：显示接口的概要信息。如果不指定该参数，则显示接口的详细信息。]{style="font-family:宋体"}
+**[brief**]：显示接口的概要信息。如果不指定该参数，则显示接口的详细信息。
 
-[**[description]{lang="EN-US"}**]{#struct_0_20244_20619_x705518853}[：用来显示用户配置的接口的全部描述信息。如果某接口的描述信息超过]{style="font-family:宋体"}[27]{lang="EN-US"}[个字符，不指定该参数时，只显示描述信息中的前]{style="font-family:宋体"}[27]{lang="EN-US"}[个字符，超出部分不显示；指定该参数时，可以显示全部描述信息。]{style="font-family:宋体"}
+**[description**]：用来显示用户配置的接口的全部描述信息。如果某接口的描述信息超过27个字符，不指定该参数时，只显示描述信息中的前27个字符，超出部分不显示；指定该参数时，可以显示全部描述信息。
 
-[**[down]{lang="EN-US"}**]{#struct_0_20244_20619_1300203679}[：显示当前物理状态为]{style="font-family:宋体"}[down]{lang="EN-US"}[的接口的信息以及]{style="font-family:宋体"}[down]{lang="EN-US"}[的原因。不指定该参数时，将不会根据接口物理状态来过滤显示信息。]{style="font-family:宋体"}
+**[down**]：显示当前物理状态为down的接口的信息以及down的原因。不指定该参数时，将不会根据接口物理状态来过滤显示信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1043556835}
+【使用指导】
 
-[[本命令可以显示]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}]{#struct_0_20244_20619_x1561512984}[接口的相关信息，包括缺省]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[、链路类型、]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道源端地址、]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道目的端地址、]{style="font-family:宋体"}[Network ID]{lang="IT"}[等。]{style="font-family:宋体"}
+本命令可以显示EVI-Link接口的相关信息，包括缺省VLAN ID、链路类型、EVI隧道源端地址、EVI隧道目的端地址、Network ID等。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_20244_20619_x1839781412}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果不指定]{style="font-family:宋体"}]{#struct_0_20244_20619_753256186}**[evi-link]{lang="EN-US"}**[参数，将显示设备支持的所有接口的相关信息。]{style="font-family:宋体"}
+·如果不指定**evi-link**参数，将显示设备支持的所有接口的相关信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定]{lang="EN-US" style="font-family:宋体"}**[evi-link]{lang="EN-US"}**]{#struct_0_20244_20619_295274096}[参数，不指定]{lang="EN-US" style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[参数，将显示所有已创建的]{lang="EN-US" style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口的相关信息。]{lang="EN-US" style="font-family:宋体"}
+·如果指定**evi-link**参数，不指定*interface-number*参数，将显示所有已创建的EVI-Link接口的相关信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_728009134}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x2056990069}[显示接口]{style="font-family:宋体"}[EVI-Link0]{lang="EN-US"}[的详细信息。]{style="font-family:宋体"}
+\# 显示接口EVI-Link0的详细信息。
 
-[[\<Sysname\> ]{lang="EN-US"}]{#struct_0_20244_20619_1486055568}[display interface evi-link 0]{lang="IT"}
+\<Sysname\> display interface evi-link 0
 
-[EVI]{lang="EN-US"}[-Link0]{lang="IT"}
+EVI-Link0
 
-[Current state: UP]{lang="IT"}
+Current state: UP
 
-[Description: ]{lang="IT"}[EVI]{lang="EN-US"}[-Link0 Interface]{lang="IT"}
+Description: EVI-Link0 Interface
 
-[PVID: 1]{lang="IT"}
+PVID: 1
 
-[Port link-type: trunk]{lang="IT"}
+Port link-type: trunk
 
-[ VLAN Passing:   none]{lang="IT"}
+ VLAN Passing:   none
 
-[ VLAN permitted: none]{lang="IT"}
+ VLAN permitted: none
 
-[ Trunk port encapsulation:  IEEE 802.1q]{lang="IT"}
+ Trunk port encapsulation:  IEEE 802.1q
 
-[This ]{lang="IT"}[EVI]{lang="EN-US"}[-link belongs to Tunnel0]{lang="IT"}
+This EVI-link belongs to Tunnel0
 
-[Source 1.1.1.1, Destination 1.1.2.1]{lang="IT"}
+Source 1.1.1.1, Destination 1.1.2.1
 
-[Network ID 1]{lang="IT"}
+Network ID 1
 
-[[表1-18 ]{lang="EN-US"}[display interface evi-link]{lang="EN-US"}]{#struct_0_20244_20619_2100608639}[命令显示信息描述表]{style="font-family:黑体"}
+表1-18 display interface evi-link命令显示信息描述表
 
-[]{#table_struct_0_2112158083}[[字段]{style="font-family:黑体"}]{#struct_0_20244_20619_x1546470270}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20244_20619_x1725844547}
+描述
 
-[[Current state]{lang="EN-US"}]{#struct_0_20244_20619_727812526}
+Current state
 
-[[接口的物理状态，可能的取值及含义如下：]{style="font-family:宋体"}]{#struct_0_20244_20619_385775921}
+接口的物理状态，可能的取值及含义如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_20244_20619_x481669904}[：该接口的物理状态为关闭]{style="font-family:宋体"}
+·DOWN：该接口的物理状态为关闭
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_20244_20619_1016534255}[：该接口的物理状态为开启]{style="font-family:宋体"}
+·UP：该接口的物理状态为开启
 
-[[Description]{lang="EN-US"}]{#struct_0_20244_20619_217727620}
+Description
 
-[[接口描述信息]{style="font-family:宋体"}]{#struct_0_20244_20619_90563558}
+接口描述信息
 
-[[PVID]{lang="EN-US"}]{#struct_0_20244_20619_x1694314696}[: 1]{lang="IT"}
+PVID: 1
 
-[[EVI-Link]{lang="EN-US"}]{#struct_0_20244_20619_x1377824704}[接口的缺省]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}
+EVI-Link接口的缺省VLAN ID为1
 
-[[Port link-type]{lang="EN-US"}]{#struct_0_20244_20619_728205742}[: trunk]{lang="IT"}
+Port link-type: trunk
 
-[[EVI-Link]{lang="EN-US"}]{#struct_0_20244_20619_956218299}[接口的链路类型为]{style="font-family:宋体"}[trunk]{lang="EN-US"}
+EVI-Link接口的链路类型为trunk
 
-[[VLAN Passing]{lang="EN-US"}]{#struct_0_20244_20619_331766513}
+VLAN Passing
 
-[[Trunk]{lang="EN-US"}]{#struct_0_20244_20619_x747414857}[口实际可以通过的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[（该]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[已经创建，并且接口允许其通过），对于]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口来说，始终显示]{style="font-family:宋体"}[none]{lang="EN-US"}
+Trunk口实际可以通过的VLAN（该VLAN已经创建，并且接口允许其通过），对于EVI-Link接口来说，始终显示none
 
-[[VLAN permitted]{lang="EN-US"}]{#struct_0_20244_20619_x963297562}
+VLAN permitted
 
-[[Trunk]{lang="EN-US"}]{#struct_0_20244_20619_312824025}[口允许通过的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[（该]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[不一定存在，可能没有创建），对于]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口来说，始终显示]{style="font-family:宋体"}[none]{lang="EN-US"}
+Trunk口允许通过的VLAN（该VLAN不一定存在，可能没有创建），对于EVI-Link接口来说，始终显示none
 
-[[Trunk port encapsulation]{lang="EN-US"}]{#struct_0_20244_20619_728271278}
+Trunk port encapsulation
 
-[[Trunk]{lang="EN-US"}]{#struct_0_20244_20619_x1368624151}[口上封装的协议类型]{style="font-family:宋体"}
+Trunk口上封装的协议类型
 
-[[This EVI-link belongs to Tunnel0]{lang="EN-US"}]{#struct_0_20244_20619_x1108162979}
+This EVI-link belongs to Tunnel0
 
-[[EVI-Link]{lang="EN-US"}]{#struct_0_20244_20619_2052163442}[接口所属的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道实例]{style="font-family:宋体"}
+EVI-Link接口所属的EVI隧道实例
 
-[[Source]{lang="EN-US"}]{#struct_0_20244_20619_87407194}
+Source
 
-[[EVI-Link]{lang="EN-US"}]{#struct_0_20244_20619_727681455}[接口的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道本端地址]{style="font-family:宋体"}
+EVI-Link接口的EVI隧道本端地址
 
-[[Destination]{lang="EN-US"}]{#struct_0_20244_20619_1705111288}
+Destination
 
-[[EVI-Link]{lang="EN-US"}]{#struct_0_20244_20619_x1053452195}[接口的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道对端地址]{style="font-family:宋体"}
+EVI-Link接口的EVI隧道对端地址
 
-[[Network ID]{lang="EN-US"}]{#struct_0_20244_20619_113884998}
+Network ID
 
-[[EVI-Link]{lang="EN-US"}]{#struct_0_20244_20619_x1143585704}[接口所属的]{style="font-family:宋体"}[Network ID]{lang="IT"}
+EVI-Link接口所属的Network ID
 
-[ ]{lang="EN-US"}
+\# 显示接口EVI-Link0的概要信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_727746991}[显示接口]{style="font-family:宋体"}[EVI-Link0]{lang="EN-US"}[的概要信息。]{style="font-family:宋体"}
+\<Sysname\> display interface evi-link 0 brief
 
-[[\<Sysname\> ]{lang="EN-US"}]{#struct_0_20244_20619_1749221673}[display interface evi-link 0 brief]{lang="IT"}
+Brief information on interface(s) under bridge mode:
 
-[Brief information on interface(s) under bridge mode:]{lang="IT"}
+Link: ADM - administratively down; Stby - standby
 
-[Link: ADM - administratively down; Stby - standby]{lang="IT"}
+Speed or Duplex: (a)/A - auto; H - half; F - full
 
-[Speed or Duplex: (a)/A - auto; H - half; F - full]{lang="IT"}
+Type: A - access; T - trunk; H - hybrid
 
-[Type: A - access; T - trunk; H - hybrid]{lang="IT"}
+Interface            Link Speed   Duplex Type PVID Description
 
-[Interface            Link Speed   Duplex Type PVID Description]{lang="IT"}
+ELNK0                UP   \--      \--     T    1
 
-[ELNK0                UP   \--      \--     T    1]{lang="IT"}
+\# 显示当前物理状态为down的EVI-Link接口的信息以及down的原因。
 
-[[\# ]{lang="IT"}]{#struct_0_20244_20619_x1515472715}[显示当前物理状态为]{style="font-family:宋体"}[down]{lang="IT"}[的]{style="font-family:宋体"}[EVI-Link]{lang="IT"}[接口的信息以及]{style="font-family:宋体"}[down]{lang="IT"}[的原因。]{style="font-family:宋体"}
+\<Sysname\> display interface evi-link brief down
 
-[[\<Sysname\> display interface evi-link brief down]{lang="IT"}]{#struct_0_20244_20619_1507266866}
+Brief information on interface(s) under bridge mode:
 
-[Brief information on interface(s) under bridge mode:]{lang="EN-US"}
+Link: ADM - administratively down; Stby - standby
 
-[Link: ADM - administratively down; Stby - standby]{lang="EN-US"}
+Interface            Link Cause
 
-[Interface            Link Cause]{lang="EN-US"}
+ELNK0                DOWN Not connected
 
-[ELNK0]{lang="IT"}[                DOWN Not connected]{lang="EN-US"}
+表1-19 display interface evi-link brief命令显示信息描述表
 
-[[表1-19 ]{lang="EN-US"}[display interface evi-link brief]{lang="EN-US"}]{#struct_0_20244_20619_x1043329693}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_2108144643}[[字段]{style="font-family:黑体"}]{#struct_0_20244_20619_1732849777}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20244_20619_727550383}
+Brief information on interface(s) under bridge mode
 
-[[Brief information on interface(s) under bridge mode]{lang="IT"}]{#struct_0_20244_20619_x2010214532}
+二层接口的概要信息
 
-[[二层接口的概要信息]{style="font-family:宋体"}]{#struct_0_20244_20619_1874060079}
+Interface
 
-[[Interface]{lang="EN-US"}]{#struct_0_20244_20619_931083532}
+接口名称缩写
 
-[[接口名称缩写]{style="font-family:宋体"}]{#struct_0_20244_20619_1949401480}
+Link
 
-[[Link]{lang="EN-US"}]{#struct_0_20244_20619_x969754635}
+接口物理连接状态，取值可能为：
 
-[[接口物理连接状态，取值可能为：]{style="font-family:宋体"}]{#struct_0_20244_20619_x1277889578}
+·UP：表示接口物理上是连通的
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_20244_20619_727615919}[：表示接口物理上是连通的]{style="font-family:宋体"}
+·DOWN：表示接口物理上不通
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_20244_20619_x183959048}[：表示接口物理上不通]{lang="EN-US" style="font-family:宋体"}
+·ADM：表示接口被手工关闭了，需要执行**undo shutdown**命令才能打开接口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ADM]{lang="EN-US"}]{#struct_0_20244_20619_913970446}[：表示]{style="font-family:宋体"}[接口]{lang="EN-US" style="font-family:宋体"}[被手工关闭了，需要执行]{style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**[命令才能打开]{style="font-family:宋体"}[接口]{lang="EN-US" style="font-family:宋体"}
+·Stby：表示该接口是一个备份接口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Stby]{lang="EN-US"}]{#struct_0_20244_20619_x641572772}[：表示该接口是一个备份接口]{style="font-family:宋体"}
+Speed
 
-[[Speed]{lang="EN-US"}]{#struct_0_20244_20619_x332060675}
+接口的速率，单位为bps
 
-[[接口的速率，单位为]{style="font-family:宋体"}[bps]{lang="EN-US"}]{#struct_0_20244_20619_13754796}
+Duplex
 
-[[Duplex]{lang="EN-US"}]{#struct_0_20244_20619_727943599}
+接口的双工模式，取值可能为：
 
-[[接口的双工模式，取值可能为：]{style="font-family:宋体"}]{#struct_0_20244_20619_744978533}
+·A：表示双工模式由自动协商结果决定
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[A]{lang="EN-US"}]{#struct_0_20244_20619_x783627335}[：表示双工模式由自动协商结果决定]{style="font-family:宋体"}
+·F：表示全双工
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[F]{lang="EN-US"}]{#struct_0_20244_20619_x705715461}[：表示全双工]{lang="EN-US" style="font-family:宋体"}
+·F(a)：表示自动协商的结果为全双工
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[F(a)]{lang="EN-US"}]{#struct_0_20244_20619_1653880973}[：表示自动协商的结果为全双工]{style="font-family:宋体"}
+·H：表示半双工
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[H]{lang="EN-US"}]{#struct_0_20244_20619_728009135}[：表示半双工]{lang="EN-US" style="font-family:宋体"}
+·H(a)：表示自动协商的结果为半双工
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[H(a)]{lang="EN-US"}]{#struct_0_20244_20619_x2056990070}[：表示自动协商的结果为半双工]{style="font-family:宋体"}
+Type
 
-[[Type]{lang="EN-US"}]{#struct_0_20244_20619_276267523}
+链路类型，取值可能为：
 
-[[链路类型，取值可能为：]{style="font-family:宋体"}]{#struct_0_20244_20619_x639070572}
+·A：表示Access链路类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[A]{lang="EN-US"}]{#struct_0_20244_20619_x858857043}[：表示]{lang="EN-US" style="font-family:宋体"}[Access]{lang="EN-US"}[链路类型]{lang="EN-US" style="font-family:宋体"}
+·T：表示Trunk链路类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[T]{lang="EN-US"}]{#struct_0_20244_20619_727812527}[：表示]{style="font-family:宋体"}[Trunk]{lang="EN-US"}[链路类型]{style="font-family:宋体"}
+·H：表示Hybrid链路类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[H]{lang="EN-US"}]{#struct_0_20244_20619_385775922}[：表示]{lang="EN-US" style="font-family:宋体"}[Hybrid]{lang="EN-US"}[链路类型]{lang="EN-US" style="font-family:宋体"}
+PVID
 
-[[PVID]{lang="EN-US"}]{#struct_0_20244_20619_x481669907}
+接口的缺省VLAN ID
 
-[[接口的缺省]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}]{#struct_0_20244_20619_1016599791}
+Description
 
-[[Description]{lang="EN-US"}]{#struct_0_20244_20619_x1639369528}
+用户通过**description**命令给接口配置的描述信息。使用**display interface brief**命令，不指定**description**参数时，该字段最多显示27个字符；指定**description**参数时，可显示配置的全部描述信息
 
-[[用户通过]{style="font-family:宋体"}**[description]{lang="EN-US"}**]{#struct_0_20244_20619_727878063}[命令给接口配置的描述信息。使用]{style="font-family:宋体"}**[display interface brief]{lang="EN-US"}**[命令，不指定]{style="font-family:宋体"}**[description]{lang="EN-US"}**[参数时，该字段最多显示]{style="font-family:宋体"}[27]{lang="EN-US"}[个字符；指定]{style="font-family:宋体"}**[description]{lang="EN-US"}**[参数时，可显示配置的全部描述信息]{style="font-family:宋体"}
+Cause
 
-[[Cause]{lang="EN-US"}]{#struct_0_20244_20619_2759355}
-
-[[接口物理连接状态为]{style="font-family:宋体"}[down]{lang="EN-US"}]{#struct_0_20244_20619_1783811561}[的原因，取值为]{style="font-family:宋体"}[Administratively]{lang="EN-US"}[时表示本链路被手工关闭了（配置了]{style="font-family:宋体"}**[shutdown]{lang="EN-US"}**[命令），需要执行]{style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**[命令才能恢复真实的物理状态；取值为]{style="font-family:宋体"}[Not connected]{lang="EN-US"}[时表示没有物理连接（可能没有插网线或者网线故障）]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#856040934 .myid}
-[]{#_Toc404798361}[]{#struct_0_20244_20619_x723916022}
+接口物理连接状态为down的原因，取值为Administratively时表示本链路被手工关闭了（配置了**shutdown**命令），需要执行**undo shutdown**命令才能恢复真实的物理状态；取值为Not connected时表示没有物理连接（可能没有插网线或者网线故障）
 
 **EVI \-- EVI配置命令 \-- evi arp-suppression enable**
 
 ------------------------------------------------------------------------
 
-[**[evi arp-suppression enable]{lang="EN-US"}**]{#struct_0_20244_20619_x1583277944}[命令用来开启]{style="font-family:
-宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制功能。]{style="font-family:宋体"}
+**[evi arp-suppression enable**]命令用来开启EVI ARP泛洪抑制功能。
 
-[**[undo evi arp-suppression enable]{lang="EN-US"}**]{#struct_0_20244_20619_x209091183}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo evi arp-suppression enable**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_728205743}
+【命令】
 
-[**[evi arp-suppression enable]{lang="EN-US"}**]{#struct_0_20244_20619_956218298}
+**[evi arp-suppression enable**]
 
-[**[undo evi arp-suppression enable]{lang="EN-US"}**]{#struct_0_20244_20619_331766514}
+**[undo evi arp-suppression enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_x747414854}
+【缺省情况】
 
-[[EVI ARP]{lang="EN-US"}]{#struct_0_20244_20619_x963100954}[泛洪抑制功能处于关闭状态。]{style="font-family:宋体"}
+EVI ARP泛洪抑制功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_372252862}
+【视图】
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_x1231564648}[接口视图]{style="font-family:宋体"}
+Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x670809694}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_x454104680}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_728271279}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1368624150}
+【使用指导】
 
-[[边缘设备通过侦听]{style="font-family:宋体"}[EVI]{lang="EN-US"}]{#struct_0_20244_20619_1620720376}[隧道终结的流量建立]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项，当侦听到本站点内主机请求其它站点主机的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[请求时，优先根据]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项进行代答，没有表项的则将]{style="font-family:宋体"}[ARP]{lang="EN-US"}[请求泛洪到公网。该功能可以大大减少]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪的次数。]{style="font-family:宋体"}
+边缘设备通过侦听EVI隧道终结的流量建立EVI ARP泛洪抑制表项，当侦听到本站点内主机请求其它站点主机的ARP请求时，优先根据EVI ARP泛洪抑制表项进行代答，没有表项的则将ARP请求泛洪到公网。该功能可以大大减少ARP泛洪的次数。
 
-[[需要注意的是，如果在动态]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_20244_20619_x1618982152}[地址表项老化时间内，远端站点的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[边缘设备没有流量转发到本地站点，那么远端]{style="font-family:宋体"}[EVI]{lang="EN-US"}[边缘设备上的动态]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项就会老化删除，同时通过]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[通告本地站点的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[边缘设备也删除对应表项。此时，如果本地站点内其他主机向对端站点内主机发出]{style="font-family:宋体"}[ARP]{lang="EN-US"}[请求，本地]{style="font-family:宋体"}[EVI]{lang="EN-US"}[边缘设备会根据]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项对该]{style="font-family:宋体"}[ARP]{lang="EN-US"}[请求进行代答。但是，报文在转发时会因为在本地]{style="font-family:宋体"}[EVI]{lang="EN-US"}[边缘设备的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表中没有对应表项而被丢弃，造成流量黑洞。]{style="font-family:宋体"}
+需要注意的是，如果在动态MAC地址表项老化时间内，远端站点的EVI边缘设备没有流量转发到本地站点，那么远端EVI边缘设备上的动态MAC地址表项就会老化删除，同时通过EVI IS-IS通告本地站点的EVI边缘设备也删除对应表项。此时，如果本地站点内其他主机向对端站点内主机发出ARP请求，本地EVI边缘设备会根据EVI ARP泛洪抑制表项对该ARP请求进行代答。但是，报文在转发时会因为在本地EVI边缘设备的MAC地址表中没有对应表项而被丢弃，造成流量黑洞。
 
-[[为了避免]{style="font-family:宋体"}[EVI]{lang="EN-US"}]{#struct_0_20244_20619_1511301674}[边缘设备错误地代答本地的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[请求造成流量黑洞，用户需要配置]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项老化时间不小于]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项老化时间。]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项的缺省老化时间为]{style="font-family:宋体"}[15]{lang="EN-US"}[分钟，动态]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项的缺省老化时间与设备型号有关，请以设备实际情况为准。可以通过命令]{style="font-family:宋体"}**[display mac-address aging-time]{lang="EN-US"}**[和]{style="font-family:
-宋体"}**[mac-address timer]{lang="EN-US"}**[查看和配置动态]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项的老化时间。]{style="font-family:宋体"}
+为了避免EVI边缘设备错误地代答本地的ARP请求造成流量黑洞，用户需要配置MAC地址表项老化时间不小于EVI ARP泛洪抑制表项老化时间。EVI ARP泛洪抑制表项的缺省老化时间为15分钟，动态MAC地址表项的缺省老化时间与设备型号有关，请以设备实际情况为准。可以通过命令**display mac-address aging-time**和**mac-address timer**查看和配置动态MAC地址表项的老化时间。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_704263031}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_1873357097}[在]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口]{style="font-family:宋体"}[Tunnel101]{lang="EN-US"}[下开启]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制功能。]{style="font-family:宋体"}
+\# 在EVI隧道接口Tunnel101下开启EVI ARP泛洪抑制功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_x2078507990}
+\<Sysname\> system-view
 
-[\[Sysname\] interface tunnel 101 mode evi]{lang="EN-US"}
+Sysname interface tunnel 101 mode evi
 
-[\[Sysname-tunnel 101\] evi arp-suppression enable]{lang="EN-US"}
+Sysname-tunnel 101 evi arp-suppression enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x110029895}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display evi arp-suppression]{lang="EN-US"}**]{#struct_0_20244_20619_945816045}
+·**display evi arp-suppression**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[mac-address timer]{lang="EN-US"}**]{#struct_0_20244_20619_x1619047688}[（二层技术]{lang="EN-US" style="font-family:宋体"}[-]{lang="EN-US"}[以太网交换命令参考]{lang="EN-US" style="font-family:宋体"}[/MAC]{lang="EN-US"}[地址表）]{lang="EN-US" style="font-family:宋体"}
+·**mac-address timer**（二层技术-以太网交换命令参考/MAC地址表）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset]{lang="EN-US"}[ evi arp-suppression]{lang="EN-US"}**]{#struct_0_20244_20619_546325247}
-:::
-
-::: {#1214032688 .myid}
-[]{#_Toc404798362}[]{#struct_0_20244_20619_x2001201897}[]{#_Toc312867800}
+·**reset evi arp-suppression**
 
 **EVI \-- EVI配置命令 \-- evi designated-vlan**
 
 ------------------------------------------------------------------------
 
-[**[evi designated-vlan]{lang="EN-US"}**]{#struct_0_20244_20619_x40812489}[命令用来配置指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[evi designated-vlan**]命令用来配置指定VLAN。
 
-[**[undo ]{lang="EN-US"}[evi designated-vlan]{lang="EN-US"}**]{#struct_0_20244_20619_122995524}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo evi designated-vlan**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_1990907116}
+【命令】
 
-[**[evi designated-vlan]{lang="EN-US"}**[ *vlan-id*]{lang="EN-US"}]{#struct_0_20244_20619_76139554}
+**[evi designated-vlan** *vlan-id*]
 
-[**[undo ]{lang="EN-US"}[evi designated-vlan]{lang="EN-US"}**]{#struct_0_20244_20619_1756582524}
+**[undo evi designated-vlan**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1978188999}
+【缺省情况】
 
-[[指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_20244_20619_x679834783}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:
-宋体"}
+指定VLAN为1。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_1275843958}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_20244_20619_x58873699}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2001136361}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_1912418671}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_1287825782}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_731430265}
+【参数】
 
-[*[vlan-id]{lang="EN-US"}*]{#struct_0_20244_20619_157942285}[：指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[vlan-id*]：指定VLAN，取值范围为1～4094。
 
-[[【使用指导】]{style="font-family:
-黑体"}]{#struct_0_20244_20619_73141}
+【使用指导】
 
-[[指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_20244_20619_681213413}[用来进行站点内]{style="font-family:宋体"}[EVI IS-IS Hello]{lang="EN-US"}[报文的交互。]{style="font-family:宋体"}
+指定VLAN用来进行站点内EVI IS-IS Hello报文的交互。
 
-[[网络规划时，必须保证各边缘设备在其指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_20244_20619_1892006312}[内可达。]{style="font-family:宋体"}
+网络规划时，必须保证各边缘设备在其指定VLAN内可达。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x630308382}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x2001332969}[配置指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[为]{style="font-family:宋体"}[2]{lang="EN-US"}[。]{style="font-family:
-宋体"}
+\# 配置指定VLAN为2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_1737152065}
+\<Sysname\> system-view
 
-[\[Sysname\] evi designated-vlan 2]{lang="EN-US"}
-:::
-
-::::: {#-553476736 .myid}
-[]{#_Toc404798363}[]{#struct_0_20244_20619_x1719861705}
+Sysname evi designated-vlan 2
 
 **EVI \-- EVI配置命令 \-- evi enable**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](EVI命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_20244_20619_1926038713}
-:::
+![说明](EVI命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_20244_20619_x185673545}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[evi enable]{lang="EN-US"}**]{#struct_0_20244_20619_x1195323243}[命令用来开启接口的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[evi enable**]命令用来开启接口的EVI功能。
 
-[**[undo evi enable]{lang="EN-US"}**]{#struct_0_20244_20619_x1451821848}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo evi enable**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_1533311809}
+【命令】
 
-[**[evi enable]{lang="EN-US"}**]{#struct_0_20244_20619_1063559330}
+**[evi enable**]
 
-[**[undo evi enable]{lang="EN-US"}**]{#struct_0_20244_20619_x2001267433}
+**[undo evi enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_480596017}
+【缺省情况】
 
-[[接口的]{style="font-family:宋体"}[EVI]{lang="EN-US"}]{#struct_0_20244_20619_x1078915685}[功能处于关闭状态。]{style="font-family:宋体"}
+接口的EVI功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_1491270500}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_20244_20619_710236399}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_1880462705}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_x1773105736}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_591814235}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1061352759}
+【使用指导】
 
-[[用户需要在接入]{style="font-family:宋体"}[EVI]{lang="EN-US"}]{#struct_0_20244_20619_x2000939753}[网络的所有物理接口上开启]{style="font-family:宋体"}[EVI]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+用户需要在接入EVI网络的所有物理接口上开启EVI功能。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1102964158}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x426372695}[开启接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 开启接口GigabitEthernet1/0/1的EVI功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_2002512438}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] evi enable]{lang="EN-US"}
-:::::
-
-::: {#-1534104400 .myid}
-[]{#_Toc404798364}[]{#struct_0_20244_20619_2087267923}[]{#_Toc312867801}
+Sysname-GigabitEthernet1/0/1 evi enable
 
 **EVI \-- EVI配置命令 \-- evi extend-vlan**
 
 ------------------------------------------------------------------------
 
-[**[evi extend-vlan]{lang="EN-US"}**]{#struct_0_20244_20619_x1924347778}[命令用来配置扩展]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[evi extend-vlan**]命令用来配置扩展VLAN。
 
-[**[undo evi extend-vlan]{lang="EN-US"}**]{#struct_0_20244_20619_1110202175}[命令用来取消配置的扩展]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo evi extend-vlan**]命令用来取消配置的扩展VLAN。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_1724914738}
+【命令】
 
-[**[evi]{lang="EN-US"}[ extend-vlan]{lang="EN-US"}**[ *vlan-list*]{lang="EN-US"}]{#struct_0_20244_20619_x540647347}
+**[evi extend-vlan** *vlan-list*]
 
-[**[undo evi ]{lang="EN-US"}[extend-vlan]{lang="EN-US"}**[ *vlan-list*]{lang="EN-US"}]{#struct_0_20244_20619_x2000874217}
+**[undo evi extend-vlan** *vlan-list*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_257952927}
+【缺省情况】
 
-[[没有配置扩展]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_20244_20619_x1099886792}[。]{style="font-family:宋体"}
+没有配置扩展VLAN。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x991705087}
+【视图】
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_x315653087}[接口视图]{style="font-family:宋体"}
+Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_2131195158}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_x2070888147}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_280824602}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1786249125}
+【参数】
 
-[*[vlan-list]{lang="EN-US"}*]{#struct_0_20244_20619_x2001070825}[：]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，指定了扩展]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的范围。表示方式为]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[ = { *vlan-id1* \[ **to** *vlan-id2* \] }&\<1-10\>]{lang="EN-US"}[，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[，]{style="font-family:宋体"}*[vlan]{lang="EN-US"}*[-*id2*]{lang="EN-US"}[的值要大于或等于]{style="font-family:宋体"}*[vlan]{lang="EN-US"}*[-*id1*]{lang="EN-US"}[的值，]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。]{style="font-family:宋体"}
+*[vlan-list*]：VLAN列表，指定了扩展VLAN的范围。表示方式为*vlan-list* = { *vlan-id1* [ **to** *vlan-id2*  }&\<1-10\>]，*vlan-id*取值范围为1～4094，*vlan*-*id2*的值要大于或等于*vlan*-*id1*的值，&\<1-10\>表示前面的参数最多可以输入10次。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1422908480}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x539772071}[配置扩展]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[10]{lang="EN-US"}[、]{style="font-family:宋体"}[15]{lang="EN-US"}[和]{style="font-family:宋体"}[100]{lang="EN-US"}[～]{style="font-family:宋体"}[200]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置扩展VLAN为1～10、15和100～200。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_x959263764}
+\<Sysname\> system-view
 
-[\[Sysname\] interface tunnel 101 mode evi]{lang="EN-US"}
+Sysname interface tunnel 101 mode evi
 
-[\[Sysname-tunnel101\] evi extend-vlan 1 to 10 15 100 to 200]{lang="EN-US"}
-:::
-
-::::: {#1745583417 .myid}
-[]{#_Toc404798365}[]{#struct_0_20244_20619_343184400}
+Sysname-tunnel101 evi extend-vlan 1 to 10 15 100 to 200
 
 **EVI \-- EVI配置命令 \-- evi flooding enable**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](EVI命令.files/image001.png){#图片 1 width="62" height="25"}]{lang="EN-US"}]{#struct_0_20244_20619_x1345374011}
-:::
+![说明](EVI命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_20244_20619_x526299143}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[evi flooding enable]{lang="EN-US"}**]{#struct_0_20244_20619_587602468}[命令用来开启]{style="font-family:宋体"}[EVI]{lang="EN-US"}[泛洪功能。]{style="font-family:宋体"}
+**[evi flooding enable**]命令用来开启EVI泛洪功能。
 
-[**[undo evi flooding enable]{lang="EN-US"}**]{#struct_0_20244_20619_386791031}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo evi flooding enable**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2001005289}
+【命令】
 
-[**[evi flooding enable]{lang="EN-US"}**]{#struct_0_20244_20619_2009517643}
+**[evi flooding enable**]
 
-[**[undo evi flooding enable]{lang="EN-US"}**]{#struct_0_20244_20619_852522337}
+**[undo evi flooding enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_1933093756}
+【缺省情况】
 
-[[EVI]{lang="EN-US"}]{#struct_0_20244_20619_x1689024071}[泛洪功能处于关闭状态。]{style="font-family:宋体"}
+EVI泛洪功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1739561355}
+【视图】
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_x2120153923}[接口视图]{style="font-family:宋体"}
+Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_470374797}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_x119771873}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_x2000677609}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_855223329}
+【使用指导】
 
-[[缺省情况下，边缘设备对于未知地址的帧（包括未知单播帧和未知组播帧）只在]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_20244_20619_751034641}[内的站点内部接口上进行泛洪，不会泛洪到其它站点。如果用户希望未知地址的帧可以泛洪到其它站点，可以开启]{style="font-family:宋体"}[EVI]{lang="EN-US"}[泛洪功能，当边缘设备收到未知地址的帧时，可以通过]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道泛洪转发到其它站点。]{style="font-family:宋体"}
+缺省情况下，边缘设备对于未知地址的帧（包括未知单播帧和未知组播帧）只在VLAN内的站点内部接口上进行泛洪，不会泛洪到其它站点。如果用户希望未知地址的帧可以泛洪到其它站点，可以开启EVI泛洪功能，当边缘设备收到未知地址的帧时，可以通过EVI隧道泛洪转发到其它站点。
 
-[**[evi flooding enable]{lang="EN-US"}**]{#struct_0_20244_20619_666883186}[命令和]{style="font-family:宋体"}**[evi selective-flooding mac-address]{lang="EN-US"}**[命令的区别如下：]{style="font-family:
-宋体"}
+**[evi flooding enable**]命令和**evi selective-flooding mac-address**命令的区别如下：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[evi flooding enable]{lang="EN-US"}**]{#struct_0_20244_20619_x452613141}[命令是]{lang="EN-US" style="font-family:宋体"}[将]{style="font-family:宋体"}[所有的未知单播帧和未知组播帧都向其它站点泛洪]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}
+·**evi flooding enable**命令是将所有的未知单播帧和未知组播帧都向其它站点泛洪。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[evi selective-flooding mac-address]{lang="EN-US"}**]{#struct_0_20244_20619_x1378839298}[命令]{lang="EN-US" style="font-family:宋体"}[是针对某业务的]{lang="EN-US" style="font-family:
-宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}[放开限制，]{lang="EN-US" style="font-family:宋体"}[仅将配置的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址在指定的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[范围内向]{style="font-family:宋体"}[其它站点]{lang="EN-US" style="font-family:宋体"}[泛洪。]{style="font-family:宋体"}
+·**evi selective-flooding mac-address**命令是针对某业务的MAC地址放开限制，仅将配置的MAC地址在指定的VLAN范围内向其它站点泛洪。
 
-[[上述两个命令的使用场景不同，建议用户不要同时配置。如果用户同时配置了这两条命令，系统实际执行的是]{style="font-family:宋体"}**[evi flooding enable]{lang="EN-US"}**]{#struct_0_20244_20619_x351423256}[命令，无法实现]{style="font-family:宋体"}**[evi selective-flooding mac-address]{lang="EN-US"}**[命令的控制效果]{style="font-family:
-宋体"}[。]{style="font-family:宋体"}
+上述两个命令的使用场景不同，建议用户不要同时配置。如果用户同时配置了这两条命令，系统实际执行的是**evi flooding enable**命令，无法实现**evi selective-flooding mac-address**命令的控制效果。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_1406244027}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x1988233578}[在]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口]{style="font-family:宋体"}[Tunnel101]{lang="EN-US"}[下开启]{style="font-family:宋体"}[EVI]{lang="EN-US"}[泛洪功能。]{style="font-family:宋体"}
+\# 在EVI隧道接口Tunnel101下开启EVI泛洪功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_x2000612073}
+\<Sysname\> system-view
 
-[\[Sysname\] interface tunnel 101 mode evi]{lang="EN-US"}
+Sysname interface tunnel 101 mode evi
 
-[\[Sysname-tunnel 101\] evi flooding enable]{lang="EN-US"}
+Sysname-tunnel 101 evi flooding enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x71149617}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[evi selective-flooding mac-address]{lang="EN-US"}**]{#struct_0_20244_20619_x259343399}
-:::::
-
-::: {#-1689227581 .myid}
-[]{#_Toc404798366}[]{#struct_0_20244_20619_675320928}[]{#_Toc312867806}
+·**evi selective-flooding mac-address**
 
 **EVI \-- EVI配置命令 \-- evi isis ded-priority**
 
 ------------------------------------------------------------------------
 
-[**[evi isis]{lang="EN-US"}[ ded-priority]{lang="EN-US"}**]{#struct_0_20244_20619_2144483214}[命令用来配置]{style="font-family:宋体"}[DED]{lang="EN-US"}[优先级。]{style="font-family:宋体"}
+**[evi isis ded-priority**]命令用来配置DED优先级。
 
-[**[undo evi isis]{lang="EN-US"}[ ded-priority]{lang="EN-US"}**]{#struct_0_20244_20619_382387007}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo evi isis ded-priority**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_711797231}
+【命令】
 
-[**[evi isis]{lang="EN-US"}[ ded-priority ]{lang="EN-US"}***[value]{lang="EN-US"}*]{#struct_0_20244_20619_x1757346989}
+**[evi isis ded-priority ***value*]
 
-[**[undo evi isis ded-priority]{lang="EN-US"}**]{#struct_0_20244_20619_1376211552}
+**[undo evi isis ded-priority**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_730316977}
+【缺省情况】
 
-[[DED]{lang="EN-US"}]{#struct_0_20244_20619_x2001201896}[优先级为]{style="font-family:宋体"}[64]{lang="EN-US"}[。]{style="font-family:宋体"}
+DED优先级为64。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1606896430}
+【视图】
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_2062596574}[接口视图]{style="font-family:宋体"}
+Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x376831215}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_x1995207065}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_x2016294938}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_1551329431}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_20244_20619_1644647789}[：配置]{style="font-family:宋体"}[DED]{lang="EN-US"}[优先级，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[127]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[value*]：配置DED优先级，取值范围为0～127。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_966786196}
+【使用指导】
 
-[[DED]{lang="EN-US"}]{#struct_0_20244_20619_x2001136360}[分为站点内]{style="font-family:宋体"}[DED]{lang="EN-US"}[和站点间]{style="font-family:宋体"}[DED]{lang="EN-US"}[，二者的选举方式和作用不同：]{style="font-family:宋体"}
+DED分为站点内DED和站点间DED，二者的选举方式和作用不同：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[站点内]{style="font-family:宋体"}]{#struct_0_20244_20619_x816464684}[DED]{lang="EN-US"}[：站点内的各边缘设备通过交互]{style="font-family:宋体"}[EVI IS-IS Hello]{lang="EN-US"}[报文来选举站点内]{style="font-family:宋体"}[DED]{lang="EN-US"}[。由站点内]{style="font-family:宋体"}[DED]{lang="EN-US"}[来分配各边缘设备的激活]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+·站点内DED：站点内的各边缘设备通过交互EVI IS-IS Hello报文来选举站点内DED。由站点内DED来分配各边缘设备的激活VLAN。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[站点间]{style="font-family:宋体"}]{#struct_0_20244_20619_1223795985}[DED]{lang="EN-US"}[：每个]{style="font-family:宋体"}[EVI Link]{lang="EN-US"}[两端的边缘设备通过交互]{style="font-family:宋体"}[EVI IS-IS Hello]{lang="EN-US"}[报文选举出一个站点间]{style="font-family:宋体"}[DED]{lang="EN-US"}[。站点间的边缘设备通过站点间]{style="font-family:宋体"}[DED]{lang="EN-US"}[周期性发布]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文来进行]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步。]{style="font-family:宋体"}
+·站点间DED：每个EVI Link两端的边缘设备通过交互EVI IS-IS Hello报文选举出一个站点间DED。站点间的边缘设备通过站点间DED周期性发布CSNP报文来进行LSDB同步。
 
-[[DED]{lang="EN-US"}]{#struct_0_20244_20619_892523942}[优先级数值越高，被选中的可能性就越大；如果两台边缘设备的]{style="font-family:宋体"}[DED]{lang="EN-US"}[优先级相同，则]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址较大的边缘设备会被选中。]{style="font-family:宋体"}
+DED优先级数值越高，被选中的可能性就越大；如果两台边缘设备的DED优先级相同，则MAC地址较大的边缘设备会被选中。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_337602336}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_1509794074}[配置]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口]{style="font-family:宋体"}[Tunnel101]{lang="EN-US"}[的]{style="font-family:宋体"}[DED]{lang="EN-US"}[优先级为]{style="font-family:宋体"}[2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置EVI隧道接口Tunnel101的DED优先级为2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_x846465555}
+\<Sysname\> system-view
 
-[\[Sysname\] interface tunnel 101 mode evi]{lang="EN-US"}
+Sysname interface tunnel 101 mode evi
 
-[\[Sysname-tunnel101\] evi isis ded-priority 2]{lang="EN-US"}
+Sysname-tunnel101 evi isis ded-priority 2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x610880640}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **evi isis** **tunnel**]{lang="EN-US"}]{#struct_0_20244_20619_x840314084}
-:::
-
-::: {#-205923979 .myid}
-[]{#_Toc404798367}[]{#struct_0_20244_20619_x2016143691}[]{#_Toc364422908}[]{#_Toc351711389}
+·**display** **evi isis** **tunnel**
 
 **EVI \-- EVI配置命令 \-- evi isis preferred-vlan**
 
 ------------------------------------------------------------------------
 
-[**[evi isis preferred-vlan]{lang="EN-US"}**]{#struct_0_20244_20619_653543976}[命令用来配置优先分配给本设备的扩展]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，本设备将优先作为这些扩展]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的授权转发设备。]{style="font-family:宋体"}
+**[evi isis preferred-vlan**]命令用来配置优先分配给本设备的扩展VLAN，本设备将优先作为这些扩展VLAN的授权转发设备。
 
-[**[undo evi isis preferred-vlan]{lang="EN-US"}**]{#struct_0_20244_20619_x2016209227}[命令用来取消优先分配给本设备的扩展]{style="font-family:
-宋体"}[VLAN]{lang="EN-US"}[的配置。]{style="font-family:
-宋体"}
+**[undo evi isis preferred-vlan**]命令用来取消优先分配给本设备的扩展VLAN的配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_1400979714}
+【命令】
 
-[**[evi isis preferred-vlan]{lang="EN-US"}**[ *vlan-list*]{lang="EN-US"}]{#struct_0_20244_20619_x846578633}
+**[evi isis preferred-vlan** *vlan-list*]
 
-[**[undo evi isis preferred-vlan]{lang="EN-US"}**[ *vlan-list*]{lang="EN-US"}]{#struct_0_20244_20619_x2016274763}
+**[undo evi isis preferred-vlan** *vlan-list*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1943389352}
+【缺省情况】
 
-[[没有配置优先分配给本设备的扩展]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_20244_20619_x534643606}[。]{style="font-family:宋体"}
+没有配置优先分配给本设备的扩展VLAN。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x658483345}
+【视图】
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_x2016340299}[接口视图]{style="font-family:宋体"}
+Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_435529036}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_x818016170}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_x2015881547}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x820674432}
+【参数】
 
-[*[vlan-list]{lang="EN-US"}*]{#struct_0_20244_20619_867708715}[：]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，指定了优先分配给本设备的扩展]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的范围。表示方式为]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[ = { *vlan-id1* \[ **to** *vlan-id2* \] }&\<1-10\>]{lang="EN-US"}[，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[，]{style="font-family:宋体"}*[vlan]{lang="EN-US"}*[-*id2*]{lang="EN-US"}[的值要大于或等于]{style="font-family:宋体"}*[vlan]{lang="EN-US"}*[-*id1*]{lang="EN-US"}[的值，]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。]{style="font-family:宋体"}
+*[vlan-list*]：VLAN列表，指定了优先分配给本设备的扩展VLAN的范围。表示方式为*vlan-list* = { *vlan-id1* [ **to** *vlan-id2*  }&\<1-10\>]，*vlan-id*取值范围为1～4094，*vlan*-*id2*的值要大于或等于*vlan*-*id1*的值，&\<1-10\>表示前面的参数最多可以输入10次。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2015947083}
+【使用指导】
 
-[[边缘设备配置了优先作为扩展]{style="font-family:宋体"}[VLAN X]{lang="EN-US"}]{#struct_0_20244_20619_x1959382277}[的授权转发设备后，]{style="font-family:宋体"}[DED]{lang="EN-US"}[会优先将扩展]{style="font-family:宋体"}[VLAN X]{lang="EN-US"}[分配给该边缘设备作为激活]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。两台或多台站点内边缘设备都配置了同样的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，则仍按照原来的平均和连续的原则分配激活]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。取消配置后，如果该扩展]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[没有被其他边缘设备配置为优先分配的扩展]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，按稳定原则不改变其授权转发设备。]{style="font-family:宋体"}
+边缘设备配置了优先作为扩展VLAN X的授权转发设备后，DED会优先将扩展VLAN X分配给该边缘设备作为激活VLAN。两台或多台站点内边缘设备都配置了同样的VLAN，则仍按照原来的平均和连续的原则分配激活VLAN。取消配置后，如果该扩展VLAN没有被其他边缘设备配置为优先分配的扩展VLAN，按稳定原则不改变其授权转发设备。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_20244_20619_332016319}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[多次配置本命令，其结果是多次配置]{style="font-family:宋体"}]{#struct_0_20244_20619_756254985}[VLAN]{lang="EN-US"}[的合集。]{style="font-family:宋体"}
+·多次配置本命令，其结果是多次配置VLAN的合集。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置的优先分配给本设备的扩展]{style="font-family:宋体"}]{#struct_0_20244_20619_x2016012619}[VLAN]{lang="EN-US"}[必须是所配置的扩展]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的子集，如果用户配置的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[本身就不是扩展]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，则不起作用。]{style="font-family:宋体"}
+·配置的优先分配给本设备的扩展VLAN必须是所配置的扩展VLAN的子集，如果用户配置的VLAN本身就不是扩展VLAN，则不起作用。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_1019471621}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x182218744}[配置本设备优先作为扩展]{style="font-family:宋体"}[VLAN1]{lang="EN-US"}[～]{style="font-family:宋体"}[10]{lang="EN-US"}[、]{style="font-family:宋体"}[15]{lang="EN-US"}[、]{style="font-family:宋体"}[100]{lang="EN-US"}[～]{style="font-family:宋体"}[200]{lang="EN-US"}[的授权转发设备。]{style="font-family:宋体"}
+\# 配置本设备优先作为扩展VLAN1～10、15、100～200的授权转发设备。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_x2016078155}
+\<Sysname\> system-view
 
-[\[Sysname\] interface tunnel 101]{lang="EN-US"}
+Sysname interface tunnel 101
 
-[\[Sysname-tunnel101\] evi isis preferred-vlan 1 to 10 15 100 to 200]{lang="EN-US"}
+Sysname-tunnel101 evi isis preferred-vlan 1 to 10 15 100 to 200
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x249289588}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[evi extend-vlan]{lang="EN-US"}**]{#struct_0_20244_20619_897591831}
-:::
-
-::: {#152098546 .myid}
-[]{#_Toc404798368}[]{#struct_0_20244_20619_x2001332968}[]{#_Toc312867802}
+·**evi extend-vlan**
 
 **EVI \-- EVI配置命令 \-- evi isis timer csnp**
 
 ------------------------------------------------------------------------
 
-[**[evi isis timer csnp]{lang="EN-US"}**]{#struct_0_20244_20619_x991731290}[命令用来配置]{style="font-family:宋体"}[DED]{lang="EN-US"}[发送]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文的时间间隔。]{style="font-family:宋体"}
+**[evi isis timer csnp**]命令用来配置DED发送CSNP报文的时间间隔。
 
-[**[undo evi isis timer csnp]{lang="EN-US"}**]{#struct_0_20244_20619_2042212790}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo evi isis timer csnp**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x50835994}
+【命令】
 
-[**[evi isis timer csnp]{lang="EN-US"}**[ *seconds*]{lang="EN-US"}]{#struct_0_20244_20619_x1272771953}
+**[evi isis timer csnp** *seconds*]
 
-[**[undo evi isis timer csnp]{lang="EN-US"}**]{#struct_0_20244_20619_1686168109}
+**[undo evi isis timer csnp**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_83743354}
+【缺省情况】
 
-[[DED]{lang="EN-US"}]{#struct_0_20244_20619_395150309}[发送]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文的时间间隔为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+DED发送CSNP报文的时间间隔为10秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_1669971740}
+【视图】
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_x2001267432}[接口视图]{style="font-family:宋体"}
+Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1085487924}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_122031081}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_1794126852}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1455668794}
+【参数】
 
-[*[seconds]{lang="EN-US"}*]{#struct_0_20244_20619_1078079024}[：]{style="font-family:宋体"}[DED]{lang="EN-US"}[发送]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文的时间间隔，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[600]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[seconds*]：DED发送CSNP报文的时间间隔，取值范围为1～600，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1787421802}
+【使用指导】
 
-[[DED]{lang="EN-US"}]{#struct_0_20244_20619_x770704837}[使用]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文来进行]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步，只有在被选举为]{style="font-family:宋体"}[DED]{lang="EN-US"}[的设备上进行该项配置才有效。]{style="font-family:宋体"}
+DED使用CSNP报文来进行LSDB同步，只有在被选举为DED的设备上进行该项配置才有效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_69719306}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x80337812}[配置]{style="font-family:宋体"}[DED]{lang="EN-US"}[发送]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文的时间间隔为]{style="font-family:宋体"}[15]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置DED发送CSNP报文的时间间隔为15秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_x2000939752}
+\<Sysname\> system-view
 
-[\[Sysname\] interface tunnel 101 mode evi]{lang="EN-US"}
+Sysname interface tunnel 101 mode evi
 
-[\[Sysname-tunnel101\] evi isis timer csnp 15]{lang="EN-US"}
+Sysname-tunnel101 evi isis timer csnp 15
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_463119783}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **evi isis** **tunnel**]{lang="EN-US"}]{#struct_0_20244_20619_x312368664}
-:::
-
-::: {#-389062720 .myid}
-[]{#_Toc404798369}[]{#struct_0_20244_20619_652244762}[]{#_Toc312867803}
+·**display** **evi isis** **tunnel**
 
 **EVI \-- EVI配置命令 \-- evi isis timer hello**
 
 ------------------------------------------------------------------------
 
-[**[evi isis timer hello]{lang="EN-US"}**]{#struct_0_20244_20619_133996761}[命令用来配置]{style="font-family:宋体"}[EVI IS-IS Hello]{lang="EN-US"}[报文的发送时间间隔。]{style="font-family:宋体"}
+**[evi isis timer hello**]命令用来配置EVI IS-IS Hello报文的发送时间间隔。
 
-[**[undo evi isis timer hello]{lang="EN-US"}**]{#struct_0_20244_20619_x1963739612}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo evi isis timer hello**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_1202078875}
+【命令】
 
-[**[evi isis timer ]{lang="EN-US"}[hello]{lang="EN-US"}**[ *seconds*]{lang="EN-US"}]{#struct_0_20244_20619_x1599551289}
+**[evi isis timer hello** *seconds*]
 
-[**[undo evi isis timer hello]{lang="EN-US"}**]{#struct_0_20244_20619_x1346374637}
+**[undo evi isis timer hello**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2000874216}
+【缺省情况】
 
-[[EVI IS-IS Hello]{lang="EN-US"}]{#struct_0_20244_20619_1824036868}[报文的发送时间间隔为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+EVI IS-IS Hello报文的发送时间间隔为10秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_1808616112}
+【视图】
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_564399325}[接口视图]{style="font-family:宋体"}
+Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_678935850}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_82687089}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_x1180983299}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_56407527}
+【参数】
 
-[*[seconds]{lang="EN-US"}*]{#struct_0_20244_20619_x1496364442}[：配置]{style="font-family:宋体"}[EVI IS-IS Hello]{lang="EN-US"}[报文的发送时间间隔，取值范围为]{style="font-family:宋体"}[3]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[seconds*]：配置EVI IS-IS Hello报文的发送时间间隔，取值范围为3～255，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2001070824}
+【使用指导】
 
-[[EVI IS-IS Hello]{lang="EN-US"}]{#struct_0_20244_20619_143175461}[报文的发送时间间隔越短，网络收敛越快，但也需要占用更多的系统资源；因此，需要根据实际情况指定]{style="font-family:宋体"}[EVI IS-IS Hello]{lang="EN-US"}[报文的发送时间间隔。]{style="font-family:宋体"}
+EVI IS-IS Hello报文的发送时间间隔越短，网络收敛越快，但也需要占用更多的系统资源；因此，需要根据实际情况指定EVI IS-IS Hello报文的发送时间间隔。
 
-[[需要注意的是，]{style="font-family:宋体"}[DED]{lang="EN-US"}]{#struct_0_20244_20619_x1725545905}[发送]{style="font-family:宋体"}[EVI IS-IS Hello]{lang="EN-US"}[报文的时间间隔是]{style="font-family:宋体"}**[evi isis timer ]{lang="EN-US"}[hello]{lang="EN-US"}**[命令设置的时间间隔的]{style="font-family:宋体"}[1/3]{lang="EN-US"}[。]{style="font-family:宋体"}
+需要注意的是，DED发送EVI IS-IS Hello报文的时间间隔是**evi isis timer hello**命令设置的时间间隔的1/3。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1672154035}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_1855477702}[配置]{style="font-family:宋体"}[EVI IS-IS Hello]{lang="EN-US"}[报文的发送时间间隔为]{style="font-family:宋体"}[6]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置EVI IS-IS Hello报文的发送时间间隔为6秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_x1109724080}
+\<Sysname\> system-view
 
-[\[Sysname\] interface tunnel 101 mode evi]{lang="EN-US"}
+Sysname interface tunnel 101 mode evi
 
-[\[Sysname-tunnel101\] evi isis timer hello 6]{lang="EN-US"}
+Sysname-tunnel101 evi isis timer hello 6
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_507811741}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **evi isis** **tunnel**]{lang="EN-US"}]{#struct_0_20244_20619_1306815212}
-:::
-
-::: {#-428882458 .myid}
-[]{#_Toc404798370}[]{#struct_0_20244_20619_1040738792}[]{#_Toc312867804}
+·**display** **evi isis** **tunnel**
 
 **EVI \-- EVI配置命令 \-- evi isis timer holding-multiplier**
 
 ------------------------------------------------------------------------
 
-[**[evi isis timer holding-multiplier]{lang="EN-US"}**]{#struct_0_20244_20619_x2001005288}[命令用来配置]{style="font-family:宋体"}[EVI IS-IS Hello]{lang="EN-US"}[报文失效数目。]{style="font-family:宋体"}
+**[evi isis timer holding-multiplier**]命令用来配置EVI IS-IS Hello报文失效数目。
 
-[**[undo evi isis timer holding-multiplier]{lang="EN-US"}**]{#struct_0_20244_20619_443433702}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo evi isis timer holding-multiplier**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_1124246054}
+【命令】
 
-[**[evi isis timer holding-multiplier]{lang="EN-US"}**[ *value*]{lang="EN-US"}]{#struct_0_20244_20619_x1673704721}
+**[evi isis timer holding-multiplier** *value*]
 
-[**[undo evi isis timer holding-multiplier]{lang="EN-US"}**]{#struct_0_20244_20619_x30952559}
+**[undo evi isis timer holding-multiplier**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1063831469}
+【缺省情况】
 
-[[EVI IS-IS Hello]{lang="EN-US"}]{#struct_0_20244_20619_x739352109}[报文失效数目为]{style="font-family:宋体"}[3]{lang="EN-US"}[。]{style="font-family:宋体"}
+EVI IS-IS Hello报文失效数目为3。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_834259847}
+【视图】
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_x1625882129}[接口视图]{style="font-family:宋体"}
+Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2000677608}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_x1873660026}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_x957494867}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_1290280995}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_20244_20619_x332769050}[：配置邻居的]{style="font-family:宋体"}[EVI IS-IS Hello]{lang="EN-US"}[报文失效数目，取值范围为]{style="font-family:宋体"}[3]{lang="EN-US"}[～]{style="font-family:宋体"}[1000]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[value*]：配置邻居的EVI IS-IS Hello报文失效数目，取值范围为3～1000。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1976888592}
+【使用指导】
 
-[[当前边缘设备可以将邻接关系保持时间通过]{style="font-family:宋体"}[EVI IS-IS Hello]{lang="EN-US"}]{#struct_0_20244_20619_520253864}[报文通知邻居边缘设备，如果邻居边缘设备在邻接关系保持时间内没有收到来自当前边缘设备的]{style="font-family:宋体"}[EVI IS-IS Hello]{lang="EN-US"}[报文，将宣告邻接关系失效。]{style="font-family:宋体"}
+当前边缘设备可以将邻接关系保持时间通过EVI IS-IS Hello报文通知邻居边缘设备，如果邻居边缘设备在邻接关系保持时间内没有收到来自当前边缘设备的EVI IS-IS Hello报文，将宣告邻接关系失效。
 
-[[邻接关系保持时间＝]{style="font-family:宋体"}[EVI IS-IS Hello]{lang="EN-US"}]{#struct_0_20244_20619_x443172825}[报文失效数目×]{style="font-family:宋体"}[EVI IS-IS Hello]{lang="EN-US"}[报文发送时间间隔。]{style="font-family:宋体"}[EVI IS-IS Hello]{lang="EN-US"}[报文失效数目，即宣告邻接关系失效前]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[没有收到的邻居]{style="font-family:宋体"}[EVI IS-IS Hello]{lang="EN-US"}[报文的数目。通过设置]{style="font-family:宋体"}[EVI IS-IS Hello]{lang="EN-US"}[报文失效数目和]{style="font-family:宋体"}[EVI IS-IS Hello]{lang="EN-US"}[报文的发送时间间隔，可以调整邻接关系保持时间，即邻居边缘设备要花多长时间能够监测到链路已经失效并重新进行路由计算。]{style="font-family:宋体"}
+邻接关系保持时间＝EVI IS-IS Hello报文失效数目×EVI IS-IS Hello报文发送时间间隔。EVI IS-IS Hello报文失效数目，即宣告邻接关系失效前EVI IS-IS没有收到的邻居EVI IS-IS Hello报文的数目。通过设置EVI IS-IS Hello报文失效数目和EVI IS-IS Hello报文的发送时间间隔，可以调整邻接关系保持时间，即邻居边缘设备要花多长时间能够监测到链路已经失效并重新进行路由计算。
 
-[[邻接关系保持时间最大不能超过]{style="font-family:宋体"}[65535]{lang="EN-US"}]{#struct_0_20244_20619_1261643667}[秒，超过]{style="font-family:宋体"}[65535]{lang="EN-US"}[秒时，算作]{style="font-family:宋体"}[65535]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+邻接关系保持时间最大不能超过65535秒，超过65535秒时，算作65535秒。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1545621163}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x2000612072}[配置]{style="font-family:宋体"}[EVI IS-IS Hello]{lang="EN-US"}[报文失效数目]{style="font-family:宋体"}[为]{style="font-family:
-宋体"}[6]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置EVI IS-IS Hello报文失效数目为6。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_1494934324}
+\<Sysname\> system-view
 
-[\[Sysname\] interface tunnel 101 mode evi]{lang="EN-US"}
+Sysname interface tunnel 101 mode evi
 
-[\[Sysname-tunnel101\] evi isis timer holding-multiplier 6]{lang="EN-US"}
+Sysname-tunnel101 evi isis timer holding-multiplier 6
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x751818256}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display evi isis tunnel]{lang="EN-US"}**]{#struct_0_20244_20619_1072207841}
+·**display evi isis tunnel**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[evi isis timer hello]{lang="EN-US"}**]{#struct_0_20244_20619_x590578604}
-:::
-
-::: {#1468725198 .myid}
-[]{#_Toc404798371}[]{#struct_0_20244_20619_1321107757}[]{#_Toc312867805}
+·**evi isis timer hello**
 
 **EVI \-- EVI配置命令 \-- evi isis timer lsp**
 
 ------------------------------------------------------------------------
 
-[**[evi isis timer lsp]{lang="EN-US"}**]{#struct_0_20244_20619_x1550729429}[命令用来配置]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[在接口上发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最小时间间隔以及一次最多可以发送的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[数目。]{style="font-family:宋体"}
+**[evi isis timer lsp**]命令用来配置EVI IS-IS在接口上发送LSP的最小时间间隔以及一次最多可以发送的LSP数目。
 
-[**[undo evi isis timer lsp]{lang="EN-US"}**]{#struct_0_20244_20619_x37155100}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo evi isis timer lsp**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_1912442309}
+【命令】
 
-[**[evi isis timer lsp]{lang="EN-US"}**[ ]{lang="EN-US"}*[time ]{lang="EN-US"}*[\[ **count** *count* \]]{lang="EN-US"}]{#struct_0_20244_20619_x2001201899}
+**[evi isis timer lsp***time * **count** *count* ]
 
-[**[undo ]{lang="EN-US"}[evi isis timer lsp]{lang="EN-US"}**]{#struct_0_20244_20619_1478217285}
+**[undo evi isis timer lsp**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_1402960968}
+【缺省情况】
 
-[[发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_20244_20619_249963205}[的最小时间间隔为]{style="font-family:宋体"}[100]{lang="EN-US"}[毫秒，一次最多可以发送的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[数目为]{style="font-family:宋体"}[5]{lang="EN-US"}[。]{style="font-family:宋体"}
+发送LSP的最小时间间隔为100毫秒，一次最多可以发送的LSP数目为5。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x250387651}
+【视图】
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_1259389424}[接口视图]{style="font-family:宋体"}
+Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x917809805}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_1788543838}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_1564541492}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2001136363}
+【参数】
 
-[*[time]{lang="EN-US"}*]{#struct_0_20244_20619_x1219749211}[：发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最小时间间隔，取值范围为]{style="font-family:宋体"}[100]{lang="EN-US"}[～]{style="font-family:宋体"}[1000]{lang="EN-US"}[，为]{style="font-family:宋体"}[100]{lang="EN-US"}[的整数倍，单位为毫秒。]{style="font-family:宋体"}
+*[time*]：发送LSP的最小时间间隔，取值范围为100～1000，为100的整数倍，单位为毫秒。
 
-[**[count]{lang="EN-US"}**[ ]{lang="EN-US"}*[count]{lang="EN-US"}*]{#struct_0_20244_20619_x1975314139}[：一次最多可以发送的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[数目，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1000]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[5]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[count***count*]：一次最多可以发送的LSP数目，取值范围为1～1000，缺省值为5。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_1838889819}
+【使用指导】
 
-[[当]{style="font-family:宋体"}[LSDB]{lang="EN-US"}]{#struct_0_20244_20619_1546470479}[的内容发生变化时，]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[将把发生变化的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[扩散出去，用户可以对]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最小发送时间间隔进行调节。]{style="font-family:宋体"}
+当LSDB的内容发生变化时，EVI IS-IS将把发生变化的LSP扩散出去，用户可以对LSP的最小发送时间间隔进行调节。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x31308976}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_1403322868}[配置发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最小时间间隔为]{style="font-family:宋体"}[500]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+\# 配置发送LSP的最小时间间隔为500毫秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_1819884245}
+\<Sysname\> system-view
 
-[\[Sysname\] interface tunnel 101 mode evi]{lang="EN-US"}
+Sysname interface tunnel 101 mode evi
 
-[\[Sysname-tunnel101\] evi isis timer lsp 500]{lang="EN-US"}
+Sysname-tunnel101 evi isis timer lsp 500
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_1869862541}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **evi isis** **brief**]{lang="EN-US"}]{#struct_0_20244_20619_x2001332971}
-:::
-
-::: {#-305263964 .myid}
-[]{#_Toc404798372}[]{#struct_0_20244_20619_x2015947086}[]{#_Toc364422913}[]{#_Toc351711388}
+·**display** **evi isis** **brief**
 
 **EVI \-- EVI配置命令 \-- evi isis track**
 
 ------------------------------------------------------------------------
 
-[**[evi isis track]{lang="EN-US"}**]{#struct_0_20244_20619_x1199867390}[命令用来配置]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[关联的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项。]{style="font-family:宋体"}
+**[evi isis track**]命令用来配置EVI IS-IS关联的Track项。
 
-[**[undo evi isis track]{lang="EN-US"}**]{#struct_0_20244_20619_x1092569208}[命令用来删除]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[关联的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项。]{style="font-family:宋体"}
+**[undo evi isis track**]命令用来删除EVI IS-IS关联的Track项。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2016012622}
+【命令】
 
-[**[evi isis track ]{lang="EN-US"}***[track-entry-number]{lang="EN-US"}*]{#struct_0_20244_20619_1066722396}
+**[evi isis track ***track-entry-number*]
 
-[**[undo evi isis track]{lang="EN-US"}**]{#struct_0_20244_20619_x1004192614}
+**[undo evi isis track**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_x865846592}
+【缺省情况】
 
-[[EVI IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_x2016078158}[不与任何]{style="font-family:宋体"}[Track]{lang="EN-US"}[项联动。]{style="font-family:宋体"}
+EVI IS-IS不与任何Track项联动。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1365034835}
+【视图】
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_1080205354}[接口视图]{style="font-family:宋体"}
+Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2015619406}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_209457553}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_x2055558627}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2015684942}
+【参数】
 
-[*[track-entry-number]{lang="EN-US"}*]{#struct_0_20244_20619_352962443}[：指定]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的序号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1024]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[track-entry-number*]：指定Track项的序号，取值范围为1～1024。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_2068273462}
+【使用指导】
 
-[[EVI IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_x2016143693}[关联]{style="font-family:宋体"}[Track]{lang="EN-US"}[项后，可以通过]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的状态来检测上行口的故障。]{style="font-family:宋体"}
+EVI IS-IS关联Track项后，可以通过Track项的状态来检测上行口的故障。
 
-[[一个]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_1816343390}[接口下的]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[实例最多关联一个]{style="font-family:宋体"}[Track]{lang="EN-US"}[项，当配置多次时，最后配置的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项生效。关于]{style="font-family:宋体"}[Track]{lang="EN-US"}[的详细介绍请参见"可靠性"中的"]{style="font-family:宋体"}[Track]{lang="EN-US"}["。]{style="font-family:宋体"}
+一个Tunnel接口下的EVI IS-IS实例最多关联一个Track项，当配置多次时，最后配置的Track项生效。关于Track的详细介绍请参见"可靠性"中的"Track"。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_880060272}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x2016209229}[配置]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口]{style="font-family:宋体"}[Tunnel101]{lang="EN-US"}[上运行的]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[关联]{style="font-family:宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:
-宋体"}
+\# 配置EVI隧道接口Tunnel101上运行的EVI IS-IS关联Track项1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_x1374957808}
+\<Sysname\> system-view
 
-[\[Sysname\] interface tunnel 101]{lang="EN-US"}
+Sysname interface tunnel 101
 
-[\[Sysname-tunnel101\] evi isis track 1]{lang="EN-US"}
-:::
-
-::: {#1445277343 .myid}
-[]{#_Toc404798373}[]{#struct_0_20244_20619_1380987241}
+Sysname-tunnel101 evi isis track 1
 
 **EVI \-- EVI配置命令 \-- evi neighbor-discovery authentication**
 
 ------------------------------------------------------------------------
 
-[**[evi neighbor-discovery authentication]{lang="EN-US"}**]{#struct_0_20244_20619_853398560}[命令用来使能]{style="font-family:宋体"}[ENDP]{lang="EN-US"}[认证功能。]{style="font-family:宋体"}
+**[evi neighbor-discovery authentication**]命令用来使能ENDP认证功能。
 
-[**[undo evi neighbor-discovery authentication]{lang="EN-US"}**]{#struct_0_20244_20619_635103427}[命令用来关闭]{style="font-family:宋体"}[ENDP]{lang="EN-US"}[认证功能。]{style="font-family:宋体"}
+**[undo evi neighbor-discovery authentication**]命令用来关闭ENDP认证功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1327549153}
+【命令】
 
-[**[evi neighbor-discovery authentication]{lang="EN-US"}**[ { **cipher** \| **simple** } ]{lang="EN-US"}]{#struct_0_20244_20619_303363053}*[password]{lang="EN-US"}*
+**[evi neighbor-discovery authentication**[ { **cipher** \| **simple** } ]]*password*
 
-[**[undo evi neighbor-discovery authentication]{lang="EN-US"}**]{#struct_0_20244_20619_x51311396}
+**[undo evi neighbor-discovery authentication**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_2139976774}
+【缺省情况】
 
-[[ENDP]{lang="EN-US"}]{#struct_0_20244_20619_x1442898412}[认证功能处于关闭状态。]{style="font-family:宋体"}
+ENDP认证功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1295405738}
+【视图】
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_x2001267435}[接口视图]{style="font-family:宋体"}
+Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x682203397}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_1840238501}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_1317660912}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_1188234466}
+【参数】
 
-[**[cipher]{lang="EN-US"}**]{#struct_0_20244_20619_464472610}[：表示以密文方式设置认证密码。]{style="font-family:宋体"}
+**[cipher**]：表示以密文方式设置认证密码。
 
-[**[simple]{lang="EN-US"}**]{#struct_0_20244_20619_2143646613}[：表示以明文方式设置认证密码。]{style="font-family:宋体"}
+**[simple**]：表示以明文方式设置认证密码。
 
-[*[password]{lang="EN-US"}*]{#struct_0_20244_20619_912096246}[：设置的明文认证密码或密文认证密码，区分大小写。明文认证密码为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[24]{lang="EN-US"}[个字符的字符串；密文认证密码为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65]{lang="EN-US"}[个字符的字符串。]{style="font-family:宋体"}
+*[password*]：设置的明文认证密码或密文认证密码，区分大小写。明文认证密码为1～24个字符的字符串；密文认证密码为1～65个字符的字符串。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_x646890487}
+【使用指导】
 
-[[为了安全起见，可以配置]{style="font-family:宋体"}[ENDP]{lang="EN-US"}]{#struct_0_20244_20619_x2000939755}[认证功能来防止恶意的节点注册到]{style="font-family:宋体"}[EVI]{lang="EN-US"}[网络。]{style="font-family:宋体"}
+为了安全起见，可以配置ENDP认证功能来防止恶意的节点注册到EVI网络。
 
-[[使能]{style="font-family:宋体"}[ENDP]{lang="EN-US"}]{#struct_0_20244_20619_x296395104}[认证功能后，发送]{style="font-family:宋体"}[ENDP]{lang="EN-US"}[报文的设备会使用配置的密码和]{style="font-family:宋体"}[MD5]{lang="EN-US"}[算法对报文进行摘要运算，然后把运算结果放到报文的认证字段。对端设备收到]{style="font-family:宋体"}[ENDP]{lang="EN-US"}[报文后，如果该设备未配置认证功能，则认为报文合法；如果设备配置了认证功能，则利用本端配置的密码和]{style="font-family:宋体"}[MD5]{lang="EN-US"}[算法对报文进行摘要运算，然后比较运算结果与报文认证字段携带的信息是否一致，如果一致则认为报文合法，如果不一致则认为报文非法。]{style="font-family:宋体"}
+使能ENDP认证功能后，发送ENDP报文的设备会使用配置的密码和MD5算法对报文进行摘要运算，然后把运算结果放到报文的认证字段。对端设备收到ENDP报文后，如果该设备未配置认证功能，则认为报文合法；如果设备配置了认证功能，则利用本端配置的密码和MD5算法对报文进行摘要运算，然后比较运算结果与报文认证字段携带的信息是否一致，如果一致则认为报文合法，如果不一致则认为报文非法。
 
-[[在一个安全的网络中，可以不配置]{style="font-family:宋体"}[ENDP]{lang="EN-US"}]{#struct_0_20244_20619_1594655637}[认证功能。]{style="font-family:宋体"}
+在一个安全的网络中，可以不配置ENDP认证功能。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_20244_20619_x960252358}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[同一个]{style="font-family:宋体"}]{#struct_0_20244_20619_2007304659}[EVI]{lang="EN-US"}[网络实例中所有的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[与]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[必须配置相同的认证密码。]{style="font-family:宋体"}
+·同一个EVI网络实例中所有的ENDS与ENDC必须配置相同的认证密码。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[以明文或密文方式设置的认证密码，均以密文的方式保存在配置文件中。]{style="font-family:宋体"}]{#struct_0_20244_20619_x2075072211}
+·以明文或密文方式设置的认证密码，均以密文的方式保存在配置文件中。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1071981277}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_1412500346}[使能]{style="font-family:宋体"}[ENDP]{lang="EN-US"}[认证功能，并以方式设置指定明文认证密码为]{style="font-family:宋体"}[web-evi]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 使能ENDP认证功能，并以方式设置指定明文认证密码为web-evi。
 
-[[\<Sysname\> system]{lang="EN-US"}]{#struct_0_20244_20619_x833551234}
+\<Sysname\> system
 
-[\[Sysname\] interface tunnel 0 mode evi]{lang="EN-US"}
+Sysname interface tunnel 0 mode evi
 
-[\[Sysname-Tunnel0\] evi neighbor-discovery authentication simple web-evi]{lang="EN-US"}
+Sysname-Tunnel0 evi neighbor-discovery authentication simple web-evi
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2000874219}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display evi neighbor-discovery client summary]{lang="EN-US"}**]{#struct_0_20244_20619_708291621}
+·**display evi neighbor-discovery client summary**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display evi neighbor-discovery ipv6 client summary]{lang="EN-US"}**]{#struct_0_20244_20619_x474265588}
+·**display evi neighbor-discovery ipv6 client summary**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display evi neighbor-discovery ipv6 server summary]{lang="EN-US"}**]{#struct_0_20244_20619_x1429512282}
+·**display evi neighbor-discovery ipv6 server summary**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display evi neighbor-discovery server summary]{lang="EN-US"}**]{#struct_0_20244_20619_x324140569}
-:::
-
-::: {#1919736554 .myid}
-[]{#_Toc404798374}[]{#struct_0_20244_20619_x1828192049}
+·**display evi neighbor-discovery server summary**
 
 **EVI \-- EVI配置命令 \-- evi neighbor-discovery client enable**
 
 ------------------------------------------------------------------------
 
-[**[evi neighbor-discovery client enable]{lang="EN-US"}**]{#struct_0_20244_20619_x814884715}[命令用来使能接口的]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[功能，同时指定对应的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[evi neighbor-discovery client enable**]命令用来使能接口的ENDC功能，同时指定对应的ENDS地址。
 
-[**[undo evi neighbor-discovery client enable]{lang="EN-US"}**]{#struct_0_20244_20619_x1736333940}[命令用来关闭接口的]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo evi neighbor-discovery client enable**]命令用来关闭接口的ENDC功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_977535572}
+【命令】
 
-[**[evi neighbor-discovery client enable ]{lang="EN-US"}***[server-ip]{lang="EN-US"}*]{#struct_0_20244_20619_x1015762688}
+**[evi neighbor-discovery client enable ***server-ip*]
 
-[**[undo evi neighbor-discovery client enable ]{lang="EN-US"}***[server-ip]{lang="EN-US"}*]{#struct_0_20244_20619_x2001070827}
+**[undo evi neighbor-discovery client enable ***server-ip*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_x260109066}
+【缺省情况】
 
-[[ENDC]{lang="EN-US"}]{#struct_0_20244_20619_837873790}[功能处于关闭状态。]{style="font-family:宋体"}
+ENDC功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_1283364244}
+【视图】
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_561531389}[接口视图]{style="font-family:宋体"}
+Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_522819193}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_x1580427433}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_2083525005}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x479022565}
+【参数】
 
-[*[server-ip]{lang="EN-US"}*]{#struct_0_20244_20619_x2001005291}[：]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[要连接的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址或]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[server-ip*]：ENDC要连接的ENDS的IP地址或IPv6地址。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_1653221747}
+【使用指导】
 
-[[为了防止]{style="font-family:宋体"}[ENDS]{lang="EN-US"}]{#struct_0_20244_20619_431075515}[异常导致]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[不能加入]{style="font-family:宋体"}[EVI]{lang="EN-US"}[网络，用户可以为每个]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[指定两个]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[，这两个]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[同时有效。]{style="font-family:宋体"}
+为了防止ENDS异常导致ENDC不能加入EVI网络，用户可以为每个ENDC指定两个ENDS，这两个ENDS同时有效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1950265765}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x1113230351}[使能]{style="font-family:宋体"}[IPv4 ENDC]{lang="EN-US"}[功能，该]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[对应的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[地址为]{style="font-family:宋体"}[11.0.0.1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 使能IPv4 ENDC功能，该ENDC对应的ENDS地址为11.0.0.1。
 
-[[\<Sysname\> system]{lang="EN-US"}]{#struct_0_20244_20619_351092996}
+\<Sysname\> system
 
-[\[Sysname\] interface tunnel 0 mode evi]{lang="EN-US"}
+Sysname interface tunnel 0 mode evi
 
-[\[Sysname-Tunnel0\] evi neighbor-discovery client enable 11.0.0.1]{lang="EN-US"}
+Sysname-Tunnel0 evi neighbor-discovery client enable 11.0.0.1
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x1298912302}[使能]{style="font-family:宋体"}[IPv6 ENDC]{lang="EN-US"}[功能，该]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[对应的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[地址为]{style="font-family:宋体"}[2000::1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 使能IPv6 ENDC功能，该ENDC对应的ENDS地址为2000::1。
 
-[[\<Sysname\> system]{lang="EN-US"}]{#struct_0_20244_20619_1576977855}
+\<Sysname\> system
 
-[\[Sysname\] interface tunnel 0 mode evi ipv6]{lang="EN-US"}
+Sysname interface tunnel 0 mode evi ipv6
 
-[\[Sysname-Tunnel0\] evi neighbor-discovery client enable 2000::1]{lang="EN-US"}
+Sysname-Tunnel0 evi neighbor-discovery client enable 2000::1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x543393047}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display evi neighbor-discovery client summary]{lang="EN-US"}**]{#struct_0_20244_20619_x2000677611}
+·**display evi neighbor-discovery client summary**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display evi neighbor-discovery ipv6 client summary]{lang="EN-US"}**]{#struct_0_20244_20619_1211388153}
-:::
-
-::: {#-1462631934 .myid}
-[]{#_Toc404798375}[]{#struct_0_20244_20619_x599872995}
+·**display evi neighbor-discovery ipv6 client summary**
 
 **EVI \-- EVI配置命令 \-- evi neighbor-discovery client register-interval**
 
 ------------------------------------------------------------------------
 
-[**[evi neighbor-discovery client register-interval]{lang="EN-US"}**]{#struct_0_20244_20619_x1257357957}[命令用来配置]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[向]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[注册的时间间隔。]{style="font-family:宋体"}
+**[evi neighbor-discovery client register-interval**]命令用来配置ENDC向ENDS注册的时间间隔。
 
-[**[undo evi neighbor-discovery client register-interval]{lang="EN-US"}**]{#struct_0_20244_20619_927519502}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo evi neighbor-discovery client register-interval**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_666808511}
+【命令】
 
-[**[evi neighbor-discovery client register-interval ]{lang="EN-US"}**]{#struct_0_20244_20619_x1636467380}*[time-value]{lang="EN-US"}*
+**[evi neighbor-discovery client register-interval **]*time-value*
 
-[**[undo evi neighbor-discovery client register-interval]{lang="EN-US"}**]{#struct_0_20244_20619_1073657078}
+**[undo evi neighbor-discovery client register-interval**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_1711635397}
+【缺省情况】
 
-[[ENDC]{lang="EN-US"}]{#struct_0_20244_20619_x2000612075}[向]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[注册的时间间隔为]{style="font-family:宋体"}[15]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+ENDC向ENDS注册的时间间隔为15秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1233949031}
+【视图】
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_x1741350815}[接口视图]{style="font-family:宋体"}
+Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x321926545}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_x371976061}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_x465650048}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x352247414}
+【参数】
 
-[*[time-value]{lang="EN-US"}*]{#struct_0_20244_20619_1725481385}[：注册时间间隔，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[120]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[time-value*]：注册时间间隔，取值范围为5～120，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_643475454}
+【使用指导】
 
-[[ENDP]{lang="EN-US"}]{#struct_0_20244_20619_1511662623}[协议中用到了]{style="font-family:宋体"}[3]{lang="EN-US"}[个定时器：探测定时器、注册定时器、老化定时器。]{style="font-family:宋体"}
+ENDP协议中用到了3个定时器：探测定时器、注册定时器、老化定时器。
 
-[[(1)[      ]{style="font:7.0pt "}]{lang="EN-US"}[探测定时器]{lang="EN-US" style="font-family:宋体"}]{#struct_0_20244_20619_x2001201898}
+(1)探测定时器
 
-[[ENDC]{lang="EN-US"}]{#struct_0_20244_20619_x87866656}[请求加入]{style="font-family:宋体"}[EVI]{lang="EN-US"}[网络时会启用探测定时器，该定时器以]{style="font-family:宋体"}[5]{lang="EN-US"}[秒的时间间隔定时向]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[发送注册报文，收到]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[应答报文后会停止探测定时器。]{style="font-family:宋体"}
+ENDC请求加入EVI网络时会启用探测定时器，该定时器以5秒的时间间隔定时向ENDS发送注册报文，收到ENDS应答报文后会停止探测定时器。
 
-[[(2)[      ]{style="font:7.0pt "}]{lang="EN-US"}[注册定时器]{lang="EN-US" style="font-family:宋体"}]{#struct_0_20244_20619_x1728987547}
+(2)注册定时器
 
-[[ENDC]{lang="EN-US"}]{#struct_0_20244_20619_572399452}[加入]{style="font-family:宋体"}[EVI]{lang="EN-US"}[网络后，为了通告自己工作正常，会定时向]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[发送注册报文，该定时器的默认时间间隔为]{style="font-family:宋体"}[15]{lang="EN-US"}[秒，用户可以通过配置]{style="font-family:宋体"}**[evi neighbor-discovery client register-interval]{lang="EN-US"}**[命令来调整该时间间隔。]{style="font-family:
-宋体"}
+ENDC加入EVI网络后，为了通告自己工作正常，会定时向ENDS发送注册报文，该定时器的默认时间间隔为15秒，用户可以通过配置**evi neighbor-discovery client register-interval**命令来调整该时间间隔。
 
-[[如果]{style="font-family:宋体"}[ENDC]{lang="EN-US"}]{#struct_0_20244_20619_x6598806}[连续发送]{style="font-family:宋体"}[5]{lang="EN-US"}[个注册报文，都未能收到]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的应答报文，则认为网络故障，此时需要清除之前学到的邻居信息，同时重新启用探测定时器。]{style="font-family:宋体"}
+如果ENDC连续发送5个注册报文，都未能收到ENDS的应答报文，则认为网络故障，此时需要清除之前学到的邻居信息，同时重新启用探测定时器。
 
-[[(3)[      ]{style="font:7.0pt "}]{lang="EN-US"}[老化定时器]{lang="EN-US" style="font-family:宋体"}]{#struct_0_20244_20619_1580995536}
+(3)老化定时器
 
-[[ENDC]{lang="EN-US"}]{#struct_0_20244_20619_x469648046}[向]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[发送的注册报文中携带注册时间间隔，]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[会记录该时间间隔。]{style="font-family:宋体"}
+ENDC向ENDS发送的注册报文中携带注册时间间隔，ENDS会记录该时间间隔。
 
-[[ENDC]{lang="EN-US"}]{#struct_0_20244_20619_160070834}[加入]{style="font-family:宋体"}[EVI]{lang="EN-US"}[网络后，如果]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[在]{style="font-family:宋体"}[5]{lang="EN-US"}[倍的注册时间内未收到]{style="font-family:
-宋体"}[ENDC]{lang="EN-US"}[的注册报文则认为]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[出现故障，此时需要把]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[从]{style="font-family:宋体"}[EVI]{lang="EN-US"}[网络中删除。]{style="font-family:宋体"}
+ENDC加入EVI网络后，如果ENDS在5倍的注册时间内未收到ENDC的注册报文则认为ENDC出现故障，此时需要把ENDC从EVI网络中删除。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_1335740508}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x2001136362}[配置]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[向]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[注册的时间间隔为]{style="font-family:宋体"}[30]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置ENDC向ENDS注册的时间间隔为30秒。
 
-[[\<Sysname\> system]{lang="EN-US"}]{#struct_0_20244_20619_346334730}
+\<Sysname\> system
 
-[\[Sysname\] interface tunnel 0 mode evi]{lang="EN-US"}
+Sysname interface tunnel 0 mode evi
 
-[\[Sysname-Tunnel0\] evi neighbor-discovery client register-interval 30]{lang="EN-US"}
+Sysname-Tunnel0 evi neighbor-discovery client register-interval 30
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1419281626}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display evi neighbor-discovery client summary]{lang="EN-US"}**]{#struct_0_20244_20619_745107960}
+·**display evi neighbor-discovery client summary**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display evi neighbor-discovery ipv6 client summary]{lang="EN-US"}**]{#struct_0_20244_20619_x2059256888}
-:::
-
-::: {#-1729921500 .myid}
-[]{#_Toc404798376}[]{#struct_0_20244_20619_x295715478}
+·**display evi neighbor-discovery ipv6 client summary**
 
 **EVI \-- EVI配置命令 \-- evi neighbor-discovery server enable**
 
 ------------------------------------------------------------------------
 
-[**[evi neighbor-discovery server enable]{lang="EN-US"}**]{#struct_0_20244_20619_553419800}[命令用来使能接口的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[evi neighbor-discovery server enable**]命令用来使能接口的ENDS功能。
 
-[**[undo evi neighbor-discovery server enable]{lang="EN-US"}**]{#struct_0_20244_20619_850110671}[命令用来关闭接口的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo evi neighbor-discovery server enable**]命令用来关闭接口的ENDS功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1818024248}
+【命令】
 
-[**[evi neighbor-discovery server enable]{lang="EN-US"}**]{#struct_0_20244_20619_x2001332970}
+**[evi neighbor-discovery server enable**]
 
-[**[undo evi neighbor-discovery server enable]{lang="EN-US"}**]{#struct_0_20244_20619_x1347896114}
+**[undo evi neighbor-discovery server enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1281998279}
+【缺省情况】
 
-[[ENDS]{lang="EN-US"}]{#struct_0_20244_20619_39625066}[功能处于关闭状态。]{style="font-family:宋体"}
+ENDS功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_1587806068}
+【视图】
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_x30777435}[接口视图]{style="font-family:宋体"}
+Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_292996078}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_x1078843890}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_x1283902554}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2001267434}
+【使用指导】
 
-[[使能接口的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}]{#struct_0_20244_20619_2046679958}[功能时，会同时使能该接口的]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[功能（该]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[对应的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[地址为该接口的源地址）。]{style="font-family:宋体"}
+使能接口的ENDS功能时，会同时使能该接口的ENDC功能（该ENDC对应的ENDS地址为该接口的源地址）。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x721792753}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_2065754803}[使能]{style="font-family:宋体"}[IPv4 ENDS]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 使能IPv4 ENDS功能。
 
-[[\<Sysname\> system]{lang="EN-US"}]{#struct_0_20244_20619_712907160}
+\<Sysname\> system
 
-[\[Sysname\] interface tunnel 0 mode evi]{lang="EN-US"}
+Sysname interface tunnel 0 mode evi
 
-[\[Sysname-Tunnel0\] evi neighbor-discovery server enable]{lang="EN-US"}
+Sysname-Tunnel0 evi neighbor-discovery server enable
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x810184971}[使能]{style="font-family:宋体"}[IPv6 ENDS]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 使能IPv6 ENDS功能。
 
-[[\<Sysname\> system]{lang="DA"}]{#struct_0_20244_20619_111125633}
+\<Sysname\> system
 
-[\[Sysname\] interface tunnel 0 mode evi ]{lang="DA"}[ipv6]{lang="EN-US"}
+Sysname interface tunnel 0 mode evi ipv6
 
-[\[Sysname-Tunnel0\] evi neighbor-discovery server enable]{lang="EN-US"}
+Sysname-Tunnel0 evi neighbor-discovery server enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_525266586}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display evi neighbor-discovery ipv6 server summary]{lang="EN-US"}**]{#struct_0_20244_20619_x1977430578}
+·**display evi neighbor-discovery ipv6 server summary**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display evi neighbor-discovery server summary]{lang="EN-US"}**]{#struct_0_20244_20619_x2000939754}
-:::
-
-::: {#-1715512666 .myid}
-[]{#_Toc404798377}[]{#struct_0_20244_20619_1269688837}
+·**display evi neighbor-discovery server summary**
 
 **EVI \-- EVI配置命令 \-- evi network-id**
 
 ------------------------------------------------------------------------
 
-[**[evi network-id]{lang="EN-US"}**]{#struct_0_20244_20619_1806413487}[命令用来配置]{style="font-family:宋体"}[Network ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[evi network-id**]命令用来配置Network ID。
 
-[**[undo evi network-id]{lang="EN-US"}**]{#struct_0_20244_20619_x1204572461}[命令用来删除]{style="font-family:宋体"}[Network ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo evi network-id**]命令用来删除Network ID。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_569786541}
+【命令】
 
-[**[evi network-id ]{lang="EN-US"}***[number]{lang="EN-US"}*]{#struct_0_20244_20619_x981228526}
+**[evi network-id ***number*]
 
-[**[undo evi network-id]{lang="EN-US"}**]{#struct_0_20244_20619_x376922258}
+**[undo evi network-id**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_1903684631}
+【缺省情况】
 
-[[没有配置]{style="font-family:宋体"}[Network ID]{lang="EN-US"}]{#struct_0_20244_20619_x777652719}[。]{style="font-family:宋体"}
+没有配置Network ID。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2000874218}
+【视图】
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_x2020591734}[接口视图]{style="font-family:宋体"}
+Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x957990445}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_1321726698}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_x1945220542}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_12648188}
+【参数】
 
-[*[number]{lang="EN-US"}*]{#struct_0_20244_20619_1145806639}[：]{style="font-family:宋体"}[Network ID]{lang="EN-US"}[值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[16777215]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[number*]：Network ID值，取值范围为1～16777215。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_1952810797}
+【使用指导】
 
-[[一个站点需要加入]{style="font-family:宋体"}[EVI]{lang="EN-US"}]{#struct_0_20244_20619_x1588976624}[网络时，必须指定加入的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[网络实例的]{style="font-family:宋体"}[Network ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+一个站点需要加入EVI网络时，必须指定加入的EVI网络实例的Network ID。
 
-[[一个]{style="font-family:宋体"}[EVI]{lang="EN-US"}]{#struct_0_20244_20619_x102791573}[隧道只能属于一个]{style="font-family:宋体"}[EVI]{lang="EN-US"}[网络实例，一个站点加入多个]{style="font-family:宋体"}[EVI]{lang="EN-US"}[网络实例时，需要创建多个]{style="font-family:宋体"}[EVI Tunnel]{lang="EN-US"}[接口，并使用该命令指定多个]{style="font-family:宋体"}[EVI Tunnel]{lang="EN-US"}[接口分别属于哪个]{style="font-family:宋体"}[EVI]{lang="EN-US"}[网络实例。]{style="font-family:宋体"}
+一个EVI隧道只能属于一个EVI网络实例，一个站点加入多个EVI网络实例时，需要创建多个EVI Tunnel接口，并使用该命令指定多个EVI Tunnel接口分别属于哪个EVI网络实例。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2001070826}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_1305974875}[配置]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道的]{style="font-family:宋体"}[Network ID]{lang="EN-US"}[为]{style="font-family:宋体"}[123]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置EVI隧道的Network ID为123。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_1216017714}
+\<Sysname\> system-view
 
-[\[Sysname\] interface tunnel 0 mode evi]{lang="EN-US"}
+Sysname interface tunnel 0 mode evi
 
-[\[Sysname-Tunnel0\] evi network-id 123]{lang="EN-US"}
+Sysname-Tunnel0 evi network-id 123
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x958039617}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[interface tunnel]{lang="EN-US"}**]{#struct_0_20244_20619_x1632296479}
-:::
-
-::: {#-618772984 .myid}
-[]{#_Toc404798378}[]{#struct_0_20244_20619_152490597}[]{#_Toc309203841}
+·**interface tunnel**
 
 **EVI \-- EVI配置命令 \-- evi selective-flooding mac-address**
 
 ------------------------------------------------------------------------
 
-[**[evi selective-flooding mac-address]{lang="EN-US"}**]{#struct_0_20244_20619_421975276}[命令用来配置]{style="font-family:宋体"}[选择性泛洪的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[evi selective-flooding mac-address**]命令用来配置选择性泛洪的MAC地址。
 
-[**[undo ]{lang="EN-US"}[evi selective-flooding mac-address]{lang="EN-US"}**]{#struct_0_20244_20619_x1092221101}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo evi selective-flooding mac-address**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_710351199}
+【命令】
 
-[**[evi selective-flooding mac-address ]{lang="EN-US"}***[mac-address ]{lang="EN-US"}***[vlan]{lang="EN-US"}***[ ]{lang="EN-US"}*]{#struct_0_20244_20619_x2001005290}*[vlan-id-list]{lang="SV"}*
+**[evi selective-flooding mac-address ***mac-address ***vlan****]*vlan-id-list*
 
-[**[undo evi selective-flooding mac-address]{lang="EN-US"}***[ mac-address ]{lang="EN-US"}***[vlan]{lang="EN-US"}***[ ]{lang="EN-US"}*]{#struct_0_20244_20619_87137806}*[vlan-id-list]{lang="SV"}*
+**[undo evi selective-flooding mac-address*** mac-address ***vlan****]*vlan-id-list*
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_1771370030}
+【缺省情况】
 
-[[未配置选择性泛洪的]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_20244_20619_40318246}[地址。]{style="font-family:宋体"}
+未配置选择性泛洪的MAC地址。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1850330553}
+【视图】
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_1332074189}[接口视图]{style="font-family:宋体"}
+Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_401883815}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_554537871}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_x1113532469}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2000677610}
+【参数】
 
-[*[mac-address]{lang="EN-US"}*]{#struct_0_20244_20619_x1517495202}[：选择性泛洪的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。该]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址不能为全]{style="font-family:宋体"}[F]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[mac-address*]：选择性泛洪的MAC地址。该MAC地址不能为全F。
 
-[**[vlan]{lang="EN-US"}***[ ]{lang="EN-US"}*]{#struct_0_20244_20619_609319218}*[vlan-id-list]{lang="SV"}*[：指定]{style="font-family:宋体"}[选择性]{style="font-family:宋体"}[泛洪]{style="font-family:宋体"}[MAC]{lang="SV"}[地址]{style="font-family:
-宋体"}[所属的]{style="font-family:宋体"}[VLAN]{lang="SV"}[范围，]{style="font-family:宋体"}*[vlan-id-list]{lang="EN-US"}*[ = { *vlan-id1* \[ **to** *vlan-id2* \] }&\<1-10\>]{lang="EN-US"}[，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[的]{style="font-family:宋体"}[取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[，]{style="font-family:宋体"}*[vlan]{lang="EN-US"}*[-*id2*]{lang="EN-US"}[的值要大于或等于]{style="font-family:宋体"}*[vlan]{lang="EN-US"}*[-*id1*]{lang="EN-US"}[的值，]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。]{style="font-family:宋体"}
+**[vlan****]*vlan-id-list*：指定选择性泛洪MAC地址所属的VLAN范围，*vlan-id-list* = { *vlan-id1* [ **to** *vlan-id2*  }&\<1-10\>]，*vlan-id*的取值范围为1～4094，*vlan*-*id2*的值要大于或等于*vlan*-*id1*的值，&\<1-10\>表示前面的参数最多可以输入10次。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_844779929}
+【使用指导】
 
-[[缺省情况下，边缘设备对于未知地址的帧（包括未知单播帧和未知组播帧）只在]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_20244_20619_x1418692922}[内的站点内部接口上进行泛洪，不会泛洪到其它站点。如果用户希望某些]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的帧可以泛洪到其它站点，可以通过本命令配置选择性泛洪的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，当报文的目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址匹配该]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址时，报文可以通过]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道泛洪转发到其它站点。]{style="font-family:宋体"}
+缺省情况下，边缘设备对于未知地址的帧（包括未知单播帧和未知组播帧）只在VLAN内的站点内部接口上进行泛洪，不会泛洪到其它站点。如果用户希望某些MAC地址的帧可以泛洪到其它站点，可以通过本命令配置选择性泛洪的MAC地址，当报文的目的MAC地址匹配该MAC地址时，报文可以通过EVI隧道泛洪转发到其它站点。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_20244_20619_1282518663}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[选择性泛洪]{style="font-family:宋体"}]{#struct_0_20244_20619_1393152497}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}[所属的]{style="font-family:宋体"}[VLAN]{lang="SV"}[范围]{style="font-family:宋体"}[受到]{style="font-family:宋体"}[EVI Tunnel]{lang="EN-US"}[接口下激活]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的范围影响，最终生效的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[范围为激活]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[和配置指定的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[之交集。]{style="font-family:宋体"}
+·选择性泛洪MAC地址所属的VLAN范围受到EVI Tunnel接口下激活VLAN的范围影响，最终生效的VLAN范围为激活VLAN和配置指定的VLAN之交集。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不要将可以学习到的单播]{style="font-family:宋体"}]{#struct_0_20244_20619_x678727855}[MAC]{lang="EN-US"}[地址设置为选择性泛洪的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，否则可能会导致报文在远端设备被丢弃。]{style="font-family:宋体"}
+·不要将可以学习到的单播MAC地址设置为选择性泛洪的MAC地址，否则可能会导致报文在远端设备被丢弃。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1117369941}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x2000612074}[在]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口]{style="font-family:宋体"}[Tunnel101]{lang="EN-US"}[下配置选择性泛洪的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+\# 在EVI隧道接口Tunnel101下配置选择性泛洪的MAC地址。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_332134910}
+\<Sysname\> system-view
 
-[\[Sysname\] interface tunnel 101 mode evi]{lang="EN-US"}
+Sysname interface tunnel 101 mode evi
 
-[\[Sysname-tunnel 101\] evi selective-flooding mac-address 000f-e201-0101 vlan 1 to 10]{lang="EN-US"}
-:::
-
-::: {#1658840012 .myid}
-[]{#_Toc404798379}[]{#struct_0_20244_20619_x2015881552}[]{#_Toc364422920}[]{#_Toc351711396}
+Sysname-tunnel 101 evi selective-flooding mac-address 000f-e201-0101 vlan 1 to 10
 
 **EVI \-- EVI配置命令 \-- evi site-id**
 
 ------------------------------------------------------------------------
 
-[**[evi site-id]{lang="EN-US"}**]{#struct_0_20244_20619_x61225081}[命令用来指定一个设备所属的站点]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[evi site-id**]命令用来指定一个设备所属的站点ID。
 
-[**[undo evi site-id]{lang="EN-US"}**]{#struct_0_20244_20619_x2015947088}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo evi site-id**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x749528696}
+【命令】
 
-[**[evi site-id ]{lang="EN-US"}***[site-id]{lang="EN-US"}*]{#struct_0_20244_20619_407025165}
+**[evi site-id ***site-id*]
 
-[**[undo evi site-id]{lang="EN-US"}**]{#struct_0_20244_20619_x2016012624}
+**[undo evi site-id**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_x96077018}
+【缺省情况】
 
-[[站点]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_20244_20619_1228546415}[为]{style="font-family:宋体"}[0]{lang="EN-US"}[。]{style="font-family:
-宋体"}
+站点ID为0。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2016078160}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_20244_20619_x1008607867}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_687817038}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_x537913559}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_x2015619408}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x240881141}
+【参数】
 
-[*[site-id]{lang="EN-US"}*]{#struct_0_20244_20619_x497645975}[：站点]{style="font-family:宋体"}[ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[site-id*]：站点ID，取值范围为1～65535。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2015684944}
+【使用指导】
 
-[[站点]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_20244_20619_1159531497}[用来唯一标识边缘设备所处的站点。如果没有为边缘设备配置站点]{style="font-family:宋体"}[ID]{lang="EN-US"}[（采用缺省站点]{style="font-family:宋体"}[ID 0]{lang="EN-US"}[），则其他边缘设备认为该设备为站点间边缘设备。相同站点内的多台边缘设备必须配置相同的的站点]{style="font-family:宋体"}[ID]{lang="EN-US"}[，不同站点间的边缘设备必须配置不同的站点]{style="font-family:宋体"}[ID]{lang="EN-US"}[或者均采用缺省站点]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+站点ID用来唯一标识边缘设备所处的站点。如果没有为边缘设备配置站点ID（采用缺省站点ID 0），则其他边缘设备认为该设备为站点间边缘设备。相同站点内的多台边缘设备必须配置相同的的站点ID，不同站点间的边缘设备必须配置不同的站点ID或者均采用缺省站点ID。
 
-[[当两台设备均在本地站点时，如果为设备配置不同的站点]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_20244_20619_x1326010404}[或至少一台设备采用缺省站点]{style="font-family:宋体"}[ID]{lang="EN-US"}[，则会出现冲突，此时会将桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址较小的设备隔离；当两台设备分别为不同站点时，配置相同的站点]{style="font-family:宋体"}[ID]{lang="EN-US"}[时会出现冲突，此时同样会将桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址较小的设备隔离。此处的隔离是针对]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[协议来说的，被隔离的设备对于]{style="font-family:宋体"}[EVI IS-IS Hello]{lang="EN-US"}[报文将进行只收不发的处理，对于其它]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[协议报文将不会进行交互。设备被隔离的情况可以通过]{style="font-family:宋体"}**[display evi isis brief]{lang="EN-US"}**[命令和]{style="font-family:宋体"}**[display evi isis peer]{lang="EN-US"}**[命令查看。]{style="font-family:宋体"}
+当两台设备均在本地站点时，如果为设备配置不同的站点ID或至少一台设备采用缺省站点ID，则会出现冲突，此时会将桥MAC地址较小的设备隔离；当两台设备分别为不同站点时，配置相同的站点ID时会出现冲突，此时同样会将桥MAC地址较小的设备隔离。此处的隔离是针对EVI IS-IS协议来说的，被隔离的设备对于EVI IS-IS Hello报文将进行只收不发的处理，对于其它EVI IS-IS协议报文将不会进行交互。设备被隔离的情况可以通过**display evi isis brief**命令和**display evi isis peer**命令查看。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2016143695}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x1315824492}[配置设备所属的站点]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[201]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置设备所属的站点ID为201。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_x1850549111}
+\<Sysname\> system-view
 
-[\[Sysname\] evi site-id 201]{lang="EN-US"}
+Sysname evi site-id 201
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2016209231}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display evi-isis brief]{lang="EN-US"}**]{#struct_0_20244_20619_x1731253704}
+·**display evi-isis brief**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display evi isis peer]{lang="EN-US"}**]{#struct_0_20244_20619_x1624293619}
-:::
-
-::: {#-438344201 .myid}
-[]{#_Toc404798380}[]{#struct_0_20244_20619_x2016274767}[]{#_Toc364422921}[]{#_Toc351711397}
+·**display evi isis peer**
 
 **EVI \-- EVI配置命令 \-- evi vlan-mapping**
 
 ------------------------------------------------------------------------
 
-[**[evi vlan-mapping]{lang="EN-US"}**]{#struct_0_20244_20619_382209476}[命令用来配置本设备上某]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[与其他站点的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的映射关系。]{style="font-family:宋体"}
+**[evi vlan-mapping**]命令用来配置本设备上某VLAN与其他站点的VLAN的映射关系。
 
-[**[undo evi vlan-mapping]{lang="EN-US"}**]{#struct_0_20244_20619_x411215636}[命令用来删除]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[映射关系。]{style="font-family:宋体"}
+**[undo evi vlan-mapping**]命令用来删除VLAN映射关系。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2016340303}
+【命令】
 
-[**[evi vlan-mapping ]{lang="EN-US"}***[local-vlan-id]{lang="EN-US"}*[ **translated** *remote-vlan-id* \[ **site** *site-id* \]]{lang="EN-US"}]{#struct_0_20244_20619_1955017561}
+**[evi vlan-mapping ***local-vlan-id* **translated** *remote-vlan-id* [ **site** *site-id* ]]
 
-[**[undo evi vlan-mapping]{lang="EN-US"}**[ \[ ]{lang="EN-US"}*[local-vlan-id ]{lang="EN-US"}***[translated]{lang="EN-US"}**[ *remote-vlan-id* \[ **site** *site-id* \] \]]{lang="EN-US"}]{#struct_0_20244_20619_x1695222566}
+**[undo evi vlan-mapping** \*[local-vlan-id ***translated** *remote-vlan-id* [ **site** *site-id*  ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2015881551}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_20244_20619_342059446}[映射关系。]{style="font-family:宋体"}
+未配置VLAN映射关系。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_73161045}
+【视图】
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_x2015947087}[接口视图]{style="font-family:宋体"}
+Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_366216551}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_790467120}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_x2016012623}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x499361545}
+【参数】
 
-[*[local-vlan-id]{lang="EN-US"}*]{#struct_0_20244_20619_x615010003}[：本地]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[local-vlan-id*]：本地VLAN号，取值范围为1～4094。
 
-[*[remote-vlan-id]{lang="EN-US"}*]{#struct_0_20244_20619_x2016078159}[：远端站点的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[remote-vlan-id*]：远端站点的VLAN号，取值范围为1～4094。
 
-[*[site-id]{lang="EN-US"}*]{#struct_0_20244_20619_1363848520}[：远端站点的站点]{style="font-family:宋体"}[ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。不指定本参数时，表示到其它所有站点的映射关系。]{style="font-family:宋体"}
+*[site-id*]：远端站点的站点ID，取值范围为1～65535。不指定本参数时，表示到其它所有站点的映射关系。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_1680256494}
+【使用指导】
 
-[**[undo]{lang="EN-US"}**]{#struct_0_20244_20619_x2015619407}[命令中不指定任何参数时，表示删除所有的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[映射关系。]{style="font-family:宋体"}
+**[undo**]命令中不指定任何参数时，表示删除所有的VLAN映射关系。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1356626388}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_851482076}[配置]{style="font-family:宋体"}[Tunnel101]{lang="EN-US"}[的]{style="font-family:宋体"}[VLAN 100]{lang="EN-US"}[与站点]{style="font-family:宋体"}[2]{lang="EN-US"}[的]{style="font-family:宋体"}[VLAN 200]{lang="EN-US"}[进行映射。]{style="font-family:宋体"}
+\# 配置Tunnel101的VLAN 100与站点2的VLAN 200进行映射。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_x2015684943}
+\<Sysname\> system-view
 
-[\[Sysname\] interface tunnel 101]{lang="EN-US"}
+Sysname interface tunnel 101
 
-[\[Sysname-tunnel101\] evi vlan-mapping 100 translated 200 site 2]{lang="EN-US"}
+Sysname-tunnel101 evi vlan-mapping 100 translated 200 site 2
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_1919046384}[配置]{style="font-family:宋体"}[Tunnel101]{lang="EN-US"}[的]{style="font-family:宋体"}[VLAN 100]{lang="EN-US"}[与其它所有站点的]{style="font-family:宋体"}[VLAN 200]{lang="EN-US"}[进行映射。]{style="font-family:宋体"}
+\# 配置Tunnel101的VLAN 100与其它所有站点的VLAN 200进行映射。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_x1865683373}
+\<Sysname\> system-view
 
-[\[Sysname\] interface tunnel 101]{lang="EN-US"}
+Sysname interface tunnel 101
 
-[\[Sysname-tunnel101\] evi vlan-mapping 100 translated 200]{lang="EN-US"}
-:::
-
-::: {#-41990894 .myid}
-[]{#_Toc404798381}[]{#struct_0_20244_20619_355681392}[]{#_Toc312867799}
+Sysname-tunnel101 evi vlan-mapping 100 translated 200
 
 **EVI \-- EVI配置命令 \-- evi-isis**
 
 ------------------------------------------------------------------------
 
-[**[evi-isis]{lang="EN-US"}**]{#struct_0_20244_20619_1709227347}[命令用来]{style="font-family:宋体"}[创建]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程，并进入]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+**[evi-isis**]命令用来创建EVI IS-IS进程，并进入EVI IS-IS视图。
 
-[**[undo evi-isis]{lang="EN-US"}**]{#struct_0_20244_20619_x1361739264}[命令用来删除]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程或者]{style="font-family:宋体"}[清除]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程下的配置数据。]{style="font-family:宋体"}
+**[undo evi-isis**]命令用来删除EVI IS-IS进程或者清除EVI IS-IS进程下的配置数据。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x186897631}
+【命令】
 
-[**[evi-isis ]{lang="EN-US"}***[process-id]{lang="EN-US"}*]{#struct_0_20244_20619_x972643520}
+**[evi-isis ***process-id*]
 
-[**[undo evi-isis ]{lang="EN-US"}***[process-id]{lang="EN-US"}*]{#struct_0_20244_20619_466319194}
+**[undo evi-isis ***process-id*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1926253826}
+【缺省情况】
 
-[[不存在]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_x2001201901}[进程。]{style="font-family:宋体"}
+不存在EVI IS-IS进程。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_1122576750}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_20244_20619_13060612}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1338865464}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_1155388418}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_x1887188467}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_1741520817}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_20244_20619_1797407537}[：]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[的进程]{style="font-family:宋体"}[ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：EVI IS-IS的进程ID，取值范围为0～65535。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_x407384890}
+【使用指导】
 
-[[一个]{style="font-family:宋体"}[EVI]{lang="EN-US"}]{#struct_0_20244_20619_547345260}[实例对应一个]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程。]{style="font-family:宋体"}
+一个EVI实例对应一个EVI IS-IS进程。
 
-[[创建]{style="font-family:宋体"}[EVI ]{lang="EN-US"}[IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_x450190823}[进程有如下两种方法：]{style="font-family:宋体"}
+创建EVI IS-IS进程有如下两种方法：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在]{lang="EN-US" style="font-family:宋体"}[EVI Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_x1640107516}[接口下配置]{lang="EN-US" style="font-family:宋体"}[可以创建]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[的配置项]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}[此时]{lang="EN-US" style="font-family:宋体"}[会自动创建]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[，其进程]{style="font-family:宋体"}[ID]{lang="EN-US"}[与]{lang="EN-US" style="font-family:宋体"}[EVI Tunnel]{lang="EN-US"}[接口号相同]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}
+·在EVI Tunnel接口下配置可以创建EVI IS-IS进程的配置项。此时会自动创建EVI IS-IS进程，其进程ID与EVI Tunnel接口号相同。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[执行]{lang="EN-US" style="font-family:宋体"}**[evi-isis]{lang="EN-US"}**]{#struct_0_20244_20619_x450256359}[命令]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}[此时该]{lang="EN-US" style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程与相同编号的]{lang="EN-US" style="font-family:宋体"}[EVI Tunnel]{lang="EN-US"}[接口相对应。]{lang="EN-US" style="font-family:宋体"}
+·执行**evi-isis**命令。此时该EVI IS-IS进程与相同编号的EVI Tunnel接口相对应。
 
-[[创建]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_x1617545664}[进程后，用户可以通过]{style="font-family:宋体"}**[evi-isis]{lang="EN-US"}**[命令进入]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[视图，配置]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的协议参数。]{style="font-family:宋体"}
+创建EVI IS-IS进程后，用户可以通过**evi-isis**命令进入EVI IS-IS视图，配置EVI IS-IS进程的协议参数。
 
-[[需要注意的是，如果没有配置扩展]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_20244_20619_x399894442}[，对应的]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程不生效。]{style="font-family:宋体"}
+需要注意的是，如果没有配置扩展VLAN，对应的EVI IS-IS进程不生效。
 
-[[删除]{style="font-family:宋体"}[EVI ]{lang="EN-US"}[IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_x449797607}[进程的时机如下：]{style="font-family:宋体"}
+删除EVI IS-IS进程的时机如下：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果没有执行过]{style="font-family:宋体"}]{#struct_0_20244_20619_x370881942}**[evi-isis]{lang="EN-US"}**[命令]{style="font-family:宋体"}[，只是通过在]{style="font-family:宋体"}[EVI Tunnel]{lang="EN-US"}[接口下配置]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[配置项而自动创建了]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程，在此种情况下，]{style="font-family:宋体"}[删除]{lang="EN-US" style="font-family:
-宋体"}[EVI Tunnel]{lang="EN-US"}[接口]{lang="EN-US" style="font-family:宋体"}[下的]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[配置项]{style="font-family:宋体"}[时会自动删除对应的]{lang="EN-US" style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程。]{lang="EN-US" style="font-family:宋体"}
+·如果没有执行过**evi-isis**命令，只是通过在EVI Tunnel接口下配置EVI IS-IS配置项而自动创建了EVI IS-IS进程，在此种情况下，删除EVI Tunnel接口下的EVI IS-IS配置项时会自动删除对应的EVI IS-IS进程。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果执行过]{style="font-family:宋体"}]{#struct_0_20244_20619_1917226596}**[evi-isis]{lang="EN-US"}**[命令，那么]{style="font-family:宋体"}[删除]{lang="EN-US" style="font-family:宋体"}[EVI Tunnel]{lang="EN-US"}[接口]{lang="EN-US" style="font-family:宋体"}[下的]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[配置项]{style="font-family:宋体"}[时]{lang="EN-US" style="font-family:宋体"}[不]{style="font-family:宋体"}[会]{lang="EN-US" style="font-family:宋体"}[自动]{style="font-family:宋体"}[删除对应的]{lang="EN-US" style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程]{lang="EN-US" style="font-family:宋体"}[，只能通过]{style="font-family:宋体"}**[undo evi-isis]{lang="EN-US"}**[命令来删除]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程。]{lang="EN-US" style="font-family:宋体"}
+·如果执行过**evi-isis**命令，那么删除EVI Tunnel接口下的EVI IS-IS配置项时不会自动删除对应的EVI IS-IS进程，只能通过**undo evi-isis**命令来删除EVI IS-IS进程。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[执行]{style="font-family:宋体"}**[undo evi-isis]{lang="EN-US"}**]{#struct_0_20244_20619_x449863143}[命令时，如果]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程对应的]{style="font-family:宋体"}[EVI Tunnel]{lang="EN-US"}[接口存在]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[配置项，则不会删除进程，只会清除]{style="font-family:宋体"}[进程下的配置数据]{lang="EN-US" style="font-family:宋体"}[；如果]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程对应的]{style="font-family:宋体"}[EVI Tunnel]{lang="EN-US"}[接口下不存在]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[配置项，则会删除进程，并清除]{style="font-family:宋体"}[进程下的配置数据]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}
+·执行**undo evi-isis**命令时，如果EVI IS-IS进程对应的EVI Tunnel接口存在EVI IS-IS配置项，则不会删除进程，只会清除进程下的配置数据；如果EVI IS-IS进程对应的EVI Tunnel接口下不存在EVI IS-IS配置项，则会删除进程，并清除进程下的配置数据。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2064314947}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x886763085}[进入]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+\# 进入EVI IS-IS视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_567464058}
+\<Sysname\> system-view
 
-[\[Sysname\] evi-isis 101]{lang="EN-US"}
+Sysname evi-isis 101
 
-[\[Sysname-evi-isis-101\]]{lang="EN-US"}
+Sysname-evi-isis-101
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2001332973}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display evi]{lang="EN-US"}**]{#struct_0_20244_20619_x1751180641}**[ ]{lang="EN-US"}[isis brief]{lang="EN-US"}**
-:::
-
-::: {#-283085117 .myid}
-[]{#_Toc404798382}[]{#struct_0_20244_20619_21667123}[]{#_Toc364422923}[]{#_Toc351711387}
+·**display evi****isis brief**
 
 **EVI \-- EVI配置命令 \-- filter-policy**
 
 ------------------------------------------------------------------------
 
-[**[filter-policy]{lang="EN-US"}**]{#struct_0_20244_20619_x449928679}[命令用来配置]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程绑定的路由策略。]{style="font-family:宋体"}
+**[filter-policy**]命令用来配置EVI IS-IS进程绑定的路由策略。
 
-[**[undo filter-policy]{lang="EN-US"}**]{#struct_0_20244_20619_759871110}[命令用来删除]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程绑定的路由策略。]{style="font-family:宋体"}
+**[undo filter-policy**]命令用来删除EVI IS-IS进程绑定的路由策略。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x471610938}
+【命令】
 
-[**[filter-policy]{lang="EN-US"}**[ *policy-name*]{lang="EN-US"}]{#struct_0_20244_20619_x449994215}
+**[filter-policy** *policy-name*]
 
-[**[undo filter-policy]{lang="EN-US"}**]{#struct_0_20244_20619_x1172422840}
+**[undo filter-policy**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_x481948887}
+【缺省情况】
 
-[[EVI IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_x449535463}[进程没有绑定路由策略。]{style="font-family:宋体"}
+EVI IS-IS进程没有绑定路由策略。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_422032224}
+【视图】
 
-[[EVI IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_x449600999}[视图]{style="font-family:宋体"}
+EVI IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x19000937}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_1970998219}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_x450059750}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1266015779}
+【参数】
 
-[*[policy-name]{lang="EN-US"}*]{#struct_0_20244_20619_1315845999}[：路由策略名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[policy-name*]：路由策略名称，为1～63个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_x450125286}
+【使用指导】
 
-[[绑定路由策略后，该]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_x1237931273}[进程只向其它站点通告路由策略允许的站点本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+绑定路由策略后，该EVI IS-IS进程只向其它站点通告路由策略允许的站点本地MAC地址信息。
 
-[[EVI IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_x950503548}[进程绑定的路由策略的配置中仅有如下两类匹配条件生效：]{style="font-family:宋体"}
+EVI IS-IS进程绑定的路由策略的配置中仅有如下两类匹配条件生效：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MAC]{lang="EN-US"}]{#struct_0_20244_20619_x450190822}[地址列表过滤的匹配条件]{style="font-family:宋体"}
+·MAC地址列表过滤的匹配条件
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VLAN]{lang="EN-US"}]{#struct_0_20244_20619_x1640173052}[范围的匹配条件]{style="font-family:宋体"}
+·VLAN范围的匹配条件
 
-[[关于路由策略的详细介绍请参见"三层技术]{style="font-family:宋体"}[-IP]{lang="EN-US"}]{#struct_0_20244_20619_1628941272}[路由配置指导"中的"路由策略"。]{style="font-family:宋体"}
+关于路由策略的详细介绍请参见"三层技术-IP路由配置指导"中的"路由策略"。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x450256358}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x1617611200}[配置]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程绑定路由策略]{style="font-family:宋体"}[EVI-Filter]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置EVI IS-IS进程绑定路由策略EVI-Filter。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_379320725}
+\<Sysname\> system-view
 
-[\[Sysname\] evi-isis 101]{lang="EN-US"}
+Sysname evi-isis 101
 
-[\[Sysname-evi-isis-101\] filter-policy EVI-Filter]{lang="EN-US"}
-:::
-
-::: {#63544256 .myid}
-[]{#_Toc404798383}[]{#struct_0_20244_20619_x761031953}[]{#_Toc312867807}
+Sysname-evi-isis-101 filter-policy EVI-Filter
 
 **EVI \-- EVI配置命令 \-- graceful-restart**
 
 ------------------------------------------------------------------------
 
-[**[graceful-restart]{lang="EN-US"}**]{#struct_0_20244_20619_1898812663}[命令用来使能]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[能力。]{style="font-family:宋体"}
+**[graceful-restart**]命令用来使能EVI IS-IS的GR能力。
 
-[**[undo graceful-restart]{lang="EN-US"}**]{#struct_0_20244_20619_x1388614027}[命令用来关闭]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[能力。]{style="font-family:宋体"}
+**[undo graceful-restart**]命令用来关闭EVI IS-IS的GR能力。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x424368912}
+【命令】
 
-[**[graceful-restart]{lang="EN-US"}**]{#struct_0_20244_20619_592291280}
+**[graceful-restart**]
 
-[**[undo ]{lang="EN-US"}[graceful-restart]{lang="EN-US"}**]{#struct_0_20244_20619_x639890677}
+**[undo graceful-restart**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_1833493269}
+【缺省情况】
 
-[[EVI IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_x2001267437}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[能力处于关闭状态。]{style="font-family:宋体"}
+EVI IS-IS的GR能力处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1845002811}
+【视图】
 
-[[EVI IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_316319881}[视图]{style="font-family:宋体"}
+EVI IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_1836361300}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_1756209315}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_707351952}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_598212973}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x1691273711}[使能]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[101]{lang="EN-US"}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[能力。]{style="font-family:宋体"}
+\# 使能EVI IS-IS进程101的GR能力。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_x420476411}
+\<Sysname\> system-view
 
-[\[Sysname\] evi-isis 101]{lang="EN-US"}
+Sysname evi-isis 101
 
-[\[Sysname-evi-isis-101\] graceful-restart]{lang="EN-US"}
+Sysname-evi-isis-101 graceful-restart
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_1256593441}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display evi isis graceful-restart status]{lang="EN-US"}**]{#struct_0_20244_20619_x2000939757}
-:::
-
-::: {#16863910 .myid}
-[]{#_Toc404798384}[]{#struct_0_20244_20619_866404310}[]{#_Toc312867808}
+·**display evi isis graceful-restart status**
 
 **EVI \-- EVI配置命令 \-- graceful-restart interval**
 
 ------------------------------------------------------------------------
 
-[**[graceful-restart interval]{lang="EN-US"}**]{#struct_0_20244_20619_655805221}[命令用来配置]{style="font-family:
-宋体"}[EVI IS-IS]{lang="EN-US"}[协议的]{style="font-family:
-宋体"}[GR]{lang="EN-US"}[重启间隔时间。]{style="font-family:宋体"}
+**[graceful-restart interval**]命令用来配置EVI IS-IS协议的GR重启间隔时间。
 
-[**[undo graceful-restart interval]{lang="EN-US"}**]{#struct_0_20244_20619_x441770412}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo graceful-restart interval**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1374088846}
+【命令】
 
-[**[graceful-restart interval]{lang="EN-US"}**[ *interval-value*]{lang="EN-US"}]{#struct_0_20244_20619_x481894367}
+**[graceful-restart interval** *interval-value*]
 
-[**[undo graceful-restart interval]{lang="EN-US"}**]{#struct_0_20244_20619_x1437263912}
+**[undo graceful-restart interval**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1395088621}
+【缺省情况】
 
-[[EVI IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_x1413864358}[协议的]{style="font-family:宋体"}[GR]{lang="EN-US"}[重启间隔时间为]{style="font-family:宋体"}[300]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+EVI IS-IS协议的GR重启间隔时间为300秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2000874221}
+【视图】
 
-[[EVI IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_1064718589}[视图]{style="font-family:宋体"}
+EVI IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_1887743627}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_208667256}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_443711999}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1404882949}
+【参数】
 
-[*[interval-value]{lang="EN-US"}*]{#struct_0_20244_20619_x811014597}[：指定]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[协议的]{style="font-family:宋体"}[GR]{lang="EN-US"}[重启间隔时间（期望重启时间），取值范围为]{style="font-family:宋体"}[30]{lang="EN-US"}[～]{style="font-family:宋体"}[1800]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[interval-value*]：指定EVI IS-IS协议的GR重启间隔时间（期望重启时间），取值范围为30～1800，单位为秒。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_1266525212}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_414226993}[配置]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[重启间隔时间为]{style="font-family:宋体"}[120]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置EVI IS-IS进程1的GR重启间隔时间为120秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_x2001070829}
+\<Sysname\> system-view
 
-[\[Sysname\] evi-isis 1]{lang="EN-US"}
+Sysname evi-isis 1
 
-[\[Sysname-evi-isis-1\] graceful-restart interval 120]{lang="EN-US"}
+Sysname-evi-isis-1 graceful-restart interval 120
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_190229628}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display evi isis graceful-restart status]{lang="EN-US"}**]{#struct_0_20244_20619_1571425626}
-:::
-
-::: {#-121527311 .myid}
-[]{#_Toc404798385}[]{#struct_0_20244_20619_x2022397752}[]{#_Toc398738206}[]{#_Toc382506823}
+·**display evi isis graceful-restart status**
 
 **EVI \-- EVI配置命令 \-- gre key vlan-id**
 
 ------------------------------------------------------------------------
 
-[**[gre key vlan-id]{lang="EN-US"}**]{#struct_0_20244_20619_485434183}[命令用来设置]{style="font-family:宋体"}[EVI]{lang="EN-US"}[类型]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口为发送的报文中添加根据]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[生成的]{style="font-family:宋体"}[GRE Key]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[gre key vlan-id**]命令用来设置EVI类型Tunnel接口为发送的报文中添加根据VLAN ID生成的GRE Key。
 
-[**[undo gre key]{lang="EN-US"}**]{#struct_0_20244_20619_1256102737}[命令用来取消]{style="font-family:宋体"}[EVI]{lang="EN-US"}[类型]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口的]{style="font-family:宋体"}[GRE Key]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo gre key**]命令用来取消EVI类型Tunnel接口的GRE Key。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1117307973}
+【命令】
 
-[**[gre key]{lang="EN-US"}**[ **vlan-id**]{lang="EN-US"}]{#struct_0_20244_20619_1768305343}
+**[gre key** **vlan-id**]
 
-[**[undo gre key]{lang="EN-US"}**]{#struct_0_20244_20619_2087033593}
+**[undo gre key**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_2052453967}
+【缺省情况】
 
-[[EVI]{lang="EN-US"}]{#struct_0_20244_20619_x2021939000}[类型]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口发送的报文中不携带]{style="font-family:宋体"}[GRE Key]{lang="EN-US"}[。]{style="font-family:宋体"}
+EVI类型Tunnel接口发送的报文中不携带GRE Key。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x453198635}
+【视图】
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_1679726301}[接口视图]{style="font-family:宋体"}
+Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1089867705}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_x1768396830}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_8791908}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_2082448616}
+【使用指导】
 
-[[通过设置]{style="font-family:宋体"}[EVI]{lang="EN-US"}]{#struct_0_20244_20619_x2022004536}[类型]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口发送报文时携带]{style="font-family:宋体"}[GRE Key]{lang="EN-US"}[后，发送方会在其发送的报文中携带]{style="font-family:宋体"}[GRE Key]{lang="EN-US"}[信息。接收方收到报文后将报文中的]{style="font-family:宋体"}[GRE Key]{lang="EN-US"}[与接收方本地配置的]{style="font-family:宋体"}[GRE Key]{lang="EN-US"}[进行比较，如果一致则对报文进行进一步处理；否则丢弃该报文。这样就可以防止设备接收非法报文。因此为保证通信正常，隧道两端必须设置相同的]{style="font-family:宋体"}[GRE Key]{lang="EN-US"}[，或者都不设置]{style="font-family:宋体"}[GRE Key]{lang="EN-US"}[。]{style="font-family:宋体"}
+通过设置EVI类型Tunnel接口发送报文时携带GRE Key后，发送方会在其发送的报文中携带GRE Key信息。接收方收到报文后将报文中的GRE Key与接收方本地配置的GRE Key进行比较，如果一致则对报文进行进一步处理；否则丢弃该报文。这样就可以防止设备接收非法报文。因此为保证通信正常，隧道两端必须设置相同的GRE Key，或者都不设置GRE Key。
 
-[[执行本命令后，边缘设备将根据报文中的]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}]{#struct_0_20244_20619_x694307658}[自动生成]{style="font-family:宋体"}[EVI]{lang="EN-US"}[类型]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口的]{style="font-family:宋体"}[GRE Key]{lang="EN-US"}[，并封装到报文中。]{style="font-family:宋体"}[GRE Key]{lang="EN-US"}[的高]{style="font-family:宋体"}[12]{lang="EN-US"}[位为]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[，低]{style="font-family:宋体"}[20]{lang="EN-US"}[位为]{style="font-family:宋体"}[0]{lang="EN-US"}[。]{style="font-family:宋体"}
+执行本命令后，边缘设备将根据报文中的VLAN ID自动生成EVI类型Tunnel接口的GRE Key，并封装到报文中。GRE Key的高12位为VLAN ID，低20位为0。
 
-[[部分产品发送报文时，报文中的]{style="font-family:宋体"}[GRE Key]{lang="EN-US"}]{#struct_0_20244_20619_x2058118535}[字段携带了]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[。设备在与这些产品通信时需要配置本命令，使发出报文中的]{style="font-family:宋体"}[GRE Key]{lang="EN-US"}[字段也携带]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+部分产品发送报文时，报文中的GRE Key字段携带了VLAN ID。设备在与这些产品通信时需要配置本命令，使发出报文中的GRE Key字段也携带VLAN ID。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_1734212449}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x1999634794}[设置]{style="font-family:宋体"}[EVI]{lang="EN-US"}[类型]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口为发送的报文添加根据]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[生成的]{style="font-family:宋体"}[GRE Key]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 设置EVI类型Tunnel接口为发送的报文添加根据VLAN ID生成的GRE Key。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_1899543025}
+\<Sysname\> system-view
 
-[\[Sysname\] interface tunnel 1 mode evi]{lang="EN-US"}
+Sysname interface tunnel 1 mode evi
 
-[\[Sysname-Tunnel2\] gre key vlan-id]{lang="EN-US"}
+Sysname-Tunnel2 gre key vlan-id
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_2095053367}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display interf]{lang="SV"}[ace tunnel]{lang="EN-US"}**]{#struct_0_20244_20619_x1225920927}
-:::
-
-::: {#809257258 .myid}
-[]{#_Toc404798386}[]{#struct_0_20244_20619_x580611499}[]{#_Toc312402795}[]{#_Toc338172110}[]{#_Toc338432526}[]{#_Toc338172111}[]{#_Toc338432527}[]{#_Toc338172112}[]{#_Toc338432528}[]{#_Toc338172113}[]{#_Toc338432529}[]{#_Toc338172114}[]{#_Toc338432530}[]{#_Toc338172115}[]{#_Toc338432531}[]{#_Toc338172116}[]{#_Toc338432532}[]{#_Toc338172117}[]{#_Toc338432533}[]{#_Toc338172118}[]{#_Toc338432534}[]{#_Toc338172119}[]{#_Toc338432535}[]{#_Toc338172120}[]{#_Toc338432536}[]{#_Toc338172121}[]{#_Toc338432537}[]{#_Toc338172122}[]{#_Toc338432538}[]{#_Toc338172123}[]{#_Toc338432539}[]{#_Toc338172124}[]{#_Toc338432540}[]{#_Toc338172125}[]{#_Toc338432541}[]{#_Toc338172126}[]{#_Toc338432542}[]{#_Toc338172127}[]{#_Toc338432543}[]{#_Toc338172128}[]{#_Toc338432544}[]{#_Toc338172129}[]{#_Toc338432545}[]{#_Toc338172130}[]{#_Toc338432546}[]{#_Toc338172131}[]{#_Toc338432547}[]{#_Toc338172132}[]{#_Toc338432548}[]{#_Toc338172133}[]{#_Toc338432549}[]{#_Toc338172134}[]{#_Toc338432550}[]{#_Toc338172135}[]{#_Toc338432551}[]{#_Toc338172136}[]{#_Toc338432552}[]{#_Toc338172137}[]{#_Toc338432553}
+·**display interface tunnel**
 
 **EVI \-- EVI配置命令 \-- keepalive**
 
 ------------------------------------------------------------------------
 
-[**[keepalive]{lang="EN-US"}**]{#struct_0_20244_20619_x823150129}[命令用来配置]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道探测对端状态的]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的发送周期和最大发送次数。]{style="font-family:宋体"}
+**[keepalive**]命令用来配置EVI隧道探测对端状态的keepalive报文的发送周期和最大发送次数。
 
-[**[undo keepalive]{lang="EN-US"}**]{#struct_0_20244_20619_x1620901677}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo keepalive**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_257113706}
+【命令】
 
-[**[keepalive]{lang="EN-US"}**[ \[ *seconds* \[ *times* \] \]]{lang="EN-US"}]{#struct_0_20244_20619_958820133}
+**[keepalive** [ *seconds* [ *times*  ]]]
 
-[**[undo keepalive]{lang="EN-US"}**]{#struct_0_20244_20619_x992933419}
+**[undo keepalive**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_x783365958}
+【缺省情况】
 
-[[keepalive]{lang="EN-US"}]{#struct_0_20244_20619_x2001005293}[报文的发送周期为]{style="font-family:宋体"}[5]{lang="EN-US"}[秒，最大发送次数为]{style="font-family:宋体"}[2]{lang="EN-US"}[次。]{style="font-family:宋体"}
+keepalive报文的发送周期为5秒，最大发送次数为2次。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1478946135}
+【视图】
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_x810110112}[接口视图]{style="font-family:宋体"}
+Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x695872997}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_x815841925}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_264724104}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1511543895}
+【参数】
 
-[*[seconds]{lang="EN-US"}*]{#struct_0_20244_20619_x831568302}[：]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文发送周期，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32767]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[5]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+*[seconds*]：keepalive报文发送周期，取值范围为1～32767，单位为秒，缺省值为5秒。
 
-[*[times]{lang="EN-US"}*]{#struct_0_20244_20619_144803660}[：]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的最大发送次数，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[2]{lang="EN-US"}[次。]{style="font-family:宋体"}
+*[times*]：keepalive报文的最大发送次数，取值范围为1～255，缺省值为2次。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_x339900364}
+【使用指导】
 
-[[EVI Tunnel]{lang="EN-US"}]{#struct_0_20244_20619_x2000677613}[接口配置的]{style="font-family:宋体"}[ENDP]{lang="EN-US"}[协议会学习邻居信息并建立]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口。设备会从基于]{style="font-family:宋体"}[EVI Tunnel]{lang="EN-US"}[建立的各个]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口周期性发送]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文。如果超时时间（即配置的]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文发送周期）内没有收到对端的回应，则本端重新发送]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文。如果达到最大发送次数后仍然没有收到对端的回应，则把本端]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口的状态置为]{style="font-family:宋体"}[down]{lang="EN-US"}[。如果]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口为]{style="font-family:宋体"}[down]{lang="EN-US"}[状态，当收到对端回复的]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[确认报文或收到对端发送的]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文时，]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口的状态将转换为]{style="font-family:宋体"}[up]{lang="EN-US"}[，否则保持]{style="font-family:宋体"}[down]{lang="EN-US"}[状态。]{style="font-family:宋体"}
+EVI Tunnel接口配置的ENDP协议会学习邻居信息并建立EVI-Link接口。设备会从基于EVI Tunnel建立的各个EVI-Link接口周期性发送keepalive报文。如果超时时间（即配置的keepalive报文发送周期）内没有收到对端的回应，则本端重新发送keepalive报文。如果达到最大发送次数后仍然没有收到对端的回应，则把本端EVI-Link接口的状态置为down。如果EVI-Link接口为down状态，当收到对端回复的keepalive确认报文或收到对端发送的keepalive报文时，EVI-Link接口的状态将转换为up，否则保持down状态。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1920779729}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_1756884151}[配置]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的发送周期为]{style="font-family:宋体"}[20]{lang="EN-US"}[秒，最大发送次数为]{style="font-family:宋体"}[5]{lang="EN-US"}[次。]{style="font-family:宋体"}
+\# 配置keepalive报文的发送周期为20秒，最大发送次数为5次。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_389632417}
+\<Sysname\> system-view
 
-[\[Sysname\] interface tunnel 0 mode evi]{lang="EN-US"}
+Sysname interface tunnel 0 mode evi
 
-[\[Sysname-Tunnel0\] keepalive 20 5]{lang="EN-US"}
+Sysname-Tunnel0 keepalive 20 5
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_684663345}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[interface tunnel]{lang="EN-US"}**]{#struct_0_20244_20619_x1774538611}
-:::
-
-::: {#-1553303123 .myid}
-[]{#_Toc404798387}[]{#struct_0_20244_20619_1147857735}[]{#_Toc312867809}
+·**interface tunnel**
 
 **EVI \-- EVI配置命令 \-- log-peer-change enable**
 
 ------------------------------------------------------------------------
 
-[**[log-peer-change enable]{lang="EN-US"}**]{#struct_0_20244_20619_301923272}[命令用来打开邻接状态变化的输出开关。]{style="font-family:宋体"}
+**[log-peer-change enable**]命令用来打开邻接状态变化的输出开关。
 
-[**[undo log-peer-change enable]{lang="EN-US"}**]{#struct_0_20244_20619_x2000612077}[命令用来关闭邻接状态变化的输出开关。]{style="font-family:
-宋体"}
+**[undo log-peer-change enable**]命令用来关闭邻接状态变化的输出开关。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_1898218851}
+【命令】
 
-[**[log-peer-change enable]{lang="EN-US"}**]{#struct_0_20244_20619_2094183450}
+**[log-peer-change enable**]
 
-[**[undo log-peer-change enable]{lang="EN-US"}**]{#struct_0_20244_20619_703983093}
+**[undo log-peer-change enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_1847000218}
+【缺省情况】
 
-[[邻接状态变化的输出开关处于打开状态。]{style="font-family:宋体"}]{#struct_0_20244_20619_590889941}
+邻接状态变化的输出开关处于打开状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x814601488}
+【视图】
 
-[[EVI IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_x174170548}[视图]{style="font-family:宋体"}
+EVI IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x964492808}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_x918943110}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_x2001201900}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_x443507191}
+【使用指导】
 
-[[当打开邻接状态变化的输出开关后，]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_852937265}[邻接状态变化时会生成日志信息发送到设备的信息中心，通过设置信息中心的参数，最终决定日志信息的输出规则（即是否允许输出以及输出方向）。有关信息中心参数的配置请参见"网络管理和监控配置指导"中的"信息中心"。]{style="font-family:宋体"}
+当打开邻接状态变化的输出开关后，EVI IS-IS邻接状态变化时会生成日志信息发送到设备的信息中心，通过设置信息中心的参数，最终决定日志信息的输出规则（即是否允许输出以及输出方向）。有关信息中心参数的配置请参见"网络管理和监控配置指导"中的"信息中心"。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_1650538244}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x257898175}[关闭邻接状态变化的输出开关。]{style="font-family:宋体"}
+\# 关闭邻接状态变化的输出开关。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_x362965022}
+\<Sysname\> system-view
 
-[\[Sysname\] evi-isis 1]{lang="EN-US"}
+Sysname evi-isis 1
 
-[\[Sysname-evi-isis-1\] ]{lang="EN-US"}[undo log-peer-change enable]{lang="NO-BOK"}
-:::
-
-::: {#693948098 .myid}
-[]{#_Toc404798388}[]{#struct_0_20244_20619_x713463634}[]{#_Toc309203842}
+Sysname-evi-isis-1 undo log-peer-change enable
 
 **EVI \-- EVI配置命令 \-- reset evi arp-suppression**
 
 ------------------------------------------------------------------------
 
-[**[reset evi arp-suppression]{lang="EN-US"}**]{#struct_0_20244_20619_1938388174}[命令用来清除]{style="font-family:
-宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}
+**[reset evi arp-suppression**]命令用来清除EVI ARP泛洪抑制表项。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_580762133}
+【命令】
 
-[**[reset evi arp-suppression interface ]{lang="EN-US"}[tunnel]{lang="EN-US"}***[ interface-number ]{lang="EN-US"}*[\[ **vlan** *vlan-id* \]]{lang="EN-US"}]{#struct_0_20244_20619_x2001136364}
+**[reset evi arp-suppression interface tunnel*** interface-number * **vlan** *vlan-id* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_1152903784}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_20244_20619_x1683241439}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_1251725521}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_1271520683}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_174601324}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_998362942}
+【参数】
 
-[**[interface ]{lang="EN-US"}[tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*]{#struct_0_20244_20619_x2098895719}[：]{style="font-family:宋体"}[清除指定]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口下的]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}
+**[interface tunnel*** interface-number*]：清除指定EVI隧道接口下的EVI ARP泛洪抑制表项。
 
-[**[vlan ]{lang="EN-US"}***[vlan-id]{lang="EN-US"}*]{#struct_0_20244_20619_x900080278}[：清除指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果]{style="font-family:宋体"}[不指定]{style="font-family:宋体"}[本参数]{style="font-family:宋体"}[，将清除所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}
+**[vlan ***vlan-id*]：清除指定VLAN的EVI ARP泛洪抑制表项。*vlan-id*表示VLAN编号，取值范围为1～4094。如果不指定本参数，将清除所有VLAN的EVI ARP泛洪抑制表项。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x625348485}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x2001332972}[清除]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口]{style="font-family:宋体"}[Tunnel101]{lang="EN-US"}[下的]{style="font-family:宋体"}[EVI ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}
+\# 清除EVI隧道接口Tunnel101下的EVI ARP泛洪抑制表项。
 
-[[\<Sysname\> reset evi arp-suppression interface tunnel 101]{lang="EN-US"}]{#struct_0_20244_20619_x185096700}
+\<Sysname\> reset evi arp-suppression interface tunnel 101
 
-[This will delete all entries under the specified interface. Continue? \[Y/N\]:y]{lang="EN-US"}
+This will delete all entries under the specified interface. Continue? [Y/N:y]
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1228919492}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display evi arp-suppressio]{lang="EN-US"}[n]{lang="EN-US"}**]{#struct_0_20244_20619_x370424390}
+·**display evi arp-suppression**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[evi arp-suppression enable]{lang="EN-US"}**]{#struct_0_20244_20619_x458369806}
-:::
-
-::: {#2070418077 .myid}
-[]{#_Toc404798389}[]{#struct_0_20244_20619_471212645}[]{#_Toc311280240}
+·**evi arp-suppression enable**
 
 **EVI \-- EVI配置命令 \-- reset evi isis all**
 
 ------------------------------------------------------------------------
 
-[**[reset evi isis all]{lang="EN-US"}**]{#struct_0_20244_20619_778950899}[命令用来清除]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程下所有的动态数据。]{style="font-family:宋体"}
+**[reset evi isis all**]命令用来清除EVI IS-IS进程下所有的动态数据。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1907443577}
+【命令】
 
-[**[reset evi isis all ]{lang="EN-US"}**[\[ *process-id*]{lang="EN-US"}*[ ]{lang="EN-US"}*[\]]{lang="EN-US"}]{#struct_0_20244_20619_96866387}
+**[reset evi isis all ** *process-id*]**
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2001267436}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_20244_20619_883880544}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_852027561}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_x2059079720}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_x1947446721}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x973789409}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_20244_20619_x1054611153}[：]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。如果不指定本参数，将清除所有]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程下所有的动态数据。]{style="font-family:宋体"}
+*[process-id*]：EVI IS-IS进程号，取值范围为1～65535。如果不指定本参数，将清除所有EVI IS-IS进程下所有的动态数据。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_1890837527}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x476656574}[清除]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[下所有的动态数据。]{style="font-family:宋体"}
+\# 清除EVI IS-IS进程1下所有的动态数据。
 
-[[\<Sysname\> reset evi isis all 1]{lang="EN-US"}]{#struct_0_20244_20619_x2000939756}
-:::
-
-::: {#870763228 .myid}
-[]{#_Toc404798390}[]{#struct_0_20244_20619_x450190825}[]{#_Toc355684604}[]{#_Toc350517160}[]{#_Toc185927308}[]{#_Toc123026768}
+\<Sysname\> reset evi isis all 1
 
 **EVI \-- EVI配置命令 \-- snmp context-name**
 
 ------------------------------------------------------------------------
 
-[**[snmp context-name]{lang="EN-US"}**]{#struct_0_20244_20619_x450256361}[命令用来配置管理]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[协议的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体所使用的上下文名称。]{style="font-family:宋体"}
+**[snmp context-name**]命令用来配置管理EVI IS-IS协议的SNMP实体所使用的上下文名称。
 
-[**[undo snmp context-name]{lang="EN-US"}**]{#struct_0_20244_20619_x1617021377}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo snmp context-name**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x449797609}
+【命令】
 
-[**[snmp context-name ]{lang="EN-US"}***[context-name]{lang="EN-US"}*]{#struct_0_20244_20619_x370750870}
+**[snmp context-name ***context-name*]
 
-[**[undo snmp context-name]{lang="EN-US"}**]{#struct_0_20244_20619_x1968045407}
+**[undo snmp context-name**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_x449863145}
+【缺省情况】
 
-[[没有配置管理]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_21798195}[的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体所使用的上下文名称。]{style="font-family:宋体"}
+没有配置管理EVI IS-IS的SNMP实体所使用的上下文名称。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x205386898}
+【视图】
 
-[[EVI IS-IS]{lang="FR"}]{#struct_0_20244_20619_x449928681}[视图]{style="font-family:宋体"}
+EVI IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_759346835}
+【缺省用户角色】
 
-[[network-admin]{lang="FR"}]{#struct_0_20244_20619_801872231}
+network-admin
 
-[[mdc-admin]{lang="FR"}]{#struct_0_20244_20619_x449994217}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1172291768}
+【参数】
 
-[*[context-name]{lang="FR"}*]{#struct_0_20244_20619_620418277}[：]{style="font-family:宋体"}[管理]{style="font-family:宋体"}[EVI IS-IS]{lang="FR"}[协议的]{style="font-family:宋体"}[SNMP]{lang="FR"}[实体所使用的上下文名称]{style="font-family:宋体"}[，]{style="font-family:宋体"}[为]{style="font-family:宋体"}[1]{lang="FR"}[～]{style="font-family:
-宋体"}[32]{lang="FR"}[个字符的字符串]{style="font-family:宋体"}[，]{style="font-family:宋体"}[区分大小写。]{style="font-family:宋体"}
+*[context-name*]：管理EVI IS-IS协议的SNMP实体所使用的上下文名称，为1～32个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_x449535465}
+【使用指导】
 
-[[与]{style="font-family:宋体"}]{#struct_0_20244_20619_421901152}[IS-IS]{lang="FR"}[相同部分的]{style="font-family:宋体"}[EVI IS-IS]{lang="FR"}[信息使用了]{style="font-family:宋体"}[IS-IS]{lang="FR"}[的标准]{style="font-family:宋体"}[MIB]{lang="FR"}[（]{style="font-family:宋体"}[Management Information Base]{lang="FR"}[，]{style="font-family:宋体"}[管理信息库]{style="font-family:宋体"}[）]{style="font-family:宋体"}[对]{style="font-family:宋体"}[NMS]{lang="FR"}[（]{style="font-family:宋体"}[Network Management System]{lang="FR"}[，]{style="font-family:宋体"}[网络管理系统]{style="font-family:宋体"}[）]{style="font-family:宋体"}[提供]{style="font-family:宋体"}[EVI IS-IS]{lang="FR"}[信息对象的管理]{style="font-family:宋体"}[，]{style="font-family:宋体"}[但标准]{style="font-family:宋体"}[IS-IS MIB]{lang="FR"}[中定义的]{style="font-family:宋体"}[MIB]{lang="FR"}[为单实例管理对象]{style="font-family:宋体"}[，]{style="font-family:宋体"}[无法同时对]{style="font-family:宋体"}[IS-IS]{lang="FR"}[和]{style="font-family:宋体"}[EVI IS-IS]{lang="FR"}[进行管理。因此，参考]{style="font-family:宋体"}[RFC 4750]{lang="EN-US"}[中对]{style="font-family:宋体"}[OSPF]{lang="EN-US"}[多实例的管理方法，需要为管理]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[定义一个上下文名称，以区分来自]{style="font-family:宋体"}[NMS]{lang="EN-US"}[的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[请求是要对]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[还是]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进行管理。]{style="font-family:宋体"}
+与IS-IS相同部分的EVI IS-IS信息使用了IS-IS的标准MIB（Management Information Base，管理信息库）对NMS（Network Management System，网络管理系统）提供EVI IS-IS信息对象的管理，但标准IS-IS MIB中定义的MIB为单实例管理对象，无法同时对IS-IS和EVI IS-IS进行管理。因此，参考RFC 4750中对OSPF多实例的管理方法，需要为管理EVI IS-IS定义一个上下文名称，以区分来自NMS的SNMP请求是要对IS-IS还是EVI IS-IS进行管理。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_20244_20619_1262975877}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[所有使用标准]{style="font-family:宋体"}]{#struct_0_20244_20619_x449601001}[IS-IS MIB]{lang="EN-US"}[的协议，如]{style="font-family:宋体"}[EVI]{lang="EN-US"}[、]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[、]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[等，]{style="font-family:宋体"}[都需]{style="font-family:宋体"}[要配置上下文名称以区分]{lang="EN-US" style="font-family:宋体"}[SNMP]{lang="EN-US"}[请求的管理对象。各协议（包括各协议中的每个进程）配置的上下文名称都不能相同。]{style="font-family:宋体"}
+·所有使用标准IS-IS MIB的协议，如EVI、TRILL、IS-IS等，都需要配置上下文名称以区分SNMP请求的管理对象。各协议（包括各协议中的每个进程）配置的上下文名称都不能相同。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[由于上下文名称只是]{style="font-family:宋体"}]{#struct_0_20244_20619_x776305109}[SNMPv3]{lang="EN-US"}[独有的概念，因此对于]{style="font-family:宋体"}[SNMPv1/v2c]{lang="EN-US"}[，会将团体名映射为上下文名称以对不同协议进行区分。]{style="font-family:宋体"}
+·由于上下文名称只是SNMPv3独有的概念，因此对于SNMPv1/v2c，会将团体名映射为上下文名称以对不同协议进行区分。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x450059752}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x1265884707}[配置管理]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[100]{lang="EN-US"}[的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体所使用的上下文名称为]{style="font-family:宋体"}[eviisis100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置管理EVI IS-IS进程100的SNMP实体所使用的上下文名称为eviisis100。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_x1713484803}
+\<Sysname\> system-view
 
-[\[Sysname\] evi-isis 100]{lang="EN-US"}
+Sysname evi-isis 100
 
-[\[Sysname-evi-isis-100\] snmp context-name eviisis100]{lang="EN-US"}
-:::
-
-::: {#-1345481650 .myid}
-[]{#_Toc404798391}[]{#struct_0_20244_20619_x450125288}[]{#_Toc355684605}[]{#_Toc350517161}
+Sysname-evi-isis-100 snmp context-name eviisis100
 
 **EVI \-- EVI配置命令 \-- snmp-agent trap enable evi-isis**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent trap enable evi-isis]{lang="EN-US"}**]{#struct_0_20244_20619_x1237275913}[命令用来开启]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[的告警功能。]{style="font-family:宋体"}
+**[snmp-agent trap enable evi-isis**]命令用来开启EVI IS-IS的告警功能。
 
-[**[undo snmp-agent trap enable evi-isis]{lang="EN-US"}**]{#struct_0_20244_20619_x893692001}[命令用来关闭]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[的告警功能。]{style="font-family:宋体"}
+**[undo snmp-agent trap enable evi-isis**]命令用来关闭EVI IS-IS的告警功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x450190824}
+【命令】
 
-[**[snmp-agent trap enable evi-isis]{lang="EN-US"}**[ \[ **adjacency-state-change** \| **area-mismatch** \| **buffsize-mismatch** \| **id-length-mismatch** \| **link-disconnect** \| **lsp-parse-error** \| **lsp-size-exceeded** \| **max-seq-exceeded** \| ]{lang="EN-US"}]{#struct_0_20244_20619_x1640041980}**[maxarea-mismatch]{lang="NO-BOK"}**[ \| ]{lang="EN-US"}**[new-ded]{lang="NO-BOK"}**[ \| **own-lsp-purge** \| **protocol-support** \| **rejected-adjacency** \| **skip-sequence-number** \| **topology-change** \| **version-skew** \] \*]{lang="EN-US"}
+**[snmp-agent trap enable evi-isis**[ [ **adjacency-state-change** \| **area-mismatch** \| **buffsize-mismatch** \| **id-length-mismatch** \| **link-disconnect** \| **lsp-parse-error** \| **lsp-size-exceeded** \| **max-seq-exceeded** \| ]]**maxarea-mismatch**[ \| ]**new-ded**[ \| **own-lsp-purge** \| **protocol-support** \| **rejected-adjacency** \| **skip-sequence-number** \| **topology-change** \| **version-skew** ] \*]
 
-[**[undo snmp-agent trap enable evi-isis]{lang="EN-US"}**[ \[ **adjacency-state-change** \| **area-mismatch** \| **buffsize-mismatch** \| **id-length-mismatch** \| **link-disconnect** \| **lsp-parse-error** \| **lsp-size-exceeded** \| **max-seq-exceeded** \| ]{lang="EN-US"}]{#struct_0_20244_20619_1528162740}**[maxarea-mismatch]{lang="NO-BOK"}**[ \| ]{lang="EN-US"}**[new-ded]{lang="NO-BOK"}**[ \| **own-lsp-purge** \| **protocol-support** \| **rejected-adjacency** \| **skip-sequence-number** \| **topology-change** \| **version-skew** \] \*]{lang="EN-US"}
+**[undo snmp-agent trap enable evi-isis**[ [ **adjacency-state-change** \| **area-mismatch** \| **buffsize-mismatch** \| **id-length-mismatch** \| **link-disconnect** \| **lsp-parse-error** \| **lsp-size-exceeded** \| **max-seq-exceeded** \| ]]**maxarea-mismatch**[ \| ]**new-ded**[ \| **own-lsp-purge** \| **protocol-support** \| **rejected-adjacency** \| **skip-sequence-number** \| **topology-change** \| **version-skew** ] \*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_x450256360}
+【缺省情况】
 
-[[EVI IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_x1617086913}[的所有告警功能均处于开启状态]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+EVI IS-IS的所有告警功能均处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x658494152}
+【视图】
 
-[[系统]{style="font-family:宋体"}]{#struct_0_20244_20619_x449797608}[视图]{style="font-family:宋体"}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x370816406}
+【缺省用户角色】
 
-[[network-admin]{lang="FR"}]{#struct_0_20244_20619_x2018984283}
+network-admin
 
-[[mdc-admin]{lang="FR"}]{#struct_0_20244_20619_x449863144}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_21863731}
+【参数】
 
-[**[adjacency-state-change]{lang="FR"}**]{#struct_0_20244_20619_x449928680}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[EVI IS-IS]{lang="FR"}[邻接状态变化的告警信息。]{style="font-family:宋体"}
+**[adjacency-state-change**]：表示EVI IS-IS邻接状态变化的告警信息。
 
-[**[area-mismatch]{lang="FR"}**]{#struct_0_20244_20619_759412371}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[Hello]{lang="FR"}[报文区域地址不匹配的告警信息。]{style="font-family:宋体"}
+**[area-mismatch**]：表示Hello报文区域地址不匹配的告警信息。
 
-[**[buffsize-mismatch]{lang="FR"}**]{#struct_0_20244_20619_x2111446731}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[LSP]{lang="FR"}[长度与产生缓冲区大小不匹配的告警信息。]{style="font-family:宋体"}
+**[buffsize-mismatch**]：表示LSP长度与产生缓冲区大小不匹配的告警信息。
 
-[**[id-length-mismatch]{lang="FR"}**]{#struct_0_20244_20619_x449994216}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[EVI IS-IS]{lang="FR"}[报文中]{style="font-family:宋体"}[System ID]{lang="FR"}[长度不匹配的告警信息。]{style="font-family:宋体"}
+**[id-length-mismatch**]：表示EVI IS-IS报文中System ID长度不匹配的告警信息。
 
-[**[link-disconnect]{lang="FR"}**]{#struct_0_20244_20619_x1172357304}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[ED]{lang="FR"}[的公网侧故障的告警信息。]{style="font-family:宋体"}
+**[link-disconnect**]：表示ED的公网侧故障的告警信息。
 
-[**[lsp-parse-error]{lang="FR"}**]{#struct_0_20244_20619_369044545}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[LSP]{lang="FR"}[解析错误的告警信息。]{style="font-family:宋体"}
+**[lsp-parse-error**]：表示LSP解析错误的告警信息。
 
-[**[lsp-size-exceeded]{lang="FR"}**]{#struct_0_20244_20619_x449535464}[：]{style="font-family:宋体"}[表示超大]{style="font-family:宋体"}[LSP]{lang="FR"}[导致泛洪失败的告警信息。]{style="font-family:宋体"}
+**[lsp-size-exceeded**]：表示超大LSP导致泛洪失败的告警信息。
 
-[**[max-seq-exceeded]{lang="FR"}**]{#struct_0_20244_20619_421835616}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[LSP]{lang="FR"}[序列号超过最大序列号的告警信息。]{style="font-family:宋体"}
+**[max-seq-exceeded**]：表示LSP序列号超过最大序列号的告警信息。
 
-[**[maxarea-mismatch]{lang="NO-BOK"}**]{#struct_0_20244_20619_1214044467}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[Hello]{lang="FR"}[报文最大区域地址不匹配的告警信息。]{style="font-family:宋体"}
+**[maxarea-mismatch**]：表示Hello报文最大区域地址不匹配的告警信息。
 
-[**[new-ded]{lang="NO-BOK"}**]{#struct_0_20244_20619_x449601000}[：]{style="font-family:宋体"}[表示本设备成为新的]{style="font-family:宋体"}[DED]{lang="NO-BOK"}[的告警信息。]{style="font-family:宋体"}
+**[new-ded**]：表示本设备成为新的DED的告警信息。
 
-[**[own-lsp-purge]{lang="FR"}**]{#struct_0_20244_20619_x776239573}[：]{style="font-family:宋体"}[表示尝试清除本地]{style="font-family:宋体"}[LSP]{lang="FR"}[的告警信息。]{style="font-family:宋体"}
+**[own-lsp-purge**]：表示尝试清除本地LSP的告警信息。
 
-[**[protocol-support]{lang="FR"}**]{#struct_0_20244_20619_84469860}[：]{style="font-family:宋体"}[表示报文协议支持类型不匹配的告警信息。]{style="font-family:宋体"}
+**[protocol-support**]：表示报文协议支持类型不匹配的告警信息。
 
-[**[rejected-adjacency]{lang="FR"}**]{#struct_0_20244_20619_x450059755}[：]{style="font-family:宋体"}[表示无法根据]{style="font-family:宋体"}[Hello]{lang="FR"}[报文建立邻接关系的告警信息。]{style="font-family:宋体"}
+**[rejected-adjacency**]：表示无法根据Hello报文建立邻接关系的告警信息。
 
-[**[skip-sequence-number]{lang="FR"}**]{#struct_0_20244_20619_x1266212387}[：]{style="font-family:宋体"}[表示跳过已产生过的]{style="font-family:宋体"}[LSP]{lang="FR"}[序列号的告警信息。]{style="font-family:宋体"}
+**[skip-sequence-number**]：表示跳过已产生过的LSP序列号的告警信息。
 
-[**[topology-change]{lang="FR"}**]{#struct_0_20244_20619_1270781925}[：]{style="font-family:宋体"}[表示站点内]{style="font-family:宋体"}[ED]{lang="FR"}[拓扑变化的告警信息。但同一事件导致发送了]{style="font-family:宋体"}[new-ded]{lang="FR"}[，]{style="font-family:宋体"}[则不发送本告警信息。]{style="font-family:宋体"}
+**[topology-change**]：表示站点内ED拓扑变化的告警信息。但同一事件导致发送了new-ded，则不发送本告警信息。
 
-[**[version-skew]{lang="FR"}**]{#struct_0_20244_20619_x450125291}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[Hello]{lang="FR"}[报文版本号不匹配的告警信息。]{style="font-family:宋体"}
+**[version-skew**]：表示Hello报文版本号不匹配的告警信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1237865736}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果未指定任何参数，将开启]{lang="EN-US" style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_x2058046401}[所有类型的告警功能。]{lang="EN-US" style="font-family:宋体"}
+·如果未指定任何参数，将开启EVI IS-IS所有类型的告警功能。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[开启]{style="font-family:宋体"}]{#struct_0_20244_20619_x450190827}[EVI IS-IS]{lang="EN-US"}[模块的告警功能后，该模块会生成告警信息，用于报告该模块的重要事件。生成的告警信息将发送到设备的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[模块，通过设置]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[中告警信息的发送参数，来决定告警信息输出的相关属性。有关告警信息的详细介绍，请参见"网络管理和监控配置指导"中的"]{style="font-family:宋体"}[SNMP]{lang="EN-US"}["]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+·开启EVI IS-IS模块的告警功能后，该模块会生成告警信息，用于报告该模块的重要事件。生成的告警信息将发送到设备的SNMP模块，通过设置SNMP中告警信息的发送参数，来决定告警信息输出的相关属性。有关告警信息的详细介绍，请参见"网络管理和监控配置指导"中的"SNMP"。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1639845372}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x63372849}[开启]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[邻居状态变化的告警功能。]{style="font-family:宋体"}
+\# 开启EVI IS-IS邻居状态变化的告警功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_x450256363}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent trap enable evi-isis adjacency-state-change]{lang="EN-US"}
-:::
-
-::: {#490996559 .myid}
-[]{#_Toc404798392}[]{#struct_0_20244_20619_x1862479045}[]{#_Toc338172142}[]{#_Toc338432558}[]{#_Toc338172143}[]{#_Toc338432559}[]{#_Toc338172144}[]{#_Toc338432560}[]{#_Toc338172145}[]{#_Toc338432561}[]{#_Toc338172146}[]{#_Toc338432562}[]{#_Toc338172147}[]{#_Toc338432563}[]{#_Toc338172148}[]{#_Toc338432564}[]{#_Toc338172149}[]{#_Toc338432565}[]{#_Toc338172150}[]{#_Toc338432566}[]{#_Toc338172151}[]{#_Toc338432567}[]{#_Toc338172152}[]{#_Toc338432568}[]{#_Toc338172153}[]{#_Toc338432569}[]{#_Toc338172154}[]{#_Toc338432570}[]{#_Toc338172155}[]{#_Toc338432571}[]{#_Toc338172156}[]{#_Toc338432572}[]{#_Toc338172157}[]{#_Toc338432573}[]{#_Toc338172158}[]{#_Toc338432574}[]{#_Hlt19451604}[]{#_Toc338172159}[]{#_Toc338432575}[]{#_Toc338172160}[]{#_Toc338432576}[]{#_Toc338172161}[]{#_Toc338432577}[]{#_Toc338172162}[]{#_Toc338432578}[]{#_Toc338172163}[]{#_Toc338432579}[]{#_Toc338172164}[]{#_Toc338432580}[]{#_Toc338172165}[]{#_Toc338432581}[]{#_Toc338172166}[]{#_Toc338432582}[]{#_Toc338172167}[]{#_Toc338432583}[]{#_Toc338172168}[]{#_Toc338432584}[]{#_Toc338172169}[]{#_Toc338432585}[]{#_Toc338172170}[]{#_Toc338432586}[]{#_Toc338172171}[]{#_Toc338432587}[]{#_Toc338172172}[]{#_Toc338432588}[]{#_Toc338172173}[]{#_Toc338432589}[]{#_Toc338172174}[]{#_Toc338432590}[]{#_Toc338172175}[]{#_Toc338432591}[]{#_Toc338172176}[]{#_Toc338432592}[]{#_Toc338172177}[]{#_Toc338432593}[]{#_Toc338172178}[]{#_Toc338432594}[]{#_Toc338172179}[]{#_Toc338432595}[]{#_Toc338172180}[]{#_Toc338432596}[]{#_Toc338172181}[]{#_Toc338432597}[]{#_Toc338172182}[]{#_Toc338432598}
+Sysname snmp-agent trap enable evi-isis adjacency-state-change
 
 **EVI \-- EVI配置命令 \-- timer lsp-max-age**
 
 ------------------------------------------------------------------------
 
-[**[timer lsp-max-age]{lang="EN-US"}**]{#struct_0_20244_20619_1579830486}[命令用来配置当前边缘设备生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[在]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[里的最大生存时间。]{style="font-family:宋体"}
+**[timer lsp-max-age**]命令用来配置当前边缘设备生成的LSP在LSDB里的最大生存时间。
 
-[**[undo timer lsp-max-age]{lang="EN-US"}**]{#struct_0_20244_20619_834614278}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo timer lsp-max-age**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_1669100624}
+【命令】
 
-[**[timer lsp-max-age ]{lang="EN-US"}***[second]{lang="EN-US"}*[s]{lang="EN-US"}]{#struct_0_20244_20619_x17804370}
+**[timer lsp-max-age ***second*s]
 
-[**[undo timer lsp-max-age]{lang="EN-US"}**]{#struct_0_20244_20619_716928566}
+**[undo timer lsp-max-age**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_939950353}
+【缺省情况】
 
-[[当前边缘设备生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_20244_20619_x1852499872}[在]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[里的最大生存时间为]{style="font-family:宋体"}[1200]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+当前边缘设备生成的LSP在LSDB里的最大生存时间为1200秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x514766503}
+【视图】
 
-[[EVI IS-IS]{lang="EN-US"}]{#struct_0_20244_20619_x2000874220}[视图]{style="font-family:宋体"}
+EVI IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1664164766}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20244_20619_662049421}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20244_20619_312754953}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_519783737}
+【参数】
 
-[*[seconds]{lang="EN-US"}*]{#struct_0_20244_20619_402242265}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[在]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[里的最大生存时间，取值范围是]{style="font-family:宋体"}[3]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[seconds*]：LSP在LSDB里的最大生存时间，取值范围是3～65535，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_212994204}
+【使用指导】
 
-[[每个]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_20244_20619_x1996091576}[都有一个最大生存时间，随着时间的推移最大生存时间将逐渐减小，当]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最大生存时间为]{style="font-family:宋体"}[0]{lang="EN-US"}[时，]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[将启动清除过期]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的过程。用户可根据网络的实际情况调整]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最大生存时间。]{style="font-family:宋体"}
+每个LSP都有一个最大生存时间，随着时间的推移最大生存时间将逐渐减小，当LSP的最大生存时间为0时，EVI IS-IS将启动清除过期LSP的过程。用户可根据网络的实际情况调整LSP的最大生存时间。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1138569646}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_150172488}[配置生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最大生存时间为]{style="font-family:宋体"}[25]{lang="EN-US"}[分钟，即]{style="font-family:宋体"}[1500]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置生成的LSP的最大生存时间为25分钟，即1500秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_x2001070828}
+\<Sysname\> system-view
 
-[\[Sysname\] evi-isis 101]{lang="EN-US"}
+Sysname evi-isis 101
 
-[\[Sysname-evi-isis-101\] timer lsp-max-age 1500]{lang="EN-US"}
+Sysname-evi-isis-101 timer lsp-max-age 1500
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_1756313569}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **evi isis** **brief**]{lang="EN-US"}]{#struct_0_20244_20619_x435042460}
-:::
-
-::: {#-1091829735 .myid}
-[]{#_Toc404798393}[]{#struct_0_20244_20619_x848573725}[]{#_Toc312867812}
+·**display** **evi isis** **brief**
 
 **EVI \-- EVI配置命令 \-- timer lsp-refresh**
 
 ------------------------------------------------------------------------
 
-[**[timer lsp-refresh]{lang="EN-US"}**]{#struct_0_20244_20619_x755196782}[命令用来配置]{style="font-family:宋体"}[LSP]{lang="EN-US"}[刷新周期。]{style="font-family:宋体"}
+**[timer lsp-refresh**]命令用来配置LSP刷新周期。
 
-[**[undo timer lsp-refresh]{lang="EN-US"}**]{#struct_0_20244_20619_501167707}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo timer lsp-refresh**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x37525117}
+【命令】
 
-[**[timer lsp-refresh]{lang="FR"}**]{#struct_0_20244_20619_109350203}[ *second*s]{lang="FR"}
+**[timer lsp-refresh**] *second*s
 
-[**[undo timer lsp-refresh]{lang="FR"}**]{#struct_0_20244_20619_x2001005292}
+**[undo timer lsp-refresh**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_1249937220}
+【缺省情况】
 
-[[LSP]{lang="FR"}]{#struct_0_20244_20619_557710246}[刷新周期为]{style="font-family:宋体"}[900]{lang="FR"}[秒。]{style="font-family:宋体"}
+LSP刷新周期为900秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_1398607127}
+【视图】
 
-[[EVI IS-IS]{lang="FR"}]{#struct_0_20244_20619_839699716}[视图]{style="font-family:宋体"}
+EVI IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_218556414}
+【缺省用户角色】
 
-[[network-admin]{lang="FR"}]{#struct_0_20244_20619_x1196933756}
+network-admin
 
-[[mdc-admin]{lang="FR"}]{#struct_0_20244_20619_x1211392138}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x764662574}
+【参数】
 
-[*[second]{lang="FR"}*]{#struct_0_20244_20619_x1543238978}[s]{lang="FR"}[：]{style="font-family:宋体"}[LSP]{lang="FR"}[刷新周期]{style="font-family:宋体"}[，]{style="font-family:宋体"}[取值范围为]{style="font-family:宋体"}[1]{lang="FR"}[～]{style="font-family:宋体"}[65534]{lang="FR"}[，]{style="font-family:宋体"}[单位为秒。]{style="font-family:宋体"}
+*[second*]s：LSP刷新周期，取值范围为1～65534，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2000677612}
+【使用指导】
 
-[**[timer lsp-refresh]{lang="FR"}**]{#struct_0_20244_20619_x354695788}[命令配置的时间必须小于]{style="font-family:宋体"}**[timer lsp-max-age]{lang="FR"}**[命令配置的时间]{style="font-family:宋体"}[，]{style="font-family:宋体"}[以保证在]{style="font-family:宋体"}[LSP]{lang="FR"}[失效前进行刷新。]{style="font-family:宋体"}
+**[timer lsp-refresh**]命令配置的时间必须小于**timer lsp-max-age**命令配置的时间，以保证在LSP失效前进行刷新。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1978684468}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_x636223503}[配置]{style="font-family:宋体"}[LSP]{lang="EN-US"}[刷新周期为]{style="font-family:宋体"}[1500]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置LSP刷新周期为1500秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_x1902291317}
+\<Sysname\> system-view
 
-[\[Sysname\] evi-isis 101]{lang="EN-US"}
+Sysname evi-isis 101
 
-[\[Sysname-evi-isis-101\] ]{lang="EN-US"}[timer lsp-refresh 1500]{lang="NO-BOK"}
+Sysname-evi-isis-101 timer lsp-refresh 1500
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_1059215565}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display evi isis brief]{lang="EN-US"}**]{#struct_0_20244_20619_x1485775282}
+·**display evi isis brief**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[timer lsp-max-age]{lang="EN-US"}**]{#struct_0_20244_20619_x2017287187}
-:::
-
-::: {#1347731002 .myid}
-[]{#_Toc404798394}[]{#struct_0_20244_20619_x2000612076}
+·**timer lsp-max-age**
 
 **EVI \-- EVI配置命令 \-- virtual-system**
 
 ------------------------------------------------------------------------
 
-[**[virtual-system]{lang="EN-US"}**]{#struct_0_20244_20619_x830664504}[命令用来为系统创建一个]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[虚拟系统。]{style="font-family:宋体"}
+**[virtual-system**]命令用来为系统创建一个EVI IS-IS虚拟系统。
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_20244_20619_208867433}**[virtual-system]{lang="EN-US"}**[命令用来删除一个系统中已经存在的]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[虚拟系统。]{style="font-family:宋体"}
+**[undo **]**virtual-system**命令用来删除一个系统中已经存在的EVI IS-IS虚拟系统。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20244_20619_x911786594}
+【命令】
 
-[**[virtual-system ]{lang="EN-US"}**]{#struct_0_20244_20619_x94782465}*[system-id]{lang="EN-US"}*
+**[virtual-system **]*system-id*
 
-[**[undo ]{lang="FR"}**]{#struct_0_20244_20619_1592737633}**[virtual-system ]{lang="EN-US"}***[system-id]{lang="EN-US"}*
+**[undo **]**virtual-system ***system-id*
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_20244_20619_1134611683}
+【缺省情况】
 
-[[系统中没有创建]{style="font-family:宋体"}]{#struct_0_20244_20619_x1550868410}[EVI IS-IS]{lang="FR"}[虚拟系统。]{style="font-family:宋体"}
+系统中没有创建EVI IS-IS虚拟系统。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20244_20619_x822671253}
+【视图】
 
-[[EVI IS-IS]{lang="FR"}]{#struct_0_20244_20619_x1252886984}[视图]{style="font-family:宋体"}
+EVI IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20244_20619_378070234}
+【缺省用户角色】
 
-[[network-admin]{lang="FR"}]{#struct_0_20244_20619_x2133817888}
+network-admin
 
-[[mdc-admin]{lang="FR"}]{#struct_0_20244_20619_x982029710}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20244_20619_x1694428216}
+【参数】
 
-[*[system-id]{lang="FR"}*]{#struct_0_20244_20619_x1686507145}[：]{style="font-family:宋体"}[虚拟系统的系统]{style="font-family:宋体"}[ID]{lang="FR"}[，]{style="font-family:宋体"}[用来标识虚拟系统]{style="font-family:
-宋体"}[，]{style="font-family:宋体"}[格式为]{style="font-family:
-宋体"}[XXXX.XXXX.XXXX]{lang="FR"}[，]{style="font-family:宋体"}[X]{lang="FR"}[表示十六进制数字。]{style="font-family:宋体"}
+*[system-id*]：虚拟系统的系统ID，用来标识虚拟系统，格式为XXXX.XXXX.XXXX，X表示十六进制数字。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_20244_20619_986785991}
+【使用指导】
 
-[[当本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_20244_20619_x2044575202}[地址数超过系统的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[分片集所能携带的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数时，可以配置]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[虚拟系统来扩展]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的分片数量，以增加系统所能发布的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数量。]{style="font-family:宋体"}
+当本地MAC地址数超过系统的LSP分片集所能携带的MAC地址数时，可以配置EVI IS-IS虚拟系统来扩展LSP的分片数量，以增加系统所能发布的MAC地址数量。
 
-[[创建虚拟系统前，系统最多可以发送约]{style="font-family:宋体"}[55]{lang="EN-US"}]{#struct_0_20244_20619_x1206270340}[×]{style="font-family:宋体"}[2^10^]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息，每创建一个虚拟系统，最多可以多发送]{style="font-family:宋体"}[55]{lang="EN-US"}[×]{style="font-family:宋体"}[2^10^]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。用户可以根据本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表的规模，来决定创建的虚拟系统的个数。]{style="font-family:宋体"}
+创建虚拟系统前，系统最多可以发送约55×2^10^的MAC地址信息，每创建一个虚拟系统，最多可以多发送55×2^10^的MAC地址信息。用户可以根据本地MAC地址表的规模，来决定创建的虚拟系统的个数。
 
-[[创建虚拟系统时，用户要保证所配置的虚拟系统的系统]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_20244_20619_1887292493}[在网络中是唯一的，否则会出现不可预知的错误。]{style="font-family:宋体"}
+创建虚拟系统时，用户要保证所配置的虚拟系统的系统ID在网络中是唯一的，否则会出现不可预知的错误。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20244_20619_x2107011467}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_20244_20619_378004698}[创建一个系统]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[0001.0001.0001]{lang="EN-US"}[的虚拟系统。]{style="font-family:宋体"}
+\# 创建一个系统ID为0001.0001.0001的虚拟系统。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_20244_20619_x963880915}
+\<Sysname\> system-view
 
-[\[Sysname\] evi-isis 101]{lang="EN-US"}
+Sysname evi-isis 101
 
-[\[Sysname-evi-isis-101\] ]{lang="EN-US"}[virtual-system 0001.0001.0001]{lang="NO-BOK"}
-:::
+Sysname-evi-isis-101 virtual-system 0001.0001.0001

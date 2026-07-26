@@ -1,993 +1,919 @@
-::: {#1223385164 .myid}
-[]{#_Toc404784347}[]{#struct_0_14574_x2122_x1729324174}[]{#_Toc344127268}
 
 **PBB \-- PBB配置命令 \-- bvlan**
 
 ------------------------------------------------------------------------
 
-[**[bvlan]{lang="EN-US"}**]{#struct_0_14574_x2122_x12840640}[命令用来为]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例指定]{style="font-family:宋体"}[B-VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[bvlan**]命令用来为PBB VSI实例指定B-VLAN。
 
-[**[undo bvlan]{lang="EN-US"}**]{#struct_0_14574_x2122_x943522910}[命令用来删除]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的]{style="font-family:宋体"}[B-VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo bvlan**]命令用来删除PBB VSI实例的B-VLAN。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x504158214}
+【命令】
 
-[**[bvlan]{lang="EN-US"}***[ vlan-id]{lang="EN-US"}*]{#struct_0_14574_x2122_x528706123}
+**[bvlan*** vlan-id*]
 
-[**[undo bvlan]{lang="EN-US"}**]{#struct_0_14574_x2122_1254168642}
+**[undo bvlan**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_14574_x2122_1320798670}
+【缺省情况】
 
-[[PBB VSI]{lang="EN-US"}]{#struct_0_14574_x2122_x1992632226}[实例未指定]{style="font-family:宋体"}[B-VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+PBB VSI实例未指定B-VLAN。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x66007113}
+【视图】
 
-[[VSI PBB]{lang="EN-US"}]{#struct_0_14574_x2122_x1036086019}[视图]{style="font-family:宋体"}
+VSI PBB视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x218905286}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_14574_x2122_1231958235}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_14574_x2122_x943457374}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_14574_x2122_1037027916}
+【参数】
 
-[*[vlan-id]{lang="EN-US"}*]{#struct_0_14574_x2122_1653585737}[：]{style="font-family:宋体"}[B-VLAN]{lang="EN-US"}[的编号，取值范围]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[vlan-id*]：B-VLAN的编号，取值范围1～4094。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x1922179737}
+【使用指导】
 
-[[PBB VSI]{lang="EN-US"}]{#struct_0_14574_x2122_x2103389540}[实例必须指定]{style="font-family:宋体"}[B-VLAN]{lang="EN-US"}[才能够生效，只有]{style="font-family:宋体"}[I-SID]{lang="EN-US"}[和]{style="font-family:宋体"}[B-VLAN]{lang="EN-US"}[都相同的]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例才能互通。一个]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例只能够指定一个]{style="font-family:宋体"}[B-VLAN]{lang="EN-US"}[，多个不同的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[可以指定相同的]{style="font-family:宋体"}[B-VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+PBB VSI实例必须指定B-VLAN才能够生效，只有I-SID和B-VLAN都相同的PBB VSI实例才能互通。一个PBB VSI实例只能够指定一个B-VLAN，多个不同的VSI可以指定相同的B-VLAN。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x422910294}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_14574_x2122_x464911930}[使能]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[功能，创建]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例]{style="font-family:宋体"}[web]{lang="EN-US"}[，其]{style="font-family:宋体"}[I-SID]{lang="EN-US"}[为]{style="font-family:宋体"}[100]{lang="EN-US"}[，指定该]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的]{style="font-family:宋体"}[B-VLAN]{lang="EN-US"}[为]{style="font-family:宋体"}[100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 使能L2VPN功能，创建PBB VSI实例web，其I-SID为100，指定该PBB VSI实例的B-VLAN为100。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_14574_x2122_x943391838}
+\<Sysname\> system-view
 
-[\[Sysname\] l2vpn enable]{lang="EN-US"}
+Sysname l2vpn enable
 
-[\[Sysname\] vsi web]{lang="EN-US"}
+Sysname vsi web
 
-[\[Sysname-vsi-web\] pbb i-sid 100]{lang="EN-US"}
+Sysname-vsi-web pbb i-sid 100
 
-[\[Sysname-vsi-web-100\] bvlan 100]{lang="EN-US"}
+Sysname-vsi-web-100 bvlan 100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_14574_x2122_1445692811}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vsi]{lang="EN-US"}**]{#struct_0_14574_x2122_1507547741}
-:::
-
-::: {#-1607827180 .myid}
-[]{#_Toc404784348}[]{#struct_0_14574_x2122_961380627}
+·**vsi**
 
 **PBB \-- PBB配置命令 \-- display l2vpn minm connection**
 
 ------------------------------------------------------------------------
 
-[**[display l2vpn minm connection]{lang="EN-US"}**]{#struct_0_14574_x2122_x2135552783}[命令用来显示]{style="font-family:
-宋体"}[MAC-in-MAC]{lang="EN-US"}[连接信息。]{style="font-family:
-宋体"}
+**[display l2vpn minm connection**]命令用来显示MAC-in-MAC连接信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_14574_x2122_1234262622}
+【命令】
 
-[**[display l2vpn minm connection ]{lang="EN-US"}**[\[ **vsi** *vsi-name* \]]{lang="EN-US"}]{#struct_0_14574_x2122_x1885274479}
+**[display l2vpn minm connection ** **vsi** *vsi-name* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_14574_x2122_212702308}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_14574_x2122_147686696}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x943326302}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_14574_x2122_x1682614965}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_14574_x2122_84515572}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_14574_x2122_x972888613}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_14574_x2122_x256352726}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x1128724236}
+【参数】
 
-[**[vsi]{lang="EN-US"}***[ vsi-name]{lang="EN-US"}*]{#struct_0_14574_x2122_x408899960}[：显示指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC-in-MAC]{lang="EN-US"}[连接信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC-in-MAC]{lang="EN-US"}[连接信息。]{style="font-family:宋体"}
+**[vsi*** vsi-name*]：显示指定VSI的MAC-in-MAC连接信息。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，则显示所有VSI的MAC-in-MAC连接信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x1085666473}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_14574_x2122_x458272611}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC-in-MAC]{lang="EN-US"}[连接信息。]{style="font-family:宋体"}
+\# 显示所有VSI的MAC-in-MAC连接信息。
 
-[[\<Sysname\> display l2vpn minm connection]{lang="EN-US"}]{#struct_0_14574_x2122_x943260766}
+\<Sysname\> display l2vpn minm connection
 
-[Total number of MinM connections: 2]{lang="EN-US"}
+Total number of MinM connections: 2
 
-[Types: MC - multicast, UC - unicast]{lang="EN-US"}
+Types: MC - multicast, UC - unicast
 
-[ ]{lang="EN-US"}
+VSI name: 1
 
-[VSI name: 1]{lang="EN-US"}
+Link ID  I-SID     BMAC            BVLAN  Owner   Type  Interface
 
-[Link ID  I-SID     BMAC            BVLAN  Owner   Type  Interface]{lang="EN-US"}
+68       1         00e0-3948-0100  4001   PBB     UC    GE1/0/1
 
-[68       1         00e0-3948-0100  4001   PBB     UC    GE1/0/1]{lang="EN-US"}
+-        1         011e-8300-0001  4001   PBB     MC    GE1/0/1
 
-[-        1         011e-8300-0001  4001   PBB     MC    GE1/0/1]{lang="EN-US"}
+VSI name: 2
 
-[ ]{lang="EN-US"}
+Link ID  I-SID     BMAC            BVLAN  Owner   Type  Interface
 
-[VSI name: 2]{lang="EN-US"}
+69       2         00e0-3948-0300  4002   PBB     UC    GE1/0/2
 
-[Link ID  I-SID     BMAC            BVLAN  Owner   Type  Interface]{lang="EN-US"}
+-        2         011e-8300-0002  4002   PBB     MC    GE1/0/2
 
-[69       2         00e0-3948-0300  4002   PBB     UC    GE1/0/2]{lang="EN-US"}
+表1-1 display l2vpn minm connection命令显示信息描述表
 
-[-        2         011e-8300-0002  4002   PBB     MC    GE1/0/2]{lang="EN-US"}
+字段
 
-[[表1-1 ]{lang="EN-US"}[display l2vpn minm connection]{lang="EN-US"}]{#struct_0_14574_x2122_x1732898650}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x2129740822}[[字段]{style="font-family:黑体"}]{#struct_0_14574_x2122_x1251561067}
-:::
+VSI name
 
-[[描述]{style="font-family:黑体"}]{#struct_0_14574_x2122_1858718308}
+VSI名称
 
-[[VSI name]{lang="EN-US"}]{#struct_0_14574_x2122_115198344}
+Link ID
 
-[[VSI]{lang="EN-US"}]{#struct_0_14574_x2122_386254365}[名称]{style="font-family:宋体"}
+MAC-in-MAC连接的链路标识符
 
-[[Link ID]{lang="EN-US"}]{#struct_0_14574_x2122_x943195230}
+I-SID
 
-[[MAC-in-MAC]{lang="EN-US"}]{#struct_0_14574_x2122_267629305}[连接的链路标识符]{style="font-family:宋体"}
+骨干网服务实例编号
 
-[[I-SID]{lang="EN-US"}]{#struct_0_14574_x2122_x1297703719}
+BMAC
 
-[[骨干网服务实例编号]{style="font-family:宋体"}]{#struct_0_14574_x2122_x225387096}
+骨干网MAC
 
-[[BMAC]{lang="EN-US"}]{#struct_0_14574_x2122_1898220645}
+BVLAN
 
-[[骨干网]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_14574_x2122_x236496653}
+骨干网VLAN
 
-[[BVLAN]{lang="EN-US"}]{#struct_0_14574_x2122_1101592928}
+Owner
 
-[[骨干网]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_14574_x2122_x943129694}
+表项生成者，取值为PBB或SPB
 
-[[Owner]{lang="EN-US"}]{#struct_0_14574_x2122_x596104649}
+Type
 
-[[表项生成者，取值为]{style="font-family:宋体"}[PBB]{lang="EN-US"}]{#struct_0_14574_x2122_x1495926775}[或]{style="font-family:宋体"}[SPB]{lang="EN-US"}
+MAC-in-MAC连接的属性标记，取值包括：
 
-[[Type]{lang="EN-US"}]{#struct_0_14574_x2122_1332372710}
+·MC：组播表项
 
-[[MAC-in-MAC]{lang="EN-US"}]{#struct_0_14574_x2122_x786432395}[连接的属性标记，取值包括：]{style="font-family:宋体"}
+·UC：单播表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MC]{lang="EN-US"}]{#struct_0_14574_x2122_x573154372}[：组播表项]{lang="EN-US" style="font-family:宋体"}
+Interface
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UC]{lang="EN-US"}]{#struct_0_14574_x2122_x943064158}[：单播表项]{lang="EN-US" style="font-family:宋体"}
-
-[[Interface]{lang="EN-US"}]{#struct_0_14574_x2122_x145736199}
-
-[[出接口]{style="font-family:宋体"}]{#struct_0_14574_x2122_x1535027752}
-
-[ ]{lang="EN-US"}
-
-::: {#485530473 .myid}
-[]{#_Toc404784349}[]{#struct_0_14574_x2122_x92693058}[]{#_Toc242067216}[]{#_Toc185927308}[]{#_Toc123026768}
+出接口
 
 **PBB \-- PBB配置命令 \-- display l2vpn minm forwarding**
 
 ------------------------------------------------------------------------
 
-[**[display l2vpn minm forwarding]{lang="EN-US"}**]{#struct_0_14574_x2122_x925105723}[命令用来显示]{style="font-family:
-宋体"}[MAC-in-MAC]{lang="EN-US"}[转发表项信息。]{style="font-family:
-宋体"}
+**[display l2vpn minm forwarding**]命令用来显示MAC-in-MAC转发表项信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x10968318}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_14574_x2122_637173009}
+集中式设备：
 
-[**[display l2vpn minm forwarding ]{lang="EN-US"}**[\[ **vsi** *vsi-name* \]]{lang="EN-US"}]{#struct_0_14574_x2122_333387378}
+**[display l2vpn minm forwarding ** **vsi** *vsi-name* ]
 
-[[分布式设备―独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_14574_x2122_x944047198}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备―独立运行模式/集中式IRF设备：
 
-[**[display ]{lang="EN-US"}[l2vpn minm forwarding ]{lang="EN-US"}**[\[ **vsi** *vsi-name* \] \[ ]{lang="EN-US"}]{#struct_0_14574_x2122_1283180890}**[slot]{lang="EN-US"}**[ *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}
+**[display l2vpn minm forwarding ** **vsi** *vsi-name* ] **slot** *slot-number* [ **cpu** *cpu-number*  ]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_14574_x2122_1371174732}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display ]{lang="EN-US"}[l2vpn minm forwarding ]{lang="EN-US"}**[\[ **vsi** *vsi-name* \] \[ **chassis** *chassis-number* ]{lang="EN-US"}]{#struct_0_14574_x2122_x54261933}**[slot]{lang="EN-US"}**[ *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}
+**[display l2vpn minm forwarding ** **vsi** *vsi-name* ]  **chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number*  ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_14574_x2122_168241921}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_14574_x2122_307381937}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x548793949}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_14574_x2122_913022169}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_14574_x2122_686669393}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_14574_x2122_x943981662}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_14574_x2122_x939227576}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_14574_x2122_251429913}
+【参数】
 
-[**[vsi]{lang="EN-US"}***[ vsi-name]{lang="EN-US"}*]{#struct_0_14574_x2122_742205599}[：显示指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC-in-MAC]{lang="EN-US"}[转发表项信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC-in-MAC]{lang="EN-US"}[转发表项信息。]{style="font-family:宋体"}
+**[vsi*** vsi-name*]：显示指定VSI的MAC-in-MAC转发表项信息。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，则显示所有VSI的MAC-in-MAC转发表项信息。
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_14574_x2122_374783120}[：显示指定单板上的]{style="font-family:宋体"}[MAC-in-MAC]{lang="EN-US"}[转发表项信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果不指定本参数，则显示主控板上的]{style="font-family:宋体"}[MAC-in-MAC]{lang="EN-US"}[转发表项信息。（分布式设备―独立运行模式）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定单板上的MAC-in-MAC转发表项信息。*slot-number*表示单板所在的槽位号。如果不指定本参数，则显示主控板上的MAC-in-MAC转发表项信息。（分布式设备―独立运行模式）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_14574_x2122_x2118799738}[：显示指定成员设备上的]{style="font-family:宋体"}[MAC-in-MAC]{lang="EN-US"}[转发表项信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。如果不指定本参数，则显示]{style="font-family:宋体"}[Master]{lang="EN-US"}[设备上的]{style="font-family:宋体"}[MAC-in-MAC]{lang="EN-US"}[转发表项信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备上的MAC-in-MAC转发表项信息。*slot-number*表示设备在IRF中的成员编号。如果不指定本参数，则显示Master设备上的MAC-in-MAC转发表项信息。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_14574_x2122_x1029384987}[：显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[上的]{style="font-family:宋体"}[MAC-in-MAC]{lang="EN-US"}[转发表项信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。如果不指定本参数，则显示]{style="font-family:宋体"}[Master]{lang="EN-US"}[设备上的]{style="font-family:宋体"}[MAC-in-MAC]{lang="EN-US"}[转发表项信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备/PEX上的MAC-in-MAC转发表项信息。*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果不指定本参数，则显示Master设备上的MAC-in-MAC转发表项信息。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}***[ slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_14574_x2122_x1721081484}[：显示指定成员设备上指定单板的]{style="font-family:宋体"}[MAC-in-MAC]{lang="EN-US"}[转发表项信息。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果不指定本参数，则显示]{style="font-family:宋体"}[Master]{lang="EN-US"}[设备上主控板的]{style="font-family:宋体"}[MAC-in-MAC]{lang="EN-US"}[转发表项信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number*** slot ***slot-number*]：显示指定成员设备上指定单板的MAC-in-MAC转发表项信息。*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果不指定本参数，则显示Master设备上主控板的MAC-in-MAC转发表项信息。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}***[ slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_14574_x2122_1343268008}[：显示指定单板的]{style="font-family:宋体"}[MAC-in-MAC]{lang="EN-US"}[转发表项信息。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。如果不指定本参数，则显示]{style="font-family:宋体"}[Master]{lang="EN-US"}[设备上主控板的]{style="font-family:宋体"}[MAC-in-MAC]{lang="EN-US"}[转发表项信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis ***chassis-number*** slot ***slot-number*]：显示指定单板的MAC-in-MAC转发表项信息。*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。如果不指定本参数，则显示Master设备上主控板的MAC-in-MAC转发表项信息。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_14574_x2122_605757185}[：显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC-in-MAC]{lang="EN-US"}[转发表项信息。]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的编号。只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[cpu** *cpu-number*]：显示指定CPU的MAC-in-MAC转发表项信息。*cpu-number*表示CPU的编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_14574_x2122_730775685}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_14574_x2122_x910101806}[显示所有的]{style="font-family:宋体"}[MAC-in-MAC]{lang="EN-US"}[转发表项信息。]{style="font-family:宋体"}
+\# 显示所有的MAC-in-MAC转发表项信息。
 
-[[\<Sysname\> display l2vpn minm forwarding]{lang="EN-US"}]{#struct_0_14574_x2122_x943522909}
+\<Sysname\> display l2vpn minm forwarding
 
-[Total number of MinM connections: 4]{lang="EN-US"}
+Total number of MinM connections: 4
 
-[Types: MC - multicast, UC -- unicast]{lang="EN-US"}
+Types: MC - multicast, UC -- unicast
 
-[Status Flag: \* - inactive]{lang="EN-US"}
+Status Flag: \* - inactive
 
-[ ]{lang="EN-US"}
+VSI name: 1
 
-[VSI name: 1]{lang="EN-US"}
+Link ID I-SID     BMAC            BVLAN Owner Type Interface
 
-[Link ID I-SID     BMAC            BVLAN Owner Type Interface]{lang="EN-US"}
+68      1         00e0-3948-0100  4001  PBB   UC   GE1/0/1
 
-[68      1         00e0-3948-0100  4001  PBB   UC   GE1/0/1]{lang="EN-US"}
+-       1         011e-8300-0001  4001  PBB   MC   GE1/0/1
 
-[-       1         011e-8300-0001  4001  PBB   MC   GE1/0/1]{lang="EN-US"}
+VSI name: 2
 
-[ ]{lang="EN-US"}
+Link ID I-SID     BMAC            BVLAN Owner Type Interface
 
-[VSI name: 2]{lang="EN-US"}
+69      2         00e0-3948-0300  4002  PBB   UC   GE1/0/2
 
-[Link ID I-SID     BMAC            BVLAN Owner Type Interface]{lang="EN-US"}
+-       2         011e-8300-0002  4002  PBB   MC   GE1/0/2
 
-[69      2         00e0-3948-0300  4002  PBB   UC   GE1/0/2]{lang="EN-US"}
+                                                   GE1/0/3
 
-[-       2         011e-8300-0002  4002  PBB   MC   GE1/0/2]{lang="EN-US"}
+                                                   GE1/0/4
 
-[                                                   GE1/0/3]{lang="EN-US"}
+表1-2 display l2vpn minm forwarding命令显示信息描述表
 
-[                                                   GE1/0/4]{lang="EN-US"}
+字段
 
-[[表1-2 ]{lang="EN-US"}[display l2vpn minm forwarding]{lang="EN-US"}]{#struct_0_14574_x2122_x503568391}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x2099519371}[[字段]{style="font-family:黑体"}]{#struct_0_14574_x2122_1954321953}
-:::
+VSI name
 
-[[描述]{style="font-family:黑体"}]{#struct_0_14574_x2122_x899960682}
+VSI名称
 
-[[VSI name]{lang="EN-US"}]{#struct_0_14574_x2122_x943457373}
+Link ID
 
-[[VSI]{lang="EN-US"}]{#struct_0_14574_x2122_1037355596}[名称]{style="font-family:宋体"}
+MAC-in-MAC连接的链路标识符
 
-[[Link ID]{lang="EN-US"}]{#struct_0_14574_x2122_x1809592784}
+I-SID
 
-[[MAC-in-MAC]{lang="EN-US"}]{#struct_0_14574_x2122_x1650266990}[连接的链路标识符]{style="font-family:宋体"}
+骨干网服务实例编号
 
-[[I-SID]{lang="EN-US"}]{#struct_0_14574_x2122_x903075739}
+BMAC
 
-[[骨干网服务实例编号]{style="font-family:宋体"}]{#struct_0_14574_x2122_x405588090}
+骨干网MAC
 
-[[BMAC]{lang="EN-US"}]{#struct_0_14574_x2122_821270052}
+BVLAN
 
-[[骨干网]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_14574_x2122_x943391837}
+骨干网VLAN
 
-[[BVLAN]{lang="EN-US"}]{#struct_0_14574_x2122_1446544779}
+Owner
 
-[[骨干网]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_14574_x2122_575893698}
+表项生成者，取值为PBB或SPB
 
-[[Owner]{lang="EN-US"}]{#struct_0_14574_x2122_1327257435}
+Type
 
-[[表项生成者，取值为]{style="font-family:宋体"}[PBB]{lang="EN-US"}]{#struct_0_14574_x2122_1210957700}[或]{style="font-family:宋体"}[SPB]{lang="EN-US"}
+属性标记，取值包括：
 
-[[Type]{lang="EN-US"}]{#struct_0_14574_x2122_230652057}
+·MC：组播表项
 
-[[属性标记，取值包括：]{style="font-family:宋体"}]{#struct_0_14574_x2122_x943326301}
+·UC：单播表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MC]{lang="EN-US"}]{#struct_0_14574_x2122_x1682680501}[：组播表项]{lang="EN-US" style="font-family:宋体"}
+Interface
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UC]{lang="EN-US"}]{#struct_0_14574_x2122_x868018789}[：单播表项]{lang="EN-US" style="font-family:宋体"}
+出接口
 
-[[Interface]{lang="EN-US"}]{#struct_0_14574_x2122_1346796416}
-
-[[出接口]{style="font-family:宋体"}]{#struct_0_14574_x2122_890013652}
-
-[[如果接口后面带有"]{style="font-family:宋体"}[\*]{lang="EN-US"}]{#struct_0_14574_x2122_x943260765}["，则表示该接口下刷驱动失败]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1007637280 .myid}
-[]{#_Toc404784350}[]{#struct_0_14574_x2122_x1732964186}
+如果接口后面带有"\*"，则表示该接口下刷驱动失败
 
 **PBB \-- PBB配置命令 \-- display l2vpn vsi**
 
 ------------------------------------------------------------------------
 
-[**[display l2vpn vsi]{lang="EN-US"}**]{#struct_0_14574_x2122_1900848613}[命令用来显示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[display l2vpn vsi**]命令用来显示VSI的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x1057175623}
+【命令】
 
-[**[display]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_14574_x2122_x898644325}**[l2vpn]{lang="EN-US"}**[ ]{lang="EN-US"}**[vsi]{lang="EN-US"}**[ \[]{lang="EN-US"}*[ ]{lang="EN-US"}***[name]{lang="EN-US"}***[ vsi-name]{lang="EN-US"}*[ ]{lang="EN-US"}[\] \[ ]{lang="EN-US"}**[verbose]{lang="EN-US"}**[ \]]{lang="EN-US"}
+**[display**]**l2vpn****vsi** \****[name*** vsi-name* \**verbose** ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_14574_x2122_894695633}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_14574_x2122_x796155163}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_14574_x2122_1105363824}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_14574_x2122_597012340}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_14574_x2122_x943195229}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_14574_x2122_267039480}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_14574_x2122_261290574}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x2147003097}
+【参数】
 
-[**[name]{lang="EN-US"}**]{#struct_0_14574_x2122_x365469622}*[ vsi-name]{lang="EN-US"}*[：显示指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[name**]* vsi-name*：显示指定VSI的信息。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，则显示所有VSI的信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_14574_x2122_x1196494583}[：显示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的详细信息。如果不指定本参数，则显示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的简要信息。]{style="font-family:宋体"}
+**[verbose**]：显示VSI的详细信息。如果不指定本参数，则显示VSI的简要信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x372147541}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_14574_x2122_x2125969153}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的详细信息。]{style="font-family:宋体"}
+\# 显示所有VSI的详细信息。
 
-[[\<Sysname\> display l2vpn vsi verbose]{lang="EN-US"}]{#struct_0_14574_x2122_x943064157}
+\<Sysname\> display l2vpn vsi verbose
 
-[VSI Name: 1]{lang="EN-US"}
+VSI Name: 1
 
-[  VSI Index               : 0]{lang="EN-US"}
+  VSI Index               : 0
 
-[  VSI State               : Up]{lang="EN-US"}
+  VSI State               : Up
 
-[  MTU                     : 1500]{lang="EN-US"}
+  MTU                     : 1500
 
-[  Bandwidth               : 102400 kbps]{lang="EN-US"}
+  Bandwidth               : 102400 kbps
 
-[  Broadcast Restrain      : 5%]{lang="EN-US"}
+  Broadcast Restrain      : 5%
 
-[  Multicast Restrain      : 100%]{lang="EN-US"}
+  Multicast Restrain      : 100%
 
-[  Unknown Unicast Restrain: 100%]{lang="EN-US"}
+  Unknown Unicast Restrain: 100%
 
-[  MAC Learning            : Enabled]{lang="EN-US"}
+  MAC Learning            : Enabled
 
-[  MAC Table Limit         : -]{lang="EN-US"}
+  MAC Table Limit         : -
 
-[  Drop Unknown            : Disabled]{lang="EN-US"}
+  Drop Unknown            : Disabled
 
-[  PBB I-SID               : 1]{lang="EN-US"}
+  PBB I-SID               : 1
 
-[  PBB Connections:]{lang="EN-US"}
+  PBB Connections:
 
-[    BMAC            BVLAN            Link ID    Type]{lang="EN-US"}
+    BMAC            BVLAN            Link ID    Type
 
-[    00e0-3948-0100  4001             68         Unicast]{lang="EN-US"}
+    00e0-3948-0100  4001             68         Unicast
 
-[    011e-8300-0001  4001             -          Multicast]{lang="EN-US"}
+    011e-8300-0001  4001             -          Multicast
 
-[  ACs:]{lang="EN-US"}
+  ACs:
 
-[    AC                               Link ID    State]{lang="EN-US"}
+    AC                               Link ID    State
 
-[    BAGG1 srv1                       0          Down]{lang="EN-US"}
+    BAGG1 srv1                       0          Down
 
-[ ]{lang="EN-US"}
+VSI Name: 2
 
-[VSI Name: 2]{lang="EN-US"}
+  VSI Index               : 1
 
-[  VSI Index               : 1]{lang="EN-US"}
+  VSI State               : Up
 
-[  VSI State               : Up]{lang="EN-US"}
+  MTU                     : 1500
 
-[  MTU                     : 1500]{lang="EN-US"}
+  Bandwidth               : 102400 kbps
 
-[  Bandwidth               : 102400 kbps]{lang="EN-US"}
+  Broadcast Restrain      : 5%
 
-[  Broadcast Restrain      : 5%]{lang="EN-US"}
+  Multicast Restrain      : 100%
 
-[  Multicast Restrain      : 100%]{lang="EN-US"}
+  Unknown Unicast Restrain: 100%
 
-[  Unknown Unicast Restrain: 100%]{lang="EN-US"}
+  MAC Learning            : Enabled
 
-[  MAC Learning            : Enabled]{lang="EN-US"}
+  MAC Table Limit         : -
 
-[  MAC Table Limit         : -]{lang="EN-US"}
+  Drop Unknown            : Disabled
 
-[  Drop Unknown            : Disabled]{lang="EN-US"}
+  PBB I-SID               : 2
 
-[  PBB I-SID               : 2]{lang="EN-US"}
+  PBB Connections:
 
-[  PBB Connections:]{lang="EN-US"}
+    BMAC            BVLAN            Link ID    Type
 
-[    BMAC            BVLAN            Link ID    Type]{lang="EN-US"}
+    00e0-3948-0300  4002             69         Unicast
 
-[    00e0-3948-0300  4002             69         Unicast]{lang="EN-US"}
+    011e-8300-0002  4002             -          Multicast
 
-[    011e-8300-0002  4002             -          Multicast]{lang="EN-US"}
+表1-3 display l2vpn vsi命令显示信息描述表
 
-[[表1-3 ]{lang="EN-US"}[display l2vpn vsi]{lang="EN-US"}]{#struct_0_14574_x2122_x145801735}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x2098792653}[[字段]{style="font-family:黑体"}]{#struct_0_14574_x2122_1537246830}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_14574_x2122_1943481381}
+VSI Name
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_14574_x2122_252622837}
+VSI名称
 
-[[VSI]{lang="EN-US"}]{#struct_0_14574_x2122_x1736258575}[名称]{style="font-family:宋体"}
+VSI Index
 
-[[VSI Index]{lang="EN-US"}]{#struct_0_14574_x2122_611175231}
+VSI索引
 
-[[VSI]{lang="EN-US"}]{#struct_0_14574_x2122_x944047197}[索引]{style="font-family:宋体"}
+VSI Description
 
-[[VSI Description]{lang="EN-US"}]{#struct_0_14574_x2122_1283377498}
+VSI的描述信息，如果不配置，则此行不显示
 
-[[VSI]{lang="EN-US"}]{#struct_0_14574_x2122_x1022634657}[的描述信息，如果不配置，则此行不显示]{style="font-family:宋体"}
+VSI State
 
-[[VSI State]{lang="EN-US"}]{#struct_0_14574_x2122_659507221}
+VSI的状态，取值包括
 
-[[VSI]{lang="EN-US"}]{#struct_0_14574_x2122_x930721296}[的状态，取值包括]{style="font-family:宋体"}
+·Up：up状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Up]{lang="EN-US"}]{#struct_0_14574_x2122_1949789732}[：]{lang="EN-US" style="font-family:宋体"}[up]{lang="EN-US"}[状态]{lang="EN-US" style="font-family:宋体"}
+·Down：down状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Down]{lang="EN-US"}]{#struct_0_14574_x2122_x943981661}[：]{lang="EN-US" style="font-family:宋体"}[down]{lang="EN-US"}[状态]{lang="EN-US" style="font-family:宋体"}
+·Administratively down：通过{.TableTextChar}**shutdown**命令手工关闭{.TableTextChar}VSI
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Administratively down]{lang="EN-US"}]{#struct_0_14574_x2122_x939030968}[[：通过]{lang="EN-US" style="font-family:宋体"}]{.TableTextChar}**[shutdown]{lang="EN-US"}**[[命令手工关闭]{lang="EN-US" style="font-family:宋体"}]{.TableTextChar}[VSI]{lang="EN-US"}
+MTU
 
-[[MTU]{lang="EN-US"}]{#struct_0_14574_x2122_2144854445}
+VSI上配置的最大传输单元
 
-[[VSI]{lang="EN-US"}]{#struct_0_14574_x2122_1934386149}[上配置的最大传输单元]{style="font-family:宋体"}
+Bandwidth
 
-[[Bandwidth]{lang="EN-US"}]{#struct_0_14574_x2122_x1804850172}
+VSI的带宽限制值，单位为kbps
 
-[[VSI]{lang="EN-US"}]{#struct_0_14574_x2122_418226635}[的带宽限制值，单位为]{style="font-family:宋体"}[kbps]{lang="EN-US"}
+Broadcast Restrain
 
-[[Broadcast Restrain]{lang="EN-US"}]{#struct_0_14574_x2122_x943522912}
+VSI的广播抑制百分比。当VSI的广播流量速率超出特定值（带宽限制值×广播抑制百分比）时，该VSI会丢弃广播报文
 
-[[VSI]{lang="EN-US"}]{#struct_0_14574_x2122_x504027142}[的广播抑制百分比。当]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的广播流量速率超出特定值（带宽限制值×广播抑制百分比）时，该]{style="font-family:宋体"}[VSI]{lang="EN-US"}[会丢弃广播报文]{style="font-family:宋体"}
+Multicast Restrain
 
-[[Multicast Restrain]{lang="EN-US"}]{#struct_0_14574_x2122_1434668618}
+VSI的组播抑制百分比。当VSI的组播流量速率超出特定值（带宽限制值×组播抑制百分比）时，该VSI会丢弃组播报文
 
-[[VSI]{lang="EN-US"}]{#struct_0_14574_x2122_1468643760}[的组播抑制百分比。当]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的组播流量速率超出特定值（带宽限制值×组播抑制百分比）时，该]{style="font-family:宋体"}[VSI]{lang="EN-US"}[会丢弃组播报文]{style="font-family:宋体"}
+Unknown Unicast Restrain
 
-[[Unknown Unicast Restrain]{lang="EN-US"}]{#struct_0_14574_x2122_520532309}
+VSI的未知单播抑制百分比。当VSI的未知单播流量速率超出特定值（带宽限制值×未知单播抑制百分比）时，该VSI会丢弃未知单播流量报文
 
-[[VSI]{lang="EN-US"}]{#struct_0_14574_x2122_x943457376}[的未知单播抑制百分比。当]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的未知单播流量速率超出特定值（带宽限制值×未知单播抑制百分比）时，该]{style="font-family:宋体"}[VSI]{lang="EN-US"}[会丢弃未知单播流量报文]{style="font-family:宋体"}
+MAC Learning
 
-[[MAC Learning]{lang="EN-US"}]{#struct_0_14574_x2122_1037158988}
+是否使能了MAC地址学习功能，取值包括：
 
-[[是否使能了]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_14574_x2122_1599257036}[地址学习功能，取值包括：]{style="font-family:宋体"}
+·Enabled：使能了MAC地址学习功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_14574_x2122_x855454328}[：使能了]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址学习功能]{lang="EN-US" style="font-family:宋体"}
+·Disabled：未使能{.TableTextChar}MAC地址学习功能{.TableTextChar}
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_14574_x2122_2020155423}[[：未使能]{lang="EN-US" style="font-family:宋体"}]{.TableTextChar}[MAC]{lang="EN-US"}[[地址学习功能]{lang="EN-US" style="font-family:宋体"}]{.TableTextChar}
+MAC Table Limit
 
-[[MAC Table Limit]{lang="EN-US"}]{#struct_0_14574_x2122_x943391840}
+VSI内MAC地址表项的最大数目
 
-[[VSI]{lang="EN-US"}]{#struct_0_14574_x2122_1446217100}[内]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项的最大数目]{style="font-family:宋体"}
+取值为Unlimited{.ItemListinTableCharChar}，表示不限制VSI{.ItemListinTableCharChar}内MAC{.ItemListinTableCharChar}地址表项的最大数目
 
-[[取值为]{style="font-family:宋体"}]{#struct_0_14574_x2122_984874257}[[Unlimited]{lang="EN-US"}]{.ItemListinTableCharChar}[，表示不限制]{style="font-family:宋体"}[[VSI]{lang="EN-US"}]{.ItemListinTableCharChar}[内]{style="font-family:宋体"}[[MAC]{lang="EN-US"}]{.ItemListinTableCharChar}[地址表项的最大数目]{style="font-family:宋体"}
+Drop Unknown
 
-[[Drop Unknown]{lang="EN-US"}]{#struct_0_14574_x2122_1192458318}
+当VSI内学习到的MAC地址数达到最大值后，是否禁止转发源MAC地址不在MAC地址表里的报文：
 
-[[当]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_14574_x2122_1426043728}[内学习到的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数达到最大值后，是否禁止转发源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址不在]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表里的报文：]{style="font-family:宋体"}
+·Enabled：表示禁止转发
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_14574_x2122_x943326304}[：表示禁止转发]{lang="EN-US" style="font-family:宋体"}
+·Disabled：表示允许转发{.TableTextChar}
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_14574_x2122_x1683008181}[[：表示允许转发]{lang="EN-US" style="font-family:宋体"}]{.TableTextChar}
+Hub-Spoke
 
-[[Hub-Spoke]{lang="EN-US"}]{#struct_0_14574_x2122_1230329274}
+是否使能了Hub-spoke能力。取值为Enabled，表示使能了Hub-spoke能力；如果未使能Hub-spoke能力，则不显示该字段
 
-[[是否使能了]{style="font-family:宋体"}[Hub-spoke]{lang="EN-US"}]{#struct_0_14574_x2122_1878017402}[能力。取值为]{style="font-family:宋体"}[Enabled]{lang="EN-US"}[，表示使能了]{style="font-family:宋体"}[Hub-spoke]{lang="EN-US"}[能力；如果未使能]{style="font-family:宋体"}[Hub-spoke]{lang="EN-US"}[能力，则不显示该字段]{style="font-family:宋体"}
+Hub-spoke不适用于PBB，PBB不关心该字段取值
 
-[[Hub-spoke]{lang="EN-US"}]{#struct_0_14574_x2122_x626165996}[不适用于]{style="font-family:宋体"}[PBB]{lang="EN-US"}[，]{style="font-family:宋体"}[PBB]{lang="EN-US"}[不关心该字段取值]{style="font-family:宋体"}
+PBB I-SID
 
-[[PBB I-SID]{lang="EN-US"}]{#struct_0_14574_x2122_x943260768}
+PBB骨干网服务实例编号
 
-[[PBB]{lang="EN-US"}]{#struct_0_14574_x2122_x1732767578}[骨干网服务实例编号]{style="font-family:宋体"}
+PBB Connections
 
-[[PBB Connections]{lang="EN-US"}]{#struct_0_14574_x2122_1507942787}
+PBB连接
 
-[[PBB]{lang="EN-US"}]{#struct_0_14574_x2122_201996692}[连接]{style="font-family:宋体"}
+BMAC
 
-[[BMAC]{lang="EN-US"}]{#struct_0_14574_x2122_x943195232}
+骨干网MAC
 
-[[骨干网]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_14574_x2122_267760377}
+BVLAN
 
-[[BVLAN]{lang="EN-US"}]{#struct_0_14574_x2122_310746471}
+骨干网VLAN
 
-[[骨干网]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_14574_x2122_x335417769}
+Type
 
-[[Type]{lang="EN-US"}]{#struct_0_14574_x2122_x943129696}
+属性标记，取值包括：
 
-[[属性标记，取值包括：]{style="font-family:宋体"}]{#struct_0_14574_x2122_x595973577}
+·Multicast：组播表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Multicast]{lang="EN-US"}]{#struct_0_14574_x2122_x1321940811}[：组播表项]{lang="EN-US" style="font-family:宋体"}
+·Unicast：单播表项，该表项的支持情况与产品型号有关，请以产品的实际情况为准
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unicast]{lang="EN-US"}]{#struct_0_14574_x2122_x1805055480}[：单播表项，该表项的支持情况与产品型号有关，请以产品的实际情况为准]{style="font-family:宋体"}
+ACs
 
-[[ACs]{lang="EN-US"}]{#struct_0_14574_x2122_x943064160}
+VSI的AC列表
 
-[[VSI]{lang="EN-US"}]{#struct_0_14574_x2122_x146260484}[的]{style="font-family:宋体"}[AC]{lang="EN-US"}[列表]{style="font-family:宋体"}
+AC
 
-[[AC]{lang="EN-US"}]{#struct_0_14574_x2122_244060324}
+接入电路，取值有如下两种：
 
-[[接入电路，取值有如下两种：]{style="font-family:宋体"}]{#struct_0_14574_x2122_x944047200}
+·三层接口名称：如GE0/1/4。在三层接口下关联VSI时，AC取值为此方式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[三层接口名称：如]{style="font-family:宋体"}]{#struct_0_14574_x2122_x1437283997}[GE0/1/4]{lang="EN-US"}[。在三层接口下关联]{style="font-family:宋体"}[VSI]{lang="EN-US"}[时，]{style="font-family:宋体"}[AC]{lang="EN-US"}[取值为此方式]{style="font-family:宋体"}
+· 二层接口名称和以太网服务实例：如{.TableTextChar}GE0/1/3 srv1。在以太网服务实例下关联{.TableTextChar}VSI时，{.TableTextChar}AC取值为此方式{.TableTextChar}
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[[二层接口名称和以太网服务实例：如]{style="font-family:宋体"}]{.TableTextChar}]{#struct_0_14574_x2122_x1469776598}[GE0/1/3 srv1]{lang="EN-US"}[[。在以太网服务实例下关联]{style="font-family:宋体"}]{.TableTextChar}[VSI]{lang="EN-US"}[[时，]{style="font-family:宋体"}]{.TableTextChar}[AC]{lang="EN-US"}[[取值为此方式]{style="font-family:宋体"}]{.TableTextChar}
+Link ID
 
-[[Link ID]{lang="EN-US"}]{#struct_0_14574_x2122_438097069}
+AC在VSI内的链路ID
 
-[[AC]{lang="EN-US"}]{#struct_0_14574_x2122_x943981664}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的链路]{style="font-family:宋体"}[ID]{lang="EN-US"}
+State
 
-[[State]{lang="EN-US"}]{#struct_0_14574_x2122_x938834360}
-
-[[AC]{lang="EN-US"}]{#struct_0_14574_x2122_1800343721}[的状态，取值包括]{style="font-family:宋体"}[Up]{lang="EN-US"}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-::::: {#-1110489258 .myid}
-[]{#_Toc404784351}[]{#struct_0_14574_x2122_x1593856140}[]{#_Toc344127262}[]{#_Toc339896856}
+AC的状态，取值包括Up和Down
 
 **PBB \-- PBB配置命令 \-- display pbb connection**
 
 ------------------------------------------------------------------------
 
-[**[display pbb connection]{lang="EN-US"}**]{#struct_0_14574_x2122_x943522911}[命令用来显示]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的连接信息。]{style="font-family:宋体"}
+**[display pbb connection**]命令用来显示PBB VSI实例的连接信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x504092678}
+【命令】
 
-[**[display pbb connection ]{lang="EN-US"}**[\[ **vsi** *vsi-name* \]]{lang="EN-US"}]{#struct_0_14574_x2122_x1307703482}
+**[display pbb connection ** **vsi** *vsi-name* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_14574_x2122_259825465}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_14574_x2122_1105862224}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x220186194}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_14574_x2122_188290968}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_14574_x2122_470500886}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_14574_x2122_x1040141380}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_14574_x2122_x943457375}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_14574_x2122_1036962380}
+【参数】
 
-[**[vsi ]{lang="EN-US"}***[vsi-name]{lang="EN-US"}*]{#struct_0_14574_x2122_855375154}[：显示指定]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的连接信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果未指定该参数，将显示所有]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的连接信息。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[vsi ***vsi-name*]：显示指定PBB VSI实例的连接信息。*vsi-name*为PBB VSI实例的名称，为1～31个字符的字符串，区分大小写。如果未指定该参数，将显示所有PBB VSI实例的连接信息。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x87795626}
+【举例】
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](PBB命令.files/image001.png){#图片 5 width="62" height="25"}]{lang="EN-US"}]{#struct_0_14574_x2122_802078336}
-:::
+![说明](PBB命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令具体的显示信息与设备的实际情况有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_14574_x2122_704817969}
-:::
+本命令具体的显示信息与设备的实际情况有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+\# 显示所有PBB VSI实例的连接信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_14574_x2122_x2079505491}[显示所有]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的连接信息。]{style="font-family:宋体"}
+\<Sysname\> display pbb connection
 
-[[\<Sysname\> display pbb connection]{lang="EN-US"}]{#struct_0_14574_x2122_x943391839}
+VSIIndex  I-SID   BMAC            BVLAN  Port       Type  Aging
 
-[VSIIndex  I-SID   BMAC            BVLAN  Port       Type  Aging]{lang="EN-US"}
+0         1       011e-8300-0001  4001   GE1/0/1    MC    N
 
-[0         1       011e-8300-0001  4001   GE1/0/1    MC    N]{lang="EN-US"}
+0         1       00e0-3948-0100  4001   GE1/0/1    UC    Y
 
-[0         1       00e0-3948-0100  4001   GE1/0/1    UC    Y]{lang="EN-US"}
+1         2       011e-8300-0002  4002   GE1/0/2    MC    N
 
-[1         2       011e-8300-0002  4002   GE1/0/2    MC    N]{lang="EN-US"}
+                                         GE1/0/3
 
-[                                         GE1/0/3]{lang="EN-US"}
+                                         GE1/0/4
 
-[                                         GE1/0/4]{lang="EN-US"}
+1         2       00e0-3948-0300  4002   GE1/0/2    UC    Y
 
-[1         2       00e0-3948-0300  4002   GE1/0/2    UC    Y]{lang="EN-US"}
+表1-4 display pbb connection命令显示信息描述表
 
-[[表1-4 ]{lang="EN-US"}[display pbb connection]{lang="EN-US"}]{#struct_0_14574_x2122_1445627275}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x2109330565}[[字段]{style="font-family:黑体"}]{#struct_0_14574_x2122_x457835386}
-:::::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_14574_x2122_x1991529458}
+VSIIndex
 
-[[VSIIndex]{lang="EN-US"}]{#struct_0_14574_x2122_443052161}
+VSI实例的索引
 
-[[VSI]{lang="EN-US"}]{#struct_0_14574_x2122_x943326303}[实例的索引]{style="font-family:宋体"}
+I-SID
 
-[[I-SID]{lang="EN-US"}]{#struct_0_14574_x2122_x1682549429}
+骨干网服务实例编号
 
-[[骨干网服务实例编号]{style="font-family:宋体"}]{#struct_0_14574_x2122_161206408}
+BMAC
 
-[[BMAC]{lang="EN-US"}]{#struct_0_14574_x2122_x1361455224}
+B-MAC地址
 
-[[B-MAC]{lang="EN-US"}]{#struct_0_14574_x2122_x1300539801}[地址]{style="font-family:宋体"}
+BVLAN
 
-[[BVLAN]{lang="EN-US"}]{#struct_0_14574_x2122_x124686568}
+B-VLAN的编号
 
-[[B-VLAN]{lang="EN-US"}]{#struct_0_14574_x2122_x943260767}[的编号]{style="font-family:宋体"}
+Port
 
-[[Port]{lang="EN-US"}]{#struct_0_14574_x2122_x1732833114}
+出接口的名称
 
-[[出接口的名称]{style="font-family:宋体"}]{#struct_0_14574_x2122_x1363529988}
+Type
 
-[[Type]{lang="EN-US"}]{#struct_0_14574_x2122_x1568172731}
+表项类型：
 
-[[表项类型：]{style="font-family:宋体"}]{#struct_0_14574_x2122_x581329612}
+·UC：单播表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UC]{lang="EN-US"}]{#struct_0_14574_x2122_x2681750}[：单播表项]{lang="EN-US" style="font-family:宋体"}
+·MC：组播表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MC]{lang="EN-US"}]{#struct_0_14574_x2122_x943195231}[：组播表项]{lang="EN-US" style="font-family:宋体"}
+Aging
 
-[[Aging]{lang="EN-US"}]{#struct_0_14574_x2122_267563769}
+老化标记：
 
-[[老化标记：]{style="font-family:宋体"}]{#struct_0_14574_x2122_x1582207035}
+·Y：支持老化
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Y]{lang="EN-US"}]{#struct_0_14574_x2122_x1317729537}[：支持老化]{lang="EN-US" style="font-family:宋体"}
+·N：不支持老化
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[N]{lang="EN-US"}]{#struct_0_14574_x2122_x415751221}[：不支持老化]{lang="EN-US" style="font-family:宋体"}
+【相关命令】
 
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x547267033}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset pbb connection]{lang="EN-US"}**]{#struct_0_14574_x2122_x943129695}
-
-::: {#-900899430 .myid}
-[]{#_Toc404784352}[]{#struct_0_14574_x2122_x596039113}[]{#_Toc344127270}
+·**reset pbb connection**
 
 **PBB \-- PBB配置命令 \-- encapsulation**
 
 ------------------------------------------------------------------------
 
-[**[encapsulation]{lang="EN-US"}**]{#struct_0_14574_x2122_x1422849074}[命令用来配置当前]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例对应的数据封装类型。]{style="font-family:宋体"}
+**[encapsulation**]命令用来配置当前PBB VSI实例对应的数据封装类型。
 
-[**[undo encapsulation]{lang="EN-US"}**]{#struct_0_14574_x2122_1866385669}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo encapsulation**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_14574_x2122_1829608180}
+【命令】
 
-[**[encapsulation ]{lang="EN-US"}**[{ **ethernet** \| **vlan** }]{lang="EN-US"}]{#struct_0_14574_x2122_x129312642}
+**[encapsulation **[{ **ethernet** \| **vlan** }]]
 
-[**[undo encapsulation]{lang="EN-US"}**]{#struct_0_14574_x2122_1922099761}
+**[undo encapsulation**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_14574_x2122_491408729}
+【缺省情况】
 
-[[数据封装类型为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_14574_x2122_x348232506}[。]{style="font-family:宋体"}
+数据封装类型为VLAN。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x943064159}
+【视图】
 
-[[VSI PBB]{lang="EN-US"}]{#struct_0_14574_x2122_x145670663}[视图]{style="font-family:宋体"}
+VSI PBB视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_14574_x2122_1135808914}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_14574_x2122_x1925531414}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_14574_x2122_x1933067914}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x1096387456}
+【参数】
 
-[**[ethernet]{lang="EN-US"}**]{#struct_0_14574_x2122_1126430075}[：数据封装类型为]{style="font-family:宋体"}[Ethernet]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[ethernet**]：数据封装类型为Ethernet。
 
-[**[vlan]{lang="EN-US"}**]{#struct_0_14574_x2122_x236047527}[：数据封装类型为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vlan**]：数据封装类型为VLAN。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_14574_x2122_541548776}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_14574_x2122_x985568954}[配置]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例]{style="font-family:宋体"}[web]{lang="EN-US"}[对应的数据封装类型为]{style="font-family:宋体"}[Ethernet]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置PBB VSI实例web对应的数据封装类型为Ethernet。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_14574_x2122_x614293512}
+\<Sysname\> system-view
 
-[\[Sysname\] l2vpn enable]{lang="EN-US"}
+Sysname l2vpn enable
 
-[\[Sysname\] vsi web]{lang="EN-US"}
+Sysname vsi web
 
-[\[Sysname-vsi-web\] pbb i-sid 100]{lang="EN-US"}
+Sysname-vsi-web pbb i-sid 100
 
-[\[Sysname-vsi-web-100\] encapsulation ethernet]{lang="EN-US"}
+Sysname-vsi-web-100 encapsulation ethernet
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_14574_x2122_60126250}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pbb i-sid]{lang="EN-US"}**]{#struct_0_14574_x2122_220418638}
+·**pbb i-sid**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vsi]{lang="EN-US"}**]{#struct_0_14574_x2122_x1348927418}
-:::
-
-::: {#2070950537 .myid}
-[]{#_Toc404784353}[]{#struct_0_14574_x2122_x1797437642}
+·**vsi**
 
 **PBB \-- PBB配置命令 \-- l2vpn enable**
 
 ------------------------------------------------------------------------
 
-[**[l2vpn enable]{lang="EN-US"}**]{#struct_0_14574_x2122_888662882}[命令用来使能]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[l2vpn enable**]命令用来使能L2VPN功能。
 
-[**[undo l2vpn enable]{lang="EN-US"}**]{#struct_0_14574_x2122_1420815331}[命令用来关闭]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo l2vpn enable**]命令用来关闭L2VPN功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_14574_x2122_1244386568}
+【命令】
 
-[**[l2vpn enable]{lang="EN-US"}**]{#struct_0_14574_x2122_x1119123371}
+**[l2vpn enable**]
 
-[**[undo l2vpn enable]{lang="EN-US"}**]{#struct_0_14574_x2122_x1621160905}
+**[undo l2vpn enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_14574_x2122_703599102}
+【缺省情况】
 
-[[L2VPN]{lang="EN-US"}]{#struct_0_14574_x2122_x951416859}[功能处于关闭状态。]{style="font-family:宋体"}
+L2VPN功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_14574_x2122_543241962}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_14574_x2122_x1797503178}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_14574_x2122_414068380}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_14574_x2122_x1303594242}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_14574_x2122_192490220}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_14574_x2122_777067503}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_14574_x2122_x1148028882}[使能]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 使能L2VPN功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_14574_x2122_x1585544966}
+\<Sysname\> system-view
 
-[\[Sysname\] l2vpn enable]{lang="EN-US"}
-:::
-
-::: {#-1639074051 .myid}
-[]{#_Toc404784354}[]{#struct_0_14574_x2122_x943981663}
+Sysname l2vpn enable
 
 **PBB \-- PBB配置命令 \-- pbb i-sid**
 
 ------------------------------------------------------------------------
 
-[**[pbb i-sid]{lang="EN-US"}**]{#struct_0_14574_x2122_x939162040}[命令用来创建]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例，并进入]{style="font-family:宋体"}[VSI PBB]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+**[pbb i-sid**]命令用来创建PBB VSI实例，并进入VSI PBB视图。
 
-[**[undo pbb i-sid]{lang="EN-US"}**]{#struct_0_14574_x2122_x189215934}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo pbb i-sid**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x366441652}
+【命令】
 
-[**[pbb i-sid]{lang="EN-US"}**[ *i-sid*]{lang="EN-US"}]{#struct_0_14574_x2122_x1351903774}
+**[pbb i-sid** *i-sid*]
 
-[**[undo ]{lang="EN-US"}[pbb i-sid]{lang="EN-US"}**]{#struct_0_14574_x2122_171637859}
+**[undo pbb i-sid**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_14574_x2122_70167062}
+【缺省情况】
 
-[[未创建]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}]{#struct_0_14574_x2122_x1590436397}[实例。]{style="font-family:宋体"}
+未创建PBB VSI实例。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x1038048695}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_14574_x2122_622561033}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x1608248012}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_14574_x2122_1081672175}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_14574_x2122_x723874317}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x1183043728}
+【参数】
 
-[*[i-sid]{lang="EN-US"}*]{#struct_0_14574_x2122_x2084757016}[：指定]{style="font-family:宋体"}[PBB]{lang="EN-US"}[的骨干网服务实例编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[16777215]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[i-sid*]：指定PBB的骨干网服务实例编号，取值范围为1～16777215。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x1636641168}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[创建]{style="font-family:宋体"}]{#struct_0_14574_x2122_x2117801316}[PBB VSI]{lang="EN-US"}[实例就是创建一个]{style="font-family:宋体"}[PBB]{lang="EN-US"}[类型的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[，并同时指定其]{style="font-family:宋体"}[I-SID]{lang="EN-US"}[。]{style="font-family:宋体"}
+·创建PBB VSI实例就是创建一个PBB类型的VSI，并同时指定其I-SID。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在同一个]{style="font-family:宋体"}]{#struct_0_14574_x2122_1291929098}[VSI]{lang="EN-US"}[视图下，]{style="font-family:宋体"}[PBB]{lang="EN-US"}[和]{style="font-family:宋体"}[SPB]{lang="EN-US"}[的]{style="font-family:宋体"}[I-SID]{lang="EN-US"}[不能相同。有关]{style="font-family:宋体"}[SPB]{lang="EN-US"}[的详细介绍，请参见"]{style="font-family:宋体"}[SPB]{lang="EN-US"}[配置指导"中的"]{style="font-family:宋体"}[SPBM]{lang="EN-US"}["。]{style="font-family:宋体"}
+·在同一个VSI视图下，PBB和SPB的I-SID不能相同。有关SPB的详细介绍，请参见"SPB配置指导"中的"SPBM"。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在]{lang="EN-US" style="font-family:宋体"}[PBBN]{lang="EN-US"}]{#struct_0_14574_x2122_792652722}[中同一]{lang="EN-US" style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例必须指定相同的]{lang="EN-US" style="font-family:宋体"}[I-SID]{lang="EN-US"}[，不同]{lang="EN-US" style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的]{lang="EN-US" style="font-family:宋体"}[I-SID]{lang="EN-US"}[不能]{lang="EN-US" style="font-family:宋体"}[相]{style="font-family:宋体"}[同。]{lang="EN-US" style="font-family:宋体"}
+·在PBBN中同一PBB VSI实例必须指定相同的I-SID，不同PBB VSI实例的I-SID不能相同。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_14574_x2122_872693276}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_14574_x2122_x318556213}[创建]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[，其]{style="font-family:宋体"}[I-SID]{lang="EN-US"}[为]{style="font-family:宋体"}[100]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[VSI PBB]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+\# 创建PBB VSI实例vpn1，其I-SID为100，并进入VSI PBB视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_14574_x2122_622626569}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname vsi vpn1
 
-[\[Sysname-vsi-vpn1\] pbb i-sid 100]{lang="EN-US"}
+Sysname-vsi-vpn1 pbb i-sid 100
 
-[\[Sysname-vsi-vpn1-100\]]{lang="EN-US"}
+Sysname-vsi-vpn1-100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_14574_x2122_1375647825}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn ]{lang="EN-US"}**]{#struct_0_14574_x2122_117210058}**[minm connection]{lang="EN-US"}**
+·**display l2vpn ****minm connection**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn minm forwarding]{lang="EN-US"}**]{#struct_0_14574_x2122_1540371680}
-:::
-
-::: {#233825342 .myid}
-[]{#_Toc344127266}[]{#_Toc404784355}[]{#struct_0_14574_x2122_x16861045}[]{#_Toc344127269}[]{#_Toc339896859}
+·**display l2vpn minm forwarding**
 
 **PBB \-- PBB配置命令 \-- pbb uplink**
 
 ------------------------------------------------------------------------
 
-[**[pbb uplink]{lang="EN-US"}**]{#struct_0_14574_x2122_x970776183}[命令用来将接口指定为]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的上行口。]{style="font-family:宋体"}
+**[pbb uplink**]命令用来将接口指定为PBB VSI实例的上行口。
 
-[**[undo pbb uplink]{lang="EN-US"}**]{#struct_0_14574_x2122_1728888396}[命令用来取消接口作为]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的上行口。]{style="font-family:宋体"}
+**[undo pbb uplink**]命令用来取消接口作为PBB VSI实例的上行口。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x2029594696}
+【命令】
 
-[**[pbb uplink ]{lang="EN-US"}**[{ **all** \| **vsi** *vsi-name-list* }]{lang="EN-US"}]{#struct_0_14574_x2122_622692105}
+**[pbb uplink **[{ **all** \| **vsi** *vsi-name-list* }]]
 
-[**[undo pbb uplink ]{lang="EN-US"}**[{ **all** \| **vsi** *vsi-name-list* }]{lang="EN-US"}]{#struct_0_14574_x2122_x1732080736}
+**[undo pbb uplink **[{ **all** \| **vsi** *vsi-name-list* }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_14574_x2122_2130356633}
+【缺省情况】
 
-[[接口不是任何]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}]{#struct_0_14574_x2122_x2058346814}[实例的上行口。]{style="font-family:宋体"}
+接口不是任何PBB VSI实例的上行口。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x324008430}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_14574_x2122_476161357}[二层聚合接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x463364768}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_14574_x2122_x253037739}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_14574_x2122_1521074537}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_14574_x2122_622757641}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_14574_x2122_x1315951521}[：配置接口为所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的上行口。]{style="font-family:宋体"}
+**[all**]：配置接口为所有VSI的上行口。
 
-[**[vsi ]{lang="EN-US"}***[vsi-name-list]{lang="EN-US"}*]{#struct_0_14574_x2122_12861448}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[名字列表，配置接口为某个或多个]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的上行口。表示方式为]{style="font-family:宋体"}*[vsi-name-list]{lang="EN-US"}*[ = { *vsi-name* }&\<1-10\>]{lang="EN-US"}[。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以重复输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。]{style="font-family:宋体"}
+**[vsi ***vsi-name-list*]：VSI名字列表，配置接口为某个或多个VSI的上行口。表示方式为*vsi-name-list* = { *vsi-name* }&\<1-10\>。*vsi-name*为PBB VSI实例的名称，为1～31个字符的字符串，区分大小写。&\<1-10\>表示前面的参数最多可以重复输入10次。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x1093649886}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PBB VSI]{lang="EN-US"}]{#struct_0_14574_x2122_705395144}[实例需要指定上行口后才能够正常工作。]{style="font-family:宋体"}
+·PBB VSI实例需要指定上行口后才能够正常工作。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若接口是所有]{style="font-family:宋体"}]{#struct_0_14574_x2122_x728197163}[PBB VSI]{lang="EN-US"}[实例的上行口，此时若需要将其改为某个]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的上行口，需先取消该接口是所有]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的上行口的配置，否则配置不生效；若接口是某些]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的上行口，此时还可以将其改为是所有]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的上行口。]{style="font-family:宋体"}
+·若接口是所有PBB VSI实例的上行口，此时若需要将其改为某个PBB VSI实例的上行口，需先取消该接口是所有PBB VSI实例的上行口的配置，否则配置不生效；若接口是某些PBB VSI实例的上行口，此时还可以将其改为是所有PBB VSI实例的上行口。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[可以指定]{style="font-family:宋体"}]{#struct_0_14574_x2122_x443839433}[PBB VSI]{lang="EN-US"}[实例的名称后，再创建对应的]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例。]{style="font-family:宋体"}
+·可以指定PBB VSI实例的名称后，再创建对应的PBB VSI实例。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[聚合接口配置为上行口时，必须所有的聚合成员端口都支持]{style="font-family:宋体"}]{#struct_0_14574_x2122_x795399354}[PBB]{lang="EN-US"}[。否则，配置不成功。]{style="font-family:宋体"}
+·聚合接口配置为上行口时，必须所有的聚合成员端口都支持PBB。否则，配置不成功。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[聚合接口先配置为上行口，之后将某个接口加入该聚合组，若该接口不支持]{style="font-family:宋体"}]{#struct_0_14574_x2122_x1035924373}[PBB]{lang="EN-US"}[，则该接口加入聚合成功，但是会打印日志信息提示用户该接口不支持]{style="font-family:宋体"}[PBB]{lang="EN-US"}[。]{style="font-family:宋体"}
+·聚合接口先配置为上行口，之后将某个接口加入该聚合组，若该接口不支持PBB，则该接口加入聚合成功，但是会打印日志信息提示用户该接口不支持PBB。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_14574_x2122_622823177}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_14574_x2122_59804343}[使能]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[功能，创建]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例]{style="font-family:宋体"}[web]{lang="EN-US"}[和]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例]{style="font-family:宋体"}[mail]{lang="EN-US"}[，将接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[、]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[指定为]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例]{style="font-family:宋体"}[web]{lang="EN-US"}[和]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例]{style="font-family:宋体"}[mail]{lang="EN-US"}[的上行口。]{style="font-family:宋体"}
+\# 使能L2VPN功能，创建PBB VSI实例web和PBB VSI实例mail，将接口GigabitEthernet1/0/1、GigabitEthernet1/0/2指定为PBB VSI实例web和PBB VSI实例mail的上行口。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_14574_x2122_1602173345}
+\<Sysname\> system-view
 
-[\[Sysname\] l2vpn enable]{lang="EN-US"}
+Sysname l2vpn enable
 
-[\[Sysname\] vsi web]{lang="EN-US"}
+Sysname vsi web
 
-[\[Sysname-vsi-web\] pbb i-sid 100]{lang="EN-US"}
+Sysname-vsi-web pbb i-sid 100
 
-[\[Sysname-vsi-web-100\] bvlan 100]{lang="EN-US"}
+Sysname-vsi-web-100 bvlan 100
 
-[\[Sysname-vsi-web-100\] quit]{lang="EN-US"}
+Sysname-vsi-web-100 quit
 
-[\[Sysname-vsi-web\] quit]{lang="EN-US"}
+Sysname-vsi-web quit
 
-[\[Sysname\] vsi mail]{lang="EN-US"}
+Sysname vsi mail
 
-[\[Sysname-vsi-mail\] pbb i-sid 200]{lang="EN-US"}
+Sysname-vsi-mail pbb i-sid 200
 
-[\[Sysname-vsi-mail-200\] bvlan 200]{lang="EN-US"}
+Sysname-vsi-mail-200 bvlan 200
 
-[\[Sysname-vsi-mail-200\] quit]{lang="EN-US"}
+Sysname-vsi-mail-200 quit
 
-[\[Sysname-vsi-mail\] quit]{lang="EN-US"}
+Sysname-vsi-mail quit
 
-[\[Sysname\] interface range gigabitethernet 1/0/1 to gigabitethernet 1/0/2]{lang="EN-US"}
+Sysname interface range gigabitethernet 1/0/1 to gigabitethernet 1/0/2
 
-[\[Sysname-if-range\] pbb uplink vsi web mail]{lang="EN-US"}
+Sysname-if-range pbb uplink vsi web mail
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x703025357}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vsi]{lang="EN-US"}**]{#struct_0_14574_x2122_x2097268863}
-:::
-
-::: {#1411662741 .myid}
-[]{#_Toc404784356}[]{#struct_0_14574_x2122_2140033251}
+·**vsi**
 
 **PBB \-- PBB配置命令 \-- reset pbb connection**
 
 ------------------------------------------------------------------------
 
-[**[reset pbb connection]{lang="EN-US"}**]{#struct_0_14574_x2122_622888713}[命令用来清除]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的连接信息。]{style="font-family:宋体"}
+**[reset pbb connection**]命令用来清除PBB VSI实例的连接信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_14574_x2122_20226763}
+【命令】
 
-[**[reset pbb connection]{lang="EN-US"}**[ \[ { **bvlan** ]{lang="EN-US"}*[vlan-id]{lang="EN-US"}*[ \| **interface** ]{lang="EN-US"}*[interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}[ } \* \| **vsi** ]{lang="EN-US"}*[vsi-name ]{lang="EN-US"}*[\]]{lang="EN-US"}]{#struct_0_14574_x2122_595409550}
+**[reset pbb connection** [ *[vlan-id*[ \| **interface** ]*interface-type* *interface-number*[ } \* \| **vsi** ]*vsi-name *]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x917779194}
+【视图】]
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_14574_x2122_x2080242938}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x1960634182}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_14574_x2122_x264813551}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_14574_x2122_1698463636}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x739640742}
+【参数】
 
-[**[bvlan]{lang="EN-US"}**[ ]{lang="EN-US"}*[vlan-id]{lang="EN-US"}*]{#struct_0_14574_x2122_622954249}[：清除指定]{style="font-family:宋体"}[B-VLAN]{lang="EN-US"}[内]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的连接信息。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[B-VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果未指定该参数，将清除所有]{style="font-family:宋体"}[B-VLAN]{lang="EN-US"}[内]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的连接信息。]{style="font-family:宋体"}
+**[bvlan***vlan-id*]：清除指定B-VLAN内PBB VSI实例的连接信息。*vlan-id*为B-VLAN的编号，取值范围为1～4094。如果未指定该参数，将清除所有B-VLAN内PBB VSI实例的连接信息。
 
-[**[interface]{lang="EN-US"}**[ ]{lang="EN-US"}*[interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}]{#struct_0_14574_x2122_1601240771}[：清除指定接口上]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的连接信息。]{style="font-family:宋体"}*[interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}[为接口名称和接口编号。如果未指定该参数，将清除所有接口上]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的连接信息。]{style="font-family:宋体"}
+**[interface***interface-type* *interface-number*]：清除指定接口上PBB VSI实例的连接信息。*interface-type* *interface-number*为接口名称和接口编号。如果未指定该参数，将清除所有接口上PBB VSI实例的连接信息。
 
-[**[vsi]{lang="EN-US"}**[ ]{lang="EN-US"}*[vsi-name]{lang="EN-US"}*]{#struct_0_14574_x2122_1392911406}[：清除指定]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的连接信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果未指定该参数，将清除所有]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例的连接信息。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[vsi***vsi-name*]：清除指定PBB VSI实例的连接信息。*vsi-name*为PBB VSI实例的名称，为1～31个字符的字符串，区分大小写。如果未指定该参数，将清除所有PBB VSI实例的连接信息。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x272309525}
+【使用指导】
 
-[[只有]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}]{#struct_0_14574_x2122_1241734794}[连接信息中的单播表项可以通过本命令进行清除。]{style="font-family:宋体"}
+只有PBB VSI连接信息中的单播表项可以通过本命令进行清除。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x1218416382}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_14574_x2122_x1169177153}[清除]{style="font-family:宋体"}[PBB VSI]{lang="EN-US"}[实例]{style="font-family:宋体"}[web]{lang="EN-US"}[的]{style="font-family:宋体"}[连接信息。]{style="font-family:宋体"}
+\# 清除PBB VSI实例web的连接信息。
 
-[[\<Sysname\> reset pbb connection vsi web]{lang="EN-US"}]{#struct_0_14574_x2122_236431547}
+\<Sysname\> reset pbb connection vsi web
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_14574_x2122_623019785}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display pbb connection]{lang="EN-US"}**]{#struct_0_14574_x2122_x810903193}
-:::
-
-::: {#-981054953 .myid}
-[]{#_Toc404784357}[]{#struct_0_14574_x2122_x1797044426}
+·**display pbb connection**
 
 **PBB \-- PBB配置命令 \-- vsi**
 
 ------------------------------------------------------------------------
 
-[**[vsi]{lang="EN-US"}**]{#struct_0_14574_x2122_63400221}[命令用来创建一个]{style="font-family:宋体"}[VSI]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}[视图。如果指定的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[已经存在，则直接进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+**[vsi**]命令用来创建一个VSI，并进入VSI视图。如果指定的VSI已经存在，则直接进入VSI视图。
 
-[**[undo]{lang="EN-US"}**[ **vsi**]{lang="EN-US"}]{#struct_0_14574_x2122_x347518466}[命令用来删除指定的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo** **vsi**]命令用来删除指定的VSI。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x290474487}
+【命令】
 
-[**[vsi]{lang="IT"}**]{#struct_0_14574_x2122_430045337}[ *vsi-name*]{lang="IT"}
+**[vsi**] *vsi-name*
 
-[**[undo]{lang="IT"}**]{#struct_0_14574_x2122_x1667196205}[ ]{lang="IT"}**[vsi]{lang="IT"}**[ *vsi-name*]{lang="IT"}
+**[undo**]**vsi** *vsi-name*
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x1118247087}
+【缺省情况】
 
-[[设备上不存在任何]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_14574_x2122_x759945873}[。]{style="font-family:宋体"}
+设备上不存在任何VSI。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x1792300061}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_14574_x2122_x648591543}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x1797109962}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_14574_x2122_1138998450}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_14574_x2122_1235728593}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_14574_x2122_439400843}
+【参数】
 
-[*[vsi-name]{lang="EN-US"}*]{#struct_0_14574_x2122_x393896239}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[vsi-name*]：VSI的名称，为1～31个字符的字符串，区分大小写。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_14574_x2122_475336672}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_14574_x2122_x558214070}[创建名为]{style="font-family:宋体"}[test]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+\# 创建名为test的VSI，并进入VSI视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_14574_x2122_x1231937675}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi test]{lang="EN-US"}
+Sysname vsi test
 
-[\[Sysname-vsi-test\]]{lang="EN-US"}
+Sysname-vsi-test
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_14574_x2122_x2024852872}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn vsi]{lang="EN-US"}**]{#struct_0_14574_x2122_629343244}
+·**display l2vpn vsi**
 
-[ ]{lang="EN-US"}
-:::

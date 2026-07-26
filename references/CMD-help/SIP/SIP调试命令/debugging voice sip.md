@@ -1,1361 +1,999 @@
-::: {#432711772 .myid}
-[]{#_Toc404794394}[]{#struct_0_44918_15685_x2094468048}[]{#_Toc375832075}
 
 **SIP \-- SIP调试命令 \-- debugging voice sip**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_44918_15685_2079609697}
+【命令】
 
-[**[debugging voice sip ]{lang="EN-US"}**[{ **all** \| **error** **\| event \| fsm \| info \| message \| stack \| timer }**]{lang="EN-US"}]{#struct_0_44918_15685_x1370419378}
+**[debugging voice sip **[{ **all** \| **error** **\| event \| fsm \| info \| message \| stack \| timer }**]]
 
-[**[undo debugging voice sip]{lang="EN-US"}**[ { **all** \| **error** \| **event \| fsm \| info \| message \| stack \| timer** }]{lang="EN-US"}]{#struct_0_44918_15685_556770858}
+**[undo debugging voice sip**[ { **all** \| **error** \| **event \| fsm \| info \| message \| stack \| timer** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_44918_15685_531930766}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_44918_15685_639854821}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_44918_15685_x666397302}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_44918_15685_x686337729}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_44918_15685_1173135991}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_44918_15685_775131826}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_44918_15685_1073131527}[：表示]{style="font-family:宋体"}[SIP]{lang="EN-US"}[所有消息类型的调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示SIP所有消息类型的调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_44918_15685_949272651}[：表示]{style="font-family:宋体"}[SIP]{lang="EN-US"}[的错误类型的消息调试信息开关。]{style="font-family:宋体"}
+**[error**]：表示SIP的错误类型的消息调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_44918_15685_1729388427}[：表示]{style="font-family:宋体"}[SIP]{lang="EN-US"}[的事件类消息调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示SIP的事件类消息调试信息开关。
 
-[**[fsm]{lang="EN-US"}**]{#struct_0_44918_15685_328456408}[：表示]{style="font-family:宋体"}[SIP]{lang="EN-US"}[的状态机类消息调试信息开关。]{style="font-family:宋体"}
+**[fsm**]：表示SIP的状态机类消息调试信息开关。
 
-[**[info]{lang="EN-US"}**]{#struct_0_44918_15685_424755641}[：表示]{style="font-family:宋体"}[SIP]{lang="EN-US"}[的信息类消息调试信息开关。]{style="font-family:宋体"}
+**[info**]：表示SIP的信息类消息调试信息开关。
 
-[**[message]{lang="EN-US"}**]{#struct_0_44918_15685_366768979}[：表示]{style="font-family:宋体"}[SIP]{lang="EN-US"}[的报文类消息调试信息开关。]{style="font-family:宋体"}
+**[message**]：表示SIP的报文类消息调试信息开关。
 
-[**[stack]{lang="EN-US"}**]{#struct_0_44918_15685_x1366746297}[：表示]{style="font-family:宋体"}[SIP]{lang="EN-US"}[协议栈类消息调试信息开关。]{style="font-family:宋体"}
+**[stack**]：表示SIP协议栈类消息调试信息开关。
 
-[**[timer]{lang="EN-US"}**]{#struct_0_44918_15685_x1697993470}[：表示]{style="font-family:宋体"}[SIP]{lang="EN-US"}[的定时器消息调试信息开关。]{style="font-family:宋体"}
+**[timer**]：表示SIP的定时器消息调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_44918_15685_224115127}
+【描述】
 
-[**[debugging voice sip]{lang="EN-US"}**]{#struct_0_44918_15685_x1662211192}[命令用来打开]{style="font-family:宋体"}[SIP]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}**[undo debugging voice sip]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[SIP]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}
+**[debugging voice sip**]命令用来打开SIP调试信息开关。**undo debugging voice sip**命令用来关闭SIP调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[SIP]{lang="EN-US"}]{#struct_0_44918_15685_2122854799}[调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，SIP调试信息开关处于关闭状态。
 
-[[表1-1 ]{lang="EN-US"}[debugging voice sip error]{lang="EN-US"}]{#struct_0_44918_15685_x1153608716}[令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging voice sip error令输出信息描述表
 
-[]{#table_struct_0_1563186973}[[字段]{style="font-size:10.0pt;font-family:黑体"}]{#struct_0_44918_15685_603480013}
-:::
+字段
 
-[[描述]{style="font-size:10.0pt;
-   font-family:黑体"}]{#struct_0_44918_15685_x947717983}
+描述
 
-[[Failed to allocate memory for CCB.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x803812750}
+Failed to allocate memory for CCB.
 
-[[为]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_x2110977877}[CCB]{lang="EN-US" style="font-size:9.0pt"}[分配内存失败]{style="font-size:9.0pt;font-family:宋体"}
+为CCB分配内存失败
 
-[[Failed to get CCB when binding source address.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_1038460096}
+Failed to get CCB when binding source address.
 
-[[源地址绑定时获取]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_1864504478}[CCB]{lang="EN-US" style="font-size:9.0pt"}[失败]{style="font-size:9.0pt;font-family:宋体"}
+源地址绑定时获取CCB失败
 
-[[Received INVITE request: Failed to get SDP media description.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x1565579888}
+Received INVITE request: Failed to get SDP media description.
 
-[[收到]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_x1757164327}[INVITE]{lang="EN-US" style="font-size:9.0pt"}[请求：获取]{style="font-size:9.0pt;font-family:宋体"}[SDP]{lang="EN-US" style="font-size:9.0pt"}[媒体描述信息失败]{style="font-size:9.0pt;font-family:
-  宋体"}
+收到INVITE请求：获取SDP媒体描述信息失败
 
-[[Received  ALERTING message: Failed to save brother codec.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x2130401618}
+Received  ALERTING message: Failed to save brother codec.
 
-[[收到]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_597773088}[ALERTING]{lang="EN-US" style="font-size:9.0pt"}[消息：保存兄弟编解码类型失败]{style="font-size:9.0pt;font-family:宋体"}
+收到ALERTING消息：保存兄弟编解码类型失败
 
-[[Failed to get SIP CCB in normal call back.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x606028556}
+Failed to get SIP CCB in normal call back.
 
-[[在正常回调中获取]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_x1001810606}[SIP CCB]{lang="EN-US" style="font-size:9.0pt"}[失败]{style="font-size:9.0pt;font-family:宋体"}
+在正常回调中获取SIP CCB失败
 
-[[Failed to set Request-Line when building INVITE message.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x1178005213}
+Failed to set Request-Line when building INVITE message.
 
-[[构建]{style="font-size:9.0pt;font-family:
-  宋体"}]{#struct_0_44918_15685_49659518}[INVITE]{lang="EN-US" style="font-size:9.0pt"}[消息时设置请求行失败]{style="font-size:9.0pt;font-family:宋体"}
+构建INVITE消息时设置请求行失败
 
-[[Failed to create DNS CCB.]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_44918_15685_732739582}
+Failed to create DNS CCB.
 
-[[创建]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_x1977893850}[DNS CCB]{lang="EN-US" style="font-size:9.0pt"}[失败]{style="font-size:9.0pt;font-family:宋体"}
+创建DNS CCB失败
 
-[[Failed to process DNS response before registration because the source or destination IP address cannot be obtained.]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_44918_15685_446901257}
+Failed to process DNS response before registration because the source or destination IP address cannot be obtained.
 
-[[因为无法获取源]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_x1433982982}[/]{lang="EN-US" style="font-size:9.0pt"}[目的地址，处理注册前的]{style="font-size:9.0pt;font-family:宋体"}[DNS]{lang="EN-US" style="font-size:9.0pt"}[应答消息失败]{style="font-size:9.0pt;font-family:
-  宋体"}
+因为无法获取源/目的地址，处理注册前的DNS应答消息失败
 
-[[Failed to decode SDP.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x1227383083}
+Failed to decode SDP.
 
-[[解码]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_x1991209101}[SDP]{lang="EN-US" style="font-size:9.0pt"}[失败]{style="font-size:9.0pt;font-family:宋体"}
+解码SDP失败
 
-[[Failed to negotiate brother and local codec set.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_1316285745}
+Failed to negotiate brother and local codec set.
 
-[[协商兄弟和本地编码集失败]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_x20225220}
+协商兄弟和本地编码集失败
 
-[[Invalid message body.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x1210513526}
+Invalid message body.
 
-[[无效的消息体]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_748000957}
+无效的消息体
 
-[[Failed to send ACK message for SIP connect.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_1371811248}
+Failed to send ACK message for SIP connect.
 
-[[发送]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_x2009350296}[SIP connect]{lang="EN-US" style="font-size:9.0pt"}[的]{style="font-size:9.0pt;font-family:宋体"}[ACK]{lang="EN-US" style="font-size:9.0pt"}[消息失败]{style="font-size:9.0pt;font-family:
-  宋体"}
+发送SIP connect的ACK消息失败
 
-[[Session Expires(*Expires-Value*) value is smaller than Min-Se(*Min-Value*)]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x1300244781}
+Session Expires(*Expires-Value*) value is smaller than Min-Se(*Min-Value*)
 
-[[会话有效时间小于最小有效时间]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_x1488778836}
+会话有效时间小于最小有效时间
 
-[*[Expires-Value]{lang="EN-US" style="font-size:
-  9.0pt"}*]{#struct_0_44918_15685_x1412597610}[：]{style="font-size:9.0pt;font-family:
-  宋体"}[Expires]{lang="EN-US" style="font-size:9.0pt"}[头域的值]{style="font-size:9.0pt;font-family:宋体"}
+*[Expires-Value*]：Expires头域的值
 
-[*[Min-Value]{lang="EN-US" style="font-size:
-  9.0pt"}*]{#struct_0_44918_15685_x1191078262}[：]{style="font-size:9.0pt;font-family:宋体"}[Min-Se]{lang="EN-US" style="font-size:9.0pt"}[头域的值]{style="font-size:9.0pt;
-  font-family:宋体"}
+*[Min-Value*]：Min-Se头域的值
 
-[[TLS: Failed to create listener.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x720311250}
+TLS: Failed to create listener.
 
-[[创建]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_874411436}[TLS listener]{lang="EN-US" style="font-size:9.0pt"}[失败]{style="font-size:9.0pt;font-family:宋体"}
+创建TLS listener失败
 
-[[TLS: Failed to set connection to no-block mode.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x1587115241}
+TLS: Failed to set connection to no-block mode.
 
-[[设置]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_x2093519127}[TLS]{lang="EN-US" style="font-size:9.0pt"}[连接为非阻塞模式失败]{style="font-size:9.0pt;font-family:宋体"}
+设置TLS连接为非阻塞模式失败
 
-[[TPTD:Failed to allocate memory for contex CB]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x208108057}
+TPTD:Failed to allocate memory for contex CB
 
-[[TPTD]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_1069782452}[：为上下文控制块申请内存失败]{style="font-size:9.0pt;font-family:宋体"}
+TPTD：为上下文控制块申请内存失败
 
-[[TPTD: Failed to generate hash key by address.]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_44918_15685_153486331}
+TPTD: Failed to generate hash key by address.
 
-[[TPTD]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_44918_15685_916555950}[：由地址产生]{style="font-size:9.0pt;font-family:宋体"}[hash key]{lang="EN-US" style="font-size:9.0pt"}[失败]{style="font-size:9.0pt;
-  font-family:宋体"}
+TPTD：由地址产生hash key失败
 
-[[Build Contact header: Failed to set param for Contact.]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_44918_15685_502087956}
+Build Contact header: Failed to set param for Contact.
 
-[[建立]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_x477611291}[ Contact ]{lang="EN-US" style="font-size:9.0pt"}[头域：为]{style="font-size:9.0pt;font-family:宋体"}[Contact]{lang="EN-US" style="font-size:9.0pt"}[设置参数失败]{style="font-size:9.0pt;
-  font-family:宋体"}
+建立 Contact 头域：为Contact设置参数失败
 
-[[Build Allow header: Failed to create Allow header.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x1899786707}
+Build Allow header: Failed to create Allow header.
 
-[[建立]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_x1116831758}[ Allow ]{lang="EN-US" style="font-size:9.0pt"}[头域：创建]{style="font-size:9.0pt;font-family:宋体"}[Allow]{lang="EN-US" style="font-size:9.0pt"}[头域失败]{style="font-size:9.0pt;font-family:
-  宋体"}
+建立 Allow 头域：创建Allow头域失败
 
-[[Build Allow header: Failed to add *method* method to Allow.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_1719570272}
+Build Allow header: Failed to add *method* method to Allow.
 
-[[建立]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_x1623784322}[ Allow ]{lang="EN-US" style="font-size:9.0pt"}[头域：添加]{style="font-size:9.0pt;font-family:宋体"}*[method]{lang="EN-US" style="font-size:9.0pt"}*[方法到]{style="font-size:9.0pt;
-  font-family:宋体"}[Allow]{lang="EN-US" style="font-size:9.0pt"}[头域失败]{style="font-size:9.0pt;font-family:宋体"}
+建立 Allow 头域：添加*method*方法到Allow头域失败
 
-[[Allow]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x1823301303}[头域支持的方法如下]{style="font-size:9.0pt;font-family:宋体"}[(*method*]{lang="EN-US" style="font-size:9.0pt"}[的取值非如下值]{style="font-size:9.0pt;font-family:宋体"}[)]{lang="EN-US" style="font-size:9.0pt"}[：]{style="font-size:9.0pt;font-family:
-  宋体"}
+Allow头域支持的方法如下(*method*的取值非如下值)：
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[METHOD_TYPE_ACK]{lang="EN-US"}]{#struct_0_44918_15685_828543352}[：]{lang="EN-US" style="font-family:宋体"}[Allow]{lang="EN-US"}[头域支持]{style="font-family:宋体"}[ACK]{lang="EN-US"}[操作方法]{style="font-family:宋体"}
+·METHOD_TYPE_ACK：Allow头域支持ACK操作方法
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[METHOD_TYPE_BYE]{lang="EN-US"}]{#struct_0_44918_15685_x1113908230}[：]{style="font-family:宋体"}[Allow]{lang="EN-US"}[头域支持]{style="font-family:宋体"}[BYE]{lang="EN-US"}[操作方法]{style="font-family:宋体"}
+·METHOD_TYPE_BYE：Allow头域支持BYE操作方法
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[METHOD_TYPE_CANCEL]{lang="EN-US"}]{#struct_0_44918_15685_850044623}[：]{style="font-family:宋体"}[Allow]{lang="EN-US"}[头域支持]{style="font-family:宋体"}[CANCEL]{lang="EN-US"}[操作方法]{style="font-family:宋体"}
+·METHOD_TYPE_CANCEL：Allow头域支持CANCEL操作方法
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[METHOD_TYPE_INFO]{lang="EN-US"}]{#struct_0_44918_15685_x1365543443}[：]{style="font-family:宋体"}[Allow]{lang="EN-US"}[头域支持]{style="font-family:宋体"}[INFO]{lang="EN-US"}[操作方法]{style="font-family:宋体"}
+·METHOD_TYPE_INFO：Allow头域支持INFO操作方法
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[METHOD_TYPE_INVITE]{lang="EN-US"}]{#struct_0_44918_15685_1024229139}[：]{style="font-family:宋体"}[Allow]{lang="EN-US"}[头域支持]{style="font-family:宋体"}[INVITE]{lang="EN-US"}[操作方法]{style="font-family:宋体"}
+·METHOD_TYPE_INVITE：Allow头域支持INVITE操作方法
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[METHOD_TYPE_NOTIFY]{lang="EN-US"}]{#struct_0_44918_15685_831671698}[：]{style="font-family:宋体"}[Allow]{lang="EN-US"}[头域支持]{style="font-family:宋体"}[NOTIFY]{lang="EN-US"}[操作方法]{style="font-family:宋体"}
+·METHOD_TYPE_NOTIFY：Allow头域支持NOTIFY操作方法
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[METHOD_TYPE_PRACK]{lang="EN-US"}]{#struct_0_44918_15685_x1118828583}[：]{style="font-family:宋体"}[Allow]{lang="EN-US"}[头域支持]{style="font-family:宋体"}[PRACK]{lang="EN-US"}[操作方法]{style="font-family:宋体"}
+·METHOD_TYPE_PRACK：Allow头域支持PRACK操作方法
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[METHOD_TYPE_REFER]{lang="EN-US"}]{#struct_0_44918_15685_735901064}[：]{style="font-family:宋体"}[Allow]{lang="EN-US"}[头域支持]{style="font-family:宋体"}[REFER]{lang="EN-US"}[操作方法]{style="font-family:宋体"}
+·METHOD_TYPE_REFER：Allow头域支持REFER操作方法
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[METHOD_TYPE_REGISTER]{lang="EN-US"}]{#struct_0_44918_15685_200540498}[：]{style="font-family:宋体"}[Allow]{lang="EN-US"}[头域支持]{style="font-family:宋体"}[REGISTER]{lang="EN-US"}[操作方法]{style="font-family:宋体"}
+·METHOD_TYPE_REGISTER：Allow头域支持REGISTER操作方法
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[METHOD_TYPE_UPDATE]{lang="EN-US"}]{#struct_0_44918_15685_x771429807}[：]{style="font-family:宋体"}[Allow]{lang="EN-US"}[头域支持]{style="font-family:宋体"}[UPDATE]{lang="EN-US"}[操作方法]{style="font-family:宋体"}
+·METHOD_TYPE_UPDATE：Allow头域支持UPDATE操作方法
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[METHOD_TYPE_SUBSCRIBE]{lang="EN-US"}]{#struct_0_44918_15685_x266082037}[：]{style="font-family:宋体"}[Allow]{lang="EN-US"}[头域支持]{style="font-family:宋体"}[SUBSCRIBE]{lang="EN-US"}[操作方法]{style="font-family:宋体"}
+·METHOD_TYPE_SUBSCRIBE：Allow头域支持SUBSCRIBE操作方法
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[METHOD_TYPE_OPTIONS]{lang="EN-US"}]{#struct_0_44918_15685_413993367}[：]{style="font-family:宋体"}[Allow]{lang="EN-US"}[头域支持]{style="font-family:宋体"}[OPTIONS]{lang="EN-US"}[操作方法]{style="font-family:宋体"}
+·METHOD_TYPE_OPTIONS：Allow头域支持OPTIONS操作方法
 
-[ ]{lang="EN-US"}
+表1-2 debugging voice sip event令输出信息描述表
 
-[[表1-2 ]{lang="EN-US"}[debugging voice sip event]{lang="EN-US"}]{#struct_0_44918_15685_502428519}[令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1587496721}[[字段]{style="font-size:10.0pt;
-   font-family:黑体"}]{#struct_0_44918_15685_x1865693868}
+描述
 
-[[描述]{style="font-size:10.0pt;
-   font-family:黑体"}]{#struct_0_44918_15685_x452995078}
+ CMC \--\> SIP : *message-type*.
 
-[[ CMC \--\> SIP : *message-type*.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x602166302}
+SIP收到CMC发来的*message-type*消息
 
-[[SIP]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x1104225772}[收到]{style="font-size:9.0pt;font-family:宋体"}[CMC]{lang="EN-US" style="font-size:9.0pt"}[发来的]{style="font-size:9.0pt;
-  font-family:宋体"}*[message-type]{lang="EN-US" style="font-size:9.0pt"}*[消息]{style="font-size:9.0pt;font-family:宋体"}
+*[message-type*]的取值为：
 
-[*[message-type]{lang="EN-US" style="font-size:
-  9.0pt"}*]{#struct_0_44918_15685_x1009378619}[的取值为：]{style="font-size:9.0pt;font-family:
-  宋体"}
+·ACCP_SETUP：表示出局端，CMC向SIP发送建立新呼叫信令
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[ACCP_SETUP]{lang="EN-US"}]{#struct_0_44918_15685_1192078694}[：表示]{lang="EN-US" style="font-family:宋体"}[出]{style="font-family:宋体"}[局端]{lang="EN-US" style="font-family:宋体"}[，]{style="font-family:宋体"}[CMC]{lang="EN-US"}[向]{style="font-family:宋体"}[SIP]{lang="EN-US"}[发送建立新呼叫信令]{lang="EN-US" style="font-family:宋体"}
+·ACCP_CHANNEL_READY_ACK：表示出局端，CMC对SIP ACCP_CHANNEL_READY的应答信令
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[ACCP_CHANNEL_READY_ACK]{lang="EN-US"}]{#struct_0_44918_15685_x1673743412}[：表示出局端]{lang="EN-US" style="font-family:宋体"}[，]{style="font-family:宋体"}[CMC]{lang="EN-US"}[对]{style="font-family:宋体"}[SIP ]{lang="EN-US"}[ACCP_CHANNEL_READY]{lang="EN-US"}[的]{style="font-family:
-  宋体"}[应答信令]{lang="EN-US" style="font-family:宋体"}
+·ACCP_INDICATE：表示出局端CMC发送指示信令
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[ACCP_INDICATE]{lang="EN-US"}]{#struct_0_44918_15685_1979253301}[：表示出局端]{lang="EN-US" style="font-family:宋体"}[CMC]{lang="EN-US"}[发送]{lang="EN-US" style="font-family:宋体"}[指示]{style="font-family:宋体"}[信令]{lang="EN-US" style="font-family:宋体"}
+·ACCP_RELEASE_COMPLETE：表示出局端CMC发送释放结束信令
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[ACCP_RELEASE_COMPLETE]{lang="EN-US"}]{#struct_0_44918_15685_x1144346140}[：]{style="font-family:宋体"}[表示出局端]{lang="EN-US" style="font-family:宋体"}[CMC]{lang="EN-US"}[发送]{lang="EN-US" style="font-family:宋体"}[释放结束信令]{style="font-family:宋体"}
+SIP \--\> CMC : *message-type*.
 
-[[SIP \--\> CMC : *message-type*.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x640497895}
+SIP向CMC发送*message-type*消息
 
-[[SIP]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_44918_15685_450349647}[向]{style="font-size:9.0pt;font-family:宋体"}[CMC]{lang="EN-US" style="font-size:9.0pt"}[发送]{style="font-size:9.0pt;font-family:
-  宋体"}*[message-type]{lang="EN-US" style="font-size:9.0pt"}*[消息]{style="font-size:9.0pt;font-family:宋体"}
+*[message-type*]取值为：
 
-[*[message-type]{lang="EN-US" style="font-size:
-  9.0pt"}*]{#struct_0_44918_15685_1915943077}[取值为：]{style="font-size:9.0pt;font-family:
-  宋体"}
+·ACCP_SETUP_ACK：SIP向CMC发送通话建立的确认信令
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[ACCP_SETUP_ACK]{lang="EN-US"}]{#struct_0_44918_15685_x1534810576}[：]{lang="EN-US" style="font-family:宋体"}[SIP]{lang="EN-US"}[向]{style="font-family:宋体"}[CMC]{lang="EN-US"}[发送通话建立的确认信令]{style="font-family:宋体"}
+·ACCP_ALERTING：SIP向CMC发送振铃信令
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[ACCP_ALERTING]{lang="EN-US"}]{#struct_0_44918_15685_763076356}[：]{lang="EN-US" style="font-family:宋体"}[SIP]{lang="EN-US"}[向]{style="font-family:宋体"}[CMC]{lang="EN-US"}[发送振铃信令]{style="font-family:宋体"}
+·ACCP_CHANNEL_READY：SIP向CMC发送媒体通道就绪信令
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[ACCP_CHANNEL_READY]{lang="EN-US"}]{#struct_0_44918_15685_556705322}[：]{lang="EN-US" style="font-family:宋体"}[SIP]{lang="EN-US"}[向]{style="font-family:宋体"}[CMC]{lang="EN-US"}[发送媒体通道就绪信令]{style="font-family:宋体"}
+·ACCP_INFORMATION：SIP向CMC发送DTMF信令
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[ACCP_INFORMATION]{lang="EN-US"}]{#struct_0_44918_15685_x1082613606}[：]{lang="EN-US" style="font-family:宋体"}[SIP]{lang="EN-US"}[向]{style="font-family:宋体"}[CMC]{lang="EN-US"}[发送]{style="font-family:宋体"}[DTMF]{lang="EN-US"}[信令]{style="font-family:宋体"}
+·ACCP_CONNECT：SIP向CMC发送连接信令
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[ACCP_CONNECT]{lang="EN-US"}]{#struct_0_44918_15685_x2028859132}[：]{lang="EN-US" style="font-family:宋体"}[SIP]{lang="EN-US"}[向]{style="font-family:宋体"}[CMC]{lang="EN-US"}[发送连接信令]{style="font-family:宋体"}
+·ACCP_RELEASE：SIP向CMC发送通话释放信令
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[ACCP_RELEASE]{lang="EN-US"}]{#struct_0_44918_15685_1834091655}[：]{lang="EN-US" style="font-family:宋体"}[SIP]{lang="EN-US"}[向]{style="font-family:宋体"}[CMC]{lang="EN-US"}[发送通话释放信令]{style="font-family:宋体"}
+Adapter \--\> Stack : *message_type*.
 
-[[Adapter \--\> Stack : *message_type*.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x815882109}
+适配层向协议栈发送*message_type*消息
 
-[[适配层向协议栈发送]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_x911218197}*[message_type]{lang="EN-US" style="font-size:
-  9.0pt"}*[消息]{style="font-size:9.0pt;font-family:宋体"}
+*[message_type*]取值如下：
 
-[*[message_type]{lang="EN-US" style="font-size:
-  9.0pt"}*]{#struct_0_44918_15685_x151882038}[取值如下：]{style="font-size:9.0pt;font-family:
-  宋体"}
+·Setup request：适配层向协议栈发送呼叫建立请求
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Setup ]{lang="EN-US"}]{#struct_0_44918_15685_x411498024}[r]{lang="EN-US"}[equest]{lang="EN-US"}[：适配层向协议栈发送呼叫建立请求]{style="font-family:宋体"}
+·PRACK request：适配层向协议栈发送PRACK请求
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[PRACK ]{lang="EN-US"}]{#struct_0_44918_15685_1594193783}[r]{lang="EN-US"}[equest]{lang="EN-US"}[：适配层向协议栈发送]{style="font-family:宋体"}[PRACK]{lang="EN-US"}[请求]{style="font-family:宋体"}
+·Connect ackrequest：适配层向协议栈发送连接确认请求
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Connect ]{lang="EN-US"}]{#struct_0_44918_15685_2122789263}[ack]{lang="EN-US"}[ ]{lang="EN-US"}[r]{lang="EN-US"}[equest]{lang="EN-US"}[：适配层向协议栈发送连接确认请求]{style="font-family:宋体"}
+Stack \--\> Adapter : *message_type*.
 
-[[Stack \--\> Adapter : *message_type*.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x1614659399}
+协议栈向适配层发送*message_type*消息
 
-[[协议栈向适配层发送]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_x1749442704}*[message_type]{lang="EN-US" style="font-size:
-  9.0pt"}*[消息]{style="font-size:9.0pt;font-family:宋体"}
+*[message_type*]取值如下：
 
-[*[message_type]{lang="EN-US" style="font-size:
-  9.0pt"}*]{#struct_0_44918_15685_13205544}[取值如下：]{style="font-size:9.0pt;font-family:
-  宋体"}
+·Setup ack：协议栈向适配层发送连接确认消息
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[Setup ack]{lang="EN-US"}]{#struct_0_44918_15685_x36023884}[：协议栈向适配层发送连接确认消息]{style="font-family:
-  宋体"}
+·Alerting indication：协议栈向适配层发送振铃指示
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[Alerting ]{lang="EN-US"}]{#struct_0_44918_15685_654801862}[i]{lang="EN-US"}[ndication]{lang="EN-US"}[：协议栈向适配层发送振铃指示]{style="font-family:宋体"}
+·Prackresponse：协议栈向适配层发送Prack应答
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[P]{lang="EN-US"}]{#struct_0_44918_15685_x1000027354}[rack]{lang="EN-US"}[ ]{lang="EN-US"}[r]{lang="EN-US"}[esponse]{lang="EN-US"}[：协议栈向适配层发送]{style="font-family:宋体"}[Prack]{lang="EN-US"}[应答]{style="font-family:宋体"}
+·Connect indication：协议栈向适配层发送连接指示
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Connect ]{lang="EN-US"}]{#struct_0_44918_15685_x606094092}[i]{lang="EN-US"}[ndication]{lang="EN-US"}[：协议栈向适配层发送连接指示]{style="font-family:宋体"}
+·Release indication：协议栈向适配层发送通话释放指示
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Release ]{lang="EN-US"}]{#struct_0_44918_15685_2137899746}[i]{lang="EN-US"}[ndication]{lang="EN-US"}[：协议栈向适配层发送通话释放指示]{style="font-family:宋体"}
+The Content-Type header does not exist.
 
-[[The Content-Type header does not exist.]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_44918_15685_267139027}
+Content-Type头域不存在
 
-[[Content-Type]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_44918_15685_631384033}[头域不存在]{style="font-size:9.0pt;font-family:宋体"}
+Get first address by ip (*ip*)
 
-[[Get first address by ip (*ip*)]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x1257707349}
+通过ip的获取第一个地址
 
-[[通过]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_x385551923}[ip]{lang="EN-US" style="font-size:9.0pt"}[的获取第一个地址]{style="font-size:9.0pt;font-family:宋体"}
+*[ip*]为用于地址查询的ip
 
-[*[ip]{lang="EN-US" style="font-size:
-  9.0pt"}*]{#struct_0_44918_15685_1838791012}[为用于地址查询的]{style="font-size:9.0pt;font-family:宋体"}[ip]{lang="EN-US" style="font-size:9.0pt"}
+Get *signaling/media* address by global configuration.
 
-[[Get *signaling/media* address by global configuration.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x332029920}
+通过全局配置获取*信令**/媒体*地址
 
-[[通过全局配置获取*信令*]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_1316220209}*[/]{lang="EN-US" style="font-size:9.0pt"}[媒体]{style="font-size:9.0pt;
-  font-family:宋体"}*[地址]{style="font-size:9.0pt;font-family:宋体"}
+Set SDP media field: *MediaNumber*  media description(s) to be set.
 
-[[Set SDP media field: *MediaNumber*  media description(s) to be set.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_1587938663}
+设置SDP媒体域：*MediaNumber*个媒体行被设置
 
-[[设置]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_1595396472}[SDP]{lang="EN-US" style="font-size:9.0pt"}[媒体域：]{style="font-size:9.0pt;font-family:宋体"}*[MediaNumber]{lang="EN-US" style="font-size:9.0pt"}*[个媒体行被设置]{style="font-size:9.0pt;
-  font-family:宋体"}
+Codec negotiated result is voice media update.
 
-[[Codec negotiated result is voice media update.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_1748124166}
+编解码协商的结果是语音媒体更新
 
-[[编解码协商的结果是语音媒体更新]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_x337809072}
+DNS queried done, now the state is *state*
 
-[[DNS queried done, now the state is *state*]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x661515439}
+DNS查询完成，目前状态为*state*
 
-[[DNS]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x1412663146}[查询完成，目前状态为]{style="font-size:9.0pt;font-family:宋体"}*[state]{lang="EN-US" style="font-size:9.0pt"}*
+Audio media takes different media ip address or port
 
-[[Audio media takes different media ip address or port]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_44918_15685_139687088}
+语音媒体携带了不同的媒体地址或端口
 
-[[语音媒体携带了不同的媒体地址或端口]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_x2061740115}
+表1-3 debugging voice sip info令输出信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表1-3 ]{lang="EN-US"}[debugging voice sip info]{lang="EN-US"}]{#struct_0_44918_15685_x951027297}[令输出信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_1588096357}[[字段]{style="font-size:10.0pt;
-   font-family:黑体"}]{#struct_0_44918_15685_x272187041}
+Get loopback address for local using FIB.
 
-[[描述]{style="font-size:10.0pt;
-   font-family:黑体"}]{#struct_0_44918_15685_778717439}
+使用FIB表为本地获取loopback地址
 
-[[Get loopback address for local using FIB.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x1750519745}
+SIP service(Call-Waiting) is processing.
 
-[[使用]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_1133709304}[FIB]{lang="EN-US" style="font-size:9.0pt"}[表为本地获取]{style="font-size:9.0pt;font-family:宋体"}[loopback]{lang="EN-US" style="font-size:9.0pt"}[地址]{style="font-size:9.0pt;
-  font-family:宋体"}
+SIP业务(呼叫等待)正在处理
 
-[[SIP service(Call-Waiting) is processing.]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_44918_15685_519783671}
+Local ringing.
 
-[[SIP]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x1928515722}[业务]{style="font-size:9.0pt;font-family:宋体"}[(]{lang="EN-US" style="font-size:9.0pt"}[呼叫等待]{style="font-size:9.0pt;
-  font-family:宋体"}[)]{lang="EN-US" style="font-size:9.0pt"}[正在处理]{style="font-size:9.0pt;font-family:宋体"}
+本地振铃
 
-[[Local ringing.]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_44918_15685_153420795}
+There is no SDP in SIP message.
 
-[[本地振铃]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_1725937552}
+SIP消息中不存在SDP
 
-[[There is no SDP in SIP message.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x164643296}
+Reconnecting to HA daemon, Please wait\...
 
-[[SIP]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x1861320866}[消息中不存在]{style="font-size:9.0pt;font-family:宋体"}[SDP]{lang="EN-US" style="font-size:9.0pt"}
+重连HA守护进程，请等待......
 
-[[Reconnecting to HA daemon, Please wait\...]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_44918_15685_575707167}
+Failed to connect to HA daemon.
 
-[[重连]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_1544003440}[HA]{lang="EN-US" style="font-size:9.0pt"}[守护进程，请等待]{style="font-size:9.0pt;font-family:宋体"}[......]{lang="EN-US" style="font-size:9.0pt"}
+连接HA守护进程失败
 
-[[Failed to connect to HA daemon.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_1260965694}
+表1-4 debugging voice sip timer令输出信息描述表
 
-[[连接]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_x1927243339}[HA]{lang="EN-US" style="font-size:9.0pt"}[守护进程失败]{style="font-size:9.0pt;font-family:宋体"}
+字段
 
-[ ]{lang="EN-US"}
+描述
 
-[[表1-4 ]{lang="EN-US"}[debugging voice sip timer]{lang="EN-US"}]{#struct_0_44918_15685_x984953861}[令输出信息描述表]{style="font-family:黑体"}
+*module* start timer, Group id = *number1*, Index = *number2*, Duration = *number3*
 
-[]{#table_struct_0_1581760925}[[字段]{style="font-size:10.0pt;
-   font-family:黑体"}]{#struct_0_44918_15685_1719504736}
+*[module*]启动定时器，Group id 为*number1，*Index为*number2，*Duration为*number3*
 
-[[描述]{style="font-size:10.0pt;
-   font-family:黑体"}]{#struct_0_44918_15685_1910429422}
+Deleting timer within RCB *rcb_id* server *server_index* before sending unregistration message.
 
-[[\[*module*\] start timer, Group id = *number1*, Index = *number2*, Duration = *number3*]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x2088684320}
+在发送去注册之前删除注册控制块*server_index*服务器*rcb_id*控制块内的定时器
 
-[*[module]{lang="EN-US" style="font-size:
-  9.0pt"}*]{#struct_0_44918_15685_x1909858576}[启动定时器，]{style="font-size:9.0pt;font-family:宋体"}[Group id ]{lang="EN-US" style="font-size:9.0pt"}[为]{style="font-size:
-  9.0pt;font-family:宋体"}*[number1]{lang="EN-US" style="font-size:9.0pt"}[，]{style="font-size:9.0pt;font-family:宋体"}*[Index]{lang="EN-US" style="font-size:9.0pt"}[为]{style="font-size:9.0pt;font-family:
-  宋体"}*[number2]{lang="EN-US" style="font-size:9.0pt"}[，]{style="font-size:9.0pt;font-family:宋体"}*[Duration]{lang="EN-US" style="font-size:9.0pt"}[为]{style="font-size:9.0pt;
-  font-family:宋体"}*[number3]{lang="EN-US" style="font-size:9.0pt"}*
+Timer for sending REGISTER messages will be created
 
-[[Deleting timer within RCB *rcb_id* server *server_index* before sending unregistration message.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x2085994581}
+before adding RCB *rcb_id* to message-sending list.
 
-[[在发送去注册之前删除注册控制块]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_x781614681}*[server_index]{lang="EN-US" style="font-size:9.0pt"}*[服务器]{style="font-size:9.0pt;
-  font-family:宋体"}*[rcb_id]{lang="EN-US" style="font-size:9.0pt"}*[控制块内的定时器]{style="font-size:9.0pt;font-family:宋体"}
+在*rcb_id*控制块添加到消息发送链表之前注册报文发送定时器将被创建
 
-[[Timer for sending REGISTER messages will be created ]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x203352161}
+SIP_REGISTER The message sending list is empty.
 
-[[before adding RCB *rcb_id* to message-sending list.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_1146488785}
+SIP注册：消息发送链表为空
 
-[[在]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_x986585038}*[rcb_id]{lang="EN-US" style="font-size:9.0pt"}*[控制块添加到消息发送链表之前注册报文发送定时器将被创建]{style="font-size:9.0pt;font-family:宋体"}
+表1-5 debugging voice sip fsm令输出信息描述表
 
-[[\[SIP_REGISTER\] The message sending list is empty.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x420901935}
+字段
 
-[[SIP]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_44918_15685_x1870367145}[注册：消息发送链表为空]{style="font-size:9.0pt;font-family:宋体"}
+描述
 
-[ ]{lang="EN-US"}
+SIP_CALL*id*: Process the event of *event_type* in state *state_type*.
 
-[[表1-5 ]{lang="EN-US"}[debugging voice sip fsm]{lang="EN-US"}]{#struct_0_44918_15685_1548244110}[令输出信息描述表]{style="font-family:黑体"}
+在*state_type*状态下处理*event_type*事件
 
-[]{#table_struct_0_1585445153}[[字段]{style="font-size:10.0pt;
-   font-family:黑体"}]{#struct_0_44918_15685_x1365608979}
+*[id*]用于标识一路呼叫
 
-[[描述]{style="font-size:10.0pt;
-   font-family:黑体"}]{#struct_0_44918_15685_424743158}
+*[state_type*]取值如下：
 
-[[\[SIP_CALL\]\[*id*\]: Process the event of *event_type* in state *state_type*.]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_44918_15685_x36592662}
+·EVENT_ACCP_SETUP：建立连接事件
 
-[[在]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_44918_15685_x92414647}*[state_type]{lang="EN-US" style="font-size:9.0pt"}*[状态下处理]{style="font-size:9.0pt;font-family:宋体"}*[event_type]{lang="EN-US" style="font-size:9.0pt"}*[事件]{style="font-size:9.0pt;
-  font-family:宋体"}
+·EVENT_NO_FEATURE_SETUP：非特性连接事件
 
-[*[id]{lang="EN-US" style="font-size:
-  9.0pt"}*]{#struct_0_44918_15685_x410183782}[用于标识一路呼叫]{style="font-size:9.0pt;font-family:宋体"}
+·EVENT_ADDR_IN_DAILPEER：Dial peer获取地址事件
 
-[*[state_type]{lang="EN-US" style="font-size:
-  9.0pt"}*]{#struct_0_44918_15685_2044228673}[取值如下：]{style="font-size:9.0pt;font-family:
-  宋体"}
+·EVENT_LOOKUP_SUCCESS：地址查询成功事件
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[EVENT_ACCP_SETUP]{lang="EN-US"}]{#struct_0_44918_15685_159767526}[：建立连接事件]{style="font-family:宋体"}
+·EVENT_GET_ADDRINFO_SUCCESS：获取地址成功事件
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[EVENT_NO_FEATURE_SETUP]{lang="EN-US"}]{#struct_0_44918_15685_x668092875}[：非特性连接事件]{style="font-family:宋体"}
+·EVENT_SIP_ALERTING：振铃事件
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[EVENT_ADDR_IN_DAILPEER]{lang="EN-US"}]{#struct_0_44918_15685_x2039477868}[：]{style="font-family:宋体"}[Dial peer]{lang="EN-US"}[获取地址事件]{style="font-family:宋体"}
+·EVENT_EXIST_SDP_BODY：存在SDP事件
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[EVENT_LOOKUP_SUCCESS]{lang="EN-US"}]{#struct_0_44918_15685_1962752217}[：地址查询成功事件]{style="font-family:宋体"}
+·EVENT_SIP_CONNECT：连接建立事件
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[EVENT_GET_ADDRINFO_SUCCESS]{lang="EN-US"}]{#struct_0_44918_15685_701447330}[：获取地址成功事件]{style="font-family:宋体"}
+·EVENT_SIP_RELEASE：释放连接事件
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[EVENT_SIP_ALERTING]{lang="EN-US"}]{#struct_0_44918_15685_200474962}[：振铃事件]{style="font-family:宋体"}
+*[event_type*]取值如下：
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[EVENT_EXIST_SDP_BODY]{lang="EN-US"}]{#struct_0_44918_15685_x849203009}[：存在]{style="font-family:宋体"}[SDP]{lang="EN-US"}[事件]{style="font-family:宋体"}
+·STATE_IDLE：空闲状态
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[EVENT_SIP_CONNECT]{lang="EN-US"}]{#struct_0_44918_15685_x1157653487}[：连接建立事件]{style="font-family:宋体"}
+·STATE_CALL_ORIGINATING：呼叫发起等待应答状态
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[EVENT_SIP_RELEASE]{lang="EN-US"}]{#struct_0_44918_15685_614381674}[：释放连接事件]{style="font-family:宋体"}
+·STATE_CONNECTED：呼叫建立状态
 
-[*[event_type]{lang="EN-US" style="font-size:
-  9.0pt"}*]{#struct_0_44918_15685_x1423152205}[取值如下：]{style="font-size:9.0pt;font-family:
-  宋体"}
+·STATE_CALL_TERMINATING：呼叫终止状态
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[S]{lang="EN-US"}]{#struct_0_44918_15685_1814719646}[TATE_IDLE]{lang="EN-US"}[：空闲状态]{style="font-family:宋体"}
+·STATE_MEDIA_IDLE：媒体空闲状态
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[STATE_CALL_ORIGINATING]{lang="EN-US"}]{#struct_0_44918_15685_x194562811}[：呼叫发起等待应答状态]{style="font-family:宋体"}
+【举例】
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[STATE_CONNECTED]{lang="EN-US"}]{#struct_0_44918_15685_942095569}[：呼叫建立状态]{style="font-family:宋体"}
+\# 本地LGS通过IP网络建立了呼叫。打开主叫侧SIP所有类型的调试信息输出开关。
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[STATE_CALL_TERMINATING]{lang="EN-US"}]{#struct_0_44918_15685_x1849297671}[：呼叫终止状态]{style="font-family:宋体"}
+\<Sysname\>debugging voice sip all
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[STATE_MEDIA_IDLE]{lang="EN-US"}]{#struct_0_44918_15685_x1047841896}[：媒体空闲状态]{style="font-family:宋体"}
+\<Sysname\>\*Jan 23 10:21:15:262 2014 Sysname SIP/7/SIPDBG:
 
-[ ]{lang="EN-US"}
+SIP EVENT: CMC \--\> SIP : ACCP_SETUP.
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_44918_15685_x1009444155}
+*[// SIP*]*收到CMC发来的启动呼叫（ACCP_SETUP）消息*
 
-[[\# ]{lang="EN-US"}]{#struct_0_44918_15685_x822207306}[本地]{style="font-family:宋体"}[LGS]{lang="EN-US"}[通过]{style="font-family:宋体"}[IP]{lang="EN-US"}[网络建立了呼叫。打开主叫侧]{style="font-family:宋体"}[SIP]{lang="EN-US"}[所有类型的调试信息输出开关。]{style="font-family:宋体"}
+\*Jan 23 10:21:15:263 2014 Sysname SIP/7/SIPDBG:
 
-[[\<Sysname\>debugging voice sip all]{lang="EN-US"}]{#struct_0_44918_15685_x72315877}
+SIP FSM: [SIP_CALL1: Process the event of EVENT_ACCP_SETUP in state STATE_IDLE.]
 
-[\<Sysname\>\*Jan 23 10:21:15:262 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+*[// SIP*]*呼叫状态机在初始状态下处理 ACCP_SETUP消息*
 
-[SIP EVENT: CMC \--\> SIP : ACCP_SETUP.]{lang="EN-US"}
+\*Jan 23 10:21:15:263 2014 Sysname SIP/7/SIPDBG:
 
-[*[// SIP]{lang="EN-US"}*]{#struct_0_44918_15685_x2028034647}*[收到]{style="font-family:宋体"}[CMC]{lang="EN-US"}[发来的启动呼叫（]{style="font-family:宋体"}[ACCP_SETUP]{lang="EN-US"}[）消息]{style="font-family:宋体"}*
+SIP EVENT: Do not exist content type.
 
-[ ]{lang="EN-US"}
+\*Jan 23 10:21:15:263 2014 Sysname SIP/7/SIPDBG:
 
-[[\*Jan 23 10:21:15:263 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}]{#struct_0_44918_15685_730810687}
+SIP EVENT: The header of ReferredBy does not exist.
 
-[SIP FSM: \[SIP_CALL\]\[1\]: Process the event of EVENT_ACCP_SETUP in state STATE_IDLE.]{lang="EN-US"}
+\*Jan 23 10:21:15:263 2014 Sysname SIP/7/SIPDBG:
 
-[*[// SIP]{lang="EN-US"}*]{#struct_0_44918_15685_x1102515334}*[呼叫状态机在初始状态下处理]{style="font-family:宋体"} [ACCP_SETUP]{lang="EN-US"}[消息]{style="font-family:宋体"}*
+SIP FSM: [SIP_CALL1: Process the event of EVENT_NO_FEATURE_SETUP in state STATE_IDLE.]
 
-[ ]{lang="EN-US"}
+\*Jan 23 10:21:15:263 2014 Sysname SIP/7/SIPDBG:
 
-[[\*Jan 23 10:21:15:263 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}]{#struct_0_44918_15685_556639786}
+SIP FSM: [SIP_CALL1: Process the event of EVENT_ADDR_IN_DAILPEER in state STATE_IDLE.]
 
-[SIP EVENT: Do not exist content type.]{lang="EN-US"}
+\*Jan 23 10:21:15:263 2014 Sysname SIP/7/SIPDBG:
 
-[ ]{lang="EN-US"}
+SIP EVENT: Get first address by ip (192.168.4.16).
 
-[\*Jan 23 10:21:15:263 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+\*Jan 23 10:21:15:263 2014 Sysname SIP/7/SIPDBG:
 
-[SIP EVENT: The header of ReferredBy does not exist.]{lang="EN-US"}
+SIP FSM: [SIP_CALL1: Process the event of EVENT_LOOKUP_SUCCESS in state STATE_IDLE.]
 
-[ ]{lang="EN-US"}
+\*Jan 23 10:21:15:264 2014 Sysname SIP/7/SIPDBG:
 
-[\*Jan 23 10:21:15:263 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+SIP EVENT: Get signalling address by global.
 
-[SIP FSM: \[SIP_CALL\]\[1\]: Process the event of EVENT_NO_FEATURE_SETUP in state STATE_IDLE.]{lang="EN-US"}
+\*Jan 23 10:21:15:264 2014 Sysname SIP/7/SIPDBG:
 
-[ ]{lang="EN-US"}
+SIP INFO: Get address from GigabitEthernet0/0(192.168.4.66).
 
-[\*Jan 23 10:21:15:263 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+\*Jan 23 10:21:15:264 2014 Sysname SIP/7/SIPDBG:
 
-[SIP FSM: \[SIP_CALL\]\[1\]: Process the event of EVENT_ADDR_IN_DAILPEER in state STATE_IDLE.]{lang="EN-US"}
+SIP FSM: [SIP_CALL1: Process the event of EVENT_GET_ADDRINFO_SUCCESS in state STATE_IDLE.]
 
-[ ]{lang="EN-US"}
+\*Jan 23 10:21:15:264 2014 Sysname SIP/7/SIPDBG:
 
-[\*Jan 23 10:21:15:263 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+SIP EVENT: SIP \--\> CMC : ACCP_SETUP_ACK.
 
-[SIP EVENT: Get first address by ip (192.168.4.16).]{lang="EN-US"}
+*[// SIP*]*向CMC回复ACCP_SETUP_ACK*消息
 
-[ ]{lang="EN-US"}
+\*Jan 23 10:21:15:265 2014 Sysname SIP/7/SIPDBG:
 
-[\*Jan 23 10:21:15:263 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+SIP EVENT: SIP set SDP media field: total 1 media description(s) to be set.
 
-[SIP FSM: \[SIP_CALL\]\[1\]: Process the event of EVENT_LOOKUP_SUCCESS in state STATE_IDLE.]{lang="EN-US"}
+\*Jan 23 10:21:15:271 2014 Sysname SIP/7/SIPDBG:
 
-[ ]{lang="EN-US"}
+SIP EVENT: Adapter \--\> Stack : Setup Request.
 
-[\*Jan 23 10:21:15:264 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+*[// SIP*]*适配层向协议栈发送SETUP请求*
 
-[SIP EVENT: Get signalling address by global.]{lang="EN-US"}
+\*Jan 23 10:21:15:272 2014 Sysname SIP/7/SIPDBG:
 
-[ ]{lang="EN-US"}
+SIP EVENT: SrcAddr: 192.168.4.66, SrcPort: 5060, DestAddr: 192.168.4.16, DestPort: 5060, Protocol: UDP
 
-[\*Jan 23 10:21:15:264 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+\*Jan 23 10:21:15:272 2014 Sysname SIP/7/SIPDBG:
 
-[SIP INFO: Get address from GigabitEthernet0/0(192.168.4.66).]{lang="EN-US"}
+Stack\-\--\>NetWork:
 
-[ ]{lang="EN-US"}
+INVITE sip:444@192.168.4.16:5060;user=phone SIP/2.0
 
-[\*Jan 23 10:21:15:264 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+Via: SIP/2.0/UDP 192.168.4.66:5060;branch=z9hG4bK607a839c51b
 
-[SIP FSM: \[SIP_CALL\]\[1\]: Process the event of EVENT_GET_ADDRINFO_SUCCESS in state STATE_IDLE.]{lang="EN-US"}
+Call-ID: 0330805cef6264d4830aea1c470fc37c@192.168.4.66
 
-[ ]{lang="EN-US"}
+From: \<sip:666@192.168.4.66;user=phone\>;tag=557a839c
 
-[\*Jan 23 10:21:15:264 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+To: \<sip:444@192.168.4.16;user=phone\>
 
-[SIP EVENT: SIP \--\> CMC : ACCP_SETUP_ACK.]{lang="EN-US"}
+CSeq: 1 INVITE
 
-[*[// SIP]{lang="EN-US"}*]{#struct_0_44918_15685_x713985247}*[向]{style="font-family:宋体"}[CMC]{lang="EN-US"}[回复]{style="font-family:宋体"}[ACCP_SETUP_ACK]{lang="EN-US"}*[消息]{style="font-size:8.5pt;font-family:
-宋体"}
+Contact: \<sip:666@192.168.4.66:5060;user=phone\>
 
-[ ]{lang="EN-US"}
+Supported: timer,100rel
 
-[[\*Jan 23 10:21:15:265 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}]{#struct_0_44918_15685_403910862}
+Allow: INVITE,ACK,OPTIONS,BYE,CANCEL,REGISTER,INFO,PRACK,SUBSCRIBE,NOTIFY,UPDATE,REFER
 
-[SIP EVENT: SIP set SDP media field: total 1 media description(s) to be set.]{lang="EN-US"}
+Date: Thu, 23 Jan 2014 10:21:15 GMT
 
-[ ]{lang="EN-US"}
+Remote-Party-ID: \<sip:666@192.168.4.66;user=phone\>;party=calling;privacy=off
 
-[\*Jan 23 10:21:15:271 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+Max-Forwards: 70
 
-[SIP EVENT: Adapter \--\> Stack : Setup Request.]{lang="EN-US"}
+Content-Length: 238
 
-[*[// SIP]{lang="EN-US"}*]{#struct_0_44918_15685_x1662606191}*[适配层向协议栈发送]{style="font-family:宋体"}[SETUP]{lang="EN-US"}[请求]{style="font-family:宋体"}*
+Content-Type: application/sdp
 
-[ ]{lang="EN-US"}
+v=0
 
-[[\*Jan 23 10:21:15:272 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}]{#struct_0_44918_15685_2122723727}
+o=H3C 1390472475 1390472475 IN IP4 192.168.4.66
 
-[SIP EVENT: SrcAddr: 192.168.4.66, SrcPort: 5060, DestAddr: 192.168.4.16, DestPort: 5060, Protocol: UDP]{lang="EN-US"}
+s=Sip Call
 
-[ ]{lang="EN-US"}
+c=IN IP4 192.168.4.66
 
-[\*Jan 23 10:21:15:272 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+t=0 0
 
-[Stack\-\--\>NetWork:]{lang="EN-US"}
+m=audio 16302 RTP/AVP 18 8 0 4
 
-[INVITE sip:444@192.168.4.16:5060;user=phone SIP/2.0]{lang="EN-US"}
+a=rtpmap:18 G729/8000
 
-[Via: SIP/2.0/UDP 192.168.4.66:5060;branch=z9hG4bK607a839c51b]{lang="EN-US"}
+a=fmtp:18 annexb=no
 
-[Call-ID: 0330805cef6264d4830aea1c470fc37c@192.168.4.66]{lang="EN-US"}
+a=rtpmap:8 PCMA/8000
 
-[From: \<sip:666@192.168.4.66;user=phone\>;tag=557a839c]{lang="EN-US"}
+a=rtpmap:0 PCMU/8000
 
-[To: \<sip:444@192.168.4.16;user=phone\>]{lang="EN-US"}
+a=rtpmap:4 G723/8000
 
-[CSeq: 1 INVITE]{lang="EN-US"}
+*[// SIP*]*协议栈向网络侧发送INVITE报文*
 
-[Contact: \<sip:666@192.168.4.66:5060;user=phone\>]{lang="EN-US"}
+\*Jan 23 10:21:15:272 2014 Sysname SIP/7/SIPDBG:
 
-[Supported: timer,100rel]{lang="EN-US"}
+SIP EVENT: Get signalling address by global.
 
-[Allow: INVITE,ACK,OPTIONS,BYE,CANCEL,REGISTER,INFO,PRACK,SUBSCRIBE,NOTIFY,UPDATE,REFER]{lang="EN-US"}
+\*Jan 23 10:21:15:272 2014 Sysname SIP/7/SIPDBG:
 
-[Date: Thu, 23 Jan 2014 10:21:15 GMT]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_TPT Start Timer, Group id = 2, Index = 411, Duration = 30000.]
 
-[Remote-Party-ID: \<sip:666@192.168.4.66;user=phone\>;party=calling;privacy=off]{lang="EN-US"}
+\*Jan 23 10:21:15:273 2014 Sysname SIP/7/SIPDBG:
 
-[Max-Forwards: 70]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_TXN Start Timer, Group id = 3, Index = 50, Duration = 500.]
 
-[Content-Length: 238]{lang="EN-US"}
+\*Jan 23 10:21:15:273 2014 Sysname SIP/7/SIPDBG:
 
-[Content-Type: application/sdp]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_TXN Start Timer, Group id = 4, Index = 50, Duration = 32000.]
 
-[ ]{lang="EN-US"}
+\*Jan 23 10:21:15:273 2014 Sysname SIP/7/SIPDBG:
 
-[v=0]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_UA Start Timer, Group id = 9, Index = 1, Duration = 600000.]
 
-[o=H3C 1390472475 1390472475 IN IP4 192.168.4.66]{lang="EN-US"}
+\*Jan 23 10:21:15:273 2014 Sysname SIP/7/SIPDBG:
 
-[s=Sip Call]{lang="EN-US"}
+SIP EVENT: Stack \--\> Adapter : Setup Ack.
 
-[c=IN IP4 192.168.4.66]{lang="EN-US"}
+*[// SIP*]*协议栈向适配层发送SETUP请求的应答消息*
 
-[t=0 0]{lang="EN-US"}
+\*Jan 23 10:21:15:273 2014 Sysname SIP/7/SIPDBG:
 
-[m=audio 16302 RTP/AVP 18 8 0 4]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_TPT Stop Timer, Group id = 2, Index = 411.]
 
-[a=rtpmap:18 G729/8000]{lang="EN-US"}
+\*Jan 23 10:21:15:277 2014 Sysname SIP/7/SIPDBG:
 
-[a=fmtp:18 annexb=no]{lang="EN-US"}
+SIP EVENT: SrcAddr: 192.168.4.16, SrcPort: 64135, DestAddr: 192.168.4.66, DestPort: 5060, Protocol: UDP
 
-[a=rtpmap:8 PCMA/8000]{lang="EN-US"}
+\*Jan 23 10:21:15:278 2014 Sysname SIP/7/SIPDBG:
 
-[a=rtpmap:0 PCMU/8000]{lang="EN-US"}
+NetWork\-\--\>Stack:
 
-[a=rtpmap:4 G723/8000]{lang="EN-US"}
+SIP/2.0 100 Trying
 
-[*[// SIP]{lang="EN-US"}*]{#struct_0_44918_15685_787514643}*[协议栈向网络侧发送]{style="font-family:宋体"}[INVITE]{lang="EN-US"}[报文]{style="font-family:宋体"}*
+Via: SIP/2.0/UDP 192.168.4.66:5060;branch=z9hG4bK607a839c51b
 
-[ ]{lang="EN-US"}
+From: \<sip:666@192.168.4.66;user=phone\>;tag=557a839c
 
-[[\*Jan 23 10:21:15:272 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}]{#struct_0_44918_15685_1679152903}
+To: \<sip:444@192.168.4.16;user=phone\>
 
-[SIP EVENT: Get signalling address by global.]{lang="EN-US"}
+Date: Thu, 23 Jan 2014 02:25:36 GMT
 
-[ ]{lang="EN-US"}
+Call-ID: 0330805cef6264d4830aea1c470fc37c@192.168.4.66
 
-[\*Jan 23 10:21:15:272 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+CSeq: 1 INVITE
 
-[SIP TIMER: \[SIP_COMP_TPT\] Start Timer, Group id = 2, Index = 411, Duration = 30000.]{lang="EN-US"}
+Allow-Events: telephone-event
 
-[ ]{lang="EN-US"}
+Server: Cisco-SIPGateway/IOS-15.2.4.M2
 
-[\*Jan 23 10:21:15:273 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+Content-Length: 0
 
-[SIP TIMER: \[SIP_COMP_TXN\] Start Timer, Group id = 3, Index = 50, Duration = 500.]{lang="EN-US"}
+*[// SIP*]*协议栈从网络侧收到100trying报文*
 
-[ ]{lang="EN-US"}
+\*Jan 23 10:21:15:278 2014 Sysname SIP/7/SIPDBG:
 
-[\*Jan 23 10:21:15:273 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_TXN Stop Timer, Group id = 3, Index = 50.]
 
-[SIP TIMER: \[SIP_COMP_TXN\] Start Timer, Group id = 4, Index = 50, Duration = 32000.]{lang="EN-US"}
+\*Jan 23 10:21:15:323 2014 Sysname SIP/7/SIPDBG:
 
-[ ]{lang="EN-US"}
+SIP EVENT: SrcAddr: 192.168.4.16, SrcPort: 64135, DestAddr: 192.168.4.66, DestPort: 5060, Protocol: UDP
 
-[\*Jan 23 10:21:15:273 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+\*Jan 23 10:21:15:324 2014 Sysname SIP/7/SIPDBG:
 
-[SIP TIMER: \[SIP_COMP_UA\] Start Timer, Group id = 9, Index = 1, Duration = 600000.]{lang="EN-US"}
+NetWork\-\--\>Stack:
 
-[ ]{lang="EN-US"}
+SIP/2.0 183 Session Progress
 
-[\*Jan 23 10:21:15:273 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+Via: SIP/2.0/UDP 192.168.4.66:5060;branch=z9hG4bK607a839c51b
 
-[SIP EVENT: Stack \--\> Adapter : Setup Ack.]{lang="EN-US"}
+From: \<sip:666@192.168.4.66;user=phone\>;tag=557a839c
 
-[*[// SIP]{lang="EN-US"}*]{#struct_0_44918_15685_2028805661}*[协议栈向适配层发送]{style="font-family:宋体"}[SETUP]{lang="EN-US"}[请求的应答消息]{style="font-family:宋体"}*
+To: \<sip:444@192.168.4.16;user=phone\>;tag=CE097BD4-1B9D
 
-[ ]{lang="EN-US"}
+Date: Thu, 23 Jan 2014 02:25:36 GMT
 
-[[\*Jan 23 10:21:15:273 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}]{#struct_0_44918_15685_x170145652}
+Call-ID: 0330805cef6264d4830aea1c470fc37c@192.168.4.66
 
-[SIP TIMER: \[SIP_COMP_TPT\] Stop Timer, Group id = 2, Index = 411.]{lang="EN-US"}
+CSeq: 1 INVITE
 
-[ ]{lang="EN-US"}
+Require: 100rel
 
-[\*Jan 23 10:21:15:277 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+RSeq: 8
 
-[SIP EVENT: SrcAddr: 192.168.4.16, SrcPort: 64135, DestAddr: 192.168.4.66, DestPort: 5060, Protocol: UDP]{lang="EN-US"}
+Allow: INVITE, OPTIONS, BYE, CANCEL, ACK, PRACK, UPDATE, REFER, SUBSCRIBE, NOTIFY, INFO, REGISTER
 
-[ ]{lang="EN-US"}
+Allow-Events: telephone-event
 
-[\*Jan 23 10:21:15:278 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+Remote-Party-ID: \<sip:444@192.168.4.16\>;party=called;screen=no;privacy=off
 
-[NetWork\-\--\>Stack:]{lang="EN-US"}
+Contact: \<sip:444@192.168.4.16:5060\>
 
-[SIP/2.0 100 Trying]{lang="EN-US"}
+Supported: sdp-anat
 
-[Via: SIP/2.0/UDP 192.168.4.66:5060;branch=z9hG4bK607a839c51b]{lang="EN-US"}
+Server: Cisco-SIPGateway/IOS-15.2.4.M2
 
-[From: \<sip:666@192.168.4.66;user=phone\>;tag=557a839c]{lang="EN-US"}
+Content-Type: application/sdp
 
-[To: \<sip:444@192.168.4.16;user=phone\>]{lang="EN-US"}
+Content-Disposition: session;handling=required
 
-[Date: Thu, 23 Jan 2014 02:25:36 GMT]{lang="EN-US"}
+Content-Length: 191
 
-[Call-ID: 0330805cef6264d4830aea1c470fc37c@192.168.4.66]{lang="EN-US"}
+v=0
 
-[CSeq: 1 INVITE]{lang="EN-US"}
+o=CiscoSystemsSIP-GW-UserAgent 2464 7928 IN IP4 192.168.4.16
 
-[Allow-Events: telephone-event]{lang="EN-US"}
+s=SIP Call
 
-[Server: Cisco-SIPGateway/IOS-15.2.4.M2]{lang="EN-US"}
+c=IN IP4 192.168.4.16
 
-[Content-Length: 0]{lang="EN-US"}
+t=0 0
 
-[*[// SIP]{lang="EN-US"}*]{#struct_0_44918_15685_x606159628}*[协议栈从网络侧收到]{style="font-family:宋体"}[100trying]{lang="EN-US"}[报文]{style="font-family:宋体"}*
+m=audio 20306 RTP/AVP 8
 
-[ ]{lang="EN-US"}
+c=IN IP4 192.168.4.16
 
-[[\*Jan 23 10:21:15:278 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}]{#struct_0_44918_15685_x227079597}
+a=rtpmap:8 PCMA/8000
 
-[SIP TIMER: \[SIP_COMP_TXN\] Stop Timer, Group id = 3, Index = 50.]{lang="EN-US"}
+a=pti
 
-[ ]{lang="EN-US"}
+\*Jan 23 10:21:15:324 2014 Sysname SIP/7/SIPDBG: continuing\...
 
-[\*Jan 23 10:21:15:323 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+me:20
 
-[SIP EVENT: SrcAddr: 192.168.4.16, SrcPort: 64135, DestAddr: 192.168.4.66, DestPort: 5060, Protocol: UDP]{lang="EN-US"}
+*[// SIP*]*协议栈从网络侧收到100trying报文*
 
-[ ]{lang="EN-US"}
+\*Jan 23 10:21:15:324 2014 Sysname SIP/7/SIPDBG:
 
-[\*Jan 23 10:21:15:324 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_TXN Stop Timer, Group id = 4, Index = 50.]
 
-[NetWork\-\--\>Stack:]{lang="EN-US"}
+\*Jan 23 10:21:15:324 2014 Sysname SIP/7/SIPDBG:
 
-[SIP/2.0 183 Session Progress]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_TXN Start Timer, Group id = 4, Index = 50, Duration = 256000.]
 
-[Via: SIP/2.0/UDP 192.168.4.66:5060;branch=z9hG4bK607a839c51b]{lang="EN-US"}
+\*Jan 23 10:21:15:324 2014 Sysname SIP/7/SIPDBG:
 
-[From: \<sip:666@192.168.4.66;user=phone\>;tag=557a839c]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_UA Start Timer, Group id = 5, Index = 1, Duration = 128000.]
 
-[To: \<sip:444@192.168.4.16;user=phone\>;tag=CE097BD4-1B9D]{lang="EN-US"}
+\*Jan 23 10:21:15:325 2014 Sysname SIP/7/SIPDBG:
 
-[Date: Thu, 23 Jan 2014 02:25:36 GMT]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_UA Stop Timer, Group id = 9, Index = 1.]
 
-[Call-ID: 0330805cef6264d4830aea1c470fc37c@192.168.4.66]{lang="EN-US"}
+\*Jan 23 10:21:15:325 2014 Sysname SIP/7/SIPDBG:
 
-[CSeq: 1 INVITE]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_UA Start Timer, Group id = 9, Index = 1, Duration = 600000.]
 
-[Require: 100rel]{lang="EN-US"}
+\*Jan 23 10:21:15:325 2014 Sysname SIP/7/SIPDBG:
 
-[RSeq: 8]{lang="EN-US"}
+SIP EVENT: Stack \--\> Adapter : Alerting Indication.
 
-[Allow: INVITE, OPTIONS, BYE, CANCEL, ACK, PRACK, UPDATE, REFER, SUBSCRIBE, NOTIFY, INFO, REGISTER]{lang="EN-US"}
+*[// SIP*]*协议栈向适配层上报Alerting指令*
 
-[Allow-Events: telephone-event]{lang="EN-US"}
+\*Jan 23 10:21:15:325 2014 Sysname SIP/7/SIPDBG:
 
-[Remote-Party-ID: \<sip:444@192.168.4.16\>;party=called;screen=no;privacy=off]{lang="EN-US"}
+SIP FSM: [SIP_CALL1: Process the event of EVENT_SIP_ALERTING in state STATE_CALL_ORIGINATING.]
 
-[Contact: \<sip:444@192.168.4.16:5060\>]{lang="EN-US"}
+*[// SIP*]*状态机处理EVENT_SIP_ALERTING事件在STATE_CALL_ORIGINATING状态下*
 
-[Supported: sdp-anat]{lang="EN-US"}
+\*Jan 23 10:21:15:325 2014 Sysname SIP/7/SIPDBG:
 
-[Server: Cisco-SIPGateway/IOS-15.2.4.M2]{lang="EN-US"}
+SIP EVENT: Get signalling address by global.
 
-[Content-Type: application/sdp]{lang="EN-US"}
+\*Jan 23 10:21:15:325 2014 Sysname SIP/7/SIPDBG:
 
-[Content-Disposition: session;handling=required]{lang="EN-US"}
+SIP INFO: Get address from GigabitEthernet0/0(192.168.4.66).
 
-[Content-Length: 191]{lang="EN-US"}
+\*Jan 23 10:21:15:326 2014 Sysname SIP/7/SIPDBG:
 
-[ ]{lang="EN-US"}
+SIP INFO: Get address from GigabitEthernet0/0(192.168.4.66).
 
-[v=0]{lang="EN-US"}
+\*Jan 23 10:21:15:326 2014 Sysname SIP/7/SIPDBG:
 
-[o=CiscoSystemsSIP-GW-UserAgent 2464 7928 IN IP4 192.168.4.16]{lang="EN-US"}
+SIP EVENT: Adapter \--\> Stack: PRACK Request.
 
-[s=SIP Call]{lang="EN-US"}
+\*Jan 23 10:21:15:327 2014 Sysname SIP/7/SIPDBG:
 
-[c=IN IP4 192.168.4.16]{lang="EN-US"}
+SIP EVENT: SrcAddr: 192.168.4.66, SrcPort: 5060, DestAddr: 192.168.4.16, DestPort: 5060, Protocol: UDP
 
-[t=0 0]{lang="EN-US"}
+\*Jan 23 10:21:15:327 2014 Sysname SIP/7/SIPDBG:
 
-[m=audio 20306 RTP/AVP 8]{lang="EN-US"}
+Stack\-\--\>NetWork:
 
-[c=IN IP4 192.168.4.16]{lang="EN-US"}
+PRACK sip:444@192.168.4.16:5060;user=phone SIP/2.0
 
-[a=rtpmap:8 PCMA/8000]{lang="EN-US"}
+Via: SIP/2.0/UDP 192.168.4.66:5060;branch=z9hG4bK6132dbdbd71;rport
 
-[a=pti]{lang="EN-US"}
+Call-ID: 0330805cef6264d4830aea1c470fc37c@192.168.4.66
 
-[\*Jan 23 10:21:15:324 2014 Sysname SIP/7/SIPDBG: continuing\...]{lang="EN-US"}
+From: \<sip:666@192.168.4.66;user=phone\>;tag=557a839c
 
-[me:20]{lang="EN-US"}
+To: \<sip:444@192.168.4.16;user=phone\>;tag=CE097BD4-1B9D
 
-[*[// SIP]{lang="EN-US"}*]{#struct_0_44918_15685_592714206}*[协议栈从网络侧收到]{style="font-family:宋体"}[100trying]{lang="EN-US"}[报文]{style="font-family:宋体"}*
+CSeq: 2 PRACK
 
-[ ]{lang="EN-US"}
+Allow: INVITE,ACK,OPTIONS,BYE,CANCEL,REGISTER,INFO,PRACK,SUBSCRIBE,NOTIFY,UPDATE,REFER
 
-[[\*Jan 23 10:21:15:324 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}]{#struct_0_44918_15685_1316154673}
+Date: Thu, 23 Jan 2014 10:21:15 GMT
 
-[SIP TIMER: \[SIP_COMP_TXN\] Stop Timer, Group id = 4, Index = 50.]{lang="EN-US"}
+Max-Forwards: 70
 
-[ ]{lang="EN-US"}
+RAck: 8 1 INVITE
 
-[\*Jan 23 10:21:15:324 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+Supported: timer
 
-[SIP TIMER: \[SIP_COMP_TXN\] Start Timer, Group id = 4, Index = 50, Duration = 256000.]{lang="EN-US"}
+Content-Length: 0
 
-[ ]{lang="EN-US"}
+*[// SIP*]*协议栈从网络侧收到183报文*
 
-[\*Jan 23 10:21:15:324 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+\*Jan 23 10:21:15:327 2014 Sysname SIP/7/SIPDBG:
 
-[SIP TIMER: \[SIP_COMP_UA\] Start Timer, Group id = 5, Index = 1, Duration = 128000.]{lang="EN-US"}
+SIP EVENT: Get signalling address by global.
 
-[ ]{lang="EN-US"}
+\*Jan 23 10:21:15:328 2014 Sysname SIP/7/SIPDBG:
 
-[\*Jan 23 10:21:15:325 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_TPT Start Timer, Group id = 2, Index = 412, Duration = 30000.]
 
-[SIP TIMER: \[SIP_COMP_UA\] Stop Timer, Group id = 9, Index = 1.]{lang="EN-US"}
+\*Jan 23 10:21:15:328 2014 Sysname SIP/7/SIPDBG:
 
-[ ]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_TXN Start Timer, Group id = 3, Index = 51, Duration = 500.]
 
-[\*Jan 23 10:21:15:325 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+\*Jan 23 10:21:15:328 2014 Sysname SIP/7/SIPDBG:
 
-[SIP TIMER: \[SIP_COMP_UA\] Start Timer, Group id = 9, Index = 1, Duration = 600000.]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_TXN Start Timer, Group id = 4, Index = 51, Duration = 32000.]
 
-[ ]{lang="EN-US"}
+\*Jan 23 10:21:15:329 2014 Sysname SIP/7/SIPDBG:
 
-[\*Jan 23 10:21:15:325 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+SIP STACK:
 
-[SIP EVENT: Stack \--\> Adapter : Alerting Indication.]{lang="EN-US"}
+  SIP STACK DEBUG LOG: Component = User Agent
 
-[*[// SIP]{lang="EN-US"}*]{#struct_0_44918_15685_389076853}*[协议栈向适配层上报]{style="font-family:宋体"}[Alerting]{lang="EN-US"}[指令]{style="font-family:宋体"}*
+  Additional Code: 2404-2547
 
-[ ]{lang="EN-US"}
+  Additional Info: Invalid Paramter(s) 
 
-[[\*Jan 23 10:21:15:325 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}]{#struct_0_44918_15685_721136501}
+\*Jan 23 10:21:15:329 2014 Sysname SIP/7/SIPDBG:
 
-[SIP FSM: \[SIP_CALL\]\[1\]: Process the event of EVENT_SIP_ALERTING in state STATE_CALL_ORIGINATING.]{lang="EN-US"}
+SIP FSM: [SIP_CALL1: Process the event of EVENT_EXIST_SDP_BODY in state STATE_CALL_ORIGINATING.]
 
-[*[// SIP]{lang="EN-US"}*]{#struct_0_44918_15685_989022480}*[状态机处理]{style="font-family:宋体"}[EVENT_SIP_ALERTING]{lang="EN-US"}[事件在]{style="font-family:宋体"}[STATE_CALL_ORIGINATING]{lang="EN-US"}[状态下]{style="font-family:宋体"}*
+\*Jan 23 10:21:15:329 2014 Sysname SIP/7/SIPDBG:
 
-[ ]{lang="EN-US"}
+SIP EVENT: Codec negotiated result is voice update.
 
-[[\*Jan 23 10:21:15:325 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}]{#struct_0_44918_15685_x1412728682}
+\*Jan 23 10:21:15:329 2014 Sysname SIP/7/SIPDBG:
 
-[SIP EVENT: Get signalling address by global.]{lang="EN-US"}
+SIP EVENT: Audio media take different media ip address or port.
 
-[ ]{lang="EN-US"}
+\*Jan 23 10:21:15:329 2014 Sysname SIP/7/SIPDBG:
 
-[\*Jan 23 10:21:15:325 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+SIP EVENT: Receive Response: The Status Code = 183.
 
-[SIP INFO: Get address from GigabitEthernet0/0(192.168.4.66).]{lang="EN-US"}
+\*Jan 23 10:21:15:330 2014 Sysname SIP/7/SIPDBG:
 
-[ ]{lang="EN-US"}
+SIP EVENT: SIP \--\> CMC : ACCP_ALERTING.
 
-[\*Jan 23 10:21:15:326 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+*[// SIP*]*向CMC发送ACCP_ALERTING消息，通知对方已振铃*
 
-[SIP INFO: Get address from GigabitEthernet0/0(192.168.4.66).]{lang="EN-US"}
+\*Jan 23 10:21:15:331 2014 Sysname SIP/7/SIPDBG:
 
-[ ]{lang="EN-US"}
+SIP EVENT: SIP \--\> CMC : ACCP_CHANNEL_READY.
 
-[\*Jan 23 10:21:15:326 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+*[// SIP*]*向CMC发送ACCP_CHANNEL_READY消息，准备建立媒体通道*
 
-[SIP EVENT: Adapter \--\> Stack: PRACK Request.]{lang="EN-US"}
+\*Jan 23 10:21:15:332 2014 Sysname SIP/7/SIPDBG:
 
-[ ]{lang="EN-US"}
+SIP EVENT: SrcAddr: 192.168.4.16, SrcPort: 64135, DestAddr: 192.168.4.66, DestPort: 5060, Protocol: UDP
 
-[\*Jan 23 10:21:15:327 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+\*Jan 23 10:21:15:332 2014 Sysname SIP/7/SIPDBG:
 
-[SIP EVENT: SrcAddr: 192.168.4.66, SrcPort: 5060, DestAddr: 192.168.4.16, DestPort: 5060, Protocol: UDP]{lang="EN-US"}
+NetWork\-\--\>Stack:
 
-[ ]{lang="EN-US"}
+SIP/2.0 200 OK
 
-[\*Jan 23 10:21:15:327 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+Via: SIP/2.0/UDP 192.168.4.66:5060;branch=z9hG4bK6132dbdbd71;rport
 
-[Stack\-\--\>NetWork:]{lang="EN-US"}
+From: \<sip:666@192.168.4.66;user=phone\>;tag=557a839c
 
-[PRACK sip:444@192.168.4.16:5060;user=phone SIP/2.0]{lang="EN-US"}
+To: \<sip:444@192.168.4.16;user=phone\>;tag=CE097BD4-1B9D
 
-[Via: SIP/2.0/UDP 192.168.4.66:5060;branch=z9hG4bK6132dbdbd71;rport]{lang="EN-US"}
+Date: Thu, 23 Jan 2014 02:25:36 GMT
 
-[Call-ID: 0330805cef6264d4830aea1c470fc37c@192.168.4.66]{lang="EN-US"}
+Call-ID: 0330805cef6264d4830aea1c470fc37c@192.168.4.66
 
-[From: \<sip:666@192.168.4.66;user=phone\>;tag=557a839c]{lang="EN-US"}
+Server: Cisco-SIPGateway/IOS-15.2.4.M2
 
-[To: \<sip:444@192.168.4.16;user=phone\>;tag=CE097BD4-1B9D]{lang="EN-US"}
+CSeq: 2 PRACK
 
-[CSeq: 2 PRACK]{lang="EN-US"}
+Content-Length: 0
 
-[Allow: INVITE,ACK,OPTIONS,BYE,CANCEL,REGISTER,INFO,PRACK,SUBSCRIBE,NOTIFY,UPDATE,REFER]{lang="EN-US"}
+\*Jan 23 10:21:15:332 2014 Sysname SIP/7/SIPDBG:
 
-[Date: Thu, 23 Jan 2014 10:21:15 GMT]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_TXN Stop Timer, Group id = 4, Index = 51.]
 
-[Max-Forwards: 70]{lang="EN-US"}
+\*Jan 23 10:21:15:333 2014 Sysname SIP/7/SIPDBG:
 
-[RAck: 8 1 INVITE]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_TXN Stop Timer, Group id = 3, Index = 51.]
 
-[Supported: timer]{lang="EN-US"}
+\*Jan 23 10:21:15:334 2014 Sysname SIP/7/SIPDBG:
 
-[Content-Length: 0]{lang="EN-US"}
+SIP EVENT: Stack \--\> Adapter : Ssn Response.
 
-[*[// SIP]{lang="EN-US"}*]{#struct_0_44918_15685_x1551646165}*[协议栈从网络侧收到]{style="font-family:宋体"}[183]{lang="EN-US"}[报文]{style="font-family:宋体"}*
+\*Jan 23 10:21:15:334 2014 Sysname SIP/7/SIPDBG:
 
-[ ]{lang="EN-US"}
+SIP EVENT: Stack \--\> Adapter : Prack Response.
 
-[[\*Jan 23 10:21:15:327 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}]{#struct_0_44918_15685_153355259}
+\*Jan 23 10:21:15:334 2014 Sysname SIP/7/SIPDBG:
 
-[SIP EVENT: Get signalling address by global.]{lang="EN-US"}
+SIP EVENT: Receive Prack Response: The Status Code = 200.
 
-[ ]{lang="EN-US"}
+\*Jan 23 10:21:15:334 2014 Sysname SIP/7/SIPDBG:
 
-[\*Jan 23 10:21:15:328 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_TXN Start Timer, Group id = 3, Index = 51, Duration = 5000.]
 
-[SIP TIMER: \[SIP_COMP_TPT\] Start Timer, Group id = 2, Index = 412, Duration = 30000.]{lang="EN-US"}
+\*Jan 23 10:21:15:334 2014 Sysname SIP/7/SIPDBG:
 
-[ ]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_TPT Stop Timer, Group id = 2, Index = 412.]
 
-[\*Jan 23 10:21:15:328 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+\*Jan 23 10:21:15:335 2014 Sysname SIP/7/SIPDBG:
 
-[SIP TIMER: \[SIP_COMP_TXN\] Start Timer, Group id = 3, Index = 51, Duration = 500.]{lang="EN-US"}
+SIP EVENT: CMC \--\> SIP : ACCP_CHANNEL_READY_ACK.
 
-[ ]{lang="EN-US"}
+\*Jan 23 10:21:15:335 2014 Sysname SIP/7/SIPDBG:
 
-[\*Jan 23 10:21:15:328 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+SIP EVENT: SIP \--\> CMC : ACCP_INFORMATION.
 
-[SIP TIMER: \[SIP_COMP_TXN\] Start Timer, Group id = 4, Index = 51, Duration = 32000.]{lang="EN-US"}
+   Disable Outband Sip
 
-[ ]{lang="EN-US"}
+\*Jan 23 10:21:17:093 2014 Sysname SIP/7/SIPDBG:
 
-[\*Jan 23 10:21:15:329 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+SIP EVENT: SrcAddr: 192.168.4.16, SrcPort: 64135, DestAddr: 192.168.4.66, DestPort: 5060, Protocol: UDP
 
-[SIP STACK: ]{lang="EN-US"}
+\*Jan 23 10:21:17:093 2014 Sysname SIP/7/SIPDBG:
 
-[  SIP STACK DEBUG LOG: Component = User Agent]{lang="EN-US"}
+NetWork\-\--\>Stack:
 
-[  Additional Code: 2404-2547 ]{lang="EN-US"}
+SIP/2.0 200 OK
 
-[  Additional Info: Invalid Paramter(s)  ]{lang="EN-US"}
+Via: SIP/2.0/UDP 192.168.4.66:5060;branch=z9hG4bK607a839c51b
 
-[ ]{lang="EN-US"}
+From: \<sip:666@192.168.4.66;user=phone\>;tag=557a839c
 
-[ ]{lang="EN-US"}
+To: \<sip:444@192.168.4.16;user=phone\>;tag=CE097BD4-1B9D
 
-[\*Jan 23 10:21:15:329 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+Date: Thu, 23 Jan 2014 02:25:36 GMT
 
-[SIP FSM: \[SIP_CALL\]\[1\]: Process the event of EVENT_EXIST_SDP_BODY in state STATE_CALL_ORIGINATING.]{lang="EN-US"}
+Call-ID: 0330805cef6264d4830aea1c470fc37c@192.168.4.66
 
-[ ]{lang="EN-US"}
+CSeq: 1 INVITE
 
-[\*Jan 23 10:21:15:329 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+Allow: INVITE, OPTIONS, BYE, CANCEL, ACK, PRACK, UPDATE, REFER, SUBSCRIBE, NOTIFY, INFO, REGISTER
 
-[SIP EVENT: Codec negotiated result is voice update.]{lang="EN-US"}
+Allow-Events: telephone-event
 
-[ ]{lang="EN-US"}
+Remote-Party-ID: \<sip:444@192.168.4.16\>;party=called;screen=no;privacy=off
 
-[\*Jan 23 10:21:15:329 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+Contact: \<sip:444@192.168.4.16:5060\>
 
-[SIP EVENT: Audio media take different media ip address or port.]{lang="EN-US"}
+Supported: replaces
 
-[ ]{lang="EN-US"}
+Supported: sdp-anat
 
-[\*Jan 23 10:21:15:329 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+Server: Cisco-SIPGateway/IOS-15.2.4.M2
 
-[SIP EVENT: Receive Response: The Status Code = 183.]{lang="EN-US"}
+Supported: timer
 
-[ ]{lang="EN-US"}
+Content-Type: application/sdp
 
-[\*Jan 23 10:21:15:330 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+Content-Disposition: session;handling=required
 
-[SIP EVENT: SIP \--\> CMC : ACCP_ALERTING.]{lang="EN-US"}
+Content-Length: 191
 
-[*[// SIP]{lang="EN-US"}*]{#struct_0_44918_15685_624885172}*[向]{style="font-family:宋体"}[CMC]{lang="EN-US"}[发送]{style="font-family:宋体"}[ACCP_ALERTING]{lang="EN-US"}[消息，通知对方已振铃]{style="font-family:宋体"}*
+v=0
 
-[ ]{lang="EN-US"}
+o=CiscoSystemsSIP-GW-UserAgent 2464 7928 IN IP4 192.168.4.16
 
-[[\*Jan 23 10:21:15:331 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}]{#struct_0_44918_15685_x235496458}
+s=SIP Call
 
-[SIP EVENT: SIP \--\> CMC : ACCP_CHANNEL_READY.]{lang="EN-US"}
+c=IN IP4 192.168.4.16
 
-[*[// SIP]{lang="EN-US"}*]{#struct_0_44918_15685_1236072800}*[向]{style="font-family:宋体"}[CMC]{lang="EN-US"}[发送]{style="font-family:宋体"}[ACCP_CHANNEL_READY]{lang="EN-US"}[消息，准备建立媒体通道]{style="font-family:宋体"}*
+t=0 0
 
-[ ]{lang="EN-US"}
+m=audio 20306 RTP/AVP 8
 
-[[\*Jan 23 10:21:15:332 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}]{#struct_0_44918_15685_x1365674515}
+c=IN IP4 192.168.4.16
 
-[SIP EVENT: SrcAddr: 192.168.4.16, SrcPort: 64135, DestAddr: 192.168.4.66, DestPort: 5060, Protocol: UDP]{lang="EN-US"}
+a=rtpmap:8 PCMA/8000
 
-[ ]{lang="EN-US"}
+a=ptim
 
-[\*Jan 23 10:21:15:332 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+\*Jan 23 10:21:17:093 2014 Sysname SIP/7/SIPDBG: continuing\...
 
-[NetWork\-\--\>Stack:]{lang="EN-US"}
+e:20
 
-[SIP/2.0 200 OK]{lang="EN-US"}
+*[// SIP*]*协议栈从网络侧收到200ok报文*
 
-[Via: SIP/2.0/UDP 192.168.4.66:5060;branch=z9hG4bK6132dbdbd71;rport]{lang="EN-US"}
+\*Jan 23 10:21:17:093 2014 Sysname SIP/7/SIPDBG:
 
-[From: \<sip:666@192.168.4.66;user=phone\>;tag=557a839c]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_UA Stop Timer, Group id = 5, Index = 1.]
 
-[To: \<sip:444@192.168.4.16;user=phone\>;tag=CE097BD4-1B9D]{lang="EN-US"}
+\*Jan 23 10:21:17:094 2014 Sysname SIP/7/SIPDBG:
 
-[Date: Thu, 23 Jan 2014 02:25:36 GMT]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_UA Start Timer, Group id = 5, Index = 1, Duration = 64000.]
 
-[Call-ID: 0330805cef6264d4830aea1c470fc37c@192.168.4.66]{lang="EN-US"}
+\*Jan 23 10:21:17:094 2014 Sysname SIP/7/SIPDBG:
 
-[Server: Cisco-SIPGateway/IOS-15.2.4.M2]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_UA Stop Timer, Group id = 9, Index = 1.]
 
-[CSeq: 2 PRACK]{lang="EN-US"}
+\*Jan 23 10:21:17:094 2014 Sysname SIP/7/SIPDBG:
 
-[Content-Length: 0]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_UA Start Timer, Group id = 9, Index = 1, Duration = 600000.]
 
-[ ]{lang="EN-US"}
+\*Jan 23 10:21:17:094 2014 Sysname SIP/7/SIPDBG:
 
-[ ]{lang="EN-US"}
+SIP EVENT: Stack \--\> Adapter : Connect Indication.
 
-[\*Jan 23 10:21:15:332 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+*[// SIP*]*协议栈向适配层上报Connect指令*
 
-[SIP TIMER: \[SIP_COMP_TXN\] Stop Timer, Group id = 4, Index = 51.]{lang="EN-US"}
+\*Jan 23 10:21:17:094 2014 Sysname SIP/7/SIPDBG:
 
-[ ]{lang="EN-US"}
+SIP FSM: [SIP_CALL1: Process the event of EVENT_SIP_CONNECT in state STATE_CALL_ORIGINATING.]
 
-[\*Jan 23 10:21:15:333 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+\*Jan 23 10:21:17:094 2014 Sysname SIP/7/SIPDBG:
 
-[SIP TIMER: \[SIP_COMP_TXN\] Stop Timer, Group id = 3, Index = 51.]{lang="EN-US"}
+SIP FSM: [SIP_CALL1: Process the event of EVENT_EXIST_SIP_BODY in state STATE_CALL_ORIGINATING.]
 
-[ ]{lang="EN-US"}
+\*Jan 23 10:21:17:095 2014 Sysname SIP/7/SIPDBG:
 
-[\*Jan 23 10:21:15:334 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+SIP EVENT: Codec negotiated result is voice update.
 
-[SIP EVENT: Stack \--\> Adapter : Ssn Response.]{lang="EN-US"}
+\*Jan 23 10:21:17:095 2014 Sysname SIP/7/SIPDBG:
 
-[ ]{lang="EN-US"}
+SIP FSM: [SIP_CALL1: Process the event of EVENT_OFFERMODE_PROC in state STATE_CALL_ORIGINATING.]
 
-[\*Jan 23 10:21:15:334 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+\*Jan 23 10:21:17:095 2014 Sysname SIP/7/SIPDBG:
 
-[SIP EVENT: Stack \--\> Adapter : Prack Response.]{lang="EN-US"}
+SIP EVENT: SIP \--\> CMC : ACCP_CONNECT.
 
-[ ]{lang="EN-US"}
+*[// SIP*]*向CMC发送ACCP_ALERTING消息，通知对方已摘机*
 
-[\*Jan 23 10:21:15:334 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+\*Jan 23 10:21:17:097 2014 Sysname SIP/7/SIPDBG:
 
-[SIP EVENT: Receive Prack Response: The Status Code = 200.]{lang="EN-US"}
+SIP INFO: Get address from GigabitEthernet0/0(192.168.4.66).
 
-[ ]{lang="EN-US"}
+\*Jan 23 10:21:17:097 2014 Sysname SIP/7/SIPDBG:
 
-[\*Jan 23 10:21:15:334 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+SIP EVENT: Adapter \--\> Stack : Connect Ack Request.
 
-[SIP TIMER: \[SIP_COMP_TXN\] Start Timer, Group id = 3, Index = 51, Duration = 5000.]{lang="EN-US"}
+\*Jan 23 10:21:17:097 2014 Sysname SIP/7/SIPDBG:
 
-[ ]{lang="EN-US"}
+SIP EVENT: SrcAddr: 192.168.4.66, SrcPort: 5060, DestAddr: 192.168.4.16, DestPort: 5060, Protocol: UDP
 
-[\*Jan 23 10:21:15:334 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+\*Jan 23 10:21:17:098 2014 Sysname SIP/7/SIPDBG:
 
-[SIP TIMER: \[SIP_COMP_TPT\] Stop Timer, Group id = 2, Index = 412.]{lang="EN-US"}
+Stack\-\--\>NetWork:
 
-[ ]{lang="EN-US"}
+ACK sip:444@192.168.4.16:5060;user=phone SIP/2.0
 
-[\*Jan 23 10:21:15:335 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+Via: SIP/2.0/UDP 192.168.4.66:5060;branch=z9hG4bKf608efafee9
 
-[SIP EVENT: CMC \--\> SIP : ACCP_CHANNEL_READY_ACK.]{lang="EN-US"}
+Call-ID: 0330805cef6264d4830aea1c470fc37c@192.168.4.66
 
-[ ]{lang="EN-US"}
+From: \<sip:666@192.168.4.66;user=phone\>;tag=557a839c
 
-[\*Jan 23 10:21:15:335 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+To: \<sip:444@192.168.4.16;user=phone\>;tag=CE097BD4-1B9D
 
-[SIP EVENT: SIP \--\> CMC : ACCP_INFORMATION.]{lang="EN-US"}
+CSeq: 1 ACK
 
-[   Disable Outband Sip]{lang="EN-US"}
+Date: Thu, 23 Jan 2014 10:21:17 GMT
 
-[ ]{lang="EN-US"}
+Max-Forwards: 70
 
-[\*Jan 23 10:21:17:093 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+Content-Length: 0
 
-[SIP EVENT: SrcAddr: 192.168.4.16, SrcPort: 64135, DestAddr: 192.168.4.66, DestPort: 5060, Protocol: UDP]{lang="EN-US"}
+*[// SIP*]*协议栈向网络侧发送200ok的ACK报文，呼叫建立成功*
 
-[ ]{lang="EN-US"}
+\*Jan 23 10:21:17:098 2014 Sysname SIP/7/SIPDBG:
 
-[\*Jan 23 10:21:17:093 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
+SIP EVENT: Get signalling address by global.
 
-[NetWork\-\--\>Stack:]{lang="EN-US"}
+\*Jan 23 10:21:17:098 2014 Sysname SIP/7/SIPDBG:
 
-[SIP/2.0 200 OK]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_TPT Start Timer, Group id = 2, Index = 413, Duration = 30000.]
 
-[Via: SIP/2.0/UDP 192.168.4.66:5060;branch=z9hG4bK607a839c51b]{lang="EN-US"}
+\*Jan 23 10:21:17:098 2014 Sysname SIP/7/SIPDBG:
 
-[From: \<sip:666@192.168.4.66;user=phone\>;tag=557a839c]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_UA Stop Timer, Group id = 5, Index = 1.]
 
-[To: \<sip:444@192.168.4.16;user=phone\>;tag=CE097BD4-1B9D]{lang="EN-US"}
+\*Jan 23 10:21:17:098 2014 Sysname SIP/7/SIPDBG:
 
-[Date: Thu, 23 Jan 2014 02:25:36 GMT]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_UA Stop Timer, Group id = 9, Index = 1.]
 
-[Call-ID: 0330805cef6264d4830aea1c470fc37c@192.168.4.66]{lang="EN-US"}
+\*Jan 23 10:21:17:098 2014 Sysname SIP/7/SIPDBG:
 
-[CSeq: 1 INVITE]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_UA Start Timer, Group id = 9, Index = 1, Duration = 1800000.]
 
-[Allow: INVITE, OPTIONS, BYE, CANCEL, ACK, PRACK, UPDATE, REFER, SUBSCRIBE, NOTIFY, INFO, REGISTER]{lang="EN-US"}
+\*Jan 23 10:21:17:099 2014 Sysname SIP/7/SIPDBG:
 
-[Allow-Events: telephone-event]{lang="EN-US"}
+SIP TIMER: [SIP_COMP_TXN Stop Timer, Group id = 4, Index = 50.]
 
-[Remote-Party-ID: \<sip:444@192.168.4.16\>;party=called;screen=no;privacy=off]{lang="EN-US"}
+\*Jan 23 10:21:17:099 2014 Sysname SIP/7/SIPDBG:
 
-[Contact: \<sip:444@192.168.4.16:5060\>]{lang="EN-US"}
+SIP STACK:
 
-[Supported: replaces]{lang="EN-US"}
+  SIP STACK INFORMATIONAL LOG: Component = Transaction
 
-[Supported: sdp-anat]{lang="EN-US"}
+  Additional Code: 1100-441
 
-[Server: Cisco-SIPGateway/IOS-15.2.4.M2]{lang="EN-US"}
+  Additional Info: Transaction block is destroyed  
 
-[Supported: timer]{lang="EN-US"}
-
-[Content-Type: application/sdp]{lang="EN-US"}
-
-[Content-Disposition: session;handling=required]{lang="EN-US"}
-
-[Content-Length: 191]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[v=0]{lang="EN-US"}
-
-[o=CiscoSystemsSIP-GW-UserAgent 2464 7928 IN IP4 192.168.4.16]{lang="EN-US"}
-
-[s=SIP Call]{lang="EN-US"}
-
-[c=IN IP4 192.168.4.16]{lang="EN-US"}
-
-[t=0 0]{lang="EN-US"}
-
-[m=audio 20306 RTP/AVP 8]{lang="EN-US"}
-
-[c=IN IP4 192.168.4.16]{lang="EN-US"}
-
-[a=rtpmap:8 PCMA/8000]{lang="EN-US"}
-
-[a=ptim]{lang="EN-US"}
-
-[\*Jan 23 10:21:17:093 2014 Sysname SIP/7/SIPDBG: continuing\...]{lang="EN-US"}
-
-[e:20]{lang="EN-US"}
-
-[*[// SIP]{lang="EN-US"}*]{#struct_0_44918_15685_1284430691}*[协议栈从网络侧收到]{style="font-family:宋体"}[200ok]{lang="EN-US"}[报文]{style="font-family:宋体"}*
-
-[ ]{lang="EN-US"}
-
-[[\*Jan 23 10:21:17:093 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}]{#struct_0_44918_15685_x1508673803}
-
-[SIP TIMER: \[SIP_COMP_UA\] Stop Timer, Group id = 5, Index = 1.]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[\*Jan 23 10:21:17:094 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
-
-[SIP TIMER: \[SIP_COMP_UA\] Start Timer, Group id = 5, Index = 1, Duration = 64000.]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[\*Jan 23 10:21:17:094 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
-
-[SIP TIMER: \[SIP_COMP_UA\] Stop Timer, Group id = 9, Index = 1.]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[\*Jan 23 10:21:17:094 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
-
-[SIP TIMER: \[SIP_COMP_UA\] Start Timer, Group id = 9, Index = 1, Duration = 600000.]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[\*Jan 23 10:21:17:094 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
-
-[SIP EVENT: Stack \--\> Adapter : Connect Indication.]{lang="EN-US"}
-
-[*[// SIP]{lang="EN-US"}*]{#struct_0_44918_15685_x1677633992}*[协议栈向适配层上报]{style="font-family:宋体"}[Connect]{lang="EN-US"}[指令]{style="font-family:宋体"}*
-
-[ ]{lang="EN-US"}
-
-[[\*Jan 23 10:21:17:094 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}]{#struct_0_44918_15685_200409426}
-
-[SIP FSM: \[SIP_CALL\]\[1\]: Process the event of EVENT_SIP_CONNECT in state STATE_CALL_ORIGINATING.]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[\*Jan 23 10:21:17:094 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
-
-[SIP FSM: \[SIP_CALL\]\[1\]: Process the event of EVENT_EXIST_SIP_BODY in state STATE_CALL_ORIGINATING.]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[\*Jan 23 10:21:17:095 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
-
-[SIP EVENT: Codec negotiated result is voice update.]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[\*Jan 23 10:21:17:095 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
-
-[SIP FSM: \[SIP_CALL\]\[1\]: Process the event of EVENT_OFFERMODE_PROC in state STATE_CALL_ORIGINATING.]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[\*Jan 23 10:21:17:095 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
-
-[SIP EVENT: SIP \--\> CMC : ACCP_CONNECT.]{lang="EN-US"}
-
-[*[// SIP]{lang="EN-US"}*]{#struct_0_44918_15685_1915087323}*[向]{style="font-family:宋体"}[CMC]{lang="EN-US"}[发送]{style="font-family:宋体"}[ACCP_ALERTING]{lang="EN-US"}[消息，通知对方已摘机]{style="font-family:宋体"}*
-
-[ ]{lang="EN-US"}
-
-[[\*Jan 23 10:21:17:097 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}]{#struct_0_44918_15685_x1141409342}
-
-[SIP INFO: Get address from GigabitEthernet0/0(192.168.4.66).]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[\*Jan 23 10:21:17:097 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
-
-[SIP EVENT: Adapter \--\> Stack : Connect Ack Request.]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[\*Jan 23 10:21:17:097 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
-
-[SIP EVENT: SrcAddr: 192.168.4.66, SrcPort: 5060, DestAddr: 192.168.4.16, DestPort: 5060, Protocol: UDP]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[\*Jan 23 10:21:17:098 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
-
-[Stack\-\--\>NetWork:]{lang="EN-US"}
-
-[ACK sip:444@192.168.4.16:5060;user=phone SIP/2.0]{lang="EN-US"}
-
-[Via: SIP/2.0/UDP 192.168.4.66:5060;branch=z9hG4bKf608efafee9]{lang="EN-US"}
-
-[Call-ID: 0330805cef6264d4830aea1c470fc37c@192.168.4.66]{lang="EN-US"}
-
-[From: \<sip:666@192.168.4.66;user=phone\>;tag=557a839c]{lang="EN-US"}
-
-[To: \<sip:444@192.168.4.16;user=phone\>;tag=CE097BD4-1B9D]{lang="EN-US"}
-
-[CSeq: 1 ACK]{lang="EN-US"}
-
-[Date: Thu, 23 Jan 2014 10:21:17 GMT]{lang="EN-US"}
-
-[Max-Forwards: 70]{lang="EN-US"}
-
-[Content-Length: 0]{lang="EN-US"}
-
-[*[// SIP]{lang="EN-US"}*]{#struct_0_44918_15685_x40780428}*[协议栈向网络侧发送]{style="font-family:宋体"}[200ok]{lang="EN-US"}[的]{style="font-family:宋体"}[ACK]{lang="EN-US"}[报文，呼叫建立成功]{style="font-family:宋体"}*
-
-[ ]{lang="EN-US"}
-
-[[\*Jan 23 10:21:17:098 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}]{#struct_0_44918_15685_x1009509691}
-
-[SIP EVENT: Get signalling address by global.]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[\*Jan 23 10:21:17:098 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
-
-[SIP TIMER: \[SIP_COMP_TPT\] Start Timer, Group id = 2, Index = 413, Duration = 30000.]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[\*Jan 23 10:21:17:098 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
-
-[SIP TIMER: \[SIP_COMP_UA\] Stop Timer, Group id = 5, Index = 1.]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[\*Jan 23 10:21:17:098 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
-
-[SIP TIMER: \[SIP_COMP_UA\] Stop Timer, Group id = 9, Index = 1.]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[\*Jan 23 10:21:17:098 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
-
-[SIP TIMER: \[SIP_COMP_UA\] Start Timer, Group id = 9, Index = 1, Duration = 1800000.]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[\*Jan 23 10:21:17:099 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
-
-[SIP TIMER: \[SIP_COMP_TXN\] Stop Timer, Group id = 4, Index = 50.]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[\*Jan 23 10:21:17:099 2014 Sysname SIP/7/SIPDBG: ]{lang="EN-US"}
-
-[SIP STACK: ]{lang="EN-US"}
-
-[  SIP STACK INFORMATIONAL LOG: Component = Transaction]{lang="EN-US"}
-
-[  Additional Code: 1100-441 ]{lang="EN-US"}
-
-[  Additional Info: Transaction block is destroyed   ]{lang="EN-US"}
-
-[ ]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}

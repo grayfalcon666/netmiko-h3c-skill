@@ -1,6184 +1,5560 @@
-::::: {#853638386 .myid}
-[]{#_Toc404798642}[]{#struct_0_x1539_x1935_x833635611}[]{#_Toc393878946}[]{#_Toc383786740}[]{#_Toc383097749}[]{#_Toc376856930}[]{#_Toc371411810}
 
 **VXLAN \-- VXLAN基础配置命令 \-- arp suppression enable**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VXLAN命令.files/image001.png){width="63" height="25"}]{lang="EN-US"}]{#struct_0_x1539_x1935_1648335821}
-:::
+![说明](VXLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1539_x1935_1798104613}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[arp suppression enable**]命令用来开启ARP泛洪抑制功能。
 
-[**[arp suppression enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_959982328}[命令用来开启]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制功能。]{style="font-family:宋体"}
+**[undo arp suppression enable**]命令用来恢复缺省情况。
 
-[**[undo arp suppression enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_x833635610}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1648270285}
+**[arp suppression enable**]
 
-[]{#_Toc178914661}[**[arp suppression enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_x508476401}
+**[undo arp suppression enable**]
 
-[**[undo arp suppression enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_765385367}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x833635609}
+ARP泛洪抑制功能处于关闭状态。
 
-[[ARP]{lang="EN-US"}]{#struct_0_x1539_x1935_1648860110}[泛洪抑制功能处于关闭状态。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x2080226610}
+VSI视图
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x833635608}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1648794574}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x906006271}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x833635607}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1648466894}
+为了避免广播发送的ARP请求报文占用核心网络带宽，VTEP从本地站点、VXLAN隧道接收到ARP请求和ARP应答报文后，根据该报文在本地建立ARP泛洪抑制表项。后续当VTEP收到本站点内虚拟机请求其它虚拟机MAC地址的ARP请求时，优先根据ARP泛洪抑制表项进行代答。如果没有对应的表项，则将ARP请求泛洪到核心网。ARP泛洪抑制功能可以大大减少ARP泛洪的次数。
 
-[[为了避免广播发送的]{style="font-family:宋体"}[ARP]{lang="EN-US"}]{#struct_0_x1539_x1935_x2082699336}[请求报文占用核心网络带宽，]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[从本地站点、]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道接收到]{style="font-family:宋体"}[ARP]{lang="EN-US"}[请求和]{style="font-family:宋体"}[ARP]{lang="EN-US"}[应答报文后，根据该报文在本地建立]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。后续当]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[收到本站点内虚拟机请求其它虚拟机]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[请求时，优先根据]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项进行代答。如果没有对应的表项，则将]{style="font-family:宋体"}[ARP]{lang="EN-US"}[请求泛洪到核心网。]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制功能可以大大减少]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪的次数。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x135245601}
+\# 在VSI vsi1下开启ARP泛洪抑制功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x833635606}[在]{style="font-family:宋体"}[VSI vsi1]{lang="EN-US"}[下开启]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_1648401358}
+Sysname vsi vsi1
 
-[\[Sysname\] vsi vsi1]{lang="EN-US"}
+Sysname-vsi-vsi1 arp suppression enable
 
-[\[Sysname-vsi-vsi1\] arp suppression enable]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_253868009}
+·**display arp suppression**** vsi**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display arp suppression]{lang="EN-US"}**]{#struct_0_x1539_x1935_x833635605}**[ vsi]{lang="EN-US"}**
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset arp suppression]{lang="EN-US"}**]{#struct_0_x1539_x1935_1648597966}**[ vsi]{lang="EN-US"}**
-:::::
-
-::: {#-1461383778 .myid}
-[]{#_Toc404798643}[]{#struct_0_x1539_x1935_1859280128}[]{#_Toc375835809}
+·**reset arp suppression**** vsi**
 
 **VXLAN \-- VXLAN基础配置命令 \-- description**
 
 ------------------------------------------------------------------------
 
-[**[description]{lang="EN-US"}**]{#struct_0_x1539_x1935_1314967229}[命令用来设置]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的描述信息。]{style="font-family:宋体"}
+**[description**]命令用来设置VSI的描述信息。
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1002997609}[命令用来删除]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的描述信息。]{style="font-family:宋体"}
+**[undo description**]命令用来删除VSI的描述信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x78128063}
+【命令】
 
-[**[description ]{lang="EN-US"}***[text]{lang="EN-US"}*]{#struct_0_x1539_x1935_1786594374}
+**[description ***text*]
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1358018249}
+**[undo description**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_143333773}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x315836560}[的描述信息。]{style="font-family:宋体"}
+未配置VSI的描述信息。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1303690325}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_1705911206}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1053845667}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1557172368}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1703230401}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_622273579}
+【参数】
 
-[*[text]{lang="EN-US"}*]{#struct_0_x1539_x1935_1660204922}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的描述信息，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[80]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[text*]：VSI的描述信息，为1～80个字符的字符串，区分大小写。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1314399863}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1314901693}[配置名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的描述信息为"]{style="font-family:宋体"}[vsi for vpn1]{lang="EN-US"}["。]{style="font-family:宋体"}
+\# 配置名为vpn1的VSI的描述信息为"vsi for vpn1"。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_x1404792980}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname vsi vpn1
 
-[\[Sysname-vsi-vpn1\] description vsi for vpn1]{lang="EN-US"}
+Sysname-vsi-vpn1 description vsi for vpn1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1422485703}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn vsi]{lang="EN-US"}**]{#struct_0_x1539_x1935_384641513}
-:::
-
-::::: {#-530734358 .myid}
-[]{#_Toc404798644}[]{#struct_0_x1539_x1935_x1642939674}[]{#_Toc393878948}[]{#_Toc383786741}[]{#_Toc383097750}[]{#_Toc376856931}[]{#_Toc371411811}
+·**display l2vpn vsi**
 
 **VXLAN \-- VXLAN基础配置命令 \-- display arp suppression vsi**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VXLAN命令.files/image001.png){width="63" height="25"}]{lang="EN-US"}]{#struct_0_x1539_x1935_x1053084078}
-:::
+![说明](VXLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1539_x1935_x1642939673}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[display arp suppression vsi**]命令用来显示VSI的ARP泛洪抑制表项信息。
 
-[**[display arp suppression vsi]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1456368605}[命令用来显示]{style="font-family:
-宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项信息。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x485252309}
+集中式设备：
 
-[]{#_Toc178914662}[[集中式设备：]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x70100206}
+**[display arp suppression vsi** [ **name** *vsi-name*   **count** ]]
 
-[**[display arp suppression vsi]{lang="EN-US"}**[ \[ **name** *vsi-name* \] \[ **count** \]]{lang="EN-US"}]{#struct_0_x1539_x1935_x1642939672}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1539_x1935_109715336}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+**[display arp suppression vsi** [ **name** *vsi-name*   **slot** *slot-number* [ **cpu** *cpu-number*  ]  **count** ]]
 
-[**[display arp suppression vsi]{lang="EN-US"}**[ \[ **name** *vsi-name* \] \[ **slot** *slot-number* \[ **cpu** *cpu-number* \] \] \[ **count** \]]{lang="EN-US"}]{#struct_0_x1539_x1935_x1722221889}
+分布式设备－IRF模式：
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1539_x1935_x273239457}[模式：]{style="font-family:宋体"}
+**[display arp suppression vsi** [ **name** *vsi-name*   **chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number*  ]  **count** ]]
 
-[**[display arp suppression vsi]{lang="EN-US"}**[ \[ **name** *vsi-name* \] \[ **chassis** *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \] \] \[ **count** \]]{lang="EN-US"}]{#struct_0_x1539_x1935_x1642939671}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x293569191}
+任意视图
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1206383460}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x2105086617}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x1642939670}
+network-operator
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_1272514750}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_21497549}
+mdc-operator
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_1826251085}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1642939669}
+**[name*** vsi-name*]：显示指定VSI的ARP泛洪抑制表项。如果不指定本参数，则显示所有VSI的ARP泛洪抑制表项。
 
-[**[name]{lang="EN-US"}***[ vsi-name]{lang="EN-US"}*]{#struct_0_x1539_x1935_x649734015}[：显示指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。如果不指定本参数，则显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定单板的ARP泛洪抑制表项。*slot-number*表示单板所在的槽位号。如果不指定本参数，将显示主用主控板上的ARP泛洪抑制表项。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x1539_x1935_x1675870461}[：显示指定单板的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果不指定本参数，将显示主用主控板上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备的ARP泛洪抑制表项。*slot-number*表示设备在IRF中的成员编号。如果不指定本参数，将显示主设备上的ARP泛洪抑制表项。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x1539_x1935_x1642939668}[：显示指定成员设备的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。如果不指定本参数，将显示主设备上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备/PEX的ARP泛洪抑制表项。*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果不指定本参数，将显示主设备上的ARP泛洪抑制表项。（集中式IRF设备）（支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x1539_x1935_x5909580}[：显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。如果不指定本参数，将显示主设备上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定成员设备上指定单板的ARP泛洪抑制表项。*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果不指定本参数，将显示全局主用主控板上的ARP泛洪抑制表项。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1539_x1935_916349926}[：显示指定成员设备上指定单板的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果不指定本参数，将显示全局主用主控板上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定成员设备上指定单板的ARP泛洪抑制表项。*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。如果不指定本参数，将显示全局主用主控板上的ARP泛洪抑制表项。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1539_x1935_x1755733355}[：显示指定成员设备上指定单板的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。如果不指定本参数，将显示全局主用主控板上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[cpu ***cpu-number*]：显示指定CPU上的ARP泛洪抑制表项。*cpu-number*表示CPU编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[cpu ]{lang="EN-US"}***[cpu-number]{lang="EN-US"}*]{#struct_0_x1539_x1935_1417298097}[：显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号。只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[count**]：显示ARP泛洪抑制表项的个数。
 
-[**[count]{lang="EN-US"}**]{#struct_0_x1539_x1935_313375459}[：显示]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项的个数。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1699625545}
+\# 显示所有VSI的ARP泛洪抑制表项信息。（集中式设备）
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1567340087}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项信息。（集中式设备）]{style="font-family:宋体"}
+\<Sysname\> display arp suppression vsi
 
-[[\<Sysname\> display arp suppression vsi]{lang="EN-US"}]{#struct_0_x1539_x1935_313375460}
+IP address      MAC address    Vsi Name                        Link ID    Aging
 
-[IP address      MAC address    Vsi Name                        Link ID    Aging]{lang="EN-US"}
+1.1.1.2         000f-e201-0101 vsi1                            0x70000    14
 
-[1.1.1.2         000f-e201-0101 vsi1                            0x70000    14]{lang="EN-US"}
+1.1.1.3         000f-e201-0202 vsi1                            0x80000    18
 
-[1.1.1.3         000f-e201-0202 vsi1                            0x80000    18]{lang="EN-US"}
+1.1.1.4         000f-e201-0203 vsi2                            0x90000    10
 
-[1.1.1.4         000f-e201-0203 vsi2                            0x90000    10]{lang="EN-US"}
+\# 显示所有VSI的ARP泛洪抑制表项个数。（集中式设备）
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x639026608}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项个数。（集中式设备）]{style="font-family:宋体"}
+\<Sysname\> display arp suppression vsi count
 
-[[\<Sysname\> display arp suppression vsi count]{lang="EN-US"}]{#struct_0_x1539_x1935_313375461}
+Total entries: 3
 
-[Total entries: 3]{lang="EN-US"}
+\# 显示主用主控板上的ARP泛洪抑制表项信息。（分布式设备－独立运行模式）
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x639026607}[显示主用主控板上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项信息。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+\<Sysname\> display arp suppression vsi
 
-[[\<Sysname\> display arp suppression vsi]{lang="EN-US"}]{#struct_0_x1539_x1935_313375462}
+IP address      MAC address    Vsi Name                        Link ID    Aging
 
-[IP address      MAC address    Vsi Name                        Link ID    Aging]{lang="EN-US"}
+1.1.1.2         000f-e201-0101 vsi1                            0x70000    14
 
-[1.1.1.2         000f-e201-0101 vsi1                            0x70000    14]{lang="EN-US"}
+1.1.1.3         000f-e201-0202 vsi1                            0x80000    18
 
-[1.1.1.3         000f-e201-0202 vsi1                            0x80000    18]{lang="EN-US"}
+1.1.1.4         000f-e201-0203 vsi2                            0x90000    10
 
-[1.1.1.4         000f-e201-0203 vsi2                            0x90000    10]{lang="EN-US"}
+\# 显示主用主控板上的ARP泛洪抑制表项个数。（分布式设备－独立运行模式）
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x639026610}[显示主用主控板上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项个数。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+\<Sysname\> display arp suppression vsi count
 
-[[\<Sysname\> display arp suppression vsi count]{lang="EN-US"}]{#struct_0_x1539_x1935_692582521}
+Total entries: 3
 
-[Total entries: 3]{lang="EN-US"}
+\# 显示主设备上的ARP泛洪抑制表项信息。（集中式IRF设备）
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1570552211}[显示主设备上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\<Sysname\> display arp suppression vsi
 
-[[\<Sysname\> display arp suppression vsi]{lang="EN-US"}]{#struct_0_x1539_x1935_313375463}
+IP address      MAC address    Vsi Name                        Link ID    Aging
 
-[IP address      MAC address    Vsi Name                        Link ID    Aging]{lang="EN-US"}
+1.1.1.2         000f-e201-0101 vsi1                            0x70000    14
 
-[1.1.1.2         000f-e201-0101 vsi1                            0x70000    14]{lang="EN-US"}
+1.1.1.3         000f-e201-0202 vsi1                            0x80000    18
 
-[1.1.1.3         000f-e201-0202 vsi1                            0x80000    18]{lang="EN-US"}
+1.1.1.4         000f-e201-0203 vsi2                            0x90000    10
 
-[1.1.1.4         000f-e201-0203 vsi2                            0x90000    10]{lang="EN-US"}
+\# 显示主设备上的ARP泛洪抑制表项个数。（集中式IRF设备）
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x639026609}[显示主设备上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项个数。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\<Sysname\> display arp suppression vsi count
 
-[[\<Sysname\> display arp suppression vsi count]{lang="EN-US"}]{#struct_0_x1539_x1935_313375464}
+Total entries: 3
 
-[Total entries: 3]{lang="EN-US"}
+\# 显示全局主用主控板上的ARP泛洪抑制表项信息。（分布式设备－IRF模式）
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x639026604}[显示全局主用主控板上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\<Sysname\> display arp suppression vsi
 
-[[\<Sysname\> display arp suppression vsi]{lang="EN-US"}]{#struct_0_x1539_x1935_313375465}
+IP address      MAC address    Vsi Name                        Link ID    Aging
 
-[IP address      MAC address    Vsi Name                        Link ID    Aging]{lang="EN-US"}
+1.1.1.2         000f-e201-0101 vsi1                            0x70000    14
 
-[1.1.1.2         000f-e201-0101 vsi1                            0x70000    14]{lang="EN-US"}
+1.1.1.3         000f-e201-0202 vsi1                            0x80000    18
 
-[1.1.1.3         000f-e201-0202 vsi1                            0x80000    18]{lang="EN-US"}
+1.1.1.4         000f-e201-0203 vsi2                            0x90000    10
 
-[1.1.1.4         000f-e201-0203 vsi2                            0x90000    10]{lang="EN-US"}
+\# 显示全局主用主控板上的ARP泛洪抑制表项个数。（分布式设备－IRF模式）
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x639026603}[显示全局主用主控板上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项个数。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\<Sysname\> display arp suppression vsi count
 
-[[\<Sysname\> display arp suppression vsi count]{lang="EN-US"}]{#struct_0_x1539_x1935_692385912}
+Total entries: 3
 
-[Total entries: 3]{lang="EN-US"}
+表1-1 display arp suppression vsi命令显示信息描述表
 
-[[表1-1 ]{lang="EN-US"}[display arp suppression vsi]{lang="EN-US"}]{#struct_0_x1539_x1935_313375466}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1356520968}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x639026606}
-:::::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_313375467}
+IP address
 
-[[IP address]{lang="EN-US"}]{#struct_0_x1539_x1935_x639026605}
+ARP泛洪抑制表项的IP地址
 
-[[ARP]{lang="EN-US"}]{#struct_0_x1539_x1935_313375468}[泛洪抑制表项的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+MAC address
 
-[[MAC address]{lang="EN-US"}]{#struct_0_x1539_x1935_x639026616}
+ARP泛洪抑制表项的MAC地址
 
-[[ARP]{lang="EN-US"}]{#struct_0_x1539_x1935_1889516259}[泛洪抑制表项的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+Vsi Name
 
-[[Vsi Name]{lang="EN-US"}]{#struct_0_x1539_x1935_1946771458}
+VSI名称
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_1889516260}[名称]{style="font-family:宋体"}
+Link ID
 
-[[Link ID]{lang="EN-US"}]{#struct_0_x1539_x1935_1946181631}
+MAC表项的出链路标识符，用来在VSI内唯一标识一条AC或一条VXLAN隧道
 
-[[MAC]{lang="EN-US"}]{#struct_0_x1539_x1935_1889516261}[表项的出链路标识符，用来在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内唯一标识一条]{style="font-family:宋体"}[AC]{lang="EN-US"}[或一条]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道]{style="font-family:宋体"}
+Aging
 
-[[Aging]{lang="EN-US"}]{#struct_0_x1539_x1935_1946247167}
+ARP泛洪抑制表项的老化时间，单位为分钟
 
-[[ARP]{lang="EN-US"}]{#struct_0_x1539_x1935_1889516262}[泛洪抑制表项的老化时间，单位为分钟]{style="font-family:宋体"}
+Total entries
 
-[[Total entries]{lang="EN-US"}]{#struct_0_x1539_x1935_1946312703}
+ARP泛洪抑制表项的数目
 
-[[ARP]{lang="EN-US"}]{#struct_0_x1539_x1935_1889516263}[泛洪抑制表项的数目]{style="font-family:宋体"}
+【相关命令】
 
-[ ]{lang="EN-US"}
+·**arp suppression enable**
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1946378239}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[arp suppression enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_716695764}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset arp suppression]{lang="EN-US"}**]{#struct_0_x1539_x1935_x2038469784}**[ vsi]{lang="EN-US"}**
-
-::: {#305400511 .myid}
-[]{#_Toc404798645}[]{#struct_0_x1539_x1935_x1359028732}[]{#_Toc374372845}[]{#_Toc355963320}[]{#_Toc378672367}[]{#_Toc378672422}[]{#_Toc378683222}[]{#_Toc378683277}[]{#_Toc378683958}[]{#_Toc379547054}[]{#_Toc390073115}
+·**reset arp suppression**** vsi**
 
 **VXLAN \-- VXLAN基础配置命令 \-- display igmp host group**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **igmp** **host** **group**]{lang="EN-US"}]{#struct_0_x1539_x1935_1924157855}[命令用来显示]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[执行主机行为的所有组播组信息。]{style="font-family:宋体"}
+**[display** **igmp** **host** **group**]命令用来显示IGMP执行主机行为的所有组播组信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_25345835}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **igmp** **host** **group** \[ *group-address* \| **interface** *interface-type* *interface-number* \] \[ **verbose** \]]{lang="EN-US"}]{#struct_0_x1539_x1935_2130999707}
+**[display**[ **igmp** **host** **group** [ *group-address* \| **interface** *interface-type* *interface-number* ]  **verbose** ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x937937010}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1536129752}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1239719453}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x620542724}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_1107356272}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1597705538}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_1315098301}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_103852541}
+【参数】
 
-[*[group-address]{lang="EN-US"}*]{#struct_0_x1539_x1935_345951602}[：显示指定组播组的信息，取值范围为]{style="font-family:宋体"}[224.0.1.0]{lang="EN-US"}[～]{style="font-family:宋体"}[239.255.255.255]{lang="EN-US"}[。如果未指定本参数，则显示所有组播组的信息。]{style="font-family:宋体"}
+*[group-address*]：显示指定组播组的信息，取值范围为224.0.1.0～239.255.255.255。如果未指定本参数，则显示所有组播组的信息。
 
-[**[interface]{lang="EN-US"}**[ *interface-type* *interface-number*]{lang="EN-US"}]{#struct_0_x1539_x1935_x1395564204}[：显示指定接口上的信息。如果未指定本参数，则显示所有接口上的信息。]{style="font-family:宋体"}
+**[interface** *interface-type* *interface-number*]：显示指定接口上的信息。如果未指定本参数，则显示所有接口上的信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_x1539_x1935_850252641}[：显示详细信息。如果未指定本参数，则显示简要信息。]{style="font-family:宋体"}
+**[verbose**]：显示详细信息。如果未指定本参数，则显示简要信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x373610908}
+【使用指导】
 
-[[采用组播路由方式泛洪流量时，]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_1031930561}[组播报文源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址所在的接口需要作为]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[主机加入]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[所在的组播组。通过本命令可以查看接口是否加入组播组，及该组播组的信息。]{style="font-family:宋体"}
+采用组播路由方式泛洪流量时，VXLAN组播报文源IP地址所在的接口需要作为IGMP主机加入VXLAN所在的组播组。通过本命令可以查看接口是否加入组播组，及该组播组的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1849420810}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x1243869774}[显示]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[执行主机行为的所有组播组的简要信息。]{style="font-family:宋体"}
+\# 显示IGMP执行主机行为的所有组播组的简要信息。
 
-[[\<Sysname\> display igmp host group]{lang="EN-US"}]{#struct_0_x1539_x1935_x1737307507}
+\<Sysname\> display igmp host group
 
-[IGMP host groups in total: 2]{lang="EN-US"}
+IGMP host groups in total: 2
 
-[ Vlan-interface10(1.1.1.20):]{lang="EN-US"}
+ Vlan-interface10(1.1.1.20):
 
-[  IGMP host groups in total: 2]{lang="EN-US"}
+  IGMP host groups in total: 2
 
-[   Group address      Member state      Expires]{lang="EN-US"}
+   Group address      Member state      Expires
 
-[   225.1.1.1          Idle              Off]{lang="EN-US"}
+   225.1.1.1          Idle              Off
 
-[   225.1.1.2          Idle              Off]{lang="EN-US"}
+   225.1.1.2          Idle              Off
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x700883243}[显示]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[执行主机行为的所有组播组的详细信息。]{style="font-family:宋体"}
+\# 显示IGMP执行主机行为的所有组播组的详细信息。
 
-[[\<Sysname\> display igmp host group verbose]{lang="EN-US"}]{#struct_0_x1539_x1935_1315229373}
+\<Sysname\> display igmp host group verbose
 
-[ Vlan-interface10(1.1.1.20):]{lang="EN-US"}
+ Vlan-interface10(1.1.1.20):
 
-[  IGMP host groups in total: 2]{lang="EN-US"}
+  IGMP host groups in total: 2
 
-[   Group: 225.1.1.1]{lang="EN-US"}
+   Group: 225.1.1.1
 
-[     Group mode: Exclude]{lang="EN-US"}
+     Group mode: Exclude
 
-[     Member state: Idle]{lang="EN-US"}
+     Member state: Idle
 
-[     Expires: Off]{lang="EN-US"}
+     Expires: Off
 
-[     Source list (sources in total: 0):]{lang="EN-US"}
+     Source list (sources in total: 0):
 
-[   Group: 225.1.1.2]{lang="EN-US"}
+   Group: 225.1.1.2
 
-[     Group mode: Exclude]{lang="EN-US"}
+     Group mode: Exclude
 
-[     Member state: Idle]{lang="EN-US"}
+     Member state: Idle
 
-[     Expires: Off]{lang="EN-US"}
+     Expires: Off
 
-[     Source list (sources in total: 0):]{lang="EN-US"}
+     Source list (sources in total: 0):
 
-[[表1-2 ]{lang="EN-US"}[display igmp host group]{lang="EN-US"}]{#struct_0_x1539_x1935_1687172517}[命令显示信息描述表]{style="font-family:黑体"}
+表1-2 display igmp host group命令显示信息描述表
 
-[]{#table_struct_0_x1945862375}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1087336933}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1315163837}
+描述
 
-[[IGMP host groups in total]{lang="EN-US"}]{#struct_0_x1539_x1935_604022580}
+IGMP host groups in total
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1539_x1935_2051328062}[执行主机行为的组播组总数]{style="font-family:宋体"}
+IGMP执行主机行为的组播组总数
 
-[[Vlan-interface10(1.1.1.20)]{lang="EN-US"}]{#struct_0_x1539_x1935_1329904835}
+Vlan-interface10(1.1.1.20)
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1539_x1935_209215564}[执行主机行为的接口的名称和]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+IGMP执行主机行为的接口的名称和IP地址
 
-[[IGMP host groups in total]{lang="EN-US"}]{#struct_0_x1539_x1935_1315360445}
+IGMP host groups in total
 
-[[当前接口下]{style="font-family:宋体"}[IGMP]{lang="EN-US"}]{#struct_0_x1539_x1935_x1800075964}[执行主机行为的组播组数目]{style="font-family:宋体"}
+当前接口下IGMP执行主机行为的组播组数目
 
-[[Group address/Group]{lang="EN-US"}]{#struct_0_x1539_x1935_312888459}
+Group address/Group
 
-[[组播组地址]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1315294909}
+组播组地址
 
-[[Member state]{lang="EN-US"}]{#struct_0_x1539_x1935_161011667}
+Member state
 
-[[组播组成员的状态，取值包括：]{style="font-family:宋体"}]{#struct_0_x1539_x1935_345108032}
+组播组成员的状态，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Delay]{lang="EN-US"}]{#struct_0_x1539_x1935_1315491517}[：表示加入了组播组，并对该组启动了延迟发送报告报文的定时器]{style="font-family:宋体"}
+·Delay：表示加入了组播组，并对该组启动了延迟发送报告报文的定时器
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Idle]{lang="EN-US"}]{#struct_0_x1539_x1935_1695649797}[：表示加入了组播组，但对该组尚未启动延迟发送报告报文的定时器]{style="font-family:宋体"}
+·Idle：表示加入了组播组，但对该组尚未启动延迟发送报告报文的定时器
 
-[[延迟发送报告报文定时器的值不可配置]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x63684864}
+延迟发送报告报文定时器的值不可配置
 
-[[Expires]{lang="EN-US"}]{#struct_0_x1539_x1935_1315425981}
+Expires
 
-[[组播组延迟发送报告报文的剩余时间，]{style="font-family:宋体"}[Off]{lang="EN-US"}]{#struct_0_x1539_x1935_1744986746}[表示该定时器关闭]{style="font-family:宋体"}
+组播组延迟发送报告报文的剩余时间，Off表示该定时器关闭
 
-[[Group mode]{lang="EN-US"}]{#struct_0_x1539_x1935_x1962768624}
+Group mode
 
-[[对组播源的过滤模式，取值包括：]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1077155637}
+对组播源的过滤模式，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Include]{lang="EN-US"}]{#struct_0_x1539_x1935_1314967230}[：表示]{lang="EN-US" style="font-family:宋体"}[INCLUDE]{lang="EN-US"}[模式]{lang="EN-US" style="font-family:宋体"}
+·Include：表示INCLUDE模式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Exclude]{lang="EN-US"}]{#struct_0_x1539_x1935_x1002538856}[：表示]{lang="EN-US" style="font-family:宋体"}[EXCLUDE]{lang="EN-US"}[模式]{lang="EN-US" style="font-family:宋体"}
+·Exclude：表示EXCLUDE模式
 
-[[Source list]{lang="EN-US"}]{#struct_0_x1539_x1935_1314901694}
+Source list
 
-[[IGMP]{lang="EN-US"}]{#struct_0_x1539_x1935_x1404727444}[执行主机行为的组播组所包含的组播源列表]{style="font-family:宋体"}
+IGMP执行主机行为的组播组所包含的组播源列表
 
-[[sources in total]{lang="EN-US"}]{#struct_0_x1539_x1935_1075632545}
+sources in total
 
-[[组播源的总数]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1315098302}
+组播源的总数
 
-[ ]{lang="EN-US"}
+![说明](VXLAN命令.files/image002.png)
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VXLAN命令.files/image002.png){#图片 16 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1539_x1935_103787005}
-:::
+对本命令的显示信息更加详细的介绍，请参见"IP组播配置指导"中的"IGMP"。
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[对本命令的显示信息更加详细的介绍，请参见"]{style="font-family:楷体_GB2312"}]{#struct_0_x1539_x1935_2049578006}[IP]{lang="EN-US"}[组播配置指导"中的"]{style="font-family:楷体_GB2312"}[IGMP]{lang="EN-US"}["。]{style="font-family:楷体_GB2312"}
-:::
+【相关命令】
 
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1416158288}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp host enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_2021042646}
-
-::: {#356357916 .myid}
-[]{#_Toc404798646}[]{#struct_0_x1539_x1935_727650457}
+·**igmp host enable**
 
 **VXLAN \-- VXLAN基础配置命令 \-- display l2vpn mac-address**
 
 ------------------------------------------------------------------------
 
-[**[display l2vpn mac-address]{lang="EN-US"}**]{#struct_0_x1539_x1935_1702948177}[命令用来显示]{style="font-family:
-宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表信息。]{style="font-family:宋体"}
+**[display l2vpn mac-address**]命令用来显示VSI的MAC地址表信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1771030431}
+【命令】
 
-[**[display l2vpn mac-address ]{lang="EN-US"}**[\[ **vsi** *vsi-name* \] \[ **dynamic** \] \[ **count** \]]{lang="EN-US"}]{#struct_0_x1539_x1935_x717867767}
+**[display l2vpn mac-address ** **vsi** *vsi-name* ]  **dynamic**   **count**
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_931481529}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_150634877}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1315032766}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x639689739}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_1410536208}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1247669688}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_x2026152689}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x115753663}
+【参数】
 
-[**[vsi]{lang="EN-US"}**[ *vsi-name*]{lang="EN-US"}]{#struct_0_x1539_x1935_x891325203}[：显示指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表信息。]{style="font-family:宋体"}
+**[vsi** *vsi-name*]：显示指定VSI的MAC地址表信息。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，则显示所有VSI的MAC地址表信息。
 
-[**[dynamic]{lang="EN-US"}**]{#struct_0_x1539_x1935_272008085}[：显示通过源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址动态学习的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。如果不指定本参数，则显示所有类型的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项，包括通过源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址动态学习的本地和远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项、通过]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议学习的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项、静态配置的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[不支持静态配置本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}
+**[dynamic**]：显示通过源MAC地址动态学习的MAC地址表项。如果不指定本参数，则显示所有类型的MAC地址表项，包括通过源MAC地址动态学习的本地和远端MAC地址表项、通过IS-IS协议学习的远端MAC地址表项、静态配置的远端MAC地址表项。VXLAN不支持静态配置本地MAC地址表项。
 
-[**[count]{lang="EN-US"}**]{#struct_0_x1539_x1935_1314006873}[：显示]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项的数目。如果不指定本参数，则显示]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项的具体信息。]{style="font-family:宋体"}
+**[count**]：显示MAC地址表项的数目。如果不指定本参数，则显示MAC地址表项的具体信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_575204960}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1351828553}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表信息。]{style="font-family:宋体"}
+\# 显示所有VSI的MAC地址表信息。
 
-[[\<Sysname\> display l2vpn mac-address]{lang="EN-US"}]{#struct_0_x1539_x1935_1315229374}
+\<Sysname\> display l2vpn mac-address
 
-[MAC Address      State    VSI Name                        Link ID/Name  Aging]{lang="EN-US"}
+MAC Address      State    VSI Name                        Link ID/Name  Aging
 
-[0000-0000-000a   dynamic  vpn1                            1             Aging]{lang="EN-US"}
+0000-0000-000a   dynamic  vpn1                            1             Aging
 
-[0000-0000-000b   static   vpn1                            Tunnel10      NotAging]{lang="EN-US"}
+0000-0000-000b   static   vpn1                            Tunnel10      NotAging
 
-[0000-0000-000c   dynamic  vpn1                            Tunnel60      Aging]{lang="EN-US"}
+0000-0000-000c   dynamic  vpn1                            Tunnel60      Aging
 
-[0000-0000-000d   dynamic  vpn1                            Tunnel99      Aging]{lang="EN-US"}
+0000-0000-000d   dynamic  vpn1                            Tunnel99      Aging
 
-[\-\-- 4 mac address(es) found  \-\--]{lang="EN-US"}
+\-\-- 4 mac address(es) found  \-\--
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1686975909}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项总数。]{style="font-family:宋体"}
+\# 显示所有VSI的MAC地址表项总数。
 
-[[\<Sysname\> display l2vpn mac-address count]{lang="EN-US"}]{#struct_0_x1539_x1935_x331760303}
+\<Sysname\> display l2vpn mac-address count
 
-[4 mac address(es) found]{lang="EN-US"}
+4 mac address(es) found
 
-[[表1-3 ]{lang="EN-US"}[display l2vpn mac-address]{lang="EN-US"}]{#struct_0_x1539_x1935_x1044389194}[命令显示信息描述表]{style="font-family:黑体"}
+表1-3 display l2vpn mac-address命令显示信息描述表
 
-[]{#table_struct_0_x1916675629}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1887308798}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_250204854}
+描述
 
-[[MAC Address]{lang="EN-US"}]{#struct_0_x1539_x1935_1315163838}
+MAC Address
 
-[[MAC]{lang="EN-US"}]{#struct_0_x1539_x1935_603301684}[地址]{style="font-family:宋体"}
+MAC地址
 
-[[State]{lang="EN-US"}]{#struct_0_x1539_x1935_x1165160868}
+State
 
-[[MAC]{lang="EN-US"}]{#struct_0_x1539_x1935_x1770092848}[地址的状态，取值包括：]{style="font-family:宋体"}
+MAC地址的状态，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[dynamic]{lang="EN-US"}]{#struct_0_x1539_x1935_1541065412}[：表示通过]{style="font-family:宋体"}[源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址动态学习的本地或远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项]{style="font-family:宋体"}
+·dynamic：表示通过源MAC地址动态学习的本地或远端MAC地址表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[static]{lang="EN-US"}]{#struct_0_x1539_x1935_x1169627643}[：表示静态配置的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项（]{style="font-family:宋体"}[Aging]{lang="EN-US"}[字段取值为]{style="font-family:宋体"}[NotAging]{lang="EN-US"}[）或]{style="font-family:宋体"}[通过]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议学习的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项（]{style="font-family:宋体"}[Aging]{lang="EN-US"}[字段取值为]{style="font-family:宋体"}[Aging]{lang="EN-US"}[）]{style="font-family:宋体"}
+·static：表示静态配置的远端MAC地址表项（Aging字段取值为NotAging）或通过IS-IS协议学习的远端MAC地址表项（Aging字段取值为Aging）
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_x1539_x1935_944341197}
+VSI Name
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x1483876974}[名称]{style="font-family:宋体"}
+VSI名称
 
-[[Link ID/Name]{lang="EN-US"}]{#struct_0_x1539_x1935_x815994860}
+Link ID/Name
 
-[[对于本端]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1539_x1935_x901536408}[地址，为]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的出链路标识符，即]{style="font-family:宋体"}[AC]{lang="EN-US"}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的链路标识符；对于远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，为]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址对应的隧道名称]{style="font-family:宋体"}
+对于本端MAC地址，为MAC地址的出链路标识符，即AC在VSI内的链路标识符；对于远端MAC地址，为MAC地址对应的隧道名称
 
-[[Aging]{lang="EN-US"}]{#struct_0_x1539_x1935_929225337}
+Aging
 
-[[MAC]{lang="EN-US"}]{#struct_0_x1539_x1935_1315360446}[地址表项是否老化，取值包括]{style="font-family:宋体"}[Aging]{lang="EN-US"}[和]{style="font-family:宋体"}[NotAging]{lang="EN-US"}
+MAC地址表项是否老化，取值包括Aging和NotAging
 
-[[XX mac address(es) found]{lang="EN-US"}]{#struct_0_x1539_x1935_x1800272572}
+XX mac address(es) found
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x979672231}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项的总数]{style="font-family:宋体"}
+VSI的MAC地址表项的总数
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x367465484}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset l2vpn mac-address]{lang="EN-US"}**]{#struct_0_x1539_x1935_x158177197}
-
-::: {#-1122099741 .myid}
-[]{#_Toc404798647}[]{#struct_0_x1539_x1935_1790689730}[]{#_Toc375835820}
+·**reset l2vpn mac-address**
 
 **VXLAN \-- VXLAN基础配置命令 \-- display l2vpn service-instance**
 
 ------------------------------------------------------------------------
 
-[**[display l2vpn service-instance]{lang="EN-US"}**]{#struct_0_x1539_x1935_798572278}[命令用来显示以太网服务实例的信息。]{style="font-family:
-宋体"}
+**[display l2vpn service-instance**]命令用来显示以太网服务实例的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1267037161}
+【命令】
 
-[**[display l2vpn service-instance ]{lang="EN-US"}**[\[ **interface**]{lang="EN-US"}*[ interface-type interface-number]{lang="EN-US"}*[ \[ **service-instance** *instance-id* \] \] \[ **verbose** \]]{lang="EN-US"}]{#struct_0_x1539_x1935_x361790449}
+**[display l2vpn service-instance ** **interface**]* interface-type interface-number* [ **service-instance** *instance-id*  ]  **verbose**
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1747771037}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x652814911}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1315294910}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_161601490}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_x27404400}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x1676815353}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_x1489509659}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1452188395}
+【参数】
 
-[**[interface]{lang="EN-US"}***[ interface-type interface-number]{lang="EN-US"}*]{#struct_0_x1539_x1935_x1065498173}[：显示指定二层以太网接口或二层聚合接口上的以太网服务实例信息。]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[为接口类型和接口编号。如果没有指定本参数，则显示所有二层以太网接口和二层聚合接口上的以太网服务实例信息。]{style="font-family:
-宋体"}
+**[interface*** interface-type interface-number*]：显示指定二层以太网接口或二层聚合接口上的以太网服务实例信息。*interface-type interface-number*为接口类型和接口编号。如果没有指定本参数，则显示所有二层以太网接口和二层聚合接口上的以太网服务实例信息。
 
-[**[service-instance]{lang="EN-US"}***[ instance-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_1838162898}[：显示指定以太网服务实例的信息。]{style="font-family:宋体"}*[instance-id]{lang="EN-US"}*[为以太网服务实例的]{style="font-family:宋体"}[ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4096]{lang="EN-US"}[。如果指定了]{style="font-family:宋体"}**[interface]{lang="EN-US"}***[ interface-type interface-number]{lang="EN-US"}*[参数，没有指定本参数，则显示指定二层以太网接口或二层聚合接口上所有以太网服务实例的信息。]{style="font-family:
-宋体"}
+**[service-instance*** instance-id*]：显示指定以太网服务实例的信息。*instance-id*为以太网服务实例的ID，取值范围为1～4096。如果指定了**interface*** interface-type interface-number*参数，没有指定本参数，则显示指定二层以太网接口或二层聚合接口上所有以太网服务实例的信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_x1539_x1935_758840875}[：显示详细信息。如果不指定本参数，则显示简要信息。]{style="font-family:宋体"}
+**[verbose**]：显示详细信息。如果不指定本参数，则显示简要信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x547768276}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x31279543}[显示所有以太网服务实例的简要信息。]{style="font-family:宋体"}
+\# 显示所有以太网服务实例的简要信息。
 
-[[\<Sysname\> display l2vpn service-instance]{lang="EN-US"}]{#struct_0_x1539_x1935_1315491518}
+\<Sysname\> display l2vpn service-instance
 
-[Total number of service-instances: 4, 4 up, 0 down]{lang="EN-US"}
+Total number of service-instances: 4, 4 up, 0 down
 
-[Total number of ACs: 4, 4 up, 0 down]{lang="EN-US"}
+Total number of ACs: 4, 4 up, 0 down
 
-[ ]{lang="EN-US"}
+Interface                SrvID Owner                           LinkID State Type
 
-[Interface                SrvID Owner                           LinkID State Type]{lang="EN-US"}
+GE1/0/3                  1     vsi10                           1      Up    VSI
 
-[GE1/0/3                  1     vsi10                           1      Up    VSI]{lang="EN-US"}
+GE1/0/3                  2     vsi11                           1      Up    VSI
 
-[GE1/0/3                  2     vsi11                           1      Up    VSI]{lang="EN-US"}
+GE1/0/3                  3     vsi12                           1      Up    VSI
 
-[GE1/0/3                  3     vsi12                           1      Up    VSI]{lang="EN-US"}
+GE1/0/3                  4     vsi13                           1      Up    VSI
 
-[GE1/0/3                  4     vsi13                           1      Up    VSI]{lang="EN-US"}
+表1-4 display l2vpn service-instance命令显示信息描述表
 
-[[表1-4 ]{lang="EN-US"}[display l2vpn service-instance]{lang="EN-US"}]{#struct_0_x1539_x1935_1695584261}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1914191949}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1701565837}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_930945688}
+Total number of service-instances
 
-[[Total number of service-instances]{lang="EN-US"}]{#struct_0_x1539_x1935_x312006084}
+以太网服务实例的总数，及处于up和down状态的以太网服务实例数目
 
-[[以太网服务实例的总数，及处于]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_x1539_x1935_1836825319}[和]{style="font-family:宋体"}[down]{lang="EN-US"}[状态的以太网服务实例数目]{style="font-family:宋体"}
+Total number of ACs
 
-[[Total number of ACs]{lang="EN-US"}]{#struct_0_x1539_x1935_1315425982}
+AC的总数，及处于up和down状态的AC数目
 
-[[AC]{lang="EN-US"}]{#struct_0_x1539_x1935_1744790138}[的总数，及处于]{style="font-family:宋体"}[up]{lang="EN-US"}[和]{style="font-family:宋体"}[down]{lang="EN-US"}[状态的]{style="font-family:宋体"}[AC]{lang="EN-US"}[数目]{style="font-family:宋体"}
+Interface
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1539_x1935_1136542577}
+二层以太网接口或二层聚合接口名称
 
-[[二层以太网接口或二层聚合接口名称]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1031929257}
+SrvID
 
-[[SrvID ]{lang="EN-US"}]{#struct_0_x1539_x1935_x734116810}
+以太网服务实例的ID
 
-[[以太网服务实例的]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1539_x1935_1970206936}
+Owner
 
-[[Owner]{lang="EN-US"}]{#struct_0_x1539_x1935_200077544}
+VSI名称，如果以太网服务实例上尚未关联VSI，则本字段显示为空
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x564568491}[名称，如果以太网服务实例上尚未关联]{style="font-family:宋体"}[VSI]{lang="EN-US"}[，则本字段显示为空]{style="font-family:宋体"}
+LinkID
 
-[[LinkID]{lang="EN-US"}]{#struct_0_x1539_x1935_x600727932}
+以太网服务实例在VSI内的链路标识符
 
-[[以太网服务实例在]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x563458222}[内的链路标识符]{style="font-family:宋体"}
+State
 
-[[State]{lang="EN-US"}]{#struct_0_x1539_x1935_x1572045715}
+以太网服务实例的状态，取值包括Up和Down
 
-[[以太网服务实例的状态，取值包括]{style="font-family:宋体"}[Up]{lang="EN-US"}]{#struct_0_x1539_x1935_x2002071143}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}
+Type
 
-[[Type]{lang="EN-US"}]{#struct_0_x1539_x1935_1575500402}
+以太网服务实例所属的L2VPN类型，取值包括VSI和VPWS
 
-[[以太网服务实例所属的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}]{#struct_0_x1539_x1935_1500394595}[类型，取值包括]{style="font-family:宋体"}[VSI]{lang="EN-US"}[和]{style="font-family:宋体"}[VPWS]{lang="EN-US"}
+\# 显示二层以太网接口GigabitEthernet1/0/3上所有以太网服务实例的详细信息。
 
-[ ]{lang="EN-US"}
+\<Sysname\> display l2vpn service-instance interface gigabitethernet 1/0/3 verbose
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x1457981841}[显示二层以太网接口]{style="font-family:宋体"}[GigabitEthernet1/0/3]{lang="EN-US"}[上所有以太网服务实例的详细信息。]{style="font-family:宋体"}
+Interface: GE1/0/3
 
-[[\<Sysname\> display l2vpn service-instance interface gigabitethernet 1/0/3 verbose]{lang="EN-US"}]{#struct_0_x1539_x1935_x600662396}
+  Service Instance: 1
 
-[Interface: GE1/0/3]{lang="EN-US"}
+    Encapsulation : s-vid 1 to 16
 
-[  Service Instance: 1]{lang="EN-US"}
+    VSI Name      : vsi10
 
-[    Encapsulation : s-vid 1 to 16]{lang="EN-US"}
+    Link ID       : 1
 
-[    VSI Name      : vsi10]{lang="EN-US"}
+    State         : Up
 
-[    Link ID       : 1]{lang="EN-US"}
+  Service Instance: 2
 
-[    State         : Up]{lang="EN-US"}
+    Encapsulation : s-vid 1001 to 1016
 
-[  Service Instance: 2]{lang="EN-US"}
+                    only-tagged
 
-[    Encapsulation : s-vid 1001 to 1016]{lang="EN-US"}
+    VSI Name      : vsi11
 
-[                    only-tagged]{lang="EN-US"}
+    Link ID       : 1
 
-[    VSI Name      : vsi11]{lang="EN-US"}
+    State         : Up
 
-[    Link ID       : 1]{lang="EN-US"}
+  Service Instance: 3
 
-[    State         : Up]{lang="EN-US"}
+    Encapsulation : s-vid 2000
 
-[  Service Instance: 3]{lang="EN-US"}
+                    c-vid 1001 to 1002 1015 to 1016
 
-[    Encapsulation : s-vid 2000]{lang="EN-US"}
+    VSI Name      : vsi12
 
-[                    c-vid 1001 to 1002 1015 to 1016]{lang="EN-US"}
+    Link ID       : 1
 
-[    VSI Name      : vsi12]{lang="EN-US"}
+    State         : Up
 
-[    Link ID       : 1]{lang="EN-US"}
+表1-5 display l2vpn service-instance verbose命令显示信息描述表
 
-[    State         : Up]{lang="EN-US"}
+字段
 
-[[表1-5 ]{lang="EN-US"}[display l2vpn service-instance verbose]{lang="EN-US"}]{#struct_0_x1539_x1935_x167049098}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x1917218611}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x600859004}
+Interface
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_2118323032}
+二层以太网接口或二层聚合接口
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1539_x1935_x1937073615}
+Service Instance
 
-[[二层以太网接口或二层聚合接口]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x634732501}
+以太网服务实例ID
 
-[[Service Instance]{lang="EN-US"}]{#struct_0_x1539_x1935_557042667}
+Encapsulation
 
-[[以太网服务实例]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1539_x1935_1758847023}
+以太网服务实例的报文匹配规则，如果没有配置报文匹配规则，则不显示本字段
 
-[[Encapsulation]{lang="EN-US"}]{#struct_0_x1539_x1935_x973474867}
+VSI Name
 
-[[以太网服务实例的报文匹配规则，如果没有配置报文匹配规则，则不显示本字段]{style="font-family:宋体"}]{#struct_0_x1539_x1935_2044581105}
+与以太网服务实例关联的VSI的名称
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_x1539_x1935_180923411}
+Link ID
 
-[[与以太网服务实例关联的]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_2123363991}[的名称]{style="font-family:宋体"}
+以太网服务实例在VSI内的链路标识符
 
-[[Link ID]{lang="EN-US"}]{#struct_0_x1539_x1935_x600793468}
+State
 
-[[以太网服务实例在]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x190022421}[内的链路标识符]{style="font-family:宋体"}
+以太网服务实例的状态，取值包括Up和Down
 
-[[State]{lang="EN-US"}]{#struct_0_x1539_x1935_1179859981}
+【相关命令】
 
-[[以太网服务实例的状态，取值包括]{style="font-family:宋体"}[Up]{lang="EN-US"}]{#struct_0_x1539_x1935_x2022303084}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1502333829}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[service-instance]{lang="EN-US"}**]{#struct_0_x1539_x1935_x737759377}
-
-::: {#-1007637280 .myid}
-[]{#_Toc404798648}[]{#struct_0_x1539_x1935_613487347}[]{#_Toc372102896}[]{#_Toc334795167}
+·**service-instance**
 
 **VXLAN \-- VXLAN基础配置命令 \-- display l2vpn vsi**
 
 ------------------------------------------------------------------------
 
-[**[display l2vpn vsi]{lang="EN-US"}**]{#struct_0_x1539_x1935_x9081544}[命令用来显示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[display l2vpn vsi**]命令用来显示VSI的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x600990076}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **l2vpn** **vsi** \[ **name** *vsi-name* \] \[ **verbose** \]]{lang="EN-US"}]{#struct_0_x1539_x1935_x991301181}
+**[display** **l2vpn** **vsi** [ **name** *vsi-name*   **verbose** ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x685067983}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1358388786}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1410719898}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_863450362}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_x603348229}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_60069366}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_x2129789819}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x2106738890}
+【参数】
 
-[**[name]{lang="EN-US"}***[ vsi-name]{lang="EN-US"}*]{#struct_0_x1539_x1935_x190204345}[：显示指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[name*** vsi-name*]：显示指定VSI的信息。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，则显示所有VSI的信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1204750357}[：显示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的详细信息。如果不指定本参数，则显示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的简要信息。]{style="font-family:宋体"}
+**[verbose**]：显示VSI的详细信息。如果不指定本参数，则显示VSI的简要信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x600924540}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x1364736978}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的简要信息。]{style="font-family:宋体"}
+\# 显示所有VSI的简要信息。
 
-[[\<Sysname\> display l2vpn vsi]{lang="EN-US"}]{#struct_0_x1539_x1935_x314395543}
+\<Sysname\> display l2vpn vsi
 
-[Total number of VSIs: 1, 1 up, 0 down, 0 admin down]{lang="EN-US"}
+Total number of VSIs: 1, 1 up, 0 down, 0 admin down
 
-[ ]{lang="EN-US"}
+VSI Name                        VSI Index       MTU    State
 
-[VSI Name                        VSI Index       MTU    State]{lang="EN-US"}
+vpna                            0               1500   Up
 
-[vpna                            0               1500   Up]{lang="EN-US"}
+\# 显示所有VSI的详细信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x675139567}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的详细信息。]{style="font-family:宋体"}
+\<Sysname\> display l2vpn vsi verbose
 
-[[\<Sysname\> display l2vpn vsi verbose]{lang="EN-US"}]{#struct_0_x1539_x1935_x601121148}
+VSI Name: vpna
 
-[VSI Name: vpna]{lang="EN-US"}
+  VSI Index               : 0
 
-[  VSI Index               : 0]{lang="EN-US"}
+  VSI State               : Up
 
-[  VSI State               : Up]{lang="EN-US"}
+  MTU                     : 1500
 
-[  MTU                     : 1500]{lang="EN-US"}
+  Bandwidth               : 102400 kbps
 
-[  Bandwidth               : 102400 kbps]{lang="EN-US"}
+  Broadcast Restrain      : 5%
 
-[  Broadcast Restrain      : 5%]{lang="EN-US"}
+  Multicast Restrain      : 100%
 
-[  Multicast Restrain      : 100%]{lang="EN-US"}
+  Unknown Unicast Restrain: 100%
 
-[  Unknown Unicast Restrain: 100%]{lang="EN-US"}
+  MAC Learning            : Enabled
 
-[  MAC Learning            : Enabled]{lang="EN-US"}
+  MAC Table Limit         : -
 
-[  MAC Table Limit         : -]{lang="EN-US"}
+  Drop Unknown            : Disabled
 
-[  Drop Unknown            : Disabled]{lang="EN-US"}
+  Flooding                : Enabled
 
-[  Flooding                : Enabled]{lang="EN-US"}
+  Statistics              : Enabled
 
-[  Statistics              : Enabled]{lang="EN-US"}
+  Input statistics:
 
-[  Input statistics:]{lang="EN-US"}
+    Octets   : 0
 
-[    Octets   : 0]{lang="EN-US"}
+    Packets  : 0
 
-[    Packets  : 0]{lang="EN-US"}
+    Errors   : 0
 
-[    Errors   : 0]{lang="EN-US"}
+    Discards : 0
 
-[    Discards : 0]{lang="EN-US"}
+  Output statistics:
 
-[  Output statistics:]{lang="EN-US"}
+    Octets   : 0
 
-[    Octets   : 0]{lang="EN-US"}
+    Packets  : 0
 
-[    Packets  : 0]{lang="EN-US"}
+    Errors   : 0
 
-[    Errors   : 0]{lang="EN-US"}
+    Discards : 0
 
-[    Discards : 0]{lang="EN-US"}
+  Gateway Interface       : VSI-interface 100
 
-[  Gateway Interface       : VSI-interface 100]{lang="EN-US"}
+  VXLAN ID                : 10
 
-[  VXLAN ID                : 10]{lang="EN-US"}
+  Tunnels:
 
-[  Tunnels:]{lang="EN-US"}
+    Tunnel Name          Link ID    State  Type
 
-[    Tunnel Name          Link ID    State  Type]{lang="EN-US"}
+    Tunnel1              0x5000001  Up     Manual
 
-[    Tunnel1              0x5000001  Up     Manual]{lang="EN-US"}
+    Tunnel2              0x5000002  Up     Manual
 
-[    Tunnel2              0x5000002  Up     Manual]{lang="EN-US"}
+    MTunnel0             0x6002710  Up     Auto
 
-[    MTunnel0             0x6002710  Up     Auto]{lang="EN-US"}
+  ACs:
 
-[  ACs:]{lang="EN-US"}
+    AC                               Link ID    State
 
-[    AC                               Link ID    State]{lang="EN-US"}
+    GE1/0/1 srv1000                  0          Up
 
-[    GE1/0/1 srv1000                  0          Up]{lang="EN-US"}
+表1-6 display l2vpn vsi命令显示信息描述表
 
-[[表1-6 ]{lang="EN-US"}[display l2vpn vsi]{lang="EN-US"}]{#struct_0_x1539_x1935_205415797}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1925179177}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x393222165}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_506018887}
+VSI Name
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_x1539_x1935_996515276}
+VSI名称
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_176315117}[名称]{style="font-family:宋体"}
+VSI Index
 
-[[VSI Index]{lang="EN-US"}]{#struct_0_x1539_x1935_x602355636}
+VSI索引
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x321963996}[索引]{style="font-family:宋体"}
+VSI Description
 
-[[VSI Description]{lang="EN-US"}]{#struct_0_x1539_x1935_x601055612}
+VSI的描述信息，如果不配置，则此行不显示
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_194000773}[的描述信息，如果不配置，则此行不显示]{style="font-family:宋体"}
+VSI State
 
-[[VSI State]{lang="EN-US"}]{#struct_0_x1539_x1935_x389153584}
+VSI的状态，取值包括：
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x1987981372}[的状态，取值包括：]{style="font-family:宋体"}
+·Up：up状态。只有VXLAN关联了处于up状态的隧道和AC，VSI才会处于up状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Up]{lang="EN-US"}]{#struct_0_x1539_x1935_1176370414}[：]{style="font-family:宋体"}[up]{lang="EN-US"}[状态。只有]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[关联了处于]{style="font-family:宋体"}[up]{lang="EN-US"}[状态的隧道和]{style="font-family:宋体"}[AC]{lang="EN-US"}[，]{style="font-family:宋体"}[VSI]{lang="EN-US"}[才会处于]{style="font-family:宋体"}[up]{lang="EN-US"}[状态]{style="font-family:宋体"}
+·Down：down状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Down]{lang="EN-US"}]{#struct_0_x1539_x1935_1258829099}[：]{lang="EN-US" style="font-family:宋体"}[down]{lang="EN-US"}[状态]{lang="EN-US" style="font-family:宋体"}
+·Administratively down：通过**shutdown**命令手工关闭VSI
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Administratively down]{lang="EN-US"}]{#struct_0_x1539_x1935_x916368307}[：通过]{lang="EN-US" style="font-family:
-  宋体"}**[shutdown]{lang="EN-US"}**[命令手工关闭]{lang="EN-US" style="font-family:宋体"}[VSI]{lang="EN-US"}
+MTU
 
-[[MTU]{lang="EN-US"}]{#struct_0_x1539_x1935_x600203644}
+VSI上配置的最大传输单元
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x554861536}[上配置的最大传输单元]{style="font-family:宋体"}
+Bandwidth
 
-[[Bandwidth]{lang="EN-US"}]{#struct_0_x1539_x1935_621444724}
+VSI的带宽限制值，单位为kbps
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x808887365}[的带宽限制值，单位为]{style="font-family:宋体"}[kbps]{lang="EN-US"}
+Broadcast Restrain
 
-[[Broadcast Restrain]{lang="EN-US"}]{#struct_0_x1539_x1935_x1373024331}
+VSI的广播抑制百分比
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_69322108}[的广播抑制百分比]{style="font-family:宋体"}
+Multicast Restrain
 
-[[Multicast Restrain]{lang="EN-US"}]{#struct_0_x1539_x1935_x1179057033}
+VSI的组播抑制百分比
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x600138108}[的组播抑制百分比]{style="font-family:宋体"}
+Unknown Unicast Restrain
 
-[[Unknown Unicast Restrain]{lang="EN-US"}]{#struct_0_x1539_x1935_1722979766}
+VSI的未知单播抑制百分比
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x468890575}[的未知单播抑制百分比]{style="font-family:宋体"}
+MAC Learning
 
-[[MAC Learning]{lang="EN-US"}]{#struct_0_x1539_x1935_1278484933}
+是否使能了MAC地址学习功能
 
-[[是否使能了]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1539_x1935_x1243347216}[地址学习功能]{style="font-family:宋体"}
+MAC Table Limit
 
-[[MAC Table Limit]{lang="EN-US"}]{#struct_0_x1539_x1935_709522996}
+VSI内MAC地址表项的最大数目
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_1966679416}[内]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项的最大数目]{style="font-family:宋体"}
+Drop Unknown
 
-[[Drop Unknown]{lang="EN-US"}]{#struct_0_x1539_x1935_x600727931}
+当VSI内学习到的MAC地址数达到最大值后，是否禁止转发源MAC地址不在MAC地址表里的报文
 
-[[当]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x563392686}[内学习到的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数达到最大值后，是否禁止转发源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址不在]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表里的报文]{style="font-family:宋体"}
+Hub-Spoke
 
-[[Hub-Spoke]{lang="EN-US"}]{#struct_0_x1539_x1935_687540784}
+是否使能了Hub-spoke能力
 
-[[是否使能了]{style="font-family:宋体"}[Hub-spoke]{lang="EN-US"}]{#struct_0_x1539_x1935_959864329}[能力]{style="font-family:宋体"}
+Flooding
 
-[[Flooding]{lang="EN-US"}]{#struct_0_x1539_x1935_x49604550}
+是否使能VSI的泛洪功能，取值包括：
 
-[[是否使能]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x2053799150}[的泛洪功能，取值包括：]{style="font-family:宋体"}
+·Enabled：表示使能了VSI的泛洪功能，即VTEP会将目的MAC地址未知的单播数据帧发送给所有本地和远端站点
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_x1539_x1935_x600662395}[：表示使能]{style="font-family:宋体"}[了]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的泛洪功能，即]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[会将目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址未知的单播数据帧发送给所有本地和远端站点]{style="font-family:宋体"}
+·Disabled：表示禁止VSI的泛洪功能，即VTEP只将目的MAC地址未知的单播数据帧发送给所有本地站点
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_x1539_x1935_x166983562}[：]{lang="EN-US" style="font-family:宋体"}[表示]{style="font-family:宋体"}[禁止]{lang="EN-US" style="font-family:宋体"}[VSI]{lang="EN-US"}[的泛洪功能]{lang="EN-US" style="font-family:宋体"}[，即]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[只将目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址未知的单播数据帧发送给所有本地站点]{style="font-family:宋体"}
+Statistics
 
-[[Statistics]{lang="EN-US"}]{#struct_0_x1539_x1935_1900329706}
+是否使能VSI的统计功能，取值包括：
 
-[[是否使能]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_1900329707}[的统计功能，取值包括：]{style="font-family:宋体"}
+·Enabled：使能了VSI的统计功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_x1539_x1935_1900329708}[：使能了]{lang="EN-US" style="font-family:宋体"}[VSI]{lang="EN-US"}[的统计功能]{lang="EN-US" style="font-family:宋体"}
+·Disabled：禁止VSI的统计功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_x1539_x1935_x438322461}[：禁止]{lang="EN-US" style="font-family:宋体"}[VSI]{lang="EN-US"}[的统计功能]{lang="EN-US" style="font-family:宋体"}
+Input statistics
 
-[[Input statistics]{lang="EN-US"}]{#struct_0_x1539_x1935_x438322460}
+入方向的VSI报文统计信息，包括入方向接收的字节数（Octets）、接收的报文数（Packets）、接收的错误报文数（Errors）和丢弃的报文数（Discards）
 
-[[入方向的]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x438322459}[报文统计信息，包括入方向接收的字节数（]{style="font-family:宋体"}[Octets]{lang="EN-US"}[）、接收的报文数（]{style="font-family:宋体"}[Packets]{lang="EN-US"}[）、接收的错误报文数（]{style="font-family:宋体"}[Errors]{lang="EN-US"}[）和丢弃的报文数（]{style="font-family:宋体"}[Discards]{lang="EN-US"}[）]{style="font-family:宋体"}
+Output statistics
 
-[[Output statistics]{lang="EN-US"}]{#struct_0_x1539_x1935_x438322458}
+出方向的VSI报文统计信息，包括出方向发送的字节数（Octets）、发送的报文数（Packets）、错误报文数（Errors）和丢弃的报文数（Discards）
 
-[[出方向的]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x438322457}[报文统计信息，包括出方向发送的字节数（]{style="font-family:宋体"}[Octets]{lang="EN-US"}[）、发送的报文数（]{style="font-family:宋体"}[Packets]{lang="EN-US"}[）、错误报文数（]{style="font-family:宋体"}[Errors]{lang="EN-US"}[）和丢弃的报文数（]{style="font-family:宋体"}[Discards]{lang="EN-US"}[）]{style="font-family:宋体"}
+Gateway Interface
 
-[[Gateway Interface]{lang="EN-US"}]{#struct_0_x1539_x1935_x438322456}
+VSI网关虚接口编号
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x438322454}[网关虚接口编号]{style="font-family:宋体"}
+VXLAN ID
 
-[[VXLAN ID]{lang="EN-US"}]{#struct_0_x1539_x1935_1883733876}
+VXLAN编号
 
-[[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_x700054915}[编号]{style="font-family:宋体"}
+Tunnels
 
-[[Tunnels]{lang="EN-US"}]{#struct_0_x1539_x1935_1938211562}
+与VXLAN关联的隧道信息
 
-[[与]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_x600859003}[关联的隧道信息]{style="font-family:宋体"}
+Tunnel Name
 
-[[Tunnel Name]{lang="EN-US"}]{#struct_0_x1539_x1935_2117995352}
+隧道名称
 
-[[隧道名称]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1011722969}
+Link ID
 
-[[Link ID]{lang="EN-US"}]{#struct_0_x1539_x1935_1647230544}
+隧道在VSI内的链路标识符
 
-[[隧道在]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x600793467}[内的链路标识符]{style="font-family:宋体"}
+State
 
-[[State]{lang="EN-US"}]{#struct_0_x1539_x1935_x189825813}
+隧道状态，取值包括Up和Down
 
-[[隧道状态，取值包括]{style="font-family:宋体"}[Up]{lang="EN-US"}]{#struct_0_x1539_x1935_1982827636}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}
+Type
 
-[[Type]{lang="EN-US"}]{#struct_0_x1539_x1935_1780798524}
+VXLAN和VXLAN隧道的关联方式，取值包括：
 
-[[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_x1695231434}[和]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道的关联方式，取值包括：]{style="font-family:宋体"}
+·Auto：表示自动关联，分为以下两种：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Auto]{lang="EN-US"}]{#struct_0_x1539_x1935_1077491423}[：表示自动关联，分为以下两种：]{style="font-family:宋体"}
+¡通过VXLAN ISIS协商VXLAN ID后，自动将VXLAN和VXLAN隧道关联；
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[通过]{style="font-family:
-  宋体"}]{#struct_0_x1539_x1935_x600990075}[VXLAN ISIS]{lang="EN-US"}[协商]{style="font-family:
-  宋体"}[VXLAN ID]{lang="EN-US"}[后，自动将]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[和]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道关联；]{style="font-family:宋体"}
+¡在组播路由方式下，自动创建用于转发泛洪流量的组播VXLAN隧道（MTunnel），并将其与VXLAN关联
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[在组播路由方式下，自动创建用于转发泛洪流量的组播]{style="font-family:
-  宋体"}]{#struct_0_x1539_x1935_x991104573}[VXLAN]{lang="EN-US"}[隧道（]{style="font-family:宋体"}[MTunnel]{lang="EN-US"}[），并将其与]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[关联]{style="font-family:宋体"}
+·Manual：表示手动关联VXLAN和VXLAN隧道
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Manual]{lang="EN-US"}]{#struct_0_x1539_x1935_x690358263}[：表示手动关联]{lang="EN-US" style="font-family:宋体"}[VXLAN]{lang="EN-US"}[和]{lang="EN-US" style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道]{lang="EN-US" style="font-family:宋体"}
+ACs
 
-[[ACs]{lang="EN-US"}]{#struct_0_x1539_x1935_x2142469883}
+VSI的AC列表
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x600924539}[的]{style="font-family:宋体"}[AC]{lang="EN-US"}[列表]{style="font-family:宋体"}
+AC
 
-[[AC]{lang="EN-US"}]{#struct_0_x1539_x1935_x1364278221}
+接入电路
 
-[[接入电路]{style="font-family:宋体"}]{#struct_0_x1539_x1935_930459115}
+Link ID
 
-[[Link ID]{lang="EN-US"}]{#struct_0_x1539_x1935_387560967}
+AC在VSI内的链路标识符
 
-[[AC]{lang="EN-US"}]{#struct_0_x1539_x1935_x601121147}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的链路标识符]{style="font-family:宋体"}
+State
 
-[[State]{lang="EN-US"}]{#struct_0_x1539_x1935_204432757}
-
-[[AC]{lang="EN-US"}]{#struct_0_x1539_x1935_1761800104}[的状态，取值包括]{style="font-family:宋体"}[Up]{lang="EN-US"}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-::: {#-997314772 .myid}
-[]{#_Toc404798649}[]{#struct_0_x1539_x1935_709644995}[]{#_Toc372102898}
+AC的状态，取值包括Up和Down
 
 **VXLAN \-- VXLAN基础配置命令 \-- display vxlan tunnel**
 
 ------------------------------------------------------------------------
 
-[**[display vxlan tunnel]{lang="EN-US"}**]{#struct_0_x1539_x1935_x601055611}[命令用来显示与]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[关联的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道的信息。]{style="font-family:宋体"}
+**[display vxlan tunnel**]命令用来显示与VXLAN关联的VXLAN隧道的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_194197381}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **vxlan tunnel** \[ **vxlan-id** *vxlan-id* \]]{lang="EN-US"}]{#struct_0_x1539_x1935_x7025131}
+**[display** **vxlan tunnel** [ **vxlan-id** *vxlan-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1089757685}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x2110835552}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1662530594}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_994159342}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_779283646}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x963958426}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_348814543}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1169902117}
+【参数】
 
-[*[vxlan-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_955575282}[：显示与指定]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[关联的隧道的信息。]{style="font-family:宋体"}*[vxlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[16777215]{lang="EN-US"}[。不指定此参数，则显示所有与]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[关联的隧道的信息。]{style="font-family:宋体"}
+*[vxlan-id*]：显示与指定VXLAN关联的隧道的信息。*vxlan-id*为VXLAN的编号，取值范围为0～16777215。不指定此参数，则显示所有与VXLAN关联的隧道的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x600203643}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x554533856}[显示所有与]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[关联的隧道的信息。]{style="font-family:宋体"}
+\# 显示所有与VXLAN关联的隧道的信息。
 
-[[\<Sysname\> display vxlan tunnel]{lang="EN-US"}]{#struct_0_x1539_x1935_x894331749}
+\<Sysname\> display vxlan tunnel
 
-[Total number of VXLANs: 1]{lang="EN-US"}
+Total number of VXLANs: 1
 
-[ ]{lang="EN-US"}
+VXLAN ID: 10, VSI name: vpna, Total tunnels: 4 (4 up, 0 down)
 
-[VXLAN ID: 10, VSI name: vpna, Total tunnels: 4 (4 up, 0 down)]{lang="EN-US"}
+Tunnel name          Link ID    State  Type
 
-[Tunnel name          Link ID    State  Type]{lang="EN-US"}
+Tunnel0              0x5000000  Up     Auto
 
-[Tunnel0              0x5000000  Up     Auto]{lang="EN-US"}
+Tunnel1              0x5000001  Up     Manual
 
-[Tunnel1              0x5000001  Up     Manual]{lang="EN-US"}
+Tunnel2              0x5000002  Up     Manual/Auto
 
-[Tunnel2              0x5000002  Up     Manual/Auto]{lang="EN-US"}
+MTunnel0             0x6002710  Up     Auto
 
-[MTunnel0             0x6002710  Up     Auto]{lang="EN-US"}
+\# 显示与编号为10的VXLAN关联的隧道的信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_43495725}[显示与编号为]{style="font-family:宋体"}[10]{lang="EN-US"}[的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[关联的隧道的信息。]{style="font-family:宋体"}
+\<Sysname\> display vxlan tunnel vxlan-id 10
 
-[[\<Sysname\> display vxlan tunnel vxlan-id 10]{lang="EN-US"}]{#struct_0_x1539_x1935_691096131}
+VXLAN ID: 10, VSI name: vpna, Total tunnels: 4 (4 up, 0 down)
 
-[VXLAN ID: 10, VSI name: vpna, Total tunnels: 4 (4 up, 0 down)]{lang="EN-US"}
+Tunnel name          Link ID    State  Type
 
-[Tunnel name          Link ID    State  Type]{lang="EN-US"}
+Tunnel0              0x5000000  Up     Auto
 
-[Tunnel0              0x5000000  Up     Auto]{lang="EN-US"}
+Tunnel1              0x5000001  Up     Manual
 
-[Tunnel1              0x5000001  Up     Manual]{lang="EN-US"}
+Tunnel2              0x5000002  Up     Manual/Auto
 
-[Tunnel2              0x5000002  Up     Manual/Auto]{lang="EN-US"}
+MTunnel0             0x6002710  Up     Auto
 
-[MTunnel0             0x6002710  Up     Auto]{lang="EN-US"}
+表1-7 display vxlan tunnel命令显示信息描述表
 
-[[表1-7 ]{lang="EN-US"}[display vxlan tunnel]{lang="EN-US"}]{#struct_0_x1539_x1935_270431147}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1899627907}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1454601377}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1217105516}
+Total number of VXLANs
 
-[[Total number of VXLANs]{lang="EN-US"}]{#struct_0_x1539_x1935_x1303092520}
+已创建的VXLAN的总数
 
-[[已创建的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_x600138107}[的总数]{style="font-family:宋体"}
+VXLAN ID
 
-[[VXLAN ID]{lang="EN-US"}]{#struct_0_x1539_x1935_1723962806}
+VXLAN ID
 
-[[VXLAN ID]{lang="EN-US"}]{#struct_0_x1539_x1935_x800187410}
+VSI name
 
-[[VSI name]{lang="EN-US"}]{#struct_0_x1539_x1935_x1200664911}
+VXLAN所属的VSI名称
 
-[[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_1271932875}[所属的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[名称]{style="font-family:宋体"}
+Total tunnels
 
-[[Total tunnels]{lang="EN-US"}]{#struct_0_x1539_x1935_188357913}
+与VXLAN关联的隧道的总数，包括处于Up和Down状态的隧道总数
 
-[[与]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_x712620399}[关联的隧道的]{style="font-family:宋体"}[总数，包括处于]{style="font-family:宋体"}[Up]{lang="EN-US"}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}[状态的隧道总数]{style="font-family:宋体"}
+Tunnel name
 
-[[Tunnel name]{lang="EN-US"}]{#struct_0_x1539_x1935_x1189424409}
+隧道名称
 
-[[隧道名称]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x600727934}
+Link ID
 
-[[Link ID]{lang="EN-US"}]{#struct_0_x1539_x1935_x563589294}
+隧道在VXLAN内的链路标识符
 
-[[隧道在]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_1130557678}[内的链路标识符]{style="font-family:宋体"}
+State
 
-[[State]{lang="EN-US"}]{#struct_0_x1539_x1935_x491800926}
+隧道的状态，取值包括Up、Down
 
-[[隧道的状态，取值包括]{style="font-family:宋体"}[Up]{lang="EN-US"}]{#struct_0_x1539_x1935_x57137493}[、]{style="font-family:宋体"}[Down]{lang="EN-US"}
+Type
 
-[[Type]{lang="EN-US"}]{#struct_0_x1539_x1935_x1334455130}
+VXLAN和VXLAN隧道的关联方式，取值包括：
 
-[[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_x600662398}[和]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道的关联方式，取值包括：]{style="font-family:宋体"}
+·Auto：表示自动关联，分为以下两种：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Auto]{lang="EN-US"}]{#struct_0_x1539_x1935_x167704458}[：表示自动关联，分为以下两种：]{style="font-family:宋体"}
+¡通过VXLAN ISIS协商VXLAN ID后，自动将VXLAN和VXLAN隧道关联；
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[通过]{style="font-family:
-  宋体"}]{#struct_0_x1539_x1935_1545532368}[VXLAN ISIS]{lang="EN-US"}[协商]{style="font-family:
-  宋体"}[VXLAN ID]{lang="EN-US"}[后，自动将]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[和]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道关联；]{style="font-family:宋体"}
+¡在组播路由方式下，自动创建用于转发泛洪流量的组播VXLAN隧道（MTunnel），并将其与VXLAN关联
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[在组播路由方式下，自动创建用于转发泛洪流量的组播]{style="font-family:
-  宋体"}]{#struct_0_x1539_x1935_888560122}[VXLAN]{lang="EN-US"}[隧道（]{style="font-family:宋体"}[MTunnel]{lang="EN-US"}[），并将其与]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[关联]{style="font-family:宋体"}
+·Manual：表示手动关联VXLAN和VXLAN隧道
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Manual]{lang="EN-US"}]{#struct_0_x1539_x1935_x1651767978}[：表示手动关联]{lang="EN-US" style="font-family:宋体"}[VXLAN]{lang="EN-US"}[和]{lang="EN-US" style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道]{lang="EN-US" style="font-family:宋体"}
+【相关命令】
 
-[ ]{lang="EN-US"}
+·**tunnel**
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x427962976}
+·**vxlan**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[tunnel]{lang="EN-US"}**]{#struct_0_x1539_x1935_832301806}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vxlan]{lang="EN-US"}**]{#struct_0_x1539_x1935_222425667}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[negotiate-vni enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_x820659478}
-
-::: {#-900899430 .myid}
-[]{#_Toc404798650}[]{#struct_0_x1539_x1935_x600859006}[]{#_Toc375835822}[]{#_Toc288911611}[]{#_Toc203551099}
+·**negotiate-vni enable**
 
 **VXLAN \-- VXLAN基础配置命令 \-- encapsulation**
 
 ------------------------------------------------------------------------
 
-[**[encapsulation]{lang="EN-US"}**]{#struct_0_x1539_x1935_2118191960}[命令用来配置以太网服务实例的报文匹配规则。]{style="font-family:宋体"}
+**[encapsulation**]命令用来配置以太网服务实例的报文匹配规则。
 
-[**[undo encapsulation]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1229356126}[命令用来删除以太网服务实例的报文匹配规则。]{style="font-family:宋体"}
+**[undo encapsulation**]命令用来删除以太网服务实例的报文匹配规则。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1515180872}
+【命令】
 
-[**[encapsulation]{lang="EN-US"}**[ **c-vid** { *vlan-id* \| *vlan-id-list* }]{lang="EN-US"}]{#struct_0_x1539_x1935_29754634}
+**[encapsulation**[ **c-vid** { *vlan-id* \| *vlan-id-list* }]]
 
-[**[encapsulation]{lang="EN-US"}**[ **s-vid** { *vlan-id* \| *vlan-id-list* } \[ **only-tagged** \]]{lang="EN-US"}]{#struct_0_x1539_x1935_35953032}
+**[encapsulation**[ **s-vid** { *vlan-id* \| *vlan-id-list* } [ **only-tagged** ]]]
 
-[**[encapsulation]{lang="EN-US"}**[ **s-vid** *vlan-id* **c-vid** { *vlan-id-list* \| **all** }]{lang="EN-US"}]{#struct_0_x1539_x1935_705489628}
+**[encapsulation**[ **s-vid** *vlan-id* **c-vid** { *vlan-id-list* \| **all** }]]
 
-[**[encapsulation]{lang="EN-US"}**[ { **default** \| **tagged** \| **untagged** }]{lang="EN-US"}]{#struct_0_x1539_x1935_1135366377}
+**[encapsulation**[ { **default** \| **tagged** \| **untagged** }]]
 
-[**[undo encapsulation]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1537004537}
+**[undo encapsulation**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1951801995}
+【缺省情况】
 
-[[未配置任何报文匹配规则。]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1038045323}
+未配置任何报文匹配规则。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1730687903}
+【视图】
 
-[[以太网服务实例视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1068283655}
+以太网服务实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x600793470}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x189498134}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1266130963}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_79975343}
+【参数】
 
-[**[c-vid]{lang="EN-US"}**[ { *vlan-id* \| *vlan-id-list* }]{lang="EN-US"}]{#struct_0_x1539_x1935_x183821677}[：匹配内层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签（]{style="font-family:宋体"}[Customer VLAN ID]{lang="EN-US"}[）为指定值的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[c-vid**[ { *vlan-id* \| *vlan-id-list* }]]：匹配内层VLAN标签（Customer VLAN ID）为指定值的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[vlan-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_1671281158}[表示]{style="font-family:
-宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+·*vlan-id*表示VLAN的编号，取值范围为1～4094。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[vlan-id-list]{lang="EN-US"}*]{#struct_0_x1539_x1935_x529350478}[为]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，表示一个或多个]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号。表示方式为]{lang="EN-US" style="font-family:宋体"}*[vlan-id-list]{lang="EN-US"}*[ = { *vlan-id* \[ to *vlan-id* \] }&\<1-8\>]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}[其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-8\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[8]{lang="EN-US"}[次。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+·*vlan-id-list*为VLAN列表，表示一个或多个VLAN的编号。表示方式为*vlan-id-list* = { *vlan-id* [ to *vlan-id*  }&\<1-8\>]。其中，*vlan-id*为指定VLAN的编号，取值范围为1～4094。&\<1-8\>表示前面的参数最多可以输入8次。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[s-vid]{lang="EN-US"}**[ { *vlan-id* \| *vlan-id-list* }]{lang="EN-US"}]{#struct_0_x1539_x1935_99483919}[：匹配外层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签（]{style="font-family:宋体"}[Service VLAN ID]{lang="EN-US"}[）为指定值的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[s-vid**[ { *vlan-id* \| *vlan-id-list* }]]：匹配外层VLAN标签（Service VLAN ID）为指定值的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[vlan-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_x2094880353}[表示]{style="font-family:
-宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+·*vlan-id*表示VLAN的编号，取值范围为1～4094。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[vlan-id-list]{lang="EN-US"}*]{#struct_0_x1539_x1935_373248775}[为]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，表示一个或多个]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号。表示方式为]{lang="EN-US" style="font-family:宋体"}*[vlan-id-list]{lang="EN-US"}*[ = { *vlan-id* \[ **to** *vlan-id* \] }&\<1-8\>]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}[其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-8\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[8]{lang="EN-US"}[次。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+·*vlan-id-list*为VLAN列表，表示一个或多个VLAN的编号。表示方式为*vlan-id-list* = { *vlan-id* [ **to** *vlan-id*  }&\<1-8\>]。其中，*vlan-id*为指定VLAN的编号，取值范围为1～4094。&\<1-8\>表示前面的参数最多可以输入8次。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[only-tagged]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1815236784}[：表示只匹配携带]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签的报文。当匹配的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[为缺省]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[时，如果未指定本关键字，则会同时匹配所携带]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签为缺省]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的报文和未携带]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签的报文；如果指定了本参数，则只匹配所携带]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签为缺省]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[only-tagged**]：表示只匹配携带VLAN标签的报文。当匹配的VLAN为缺省VLAN时，如果未指定本关键字，则会同时匹配所携带VLAN标签为缺省VLAN的报文和未携带VLAN标签的报文；如果指定了本参数，则只匹配所携带VLAN标签为缺省VLAN的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[s-vid]{lang="EN-US"}**[ *vlan-id* **c-vid** { *vlan-id-list* \| **all** }]{lang="EN-US"}]{#struct_0_x1539_x1935_1918442488}[：匹配指定外层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签和内层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[s-vid**[ *vlan-id* **c-vid** { *vlan-id-list* \| **all** }]]：匹配指定外层VLAN标签和内层VLAN标签的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[vlan-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_511056755}[表示]{style="font-family:
-宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+·*vlan-id*表示VLAN的编号，取值范围为1～4094。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[vlan-id-list]{lang="EN-US"}*]{#struct_0_x1539_x1935_x600990078}[为]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，表示一个或多个]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号。表示方式为]{lang="EN-US" style="font-family:宋体"}*[vlan-id-list]{lang="EN-US"}*[ = { *vlan-id* \[ **to** *vlan-id* \] }&\<1-8\>]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}[其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-8\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[8]{lang="EN-US"}[次。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+·*vlan-id-list*为VLAN列表，表示一个或多个VLAN的编号。表示方式为*vlan-id-list* = { *vlan-id* [ **to** *vlan-id*  }&\<1-8\>]。其中，*vlan-id*为指定VLAN的编号，取值范围为1～4094。&\<1-8\>表示前面的参数最多可以输入8次。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[al]{lang="EN-US"}**]{#struct_0_x1539_x1935_x991432253}**[l]{lang="EN-US"}**[表示所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+·**al****l**表示所有VLAN。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[default]{lang="EN-US"}**]{#struct_0_x1539_x1935_x686867214}[：表示缺省的报文匹配规则。]{style="font-family:宋体"}
+**[default**]：表示缺省的报文匹配规则。
 
-[**[tagged]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1918786753}[：表示匹配携带]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[tagged**]：表示匹配携带VLAN标签的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[untagged]{lang="EN-US"}**]{#struct_0_x1539_x1935_1124430308}[：表示匹配未携带]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[untagged**]：表示匹配未携带VLAN标签的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1451766620}
+【使用指导】
 
-[[当同一个接口下配置的不同以太网服务实例的报文匹配规则出现重叠时，如何匹配报文与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1120954640}
+当同一个接口下配置的不同以太网服务实例的报文匹配规则出现重叠时，如何匹配报文与设备的型号有关，请以设备的实际情况为准。
 
-[[同一个以太网接口下可以创建多个服务实例，但是最多只能有一个服务实例采用缺省的报文匹配规则（]{style="font-family:宋体"}**[encapsulation default]{lang="EN-US"}**]{#struct_0_x1539_x1935_x230203311}[）。如果接口下同时存在一个采用缺省报文匹配规则的服务实例和多个采用其他报文匹配规则的服务实例，则没有与任何其他报文匹配规则匹配的报文将匹配缺省报文匹配规则；如果接口下只存在一个采用缺省报文匹配规则的服务实例，则该接口上的所有报文都匹配缺省报文匹配规则。]{style="font-family:宋体"}
+同一个以太网接口下可以创建多个服务实例，但是最多只能有一个服务实例采用缺省的报文匹配规则（**encapsulation default**）。如果接口下同时存在一个采用缺省报文匹配规则的服务实例和多个采用其他报文匹配规则的服务实例，则没有与任何其他报文匹配规则匹配的报文将匹配缺省报文匹配规则；如果接口下只存在一个采用缺省报文匹配规则的服务实例，则该接口上的所有报文都匹配缺省报文匹配规则。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x1539_x1935_723605131}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在同一个以太网服务实例视图下，不能重复执行本命令。]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1119258361}
+·在同一个以太网服务实例视图下，不能重复执行本命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[删除以太网服务实例下的报文匹配规则后，会自动取消以太网服务实例]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1119005249}[与]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的关联。]{style="font-family:宋体"}
+·删除以太网服务实例下的报文匹配规则后，会自动取消以太网服务实例与VSI的关联。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[内层]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x600924542}[VLAN]{lang="EN-US"}[标签和外层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签的介绍请参见"二层技术]{style="font-family:宋体"}[-]{lang="EN-US"}[以太网交换配置指导"中的"]{style="font-family:宋体"}[QinQ]{lang="EN-US"}["。]{style="font-family:宋体"}
+·内层VLAN标签和外层VLAN标签的介绍请参见"二层技术-以太网交换配置指导"中的"QinQ"。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1364868050}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x515892599}[在二层以太网接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的以太网服务实例]{style="font-family:宋体"}[1]{lang="EN-US"}[上配置如下报文匹配规则：匹配外层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签为]{style="font-family:宋体"}[111]{lang="EN-US"}[，内层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签为]{style="font-family:宋体"}[20]{lang="EN-US"}[、]{style="font-family:宋体"}[30]{lang="EN-US"}[～]{style="font-family:宋体"}[40]{lang="EN-US"}[的报文。]{style="font-family:宋体"}
+\# 在二层以太网接口GigabitEthernet1/0/1的以太网服务实例1上配置如下报文匹配规则：匹配外层VLAN标签为111，内层VLAN标签为20、30～40的报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_x1176114701}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] service-instance 1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 service-instance 1
 
-[\[Sysname-GigabitEthernet1/0/1-srv1\] encapsulation s-vid 111 c-vid 20 30 to 40]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1-srv1 encapsulation s-vid 111 c-vid 20 30 to 40
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_930983788}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn service-instance]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1891065789}
-:::
-
-::: {#-2005881093 .myid}
-[]{#_Toc404798651}[]{#struct_0_x1539_x1935_x1627800857}[]{#_Toc393878955}[]{#_Toc371411812}
+·**display l2vpn service-instance**
 
 **VXLAN \-- VXLAN基础配置命令 \-- flooding disable**
 
 ------------------------------------------------------------------------
 
-[**[flooding disable]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1627800856}[命令用来关闭]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的泛洪功能。]{style="font-family:宋体"}
+**[flooding disable**]命令用来关闭VSI的泛洪功能。
 
-[**[undo flooding disable]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1168722922}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo flooding disable**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_40957332}
+【命令】
 
-[**[flooding disable]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1627800855}
+**[flooding disable**]
 
-[**[undo flooding disable]{lang="EN-US"}**]{#struct_0_x1539_x1935_1560160433}
+**[undo flooding disable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1655788461}
+【缺省情况】
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x1627800854}[的泛洪功能处于开启状态。]{style="font-family:宋体"}
+VSI的泛洪功能处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x5923508}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x1627800852}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_800645546}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_328514275}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_328514277}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_819365282}
+【使用指导】
 
-[[缺省情况下，]{style="font-family:宋体"}[VTEP]{lang="EN-US"}]{#struct_0_x1539_x1935_1448642752}[从本地站点内接收到目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址未知的单播数据帧后，会在该]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[内除接收接口外的所有本地接口和]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道上泛洪该数据帧，将该数据帧发送给]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[内的所有站点。如果用户希望把该类数据帧限制在本地站点内，不通过]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道将其转发到远端站点，则可以通过本命令手工禁止]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[对应]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的泛洪功能。]{style="font-family:宋体"}
+缺省情况下，VTEP从本地站点内接收到目的MAC地址未知的单播数据帧后，会在该VXLAN内除接收接口外的所有本地接口和VXLAN隧道上泛洪该数据帧，将该数据帧发送给VXLAN内的所有站点。如果用户希望把该类数据帧限制在本地站点内，不通过VXLAN隧道将其转发到远端站点，则可以通过本命令手工禁止VXLAN对应VSI的泛洪功能。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_328514278}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_819365267}[关闭名称为]{style="font-family:宋体"}[vsi1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的泛洪功能。]{style="font-family:宋体"}
+\# 关闭名称为vsi1的VSI的泛洪功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_328514279}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vsi1]{lang="EN-US"}
+Sysname vsi vsi1
 
-[\[Sysname-vsi-vsi1\] flooding disable]{lang="EN-US"}
-:::
-
-::: {#-1172193874 .myid}
-[]{#_Toc404798652}[]{#struct_0_x1539_x1935_x1310059722}[]{#_Toc376875436}[]{#_Toc376875806}[]{#_Toc390073122}[]{#_Toc390073123}[]{#_Toc390073124}[]{#_Toc390073125}[]{#_Toc390073126}[]{#_Toc390073127}[]{#_Toc390073128}[]{#_Toc390073129}[]{#_Toc390073130}[]{#_Toc390073131}[]{#_Toc390073132}[]{#_Toc390073133}[]{#_Toc390073134}[]{#_Toc390073135}[]{#_Toc390073136}[]{#_Toc390073137}[]{#_Toc390073138}[]{#_Toc390073139}[]{#_Toc390073140}[]{#_Toc390073141}[]{#_Toc376957594}[]{#_Toc378672375}[]{#_Toc378672430}[]{#_Toc378683230}[]{#_Toc378683285}[]{#_Toc378683966}[]{#_Toc379547062}[]{#_Toc390073142}[]{#_Toc376957595}[]{#_Toc378672376}[]{#_Toc378672431}[]{#_Toc378683231}[]{#_Toc378683286}[]{#_Toc378683967}[]{#_Toc379547063}[]{#_Toc390073143}
+Sysname-vsi-vsi1 flooding disable
 
 **VXLAN \-- VXLAN基础配置命令 \-- group**
 
 ------------------------------------------------------------------------
 
-[**[group]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1621505376}[命令用来配置]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[泛洪的组播地址和组播报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[group**]命令用来配置VXLAN泛洪的组播地址和组播报文的源IP地址。
 
-[**[undo group]{lang="EN-US"}**]{#struct_0_x1539_x1935_x765283481}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo group**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x332104086}
+【命令】
 
-[**[group]{lang="EN-US"}**[ *group-address* **source** *source-address*]{lang="EN-US"}]{#struct_0_x1539_x1935_x1933766756}
+**[group** *group-address* **source** *source-address*]
 
-[**[undo group]{lang="EN-US"}**[ *group-address* **source** *source-address*]{lang="EN-US"}]{#struct_0_x1539_x1935_x601121150}
+**[undo group** *group-address* **source** *source-address*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_204891508}
+【缺省情况】
 
-[[未指定]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_693622835}[泛洪的组播地址和组播报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[采用单播路由方式泛洪。]{style="font-family:宋体"}
+未指定VXLAN泛洪的组播地址和组播报文的源IP地址，VXLAN采用单播路由方式泛洪。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_354917425}
+【视图】
 
-[[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_x1355519805}[视图]{style="font-family:宋体"}
+VXLAN视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1351184332}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1769671977}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_2057160735}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1717757908}
+【参数】
 
-[*[group-address]{lang="EN-US"}*]{#struct_0_x1539_x1935_83258709}[：]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[泛洪的组播地址，取值范围为]{style="font-family:宋体"}[224.0.1.0]{lang="EN-US"}[～]{style="font-family:宋体"}[239.255.255.255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[group-address*]：VXLAN泛洪的组播地址，取值范围为224.0.1.0～239.255.255.255。
 
-[**[source]{lang="EN-US"}**[ *source-address*]{lang="EN-US"}]{#struct_0_x1539_x1935_x601055614}[：指定]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[组播报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[source** *source-address*]：指定VXLAN组播报文的源IP地址。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_194393989}
+【使用指导】
 
-[[泛洪流量包括组播、广播和未知单播流量。]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_1788435499}[流量泛洪可以采用如下两种方式：]{style="font-family:宋体"}
+泛洪流量包括组播、广播和未知单播流量。VXLAN流量泛洪可以采用如下两种方式：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[单播路由方式（头端复制）：]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1538146819}[VTEP]{lang="EN-US"}[接收到某个]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[的泛洪流量后，不仅通过本地接口在本地站点内泛洪，还会通过与该]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[关联的所有隧道、采用单播方式将其发送给]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[内的所有远端]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[。]{style="font-family:宋体"}
+·单播路由方式（头端复制）：VTEP接收到某个VXLAN的泛洪流量后，不仅通过本地接口在本地站点内泛洪，还会通过与该VXLAN关联的所有隧道、采用单播方式将其发送给VXLAN内的所有远端VTEP。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[组播路由方式（核心复制）：同一个]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1971306157}[VXLAN]{lang="EN-US"}[内的所有]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[都加入同一个组播组，利用组播路由协议在]{style="font-family:宋体"}[IP]{lang="EN-US"}[核心网上为该组播组建立组播转发表项。]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[接收到泛洪流量后，不仅在本地站点内泛洪，还会将本命令指定的组播地址作为目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址、]{style="font-family:宋体"}**[source]{lang="EN-US"}**[ *source-address*]{lang="EN-US"}[参数指定的地址作为源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，对泛洪流量进行封装，封装后的报文根据已建立的组播转发表项转发到远端]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[。]{style="font-family:宋体"}
+·组播路由方式（核心复制）：同一个VXLAN内的所有VTEP都加入同一个组播组，利用组播路由协议在IP核心网上为该组播组建立组播转发表项。VTEP接收到泛洪流量后，不仅在本地站点内泛洪，还会将本命令指定的组播地址作为目的IP地址、**source** *source-address*参数指定的地址作为源IP地址，对泛洪流量进行封装，封装后的报文根据已建立的组播转发表项转发到远端VTEP。
 
-[[缺省情况下，]{style="font-family:宋体"}[VTEP]{lang="EN-US"}]{#struct_0_x1539_x1935_2131161289}[采用单播路由方式泛洪流量。如果执行了本命令，则通过组播路由方式泛洪流量。]{style="font-family:宋体"}
+缺省情况下，VTEP采用单播路由方式泛洪流量。如果执行了本命令，则通过组播路由方式泛洪流量。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1300917338}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于某些产品，为确保组播报文转发正常，]{style="font-family:宋体"}]{#struct_0_x1539_x1935_43196566}[VXLAN]{lang="EN-US"}[组播报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址（]{style="font-family:宋体"}*[source-address]{lang="EN-US"}*[）应指定为一个已创建且处于]{style="font-family:宋体"}[up]{lang="EN-US"}[状态的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道的源端地址。]{style="font-family:宋体"}
+·对于某些产品，为确保组播报文转发正常，VXLAN组播报文的源IP地址（*source-address*）应指定为一个已创建且处于up状态的VXLAN隧道的源端地址。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[可以为不同的]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1328580450}[VXLAN]{lang="EN-US"}[指定相同的组播地址。例如，多个]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[共用相同的]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[设备时，为这些]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[指定相同的组播地址，通过]{style="font-family:宋体"}[VXLAN ID]{lang="EN-US"}[来区分报文所属的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[，可以减少]{style="font-family:宋体"}[IP]{lang="EN-US"}[核心网络中建立的组播转发表项数目。为不同]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[指定相同的组播地址时，要求为其指定的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址也必须相同。]{style="font-family:宋体"}
+·可以为不同的VXLAN指定相同的组播地址。例如，多个VXLAN共用相同的VTEP设备时，为这些VXLAN指定相同的组播地址，通过VXLAN ID来区分报文所属的VXLAN，可以减少IP核心网络中建立的组播转发表项数目。为不同VXLAN指定相同的组播地址时，要求为其指定的源IP地址也必须相同。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在同一个]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1944735652}[VXLAN]{lang="EN-US"}[视图下重复执行本命令，则新的配置覆盖已有配置。]{style="font-family:宋体"}
+·在同一个VXLAN视图下重复执行本命令，则新的配置覆盖已有配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1411187211}
+【举例】
 
-[]{#_Toc94588299}[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x920305449}[为]{style="font-family:宋体"}[VXLAN 100]{lang="EN-US"}[配置]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[泛洪的组播地址为]{style="font-family:宋体"}[233.1.1.1]{lang="EN-US"}[、]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[组播报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[2.1.1.1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 为VXLAN 100配置VXLAN泛洪的组播地址为233.1.1.1、VXLAN组播报文的源IP地址为2.1.1.1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_x600203646}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi aaa]{lang="EN-US"}
+Sysname vsi aaa
 
-[\[Sysname-vsi-aaa\] vxlan 100]{lang="EN-US"}
+Sysname-vsi-aaa vxlan 100
 
-[\[Sysname-vsi-aaa-vxlan-100\] group 233.1.1.1 source 2.1.1.1]{lang="EN-US"}
+Sysname-vsi-aaa-vxlan-100 group 233.1.1.1 source 2.1.1.1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x554730464}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp]{lang="EN-US"}**[ **host** **enable**]{lang="EN-US"}]{#struct_0_x1539_x1935_996537005}
-:::
-
-::: {#2047546049 .myid}
-[]{#_Toc404798653}[]{#struct_0_x1539_x1935_209482228}[]{#_Toc374372844}[]{#_Toc355963325}
+·**igmp** **host** **enable**
 
 **VXLAN \-- VXLAN基础配置命令 \-- igmp host enable**
 
 ------------------------------------------------------------------------
 
-[**[igmp]{lang="EN-US"}**[ **host** **enable**]{lang="EN-US"}]{#struct_0_x1539_x1935_x1999281674}[命令用来在接口上使能]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[协议的主机功能。]{style="font-family:宋体"}
+**[igmp** **host** **enable**]命令用来在接口上使能IGMP协议的主机功能。
 
-[**[undo]{lang="EN-US"}**[ **igmp** **host** **enable**]{lang="EN-US"}]{#struct_0_x1539_x1935_411374577}[命令用来关闭接口上]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[协议的主机功能。]{style="font-family:宋体"}
+**[undo** **igmp** **host** **enable**]命令用来关闭接口上IGMP协议的主机功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x770879911}
+【命令】
 
-[**[igmp]{lang="EN-US"}**[ **host** **enable**]{lang="EN-US"}]{#struct_0_x1539_x1935_1275390352}
+**[igmp** **host** **enable**]
 
-[**[undo]{lang="EN-US"}**[ **igmp** **host** **enable**]{lang="EN-US"}]{#struct_0_x1539_x1935_x887409369}
+**[undo** **igmp** **host** **enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x551283533}
+【缺省情况】
 
-[[接口上]{style="font-family:宋体"}[IGMP]{lang="EN-US"}]{#struct_0_x1539_x1935_2053870612}[协议的主机功能处于关闭状态。]{style="font-family:宋体"}
+接口上IGMP协议的主机功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x600138110}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1723504053}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1555587275}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x545590227}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_74780976}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_513895307}
+【使用指导】
 
-[[采用组播路由方式泛洪流量时，必须在]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_87783334}[组播报文源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址所在的接口上执行本命令，使得当前接口作为]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[主机，即从该接口收到]{style="font-family:宋体"}[IGMP]{lang="EN-US"}[查询报文后，通过该接口发送组播组的报告报文，以便接收该组播组的报文。]{style="font-family:宋体"}
+采用组播路由方式泛洪流量时，必须在VXLAN组播报文源IP地址所在的接口上执行本命令，使得当前接口作为IGMP主机，即从该接口收到IGMP查询报文后，通过该接口发送组播组的报告报文，以便接收该组播组的报文。
 
-[[需要注意的是，只有通过]{style="font-family:宋体"}**[multicast routing]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1439786321}[命令使能]{style="font-family:宋体"}[IP]{lang="EN-US"}[组播路由后，本命令才会生效。]{style="font-family:宋体"}
+需要注意的是，只有通过**multicast routing**命令使能IP组播路由后，本命令才会生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1347337792}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1360867849}
+·路由应用
 
-[[\# ]{lang="FR"}]{#struct_0_x1539_x1935_x601994790}[使能公网实例中的]{style="font-family:宋体"}[IP]{lang="FR"}[组播路由]{style="font-family:宋体"}[，]{style="font-family:宋体"}[并在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="FR"}[上使能]{style="font-family:宋体"}[IGMP]{lang="FR"}[协议的主机功能。]{style="font-family:宋体"}
+\# 使能公网实例中的IP组播路由，并在接口GigabitEthernet1/0/1上使能IGMP协议的主机功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_x600727933}
+\<Sysname\> system-view
 
-[\[Sysname\] multicast routing]{lang="EN-US"}
+Sysname multicast routing
 
-[\[Sysname-mrib\] quit]{lang="EN-US"}
+Sysname-mrib quit
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] igmp host enable]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 igmp host enable
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x563523758}
+·交换应用
 
-[[\# ]{lang="FR"}]{#struct_0_x1539_x1935_1103265528}[使能公网实例中的]{style="font-family:宋体"}[IP]{lang="FR"}[组播路由]{style="font-family:宋体"}[，]{style="font-family:宋体"}[并在接口]{style="font-family:宋体"}[Vlan-interface10]{lang="FR"}[上使能]{style="font-family:宋体"}[IGMP]{lang="FR"}[协议的主机功能。]{style="font-family:宋体"}
+\# 使能公网实例中的IP组播路由，并在接口Vlan-interface10上使能IGMP协议的主机功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_x522753231}
+\<Sysname\> system-view
 
-[\[Sysname\] multicast routing]{lang="EN-US"}
+Sysname multicast routing
 
-[\[Sysname-mrib\] quit]{lang="EN-US"}
+Sysname-mrib quit
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-]{lang="EN-US"}[Vlan-interface10]{lang="FR"}[\] igmp host enable]{lang="EN-US"}
+Sysname-Vlan-interface10 igmp host enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1073979576}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **igmp** **host** **group**]{lang="EN-US"}]{#struct_0_x1539_x1935_x444986075}
+·**display** **igmp** **host** **group**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[group]{lang="EN-US"}**]{#struct_0_x1539_x1935_x77375988}
+·**group**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[multicast]{lang="EN-US"}**[ **routing**]{lang="EN-US"}]{#struct_0_x1539_x1935_x8132298}[（]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[组播命令参考]{lang="EN-US" style="font-family:宋体"}[/]{lang="EN-US"}[组播路由与转发）]{lang="EN-US" style="font-family:宋体"}
-:::
-
-::: {#2070950537 .myid}
-[]{#_Toc404798654}[]{#struct_0_x1539_x1935_1815880731}[]{#_Toc375835823}
+·**multicast** **routing**（IP组播命令参考/组播路由与转发）
 
 **VXLAN \-- VXLAN基础配置命令 \-- l2vpn enable**
 
 ------------------------------------------------------------------------
 
-[**[l2vpn enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_x600662397}[命令用来使能]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[l2vpn enable**]命令用来使能L2VPN功能。
 
-[**[undo l2vpn enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_x167114634}[命令用来关闭]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo l2vpn enable**]命令用来关闭L2VPN功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1157624620}
+【命令】
 
-[**[l2vpn enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1896852895}
+**[l2vpn enable**]
 
-[**[undo l2vpn enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_1177866835}
+**[undo l2vpn enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_2007887778}
+【缺省情况】
 
-[[L2VPN]{lang="EN-US"}]{#struct_0_x1539_x1935_1431139385}[功能处于关闭状态。]{style="font-family:宋体"}
+L2VPN功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_934167857}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_868288013}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x128413181}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x600859005}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_2118388568}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x431383337}
+【使用指导】
 
-[[只有使能]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}]{#struct_0_x1539_x1935_1723225808}[功能后，才能进行]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[的相关配置。]{style="font-family:宋体"}
+只有使能L2VPN功能后，才能进行L2VPN的相关配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1543842224}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1524486627}[使能]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 使能L2VPN功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_x1591850457}
+\<Sysname\> system-view
 
-[\[Sysname\] l2vpn enable]{lang="EN-US"}
-:::
-
-::: {#-1775240408 .myid}
-[]{#_Toc404798655}[]{#struct_0_x1539_x1935_x455623864}[]{#_Toc393878959}
+Sysname l2vpn enable
 
 **VXLAN \-- VXLAN基础配置命令 \-- mac-address static**
 
 ------------------------------------------------------------------------
 
-[**[mac-address static]{lang="EN-US"}**]{#struct_0_x1539_x1935_97293564}[命令用来添加静态远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}
+**[mac-address static**]命令用来添加静态远端MAC地址表项。
 
-[**[undo mac-address static]{lang="EN-US"}**]{#struct_0_x1539_x1935_x455623865}[命令用来删除指定的静态远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}
+**[undo mac-address static**]命令用来删除指定的静态远端MAC地址表项。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_97228028}
+【命令】
 
-[**[mac-address static]{lang="EN-US"}**[ *mac-address* **interface tunnel** *tunnel-number* **vsi** *vsi-name*]{lang="EN-US"}]{#struct_0_x1539_x1935_x455623862}
+**[mac-address static** *mac-address* **interface tunnel** *tunnel-number* **vsi** *vsi-name*]
 
-[**[undo mac-address static]{lang="EN-US"}**[ \[ *mac-address* \] \[ **interface tunnel** *tunnel-number* \] **vsi** *vsi-name*]{lang="EN-US"}]{#struct_0_x1539_x1935_97686780}
+**[undo mac-address static** [ *mac-address*   **interface tunnel** *tunnel-number*  **vsi** *vsi-name*]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x769482723}
+【缺省情况】
 
-[[设备上不存在任何静态的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1539_x1935_x455623863}[地址表项。]{style="font-family:宋体"}
+设备上不存在任何静态的远端MAC地址表项。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_97621244}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_14358372}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x455623860}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_97555708}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x438168007}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x455623861}
+【参数】
 
-[*[mac]{lang="EN-US"}*[-]{lang="EN-US"}]{#struct_0_x1539_x1935_97490172}*[address]{lang="EN-US"}*[：]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，格式为]{style="font-family:宋体"}[H-H-H]{lang="EN-US"}[，不支持组播]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址和全]{style="font-family:宋体"}[0]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。在配置时，用户可以省去]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址中每段开头的"]{style="font-family:宋体"}[0]{lang="EN-US"}["，例如输入"]{style="font-family:宋体"}[f-e2-1]{lang="EN-US"}["即表示输入的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为"]{style="font-family:宋体"}[000f-00e2-0001]{lang="EN-US"}["。]{style="font-family:宋体"}
+*[mac*-]*address*：MAC地址，格式为H-H-H，不支持组播MAC地址和全0的MAC地址。在配置时，用户可以省去MAC地址中每段开头的"0"，例如输入"f-e2-1"即表示输入的MAC地址为"000f-00e2-0001"。
 
-[**[interface tunnel ]{lang="EN-US"}***[tunnel-number]{lang="EN-US"}*]{#struct_0_x1539_x1935_1500691268}[：指定远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址对应的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道接口。]{style="font-family:宋体"}*[tunnel-number]{lang="EN-US"}*[为]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[interface tunnel ***tunnel-number*]：指定远端MAC地址对应的VXLAN隧道接口。*tunnel-number*为VXLAN隧道接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[**[vsi]{lang="EN-US"}***[ vsi-name]{lang="EN-US"}*]{#struct_0_x1539_x1935_1283758140}[：指定远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址所属的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[vsi*** vsi-name*]：指定远端MAC地址所属的VSI。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1500691267}
+【使用指导】
 
-[[远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1539_x1935_1284085820}[地址是指]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[连接的远端站点内虚拟机的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址既可以通过本命令静态配置，也可以通过报文中的源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址动态学习、通过]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议学习。静态配置的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项优先级高于源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址动态学习和通过]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议学习的表项。源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址动态学习和通过]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议学习的表项优先级相同，后生成的表项可以覆盖已经存在的表项。]{style="font-family:宋体"}
+远端MAC地址是指VTEP连接的远端站点内虚拟机的MAC地址。远端MAC地址既可以通过本命令静态配置，也可以通过报文中的源MAC地址动态学习、通过IS-IS协议学习。静态配置的远端MAC地址表项优先级高于源MAC地址动态学习和通过IS-IS协议学习的表项。源MAC地址动态学习和通过IS-IS协议学习的表项优先级相同，后生成的表项可以覆盖已经存在的表项。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1614462587}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1500691270}[添加一条静态远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项：]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为]{style="font-family:宋体"}[000f-e201-0101]{lang="EN-US"}[，]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道接口为]{style="font-family:宋体"}[Tunnel1]{lang="EN-US"}[，]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址所属的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[为]{style="font-family:宋体"}[vsi1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 添加一条静态远端MAC地址表项：MAC地址为000f-e201-0101，VXLAN隧道接口为Tunnel1，MAC地址所属的VSI为vsi1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_1284282429}
+\<Sysname\> system-view
 
-[\[Sysname\] mac-address static 000f-e201-0101 interface tunnel 1 vsi vsi1]{lang="EN-US"}
+Sysname mac-address static 000f-e201-0101 interface tunnel 1 vsi vsi1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1986629244}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vxlan tunnel mac-learning disable]{lang="EN-US"}**]{#struct_0_x1539_x1935_1500691269}
-:::
-
-::::: {#-1851718045 .myid}
-[]{#_Toc371411813}[]{#_Toc375835837}[]{#_Toc404798656}[]{#struct_0_x1539_x1935_x837960892}[]{#_Toc393878960}[]{#_Toc383786769}[]{#_Toc383097751}[]{#_Toc376856932}[]{#_Toc371411817}[]{#_Toc397089258}[]{#_Toc397343495}[]{#_Toc397344539}[]{#_Toc397089259}[]{#_Toc397343496}[]{#_Toc397344540}[]{#_Toc397089260}[]{#_Toc397343497}[]{#_Toc397344541}[]{#_Toc397089261}[]{#_Toc397343498}[]{#_Toc397344542}[]{#_Toc397089262}[]{#_Toc397343499}[]{#_Toc397344543}[]{#_Toc397089263}[]{#_Toc397343500}[]{#_Toc397344544}[]{#_Toc397089264}[]{#_Toc397343501}[]{#_Toc397344545}[]{#_Toc397089265}[]{#_Toc397343502}[]{#_Toc397344546}[]{#_Toc397089266}[]{#_Toc397343503}[]{#_Toc397344547}[]{#_Toc397089267}[]{#_Toc397343504}[]{#_Toc397344548}[]{#_Toc397089268}[]{#_Toc397343505}[]{#_Toc397344549}[]{#_Toc397089269}[]{#_Toc397343506}[]{#_Toc397344550}[]{#_Toc397089270}[]{#_Toc397343507}[]{#_Toc397344551}[]{#_Toc397089271}[]{#_Toc397343508}[]{#_Toc397344552}[]{#_Toc397089272}[]{#_Toc397343509}[]{#_Toc397344553}[]{#_Toc397089273}[]{#_Toc397343510}[]{#_Toc397344554}[]{#_Toc397089274}[]{#_Toc397343511}[]{#_Toc397344555}[]{#_Toc397089275}[]{#_Toc397343512}[]{#_Toc397344556}[]{#_Toc397089276}[]{#_Toc397343513}[]{#_Toc397344557}[]{#_Toc397089277}[]{#_Toc397343514}[]{#_Toc397344558}[]{#_Toc397089278}[]{#_Toc397343515}[]{#_Toc397344559}[]{#_Toc397089279}[]{#_Toc397343516}[]{#_Toc397344560}[]{#_Toc397089280}[]{#_Toc397343517}[]{#_Toc397344561}[]{#_Toc397089281}[]{#_Toc397343518}[]{#_Toc397344562}[]{#_Toc376856865}[]{#_Toc376856929}[]{#_Toc376875440}[]{#_Toc376875810}[]{#_Toc376875441}[]{#_Toc376875811}[]{#_Toc376875442}[]{#_Toc376875812}[]{#_Toc376875443}[]{#_Toc376875813}[]{#_Toc376875444}[]{#_Toc376875814}[]{#_Toc376875445}[]{#_Toc376875815}[]{#_Toc376875446}[]{#_Toc376875816}[]{#_Toc376875447}[]{#_Toc376875817}[]{#_Toc376875448}[]{#_Toc376875818}[]{#_Toc376875449}[]{#_Toc376875819}[]{#_Toc376875450}[]{#_Toc376875820}[]{#_Toc376875451}[]{#_Toc376875821}[]{#_Toc376875452}[]{#_Toc376875822}[]{#_Toc376875453}[]{#_Toc376875823}[]{#_Toc376875454}[]{#_Toc376875824}[]{#_Toc376875455}[]{#_Toc376875825}[]{#_Toc376875456}[]{#_Toc376875826}[]{#_Toc376875457}[]{#_Toc376875827}[]{#_Toc376875458}[]{#_Toc376875828}[]{#_Toc376875459}[]{#_Toc376875829}[]{#_Toc376875460}[]{#_Toc376875830}[]{#_Toc376875461}[]{#_Toc376875831}[]{#_Toc376875462}[]{#_Toc376875832}[]{#_Toc376875463}[]{#_Toc376875833}[]{#_Toc376875464}[]{#_Toc376875834}[]{#_Toc376875465}[]{#_Toc376875835}[]{#_Toc376875466}[]{#_Toc376875836}[]{#_Toc376875467}[]{#_Toc376875837}[]{#_Toc376875468}[]{#_Toc376875838}[]{#_Toc376875469}[]{#_Toc376875839}[]{#_Toc376875470}[]{#_Toc376875840}[]{#_Toc376875471}[]{#_Toc376875841}[]{#_Toc376875472}[]{#_Toc376875842}[]{#_Toc376875473}[]{#_Toc376875843}[]{#_Toc376875474}[]{#_Toc376875844}[]{#_Toc376875475}[]{#_Toc376875845}[]{#_Toc376875476}[]{#_Toc376875846}[]{#_Toc376875477}[]{#_Toc376875847}[]{#_Toc376875478}[]{#_Toc376875848}[]{#_Toc376875479}[]{#_Toc376875849}[]{#_Toc390073147}[]{#_Toc390073148}[]{#_Toc390073149}[]{#_Toc390073150}[]{#_Toc390073151}[]{#_Toc390073152}[]{#_Toc390073153}[]{#_Toc390073154}[]{#_Toc390073155}[]{#_Toc390073156}[]{#_Toc390073157}[]{#_Toc390073158}[]{#_Toc390073159}[]{#_Toc390073160}[]{#_Toc390073161}[]{#_Toc390073162}[]{#_Toc390073163}[]{#_Toc390073164}[]{#_Toc390073165}[]{#_Toc390073166}[]{#_Toc390073167}[]{#_Toc390073168}[]{#_Toc390073169}[]{#_Toc390073170}[]{#_Toc390073171}[]{#_Toc390073172}[]{#_Toc390073173}[]{#_Toc390073174}[]{#_Toc390073175}
+·**vxlan tunnel mac-learning disable**
 
 **VXLAN \-- VXLAN基础配置命令 \-- reset arp suppression vsi**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VXLAN命令.files/image001.png){width="63" height="25"}]{lang="EN-US"}]{#struct_0_x1539_x1935_x217390335}
-:::
+![说明](VXLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1539_x1935_x536882625}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[reset arp suppression vsi**]命令用来清除VSI的ARP泛洪抑制表项。
 
-[**[reset arp suppression vsi]{lang="EN-US"}**]{#struct_0_x1539_x1935_x837960893}[命令用来清除]{style="font-family:
-宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x217455871}
+**[reset arp suppression vsi** [ **name** *vsi-name* ]]
 
-[**[reset arp suppression vsi]{lang="EN-US"}**[ \[ **name** *vsi-name* \]]{lang="EN-US"}]{#struct_0_x1539_x1935_x837960890}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x217521407}
+用户视图
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1286054429}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x837960891}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x217586943}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x1755595848}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x837960888}
+**[name*** vsi-name*]：清除指定VSI的ARP泛洪抑制表项。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，则清除所有VSI的ARP泛洪抑制表项。
 
-[**[name]{lang="EN-US"}***[ vsi-name]{lang="EN-US"}*]{#struct_0_x1539_x1935_x218045696}[：清除指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则清除所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_458108801}
+\# 清除所有VSI的ARP泛洪抑制表项。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x837960889}[清除所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}
+\<Sysname\> reset arp suppression vsi
 
-[[\<Sysname\> reset arp suppression vsi]{lang="EN-US"}]{#struct_0_x1539_x1935_x218111232}
+This command will delete all entries. Continue? [Y/N:y]
 
-[This command will delete all entries. Continue? \[Y/N\]:y]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x837960886}
+·**display arp suppression**** vsi**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display arp suppression]{lang="EN-US"}**]{#struct_0_x1539_x1935_x217652480}**[ vsi]{lang="EN-US"}**
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[arp suppression enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_264956337}
-:::::
-
-::::: {#816869194 .myid}
-[]{#_Toc404798657}[]{#struct_0_x1539_x1935_2117257363}
+·**arp suppression enable**
 
 **VXLAN \-- VXLAN基础配置命令 \-- reset l2vpn mac-address**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VXLAN命令.files/image003.png){width="61" height="26"}]{lang="EN-US"}]{#struct_0_x1539_x1935_2129030391}
-:::
+![说明](VXLAN命令.files/image003.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1539_x1935_x810539176}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[reset l2vpn mac-address]{lang="EN-US"}**]{#struct_0_x1539_x1935_1222116030}[命令用来清除通过源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址动态学习的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}
+**[reset l2vpn mac-address**]命令用来清除通过源MAC地址动态学习的MAC地址表项。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1867560310}
+【命令】
 
-[**[reset ]{lang="EN-US"}[l2vpn mac-address ]{lang="EN-US"}**[\[ **vsi**]{lang="EN-US"}*[ vsi-name ]{lang="EN-US"}*[\]]{lang="EN-US"}]{#struct_0_x1539_x1935_x264237422}
+**[reset l2vpn mac-address ** **vsi**]* vsi-name *
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1689800925}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1338608021}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1176622333}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x2043248467}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x600924541}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1364802514}
+【参数】
 
-[**[vsi]{lang="EN-US"}***[ vsi-name]{lang="EN-US"}*]{#struct_0_x1539_x1935_188218606}[：清除指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[动态学习的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则清除所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[动态学习的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}
+**[vsi*** vsi-name*]：清除指定VSI动态学习的MAC地址表项。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，则清除所有VSI动态学习的MAC地址表项。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x339713909}
+【使用指导】
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x72198319}[通过源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址学习到错误的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项，或学习的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项数目达到最大值时，可以执行本命令，以便重新学习]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}
+VSI通过源MAC地址学习到错误的MAC地址表项，或学习的MAC地址表项数目达到最大值时，可以执行本命令，以便重新学习MAC地址表项。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_885415828}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1195434905}[清除名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[通过源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址动态学习的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}
+\# 清除名为vpn1的VSI通过源MAC地址动态学习的MAC地址表项。
 
-[[\<Sysname\> reset l2vpn mac-address vsi vpn1]{lang="EN-US"}]{#struct_0_x1539_x1935_x1416680811}
+\<Sysname\> reset l2vpn mac-address vsi vpn1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1319812698}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn mac-address vsi]{lang="EN-US"}**]{#struct_0_x1539_x1935_2138470880}
-:::::
-
-::::: {#1068872014 .myid}
-[]{#_Toc383786770}[]{#_Toc404798658}[]{#struct_0_x1539_x1935_x1647264954}[]{#_Toc393878962}[]{#_Toc387305729}[]{#_Toc381105349}
+·**display l2vpn mac-address vsi**
 
 **VXLAN \-- VXLAN基础配置命令 \-- reset l2vpn statistics vsi**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VXLAN命令.files/image001.png){width="63" height="25"}]{lang="EN-US"}]{#struct_0_x1539_x1935_x1140750513}
-:::
+![说明](VXLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1539_x1935_x1647264955}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[reset l2vpn statistics vsi**]命令用来清除VSI的报文统计信息。
 
-[**[reset l2vpn statistics vsi]{lang="EN-US"}**]{#struct_0_x1539_x1935_425333428}[命令用来清除]{style="font-family:
-宋体"}[VSI]{lang="EN-US"}[的报文统计信息。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1601684085}
+**[reset l2vpn statistics vsi ** **name** *vsi-name* ]
 
-[**[reset l2vpn statistics vsi ]{lang="EN-US"}**[\[ **name** *vsi-name* \]]{lang="EN-US"}]{#struct_0_x1539_x1935_x1647264952}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1991417369}
+用户视图
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1647264953}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x737465986}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x1647264950}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_828617955}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x449879840}
+**[name*** vsi-name*]：清除指定VSI的报文统计信息。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，则清除所有VSI的信息。
 
-[**[name]{lang="EN-US"}***[ vsi-name]{lang="EN-US"}*]{#struct_0_x1539_x1935_x1647264951}[：清除指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的报文统计信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则清除所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1900265400}
+\# 清除本设备上所有VSI报文统计信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x1647264948}[清除本设备上所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[报文统计信息。]{style="font-family:宋体"}
+\<Sysname\> reset l2vpn statistics vsi
 
-[[\<Sysname\> reset l2vpn statistics vsi]{lang="EN-US"}]{#struct_0_x1539_x1935_1184782779}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x418935326}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[statistics enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_x874237743}
-:::::
-
-::: {#-26059450 .myid}
-[]{#_Toc404798659}[]{#struct_0_x1539_x1935_x1647264949}[]{#_Toc393878963}[]{#_Toc371411814}
+·**statistics enable**
 
 **VXLAN \-- VXLAN基础配置命令 \-- selective-flooding mac-address**
 
 ------------------------------------------------------------------------
 
-[**[selective-flooding mac-addres]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1544100576}[命令用来配置]{style="font-family:
-宋体"}[VSI]{lang="EN-US"}[选择性泛洪的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[selective-flooding mac-addres**]命令用来配置VSI选择性泛洪的MAC地址。
 
-[**[undo selective-flooding mac-addres]{lang="EN-US"}**]{#struct_0_x1539_x1935_x103109165}[命令用来删除]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的选择性泛洪]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[undo selective-flooding mac-addres**]命令用来删除VSI的选择性泛洪MAC地址。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1043335756}
+【命令】
 
-[]{#_Toc178914659}[**[selective-flooding mac-addres]{lang="EN-US"}**[ *mac-addres*]{lang="EN-US"}]{#struct_0_x1539_x1935_309050180}
+**[selective-flooding mac-addres** *mac-addres*]
 
-[**[undo selective-flooding mac-addres]{lang="EN-US"}**[ *mac-addres*]{lang="EN-US"}]{#struct_0_x1539_x1935_x948642827}
+**[undo selective-flooding mac-addres** *mac-addres*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_309050179}
+【缺省情况】
 
-[[设备上不存在任何]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_1772346350}[选择性泛洪]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+设备上不存在任何VSI选择性泛洪MAC地址。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_309050182}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x948642825}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_309050181}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x948642826}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_936585304}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_309050184}
+【参数】
 
-[*[mac-address]{lang="EN-US"}*]{#struct_0_x1539_x1935_x948642831}[：选择性泛洪的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。该]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址不能为全]{style="font-family:宋体"}[F]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[mac-address*]：选择性泛洪的MAC地址。该MAC地址不能为全F。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_937044055}
+【使用指导】
 
-[[通过]{style="font-family:宋体"}**[flooding disable]{lang="EN-US"}**]{#struct_0_x1539_x1935_309050183}[命令关闭]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的泛洪功能后，为了将某些]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的数据帧泛洪到远端站点以保证某些业务的流量在站点间互通，可以配置选择性泛洪的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。当数据帧的目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址匹配选择性泛洪的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址时，该数据帧可以泛洪到远端站点。]{style="font-family:宋体"}
+通过**flooding disable**命令关闭VSI的泛洪功能后，为了将某些MAC地址的数据帧泛洪到远端站点以保证某些业务的流量在站点间互通，可以配置选择性泛洪的MAC地址。当数据帧的目的MAC地址匹配选择性泛洪的MAC地址时，该数据帧可以泛洪到远端站点。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x948642824}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_936716376}[在]{style="font-family:宋体"}[VSI vsi1]{lang="EN-US"}[下配置选择性泛洪的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为]{style="font-family:宋体"}[000f-e201-0101]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在VSI vsi1下配置选择性泛洪的MAC地址为000f-e201-0101。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_309050186}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vsi1]{lang="EN-US"}
+Sysname vsi vsi1
 
-[\[Sysname-vsi-vsi1\] selective-flooding mac-address 000f-e201-0101]{lang="EN-US"}
+Sysname-vsi-vsi1 selective-flooding mac-address 000f-e201-0101
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x948642829}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[flooding disable]{lang="EN-US"}**]{#struct_0_x1539_x1935_309050185}
-:::
-
-::: {#-1902885513 .myid}
-[]{#_Toc404798660}[]{#struct_0_x1539_x1935_x1108473578}[]{#_Toc375835842}
+·**flooding disable**
 
 **VXLAN \-- VXLAN基础配置命令 \-- service-instance**
 
 ------------------------------------------------------------------------
 
-[**[service-instance]{lang="EN-US"}**]{#struct_0_x1539_x1935_x601121149}[命令用来创建以太网服务实例，并进入以太网服务实例视图。]{style="font-family:宋体"}
+**[service-instance**]命令用来创建以太网服务实例，并进入以太网服务实例视图。
 
-[**[undo service-instance]{lang="EN-US"}**]{#struct_0_x1539_x1935_205350261}[命令用来删除指定的以太网服务实例。]{style="font-family:宋体"}
+**[undo service-instance**]命令用来删除指定的以太网服务实例。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_462040956}
+【命令】
 
-[**[service-instance ]{lang="EN-US"}***[instance-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_x895010599}
+**[service-instance ***instance-id*]
 
-[**[undo service-instance ]{lang="EN-US"}***[instance-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_x734255816}
+**[undo service-instance ***instance-id*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1928422678}
+【缺省情况】
 
-[[接口上不存在任何以太网服务实例。]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x2034011766}
+接口上不存在任何以太网服务实例。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x610135631}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1539_x1935_x1217646613}[二层聚合接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_226111405}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1573460305}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x601055613}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_194066309}
+【参数】
 
-[*[instance-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_740478720}[：以太网服务实例的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4096]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[instance-id*]：以太网服务实例的编号，取值范围为1～4096。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1101437072}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x1823880124}[在二层以太网接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上创建以太网服务实例]{style="font-family:宋体"}[1]{lang="EN-US"}[，并进入以太网服务实例]{style="font-family:宋体"}[1]{lang="EN-US"}[的视图。]{style="font-family:宋体"}
+\# 在二层以太网接口GigabitEthernet1/0/1上创建以太网服务实例1，并进入以太网服务实例1的视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_1316817559}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] service-instance 1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 service-instance 1
 
-[\[Sysname-GigabitEthernet1/0/1-srv1\]]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1-srv1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1554286405}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn service-instance]{lang="EN-US"}**]{#struct_0_x1539_x1935_x780365566}
-:::
-
-::: {#1170655049 .myid}
-[]{#_Toc404798661}[]{#struct_0_x1539_x1935_x610366551}[]{#_Toc375835843}
+·**display l2vpn service-instance**
 
 **VXLAN \-- VXLAN基础配置命令 \-- shutdown**
 
 ------------------------------------------------------------------------
 
-[**[shutdown]{lang="EN-US"}**]{#struct_0_x1539_x1935_x600203645}[命令用来关闭当前的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[shutdown**]命令用来关闭当前的VSI。
 
-[**[undo shutdown]{lang="EN-US"}**]{#struct_0_x1539_x1935_x554927072}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo shutdown**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1683701075}
+【命令】
 
-[**[shutdown]{lang="EN-US"}**]{#struct_0_x1539_x1935_187574309}
+**[shutdown**]
 
-[**[undo shutdown]{lang="EN-US"}**]{#struct_0_x1539_x1935_154970426}
+**[undo shutdown**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1366331134}
+【缺省情况】
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x1249170457}[处于开启状态。]{style="font-family:宋体"}
+VSI处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1611171176}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_352555119}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_390111316}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x247355724}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1536144158}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_805454482}
+【使用指导】
 
-[[关闭]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x600138109}[后，该]{style="font-family:宋体"}[VSI]{lang="EN-US"}[将不能提供二层交换服务。]{style="font-family:宋体"}
+关闭VSI后，该VSI将不能提供二层交换服务。
 
-[[关闭]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_1723045302}[功能通常用于暂时禁用二层交换服务，但还需要再次启用该服务的场景。关闭]{style="font-family:宋体"}[VSI]{lang="EN-US"}[后，该]{style="font-family:宋体"}[VSI]{lang="EN-US"}[所有已存在的配置保持不变。在关闭状态下还可以对]{style="font-family:宋体"}[VSI]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}[VSI]{lang="EN-US"}[再次被开启后，基于最新的配置提供二层交换服务。]{style="font-family:宋体"}
+关闭VSI功能通常用于暂时禁用二层交换服务，但还需要再次启用该服务的场景。关闭VSI后，该VSI所有已存在的配置保持不变。在关闭状态下还可以对VSI进行配置。VSI再次被开启后，基于最新的配置提供二层交换服务。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1554765326}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1443814822}[关闭名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 关闭名为vpn1的VSI。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_94335076}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname vsi vpn1
 
-[\[Sysname-vsi-vpn1\] shutdown]{lang="EN-US"}
+Sysname-vsi-vpn1 shutdown
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1902487666}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn vsi]{lang="EN-US"}**]{#struct_0_x1539_x1935_x760184523}
-:::
-
-::::: {#-655052582 .myid}
-[]{#_Toc383786771}[]{#_Toc404798662}[]{#struct_0_x1539_x1935_1885190988}[]{#_Toc393878966}[]{#_Toc387305730}[]{#_Toc381105350}[]{#_Toc376783185}
+·**display l2vpn vsi**
 
 **VXLAN \-- VXLAN基础配置命令 \-- statistics enable**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VXLAN命令.files/image001.png){width="63" height="25"}]{lang="EN-US"}]{#struct_0_x1539_x1935_x21072053}
-:::
+![说明](VXLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1539_x1935_1885190987}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[statistics enable**]命令用来开启指定VSI的报文统计功能。
 
-[**[statistics enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_x20613301}[命令用来开启指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[报文统计功能。]{style="font-family:宋体"}
+**[undo statistics enable**]命令用来关闭指定VSI的报文统计功能。
 
-[**[undo statistics enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_x453461180}[命令用来关闭指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[报文统计功能。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_191921654}
+**[statistics enable**]
 
-[**[statistics enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_1290071713}
+**[undo statistics enable**]
 
-[**[undo statistics enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_x453461181}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_191856118}
+VSI的报文统计功能处于关闭状态。
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_2054197231}[的报文统计功能处于关闭状态。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x453461178}
+VSI视图
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_191397363}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1416714708}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x453461179}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_191331827}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_2070850079}
+\# 开启名为vpls1的VSI的报文统计功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x453461176}[开启名为]{style="font-family:宋体"}[vpls1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的报文统计功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_192314867}
+Sysname vsi vpls1
 
-[\[Sysname\] vsi vpls1]{lang="EN-US"}
+Sysname-vsi-vpls1 statistics enable
 
-[\[Sysname-vsi-vpls1\] statistics enable]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x453461177}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset l2vpn statistics vsi]{lang="EN-US"}**]{#struct_0_x1539_x1935_192249331}
-:::::
-
-::: {#816204697 .myid}
-[]{#_Toc404798663}[]{#struct_0_x1539_x1935_1886647086}[]{#_Toc372102899}[]{#_Toc371058550}[]{#_Toc376957599}[]{#_Toc378672384}[]{#_Toc378672439}[]{#_Toc378683239}[]{#_Toc378683294}[]{#_Toc378683975}[]{#_Toc379547071}[]{#_Toc390073180}[]{#_Toc376957600}[]{#_Toc378672385}[]{#_Toc378672440}[]{#_Toc378683240}[]{#_Toc378683295}[]{#_Toc378683976}[]{#_Toc379547072}[]{#_Toc390073181}[]{#_Toc376957601}[]{#_Toc378672386}[]{#_Toc378672441}[]{#_Toc378683241}[]{#_Toc378683296}[]{#_Toc378683977}[]{#_Toc379547073}[]{#_Toc390073182}[]{#_Toc376957602}[]{#_Toc378672387}[]{#_Toc378672442}[]{#_Toc378683242}[]{#_Toc378683297}[]{#_Toc378683978}[]{#_Toc379547074}[]{#_Toc390073183}[]{#_Toc376957603}[]{#_Toc378672388}[]{#_Toc378672443}[]{#_Toc378683243}[]{#_Toc378683298}[]{#_Toc378683979}[]{#_Toc379547075}[]{#_Toc390073184}[]{#_Toc376957604}[]{#_Toc378672389}[]{#_Toc378672444}[]{#_Toc378683244}[]{#_Toc378683299}[]{#_Toc378683980}[]{#_Toc379547076}[]{#_Toc390073185}[]{#_Toc376957605}[]{#_Toc378672390}[]{#_Toc378672445}[]{#_Toc378683245}[]{#_Toc378683300}[]{#_Toc378683981}[]{#_Toc379547077}[]{#_Toc390073186}[]{#_Toc376957606}[]{#_Toc378672391}[]{#_Toc378672446}[]{#_Toc378683246}[]{#_Toc378683301}[]{#_Toc378683982}[]{#_Toc379547078}[]{#_Toc390073187}[]{#_Toc376957607}[]{#_Toc378672392}[]{#_Toc378672447}[]{#_Toc378683247}[]{#_Toc378683302}[]{#_Toc378683983}[]{#_Toc379547079}[]{#_Toc390073188}[]{#_Toc376957608}[]{#_Toc378672393}[]{#_Toc378672448}[]{#_Toc378683248}[]{#_Toc378683303}[]{#_Toc378683984}[]{#_Toc379547080}[]{#_Toc390073189}[]{#_Toc376957609}[]{#_Toc378672394}[]{#_Toc378672449}[]{#_Toc378683249}[]{#_Toc378683304}[]{#_Toc378683985}[]{#_Toc379547081}[]{#_Toc390073190}[]{#_Toc376957610}[]{#_Toc378672395}[]{#_Toc378672450}[]{#_Toc378683250}[]{#_Toc378683305}[]{#_Toc378683986}[]{#_Toc379547082}[]{#_Toc390073191}[]{#_Toc376957611}[]{#_Toc378672396}[]{#_Toc378672451}[]{#_Toc378683251}[]{#_Toc378683306}[]{#_Toc378683987}[]{#_Toc379547083}[]{#_Toc390073192}[]{#_Toc376957612}[]{#_Toc378672397}[]{#_Toc378672452}[]{#_Toc378683252}[]{#_Toc378683307}[]{#_Toc378683988}[]{#_Toc379547084}[]{#_Toc390073193}[]{#_Toc376957613}[]{#_Toc378672398}[]{#_Toc378672453}[]{#_Toc378683253}[]{#_Toc378683308}[]{#_Toc378683989}[]{#_Toc379547085}[]{#_Toc390073194}[]{#_Toc376957614}[]{#_Toc378672399}[]{#_Toc378672454}[]{#_Toc378683254}[]{#_Toc378683309}[]{#_Toc378683990}[]{#_Toc379547086}[]{#_Toc390073195}[]{#_Toc376957615}[]{#_Toc378672400}[]{#_Toc378672455}[]{#_Toc378683255}[]{#_Toc378683310}[]{#_Toc378683991}[]{#_Toc379547087}[]{#_Toc390073196}[]{#_Toc376957616}[]{#_Toc378672401}[]{#_Toc378672456}[]{#_Toc378683256}[]{#_Toc378683311}[]{#_Toc378683992}[]{#_Toc379547088}[]{#_Toc390073197}[]{#_Toc376957617}[]{#_Toc378672402}[]{#_Toc378672457}[]{#_Toc378683257}[]{#_Toc378683312}[]{#_Toc378683993}[]{#_Toc379547089}[]{#_Toc390073198}[]{#_Toc376957618}[]{#_Toc378672403}[]{#_Toc378672458}[]{#_Toc378683258}[]{#_Toc378683313}[]{#_Toc378683994}[]{#_Toc379547090}[]{#_Toc390073199}[]{#_Toc376957619}[]{#_Toc378672404}[]{#_Toc378672459}[]{#_Toc378683259}[]{#_Toc378683314}[]{#_Toc378683995}[]{#_Toc379547091}[]{#_Toc390073200}[]{#_Toc376957620}[]{#_Toc378672405}[]{#_Toc378672460}[]{#_Toc378683260}[]{#_Toc378683315}[]{#_Toc378683996}[]{#_Toc379547092}[]{#_Toc390073201}[]{#_Toc376957621}[]{#_Toc378672406}[]{#_Toc378672461}[]{#_Toc378683261}[]{#_Toc378683316}[]{#_Toc378683997}[]{#_Toc379547093}[]{#_Toc390073202}[]{#_Toc376957622}[]{#_Toc378672407}[]{#_Toc378672462}[]{#_Toc378683262}[]{#_Toc378683317}[]{#_Toc378683998}[]{#_Toc379547094}[]{#_Toc390073203}[]{#_Toc376957623}[]{#_Toc378672408}[]{#_Toc378672463}[]{#_Toc378683263}[]{#_Toc378683318}[]{#_Toc378683999}[]{#_Toc379547095}[]{#_Toc390073204}
+·**reset l2vpn statistics vsi**
 
 **VXLAN \-- VXLAN基础配置命令 \-- tunnel**
 
 ------------------------------------------------------------------------
 
-[**[tunnel]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1397631735}[命令用来配置]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[与指定的隧道关联。]{style="font-family:宋体"}
+**[tunnel**]命令用来配置VXLAN与指定的隧道关联。
 
-[**[undo tunnel]{lang="EN-US"}**]{#struct_0_x1539_x1935_513163922}[命令用来取消]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[与指定隧道的关联。]{style="font-family:宋体"}
+**[undo tunnel**]命令用来取消VXLAN与指定隧道的关联。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x940886760}
+【命令】
 
-[**[tunnel ]{lang="EN-US"}***[tunnel-number]{lang="EN-US"}*]{#struct_0_x1539_x1935_1191073326}
+**[tunnel ***tunnel-number*]
 
-[**[undo tunnel ]{lang="EN-US"}***[tunnel-number]{lang="EN-US"}*]{#struct_0_x1539_x1935_x600727936}
+**[undo tunnel ***tunnel-number*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x563720366}
+【缺省情况】
 
-[[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_742793576}[没有与任何]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道关联。]{style="font-family:宋体"}
+VXLAN没有与任何VXLAN隧道关联。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1681374576}
+【视图】
 
-[[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_1597655553}[视图]{style="font-family:宋体"}
+VXLAN视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_900576824}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1496573549}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x1250887115}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1140482558}
+【参数】
 
-[*[tunnel-numb]{lang="FR"}*[er]{lang="EN-US"}]{#struct_0_x1539_x1935_x925476329}[：隧道接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[tunnel-numb*er]：隧道接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1952520228}
+【使用指导】
 
-[[在]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_1134503020}[组网中，用户可以手工将]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[与]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道关联。]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[接收到某个]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[的泛洪流量后，如果采用单播路由泛洪方式，则]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[将在与该]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[关联的所有]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道上发送该流量，以便将流量转发给所有的远端]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[。]{style="font-family:宋体"}
+在VXLAN组网中，用户可以手工将VXLAN与VXLAN隧道关联。VTEP接收到某个VXLAN的泛洪流量后，如果采用单播路由泛洪方式，则VTEP将在与该VXLAN关联的所有VXLAN隧道上发送该流量，以便将流量转发给所有的远端VTEP。
 
-[[执行本命令时，需要注意的是：]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x764114671}
+执行本命令时，需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令指定的隧道必须是]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x600662400}[VXLAN]{lang="EN-US"}[模式的隧道。]{style="font-family:宋体"}
+·本命令指定的隧道必须是VXLAN模式的隧道。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[一个]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1406797933}[VXLAN]{lang="EN-US"}[可以关联多条]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道；一条]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道可以关联多个]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+·一个VXLAN可以关联多条VXLAN隧道；一条VXLAN隧道可以关联多个VXLAN。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_359301469}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x2018041185}[配置]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道]{style="font-family:宋体"}[Tunne0]{lang="EN-US"}[和]{style="font-family:宋体"}[Tunnel1]{lang="EN-US"}[与]{style="font-family:宋体"}[VXLAN 10000]{lang="EN-US"}[关联。]{style="font-family:宋体"}
+\# 配置VXLAN隧道Tunne0和Tunnel1与VXLAN 10000关联。
 
-[[\<Sysname\> system]{lang="EN-US"}]{#struct_0_x1539_x1935_x1046078253}
+\<Sysname\> system
 
-[\[Sysname\] vsi vpna]{lang="EN-US"}
+Sysname vsi vpna
 
-[\[Sysname-vsi-vpna\] vxlan 10000]{lang="EN-US"}
+Sysname-vsi-vpna vxlan 10000
 
-[\[Sysname-vsi-vpna-vxlan-10000\] tunnel 0]{lang="EN-US"}
+Sysname-vsi-vpna-vxlan-10000 tunnel 0
 
-[\[Sysname-vsi-vpna-vxlan-10000\] tunnel 1]{lang="EN-US"}
+Sysname-vsi-vpna-vxlan-10000 tunnel 1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1087816875}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display vxlan]{lang="EN-US"}[ tunnel]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1775472728}
-:::
-
-::: {#-126256708 .myid}
-[]{#_Toc404798664}[]{#struct_0_x1539_x1935_1502853958}[]{#_Toc393878968}[]{#_Toc383786773}[]{#_Toc382551470}
+·**display vxlan tunnel**
 
 **VXLAN \-- VXLAN基础配置命令 \-- tunnel bfd enable**
 
 ------------------------------------------------------------------------
 
-[**[tunnel bfd enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_1502853957}[命令用来开启隧道的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[检测功能。]{style="font-family:宋体"}
+**[tunnel bfd enable**]命令用来开启隧道的BFD检测功能。
 
-[**[undo tunnel bfd enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_1605086795}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo tunnel bfd enable**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_293145880}
+【命令】
 
-[**[tunnel bfd enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_365080054}
+**[tunnel bfd enable**]
 
-[**[undo tunnel bfd enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_1502853960}
+**[undo tunnel bfd enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1604759116}
+【缺省情况】
 
-[[隧道的]{style="font-family:宋体"}[BFD]{lang="EN-US"}]{#struct_0_x1539_x1935_697449722}[检测功能处于关闭状态。]{style="font-family:宋体"}
+隧道的BFD检测功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1502853959}
+【视图】
 
-[[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_1604169291}[模式]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口视图]{style="font-family:宋体"}
+VXLAN模式Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x2017379020}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x872686233}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1502853962}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1604890188}
+【使用指导】
 
-[[隧道的]{style="font-family:宋体"}[BFD]{lang="EN-US"}]{#struct_0_x1539_x1935_1502853961}[检测功能用来避免]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[设备无法及时感知隧道的故障，导致报文转发失败。]{style="font-family:宋体"}
+隧道的BFD检测功能用来避免VTEP设备无法及时感知隧道的故障，导致报文转发失败。
 
-[[开启隧道的]{style="font-family:宋体"}[BFD]{lang="EN-US"}]{#struct_0_x1539_x1935_1604693580}[检测功能后，]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[将自动建立多跳控制报文方式的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[会话，检测隧道源和目的端之间链路的可达性。]{style="font-family:宋体"}[BFD]{lang="EN-US"}[检测到链路不可达后，]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[将]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口的状态置为]{style="font-family:宋体"}[down]{lang="EN-US"}[，不再通过该隧道转发报文。]{style="font-family:宋体"}
+开启隧道的BFD检测功能后，VTEP将自动建立多跳控制报文方式的BFD会话，检测隧道源和目的端之间链路的可达性。BFD检测到链路不可达后，VTEP将Tunnel接口的状态置为down，不再通过该隧道转发报文。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1502853964}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1605021260}[开启]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道]{style="font-family:宋体"}[Tunnel9]{lang="EN-US"}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[检测功能。]{style="font-family:宋体"}
+\# 开启VXLAN隧道Tunnel9的BFD检测功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_1502853963}
+\<Sysname\> system-view
 
-[\[Sysname\] interface tunnel 9 mode vxlan]{lang="EN-US"}
+Sysname interface tunnel 9 mode vxlan
 
-[\[Sysname-Tunnel9\] tunnel bfd enable]{lang="EN-US"}
-:::
-
-::: {#-981054953 .myid}
-[]{#_Toc404798665}[]{#struct_0_x1539_x1935_x1869174802}[]{#_Toc375835849}
+Sysname-Tunnel9 tunnel bfd enable
 
 **VXLAN \-- VXLAN基础配置命令 \-- vsi**
 
 ------------------------------------------------------------------------
 
-[**[vsi]{lang="EN-US"}**]{#struct_0_x1539_x1935_1675680074}[命令用来创建一个]{style="font-family:宋体"}[VSI]{lang="EN-US"}[（]{style="font-family:宋体"}[Virtual Switching Instance]{lang="EN-US"}[，虚拟交换实例），并进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+**[vsi**]命令用来创建一个VSI（Virtual Switching Instance，虚拟交换实例），并进入VSI视图。
 
-[**[undo]{lang="EN-US"}**[ **vsi**]{lang="EN-US"}]{#struct_0_x1539_x1935_779039935}[命令用来删除指定的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo** **vsi**]命令用来删除指定的VSI。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1557931349}
+【命令】
 
-[**[vsi]{lang="IT"}**]{#struct_0_x1539_x1935_129478482}[ *vsi-name*]{lang="IT"}
+**[vsi**] *vsi-name*
 
-[**[undo]{lang="IT"}**]{#struct_0_x1539_x1935_x600859008}[ ]{lang="IT"}**[vsi]{lang="IT"}**[ *vsi-name*]{lang="IT"}
+**[undo**]**vsi** *vsi-name*
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_2117536600}
+【缺省情况】
 
-[[设备上不存在任何]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x2145132035}[。]{style="font-family:宋体"}
+设备上不存在任何VSI。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x898493521}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1379350442}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1328213265}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1054117416}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x430377802}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x933198751}
+【参数】
 
-[*[vsi-name]{lang="EN-US"}*]{#struct_0_x1539_x1935_232818405}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[vsi-name*]：VSI的名称，为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x600793472}
+【使用指导】
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x189629206}[是]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[上为一个]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[提供二层交换服务的虚拟交换实例。]{style="font-family:宋体"}[VSI]{lang="EN-US"}[可以看做是]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[上的一台基于]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[进行二层转发的虚拟交换机，它具有传统以太网交换机的所有功能，包括源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址学习、]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址老化、泛洪等。]{style="font-family:宋体"}[VSI]{lang="EN-US"}[与]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[一一对应。]{style="font-family:宋体"}
+VSI是VTEP上为一个VXLAN提供二层交换服务的虚拟交换实例。VSI可以看做是VTEP上的一台基于VXLAN进行二层转发的虚拟交换机，它具有传统以太网交换机的所有功能，包括源MAC地址学习、MAC地址老化、泛洪等。VSI与VXLAN一一对应。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1846340369}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x1586767293}[创建名为]{style="font-family:宋体"}[vxlan10]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+\# 创建名为vxlan10的VSI，并进入VSI视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_x1648299319}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vxlan10]{lang="EN-US"}
+Sysname vsi vxlan10
 
-[\[Sysname-vsi-vxlan10\] ]{lang="EN-US"}
+Sysname-vsi-vxlan10
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1502008208}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn vsi]{lang="EN-US"}**]{#struct_0_x1539_x1935_x33830719}
-:::
-
-::: {#1253663136 .myid}
-[]{#_Toc404798666}[]{#struct_0_x1539_x1935_x31095702}[]{#_Toc378672411}[]{#_Toc378672466}[]{#_Toc378683266}[]{#_Toc378683321}[]{#_Toc378684002}[]{#_Toc379547098}[]{#_Toc390073207}
+·**display l2vpn vsi**
 
 **VXLAN \-- VXLAN基础配置命令 \-- vxlan**
 
 ------------------------------------------------------------------------
 
-[**[vxlan]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1156757605}[命令用来创建]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+**[vxlan**]命令用来创建VXLAN，并进入VXLAN视图。
 
-[**[undo vxlan]{lang="EN-US"}**]{#struct_0_x1539_x1935_1235788229}[命令用来删除指定的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo vxlan**]命令用来删除指定的VXLAN。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1920222828}
+【命令】
 
-[**[vxlan ]{lang="EN-US"}***[vxlan-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_x600990080}
+**[vxlan ***vxlan-id*]
 
-[**[undo vxlan]{lang="EN-US"}**]{#struct_0_x1539_x1935_x990907954}
+**[undo vxlan**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1453090014}
+【缺省情况】
 
-[[设备上不存在任何]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_x324477480}[。]{style="font-family:宋体"}
+设备上不存在任何VXLAN。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1683983557}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x1694301774}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x999121626}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x1618169595}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1763644167}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x999873041}
+【参数】
 
-[*[vxlan-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_1891879124}[：]{style="font-family:宋体"}[VXLAN ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[16777215]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[vxlan-id*]：VXLAN ID，取值范围为0～16777215。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x600924544}
+【使用指导】
 
-[[在一个]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x1364999122}[下只能创建一个]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[。不同]{style="font-family:宋体"}[VSI]{lang="EN-US"}[下创建的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[，其]{style="font-family:宋体"}[VXLAN ID]{lang="EN-US"}[不能相同。]{style="font-family:宋体"}
+在一个VSI下只能创建一个VXLAN。不同VSI下创建的VXLAN，其VXLAN ID不能相同。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_660922097}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_403637799}[在名称为]{style="font-family:宋体"}[vpna]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[下创建编号为]{style="font-family:宋体"}[10000]{lang="EN-US"}[的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+\# 在名称为vpna的VSI下创建编号为10000的VXLAN，并进入VXLAN视图。
 
-[[\<Sysname\> system]{lang="EN-US"}]{#struct_0_x1539_x1935_x1816813009}
+\<Sysname\> system
 
-[\[Sysname\] vsi vpna]{lang="EN-US"}
+Sysname vsi vpna
 
-[\[Sysname-vsi-vpna\] vxlan 10000]{lang="EN-US"}
+Sysname-vsi-vpna vxlan 10000
 
-[\[Sysname-vsi-vpna-vxlan-10000\]]{lang="EN-US"}
+Sysname-vsi-vpna-vxlan-10000
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1616629371}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vsi]{lang="EN-US"}**]{#struct_0_x1539_x1935_1486239002}
-:::
-
-::: {#1343021387 .myid}
-[]{#_Toc404798667}[]{#struct_0_x1539_x1935_597837687}[]{#_Toc372033211}
+·**vsi**
 
 **VXLAN \-- VXLAN基础配置命令 \-- vxlan invalid-udp-checksum discard**
 
 ------------------------------------------------------------------------
 
-[**[vxlan invalid-udp-checksum discard]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1976901681}[命令用来配置丢弃]{style="font-family:宋体"}[UDP]{lang="EN-US"}[校验和检查失败的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+**[vxlan invalid-udp-checksum discard**]命令用来配置丢弃UDP校验和检查失败的VXLAN报文。
 
-[**[undo vxlan invalid-udp-checksum discard]{lang="EN-US"}**]{#struct_0_x1539_x1935_x976542182}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo vxlan invalid-udp-checksum discard**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x601121152}
+【命令】
 
-[**[vxlan invalid-udp-checksum discard]{lang="EN-US"}**]{#struct_0_x1539_x1935_204760436}
+**[vxlan invalid-udp-checksum discard**]
 
-[**[undo vxlan invalid-udp-checksum discard]{lang="EN-US"}**]{#struct_0_x1539_x1935_x277519059}
+**[undo vxlan invalid-udp-checksum discard**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1731467022}
+【缺省情况】
 
-[[不会检查]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_x8727655}[报文的]{style="font-family:宋体"}[UDP]{lang="EN-US"}[校验和。]{style="font-family:宋体"}
+不会检查VXLAN报文的UDP校验和。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_962363798}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1792203938}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x139330788}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x271719878}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_230746414}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x601055616}
+【使用指导】
 
-[[VTEP]{lang="EN-US"}]{#struct_0_x1539_x1935_194262917}[对二层数据帧进行封装时，将]{style="font-family:宋体"}[UDP]{lang="EN-US"}[校验和设置为]{style="font-family:宋体"}[0]{lang="EN-US"}[。缺省情况下，]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[接收到]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[报文后，不会检查报文的]{style="font-family:宋体"}[UDP]{lang="EN-US"}[校验和。如果在]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[上执行了本命令，则该]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[会对接收的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[报文的]{style="font-family:宋体"}[UDP]{lang="EN-US"}[校验和进行检查，校验和检查失败的报文将被丢弃。]{style="font-family:宋体"}
+VTEP对二层数据帧进行封装时，将UDP校验和设置为0。缺省情况下，VTEP接收到VXLAN报文后，不会检查报文的UDP校验和。如果在VTEP上执行了本命令，则该VTEP会对接收的VXLAN报文的UDP校验和进行检查，校验和检查失败的报文将被丢弃。
 
-[[为了兼容其他厂商的设备，]{style="font-family:宋体"}[UDP]{lang="EN-US"}]{#struct_0_x1539_x1935_579624192}[检验和为]{style="font-family:宋体"}[0]{lang="EN-US"}[和]{style="font-family:宋体"}[UDP]{lang="EN-US"}[检验和正确的报文均能通过]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[的检查，被]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[接收。]{style="font-family:宋体"}
+为了兼容其他厂商的设备，UDP检验和为0和UDP检验和正确的报文均能通过VTEP的检查，被VTEP接收。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1546703693}
+【举例】
 
-[[\# ]{lang="PT-BR"}]{#struct_0_x1539_x1935_1911017184}[配置丢弃]{style="font-family:宋体"}[UDP]{lang="EN-US"}[校验和检查失败的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+\# 配置丢弃UDP校验和检查失败的VXLAN报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_x2074248776}
+\<Sysname\> system-view
 
-[\[Sysname\] vxlan invalid-udp-checksum discard]{lang="EN-US"}
+Sysname vxlan invalid-udp-checksum discard
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1505747883}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vxlan invalid-vlan-tag discard]{lang="EN-US"}**]{#struct_0_x1539_x1935_1036529660}
-:::
-
-::: {#-382258864 .myid}
-[]{#_Toc404798668}[]{#struct_0_x1539_x1935_49562799}[]{#_Toc373172910}[]{#_Toc376856875}[]{#_Toc376856939}
+·**vxlan invalid-vlan-tag discard**
 
 **VXLAN \-- VXLAN基础配置命令 \-- vxlan invalid-vlan-tag discard**
 
 ------------------------------------------------------------------------
 
-[**[vxlan invalid-vlan-tag discard]{lang="EN-US"}**]{#struct_0_x1539_x1935_x959953680}[命令用来配置丢弃内层数据帧含有]{style="font-family:
-宋体"}[VLAN tag]{lang="EN-US"}[的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+**[vxlan invalid-vlan-tag discard**]命令用来配置丢弃内层数据帧含有VLAN tag的VXLAN报文。
 
-[**[undo vxlan invalid-vlan-tag discard]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1613589211}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo vxlan invalid-vlan-tag discard**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x600203648}
+【命令】
 
-[**[vxlan invalid-vlan-tag discard]{lang="EN-US"}**]{#struct_0_x1539_x1935_x554075104}
+**[vxlan invalid-vlan-tag discard**]
 
-[**[undo vxlan invalid-vlan-tag discard]{lang="EN-US"}**]{#struct_0_x1539_x1935_1820175005}
+**[undo vxlan invalid-vlan-tag discard**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_66246128}
+【缺省情况】
 
-[[不会检查]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_x1074131858}[报文内层封装的以太网数据帧是否携带]{style="font-family:宋体"}[VLAN tag]{lang="EN-US"}[。]{style="font-family:宋体"}
+不会检查VXLAN报文内层封装的以太网数据帧是否携带VLAN tag。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1924213037}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x90924726}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1899187851}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1679150382}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x281070369}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x600138112}
+【使用指导】
 
-[[如果在]{style="font-family:宋体"}[VTEP]{lang="EN-US"}]{#struct_0_x1539_x1935_1723635125}[上执行了本命令，则]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[接收到]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[报文并对其解封装后，若内层以太网数据帧带有]{style="font-family:宋体"}[VLAN tag]{lang="EN-US"}[，则丢弃该]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+如果在VTEP上执行了本命令，则VTEP接收到VXLAN报文并对其解封装后，若内层以太网数据帧带有VLAN tag，则丢弃该VXLAN报文。
 
-[[远端]{style="font-family:宋体"}[VTEP]{lang="EN-US"}]{#struct_0_x1539_x1935_1935136202}[上通过]{style="font-family:宋体"}**[xconnect vsi]{lang="EN-US"}**[命令的]{style="font-family:宋体"}**[access-mode]{lang="EN-US"}**[参数配置接入模式为]{style="font-family:宋体"}**[ethernet]{lang="EN-US"}**[时，]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[报文可能携带]{style="font-family:宋体"}[VLAN tag]{lang="EN-US"}[。这种情况下建议不要在本端]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[上执行]{style="font-family:宋体"}**[vxlan ]{lang="EN-US"}[invalid-vlan-tag discard]{lang="EN-US"}**[命令，以免错误地丢弃报文。]{style="font-family:宋体"}
+远端VTEP上通过**xconnect vsi**命令的**access-mode**参数配置接入模式为**ethernet**时，VXLAN报文可能携带VLAN tag。这种情况下建议不要在本端VTEP上执行**vxlan invalid-vlan-tag discard**命令，以免错误地丢弃报文。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1307192262}
+【举例】
 
-[[\# ]{lang="PT-BR"}]{#struct_0_x1539_x1935_x877446505}[配置丢弃内层数据帧含有]{style="font-family:宋体"}[VLAN tag]{lang="EN-US"}[的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+\# 配置丢弃内层数据帧含有VLAN tag的VXLAN报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_x1922449887}
+\<Sysname\> system-view
 
-[\[Sysname\] vxlan invalid-vlan-tag discard]{lang="EN-US"}
+Sysname vxlan invalid-vlan-tag discard
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1147867017}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vxlan invalid-udp-checksum discard]{lang="EN-US"}**]{#struct_0_x1539_x1935_x495911994}
+·**vxlan invalid-udp-checksum discard**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[xconnect vsi]{lang="EN-US"}**]{#struct_0_x1539_x1935_2043130360}
-:::
-
-::: {#115618911 .myid}
-[]{#_Toc404798669}[]{#struct_0_x1539_x1935_311212870}[]{#_Toc393878973}[]{#_Toc376856936}[]{#_Toc371411815}
+·**xconnect vsi**
 
 **VXLAN \-- VXLAN基础配置命令 \-- vxlan local-mac report**
 
 ------------------------------------------------------------------------
 
-[**[vxlan local-mac report]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1164730020}[命令用来开启]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址添加]{style="font-family:宋体"}[/]{lang="EN-US"}[删除的日志功能。]{style="font-family:宋体"}
+**[vxlan local-mac report**]命令用来开启VXLAN本地MAC地址添加/删除的日志功能。
 
-[**[undo vxlan local-mac report]{lang="EN-US"}**]{#struct_0_x1539_x1935_2136943256}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo vxlan local-mac report**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_311212869}
+【命令】
 
-[**[vxlan local-mac report]{lang="EN-US"}**]{#struct_0_x1539_x1935_791585109}
+**[vxlan local-mac report**]
 
-[**[undo vxlan local-mac report]{lang="EN-US"}**]{#struct_0_x1539_x1935_x372803581}
+**[undo vxlan local-mac report**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_311212872}
+【缺省情况】
 
-[[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_x1164730018}[添加]{style="font-family:宋体"}[/]{lang="EN-US"}[删除本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址时不会记录日志。]{style="font-family:宋体"}
+VXLAN添加/删除本地MAC地址时不会记录日志。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1801728144}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_311212871}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1164730019}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_311212874}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x1164730016}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_311212873}
+【使用指导】
 
-[[执行本配置后，]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_x1164730017}[添加、删除本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址时，将产生日志信息。生成的日志信息将被发送到设备的信息中心，通过设置信息中心的参数，决定日志信息的输出规则（即是否允许输出以及输出方向）。]{style="font-family:宋体"}
+执行本配置后，VXLAN添加、删除本地MAC地址时，将产生日志信息。生成的日志信息将被发送到设备的信息中心，通过设置信息中心的参数，决定日志信息的输出规则（即是否允许输出以及输出方向）。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_311212876}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1878702917}[开启]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址添加]{style="font-family:宋体"}[/]{lang="EN-US"}[删除的日志功能。]{style="font-family:宋体"}
+\# 开启VXLAN本地MAC地址添加/删除的日志功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_1878702920}
+\<Sysname\> system-view
 
-[\[Sysname\] vxlan local-mac report]{lang="EN-US"}
-:::
-
-::: {#484471969 .myid}
-[]{#_Toc404798670}[]{#struct_0_x1539_x1935_x1750721058}[]{#_Toc393878974}
+Sysname vxlan local-mac report
 
 **VXLAN \-- VXLAN基础配置命令 \-- vxlan tunnel mac-learning disable**
 
 ------------------------------------------------------------------------
 
-[**[vxlan tunnel mac-learning disable]{lang="EN-US"}**]{#struct_0_x1539_x1935_328970789}[命令用来关闭远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址自动学习功能。]{style="font-family:宋体"}
+**[vxlan tunnel mac-learning disable**]命令用来关闭远端MAC地址自动学习功能。
 
-[**[undo vxlan tunnel mac-learning disable]{lang="EN-US"}**]{#struct_0_x1539_x1935_1878702919}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo vxlan tunnel mac-learning disable**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1750262307}
+【命令】
 
-[**[vxlan tunnel mac-learning disable]{lang="EN-US"}**]{#struct_0_x1539_x1935_1878702922}
+**[vxlan tunnel mac-learning disable**]
 
-[**[undo vxlan tunnel mac-learning disable]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1750852130}
+**[undo vxlan tunnel mac-learning disable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1878702921}
+【缺省情况】
 
-[[远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1539_x1935_x1750786594}[地址自动学习功能处于开启状态。]{style="font-family:宋体"}
+远端MAC地址自动学习功能处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1878702924}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1750458914}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1878702923}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x1750917666}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x459949244}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_112403239}
+【使用指导】
 
-[[远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1539_x1935_x459949245}[地址是指]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[连接的远端站点内虚拟机的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址可以通过报文中的源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址动态学习。]{style="font-family:宋体"}
+远端MAC地址是指VTEP连接的远端站点内虚拟机的MAC地址。远端MAC地址可以通过报文中的源MAC地址动态学习。
 
-[[缺省情况下，设备可以自动学习远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1539_x1935_x459949242}[地址。如果网络中存在攻击，为了避免学习到错误的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，可以通过本命令手工关闭远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址自动学习功能。]{style="font-family:宋体"}
+缺省情况下，设备可以自动学习远端MAC地址。如果网络中存在攻击，为了避免学习到错误的远端MAC地址，可以通过本命令手工关闭远端MAC地址自动学习功能。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_112010023}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x459949243}[关闭远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址自动学习功能。]{style="font-family:宋体"}
+\# 关闭远端MAC地址自动学习功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_111944487}
+\<Sysname\> system-view
 
-[\[Sysname\] vxlan tunnel mac-learning disable]{lang="EN-US"}
-:::
-
-::: {#1885768484 .myid}
-[]{#_Toc404798671}[]{#struct_0_x1539_x1935_1509308142}[]{#_Toc372033212}[]{#_Toc376875486}[]{#_Toc376875856}[]{#_Toc376875487}[]{#_Toc376875857}[]{#_Toc376875488}[]{#_Toc376875858}[]{#_Toc376875489}[]{#_Toc376875859}[]{#_Toc376875490}[]{#_Toc376875860}[]{#_Toc376875491}[]{#_Toc376875861}[]{#_Toc376875492}[]{#_Toc376875862}[]{#_Toc376875493}[]{#_Toc376875863}[]{#_Toc376875494}[]{#_Toc376875864}[]{#_Toc376875495}[]{#_Toc376875865}[]{#_Toc376875496}[]{#_Toc376875866}[]{#_Toc376875497}[]{#_Toc376875867}[]{#_Toc376875498}[]{#_Toc376875868}[]{#_Toc376875499}[]{#_Toc376875869}[]{#_Toc376875500}[]{#_Toc376875870}[]{#_Toc376875501}[]{#_Toc376875871}[]{#_Toc376875502}[]{#_Toc376875872}[]{#_Toc376875503}[]{#_Toc376875873}[]{#_Toc376875504}[]{#_Toc376875874}[]{#_Toc390073211}[]{#_Toc390073212}[]{#_Toc390073213}[]{#_Toc390073214}[]{#_Toc390073215}[]{#_Toc390073216}[]{#_Toc390073217}[]{#_Toc390073218}[]{#_Toc390073219}[]{#_Toc390073220}[]{#_Toc390073221}[]{#_Toc390073222}[]{#_Toc390073223}[]{#_Toc390073224}[]{#_Toc390073225}[]{#_Toc390073226}[]{#_Toc390073227}[]{#_Toc390073228}[]{#_Toc390073229}[]{#_Toc390073230}
+Sysname vxlan tunnel mac-learning disable
 
 **VXLAN \-- VXLAN基础配置命令 \-- vxlan udp-port**
 
 ------------------------------------------------------------------------
 
-[**[vxlan udp-port]{lang="EN-US"}**]{#struct_0_x1539_x1935_x600727935}[命令用来配置]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[报文的目的]{style="font-family:宋体"}[UDP]{lang="EN-US"}[端口号。]{style="font-family:宋体"}
+**[vxlan udp-port**]命令用来配置VXLAN报文的目的UDP端口号。
 
-[**[undo vxlan udp-port]{lang="EN-US"}**]{#struct_0_x1539_x1935_x563654830}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo vxlan udp-port**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x37358608}
+【命令】
 
-[**[vxlan udp-port ]{lang="EN-US"}***[port-number]{lang="EN-US"}*]{#struct_0_x1539_x1935_x216220150}
+**[vxlan udp-port ***port-number*]
 
-[**[undo vxlan udp-port]{lang="EN-US"}**]{#struct_0_x1539_x1935_x532885002}
+**[undo vxlan udp-port**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x534537201}
+【缺省情况】
 
-[[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_535332002}[报文的目的]{style="font-family:宋体"}[UDP]{lang="EN-US"}[端口号为]{style="font-family:宋体"}[4789]{lang="EN-US"}[。]{style="font-family:宋体"}
+VXLAN报文的目的UDP端口号为4789。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_885658674}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1510376111}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x523702660}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1273883314}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x600662399}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x167769994}
+【参数】
 
-[*[port-number]{lang="EN-US"}*]{#struct_0_x1539_x1935_1544417587}[：]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[报文的目的]{style="font-family:宋体"}[UDP]{lang="EN-US"}[端口号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[port-number*]：VXLAN报文的目的UDP端口号，取值范围为1～65535。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1267465298}
+【使用指导】
 
-[[属于同一个]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_425564758}[的]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[设备上需要配置相同的]{style="font-family:宋体"}[UDP]{lang="EN-US"}[端口号。]{style="font-family:宋体"}
+属于同一个VXLAN的VTEP设备上需要配置相同的UDP端口号。
 
-[[建议不要将]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_x2137399153}[报文的目的]{style="font-family:宋体"}[UDP]{lang="EN-US"}[端口号配置为知名端口，即]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1023]{lang="EN-US"}[之间的端口。]{style="font-family:宋体"}
+建议不要将VXLAN报文的目的UDP端口号配置为知名端口，即1～1023之间的端口。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1619098250}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x1057904127}[配置]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[报文的目的]{style="font-family:宋体"}[UDP]{lang="EN-US"}[端口号为]{style="font-family:宋体"}[6666]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置VXLAN报文的目的UDP端口号为6666。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_1625345099}
+\<Sysname\> system-view
 
-[\[Sysname\] vxlan udp-port 6666]{lang="EN-US"}
-:::
-
-::: {#-216238939 .myid}
-[]{#_Toc404798672}[]{#struct_0_x1539_x1935_x600859007}[]{#_Toc375835850}
+Sysname vxlan udp-port 6666
 
 **VXLAN \-- VXLAN基础配置命令 \-- xconnect vsi**
 
 ------------------------------------------------------------------------
 
-[**[xconnect vsi]{lang="EN-US"}**]{#struct_0_x1539_x1935_2118257496}[命令用来将]{style="font-family:宋体"}[AC]{lang="NL-BE"}[与]{style="font-family:宋体"}[VSI]{lang="EN-US"}[关联。]{style="font-family:宋体"}
+**[xconnect vsi**]命令用来将AC与VSI关联。
 
-[**[undo]{lang="EN-US"}**[ **xconnect vsi**]{lang="EN-US"}]{#struct_0_x1539_x1935_x395743994}[命令用来取消]{style="font-family:宋体"}[AC]{lang="EN-US"}[与]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的关联。]{style="font-family:宋体"}
+**[undo** **xconnect vsi**]命令用来取消AC与VSI的关联。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_823445632}
+【命令】
 
-[**[xconnect vsi ]{lang="EN-US"}***[vsi-name ]{lang="EN-US"}*[\[ **access-mode** { **ethernet** \| **vlan** } \]]{lang="EN-US"}]{#struct_0_x1539_x1935_1652901128}
+**[xconnect vsi ***vsi-name *[[ **access-mode** { **ethernet** \| **vlan** } ]]]
 
-[**[undo xconnect vsi]{lang="EN-US"}**]{#struct_0_x1539_x1935_x356274352}
+**[undo xconnect vsi**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1038163830}
+【缺省情况】
 
-[[AC]{lang="EN-US"}]{#struct_0_x1539_x1935_1827899798}[没有]{style="font-family:宋体"}[与]{style="font-family:宋体"}[VSI]{lang="EN-US"}[关联。]{style="font-family:宋体"}
+AC没有与VSI关联。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_877612114}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1539_x1935_x320808425}[以太网服务实例视图]{style="font-family:宋体"}
+接口视图/以太网服务实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1588418890}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x839392277}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_430820207}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x600793471}
+【参数】
 
-[*[vsi-name]{lang="EN-US"}*]{#struct_0_x1539_x1935_x189432598}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[vsi-name*]：VSI的名称，为1～31个字符的字符串，区分大小写。
 
-[**[access-mode]{lang="EN-US"}**]{#struct_0_x1539_x1935_x284271685}[：指定]{style="font-family:宋体"}[接入]{style="font-family:宋体"}[模式。当关联]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[AC]{lang="EN-US"}[为三层以太网子接口、]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口、以太网服务实例时，接入模式缺省为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[；其他情况下，接入模式缺省为]{style="font-family:宋体"}[Ethernet]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[access-mode**]：指定接入模式。当关联VSI的AC为三层以太网子接口、VLAN接口、以太网服务实例时，接入模式缺省为VLAN；其他情况下，接入模式缺省为Ethernet。
 
-[**[ethernet]{lang="EN-US"}**]{#struct_0_x1539_x1935_1211807963}[：指定]{style="font-family:宋体"}[接入模式]{style="font-family:宋体"}[为]{style="font-family:宋体"}[Ethernet]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[ethernet**]：指定接入模式为Ethernet。
 
-[**[vlan]{lang="EN-US"}**]{#struct_0_x1539_x1935_260733118}[：指定]{style="font-family:宋体"}[接入模式]{style="font-family:宋体"}[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vlan**]：指定接入模式为VLAN。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1007258472}
+【使用指导】
 
-[[在接口视图下执行本命令后，从接口接收到的报文将通过查找关联]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_622905605}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表进行转发；在某个接口的以太网服务实例视图下执行本命令后，从该接口接收到的、符合以太网服务实例报文匹配规则的报文，将通过查找关联]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表进行转发。]{style="font-family:宋体"}
+在接口视图下执行本命令后，从接口接收到的报文将通过查找关联VSI的MAC地址表进行转发；在某个接口的以太网服务实例视图下执行本命令后，从该接口接收到的、符合以太网服务实例报文匹配规则的报文，将通过查找关联VSI的MAC地址表进行转发。
 
-[[接入模式分为以下两种：]{style="font-family:宋体"}]{#struct_0_x1539_x1935_42478882}
+接入模式分为以下两种：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_43833414}[接入模式：从本地站点接收到的、发送给本地站点的以太网帧必须带有]{style="font-family:宋体"}[VLAN tag]{lang="EN-US"}[。]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[从本地站点接收到以太网帧后，删除该帧的所有]{style="font-family:宋体"}[VLAN tag]{lang="EN-US"}[，再转发该数据帧；]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[发送以太网帧到本地站点时，为其添加]{style="font-family:宋体"}[VLAN tag]{lang="EN-US"}[。采用该模式时，]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[不会传递]{style="font-family:宋体"}[VLAN tag]{lang="EN-US"}[信息，不同站点可以独立地规划自己的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，不同站点的不同]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[之间可以互通。]{style="font-family:宋体"}
+·VLAN接入模式：从本地站点接收到的、发送给本地站点的以太网帧必须带有VLAN tag。VTEP从本地站点接收到以太网帧后，删除该帧的所有VLAN tag，再转发该数据帧；VTEP发送以太网帧到本地站点时，为其添加VLAN tag。采用该模式时，VTEP不会传递VLAN tag信息，不同站点可以独立地规划自己的VLAN，不同站点的不同VLAN之间可以互通。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Ethernet]{lang="EN-US"}]{#struct_0_x1539_x1935_1846270894}[接入模式：]{lang="EN-US" style="font-family:宋体"}[从本地站点接收到的、发送给本地站点的以太网帧可以携带]{style="font-family:宋体"}[VLAN tag]{lang="EN-US"}[，也可以不携带]{style="font-family:宋体"}[VLAN tag]{lang="EN-US"}[。]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[从本地站点接收到以太网帧后，保持该帧的]{style="font-family:宋体"}[VLAN tag]{lang="EN-US"}[信息不变，转发该数据帧；]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[发送以太网帧到本地站点时，不会为其添加]{style="font-family:宋体"}[VLAN tag]{lang="EN-US"}[。采用该模式时，]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[会在不同站点间传递]{style="font-family:宋体"}[VLAN tag]{lang="EN-US"}[信息，不同站点的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[需要统一规划，否则无法互通。]{style="font-family:宋体"}
+·Ethernet接入模式：从本地站点接收到的、发送给本地站点的以太网帧可以携带VLAN tag，也可以不携带VLAN tag。VTEP从本地站点接收到以太网帧后，保持该帧的VLAN tag信息不变，转发该数据帧；VTEP发送以太网帧到本地站点时，不会为其添加VLAN tag。采用该模式时，VTEP会在不同站点间传递VLAN tag信息，不同站点的VLAN需要统一规划，否则无法互通。
 
-[[需要注意的是，在以太网服务实例下配置该命令前，必须先配置]{style="font-family:宋体"}**[encapsulation]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1345436657}[命令]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+需要注意的是，在以太网服务实例下配置该命令前，必须先配置**encapsulation**命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1636488311}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{style="font-family:宋体"}]{#struct_0_x1539_x1935_270406129}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1682541578}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[下关联名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1下关联名为vpn1的VSI。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_x1295677812}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname vsi vpn1
 
-[\[Sysname-vsi-vpn1\] quit]{lang="EN-US"}
+Sysname-vsi-vpn1 quit
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] xconnect vsi vpn1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 xconnect vsi vpn1
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{style="font-family:宋体"}]{#struct_0_x1539_x1935_222552769}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1545803393}[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[下采用以太网服务实例]{style="font-family:宋体"}[200]{lang="EN-US"}[来匹配外层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[为]{style="font-family:宋体"}[200]{lang="EN-US"}[的报文，将该以太网服务实例与名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[关联。]{style="font-family:宋体"}
+\# 接口GigabitEthernet1/0/1下采用以太网服务实例200来匹配外层VLAN为200的报文，将该以太网服务实例与名为vpn1的VSI关联。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_x600990079}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname vsi vpn1
 
-[\[Sysname-vsi-vpn1\] quit]{lang="EN-US"}
+Sysname-vsi-vpn1 quit
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] service-instance 200]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 service-instance 200
 
-[\[Sysname-GigabitEthernet1/0/1-srv200\] encapsulation s-vid 200]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1-srv200 encapsulation s-vid 200
 
-[\[Sysname-GigabitEthernet1/0/1-srv200\] xconnect vsi vpn1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1-srv200 xconnect vsi vpn1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x991366717}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn interface]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1474621701}
+·**display l2vpn interface**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn service-instance]{lang="EN-US"}**]{#struct_0_x1539_x1935_582980932}
+·**display l2vpn service-instance**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[encapsulation]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1309918487}
+·**encapsulation**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vsi]{lang="EN-US"}**]{#struct_0_x1539_x1935_1089971405}
-:::
-
-::::: {#-793080710 .myid}
-[]{#_Toc404798674}[]{#struct_0_x1539_x1935_1496365899}[]{#_Toc393878978}[]{#_Toc383786751}[]{#_Toc383097743}[]{#_Toc378325573}
+·**vsi**
 
 **VXLAN \-- ENDP配置命令 \-- display vxlan neighbor-discovery client member**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VXLAN命令.files/image001.png){#图片 5 width="63" height="25"}]{lang="EN-US"}]{#struct_0_x1539_x1935_1901704858}
-:::
+![说明](VXLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1539_x1935_x842286268}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[display vxlan neighbor-discovery client member**]命令用来在ENDC上显示ENDC学到的邻居信息。
 
-[**[display vxlan neighbor-discovery client member]{lang="EN-US"}**]{#struct_0_x1539_x1935_858805508}[命令用来在]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[上显示]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[学到的邻居信息。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x842286269}
+**[display vxlan neighbor-discovery client member**[ [ **interface** **tunnel** *interface-number* \| **local** *local-ip* ]]｜ **remote**[ *client-ip* \| **server** *server-ip* ]]
 
-[**[display vxlan neighbor-discovery client member]{lang="EN-US"}**[ \[ **interface** **tunnel** *interface-number* \| **local** *local-ip* ]{lang="EN-US"}]{#struct_0_x1539_x1935_858739972}[｜]{style="font-family:宋体"} **[remote]{lang="EN-US"}**[ *client-ip* \| **server** *server-ip* \]]{lang="EN-US"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x842286266}
+任意视图
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_859460868}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x918958797}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x842286267}
+network-operator
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_859395332}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x842286264}
+mdc-operator
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_859591940}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1811306985}
+**[interface tunnel*** interface-number*]：显示通过指定NVE隧道接口学到的邻居信息。*interface-number*为Tunnel接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[**[interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*]{#struct_0_x1539_x1935_x842286265}[：显示通过指定]{style="font-family:宋体"}[NVE]{lang="EN-US"}[隧道接口学到的邻居信息。]{style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[为]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[local ***local-ip*]：显示通过源端地址为指定IPv4地址的NVE隧道接口学到的邻居信息。*local-ip*表示NVE隧道接口的源端地址，即本地ENDC的IPv4地址。
 
-[**[local ]{lang="EN-US"}***[local-ip]{lang="EN-US"}*]{#struct_0_x1539_x1935_x842286262}[：显示通过源端地址为指定]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址的]{style="font-family:宋体"}[NVE]{lang="EN-US"}[隧道接口学到的邻居信息。]{style="font-family:宋体"}*[local-ip]{lang="EN-US"}*[表示]{style="font-family:宋体"}[NVE]{lang="EN-US"}[隧道接口的源端地址，即本地]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[remote ***client-ip*]：显示设备学到的指定邻居ENDC的信息。*client-ip*表示邻居ENDC的IPv4地址。
 
-[**[remote ]{lang="EN-US"}***[client-ip]{lang="EN-US"}*]{#struct_0_x1539_x1935_x842286263}[：显示设备学到的指定邻居]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的信息。]{style="font-family:宋体"}*[client-ip]{lang="EN-US"}*[表示邻居]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[server ***server-ip*]：显示通过指定ENDS学到的邻居信息。*server-ip*表示ENDS的IPv4地址。
 
-[**[server ]{lang="EN-US"}***[server-ip]{lang="EN-US"}*]{#struct_0_x1539_x1935_859133188}[：显示通过指定]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[学到的邻居信息。]{style="font-family:宋体"}*[server-ip]{lang="EN-US"}*[表示]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x842286260}
+通过本命令可以查看ENDC学到的邻居信息，包括邻居的IPv4地址、桥MAC地址、创建时间、老化时间、邻居之间的VXLAN隧道状态等信息。
 
-[[通过本命令可以查看]{style="font-family:宋体"}[ENDC]{lang="EN-US"}]{#struct_0_x1539_x1935_859329796}[学到的邻居信息，包括邻居的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址、桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址、创建时间、老化时间、邻居之间的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道状态等信息。]{style="font-family:宋体"}
+如果不指定任何参数，将显示ENDC学到的所有邻居信息。
 
-[[如果不指定任何参数，将显示]{style="font-family:宋体"}[ENDC]{lang="EN-US"}]{#struct_0_x1539_x1935_x842286261}[学到的所有邻居信息。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1651590332}
+\# 显示ENDC学到的所有IPv4邻居信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x1649427642}[显示]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[学到的所有]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[邻居信息。]{style="font-family:宋体"}
+\<Sysname\> display vxlan neighbor-discovery client member
 
-[[\<Sysname\> display vxlan neighbor-discovery client member]{lang="EN-US"}]{#struct_0_x1539_x1935_x1649427641}
+Interface: Tunnel0    Network ID: 1
 
-[Interface: Tunnel0    Network ID: 1]{lang="EN-US"}
+Local Address: 20.0.0.2
 
-[Local Address: 20.0.0.2]{lang="EN-US"}
+Server Address: 20.0.1.1
 
-[Server Address: 20.0.1.1]{lang="EN-US"}
+Neighbor        System ID         Created Time           Expire    Status
 
-[Neighbor        System ID         Created Time           Expire    Status]{lang="EN-US"}
+20.0.2.1        000F-0000-0A3E    2011/01/01 12:12:12    13        Up
 
-[20.0.2.1        000F-0000-0A3E    2011/01/01 12:12:12    13        Up]{lang="EN-US"}
+20.0.3.1        000F-0000-0A3F    2011/01/01 12:12:12    12        Up
 
-[20.0.3.1        000F-0000-0A3F    2011/01/01 12:12:12    12        Up]{lang="EN-US"}
+Interface: Tunnel0    Network ID: 1
 
-[ ]{lang="EN-US"}
+Local Address: 20.0.0.2
 
-[Interface: Tunnel0    Network ID: 1]{lang="EN-US"}
+Server Address: 20.0.1.2
 
-[Local Address: 20.0.0.2]{lang="EN-US"}
+Neighbor        System ID         Created Time           Expire    Status
 
-[Server Address: 20.0.1.2]{lang="EN-US"}
+20.0.2.1        000F-0000-0A3E    2011/01/01 12:12:12    25        Up
 
-[Neighbor        System ID         Created Time           Expire    Status]{lang="EN-US"}
+20.0.3.1        000F-0000-0A3F    2011/01/01 12:12:12    19        Up
 
-[20.0.2.1        000F-0000-0A3E    2011/01/01 12:12:12    25        Up]{lang="EN-US"}
+Interface: Tunnel1    Network ID: 2
 
-[20.0.3.1        000F-0000-0A3F    2011/01/01 12:12:12    19        Up]{lang="EN-US"}
+Local Address: 21.0.0.1
 
-[ ]{lang="EN-US"}
+Server Address: 21.0.1.2
 
-[Interface: Tunnel1    Network ID: 2]{lang="EN-US"}
+Neighbor        System ID         Created Time           Expire    Status
 
-[Local Address: 21.0.0.1]{lang="EN-US"}
+21.0.2.1        000F-0000-0A3E    2011/01/01 12:12:12    25        Up
 
-[Server Address: 21.0.1.2]{lang="EN-US"}
+21.0.3.1        000F-0000-0A3F    2011/01/01 12:12:12    19        Down
 
-[Neighbor        System ID         Created Time           Expire    Status]{lang="EN-US"}
+Interface: Tunnel2    Network ID: 3
 
-[21.0.2.1        000F-0000-0A3E    2011/01/01 12:12:12    25        Up]{lang="EN-US"}
+Local Address: 21.0.0.2
 
-[21.0.3.1        000F-0000-0A3F    2011/01/01 12:12:12    19        Down]{lang="EN-US"}
+Server Address: NA
 
-[ ]{lang="EN-US"}
+Neighbor        System ID         Created Time           Expire    Status
 
-[Interface: Tunnel2    Network ID: 3]{lang="EN-US"}
+21.0.2.1        NA                2011/01/01 12:12:12    25        Up
 
-[Local Address: 21.0.0.2]{lang="EN-US"}
+21.0.3.1        NA                2011/01/01 12:12:12    19        Up
 
-[Server Address: NA]{lang="EN-US"}
+表1-8 display vxlan neighbor-discovery client member命令显示信息描述表
 
-[Neighbor        System ID         Created Time           Expire    Status]{lang="EN-US"}
+字段
 
-[21.0.2.1        NA                2011/01/01 12:12:12    25        Up]{lang="EN-US"}
+描述
 
-[21.0.3.1        NA                2011/01/01 12:12:12    19        Up]{lang="EN-US"}
+Interface
 
-[[表1-8 ]{lang="EN-US"}[display vxlan neighbor-discovery client member]{lang="EN-US"}]{#struct_0_x1539_x1935_x1649427638}[命令显示信息描述表]{style="font-family:黑体"}
+启动ENDC功能的接口名称
 
-[]{#table_struct_0_1469309501}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1649427639}
-:::::
+Network ID
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1649427636}
+隧道的Network ID
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1539_x1935_306887492}
+Local Address
 
-[[启动]{style="font-family:宋体"}[ENDC]{lang="EN-US"}]{#struct_0_x1539_x1935_306887491}[功能的接口名称]{style="font-family:宋体"}
+NVE隧道接口的源端地址
 
-[[Network ID]{lang="EN-US"}]{#struct_0_x1539_x1935_306887493}
+Server Address
 
-[[隧道的]{style="font-family:宋体"}[Network ID]{lang="EN-US"}]{#struct_0_x1539_x1935_306887496}
+ENDS的IPv4地址，NA表示ENDS未知
 
-[[Local Address]{lang="EN-US"}]{#struct_0_x1539_x1935_306887498}
+Neighbor
 
-[[NVE]{lang="EN-US"}]{#struct_0_x1539_x1935_306887500}[隧道接口的源端地址]{style="font-family:宋体"}
+通过ENDS学到的邻居IPv4地址
 
-[[Server Address]{lang="EN-US"}]{#struct_0_x1539_x1935_1891679044}
+System ID
 
-[[ENDS]{lang="EN-US"}]{#struct_0_x1539_x1935_1891679043}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址，]{style="font-family:宋体"}[NA]{lang="EN-US"}[表示]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[未知]{style="font-family:宋体"}
+邻居的桥MAC地址，NA表示桥MAC地址未知
 
-[[Neighbor]{lang="EN-US"}]{#struct_0_x1539_x1935_1891679045}
+Created Time
 
-[[通过]{style="font-family:宋体"}[ENDS]{lang="EN-US"}]{#struct_0_x1539_x1935_1891679048}[学到的邻居]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址]{style="font-family:宋体"}
+邻居创建的时间
 
-[[System ID]{lang="EN-US"}]{#struct_0_x1539_x1935_1891679050}
+Expire
 
-[[邻居的桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1539_x1935_1891679052}[地址，]{style="font-family:宋体"}[NA]{lang="EN-US"}[表示桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址未知]{style="font-family:宋体"}
+邻居的老化时间，单位为秒
 
-[[Created Time]{lang="EN-US"}]{#struct_0_x1539_x1935_1891679051}
+Status
 
-[[邻居创建的时间]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x446973117}
+与邻居之间VXLAN 隧道的状态：
 
-[[Expire]{lang="EN-US"}]{#struct_0_x1539_x1935_x446973115}
+·Up：表示可以通过VXLAN隧道进行传输
 
-[[邻居的老化时间，单位为秒]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x446973112}
+·Down：表示不可以通过VXLAN隧道进行传输
 
-[[Status]{lang="EN-US"}]{#struct_0_x1539_x1935_x446973110}
-
-[[与邻居之间]{style="font-family:宋体"}[VXLAN ]{lang="EN-US"}]{#struct_0_x1539_x1935_x446973108}[隧道的状态：]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Up]{lang="EN-US"}]{#struct_0_x1539_x1935_x446973109}[：表示可以通过]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道进行传输]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Down]{lang="EN-US"}]{#struct_0_x1539_x1935_1509342019}[：表示不可以通过]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道进行传输]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NA]{lang="EN-US"}]{#struct_0_x1539_x1935_1509342021}[：表示尚未创建]{lang="EN-US" style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道]{lang="EN-US" style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::::: {#1436536759 .myid}
-[]{#_Toc404798675}[]{#struct_0_x1539_x1935_1509342024}[]{#_Toc393878979}[]{#_Toc383786752}[]{#_Toc383097744}
+·NA：表示尚未创建VXLAN隧道
 
 **VXLAN \-- ENDP配置命令 \-- display vxlan neighbor-discovery client statistics**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VXLAN命令.files/image001.png){#图片 6 width="63" height="25"}]{lang="EN-US"}]{#struct_0_x1539_x1935_x9159980}
-:::
+![说明](VXLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1539_x1935_1509342023}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[display vxlan neighbor-discovery client statistics**]命令用来在ENDC上显示ENDC的统计信息。
 
-[**[display vxlan neighbor-discovery client statistics]{lang="EN-US"}**]{#struct_0_x1539_x1935_x9487660}[命令用来在]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[上显示]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1509342026}
+**[display vxlan neighbor-discovery client statistics interface tunnel*** interface-number*]
 
-[**[display vxlan neighbor-discovery client statistics interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*]{#struct_0_x1539_x1935_x9291052}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1509342025}
+任意视图
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x9094444}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1509342028}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x9946412}
+network-operator
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_1509342027}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x9225516}
+mdc-operator
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_x829310140}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x479198981}
+**[interface tunnel*** interface-number*]：显示指定NVE隧道接口对应的ENDC的统计信息。*interface-number*为Tunnel接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[**[interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*]{#struct_0_x1539_x1935_626679068}[：显示指定]{style="font-family:宋体"}[NVE]{lang="EN-US"}[隧道接口对应的]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[为]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x829310141}
+通过本命令可以查看开启ENDC功能后，接口收到和发送ENDP报文的统计信息。
 
-[[通过本命令可以查看开启]{style="font-family:宋体"}[ENDC]{lang="EN-US"}]{#struct_0_x1539_x1935_x479133445}[功能后，接口收到和发送]{style="font-family:宋体"}[ENDP]{lang="EN-US"}[报文的统计信息。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x829310138}
+\# 显示NVE隧道接口Tunnel0对应的ENDC的统计信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x478674694}[显示]{style="font-family:宋体"}[NVE]{lang="EN-US"}[隧道接口]{style="font-family:宋体"}[Tunnel0]{lang="EN-US"}[对应的]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+\<Sysname\> display vxlan neighbor-discovery client statistics interface tunnel 0
 
-[[\<Sysname\> display vxlan neighbor-discovery client statistics interface tunnel 0]{lang="EN-US"}]{#struct_0_x1539_x1935_x829310137}
+Server Address: 10.0.0.1
 
-[Server Address: 10.0.0.1]{lang="EN-US"}
+Received packets:
 
-[Received packets:]{lang="EN-US"}
+  Reply:        170              Error:      1
 
-[  Reply:        170              Error:      1]{lang="EN-US"}
+Sent packets:
 
-[ ]{lang="EN-US"}
+  Register:     170              Purge:      0
 
-[Sent packets:]{lang="EN-US"}
+Server Address: 10.0.0.2
 
-[  Register:     170              Purge:      0]{lang="EN-US"}
+Received packets:
 
-[ ]{lang="EN-US"}
+  Reply:        99               Error:      1
 
-[Server Address: 10.0.0.2]{lang="EN-US"}
+Sent packets:
 
-[Received packets:]{lang="EN-US"}
+  Register:     100              Purge:      0
 
-[  Reply:        99               Error:      1]{lang="EN-US"}
+表1-9 display vxlan neighbor-discovery client statistics命令显示信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[Sent packets:]{lang="EN-US"}
+描述
 
-[  Register:     100              Purge:      0]{lang="EN-US"}
+Server Address
 
-[[表1-9 ]{lang="EN-US"}[display vxlan neighbor-discovery client statistics]{lang="EN-US"}]{#struct_0_x1539_x1935_x479264518}[命令显示信息描述表]{style="font-family:黑体"}
+ENDC对应的ENDS的IP地址
 
-[]{#table_struct_0_1774119997}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x829310135}
-:::::
+Received packets
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x829310132}
+ENDC收到的报文统计信息：
 
-[[Server Address]{lang="EN-US"}]{#struct_0_x1539_x1935_x1638614204}
+·Reply：表示注册应答报文
 
-[[ENDC]{lang="EN-US"}]{#struct_0_x1539_x1935_x1638614202}[对应的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+·Error：表示错误指示报文
 
-[[Received packets]{lang="EN-US"}]{#struct_0_x1539_x1935_x1638614200}
+Sent packets
 
-[[ENDC]{lang="EN-US"}]{#struct_0_x1539_x1935_x1638614201}[收到的报文统计信息：]{style="font-family:宋体"}
+ENDC发送的报文统计信息：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Reply]{lang="EN-US"}]{#struct_0_x1539_x1935_x1638614199}[：表示注册应答报文]{style="font-family:宋体"}
+·Register：表示注册报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Error]{lang="EN-US"}]{#struct_0_x1539_x1935_1893841736}[：表示错误指示报文]{lang="EN-US" style="font-family:宋体"}
-
-[[Sent packets]{lang="EN-US"}]{#struct_0_x1539_x1935_1893841738}
-
-[[ENDC]{lang="EN-US"}]{#struct_0_x1539_x1935_1893841740}[发送的报文统计信息：]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Register]{lang="EN-US"}]{#struct_0_x1539_x1935_x444810428}[：表示注册报文]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Purge]{lang="EN-US"}]{#struct_0_x1539_x1935_x444810429}[：表示注销报文]{lang="EN-US" style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::::: {#661069788 .myid}
-[]{#_Toc404798676}[]{#struct_0_x1539_x1935_x97840684}[]{#_Toc393878980}[]{#_Toc383786753}[]{#_Toc383097745}[]{#_Toc378325575}[]{#_Toc367864373}
+·Purge：表示注销报文
 
 **VXLAN \-- ENDP配置命令 \-- display vxlan neighbor-discovery client summary**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VXLAN命令.files/image001.png){#图片 7 width="63" height="25"}]{lang="EN-US"}]{#struct_0_x1539_x1935_x444810426}
-:::
+![说明](VXLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1539_x1935_x96988716}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[display vxlan neighbor-discovery client summary**]命令用来在ENDC上显示ENDC的运行信息。
 
-[**[display vxlan neighbor-discovery client summary]{lang="EN-US"}**]{#struct_0_x1539_x1935_x444810427}[命令用来在]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[上显示]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的运行信息。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x96923180}
+**[display vxlan neighbor-discovery client summary**]
 
-[**[display vxlan neighbor-discovery client summary]{lang="EN-US"}**]{#struct_0_x1539_x1935_1047237949}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x444810424}
+任意视图
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x97119788}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_229656827}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x444810425}
+network-operator
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_x97054252}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x1366496364}
+mdc-operator
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_x444810422}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x97250860}
+通过本命令可以查看ENDC的运行信息，包括ENDC的配置信息、ENDC与ENDS的连接状态。
 
-[[通过本命令可以查看]{style="font-family:宋体"}[ENDC]{lang="EN-US"}]{#struct_0_x1539_x1935_x444810423}[的运行信息，包括]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的配置信息、]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[与]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的连接状态。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x97185324}
+\# 显示ENDC的运行信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x210208870}[显示]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的运行信息。]{style="font-family:宋体"}
+\<Sysname\> display vxlan neighbor-discovery client summary
 
-[[\<Sysname\> display vxlan neighbor-discovery client summary]{lang="EN-US"}]{#struct_0_x1539_x1935_x444810420}
+                         Status: I-Init  E-Establish  P-Probe
 
-[                         Status: I-Init  E-Establish  P-Probe]{lang="EN-US"}
+Interface    Local Address   Server Address  Network ID  Reg  Auth      Status
 
-[Interface    Local Address   Server Address  Network ID  Reg  Auth      Status]{lang="EN-US"}
+Tunnel0      20.0.0.2        20.0.0.1        1           15   enabled   E
 
-[Tunnel0      20.0.0.2        20.0.0.1        1           15   enabled   E]{lang="EN-US"}
+Tunnel0      20.0.0.2        20.0.0.3        1           15   enabled   P
 
-[Tunnel0      20.0.0.2        20.0.0.3        1           15   enabled   P]{lang="EN-US"}
+Tunnel1      21.0.0.2        21.0.0.1        2           15   disabled  P
 
-[Tunnel1      21.0.0.2        21.0.0.1        2           15   disabled  P]{lang="EN-US"}
+表1-10 display vxlan neighbor-discovery client summary命令显示信息描述表
 
-[[表1-10 ]{lang="EN-US"}[display vxlan neighbor-discovery client summary]{lang="EN-US"}]{#struct_0_x1539_x1935_x444810421}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1788445446}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1511504708}
-:::::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1511504710}
+Interface
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1539_x1935_1511504709}
+启动ENDC功能的接口名称
 
-[[启动]{style="font-family:宋体"}[ENDC]{lang="EN-US"}]{#struct_0_x1539_x1935_1511504712}[功能的接口名称]{style="font-family:宋体"}
+Local Address
 
-[[Local Address]{lang="EN-US"}]{#struct_0_x1539_x1935_1511504714}
+本地NVE隧道接口的源端地址，NA表示未配置
 
-[[本地]{style="font-family:宋体"}[NVE]{lang="EN-US"}]{#struct_0_x1539_x1935_1511504716}[隧道接口的源端地址，]{style="font-family:宋体"}[NA]{lang="EN-US"}[表示未配置]{style="font-family:宋体"}
+Server Address
 
-[[Server Address]{lang="EN-US"}]{#struct_0_x1539_x1935_1511504715}
+ENDS的IPv4地址
 
-[[ENDS]{lang="EN-US"}]{#struct_0_x1539_x1935_x827147453}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址]{style="font-family:宋体"}
+Network ID
 
-[[Network ID]{lang="EN-US"}]{#struct_0_x1539_x1935_x827147451}
+隧道的Network ID，NA表示未配置
 
-[[隧道的]{style="font-family:宋体"}[Network ID]{lang="EN-US"}]{#struct_0_x1539_x1935_x827147448}[，]{style="font-family:宋体"}[NA]{lang="EN-US"}[表示未配置]{style="font-family:宋体"}
+Reg
 
-[[Reg]{lang="EN-US"}]{#struct_0_x1539_x1935_x827147449}
+注册时间间隔，单位为秒
 
-[[注册时间间隔，单位为秒]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x827147446}
+Auth
 
-[[Auth]{lang="EN-US"}]{#struct_0_x1539_x1935_x827147444}
+是否开启认证功能：
 
-[[是否开启认证功能：]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1636451516}
+·enabled：表示已开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[enabled]{lang="EN-US"}]{#struct_0_x1539_x1935_x1636451517}[：表示已开启]{lang="EN-US" style="font-family:宋体"}
+·disabled：表示未开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[disabled]{lang="EN-US"}]{#struct_0_x1539_x1935_x1636451514}[：表示未开启]{lang="EN-US" style="font-family:宋体"}
+Status
 
-[[Status]{lang="EN-US"}]{#struct_0_x1539_x1935_x1636451513}
+ENDC与ENDS的连接状态：
 
-[[ENDC]{lang="EN-US"}]{#struct_0_x1539_x1935_x1636451510}[与]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的连接状态：]{style="font-family:宋体"}
+·I：表示初始状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[I]{lang="EN-US"}]{#struct_0_x1539_x1935_x1636451511}[：表示初始状态]{lang="EN-US" style="font-family:宋体"}
+·E：表示已建立连接
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[E]{lang="EN-US"}]{#struct_0_x1539_x1935_x1636451509}[：表示已建立连接]{lang="EN-US" style="font-family:宋体"}
+·P：表示未建立连接正在探测
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[P]{lang="EN-US"}]{#struct_0_x1539_x1935_319863619}[：表示未建立连接正在探测]{style="font-family:宋体"}
+【相关命令】
 
-[ ]{lang="EN-US"}
+·**vxlan neighbor-discovery authentication**
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_319863622}
+·**vxlan neighbor-discovery client enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vxlan neighbor-discovery authentication]{lang="EN-US"}**]{#struct_0_x1539_x1935_988887461}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vxlan neighbor-discovery client enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_319863621}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vxlan neighbor-discovery client register-interval]{lang="EN-US"}**]{#struct_0_x1539_x1935_988887458}
-
-::::: {#212974923 .myid}
-[]{#_Toc404798677}[]{#struct_0_x1539_x1935_319863624}[]{#_Toc393878981}[]{#_Toc383786754}[]{#_Toc383097746}[]{#_Toc378325576}[]{#_Toc367864374}
+·**vxlan neighbor-discovery client register-interval**
 
 **VXLAN \-- ENDP配置命令 \-- display vxlan neighbor-discovery server member**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VXLAN命令.files/image001.png){#图片 8 width="63" height="25"}]{lang="EN-US"}]{#struct_0_x1539_x1935_988887463}
-:::
+![说明](VXLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1539_x1935_319863623}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[display vxlan neighbor-discovery server member**]命令用来在ENDS上显示ENDS学到的成员信息。
 
-[**[display vxlan neighbor-discovery server member]{lang="EN-US"}**]{#struct_0_x1539_x1935_319863626}[命令用来在]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[上显示]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[学到的成员信息。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_988887465}
+**[display vxlan neighbor-discovery server member**[ [ **interface** **tunnel** *interface-number* \| **local** *local-ip* \| **remote** *client-ip* ]]]
 
-[**[display vxlan neighbor-discovery server member]{lang="EN-US"}**[ \[ **interface** **tunnel** *interface-number* \| **local** *local-ip* \| **remote** *client-ip* \]]{lang="EN-US"}]{#struct_0_x1539_x1935_319863625}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_319863628}
+任意视图
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_988887451}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_319863627}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1887353668}
+network-operator
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_213910264}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x1065815701}
+mdc-operator
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_1887353667}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_213844728}
+**[interface tunnel*** interface-number*]：显示通过指定NVE隧道接口学到的成员信息。*interface-number*为Tunnel接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[**[interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*]{#struct_0_x1539_x1935_1887353670}[：显示通过指定]{style="font-family:宋体"}[NVE]{lang="EN-US"}[隧道接口学到的成员信息。]{style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[为]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[local ***local-ip*]：显示指定ENDS学到的成员信息。*local-ip*表示本地ENDS的IPv4地址。
 
-[**[local ]{lang="EN-US"}***[local-ip]{lang="EN-US"}*]{#struct_0_x1539_x1935_213385977}[：显示指定]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[学到的成员信息。]{style="font-family:宋体"}*[local-ip]{lang="EN-US"}*[表示本地]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[remote ***client-ip*]：显示ENDS学到的指定IPv4地址的成员信息。*client-ip*表示ENDC的IPv4地址。
 
-[**[remote ]{lang="EN-US"}***[client-ip]{lang="EN-US"}*]{#struct_0_x1539_x1935_1887353669}[：显示]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[学到的指定]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址的成员信息。]{style="font-family:宋体"}*[client-ip]{lang="EN-US"}*[表示]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_213975800}
+通过本命令可以查看ENDS学到的成员信息，包括成员的IPv4地址、桥MAC地址、创建时间、老化时间等信息。
 
-[[通过本命令可以查看]{style="font-family:宋体"}[ENDS]{lang="EN-US"}]{#struct_0_x1539_x1935_x451298490}[学到的成员信息，包括成员的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址、桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址、创建时间、老化时间等信息。]{style="font-family:宋体"}
+如果不指定任何参数，将显示ENDS学到的所有成员信息。
 
-[[如果不指定任何参数，将显示]{style="font-family:宋体"}[ENDS]{lang="EN-US"}]{#struct_0_x1539_x1935_264607414}[学到的所有成员信息。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x451298491}
+\# 显示ENDS学到的所有IPv4成员信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x451298488}[显示]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[学到的所有]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[成员信息。]{style="font-family:宋体"}
+\<Sysname\> display vxlan neighbor-discovery server member
 
-[[\<Sysname\> display vxlan neighbor-discovery server member]{lang="EN-US"}]{#struct_0_x1539_x1935_x451298487}
+Interface: Tunnel0    Network ID: 1
 
-[Interface: Tunnel0    Network ID: 1]{lang="EN-US"}
+IP Address: 11.0.0.1
 
-[IP Address: 11.0.0.1]{lang="EN-US"}
+Client Address  System ID         Expire    Created Time
 
-[Client Address  System ID         Expire    Created Time]{lang="EN-US"}
+11.0.0.3        000F-0001-0001    25        2011/01/01 00:00:43
 
-[11.0.0.3        000F-0001-0001    25        2011/01/01 00:00:43]{lang="EN-US"}
+11.0.0.4        000F-0001-0002    15        2011/01/01 01:00:46
 
-[11.0.0.4        000F-0001-0002    15        2011/01/01 01:00:46]{lang="EN-US"}
+11.0.0.5        000F-0001-0003    20        2011/01/01 01:02:13
 
-[11.0.0.5        000F-0001-0003    20        2011/01/01 01:02:13]{lang="EN-US"}
+Interface: Tunnel1    Network ID: 2
 
-[ ]{lang="EN-US"}
+IP Address: 11.0.1.2
 
-[Interface: Tunnel1    Network ID: 2]{lang="EN-US"}
+Client Address  System ID         Expire    Created Time
 
-[IP Address: 11.0.1.2]{lang="EN-US"}
+11.0.1.3        000F-0001-0011    19        2011/01/01 00:19:31
 
-[Client Address  System ID         Expire    Created Time]{lang="EN-US"}
+11.0.1.4        000F-0001-0012    30        2011/01/01 02:00:43
 
-[11.0.1.3        000F-0001-0011    19        2011/01/01 00:19:31]{lang="EN-US"}
+11.0.1.5        000F-0001-0013    20        2011/01/01 01:02:13
 
-[11.0.1.4        000F-0001-0012    30        2011/01/01 02:00:43]{lang="EN-US"}
+Interface: Tunnel2    Network ID: 3
 
-[11.0.1.5        000F-0001-0013    20        2011/01/01 01:02:13]{lang="EN-US"}
+IP Address: 12.0.0.1
 
-[ ]{lang="EN-US"}
+Client Address  System ID         Expire    Created Time
 
-[Interface: Tunnel2    Network ID: 3]{lang="EN-US"}
+12.0.0.2        000F-0002-0001    30        2011/01/01 03:20:43
 
-[IP Address: 12.0.0.1]{lang="EN-US"}
+12.0.0.3        000F-0002-0002    37        2011/01/01 03:27:46
 
-[Client Address  System ID         Expire    Created Time]{lang="EN-US"}
+表1-11 display vxlan neighbor-discovery server member命令显示信息描述表
 
-[12.0.0.2        000F-0002-0001    30        2011/01/01 03:20:43]{lang="EN-US"}
+字段
 
-[12.0.0.3        000F-0002-0002    37        2011/01/01 03:27:46]{lang="EN-US"}
+描述
 
-[[表1-11 ]{lang="EN-US"}[display vxlan neighbor-discovery server member]{lang="EN-US"}]{#struct_0_x1539_x1935_265066167}[命令显示信息描述表]{style="font-family:黑体"}
+Interface
 
-[]{#table_struct_0_1802172497}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x451298485}
-:::::
+启动ENDS功能的接口名称
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1505016644}
+Network ID
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1539_x1935_1505016646}
+隧道的Network ID
 
-[[启动]{style="font-family:宋体"}[ENDS]{lang="EN-US"}]{#struct_0_x1539_x1935_1505016645}[功能的接口名称]{style="font-family:宋体"}
+IP Address
 
-[[Network ID]{lang="EN-US"}]{#struct_0_x1539_x1935_1505016647}
+ENDS的IPv4地址
 
-[[隧道的]{style="font-family:宋体"}[Network ID]{lang="EN-US"}]{#struct_0_x1539_x1935_1505016650}
+Client Address
 
-[[IP Address]{lang="EN-US"}]{#struct_0_x1539_x1935_1505016652}
+学到的成员的IPv4地址
 
-[[ENDS]{lang="EN-US"}]{#struct_0_x1539_x1935_x833635516}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址]{style="font-family:宋体"}
+System ID
 
-[[Client Address]{lang="EN-US"}]{#struct_0_x1539_x1935_x833635514}
+学到的成员的桥MAC地址
 
-[[学到的成员的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}]{#struct_0_x1539_x1935_x833635512}[地址]{style="font-family:宋体"}
+Expire
 
-[[System ID]{lang="EN-US"}]{#struct_0_x1539_x1935_x833635510}
+成员的剩余老化时间，单位为秒
 
-[[学到的成员的桥]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1539_x1935_x833635508}[地址]{style="font-family:宋体"}
+Created Time
 
-[[Expire ]{lang="EN-US"}]{#struct_0_x1539_x1935_x1642939580}
-
-[[成员的剩余老化时间，单位为秒]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1642939578}
-
-[[Created Time]{lang="EN-US"}]{#struct_0_x1539_x1935_1507179335}
-
-[[成员的创建时间]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1507179337}
-
-[ ]{lang="EN-US"}
-
-::::: {#-624506768 .myid}
-[]{#_Toc404798678}[]{#struct_0_x1539_x1935_917454142}[]{#_Toc393878982}[]{#_Toc383786755}[]{#_Toc383097747}[]{#_Toc378325577}[]{#_Toc367864375}
+成员的创建时间
 
 **VXLAN \-- ENDP配置命令 \-- display vxlan neighbor-discovery server statistics**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VXLAN命令.files/image001.png){#图片 9 width="63" height="25"}]{lang="EN-US"}]{#struct_0_x1539_x1935_1507179340}
-:::
+![说明](VXLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1539_x1935_917388609}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[display vxlan neighbor-discovery server statistics**]命令用来在ENDS上显示ENDS的统计信息。
 
-[**[display vxlan neighbor-discovery server statistics]{lang="EN-US"}**]{#struct_0_x1539_x1935_1507179339}[命令用来在]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[上显示]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x831472828}
+**[display vxlan neighbor-discovery server statistics interface tunnel*** interface-number*]
 
-[**[display vxlan neighbor-discovery server statistics interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*]{#struct_0_x1539_x1935_1384041419}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x831472829}
+任意视图
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1384106955}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x831472826}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1384172491}
+network-operator
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_x831472827}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1384238027}
+mdc-operator
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_x831472824}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1384303563}
+**[interface tunnel*** interface-number*]：显示指定NVE隧道接口对应的ENDS的统计信息。*interface-number*为Tunnel接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[**[interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*]{#struct_0_x1539_x1935_x831472825}[：显示指定]{style="font-family:宋体"}[NVE]{lang="EN-US"}[隧道接口对应的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[为]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x831472822}
+通过本命令可以查看开启ENDS功能后，接口收到和发送报文的统计信息。
 
-[[通过本命令可以查看开启]{style="font-family:宋体"}[ENDS]{lang="EN-US"}]{#struct_0_x1539_x1935_1384434635}[功能后，接口收到和发送报文的统计信息。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x831472823}
+\# 显示NVE隧道接口Tunnel0对应的ENDS的统计信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1384500171}[显示]{style="font-family:宋体"}[NVE]{lang="EN-US"}[隧道接口]{style="font-family:宋体"}[Tunnel0]{lang="EN-US"}[对应的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+\<Sysname\> display vxlan neighbor-discovery server statistics interface tunnel 0
 
-[[\<Sysname\> display vxlan neighbor-discovery server statistics interface tunnel 0]{lang="EN-US"}]{#struct_0_x1539_x1935_x831472821}
+Received packets:
 
-[Received packets:]{lang="EN-US"}
+  Register:     170              Purge:      13
 
-[  Register:     170              Purge:      13]{lang="EN-US"}
+Sent packets:
 
-[ ]{lang="EN-US"}
+  Reply:        170              Error:      1
 
-[Sent packets:]{lang="EN-US"}
+表1-12 display vxlan neighbor-discovery server statistics命令显示信息描述表
 
-[  Reply:        170              Error:      1]{lang="EN-US"}
+字段
 
-[[表1-12 ]{lang="EN-US"}[display vxlan neighbor-discovery server statistics]{lang="EN-US"}]{#struct_0_x1539_x1935_1384631243}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x1729621808}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1640776893}
-:::::
+Received packets
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1640776890}
+ENDS收到的报文统计信息：
 
-[[Received packets]{lang="EN-US"}]{#struct_0_x1539_x1935_x1640776888}
+·Register：表示注册报文
 
-[[ENDS]{lang="EN-US"}]{#struct_0_x1539_x1935_x1640776889}[收到的报文统计信息：]{style="font-family:宋体"}
+·Purge：表示注销报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Register]{lang="EN-US"}]{#struct_0_x1539_x1935_x1640776887}[：表示注册报文]{lang="EN-US" style="font-family:宋体"}
+Sent packets
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Purge]{lang="EN-US"}]{#struct_0_x1539_x1935_x1640776884}[：表示注销报文]{lang="EN-US" style="font-family:宋体"}
+ENDS发送的报文统计信息：
 
-[[Sent packets]{lang="EN-US"}]{#struct_0_x1539_x1935_1900329801}
+·Reply：表示注册应答报文
 
-[[ENDS]{lang="EN-US"}]{#struct_0_x1539_x1935_1900329804}[发送的报文统计信息：]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Reply]{lang="EN-US"}]{#struct_0_x1539_x1935_x438322364}[：表示注册应答报文]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Error]{lang="EN-US"}]{#struct_0_x1539_x1935_x438322362}[：表示错误指示报文]{lang="EN-US" style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::::: {#1731354522 .myid}
-[]{#_Toc404798679}[]{#struct_0_x1539_x1935_x438322363}[]{#_Toc393878983}[]{#_Toc383786756}[]{#_Toc383097748}[]{#_Toc378325578}[]{#_Toc367864376}
+·Error：表示错误指示报文
 
 **VXLAN \-- ENDP配置命令 \-- display vxlan neighbor-discovery server summary**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VXLAN命令.files/image001.png){#图片 10 width="63" height="25"}]{lang="EN-US"}]{#struct_0_x1539_x1935_412011374}
-:::
+![说明](VXLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1539_x1935_x438322360}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[display vxlan neighbor-discovery server summary**]命令用来在ENDS上显示ENDS的运行信息。
 
-[**[display vxlan neighbor-discovery server summary]{lang="EN-US"}**]{#struct_0_x1539_x1935_x438322361}[命令用来在]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[上显示]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的运行信息。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_411880302}
+**[display vxlan neighbor-discovery server summary**]
 
-[**[display vxlan neighbor-discovery server summary]{lang="EN-US"}**]{#struct_0_x1539_x1935_x438322358}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_412470125}
+任意视图
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x438322359}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_412404589}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x438322356}
+network-operator
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_411814765}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x438322357}
+mdc-operator
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_1517992772}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1517992771}
+通过本命令可以查看ENDS的运行信息，包括ENDS的配置信息、通过该ENDS学习到的ENDC个数。
 
-[[通过本命令可以查看]{style="font-family:宋体"}[ENDS]{lang="EN-US"}]{#struct_0_x1539_x1935_1475484364}[的运行信息，包括]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的配置信息、通过该]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[学习到的]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[个数。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1517992774}
+\# 显示ENDS的运行信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1475287756}[显示]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的运行信息。]{style="font-family:宋体"}
+\<Sysname\> display vxlan neighbor-discovery server summary
 
-[[\<Sysname\> display vxlan neighbor-discovery server summary]{lang="EN-US"}]{#struct_0_x1539_x1935_1517992776}
+Interface      Local Address   Network ID    Auth        Members
 
-[Interface      Local Address   Network ID    Auth        Members]{lang="EN-US"}
+Tunnel0        20.0.0.1        1             enabled     10
 
-[Tunnel0        20.0.0.1        1             enabled     10]{lang="EN-US"}
+Tunnel2        21.0.0.1        2             disabled    20
 
-[Tunnel2        21.0.0.1        2             disabled    20]{lang="EN-US"}
+Tunnel3        22.0.0.1        NA            disabled    0
 
-[Tunnel3        22.0.0.1        NA            disabled    0]{lang="EN-US"}
+表1-13 display vxlan neighbor-discovery server summary命令显示信息描述表
 
-[[表1-13 ]{lang="EN-US"}[display vxlan neighbor-discovery server summary]{lang="EN-US"}]{#struct_0_x1539_x1935_1475418828}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1711774244}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1517992778}
-:::::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1517992780}
+Interface
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1539_x1935_1517992779}
+启动ENDS功能的接口名称
 
-[[启动]{style="font-family:宋体"}[ENDS]{lang="EN-US"}]{#struct_0_x1539_x1935_x820659389}[功能的接口名称]{style="font-family:宋体"}
+Local Address
 
-[[Local Address]{lang="EN-US"}]{#struct_0_x1539_x1935_x820659386}
+接口的源端地址，NA表示未配置
 
-[[接口的源端地址，]{style="font-family:宋体"}[NA]{lang="EN-US"}]{#struct_0_x1539_x1935_x820659384}[表示未配置]{style="font-family:宋体"}
+Network ID
 
-[[Network ID]{lang="EN-US"}]{#struct_0_x1539_x1935_x820659385}
+隧道的Network ID，NA表示未配置
 
-[[隧道的]{style="font-family:宋体"}[Network ID]{lang="EN-US"}]{#struct_0_x1539_x1935_x820659383}[，]{style="font-family:宋体"}[NA]{lang="EN-US"}[表示未配置]{style="font-family:宋体"}
+Auth
 
-[[Auth]{lang="EN-US"}]{#struct_0_x1539_x1935_x820659380}
+是否开启认证功能：
 
-[[是否开启认证功能：]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1629963452}
+·enabled：表示已开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[enabled]{lang="EN-US"}]{#struct_0_x1539_x1935_x1629963453}[：表示已开启]{lang="EN-US" style="font-family:宋体"}
+·disabled：表示未开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[disabled]{lang="EN-US"}]{#struct_0_x1539_x1935_x1629963451}[：表示未开启]{lang="EN-US" style="font-family:宋体"}
+Members
 
-[[Members]{lang="EN-US"}]{#struct_0_x1539_x1935_x1629963446}
+通过该ENDS学习到的ENDC个数
 
-[[通过该]{style="font-family:宋体"}[ENDS]{lang="EN-US"}]{#struct_0_x1539_x1935_x1629963444}[学习到的]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[个数]{style="font-family:宋体"}
+【相关命令】
 
-[ ]{lang="EN-US"}
+·**vxlan neighbor-discovery authentication**
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1629963445}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vxlan neighbor-discovery authentication]{lang="EN-US"}**]{#struct_0_x1539_x1935_284889833}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vxlan neighbor-discovery server enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_326351684}
-
-::: {#-767597346 .myid}
-[]{#_Toc404798680}[]{#struct_0_x1539_x1935_1474692941}[]{#_Toc393878984}[]{#_Toc383786762}[]{#_Toc367864395}
+·**vxlan neighbor-discovery server enable**
 
 **VXLAN \-- ENDP配置命令 \-- network-id**
 
 ------------------------------------------------------------------------
 
-[**[network-id]{lang="EN-US"}**]{#struct_0_x1539_x1935_326351683}[命令用来配置隧道的]{style="font-family:宋体"}[Network ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[network-id**]命令用来配置隧道的Network ID。
 
-[**[undo network-id]{lang="EN-US"}**]{#struct_0_x1539_x1935_1474692948}[命令用来删除隧道的]{style="font-family:宋体"}[Network ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo network-id**]命令用来删除隧道的Network ID。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_326351686}
+【命令】
 
-[**[network-id]{lang="EN-US"}**[ *network-id*]{lang="EN-US"}]{#struct_0_x1539_x1935_326351685}
+**[network-id** *network-id*]
 
-[**[undo network-id]{lang="EN-US"}**]{#struct_0_x1539_x1935_326351688}
+**[undo network-id**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1474692937}
+【缺省情况】
 
-[[没有配置隧道的]{style="font-family:宋体"}[Network ID]{lang="EN-US"}]{#struct_0_x1539_x1935_326351687}[。]{style="font-family:宋体"}
+没有配置隧道的Network ID。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_326351690}
+【视图】
 
-[[NVE]{lang="EN-US"}]{#struct_0_x1539_x1935_326351689}[模式]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口视图]{style="font-family:宋体"}
+NVE模式Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1474692938}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_326351692}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_326351691}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1902492484}
+【参数】
 
-[*[number]{lang="EN-US"}*]{#struct_0_x1539_x1935_1902492483}[：]{style="font-family:宋体"}[Network ID]{lang="EN-US"}[值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[16777215]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[number*]：Network ID值，取值范围为1～16777215。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1902492486}
+【使用指导】
 
-[[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_x1899742664}[通过]{style="font-family:宋体"}[ENDP]{lang="EN-US"}[来自动发现远端]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[。]{style="font-family:宋体"}[ENDP]{lang="EN-US"}[可以划分为多个实例，通过]{style="font-family:宋体"}[Network ID]{lang="EN-US"}[来标识]{style="font-family:宋体"}[ENDP]{lang="EN-US"}[实例。只有属于同一个]{style="font-family:宋体"}[ENDP]{lang="EN-US"}[实例的]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[之间可以互相发现。]{style="font-family:宋体"}
+VXLAN通过ENDP来自动发现远端VTEP。ENDP可以划分为多个实例，通过Network ID来标识ENDP实例。只有属于同一个ENDP实例的VTEP之间可以互相发现。
 
-[[需要注意的是，同一台设备的不同]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}]{#struct_0_x1539_x1935_1902492485}[接口下必须配置不同的]{style="font-family:宋体"}[Network ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+需要注意的是，同一台设备的不同Tunnel接口下必须配置不同的Network ID。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1899939272}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1902492488}[配置]{style="font-family:宋体"}[NVE]{lang="EN-US"}[隧道]{style="font-family:宋体"}[Tunnel0]{lang="EN-US"}[的]{style="font-family:宋体"}[Network ID]{lang="EN-US"}[为]{style="font-family:宋体"}[123]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置NVE隧道Tunnel0的Network ID为123。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_1902492487}
+\<Sysname\> system-view
 
-[\[Sysname\] interface tunnel 0 mode nve]{lang="EN-US"}
+Sysname interface tunnel 0 mode nve
 
-[\[Sysname-Tunnel0\] network-id 123]{lang="EN-US"}
-:::
-
-::::: {#-1472070890 .myid}
-[]{#_Toc404798681}[]{#struct_0_x1539_x1935_x1899808200}[]{#_Toc393878985}[]{#_Toc383786775}[]{#_Toc383097740}
+Sysname-Tunnel0 network-id 123
 
 **VXLAN \-- ENDP配置命令 \-- vxlan neighbor-discovery authentication**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VXLAN命令.files/image001.png){width="63" height="25"}]{lang="EN-US"}]{#struct_0_x1539_x1935_1902492490}
-:::
+![说明](VXLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1539_x1935_1902492489}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[vxlan neighbor-discovery authentication**]命令用来开启ENDP认证功能。
 
-[**[vxlan neighbor-discovery authentication]{lang="EN-US"}**]{#struct_0_x1539_x1935_1902492492}[命令用来开启]{style="font-family:宋体"}[ENDP]{lang="EN-US"}[认证功能。]{style="font-family:宋体"}
+**[undo vxlan neighbor-discovery authentication**]命令用来关闭ENDP认证功能。
 
-[**[undo vxlan neighbor-discovery authentication]{lang="EN-US"}**]{#struct_0_x1539_x1935_1902492491}[命令用来关闭]{style="font-family:宋体"}[ENDP]{lang="EN-US"}[认证功能。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1900201417}
+**[vxlan neighbor-discovery authentication**[ { **cipher** \| **simple** } ]]*password*
 
-[**[vxlan neighbor-discovery authentication]{lang="EN-US"}**[ { **cipher** \| **simple** } ]{lang="EN-US"}]{#struct_0_x1539_x1935_x436159676}*[password]{lang="EN-US"}*
+**[undo vxlan neighbor-discovery authentication**]
 
-[**[undo vxlan neighbor-discovery authentication]{lang="EN-US"}**]{#struct_0_x1539_x1935_x225111480}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x436159677}
+ENDP认证功能处于关闭状态。
 
-[[ENDP]{lang="EN-US"}]{#struct_0_x1539_x1935_x225045944}[认证功能处于关闭状态。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x436159674}
+NVE模式Tunnel接口视图
 
-[[NVE]{lang="EN-US"}]{#struct_0_x1539_x1935_x436159675}[模式]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x225177016}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x436159672}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x436159673}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x436159670}
+**[cipher**]：表示以密文方式设置认证密码。
 
-[**[cipher]{lang="EN-US"}**]{#struct_0_x1539_x1935_x224980408}[：表示以密文方式设置认证密码。]{style="font-family:宋体"}
+**[simple**]：表示以明文方式设置认证密码。
 
-[**[simple]{lang="EN-US"}**]{#struct_0_x1539_x1935_x436159671}[：表示以明文方式设置认证密码。]{style="font-family:宋体"}
+*[password*]：设置的明文认证密码或密文认证密码，区分大小写。明文认证密码为1～24个字符的字符串；密文认证密码为1～65个字符的字符串。
 
-[*[password]{lang="EN-US"}*]{#struct_0_x1539_x1935_x224914872}[：设置的明文认证密码或密文认证密码，区分大小写。明文认证密码为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[24]{lang="EN-US"}[个字符的字符串；密文认证密码为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65]{lang="EN-US"}[个字符的字符串。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x436159668}
+为了安全起见，可以配置ENDP认证功能来防止恶意的节点注册到VXLAN网络。
 
-[[为了安全起见，可以配置]{style="font-family:宋体"}[ENDP]{lang="EN-US"}]{#struct_0_x1539_x1935_x436159669}[认证功能来防止恶意的节点注册到]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[网络。]{style="font-family:宋体"}
+开启ENDP认证功能后，发送ENDP报文的设备会使用配置的密码和MD5算法对报文进行摘要运算，然后把运算结果放到报文的认证字段。对端设备收到ENDP报文后，如果该设备未配置认证功能，则认为报文合法；如果设备配置了认证功能，则利用本端配置的密码和MD5算法对报文进行摘要运算，然后比较运算结果与报文认证字段携带的信息是否一致，如果一致则认为报文合法，如果不一致则认为报文非法。
 
-[[开启]{style="font-family:宋体"}[ENDP]{lang="EN-US"}]{#struct_0_x1539_x1935_1520155460}[认证功能后，发送]{style="font-family:宋体"}[ENDP]{lang="EN-US"}[报文的设备会使用配置的密码和]{style="font-family:宋体"}[MD5]{lang="EN-US"}[算法对报文进行摘要运算，然后把运算结果放到报文的认证字段。对端设备收到]{style="font-family:宋体"}[ENDP]{lang="EN-US"}[报文后，如果该设备未配置认证功能，则认为报文合法；如果设备配置了认证功能，则利用本端配置的密码和]{style="font-family:宋体"}[MD5]{lang="EN-US"}[算法对报文进行摘要运算，然后比较运算结果与报文认证字段携带的信息是否一致，如果一致则认为报文合法，如果不一致则认为报文非法。]{style="font-family:宋体"}
+只有本端与对端设备上都没有配置ENDP认证功能，或者都配置了认证功能且认证密码相同，才能在二者之间成功建立VXLAN隧道。
 
-[[只有本端与对端设备上都没有配置]{style="font-family:宋体"}[ENDP]{lang="EN-US"}]{#struct_0_x1539_x1935_x1656711887}[认证功能，或者都配置了认证功能且认证密码相同，才能在二者之间成功建立]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道。]{style="font-family:宋体"}
+在一个安全的网络中，可以不配置ENDP认证功能。
 
-[[在一个安全的网络中，可以不配置]{style="font-family:宋体"}[ENDP]{lang="EN-US"}]{#struct_0_x1539_x1935_1520155459}[认证功能。]{style="font-family:宋体"}
+需要注意的是：
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1520155462}
+·同一个VXLAN网络中所有的ENDS与ENDC必须配置相同的认证密码。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[同一个]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1681992203}[VXLAN]{lang="EN-US"}[网络中所有的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[与]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[必须配置相同的认证密码。]{style="font-family:宋体"}
+·以明文或密文方式设置的认证密码，均以密文的方式保存在配置文件中。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[以明文或密文方式设置的认证密码，均以密文的方式保存在配置文件中。]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1520155461}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1682188811}
+\# 开启ENDP认证功能，并以明文方式设置认证密码为web-vxlan。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1520155464}[开启]{style="font-family:宋体"}[ENDP]{lang="EN-US"}[认证功能，并以明文方式设置认证密码为]{style="font-family:宋体"}[web-vxlan]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system
 
-[[\<Sysname\> system]{lang="EN-US"}]{#struct_0_x1539_x1935_1520155466}
+Sysname interface tunnel 0 mode nve
 
-[\[Sysname\] interface tunnel 0 mode nve]{lang="EN-US"}
+Sysname-Tunnel0 vxlan neighbor-discovery authentication simple web-vxlan
 
-[\[Sysname-Tunnel0\] vxlan neighbor-discovery authentication simple web-vxlan]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1681730059}
+·**display vxlan neighbor-discovery client summary**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display vxlan neighbor-discovery client summary]{lang="EN-US"}**]{#struct_0_x1539_x1935_1520155465}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display vxlan neighbor-discovery server summary]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1681926667}
-:::::
-
-::::: {#2063828583 .myid}
-[]{#_Toc404798682}[]{#struct_0_x1539_x1935_1520155468}[]{#_Toc393878986}[]{#_Toc383786776}[]{#_Toc383097739}
+·**display vxlan neighbor-discovery server summary**
 
 **VXLAN \-- ENDP配置命令 \-- vxlan neighbor-discovery client enable**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VXLAN命令.files/image001.png){width="63" height="25"}]{lang="EN-US"}]{#struct_0_x1539_x1935_1520155467}
-:::
+![说明](VXLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1539_x1935_x1681795595}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[vxlan neighbor-discovery client enable**]命令用来开启接口的ENDC功能，并指定ENDS地址。
 
-[**[vxlan neighbor-discovery client enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_x818496700}[命令用来开启接口的]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[功能，并指定]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[undo vxlan neighbor-discovery client enable**]命令用来关闭接口的ENDC功能。
 
-[**[undo vxlan neighbor-discovery client enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_738507731}[命令用来关闭接口的]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x818496701}
+**[vxlan neighbor-discovery client enable ***server-ip*]
 
-[**[vxlan neighbor-discovery client enable ]{lang="EN-US"}***[server-ip]{lang="EN-US"}*]{#struct_0_x1539_x1935_738573267}
+**[undo vxlan neighbor-discovery client enable** *server-ip*]
 
-[**[undo vxlan neighbor-discovery client enable]{lang="EN-US"}**[ *server-ip*]{lang="EN-US"}]{#struct_0_x1539_x1935_x818496698}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1600668710}
+ENDC功能处于关闭状态。
 
-[[ENDC]{lang="EN-US"}]{#struct_0_x1539_x1935_x818496699}[功能处于关闭状态。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x818496696}
+NVE模式Tunnel接口视图
 
-[[NVE]{lang="EN-US"}]{#struct_0_x1539_x1935_x818496697}[模式]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1600209958}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x818496694}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x818496695}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x818496692}
+*[server-ip*]：ENDC要连接的ENDS的IP地址。
 
-[*[server-ip]{lang="EN-US"}*]{#struct_0_x1539_x1935_x1600013350}[：]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[要连接的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x818496693}
+为了防止ENDS异常导致ENDC不能加入VXLAN网络，用户可以通过重复执行本命令为每个ENDC指定两个ENDS。ENDC同时向两个ENDS注册和获取ENDC信息。
 
-[[为了防止]{style="font-family:宋体"}[ENDS]{lang="EN-US"}]{#struct_0_x1539_x1935_x1599947814}[异常导致]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[不能加入]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[网络，用户可以通过重复执行本命令为每个]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[指定两个]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[。]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[同时向两个]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[注册和获取]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+需要注意的是，建议为地址相同、Network ID不同的ENDC指定不同的ENDS。
 
-[[需要注意的是，建议为地址相同、]{style="font-family:宋体"}[Network ID]{lang="EN-US"}]{#struct_0_x1539_x1935_x1627800764}[不同的]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[指定不同的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1627800765}
+\# 开启ENDC功能，并指定ENDS地址为11.0.0.1。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1559963816}[开启]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[功能，并指定]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[地址为]{style="font-family:宋体"}[11.0.0.1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system
 
-[[\<Sysname\> system]{lang="EN-US"}]{#struct_0_x1539_x1935_x1627800763}
+Sysname interface tunnel 0 mode nve
 
-[\[Sysname\] interface tunnel 0 mode nve]{lang="EN-US"}
+Sysname-Tunnel0 vxlan neighbor-discovery client enable 11.0.0.1
 
-[\[Sysname-Tunnel0\] vxlan neighbor-discovery client enable 11.0.0.1]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1928434426}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display vxlan neighbor-discovery client summary]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1627800760}
-:::::
-
-::::: {#-865181708 .myid}
-[]{#_Toc404798683}[]{#struct_0_x1539_x1935_x1627800761}[]{#_Toc393878987}[]{#_Toc383786777}[]{#_Toc383097741}
+·**display vxlan neighbor-discovery client summary**
 
 **VXLAN \-- ENDP配置命令 \-- vxlan neighbor-discovery client register-interval**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VXLAN命令.files/image001.png){#图片 3 width="63" height="25"}]{lang="EN-US"}]{#struct_0_x1539_x1935_x1627800758}
-:::
+![说明](VXLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1539_x1935_1607214591}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[vxlan neighbor-discovery client register-interval**]命令用来配置ENDC向ENDS注册的时间间隔。
 
-[**[vxlan neighbor-discovery client register-interval]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1627800759}[命令用来配置]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[向]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[注册的时间间隔。]{style="font-family:宋体"}
+**[undo vxlan neighbor-discovery client register-interval**]命令用来恢复缺省情况。
 
-[**[undo vxlan neighbor-discovery client register-interval]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1627800756}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1168722931}
+**[vxlan neighbor-discovery client register-interval**]*time-value*
 
-[**[vxlan neighbor-discovery client register-interval]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x1539_x1935_x1627800757}*[time-value]{lang="EN-US"}*
+**[undo vxlan neighbor-discovery client register-interval**]
 
-[**[undo vxlan neighbor-discovery client register-interval]{lang="EN-US"}**]{#struct_0_x1539_x1935_328514371}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_328514374}
+ENDC向ENDS注册的时间间隔为15秒。
 
-[[ENDC]{lang="EN-US"}]{#struct_0_x1539_x1935_x746718662}[向]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[注册的时间间隔为]{style="font-family:宋体"}[15]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_328514373}
+NVE模式Tunnel接口视图
 
-[[NVE]{lang="EN-US"}]{#struct_0_x1539_x1935_x746718663}[模式]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_328514376}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_328514375}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x746718661}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_328514378}
+*[time-value*]：注册时间间隔，取值范围为5～120，单位为秒。
 
-[*[time-value]{lang="EN-US"}*]{#struct_0_x1539_x1935_328514377}[：注册时间间隔，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[120]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_328514380}
+ENDP协议中定义了3个定时器：探测定时器、注册定时器、老化定时器。
 
-[[ENDP]{lang="EN-US"}]{#struct_0_x1539_x1935_1883028263}[协议中定义了]{style="font-family:宋体"}[3]{lang="EN-US"}[个定时器：探测定时器、注册定时器、老化定时器。]{style="font-family:宋体"}
+·探测定时器
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[探测定时器]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1539_x1935_1883028264}
+ENDC请求加入VXLAN网络时会启用探测定时器，该定时器以5秒的时间间隔定时向ENDS发送注册报文，收到ENDS应答报文后会停止探测定时器。
 
-[[ENDC]{lang="EN-US"}]{#struct_0_x1539_x1935_x455623894}[请求加入]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[网络时会启用探测定时器，该定时器以]{style="font-family:宋体"}[5]{lang="EN-US"}[秒的时间间隔定时向]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[发送注册报文，收到]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[应答报文后会停止探测定时器。]{style="font-family:宋体"}
+·注册定时器
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[注册定时器]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1539_x1935_x455623897}
+ENDC加入VXLAN网络后，为了通告自己工作正常，会定时向ENDS发送注册报文，该定时器的默认时间间隔为15秒，用户可以通过配置**vxlan neighbor-discovery client register-interval**命令来调整该时间间隔。
 
-[[ENDC]{lang="EN-US"}]{#struct_0_x1539_x1935_97359105}[加入]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[网络后，为了通告自己工作正常，会定时向]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[发送注册报文，该定时器的默认时间间隔为]{style="font-family:宋体"}[15]{lang="EN-US"}[秒，用户可以通过配置]{style="font-family:宋体"}**[vxlan neighbor-discovery client register-interval]{lang="EN-US"}**[命令来调整该时间间隔。]{style="font-family:
-宋体"}
+如果ENDC连续发送5个注册报文，都未能收到ENDS的应答报文，则认为网络故障，此时需要清除之前学到的邻居信息，同时重新启用探测定时器。
 
-[[如果]{style="font-family:宋体"}[ENDC]{lang="EN-US"}]{#struct_0_x1539_x1935_x455623896}[连续发送]{style="font-family:宋体"}[5]{lang="EN-US"}[个注册报文，都未能收到]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[的应答报文，则认为网络故障，此时需要清除之前学到的邻居信息，同时重新启用探测定时器。]{style="font-family:宋体"}
+·老化定时器
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[老化定时器]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1539_x1935_x455623891}
+ENDC向ENDS发送的注册报文中携带注册时间间隔，ENDS会记录该时间间隔。
 
-[[ENDC]{lang="EN-US"}]{#struct_0_x1539_x1935_x455623890}[向]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[发送的注册报文中携带注册时间间隔，]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[会记录该时间间隔。]{style="font-family:宋体"}
+ENDC加入VXLAN网络后，如果ENDS在5倍的注册时间内未收到ENDC的注册报文则认为ENDC出现故障，此时需要把ENDC从VXLAN网络中删除。
 
-[[ENDC]{lang="EN-US"}]{#struct_0_x1539_x1935_1500691237}[加入]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[网络后，如果]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[在]{style="font-family:宋体"}[5]{lang="EN-US"}[倍的注册时间内未收到]{style="font-family:
-宋体"}[ENDC]{lang="EN-US"}[的注册报文则认为]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[出现故障，此时需要把]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[从]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[网络中删除。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1500691238}
+\# 配置ENDC向ENDS注册的时间间隔为30秒。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1500691235}[配置]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[向]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[注册的时间间隔为]{style="font-family:宋体"}[30]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\<Sysname\> system
 
-[[\<Sysname\> system]{lang="EN-US"}]{#struct_0_x1539_x1935_1283954753}
+Sysname interface tunnel 0 mode nve
 
-[\[Sysname\] interface tunnel 0 mode nve]{lang="EN-US"}
+Sysname-Tunnel0 vxlan neighbor-discovery client register-interval 30
 
-[\[Sysname-Tunnel0\] vxlan neighbor-discovery client register-interval 30]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1500691236}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display vxlan neighbor-discovery client summary]{lang="EN-US"}**]{#struct_0_x1539_x1935_1284151361}
-:::::
-
-::::: {#1011724921 .myid}
-[]{#_Toc404798684}[]{#struct_0_x1539_x1935_1500691241}[]{#_Toc393878988}[]{#_Toc383786778}[]{#_Toc383097742}
+·**display vxlan neighbor-discovery client summary**
 
 **VXLAN \-- ENDP配置命令 \-- vxlan neighbor-discovery server enable**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VXLAN命令.files/image001.png){#图片 4 width="63" height="25"}]{lang="EN-US"}]{#struct_0_x1539_x1935_1500691242}
-:::
+![说明](VXLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1539_x1935_1500691239}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[vxlan neighbor-discovery server enable**]命令用来开启接口的ENDS功能。
 
-[**[vxlan neighbor-discovery server enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_1283692609}[命令用来开启接口的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo vxlan neighbor-discovery server enable**]命令用来关闭接口的ENDS功能。
 
-[**[undo vxlan neighbor-discovery server enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_1500691240}[命令用来关闭接口的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1500691245}
+**[vxlan neighbor-discovery server enable**]
 
-[**[vxlan neighbor-discovery server enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_1283954750}
+**[undo vxlan neighbor-discovery server enable**]
 
-[**[undo vxlan neighbor-discovery server enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_1500691246}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x837960923}
+ENDS功能处于关闭状态。
 
-[[ENDS]{lang="EN-US"}]{#struct_0_x1539_x1935_x837960922}[功能处于关闭状态。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1738924790}
+NVE模式Tunnel接口视图
 
-[[NVE]{lang="EN-US"}]{#struct_0_x1539_x1935_x837960925}[模式]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1738466038}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x837960924}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x837960919}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x837960918}
+开启接口的ENDS功能时，会同时开启该接口的ENDC功能（该ENDC对应的ENDS地址为该接口的源地址）。
 
-[[开启接口的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}]{#struct_0_x1539_x1935_x837960921}[功能时，会同时开启该接口的]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[功能（该]{style="font-family:宋体"}[ENDC]{lang="EN-US"}[对应的]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[地址为该接口的源地址）。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x837960920}
+\# 开启ENDS功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1738793718}[开启]{style="font-family:宋体"}[ENDS]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\<Sysname\> system
 
-[[\<Sysname\> system]{lang="EN-US"}]{#struct_0_x1539_x1935_x837960914}
+Sysname interface tunnel 0 mode nve
 
-[\[Sysname\] interface tunnel 0 mode nve]{lang="EN-US"}
+Sysname-Tunnel0 vxlan neighbor-discovery server enable
 
-[\[Sysname-Tunnel0\] vxlan neighbor-discovery server enable]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1738531577}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display vxlan neighbor-discovery server summary]{lang="EN-US"}**]{#struct_0_x1539_x1935_74358745}
-:::::
-
-::: {#-303972291 .myid}
-[]{#_Toc404798686}[]{#struct_0_x1539_x1935_x1647264986}[]{#_Toc393878990}[]{#_Toc383786743}[]{#_Toc371583408}
+·**display vxlan neighbor-discovery server summary**
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- display vxlan isis brief**
 
 ------------------------------------------------------------------------
 
-[**[display vxlan isis brief]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1647264989}[命令用来显示]{style="font-family:
-宋体"}[VXLAN IS-IS]{lang="EN-US"}[进程的摘要信息。]{style="font-family:
-宋体"}
+**[display vxlan isis brief**]命令用来显示VXLAN IS-IS进程的摘要信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1647264988}
+【命令】
 
-[**[display vxlan isis brief]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1647264983}
+**[display vxlan isis brief**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x737793666}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x453461202}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1502853925}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1502853926}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_1605152328}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1502853923}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_1604824648}
+mdc-operator
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1502853924}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1502853929}[显示]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[进程的摘要信息。]{style="font-family:宋体"}
+\# 显示VXLAN IS-IS进程的摘要信息。
 
-[[\<Sysname\> display vxlan isis brief]{lang="EN-US"}]{#struct_0_x1539_x1935_1502853930}
+\<Sysname\> display vxlan isis brief
 
-[Network-entity: 00.0011.2200.0001.00]{lang="EN-US"}
+Network-entity: 00.0011.2200.0001.00
 
-[LSP-length receive: 16384]{lang="EN-US"}
+LSP-length receive: 16384
 
-[LSP-length originate: 1400]{lang="EN-US"}
+LSP-length originate: 1400
 
-[Timers:]{lang="EN-US"}
+Timers:
 
-[  LSP-max-age: 1200s]{lang="EN-US"}
+  LSP-max-age: 1200s
 
-[  LSP-refresh: 900s]{lang="EN-US"}
+  LSP-refresh: 900s
 
-[State: Enabled]{lang="EN-US"}
+State: Enabled
 
-[[表1-14 ]{lang="EN-US"}[display vxlan isis brief]{lang="EN-US"}]{#struct_0_x1539_x1935_1502853927}[命令显示信息描述表]{style="font-family:黑体"}
+表1-14 display vxlan isis brief命令显示信息描述表
 
-[]{#table_struct_0_x1700109965}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1502853928}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1502853934}
+描述
 
-[[Network-entity]{lang="EN-US"}]{#struct_0_x1539_x1935_x835798235}
+Network-entity
 
-[[网络实体名称]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x835798237}
+网络实体名称
 
-[[LSP-length receive]{lang="EN-US"}]{#struct_0_x1539_x1935_x835798231}
+LSP-length receive
 
-[[可以接收]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1539_x1935_1878702889}[的最大长度]{style="font-family:宋体"}
+可以接收LSP的最大长度
 
-[[LSP-length originate]{lang="EN-US"}]{#struct_0_x1539_x1935_1878702887}
+LSP-length originate
 
-[[生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1539_x1935_1878702893}[的最大长度]{style="font-family:宋体"}
+生成的LSP的最大长度
 
-[[Timers]{lang="EN-US"}]{#struct_0_x1539_x1935_x459949275}
+Timers
 
-[[LSP-max-age]{lang="EN-US"}]{#struct_0_x1539_x1935_x1651590363}
+LSP-max-age
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1539_x1935_x1651590362}[的最大生存时间，单位为秒]{style="font-family:宋体"}
+LSP的最大生存时间，单位为秒
 
-[[LSP-refresh]{lang="EN-US"}]{#struct_0_x1539_x1935_x1651590364}
+LSP-refresh
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1539_x1935_x1651590359}[的刷新周期，单位为秒]{style="font-family:宋体"}
+LSP的刷新周期，单位为秒
 
-[[State]{lang="EN-US"}]{#struct_0_x1539_x1935_x1651590358}
+State
 
-[[VXLAN IS-IS]{lang="EN-US"}]{#struct_0_x1539_x1935_x1651590360}[进程的运行状态，取值包括：]{style="font-family:宋体"}
+VXLAN IS-IS进程的运行状态，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_x1539_x1935_x1651590355}[：表示]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[进程处于开启状态，即已经开启]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址同步功能]{lang="EN-US" style="font-family:宋体"}[或]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[自动协商功能]{lang="EN-US" style="font-family:宋体"}
+·Enabled：表示VXLAN IS-IS进程处于开启状态，即已经开启VXLAN IS-IS的MAC地址同步功能或VXLAN自动协商功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_x1539_x1935_x1651590354}[：表示]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[进程处于关闭状态，即尚未开启]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址同步功能]{lang="EN-US" style="font-family:宋体"}[和]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[自动协商功能]{lang="EN-US" style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#493063886 .myid}
-[]{#_Toc404798687}[]{#struct_0_x1539_x1935_304724773}[]{#_Toc393878991}[]{#_Toc383786744}
+·Disabled：表示VXLAN IS-IS进程处于关闭状态，即尚未开启VXLAN IS-IS的MAC地址同步功能和VXLAN自动协商功能
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- display vxlan isis graceful-restart status**
 
 ------------------------------------------------------------------------
 
-[**[display vxlan isis graceful-restart status]{lang="EN-US"}**]{#struct_0_x1539_x1935_515240972}[命令用来显示]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[协议的]{style="font-family:宋体"}[GR]{lang="EN-US"}[状态。]{style="font-family:宋体"}
+**[display vxlan isis graceful-restart status**]命令用来显示VXLAN IS-IS协议的GR状态。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x167623472}
+【命令】
 
-[**[display vxlan isis graceful-restart status]{lang="EN-US"}**]{#struct_0_x1539_x1935_304724774}
+**[display vxlan isis graceful-restart status**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_515240967}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_304724771}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_515240970}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_304724772}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_515240973}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_304724777}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_1880865577}
+mdc-operator
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1880865578}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_531348854}[显示]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[协议的]{style="font-family:宋体"}[GR]{lang="EN-US"}[状态。]{style="font-family:宋体"}
+\# 显示VXLAN IS-IS协议的GR状态。
 
-[[\<Sysname\> display vxlan isis graceful-restart status]{lang="EN-US"}]{#struct_0_x1539_x1935_x457786586}
+\<Sysname\> display vxlan isis graceful-restart status
 
-[Restart status: RESTARTING]{lang="EN-US"}
+Restart status: RESTARTING
 
-[Restart phase: LSDB synchronization]{lang="EN-US"}
+Restart phase: LSDB synchronization
 
-[Restart interval: 300s]{lang="EN-US"}
+Restart interval: 300s
 
-[T3 remaining time: 65531s]{lang="EN-US"}
+T3 remaining time: 65531s
 
-[Total number of interfaces: 1]{lang="EN-US"}
+Total number of interfaces: 1
 
-[Number of waiting LSPs: 0]{lang="EN-US"}
+Number of waiting LSPs: 0
 
-[T2 remaining time: 56s]{lang="EN-US"}
+T2 remaining time: 56s
 
-[  Interface: Tunnel0]{lang="EN-US"}
+  Interface: Tunnel0
 
-[    T1 remaining time: 2]{lang="EN-US"}
+    T1 remaining time: 2
 
-[    RA received: N]{lang="EN-US"}
+    RA received: N
 
-[    CSNP received: N]{lang="EN-US"}
+    CSNP received: N
 
-[    T1 expired number: 3]{lang="EN-US"}
+    T1 expired number: 3
 
-[[表1-15 ]{lang="EN-US"}[display vxlan isis graceful-restart status]{lang="EN-US"}]{#struct_0_x1539_x1935_x825018606}[命令显示信息描述表]{style="font-family:黑体"}
+表1-15 display vxlan isis graceful-restart status命令显示信息描述表
 
-[]{#table_struct_0_x1672791887}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x457786589}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x457786582}
+描述
 
-[[Restart status]{lang="EN-US"}]{#struct_0_x1539_x1935_x457786584}
+Restart status
 
-[[重启状态，取值包括：]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x457786578}
+重启状态，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[COMPLETE]{lang="EN-US"}]{#struct_0_x1539_x1935_306887461}[[：重启完成]{lang="EN-US" style="font-family:宋体"}]{.TableTextChar}
+·COMPLETE：重启完成{.TableTextChar}
 
-[[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:
-  Symbol"}]{.TableTextChar}[STARTING]{lang="EN-US"}]{#struct_0_x1539_x1935_306887460}[[：重启开始]{lang="EN-US" style="font-family:宋体"}]{.TableTextChar}
+·{.TableTextChar}STARTING：重启开始{.TableTextChar}
 
-[[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:
-  Symbol"}]{.TableTextChar}[RESTARTING]{lang="EN-US"}]{#struct_0_x1539_x1935_1509341992}[[：重启中]{lang="EN-US" style="font-family:宋体"}]{.TableTextChar}
+·{.TableTextChar}RESTARTING：重启中{.TableTextChar}
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UNKNOWN]{lang="EN-US"}]{#struct_0_x1539_x1935_1509341998}[[：未知状态]{lang="EN-US" style="font-family:宋体"}]{.TableTextChar}
+·UNKNOWN：未知状态{.TableTextChar}
 
-[[Restart phase]{lang="EN-US"}]{#struct_0_x1539_x1935_x829310170}
+Restart phase
 
-[[重启阶段，取值包括：]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x829310167}
+重启阶段，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Initialization]{lang="EN-US"}]{#struct_0_x1539_x1935_x829310169}[：初始阶段]{lang="EN-US" style="font-family:宋体"}
+·Initialization：初始阶段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSDB synchronization]{lang="EN-US"}]{#struct_0_x1539_x1935_x829310163}[：]{lang="EN-US" style="font-family:
-  宋体"}[LSDB]{lang="EN-US"}[同步阶段]{lang="EN-US" style="font-family:
-  宋体"}
+·LSDB synchronization：LSDB同步阶段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MAC receiving]{lang="EN-US"}]{#struct_0_x1539_x1935_x1638614235}[：接收本地]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址上报的阶段]{lang="EN-US" style="font-family:宋体"}
+·MAC receiving：接收本地MAC地址上报的阶段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSP stable]{lang="EN-US"}]{#struct_0_x1539_x1935_x1638614237}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[生成的阶段]{lang="EN-US" style="font-family:宋体"}
+·LSP stable：LSP生成的阶段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSP generation]{lang="EN-US"}]{#struct_0_x1539_x1935_x1638614230}[：]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[刷新和泛洪的阶段]{lang="EN-US" style="font-family:宋体"}
+·LSP generation：LSP刷新和泛洪的阶段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Finish]{lang="EN-US"}]{#struct_0_x1539_x1935_1511504686}[：]{lang="EN-US" style="font-family:宋体"}[GR]{lang="EN-US"}[完成的阶段]{lang="EN-US" style="font-family:宋体"}
+·Finish：GR完成的阶段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown]{lang="EN-US"}]{#struct_0_x1539_x1935_x827147482}[：未知阶段]{lang="EN-US" style="font-family:宋体"}
+·Unknown：未知阶段
 
-[[Restart interval]{lang="EN-US"}]{#struct_0_x1539_x1935_1887353636}
+Restart interval
 
-[[重启间隔时间，单位为秒]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1887353642}
+重启间隔时间，单位为秒
 
-[[重启间隔时间即]{style="font-family:宋体"}[T2]{lang="EN-US"}]{#struct_0_x1539_x1935_1887353640}[定时器的值，用来控制]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步时间。如果在]{style="font-family:宋体"}[GR]{lang="EN-US"}[重启间隔时间内没有完成]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步，则]{style="font-family:宋体"}[GR]{lang="EN-US"}[失败，退出]{style="font-family:宋体"}[GR]{lang="EN-US"}[过程]{style="font-family:宋体"}
+重启间隔时间即T2定时器的值，用来控制LSDB同步时间。如果在GR重启间隔时间内没有完成LSDB同步，则GR失败，退出GR过程
 
-[[该值可以通过]{style="font-family:宋体"}**[graceful-restart interval]{lang="EN-US"}**]{#struct_0_x1539_x1935_1887353645}[命令设置]{style="font-family:宋体"}
+该值可以通过**graceful-restart interval**命令设置
 
-[[T3 remaining time]{lang="EN-US"}]{#struct_0_x1539_x1935_x451298522}
+T3 remaining time
 
-[[定时器]{style="font-family:宋体"}[T3]{lang="EN-US"}]{#struct_0_x1539_x1935_x451298519}[的剩余时间，单位为秒]{style="font-family:宋体"}
+定时器T3的剩余时间，单位为秒
 
-[[在]{style="font-family:宋体"}[T3]{lang="EN-US"}]{#struct_0_x1539_x1935_x451298521}[定时器内邻居不会断掉与重启设备的邻接关系。如果]{style="font-family:宋体"}[T3]{lang="EN-US"}[定时器超时后]{style="font-family:宋体"}[GR]{lang="EN-US"}[还没有完成，则]{style="font-family:宋体"}[GR]{lang="EN-US"}[失败]{style="font-family:宋体"}
+在T3定时器内邻居不会断掉与重启设备的邻接关系。如果T3定时器超时后GR还没有完成，则GR失败
 
-[[T3]{lang="EN-US"}]{#struct_0_x1539_x1935_x451298515}[定时器的值不可配置]{style="font-family:宋体"}
+T3定时器的值不可配置
 
-[[Total number of interfaces]{lang="EN-US"}]{#struct_0_x1539_x1935_1505016613}
+Total number of interfaces
 
-[[VXLAN IS-IS]{lang="EN-US"}]{#struct_0_x1539_x1935_1505016614}[进程下的接口数]{style="font-family:宋体"}
+VXLAN IS-IS进程下的接口数
 
-[[Number of waiting LSPs]{lang="EN-US"}]{#struct_0_x1539_x1935_1505016611}
+Number of waiting LSPs
 
-[[GR Restarter]{lang="EN-US"}]{#struct_0_x1539_x1935_1505016617}[与]{style="font-family:宋体"}[GR Helper]{lang="EN-US"}[进行]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步时，未完成同步的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[数目]{style="font-family:宋体"}
+GR Restarter与GR Helper进行LSDB同步时，未完成同步的LSP数目
 
-[[T2 remaining time]{lang="EN-US"}]{#struct_0_x1539_x1935_1505016615}
+T2 remaining time
 
-[[定时器]{style="font-family:宋体"}[T2]{lang="EN-US"}]{#struct_0_x1539_x1935_1505016621}[的剩余时间，单位为秒]{style="font-family:宋体"}
+定时器T2的剩余时间，单位为秒
 
-[[T2]{lang="EN-US"}]{#struct_0_x1539_x1935_x833635549}[定时器用来控制]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[的同步时间]{style="font-family:宋体"}
+T2定时器用来控制LSDB的同步时间
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1539_x1935_x833635543}
+Interface
 
-[[指定接口下]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}]{#struct_0_x1539_x1935_x833635544}[协议的]{style="font-family:宋体"}[GR]{lang="EN-US"}[状态]{style="font-family:宋体"}
+指定接口下VXLAN IS-IS协议的GR状态
 
-[[T1 remaining time]{lang="EN-US"}]{#struct_0_x1539_x1935_x1642939611}
+T1 remaining time
 
-[[定时器]{style="font-family:宋体"}[T1]{lang="EN-US"}]{#struct_0_x1539_x1935_x1642939612}[的剩余时间，单位为秒]{style="font-family:宋体"}
+定时器T1的剩余时间，单位为秒
 
-[[T1]{lang="EN-US"}]{#struct_0_x1539_x1935_x1642939609}[定时器用来控制带]{style="font-family:宋体"}[RR]{lang="EN-US"}[（]{style="font-family:宋体"}[Restart Request]{lang="EN-US"}[，]{style="font-family:宋体"}[Restart]{lang="EN-US"}[请求）标志位的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的重传时间。如果在]{style="font-family:宋体"}[T1]{lang="EN-US"}[定时器内没有接收到对端回复的带有]{style="font-family:宋体"}[RA]{lang="EN-US"}[（]{style="font-family:宋体"}[Restart Acknowledgement]{lang="EN-US"}[，]{style="font-family:宋体"}[Restart]{lang="EN-US"}[应答）标志的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文，则重传带]{style="font-family:宋体"}[RR]{lang="EN-US"}[标志位的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+T1定时器用来控制带RR（Restart Request，Restart请求）标志位的Hello报文的重传时间。如果在T1定时器内没有接收到对端回复的带有RA（Restart Acknowledgement，Restart应答）标志的Hello报文，则重传带RR标志位的Hello报文
 
-[[T1]{lang="EN-US"}]{#struct_0_x1539_x1935_313375525}[定时器的值不可配置]{style="font-family:宋体"}
+T1定时器的值不可配置
 
-[[RA received]{lang="EN-US"}]{#struct_0_x1539_x1935_313375524}
+RA received
 
-[[接口上是否收到邻居发送的带]{style="font-family:宋体"}[RA]{lang="EN-US"}]{#struct_0_x1539_x1935_313375528}[标志位的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+接口上是否收到邻居发送的带RA标志位的Hello报文
 
-[[CSNP received]{lang="EN-US"}]{#struct_0_x1539_x1935_1889516325}
+CSNP received
 
-[[接口上是否收到完整的]{style="font-family:宋体"}[CSNP]{lang="EN-US"}]{#struct_0_x1539_x1935_1889516323}[报文，即是否完成与]{style="font-family:宋体"}[GR Helper]{lang="EN-US"}[的]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步]{style="font-family:宋体"}
+接口上是否收到完整的CSNP报文，即是否完成与GR Helper的LSDB同步
 
-[[T1 expired number]{lang="EN-US"}]{#struct_0_x1539_x1935_1889516330}
+T1 expired number
 
-[[定时器]{style="font-family:宋体"}[T1]{lang="EN-US"}]{#struct_0_x1539_x1935_1889516328}[的超时次数，超时达到]{style="font-family:宋体"}[10]{lang="EN-US"}[次后，不会再进行带]{style="font-family:宋体"}[RR]{lang="EN-US"}[标志位的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的重传]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#1069090605 .myid}
-[]{#_Toc404798688}[]{#struct_0_x1539_x1935_1889516333}[]{#_Toc393878992}[]{#_Toc383786745}
+定时器T1的超时次数，超时达到10次后，不会再进行带RR标志位的Hello报文的重传
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- display vxlan isis local-mac**
 
 ------------------------------------------------------------------------
 
-[**[display vxlan isis local-mac]{lang="EN-US"}**]{#struct_0_x1539_x1935_1889516334}[命令用来显示]{style="font-family:
-宋体"}[VXLAN IS-IS]{lang="EN-US"}[的本地]{style="font-family:
-宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+**[display vxlan isis local-mac**]命令用来显示VXLAN IS-IS的本地MAC地址信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x449135835}
+【命令】
 
-[**[display vxlan isis local-mac dynamic]{lang="EN-US"}**[ \[ \[ **vxlan-id** *vxlan-id* \] \[ **count** \] \]]{lang="EN-US"}]{#struct_0_x1539_x1935_x1579044103}
+**[display vxlan isis local-mac dynamic** [ [ **vxlan-id** *vxlan-id*   **count**  ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x449135834}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1579109639}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x449135837}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x1579175175}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_x449135836}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x1579240711}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_x449135831}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1578781959}
+【参数】
 
-[**[dynamic]{lang="EN-US"}**]{#struct_0_x1539_x1935_x449135830}[：显示本地动态]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+**[dynamic**]：显示本地动态MAC地址信息。
 
-[**[vxlan-id ]{lang="EN-US"}***[vxlan-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_x1578847495}[：显示指定]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[的本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}*[vxlan-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[16777215]{lang="EN-US"}[。如果不指定本参数，将显示所有]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[的本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+**[vxlan-id ***vxlan-id*]：显示指定VXLAN的本地MAC地址信息。*vxlan-id*表示VXLAN编号，取值范围为0～16777215。如果不指定本参数，将显示所有VXLAN的本地MAC地址信息。
 
-[**[count]{lang="EN-US"}**]{#struct_0_x1539_x1935_x449135833}[：显示本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的数目。]{style="font-family:宋体"}
+**[count**]：显示本地MAC地址的数目。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1578913031}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x673723111}[显示所有]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[的本地动态]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+\# 显示所有VXLAN IS-IS的本地动态MAC地址信息。
 
-[[\<Sysname\> display vxlan isis local-mac dynamic]{lang="EN-US"}]{#struct_0_x1539_x1935_x449135826}
+\<Sysname\> display vxlan isis local-mac dynamic
 
-[  VXLAN ID: 100]{lang="EN-US"}
+  VXLAN ID: 100
 
-[    MAC address: 00aa-00bb-00cc]{lang="EN-US"}
+    MAC address: 00aa-00bb-00cc
 
-[    MAC address: 00aa-00cc-00bb]{lang="EN-US"}
+    MAC address: 00aa-00cc-00bb
 
-[    MAC address: 00cc-00aa-00bb]{lang="EN-US"}
+    MAC address: 00cc-00aa-00bb
 
-[  VXLAN ID: 50]{lang="EN-US"}
+  VXLAN ID: 50
 
-[    MAC address: 00bb-00aa-00cc]{lang="EN-US"}
+    MAC address: 00bb-00aa-00cc
 
-[    MAC address: 00bb-00cc-00aa]{lang="EN-US"}
+    MAC address: 00bb-00cc-00aa
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x1579240712}[显示]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[的本地动态]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的数目。]{style="font-family:宋体"}
+\# 显示VXLAN IS-IS的本地动态MAC地址的数目。
 
-[[\<Sysname\> display vxlan isis local-mac dynamic count]{lang="EN-US"}]{#struct_0_x1539_x1935_1507179301}
+\<Sysname\> display vxlan isis local-mac dynamic count
 
-[5 MAC addresses found.]{lang="EN-US"}
+5 MAC addresses found.
 
-[[表1-16 ]{lang="EN-US"}[display vxlan isis local-mac]{lang="EN-US"}]{#struct_0_x1539_x1935_917323069}[命令显示信息描述表]{style="font-family:黑体"}
+表1-16 display vxlan isis local-mac命令显示信息描述表
 
-[]{#table_struct_0_x1620914820}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1507179299}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1507179300}
+描述
 
-[[VXLAN ID]{lang="EN-US"}]{#struct_0_x1539_x1935_1507179303}
+VXLAN ID
 
-[[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_1507179309}[编号]{style="font-family:宋体"}
+VXLAN编号
 
-[[MAC address]{lang="EN-US"}]{#struct_0_x1539_x1935_x831472859}
+MAC address
 
-[[MAC]{lang="EN-US"}]{#struct_0_x1539_x1935_x831472861}[地址]{style="font-family:宋体"}
+MAC地址
 
-[[5 MAC addresses found]{lang="EN-US"}]{#struct_0_x1539_x1935_x831472857}
+5 MAC addresses found
 
-[[本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1539_x1935_x831472851}[地址的数目，本例中本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的数目为]{style="font-family:宋体"}[5]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-::: {#897093631 .myid}
-[]{#_Toc404798689}[]{#struct_0_x1539_x1935_1384631244}[]{#_Toc393878993}[]{#_Toc383786746}[]{#_Toc371583411}
+本地MAC地址的数目，本例中本地MAC地址的数目为5
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- display vxlan isis lsdb**
 
 ------------------------------------------------------------------------
 
-[**[display vxlan isis lsdb]{lang="EN-US"}**]{#struct_0_x1539_x1935_x831472850}[命令用来显示]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[的链路状态数据库。]{style="font-family:宋体"}
+**[display vxlan isis lsdb**]命令用来显示VXLAN IS-IS的链路状态数据库。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1640776923}
+【命令】
 
-[**[display vxlan isis lsdb]{lang="EN-US"}**[ \[ **local** \| **lsp-id** *lsp-id* \| **verbose** \] \* \[ **tunnel** *tunnel-number* \]]{lang="EN-US"}]{#struct_0_x1539_x1935_x343465878}
+**[display vxlan isis lsdb**[ [ **local** \| **lsp-id** *lsp-id* \| **verbose** ] \*  **tunnel** *tunnel-number* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1640776922}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1222618063}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1640776925}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x1640776924}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_416049009}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x1624817850}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_x1640776919}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1175629432}
+【参数】
 
-[**[local]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1640776918}[：显示当前设备产生的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[local**]：显示当前设备产生的LSP的信息。
 
-[**[lsp-id]{lang="EN-US"}**[ *lsp-id*]{lang="EN-US"}]{#struct_0_x1539_x1935_x1640776921}[：显示指定]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的信息。]{style="font-family:宋体"}*[lsp-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[LSP]{lang="EN-US"}[标识，形式为]{style="font-family:宋体"}[SYSID*.*Pseudonode ID-fragment num]{lang="EN-US"}[，其中，]{style="font-family:宋体"}[SYSID]{lang="EN-US"}[是产生该]{style="font-family:宋体"}[LSP]{lang="EN-GB"}[的节点或伪节点的]{style="font-family:宋体"}[System ID]{lang="EN-US"}[，]{style="font-family:宋体"}[Pseudonode ID]{lang="EN-US"}[是伪节点]{style="font-family:宋体"}[ID]{lang="EN-US"}[，]{style="font-family:宋体"}[fragment num]{lang="EN-US"}[是该]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的分片号。]{style="font-family:宋体"}
+**[lsp-id** *lsp-id*]：显示指定LSP的信息。*lsp-id*为LSP标识，形式为SYSID*.*Pseudonode ID-fragment num，其中，SYSID是产生该LSP的节点或伪节点的System ID，Pseudonode ID是伪节点ID，fragment num是该LSP的分片号。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1640776920}[：显示链路状态数据库中的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的详细信息。如果不指定本参数，将显示链路状态数据库中的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的摘要信息。]{style="font-family:宋体"}
+**[verbose**]：显示链路状态数据库中的LSP的详细信息。如果不指定本参数，将显示链路状态数据库中的LSP的摘要信息。
 
-[**[tunnel]{lang="EN-US"}**[ *tunnel-number*]{lang="EN-US"}]{#struct_0_x1539_x1935_x1909549819}[：显示指定]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口下的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[信息。]{style="font-family:宋体"}*[tunnel-number]{lang="EN-US"}*[为隧道接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[tunnel** *tunnel-number*]：显示指定Tunnel接口下的LSP信息。*tunnel-number*为隧道接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1640776915}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x1149969396}[显示]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[链路状态数据库的摘要信息。]{style="font-family:宋体"}
+\# 显示VXLAN IS-IS链路状态数据库的摘要信息。
 
-[[\<Sysname\> display vxlan isis lsdb]{lang="EN-US"}]{#struct_0_x1539_x1935_315538213}
+\<Sysname\> display vxlan isis lsdb
 
-[ ]{lang="EN-US"}
+          Link state database information for VXLAN ISIS (Tunnel 0)
 
-[          Link state database information for VXLAN ISIS (Tunnel 0)]{lang="EN-US"}
+LSP ID                   Seq num     Checksum  Holdtime  Length    Overload
 
-[LSP ID                   Seq num     Checksum  Holdtime  Length    Overload]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+0011.2200.0201.0000-00   0x00000063  0x1bc2    1104      74        0
 
-[0011.2200.0201.0000-00   0x00000063  0x1bc2    1104      74        0]{lang="EN-US"}
+0011.2200.0401.0000-00\*  0x00000060  0x7f76    1089      55        0
 
-[0011.2200.0401.0000-00\*  0x00000060  0x7f76    1089      55        0]{lang="EN-US"}
+0011.2200.0401.0001-00\*  0x0000005f  0xf77     1175      57        0
 
-[0011.2200.0401.0001-00\*  0x0000005f  0xf77     1175      57        0]{lang="EN-US"}
+Flags: \*-Self LSP, +-Self LSP(Extended)
 
-[ ]{lang="EN-US"}
+\# 显示VXLAN IS-IS链路状态数据库的详细信息。
 
-[Flags: \*-Self LSP, +-Self LSP(Extended)]{lang="EN-US"}
+\<Sysname\> display vxlan isis lsdb verbose
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_2076717815}[显示]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[链路状态数据库的详细信息。]{style="font-family:宋体"}
+          Link state database information for VXLAN ISIS (Tunnel 0)
 
-[[\<Sysname\> display vxlan isis lsdb verbose]{lang="EN-US"}]{#struct_0_x1539_x1935_315538218}
+LSP ID: 0011.2200.0201.0000-00
 
-[ ]{lang="EN-US"}
+Sequence number: 0x00000063
 
-[          Link state database information for VXLAN ISIS (Tunnel 0)]{lang="EN-US"}
+Checksum: 0x1bc2
 
-[ ]{lang="EN-US"}
+Holdtime: 745s
 
-[LSP ID: 0011.2200.0201.0000-00]{lang="EN-US"}
+Length: 74
 
-[Sequence number: 0x00000063]{lang="EN-US"}
+Overload: 0
 
-[Checksum: 0x1bc2]{lang="EN-US"}
+Source: 0011.2200.0201.0000
 
-[Holdtime: 745s]{lang="EN-US"}
+Neighbour
 
-[Length: 74]{lang="EN-US"}
+    ID: 0011.2200.0401.0001, Cost: 10
 
-[Overload: 0]{lang="EN-US"}
+VXLANs:
 
-[Source: 0011.2200.0201.0000]{lang="EN-US"}
+    VXLAN ID: 100
 
-[Neighbour]{lang="EN-US"}
+    VXLAN ID: 10
 
-[    ID: 0011.2200.0401.0001, Cost: 10]{lang="EN-US"}
+MAC addresses:
 
-[VXLANs:]{lang="EN-US"}
+  VXLAN ID: 10   Confidence: 1
 
-[    VXLAN ID: 100]{lang="EN-US"}
+    0001-0001-0001
 
-[    VXLAN ID: 10]{lang="EN-US"}
+LSP ID: 0011.2200.0401.0000-00\*
 
-[MAC addresses:]{lang="EN-US"}
+Sequence number: 0x00000060
 
-[  VXLAN ID: 10   Confidence: 1]{lang="EN-US"}
+Checksum: 0x7f76
 
-[    0001-0001-0001]{lang="EN-US"}
+Holdtime: 730s
 
-[ ]{lang="EN-US"}
+Length: 55
 
-[LSP ID: 0011.2200.0401.0000-00\*]{lang="EN-US"}
+Overload: 0
 
-[Sequence number: 0x00000060]{lang="EN-US"}
+Source: 0011.2200.0401.0000
 
-[Checksum: 0x7f76]{lang="EN-US"}
+Neighbour
 
-[Holdtime: 730s]{lang="EN-US"}
+    ID: 0011.2200.0401.0001, Cost: 10
 
-[Length: 55]{lang="EN-US"}
+VXLANs:
 
-[Overload: 0]{lang="EN-US"}
+    VXLAN ID: 10
 
-[Source: 0011.2200.0401.0000]{lang="EN-US"}
+LSP ID: 0011.2200.0401.0001-00\*
 
-[Neighbour]{lang="EN-US"}
+Sequence number: 0x0000005f
 
-[    ID: 0011.2200.0401.0001, Cost: 10]{lang="EN-US"}
+Checksum: 0xf77
 
-[VXLANs:]{lang="EN-US"}
+Holdtime: 816s
 
-[    VXLAN ID: 10]{lang="EN-US"}
+Length: 57
 
-[ ]{lang="EN-US"}
+Overload: 0
 
-[LSP ID: 0011.2200.0401.0001-00\*]{lang="EN-US"}
+Source: 0011.2200.0401.0001
 
-[Sequence number: 0x0000005f]{lang="EN-US"}
+Neighbour
 
-[Checksum: 0xf77]{lang="EN-US"}
+    ID: 0011.2200.0201.0000, Cost: 0
 
-[Holdtime: 816s]{lang="EN-US"}
+    ID: 0011.2200.0401.0000, Cost: 0
 
-[Length: 57]{lang="EN-US"}
+Flags: \*-Self LSP, +-Self LSP(Extended)
 
-[Overload: 0]{lang="EN-US"}
+表1-17 display vxlan isis lsdb命令显示信息描述表
 
-[Source: 0011.2200.0401.0001]{lang="EN-US"}
+字段
 
-[Neighbour]{lang="EN-US"}
+描述
 
-[    ID: 0011.2200.0201.0000, Cost: 0]{lang="EN-US"}
+Link state database information for VXLAN IS-IS (Tunnel 1)
 
-[    ID: 0011.2200.0401.0000, Cost: 0]{lang="EN-US"}
+Tunnel1上VXLAN IS-IS的链路状态数据库信息
 
-[ ]{lang="EN-US"}
+LSP ID
 
-[Flags: \*-Self LSP, +-Self LSP(Extended)]{lang="EN-US"}
+链路状态报文ID
 
-[[表1-17 ]{lang="EN-US"}[display vxlan isis lsdb]{lang="EN-US"}]{#struct_0_x1539_x1935_315538215}[命令显示信息描述表]{style="font-family:黑体"}
+·带\*号表示是本地生成的、原始系统LSP
 
-[]{#table_struct_0_x1875926478}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_315538222}
-:::
+·带+号表示是本地生成的、虚拟系统LSP（LSP扩展分片）
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x820659418}
+Sequence number
 
-[[Link state database information for VXLAN IS-IS (Tunnel 1)]{lang="EN-US"}]{#struct_0_x1539_x1935_x820659420}
+LSP序列号
 
-[[Tunnel1]{lang="EN-US"}]{#struct_0_x1539_x1935_x820659415}[上]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[的链路状态数据库信息]{style="font-family:宋体"}
+Checksum
 
-[[LSP ID]{lang="EN-US"}]{#struct_0_x1539_x1935_x820659411}
+LSP校验和
 
-[[链路状态报文]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1539_x1935_x1629963483}
+Holdtime
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[带]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1629963485}[\*]{lang="EN-US"}[号表示是本地生成的、原始系统]{style="font-family:宋体"}[LSP]{lang="EN-US"}
+LSP生存时间，随着时间推移递减，单位为秒
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[带]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1629963479}[+]{lang="EN-US"}[号表示是本地生成的、虚拟系统]{style="font-family:宋体"}[LSP]{lang="EN-US"}[（]{style="font-family:宋体"}[LSP]{lang="EN-US"}[扩展分片）]{style="font-family:宋体"}
+Length
 
-[[Sequence number]{lang="EN-US"}]{#struct_0_x1539_x1935_x1629963481}
+LSP长度
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1539_x1935_x1629963475}[序列号]{style="font-family:宋体"}
+Overload
 
-[[Checksum]{lang="EN-US"}]{#struct_0_x1539_x1935_x818496731}
+LSP中Overload bit的置位情况。1表示置位，0表示没有置位
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1539_x1935_x818496732}[校验和]{style="font-family:宋体"}
+Source
 
-[[Holdtime]{lang="EN-US"}]{#struct_0_x1539_x1935_x818496729}
+LSP生成路由器的System ID
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1539_x1935_x818496723}[生存时间，随着时间推移递减，单位为秒]{style="font-family:宋体"}
+Neighbour
 
-[[Length]{lang="EN-US"}]{#struct_0_x1539_x1935_x1627800794}
+LSP生成路由器的邻居信息
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1539_x1935_x1627800796}[长度]{style="font-family:宋体"}
+ID
 
-[[Overload]{lang="EN-US"}]{#struct_0_x1539_x1935_x1627800793}
+邻居的System ID
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1539_x1935_x1627800787}[中]{style="font-family:宋体"}[Overload bit]{lang="EN-US"}[的置位情况。]{style="font-family:宋体"}[1]{lang="EN-US"}[表示置位，]{style="font-family:宋体"}[0]{lang="EN-US"}[表示没有置位]{style="font-family:宋体"}
+Cost
 
-[[Source]{lang="EN-US"}]{#struct_0_x1539_x1935_328514342}
+LSP生成路由器和邻居之间链路的开销值
 
-[[LSP]{lang="SV"}]{#struct_0_x1539_x1935_328514345}[生成路由器的]{style="font-family:宋体"}[System ID]{lang="SV"}
+VXLANs
 
-[[Neighbour]{lang="EN-US"}]{#struct_0_x1539_x1935_328514344}
+LSP中包含的VXLAN信息
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1539_x1935_328514349}[生成路由器的邻居信息]{style="font-family:宋体"}
+VXLAN ID
 
-[[ID]{lang="EN-US"}]{#struct_0_x1539_x1935_1883028358}
+通过LSP发布的VXLAN的编号
 
-[[邻居的]{style="font-family:宋体"}[System ID]{lang="EN-US"}]{#struct_0_x1539_x1935_1883028356}
+MAC addresses
 
-[[Cost]{lang="EN-US"}]{#struct_0_x1539_x1935_1883028361}
+LSP中包含的MAC地址信息
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1539_x1935_1883028359}[生成路由器和邻居之间链路的开销值]{style="font-family:宋体"}
+VXLAN ID
 
-[[VXLANs]{lang="EN-US"}]{#struct_0_x1539_x1935_x455623802}
+MAC地址所属的VXLAN的编号
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1539_x1935_x455623805}[中包含的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[信息]{style="font-family:宋体"}
+Confidence
 
-[[VXLAN ID]{lang="EN-US"}]{#struct_0_x1539_x1935_x455623800}
-
-[[通过]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1539_x1935_x455623795}[发布的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[的编号]{style="font-family:宋体"}
-
-[[MAC addresses]{lang="EN-US"}]{#struct_0_x1539_x1935_1500691332}
-
-[[LSP]{lang="EN-US"}]{#struct_0_x1539_x1935_1500691337}[中包含的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息]{style="font-family:宋体"}
-
-[[VXLAN ID]{lang="EN-US"}]{#struct_0_x1539_x1935_1500691336}
-
-[[MAC]{lang="EN-US"}]{#struct_0_x1539_x1935_1500691335}[地址所属的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[的编号]{style="font-family:宋体"}
-
-[[Confidence]{lang="EN-US"}]{#struct_0_x1539_x1935_1500691341}
-
-[[可信度，取值为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_x1539_x1935_x837960826}[表示可信，取值为]{style="font-family:宋体"}[1]{lang="EN-US"}[表示不可信。当]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址出现冲突时，优选可信度为]{style="font-family:宋体"}[0]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1068181059 .myid}
-[]{#_Toc404798690}[]{#struct_0_x1539_x1935_x837960827}[]{#_Toc393878994}[]{#_Toc383786747}
+可信度，取值为0表示可信，取值为1表示不可信。当MAC地址出现冲突时，优选可信度为0的MAC地址
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- display vxlan isis peer**
 
 ------------------------------------------------------------------------
 
-[**[display vxlan isis peer]{lang="EN-US"}**]{#struct_0_x1539_x1935_x217718026}[命令用来显示]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[的邻居信息。]{style="font-family:宋体"}
+**[display vxlan isis peer**]命令用来显示VXLAN IS-IS的邻居信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1737525350}
+【命令】
 
-[**[display vxlan isis peer]{lang="EN-US"}**]{#struct_0_x1539_x1935_1464591212}
+**[display vxlan isis peer**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x837960828}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x218045706}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1498206326}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1030780966}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_1268323520}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x837960829}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_x218111242}
+mdc-operator
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1096196741}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x837960822}[显示]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[的邻居信息。]{style="font-family:宋体"}
+\# 显示VXLAN IS-IS的邻居信息。
 
-[[\<Sysname\> display vxlan isis peer]{lang="EN-US"}]{#struct_0_x1539_x1935_x837960824}
+\<Sysname\> display vxlan isis peer
 
-[System ID: 0011.2200.0201]{lang="EN-US"}
+System ID: 0011.2200.0201
 
-[Link interface: Tunnel1]{lang="EN-US"}
+Link interface: Tunnel1
 
-[Circuit ID: 0011.2200.0401.0001]{lang="EN-US"}
+Circuit ID: 0011.2200.0401.0001
 
-[State: Up]{lang="EN-US"}
+State: Up
 
-[Hold time: 26s]{lang="EN-US"}
+Hold time: 26s
 
-[Neighbour DED priority: 64]{lang="EN-US"}
+Neighbour DED priority: 64
 
-[Uptime: 00:01:24]{lang="EN-US"}
+Uptime: 00:01:24
 
-[[表1-18 ]{lang="EN-US"}[display vxlan isis peer]{lang="EN-US"}]{#struct_0_x1539_x1935_x217783562}[命令显示信息描述表]{style="font-family:黑体"}
+表1-18 display vxlan isis peer命令显示信息描述表
 
-[]{#table_struct_0_x1806755187}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x837960818}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1647264891}
+描述
 
-[[System ID]{lang="EN-US"}]{#struct_0_x1539_x1935_x1647264886}
+System ID
 
-[[邻居的系统]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1539_x1935_x1647264889}
+邻居的系统ID
 
-[[Link interface]{lang="EN-US"}]{#struct_0_x1539_x1935_x1647264883}
+Link interface
 
-[[与对端相连的本地]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}]{#struct_0_x1539_x1935_309050245}[接口]{style="font-family:宋体"}
+与对端相连的本地Tunnel接口
 
-[[Circuit ID]{lang="EN-US"}]{#struct_0_x1539_x1935_309050243}
+Circuit ID
 
-[[链路]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1539_x1935_309050249}
+链路ID
 
-[[State]{lang="EN-US"}]{#struct_0_x1539_x1935_309050248}
+State
 
-[[邻居状态，取值包括：]{style="font-family:宋体"}]{#struct_0_x1539_x1935_309050254}
+邻居状态，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Init]{lang="EN-US"}]{#struct_0_x1539_x1935_1885191046}[：邻居初始化]{lang="EN-US" style="font-family:宋体"}
+·Init：邻居初始化
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Up]{lang="EN-US"}]{#struct_0_x1539_x1935_1885191044}[：邻接关系建立]{lang="EN-US" style="font-family:宋体"}
+·Up：邻接关系建立
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Down]{lang="EN-US"}]{#struct_0_x1539_x1935_1885191050}[：邻接关系断开]{style="font-family:宋体"}
+·Down：邻接关系断开
 
-[[Hold time]{lang="EN-US"}]{#struct_0_x1539_x1935_1885191049}
+Hold time
 
-[[存活时间，随着时间推移递减，单位为秒]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1885191048}
+存活时间，随着时间推移递减，单位为秒
 
-[[如果在存活时间内还没有收到邻居发送的]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_x1539_x1935_1885191054}[报文，则认为邻居已经失效，如果收到了]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文，则存活时间将重置为初始值]{style="font-family:宋体"}
+如果在存活时间内还没有收到邻居发送的Hello报文，则认为邻居已经失效，如果收到了Hello报文，则存活时间将重置为初始值
 
-[[Neighbour DED Priority]{lang="EN-US"}]{#struct_0_x1539_x1935_x453461114}
+Neighbour DED Priority
 
-[[邻居接口]{style="font-family:宋体"}[DED]{lang="EN-US"}]{#struct_0_x1539_x1935_x453461115}[优先级，]{style="font-family:宋体"}[DED]{lang="EN-US"}[优先级数值高的设备被选为]{style="font-family:宋体"}[DED ]{lang="EN-US"}
+邻居接口DED优先级，DED优先级数值高的设备被选为DED
 
-[[Uptime]{lang="EN-US"}]{#struct_0_x1539_x1935_x453461117}
+Uptime
 
-[[邻居关系保持的时间]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x453461111}
-
-[ ]{lang="EN-US"}
-
-::: {#872062984 .myid}
-[]{#_Toc404798691}[]{#struct_0_x1539_x1935_x453461112}[]{#_Toc393878995}[]{#_Toc383786748}[]{#_Toc371583413}
+邻居关系保持的时间
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- display vxlan isis remote-mac**
 
 ------------------------------------------------------------------------
 
-[**[display vxlan isis remote-mac]{lang="EN-US"}**]{#struct_0_x1539_x1935_x453461113}[命令用来显示通过]{style="font-family:
-宋体"}[VXLAN IS-IS]{lang="EN-US"}[学习到的远端]{style="font-family:
-宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+**[display vxlan isis remote-mac**]命令用来显示通过VXLAN IS-IS学习到的远端MAC地址信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_191987181}
+【命令】
 
-[**[display vxlan isis remote-mac]{lang="EN-US"}**[ \[ \[ **vxlan-id** *vxlan-id* \] \[ **count** \] \]]{lang="EN-US"}]{#struct_0_x1539_x1935_x453461106}
+**[display vxlan isis remote-mac** [ [ **vxlan-id** *vxlan-id*   **count**  ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_192314862}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x453461107}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_192249326}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1502854022}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_1502854021}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1502854020}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_1502854019}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1502854026}
+【参数】
 
-[**[vxlan-id ]{lang="EN-US"}***[vxlan-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_1502854024}[：显示指定]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}*[vxlan-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[16777215]{lang="EN-US"}[。如果不指定本参数，将显示所有]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+**[vxlan-id ***vxlan-id*]：显示指定VXLAN的远端MAC地址信息。*vxlan-id*表示VXLAN编号，取值范围为0～16777215。如果不指定本参数，将显示所有VXLAN的远端MAC地址信息。
 
-[**[count]{lang="EN-US"}**]{#struct_0_x1539_x1935_1502854023}[：显示远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的数目。]{style="font-family:宋体"}
+**[count**]：显示远端MAC地址的数目。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1502854030}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1502854029}[显示通过]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[学习到的所有远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+\# 显示通过VXLAN IS-IS学习到的所有远端MAC地址信息。
 
-[[\<Sysname\> display vxlan isis remote-mac]{lang="EN-US"}]{#struct_0_x1539_x1935_x835798140}
+\<Sysname\> display vxlan isis remote-mac
 
-[MAC Flags: A-MAC received on an active tunnel interface.]{lang="EN-US"}
+MAC Flags: A-MAC received on an active tunnel interface.
 
-[           C-MAC conflict with local dynamic MAC.]{lang="EN-US"}
+           C-MAC conflict with local dynamic MAC.
 
-[           F-MAC has been flushed to the remote MAC address table.]{lang="EN-US"}
+           F-MAC has been flushed to the remote MAC address table.
 
-[ ]{lang="EN-US"}
+  VXLAN ID: 10
 
-[  VXLAN ID: 10]{lang="EN-US"}
+    MAC address: 0001-0001-0001
 
-[    MAC address: 0001-0001-0001]{lang="EN-US"}
+      Interface: Tunnel1
 
-[      Interface: Tunnel1]{lang="EN-US"}
+          Flags: AF
 
-[          Flags: AF]{lang="EN-US"}
+\# 显示通过VXLAN IS-IS学习到的所有远端MAC地址的数目。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_332433290}[显示通过]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[学习到的所有远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的数目。]{style="font-family:宋体"}
+\<Sysname\> display vxlan isis remote-mac count
 
-[[\<Sysname\> display vxlan isis remote-mac count]{lang="EN-US"}]{#struct_0_x1539_x1935_x835798134}
+1 MAC addresses found.
 
-[1 MAC addresses found.]{lang="EN-US"}
+表1-19 display vxlan isis remote-mac命令显示信息描述表
 
-[[表1-19 ]{lang="EN-US"}[display vxlan isis remote-mac]{lang="EN-US"}]{#struct_0_x1539_x1935_x1645102195}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1776523730}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_311212932}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1496365961}
+VXLAN ID
 
-[[VXLAN ID]{lang="EN-US"}]{#struct_0_x1539_x1935_1496365966}
+VXLAN的编号
 
-[[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_x842286202}[的编号]{style="font-family:宋体"}
+MAC address
 
-[[MAC address]{lang="EN-US"}]{#struct_0_x1539_x1935_x842286205}
+通过VXLAN IS-IS学习到的远端MAC地址
 
-[[通过]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}]{#struct_0_x1539_x1935_x842286198}[学习到的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+Interface
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1539_x1935_x842286200}
+远端MAC地址对应的Tunnel接口
 
-[[远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1539_x1935_x842286194}[地址对应的]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口]{style="font-family:宋体"}
+Flags
 
-[[Flags]{lang="EN-US"}]{#struct_0_x1539_x1935_x1651590266}
+VXLAN IS-IS远端MAC地址标记，取值包括：
 
-[[VXLAN IS-IS]{lang="EN-US"}]{#struct_0_x1539_x1935_x1651590267}[远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址标记，取值包括：]{style="font-family:宋体"}
+·A：该MAC地址从有效的Tunnel接口接收到
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[A]{lang="EN-US"}]{#struct_0_x1539_x1935_x1651590268}[：该]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址从有效的]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口接收到]{style="font-family:宋体"}
+·C：该MAC地址与VXLAN IS-IS本地动态MAC地址冲突
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[C]{lang="EN-US"}]{#struct_0_x1539_x1935_x1651590262}[：该]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址与]{lang="EN-US" style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[本地动态]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址冲突]{lang="EN-US" style="font-family:宋体"}
+·F：该MAC地址已经下发到远端MAC地址表
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[F]{lang="EN-US"}]{#struct_0_x1539_x1935_x1651590264}[：该]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址已经下发到远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表]{style="font-family:宋体"}
+1 MAC address(es) found
 
-[[1 MAC address(es) found]{lang="EN-US"}]{#struct_0_x1539_x1935_x1651590258}
-
-[[远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1539_x1935_304724870}[地址的数目，本例中远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的数目为]{style="font-family:宋体"}[1]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-::: {#-2061308443 .myid}
-[]{#_Toc404798692}[]{#struct_0_x1539_x1935_1498528648}[]{#_Toc393878996}[]{#_Toc383786749}
+远端MAC地址的数目，本例中远端MAC地址的数目为1
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- display vxlan isis remote-vxlan**
 
 ------------------------------------------------------------------------
 
-[**[display vxlan isis remote-vxlan]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1373326546}[命令用来显示通过]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[学习到的远端]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[display vxlan isis remote-vxlan**]命令用来显示通过VXLAN IS-IS学习到的远端VXLAN信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1498528654}
+【命令】
 
-[**[display]{lang="EN-US"}[ vxlan isis remote-vxlan]{lang="EN-US"}**[ \[ *vxlan-id* \| **count** \]]{lang="EN-US"}]{#struct_0_x1539_x1935_1498528653}
+**[display vxlan isis remote-vxlan**[ [ *vxlan-id* \| **count** ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x840123514}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x840123515}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x840123516}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x840123517}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_x1649427570}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x1649427571}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_306887558}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_306887557}
+【参数】
 
-[*[vxlan-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_306887556}[：显示指定远端]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[的信息。]{style="font-family:宋体"}*[vxlan-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[16777215]{lang="EN-US"}[。如果不指定本参数，将显示所有]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+*[vxlan-id*]：显示指定远端VXLAN的信息。*vxlan-id*表示VXLAN编号，取值范围为0～16777215。如果不指定本参数，将显示所有VXLAN的信息。
 
-[**[count]{lang="EN-US"}**]{#struct_0_x1539_x1935_306887555}[：显示远端]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[的数目。]{style="font-family:宋体"}
+**[count**]：显示远端VXLAN的数目。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1891679114}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1891679112}[显示通过]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[学习到的所有远端]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+\# 显示通过VXLAN IS-IS学习到的所有远端VXLAN的信息。
 
-[[\<Sysname\> display vxlan isis remote-vxlan]{lang="EN-US"}]{#struct_0_x1539_x1935_1891679117}
+\<Sysname\> display vxlan isis remote-vxlan
 
-[VXLAN Flags: S-VXLAN supported at the local end.]{lang="EN-US"}
+VXLAN Flags: S-VXLAN supported at the local end.
 
-[             F-The association between VXLAN and Tunnels has been flushed to L2VPN.]{lang="EN-US"}
+             F-The association between VXLAN and Tunnels has been flushed to L2VPN.
 
-[ ]{lang="EN-US"}
+      VXLAN ID: 10
 
-[      VXLAN ID: 10]{lang="EN-US"}
+      Tunnels: 1, 3-5
 
-[      Tunnels: 1, 3-5]{lang="EN-US"}
+      Flags: SF
 
-[      Flags: SF]{lang="EN-US"}
+\<Sysname\> display vxlan isis remote-vxlan count
 
-[\<Sysname\> display vxlan isis remote-vxlan count]{lang="EN-US"}
+1 remote VXLANs found.
 
-[1 remote VXLANs found.]{lang="EN-US"}
+表1-20 display vxlan isis remote-mac命令显示信息描述表
 
-[[表1-20 ]{lang="EN-US"}[display vxlan isis remote-mac]{lang="EN-US"}]{#struct_0_x1539_x1935_x446973050}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1471182125}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x446973053}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x446973048}
+VXLAN ID
 
-[[VXLAN ID]{lang="EN-US"}]{#struct_0_x1539_x1935_x446973042}
+VXLAN IS-IS学习到的远端VXLAN
 
-[[VXLAN IS-IS]{lang="EN-US"}]{#struct_0_x1539_x1935_1509342086}[学习到的远端]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}
+Tunnels
 
-[[Tunnels]{lang="EN-US"}]{#struct_0_x1539_x1935_1509342090}
+远端VXLAN关联的VXLAN隧道
 
-[[远端]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_1509342089}[关联的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道]{style="font-family:宋体"}
+Flags
 
-[[Flags]{lang="EN-US"}]{#struct_0_x1539_x1935_1509342087}
+远端VXLAN标记，取值包括：
 
-[[远端]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_1509342093}[标记，取值包括：]{style="font-family:宋体"}
+·S：本地支持该远端VXLAN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[S]{lang="EN-US"}]{#struct_0_x1539_x1935_x829310074}[：本地支持该远端]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}
+·F：该VXLAN与隧道的关联关系已经通知给L2VPN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[F]{lang="EN-US"}]{#struct_0_x1539_x1935_x829310076}[：该]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[与隧道的关联关系已经通知给]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}
+·N/A：本地不支持该远端VXLAN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[N/A]{lang="EN-US"}]{#struct_0_x1539_x1935_x90890090}[：本地不支持该远端]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}
+1 remote VXLANs found
 
-[[1 remote VXLANs found]{lang="EN-US"}]{#struct_0_x1539_x1935_x829310070}
-
-[[远端]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_x829310072}[的数目]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#1560051687 .myid}
-[]{#_Toc371583415}[]{#_Toc404798693}[]{#struct_0_x1539_x1935_x829310066}[]{#_Toc393878997}[]{#_Toc383786750}
+远端VXLAN的数目
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- display vxlan isis tunnel**
 
 ------------------------------------------------------------------------
 
-[**[display vxlan isis tunnel]{lang="EN-US"}**]{#struct_0_x1539_x1935_1859322109}[命令用来显示]{style="font-family:
-宋体"}[Tunnel]{lang="EN-US"}[接口的]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[display vxlan isis tunnel**]命令用来显示Tunnel接口的VXLAN IS-IS信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x829310067}
+【命令】
 
-[**[display vxlan isis tunnel]{lang="EN-US"}**[ \[ *tunnel-number* \]]{lang="EN-US"}]{#struct_0_x1539_x1935_x1638614139}
+**[display vxlan isis tunnel** [ *tunnel-number* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1638614140}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1638614141}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_317700995}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_317701002}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_317701001}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_317701000}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_1283796101}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_317700999}
+【参数】
 
-[*[tunnel-number]{lang="EN-US"}*]{#struct_0_x1539_x1935_1686508313}[：显示指定]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口的]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[信息。如果不指定本参数，将显示所有]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口上的]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+*[tunnel-number*]：显示指定Tunnel接口的VXLAN IS-IS信息。如果不指定本参数，将显示所有Tunnel接口上的VXLAN IS-IS信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_317701006}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_317701005}[显示]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口]{style="font-family:宋体"}[101]{lang="EN-US"}[的]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+\# 显示Tunnel接口101的VXLAN IS-IS信息。
 
-[[\<Sysname\> display vxlan isis tunnel 101]{lang="EN-US"}]{#struct_0_x1539_x1935_1893841797}
+\<Sysname\> display vxlan isis tunnel 101
 
-[Tunnel101]{lang="EN-US"}
+Tunnel101
 
-[MTU: 1400]{lang="EN-US"}
+MTU: 1400
 
-[DED: Yes]{lang="EN-US"}
+DED: Yes
 
-[DED priority: 80]{lang="EN-US"}
+DED priority: 80
 
-[Hello timer: 10s]{lang="EN-US"}
+Hello timer: 10s
 
-[Hello multiplier: 3]{lang="EN-US"}
+Hello multiplier: 3
 
-[CSNP timer: 10s]{lang="EN-US"}
+CSNP timer: 10s
 
-[LSP timer: 100ms]{lang="EN-US"}
+LSP timer: 100ms
 
-[Max LSP transmit number: 5]{lang="EN-US"}
+Max LSP transmit number: 5
 
-[VXLANs:]{lang="EN-US"}
+VXLANs:
 
-[  1,50,100]{lang="EN-US"}
+  1,50,100
 
-[[表1-21 ]{lang="EN-US"}[display vxlan isis tunnel]{lang="EN-US"}]{#struct_0_x1539_x1935_167764753}[命令显示信息描述表]{style="font-family:黑体"}
+表1-21 display vxlan isis tunnel命令显示信息描述表
 
-[]{#table_struct_0_x1428789843}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1893841795}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1893841801}
+描述
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_x1539_x1935_1893841800}
+Tunnel
 
-[[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_1893841799}[隧道接口编号]{style="font-family:宋体"}
+VXLAN隧道接口编号
 
-[[MTU]{lang="EN-US"}]{#struct_0_x1539_x1935_1893841805}
+MTU
 
-[[链路]{style="font-family:宋体"}[MTU]{lang="EN-US"}]{#struct_0_x1539_x1935_x444810362}[值]{style="font-family:宋体"}
+链路MTU值
 
-[[DED]{lang="EN-US"}]{#struct_0_x1539_x1935_x444810364}
+DED
 
-[[是否被选举为]{style="font-family:宋体"}[DED]{lang="EN-US"}]{#struct_0_x1539_x1935_x444810365}[：]{style="font-family:宋体"}[Yes]{lang="EN-US"}[表示是；]{style="font-family:宋体"}[No]{lang="EN-US"}[表示否]{style="font-family:宋体"}
+是否被选举为DED：Yes表示是；No表示否
 
-[[DED priority]{lang="EN-US"}]{#struct_0_x1539_x1935_x444810358}
+DED priority
 
-[[DED]{lang="EN-US"}]{#struct_0_x1539_x1935_x444810360}[优先级]{style="font-family:宋体"}
+DED优先级
 
-[[Hello timer]{lang="EN-US"}]{#struct_0_x1539_x1935_x444810361}
+Hello timer
 
-[[Hello]{lang="EN-US"}]{#struct_0_x1539_x1935_x444810355}[报文发送时间间隔，单位为秒]{style="font-family:宋体"}
+Hello报文发送时间间隔，单位为秒
 
-[[Hello multiplier]{lang="EN-US"}]{#struct_0_x1539_x1935_1511504774}
+Hello multiplier
 
-[[Hello]{lang="EN-US"}]{#struct_0_x1539_x1935_1511504772}[报文失效数目]{style="font-family:宋体"}
+Hello报文失效数目
 
-[[CSNP timer]{lang="EN-US"}]{#struct_0_x1539_x1935_1511504777}
+CSNP timer
 
-[[CSNP]{lang="EN-US"}]{#struct_0_x1539_x1935_1511504775}[报文发送时间间隔，单位为秒]{style="font-family:宋体"}
+CSNP报文发送时间间隔，单位为秒
 
-[[LSP timer]{lang="EN-US"}]{#struct_0_x1539_x1935_1511504782}
+LSP timer
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1539_x1935_x827147386}[的最小发送时间间隔，单位为毫秒]{style="font-family:宋体"}
+LSP的最小发送时间间隔，单位为毫秒
 
-[[Max LSP transmit number]{lang="EN-US"}]{#struct_0_x1539_x1935_x827147388}
+Max LSP transmit number
 
-[[一次最多可以发送的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1539_x1935_x827147389}[数目]{style="font-family:宋体"}
+一次最多可以发送的LSP数目
 
-[[VXLANs]{lang="EN-US"}]{#struct_0_x1539_x1935_x827147383}
+VXLANs
 
-[[与]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}]{#struct_0_x1539_x1935_x827147384}[接口关联的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-::: {#63544256 .myid}
-[]{#_Toc404798694}[]{#struct_0_x1539_x1935_x827147385}[]{#_Toc393878998}[]{#_Toc383786757}
+与Tunnel接口关联的VXLAN
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- graceful-restart**
 
 ------------------------------------------------------------------------
 
-[**[graceful-restart]{lang="EN-US"}**]{#struct_0_x1539_x1935_x827147378}[命令用来使能]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[能力。]{style="font-family:宋体"}
+**[graceful-restart**]命令用来使能VXLAN IS-IS的GR能力。
 
-[**[undo graceful-restart]{lang="EN-US"}**]{#struct_0_x1539_x1935_93031477}[命令用来关闭]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[能力。]{style="font-family:宋体"}
+**[undo graceful-restart**]命令用来关闭VXLAN IS-IS的GR能力。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x827147379}
+【命令】
 
-[**[graceful-restart]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1636451450}
+**[graceful-restart**]
 
-[**[undo graceful-restart]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1367964094}
+**[undo graceful-restart**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1636451451}
+【缺省情况】
 
-[[VXLAN IS-IS]{lang="EN-US"}]{#struct_0_x1539_x1935_1360919261}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[能力处于关闭状态。]{style="font-family:宋体"}
+VXLAN IS-IS的GR能力处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1636451452}
+【视图】
 
-[[VXLAN IS-IS]{lang="EN-US"}]{#struct_0_x1539_x1935_x205164680}[视图]{style="font-family:宋体"}
+VXLAN IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1636451453}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x1771248621}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x1636451446}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1636451447}
+【使用指导】
 
-[[GR]{lang="EN-US"}]{#struct_0_x1539_x1935_554284671}[（]{style="font-family:宋体"}[Graceful Restart]{lang="EN-US"}[，平滑重启）是一种在协议重启或主备倒换时保证转发业务不中断的机制。需要协议重启或主备倒换的设备将重启状态通知给邻居，允许邻居重新建立邻接关系而不终止连接。]{style="font-family:宋体"}
+GR（Graceful Restart，平滑重启）是一种在协议重启或主备倒换时保证转发业务不中断的机制。需要协议重启或主备倒换的设备将重启状态通知给邻居，允许邻居重新建立邻接关系而不终止连接。
 
-[[GR]{lang="EN-US"}]{#struct_0_x1539_x1935_x1636451448}[有两个角色：]{style="font-family:宋体"}
+GR有两个角色：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[GR Restarter]{lang="EN-US"}]{#struct_0_x1539_x1935_x1636451449}[：发生协议重启或主备倒换事件且具有]{lang="EN-US" style="font-family:宋体"}[GR]{lang="EN-US"}[能力的设备。]{lang="EN-US" style="font-family:宋体"}
+·GR Restarter：发生协议重启或主备倒换事件且具有GR能力的设备。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[GR Helper]{lang="EN-US"}]{#struct_0_x1539_x1935_x1636451442}[：和]{lang="EN-US" style="font-family:宋体"}[GR Restarter]{lang="EN-US"}[具有邻居关系，协助完成]{lang="EN-US" style="font-family:宋体"}[GR]{lang="EN-US"}[流程的设备。]{lang="EN-US" style="font-family:宋体"}
+·GR Helper：和GR Restarter具有邻居关系，协助完成GR流程的设备。
 
-[[GR Restarter]{lang="EN-US"}]{#struct_0_x1539_x1935_x1636451443}[和]{style="font-family:宋体"}[GR Helper]{lang="EN-US"}[上都需要使能]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[能力。]{style="font-family:宋体"}
+GR Restarter和GR Helper上都需要使能VXLAN IS-IS的GR能力。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1771314157}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_319863685}[使能]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[能力。]{style="font-family:宋体"}
+\# 使能VXLAN IS-IS的GR能力。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_319863684}
+\<Sysname\> system-view
 
-[\[Sysname\] vxlan-isis]{lang="EN-US"}
+Sysname vxlan-isis
 
-[\[Sysname-vxlan-isis\] graceful-restart]{lang="EN-US"}
+Sysname-vxlan-isis graceful-restart
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_319863683}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display vxlan isis graceful-restart status]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1394394716}
-:::
-
-::: {#16863910 .myid}
-[]{#_Toc404798695}[]{#struct_0_x1539_x1935_319863690}[]{#_Toc393878999}[]{#_Toc383786758}
+·**display vxlan isis graceful-restart status**
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- graceful-restart interval**
 
 ------------------------------------------------------------------------
 
-[**[graceful-restart interval]{lang="EN-US"}**]{#struct_0_x1539_x1935_319863689}[命令用来配置]{style="font-family:
-宋体"}[VXLAN IS-IS]{lang="EN-US"}[协议的]{style="font-family:
-宋体"}[GR]{lang="EN-US"}[重启间隔时间。]{style="font-family:宋体"}
+**[graceful-restart interval**]命令用来配置VXLAN IS-IS协议的GR重启间隔时间。
 
-[**[undo graceful-restart interval]{lang="EN-US"}**]{#struct_0_x1539_x1935_319863688}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo graceful-restart interval**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_319863687}
+【命令】
 
-[**[graceful-restart interval]{lang="EN-US"}**[ *interval-value*]{lang="EN-US"}]{#struct_0_x1539_x1935_x1394394712}
+**[graceful-restart interval** *interval-value*]
 
-[**[undo graceful-restart interval]{lang="EN-US"}**]{#struct_0_x1539_x1935_319863694}
+**[undo graceful-restart interval**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_319863693}
+【缺省情况】
 
-[[VXLAN IS-IS]{lang="EN-US"}]{#struct_0_x1539_x1935_1887353734}[协议的]{style="font-family:宋体"}[GR]{lang="EN-US"}[重启间隔时间为]{style="font-family:宋体"}[300]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+VXLAN IS-IS协议的GR重启间隔时间为300秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x2125004035}
+【视图】
 
-[[VXLAN IS-IS]{lang="EN-US"}]{#struct_0_x1539_x1935_1887353733}[视图]{style="font-family:宋体"}
+VXLAN IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x2125069571}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1887353732}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x2125135107}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1887353738}
+【参数】
 
-[*[interval-value]{lang="EN-US"}*]{#struct_0_x1539_x1935_x2124741891}[：]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[协议的]{style="font-family:宋体"}[GR]{lang="EN-US"}[重启间隔时间，取值范围为]{style="font-family:宋体"}[30]{lang="EN-US"}[～]{style="font-family:宋体"}[1800]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[interval-value*]：VXLAN IS-IS协议的GR重启间隔时间，取值范围为30～1800，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1887353737}
+【使用指导】
 
-[[本命令配置的]{style="font-family:宋体"}[GR]{lang="EN-US"}]{#struct_0_x1539_x1935_1887353736}[重启间隔时间作为]{style="font-family:宋体"}[T2]{lang="EN-US"}[定时器的值，用来控制]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步时间。如果在]{style="font-family:宋体"}[GR]{lang="EN-US"}[重启间隔时间内没有完成]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步，则]{style="font-family:宋体"}[GR]{lang="EN-US"}[失败，退出]{style="font-family:宋体"}[GR]{lang="EN-US"}[过程。]{style="font-family:宋体"}
+本命令配置的GR重启间隔时间作为T2定时器的值，用来控制LSDB同步时间。如果在GR重启间隔时间内没有完成LSDB同步，则GR失败，退出GR过程。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x2124872963}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1887353735}[配置]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[重启间隔时间为]{style="font-family:宋体"}[120]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置VXLAN IS-IS的GR重启间隔时间为120秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_1887353742}
+\<Sysname\> system-view
 
-[\[Sysname\] vxlan-isis]{lang="EN-US"}
+Sysname vxlan-isis
 
-[\[Sysname-vxlan-isis\] graceful-restart interval 120]{lang="EN-US"}
+Sysname-vxlan-isis graceful-restart interval 120
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x2125135114}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display vxlan isis graceful-restart status]{lang="EN-US"}**]{#struct_0_x1539_x1935_x451298426}
-:::
-
-::: {#-1553303123 .myid}
-[]{#_Toc404798696}[]{#struct_0_x1539_x1935_x451298427}[]{#_Toc393879000}[]{#_Toc383786759}
+·**display vxlan isis graceful-restart status**
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- log-peer-change enable**
 
 ------------------------------------------------------------------------
 
-[**[log-peer-change enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_x451298428}[命令用来打开邻接状态变化的输出开关。]{style="font-family:宋体"}
+**[log-peer-change enable**]命令用来打开邻接状态变化的输出开关。
 
-[**[undo log-peer-change enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_265131709}[命令用来关闭邻接状态变化的输出开关。]{style="font-family:
-宋体"}
+**[undo log-peer-change enable**]命令用来关闭邻接状态变化的输出开关。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x451298429}
+【命令】
 
-[**[log-peer-change enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_x451298422}
+**[log-peer-change enable**]
 
-[**[undo log-peer-change enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_x451298423}
+**[undo log-peer-change enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x451298424}
+【缺省情况】
 
-[[邻接状态变化的输出开关处于打开状态。]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x451298425}
+邻接状态变化的输出开关处于打开状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x451298419}
+【视图】
 
-[[VXLAN IS-IS]{lang="EN-US"}]{#struct_0_x1539_x1935_1505016710}[视图]{style="font-family:宋体"}
+VXLAN IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1505016709}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1505016708}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_244190495}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1505016707}
+【使用指导】
 
-[[打开邻接状态变化的输出开关后，]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}]{#struct_0_x1539_x1935_243469599}[邻接状态变化时会生成日志信息发送到设备的信息中心，通过设置信息中心的参数，最终决定日志信息的输出规则（即是否允许输出以及输出方向）。有关信息中心参数的配置请参见"网络管理和监控配置指导"中的"信息中心"。]{style="font-family:宋体"}
+打开邻接状态变化的输出开关后，VXLAN IS-IS邻接状态变化时会生成日志信息发送到设备的信息中心，通过设置信息中心的参数，最终决定日志信息的输出规则（即是否允许输出以及输出方向）。有关信息中心参数的配置请参见"网络管理和监控配置指导"中的"信息中心"。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_757776846}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1505016714}[打开邻接状态变化的输出开关。]{style="font-family:宋体"}
+\# 打开邻接状态变化的输出开关。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_1505016713}
+\<Sysname\> system-view
 
-[\[Sysname\] vxlan-isis]{lang="EN-US"}
+Sysname vxlan-isis
 
-[\[Sysname-vxlan-isis\] log-peer-change enable]{lang="EN-US"}
-:::
-
-::: {#81514559 .myid}
-[]{#_Toc404798697}[]{#struct_0_x1539_x1935_243731744}[]{#_Toc393879001}[]{#_Toc383786760}[]{#_Toc371583431}
+Sysname-vxlan-isis log-peer-change enable
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- mac-synchronization enable**
 
 ------------------------------------------------------------------------
 
-[**[mac-synchronization enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_1415686690}[命令用来开启]{style="font-family:
-宋体"}[VXLAN IS-IS]{lang="EN-US"}[的]{style="font-family:
-宋体"}[MAC]{lang="EN-US"}[地址同步功能。]{style="font-family:宋体"}
+**[mac-synchronization enable**]命令用来开启VXLAN IS-IS的MAC地址同步功能。
 
-[**[undo ]{lang="EN-US"}[mac-synchronization enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_1505016712}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo mac-synchronization enable**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_243797280}
+【命令】
 
-[**[mac-synchronization enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_178581639}
+**[mac-synchronization enable**]
 
-[**[undo mac-synchronization enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_1505016711}
+**[undo mac-synchronization enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_243600672}
+【缺省情况】
 
-[[VXLAN IS-IS]{lang="EN-US"}]{#struct_0_x1539_x1935_1505016718}[不会在]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[之间同步]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+VXLAN IS-IS不会在VTEP之间同步MAC地址信息。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_244190496}
+【视图】
 
-[[VXLAN IS-IS]{lang="EN-US"}]{#struct_0_x1539_x1935_1781621658}[视图]{style="font-family:宋体"}
+VXLAN IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1505016717}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x833635450}
+network-admin
 
-[[mdc-admim]{lang="EN-US"}]{#struct_0_x1539_x1935_2030607313}
+mdc-admim
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x833635451}
+【使用指导】
 
-[[开启本功能后，]{style="font-family:宋体"}[VTEP]{lang="EN-US"}]{#struct_0_x1539_x1935_2030672849}[可以通过]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[协议发布本地的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息，并能够接收其他]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[发布的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+开启本功能后，VTEP可以通过VXLAN IS-IS协议发布本地的MAC地址信息，并能够接收其他VTEP发布的远端MAC地址信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_95220246}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x833635452}[开启]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址同步功能。]{style="font-family:宋体"}
+\# 开启VXLAN IS-IS的MAC地址同步功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_x833635453}
+\<Sysname\> system-view
 
-[\[Sysname\] vxlan-isis]{lang="EN-US"}
+Sysname vxlan-isis
 
-[\[Sysname-vxlan-isis\] mac-synchronization enable]{lang="EN-US"}
-:::
-
-::: {#-624957747 .myid}
-[]{#_Toc404798698}[]{#struct_0_x1539_x1935_2030541777}[]{#_Toc393879002}[]{#_Toc383786761}[]{#_Toc371583430}
+Sysname-vxlan-isis mac-synchronization enable
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- negotiate-vni enable**
 
 ------------------------------------------------------------------------
 
-[**[negotiate-vni enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1070164957}[命令用来开启]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[自动协商功能。]{style="font-family:宋体"}
+**[negotiate-vni enable**]命令用来开启VXLAN IS-IS的VXLAN自动协商功能。
 
-[**[undo negotiate-vni enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_x833635446}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo negotiate-vni enable**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_2030738386}
+【命令】
 
-[**[negotiate-vni enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1512460981}
+**[negotiate-vni enable**]
 
-[**[undo negotiate-vni enable]{lang="EN-US"}**]{#struct_0_x1539_x1935_x833635447}
+**[undo negotiate-vni enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_2030803922}
+【缺省情况】
 
-[[VXLAN IS-IS]{lang="EN-US"}]{#struct_0_x1539_x1935_x833635448}[不会在]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[之间交互]{style="font-family:宋体"}[VXLAN ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+VXLAN IS-IS不会在VTEP之间交互VXLAN ID。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_2031131602}
+【视图】
 
-[[VXLAN IS-IS]{lang="EN-US"}]{#struct_0_x1539_x1935_x1857514594}[视图]{style="font-family:宋体"}
+VXLAN IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x833635449}
+【缺省用户角色】
 
-[[network-admin]{lang="PT-BR"}]{#struct_0_x1539_x1935_x833635442}
+network-admin
 
-[[mdc-admim]{lang="PT-BR"}]{#struct_0_x1539_x1935_x833635443}
+mdc-admim
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_2030541778}
+【使用指导】
 
-[[本功能用来实现]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_x1642939514}[隧道与]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[的自动关联。]{style="font-family:宋体"}
+本功能用来实现VXLAN隧道与VXLAN的自动关联。
 
-[[开启本功能后]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1642939515}[，]{style="font-family:宋体"}[VTEP]{lang="PT-BR"}[在所有]{style="font-family:宋体"}[VXLAN]{lang="PT-BR"}[隧道上通过]{style="font-family:宋体"}[VXLAN IS-IS]{lang="PT-BR"}[将本地存在的]{style="font-family:宋体"}[VXLAN]{lang="PT-BR"}[的]{style="font-family:宋体"}[ID]{lang="PT-BR"}[通告给远端]{style="font-family:宋体"}[VTEP]{lang="PT-BR"}[。远端]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[将其与本地的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[进行比较，如果存在相同的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[，则将该]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[与接收该信息的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道关联。]{style="font-family:宋体"}
+开启本功能后，VTEP在所有VXLAN隧道上通过VXLAN IS-IS将本地存在的VXLAN的ID通告给远端VTEP。远端VTEP将其与本地的VXLAN进行比较，如果存在相同的VXLAN，则将该VXLAN与接收该信息的VXLAN隧道关联。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1675406062}
+【举例】
 
-[[\# ]{lang="PT-BR"}]{#struct_0_x1539_x1935_x1642939516}[开启]{style="font-family:宋体"}[VXLAN IS-IS]{lang="PT-BR"}[的]{style="font-family:宋体"}[VXLAN]{lang="PT-BR"}[隧道自动协商功能。]{style="font-family:宋体"}
+\# 开启VXLAN IS-IS的VXLAN隧道自动协商功能。
 
-[[\<Sysname\> system-view]{lang="PT-BR"}]{#struct_0_x1539_x1935_x1642939510}
+\<Sysname\> system-view
 
-[\[Sysname\] vxlan-isis]{lang="PT-BR"}
+Sysname vxlan-isis
 
-[\[Sysname-vxlan-isis\] negotiate-vni enable]{lang="PT-BR"}
-:::
-
-::: {#-1617549404 .myid}
-[]{#_Toc404798699}[]{#struct_0_x1539_x1935_1272121535}[]{#_Toc393879003}[]{#_Toc383786763}
+Sysname-vxlan-isis negotiate-vni enable
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- overlay isis ded-priority**
 
 ------------------------------------------------------------------------
 
-[**[overlay isis]{lang="EN-US"}[ ded-priority]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1642939511}[命令用来配置]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口的]{style="font-family:宋体"}[DED]{lang="EN-US"}[（]{style="font-family:宋体"}[Designated Edge Device]{lang="EN-US"}[，指定边缘设备）优先级。]{style="font-family:宋体"}
+**[overlay isis ded-priority**]命令用来配置Tunnel接口的DED（Designated Edge Device，指定边缘设备）优先级。
 
-[**[undo overlay isis]{lang="EN-US"}[ ded-priority]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1642939512}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo overlay isis ded-priority**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_109322121}
+【命令】
 
-[**[overlay isis]{lang="EN-US"}[ ded-priority]{lang="EN-US"}**[ *value*]{lang="EN-US"}]{#struct_0_x1539_x1935_x1642939506}
+**[overlay isis ded-priority** *value*]
 
-[**[undo overlay isis ded-priority]{lang="EN-US"}**]{#struct_0_x1539_x1935_2078756125}
+**[undo overlay isis ded-priority**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1642939507}
+【缺省情况】
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_x1539_x1935_512672184}[接口的]{style="font-family:宋体"}[DED]{lang="EN-US"}[优先级为]{style="font-family:宋体"}[64]{lang="EN-US"}[。]{style="font-family:宋体"}
+Tunnel接口的DED优先级为64。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_313375622}
+【视图】
 
-[[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_x240901244}[模式]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口视图]{style="font-family:宋体"}[/NVE]{lang="EN-US"}[模式]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口视图]{style="font-family:宋体"}
+VXLAN模式Tunnel接口视图/NVE模式Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_313375621}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_313375620}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_313375619}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_2097750911}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_x1539_x1935_1507179398}[：]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口的]{style="font-family:宋体"}[DED]{lang="EN-US"}[优先级，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[127]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[value*]：Tunnel接口的DED优先级，取值范围为0～127。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1507179397}
+【使用指导】
 
-[[每个]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_917454132}[隧道两端的]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[设备通过交互]{style="font-family:宋体"}[VXLAN IS-IS Hello]{lang="EN-US"}[报文选举出一个]{style="font-family:宋体"}[DED]{lang="EN-US"}[。选举出的]{style="font-family:宋体"}[DED]{lang="EN-US"}[周期性发布]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文来进行]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步。]{style="font-family:宋体"}
+每个VXLAN隧道两端的VTEP设备通过交互VXLAN IS-IS Hello报文选举出一个DED。选举出的DED周期性发布CSNP报文来进行LSDB同步。
 
-[[DED]{lang="EN-US"}]{#struct_0_x1539_x1935_1507179396}[优先级数值高的设备被选为]{style="font-family:宋体"}[DED]{lang="EN-US"}[；如果两台设备的]{style="font-family:宋体"}[DED]{lang="EN-US"}[优先级相同，则]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址较大的设备会被选中。]{style="font-family:宋体"}
+DED优先级数值高的设备被选为DED；如果两台设备的DED优先级相同，则MAC地址较大的设备会被选中。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1507179395}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_917585204}[配置]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口]{style="font-family:宋体"}[101]{lang="EN-US"}[的]{style="font-family:宋体"}[DED]{lang="EN-US"}[优先级为]{style="font-family:宋体"}[2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置Tunnel接口101的DED优先级为2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_1507179402}
+\<Sysname\> system-view
 
-[\[Sysname\] interface tunnel 101]{lang="EN-US"}
+Sysname interface tunnel 101
 
-[\[Sysname-tunnel101\] overlay isis ded-priority 2]{lang="EN-US"}
+Sysname-tunnel101 overlay isis ded-priority 2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1507179401}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display ]{lang="EN-US"}**]{#struct_0_x1539_x1935_1507179400}**[vxlan]{lang="EN-US"}[ isis tunnel]{lang="EN-US"}**
-:::
-
-::: {#2071266219 .myid}
-[]{#_Toc404798700}[]{#struct_0_x1539_x1935_1507179399}[]{#_Toc393879004}[]{#_Toc383786764}[]{#_Toc371583404}
+·**display ****vxlan isis tunnel**
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- overlay isis timer csnp**
 
 ------------------------------------------------------------------------
 
-[**[overlay isis timer csnp]{lang="EN-US"}**]{#struct_0_x1539_x1935_1507179406}[命令用来配置]{style="font-family:宋体"}[DED]{lang="EN-US"}[发送]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文的时间间隔。]{style="font-family:宋体"}
+**[overlay isis timer csnp**]命令用来配置DED发送CSNP报文的时间间隔。
 
-[**[undo overlay isis timer csnp]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1421132483}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo overlay isis timer csnp**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1507179405}
+【命令】
 
-[**[overlay isis timer csnp]{lang="EN-US"}**[ *seconds*]{lang="EN-US"}]{#struct_0_x1539_x1935_x1421066947}
+**[overlay isis timer csnp** *seconds*]
 
-[**[undo overlay isis timer csnp]{lang="EN-US"}**]{#struct_0_x1539_x1935_x831472762}
+**[undo overlay isis timer csnp**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x831472763}
+【缺省情况】
 
-[[DED]{lang="EN-US"}]{#struct_0_x1539_x1935_192859087}[发送]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文的时间间隔为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+DED发送CSNP报文的时间间隔为10秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x831472765}
+【视图】
 
-[[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_192728015}[模式]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口视图]{style="font-family:宋体"}[/NVE]{lang="EN-US"}[模式]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口视图]{style="font-family:宋体"}
+VXLAN模式Tunnel接口视图/NVE模式Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x831472758}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_192400332}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x831472759}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x831472760}
+【参数】
 
-[*[seconds]{lang="EN-US"}*]{#struct_0_x1539_x1935_x831472761}[：]{style="font-family:宋体"}[DED]{lang="EN-US"}[发送]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文的时间间隔，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[600]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[seconds*]：DED发送CSNP报文的时间间隔，取值范围为1～600，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_192990159}
+【使用指导】
 
-[[DED]{lang="EN-US"}]{#struct_0_x1539_x1935_x831472754}[使用]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文来进行]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步。因此，只有在被选举为]{style="font-family:宋体"}[DED]{lang="EN-US"}[的设备上进行该项配置才有效。]{style="font-family:宋体"}
+DED使用CSNP报文来进行LSDB同步。因此，只有在被选举为DED的设备上进行该项配置才有效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_192662476}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x831472755}[配置]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口]{style="font-family:宋体"}[101]{lang="EN-US"}[上]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文的发送时间间隔为]{style="font-family:宋体"}[15]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置Tunnel接口101上CSNP报文的发送时间间隔为15秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_x1640776826}
+\<Sysname\> system-view
 
-[\[Sysname\] interface  tunnel 101]{lang="EN-US"}
+Sysname interface  tunnel 101
 
-[\[Sysname-tunnel101\] overlay isis timer csnp 15]{lang="EN-US"}
+Sysname-tunnel101 overlay isis timer csnp 15
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x746750404}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display ]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1640776827}**[vxlan]{lang="EN-US"}[ isis tunnel]{lang="EN-US"}**
-:::
-
-::: {#-485374831 .myid}
-[]{#_Toc404798701}[]{#struct_0_x1539_x1935_x1640776828}[]{#_Toc393879005}[]{#_Toc383786765}[]{#_Toc371583405}
+·**display ****vxlan isis tunnel**
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- overlay isis timer hello**
 
 ------------------------------------------------------------------------
 
-[**[overlay isis timer hello]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1640776829}[命令用来配置]{style="font-family:
-宋体"}[VXLAN IS-IS Hello]{lang="EN-US"}[报文的发送时间间隔。]{style="font-family:宋体"}
+**[overlay isis timer hello**]命令用来配置VXLAN IS-IS Hello报文的发送时间间隔。
 
-[**[undo overlay isis timer hello]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1640776822}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo overlay isis timer hello**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1222618064}
+【命令】
 
-[**[overlay isis]{lang="EN-US"}[ timer hello]{lang="EN-US"}**[ *seconds*]{lang="EN-US"}]{#struct_0_x1539_x1935_x1640776823}
+**[overlay isis timer hello** *seconds*]
 
-[**[undo overlay isis timer hello]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1640776824}
+**[undo overlay isis timer hello**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1640776825}
+【缺省情况】
 
-[[VXLAN IS-IS Hello]{lang="EN-US"}]{#struct_0_x1539_x1935_x1640776818}[报文的发送时间间隔为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+VXLAN IS-IS Hello报文的发送时间间隔为10秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1553253922}
+【视图】
 
-[[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_x1640776819}[模式]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口视图]{style="font-family:宋体"}[/NVE]{lang="EN-US"}[模式]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口视图]{style="font-family:宋体"}
+VXLAN模式Tunnel接口视图/NVE模式Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_315538310}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_315538309}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1686486630}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_315538307}
+【参数】
 
-[*[seconds]{lang="EN-US"}*]{#struct_0_x1539_x1935_1686486616}[：]{style="font-family:宋体"}[VXLAN IS-IS Hello]{lang="EN-US"}[报文的发送时间间隔，取值范围为]{style="font-family:宋体"}[3]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[seconds*]：VXLAN IS-IS Hello报文的发送时间间隔，取值范围为3～255，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_315538314}
+【使用指导】
 
-[[发送时间间隔越短，网络收敛越快，但也需要占用更多的系统资源。因此，需要根据实际情况合理配置]{style="font-family:宋体"}[VXLAN IS-IS Hello]{lang="EN-US"}]{#struct_0_x1539_x1935_315538313}[报文的发送时间间隔。]{style="font-family:宋体"}
+发送时间间隔越短，网络收敛越快，但也需要占用更多的系统资源。因此，需要根据实际情况合理配置VXLAN IS-IS Hello报文的发送时间间隔。
 
-[[DED]{lang="EN-US"}]{#struct_0_x1539_x1935_315538312}[发送]{style="font-family:宋体"}[VXLAN IS-IS Hello]{lang="EN-US"}[报文的时间间隔是本命令设置的时间间隔的]{style="font-family:宋体"}[1/3]{lang="EN-US"}[。]{style="font-family:宋体"}
+DED发送VXLAN IS-IS Hello报文的时间间隔是本命令设置的时间间隔的1/3。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_315538311}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x652165538}[配置]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口]{style="font-family:宋体"}[101]{lang="EN-US"}[上]{style="font-family:宋体"}[VXLAN IS-IS Hello]{lang="EN-US"}[报文的发送时间间隔为]{style="font-family:宋体"}[6]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置Tunnel接口101上VXLAN IS-IS Hello报文的发送时间间隔为6秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_315538317}
+\<Sysname\> system-view
 
-[\[Sysname\] interface tunnel 101]{lang="EN-US"}
+Sysname interface tunnel 101
 
-[\[Sysname-tunnel101\] overlay isis timer hello 6]{lang="EN-US"}
+Sysname-tunnel101 overlay isis timer hello 6
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x652165544}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display ]{lang="EN-US"}**]{#struct_0_x1539_x1935_861121274}**[vxlan]{lang="EN-US"}[ isis tunnel]{lang="EN-US"}**
-:::
-
-::: {#1604871063 .myid}
-[]{#_Toc404798702}[]{#struct_0_x1539_x1935_1900329862}[]{#_Toc393879006}[]{#_Toc383786766}
+·**display ****vxlan isis tunnel**
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- overlay isis timer holding-multiplier**
 
 ------------------------------------------------------------------------
 
-[**[overlay isis timer holding-multiplier]{lang="EN-US"}**]{#struct_0_x1539_x1935_1900329861}[命令用来配置]{style="font-family:宋体"}[VXLAN IS-IS Hello]{lang="EN-US"}[报文失效数目。]{style="font-family:宋体"}
+**[overlay isis timer holding-multiplier**]命令用来配置VXLAN IS-IS Hello报文失效数目。
 
-[**[undo overlay isis timer holding-multiplier]{lang="EN-US"}**]{#struct_0_x1539_x1935_1900329860}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo overlay isis timer holding-multiplier**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1900329859}
+【命令】
 
-[**[overlay isis timer holding-multiplier]{lang="EN-US"}**[ *value*]{lang="EN-US"}]{#struct_0_x1539_x1935_1300905341}
+**[overlay isis timer holding-multiplier** *value*]
 
-[**[undo overlay isis timer holding-multiplier]{lang="EN-US"}**]{#struct_0_x1539_x1935_1900329866}
+**[undo overlay isis timer holding-multiplier**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1300184446}
+【缺省情况】
 
-[[VXLAN IS-IS Hello]{lang="EN-US"}]{#struct_0_x1539_x1935_1900329865}[报文失效数目为]{style="font-family:宋体"}[3]{lang="EN-US"}[。]{style="font-family:宋体"}
+VXLAN IS-IS Hello报文失效数目为3。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1300118910}
+【视图】
 
-[[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_1900329864}[模式]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口视图]{style="font-family:宋体"}[/NVE]{lang="EN-US"}[模式]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口视图]{style="font-family:宋体"}
+VXLAN模式Tunnel接口视图/NVE模式Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1900329863}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1900329870}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1300315519}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1900329869}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_x1539_x1935_x438322298}[：]{style="font-family:宋体"}[VXLAN IS-IS Hello]{lang="EN-US"}[报文失效数目，取值范围为]{style="font-family:宋体"}[3]{lang="EN-US"}[～]{style="font-family:宋体"}[1000]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[value*]：VXLAN IS-IS Hello报文失效数目，取值范围为3～1000。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x438322299}
+【使用指导】
 
-[[当前]{style="font-family:宋体"}[VTEP]{lang="EN-US"}]{#struct_0_x1539_x1935_x438322300}[可以将邻接关系保持时间（即]{style="font-family:宋体"}[VXLAN IS-IS Hello]{lang="EN-US"}[报文失效数目与]{style="font-family:宋体"}[VXLAN IS-IS Hello]{lang="EN-US"}[报文发送时间间隔的乘积）通过]{style="font-family:宋体"}[VXLAN IS-IS Hello]{lang="EN-US"}[报文通知远端]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[。如果远端]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[在邻接关系保持时间内没有收到来自当前]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[的]{style="font-family:宋体"}[VXLAN IS-IS Hello]{lang="EN-US"}[报文，将宣告邻接关系失效。通过设置]{style="font-family:宋体"}[VXLAN IS-IS Hello]{lang="EN-US"}[报文失效数目和]{style="font-family:宋体"}[VXLAN IS-IS Hello]{lang="EN-US"}[报文的发送时间间隔，可以调整邻接关系保持时间。]{style="font-family:宋体"}
+当前VTEP可以将邻接关系保持时间（即VXLAN IS-IS Hello报文失效数目与VXLAN IS-IS Hello报文发送时间间隔的乘积）通过VXLAN IS-IS Hello报文通知远端VTEP。如果远端VTEP在邻接关系保持时间内没有收到来自当前VTEP的VXLAN IS-IS Hello报文，将宣告邻接关系失效。通过设置VXLAN IS-IS Hello报文失效数目和VXLAN IS-IS Hello报文的发送时间间隔，可以调整邻接关系保持时间。
 
-[[需要注意的是，邻接关系保持时间最大不能超过]{style="font-family:宋体"}[65535]{lang="EN-US"}]{#struct_0_x1539_x1935_x438322301}[秒，超过]{style="font-family:宋体"}[65535]{lang="EN-US"}[秒时，算作]{style="font-family:宋体"}[65535]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+需要注意的是，邻接关系保持时间最大不能超过65535秒，超过65535秒时，算作65535秒。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_411880296}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x438322295}[配置]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口]{style="font-family:宋体"}[101]{lang="EN-US"}[上]{style="font-family:宋体"}[VXLAN IS-IS Hello]{lang="EN-US"}[报文失效数目为]{style="font-family:宋体"}[6]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置Tunnel接口101上VXLAN IS-IS Hello报文失效数目为6。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_x438322296}
+\<Sysname\> system-view
 
-[\[Sysname\] interface tunnel 101]{lang="EN-US"}
+Sysname interface tunnel 101
 
-[\[Sysname-tunnel101\] overlay isis timer holding-multiplier 6]{lang="EN-US"}
+Sysname-tunnel101 overlay isis timer holding-multiplier 6
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1926837391}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[overlay ]{lang="EN-US"}[isis timer hello]{lang="EN-US"}**]{#struct_0_x1539_x1935_x438322290}
-:::
-
-::: {#400420546 .myid}
-[]{#_Toc404798703}[]{#struct_0_x1539_x1935_x438322291}[]{#_Toc393879007}[]{#_Toc383786767}[]{#_Toc371583407}
+·**overlay isis timer hello**
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- overlay isis timer lsp**
 
 ------------------------------------------------------------------------
 
-[**[overlay isis timer lsp]{lang="EN-US"}**]{#struct_0_x1539_x1935_1517992838}[命令用来配置]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[在接口上发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最小时间间隔以及一次可以最多发送的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的数目。]{style="font-family:宋体"}
+**[overlay isis timer lsp**]命令用来配置VXLAN IS-IS在接口上发送LSP的最小时间间隔以及一次可以最多发送的LSP的数目。
 
-[**[undo overlay isis timer lsp]{lang="EN-US"}**]{#struct_0_x1539_x1935_x2099897656}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo overlay isis timer lsp**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1517992837}
+【命令】
 
-[**[overlay isis timer lsp]{lang="EN-US"}**[ ]{lang="EN-US"}*[time ]{lang="EN-US"}*[\[ **count** *count* \]]{lang="EN-US"}]{#struct_0_x1539_x1935_x2099569976}
+**[overlay isis timer lsp***time * **count** *count* ]
 
-[**[undo overlay ]{lang="EN-US"}[isis timer lsp]{lang="EN-US"}**]{#struct_0_x1539_x1935_1517992836}
+**[undo overlay isis timer lsp**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x2099504440}
+【缺省情况】
 
-[[发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1539_x1935_1517992835}[的最小时间间隔为]{style="font-family:宋体"}[100]{lang="EN-US"}[毫秒，一次最多可以发送的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[数目为]{style="font-family:宋体"}[5]{lang="EN-US"}[。]{style="font-family:宋体"}
+发送LSP的最小时间间隔为100毫秒，一次最多可以发送的LSP数目为5。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x2099701048}
+【视图】
 
-[[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_1517992842}[模式]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口视图]{style="font-family:宋体"}[/NVE]{lang="EN-US"}[模式]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口视图]{style="font-family:宋体"}
+VXLAN模式Tunnel接口视图/NVE模式Tunnel接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1517992841}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x2099438901}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1517992840}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x2099373365}
+【参数】
 
-[*[time]{lang="EN-US"}*]{#struct_0_x1539_x1935_1517992839}[：发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最小时间间隔，取值范围为]{style="font-family:宋体"}[100]{lang="EN-US"}[～]{style="font-family:宋体"}[1000]{lang="EN-US"}[，为]{style="font-family:宋体"}[100]{lang="EN-US"}[的整数倍，单位为毫秒。]{style="font-family:宋体"}
+*[time*]：发送LSP的最小时间间隔，取值范围为100～1000，为100的整数倍，单位为毫秒。
 
-[**[count]{lang="EN-US"}**[ ]{lang="EN-US"}*[count]{lang="EN-US"}*]{#struct_0_x1539_x1935_1517992846}[：一次最多可以发送的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[数目，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1000]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[5]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[count***count*]：一次最多可以发送的LSP数目，取值范围为1～1000，缺省值为5。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x2099504437}
+【使用指导】
 
-[[当]{style="font-family:宋体"}[LSDB]{lang="EN-US"}]{#struct_0_x1539_x1935_1517992845}[的内容发生变化时，]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[将把发生变化的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[扩散出去。用户可以通过本命令对]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最小发送时间间隔进行调节。]{style="font-family:宋体"}
+当LSDB的内容发生变化时，VXLAN IS-IS将把发生变化的LSP扩散出去。用户可以通过本命令对LSP的最小发送时间间隔进行调节。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x2099701045}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x820659322}[配置发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最小时间间隔为]{style="font-family:宋体"}[500]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+\# 配置发送LSP的最小时间间隔为500毫秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_x820659323}
+\<Sysname\> system-view
 
-[\[Sysname\] interface tunnel 101]{lang="EN-US"}
+Sysname interface tunnel 101
 
-[\[Sysname-tunnel101\] overlay isis timer lsp 500]{lang="EN-US"}
+Sysname-tunnel101 overlay isis timer lsp 500
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_412031755}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display ]{lang="EN-US"}**]{#struct_0_x1539_x1935_2097195550}**[vxlan]{lang="EN-US"}[ isis ]{lang="EN-US"}[brief]{lang="EN-US"}**
-:::
-
-::::: {#668066240 .myid}
-[]{#_Toc404798704}[]{#struct_0_x1539_x1935_x820659324}[]{#_Toc393879008}
+·**display ****vxlan isis brief**
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- reserved vxlan**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VXLAN命令.files/image001.png){width="63" height="25"}]{lang="EN-US"}]{#struct_0_x1539_x1935_x820659318}
-:::
+![说明](VXLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1539_x1935_x820659319}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[reserved vxlan**]命令用来配置IS-IS协议使用的保留VXLAN。
 
-[**[reserved vxlan]{lang="EN-US"}**]{#struct_0_x1539_x1935_x820659320}[命令用来配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议使用的保留]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo reserved vxlan**]命令用来恢复缺省情况。
 
-[**[undo reserved vxlan]{lang="EN-US"}**]{#struct_0_x1539_x1935_411835147}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x820659321}
+**[reserved vxlan** *vxlan-id*]
 
-[**[reserved vxlan]{lang="EN-US"}**[ *vxlan-id*]{lang="EN-US"}]{#struct_0_x1539_x1935_411900683}
+**[undo reserved vxlan**]
 
-[**[undo reserved vxlan]{lang="EN-US"}**]{#struct_0_x1539_x1935_x820659315}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_412162828}
+没有指定IS-IS协议使用的保留VXLAN。
 
-[[没有指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1539_x1935_x1629963386}[协议使用的保留]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x118132547}
+系统视图
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1629963387}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1447951394}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x1629963388}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1044666867}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1629963389}
+*[vxlan-id*]：保留VXLAN的ID，取值范围为0～16777215。
 
-[*[vxlan-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_x1684216488}[：保留]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[的]{style="font-family:宋体"}[ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[16777215]{lang="EN-US"}[。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1629963382}
+保留VXLAN用来接收和发送VXLAN IS-IS报文。属于同一个VXLAN的VTEP上只有配置了相同的保留VXLAN，VTEP之间才能够正常收发VXLAN IS-IS报文。
 
-[[保留]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_1851235921}[用来接收和发送]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[报文。属于同一个]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[的]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[上只有配置了相同的保留]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[，]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[之间才能够正常收发]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+只能在系统视图下配置一个全局保留VXLAN，该VXLAN不能与VSI下创建的VXLAN相同。
 
-[[只能在系统视图下配置一个全局保留]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_x1629963383}[，该]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[不能与]{style="font-family:宋体"}[VSI]{lang="EN-US"}[下创建的]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[相同。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x877647434}
+\# 配置IS-IS协议使用的保留VXLAN为VXLAN 10000。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x1629963384}[配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议使用的保留]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[为]{style="font-family:宋体"}[VXLAN 10000]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system
 
-[[\<Sysname\> system]{lang="EN-US"}]{#struct_0_x1539_x1935_x1280931961}
-
-[\[Sysname\] reserved vxlan 10000]{lang="EN-US"}
-:::::
-
-::: {#1205560370 .myid}
-[]{#_Toc404798705}[]{#struct_0_x1539_x1935_x1629963385}[]{#_Toc393879009}
+Sysname reserved vxlan 10000
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- reset vxlan isis**
 
 ------------------------------------------------------------------------
 
-[**[reset vxlan isis]{lang="EN-US"}**]{#struct_0_x1539_x1935_285151980}[命令用来清除]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[进程下所有的动态数据，包括]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[的邻居、本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址、远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址、]{style="font-family:宋体"}[VXLAN ID]{lang="EN-US"}[、链路状态数据库等信息。]{style="font-family:宋体"}
+**[reset vxlan isis**]命令用来清除VXLAN IS-IS进程下所有的动态数据，包括VXLAN IS-IS的邻居、本地MAC地址、远端MAC地址、VXLAN ID、链路状态数据库等信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1629963378}
+【命令】
 
-[**[reset vxlan isis]{lang="EN-US"}**]{#struct_0_x1539_x1935_1044470259}
+**[reset vxlan isis**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x971291827}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1629963379}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_326351750}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x136021012}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_326351749}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x2092336155}
+【举例】
 
-[[\# ]{lang="PT-BR"}]{#struct_0_x1539_x1935_326351748}[清除]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[进程下所有的动态数据。]{style="font-family:宋体"}
+\# 清除VXLAN IS-IS进程下所有的动态数据。
 
-[[\<Sysname\> reset vxlan isis]{lang="EN-US"}]{#struct_0_x1539_x1935_326351747}
-:::
-
-::: {#490996559 .myid}
-[]{#_Toc404798706}[]{#struct_0_x1539_x1935_x2092336149}[]{#_Toc393879010}
+\<Sysname\> reset vxlan isis
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- timer lsp-max-age**
 
 ------------------------------------------------------------------------
 
-[**[timer lsp-max-age]{lang="EN-US"}**]{#struct_0_x1539_x1935_326351754}[命令用来配置当前]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[在]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[里的最大生存时间。]{style="font-family:宋体"}
+**[timer lsp-max-age**]命令用来配置当前VTEP生成的LSP在LSDB里的最大生存时间。
 
-[**[undo timer lsp-max-age]{lang="EN-US"}**]{#struct_0_x1539_x1935_x136021016}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo timer lsp-max-age**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1654952685}
+【命令】
 
-[**[timer lsp-max-age ]{lang="EN-US"}***[second]{lang="EN-US"}*[s]{lang="EN-US"}]{#struct_0_x1539_x1935_326351753}
+**[timer lsp-max-age ***second*s]
 
-[**[undo timer lsp-max-age]{lang="EN-US"}**]{#struct_0_x1539_x1935_x136021009}
+**[undo timer lsp-max-age**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_326351752}
+【缺省情况】
 
-[[当前]{style="font-family:宋体"}[VTEP]{lang="EN-US"}]{#struct_0_x1539_x1935_x136021010}[生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[在]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[里的最大生存时间为]{style="font-family:宋体"}[1200]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+当前VTEP生成的LSP在LSDB里的最大生存时间为1200秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_326351751}
+【视图】
 
-[[VXLAN IS-IS]{lang="EN-US"}]{#struct_0_x1539_x1935_x136021011}[视图]{style="font-family:宋体"}
+VXLAN IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1654756077}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_326351758}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x136021020}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_326351757}
+【参数】
 
-[*[seconds]{lang="EN-US"}*]{#struct_0_x1539_x1935_x136021013}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[在]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[里的最大生存时间，取值范围是]{style="font-family:宋体"}[3]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[seconds*]：LSP在LSDB里的最大生存时间，取值范围是3～65535，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1902492550}
+【使用指导】
 
-[[每个]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1539_x1935_438516267}[都有一个最大生存时间，随着时间的推移]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的生存时间将逐渐减小，当]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的生存时间为]{style="font-family:宋体"}[0]{lang="EN-US"}[时，]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[将清除该]{style="font-family:宋体"}[LSP]{lang="EN-US"}[。用户可根据网络的实际情况调整]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最大生存时间。]{style="font-family:宋体"}
+每个LSP都有一个最大生存时间，随着时间的推移LSP的生存时间将逐渐减小，当LSP的生存时间为0时，VXLAN IS-IS将清除该LSP。用户可根据网络的实际情况调整LSP的最大生存时间。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1902492549}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1902492548}[配置生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最大生存时间为]{style="font-family:宋体"}[25]{lang="EN-US"}[分钟，即]{style="font-family:宋体"}[1500]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置生成的LSP的最大生存时间为25分钟，即1500秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_1902492547}
+\<Sysname\> system-view
 
-[\[Sysname\] vxlan-isis]{lang="EN-US"}
+Sysname vxlan-isis
 
-[\[Sysname-vxlan-isis\] timer lsp-max-age 1500]{lang="EN-US"}
+Sysname-vxlan-isis timer lsp-max-age 1500
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_438843948}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display vxlan isis brief]{lang="EN-US"}**]{#struct_0_x1539_x1935_1902492554}
-:::
-
-::: {#-1091829735 .myid}
-[]{#_Toc404798707}[]{#struct_0_x1539_x1935_1902492553}[]{#_Toc393879011}[]{#_Toc383786772}
+·**display vxlan isis brief**
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- timer lsp-refresh**
 
 ------------------------------------------------------------------------
 
-[**[timer lsp-refresh]{lang="EN-US"}**]{#struct_0_x1539_x1935_438581803}[命令用来配置]{style="font-family:宋体"}[LSP]{lang="EN-US"}[刷新周期。]{style="font-family:宋体"}
+**[timer lsp-refresh**]命令用来配置LSP刷新周期。
 
-[**[undo timer lsp-refresh]{lang="EN-US"}**]{#struct_0_x1539_x1935_1902492552}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo timer lsp-refresh**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1902492551}
+【命令】
 
-[**[timer lsp-refresh ]{lang="EN-US"}***[second]{lang="EN-US"}*[s]{lang="EN-US"}]{#struct_0_x1539_x1935_438450731}
+**[timer lsp-refresh ***second*s]
 
-[**[undo timer lsp-refresh]{lang="EN-US"}**]{#struct_0_x1539_x1935_1902492558}
+**[undo timer lsp-refresh**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1902492557}
+【缺省情况】
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1539_x1935_x436159610}[刷新周期为]{style="font-family:宋体"}[900]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+LSP刷新周期为900秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x224980402}
+【视图】
 
-[[VXLAN IS-IS]{lang="EN-US"}]{#struct_0_x1539_x1935_x436159611}[视图]{style="font-family:宋体"}
+VXLAN IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x224914866}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x436159612}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x224849330}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x436159613}
+【参数】
 
-[*[second]{lang="EN-US"}*[s]{lang="EN-US"}]{#struct_0_x1539_x1935_x224783794}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[刷新周期，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65534]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[second*s]：LSP刷新周期，取值范围为1～65534，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x436159606}
+【使用指导】
 
-[**[timer lsp-refresh]{lang="EN-US"}**]{#struct_0_x1539_x1935_x225111475}[命令配置的时间必须小于]{style="font-family:宋体"}**[timer lsp-max-age]{lang="EN-US"}**[命令配置的时间，以保证在]{style="font-family:宋体"}[LSP]{lang="EN-US"}[失效前进行刷新。]{style="font-family:宋体"}
+**[timer lsp-refresh**]命令配置的时间必须小于**timer lsp-max-age**命令配置的时间，以保证在LSP失效前进行刷新。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x454068885}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x436159608}[配置]{style="font-family:宋体"}[LSP]{lang="EN-US"}[刷新周期为]{style="font-family:宋体"}[1500]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置LSP刷新周期为1500秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_x436159602}
+\<Sysname\> system-view
 
-[\[Sysname\] vxlan-isis]{lang="EN-US"}
+Sysname vxlan-isis
 
-[\[Sysname-vxlan-isis\] timer lsp-refresh 1500]{lang="EN-US"}
+Sysname-vxlan-isis timer lsp-refresh 1500
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x224849331}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display vxlan isis brief]{lang="EN-US"}**]{#struct_0_x1539_x1935_x436159603}
+·**display vxlan isis brief**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[timer lsp-max-age]{lang="EN-US"}**]{#struct_0_x1539_x1935_x224783795}
-:::
-
-::: {#1347731002 .myid}
-[]{#_Toc404798708}[]{#struct_0_x1539_x1935_1520155526}[]{#_Toc393879012}[]{#_Toc383786774}
+·**timer lsp-max-age**
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- virtual-system**
 
 ------------------------------------------------------------------------
 
-[**[virtual-system]{lang="EN-US"}**]{#struct_0_x1539_x1935_1520155525}[命令用来创建一个]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[虚拟系统。]{style="font-family:宋体"}
+**[virtual-system**]命令用来创建一个VXLAN IS-IS虚拟系统。
 
-[**[undo virtual-system]{lang="EN-US"}**]{#struct_0_x1539_x1935_656725489}[命令用来删除一个已经存在的]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[虚拟系统。]{style="font-family:宋体"}
+**[undo virtual-system**]命令用来删除一个已经存在的VXLAN IS-IS虚拟系统。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1520155524}
+【命令】
 
-[**[virtual-system]{lang="EN-US"}**[ *system-id*]{lang="EN-US"}]{#struct_0_x1539_x1935_1520155523}
+**[virtual-system** *system-id*]
 
-[**[undo virtual-system ]{lang="EN-US"}***[system-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_1520155530}
+**[undo virtual-system ***system-id*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1520155529}
+【缺省情况】
 
-[[不存在任何]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}]{#struct_0_x1539_x1935_655939057}[虚拟系统。]{style="font-family:宋体"}
+不存在任何VXLAN IS-IS虚拟系统。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1520155528}
+【视图】
 
-[[VXLAN IS-IS]{lang="EN-US"}]{#struct_0_x1539_x1935_656004593}[视图]{style="font-family:宋体"}
+VXLAN IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x313361078}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1520155527}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1520155534}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_656791024}
+【参数】
 
-[*[system-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_1520155533}[：虚拟系统的系统]{style="font-family:宋体"}[ID]{lang="EN-US"}[，用来标识虚拟系统，格式为]{style="font-family:宋体"}[XXXX.XXXX.XXXX]{lang="EN-US"}[，]{style="font-family:宋体"}[X]{lang="EN-US"}[表示十六进制数字。]{style="font-family:宋体"}
+*[system-id*]：虚拟系统的系统ID，用来标识虚拟系统，格式为XXXX.XXXX.XXXX，X表示十六进制数字。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x818496634}
+【使用指导】
 
-[[当本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1539_x1935_x1600406572}[地址数超过系统的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[分片集所能携带的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数时，可以配置]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[虚拟系统来扩展]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的分片数量，以增加系统所能发布的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数量。]{style="font-family:宋体"}
+当本地MAC地址数超过系统的LSP分片集所能携带的MAC地址数时，可以配置VXLAN IS-IS虚拟系统来扩展LSP的分片数量，以增加系统所能发布的MAC地址数量。
 
-[[创建虚拟系统前，系统最多可以发送约]{style="font-family:宋体"}[55]{lang="EN-US"}]{#struct_0_x1539_x1935_1365172374}[×]{style="font-family:宋体"}[2^10^]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息，每创建一个虚拟系统，最多可以多发送]{style="font-family:宋体"}[55]{lang="EN-US"}[×]{style="font-family:宋体"}[2^10^]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。用户可以根据本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表的规模，来决定创建的虚拟系统的个数。]{style="font-family:宋体"}
+创建虚拟系统前，系统最多可以发送约55×2^10^的MAC地址信息，每创建一个虚拟系统，最多可以多发送55×2^10^的MAC地址信息。用户可以根据本地MAC地址表的规模，来决定创建的虚拟系统的个数。
 
-[[创建虚拟系统时，用户需要保证所配置的虚拟系统的系统]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1539_x1935_x818496635}[在网络中是唯一的。]{style="font-family:宋体"}
+创建虚拟系统时，用户需要保证所配置的虚拟系统的系统ID在网络中是唯一的。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1600341036}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x818496636}[创建一个系统]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[0001.0001.0001]{lang="EN-US"}[的虚拟系统。]{style="font-family:宋体"}
+\# 创建一个系统ID为0001.0001.0001的虚拟系统。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_x818496637}
+\<Sysname\> system-view
 
-[\[Sysname\] vxlan-isis]{lang="EN-US"}
+Sysname vxlan-isis
 
-[\[Sysname-vxlan-isis\] virtual-system 0001.0001.0001]{lang="EN-US"}
+Sysname-vxlan-isis virtual-system 0001.0001.0001
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1600209964}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display vxlan isis brief]{lang="EN-US"}**]{#struct_0_x1539_x1935_x818496630}
-:::
-
-::: {#1415077958 .myid}
-[]{#_Toc404798709}[]{#struct_0_x1539_x1935_x1600144428}[]{#_Toc393879013}[]{#_Toc383786779}[]{#_Toc371583429}
+·**display vxlan isis brief**
 
 **VXLAN \-- VXLAN IS-IS配置命令 \-- vxlan-isis**
 
 ------------------------------------------------------------------------
 
-[**[vxlan-isis]{lang="EN-US"}**]{#struct_0_x1539_x1935_x818496631}[命令用来]{style="font-family:宋体"}[创建]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[进程，并进入]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+**[vxlan-isis**]命令用来创建VXLAN IS-IS进程，并进入VXLAN IS-IS视图。
 
-[**[undo vxlan-isis]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1600078892}[命令用来删除]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[进程，并清除]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}[进程下的配置数据。]{style="font-family:宋体"}
+**[undo vxlan-isis**]命令用来删除VXLAN IS-IS进程，并清除VXLAN IS-IS进程下的配置数据。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x818496632}
+【命令】
 
-[**[vxlan-isis]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1600013356}
+**[vxlan-isis**]
 
-[**[undo vxlan-isis]{lang="EN-US"}**]{#struct_0_x1539_x1935_x818496633}
+**[undo vxlan-isis**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1599947820}
+【缺省情况】
 
-[[未创建]{style="font-family:宋体"}[VXLAN IS-IS]{lang="EN-US"}]{#struct_0_x1539_x1935_x818496626}[进程。]{style="font-family:宋体"}
+未创建VXLAN IS-IS进程。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1600275499}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x818496627}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1600209963}
+【缺省用户角色】
 
-[[network-admin]{lang="PT-BR"}]{#struct_0_x1539_x1935_x1627800698}
+network-admin
 
-[[mdc-admim]{lang="PT-BR"}]{#struct_0_x1539_x1935_1607476734}
+mdc-admim
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1627800699}
+【举例】
 
-[[\# ]{lang="PT-BR"}]{#struct_0_x1539_x1935_x1121406621}[创建]{style="font-family:宋体"}[VXLAN IS-IS]{lang="PT-BR"}[进程]{style="font-family:宋体"}[，]{style="font-family:宋体"}[并进入]{style="font-family:宋体"}[VXLAN IS-IS]{lang="PT-BR"}[视图。]{style="font-family:宋体"}
+\# 创建VXLAN IS-IS进程，并进入VXLAN IS-IS视图。
 
-[[\<Sysname\> system-view]{lang="PT-BR"}]{#struct_0_x1539_x1935_x1627800700}
+\<Sysname\> system-view
 
-[\[Sysname\] vxlan-isis]{lang="PT-BR"}
+Sysname vxlan-isis
 
-[\[Sysname-vxlan-isis\]]{lang="PT-BR"}
+Sysname-vxlan-isis
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1963117271}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}**[display ]{lang="EN-US"}**]{#struct_0_x1539_x1935_1486980077}**[vxlan]{lang="EN-US"}[ isis ]{lang="EN-US"}[brief]{lang="EN-US"}**[]{#_Toc382494925}[]{#_Toc382494940}
-:::
-
-::::: {#1742433432 .myid}
-[]{#_Toc404798711}[]{#struct_0_x1539_x1935_1560422567}[]{#_Toc375835896}[]{#_Toc290542288}
+·**display ****vxlan isis brief**
 
 **VXLAN \-- VXLAN IP网关配置命令 \-- bandwidth**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VXLAN命令.files/image001.png){width="63" height="25"}]{lang="EN-US"}]{#struct_0_x1539_x1935_x1627800696}
-:::
+![说明](VXLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1539_x1935_x1168460788}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[bandwidth**]命令用来配置接口的期望带宽。
 
-[**[bandwidth]{lang="DA"}**]{#struct_0_x1539_x1935_x1627800697}[命令用来配置接口的期望带宽。]{style="font-family:宋体"}
+**[undo bandwidth**]命令用来恢复缺省情况。
 
-[**[undo bandwidth]{lang="DA"}**]{#struct_0_x1539_x1935_397623153}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1627800690}
+**[bandwidth** *bandwidth-value*]
 
-[**[bandwidth]{lang="EN-US"}**[ *bandwidth-value*]{lang="EN-US"}]{#struct_0_x1539_x1935_1963707094}
+**[undo bandwidth**]
 
-[**[undo bandwidth]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1627800691}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x765176261}
+接口的期望带宽＝接口的最大速率÷1000（kbit/s）。
 
-[[接口的期望带宽＝接口的最大速率÷]{style="font-family:宋体"}[1000]{lang="EN-US"}]{#struct_0_x1539_x1935_x1152394144}[（]{style="font-family:宋体"}[kbit/s]{lang="EN-US"}[）。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_328514438}
+VSI虚接口视图
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x751877835}[虚接口视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1165607634}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_328514437}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x751877820}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_328514436}
+*[bandwidth-value*]：接口的期望带宽，取值范围为1～400000000，单位为kbps。
 
-[*[bandwidth-value]{lang="EN-US"}*]{#struct_0_x1539_x1935_x751877821}[：]{style="font-family:宋体"}[接口的期望带宽]{style="font-family:宋体"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[400000000]{lang="EN-US"}[，单位为]{style="font-family:宋体"}[kbps]{lang="EN-US"}[。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_328514435}
+接口的期望带宽会对下列内容有影响：
 
-[[接口的期望带宽会对下列内容有影响：]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x751877822}
+·CBQ队列带宽。具体介绍请参见"ACL和QoS配置指导"中的"[拥塞管理"。]
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[CBQ]{lang="EN-US"}]{#struct_0_x1539_x1935_1166066385}[队列带宽。具体介绍请参见"]{style="font-family:宋体"}[ACL]{lang="EN-US"}[和]{style="font-family:宋体"}[QoS]{lang="EN-US"}[配置指导"中的"[拥塞管理]{#_Toc263760148}"。]{style="font-family:宋体"}
+·链路开销值。具体介绍请参见"三层技术-IP路由配置指导"中的"OSPF"、"OSPFv3"和"IS-IS"。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[链路开销值。具体介绍请参见"三层技术]{lang="EN-US" style="font-family:宋体"}[-IP]{lang="EN-US"}]{#struct_0_x1539_x1935_328514442}[路由配置指导"中的"]{lang="EN-US" style="font-family:宋体"}[OSPF]{lang="EN-US"}["、"]{lang="EN-US" style="font-family:宋体"}[OSPFv3]{lang="EN-US"}["和"]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}["。]{lang="EN-US" style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1969111359}
+\# 配置接口VSI-interface100的期望带宽为10000kbps。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_328514441}[配置接口]{style="font-family:宋体"}[VSI-interface100]{lang="EN-US"}[的]{style="font-family:宋体"}[期望带宽]{style="font-family:宋体"}[为]{style="font-family:宋体"}[10000kbps]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_328514440}
+Sysname interface vsi-interface 100
 
-[\[Sysname\] interface vsi-interface 100]{lang="EN-US"}
-
-[\[Sysname-Vsi-interface100\] bandwidth 10000]{lang="EN-US"}
-:::::
-
-::: {#1948332219 .myid}
-[]{#_Toc404798712}[]{#struct_0_x1539_x1935_1969111357}[]{#_Toc375835897}[]{#_Toc290542290}
+Sysname-Vsi-interface100 bandwidth 10000
 
 **VXLAN \-- VXLAN IP网关配置命令 \-- default**
 
 ------------------------------------------------------------------------
 
-[**[default]{lang="EN-US"}**]{#struct_0_x1539_x1935_328514439}[命令用来恢复当前接口的缺省配置。]{style="font-family:宋体"}
+**[default**]命令用来恢复当前接口的缺省配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x751877834}
+【命令】
 
-[**[default]{lang="EN-US"}**]{#struct_0_x1539_x1935_1165673170}
+**[default**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_328514446}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_1969111363}[虚接口视图]{style="font-family:宋体"}
+VSI虚接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1853343818}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_328514445}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1969111362}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1499946610}
+【使用指导】
 
-[[接口下的某些配置恢复到缺省情况后，会对设备上当前运行的业务产生影响。建议您在执行该命令前，完全了解其对网络产生的影响。]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1706836157}
+接口下的某些配置恢复到缺省情况后，会对设备上当前运行的业务产生影响。建议您在执行该命令前，完全了解其对网络产生的影响。
 
-[[您可以在执行]{style="font-family:宋体"}**[default]{lang="EN-US"}**]{#struct_0_x1539_x1935_1499946611}[命令后通过]{style="font-family:宋体"}**[display this]{lang="EN-US"}**[命令确认执行效果。对于未能成功恢复缺省的配置，建议您查阅相关功能的命令手册，手工执行恢复该配置缺省情况的命令。如果操作仍然不能成功，您可以通过设备的提示信息定位原因。]{style="font-family:宋体"}
+您可以在执行**default**命令后通过**display this**命令确认执行效果。对于未能成功恢复缺省的配置，建议您查阅相关功能的命令手册，手工执行恢复该配置缺省情况的命令。如果操作仍然不能成功，您可以通过设备的提示信息定位原因。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1706770621}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1499946608}[将接口]{style="font-family:宋体"}[VSI-interface100]{lang="EN-US"}[恢复为缺省配置。]{style="font-family:宋体"}
+\# 将接口VSI-interface100恢复为缺省配置。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_1499946609}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vsi-interface 100]{lang="EN-US"}
+Sysname interface vsi-interface 100
 
-[\[Sysname-Vsi-interface100\] default]{lang="EN-US"}
+Sysname-Vsi-interface100 default
 
-[This command will restore the default settings. Continue? \[Y/N\]:y]{lang="EN-US"}
-:::
-
-::: {#437833442 .myid}
-[]{#_Toc290542294}[]{#_Toc263067821}[]{#_Toc207010297}[]{#_Toc207010030}[]{#_Toc139515319}[]{#_Toc137103152}[]{#_Toc404798713}[]{#struct_0_x1539_x1935_1706246332}[]{#_Toc375835898}
+This command will restore the default settings. Continue? [Y/N:y]
 
 **VXLAN \-- VXLAN IP网关配置命令 \-- description**
 
 ------------------------------------------------------------------------
 
-[**[description]{lang="EN-US"}**]{#struct_0_x1539_x1935_1499946606}[命令用来配置当前接口的描述信息。]{style="font-family:宋体"}
+**[description**]命令用来配置当前接口的描述信息。
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_x1539_x1935_1706967228}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo description**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x420839275}
+【命令】
 
-[**[description]{lang="EN-US"}**[ *text*]{lang="EN-US"}]{#struct_0_x1539_x1935_1499946607}
+**[description** *text*]
 
-[**[undo]{lang="EN-US"}**[ **description**]{lang="EN-US"}]{#struct_0_x1539_x1935_1706901692}
+**[undo** **description**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x799041692}
+【缺省情况】
 
-[[接口的描述信息为"*接口名*]{style="font-family:宋体"}[ Interface]{lang="EN-US"}]{#struct_0_x1539_x1935_1499946604}["，例如：]{style="font-family:宋体"}[Vsi-interface100 Interface]{lang="EN-US"}[。]{style="font-family:宋体"}
+接口的描述信息为"*接口名* Interface"，例如：Vsi-interface100 Interface。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1707098300}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_1499946605}[虚接口视图]{style="font-family:宋体"}
+VSI虚接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1499946602}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1706705084}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1499946603}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1706639548}
+【参数】
 
-[*[text]{lang="EN-US"}*]{#struct_0_x1539_x1935_x838705550}[：接口的描述字符串，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[text*]：接口的描述字符串，为1～255个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1107453012}
+【使用指导】
 
-[[当设备上存在多个接口时，可以根据接口的连接信息或用途来配置接口的描述信息，以便区别和管理各接口。]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x838705549}
+当设备上存在多个接口时，可以根据接口的连接信息或用途来配置接口的描述信息，以便区别和管理各接口。
 
-[[本命令仅用于标识某接口，并无特别的功能。使用]{style="font-family:宋体"}**[display interface]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1106994261}[等命令可以看到设置的描述信息。]{style="font-family:宋体"}
+本命令仅用于标识某接口，并无特别的功能。使用**display interface**等命令可以看到设置的描述信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x654798480}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x838705552}[配置接口]{style="font-family:宋体"}[VSI-interface100]{lang="EN-US"}[的描述信息为"]{style="font-family:宋体"}[gateway for VXLAN 10]{lang="EN-US"}["。]{style="font-family:宋体"}
+\# 配置接口VSI-interface100的描述信息为"gateway for VXLAN 10"。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_x1107584084}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vsi-interface 100]{lang="EN-US"}
+Sysname interface vsi-interface 100
 
-[\[Sysname-Vsi-interface100\] description gateway for VXLAN 10]{lang="EN-US"}
-:::
-
-::: {#429599933 .myid}
-[]{#_Toc404798714}[]{#struct_0_x1539_x1935_x838705551}[]{#_Toc375835899}
+Sysname-Vsi-interface100 description gateway for VXLAN 10
 
 **VXLAN \-- VXLAN IP网关配置命令 \-- display interface vsi-interface**
 
 ------------------------------------------------------------------------
 
-[**[display interface ]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1107518548}**[vsi-interface]{lang="DE"}**[命令用来显示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口的相关信息。]{style="font-family:宋体"}
+**[display interface **]**vsi-interface**命令用来显示VSI虚接口的相关信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x191796501}
+【命令】
 
-[**[display interface]{lang="EN-US"}**[ \[ ]{lang="EN-US"}]{#struct_0_x1539_x1935_x838705554}**[vsi-interface]{lang="DE"}**[ \[ *vsi-interface-id* \] \] \[ **brief** \[ **description** \| **down** \] \]]{lang="EN-US"}
+**[display interface** **vsi-interface** [ *vsi-interface-id*    **brief** [ **description** \| **down** ] ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1107190868}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x838705553}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1107649620}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x838705556}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_x1107321940}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x153249948}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1539_x1935_x838705555}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1107256404}
+【参数】
 
-[*[vsi-nterface-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_964737130}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[vsi-nterface-id*]：VSI虚接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[**[brief]{lang="EN-US"}**]{#struct_0_x1539_x1935_x838705558}[：显示接口的概要信息。如果不指定该参数，则显示接口的详细信息。]{style="font-family:宋体"}
+**[brief**]：显示接口的概要信息。如果不指定该参数，则显示接口的详细信息。
 
-[**[description]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1106928724}[：用来显示用户配置的接口的全部描述信息。如果某接口的描述信息超过]{style="font-family:宋体"}[27]{lang="EN-US"}[个字符，不指定该参数时，只显示描述信息中的前]{style="font-family:宋体"}[27]{lang="EN-US"}[个字符，超出部分不显示；指定该参数时，可以显示全部描述信息。]{style="font-family:宋体"}
+**[description**]：用来显示用户配置的接口的全部描述信息。如果某接口的描述信息超过27个字符，不指定该参数时，只显示描述信息中的前27个字符，超出部分不显示；指定该参数时，可以显示全部描述信息。
 
-[**[down]{lang="EN-US"}**]{#struct_0_x1539_x1935_x838705557}[：显示当前物理状态为]{style="font-family:宋体"}[down]{lang="EN-US"}[的接口的信息以及]{style="font-family:宋体"}[down]{lang="EN-US"}[的原因。如果不指定该参数，则不会根据接口物理状态来过滤显示信息。]{style="font-family:宋体"}
+**[down**]：显示当前物理状态为down的接口的信息以及down的原因。如果不指定该参数，则不会根据接口物理状态来过滤显示信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1117609586}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果不指定接口类型（]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1539_x1935_955200808}**[vsi-interface]{lang="DE"}**[），将显示设备支持的所有接口的相关信息。]{lang="EN-US" style="font-family:宋体"}
+·如果不指定接口类型（**vsi-interface**），将显示设备支持的所有接口的相关信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定接口类型，不指定接口编号（]{lang="EN-US" style="font-family:宋体"}*[vsi-interface-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_1117609587}[）]{lang="EN-US" style="font-family:
-宋体"}[，则显示所有]{lang="EN-US" style="font-family:宋体"}[VSI]{lang="EN-US"}[虚]{style="font-family:宋体"}[接口的信息。]{lang="EN-US" style="font-family:宋体"}
+·如果指定接口类型，不指定接口编号（*vsi-interface-id*），则显示所有VSI虚接口的信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果同时指定接口类型和接口编号，则显示指定]{style="font-family:宋体"}]{#struct_0_x1539_x1935_955266344}[VSI]{lang="EN-US"}[虚接口的信息。]{style="font-family:宋体"}
+·如果同时指定接口类型和接口编号，则显示指定VSI虚接口的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1117609584}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_955331880}[显示接口]{style="font-family:宋体"}[VSI-interface100]{lang="EN-US"}[的相关信息。]{style="font-family:宋体"}
+\# 显示接口VSI-interface100的相关信息。
 
-[[\<Sysname\> ]{lang="EN-US"}]{#struct_0_x1539_x1935_1117609582}[display interface vsi-interface 100]{lang="NL-BE"}
+\<Sysname\> display interface vsi-interface 100
 
-[Vsi-interface100]{lang="IT"}
+Vsi-interface100
 
-[Current state: UP]{lang="IT"}
+Current state: UP
 
-[Line protocol state: UP]{lang="IT"}
+Line protocol state: UP
 
-[Description: Vsi-interface100 Interface]{lang="IT"}
+Description: Vsi-interface100 Interface
 
-[Bandwidth: 1000000kbps]{lang="IT"}
+Bandwidth: 1000000kbps
 
-[Maximum Transmit Unit: 1500]{lang="IT"}
+Maximum Transmit Unit: 1500
 
-[Internet Address is 10.1.1.1/24 Primary]{lang="IT"}
+Internet Address is 10.1.1.1/24 Primary
 
-[IP Packet Frame Type:PKTFMT_ETHNT_2, Hardware Address: 0011-2200-0102]{lang="IT"}
+IP Packet Frame Type:PKTFMT_ETHNT_2, Hardware Address: 0011-2200-0102
 
-[IPv6 Packet Frame Type:PKTFMT_ETHNT_2, Hardware Address: 0011-2200-0102]{lang="IT"}
+IPv6 Packet Frame Type:PKTFMT_ETHNT_2, Hardware Address: 0011-2200-0102
 
-[Physical: Unknown, baudrate: 1000000 kbps]{lang="IT"}
+Physical: Unknown, baudrate: 1000000 kbps
 
-[Last clearing of counters: Never]{lang="IT"}
+Last clearing of counters: Never
 
-[Last 300 seconds input rate: 0 bytes/sec, 0 bits/sec, 0 packets/sec]{lang="IT"}
+Last 300 seconds input rate: 0 bytes/sec, 0 bits/sec, 0 packets/sec
 
-[Last 300 seconds output rate: 0 bytes/sec, 0 bits/sec, 0 packets/sec]{lang="IT"}
+Last 300 seconds output rate: 0 bytes/sec, 0 bits/sec, 0 packets/sec
 
-[Input: 0 packets, 0 bytes, 0 drops]{lang="IT"}
+Input: 0 packets, 0 bytes, 0 drops
 
-[Output: 0 packets, 0 bytes, 0 drops]{lang="IT"}
+Output: 0 packets, 0 bytes, 0 drops
 
-[[表1-22 ]{lang="EN-US"}[display interface vsi-interface]{lang="EN-US"}]{#struct_0_x1539_x1935_954938664}[命令显示信息描述表]{style="font-family:黑体"}
+表1-22 display interface vsi-interface命令显示信息描述表
 
-[]{#table_struct_0_x1398677436}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1117609580}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1117609581}
+描述
 
-[[Vsi-interface100]{lang="NL-BE"}]{#struct_0_x1539_x1935_1117609579}
+Vsi-interface100
 
-[[接口]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1221042574}[VSI-interface100]{lang="NL-BE"}[的相关信息]{style="font-family:宋体"}
+接口VSI-interface100的相关信息
 
-[[C]{lang="NL-BE"}[urrent state]{lang="EN-US"}]{#struct_0_x1539_x1935_x1221042576}
+Current state
 
-[[接口的物理状态和管理状态，取值包括：]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1221042575}
+接口的物理状态和管理状态，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Administr]{lang="EN-US"}]{#struct_0_x1539_x1935_x1221042577}[a]{lang="EN-US"}[t]{lang="EN-US"}[ive]{lang="EN-US"}[ly DOWN]{lang="EN-US"}[：表示该接口已经通过]{lang="EN-US" style="font-family:宋体"}**[shutdown]{lang="EN-US"}**[命令被关闭，即管理状态为关闭]{lang="EN-US" style="font-family:宋体"}
+·Administratively DOWN：表示该接口已经通过**shutdown**命令被关闭，即管理状态为关闭
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_x1539_x1935_x1221042580}[：该接口的管理状态为开启，但物理状态为关闭]{style="font-family:宋体"}
+·DOWN：该接口的管理状态为开启，但物理状态为关闭
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_x1539_x1935_x1221042582}[：该接口的管理状态和物理状态均为开启]{style="font-family:宋体"}
+·UP：该接口的管理状态和物理状态均为开启
 
-[[Line protocol state]{lang="EN-US"}]{#struct_0_x1539_x1935_x1221042581}
+Line protocol state
 
-[[接口的链路层协议状态。其值由链路层经过参数协商决定，取值包括：]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x2030346638}
+接口的链路层协议状态。其值由链路层经过参数协商决定，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_x1539_x1935_x2030346640}[：表示该接口的链路层协议状态为开启]{style="font-family:宋体"}
+·UP：表示该接口的链路层协议状态为开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP (spoofing)]{lang="EN-US"}]{#struct_0_x1539_x1935_x2030346642}[：表示该接口的链路层协议状态为开启，但实际可能没有对应的链路，或者所对应的链路不是永久存在而是按需建立。通常]{style="font-family:宋体"}[NULL]{lang="EN-US"}[、]{style="font-family:宋体"}[LoopBack]{lang="EN-US"}[等接口会具有该属性]{style="font-family:宋体"}
+·UP (spoofing)：表示该接口的链路层协议状态为开启，但实际可能没有对应的链路，或者所对应的链路不是永久存在而是按需建立。通常NULL、LoopBack等接口会具有该属性
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_x1539_x1935_x2030346641}[：表示该接口的链路层协议状态为关闭]{style="font-family:宋体"}
+·DOWN：表示该接口的链路层协议状态为关闭
 
-[[Description]{lang="EN-US"}]{#struct_0_x1539_x1935_x2030346643}
+Description
 
-[[接口的描述信息]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x2030346646}
+接口的描述信息
 
-[[Bandwidth]{lang="NL-BE"}]{#struct_0_x1539_x1935_x74031502}
+Bandwidth
 
-[[接口的期望带宽，单位为]{style="font-family:宋体"}[kbps]{lang="EN-US"}]{#struct_0_x1539_x1935_x74031501}
+接口的期望带宽，单位为kbps
 
-[[Maximum Transmit Unit]{lang="EN-US"}]{#struct_0_x1539_x1935_x74031503}
+Maximum Transmit Unit
 
-[[接口的最大传输单元]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x74031506}
+接口的最大传输单元
 
-[[Internet protocol processing]{lang="EN-US"}]{#struct_0_x1539_x1935_1119772267}
+Internet protocol processing
 
-[[Tunnel]{lang="NO-BOK"}]{#struct_0_x1539_x1935_x1218879885}[接口的]{style="font-family:宋体"}[IP]{lang="NO-BOK"}[地址。如果没有为]{style="font-family:宋体"}[Tunnel]{lang="NO-BOK"}[接口配置]{style="font-family:宋体"}[IP]{lang="NO-BOK"}[地址，则该字段显示为]{style="font-family:宋体"}[Internet protocol processing: disabled]{lang="EN-US"}[，表示不能处理]{style="font-family:宋体"}[IP]{lang="NO-BOK"}[报文]{style="font-family:宋体"}
+Tunnel接口的IP地址。如果没有为Tunnel接口配置IP地址，则该字段显示为Internet protocol processing: disabled，表示不能处理IP报文
 
-[[Primary]{lang="EN-US"}]{#struct_0_x1539_x1935_x1218879888}[表示该]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为接口的主]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+Primary表示该IP地址为接口的主IP地址
 
-[[IP Packet Frame Type]{lang="EN-US"}]{#struct_0_x1539_x1935_x1218879890}[，]{style="font-family:宋体"}[Hardware Address]{lang="EN-US"}
+IP Packet Frame Type，Hardware Address
 
-[[IP]{lang="EN-US"}]{#struct_0_x1539_x1935_x1218879892}[报文发送帧格式，硬件地址]{style="font-family:宋体"}
+IP报文发送帧格式，硬件地址
 
-[[IPv6 Packet Frame Type]{lang="EN-US"}]{#struct_0_x1539_x1935_x1218879891}[，]{style="font-family:宋体"}[Hardware Address]{lang="EN-US"}
+IPv6 Packet Frame Type，Hardware Address
 
-[[IPv6]{lang="EN-US"}]{#struct_0_x1539_x1935_x1218879894}[报文发送帧格式，硬件地址]{style="font-family:宋体"}
+IPv6报文发送帧格式，硬件地址
 
-[[Physical]{lang="EN-US"}]{#struct_0_x1539_x1935_x2028183950}
+Physical
 
-[[接口的物理类型，取值为]{style="font-family:宋体"}[Unknown]{lang="EN-US"}]{#struct_0_x1539_x1935_x2028183949}
+接口的物理类型，取值为Unknown
 
-[[baudrate]{lang="IT"}]{#struct_0_x1539_x1935_x2028183951}
+baudrate
 
-[[接口的波特率，单位为]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x2028183954}[kbps]{lang="IT"}
+接口的波特率，单位为kbps
 
-[[Last clearing of counters]{lang="EN-US"}]{#struct_0_x1539_x1935_x2028183956}
+Last clearing of counters
 
-[[最近一次使用]{style="font-family:宋体"}**[reset counters interface]{lang="EN-US"}**]{#struct_0_x1539_x1935_x2028183955}[命令清除接口下的统计信息的时间（如果从设备启动一直没有执行]{style="font-family:宋体"}**[reset counters interface]{lang="EN-US"}**[命令清除过该接口下的统计信息，则显示]{style="font-family:宋体"}[Never]{lang="EN-US"}[）]{style="font-family:宋体"}
+最近一次使用**reset counters interface**命令清除接口下的统计信息的时间（如果从设备启动一直没有执行**reset counters interface**命令清除过该接口下的统计信息，则显示Never）
 
-[[Last 300 seconds input rate]{lang="EN-US"}]{#struct_0_x1539_x1935_x2028183957}
+Last 300 seconds input rate
 
-[[最近]{style="font-family:宋体"}[300]{lang="EN-US"}]{#struct_0_x1539_x1935_x71868814}[秒钟的平均输入速率：]{style="font-family:宋体"}[bytes/sec]{lang="EN-US"}[表示平均每秒输入的字节数，]{style="font-family:宋体"}[bits/sec]{lang="EN-US"}[表示平均每秒输入的比特数，]{style="font-family:宋体"}[packets/sec]{lang="EN-US"}[表示平均每秒输入的包数]{style="font-family:宋体"}
+最近300秒钟的平均输入速率：bytes/sec表示平均每秒输入的字节数，bits/sec表示平均每秒输入的比特数，packets/sec表示平均每秒输入的包数
 
-[[Last 300 seconds output rate]{lang="EN-US"}]{#struct_0_x1539_x1935_x71868813}
+Last 300 seconds output rate
 
-[[最近]{style="font-family:宋体"}[300]{lang="EN-US"}]{#struct_0_x1539_x1935_x71868815}[秒钟的平均输出速率：]{style="font-family:宋体"}[bytes/sec]{lang="EN-US"}[表示平均每秒输出的字节数，]{style="font-family:宋体"}[bits/sec]{lang="EN-US"}[表示平均每秒输出的比特数，]{style="font-family:宋体"}[packets/sec]{lang="EN-US"}[表示平均每秒输出的包数]{style="font-family:宋体"}
+最近300秒钟的平均输出速率：bytes/sec表示平均每秒输出的字节数，bits/sec表示平均每秒输出的比特数，packets/sec表示平均每秒输出的包数
 
-[[Input: 0 packets, 0 bytes, 0 drops]{lang="NL-BE"}]{#struct_0_x1539_x1935_x71868818}
+Input: 0 packets, 0 bytes, 0 drops
 
-[[总计输入的报文数]{style="font-family:宋体"}[, ]{lang="EN-US"}]{#struct_0_x1539_x1935_x71868820}[总计输入的字节，总计丢弃的输入报文数]{style="font-family:宋体"}
+总计输入的报文数, 总计输入的字节，总计丢弃的输入报文数
 
-[[Output: 0 packets, 0 bytes, 0 drops]{lang="NL-BE"}]{#struct_0_x1539_x1935_x71868822}
+Output: 0 packets, 0 bytes, 0 drops
 
-[[总计输出的报文数]{style="font-family:宋体"}[, ]{lang="EN-US"}]{#struct_0_x1539_x1935_x71868821}[总计输出的字节，总计丢弃的输出报文数]{style="font-family:宋体"}
+总计输出的报文数, 总计输出的字节，总计丢弃的输出报文数
 
-[ ]{lang="EN-US"}
+\# 显示所有VSI虚接口的概要信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1495621234}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口的概要信息。]{style="font-family:宋体"}
+\<Sysname\> display interface vsi-interface brief
 
-[[\<Sysname\> display interface vsi-interface brief]{lang="EN-US"}]{#struct_0_x1539_x1935_1995695053}
+Brief information of interface(s) under route mode:
 
-[Brief information of interface(s) under route mode:]{lang="EN-US"}
+Link: ADM - administratively down; Stby - standby
 
-[Link: ADM - administratively down; Stby - standby]{lang="EN-US"}
+Protocol: (s) - spoofing
 
-[Protocol: (s) - spoofing]{lang="EN-US"}
+Interface            Link Protocol Main IP         Description
 
-[Interface            Link Protocol Main IP         Description]{lang="EN-US"}
+Vsi100               DOWN DOWN     \--
 
-[Vsi100               DOWN DOWN     \--]{lang="EN-US"}
+\# 显示接口VSI-interface100的概要信息，包括用户配置的全部描述信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_239121975}[显示接口]{style="font-family:宋体"}[VSI-interface100]{lang="EN-US"}[的概要信息，包括用户配置的全部描述信息。]{style="font-family:宋体"}
+\<Sysname\> display interface vsi-interface 100 brief description
 
-[[\<Sysname\> display interface vsi-interface 100 brief description]{lang="EN-US"}]{#struct_0_x1539_x1935_1495621232}
+Brief information of interface(s) under route mode:
 
-[Brief information of interface(s) under route mode:]{lang="EN-US"}
+Link: ADM - administratively down; Stby - standby
 
-[Link: ADM - administratively down; Stby - standby]{lang="EN-US"}
+Protocol: (s) - spoofing
 
-[Protocol: (s) - spoofing]{lang="EN-US"}
+Interface            Link Protocol Main IP         Description
 
-[Interface            Link Protocol Main IP         Description]{lang="EN-US"}
+Vsi100               UP    UP      1.1.1.1         VSI-interface100
 
-[Vsi100               UP    UP      1.1.1.1         VSI-interface100]{lang="EN-US"}
+\# 显示当前状态为down的接口的信息以及DOWN的原因。
 
-[ ]{lang="EN-US"}
+\<Sysname\> display interface brief down
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1996088269}[显示当前状态为]{style="font-family:宋体"}[down]{lang="EN-US"}[的接口的信息以及]{style="font-family:宋体"}[DOWN]{lang="EN-US"}[的原因。]{style="font-family:宋体"}
+Brief information of interface(s) under route mode:
 
-[[\<Sysname\> display interface brief down]{lang="EN-US"}]{#struct_0_x1539_x1935_1495621230}
+Link: ADM - administratively down; Stby - standby
 
-[Brief information of interface(s) under route mode:]{lang="NL-BE"}
+Interface            Link Cause
 
-[Link: ADM - administratively down; Stby - standby]{lang="NL-BE"}
+Vsi100               DOWN Administratively
 
-[Interface            Link Cause]{lang="NL-BE"}
+Vsi200               DOWN Administratively
 
-[Vsi100]{lang="EN-US"}[               DOWN ]{lang="NL-BE"}[Administratively]{lang="EN-US"}
+表1-23 display interface vsi-interface brief命令显示信息描述表
 
-[Vsi200]{lang="EN-US"}[               DOWN ]{lang="NL-BE"}[Administratively]{lang="EN-US"}
+字段
 
-[]{#struct_0_x1539_x1935_1995957197}[[表1-23 ]{lang="EN-US"}[display interface vsi-interface brief]{lang="EN-US"}]{#_Ref129008332}[命令显示信息描述]{style="font-family:黑体"}[表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_1673799228}[[字段]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1495621228}
+Brief information of interface(s) under route mode:
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1495621229}
+三层模式下（route）的接口的概要信息，即三层接口的概要信息
 
-[[Brief information of interface(s) under route mode:]{lang="EN-US"}]{#struct_0_x1539_x1935_x843030926}
+Link: ADM - administratively down; Stby - standby
 
-[[三层模式下（]{style="font-family:宋体"}[route]{lang="EN-US"}]{#struct_0_x1539_x1935_x843030925}[）的接口的概要信息，即三层接口的概要信息]{style="font-family:宋体"}
+如果某接口的Link属性值为"ADM"，则表示该接口被管理员手工关闭了，需要在该接口下执行**undo shutdown**命令才能恢复端口本身的物理状态
 
-[[Link: ADM - administratively down; Stby - standby]{lang="EN-US"}]{#struct_0_x1539_x1935_x843030930}
+如果某接口的Link属性值为"Stby"，则表示该接口是一个备份接口，使用**display interface-backup state**命令可以查看该备份接口对应的主接口。本状态的支持情况与设备的型号有关，请以设备的实际情况为准
 
-[[如果某接口的]{style="font-family:宋体"}[Link]{lang="EN-US"}]{#struct_0_x1539_x1935_x843030929}[属性值为"]{style="font-family:宋体"}[ADM]{lang="EN-US"}["，则表示该接口被管理员手工关闭了，需要在该接口下执行]{style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**[命令才能恢复端口本身的物理状态]{style="font-family:宋体"}
+Protocol: (s) - spoofing
 
-[[如果某接口的]{style="font-family:宋体"}[Link]{lang="EN-US"}]{#struct_0_x1539_x1935_x843030934}[属性值为"]{style="font-family:宋体"}[Stby]{lang="EN-US"}["，则表示该接口是一个备份接口，使用]{style="font-family:宋体"}**[display interface-backup state]{lang="EN-US"}**[命令可以查看该备份接口对应的主接口。本状态的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:宋体"}
+如果某接口的Protocol属性值中带有"(s)"字符串，则表示该接口的网络层协议状态显示是UP的，但实际可能没有对应的链路，或者所对应的链路不是永久存在而是按需建立
 
-[[Protocol: (s) - spoofing]{lang="EN-US"}]{#struct_0_x1539_x1935_1113284210}
+Interface
 
-[[如果某接口的]{style="font-family:宋体"}[Protocol]{lang="EN-US"}]{#struct_0_x1539_x1935_1113284208}[属性值中带有"]{style="font-family:宋体"}[(s)]{lang="EN-US"}["字符串，则表示该接口的网络层协议状态显示是]{style="font-family:宋体"}[UP]{lang="EN-US"}[的，但实际可能没有对应的链路，或者所对应的链路不是永久存在而是按需建立]{style="font-family:宋体"}
+接口名称缩写
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1539_x1935_1113284206}
+Link
 
-[[接口名称缩写]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1113284204}
+接口物理连接状态，取值包括：
 
-[[Link]{lang="EN-US"}]{#struct_0_x1539_x1935_1113284202}
+·UP：表示本链路物理上是连通的
 
-[[接口物理连接状态，取值包括：]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1113284203}
+·DOWN：表示本链路物理上是不通的
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_x1539_x1935_x1225367949}[：表示本链路物理上是连通的]{style="font-family:宋体"}
+·ADM：表示本链路被手工关闭了，需要执行**undo shutdown**命令才能恢复真实的物理状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_x1539_x1935_x1225367952}[：表示本链路物理上]{lang="EN-US" style="font-family:宋体"}[是]{style="font-family:宋体"}[不通的]{lang="EN-US" style="font-family:宋体"}
+·Stby：表示该接口是一个备份接口。本状态的支持情况与设备的型号有关，请以设备的实际情况为准
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ADM]{lang="EN-US"}]{#struct_0_x1539_x1935_x1225367954}[：表示本链路被手工关闭了，需要执行]{style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**[命令才能恢复真实的物理状态]{style="font-family:宋体"}
+Protocol
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Stby]{lang="EN-US"}]{#struct_0_x1539_x1935_x1225367956}[：表示该接口是一个备份接口。本状态的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:宋体"}
+接口的链路层协议状态。其值由链路层经过参数协商决定，取值包括：
 
-[[Protocol]{lang="EN-US"}]{#struct_0_x1539_x1935_x1225367955}
+·UP：表示该接口的链路层协议状态为开启
 
-[[接口的链路层协议状态。其值由链路层经过参数协商决定，取值包括：]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1225367957}
+·UP (s)：表示该接口的链路层协议状态为开启，但实际可能没有对应的链路，或者所对应的链路不是永久存在而是按需建立。通常NULL、LoopBack等接口会具有该属性
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_x1539_x1935_x2034672013}[：表示该接口的链路层协议状态为开启]{style="font-family:宋体"}
+·DOWN：表示该接口的链路层协议状态为关闭
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP (s)]{lang="EN-US"}]{#struct_0_x1539_x1935_x2034672016}[：表示该接口的链路层协议状态为开启，但实际可能没有对应的链路，或者所对应的链路不是永久存在而是按需建立。通常]{style="font-family:宋体"}[NULL]{lang="EN-US"}[、]{style="font-family:宋体"}[LoopBack]{lang="EN-US"}[等接口会具有该属性]{style="font-family:宋体"}
+Main IP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_x1539_x1935_x2034672018}[：表示该接口的链路层协议状态为关闭]{style="font-family:宋体"}
+接口主IP地址
 
-[[Main IP]{lang="EN-US"}]{#struct_0_x1539_x1935_x2034672020}
+Description
 
-[[接口主]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x1539_x1935_x2034672019}[地址]{style="font-family:宋体"}
+接口的描述信息
 
-[[Description]{lang="EN-US"}]{#struct_0_x1539_x1935_x2034672021}
+Cause
 
-[[接口的描述信息]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x78356877}
+接口物理连接状态为down的原因，取值为：
 
-[[Cause]{lang="EN-US"}]{#struct_0_x1539_x1935_x78356880}
+·Administratively：表示本链路被手工关闭了（配置了**shutdown**命令），需要执行**undo shutdown**命令才能恢复真实的物理状态
 
-[[接口物理连接状态为]{style="font-family:宋体"}[down]{lang="EN-US"}]{#struct_0_x1539_x1935_x78356882}[的原因，取值为：]{style="font-family:宋体"}
+·Not connected：表示没有VSI关联该接口，或者关联该接口的VSI内没有AC或PW.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Administratively]{lang="EN-US"}]{#struct_0_x1539_x1935_x78356884}[：表示本链路被手工关闭了（配置了]{style="font-family:宋体"}**[shutdown]{lang="EN-US"}**[命令），需要执行]{style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**[命令才能恢复真实的物理状态]{style="font-family:宋体"}
+【相关命令】
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not connected]{lang="EN-US"}]{#struct_0_x1539_x1935_x78356883}[：表示没有]{lang="EN-US" style="font-family:宋体"}[VSI]{lang="EN-US"}[关联该]{style="font-family:宋体"}[接口]{lang="EN-US" style="font-family:宋体"}[，]{style="font-family:宋体"}[或者]{lang="EN-US" style="font-family:宋体"}[关联该接口]{style="font-family:宋体"}[的]{lang="EN-US" style="font-family:宋体"}[VSI]{lang="EN-US"}[内]{style="font-family:宋体"}[没有]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[PW.]{lang="EN-US"}
-
-[ ]{lang="NL-BE"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x78356886}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset counters interface]{lang="EN-US"}**]{#struct_0_x1539_x1935_520855544}
-
-::::: {#-1992782108 .myid}
-[]{#_Toc404798715}[]{#struct_0_x1539_x1935_x1658653950}[]{#_Toc402961799}
+·**reset counters interface**
 
 **VXLAN \-- VXLAN IP网关配置命令 \-- distributed-gateway local**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VXLAN命令.files/image001.png){width="63" height="25"}]{lang="EN-US"}]{#struct_0_x1539_x1935_x92570009}
-:::
+![说明](VXLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1539_x1935_780599684}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[distributed-gateway local]{lang="EN-US"}**]{#struct_0_x1539_x1935_925627519}[命令用来配置]{style="font-family:
-宋体"}[VSI]{lang="EN-US"}[虚接口为分布式网关接口。]{style="font-family:宋体"}
+**[distributed-gateway local**]命令用来配置VSI虚接口为分布式网关接口。
 
-[**[undo]{lang="EN-US"}**[ **distributed-gateway local**]{lang="EN-US"}]{#struct_0_x1539_x1935_x1866662949}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **distributed-gateway local**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1730861016}
+【命令】
 
-[**[distributed-gateway local]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1718770268}
+**[distributed-gateway local**]
 
-[**[undo distributed-gateway local]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1313590283}
+**[undo distributed-gateway local**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1326233169}
+【缺省情况】
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_1548194293}[虚接口不是分布式本地网关接口。]{style="font-family:宋体"}
+VSI虚接口不是分布式本地网关接口。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1117283572}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x581392489}[虚接口视图]{style="font-family:宋体"}
+VSI虚接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_347888490}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x1389298295}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x1989489187}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_523738973}
+【使用指导】
 
-[[在分布式]{style="font-family:宋体"}[VXLAN IP]{lang="EN-US"}]{#struct_0_x1539_x1935_336999546}[网关组网中，多个网关上的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口需要配置相同的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。为了避免]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址冲突，需要在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口上执行本命令，以防止]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口上报地址冲突，导致]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口不可用。]{style="font-family:宋体"}
+在分布式VXLAN IP网关组网中，多个网关上的VSI虚接口需要配置相同的IP地址。为了避免IP地址冲突，需要在VSI虚接口上执行本命令，以防止VSI虚接口上报地址冲突，导致VSI虚接口不可用。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_412717360}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x1611599783}[配置接口]{style="font-family:宋体"}[Vsi-interface100]{lang="EN-US"}[为分布式网关接口。]{style="font-family:宋体"}
+\# 配置接口Vsi-interface100为分布式网关接口。
 
-[[\<Sysname\> system]{lang="EN-US"}]{#struct_0_x1539_x1935_x2128668959}
+\<Sysname\> system
 
-[\[Sysname\] interface vsi-interface 100]{lang="EN-US"}
+Sysname interface vsi-interface 100
 
-[\[Sysname-Vsi-interface100\] distributed-gateway local]{lang="EN-US"}
-:::::
-
-::::: {#693979390 .myid}
-[]{#_Toc404798716}[]{#struct_0_x1539_x1935_x1124235406}[]{#_Toc402961800}
+Sysname-Vsi-interface100 distributed-gateway local
 
 **VXLAN \-- VXLAN IP网关配置命令 \-- gateway subnet**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VXLAN命令.files/image001.png){#图片 2 width="63" height="25"}]{lang="EN-US"}]{#struct_0_x1539_x1935_494051127}
-:::
+![说明](VXLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1539_x1935_1523098518}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[gateway subnet]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1511073608}[命令用来配置]{style="font-family:宋体"}[VSI]{lang="EN-US"}[所属的子网网段。]{style="font-family:宋体"}
+**[gateway subnet**]命令用来配置VSI所属的子网网段。
 
-[**[undo gateway subnet]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1885710388}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo gateway subnet**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x2071373442}
+【命令】
 
-[**[gateway subnet ]{lang="EN-US"}**[{ *ip-address wildcard-mask* \| *ipv6-address prefix-length* } ]{lang="EN-US"}]{#struct_0_x1539_x1935_x1339278706}
+**[gateway subnet **[{ *ip-address wildcard-mask* \| *ipv6-address prefix-length* } ]]
 
-[**[undo gateway subnet]{lang="EN-US"}**[ { *ip-address wildcard-mask* \| *ipv6-address prefix-length* }]{lang="EN-US"}]{#struct_0_x1539_x1935_1473579468}
+**[undo gateway subnet**[ { *ip-address wildcard-mask* \| *ipv6-address prefix-length* }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1640817941}
+【缺省情况】
 
-[[没有指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x1343853282}[所属的子网网段。]{style="font-family:宋体"}
+没有指定VSI所属的子网网段。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1976879912}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x1275585909}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_759051577}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x694444947}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x2025981804}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1255303887}
+【参数】
 
-[*[ip-address]{lang="EN-US"}*]{#struct_0_x1539_x1935_x291941878}[：子网网段地址，为点分十进制格式。]{style="font-family:宋体"}
+*[ip-address*]：子网网段地址，为点分十进制格式。
 
-[*[wildcard-mask]{lang="EN-US"}*]{#struct_0_x1539_x1935_x312364566}[：]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址掩码的反码，即将]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址的掩码取反（]{style="font-family:宋体"}[0]{lang="EN-US"}[变]{style="font-family:宋体"}[1]{lang="EN-US"}[，]{style="font-family:宋体"}[1]{lang="EN-US"}[变]{style="font-family:
-宋体"}[0]{lang="EN-US"}[）。例如：子网掩码]{style="font-family:宋体"}[255.0.0.0]{lang="EN-US"}[的反码为]{style="font-family:宋体"}[0.255.255.255]{lang="EN-US"}[。其中，反码中的"]{style="font-family:宋体"}[1]{lang="EN-US"}["表示忽略]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址中对应的位，"]{style="font-family:宋体"}[0]{lang="EN-US"}["表示必须保留此位。]{style="font-family:宋体"}
+*[wildcard-mask*]：IP地址掩码的反码，即将IP地址的掩码取反（0变1，1变0）。例如：子网掩码255.0.0.0的反码为0.255.255.255。其中，反码中的"1"表示忽略IP地址中对应的位，"0"表示必须保留此位。
 
-[*[ipv6-address prefix-length]{lang="EN-US"}*]{#struct_0_x1539_x1935_282829998}[：]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址及前缀长度。]{style="font-family:宋体"}*[prefix-length]{lang="EN-US"}*[为]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[前缀长度，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[128]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[ipv6-address prefix-length*]：IPv6地址及前缀长度。*prefix-length*为IPv6前缀长度，取值范围为1～128。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x545111912}
+【使用指导】
 
-[[为了节省分布式]{style="font-family:宋体"}[VXLAN IP]{lang="EN-US"}]{#struct_0_x1539_x1935_x1431141020}[网关设备上的三层接口资源，在网关设备上多个]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[可以共用一个]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口，为]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口配置一个主]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址和多个从]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[网络）、或多个]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址（]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[网络），分别作为不同]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[内虚拟机的网关地址。]{style="font-family:宋体"}
+为了节省分布式VXLAN IP网关设备上的三层接口资源，在网关设备上多个VXLAN可以共用一个VSI虚接口，为VSI虚接口配置一个主IP地址和多个从IP地址（IPv4网络）、或多个IPv6地址（IPv6网络），分别作为不同VXLAN内虚拟机的网关地址。
 
-[[多个]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_x793011312}[共用一个]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口时，网关设备无法判断从]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口接收到的报文属于哪个]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[。为了解决该问题，需要在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[视图下通过本命令指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[所属的子网网段，通过子网网段判断报文所属的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[，并在该]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内转发报文，从而限制广播报文范围，有效地节省带宽资源。但是每个]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[都有各自的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址子网网段以及网关]{style="font-family:宋体"}[IP]{lang="EN-US"}[，因此需要]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口支持按]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[设置]{style="font-family:宋体"}[Subnet IP]{lang="EN-US"}[。]{style="font-family:宋体"}
+多个VXLAN共用一个VSI虚接口时，网关设备无法判断从VSI虚接口接收到的报文属于哪个VXLAN。为了解决该问题，需要在VSI视图下通过本命令指定VSI所属的子网网段，通过子网网段判断报文所属的VSI，并在该VSI内转发报文，从而限制广播报文范围，有效地节省带宽资源。但是每个VXLAN都有各自的IP地址子网网段以及网关IP，因此需要VSI虚接口支持按VXLAN设置Subnet IP。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1729843034}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[一个]{style="font-family:宋体"}]{#struct_0_x1539_x1935_310780054}[VSI]{lang="EN-US"}[视图下最多可以配置]{style="font-family:宋体"}[8]{lang="EN-US"}[个子网网段，包括]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[子网和]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[子网。]{style="font-family:宋体"}
+·一个VSI视图下最多可以配置8个子网网段，包括IPv4子网和IPv6子网。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在]{style="font-family:宋体"}]{#struct_0_x1539_x1935_2020612604}[VSI]{lang="EN-US"}[视图下配置子网网段前，必须先为该]{style="font-family:宋体"}[VSI]{lang="EN-US"}[指定网关接口。取消为]{style="font-family:宋体"}[VSI]{lang="EN-US"}[指定网关接口时，会自动删除为该]{style="font-family:宋体"}[VSI]{lang="EN-US"}[指定的子网网段。]{style="font-family:宋体"}
+·在VSI视图下配置子网网段前，必须先为该VSI指定网关接口。取消为VSI指定网关接口时，会自动删除为该VSI指定的子网网段。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不能为指定了相同网关接口的不同]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x814280489}[VSI]{lang="EN-US"}[配置相同的子网网段。]{style="font-family:宋体"}
+·不能为指定了相同网关接口的不同VSI配置相同的子网网段。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1724067341}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x237620754}[配置名称为]{style="font-family:宋体"}[vxlan]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[所属的子网网段为]{style="font-family:宋体"}[100.0.10.0/24]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置名称为vxlan的VSI所属的子网网段为100.0.10.0/24。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_x1560288552}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vxlan]{lang="EN-US"}
+Sysname vsi vxlan
 
-[\[Sysname-vsi-vxlan\] gateway subnet 100.0.10.0 0.0.0.255]{lang="EN-US"}
-:::::
-
-::: {#17596291 .myid}
-[]{#struct_0_x1539_x1935_x78356885}[]{#_Toc404798717}[]{#_Toc387305727}[]{#_Toc381105347}
+Sysname-vsi-vxlan gateway subnet 100.0.10.0 0.0.0.255
 
 **VXLAN \-- VXLAN IP网关配置命令 \-- gateway vsi-interface**
 
 ------------------------------------------------------------------------
 
-[**[gateway vsi-interface]{lang="EN-US"}**]{#struct_0_x1539_x1935_1497783922}[命令用来为]{style="font-family:宋体"}[VSI]{lang="EN-US"}[指定网关接口。]{style="font-family:宋体"}
+**[gateway vsi-interface**]命令用来为VSI指定网关接口。
 
-[**[undo gateway vsi-interface]{lang="EN-US"}**]{#struct_0_x1539_x1935_x110101891}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo gateway vsi-interface**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1497783923}
+【命令】
 
-[**[gateway vsi-interface ]{lang="EN-US"}***[vsi-interface-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_x110167427}
+**[gateway vsi-interface ***vsi-interface-id*]
 
-[**[undo gateway vsi-interface]{lang="EN-US"}**]{#struct_0_x1539_x1935_1497783920}
+**[undo gateway vsi-interface**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1497783921}
+【缺省情况】
 
-[[没有为]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_1497783918}[指定网关接口。]{style="font-family:宋体"}
+没有为VSI指定网关接口。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x110495108}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_1497783919}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x110560644}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x602353022}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1497783916}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x110364036}
+【参数】
 
-[*[vsi-interface-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_1497783917}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[网关虚接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[vsi-interface-id*]：VSI网关虚接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x110429572}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[一个]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1497783914}[VSI]{lang="EN-US"}[只能指定一个网关接口。]{style="font-family:宋体"}
+·一个VSI只能指定一个网关接口。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不同的]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x110232964}[VSI]{lang="EN-US"}[可以指定相同的网关接口。]{style="font-family:宋体"}
+·不同的VSI可以指定相同的网关接口。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_193456319}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1497783915}[为]{style="font-family:宋体"}[VSI]{lang="EN-US"}[指定网关接口为]{style="font-family:宋体"}[Vsi-interface100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 为VSI指定网关接口为Vsi-interface100。
 
-[[\<Sysname\> system]{lang="EN-US"}]{#struct_0_x1539_x1935_x840868238}
+\<Sysname\> system
 
-[\[Sysname\] vsi vpna]{lang="EN-US"}
+Sysname vsi vpna
 
-[\[Sysname-vsi-vpna\] gateway vsi-interface 100]{lang="EN-US"}
+Sysname-vsi-vpna gateway vsi-interface 100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x652167509}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[interface vsi-interface]{lang="EN-US"}**]{#struct_0_x1539_x1935_x302530104}
-:::
-
-::: {#-256627221 .myid}
-[]{#_Toc404798718}[]{#struct_0_x1539_x1935_x840868237}[]{#_Toc387305728}[]{#_Toc381105348}
+·**interface vsi-interface**
 
 **VXLAN \-- VXLAN IP网关配置命令 \-- interface vsi-interface**
 
 ------------------------------------------------------------------------
 
-[**[interface vsi-interface]{lang="EN-US"}**]{#struct_0_x1539_x1935_x840868240}[命令用来创建]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口，并进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口视图。]{style="font-family:宋体"}
+**[interface vsi-interface**]命令用来创建VSI虚接口，并进入VSI虚接口视图。
 
-[**[undo interface vsi-interface]{lang="EN-US"}**]{#struct_0_x1539_x1935_x651643226}[命令用来删除]{style="font-family:
-宋体"}[VSI]{lang="EN-US"}[虚接口。]{style="font-family:宋体"}
+**[undo interface vsi-interface**]命令用来删除VSI虚接口。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1344312567}
+【命令】
 
-[**[interface vsi-interface ]{lang="EN-US"}***[vsi-interface-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_x840868239}
+**[interface vsi-interface ***vsi-interface-id*]
 
-[**[undo interface vsi-interface ]{lang="EN-US"}***[vsi-interface-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_x652233045}
+**[undo interface vsi-interface ***vsi-interface-id*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x840868242}
+【缺省情况】
 
-[[设备上不存在任何]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x651512154}[虚接口。]{style="font-family:宋体"}
+设备上不存在任何VSI虚接口。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1340868918}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x840868241}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x840868244}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x651905370}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x840868246}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x651774298}
+【参数】
 
-[*[vsi-nterface-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_x840868245}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[vsi-nterface-id*]：VSI虚接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x651970906}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1115446898}[创建]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口]{style="font-family:宋体"}[100]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口视图。]{style="font-family:宋体"}
+\# 创建VSI虚接口100，并进入VSI虚接口视图。
 
-[[\<Sysname\> system]{lang="EN-US"}]{#struct_0_x1539_x1935_1115446899}
+\<Sysname\> system
 
-[\[Sysname\] interface vsi-interface 100]{lang="EN-US"}
+Sysname interface vsi-interface 100
 
-[\[Sysname-Vsi-interface100\]]{lang="EN-US"}
+Sysname-Vsi-interface100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1493691870}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[gateway vsi-interface]{lang="EN-US"}**]{#struct_0_x1539_x1935_x198515767}
-:::
-
-::: {#988247972 .myid}
-[]{#_Toc404798719}[]{#struct_0_x1539_x1935_1115446896}[]{#_Toc375835902}
+·**gateway vsi-interface**
 
 **VXLAN \-- VXLAN IP网关配置命令 \-- mtu**
 
 ------------------------------------------------------------------------
 
-[**[mtu]{lang="EN-US"}**]{#struct_0_x1539_x1935_1115446897}[命令用来配置接口的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[值。]{style="font-family:宋体"}
+**[mtu**]命令用来配置接口的MTU值。
 
-[**[undo mtu]{lang="EN-US"}**]{#struct_0_x1539_x1935_1492774366}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo mtu**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x245880130}
+【命令】
 
-[**[mtu]{lang="EN-US"}**[ *size*]{lang="EN-US"}]{#struct_0_x1539_x1935_1115446894}
+**[mtu** *size*]
 
-[**[undo mtu]{lang="EN-US"}**]{#struct_0_x1539_x1935_1492839902}
+**[undo mtu**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1012743730}
+【缺省情况】
 
-[[本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1115446895}
+本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1492905438}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_1115446892}[虚接口视图]{style="font-family:宋体"}
+VSI虚接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1492970974}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1115446893}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1493036510}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1115446890}
+【参数】
 
-[*[size]{lang="EN-US"}*]{#struct_0_x1539_x1935_1115446891}[：接口的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[值，取值范围为]{style="font-family:宋体"}[46]{lang="EN-US"}[～]{style="font-family:宋体"}[1560]{lang="EN-US"}[，单位为字节。]{style="font-family:宋体"}
+*[size*]：接口的MTU值，取值范围为46～1560，单位为字节。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1493167582}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x1223205262}[配置接口]{style="font-family:宋体"}[VSI-interface100]{lang="EN-US"}[的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[值为]{style="font-family:宋体"}[1430]{lang="EN-US"}[字节。]{style="font-family:宋体"}
+\# 配置接口VSI-interface100的MTU值为1430字节。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_x1617902668}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vsi-interface 100]{lang="EN-US"}
+Sysname interface vsi-interface 100
 
-[\[Sysname-Vsi-interface100\] mtu 1430]{lang="EN-US"}
-:::
-
-::: {#877252436 .myid}
-[]{#_Toc290542370}[]{#_Toc404798720}[]{#struct_0_x1539_x1935_x1223205261}[]{#_Toc375835903}[]{#_Toc290542313}[]{#_Toc263067840}
+Sysname-Vsi-interface100 mtu 1430
 
 **VXLAN \-- VXLAN IP网关配置命令 \-- reset counters interface vsi-interface**
 
 ------------------------------------------------------------------------
 
-[**[reset counters interface]{lang="DE"}**]{#struct_0_x1539_x1935_1110980687}[命令用来清除接口的统计信息。]{style="font-family:宋体"}
+**[reset counters interface**]命令用来清除接口的统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x615382010}
+【命令】
 
-[**[reset counters interface]{lang="EN-US"}**[ \[ ]{lang="EN-US"}]{#struct_0_x1539_x1935_x1223205264}**[vsi-interface]{lang="DE"}**[ \[ *vsi-interface-id* \] \]]{lang="EN-US"}
+**[reset counters interface** **vsi-interface** [ *vsi-interface-id*  ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1223205263}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x1223205266}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1223205265}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x1214618141}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_1204310174}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1223205268}
+【参数】
 
-[*[vsi-nterface-id]{lang="EN-US"}*]{#struct_0_x1539_x1935_x98872894}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[vsi-nterface-id*]：VSI虚接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1223205267}
+【使用指导】
 
-[[在某些情况下]{style="font-family:宋体"}]{#struct_0_x1539_x1935_1917549741}[，]{style="font-family:宋体"}[需要统计一定时间内某接口的流量]{style="font-family:宋体"}[，]{style="font-family:宋体"}[这就需要在统计开始前清除该接口原有的统计信息]{style="font-family:宋体"}[，]{style="font-family:
-宋体"}[重新进行统计。]{style="font-family:宋体"}
+在某些情况下，需要统计一定时间内某接口的流量，这就需要在统计开始前清除该接口原有的统计信息，重新进行统计。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果不指定接口类型（]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1539_x1935_1061696699}**[vsi-interface]{lang="DE"}**[），则清除所有接口的统计信息；]{lang="EN-US" style="font-family:宋体"}
+·如果不指定接口类型（**vsi-interface**），则清除所有接口的统计信息；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定接口类型]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1539_x1935_x1223205270}[，]{lang="EN-US" style="font-family:宋体"}[不指定接口编号（]{lang="EN-US" style="font-family:
-宋体"}*[vsi-interface-id]{lang="EN-US"}*[）]{lang="EN-US" style="font-family:宋体"}[，则清除所有]{lang="EN-US" style="font-family:
-宋体"}[VSI]{lang="EN-US"}[虚]{style="font-family:宋体"}[接口的统计信息；]{lang="EN-US" style="font-family:宋体"}
+·如果指定接口类型，不指定接口编号（*vsi-interface-id*），则清除所有VSI虚接口的统计信息；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果同时指定接口类型和接口编号，则清除指定]{style="font-family:宋体"}]{#struct_0_x1539_x1935_x455037718}[VSI]{lang="EN-US"}[虚接口的统计信息。]{style="font-family:宋体"}
+·如果同时指定接口类型和接口编号，则清除指定VSI虚接口的统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1223205269}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1467211047}[清除接口]{style="font-family:宋体"}[VSI-interface100]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+\# 清除接口VSI-interface100的统计信息。
 
-[[\<Sysname\> reset counters interface vsi-interface 100]{lang="EN-US"}]{#struct_0_x1539_x1935_x2032509326}
+\<Sysname\> reset counters interface vsi-interface 100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_66696376}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display interface]{lang="EN-US"}**]{#struct_0_x1539_x1935_x2032509325}
-:::
-
-::: {#-716074350 .myid}
-[]{#_Toc404798721}[]{#struct_0_x1539_x1935_469980903}[]{#_Toc375835904}
+·**display interface**
 
 **VXLAN \-- VXLAN IP网关配置命令 \-- shutdown**
 
 ------------------------------------------------------------------------
 
-[**[shutdown]{lang="EN-US"}**]{#struct_0_x1539_x1935_x2032509328}[命令用来关闭当前接口。]{style="font-family:宋体"}
+**[shutdown**]命令用来关闭当前接口。
 
-[**[undo]{lang="EN-US"}**[ **shutdown**]{lang="EN-US"}]{#struct_0_x1539_x1935_1585726150}[命令用来开启当前接口。]{style="font-family:宋体"}
+**[undo** **shutdown**]命令用来开启当前接口。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x2032509327}
+【命令】
 
-[**[shutdown]{lang="EN-US"}**]{#struct_0_x1539_x1935_1632780317}
+**[shutdown**]
 
-[**[undo shutdown]{lang="EN-US"}**]{#struct_0_x1539_x1935_x2032509330}
+**[undo shutdown**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1229561326}
+【缺省情况】
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x2032509329}[虚接口均处于开启状态。]{style="font-family:宋体"}
+VSI虚接口均处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1143157205}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x2032509332}[虚接口视图]{style="font-family:宋体"}
+VSI虚接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1902606556}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x324245107}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_x2032509331}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1499322029}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_x795157333}[关闭接口]{style="font-family:宋体"}[VSI-interface100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 关闭接口VSI-interface100。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_x2032509333}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vsi-interface 100]{lang="EN-US"}
+Sysname interface vsi-interface 100
 
-[\[Sysname-Vsi-interface100\] shutdown]{lang="EN-US"}
-:::
-
-::::: {#-1082119549 .myid}
-[]{#_Toc404798722}[]{#struct_0_x1539_x1935_1339886028}[]{#_Toc402961801}[]{#_Toc390866207}[]{#_GoBack}
+Sysname-Vsi-interface100 shutdown
 
 **VXLAN \-- VXLAN IP网关配置命令 \-- vxlan ip-forwarding**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](VXLAN命令.files/image001.png){#图片 1 width="63" height="25"}]{lang="EN-US"}]{#struct_0_x1539_x1935_x1388997327}
-:::
+![说明](VXLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_x1539_x1935_x1439111991}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[vxlan ip-forwarding**]命令用来配置VXLAN采用三层转发模式。
 
-[**[vxlan ip-forwarding]{lang="EN-US"}**]{#struct_0_x1539_x1935_x215785533}[命令用来配置]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[采用三层转发模式。]{style="font-family:宋体"}
+**[undo vxlan ip-forwarding**]命令用来配置VXLAN采用二层转发模式。
 
-[**[undo vxlan ip-forwarding]{lang="EN-US"}[ ]{lang="EN-US"}**]{#struct_0_x1539_x1935_x59166572}[命令用来配置]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[采用二层转发模式。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_487031861}
+**[vxlan ip-forwarding**]
 
-[**[vxlan ip-forwarding]{lang="EN-US"}**]{#struct_0_x1539_x1935_x1090946292}
+**[undo vxlan ip-forwarding**]
 
-[**[undo vxlan ip-forwarding]{lang="EN-US"}**]{#struct_0_x1539_x1935_x433543469}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_449140497}
+VXLAN采用三层转发模式。
 
-[[VXLAN]{lang="EN-US"}]{#struct_0_x1539_x1935_x2029250915}[采用三层转发模式。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x1454295889}
+系统视图
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1539_x1935_177086614}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_789508004}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_853229355}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1539_x1935_234005379}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_1298449075}
+三层转发模式是指VTEP设备通过查找ARP表项（IPv4网络）或ND表项（IPv6网络）对流量进行转发。二层转发模式是指VTEP通过查找MAC地址表项对流量进行转发。
 
-[[三层转发模式是指]{style="font-family:宋体"}[VTEP]{lang="EN-US"}]{#struct_0_x1539_x1935_1477328563}[设备通过查找]{style="font-family:宋体"}[ARP]{lang="EN-US"}[表项（]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[网络）或]{style="font-family:宋体"}[ND]{lang="EN-US"}[表项（]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[网络）对流量进行转发。二层转发模式是指]{style="font-family:宋体"}[VTEP]{lang="EN-US"}[通过查找]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项对流量进行转发。]{style="font-family:宋体"}
+采用分布式VXLAN IP网关组网方案时，VXLAN需要采用三层转发模式；其他情况下，VXLAN采用二层转发模式。
 
-[[采用分布式]{style="font-family:宋体"}[VXLAN IP]{lang="EN-US"}]{#struct_0_x1539_x1935_2044563536}[网关组网方案时，]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[需要采用三层转发模式；其他情况下，]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[采用二层转发模式。]{style="font-family:宋体"}
+需要注意的是，修改本配置前，必须先删除设备上的所有VSI、VSI虚接口和VXLAN隧道，否则配置将失败。
 
-[[需要注意的是，修改本配置前，必须先删除设备上的所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_x1539_x1935_x213204262}[、]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口和]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[隧道，否则配置将失败。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1539_x1935_x684022687}
+\# 配置VXLAN采用三层转发模式。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1539_x1935_1339513543}[配置]{style="font-family:宋体"}[VXLAN]{lang="EN-US"}[采用三层转发模式]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1539_x1935_1928104207}
-
-[\[Sysname\] vxlan ip-forwarding]{lang="EN-US"}
-:::::
+Sysname vxlan ip-forwarding

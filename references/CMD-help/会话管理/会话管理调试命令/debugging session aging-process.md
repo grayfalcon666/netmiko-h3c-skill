@@ -1,1322 +1,1253 @@
-::: {#-131262177 .myid}
-[]{#_Toc404793493}[]{#struct_0_14338_x1629_x1612706819}[]{#_Toc237771564}[]{#_Toc185127721}
 
 **会话管理 \-- 会话管理调试命令 \-- debugging session aging-process**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x992038760}
+【命令】
 
-[**[debugging session aging-process]{lang="EN-US"}**[ **event** \[ **acl** *acl-number* \]]{lang="EN-US"}]{#struct_0_14338_x1629_1177649255}
+**[debugging session aging-process** **event** [ **acl** *acl-number* ]]
 
-[**[undo debugging session aging-process event]{lang="EN-US"}**]{#struct_0_14338_x1629_2107775821}
+**[undo debugging session aging-process event**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x1184735661}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_14338_x1629_x362593944}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x1092976902}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_14338_x1629_1787749593}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_14338_x1629_x2075965734}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_14338_x1629_1656157556}
+【参数】
 
-[**[acl]{lang="EN-US"}**[ *acl-number*]{lang="EN-US"}]{#struct_0_14338_x1629_1756755127}[：指定匹配会话的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[规则。其中，]{style="font-family:宋体"}*[acl-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[ACL]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[。该参数可多次设置，但仅最后一次合法的配置生效。]{style="font-family:宋体"}
+**[acl** *acl-number*]：指定匹配会话的ACL规则。其中，*acl-number*表示ACL编号，取值范围为2000～3999。该参数可多次设置，但仅最后一次合法的配置生效。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_14338_x1629_1924980134}
+【描述】
 
-[**[debugging session ]{lang="EN-US"}[aging-process]{lang="EN-US"}**]{#struct_0_14338_x1629_x1945292104}[命令用来打开会话管理的老化队列处理调试信息开关。]{style="font-family:宋体"}**[undo debugging session ]{lang="EN-US"}[aging-process]{lang="EN-US"}**[命令用来关闭会话管理的老化队列处理调试信息开关。]{style="font-family:宋体"}
+**[debugging session aging-process**]命令用来打开会话管理的老化队列处理调试信息开关。**undo debugging session aging-process**命令用来关闭会话管理的老化队列处理调试信息开关。
 
-[[缺省情况下，会话管理的老化队列处理调试信息开关处于关闭状态。]{style="font-family:宋体"}]{#struct_0_14338_x1629_x774445895}
+缺省情况下，会话管理的老化队列处理调试信息开关处于关闭状态。
 
-[[表1-1 ]{lang="EN-US"}[debugging session aging-process]{lang="EN-US"}]{#struct_0_14338_x1629_x2131861416}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging session aging-process命令输出信息描述表
 
-[]{#table_struct_0_x1633555086}[[字段]{style="font-family:黑体"}]{#struct_0_14338_x1629_x856001985}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_14338_x1629_x426738430}
+描述
 
-[[Tuple5(EVENT):]{lang="EN-US"}]{#struct_0_14338_x1629_1786766553}
+Tuple5(EVENT):
 
-[*[srcIP]{lang="FR"}*]{#struct_0_14338_x1629_2125946945}[/*srcPort*\--\>*destIP*/*destPort*(*ProtoType*)]{lang="FR"}
+*[srcIP*]/*srcPort*\--\>*destIP*/*destPort*(*ProtoType*)
 
-[[会话的五元组：]{style="font-family:宋体"}]{#struct_0_14338_x1629_x462668580}
+会话的五元组：
 
-[[源]{style="font-family:宋体"}[IP/]{lang="EN-US"}]{#struct_0_14338_x1629_x188056394}[源端口]{style="font-family:宋体"}[\--\>]{lang="EN-US"}[目的]{style="font-family:宋体"}[IP/]{lang="EN-US"}[目的端口（传输层协议类型（协议号））]{style="font-family:宋体"}
+源IP/源端口\--\>目的IP/目的端口（传输层协议类型（协议号））
 
-[[Aging]{lang="EN-US"}]{#struct_0_14338_x1629_2009279795}[: *PRO_STATE*]{lang="PT-BR"}
+Aging: *PRO_STATE*
 
-[[协议状态，包括如下几种：]{style="font-family:宋体"}]{#struct_0_14338_x1629_1988898979}
+协议状态，包括如下几种：
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[PERSIST]{lang="PT-BR"}]{#struct_0_14338_x1629_1786832089}
+·PERSIST
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[TCP_SYN_SENT]{lang="PT-BR"}]{#struct_0_14338_x1629_1001098555}
+·TCP_SYN_SENT
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[TCP_SYN_RECV]{lang="PT-BR"}]{#struct_0_14338_x1629_1766901957}
+·TCP_SYN_RECV
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[TCP_ESTABLISHED]{lang="PT-BR"}]{#struct_0_14338_x1629_x1983920318}
+·TCP_ESTABLISHED
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[TCP_FIN_WAIT]{lang="PT-BR"}]{#struct_0_14338_x1629_1269461162}
+·TCP_FIN_WAIT
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[TCP_CLOSE_WAIT]{lang="PT-BR"}]{#struct_0_14338_x1629_1036044257}
+·TCP_CLOSE_WAIT
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[TCP_LAST_ACK]{lang="PT-BR"}]{#struct_0_14338_x1629_1787290838}
+·TCP_LAST_ACK
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[TCP_TIME_WAIT]{lang="PT-BR"}]{#struct_0_14338_x1629_202930098}
+·TCP_TIME_WAIT
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[TCP_CLOSE]{lang="PT-BR"}]{#struct_0_14338_x1629_545203908}
+·TCP_CLOSE
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[TCP_SYN_SENT2]{lang="PT-BR"}]{#struct_0_14338_x1629_2093171794}
+·TCP_SYN_SENT2
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[UDP_OPEN]{lang="PT-BR"}]{#struct_0_14338_x1629_x335947977}
+·UDP_OPEN
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[UDP_READY]{lang="PT-BR"}]{#struct_0_14338_x1629_x2012904158}
+·UDP_READY
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[ICMP_REQUEST]{lang="PT-BR"}]{#struct_0_14338_x1629_1787356374}
+·ICMP_REQUEST
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[ICMP_REPLY]{lang="PT-BR"}]{#struct_0_14338_x1629_1386766539}
+·ICMP_REPLY
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[ICMPV6_REQUEST]{lang="PT-BR"}]{#struct_0_14338_x1629_x1860345782}
+·ICMPV6_REQUEST
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[ICMPV6_REPLY]{lang="PT-BR"}]{#struct_0_14338_x1629_1928672325}
+·ICMPV6_REPLY
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[UDPLITE_OPEN]{lang="PT-BR"}]{#struct_0_14338_x1629_x317055790}
+·UDPLITE_OPEN
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[UDPLITE_READY]{lang="PT-BR"}]{#struct_0_14338_x1629_1787421910}
+·UDPLITE_READY
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[SCTP_CLOSED]{lang="PT-BR"}]{#struct_0_14338_x1629_578415497}
+·SCTP_CLOSED
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[SCTP_COOKIE_WAIT]{lang="PT-BR"}]{#struct_0_14338_x1629_732313783}
+·SCTP_COOKIE_WAIT
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[SCTP_COOKIE_ECHOED]{lang="PT-BR"}]{#struct_0_14338_x1629_x101407325}
+·SCTP_COOKIE_ECHOED
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[SCTP_ESTABLISHED]{lang="PT-BR"}]{#struct_0_14338_x1629_1964461877}
+·SCTP_ESTABLISHED
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[SCTP_SHUTDOWN_SENT]{lang="PT-BR"}]{#struct_0_14338_x1629_1787487446}
+·SCTP_SHUTDOWN_SENT
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[SCTP_SHUTDOWN_RECD]{lang="PT-BR"}]{#struct_0_14338_x1629_1807340730}
+·SCTP_SHUTDOWN_RECD
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[SCTP_SHUTDOWN_ACK_SENT]{lang="PT-BR"}]{#struct_0_14338_x1629_x1954864112}
+·SCTP_SHUTDOWN_ACK_SENT
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[DCCP_REQUEST]{lang="PT-BR"}]{#struct_0_14338_x1629_297533500}
+·DCCP_REQUEST
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[DCCP_RESPOND]{lang="PT-BR"}]{#struct_0_14338_x1629_1787552982}
+·DCCP_RESPOND
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[DCCP_PARTOPEN]{lang="PT-BR"}]{#struct_0_14338_x1629_972983712}
+·DCCP_PARTOPEN
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[DCCP_OPEN]{lang="PT-BR"}]{#struct_0_14338_x1629_x62530090}
+·DCCP_OPEN
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[DCCP_CLOSEREQ]{lang="PT-BR"}]{#struct_0_14338_x1629_487391510}
+·DCCP_CLOSEREQ
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[DCCP_CLOSING]{lang="PT-BR"}]{#struct_0_14338_x1629_x1277854580}
+·DCCP_CLOSING
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[DCCP_TIMEWAIT]{lang="PT-BR"}]{#struct_0_14338_x1629_1787618518}
+·DCCP_TIMEWAIT
 
-[[·[       ]{style="font:7.0pt "}]{lang="PT-BR" style="font-size:10.0pt;font-family:Symbol"}[RAWIP_OPEN]{lang="PT-BR"}]{#struct_0_14338_x1629_x507260328}
+·RAWIP_OPEN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAWIP_READY]{lang="PT-BR"}]{#struct_0_14338_x1629_2133061821}
+·RAWIP_READY
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[FTP]{lang="EN-US"}]{#struct_0_14338_x1629_1350669313}
+·FTP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DNS]{lang="PT-BR"}]{#struct_0_14338_x1629_1787684054}
+·DNS
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SIP]{lang="PT-BR"}]{#struct_0_14338_x1629_1005799832}
+·SIP
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x1984283393}
+\# 在启用了ASPF的设备上打开会话管理的老化队列处理调试信息开关，当有相应会话建立并进入老化队列后，将输出如下调试信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_14338_x1629_x94736028}[在启用了]{style="font-family:宋体"}[ASPF]{lang="EN-US"}[的设备上打开]{style="font-family:宋体"}[会话管理的老化队列处理调试信息开关，当有相应会话建立并进入老化队列后，将输出如下调试信息。]{style="font-family:宋体"}
+\<Sysname\> debugging session aging-process
 
-[[\<Sysname\> debugging session aging-process]{lang="EN-US"}]{#struct_0_14338_x1629_1787749590}
+\<Sysname\> ping 192.168.1.58
 
-[\<Sysname\> ping 192.168.1.58]{lang="EN-US"}
+\*May 27 10:30:28:846 2011 Sysname SESSION/7/AGING: -MDC=1;
 
-[\*May 27 10:30:28:846 2011 Sysname SESSION/7/AGING: -MDC=1;]{lang="EN-US"}
+ Tuple5(EVENT): 3.3.3.2/2048\--\>3.3.3.1/3(icmp(1))
 
-[ Tuple5(EVENT): 3.3.3.2/2048\--\>3.3.3.1/3(icmp(1))]{lang="EN-US"}
+ Aging: ICMP_REQUEST
 
-[ Aging: ICMP_REQUEST ]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_14338_x1629_x2076162342}*[发起方为]{style="font-family:宋体"}[3.3.3.2]{lang="EN-US"}[，响应方为]{style="font-family:宋体"}[3.3.3.1]{lang="EN-US"}[的]{style="font-family:宋体"}[ICMP]{lang="EN-US"}[会话，处于协议状态为]{style="font-family:宋体"}[ICMP_REQUEST]{lang="EN-US"}[的老化队列]{style="font-family:宋体"}*
-
-::: {#-1640683372 .myid}
-[]{#_Toc404793494}[]{#struct_0_14338_x1629_109317273}
+*// 发起方为3.3.3.2，响应方为3.3.3.1的ICMP会话，处于协议状态为ICMP_REQUEST的老化队列*
 
 **会话管理 \-- 会话管理调试命令 \-- debugging session config**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_14338_x1629_1231449943}
+【命令】
 
-[**[debugging session config]{lang="EN-US"}**[ { **all** \| **error** \| **event** }]{lang="EN-US"}]{#struct_0_14338_x1629_x836811568}
+**[debugging session config**[ { **all** \| **error** \| **event** }]]
 
-[**[undo debugging session config]{lang="EN-US"}**[ { **all** \| **error** \| **event** }]{lang="EN-US"}]{#struct_0_14338_x1629_x2138673542}
+**[undo debugging session config**[ { **all** \| **error** \| **event** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_14338_x1629_2059332914}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_14338_x1629_401092278}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_14338_x1629_779879835}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_14338_x1629_1393269124}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_14338_x1629_1786766550}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_14338_x1629_2126012481}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_14338_x1629_1686835341}[：表示所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示所有调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_14338_x1629_1571798388}[：表示错误调试信息开关。]{style="font-family:宋体"}
+**[error**]：表示错误调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_14338_x1629_x2134339627}[：表示事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示事件调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x1263916386}
+【描述】
 
-[**[debugging session config]{lang="EN-US"}**]{#struct_0_14338_x1629_x857797661}[命令用来打开会话配置处理调试信息开关。]{style="font-family:
-宋体"}**[undo debugging session config]{lang="EN-US"}**[命令用来关闭会话配置处理调试信息开关。]{style="font-family:宋体"}
+**[debugging session config**]命令用来打开会话配置处理调试信息开关。**undo debugging session config**命令用来关闭会话配置处理调试信息开关。
 
-[[缺省情况下，会话配置处理调试信息开关处于关闭状态。]{style="font-family:宋体"}]{#struct_0_14338_x1629_x768949651}
+缺省情况下，会话配置处理调试信息开关处于关闭状态。
 
-[[表1-2 ]{lang="EN-US"}[debugging session config error]{lang="EN-US"}]{#struct_0_14338_x1629_588050790}[命令输出信息描述表]{style="font-family:黑体"}
+表1-2 debugging session config error命令输出信息描述表
 
-[]{#table_struct_0_x1638434798}[[字段]{style="font-family:黑体"}]{#struct_0_14338_x1629_1786832086}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_14338_x1629_1001033019}
+描述
 
-[[Failed to send ioctl message to slot *slot-id*, message type: *msg-type*.]{lang="EN-US"}]{#struct_0_14338_x1629_1797828430}
+Failed to send ioctl message to slot *slot-id*, message type: *msg-type*.
 
-[[向板]{style="font-family:宋体"}*[slot-id]{lang="EN-US"}*]{#struct_0_14338_x1629_x1158106417}[发送]{style="font-family:宋体"}[ioctl]{lang="EN-US"}[消息失败，消息类型为]{style="font-family:宋体"}*[msg-type]{lang="EN-US"}*
+向板*slot-id*发送ioctl消息失败，消息类型为*msg-type*
 
-[ ]{lang="EN-US"}
+表1-3 debugging session config event命令输出信息描述表
 
-[[表1-3 ]{lang="EN-US"}[debugging session config event]{lang="EN-US"}]{#struct_0_14338_x1629_292940812}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1639601710}[[字段]{style="font-family:黑体"}]{#struct_0_14338_x1629_x335950659}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_14338_x1629_x1703025931}
+Received config message, message type: *msg-type*.
 
-[[Received config message, message type: *msg-type*.]{lang="EN-US"}]{#struct_0_14338_x1629_1787290839}
+收到配置消息，消息类型为*msg-typ*e，包括如下取值：
 
-[[收到配置消息，消息类型为]{style="font-family:宋体"}*[msg-typ]{lang="EN-US"}*[e]{lang="EN-US"}]{#struct_0_14338_x1629_202864562}[，包括如下取值：]{style="font-family:宋体"}
+·0：设置应用层老化时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0]{lang="EN-US"}]{#struct_0_14338_x1629_x181876274}[：设置应用层老化时间]{lang="EN-US" style="font-family:宋体"}
+·1：设置传输层协议老化时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[1]{lang="EN-US"}]{#struct_0_14338_x1629_x177787231}[：设置传输层协议老化时间]{style="font-family:宋体"}
+·2：设置接口下的日志策略
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[2]{lang="EN-US"}]{#struct_0_14338_x1629_1649035692}[：设置接口下的日志策略]{style="font-family:宋体"}
+·3：设置会话日志流量阈值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[3]{lang="EN-US"}]{#struct_0_14338_x1629_670492157}[：设置会话日志流量阈值]{style="font-family:宋体"}
+·4：设置会话日志时间阈值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[4]{lang="EN-US"}]{#struct_0_14338_x1629_881884073}[：设置会话日志时间阈值]{style="font-family:宋体"}
+·5：设置最大会话数限制
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[5]{lang="EN-US"}]{#struct_0_14338_x1629_1787356375}[：设置最大会话数限制]{lang="EN-US" style="font-family:宋体"}
+·6：设置长连接会话
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[6]{lang="EN-US"}]{#struct_0_14338_x1629_1386701003}[：设置长连接会话]{lang="EN-US" style="font-family:宋体"}
+·7：设置调试信息开关
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[7]{lang="EN-US"}]{#struct_0_14338_x1629_893709228}[：设置调试信息开关]{lang="EN-US" style="font-family:宋体"}
+·8： 获取应用层老化时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[8]{lang="EN-US"}]{#struct_0_14338_x1629_x1147004958}[：]{style="font-family:宋体"} [获取应用层老化时间]{style="font-family:宋体"}
+·9：获取传输层协议老化时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[9]{lang="EN-US"}]{#struct_0_14338_x1629_14699570}[：获取传输层协议老化时间]{style="font-family:宋体"}
+·10：获取调试信息开关
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[10]{lang="EN-US"}]{#struct_0_14338_x1629_x1990429627}[：获取调试信息开关]{style="font-family:宋体"}
+·11：无效消息类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[11]{lang="EN-US"}]{#struct_0_14338_x1629_1787421911}[：]{style="font-family:宋体"}[无效消息类型]{lang="EN-US" style="font-family:宋体"}
+·12：获取连接数限制调试信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[12]{lang="EN-US"}]{#struct_0_14338_x1629_578481033}[：获取连接数限制调试信息]{style="font-family:宋体"}
+·13：设置连接数限制调试信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[13]{lang="EN-US"}]{#struct_0_14338_x1629_x437623544}[：设置连接数限制调试信息]{style="font-family:宋体"}
+·14：添加连接数限制策略
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[14]{lang="EN-US"}]{#struct_0_14338_x1629_1399019380}[：添加连接数限制策略]{lang="EN-US" style="font-family:宋体"}
+·15：删除连接数限制策略
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[15]{lang="EN-US"}]{#struct_0_14338_x1629_97861426}[：删除连接数限制策略]{lang="EN-US" style="font-family:宋体"}
+·16：添加连接数限制规则
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[16]{lang="EN-US"}]{#struct_0_14338_x1629_1787487447}[：添加连接数限制规则]{lang="EN-US" style="font-family:宋体"}
+·17：删除连接数限制规则
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[17]{lang="EN-US"}]{#struct_0_14338_x1629_1807406266}[：删除连接数限制规则]{lang="EN-US" style="font-family:宋体"}
+·18：应用连接数限制策略
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[18]{lang="EN-US"}]{#struct_0_14338_x1629_x1977021286}[：应用连接数限制策略]{lang="EN-US" style="font-family:宋体"}
+·19：取消应用连接数限制策略
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[19]{lang="EN-US"}]{#struct_0_14338_x1629_894476650}[：取消应用连接数限制策略]{style="font-family:宋体"}
+·20：获取连接数限制策略
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[20]{lang="EN-US"}]{#struct_0_14338_x1629_x675110470}[：获取连接数限制策略]{lang="EN-US" style="font-family:宋体"}
+·21：获取下一个连接数限制策略
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[21]{lang="EN-US"}]{#struct_0_14338_x1629_1787552983}[：获取下一个连接数限制策略]{style="font-family:宋体"}
+·22：获取连接数限制策略应用的接口列表
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[22]{lang="EN-US"}]{#struct_0_14338_x1629_972918176}[：获取连接数限制策略应用的接口列表]{style="font-family:宋体"}
+·23：获取所有策略计数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[23]{lang="EN-US"}]{#struct_0_14338_x1629_741721705}[：获取所有策略计数]{lang="EN-US" style="font-family:宋体"}
+Received slot insert message, slot number: *slot-id*.
 
-[[Received slot insert message, slot number: *slot-id*.]{lang="EN-US"}]{#struct_0_14338_x1629_493314043}
+收到单板插入事件，单板号为*slot-id*
 
-[[收到单板插入事件，单板号为]{style="font-family:宋体"}*[slot-id]{lang="EN-US"}*]{#struct_0_14338_x1629_x1722155080}
+Received interface event message, interface:*interface-type interface-num*, event: *event-type*.
 
-[[Received interface event message, interface:*interface-type interface-num*, event: *event-type*.]{lang="EN-US"}]{#struct_0_14338_x1629_1787618519}
+收到接口事件，接口名为*interface-type interface-num*，事件类型为*event-type*
 
-[[收到接口事件，接口名为]{style="font-family:宋体"}*[interface-type interface-num]{lang="EN-US"}*]{#struct_0_14338_x1629_x507325864}[，事件类型为]{style="font-family:宋体"}*[event-type]{lang="EN-US"}*
+Received ACL event message, ACL version: *version*.
 
-[[Received ACL event message, ACL version: *version*.]{lang="EN-US"}]{#struct_0_14338_x1629_x1454884831}
+收到ACL事件，ACL版本为*version*
 
-[[收到]{style="font-family:宋体"}[ACL]{lang="EN-US"}]{#struct_0_14338_x1629_x1778147531}[事件，]{style="font-family:宋体"}[ACL]{lang="EN-US"}[版本为]{style="font-family:宋体"}*[version]{lang="EN-US"}*
+Received ioctl message, message type: *config-type*
 
-[[Received ioctl message, message type: *config-type*]{lang="EN-US"}]{#struct_0_14338_x1629_1466464811}
+收到ioctl消息，消息类型为*config-type*，包括以下取值：
 
-[[收到]{style="font-family:宋体"}[ioctl]{lang="EN-US"}]{#struct_0_14338_x1629_1466399275}[消息，消息类型为]{style="font-family:宋体"}*[config-type]{lang="EN-US"}*[，包括以下取值]{style="font-family:宋体"}[：]{style="font-family:宋体"}
+·set AppAging：设置应用协议老化时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[set AppAging]{lang="EN-US"}]{#struct_0_14338_x1629_1861428145}[：设置应用协议老化时间]{style="font-family:宋体"}
+·set L4Aging：设置四层协议老化时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[set L4Aging]{lang="EN-US"}]{#struct_0_14338_x1629_1482993260}[：设置四层协议老化时间]{style="font-family:宋体"}
+·set LogPolicy：设置会话日志的输出策略
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[set LogPolicy]{lang="EN-US"}]{#struct_0_14338_x1629_1466989098}[：设置会话日志的输出策略]{style="font-family:宋体"}
+·set LogFlow：设置输出会话日志的流量阈值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[set ]{lang="EN-US"}]{#struct_0_14338_x1629_1473978993}[L]{lang="EN-US"}[og]{lang="EN-US"}[F]{lang="EN-US"}[low]{lang="EN-US"}[：设置输出会话日志的流量阈值]{style="font-family:宋体"}
+·set LogTime：设置输出会话日志的时间阈值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[set ]{lang="EN-US"}]{#struct_0_14338_x1629_1466923562}[L]{lang="EN-US"}[og]{lang="EN-US"}[T]{lang="EN-US"}[ime]{lang="EN-US"}[：设置输出会话日志的时间阈值]{style="font-family:宋体"}
+·set PersistSession：设置长连接会话
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[set ]{lang="EN-US"}]{#struct_0_14338_x1629_1821290616}[P]{lang="EN-US"}[ersist]{lang="EN-US"}[S]{lang="EN-US"}[ession]{lang="EN-US"}[：设置长连接会话]{style="font-family:
-  宋体"}
+·set Debug：使能debug开关
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[set ]{lang="EN-US"}]{#struct_0_14338_x1629_92877857}[D]{lang="EN-US"}[ebug]{lang="EN-US"}[：使能]{style="font-family:宋体"}[debug]{lang="EN-US"}[开关]{style="font-family:宋体"}
+·get SpecInfo：获取产品定制信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[get SpecInfo]{lang="EN-US"}]{#struct_0_14338_x1629_1466858026}[：获取产品定制信息]{style="font-family:宋体"}
+·reset Session：删除会话表
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[reset ]{lang="EN-US"}]{#struct_0_14338_x1629_x1224299026}[S]{lang="EN-US"}[ession]{lang="EN-US"}[：删除会话表]{style="font-family:宋体"}
+·reset Relation：删除会话关联表
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[reset ]{lang="EN-US"}]{#struct_0_14338_x1629_1466792490}[R]{lang="EN-US"}[elation]{lang="EN-US"}[：删除会话关联表]{style="font-family:宋体"}
+·reset Statistics：删除会话统计计数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[reset ]{lang="EN-US"}]{#struct_0_14338_x1629_1033583770}[S]{lang="EN-US"}[tatistics]{lang="EN-US"}[：删除会话统计计数]{style="font-family:宋体"}
+·notify ACLChange：通知ACL规则变化
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[notify A]{lang="EN-US"}]{#struct_0_14338_x1629_1467251242}[CLC]{lang="EN-US"}[hange]{lang="EN-US"}[：通知]{style="font-family:宋体"}[ACL]{lang="EN-US"}[规则变化]{style="font-family:宋体"}
+·notify IfActive：通知接口激活
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[notify IfActive]{lang="EN-US"}]{#struct_0_14338_x1629_x2032219987}[：通知接口激活]{style="font-family:宋体"}
+·sync GloablCfg：同步全局配置
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[sync GloablCfg]{lang="EN-US"}]{#struct_0_14338_x1629_x1101691492}[：同步全局配置]{style="font-family:宋体"}
+·sync IfCfg：同步接口配置
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[sync IfCfg]{lang="EN-US"}]{#struct_0_14338_x1629_1467185706}[：同步接口配置]{style="font-family:宋体"}
+·sync start：配置同步开始
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[sync start]{lang="EN-US"}]{#struct_0_14338_x1629_1454283444}[：配置同步开始]{style="font-family:宋体"}
+·sync end：配置同步结束
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[sync ]{lang="EN-US"}]{#struct_0_14338_x1629_1467120170}[e]{lang="EN-US"}[nd]{lang="EN-US"}[：配置同步结束]{style="font-family:宋体"}
+【举例】
 
-[ ]{lang="EN-US"}
+\# 打开所有会话配置处理调试开关。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x1291342373}
+\<Sysname\> debugging session config all
 
-[[\# ]{lang="EN-US"}]{#struct_0_14338_x1629_1787684055}[打开所有会话配置处理调试开关。]{style="font-family:宋体"}
+\# 配置FTP协议老化的会话时间时间为50000秒。
 
-[[\<Sysname\> debugging session config all]{lang="EN-US"}]{#struct_0_14338_x1629_1005865368}
+Sysname session aging-time application ftp 50000
 
-[[\# ]{lang="EN-US"}]{#struct_0_14338_x1629_x435131921}[配置]{style="font-family:宋体"}[FTP]{lang="EN-US"}[协议老化的会话时间时间为]{style="font-family:宋体"}[50000]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\*Aug 31 14:54:19:617 2011 Sysname SESSION/7/EVENT: -MDC=1; Received config message, message type: 0.
 
-[[\[Sysname\] session aging-time application ftp 50000]{lang="EN-US"}]{#struct_0_14338_x1629_x797938317}
+\*Aug 31 14:54:19:617 2011 Sysname SESSION/7/CONFIG: -MDC=1; Received ioctl message, message type: set AppAging.
 
-[\*Aug 31 14:54:19:617 2011 Sysname SESSION/7/EVENT: -MDC=1; Received config message, message type: 0.]{lang="EN-US"}
-
-[\*Aug 31 14:54:19:617 2011 Sysname SESSION/7/CONFIG: -MDC=1; Received ioctl message, message type: set AppAging.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_14338_x1629_1174503856}*[收到一个配置消息，消息类型为]{style="font-family:宋体"}[0]{lang="EN-US"}*
-
-::: {#-1251097754 .myid}
-[]{#_Toc404793495}[]{#struct_0_14338_x1629_1436985596}[]{#_Toc237771566}[]{#_Toc185127723}
+*// 收到一个配置消息，消息类型为0*
 
 **会话管理 \-- 会话管理调试命令 \-- debugging session ext-info**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x981086986}
+【命令】
 
-[**[debugging session ext-info ]{lang="EN-US"}**[{ **all** \| **event** \| **error** } \[ **acl** *acl-number* \]]{lang="EN-US"}]{#struct_0_14338_x1629_390671668}
+**[debugging session ext-info **[{ **all** \| **event** \| **error** } [ **acl** *acl-number* ]]]
 
-[**[undo debugging session ext-info ]{lang="EN-US"}**[{ **all** \| **event** \| **error** }]{lang="EN-US"}]{#struct_0_14338_x1629_x1440611143}
+**[undo debugging session ext-info **[{ **all** \| **event** \| **error** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x1499105990}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_14338_x1629_1787749591}
+用户视图
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x2076096806}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_14338_x1629_x2142845335}[：表示扩展信息的所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示扩展信息的所有调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_14338_x1629_x231076484}[：表示扩展信息的事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示扩展信息的事件调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_14338_x1629_x816121743}[：表示扩展信息的错误调试信息开关。]{style="font-family:宋体"}
+**[error**]：表示扩展信息的错误调试信息开关。
 
-[**[acl]{lang="EN-US"}**[ *acl-number*]{lang="EN-US"}]{#struct_0_14338_x1629_x1485152901}[：指定匹配会话的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[规则。其中，]{style="font-family:宋体"}*[acl-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[ACL]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[。该参数可多次设置，但仅最后一次合法的配置生效。]{style="font-family:宋体"}
+**[acl** *acl-number*]：指定匹配会话的ACL规则。其中，*acl-number*表示ACL编号，取值范围为2000～3999。该参数可多次设置，但仅最后一次合法的配置生效。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x863617197}
+【描述】
 
-[**[debugging session ]{lang="EN-US"}[ext-info]{lang="EN-US"}**]{#struct_0_14338_x1629_x255241782}[命令用来打开会话管理的扩展信息调试开关。]{style="font-family:宋体"}**[undo debugging session ]{lang="EN-US"}[ext-info]{lang="EN-US"}**[命令用来关闭会话管理的扩展信息调试开关。]{style="font-family:宋体"}
+**[debugging session ext-info**]命令用来打开会话管理的扩展信息调试开关。**undo debugging session ext-info**命令用来关闭会话管理的扩展信息调试开关。
 
-[[缺省情况下，会话管理的扩展信息调试开关处于关闭状态。]{style="font-family:宋体"}]{#struct_0_14338_x1629_1736604996}
+缺省情况下，会话管理的扩展信息调试开关处于关闭状态。
 
-[[表1-4 ]{lang="EN-US"}[debugging session ext-info event]{lang="EN-US"}]{#struct_0_14338_x1629_1786766551}[命令输出信息描述表]{style="font-family:黑体"}
+表1-4 debugging session ext-info event命令输出信息描述表
 
-[]{#table_struct_0_x1635782734}[[字段]{style="font-family:黑体"}]{#struct_0_14338_x1629_2126078017}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_14338_x1629_110873656}
+描述
 
-[[Add]{lang="EN-US"}]{#struct_0_14338_x1629_x912978747}
+Add
 
-[[扩展信息操作类型：添加扩展信息]{style="font-family:宋体"}]{#struct_0_14338_x1629_x671123498}
+扩展信息操作类型：添加扩展信息
 
-[[Del]{lang="EN-US"}]{#struct_0_14338_x1629_x2058586483}
+Del
 
-[[扩展信息操作类型：删除扩展信息]{style="font-family:宋体"}]{#struct_0_14338_x1629_x1660690709}
+扩展信息操作类型：删除扩展信息
 
-[[Get]{lang="EN-US"}]{#struct_0_14338_x1629_1786832087}
+Get
 
-[[扩展信息操作类型：获取扩展信息]{style="font-family:宋体"}]{#struct_0_14338_x1629_1000967483}
+扩展信息操作类型：获取扩展信息
 
-[*[module]{lang="EN-US"}*]{#struct_0_14338_x1629_x1726316388}
+*[module*]
 
-[[业务模块，包括以下几种：]{style="font-family:宋体"}]{#struct_0_14338_x1629_666520956}
+业务模块，包括以下几种：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NAT]{lang="EN-US"}]{#struct_0_14338_x1629_294454733}
+·NAT
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ASPF]{lang="EN-US"}]{#struct_0_14338_x1629_902426734}
+·ASPF
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ALG]{lang="EN-US"}]{#struct_0_14338_x1629_x941592513}
+·ALG
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[STAT]{lang="EN-US"}]{#struct_0_14338_x1629_7809018}[（攻击防范）]{lang="EN-US" style="font-family:宋体"}
+·STAT（攻击防范）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TCPPROXY]{lang="EN-US"}]{#struct_0_14338_x1629_x2099791809}
+·TCPPROXY
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ENGINE]{lang="EN-US"}]{#struct_0_14338_x1629_x1424630442}[（会话引擎）]{lang="EN-US" style="font-family:宋体"}
+·ENGINE（会话引擎）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[P2P]{lang="EN-US"}]{#struct_0_14338_x1629_x1732983810}
+·P2P
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LB]{lang="EN-US"}]{#struct_0_14338_x1629_x623799602}
+·LB
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[FLOW_REDIRECT]{lang="EN-US"}]{#struct_0_14338_x1629_x941526977}
+·FLOW_REDIRECT
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[FLT6]{lang="EN-US"}]{#struct_0_14338_x1629_1197364624}
+·FLT6
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NATPT]{lang="EN-US"}]{#struct_0_14338_x1629_1569860414}
+·NATPT
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[CONNLMT]{lang="EN-US"}]{#struct_0_14338_x1629_x454208828}
+·CONNLMT
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PBR]{lang="EN-US"}]{#struct_0_14338_x1629_x728656195}[（策略路由）]{lang="EN-US" style="font-family:宋体"}
+·PBR（策略路由）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DDOS]{lang="EN-US"}]{#struct_0_14338_x1629_x941461441}
+·DDOS
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SRVASST]{lang="EN-US"}]{#struct_0_14338_x1629_1919518189}[（]{lang="EN-US" style="font-family:宋体"}[Server Assistant]{lang="EN-US"}[）]{lang="EN-US" style="font-family:宋体"}
+·SRVASST（Server Assistant）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SESSIONLOG]{lang="EN-US"}]{#struct_0_14338_x1629_1249683810}
+·SESSIONLOG
 
-[[Tuple5]{lang="FR"}[(EVENT)]{lang="EN-US"}]{#struct_0_14338_x1629_x284242184}[:]{lang="FR"}
+Tuple5(EVENT):
 
-[*[srcIP]{lang="FR"}*]{#struct_0_14338_x1629_x941395905}[/*srcPort*\--\>*destIP*/*destPort*(*ProtoType(Proto number)*)]{lang="FR"}
+*[srcIP*]/*srcPort*\--\>*destIP*/*destPort*(*ProtoType(Proto number)*)
 
-[[会话的五元组：]{style="font-family:宋体"}]{#struct_0_14338_x1629_809349916}
+会话的五元组：
 
-[[源]{style="font-family:宋体"}[IP/]{lang="EN-US"}]{#struct_0_14338_x1629_x1077520295}[源端口]{style="font-family:宋体"}[\--\>]{lang="EN-US"}[目的]{style="font-family:宋体"}[IP/]{lang="EN-US"}[目的端口（传输层协议类型（协议号））]{style="font-family:宋体"}
+源IP/源端口\--\>目的IP/目的端口（传输层协议类型（协议号））
 
-[ ]{lang="EN-US"}
+表1-5 debugging session ext-info error命令输出信息描述表
 
-[[表1-5 ]{lang="EN-US"}[debugging session ext-info error]{lang="EN-US"}]{#struct_0_14338_x1629_x433150580}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1642143534}[[字段]{style="font-family:黑体"}]{#struct_0_14338_x1629_x324869624}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_14338_x1629_x1467671727}
+Add
 
-[[Add]{lang="EN-US"}]{#struct_0_14338_x1629_1160630724}
+扩展信息操作类型：添加扩展信息
 
-[[扩展信息操作类型：添加扩展信息]{style="font-family:宋体"}]{#struct_0_14338_x1629_x941330369}
+Del
 
-[[Del]{lang="EN-US"}]{#struct_0_14338_x1629_x1989930765}
+扩展信息操作类型：删除扩展信息
 
-[[扩展信息操作类型：删除扩展信息]{style="font-family:宋体"}]{#struct_0_14338_x1629_x1485814442}
+Get
 
-[[Get]{lang="EN-US"}]{#struct_0_14338_x1629_x767884951}
+扩展信息操作类型：获取扩展信息
 
-[[扩展信息操作类型：获取扩展信息]{style="font-family:宋体"}]{#struct_0_14338_x1629_1090581552}
+*[module* unknown]
 
-[*[module]{lang="EN-US"}*[ unknown]{lang="EN-US"}]{#struct_0_14338_x1629_2140398444}
+业务模块*module*未注册
 
-[[业务模块]{style="font-family:宋体"}*[module]{lang="EN-US"}*]{#struct_0_14338_x1629_x941264833}[未注册]{style="font-family:宋体"}
+Tuple5(EVENT):
 
-[[Tuple5]{lang="FR"}[(EVENT)]{lang="EN-US"}]{#struct_0_14338_x1629_395460157}[:]{lang="FR"}
+*[srcIP*]/*srcPort*\--\>*destIP*/*destPort*(*ProtoType(Proto number)*)
 
-[*[srcIP]{lang="FR"}*]{#struct_0_14338_x1629_1392683067}[/*srcPort*\--\>*destIP*/*destPort*(*ProtoType(Proto number)*)]{lang="FR"}
+会话的五元组：
 
-[[会话的五元组：]{style="font-family:宋体"}]{#struct_0_14338_x1629_x680527212}
+源IP/源端口\--\>目的IP/目的端口（传输层协议类型（协议号））
 
-[[源]{style="font-family:宋体"}[IP/]{lang="EN-US"}]{#struct_0_14338_x1629_799122074}[源端口]{style="font-family:宋体"}[\--\>]{lang="EN-US"}[目的]{style="font-family:宋体"}[IP/]{lang="EN-US"}[目的端口（传输层协议类型（协议号））]{style="font-family:宋体"}
+【举例】
 
-[ ]{lang="EN-US"}
+\# 在启用了ASPF的设备上打开扩展信息调试功能。在设备接口配置ASPF策略，并向接口发送ICMP报文时，将输出如下调试信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_14338_x1629_1668890345}
+\<Sysname\> debugging session ext-info all
 
-[[\# ]{lang="EN-US"}]{#struct_0_14338_x1629_1519669959}[在启用了]{style="font-family:宋体"}[ASPF]{lang="EN-US"}[的设备上打开扩展信息调试功能。在设备接口配置]{style="font-family:宋体"}[ASPF]{lang="EN-US"}[策略，并向接口发送]{style="font-family:宋体"}[ICMP]{lang="EN-US"}[报文时，将输出如下调试信息。]{style="font-family:宋体"}
+\*Mar 24 18:15:47:164 2011 Sysname SESSION/7/EXTINFO: -MDC=1;
 
-[[\<Sysname\> debugging session ext-info all]{lang="EN-US"}]{#struct_0_14338_x1629_x941199297}
+ Ext-Info: Add  ASPF
 
-[\*Mar 24 18:15:47:164 2011 Sysname SESSION/7/EXTINFO: -MDC=1;]{lang="EN-US"}
+  Tuple5(EVENT): 192.168.0.92/8\--\>192.168.1.58/3840(icmp(1))
 
-[ Ext-Info: Add  ASPF]{lang="EN-US"}
-
-[  Tuple5(EVENT): 192.168.0.92/8\--\>192.168.1.58/3840(icmp(1))]{lang="EN-US"}
-
-[*[// ASPF]{lang="EN-US"}*]{#struct_0_14338_x1629_x848287177}*[向会话模块添加扩展信息成功，被添加扩展信息的会话五元组为：]{style="font-family:宋体"}[192.168.0.92/8\--\>192.168.1.58/3840(icmp(1))]{lang="EN-US"}*
-
-::: {#-1952637972 .myid}
-[]{#_Toc404793496}[]{#struct_0_14338_x1629_x1911699042}[]{#_Toc237771567}[]{#_Toc185127724}
+*[// ASPF*]*向会话模块添加扩展信息成功，被添加扩展信息的会话五元组为：192.168.0.92/8\--\>192.168.1.58/3840(icmp(1))*
 
 **会话管理 \-- 会话管理调试命令 \-- debugging session packet-process**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x1043357706}
+【命令】
 
-[**[debugging session packet-process event]{lang="EN-US"}**[ \[ **acl** *acl-number* \]]{lang="EN-US"}]{#struct_0_14338_x1629_x1279207914}
+**[debugging session packet-process event** [ **acl** *acl-number* ]]
 
-[**[undo debugging session packet-process event]{lang="EN-US"}**]{#struct_0_14338_x1629_1436218558}
+**[undo debugging session packet-process event**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_14338_x1629_156088888}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_14338_x1629_x941133761}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x1189045206}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_14338_x1629_x297815885}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_14338_x1629_1586726018}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x811507643}
+【参数】
 
-[**[event]{lang="EN-US"}**]{#struct_0_14338_x1629_89343773}[：报文处理相关的事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：报文处理相关的事件调试信息开关。
 
-[**[acl]{lang="EN-US"}**[ *acl-number*]{lang="EN-US"}]{#struct_0_14338_x1629_x1317427113}[：指定匹配会话的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[规则。其中，]{style="font-family:宋体"}*[acl-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[ACL]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[。该参数可多次设置，但仅最后一次合法的配置生效。]{style="font-family:宋体"}
+**[acl** *acl-number*]：指定匹配会话的ACL规则。其中，*acl-number*表示ACL编号，取值范围为2000～3999。该参数可多次设置，但仅最后一次合法的配置生效。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_14338_x1629_752570723}
+【描述】
 
-[**[debugging session ]{lang="EN-US"}[packet-process]{lang="EN-US"}**]{#struct_0_14338_x1629_1941808378}[命令用来打开会话管理的报文处理调试信息开关。]{style="font-family:宋体"}**[undo debugging session ]{lang="EN-US"}[packet-process]{lang="EN-US"}**[命令用来关闭会话管理的报文处理调试信息开关。]{style="font-family:宋体"}
+**[debugging session packet-process**]命令用来打开会话管理的报文处理调试信息开关。**undo debugging session packet-process**命令用来关闭会话管理的报文处理调试信息开关。
 
-[[缺省情况下，会话管理的报文处理调试信息开关处于关闭状态。]{style="font-family:宋体"}]{#struct_0_14338_x1629_x942116801}
+缺省情况下，会话管理的报文处理调试信息开关处于关闭状态。
 
-[[表1-6 ]{lang="EN-US"}[debugging session packet-process]{lang="EN-US"}]{#struct_0_14338_x1629_x1277471447}[命令输出信息描述表]{style="font-family:黑体"}
+表1-6 debugging session packet-process命令输出信息描述表
 
-[]{#table_struct_0_x1640421710}[[字段]{style="font-family:黑体"}]{#struct_0_14338_x1629_x637333365}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_14338_x1629_1645827814}
+描述
 
-[[Tuple3: *srcIP* \--\>*destIP* (*ProtoType(Proto number)*)]{lang="EN-US"}]{#struct_0_14338_x1629_1791425479}
+Tuple3: *srcIP* \--\>*destIP* (*ProtoType(Proto number)*)
 
-[[报文的三元组：源]{style="font-family:宋体"}[IP\--\>]{lang="EN-US"}]{#struct_0_14338_x1629_x2007910920}[目的]{style="font-family:宋体"}[IP/]{lang="EN-US"}[目的端口（传输层协议类型（协议号））]{style="font-family:宋体"}
+报文的三元组：源IP\--\>目的IP/目的端口（传输层协议类型（协议号））
 
-[[Received: ]{lang="EN-US"}]{#struct_0_14338_x1629_x1919693446}
+Received:
 
-[[收到的报文]{style="font-family:宋体"}]{#struct_0_14338_x1629_x412889490}
+收到的报文
 
-[[Packet can\'t be resolved]{lang="EN-US"}]{#struct_0_14338_x1629_x942051265}
+Packet can\'t be resolved
 
-[[报文无法解析出五元组]{style="font-family:宋体"}]{#struct_0_14338_x1629_x1745255165}
+报文无法解析出五元组
 
-[[Packet checking failed]{lang="EN-US"}]{#struct_0_14338_x1629_x985085220}
+Packet checking failed
 
-[[报文合法性检查不通过（如报文长度、字段等不符合协议或不符合会话处理要求）]{style="font-family:宋体"}]{#struct_0_14338_x1629_478186255}
+报文合法性检查不通过（如报文长度、字段等不符合协议或不符合会话处理要求）
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x2127464501}
+\# 在启用了ASPF的设备上打开报文处理调试功能，向该设备发送一个flag标记是非法组合的TCP报文，将看到有如下显示信息输出。
 
-[[\# ]{lang="EN-US"}]{#struct_0_14338_x1629_x1307563041}[在启用了]{style="font-family:宋体"}[ASPF]{lang="EN-US"}[的设备上打开报文处理调试功能，向该设备发送一个]{style="font-family:宋体"}[flag]{lang="EN-US"}[标记是非法组合的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[报文，将看到有如下显示信息输出。]{style="font-family:宋体"}
+\<Sysname\> debugging session packet-process event
 
-[[\<Sysname\> debugging session packet-process event]{lang="EN-US"}]{#struct_0_14338_x1629_x941592512}
+\<Sysname\> system-view
 
-[\<Sysname\> system-view]{lang="EN-US"}
+\*Mar 26 08:50:24:568 2011 Sysname SESSION/7/PACKETS: -MDC=1;
 
-[\*Mar 26 08:50:24:568 2011 Sysname SESSION/7/PACKETS: -MDC=1;]{lang="EN-US"}
+ Tuple3: 192.168.1.58\--\>192.168.1.11(tcp(6))
 
-[ Tuple3: 192.168.1.58\--\>192.168.1.11(tcp(6))]{lang="EN-US"}
+ Received: Packet checking failed
 
-[ Received: Packet checking failed ]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_14338_x1629_7874554}*[收到一个单包检查不合法的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[报文，源]{style="font-family:宋体"}[IP]{lang="EN-US"}[为]{style="font-family:宋体"}[192.168.1.58]{lang="EN-US"}[，目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[为]{style="font-family:宋体"}[192.168.1.11]{lang="EN-US"}*
-
-::: {#-1436584769 .myid}
-[]{#_Toc404793497}[]{#struct_0_14338_x1629_1799091949}[]{#_Toc237771568}[]{#_Toc185127725}
+*// 收到一个单包检查不合法的TCP报文，源IP为192.168.1.58，目的IP为192.168.1.11*
 
 **会话管理 \-- 会话管理调试命令 \-- debugging session relation**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_14338_x1629_1332339733}
+【命令】
 
-[**[debugging session relation ]{lang="EN-US"}**[{ **all** \| **event** \| **error** }]{lang="EN-US"}]{#struct_0_14338_x1629_x35502722}
+**[debugging session relation **[{ **all** \| **event** \| **error** }]]
 
-[**[undo debugging session relation ]{lang="EN-US"}**[{ **all** \| **event** \| **error** }]{lang="EN-US"}]{#struct_0_14338_x1629_x386547350}
+**[undo debugging session relation **[{ **all** \| **event** \| **error** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_14338_x1629_490971809}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_14338_x1629_x2012105701}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_14338_x1629_2021992783}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_14338_x1629_x941526976}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_14338_x1629_1197299088}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_14338_x1629_1582055284}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_14338_x1629_x1369260432}[：表示关联表的所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示关联表的所有调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_14338_x1629_1566650804}[：表示关联表的事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示关联表的事件调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_14338_x1629_1683837833}[：表示关联表的错误调试信息开关。]{style="font-family:宋体"}
+**[error**]：表示关联表的错误调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_14338_x1629_702207037}
+【描述】
 
-[**[debugging session ]{lang="EN-US"}[relation]{lang="EN-US"}**]{#struct_0_14338_x1629_2147031643}[命令用来打开会话管理的关联表调试信息开关。]{style="font-family:宋体"}**[undo debugging session ]{lang="EN-US"}[relation]{lang="EN-US"}**[命令用来关闭会话管理的关联表调试信息开关。]{style="font-family:宋体"}
+**[debugging session relation**]命令用来打开会话管理的关联表调试信息开关。**undo debugging session relation**命令用来关闭会话管理的关联表调试信息开关。
 
-[[缺省情况下，会话管理的关联表调试信息开关处于关闭状态。]{style="font-family:宋体"}]{#struct_0_14338_x1629_1847110644}
+缺省情况下，会话管理的关联表调试信息开关处于关闭状态。
 
-[[表1-7 ]{lang="EN-US"}[debugging session relation event]{lang="EN-US"}]{#struct_0_14338_x1629_x941461440}[命令输出信息描述表]{style="font-family:黑体"}
+表1-7 debugging session relation event命令输出信息描述表
 
-[]{#table_struct_0_x1613529966}[[字段]{style="font-family:黑体"}]{#struct_0_14338_x1629_1919452653}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_14338_x1629_1680022374}
+描述
 
-[[Tuple]{lang="FR"}[(EVENT)]{lang="EN-US"}]{#struct_0_14338_x1629_x1916826046}[:]{lang="FR"}
+Tuple(EVENT):
 
-[*[srcIP/ srcPort ]{lang="FR"}*]{#struct_0_14338_x1629_1837509868}[\--\>*destIP*/*destPort*(*ProtoType(ProtoNumber)*)]{lang="FR"}
+*[srcIP/ srcPort *]\--\>*destIP*/*destPort*(*ProtoType(ProtoNumber)*)
 
-[[关联表的五元组：]{style="font-family:宋体"}]{#struct_0_14338_x1629_1716208815}
+关联表的五元组：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[srcIP]{lang="FR"}*]{#struct_0_14338_x1629_x249451969}[：源]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}
+·*srcIP*：源IP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[srcPort]{lang="FR"}*]{#struct_0_14338_x1629_x941395904}[：]{lang="EN-US" style="font-family:宋体"}[源]{style="font-family:宋体"}[Port]{lang="EN-US"}
+·*srcPort*：源Port
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[destIP]{lang="FR"}*]{#struct_0_14338_x1629_809415452}[：]{lang="EN-US" style="font-family:宋体"}[目的]{style="font-family:宋体"}[IP]{lang="EN-US"}
+·*destIP*：目的IP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[destPort]{lang="FR"}*]{#struct_0_14338_x1629_677659843}[：]{lang="EN-US" style="font-family:宋体"}[目的]{style="font-family:宋体"}[Port]{lang="EN-US"}
+·*destPort*：目的Port
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ProtoType]{lang="FR"}*]{#struct_0_14338_x1629_497316323}[：传输层协议类型]{style="font-family:宋体"}
+·*ProtoType*：传输层协议类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ProtoNumber]{lang="FR"}*]{#struct_0_14338_x1629_x700607425}[：]{lang="EN-US" style="font-family:宋体"}[协议号]{style="font-family:宋体"}
+·*ProtoNumber*：协议号
 
-[[Relation entry was created for module calling.]{lang="EN-US"}]{#struct_0_14338_x1629_1943359346}
+Relation entry was created for module calling.
 
-[[业务调用触发创建关联表]{style="font-family:宋体"}]{#struct_0_14338_x1629_x941330368}
+业务调用触发创建关联表
 
-[[Relation entry was deleted for module calling]{lang="EN-US"}]{#struct_0_14338_x1629_x1989865229}
+Relation entry was deleted for module calling
 
-[[业务调用触发删除关联表]{style="font-family:宋体"}]{#struct_0_14338_x1629_x1165771710}
+业务调用触发删除关联表
 
-[[Relation entry was deleted for timeout.]{lang="EN-US"}]{#struct_0_14338_x1629_1438468712}
+Relation entry was deleted for timeout.
 
-[[老化超时触发删除关联表]{style="font-family:宋体"}]{#struct_0_14338_x1629_x1150502546}
+老化超时触发删除关联表
 
-[[Relation entry was updated for module calling.]{lang="EN-US"}]{#struct_0_14338_x1629_x746430658}
+Relation entry was updated for module calling.
 
-[[业务调用触发更新关联表]{style="font-family:宋体"}]{#struct_0_14338_x1629_x941264832}
+业务调用触发更新关联表
 
-[ ]{lang="EN-US"}
+表1-8 debugging session relation error命令输出信息描述表
 
-[[表1-8 ]{lang="EN-US"}[debugging session relation error]{lang="EN-US"}]{#struct_0_14338_x1629_395394621}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1611498062}[[字段]{style="font-family:黑体"}]{#struct_0_14338_x1629_1950048199}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_14338_x1629_x1127560736}
+Error:
 
-[[Error:]{lang="EN-US"}]{#struct_0_14338_x1629_x1156943128}
+关联表错误
 
-[[关联表错误]{style="font-family:宋体"}]{#struct_0_14338_x1629_1946720030}
+Not enough memory for relation entry.
 
-[[Not enough memory for relation entry.]{lang="EN-US"}]{#struct_0_14338_x1629_x16759944}
+没有足够的内存用于创建关联表
 
-[[没有足够的内存用于创建关联表]{style="font-family:宋体"}]{#struct_0_14338_x1629_x941199296}
+Number of relation entries exceeded the max.
 
-[[Number of relation entries exceeded the max.]{lang="EN-US"}]{#struct_0_14338_x1629_x848221641}
+关联表个数超过最大值
 
-[[关联表个数超过最大值]{style="font-family:宋体"}]{#struct_0_14338_x1629_x1930721981}
+【举例】
 
-[ ]{lang="EN-US"}
+\# 在启用了ASPF的设备上打开关联表调试功能，当有FTP报文经过本设备去访问远端服务器时，将看到有如下调试信息输出。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_14338_x1629_1554024846}
+\<Sysname\> debugging session relation all
 
-[[\# ]{lang="EN-US"}]{#struct_0_14338_x1629_678908584}[在启用了]{style="font-family:宋体"}[ASPF]{lang="EN-US"}[的设备上打开关联表调试功能，当有]{style="font-family:宋体"}[FTP]{lang="EN-US"}[报文经过本设备去访问远端服务器时，将看到有如下调试信息输出。]{style="font-family:宋体"}
+\*Mar 26 09:12:33:800 2011 Sysname SESSION/7/RELATION: -MDC=1;
 
-[[\<Sysname\> debugging session relation all]{lang="EN-US"}]{#struct_0_14338_x1629_1564254455}
+ Tuple(EVENT): 192.168.1.8/- \--\>2.2.2.2/21 (tcp(6))
 
-[\*Mar 26 09:12:33:800 2011 Sysname SESSION/7/RELATION: -MDC=1;]{lang="EN-US"}
+ Relation entry was created for module calling.
 
-[ Tuple(EVENT): 192.168.1.8/- \--\>2.2.2.2/21 (tcp(6))]{lang="EN-US"}
+*// 因外部模块通知创建一个关联表，其五元组为192.168.1.8/\-\--\>2.2.2.2/21 (TCP)*
 
-[ Relation entry was created for module calling.]{lang="EN-US"}
+\*Mar 26 09:17:54:112 2011 Sysname SESSION/7/RELATION: -MDC=1;
 
-[*[// ]{lang="EN-US"}*]{#struct_0_14338_x1629_x941133760}*[因外部模块通知创建一个关联表，其五元组为]{style="font-family:宋体"}[192.168.1.8/\-\--\>2.2.2.2/21 (TCP)]{lang="EN-US"}*
+Tuple(EVENT): 192.168.1.8/- \--\>2.2.2.2/21 (tcp(6))
 
-[[\*Mar 26 09:17:54:112 2011 Sysname SESSION/7/RELATION: -MDC=1;]{lang="EN-US"}]{#struct_0_14338_x1629_x1188979670}
+ Relation entry was deleted for time out.
 
-[Tuple(EVENT): 192.168.1.8/- \--\>2.2.2.2/21 (tcp(6))]{lang="EN-US"}
+*// 五元组为192.168.1.8/- \--\>2.2.2.2/21 (TCP(6))的关联表因老化被删除*
 
-[ Relation entry was deleted for time out.]{lang="EN-US"}
+\*Mar 24 18:22:13:476 2011 Sysname SESSION/7/RELATION: -MDC=1;
 
-[*[// ]{lang="EN-US"}*]{#struct_0_14338_x1629_182703723}*[五元组为]{style="font-family:宋体"}[192.168.1.8/- \--\>2.2.2.2/21 (TCP(6))]{lang="EN-US"}[的关联表因老化被删除]{style="font-family:宋体"}*
+ Error: Not enough memory for relation entry.
 
-[[\*Mar 24 18:22:13:476 2011 Sysname SESSION/7/RELATION: -MDC=1;]{lang="EN-US"}]{#struct_0_14338_x1629_x1855209658}
-
-[ Error: Not enough memory for relation entry.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_14338_x1629_x2128352031}*[没有足够的内存用于创建关联表]{style="font-family:宋体"}*
-
-::: {#2136674472 .myid}
-[]{#_Toc404793498}[]{#struct_0_14338_x1629_x553881144}[]{#_Toc237771569}[]{#_Toc185127726}[]{#_Toc302566182}[]{#_Toc302566183}[]{#_Toc302566184}[]{#_Toc302566187}[]{#_Toc302566188}[]{#_Toc302566189}[]{#_Toc302566190}[]{#_Toc302566191}[]{#_Toc302566192}[]{#_Toc302566193}[]{#_Toc302566194}[]{#_Toc302566195}[]{#_Toc302566196}[]{#_Toc302566224}[]{#_Toc302566225}
+*// 没有足够的内存用于创建关联表*
 
 **会话管理 \-- 会话管理调试命令 \-- debugging session session-table**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x46039443}
+【命令】
 
-[**[debugging session session-table ]{lang="EN-US"}**[{ **all** \| **error** \| **event** \| **fsm** } \[ **acl** *acl-number* \]]{lang="EN-US"}]{#struct_0_14338_x1629_x135269550}
+**[debugging session session-table **[{ **all** \| **error** \| **event** \| **fsm** } [ **acl** *acl-number* ]]]
 
-[**[undo debugging session session-table ]{lang="EN-US"}**[{ **all** \| **error** \| **event** \| **fsm** }]{lang="EN-US"}]{#struct_0_14338_x1629_x942116800}
+**[undo debugging session session-table **[{ **all** \| **error** \| **event** \| **fsm** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x1277405911}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_14338_x1629_1558746795}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x1187747564}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_14338_x1629_1121687974}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_14338_x1629_1722466044}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_14338_x1629_1914653217}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_14338_x1629_1595975441}[：表示会话表项的所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示会话表项的所有调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_14338_x1629_210023770}[：表示会话表项的错误调试信息开关。]{style="font-family:宋体"}
+**[error**]：表示会话表项的错误调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_14338_x1629_x942051264}[：表示会话表项的事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示会话表项的事件调试信息开关。
 
-[**[fsm]{lang="EN-US"}**]{#struct_0_14338_x1629_x1745189629}[：表示会话表项的状态机调试信息开关。]{style="font-family:宋体"}
+**[fsm**]：表示会话表项的状态机调试信息开关。
 
-[**[acl]{lang="EN-US"}**[ *acl-number*]{lang="EN-US"}]{#struct_0_14338_x1629_x1136218930}[：指定匹配会话的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[规则。其中，]{style="font-family:宋体"}*[acl-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[ACL]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[。该参数可多次设置，但仅最后一次合法的配置生效。]{style="font-family:宋体"}
+**[acl** *acl-number*]：指定匹配会话的ACL规则。其中，*acl-number*表示ACL编号，取值范围为2000～3999。该参数可多次设置，但仅最后一次合法的配置生效。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x178993604}
+【描述】
 
-[]{#OLE_LINK1}[**[debugging session session-table]{lang="EN-US"}**]{#struct_0_14338_x1629_x1633323137}[命令用来打开会话管理的会话表项调试信息开关。]{style="font-family:宋体"}**[undo debugging session session-table]{lang="EN-US"}**[命令用来关闭会话管理的会话表项调试信息开关。]{style="font-family:宋体"}
+**[debugging session session-table**]命令用来打开会话管理的会话表项调试信息开关。**undo debugging session session-table**命令用来关闭会话管理的会话表项调试信息开关。
 
-[[缺省情况下，会话表项的调试信息开关处于关闭状态。]{style="font-family:宋体"}]{#struct_0_14338_x1629_x1691714438}
+缺省情况下，会话表项的调试信息开关处于关闭状态。
 
-[]{#struct_0_14338_x1629_x579513327}[[表1-9 ]{lang="EN-US"}[debugging session session-table error]{lang="EN-US"}]{#_Toc130718928}[命令输出信息描述表]{style="font-family:黑体"}
+表1-9 debugging session session-table error命令输出信息描述表
 
-[]{#table_struct_0_x1612048910}[[字段]{style="font-family:黑体"}]{#struct_0_14338_x1629_x1927252228}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_14338_x1629_x1993725788}
+描述
 
-[[Error:]{lang="EN-US"}]{#struct_0_14338_x1629_x941592515}
+Error:
 
-[[会话表错误]{style="font-family:宋体"}]{#struct_0_14338_x1629_7940090}
+会话表错误
 
-[[Not enough memory for session entry. ]{lang="EN-US"}]{#struct_0_14338_x1629_x2089405613}
+Not enough memory for session entry.
 
-[[会话创建时内存不足]{style="font-family:宋体"}]{#struct_0_14338_x1629_1810174861}
+会话创建时内存不足
 
-[[Number of session entries exceeded the max.]{lang="EN-US"}]{#struct_0_14338_x1629_2045761396}
+Number of session entries exceeded the max.
 
-[[会话数超过上限]{style="font-family:宋体"}]{#struct_0_14338_x1629_968928200}
+会话数超过上限
 
-[[Updating accelerate table failed.]{lang="EN-US"}]{#struct_0_14338_x1629_x1712215035}
+Updating accelerate table failed.
 
-[[更新流加速表失败]{style="font-family:宋体"}]{#struct_0_14338_x1629_x941526979}
+更新流加速表失败
 
-[[Creating session entry failed]{lang="EN-US"}]{#struct_0_14338_x1629_1198019984}
+Creating session entry failed
 
-[[创建会话表失败]{style="font-family:宋体"}]{#struct_0_14338_x1629_986201906}
+创建会话表失败
 
-[ ]{lang="EN-US"}
+表1-10 debugging session session-table event命令输出信息描述表
 
-[]{#struct_0_14338_x1629_1748779293}[[表1-10 ]{lang="EN-US"}[debugging session session-table event]{lang="EN-US"}]{#_Toc130718927}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1618572942}[[字段]{style="font-family:黑体"}]{#struct_0_14338_x1629_x1956029202}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_14338_x1629_x250055695}
+Tuple5(EVENT):* srcIP*/*srcPort*\--\>*destIP*/*destPort*(*ProtoType(ProtoNumber)*)
 
-[[Tuple5(EVENT):]{lang="EN-US"}]{#struct_0_14338_x1629_x941461443}*[ srcIP]{lang="FR"}*[/*srcPort*\--\>*destIP*/*destPort*(*ProtoType(ProtoNumber)*)]{lang="FR"}
+会话的五元组（事件）：
 
-[[会话的五元组（事件）：]{style="font-family:宋体"}]{#struct_0_14338_x1629_1919649261}
+源IP/源端口\--\>目的IP/目的端口（传输层协议类型（协议号））
 
-[[源]{style="font-family:宋体"}[IP/]{lang="EN-US"}]{#struct_0_14338_x1629_1232811290}[源端口]{style="font-family:宋体"}[\--\>]{lang="EN-US"}[目的]{style="font-family:宋体"}[IP/]{lang="EN-US"}[目的端口（传输层协议类型（协议号））]{style="font-family:宋体"}
+Session entry was created.
 
-[[Session entry was created.]{lang="EN-US"}]{#struct_0_14338_x1629_x1747345537}
+会话被创建
 
-[[会话被创建]{style="font-family:宋体"}]{#struct_0_14338_x1629_x1320886855}
+Session entry was deleted.
 
-[[Session entry was deleted.]{lang="EN-US"}]{#struct_0_14338_x1629_x919079433}
+会话被删除
 
-[[会话被删除]{style="font-family:宋体"}]{#struct_0_14338_x1629_91881975}
+表1-11 debugging session session-table fsm命令输出信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[]{#struct_0_14338_x1629_x941395907}[[表1-11 ]{lang="EN-US"}[debugging session session-table fsm]{lang="EN-US"}]{#_Toc130718929}[命令输出信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x1615206798}[[字段]{style="font-family:黑体"}]{#struct_0_14338_x1629_809480988}
+Tuple5  (FSM):* srcIP*/*srcPort*\--\>*destIP*/*destPort*(*ProtoType(Proto number)*)
 
-[[描述]{style="font-family:黑体"}]{#struct_0_14338_x1629_x769304125}
+会话的五元组（状态机）：
 
-[[Tuple5  (FSM):]{lang="EN-US"}]{#struct_0_14338_x1629_141751148}*[ srcIP]{lang="FR"}*[/*srcPort*\--\>*destIP*/*destPort*(*ProtoType(Proto number)*)]{lang="FR"}
+源IP/源端口\--\>目的IP/目的端口（传输层协议类型（协议号））
 
-[[会话的五元组（状态机）：]{style="font-family:宋体"}]{#struct_0_14338_x1629_x1434152977}
+FSM:*preState*\--\>*nextState*,
 
-[[源]{style="font-family:宋体"}[IP/]{lang="EN-US"}]{#struct_0_14338_x1629_1290240974}[源端口]{style="font-family:宋体"}[\--\>]{lang="EN-US"}[目的]{style="font-family:宋体"}[IP/]{lang="EN-US"}[目的端口（传输层协议类型（协议号））]{style="font-family:宋体"}
+会话状态机发生变迁（原状态为*preState*，下一个状态为*nextState*）
 
-[[FSM:*preState*\--\>*nextState*,]{lang="EN-US"}]{#struct_0_14338_x1629_x324577040}
+dir
 
-[[会话状态机发生变迁（原状态为]{style="font-family:宋体"}*[preState]{lang="EN-US"}*]{#struct_0_14338_x1629_x941330371}[，下一个状态为]{style="font-family:宋体"}*[nextState]{lang="EN-US"}*[）]{style="font-family:宋体"}
+报文方向：
 
-[[dir ]{lang="EN-US"}]{#struct_0_14338_x1629_x1990455052}
+·ORIGIN：表示发起方发送的报文
 
-[[报文方向：]{style="font-family:宋体"}]{#struct_0_14338_x1629_x1405326343}
+·REPLY：表示响应方发送的报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ORIGIN]{lang="EN-US"}]{#struct_0_14338_x1629_x347386344}[：表示发起方发送的报文]{lang="EN-US" style="font-family:宋体"}
+PacketType: *PacketType(Packetnum)*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[REPLY]{lang="EN-US"}]{#struct_0_14338_x1629_x1806740145}[：表示响应方发送的报文]{style="font-family:宋体"}
+收到的报文的类型（报文编号）：
 
-[[PacketType: *PacketType(Packetnum)*]{lang="EN-US"}]{#struct_0_14338_x1629_x120059943}
+·GENERAL
 
-[[收到的报文的类型（报文编号）：]{style="font-family:宋体"}]{#struct_0_14338_x1629_x941264835}
+·SYN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[GENERAL]{lang="EN-US"}]{#struct_0_14338_x1629_395591229}
+·SYNACK
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SYN]{lang="EN-US"}]{#struct_0_14338_x1629_1019621947}
+·FIN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SYNACK]{lang="EN-US"}]{#struct_0_14338_x1629_x598241212}
+·ACK
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[FIN]{lang="EN-US"}]{#struct_0_14338_x1629_1116188904}
+·RST
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ACK]{lang="EN-US"}]{#struct_0_14338_x1629_x941199299}
+·REQUEST
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RST]{lang="EN-US"}]{#struct_0_14338_x1629_x849204681}
+·RESPONSE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[REQUEST]{lang="EN-US"}]{#struct_0_14338_x1629_x1137230280}
+·DATA
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RESPONSE]{lang="EN-US"}]{#struct_0_14338_x1629_x968509918}
+·ACK
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DATA]{lang="EN-US"}]{#struct_0_14338_x1629_x2054098711}
+·DATAACK
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ACK]{lang="EN-US"}]{#struct_0_14338_x1629_x941133763}
+·CLOSEREQ
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DATAACK]{lang="EN-US"}]{#struct_0_14338_x1629_x1189176278}
+·CLOSE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[CLOSEREQ]{lang="EN-US"}]{#struct_0_14338_x1629_x1730381020}
+·RESET
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[CLOSE]{lang="EN-US"}]{#struct_0_14338_x1629_x870018412}
+·SYNC
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RESET]{lang="EN-US"}]{#struct_0_14338_x1629_x707437374}
+·SYNCACK
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SYNC]{lang="EN-US"}]{#struct_0_14338_x1629_x942116803}
+·INIT
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SYNCACK]{lang="EN-US"}]{#struct_0_14338_x1629_x1277340375}
+·INITACK
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[INIT]{lang="EN-US"}]{#struct_0_14338_x1629_x865033139}
+·ABORT
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[INITACK]{lang="EN-US"}]{#struct_0_14338_x1629_1978236466}
+·SHUTDOWN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ABORT]{lang="EN-US"}]{#struct_0_14338_x1629_x942051267}
+·SHUTDOWNACK
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SHUTDOWN]{lang="EN-US"}]{#struct_0_14338_x1629_x1745124093}
+·ERROR
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SHUTDOWNACK]{lang="EN-US"}]{#struct_0_14338_x1629_x1245417844}
+·COOKIEECHO
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ERROR]{lang="EN-US"}]{#struct_0_14338_x1629_x285430183}
+·COOKIEACK
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[COOKIEECHO]{lang="EN-US"}]{#struct_0_14338_x1629_849429746}
+·SHUTDOWNCOMPLETE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[COOKIEACK]{lang="EN-US"}]{#struct_0_14338_x1629_x941592514}
+【举例】
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SHUTDOWNCOMPLETE]{lang="EN-US"}]{#struct_0_14338_x1629_8005626}
+\# 在启用了ASPF的设备上打开会话表项调试功能，有ping报文通过该设备时输出如下调试信息。
 
-[ ]{lang="EN-US"}
+\<Sysname\> debugging session session-table all
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_14338_x1629_298057258}
+\*Mar 24 18:15:47:164 2011 Sysname SESSION/7/TABLE: -MDC=1;
 
-[[\# ]{lang="EN-US"}]{#struct_0_14338_x1629_x1592688170}[在启用了]{style="font-family:宋体"}[ASPF]{lang="EN-US"}[的设备上打开会话表项调试功能，有]{style="font-family:宋体"}[ping]{lang="EN-US"}[报文通过该设备时输出如下调试信息。]{style="font-family:宋体"}
+ Tuple5  (EVENT): 192.168.0.2/8\--\>192.168.1.58/3840(icmp(1))
 
-[[\<Sysname\> debugging session session-table all]{lang="EN-US"}]{#struct_0_14338_x1629_x578306577}
+ Session entry was created
 
-[\*Mar 24 18:15:47:164 2011 Sysname SESSION/7/TABLE: -MDC=1;]{lang="EN-US"}
+*// 创建一个发起方为192.168.0.2，响应方为192.168.1.58，协议为ICMP的会话*
 
-[ Tuple5  (EVENT): 192.168.0.2/8\--\>192.168.1.58/3840(icmp(1))]{lang="EN-US"}
+\*Mar 24 18:15:47:174 2011 Sysname SESSION/7/TABLE: -MDC=1;
 
-[ Session entry was created]{lang="EN-US"}
+ Tuple5  (FSM): 192.168.0.2/8\--\>192.168.1.58/3840(icmp(1))
 
-[*[// ]{lang="EN-US"}*]{#struct_0_14338_x1629_1584774616}*[创建一个发起方为]{style="font-family:宋体"}[192.168.0.2]{lang="EN-US"}[，响应方为]{style="font-family:宋体"}[192.168.1.58]{lang="EN-US"}[，协议为]{style="font-family:宋体"}[ICMP]{lang="EN-US"}[的会话]{style="font-family:宋体"}*
+ FSM:NONE  \--\> ICMP_REQUEST,dir:ORIGIN,PacketType:REQUEST(8)
 
-[[\*Mar 24 18:15:47:174 2011 Sysname SESSION/7/TABLE: -MDC=1;]{lang="EN-US"}]{#struct_0_14338_x1629_x941526978}
+*// 由于收到ICMP报文，会话状态发生变迁，变迁前状态为NONE，变迁后状态为ICMP_REQUEST，方向为发起方－\>响应方，报文的类型为REQUEST*
 
-[ Tuple5  (FSM): 192.168.0.2/8\--\>192.168.1.58/3840(icmp(1))]{lang="EN-US"}
+\*Mar 24 18:15:47:175 2011 Sysname SESSION/7/TABLE: -MDC=1;
 
-[ FSM:NONE  \--\> ICMP_REQUEST,dir:ORIGIN,PacketType:REQUEST(8)]{lang="EN-US"}
+Tuple5  (FSM): 11.1.1.247/1024\--\>11.1.1.241/2048(icmp(1))
 
-[*[// ]{lang="EN-US"}*]{#struct_0_14338_x1629_1197954448}*[由于收到]{style="font-family:宋体"}[ICMP]{lang="EN-US"}[报文，会话状态发生变迁，变迁前状态为]{style="font-family:宋体"}[NONE]{lang="EN-US"}[，变迁后状态为]{style="font-family:宋体"}[ICMP_REQUEST]{lang="EN-US"}[，方向为发起方－]{style="font-family:宋体"}[\>]{lang="EN-US"}[响应方，报文的类型为]{style="font-family:宋体"}[REQUEST]{lang="EN-US"}*
+ FSM:ICMP_REQUEST\--\>ICMP_REPLY, dir:REPLY, PacketType:REPLY(0)
 
-[[\*Mar 24 18:15:47:175 2011 Sysname SESSION/7/TABLE: -MDC=1;]{lang="EN-US"}]{#struct_0_14338_x1629_1941776886}
+*// 由于发送ICMP报文，会话状态发生变迁，变迁前状态为ICMP_REQUEST，变迁后状态为ICMP_REPLY，方向为响应方－\>发起方，报文的类型为REPLY*
 
-[Tuple5  (FSM): 11.1.1.247/1024\--\>11.1.1.241/2048(icmp(1)) ]{lang="EN-US"}
+\# 在启用了安全模块功能的设备上打开会话调试功能，当申请会话表资源的内存不足时，输出调试信息。
 
-[ FSM:ICMP_REQUEST\--\>ICMP_REPLY, dir:REPLY, PacketType:REPLY(0)]{lang="EN-US"}
+\*Mar 24 18:22:13:476 2011 Sysname SESSION/7/TABLE: -MDC=1;
 
-[*[// ]{lang="EN-US"}*]{#struct_0_14338_x1629_x763787317}*[由于发送]{style="font-family:宋体"}[ICMP]{lang="EN-US"}[报文，会话状态发生变迁，变迁前状态为]{style="font-family:宋体"}[ICMP_REQUEST]{lang="EN-US"}[，变迁后状态为]{style="font-family:宋体"}[ICMP_REPLY]{lang="EN-US"}[，方向为响应方－]{style="font-family:宋体"}[\>]{lang="EN-US"}[发起方，报文的类型为]{style="font-family:宋体"}[REPLY]{lang="EN-US"}*
+ Error:  Not enough memory for session entry.
 
-[[\# ]{lang="EN-US"}]{#struct_0_14338_x1629_x1760079454}[在启用了安全模块功能的设备上打开会话调试功能，当申请会话表资源的内存不足时，输出调试信息。]{style="font-family:宋体"}
-
-[[\*Mar 24 18:22:13:476 2011 Sysname SESSION/7/TABLE: -MDC=1;]{lang="EN-US"}]{#struct_0_14338_x1629_676320438}
-
-[ Error:  Not enough memory for session entry.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_14338_x1629_x1377171336}*[由于]{style="font-family:宋体"}[会话创建时内存不足]{style="font-family:宋体"}*[，*申请会话表资源失败*]{style="font-family:宋体"}
-
-::: {#-1603192721 .myid}
-[]{#struct_0_14338_x1629_x1837400622}[]{#_Toc404793499}[]{#_Toc339371888}[]{#_Toc336682672}[]{#_Toc332716122}
+*// 由于会话创建时内存不足*，*申请会话表资源失败*
 
 **会话管理 \-- 会话管理调试命令 \-- debugging session alg**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x941461442}
+【命令】
 
-[**[debugging session alg ]{lang="EN-US"}**[{ **all** \| **event** \| **error** } \[ **acl** *acl-number* \]]{lang="EN-US"}]{#struct_0_14338_x1629_1919583725}
+**[debugging session alg **[{ **all** \| **event** \| **error** } [ **acl** *acl-number* ]]]
 
-[**[undo debugging session alg ]{lang="EN-US"}**[{ **all** \| **event** \| **error** }]{lang="EN-US"}]{#struct_0_14338_x1629_929539759}
+**[undo debugging session alg **[{ **all** \| **event** \| **error** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_14338_x1629_1331227516}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_14338_x1629_x1797081205}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x1709099572}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_14338_x1629_1414646121}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_14338_x1629_223669783}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x7558390}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_14338_x1629_x941395906}[：表示]{style="font-family:宋体"}[ALG]{lang="EN-US"}[的所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示ALG的所有调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_14338_x1629_809546524}[：表示]{style="font-family:宋体"}[ALG]{lang="EN-US"}[的事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示ALG的事件调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_14338_x1629_300273567}[：表示]{style="font-family:宋体"}[ALG]{lang="EN-US"}[的错误调试信息开关。]{style="font-family:宋体"}
+**[error**]：表示ALG的错误调试信息开关。
 
-[**[acl]{lang="EN-US"}**[ *acl-number*]{lang="EN-US"}]{#struct_0_14338_x1629_94200469}[：指定匹配会话的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[规则。其中，]{style="font-family:宋体"}*[acl-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[ACL]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[。该参数可多次设置，但仅最后一次合法的配置生效。]{style="font-family:宋体"}
+**[acl** *acl-number*]：指定匹配会话的ACL规则。其中，*acl-number*表示ACL编号，取值范围为2000～3999。该参数可多次设置，但仅最后一次合法的配置生效。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x1592116267}
+【描述】
 
-[**[debugging session alg]{lang="EN-US"}**]{#struct_0_14338_x1629_1363552706}[命令用来打开]{style="font-family:宋体"}[ALG]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}**[undo debugging session alg]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[ALG]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}
+**[debugging session alg**]命令用来打开ALG调试信息开关。**undo debugging session alg**命令用来关闭ALG调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[ALG]{lang="EN-US"}]{#struct_0_14338_x1629_x1484243873}[的调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，ALG的调试信息开关处于关闭状态。
 
-[[表1-12 ]{lang="EN-US"}[debugging session alg event]{lang="EN-US"}]{#struct_0_14338_x1629_599396534}[命令输出信息描述表]{style="font-family:黑体"}
+表1-12 debugging session alg event命令输出信息描述表
 
-[]{#table_struct_0_x1615892206}[[字段]{style="font-family:黑体"}]{#struct_0_14338_x1629_1524737135}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_14338_x1629_x941330370}
+描述
 
-[[Tuple5(EVENT):]{lang="EN-US"}]{#struct_0_14338_x1629_x1990389516}*[ srcIP]{lang="FR"}*[/*srcPort*\--\>*destIP*/*destPort*(*ProtoType*)]{lang="FR"}
+Tuple5(EVENT):* srcIP*/*srcPort*\--\>*destIP*/*destPort*(*ProtoType*)
 
-[[会话的五元组（事件）：]{style="font-family:宋体"}]{#struct_0_14338_x1629_x1828902541}
+会话的五元组（事件）：
 
-[[源]{style="font-family:宋体"}[IP/]{lang="EN-US"}]{#struct_0_14338_x1629_x489510625}[源端口]{style="font-family:宋体"}[\--\>]{lang="EN-US"}[目的]{style="font-family:宋体"}[IP/]{lang="EN-US"}[目的端口（传输层协议类型）]{style="font-family:宋体"}
+源IP/源端口\--\>目的IP/目的端口（传输层协议类型）
 
-[[ALG received packet, packet type: ]{lang="EN-US"}]{#struct_0_14338_x1629_x770292535}*[type]{lang="FR"}*
+ALG received packet, packet type: *type*
 
-[[收到报文，]{style="font-family:宋体"}[ALG]{lang="EN-US"}]{#struct_0_14338_x1629_2021452561}[类型为]{style="font-family:宋体"}*[t]{lang="EN-US"}[ype]{lang="FR"}*[包括以下取值：]{style="font-family:宋体"}
+收到报文，ALG类型为*type*包括以下取值：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[FTP_PORT]{lang="EN-US"}]{#struct_0_14338_x1629_x941264834}
+·FTP_PORT
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[FTP_PASV]{lang="EN-US"}]{#struct_0_14338_x1629_395525693}
+·FTP_PASV
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[FTP_EPRT]{lang="EN-US"}]{#struct_0_14338_x1629_x1269997396}
+·FTP_EPRT
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[FTP_EPSV]{lang="EN-US"}]{#struct_0_14338_x1629_748992797}
+·FTP_EPSV
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_GRQ]{lang="EN-US"}]{#struct_0_14338_x1629_x1606304603}
+·RAS_GRQ
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_GCF]{lang="EN-US"}]{#struct_0_14338_x1629_x1624543960}
+·RAS_GCF
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_GRJ]{lang="EN-US"}]{#struct_0_14338_x1629_x941199298}
+·RAS_GRJ
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_RRQ]{lang="EN-US"}]{#struct_0_14338_x1629_x849139145}
+·RAS_RRQ
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_RCF]{lang="EN-US"}]{#struct_0_14338_x1629_x1975375302}
+·RAS_RCF
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_RRJ]{lang="EN-US"}]{#struct_0_14338_x1629_x944123550}
+·RAS_RRJ
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_URQ]{lang="EN-US"}]{#struct_0_14338_x1629_89889837}
+·RAS_URQ
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_UCF]{lang="EN-US"}]{#struct_0_14338_x1629_1479865322}
+·RAS_UCF
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_URJ]{lang="EN-US"}]{#struct_0_14338_x1629_x941133762}
+·RAS_URJ
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_ARQ]{lang="EN-US"}]{#struct_0_14338_x1629_x1189110742}
+·RAS_ARQ
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_ACF]{lang="EN-US"}]{#struct_0_14338_x1629_x1444892791}
+·RAS_ACF
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_ARJ]{lang="EN-US"}]{#struct_0_14338_x1629_1793461202}
+·RAS_ARJ
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_BRQ]{lang="EN-US"}]{#struct_0_14338_x1629_595911565}
+·RAS_BRQ
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_BCF]{lang="EN-US"}]{#struct_0_14338_x1629_x942116802}
+·RAS_BCF
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_BRJ]{lang="EN-US"}]{#struct_0_14338_x1629_x1277274839}
+·RAS_BRJ
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_DRQ]{lang="EN-US"}]{#struct_0_14338_x1629_x672567023}
+·RAS_DRQ
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_DCF]{lang="EN-US"}]{#struct_0_14338_x1629_523389288}
+·RAS_DCF
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_DRJ]{lang="EN-US"}]{#struct_0_14338_x1629_x942051266}
+·RAS_DRJ
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_LRQ]{lang="EN-US"}]{#struct_0_14338_x1629_x1745058557}
+·RAS_LRQ
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_LCF]{lang="EN-US"}]{#struct_0_14338_x1629_x411180630}
+·RAS_LCF
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_LRJ]{lang="EN-US"}]{#struct_0_14338_x1629_851104281}
+·RAS_LRJ
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_IRQ]{lang="EN-US"}]{#struct_0_14338_x1629_x1639369354}
+·RAS_IRQ
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RAS_IRR]{lang="EN-US"}]{#struct_0_14338_x1629_x941592517}
+·RAS_IRR
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_NATIONAL_ESCAPE]{lang="EN-US"}]{#struct_0_14338_x1629_8071162}
+·Q931_NATIONAL_ESCAPE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_ALERTING ]{lang="EN-US"}]{#struct_0_14338_x1629_219221832}
+·Q931_ALERTING
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_CALL_PROCEEDING]{lang="EN-US"}]{#struct_0_14338_x1629_1435215632}
+·Q931_CALL_PROCEEDING
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_CONNECT ]{lang="EN-US"}]{#struct_0_14338_x1629_x941526981}
+·Q931_CONNECT
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_CONNECTACK ]{lang="EN-US"}]{#struct_0_14338_x1629_1197495701}
+·Q931_CONNECTACK
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_PROGRESS ]{lang="EN-US"}]{#struct_0_14338_x1629_777631226}
+·Q931_PROGRESS
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_SETUP ]{lang="EN-US"}]{#struct_0_14338_x1629_1616708699}
+·Q931_SETUP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_SETUP_ACK ]{lang="EN-US"}]{#struct_0_14338_x1629_x941461445}
+·Q931_SETUP_ACK
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_RESUME ]{lang="EN-US"}]{#struct_0_14338_x1629_1919780333}
+·Q931_RESUME
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_RESUME_ACK ]{lang="EN-US"}]{#struct_0_14338_x1629_1290536135}
+·Q931_RESUME_ACK
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_RESUME_REJECT ]{lang="EN-US"}]{#struct_0_14338_x1629_x1916387009}
+·Q931_RESUME_REJECT
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_SUSPEND ]{lang="EN-US"}]{#struct_0_14338_x1629_x941395909}
+·Q931_SUSPEND
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_SUSPEND_ACK ]{lang="EN-US"}]{#struct_0_14338_x1629_808563484}
+·Q931_SUSPEND_ACK
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_SUSPEND_REJECT ]{lang="EN-US"}]{#struct_0_14338_x1629_x175676631}
+·Q931_SUSPEND_REJECT
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_USER_INFORMATION]{lang="EN-US"}]{#struct_0_14338_x1629_1351007840}
+·Q931_USER_INFORMATION
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_DISCONNECT ]{lang="EN-US"}]{#struct_0_14338_x1629_x941330373}
+·Q931_DISCONNECT
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_RELEASE ]{lang="EN-US"}]{#struct_0_14338_x1629_x1990586124}
+·Q931_RELEASE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_RELEASE_COMPLETE]{lang="EN-US"}]{#struct_0_14338_x1629_526127789}
+·Q931_RELEASE_COMPLETE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_RESTART ]{lang="EN-US"}]{#struct_0_14338_x1629_x363498674}
+·Q931_RESTART
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_RESTART_ACK ]{lang="EN-US"}]{#struct_0_14338_x1629_x941264837}
+·Q931_RESTART_ACK
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_SEGMENT ]{lang="EN-US"}]{#struct_0_14338_x1629_395722301}
+·Q931_SEGMENT
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_CONGESTION_CTRL]{lang="EN-US"}]{#struct_0_14338_x1629_x1817330053}
+·Q931_CONGESTION_CTRL
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_INFORMATION ]{lang="EN-US"}]{#struct_0_14338_x1629_x941199301}
+·Q931_INFORMATION
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_NOTIFY ]{lang="EN-US"}]{#struct_0_14338_x1629_1107634750}
+·Q931_NOTIFY
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_STATUS ]{lang="EN-US"}]{#struct_0_14338_x1629_x329976305}
+·Q931_STATUS
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_STATUS_ENQUIRY ]{lang="EN-US"}]{#struct_0_14338_x1629_x2115823481}
+·Q931_STATUS_ENQUIRY
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Q931_FACILITY]{lang="EN-US"}]{#struct_0_14338_x1629_x941133765}
+·Q931_FACILITY
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MULTIMEDIA_SYS_CTRL_REQUEST]{lang="EN-US"}]{#struct_0_14338_x1629_x1188783062}
+·MULTIMEDIA_SYS_CTRL_REQUEST
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MULTIMEDIA_SYS_CTRL_RESPONSE]{lang="EN-US"}]{#struct_0_14338_x1629_828046932}
+·MULTIMEDIA_SYS_CTRL_RESPONSE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MULTIMEDIA_SYS_CTRL_COMMAND]{lang="EN-US"}]{#struct_0_14338_x1629_x942116805}
+·MULTIMEDIA_SYS_CTRL_COMMAND
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MULTIMEDIA_SYS_CTRL_INDICATION]{lang="EN-US"}]{#struct_0_14338_x1629_x1277209303}
+·MULTIMEDIA_SYS_CTRL_INDICATION
 
-[ ]{lang="EN-US"}
+表1-13 debugging session alg error命令输出信息描述表
 
-[[表1-13 ]{lang="EN-US"}[debugging session alg error]{lang="EN-US"}]{#struct_0_14338_x1629_1127776219}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1623036398}[[字段]{style="font-family:黑体"}]{#struct_0_14338_x1629_x1005565366}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_14338_x1629_529789639}
+Tuple5:* srcIP*/*srcPort*\--\>*destIP*/*destPort*(*ProtoType*)
 
-[[Tuple5:]{lang="EN-US"}]{#struct_0_14338_x1629_x942051269}*[ srcIP]{lang="FR"}*[/*srcPort*\--\>*destIP*/*destPort*(*ProtoType*)]{lang="FR"}
+会话的五元组：
 
-[[会话的五元组：]{style="font-family:宋体"}]{#struct_0_14338_x1629_x1745517309}
+源IP/源端口\--\>目的IP/目的端口（传输层协议类型）
 
-[[源]{style="font-family:宋体"}[IP/]{lang="EN-US"}]{#struct_0_14338_x1629_1797511298}[源端口]{style="font-family:宋体"}[\--\>]{lang="EN-US"}[目的]{style="font-family:宋体"}[IP/]{lang="EN-US"}[目的端口（传输层协议类型）]{style="font-family:宋体"}
+Error: No enough memory for ALG process.
 
-[[Error: No enough memory for ALG process.]{lang="EN-US"}]{#struct_0_14338_x1629_1145037685}
+没有足够的内存用于ALG处理
 
-[[没有足够的内存用于]{style="font-family:宋体"}[ALG]{lang="EN-US"}]{#struct_0_14338_x1629_385350855}[处理]{style="font-family:宋体"}
+Error: Encoding failed.
 
-[[Error: Encoding failed.]{lang="EN-US"}]{#struct_0_14338_x1629_526500297}
+编码失败
 
-[[编码失败]{style="font-family:宋体"}]{#struct_0_14338_x1629_1371024379}
+Error: Decoding failed.
 
-[[Error: Decoding failed.]{lang="EN-US"}]{#struct_0_14338_x1629_x941592516}
+解码失败
 
-[[解码失败]{style="font-family:宋体"}]{#struct_0_14338_x1629_8136698}
+【举例】
 
-[ ]{lang="EN-US"}
+\# 在启用了安全模块功能（如ASPF）的设备上打开ALG调试功能，有RAS RRQ报文通过该设备时输出调试信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_14338_x1629_640199421}
+\<Sysname\> debugging session alg event
 
-[[\# ]{lang="EN-US"}]{#struct_0_14338_x1629_x1652237961}[在启用了安全模块功能（如]{style="font-family:宋体"}[ASPF]{lang="EN-US"}[）的设备上打开]{style="font-family:宋体"}[ALG]{lang="EN-US"}[调试功能，有]{style="font-family:宋体"}[RAS RRQ]{lang="EN-US"}[报文通过该设备时输出调试信息。]{style="font-family:宋体"}
+\*Mar 24 18:15:47:164 2011 Sysname SESSION/7/ALG: -MDC=1;
 
-[[\<Sysname\> debugging session alg event]{lang="EN-US"}]{#struct_0_14338_x1629_x204207941}
+ Tuple5(EVENT): 192.168.0.2/1018\--\>192.168.1.58/1719(UDP(17))
 
-[\*Mar 24 18:15:47:164 2011 Sysname SESSION/7/ALG: -MDC=1;]{lang="EN-US"}
+ ALG received packet, packet type: RAS_RRQ
 
-[ Tuple5(EVENT): 192.168.0.2/1018\--\>192.168.1.58/1719(UDP(17))]{lang="EN-US"}
+*// 收到一个需要进行ALG的报文，类型为RAS_RRQ*
 
-[ ALG received packet, packet type: RAS_RRQ]{lang="EN-US"}
+\# 在启用了安全模块功能（如ASPF）的设备上打开ALG调试功能，有RAS报文通过该设备，解码失败时输出调试信息。
 
-*[// ]{lang="EN-US"}[收到一个需要进行]{style="font-family:
-宋体"}[ALG]{lang="EN-US"}[的报文，类型为]{style="font-family:
-宋体"}[RAS_RRQ]{lang="EN-US"}*
+\<Sysname\> debugging session alg error
 
-[[\# ]{lang="EN-US"}]{#struct_0_14338_x1629_253316749}[在启用了安全模块功能（如]{style="font-family:宋体"}[ASPF]{lang="EN-US"}[）的设备上打开]{style="font-family:宋体"}[ALG]{lang="EN-US"}[调试功能，有]{style="font-family:宋体"}[RAS]{lang="EN-US"}[报文通过该设备，解码失败时输出调试信息。]{style="font-family:宋体"}
+\*Mar 24 18:15:47:164 2011 Sysname SESSION/7/ALG: -MDC=1;
 
-[[\<Sysname\> debugging session alg error]{lang="EN-US"}]{#struct_0_14338_x1629_x941526980}
+Tuple5: 192.168.0.2/1018\--\>192.168.1.58/1719(UDP(17))
 
-[\*Mar 24 18:15:47:164 2011 Sysname SESSION/7/ALG: -MDC=1;]{lang="EN-US"}
+Error: Decoding failed
 
-[Tuple5: 192.168.0.2/1018\--\>192.168.1.58/1719(UDP(17))]{lang="EN-US"}
-
-[Error: Decoding failed]{lang="EN-US"}
-
-*[// ]{lang="EN-US"}[报文解码失败]{style="font-family:
-宋体"}*
-
-::: {#662298597 .myid}
-[]{#_Toc404793500}[]{#struct_0_14338_x1629_x990018561}
+*// 报文解码失败*
 
 **会话管理 \-- 会话管理调试命令 \-- debugging session tcp**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_14338_x1629_523141223}
+【命令】
 
-[**[debugging session tcp]{lang="EN-US"}**[ { **all** \| **packet** \| **error** } \[ **acl** *acl-number* \]]{lang="EN-US"}]{#struct_0_14338_x1629_x1633358382}
+**[debugging session tcp**[ { **all** \| **packet** \| **error** } [ **acl** *acl-number* ]]]
 
-[**[undo debugging session tcp]{lang="EN-US"}**[ { **all** \| **packet** \| **error** }]{lang="EN-US"}]{#struct_0_14338_x1629_738356948}
+**[undo debugging session tcp**[ { **all** \| **packet** \| **error** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_14338_x1629_1551576340}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_14338_x1629_1738864794}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_14338_x1629_86131119}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_14338_x1629_x906985067}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_14338_x1629_1320564936}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_14338_x1629_1602838736}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_14338_x1629_1609353148}[：表示所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示所有调试信息开关。
 
-[**[packet]{lang="EN-US"}**]{#struct_0_14338_x1629_445296501}[：表示报文调试信息开关。]{style="font-family:宋体"}
+**[packet**]：表示报文调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_14338_x1629_x582170691}[：表示错误调试信息开关。]{style="font-family:宋体"}
+**[error**]：表示错误调试信息开关。
 
-[**[acl]{lang="EN-US"}**[ *acl-number*]{lang="EN-US"}]{#struct_0_14338_x1629_x633722665}[：指定匹配会话的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[规则。其中，]{style="font-family:宋体"}*[acl-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[ACL]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[。该参数可多次设置，但仅最后一次合法的配置生效。]{style="font-family:宋体"}
+**[acl** *acl-number*]：指定匹配会话的ACL规则。其中，*acl-number*表示ACL编号，取值范围为2000～3999。该参数可多次设置，但仅最后一次合法的配置生效。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x1646081043}
+【描述】
 
-[**[debugging session tcp]{lang="EN-US"}**]{#struct_0_14338_x1629_x668783282}[命令用来打开会话模块的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[检查]{style="font-family:宋体"}[调试信息开关。]{style="font-family:宋体"}**[undo debugging session tcp]{lang="EN-US"}**[命令用来关闭会话模块的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[检查]{style="font-family:宋体"}[调试信息开关。]{style="font-family:宋体"}
+**[debugging session tcp**]命令用来打开会话模块的TCP检查调试信息开关。**undo debugging session tcp**命令用来关闭会话模块的TCP检查调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}]{#struct_0_14338_x1629_x1228308673}[会话模块的]{style="font-family:宋体"}[TCP]{lang="EN-US"}[检查调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，会话模块的TCP检查调试信息开关处于关闭状态。
 
-[[表]{style="font-family:宋体"}]{#struct_0_14338_x1629_611471354}[1-1 debugging session tcp packet]{lang="EN-US"}[命令输出信息描述表]{style="font-family:
-黑体"}
+表1-1 debugging session tcp packet命令输出信息描述表
 
-[]{#table_struct_0_1626361787}[[字段]{style="font-family:黑体"}]{#struct_0_14338_x1629_290621636}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_14338_x1629_2095160690}
+描述
 
-[[TCP seq check: Processed the first *type* packet.]{lang="EN-US"}]{#struct_0_14338_x1629_1471368146}
+TCP seq check: Processed the first *type* packet.
 
-[[TCP]{lang="EN-US"}]{#struct_0_14338_x1629_2014875726}[序列号检查：对]{style="font-family:宋体"}*[type]{lang="EN-US"}*[类型的首包进行了序列号检查，]{style="font-family:宋体"}*[type]{lang="EN-US"}*[取值包括：]{style="font-family:宋体"}
+TCP序列号检查：对*type*类型的首包进行了序列号检查，*type*取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SYN]{lang="EN-US"}]{#struct_0_14338_x1629_x1796522079}[：]{style="font-family:宋体"}[SYN]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+·SYN：SYN报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ACK]{lang="EN-US"}]{#struct_0_14338_x1629_x1568230581}[：]{style="font-family:宋体"}[ACK]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+·ACK：ACK报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Other]{lang="EN-US"}]{#struct_0_14338_x1629_x868106978}[：其他]{style="font-family:宋体"}[报文]{lang="EN-US" style="font-family:宋体"}
+·Other：其他报文
 
-[[TCP seq check: Packet from *Dir*, seq *seq*, next seq *nextSeq*, ack *ack.*]{lang="EN-US"}]{#struct_0_14338_x1629_932361276}
+TCP seq check: Packet from *Dir*, seq *seq*, next seq *nextSeq*, ack *ack.*
 
-[[TCP]{lang="EN-US"}]{#struct_0_14338_x1629_x927319434}[序列号检查：报文的方]{style="font-family:宋体"}[向为]{style="font-family:宋体"}*[Dir]{lang="EN-US"}*[，序列号为]{style="font-family:宋体"}*[seq]{lang="EN-US"}*[，下一个报文的序列号为]{style="font-family:宋体"}*[nextSeq]{lang="EN-US"}*[，确认序列号为]{style="font-family:宋体"}*[ack]{lang="EN-US"}*
+TCP序列号检查：报文的方向为*Dir*，序列号为*seq*，下一个报文的序列号为*nextSeq*，确认序列号为*ack*
 
-[*[Dir]{lang="EN-US"}*]{#struct_0_14338_x1629_x926999955}[的取值包括：]{style="font-family:宋体"}
+*[Dir*]的取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Initiator]{lang="EN-US"}]{#struct_0_14338_x1629_1691876163}
+·Initiator
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Responder]{lang="EN-US"}]{#struct_0_14338_x1629_x1791147808}
+·Responder
 
-[[TCP state check: Invalid SYN packet.]{lang="EN-US"}]{#struct_0_14338_x1629_1086083497}
+TCP state check: Invalid SYN packet.
 
-[[TCP]{lang="EN-US"}]{#struct_0_14338_x1629_125792222}[状态机检查：非法的]{style="font-family:宋体"}[SYN]{lang="EN-US"}[报文]{style="font-family:宋体"}
+TCP状态机检查：非法的SYN报文
 
-[[TCP state check: Current state is *state.* Invalid *type* packet.]{lang="EN-US"}]{#struct_0_14338_x1629_94517938}
+TCP state check: Current state is *state.* Invalid *type* packet.
 
-[[状态机检查：当前状态为]{style="font-family:宋体"}*[state]{lang="EN-US"}*]{#struct_0_14338_x1629_x559761302}[，无效的报文类型为]{style="font-family:宋体"}*[type]{lang="EN-US"}*
+状态机检查：当前状态为*state*，无效的报文类型为*type*
 
-[[State]{lang="EN-US"}]{#struct_0_14338_x1629_1506901520}[取值包括：]{style="font-family:宋体"}
+State取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NONE]{lang="EN-US"}]{#struct_0_14338_x1629_529076749}
+·NONE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SYN_SENT]{lang="EN-US"}]{#struct_0_14338_x1629_831765732}
+·SYN_SENT
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SYN_RECV]{lang="EN-US"}]{#struct_0_14338_x1629_x1037007192}
+·SYN_RECV
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ESTABLISHED]{lang="EN-US"}]{#struct_0_14338_x1629_996706285}
+·ESTABLISHED
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[FIN_WAIT]{lang="EN-US"}]{#struct_0_14338_x1629_x1123394931}
+·FIN_WAIT
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[CLOSE_WAIT]{lang="EN-US"}]{#struct_0_14338_x1629_x989953025}
+·CLOSE_WAIT
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LAST_ACK]{lang="EN-US"}]{#struct_0_14338_x1629_1746129074}
+·LAST_ACK
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TIME_WAIT]{lang="EN-US"}]{#struct_0_14338_x1629_2136300846}
+·TIME_WAIT
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[CLOSE]{lang="EN-US"}]{#struct_0_14338_x1629_1738930330}
+·CLOSE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SYN_SENT2]{lang="EN-US"}]{#struct_0_14338_x1629_x1109715980}
+·SYN_SENT2
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MAX]{lang="EN-US"}]{#struct_0_14338_x1629_x1212365215}
+·MAX
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IGNORE]{lang="EN-US"}]{#struct_0_14338_x1629_x767416105}
+·IGNORE
 
-[[类型取值包括：]{style="font-family:宋体"}]{#struct_0_14338_x1629_700505317}
+类型取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SYN]{lang="EN-US"}]{#struct_0_14338_x1629_x8088118}
+·SYN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SYNACK]{lang="EN-US"}]{#struct_0_14338_x1629_1961467250}
+·SYNACK
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[FIN]{lang="EN-US"}]{#struct_0_14338_x1629_1977582464}
+·FIN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ACK]{lang="EN-US"}]{#struct_0_14338_x1629_x2094719596}
+·ACK
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RST]{lang="EN-US"}]{#struct_0_14338_x1629_x1930215519}
+·RST
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NONE]{lang="EN-US"}]{#struct_0_14338_x1629_817945791}
+·NONE
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MAX]{lang="EN-US"}]{#struct_0_14338_x1629_1823446324}
+·MAX
 
-[[TCP state check: Invalid RST packet.]{lang="EN-US"}]{#struct_0_14338_x1629_798667836}
+TCP state check: Invalid RST packet.
 
-[[TCP]{lang="EN-US"}]{#struct_0_14338_x1629_1164228588}[状态机检查：非法的]{style="font-family:宋体"}[RST]{lang="EN-US"}[报文]{style="font-family:宋体"}
+TCP状态机检查：非法的RST报文
 
-[[TCP seq check: Invalid sequence number during slow forwarding.]{lang="EN-US"}]{#struct_0_14338_x1629_1558182723}
+TCP seq check: Invalid sequence number during slow forwarding.
 
-[[TCP]{lang="EN-US"}]{#struct_0_14338_x1629_1105214397}[序列号检查：慢转处理中，检查到报文的序列号非法]{style="font-family:宋体"}
+TCP序列号检查：慢转处理中，检查到报文的序列号非法
 
-[[TCP seq check: Invalid sequence number during fast forwarding.]{lang="EN-US"}]{#struct_0_14338_x1629_927594127}
+TCP seq check: Invalid sequence number during fast forwarding.
 
-[[TCP]{lang="EN-US"}]{#struct_0_14338_x1629_x7901218}[序列号检查：]{style="font-family:宋体"}[快转]{style="font-family:宋体"}[处理中，检查到报文的序列号非法]{style="font-family:宋体"}
+TCP序列号检查：快转处理中，检查到报文的序列号非法
 
-[[TCP seq check: First fragment from *Dir*, seq *seq*, sack *sack*.]{lang="EN-US"}]{#struct_0_14338_x1629_x1367420214}
+TCP seq check: First fragment from *Dir*, seq *seq*, sack *sack*.
 
-[[TCP]{lang="EN-US"}]{#struct_0_14338_x1629_182324486}[序列号检查：分片报文的首片报文的方向为]{style="font-family:宋体"}*[Dir]{lang="EN-US"}*[，序列号为]{style="font-family:宋体"}*[seq]{lang="EN-US"}*[，]{style="font-family:宋体"}[SACK]{lang="EN-US"}[为]{style="font-family:宋体"}*[sack]{lang="EN-US"}*
+TCP序列号检查：分片报文的首片报文的方向为*Dir*，序列号为*seq*，SACK为*sack*
 
-[[TCP seq check: Last fragment from *Dir*, next seq *nextSeq*, total length *length*.]{lang="EN-US"}]{#struct_0_14338_x1629_395383309}
+TCP seq check: Last fragment from *Dir*, next seq *nextSeq*, total length *length*.
 
-[[TCP]{lang="EN-US"}]{#struct_0_14338_x1629_1939914061}[序列号检查：分片报文的最后一片报文的方]{style="font-family:宋体"}[向为]{style="font-family:
-  宋体"}*[Dir]{lang="EN-US"}*[，下一个报文的序列号为]{style="font-family:宋体"}*[nextSeq]{lang="EN-US"}*[，总长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*
+TCP序列号检查：分片报文的最后一片报文的方向为*Dir*，下一个报文的序列号为*nextSeq*，总长度为*length*
 
-[[TCP seq check: Received a fragment from *Dir,* updated data of sender: ack *ack*, next seq *SendernextSeq*, maxEnd *SendermaxEnd*; and receiver: next seq *RecvnextSeq*, maxEnd *RecvmaxEnd*.]{lang="EN-US"}]{#struct_0_14338_x1629_623657354}
+TCP seq check: Received a fragment from *Dir,* updated data of sender: ack *ack*, next seq *SendernextSeq*, maxEnd *SendermaxEnd*; and receiver: next seq *RecvnextSeq*, maxEnd *RecvmaxEnd*.
 
-[[TCP]{lang="EN-US"}]{#struct_0_14338_x1629_x1170700632}[序列号检查：收到分片报文，方向为]{style="font-family:宋体"}*[Dir]{lang="EN-US"}*[，更新发送方数据：确认序列号为]{style="font-family:宋体"}*[ack]{lang="EN-US"}*[，下一个报文序列号为]{style="font-family:宋体"}*[SendernextSeq]{lang="EN-US"}*[、最大序列号为]{style="font-family:宋体"}*[SendermaxEnd]{lang="EN-US"}*[；更新响应方数据：下一个报文序列号为]{style="font-family:宋体"}*[RecvnextSeq]{lang="EN-US"}*[、最大序列号为]{style="font-family:宋体"}*[RecvmaxEnd]{lang="EN-US"}*
+TCP序列号检查：收到分片报文，方向为*Dir*，更新发送方数据：确认序列号为*ack*，下一个报文序列号为*SendernextSeq*、最大序列号为*SendermaxEnd*；更新响应方数据：下一个报文序列号为*RecvnextSeq*、最大序列号为*RecvmaxEnd*
 
-[[TCP seq check: Received a fragment from *Dir* during fast forwarding*,* updated data of sender: ack *ack*, next seq *SendernextSeq*, maxEnd *SendermaxEnd*; and receiver: next seq *RecvnextSeq*, maxEnd *RecvmaxEnd*.]{lang="EN-US"}]{#struct_0_14338_x1629_2098147757}
+TCP seq check: Received a fragment from *Dir* during fast forwarding*,* updated data of sender: ack *ack*, next seq *SendernextSeq*, maxEnd *SendermaxEnd*; and receiver: next seq *RecvnextSeq*, maxEnd *RecvmaxEnd*.
 
-[[TCP]{lang="EN-US"}]{#struct_0_14338_x1629_x1123646465}[序列号检查：在快转流程中收到分片报文，方向为]{style="font-family:宋体"}*[Dir]{lang="EN-US"}*[，更新发送方数据：确认序列号为]{style="font-family:宋体"}*[ack]{lang="EN-US"}*[，下一个报文序列号为]{style="font-family:宋体"}*[SendernextSeq]{lang="EN-US"}*[，最大序列号为]{style="font-family:宋体"}*[SendermaxEnd]{lang="EN-US"}*[；更新响应方数据：下一个报文序列号为]{style="font-family:宋体"}*[RecvnextSeq]{lang="EN-US"}*[，最大序列号为]{style="font-family:宋体"}*[RecvmaxEnd]{lang="EN-US"}*
+TCP序列号检查：在快转流程中收到分片报文，方向为*Dir*，更新发送方数据：确认序列号为*ack*，下一个报文序列号为*SendernextSeq*，最大序列号为*SendermaxEnd*；更新响应方数据：下一个报文序列号为*RecvnextSeq*，最大序列号为*RecvmaxEnd*
 
-[[TCP seq check: Received a packet from *Dir*, updated data of sender: ack *ack*, next seq *SendernextSeq*, maxEnd *SendermaxEnd*; and receiver: next seq *RecvnextSeq*, maxEnd *RecvmaxEnd*.]{lang="EN-US"}]{#struct_0_14338_x1629_405605828}
+TCP seq check: Received a packet from *Dir*, updated data of sender: ack *ack*, next seq *SendernextSeq*, maxEnd *SendermaxEnd*; and receiver: next seq *RecvnextSeq*, maxEnd *RecvmaxEnd*.
 
-[[TCP]{lang="EN-US"}]{#struct_0_14338_x1629_1726133486}[序列号检查：收到报文，方向为]{style="font-family:宋体"}*[Dir]{lang="EN-US"}*[，更新发送方数据：确认序列号为]{style="font-family:宋体"}*[ack]{lang="EN-US"}*[，下一个报文序列号为]{style="font-family:宋体"}*[SendernextSeq]{lang="EN-US"}*[，最大序列号为]{style="font-family:宋体"}*[SendermaxEnd]{lang="EN-US"}*[；更新响应方数据：下一个报文序列号为]{style="font-family:宋体"}*[RecvnextSeq]{lang="EN-US"}*[，最大序列号为]{style="font-family:宋体"}*[RecvmaxEnd]{lang="EN-US"}*
+TCP序列号检查：收到报文，方向为*Dir*，更新发送方数据：确认序列号为*ack*，下一个报文序列号为*SendernextSeq*，最大序列号为*SendermaxEnd*；更新响应方数据：下一个报文序列号为*RecvnextSeq*，最大序列号为*RecvmaxEnd*
 
-[[TCP seq check: Received a packet from *Dir* during fast forwarding*,* updated data of sender: ack *ack*, next seq *SendernextSeq*, maxEnd *SendermaxEnd*; and receiver next seq *RecvnextSeq*, maxEnd *RecvmaxEnd*.]{lang="EN-US"}]{#struct_0_14338_x1629_1605236890}
+TCP seq check: Received a packet from *Dir* during fast forwarding*,* updated data of sender: ack *ack*, next seq *SendernextSeq*, maxEnd *SendermaxEnd*; and receiver next seq *RecvnextSeq*, maxEnd *RecvmaxEnd*.
 
-[[TCP]{lang="EN-US"}]{#struct_0_14338_x1629_x18346662}[序列号检查：在快转流程中收到报文，方向为]{style="font-family:宋体"}*[Dir]{lang="EN-US"}*[，更新发送方数据：确认序列号为]{style="font-family:宋体"}*[ack]{lang="EN-US"}*[，下一个报文序列号为]{style="font-family:宋体"}*[SendernextSeq]{lang="EN-US"}*[，最大序列号为]{style="font-family:宋体"}*[SendermaxEnd]{lang="EN-US"}*[；更新响应方数据：下一个报文序列号为]{style="font-family:宋体"}*[RecvnextSeq]{lang="EN-US"}*[，最大序列号为]{style="font-family:宋体"}*[RecvmaxEnd]{lang="EN-US"}*
+TCP序列号检查：在快转流程中收到报文，方向为*Dir*，更新发送方数据：确认序列号为*ack*，下一个报文序列号为*SendernextSeq*，最大序列号为*SendermaxEnd*；更新响应方数据：下一个报文序列号为*RecvnextSeq*，最大序列号为*RecvmaxEnd*
 
-[[TCP seq check: Invalid fragmented packet.]{lang="EN-US"}]{#struct_0_14338_x1629_93466146}
+TCP seq check: Invalid fragmented packet.
 
-[[TCP]{lang="EN-US"}]{#struct_0_14338_x1629_x767350569}[序列号检查：分片报文]{style="font-family:宋体"}[TCP]{lang="EN-US"}[序列号检查报文非法]{style="font-family:宋体"}
+TCP序列号检查：分片报文TCP序列号检查报文非法
 
-[[TCP state check: Invalid packet.]{lang="EN-US"}]{#struct_0_14338_x1629_735060220}
+TCP state check: Invalid packet.
 
-[[TCP]{lang="EN-US"}]{#struct_0_14338_x1629_x1706942161}[状态机检查：]{style="font-family:宋体"} [TCP]{lang="EN-US"}[状态错误的非法报文]{style="font-family:宋体"}
+TCP状态机检查： TCP状态错误的非法报文
 
-[[TCP seq check: Successfully got the last ack *ack*.]{lang="EN-US"}]{#struct_0_14338_x1629_1961532786}
+TCP seq check: Successfully got the last ack *ack*.
 
-[[TCP]{lang="EN-US"}]{#struct_0_14338_x1629_x1874445209}[序列号检查：成功获取到最后一个确认序列号为]{style="font-family:宋体"}*[ack]{lang="EN-US"}*[。]{style="font-family:宋体"}
+TCP序列号检查：成功获取到最后一个确认序列号为*ack*。
 
-[ ]{lang="EN-US"}
+表1-2 debugging session tcp error命令输出信息描述表
 
-[[表]{style="font-family:宋体"}]{#struct_0_14338_x1629_x978110505}[1-2 debugging session tcp error]{lang="EN-US"}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1630517739}[[字段]{style="font-family:黑体"}]{#struct_0_14338_x1629_x1930149983}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_14338_x1629_x806273830}
+Not enough memory.
 
-[[Not enough memory.]{lang="EN-US"}]{#struct_0_14338_x1629_785546274}
+没有足够的内存
 
-[[没有足够的内存]{style="font-family:宋体"}]{#struct_0_14338_x1629_x355393171}
+Failed to get the next sequence number of the packet with a Layer 2 header.
 
-[[Failed to get the next sequence number of the packet with a Layer 2 header.]{lang="EN-US"}]{#struct_0_14338_x1629_x796093346}
+获取带有二层帧头的报文的下一个报文序列号失败
 
-[[获取带有二层帧头的报文的下一个报文序列号失败]{style="font-family:宋体"}]{#struct_0_14338_x1629_798733372}
+Failed to get the next sequence number.
 
-[[Failed to get the next sequence number.]{lang="EN-US"}]{#struct_0_14338_x1629_1967515886}
+获取下一个报文序列号失败
 
-[[获取下一个报文序列号失败]{style="font-family:宋体"}]{#struct_0_14338_x1629_x1523082696}
+【举例】
 
-[ ]{lang="EN-US"}
+\# 在启用了安全模块功能（如ASPF）的设备上打开TCP检查调试功能，TCP报文通过该设备时输出调试信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_14338_x1629_x1761630355}
+\<Sysname\> debugging session tcp packet
 
-[[\# ]{lang="EN-US"}]{#struct_0_14338_x1629_x197978031}[在启用了安全模块功能（如]{style="font-family:宋体"}[ASPF]{lang="EN-US"}[）的设备上打开]{style="font-family:宋体"}[TCP]{lang="EN-US"}[检查调试功能，]{style="font-family:宋体"}[TCP]{lang="EN-US"}[报文通过该设备时输出调试信息。]{style="font-family:宋体"}
+\*May 15 01:56:15:610 2014 Sysname SESSION/7/TCP-PACKET: -MDC=1;
 
-[[\<Sysname\> debugging session tcp packet ]{lang="EN-US"}]{#struct_0_14338_x1629_1558248259}
+ TCP seq check: Processed the first SYN packet.
 
-[\*May 15 01:56:15:610 2014 Sysname SESSION/7/TCP-PACKET: -MDC=1; ]{lang="EN-US"}
+*// 对SYN类型的首包进行了序列号检查*
 
-[ TCP seq check: Processed the first SYN packet.]{lang="EN-US"}
+\*May 15 09:39:57:111 2014 Sysname SESSION/7/TCP-EVENT: -MDC=1;
 
-[*[// ]{lang="EN-US"}*]{#struct_0_14338_x1629_1082116655}*[对]{style="font-family:宋体"}[SYN]{lang="EN-US"}[类型的首包进行了序列号检查]{style="font-family:宋体"}*
+ TCP seq check: Packet from Responder, seq 70c8e503, next seq 70c8e504, ack 445b75ff
 
-[[\*May 15 09:39:57:111 2014 Sysname SESSION/7/TCP-EVENT: -MDC=1; ]{lang="EN-US"}]{#struct_0_14338_x1629_x1240178546}
+*// 收到一个响应报文，该报文的序列号是*70c8e503*，下一个序列号是*70c8e504*，确认序列号是*445b75ff*
 
-[ TCP seq check: Packet from Responder, seq 70c8e503, next seq 70c8e504, ack 445b75ff]{lang="EN-US"}
+\*May 15 01:56:15:621 2014 Sysname SESSION/7/TCP-EVENT: -MDC=1;
 
-[*[// ]{lang="EN-US"}*]{#struct_0_14338_x1629_x46526589}*[收到一个响应报文，该报文的序列号是]{style="font-family:宋体"}*[70c8e503]{lang="EN-US"}*[，下一个序列号是]{style="font-family:宋体"}*[70c8e504]{lang="EN-US"}*[，确认序列号是]{style="font-family:宋体"}*[445b75ff]{lang="EN-US"}
+TCP seq check: Invalid sequence number during fast forwarding.
 
-[[\*May 15 01:56:15:621 2014 Sysname SESSION/7/TCP-EVENT: -MDC=1; ]{lang="EN-US"}]{#struct_0_14338_x1629_x1126996064}
+*// 在快转处理流程中，报文的序列号检查不通过*
 
-[TCP seq check: Invalid sequence number during fast forwarding.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_14338_x1629_x272485471}*[在快转处理流程中，报文的序列号检查不通过]{style="font-family:宋体"}*
-
-[ ]{lang="EN-US"}

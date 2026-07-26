@@ -1,638 +1,591 @@
-::: {#1605279780 .myid}
-[]{#_Toc404792077}[]{#struct_0_18947_x5086_x1666655093}[]{#_Toc304476814}
 
 **数据缓冲区 \-- 数据缓冲区配置命令 \-- buffer apply**
 
 ------------------------------------------------------------------------
 
-[**[buffer apply]{lang="EN-US"}**]{#struct_0_18947_x5086_x613257356}[命令用来应用用户对数据缓冲区所做的配置。]{style="font-family:宋体"}
+**[buffer apply**]命令用来应用用户对数据缓冲区所做的配置。
 
-[**[undo buffer apply]{lang="EN-US"}**]{#struct_0_18947_x5086_1396721298}[命令用来取消数据缓冲区配置的应用。]{style="font-family:宋体"}
+**[undo buffer apply**]命令用来取消数据缓冲区配置的应用。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18947_x5086_1413211050}
+【命令】
 
-[**[buffer apply]{lang="EN-US"}**]{#struct_0_18947_x5086_x1206087473}
+**[buffer apply**]
 
-[**[undo buffer apply]{lang="EN-US"}**]{#struct_0_18947_x5086_x1164144746}
+**[undo buffer apply**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x1069079312}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18947_x5086_x975160455}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x431722435}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18947_x5086_1368181743}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18947_x5086_x735066036}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x24708997}
+【使用指导】
 
-[[用户对数据缓冲区进行配置后，必须使用]{style="font-family:宋体"}**[buffer apply]{lang="EN-US"}**]{#struct_0_18947_x5086_x1705104934}[命令进行应用，这些配置才能生效。]{style="font-family:宋体"}
+用户对数据缓冲区进行配置后，必须使用**buffer apply**命令进行应用，这些配置才能生效。
 
-[[配置被应用后就不能被修改，需要先取消应用，再修改、应用，新的配置才能生效。]{style="font-family:宋体"}]{#struct_0_18947_x5086_18350286}
+配置被应用后就不能被修改，需要先取消应用，再修改、应用，新的配置才能生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x1383355850}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18947_x5086_1931064420}[应用用户对数据缓冲区所做的配置。]{style="font-family:宋体"}
+\# 应用用户对数据缓冲区所做的配置。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18947_x5086_x1548729679}
+\<Sysname\> system-view
 
-[\[Sysname\] buffer apply]{lang="EN-US"}
-:::
-
-::::: {#-363753531 .myid}
-[]{#_Toc404792078}[]{#struct_0_18947_x5086_x1973779223}[]{#_Toc304476815}
+Sysname buffer apply
 
 **数据缓冲区 \-- 数据缓冲区配置命令 \-- buffer queue guaranteed**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](数据缓冲区命令.files/image001.png){#图片 3 width="62" height="27"}]{lang="EN-US"}]{#struct_0_18947_x5086_x431787971}
-:::
+![说明](数据缓冲区命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_18947_x5086_1781302500}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[buffer queue]{lang="EN-US"}**[ **guaranteed**]{lang="EN-US"}]{#struct_0_18947_x5086_x2111336866}[命令用来配置指定队列最多可使用的固定区域的大小。]{style="font-family:宋体"}
+**[buffer queue** **guaranteed**]命令用来配置指定队列最多可使用的固定区域的大小。
 
-[**[undo]{lang="EN-US"}**[ **buffer** **queue** **guaranteed**]{lang="EN-US"}]{#struct_0_18947_x5086_280665768}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **buffer** **queue** **guaranteed**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18947_x5086_1493726580}
+【命令】
 
-[[集中式设备]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_18947_x5086_x631422598}[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+集中式设备/分布式设备－独立运行模式/集中式IRF设备：
 
-[**[buffer ]{lang="EN-US"}**[{ **ingress** \| **egress** } \[ **slot** *slot-number* \] { **cell** \| **packet** } **queue** *queue-id* **guaranteed** { **ratio** *ratio-value* \| *size-value* }]{lang="EN-US"}]{#struct_0_18947_x5086_x1103705135}
+**[buffer **[{ **ingress** \| **egress** } [ **slot** *slot-number* ] { **cell** \| **packet** } **queue** *queue-id* **guaranteed** { **ratio** *ratio-value* \| *size-value* }]]
 
-[**[undo buffer ]{lang="EN-US"}**[{ **ingress** \| **egress** } \[ **slot** *slot-number* \] { **cell** \| **packet** } **queue** *queue-id* **guaranteed**]{lang="EN-US"}]{#struct_0_18947_x5086_494160125}
+**[undo buffer **[{ **ingress** \| **egress** } [ **slot** *slot-number* ] { **cell** \| **packet** } **queue** *queue-id* **guaranteed**]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_18947_x5086_x1221024719}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[buffer ]{lang="EN-US"}**[{ **ingress** \| **egress** } \[ **chassis** *chassis-number* **slot** *slot-number* \] { **cell** \| **packet** } **queue** *queue-id* **guaranteed** { **ratio** *ratio-value* \| *size-value* }]{lang="EN-US"}]{#struct_0_18947_x5086_x431853507}
+**[buffer **[{ **ingress** \| **egress** } [ **chassis** *chassis-number* **slot** *slot-number* ] { **cell** \| **packet** } **queue** *queue-id* **guaranteed** { **ratio** *ratio-value* \| *size-value* }]]
 
-[**[undo buffer ]{lang="EN-US"}**[{ **ingress** \| **egress** } \[ **chassis** *chassis-number* **slot** *slot-number* \] { **cell** \| **packet** } **queue** *queue-id* **guaranteed**]{lang="EN-US"}]{#struct_0_18947_x5086_606820274}
+**[undo buffer **[{ **ingress** \| **egress** } [ **chassis** *chassis-number* **slot** *slot-number* ] { **cell** \| **packet** } **queue** *queue-id* **guaranteed**]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x1934680257}
+【缺省情况】
 
-[[本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_18947_x5086_x1215127815}
+本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x1295705351}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18947_x5086_221460622}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18947_x5086_1928651290}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18947_x5086_x1093621696}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18947_x5086_297957240}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x1517547041}
+【参数】
 
-[**[ingress]{lang="EN-US"}**]{#struct_0_18947_x5086_x431919043}[：表示对接收数据缓冲区进行配置。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[ingress**]：表示对接收数据缓冲区进行配置。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[egress]{lang="EN-US"}**]{#struct_0_18947_x5086_x1399778511}[：表示对发送数据缓冲区进行配置。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[egress**]：表示对发送数据缓冲区进行配置。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_18947_x5086_1835552890}[：取值只能为]{style="font-family:宋体"}[1]{lang="EN-US"}[，表示配置当前设备的数据缓冲区。（集中式设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：取值只能为1，表示配置当前设备的数据缓冲区。（集中式设备）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_18947_x5086_1922366903}[：表示接口板所在的槽位号。不指定该参数时，表示配置所有接口板。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示接口板所在的槽位号。不指定该参数时，表示配置所有接口板。（分布式设备－独立运行模式）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_18947_x5086_x631944499}[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。不指定该参数时，表示配置所有成员设备。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示设备在IRF中的成员编号。不指定该参数时，表示配置所有成员设备。（集中式IRF设备）
 
-[**[chassis]{lang="EN-US"}***[ chassis-number ]{lang="EN-US"}***[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_18947_x5086_2044727442}[：表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中指定成员设备上的指定接口板。不指定该参数时，表示配置]{style="font-family:宋体"}[IRF]{lang="EN-US"}[的所有接口板。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**[chassis*** chassis-number ***slot ***slot-number*]：表示IRF中指定成员设备上的指定接口板。不指定该参数时，表示配置IRF的所有接口板。（分布式设备－IRF模式）
 
-[**[cell]{lang="EN-US"}**]{#struct_0_18947_x5086_x573575117}[：配置队列最多可使用的]{style="font-family:宋体"}[cell]{lang="EN-US"}[资源中固定区域的大小。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[cell**]：配置队列最多可使用的cell资源中固定区域的大小。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[packet]{lang="EN-US"}**]{#struct_0_18947_x5086_2027773999}[：配置队列最多可使用的]{style="font-family:宋体"}[packet]{lang="EN-US"}[资源中固定区域的大小。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[packet**]：配置队列最多可使用的packet资源中固定区域的大小。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[*[queue-id]{lang="EN-US"}*]{#struct_0_18947_x5086_x467434232}[：需要配置的队列编号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[7]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[queue-id*]：需要配置的队列编号，取值范围为0～7。
 
-[**[ratio ]{lang="EN-US"}***[ratio-value]{lang="EN-US"}*]{#struct_0_18947_x5086_1846211505}[：队列最多可使用的缓存大小占整个接口板]{style="font-family:宋体"}[cell]{lang="EN-US"}[或]{style="font-family:宋体"}[packet]{lang="EN-US"}[固定区域的大小的百分比。该参数的支持情况以及取值范围与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[ratio ***ratio-value*]：队列最多可使用的缓存大小占整个接口板cell或packet固定区域的大小的百分比。该参数的支持情况以及取值范围与设备的型号有关，请以设备的实际情况为准。
 
-[*[size-value]{lang="EN-US"}*]{#struct_0_18947_x5086_x431984579}[：队列最多可使用的字节数。该参数的支持情况以及取值范围与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[size-value*]：队列最多可使用的字节数。该参数的支持情况以及取值范围与设备的型号有关，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x183431033}
+【使用指导】
 
-[[缺省情况下，所有队列均分固定区域，但用户也可以使用该命令调整指定队列最多可使用的固定区域的大小，其它未配置的队列则均分剩余的固定区域。]{style="font-family:宋体"}]{#struct_0_18947_x5086_1282455942}
+缺省情况下，所有队列均分固定区域，但用户也可以使用该命令调整指定队列最多可使用的固定区域的大小，其它未配置的队列则均分剩余的固定区域。
 
-[[配置该命令后，系统就与给队列预留指定大小的空间，即便该队列没有报文存储需求，其他队列也不能抢占。所有队列所配置的固定区域大小之和，不应超过可配置的总固定区域大小，否则配置失败。]{style="font-family:宋体"}]{#struct_0_18947_x5086_x603144719}
+配置该命令后，系统就与给队列预留指定大小的空间，即便该队列没有报文存储需求，其他队列也不能抢占。所有队列所配置的固定区域大小之和，不应超过可配置的总固定区域大小，否则配置失败。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18947_x5086_455459657}
+【举例】
 
-[*[\# ]{lang="EN-US"}*]{#struct_0_18947_x5086_x173517675}[配置队列]{style="font-family:宋体"}[0]{lang="EN-US"}[最多可使用的]{style="font-family:宋体"}[cell]{lang="EN-US"}[固定区域的大小为整个]{style="font-family:宋体"}[cell]{lang="EN-US"}[固定缓冲区大小的]{style="font-family:宋体"}[20%]{lang="EN-US"}[。（集中式设备）]{style="font-family:宋体"}
+*[\# *]配置队列0最多可使用的cell固定区域的大小为整个cell固定缓冲区大小的20%。（集中式设备）
 
-[*[\<Sysname\>]{lang="EN-US"}*[ system-view]{lang="EN-US"}]{#struct_0_18947_x5086_1889225066}
+*[\<Sysname\>* system-view]
 
-[\[Sysname\] buffer egress cell queue 0 guaranteed ratio 20]{lang="EN-US"}
+Sysname buffer egress cell queue 0 guaranteed ratio 20
 
-[[\# ]{lang="EN-US"}]{#struct_0_18947_x5086_1150271165}[配置]{style="font-family:宋体"}[2]{lang="EN-US"}[号接口板的队列]{style="font-family:宋体"}[0]{lang="EN-US"}[最多可使用的]{style="font-family:宋体"}[cell]{lang="EN-US"}[固定区域的大小为该接口板]{style="font-family:宋体"}[cell]{lang="EN-US"}[固定缓冲区大小的]{style="font-family:宋体"}[15%]{lang="EN-US"}[。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+\# 配置2号接口板的队列0最多可使用的cell固定区域的大小为该接口板cell固定缓冲区大小的15%。（分布式设备－独立运行模式）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18947_x5086_x417156934}
+\<Sysname\> system-view
 
-[\[Sysname\] buffer egress slot 2 cell queue 0 guaranteed ratio 15]{lang="EN-US"}
+Sysname buffer egress slot 2 cell queue 0 guaranteed ratio 15
 
-[[\# ]{lang="EN-US"}]{#struct_0_18947_x5086_x1874740401}[配置成员设备]{style="font-family:宋体"}[2]{lang="EN-US"}[的队列]{style="font-family:宋体"}[0]{lang="EN-US"}[最多可使用的]{style="font-family:宋体"}[cell]{lang="EN-US"}[固定区域的大小为该成员设备]{style="font-family:宋体"}[cell]{lang="EN-US"}[固定缓冲区大小的]{style="font-family:宋体"}[15%]{lang="EN-US"}[。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\# 配置成员设备2的队列0最多可使用的cell固定区域的大小为该成员设备cell固定缓冲区大小的15%。（集中式IRF设备）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18947_x5086_x432050115}
+\<Sysname\> system-view
 
-[\[Sysname\] buffer egress slot 2 cell queue 0 guaranteed ratio 15]{lang="EN-US"}
+Sysname buffer egress slot 2 cell queue 0 guaranteed ratio 15
 
-[[\# ]{lang="EN-US"}]{#struct_0_18947_x5086_x1491410514}[配置成员设备]{style="font-family:宋体"}[2]{lang="EN-US"}[上的]{style="font-family:宋体"}[2]{lang="EN-US"}[号接口板的队列]{style="font-family:宋体"}[0]{lang="EN-US"}[最多可使用的]{style="font-family:宋体"}[cell]{lang="EN-US"}[固定区域的大小为该接口板]{style="font-family:宋体"}[cell]{lang="EN-US"}[固定缓冲区大小的]{style="font-family:宋体"}[15%]{lang="EN-US"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\# 配置成员设备2上的2号接口板的队列0最多可使用的cell固定区域的大小为该接口板cell固定缓冲区大小的15%。（分布式设备－IRF模式）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18947_x5086_x1999127392}
+\<Sysname\> system-view
 
-[\[Sysname\] buffer egress chassis 2 slot 2 cell queue 0 guaranteed ratio 15]{lang="EN-US"}
-:::::
-
-::: {#-1768896817 .myid}
-[]{#_Toc404792079}[]{#struct_0_18947_x5086_x985596038}[]{#_Toc304476816}[]{#_Toc319071747}
+Sysname buffer egress chassis 2 slot 2 cell queue 0 guaranteed ratio 15
 
 **数据缓冲区 \-- 数据缓冲区配置命令 \-- buffer queue shared**
 
 ------------------------------------------------------------------------
 
-[**[buffer queue shared]{lang="EN-US"}**]{#struct_0_18947_x5086_500641280}[命令用来配置指定队列最多可使用的共享区域的大小。]{style="font-family:宋体"}
+**[buffer queue shared**]命令用来配置指定队列最多可使用的共享区域的大小。
 
-[**[undo]{lang="EN-US"}**[ **buffer queue shared**]{lang="EN-US"}]{#struct_0_18947_x5086_1859725876}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **buffer queue shared**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x654320208}
+【命令】
 
-[[集中式设备]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_18947_x5086_x76287417}[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+集中式设备/分布式设备－独立运行模式/集中式IRF设备：
 
-[**[buffer ]{lang="EN-US"}**[{ **ingress** \| **egress** } \[ **slot** *slot-number* \] { **cell** \| **packet** } **queue** *queue-id* **shared** { **ratio** *ratio-value* \| *size-value* }]{lang="EN-US"}]{#struct_0_18947_x5086_x1411648462}
+**[buffer **[{ **ingress** \| **egress** } [ **slot** *slot-number* ] { **cell** \| **packet** } **queue** *queue-id* **shared** { **ratio** *ratio-value* \| *size-value* }]]
 
-[**[undo buffer ]{lang="EN-US"}**[{ **ingress** \| **egress** } \[ **slot** *slot-number* \] { **cell** \| **packet** } **queue** *queue-id* **shared**]{lang="EN-US"}]{#struct_0_18947_x5086_x432115651}
+**[undo buffer **[{ **ingress** \| **egress** } [ **slot** *slot-number* ] { **cell** \| **packet** } **queue** *queue-id* **shared**]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_18947_x5086_x685335802}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[buffer ]{lang="EN-US"}**[{ **ingress** \| **egress** } \[ **chassis** *chassis-number* **slot** *slot-number* \] { **cell** \| **packet** } **queue** *queue-id* **shared** { **ratio** *ratio-value* \| *size-value* }]{lang="EN-US"}]{#struct_0_18947_x5086_2132708271}
+**[buffer **[{ **ingress** \| **egress** } [ **chassis** *chassis-number* **slot** *slot-number* ] { **cell** \| **packet** } **queue** *queue-id* **shared** { **ratio** *ratio-value* \| *size-value* }]]
 
-[**[undo buffer ]{lang="EN-US"}**[{ **ingress** \| **egress** } \[ **chassis** *chassis-number* **slot** *slot-number* \] { **cell** \| **packet** } **queue** *queue-id* **shared**]{lang="EN-US"}]{#struct_0_18947_x5086_1272819032}
+**[undo buffer **[{ **ingress** \| **egress** } [ **chassis** *chassis-number* **slot** *slot-number* ] { **cell** \| **packet** } **queue** *queue-id* **shared**]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18947_x5086_1244273293}
+【缺省情况】
 
-[[本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_18947_x5086_460312436}
+本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x316088081}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18947_x5086_1548318345}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18947_x5086_2101930196}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18947_x5086_1983190551}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18947_x5086_1791522648}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x432181187}
+【参数】
 
-[**[ingress]{lang="EN-US"}**]{#struct_0_18947_x5086_44199277}**[：]{style="font-family:宋体"}**[表示对接收数据缓冲区进行配置。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[ingress**]**：**表示对接收数据缓冲区进行配置。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[egress]{lang="EN-US"}**]{#struct_0_18947_x5086_x1754371753}**[：]{style="font-family:宋体"}**[表示对发送数据缓冲区进行配置。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[egress**]**：**表示对发送数据缓冲区进行配置。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_18947_x5086_x1033072996}[：取值只能为]{style="font-family:宋体"}[1]{lang="EN-US"}[，表示配置当前设备的数据缓冲区。（集中式设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：取值只能为1，表示配置当前设备的数据缓冲区。（集中式设备）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_18947_x5086_1855363214}[：表示接口板所在的槽位号。不指定该参数时，表示配置所有接口板。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示接口板所在的槽位号。不指定该参数时，表示配置所有接口板。（分布式设备－独立运行模式）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_18947_x5086_x1511602332}[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。不指定该参数时，表示配置所有成员设备。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示设备在IRF中的成员编号。不指定该参数时，表示配置所有成员设备。（集中式IRF设备）
 
-[**[chassis]{lang="EN-US"}***[ chassis-number ]{lang="EN-US"}***[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_18947_x5086_1209195232}[：表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中指定成员设备上的指定接口板。不指定该参数时，表示配置]{style="font-family:宋体"}[IRF]{lang="EN-US"}[的所有接口板。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**[chassis*** chassis-number ***slot ***slot-number*]：表示IRF中指定成员设备上的指定接口板。不指定该参数时，表示配置IRF的所有接口板。（分布式设备－IRF模式）
 
-[**[cell]{lang="EN-US"}**]{#struct_0_18947_x5086_x1675334959}[：配置队列在]{style="font-family:宋体"}[cell]{lang="EN-US"}[资源中的最大共享缓存区的大小。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[cell**]：配置队列在cell资源中的最大共享缓存区的大小。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[packet]{lang="EN-US"}**]{#struct_0_18947_x5086_885351544}[：配置队列在]{style="font-family:宋体"}[packet]{lang="EN-US"}[资源中的最大共享缓存区的大小。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[packet**]：配置队列在packet资源中的最大共享缓存区的大小。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[*[queue-id]{lang="EN-US"}*]{#struct_0_18947_x5086_1751578442}[：需要配置的队列编号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[7]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[queue-id*]：需要配置的队列编号，取值范围为0～7。
 
-[**[ratio ]{lang="EN-US"}***[ratio-value]{lang="EN-US"}*]{#struct_0_18947_x5086_x431198147}[：队列的最大共享缓存占用比，以百分数形式表示。该参数的支持情况以及取值范围与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[ratio ***ratio-value*]：队列的最大共享缓存占用比，以百分数形式表示。该参数的支持情况以及取值范围与设备的型号有关，请以设备的实际情况为准。
 
-[*[size-value]{lang="EN-US"}*]{#struct_0_18947_x5086_x1026586908}[：队列的最大共享缓存占用字节数。参数的支持情况以及取值范围与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[size-value*]：队列的最大共享缓存占用字节数。参数的支持情况以及取值范围与设备的型号有关，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x1366935076}
+【使用指导】
 
-[[缺省情况下，所有队列均分共享区域，但用户也可以调整指定队列最多可使用的共享区域的大小，其它未配置的队列最多可使用的共享区域的大小仍遵循缺省值。最终，各队列最多可使用的共享区域的大小将由芯片根据]{style="font-family:宋体"}**[buffer shared]{lang="EN-US"}**]{#struct_0_18947_x5086_1326334642}[配置，以及实际需要收发报文的数量决定。]{style="font-family:宋体"}
+缺省情况下，所有队列均分共享区域，但用户也可以调整指定队列最多可使用的共享区域的大小，其它未配置的队列最多可使用的共享区域的大小仍遵循缺省值。最终，各队列最多可使用的共享区域的大小将由芯片根据**buffer shared**配置，以及实际需要收发报文的数量决定。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x1566088813}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18947_x5086_2040780198}[配置队列]{style="font-family:宋体"}[0]{lang="EN-US"}[在]{style="font-family:宋体"}[cell]{lang="EN-US"}[资源中的最大共享缓存占用比为]{style="font-family:宋体"}[10%]{lang="EN-US"}[。（集中式设备）]{style="font-family:宋体"}
+\# 配置队列0在cell资源中的最大共享缓存占用比为10%。（集中式设备）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18947_x5086_1211774765}
+\<Sysname\> system-view
 
-[\[Sysname\] buffer egress cell queue 0 shared ratio 10]{lang="EN-US"}
+Sysname buffer egress cell queue 0 shared ratio 10
 
-[[\# ]{lang="EN-US"}]{#struct_0_18947_x5086_998364982}[配置]{style="font-family:宋体"}[2]{lang="EN-US"}[号接口板的队列]{style="font-family:宋体"}[0]{lang="EN-US"}[在该设备]{style="font-family:宋体"}[cell]{lang="EN-US"}[资源中的最大共享缓存占用比为]{style="font-family:宋体"}[5%]{lang="EN-US"}[。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+\# 配置2号接口板的队列0在该设备cell资源中的最大共享缓存占用比为5%。（分布式设备－独立运行模式）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18947_x5086_x110926695}
+\<Sysname\> system-view
 
-[\[Sysname\] buffer egress slot 2 cell queue 0 shared ratio 5]{lang="EN-US"}
+Sysname buffer egress slot 2 cell queue 0 shared ratio 5
 
-[[\# ]{lang="EN-US"}]{#struct_0_18947_x5086_x431263683}[配置成员设备]{style="font-family:宋体"}[2]{lang="EN-US"}[的队列]{style="font-family:宋体"}[0]{lang="EN-US"}[在该设备]{style="font-family:宋体"}[cell]{lang="EN-US"}[资源中的最大共享缓存占用比为]{style="font-family:宋体"}[5%]{lang="EN-US"}[。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\# 配置成员设备2的队列0在该设备cell资源中的最大共享缓存占用比为5%。（集中式IRF设备）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18947_x5086_x969320828}
+\<Sysname\> system-view
 
-[\[Sysname\] buffer egress slot 2 cell queue 0 shared ratio 5]{lang="EN-US"}
+Sysname buffer egress slot 2 cell queue 0 shared ratio 5
 
-[[\# ]{lang="EN-US"}]{#struct_0_18947_x5086_x1682104091}[配置成员设备]{style="font-family:宋体"}[2]{lang="EN-US"}[上的]{style="font-family:宋体"}[2]{lang="EN-US"}[号接口板的队列]{style="font-family:宋体"}[0]{lang="EN-US"}[在该设备]{style="font-family:宋体"}[cell]{lang="EN-US"}[资源中的最大共享缓存占用比为]{style="font-family:宋体"}[5%]{lang="EN-US"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\# 配置成员设备2上的2号接口板的队列0在该设备cell资源中的最大共享缓存占用比为5%。（分布式设备－IRF模式）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18947_x5086_x1464380040}
+\<Sysname\> system-view
 
-[\[Sysname\] buffer egress chassis 2 slot 2 cell queue 0 shared ratio 5]{lang="EN-US"}
-:::
-
-::: {#1268212040 .myid}
-[]{#_Toc404792080}[]{#struct_0_18947_x5086_483469970}[]{#_Toc304476818}
+Sysname buffer egress chassis 2 slot 2 cell queue 0 shared ratio 5
 
 **数据缓冲区 \-- 数据缓冲区配置命令 \-- buffer total-shared**
 
 ------------------------------------------------------------------------
 
-[**[buffer total-shared]{lang="EN-US"}**]{#struct_0_18947_x5086_1878143259}[命令用来配置数据缓冲区中共享区域的大小。]{style="font-family:宋体"}
+**[buffer total-shared**]命令用来配置数据缓冲区中共享区域的大小。
 
-[**[undo]{lang="EN-US"}**[ **buffer total-shared**]{lang="EN-US"}]{#struct_0_18947_x5086_x147150456}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **buffer total-shared**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x512356152}
+【命令】
 
-[[集中式设备]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_18947_x5086_x260064372}[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+集中式设备/分布式设备－独立运行模式/集中式IRF设备：
 
-[**[buffer ]{lang="EN-US"}**[{ **ingress** \| **egress** } \[ **slot** *slot-number* \] { **cell** \| **packet** } **total-shared** { **ratio** *ratio-value* \| *size-value* }]{lang="EN-US"}]{#struct_0_18947_x5086_x1552682295}
+**[buffer **[{ **ingress** \| **egress** } [ **slot** *slot-number* ] { **cell** \| **packet** } **total-shared** { **ratio** *ratio-value* \| *size-value* }]]
 
-[**[undo buffer ]{lang="EN-US"}**[{ **ingress** \| **egress** } \[ **slot** *slot-number* \] { **cell** \| **packet** } **total-shared**]{lang="EN-US"}]{#struct_0_18947_x5086_x431722434}
+**[undo buffer **[{ **ingress** \| **egress** } [ **slot** *slot-number* ] { **cell** \| **packet** } **total-shared**]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_18947_x5086_1368247279}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[buffer ]{lang="EN-US"}**[{ **ingress** \| **egress** } \[ **chassis** *chassis-number* **slot** *slot-number* \] { **cell** \| **packet** } **total-shared** { **ratio** *ratio-value* \| *size-value* }]{lang="EN-US"}]{#struct_0_18947_x5086_1204651084}
+**[buffer **[{ **ingress** \| **egress** } [ **chassis** *chassis-number* **slot** *slot-number* ] { **cell** \| **packet** } **total-shared** { **ratio** *ratio-value* \| *size-value* }]]
 
-[**[undo buffer ]{lang="EN-US"}**[{ **ingress** \| **egress** } \[ **chassis** *chassis-number* **slot** *slot-number* \] { **cell** \| **packet** } **total-shared**]{lang="EN-US"}]{#struct_0_18947_x5086_x1729652661}
+**[undo buffer **[{ **ingress** \| **egress** } [ **chassis** *chassis-number* **slot** *slot-number* ] { **cell** \| **packet** } **total-shared**]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18947_x5086_1487248837}
+【缺省情况】
 
-[[本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_18947_x5086_197513945}
+本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x798352518}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18947_x5086_178928812}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18947_x5086_875483865}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18947_x5086_x431787970}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18947_x5086_1781368036}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18947_x5086_1778897593}
+【参数】
 
-[**[ingress]{lang="EN-US"}**]{#struct_0_18947_x5086_x1275757810}[：表示对接收数据缓冲区进行配置。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[ingress**]：表示对接收数据缓冲区进行配置。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[egress]{lang="EN-US"}**]{#struct_0_18947_x5086_x1926156132}[：表示对发送数据缓冲区进行配置。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[egress**]：表示对发送数据缓冲区进行配置。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_18947_x5086_x662344418}[：取值只能为]{style="font-family:宋体"}[1]{lang="EN-US"}[，表示配置当前设备的数据缓冲区。（集中式设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：取值只能为1，表示配置当前设备的数据缓冲区。（集中式设备）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_18947_x5086_16184173}[：表示接口板所在的槽位号。不指定该参数时，表示配置所有接口板。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示接口板所在的槽位号。不指定该参数时，表示配置所有接口板。（分布式设备－独立运行模式）
 
-[**[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_18947_x5086_2134796799}[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。不指定该参数时，表示配置所有成员设备。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**[slot ***slot-number*]：表示设备在IRF中的成员编号。不指定该参数时，表示配置所有成员设备。（集中式IRF设备）
 
-[**[chassis]{lang="EN-US"}***[ chassis-number ]{lang="EN-US"}***[slot ]{lang="EN-US"}***[slot-number]{lang="EN-US"}*]{#struct_0_18947_x5086_x1958011076}[：表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中指定成员设备上的指定接口板。不指定该参数时，表示配置]{style="font-family:宋体"}[IRF]{lang="EN-US"}[的所有接口板。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**[chassis*** chassis-number ***slot ***slot-number*]：表示IRF中指定成员设备上的指定接口板。不指定该参数时，表示配置IRF的所有接口板。（分布式设备－IRF模式）
 
-[**[cell]{lang="EN-US"}**]{#struct_0_18947_x5086_x373247848}[：配置]{style="font-family:宋体"}[cell]{lang="EN-US"}[资源中的共享缓存区的大小。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[cell**]：配置cell资源中的共享缓存区的大小。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[packet]{lang="EN-US"}**]{#struct_0_18947_x5086_x431853506}[：配置]{style="font-family:宋体"}[packet]{lang="EN-US"}[资源中的共享缓存区的大小。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[packet**]：配置packet资源中的共享缓存区的大小。该参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[ratio ]{lang="EN-US"}***[ratio-value]{lang="EN-US"}*]{#struct_0_18947_x5086_606754738}[：缓冲区中共享区域所占的比例，以百分数形式表示。该参数的支持情况以及取值范围与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[ratio ***ratio-value*]：缓冲区中共享区域所占的比例，以百分数形式表示。该参数的支持情况以及取值范围与设备的型号有关，请以设备的实际情况为准。
 
-[*[size-value]{lang="EN-US"}*]{#struct_0_18947_x5086_x615553609}[：缓冲区中共享区域所占的字节数。该参数的支持情况以及取值范围与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[size-value*]：缓冲区中共享区域所占的字节数。该参数的支持情况以及取值范围与设备的型号有关，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x1088654164}
+【使用指导】
 
-[[接口卡上整个数据缓冲区的大小是固定的，用户配置共享区域的大小后，其余部分将自动成为固定区域。]{style="font-family:宋体"}]{#struct_0_18947_x5086_x672415703}
+接口卡上整个数据缓冲区的大小是固定的，用户配置共享区域的大小后，其余部分将自动成为固定区域。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18947_x5086_1302028367}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18947_x5086_x1852585784}[配置当前设备]{style="font-family:宋体"}[cell]{lang="EN-US"}[资源中的共享区域所占比例为]{style="font-family:宋体"}[50%]{lang="EN-US"}[。（集中式设备）]{style="font-family:宋体"}
+\# 配置当前设备cell资源中的共享区域所占比例为50%。（集中式设备）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18947_x5086_x298746135}
+\<Sysname\> system-view
 
-[\[Sysname\] buffer egress cell total-shared ratio 50]{lang="EN-US"}
+Sysname buffer egress cell total-shared ratio 50
 
-[[\# ]{lang="EN-US"}]{#struct_0_18947_x5086_x526053503}[配置]{style="font-family:宋体"}[2]{lang="EN-US"}[号接口板的]{style="font-family:宋体"}[cell]{lang="EN-US"}[资源中共享区域所占比例为]{style="font-family:宋体"}[65%]{lang="EN-US"}[。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+\# 配置2号接口板的cell资源中共享区域所占比例为65%。（分布式设备－独立运行模式）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18947_x5086_x2112266684}
+\<Sysname\> system-view
 
-[\[Sysname\] buffer egress slot 2 cell total-shared ratio 65]{lang="EN-US"}
+Sysname buffer egress slot 2 cell total-shared ratio 65
 
-[[\# ]{lang="EN-US"}]{#struct_0_18947_x5086_x431919042}[配置成员设备]{style="font-family:宋体"}[2]{lang="EN-US"}[的]{style="font-family:宋体"}[cell]{lang="EN-US"}[资源中共享区域所占比例为]{style="font-family:宋体"}[65%]{lang="EN-US"}[。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\# 配置成员设备2的cell资源中共享区域所占比例为65%。（集中式IRF设备）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18947_x5086_x1399844047}
+\<Sysname\> system-view
 
-[\[Sysname\] buffer egress slot 2 cell total-shared ratio 65]{lang="EN-US"}
+Sysname buffer egress slot 2 cell total-shared ratio 65
 
-[[\# ]{lang="EN-US"}]{#struct_0_18947_x5086_727261634}[配置成员设备]{style="font-family:宋体"}[2]{lang="EN-US"}[上的]{style="font-family:宋体"}[2]{lang="EN-US"}[号接口板的]{style="font-family:宋体"}[cell]{lang="EN-US"}[资源中共享区域所占比例为]{style="font-family:宋体"}[65%]{lang="EN-US"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\# 配置成员设备2上的2号接口板的cell资源中共享区域所占比例为65%。（分布式设备－IRF模式）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18947_x5086_1950012921}
+\<Sysname\> system-view
 
-[\[Sysname\] buffer egress chassis 2 slot 2 cell total-shared ratio 65]{lang="EN-US"}
-:::
-
-::: {#-1363566561 .myid}
-[]{#_Toc404792081}[]{#struct_0_18947_x5086_128007133}[]{#_Toc307922392}[]{#_Toc291750142}[]{#_Toc263760090}[]{#_Toc226262757}[]{#_Toc205200257}[]{#_Toc153620361}[]{#_Toc319071751}
+Sysname buffer egress chassis 2 slot 2 cell total-shared ratio 65
 
 **数据缓冲区 \-- 数据缓冲区配置命令 \-- burst-mode enable**
 
 ------------------------------------------------------------------------
 
-[**[burst-mode enable]{lang="EN-US"}**]{#struct_0_18947_x5086_x2044007410}[命令用来开启]{style="font-family:宋体"}[Burst]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[burst-mode enable**]命令用来开启Burst功能。
 
-[**[undo burst-mode enable]{lang="EN-US"}**]{#struct_0_18947_x5086_x222060905}[命令用来关闭]{style="font-family:宋体"}[Burst]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo burst-mode enable**]命令用来关闭Burst功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18947_x5086_101908596}
+【命令】
 
-[**[burst-mode enable]{lang="EN-US"}**]{#struct_0_18947_x5086_1710908156}
+**[burst-mode enable**]
 
-[**[undo burst-mode enable]{lang="EN-US"}**]{#struct_0_18947_x5086_x1479694120}
+**[undo burst-mode enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x431984578}
+【缺省情况】
 
-[[Burst]{lang="EN-US"}]{#struct_0_18947_x5086_x183365497}[功能处于关闭状态。]{style="font-family:宋体"}
+Burst功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18947_x5086_76123033}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18947_x5086_x559835440}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18947_x5086_357805057}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18947_x5086_x1899942785}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18947_x5086_x1295317000}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18947_x5086_1105255397}
+【使用指导】
 
-[[在下列情况下，]{style="font-family:宋体"}[Burst]{lang="EN-US"}]{#struct_0_18947_x5086_x647664854}[功能可以提供更好的报文缓存功能和流量转发性能：]{style="font-family:宋体"}
+在下列情况下，Burst功能可以提供更好的报文缓存功能和流量转发性能：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[广播或者组播报文流量密集，瞬间突发大流量的网络环境中；]{style="font-family:宋体"}]{#struct_0_18947_x5086_x733987032}
+·广播或者组播报文流量密集，瞬间突发大流量的网络环境中；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[报文从高速链路进入设备，由低速链路转发出去；或者报文从相同速率的多个接口同时进入设备，由一个相同速率的接口转发出去。]{style="font-family:宋体"}]{#struct_0_18947_x5086_x432050114}
+·报文从高速链路进入设备，由低速链路转发出去；或者报文从相同速率的多个接口同时进入设备，由一个相同速率的接口转发出去。
 
-[[用户可以通过开启]{style="font-family:宋体"}[Burst]{lang="EN-US"}]{#struct_0_18947_x5086_x1491476050}[功能，降低设备在上述特定环境中的报文丢包率，提高对报文的处理能力。]{style="font-family:宋体"}
+用户可以通过开启Burst功能，降低设备在上述特定环境中的报文丢包率，提高对报文的处理能力。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18947_x5086_1084734037}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18947_x5086_568805760}[开启]{style="font-family:宋体"}[Burst]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 开启Burst功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18947_x5086_1439351870}
+\<Sysname\> system-view
 
-[\[Sysname\] burst-mode enable]{lang="EN-US"}
-:::
-
-::: {#-2020356437 .myid}
-[]{#_Toc404792082}[]{#struct_0_18947_x5086_1183228066}
+Sysname burst-mode enable
 
 **数据缓冲区 \-- 数据缓冲区配置命令 \-- display buffer**
 
 ------------------------------------------------------------------------
 
-[**[display buffer]{lang="EN-US"}**]{#struct_0_18947_x5086_x1796222242}[命令显示数据缓冲区的大小。]{style="font-family:宋体"}
+**[display buffer**]命令显示数据缓冲区的大小。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x789448112}
+【命令】
 
-[[集中式设备]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_18947_x5086_852795410}[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+集中式设备/分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display buffer ]{lang="EN-US"}**[\[ **slot** *slot-number* \] \[ **queue** \[ *queue-id* \] \]]{lang="EN-US"}]{#struct_0_18947_x5086_x432115650}
+**[display buffer ** **slot** *slot-number* ]  **queue** [ *queue-id*  ]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_18947_x5086_x685401338}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display buffer ]{lang="EN-US"}**[\[ **chassis** *chassis-number* **slot** *slot-number* \] \[ **queue** \[ *queue-id* \] \]]{lang="EN-US"}]{#struct_0_18947_x5086_x621758073}
+**[display buffer ** **chassis** *chassis-number* **slot** *slot-number* ]  **queue** [ *queue-id*  ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x109205933}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_18947_x5086_1380333508}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18947_x5086_491193082}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18947_x5086_304148187}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_18947_x5086_852996212}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18947_x5086_x303614009}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_18947_x5086_x432181186}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18947_x5086_44264813}
+【参数】
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_18947_x5086_718837791}[：取值只能为]{style="font-family:宋体"}[1]{lang="EN-US"}[，暂无意义。（集中式设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：取值只能为1，暂无意义。（集中式设备）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_18947_x5086_x1934443683}[：表示接口板所在的槽位号。不指定该参数时，表示所有接口板。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot*** slot-number*]：表示接口板所在的槽位号。不指定该参数时，表示所有接口板。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_18947_x5086_x1610859059}[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。不指定该参数时，表示所有成员设备。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：表示设备在IRF中的成员编号。不指定该参数时，表示所有成员设备。（集中式IRF设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_18947_x5086_x1761632629}[：表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中指定成员设备上的指定接口板。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有接口板。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：表示IRF中指定成员设备上的指定接口板。不指定该参数时，表示IRF中的所有接口板。（分布式设备－IRF模式）
 
-[**[queue]{lang="EN-US"}**[ *queue-id*]{lang="EN-US"}]{#struct_0_18947_x5086_1503413728}[：表示队列的编号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[7]{lang="EN-US"}[。如果不指定]{style="font-family:
-宋体"}*[queue-id]{lang="EN-US"}*[，表示所有队列。]{style="font-family:
-宋体"}
+**[queue** *queue-id*]：表示队列的编号，取值范围为0～7。如果不指定*queue-id*，表示所有队列。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x384979252}
+【使用指导】
 
-[**[display buffer]{lang="EN-US"}**]{#struct_0_18947_x5086_x114748145}[命令不带]{style="font-family:宋体"}**[queue]{lang="EN-US"}**[关键字时，显示共享区域的大小。]{style="font-family:宋体"}
+**[display buffer**]命令不带**queue**关键字时，显示共享区域的大小。
 
-[**[display buffer]{lang="EN-US"}**]{#struct_0_18947_x5086_x431198146}[命令带]{style="font-family:宋体"}**[queue]{lang="EN-US"}**[关键字时，显示队列最多可使用的固定区域的大小以及队列最多可使用的共享区域的大小。其中，指定]{style="font-family:宋体"}*[queue-id]{lang="EN-US"}*[时，显示指定队列的相关信息，不指定]{style="font-family:宋体"}*[queue-id]{lang="EN-US"}*[时，显示所有队列的相关信息。]{style="font-family:宋体"}
+**[display buffer**]命令带**queue**关键字时，显示队列最多可使用的固定区域的大小以及队列最多可使用的共享区域的大小。其中，指定*queue-id*时，显示指定队列的相关信息，不指定*queue-id*时，显示所有队列的相关信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x1026652444}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18947_x5086_x231358484}[显示数据缓冲区的大小。（不同型号的设备显示信息不同，请以设备的实际情况为准）（集中式设备]{style="font-family:宋体"}[/]{lang="EN-US"}[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\# 显示数据缓冲区的大小。（不同型号的设备显示信息不同，请以设备的实际情况为准）（集中式设备/分布式设备－独立运行模式/集中式IRF设备）
 
-[[\<Sysname\> display buffer]{lang="EN-US"}]{#struct_0_18947_x5086_698058514}
+\<Sysname\> display buffer
 
-[Slot      Type          In(Total-shared)        Eg(Total-shared)]{lang="EN-US"}
+Slot      Type          In(Total-shared)        Eg(Total-shared)
 
-[1         packet        24                      36]{lang="EN-US"}
+1         packet        24                      36
 
-[1         cell          50                      \--]{lang="EN-US"}
+1         cell          50                      \--
 
-[ ]{lang="EN-US"}
+          In: Size of the receiving buffer
 
-[          In: Size of the receiving buffer]{lang="EN-US"}
+          Eg: Size of the sending buffer
 
-[          Eg: Size of the sending buffer]{lang="EN-US"}
+Total-shared: Size of the shared buffer for all ports
 
-[Total-shared: Size of the shared buffer for all ports]{lang="EN-US"}
+      Shared: Size of the maximum shared buffer per port
 
-[      Shared: Size of the maximum shared buffer per port]{lang="EN-US"}
+        Unit: Ratio
 
-[        Unit: Ratio]{lang="EN-US"}
+\<Sysname\> display buffer queue
 
-[\<Sysname\> display buffer queue]{lang="EN-US"}
+Slot      Queue          Type       In(Guaranteed , Shared)     Eg(Guaranteed , Shared)
 
-[Slot      Queue          Type       In(Guaranteed , Shared)     Eg(Guaranteed , Shared)]{lang="EN-US"}
+1         0-7            packet     256 , 128                   256 , 128
 
-[1         0-7            packet     256 , 128                   256 , 128]{lang="EN-US"}
+1         0-1,3-4,6-7    cell       256 , 128                   256 , 128
 
-[1         0-1,3-4,6-7    cell       256 , 128                   256 , 128]{lang="EN-US"}
+1         2,5            cell       512 , 128                   \-- , \--
 
-[1         2,5            cell       512 , 128                   \-- , \--]{lang="EN-US"}
+        In: Size of the receiving buffer
 
-[ ]{lang="EN-US"}
+        Eg: Size of the sending buffer
 
-[        In: Size of the receiving buffer]{lang="EN-US"}
+Guaranteed: Size of the minimum guaranteed buffer per queue
 
-[        Eg: Size of the sending buffer]{lang="EN-US"}
+    Shared: Size of the maximum shared buffer per queue
 
-[Guaranteed: Size of the minimum guaranteed buffer per queue]{lang="EN-US"}
+      Unit: Byte
 
-[    Shared: Size of the maximum shared buffer per queue]{lang="EN-US"}
+\# 显示成员设备1上2号接口板数据缓冲区的大小。（不同型号的设备显示信息不同，请以设备的实际情况为准）（分布式设备－IRF模式）
 
-[[      Unit: Byte]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_18947_x5086_1118085163}
+\<Sysname\> display buffer chassis 1 slot 2
 
-[[\# ]{lang="EN-US"}]{#struct_0_18947_x5086_x431263682}[显示成员设备]{style="font-family:宋体"}[1]{lang="EN-US"}[上]{style="font-family:宋体"}[2]{lang="EN-US"}[号接口板数据缓冲区的大小。（不同型号的设备显示信息不同，请以设备的实际情况为准）（分布式设备－]{style="font-family:
-宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+Slot      Type          In(Total-shared , Shared)        Eg(Total-shared , Shared)
 
-[[\<Sysname\> display buffer chassis 1 slot 2]{lang="EN-US"}]{#struct_0_18947_x5086_x969255292}
+1/2       packet        24 , 2                           36 , 2
 
-[Slot      Type          In(Total-shared , Shared)        Eg(Total-shared , Shared)]{lang="EN-US"}
+1/2       cell          50 , 25                          \-- , \--
 
-[1/2       packet        24 , 2                           36 , 2]{lang="EN-US"}
+          In: Size of the receiving buffer
 
-[1/2       cell          50 , 25                          \-- , \--]{lang="EN-US"}
+          Eg: Size of the sending buffer
 
-[ ]{lang="EN-US"}
+Total-shared: Size of the shared buffer for all ports
 
-[          In: Size of the receiving buffer]{lang="EN-US"}
+      Shared: Size of the maximum shared buffer per port
 
-[          Eg: Size of the sending buffer]{lang="EN-US"}
+        Unit: Ratio
 
-[Total-shared: Size of the shared buffer for all ports]{lang="EN-US"}
+\<Sysname\> display buffer chassis 1 slot 2 queue
 
-[      Shared: Size of the maximum shared buffer per port]{lang="EN-US"}
+Slot      Queue          Type       In(Guaranteed , Shared)     Eg(Guaranteed , Shared)
 
-[        Unit: Ratio]{lang="EN-US"}
+1/2       0-7            packet     256 , 128                   256 , 128
 
-[\<Sysname\> display buffer chassis 1 slot 2 queue]{lang="EN-US"}
+1/2       0-1,3-4,6-7    cell       256 , 128                   256 , 128
 
-[Slot      Queue          Type       In(Guaranteed , Shared)     Eg(Guaranteed , Shared)]{lang="EN-US"}
+1/2       2,5            cell       512 , 128                   \-- , \--
 
-[1/2       0-7            packet     256 , 128                   256 , 128]{lang="EN-US"}
+        In: Size of the receiving buffer
 
-[1/2       0-1,3-4,6-7    cell       256 , 128                   256 , 128]{lang="EN-US"}
+        Eg: Size of the sending buffer
 
-[1/2       2,5            cell       512 , 128                   \-- , \--]{lang="EN-US"}
+Guaranteed: Size of the minimum guaranteed buffer per queue
 
-[ ]{lang="EN-US"}
+    Shared: Size of the maximum shared buffer per queue
 
-[        In: Size of the receiving buffer]{lang="EN-US"}
+      Unit: Byte
 
-[        Eg: Size of the sending buffer]{lang="EN-US"}
+表1-1 display buffer命令显示信息描述表
 
-[Guaranteed: Size of the minimum guaranteed buffer per queue]{lang="EN-US"}
+字段
 
-[    Shared: Size of the maximum shared buffer per queue]{lang="EN-US"}
+描述
 
-[      Unit: Byte]{lang="EN-US"}
+Slot
 
-[]{#struct_0_18947_x5086_x2078840928}[[表1-1 ]{lang="EN-US"}[display buffer]{lang="EN-US"}]{#_Ref318724271}[命令显示信息描述表]{style="font-family:黑体"}
+取值固定为1（集中式设备）
 
-[]{#table_struct_0_x514959688}[[字段]{style="font-family:黑体"}]{#struct_0_18947_x5086_x431722437}
-:::
+表示接口板所在的槽位号（分布式设备－独立运行模式）
 
-[[描述]{style="font-family:黑体"}]{#struct_0_18947_x5086_1368312815}
+表示设备在IRF中的成员编号（集中式IRF设备）
 
-[[Slot]{lang="EN-US"}]{#struct_0_18947_x5086_x1953022682}
+表示接口板所在的槽位号，其中第一维为设备在IRF中的成员编号，第二维为接口板在成员设备上的槽位号（分布式设备－IRF模式）
 
-[[取值固定为]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_18947_x5086_x1723370666}[（集中式设备）]{style="font-family:宋体"}
+Type
 
-[[表示接口板所在的槽位号（分布式设备－独立运行模式）]{style="font-family:宋体"}]{#struct_0_18947_x5086_1972128222}
+缓冲区类型，包括packet资源和cell资源
 
-[[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_18947_x5086_495554574}[中的成员编号（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+Queue
 
-[[表示接口板所在的槽位号，其中第一维为设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_18947_x5086_x157562578}[中的成员编号，第二维为接口板在成员设备上的槽位号（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+队列ID，范围为0～7
 
-[[Type]{lang="EN-US"}]{#struct_0_18947_x5086_x431787973}
+In
 
-[[缓冲区类型，包括]{style="font-family:宋体"}[packet]{lang="EN-US"}]{#struct_0_18947_x5086_1781171428}[资源和]{style="font-family:宋体"}[cell]{lang="EN-US"}[资源]{style="font-family:宋体"}
+Ingress，入方向的数据缓冲区配置
 
-[[Queue]{lang="EN-US"}]{#struct_0_18947_x5086_x193729553}
+Eg
 
-[[队列]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_18947_x5086_x499839790}[，范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[7]{lang="EN-US"}
+Egress，出方向的数据缓冲区配置
 
-[[In]{lang="EN-US"}]{#struct_0_18947_x5086_x599782083}
+(Total-shared)
 
-[[Ingress]{lang="EN-US"}]{#struct_0_18947_x5086_x478528231}[，入方向的数据缓冲区配置]{style="font-family:宋体"}
+共享区域的大小。如果显示为"\--"字符串，则表示设备不支持该缓冲区
 
-[[Eg]{lang="EN-US"}]{#struct_0_18947_x5086_x431853509}
+(Guaranteed , Shared)
 
-[[Egress]{lang="EN-US"}]{#struct_0_18947_x5086_606427058}[，出方向的数据缓冲区配置]{style="font-family:宋体"}
+Guaranteed表示最多可使用的固定区域的大小。如果显示为"\--"字符串，则表示设备不支持该数据缓冲区
 
-[[(Total-shared)]{lang="EN-US"}]{#struct_0_18947_x5086_x2062469619}
+Shared对应表示最多可使用的共享区域的大小。如果显示为"\--"字符串，则表示设备不支持该数据缓冲区
 
-[[共享区域的大小。如果显示为"]{style="font-family:宋体"}[\--]{lang="EN-US"}]{#struct_0_18947_x5086_1879241279}["字符串，则表示设备不支持该缓冲区]{style="font-family:宋体"}
+Unit
 
-[[(Guaranteed , Shared)]{lang="EN-US"}]{#struct_0_18947_x5086_238731439}
-
-[[Guaranteed]{lang="EN-US"}]{#struct_0_18947_x5086_x1452065599}[表示最多可使用的固定区域的大小。如果显示为"]{style="font-family:宋体"}[\--]{lang="EN-US"}["字符串，则表示设备不支持该数据缓冲区]{style="font-family:宋体"}
-
-[[Shared]{lang="EN-US"}]{#struct_0_18947_x5086_x431919045}[对应表示最多可使用的共享区域的大小。如果显示为"]{style="font-family:宋体"}[\--]{lang="EN-US"}["字符串，则表示设备不支持该数据缓冲区]{style="font-family:宋体"}
-
-[[Unit]{lang="EN-US"}]{#struct_0_18947_x5086_x1399647439}
-
-[[数据缓冲区的单位，为]{style="font-family:宋体"}[%]{lang="EN-US"}]{#struct_0_18947_x5086_2125311948}[或]{style="font-family:宋体"}[byte]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-::: {#592272944 .myid}
-[]{#_Toc404792083}[]{#struct_0_18947_x5086_x863986861}
+数据缓冲区的单位，为%或byte
 
 **数据缓冲区 \-- 数据缓冲区配置命令 \-- display buffer usage**
 
 ------------------------------------------------------------------------
 
-[**[display buffer usage]{lang="EN-US"}**]{#struct_0_18947_x5086_2131090757}[命令用来显示数据缓冲区的使用率。]{style="font-family:宋体"}
+**[display buffer usage**]命令用来显示数据缓冲区的使用率。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x1693906785}
+【命令】
 
-[[集中式设备]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_18947_x5086_679684140}[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+集中式设备/分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display buffer]{lang="EN-US"}**[ **usage** \[ **slot** *slot-number* \]]{lang="EN-US"}]{#struct_0_18947_x5086_1502070676}
+**[display buffer** **usage** [ **slot** *slot-number* ]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_18947_x5086_x431984581}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display buffer]{lang="EN-US"}**[ **usage** \[ **chassis** *chassis-number* **slot** *slot-number* \]]{lang="EN-US"}]{#struct_0_18947_x5086_x182906732}
+**[display buffer** **usage** [ **chassis** *chassis-number* **slot** *slot-number* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18947_x5086_890777220}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_18947_x5086_x220900294}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x1352597050}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18947_x5086_2050225434}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_18947_x5086_x1334390458}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18947_x5086_826175405}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_18947_x5086_1564819385}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18947_x5086_x432050117}
+【参数】
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_18947_x5086_x1491279442}[：取值只能为]{style="font-family:宋体"}[1]{lang="EN-US"}[，表示显示当前设备的]{style="font-family:宋体"}[数据缓冲区的使用率]{style="font-family:宋体"}[。（集中式设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：取值只能为1，表示显示当前设备的数据缓冲区的使用率。（集中式设备）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_18947_x5086_1055433607}[：表示接口板所在的槽位号。不指定该参数时，表示所有接口板。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot*** slot-number*]：表示接口板所在的槽位号。不指定该参数时，表示所有接口板。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_18947_x5086_x1237399876}[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。不指定该参数时，表示所有成员设备。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：表示设备在IRF中的成员编号。不指定该参数时，表示所有成员设备。（集中式IRF设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_18947_x5086_x207600567}[：表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中指定成员设备上的指定接口板。不指定该参数时，表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的所有接口板。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：表示IRF中指定成员设备上的指定接口板。不指定该参数时，表示IRF中的所有接口板。（分布式设备－IRF模式）
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18947_x5086_2091119014}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18947_x5086_1009332823}[显示数据缓冲区的使用率]{style="font-family:宋体"}[。（不同型号的设备显示信息不同，请以设备的实际情况为准）]{style="font-family:宋体"}
+\# 显示数据缓冲区的使用率。（不同型号的设备显示信息不同，请以设备的实际情况为准）
 
-[[\<Sysname\> display buffer usage]{lang="EN-US"}]{#struct_0_18947_x5086_2000108249}
+\<Sysname\> display buffer usage
 
-[Egress total-shared cell buffer usage for slot 1:]{lang="EN-US"}
+Egress total-shared cell buffer usage for slot 1:
 
-[         4% in last 5 seconds]{lang="EN-US"}
+         4% in last 5 seconds
 
-[        16% in last 1 minute]{lang="EN-US"}
+        16% in last 1 minute
 
-[        14% in last 5 minutes]{lang="EN-US"}
+        14% in last 5 minutes
 
-[ ]{lang="EN-US"}
-:::

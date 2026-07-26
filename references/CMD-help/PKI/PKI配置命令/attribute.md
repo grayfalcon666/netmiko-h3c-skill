@@ -1,4266 +1,3992 @@
-::: {#-136546062 .myid}
-[]{#_Toc279163110}[]{#_Toc404793057}[]{#struct_0_18308_19795_x994418565}
 
 **PKI \-- PKI配置命令 \-- attribute**
 
 ------------------------------------------------------------------------
 
-[[[attribute]{lang="EN-US"}]{.commandkeywordsCharChar}]{#struct_0_18308_19795_x84273901}[命令用来配置属性规则，用于根据证书的颁发者名、主题名以及备用主题名来过滤证书。]{style="font-family:宋体"}
+attribute{.commandkeywordsCharChar}命令用来配置属性规则，用于根据证书的颁发者名、主题名以及备用主题名来过滤证书。
 
-[**[undo attribute]{lang="EN-US"}**]{#struct_0_18308_19795_x1555748123}[命令用来删除证书属性规则。]{style="font-family:宋体"}
+**[undo attribute**]命令用来删除证书属性规则。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x695288998}
+【命令】
 
-[**[attribute]{lang="EN-US"}**[ *id* { **alt-subject-name** { **fqdn** \| **ip** } \| { **issuer-name** \| **subject-name** } { **dn** \| **fqdn** \| **ip** } } { **ctn** \| **equ** \| **nctn** \| **nequ** } *attribute-value*]{lang="EN-US"}]{#struct_0_18308_19795_x44269405}
+**[attribute**[ *id* { **alt-subject-name** { **fqdn** \| **ip** } \| { **issuer-name** \| **subject-name** } { **dn** \| **fqdn** \| **ip** } } { **ctn** \| **equ** \| **nctn** \| **nequ** } *attribute-value*]]
 
-[**[undo]{lang="EN-US"}**[ **attribute** *id*]{lang="EN-US"}]{#struct_0_18308_19795_823279399}
+**[undo** **attribute** *id*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_x173825229}
+【缺省情况】
 
-[[不存在属性规则，即对证书的颁发者名、主题名以及备用主题名没有限制。]{style="font-family:宋体"}]{#struct_0_18308_19795_x28221226}
+不存在属性规则，即对证书的颁发者名、主题名以及备用主题名没有限制。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_1352358668}
+【视图】
 
-[[证书属性组视图]{style="font-family:宋体"}]{#struct_0_18308_19795_84789770}
+证书属性组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_1661562145}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x84339437}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x291881336}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x748113393}
+【参数】
 
-[*[id]{lang="EN-US"}*]{#struct_0_18308_19795_x1125802970}[：证书属性规则序号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[16]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[id*]：证书属性规则序号，取值范围为1～16。
 
-[**[alt-subject-name]{lang="EN-US"}**]{#struct_0_18308_19795_x337991912}[：表示证书备用主题名（]{style="font-family:宋体"}[Subject Alternative Name]{lang="EN-US"}[）。]{style="font-family:宋体"}
+**[alt-subject-name**]：表示证书备用主题名（Subject Alternative Name）。
 
-[**[fqdn]{lang="EN-US"}**]{#struct_0_18308_19795_x1848873378}[：指定实体的]{style="font-family:宋体"}[FQDN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[fqdn**]：指定实体的FQDN。
 
-[**[ip]{lang="EN-US"}**]{#struct_0_18308_19795_x1447878551}[：指定实体的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[ip**]：指定实体的IP地址。
 
-[**[dn]{lang="EN-US"}**]{#struct_0_18308_19795_1702768531}[：指定实体的]{style="font-family:宋体"}[DN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[dn**]：指定实体的DN。
 
-[**[issuer-name]{lang="EN-US"}**]{#struct_0_18308_19795_995346525}[：表示证书颁发者名（]{style="font-family:宋体"}[Issuer Name]{lang="EN-US"}[）。]{style="font-family:宋体"}
+**[issuer-name**]：表示证书颁发者名（Issuer Name）。
 
-[**[subject-name]{lang="EN-US"}**]{#struct_0_18308_19795_x83880685}[：表示证书主题名（]{style="font-family:宋体"}[Subject Name]{lang="EN-US"}[）。]{style="font-family:宋体"}
+**[subject-name**]：表示证书主题名（Subject Name）。
 
-[**[ctn]{lang="EN-US"}**]{#struct_0_18308_19795_x1552221732}[：表示包含操作。]{style="font-family:宋体"}
+**[ctn**]：表示包含操作。
 
-[**[equ]{lang="EN-US"}**]{#struct_0_18308_19795_x1139994164}[：表示相等操作。]{style="font-family:宋体"}
+**[equ**]：表示相等操作。
 
-[**[nctn]{lang="EN-US"}**]{#struct_0_18308_19795_x973392955}[：表示不包含操作。]{style="font-family:宋体"}
+**[nctn**]：表示不包含操作。
 
-[**[nequ]{lang="EN-US"}**]{#struct_0_18308_19795_x1436685479}[：表示不等操作。]{style="font-family:宋体"}
+**[nequ**]：表示不等操作。
 
-[*[attribute-value]{lang="EN-US"}*]{#struct_0_18308_19795_x1118050694}[：指定证书属性值，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+*[attribute-value*]：指定证书属性值，为1～255个字符的字符串，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_259045581}
+【使用指导】
 
-[[各证书属性中可包含的属性域个数有所不同：]{style="font-family:宋体"}]{#struct_0_18308_19795_888187519}
+各证书属性中可包含的属性域个数有所不同：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[主题名和颁发者名中均只能包含一个]{style="font-family:宋体"}]{#struct_0_18308_19795_1701435651}[DN]{lang="EN-US"}[，但是均可以同时包含多个]{style="font-family:宋体"}[FQDN]{lang="EN-US"}[和]{style="font-family:宋体"}[IP]{lang="EN-US"}[；]{style="font-family:宋体"}
+·主题名和颁发者名中均只能包含一个DN，但是均可以同时包含多个FQDN和IP；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[备用主题名中不能包含]{style="font-family:宋体"}]{#struct_0_18308_19795_x33002903}[DN]{lang="EN-US"}[，但是可以同时包含多个]{style="font-family:宋体"}[FQDN]{lang="EN-US"}[和]{style="font-family:宋体"}[IP]{lang="EN-US"}[。]{style="font-family:宋体"}
+·备用主题名中不能包含DN，但是可以同时包含多个FQDN和IP。
 
-[[不同类型的证书属性域与操作关键字的组合代表了不同的匹配条件，具体如下表所示：]{style="font-family:宋体"}]{#struct_0_18308_19795_x83946221}
+不同类型的证书属性域与操作关键字的组合代表了不同的匹配条件，具体如下表所示：
 
-[[表1-1 ]{lang="EN-US"}[对证书属性域的操作涵义]{style="font-family:黑体"}]{#struct_0_18308_19795_397396936}
+表1-1 对证书属性域的操作涵义
 
-[]{#table_struct_0_1967601276}[[操作]{style="font-family:黑体"}]{#struct_0_18308_19795_x263319055}
-:::
+操作
 
-[[DN]{lang="EN-US"}]{#struct_0_18308_19795_1887563947}
+DN
 
-[[FQDN/IP]{lang="EN-US"}]{#struct_0_18308_19795_542310960}
+FQDN/IP
 
-[**[ctn]{lang="EN-US"}**]{#struct_0_18308_19795_x892126160}
+**[ctn**]
 
-[[DN]{lang="EN-US"}]{#struct_0_18308_19795_x1016852782}[中包含指定的属性值]{style="font-family:宋体"}
+DN中包含指定的属性值
 
-[[任意一个]{style="font-family:宋体"}[FQDN/IP]{lang="EN-US"}]{#struct_0_18308_19795_418120775}[中包含了指定的属性值]{style="font-family:宋体"}
+任意一个FQDN/IP中包含了指定的属性值
 
-[**[nctn]{lang="EN-US"}**]{#struct_0_18308_19795_x84011757}
+**[nctn**]
 
-[[DN]{lang="EN-US"}]{#struct_0_18308_19795_205113791}[中不包含指定的属性值]{style="font-family:宋体"}
+DN中不包含指定的属性值
 
-[[所有]{style="font-family:宋体"}[FQDN/IP]{lang="EN-US"}]{#struct_0_18308_19795_x522786831}[中均不包含指定的属性值]{style="font-family:宋体"}
+所有FQDN/IP中均不包含指定的属性值
 
-[**[equ]{lang="EN-US"}**]{#struct_0_18308_19795_524032065}
+**[equ**]
 
-[[DN]{lang="EN-US"}]{#struct_0_18308_19795_1896297210}[等于指定的属性值]{style="font-family:宋体"}
+DN等于指定的属性值
 
-[[任意一个]{style="font-family:宋体"}[FQDN/IP]{lang="EN-US"}]{#struct_0_18308_19795_x843526775}[等于指定的属性值]{style="font-family:宋体"}
+任意一个FQDN/IP等于指定的属性值
 
-[**[nequ]{lang="EN-US"}**]{#struct_0_18308_19795_x84077293}
+**[nequ**]
 
-[[DN]{lang="EN-US"}]{#struct_0_18308_19795_x975820738}[不等于指定的属性值]{style="font-family:宋体"}
+DN不等于指定的属性值
 
-[[所有]{style="font-family:宋体"}[FQDN/IP]{lang="EN-US"}]{#struct_0_18308_19795_329974532}[均不等于指定的属性值]{style="font-family:宋体"}
+所有FQDN/IP均不等于指定的属性值
 
-[ ]{lang="EN-US"}
+如果证书的相应属性中包含了属性规则里指定的属性域，且满足属性规则中定义的匹配条件，则认为该属性与属性规则相匹配。例如：属性规则2中定义，证书的主题名DN中包含字符串abc。如果某证书的主题名的DN中确实包含了字符串abc，则认为该证书的主题名与属性规则2匹配。
 
-[[如果证书的相应属性中包含了属性规则里指定的属性域，且满足属性规则中定义的匹配条件，则认为该属性与属性规则相匹配。例如：属性规则]{style="font-family:宋体"}[2]{lang="EN-US"}]{#struct_0_18308_19795_x1310937571}[中定义，证书的主题名]{style="font-family:宋体"}[DN]{lang="EN-US"}[中包含字符串]{style="font-family:宋体"}[abc]{lang="EN-US"}[。如果某证书的主题名的]{style="font-family:宋体"}[DN]{lang="EN-US"}[中确实包含了字符串]{style="font-family:宋体"}[abc]{lang="EN-US"}[，则认为该证书的主题名与属性规则]{style="font-family:宋体"}[2]{lang="EN-US"}[匹配。]{style="font-family:宋体"}
+只有证书中的相应属性与某属性组中的所有属性规则都匹配上，才认为该证书与此属性组匹配。如果证书中的某属性中没有包含属性规则中指定的属性域，或者不满足属性规则中的匹配条件，则认为该证书与此属性组不匹配。
 
-[[只有证书中的相应属性与某属性组中的所有属性规则都匹配上，才认为该证书与此属性组匹配。如果证书中的某属性中没有包含属性规则中指定的属性域，或者不满足属性规则中的匹配条件，则认为该证书与此属性组不匹配。]{style="font-family:宋体"}]{#struct_0_18308_19795_x566137061}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_835866875}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x1503141067}
+Sysname pki certificate attribute-group mygroup
 
-[\[Sysname\] pki certificate attribute-group mygroup]{lang="EN-US"}
+\# 创建证书属性规则1，定义证书主题名中的DN包含字符串abc。
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x2088215226}[创建证书属性规则]{style="font-family:宋体"}[1]{lang="EN-US"}[，定义证书主题名中的]{style="font-family:宋体"}[DN]{lang="EN-US"}[包含字符串]{style="font-family:宋体"}[abc]{lang="EN-US"}[。]{style="font-family:宋体"}
+Sysname-pki-cert-attribute-group-mygroup attribute 1 subject-name dn ctn abc
 
-[[\[Sysname-pki-cert-attribute-group-mygroup\] attribute 1 subject-name dn ctn abc]{lang="EN-US"}]{#struct_0_18308_19795_x83618541}
+\# 创建证书属性规则2，定义证书颁发者名中的FQDN不等于字符串abc。
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1800575754}[创建证书属性规则]{style="font-family:宋体"}[2]{lang="EN-US"}[，定义证书颁发者名中的]{style="font-family:宋体"}[FQDN]{lang="EN-US"}[不等于字符串]{style="font-family:宋体"}[abc]{lang="EN-US"}[。]{style="font-family:宋体"}
+Sysname-pki-cert-attribute-group-mygroup attribute 2 issuer-name fqdn nequ abc
 
-[[\[Sysname-pki-cert-attribute-group-mygroup\] attribute 2 issuer-name fqdn nequ abc]{lang="EN-US"}]{#struct_0_18308_19795_1896376907}
+\# 创建证书属性规则3，定义证书主题备用名中的IP地址不等于10.0.0.1。
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x2011151866}[创建证书属性规则]{style="font-family:宋体"}[3]{lang="EN-US"}[，定义证书主题备用名中的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址不等于]{style="font-family:宋体"}[10.0.0.1]{lang="EN-US"}[。]{style="font-family:宋体"}
+Sysname-pki-cert-attribute-group-mygroup attribute 3 alt-subject-name ip nequ 10.0.0.1
 
-[[\[Sysname-pki-cert-attribute-group-mygroup\] attribute 3 alt-subject-name ip nequ 10.0.0.1]{lang="EN-US"}]{#struct_0_18308_19795_x1067657755}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x407126072}
+·**display pki certificate attribute-group**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display pki certificate attribute-group]{lang="EN-US"}**]{#struct_0_18308_19795_1915017744}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[rule]{lang="EN-US"}**]{#struct_0_18308_19795_x391677500}
-
-::: {#1879658822 .myid}
-[]{#_Toc404793058}[]{#struct_0_18308_19795_x927229182}
+·**rule**
 
 **PKI \-- PKI配置命令 \-- ca identifier**
 
 ------------------------------------------------------------------------
 
-[**[ca identifier]{lang="EN-US"}**]{#struct_0_18308_19795_x83684077}[命令用来指定设备信任的]{style="font-family:宋体"}[CA]{lang="EN-US"}[的名称。]{style="font-family:宋体"}
+**[ca identifier**]命令用来指定设备信任的CA的名称。
 
-[**[undo ca identifier]{lang="EN-US"}**]{#struct_0_18308_19795_960160532}[命令用来删除设备信任的]{style="font-family:宋体"}[CA]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo ca identifier**]命令用来删除设备信任的CA。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1389590444}
+【命令】
 
-[**[ca identifier]{lang="EN-US"}**[ *name*]{lang="EN-US"}]{#struct_0_18308_19795_1791378038}
+**[ca identifier** *name*]
 
-[**[undo ca identifier]{lang="EN-US"}**]{#struct_0_18308_19795_x1210207244}
+**[undo ca identifier**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_1369758203}
+【缺省情况】
 
-[[未指定设备信任的]{style="font-family:宋体"}[CA]{lang="EN-US"}]{#struct_0_18308_19795_468692627}[。]{style="font-family:宋体"}
+未指定设备信任的CA。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x364754342}
+【视图】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x1220283441}[域视图]{style="font-family:宋体"}
+PKI域视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_x821790818}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x84142828}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_906737198}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_2100553370}
+【参数】
 
-[*[name]{lang="EN-US"}*]{#struct_0_18308_19795_x1542806798}[：设备信任的]{style="font-family:宋体"}[CA]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[name*]：设备信任的CA的名称，为1～63个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1900601575}
+【使用指导】
 
-[[获取]{style="font-family:宋体"}[CA]{lang="EN-US"}]{#struct_0_18308_19795_x1664628964}[证书时，必须指定信任的]{style="font-family:宋体"}[CA]{lang="EN-US"}[的名称，这个名称会被作为]{style="font-family:宋体"}[SCEP]{lang="EN-US"}[消息的一部分发送给]{style="font-family:宋体"}[CA]{lang="EN-US"}[服务器。但是一般情况下，]{style="font-family:宋体"}[CA]{lang="EN-US"}[服务器会忽略收到的]{style="font-family:宋体"}[SCEP]{lang="EN-US"}[消息中的]{style="font-family:宋体"}[CA]{lang="EN-US"}[名称的具体内容。但是如果在同一台服务器上配置了两个]{style="font-family:宋体"}[CA]{lang="EN-US"}[，且它们的]{style="font-family:宋体"}[URL]{lang="EN-US"}[是相同的，则服务器将根据]{style="font-family:宋体"}[SCEP]{lang="EN-US"}[消息中的]{style="font-family:宋体"}[CA]{lang="EN-US"}[名称选择对应的]{style="font-family:宋体"}[CA]{lang="EN-US"}[。因此，使用此命令指定的]{style="font-family:宋体"}[CA]{lang="EN-US"}[名称必须与希望获取的]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书对应的]{style="font-family:宋体"}[CA]{lang="EN-US"}[名称一致。]{style="font-family:宋体"}
+获取CA证书时，必须指定信任的CA的名称，这个名称会被作为SCEP消息的一部分发送给CA服务器。但是一般情况下，CA服务器会忽略收到的SCEP消息中的CA名称的具体内容。但是如果在同一台服务器上配置了两个CA，且它们的URL是相同的，则服务器将根据SCEP消息中的CA名称选择对应的CA。因此，使用此命令指定的CA名称必须与希望获取的CA证书对应的CA名称一致。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x632783647}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x1656465580}[指定设备信任的]{style="font-family:宋体"}[CA]{lang="EN-US"}[的名称为]{style="font-family:宋体"}[new-ca]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 指定设备信任的CA的名称为new-ca。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x84208364}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain aaa]{lang="EN-US"}
+Sysname pki domain aaa
 
-[\[Sysname-pki-domain-aaa\] ca identifier new-ca]{lang="EN-US"}
-:::
-
-::: {#783013567 .myid}
-[]{#_Toc404793059}[]{#struct_0_18308_19795_857316299}[]{#_Toc279490418}[]{#_Toc265512448}
+Sysname-pki-domain-aaa ca identifier new-ca
 
 **PKI \-- PKI配置命令 \-- certificate request entity**
 
 ------------------------------------------------------------------------
 
-[**[certificate request entity]{lang="EN-US"}**]{#struct_0_18308_19795_2067675117}[命令用来指定用于申请证书]{style="font-family:
-宋体"}[的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实]{style="font-family:宋体"}[体名称。]{style="font-family:宋体"}
+**[certificate request entity**]命令用来指定用于申请证书的PKI实体名称。
 
-[**[undo]{lang="EN-US"}**[ **certificate request entity**]{lang="EN-US"}]{#struct_0_18308_19795_x1399550315}[命令用来取消用于申请证书的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体名称。]{style="font-family:宋体"}
+**[undo** **certificate request entity**]命令用来取消用于申请证书的PKI实体名称。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_1215304434}
+【命令】
 
-[**[certificate request entity]{lang="EN-US"}**[ *entity-name*]{lang="EN-US"}]{#struct_0_18308_19795_730912695}
+**[certificate request entity** *entity-name*]
 
-[**[undo]{lang="EN-US"}**[ **certificate request entity**]{lang="EN-US"}]{#struct_0_18308_19795_1633481592}
+**[undo** **certificate request entity**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_1068408836}
+【缺省情况】
 
-[[未指定设备申请证书所使用的]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_1182248561}[实体名称。]{style="font-family:宋体"}
+未指定设备申请证书所使用的PKI实体名称。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1019030818}
+【视图】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x84273900}[域视图]{style="font-family:宋体"}
+PKI域视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1555748124}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_870794943}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x1582409713}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_1896238934}
+【参数】
 
-[*[entity-name]{lang="EN-US"}*]{#struct_0_18308_19795_771929108}[：用于申请证书的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+*[entity-name*]：用于申请证书的PKI实体的名称，为1～31个字符的字符串，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_x410945847}
+【使用指导】
 
-[[本命令用于在]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x1450889009}[域中指定申请证书的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体。]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体描述了申请证书的实体的各种属性（通用名、组织部门、组织、地理区域、省、国家、]{style="font-family:宋体"}[FQDN]{lang="EN-US"}[、]{style="font-family:宋体"}[IP]{lang="EN-US"}[），这些属性用于描述]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体的身份信息。]{style="font-family:宋体"}
+本命令用于在PKI域中指定申请证书的PKI实体。PKI实体描述了申请证书的实体的各种属性（通用名、组织部门、组织、地理区域、省、国家、FQDN、IP），这些属性用于描述PKI实体的身份信息。
 
-[[一个]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_318718753}[域中只能指定一个]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体名，新配置的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体名会覆盖已有的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体名。]{style="font-family:宋体"}
+一个PKI域中只能指定一个PKI实体名，新配置的PKI实体名会覆盖已有的PKI实体名。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x84339436}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x291881337}[指定申请证书的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体的名称为]{style="font-family:宋体"}[en1]{lang="FR"}[。]{style="font-family:宋体"}
+\# 指定申请证书的PKI实体的名称为en1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x748178929}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain aaa]{lang="EN-US"}
+Sysname pki domain aaa
 
-[\[Sysname-pki-domain-aaa\] certificate request entity en1]{lang="FR"}
+Sysname-pki-domain-aaa certificate request entity en1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x435243612}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pki entity]{lang="EN-US"}**]{#struct_0_18308_19795_1099716235}
-:::
-
-::: {#475422690 .myid}
-[]{#_Toc404793060}[]{#struct_0_18308_19795_x1548861051}
+·**pki entity**
 
 **PKI \-- PKI配置命令 \-- certificate request from**
 
 ------------------------------------------------------------------------
 
-[**[certificate request from]{lang="EN-US"}**]{#struct_0_18308_19795_x2129851945}[命令用来配置证书申请的注册受理机构。]{style="font-family:
-宋体"}
+**[certificate request from**]命令用来配置证书申请的注册受理机构。
 
-[**[undo]{lang="EN-US"}**[ **certificate request from**]{lang="EN-US"}]{#struct_0_18308_19795_1886077982}[命令用来删除指定的证书申请注册受理机构。]{style="font-family:宋体"}
+**[undo** **certificate request from**]命令用来删除指定的证书申请注册受理机构。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x586033861}
+【命令】
 
-[**[certificate request from ]{lang="EN-US"}**[{ **ca** \| **ra** }]{lang="EN-US"}]{#struct_0_18308_19795_x83880684}
+**[certificate request from **[{ **ca** \| **ra** }]]
 
-[**[undo certificate request from]{lang="EN-US"}**]{#struct_0_18308_19795_x1552221731}
+**[undo certificate request from**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_x736709637}
+【缺省情况】
 
-[[未指定证书申请的注册受理机构。]{style="font-family:宋体"}]{#struct_0_18308_19795_x584183057}
+未指定证书申请的注册受理机构。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x703737914}
+【视图】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x118403244}[域视图]{style="font-family:宋体"}
+PKI域视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_1971352784}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x581755304}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_1103268883}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x83946220}
+【参数】
 
-[**[ca]{lang="EN-US"}**]{#struct_0_18308_19795_397396937}[：表示实体从]{style="font-family:宋体"}[CA]{lang="EN-US"}[申请证书。]{style="font-family:宋体"}
+**[ca**]：表示实体从CA申请证书。
 
-[**[ra]{lang="EN-US"}**]{#struct_0_18308_19795_x263319054}[：表示实体从]{style="font-family:宋体"}[RA]{lang="EN-US"}[申请证书。]{style="font-family:宋体"}
+**[ra**]：表示实体从RA申请证书。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_1887498411}
+【使用指导】
 
-[[选择从]{style="font-family:宋体"}[CA]{lang="EN-US"}]{#struct_0_18308_19795_x1300573675}[还是]{style="font-family:宋体"}[RA]{lang="EN-US"}[申请证书，由]{style="font-family:宋体"}[CA]{lang="EN-US"}[服务器决定，需要了解]{style="font-family:宋体"}[CA]{lang="EN-US"}[服务器上由什么机构来受理证书申请。]{style="font-family:宋体"}
+选择从CA还是RA申请证书，由CA服务器决定，需要了解CA服务器上由什么机构来受理证书申请。
 
-[[推荐使用独立运行的]{style="font-family:宋体"}[RA]{lang="EN-US"}]{#struct_0_18308_19795_1605795014}[作为注册受理机构。]{style="font-family:宋体"}
+推荐使用独立运行的RA作为注册受理机构。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_1087924878}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x1143715654}[指定实体从]{style="font-family:宋体"}[RA]{lang="EN-US"}[申请证书。]{style="font-family:宋体"}
+\# 指定实体从RA申请证书。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_178647852}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain aaa]{lang="EN-US"}
+Sysname pki domain aaa
 
-[\[Sysname-pki-domain-aaa\] certificate request from ra]{lang="EN-US"}
-:::
-
-::: {#-367030232 .myid}
-[]{#_Toc404793061}[]{#struct_0_18308_19795_x84011756}
+Sysname-pki-domain-aaa certificate request from ra
 
 **PKI \-- PKI配置命令 \-- certificate request mode**
 
 ------------------------------------------------------------------------
 
-[**[certificate request mode]{lang="EN-US"}**]{#struct_0_18308_19795_205113790}[命令用来配置证书申请方式]{style="font-family:
-宋体"}[。]{style="font-family:宋体"}
+**[certificate request mode**]命令用来配置证书申请方式。
 
-[**[undo certificate request mode]{lang="EN-US"}**]{#struct_0_18308_19795_x522786830}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo certificate request mode**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_523966529}
+【命令】
 
-[**[certificate request mode]{lang="EN-US"}**[ { **auto** \[ **password** { **cipher** \| **simple** } *password* \] \| **manual** }]{lang="EN-US"}]{#struct_0_18308_19795_2134228429}
+**[certificate request mode**[ { **auto** [ **password** { **cipher** \| **simple** } *password* ] \| **manual** }]]
 
-[**[undo certificate request mode]{lang="EN-US"}**]{#struct_0_18308_19795_1926737198}
+**[undo certificate request mode**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_x122110243}
+【缺省情况】
 
-[[证书申请方式为手工方式。]{style="font-family:宋体"}]{#struct_0_18308_19795_x393740079}
+证书申请方式为手工方式。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x274782649}
+【视图】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_1832643540}[域视图]{style="font-family:宋体"}
+PKI域视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_x84077292}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x975820739}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_330040068}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x2048123932}
+【参数】
 
-[**[auto]{lang="EN-US"}**]{#struct_0_18308_19795_x569006606}[：表示用自动方式申请证书。]{style="font-family:宋体"}
+**[auto**]：表示用自动方式申请证书。
 
-[**[password]{lang="EN-US"}**]{#struct_0_18308_19795_x891560959}[：指定吊销证书时使用的口令。]{style="font-family:宋体"}
+**[password**]：指定吊销证书时使用的口令。
 
-[**[cipher]{lang="EN-US"}**]{#struct_0_18308_19795_712713739}[：表示以密文方式设置口令。]{style="font-family:宋体"}
+**[cipher**]：表示以密文方式设置口令。
 
-[**[simple]{lang="EN-US"}**]{#struct_0_18308_19795_x606100055}[：表示以明文方式设置口令。]{style="font-family:宋体"}
+**[simple**]：表示以明文方式设置口令。
 
-[*[password]{lang="EN-US"}*]{#struct_0_18308_19795_x170659623}[：设置的明文或密文口令，区分大小写。明文口令为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，密文口令为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[73]{lang="EN-US"}[个字符的字符串。]{style="font-family:宋体"}
+*[password*]：设置的明文或密文口令，区分大小写。明文口令为1～31个字符的字符串，密文口令为1～73个字符的字符串。
 
-[**[manual]{lang="EN-US"}**]{#struct_0_18308_19795_x83618540}[：表示用手工方式申请证书。]{style="font-family:宋体"}
+**[manual**]：表示用手工方式申请证书。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_1800575753}
+【使用指导】
 
-[[两种申请方式都属于在线申请，具体情况如下：]{style="font-family:宋体"}]{#struct_0_18308_19795_1896573515}
+两种申请方式都属于在线申请，具体情况如下：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果是自动方式，则设备会在与]{style="font-family:宋体"}]{#struct_0_18308_19795_x476513734}[PKI]{lang="EN-US"}[域关联的应用（例如]{style="font-family:宋体"}[IKE]{lang="EN-US"}[）需要做身份认证时，自动向证书注册机构发起获取]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书和申请本地证书的操作。自动方式下，可以指定吊销证书时使用的口令，是否需要指定口令是由]{style="font-family:宋体"}[CA]{lang="EN-US"}[服务器的策略决定的。]{style="font-family:宋体"}
+·如果是自动方式，则设备会在与PKI域关联的应用（例如IKE）需要做身份认证时，自动向证书注册机构发起获取CA证书和申请本地证书的操作。自动方式下，可以指定吊销证书时使用的口令，是否需要指定口令是由CA服务器的策略决定的。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果为手工方式，则需要手工完成获取]{style="font-family:宋体"}]{#struct_0_18308_19795_x1947764998}[CA]{lang="EN-US"}[证书、申请本地证书的操作。]{style="font-family:宋体"}
+·如果为手工方式，则需要手工完成获取CA证书、申请本地证书的操作。
 
-[[以明文或密文方式设置的口令，均以密文的方式保存在配置文件中。]{style="font-family:宋体"}]{#struct_0_18308_19795_961628016}
+以明文或密文方式设置的口令，均以密文的方式保存在配置文件中。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x843111696}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x740391585}[指定证书申请方式为自动方式。]{style="font-family:宋体"}
+\# 指定证书申请方式为自动方式。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x83684076}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain aaa]{lang="EN-US"}
+Sysname pki domain aaa
 
-[\[Sysname-pki-domain-aaa\] certificate request mode auto]{lang="FR"}
+Sysname-pki-domain-aaa certificate request mode auto
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_960160533}[指定证书申请方式为自动方式，并设置吊销证书时使用的口令为明文]{style="font-family:宋体"}[123456]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 指定证书申请方式为自动方式，并设置吊销证书时使用的口令为明文123456。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x1389590443}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain aaa]{lang="EN-US"}
+Sysname pki domain aaa
 
-[\[Sysname-pki-domain-aaa\] certificate request mode auto password simple 123456]{lang="EN-US"}
+Sysname-pki-domain-aaa certificate request mode auto password simple 123456
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_225294097}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pki request-certificate]{lang="EN-US"}**]{#struct_0_18308_19795_1116411712}
-:::
-
-::: {#-362160121 .myid}
-[]{#_Toc404793062}[]{#struct_0_18308_19795_2102628357}
+·**pki request-certificate**
 
 **PKI \-- PKI配置命令 \-- certificate request polling**
 
 ------------------------------------------------------------------------
 
-[**[certificate request polling]{lang="EN-US"}**]{#struct_0_18308_19795_x1700938616}[命令用来配置证书申请状态的查询周期和最大次数。]{style="font-family:
-宋体"}
+**[certificate request polling**]命令用来配置证书申请状态的查询周期和最大次数。
 
-[**[undo certificate request polling]{lang="EN-US"}**]{#struct_0_18308_19795_112990191}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo certificate request polling**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1230657707}
+【命令】
 
-[**[certificate request polling ]{lang="EN-US"}**[{ **count** *count* \| **interval** *minutes* }]{lang="EN-US"}]{#struct_0_18308_19795_x2000100134}
+**[certificate request polling **[{ **count** *count* \| **interval** *minutes* }]]
 
-[**[undo certificate request ]{lang="EN-US"}[polling]{lang="EN-US"}**[ { **count** \| **interval** }]{lang="EN-US"}]{#struct_0_18308_19795_1653328706}
+**[undo certificate request polling**[ { **count** \| **interval** }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_x778712565}
+【缺省情况】
 
-[[证书申请状态的查询周期为]{style="font-family:宋体"}[20]{lang="EN-US"}]{#struct_0_18308_19795_x889394215}[分钟，最多查询]{style="font-family:宋体"}[50]{lang="EN-US"}[次。]{style="font-family:宋体"}
+证书申请状态的查询周期为20分钟，最多查询50次。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1168894218}
+【视图】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x172894700}[域视图]{style="font-family:宋体"}
+PKI域视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_x67185297}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_1864756279}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x1552019692}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_309227036}
+【参数】
 
-[**[count]{lang="EN-US"}***[ count]{lang="EN-US"}*]{#struct_0_18308_19795_x2000034598}[：表示证书申请状态的查询次数，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[100]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[count*** count*]：表示证书申请状态的查询次数，取值范围为1～100。
 
-[**[interval]{lang="EN-US"}***[ minutes]{lang="EN-US"}*]{#struct_0_18308_19795_x726703801}[：表示证书申请状态的查询周期，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[168]{lang="EN-US"}[，单位为分钟。]{style="font-family:宋体"}
+**[interval*** minutes*]：表示证书申请状态的查询周期，取值范围为5～168，单位为分钟。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_1699962699}
+【使用指导】
 
-[[设备发送证书申请后，如果]{style="font-family:宋体"}[CA]{lang="EN-US"}]{#struct_0_18308_19795_x757764522}[服务器采用手工方式来签发证书申请，则不会立刻响应设备的申请。这种情况下，设备通过定期向]{style="font-family:宋体"}[CA]{lang="EN-US"}[服务器发送状态查询消息，能够及时获取到被]{style="font-family:宋体"}[CA]{lang="EN-US"}[签发的证书。]{style="font-family:宋体"}[CA]{lang="EN-US"}[签发证书后，设备将通过发送状态查询得到证书，之后停止发送状态查询消息。如果达到最大查询次数时，]{style="font-family:宋体"}[CA]{lang="EN-US"}[服务器仍未签发证书，则设备停止发送状态查询消息，本次证书申请失败。]{style="font-family:宋体"}
+设备发送证书申请后，如果CA服务器采用手工方式来签发证书申请，则不会立刻响应设备的申请。这种情况下，设备通过定期向CA服务器发送状态查询消息，能够及时获取到被CA签发的证书。CA签发证书后，设备将通过发送状态查询得到证书，之后停止发送状态查询消息。如果达到最大查询次数时，CA服务器仍未签发证书，则设备停止发送状态查询消息，本次证书申请失败。
 
-[[如果]{style="font-family:宋体"}[CA]{lang="EN-US"}]{#struct_0_18308_19795_x10149827}[服务器采用自动签发证书的方式，则设备可以立刻得到证书，这种情况下设备不会向]{style="font-family:宋体"}[CA]{lang="EN-US"}[服务器发送状态查询消息。]{style="font-family:宋体"}
+如果CA服务器采用自动签发证书的方式，则设备可以立刻得到证书，这种情况下设备不会向CA服务器发送状态查询消息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_744724031}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1771252237}[指定证书申请状态的查询周期为]{style="font-family:宋体"}[15]{lang="EN-US"}[分钟，最多查询]{style="font-family:宋体"}[40]{lang="EN-US"}[次。]{style="font-family:宋体"}
+\# 指定证书申请状态的查询周期为15分钟，最多查询40次。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_1589321341}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain aaa]{lang="EN-US"}
+Sysname pki domain aaa
 
-[\[Sysname-pki-domain-aaa\] certificate request polling interval 15]{lang="EN-US"}
+Sysname-pki-domain-aaa certificate request polling interval 15
 
-[\[Sysname-pki-domain-aaa\] certificate request polling count 40]{lang="EN-US"}
+Sysname-pki-domain-aaa certificate request polling count 40
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1999969062}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display pki certificate request-status]{lang="EN-US"}**]{#struct_0_18308_19795_x35419129}
-:::
-
-::: {#-1354896552 .myid}
-[]{#_Toc404793063}[]{#struct_0_18308_19795_1538030948}
+·**display pki certificate request-status**
 
 **PKI \-- PKI配置命令 \-- certificate request url**
 
 ------------------------------------------------------------------------
 
-[**[certificate request url]{lang="EN-US"}**]{#struct_0_18308_19795_953881886}[命令用来配置实体通过]{style="font-family:宋体"}[SCEP]{lang="EN-US"}[进行证书申请的注册受理机构服务器的]{style="font-family:宋体"}[URL]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[certificate request url**]命令用来配置实体通过SCEP进行证书申请的注册受理机构服务器的URL。
 
-[**[undo certificate request url]{lang="EN-US"}**]{#struct_0_18308_19795_x1032333176}[命令用来删除指定的注册受理机构服务器的]{style="font-family:宋体"}[URL]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo certificate request url**]命令用来删除指定的注册受理机构服务器的URL。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x2098801793}
+【命令】
 
-[**[certificate request url]{lang="EN-US"}**[ *url-string* \[ **vpn-instance** *vpn-instance-name* \]]{lang="EN-US"}]{#struct_0_18308_19795_1636701103}
+**[certificate request url** *url-string* [ **vpn-instance** *vpn-instance-name* ]]
 
-[**[undo certificate request url]{lang="EN-US"}**]{#struct_0_18308_19795_461152286}
+**[undo certificate request url**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1576663276}
+【缺省情况】
 
-[[未指定注册受理机构服务器的]{style="font-family:宋体"}[URL]{lang="EN-US"}]{#struct_0_18308_19795_1900224605}[。]{style="font-family:宋体"}
+未指定注册受理机构服务器的URL。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1999903526}
+【视图】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_2118675094}[域视图]{style="font-family:宋体"}
+PKI域视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_1535923888}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x1791129450}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x306322753}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x2071132208}
+【参数】
 
-[*[url-string]{lang="EN-US"}*]{#struct_0_18308_19795_x1719151034}[：表示证书申请的注册受理机构服务器的]{style="font-family:宋体"}[URL]{lang="EN-US"}[，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[511]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[url-string*]：表示证书申请的注册受理机构服务器的URL，为1～511个字符的字符串，区分大小写。
 
-[**[vpn-instance]{lang="EN-US"}***[ vpn-instance-name]{lang="EN-US"}*]{#struct_0_18308_19795_2145468410}[：指定注册受理机构服务器所属的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[。]{style="font-family:宋体"}*[vpn-instance-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。若未指定本参数，则表示该注册受理机构服务器属于公网。]{style="font-family:宋体"}
+**[vpn-instance*** vpn-instance-name*]：指定注册受理机构服务器所属的VPN。*vpn-instance-name*表示MPLS L3VPN实例名称，为1～31个字符的字符串，区分大小写。若未指定本参数，则表示该注册受理机构服务器属于公网。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_1116265650}
+【使用指导】
 
-[[本命令配置的]{style="font-family:宋体"}[URL]{lang="EN-US"}]{#struct_0_18308_19795_x2000362278}[内容包括注册受理机构服务器的位置及]{style="font-family:宋体"}[CGI]{lang="EN-US"}[命令接口脚本位置，格式为]{style="font-family:宋体"}[http://*server_location/cgi_script_location*]{lang="EN-US"}[。其中，]{style="font-family:宋体"}*[server_location]{lang="EN-US"}*[是服务器的地址，可以是]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址、]{style="font-family:宋体"}[ IPv6]{lang="EN-US"}[地址和]{style="font-family:宋体"}[DNS]{lang="EN-US"}[域名，]{style="font-family:宋体"}*[cgi_script_location]{lang="EN-US"}*[是注册授权机构（]{style="font-family:宋体"}[CA]{lang="EN-US"}[或]{style="font-family:宋体"}[RA ]{lang="EN-US"}[）在服务器主机上的应用程序脚本的路径。]{style="font-family:宋体"}
+本命令配置的URL内容包括注册受理机构服务器的位置及CGI命令接口脚本位置，格式为http://*server_location/cgi_script_location*。其中，*server_location*是服务器的地址，可以是IPv4地址、 IPv6地址和DNS域名，*cgi_script_location*是注册授权机构（CA或RA ）在服务器主机上的应用程序脚本的路径。
 
-[[实际可输入的]{style="font-family:宋体"}[URL]{lang="EN-US"}]{#struct_0_18308_19795_29971071}[长度受命令行允许输入的最大字符数限制。]{style="font-family:宋体"}
+实际可输入的URL长度受命令行允许输入的最大字符数限制。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_601734441}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x399984280}[指定实体]{style="font-family:宋体"}[进行证书申请的注册受理机构服务器的]{style="font-family:
-宋体"}[URL]{lang="EN-US"}[为]{style="font-family:
-宋体"}[http://169.254.0.100/certsrv/mscep/mscep.dll]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 指定实体进行证书申请的注册受理机构服务器的URL为http://169.254.0.100/certsrv/mscep/mscep.dll。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x753665794}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain aaa]{lang="EN-US"}
+Sysname pki domain aaa
 
-[\[Sysname-pki-domain-aaa\] certificate request url http://169.254.0.100/certsrv/mscep/mscep.dll]{lang="EN-US"}
+Sysname-pki-domain-aaa certificate request url http://169.254.0.100/certsrv/mscep/mscep.dll
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x2127713332}[指定实体向]{style="font-family:宋体"}[VPN]{lang="EN-US"}[中的注册受理机构服务器申请证书，该服务器的]{style="font-family:宋体"}[URL]{lang="EN-US"}[为]{style="font-family:宋体"}[http://mytest.net/certsrv/mscep/mscep.dll]{lang="EN-US"}[，所在的]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[的实例名称为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 指定实体向VPN中的注册受理机构服务器申请证书，该服务器的URL为http://mytest.net/certsrv/mscep/mscep.dll，所在的MPLS L3VPN的实例名称为vpn1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x535056561}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain aaa]{lang="EN-US"}
+Sysname pki domain aaa
 
-[\[Sysname-pki-domain-aaa\] certificate request url http:// mytest.net /certsrv/mscep/mscep.dll vpn-instance vpn1]{lang="EN-US"}
-:::
-
-::: {#1267752382 .myid}
-[]{#_Toc404793064}[]{#struct_0_18308_19795_x1434060682}[]{#_Toc279490534}[]{#_Toc279082863}[]{#_Toc265512453}[]{#_Toc61836613}[]{#_Toc286333932}[]{#_Toc286333933}
+Sysname-pki-domain-aaa certificate request url http:// mytest.net /certsrv/mscep/mscep.dll vpn-instance vpn1
 
 **PKI \-- PKI配置命令 \-- common-name**
 
 ------------------------------------------------------------------------
 
-[**[common-name]{lang="EN-US"}**]{#struct_0_18308_19795_x2000296742}[命令用来配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体的通用名，比如用户名称。]{style="font-family:宋体"}
+**[common-name**]命令用来配置PKI实体的通用名，比如用户名称。
 
-[**[undo common-name]{lang="EN-US"}**]{#struct_0_18308_19795_910566153}[命令用来删除配置的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体的通用名。]{style="font-family:宋体"}
+**[undo common-name**]命令用来删除配置的PKI实体的通用名。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_1711781352}
+【命令】
 
-[**[common-name ]{lang="EN-US"}***[common-name-sting]{lang="EN-US"}*]{#struct_0_18308_19795_531730467}
+**[common-name ***common-name-sting*]
 
-[**[undo common-name]{lang="EN-US"}**]{#struct_0_18308_19795_x1126185289}
+**[undo common-name**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_1585035017}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x704856455}[实体的通用名。]{style="font-family:宋体"}
+未配置PKI实体的通用名。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_1266342680}
+【视图】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_1569340701}[实体视图]{style="font-family:宋体"}
+PKI实体视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_1880445934}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x2000231206}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_1384698688}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x2099129760}
+【参数】
 
-[*[common-name-sting]{lang="EN-US"}*]{#struct_0_18308_19795_x1866035459}[：]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体的通用名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写，不能包含逗号。]{style="font-family:宋体"}
+*[common-name-sting*]：PKI实体的通用名称，为1～63个字符的字符串，区分大小写，不能包含逗号。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x709867026}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_579030968}[配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体]{style="font-family:宋体"}[en]{lang="EN-US"}[的通用名为]{style="font-family:宋体"}[test]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置PKI实体en的通用名为test。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x1560531360}
+\<Sysname\> system-view
 
-[\[Sysname\] pki entity en]{lang="EN-US"}
+Sysname pki entity en
 
-[\[Sysname-pki-entity-en\] common-name test]{lang="EN-US"}
-:::
-
-::: {#717170147 .myid}
-[]{#_Toc404793065}[]{#struct_0_18308_19795_545146657}[]{#_Toc279490535}[]{#_Toc279082864}[]{#_Toc265512454}[]{#_Toc61836614}
+Sysname-pki-entity-en common-name test
 
 **PKI \-- PKI配置命令 \-- country**
 
 ------------------------------------------------------------------------
 
-[**[country]{lang="EN-US"}**]{#struct_0_18308_19795_x2000165670}[命令用来配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体所属的国家代码。]{style="font-family:宋体"}
+**[country**]命令用来配置PKI实体所属的国家代码。
 
-[**[undo country]{lang="EN-US"}**]{#struct_0_18308_19795_x196432477}[命令用来删除配置的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体所属的国家代码。]{style="font-family:宋体"}
+**[undo country**]命令用来删除配置的PKI实体所属的国家代码。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x788775692}
+【命令】
 
-[**[country ]{lang="EN-US"}***[country-code-string]{lang="EN-US"}*]{#struct_0_18308_19795_x1927377894}
+**[country ***country-code-string*]
 
-[**[undo country]{lang="EN-US"}**]{#struct_0_18308_19795_1721251024}
+**[undo country**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_2033952954}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x1187647358}[实体所属的国家代码。]{style="font-family:宋体"}
+未配置PKI实体所属的国家代码。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1553063320}
+【视图】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x2010576651}[实体视图]{style="font-family:宋体"}
+PKI实体视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_905662713}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x1999575846}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x60732452}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x162872438}
+【参数】
 
-[*[country-code-string]{lang="EN-US"}*]{#struct_0_18308_19795_x946468097}[：]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体所属的国家代码，为标准的两字符代码，区分大小写，例如中国为]{style="font-family:宋体"}[CN]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[country-code-string*]：PKI实体所属的国家代码，为标准的两字符代码，区分大小写，例如中国为CN。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_331265581}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x1255515467}[配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体]{style="font-family:宋体"}[en]{lang="EN-US"}[所属的国家代码为]{style="font-family:宋体"}[CN]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置PKI实体en所属的国家代码为CN。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_973576075}
+\<Sysname\> system-view
 
-[\[Sysname\] pki entity en]{lang="EN-US"}
+Sysname pki entity en
 
-[\[Sysname-pki-entity-en\] country CN]{lang="EN-US"}
-:::
-
-::: {#-975631424 .myid}
-[]{#_Toc404793066}[]{#struct_0_18308_19795_x49990948}
+Sysname-pki-entity-en country CN
 
 **PKI \-- PKI配置命令 \-- crl check**
 
 ------------------------------------------------------------------------
 
-[**[crl check enable]{lang="EN-US"}**]{#struct_0_18308_19795_1359744287}[命令用来使能]{style="font-family:宋体"}[CRL]{lang="EN-US"}[检查。]{style="font-family:宋体"}
+**[crl check enable**]命令用来使能CRL检查。
 
-[**[undo crl check enable]{lang="EN-US"}**]{#struct_0_18308_19795_x1999510310}[命令用来禁止]{style="font-family:宋体"}[CRL]{lang="EN-US"}[检查。]{style="font-family:宋体"}
+**[undo crl check enable**]命令用来禁止CRL检查。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1254230145}
+【命令】
 
-[**[crl check enable]{lang="EN-US"}**]{#struct_0_18308_19795_x50676123}
+**[crl check enable**]
 
-[**[undo crl check enable]{lang="EN-US"}**]{#struct_0_18308_19795_x1411291620}
+**[undo crl check enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1439328599}
+【缺省情况】
 
-[[CRL]{lang="EN-US"}]{#struct_0_18308_19795_1787813032}[检查处于使能状态。]{style="font-family:宋体"}
+CRL检查处于使能状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_222757329}
+【视图】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x174095030}[域视图]{style="font-family:宋体"}
+PKI域视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_x189636755}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x1870582171}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x2000100133}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1882123703}
+【使用指导】
 
-[[CRL]{lang="EN-US"}]{#struct_0_18308_19795_2099162827}[（]{style="font-family:宋体"}[Certificate Revocation List]{lang="EN-US"}[，证书废除列表）是一个由]{style="font-family:宋体"}[CA]{lang="EN-US"}[签发的文件，该文件中包含被该]{style="font-family:宋体"}[CA]{lang="EN-US"}[吊销的所有证书的列表。一个证书有可能在有效期达到之前被]{style="font-family:宋体"}[CA]{lang="EN-US"}[吊销。使能]{style="font-family:宋体"}[CRL]{lang="EN-US"}[检查的目的是查看设备上的实体证书或者即将要导入、获取到设备上的实体证书是否已经被]{style="font-family:宋体"}[CA]{lang="EN-US"}[吊销，若检查结果表明实体证书已被吊销，那么该证书就不被设备信任。]{style="font-family:宋体"}
+CRL（Certificate Revocation List，证书废除列表）是一个由CA签发的文件，该文件中包含被该CA吊销的所有证书的列表。一个证书有可能在有效期达到之前被CA吊销。使能CRL检查的目的是查看设备上的实体证书或者即将要导入、获取到设备上的实体证书是否已经被CA吊销，若检查结果表明实体证书已被吊销，那么该证书就不被设备信任。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_1556570771}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x300800918}[禁止]{style="font-family:宋体"}[CRL]{lang="EN-US"}[检查。]{style="font-family:宋体"}
+\# 禁止CRL检查。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x89198107}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain aaa]{lang="EN-US"}
+Sysname pki domain aaa
 
-[\[Sysname-pki-domain-aaa\] undo crl check enable]{lang="EN-US"}
+Sysname-pki-domain-aaa undo crl check enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_1883746794}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pki import]{lang="EN-US"}**]{#struct_0_18308_19795_x1539284928}
+·**pki import**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pki retrieve-certificate]{lang="EN-US"}**]{#struct_0_18308_19795_x2000034597}
+·**pki retrieve-certificate**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pki validate-certificate]{lang="EN-US"}**]{#struct_0_18308_19795_483149780}
-:::
-
-::: {#-1027135824 .myid}
-[]{#_Toc404793067}[]{#struct_0_18308_19795_652190411}
+·**pki validate-certificate**
 
 **PKI \-- PKI配置命令 \-- crl url**
 
 ------------------------------------------------------------------------
 
-[**[crl url]{lang="EN-US"}**]{#struct_0_18308_19795_x911457130}[命令用来设置]{style="font-family:宋体"}[CRL]{lang="EN-US"}[发布点的]{style="font-family:宋体"}[URL]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[crl url**]命令用来设置CRL发布点的URL。
 
-[**[undo crl url]{lang="EN-US"}**]{#struct_0_18308_19795_x2081077447}[命令用来删除]{style="font-family:宋体"}[CRL]{lang="EN-US"}[发布点的]{style="font-family:宋体"}[URL]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo crl url**]命令用来删除CRL发布点的URL。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x588247814}
+【命令】
 
-[**[crl url ]{lang="EN-US"}***[url-string ]{lang="EN-US"}*[\[ **vpn-instance** *vpn-instance-name* \]]{lang="EN-US"}]{#struct_0_18308_19795_x245063143}
+**[crl url ***url-string * **vpn-instance** *vpn-instance-name* ]
 
-[**[undo crl url]{lang="EN-US"}**]{#struct_0_18308_19795_x710370357}
+**[undo crl url**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_2059391574}
+【缺省情况】
 
-[[未设置]{style="font-family:宋体"}[CRL]{lang="EN-US"}]{#struct_0_18308_19795_822453071}[发布点的]{style="font-family:宋体"}[URL]{lang="EN-US"}[。]{style="font-family:宋体"}
+未设置CRL发布点的URL。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1999969061}
+【视图】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_1530664812}[域视图]{style="font-family:宋体"}
+PKI域视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_434061933}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x721467121}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x1473540930}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x2008084394}
+【参数】
 
-[*[url-string]{lang="EN-US"}*]{#struct_0_18308_19795_1061096580}[：表示]{style="font-family:宋体"}[CRL]{lang="EN-US"}[发布点的]{style="font-family:宋体"}[URL]{lang="EN-US"}[，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[511]{lang="EN-US"}[个字符的字符串，区分大小写。格式为]{style="font-family:宋体"}[ldap://*server_location*]{lang="EN-US"}[或]{style="font-family:宋体"}[http://*server_location*]{lang="EN-US"}[，其中]{style="font-family:宋体"}*[server_location]{lang="EN-US"}*[可以为]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址和]{style="font-family:宋体"}[DNS]{lang="EN-US"}[域名。]{style="font-family:宋体"}
+*[url-string*]：表示CRL发布点的URL，为1～511个字符的字符串，区分大小写。格式为ldap://*server_location*或http://*server_location*，其中*server_location*可以为IP地址和DNS域名。
 
-[**[vpn-instance]{lang="EN-US"}***[ vpn-instance-name]{lang="EN-US"}*]{#struct_0_18308_19795_x242675866}[：指定]{style="font-family:宋体"}[CRL]{lang="EN-US"}[发布点所属的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[。]{style="font-family:宋体"}*[vpn-instance-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。若未指定本参数，则表示该]{style="font-family:宋体"}[CRL]{lang="EN-US"}[发布点属于公网。]{style="font-family:宋体"}
+**[vpn-instance*** vpn-instance-name*]：指定CRL发布点所属的VPN。*vpn-instance-name*表示MPLS L3VPN实例名称，为1～31个字符的字符串，区分大小写。若未指定本参数，则表示该CRL发布点属于公网。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_x2117094463}
+【使用指导】
 
-[[如果]{style="font-family:宋体"}[CRL]{lang="EN-US"}]{#struct_0_18308_19795_701135493}[检查处于使能状态，则进行]{style="font-family:宋体"}[CRL]{lang="EN-US"}[检查之前，需要首先从]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域指定的]{style="font-family:宋体"}[CRL]{lang="EN-US"}[发布点获取]{style="font-family:宋体"}[CRL]{lang="EN-US"}[。若]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中未配置]{style="font-family:宋体"}[CRL]{lang="EN-US"}[发布点的]{style="font-family:宋体"}[URL]{lang="EN-US"}[时，从该待验证的证书中获取发布点信息：优先获取待验证的证书中记录的发布点，如果待验证的证书中没有记录发布点，则获取]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书中记录的发布点（若待验证的证书为]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书，则获取上一级]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书中记录的发布点）。如果无法通过任何途径得到发布点，则通过]{style="font-family:宋体"}[SCEP]{lang="EN-US"}[协议获取]{style="font-family:宋体"}[CRL]{lang="EN-US"}[。]{style="font-family:宋体"}
+如果CRL检查处于使能状态，则进行CRL检查之前，需要首先从PKI域指定的CRL发布点获取CRL。若PKI域中未配置CRL发布点的URL时，从该待验证的证书中获取发布点信息：优先获取待验证的证书中记录的发布点，如果待验证的证书中没有记录发布点，则获取CA证书中记录的发布点（若待验证的证书为CA证书，则获取上一级CA证书中记录的发布点）。如果无法通过任何途径得到发布点，则通过SCEP协议获取CRL。
 
-[[若配置了]{style="font-family:宋体"}[LDAP]{lang="EN-US"}]{#struct_0_18308_19795_x1999903525}[格式的]{style="font-family:宋体"}[CRL]{lang="EN-US"}[发布点]{style="font-family:宋体"}[URL]{lang="EN-US"}[，则表示要通过]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[协议获取]{style="font-family:宋体"}[CRL]{lang="EN-US"}[。若该]{style="font-family:宋体"}[URL]{lang="EN-US"}[中未携带主机名，则需要根据]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中配置的]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[服务器地址信息来得到完整的]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[发布点]{style="font-family:宋体"}[URL]{lang="EN-US"}[。]{style="font-family:宋体"}
+若配置了LDAP格式的CRL发布点URL，则表示要通过LDAP协议获取CRL。若该URL中未携带主机名，则需要根据PKI域中配置的LDAP服务器地址信息来得到完整的LDAP发布点URL。
 
-[[实际可输入的]{style="font-family:宋体"}[URL]{lang="EN-US"}]{#struct_0_18308_19795_1715390567}[长度受命令行允许输入的最大字符数限制。]{style="font-family:宋体"}
+实际可输入的URL长度受命令行允许输入的最大字符数限制。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x122878647}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x807033168}[指定]{style="font-family:宋体"}[CRL]{lang="EN-US"}[发布点的]{style="font-family:宋体"}[URL]{lang="EN-US"}[为]{style="font-family:宋体"}[http://169.254.0.30]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 指定CRL发布点的URL为http://169.254.0.30。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_767327201}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain aaa]{lang="EN-US"}
+Sysname pki domain aaa
 
-[\[Sysname-pki-domain-aaa\] crl url http://169.254.0.30]{lang="EN-US"}
+Sysname-pki-domain-aaa crl url http://169.254.0.30
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1709900917}[指定]{style="font-family:宋体"}[CRL]{lang="EN-US"}[发布点的]{style="font-family:宋体"}[URL]{lang="EN-US"}[为]{style="font-family:宋体"}[ldap://169.254.0.30]{lang="EN-US"}[，所在的]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[的实例名称为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 指定CRL发布点的URL为ldap://169.254.0.30，所在的MPLS L3VPN的实例名称为vpn1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_192619201}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain 1]{lang="EN-US"}
+Sysname pki domain 1
 
-[\[Sysname-pki-domain-1\] crl url ldap://169.254.0.30 vpn-instance vpn1]{lang="EN-US"}
+Sysname-pki-domain-1 crl url ldap://169.254.0.30 vpn-instance vpn1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_1442323704}[]{#_Toc279416407}[]{#_Toc257792951}[]{#_Toc168802556}[]{#_Toc124237068}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ldap-server]{lang="EN-US"}**]{#struct_0_18308_19795_x2000362277}
+·**ldap-server**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pki retrieve-crl]{lang="EN-US"}**]{#struct_0_18308_19795_2046393706}
-:::
-
-::: {#670665270 .myid}
-[]{#_Toc404793068}[]{#struct_0_18308_19795_430555671}[]{#_Toc279163109}[]{#_Toc265512459}
+·**pki retrieve-crl**
 
 **PKI \-- PKI配置命令 \-- display pki certificate access-control-policy**
 
 ------------------------------------------------------------------------
 
-[**[display pki certificate access-control-policy]{lang="EN-US"}**]{#struct_0_18308_19795_396097599}[命令用来显示证书访问控制策略的配置信息。]{style="font-family:宋体"}
+**[display pki certificate access-control-policy**]命令用来显示证书访问控制策略的配置信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_458723635}
+【命令】
 
-[**[display pki certificate access-control-policy]{lang="EN-US"}**[ \[ *policy-name* \]]{lang="EN-US"}]{#struct_0_18308_19795_1541688289}
+**[display pki certificate access-control-policy** [ *policy-name* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x106829709}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_18308_19795_x1967191207}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_x939989764}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x2000296741}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_18308_19795_507281626}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x245899717}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_18308_19795_1941056324}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1194948554}
+【参数】
 
-[*[policy-name]{lang="EN-US"}*]{#struct_0_18308_19795_x528836215}[：指定证书访问控制策略名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+*[policy-name*]：指定证书访问控制策略名称，为1～31个字符的字符串，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1469114202}
+【使用指导】
 
-[[若不指定证书访问控制策略的名称，则显示所有证书访问控制策略的配置信息。]{style="font-family:宋体"}]{#struct_0_18308_19795_x1656260990}
+若不指定证书访问控制策略的名称，则显示所有证书访问控制策略的配置信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x99735141}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1684517162}[显示证书]{style="font-family:宋体"}[访问控制策略]{style="font-family:
-宋体"}[mypolicy]{lang="EN-US"}[的配置信息。]{style="font-family:宋体"}
+\# 显示证书访问控制策略mypolicy的配置信息。
 
-[[\<Sysname\> display pki certificate access-control-policy mypolicy]{lang="EN-US"}]{#struct_0_18308_19795_x2000231205}
+\<Sysname\> display pki certificate access-control-policy mypolicy
 
-[ Access control policy name: mypolicy]{lang="EN-US"}
+ Access control policy name: mypolicy
 
-[     Rule 1  deny    mygroup1]{lang="EN-US"}
+     Rule 1  deny    mygroup1
 
-[     Rule 2  permit  mygroup2]{lang="EN-US"}
+     Rule 2  permit  mygroup2
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x1344184667}[显示所有证书属性]{style="font-family:宋体"}[访问控制策略的配置信息。]{style="font-family:
-宋体"}
+\# 显示所有证书属性访问控制策略的配置信息。
 
-[[\<Sysname\> display pki certificate access-control-policy]{lang="EN-US"}]{#struct_0_18308_19795_x301801441}
+\<Sysname\> display pki certificate access-control-policy
 
-[ Total PKI certificate access control policies: 2]{lang="EN-US"}
+ Total PKI certificate access control policies: 2
 
-[ Access control policy name: mypolicy1]{lang="EN-US"}
+ Access control policy name: mypolicy1
 
-[     Rule 1  deny    mygroup1]{lang="EN-US"}
+     Rule 1  deny    mygroup1
 
-[     Rule 2  permit  mygroup2]{lang="EN-US"}
+     Rule 2  permit  mygroup2
 
-[ Access control policy name: mypolicy2]{lang="EN-US"}
+ Access control policy name: mypolicy2
 
-[     Rule 1  deny    mygroup3]{lang="EN-US"}
+     Rule 1  deny    mygroup3
 
-[     Rule 2  permit  mygroup4]{lang="EN-US"}
+     Rule 2  permit  mygroup4
 
-[[表1-2 ]{lang="EN-US"}[display pki certificate access-control-policy]{lang="EN-US"}]{#struct_0_18308_19795_1850304125}[命令显示信息描述表]{style="font-family:黑体"}
+表1-2 display pki certificate access-control-policy命令显示信息描述表
 
-[]{#table_struct_0_1970081916}[[字段]{style="font-family:黑体"}]{#struct_0_18308_19795_702567114}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_18308_19795_868060619}
+描述
 
-[[Total PKI certificate access control policies]{lang="EN-US"}]{#struct_0_18308_19795_x2000165669}
+Total PKI certificate access control policies
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_1725816288}[证书访问控制策略的总数]{style="font-family:宋体"}
+PKI证书访问控制策略的总数
 
-[[Access control policy name]{lang="EN-US"}]{#struct_0_18308_19795_x932492887}
+Access control policy name
 
-[[证书访问控制策略名]{style="font-family:宋体"}]{#struct_0_18308_19795_682740689}
+证书访问控制策略名
 
-[[Rule *number*]{lang="EN-US"}]{#struct_0_18308_19795_1624714410}
+Rule *number*
 
-[[访问控制规则编号]{style="font-family:宋体"}]{#struct_0_18308_19795_2011586833}
+访问控制规则编号
 
-[[permit]{lang="EN-US"}]{#struct_0_18308_19795_x1999575845}
+permit
 
-[[当证书的属性与属性组里定义的属性匹配时，认为该证书有效，通过了访问控制策略的检测]{style="font-family:宋体"}]{#struct_0_18308_19795_x1626816393}
+当证书的属性与属性组里定义的属性匹配时，认为该证书有效，通过了访问控制策略的检测
 
-[[deny]{lang="EN-US"}]{#struct_0_18308_19795_241915776}
+deny
 
-[[当证书的属性与属性组里定义的属性匹配时，认为该证书无效，未通过访问控制策略的检测]{style="font-family:宋体"}]{#struct_0_18308_19795_x1620939560}
+当证书的属性与属性组里定义的属性匹配时，认为该证书无效，未通过访问控制策略的检测
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_1025771645}
+·**pki certificate access-control-policy**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pki certificate access-control-policy]{lang="EN-US"}**]{#struct_0_18308_19795_57518110}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[rule]{lang="EN-US"}**]{#struct_0_18308_19795_2122096685}
-
-::: {#1440076900 .myid}
-[]{#_Toc404793069}[]{#struct_0_18308_19795_1956593185}[]{#_Toc279490545}[]{#_Toc279082874}[]{#_Toc265512460}[]{#_Toc133119719}
+·**rule**
 
 **PKI \-- PKI配置命令 \-- display pki certificate attribute-group**
 
 ------------------------------------------------------------------------
 
-[**[display pki certificate attribute-group]{lang="EN-US"}**]{#struct_0_18308_19795_x1999510309}[命令用来显示证书属性组的配置信息。]{style="font-family:宋体"}
+**[display pki certificate attribute-group**]命令用来显示证书属性组的配置信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x44311028}
+【命令】
 
-[**[display pki certificate attribute-group ]{lang="EN-US"}**[\[ *group-name* \] ]{lang="EN-US"}]{#struct_0_18308_19795_x727117629}
+**[display pki certificate attribute-group ** *group-name* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_534744123}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_18308_19795_x1818187790}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_x384770588}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_997606677}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_18308_19795_x616493514}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_327775436}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_18308_19795_951123734}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x2000100136}
+【参数】
 
-[*[group-name]{lang="EN-US"}*]{#struct_0_18308_19795_x1478839176}[：指定证书属性组名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+*[group-name*]：指定证书属性组名，为1～31个字符的字符串，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1327690876}
+【使用指导】
 
-[[若不指定证书属性组的名字，则显示所有证书属性组的配置信息。]{style="font-family:宋体"}]{#struct_0_18308_19795_1884510474}
+若不指定证书属性组的名字，则显示所有证书属性组的配置信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x484411702}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x883115643}[显示证书]{style="font-family:宋体"}[属性组]{style="font-family:
-宋体"}[mygroup]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+\# 显示证书属性组mygroup的信息。
 
-[[\<Sysname\> display pki certificate attribute-group mygroup]{lang="EN-US"}]{#struct_0_18308_19795_409439082}
+\<Sysname\> display pki certificate attribute-group mygroup
 
-[ Attribute group name: mygroup]{lang="EN-US"}
+ Attribute group name: mygroup
 
-[      Attribute  1 subject-name     dn    ctn   abc]{lang="EN-US"}
+      Attribute  1 subject-name     dn    ctn   abc
 
-[      Attribute  2 issuer-name      fqdn  nctn  app]{lang="EN-US"}
+      Attribute  2 issuer-name      fqdn  nctn  app
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x1994308727}[显示所有证书]{style="font-family:宋体"}[属性组的信息。]{style="font-family:
-宋体"}
+\# 显示所有证书属性组的信息。
 
-[[\<Sysname\> display pki certificate attribute-group]{lang="EN-US"}]{#struct_0_18308_19795_x2000034600}
+\<Sysname\> display pki certificate attribute-group
 
-[ Total PKI certificate attribute groups: 2.]{lang="EN-US"}
+ Total PKI certificate attribute groups: 2.
 
-[ Attribute group name: mygroup1]{lang="EN-US"}
+ Attribute group name: mygroup1
 
-[      Attribute  1 subject-name     dn    ctn   abc]{lang="EN-US"}
+      Attribute  1 subject-name     dn    ctn   abc
 
-[      Attribute  2 issuer-name      fqdn  nctn  app]{lang="EN-US"}
+      Attribute  2 issuer-name      fqdn  nctn  app
 
-[Attribute group name: mygroup2]{lang="EN-US"}
+Attribute group name: mygroup2
 
-[      Attribute  1 subject-name     dn    ctn   def]{lang="EN-US"}
+      Attribute  1 subject-name     dn    ctn   def
 
-[      Attribute  2 issuer-name      fqdn  nctn  fqd]{lang="EN-US"}
+      Attribute  2 issuer-name      fqdn  nctn  fqd
 
-[[表1-3 ]{lang="EN-US"}[display pki certificate attribute-group]{lang="EN-US"}]{#struct_0_18308_19795_x1082344334}[命令显示信息描述表]{style="font-family:黑体"}
+表1-3 display pki certificate attribute-group命令显示信息描述表
 
-[]{#table_struct_0_1963900732}[[字段]{style="font-family:黑体"}]{#struct_0_18308_19795_915574854}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_18308_19795_74114964}
+描述
 
-[[Total PKI certificate attribute groups]{lang="EN-US"}]{#struct_0_18308_19795_1529077204}
+Total PKI certificate attribute groups
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x1477263548}[证书属性组的总数]{style="font-family:宋体"}
+PKI证书属性组的总数
 
-[[Attribute group name]{lang="EN-US"}]{#struct_0_18308_19795_x1999969064}
+Attribute group name
 
-[[证书属性组名称]{style="font-family:宋体"}]{#struct_0_18308_19795_1127380285}
+证书属性组名称
 
-[[Attribute *number*]{lang="EN-US"}]{#struct_0_18308_19795_150483963}
+Attribute *number*
 
-[[属性规则编号]{style="font-family:宋体"}]{#struct_0_18308_19795_x1333642153}
+属性规则编号
 
-[[subject-name]{lang="EN-US"}]{#struct_0_18308_19795_x252316823}
+subject-name
 
-[[证书主题名]{style="font-family:宋体"}]{#struct_0_18308_19795_x405981560}
+证书主题名
 
-[[alt-subject-name]{lang="EN-US"}]{#struct_0_18308_19795_x1999903528}
+alt-subject-name
 
-[[证书备用主题名]{style="font-family:宋体"}]{#struct_0_18308_19795_955875680}
+证书备用主题名
 
-[[issuer-name]{lang="EN-US"}]{#struct_0_18308_19795_x855668939}
+issuer-name
 
-[[证书颁发者名]{style="font-family:宋体"}]{#struct_0_18308_19795_x1514367072}
+证书颁发者名
 
-[[dn]{lang="EN-US"}]{#struct_0_18308_19795_758414830}
+dn
 
-[[实体的]{style="font-family:宋体"}[DN]{lang="EN-US"}]{#struct_0_18308_19795_x640304908}
+实体的DN
 
-[[fqdn]{lang="EN-US"}]{#struct_0_18308_19795_x2000362280}
+fqdn
 
-[[实体的]{style="font-family:宋体"}[FQDN]{lang="EN-US"}]{#struct_0_18308_19795_x326718041}
+实体的FQDN
 
-[[ip]{lang="EN-US"}]{#struct_0_18308_19795_x27154865}
+ip
 
-[[实体的]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_18308_19795_x197567091}[地址]{style="font-family:宋体"}
+实体的IP地址
 
-[[ctn]{lang="EN-US"}]{#struct_0_18308_19795_x1175020886}
+ctn
 
-[[表示包含操作]{style="font-family:宋体"}]{#struct_0_18308_19795_x2000296744}
+表示包含操作
 
-[[nctn]{lang="EN-US"}]{#struct_0_18308_19795_x252233261}
+nctn
 
-[[表示不包含操作]{style="font-family:宋体"}]{#struct_0_18308_19795_1106875408}
+表示不包含操作
 
-[[equ]{lang="EN-US"}]{#struct_0_18308_19795_1562143209}
+equ
 
-[[表示等于操作]{style="font-family:宋体"}]{#struct_0_18308_19795_x1632652931}
+表示等于操作
 
-[[nequ]{lang="EN-US"}]{#struct_0_18308_19795_x2000231208}
+nequ
 
-[[表示不等操作]{style="font-family:宋体"}]{#struct_0_18308_19795_x1391238834}
+表示不等操作
 
-[[Attribute  1 subject-name     dn    ctn   abc]{lang="EN-US"}]{#struct_0_18308_19795_2045687424}
+Attribute  1 subject-name     dn    ctn   abc
 
-[[属性规则内容，包括以下参数：]{style="font-family:宋体"}]{#struct_0_18308_19795_197587086}
+属性规则内容，包括以下参数：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[alt-subject-name]{lang="EN-US"}]{#struct_0_18308_19795_1723400244}[：表示证书备用主题名]{lang="EN-US" style="font-family:
-  宋体"}
+·alt-subject-name：表示证书备用主题名
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[issuer-name]{lang="EN-US"}]{#struct_0_18308_19795_x796576937}[：表示证书颁发者名]{lang="EN-US" style="font-family:宋体"}
+·issuer-name：表示证书颁发者名
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[subject-name]{lang="EN-US"}]{#struct_0_18308_19795_1137774396}[：表示证书主题名]{lang="EN-US" style="font-family:宋体"}
+·subject-name：表示证书主题名
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[fqdn]{lang="EN-US"}]{#struct_0_18308_19795_1091060295}[：表示实体的]{lang="EN-US" style="font-family:宋体"}[FQDN]{lang="EN-US"}
+·fqdn：表示实体的FQDN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ip]{lang="EN-US"}]{#struct_0_18308_19795_170809508}[：表示实体的]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+·ip：表示实体的IP地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[dn]{lang="EN-US"}]{#struct_0_18308_19795_1723465780}[：表示实体的]{lang="EN-US" style="font-family:宋体"}[DN]{lang="EN-US"}
+·dn：表示实体的DN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ctn]{lang="EN-US"}]{#struct_0_18308_19795_x1986275950}[：表示包含操作]{lang="EN-US" style="font-family:宋体"}
+·ctn：表示包含操作
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[equ]{lang="EN-US"}]{#struct_0_18308_19795_x1218115750}[：表示相等操作]{lang="EN-US" style="font-family:宋体"}
+·equ：表示相等操作
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[nctn]{lang="EN-US"}]{#struct_0_18308_19795_x1928340347}[：表示不包含操作]{lang="EN-US" style="font-family:宋体"}
+·nctn：表示不包含操作
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[nequ]{lang="EN-US"}]{#struct_0_18308_19795_1722875957}[：表示不等操作]{lang="EN-US" style="font-family:宋体"}
+·nequ：表示不等操作
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x15911931}
+·**attribute**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[attribute]{lang="EN-US"}**]{#struct_0_18308_19795_2130190916}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pki certificate attribute-group]{lang="EN-US"}**]{#struct_0_18308_19795_x2000165672}
-
-::: {#2000779825 .myid}
-[]{#_Toc404793070}[]{#struct_0_18308_19795_x1359231891}[]{#_Toc279163117}[]{#_Toc265512458}[]{#_Toc61836629}
+·**pki certificate attribute-group**
 
 **PKI \-- PKI配置命令 \-- display pki certificate domain**
 
 ------------------------------------------------------------------------
 
-[**[display pki certificate domain]{lang="EN-US"}**]{#struct_0_18308_19795_x716386750}[命令用来显示证书的内容。]{style="font-family:宋体"}
+**[display pki certificate domain**]命令用来显示证书的内容。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_1294646156}
+【命令】
 
-[**[display pki certificate]{lang="EN-US"}**[ **domain** *domain-name* { **ca** \| **local** \| **peer** \[ **serial** *serial-num* \] }]{lang="EN-US"}]{#struct_0_18308_19795_x1391705700}
+**[display pki certificate**[ **domain** *domain-name* { **ca** \| **local** \| **peer** [ **serial** *serial-num* ] }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1263225508}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_18308_19795_1057852582}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_1799502555}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_593850062}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_18308_19795_x1999575848}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x1223531866}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_18308_19795_x1715809065}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x786729632}
+【参数】
 
-[*[domain-name]{lang="EN-US"}*]{#struct_0_18308_19795_1394349260}[：显示指定证书所在的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写，不能包括"]{style="font-family:宋体"}[\~]{lang="EN-US"}["、"]{style="font-family:宋体"}[\*]{lang="EN-US"}["、"]{style="font-family:宋体"}[\\]{lang="EN-US"}["、"]{style="font-family:宋体"}[\|]{lang="EN-US"}["、"]{style="font-family:宋体"}[:]{lang="EN-US"}["、"]{style="font-family:宋体"}[.]{lang="EN-US"}["、"]{style="font-family:宋体"}[\<]{lang="EN-US"}["、"]{style="font-family:宋体"}[\>]{lang="EN-US"}["、"]{style="font-family:宋体"}[\"]{lang="EN-US"}["和"]{style="font-family:宋体"}[\']{lang="EN-US"}["。]{style="font-family:宋体"}
+*[domain-name*]：显示指定证书所在的PKI域的名称，为1～31个字符的字符串，不区分大小写，不能包括"\~"、"\*"、"\"、"[\|]"、":"、"."、"\<"、"\>"、"\""和"\'"。
 
-[**[ca]{lang="EN-US"}**]{#struct_0_18308_19795_36978523}[：显示]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书。]{style="font-family:宋体"}
+**[ca**]：显示CA证书。
 
-[**[local]{lang="EN-US"}**]{#struct_0_18308_19795_601186160}[：显示本地证书。]{style="font-family:宋体"}
+**[local**]：显示本地证书。
 
-[**[peer]{lang="EN-US"}**]{#struct_0_18308_19795_x1584827379}[：显示对端证书。]{style="font-family:宋体"}
+**[peer**]：显示对端证书。
 
-[**[serial ]{lang="EN-US"}***[serial-num]{lang="EN-US"}*]{#struct_0_18308_19795_556106856}[：指定要显示的对端证书的序列号。]{style="font-family:宋体"}
+**[serial ***serial-num*]：指定要显示的对端证书的序列号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1999510312}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[显示]{style="font-family:宋体"}]{#struct_0_18308_19795_x91430731}[CA]{lang="EN-US"}[证书时，会显示此]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中所有]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书的详细信息，若]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中存在]{style="font-family:宋体"}[RA]{lang="EN-US"}[证书，则同时显示]{style="font-family:宋体"}[RA]{lang="EN-US"}[证书的详细信息。]{style="font-family:宋体"}
+·显示CA证书时，会显示此PKI域中所有CA证书的详细信息，若PKI域中存在RA证书，则同时显示RA证书的详细信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[显示本地证书时，会显示此]{style="font-family:宋体"}]{#struct_0_18308_19795_1973110488}[PKI]{lang="EN-US"}[域中所有本地证书的详细信息。]{style="font-family:宋体"}
+·显示本地证书时，会显示此PKI域中所有本地证书的详细信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[显示对端证书时，如果不指定序列号，将显示所有对端证书的简要信息；如果指定序列号，将显示该序号对应的指定对端证书的详细信息。]{style="font-family:宋体"}]{#struct_0_18308_19795_2016228576}
+·显示对端证书时，如果不指定序列号，将显示所有对端证书的简要信息；如果指定序列号，将显示该序号对应的指定对端证书的详细信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_722509109}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x1235316996}[显示]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域]{style="font-family:宋体"}[aaa]{lang="EN-US"}[中的]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书。]{style="font-family:宋体"}
+\# 显示PKI域aaa中的CA证书。
 
-[[\<Sysname\> display pki certificate domain aaa ca]{lang="IT"}]{#struct_0_18308_19795_x2000100135}
+\<Sysname\> display pki certificate domain aaa ca
 
-[Certificate:]{lang="IT"}
+Certificate:
 
-[    Data:]{lang="IT"}
+    Data:
 
-[        Version: 1 (0x0)]{lang="IT"}
+        Version: 1 (0x0)
 
-[        ]{lang="IT"}[Serial Number:]{lang="EN-US"}
+Serial Number:
 
-[            5c:72:dc:c4:a5:43:cd:f9:32:b9:c1:90:8f:dd:50:f6]{lang="EN-US"}
+            5c:72:dc:c4:a5:43:cd:f9:32:b9:c1:90:8f:dd:50:f6
 
-[        Signature Algorithm: sha1WithRSAEncryption]{lang="EN-US"}
+        Signature Algorithm: sha1WithRSAEncryption
 
-[        Issuer: C=cn, O=docm, OU=rnd, CN=rootca]{lang="EN-US"}
+        Issuer: C=cn, O=docm, OU=rnd, CN=rootca
 
-[        Validity]{lang="EN-US"}
+        Validity
 
-[            Not Before: Jan  6 02:51:41 2011 GMT]{lang="EN-US"}
+            Not Before: Jan  6 02:51:41 2011 GMT
 
-[            Not After : Dec  7 03:12:05 2013 GMT]{lang="EN-US"}
+            Not After : Dec  7 03:12:05 2013 GMT
 
-[        Subject: C=cn, O=ccc, OU=ppp, CN=rootca]{lang="EN-US"}
+        Subject: C=cn, O=ccc, OU=ppp, CN=rootca
 
-[        Subject Public Key Info:]{lang="EN-US"}
+        Subject Public Key Info:
 
-[            Public Key Algorithm: rsaEncryption]{lang="EN-US"}
+            Public Key Algorithm: rsaEncryption
 
-[                Public-Key: (1024 bit)]{lang="EN-US"}
+                Public-Key: (1024 bit)
 
-[                ]{lang="EN-US"}[Modulus:]{lang="IT"}
+Modulus:
 
-[                    00:c4:fd:97:2c:51:36:df:4c:ea:e8:c8:70:66:f0:]{lang="IT"}
+                    00:c4:fd:97:2c:51:36:df:4c:ea:e8:c8:70:66:f0:
 
-[                    28:98:ec:5a:ee:d7:35:af:86:c4:49:76:6e:dd:40:]{lang="IT"}
+                    28:98:ec:5a:ee:d7:35:af:86:c4:49:76:6e:dd:40:
 
-[                    4a:9e:8d:c0:cb:d9:10:9b:61:eb:0c:e0:22:ce:f6:]{lang="IT"}
+                    4a:9e:8d:c0:cb:d9:10:9b:61:eb:0c:e0:22:ce:f6:
 
-[                    57:7c:bb:bb:1b:1d:b6:81:ad:90:77:3d:25:21:e6:]{lang="IT"}
+                    57:7c:bb:bb:1b:1d:b6:81:ad:90:77:3d:25:21:e6:
 
-[                    7e:11:0a:d8:1d:3c:8e:a4:17:1e:8c:38:da:97:f6:]{lang="IT"}
+                    7e:11:0a:d8:1d:3c:8e:a4:17:1e:8c:38:da:97:f6:
 
-[                    6d:be:09:e3:5f:21:c5:a0:6f:27:4b:e3:fb:9f:cd:]{lang="IT"}
+                    6d:be:09:e3:5f:21:c5:a0:6f:27:4b:e3:fb:9f:cd:
 
-[                    c1:91:18:ff:16:ee:d8:cf:8c:e3:4c:a3:1b:08:5d:]{lang="IT"}
+                    c1:91:18:ff:16:ee:d8:cf:8c:e3:4c:a3:1b:08:5d:
 
-[                    84:7e:11:32:5f:1a:f8:35:25:c0:7e:10:bd:aa:0f:]{lang="IT"}
+                    84:7e:11:32:5f:1a:f8:35:25:c0:7e:10:bd:aa:0f:
 
-[                    ]{lang="IT"}[52:db:7b:cd:5d:2b:66:5a:fb]{lang="EN-US"}
+52:db:7b:cd:5d:2b:66:5a:fb
 
-[                Exponent: 65537 (0x10001)]{lang="EN-US"}
+                Exponent: 65537 (0x10001)
 
-[    Signature Algorithm: sha1WithRSAEncryption]{lang="EN-US"}
+    Signature Algorithm: sha1WithRSAEncryption
 
-[        6d:b1:4e:d7:ef:bb:1d:67:53:67:d0:8f:7c:96:1d:2a:03:98:]{lang="EN-US"}
+        6d:b1:4e:d7:ef:bb:1d:67:53:67:d0:8f:7c:96:1d:2a:03:98:
 
-[        ]{lang="EN-US"}[3b:48:41:08:a4:8f:a9:c1:98:e3:ac:7d:05:54:7c:34:d5:ee:]{lang="IT"}
+3b:48:41:08:a4:8f:a9:c1:98:e3:ac:7d:05:54:7c:34:d5:ee:
 
-[        09:5a:11:e3:c8:7a:ab:3b:27:d7:62:a7:bb:bc:7e:12:5e:9e:]{lang="IT"}
+        09:5a:11:e3:c8:7a:ab:3b:27:d7:62:a7:bb:bc:7e:12:5e:9e:
 
-[        4c:1c:4a:9f:d7:89:ca:20:46:de:c5:b3:ce:36:ca:5e:6e:dc:]{lang="IT"}
+        4c:1c:4a:9f:d7:89:ca:20:46:de:c5:b3:ce:36:ca:5e:6e:dc:
 
-[        e7:c6:fe:3f:c5:38:dd:d5:a3:36:ad:f4:3d:e6:32:7f:48:df:]{lang="IT"}
+        e7:c6:fe:3f:c5:38:dd:d5:a3:36:ad:f4:3d:e6:32:7f:48:df:
 
-[        07:f0:a2:32:89:86:72:22:cd:ed:e5:0f:95:df:9c:75:71:e7:]{lang="IT"}
+        07:f0:a2:32:89:86:72:22:cd:ed:e5:0f:95:df:9c:75:71:e7:
 
-[        fe:34:c5:a0:64:1c:f0:5c:e4:8f:d3:00:bd:fa:90:b6:64:d8:]{lang="IT"}
+        fe:34:c5:a0:64:1c:f0:5c:e4:8f:d3:00:bd:fa:90:b6:64:d8:
 
-[        88:a6]{lang="IT"}
+        88:a6
 
-[[\# ]{lang="IT"}]{#struct_0_18308_19795_x2000034599}[显示]{style="font-family:宋体"}[PKI]{lang="IT"}[域]{style="font-family:
-宋体"}[aaa]{lang="IT"}[中的本地证书。]{style="font-family:宋体"}
+\# 显示PKI域aaa中的本地证书。
 
-[[\<Sysname\> display pki certificate domain aaa local]{lang="IT"}]{#struct_0_18308_19795_x1999903527}
+\<Sysname\> display pki certificate domain aaa local
 
-[Certificate:]{lang="IT"}
+Certificate:
 
-[    Data:]{lang="IT"}
+    Data:
 
-[        Version: 3 (0x2)]{lang="IT"}
+        Version: 3 (0x2)
 
-[        Serial Number:]{lang="IT"}
+        Serial Number:
 
-[            bc:05:70:1f:0e:da:0d:10:16:1e]{lang="IT"}
+            bc:05:70:1f:0e:da:0d:10:16:1e
 
-[        Signature Algorithm: sha256WithRSAEncryption]{lang="IT"}
+        Signature Algorithm: sha256WithRSAEncryption
 
-[        Issuer: C=CN, O=sec, OU=software, CN=ipsec]{lang="IT"}
+        Issuer: C=CN, O=sec, OU=software, CN=ipsec
 
-[        ]{lang="IT"}[Validity]{lang="EN-US"}
+Validity
 
-[            Not Before: Jan  7 20:05:44 2011 GMT]{lang="EN-US"}
+            Not Before: Jan  7 20:05:44 2011 GMT
 
-[            Not After : Jan  7 20:05:44 2012 GMT]{lang="EN-US"}
+            Not After : Jan  7 20:05:44 2012 GMT
 
-[        Subject: O=OpenCA Labs, OU=Users, CN=fips fips-sec]{lang="EN-US"}
+        Subject: O=OpenCA Labs, OU=Users, CN=fips fips-sec
 
-[        Subject Public Key Info:]{lang="EN-US"}
+        Subject Public Key Info:
 
-[            Public Key Algorithm: rsaEncryption]{lang="EN-US"}
+            Public Key Algorithm: rsaEncryption
 
-[                Public-Key: (1024 bit)]{lang="EN-US"}
+                Public-Key: (1024 bit)
 
-[                ]{lang="EN-US"}[Modulus:]{lang="FR"}
+Modulus:
 
-[                    00:b2:38:ad:8c:7d:78:38:37:88:ce:cc:97:17:39:]{lang="FR"}
+                    00:b2:38:ad:8c:7d:78:38:37:88:ce:cc:97:17:39:
 
-[                    ]{lang="FR"}[52:e1:99:b3:de:73:8b:ad:a8:04:f9:a1:f9:0d:67:]{lang="IT"}
+52:e1:99:b3:de:73:8b:ad:a8:04:f9:a1:f9:0d:67:
 
-[                    d8:95:e2:26:a4:0b:c2:8c:63:32:5d:38:3e:fd:b7:]{lang="IT"}
+                    d8:95:e2:26:a4:0b:c2:8c:63:32:5d:38:3e:fd:b7:
 
-[                    4a:83:69:0e:3e:24:e4:ab:91:6c:56:51:88:93:9e:]{lang="IT"}
+                    4a:83:69:0e:3e:24:e4:ab:91:6c:56:51:88:93:9e:
 
-[                    12:a4:30:ad:ae:72:57:a7:ba:fb:bc:ac:20:8a:21:]{lang="IT"}
+                    12:a4:30:ad:ae:72:57:a7:ba:fb:bc:ac:20:8a:21:
 
-[                    46:ea:e8:93:55:f3:41:49:e9:9d:cc:ec:76:13:fd:]{lang="IT"}
+                    46:ea:e8:93:55:f3:41:49:e9:9d:cc:ec:76:13:fd:
 
-[                    ]{lang="IT"}[a5:8d:cb:5b:45:08:b7:d1:c5:b5:58:89:47:ce:12:]{lang="FR"}
+a5:8d:cb:5b:45:08:b7:d1:c5:b5:58:89:47:ce:12:
 
-[                    ]{lang="FR"}[bd:5c:ce:b6:17:2f:e0:fc:c0:3e:b7:c4:99:31:5b:]{lang="IT"}
+bd:5c:ce:b6:17:2f:e0:fc:c0:3e:b7:c4:99:31:5b:
 
-[                    ]{lang="IT"}[8a:f0:ea:02:fd:2d:44:7a:67]{lang="EN-US"}
+8a:f0:ea:02:fd:2d:44:7a:67
 
-[                Exponent: 65537 (0x10001)]{lang="EN-US"}
+                Exponent: 65537 (0x10001)
 
-[        X509v3 extensions:]{lang="EN-US"}
+        X509v3 extensions:
 
-[            X509v3 Basic Constraints:]{lang="EN-US"}
+            X509v3 Basic Constraints:
 
-[                CA:FALSE]{lang="EN-US"}
+                CA:FALSE
 
-[            Netscape Cert Type:]{lang="EN-US"}
+            Netscape Cert Type:
 
-[                SSL Client, S/MIME]{lang="EN-US"}
+                SSL Client, S/MIME
 
-[            X509v3 Key Usage:]{lang="EN-US"}
+            X509v3 Key Usage:
 
-[                Digital Signature, Non Repudiation, Key Encipherment]{lang="EN-US"}
+                Digital Signature, Non Repudiation, Key Encipherment
 
-[            X509v3 Extended Key Usage:]{lang="EN-US"}
+            X509v3 Extended Key Usage:
 
-[                TLS Web Client Authentication, E-mail Protection, Microsoft Smartcardlogin]{lang="EN-US"}
+                TLS Web Client Authentication, E-mail Protection, Microsoft Smartcardlogin
 
-[            Netscape Comment:]{lang="EN-US"}
+            Netscape Comment:
 
-[                User Certificate of OpenCA Labs]{lang="EN-US"}
+                User Certificate of OpenCA Labs
 
-[            X509v3 Subject Key Identifier:]{lang="EN-US"}
+            X509v3 Subject Key Identifier:
 
-[                91:95:51:DD:BF:4F:55:FA:E4:C4:D0:10:C2:A1:C2:99:AF:A5:CB:30]{lang="EN-US"}
+                91:95:51:DD:BF:4F:55:FA:E4:C4:D0:10:C2:A1:C2:99:AF:A5:CB:30
 
-[            X509v3 Authority Key Identifier:]{lang="EN-US"}
+            X509v3 Authority Key Identifier:
 
-[                keyid:DF:D2:C9:1A:06:1F:BC:61:54:39:FE:12:C4:22:64:EB:57:3B:11:9F]{lang="EN-US"}
+                keyid:DF:D2:C9:1A:06:1F:BC:61:54:39:FE:12:C4:22:64:EB:57:3B:11:9F
 
-[ ]{lang="EN-US"}
+            X509v3 Subject Alternative Name:
 
-[            X509v3 Subject Alternative Name:]{lang="EN-US"}
+                email:fips@ccc.com
 
-[                email:fips@ccc.com]{lang="EN-US"}
+            X509v3 Issuer Alternative Name:
 
-[            X509v3 Issuer Alternative Name:]{lang="EN-US"}
+                email:pki@openca.org
 
-[                email:pki@openca.org]{lang="EN-US"}
+            Authority Information Access:
 
-[            Authority Information Access:]{lang="EN-US"}
+                CA Issuers - URI:http://titan/pki/pub/cacert/cacert.crt
 
-[                CA Issuers - URI:http://titan/pki/pub/cacert/cacert.crt]{lang="EN-US"}
+                OCSP - URI:http://titan:2560/
 
-[                OCSP - URI:http://titan:2560/]{lang="EN-US"}
+                1.3.6.1.5.5.7.48.12 - URI:http://titan:830/
 
-[                1.3.6.1.5.5.7.48.12 - URI:http://titan:830/]{lang="EN-US"}
+            X509v3 CRL Distribution Points:
 
-[ ]{lang="EN-US"}
+                Full Name:
 
-[            X509v3 CRL Distribution Points:]{lang="EN-US"}
+                  URI:http://titan/pki/pub/crl/cacrl.crl
 
-[ ]{lang="EN-US"}
+    Signature Algorithm: sha256WithRSAEncryption
 
-[                Full Name:]{lang="EN-US"}
+        94:ef:56:70:48:66:be:8f:9d:bb:77:0f:c9:f4:65:77:e3:bd:
 
-[                  URI:http://titan/pki/pub/crl/cacrl.crl]{lang="EN-US"}
+ea:9a:b8:24:ae:a1:38:2d:f4:ab:e8:0e:93:c2:30:33:c8:ef:
 
-[ ]{lang="EN-US"}
+        f5:e9:eb:9d:37:04:6f:99:bd:b2:c0:e9:eb:b1:19:7e:e3:cb:
 
-[    Signature Algorithm: sha256WithRSAEncryption]{lang="EN-US"}
+        95:cd:6c:b8:47:e2:cf:18:8d:99:f4:11:74:b1:1b:86:92:98:
 
-[        94:ef:56:70:48:66:be:8f:9d:bb:77:0f:c9:f4:65:77:e3:bd:]{lang="EN-US"}
+        af:a2:34:f7:1b:15:ee:ea:91:ed:51:17:d0:76:ec:22:4c:56:
 
-[        ]{lang="EN-US"}[ea:9a:b8:24:ae:a1:38:2d:f4:ab:e8:0e:93:c2:30:33:c8:ef:]{lang="IT"}
+        da:d6:d1:3c:f2:43:31:4f:1d:20:c8:c2:c3:4d:e5:92:29:ee:
 
-[        f5:e9:eb:9d:37:04:6f:99:bd:b2:c0:e9:eb:b1:19:7e:e3:cb:]{lang="IT"}
+        43:c6:d7:72:92:e8:13:87:38:9a:9c:cd:54:38:b2:ad:ba:aa:
 
-[        95:cd:6c:b8:47:e2:cf:18:8d:99:f4:11:74:b1:1b:86:92:98:]{lang="IT"}
+f9:a4:68:b5:2a:df:9a:31:2f:42:80:0c:0c:d9:6d:b3:ab:0f:
 
-[        af:a2:34:f7:1b:15:ee:ea:91:ed:51:17:d0:76:ec:22:4c:56:]{lang="IT"}
+dd:a0:2c:c0:aa:16:81:aa:d9:33:ca:01:75:94:92:44:05:1a:
 
-[        da:d6:d1:3c:f2:43:31:4f:1d:20:c8:c2:c3:4d:e5:92:29:ee:]{lang="IT"}
+        65:41:fa:1e:41:b5:8a:cc:2b:09:6e:67:70:c4:ed:b4:bc:28:
 
-[        43:c6:d7:72:92:e8:13:87:38:9a:9c:cd:54:38:b2:ad:ba:aa:]{lang="IT"}
+        04:50:a6:33:65:6d:49:3c:fc:a8:93:88:53:94:4c:af:23:64:
 
-[        ]{lang="IT"}[f9:a4:68:b5:2a:df:9a:31:2f:42:80:0c:0c:d9:6d:b3:ab:0f:]{lang="EN-US"}
+        cb:af:e3:02:d1:b6:59:5f:95:52:6d:00:00:a0:cb:75:cf:b4:
 
-[        ]{lang="EN-US"}[dd:a0:2c:c0:aa:16:81:aa:d9:33:ca:01:75:94:92:44:05:1a:]{lang="IT"}
+        50:c5:50:00:65:f4:7d:69:cc:2d:68:a4:13:5c:ef:75:aa:8f:
 
-[        65:41:fa:1e:41:b5:8a:cc:2b:09:6e:67:70:c4:ed:b4:bc:28:]{lang="IT"}
+        3f:ca:fa:eb:4d:d5:5d:27:db:46:c7:f4:7d:3a:b2:fb:a7:c9:
 
-[        04:50:a6:33:65:6d:49:3c:fc:a8:93:88:53:94:4c:af:23:64:]{lang="IT"}
+        de:18:9d:c1
 
-[        cb:af:e3:02:d1:b6:59:5f:95:52:6d:00:00:a0:cb:75:cf:b4:]{lang="IT"}
+\# 显示PKI域aaa中的所有对端证书的简要信息。
 
-[        50:c5:50:00:65:f4:7d:69:cc:2d:68:a4:13:5c:ef:75:aa:8f:]{lang="IT"}
+\<Sysname\> display pki certificate domain aaa peer
 
-[        3f:ca:fa:eb:4d:d5:5d:27:db:46:c7:f4:7d:3a:b2:fb:a7:c9:]{lang="IT"}
+Total peer certificates: 1
 
-[        de:18:9d:c1]{lang="IT"}
+Serial Number: 9a0337eb2156ba1f5476e4d754a5a9f7
 
-[[\# ]{lang="IT"}]{#struct_0_18308_19795_552591153}[显示]{style="font-family:宋体"}[PKI]{lang="IT"}[域]{style="font-family:
-宋体"}[aaa]{lang="IT"}[中的所有对端证书的简要信息。]{style="font-family:宋体"}
+Subject  Name: CN=sldsslserver
 
-[[\<Sysname\> display pki certificate domain aaa peer]{lang="EN-US"}]{#struct_0_18308_19795_1146132080}
+\# 显示PKI域aaa中的一个特定序号的对端证书的详细信息。
 
-[Total peer certificates: 1]{lang="EN-US"}
+\<Sysname\> display pki certificate domain aaa peer serial 9a0337eb2156ba1f5476e4d754a5a9f7
 
-[ ]{lang="EN-US"}
+Certificate:
 
-[Serial Number: 9a0337eb2156ba1f5476e4d754a5a9f7]{lang="EN-US"}
+    Data:
 
-[Subject  Name: CN=sldsslserver]{lang="EN-US"}
+        Version: 3 (0x2)
 
-[[\# ]{lang="IT"}]{#struct_0_18308_19795_x1681368455}[显示]{style="font-family:宋体"}[PKI]{lang="IT"}[域]{style="font-family:
-宋体"}[aaa]{lang="IT"}[中的一个特定序号的对端证书的详细信息。]{style="font-family:宋体"}
+        Serial Number:
 
-[[\<Sysname\> display pki certificate domain aaa peer serial 9a0337eb2156ba1f5476e4d754a5a9f7]{lang="IT"}]{#struct_0_18308_19795_x2000296743}
+            9a:03:37:eb:21:56:ba:1f:54:76:e4:d7:54:a5:a9:f7
 
-[ ]{lang="IT"}
+Signature Algorithm: sha1WithRSAEncryption
 
-[Certificate:]{lang="IT"}
+        Issuer: C=cn, O=ccc, OU=sec, CN=ssl
 
-[    Data:]{lang="IT"}
+        Validity
 
-[        Version: 3 (0x2)]{lang="IT"}
+            Not Before: Oct 15 01:23:06 2010 GMT
 
-[        Serial Number:]{lang="IT"}
+            Not After : Jul 26 06:30:54 2012 GMT
 
-[            9a:03:37:eb:21:56:ba:1f:54:76:e4:d7:54:a5:a9:f7]{lang="IT"}
+        Subject: CN=sldsslserver
 
-[        ]{lang="IT"}[Signature Algorithm: sha1WithRSAEncryption]{lang="EN-US"}
+        Subject Public Key Info:
 
-[        Issuer: C=cn, O=ccc, OU=sec, CN=ssl]{lang="EN-US"}
+            Public Key Algorithm: rsaEncryption
 
-[        Validity]{lang="EN-US"}
+                Public-Key: (1024 bit)
 
-[            Not Before: Oct 15 01:23:06 2010 GMT]{lang="EN-US"}
+                Modulus:
 
-[            Not After : Jul 26 06:30:54 2012 GMT]{lang="EN-US"}
+                    00:c2:cf:37:76:93:29:5e:cd:0e:77:48:3a:4d:0f:
 
-[        Subject: CN=sldsslserver]{lang="EN-US"}
+a6:28:a4:60:f8:31:56:28:7f:81:e3:17:47:78:98:
 
-[        Subject Public Key Info:]{lang="EN-US"}
+                    68:03:5b:72:f4:57:d3:bf:c5:30:32:0d:58:72:67:
 
-[            Public Key Algorithm: rsaEncryption]{lang="EN-US"}
+                    04:06:61:08:3b:e9:ac:53:b9:e7:69:68:1a:23:f2:
 
-[                Public-Key: (1024 bit)]{lang="EN-US"}
+                    97:4c:26:14:c2:b5:d9:34:8b:ee:c1:ef:af:1a:f4:
 
-[                Modulus:]{lang="EN-US"}
+39:da:c5:ae:ab:56:95:b5:be:0e:c3:46:35:c1:52:
 
-[                    00:c2:cf:37:76:93:29:5e:cd:0e:77:48:3a:4d:0f:]{lang="EN-US"}
+29:9c:b7:46:f2:27:80:2d:a4:65:9a:81:78:53:d4:
 
-[                    ]{lang="EN-US"}[a6:28:a4:60:f8:31:56:28:7f:81:e3:17:47:78:98:]{lang="IT"}
+                    ca:d3:f5:f3:92:54:85:b3:ab:55:a5:03:96:2b:19:
 
-[                    68:03:5b:72:f4:57:d3:bf:c5:30:32:0d:58:72:67:]{lang="IT"}
+                    8b:a3:4d:b2:17:08:8d:dd:81
 
-[                    04:06:61:08:3b:e9:ac:53:b9:e7:69:68:1a:23:f2:]{lang="IT"}
+                Exponent: 65537 (0x10001)
 
-[                    97:4c:26:14:c2:b5:d9:34:8b:ee:c1:ef:af:1a:f4:]{lang="IT"}
+        X509v3 extensions:
 
-[                    ]{lang="IT"}[39:da:c5:ae:ab:56:95:b5:be:0e:c3:46:35:c1:52:]{lang="DE"}
+            X509v3 Authority Key Identifier:
 
-[                    ]{lang="DE"}[29:9c:b7:46:f2:27:80:2d:a4:65:9a:81:78:53:d4:]{lang="EN-US"}
+keyid:9A:83:29:13:29:D9:62:83:CB:41:D4:75:2E:52:A1:66:38:3C:90:11
 
-[                    ca:d3:f5:f3:92:54:85:b3:ab:55:a5:03:96:2b:19:]{lang="EN-US"}
+            X509v3 Key Usage: critical
 
-[                    8b:a3:4d:b2:17:08:8d:dd:81]{lang="EN-US"}
+                Digital Signature, Non Repudiation, Key Encipherment, Data Encipherment, Key Agreement
 
-[                Exponent: 65537 (0x10001)]{lang="EN-US"}
+            Netscape Cert Type:
 
-[        X509v3 extensions:]{lang="EN-US"}
+                SSL Server
 
-[            X509v3 Authority Key Identifier:]{lang="EN-US"}
+            X509v3 Subject Alternative Name:
 
-[                ]{lang="EN-US"}[keyid:9A:83:29:13:29:D9:62:83:CB:41:D4:75:2E:52:A1:66:38:3C:90:1]{lang="IT"}[1]{lang="EN-US"}
+                DNS:docm.com
 
-[ ]{lang="EN-US"}
+            X509v3 Subject Key Identifier:
 
-[            X509v3 Key Usage: critical]{lang="EN-US"}
+                3C:76:95:9B:DD:C2:7F:5F:98:83:B7:C7:A0:F8:99:1E:4B:D7:2F:26
 
-[                Digital Signature, Non Repudiation, Key Encipherment, Data Encipherment, Key Agreement]{lang="EN-US"}
+            X509v3 CRL Distribution Points:
 
-[            Netscape Cert Type:]{lang="EN-US"}
+                Full Name:
 
-[                SSL Server]{lang="EN-US"}
+                  URI:http://s03130.ccc.sec.com:447/ssl.crl
 
-[            X509v3 Subject Alternative Name:]{lang="EN-US"}
+    Signature Algorithm: sha1WithRSAEncryption
 
-[                DNS:docm.com]{lang="EN-US"}
+        61:2d:79:c7:49:16:e3:be:25:bb:8b:70:37:31:32:e5:d3:e3:
 
-[            X509v3 Subject Key Identifier:]{lang="EN-US"}
+        31:2c:2d:c1:f9:bf:50:ad:35:4b:c1:90:8c:65:79:b6:5f:59:
 
-[                3C:76:95:9B:DD:C2:7F:5F:98:83:B7:C7:A0:F8:99:1E:4B:D7:2F:26]{lang="EN-US"}
+36:24:c7:14:63:44:17:1e:e4:cf:10:69:fc:93:e9:70:53:3c:
 
-[            X509v3 CRL Distribution Points:]{lang="EN-US"}
+        85:aa:40:7e:b5:47:75:0f:f0:b2:da:b4:a5:50:dd:06:4a:d5:
 
-[ ]{lang="EN-US"}
+        17:a5:ca:20:19:2c:e9:78:02:bd:19:77:da:07:1a:42:df:72:
 
-[                Full Name:]{lang="EN-US"}
+        ad:07:7d:e5:16:d6:75:eb:6e:06:58:ee:76:31:63:db:96:a2:
 
-[                  URI:http://s03130.ccc.sec.com:447/ssl.crl]{lang="EN-US"}
+ad:83:b6:bb:ba:4b:79:59:9d:59:6c:77:59:5b:d9:07:33:a8:
 
-[ ]{lang="EN-US"}
+f0:a5
 
-[    Signature Algorithm: sha1WithRSAEncryption]{lang="EN-US"}
+表1-4 display pki certificate命令显示信息描述表
 
-[        61:2d:79:c7:49:16:e3:be:25:bb:8b:70:37:31:32:e5:d3:e3:]{lang="EN-US"}
+字段
 
-[        31:2c:2d:c1:f9:bf:50:ad:35:4b:c1:90:8c:65:79:b6:5f:59:]{lang="EN-US"}
+描述
 
-[        ]{lang="EN-US"}[36:24:c7:14:63:44:17:1e:e4:cf:10:69:fc:93:e9:70:53:3c:]{lang="IT"}
+Version
 
-[        85:aa:40:7e:b5:47:75:0f:f0:b2:da:b4:a5:50:dd:06:4a:d5:]{lang="IT"}
+证书版本号
 
-[        17:a5:ca:20:19:2c:e9:78:02:bd:19:77:da:07:1a:42:df:72:]{lang="IT"}
+Serial Number
 
-[        ad:07:7d:e5:16:d6:75:eb:6e:06:58:ee:76:31:63:db:96:a2:]{lang="IT"}
+证书序列号
 
-[        ]{lang="IT"}[ad:83:b6:bb:ba:4b:79:59:9d:59:6c:77:59:5b:d9:07:33:a8:]{lang="EN-US"}
+Signature Algorithm
 
-[        ]{lang="EN-US"}[f0:a5]{lang="IT"}
+签名算法
 
-[]{#struct_0_18308_19795_x655517788}[[表1-4 ]{lang="EN-US"}[display pki certificate]{lang="EN-US"}]{#_Toc138075230}[命令显示信息描述表]{style="font-family:黑体"}
+Issuer
 
-[]{#table_struct_0_1995676252}[[字段]{style="font-family:黑体"}]{#struct_0_18308_19795_x2030255564}
-:::
+证书颁发者
 
-[[描述]{style="font-family:黑体"}]{#struct_0_18308_19795_x187253059}
+Validity
 
-[[Version]{lang="EN-US"}]{#struct_0_18308_19795_x2000231207}
+证书有效期
 
-[[证书版本号]{style="font-family:宋体"}]{#struct_0_18308_19795_x181385253}
+Subject
 
-[[Serial Number]{lang="EN-US"}]{#struct_0_18308_19795_x587494507}
+证书所属的实体信息
 
-[[证书序列号]{style="font-family:宋体"}]{#struct_0_18308_19795_x1993599147}
+Subject Public Key Info
 
-[[Signature Algorithm]{lang="EN-US"}]{#struct_0_18308_19795_x659072750}
+证书所属的实体的公钥信息
 
-[[签名算法]{style="font-family:宋体"}]{#struct_0_18308_19795_x1921775509}
+X509v3 extensions
 
-[[Issuer]{lang="EN-US"}]{#struct_0_18308_19795_1221455128}
+X.509版本3格式的证书扩展属性
 
-[[证书颁发者]{style="font-family:宋体"}]{#struct_0_18308_19795_x2000165671}
+【相关命令】
 
-[[Validity]{lang="EN-US"}]{#struct_0_18308_19795_1369651464}
+·**pki domain**
 
-[[证书有效期]{style="font-family:宋体"}]{#struct_0_18308_19795_x1887713249}
-
-[[Subject]{lang="EN-US"}]{#struct_0_18308_19795_790613598}
-
-[[证书所属的实体信息]{style="font-family:宋体"}]{#struct_0_18308_19795_2117685588}
-
-[[Subject Public Key Info]{lang="EN-US"}]{#struct_0_18308_19795_x1387309393}
-
-[[证书所属的实体的公钥信息]{style="font-family:宋体"}]{#struct_0_18308_19795_x1999575847}
-
-[[X509v3 extensions]{lang="EN-US"}]{#struct_0_18308_19795_1505351489}
-
-[[X.509]{lang="EN-US"}]{#struct_0_18308_19795_x520841057}[版本]{style="font-family:宋体"}[3]{lang="EN-US"}[格式的证书扩展属性]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_1414690419}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pki domain]{lang="EN-US"}**]{#struct_0_18308_19795_1754531042}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pki retrieve-certificate]{lang="EN-US"}**]{#struct_0_18308_19795_1646964686}
-
-::: {#-933777909 .myid}
-[]{#_Toc404793071}[]{#struct_0_18308_19795_x1900449718}[]{#_Toc293674854}
+·**pki retrieve-certificate**
 
 **PKI \-- PKI配置命令 \-- display pki certificate request-status**
 
 ------------------------------------------------------------------------
 
-[**[display pki certificate request-status]{lang="EN-US"}**]{#struct_0_18308_19795_x1999510311}[命令用来显示证书的申请状态。]{style="font-family:宋体"}
+**[display pki certificate request-status**]命令用来显示证书的申请状态。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_311853796}
+【命令】
 
-[**[display pki certificate request-status ]{lang="EN-US"}**[\[ **domain** *domain-name* \]]{lang="EN-US"}]{#struct_0_18308_19795_x43880031}
+**[display pki certificate request-status ** **domain** *domain-name* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x749673706}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_18308_19795_x734946060}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_x797705793}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_373326879}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_18308_19795_x726224585}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_111291969}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_18308_19795_x1943784380}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x2000100138}
+【参数】
 
-[**[domain ]{lang="EN-US"}***[domain-name]{lang="EN-US"}*]{#struct_0_18308_19795_40190598}[：指定证书所在的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写，不能包括"]{style="font-family:宋体"}[\~]{lang="EN-US"}["、"]{style="font-family:宋体"}[\*]{lang="EN-US"}["、"]{style="font-family:宋体"}[\\]{lang="EN-US"}["、"]{style="font-family:宋体"}[\|]{lang="EN-US"}["、"]{style="font-family:宋体"}[:]{lang="EN-US"}["、"]{style="font-family:宋体"}[.]{lang="EN-US"}["、"]{style="font-family:宋体"}[\<]{lang="EN-US"}["、"]{style="font-family:宋体"}[\>]{lang="EN-US"}["、"]{style="font-family:宋体"}[\"]{lang="EN-US"}["和"]{style="font-family:宋体"}[\']{lang="EN-US"}["。]{style="font-family:宋体"}
+**[domain ***domain-name*]：指定证书所在的PKI域的名称，为1～31个字符的字符串，不区分大小写，不能包括"\~"、"\*"、"\"、"[\|]"、":"、"."、"\<"、"\>"、"\""和"\'"。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_1697981698}
+【使用指导】
 
-[[若不指定]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_571859697}[域的名称，则显示所有]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域的证书申请状态。]{style="font-family:宋体"}
+若不指定PKI域的名称，则显示所有PKI域的证书申请状态。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x2025202240}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x330326414}[显示]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域]{style="font-family:宋体"}[aaa]{lang="EN-US"}[的证书申请状态。]{style="font-family:宋体"}
+\# 显示PKI域aaa的证书申请状态。
 
-[[\<Sysname\> display pki certificate request-status domain aaa]{lang="EN-US"}]{#struct_0_18308_19795_x1808402179}
+\<Sysname\> display pki certificate request-status domain aaa
 
-[Certificate Request Transaction 1]{lang="EN-US"}
+Certificate Request Transaction 1
 
-[    Domain name: aaa]{lang="EN-US"}
+    Domain name: aaa
 
-[    Status: Pending]{lang="EN-US"}
+    Status: Pending
 
-[    Key usage: General]{lang="EN-US"}
+    Key usage: General
 
-[    Remain polling attempts: 10]{lang="EN-US"}
+    Remain polling attempts: 10
 
-[    Next polling attempt after : 1191 seconds]{lang="EN-US"}
+    Next polling attempt after : 1191 seconds
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x542571445}[显示所有]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域的证书申请状态。]{style="font-family:宋体"}
+\# 显示所有PKI域的证书申请状态。
 
-[[\<Sysname\> display pki certificate request-status]{lang="EN-US"}]{#struct_0_18308_19795_x2000034602}
+\<Sysname\> display pki certificate request-status
 
-[Certificate Request Transaction 1]{lang="EN-US"}
+Certificate Request Transaction 1
 
-[    Domain name: domain1]{lang="EN-US"}
+    Domain name: domain1
 
-[    Status: Pending]{lang="EN-US"}
+    Status: Pending
 
-[    Key usage: General]{lang="EN-US"}
+    Key usage: General
 
-[    Remain polling attempts: 10]{lang="EN-US"}
+    Remain polling attempts: 10
 
-[    Next polling attempt after : 1191 seconds]{lang="EN-US"}
+    Next polling attempt after : 1191 seconds
 
-[Certificate Request Transaction 2]{lang="EN-US"}
+Certificate Request Transaction 2
 
-[    Domain name: domain2]{lang="EN-US"}
+    Domain name: domain2
 
-[    Status: Pending]{lang="EN-US"}
+    Status: Pending
 
-[    Key usage: Signature]{lang="EN-US"}
+    Key usage: Signature
 
-[    Remain polling attempts: 10]{lang="EN-US"}
+    Remain polling attempts: 10
 
-[    Next polling attempt after : 188 seconds]{lang="EN-US"}
+    Next polling attempt after : 188 seconds
 
-[[表1-1 ]{lang="EN-US"}[display pki certificate request]{lang="EN-US"}]{#struct_0_18308_19795_80455080}[命令显示信息描述表]{style="font-family:
-黑体"}
+表1-1 display pki certificate request命令显示信息描述表
 
-[]{#table_struct_0_1988462716}[[字段]{style="font-family:黑体"}]{#struct_0_18308_19795_163240373}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_18308_19795_702843188}
+描述
 
-[[Certificate Request Transaction *number*]{lang="EN-US"}]{#struct_0_18308_19795_531598857}
+Certificate Request Transaction *number*
 
-[[证书申请任务的编号，从]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_18308_19795_x1999969066}[开始顺序编号]{style="font-family:宋体"}
+证书申请任务的编号，从1开始顺序编号
 
-[[Domain name]{lang="EN-US"}]{#struct_0_18308_19795_x2004787597}
+Domain name
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x377323363}[域名]{style="font-family:宋体"}
+PKI域名
 
-[[Status]{lang="EN-US"}]{#struct_0_18308_19795_1149859519}
+Status
 
-[[证书申请状态。目前，仅有一种取值]{style="font-family:宋体"}[Pending]{lang="EN-US"}]{#struct_0_18308_19795_832789568}[，表示等待]{style="font-family:宋体"}
+证书申请状态。目前，仅有一种取值Pending，表示等待
 
-[[Key usage]{lang="EN-US"}]{#struct_0_18308_19795_x359272296}
+Key usage
 
-[[证书用途，包括以下取值：]{style="font-family:宋体"}]{#struct_0_18308_19795_x1999903530}
+证书用途，包括以下取值：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[General]{lang="EN-US"}]{#struct_0_18308_19795_1312040504}[：表示通用，既可以]{lang="EN-US" style="font-family:宋体"}[用于]{style="font-family:宋体"}[加密也可以]{lang="EN-US" style="font-family:宋体"}[用于]{style="font-family:宋体"}[签名]{lang="EN-US" style="font-family:宋体"}
+·General：表示通用，既可以用于加密也可以用于签名
 
-[[·[       ]{style="font:7.0pt "}]{lang="IT" style="font-size:10.0pt;font-family:Symbol"}[Signature]{lang="EN-US"}]{#struct_0_18308_19795_x2038823643}[：表示]{lang="EN-US" style="font-family:宋体"}[用于]{style="font-family:宋体"}[签名]{lang="EN-US" style="font-family:宋体"}
+·Signature：表示用于签名
 
-[[·[       ]{style="font:7.0pt "}]{lang="IT" style="font-size:10.0pt;font-family:Symbol"}[Encryption]{lang="IT"}]{#struct_0_18308_19795_1105539406}[：表示]{lang="EN-US" style="font-family:宋体"}[用于]{style="font-family:宋体"}[加密]{lang="EN-US" style="font-family:宋体"}
+·Encryption：表示用于加密
 
-[[Remain polling attempts]{lang="EN-US"}]{#struct_0_18308_19795_117259450}
+Remain polling attempts
 
-[[剩余的证书申请状态的查询次数]{style="font-family:宋体"}]{#struct_0_18308_19795_x448461104}
+剩余的证书申请状态的查询次数
 
-[[Next polling attempt after]{lang="EN-US"}]{#struct_0_18308_19795_x2000362282}
+Next polling attempt after
 
-[[当前到下次查询证书申请状态的时间间隔，单位为秒]{style="font-family:宋体"}]{#struct_0_18308_19795_x1489517455}
+当前到下次查询证书申请状态的时间间隔，单位为秒
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_1290023458}
+l**certificate request polling**
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:6.5pt;font-family:Wingdings"}**[certificate request polling]{lang="EN-US"}**]{#struct_0_18308_19795_x1482556705}
+l**pki domain**
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:6.5pt;font-family:Wingdings"}**[pki domain]{lang="EN-US"}**]{#struct_0_18308_19795_1632660564}
-
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:6.5pt;font-family:Wingdings"}**[pki retrieve-certificate]{lang="EN-US"}**]{#struct_0_18308_19795_1902974162}
-
-::: {#-2135290363 .myid}
-[]{#_Toc404793072}[]{#struct_0_18308_19795_376960305}[]{#_Toc61836630}[]{#_Toc279163120}[]{#_Toc265512461}
+l**pki retrieve-certificate**
 
 **PKI \-- PKI配置命令 \-- display pki crl**
 
 ------------------------------------------------------------------------
 
-[**[display pki crl domain]{lang="EN-US"}**]{#struct_0_18308_19795_x251418271}[命令用来显示存储在本地的]{style="font-family:宋体"}[CRL]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[display pki crl domain**]命令用来显示存储在本地的CRL。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_1571723110}
+【命令】
 
-[**[display pki crl]{lang="EN-US"}**[ **domain** *domain-name*]{lang="EN-US"}]{#struct_0_18308_19795_x2000296746}
+**[display pki crl** **domain** *domain-name*]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1415032675}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_18308_19795_1750802862}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_1158822616}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x920110382}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_18308_19795_1416364237}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x305997897}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_18308_19795_x1533063263}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x558763478}
+【参数】
 
-[**[domain]{lang="EN-US"}**[ *domain-name*]{lang="EN-US"}]{#struct_0_18308_19795_x2000231210}[：指定]{style="font-family:宋体"}[CRL]{lang="EN-US"}[所在的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写，不能包括"]{style="font-family:宋体"}[\~]{lang="EN-US"}["、"]{style="font-family:宋体"}[\*]{lang="EN-US"}["、"]{style="font-family:宋体"}[\\]{lang="EN-US"}["、"]{style="font-family:宋体"}[\|]{lang="EN-US"}["、"]{style="font-family:宋体"}[:]{lang="EN-US"}["、"]{style="font-family:宋体"}[.]{lang="EN-US"}["、"]{style="font-family:宋体"}[\<]{lang="EN-US"}["、"]{style="font-family:宋体"}[\>]{lang="EN-US"}["、"]{style="font-family:宋体"}[\"]{lang="EN-US"}["和"]{style="font-family:宋体"}[\']{lang="EN-US"}["。]{style="font-family:宋体"}
+**[domain** *domain-name*]：指定CRL所在的PKI域的名称，为1～31个字符的字符串，不区分大小写，不能包括"\~"、"\*"、"\"、"[\|]"、":"、"."、"\<"、"\>"、"\""和"\'"。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1747534730}
+【使用指导】
 
-[[用户可以通过该命令查看证书吊销列表，看所需的证书是否已经被吊销。]{style="font-family:宋体"}]{#struct_0_18308_19795_171508269}
+用户可以通过该命令查看证书吊销列表，看所需的证书是否已经被吊销。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_1438456807}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1965239137}[显示存储在本地的]{style="font-family:宋体"}[CRL]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 显示存储在本地的CRL。
 
-[[\<Sysname\> display pki crl domain aaa]{lang="EN-US"}]{#struct_0_18308_19795_x2000165674}
+\<Sysname\> display pki crl domain aaa
 
-[Certificate Revocation List (CRL):]{lang="EN-US"}
+Certificate Revocation List (CRL):
 
-[        Version 2 (0x1)]{lang="EN-US"}
+        Version 2 (0x1)
 
-[        Signature Algorithm: sha1WithRSAEncryption]{lang="EN-US"}
+        Signature Algorithm: sha1WithRSAEncryption
 
-[        Issuer: /C=cn/O=docm/OU=sec/CN=therootca]{lang="EN-US"}
+        Issuer: /C=cn/O=docm/OU=sec/CN=therootca
 
-[        Last Update: Apr 28 01:42:13 2011 GMT]{lang="EN-US"}
+        Last Update: Apr 28 01:42:13 2011 GMT
 
-[        Next Update: NONE]{lang="EN-US"}
+        Next Update: NONE
 
-[        CRL extensions:]{lang="EN-US"}
+        CRL extensions:
 
-[            X509v3 CRL Number:]{lang="EN-US"}
+            X509v3 CRL Number:
 
-[                6]{lang="EN-US"}
+                6
 
-[            X509v3 Authority Key Identifier:]{lang="EN-US"}
+            X509v3 Authority Key Identifier:
 
-[                keyid:49:25:DB:07:3A:C4:8A:C2:B5:A0:64:A5:F1:54:93:69:14:51:11:EF]{lang="EN-US"}
+                keyid:49:25:DB:07:3A:C4:8A:C2:B5:A0:64:A5:F1:54:93:69:14:51:11:EF
 
-[ ]{lang="EN-US"}
+Revoked Certificates:
 
-[Revoked Certificates:]{lang="EN-US"}
+    Serial Number: CDE626BF7A44A727B25F9CD81475C004
 
-[    Serial Number: CDE626BF7A44A727B25F9CD81475C004]{lang="EN-US"}
+        Revocation Date: Apr 28 01:37:52 2011 GMT
 
-[        Revocation Date: Apr 28 01:37:52 2011 GMT]{lang="EN-US"}
+        CRL entry extensions:
 
-[        CRL entry extensions:]{lang="EN-US"}
+            Invalidity Date:
 
-[            Invalidity Date:]{lang="EN-US"}
+                Apr 28 01:37:49 2011 GMT
 
-[                Apr 28 01:37:49 2011 GMT]{lang="EN-US"}
+    Serial Number: FCADFA81E1F56F43D3F2D3EF7EB56DE5
 
-[    Serial Number: FCADFA81E1F56F43D3F2D3EF7EB56DE5]{lang="EN-US"}
+        Revocation Date: Apr 28 01:33:28 2011 GMT
 
-[        Revocation Date: Apr 28 01:33:28 2011 GMT]{lang="EN-US"}
+        CRL entry extensions:
 
-[        CRL entry extensions:]{lang="EN-US"}
+            Invalidity Date:
 
-[            Invalidity Date:]{lang="EN-US"}
+                Apr 28 01:33:09 2011 GMT
 
-[                Apr 28 01:33:09 2011 GMT]{lang="EN-US"}
+Signature Algorithm: sha1WithRSAEncryption
 
-[    ]{lang="EN-US"}[Signature Algorithm: sha1WithRSAEncryption]{lang="IT"}
+        57:ac:00:3e:1e:e2:5f:59:62:04:05:9b:c7:61:58:2a:df:a4:
 
-[        57:ac:00:3e:1e:e2:5f:59:62:04:05:9b:c7:61:58:2a:df:a4:]{lang="IT"}
+        5c:e5:c0:14:af:c8:e7:de:cf:2a:0a:31:7d:32:da:be:cd:6a:
 
-[        5c:e5:c0:14:af:c8:e7:de:cf:2a:0a:31:7d:32:da:be:cd:6a:]{lang="IT"}
+        36:b5:83:e8:95:06:bd:b4:c0:36:fe:91:7c:77:d9:00:0f:9e:
 
-[        36:b5:83:e8:95:06:bd:b4:c0:36:fe:91:7c:77:d9:00:0f:9e:]{lang="IT"}
+        99:03:65:9e:0c:9c:16:22:ef:4a:40:ec:59:40:60:53:4a:fc:
 
-[        99:03:65:9e:0c:9c:16:22:ef:4a:40:ec:59:40:60:53:4a:fc:]{lang="IT"}
+        8e:47:57:23:e0:75:0a:a4:1c:0e:2f:3d:e0:b2:87:4d:61:8a:
 
-[        8e:47:57:23:e0:75:0a:a4:1c:0e:2f:3d:e0:b2:87:4d:61:8a:]{lang="IT"}
+4a:cb:cb:37:af:51:bd:53:78:76:a1:16:3d:0b:89:01:91:61:
 
-[        ]{lang="IT"}[4a:cb:cb:37:af:51:bd:53:78:76:a1:16:3d:0b:89:01:91:61:]{lang="EN-US"}
+        52:d0:6f:5c:09:59:15:be:b8:68:65:0c:5d:1b:a1:f8:42:04:
 
-[        52:d0:6f:5c:09:59:15:be:b8:68:65:0c:5d:1b:a1:f8:42:04:]{lang="EN-US"}
+        ba:aa
 
-[        ba:aa]{lang="EN-US"}
+表1-5 display pki crl domain显示信息描述表
 
-[]{#struct_0_18308_19795_1772935991}[]{#_Toc138075231}[]{#_Toc121759878}[]{#_Toc95386928}[]{#_Toc85621942}[[表1-5 ]{lang="EN-US"}[display pki crl domain]{lang="EN-US"}]{#_Toc81452891}[显示信息描述]{style="font-family:黑体"}[表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1990494620}[[字段]{style="font-family:黑体"}]{#struct_0_18308_19795_x63401545}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_18308_19795_x1999575850}
+Version
 
-[[Version ]{lang="EN-US"}]{#struct_0_18308_19795_x867367042}
+CRL版本号
 
-[[CRL]{lang="EN-US"}]{#struct_0_18308_19795_x1693036252}[版本号]{style="font-family:宋体"}
+Signature Algorithm
 
-[[Signature Algorithm]{lang="EN-US"}]{#struct_0_18308_19795_x1924980783}
+CA签名该CRL采用的签名算法
 
-[[CA]{lang="EN-US"}]{#struct_0_18308_19795_988901736}[签名该]{style="font-family:宋体"}[CRL]{lang="EN-US"}[采用的签名算法]{style="font-family:宋体"}
+Issuer
 
-[[Issuer]{lang="EN-US"}]{#struct_0_18308_19795_x1959595311}
+颁发该CRL的CA证书名称
 
-[[颁发该]{style="font-family:宋体"}[CRL]{lang="EN-US"}]{#struct_0_18308_19795_2127536349}[的]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书名称]{style="font-family:宋体"}
+Last Update
 
-[[Last Update]{lang="EN-US"}]{#struct_0_18308_19795_x1999510314}
+上次更新CRL的时间
 
-[[上次更新]{style="font-family:宋体"}[CRL]{lang="EN-US"}]{#struct_0_18308_19795_715138323}[的时间]{style="font-family:宋体"}
+Next Update
 
-[[Next Update]{lang="EN-US"}]{#struct_0_18308_19795_1533259096}
+下次更新CRL的时间
 
-[[下次更新]{style="font-family:宋体"}[CRL]{lang="EN-US"}]{#struct_0_18308_19795_x1337244270}[的时间]{style="font-family:宋体"}
+CRL extensions
 
-[[CRL extensions]{lang="EN-US"}]{#struct_0_18308_19795_x644114915}
+CRL扩展属性
 
-[[CRL]{lang="EN-US"}]{#struct_0_18308_19795_1773682269}[扩展属性]{style="font-family:宋体"}
+X509v3 CRL Number
 
-[[X509v3 CRL Number]{lang="EN-US"}]{#struct_0_18308_19795_x2000100137}
+X509版本3格式的CRL序号
 
-[[X509]{lang="EN-US"}]{#struct_0_18308_19795_87244765}[版本]{style="font-family:宋体"}[3]{lang="EN-US"}[格式的]{style="font-family:宋体"}[CRL]{lang="EN-US"}[序号]{style="font-family:宋体"}
+X509v3 Authority Key Identifier
 
-[[X509v3 Authority Key Identifier]{lang="EN-US"}]{#struct_0_18308_19795_1226062770}
+X509版本3格式的签发该CRL的CA的标识符
 
-[[X509]{lang="EN-US"}]{#struct_0_18308_19795_182000923}[版本]{style="font-family:宋体"}[3]{lang="EN-US"}[格式的签发该]{style="font-family:宋体"}[CRL]{lang="EN-US"}[的]{style="font-family:宋体"}[CA]{lang="EN-US"}[的标识符]{style="font-family:宋体"}
+keyid
 
-[[keyid]{lang="EN-US"}]{#struct_0_18308_19795_x1921364652}
+公钥标识符
 
-[[公钥标识符]{style="font-family:宋体"}]{#struct_0_18308_19795_x1694069991}
+一个CA可能有多个密钥对，该字段用于标识CA用哪个密钥对对该CRL进行签名
 
-[[一个]{style="font-family:宋体"}[CA]{lang="EN-US"}]{#struct_0_18308_19795_x2000034601}[可能有多个密钥对，该字段用于标识]{style="font-family:宋体"}[CA]{lang="EN-US"}[用哪个密钥对对该]{style="font-family:宋体"}[CRL]{lang="EN-US"}[进行签名]{style="font-family:宋体"}
+Revoked Certificates
 
-[[Revoked Certificates]{lang="EN-US"}]{#struct_0_18308_19795_1646539021}
+撤销的证书信息
 
-[[撤销的证书信息]{style="font-family:宋体"}]{#struct_0_18308_19795_x1942463321}
+Serial Number
 
-[[Serial Number]{lang="EN-US"}]{#struct_0_18308_19795_x289794462}
+被吊销证书的序列号
 
-[[被吊销证书的序列号]{style="font-family:宋体"}]{#struct_0_18308_19795_1297946487}
+Revocation Date
 
-[[Revocation Date]{lang="EN-US"}]{#struct_0_18308_19795_x1999969065}
+证书被吊销的日期
 
-[[证书被吊销的日期]{style="font-family:宋体"}]{#struct_0_18308_19795_x438703656}
+CRL entry extensions:
 
-[[CRL entry extensions:]{lang="EN-US"}]{#struct_0_18308_19795_x1121364146}
+CRL项目扩展属性
 
-[[CRL]{lang="EN-US"}]{#struct_0_18308_19795_x608210364}[项目扩展属性]{style="font-family:宋体"}
+Signature Algorithm:
 
-[[Signature Algorithm:]{lang="IT"}]{#struct_0_18308_19795_x1913196359}
+签名算法以及签名数据
 
-[[签名算法以及签名数据]{style="font-family:宋体"}]{#struct_0_18308_19795_x1999903529}
+【相关命令】
 
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x610208261}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pki retrieve-crl]{lang="EN-US"}**]{#struct_0_18308_19795_304117452}
-
-::: {#1176784048 .myid}
-[]{#_Toc404793073}[]{#struct_0_18308_19795_x1474008885}[]{#_Toc285010683}
+·**pki retrieve-crl**
 
 **PKI \-- PKI配置命令 \-- fqdn**
 
 ------------------------------------------------------------------------
 
-[**[fqdn]{lang="EN-US"}**]{#struct_0_18308_19795_1425045417}[命令用来配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体的]{style="font-family:宋体"}[FQDN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[fqdn**]命令用来配置PKI实体的FQDN。
 
-[**[undo fqdn]{lang="EN-US"}**]{#struct_0_18308_19795_1382995470}[命令用来删除配置的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体的]{style="font-family:宋体"}[FQDN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo fqdn**]命令用来删除配置的PKI实体的FQDN。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_1897315669}
+【命令】
 
-[**[fqdn ]{lang="EN-US"}***[fqdn-name-string]{lang="EN-US"}*]{#struct_0_18308_19795_x442780001}
+**[fqdn ***fqdn-name-string*]
 
-[**[undo fqdn]{lang="EN-US"}**]{#struct_0_18308_19795_x2000362281}
+**[undo fqdn**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_1239365900}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_945737271}[实体的]{style="font-family:宋体"}[FQDN]{lang="EN-US"}[。]{style="font-family:宋体"}
+未配置PKI实体的FQDN。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_1145592327}
+【视图】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_1152211451}[实体视图]{style="font-family:宋体"}
+PKI实体视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_1046851771}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_1602205550}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_1627614007}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1996594895}
+【参数】
 
-[*[fqdn-name-string]{lang="EN-US"}*]{#struct_0_18308_19795_x2000296745}[：]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体的]{style="font-family:宋体"}[FQDN]{lang="EN-US"}[，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[fqdn-name-string*]：PKI实体的FQDN，为1～255个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1818317202}
+【使用指导】
 
-[[FQDN]{lang="EN-US"}]{#struct_0_18308_19795_x1367992890}[是实体在网络中的唯一标识，由一个主机名和一个域名组成，形式为]{style="font-family:宋体"}*[hostname]{lang="EN-US"}*[@*domainname*]{lang="EN-US"}[。]{style="font-family:宋体"}
+FQDN是实体在网络中的唯一标识，由一个主机名和一个域名组成，形式为*hostname*@*domainname*。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1706560025}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1692140699}[配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体]{style="font-family:宋体"}[en]{lang="EN-US"}[的]{style="font-family:宋体"}[FQDN]{lang="EN-US"}[为]{style="font-family:宋体"}[abc@pki.domain.com]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置PKI实体en的FQDN为abc@pki.domain.com。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x1516939132}
+\<Sysname\> system-view
 
-[\[Sysname\] pki entity en]{lang="EN-US"}
+Sysname pki entity en
 
-[\[Sysname-pki-entity-en\] fqdn abc@pki.domain.com]{lang="EN-US"}
-:::
-
-::: {#-839206969 .myid}
-[]{#struct_0_18308_19795_1640884852}[]{#_Toc404793074}
+Sysname-pki-entity-en fqdn abc@pki.domain.com
 
 **PKI \-- PKI配置命令 \-- ip**
 
 ------------------------------------------------------------------------
 
-[**[ip]{lang="EN-US"}**]{#struct_0_18308_19795_x1121750938}[命令用来配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[ip**]命令用来配置PKI实体的IP地址。
 
-[**[undo ip]{lang="EN-US"}**]{#struct_0_18308_19795_x2000231209}[命令用来删除配置的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[undo ip**]命令用来删除配置的PKI实体的IP地址。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_1337644521}
+【命令】
 
-[**[ip ]{lang="EN-US"}**[{ *ip-address* \| **interface** *interface-type interface-number* }]{lang="EN-US"}]{#struct_0_18308_19795_585777771}
+**[ip **[{ *ip-address* \| **interface** *interface-type interface-number* }]]
 
-[**[undo ip]{lang="EN-US"}**]{#struct_0_18308_19795_1155982456}
+**[undo ip**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_888355513}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_1973540798}[实体的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+未配置PKI实体的IP地址。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x714394515}
+【视图】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_1801168070}[实体视图]{style="font-family:宋体"}
+PKI实体视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_1079363750}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x2000165673}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_206852050}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_1575503726}
+【参数】
 
-[*[ip-address]{lang="EN-US"}*]{#struct_0_18308_19795_x2022266624}[：指定]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[ip-address*]：指定PKI实体的IPv4地址。
 
-[**[interface ]{lang="EN-US"}***[interface-type interface-numbe]{lang="EN-US"}*]{#struct_0_18308_19795_1891883893}[：指定接口的主]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址作为]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址。]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[表示接口类型及接口编号。]{style="font-family:宋体"}
+**[interface ***interface-type interface-numbe*]：指定接口的主IPv4地址作为PKI实体的IPv4地址。*interface-type interface-number*表示接口类型及接口编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_x811730469}
+【使用指导】
 
-[[通过本命令，可以直接指定]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_1275908798}[实体的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，也可以指定设备上某接口的主]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址作为]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。如果指定使用某接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，则不要求本配置执行时该接口上已经配置了]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，只要设备申请证书时，该接口上配置了]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，就可以直接使用该地址作为]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体身份的一部分。]{style="font-family:宋体"}
+通过本命令，可以直接指定PKI实体的IP地址，也可以指定设备上某接口的主IPv4地址作为PKI实体的IP地址。如果指定使用某接口的IP地址，则不要求本配置执行时该接口上已经配置了IP地址，只要设备申请证书时，该接口上配置了IP地址，就可以直接使用该地址作为PKI实体身份的一部分。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x460026095}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1805835257}[配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体]{style="font-family:宋体"}[en]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[192.168.0.2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置PKI实体en的IP地址为192.168.0.2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x1999575849}
+\<Sysname\> system-view
 
-[\[Sysname\] pki entity en]{lang="EN-US"}
+Sysname pki entity en
 
-[\[Sysname-pki-entity-en\] ip 192.168.0.2]{lang="EN-US"}
-:::
-
-::: {#1883734488 .myid}
-[]{#_Toc404793075}[]{#struct_0_18308_19795_342552075}[]{#_Toc293674818}
+Sysname-pki-entity-en ip 192.168.0.2
 
 **PKI \-- PKI配置命令 \-- ldap-server**
 
 ------------------------------------------------------------------------
 
-[**[ldap-server]{lang="EN-US"}**]{#struct_0_18308_19795_x992793664}[命令用来指定]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[服务器。]{style="font-family:宋体"}
+**[ldap-server**]命令用来指定LDAP服务器。
 
-[**[undo ldap-server]{lang="EN-US"}**]{#struct_0_18308_19795_x388249483}[命令用来删除指定的]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[服务器。]{style="font-family:宋体"}
+**[undo ldap-server**]命令用来删除指定的LDAP服务器。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_379524099}
+【命令】
 
-[**[ldap-server host]{lang="EN-US"}**[ *hostname* \[ **port** *port-number* \] \[ **vpn-instance** *vpn-instance-name* \]]{lang="EN-US"}]{#struct_0_18308_19795_114511857}
+**[ldap-server host** *hostname* [ **port** *port-number*   **vpn-instance** *vpn-instance-name* ]]
 
-[**[undo ldap-server]{lang="EN-US"}**]{#struct_0_18308_19795_x1223366510}
+**[undo ldap-server**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_x312959753}
+【缺省情况】
 
-[[未指定]{style="font-family:宋体"}[LDAP]{lang="EN-US"}]{#struct_0_18308_19795_x1999510313}[服务器。]{style="font-family:宋体"}
+未指定LDAP服务器。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_1474653210}
+【视图】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x1780176545}[域视图]{style="font-family:宋体"}
+PKI域视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_1930029951}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x797096613}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x6353289}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x2131318611}
+【参数】
 
-[**[host ]{lang="EN-US"}***[host-name]{lang="EN-US"}*]{#struct_0_18308_19795_1451970767}[：]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[服务器的主机名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[个字符的字符串，区分大小写，支持]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[与]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址的表示方法以及]{style="font-family:宋体"}[DNS]{lang="EN-US"}[域名的表示方法。]{style="font-family:宋体"}
+**[host ***host-name*]：LDAP服务器的主机名，为1～255个字符的字符串，区分大小写，支持IPv4与IPv6地址的表示方法以及DNS域名的表示方法。
 
-[**[port]{lang="EN-US"}**[ *port-number*]{lang="EN-US"}]{#struct_0_18308_19795_x2026101780}[：]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[服务器的端口号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[389]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[port** *port-number*]：LDAP服务器的端口号，取值范围为1～65535，缺省值为389。
 
-[**[vpn-instance]{lang="EN-US"}***[ vpn-instance-name]{lang="EN-US"}*]{#struct_0_18308_19795_x434016193}[：指定]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[服务器所属的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[。]{style="font-family:宋体"}*[vpn-instance-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。若未指定本参数，则表示该]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[服务器属于公网。]{style="font-family:宋体"}
+**[vpn-instance*** vpn-instance-name*]：指定LDAP服务器所属的VPN。*vpn-instance-name*表示MPLS L3VPN实例名称，为1～31个字符的字符串，区分大小写。若未指定本参数，则表示该LDAP服务器属于公网。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_1900279920}
+【使用指导】
 
-[[以下两种情况下，需要配置]{style="font-family:宋体"}[LDAP]{lang="EN-US"}]{#struct_0_18308_19795_x660521571}[服务器：]{style="font-family:宋体"}
+以下两种情况下，需要配置LDAP服务器：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[通过]{style="font-family:宋体"}]{#struct_0_18308_19795_x1808493116}[LDAP]{lang="EN-US"}[协议获取本地证书或对端证书时，需要指定]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[服务器。]{style="font-family:宋体"}
+·通过LDAP协议获取本地证书或对端证书时，需要指定LDAP服务器。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[通过]{style="font-family:宋体"}]{#struct_0_18308_19795_1353909119}[LDAP]{lang="EN-US"}[协议获取]{style="font-family:宋体"}[CRL]{lang="EN-US"}[时，若]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中配置的]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[格式的]{style="font-family:宋体"}[CRL]{lang="EN-US"}[发布点]{style="font-family:宋体"}[URL]{lang="EN-US"}[中未携带主机名，则需要根据此处配置的]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[服务器地址来得到完整的]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[发布点]{style="font-family:宋体"}[URL]{lang="EN-US"}[。]{style="font-family:宋体"}
+·通过LDAP协议获取CRL时，若PKI域中配置的LDAP格式的CRL发布点URL中未携带主机名，则需要根据此处配置的LDAP服务器地址来得到完整的LDAP发布点URL。
 
-[[在一个]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_476337192}[域中，只能指定一个]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[服务器，若重复执行本命令，最新的配置生效。]{style="font-family:宋体"}
+在一个PKI域中，只能指定一个LDAP服务器，若重复执行本命令，最新的配置生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x2136034494}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_884181167}[指定]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[服务器的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[10.0.0.1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 指定LDAP服务器的IP地址为10.0.0.1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x433950657}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain aaa]{lang="EN-US"}
+Sysname pki domain aaa
 
-[\[Sysname-pki-domain-aaa\] ldap-server host 10.0.0.1]{lang="EN-US"}
+Sysname-pki-domain-aaa ldap-server host 10.0.0.1
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1631380213}[指定]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[服务器，]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[10.0.0.11]{lang="EN-US"}[，端口号为]{style="font-family:宋体"}[333]{lang="EN-US"}[，所在的]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[的实例名称为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 指定LDAP服务器，IP地址为10.0.0.11，端口号为333，所在的MPLS L3VPN的实例名称为vpn1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_1190794556}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain aaa]{lang="EN-US"}
+Sysname pki domain aaa
 
-[\[Sysname-pki-domain-aaa\] ldap-server host 10.0.0.11 port 333 vpn-instance vpn1]{lang="EN-US"}
+Sysname-pki-domain-aaa ldap-server host 10.0.0.11 port 333 vpn-instance vpn1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1610667331}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pki retrieve-certificate]{lang="EN-US"}**]{#struct_0_18308_19795_x1362477255}
+·**pki retrieve-certificate**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pki retrieve-crl]{lang="EN-US"}**]{#struct_0_18308_19795_878172889}
-:::
-
-::: {#2005552659 .myid}
-[]{#_Toc404793076}[]{#struct_0_18308_19795_261745688}[]{#_Toc279490538}[]{#_Toc279082867}[]{#_Toc265512465}[]{#_Toc61836616}
+·**pki retrieve-crl**
 
 **PKI \-- PKI配置命令 \-- locality**
 
 ------------------------------------------------------------------------
 
-[**[locality]{lang="EN-US"}**]{#struct_0_18308_19795_322495061}[命令用来配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体所在的地理区域名称，比如城市名称。]{style="font-family:宋体"}
+**[locality**]命令用来配置PKI实体所在的地理区域名称，比如城市名称。
 
-[**[undo locality]{lang="EN-US"}**]{#struct_0_18308_19795_x62248392}[命令用来删除配置的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体所在的地理区域名称。]{style="font-family:宋体"}
+**[undo locality**]命令用来删除配置的PKI实体所在的地理区域名称。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x433885121}
+【命令】
 
-[**[locality ]{lang="EN-US"}***[locality-name]{lang="EN-US"}*]{#struct_0_18308_19795_x1879335918}
+**[locality ***locality-name*]
 
-[**[undo locality]{lang="EN-US"}**]{#struct_0_18308_19795_x837042511}
+**[undo locality**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_611830500}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_1543718094}[实体所在的地理区域名称。]{style="font-family:宋体"}
+未配置PKI实体所在的地理区域名称。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x203954093}
+【视图】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x1616526276}[实体视图]{style="font-family:宋体"}
+PKI实体视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_643494325}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x1216647973}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x433819585}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_1589121884}
+【参数】
 
-[*[locality-name]{lang="EN-US"}*]{#struct_0_18308_19795_x628167707}[：]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体所在的地理区域的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写，不能包含逗号。]{style="font-family:宋体"}
+*[locality-name*]：PKI实体所在的地理区域的名称，为1～63个字符的字符串，区分大小写，不能包含逗号。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1378776007}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1556542155}[配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体]{style="font-family:宋体"}[en]{lang="EN-US"}[所在地理区域的名称为]{style="font-family:宋体"}[pukras]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置PKI实体en所在地理区域的名称为pukras。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_1686780722}
+\<Sysname\> system-view
 
-[\[Sysname\] pki entity en]{lang="EN-US"}
+Sysname pki entity en
 
-[\[Sysname-pki-entity-en\] locality pukras]{lang="EN-US"}
-:::
-
-::: {#-1479011592 .myid}
-[]{#_Toc404793077}[]{#struct_0_18308_19795_1551136526}[]{#_Toc279490539}[]{#_Toc279082868}[]{#_Toc265512466}[]{#_Toc61836617}
+Sysname-pki-entity-en locality pukras
 
 **PKI \-- PKI配置命令 \-- organization**
 
 ------------------------------------------------------------------------
 
-[**[organization]{lang="EN-US"}**]{#struct_0_18308_19795_x1816565423}[命令用来配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体所属组织的名称。]{style="font-family:宋体"}
+**[organization**]命令用来配置PKI实体所属组织的名称。
 
-[**[undo organization]{lang="EN-US"}**]{#struct_0_18308_19795_x434278337}[命令用来删除配置的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体所属组织的名称。]{style="font-family:宋体"}
+**[undo organization**]命令用来删除配置的PKI实体所属组织的名称。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1253669178}
+【命令】
 
-[**[organization]{lang="EN-US"}***[ org-name]{lang="EN-US"}*]{#struct_0_18308_19795_x238111130}
+**[organization*** org-name*]
 
-[**[undo organization]{lang="EN-US"}**]{#struct_0_18308_19795_1342598516}
+**[undo organization**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_713418764}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_1567137185}[实体所属组织名称。]{style="font-family:宋体"}
+未配置PKI实体所属组织名称。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x719027231}
+【视图】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_1117931094}[实体视图]{style="font-family:宋体"}
+PKI实体视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_x594571412}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x434212801}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_357747495}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1767374983}
+【参数】
 
-[*[org-name]{lang="EN-US"}*]{#struct_0_18308_19795_x1558868285}[：]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体所属的组织名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写，不能包含逗号。]{style="font-family:宋体"}
+*[org-name*]：PKI实体所属的组织名称，为1～63个字符的字符串，区分大小写，不能包含逗号。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1581727022}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x647455401}[配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体]{style="font-family:宋体"}[en]{lang="EN-US"}[所属的组织名称为]{style="font-family:宋体"}[abc]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置PKI实体en所属的组织名称为abc。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x305679492}
+\<Sysname\> system-view
 
-[[\[Sysname\] pki entity en]{lang="EN-US" style="font-size:8.5pt;
-font-family:\"Courier New\""}]{#struct_0_18308_19795_x25490658}
+Sysname pki entity en
 
-[[\[Sysname-pki-entity-en\] organization abc]{lang="EN-US"}]{#struct_0_18308_19795_198457172}
-:::
-
-::: {#1228747264 .myid}
-[]{#_Toc404793078}[]{#struct_0_18308_19795_x434147265}[]{#_Toc279490540}[]{#_Toc279082869}[]{#_Toc265512467}[]{#_Toc61836618}
+Sysname-pki-entity-en organization abc
 
 **PKI \-- PKI配置命令 \-- organization-unit**
 
 ------------------------------------------------------------------------
 
-[**[organization-unit]{lang="EN-US"}**]{#struct_0_18308_19795_756057145}[命令用来指定实体所属的组织部门的名称。]{style="font-family:宋体"}
+**[organization-unit**]命令用来指定实体所属的组织部门的名称。
 
-[**[undo organization-unit]{lang="EN-US"}**]{#struct_0_18308_19795_84192856}[命令用来删除实体所属的组织部门的名称。]{style="font-family:宋体"}
+**[undo organization-unit**]命令用来删除实体所属的组织部门的名称。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_1746686980}
+【命令】
 
-[**[organization-unit]{lang="EN-US"}***[ org-unit-name]{lang="EN-US"}*]{#struct_0_18308_19795_688424953}
+**[organization-unit*** org-unit-name*]
 
-[**[undo organization-unit]{lang="EN-US"}**]{#struct_0_18308_19795_x79681171}
+**[undo organization-unit**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_x65424882}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x866412868}[实体所属组织部门的名称。]{style="font-family:宋体"}
+未配置PKI实体所属组织部门的名称。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x453309824}
+【视图】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x434081729}[实体视图]{style="font-family:宋体"}
+PKI实体视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_694185238}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_1127759387}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_898714858}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_416738378}
+【参数】
 
-[*[org-unit-name]{lang="EN-US"}*]{#struct_0_18308_19795_370711683}[：]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体所属组织部门的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写，不能包含逗号。使用该参数可在同一个单位内区分不同部门的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体。]{style="font-family:宋体"}
+*[org-unit-name*]：PKI实体所属组织部门的名称，为1～63个字符的字符串，区分大小写，不能包含逗号。使用该参数可在同一个单位内区分不同部门的PKI实体。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1204222853}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1610691042}[配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体]{style="font-family:宋体"}[en]{lang="EN-US"}[所属组织部门的名称为]{style="font-family:宋体"}[rdtest]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置PKI实体en所属组织部门的名称为rdtest。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_1879019587}
+\<Sysname\> system-view
 
-[[\[Sysname\] pki entity en]{lang="EN-US" style="font-size:8.5pt;
-font-family:\"Courier New\""}]{#struct_0_18308_19795_705239948}
+Sysname pki entity en
 
-[[\[Sysname-pki-entity-en\] organization-unit rdtest]{lang="EN-US"}]{#struct_0_18308_19795_x433491905}
-:::
-
-::: {#-307252400 .myid}
-[]{#_Toc404793079}[]{#struct_0_18308_19795_x1078432264}
+Sysname-pki-entity-en organization-unit rdtest
 
 **PKI \-- PKI配置命令 \-- pki abort-certificate-request**
 
 ------------------------------------------------------------------------
 
-[**[pki abort-certificate-request]{lang="EN-US"}**]{#struct_0_18308_19795_x180068339}[命令用来停止证书申请过程。]{style="font-family:
-宋体"}
+**[pki abort-certificate-request**]命令用来停止证书申请过程。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x900686033}
+【命令】
 
-[**[pki abort-certificate-request]{lang="EN-US"}**]{#struct_0_18308_19795_920246999}**[ domain]{lang="FR"}***[ domain-name]{lang="EN-US"}*
+**[pki abort-certificate-request**]** domain*** domain-name*
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x828417416}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18308_19795_1876724924}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_46204692}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_1459961079}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x433426369}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_1649801571}
+【参数】
 
-[**[domain]{lang="FR"}***[ ]{lang="FR"}[domain-]{lang="EN-US"}[name]{lang="EN-US"}*]{#struct_0_18308_19795_272611183}[：]{style="font-family:宋体"}[指定证书所在的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写，不能包括"]{style="font-family:宋体"}[\~]{lang="EN-US"}["、"]{style="font-family:宋体"}[\*]{lang="EN-US"}["、"]{style="font-family:宋体"}[\\]{lang="EN-US"}["、"]{style="font-family:宋体"}[\|]{lang="EN-US"}["、"]{style="font-family:宋体"}[:]{lang="EN-US"}["、"]{style="font-family:宋体"}[.]{lang="EN-US"}["、"]{style="font-family:宋体"}[\<]{lang="EN-US"}["、"]{style="font-family:宋体"}[\>]{lang="EN-US"}["、"]{style="font-family:宋体"}[\"]{lang="EN-US"}["和"]{style="font-family:宋体"}[\']{lang="EN-US"}["。]{style="font-family:宋体"}
+**[domain***domain-name*]：指定证书所在的PKI域的名称，为1～31个字符的字符串，不区分大小写，不能包括"\~"、"\*"、"\"、"[\|]"、":"、"."、"\<"、"\>"、"\""和"\'"。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_531798935}
+【使用指导】
 
-[[用户在证书申请时，可能由于某种原因需要改变证书申请的一些参数，比如通用名、国家代码、]{style="font-family:宋体"}[FQDN]{lang="EN-US"}]{#struct_0_18308_19795_1174217556}[等，而此时证书申请正在运行，为了新的申请不与之前的申请发生冲突，建议先停止之前的申请程序，再进行新的申请。]{style="font-family:宋体"}
+用户在证书申请时，可能由于某种原因需要改变证书申请的一些参数，比如通用名、国家代码、FQDN等，而此时证书申请正在运行，为了新的申请不与之前的申请发生冲突，建议先停止之前的申请程序，再进行新的申请。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x200770477}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x1458769532}[停止证书申请过程。]{style="font-family:宋体"}
+\# 停止证书申请过程。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_399305325}
+\<Sysname\> system-view
 
-[\[Sysname\] pki abort-certificate- request domain 1]{lang="EN-US"}
+Sysname pki abort-certificate- request domain 1
 
-[The certificate request is in process.]{lang="EN-US"}
+The certificate request is in process.
 
-[Confirm to abort it? \[Y/N\]:y]{lang="EN-US"}
+Confirm to abort it? [Y/N:y]
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x434016192}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display pki certificate request-status]{lang="EN-US"}**]{#struct_0_18308_19795_1900214384}
+·**display pki certificate request-status**
 
-[[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol;border:none"}]{.TerminalDisplayshading}**[pki request-certificate domain]{lang="EN-US"}**]{#struct_0_18308_19795_x270535024}
-:::
-
-::: {#-515143108 .myid}
-[]{#_Toc404793080}[]{#struct_0_18308_19795_x632463313}[]{#_Toc279163107}[]{#_Toc265512469}[]{#_Toc133119717}[]{#_Toc128811559}[]{#_Toc124237080}
+·{.TerminalDisplayshading}**pki request-certificate domain**
 
 **PKI \-- PKI配置命令 \-- pki certificate access-control-policy**
 
 ------------------------------------------------------------------------
 
-[**[pki certificate access-control-policy]{lang="EN-US"}**]{#struct_0_18308_19795_1483429678}[命令用来创建证书访问控制策略，并进入证书访问控制策略视图。如果指定的证书访问控制策略已存在，则直接进入其视图。]{style="font-family:宋体"}
+**[pki certificate access-control-policy**]命令用来创建证书访问控制策略，并进入证书访问控制策略视图。如果指定的证书访问控制策略已存在，则直接进入其视图。
 
-[**[undo pki certificate access-control-policy]{lang="EN-US"}**]{#struct_0_18308_19795_1231308462}[命令用来删除指定的证书访问控制策略。]{style="font-family:宋体"}
+**[undo pki certificate access-control-policy**]命令用来删除指定的证书访问控制策略。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_709147156}
+【命令】
 
-[**[pki certificate access-control-policy ]{lang="EN-US"}***[policy-name]{lang="EN-US"}*]{#struct_0_18308_19795_x433950656}
+**[pki certificate access-control-policy ***policy-name*]
 
-[**[undo pki certificate access-control-policy ]{lang="EN-US"}***[policy-name]{lang="EN-US"}*]{#struct_0_18308_19795_1631314677}
+**[undo pki certificate access-control-policy ***policy-name*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1878310190}
+【缺省情况】
 
-[[不存在证书访问控制策略。]{style="font-family:宋体"}]{#struct_0_18308_19795_x1433111660}
+不存在证书访问控制策略。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_1351281247}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18308_19795_x1738035012}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_1338829765}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_339559510}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_1515236961}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x433885120}
+【参数】
 
-[*[policy-name]{lang="EN-US"}*]{#struct_0_18308_19795_x1879270382}[：表示证书访问控制策略名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+*[policy-name*]：表示证书访问控制策略名称，为1～31个字符的字符串，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1971136191}
+【使用指导】
 
-[[一个证书访问控制策略中可以定义多个证书属性的访问控制规则。]{style="font-family:宋体"}]{#struct_0_18308_19795_x1554460711}
+一个证书访问控制策略中可以定义多个证书属性的访问控制规则。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x319056707}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1035582191}[配置一个名称为]{style="font-family:宋体"}[mypolicy]{lang="EN-US"}[的证书访问控制策略，并进入证书访问控制策略视图。]{style="font-family:宋体"}
+\# 配置一个名称为mypolicy的证书访问控制策略，并进入证书访问控制策略视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_602537399}
+\<Sysname\> system-view
 
-[\[]{lang="EN-US"}[Sysname]{lang="ES-AR"}[\] pki certificate access-control-policy mypolicy]{lang="EN-US"}
+Sysname pki certificate access-control-policy mypolicy
 
-[\[]{lang="EN-US"}[Sysname-pki-cert-acp-mypolicy]{lang="ES-AR"}[\]]{lang="EN-US"}
+Sysname-pki-cert-acp-mypolicy
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_501511056}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display pki certificate access-control-policy]{lang="EN-US"}**]{#struct_0_18308_19795_503116796}
+·**display pki certificate access-control-policy**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[rule]{lang="EN-US"}**]{#struct_0_18308_19795_x433819584}
-:::
-
-::: {#642182618 .myid}
-[]{#_Toc404793081}[]{#struct_0_18308_19795_1589056348}[]{#_Toc279490543}[]{#_Toc279082872}[]{#_Toc265512470}[]{#_Toc133119715}[]{#_Toc128811557}[]{#_Toc124237078}
+·**rule**
 
 **PKI \-- PKI配置命令 \-- pki certificate attribute-group**
 
 ------------------------------------------------------------------------
 
-[**[pki certificate attribute-group]{lang="EN-US"}**]{#struct_0_18308_19795_x1387765589}[命令用来]{style="font-family:宋体"}[创建证书属性组]{style="font-family:宋体"}[并进入证书属性组视图。如果指定的]{style="font-family:宋体"}[证书属性组]{style="font-family:宋体"}[已存在，则直接进入其视图。]{style="font-family:宋体"}
+**[pki certificate attribute-group**]命令用来创建证书属性组并进入证书属性组视图。如果指定的证书属性组已存在，则直接进入其视图。
 
-[**[undo pki certificate attribute-group]{lang="EN-US"}**]{#struct_0_18308_19795_1734524801}[命令用来删除指定的证书属性组。]{style="font-family:宋体"}
+**[undo pki certificate attribute-group**]命令用来删除指定的证书属性组。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_809517579}
+【命令】
 
-[**[pki certificate attribute-group ]{lang="EN-US"}***[group-nam]{lang="EN-US"}[e]{lang="EN-US"}*]{#struct_0_18308_19795_x1271541715}
+**[pki certificate attribute-group ***group-name*]
 
-[**[undo pki certificate attribute-group]{lang="EN-US"}**[ *group-name* ]{lang="EN-US"}]{#struct_0_18308_19795_x744250465}
+**[undo pki certificate attribute-group** *group-name* ]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_x461107035}
+【缺省情况】
 
-[[不存在证书属性组。]{style="font-family:宋体"}]{#struct_0_18308_19795_1028083965}
+不存在证书属性组。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x434278336}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18308_19795_x1253734714}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_2127835815}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x1814378361}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_1486024616}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_1699826141}
+【参数】
 
-[*[group-name]{lang="EN-US"}*]{#struct_0_18308_19795_x396607266}[：证书属性组名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+*[group-name*]：证书属性组名称，为1～31个字符的字符串，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1714775292}
+【使用指导】
 
-[[一个证书属性组就是一系列证书属性规则（通过]{style="font-family:宋体"}**[attribute]{lang="EN-US"}**]{#struct_0_18308_19795_163280847}[命令配置）的集合，这些属性规则定义了对证书的颁发者名、主题名以及备用主题名进行过滤的匹配条件。当证书属性组下没有任何属性规则时，则认为对证书的属性没有任何限制。]{style="font-family:宋体"}
+一个证书属性组就是一系列证书属性规则（通过**attribute**命令配置）的集合，这些属性规则定义了对证书的颁发者名、主题名以及备用主题名进行过滤的匹配条件。当证书属性组下没有任何属性规则时，则认为对证书的属性没有任何限制。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x434212800}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_357681959}[创建一个名为]{style="font-family:宋体"}[mygroup]{lang="EN-US"}[的]{style="font-family:宋体"}[证书属性组，并进入证书属性组视图。]{style="font-family:宋体"}
+\# 创建一个名为mygroup的证书属性组，并进入证书属性组视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_232526242}
+\<Sysname\> system-view
 
-[\[Sysname\] pki certificate attribute-group mygroup]{lang="EN-US"}
+Sysname pki certificate attribute-group mygroup
 
-[\[Sysname-pki-cert-attribute-group-mygroup\]]{lang="EN-US"}
+Sysname-pki-cert-attribute-group-mygroup
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_2067927121}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[attribute]{lang="EN-US"}**]{#struct_0_18308_19795_x225806787}
+·**attribute**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display pki certificate attribute-group]{lang="EN-US"}**]{#struct_0_18308_19795_x2005067602}
+·**display pki certificate attribute-group**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[rule]{lang="EN-US"}**]{#struct_0_18308_19795_x1089616586}
-:::
-
-::: {#1673410531 .myid}
-[]{#_Toc404793082}[]{#struct_0_18308_19795_x1359932914}[]{#_Toc279163116}[]{#_Toc265512471}
+·**rule**
 
 **PKI \-- PKI配置命令 \-- pki delete-certificate**
 
 ------------------------------------------------------------------------
 
-[**[pki delete-certificate]{lang="EN-US"}**]{#struct_0_18308_19795_x1548932076}[命令用来删除]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中的证书。]{style="font-family:宋体"}
+**[pki delete-certificate**]命令用来删除PKI域中的证书。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x434147264}
+【命令】
 
-[**[pki delete-certificate]{lang="EN-US"}**[ **domain** *domain*-*name* { **ca** \| **local** \| **peer** \[ **serial** *serial-num* \] }]{lang="EN-US"}]{#struct_0_18308_19795_756122681}
+**[pki delete-certificate**[ **domain** *domain*-*name* { **ca** \| **local** \| **peer** [ **serial** *serial-num* ] }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_856552870}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18308_19795_x2114795465}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_1635237576}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_199538574}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x951470435}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_498332298}
+【参数】
 
-[**[domain ]{lang="EN-US"}***[domain]{lang="EN-US"}*[-*name*]{lang="EN-US"}]{#struct_0_18308_19795_x1677100766}[：证书所在的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写，不能包括"]{style="font-family:宋体"}[\~]{lang="EN-US"}["、"]{style="font-family:宋体"}[\*]{lang="EN-US"}["、"]{style="font-family:宋体"}[\\]{lang="EN-US"}["、"]{style="font-family:宋体"}[\|]{lang="EN-US"}["、"]{style="font-family:宋体"}[:]{lang="EN-US"}["、"]{style="font-family:宋体"}[.]{lang="EN-US"}["、"]{style="font-family:宋体"}[\<]{lang="EN-US"}["、"]{style="font-family:宋体"}[\>]{lang="EN-US"}["、"]{style="font-family:宋体"}[\"]{lang="EN-US"}["和"]{style="font-family:宋体"}[\']{lang="EN-US"}["。]{style="font-family:宋体"}
+**[domain ***domain*-*name*]：证书所在的PKI域的名称，为1～31个字符的字符串，不区分大小写，不能包括"\~"、"\*"、"\"、"[\|]"、":"、"."、"\<"、"\>"、"\""和"\'"。
 
-[**[ca]{lang="EN-US"}**]{#struct_0_18308_19795_x434081728}[：表示删除]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书。]{style="font-family:宋体"}
+**[ca**]：表示删除CA证书。
 
-[**[local]{lang="EN-US"}**]{#struct_0_18308_19795_694250774}[：表示删除本地证书。]{style="font-family:宋体"}
+**[local**]：表示删除本地证书。
 
-[**[peer]{lang="EN-US"}**]{#struct_0_18308_19795_643292801}[：表示删除对端证书。]{style="font-family:宋体"}
+**[peer**]：表示删除对端证书。
 
-[**[serial]{lang="EN-US"}***[ serial-num]{lang="EN-US"}*]{#struct_0_18308_19795_807247124}[：表示通过指定序列号删除一个指定的对端证书。]{style="font-family:宋体"}*[serial-num]{lang="EN-US"}*[为对端证书的序列号，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[127]{lang="EN-US"}[个字符的字符串，不区分大小写。在每个]{style="font-family:宋体"}[CA]{lang="EN-US"}[签发的证书范围内，序列号可以唯一标识一个证书。如果不指定本参数，则表示删除本]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中的所有对端证书。]{style="font-family:宋体"}
+**[serial*** serial-num*]：表示通过指定序列号删除一个指定的对端证书。*serial-num*为对端证书的序列号，为1～127个字符的字符串，不区分大小写。在每个CA签发的证书范围内，序列号可以唯一标识一个证书。如果不指定本参数，则表示删除本PKI域中的所有对端证书。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_2113788301}
+【使用指导】
 
-[[删除]{style="font-family:宋体"}[CA]{lang="EN-US"}]{#struct_0_18308_19795_x781476515}[证书时将同时删除所在]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中的本地证书和所有对端证书，以及]{style="font-family:宋体"}[CRL]{lang="EN-US"}[。]{style="font-family:宋体"}
+删除CA证书时将同时删除所在PKI域中的本地证书和所有对端证书，以及CRL。
 
-[[如果需要删除指定的对端证书，则需要首先通过]{style="font-family:宋体"}**[display pki certificate]{lang="EN-US"}**]{#struct_0_18308_19795_196685344}[命令查看本域中已有的对端证书的序列号，然后再通过指定序列号的方式删除该对端证书。]{style="font-family:宋体"}
+如果需要删除指定的对端证书，则需要首先通过**display pki certificate**命令查看本域中已有的对端证书的序列号，然后再通过指定序列号的方式删除该对端证书。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_50311321}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x318181871}[删除]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域]{style="font-family:宋体"}[aaa]{lang="EN-US"}[中的]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书。]{style="font-family:宋体"}
+\# 删除PKI域aaa中的CA证书。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x433491904}
+\<Sysname\> system-view
 
-[\[Sysname\] pki delete-certificate domain aaa ca]{lang="EN-US"}
+Sysname pki delete-certificate domain aaa ca
 
-[Local certificates, peer certificates and CRL will also be deleted while deleting the CA certificate.]{lang="EN-US"}
+Local certificates, peer certificates and CRL will also be deleted while deleting the CA certificate.
 
-[Confirm to delete the CA certificate? \[Y/N\]:y]{lang="EN-US"}
+Confirm to delete the CA certificate? [Y/N:y]
 
-[\[Sysname\]]{lang="EN-US"}
+Sysname
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x1078497800}[删除]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域]{style="font-family:宋体"}[aaa]{lang="EN-US"}[中的本地证书。]{style="font-family:宋体"}
+\# 删除PKI域aaa中的本地证书。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_1403748941}
+\<Sysname\> system-view
 
-[\[Sysname\] pki delete-certificate domain aaa local]{lang="EN-US"}
+Sysname pki delete-certificate domain aaa local
 
-[\[Sysname\]]{lang="EN-US"}
+Sysname
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1012648037}[删除]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域]{style="font-family:宋体"}[aaa]{lang="EN-US"}[中的所有对端证书。]{style="font-family:宋体"}
+\# 删除PKI域aaa中的所有对端证书。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_1373415864}
+\<Sysname\> system-view
 
-[\[Sysname\] pki delete-certificate domain aaa peer]{lang="EN-US"}
+Sysname pki delete-certificate domain aaa peer
 
-[\[Sysname\]]{lang="EN-US"}
+Sysname
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x1328442798}[首先查看]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域]{style="font-family:宋体"}[aaa]{lang="EN-US"}[中的对端证书，然后通过指定序列号的方式删除对端证书。]{style="font-family:宋体"}
+\# 首先查看PKI域aaa中的对端证书，然后通过指定序列号的方式删除对端证书。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x433426368}
+\<Sysname\> system-view
 
-[\[Sysname\] display pki certificate domain aaa peer]{lang="EN-US"}
+Sysname display pki certificate domain aaa peer
 
-[Total peer certificates: 1]{lang="EN-US"}
+Total peer certificates: 1
 
-[ ]{lang="EN-US"}
+Serial Number: 9a0337eb2156ba1f5476e4d754a5a9f7
 
-[Serial Number: 9a0337eb2156ba1f5476e4d754a5a9f7]{lang="EN-US"}
+Subject  Name: CN=abc
 
-[Subject  Name: CN=abc]{lang="EN-US"}
+Sysname pki delete-certificate domain aaa peer serial 9a0337eb2156ba1f5476e4d754a5a9f7
 
-[\[Sysname\] pki delete-certificate domain aaa peer serial 9a0337eb2156ba1f5476e4d754a5a9f7]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_1649867107}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display pki certificate]{lang="EN-US"}**]{#struct_0_18308_19795_1856961478}
-:::
-
-::: {#-902351988 .myid}
-[]{#_Toc404793083}[]{#struct_0_18308_19795_x482955438}[]{#_Toc285123230}
+·**display pki certificate**
 
 **PKI \-- PKI配置命令 \-- pki domain**
 
 ------------------------------------------------------------------------
 
-[**[pki domain]{lang="EN-US"}**]{#struct_0_18308_19795_1992002645}[命令用来创建]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域，并进入]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域视图。如果指定的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域已存在，则直接进入其视图。]{style="font-family:宋体"}
+**[pki domain**]命令用来创建PKI域，并进入PKI域视图。如果指定的PKI域已存在，则直接进入其视图。
 
-[**[undo pki domain]{lang="EN-US"}**]{#struct_0_18308_19795_x1973588101}[命令用来删除指定的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域。]{style="font-family:宋体"}
+**[undo pki domain**]命令用来删除指定的PKI域。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1044126306}
+【命令】
 
-[**[pki domain ]{lang="EN-US"}***[domain-name]{lang="EN-US"}*]{#struct_0_18308_19795_1283618772}
+**[pki domain ***domain-name*]
 
-[**[undo pki domain ]{lang="EN-US"}***[domain-name]{lang="EN-US"}*]{#struct_0_18308_19795_x434016195}
+**[undo pki domain ***domain-name*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_1900410992}
+【缺省情况】
 
-[[不存在]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_551691117}[域。]{style="font-family:宋体"}
+不存在PKI域。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_671055483}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18308_19795_902805829}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_537916999}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_2146175610}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_1023072546}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x202564326}
+【参数】
 
-[*[domain-name]{lang="EN-US"}*]{#struct_0_18308_19795_x433950659}[：]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写，不能包括"]{style="font-family:宋体"}[\~]{lang="EN-US"}["、"]{style="font-family:宋体"}[\*]{lang="EN-US"}["、"]{style="font-family:宋体"}[\\]{lang="EN-US"}["、"]{style="font-family:宋体"}[\|]{lang="EN-US"}["、"]{style="font-family:宋体"}[:]{lang="EN-US"}["、"]{style="font-family:宋体"}[.]{lang="EN-US"}["、"]{style="font-family:宋体"}[\<]{lang="EN-US"}["、"]{style="font-family:宋体"}[\>]{lang="EN-US"}["、"]{style="font-family:宋体"}[\"]{lang="EN-US"}["和"]{style="font-family:宋体"}[\']{lang="EN-US"}["。]{style="font-family:宋体"}
+*[domain-name*]：PKI域名，为1～31个字符的字符串，不区分大小写，不能包括"\~"、"\*"、"\"、"[\|]"、":"、"."、"\<"、"\>"、"\""和"\'"。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_1630986997}
+【使用指导】
 
-[[删除]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x329307452}[域的同时，会将该域相关的证书和]{style="font-family:宋体"}[CRL]{lang="EN-US"}[都删除掉，因此请慎重操作。]{style="font-family:宋体"}
+删除PKI域的同时，会将该域相关的证书和CRL都删除掉，因此请慎重操作。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_1806666849}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_375327962}[创建]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域]{style="font-family:宋体"}[aaa]{lang="EN-US"}[并进入其视图。]{style="font-family:宋体"}
+\# 创建PKI域aaa并进入其视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x1400943477}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain aaa]{lang="EN-US"}
+Sysname pki domain aaa
 
-[\[Sysname-pki-domain-aaa\]]{lang="EN-US"}
-:::
-
-::: {#-62323887 .myid}
-[]{#_Toc404793084}[]{#struct_0_18308_19795_x756073126}[]{#_Toc279490533}[]{#_Toc279082862}[]{#_Toc265512473}[]{#_Toc61836620}[]{#_Toc298870235}[]{#_Toc298924384}
+Sysname-pki-domain-aaa
 
 **PKI \-- PKI配置命令 \-- pki entity**
 
 ------------------------------------------------------------------------
 
-[**[pki entity]{lang="EN-US"}**]{#struct_0_18308_19795_x1211198507}[命令用来创建]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体，并进入]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体视图。如果指定的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体已存在，则直接进入其视图。]{style="font-family:宋体"}
+**[pki entity**]命令用来创建PKI实体，并进入PKI实体视图。如果指定的PKI实体已存在，则直接进入其视图。
 
-[**[undo pki entity]{lang="EN-US"}**]{#struct_0_18308_19795_2136193075}[命令用来删除指定的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体。]{style="font-family:宋体"}
+**[undo pki entity**]命令用来删除指定的PKI实体。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x433885123}
+【命令】
 
-[**[pki entity ]{lang="EN-US"}***[entity-name]{lang="EN-US"}*]{#struct_0_18308_19795_x1879466990}
+**[pki entity ***entity-name*]
 
-[**[undo pki entity]{lang="EN-US"}**[ *entity-name*]{lang="EN-US"}]{#struct_0_18308_19795_648548058}
+**[undo pki entity** *entity-name*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_1448434033}
+【缺省情况】
 
-[[无]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_1968795879}[实体存在。]{style="font-family:宋体"}
+无PKI实体存在。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1692689799}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18308_19795_x1347044751}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_x2069755211}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_1894772125}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x433819587}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_1589252956}
+【参数】
 
-[*[entity-name]{lang="EN-US"}*]{#struct_0_18308_19795_1729531522}[：]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+*[entity-name*]：PKI实体的名称，为1～31个字符的字符串，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_334669785}
+【使用指导】
 
-[[在]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_1324217490}[实体视图下可配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体的各种属性（通用名、组织部门、组织、地理区域、省、国家、]{style="font-family:宋体"}[FQDN]{lang="EN-US"}[、]{style="font-family:宋体"}[IP]{lang="EN-US"}[），这些属性用于描述]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体的身份信息。当申请证书时，]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体的信息将作为证书中主题（]{style="font-family:宋体"}[Subjuct]{lang="EN-US"}[）部分的内容。]{style="font-family:宋体"}
+在PKI实体视图下可配置PKI实体的各种属性（通用名、组织部门、组织、地理区域、省、国家、FQDN、IP），这些属性用于描述PKI实体的身份信息。当申请证书时，PKI实体的信息将作为证书中主题（Subjuct）部分的内容。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_1679671166}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_907001891}[创建名称为]{style="font-family:宋体"}[en]{lang="EN-US"}[的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体，并进入该实体视图。]{style="font-family:宋体"}
+\# 创建名称为en的PKI实体，并进入该实体视图。
 
-[[\<Sysname\> system-view]{lang="ES-AR"}]{#struct_0_18308_19795_363638198}
+\<Sysname\> system-view
 
-[\[Sysname\] pki entity en]{lang="ES-AR"}
+Sysname pki entity en
 
-[\[Sysname-pki-entity-en\]]{lang="ES-AR"}
+Sysname-pki-entity-en
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1088710748}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pki domain]{lang="EN-US"}**]{#struct_0_18308_19795_x434278339}
-:::
-
-::: {#797454571 .myid}
-[]{#_Toc404793085}[]{#struct_0_18308_19795_x1254324538}[]{#_Toc279163115}
+·**pki domain**
 
 **PKI \-- PKI配置命令 \-- pki export**
 
 ------------------------------------------------------------------------
 
-[**[pki export]{lang="EN-US"}**]{#struct_0_18308_19795_1040813317}[命令用来将]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中的]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书、本地证书导出到文件中或终端上。]{style="font-family:宋体"}
+**[pki export**]命令用来将PKI域中的CA证书、本地证书导出到文件中或终端上。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1884762574}
+【命令】
 
-[**[pki export]{lang="EN-US"}**[ **domain** *domain*-*name* **der** { **all** \| **ca** \| **local** } **filename** *filename*]{lang="EN-US"}]{#struct_0_18308_19795_x1065264440}
+**[pki export**[ **domain** *domain*-*name* **der** { **all** \| **ca** \| **local** } **filename** *filename*]]
 
-[**[pki export]{lang="EN-US"}**[ **domain** *domain*-*name* **p12** { **all** \| **local** } **passphrase** *p12passwordstring* **filename** *filename*]{lang="EN-US"}]{#struct_0_18308_19795_x2020465911}
+**[pki export**[ **domain** *domain*-*name* **p12** { **all** \| **local** } **passphrase** *p12passwordstring* **filename** *filename*]]
 
-[**[pki export]{lang="EN-US"}**[ **domain** *domain*-*name* **pem** { { **all** \| **local** } \[ { **3des-cbc** \| **aes-128-cbc** \| **aes-192-cbc** \| **aes-256-cbc** \| **des-cbc** } *pempasswordstring* \] \| **ca** } \[ **filename** *filename* \]]{lang="EN-US"}]{#struct_0_18308_19795_1609578753}
+**[pki export**[ **domain** *domain*-*name* **pem** { { **all** \| **local** } [ { **3des-cbc** \| **aes-128-cbc** \| **aes-192-cbc** \| **aes-256-cbc** \| **des-cbc** } *pempasswordstring* ] \| **ca** }  **filename** *filename* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1141848039}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18308_19795_x1239509414}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_x434212803}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_357878567}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x753038723}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1003055490}
+【参数】
 
-[**[domain ]{lang="EN-US"}***[domain]{lang="EN-US"}*[-*name*]{lang="EN-US"}]{#struct_0_18308_19795_x2130711331}[：证书所在的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写，不能包括"]{style="font-family:宋体"}[\~]{lang="EN-US"}["、"]{style="font-family:宋体"}[\*]{lang="EN-US"}["、"]{style="font-family:宋体"}[\\]{lang="EN-US"}["、"]{style="font-family:宋体"}[\|]{lang="EN-US"}["、"]{style="font-family:宋体"}[:]{lang="EN-US"}["、"]{style="font-family:宋体"}[.]{lang="EN-US"}["、"]{style="font-family:宋体"}[\<]{lang="EN-US"}["、"]{style="font-family:宋体"}[\>]{lang="EN-US"}["、"]{style="font-family:宋体"}[\"]{lang="EN-US"}["和"]{style="font-family:宋体"}[\']{lang="EN-US"}["。]{style="font-family:宋体"}
+**[domain ***domain*-*name*]：证书所在的PKI域的名称，为1～31个字符的字符串，不区分大小写，不能包括"\~"、"\*"、"\"、"[\|]"、":"、"."、"\<"、"\>"、"\""和"\'"。
 
-[**[der]{lang="EN-US"}**]{#struct_0_18308_19795_506220661}[：指定证书文件格式为]{style="font-family:宋体"}[DER]{lang="EN-US"}[编码。]{style="font-family:宋体"}
+**[der**]：指定证书文件格式为DER编码。
 
-[**[p12]{lang="EN-US"}**]{#struct_0_18308_19795_1978269355}[：]{style="font-family:宋体"}[指定证书文件格式为]{style="font-family:宋体"}[PKCS12]{lang="EN-US"}[编码。]{style="font-family:宋体"}
+**[p12**]：指定证书文件格式为PKCS12编码。
 
-[**[pem]{lang="EN-US"}**]{#struct_0_18308_19795_465837017}[：指定证书文件格式为]{style="font-family:宋体"}[PEM]{lang="EN-US"}[编码。]{style="font-family:宋体"}
+**[pem**]：指定证书文件格式为PEM编码。
 
-[**[all]{lang="EN-US"}**]{#struct_0_18308_19795_x777252887}[：表示导出所有证书，包括]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中所有的]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书和本地证书，但不包括]{style="font-family:宋体"}[RA]{lang="EN-US"}[证书。]{style="font-family:宋体"}
+**[all**]：表示导出所有证书，包括PKI域中所有的CA证书和本地证书，但不包括RA证书。
 
-[**[ca]{lang="EN-US"}**]{#struct_0_18308_19795_x434147267}[：表示导出]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书。]{style="font-family:宋体"}
+**[ca**]：表示导出CA证书。
 
-[**[local]{lang="EN-US"}**]{#struct_0_18308_19795_755926073}[：表示导出本地证书或者本地证书和其对应私钥。]{style="font-family:宋体"}
+**[local**]：表示导出本地证书或者本地证书和其对应私钥。
 
-[**[passphrase]{lang="EN-US"}***[ p12]{lang="EN-US"}[passwordstring]{lang="EN-US"}*]{#struct_0_18308_19795_x827126965}[：指定对]{style="font-family:宋体"}[PKCS12]{lang="EN-US"}[编码格式的本地证书对应的私钥进行加密所采用的口令。]{style="font-family:宋体"}
+**[passphrase*** p12passwordstring*]：指定对PKCS12编码格式的本地证书对应的私钥进行加密所采用的口令。
 
-[**[3des-cbc]{lang="EN-US"}**]{#struct_0_18308_19795_x721217639}**[：]{style="font-family:宋体"}**[对本地证书对应的私钥数据采用]{style="font-family:宋体"}[3DES_CBC]{lang="EN-US"}[算法进行加密。]{style="font-family:宋体"}
+**[3des-cbc**]**：**对本地证书对应的私钥数据采用3DES_CBC算法进行加密。
 
-[**[aes-128-cbc]{lang="EN-US"}**]{#struct_0_18308_19795_496077849}[：]{style="font-family:宋体"}[对本地证书对应的私钥数据采用]{style="font-family:宋体"}[128]{lang="EN-US"}[位]{style="font-family:宋体"}[AES_CBC]{lang="EN-US"}[算法进行加密。]{style="font-family:宋体"}
+**[aes-128-cbc**]：对本地证书对应的私钥数据采用128位AES_CBC算法进行加密。
 
-[**[aes-192-cbc]{lang="EN-US"}**]{#struct_0_18308_19795_2063964749}[：]{style="font-family:宋体"}[对本地证书对应的私钥数据采用]{style="font-family:宋体"}[192]{lang="EN-US"}[位]{style="font-family:宋体"}[AES_CBC]{lang="EN-US"}[算法进行加密。]{style="font-family:宋体"}
+**[aes-192-cbc**]：对本地证书对应的私钥数据采用192位AES_CBC算法进行加密。
 
-[**[aes-256-cbc]{lang="EN-US"}**]{#struct_0_18308_19795_16128106}[：]{style="font-family:宋体"}[对本地证书对应的私钥数据采用]{style="font-family:宋体"}[256]{lang="EN-US"}[位]{style="font-family:宋体"}[AES_CBC]{lang="EN-US"}[算法进行加密。]{style="font-family:宋体"}
+**[aes-256-cbc**]：对本地证书对应的私钥数据采用256位AES_CBC算法进行加密。
 
-[**[des-cbc]{lang="EN-US"}**]{#struct_0_18308_19795_228586848}[：]{style="font-family:宋体"}[对本地证书对应的私钥数据采用]{style="font-family:宋体"}[DES_CBC]{lang="EN-US"}[算法进行加密。]{style="font-family:宋体"}
+**[des-cbc**]：对本地证书对应的私钥数据采用DES_CBC算法进行加密。
 
-[*[pem]{lang="EN-US"}[passwordstring]{lang="EN-US"}*]{#struct_0_18308_19795_x708393703}[：指定对]{style="font-family:宋体"}[PEM]{lang="EN-US"}[编码格式的本地证书对应的私钥进行加密所采用的口令。]{style="font-family:宋体"}
+*[pempasswordstring*]：指定对PEM编码格式的本地证书对应的私钥进行加密所采用的口令。
 
-[**[filename ]{lang="EN-US"}***[filename]{lang="EN-US"}*]{#struct_0_18308_19795_x434081731}[：指定保存证书的文件名，不区分大小写。如果不指定本参数，则表示要将证书直接导出到终端上显示，这种方式仅]{style="font-family:宋体"}[PEM]{lang="EN-US"}[编码格式的证书才支持。]{style="font-family:宋体"}
+**[filename ***filename*]：指定保存证书的文件名，不区分大小写。如果不指定本参数，则表示要将证书直接导出到终端上显示，这种方式仅PEM编码格式的证书才支持。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_694709525}
+【使用指导】
 
-[[导出]{style="font-family:宋体"}[CA]{lang="EN-US"}]{#struct_0_18308_19795_802146429}[证书时，如果]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中只有一个]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书则导出单个]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书到用户指定的一个文件或终端，如果是一个]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书链则导出整个]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书链到用户指定的一个文件或终端。]{style="font-family:宋体"}
+导出CA证书时，如果PKI域中只有一个CA证书则导出单个CA证书到用户指定的一个文件或终端，如果是一个CA证书链则导出整个CA证书链到用户指定的一个文件或终端。
 
-[[导出本地证书时，设备上实际保存证书的证书文件名称并不一定是用户指定的名称，它与本地证书的密钥对用途相关，具体的命名规则如下（假设用户指定的文件名为]{style="font-family:宋体"}*[filename]{lang="EN-US"}*]{#struct_0_18308_19795_x2003141998}[）：]{style="font-family:宋体"}
+导出本地证书时，设备上实际保存证书的证书文件名称并不一定是用户指定的名称，它与本地证书的密钥对用途相关，具体的命名规则如下（假设用户指定的文件名为*filename*）：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果本地证书的密钥对用途为签名，则证书文件名称为]{style="font-family:宋体"}]{#struct_0_18308_19795_x1371203249}*[filename]{lang="EN-US"}*[-signature]{lang="EN-US"}[；]{style="font-family:宋体"}
+·如果本地证书的密钥对用途为签名，则证书文件名称为*filename*-signature；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果本地证书的密钥对用途为加密，则证书文件名称为]{style="font-family:宋体"}]{#struct_0_18308_19795_x134344569}*[filename]{lang="EN-US"}*[-encryption]{lang="EN-US"}[；]{style="font-family:宋体"}
+·如果本地证书的密钥对用途为加密，则证书文件名称为*filename*-encryption；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果本地证书的密钥对用途为通用（]{style="font-family:宋体"}]{#struct_0_18308_19795_1571622860}[RSA/ECDSA/DSA]{lang="EN-US"}[），则证书文件名称为用户输入的]{style="font-family:宋体"}*[filename]{lang="EN-US"}*[。]{style="font-family:宋体"}
+·如果本地证书的密钥对用途为通用（RSA/ECDSA/DSA），则证书文件名称为用户输入的*filename*。
 
-[[导出本地证书时，如果]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x161931788}[域中有两个本地证书，则导出结果如下：]{style="font-family:宋体"}
+导出本地证书时，如果PKI域中有两个本地证书，则导出结果如下：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若指定文件名，则将每个本地证书分别导出到一个单独的文件中；]{style="font-family:宋体"}]{#struct_0_18308_19795_x812870068}
+·若指定文件名，则将每个本地证书分别导出到一个单独的文件中；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若不指定文件名，则将所有本地证书一次性全部导出到终端上，并由不同的提示信息进行分割显示。]{style="font-family:宋体"}]{#struct_0_18308_19795_x433491907}
+·若不指定文件名，则将所有本地证书一次性全部导出到终端上，并由不同的提示信息进行分割显示。
 
-[[导出所有证书时，如果]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x1078301192}[域中只有本地证书或者只有]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书，则导出结果与单独导出相同。如果]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中存在本地证书和]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书，则具体导出结果如下：]{style="font-family:宋体"}
+导出所有证书时，如果PKI域中只有本地证书或者只有CA证书，则导出结果与单独导出相同。如果PKI域中存在本地证书和CA证书，则具体导出结果如下：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若指定文件名，则将每个本地证书分别导出到一个单独的文件，该本地证书对应的完整]{style="font-family:宋体"}]{#struct_0_18308_19795_x2135741829}[CA]{lang="EN-US"}[证书链也会同时导出到该文件中。]{style="font-family:宋体"}
+·若指定文件名，则将每个本地证书分别导出到一个单独的文件，该本地证书对应的完整CA证书链也会同时导出到该文件中。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若不指定文件名，则将所有的本地证书及域中的]{style="font-family:宋体"}]{#struct_0_18308_19795_2052036294}[CA]{lang="EN-US"}[证书或者]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书链一次性全部导出到终端上，并由不同的提示信息进行分割显示。]{style="font-family:宋体"}
+·若不指定文件名，则将所有的本地证书及域中的CA证书或者CA证书链一次性全部导出到终端上，并由不同的提示信息进行分割显示。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_18308_19795_1644453095}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[以]{style="font-family:宋体"}]{#struct_0_18308_19795_570281663}[PKCS12]{lang="EN-US"}[格式导出所有证书时，]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中必须有本地证书，否则会导出失败。]{style="font-family:宋体"}
+·以PKCS12格式导出所有证书时，PKI域中必须有本地证书，否则会导出失败。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[以]{style="font-family:宋体"}]{#struct_0_18308_19795_x140510538}[PEM]{lang="EN-US"}[格式导出本地证书或者所有证书时，若不指定私钥的加密算法和私钥加密口令，则不会导出本地证书对应的私钥信息。]{style="font-family:宋体"}
+·以PEM格式导出本地证书或者所有证书时，若不指定私钥的加密算法和私钥加密口令，则不会导出本地证书对应的私钥信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[以]{style="font-family:宋体"}]{#struct_0_18308_19795_247206190}[PEM]{lang="EN-US"}[格式导出本地证书或者所有证书时，若指定私钥加密算法和私钥加密口令，且此时本地证书有匹配的私钥，则同时导出本地证书的私钥信息；如果此时本地证书没有匹配的私钥，则导出该本地证书失败。]{style="font-family:宋体"}
+·以PEM格式导出本地证书或者所有证书时，若指定私钥加密算法和私钥加密口令，且此时本地证书有匹配的私钥，则同时导出本地证书的私钥信息；如果此时本地证书没有匹配的私钥，则导出该本地证书失败。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[导出本地证书时，若当前]{style="font-family:宋体"}]{#struct_0_18308_19795_x2024557589}[PKI]{lang="EN-US"}[域中的密钥对配置已被修改，导致本地证书的公钥与该密钥对的公钥部分不匹配，则导出该本地证书失败。]{style="font-family:宋体"}
+·导出本地证书时，若当前PKI域中的密钥对配置已被修改，导致本地证书的公钥与该密钥对的公钥部分不匹配，则导出该本地证书失败。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[导出本地证书或者所有证书时，如果]{style="font-family:宋体"}]{#struct_0_18308_19795_x433426371}[PKI]{lang="EN-US"}[域中有两个本地证书，则导出某种密钥用途的本地证书失败并不会影响导出另外一个本地证书。]{style="font-family:宋体"}
+·导出本地证书或者所有证书时，如果PKI域中有两个本地证书，则导出某种密钥用途的本地证书失败并不会影响导出另外一个本地证书。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[指定的文件名中可以带完整路径，当系统中不存在用户所指定路径时，则会导出失败。]{style="font-family:宋体"}]{#struct_0_18308_19795_1649277282}
+·指定的文件名中可以带完整路径，当系统中不存在用户所指定路径时，则会导出失败。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_281017608}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x1885871743}[导出]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中的]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书到]{style="font-family:宋体"}[DER]{lang="EN-US"}[编码的文件，文件名称为]{style="font-family:宋体"}[cert-ca.der]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 导出PKI域中的CA证书到DER编码的文件，文件名称为cert-ca.der。
 
-[[\<Sys]{lang="ES-AR"}[name]{lang="EN-US"}]{#struct_0_18308_19795_328521921}[\> system-view]{lang="ES-AR"}
+\<Sysname\> system-view
 
-[\[Sysname\] pki export domain domain1 der ca filename cert-ca.der]{lang="EN-US"}
+Sysname pki export domain domain1 der ca filename cert-ca.der
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1644641904}[导出]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中的本地证书到]{style="font-family:宋体"}[DER]{lang="EN-US"}[编码的文件，文件名称为]{style="font-family:宋体"}[cert-lo.der]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 导出PKI域中的本地证书到DER编码的文件，文件名称为cert-lo.der。
 
-[[\<Sys]{lang="ES-AR"}[name]{lang="EN-US"}]{#struct_0_18308_19795_x1750616018}[\> system-view]{lang="ES-AR"}
+\<Sysname\> system-view
 
-[\[Sysname\] pki export domain domain1 der local filename cert-lo.der]{lang="EN-US"}
+Sysname pki export domain domain1 der local filename cert-lo.der
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x1623146252}[导出]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中的所有证书到]{style="font-family:宋体"}[DER]{lang="EN-US"}[编码的文件，文件名称为]{style="font-family:宋体"}[cert-all.p7b]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 导出PKI域中的所有证书到DER编码的文件，文件名称为cert-all.p7b。
 
-[[\<Sys]{lang="ES-AR"}[name]{lang="EN-US"}]{#struct_0_18308_19795_x434016194}[\> system-view]{lang="ES-AR"}
+\<Sysname\> system-view
 
-[\[Sysname\] pki export domain domain1 der all filename cert-all.p7b]{lang="EN-US"}
+Sysname pki export domain domain1 der all filename cert-all.p7b
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1900345456}[导出]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中的]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书到]{style="font-family:宋体"}[PEM]{lang="EN-US"}[编码的文件，文件名称为]{style="font-family:宋体"}[cacert]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 导出PKI域中的CA证书到PEM编码的文件，文件名称为cacert。
 
-[[\<Sys]{lang="ES-AR"}[name]{lang="EN-US"}]{#struct_0_18308_19795_x271881455}[\> system-view]{lang="ES-AR"}
+\<Sysname\> system-view
 
-[\[Sysname\] pki export domain domain1 pem ca filename cacert]{lang="EN-US"}
+Sysname pki export domain domain1 pem ca filename cacert
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1337101923}[导出]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中的本地证书及其对应的私钥到]{style="font-family:宋体"}[PEM]{lang="EN-US"}[编码的文件，指定保护私钥信息的加密算法为]{style="font-family:宋体"}[DES_CBC]{lang="EN-US"}[、加密口令为]{style="font-family:宋体"}[111]{lang="EN-US"}[，文件名称为]{style="font-family:宋体"}[local.pem]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 导出PKI域中的本地证书及其对应的私钥到PEM编码的文件，指定保护私钥信息的加密算法为DES_CBC、加密口令为111，文件名称为local.pem。
 
-[[\<Sys]{lang="ES-AR"}[name]{lang="EN-US"}]{#struct_0_18308_19795_x1826971553}[\> system-view]{lang="ES-AR"}
+\<Sysname\> system-view
 
-[\[Sysname\] pki export domain domain1 pem local des-cbc 111 filename local.pem]{lang="EN-US"}
+Sysname pki export domain domain1 pem local des-cbc 111 filename local.pem
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1566628130}[导出]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中所有证书到]{style="font-family:宋体"}[PEM]{lang="EN-US"}[编码的文件，不指定加密算法和加密口令，不导出本地证书对应的私钥信息，文件名称为]{style="font-family:宋体"}[all.pem]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 导出PKI域中所有证书到PEM编码的文件，不指定加密算法和加密口令，不导出本地证书对应的私钥信息，文件名称为all.pem。
 
-[[\<Sys]{lang="ES-AR"}[name]{lang="EN-US"}]{#struct_0_18308_19795_x433950658}[\> system-view]{lang="ES-AR"}
+\<Sysname\> system-view
 
-[\[Sysname\] pki export domain domain1 pem all filename all.pem]{lang="EN-US"}
+Sysname pki export domain domain1 pem all filename all.pem
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1630921461}[以]{style="font-family:宋体"}[PEM]{lang="EN-US"}[格式导出]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中本地证书及其对应的私钥到终端，指定保护私钥信息的加密算法为]{style="font-family:宋体"}[DES_CBC]{lang="EN-US"}[、加密口令为]{style="font-family:宋体"}[111]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 以PEM格式导出PKI域中本地证书及其对应的私钥到终端，指定保护私钥信息的加密算法为DES_CBC、加密口令为111。
 
-[[\<Sys]{lang="ES-AR"}[name]{lang="EN-US"}]{#struct_0_18308_19795_x433819586}[\> system-view]{lang="ES-AR"}
+\<Sysname\> system-view
 
-[\[Sysname\] pki export domain domain1 pem local des-cbc 111]{lang="FR"}
+Sysname pki export domain domain1 pem local des-cbc 111
 
-[ ]{lang="FR"}
+%The signature usage local certificate:
 
-[%The signature usage local certificate:]{lang="EN-US"}
+Bag Attributes
 
-[Bag Attributes]{lang="EN-US"}
+    friendlyName:
 
-[    friendlyName:]{lang="EN-US"}
+    localKeyID: 99 0B C2 3B 8B D1 E4 33 42 2B 31 C3 37 C0 1D DF 0D 79 09 1D
 
-[    localKeyID: 99 0B C2 3B 8B D1 E4 33 42 2B 31 C3 37 C0 1D DF 0D 79 09 1D]{lang="EN-US"}
+subject=/C=CN/O=OpenCA Labs/OU=Users/CN=chktest chktest
 
-[subject=/C=CN/O=OpenCA Labs/OU=Users/CN=chktest chktest]{lang="EN-US"}
+issuer=/C=CN/O=OpenCA Labs/OU=software/CN=abcd
 
-[issuer=/C=CN/O=OpenCA Labs/OU=software/CN=abcd]{lang="EN-US"}
+\-\-\-\--BEGIN CERTIFICATE\-\-\-\--
 
-[\-\-\-\--BEGIN CERTIFICATE\-\-\-\--]{lang="EN-US"}
+MIIEqjCCA5KgAwIBAgILAOhID4rI04kBfYgwDQYJKoZIhvcNAQELBQAwRTELMAkG
 
-[MIIEqjCCA5KgAwIBAgILAOhID4rI04kBfYgwDQYJKoZIhvcNAQELBQAwRTELMAkG]{lang="EN-US"}
+A1UEBhMCQ04xFDASBgNVBAoMC09wZW5DQSBMYWJzMREwDwYDVQQLDAhzb2Z0d2Fy
 
-[A1UEBhMCQ04xFDASBgNVBAoMC09wZW5DQSBMYWJzMREwDwYDVQQLDAhzb2Z0d2Fy]{lang="EN-US"}
+ZTENMAsGA1UEAwwEYWJjZDAeFw0xMTA0MjYxMzMxMjlaFw0xMjA0MjUxMzMxMjla
 
-[ZTENMAsGA1UEAwwEYWJjZDAeFw0xMTA0MjYxMzMxMjlaFw0xMjA0MjUxMzMxMjla]{lang="EN-US"}
+ME0xCzAJBgNVBAYTAkNOMRQwEgYDVQQKDAtPcGVuQ0EgTGFiczEOMAwGA1UECwwF
 
-[ME0xCzAJBgNVBAYTAkNOMRQwEgYDVQQKDAtPcGVuQ0EgTGFiczEOMAwGA1UECwwF]{lang="EN-US"}
+VXNlcnMxGDAWBgNVBAMMD2Noa3Rlc3QgY2hrdGVzdDCBnzANBgkqhkiG9w0BAQEF
 
-[VXNlcnMxGDAWBgNVBAMMD2Noa3Rlc3QgY2hrdGVzdDCBnzANBgkqhkiG9w0BAQEF]{lang="EN-US"}
+AAOBjQAwgYkCgYEA54rUZ0Ux2kApceE4ATpQ437CU6ovuHS5eJKZyky8fhMoTHhE
 
-[AAOBjQAwgYkCgYEA54rUZ0Ux2kApceE4ATpQ437CU6ovuHS5eJKZyky8fhMoTHhE]{lang="EN-US"}
+jE2KfBQIzOZSgo2mdgpkccjr9Ek6IUC03ed1lPn0IG/YaAl4Tjgkiv+w1NrlSvAy
 
-[jE2KfBQIzOZSgo2mdgpkccjr9Ek6IUC03ed1lPn0IG/YaAl4Tjgkiv+w1NrlSvAy]{lang="EN-US"}
+cnPaSUko2QbO9sg3ycye1zqpbbqj775ulGpcXyXYD9OY63/Cp5+DRQ92zGsCAwEA
 
-[cnPaSUko2QbO9sg3ycye1zqpbbqj775ulGpcXyXYD9OY63/Cp5+DRQ92zGsCAwEA]{lang="EN-US"}
+AaOCAhUwggIRMAkGA1UdEwQCMAAwUAYDVR0gBEkwRzAGBgQqAwMEMAYGBCoDAwUw
 
-[AaOCAhUwggIRMAkGA1UdEwQCMAAwUAYDVR0gBEkwRzAGBgQqAwMEMAYGBCoDAwUw]{lang="EN-US"}
+NQYEKgMDBjAtMCsGCCsGAQUFBwIBFh9odHRwczovL3RpdGFuL3BraS9wdWIvY3Bz
 
-[NQYEKgMDBjAtMCsGCCsGAQUFBwIBFh9odHRwczovL3RpdGFuL3BraS9wdWIvY3Bz]{lang="EN-US"}
+L2Jhc2ljMBEGCWCGSAGG+EIBAQQEAwIFoDALBgNVHQ8EBAMCBsAwKQYDVR0lBCIw
 
-[L2Jhc2ljMBEGCWCGSAGG+EIBAQQEAwIFoDALBgNVHQ8EBAMCBsAwKQYDVR0lBCIw]{lang="EN-US"}
+IAYIKwYBBQUHAwIGCCsGAQUFBwMEBgorBgEEAYI3FAICMC4GCWCGSAGG+EIBDQQh
 
-[IAYIKwYBBQUHAwIGCCsGAQUFBwMEBgorBgEEAYI3FAICMC4GCWCGSAGG+EIBDQQh]{lang="EN-US"}
+Fh9Vc2VyIENlcnRpZmljYXRlIG9mIE9wZW5DQSBMYWJzMB0GA1UdDgQWBBTPw8FY
 
-[Fh9Vc2VyIENlcnRpZmljYXRlIG9mIE9wZW5DQSBMYWJzMB0GA1UdDgQWBBTPw8FY]{lang="EN-US"}
+ut7Xr2Ct/23zU/ybgU9dQjAfBgNVHSMEGDAWgBQzEQ58yIC54wxodp6JzZvn/gx0
 
-[ut7Xr2Ct/23zU/ybgU9dQjAfBgNVHSMEGDAWgBQzEQ58yIC54wxodp6JzZvn/gx0]{lang="EN-US"}
+CDAaBgNVHREEEzARgQ9jaGt0ZXN0QGgzYy5jb20wGQYDVR0SBBIwEIEOcGtpQG9w
 
-[CDAaBgNVHREEEzARgQ9jaGt0ZXN0QGgzYy5jb20wGQYDVR0SBBIwEIEOcGtpQG9w]{lang="EN-US"}
+ZW5jYS5vcmcwgYEGCCsGAQUFBwEBBHUwczAyBggrBgEFBQcwAoYmaHR0cDovL3Rp
 
-[ZW5jYS5vcmcwgYEGCCsGAQUFBwEBBHUwczAyBggrBgEFBQcwAoYmaHR0cDovL3Rp]{lang="EN-US"}
+dGFuL3BraS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwHgYIKwYBBQUHMAGGEmh0dHA6
 
-[dGFuL3BraS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwHgYIKwYBBQUHMAGGEmh0dHA6]{lang="EN-US"}
+Ly90aXRhbjoyNTYwLzAdBggrBgEFBQcwDIYRaHR0cDovL3RpdGFuOjgzMC8wPAYD
 
-[Ly90aXRhbjoyNTYwLzAdBggrBgEFBQcwDIYRaHR0cDovL3RpdGFuOjgzMC8wPAYD]{lang="EN-US"}
+VR0fBDUwMzAxoC+gLYYraHR0cDovLzE5Mi4xNjguNDAuMTI4L3BraS9wdWIvY3Js
 
-[VR0fBDUwMzAxoC+gLYYraHR0cDovLzE5Mi4xNjguNDAuMTI4L3BraS9wdWIvY3Js]{lang="EN-US"}
+L2NhY3JsLmNybDANBgkqhkiG9w0BAQsFAAOCAQEAGcMeSpBJiuRmsJW0iZK5nygB
 
-[L2NhY3JsLmNybDANBgkqhkiG9w0BAQsFAAOCAQEAGcMeSpBJiuRmsJW0iZK5nygB]{lang="EN-US"}
+tgD8c0b+n4v/F36sJjY1fRFSr4gPLIxZhPWhTrqsCd+QMELRCDNHDxvt3/1NEG12
 
-[tgD8c0b+n4v/F36sJjY1fRFSr4gPLIxZhPWhTrqsCd+QMELRCDNHDxvt3/1NEG12]{lang="EN-US"}
+X6BVjLcKXKH/EQe0fnwK+7PegAJ15P56xDeACHz2oysvNQ0Ot6hGylMqaZ8pKUKv
 
-[X6BVjLcKXKH/EQe0fnwK+7PegAJ15P56xDeACHz2oysvNQ0Ot6hGylMqaZ8pKUKv]{lang="EN-US"}
+UDS8c+HgIBrhmxvXztI08N1imYHq27Wy9j6NpSS60mMFmI5whzCWfTSHzqlT2DNd
 
-[UDS8c+HgIBrhmxvXztI08N1imYHq27Wy9j6NpSS60mMFmI5whzCWfTSHzqlT2DNd]{lang="EN-US"}
+no0id18SZidApfCZL8zoMWEFI163JZSarv+H5Kbb063dxXfbsqX9Noxggh0gD8dK
 
-[no0id18SZidApfCZL8zoMWEFI163JZSarv+H5Kbb063dxXfbsqX9Noxggh0gD8dK]{lang="EN-US"}
+7X7/rTJuuhTWVof5gxSUJp+aCCdvSKg0lvJY+tJeXoaznrINVw3SuXJ+Ax8GEw==
 
-[7X7/rTJuuhTWVof5gxSUJp+aCCdvSKg0lvJY+tJeXoaznrINVw3SuXJ+Ax8GEw==]{lang="EN-US"}
+\-\-\-\--END CERTIFICATE\-\-\-\--
 
-[\-\-\-\--END CERTIFICATE\-\-\-\--]{lang="EN-US"}
+Bag Attributes
 
-[Bag Attributes]{lang="EN-US"}
+    friendlyName:
 
-[    friendlyName:]{lang="EN-US"}
+    localKeyID: 99 0B C2 3B 8B D1 E4 33 42 2B 31 C3 37 C0 1D DF 0D 79 09 1D
 
-[    localKeyID: 99 0B C2 3B 8B D1 E4 33 42 2B 31 C3 37 C0 1D DF 0D 79 09 1D]{lang="EN-US"}
+Key Attributes: \<No Attributes\>
 
-[Key Attributes: \<No Attributes\>]{lang="EN-US"}
+\-\-\-\--BEGIN ENCRYPTED PRIVATE KEY\-\-\-\--
 
-[\-\-\-\--BEGIN ENCRYPTED PRIVATE KEY\-\-\-\--]{lang="EN-US"}
+MIICwzA9BgkqhkiG9w0BBQ0wMDAbBgkqhkiG9w0BBQwwDgQIAbfcE+KoYYoCAggA
 
-[MIICwzA9BgkqhkiG9w0BBQ0wMDAbBgkqhkiG9w0BBQwwDgQIAbfcE+KoYYoCAggA]{lang="EN-US"}
+MBEGBSsOAwIHBAjB+UsJM07JRQSCAoABqtASbjGTQbdxL3n4wNHmyWLxbvL9v27C
 
-[MBEGBSsOAwIHBAjB+UsJM07JRQSCAoABqtASbjGTQbdxL3n4wNHmyWLxbvL9v27C]{lang="EN-US"}
+Uu6MjYJDCipVzxHU0rExgn+6cQsK5uK99FPBmy4q9/nnyrooTX8BVlXAjenvgyii
 
-[Uu6MjYJDCipVzxHU0rExgn+6cQsK5uK99FPBmy4q9/nnyrooTX8BVlXAjenvgyii]{lang="EN-US"}
+WQLwnIg1IuM8j2aPkQ3wbae1+0RACjSLy1u/PCl5sp6CDxI0b9xz6cxIGxKvUOCc
 
-[WQLwnIg1IuM8j2aPkQ3wbae1+0RACjSLy1u/PCl5sp6CDxI0b9xz6cxIGxKvUOCc]{lang="EN-US"}
+/gxdgk97XZSW/0qnOSZkhgeqBZuxq6Va8iRyho7RCStVxQaeiAZpq/WoZbcS5CKI
 
-[/gxdgk97XZSW/0qnOSZkhgeqBZuxq6Va8iRyho7RCStVxQaeiAZpq/WoZbcS5CKI]{lang="EN-US"}
+/WXEBQd4AX2UxN0Ld/On7Wc6KFToixROTxWTtf8SEsKGPDfrEKq3fSTW1xokB8nM
 
-[/WXEBQd4AX2UxN0Ld/On7Wc6KFToixROTxWTtf8SEsKGPDfrEKq3fSTW1xokB8nM]{lang="EN-US"}
+bkRtU+fUiY27V/mr1RHO6+yEr+/wGGClBy5YDoD4I9xPkGUkmqx+kfYbMo4yxkSi
 
-[bkRtU+fUiY27V/mr1RHO6+yEr+/wGGClBy5YDoD4I9xPkGUkmqx+kfYbMo4yxkSi]{lang="EN-US"}
+JdL+X3uEjHnQ/rvnPSKBEU/URwXHxMX9CdCTSqh/SajnrGuB/E4JhOEnS/H9dIM+
 
-[JdL+X3uEjHnQ/rvnPSKBEU/URwXHxMX9CdCTSqh/SajnrGuB/E4JhOEnS/H9dIM+]{lang="EN-US"}
+DN6iz1IwPFklbcK9KMGwV1bosymXmuEbYCYmSmhZb5FnR/RIyE804Jz9ifin3g0Q
 
-[DN6iz1IwPFklbcK9KMGwV1bosymXmuEbYCYmSmhZb5FnR/RIyE804Jz9ifin3g0Q]{lang="EN-US"}
+ZrykfG7LHL7Ga4nh0hpEeEDiHGEMcQU+g0EtfpOLTI8cMJf7kdNWDnI0AYCvBAAM
 
-[ZrykfG7LHL7Ga4nh0hpEeEDiHGEMcQU+g0EtfpOLTI8cMJf7kdNWDnI0AYCvBAAM]{lang="EN-US"}
+3CY3BElDVjJq3ioyHSJca8C+3lzcueuAF+lO7Y4Zluq3dqWeuJjE+/1BZJbMmaQA
 
-[3CY3BElDVjJq3ioyHSJca8C+3lzcueuAF+lO7Y4Zluq3dqWeuJjE+/1BZJbMmaQA]{lang="EN-US"}
+X6NmXKNzmtTPcMtojf+n3+uju0le0d0QYXQz/wPsV+9IYRYasjzoXE5dhZ5sIPOd
 
-[X6NmXKNzmtTPcMtojf+n3+uju0le0d0QYXQz/wPsV+9IYRYasjzoXE5dhZ5sIPOd]{lang="EN-US"}
+u9x9hhp5Ns23bwyNP135qTNjx9i/CZMKvLKywm3Yg+Bgg8Df4bBrFrsH1U0ifmmp
 
-[u9x9hhp5Ns23bwyNP135qTNjx9i/CZMKvLKywm3Yg+Bgg8Df4bBrFrsH1U0ifmmp]{lang="EN-US"}
+ir2+OuhlC+GbHOxWNeBCa8iAq91k6FGFJ0OLA2oIvhCnh45tM7BjjKTHk+RZdMiA
 
-[ir2+OuhlC+GbHOxWNeBCa8iAq91k6FGFJ0OLA2oIvhCnh45tM7BjjKTHk+RZdMiA]{lang="EN-US"}
+0TKSWuOyihrwxdUEWh999GKUpkwDHLZJFd21z/kWspqThodEx8ea
 
-[0TKSWuOyihrwxdUEWh999GKUpkwDHLZJFd21z/kWspqThodEx8ea]{lang="EN-US"}
+\-\-\-\--END ENCRYPTED PRIVATE KEY\-\-\-\--
 
-[\-\-\-\--END ENCRYPTED PRIVATE KEY\-\-\-\--]{lang="EN-US"}
+\# 以PEM格式导出PKI域中所有证书到终端，指定保护本地证书对应私钥的加密算法为DES_CBC、加密口令为111。
 
-[[\# ]{lang="FR"}]{#struct_0_18308_19795_1589187420}[以]{style="font-family:宋体"}[PEM]{lang="FR"}[格式导出]{style="font-family:
-宋体"}[PKI]{lang="FR"}[域中]{style="font-family:宋体"}[所有]{style="font-family:宋体"}[证书到终端]{style="font-family:宋体"}[，]{style="font-family:宋体"}[指定保护本地证书对应私钥的加密算法为]{style="font-family:宋体"}[DES_CBC]{lang="EN-US"}[、加密口令为]{style="font-family:宋体"}[111]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sys]{lang="ES-AR"}[name]{lang="EN-US"}]{#struct_0_18308_19795_x434147266}[\> system-view]{lang="ES-AR"}
+Sysname pki export domain domain1 pem all des-cbc 111
 
-[\[Sysname\] pki export domain domain1 pem all des-cbc 111]{lang="EN-US"}
+ %The signature usage local certificate:
 
-[ ]{lang="EN-US"}
+Bag Attributes
 
-[ %The signature usage local certificate:]{lang="EN-US"}
+    friendlyName:
 
-[Bag Attributes]{lang="EN-US"}
+    localKeyID: 99 0B C2 3B 8B D1 E4 33 42 2B 31 C3 37 C0 1D DF 0D 79 09 1D
 
-[    friendlyName:]{lang="EN-US"}
+subject=/C=CN/O=OpenCA Labs/OU=Users/CN=chktest chktest
 
-[    localKeyID: 99 0B C2 3B 8B D1 E4 33 42 2B 31 C3 37 C0 1D DF 0D 79 09 1D]{lang="EN-US"}
+issuer=/C=CN/O=OpenCA Labs/OU=software/CN=abcd
 
-[subject=/C=CN/O=OpenCA Labs/OU=Users/CN=chktest chktest]{lang="EN-US"}
+\-\-\-\--BEGIN CERTIFICATE\-\-\-\--
 
-[issuer=/C=CN/O=OpenCA Labs/OU=software/CN=abcd]{lang="EN-US"}
+MIIEqjCCA5KgAwIBAgILAOhID4rI04kBfYgwDQYJKoZIhvcNAQELBQAwRTELMAkG
 
-[\-\-\-\--BEGIN CERTIFICATE\-\-\-\--]{lang="EN-US"}
+A1UEBhMCQ04xFDASBgNVBAoMC09wZW5DQSBMYWJzMREwDwYDVQQLDAhzb2Z0d2Fy
 
-[MIIEqjCCA5KgAwIBAgILAOhID4rI04kBfYgwDQYJKoZIhvcNAQELBQAwRTELMAkG]{lang="EN-US"}
+ZTENMAsGA1UEAwwEYWJjZDAeFw0xMTA0MjYxMzMxMjlaFw0xMjA0MjUxMzMxMjla
 
-[A1UEBhMCQ04xFDASBgNVBAoMC09wZW5DQSBMYWJzMREwDwYDVQQLDAhzb2Z0d2Fy]{lang="EN-US"}
+ME0xCzAJBgNVBAYTAkNOMRQwEgYDVQQKDAtPcGVuQ0EgTGFiczEOMAwGA1UECwwF
 
-[ZTENMAsGA1UEAwwEYWJjZDAeFw0xMTA0MjYxMzMxMjlaFw0xMjA0MjUxMzMxMjla]{lang="EN-US"}
+VXNlcnMxGDAWBgNVBAMMD2Noa3Rlc3QgY2hrdGVzdDCBnzANBgkqhkiG9w0BAQEF
 
-[ME0xCzAJBgNVBAYTAkNOMRQwEgYDVQQKDAtPcGVuQ0EgTGFiczEOMAwGA1UECwwF]{lang="EN-US"}
+AAOBjQAwgYkCgYEA54rUZ0Ux2kApceE4ATpQ437CU6ovuHS5eJKZyky8fhMoTHhE
 
-[VXNlcnMxGDAWBgNVBAMMD2Noa3Rlc3QgY2hrdGVzdDCBnzANBgkqhkiG9w0BAQEF]{lang="EN-US"}
+jE2KfBQIzOZSgo2mdgpkccjr9Ek6IUC03ed1lPn0IG/YaAl4Tjgkiv+w1NrlSvAy
 
-[AAOBjQAwgYkCgYEA54rUZ0Ux2kApceE4ATpQ437CU6ovuHS5eJKZyky8fhMoTHhE]{lang="EN-US"}
+cnPaSUko2QbO9sg3ycye1zqpbbqj775ulGpcXyXYD9OY63/Cp5+DRQ92zGsCAwEA
 
-[jE2KfBQIzOZSgo2mdgpkccjr9Ek6IUC03ed1lPn0IG/YaAl4Tjgkiv+w1NrlSvAy]{lang="EN-US"}
+AaOCAhUwggIRMAkGA1UdEwQCMAAwUAYDVR0gBEkwRzAGBgQqAwMEMAYGBCoDAwUw
 
-[cnPaSUko2QbO9sg3ycye1zqpbbqj775ulGpcXyXYD9OY63/Cp5+DRQ92zGsCAwEA]{lang="EN-US"}
+NQYEKgMDBjAtMCsGCCsGAQUFBwIBFh9odHRwczovL3RpdGFuL3BraS9wdWIvY3Bz
 
-[AaOCAhUwggIRMAkGA1UdEwQCMAAwUAYDVR0gBEkwRzAGBgQqAwMEMAYGBCoDAwUw]{lang="EN-US"}
+L2Jhc2ljMBEGCWCGSAGG+EIBAQQEAwIFoDALBgNVHQ8EBAMCBsAwKQYDVR0lBCIw
 
-[NQYEKgMDBjAtMCsGCCsGAQUFBwIBFh9odHRwczovL3RpdGFuL3BraS9wdWIvY3Bz]{lang="EN-US"}
+IAYIKwYBBQUHAwIGCCsGAQUFBwMEBgorBgEEAYI3FAICMC4GCWCGSAGG+EIBDQQh
 
-[L2Jhc2ljMBEGCWCGSAGG+EIBAQQEAwIFoDALBgNVHQ8EBAMCBsAwKQYDVR0lBCIw]{lang="EN-US"}
+Fh9Vc2VyIENlcnRpZmljYXRlIG9mIE9wZW5DQSBMYWJzMB0GA1UdDgQWBBTPw8FY
 
-[IAYIKwYBBQUHAwIGCCsGAQUFBwMEBgorBgEEAYI3FAICMC4GCWCGSAGG+EIBDQQh]{lang="EN-US"}
+ut7Xr2Ct/23zU/ybgU9dQjAfBgNVHSMEGDAWgBQzEQ58yIC54wxodp6JzZvn/gx0
 
-[Fh9Vc2VyIENlcnRpZmljYXRlIG9mIE9wZW5DQSBMYWJzMB0GA1UdDgQWBBTPw8FY]{lang="EN-US"}
+CDAaBgNVHREEEzARgQ9jaGt0ZXN0QGgzYy5jb20wGQYDVR0SBBIwEIEOcGtpQG9w
 
-[ut7Xr2Ct/23zU/ybgU9dQjAfBgNVHSMEGDAWgBQzEQ58yIC54wxodp6JzZvn/gx0]{lang="EN-US"}
+ZW5jYS5vcmcwgYEGCCsGAQUFBwEBBHUwczAyBggrBgEFBQcwAoYmaHR0cDovL3Rp
 
-[CDAaBgNVHREEEzARgQ9jaGt0ZXN0QGgzYy5jb20wGQYDVR0SBBIwEIEOcGtpQG9w]{lang="EN-US"}
+dGFuL3BraS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwHgYIKwYBBQUHMAGGEmh0dHA6
 
-[ZW5jYS5vcmcwgYEGCCsGAQUFBwEBBHUwczAyBggrBgEFBQcwAoYmaHR0cDovL3Rp]{lang="EN-US"}
+Ly90aXRhbjoyNTYwLzAdBggrBgEFBQcwDIYRaHR0cDovL3RpdGFuOjgzMC8wPAYD
 
-[dGFuL3BraS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwHgYIKwYBBQUHMAGGEmh0dHA6]{lang="EN-US"}
+VR0fBDUwMzAxoC+gLYYraHR0cDovLzE5Mi4xNjguNDAuMTI4L3BraS9wdWIvY3Js
 
-[Ly90aXRhbjoyNTYwLzAdBggrBgEFBQcwDIYRaHR0cDovL3RpdGFuOjgzMC8wPAYD]{lang="EN-US"}
+L2NhY3JsLmNybDANBgkqhkiG9w0BAQsFAAOCAQEAGcMeSpBJiuRmsJW0iZK5nygB
 
-[VR0fBDUwMzAxoC+gLYYraHR0cDovLzE5Mi4xNjguNDAuMTI4L3BraS9wdWIvY3Js]{lang="EN-US"}
+tgD8c0b+n4v/F36sJjY1fRFSr4gPLIxZhPWhTrqsCd+QMELRCDNHDxvt3/1NEG12
 
-[L2NhY3JsLmNybDANBgkqhkiG9w0BAQsFAAOCAQEAGcMeSpBJiuRmsJW0iZK5nygB]{lang="EN-US"}
+X6BVjLcKXKH/EQe0fnwK+7PegAJ15P56xDeACHz2oysvNQ0Ot6hGylMqaZ8pKUKv
 
-[tgD8c0b+n4v/F36sJjY1fRFSr4gPLIxZhPWhTrqsCd+QMELRCDNHDxvt3/1NEG12]{lang="EN-US"}
+UDS8c+HgIBrhmxvXztI08N1imYHq27Wy9j6NpSS60mMFmI5whzCWfTSHzqlT2DNd
 
-[X6BVjLcKXKH/EQe0fnwK+7PegAJ15P56xDeACHz2oysvNQ0Ot6hGylMqaZ8pKUKv]{lang="EN-US"}
+no0id18SZidApfCZL8zoMWEFI163JZSarv+H5Kbb063dxXfbsqX9Noxggh0gD8dK
 
-[UDS8c+HgIBrhmxvXztI08N1imYHq27Wy9j6NpSS60mMFmI5whzCWfTSHzqlT2DNd]{lang="EN-US"}
+7X7/rTJuuhTWVof5gxSUJp+aCCdvSKg0lvJY+tJeXoaznrINVw3SuXJ+Ax8GEw==
 
-[no0id18SZidApfCZL8zoMWEFI163JZSarv+H5Kbb063dxXfbsqX9Noxggh0gD8dK]{lang="EN-US"}
+\-\-\-\--END CERTIFICATE\-\-\-\--
 
-[7X7/rTJuuhTWVof5gxSUJp+aCCdvSKg0lvJY+tJeXoaznrINVw3SuXJ+Ax8GEw==]{lang="EN-US"}
+Bag Attributes: \<No Attributes\>
 
-[\-\-\-\--END CERTIFICATE\-\-\-\--]{lang="EN-US"}
+subject=/C=CN/O=OpenCA Labs/OU=software/CN=abcd
 
-[Bag Attributes: \<No Attributes\>]{lang="EN-US"}
+issuer=/C=CN/O=OpenCA Labs/OU=software/CN=abcd
 
-[subject=/C=CN/O=OpenCA Labs/OU=software/CN=abcd]{lang="EN-US"}
+\-\-\-\--BEGIN CERTIFICATE\-\-\-\--
 
-[issuer=/C=CN/O=OpenCA Labs/OU=software/CN=abcd]{lang="EN-US"}
+MIIEYTCCA0mgAwIBAgIBFzANBgkqhkiG9w0BAQsFADBFMQswCQYDVQQGEwJDTjEU
 
-[\-\-\-\--BEGIN CERTIFICATE\-\-\-\--]{lang="EN-US"}
+MBIGA1UECgwLT3BlbkNBIExhYnMxETAPBgNVBAsMCHNvZnR3YXJlMQ0wCwYDVQQD
 
-[MIIEYTCCA0mgAwIBAgIBFzANBgkqhkiG9w0BAQsFADBFMQswCQYDVQQGEwJDTjEU]{lang="EN-US"}
+DARhYmNkMB4XDTExMDQxODExNDQ0N1oXDTEzMDQxNzExNDQ0N1owRTELMAkGA1UE
 
-[MBIGA1UECgwLT3BlbkNBIExhYnMxETAPBgNVBAsMCHNvZnR3YXJlMQ0wCwYDVQQD]{lang="EN-US"}
+BhMCQ04xFDASBgNVBAoMC09wZW5DQSBMYWJzMREwDwYDVQQLDAhzb2Z0d2FyZTEN
 
-[DARhYmNkMB4XDTExMDQxODExNDQ0N1oXDTEzMDQxNzExNDQ0N1owRTELMAkGA1UE]{lang="EN-US"}
+MAsGA1UEAwwEYWJjZDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAM1g
 
-[BhMCQ04xFDASBgNVBAoMC09wZW5DQSBMYWJzMREwDwYDVQQLDAhzb2Z0d2FyZTEN]{lang="EN-US"}
+vomMF8S4u6q51bOwjKFUBwxyvOy4D897LmOSedaCyDt6Lvp+PBEHfwWBYBpsHhk7
 
-[MAsGA1UEAwwEYWJjZDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAM1g]{lang="EN-US"}
+kmnSNhX5dZ6NxunHaARZ2VlcctsYKyvAQapuaThy1tuOcphAB+jQQL9dPoqdk0xp
 
-[vomMF8S4u6q51bOwjKFUBwxyvOy4D897LmOSedaCyDt6Lvp+PBEHfwWBYBpsHhk7]{lang="EN-US"}
+jvmPDlW+k832Konn9U4dIivS0n+/KMGh0g5UyzHGqUUOo7s9qFuQf5EjQon40TZg
 
-[kmnSNhX5dZ6NxunHaARZ2VlcctsYKyvAQapuaThy1tuOcphAB+jQQL9dPoqdk0xp]{lang="EN-US"}
+BwUnFYRlvGe7bSQpXjwi8LTyxHPy+dDVjO5CP+rXx5IiToFy1YGWewkyn/WeswDf
 
-[jvmPDlW+k832Konn9U4dIivS0n+/KMGh0g5UyzHGqUUOo7s9qFuQf5EjQon40TZg]{lang="EN-US"}
+Yx7ZludNus5vKWTihgx2Qalgb+sqUMwI/WUET7ghO2dRxPUdUbgIYF0saTndKPYd
 
-[BwUnFYRlvGe7bSQpXjwi8LTyxHPy+dDVjO5CP+rXx5IiToFy1YGWewkyn/WeswDf]{lang="EN-US"}
+4oBgl6M0SMsHhe9nF5UCAwEAAaOCAVowggFWMA8GA1UdEwEB/wQFMAMBAf8wCwYD
 
-[Yx7ZludNus5vKWTihgx2Qalgb+sqUMwI/WUET7ghO2dRxPUdUbgIYF0saTndKPYd]{lang="EN-US"}
+VR0PBAQDAgEGMB0GA1UdDgQWBBQzEQ58yIC54wxodp6JzZvn/gx0CDAfBgNVHSME
 
-[4oBgl6M0SMsHhe9nF5UCAwEAAaOCAVowggFWMA8GA1UdEwEB/wQFMAMBAf8wCwYD]{lang="EN-US"}
+GDAWgBQzEQ58yIC54wxodp6JzZvn/gx0CDAZBgNVHREEEjAQgQ5wa2lAb3BlbmNh
 
-[VR0PBAQDAgEGMB0GA1UdDgQWBBQzEQ58yIC54wxodp6JzZvn/gx0CDAfBgNVHSME]{lang="EN-US"}
+Lm9yZzAZBgNVHRIEEjAQgQ5wa2lAb3BlbmNhLm9yZzCBgQYIKwYBBQUHAQEEdTBz
 
-[GDAWgBQzEQ58yIC54wxodp6JzZvn/gx0CDAZBgNVHREEEjAQgQ5wa2lAb3BlbmNh]{lang="EN-US"}
+MDIGCCsGAQUFBzAChiZodHRwOi8mdcGl0YW4vcGtpL3B1Yi9jYWNlcnQvY2FjZXJ0
 
-[Lm9yZzAZBgNVHRIEEjAQgQ5wa2lAb3BlbmNhLm9yZzCBgQYIKwYBBQUHAQEEdTBz]{lang="EN-US"}
+LmNydDAeBggrBgEFBQcwAYYSaHR0cDovL3RpdGFuOjI1NjAvMB0GCCsGAQUFBzAM
 
-[MDIGCCsGAQUFBzAChiZodHRwOi8mdcGl0YW4vcGtpL3B1Yi9jYWNlcnQvY2FjZXJ0]{lang="EN-US"}
+hhFodHRwOi8mdcGl0YW46ODMwLzA8BgNVHR8ENTAzMDGgL6AthitodHRwOi8vMTky
 
-[LmNydDAeBggrBgEFBQcwAYYSaHR0cDovL3RpdGFuOjI1NjAvMB0GCCsGAQUFBzAM]{lang="EN-US"}
+LjE2OC40MC4xMjgvcGtpL3B1Yi9jcmwvY2FjcmwuY3JsMA0GCSqGSIb3DQEBCwUA
 
-[hhFodHRwOi8mdcGl0YW46ODMwLzA8BgNVHR8ENTAzMDGgL6AthitodHRwOi8vMTky]{lang="EN-US"}
+A4IBAQC0q0SSmvQNfa5ELtRKYF62C/Y8QTLbk6lZDTZuIzN15SGKQcbNM970ffCD
 
-[LjE2OC40MC4xMjgvcGtpL3B1Yi9jcmwvY2FjcmwuY3JsMA0GCSqGSIb3DQEBCwUA]{lang="EN-US"}
+Lk1zosyEVE7PLnii3bZ5khcGO3byyXfluAqRyOGVJcudaw7uIQqgv0AJQ+zaQSHi
 
-[A4IBAQC0q0SSmvQNfa5ELtRKYF62C/Y8QTLbk6lZDTZuIzN15SGKQcbNM970ffCD]{lang="EN-US"}
+d4kQf5QWgYkQ55/C5puOmcMRgCbMpR2lYkqXLDjTIAZIHRZ/sTp6c+ie2bFxi/YT
 
-[Lk1zosyEVE7PLnii3bZ5khcGO3byyXfluAqRyOGVJcudaw7uIQqgv0AJQ+zaQSHi]{lang="EN-US"}
+3xYbO0wDMuGOKJJpsyKTKcbG9NdfbDyFgzEYAobyYqAUB3C0/bMfBduwhQWKSoYE
 
-[d4kQf5QWgYkQ55/C5puOmcMRgCbMpR2lYkqXLDjTIAZIHRZ/sTp6c+ie2bFxi/YT]{lang="EN-US"}
+6vZsPGAEisCmAl3dIp49jPgVkixoShraYF1jLsWzJGlzem8QvWYzOqKEDwq3SV0Z
 
-[3xYbO0wDMuGOKJJpsyKTKcbG9NdfbDyFgzEYAobyYqAUB3C0/bMfBduwhQWKSoYE]{lang="EN-US"}
+cXK8gzDBcsobcUMkwIYPAmd1kAPX
 
-[6vZsPGAEisCmAl3dIp49jPgVkixoShraYF1jLsWzJGlzem8QvWYzOqKEDwq3SV0Z]{lang="EN-US"}
+\-\-\-\--END CERTIFICATE\-\-\-\--
 
-[cXK8gzDBcsobcUMkwIYPAmd1kAPX]{lang="EN-US"}
+Bag Attributes
 
-[\-\-\-\--END CERTIFICATE\-\-\-\--]{lang="EN-US"}
+    friendlyName:
 
-[Bag Attributes]{lang="EN-US"}
+    localKeyID: 99 0B C2 3B 8B D1 E4 33 42 2B 31 C3 37 C0 1D DF 0D 79 09 1D
 
-[    friendlyName:]{lang="EN-US"}
+Key Attributes: \<No Attributes\>
 
-[    localKeyID: 99 0B C2 3B 8B D1 E4 33 42 2B 31 C3 37 C0 1D DF 0D 79 09 1D]{lang="EN-US"}
+\-\-\-\--BEGIN ENCRYPTED PRIVATE KEY\-\-\-\--
 
-[Key Attributes: \<No Attributes\>]{lang="EN-US"}
+MIICwzA9BgkqhkiG9w0BBQ0wMDAbBgkqhkiG9w0BBQwwDgQIcUSKSW9GVmICAggA
 
-[\-\-\-\--BEGIN ENCRYPTED PRIVATE KEY\-\-\-\--]{lang="EN-US"}
+MBEGBSsOAwIHBAi5QZM+lSYWPASCAoBKDYulE5f2BXL9ZhI9zWAJpx2cShz/9PsW
 
-[MIICwzA9BgkqhkiG9w0BBQ0wMDAbBgkqhkiG9w0BBQwwDgQIcUSKSW9GVmICAggA]{lang="EN-US"}
+5Qm106D+xSj1eAzkx/m4Xb4xRU8oOAuzu1DlWfSHKXoaa0OoRSiOEX1eg0eo/2vv
 
-[MBEGBSsOAwIHBAi5QZM+lSYWPASCAoBKDYulE5f2BXL9ZhI9zWAJpx2cShz/9PsW]{lang="EN-US"}
+CHCvKHfTJr4gVSSa7i4I+aQ6AItrI6q99WlkN/e/IE5U1UE4ZhcsIiFJG+IvG7S8
 
-[5Qm106D+xSj1eAzkx/m4Xb4xRU8oOAuzu1DlWfSHKXoaa0OoRSiOEX1eg0eo/2vv]{lang="EN-US"}
+f9liWQ2CImy/hjgFCD9nqSLN8wUzP7O2SdLVlUb5z4FR6VISZdgTFE8j7ko2HtUs
 
-[CHCvKHfTJr4gVSSa7i4I+aQ6AItrI6q99WlkN/e/IE5U1UE4ZhcsIiFJG+IvG7S8]{lang="EN-US"}
+HVSg0nm114EwPtPMMbHefcuQ6b82y1M+dWfVxBN9K03lN4tZNfPWwLSRrPvjUzBG
 
-[f9liWQ2CImy/hjgFCD9nqSLN8wUzP7O2SdLVlUb5z4FR6VISZdgTFE8j7ko2HtUs]{lang="EN-US"}
+dKtjf3/IFdV7/tUMy9JJSpt4iFt1h7SZPcOoGp1ZW+YUR30I7YnFE+9Yp/46KWT8
 
-[HVSg0nm114EwPtPMMbHefcuQ6b82y1M+dWfVxBN9K03lN4tZNfPWwLSRrPvjUzBG]{lang="EN-US"}
+bk7j0STRnZX/xMy/9E52uHkLdW1ET3TXralLMYt/4jg4M0jUvoi3GS2Kbo+czsUn
 
-[dKtjf3/IFdV7/tUMy9JJSpt4iFt1h7SZPcOoGp1ZW+YUR30I7YnFE+9Yp/46KWT8]{lang="EN-US"}
+gKgqwYnxVfRSvt8d6GBYrpF2tMFS9LEyngPKXExd+m4mAryuT5PhdFTkb1B190Lp
 
-[bk7j0STRnZX/xMy/9E52uHkLdW1ET3TXralLMYt/4jg4M0jUvoi3GS2Kbo+czsUn]{lang="EN-US"}
+UIBjk3IXnr7AdrhvyLkH0UuQE95emXBD/K0HlD73cMrtmogL8F4yS5B2hpIr/v5/
 
-[gKgqwYnxVfRSvt8d6GBYrpF2tMFS9LEyngPKXExd+m4mAryuT5PhdFTkb1B190Lp]{lang="EN-US"}
+eW35+1QMnJ9FtHFnVsLx9wl9lX8iNfsoBhg6FQ/hNSioN7rNBe7wwIRzxPVfEhO8
 
-[UIBjk3IXnr7AdrhvyLkH0UuQE95emXBD/K0HlD73cMrtmogL8F4yS5B2hpIr/v5/]{lang="EN-US"}
+5ajQxWlidRn5RkzfUo6HuAcq02QTpSXI6wf2bzsVmr5sk+fRaELD/cwL6VjtXO6x
 
-[eW35+1QMnJ9FtHFnVsLx9wl9lX8iNfsoBhg6FQ/hNSioN7rNBe7wwIRzxPVfEhO8]{lang="EN-US"}
+ZBLJcUyAwvScrOtTEK7Q5n0I34gQd4qcF0D1x9yQ4sqvTeU/7Jkm6XCPV05/5uiF
 
-[5ajQxWlidRn5RkzfUo6HuAcq02QTpSXI6wf2bzsVmr5sk+fRaELD/cwL6VjtXO6x]{lang="EN-US"}
+RLCfFAwaJMBdIQ6jDQHnpWT67uNDwdEzaPmuTVMme5Woc5zsqE5DY3hWu4oqFdDz
 
-[ZBLJcUyAwvScrOtTEK7Q5n0I34gQd4qcF0D1x9yQ4sqvTeU/7Jkm6XCPV05/5uiF]{lang="EN-US"}
+kPLnbX74IZ0gOLki9eIJkVswnF5HkBCKS50ejlW6TgbMNZ+JPk2w
 
-[RLCfFAwaJMBdIQ6jDQHnpWT67uNDwdEzaPmuTVMme5Woc5zsqE5DY3hWu4oqFdDz]{lang="EN-US"}
+\-\-\-\--END ENCRYPTED PRIVATE KEY\-\-\-\--
 
-[kPLnbX74IZ0gOLki9eIJkVswnF5HkBCKS50ejlW6TgbMNZ+JPk2w]{lang="EN-US"}
+\# 以PEM格式导出PKI域中CA证书到终端。
 
-[\-\-\-\--END ENCRYPTED PRIVATE KEY\-\-\-\--]{lang="EN-US"}
+\<Sysname\> system-view
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_755991609}[以]{style="font-family:宋体"}[PEM]{lang="FR"}[格式导出]{style="font-family:
-宋体"}[PKI]{lang="EN-US"}[域中]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书到终端。]{style="font-family:宋体"}
+Sysname pki export domain domain1 pem ca
 
-[[\<Sys]{lang="ES-AR"}[name]{lang="EN-US"}]{#struct_0_18308_19795_x434081730}[\> system-view]{lang="ES-AR"}
+\-\-\-\--BEGIN CERTIFICATE\-\-\-\--
 
-[\[Sysname\] pki export domain domain1 pem ca]{lang="EN-US"}
+MIIB+TCCAWICEQDMbgjRKygg3vpGFVY6pa3ZMA0GCSqGSIb3DQEBBQUAMD0xCzAJ
 
-[\-\-\-\--BEGIN CERTIFICATE\-\-\-\--]{lang="EN-US"}
+BgNVBAYTAmNuMQwwCgYDVQQKEwNoM2MxETAPBgNVBAsTCGgzYy10ZXN0MQ0wCwYD
 
-[MIIB+TCCAWICEQDMbgjRKygg3vpGFVY6pa3ZMA0GCSqGSIb3DQEBBQUAMD0xCzAJ]{lang="EN-US"}
+VQQDEwQ4MDQzMB4XDTExMDMyMjA0NDQyNFoXDTE0MDMyMzA0MzUyNFowPTELMAkG
 
-[BgNVBAYTAmNuMQwwCgYDVQQKEwNoM2MxETAPBgNVBAsTCGgzYy10ZXN0MQ0wCwYD]{lang="EN-US"}
+A1UEBhMCY24xDDAKBgNVBAoTA2gzYzERMA8GA1UECxMIaDNjLXRlc3QxDTALBgNV
 
-[VQQDEwQ4MDQzMB4XDTExMDMyMjA0NDQyNFoXDTE0MDMyMzA0MzUyNFowPTELMAkG]{lang="EN-US"}
+BAMTBDgwNDMwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOvDAYQhyc++G7h5
 
-[A1UEBhMCY24xDDAKBgNVBAoTA2gzYzERMA8GA1UECxMIaDNjLXRlc3QxDTALBgNV]{lang="EN-US"}
+eNDzJs22OQjCn/4JqnNKIdKz1BbaJT8/+IueSn9JIsg64Ex2WBeCd/tcmnSW57ag
 
-[BAMTBDgwNDMwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOvDAYQhyc++G7h5]{lang="EN-US"}
+dCvNIUYXXVOGca2iaSOElqCF4CQfV9zLrBtA7giHD49T+JbxLrrJLmdIQMJ+vYdC
 
-[eNDzJs22OQjCn/4JqnNKIdKz1BbaJT8/+IueSn9JIsg64Ex2WBeCd/tcmnSW57ag]{lang="EN-US"}
+sCxIp3YMAiuCahVLZeXklooqwqIXAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAElm7
 
-[dCvNIUYXXVOGca2iaSOElqCF4CQfV9zLrBtA7giHD49T+JbxLrrJLmdIQMJ+vYdC]{lang="EN-US"}
+W2Lp9Xk4nZVIpVV76CkNe8/C+Id00GCRUUVQFSMvo7Pded76bmYX2KzJSz+DlMqy
 
-[sCxIp3YMAiuCahVLZeXklooqwqIXAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAElm7]{lang="EN-US"}
+TdVrgG9Fp6XTFO80aKJGe6NapsfhJHKS+Q7mL0XpXeMONgK+e3dX7rsDxsY7hF+j
 
-[W2Lp9Xk4nZVIpVV76CkNe8/C+Id00GCRUUVQFSMvo7Pded76bmYX2KzJSz+DlMqy]{lang="EN-US"}
+0gwsHrjV7kWvwJvDlhzGW6xbpr4DRmdcao19Cr6o=
 
-[TdVrgG9Fp6XTFO80aKJGe6NapsfhJHKS+Q7mL0XpXeMONgK+e3dX7rsDxsY7hF+j]{lang="EN-US"}
+\-\-\-\--END CERTIFICATE\-\-\-\--
 
-[0gwsHrjV7kWvwJvDlhzGW6xbpr4DRmdcao19Cr6o=]{lang="EN-US"}
+\# 导出PKI域中CA证书到PEM编码的文件，指定文件名称为cacert。
 
-[\-\-\-\--END CERTIFICATE\-\-\-\--]{lang="EN-US"}
+\<Sysname\> system-view
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_694775061}[导出]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书到]{style="font-family:宋体"}[PEM]{lang="EN-US"}[编码的文件，指定文件名称为]{style="font-family:宋体"}[cacert]{lang="EN-US"}[。]{style="font-family:宋体"}
+Sysname pki export domain domain1 pem ca filename cacert
 
-[[\<Sys]{lang="ES-AR"}[name]{lang="EN-US"}]{#struct_0_18308_19795_x391764663}[\> system-view]{lang="ES-AR"}
+\# 导出PKI域中CA证书（证书链）到终端。
 
-[\[Sysname\] pki export domain domain1 pem ca filename cacert]{lang="EN-US"}
+\<Sysname\> system-view
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1396766898}[导出]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书（证书链）到终端。]{style="font-family:宋体"}
+Sysname pki export domain domain1 pem ca
 
-[[\<Sys]{lang="ES-AR"}[name]{lang="EN-US"}]{#struct_0_18308_19795_x433426370}[\> system-view]{lang="ES-AR"}
+\-\-\-\--BEGIN CERTIFICATE\-\-\-\--
 
-[\[]{lang="EN-US"}[Sys]{lang="ES-AR"}[name\] pki export domain domain1 pem ca]{lang="EN-US"}
+MIIB7jCCAVcCEQCdSVShJFEMifVG8zRRoSsWMA0GCSqGSIb3DQEBBQUAMDcxCzAJ
 
-[\-\-\-\--BEGIN CERTIFICATE\-\-\-\--]{lang="EN-US"}
+BgNVBAYTAmNuMQwwCgYDVQQKEwNoM2MxDDAKBgNVBAsTA2gzYzEMMAoGA1UEAxMD
 
-[MIIB7jCCAVcCEQCdSVShJFEMifVG8zRRoSsWMA0GCSqGSIb3DQEBBQUAMDcxCzAJ]{lang="EN-US"}
+YWNhMB4XDTExMDEwNjAyNTc0NFoXDTEzMTIwMTAzMTMyMFowODELMAkGA1UEBhMC
 
-[BgNVBAYTAmNuMQwwCgYDVQQKEwNoM2MxDDAKBgNVBAsTA2gzYzEMMAoGA1UEAxMD]{lang="EN-US"}
+Y24xDDAKBgNVBAoTA2gzYzEMMAoGA1UECxMDaDNjMQ0wCwYDVQQDEwRhYWNhMIGf
 
-[YWNhMB4XDTExMDEwNjAyNTc0NFoXDTEzMTIwMTAzMTMyMFowODELMAkGA1UEBhMC]{lang="EN-US"}
+MA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDcuJsWhAJXEDmowGb5z7VDVms54TKi
 
-[Y24xDDAKBgNVBAoTA2gzYzEMMAoGA1UECxMDaDNjMQ0wCwYDVQQDEwRhYWNhMIGf]{lang="EN-US"}
+xnaNJCWvBOrU64ftvpVB7xQekbkjgAS9FjDyXlLQ8IyIsYIp5ebJr8P+n9i9Pl7j
 
-[MA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDcuJsWhAJXEDmowGb5z7VDVms54TKi]{lang="EN-US"}
+lBx5mi4XeIldyv2OjfNx5oSQ+gWY9/m1R8uv13RS05r3rxPg+7EvKBjmiy0Giddw
 
-[xnaNJCWvBOrU64ftvpVB7xQekbkjgAS9FjDyXlLQ8IyIsYIp5ebJr8P+n9i9Pl7j]{lang="EN-US"}
+vu3Y3WrjBPp6GQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAJrQddzVQEiy4AcgtzUL
 
-[lBx5mi4XeIldyv2OjfNx5oSQ+gWY9/m1R8uv13RS05r3rxPg+7EvKBjmiy0Giddw]{lang="EN-US"}
+ltkmlmWoz87+jUsgFB+H+xeyiZE4sancf2UwH8kXWqZ5AuReFCCBC2fkvvQvUGnV
 
-[vu3Y3WrjBPp6GQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAJrQddzVQEiy4AcgtzUL]{lang="EN-US"}
+cso7JXAhfw8sUFok9eHz2R+GSoEk5BZFzZ8eCmNyGq9ln6mJsO1hAqMpsCW6G2zh
 
-[ltkmlmWoz87+jUsgFB+H+xeyiZE4sancf2UwH8kXWqZ5AuReFCCBC2fkvvQvUGnV]{lang="EN-US"}
+5mus7FTHhywXpJ22/fnHg61m
 
-[cso7JXAhfw8sUFok9eHz2R+GSoEk5BZFzZ8eCmNyGq9ln6mJsO1hAqMpsCW6G2zh]{lang="EN-US"}
+\-\-\-\--END CERTIFICATE\-\-\-\--
 
-[5mus7FTHhywXpJ22/fnHg61m]{lang="EN-US"}
+\-\-\-\--BEGIN CERTIFICATE\-\-\-\--
 
-[\-\-\-\--END CERTIFICATE\-\-\-\--]{lang="EN-US"}
+MIIB8DCCAVkCEQD2PBUx/rvslNw9uTrZB3DlMA0GCSqGSIb3DQEBBQUAMDoxCzAJ
 
-[\-\-\-\--BEGIN CERTIFICATE\-\-\-\--]{lang="EN-US"}
+BgNVBAYTAmNuMQwwCgYDVQQKEwNoM2MxDDAKBgNVBAsTA2gzYzEPMA0GA1UEAxMG
 
-[MIIB8DCCAVkCEQD2PBUx/rvslNw9uTrZB3DlMA0GCSqGSIb3DQEBBQUAMDoxCzAJ]{lang="EN-US"}
+cm9mdcGNhMB4XDTExMDEwNjAyNTY1OFoXDTEzMTIwNDAzMTMxMFowNzELMAkGA1UE
 
-[BgNVBAYTAmNuMQwwCgYDVQQKEwNoM2MxDDAKBgNVBAsTA2gzYzEPMA0GA1UEAxMG]{lang="EN-US"}
+BhMCY24xDDAKBgNVBAoTA2gzYzEMMAoGA1UECxMDaDNjMQwwCgYDVQQDEwNhY2Ew
 
-[cm9mdcGNhMB4XDTExMDEwNjAyNTY1OFoXDTEzMTIwNDAzMTMxMFowNzELMAkGA1UE]{lang="EN-US"}
+gZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOeklR7DpeEV72N1OLz+dydIDTx0
 
-[BhMCY24xDDAKBgNVBAoTA2gzYzEMMAoGA1UECxMDaDNjMQwwCgYDVQQDEwNhY2Ew]{lang="EN-US"}
+zVZDdPxF1gQYWSfIBwwFKJEyQ/4y8VIfDIm0EGTM4dsOX/QFwudhl/Czkio3dWLh
 
-[gZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOeklR7DpeEV72N1OLz+dydIDTx0]{lang="EN-US"}
+Q1y5XCJy68vQKrB82WZ2mah5Nuekus3LSZZBoZKTAOY5MCCMFcULM858dtSq15Sh
 
-[zVZDdPxF1gQYWSfIBwwFKJEyQ/4y8VIfDIm0EGTM4dsOX/QFwudhl/Czkio3dWLh]{lang="EN-US"}
+xF7tKSeAT7ARlJxTAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEADJQCo6m0RNup0ewa
 
-[Q1y5XCJy68vQKrB82WZ2mah5Nuekus3LSZZBoZKTAOY5MCCMFcULM858dtSq15Sh]{lang="EN-US"}
+ItX4XK/tYcJXAQWMA0IuwaWpr+ofqVVgYBPwVpYglhJDOuIZxKdR2pfQOA4f35wM
 
-[xF7tKSeAT7ARlJxTAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEADJQCo6m0RNup0ewa]{lang="EN-US"}
+Vz6kAujLATsEA1GW9ACUWa5PHwVgJk9BDEXhKSJ2e7odmrg/iROhJjc1NMV3pvIs
 
-[ItX4XK/tYcJXAQWMA0IuwaWpr+ofqVVgYBPwVpYglhJDOuIZxKdR2pfQOA4f35wM]{lang="EN-US"}
+CuFiCLxRQcMGhCNHlOn4wuydssc=
 
-[Vz6kAujLATsEA1GW9ACUWa5PHwVgJk9BDEXhKSJ2e7odmrg/iROhJjc1NMV3pvIs]{lang="EN-US"}
+\-\-\-\--END CERTIFICATE\-\-\-\--
 
-[CuFiCLxRQcMGhCNHlOn4wuydssc=]{lang="EN-US"}
+\-\-\-\--BEGIN CERTIFICATE\-\-\-\--
 
-[\-\-\-\--END CERTIFICATE\-\-\-\--]{lang="EN-US"}
+MIIB8jCCAVsCEFxy3MSlQ835MrnBkI/dUPYwDQYJKoZIhvcNAQEFBQAwOjELMAkG
 
-[\-\-\-\--BEGIN CERTIFICATE\-\-\-\--]{lang="EN-US"}
+A1UEBhMCY24xDDAKBgNVBAoTA2gzYzEMMAoGA1UECxMDaDNjMQ8wDQYDVQQDEwZy
 
-[MIIB8jCCAVsCEFxy3MSlQ835MrnBkI/dUPYwDQYJKoZIhvcNAQEFBQAwOjELMAkG]{lang="EN-US"}
+b290Y2EwHhcNMTEwMTA2MDI1MTQxWhcNMTMxMjA3MDMxMjA1WjA6MQswCQYDVQQG
 
-[A1UEBhMCY24xDDAKBgNVBAoTA2gzYzEMMAoGA1UECxMDaDNjMQ8wDQYDVQQDEwZy]{lang="EN-US"}
+EwJjbjEMMAoGA1UEChMDaDNjMQwwCgYDVQQLEwNoM2MxDzANBgNVBAMTBnJvb3Rj
 
-[b290Y2EwHhcNMTEwMTA2MDI1MTQxWhcNMTMxMjA3MDMxMjA1WjA6MQswCQYDVQQG]{lang="EN-US"}
+YTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAxP2XLFE230zq6MhwZvAomOxa
 
-[EwJjbjEMMAoGA1UEChMDaDNjMQwwCgYDVQQLEwNoM2MxDzANBgNVBAMTBnJvb3Rj]{lang="EN-US"}
+7tc1r4bESXZu3UBKno3Ay9kQm2HrDOAizvZXfLu7Gx22ga2Qdz0lIeZ+EQrYHTyO
 
-[YTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAxP2XLFE230zq6MhwZvAomOxa]{lang="EN-US"}
+pBcejDjal/ZtvgnjXyHFoG8nS+P7n83BkRj/Fu7Yz4zjTKMbCF2EfhEyXxr4NSXA
 
-[7tc1r4bESXZu3UBKno3Ay9kQm2HrDOAizvZXfLu7Gx22ga2Qdz0lIeZ+EQrYHTyO]{lang="EN-US"}
+fhC9qg9S23vNXStmWvsCAwEAATANBgkqhkiG9w0BAQUFAAOBgQBtsU7X77sdZ1Nn
 
-[pBcejDjal/ZtvgnjXyHFoG8nS+P7n83BkRj/Fu7Yz4zjTKMbCF2EfhEyXxr4NSXA]{lang="EN-US"}
+0I98lh0qA5g7SEEIpI+pwZjjrH0FVHw01e4JWhHjyHqrOyfXYqe7vH4SXp5MHEqf
 
-[fhC9qg9S23vNXStmWvsCAwEAATANBgkqhkiG9w0BAQUFAAOBgQBtsU7X77sdZ1Nn]{lang="EN-US"}
+14nKIEbexbPONspebtznxv4/xTjd1aM2rfQ95jJ/SN8H8KIyiYZyIs3t5Q+V35x1
 
-[0I98lh0qA5g7SEEIpI+pwZjjrH0FVHw01e4JWhHjyHqrOyfXYqe7vH4SXp5MHEqf]{lang="EN-US"}
+cef+NMWgZBzwXOSP0wC9+pC2ZNiIpg==
 
-[14nKIEbexbPONspebtznxv4/xTjd1aM2rfQ95jJ/SN8H8KIyiYZyIs3t5Q+V35x1]{lang="EN-US"}
+\-\-\-\--END CERTIFICATE\-\-\-\--
 
-[cef+NMWgZBzwXOSP0wC9+pC2ZNiIpg==]{lang="EN-US"}
+\# 导出PKI域中的本地证书及其对应的私钥到PKCS12编码的文件，指定保护私钥信息的加密口令为123，文件名称为cert-lo.der。
 
-[\-\-\-\--END CERTIFICATE\-\-\-\--]{lang="EN-US"}
+\<Sysname\> system-view
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1649342818}[导出]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中的本地证书及其对应的私钥到]{style="font-family:宋体"}[PKCS12]{lang="EN-US"}[编码的文件，指定保护私钥信息的加密口令为]{style="font-family:宋体"}[123]{lang="EN-US"}[，文件名称为]{style="font-family:宋体"}[cert-lo.der]{lang="EN-US"}[。]{style="font-family:宋体"}
+Sysname pki export domain domain1 p12 local passphrase 123 filename cert-lo.der
 
-[[\<Sys]{lang="ES-AR"}[name]{lang="EN-US"}]{#struct_0_18308_19795_1021795009}[\> system-view]{lang="ES-AR"}
+\# 导出PKI域中的所有证书到PKCS12编码的文件，指定文件名称为cert-all.p7b。
 
-[\[Sysname\] pki export domain domain1 p12 local passphrase 123 filename cert-lo.der]{lang="EN-US"}
+\<Sysname\> system-view
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_340776366}[导出]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中的所有证书到]{style="font-family:宋体"}[PKCS12]{lang="EN-US"}[编码的文件，指定文件名称为]{style="font-family:宋体"}[cert-all.p7b]{lang="EN-US"}[。]{style="font-family:宋体"}
+Sysname pki export domain domain1 p12 all passphrase 123 filename cert-all.p7b
 
-[[\<Sys]{lang="ES-AR"}[name]{lang="EN-US"}]{#struct_0_18308_19795_1176676082}[\> system-view]{lang="ES-AR"}
+【相关命令】
 
-[\[Sysname\] pki export domain domain1 p12 all passphrase 123 filename cert-all.p7b]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x312283025}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pki domain]{lang="EN-US"}**]{#struct_0_18308_19795_1060074536}
-:::
-
-::: {#758329447 .myid}
-[]{#_Toc404793086}[]{#struct_0_18308_19795_x1803213255}[]{#_Toc279163114}[]{#_Toc265512474}[]{#_Toc298870239}[]{#_Toc298924388}
+·**pki domain**
 
 **PKI \-- PKI配置命令 \-- pki import**
 
 ------------------------------------------------------------------------
 
-[**[pki import]{lang="EN-US"}**]{#struct_0_18308_19795_x165961658}[命令用来将]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书、本地证书或对端证书导入到指定的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中保存。]{style="font-family:宋体"}
+**[pki import**]命令用来将CA证书、本地证书或对端证书导入到指定的PKI域中保存。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x434016197}
+【命令】
 
-[**[pki import domain ]{lang="EN-US"}***[domain-name]{lang="EN-US"}***[ ]{lang="EN-US"}**[{ **der** { **ca** \| **local** \| **peer** } **filename** *filename \|* **p12 local filename** *filename \|* **pem** { **ca** \| **local** \| **peer** } \[ **filename** *filename* \] }]{lang="EN-US"}]{#struct_0_18308_19795_1900542064}
+**[pki import domain ***domain-name*****[{ **der** { **ca** \| **local** \| **peer** } **filename** *filename \|* **p12 local filename** *filename \|* **pem** { **ca** \| **local** \| **peer** } [ **filename** *filename* ] }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1429390837}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18308_19795_x1838811792}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1403644479}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_1184091123}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x1211438065}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1052364162}
+【参数】
 
-[**[domain]{lang="EN-US"}**[ *domain*-*name*]{lang="EN-US"}]{#struct_0_18308_19795_x1008006217}[：保存证书的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写，不能包括"]{style="font-family:宋体"}[\~]{lang="EN-US"}["、"]{style="font-family:宋体"}[\*]{lang="EN-US"}["、"]{style="font-family:宋体"}[\\]{lang="EN-US"}["、"]{style="font-family:宋体"}[\|]{lang="EN-US"}["、"]{style="font-family:宋体"}[:]{lang="EN-US"}["、"]{style="font-family:宋体"}[.]{lang="EN-US"}["、"]{style="font-family:宋体"}[\<]{lang="EN-US"}["、"]{style="font-family:宋体"}[\>]{lang="EN-US"}["、"]{style="font-family:宋体"}[\"]{lang="EN-US"}["和"]{style="font-family:宋体"}[\']{lang="EN-US"}["。]{style="font-family:宋体"}
+**[domain** *domain*-*name*]：保存证书的PKI域的名称，为1～31个字符的字符串，不区分大小写，不能包括"\~"、"\*"、"\"、"[\|]"、":"、"."、"\<"、"\>"、"\""和"\'"。
 
-[**[der]{lang="EN-US"}**]{#struct_0_18308_19795_x433950661}[：指定证书格式为]{style="font-family:宋体"}[DER]{lang="EN-US"}[编码（包括]{style="font-family:宋体"}[PKCS#7]{lang="EN-US"}[格式的证书）。]{style="font-family:宋体"}
+**[der**]：指定证书格式为DER编码（包括PKCS#7格式的证书）。
 
-[**[p12]{lang="EN-US"}**]{#struct_0_18308_19795_1631511282}[：指定证书格式为]{style="font-family:宋体"}[PKCS#12]{lang="EN-US"}[编码。]{style="font-family:宋体"}
+**[p12**]：指定证书格式为PKCS#12编码。
 
-[**[pem]{lang="EN-US"}**]{#struct_0_18308_19795_x1516724252}[：指定证书格式为]{style="font-family:宋体"}[PEM]{lang="EN-US"}[编码。]{style="font-family:宋体"}
+**[pem**]：指定证书格式为PEM编码。
 
-[**[ca]{lang="EN-US"}**]{#struct_0_18308_19795_318610970}[：表示]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书。]{style="font-family:宋体"}
+**[ca**]：表示CA证书。
 
-[**[local]{lang="EN-US"}**]{#struct_0_18308_19795_x132432236}[：表示本地证书。]{style="font-family:宋体"}
+**[local**]：表示本地证书。
 
-[**[peer]{lang="EN-US"}**]{#struct_0_18308_19795_2077412298}[：表示对端证书。]{style="font-family:宋体"}
+**[peer**]：表示对端证书。
 
-[**[filename ]{lang="EN-US"}***[filename]{lang="EN-US"}*]{#struct_0_18308_19795_x2018176455}[：要导入的证书所在的文件名，不区分大小写。如果不指定本参数，则表示要通过直接在终端上粘贴证书内容的方式导入证书，这种方式仅]{style="font-family:宋体"}[PEM]{lang="EN-US"}[编码格式的证书才支持。]{style="font-family:宋体"}
+**[filename ***filename*]：要导入的证书所在的文件名，不区分大小写。如果不指定本参数，则表示要通过直接在终端上粘贴证书内容的方式导入证书，这种方式仅PEM编码格式的证书才支持。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1054530357}
+【使用指导】
 
-[[如果设备所处的环境中，没有证书的发布点，或者]{style="font-family:宋体"}[CA]{lang="EN-US"}]{#struct_0_18308_19795_2027934755}[服务器不支持通过]{style="font-family:宋体"}[SCEP]{lang="EN-US"}[协议与设备交互，则可通过此命令将证书导入到设备。另外，当证书对应的密钥对由]{style="font-family:宋体"}[CA]{lang="EN-US"}[服务器生成时，]{style="font-family:宋体"}[CA]{lang="EN-US"}[服务器会将证书和对应的密钥对打包成一个文件，使用这样的证书前也需要通过此命令将其导入到设备。只有]{style="font-family:宋体"}[PKCS#12]{lang="EN-US"}[格式或]{style="font-family:宋体"}[PEM]{lang="EN-US"}[格式的证书文件中可能包含密钥对。]{style="font-family:宋体"}
+如果设备所处的环境中，没有证书的发布点，或者CA服务器不支持通过SCEP协议与设备交互，则可通过此命令将证书导入到设备。另外，当证书对应的密钥对由CA服务器生成时，CA服务器会将证书和对应的密钥对打包成一个文件，使用这样的证书前也需要通过此命令将其导入到设备。只有PKCS#12格式或PEM格式的证书文件中可能包含密钥对。
 
-[[证书导入之前：]{style="font-family:宋体"}]{#struct_0_18308_19795_x433885125}
+证书导入之前：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[需要通过]{style="font-family:宋体"}]{#struct_0_18308_19795_x1879598062}[FTP]{lang="EN-US"}[、]{style="font-family:宋体"}[TFTP]{lang="EN-US"}[等协议将证书文件传送到设备的存储介质中。如果设备所处的环境不允许使用]{style="font-family:宋体"}[FTP]{lang="EN-US"}[、]{style="font-family:宋体"}[TFTP]{lang="EN-US"}[等协议，则可以直接在终端上粘贴证书的内容，但是粘贴的证书必须是]{style="font-family:宋体"}[PEM]{lang="EN-US"}[格式的，因为只有]{style="font-family:宋体"}[PEM]{lang="EN-US"}[编码的证书内容为可打印字符。]{style="font-family:宋体"}
+·需要通过FTP、TFTP等协议将证书文件传送到设备的存储介质中。如果设备所处的环境不允许使用FTP、TFTP等协议，则可以直接在终端上粘贴证书的内容，但是粘贴的证书必须是PEM格式的，因为只有PEM编码的证书内容为可打印字符。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[必须存在签发本地证书（或对端证书）的]{style="font-family:宋体"}]{#struct_0_18308_19795_1744718440}[CA]{lang="EN-US"}[证书链才能成功导入本地证书（或对端证书），这里的]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书链可以是保存在设备上的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中的，也可以是本地证书（或对端证书）中携带的。因此，若设备和本地证书（或对端证书）中都没有]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书链，则需要首先执行导入]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书的命令。]{style="font-family:宋体"}
+·必须存在签发本地证书（或对端证书）的CA证书链才能成功导入本地证书（或对端证书），这里的CA证书链可以是保存在设备上的PKI域中的，也可以是本地证书（或对端证书）中携带的。因此，若设备和本地证书（或对端证书）中都没有CA证书链，则需要首先执行导入CA证书的命令。
 
-[[导入本地证书或对端证书时：]{style="font-family:宋体"}]{#struct_0_18308_19795_x97982392}
+导入本地证书或对端证书时：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果用户要导入的本地证书（或对端证书）中含有]{style="font-family:宋体"}]{#struct_0_18308_19795_14710688}[CA]{lang="EN-US"}[证书链，则可以通过导入本地证书（或对端证书）的命令一次性将]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书和本地证书（或对端证书）均导入到设备。导入的过程中，如果发现签发此本地证书（或对端证书）的]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书已经存在于设备上的任一]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中，则系统会提示用户是否将其进行覆盖。]{style="font-family:宋体"}
+·如果用户要导入的本地证书（或对端证书）中含有CA证书链，则可以通过导入本地证书（或对端证书）的命令一次性将CA证书和本地证书（或对端证书）均导入到设备。导入的过程中，如果发现签发此本地证书（或对端证书）的CA证书已经存在于设备上的任一PKI域中，则系统会提示用户是否将其进行覆盖。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果要导入的本地证书（或对端证书）中不含有]{style="font-family:宋体"}]{#struct_0_18308_19795_x1601011598}[CA]{lang="EN-US"}[证书链，但签发此本地证书（或对端证书）的]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书已经存在于设备上的任一]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中，则可以直接导入本地证书（或对端证书）。]{style="font-family:宋体"}
+·如果要导入的本地证书（或对端证书）中不含有CA证书链，但签发此本地证书（或对端证书）的CA证书已经存在于设备上的任一PKI域中，则可以直接导入本地证书（或对端证书）。
 
-[[导入]{style="font-family:宋体"}[CA]{lang="EN-US"}]{#struct_0_18308_19795_x343256046}[证书时：]{style="font-family:宋体"}
+导入CA证书时：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若要导入的]{style="font-family:宋体"}]{#struct_0_18308_19795_398152966}[CA]{lang="EN-US"}[证书为根]{style="font-family:宋体"}[CA]{lang="EN-US"}[或者包含了完整的证书链（即含有根证书），则可以导入到设备。]{style="font-family:宋体"}
+·若要导入的CA证书为根CA或者包含了完整的证书链（即含有根证书），则可以导入到设备。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若要导入的]{style="font-family:宋体"}]{#struct_0_18308_19795_781270806}[CA]{lang="EN-US"}[证书没有包含完整的证书链（即不含有根证书），但能够与设备上已有的]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书拼接成完整的证书链，则也可以导入到设备；如果不能与设备上已有的]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书拼接成完成的证书链，则不能导入到设备。]{style="font-family:宋体"}
+·若要导入的CA证书没有包含完整的证书链（即不含有根证书），但能够与设备上已有的CA证书拼接成完整的证书链，则也可以导入到设备；如果不能与设备上已有的CA证书拼接成完成的证书链，则不能导入到设备。
 
-[[一些情况下，在证书导入的过程中，需要用户确认或输入相关信息：]{style="font-family:宋体"}]{#struct_0_18308_19795_x433819589}
+一些情况下，在证书导入的过程中，需要用户确认或输入相关信息：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若要导入的证书文件中包含了根证书，且设备上目前还没有任何]{style="font-family:宋体"}]{#struct_0_18308_19795_1588335452}[PKI]{lang="EN-US"}[域中有此根证书，且要导入的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中没有配置]{style="font-family:宋体"}**[root-certificate fingerprint]{lang="EN-US"}**[，则在导入过程中还需要确认该根证书的指纹信息是否与用户的预期一致。用户需要通过联系]{style="font-family:
-宋体"}[CA]{lang="EN-US"}[服务器管理员来获取预期的根证书指纹信息。]{style="font-family:宋体"}
+·若要导入的证书文件中包含了根证书，且设备上目前还没有任何PKI域中有此根证书，且要导入的PKI域中没有配置**root-certificate fingerprint**，则在导入过程中还需要确认该根证书的指纹信息是否与用户的预期一致。用户需要通过联系CA服务器管理员来获取预期的根证书指纹信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当导入含有密钥对的本地证书时，需要输入口令。用户需要联系]{style="font-family:宋体"}]{#struct_0_18308_19795_x1387348322}[CA]{lang="EN-US"}[服务器管理员取得口令的内容。]{style="font-family:宋体"}
+·当导入含有密钥对的本地证书时，需要输入口令。用户需要联系CA服务器管理员取得口令的内容。
 
-[[导入含有密钥对的本地证书时，系统首先会根据查找到的]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x1370259628}[域中已有的密钥对配置来保存该密钥对。若]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中已保存了对应的密钥对，则设备会提示用户选择是否覆盖已有的密钥对。若]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中没有任何密钥对的配置，则根据密钥对的算法及证书的密钥用途，生成相应的密钥对配置。密钥对的具体保存规则如下：]{style="font-family:宋体"}
+导入含有密钥对的本地证书时，系统首先会根据查找到的PKI域中已有的密钥对配置来保存该密钥对。若PKI域中已保存了对应的密钥对，则设备会提示用户选择是否覆盖已有的密钥对。若PKI域中没有任何密钥对的配置，则根据密钥对的算法及证书的密钥用途，生成相应的密钥对配置。密钥对的具体保存规则如下：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果本地证书携带的密钥对的用途为通用，则依次查找指定]{style="font-family:宋体"}]{#struct_0_18308_19795_1229180234}[PKI]{lang="EN-US"}[域中通用用途、签名用途、加密用途的密钥对配置，并以找到配置中的密钥对名称保存该密钥对；若以上用途的密钥对配置均不存在，则提示用户输入密钥对名称（缺省的密钥对名称为]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域的名称），并生成相应的密钥对配置。]{style="font-family:宋体"}
+·如果本地证书携带的密钥对的用途为通用，则依次查找指定PKI域中通用用途、签名用途、加密用途的密钥对配置，并以找到配置中的密钥对名称保存该密钥对；若以上用途的密钥对配置均不存在，则提示用户输入密钥对名称（缺省的密钥对名称为PKI域的名称），并生成相应的密钥对配置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果本地证书携带的密钥对的用途为签名，则依次查找指定]{style="font-family:宋体"}]{#struct_0_18308_19795_1580217280}[PKI]{lang="EN-US"}[域中通用用途、签名用途的密钥对配置，并以找到配置中的密钥对名称保存该密钥对；若以上两种用途的密钥对配置均不存在，则提示用户输入密钥对名称（缺省的密钥对名称为]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域的名称），并生成相应的密钥对配置。]{style="font-family:宋体"}
+·如果本地证书携带的密钥对的用途为签名，则依次查找指定PKI域中通用用途、签名用途的密钥对配置，并以找到配置中的密钥对名称保存该密钥对；若以上两种用途的密钥对配置均不存在，则提示用户输入密钥对名称（缺省的密钥对名称为PKI域的名称），并生成相应的密钥对配置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果本地证书携带的密钥对的用途为加密，则查找指定]{style="font-family:宋体"}]{#struct_0_18308_19795_721540476}[PKI]{lang="EN-US"}[域中加密用途的密钥对配置，并以该配置中的密钥对名称保存密钥对；若加密用途密钥对的配置不存在，则提示用户输入密钥对名称（缺省的密钥对名称为]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域的名称），并生成相应的密钥对配置。]{style="font-family:宋体"}
+·如果本地证书携带的密钥对的用途为加密，则查找指定PKI域中加密用途的密钥对配置，并以该配置中的密钥对名称保存密钥对；若加密用途密钥对的配置不存在，则提示用户输入密钥对名称（缺省的密钥对名称为PKI域的名称），并生成相应的密钥对配置。
 
-[[由于以上过程中系统会自动更新或生成密钥对配置，因此建议用户在进行此类导入操作后，保存配置文件。]{style="font-family:宋体"}]{#struct_0_18308_19795_x1228817119}
+由于以上过程中系统会自动更新或生成密钥对配置，因此建议用户在进行此类导入操作后，保存配置文件。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_42052682}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x434278341}[向]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域]{style="font-family:宋体"}[aaa]{lang="EN-US"}[中导入]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书，证书文件格式为]{style="font-family:宋体"}[PEM]{lang="EN-US"}[编码，证书文件名称为]{style="font-family:宋体"}[rootca_pem.cer]{lang="EN-US"}[，证书文件中包含根证书。]{style="font-family:宋体"}
+\# 向PKI域aaa中导入CA证书，证书文件格式为PEM编码，证书文件名称为rootca_pem.cer，证书文件中包含根证书。
 
-[[\<Sys]{lang="ES-AR"}[name]{lang="EN-US"}]{#struct_0_18308_19795_x1253800251}[\> system-view]{lang="ES-AR"}
+\<Sysname\> system-view
 
-[\[]{lang="EN-US"}[Sysname]{lang="ES-AR"}[\] pki import domain aaa pem ca filename rootca_pem.cer]{lang="EN-US"}
+Sysname pki import domain aaa pem ca filename rootca_pem.cer
 
-[The trusted CA\'s finger print is:]{lang="EN-US"}
+The trusted CA\'s finger print is:
 
-[    MD5  fingerprint:FFFF 3EFF FFFF 37FF FFFF 137B FFFF 7535]{lang="EN-US"}
+    MD5  fingerprint:FFFF 3EFF FFFF 37FF FFFF 137B FFFF 7535
 
-[    SHA1 fingerprint:FFFF FF7F FF2B FFFF 7618 FF4C FFFF 0A7D FFFF FF69]{lang="EN-US"}
+    SHA1 fingerprint:FFFF FF7F FF2B FFFF 7618 FF4C FFFF 0A7D FFFF FF69
 
-[Is the finger print correct?(Y/N):y]{lang="EN-US"}
+Is the finger print correct?(Y/N):y
 
-[\[]{lang="EN-US"}[Sysname]{lang="ES-AR"}[\]]{lang="EN-US"}
+Sysname
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_634099232}[向]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域]{style="font-family:宋体"}[bbb]{lang="EN-US"}[中导入]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书，证书文件格式为]{style="font-family:宋体"}[PEM]{lang="EN-US"}[编码，证书文件名称为]{style="font-family:宋体"}[aca_pem.cer]{lang="EN-US"}[，证书文件中不包含根证书。]{style="font-family:宋体"}
+\# 向PKI域bbb中导入CA证书，证书文件格式为PEM编码，证书文件名称为aca_pem.cer，证书文件中不包含根证书。
 
-[[\<Sys]{lang="ES-AR"}[name]{lang="EN-US"}]{#struct_0_18308_19795_x691716672}[\> system-view]{lang="ES-AR"}
+\<Sysname\> system-view
 
-[\[]{lang="EN-US"}[Sysname]{lang="ES-AR"}[\] pki import domain bbb pem ca filename aca_pem.cer]{lang="EN-US"}
+Sysname pki import domain bbb pem ca filename aca_pem.cer
 
-[\[]{lang="EN-US"}[Sysname]{lang="ES-AR"}[\]]{lang="EN-US"}
+Sysname
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_151850878}[向]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域]{style="font-family:宋体"}[bbb]{lang="EN-US"}[中导入本地证书，证书文件格式为]{style="font-family:宋体"}[PKCS#12]{lang="EN-US"}[编码，证书文件名称为]{style="font-family:宋体"}[local-ca.p12]{lang="EN-US"}[，证书文件中包含了密钥对。]{style="font-family:宋体"}
+\# 向PKI域bbb中导入本地证书，证书文件格式为PKCS#12编码，证书文件名称为local-ca.p12，证书文件中包含了密钥对。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x434212805}
+\<Sysname\> system-view
 
-[\[]{lang="EN-US"}[Sysname]{lang="ES-AR"}[\] pki import domain bbb p12 local filename local-ca.p12]{lang="EN-US"}
+Sysname pki import domain bbb p12 local filename local-ca.p12
 
-[Please input challenge password:]{lang="EN-US"}
+Please input challenge password:
 
-[\*\*\*\*\*\*]{lang="EN-US"}
+\*\*\*\*\*\*
 
-[\[]{lang="EN-US"}[Sysname]{lang="ES-AR"}[\]]{lang="EN-US"}
+Sysname
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_358009639}[向]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域]{style="font-family:宋体"}[bbb]{lang="EN-US"}[中通过粘贴证书内容的方式导入]{style="font-family:宋体"}[PEM]{lang="EN-US"}[编码的本地证书。证书中含有密钥对和]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书链。]{style="font-family:宋体"}
+\# 向PKI域bbb中通过粘贴证书内容的方式导入PEM编码的本地证书。证书中含有密钥对和CA证书链。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x434081733}
+\<Sysname\> system-view
 
-[\[Sysname\] pki import domain bbb pem local]{lang="EN-US"}
+Sysname pki import domain bbb pem local
 
-[Enter PEM-formatted certificate.]{lang="EN-US"}
+Enter PEM-formatted certificate.
 
-[End with a Ctrl+c on a line by itself.]{lang="EN-US"}
+End with a Ctrl+c on a line by itself.
 
-[[[Bag Attributes]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+Bag Attributes{.TerminalDisplayshading}
 
-[[[localKeyID: 01 00 00 00]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+localKeyID: 01 00 00 00{.TerminalDisplayshading}
 
-[[[fri[endlyName: {F7619D96-3AC2-40D4-B6F3-4EAB73DEED73}]{style="border:none"}]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+fri[endlyName: {F7619D96-3AC2-40D4-B6F3-4EAB73DEED73}]{.TerminalDisplayshading}
 
-[[[Microsoft CSP Name: Microsoft Enhanced Cryptographic Provider v1.0]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+Microsoft CSP Name: Microsoft Enhanced Cryptographic Provider v1.0{.TerminalDisplayshading}
 
-[[[Key Attributes]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+Key Attributes{.TerminalDisplayshading}
 
-[[[X509v3 Key Usage: 10]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+X509v3 Key Usage: 10{.TerminalDisplayshading}
 
-[[[\-\-\-\--BEGIN RSA PRIVATE KEY\-\-\-\--]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+\-\-\-\--BEGIN RSA PRIVATE KEY\-\-\-\--{.TerminalDisplayshading}
 
-[[[Proc-Type: 4,ENCRYPTED]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+Proc-Type: 4,ENCRYPTED{.TerminalDisplayshading}
 
-[[[DEK-Info: DES-EDE3-CBC,8DCE37F0A61A4B8C]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+DEK-Info: DES-EDE3-CBC,8DCE37F0A61A4B8C{.TerminalDisplayshading}
 
-[[ ]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+{.TerminalDisplayshading}
 
-[[[k9C3KHY[5S3EtnF5iQymvHYYrVFy5ZdjSasU5y4XFubjdcvmpFHQteMjD0GKX6+xO]{style="border:none"}]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+k9C3KHY[5S3EtnF5iQymvHYYrVFy5ZdjSasU5y4XFubjdcvmpFHQteMjD0GKX6+xO]{.TerminalDisplayshading}
 
-[[[kuKbvpyCnWsPVg56sL/PDRyrRmqLmtUV3bpyQsFXgnc7p+Snj3CG2Ciow9XApybW]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+kuKbvpyCnWsPVg56sL/PDRyrRmqLmtUV3bpyQsFXgnc7p+Snj3CG2Ciow9XApybW{.TerminalDisplayshading}
 
-[[[Ec1TDCD75yuQckpVQdhguTvoPQXf9zHmiGu5jLkySp2k7ec/Mc97Ef+qqpfnHpQp]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+Ec1TDCD75yuQckpVQdhguTvoPQXf9zHmiGu5jLkySp2k7ec/Mc97Ef+qqpfnHpQp{.TerminalDisplayshading}
 
-[[[GDmMqnFpp59ZzB21OGlbGzlPcsjoT+EGpZg6B1KrPiCyFim95L9dWVwX9sk+U1s2]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+GDmMqnFpp59ZzB21OGlbGzlPcsjoT+EGpZg6B1KrPiCyFim95L9dWVwX9sk+U1s2{.TerminalDisplayshading}
 
-[[[+8wqac8jETwwM0UZ1NGJ50JJz1QYIzMbcrw+S5WlPxACTIz1cldlBlb1kpc+7mcX]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
++8wqac8jETwwM0UZ1NGJ50JJz1QYIzMbcrw+S5WlPxACTIz1cldlBlb1kpc+7mcX{.TerminalDisplayshading}
 
-[[[4W+MxFzsL88IJ99T72eu4iUNsy26g0BZMAcc1sJA3A4w9RNhfs9hSG43S3hAh5li]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+4W+MxFzsL88IJ99T72eu4iUNsy26g0BZMAcc1sJA3A4w9RNhfs9hSG43S3hAh5li{.TerminalDisplayshading}
 
-[[[JPp720LfYBlkQHn/MgMCZASWDJ5G0eSXQt9QymHAth4BiT9v7zetnQqf4q8plfd/]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+JPp720LfYBlkQHn/MgMCZASWDJ5G0eSXQt9QymHAth4BiT9v7zetnQqf4q8plfd/{.TerminalDisplayshading}
 
-[[[Xqd9zEFlBPpoJFtJqXwxHUCKgw6kJeC4CxHvi9ZCJU/upg9IpiguFPoaDOPia[+Pm]{style="border:none"}]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+Xqd9zEFlBPpoJFtJqXwxHUCKgw6kJeC4CxHvi9ZCJU/upg9IpiguFPoaDOPia[+Pm]{.TerminalDisplayshading}
 
-[[[GbRqSyy55clVde5GOccGN1DZ94DW7AypazgLpBbrkIYAdjFPRmq+zMOdyqsGMTNj]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+GbRqSyy55clVde5GOccGN1DZ94DW7AypazgLpBbrkIYAdjFPRmq+zMOdyqsGMTNj{.TerminalDisplayshading}
 
-[[[jnheI5l784pNOAKuGi0i/uXmRRcfoMh6qAnK6YZGS7rOLC9CfPmy8fgY+/Sl9d9x]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+jnheI5l784pNOAKuGi0i/uXmRRcfoMh6qAnK6YZGS7rOLC9CfPmy8fgY+/Sl9d9x{.TerminalDisplayshading}
 
-[[[Q00ruO1psxzh9c2YfuaiXFIx0auKl6o5+ZZYn7Rg/xy2Y0awVP+dO925GoAcHO40]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+Q00ruO1psxzh9c2YfuaiXFIx0auKl6o5+ZZYn7Rg/xy2Y0awVP+dO925GoAcHO40{.TerminalDisplayshading}
 
-[[[cCl6jA/HsGAU9HkpwKHL35lmBDRLEzQeBFcaGwSm1JvRfE4tkJM7+Uz2Q[HJOfP10]{style="border:none"}]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+cCl6jA/HsGAU9HkpwKHL35lmBDRLEzQeBFcaGwSm1JvRfE4tkJM7+Uz2Q[HJOfP10]{.TerminalDisplayshading}
 
-[[[0VLqMgxMlpk3TvBWgzHGJDe7TdzFCDPMPhod8pi4P8gGXmQd01PbyQ==]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+0VLqMgxMlpk3TvBWgzHGJDe7TdzFCDPMPhod8pi4P8gGXmQd01PbyQ=={.TerminalDisplayshading}
 
-[[[\-\-\-\--END RSA PRIVATE KEY\-\-\-\--]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+\-\-\-\--END RSA PRIVATE KEY\-\-\-\--{.TerminalDisplayshading}
 
-[[[Bag Attributes]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+Bag Attributes{.TerminalDisplayshading}
 
-[[[localKeyID: 01 00 00 00]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+localKeyID: 01 00 00 00{.TerminalDisplayshading}
 
-[[[subject=/CN=sldsslserver]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+subject=/CN=sldsslserver{.TerminalDisplayshading}
 
-[[[issuer=/C=cn/O=]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}[[[ccc]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}[[[/OU=sec/CN=ssl]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+issuer=/C=cn/O={.TerminalDisplayshading}ccc{.TerminalDisplayshading}/OU=sec/CN=ssl{.TerminalDisplayshading}
 
-[[[\-\-\-\--BEGIN CERTIFICATE\-\-\-\--]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+\-\-\-\--BEGIN CERTIFICATE\-\-\-\--{.TerminalDisplayshading}
 
-[[[MIICjzCCAfigAwIBAgIRAJoDN+shVrofVHbk[11SlqfcwDQYJKoZIhvcNAQEFBQAw]{style="border:none"}]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+MIICjzCCAfigAwIBAgIRAJoDN+shVrofVHbk[11SlqfcwDQYJKoZIhvcNAQEFBQAw]{.TerminalDisplayshading}
 
-[[[NzELMAkGA1UEBhMCY24xDDAKBgNVBAoTA2gzYzEMMAoGA1UECxMDc2VjMQwwCgYD]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+NzELMAkGA1UEBhMCY24xDDAKBgNVBAoTA2gzYzEMMAoGA1UECxMDc2VjMQwwCgYD{.TerminalDisplayshading}
 
-[[[VQQDEwNzc2wwHhcNMTAxMDE1MDEyMzA2WhcNMTIwNzI2MDYzMDU0WjAXMRUwEwYD]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+VQQDEwNzc2wwHhcNMTAxMDE1MDEyMzA2WhcNMTIwNzI2MDYzMDU0WjAXMRUwEwYD{.TerminalDisplayshading}
 
-[[[VQQDEwxzbGRzc2xzZXJ2ZXIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMLP]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+VQQDEwxzbGRzc2xzZXJ2ZXIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMLP{.TerminalDisplayshading}
 
-[[[N3aTKV7NDndIOk0PpiikYPgxVih/geMX[R3iYaANbcvRX07/FMDINWHJnBAZhCDvp]{style="border:none"}]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+N3aTKV7NDndIOk0PpiikYPgxVih/geMX[R3iYaANbcvRX07/FMDINWHJnBAZhCDvp]{.TerminalDisplayshading}
 
-[[[rFO552loGiPyl0wmFMK12TSL7sHvrxr0OdrFrqtWlbW+DsNGNcFSKZy3RvIngC2k]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+rFO552loGiPyl0wmFMK12TSL7sHvrxr0OdrFrqtWlbW+DsNGNcFSKZy3RvIngC2k{.TerminalDisplayshading}
 
-[[[ZZqBeFPUytP185JUhbOrVaUDlisZi6NNshcIjd2BAgMBAAGjgbowgbcwHwYDVR0j]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+ZZqBeFPUytP185JUhbOrVaUDlisZi6NNshcIjd2BAgMBAAGjgbowgbcwHwYDVR0j{.TerminalDisplayshading}
 
-[[[BBgwFoAUmoMpEynZYoPLQdR1LlKhZjg8kBEwDgYDVR0PAQH/BAQDAgP4MBEGCWCG]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+BBgwFoAUmoMpEynZYoPLQdR1LlKhZjg8kBEwDgYDVR0PAQH/BAQDAgP4MBEGCWCG{.TerminalDisplayshading}
 
-[[[SAGG+EIBAQQEAwIGQDASBgNVHREE[CzAJggdoM2MuY29tMB0GA1UdDgQWBBQ8dpWb]{style="border:none"}]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+SAGG+EIBAQQEAwIGQDASBgNVHREE[CzAJggdoM2MuY29tMB0GA1UdDgQWBBQ8dpWb]{.TerminalDisplayshading}
 
-[[[3cJ/X5iDt8eg+JkeS9cvJjA+BgNVHR8ENzA1MDOgMaAvhi1odHRwOi8vczAzMTMw]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+3cJ/X5iDt8eg+JkeS9cvJjA+BgNVHR8ENzA1MDOgMaAvhi1odHRwOi8vczAzMTMw{.TerminalDisplayshading}
 
-[[[LmgzYy5odWF3ZWktM2NvbS5jb206NDQ3L3NzbC5jcmwwDQYJKoZIhvcNAQEFBQAD]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+LmgzYy5odWF3ZWktM2NvbS5jb206NDQ3L3NzbC5jcmwwDQYJKoZIhvcNAQEFBQAD{.TerminalDisplayshading}
 
-[[[gYEAYS15x0kW474lu4twNzEy5dPjMSwtwfm/UK01S8GQjGV5tl9ZNiTHFGNEFx7k]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+gYEAYS15x0kW474lu4twNzEy5dPjMSwtwfm/UK01S8GQjGV5tl9ZNiTHFGNEFx7k{.TerminalDisplayshading}
 
-[[[zxBp/JPpcFM8hapAfrVHdQ/w[stq0pVDdBkrVF6XKIBks6XgCvRl32gcaQt9yrQd9]{style="border:none"}]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+zxBp/JPpcFM8hapAfrVHdQ/w[stq0pVDdBkrVF6XKIBks6XgCvRl32gcaQt9yrQd9]{.TerminalDisplayshading}
 
-[[[5RbWdetuBljudjFj25airYO2u7pLeVmdWWx3WVvZBzOo8KU=]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+5RbWdetuBljudjFj25airYO2u7pLeVmdWWx3WVvZBzOo8KU={.TerminalDisplayshading}
 
-[[[\-\-\-\--END CERTIFICATE\-\-\-\--]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+\-\-\-\--END CERTIFICATE\-\-\-\--{.TerminalDisplayshading}
 
-[[[Bag Attributes: \<Empty Attributes\>]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+Bag Attributes: \<Empty Attributes\>{.TerminalDisplayshading}
 
-[[[subject=/C=cn/O=]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}[[[ccc]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}[[[/OU=sec/CN=ssl]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+subject=/C=cn/O={.TerminalDisplayshading}ccc{.TerminalDisplayshading}/OU=sec/CN=ssl{.TerminalDisplayshading}
 
-[[[issuer=/C=cn/O=]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}[[[ccc]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}[[[/OU=sec/CN=ssl]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+issuer=/C=cn/O={.TerminalDisplayshading}ccc{.TerminalDisplayshading}/OU=sec/CN=ssl{.TerminalDisplayshading}
 
-[[[\-\-\-\--BEGIN CERTIFICATE\-\-\-\--]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+\-\-\-\--BEGIN CERTIFICATE\-\-\-\--{.TerminalDisplayshading}
 
-[[[MIIB7DCCAVUCEG+jJTPxxiE67pl2ff0SnOMwDQYJKoZIhvcNAQEFBQAwNzELMAkG]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+MIIB7DCCAVUCEG+jJTPxxiE67pl2ff0SnOMwDQYJKoZIhvcNAQEFBQAwNzELMAkG{.TerminalDisplayshading}
 
-[[[A1UEBhMCY24xDDAKBgNVBAoTA2gzYzEMMAoGA1UECxMDc2VjMQwwCgYDVQQDEwNz]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+A1UEBhMCY24xDDAKBgNVBAoTA2gzYzEMMAoGA1UECxMDc2VjMQwwCgYDVQQDEwNz{.TerminalDisplayshading}
 
-[[[c2wwHhcNMDkwNzMxMDY0ODQ2WhcNMTIwNzI5MDYyODU4WjA3MQswCQYDVQQGEwJj]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+c2wwHhcNMDkwNzMxMDY0ODQ2WhcNMTIwNzI5MDYyODU4WjA3MQswCQYDVQQGEwJj{.TerminalDisplayshading}
 
-[[[bjEMMAoGA1UEChMDaDNjMQwwCgYDVQQLEwNzZWMxDDAKBgNVBAMTA3NzbDCBn[zAN]{style="border:none"}]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+bjEMMAoGA1UEChMDaDNjMQwwCgYDVQQLEwNzZWMxDDAKBgNVBAMTA3NzbDCBn[zAN]{.TerminalDisplayshading}
 
-[[[BgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAt8QSMetQ70GONiFh7iJkvGQ8nC15zCF1]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+BgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAt8QSMetQ70GONiFh7iJkvGQ8nC15zCF1{.TerminalDisplayshading}
 
-[[[cqC/RcJhE/88LkKyQcu9j+Tz8Bk9Qj2UPaZdrk8fOrgtBsa7lZ+UO3j3l30q84l+]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+cqC/RcJhE/88LkKyQcu9j+Tz8Bk9Qj2UPaZdrk8fOrgtBsa7lZ+UO3j3l30q84l+{.TerminalDisplayshading}
 
-[[[HjWq8yxVLRQahU3gqJze6pGR2l0s76u6GRyCX/zizGrHKqYlNnxK44NyRZx2klQ2]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+HjWq8yxVLRQahU3gqJze6pGR2l0s76u6GRyCX/zizGrHKqYlNnxK44NyRZx2klQ2{.TerminalDisplayshading}
 
-[[[tKQAfpXCPIkCAwEAATANBgkqhkiG9w0BAQUFAAOBgQBWsaMgRbBMtYNrr[YCMjY6g]{style="border:none"}]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+tKQAfpXCPIkCAwEAATANBgkqhkiG9w0BAQUFAAOBgQBWsaMgRbBMtYNrr[YCMjY6g]{.TerminalDisplayshading}
 
-[[[c7PBjvajVOKNUMxaDalePmXfKCxl91+PKM7+i8I/zLcoQO+sHbva26a2/C4sNvoJ]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+c7PBjvajVOKNUMxaDalePmXfKCxl91+PKM7+i8I/zLcoQO+sHbva26a2/C4sNvoJ{.TerminalDisplayshading}
 
-[[[2QZs6GtAOahP6CDqXC5VuNBU6eTKNKjL+mf6uuDeMxrlDNha0iymdrXXVIp5cuIu]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+2QZs6GtAOahP6CDqXC5VuNBU6eTKNKjL+mf6uuDeMxrlDNha0iymdrXXVIp5cuIu{.TerminalDisplayshading}
 
-[[[fl7xgArs8Ks6aXDXM1o4DQ==]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+fl7xgArs8Ks6aXDXM1o4DQ=={.TerminalDisplayshading}
 
-[[[\-\-\-\--END CERTIFICATE\-\-\-\--]{style="border:none"}]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+\-\-\-\--END CERTIFICATE\-\-\-\--{.TerminalDisplayshading}
 
-[[ ]{lang="FR" style="border:none"}]{.TerminalDisplayshading}
+{.TerminalDisplayshading}
 
-[ ]{lang="FR"}
+Please input the password:\*\*\*\*\*\*\*\*
 
-[Please input the password:\*\*\*\*\*\*\*\*]{lang="EN-US"}
+Local certificate already exist, confirm to overwrite it? [Y/N:y]
 
-[Local certificate already exist, confirm to overwrite it? \[Y/N\]:y]{lang="EN-US"}
+The PKI domain already has a CA certificate. If it is overwritten, local certificates, peer certificates and CRL of this domain will also be deleted.
 
-[The PKI domain already has a CA certificate. If it is overwritten, local certificates, peer certificates and CRL of this domain will also be deleted.]{lang="EN-US"}
+Overwrite it? [Y/N:y]
 
-[Overwrite it? \[Y/N\]:y]{lang="EN-US"}
+The system is going to save the key pair. You must specify a key pair name, which is a case-insensitive string of 1 to 64 characters. Valid characters include a to z, A to Z, 0 to 9, and hyphens (-).
 
-[The system is going to save the key pair. You must specify a key pair name, which is a case-insensitive string of 1 to 64 characters. Valid characters include a to z, A to Z, 0 to 9, and hyphens (-). ]{lang="EN-US"}
+Please enter the key pair name [default name: bbb:]
 
-[Please enter the key pair name \[default name: bbb\]:]{lang="EN-US"}
+The key pair already exists.
 
-[ ]{lang="EN-US"}
+Please enter the key pair name:
 
-[The key pair already exists.]{lang="EN-US"}
+import-key
 
-[Please enter the key pair name:]{lang="EN-US"}
+【相关命令】
 
-[import-key]{lang="EN-US"}
+·**display pki certificate**
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_694578453}
+·**public-key dsa**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display pki certificate]{lang="EN-US"}**]{#struct_0_18308_19795_910971615}
+·**public-key ecdsa**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[public-key dsa]{lang="EN-US"}**]{#struct_0_18308_19795_x433491909}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[public-key ecdsa]{lang="EN-US"}**]{#struct_0_18308_19795_x1078170120}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[public-key rsa]{lang="EN-US"}**]{#struct_0_18308_19795_1315918434}
-:::
-
-::: {#-851820870 .myid}
-[]{#_Toc404793087}[]{#struct_0_18308_19795_x1455118123}
+·**public-key rsa**
 
 **PKI \-- PKI配置命令 \-- pki request-certificate**
 
 ------------------------------------------------------------------------
 
-[**[pki request-certificate]{lang="EN-US"}**]{#struct_0_18308_19795_1372258662}[命令用来手工申请本地证书或生成]{style="font-family:宋体"}[PKCS#10]{lang="EN-US"}[证书申请。]{style="font-family:宋体"}
+**[pki request-certificate**]命令用来手工申请本地证书或生成PKCS#10证书申请。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x909602701}
+【命令】
 
-[**[pki request-certificate]{lang="EN-US"}**]{#struct_0_18308_19795_x1958082450}**[ domain]{lang="FR"}***[ domain-name ]{lang="EN-US"}*[\[ **password** *password* \] \[ ]{lang="EN-US"}**[pkcs10 ]{lang="EN-US"}**[\[ **filename** *filename* \] \]]{lang="EN-US"}
+**[pki request-certificate**]** domain*** domain-name * **password** *password*  \**pkcs10 **[ **filename** *filename*  ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x2038342887}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18308_19795_499713554}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_x433426373}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_1649408354}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x953227226}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x769146456}
+【参数】
 
-[**[domain]{lang="FR"}***[ ]{lang="FR"}[domain-]{lang="EN-US"}[name]{lang="EN-US"}*]{#struct_0_18308_19795_x1424499619}[：指定]{style="font-family:宋体"}[证书申请所属的]{style="font-family:宋体"} [PKI]{lang="EN-US"}[域名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写，不能包括"]{style="font-family:宋体"}[\~]{lang="EN-US"}["、"]{style="font-family:宋体"}[\*]{lang="EN-US"}["、"]{style="font-family:宋体"}[\\]{lang="EN-US"}["、"]{style="font-family:宋体"}[\|]{lang="EN-US"}["、"]{style="font-family:宋体"}[:]{lang="EN-US"}["、"]{style="font-family:宋体"}[.]{lang="EN-US"}["、"]{style="font-family:宋体"}[\<]{lang="EN-US"}["、"]{style="font-family:宋体"}[\>]{lang="EN-US"}["、"]{style="font-family:宋体"}[\"]{lang="EN-US"}["和"]{style="font-family:宋体"}[\']{lang="EN-US"}["。]{style="font-family:宋体"}
+**[domain***domain-name*]：指定证书申请所属的 PKI域名，为1～31个字符的字符串，不区分大小写，不能包括"\~"、"\*"、"\"、"[\|]"、":"、"."、"\<"、"\>"、"\""和"\'"。
 
-[**[password]{lang="EN-US"}**[ *password*]{lang="EN-US"}]{#struct_0_18308_19795_x1714507605}[：]{style="font-family:宋体"}[在证书撤销时需要提供的口令，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。该口令包含在提交给]{style="font-family:宋体"}[CA]{lang="EN-US"}[的证书申请中，在吊销该证书时，需要提供该口令。]{style="font-family:宋体"}
+**[password** *password*]：在证书撤销时需要提供的口令，为1～31个字符的字符串，区分大小写。该口令包含在提交给CA的证书申请中，在吊销该证书时，需要提供该口令。
 
-[**[pkcs10]{lang="EN-US"}**]{#struct_0_18308_19795_x1587907195}[：在终端上显示出]{style="font-family:宋体"}[BASE64]{lang="EN-US"}[格式的]{style="font-family:宋体"}[PKCS#10]{lang="EN-US"}[证书申请信息，该信息可用于带外方式（如电话]{style="font-family:宋体"}[、磁盘、电子邮件等）的证书请求。]{style="font-family:宋体"}
+**[pkcs10**]：在终端上显示出BASE64格式的PKCS#10证书申请信息，该信息可用于带外方式（如电话、磁盘、电子邮件等）的证书请求。
 
-[**[filename]{lang="EN-US"}**]{#struct_0_18308_19795_x1345451067}*[ filename]{lang="EN-US"}*[：将]{style="font-family:宋体"}[PKCS#10]{lang="EN-US"}[格式的证书申请信息保存到本地的]{style="font-family:宋体"}[文件中。其中，]{style="font-family:宋体"}*[filename]{lang="EN-US"}*[表示保存证书申请信息的文件名，不区分大小写。]{style="font-family:宋体"}
+**[filename**]* filename*：将PKCS#10格式的证书申请信息保存到本地的文件中。其中，*filename*表示保存证书申请信息的文件名，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_1313548601}
+【使用指导】
 
-[[当]{style="font-family:宋体"}[SCEP]{lang="EN-US"}]{#struct_0_18308_19795_x434016196}[协议不能正常通信时，可以通过执行指定参数]{style="font-family:宋体"}**[pkcs10]{lang="EN-US"}**[的本命令打印出本地的证书申请信息（]{style="font-family:宋体"}[BASE64]{lang="EN-US"}[格式），或者通过执行指定]{style="font-family:宋体"}**[pkcs10 filename]{lang="EN-US"}***[ filename]{lang="EN-US"}*[参数的本命令将证书申请信息直接保存到本地的指定文件中，然后通过带外方式将这些本地证书申请信息发送给]{style="font-family:宋体"}[CA]{lang="EN-US"}[进行证书申请。]{style="font-family:宋体"}[指定的文件名中可以带完整路径，当系统中不存在用户所指定路径时，则会保存失败。]{style="font-family:宋体"}
+当SCEP协议不能正常通信时，可以通过执行指定参数**pkcs10**的本命令打印出本地的证书申请信息（BASE64格式），或者通过执行指定**pkcs10 filename*** filename*参数的本命令将证书申请信息直接保存到本地的指定文件中，然后通过带外方式将这些本地证书申请信息发送给CA进行证书申请。指定的文件名中可以带完整路径，当系统中不存在用户所指定路径时，则会保存失败。
 
-[[此命令不会被保存在配置文件中。]{style="font-family:宋体"}]{#struct_0_18308_19795_1900476528}
+此命令不会被保存在配置文件中。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1818686306}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x1678838606}[在终端上显示]{style="font-family:宋体"}[PKCS#10]{lang="EN-US"}[格式的证书申请信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 在终端上显示PKCS#10格式的证书申请信息。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x1140079903}
+\<Sysname\> system-view
 
-[\[Sysname\] pki request-certificate domain aaa pkcs10]{lang="EN-US"}
+Sysname pki request-certificate domain aaa pkcs10
 
-[ ]{lang="EN-US"}
+\*\*\* Request for [general certificate \*\*\*]{.TerminalDisplayshading}
 
-[[[\*\*\* Request for [general certificate \*\*\*]{style="border:none"}]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+\-\-\-\--BEGIN {.TerminalDisplayshading}NEW {.TerminalDisplayshading}CERTIFICATE REQUEST\-\-\-\--{.TerminalDisplayshading}
 
-[[[\-\-\-\--BEGIN ]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}[[[NEW ]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}[[[CERTIFICATE REQUEST\-\-\-\--]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+MIIBTDCBtgIBADANMQswCQYDVQQDEwJqajCBnzANBgkqhkiG9w0BAQEFAAOBjQAw{.TerminalDisplayshading}
 
-[[[MIIBTDCBtgIBADANMQswCQYDVQQDEwJqajCBnzANBgkqhkiG9w0BAQEFAAOBjQAw]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+gYkCgYEAw5Drj8ofs9THA4ezkDcQPBy8pvH1kumampPsJmx8sGG52NFtbrDTnTT5{.TerminalDisplayshading}
 
-[[[gYkCgYEAw5Drj8ofs9THA4ezkDcQPBy8pvH1kumampPsJmx8sGG52NFtbrDTnTT5]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+ALx3LJijB3d/ndKpcHT/DfbJVDCn5gdw32tBZyCkEwMHZN3ol2z7N{.TerminalDisplayshading}mdc{.TerminalDisplayshading}u5TED6[iN8]{.TerminalDisplayshading}
 
-[[[ALx3LJijB3d/ndKpcHT/DfbJVDCn5gdw32tBZyCkEwMHZN3ol2z7N]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}[[[mdc]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}[[[u5TED6[iN8]{style="border:none"}]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+4m+hfp1QWoV6lty3o9pxAXuQl8peUDcfN6WV3LBXYyl1WCtkLkECAwEAAaAAMA0G{.TerminalDisplayshading}
 
-[[[4m+hfp1QWoV6lty3o9pxAXuQl8peUDcfN6WV3LBXYyl1WCtkLkECAwEAAaAAMA0G]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+CSqGSIb3DQEBBAUAA4GBAA8E7BaIdmT6NVCZgv/I/1tqZH3TS4e4H9Qo5NiCKiEw{.TerminalDisplayshading}
 
-[[[CSqGSIb3DQEBBAUAA4GBAA8E7BaIdmT6NVCZgv/I/1tqZH3TS4e4H9Qo5NiCKiEw]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+R8owVmA0XVtGMbyqBNcDTG0f5NbHrXZQT5+MbFJOnm5K/mn1ro5TJKMTKV46PlCZ{.TerminalDisplayshading}
 
-[[[R8owVmA0XVtGMbyqBNcDTG0f5NbHrXZQT5+MbFJOnm5K/mn1ro5TJKMTKV46PlCZ]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+JUjsugaY02GBY0BVcylpC9iIXLuXNIqjh1MBIqVsa1lQOHS7YMvnop6hX[AQlkM4c]{.TerminalDisplayshading}
 
-[[[JUjsugaY02GBY0BVcylpC9iIXLuXNIqjh1MBIqVsa1lQOHS7YMvnop6hX[AQlkM4c]{style="border:none"}]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+\-\-\-\--END {.TerminalDisplayshading}NEW {.TerminalDisplayshading}CERTIFICATE REQUEST\-\-\-\--{.TerminalDisplayshading}
 
-[[[\-\-\-\--END ]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}[[[NEW ]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}[[[CERTIFICATE REQUEST\-\-\-\--]{style="border:none"}]{lang="EN-US" style="border:none"}]{.TerminalDisplayshading}
+\# 手工申请本地证书。
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x52070613}[手工申请本地证书。]{style="font-family:宋体"}
+Sysname pki request-certificate domain openca
 
-[[\[Sysname\] pki request-certificate domain openca]{lang="EN-US"}]{#struct_0_18308_19795_x433950660}
+Start to request the general certificate \...
 
-[Start to request the general certificate \...]{lang="EN-US"}
+......
 
-[......]{lang="EN-US"}
+Certificate requested successfully.
 
-[Certificate requested successfully.]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_1631445746}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display pki certificate]{lang="EN-US"}**]{#struct_0_18308_19795_1655491979}
-:::
-
-::: {#1206252758 .myid}
-[]{#_Toc404793088}[]{#struct_0_18308_19795_x1234391056}[]{#_Toc279163113}[]{#_Toc265512476}[]{#_Toc61836624}
+·**display pki certificate**
 
 **PKI \-- PKI配置命令 \-- pki retrieve-certificate**
 
 ------------------------------------------------------------------------
 
-[**[pki retrieve-certificate]{lang="EN-US"}**]{#struct_0_18308_19795_x1278589922}[命令用来从证书发布服务器上在线]{style="font-family:
-宋体"}[获取证书并下载至本地。]{style="font-family:宋体"}
+**[pki retrieve-certificate**]命令用来从证书发布服务器上在线获取证书并下载至本地。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_1525155229}
+【命令】
 
-[**[pki retrieve-certificate]{lang="EN-US"}**[ **domain** *domain-name* { **ca** \| **local** \| **peer** *entity-name* } ]{lang="EN-US"}]{#struct_0_18308_19795_783865329}
+**[pki retrieve-certificate**[ **domain** *domain-name* { **ca** \| **local** \| **peer** *entity-name* } ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_421293825}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18308_19795_x433885124}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1879532526}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x2058061241}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_1296734277}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1906431297}
+【参数】
 
-[**[domain]{lang="EN-US"}**[ *domain-name*]{lang="EN-US"}]{#struct_0_18308_19795_x1769579520}[：指定证书所在的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写，不能包括"]{style="font-family:宋体"}[\~]{lang="EN-US"}["、"]{style="font-family:宋体"}[\*]{lang="EN-US"}["、"]{style="font-family:宋体"}[\\]{lang="EN-US"}["、"]{style="font-family:宋体"}[\|]{lang="EN-US"}["、"]{style="font-family:宋体"}[:]{lang="EN-US"}["、"]{style="font-family:宋体"}[.]{lang="EN-US"}["、"]{style="font-family:宋体"}[\<]{lang="EN-US"}["、"]{style="font-family:宋体"}[\>]{lang="EN-US"}["、"]{style="font-family:宋体"}[\"]{lang="EN-US"}["和"]{style="font-family:宋体"}[\']{lang="EN-US"}["。]{style="font-family:宋体"}
+**[domain** *domain-name*]：指定证书所在的PKI域的名称，为1～31个字符的字符串，不区分大小写，不能包括"\~"、"\*"、"\"、"[\|]"、":"、"."、"\<"、"\>"、"\""和"\'"。
 
-[**[ca]{lang="EN-US"}**]{#struct_0_18308_19795_x1664482412}[：表示获取]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书。]{style="font-family:宋体"}
+**[ca**]：表示获取CA证书。
 
-[**[local]{lang="EN-US"}**]{#struct_0_18308_19795_x1371281230}[：表示获取本地证书。]{style="font-family:宋体"}
+**[local**]：表示获取本地证书。
 
-[**[peer]{lang="EN-US"}**[ *entity-name*]{lang="EN-US"}]{#struct_0_18308_19795_1533944818}[：表示获取对端的证书。其中]{style="font-family:宋体"}*[entity-name]{lang="EN-US"}*[为对端的实体名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+**[peer** *entity-name*]：表示获取对端的证书。其中*entity-name*为对端的实体名，为1～31个字符的字符串，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_x433819588}
+【使用指导】
 
-[[获取]{style="font-family:宋体"}[CA]{lang="EN-US"}]{#struct_0_18308_19795_1588269916}[证书是通过]{style="font-family:宋体"}[SCEP]{lang="EN-US"}[协议进行的。获取]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书时，如果本地已有]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书存在，则该操作将不被允许。这种情况下，若要重新获取]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书，请先使用]{style="font-family:宋体"}**[pki delete-certificate]{lang="EN-US"}**[命令删除已有的]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书与对应的本地证书后，再执行此命令。]{style="font-family:宋体"}
+获取CA证书是通过SCEP协议进行的。获取CA证书时，如果本地已有CA证书存在，则该操作将不被允许。这种情况下，若要重新获取CA证书，请先使用**pki delete-certificate**命令删除已有的CA证书与对应的本地证书后，再执行此命令。
 
-[[获取本地证书和对端证书是通过]{style="font-family:宋体"}[LDAP]{lang="EN-US"}]{#struct_0_18308_19795_578504567}[协议进行的。获取本地证书或对端证书时，如果本地已有本地证书或对端证书，则该操作是被允许进行的。最终，属于一个]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体的同一种公钥算法的本地证书只能存在一个，后者直接覆盖已有的，但对于]{style="font-family:宋体"}[RSA]{lang="EN-US"}[算法的证书而言，可以存在一个签名用途的证书和一个加密用途的证书。]{style="font-family:宋体"}
+获取本地证书和对端证书是通过LDAP协议进行的。获取本地证书或对端证书时，如果本地已有本地证书或对端证书，则该操作是被允许进行的。最终，属于一个PKI实体的同一种公钥算法的本地证书只能存在一个，后者直接覆盖已有的，但对于RSA算法的证书而言，可以存在一个签名用途的证书和一个加密用途的证书。
 
-[[所有获取到的]{style="font-family:宋体"}[CA]{lang="EN-US"}]{#struct_0_18308_19795_290106739}[证书、本地证书或对端证书只有通过验证之后才会被保存到本地证书库中。]{style="font-family:宋体"}
+所有获取到的CA证书、本地证书或对端证书只有通过验证之后才会被保存到本地证书库中。
 
-[[需要注意的是，此命令不会被保存在配置文件中。]{style="font-family:宋体"}]{#struct_0_18308_19795_x1836550861}
+需要注意的是，此命令不会被保存在配置文件中。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_366149607}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x1861482638}[从证书发布服务器上]{style="font-family:宋体"}[获取]{style="font-family:
-宋体"}[CA]{lang="EN-US"}[证书。（需要用户确认]{style="font-family:宋体"}[CA]{lang="EN-US"}[根证书的指纹）]{style="font-family:宋体"}
+\# 从证书发布服务器上获取CA证书。（需要用户确认CA根证书的指纹）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x434278340}
+\<Sysname\> system-view
 
-[\[]{lang="EN-US"}[Sysname]{lang="ES-AR"}[\] pki retrieve-certificate domain aaa ca]{lang="EN-US"}
+Sysname pki retrieve-certificate domain aaa ca
 
-[The trusted CA\'s finger print is:]{lang="EN-US"}
+The trusted CA\'s finger print is:
 
-[    ]{lang="EN-US"}[MD5  fingerprint:5C41 E657 A0D6 ECB4 6BD6 1823 7473 AABC]{lang="IT"}
+MD5  fingerprint:5C41 E657 A0D6 ECB4 6BD6 1823 7473 AABC
 
-[    SHA1 fingerprint:1616 E7A5 D89A 2A99 9419 1C12 D696 8228 87BC C266]{lang="IT"}
+    SHA1 fingerprint:1616 E7A5 D89A 2A99 9419 1C12 D696 8228 87BC C266
 
-[Is the finger print correct?(Y/N):y]{lang="EN-US"}
+Is the finger print correct?(Y/N):y
 
-[Retrieved the certificates successfully.]{lang="EN-US"}
+Retrieved the certificates successfully.
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x1253865787}[从证书发布服务器上]{style="font-family:宋体"}[获取本地]{style="font-family:
-宋体"}[证书。]{style="font-family:宋体"}
+\# 从证书发布服务器上获取本地证书。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_1321519757}
+\<Sysname\> system-view
 
-[\[]{lang="EN-US"}[Sysname]{lang="ES-AR"}[\] pki retrieve-certificate domain aaa local]{lang="EN-US"}
+Sysname pki retrieve-certificate domain aaa local
 
-[Retrieved the certificates successfully.]{lang="EN-US"}
+Retrieved the certificates successfully.
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x38974291}[从证书发布服务器上]{style="font-family:宋体"}[获取对端]{style="font-family:宋体"}[证书。]{style="font-family:宋体"}
+\# 从证书发布服务器上获取对端证书。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_1875074008}
+\<Sysname\> system-view
 
-[\[]{lang="EN-US"}[Sysname]{lang="ES-AR"}[\] pki retrieve-certificate domain aaa peer en1]{lang="EN-US"}
+Sysname pki retrieve-certificate domain aaa peer en1
 
-[Retrieved the certificates successfully.]{lang="EN-US"}
+Retrieved the certificates successfully.
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x247855245}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display pki certificate]{lang="EN-US"}**]{#struct_0_18308_19795_344568829}
+·**display pki certificate**
 
-[[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol;border:none"}]{.TerminalDisplayshading}**[pki delete-certificate]{lang="EN-US"}**]{#struct_0_18308_19795_642113637}
-:::
-
-::: {#-742304369 .myid}
-[]{#_Toc404793089}[]{#struct_0_18308_19795_x434212804}
+·{.TerminalDisplayshading}**pki delete-certificate**
 
 **PKI \-- PKI配置命令 \-- pki retrieve-crl**
 
 ------------------------------------------------------------------------
 
-[**[pki retrieve-crl]{lang="EN-US"}**]{#struct_0_18308_19795_357944103}[命令用来获取]{style="font-family:宋体"}[CRL]{lang="EN-US"}[并下载至本地。]{style="font-family:宋体"}
+**[pki retrieve-crl**]命令用来获取CRL并下载至本地。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1121666964}
+【命令】
 
-[**[pki retrieve-crl]{lang="EN-US"}**[ **domain** *domain-name* ]{lang="EN-US"}]{#struct_0_18308_19795_x2040952570}
+**[pki retrieve-crl** **domain** *domain-name* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1722618799}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18308_19795_x1261250567}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_1747374684}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_644116868}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x636499248}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x434147268}
+【参数】
 
-[*[domain-name]{lang="EN-US"}*]{#struct_0_18308_19795_755336249}[：指定]{style="font-family:宋体"}[CRL]{lang="EN-US"}[所属的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写，]{style="font-family:宋体"}[不能包括"]{lang="EN-US" style="font-family:
-宋体"}[\~]{lang="EN-US"}["、"]{lang="EN-US" style="font-family:
-宋体"}[\*]{lang="EN-US"}["、"]{lang="EN-US" style="font-family:
-宋体"}[\\]{lang="EN-US"}["、"]{lang="EN-US" style="font-family:
-宋体"}[\|]{lang="EN-US"}["、"]{lang="EN-US" style="font-family:
-宋体"}[:]{lang="EN-US"}["、"]{lang="EN-US" style="font-family:
-宋体"}[.]{lang="EN-US"}["、"]{lang="EN-US" style="font-family:
-宋体"}[\<]{lang="EN-US"}["、"]{lang="EN-US" style="font-family:
-宋体"}[\>]{lang="EN-US"}["、"]{lang="EN-US" style="font-family:
-宋体"}[\"]{lang="EN-US"}["和"]{lang="EN-US" style="font-family:
-宋体"}[\']{lang="EN-US"}["]{lang="EN-US" style="font-family:
-宋体"}[。]{style="font-family:宋体"}
+*[domain-name*]：指定CRL所属的PKI域的名称，为1～31个字符的字符串，不区分大小写，不能包括"\~"、"\*"、"\"、"[\|]"、":"、"."、"\<"、"\>"、"\""和"\'"。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_362095098}
+【使用指导】
 
-[[获取]{style="font-family:宋体"}[CRL]{lang="EN-US"}]{#struct_0_18308_19795_x439014834}[的目的是为了验证]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中的本地证书和对端证书的合法性。若要成功获取]{style="font-family:宋体"}[CRL]{lang="EN-US"}[，]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中必须存在]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书。]{style="font-family:宋体"}
+获取CRL的目的是为了验证PKI域中的本地证书和对端证书的合法性。若要成功获取CRL，PKI域中必须存在CA证书。
 
-[[设备支持通过]{style="font-family:宋体"}[HTTP]{lang="EN-US"}]{#struct_0_18308_19795_1578110788}[、]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[或]{style="font-family:宋体"}[SCEP]{lang="EN-US"}[协议从]{style="font-family:宋体"}[CRL]{lang="EN-US"}[发布点上获取]{style="font-family:宋体"}[CRL]{lang="EN-US"}[，具体采用那种协议，由]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中]{style="font-family:宋体"}[CRL]{lang="EN-US"}[发布点的配置决定：]{style="font-family:宋体"}
+设备支持通过HTTP、LDAP或SCEP协议从CRL发布点上获取CRL，具体采用那种协议，由PKI域中CRL发布点的配置决定：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若配置的]{style="font-family:宋体"}]{#struct_0_18308_19795_2003514591}[CRL]{lang="EN-US"}[发布点]{style="font-family:宋体"}[URL]{lang="EN-US"}[格式为]{style="font-family:宋体"}[HTTP]{lang="EN-US"}[格式，则通过]{style="font-family:宋体"}[HTTP]{lang="EN-US"}[协议获取]{style="font-family:宋体"}[CRL]{lang="EN-US"}[。]{style="font-family:宋体"}
+·若配置的CRL发布点URL格式为HTTP格式，则通过HTTP协议获取CRL。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若配置的]{style="font-family:宋体"}]{#struct_0_18308_19795_1255991791}[CRL]{lang="EN-US"}[发布点]{style="font-family:宋体"}[URL]{lang="EN-US"}[格式为]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[格式，则通过]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[协议获取]{style="font-family:宋体"}[CRL]{lang="EN-US"}[。若配置的]{style="font-family:宋体"}[CRL]{lang="EN-US"}[发布点]{style="font-family:宋体"}[URL]{lang="EN-US"}[（通过命令]{style="font-family:宋体"}**[crl url]{lang="EN-US"}**[）中缺少主机名，例如]{style="font-family:宋体"}[ldap:///CN=8088,OU=test,U=rd,C=cn]{lang="EN-US"}[，则还需要在]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中配置]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[服务器的]{style="font-family:宋体"}[URL]{lang="EN-US"}[（通过命令]{style="font-family:宋体"}**[ldap server]{lang="EN-US"}**[）。此时，设备会将配置的]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[服务器]{style="font-family:宋体"}[URL]{lang="EN-US"}[和配置的]{style="font-family:宋体"}[CRL]{lang="EN-US"}[发布点]{style="font-family:宋体"}[URL]{lang="EN-US"}[中的不完整的]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[发布点拼装成完整的]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[发布点，再通过]{style="font-family:宋体"}[LDAP]{lang="EN-US"}[协议获取]{style="font-family:宋体"}[CRL]{lang="EN-US"}[。]{style="font-family:宋体"}
+·若配置的CRL发布点URL格式为LDAP格式，则通过LDAP协议获取CRL。若配置的CRL发布点URL（通过命令**crl url**）中缺少主机名，例如ldap:///CN=8088,OU=test,U=rd,C=cn，则还需要在PKI域中配置LDAP服务器的URL（通过命令**ldap server**）。此时，设备会将配置的LDAP服务器URL和配置的CRL发布点URL中的不完整的LDAP发布点拼装成完整的LDAP发布点，再通过LDAP协议获取CRL。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若]{style="font-family:宋体"}]{#struct_0_18308_19795_1725869912}[PKI]{lang="EN-US"}[域中没有配置]{style="font-family:宋体"}[CRL]{lang="EN-US"}[发布点，则设备会依次从本地证书、]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书中查找]{style="font-family:宋体"}[CRL]{lang="EN-US"}[的发布点，如果从中查找到了]{style="font-family:宋体"}[CRL]{lang="EN-US"}[发布点，则通过该发布点获取]{style="font-family:宋体"}[CRL]{lang="EN-US"}[；否则，通过]{style="font-family:宋体"}[SCEP]{lang="EN-US"}[协议获取]{style="font-family:宋体"}[CRL]{lang="EN-US"}[。]{style="font-family:宋体"}
+·若PKI域中没有配置CRL发布点，则设备会依次从本地证书、CA证书中查找CRL的发布点，如果从中查找到了CRL发布点，则通过该发布点获取CRL；否则，通过SCEP协议获取CRL。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x948482997}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x434081732}[从]{style="font-family:宋体"}[CRL]{lang="EN-US"}[发布点上]{style="font-family:宋体"}[获取]{style="font-family:宋体"}[CRL]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 从CRL发布点上获取CRL。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_694643989}
+\<Sysname\> system-view
 
-[\[]{lang="EN-US"}[Sysname]{lang="ES-AR"}[\] pki retrieve-crl domain aaa]{lang="EN-US"}
+Sysname pki retrieve-crl domain aaa
 
-[Retrieve CRL of the domain aaa successfully.]{lang="EN-US"}
+Retrieve CRL of the domain aaa successfully.
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_1539981129}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[crl url]{lang="EN-US"}**]{#struct_0_18308_19795_1369743194}
+·**crl url**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ldap server]{lang="EN-US"}**]{#struct_0_18308_19795_2001908021}
-:::
-
-::: {#2127153028 .myid}
-[]{#_Toc404793090}[]{#struct_0_18308_19795_594721526}[]{#_Toc279163122}[]{#_Toc293674859}
+·**ldap server**
 
 **PKI \-- PKI配置命令 \-- pki storage**
 
 ------------------------------------------------------------------------
 
-[**[pki storage]{lang="EN-US"}**]{#struct_0_18308_19795_784848189}[命令用来配置证书和]{style="font-family:宋体"}[CRL]{lang="EN-US"}[的存储路径。]{style="font-family:宋体"}
+**[pki storage**]命令用来配置证书和CRL的存储路径。
 
-[**[undo pki storage]{lang="EN-US"}**]{#struct_0_18308_19795_770481662}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo pki storage**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_891942047}
+【命令】
 
-[**[pki storage ]{lang="EN-US"}**[{ **certificates** \| **crls** } ]{lang="EN-US"}*[dir-path]{lang="EN-US"}*]{#struct_0_18308_19795_x433491908}
+**[pki storage **[{ **certificates** \| **crls** } ]*dir-path*]
 
-[**[undo pki storage]{lang="IT" style="color:windowtext"}**]{#struct_0_18308_19795_x1078235656}[ { **certificates** \| **crls** }]{lang="IT" style="color:windowtext"}
+**[undo pki storage**  { **certificates** \| **crls** }]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_1397573951}
+【缺省情况】
 
-[[证书和]{style="font-family:宋体"}[CRL]{lang="EN-US"}]{#struct_0_18308_19795_x155518410}[的存储路径为设备存储介质上的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[目录。]{style="font-family:宋体"}
+证书和CRL的存储路径为设备存储介质上的PKI目录。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1876781245}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18308_19795_x1078922131}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_x2143782826}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_199568139}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_253223895}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_1413262634}
+【参数】
 
-[**[certificates]{lang="EN-US"}**]{#struct_0_18308_19795_x433426372}[：指定]{lang="EN-US" style="font-family:宋体"}[证书的存储目录。]{lang="EN-US" style="font-family:
-宋体"}
+**[certificates**]：指定证书的存储目录。
 
-[**[crls]{lang="EN-US"}**]{#struct_0_18308_19795_1649473890}[：指定]{lang="EN-US" style="font-family:宋体"}[CRL]{lang="EN-US"}[的存储目录。]{lang="EN-US" style="font-family:宋体"}
+**[crls**]：指定CRL的存储目录。
 
-[*[dir-path]{lang="EN-US"}*]{#struct_0_18308_19795_x541471041}[：存储目录的路径名称，区分大小写，]{style="font-family:宋体"}[不能以']{style="font-family:宋体"}[/]{lang="EN-US"}['开头，不能包含"]{style="font-family:宋体"}[../]{lang="EN-US"}["。]{style="font-family:宋体"}*[dir-path]{lang="EN-US"}*[可以是绝对路径也可以是相对路径，但必须已经存在。]{style="font-family:宋体"}
+*[dir-path*]：存储目录的路径名称，区分大小写，不能以'/'开头，不能包含"../"。*dir-path*可以是绝对路径也可以是相对路径，但必须已经存在。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_1914078700}
+【使用指导】
 
-[*[dir-path]{lang="EN-US"}*]{#struct_0_18308_19795_361802237}[只能是当前主控板上的路径，不能是其它主控板上的路径。]{style="font-family:宋体"}
+*[dir-path*]只能是当前主控板上的路径，不能是其它主控板上的路径。
 
-[[设备缺省的]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x1768549529}[目录在设备首次成功申请、获取或导入证书时自动创建。]{style="font-family:宋体"}
+设备缺省的PKI目录在设备首次成功申请、获取或导入证书时自动创建。
 
-[[如果需要指定的目录还不存在，需要先使用]{style="font-family:宋体"}**[mkdir]{lang="EN-US"}**]{#struct_0_18308_19795_x1046129997}[命令创建这个目录，再使用此命令配存储路径。若修改了证书或]{style="font-family:宋体"}[CRL]{lang="EN-US"}[的存储目录，则原存储路径下的证书文件（以]{style="font-family:宋体"}[.cer]{lang="EN-US"}[和]{style="font-family:宋体"}[.p12]{lang="EN-US"}[为后缀的文件）和]{style="font-family:宋体"}[CRL]{lang="EN-US"}[文件（以]{style="font-family:宋体"}[.crl]{lang="EN-US"}[为后缀的文件）将被移动到该路径下保存，且原存储路径下的其它文件不受影响。]{style="font-family:宋体"}
+如果需要指定的目录还不存在，需要先使用**mkdir**命令创建这个目录，再使用此命令配存储路径。若修改了证书或CRL的存储目录，则原存储路径下的证书文件（以.cer和.p12为后缀的文件）和CRL文件（以.crl为后缀的文件）将被移动到该路径下保存，且原存储路径下的其它文件不受影响。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x240843903}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1113955639}[设置证书的存储路径为]{style="font-family:宋体"}[flash:/pki-new]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 设置证书的存储路径为flash:/pki-new。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_1565024718}
+\<Sysname\> system-view
 
-[\[Sysname\] pki storage certificates flash:/pki-new]{lang="EN-US"}
+Sysname pki storage certificates flash:/pki-new
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1132067748}[设置]{style="font-family:宋体"}[CRL]{lang="EN-US"}[存储路径为]{style="font-family:宋体"}[pki-new]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 设置CRL存储路径为pki-new。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x1406027954}
+\<Sysname\> system-view
 
-[\[Sysname\] pki storage crls pki-new]{lang="EN-US"}
-:::
-
-::: {#1535974242 .myid}
-[]{#_Toc404793091}[]{#struct_0_18308_19795_1086904806}[]{#_Toc279163111}[]{#_Toc265512478}[]{#_Toc61836626}
+Sysname pki storage crls pki-new
 
 **PKI \-- PKI配置命令 \-- pki validate-certificate**
 
 ------------------------------------------------------------------------
 
-[**[pki validate-certificate]{lang="EN-US"}**]{#struct_0_18308_19795_x686470985}[命令用来验证证书的有效性。]{style="font-family:
-宋体"}
+**[pki validate-certificate**]命令用来验证证书的有效性。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1091025679}
+【命令】
 
-[**[pki validate-certificate]{lang="EN-US"}**[ **domain** *domain-name* { **ca** \| **local** } ]{lang="EN-US"}]{#struct_0_18308_19795_1598013009}
+**[pki validate-certificate**[ **domain** *domain-name* { **ca** \| **local** } ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_321321691}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_18308_19795_x1038621290}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_379686691}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_1132133284}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x651327089}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1367883262}
+【参数】
 
-[**[domain]{lang="EN-US"}**[ *domain-name*]{lang="EN-US"}]{#struct_0_18308_19795_2037059026}[：指定证书所在的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写，不能包括"]{style="font-family:宋体"}[\~]{lang="EN-US"}["、"]{style="font-family:宋体"}[\*]{lang="EN-US"}["、"]{style="font-family:宋体"}[\\]{lang="EN-US"}["、"]{style="font-family:宋体"}[\|]{lang="EN-US"}["、"]{style="font-family:宋体"}[:]{lang="EN-US"}["、"]{style="font-family:宋体"}[.]{lang="EN-US"}["、"]{style="font-family:宋体"}[\<]{lang="EN-US"}["、"]{style="font-family:宋体"}[\>]{lang="EN-US"}["、"]{style="font-family:宋体"}[\"]{lang="EN-US"}["和"]{style="font-family:宋体"}[\']{lang="EN-US"}["。]{style="font-family:宋体"}
+**[domain** *domain-name*]：指定证书所在的PKI域的名称，为1～31个字符的字符串，不区分大小写，不能包括"\~"、"\*"、"\"、"[\|]"、":"、"."、"\<"、"\>"、"\""和"\'"。
 
-[**[ca]{lang="EN-US"}**]{#struct_0_18308_19795_x319407911}[：表示验证]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书。]{style="font-family:宋体"}
+**[ca**]：表示验证CA证书。
 
-[**[local]{lang="EN-US"}**]{#struct_0_18308_19795_216090423}[：表示验证本地证书。]{style="font-family:宋体"}
+**[local**]：表示验证本地证书。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_337909867}
+【使用指导】
 
-[[证书验证的内容包括：证书是否由用户信任的]{style="font-family:宋体"}[CA]{lang="EN-US"}]{#struct_0_18308_19795_983271334}[签发；证书是否仍在有效期内；如果使能了]{style="font-family:宋体"}[CRL]{lang="EN-US"}[检查功能，还会验证证书是否被吊销。如果验证证书的时候，]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中没有]{style="font-family:宋体"}[CRL]{lang="EN-US"}[，则会先从本地证书库中查找是否存在]{style="font-family:宋体"}[CRL]{lang="EN-US"}[，如果找到]{style="font-family:宋体"}[CRL]{lang="EN-US"}[，则把证书库中保存的]{style="font-family:宋体"}[CRL]{lang="EN-US"}[加载到该]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中，否则，就从]{style="font-family:宋体"}[CA]{lang="EN-US"}[服务器上获取并保存到本地。]{style="font-family:宋体"}
+证书验证的内容包括：证书是否由用户信任的CA签发；证书是否仍在有效期内；如果使能了CRL检查功能，还会验证证书是否被吊销。如果验证证书的时候，PKI域中没有CRL，则会先从本地证书库中查找是否存在CRL，如果找到CRL，则把证书库中保存的CRL加载到该PKI域中，否则，就从CA服务器上获取并保存到本地。
 
-[[导入证书、申请证书、获取证书以及应用程序使用]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x1895323807}[功能时，都会自动对证书进行验证，因此一般不需要使用此命令进行额外的验证。如果用户希望在没有任何前述操作的情况下单独执行证书的验证，可以使用此命令。]{style="font-family:宋体"}
+导入证书、申请证书、获取证书以及应用程序使用PKI功能时，都会自动对证书进行验证，因此一般不需要使用此命令进行额外的验证。如果用户希望在没有任何前述操作的情况下单独执行证书的验证，可以使用此命令。
 
-[[验证]{style="font-family:宋体"}[CA]{lang="EN-US"}]{#struct_0_18308_19795_x31227447}[证书时，会对从当前]{style="font-family:宋体"}[CA]{lang="EN-US"}[到根]{style="font-family:宋体"}[CA]{lang="EN-US"}[的整条]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书链进行]{style="font-family:宋体"}[CRL]{lang="EN-US"}[检查。]{style="font-family:宋体"}
+验证CA证书时，会对从当前CA到根CA的整条CA证书链进行CRL检查。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x2061261728}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1132198820}[验证]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域]{style="font-family:宋体"}[aaa]{lang="EN-US"}[中的]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书的有效性。]{style="font-family:宋体"}
+\# 验证PKI域aaa中的CA证书的有效性。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_1132264356}
+\<Sysname\> system-view
 
-[\[Sysname\] pki validate-certificate domain aaa ca]{lang="EN-US"}
+Sysname pki validate-certificate domain aaa ca
 
-[Verifying certificate\...\...]{lang="EN-US"}
+Verifying certificate\...\...
 
-[        Serial Number:]{lang="EN-US"}
+        Serial Number:
 
-[            f6:3c:15:31:fe:bb:ec:94:dc:3d:b9:3a:d9:07:70:e5]{lang="EN-US"}
+            f6:3c:15:31:fe:bb:ec:94:dc:3d:b9:3a:d9:07:70:e5
 
-[        Issuer:]{lang="EN-US"}
+        Issuer:
 
-[            C=cn]{lang="EN-US"}
+            C=cn
 
-[            O=ccc]{lang="EN-US"}
+            O=ccc
 
-[            OU=ppp]{lang="EN-US"}
+            OU=ppp
 
-[            CN=rootca]{lang="EN-US"}
+            CN=rootca
 
-[        Subject:]{lang="EN-US"}
+        Subject:
 
-[            C=cn]{lang="EN-US"}
+            C=cn
 
-[            O=abc]{lang="EN-US"}
+            O=abc
 
-[            OU=test]{lang="EN-US"}
+            OU=test
 
-[            CN=aca]{lang="EN-US"}
+            CN=aca
 
-[ ]{lang="EN-US"}
+Verify result: OK
 
-[Verify result: OK]{lang="EN-US"}
+Verifying certificate\...\...
 
-[Verifying certificate\...\...]{lang="EN-US"}
+        Serial Number:
 
-[        Serial Number:]{lang="EN-US"}
+            5c:72:dc:c4:a5:43:cd:f9:32:b9:c1:90:8f:dd:50:f6
 
-[            5c:72:dc:c4:a5:43:cd:f9:32:b9:c1:90:8f:dd:50:f6]{lang="EN-US"}
+Issuer:
 
-[        ]{lang="EN-US"}[Issuer:]{lang="FR"}
+            C=cn
 
-[            C=cn]{lang="FR"}
+            O=ccc
 
-[            O=ccc]{lang="FR"}
+            OU=ppp
 
-[            OU=ppp]{lang="FR"}
+CN=rootca
 
-[            ]{lang="FR"}[CN=rootca]{lang="EN-US"}
+        Subject:
 
-[        Subject:]{lang="EN-US"}
+            C=cn
 
-[            C=cn]{lang="EN-US"}
+            O=ccc
 
-[            O=ccc]{lang="EN-US"}
+            OU=ppp
 
-[            OU=ppp]{lang="EN-US"}
+            CN=rootca
 
-[            CN=rootca]{lang="EN-US"}
+Verify result: OK
 
-[ ]{lang="EN-US"}
+\# 验证PKI域aaa中的本地证书的有效性。
 
-[Verify result: OK]{lang="EN-US"}
+\<Sysname\> system-view
 
-[[\# ]{lang="IT"}]{#struct_0_18308_19795_925647604}[验证]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域]{style="font-family:宋体"}[aaa]{lang="EN-US"}[中的]{style="font-family:宋体"}[本地]{style="font-family:宋体"}[证书的有效性。]{style="font-family:宋体"}
+Sysname pki validate-certificate domain aaa local
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_1655735951}
+Verifying certificate\...\...
 
-[\[Sysname\] pki validate-certificate domain aaa local]{lang="EN-US"}
+        Serial Number:
 
-[Verifying certificate\...\...]{lang="IT"}
+            bc:05:70:1f:0e:da:0d:10:16:1e
 
-[        Serial Number:]{lang="IT"}
+        Issuer:
 
-[            bc:05:70:1f:0e:da:0d:10:16:1e]{lang="IT"}
+            C=CN
 
-[        Issuer:]{lang="IT"}
+            O=sec
 
-[            C=CN]{lang="IT"}
+            OU=software
 
-[            O=sec]{lang="IT"}
+            CN=bca
 
-[            OU=software]{lang="IT"}
+        Subject:
 
-[            CN=bca]{lang="IT"}
+            O=OpenCA Labs
 
-[        Subject:]{lang="IT"}
+            OU=Users
 
-[            O=OpenCA Labs]{lang="IT"}
+            CN=fips fips-sec
 
-[            OU=Users]{lang="IT"}
+Verify result: OK
 
-[            CN=fips fips-sec]{lang="IT"}
+【相关命令】
 
-[ ]{lang="IT"}
+·**crl check**
 
-[Verify result: OK]{lang="IT"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_755031459}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[crl check]{lang="EN-US"}**]{#struct_0_18308_19795_x1058326332}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pki domain]{lang="EN-US"}**]{#struct_0_18308_19795_1131805604}
-:::
-
-::: {#-771249820 .myid}
-[]{#_Toc404793092}[]{#struct_0_18308_19795_x91173620}[]{#_Toc285123233}
+·**pki domain**
 
 **PKI \-- PKI配置命令 \-- public-key dsa**
 
 ------------------------------------------------------------------------
 
-[**[public-key dsa]{lang="EN-US"}**]{#struct_0_18308_19795_x916341770}[命令用来指定证书申请使用的]{style="font-family:宋体"}[DSA]{lang="EN-US"}[密钥对。]{style="font-family:宋体"}
+**[public-key dsa**]命令用来指定证书申请使用的DSA密钥对。
 
-[**[undo public-key]{lang="EN-US"}**]{#struct_0_18308_19795_x1697227352}[命令用来取消指定的密钥对。]{style="font-family:宋体"}
+**[undo public-key**]命令用来取消指定的密钥对。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_2124596231}
+【命令】
 
-[**[public-key dsa name]{lang="EN-US"}***[ key-name]{lang="EN-US"}*[ \[ **length** *key-length* \]]{lang="EN-US"}]{#struct_0_18308_19795_x2070856119}
+**[public-key dsa name*** key-name* [ **length** *key-length* ]]
 
-[**[undo public-key]{lang="EN-US"}**]{#struct_0_18308_19795_x1192278147}
+**[undo public-key**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1475894007}
+【缺省情况】
 
-[[未指定任何密钥对。]{style="font-family:宋体"}]{#struct_0_18308_19795_843808841}
+未指定任何密钥对。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_1131871140}
+【视图】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_267165564}[域视图]{style="font-family:宋体"}
+PKI域视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_x510622052}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x895096403}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x1510863241}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_1773865073}
+【参数】
 
-[**[name]{lang="EN-US"}***[ key-name]{lang="EN-US"}*]{#struct_0_18308_19795_x97283626}[：密钥对的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[64]{lang="EN-US"}[个字符的字符串，不区分大小写]{style="font-family:宋体"}[，]{style="font-family:宋体"}[只能包含字母、数字和连字符"]{style="font-family:宋体"}[-]{lang="EN-US"}["。]{style="font-family:宋体"}
+**[name*** key-name*]：密钥对的名称，为1～64个字符的字符串，不区分大小写，只能包含字母、数字和连字符"-"。
 
-[**[length]{lang="EN-US"}***[ key-length]{lang="EN-US"}*]{#struct_0_18308_19795_46055075}[：密钥的长度。非]{style="font-family:宋体"}[FIPS]{lang="EN-US"}[模式下，]{style="font-family:宋体"}*[key-length]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[512]{lang="EN-US"}[～]{style="font-family:宋体"}[2048]{lang="EN-US"}[，单位为比特，缺省值为]{style="font-family:宋体"}[1024]{lang="EN-US"}[；]{style="font-family:宋体"}[FIPS]{lang="EN-US"}[模式下，]{style="font-family:宋体"}*[key-length]{lang="EN-US"}*[的取值为]{style="font-family:宋体"}[2048]{lang="EN-US"}[，单位为比特，缺省值为]{style="font-family:宋体"}[2048]{lang="EN-US"}[。密钥越长，密钥安全性越高，但相关的公钥运算越耗时。]{style="font-family:宋体"}
+**[length*** key-length*]：密钥的长度。非FIPS模式下，*key-length*的取值范围为512～2048，单位为比特，缺省值为1024；FIPS模式下，*key-length*的取值为2048，单位为比特，缺省值为2048。密钥越长，密钥安全性越高，但相关的公钥运算越耗时。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1618579106}
+【使用指导】
 
-[[本命令中引用的密钥对并不要求已经存在，可以通过以下任意一种途径获得：]{style="font-family:宋体"}]{#struct_0_18308_19795_330661803}
+本命令中引用的密钥对并不要求已经存在，可以通过以下任意一种途径获得：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[通过执行]{lang="EN-US" style="font-family:宋体"}**[public-key local create]{lang="EN-US"}**]{#struct_0_18308_19795_1131936676}[命令生成。]{lang="EN-US" style="font-family:宋体"}
+·通过执行**public-key local create**命令生成。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[通过应用程序认证过程触发生成。例如]{style="font-family:宋体"}]{#struct_0_18308_19795_x496620863}[IKE]{lang="EN-US"}[协商过程中，如果使用数字签名认证方式，则可能会触发生成密钥对。]{style="font-family:宋体"}
+·通过应用程序认证过程触发生成。例如IKE协商过程中，如果使用数字签名认证方式，则可能会触发生成密钥对。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[通过导入证书（使用]{style="font-family:宋体"}]{#struct_0_18308_19795_x1997986199}**[pki import]{lang="EN-US"}**[命令）的方式从外界获得。]{style="font-family:宋体"}
+·通过导入证书（使用**pki import**命令）的方式从外界获得。
 
-[[一个]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_1633550229}[域中只能同时存在一种算法（]{style="font-family:宋体"}[RSA]{lang="EN-US"}[、]{style="font-family:宋体"}[DSA]{lang="EN-US"}[或]{style="font-family:宋体"}[ECDSA]{lang="EN-US"}[）的密钥对。对于]{style="font-family:宋体"}[RSA]{lang="EN-US"}[密钥对来说，一个]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中只允许单独存在一种用途的]{style="font-family:宋体"}[RSA]{lang="EN-US"}[密钥对，或同时存在一个用于签名的和一个用于加密的]{style="font-family:宋体"}[RSA]{lang="EN-US"}[密钥对。因此，在一个]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中，除]{style="font-family:宋体"}[RSA]{lang="EN-US"}[签名密钥对和]{style="font-family:宋体"}[RSA]{lang="EN-US"}[加密密钥对的配置不会互相覆盖之外，其它类型的新的密钥对配置均会覆盖已有的密钥对配置。]{style="font-family:宋体"}
+一个PKI域中只能同时存在一种算法（RSA、DSA或ECDSA）的密钥对。对于RSA密钥对来说，一个PKI域中只允许单独存在一种用途的RSA密钥对，或同时存在一个用于签名的和一个用于加密的RSA密钥对。因此，在一个PKI域中，除RSA签名密钥对和RSA加密密钥对的配置不会互相覆盖之外，其它类型的新的密钥对配置均会覆盖已有的密钥对配置。
 
-[[本命令中指定的密钥长度仅对将要由设备生成的密钥对有效。如果执行本命令时，设备上已经存在指定名称的密钥对，则后续通过此命令指定的该密钥对的密钥长度没有意义。如果指定名称的密钥对是通过导入证书的方式获得，则通过本命令指定的密钥长度也没有意义。]{style="font-family:宋体"}]{#struct_0_18308_19795_723588217}
+本命令中指定的密钥长度仅对将要由设备生成的密钥对有效。如果执行本命令时，设备上已经存在指定名称的密钥对，则后续通过此命令指定的该密钥对的密钥长度没有意义。如果指定名称的密钥对是通过导入证书的方式获得，则通过本命令指定的密钥长度也没有意义。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_456713684}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_421460485}[指定证书申请所使用的]{style="font-family:宋体"}[DSA]{lang="EN-US"}[密钥对为]{style="font-family:宋体"}[abc]{lang="EN-US"}[，密钥的长度为]{style="font-family:宋体"}[2048]{lang="EN-US"}[比特。]{style="font-family:宋体"}
+\# 指定证书申请所使用的DSA密钥对为abc，密钥的长度为2048比特。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_1944437585}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain aaa]{lang="EN-US"}
+Sysname pki domain aaa
 
-[\[Sysname-pki-domain-aaa\] public-key dsa name abc length 2048]{lang="EN-US"}
+Sysname-pki-domain-aaa public-key dsa name abc length 2048
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_1132002212}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pki import]{lang="EN-US"}**]{#struct_0_18308_19795_2079194704}
+·**pki import**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[public-key local create]{lang="EN-US"}**]{#struct_0_18308_19795_1681980049}[（安全命令参考]{lang="EN-US" style="font-family:宋体"}[/]{lang="EN-US"}[公钥管理）]{lang="EN-US" style="font-family:宋体"}
-:::
-
-::::: {#-1467674053 .myid}
-[]{#_Toc404793093}[]{#struct_0_18308_19795_x1954580914}[]{#_Toc285123232}
+·**public-key local create**（安全命令参考/公钥管理）
 
 **PKI \-- PKI配置命令 \-- public-key ecdsa**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](PKI命令.files/image002.png){#图片 1 width="62" height="25"}]{lang="EN-US"}]{#struct_0_18308_19795_183404596}
-:::
+![说明](PKI命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_18308_19795_1551486490}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[public-key ecdsa**]命令用来指定证书申请使用的ECDSA密钥对。
 
-[**[public-key ecdsa]{lang="EN-US"}**]{#struct_0_18308_19795_500918515}[命令用来指定证书申请使用的]{style="font-family:宋体"}[ECDSA]{lang="EN-US"}[密钥对。]{style="font-family:宋体"}
+**[undo public-key**]命令用来取消指定的密钥对。
 
-[**[undo public-key]{lang="EN-US"}**]{#struct_0_18308_19795_40393163}[命令用来取消指定的密钥对。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x859890810}
+**[public-key ecdsa name** *key-name*]
 
-[**[public-key ecdsa name]{lang="EN-US"}**[ *key-name*]{lang="EN-US"}]{#struct_0_18308_19795_132772620}
+**[undo public-key**]
 
-[**[undo public-key]{lang="EN-US"}**]{#struct_0_18308_19795_1132592036}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_1673723309}
+未指定任何密钥对。
 
-[[未指定任何密钥对。]{style="font-family:宋体"}]{#struct_0_18308_19795_547793216}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_32246828}
+PKI域视图
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x1066070759}[域视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1865074513}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x1046780888}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x1383056931}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_1132657572}
+**[name** *key-name*]：密钥对的名称，为1～64个字符的字符串，不区分大小写，只能包含字母、数字和连字符"-"。
 
-[**[name]{lang="EN-US"}**[ *key-name*]{lang="EN-US"}]{#struct_0_18308_19795_x1798392063}[：密钥对的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[64]{lang="EN-US"}[个字符的字符串，不区分大小写]{style="font-family:宋体"}[，]{style="font-family:宋体"}[只能包含字母、数字和连字符"]{style="font-family:宋体"}[-]{lang="EN-US"}["。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_878335216}
+本命令中引用的密钥对并不要求已经存在，可以通过以下任意一种途径获得：
 
-[[本命令中引用的密钥对并不要求已经存在，可以通过以下任意一种途径获得：]{style="font-family:宋体"}]{#struct_0_18308_19795_x1092835289}
+·通过执行**public-key local create**命令生成。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[通过执行]{lang="EN-US" style="font-family:宋体"}**[public-key local create]{lang="EN-US"}**]{#struct_0_18308_19795_1157551655}[命令生成。]{lang="EN-US" style="font-family:宋体"}
+·通过应用程序认证过程触发生成。例如IKE协商过程中，如果使用数字签名认证方式，则可能会触发生成密钥对。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[通过应用程序认证过程触发生成。例如]{style="font-family:宋体"}]{#struct_0_18308_19795_1975168976}[IKE]{lang="EN-US"}[协商过程中，如果使用数字签名认证方式，则可能会触发生成密钥对。]{style="font-family:宋体"}
+·通过导入证书（使用**pki import**命令）的方式从外界获得。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[通过导入证书（使用]{style="font-family:宋体"}]{#struct_0_18308_19795_1583583251}**[pki import]{lang="EN-US"}**[命令）的方式从外界获得。]{style="font-family:宋体"}
+一个PKI域中只能同时存在一种算法（RSA、DSA或ECDSA）的密钥对。对于RSA密钥对来说，一个PKI域中只允许单独存在一种用途的RSA密钥对，或同时存在一个用于签名的和一个用于加密的RSA密钥对。因此，在一个PKI域中，除RSA签名密钥对和RSA加密密钥对的配置不会互相覆盖之外，其它类型的新的密钥对配置均会覆盖已有的密钥对配置。
 
-[[一个]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x569441746}[域中只能同时存在一种算法（]{style="font-family:宋体"}[RSA]{lang="EN-US"}[、]{style="font-family:宋体"}[DSA]{lang="EN-US"}[或]{style="font-family:宋体"}[ECDSA]{lang="EN-US"}[）的密钥对。对于]{style="font-family:宋体"}[RSA]{lang="EN-US"}[密钥对来说，一个]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中只允许单独存在一种用途的]{style="font-family:宋体"}[RSA]{lang="EN-US"}[密钥对，或同时存在一个用于签名的和一个用于加密的]{style="font-family:宋体"}[RSA]{lang="EN-US"}[密钥对。因此，在一个]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中，除]{style="font-family:宋体"}[RSA]{lang="EN-US"}[签名密钥对和]{style="font-family:宋体"}[RSA]{lang="EN-US"}[加密密钥对的配置不会互相覆盖之外，其它类型的新的密钥对配置均会覆盖已有的密钥对配置。]{style="font-family:宋体"}
+本命令中指定的密钥长度仅对将要由设备生成的密钥对有效。如果执行本命令时，设备上已经存在指定名称的密钥对，则后续通过此命令指定的该密钥对的密钥长度没有意义。如果指定名称的密钥对是通过导入证书的方式获得，则通过本命令指定的密钥长度也没有意义。
 
-[[本命令中指定的密钥长度仅对将要由设备生成的密钥对有效。如果执行本命令时，设备上已经存在指定名称的密钥对，则后续通过此命令指定的该密钥对的密钥长度没有意义。如果指定名称的密钥对是通过导入证书的方式获得，则通过本命令指定的密钥长度也没有意义。]{style="font-family:宋体"}]{#struct_0_18308_19795_1132067749}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1405962418}
+\# 指定证书申请所使用的ECDSA密钥对为abc。
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x387305254}[指定证书申请所使用的]{style="font-family:宋体"}[ECDSA]{lang="EN-US"}[密钥对为]{style="font-family:宋体"}[abc]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x673936491}
+Sysname pki domain aaa
 
-[\[Sysname\] pki domain aaa]{lang="EN-US"}
+Sysname-pki-domain-aaa public-key ecdsa name abc
 
-[\[Sysname-pki-domain-aaa\] public-key ecdsa name abc]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_495566476}
+·**pki import**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pki import]{lang="EN-US"}**]{#struct_0_18308_19795_x1719320986}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[public-key local create]{lang="EN-US"}**]{#struct_0_18308_19795_x1856165870}[（安全命令参考]{lang="EN-US" style="font-family:宋体"}[/]{lang="EN-US"}[公钥管理）]{lang="EN-US" style="font-family:宋体"}
-:::::
-
-::: {#847358308 .myid}
-[]{#_Toc404793094}[]{#struct_0_18308_19795_x801239370}[]{#_Toc285123231}
+·**public-key local create**（安全命令参考/公钥管理）
 
 **PKI \-- PKI配置命令 \-- public-key rsa**
 
 ------------------------------------------------------------------------
 
-[**[public-key rsa]{lang="EN-US"}**]{#struct_0_18308_19795_1132133285}[命令用来指定证书申请使用的]{style="font-family:宋体"}[RSA]{lang="EN-US"}[密钥对。]{style="font-family:宋体"}
+**[public-key rsa**]命令用来指定证书申请使用的RSA密钥对。
 
-[**[undo public-key]{lang="EN-US"}**]{#struct_0_18308_19795_x651392625}[命令用来取消指定的密钥对。]{style="font-family:宋体"}
+**[undo public-key**]命令用来取消指定的密钥对。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1012922097}
+【命令】
 
-[**[public-key rsa ]{lang="EN-US"}**[{ {]{lang="EN-US"}[ **encryption name** *encryption-key-name* \[ **length** *key-length* \] \| **signature name** *signature-key-name* \[ **length** *key-length* \] } \* \| **general name** *key-name* \[ **length** *key-length* \] }]{lang="EN-US"}]{#struct_0_18308_19795_x1853291882}
+**[public-key rsa **[ **encryption name** *encryption-key-name* [ **length** *key-length*  \| **signature name** *signature-key-name*  **length** *key-length*  } \* \| **general name** *key-name*  **length** *key-length*  }]]
 
-[**[undo public-key]{lang="EN-US"}**]{#struct_0_18308_19795_x1573107286}
+**[undo public-key**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_x383573492}
+【缺省情况】]
 
-[[未指定任何密钥对。]{style="font-family:宋体"}]{#struct_0_18308_19795_741920825}
+未指定任何密钥对。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x901083080}
+【视图】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_2107603931}[域视图]{style="font-family:宋体"}
+PKI域视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_1132198821}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x662652462}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x1148253507}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x777179803}
+【参数】
 
-[**[encryption]{lang="EN-US"}**]{#struct_0_18308_19795_x712054648}[：指定密钥对的用途为加密。]{style="font-family:宋体"}
+**[encryption**]：指定密钥对的用途为加密。
 
-[**[name]{lang="EN-US"}***[ encryption-key-name]{lang="EN-US"}*]{#struct_0_18308_19795_x1976851424}[：加密密钥对的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[64]{lang="EN-US"}[个字符的字符串，不区分大小写，只能包含字母、数字和连字符"]{style="font-family:宋体"}[-]{lang="EN-US"}["。]{style="font-family:宋体"}
+**[name*** encryption-key-name*]：加密密钥对的名称，为1～64个字符的字符串，不区分大小写，只能包含字母、数字和连字符"-"。
 
-[**[signature]{lang="EN-US"}**]{#struct_0_18308_19795_x614610188}[：指定密钥对的用途为签名。]{style="font-family:宋体"}
+**[signature**]：指定密钥对的用途为签名。
 
-[**[name]{lang="EN-US"}***[ signature-key-name]{lang="EN-US"}*]{#struct_0_18308_19795_x1091972378}[：签名密钥对的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[64]{lang="EN-US"}[个字符的字符串，不区分大小写，只能包含字母、数字和连字符"]{style="font-family:宋体"}[-]{lang="EN-US"}["。]{style="font-family:宋体"}
+**[name*** signature-key-name*]：签名密钥对的名称，为1～64个字符的字符串，不区分大小写，只能包含字母、数字和连字符"-"。
 
-[**[general]{lang="EN-US"}**]{#struct_0_18308_19795_502740968}[：指定密钥对的用途为通用，既可以用于签名也可以用于加密。]{style="font-family:宋体"}
+**[general**]：指定密钥对的用途为通用，既可以用于签名也可以用于加密。
 
-[**[name ]{lang="EN-US"}***[key-name]{lang="EN-US"}*]{#struct_0_18308_19795_1132264357}[：通用密钥对的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[64]{lang="EN-US"}[个字符的字符串，不区分大小写，只能包含字母、数字和连字符"]{style="font-family:宋体"}[-]{lang="EN-US"}["。]{style="font-family:宋体"}
+**[name ***key-name*]：通用密钥对的名称，为1～64个字符的字符串，不区分大小写，只能包含字母、数字和连字符"-"。
 
-[**[length]{lang="EN-US"}**[ *key-length*]{lang="EN-US"}]{#struct_0_18308_19795_925713140}[：密钥的长度。非]{style="font-family:宋体"}[FIPS]{lang="EN-US"}[模式下，]{style="font-family:宋体"}*[key-length]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[512]{lang="EN-US"}[～]{style="font-family:宋体"}[2048]{lang="EN-US"}[，单位为比特，缺省为]{style="font-family:宋体"}[1024]{lang="EN-US"}[；]{style="font-family:宋体"}[FIPS]{lang="EN-US"}[模式下，]{style="font-family:宋体"}*[key-length]{lang="EN-US"}*[的取值为]{style="font-family:宋体"}[2048]{lang="EN-US"}[，单位为比特，缺省为]{style="font-family:宋体"}[2048]{lang="EN-US"}[。密钥越长，密钥安全性越高，但相关的公钥运算越耗时。]{style="font-family:宋体"}
+**[length** *key-length*]：密钥的长度。非FIPS模式下，*key-length*的取值范围为512～2048，单位为比特，缺省为1024；FIPS模式下，*key-length*的取值为2048，单位为比特，缺省为2048。密钥越长，密钥安全性越高，但相关的公钥运算越耗时。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1851732385}
+【使用指导】
 
-[[本命令中引用的密钥对并不要求已经存在，可以通过以下任意一种途径获得：]{style="font-family:宋体"}]{#struct_0_18308_19795_1862540176}
+本命令中引用的密钥对并不要求已经存在，可以通过以下任意一种途径获得：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[通过执行]{lang="EN-US" style="font-family:宋体"}**[public-key local create]{lang="EN-US"}**]{#struct_0_18308_19795_1702515492}[命令生成。]{lang="EN-US" style="font-family:宋体"}
+·通过执行**public-key local create**命令生成。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[通过应用程序认证过程触发生成。例如]{style="font-family:宋体"}]{#struct_0_18308_19795_x927307180}[IKE]{lang="EN-US"}[协商过程中，如果使用数字签名认证方式，则可能会触发生成密钥对。]{style="font-family:宋体"}
+·通过应用程序认证过程触发生成。例如IKE协商过程中，如果使用数字签名认证方式，则可能会触发生成密钥对。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[通过导入证书（使用]{style="font-family:宋体"}]{#struct_0_18308_19795_272665700}**[pki import]{lang="EN-US"}**[命令）的方式从外界获得。]{style="font-family:宋体"}
+·通过导入证书（使用**pki import**命令）的方式从外界获得。
 
-[[一个]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_889697029}[域中只能同时存在一种算法（]{style="font-family:宋体"}[RSA]{lang="EN-US"}[、]{style="font-family:宋体"}[DSA]{lang="EN-US"}[或]{style="font-family:宋体"}[ECDSA]{lang="EN-US"}[）的密钥对。对于]{style="font-family:宋体"}[RSA]{lang="EN-US"}[密钥对来说，一个]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中只允许单独存在一种用途的]{style="font-family:宋体"}[RSA]{lang="EN-US"}[密钥对，或同时存在一个用于签名的和一个用于加密的]{style="font-family:宋体"}[RSA]{lang="EN-US"}[密钥对。因此，在一个]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中，除]{style="font-family:宋体"}[RSA]{lang="EN-US"}[签名密钥对和]{style="font-family:宋体"}[RSA]{lang="EN-US"}[加密密钥对的配置不会互相覆盖之外，其它类型的新的密钥对配置均会覆盖已有的密钥对配置。]{style="font-family:宋体"}
+一个PKI域中只能同时存在一种算法（RSA、DSA或ECDSA）的密钥对。对于RSA密钥对来说，一个PKI域中只允许单独存在一种用途的RSA密钥对，或同时存在一个用于签名的和一个用于加密的RSA密钥对。因此，在一个PKI域中，除RSA签名密钥对和RSA加密密钥对的配置不会互相覆盖之外，其它类型的新的密钥对配置均会覆盖已有的密钥对配置。
 
-[[分别指定]{style="font-family:宋体"}[RSA]{lang="EN-US"}]{#struct_0_18308_19795_691237716}[签名密钥对和]{style="font-family:宋体"}[RSA]{lang="EN-US"}[加密密钥对时，它们的密钥长度可以不相同。]{style="font-family:宋体"}
+分别指定RSA签名密钥对和RSA加密密钥对时，它们的密钥长度可以不相同。
 
-[[本命令中指定的密钥长度仅对将要由设备生成的密钥对有效。如果执行本命令时，设备上已经存在指定名称的密钥对，则后续通过此命令指定的该密钥对的密钥长度没有意义。如果指定名称的密钥对是通过导入证书的方式获得，则通过本命令指定的密钥长度也没有意义。]{style="font-family:宋体"}]{#struct_0_18308_19795_1131805605}
+本命令中指定的密钥长度仅对将要由设备生成的密钥对有效。如果执行本命令时，设备上已经存在指定名称的密钥对，则后续通过此命令指定的该密钥对的密钥长度没有意义。如果指定名称的密钥对是通过导入证书的方式获得，则通过本命令指定的密钥长度也没有意义。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x91108084}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_319279541}[指定证书申请所使用的]{style="font-family:宋体"}[RSA]{lang="EN-US"}[密钥对为]{style="font-family:宋体"}[abc]{lang="EN-US"}[，密钥用途为通用，密钥的长度为]{style="font-family:宋体"}[2048]{lang="EN-US"}[比特。]{style="font-family:宋体"}
+\# 指定证书申请所使用的RSA密钥对为abc，密钥用途为通用，密钥的长度为2048比特。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x2114802144}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain aaa]{lang="EN-US"}
+Sysname pki domain aaa
 
-[\[Sysname-pki-domain-aaa\] public-key rsa general name abc length 2048]{lang="EN-US"}
+Sysname-pki-domain-aaa public-key rsa general name abc length 2048
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1554109633}[指定证书申请所使用的加密]{style="font-family:宋体"}[RSA]{lang="EN-US"}[密钥对为]{style="font-family:宋体"}[rsa1]{lang="EN-US"}[（密钥的长度为]{style="font-family:宋体"}[2048]{lang="EN-US"}[比特），签名]{style="font-family:宋体"}[RSA]{lang="EN-US"}[密钥对为]{style="font-family:宋体"}[sig1]{lang="EN-US"}[（密钥的长度为]{style="font-family:宋体"}[2048]{lang="EN-US"}[比特）。]{style="font-family:宋体"}
+\# 指定证书申请所使用的加密RSA密钥对为rsa1（密钥的长度为2048比特），签名RSA密钥对为sig1（密钥的长度为2048比特）。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x1756211921}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain aaa]{lang="EN-US"}
+Sysname pki domain aaa
 
-[\[Sysname-pki-domain-aaa\] public-key rsa encryption name rsa1 length 2048]{lang="EN-US"}
+Sysname-pki-domain-aaa public-key rsa encryption name rsa1 length 2048
 
-[\[Sysname-pki-domain-aaa\] public-key rsa signature name sig1 length 2048]{lang="EN-US"}
+Sysname-pki-domain-aaa public-key rsa signature name sig1 length 2048
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1887052908}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pki import]{lang="EN-US"}**]{#struct_0_18308_19795_1224421382}
+·**pki import**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[public-key local create]{lang="EN-US"}**]{#struct_0_18308_19795_1131871141}[（安全命令参考]{lang="EN-US" style="font-family:宋体"}[/]{lang="EN-US"}[公钥管理）]{lang="EN-US" style="font-family:宋体"}
-:::
-
-::: {#1736882264 .myid}
-[]{#_Toc404793095}[]{#struct_0_18308_19795_267100028}
+·**public-key local create**（安全命令参考/公钥管理）
 
 **PKI \-- PKI配置命令 \-- root-certificate fingerprint**
 
 ------------------------------------------------------------------------
 
-[**[root-certificate fingerprint]{lang="EN-US"}**]{#struct_0_18308_19795_646523021}[命令用来配置验证]{style="font-family:
-宋体"}[CA]{lang="EN-US"}[根证书时所使用的指纹。]{style="font-family:宋体"}
+**[root-certificate fingerprint**]命令用来配置验证CA根证书时所使用的指纹。
 
-[**[undo root-certificate fingerprint]{lang="EN-US"}**]{#struct_0_18308_19795_18691590}[命令用来取消配置的根证书指纹。]{style="font-family:宋体"}
+**[undo root-certificate fingerprint**]命令用来取消配置的根证书指纹。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1516760109}
+【命令】
 
-[[非]{style="font-family:宋体"}[FIPS]{lang="EN-US"}]{#struct_0_18308_19795_x2024624532}[模式下：]{style="font-family:宋体"}
+非FIPS模式下：
 
-[**[root-certificate fingerprint ]{lang="EN-US"}**[{ **md5** \| **sha1** } *string*]{lang="EN-US"}]{#struct_0_18308_19795_x416570006}
+**[root-certificate fingerprint **[{ **md5** \| **sha1** } *string*]]
 
-[**[undo root-certificate fingerprint]{lang="EN-US"}**]{#struct_0_18308_19795_1278792318}
+**[undo root-certificate fingerprint**]
 
-[[FIPS ]{lang="EN-US"}]{#struct_0_18308_19795_x24437283}[模式下：]{style="font-family:宋体"}
+FIPS 模式下：
 
-[**[root-certificate fingerprint sha1 ]{lang="EN-US"}***[string]{lang="EN-US"}*]{#struct_0_18308_19795_1131936677}
+**[root-certificate fingerprint sha1 ***string*]
 
-[**[undo root-certificate fingerprint]{lang="EN-US"}**]{#struct_0_18308_19795_x496686399}
+**[undo root-certificate fingerprint**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_x899739740}
+【缺省情况】
 
-[[未指定验证]{style="font-family:宋体"}[CA]{lang="EN-US"}]{#struct_0_18308_19795_189533393}[根证书时使用的指纹。]{style="font-family:宋体"}
+未指定验证CA根证书时使用的指纹。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_1664023298}
+【视图】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x2065845867}[域视图]{style="font-family:宋体"}
+PKI域视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_1501073620}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_933670736}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_x246819593}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_1132002213}
+【参数】
 
-[**[md5]{lang="EN-US"}**]{#struct_0_18308_19795_2079260240}[：使用]{style="font-family:宋体"}[MD5]{lang="EN-US"}[指纹。]{style="font-family:宋体"}
+**[md5**]：使用MD5指纹。
 
-[**[sha1]{lang="EN-US"}**]{#struct_0_18308_19795_x1828640704}[：使用]{style="font-family:宋体"}[SHA1]{lang="EN-US"}[指纹。]{style="font-family:宋体"}
+**[sha1**]：使用SHA1指纹。
 
-[*[string]{lang="EN-US"}*]{#struct_0_18308_19795_x1432716108}[：指定所使用的指纹信息。当选择]{style="font-family:宋体"}[MD5]{lang="EN-US"}[指纹时，]{style="font-family:宋体"}*[string]{lang="EN-US"}*[必须为]{style="font-family:宋体"}[32]{lang="EN-US"}[个字符的字符串，并且以]{style="font-family:宋体"}[16]{lang="EN-US"}[进制的形式输入；当选择]{style="font-family:宋体"}[SHA1]{lang="EN-US"}[指纹时，]{style="font-family:宋体"}*[string]{lang="EN-US"}*[必须为]{style="font-family:宋体"}[40]{lang="EN-US"}[个字符的字符串，并且以]{style="font-family:宋体"}[16]{lang="EN-US"}[进制的形式输入。]{style="font-family:宋体"}
+*[string*]：指定所使用的指纹信息。当选择MD5指纹时，*string*必须为32个字符的字符串，并且以16进制的形式输入；当选择SHA1指纹时，*string*必须为40个字符的字符串，并且以16进制的形式输入。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_588662079}
+【使用指导】
 
-[[当本地证书申请模式为自动方式且]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x1797888213}[域中没有]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书时，必须通过本命令配置验证]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书时所使用的指纹。当]{style="font-family:宋体"}[IKE]{lang="EN-US"}[协商等应用触发设备进行本地证书申请时，设备会自动从]{style="font-family:宋体"}[CA]{lang="EN-US"}[服务器上获取]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书，如果获取的]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书中包含了本地不存在的]{style="font-family:宋体"}[CA]{lang="EN-US"}[根证书，则设备会验证该]{style="font-family:宋体"}[CA]{lang="EN-US"}[根证书的指纹。此时，如果设备上没有配置]{style="font-family:宋体"}[CA]{lang="EN-US"}[根证书指纹或者配置了错误的]{style="font-family:宋体"}[CA]{lang="EN-US"}[根证书指纹，则本地证书申请失败。]{style="font-family:宋体"}
+当本地证书申请模式为自动方式且PKI域中没有CA证书时，必须通过本命令配置验证CA证书时所使用的指纹。当IKE协商等应用触发设备进行本地证书申请时，设备会自动从CA服务器上获取CA证书，如果获取的CA证书中包含了本地不存在的CA根证书，则设备会验证该CA根证书的指纹。此时，如果设备上没有配置CA根证书指纹或者配置了错误的CA根证书指纹，则本地证书申请失败。
 
-[[通过]{style="font-family:宋体"}**[pki import]{lang="EN-US"}**]{#struct_0_18308_19795_557052270}[命令导入]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书或者通过]{style="font-family:宋体"}**[pki retrieval]{lang="EN-US"}**[命令获取]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书时，可以选择是否配置验证]{style="font-family:宋体"}[CA]{lang="EN-US"}[根证书使用的指纹：如果]{style="font-family:宋体"}[PKI]{lang="EN-US"}[域中配置了验证]{style="font-family:宋体"}[CA]{lang="EN-US"}[根证书使用的指纹，则当导入的]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书文件或者获取的]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书中包含本地不存在的]{style="font-family:宋体"}[CA]{lang="EN-US"}[根证书时，直接使用配置的]{style="font-family:宋体"}[CA]{lang="EN-US"}[根证书指纹进行验证。如果配置了错误的]{style="font-family:宋体"}[CA]{lang="EN-US"}[根证书指纹，则]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书导入和]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书获取均会失败；否则，需要用户来确认该]{style="font-family:宋体"}[CA]{lang="EN-US"}[证书的]{style="font-family:宋体"}[CA]{lang="EN-US"}[根证书指纹是否可信。]{style="font-family:宋体"}
+通过**pki import**命令导入CA证书或者通过**pki retrieval**命令获取CA证书时，可以选择是否配置验证CA根证书使用的指纹：如果PKI域中配置了验证CA根证书使用的指纹，则当导入的CA证书文件或者获取的CA证书中包含本地不存在的CA根证书时，直接使用配置的CA根证书指纹进行验证。如果配置了错误的CA根证书指纹，则CA证书导入和CA证书获取均会失败；否则，需要用户来确认该CA证书的CA根证书指纹是否可信。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_1771900317}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x1898826786}[配置验证]{style="font-family:宋体"}[CA]{lang="EN-US"}[根证书时使用的]{style="font-family:宋体"}[MD5]{lang="EN-US"}[指纹。（仅非]{style="font-family:宋体"}[FIPS]{lang="EN-US"}[模式下支持）]{style="font-family:宋体"}
+\# 配置验证CA根证书时使用的MD5指纹。（仅非FIPS模式下支持）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_1132592037}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain aaa]{lang="EN-US"}
+Sysname pki domain aaa
 
-[\[Sysname-pki-domain-aaa\] root-certificate fingerprint md5 12EF53FA355CD23E12EF53FA355CD23E]{lang="IT"}
+Sysname-pki-domain-aaa root-certificate fingerprint md5 12EF53FA355CD23E12EF53FA355CD23E
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1673657773}[配置验证]{style="font-family:宋体"}[CA]{lang="EN-US"}[根证书时使用的]{style="font-family:宋体"}[SHA1]{lang="EN-US"}[指纹。]{style="font-family:宋体"}
+\# 配置验证CA根证书时使用的SHA1指纹。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x655131706}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain aaa]{lang="EN-US"}
+Sysname pki domain aaa
 
-[\[Sysname-pki-domain-aaa\] root-certificate fingerprint sha1 D1526110AAD7527FB093ED7FC037B0B3CDDDAD93]{lang="EN-US"}
+Sysname-pki-domain-aaa root-certificate fingerprint sha1 D1526110AAD7527FB093ED7FC037B0B3CDDDAD93
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_1462336874}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[certificate request mode]{lang="EN-US"}**]{#struct_0_18308_19795_542314384}
+·**certificate request mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pki import]{lang="EN-US"}**]{#struct_0_18308_19795_x1988591478}
+·**pki import**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pki retrieve-certificate]{lang="EN-US"}**]{#struct_0_18308_19795_x5153637}
-:::
-
-::: {#1629595628 .myid}
-[]{#_Toc404793096}[]{#struct_0_18308_19795_872650254}[]{#_Toc279163108}[]{#_Toc265512480}[]{#_Toc133119718}[]{#_Toc128811560}[]{#_Toc124237081}
+·**pki retrieve-certificate**
 
 **PKI \-- PKI配置命令 \-- rule**
 
 ------------------------------------------------------------------------
 
-[**[rule]{lang="EN-US"}**]{#struct_0_18308_19795_1132657573}[命令用来配置证书属性的访问控制规则。]{style="font-family:宋体"}
+**[rule**]命令用来配置证书属性的访问控制规则。
 
-[**[undo rule]{lang="EN-US"}**]{#struct_0_18308_19795_x1798457599}[命令用来删除指定的证书属性访问控制规则。]{style="font-family:宋体"}
+**[undo rule**]命令用来删除指定的证书属性访问控制规则。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_654244109}
+【命令】
 
-[**[rule]{lang="EN-US"}**[ \[ *id* \] { **deny** \| **permit** } *group-nam*]{lang="EN-US"}*[e]{lang="EN-US"}*]{#struct_0_18308_19795_1396808190}
+**[rule** [ *id*  { **deny** \| **permit** } *group-nam*]*e*]
 
-[**[undo rule ]{lang="EN-US"}***[id]{lang="EN-US"}*]{#struct_0_18308_19795_1451012820}
+**[undo rule ***id*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_x2001781795}
+【缺省情况】
 
-[[不存在证书属性的访问控制规则。]{style="font-family:宋体"}]{#struct_0_18308_19795_1951504092}
+不存在证书属性的访问控制规则。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1062186485}
+【视图】
 
-[[证书访问控制策略视图]{style="font-family:宋体"}]{#struct_0_18308_19795_1552086159}
+证书访问控制策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_1132067746}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x1405110450}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_867953311}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_2062336742}
+【参数】
 
-[*[id]{lang="EN-US"}*]{#struct_0_18308_19795_18612806}[：证书属性访问控制规则编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[16]{lang="EN-US"}[，缺省值为当前还未被使用的且合法的最小编号，取值越小优先级越高。]{style="font-family:宋体"}
+*[id*]：证书属性访问控制规则编号，取值范围为1～16，缺省值为当前还未被使用的且合法的最小编号，取值越小优先级越高。
 
-[**[deny]{lang="EN-US"}**]{#struct_0_18308_19795_x1377483759}[：当证书的属性与所关联的属性组匹配时，认为该证书无效，未通过访问控制策略的检测。]{style="font-family:宋体"}
+**[deny**]：当证书的属性与所关联的属性组匹配时，认为该证书无效，未通过访问控制策略的检测。
 
-[**[permit]{lang="EN-US"}**]{#struct_0_18308_19795_x584297258}[：当证书的属性与所关联的属性组匹配时，认为该证书有效，通过了访问控制策略的检测。]{style="font-family:宋体"}
+**[permit**]：当证书的属性与所关联的属性组匹配时，认为该证书有效，通过了访问控制策略的检测。
 
-[*[group-name]{lang="EN-US"}*]{#struct_0_18308_19795_1241358869}[：规则所关联的证书属性组名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+*[group-name*]：规则所关联的证书属性组名称，为1～31个字符的字符串，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1652037425}
+【使用指导】
 
-[[配置]{style="font-family:宋体"}]{#struct_0_18308_19795_1132133282}[证书属性访问控制规则时，可以关联一个当前并不存在的证书属性组，后续可以通过命令]{style="font-family:宋体"}**[pki certificate attribute-group]{lang="EN-US"}**[完成相应的配置。]{style="font-family:
-宋体"}
+配置证书属性访问控制规则时，可以关联一个当前并不存在的证书属性组，后续可以通过命令**pki certificate attribute-group**完成相应的配置。
 
-[[若]{style="font-family:宋体"}]{#struct_0_18308_19795_x651720305}[规则所关联的证书属性组中没有定义任何属性规则（通过命令]{style="font-family:宋体"}**[attribute]{lang="EN-US"}**[配置），或关联的证书属性组不存在，则认为被检测的]{style="font-family:宋体"}[证书属性与该属性组匹配。]{style="font-family:宋体"}
+若规则所关联的证书属性组中没有定义任何属性规则（通过命令**attribute**配置），或关联的证书属性组不存在，则认为被检测的证书属性与该属性组匹配。
 
-[[如果一个访问控制策略中有多个规则，则按照规则编号从小到大的顺序遍历所有规则，一旦证书与某一个规则匹配，则立即结束检测，不再继续匹配其它规则；若遍历完所有规则后，证书没有与任何规则匹配，则认为该证书不能通过访问控制策略的检测。]{style="font-family:宋体"}]{#struct_0_18308_19795_x1402670421}
+如果一个访问控制策略中有多个规则，则按照规则编号从小到大的顺序遍历所有规则，一旦证书与某一个规则匹配，则立即结束检测，不再继续匹配其它规则；若遍历完所有规则后，证书没有与任何规则匹配，则认为该证书不能通过访问控制策略的检测。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_150810317}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x32657612}[配置一个访问控制规则，要求当证书与证书属性组]{style="font-family:宋体"}[mygroup]{lang="EN-US"}[匹配时，认为该证书有效，通过了访问控制策略的检测。]{style="font-family:宋体"}
+\# 配置一个访问控制规则，要求当证书与证书属性组mygroup匹配时，认为该证书有效，通过了访问控制策略的检测。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_797906945}
+\<Sysname\> system-view
 
-[\[Sysname\] pki certificate access-control-policy mypolicy]{lang="EN-US"}
+Sysname pki certificate access-control-policy mypolicy
 
-[\[Sysname-pki-cert-acp-mypolicy\] rule 1 permit mygroup]{lang="EN-US"}
+Sysname-pki-cert-acp-mypolicy rule 1 permit mygroup
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1468333551}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[attribute]{lang="EN-US"}**]{#struct_0_18308_19795_1493359427}
+·**attribute**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display pki certificate access-control-policy]{lang="EN-US"}**]{#struct_0_18308_19795_1765162847}
+·**display pki certificate access-control-policy**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[pki certificate attribute-group]{lang="EN-US"}**]{#struct_0_18308_19795_1132198818}
-:::
-
-::: {#-773629 .myid}
-[]{#_Toc404793097}[]{#struct_0_18308_19795_x662062635}
+·**pki certificate attribute-group**
 
 **PKI \-- PKI配置命令 \-- source**
 
 ------------------------------------------------------------------------
 
-[**[source]{lang="EN-US"}**]{#struct_0_18308_19795_x759232104}[命令用来指定]{style="font-family:宋体"}[PKI]{lang="EN-US"}[操作产生的协议报文使用的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[source**]命令用来指定PKI操作产生的协议报文使用的源IP地址。
 
-[**[undo source]{lang="EN-US"}**]{#struct_0_18308_19795_x1770583888}[命令用来取消指定的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[undo source**]命令用来取消指定的源IP地址。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1330795521}
+【命令】
 
-[**[source ]{lang="EN-US"}**[{ **ip** \| **ipv6** } { *ip-address* *\|* **interface** *interface-type interface-number* }]{lang="EN-US"}]{#struct_0_18308_19795_x1957126403}
+**[source **[{ **ip** \| **ipv6** } { *ip-address* *\|* **interface** *interface-type interface-number* }]]
 
-[**[undo source]{lang="EN-US"}**]{#struct_0_18308_19795_x698679499}
+**[undo source**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_446631164}
+【缺省情况】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x1294617791}[操作产生的协议报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为系统根据路由表项查找到的出接口的地址。]{style="font-family:宋体"}
+PKI操作产生的协议报文的源IP地址为系统根据路由表项查找到的出接口的地址。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_1132264354}
+【视图】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_925516532}[域视图]{style="font-family:宋体"}
+PKI域视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1352598543}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x907390234}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_964817156}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_x116992417}
+【参数】
 
-[**[ip ]{lang="SV"}**]{#struct_0_18308_19795_930605517}*[ip-address]{lang="SV"}*[：]{lang="EN-US" style="font-family:宋体"}[指定源]{lang="EN-US" style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址。]{lang="EN-US" style="font-family:宋体"}
+**[ip **]*ip-address*：指定源IPv4地址。
 
-[**[ipv6 ]{lang="SV"}**]{#struct_0_18308_19795_x1288075138}*[ip-address]{lang="SV"}*[：]{lang="EN-US" style="font-family:宋体"}[指定源]{lang="EN-US" style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址。]{lang="EN-US" style="font-family:宋体"}
+**[ipv6 **]*ip-address*：指定源IPv6地址。
 
-[**[interface ]{lang="SV"}**]{#struct_0_18308_19795_1643344233}*[interface-type interface-number]{lang="SV"}*[：指定]{lang="EN-US" style="font-family:宋体"}[该接口的]{lang="EN-US" style="font-family:宋体"}[主]{lang="EN-US" style="font-family:宋体"}[IPv4]{lang="SV"}[地址或接口上最小的]{lang="EN-US" style="font-family:宋体"}[IPv6]{lang="SV"}[地址为源]{lang="EN-US" style="font-family:宋体"}[IP]{lang="SV"}[地址。]{lang="EN-US" style="font-family:宋体"}*[interface-type interface-number]{lang="SV"}*[表示]{lang="EN-US" style="font-family:宋体"}[接口类型和接口编号。]{lang="EN-US" style="font-family:宋体"}
+**[interface **]*interface-type interface-number*：指定该接口的主IPv4地址或接口上最小的IPv6地址为源IP地址。*interface-type interface-number*表示接口类型和接口编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_1131805602}
+【使用指导】
 
-[[如果希望]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x91566836}[操作产生的协议报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址是一个特定的地址，则需要配置此命令，例如]{style="font-family:宋体"}[CA]{lang="EN-US"}[服务器上的策略要求仅接受来自指定地址或网段的证书申请。如果该]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址是动态获取的，则可以指定一个接口，使用该接口上的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址作为源地址。]{style="font-family:宋体"}
+如果希望PKI操作产生的协议报文的源IP地址是一个特定的地址，则需要配置此命令，例如CA服务器上的策略要求仅接受来自指定地址或网段的证书申请。如果该IP地址是动态获取的，则可以指定一个接口，使用该接口上的IP地址作为源地址。
 
-[[此处指定的源]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_18308_19795_762476473}[地址，必须与]{style="font-family:宋体"}[CA]{lang="EN-US"}[服务器之间路由可达。]{style="font-family:宋体"}
+此处指定的源IP地址，必须与CA服务器之间路由可达。
 
-[[一个]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x315209943}[域中只能存在一个源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，后配置的生效。]{style="font-family:宋体"}
+一个PKI域中只能存在一个源IP地址，后配置的生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x219938252}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_x752781353}[指定]{style="font-family:宋体"}[PKI]{lang="EN-US"}[操作产生的协议报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[111.1.1.8]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 指定PKI操作产生的协议报文的源IP地址为111.1.1.8。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x166756845}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain aaa]{lang="EN-US"}
+Sysname pki domain aaa
 
-[\[Sysname-pki-domain-aaa\] source ip 111.1.1.8]{lang="EN-US"}
+Sysname-pki-domain-aaa source ip 111.1.1.8
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1144839429}[指定]{style="font-family:宋体"}[PKI]{lang="EN-US"}[操作产生的协议报文的源]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1::8]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 指定PKI操作产生的协议报文的源IPv6地址为1::8。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_1131871138}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain 1]{lang="EN-US"}
+Sysname pki domain 1
 
-[\[Sysname-pki-domain-1\] source ipv6 1::8]{lang="EN-US"}
+Sysname-pki-domain-1 source ipv6 1::8
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_267689849}[指定]{style="font-family:宋体"}[PKI]{lang="EN-US"}[操作产生的协议报文的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+\# 指定PKI操作产生的协议报文的源IP地址为接口GigabitEthernet1/0/1的IP地址。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_676823612}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain aaa]{lang="EN-US"}
+Sysname pki domain aaa
 
-[\[Sysname-pki-domain-aaa\] source ip interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname-pki-domain-aaa source ip interface gigabitethernet 1/0/1
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_893448616}[指定]{style="font-family:宋体"}[PKI]{lang="EN-US"}[操作产生的协议报文的源]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址为接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+\# 指定PKI操作产生的协议报文的源IPv6地址为接口GigabitEthernet1/0/1的IPv6地址。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x1801239292}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain 1]{lang="EN-US"}
+Sysname pki domain 1
 
-[\[Sysname-pki-domain-1\] source ipv6 interface gigabitethernet 1/0/1]{lang="EN-US"}
-:::
-
-::: {#-1970034355 .myid}
-[]{#_Toc404793098}[]{#struct_0_18308_19795_1678956337}[]{#_Toc279490541}[]{#_Toc279082870}[]{#_Toc265512482}[]{#_Toc61836619}
+Sysname-pki-domain-1 source ipv6 interface gigabitethernet 1/0/1
 
 **PKI \-- PKI配置命令 \-- state**
 
 ------------------------------------------------------------------------
 
-[**[state]{lang="EN-US"}**]{#struct_0_18308_19795_2041311106}[命令用来配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体所属的州或省的名称。]{style="font-family:宋体"}
+**[state**]命令用来配置PKI实体所属的州或省的名称。
 
-[**[undo state]{lang="EN-US"}**]{#struct_0_18308_19795_61975373}[命令用来删除配置的]{style="font-family:宋体"}[PKI]{lang="EN-US"}[所属的州或省的名称。]{style="font-family:宋体"}
+**[undo state**]命令用来删除配置的PKI所属的州或省的名称。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_1131936674}
+【命令】
 
-[**[state ]{lang="EN-US"}***[state-name]{lang="EN-US"}*]{#struct_0_18308_19795_x496489791}
+**[state ***state-name*]
 
-[**[undo state]{lang="EN-US"}**]{#struct_0_18308_19795_x87487303}
+**[undo state**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_x631212129}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}]{#struct_0_18308_19795_x345322716}[实体所属的州或省的名称。]{style="font-family:宋体"}
+未配置PKI实体所属的州或省的名称。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_1792747448}
+【视图】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_603639010}[实体视图]{style="font-family:宋体"}
+PKI实体视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_x695077133}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_310483422}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_1132002210}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_2079325776}
+【参数】
 
-[*[state-name]{lang="EN-US"}*]{#struct_0_18308_19795_x1031240271}[：]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体所属的州或省的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写，不能包含逗号。]{style="font-family:宋体"}
+*[state-name*]：PKI实体所属的州或省的名称，为1～63个字符的字符串，区分大小写，不能包含逗号。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_973949279}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_477436781}[配置]{style="font-family:宋体"}[PKI]{lang="EN-US"}[实体]{style="font-family:宋体"}[en]{lang="EN-US"}[所在省为]{style="font-family:宋体"}[countryA]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置PKI实体en所在省为countryA。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_x976853268}
+\<Sysname\> system-view
 
-[\[Sysname\] pki entity en]{lang="EN-US"}
+Sysname pki entity en
 
-[\[Sysname-pki-entity-en\] state countryA]{lang="EN-US"}
-:::
-
-::: {#842377611 .myid}
-[]{#_Toc404793099}[]{#struct_0_18308_19795_x188254308}[]{#_Toc298870255}[]{#_Toc298924404}
+Sysname-pki-entity-en state countryA
 
 **PKI \-- PKI配置命令 \-- usage**
 
 ------------------------------------------------------------------------
 
-[**[usage]{lang="EN-US"}**]{#struct_0_18308_19795_1132592034}[命令用来指定证书的扩展用途。]{style="font-family:宋体"}
+**[usage**]命令用来指定证书的扩展用途。
 
-[**[undo usage]{lang="EN-US"}**]{#struct_0_18308_19795_1673592237}[命令用来删除指定证书的扩展用途。]{style="font-family:宋体"}
+**[undo usage**]命令用来删除指定证书的扩展用途。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_18308_19795_1298013594}
+【命令】
 
-[**[usage ]{lang="EN-US"}**[{ **ike** \| **ssl-client** \| **ssl-server** } **\***]{lang="EN-US"}]{#struct_0_18308_19795_x2043020589}
+**[usage **[{ **ike** \| **ssl-client** \| **ssl-server** } **\***]]
 
-[**[undo usage ]{lang="EN-US"}**[\[ **ike** \| **ssl-client** \| **ssl-server** \] **\***]{lang="EN-US"}]{#struct_0_18308_19795_x1911177602}
+**[undo usage **[[ **ike** \| **ssl-client** \| **ssl-server** ] **\***]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1291248302}
+【缺省情况】
 
-[[未指定证书的扩展用途，表示可用于所有用途。]{style="font-family:宋体"}]{#struct_0_18308_19795_626959267}
+未指定证书的扩展用途，表示可用于所有用途。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_18308_19795_1412439729}
+【视图】
 
-[[PKI]{lang="EN-US"}]{#struct_0_18308_19795_318715104}[域视图]{style="font-family:宋体"}
+PKI域视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_18308_19795_1132657570}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_18308_19795_x1798523135}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_18308_19795_891520504}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_18308_19795_1963621565}
+【参数】
 
-[**[ike]{lang="FR"}**]{#struct_0_18308_19795_1104070687}[：]{style="font-family:宋体"}[指定证书扩展用途为]{style="font-family:宋体"}[IKE]{lang="FR"}[，即]{style="font-family:宋体"}[IKE]{lang="FR"}[对等体使用的证书]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[ike**]：指定证书扩展用途为IKE，即IKE对等体使用的证书。
 
-[**[ssl-client]{lang="FR"}**]{#struct_0_18308_19795_151528418}[：]{lang="EN-US" style="font-family:宋体"}[指定证书扩展用途为]{lang="EN-US" style="font-family:
-宋体"}[SSL]{lang="FR"}[客户端，即]{lang="EN-US" style="font-family:
-宋体"}[SSL]{lang="FR"}[客户端使用]{lang="EN-US" style="font-family:
-宋体"}[的]{style="font-family:宋体"}[证书]{lang="EN-US" style="font-family:宋体"}[。]{lang="EN-US" style="font-family:宋体"}
+**[ssl-client**]：指定证书扩展用途为SSL客户端，即SSL客户端使用的证书。
 
-[**[ssl-server]{lang="FR"}**]{#struct_0_18308_19795_1549326282}**[：]{lang="EN-US" style="font-family:宋体"}**[指定证书扩展用途为]{lang="EN-US" style="font-family:宋体"}[SSL]{lang="FR"}[服务器端，即]{lang="EN-US" style="font-family:宋体"}[SSL]{lang="FR"}[服务器端使用]{lang="EN-US" style="font-family:宋体"}[的]{style="font-family:宋体"}[证书。]{lang="EN-US" style="font-family:宋体"}
+**[ssl-server**]**：**指定证书扩展用途为SSL服务器端，即SSL服务器端使用的证书。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_18308_19795_1773439054}
+【使用指导】
 
-[[若不指定任何参数，则]{style="font-family:宋体"}]{#struct_0_18308_19795_1524767500}**[undo usage]{lang="FR"}**[命令表示删除所有指定的证书扩展用途，证书的用途由证书的使用者决定，]{style="font-family:宋体"}[PKI]{lang="FR"}[不做任何限定。]{style="font-family:宋体"}
+若不指定任何参数，则**undo usage**命令表示删除所有指定的证书扩展用途，证书的用途由证书的使用者决定，PKI不做任何限定。
 
-[[证书中携带的]{style="font-family:宋体"}]{#struct_0_18308_19795_1132067747}[扩展用途与]{style="font-family:宋体"}[CA]{lang="EN-US"}[服务器的策略相关，申请到的证书中的扩展用途可能与此处指定的不完全一致，最终请以]{style="font-family:宋体"}[CA]{lang="EN-US"}[服务器的实际情况为准。]{style="font-family:宋体"}
+证书中携带的扩展用途与CA服务器的策略相关，申请到的证书中的扩展用途可能与此处指定的不完全一致，最终请以CA服务器的实际情况为准。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_18308_19795_x1405044914}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_18308_19795_1235077521}[指定证书扩展用途为]{style="font-family:宋体"}[IKE]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 指定证书扩展用途为IKE。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_18308_19795_476034892}
+\<Sysname\> system-view
 
-[\[Sysname\] pki domain aaa]{lang="EN-US"}
+Sysname pki domain aaa
 
-[\[Sysname-pki-domain-aaa\] usage ike]{lang="EN-US"}
-:::
+Sysname-pki-domain-aaa usage ike

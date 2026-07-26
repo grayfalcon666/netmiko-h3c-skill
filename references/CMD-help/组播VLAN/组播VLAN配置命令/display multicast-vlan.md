@@ -1,769 +1,674 @@
-::: {#294354185 .myid}
-[]{#_Toc130111253}[]{#_Toc404789385}[]{#struct_0_11215_x1506_x241123744}[]{#_Toc300300915}[]{#_Toc135123814}[]{#_Toc130111252}[]{#_Toc138836430}[]{#_Toc138836431}[]{#_Toc138836432}[]{#_Toc138836433}[]{#_Toc138836434}[]{#_Toc138836435}[]{#_Toc138836436}[]{#_Toc138836437}[]{#_Toc138836438}[]{#_Toc138836439}[]{#_Toc138836440}[]{#_Toc138836441}[]{#_Toc138836442}[]{#_Toc138836443}[]{#_Toc138836446}[]{#_Toc138836451}[]{#_Toc138836452}[]{#_Toc138836463}
 
 **组播VLAN \-- 组播VLAN配置命令 \-- display multicast-vlan**
 
 ------------------------------------------------------------------------
 
-[**[display multicast-vlan]{lang="EN-US"}**]{#struct_0_11215_x1506_x1619157972}[命令用来显示组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[display multicast-vlan**]命令用来显示组播VLAN的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x181375072}
+【命令】
 
-[**[display multicast-vlan]{lang="EN-US"}**[ \[ *vlan-id* \]]{lang="EN-US"}]{#struct_0_11215_x1506_x963277929}
+**[display multicast-vlan** [ *vlan-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_11215_x1506_1654949637}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_11215_x1506_x1680124889}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x2102869940}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_11215_x1506_404993657}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_11215_x1506_x1226739227}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_11215_x1506_2088520203}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_11215_x1506_x1271370988}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_11215_x1506_1513678071}
+【参数】
 
-[*[vlan-id]{lang="EN-US"}*]{#struct_0_11215_x1506_1677830581}[：显示指定组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的信息，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果未指定本参数，将显示所有组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+*[vlan-id*]：显示指定组播VLAN的信息，取值范围为1～4094。如果未指定本参数，将显示所有组播VLAN的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x2030291962}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_11215_x1506_1655146245}[显示所有组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+\# 显示所有组播VLAN的信息。
 
-[[\<Sysname\> display multicast-vlan]{lang="EN-US"}]{#struct_0_11215_x1506_x2011993773}
+\<Sysname\> display multicast-vlan
 
-[Total 2 multicast VLANs.]{lang="EN-US"}
+Total 2 multicast VLANs.
 
-[ ]{lang="EN-US"}
+Multicast VLAN 100:
 
-[Multicast VLAN 100:]{lang="EN-US"}
+  Sub-VLAN list(3 in total):
 
-[  Sub-VLAN list(3 in total):]{lang="EN-US"}
+    2-3, 6
 
-[    2-3, 6]{lang="EN-US"}
+  Port list(3 in total):
 
-[  Port list(3 in total):]{lang="EN-US"}
+    GE1/0/1
 
-[    GE1/0/1]{lang="EN-US"}
+    GE1/0/2
 
-[    GE1/0/2]{lang="EN-US"}
+    GE1/0/3
 
-[    GE1/0/3]{lang="EN-US"}
+Multicast VLAN 200:
 
-[ ]{lang="EN-US"}
+  Sub-VLAN list(0 in total):
 
-[Multicast VLAN 200:]{lang="EN-US"}
+  Port list(0 in total):
 
-[  Sub-VLAN list(0 in total):]{lang="EN-US"}
+表1-1 display multicast-vlan命令显示信息描述表
 
-[  Port list(0 in total):]{lang="EN-US"}
+字段
 
-[[表1-1 ]{lang="EN-US"}[display multicast-vlan]{lang="EN-US"}]{#struct_0_11215_x1506_x1514039293}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x1478862502}[[字段]{style="font-family:黑体"}]{#struct_0_11215_x1506_x1064864358}
-:::
+Total 2 multicast VLANs
 
-[[描述]{style="font-family:黑体"}]{#struct_0_11215_x1506_1897233997}
+组播VLAN的总数
 
-[[Total 2 multicast VLANs]{lang="EN-US"}]{#struct_0_11215_x1506_1655080709}
+Multicast VLAN 100
 
-[[组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_11215_x1506_x130603760}[的总数]{style="font-family:宋体"}
+组播VLAN
 
-[[Multicast VLAN 100]{lang="EN-US"}]{#struct_0_11215_x1506_x108046478}
+Sub-VLAN list(3 in total)
 
-[[组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_11215_x1506_1036179889}
+组播VLAN的子VLAN列表及总数
 
-[[Sub-VLAN list(3 in total)]{lang="EN-US"}]{#struct_0_11215_x1506_1658078513}
+Port list(3 in total)
 
-[[组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_11215_x1506_x1186543127}[的子]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表及总数]{style="font-family:宋体"}
-
-[[Port list(3 in total)]{lang="EN-US"}]{#struct_0_11215_x1506_x2146556628}
-
-[[组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_11215_x1506_1655277317}[的端口列表及总数]{style="font-family:宋体"}
-
-[ ]{lang="EN-US" style="layout-grid-mode:line"}
-
-::: {#-1860152310 .myid}
-[]{#_Toc300300916}[]{#_Toc404789386}[]{#struct_0_11215_x1506_1512437014}[]{#_Toc334792529}[]{#_Toc329178771}
+组播VLAN的端口列表及总数
 
 **组播VLAN \-- 组播VLAN配置命令 \-- display multicast-vlan group**
 
 ------------------------------------------------------------------------
 
-[**[display multicast-vlan group]{lang="EN-US"}**]{#struct_0_11215_x1506_x1037338308}[命令用来显示组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的组播组表项信息。]{style="font-family:宋体"}
+**[display multicast-vlan group**]命令用来显示组播VLAN的组播组表项信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_11215_x1506_89612886}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_11215_x1506_x1740070910}
+集中式设备：
 
-[**[display multicast-vlan]{lang="EN-US"}**[ **group** \[ *source-address* \| *group-address* \| **cpu** *cpu-number* \| **verbose** \| **vlan** *vlan-id* \] \*]{lang="EN-US"}]{#struct_0_11215_x1506_x1267495510}
+**[display multicast-vlan**[ **group** [ *source-address* \| *group-address* \| **cpu** *cpu-number* \| **verbose** \| **vlan** *vlan-id* ] \*]]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_11215_x1506_1837956407}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display multicast-vlan]{lang="EN-US"}**[ **group** \[ *source-address* \| *group-address* \| **slot** *slot-number* \[ **cpu** *cpu-number* \] \| **verbose** \| **vlan** *vlan-id* \] \*]{lang="EN-US"}]{#struct_0_11215_x1506_629680830}
+**[display multicast-vlan**[ **group** [ *source-address* \| *group-address* \| **slot** *slot-number* [ **cpu** *cpu-number* ] \| **verbose** \| **vlan** *vlan-id* ] \*]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_11215_x1506_2039977816}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display multicast-vlan]{lang="EN-US"}**[ **group** \[ *source-address* \| *group-address* \| **chassis** *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \] \| **verbose** \| **vlan** *vlan-id* \] \*]{lang="EN-US"}]{#struct_0_11215_x1506_1655211781}
+**[display multicast-vlan**[ **group** [ *source-address* \| *group-address* \| **chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number* ] \| **verbose** \| **vlan** *vlan-id* ] \*]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_11215_x1506_1457696943}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_11215_x1506_1473866025}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x124194909}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_11215_x1506_x2041500055}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_11215_x1506_x590719223}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_11215_x1506_x656274222}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_11215_x1506_x1363206280}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_11215_x1506_1643063840}
+【参数】
 
-[*[source-address]{lang="EN-US"}*]{#struct_0_11215_x1506_x436809922}[：显示指定组播源的信息。如果未指定本参数，将显示所有组播源的信息。]{style="font-family:宋体"}
+*[source-address*]：显示指定组播源的信息。如果未指定本参数，将显示所有组播源的信息。
 
-[*[group-address]{lang="EN-US"}*]{#struct_0_11215_x1506_1655408389}[：显示指定组播组的信息，取值范围为]{style="font-family:宋体"}[224.0.1.0]{lang="EN-US"}[～]{style="font-family:宋体"}[239.255.255.255]{lang="EN-US"}[。如果未指定本参数，将显示所有组播组的信息。]{style="font-family:宋体"}
+*[group-address*]：显示指定组播组的信息，取值范围为224.0.1.0～239.255.255.255。如果未指定本参数，将显示所有组播组的信息。
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_11215_x1506_1961212885}[：显示指定单板上的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示主控板上的信息。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定单板上的信息，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示主控板上的信息。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_11215_x1506_x687063748}[：显示指定成员设备上的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。如果未指定本参数，将显示主设备上的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备上的信息，*slot-number*表示设备在IRF中的成员编号。如果未指定本参数，将显示主设备上的信息。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_11215_x1506_x1643425956}[：显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[上的信息，]{style="font-family:宋体"}[slot-number]{lang="EN-US"}[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。如果未指定本参数，将显示主设备上的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备/PEX上的信息，slot-number表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果未指定本参数，将显示主设备上的信息。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_11215_x1506_1835730321}[：显示指定成员设备指定单板上的信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示全局所有主控板上的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定成员设备指定单板上的信息，*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示全局所有主控板上的信息。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_11215_x1506_1085457399}[：显示指定单板上的信息，]{style="font-family:宋体"}[chassis-number]{lang="EN-US"}[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。如果未指定本参数，将显示全局所有主控板上的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定单板上的信息，chassis-number表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。如果未指定本参数，将显示全局所有主控板上的信息。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_11215_x1506_1835664785}[：显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上的信息，]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的编号。只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[cpu** *cpu-number*]：显示指定CPU上的信息，*cpu-number*表示CPU的编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_11215_x1506_1260769126}[：显示详细信息。如果未指定本参数，将显示概要信息。]{style="font-family:宋体"}
+**[verbose**]：显示详细信息。如果未指定本参数，将显示概要信息。
 
-[**[vlan]{lang="EN-US"}**[ *vlan-id*]{lang="EN-US"}]{#struct_0_11215_x1506_x1123540176}[：显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果未指定本参数，将显示所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[vlan** *vlan-id*]：显示指定VLAN内的信息。*vlan-id*为VLAN的编号，取值范围为1～4094。如果未指定本参数，将显示所有VLAN内的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_11215_x1506_529838064}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_11215_x1506_x891009072}[显示组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的所有组播组表项的详细信息。]{style="font-family:宋体"}
+\# 显示组播VLAN的所有组播组表项的详细信息。
 
-[[\<Sysname\> display multicast-vlan group verbose]{lang="EN-US"}]{#struct_0_11215_x1506_1655342853}
+\<Sysname\> display multicast-vlan group verbose
 
-[Total 6 entries.]{lang="EN-US"}
+Total 6 entries.
 
-[ ]{lang="EN-US"}
+Multicast VLAN 10: Total 3 entries.
 
-[Multicast VLAN 10: Total 3 entries.]{lang="EN-US"}
+  (2.2.2.2, 225.1.1.2)
 
-[  (2.2.2.2, 225.1.1.2)]{lang="EN-US"}
+    Flags: 0x70000020
 
-[    Flags: 0x70000020]{lang="EN-US"}
+    Sub-VLANs (1 in total):
 
-[    Sub-VLANs (1 in total):]{lang="EN-US"}
+      VLAN 40
 
-[      VLAN 40]{lang="EN-US"}
+  (111.112.113.115, 225.1.1.4)
 
-[  (111.112.113.115, 225.1.1.4)]{lang="EN-US"}
+    Flags: 0x70000030
 
-[    Flags: 0x70000030]{lang="EN-US"}
+    Sub-VLANs (1 in total):
 
-[    Sub-VLANs (1 in total):]{lang="EN-US"}
+      VLAN 40
 
-[      VLAN 40]{lang="EN-US"}
+  (0.0.0.0, 226.1.1.6)
 
-[  (0.0.0.0, 226.1.1.6)]{lang="EN-US"}
+    Flags: 0x60000020
 
-[    Flags: 0x60000020]{lang="EN-US"}
+    Sub-VLANs (1 in total):
 
-[    Sub-VLANs (1 in total):]{lang="EN-US"}
+      VLAN 40
 
-[      VLAN 40]{lang="EN-US"}
+Multicast VLAN 20: Total 3 entries.
 
-[ ]{lang="EN-US"}
+  (2.2.2.2, 225.1.1.2)
 
-[Multicast VLAN 20: Total 3 entries.]{lang="EN-US"}
+    Flags: 0x70000010
 
-[  (2.2.2.2, 225.1.1.2)]{lang="EN-US"}
+    Sub-VLANs (0 in total):
 
-[    Flags: 0x70000010]{lang="EN-US"}
+  (111.112.113.115, 225.1.1.4)
 
-[    Sub-VLANs (0 in total):]{lang="EN-US"}
+    Flags: 0x70000010
 
-[  (111.112.113.115, 225.1.1.4)]{lang="EN-US"}
+    Sub-VLANs (0 in total):
 
-[    Flags: 0x70000010]{lang="EN-US"}
+  (0.0.0.0, 226.1.1.6)
 
-[    Sub-VLANs (0 in total):]{lang="EN-US"}
+    Flags: 0x50000010
 
-[  (0.0.0.0, 226.1.1.6)]{lang="EN-US"}
+    Sub-VLANs (0 in total):
 
-[    Flags: 0x50000010]{lang="EN-US"}
+表1-2 display multicast-vlan group命令显示信息描述表
 
-[    Sub-VLANs (0 in total):]{lang="EN-US"}
+字段
 
-[[表1-2 ]{lang="EN-US"}[display multicast-vlan group]{lang="EN-US"}]{#struct_0_11215_x1506_x1598211072}[命令显示信息描述表]{style="font-family:
-黑体"}
+描述
 
-[]{#table_struct_0_x1476969306}[[字段]{style="font-family:黑体"}]{#struct_0_11215_x1506_1643171097}
-:::
+Total 6 entries
 
-[[描述]{style="font-family:黑体"}]{#struct_0_11215_x1506_x2041726904}
+表项的总数
 
-[[Total 6 entries]{lang="EN-US"}]{#struct_0_11215_x1506_x1781505921}
+Multicast VLAN 10: Total 3 entries
 
-[[表项的总数]{style="font-family:宋体"}]{#struct_0_11215_x1506_1655539461}
+组播VLAN 10的组播组表项总数
 
-[[Multicast VLAN 10: Total 3 entries]{lang="EN-US"}]{#struct_0_11215_x1506_x520399704}
+(0.0.0.0, 226.1.1.6)
 
-[[组播]{style="font-family:宋体"}[VLAN 10]{lang="EN-US"}]{#struct_0_11215_x1506_x1363076471}[的组播组表项总数]{style="font-family:宋体"}
+（S，G）表项，0.0.0.0表示所有组播源
 
-[[(0.0.0.0, 226.1.1.6)]{lang="EN-US"}]{#struct_0_11215_x1506_x948261492}
+Flags
 
-[[（]{style="font-family:宋体"}]{#struct_0_11215_x1506_x1757969090}[S]{lang="FR"}[，]{style="font-family:宋体"}[G]{lang="FR"}[）表项，]{style="font-family:
-  宋体"}[0.0.0.0]{lang="FR"}[表示所有组播源]{style="font-family:宋体"}
+（S，G）表项的状态，通过将不同的比特位置位来表示不同的状态：
 
-[[Flags]{lang="EN-US"}]{#struct_0_11215_x1506_2009988603}
+·0x10：表示表项由组播VLAN创建
 
-[[（]{style="font-family:宋体"}]{#struct_0_11215_x1506_2009923067}[S]{lang="FR"}[，]{style="font-family:宋体"}[G]{lang="FR"}[）表项的状态，通过将不同的比特位置位来表示不同的状态：]{style="font-family:
-  宋体"}
+·0x20：表示表项由子VLAN创建
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[0x10]{lang="FR"}]{#struct_0_11215_x1506_x1092902529}[：表示表项由组播]{style="font-family:宋体"}[VLAN]{lang="FR"}[创建]{style="font-family:宋体"}
+·0x40：表示表项即将被删除
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[0x20]{lang="FR"}]{#struct_0_11215_x1506_354733609}[：表示表项由子]{style="font-family:宋体"}[VLAN]{lang="FR"}[创建]{style="font-family:宋体"}
+·0x10000000：表示表项新创建或在查询周期内收到过IGMP查询报文，且没有收到过IGMPv1报告报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[0x40]{lang="FR"}]{#struct_0_11215_x1506_787578711}[：表示表项即将被删除]{style="font-family:宋体"}
+·0x20000000：表示表项在查询周期内没有收到过IGMPv2/v3报告报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[0x10000000]{lang="FR"}]{#struct_0_11215_x1506_2009857531}[：表示表项新创建或在查询周期内收到过]{style="font-family:
-  宋体"}[IGMP]{lang="FR"}[查询报文，且没有收到过]{style="font-family:
-  宋体"}[IGMPv1]{lang="FR"}[报告报文]{style="font-family:
-  宋体"}
+·0x40000000：表示表项在查询周期内没有收到过IGMPv3 IS_EX(NULL)报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[0x20000000]{lang="FR"}]{#struct_0_11215_x1506_x1877248971}[：表示表项在查询周期内没有收到过]{style="font-family:
-  宋体"}[IGMPv2/v3]{lang="FR"}[报告报文]{style="font-family:宋体"}
+Sub-VLANs (1 in total)
 
-[[·[       ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[0x40000000]{lang="FR"}]{#struct_0_11215_x1506_1232966441}[：表示表项]{lang="EN-US" style="font-family:宋体"}[在]{style="font-family:宋体"}[查询周期内没有收到]{lang="EN-US" style="font-family:宋体"}[过]{style="font-family:
-  宋体"}[IGMPv3 IS_EX(NULL)]{lang="FR"}[报文]{lang="EN-US" style="font-family:宋体"}
+组播VLAN的子VLAN列表及总数
 
-[[Sub-VLANs (1 in total)]{lang="EN-US"}]{#struct_0_11215_x1506_1159279120}
+【相关命令】
 
-[[组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_11215_x1506_1742493070}[的子]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表及总数]{style="font-family:宋体"}
-
-[[ ]{lang="EN-US"}]{#_Toc334792530}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_11215_x1506_1655473925}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset multicast-vlan group]{lang="EN-US"}**]{#struct_0_11215_x1506_1926219453}
-
-::: {#2066906735 .myid}
-[]{#_Toc404789387}[]{#struct_0_11215_x1506_x181842536}
+·**reset multicast-vlan group**
 
 **组播VLAN \-- 组播VLAN配置命令 \-- display multicast-vlan forwarding-table**
 
 ------------------------------------------------------------------------
 
-[**[display multicast-vlan forwarding-table]{lang="EN-US"}**]{#struct_0_11215_x1506_x1692181447}[命令用来显示组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[转发表的信息。]{style="font-family:宋体"}
+**[display multicast-vlan forwarding-table**]命令用来显示组播VLAN转发表的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_11215_x1506_529333970}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_11215_x1506_x816304551}
+集中式设备：
 
-[**[display multicast-vlan forwarding-table]{lang="EN-US"}**[ \[ *group-address* \[ **mask** { *mask-length* \| *mask* } \] \| *source-address* \[ **mask** { *mask-length* \| *mask* } \] \| **cpu** *cpu-number* \| **subvlan** *vlan-id* \| **vlan** *vlan-id* \] \*]{lang="EN-US"}]{#struct_0_11215_x1506_x1103780691}
+**[display multicast-vlan forwarding-table**[ [ *group-address* [ **mask** { *mask-length* \| *mask* } ] \| *source-address* [ **mask** { *mask-length* \| *mask* } ] \| **cpu** *cpu-number* \| **subvlan** *vlan-id* \| **vlan** *vlan-id* ] \*]]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_11215_x1506_1289444166}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display multicast-vlan forwarding-table]{lang="EN-US"}**[ \[ *group-address* \[ **mask** { *mask-length* \| *mask* } \] \| *source-address* \[ **mask** { *mask-length* \| *mask* } \] \| **slot** *slot-number* \[ **cpu** *cpu-number* \] \| **subvlan** *vlan-id* \| **vlan** *vlan-id* \] \*]{lang="EN-US"}]{#struct_0_11215_x1506_x265336488}
+**[display multicast-vlan forwarding-table**[ [ *group-address* [ **mask** { *mask-length* \| *mask* } ] \| *source-address* [ **mask** { *mask-length* \| *mask* } ] \| **slot** *slot-number*  **cpu** *cpu-number*  \| **subvlan** *vlan-id* \| **vlan** *vlan-id* ] \*]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_11215_x1506_1655015174}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display multicast-vlan forwarding-table]{lang="EN-US"}**[ \[ *group-address* \[ **mask** { *mask-length* \| *mask* } \] \| *source-address* \[ **mask** { *mask-length* \| *mask* } \] \| **chassis** *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \] \| **subvlan** *vlan-id* \| **vlan** *vlan-id* \] \*]{lang="EN-US"}]{#struct_0_11215_x1506_x2015240688}
+**[display multicast-vlan forwarding-table**[ [ *group-address* [ **mask** { *mask-length* \| *mask* } ] \| *source-address* [ **mask** { *mask-length* \| *mask* } ] \| **chassis** *chassis-number* **slot** *slot-number*  **cpu** *cpu-number*  \| **subvlan** *vlan-id* \| **vlan** *vlan-id* ] \*]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x1128588918}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_11215_x1506_x482590023}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_11215_x1506_1971930313}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_11215_x1506_x968936479}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_11215_x1506_x1269768890}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_11215_x1506_x590212517}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_11215_x1506_x1072874419}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x1244645434}
+【参数】
 
-[*[group-address]{lang="EN-US"}*]{#struct_0_11215_x1506_1654949638}[：显示指定组播组的信息，取值范围为]{style="font-family:宋体"}[224.0.0.0]{lang="EN-US"}[～]{style="font-family:宋体"}[239.255.255.255]{lang="EN-US"}[。如果未指定本参数，将显示所有组播组的信息。]{style="font-family:宋体"}
+*[group-address*]：显示指定组播组的信息，取值范围为224.0.0.0～239.255.255.255。如果未指定本参数，将显示所有组播组的信息。
 
-[**[mask]{lang="EN-US"}**[ { *mask-length* \| *mask* }]{lang="EN-US"}]{#struct_0_11215_x1506_x1680976857}[：指定组播组的掩码长度或掩码。]{style="font-family:宋体"}*[mask-length]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[4]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[32]{lang="EN-US"}[；]{style="font-family:宋体"}*[mask]{lang="EN-US"}*[的缺省值为]{style="font-family:宋体"}[255.255.255.255]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[mask**[ { *mask-length* \| *mask* }]]：指定组播组的掩码长度或掩码。*mask-length*的取值范围为4～32，缺省值为32；*mask*的缺省值为255.255.255.255。
 
-[*[source-address]{lang="EN-US"}*]{#struct_0_11215_x1506_1549267671}[：显示指定组播源的信息。如果未指定本参数，将显示所有组播源的信息。]{style="font-family:宋体"}
+*[source-address*]：显示指定组播源的信息。如果未指定本参数，将显示所有组播源的信息。
 
-[**[mask]{lang="EN-US"}**[ { *mask-length* \| *mask* }]{lang="EN-US"}]{#struct_0_11215_x1506_x548733677}[：指定组播源的掩码长度或掩码。]{style="font-family:宋体"}*[mask-length]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[32]{lang="EN-US"}[；]{style="font-family:宋体"}*[mask]{lang="EN-US"}*[的缺省值为]{style="font-family:宋体"}[255.255.255.255]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[mask**[ { *mask-length* \| *mask* }]]：指定组播源的掩码长度或掩码。*mask-length*的取值范围为0～32，缺省值为32；*mask*的缺省值为255.255.255.255。
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_11215_x1506_1256472619}[：显示指定单板上的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示主控板上的信息。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定单板上的信息，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示主控板上的信息。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_11215_x1506_831863638}[：显示指定成员设备上的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。如果未指定本参数，将显示主设备上的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备上的信息，*slot-number*表示设备在IRF中的成员编号。如果未指定本参数，将显示主设备上的信息。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_11215_x1506_x883911069}[：显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[上的信息，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。如果未指定本参数，将显示主设备上的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备/PEX上的信息，*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果未指定本参数，将显示主设备上的信息。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_11215_x1506_1834878353}[：显示指定成员设备指定单板上的信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果未指定本参数，将显示全局所有主控板上的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定成员设备指定单板上的信息，*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果未指定本参数，将显示全局所有主控板上的信息。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_11215_x1506_1996863972}[：显示指定单板上的信息，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。如果未指定本参数，将显示全局所有主控板上的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定单板上的信息，*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。如果未指定本参数，将显示全局所有主控板上的信息。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_11215_x1506_x479807250}[：显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上的信息，]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的编号。只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[cpu** *cpu-number*]：显示指定CPU上的信息，*cpu-number*表示CPU的编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[subvlan]{lang="EN-US"}***[ vlan-id]{lang="EN-US"}*]{#struct_0_11215_x1506_621938602}[：显示指定子]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的信息。如果未指定本参数，将显示所有子]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[subvlan*** vlan-id*]：显示指定子VLAN的信息。如果未指定本参数，将显示所有子VLAN的信息。
 
-[**[vlan]{lang="EN-US"}**[ *vlan-id*]{lang="EN-US"}]{#struct_0_11215_x1506_x351416267}[：显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果未指定本参数，将显示所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[vlan** *vlan-id*]：显示指定VLAN内的信息。*vlan-id*为VLAN的编号，取值范围为1～4094。如果未指定本参数，将显示所有VLAN内的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_11215_x1506_1655146246}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_11215_x1506_x2011797165}[显示组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[转发表的全部信息。]{style="font-family:宋体"}
+\# 显示组播VLAN转发表的全部信息。
 
-[[\<Sysname\> display multicast-vlan forwarding-table]{lang="EN-US"}]{#struct_0_11215_x1506_x2128105773}
+\<Sysname\> display multicast-vlan forwarding-table
 
-[Multicast VLAN 100 Forwarding Table]{lang="EN-US"}
+Multicast VLAN 100 Forwarding Table
 
-[Total 1 entries, 1 matched]{lang="EN-US"}
+Total 1 entries, 1 matched
 
-[ ]{lang="EN-US"}
+00001. (1.1.1.1, 225.0.0.1)
 
-[00001. (1.1.1.1, 225.0.0.1)]{lang="EN-US"}
+     Flags: 0x10000
 
-[     Flags: 0x10000]{lang="EN-US"}
+     Multicast VLAN: 100
 
-[     Multicast VLAN: 100]{lang="EN-US"}
+     List of sub-VLANs (3 in total):
 
-[     List of sub-VLANs (3 in total):]{lang="EN-US"}
+       1: VLAN 10
 
-[       1: VLAN 10]{lang="EN-US"}
+       2: VLAN 20
 
-[       2: VLAN 20]{lang="EN-US"}
+       3: VLAN 30
 
-[       3: VLAN 30]{lang="EN-US"}
+表1-3 display multicast-vlan forwarding-table命令显示信息描述表
 
-[[表1-3 ]{lang="EN-US"}[display multicast-vlan forwarding-table]{lang="EN-US"}]{#struct_0_11215_x1506_1979855636}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1483640179}[[字段]{style="font-family:黑体"}]{#struct_0_11215_x1506_1592365521}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_11215_x1506_x25971042}
+Multicast VLAN 100 Forwarding Table
 
-[[Multicast VLAN 100 Forwarding Table]{lang="EN-US"}]{#struct_0_11215_x1506_1655080710}
+组播VLAN 100的转发表
 
-[[组播]{style="font-family:宋体"}[VLAN 100]{lang="EN-US"}]{#struct_0_11215_x1506_x130013935}[的转发表]{style="font-family:宋体"}
+Total 1 entries, 1 matched
 
-[[Total 1 entries, 1 matched]{lang="EN-US"}]{#struct_0_11215_x1506_x496544181}
+表项的总数和匹配数
 
-[[表项的总数和匹配数]{style="font-family:宋体"}]{#struct_0_11215_x1506_x86509446}
+00001
 
-[[00001]{lang="EN-US"}]{#struct_0_11215_x1506_x759500086}
+表示（S，G）项的序号
 
-[[表示（]{style="font-family:宋体"}[S]{lang="EN-US"}]{#struct_0_11215_x1506_1741156977}[，]{style="font-family:宋体"}[G]{lang="EN-US"}[）项的序号]{style="font-family:宋体"}
+ (1.1.1.1, 255.0.0.1)
 
-[[ (1.1.1.1, 255.0.0.1)]{lang="EN-US"}]{#struct_0_11215_x1506_256083993}
+（S，G）表项，0.0.0.0表示所有组播源
 
-[[（]{style="font-family:宋体"}]{#struct_0_11215_x1506_1655277318}[S]{lang="FR"}[，]{style="font-family:宋体"}[G]{lang="FR"}[）表项，]{style="font-family:
-  宋体"}[0.0.0.0]{lang="FR"}[表示所有组播源]{style="font-family:宋体"}
+Flags
 
-[[Flags]{lang="EN-US"}]{#struct_0_11215_x1506_1511978262}
+（S，G）项的当前状态，使用不同的比特位来表示（S，G）项所处的不同状态，主要取值如下：
 
-[[（]{style="font-family:宋体"}[S]{lang="EN-US"}]{#struct_0_11215_x1506_1792321755}[，]{style="font-family:宋体"}[G]{lang="EN-US"}[）项的当前状态，使用不同的比特位来表示（]{style="font-family:宋体"}[S]{lang="EN-US"}[，]{style="font-family:宋体"}[G]{lang="EN-US"}[）项所处的不同状态]{style="font-family:宋体"}[，主要取值如下]{style="font-family:宋体"}[：]{style="font-family:宋体"}
+·0x1：表示表项处于Inactive状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x1]{lang="EN-US"}]{#struct_0_11215_x1506_2009595387}[：表示表项处于]{lang="EN-US" style="font-family:宋体"}[Inactive]{lang="EN-US"}[状态]{lang="EN-US" style="font-family:宋体"}
+·0x4：表示表项下刷失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x4]{lang="EN-US"}]{#struct_0_11215_x1506_423779979}[：表示表项下刷失败]{lang="EN-US" style="font-family:宋体"}
+·0x8：表示有子VLAN下刷失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x8]{lang="EN-US"}]{#struct_0_11215_x1506_2009529851}[：表示有子]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[下刷失败]{style="font-family:宋体"}
+·0x200：表示表项处于平滑状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x200]{lang="EN-US"}]{#struct_0_11215_x1506_1955082498}[：表示表项处于平滑状态]{style="font-family:宋体"}
+·0x10000：表示组播VLAN表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x10000]{lang="EN-US"}]{#struct_0_11215_x1506_1417755602}[：表示组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[表项]{style="font-family:宋体"}
+Multicast VLAN
 
-[[Multicast VLAN]{lang="EN-US"}]{#struct_0_11215_x1506_x2129009609}
+组播VLAN
 
-[[组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_11215_x1506_x258686720}
+List of sub-VLANs (3 in total)
 
-[[List of sub-VLANs (3 in total)]{lang="EN-US"}]{#struct_0_11215_x1506_x861522137}
-
-[[组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_11215_x1506_1655211782}[的子]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表及总数]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#589548107 .myid}
-[]{#_Toc404789388}[]{#struct_0_11215_x1506_1457500335}
+组播VLAN的子VLAN列表及总数
 
 **组播VLAN \-- 组播VLAN配置命令 \-- multicast-vlan**
 
 ------------------------------------------------------------------------
 
-[**[multicast-vlan]{lang="EN-US"}**]{#struct_0_11215_x1506_x1225579411}[命令用来配置指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[为组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，并进入组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+**[multicast-vlan**]命令用来配置指定VLAN为组播VLAN，并进入组播VLAN视图。
 
-[**[undo multicast-vlan]{lang="EN-US"}**]{#struct_0_11215_x1506_1486110862}[命令用来取消指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[为组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo multicast-vlan**]命令用来取消指定VLAN为组播VLAN。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_11215_x1506_995391317}
+【命令】
 
-[**[multicast-vlan ]{lang="EN-US"}***[vlan-id]{lang="EN-US"}*]{#struct_0_11215_x1506_x403053004}
+**[multicast-vlan ***vlan-id*]
 
-[**[undo multicast-vlan]{lang="EN-US"}**[ { **all** \| *vlan-id* }]{lang="EN-US"}]{#struct_0_11215_x1506_1793293283}
+**[undo multicast-vlan**[ { **all** \| *vlan-id* }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x536741099}
+【缺省情况】
 
-[[VLAN]{lang="EN-US"}]{#struct_0_11215_x1506_x1936429535}[不是组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+VLAN不是组播VLAN。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_11215_x1506_1655408390}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_11215_x1506_x514864787}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_11215_x1506_1563338132}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_11215_x1506_762031891}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_11215_x1506_x91439409}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x371350351}
+【参数】
 
-[*[vlan-id]{lang="EN-US"}*]{#struct_0_11215_x1506_x1611070941}[：指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[vlan-id*]：指定VLAN的编号，取值范围为1～4094。
 
-[**[all]{lang="EN-US"}**]{#struct_0_11215_x1506_707004931}[：删除所有组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[all**]：删除所有组播VLAN。
 
-[[【配置指导】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x1229061619}
+【配置指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[要配置为组播]{style="font-family:宋体"}]{#struct_0_11215_x1506_1209847279}[VLAN]{lang="EN-US"}[的指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[必须存在。]{style="font-family:宋体"}
+·要配置为组播VLAN的指定VLAN必须存在。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在已使能了]{style="font-family:宋体"}]{#struct_0_11215_x1506_1655342854}[IP]{lang="EN-US"}[组播路由的设备上不建议再配置组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+·在已使能了IP组播路由的设备上不建议再配置组播VLAN。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[组播]{style="font-family:宋体"}]{#struct_0_11215_x1506_x1598014464}[VLAN]{lang="EN-US"}[的总数不得超过系统限制，该限制值与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+·组播VLAN的总数不得超过系统限制，该限制值与设备的型号有关，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于基于子]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_11215_x1506_x1091455413}[模式的组播]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[，需在组播]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[及其所有子]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内使能]{lang="EN-US" style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[；对于基于端口模式的组播]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[，需在组播]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[和所有用户]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[内使能]{lang="EN-US" style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·对于基于子VLAN模式的组播VLAN，需在组播VLAN及其所有子VLAN内使能IGMP Snooping；对于基于端口模式的组播VLAN，需在组播VLAN和所有用户VLAN内使能IGMP Snooping。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x1200261096}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_11215_x1506_x2118274247}[在]{style="font-family:宋体"}[VLAN 100]{lang="EN-US"}[内使能]{style="font-family:宋体"}[IGMP Snooping]{lang="EN-US"}[，将其配置为组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，并进入组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+\# 在VLAN 100内使能IGMP Snooping，将其配置为组播VLAN，并进入组播VLAN视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_11215_x1506_1196074546}
+\<Sysname\> system-view
 
-[\[Sysname\] igmp-snooping]{lang="EN-US"}
+Sysname igmp-snooping
 
-[\[Sysname-igmp-snooping\] quit]{lang="EN-US"}
+Sysname-igmp-snooping quit
 
-[\[Sysname\] vlan 100]{lang="EN-US"}
+Sysname vlan 100
 
-[\[Sysname-vlan100\] igmp-snooping enable]{lang="EN-US"}
+Sysname-vlan100 igmp-snooping enable
 
-[\[Sysname-vlan100\] quit]{lang="EN-US"}
+Sysname-vlan100 quit
 
-[\[Sysname\] multicast-vlan 100]{lang="EN-US"}
+Sysname multicast-vlan 100
 
-[\[Sysname-mvlan-100\]]{lang="EN-US"}
+Sysname-mvlan-100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_11215_x1506_734210845}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[igmp-snooping enable]{lang="EN-US"}**]{#struct_0_11215_x1506_1655539462}[（]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[组播命令参考]{lang="EN-US" style="font-family:宋体"}[/IGMP Snooping]{lang="EN-US"}[）]{lang="EN-US" style="font-family:宋体"}
+·**igmp-snooping enable**（IP组播命令参考/IGMP Snooping）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[multicast routing]{lang="EN-US"}**]{#struct_0_11215_x1506_x520334168}[（]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[组播命令参考]{lang="EN-US" style="font-family:宋体"}[/]{lang="EN-US"}[组播路由与转发）]{lang="EN-US" style="font-family:宋体"}
-:::
-
-::::: {#-1625659032 .myid}
-[]{#_Toc130111254}[]{#_Toc404789389}[]{#struct_0_11215_x1506_x1311494492}[]{#_Toc300300917}[]{#_Toc205091251}
+·**multicast routing**（IP组播命令参考/组播路由与转发）
 
 **组播VLAN \-- 组播VLAN配置命令 \-- multicast-vlan entry-limit**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](组播VLAN命令.files/image001.png){#图片 2 width="62" height="25"}]{lang="EN-US"}]{#struct_0_11215_x1506_302131908}
-:::
+![说明](组播VLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_11215_x1506_x1254603656}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[multicast-vlan entry-limit**]命令用来配置组播VLAN转发表项的最大数量。
 
-[**[multicast-vlan entry-limit]{lang="EN-US"}**]{#struct_0_11215_x1506_1272700300}[命令用来配置组播]{style="font-family:
-宋体"}[VLAN]{lang="EN-US"}[转发表项的最大数量。]{style="font-family:宋体"}
+**[undo multicast-vlan entry-limit**]命令用来恢复缺省情况。
 
-[**[undo multicast-vlan entry-limit]{lang="EN-US"}**]{#struct_0_11215_x1506_x1537395546}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_11215_x1506_2117487513}
+**[multicast-vlan entry-limit ***limit*]
 
-[**[multicast-vlan entry-limit ]{lang="EN-US"}***[limit]{lang="EN-US"}*]{#struct_0_11215_x1506_1744268740}
+**[undo multicast-vlan entry-limit**]
 
-[**[undo multicast-vlan entry-limit]{lang="EN-US"}**]{#struct_0_11215_x1506_1655473926}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_11215_x1506_1926284989}
+本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。
 
-[[本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_11215_x1506_x1238212178}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_11215_x1506_1865955247}
+系统视图
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_11215_x1506_1562614192}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x1256839682}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_11215_x1506_373979043}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_11215_x1506_1270942908}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_11215_x1506_1732779286}
+*[limit*]：组播VLAN转发表项的最大数量，取值范围与设备的型号有关，请以设备的实际情况为准。
 
-[*[limit]{lang="EN-US"}*]{#struct_0_11215_x1506_x1901705986}[：组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[转发表项的最大数量，取值范围与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x717637818}
+\# 配置组播VLAN转发表项的最大数量为512个。
 
-[[\# ]{lang="EN-US"}]{#struct_0_11215_x1506_1660962682}[配置组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[转发表项的最大数量为]{style="font-family:宋体"}[512]{lang="EN-US"}[个。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_11215_x1506_x1792001054}
+Sysname multicast-vlan entry-limit 512
 
-[\[Sysname\] multicast-vlan entry-limit 512]{lang="EN-US"}
+【相关命令】
 
-[]{#_Toc300300918}[[【相关命令】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x1271988158}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[entry-limit]{lang="EN-US"}**[ (]{lang="EN-US"}]{#struct_0_11215_x1506_576110642}[IGMP]{lang="EN-US"}[-Snooping view)]{lang="EN-US"}[ ]{lang="EN-US"}[（]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[组播命令参考]{lang="EN-US" style="font-family:宋体"}[/IGMP Snooping]{lang="EN-US"}[）]{lang="EN-US" style="font-family:宋体"}
-:::::
-
-::::: {#1755630030 .myid}
-[]{#_Toc404789390}[]{#struct_0_11215_x1506_1474166348}
+·**entry-limit** (IGMP-Snooping view)（IP组播命令参考/IGMP Snooping）
 
 **组播VLAN \-- 组播VLAN配置命令 \-- port (multicast-VLAN view)**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](组播VLAN命令.files/image001.png){#图片 3 width="62" height="25"}]{lang="EN-US"}]{#struct_0_11215_x1506_1315172494}
-:::
+![说明](组播VLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_11215_x1506_1325669321}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[port**]命令用来向组播VLAN内添加端口。
 
-[**[port]{lang="EN-US"}**]{#struct_0_11215_x1506_1272466703}[命令用来向组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内添加端口。]{style="font-family:宋体"}
+**[undo** **port**]命令用来删除组播VLAN内的端口。
 
-[**[undo]{lang="EN-US"}**[ **port**]{lang="EN-US"}]{#struct_0_11215_x1506_x717703354}[命令用来删除组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的端口。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x610110223}
+**[port ***interface-list*]
 
-[**[port ]{lang="EN-US"}***[interface-list]{lang="EN-US"}*]{#struct_0_11215_x1506_x54144485}
+**[undo**]**port** **[all**[ \| ]*interface-list* }
 
-[**[undo]{lang="DA"}**]{#struct_0_11215_x1506_x375832858}[ ]{lang="DA"}**[port]{lang="EN-US"}**[ { ]{lang="DA"}**[all]{lang="EN-US"}**[ \| ]{lang="DA"}*[interface-list]{lang="EN-US"}*[ }]{lang="DA"}
+【缺省情况】]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_11215_x1506_501869620}
+组播VLAN内没有端口。
 
-[[组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_11215_x1506_x1372856803}[内没有端口。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x2106489217}
+组播VLAN视图
 
-[[组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_11215_x1506_x1193172929}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x1133181490}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_11215_x1506_x953030999}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_11215_x1506_x717506746}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x615138377}
+*[interface-list*]：端口列表，表示一个或多个端口。表示方式为*interface-list* = *[interface-type interface-number* \**[to***interface-type interface-number*  }]。其中，*interface-type*为接口类型，*interface-number*为接口编号。
 
-[*[interface-list]{lang="EN-US"}*]{#struct_0_11215_x1506_52524782}[：端口列表，表示一个或多个端口。表示方式为]{style="font-family:宋体"}*[interface-list]{lang="EN-US"}*[ = { ]{lang="DA"}*[interface-type interface-number]{lang="EN-US"}*[ \[ ]{lang="DA"}**[to]{lang="EN-US"}**[ ]{lang="EN-US"}*[interface-type interface-number]{lang="EN-US"}*[ \] }]{lang="DA"}[。其中，]{style="font-family:宋体"}*[interface-type]{lang="EN-US"}*[为接口类型，]{style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[为接口编号。]{style="font-family:宋体"}
+**[all**]：删除当前组播VLAN内的所有端口。
 
-[**[all]{lang="EN-US"}**]{#struct_0_11215_x1506_793360812}[：删除当前组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的所有端口。]{style="font-family:宋体"}
+【配置指导】]
 
-[[【配置指导】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x165634231}
+·一个端口只能属于一个组播VLAN。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[一个端口只能属于一个组播]{style="font-family:宋体"}]{#struct_0_11215_x1506_x1871776785}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+·只允许将以太网接口或二层聚合接口类型的用户端口配置为组播VLAN的端口。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[只允许将以太网接口或二层聚合接口类型的用户端口配置为组播]{style="font-family:宋体"}]{#struct_0_11215_x1506_1547128048}[VLAN]{lang="EN-US"}[的端口。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_11215_x1506_342026386}
+\# 将端口GigabitEthernet1/0/1到GigabitEthernet1/0/5添加到组播VLAN 100内。
 
-[[\# ]{lang="EN-US"}]{#struct_0_11215_x1506_1250265323}[将端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[到]{style="font-family:宋体"}[GigabitEthernet1/0/5]{lang="EN-US"}[添加到组播]{style="font-family:宋体"}[VLAN 100]{lang="EN-US"}[内。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_11215_x1506_x717572282}
+Sysname multicast-vlan 100
 
-[\[Sysname\] multicast-vlan 100]{lang="EN-US"}
-
-[\[Sysname-mvlan-100\] port gigabitethernet 1/0/1 to gigabitethernet 1/0/5]{lang="EN-US"}
-:::::
-
-::::: {#-1466988827 .myid}
-[]{#_Toc404789391}[]{#struct_0_11215_x1506_145615183}[]{#_Toc300300919}
+Sysname-mvlan-100 port gigabitethernet 1/0/1 to gigabitethernet 1/0/5
 
 **组播VLAN \-- 组播VLAN配置命令 \-- port multicast-vlan**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](组播VLAN命令.files/image001.png){#图片 4 width="62" height="25"}]{lang="EN-US"}]{#struct_0_11215_x1506_756133974}
-:::
+![说明](组播VLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_11215_x1506_x1452996181}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[port multicast-vlan**]命令用来指定端口所属的组播VLAN。
 
-[**[port multicast-vlan]{lang="EN-US"}**]{#struct_0_11215_x1506_x1910532465}[命令用来指定端口所属的组播]{style="font-family:宋体"}[VLAN]{lang="DA"}[。]{style="font-family:宋体"}
+**[undo**]**port multicast-vlan**命令用来恢复缺省情况。
 
-[**[undo]{lang="EN-US"}**]{#struct_0_11215_x1506_x645315570}[ ]{lang="EN-US"}**[port multicast-vlan]{lang="EN-US"}**[命令用来恢复缺省情况。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x1391480012}
+**[port multicast-vlan ***vlan-id*]
 
-[**[port multicast-vlan ]{lang="EN-US"}***[vlan-id]{lang="EN-US"}*]{#struct_0_11215_x1506_x1917282161}
+**[undo**]**port multicast-vlan**
 
-[**[undo]{lang="DA"}**]{#struct_0_11215_x1506_1766873789}[ ]{lang="DA"}**[port multicast-vlan]{lang="EN-US"}**
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x717375674}
+端口不属于任何组播VLAN。
 
-[[端口不属于任何组播]{style="font-family:宋体"}]{#struct_0_11215_x1506_140062757}[VLAN]{lang="DA"}[。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_11215_x1506_332300658}
+以太网接口视图/二层聚合接口视图
 
-[[以太网接口视图]{style="font-family:宋体"}]{#struct_0_11215_x1506_1426539056}[/]{lang="DA"}[二层聚合接口视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x1526510419}
+network-admin
 
-[[network-admin]{lang="DA"}]{#struct_0_11215_x1506_x1615869390}
+mdc-admin
 
-[[mdc-admin]{lang="DA"}]{#struct_0_11215_x1506_x2137803625}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_11215_x1506_904153470}
+*[vlan-id*]：指定端口所属组播VLAN的编号，取值范围为1～4094。
 
-[*[vlan-id]{lang="EN-US"}*]{#struct_0_11215_x1506_x1083011345}[：指定端口所属组播]{style="font-family:宋体"}[VLAN]{lang="DA"}[的编号，]{style="font-family:宋体"}[取值范围为]{style="font-family:宋体"}[1]{lang="DA"}[～]{style="font-family:宋体"}[4094]{lang="DA"}[。]{style="font-family:
-宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x717441210}
+一个端口只能属于一个组播VLAN。
 
-[[一个端口只能属于一个组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_11215_x1506_x1412014590}[。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_11215_x1506_1511647763}
+\# 配置端口GigabitEthernet1/0/1属于组播VLAN 100。
 
-[[\# ]{lang="EN-US"}]{#struct_0_11215_x1506_1063745911}[配置端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[属于组播]{style="font-family:宋体"}[VLAN 100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_11215_x1506_837130867}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
-
-[\[Sysname-GigabitEthernet1/0/1\] port multicast-vlan 100]{lang="EN-US"}
-:::::
-
-::: {#338682931 .myid}
-[]{#_Toc300300920}[]{#_Toc404789392}[]{#struct_0_11215_x1506_x398677478}
+Sysname-GigabitEthernet1/0/1 port multicast-vlan 100
 
 **组播VLAN \-- 组播VLAN配置命令 \-- reset multicast-vlan group**
 
 ------------------------------------------------------------------------
 
-[**[reset multicast-vlan group]{lang="EN-US"}**]{#struct_0_11215_x1506_2028313347}[命令用来清除组播]{style="font-family:
-宋体"}[VLAN]{lang="EN-US"}[的组播组表项。]{style="font-family:宋体"}
+**[reset multicast-vlan group**]命令用来清除组播VLAN的组播组表项。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_11215_x1506_2124579977}
+【命令】
 
-[**[reset]{lang="EN-US"}**[ **multicast-vlan** **group** \[ *source-address* \[ **mask** { *mask-length* \| *mask* } \] \| *group-address* \[ **mask** { *mask-length* \| *mask* } \] \| **vlan** *vlan-id* \] \*]{lang="EN-US"}]{#struct_0_11215_x1506_x913686282}
+**[reset**[ **multicast-vlan** **group** [ *source-address* [ **mask** { *mask-length* \| *mask* } ] \| *group-address* [ **mask** { *mask-length* \| *mask* } ] \| **vlan** *vlan-id* ] \*]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x717244602}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_11215_x1506_x1417042842}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x272202380}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_11215_x1506_x374609141}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_11215_x1506_x651826862}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x168937624}
+【参数】
 
-[*[source-address]{lang="EN-US"}*]{#struct_0_11215_x1506_572740068}[：清除包含指定组播源的表项。如果未指定本参数，将清除包含所有组播源表项。]{style="font-family:宋体"}
+*[source-address*]：清除包含指定组播源的表项。如果未指定本参数，将清除包含所有组播源表项。
 
-[**[mask]{lang="EN-US"}**[ { *mask-length* \| *mask* }]{lang="EN-US"}]{#struct_0_11215_x1506_x1028578473}[：指定组播源的掩码长度或掩码。]{style="font-family:宋体"}*[mask-length]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[32]{lang="EN-US"}[；]{style="font-family:宋体"}*[mask]{lang="EN-US"}*[的缺省值为]{style="font-family:宋体"}[255.255.255.255]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[mask**[ { *mask-length* \| *mask* }]]：指定组播源的掩码长度或掩码。*mask-length*的取值范围为0～32，缺省值为32；*mask*的缺省值为255.255.255.255。
 
-[*[group-address]{lang="EN-US"}*]{#struct_0_11215_x1506_x1350157419}[：清除指定组播组的表项，取值范围为]{style="font-family:宋体"}[224.0.1.0]{lang="EN-US"}[～]{style="font-family:宋体"}[239.255.255.255]{lang="EN-US"}[。如果未指定本参数，将清除所有组播组的表项。]{style="font-family:宋体"}
+*[group-address*]：清除指定组播组的表项，取值范围为224.0.1.0～239.255.255.255。如果未指定本参数，将清除所有组播组的表项。
 
-[**[mask]{lang="EN-US"}**[ { *mask-length* \| *mask* }]{lang="EN-US"}]{#struct_0_11215_x1506_x326811165}[：指定组播组的掩码长度或掩码。]{style="font-family:宋体"}*[mask-length]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[4]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[32]{lang="EN-US"}[；]{style="font-family:宋体"}*[mask]{lang="EN-US"}*[的缺省值为]{style="font-family:宋体"}[255.255.255.255]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[mask**[ { *mask-length* \| *mask* }]]：指定组播组的掩码长度或掩码。*mask-length*的取值范围为4～32，缺省值为32；*mask*的缺省值为255.255.255.255。
 
-[**[vlan]{lang="EN-US"}**[ *vlan-id*]{lang="EN-US"}]{#struct_0_11215_x1506_x717310138}[：清除指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的表项，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果未指定本参数，将清除所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的表项。]{style="font-family:宋体"}
+**[vlan** *vlan-id*]：清除指定VLAN的表项，取值范围为1～4094。如果未指定本参数，将清除所有VLAN的表项。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x636628392}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_11215_x1506_x362248267}[清除组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的所有组播组表项。]{style="font-family:宋体"}
+\# 清除组播VLAN的所有组播组表项。
 
-[[\<Sysname\> reset multicast-vlan group]{lang="EN-US"}]{#struct_0_11215_x1506_x1442481212}
+\<Sysname\> reset multicast-vlan group
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x1470128503}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display multicast-vlan group]{lang="EN-US"}**]{#struct_0_11215_x1506_538738060}
-:::
-
-::::: {#1938752496 .myid}
-[]{#_Toc404789393}[]{#struct_0_11215_x1506_2076141201}
+·**display multicast-vlan group**
 
 **组播VLAN \-- 组播VLAN配置命令 \-- subvlan (multicast-VLAN view)**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](组播VLAN命令.files/image001.png){#图片 5 width="62" height="25"}]{lang="EN-US"}]{#struct_0_11215_x1506_x1640385654}
-:::
+![说明](组播VLAN命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_11215_x1506_715873379}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[subvlan**]命令用来向组播VLAN内添加子VLAN。
 
-[**[subvlan]{lang="EN-US"}**]{#struct_0_11215_x1506_x717113530}[命令用来向组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内添加子]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo** **subvlan**]命令用来删除组播VLAN内的子VLAN。
 
-[**[undo]{lang="EN-US"}**[ **subvlan**]{lang="EN-US"}]{#struct_0_11215_x1506_x998542263}[命令用来删除组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的子]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x846906158}
+**[subvlan ***vlan-list*]
 
-[**[subvlan ]{lang="EN-US"}***[vlan-list]{lang="EN-US"}*]{#struct_0_11215_x1506_x960539122}
+**[undo**]**subvlan****[all**[ \| ]*vlan-list* }
 
-[**[undo]{lang="DA"}**]{#struct_0_11215_x1506_x684199706}[ ]{lang="DA"}**[subvlan]{lang="EN-US"}**[ ]{lang="EN-US"}[{ ]{lang="DA"}**[all]{lang="EN-US"}**[ \| ]{lang="DA"}*[vlan-list]{lang="EN-US"}*[ }]{lang="DA"}
+【缺省情况】]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x1397812183}
+组播VLAN内没有子VLAN。
 
-[[组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_11215_x1506_1187739388}[内没有子]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x1259518260}
+组播VLAN视图
 
-[[组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_11215_x1506_1686851842}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x705041656}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_11215_x1506_x717179066}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_11215_x1506_x682163628}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_11215_x1506_x1250439219}
+*[vlan-list*]：指定子VLAN列表，表示多个子VLAN。其表示方式为*vlan-list*= *[vlan-id* [ **to** *vlan-id*  }&\<1-10\>]，其中，*vlan-id*为指定子VLAN的编号，取值范围为1～4094。&\<1-10\>表示前面的参数最多可以输入10次。
 
-[*[vlan-list]{lang="EN-US"}*]{#struct_0_11215_x1506_x1540143552}[：]{style="font-family:宋体"}[指定子]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，表示多个子]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。其表示方式为]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[ ]{lang="EN-US"}[= { ]{lang="DA"}*[vlan-id]{lang="EN-US"}*[ \[ **to** ]{lang="DA"}*[vlan-id]{lang="EN-US"}*[ \] }&\<1-10\>]{lang="DA"}[，]{style="font-family:宋体"}[其中]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为指定子]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。]{style="font-family:宋体"}
+**[all**]：删除当前组播VLAN内的所有子VLAN。
 
-[**[all]{lang="EN-US"}**]{#struct_0_11215_x1506_x1730299249}[：删除当前组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的所有子]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+【使用指导】]
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_11215_x1506_825680280}
+要添加到组播VLAN内的子VLAN必须存在，且不能是组播VLAN或其它组播VLAN的子VLAN。
 
-[[要添加到组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_11215_x1506_x1840818580}[内的子]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[必须存在，且不能是组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[或其它组播]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的子]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_11215_x1506_840695181}
+\# 配置VLAN 10到VLAN 15为组播VLAN 100的子VLAN。
 
-[[\# ]{lang="EN-US"}]{#struct_0_11215_x1506_1179628340}[配置]{style="font-family:宋体"}[VLAN 10]{lang="EN-US"}[到]{style="font-family:宋体"}[VLAN 15]{lang="EN-US"}[为组播]{style="font-family:宋体"}[VLAN 100]{lang="EN-US"}[的子]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_11215_x1506_x717637817}
+Sysname multicast-vlan 100
 
-[\[Sysname\] multicast-vlan 100]{lang="EN-US"}
-
-[\[Sysname-mvlan-100\] subvlan 10 to 15]{lang="EN-US"}
-:::::
+Sysname-mvlan-100 subvlan 10 to 15

@@ -1,4097 +1,3767 @@
-::: {#-341093567 .myid}
-[]{#_Toc404795222}[]{#struct_0_x1322_12350_x1337682788}[]{#_Toc375833251}
 
 **WIPS \-- WIPS配置命令 \-- apply classification policy**
 
 ------------------------------------------------------------------------
 
-[**[apply classification policy]{lang="IT"}**]{#struct_0_x1322_12350_x1207806762}[命令用来在]{style="font-family:宋体"}[VSD]{lang="EN-US"}[上应用分类策略。]{style="font-family:宋体"}
+**[apply classification policy**]命令用来在VSD上应用分类策略。
 
-[**[undo apply classification policy]{lang="IT"}**]{#struct_0_x1322_12350_x1484405707}[命令用来]{style="font-family:宋体"}[取消应用的]{style="font-family:宋体"}[分类策略。]{style="font-family:宋体"}
+**[undo apply classification policy**]命令用来取消应用的分类策略。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1679752437}
+【命令】
 
-[**[apply classification policy ]{lang="IT"}**]{#struct_0_x1322_12350_x1549057537}*[policy-name]{lang="IT"}*
+**[apply classification policy **]*policy-name*
 
-[**[undo apply classification policy]{lang="IT"}**]{#struct_0_x1322_12350_x1997642236}*[ policy-name]{lang="IT"}*
+**[undo apply classification policy**]* policy-name*
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_370842557}
+【缺省情况】
 
-[[没有在]{style="font-family:宋体"}[VSD]{lang="EN-US"}]{#struct_0_x1322_12350_x1750965515}[上应用分类策略]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+没有在VSD上应用分类策略。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x851210539}
+【视图】
 
-[[VSD]{lang="EN-US"}]{#struct_0_x1322_12350_x1623068188}[视图]{style="font-family:宋体"}
+VSD视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1754900177}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1224600089}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1763786059}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1768354041}
+【参数】
 
-[*[policy-name]{lang="IT"}*]{#struct_0_x1322_12350_x112957349}[：]{style="font-family:宋体"}[分类策略]{style="font-family:宋体"}[名称，]{style="font-family:宋体"}[为]{style="font-family:宋体"}[1]{lang="IT"}[～]{style="font-family:宋体"}[63]{lang="IT"}[个字符的字符串]{style="font-family:宋体"}[，]{style="font-family:宋体"}[区分大小写。]{style="font-family:宋体"}
+*[policy-name*]：分类策略名称，为1～63个字符的字符串，区分大小写。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1956857753}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x1453198385}[在]{style="font-family:宋体"}[VSD]{lang="EN-US"}[上应用分类策略]{style="font-family:宋体"}[policy1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在VSD上应用分类策略policy1。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x1989187264}
+\<Sysname\> system-view
 
-[\[Sysname\] ]{lang="EN-US"}[wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] virtual-security-domain home]{lang="EN-US"}
+Sysname-wips virtual-security-domain home
 
-[\[Sysname-wips-vsd-home\] apply classification policy policy1]{lang="EN-US"}
-:::
-
-::: {#-595380044 .myid}
-[]{#_Toc121110292}[]{#_Toc404795223}[]{#struct_0_x1322_12350_834278389}
+Sysname-wips-vsd-home apply classification policy policy1
 
 **WIPS \-- WIPS配置命令 \-- apply countermeasure policy**
 
 ------------------------------------------------------------------------
 
-[**[apply countermeasure policy]{lang="IT"}**]{#struct_0_x1322_12350_x1178539848}[命令用来在]{style="font-family:宋体"}[VSD]{lang="EN-US"}[上应用反制策略。]{style="font-family:宋体"}
+**[apply countermeasure policy**]命令用来在VSD上应用反制策略。
 
-[**[undo apply countermeasure policy]{lang="IT"}**]{#struct_0_x1322_12350_1653919740}[命令用来]{style="font-family:宋体"}[取消应用的]{style="font-family:宋体"}[攻击检测策略。]{style="font-family:宋体"}
+**[undo apply countermeasure policy**]命令用来取消应用的攻击检测策略。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_781407274}
+【命令】
 
-[**[apply countermeasure policy ]{lang="IT"}**]{#struct_0_x1322_12350_x954924435}*[policy-name]{lang="IT"}*
+**[apply countermeasure policy **]*policy-name*
 
-[**[undo apply countermeasure policy]{lang="IT"}**]{#struct_0_x1322_12350_x541712255}*[ policy-name]{lang="IT"}*
+**[undo apply countermeasure policy**]* policy-name*
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1608505283}
+【缺省情况】
 
-[[没有在]{style="font-family:宋体"}[VSD]{lang="EN-US"}]{#struct_0_x1322_12350_x1770885782}[上应用反制策略]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+没有在VSD上应用反制策略。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_197702118}
+【视图】
 
-[[VSD]{lang="EN-US"}]{#struct_0_x1322_12350_1019461732}[视图]{style="font-family:宋体"}
+VSD视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1776193543}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1624877446}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1621147200}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1485094693}
+【参数】
 
-[*[policy-name]{lang="IT"}*]{#struct_0_x1322_12350_x2093594155}[：]{style="font-family:宋体"}[反制策略]{style="font-family:宋体"}[名称，]{style="font-family:宋体"}[为]{style="font-family:宋体"}[1]{lang="IT"}[～]{style="font-family:宋体"}[63]{lang="IT"}[个字符的字符串]{style="font-family:宋体"}[，]{style="font-family:宋体"}[区分大小写。]{style="font-family:宋体"}
+*[policy-name*]：反制策略名称，为1～63个字符的字符串，区分大小写。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1298116341}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x901365304}[在]{style="font-family:宋体"}[VSD]{lang="EN-US"}[上应用反制策略]{style="font-family:宋体"}[policy2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在VSD上应用反制策略policy2。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x676644856}
+\<Sysname\> system-view
 
-[\[Sysname\] ]{lang="EN-US"}[wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] virtual-security-domain home]{lang="EN-US"}
+Sysname-wips virtual-security-domain home
 
-[\[Sysname-wips-vsd-home\] apply countermeasure policy policy2]{lang="EN-US"}
-:::
-
-::: {#-1427277675 .myid}
-[]{#_Toc404795224}[]{#struct_0_x1322_12350_1091949873}[]{#_Toc389818359}[]{#_Toc389818495}[]{#_Toc389818360}[]{#_Toc389818496}[]{#_Toc389818361}[]{#_Toc389818497}[]{#_Toc389818362}[]{#_Toc389818498}[]{#_Toc389818363}[]{#_Toc389818499}[]{#_Toc389818364}[]{#_Toc389818500}[]{#_Toc389818365}[]{#_Toc389818501}[]{#_Toc389818366}[]{#_Toc389818502}[]{#_Toc389818367}[]{#_Toc389818503}[]{#_Toc389818368}[]{#_Toc389818504}[]{#_Toc389818369}[]{#_Toc389818505}[]{#_Toc389818370}[]{#_Toc389818506}[]{#_Toc389818371}[]{#_Toc389818507}[]{#_Toc389818372}[]{#_Toc389818508}[]{#_Toc389818373}[]{#_Toc389818509}[]{#_Toc389818374}[]{#_Toc389818510}[]{#_Toc389818375}[]{#_Toc389818511}[]{#_Toc389818421}[]{#_Toc389818557}
+Sysname-wips-vsd-home apply countermeasure policy policy2
 
 **WIPS \-- WIPS配置命令 \-- apply detect policy**
 
 ------------------------------------------------------------------------
 
-[**[apply detect policy]{lang="IT"}**]{#struct_0_x1322_12350_x526565866}[命令用来在]{style="font-family:宋体"}[VSD]{lang="EN-US"}[上应用攻击检测策略。]{style="font-family:宋体"}
+**[apply detect policy**]命令用来在VSD上应用攻击检测策略。
 
-[**[undo apply detect policy]{lang="IT"}**]{#struct_0_x1322_12350_x1632918675}[命令用来]{style="font-family:宋体"}[取消应用的]{style="font-family:宋体"}[攻击检测策略。]{style="font-family:宋体"}
+**[undo apply detect policy**]命令用来取消应用的攻击检测策略。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1947638519}
+【命令】
 
-[**[apply detect policy ]{lang="IT"}**]{#struct_0_x1322_12350_x1977358229}*[policy-name]{lang="IT"}*
+**[apply detect policy **]*policy-name*
 
-[**[undo apply detect policy]{lang="IT"}**]{#struct_0_x1322_12350_600986645}*[ policy-name]{lang="IT"}*
+**[undo apply detect policy**]* policy-name*
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_2021978272}
+【缺省情况】
 
-[[没有在]{style="font-family:宋体"}[VSD]{lang="EN-US"}]{#struct_0_x1322_12350_679660263}[上应用攻击检测策略]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+没有在VSD上应用攻击检测策略。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x835825460}
+【视图】
 
-[[VSD]{lang="EN-US"}]{#struct_0_x1322_12350_x2002936818}[视图]{style="font-family:宋体"}
+VSD视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x477601402}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_2014678566}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_443260352}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_463238523}
+【参数】
 
-[*[policy-name]{lang="IT"}*]{#struct_0_x1322_12350_x81872656}[：]{style="font-family:宋体"}[攻击检测策略]{style="font-family:宋体"}[名称，]{style="font-family:宋体"}[为]{style="font-family:宋体"}[1]{lang="IT"}[～]{style="font-family:宋体"}[63]{lang="IT"}[个字符的字符串]{style="font-family:宋体"}[，]{style="font-family:宋体"}[区分大小写。]{style="font-family:宋体"}
+*[policy-name*]：攻击检测策略名称，为1～63个字符的字符串，区分大小写。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1096006644}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_2131182055}[在]{style="font-family:宋体"}[VSD]{lang="EN-US"}[上应用攻击检测策略]{style="font-family:宋体"}[policy2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在VSD上应用攻击检测策略policy2。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x965097296}
+\<Sysname\> system-view
 
-[\[Sysname\] ]{lang="EN-US"}[wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] virtual-security-domain home]{lang="EN-US"}
+Sysname-wips virtual-security-domain home
 
-[\[Sysname-wips-vsd-home\] apply detect policy policy2]{lang="EN-US"}
-:::
-
-::: {#-1694732414 .myid}
-[]{#_Toc404795225}[]{#struct_0_x1322_12350_x1757785964}
+Sysname-wips-vsd-home apply detect policy policy2
 
 **WIPS \-- WIPS配置命令 \-- ap-rate-limit**
 
 ------------------------------------------------------------------------
 
-[**[ap-rate-limit]{lang="EN-US"}**]{#struct_0_x1322_12350_x764398125}[命令用来控制]{style="font-family:宋体"}[AP]{lang="EN-US"}[表项学习的速率。]{style="font-family:宋体"}
+**[ap-rate-limit**]命令用来控制AP表项学习的速率。
 
-[**[undo]{lang="EN-US"}**[ **ap-rate-limit**]{lang="EN-US"}]{#struct_0_x1322_12350_498695208}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **ap-rate-limit**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1927313384}
+【命令】
 
-[**[ap-rate-limit]{lang="EN-US"}**[ \[ **interval** ]{lang="EN-US"}]{#struct_0_x1322_12350_x2076732980}*[interval-value]{lang="IT"}***[ ]{lang="IT"}**[\| **quiet** ]{lang="EN-US"}*[quiet-value ]{lang="IT"}*[\| **threshold** ]{lang="EN-US"}*[number ]{lang="IT"}*[\] \*]{lang="EN-US"}
+**[ap-rate-limit** [ **interval** ]*interval-value*****[\| **quiet** ]*quiet-value *[\| **threshold** ]*number * \*]
 
-[**[undo ap-rate-limit]{lang="EN-US"}**]{#struct_0_x1322_12350_x2080230852}
+**[undo ap-rate-limit**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1448303198}
+【缺省情况】
 
-[[学习]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_x1322_12350_x1565911126}[表项的统计周期为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒，发送告警日志后的静默时间为]{style="font-family:宋体"}[1200]{lang="EN-US"}[，]{style="font-family:宋体"}[AP]{lang="EN-US"}[表项的阈值为]{style="font-family:宋体"}[64]{lang="EN-US"}[。]{style="font-family:宋体"}
+学习AP表项的统计周期为60秒，发送告警日志后的静默时间为1200，AP表项的阈值为64。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1417232658}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x255255500}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x973493536}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1871349989}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1716270923}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1715996004}
+【参数】
 
-[**[interval]{lang="EN-US"}***[ interval-value]{lang="EN-US"}*]{#struct_0_x1322_12350_x205582409}[：学习]{style="font-family:宋体"}[AP]{lang="EN-US"}[表项的统计周期，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+**[interval*** interval-value*]：学习AP表项的统计周期，取值范围为1～3600，单位为秒。
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_216401933}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[1200]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒。在静默期间，设备在统计周期内学习到的]{style="font-family:宋体"}[AP]{lang="EN-US"}[表项即使达到触发告警阈值，设备也不会发送告警日志，并在此时间内不学习新的]{style="font-family:宋体"}[AP]{lang="EN-US"}[表项。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为1200～3600，单位为秒。在静默期间，设备在统计周期内学习到的AP表项即使达到触发告警阈值，设备也不会发送告警日志，并在此时间内不学习新的AP表项。
 
-[**[threshold]{lang="EN-US"}**]{#struct_0_x1322_12350_x1037953263}*[ number]{lang="IT"}*[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[表项的阈值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4096]{lang="EN-US"}[。当设备学习]{style="font-family:宋体"}[AP]{lang="EN-US"}[表项达到触发阈值，设备会发送告警日志。]{style="font-family:宋体"}
+**[threshold**]* number*：AP表项的阈值，取值范围为1～4096。当设备学习AP表项达到触发阈值，设备会发送告警日志。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x238192444}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_2113915714}[配置控制]{style="font-family:宋体"}[AP]{lang="EN-US"}[表项学习的速率。]{style="font-family:宋体"}
+\# 配置控制AP表项学习的速率。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x765176533}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-wips\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] ap-rate-limit interval 60 threshold 100 quiet 1600]{lang="EN-US"}
-:::
-
-::: {#1244069013 .myid}
-[]{#_Toc404795226}[]{#struct_0_x1322_12350_1186389091}
+Sysname-wips-dtc-home ap-rate-limit interval 60 threshold 100 quiet 1600
 
 **WIPS \-- WIPS配置命令 \-- ap-spoofing**
 
 ------------------------------------------------------------------------
 
-[**[ap-spoofing]{lang="EN-US"}**]{#struct_0_x1322_12350_662783825}[命令用来开启]{style="font-family:宋体"}[AP]{lang="EN-US"}[地址仿冒检测功能。]{style="font-family:宋体"}
+**[ap-spoofing**]命令用来开启AP地址仿冒检测功能。
 
-[**[undo]{lang="EN-US"}**[ **ap-spoofing**]{lang="EN-US"}]{#struct_0_x1322_12350_308591677}[命令用来关闭]{style="font-family:宋体"}[AP]{lang="EN-US"}[地址仿冒检测功能。]{style="font-family:宋体"}
+**[undo** **ap-spoofing**]命令用来关闭AP地址仿冒检测功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x996452602}
+【命令】
 
-[**[ap-spoofing]{lang="EN-US"}**[ \[ **quiet** *quiet-value* \]]{lang="EN-US"}]{#struct_0_x1322_12350_86588655}
+**[ap-spoofing** [ **quiet** *quiet-value* ]]
 
-[**[undo ap-spoofing]{lang="EN-US"}**]{#struct_0_x1322_12350_1994706718}
+**[undo ap-spoofing**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1771666350}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_1023619433}[检测]{style="font-family:宋体"}[AP]{lang="EN-US"}[地址仿冒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不检测AP地址仿冒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x222999282}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1549722824}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1605011325}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1116248198}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x256136650}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1484638623}
+【参数】
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_x1319880549}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，设备再次检测到]{style="font-family:宋体"}[AP]{lang="EN-US"}[地址仿冒也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，设备再次检测到AP地址仿冒也不会发送告警日志。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1322_12350_994298289}
+【使用指导】
 
-[[设备检测到]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_x1322_12350_1066629514}[地址仿冒后会发送告警日志。]{style="font-family:宋体"}
+设备检测到AP地址仿冒后会发送告警日志。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_587866956}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_287443800}[开启]{style="font-family:宋体"}[AP]{lang="EN-US"}[地址仿冒检测功能，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 开启AP地址仿冒检测功能，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x1368381823}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-wips\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] ap-spoofing quiet 360]{lang="EN-US"}
-:::
-
-::: {#-1873312722 .myid}
-[]{#_Toc404795227}[]{#struct_0_x1322_12350_x409036386}
+Sysname-wips-dtc-home ap-spoofing quiet 360
 
 **WIPS \-- WIPS配置命令 \-- ap-timer**
 
 ------------------------------------------------------------------------
 
-[**[ap-timer]{lang="EN-US"}**]{#struct_0_x1322_12350_554228140}[命令用来配置]{style="font-family:宋体"}[AP]{lang="EN-US"}[表项的时间参数。]{style="font-family:宋体"}
+**[ap-timer**]命令用来配置AP表项的时间参数。
 
-[**[undo]{lang="EN-US"}**[ **ap-timer**]{lang="EN-US"}]{#struct_0_x1322_12350_606185390}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **ap-timer**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x594373344}
+【命令】
 
-[**[ap-timer]{lang="EN-US"}**[ \[ **inactive** ]{lang="EN-US"}]{#struct_0_x1322_12350_1424541710}*[inactive-value]{lang="IT"}***[ aging ]{lang="EN-US"}***[aging-value]{lang="IT"}***[ ]{lang="IT"}**[\]]{lang="EN-US"}
+**[ap-timer** [ **inactive** ]*inactive-value*** aging ***aging-value*****]
 
-[**[undo ap-timer]{lang="EN-US"}**]{#struct_0_x1322_12350_585869273}
+**[undo ap-timer**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_2142186394}
+【缺省情况】
 
-[[AP]{lang="EN-US"}]{#struct_0_x1322_12350_x1836549287}[表项的非活跃时间为]{style="font-family:宋体"}[300]{lang="EN-US"}[秒，老化时间为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+AP表项的非活跃时间为300秒，老化时间为600秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1701514994}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x937638921}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1902413739}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x762073396}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_537689641}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_297852476}
+【参数】
 
-[**[inactive ]{lang="EN-US"}**]{#struct_0_x1322_12350_1360501532}*[inactive-value]{lang="IT"}*[：从创建]{style="font-family:宋体"}[AP]{lang="EN-US"}[表项转换到非活跃状态的时间，取值范围为]{style="font-family:宋体"}[60]{lang="EN-US"}[～]{style="font-family:宋体"}[1200]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+**[inactive **]*inactive-value*：从创建AP表项转换到非活跃状态的时间，取值范围为60～1200，单位为秒。
 
-[**[aging ]{lang="EN-US"}**]{#struct_0_x1322_12350_x1736915005}*[aging-value]{lang="IT"}*[：从创建]{style="font-family:宋体"}[AP]{lang="EN-US"}[表项转换到删除]{style="font-family:宋体"}[AP]{lang="EN-US"}[表项的老化时间，取值范围为]{style="font-family:宋体"}[120]{lang="EN-US"}[～]{style="font-family:宋体"}[86400]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+**[aging **]*aging-value*：从创建AP表项转换到删除AP表项的老化时间，取值范围为120～86400，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1322_12350_31346728}
+【使用指导】
 
-[[配置的老化时间必须大于非活跃时间。]{style="font-family:宋体"}]{#struct_0_x1322_12350_236187220}
+配置的老化时间必须大于非活跃时间。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_583217017}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x724565005}[配置]{style="font-family:宋体"}[AP]{lang="EN-US"}[表项的时间参数。]{style="font-family:宋体"}
+\# 配置AP表项的时间参数。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x546397337}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-wips\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] ap-timer inactive 120 aging 360]{lang="EN-US"}
-:::
-
-::: {#-236696065 .myid}
-[]{#_Toc404795228}[]{#struct_0_x1322_12350_1137691138}
+Sysname-wips-dtc-home ap-timer inactive 120 aging 360
 
 **WIPS \-- WIPS配置命令 \-- block mac-address**
 
 ------------------------------------------------------------------------
 
-[**[block mac-address]{lang="IT"}**]{#struct_0_x1322_12350_1058054203}[命令用来将指定的]{style="font-family:宋体"}[MAC]{lang="IT"}[地址添加到静态禁用列表中]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[block mac-address**]命令用来将指定的MAC地址添加到静态禁用列表中。
 
-[**[undo block mac-address]{lang="IT"}**]{#struct_0_x1322_12350_x1123134811}[命令用来]{style="font-family:宋体"}[删除静态禁用列表中的]{style="font-family:宋体"}[MAC]{lang="IT"}[地址]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo block mac-address**]命令用来删除静态禁用列表中的MAC地址。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1020477705}
+【命令】
 
-[**[block mac-address ]{lang="IT"}**]{#struct_0_x1322_12350_1914748609}*[mac-address]{lang="IT"}*
+**[block mac-address **]*mac-address*
 
-[**[undo block mac-address ]{lang="IT"}**[{ ]{lang="EN-US"}]{#struct_0_x1322_12350_x1983665764}*[mac-address]{lang="IT"}*[ \| **all** }]{lang="EN-US"}
+**[undo block mac-address ***mac-address*[ \| **all** }]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1911786370}
+【缺省情况】]
 
-[[静态禁用列表中不存在]{style="font-family:宋体"}]{#struct_0_x1322_12350_1407555699}[MAC]{lang="IT"}[地址。]{style="font-family:宋体"}
+静态禁用列表中不存在MAC地址。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_375089751}
+【视图】
 
-[[分类策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x780473622}
+分类策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1772736592}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_298184782}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1140311996}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x2082621299}
+【参数】
 
-[*[mac-address]{lang="IT"}*]{#struct_0_x1322_12350_755220022}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[或客户端的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，格式为]{style="font-family:宋体"}[H-H-H]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[mac-address*]：AP或客户端的MAC地址，格式为H-H-H。
 
-[**[all]{lang="EN-US"}**]{#struct_0_x1322_12350_345574218}[：所有]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[all**]：所有MAC地址。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_2026976116}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_1136016607}[将]{style="font-family:宋体"}[MAC]{lang="IT"}[地址]{style="font-family:宋体"}[78AC-C0AF-944F]{lang="IT"}[添加到静态禁用列表中。]{style="font-family:宋体"}
+\# 将MAC地址78AC-C0AF-944F添加到静态禁用列表中。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_1047931877}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-wips\] classification policy home]{lang="IT"}
+Sysname-wips classification policy home
 
-[\[Sysname-wips-cls-home\] block mac-address 78AC-C0AF-944F]{lang="IT"}
-:::
-
-::: {#-17923703 .myid}
-[]{#_Toc404795229}[]{#struct_0_x1322_12350_434353997}
+Sysname-wips-cls-home block mac-address 78AC-C0AF-944F
 
 **WIPS \-- WIPS配置命令 \-- classification policy**
 
 ------------------------------------------------------------------------
 
-[**[classification policy]{lang="IT"}**]{#struct_0_x1322_12350_x1203353490}[命令用来创建分类策略，并进入分类策略视图。]{style="font-family:宋体"}
+**[classification policy**]命令用来创建分类策略，并进入分类策略视图。
 
-[**[undo classification policy]{lang="EN-US"}**]{#struct_0_x1322_12350_x158528242}[命令用来删除分类策略。]{style="font-family:
-宋体"}
+**[undo classification policy**]命令用来删除分类策略。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1363842886}
+【命令】
 
-[**[c]{lang="EN-US"}**]{#struct_0_x1322_12350_x1051182078}**[lassification policy ]{lang="IT"}***[policy-name]{lang="IT"}*
+**[c**]**lassification policy ***policy-name*
 
-[**[undo classification policy ]{lang="IT"}**]{#struct_0_x1322_12350_1184607659}*[policy-name]{lang="IT"}*
+**[undo classification policy **]*policy-name*
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1981819652}
+【缺省情况】
 
-[[没有创建分类策略。]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1400774712}
+没有创建分类策略。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x886267097}
+【视图】
 
-[[WIPS]{lang="EN-US"}]{#struct_0_x1322_12350_x1401773552}[视图]{style="font-family:宋体"}
+WIPS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1288199288}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1488268762}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x330378530}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_2051835661}
+【参数】
 
-[*[policy-name]{lang="IT"}*]{#struct_0_x1322_12350_x170274681}[：]{style="font-family:宋体"}[分类策略]{style="font-family:宋体"}[名称，]{style="font-family:宋体"}[为]{style="font-family:宋体"}[1]{lang="IT"}[～]{style="font-family:宋体"}[63]{lang="IT"}[个字符的字符串]{style="font-family:宋体"}[，]{style="font-family:宋体"}[区分大小写。]{style="font-family:宋体"}
+*[policy-name*]：分类策略名称，为1～63个字符的字符串，区分大小写。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_869585985}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x402695731}[创建名字为]{style="font-family:宋体"}[home]{lang="EN-US"}[的分类策略，并进入分类策略视图。]{style="font-family:宋体"}
+\# 创建名字为home的分类策略，并进入分类策略视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1322_12350_1763851595}
+\<Sysname\> system-view
 
-[\[Sysname\] ]{lang="EN-US"}[wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] classification policy home]{lang="EN-US"}
-:::
-
-::: {#497629393 .myid}
-[]{#_Toc404795230}[]{#struct_0_x1322_12350_163039079}
+Sysname-wips classification policy home
 
 **WIPS \-- WIPS配置命令 \-- client-rate-limit**
 
 ------------------------------------------------------------------------
 
-[**[client-rate-limit]{lang="EN-US"}**]{#struct_0_x1322_12350_1221334324}[命令用来控制客户端表项学习的速率。]{style="font-family:宋体"}
+**[client-rate-limit**]命令用来控制客户端表项学习的速率。
 
-[**[undo]{lang="EN-US"}**[ **client -rate-limit**]{lang="EN-US"}]{#struct_0_x1322_12350_x171417191}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **client -rate-limit**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1099806323}
+【命令】
 
-[**[client-rate-limit]{lang="EN-US"}**[ \[ **interval** ]{lang="EN-US"}]{#struct_0_x1322_12350_1702957970}*[interval-value]{lang="IT"}*[ ]{lang="IT"}[\| **quiet** ]{lang="EN-US"}*[quiet-value ]{lang="IT"}*[\| **threshold** ]{lang="EN-US"}*[number]{lang="IT"}*[ ]{lang="IT"}[\] \*]{lang="EN-US"}
+**[client-rate-limit** [ **interval** ]*interval-value*[\| **quiet** ]*quiet-value *[\| **threshold** ]*number* \*]
 
-[**[undo client-rate-limit]{lang="EN-US"}**]{#struct_0_x1322_12350_x522551144}
+**[undo client-rate-limit**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x280136233}
+【缺省情况】
 
-[[学习客户端表项的统计周期为]{style="font-family:宋体"}[60]{lang="EN-US"}]{#struct_0_x1322_12350_x1645990500}[秒，发送告警日志后的静默时间为]{style="font-family:宋体"}[1200]{lang="EN-US"}[秒，客户端表项的阈值为]{style="font-family:宋体"}[512]{lang="EN-US"}[。]{style="font-family:宋体"}
+学习客户端表项的统计周期为60秒，发送告警日志后的静默时间为1200秒，客户端表项的阈值为512。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1746581886}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_271955925}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_301672712}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1968017057}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1429022003}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x2064245482}
+【参数】
 
-[**[interval]{lang="EN-US"}***[ interval-value]{lang="EN-US"}*]{#struct_0_x1322_12350_197767654}[：学习客户端表项的统计周期，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+**[interval*** interval-value*]：学习客户端表项的统计周期，取值范围为1～3600，单位为秒。
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_x2128678813}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[1200]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒。在静默期间，设备在统计周期内学习到的客户端表项即使达到触发告警阈值，设备也不会发送告警日志，并在此时间内不学习新的客户端表项。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为1200～3600，单位为秒。在静默期间，设备在统计周期内学习到的客户端表项即使达到触发告警阈值，设备也不会发送告警日志，并在此时间内不学习新的客户端表项。
 
-[**[threshold]{lang="EN-US"}**]{#struct_0_x1322_12350_x102336348}*[ number]{lang="IT"}*[：客户端表项的阈值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4096]{lang="EN-US"}[。当设备学习客户端表项达到触发阈值，设备会发送告警日志。]{style="font-family:宋体"}
+**[threshold**]* number*：客户端表项的阈值，取值范围为1～4096。当设备学习客户端表项达到触发阈值，设备会发送告警日志。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x901195205}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_1685600230}[配置控制客户端表项学习的速率。]{style="font-family:宋体"}
+\# 配置控制客户端表项学习的速率。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x1012500690}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-wips\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] client-rate-limit interval 60 threshold 100 quiet 1600]{lang="EN-US"}
-:::
-
-::: {#-232008683 .myid}
-[]{#_Toc404795231}[]{#struct_0_x1322_12350_x293102101}
+Sysname-wips-dtc-home client-rate-limit interval 60 threshold 100 quiet 1600
 
 **WIPS \-- WIPS配置命令 \-- client-spoofing**
 
 ------------------------------------------------------------------------
 
-[**[client-spoofing]{lang="EN-US"}**]{#struct_0_x1322_12350_720256108}[命令用来开启客户端地址仿冒检测功能。]{style="font-family:宋体"}
+**[client-spoofing**]命令用来开启客户端地址仿冒检测功能。
 
-[**[undo]{lang="EN-US"}**[ **client-spoofing**]{lang="EN-US"}]{#struct_0_x1322_12350_x1993965980}[命令用来关闭客户端地址仿冒检测功能。]{style="font-family:宋体"}
+**[undo** **client-spoofing**]命令用来关闭客户端地址仿冒检测功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_408592916}
+【命令】
 
-[**[client-spoofing]{lang="EN-US"}**[ \[ **quiet** *quiet-value* \]]{lang="EN-US"}]{#struct_0_x1322_12350_x940101401}
+**[client-spoofing** [ **quiet** *quiet-value* ]]
 
-[**[undo client-spoofing]{lang="EN-US"}**]{#struct_0_x1322_12350_1139836262}
+**[undo client-spoofing**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1669212899}
+【缺省情况】
 
-[[客户端地址仿冒检测功能处于关闭状态]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1239466692}[。]{style="font-family:
-宋体"}
+客户端地址仿冒检测功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_601052181}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_787771967}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_2062483780}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_411084184}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_573667867}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_2126490039}
+【参数】
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_x257415194}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，设备再次检测到客户端地址仿冒也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，设备再次检测到客户端地址仿冒也不会发送告警日志。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1461474423}
+【使用指导】
 
-[[设备检测到客户端地址仿冒后会发送告警日志。]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1214995577}
+设备检测到客户端地址仿冒后会发送告警日志。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1717549244}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x1055509318}[开启客户端地址仿冒检测功能]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 开启客户端地址仿冒检测功能。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_195147750}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-wips\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] client-spoofing quiet 360]{lang="EN-US"}
-:::
-
-::: {#171123751 .myid}
-[]{#_Toc404795232}[]{#struct_0_x1322_12350_529527888}
+Sysname-wips-dtc-home client-spoofing quiet 360
 
 **WIPS \-- WIPS配置命令 \-- client-timer**
 
 ------------------------------------------------------------------------
 
-[**[client-timer]{lang="EN-US"}**]{#struct_0_x1322_12350_x1696292069}[命令用来配置客户端表项的时间参数。]{style="font-family:宋体"}
+**[client-timer**]命令用来配置客户端表项的时间参数。
 
-[**[undo]{lang="EN-US"}**[ **client-timer**]{lang="EN-US"}]{#struct_0_x1322_12350_x965031760}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **client-timer**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1756402937}
+【命令】
 
-[**[client-timer]{lang="EN-US"}**[ \[ **inactive** ]{lang="EN-US"}]{#struct_0_x1322_12350_5651289}*[inactive-value]{lang="IT"}***[ aging ]{lang="EN-US"}***[aging-value]{lang="IT"}*[ ]{lang="IT"}[\]]{lang="EN-US"}
+**[client-timer** [ **inactive** ]*inactive-value*** aging ***aging-value*]
 
-[**[undo client-timer]{lang="EN-US"}**]{#struct_0_x1322_12350_1247954191}
+**[undo client-timer**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x45387700}
+【缺省情况】
 
-[[客户端表项的非活跃时间为]{style="font-family:宋体"}[300]{lang="EN-US"}]{#struct_0_x1322_12350_x958807344}[秒，老化时间为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+客户端表项的非活跃时间为300秒，老化时间为600秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1915208396}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_763800118}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1056016129}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x155031183}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_528841986}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1421461829}
+【参数】
 
-[**[inactive ]{lang="EN-US"}**]{#struct_0_x1322_12350_1038859215}*[inactive-value]{lang="IT"}*[：从创建客户端表项到非活跃状态的非活跃时间，取值范围为]{style="font-family:宋体"}[60]{lang="EN-US"}[～]{style="font-family:宋体"}[1200]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+**[inactive **]*inactive-value*：从创建客户端表项到非活跃状态的非活跃时间，取值范围为60～1200，单位为秒。
 
-[**[aging ]{lang="EN-US"}**]{#struct_0_x1322_12350_x887733169}*[aging-value]{lang="IT"}*[：从创建客户端表项到删除客户端表项的老化时间，取值范围为]{style="font-family:宋体"}[120]{lang="EN-US"}[～]{style="font-family:宋体"}[86400]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+**[aging **]*aging-value*：从创建客户端表项到删除客户端表项的老化时间，取值范围为120～86400，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x973352848}
+【使用指导】
 
-[[配置的老化时间必须大于非活跃时间。]{style="font-family:宋体"}]{#struct_0_x1322_12350_877390680}
+配置的老化时间必须大于非活跃时间。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x205516873}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_262724220}[配置客户端表项的时间参数，从创建客户端表项到非活跃状态的非活跃时间为]{style="font-family:宋体"}[120]{lang="EN-US"}[秒，从创建客户端表项到删除客户端表项的老化时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置客户端表项的时间参数，从创建客户端表项到非活跃状态的非活跃时间为120秒，从创建客户端表项到删除客户端表项的老化时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_1117327442}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-wips\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] client-timer inactive 120 aging 360]{lang="EN-US"}
-:::
-
-::: {#-611077912 .myid}
-[]{#_Toc404795233}[]{#struct_0_x1322_12350_x190219809}
+Sysname-wips-dtc-home client-timer inactive 120 aging 360
 
 **WIPS \-- WIPS配置命令 \-- countermeasure external-ap**
 
 ------------------------------------------------------------------------
 
-[**[countermeasure ]{lang="IT"}[external-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_x1518466032}[命令对外部]{style="font-family:
-宋体"}[AP]{lang="EN-US"}[进行反制。]{style="font-family:宋体"}
+**[countermeasure external-ap**]命令对外部AP进行反制。
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1322_12350_617774706}**[countermeasure ]{lang="IT"}[external-ap]{lang="EN-US"}**[命令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo **]**countermeasure external-ap**命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_2036817280}
+【命令】
 
-[**[countermeasure ]{lang="IT"}[external-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_2063116745}
+**[countermeasure external-ap**]
 
-[**[undo countermeasure ]{lang="IT"}[external-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_1189216904}
+**[undo countermeasure external-ap**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_36856042}
+【缺省情况】
 
-[[不对外部]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_x1322_12350_1325873633}[进行反制。]{style="font-family:宋体"}
+不对外部AP进行反制。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_881037482}
+【视图】
 
-[[反制策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_2042556793}
+反制策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1771600814}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1238403852}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1528511329}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1749562767}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_1290476419}[对外部]{style="font-family:宋体"}[AP]{lang="EN-US"}[进行反制。]{style="font-family:宋体"}
+\# 对外部AP进行反制。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1322_12350_x733658786}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="EN-US"}
+Sysname wips
 
-[\[Sysname-wips\] countermeasure policy home]{lang="EN-US"}
+Sysname-wips countermeasure policy home
 
-[\[Sysname-wips-cms-home\] countermeasure external-ap]{lang="EN-US"}
-:::
-
-::: {#-133287320 .myid}
-[]{#_Toc404795234}[]{#struct_0_x1322_12350_x723417164}
+Sysname-wips-cms-home countermeasure external-ap
 
 **WIPS \-- WIPS配置命令 \-- countermeasure misassociation-client**
 
 ------------------------------------------------------------------------
 
-[**[countermeasure ]{lang="IT"}[misassociation-client]{lang="EN-US"}**]{#struct_0_x1322_12350_x1192653630}[命令对关联错误的客户端进行反制。]{style="font-family:宋体"}
+**[countermeasure misassociation-client**]命令对关联错误的客户端进行反制。
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1322_12350_1093133623}**[countermeasure ]{lang="IT"}[misassociation-client]{lang="EN-US"}**[令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo **]**countermeasure misassociation-client**令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1368316287}
+【命令】
 
-[**[countermeasure ]{lang="IT"}[misassociation-client]{lang="EN-US"}**]{#struct_0_x1322_12350_x2039907833}
+**[countermeasure misassociation-client**]
 
-[**[undo countermeasure ]{lang="IT"}[misassociation-client]{lang="EN-US"}**]{#struct_0_x1322_12350_x1684073573}
+**[undo countermeasure misassociation-client**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1422122662}
+【缺省情况】
 
-[[不对关联错误的客户端进行反制。]{style="font-family:宋体"}]{#struct_0_x1322_12350_1552990763}
+不对关联错误的客户端进行反制。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1901208559}
+【视图】
 
-[[反制策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_2072692999}
+反制策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_2132677111}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1029592308}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_806185138}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_154526448}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x1836879453}[对关联错误的客户端进行反制。]{style="font-family:宋体"}
+\# 对关联错误的客户端进行反制。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1322_12350_x1280517853}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="EN-US"}
+Sysname wips
 
-[\[Sysname-wips\] countermeasure policy home]{lang="EN-US"}
+Sysname-wips countermeasure policy home
 
-[\[Sysname-wips-cms-home\] countermeasure misassociation-client]{lang="EN-US"}
-:::
-
-::: {#2088181574 .myid}
-[]{#_Toc404795235}[]{#struct_0_x1322_12350_854014185}
+Sysname-wips-cms-home countermeasure misassociation-client
 
 **WIPS \-- WIPS配置命令 \-- countermeasure misconfigured-ap**
 
 ------------------------------------------------------------------------
 
-[**[countermeasure ]{lang="IT"}[misconfigured-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_1360567068}[命令对配置错误的]{style="font-family:
-宋体"}[AP]{lang="EN-US"}[进行反制。]{style="font-family:宋体"}
+**[countermeasure misconfigured-ap**]命令对配置错误的AP进行反制。
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1322_12350_181175136}**[countermeasure ]{lang="IT"}[misconfigured-ap]{lang="EN-US"}**[命令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo **]**countermeasure misconfigured-ap**命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1644400687}
+【命令】
 
-[**[countermeasure ]{lang="IT"}[misconfigured-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_x620608679}
+**[countermeasure misconfigured-ap**]
 
-[**[undo countermeasure ]{lang="IT"}[misconfigured-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_x2046318988}
+**[undo countermeasure misconfigured-ap**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_22508143}
+【缺省情况】
 
-[[不对配置错误的]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_x1322_12350_x582139265}[进行反制。]{style="font-family:宋体"}
+不对配置错误的AP进行反制。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_238949415}
+【视图】
 
-[[反制策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x488948258}
+反制策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1900699532}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1413636208}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1166095757}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x871982378}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_414247957}[对配置错误的]{style="font-family:宋体"}[AP]{lang="EN-US"}[进行反制。]{style="font-family:宋体"}
+\# 对配置错误的AP进行反制。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1322_12350_1407621235}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="EN-US"}
+Sysname wips
 
-[\[Sysname-wips\] countermeasure policy home]{lang="EN-US"}
+Sysname-wips countermeasure policy home
 
-[\[Sysname-wips-cms-home\] countermeasure misconfigured-ap]{lang="EN-US"}
-:::
-
-::: {#249051135 .myid}
-[]{#_Toc404795236}[]{#struct_0_x1322_12350_x1196648384}
+Sysname-wips-cms-home countermeasure misconfigured-ap
 
 **WIPS \-- WIPS配置命令 \-- countermeasure policy**
 
 ------------------------------------------------------------------------
 
-[**[countermeasure policy]{lang="IT"}**]{#struct_0_x1322_12350_x510223931}[命令用来创建反制策略，]{style="font-family:宋体"}[并进入]{style="font-family:宋体;color:black"}[反制策略]{style="font-family:宋体"}[视图]{style="font-family:宋体;color:black"}[。]{style="font-family:宋体"}
+**[countermeasure policy**]命令用来创建反制策略，并进入反制策略视图。
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1322_12350_1480225832}**[countermeasure policy]{lang="IT"}**[命令用来删除]{style="font-family:宋体"}[反制策略。]{style="font-family:宋体"}
+**[undo **]**countermeasure policy**命令用来删除反制策略。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_949272248}
+【命令】
 
-[**[countermeasure policy ]{lang="IT"}**]{#struct_0_x1322_12350_1360104742}*[policy-name]{lang="IT"}*
+**[countermeasure policy **]*policy-name*
 
-[**[undo countermeasure policy ]{lang="IT"}**]{#struct_0_x1322_12350_1772430877}*[policy-name]{lang="IT"}*
+**[undo countermeasure policy **]*policy-name*
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1998375807}
+【缺省情况】
 
-[[没有创建反制策略。]{style="font-family:宋体"}]{#struct_0_x1322_12350_1518589792}
+没有创建反制策略。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_459945157}
+【视图】
 
-[[WIPS]{lang="EN-US"}]{#struct_0_x1322_12350_x825962601}[视图]{style="font-family:宋体"}
+WIPS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1008866573}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_526209335}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1032036500}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x158462706}
+【参数】
 
-[*[policy-name]{lang="IT"}*]{#struct_0_x1322_12350_1410402643}[：反制策略的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[policy-name*]：反制策略的名称，为1～63个字符的字符串，区分大小写。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1836967065}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_1433986668}[创建名为]{style="font-family:宋体"}[home]{lang="EN-US"}[的反制策略，]{style="font-family:宋体"}[并进入]{style="font-family:宋体;color:black"}[反制策略]{style="font-family:宋体"}[视图]{style="font-family:宋体;color:black"}[。]{style="font-family:宋体"}
+\# 创建名为home的反制策略，并进入反制策略视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1322_12350_437922496}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="EN-US"}
+Sysname wips
 
-[\[Sysname-wips\] countermeasure policy home]{lang="EN-US"}
+Sysname-wips countermeasure policy home
 
-[\[Sysname-wips-cms-home\]]{lang="EN-US"}
-:::
-
-::: {#-847871977 .myid}
-[]{#_Toc404795237}[]{#struct_0_x1322_12350_x1041698120}
+Sysname-wips-cms-home
 
 **WIPS \-- WIPS配置命令 \-- countermeasure potential-authorized-ap**
 
 ------------------------------------------------------------------------
 
-[**[countermeasure ]{lang="IT"}[potential-authorized-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_x1536029532}[命令对潜在授权]{style="font-family:宋体"}[AP]{lang="EN-US"}[进行反制。]{style="font-family:宋体"}
+**[countermeasure potential-authorized-ap**]命令对潜在授权AP进行反制。
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1322_12350_1245814303}**[countermeasure ]{lang="IT"}[potential-authorized-ap]{lang="EN-US"}**[命令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo **]**countermeasure potential-authorized-ap**命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_77688930}
+【命令】
 
-[**[countermeasure ]{lang="IT"}[potential-authorized-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_x815619806}
+**[countermeasure potential-authorized-ap**]
 
-[**[undo countermeasure ]{lang="IT"}[potential-authorized-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_x1322253540}
+**[undo countermeasure potential-authorized-ap**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1916816362}
+【缺省情况】
 
-[[不对潜在授权]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_x1322_12350_1171972240}[进行反制。]{style="font-family:宋体"}
+不对潜在授权AP进行反制。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_2020220186}
+【视图】
 
-[[反制策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_1763917131}
+反制策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1401388318}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1558816181}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x2118726376}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x749031801}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_389842180}[对潜在授权]{style="font-family:宋体"}[AP]{lang="EN-US"}[进行反制。]{style="font-family:宋体"}
+\# 对潜在授权AP进行反制。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1322_12350_x286073836}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="EN-US"}
+Sysname wips
 
-[\[Sysname-wips\] countermeasure policy home]{lang="EN-US"}
+Sysname-wips countermeasure policy home
 
-[\[Sysname-wips-cms-home\] countermeasure potential-authorized-ap]{lang="EN-US"}
-:::
-
-::: {#-2024671422 .myid}
-[]{#_Toc404795238}[]{#struct_0_x1322_12350_x1594830996}
+Sysname-wips-cms-home countermeasure potential-authorized-ap
 
 **WIPS \-- WIPS配置命令 \-- countermeasure potential-external-ap**
 
 ------------------------------------------------------------------------
 
-[**[countermeasure ]{lang="IT"}[potential-external-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_1414404046}[命令对潜在外部]{style="font-family:宋体"}[AP]{lang="EN-US"}[进行反制。]{style="font-family:宋体"}
+**[countermeasure potential-external-ap**]命令对潜在外部AP进行反制。
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1322_12350_x961161463}**[countermeasure ]{lang="IT"}[potential-external-ap]{lang="EN-US"}**[命令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo **]**countermeasure potential-external-ap**命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1637324118}
+【命令】
 
-[**[countermeasure ]{lang="IT"}[potential-external-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_1270891216}
+**[countermeasure potential-external-ap**]
 
-[**[undo countermeasure ]{lang="IT"}[potential-external-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_933347171}
+**[undo countermeasure potential-external-ap**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_197833190}
+【缺省情况】
 
-[[不对潜在外部]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_x1322_12350_x1551908721}[进行反制。]{style="font-family:宋体"}
+不对潜在外部AP进行反制。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x109853678}
+【视图】
 
-[[反制策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1695515320}
+反制策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x93390512}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1281385489}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1625828569}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x333070050}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_1173414314}[对潜在外部]{style="font-family:宋体"}[AP]{lang="EN-US"}[进行反制。]{style="font-family:宋体"}
+\# 对潜在外部AP进行反制。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1322_12350_352061166}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="EN-US"}
+Sysname wips
 
-[\[Sysname-wips\] countermeasure policy home]{lang="EN-US"}
+Sysname-wips countermeasure policy home
 
-[\[Sysname-wips-cms-home\] countermeasure potential-external-ap]{lang="EN-US"}
-:::
-
-::: {#656667968 .myid}
-[]{#_Toc404795239}[]{#struct_0_x1322_12350_253534272}
+Sysname-wips-cms-home countermeasure potential-external-ap
 
 **WIPS \-- WIPS配置命令 \-- countermeasure potential-rogue-ap**
 
 ------------------------------------------------------------------------
 
-[**[countermeasure ]{lang="IT"}[potential-rogue-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_1277161774}[命令对潜在]{style="font-family:宋体"}[Rogue AP]{lang="EN-US"}[进行反制。]{style="font-family:宋体"}
+**[countermeasure potential-rogue-ap**]命令对潜在Rogue AP进行反制。
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1322_12350_x568016816}**[countermeasure ]{lang="IT"}[potential-rogue-ap]{lang="EN-US"}**[命令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo **]**countermeasure potential-rogue-ap**命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_230022146}
+【命令】
 
-[**[countermeasure ]{lang="IT"}[potential-rogue-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_601117717}
+**[countermeasure potential-rogue-ap**]
 
-[**[undo countermeasure ]{lang="IT"}[potential-rogue-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_1918786523}
+**[undo countermeasure potential-rogue-ap**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_904654332}
+【缺省情况】
 
-[[不对潜在]{style="font-family:宋体"}[Rogue AP]{lang="EN-US"}]{#struct_0_x1322_12350_x326439746}[进行反制。]{style="font-family:宋体"}
+不对潜在Rogue AP进行反制。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1888033487}
+【视图】
 
-[[反制策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_414319311}
+反制策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1063274026}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x117961440}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1361813917}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1652918025}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x534632862}[对潜在]{style="font-family:宋体"}[Rogue AP]{lang="EN-US"}[进行反制。]{style="font-family:宋体"}
+\# 对潜在Rogue AP进行反制。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1322_12350_x964966224}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="EN-US"}
+Sysname wips
 
-[\[Sysname-wips\] countermeasure policy home]{lang="EN-US"}
+Sysname-wips countermeasure policy home
 
-[\[Sysname-wips-cms-home\] countermeasure potential-rogue-ap]{lang="EN-US"}
-:::
-
-::: {#-1073125243 .myid}
-[]{#_Toc404795240}[]{#struct_0_x1322_12350_x1764172471}
+Sysname-wips-cms-home countermeasure potential-rogue-ap
 
 **WIPS \-- WIPS配置命令 \-- countermeasure rogue-ap**
 
 ------------------------------------------------------------------------
 
-[**[countermeasure ]{lang="IT"}[rogue-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_x131762223}[命令对]{style="font-family:宋体"}[Rogue AP]{lang="EN-US"}[进行反制。]{style="font-family:宋体"}
+**[countermeasure rogue-ap**]命令对Rogue AP进行反制。
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1322_12350_x1703556114}**[countermeasure ]{lang="IT"}[rogue-ap]{lang="EN-US"}**[命令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo **]**countermeasure rogue-ap**命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1591263435}
+【命令】
 
-[**[countermeasure ]{lang="IT"}[rogue-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_x1527892384}
+**[countermeasure rogue-ap**]
 
-[**[undo countermeasure ]{lang="IT"}[rogue-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_971137641}
+**[undo countermeasure rogue-ap**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1284377732}
+【缺省情况】
 
-[[不对]{style="font-family:宋体"}[Rogue AP]{lang="EN-US"}]{#struct_0_x1322_12350_418108777}[进行反制。]{style="font-family:宋体"}
+不对Rogue AP进行反制。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x561725381}
+【视图】
 
-[[反制策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_1998874741}
+反制策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x73127403}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1721692285}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1210912649}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x205451337}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_1392928254}[对]{style="font-family:宋体"}[Rogue AP]{lang="EN-US"}[进行反制。]{style="font-family:宋体"}
+\# 对Rogue AP进行反制。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1322_12350_x1045450061}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="EN-US"}
+Sysname wips
 
-[\[Sysname-wips\] countermeasure policy home]{lang="EN-US"}
+Sysname-wips countermeasure policy home
 
-[\[Sysname-wips-cms-home\] countermeasure rogue-ap]{lang="EN-US"}
-:::
-
-::: {#-1278561958 .myid}
-[]{#_Toc404795241}[]{#struct_0_x1322_12350_681533878}
+Sysname-wips-cms-home countermeasure rogue-ap
 
 **WIPS \-- WIPS配置命令 \-- countermeasure unauthorized-client**
 
 ------------------------------------------------------------------------
 
-[**[countermeasure ]{lang="IT"}[unauthorized-client]{lang="EN-US"}**]{#struct_0_x1322_12350_1739099101}[命令对未授权的客户端进行反制。]{style="font-family:宋体"}
+**[countermeasure unauthorized-client**]命令对未授权的客户端进行反制。
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1322_12350_1618167127}**[countermeasure ]{lang="IT"}[unauthorized-client]{lang="EN-US"}**[命令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo **]**countermeasure unauthorized-client**命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1777632862}
+【命令】
 
-[**[countermeasure ]{lang="IT"}[unauthorized-client]{lang="EN-US"}**]{#struct_0_x1322_12350_x1393783397}
+**[countermeasure unauthorized-client**]
 
-[**[undo countermeasure ]{lang="IT"}[unauthorized-client]{lang="EN-US"}**]{#struct_0_x1322_12350_x1293295685}
+**[undo countermeasure unauthorized-client**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x415838424}
+【缺省情况】
 
-[[不对未授权的客户端进行反制。]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1388087301}
+不对未授权的客户端进行反制。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_224404732}
+【视图】
 
-[[反制策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_467726416}
+反制策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1067446955}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1429926171}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1771535278}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x196816567}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x423555107}[对未授权的客户端进行反制。]{style="font-family:宋体"}
+\# 对未授权的客户端进行反制。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1322_12350_x1990286488}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="EN-US"}
+Sysname wips
 
-[\[Sysname-wips\] countermeasure policy home]{lang="EN-US"}
+Sysname-wips countermeasure policy home
 
-[\[Sysname-wips-cms-home\] countermeasure unauthorized-client]{lang="EN-US"}
-:::
-
-::: {#62882517 .myid}
-[]{#_Toc404795242}[]{#struct_0_x1322_12350_x1068332562}
+Sysname-wips-cms-home countermeasure unauthorized-client
 
 **WIPS \-- WIPS配置命令 \-- countermeasure uncategorized-ap**
 
 ------------------------------------------------------------------------
 
-[**[countermeasure ]{lang="IT"}[uncategorized-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_x1617486936}[命令对未确定分类的]{style="font-family:
-宋体"}[AP]{lang="EN-US"}[进行反制。]{style="font-family:宋体"}
+**[countermeasure uncategorized-ap**]命令对未确定分类的AP进行反制。
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1322_12350_92238911}**[countermeasure ]{lang="IT"}[uncategorized-ap]{lang="EN-US"}**[命令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo **]**countermeasure uncategorized-ap**命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_207002030}
+【命令】
 
-[**[countermeasure ]{lang="IT"}[uncategorized-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_1860380806}
+**[countermeasure uncategorized-ap**]
 
-[**[undo countermeasure ]{lang="IT"}[uncategorized-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_1886082031}
+**[undo countermeasure uncategorized-ap**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x2132963779}
+【缺省情况】
 
-[[不对未确定分类的]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_x1322_12350_x1705736642}[进行反制。]{style="font-family:宋体"}
+不对未确定分类的AP进行反制。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x2111378652}
+【视图】
 
-[[反制策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1806308310}
+反制策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1368250751}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_141336180}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1562742957}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_361053339}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x1601724627}[对未确定分类的]{style="font-family:宋体"}[AP]{lang="EN-US"}[进行反制。]{style="font-family:宋体"}
+\# 对未确定分类的AP进行反制。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1322_12350_x1915650991}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="EN-US"}
+Sysname wips
 
-[\[Sysname-wips\] countermeasure policy home]{lang="EN-US"}
+Sysname-wips countermeasure policy home
 
-[\[Sysname-wips-cms-home\] countermeasure uncategorized-ap]{lang="EN-US"}
-:::
-
-::: {#-1843313838 .myid}
-[]{#_Toc404795243}[]{#struct_0_x1322_12350_x669708554}
+Sysname-wips-cms-home countermeasure uncategorized-ap
 
 **WIPS \-- WIPS配置命令 \-- countermeasure uncategorized-client**
 
 ------------------------------------------------------------------------
 
-[**[countermeasure ]{lang="IT"}[uncategorized-client]{lang="EN-US"}**]{#struct_0_x1322_12350_1199930513}[命令对未确定分类的客户端进行反制。]{style="font-family:宋体"}
+**[countermeasure uncategorized-client**]命令对未确定分类的客户端进行反制。
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1322_12350_x2112137337}**[countermeasure ]{lang="IT"}[uncategorized-client]{lang="EN-US"}**[命令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo **]**countermeasure uncategorized-client**命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1976379891}
+【命令】
 
-[**[countermeasure ]{lang="IT"}[uncategorized-client]{lang="EN-US"}**]{#struct_0_x1322_12350_680795056}
+**[countermeasure uncategorized-client**]
 
-[**[undo countermeasure ]{lang="IT"}[uncategorized-client]{lang="EN-US"}**]{#struct_0_x1322_12350_x1569323250}
+**[undo countermeasure uncategorized-client**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1594632610}
+【缺省情况】
 
-[[不对未确定分类的客户端进行反制。]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1724420299}
+不对未确定分类的客户端进行反制。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x151211253}
+【视图】
 
-[[反制策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_1360632604}
+反制策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1740096320}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1865724250}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1168759332}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1064333769}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_1454027198}[对未确定分类的客户端进行反制。]{style="font-family:宋体"}
+\# 对未确定分类的客户端进行反制。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1322_12350_856487115}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="EN-US"}
+Sysname wips
 
-[\[Sysname-wips\] countermeasure policy home]{lang="EN-US"}
+Sysname-wips countermeasure policy home
 
-[\[Sysname-wips-cms-home\] countermeasure uncategorized-client]{lang="EN-US"}
-:::
-
-::: {#-1475984815 .myid}
-[]{#_Toc404795244}[]{#struct_0_x1322_12350_x571874566}
+Sysname-wips-cms-home countermeasure uncategorized-client
 
 **WIPS \-- WIPS配置命令 \-- detect policy**
 
 ------------------------------------------------------------------------
 
-[**[detect policy]{lang="IT"}**]{#struct_0_x1322_12350_x570698388}[命令用来创建攻击检测策略，]{style="font-family:宋体"}[并进入]{style="font-family:宋体;color:black"}[攻击检测策略]{style="font-family:宋体"}[视图]{style="font-family:宋体;color:black"}[。]{style="font-family:宋体"}
+**[detect policy**]命令用来创建攻击检测策略，并进入攻击检测策略视图。
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1322_12350_994270704}**[detect policy]{lang="IT"}**[命令用来删除]{style="font-family:宋体"}[攻击检测策略。]{style="font-family:宋体"}
+**[undo **]**detect policy**命令用来删除攻击检测策略。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1313006982}
+【命令】
 
-[**[detect policy ]{lang="IT"}**]{#struct_0_x1322_12350_505781954}*[policy-name]{lang="IT"}*
+**[detect policy **]*policy-name*
 
-[**[undo detect policy ]{lang="IT"}**]{#struct_0_x1322_12350_599212766}*[policy-name]{lang="IT"}*
+**[undo detect policy **]*policy-name*
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1925233695}
+【缺省情况】
 
-[[不存在攻击检测策略。]{style="font-family:宋体"}]{#struct_0_x1322_12350_1527747050}
+不存在攻击检测策略。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1407686771}
+【视图】
 
-[[WIPS]{lang="EN-US"}]{#struct_0_x1322_12350_x1590096681}[视图]{style="font-family:宋体"}
+WIPS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x378660266}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_582550211}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x185463688}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1531826263}
+【参数】
 
-[*[policy-name]{lang="IT"}*]{#struct_0_x1322_12350_x10999070}[：攻击检测策略的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[policy-name*]：攻击检测策略的名称，为1～63个字符的字符串，区分大小写。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1313410617}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_135832593}[创建名为]{style="font-family:宋体"}[home]{lang="EN-US"}[的攻击检测策略，]{style="font-family:宋体"}[并进入]{style="font-family:宋体;color:black"}[攻击检测策略]{style="font-family:宋体"}[视图]{style="font-family:宋体;color:black"}[。]{style="font-family:宋体"}
+\# 创建名为home的攻击检测策略，并进入攻击检测策略视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1322_12350_48815664}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="EN-US"}
+Sysname wips
 
-[\[Sysname-wips\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\]]{lang="EN-US"}
-:::
-
-::: {#625505658 .myid}
-[]{#_Toc404795245}[]{#struct_0_x1322_12350_x1491709877}
+Sysname-wips-dtc-home
 
 **WIPS \-- WIPS配置命令 \-- display wips sensor**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **wips sensor**]{lang="EN-US"}]{#struct_0_x1322_12350_1376256635}[命令用来显示所有]{style="font-family:宋体"}[Sensor]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[display** **wips sensor**]命令用来显示所有Sensor的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_705294568}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **wips sensor**]{lang="EN-US"}]{#struct_0_x1322_12350_x692009627}
+**[display** **wips sensor**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x158397170}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_1778172402}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1055989277}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x494119894}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1322_12350_x1053422552}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x182522862}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1322_12350_x620930153}
+mdc-operator
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1085145527}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x1790198184}[显示所有]{style="font-family:宋体"}[Sensor]{lang="EN-US"}[的信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 显示所有Sensor的信息。
 
-[[\<Sysname\> display wips sensor]{lang="EN-US"}]{#struct_0_x1322_12350_1992328132}
+\<Sysname\> display wips sensor
 
-[Total number of sensors: 1]{lang="EN-US"}
+Total number of sensors: 1
 
-[AP ID    ]{lang="EN-US"}[Sensor]{lang="EN-US"}[ name                VSD name               Radio ID   Status]{lang="EN-US"}
+AP ID    Sensor name                VSD name               Radio ID   Status
 
-[3        ]{lang="EN-US"}[ap1]{lang="EN-US"}[     ]{lang="EN-US"}[    ]{lang="EN-US"}[               a]{lang="EN-US"}[aa]{lang="EN-US"}[                    1          Active]{lang="EN-US"}
+3        ap1               aaa                    1          Active
 
-[[表1-1 ]{lang="EN-US"}[display wips sensor]{lang="EN-US"}]{#struct_0_x1322_12350_1558098939}[命令显示信息描述表]{style="font-family:黑体"}
+表1-1 display wips sensor命令显示信息描述表
 
-[]{#table_struct_0_1227663715}[[字段]{style="font-family:黑体"}]{#struct_0_x1322_12350_1007143403}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1322_12350_1834463024}
+描述
 
-[[AP ID]{lang="EN-US"}]{#struct_0_x1322_12350_x70022860}
+AP ID
 
-[[AP]{lang="EN-US"}]{#struct_0_x1322_12350_259919504}[设备的]{style="font-family:宋体"}[ID]{lang="EN-US"}
+AP设备的ID
 
-[[Sensor name]{lang="EN-US"}]{#struct_0_x1322_12350_282044823}
+Sensor name
 
-[[AP]{lang="EN-US"}]{#struct_0_x1322_12350_x363934530}[设备名字]{lang="EN-US" style="font-family:宋体"}
+AP设备名字
 
-[[VSD name]{lang="EN-US"}]{#struct_0_x1322_12350_47772692}
+VSD name
 
-[[AP]{lang="EN-US"}]{#struct_0_x1322_12350_1904216886}[所在的虚拟安全域]{style="font-family:宋体"}
+AP所在的虚拟安全域
 
-[[Radio ID]{lang="EN-US"}]{#struct_0_x1322_12350_x88339110}
+Radio ID
 
-[[开启]{style="font-family:宋体"}[WIPS]{lang="EN-US"}]{#struct_0_x1322_12350_x326125276}[的]{style="font-family:宋体"}[Radio ID]{lang="EN-US"}
+开启WIPS的Radio ID
 
-[[Status]{lang="EN-US"}]{#struct_0_x1322_12350_403940095}
+Status
 
-[[Sensor]{lang="EN-US"}]{#struct_0_x1322_12350_1849163937}[的状态：]{style="font-family:宋体"}
+Sensor的状态：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Active]{lang="EN-US"}]{#struct_0_x1322_12350_x1978478821}[：]{lang="EN-US" style="font-family:宋体"}[已运行]{style="font-family:宋体"}[WIPS]{lang="EN-US"}[功能的]{style="font-family:宋体"}[Sensor]{lang="EN-US"}
+·Active：已运行WIPS功能的Sensor
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Inactive]{lang="EN-US"}]{#struct_0_x1322_12350_1826003445}[：]{lang="EN-US" style="font-family:宋体"}[未运行]{style="font-family:宋体"}[WIPS]{lang="EN-US"}[功能的]{style="font-family:宋体"}[Sensor]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-::: {#760488922 .myid}
-[]{#_Toc404795246}[]{#struct_0_x1322_12350_832606645}
+·Inactive：未运行WIPS功能的Sensor
 
 **WIPS \-- WIPS配置命令 \-- display wips statistics receive**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **wips statistics receive**]{lang="EN-US"}]{#struct_0_x1322_12350_x773888968}[命令用来显示所有虚拟安全域中]{style="font-family:宋体"}[AC]{lang="EN-US"}[收到]{style="font-family:宋体"}[Sensor]{lang="EN-US"}[上报的攻击检测信息。]{style="font-family:宋体"}
+**[display** **wips statistics receive**]命令用来显示所有虚拟安全域中AC收到Sensor上报的攻击检测信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_412835368}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **wips statistics receive**]{lang="EN-US"}]{#struct_0_x1322_12350_x1200391017}
+**[display** **wips statistics receive**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_833009621}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1444067985}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1299453451}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x438554348}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1322_12350_1228935180}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1119824656}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1322_12350_x559370655}
+mdc-operator
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1508504130}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_730002867}[显示所有的虚拟安全域中的]{style="font-family:宋体"}[AC]{lang="EN-US"}[收到]{style="font-family:宋体"}[Sensor]{lang="EN-US"}[上报的攻击检测信息。]{style="font-family:宋体"}
+\# 显示所有的虚拟安全域中的AC收到Sensor上报的攻击检测信息。
 
-[[\<Sysname\> display wips statistics receive]{lang="EN-US"}]{#struct_0_x1322_12350_x1306164437}
+\<Sysname\> display wips statistics receive
 
-[Information from sensor 3]{lang="EN-US"}
+Information from sensor 3
 
-[ Information about attack statistics:]{lang="EN-US"}
+ Information about attack statistics:
 
-[   Detected association-request flood messages: 0]{lang="EN-US"}
+   Detected association-request flood messages: 0
 
-[   Detected authentication flood messages: 0]{lang="EN-US"}
+   Detected authentication flood messages: 0
 
-[   Detected beacon flood messages: 0]{lang="EN-US"}
+   Detected beacon flood messages: 0
 
-[   Detected block-ack flood messages: 0]{lang="EN-US"}
+   Detected block-ack flood messages: 0
 
-[   Detected cts flood messages: 0]{lang="EN-US"}
+   Detected cts flood messages: 0
 
-[   Detected deauthentication flood messages: 0]{lang="EN-US"}
+   Detected deauthentication flood messages: 0
 
-[   Detected disassociation flood messages: 0]{lang="EN-US"}
+   Detected disassociation flood messages: 0
 
-[   Detected eapol-start flood messages: 0]{lang="EN-US"}
+   Detected eapol-start flood messages: 0
 
-[   Detected null-data flood messages: 0]{lang="EN-US"}
+   Detected null-data flood messages: 0
 
-[   Detected probe-request flood messages: 0]{lang="EN-US"}
+   Detected probe-request flood messages: 0
 
-[   Detected reassociation-request flood messages: 0]{lang="EN-US"}
+   Detected reassociation-request flood messages: 0
 
-[   Detected rts flood messages: 0]{lang="EN-US"}
+   Detected rts flood messages: 0
 
-[   Detected duplicated-ie messages: 0]{lang="EN-US"}
+   Detected duplicated-ie messages: 0
 
-[   Detected fata-jack messages: 0]{lang="EN-US"}
+   Detected fata-jack messages: 0
 
-[   Detected illegal-ibss-ess messages: 0]{lang="EN-US"}
+   Detected illegal-ibss-ess messages: 0
 
-[   Detected invalid-address-combination messages: 0]{lang="EN-US"}
+   Detected invalid-address-combination messages: 0
 
-[   Detected invalid-assoc-req messages: 0]{lang="EN-US"}
+   Detected invalid-assoc-req messages: 0
 
-[   Detected invalid-auth messages: 0]{lang="EN-US"}
+   Detected invalid-auth messages: 0
 
-[   Detected invalid-deauth-code messages: 0]{lang="EN-US"}
+   Detected invalid-deauth-code messages: 0
 
-[   Detected invalid-disassoc-code messages: 0]{lang="EN-US"}
+   Detected invalid-disassoc-code messages: 0
 
-[   Detected invalid-ht-ie messages: 0]{lang="EN-US"}
+   Detected invalid-ht-ie messages: 0
 
-[   Detected invalid-ie-length messages: 0]{lang="EN-US"}
+   Detected invalid-ie-length messages: 0
 
-[   Detected invalid-pkt-length messages: 0]{lang="EN-US"}
+   Detected invalid-pkt-length messages: 0
 
-[   Detected large-duration messages: 0]{lang="EN-US"}
+   Detected large-duration messages: 0
 
-[   Detected null-probe-resp messages: 0]{lang="EN-US"}
+   Detected null-probe-resp messages: 0
 
-[   Detected overflow-eapol-key messages: 0]{lang="EN-US"}
+   Detected overflow-eapol-key messages: 0
 
-[   Detected overflow-ssid messages: 0]{lang="EN-US"}
+   Detected overflow-ssid messages: 0
 
-[   Detected redundant-ie messages: 0]{lang="EN-US"}
+   Detected redundant-ie messages: 0
 
-[   Detected AP spoof AP messages: 0]{lang="EN-US"}
+   Detected AP spoof AP messages: 0
 
-[   Detected AP spoof client messages: 0]{lang="EN-US"}
+   Detected AP spoof client messages: 0
 
-[   Detected AP spoof ad-hoc messages: 0]{lang="EN-US"}
+   Detected AP spoof ad-hoc messages: 0
 
-[   Detected ad-hoc spoof AP messages: 0]{lang="EN-US"}
+   Detected ad-hoc spoof AP messages: 0
 
-[   Detected client spoof AP messages: 0]{lang="EN-US"}
+   Detected client spoof AP messages: 0
 
-[   Detected weak IV messages: 0]{lang="EN-US"}
+   Detected weak IV messages: 0
 
-[   Detected excess AP messages: 0]{lang="EN-US"}
+   Detected excess AP messages: 0
 
-[   Detected excess client messages: 0]{lang="EN-US"}
+   Detected excess client messages: 0
 
-[]{#struct_0_x1322_12350_x974627027}[[表1-2 ]{lang="EN-US"}[display wips statistics receive]{lang="EN-US"}]{#_Toc288831908}[命令显示信息描述表]{style="font-family:黑体"}
+表1-2 display wips statistics receive命令显示信息描述表
 
-[]{#table_struct_0_1255082007}[[字段]{style="font-family:黑体"}]{#struct_0_x1322_12350_1496533446}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1322_12350_696842805}
+描述
 
-[[Information from sensor n]{lang="EN-US"}]{#struct_0_x1322_12350_x54095632}
+Information from sensor n
 
-[[Sensor n]{lang="EN-US"}]{#struct_0_x1322_12350_1160861202}[发送的消息，]{style="font-family:宋体"}[n]{lang="EN-US"}[表示]{style="font-family:宋体"}[sensor ID]{lang="EN-US"}
+Sensor n发送的消息，n表示sensor ID
 
-[[Information about attack statistics]{lang="EN-US"}]{#struct_0_x1322_12350_740149087}
+Information about attack statistics
 
-[[关于攻击信息统计]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1594553991}
+关于攻击信息统计
 
-[[Detected association-request flood messages]{lang="EN-US"}]{#struct_0_x1322_12350_x1970450721}
+Detected association-request flood messages
 
-[[检测到关联请求帧的泛洪攻击消息的计数]{style="font-family:宋体"}]{#struct_0_x1322_12350_x336565258}
+检测到关联请求帧的泛洪攻击消息的计数
 
-[[Detected authentication flood messages]{lang="EN-US"}]{#struct_0_x1322_12350_553622386}
+Detected authentication flood messages
 
-[[检测到鉴权帧的泛洪攻击消息的计数]{style="font-family:宋体"}]{#struct_0_x1322_12350_1984985325}
+检测到鉴权帧的泛洪攻击消息的计数
 
-[[Detected beacon flood messages]{lang="EN-US"}]{#struct_0_x1322_12350_x1709448964}
+Detected beacon flood messages
 
-[[检测到]{style="font-family:宋体"}[Beacon]{lang="EN-US"}]{#struct_0_x1322_12350_322535478}[帧的泛洪攻击消息的计数]{style="font-family:宋体"}
+检测到Beacon帧的泛洪攻击消息的计数
 
-[[Detected block-ack flood messages]{lang="EN-US"}]{#struct_0_x1322_12350_1117149337}
+Detected block-ack flood messages
 
-[[检测到批量确认帧的泛洪攻击消息的计数]{style="font-family:宋体"}]{#struct_0_x1322_12350_1328428354}
+检测到批量确认帧的泛洪攻击消息的计数
 
-[[Detected cts flood messages]{lang="EN-US"}]{#struct_0_x1322_12350_x1765877713}
+Detected cts flood messages
 
-[[检测到允许发送帧的泛洪攻击消息的计数]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1975218565}
+检测到允许发送帧的泛洪攻击消息的计数
 
-[[Detected deauthentication flood messages]{lang="EN-US"}]{#struct_0_x1322_12350_x1730736693}
+Detected deauthentication flood messages
 
-[[检测到解鉴权帧的泛洪攻击消息的计数]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1266453056}
+检测到解鉴权帧的泛洪攻击消息的计数
 
-[[Detected disassociation flood messages]{lang="EN-US"}]{#struct_0_x1322_12350_x233420865}
+Detected disassociation flood messages
 
-[[检测到解关联帧的泛洪攻击消息的计数]{style="font-family:宋体"}]{#struct_0_x1322_12350_x143365023}
+检测到解关联帧的泛洪攻击消息的计数
 
-[[Detected eapol-start flood messages]{lang="EN-US"}]{#struct_0_x1322_12350_131052318}
+Detected eapol-start flood messages
 
-[[检测到握手开始帧的泛洪攻击消息的计数]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1154505031}
+检测到握手开始帧的泛洪攻击消息的计数
 
-[[Detected null-data flood messages]{lang="EN-US"}]{#struct_0_x1322_12350_x120477906}
+Detected null-data flood messages
 
-[[检测到空数据帧的泛洪攻击消息的计数]{style="font-family:宋体"}]{#struct_0_x1322_12350_1326746813}
+检测到空数据帧的泛洪攻击消息的计数
 
-[[Detected probe-request flood messages]{lang="EN-US"}]{#struct_0_x1322_12350_1234717258}
+Detected probe-request flood messages
 
-[[检测到探查请求帧的泛洪攻击消息的计数]{style="font-family:宋体"}]{#struct_0_x1322_12350_887404270}
+检测到探查请求帧的泛洪攻击消息的计数
 
-[[Detected reassociation-request flood messages]{lang="EN-US"}]{#struct_0_x1322_12350_525875142}
+Detected reassociation-request flood messages
 
-[[检测到重关联请求帧的泛洪攻击消息的计数]{style="font-family:宋体"}]{#struct_0_x1322_12350_x546649550}
+检测到重关联请求帧的泛洪攻击消息的计数
 
-[[Detected rts flood messages]{lang="EN-US"}]{#struct_0_x1322_12350_1100098311}
+Detected rts flood messages
 
-[[检测到请求发送帧的泛洪攻击消息的计数]{style="font-family:宋体"}]{#struct_0_x1322_12350_1533593793}
+检测到请求发送帧的泛洪攻击消息的计数
 
-[[Detected duplicated-ie messages]{lang="EN-US"}]{#struct_0_x1322_12350_1783793945}
+Detected duplicated-ie messages
 
-[[检测到重复的]{style="font-family:宋体"}[IE]{lang="EN-US"}]{#struct_0_x1322_12350_131793521}[畸形消息的计数]{style="font-family:宋体"}
+检测到重复的IE畸形消息的计数
 
-[[Detected fata-jack messages]{lang="EN-US"}]{#struct_0_x1322_12350_1198088656}
+Detected fata-jack messages
 
-[[检测到认证算法错畸形消息的计数]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1311001640}
+检测到认证算法错畸形消息的计数
 
-[[Detected illegal-ibss-ess messages]{lang="EN-US"}]{#struct_0_x1322_12350_1019434391}
+Detected illegal-ibss-ess messages
 
-[[检测到无效]{style="font-family:宋体"}[IBSS-ESS]{lang="EN-US"}]{#struct_0_x1322_12350_x988031212}[畸形消息的计数]{style="font-family:宋体"}
+检测到无效IBSS-ESS畸形消息的计数
 
-[[Detected invalid-address-combination messages]{lang="EN-US"}]{#struct_0_x1322_12350_1753659552}
+Detected invalid-address-combination messages
 
-[[检测到无效联合地址畸形消息的计数]{style="font-family:宋体"}]{#struct_0_x1322_12350_942953736}
+检测到无效联合地址畸形消息的计数
 
-[[Detected invalid-assoc-req messages]{lang="EN-US"}]{#struct_0_x1322_12350_676650180}
+Detected invalid-assoc-req messages
 
-[[检测到无效关联请求畸形消息的计数]{style="font-family:宋体"}]{#struct_0_x1322_12350_x30692836}
+检测到无效关联请求畸形消息的计数
 
-[[Detected invalid-auth messages]{lang="EN-US"}]{#struct_0_x1322_12350_x1319856487}
+Detected invalid-auth messages
 
-[[检测到无效鉴权畸形消息的计数]{style="font-family:宋体"}]{#struct_0_x1322_12350_x96310856}
+检测到无效鉴权畸形消息的计数
 
-[[Detected invalid-deauth-code messages]{lang="EN-US"}]{#struct_0_x1322_12350_x1982039069}
+Detected invalid-deauth-code messages
 
-[[检测到无效解鉴权码畸形消息的计数]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1054290672}
+检测到无效解鉴权码畸形消息的计数
 
-[[Detected invalid-disassoc-code messages]{lang="EN-US"}]{#struct_0_x1322_12350_x930178927}
+Detected invalid-disassoc-code messages
 
-[[检测到无效解关联码畸形消息的计数]{style="font-family:宋体"}]{#struct_0_x1322_12350_1926727398}
+检测到无效解关联码畸形消息的计数
 
-[[Detected invalid-ht-ie messages]{lang="EN-US"}]{#struct_0_x1322_12350_258195165}
+Detected invalid-ht-ie messages
 
-[[检测到无效]{style="font-family:宋体"}[HT IE]{lang="EN-US"}]{#struct_0_x1322_12350_1469773085}[畸形消息的计数]{style="font-family:宋体"}
+检测到无效HT IE畸形消息的计数
 
-[[Detected invalid-ie-length messages]{lang="EN-US"}]{#struct_0_x1322_12350_106869044}
+Detected invalid-ie-length messages
 
-[[检测到无效]{style="font-family:宋体"}[IE]{lang="EN-US"}]{#struct_0_x1322_12350_x773958778}[长度畸形消息的计数]{style="font-family:宋体"}
+检测到无效IE长度畸形消息的计数
 
-[[Detected invalid-pkt-length messages]{lang="EN-US"}]{#struct_0_x1322_12350_x2000658936}
+Detected invalid-pkt-length messages
 
-[[检测到无效报文长度畸形消息的计数]{style="font-family:宋体"}]{#struct_0_x1322_12350_x235481725}
+检测到无效报文长度畸形消息的计数
 
-[[Detected large-duration messages]{lang="EN-US"}]{#struct_0_x1322_12350_259985040}
+Detected large-duration messages
 
-[[检测到超大持续时间畸形消息的计数]{style="font-family:宋体"}]{#struct_0_x1322_12350_x53392701}
+检测到超大持续时间畸形消息的计数
 
-[[Detected null-probe-resp messages]{lang="EN-US"}]{#struct_0_x1322_12350_1437173029}
+Detected null-probe-resp messages
 
-[[检测到空探查回应畸形消息的计数]{style="font-family:宋体"}]{#struct_0_x1322_12350_213813653}
+检测到空探查回应畸形消息的计数
 
-[[Detected overflow-eapol-key messages]{lang="EN-US"}]{#struct_0_x1322_12350_2078023424}
+Detected overflow-eapol-key messages
 
-[[检测到]{style="font-family:宋体"}[eapol-key]{lang="EN-US"}]{#struct_0_x1322_12350_1826068981}[溢出畸形消息的计数]{style="font-family:宋体"}
+检测到eapol-key溢出畸形消息的计数
 
-[[Detected overflow-ssid messages]{lang="EN-US"}]{#struct_0_x1322_12350_1625610416}
+Detected overflow-ssid messages
 
-[[检测到]{style="font-family:宋体"}[SSID]{lang="EN-US"}]{#struct_0_x1322_12350_825832350}[溢出畸形消息的计数]{style="font-family:宋体"}
+检测到SSID溢出畸形消息的计数
 
-[[Detected redundant-ie messages]{lang="EN-US"}]{#struct_0_x1322_12350_x863968982}
+Detected redundant-ie messages
 
-[[检测到冗余的]{style="font-family:宋体"}[IE]{lang="EN-US"}]{#struct_0_x1322_12350_1422784454}[畸形消息的计数]{style="font-family:宋体"}
+检测到冗余的IE畸形消息的计数
 
-[[Detected AP spoof AP messages]{lang="EN-US"}]{#struct_0_x1322_12350_335372568}
+Detected AP spoof AP messages
 
-[[检测到]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_x1322_12350_508482979}[仿冒]{style="font-family:宋体"}[AP]{lang="EN-US"}[消息的计数]{style="font-family:宋体"}
+检测到AP仿冒AP消息的计数
 
-[[Detected AP spoof client messages]{lang="EN-US"}]{#struct_0_x1322_12350_x959433536}
+Detected AP spoof client messages
 
-[[检测到]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_x1322_12350_x28601159}[仿冒]{style="font-family:宋体"}[client]{lang="EN-US"}[消息的计数]{style="font-family:宋体"}
+检测到AP仿冒client消息的计数
 
-[[Detected AP spoof ad-hoc messages]{lang="EN-US"}]{#struct_0_x1322_12350_x1306098901}
+Detected AP spoof ad-hoc messages
 
-[[检测到]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_x1322_12350_x822763473}[仿冒]{style="font-family:宋体"}[ad-hoc]{lang="EN-US"}[消息的计数]{style="font-family:宋体"}
+检测到AP仿冒ad-hoc消息的计数
 
-[[Detected ad-hoc spoof AP messages]{lang="EN-US"}]{#struct_0_x1322_12350_x1243324597}
+Detected ad-hoc spoof AP messages
 
-[[检测到]{style="font-family:宋体"}[ad-hoc ]{lang="EN-US"}]{#struct_0_x1322_12350_x675150870}[仿冒]{style="font-family:宋体"}[AP]{lang="EN-US"}[消息的计数]{style="font-family:宋体"}
+检测到ad-hoc 仿冒AP消息的计数
 
-[[Detected client spoof AP messages]{lang="EN-US"}]{#struct_0_x1322_12350_x719846920}
+Detected client spoof AP messages
 
-[[检测到]{style="font-family:宋体"}[client]{lang="EN-US"}]{#struct_0_x1322_12350_x1709383428}[仿冒]{style="font-family:宋体"}[AP]{lang="EN-US"}[消息的计数]{style="font-family:宋体"}
+检测到client仿冒AP消息的计数
 
-[[Detected weak IV messages]{lang="EN-US"}]{#struct_0_x1322_12350_x863029071}
+Detected weak IV messages
 
-[[检测到弱向量消息的计数]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1771900896}
+检测到弱向量消息的计数
 
-[[Detected excess AP messages]{lang="EN-US"}]{#struct_0_x1322_12350_x94544342}
+Detected excess AP messages
 
-[[检测到]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_x1322_12350_x1474585419}[设备表项超过规格消息的计数]{style="font-family:宋体"}
+检测到AP设备表项超过规格消息的计数
 
-[[Detected excess client messages]{lang="EN-US"}]{#struct_0_x1322_12350_x143299487}
+Detected excess client messages
 
-[[检测到客户端设备表项超过规格消息的计数]{style="font-family:宋体"}]{#struct_0_x1322_12350_x736613865}
+检测到客户端设备表项超过规格消息的计数
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1834899313}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset]{lang="EN-US"}[ wips statistic]{lang="EN-US"}**]{#struct_0_x1322_12350_1114719311}**[s]{lang="EN-US"}**
-
-::: {#1987545254 .myid}
-[]{#_Toc404795247}[]{#struct_0_x1322_12350_661533954}
+·**reset wips statistic****s**
 
 **WIPS \-- WIPS配置命令 \-- display wips virtual-security-domain**
 
 ------------------------------------------------------------------------
 
-[**[display wips virtual-security-domain device]{lang="EN-US"}**]{#struct_0_x1322_12350_2001540925}[命令用来显示在指定虚拟安全域中检测到的无线设备的信息。]{style="font-family:宋体"}
+**[display wips virtual-security-domain device**]命令用来显示在指定虚拟安全域中检测到的无线设备的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_656545674}
+【命令】
 
-[**[display wips virtual-security-domain]{lang="EN-US"}**[ *vsd-name* **device** \[ **ap** \[ **ad-hoc** \| **authorized** \| **external** \| **misconfigured** \| **potential-authorized** \| **potential-external** \| **potential-rogue** \| **rogue** \| **uncategorized** \] \| **client** \[ **authorized** \| **misassociation** \| **unauthorized** \| **uncategorized** \] \| **mac-address** *mac-address* \] \[ **verbose** \]]{lang="EN-US"}]{#struct_0_x1322_12350_1731981568}
+**[display wips virtual-security-domain**[ *vsd-name* **device** [ **ap** [ **ad-hoc** \| **authorized** \| **external** \| **misconfigured** \| **potential-authorized** \| **potential-external** \| **potential-rogue** \| **rogue** \| **uncategorized** ] \| **client** [ **authorized** \| **misassociation** \| **unauthorized** \| **uncategorized** ] \| **mac-address** *mac-address* ]  **verbose** ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x898261154}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_513257699}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_171055935}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x546584014}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1322_12350_1143488193}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_2027087921}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1322_12350_1498985158}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_2044966236}
+【参数】
 
-[*[vsd-name]{lang="EN-US"}*]{#struct_0_x1322_12350_x163415449}[：虚拟安全域的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[vsd-name*]：虚拟安全域的名称，为1～63个字符的字符串，区分大小写。
 
-[**[device]{lang="EN-US"}**]{#struct_0_x1322_12350_966813775}[：显示所有设备的信息。]{style="font-family:宋体"}
+**[device**]：显示所有设备的信息。
 
-[**[ap]{lang="EN-US"}**]{#struct_0_x1322_12350_x1596874252}[：显示检测到]{style="font-family:宋体"}[AP]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[ap**]：显示检测到AP的信息。
 
-[**[ad-hoc]{lang="EN-US"}**]{#struct_0_x1322_12350_544983687}[：显示]{style="font-family:宋体"}[AP]{lang="EN-US"}[用于]{style="font-family:宋体"}[Ad hoc]{lang="EN-US"}[时的信息。]{style="font-family:宋体"}
+**[ad-hoc**]：显示AP用于Ad hoc时的信息。
 
-[**[authorized]{lang="EN-US"}**]{#struct_0_x1322_12350_x1174506043}[：显示授权]{style="font-family:宋体"}[AP]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[authorized**]：显示授权AP的信息。
 
-[**[external]{lang="EN-US"}**]{#struct_0_x1322_12350_168214008}[：显示外部]{style="font-family:宋体"}[AP]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[external**]：显示外部AP的信息。
 
-[**[misconfigured]{lang="EN-US"}**]{#struct_0_x1322_12350_1853847370}[：显示配置错误的]{style="font-family:宋体"}[AP]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[misconfigured**]：显示配置错误的AP的信息。
 
-[**[potential-authorized]{lang="EN-US"}**]{#struct_0_x1322_12350_1386214353}[：显示潜在授权]{style="font-family:宋体"}[AP]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[potential-authorized**]：显示潜在授权AP的信息。
 
-[**[potential-rogue]{lang="EN-US"}**]{#struct_0_x1322_12350_x1090303453}[：显示潜在]{style="font-family:宋体"}[Rogue AP]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[potential-rogue**]：显示潜在Rogue AP的信息。
 
-[**[potential-external]{lang="EN-US"}**]{#struct_0_x1322_12350_1316885062}[：显示潜在外部]{style="font-family:宋体"}[AP]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[potential-external**]：显示潜在外部AP的信息。
 
-[**[rogue]{lang="EN-US"}**]{#struct_0_x1322_12350_1019499927}[：显示]{style="font-family:宋体"}[Rogue AP]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[rogue**]：显示Rogue AP的信息。
 
-[**[uncategorized]{lang="EN-US"}**]{#struct_0_x1322_12350_x257411872}[：显示无法确定类别的]{style="font-family:宋体"}[AP]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[uncategorized**]：显示无法确定类别的AP的信息。
 
-[**[client]{lang="EN-US"}**]{#struct_0_x1322_12350_436764147}[：显示客户端的信息。]{style="font-family:宋体"}
+**[client**]：显示客户端的信息。
 
-[**[authorized]{lang="EN-US"}**]{#struct_0_x1322_12350_1812116521}[：显示授权客户端的信息。]{style="font-family:宋体"}
+**[authorized**]：显示授权客户端的信息。
 
-[**[misassociation]{lang="EN-US"}**]{#struct_0_x1322_12350_x30020038}[：显示误关联客户端的信息。]{style="font-family:宋体"}
+**[misassociation**]：显示误关联客户端的信息。
 
-[**[unauthorized]{lang="EN-US"}**]{#struct_0_x1322_12350_1055191224}[：显示未授权客户端的信息。]{style="font-family:宋体"}
+**[unauthorized**]：显示未授权客户端的信息。
 
-[**[uncategorized]{lang="EN-US"}**]{#struct_0_x1322_12350_x852709291}[：显示无法确定类别的客户端的信息。]{style="font-family:宋体"}
+**[uncategorized**]：显示无法确定类别的客户端的信息。
 
-[**[mac-address]{lang="EN-US"}**[ *mac-address*]{lang="EN-US"}]{#struct_0_x1322_12350_x1033297166}[：显示指定]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的无线设备的信息。]{style="font-family:宋体"}
+**[mac-address** *mac-address*]：显示指定MAC地址的无线设备的信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_x1322_12350_x2070458076}[：显示检测到设备的详细信息。]{style="font-family:宋体"}
+**[verbose**]：显示检测到设备的详细信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1189693991}
+【举例】
 
-[[\#]{lang="EN-US"}]{#struct_0_x1322_12350_422511260}[ ]{lang="EN-US"}[显示在虚拟安全]{style="font-family:宋体"}[域]{style="font-family:宋体"}[office]{lang="EN-US"}[中的检测到的]{style="font-family:宋体"}[所有无线设备信息。]{style="font-family:宋体"}
+\#显示在虚拟安全域office中的检测到的所有无线设备信息。
 
-[[\<Sysname\> display wips virtual-security-domain office device]{lang="EN-US"}]{#struct_0_x1322_12350_x96245320}
+\<Sysname\> display wips virtual-security-domain office device
 
-[Total 200 detected devices in virtual-security-domain a]{lang="EN-US"}
+Total 200 detected devices in virtual-security-domain a
 
-[ ]{lang="EN-US"}
+Class: Auth - authorization; Ext - extern; Mis - mistake;
 
-[Class: Auth - authorization; Ext - extern; Mis - mistake;]{lang="EN-US"}
+       Unauth - unauthorized; Uncate - uncategorized;
 
-[       Unauth - unauthorized; Uncate - uncategorized;]{lang="EN-US"}
+       (A) - associate; (C) - config; (P) - potential
 
-[       (A) - associate; (C) - config; (P) - potential]{lang="EN-US"}
+MAC address    Type   Class    Duration    Sensors Channel Status
 
-[ ]{lang="EN-US"}
+1000-0000-0000 AP     Ext(P)   00h 10m 46s 1       11      Active
 
-[MAC address    Type   Class    Duration    Sensors Channel Status]{lang="EN-US"}
+1000-0000-0001 AP     Ext(P)   00h 10m 46s 1       6       Active
 
-[1000-0000-0000 AP     Ext(P)   00h 10m 46s 1       11      Active]{lang="EN-US"}
+1000-0000-0002 AP     Ext(P)   00h 10m 46s 1       1       Active
 
-[1000-0000-0001 AP     Ext(P)   00h 10m 46s 1       6       Active]{lang="EN-US"}
+表1-3 display wips virtual-security-domain device命令显示信息描述表
 
-[1000-0000-0002 AP     Ext(P)   00h 10m 46s 1       1       Active]{lang="EN-US"}
+字段
 
-[[表1-3 ]{lang="EN-US"}[display wips virtual-security-domain device]{lang="EN-US"}]{#struct_0_x1322_12350_x867598571}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_1243205901}[[字段]{style="font-family:黑体"}]{#struct_0_x1322_12350_1549499472}
-:::
+MAC Address
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1415881533}
+检测到的无线设备的MAC地址
 
-[[MAC Address]{lang="EN-US"}]{#struct_0_x1322_12350_x36230536}
+Type
 
-[[检测到的无线设备的]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1322_12350_2000185328}[地址]{style="font-family:宋体"}
+无线设备的类型：
 
-[[Type]{lang="EN-US"}]{#struct_0_x1322_12350_x2141364723}
+·AP：AP设备
 
-[[无线设备的类型：]{style="font-family:宋体"}]{#struct_0_x1322_12350_x958000019}
+·Client：无线客户端
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[AP]{lang="EN-US"}]{#struct_0_x1322_12350_1881534884}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[设备]{style="font-family:宋体"}
+Class
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Client]{lang="EN-US"}]{#struct_0_x1322_12350_x208189117}[：无线客户端]{style="font-family:宋体"}
+无线设备的分类类别
 
-[[Class]{lang="EN-US"}]{#struct_0_x1322_12350_1825049171}
+Duration
 
-[[无线设备的分类类别]{style="font-family:宋体"}]{#struct_0_x1322_12350_1727090008}
+无线设备的当前状态的持续时间
 
-[[Duration]{lang="EN-US"}]{#struct_0_x1322_12350_1469838621}
+Sensors
 
-[[无线设备的当前状态的持续时间]{style="font-family:宋体"}]{#struct_0_x1322_12350_x237326866}
+检测到该无线设备的Sensor的数量
 
-[[Sensors]{lang="EN-US"}]{#struct_0_x1322_12350_x2003175166}
+Channel
 
-[[检测到该无线设备的]{style="font-family:宋体"}[Sensor]{lang="EN-US"}]{#struct_0_x1322_12350_1705613446}[的数量]{style="font-family:宋体"}
+最后一次检测到该无线设备的信道
 
-[[Channel]{lang="EN-US"}]{#struct_0_x1322_12350_x1834307832}
+Status
 
-[[最后一次检测到该无线设备的信道]{style="font-family:宋体"}]{#struct_0_x1322_12350_x635304327}
+AP或客户端表项的状态：
 
-[[Status ]{lang="EN-US"}]{#struct_0_x1322_12350_1380388835}
+·Active：AP或客户端表项处于激活状态
 
-[[AP]{lang="EN-US"}]{#struct_0_x1322_12350_x246295872}[或客户端表项的状态：]{style="font-family:宋体"}
+·Inactive：AP或客户端表项处于非激活状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Active]{lang="EN-US"}]{#struct_0_x1322_12350_x1595034924}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[或客户端表项处于激活状态]{style="font-family:宋体"}
+\<Sysname\> display wips virtual-security-domain office device verbose
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Inactive]{lang="EN-US"}]{#struct_0_x1322_12350_260050576}[：]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[或客户端表项处于非激活状态]{style="font-family:宋体"}
+Total 1 detected devices in virtual-security-domain a
 
-[ ]{lang="EN-US"}
+ AP: 1000-0000-0000
 
-[[\<Sysname\> display wips virtual-security-domain office device verbose]{lang="EN-US"}]{#struct_0_x1322_12350_1826134517}
+   Classification: Mis(C)
 
-[Total 1 detected devices in virtual-security-domain a]{lang="EN-US"}
+   Status: Active
 
-[ ]{lang="EN-US"}
+   Status duration: 00h 27m 57s
 
-[ AP: 1000-0000-0000]{lang="EN-US"}
+   Vendor: Not found
 
-[   Classification: Mis(C)]{lang="EN-US"}
+   SSID:service
 
-[   Status: Active]{lang="EN-US"}
+   Radio type: 802.11g
 
-[   Status duration: 00h 27m 57s]{lang="EN-US"}
+   Countermeasuring: No
 
-[   Vendor: Not found]{lang="EN-US"}
+   Security: None
 
-[   SSID:service]{lang="EN-US"}
+   Encrypt method: None
 
-[   Radio type: 802.11g]{lang="EN-US"}
+   Authentication method: None
 
-[   Countermeasuring: No]{lang="EN-US"}
+   Broadcast SSID: No
 
-[   Security: None]{lang="EN-US"}
+   Qos supported: No
 
-[   Encrypt method: None]{lang="EN-US"}
+   Ad-hoc: No
 
-[   Authentication method: None]{lang="EN-US"}
+   Beacon interval: 0 millisecond
 
-[   Broadcast SSID: No]{lang="EN-US"}
+   Up duration: 00h 27m 57s
 
-[   Qos supported: No]{lang="EN-US"}
+   Total number of reported sensors: 1
 
-[   Ad-hoc: No]{lang="EN-US"}
+     Sensor 1:
 
-[   Beacon interval: 0 millisecond]{lang="EN-US"}
+       Sensor ID: 3
 
-[   Up duration: 00h 27m 57s]{lang="EN-US"}
+       Sensor name: 1
 
-[   Total number of reported sensors: 1]{lang="EN-US"}
+       Radio ID: 1
 
-[     Sensor 1:]{lang="EN-US"}
+       RSSI: 15
 
-[       Sensor ID: 3]{lang="EN-US"}
+       Channel: 6
 
-[       Sensor name: 1]{lang="EN-US"}
+       First reported time: 2014-06-03/09:05:51
 
-[       Radio ID: 1]{lang="EN-US"}
+       Last reported time: 2014-06-03/09:05:51
 
-[       RSSI: 15]{lang="EN-US"}
+   Total number of associated clients: 10
 
-[       Channel: 6]{lang="EN-US"}
+     01: 2000-0000-0000
 
-[       First reported time: 2014-06-03/09:05:51]{lang="EN-US"}
+     02: 2000-0000-0001
 
-[       Last reported time: 2014-06-03/09:05:51]{lang="EN-US"}
+     03: 2000-0000-0002
 
-[   Total number of associated clients: 10]{lang="EN-US"}
+     04: 2000-0000-0003
 
-[     01: 2000-0000-0000]{lang="EN-US"}
+     05: 2000-0000-0004
 
-[     02: 2000-0000-0001]{lang="EN-US"}
+     06: 2000-0000-0005
 
-[     03: 2000-0000-0002]{lang="EN-US"}
+     07: 2000-0000-0006
 
-[     04: 2000-0000-0003]{lang="EN-US"}
+     08: 2000-0000-0007
 
-[     05: 2000-0000-0004]{lang="EN-US"}
+     09: 2000-0000-0008
 
-[     06: 2000-0000-0005]{lang="EN-US"}
+     10: 2000-0000-0009
 
-[     07: 2000-0000-0006]{lang="EN-US"}
+表1-4 display wips virtual-security-domain device verbose命令显示信息描述表
 
-[     08: 2000-0000-0007]{lang="EN-US"}
+字段
 
-[     09: 2000-0000-0008]{lang="EN-US"}
+描述
 
-[     10: 2000-0000-0009]{lang="EN-US"}
+Total *number* detected devices in virtual-security-domain *name*
 
-[[表1-4 ]{lang="EN-US"}[display wips virtual-security-domain device verbose]{lang="EN-US"}]{#struct_0_x1322_12350_1250976086}[命令显示信息描述表]{style="font-family:黑体"}
+在指定虚拟安全域中检测到无线设备的总数
 
-[]{#table_struct_0_1243822937}[[字段]{style="font-family:黑体"}]{#struct_0_x1322_12350_851732560}
+AP
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1322_12350_301497567}
+检测到AP的MAC地址
 
-[[Total *number* detected devices in virtual-security-domain *name*]{lang="EN-US"}]{#struct_0_x1322_12350_1259166036}
+Classification
 
-[[在指定虚拟安全域中检测到无线设备的总数]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1256560305}
+AP或无线客户端的分类：
 
-[[AP]{lang="EN-US"}]{#struct_0_x1322_12350_x1407208356}
+·对于AP设备有以下几种分类类别：
 
-[[检测到]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_x1322_12350_x1565886521}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+¡ad_hoc、authorized、rogue、misconfigured、external、potential-authorized、potential-rogue、potential-external、uncategorized
 
-[[Classification]{lang="EN-US"}]{#struct_0_x1322_12350_1311620728}
+·对于无线客户端有以下几种分类类别：
 
-[[AP]{lang="EN-US"}]{#struct_0_x1322_12350_x1534786335}[或无线客户端的分类：]{style="font-family:宋体"}
+¡authorized、unauthorized、misassociated、uncategorized
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于]{style="font-family:宋体"}]{#struct_0_x1322_12350_x2072902246}[AP]{lang="EN-US"}[设备有以下几种分类类别：]{style="font-family:宋体"}
+Status
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[ad_hoc]{lang="EN-US"}]{#struct_0_x1322_12350_1422849990}[、]{lang="EN-US" style="font-family:宋体"}[authorized]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[rogue]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[misconfigured]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[external]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[potential-authorized]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[potential-rogue]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[potential-external]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[uncategorized]{lang="EN-US"}
+AP或客户端表项的状态：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于无线客户端有以下几种分类类别：]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1237365678}
+·Active：AP或客户端表项处于激活状态
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[authorized]{lang="EN-US"}]{#struct_0_x1322_12350_x523615668}[、]{lang="EN-US" style="font-family:宋体"}[unauthorized]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[misassociated]{lang="EN-US"}[、]{lang="EN-US" style="font-family:宋体"}[uncategorized]{lang="EN-US"}
+·Inactive：AP或客户端表项处于非激活状态
 
-[[Status]{lang="EN-US"}]{#struct_0_x1322_12350_508535754}
+Status duration
 
-[[AP]{lang="EN-US"}]{#struct_0_x1322_12350_1341441126}[或客户端表项的状态：]{style="font-family:宋体"}
+设备当前状态的持续时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Active]{lang="EN-US"}]{#struct_0_x1322_12350_x279857169}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[或客户端表项处于激活状态]{style="font-family:宋体"}
+Vendor
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Inactive]{lang="EN-US"}]{#struct_0_x1322_12350_364988936}[：]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[或客户端表项处于非激活状态]{style="font-family:宋体"}
+如果该设备的OUI能够匹配**import oui**命令导入配置文件中的OUI，则显示设备厂商，没有配置或者没有匹配到显示为Not found
 
-[[Status duration]{lang="EN-US"}]{#struct_0_x1322_12350_1755468632}
+SSID
 
-[[设备当前状态的持续时间]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1935685273}
+AP提供的SSID
 
-[[Vendor]{lang="EN-US"}]{#struct_0_x1322_12350_708931906}
+Radio Type
 
-[[如果该设备的]{style="font-family:宋体"}[OUI]{lang="EN-US"}]{#struct_0_x1322_12350_x1306033365}[能够匹配]{style="font-family:宋体"}**[import oui]{lang="EN-US"}**[命令导入配置文件中的]{style="font-family:宋体"}[OUI]{lang="EN-US"}[，则显示设备厂商，没有配置或者没有匹配到显示为]{style="font-family:宋体"}[Not found]{lang="EN-US"}
+无线设备使用的射频模式
 
-[[SSID]{lang="EN-US"}]{#struct_0_x1322_12350_1412711087}
+Countermeasuring
 
-[[AP]{lang="EN-US"}]{#struct_0_x1322_12350_x1989636063}[提供的]{style="font-family:宋体"}[SSID]{lang="EN-US"}
+·No：没有被反制或是已经被通知反制过
 
-[[Radio Type]{lang="EN-US"}]{#struct_0_x1322_12350_143428025}
+·Yes：正在被反制
 
-[[无线设备使用的射频模式]{style="font-family:宋体"}]{#struct_0_x1322_12350_323491168}
+Security
 
-[[Countermeasuring]{lang="EN-US"}]{#struct_0_x1322_12350_x1478519073}
+无线服务使用的安全方式：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No]{lang="EN-US"}]{#struct_0_x1322_12350_x398261752}[：没有被反制或是已经被通知反制过]{style="font-family:宋体"}
+·None：未配置安全方式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Yes]{lang="EN-US"}]{#struct_0_x1322_12350_x1466388253}[：正在被反制]{style="font-family:宋体"}
+·WEP：WEP（Wired Equivalent Privacy，有线等效加密）方式
 
-[[Security]{lang="EN-US"}]{#struct_0_x1322_12350_x1709317892}
+·WPA：WPA（Wi-Fi Protected Access，WIFI保护访问）方式
 
-[[无线服务使用的安全方式：]{style="font-family:宋体"}]{#struct_0_x1322_12350_14747980}
+·WPA2：WPA第二版方式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[None]{lang="EN-US"}]{#struct_0_x1322_12350_x320700303}[：未配置安全方式]{style="font-family:宋体"}
+Encrypt method
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[WEP]{lang="EN-US"}]{#struct_0_x1322_12350_776208763}[：]{style="font-family:宋体"}[WEP]{lang="EN-US"}[（]{style="font-family:宋体"}[Wired Equivalent Privacy]{lang="EN-US"}[，]{lang="EN-US" style="font-family:宋体"}[有线等效加密）方式]{style="font-family:宋体"}
+无线数据的加密方式：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[WPA]{lang="EN-US"}]{#struct_0_x1322_12350_x208508287}[：]{style="font-family:宋体"}[WPA]{lang="EN-US"}[（]{style="font-family:宋体"}[Wi-Fi Protected Access]{lang="EN-US"}[，]{lang="EN-US" style="font-family:宋体"}[WIFI]{lang="EN-US"}[保护访问]{lang="EN-US" style="font-family:宋体"}[）方式]{style="font-family:宋体"}
+·TKIP：TKIP（Temporal Key Integrity Protocol，`临时密钥完整性协议`）加密
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[WPA2]{lang="EN-US"}]{#struct_0_x1322_12350_687445539}[：]{style="font-family:宋体"}[WPA]{lang="EN-US"}[第二版方式]{style="font-family:宋体"}
+·CCMP：CCMP（Counter mode with CBC-MAC Protocol，`[计数器模式搭配密码块链接－消息验证码协议`]）加密
 
-[[Encrypt method]{lang="EN-US"}]{#struct_0_x1322_12350_x1802734376}
+·WEP：WEP（Wired Equivalent Privacy，有线等效加密）加密
 
-[[无线数据的加密方式：]{lang="EN-US" style="font-family:
-  宋体"}]{#struct_0_x1322_12350_x1063320411}
+·None：无加密方式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TKIP]{lang="EN-US"}]{#struct_0_x1322_12350_x143233951}[：]{style="font-family:宋体"}[TKIP]{lang="EN-US"}[（]{style="font-family:宋体"}[Temporal Key Integrity Protocol]{lang="EN-US"}[，]{style="font-family:宋体"}`临时密钥完整性协议`[）加密]{style="font-family:宋体"}
+Authentication method
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[CCMP]{lang="EN-US"}]{#struct_0_x1322_12350_1722850316}[：]{style="font-family:宋体"}[CCMP]{lang="EN-US"}[（]{style="font-family:宋体"}[Counter mode with CBC-MAC Protocol]{lang="EN-US"}[，]{style="font-family:宋体"}[`[计数器模式]搭配[密码块链接－消息验证码]协议`]{lang="EN-US"}[）加密]{style="font-family:
-  宋体"}
+AP提供的接入无线网络的认证方式：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[WEP]{lang="EN-US"}]{#struct_0_x1322_12350_1509700312}[：]{style="font-family:宋体"}[WEP]{lang="EN-US"}[（]{style="font-family:宋体"}[Wired Equivalent Privacy]{lang="EN-US"}[，]{lang="EN-US" style="font-family:宋体"}[有线等效加密）加密]{style="font-family:宋体"}
+·None：无认证方式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[None]{lang="EN-US"}]{#struct_0_x1322_12350_x811719801}[：无加密方式]{lang="EN-US" style="font-family:宋体"}
+·PSK： 采用PSK认证方式
 
-[[Authentication method]{lang="EN-US"}]{#struct_0_x1322_12350_x1857617155}
+·802.1X：采用802.1X认证方式
 
-[[AP]{lang="EN-US"}]{#struct_0_x1322_12350_1184705582}[提供的接入无线网络的认证方式：]{style="font-family:宋体"}
+·Others：采用除PSK和802.1X之外的认证方式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[None]{lang="EN-US"}]{#struct_0_x1322_12350_1902296592}[：无认证方式]{style="font-family:宋体"}
+Broadcast SSID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PSK]{lang="EN-US"}]{#struct_0_x1322_12350_x546518478}[：]{style="font-family:宋体"} [采用]{style="font-family:宋体"}[PSK]{lang="EN-US"}[认证方式]{style="font-family:宋体"}
+设备是否是广播SSID，如果AP不广播SSID，显示信息的SSID显示为空
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[802.1X]{lang="EN-US"}]{#struct_0_x1322_12350_313046539}[：]{lang="EN-US" style="font-family:宋体"}[ ]{lang="EN-US"}[采用]{lang="EN-US" style="font-family:宋体"}[802.1X]{lang="EN-US"}[认证方式]{lang="EN-US" style="font-family:宋体"}
+Qos supported
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Others]{lang="EN-US"}]{#struct_0_x1322_12350_1455736333}[：]{lang="EN-US" style="font-family:宋体"}[ ]{lang="EN-US"}[采用除]{lang="EN-US" style="font-family:宋体"}[PSK]{lang="EN-US"}[和]{lang="EN-US" style="font-family:宋体"}[802.1X]{lang="EN-US"}[之外的认证方式]{lang="EN-US" style="font-family:宋体"}
+是否支持QoS
 
-[[Broadcast SSID]{lang="EN-US"}]{#struct_0_x1322_12350_71788817}
+Ad-hoc
 
-[[设备是否是广播]{style="font-family:宋体"}[SSID]{lang="EN-US"}]{#struct_0_x1322_12350_x633622543}[，如果]{style="font-family:宋体"}[AP]{lang="EN-US"}[不广播]{style="font-family:宋体"}[SSID]{lang="EN-US"}[，显示信息的]{style="font-family:宋体"}[SSID]{lang="EN-US"}[显示为空]{style="font-family:宋体"}
+是否是ad hoc
 
-[[Qos supported]{lang="EN-US"}]{#struct_0_x1322_12350_692702222}
+Beacon interval
 
-[[是否支持]{style="font-family:宋体"}[QoS]{lang="EN-US"}]{#struct_0_x1322_12350_1019565463}
+信标间隔，单位为毫秒
 
-[[Ad-hoc]{lang="EN-US"}]{#struct_0_x1322_12350_1763074637}
+Up duration
 
-[[是否是]{style="font-family:宋体"}[ad hoc]{lang="EN-US"}]{#struct_0_x1322_12350_1711875642}
+AP设备从启动到当前的持续时间
 
-[[Beacon interval]{lang="EN-US"}]{#struct_0_x1322_12350_101802481}
+Total number of reported sensors
 
-[[信标间隔，单位为毫秒]{style="font-family:宋体"}]{#struct_0_x1322_12350_1712445328}
+发现该设备的Sensor的数量
 
-[[Up duration]{lang="EN-US"}]{#struct_0_x1322_12350_x1597087117}
+Sensor *n*
 
-[[AP]{lang="EN-US"}]{#struct_0_x1322_12350_x96179784}[设备从启动到当前的持续时间]{style="font-family:宋体"}
+发现该设备的Sensor，*n*为系统自动的编号
 
-[[Total number of reported sensors]{lang="EN-US"}]{#struct_0_x1322_12350_88494496}
+Sensor ID
 
-[[发现该设备的]{style="font-family:宋体"}[Sensor]{lang="EN-US"}]{#struct_0_x1322_12350_x904376751}[的数量]{style="font-family:宋体"}
+Sensor的ID，即Sensor的APID
 
-[[Sensor *n*]{lang="EN-US"}]{#struct_0_x1322_12350_x135669188}
+Sensor name
 
-[[发现该设备的]{style="font-family:宋体"}[Sensor]{lang="EN-US"}]{#struct_0_x1322_12350_1164776218}[，]{style="font-family:宋体"}*[n]{lang="EN-US"}*[为系统自动的编号]{style="font-family:宋体"}
+检测到该无线设备的Sensor的名字
 
-[[Sensor ID]{lang="EN-US"}]{#struct_0_x1322_12350_1469904157}
+Radio ID
 
-[[Sensor]{lang="EN-US"}]{#struct_0_x1322_12350_494019862}[的]{style="font-family:宋体"}[ID]{lang="EN-US"}[，即]{style="font-family:宋体"}[Sensor]{lang="EN-US"}[的]{style="font-family:宋体"}[APID]{lang="EN-US"}
+发现该设备的Sensor上的RadioID
 
-[[Sensor name]{lang="EN-US"}]{#struct_0_x1322_12350_x1596927156}
+RSSI
 
-[[检测到该无线设备的]{style="font-family:宋体"}[Sensor]{lang="EN-US"}]{#struct_0_x1322_12350_1500147847}[的名字]{style="font-family:宋体"}
+Sensor的信号强度
 
-[[Radio ID]{lang="EN-US"}]{#struct_0_x1322_12350_260116112}
+Channel
 
-[[发现该设备的]{style="font-family:宋体"}[Sensor]{lang="EN-US"}]{#struct_0_x1322_12350_210406304}[上的]{style="font-family:宋体"}[RadioID]{lang="EN-US"}
+该Sensor最近一次探测到该设备的信道
 
-[[RSSI]{lang="EN-US"}]{#struct_0_x1322_12350_1338942162}
+First reported time
 
-[[Sensor]{lang="EN-US"}]{#struct_0_x1322_12350_740359468}[的信号强度]{style="font-family:宋体"}
+该Sensor第一次检测到该AP或无线客户端的时间
 
-[[Channel]{lang="EN-US"}]{#struct_0_x1322_12350_x1384457163}
+Last reported time
 
-[[该]{style="font-family:宋体"}[Sensor]{lang="EN-US"}]{#struct_0_x1322_12350_1826200053}[最近一次探测到该设备的信道]{style="font-family:宋体"}
+该Sensor最近一次检测到该AP或无线客户端的时间
 
-[[First reported time]{lang="EN-US"}]{#struct_0_x1322_12350_470823973}
+Total number of associated clients
 
-[[该]{style="font-family:宋体"}[Sensor]{lang="EN-US"}]{#struct_0_x1322_12350_190130328}[第一次检测到该]{style="font-family:宋体"}[AP]{lang="EN-US"}[或无线客户端的时间]{style="font-family:宋体"}
+关联该设备的Client的数量
 
-[[Last reported time]{lang="EN-US"}]{#struct_0_x1322_12350_x1819168918}
+n
 
-[[该]{style="font-family:宋体"}[Sensor]{lang="EN-US"}]{#struct_0_x1322_12350_1422915526}[最近一次检测到该]{style="font-family:宋体"}[AP]{lang="EN-US"}[或无线客户端的时间]{style="font-family:宋体"}
+AP上关联的无线客户端的MAC地址，*n*为系统自动的编号
 
-[[Total number of associated clients]{lang="EN-US"}]{#struct_0_x1322_12350_1130157286}
+【相关命令】
 
-[[关联该设备的]{style="font-family:宋体"}[Client]{lang="EN-US"}]{#struct_0_x1322_12350_272217891}[的数量]{style="font-family:宋体"}
-
-[[n]{lang="EN-US"}]{#struct_0_x1322_12350_x50738218}
-
-[[AP]{lang="EN-US"}]{#struct_0_x1322_12350_1319700450}[上关联的无线客户端的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，]{style="font-family:宋体"}*[n]{lang="EN-US"}*[为系统自动的编号]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1826751689}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset]{lang="EN-US"}[ wips virtual-security-domain device]{lang="EN-US"}**]{#struct_0_x1322_12350_50243602}
-
-::: {#-198961570 .myid}
-[]{#_Toc404795248}[]{#struct_0_x1322_12350_x1305967829}
+·**reset wips virtual-security-domain device**
 
 **WIPS \-- WIPS配置命令 \-- display wips virtual-security-domain countermeasure record**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**]{#struct_0_x1322_12350_x1308311734}**[ wips virtual-security-domain]{lang="EN-US"}***[ ]{lang="EN-US"}***[countermeasure record]{lang="EN-US"}**[命令用来显示被反制过设备的信息。]{style="font-family:宋体"}
+**[display**]** wips virtual-security-domain******countermeasure record**命令用来显示被反制过设备的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x497417538}
+【命令】
 
-[**[display]{lang="EN-US"}**]{#struct_0_x1322_12350_x57369919}**[ wips virtual-security-domain ]{lang="EN-US"}***[vsd-name]{lang="EN-US"}***[ countermeasure record]{lang="EN-US"}**
+**[display**]** wips virtual-security-domain ***vsd-name*** countermeasure record**
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x683349674}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_1101272164}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_811350776}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1925016830}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1322_12350_170653444}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1594427986}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1322_12350_1515483213}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1950177584}
+【参数】
 
-[*[vsd-name]{lang="IT"}*]{#struct_0_x1322_12350_x1371883057}[：]{style="font-family:宋体"}[虚拟安全域的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[vsd-name*]：虚拟安全域的名称，为1～63个字符的字符串，区分大小写。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1755223301}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_1998840614}[显示被反制过设备的信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 显示被反制过设备的信息。
 
-[[\<Sysname\> display wips virtual-security-domain office countermeasure record]{lang="EN-US"}]{#struct_0_x1322_12350_x1709252356}
+\<Sysname\> display wips virtual-security-domain office countermeasure record
 
-[Total 3 times countermeasure, current 3 countermeasure record in virtual-]{lang="EN-US"}
+Total 3 times countermeasure, current 3 countermeasure record in virtual-
 
-[security-domain a]{lang="EN-US"}
+security-domain a
 
-[ ]{lang="EN-US"}
+Class: Auth - authorization; Ext - extern; Mis - mistake;
 
-[Class: Auth - authorization; Ext - extern; Mis - mistake;]{lang="EN-US"}
+       Unauth - unauthorized; Uncate - uncategorized;
 
-[       Unauth - unauthorized; Uncate - uncategorized;]{lang="EN-US"}
+       (A) - associate; (C) - config; (P) - potential
 
-[       (A) - associate; (C) - config; (P) - potential]{lang="EN-US"}
+MAC address    Type   Class    Sensor name            Radio ID   Time
 
-[ ]{lang="EN-US"}
+1000-0000-00e3 AP     Mis(C)   ap1                    1          2014-06-03/09:32:01
 
-[MAC address    Type   Class    Sensor name            Radio ID   Time]{lang="EN-US"}
+1000-0000-00e4 AP     Mis(C)   ap2                    1          2014-06-03/09:32:11
 
-[1000-0000-00e3 AP     Mis(C)   ap1                    1          2014-06-03/09:32:01]{lang="EN-US"}
+2000-0000-f282 Client Uncate   ap3                    1          2014-06-03/09:31:56
 
-[1000-0000-00e4 AP     Mis(C)   ap2                    1          2014-06-03/09:32:11]{lang="EN-US"}
+表1-5 display wips virtual-security-domain countermeasure record命令显示信息描述表
 
-[2000-0000-f282 Client Uncate   ap3                    1          2014-06-03/09:31:56]{lang="EN-US"}
+字段
 
-[[表1-5 ]{lang="EN-US"}[display wips virtual-security-domain countermeasure record]{lang="EN-US"}]{#struct_0_x1322_12350_1024546499}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_1269415689}[[字段]{style="font-family:黑体"}]{#struct_0_x1322_12350_x698529264}
-:::
+Total 3 times countermeasure, current 1024 countermeasure record in virtual-
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1322_12350_822545560}
+security-domain a
 
-[[Total 3 times countermeasure, current 1024 countermeasure record in virtual-]{lang="EN-US"}]{#struct_0_x1322_12350_1889726260}
+累计成功通知反制次数，当前成功通知反制次数，最多可以显示1024条反制记录
 
-[[security-domain a]{lang="EN-US"}]{#struct_0_x1322_12350_1935499341}
+MAC Address
 
-[[累计成功通知反制次数，当前成功通知反制次数，最多可以显示]{style="font-family:宋体"}[1024]{lang="EN-US"}]{#struct_0_x1322_12350_2066695376}[条反制记录]{style="font-family:宋体"}
+检测到的无线设备的MAC地址
 
-[[MAC Address]{lang="EN-US"}]{#struct_0_x1322_12350_x1423012201}
+Type
 
-[[检测到的无线设备的]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1322_12350_x143168415}[地址]{style="font-family:宋体"}
+无线设备的类型：
 
-[[Type]{lang="EN-US"}]{#struct_0_x1322_12350_848803236}
+·AP：AP设备
 
-[[无线设备的类型：]{style="font-family:宋体"}]{#struct_0_x1322_12350_x382031929}
+·Client：客户端
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[AP]{lang="EN-US"}]{#struct_0_x1322_12350_1157019811}[：]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[设备]{lang="EN-US" style="font-family:宋体"}
+Class
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Client]{lang="EN-US"}]{#struct_0_x1322_12350_721704269}[：客户端]{lang="EN-US" style="font-family:宋体"}
+无线设备的分类类别
 
-[[Class]{lang="EN-US"}]{#struct_0_x1322_12350_x118488464}
+Sensor name
 
-[[无线设备的分类类别]{style="font-family:宋体"}]{#struct_0_x1322_12350_1524660091}
+发起反制设备的Sensor名字
 
-[[Sensor name]{lang="EN-US"}]{#struct_0_x1322_12350_x774425690}
+Radio ID
 
-[[发起反制设备的]{style="font-family:宋体"}[Sensor]{lang="EN-US"}]{#struct_0_x1322_12350_x216178600}[名字]{style="font-family:宋体"}
+发起反制设备的Sensor的Radio ID
 
-[[Radio ID]{lang="EN-US"}]{#struct_0_x1322_12350_x1378978062}
+Time
 
-[[发起反制设备的]{style="font-family:宋体"}[Sensor]{lang="EN-US"}]{#struct_0_x1322_12350_x546452942}[的]{style="font-family:宋体"}[Radio ID]{lang="EN-US"}
+通知反制的时间
 
-[[Time]{lang="EN-US"}]{#struct_0_x1322_12350_x1153095653}
+【相关命令】
 
-[[通知反制的时间]{style="font-family:宋体"}]{#struct_0_x1322_12350_1756497264}
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1169558451}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset wips virtual-security-domain countermeasure record]{lang="EN-US"}**]{#struct_0_x1322_12350_790482806}
-
-::: {#1241614459 .myid}
-[]{#_Toc404795249}[]{#struct_0_x1322_12350_639479878}
+·**reset wips virtual-security-domain countermeasure record**
 
 **WIPS \-- WIPS配置命令 \-- flood association-request**
 
 ------------------------------------------------------------------------
 
-[**[flood association-request]{lang="EN-US"}**]{#struct_0_x1322_12350_1542952257}[命令用来配置检测关联请求帧泛洪攻击。]{style="font-family:
-宋体"}
+**[flood association-request**]命令用来配置检测关联请求帧泛洪攻击。
 
-[**[undo]{lang="EN-US"}**[ **flood association-request**]{lang="EN-US"}]{#struct_0_x1322_12350_x2115413637}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **flood association-request**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1019630999}
+【命令】
 
-[**[flood association-request]{lang="EN-US"}**[ \[ **interval** ]{lang="EN-US"}]{#struct_0_x1322_12350_2127824106}*[interval-value]{lang="IT"}***[ ]{lang="IT"}**[\| **quiet** ]{lang="EN-US"}*[quiet-value ]{lang="IT"}*[\| **threshold** ]{lang="EN-US"}*[number ]{lang="IT"}*[\] \*]{lang="EN-US"}
+**[flood association-request** [ **interval** ]*interval-value*****[\| **quiet** ]*quiet-value *[\| **threshold** ]*number * \*]
 
-[**[undo flood association-request]{lang="EN-US"}**]{#struct_0_x1322_12350_184701931}
+**[undo flood association-request**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1342135624}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1184832028}[对关联请求帧泛洪攻击进行检测]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不对关联请求帧泛洪攻击进行检测。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1712694571}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x454738693}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1176082317}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_76815932}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_30339665}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1611654177}
+【参数】
 
-[**[interval]{lang="EN-US"}***[ interval-value]{lang="EN-US"}*]{#struct_0_x1322_12350_714192311}[：检测关联请求帧的统计周期，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+**[interval*** interval-value*]：检测关联请求帧的统计周期，取值范围为1～3600，单位为秒，缺省值为60秒。
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_x96114248}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，设备在统计周期内收到的关联请求帧即使达到触发告警阈值，设备也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，设备在统计周期内收到的关联请求帧即使达到触发告警阈值，设备也不会发送告警日志。
 
-[**[threshold]{lang="EN-US"}**]{#struct_0_x1322_12350_69863919}*[ number]{lang="IT"}*[：检测关联请求帧达到触发阈值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[100000]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[50]{lang="EN-US"}[。当设备检测到的关联请求帧达到触发阈值，即判定设备受到关联请求帧泛洪攻击，设备会发送告警日志。]{style="font-family:宋体"}
+**[threshold**]* number*：检测关联请求帧达到触发阈值，取值范围为1～100000，缺省值为50。当设备检测到的关联请求帧达到触发阈值，即判定设备受到关联请求帧泛洪攻击，设备会发送告警日志。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1662180200}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x1194110036}[配置检测关联请求帧泛洪攻击，统计周期为]{style="font-family:宋体"}[100]{lang="EN-US"}[秒，触发告警阈值为]{style="font-family:宋体"}[100]{lang="EN-US"}[，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测关联请求帧泛洪攻击，统计周期为100秒，触发告警阈值为100，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_626711741}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] flood association-request interval 100 threshold 100 quiet 360]{lang="EN-US"}
-:::
-
-::: {#-1430138956 .myid}
-[]{#_Toc404795250}[]{#struct_0_x1322_12350_1208837666}
+Sysname-wips-dtc-home flood association-request interval 100 threshold 100 quiet 360
 
 **WIPS \-- WIPS配置命令 \-- flood authentication**
 
 ------------------------------------------------------------------------
 
-[**[flood authentication]{lang="EN-US"}**]{#struct_0_x1322_12350_x834895687}[命令用来配置检测认证请求帧泛洪攻击。]{style="font-family:宋体"}
+**[flood authentication**]命令用来配置检测认证请求帧泛洪攻击。
 
-[**[undo]{lang="EN-US"}**[ **flood authentication**]{lang="EN-US"}]{#struct_0_x1322_12350_1153604632}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **flood authentication**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x907521440}
+【命令】
 
-[**[flood authentication]{lang="EN-US"}**[ \[ **interval** ]{lang="EN-US"}]{#struct_0_x1322_12350_x998873630}*[interval-value]{lang="IT"}***[ ]{lang="IT"}**[\| **quiet** ]{lang="EN-US"}*[quiet-value ]{lang="IT"}*[\| **threshold** ]{lang="EN-US"}*[number ]{lang="IT"}*[\] \*]{lang="EN-US"}
+**[flood authentication** [ **interval** ]*interval-value*****[\| **quiet** ]*quiet-value *[\| **threshold** ]*number * \*]
 
-[**[undo flood authentication]{lang="EN-US"}**]{#struct_0_x1322_12350_1469969693}
+**[undo flood authentication**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1792728463}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_1120955909}[对认证请求帧泛洪攻击进行检测]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不对认证请求帧泛洪攻击进行检测。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_160486632}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1604121575}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_551850919}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1627530425}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x430689474}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1324487443}
+【参数】
 
-[**[interval]{lang="EN-US"}***[ interval-value]{lang="EN-US"}*]{#struct_0_x1322_12350_1668923069}[：检测认证请求帧的统计周期，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+**[interval*** interval-value*]：检测认证请求帧的统计周期，取值范围为1～3600，单位为秒，缺省值为60秒。
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_x817713029}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，设备在统计周期内收到的认证请求帧即使达到触发告警阈值，设备也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，设备在统计周期内收到的认证请求帧即使达到触发告警阈值，设备也不会发送告警日志。
 
-[**[threshold]{lang="EN-US"}**]{#struct_0_x1322_12350_x1043434255}*[ number]{lang="IT"}*[：检测认证请求帧达到触发阈值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[100000]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[50]{lang="EN-US"}[。当设备检测到的认证请求帧达到触发阈值，即判定设备受到认证请求帧泛洪攻击，设备会发送告警日志。]{style="font-family:宋体"}
+**[threshold**]* number*：检测认证请求帧达到触发阈值，取值范围为1～100000，缺省值为50。当设备检测到的认证请求帧达到触发阈值，即判定设备受到认证请求帧泛洪攻击，设备会发送告警日志。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1332453592}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_2109000416}[配置检测认证请求帧泛洪攻击，统计周期为]{style="font-family:宋体"}[100]{lang="EN-US"}[秒，触发告警阈值为]{style="font-family:宋体"}[100]{lang="EN-US"}[，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测认证请求帧泛洪攻击，统计周期为100秒，触发告警阈值为100，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_260181648}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-wips\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] flood authentication interval 100 threshold 100 quiet 360]{lang="EN-US"}
-:::
-
-::: {#1282382495 .myid}
-[]{#_Toc404795251}[]{#struct_0_x1322_12350_207486766}
+Sysname-wips-dtc-home flood authentication interval 100 threshold 100 quiet 360
 
 **WIPS \-- WIPS配置命令 \-- flood beacon**
 
 ------------------------------------------------------------------------
 
-[**[flood beacon]{lang="EN-US"}**]{#struct_0_x1322_12350_1572826763}[命令用来配置检测]{style="font-family:宋体"}[Beacon]{lang="EN-US"}[帧泛洪攻击。]{style="font-family:宋体"}
+**[flood beacon**]命令用来配置检测Beacon帧泛洪攻击。
 
-[**[undo]{lang="EN-US"}**[ **flood beacon**]{lang="EN-US"}]{#struct_0_x1322_12350_838332326}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **flood beacon**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x410641213}
+【命令】
 
-[**[flood beacon]{lang="EN-US"}**[ \[ **interval** ]{lang="EN-US"}]{#struct_0_x1322_12350_1665228355}*[interval-value]{lang="IT"}***[ ]{lang="IT"}**[\| **quiet** ]{lang="EN-US"}*[quiet-value ]{lang="IT"}*[\| **threshold** ]{lang="EN-US"}*[number ]{lang="IT"}*[\] \*]{lang="EN-US"}
+**[flood beacon** [ **interval** ]*interval-value*****[\| **quiet** ]*quiet-value *[\| **threshold** ]*number * \*]
 
-[**[undo flood beacon]{lang="EN-US"}**]{#struct_0_x1322_12350_1485352762}
+**[undo flood beacon**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_695176797}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_x232991163}[对]{style="font-family:宋体"}[Beacon]{lang="EN-US"}[帧泛洪攻击进行检测]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不对Beacon帧泛洪攻击进行检测。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_191589975}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1182256035}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1533297422}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x2115717239}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_883422735}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x429338350}
+【参数】
 
-[**[interval]{lang="EN-US"}***[ interval-value]{lang="EN-US"}*]{#struct_0_x1322_12350_1826265589}[：检测]{style="font-family:宋体"}[Beacon]{lang="EN-US"}[帧的统计周期，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+**[interval*** interval-value*]：检测Beacon帧的统计周期，取值范围为1～3600，单位为秒，缺省值为60秒。
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_x328804791}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，设备在统计周期内收到的]{style="font-family:宋体"}[Beacon]{lang="EN-US"}[帧即使达到触发告警阈值，设备也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，设备在统计周期内收到的Beacon帧即使达到触发告警阈值，设备也不会发送告警日志。
 
-[**[threshold]{lang="EN-US"}**]{#struct_0_x1322_12350_x912773257}*[ number]{lang="IT"}*[：检测]{style="font-family:宋体"}[Beacon]{lang="EN-US"}[帧达到触发阈值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[100000]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[50]{lang="EN-US"}[。当设备检测到的]{style="font-family:宋体"}[Beacon]{lang="EN-US"}[帧达到触发阈值，即判定设备受到]{style="font-family:宋体"}[Beacon]{lang="EN-US"}[帧泛洪攻击，设备会发送告警日志。]{style="font-family:宋体"}
+**[threshold**]* number*：检测Beacon帧达到触发阈值，取值范围为1～100000，缺省值为50。当设备检测到的Beacon帧达到触发阈值，即判定设备受到Beacon帧泛洪攻击，设备会发送告警日志。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_2096919788}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_219099496}[配置检测]{style="font-family:宋体"}[Beacon]{lang="EN-US"}[帧泛洪攻击，统计周期为]{style="font-family:宋体"}[100]{lang="EN-US"}[秒，触发告警阈值为]{style="font-family:宋体"}[100]{lang="EN-US"}[，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测Beacon帧泛洪攻击，统计周期为100秒，触发告警阈值为100，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_1920277833}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] flood beacon interval 100 threshold 100 quiet 360]{lang="EN-US"}
-:::
-
-::: {#2041321568 .myid}
-[]{#_Toc404795252}[]{#struct_0_x1322_12350_x505757820}
+Sysname-wips-dtc-home flood beacon interval 100 threshold 100 quiet 360
 
 **WIPS \-- WIPS配置命令 \-- flood block-ack**
 
 ------------------------------------------------------------------------
 
-[**[flood block-ack]{lang="EN-US"}**]{#struct_0_x1322_12350_x1651486893}[命令用来配置检测]{style="font-family:宋体"}[Block ACK]{lang="EN-US"}[帧泛洪攻击。]{style="font-family:宋体"}
+**[flood block-ack**]命令用来配置检测Block ACK帧泛洪攻击。
 
-[**[undo]{lang="EN-US"}**[ **flood block-ack**]{lang="EN-US"}]{#struct_0_x1322_12350_678190270}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **flood block-ack**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1732152995}
+【命令】
 
-[**[flood block-ack]{lang="EN-US"}**[ \[ **interval** ]{lang="EN-US"}]{#struct_0_x1322_12350_x203371953}*[interval-value]{lang="IT"}***[ ]{lang="IT"}**[\| **quiet** ]{lang="EN-US"}*[quiet-value ]{lang="IT"}*[\| **threshold** ]{lang="EN-US"}*[number ]{lang="IT"}*[\] \*]{lang="EN-US"}
+**[flood block-ack** [ **interval** ]*interval-value*****[\| **quiet** ]*quiet-value *[\| **threshold** ]*number * \*]
 
-[**[undo flood block-ack]{lang="EN-US"}**]{#struct_0_x1322_12350_1422981062}
+**[undo flood block-ack**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1859692374}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_x220972142}[对]{style="font-family:宋体"}[Block ACK]{lang="EN-US"}[帧泛洪攻击进行检测]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不对Block ACK帧泛洪攻击进行检测。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1770263825}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_227118802}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_176128843}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1941810996}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_388973269}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1149467178}
+【参数】
 
-[**[interval]{lang="EN-US"}***[ interval-value]{lang="EN-US"}*]{#struct_0_x1322_12350_x855502158}[：检测]{style="font-family:宋体"}[Block ACK]{lang="EN-US"}[帧的统计周期，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+**[interval*** interval-value*]：检测Block ACK帧的统计周期，取值范围为1～3600，单位为秒，缺省值为60秒。
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_x1492055751}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，设备在统计周期内收到的]{style="font-family:宋体"}[Block ACK]{lang="EN-US"}[帧即使达到触发告警阈值，设备也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，设备在统计周期内收到的Block ACK帧即使达到触发告警阈值，设备也不会发送告警日志。
 
-[**[threshold]{lang="EN-US"}**]{#struct_0_x1322_12350_x352829760}*[ number]{lang="IT"}*[：检测]{style="font-family:宋体"}[Block ACK]{lang="EN-US"}[帧达到触发阈值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[100000]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[50]{lang="EN-US"}[。当设备检测到的]{style="font-family:宋体"}[Block ACK]{lang="EN-US"}[帧达到触发阈值，即判定设备受到]{style="font-family:宋体"}[Block ACK]{lang="EN-US"}[帧泛洪攻击，设备会发送告警日志。]{style="font-family:宋体"}
+**[threshold**]* number*：检测Block ACK帧达到触发阈值，取值范围为1～100000，缺省值为50。当设备检测到的Block ACK帧达到触发阈值，即判定设备受到Block ACK帧泛洪攻击，设备会发送告警日志。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x311549112}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x1305902293}[配置检测]{style="font-family:宋体"}[Block ACK]{lang="EN-US"}[帧泛洪攻击，统计周期为]{style="font-family:宋体"}[100]{lang="EN-US"}[秒，触发告警阈值为]{style="font-family:宋体"}[100]{lang="EN-US"}[，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测Block ACK帧泛洪攻击，统计周期为100秒，触发告警阈值为100，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x1185410156}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] flood block-ack interval 100 threshold 100 quiet 360]{lang="EN-US"}
-:::
-
-::: {#2138890372 .myid}
-[]{#_Toc404795253}[]{#struct_0_x1322_12350_521723039}
+Sysname-wips-dtc-home flood block-ack interval 100 threshold 100 quiet 360
 
 **WIPS \-- WIPS配置命令 \-- flood cts**
 
 ------------------------------------------------------------------------
 
-[**[flood cts]{lang="EN-US"}**]{#struct_0_x1322_12350_x514526102}[命令用来配置检测]{style="font-family:宋体"}[CTS]{lang="EN-US"}[帧泛洪攻击。]{style="font-family:宋体"}
+**[flood cts**]命令用来配置检测CTS帧泛洪攻击。
 
-[**[undo]{lang="EN-US"}**[ **flood cts**]{lang="EN-US"}]{#struct_0_x1322_12350_9747379}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **flood cts**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1903840887}
+【命令】
 
-[**[flood cts]{lang="EN-US"}**[ \[ **interval** ]{lang="EN-US"}]{#struct_0_x1322_12350_x744217878}*[interval-value]{lang="IT"}***[ ]{lang="IT"}**[\| **quiet** ]{lang="EN-US"}*[quiet-value ]{lang="IT"}*[\| **threshold** ]{lang="EN-US"}*[number ]{lang="IT"}*[\] \*]{lang="EN-US"}
+**[flood cts** [ **interval** ]*interval-value*****[\| **quiet** ]*quiet-value *[\| **threshold** ]*number * \*]
 
-[**[undo flood cts]{lang="EN-US"}**]{#struct_0_x1322_12350_787728799}
+**[undo flood cts**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1964991053}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_x2117875899}[对]{style="font-family:宋体"}[CTS]{lang="EN-US"}[帧泛洪攻击进行检测]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不对CTS帧泛洪攻击进行检测。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_858195537}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_1104075055}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_528837364}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x613748230}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1709186820}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x553872411}
+【参数】
 
-[**[interval]{lang="EN-US"}***[ interval-value]{lang="EN-US"}*]{#struct_0_x1322_12350_358812119}[：检测]{style="font-family:宋体"}[CTS]{lang="EN-US"}[帧的统计周期，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+**[interval*** interval-value*]：检测CTS帧的统计周期，取值范围为1～3600，单位为秒，缺省值为60秒。
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_x606280846}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，设备在统计周期内收到的]{style="font-family:宋体"}[CTS]{lang="EN-US"}[帧即使达到触发告警阈值，设备也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，设备在统计周期内收到的CTS帧即使达到触发告警阈值，设备也不会发送告警日志。
 
-[**[threshold]{lang="EN-US"}**]{#struct_0_x1322_12350_x1723404101}*[ number]{lang="IT"}*[：检测]{style="font-family:宋体"}[CTS]{lang="EN-US"}[帧达到触发阈值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[100000]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[50]{lang="EN-US"}[。当设备检测到的]{style="font-family:宋体"}[CTS]{lang="EN-US"}[帧达到触发阈值，即判定设备受到]{style="font-family:宋体"}[CTS]{lang="EN-US"}[帧泛洪攻击，设备会发送告警日志。]{style="font-family:宋体"}
+**[threshold**]* number*：检测CTS帧达到触发阈值，取值范围为1～100000，缺省值为50。当设备检测到的CTS帧达到触发阈值，即判定设备受到CTS帧泛洪攻击，设备会发送告警日志。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1022314379}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x167091818}[配置检测]{style="font-family:宋体"}[CTS]{lang="EN-US"}[帧泛洪攻击，统计周期为]{style="font-family:宋体"}[100]{lang="EN-US"}[秒，触发告警阈值为]{style="font-family:宋体"}[100]{lang="EN-US"}[，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测CTS帧泛洪攻击，统计周期为100秒，触发告警阈值为100，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x74738438}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] flood cts interval 100 threshold 100 quiet 360]{lang="EN-US"}
-:::
-
-::: {#1856061406 .myid}
-[]{#_Toc404795254}[]{#struct_0_x1322_12350_x898220392}
+Sysname-wips-dtc-home flood cts interval 100 threshold 100 quiet 360
 
 **WIPS \-- WIPS配置命令 \-- flood deauthentication**
 
 ------------------------------------------------------------------------
 
-[**[flood deauthentication]{lang="EN-US"}**]{#struct_0_x1322_12350_x1428216454}[命令用来配置检测解认证帧（单播、广播）泛洪攻击。]{style="font-family:宋体"}
+**[flood deauthentication**]命令用来配置检测解认证帧（单播、广播）泛洪攻击。
 
-[**[undo]{lang="EN-US"}**[ **flood deauthentication**]{lang="EN-US"}]{#struct_0_x1322_12350_x576537178}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **flood deauthentication**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x978695829}
+【命令】
 
-[**[flood deauthentication]{lang="EN-US"}**[ \[ **interval** ]{lang="EN-US"}]{#struct_0_x1322_12350_x1551540080}*[interval-value]{lang="IT"}***[ ]{lang="IT"}**[\| **quiet** ]{lang="EN-US"}*[quiet-value ]{lang="IT"}*[\| **threshold** ]{lang="EN-US"}*[number ]{lang="IT"}*[\] \*]{lang="EN-US"}
+**[flood deauthentication** [ **interval** ]*interval-value*****[\| **quiet** ]*quiet-value *[\| **threshold** ]*number * \*]
 
-[**[undo flood deauthentication]{lang="EN-US"}**]{#struct_0_x1322_12350_2121603270}
+**[undo flood deauthentication**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x143102879}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_1334257552}[对解认证帧泛洪攻击进行检测]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不对解认证帧泛洪攻击进行检测。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x126961777}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_1681487443}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1173083322}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_744008100}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1312857835}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1875802297}
+【参数】
 
-[**[interval]{lang="EN-US"}***[ interval-value]{lang="EN-US"}*]{#struct_0_x1322_12350_x1023206084}[：检测解认证帧的统计周期，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+**[interval*** interval-value*]：检测解认证帧的统计周期，取值范围为1～3600，单位为秒，缺省值为60秒。
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_2106772422}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，设备在统计周期内收到的解认证帧即使达到触发告警阈值，设备也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，设备在统计周期内收到的解认证帧即使达到触发告警阈值，设备也不会发送告警日志。
 
-[**[threshold]{lang="EN-US"}**]{#struct_0_x1322_12350_x360829418}*[ number]{lang="IT"}*[：检测解认证帧达到触发阈值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[100000]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[50]{lang="EN-US"}[。当设备检测到的解认证帧达到触发阈值，即判定设备受到解认证帧泛洪攻击，设备会发送告警日志。]{style="font-family:宋体"}
+**[threshold**]* number*：检测解认证帧达到触发阈值，取值范围为1～100000，缺省值为50。当设备检测到的解认证帧达到触发阈值，即判定设备受到解认证帧泛洪攻击，设备会发送告警日志。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x140775030}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x927288413}[配置检测解认证帧泛洪攻击，统计周期为]{style="font-family:宋体"}[100]{lang="EN-US"}[秒，触发告警阈值为]{style="font-family:宋体"}[100]{lang="EN-US"}[，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测解认证帧泛洪攻击，统计周期为100秒，触发告警阈值为100，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x546387406}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] flood ]{lang="EN-US"}[deauthentication inter]{lang="IT"}[val 100 threshold 100 quiet 360]{lang="EN-US"}
-:::
-
-::: {#-1518267263 .myid}
-[]{#_Toc404795255}[]{#struct_0_x1322_12350_x820852219}
+Sysname-wips-dtc-home flood deauthentication interval 100 threshold 100 quiet 360
 
 **WIPS \-- WIPS配置命令 \-- flood disassociation**
 
 ------------------------------------------------------------------------
 
-[**[flood disassociation]{lang="EN-US"}**]{#struct_0_x1322_12350_446425873}[命令用来配置检测解关联帧泛洪攻击。]{style="font-family:宋体"}
+**[flood disassociation**]命令用来配置检测解关联帧泛洪攻击。
 
-[**[undo]{lang="EN-US"}**[ **flood disassociation**]{lang="EN-US"}]{#struct_0_x1322_12350_1230084662}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **flood disassociation**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1138639541}
+【命令】
 
-[**[flood disassociation]{lang="EN-US"}**[ \[ **interval** ]{lang="EN-US"}]{#struct_0_x1322_12350_867058962}*[interval-value]{lang="IT"}***[ ]{lang="IT"}**[\| **quiet** ]{lang="EN-US"}*[quiet-value ]{lang="IT"}*[\| **threshold** ]{lang="EN-US"}*[number ]{lang="IT"}*[\] \*]{lang="EN-US"}
+**[flood disassociation** [ **interval** ]*interval-value*****[\| **quiet** ]*quiet-value *[\| **threshold** ]*number * \*]
 
-[**[undo flood disassociation]{lang="EN-US"}**]{#struct_0_x1322_12350_x474270503}
+**[undo flood disassociation**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1027800611}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_1414670873}[对解关联帧泛洪攻击进行检测]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不对解关联帧泛洪攻击进行检测。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x518519588}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_860160706}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x596075749}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1880718579}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x414593712}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x181308242}
+【参数】
 
-[**[interval]{lang="EN-US"}***[ interval-value]{lang="EN-US"}*]{#struct_0_x1322_12350_1019696535}[：检测解关联帧的统计周期，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+**[interval*** interval-value*]：检测解关联帧的统计周期，取值范围为1～3600，单位为秒，缺省值为60秒。
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_983887382}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，设备在统计周期内收到的解关联帧即使达到触发告警阈值，设备也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，设备在统计周期内收到的解关联帧即使达到触发告警阈值，设备也不会发送告警日志。
 
-[**[threshold]{lang="EN-US"}**]{#struct_0_x1322_12350_x1966299064}*[ number]{lang="IT"}*[：检测解关联帧达到触发阈值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[100000]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[50]{lang="EN-US"}[。当设备检测到的解关联帧达到触发阈值，即判定设备受到解关联帧泛洪攻击，设备会发送告警日志。]{style="font-family:宋体"}
+**[threshold**]* number*：检测解关联帧达到触发阈值，取值范围为1～100000，缺省值为50。当设备检测到的解关联帧达到触发阈值，即判定设备受到解关联帧泛洪攻击，设备会发送告警日志。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1424401996}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_1758689192}[配置检测解关联帧泛洪攻击，统计周期为]{style="font-family:宋体"}[100]{lang="EN-US"}[秒，触发告警阈值为]{style="font-family:宋体"}[100]{lang="EN-US"}[，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测解关联帧泛洪攻击，统计周期为100秒，触发告警阈值为100，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_940725524}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] flood disassociation interval 100 threshold 100 quiet 360]{lang="EN-US"}
-:::
-
-::: {#511646007 .myid}
-[]{#_Toc404795256}[]{#struct_0_x1322_12350_1141278911}
+Sysname-wips-dtc-home flood disassociation interval 100 threshold 100 quiet 360
 
 **WIPS \-- WIPS配置命令 \-- flood eapol-start**
 
 ------------------------------------------------------------------------
 
-[**[flood eapol-start]{lang="EN-US"}**]{#struct_0_x1322_12350_236579055}[命令用来配置检测]{style="font-family:宋体"}[EAPOL-Start]{lang="EN-US"}[帧泛洪攻击。]{style="font-family:宋体"}
+**[flood eapol-start**]命令用来配置检测EAPOL-Start帧泛洪攻击。
 
-[**[undo]{lang="EN-US"}**[ **flood eapol-start**]{lang="EN-US"}]{#struct_0_x1322_12350_x2021963985}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **flood eapol-start**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1529452808}
+【命令】
 
-[**[flood eapol-start]{lang="EN-US"}**[ \[ **interval** ]{lang="EN-US"}]{#struct_0_x1322_12350_2128767160}*[interval-value]{lang="IT"}***[ ]{lang="IT"}**[\| **quiet** ]{lang="EN-US"}*[quiet-value ]{lang="IT"}*[\| **threshold** ]{lang="EN-US"}*[number ]{lang="IT"}*[\] \*]{lang="EN-US"}
+**[flood eapol-start** [ **interval** ]*interval-value*****[\| **quiet** ]*quiet-value *[\| **threshold** ]*number * \*]
 
-[**[undo flood eapol-start]{lang="EN-US"}**]{#struct_0_x1322_12350_x30690645}
+**[undo flood eapol-start**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1829690106}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_x96048712}[对]{style="font-family:宋体"}[EAPOL-Start]{lang="EN-US"}[帧泛洪攻击进行检测]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不对EAPOL-Start帧泛洪攻击进行检测。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1120317053}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_1503869354}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_387923033}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_637086788}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1209639031}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_685596922}
+【参数】
 
-[**[interval]{lang="EN-US"}***[ interval-value]{lang="EN-US"}*]{#struct_0_x1322_12350_8730734}[：检测]{style="font-family:宋体"}[EAPOL-Start]{lang="EN-US"}[帧的统计周期，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+**[interval*** interval-value*]：检测EAPOL-Start帧的统计周期，取值范围为1～3600，单位为秒，缺省值为60秒。
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_1437414328}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，设备在统计周期内收到的]{style="font-family:宋体"}[EAPOL-Start]{lang="EN-US"}[帧即使达到触发告警阈值，设备也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，设备在统计周期内收到的EAPOL-Start帧即使达到触发告警阈值，设备也不会发送告警日志。
 
-[**[threshold]{lang="EN-US"}**]{#struct_0_x1322_12350_1023885869}*[ number]{lang="IT"}*[：检测]{style="font-family:宋体"}[EAPOL-Start]{lang="EN-US"}[帧达到触发阈值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[100000]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[50]{lang="EN-US"}[。当设备检测到的]{style="font-family:宋体"}[EAPOL-Start]{lang="EN-US"}[帧达到触发阈值，即判定设备受到]{style="font-family:宋体"}[EAPOL-Start]{lang="EN-US"}[帧泛洪攻击，设备会发送告警日志。]{style="font-family:宋体"}
+**[threshold**]* number*：检测EAPOL-Start帧达到触发阈值，取值范围为1～100000，缺省值为50。当设备检测到的EAPOL-Start帧达到触发阈值，即判定设备受到EAPOL-Start帧泛洪攻击，设备会发送告警日志。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x918891251}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x646357375}[配置检测]{style="font-family:宋体"}[EAPOL-Start]{lang="EN-US"}[帧泛洪攻击，统计周期为]{style="font-family:宋体"}[100]{lang="EN-US"}[秒，触发告警阈值为]{style="font-family:宋体"}[100]{lang="EN-US"}[，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测EAPOL-Start帧泛洪攻击，统计周期为100秒，触发告警阈值为100，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_1233439230}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] flood eapol-start interval 100 threshold 100 quiet 360]{lang="EN-US"}
-:::
-
-::: {#1092827923 .myid}
-[]{#_Toc404795257}[]{#struct_0_x1322_12350_x1367456555}
+Sysname-wips-dtc-home flood eapol-start interval 100 threshold 100 quiet 360
 
 **WIPS \-- WIPS配置命令 \-- flood null-data**
 
 ------------------------------------------------------------------------
 
-[**[flood null-data]{lang="EN-US"}**]{#struct_0_x1322_12350_1470035229}[命令用来配置检测]{style="font-family:宋体"}[Null data]{lang="EN-US"}[帧泛洪攻击。]{style="font-family:宋体"}
+**[flood null-data**]命令用来配置检测Null data帧泛洪攻击。
 
-[**[undo]{lang="EN-US"}**[ **flood null-data**]{lang="EN-US"}]{#struct_0_x1322_12350_x1165323558}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **flood null-data**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x890523503}
+【命令】
 
-[**[flood null-data]{lang="EN-US"}**[ \[ **interval** ]{lang="EN-US"}]{#struct_0_x1322_12350_1486211125}*[interval-value]{lang="IT"}***[ ]{lang="IT"}**[\| **quiet** ]{lang="EN-US"}*[quiet-value ]{lang="IT"}*[\| **threshold** ]{lang="EN-US"}*[number ]{lang="IT"}*[\] \*]{lang="EN-US"}
+**[flood null-data** [ **interval** ]*interval-value*****[\| **quiet** ]*quiet-value *[\| **threshold** ]*number * \*]
 
-[**[undo flood null-data]{lang="EN-US"}**]{#struct_0_x1322_12350_x997462963}
+**[undo flood null-data**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1085457163}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1303152511}[对]{style="font-family:宋体"}[Null data]{lang="EN-US"}[帧泛洪攻击进行检测]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不对Null data帧泛洪攻击进行检测。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_61423558}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_1917441376}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1469681667}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1464940513}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x553214954}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1154867337}
+【参数】
 
-[**[interval]{lang="EN-US"}***[ interval-value]{lang="EN-US"}*]{#struct_0_x1322_12350_x1479576889}[：检测]{style="font-family:宋体"}[Null data]{lang="EN-US"}[帧的统计周期，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+**[interval*** interval-value*]：检测Null data帧的统计周期，取值范围为1～3600，单位为秒，缺省值为60秒。
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_260247184}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，设备在统计周期内收到的]{style="font-family:宋体"}[Null data]{lang="EN-US"}[帧即使达到触发告警阈值，设备也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，设备在统计周期内收到的Null data帧即使达到触发告警阈值，设备也不会发送告警日志。
 
-[**[threshold]{lang="EN-US"}**]{#struct_0_x1322_12350_505646219}*[ number]{lang="IT"}*[：检测]{style="font-family:宋体"}[Null data]{lang="EN-US"}[帧达到触发阈值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[100000]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[50]{lang="EN-US"}[。当设备检测到的]{style="font-family:宋体"}[Null data]{lang="EN-US"}[帧达到触发阈值，即判定设备受到]{style="font-family:宋体"}[Null data]{lang="EN-US"}[帧泛洪攻击，设备会发送告警日志。]{style="font-family:宋体"}
+**[threshold**]* number*：检测Null data帧达到触发阈值，取值范围为1～100000，缺省值为50。当设备检测到的Null data帧达到触发阈值，即判定设备受到Null data帧泛洪攻击，设备会发送告警日志。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x2138035374}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_1018988782}[配置检测]{style="font-family:宋体"}[Null data]{lang="EN-US"}[帧泛洪攻击，统计周期为]{style="font-family:宋体"}[100]{lang="EN-US"}[秒，触发告警阈值为]{style="font-family:宋体"}[100]{lang="EN-US"}[，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测Null data帧泛洪攻击，统计周期为100秒，触发告警阈值为100，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x604591906}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] flood null-data interval 100 threshold 100 quiet 360]{lang="EN-US"}
-:::
-
-::: {#-158776448 .myid}
-[]{#_Toc404795258}[]{#struct_0_x1322_12350_x1212520995}
+Sysname-wips-dtc-home flood null-data interval 100 threshold 100 quiet 360
 
 **WIPS \-- WIPS配置命令 \-- flood probe-request**
 
 ------------------------------------------------------------------------
 
-[**[flood probe-request]{lang="EN-US"}**]{#struct_0_x1322_12350_x1705502107}[命令用来配置探查请求帧泛洪攻击。]{style="font-family:宋体"}
+**[flood probe-request**]命令用来配置探查请求帧泛洪攻击。
 
-[**[undo]{lang="EN-US"}**[ **flood probe-request**]{lang="EN-US"}]{#struct_0_x1322_12350_x661430633}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **flood probe-request**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1416486586}
+【命令】
 
-[**[flood probe-request]{lang="EN-US"}**[ \[ **interval** ]{lang="EN-US"}]{#struct_0_x1322_12350_866415070}*[interval-value]{lang="IT"}***[ ]{lang="IT"}**[\| **quiet** ]{lang="EN-US"}*[quiet-value ]{lang="IT"}*[\| **threshold** ]{lang="EN-US"}*[number ]{lang="IT"}*[\] \*]{lang="EN-US"}
+**[flood probe-request** [ **interval** ]*interval-value*****[\| **quiet** ]*quiet-value *[\| **threshold** ]*number * \*]
 
-[**[undo flood probe-request]{lang="EN-US"}**]{#struct_0_x1322_12350_1443589491}
+**[undo flood probe-request**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x812622673}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_x27661910}[对探查请求帧泛洪攻击进行检测]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不对探查请求帧泛洪攻击进行检测。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x175314610}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_1826331125}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1245948064}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_414050185}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x123493484}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_352214833}
+【参数】
 
-[**[interval]{lang="EN-US"}***[ interval-value]{lang="EN-US"}*]{#struct_0_x1322_12350_2027474963}[：检测探查请求帧的统计周期，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+**[interval*** interval-value*]：检测探查请求帧的统计周期，取值范围为1～3600，单位为秒，缺省值为60秒。
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_1904563573}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，设备在统计周期内收到的探查请求帧即使达到触发告警阈值，设备也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，设备在统计周期内收到的探查请求帧即使达到触发告警阈值，设备也不会发送告警日志。
 
-[**[threshold]{lang="EN-US"}**]{#struct_0_x1322_12350_646098599}*[ number]{lang="IT"}*[：检测探查请求帧达到触发阈值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[100000]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[50]{lang="EN-US"}[。当设备检测到的探查请求帧达到触发阈值，即判定设备受到探查请求帧泛洪攻击，设备会发送告警日志。]{style="font-family:宋体"}
+**[threshold**]* number*：检测探查请求帧达到触发阈值，取值范围为1～100000，缺省值为50。当设备检测到的探查请求帧达到触发阈值，即判定设备受到探查请求帧泛洪攻击，设备会发送告警日志。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x129532436}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_1544088174}[配置检测探查请求帧泛洪攻击，统计周期为]{style="font-family:宋体"}[100]{lang="EN-US"}[秒，触发告警阈值为]{style="font-family:宋体"}[100]{lang="EN-US"}[，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测探查请求帧泛洪攻击，统计周期为100秒，触发告警阈值为100，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_1601235124}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] flo]{lang="EN-US"}[od probe-request interval ]{lang="IT"}[100 threshold 100 quiet 360]{lang="EN-US"}
-:::
-
-::: {#-1474866264 .myid}
-[]{#_Toc404795259}[]{#struct_0_x1322_12350_x1766233296}
+Sysname-wips-dtc-home flood probe-request interval 100 threshold 100 quiet 360
 
 **WIPS \-- WIPS配置命令 \-- flood reassociation-request**
 
 ------------------------------------------------------------------------
 
-[**[flood reassociation-request]{lang="EN-US"}**]{#struct_0_x1322_12350_x188499132}[命令用来配置检测重关联帧泛洪攻击。]{style="font-family:
-宋体"}
+**[flood reassociation-request**]命令用来配置检测重关联帧泛洪攻击。
 
-[**[undo]{lang="EN-US"}**[ **flood reassociation-request**]{lang="EN-US"}]{#struct_0_x1322_12350_x701754194}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **flood reassociation-request**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1423046598}
+【命令】
 
-[**[flood reassociation-request]{lang="EN-US"}**[ \[ **interval** ]{lang="EN-US"}]{#struct_0_x1322_12350_1504856737}*[interval-value]{lang="IT"}***[ ]{lang="IT"}**[\| **quiet** ]{lang="EN-US"}*[quiet-value ]{lang="IT"}*[\| **threshold** ]{lang="EN-US"}*[number ]{lang="IT"}*[\] \*]{lang="EN-US"}
+**[flood reassociation-request** [ **interval** ]*interval-value*****[\| **quiet** ]*quiet-value *[\| **threshold** ]*number * \*]
 
-[**[undo flood reassociation-request]{lang="EN-US"}**]{#struct_0_x1322_12350_x913699814}
+**[undo flood reassociation-request**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1786445029}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_x584857839}[对重关联帧泛洪攻击进行检测]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不对重关联帧泛洪攻击进行检测。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_118137665}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x941137720}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_780388802}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1378463810}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_928033053}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x851602016}
+【参数】
 
-[**[interval]{lang="EN-US"}***[ interval-value]{lang="EN-US"}*]{#struct_0_x1322_12350_310643092}[：检测重关联帧的统计周期，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+**[interval*** interval-value*]：检测重关联帧的统计周期，取值范围为1～3600，单位为秒，缺省值为60秒。
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_856431594}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，设备在统计周期内收到的重关联帧即使达到触发告警阈值，设备也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，设备在统计周期内收到的重关联帧即使达到触发告警阈值，设备也不会发送告警日志。
 
-[**[threshold]{lang="EN-US"}**]{#struct_0_x1322_12350_211399872}*[ number]{lang="IT"}*[：检测重关联帧达到触发阈值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[100000]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[50]{lang="EN-US"}[。当设备检测到的重关联帧达到触发阈值，即判定设备受到重关联帧泛洪攻击，设备会发送告警日志。]{style="font-family:宋体"}
+**[threshold**]* number*：检测重关联帧达到触发阈值，取值范围为1～100000，缺省值为50。当设备检测到的重关联帧达到触发阈值，即判定设备受到重关联帧泛洪攻击，设备会发送告警日志。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x22176719}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x1305836757}[配置检测重关联帧泛洪攻击，统计周期为]{style="font-family:宋体"}[100]{lang="EN-US"}[秒，触发告警阈值为]{style="font-family:宋体"}[100]{lang="EN-US"}[，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测重关联帧泛洪攻击，统计周期为100秒，触发告警阈值为100，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x1067111542}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] flood reassociation-request interval 100 threshold 100 quiet 360]{lang="EN-US"}
-:::
-
-::: {#1285267151 .myid}
-[]{#_Toc404795260}[]{#struct_0_x1322_12350_199252179}
+Sysname-wips-dtc-home flood reassociation-request interval 100 threshold 100 quiet 360
 
 **WIPS \-- WIPS配置命令 \-- flood rts**
 
 ------------------------------------------------------------------------
 
-[**[flood rts]{lang="EN-US"}**]{#struct_0_x1322_12350_x1193876616}[命令用来配置检测]{style="font-family:宋体"}[RTS]{lang="EN-US"}[帧泛洪攻击。]{style="font-family:宋体"}
+**[flood rts**]命令用来配置检测RTS帧泛洪攻击。
 
-[**[undo]{lang="EN-US"}**[ **flood rts**]{lang="EN-US"}]{#struct_0_x1322_12350_x1724376596}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **flood rts**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x2055779780}
+【命令】
 
-[**[flood rts]{lang="EN-US"}**[ \[ **interval** ]{lang="EN-US"}]{#struct_0_x1322_12350_x1954459197}*[interval-value]{lang="IT"}***[ ]{lang="IT"}**[\| **quiet** ]{lang="EN-US"}*[quiet-value ]{lang="IT"}*[\| **threshold** ]{lang="EN-US"}*[number ]{lang="IT"}*[\] \*]{lang="EN-US"}
+**[flood rts** [ **interval** ]*interval-value*****[\| **quiet** ]*quiet-value *[\| **threshold** ]*number * \*]
 
-[**[undo flood rts]{lang="EN-US"}**]{#struct_0_x1322_12350_1785157138}
+**[undo flood rts**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x65022684}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_x955959744}[对]{style="font-family:宋体"}[RTS]{lang="EN-US"}[帧泛洪攻击进行检测]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不对RTS帧泛洪攻击进行检测。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1769987289}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1214695245}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_574017413}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1753325497}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1709121284}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x934014659}
+【参数】
 
-[**[interval]{lang="EN-US"}***[ interval-value]{lang="EN-US"}*]{#struct_0_x1322_12350_x643363010}[：检测]{style="font-family:宋体"}[RTS]{lang="EN-US"}[帧的统计周期，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+**[interval*** interval-value*]：检测RTS帧的统计周期，取值范围为1～3600，单位为秒，缺省值为60秒。
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_1092525168}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，设备在统计周期内收到的]{style="font-family:宋体"}[RTS]{lang="EN-US"}[帧即使达到触发告警阈值，设备也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，设备在统计周期内收到的RTS帧即使达到触发告警阈值，设备也不会发送告警日志。
 
-[**[threshold]{lang="EN-US"}**]{#struct_0_x1322_12350_1216067029}*[ number]{lang="IT"}*[：检测]{style="font-family:宋体"}[RTS]{lang="EN-US"}[帧达到触发阈值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[100000]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[50]{lang="EN-US"}[。当设备检测到的]{style="font-family:宋体"}[RTS]{lang="EN-US"}[帧达到触发阈值，即判定设备受到]{style="font-family:宋体"}[RTS]{lang="EN-US"}[帧泛洪攻击，设备会发送告警日志。]{style="font-family:宋体"}
+**[threshold**]* number*：检测RTS帧达到触发阈值，取值范围为1～100000，缺省值为50。当设备检测到的RTS帧达到触发阈值，即判定设备受到RTS帧泛洪攻击，设备会发送告警日志。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x150832702}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_10750423}[配置检测]{style="font-family:宋体"}[RTS]{lang="EN-US"}[帧泛洪攻击，统计周期为]{style="font-family:宋体"}[100]{lang="EN-US"}[秒，触发告警阈值为]{style="font-family:宋体"}[100]{lang="EN-US"}[，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测RTS帧泛洪攻击，统计周期为100秒，触发告警阈值为100，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_34868864}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] flood rts interval 100 threshold 100 quiet 360]{lang="EN-US"}
-:::
-
-::: {#-1130666665 .myid}
-[]{#_Toc404795261}[]{#struct_0_x1322_12350_32985249}
+Sysname-wips-dtc-home flood rts interval 100 threshold 100 quiet 360
 
 **WIPS \-- WIPS配置命令 \-- import oui**
 
 ------------------------------------------------------------------------
 
-[**[import oui]{lang="IT"}**]{#struct_0_x1322_12350_1911167775}[命令用来导入配置文件中的]{style="font-family:宋体"}[OUI]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+**[import oui**]命令用来导入配置文件中的OUI信息。
 
-[**[undo import oui]{lang="IT"}**]{#struct_0_x1322_12350_1832090020}[命令用来]{style="font-family:宋体"}[删除已导入的]{style="font-family:宋体"}[OUI]{lang="IT"}[信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo import oui**]命令用来删除已导入的OUI信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1263080733}
+【命令】
 
-[**[import oui ]{lang="IT"}**]{#struct_0_x1322_12350_x143037343}*[file-name]{lang="IT"}*
+**[import oui **]*file-name*
 
-[**[undo import oui]{lang="IT"}**]{#struct_0_x1322_12350_544131423}
+**[undo import oui**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1739153548}
+【缺省情况】
 
-[[没有导入配置文件的]{style="font-family:宋体"}]{#struct_0_x1322_12350_1635748250}[OUI]{lang="IT"}[信息。]{style="font-family:宋体"}
+没有导入配置文件的OUI信息。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_2114763148}
+【视图】
 
-[[WIPS]{lang="EN-US"}]{#struct_0_x1322_12350_x473589064}[视图]{style="font-family:宋体"}
+WIPS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1863837935}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1788509438}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x759222536}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1765935279}
+【参数】
 
-[*[oui]{lang="EN-US"}*]{#struct_0_x1322_12350_420780464}[：导入配置文件名称，]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[个字符的字符串，不区分大小写，且文件名不能包含如下字符：]{style="font-family:宋体"}[\\ / : \* ? " \< \> \|]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[oui*]：导入配置文件名称，1～255个字符的字符串，不区分大小写，且文件名不能包含如下字符：[\\ / : \* ? " \< \> \|]。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1322_12350_2074599399}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[该配置文件可以从]{style="font-family:宋体"}]{#struct_0_x1322_12350_x700444883}[IEEE]{lang="EN-US"}[网站下载。]{style="font-family:宋体"}
+·该配置文件可以从IEEE网站下载。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[最多只能导入一个配置文件。]{style="font-family:宋体"}]{#struct_0_x1322_12350_x395656235}
+·最多只能导入一个配置文件。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x546321870}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_401835424}[导入配置文件中的]{style="font-family:宋体"}[OUI]{lang="EN-US"}[信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 导入配置文件中的OUI信息。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x201407893}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-wips\] ]{lang="IT"}[import oui oui_import_cfg]{lang="EN-US"}
+Sysname-wips import oui oui_import_cfg
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1836757190}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="IT" style="font-size:10.0pt;font-family:Symbol"}**[invalid-oui-classify illegal]{lang="IT"}**]{#struct_0_x1322_12350_1803258691}
-:::
-
-::: {#-1101858789 .myid}
-[]{#_Toc404795262}[]{#struct_0_x1322_12350_1738131707}
+·**invalid-oui-classify illegal**
 
 **WIPS \-- WIPS配置命令 \-- invalid-oui-classify illegal**
 
 ------------------------------------------------------------------------
 
-[**[invalid-oui-classify illegal]{lang="IT"}**]{#struct_0_x1322_12350_x307978144}[命令用来配置对非法]{style="font-family:宋体"}[OUI]{lang="EN-US"}[的设备进行分类。]{style="font-family:宋体"}
+**[invalid-oui-classify illegal**]命令用来配置对非法OUI的设备进行分类。
 
-[**[undo ]{lang="IT"}**]{#struct_0_x1322_12350_x1294821733}**[invalid-oui-classify]{lang="IT"}**[命令用来]{style="font-family:宋体"}[恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo **]**invalid-oui-classify**命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_560017887}
+【命令】
 
-[**[invalid-oui-classify illegal]{lang="IT"}**]{#struct_0_x1322_12350_x2134788197}
+**[invalid-oui-classify illegal**]
 
-[**[undo invalid-oui-classify]{lang="IT"}**]{#struct_0_x1322_12350_x708141058}
+**[undo invalid-oui-classify**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1356241548}
+【缺省情况】
 
-[[不对非法]{style="font-family:宋体"}[OUI]{lang="EN-US"}]{#struct_0_x1322_12350_x937906256}[的设备进行分类]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不对非法OUI的设备进行分类。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_804190655}
+【视图】
 
-[[分类策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_1019762071}
+分类策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1768102805}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_2062957794}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1551403466}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1703665180}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_1344322802}[配置对非法]{style="font-family:宋体"}[OUI]{lang="EN-US"}[的设备进行分类]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置对非法OUI的设备进行分类。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_671308483}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-wips\] classification policy home]{lang="IT"}
+Sysname-wips classification policy home
 
-[\[Sysname-wips-cls-home\] invalid-oui-classify illegal]{lang="IT"}
+Sysname-wips-cls-home invalid-oui-classify illegal
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1982708232}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="IT" style="font-size:10.0pt;font-family:Symbol"}**[import oui]{lang="IT"}**]{#struct_0_x1322_12350_x1706765764}
-:::
-
-::: {#515704181 .myid}
-[]{#_Toc404795263}[]{#struct_0_x1322_12350_x631271423}
+·**import oui**
 
 **WIPS \-- WIPS配置命令 \-- malformed duplicated-ie**
 
 ------------------------------------------------------------------------
 
-[**[malformed duplicated-ie]{lang="EN-US"}**]{#struct_0_x1322_12350_1644522835}[命令用来配置检测]{style="font-family:宋体"}[IE]{lang="EN-US"}[重复的畸形报文。]{style="font-family:宋体"}
+**[malformed duplicated-ie**]命令用来配置检测IE重复的畸形报文。
 
-[**[undo]{lang="EN-US"}**[ **malformed duplicated-ie**]{lang="EN-US"}]{#struct_0_x1322_12350_604068349}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **malformed duplicated-ie**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x329142135}
+【命令】
 
-[**[malformed duplicated-ie]{lang="EN-US"}**[ \[ **quiet** *quiet-value*]{lang="EN-US"}]{#struct_0_x1322_12350_x95983176}*[ ]{lang="EN-US"}*[\]]{lang="EN-US"}
+**[malformed duplicated-ie** [ **quiet** *quiet-value*]**]
 
-[**[undo malformed duplicated-ie]{lang="EN-US"}**]{#struct_0_x1322_12350_1515355760}
+**[undo malformed duplicated-ie**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x9805030}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1113722477}[检测]{style="font-family:宋体"}[IE]{lang="EN-US"}[重复的畸形报文]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不检测IE重复的畸形报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1372004928}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1333786763}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1785859411}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1519732269}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1666653063}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1414024876}
+【参数】
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_x107483025}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，即使设备检测到]{style="font-family:宋体"}[IE]{lang="EN-US"}[重复的畸形报文，也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，即使设备检测到IE重复的畸形报文，也不会发送告警日志。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1913750327}
+【使用指导】
 
-[[该检测是针对所有管理帧的检测。当解析某报文时，该报文所包含的某]{style="font-family:宋体"}[IE]{lang="EN-US"}]{#struct_0_x1322_12350_x1482306992}[重复出现时，则检测该报文为重复]{style="font-family:宋体"}[IE]{lang="EN-US"}[畸形报文。因为厂商自定义]{style="font-family:宋体"}[IE]{lang="EN-US"}[是允许重复的，所以检测]{style="font-family:宋体"}[IE]{lang="EN-US"}[重复时，不需要考虑厂商自定义]{style="font-family:宋体"}[IE]{lang="EN-US"}[。]{style="font-family:宋体"}
+该检测是针对所有管理帧的检测。当解析某报文时，该报文所包含的某IE重复出现时，则检测该报文为重复IE畸形报文。因为厂商自定义IE是允许重复的，所以检测IE重复时，不需要考虑厂商自定义IE。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x868768630}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x1009681262}[配置检测]{style="font-family:宋体"}[IE]{lang="EN-US"}[重复的畸形报文，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测IE重复的畸形报文，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_1470100765}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] malformed duplicated-ie quiet 360]{lang="EN-US"}
-:::
-
-::: {#-1062270012 .myid}
-[]{#_Toc404795264}[]{#struct_0_x1322_12350_817378538}
+Sysname-wips-dtc-home malformed duplicated-ie quiet 360
 
 **WIPS \-- WIPS配置命令 \-- malformed fata-jack**
 
 ------------------------------------------------------------------------
 
-[**[malformed fata-jack]{lang="EN-US"}**]{#struct_0_x1322_12350_1903799382}[命令用来配置检测]{style="font-family:宋体"}[Fata-Jack]{lang="EN-US"}[畸形报文。]{style="font-family:宋体"}
+**[malformed fata-jack**]命令用来配置检测Fata-Jack畸形报文。
 
-[**[undo]{lang="EN-US"}**[ **malformed fata-jack**]{lang="EN-US"}]{#struct_0_x1322_12350_1175600372}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **malformed fata-jack**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x935119682}
+【命令】
 
-[**[malformed fata-jack]{lang="EN-US"}**[ \[ **quiet** *quiet-value*]{lang="EN-US"}]{#struct_0_x1322_12350_857936453}*[ ]{lang="EN-US"}*[\]]{lang="EN-US"}
+**[malformed fata-jack** [ **quiet** *quiet-value*]**]
 
-[**[undo malformed fata-jack]{lang="EN-US"}**]{#struct_0_x1322_12350_833823067}
+**[undo malformed fata-jack**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_368455397}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_204208826}[检测]{style="font-family:宋体"}[Fata-Jack]{lang="EN-US"}[畸形报文]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不检测Fata-Jack畸形报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x124199885}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_1030298176}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1143358922}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_556846781}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1319734391}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_126029456}
+【参数】
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_x1948834180}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，即使设备检测到]{style="font-family:宋体"}[Fata-Jack]{lang="EN-US"}[畸形报文，也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，即使设备检测到Fata-Jack畸形报文，也不会发送告警日志。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x120264792}
+【使用指导】
 
-[[该检测是针对认证帧的检测。]{style="font-family:宋体"}[Fata-jack]{lang="EN-US"}]{#struct_0_x1322_12350_2119249473}[畸形类型规定，当身份认证算法编号即]{style="font-family:宋体"}[Authentication algorithm number]{lang="EN-US"}[的值等于]{style="font-family:宋体"}[2]{lang="EN-US"}[时，则判定该帧为]{style="font-family:宋体"}[Fata-jack]{lang="EN-US"}[畸形报文。]{style="font-family:宋体"}
+该检测是针对认证帧的检测。Fata-jack畸形类型规定，当身份认证算法编号即Authentication algorithm number的值等于2时，则判定该帧为Fata-jack畸形报文。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x411883366}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x319982258}[配置检测]{style="font-family:宋体"}[Fata-Jack]{lang="EN-US"}[畸形报文，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测Fata-Jack畸形报文，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_1794173385}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] malformed fata-jack quiet 360]{lang="EN-US"}
-:::
-
-::: {#940744121 .myid}
-[]{#_Toc404795265}[]{#struct_0_x1322_12350_1257372340}
+Sysname-wips-dtc-home malformed fata-jack quiet 360
 
 **WIPS \-- WIPS配置命令 \-- malformed illegal-ibss-ess**
 
 ------------------------------------------------------------------------
 
-[**[malformed illegal-ibss-ess]{lang="EN-US"}**]{#struct_0_x1322_12350_2043296762}[命令用来配置检测]{style="font-family:
-宋体"}[IBSS]{lang="EN-US"}[和]{style="font-family:宋体"}[ESS]{lang="EN-US"}[置位异常的畸形报文。]{style="font-family:宋体"}
+**[malformed illegal-ibss-ess**]命令用来配置检测IBSS和ESS置位异常的畸形报文。
 
-[**[undo]{lang="EN-US"}**[ **malformed illegal-ibss-ess**]{lang="EN-US"}]{#struct_0_x1322_12350_x1227261077}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **malformed illegal-ibss-ess**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x304988251}
+【命令】
 
-[**[malformed illegal-ibss-ess]{lang="EN-US"}**[ \[ **quiet** *quiet-value*]{lang="EN-US"}]{#struct_0_x1322_12350_x405760356}*[ ]{lang="EN-US"}*[\]]{lang="EN-US"}
+**[malformed illegal-ibss-ess** [ **quiet** *quiet-value*]**]
 
-[**[undo malformed illegal-ibss-ess]{lang="EN-US"}**]{#struct_0_x1322_12350_x1462963838}
+**[undo malformed illegal-ibss-ess**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1692113397}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_1979251379}[检测]{style="font-family:宋体"}[IBSS]{lang="EN-US"}[和]{style="font-family:宋体"}[ESS]{lang="EN-US"}[置位异常的畸形报文]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不检测IBSS和ESS置位异常的畸形报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1987297455}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1561602680}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1443182764}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_808213123}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1087505846}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1590148562}
+【参数】
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_x251219013}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，即使设备检测到]{style="font-family:宋体"}[IBSS]{lang="EN-US"}[和]{style="font-family:宋体"}[ESS]{lang="EN-US"}[置位异常的畸形报文，也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，即使设备检测到IBSS和ESS置位异常的畸形报文，也不会发送告警日志。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1539628509}
+【使用指导】
 
-[[该检测是针对]{style="font-family:宋体"}[Beacon]{lang="EN-US"}]{#struct_0_x1322_12350_x1977449271}[帧和探查响应帧进行的检测。当报文中的]{style="font-family:宋体"}[IBSS]{lang="EN-US"}[和]{style="font-family:宋体"}[ESS]{lang="EN-US"}[都置位为]{style="font-family:宋体"}[1]{lang="EN-US"}[时，由于此种情况在协议中没有定义，所以这类报文被判定为]{style="font-family:宋体"}[IBSS]{lang="EN-US"}[和]{style="font-family:宋体"}[ESS]{lang="EN-US"}[置位异常的畸形报文。]{style="font-family:宋体"}
+该检测是针对Beacon帧和探查响应帧进行的检测。当报文中的IBSS和ESS都置位为1时，由于此种情况在协议中没有定义，所以这类报文被判定为IBSS和ESS置位异常的畸形报文。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_271889031}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x804718790}[配置检测]{style="font-family:宋体"}[IBSS]{lang="EN-US"}[和]{style="font-family:宋体"}[ESS]{lang="EN-US"}[置位异常的畸形报文，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测IBSS和ESS置位异常的畸形报文，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x725838234}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] malformed fata-jack quiet 360]{lang="EN-US"}
-:::
-
-::: {#-661244111 .myid}
-[]{#_Toc404795266}[]{#struct_0_x1322_12350_1288828870}
+Sysname-wips-dtc-home malformed fata-jack quiet 360
 
 **WIPS \-- WIPS配置命令 \-- malformed invalid-address-combination**
 
 ------------------------------------------------------------------------
 
-[**[malformed invalid-address-combination]{lang="EN-US"}**]{#struct_0_x1322_12350_149934487}[命令用来配置检测源地址为广播或者组播的认证和关联畸形报文。]{style="font-family:宋体"}
+**[malformed invalid-address-combination**]命令用来配置检测源地址为广播或者组播的认证和关联畸形报文。
 
-[**[undo]{lang="EN-US"}**[ **malformed invalid-address-combination**]{lang="EN-US"}]{#struct_0_x1322_12350_483207995}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **malformed invalid-address-combination**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x331599790}
+【命令】
 
-[**[malformed invalid-address-combination]{lang="EN-US"}**[ \[ **quiet** *quiet-value*]{lang="EN-US"}]{#struct_0_x1322_12350_87429818}*[ ]{lang="EN-US"}*[\]]{lang="EN-US"}
+**[malformed invalid-address-combination** [ **quiet** *quiet-value*]**]
 
-[**[undo malformed invalid-address-combination]{lang="EN-US"}**]{#struct_0_x1322_12350_x64050812}
+**[undo malformed invalid-address-combination**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1153414664}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_x913485281}[检测源地址为广播或者组播的认证和关联畸形报文]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不检测源地址为广播或者组播的认证和关联畸形报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1327706230}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1138079156}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_474946250}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_450053664}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1025902525}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1184999566}
+【参数】
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_x1827005288}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，即使设备检测到报文长度非法的畸形报文，也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，即使设备检测到报文长度非法的畸形报文，也不会发送告警日志。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1719502712}
+【使用指导】
 
-[[该检测是针对所有管理帧的检测。当检测到该帧的]{style="font-family:宋体"}[TO DS]{lang="EN-US"}]{#struct_0_x1322_12350_x1440054485}[等于]{style="font-family:宋体"}[1]{lang="EN-US"}[时，表明该帧为客户端发给]{style="font-family:宋体"}[AP]{lang="EN-US"}[的，如果同时又检测到该帧的源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为广播或组播，则该帧被判定为]{style="font-family:宋体"}[Invalid-source-address]{lang="EN-US"}[畸形报文。]{style="font-family:宋体"}
+该检测是针对所有管理帧的检测。当检测到该帧的TO DS等于1时，表明该帧为客户端发给AP的，如果同时又检测到该帧的源MAC地址为广播或组播，则该帧被判定为Invalid-source-address畸形报文。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1799580693}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_200366096}[配置检测源地址为广播或者组播的认证和关联畸形报文，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测源地址为广播或者组播的认证和关联畸形报文，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_917182381}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] det]{lang="EN-US"}[ect policy home]{lang="IT"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] malformed invalid-address-combination quiet 36]{lang="IT"}[0]{lang="EN-US"}
-:::
-
-::: {#2115130338 .myid}
-[]{#_Toc404795267}[]{#struct_0_x1322_12350_1686489137}
+Sysname-wips-dtc-home malformed invalid-address-combination quiet 360
 
 **WIPS \-- WIPS配置命令 \-- malformed invalid-assoc-req**
 
 ------------------------------------------------------------------------
 
-[**[malformed invalid-assoc-req]{lang="EN-US"}**]{#struct_0_x1322_12350_x1518516557}[命令用来配置检测畸形关联请求报文。]{style="font-family:
-宋体"}
+**[malformed invalid-assoc-req**]命令用来配置检测畸形关联请求报文。
 
-[**[undo]{lang="EN-US"}**[ **malformed invalid-assoc-req**]{lang="EN-US"}]{#struct_0_x1322_12350_x1943065883}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **malformed invalid-assoc-req**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_77922276}
+【命令】
 
-[**[malformed invalid-assoc-req]{lang="EN-US"}**[ \[ **quiet** *quiet-value*]{lang="EN-US"}]{#struct_0_x1322_12350_1210170563}*[ ]{lang="EN-US"}*[\]]{lang="EN-US"}
+**[malformed invalid-assoc-req** [ **quiet** *quiet-value*]**]
 
-[**[undo malformed invalid-assoc-req]{lang="EN-US"}**]{#struct_0_x1322_12350_x2111372024}
+**[undo malformed invalid-assoc-req**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x12713222}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_1329261065}[检测畸形关联请求报文]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不检测畸形关联请求报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x556291905}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1843339012}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x2128357547}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x959238811}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_261854910}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1703225603}
+【参数】
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_1005808434}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，即使设备检测到畸形关联请求报文，也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，即使设备检测到畸形关联请求报文，也不会发送告警日志。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1895286715}
+【使用指导】
 
-[[该检测是针对认证请求帧的检测。当收到认证请求帧中的]{style="font-family:宋体"}[SSID]{lang="EN-US"}]{#struct_0_x1322_12350_821445156}[长度等于零时，判定该报文为畸形关联请求报文。]{style="font-family:宋体"}
+该检测是针对认证请求帧的检测。当收到认证请求帧中的SSID长度等于零时，判定该报文为畸形关联请求报文。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1516153257}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_1854842679}[配置检测畸形关联请求报文，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测畸形关联请求报文，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_437271256}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] malformed invalid-assoc-req quiet 360]{lang="EN-US"}
-:::
-
-::: {#2012677113 .myid}
-[]{#_Toc404795268}[]{#struct_0_x1322_12350_x1736701535}
+Sysname-wips-dtc-home malformed invalid-assoc-req quiet 360
 
 **WIPS \-- WIPS配置命令 \-- malformed invalid-auth**
 
 ------------------------------------------------------------------------
 
-[**[malformed invalid-auth]{lang="EN-US"}**]{#struct_0_x1322_12350_x1604749884}[命令用来配置检测畸形认证请求报文。]{style="font-family:宋体"}
+**[malformed invalid-auth**]命令用来配置检测畸形认证请求报文。
 
-[**[undo]{lang="EN-US"}**[ **malformed invalid-auth**]{lang="EN-US"}]{#struct_0_x1322_12350_x277255071}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **malformed invalid-auth**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_942235559}
+【命令】
 
-[**[malformed invalid-auth]{lang="EN-US"}**[ \[ **quiet** *quiet-value*]{lang="EN-US"}]{#struct_0_x1322_12350_1139471427}*[ ]{lang="EN-US"}*[\]]{lang="EN-US"}
+**[malformed invalid-auth** [ **quiet** *quiet-value*]**]
 
-[**[undo malformed invalid-auth]{lang="EN-US"}**]{#struct_0_x1322_12350_x1052860418}
+**[undo malformed invalid-auth**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x2006811226}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1244720660}[检测畸形认证请求报文]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不检测畸形认证请求报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x907559611}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1033893193}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x796288981}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x346455902}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_555463549}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_238341572}
+【参数】
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_1505931902}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，即使设备检测到畸形认证请求报文，也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，即使设备检测到畸形认证请求报文，也不会发送告警日志。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x862415011}
+【使用指导】
 
-[[该检测是针对认证帧的检测。当检测到以下情况时请求认证过程失败，会被判断判定为认证畸形报文。]{style="font-family:宋体"}]{#struct_0_x1322_12350_136734794}
+该检测是针对认证帧的检测。当检测到以下情况时请求认证过程失败，会被判断判定为认证畸形报文。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当对认证帧的身份认证算法编号（]{lang="EN-US" style="font-family:宋体"}[Authentication algorithm number]{lang="EN-US"}]{#struct_0_x1322_12350_x680539598}[）的值不符合协议规定，]{lang="EN-US" style="font-family:宋体"}[并且]{style="font-family:宋体"}[其值大于]{lang="EN-US" style="font-family:宋体"}[3]{lang="EN-US"}[时；]{lang="EN-US" style="font-family:宋体"}
+·当对认证帧的身份认证算法编号（Authentication algorithm number）的值不符合协议规定，并且其值大于3时；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当标记]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1322_12350_1233982612}[客户端]{style="font-family:宋体"}[和]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[之间的身份认证的进度的]{lang="EN-US" style="font-family:宋体"}[Authentication Transaction Sequence Number ]{lang="EN-US"}[的值等于]{lang="EN-US" style="font-family:宋体"}[1]{lang="EN-US"}[，且状态代码]{lang="EN-US" style="font-family:宋体"}[status code]{lang="EN-US"}[不为零时；]{lang="EN-US" style="font-family:宋体"}
+·当标记客户端和AP之间的身份认证的进度的Authentication Transaction Sequence Number 的值等于1，且状态代码status code不为零时；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{lang="EN-US" style="font-family:宋体"}[Authentication Transaction Sequence Number]{lang="EN-US"}]{#struct_0_x1322_12350_x1381761749}[的值大于]{lang="EN-US" style="font-family:宋体"}[4]{lang="EN-US"}[时]{style="font-family:宋体"}[。]{lang="EN-US" style="font-family:宋体"}
+·当Authentication Transaction Sequence Number的值大于4时。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1198178009}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x157043786}[配置检测畸形认证请求报文，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测畸形认证请求报文，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x1520004148}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] malformed invalid-auth quiet 360]{lang="EN-US"}
-:::
-
-::: {#-2105490827 .myid}
-[]{#_Toc404795269}[]{#struct_0_x1322_12350_x1327096099}
+Sysname-wips-dtc-home malformed invalid-auth quiet 360
 
 **WIPS \-- WIPS配置命令 \-- malformed invalid-deauth-code**
 
 ------------------------------------------------------------------------
 
-[**[malformed invalid-deauth-code]{lang="EN-US"}**]{#struct_0_x1322_12350_x1735984335}[命令用来配置检测含有无效原因值的解认证畸形报文。]{style="font-family:
-宋体"}
+**[malformed invalid-deauth-code**]命令用来配置检测含有无效原因值的解认证畸形报文。
 
-[**[undo]{lang="EN-US"}**[ **malformed invalid-deauth-code**]{lang="EN-US"}]{#struct_0_x1322_12350_x1157614201}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **malformed invalid-deauth-code**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x384913586}
+【命令】
 
-[**[malformed invalid-deauth-code]{lang="EN-US"}**[ \[ **quiet** *quiet-value*]{lang="EN-US"}]{#struct_0_x1322_12350_x1735470916}*[ ]{lang="EN-US"}*[\]]{lang="EN-US"}
+**[malformed invalid-deauth-code** [ **quiet** *quiet-value*]**]
 
-[**[undo malformed invalid-deauth-code]{lang="EN-US"}**]{#struct_0_x1322_12350_2067876387}
+**[undo malformed invalid-deauth-code**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_946995693}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1100665250}[检测含有无效原因值的解认证畸形报文]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不检测含有无效原因值的解认证畸形报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_885544343}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1123622812}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1119977493}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_392525986}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1969404787}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x926848364}
+【参数】
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_x963336526}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，即使设备检测到含有无效原因值的解认证畸形报文，也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，即使设备检测到含有无效原因值的解认证畸形报文，也不会发送告警日志。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1865931911}
+【使用指导】
 
-[[该检测是针对解认证畸形帧的检测。当解认证畸形帧携带的]{style="font-family:宋体"}[Reason code]{lang="EN-US"}]{#struct_0_x1322_12350_x714422463}[的值属于集合]{style="font-family:宋体"}[\[0]{lang="EN-US"}[，]{style="font-family:宋体"}[67]{lang="EN-US"}[～]{style="font-family:宋体"}[65535\]]{lang="EN-US"}[时，则属于协议中的保留值，此时判定该帧为含有无效原因值的解认证畸形报文。]{style="font-family:宋体"}
+该检测是针对解认证畸形帧的检测。当解认证畸形帧携带的Reason code的值属于集合0，67～65535时，则属于协议中的保留值，此时判定该帧为含有无效原因值的解认证畸形报文。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_253553004}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_1299515584}[配置检测含有无效原因值的解认证畸形报文，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测含有无效原因值的解认证畸形报文，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x230200904}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] malformed invalid-deauth-code quiet 360]{lang="EN-US"}
-:::
-
-::: {#504851078 .myid}
-[]{#_Toc404795270}[]{#struct_0_x1322_12350_1143005681}
+Sysname-wips-dtc-home malformed invalid-deauth-code quiet 360
 
 **WIPS \-- WIPS配置命令 \-- malformed invalid-disassoc-code**
 
 ------------------------------------------------------------------------
 
-[**[malformed invalid-disassoc-code]{lang="EN-US"}**]{#struct_0_x1322_12350_517596669}[命令用来配置检测含有无效原因值的解关联畸形报文。]{style="font-family:宋体"}
+**[malformed invalid-disassoc-code**]命令用来配置检测含有无效原因值的解关联畸形报文。
 
-[**[undo]{lang="EN-US"}**[ **malformed invalid-disassoc-code**]{lang="EN-US"}]{#struct_0_x1322_12350_1354292887}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **malformed invalid-disassoc-code**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1957706773}
+【命令】
 
-[**[malformed invalid-disassoc-code]{lang="EN-US"}**[ \[ **quiet** *quiet-value*]{lang="EN-US"}]{#struct_0_x1322_12350_x612275947}*[ ]{lang="EN-US"}*[\]]{lang="EN-US"}
+**[malformed invalid-disassoc-code** [ **quiet** *quiet-value*]**]
 
-[**[undo malformed invalid-disassoc-code]{lang="EN-US"}**]{#struct_0_x1322_12350_1014968263}
+**[undo malformed invalid-disassoc-code**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1255057624}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_584447190}[检测含有无效原因值的解关联畸形报文]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不检测含有无效原因值的解关联畸形报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x843536399}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1474669162}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1489180179}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x2065504614}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_283590821}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1335883037}
+【参数】
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_x139687761}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，即使设备检测到含有无效原因值的解关联畸形报文，也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，即使设备检测到含有无效原因值的解关联畸形报文，也不会发送告警日志。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1322_12350_116884742}
+【使用指导】
 
-[[该检测是针对解关联帧的检测。当解关联帧携带的]{style="font-family:宋体"}[Reason code]{lang="EN-US"}]{#struct_0_x1322_12350_945062659}[的值属于集合]{style="font-family:宋体"}[\[0]{lang="EN-US"}[，]{style="font-family:宋体"}[67]{lang="EN-US"}[～]{style="font-family:宋体"}[65535\]]{lang="EN-US"}[时，则属于协议中的保留值，此时判定该帧为含有无效原因值的解关联畸形报文。]{style="font-family:宋体"}
+该检测是针对解关联帧的检测。当解关联帧携带的Reason code的值属于集合0，67～65535时，则属于协议中的保留值，此时判定该帧为含有无效原因值的解关联畸形报文。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x2013493556}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_2031571240}[配置检测含有无效原因值的解关联畸形报文，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测含有无效原因值的解关联畸形报文，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x1101360090}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] malformed invalid-disassoc-code quiet 360]{lang="EN-US"}
-:::
-
-::: {#453323383 .myid}
-[]{#_Toc404795271}[]{#struct_0_x1322_12350_x584862047}
+Sysname-wips-dtc-home malformed invalid-disassoc-code quiet 360
 
 **WIPS \-- WIPS配置命令 \-- malformed invalid-ht-ie**
 
 ------------------------------------------------------------------------
 
-[**[malformed invalid-ht-ie]{lang="EN-US"}**]{#struct_0_x1322_12350_899177523}[命令用来配置检测畸形]{style="font-family:宋体"}[HT IE]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+**[malformed invalid-ht-ie**]命令用来配置检测畸形HT IE报文。
 
-[**[undo]{lang="EN-US"}**[ **malformed invalid-ht-ie**]{lang="EN-US"}]{#struct_0_x1322_12350_63164417}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo** **malformed invalid-ht-ie**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1905754084}
+【命令】
 
-[**[malformed invalid-ht-ie]{lang="EN-US"}**[ \[ **quiet** *quiet-value*]{lang="EN-US"}]{#struct_0_x1322_12350_x914360851}*[ ]{lang="EN-US"}*[\]]{lang="EN-US"}
+**[malformed invalid-ht-ie** [ **quiet** *quiet-value*]**]
 
-[**[undo malformed invalid-ht-ie]{lang="EN-US"}**]{#struct_0_x1322_12350_46125633}
+**[undo malformed invalid-ht-ie**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_126094992}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_1635000934}[检测畸形]{style="font-family:宋体"}[HT IE]{lang="EN-US"}[报文]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不检测畸形HT IE报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1794250013}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1097770769}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x783307479}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1510432142}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_182774094}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_440218499}
+【参数】
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_x1743658759}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，即使设备检测到畸形]{style="font-family:宋体"}[HT IE]{lang="EN-US"}[报文，也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，即使设备检测到畸形HT IE报文，也不会发送告警日志。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1578305484}
+【使用指导】
 
-[[该检测是针对]{style="font-family:宋体"}[Beacon]{lang="EN-US"}]{#struct_0_x1322_12350_515771425}[、探查响应帧、关联响应帧、重关联响应帧的检测。当检测到以下情况时，判定为]{style="font-family:宋体"}[HT IE]{lang="EN-US"}[的畸形报文，发出告警，在静默时间内不再告警。]{style="font-family:宋体"}
+该检测是针对Beacon、探查响应帧、关联响应帧、重关联响应帧的检测。当检测到以下情况时，判定为HT IE的畸形报文，发出告警，在静默时间内不再告警。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[解析出]{lang="EN-US" style="font-family:宋体"}[HT Capabilities IE]{lang="EN-US"}]{#struct_0_x1322_12350_x1141816763}[的]{lang="EN-US" style="font-family:
-宋体"}[SM Power Save]{lang="EN-US"}[值为]{lang="EN-US" style="font-family:宋体"}[2]{lang="EN-US"}[时；]{lang="EN-US" style="font-family:宋体"}
+·解析出HT Capabilities IE的SM Power Save值为2时；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[解析出]{lang="EN-US" style="font-family:宋体"}[HT Operation IE ]{lang="EN-US"}]{#struct_0_x1322_12350_1333672454}[的]{lang="EN-US" style="font-family:宋体"}[Secondary Channel Offset]{lang="EN-US"}[值等于]{lang="EN-US" style="font-family:
-宋体"}[2]{lang="EN-US"}[时。]{lang="EN-US" style="font-family:
-宋体"}
+·解析出HT Operation IE 的Secondary Channel Offset值等于2时。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1193804278}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x320517209}[配置检测畸形]{style="font-family:宋体"}[HT IE]{lang="EN-US"}[报文，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测畸形HT IE报文，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_1692178933}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] malformed invalid-ht-ie quiet 360]{lang="EN-US"}
-:::
-
-::: {#1752116704 .myid}
-[]{#_Toc404795272}[]{#struct_0_x1322_12350_x678448202}
+Sysname-wips-dtc-home malformed invalid-ht-ie quiet 360
 
 **WIPS \-- WIPS配置命令 \-- malformed invalid-ie-length**
 
 ------------------------------------------------------------------------
 
-[**[malformed invalid-ie-length]{lang="EN-US"}**]{#struct_0_x1322_12350_154951078}[命令用来配置检测]{style="font-family:
-宋体"}[IE]{lang="EN-US"}[长度非法的畸形报文。]{style="font-family:宋体"}
+**[malformed invalid-ie-length**]命令用来配置检测IE长度非法的畸形报文。
 
-[**[undo]{lang="EN-US"}**[ **malformed invalid-ie-length**]{lang="EN-US"}]{#struct_0_x1322_12350_x2146221254}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **malformed invalid-ie-length**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1911896820}
+【命令】
 
-[**[malformed invalid-ie-length]{lang="EN-US"}**[ \[ **quiet** *quiet-value*]{lang="EN-US"}]{#struct_0_x1322_12350_1138210488}*[ ]{lang="EN-US"}*[\]]{lang="EN-US"}
+**[malformed invalid-ie-length** [ **quiet** *quiet-value*]**]
 
-[**[undo malformed invalid-ie-length]{lang="EN-US"}**]{#struct_0_x1322_12350_896275797}
+**[undo malformed invalid-ie-length**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1884986760}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1649057917}[检测]{style="font-family:宋体"}[IE]{lang="EN-US"}[长度非法的畸形报文]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不检测IE长度非法的畸形报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_172078759}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_1688452842}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x939946573}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1288894406}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_514214102}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1664984908}
+【参数】
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_1825711376}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，即使设备检测到]{style="font-family:宋体"}[IE]{lang="EN-US"}[长度非法的畸形报文，也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，即使设备检测到IE长度非法的畸形报文，也不会发送告警日志。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1766041633}
+【使用指导】
 
-[[该检测是针对所有管理帧的检测。信息元素（]{style="font-family:宋体"}[Information Element]{lang="EN-US"}]{#struct_0_x1322_12350_x1654601623}[，简称]{style="font-family:宋体"}[IE]{lang="EN-US"}[）是管理帧的组成元件，其长度不定。信息元素通常包含一个元素识别码位（]{style="font-family:宋体"}[Element ID]{lang="EN-US"}[）、一个长度位（]{style="font-family:宋体"}[Length]{lang="EN-US"}[）以及一个长度不定的位。每种类型的管理帧包含特定的几种]{style="font-family:宋体"}[IE]{lang="EN-US"}[，]{style="font-family:宋体"}[IE]{lang="EN-US"}[的长度的取值范围应遵守最新]{style="font-family:宋体"}[802.11]{lang="EN-US"}[协议的规定。报文解析过程中，当检测到该报文包含的某个]{style="font-family:宋体"}[IE]{lang="EN-US"}[的长度为非法时，该报文被判定为]{style="font-family:宋体"}[IE]{lang="EN-US"}[长度非法的畸形报文。]{style="font-family:宋体"}
+该检测是针对所有管理帧的检测。信息元素（Information Element，简称IE）是管理帧的组成元件，其长度不定。信息元素通常包含一个元素识别码位（Element ID）、一个长度位（Length）以及一个长度不定的位。每种类型的管理帧包含特定的几种IE，IE的长度的取值范围应遵守最新802.11协议的规定。报文解析过程中，当检测到该报文包含的某个IE的长度为非法时，该报文被判定为IE长度非法的畸形报文。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_489987367}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_1711924332}[配置检测]{style="font-family:宋体"}[IE]{lang="EN-US"}[长度非法的畸形报文，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测IE长度非法的畸形报文，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_1269356138}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy ]{lang="EN-US"}[home]{lang="IT"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] malformed invalid-ie-length quiet 36]{lang="IT"}[0]{lang="EN-US"}
-:::
-
-::: {#-1986278094 .myid}
-[]{#_Toc404795273}[]{#struct_0_x1322_12350_1789857684}
+Sysname-wips-dtc-home malformed invalid-ie-length quiet 360
 
 **WIPS \-- WIPS配置命令 \-- malformed invalid-pkt-length**
 
 ------------------------------------------------------------------------
 
-[**[malformed invalid-pkt-length]{lang="EN-US"}**]{#struct_0_x1322_12350_x1439988949}[命令用来配置检测报文长度非法的畸形报文。]{style="font-family:
-宋体"}
+**[malformed invalid-pkt-length**]命令用来配置检测报文长度非法的畸形报文。
 
-[**[undo]{lang="EN-US"}**[ **malformed invalid-pkt-length**]{lang="EN-US"}]{#struct_0_x1322_12350_335210146}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **malformed invalid-pkt-length**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_907388891}
+【命令】
 
-[**[malformed invalid-pkt-length]{lang="EN-US"}**[ \[ **quiet** *quiet-value*]{lang="EN-US"}]{#struct_0_x1322_12350_1013624510}*[ ]{lang="EN-US"}*[\]]{lang="EN-US"}
+**[malformed invalid-pkt-length** [ **quiet** *quiet-value*]**]
 
-[**[undo malformed invalid-pkt-length]{lang="EN-US"}**]{#struct_0_x1322_12350_x1737369778}
+**[undo malformed invalid-pkt-length**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1438948788}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_483541356}[检测报文长度非法的畸形报文]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不检测报文长度非法的畸形报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x843549383}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_794503850}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x717304024}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x261774139}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x771034154}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_34067459}
+【参数】
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_1415863029}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，即使设备检测到报文长度非法的畸形报文，也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，即使设备检测到报文长度非法的畸形报文，也不会发送告警日志。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1843273476}
+【使用指导】
 
-[[该检测是针对所有管理帧的检测。当解析完报文主体后，]{style="font-family:宋体"}[IE]{lang="EN-US"}]{#struct_0_x1322_12350_1705653841}[的剩余长度不等于零时，则该报文被判定为报文长度非法畸形报文。]{style="font-family:宋体"}
+该检测是针对所有管理帧的检测。当解析完报文主体后，IE的剩余长度不等于零时，则该报文被判定为报文长度非法畸形报文。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_159887112}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x458628341}[配置检测报文长度非法的畸形报文，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测报文长度非法的畸形报文，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x677013593}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] malformed invalid-pkt-length quiet]{lang="EN-US"}[ 36]{lang="IT"}[0]{lang="EN-US"}
-:::
-
-::: {#-1610141661 .myid}
-[]{#_Toc404795274}[]{#struct_0_x1322_12350_694122030}
+Sysname-wips-dtc-home malformed invalid-pkt-length quiet 360
 
 **WIPS \-- WIPS配置命令 \-- malformed large-duration**
 
 ------------------------------------------------------------------------
 
-[**[malformed large-duration]{lang="EN-US"}**]{#struct_0_x1322_12350_x1989270001}[命令用来配置检测]{style="font-family:
-宋体"}[Duration]{lang="EN-US"}[字段超大的畸形报文。]{style="font-family:
-宋体"}
+**[malformed large-duration**]命令用来配置检测Duration字段超大的畸形报文。
 
-[**[undo]{lang="EN-US"}**[ **malformed large-duration**]{lang="EN-US"}]{#struct_0_x1322_12350_x53505317}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **malformed large-duration**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1694062152}
+【命令】
 
-[**[malformed large-duration]{lang="EN-US"}**[ \[ **quiet** *quiet-value* \| ]{lang="EN-US"}]{#struct_0_x1322_12350_313814907}*[ ]{lang="EN-US"}***[threshold ]{lang="EN-US"}***[value ]{lang="IT"}*[\]]{lang="EN-US"}
+**[malformed large-duration**[ [ **quiet** *quiet-value* \| ]]****threshold ***value *]
 
-[**[undo malformed large-duration]{lang="EN-US"}**]{#struct_0_x1322_12350_x716620610}
+**[undo malformed large-duration**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_2066535135}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1791914382}[检测]{style="font-family:宋体"}[Duration]{lang="EN-US"}[字段超大的畸形报文]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不检测Duration字段超大的畸形报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1034942373}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x277189535}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x554440568}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x949357938}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x212874775}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_864462218}
+【参数】
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_174289918}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，即使设备检测到]{style="font-family:宋体"}[Duration]{lang="EN-US"}[字段超大的畸形报文，也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，即使设备检测到Duration字段超大的畸形报文，也不会发送告警日志。
 
-[**[threshold]{lang="EN-US"}**]{#struct_0_x1322_12350_x339518392}*[ ]{lang="EN-US"}[value]{lang="IT"}*[：检测报文中]{style="font-family:宋体"}[Duration]{lang="EN-US"}[字段超大的触发阈值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32767]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[5000]{lang="EN-US"}[。当设备检测报文的]{style="font-family:宋体"}[Duration]{lang="EN-US"}[字段达到触发阈值，即判定设备受到]{style="font-family:宋体"}[Duration]{lang="EN-US"}[字段超大的畸形报文，设备会发送告警日志。]{style="font-family:宋体"}
+**[threshold**]*value*：检测报文中Duration字段超大的触发阈值，取值范围为1～32767，缺省值为5000。当设备检测报文的Duration字段达到触发阈值，即判定设备受到Duration字段超大的畸形报文，设备会发送告警日志。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1322_12350_702515029}
+【使用指导】
 
-[[该检测是针对单播管理帧、单播数据帧以及]{style="font-family:宋体"}[RTS]{lang="EN-US"}]{#struct_0_x1322_12350_864492100}[、]{style="font-family:宋体"}[CTS]{lang="EN-US"}[、]{style="font-family:宋体"}[ACK]{lang="EN-US"}[帧的检测。如果报文解析结果中该报文的]{style="font-family:宋体"}[Duration]{lang="EN-US"}[值大于指定的门限值，则为]{style="font-family:宋体"}[Duration]{lang="EN-US"}[超大的畸形报文。]{style="font-family:宋体"}
+该检测是针对单播管理帧、单播数据帧以及RTS、CTS、ACK帧的检测。如果报文解析结果中该报文的Duration值大于指定的门限值，则为Duration超大的畸形报文。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1727320864}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_1646867460}[配置检测]{style="font-family:宋体"}[Duration]{lang="EN-US"}[字段超大的畸形报文，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测Duration字段超大的畸形报文，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x716833844}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] malformed large-duration quiet 360]{lang="EN-US"}
-:::
-
-::: {#1930757126 .myid}
-[]{#_Toc404795275}[]{#struct_0_x1322_12350_x212634293}
+Sysname-wips-dtc-home malformed large-duration quiet 360
 
 **WIPS \-- WIPS配置命令 \-- malformed null-probe-resp**
 
 ------------------------------------------------------------------------
 
-[**[malformed null-probe-resp]{lang="EN-US"}**]{#struct_0_x1322_12350_x700996270}[命令用来配置检测无效探查响应报文。]{style="font-family:
-宋体"}
+**[malformed null-probe-resp**]命令用来配置检测无效探查响应报文。
 
-[**[undo]{lang="EN-US"}**[ **malformed null-probe-resp**]{lang="EN-US"}]{#struct_0_x1322_12350_x680474062}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **malformed null-probe-resp**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x377743525}
+【命令】
 
-[**[malformed null-probe-resp]{lang="EN-US"}**[ \[ **quiet** *quiet-value*]{lang="EN-US"}]{#struct_0_x1322_12350_780367679}*[ ]{lang="EN-US"}*[\]]{lang="EN-US"}
+**[malformed null-probe-resp** [ **quiet** *quiet-value*]**]
 
-[**[undo malformed null-probe-resp]{lang="EN-US"}**]{#struct_0_x1322_12350_200602219}
+**[undo malformed null-probe-resp**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1426271788}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_1611442357}[检测无效探查响应报文]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不检测无效探查响应报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1995826329}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_79881603}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_677799664}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1080699954}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_961034701}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1230268439}
+【参数】
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_x1773220696}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，即使设备检测到无效探查响应报文，也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，即使设备检测到无效探查响应报文，也不会发送告警日志。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1619565540}
+【使用指导】
 
-[[该检测是针对探查响应报文。当检测到该帧为非]{style="font-family:宋体"}[Mesh]{lang="EN-US"}]{#struct_0_x1322_12350_x977903026}[帧，但同时该帧的]{style="font-family:宋体"}[SSID Length]{lang="EN-US"}[等于零，这种情况不符合协议（协议规定]{style="font-family:宋体"}[SSID]{lang="EN-US"}[等于零的情况是]{style="font-family:宋体"}[Mesh]{lang="EN-US"}[帧），则判定为无效探查响应报文。]{style="font-family:宋体"}
+该检测是针对探查响应报文。当检测到该帧为非Mesh帧，但同时该帧的SSID Length等于零，这种情况不符合协议（协议规定SSID等于零的情况是Mesh帧），则判定为无效探查响应报文。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_885609879}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_1062200187}[配置检测无效探查响应报文，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测无效探查响应报文，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_1214075910}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] malformed null-probe-resp quiet 360]{lang="EN-US"}
-:::
-
-::: {#-1398468571 .myid}
-[]{#_Toc404795276}[]{#struct_0_x1322_12350_1551000309}
+Sysname-wips-dtc-home malformed null-probe-resp quiet 360
 
 **WIPS \-- WIPS配置命令 \-- malformed overflow-eapol-key**
 
 ------------------------------------------------------------------------
 
-[**[malformed overflow-eapol-key]{lang="EN-US"}**]{#struct_0_x1322_12350_x1473108720}[命令用来配置检测]{style="font-family:
-宋体"}[key]{lang="EN-US"}[长度超长的]{style="font-family:宋体"}[EAPOL]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+**[malformed overflow-eapol-key**]命令用来配置检测key长度超长的EAPOL报文。
 
-[**[undo]{lang="EN-US"}**[ **malformed overflow-eapol-key**]{lang="EN-US"}]{#struct_0_x1322_12350_659828800}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **malformed overflow-eapol-key**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x452749811}
+【命令】
 
-[**[malformed overflow-eapol-key]{lang="EN-US"}**[ \[ **quiet** *quiet-value*]{lang="EN-US"}]{#struct_0_x1322_12350_577708778}*[ ]{lang="EN-US"}*[\]]{lang="EN-US"}
+**[malformed overflow-eapol-key** [ **quiet** *quiet-value*]**]
 
-[**[undo malformed overflow-eapol-key]{lang="EN-US"}**]{#struct_0_x1322_12350_x1851102447}
+**[undo malformed overflow-eapol-key**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_280316488}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_1788209532}[检测]{style="font-family:宋体"}[key]{lang="EN-US"}[长度超长的]{style="font-family:宋体"}[EAPOL]{lang="EN-US"}[报文]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不检测key长度超长的EAPOL报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1870968971}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_1487700506}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_206927633}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x230135368}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1532009219}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1741011624}
+【参数】
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_x1099054088}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，即使设备检测到]{style="font-family:宋体"}[key]{lang="EN-US"}[长度超长的]{style="font-family:宋体"}[EAPOL]{lang="EN-US"}[报文，也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，即使设备检测到key长度超长的EAPOL报文，也不会发送告警日志。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1046563015}
+【使用指导】
 
-[[该检测是针对]{style="font-family:宋体"}[EAPOL-Key]{lang="EN-US"}]{#struct_0_x1322_12350_1246023321}[帧的检测。当检测到该帧的]{style="font-family:宋体"}[TO DS]{lang="EN-US"}[等于]{style="font-family:宋体"}[1]{lang="EN-US"}[且其]{style="font-family:宋体"}[Key Length]{lang="EN-US"}[大于零时，则判定该帧为]{style="font-family:宋体"}[key]{lang="EN-US"}[长度超长的]{style="font-family:宋体"}[EAPOL]{lang="EN-US"}[报文。]{style="font-family:宋体"}[Key length]{lang="EN-US"}[长度异常的恶意的]{style="font-family:宋体"}[EAPOL-Key]{lang="EN-US"}[帧可能会导致]{style="font-family:宋体"}[DOS]{lang="EN-US"}[攻击。]{style="font-family:宋体"}
+该检测是针对EAPOL-Key帧的检测。当检测到该帧的TO DS等于1且其Key Length大于零时，则判定该帧为key长度超长的EAPOL报文。Key length长度异常的恶意的EAPOL-Key帧可能会导致DOS攻击。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x453128387}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x1409116458}[配置检测]{style="font-family:宋体"}[key]{lang="EN-US"}[长度超长的]{style="font-family:宋体"}[EAPOL]{lang="EN-US"}[报文，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测key长度超长的EAPOL报文，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_1315063363}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] malformed overflow-eapol-key quiet 360]{lang="EN-US"}
-:::
-
-::: {#733704063 .myid}
-[]{#_Toc404795277}[]{#struct_0_x1322_12350_176793434}
+Sysname-wips-dtc-home malformed overflow-eapol-key quiet 360
 
 **WIPS \-- WIPS配置命令 \-- malformed overflow-ssid**
 
 ------------------------------------------------------------------------
 
-[**[malformed overflow-ssid]{lang="EN-US"}**]{#struct_0_x1322_12350_x848091884}[命令用来配置检测]{style="font-family:宋体"}[SSID]{lang="EN-US"}[长度超长的畸形报文。]{style="font-family:宋体"}
+**[malformed overflow-ssid**]命令用来配置检测SSID长度超长的畸形报文。
 
-[**[undo]{lang="EN-US"}**[ **malformed overflow-ssid**]{lang="EN-US"}]{#struct_0_x1322_12350_773424381}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **malformed overflow-ssid**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1561489390}
+【命令】
 
-[**[malformed overflow-ssid]{lang="EN-US"}**[ \[ **quiet** *quiet-value*]{lang="EN-US"}]{#struct_0_x1322_12350_x710925549}*[ ]{lang="EN-US"}*[\]]{lang="EN-US"}
+**[malformed overflow-ssid** [ **quiet** *quiet-value*]**]
 
-[**[undo malformed overflow-ssid]{lang="EN-US"}**]{#struct_0_x1322_12350_1335948573}
+**[undo malformed overflow-ssid**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_234338511}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_1928321248}[检测]{style="font-family:宋体"}[SSID]{lang="EN-US"}[长度超长的畸形报文]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不检测SSID长度超长的畸形报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1084249958}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_794499502}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_132697450}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_399794253}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_914122193}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1673800136}
+【参数】
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_x169781830}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，即使设备检测到]{style="font-family:宋体"}[SSID]{lang="EN-US"}[长度超长的畸形报文，也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，即使设备检测到SSID长度超长的畸形报文，也不会发送告警日志。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1322_12350_529176069}
+【使用指导】
 
-[[该检测是针对]{style="font-family:宋体"}[Beacon]{lang="EN-US"}]{#struct_0_x1322_12350_x730773431}[、探查请求、探查响应、关联请求帧的检测。当解析报文的]{style="font-family:宋体"}[SSID length]{lang="EN-US"}[大于]{style="font-family:宋体"}[32]{lang="EN-US"}[字节时，不符合协议规定的]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[字节的范围，则判定该帧为]{style="font-family:宋体"}[SSID]{lang="EN-US"}[超长的畸形报文。]{style="font-family:宋体"}
+该检测是针对Beacon、探查请求、探查响应、关联请求帧的检测。当解析报文的SSID length大于32字节时，不符合协议规定的0～32字节的范围，则判定该帧为SSID超长的畸形报文。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1785091917}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_1562242061}[配置检测]{style="font-family:宋体"}[SSID]{lang="EN-US"}[长度超长的畸形报文，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测SSID长度超长的畸形报文，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_126160528}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] malformed overflow-ssid quiet 360]{lang="EN-US"}
-:::
-
-::: {#-1422179986 .myid}
-[]{#_Toc404795278}[]{#struct_0_x1322_12350_387553945}
+Sysname-wips-dtc-home malformed overflow-ssid quiet 360
 
 **WIPS \-- WIPS配置命令 \-- malformed redundant-ie**
 
 ------------------------------------------------------------------------
 
-[**[malformed redundant-ie]{lang="EN-US"}**]{#struct_0_x1322_12350_x592899212}[命令用来配置检测多余]{style="font-family:宋体"}[IE]{lang="EN-US"}[畸形报文。]{style="font-family:宋体"}
+**[malformed redundant-ie**]命令用来配置检测多余IE畸形报文。
 
-[**[undo]{lang="EN-US"}**[ **malformed redundant-ie**]{lang="EN-US"}]{#struct_0_x1322_12350_361041206}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **malformed redundant-ie**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x833481742}
+【命令】
 
-[**[malformed redundant-ie]{lang="EN-US"}**[ \[ **quiet** *quiet-value*]{lang="EN-US"}]{#struct_0_x1322_12350_1650355708}*[ ]{lang="EN-US"}*[\]]{lang="EN-US"}
+**[malformed redundant-ie** [ **quiet** *quiet-value*]**]
 
-[**[undo malformed redundant-ie]{lang="EN-US"}**]{#struct_0_x1322_12350_203873836}
+**[undo malformed redundant-ie**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x110121639}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_971660670}[检测多余]{style="font-family:宋体"}[IE]{lang="EN-US"}[畸形报文]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不检测多余IE畸形报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1274219456}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x2017977383}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x2100544709}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_2100008438}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1164198844}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x524441598}
+【参数】
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_1692244469}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，即使设备检测到多余]{style="font-family:宋体"}[IE]{lang="EN-US"}[畸形报文，也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，即使设备检测到多余IE畸形报文，也不会发送告警日志。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1322_12350_426322780}
+【使用指导】
 
-[[该检测是针对所有管理帧的检测。报文解析过程中，当遇到既不属于报文应包含的]{style="font-family:宋体"}[IE]{lang="EN-US"}]{#struct_0_x1322_12350_x89231544}[，也不属于]{style="font-family:宋体"}[reserved IE]{lang="EN-US"}[时，判断该]{style="font-family:宋体"}[IE]{lang="EN-US"}[为多余]{style="font-family:宋体"}[IE]{lang="EN-US"}[，则该报文被判定为多余]{style="font-family:宋体"}[IE]{lang="EN-US"}[畸形报文。]{style="font-family:宋体"}
+该检测是针对所有管理帧的检测。报文解析过程中，当遇到既不属于报文应包含的IE，也不属于reserved IE时，判断该IE为多余IE，则该报文被判定为多余IE畸形报文。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1381661799}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_1204338393}[配置检测多余]{style="font-family:宋体"}[IE]{lang="EN-US"}[畸形报文，静默时间为]{style="font-family:宋体"}[360]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测多余IE畸形报文，静默时间为360秒。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x2132555554}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] malf]{lang="EN-US"}[ormed redundant-ie quiet ]{lang="IT"}[360]{lang="EN-US"}
-:::
-
-::: {#1151141011 .myid}
-[]{#_Toc404795279}[]{#struct_0_x1322_12350_160806820}
+Sysname-wips-dtc-home malformed redundant-ie quiet 360
 
 **WIPS \-- WIPS配置命令 \-- manual-classify mac-address**
 
 ------------------------------------------------------------------------
 
-[**[manual-classify mac-address]{lang="EN-US"}**]{#struct_0_x1322_12350_411486401}[命令用来配置手工]{style="font-family:
-宋体"}[AP]{lang="EN-US"}[分类。]{style="font-family:宋体"}
+**[manual-classify mac-address**]命令用来配置手工AP分类。
 
-[**[undo manual-classify mac-address]{lang="EN-US"}**]{#struct_0_x1322_12350_x892550873}[命令用来删除手动]{style="font-family:宋体"}[AP]{lang="EN-US"}[分类。]{style="font-family:宋体"}
+**[undo manual-classify mac-address**]命令用来删除手动AP分类。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1750456823}
+【命令】
 
-[**[manual-classify mac-address]{lang="EN-US"}**[ *mac*-*address* { **authorized-ap** \| **external-ap** \| **misconfigured-ap** \| **rogue-ap** }]{lang="EN-US"}]{#struct_0_x1322_12350_630673441}
+**[manual-classify mac-address**[ *mac*-*address* { **authorized-ap** \| **external-ap** \| **misconfigured-ap** \| **rogue-ap** }]]
 
-[**[undo manual-classify mac-address]{lang="EN-US"}**[ { *mac*-*address* \| **all** }]{lang="EN-US"}]{#struct_0_x1322_12350_x1308960823}
+**[undo manual-classify mac-address**[ { *mac*-*address* \| **all** }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_798175711}
+【缺省情况】
 
-[[没有对]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_x1322_12350_328841977}[进行手工分类]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+没有对AP进行手工分类。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1288959942}
+【视图】
 
-[[分类策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_907363858}
+分类策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x972182131}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x311170255}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1570492951}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1366760885}
+【参数】
 
-[*[mac]{lang="PT-BR"}*]{#struct_0_x1322_12350_1828672355}[-*address*]{lang="PT-BR"}[：]{style="font-family:宋体"}[AP]{lang="PT-BR"}[的]{style="font-family:宋体"}[MAC]{lang="PT-BR"}[地址]{style="font-family:宋体"}[，]{style="font-family:宋体"}[格式为]{style="font-family:宋体"}[H-H-H]{lang="PT-BR"}[。]{style="font-family:宋体"}
+*[mac*]-*address*：AP的MAC地址，格式为H-H-H。
 
-[**[authorized-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_x111469361}[：将指定]{style="font-family:宋体"}[AP]{lang="EN-US"}[设置为]{style="font-family:宋体"}[授权]{style="font-family:宋体"}[AP]{lang="PT-BR"}[。]{style="font-family:宋体"}
+**[authorized-ap**]：将指定AP设置为授权AP。
 
-[**[external-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_1294467808}[：将指定]{style="font-family:宋体"}[AP]{lang="EN-US"}[设置为外部]{style="font-family:宋体"}[AP]{lang="PT-BR"}[。]{style="font-family:宋体"}
+**[external-ap**]：将指定AP设置为外部AP。
 
-[**[misconfigured-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_606325956}[：将指定]{style="font-family:宋体"}[AP]{lang="EN-US"}[设置为配置错误的]{style="font-family:宋体"}[AP]{lang="PT-BR"}[。]{style="font-family:宋体"}
+**[misconfigured-ap**]：将指定AP设置为配置错误的AP。
 
-[**[rogue-ap]{lang="EN-US"}**]{#struct_0_x1322_12350_448398794}[：将指定]{style="font-family:宋体"}[AP]{lang="EN-US"}[设置为]{style="font-family:宋体"}[Rogue AP]{lang="PT-BR"}[。]{style="font-family:宋体"}
+**[rogue-ap**]：将指定AP设置为Rogue AP。
 
-[**[all]{lang="PT-BR"}**]{#struct_0_x1322_12350_x1516650765}[：]{style="font-family:宋体"}[所有]{style="font-family:宋体"}[AP]{lang="PT-BR"}[。]{style="font-family:宋体"}
+**[all**]：所有AP。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1141144751}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x1296076464}[将]{style="font-family:宋体"}[MAC]{lang="IT"}[地址为]{style="font-family:宋体"}[000f-00e2-0001]{lang="EN-US"}[的]{style="font-family:宋体"}[AP]{lang="EN-US"}[配置为]{style="font-family:宋体"}[授权]{style="font-family:宋体"}[AP]{lang="PT-BR"}[。]{style="font-family:宋体"}
+\# 将MAC地址为000f-00e2-0001的AP配置为授权AP。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x1439923413}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-wips\] classification policy home]{lang="IT"}
+Sysname-wips classification policy home
 
-[\[Sysname-wips-cls-home\] ]{lang="IT"}[manual-classify mac-address 000f-00e2-0001 authorized-ap]{lang="EN-US"}
-:::
-
-::: {#-777056585 .myid}
-[]{#_Toc404795280}[]{#struct_0_x1322_12350_x421769575}[]{#_Toc401135827}
+Sysname-wips-cls-home manual-classify mac-address 000f-00e2-0001 authorized-ap
 
 **WIPS \-- WIPS配置命令 \-- reset wips statistics**
 
 ------------------------------------------------------------------------
 
-[**[reset wips statistics]{lang="EN-US"}**]{#struct_0_x1322_12350_x342942995}[命令用来清除所有]{style="font-family:宋体"}[Sensor]{lang="EN-US"}[上报的信息。]{style="font-family:宋体"}
+**[reset wips statistics**]命令用来清除所有Sensor上报的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1539889018}
+【命令】
 
-[**[reset wips statistics]{lang="EN-US"}**]{#struct_0_x1322_12350_x1009753137}
+**[reset wips statistics**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1482771313}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1146754131}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x655265403}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1103145695}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1429564107}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_707551441}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_25423179}[清除所有]{style="font-family:宋体"}[Sensor]{lang="EN-US"}[上报的信息。]{style="font-family:宋体"}
+\# 清除所有Sensor上报的信息。
 
-[[\<Sysname\> reset wips statistics]{lang="EN-US"}]{#struct_0_x1322_12350_x1210061650}
+\<Sysname\> reset wips statistics
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1843207940}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display wips statistic]{lang="EN-US"}**]{#struct_0_x1322_12350_x1915216669}**[s receive]{lang="EN-US"}**
-:::
-
-::: {#-1120334832 .myid}
-[]{#_Toc404795281}[]{#struct_0_x1322_12350_1240391051}
+·**display wips statistic****s receive**
 
 **WIPS \-- WIPS配置命令 \-- reset wips virtual-security-domain**
 
 ------------------------------------------------------------------------
 
-[**[reset wips virtual-security-domain]{lang="EN-US"}**]{#struct_0_x1322_12350_1456781457}[命令用来清除]{style="font-family:宋体"}[VSD]{lang="EN-US"}[内学习到的]{style="font-family:宋体"}[AP]{lang="EN-US"}[表项和客户端表项。]{style="font-family:宋体"}
+**[reset wips virtual-security-domain**]命令用来清除VSD内学习到的AP表项和客户端表项。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1276530662}
+【命令】
 
-[**[reset wips virtual-security-domain ]{lang="EN-US"}***[vsd-name]{lang="EN-US"}*[ **device** { **[ap]{style="color:black"}** { ]{lang="EN-US"}]{#struct_0_x1322_12350_x582584413}**[all]{lang="EN-US" style="font-size:10.0pt;font-family:\"Segoe UI\",\"sans-serif\";
-color:black"}**[ \| **mac-address**]{lang="EN-US" style="font-size:10.0pt;font-family:
-\"Segoe UI\",\"sans-serif\";color:black"}**[ ]{lang="EN-US" style="color:black"}***[mac-address ]{lang="EN-US" style="color:black"}*[} \|[ **client**]{style="color:black"} { **[all]{style="color:black"}**[ \| ]{style="color:black"}]{lang="EN-US"}**[mac-address]{lang="IT" style="color:black"}**[ ]{lang="IT" style="color:black"}*[mac-address]{lang="EN-US" style="color:black"}*[ } \| **[all]{style="color:black"}** }]{lang="EN-US"}
+**[reset wips virtual-security-domain ***vsd-name* **device** ** **all**[ \| **mac-address**]*****mac-address *[} \|[ **client**] **[ \| ]]**mac-address***mac-address*[ } \| **[all]** }]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x976414923}
+【视图】]
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x157428499}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1166841704}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1111803743}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x985029040}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1696011205}
+【参数】
 
-[*[vsd-name]{lang="IT"}*]{#struct_0_x1322_12350_1339089937}[：]{style="font-family:宋体"}[虚拟安全域的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[vsd-name*]：虚拟安全域的名称，为1～63个字符的字符串，区分大小写。
 
-[**[device]{lang="IT"}**]{#struct_0_x1322_12350_x889698983}[：]{style="font-family:宋体"}[虚拟安全域中检测到的设备。]{style="font-family:宋体"}
+**[device**]：虚拟安全域中检测到的设备。
 
-[**[ap]{lang="IT"}**]{#struct_0_x1322_12350_x747003812}[：]{style="font-family:宋体"}[虚拟安全域中检测到的]{style="font-family:宋体"}[AP]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[ap**]：虚拟安全域中检测到的AP。
 
-[**[all]{lang="EN-US" style="font-size:10.0pt;font-family:\"Segoe UI\",\"sans-serif\";
-color:black"}**]{#struct_0_x1322_12350_x1360159793}[：]{style="font-size:10.0pt;font-family:宋体;
-color:black"}[虚拟安全域中检测到的]{style="font-family:宋体"}[所有]{style="font-size:10.0pt;font-family:宋体;color:black"}[AP]{lang="EN-US" style="font-size:10.0pt;font-family:\"Segoe UI\",\"sans-serif\";color:black"}[。]{style="font-size:10.0pt;font-family:宋体;color:black"}
+**[all**]：虚拟安全域中检测到的所有AP。
 
-[**[mac-address]{lang="EN-US" style="font-size:10.0pt;font-family:\"Segoe UI\",\"sans-serif\";
-color:black"}**]{#struct_0_x1322_12350_x277123999}**[ ]{lang="EN-US" style="color:black"}***[mac-address]{lang="EN-US" style="color:black"}*[：]{style="font-family:宋体"}[指定]{style="font-family:宋体"}[AP]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[mac-address**]*****mac-address*：指定AP的MAC地址。
 
-[**[client]{lang="IT" style="color:black"}**]{#struct_0_x1322_12350_x1015515504}[：]{style="font-family:宋体;
-color:black"}[虚拟安全域中检测到的客户端。]{style="font-family:宋体"}
+**[client**]：虚拟安全域中检测到的客户端。
 
-[**[all]{lang="IT" style="font-size:10.0pt;font-family:\"Segoe UI\",\"sans-serif\";color:black"}**]{#struct_0_x1322_12350_758971080}[：]{style="font-size:10.0pt;font-family:宋体;color:black"}[虚拟安全域中检测到的]{style="font-family:宋体"}[所有]{style="font-size:10.0pt;
-font-family:宋体;color:black"}[客户端]{style="font-family:宋体"}[。]{style="font-size:10.0pt;font-family:宋体;color:black"}
+**[all**]：虚拟安全域中检测到的所有客户端。
 
-[**[mac-address]{lang="IT" style="font-size:10.0pt;font-family:\"Segoe UI\",\"sans-serif\";color:black"}**]{#struct_0_x1322_12350_928013606}**[ ]{lang="IT" style="color:black"}***[mac-address]{lang="IT" style="color:black"}*[：]{style="font-family:宋体"}[指定]{style="font-family:宋体"}[客户端]{style="font-family:宋体"}[的]{style="font-family:宋体"}[MAC]{lang="IT"}[地址。]{style="font-family:宋体"}
+**[mac-address**]*****mac-address*：指定客户端的MAC地址。
 
-[**[all]{lang="IT" style="font-size:10.0pt;font-family:\"Segoe UI\",\"sans-serif\";color:black"}**]{#struct_0_x1322_12350_x1262780781}[：]{style="font-size:10.0pt;font-family:宋体;color:black"}[虚拟安全域中检测到的所有]{style="font-family:宋体"}[AP]{lang="IT"}[和客户端。]{style="font-family:宋体"}
+**[all**]：虚拟安全域中检测到的所有AP和客户端。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x364212274}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x435549743}[清除]{style="font-family:宋体"}[VSD aaa]{lang="EN-US"}[内学习到的]{style="font-family:宋体"}[AP]{lang="EN-US"}[表项和客户端表项。]{style="font-family:宋体"}
+\# 清除VSD aaa内学习到的AP表项和客户端表项。
 
-[[\<Sysname\> reset wips virtual-security-domain aaa device all]{lang="EN-US"}]{#struct_0_x1322_12350_x2045570379}
+\<Sysname\> reset wips virtual-security-domain aaa device all
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_672705767}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display wips virtual-security-domain device]{lang="EN-US"}**]{#struct_0_x1322_12350_526688704}
-:::
-
-::: {#-2006571796 .myid}
-[]{#_Toc404795282}[]{#struct_0_x1322_12350_1170043289}
+·**display wips virtual-security-domain device**
 
 **WIPS \-- WIPS配置命令 \-- reset wips virtual-security-domain countermeasure record**
 
 ------------------------------------------------------------------------
 
-[**[reset wips virtual-security-domain countermeasure record]{lang="EN-US"}**]{#struct_0_x1322_12350_2040244634}[命令用来清除指定]{style="font-family:宋体"}[VSD]{lang="EN-US"}[内所有被反制过的设备信息。]{style="font-family:宋体"}
+**[reset wips virtual-security-domain countermeasure record**]命令用来清除指定VSD内所有被反制过的设备信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x296655706}
+【命令】
 
-[**[reset wips virtual-security-domain ]{lang="EN-US"}***[vsd-name]{lang="EN-US"}***[ countermeasure record]{lang="EN-US"}**]{#struct_0_x1322_12350_x1545305032}
+**[reset wips virtual-security-domain ***vsd-name*** countermeasure record**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1200610117}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x680408526}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1496801261}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1047050332}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1093796906}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1639858562}
+【参数】
 
-[*[vsd-name]{lang="IT"}*]{#struct_0_x1322_12350_x507201296}[：]{style="font-family:宋体"}[虚拟安全域的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[vsd-name*]：虚拟安全域的名称，为1～63个字符的字符串，区分大小写。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1402182317}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x1963197351}[清除指定]{style="font-family:宋体"}[VSD]{lang="EN-US"}[内所有被反制过的设备信息。]{style="font-family:宋体"}
+\# 清除指定VSD内所有被反制过的设备信息。
 
-[[\<Sysname\> reset wips virtual-security-domain aaa countermeasure record]{lang="EN-US"}]{#struct_0_x1322_12350_1745264667}
+\<Sysname\> reset wips virtual-security-domain aaa countermeasure record
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1626705491}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display wips virtual-security-domain countermeasure record]{lang="EN-US"}**]{#struct_0_x1322_12350_x357018016}
-:::
-
-::: {#2045575119 .myid}
-[]{#_Toc404795283}[]{#struct_0_x1322_12350_1778161276}
+·**display wips virtual-security-domain countermeasure record**
 
 **WIPS \-- WIPS配置命令 \-- trust mac-address**
 
 ------------------------------------------------------------------------
 
-[**[trust mac-address]{lang="IT"}**]{#struct_0_x1322_12350_1839054929}[命令用来将指定的]{style="font-family:宋体"}[MAC]{lang="IT"}[地址添加到静态信任列表中]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[trust mac-address**]命令用来将指定的MAC地址添加到静态信任列表中。
 
-[**[undo trust mac-address]{lang="IT"}**]{#struct_0_x1322_12350_20464305}[命令用来]{style="font-family:宋体"}[删除静态信任列表中的]{style="font-family:宋体"}[MAC]{lang="IT"}[地址]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo trust mac-address**]命令用来删除静态信任列表中的MAC地址。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1900923972}
+【命令】
 
-[**[trust mac-address]{lang="IT"}**[ ]{lang="IT"}]{#struct_0_x1322_12350_885675415}*[mac-address]{lang="IT"}*
+**[trust mac-address**]*mac-address*
 
-[**[undo trust mac-address]{lang="IT"}**[ ]{lang="IT"}[{ ]{lang="EN-US"}]{#struct_0_x1322_12350_1502374950}*[mac-address]{lang="IT"}*[ \| **all** }]{lang="EN-US"}
+**[undo trust mac-address***mac-address*[ \| **all** }]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1926367621}
+【缺省情况】]
 
-[[静态信任列表中不存在]{style="font-family:宋体"}]{#struct_0_x1322_12350_x529983669}[MAC]{lang="IT"}[地址。]{style="font-family:宋体"}
+静态信任列表中不存在MAC地址。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_52715403}
+【视图】
 
-[[分类策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1667816245}
+分类策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_2036737833}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_147040939}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1505879273}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x887073397}
+【参数】
 
-[*[mac-address]{lang="IT"}*]{#struct_0_x1322_12350_x1363161246}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[或客户端的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[mac-address*]：AP或客户端的MAC地址。
 
-[**[all]{lang="EN-US"}**]{#struct_0_x1322_12350_x903455096}[：所有]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[all**]：所有MAC地址。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1546860656}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_357843666}[将]{style="font-family:宋体"}[MAC]{lang="IT"}[地址]{style="font-family:
-宋体"}[78AC-C0AF-944F]{lang="IT"}[添加到静态信任列表中。]{style="font-family:宋体"}
+\# 将MAC地址78AC-C0AF-944F添加到静态信任列表中。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x230069832}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-wips\] classification policy home]{lang="IT"}
+Sysname-wips classification policy home
 
-[\[Sysname-wips-cls-home\] trust mac-address 78AC-C0AF-944F]{lang="IT"}
-:::
-
-::: {#1470939653 .myid}
-[]{#_Toc404795284}[]{#struct_0_x1322_12350_721949165}
+Sysname-wips-cls-home trust mac-address 78AC-C0AF-944F
 
 **WIPS \-- WIPS配置命令 \-- trust oui**
 
 ------------------------------------------------------------------------
 
-[**[trust oui]{lang="IT"}**]{#struct_0_x1322_12350_x328305125}[命令用来将指定的]{style="font-family:宋体"}[OUI]{lang="IT"}[添加到静态信任列表中]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[trust oui**]命令用来将指定的OUI添加到静态信任列表中。
 
-[**[undo trust oui]{lang="IT"}**]{#struct_0_x1322_12350_x1331584216}[命令用来]{style="font-family:宋体"}[删除静态信任列表中的]{style="font-family:宋体"}[OUI]{lang="IT"}[。]{style="font-family:宋体"}
+**[undo trust oui**]命令用来删除静态信任列表中的OUI。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1110797049}
+【命令】
 
-[**[trust oui]{lang="IT"}***[ ]{lang="IT"}[oui]{lang="EN-US"}*]{#struct_0_x1322_12350_x1040549533}
+**[trust oui***oui*]
 
-[**[undo trust]{lang="IT"}**[ ]{lang="IT"}]{#struct_0_x1322_12350_x1095814607}**[oui]{lang="IT"}**[ ]{lang="IT"}[{ *oui* \| **all** }]{lang="EN-US"}
+**[undo trust**]**oui**[{ *oui* \| **all** }]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1191151146}
+【缺省情况】
 
-[[静态信任列表中不存在]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1195711497}[OUI]{lang="IT"}[。]{style="font-family:宋体"}
+静态信任列表中不存在OUI。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1972213753}
+【视图】
 
-[[分类策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_904787570}
+分类策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1675887765}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_346848011}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_2041727949}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x663556045}
+【参数】
 
-[*[oui]{lang="EN-US"}*]{#struct_0_x1322_12350_1336014109}[：]{style="font-family:宋体"}[OUI]{lang="EN-US"}[名称，为]{style="font-family:宋体"}[6]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+*[oui*]：OUI名称，为6个字符的字符串，不区分大小写。
 
-[**[all]{lang="EN-US"}**]{#struct_0_x1322_12350_934167215}[：所有]{style="font-family:宋体"}[OUI]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[all**]：所有OUI。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_113932289}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_850198125}[将]{style="font-family:宋体"}[名为]{style="font-family:宋体"}[000fe4]{lang="EN-US"}[、]{style="font-family:宋体"}[000fe5]{lang="EN-US"}[的]{style="font-family:宋体"}[OUI]{lang="IT"}[添加到静态信任列表中。]{style="font-family:
-宋体"}
+\# 将名为000fe4、000fe5的OUI添加到静态信任列表中。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x1460882631}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-wips\] classification policy home]{lang="IT"}
+Sysname-wips classification policy home
 
-[\[Sysname-wips-cls-home\] trust oui 000fe4]{lang="IT"}
+Sysname-wips-cls-home trust oui 000fe4
 
-[\[Sysname-wips-cls-home\] trust oui 000fe5]{lang="IT"}
-:::
-
-::: {#1583195625 .myid}
-[]{#_Toc404795285}[]{#struct_0_x1322_12350_x1365991865}
+Sysname-wips-cls-home trust oui 000fe5
 
 **WIPS \-- WIPS配置命令 \-- trust ssid**
 
 ------------------------------------------------------------------------
 
-[**[trust ssid]{lang="IT"}**]{#struct_0_x1322_12350_x813220692}[命令用来将指定的]{style="font-family:宋体"}[SSID]{lang="IT"}[添加到静态信任列表中]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[trust ssid**]命令用来将指定的SSID添加到静态信任列表中。
 
-[**[undo trust ssid]{lang="IT"}**]{#struct_0_x1322_12350_x1611083278}[命令用来]{style="font-family:宋体"}[删除静态信任列表中的]{style="font-family:宋体"}[SSID]{lang="IT"}[。]{style="font-family:宋体"}
+**[undo trust ssid**]命令用来删除静态信任列表中的SSID。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1107087568}
+【命令】
 
-[**[trust ssid ]{lang="IT"}**]{#struct_0_x1322_12350_x1115864498}*[ssid-name]{lang="IT"}*
+**[trust ssid **]*ssid-name*
 
-[**[undo trust]{lang="IT"}**[ ]{lang="IT"}]{#struct_0_x1322_12350_x317189583}**[ssid]{lang="IT"}**[ ]{lang="IT"}[{ ]{lang="EN-US"}*[ssid-name]{lang="IT"}*[ \| **all** }]{lang="EN-US"}
+**[undo trust**]**ssid***[ssid-name*[ \| **all** }]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_795214415}
+【缺省情况】]
 
-[[静态信任列表中不存在]{style="font-family:宋体"}]{#struct_0_x1322_12350_754858237}[SSID]{lang="IT"}[。]{style="font-family:宋体"}
+静态信任列表中不存在SSID。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_126226064}
+【视图】
 
-[[分类策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_x1657187310}
+分类策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1217003422}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1841866582}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x2138142924}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_2142935569}
+【参数】
 
-[*[ssid-name]{lang="IT"}*]{#struct_0_x1322_12350_922540085}[：]{style="font-family:宋体"}[SSID]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[ssid-name*]：SSID的名称，为1～32个字符的字符串，区分大小写。
 
-[**[all]{lang="EN-US"}**]{#struct_0_x1322_12350_x1183428353}[：所有]{style="font-family:宋体"}[SSID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[all**]：所有SSID。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1796404395}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x65459555}[将]{style="font-family:宋体"}[名为]{style="font-family:宋体"}[flood1]{lang="IT"}[的]{style="font-family:宋体"}[SSID]{lang="IT"}[添加到静态信任列表中。]{style="font-family:宋体"}
+\# 将名为flood1的SSID添加到静态信任列表中。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_x1668240539}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-wips\] classification policy home]{lang="IT"}
+Sysname-wips classification policy home
 
-[\[Sysname-wips-cls-home\] trust ssid flood1]{lang="IT"}
-:::
-
-::: {#-36437246 .myid}
-[]{#_Toc404795286}[]{#struct_0_x1322_12350_x882232498}[]{#_Toc375833249}[]{#_Toc370199118}
+Sysname-wips-cls-home trust ssid flood1
 
 **WIPS \-- WIPS配置命令 \-- virtual-security-domain**
 
 ------------------------------------------------------------------------
 
-[**[virtual-security-domain]{lang="IT"}**]{#struct_0_x1322_12350_1692310005}[命令用来创建]{style="font-family:宋体"}[VSD]{lang="EN-US"}[（]{style="font-family:宋体"}[Virtual Security Domain]{lang="EN-US"}[，虚拟安全域），并进入]{style="font-family:宋体"}[VSD]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+**[virtual-security-domain**]命令用来创建VSD（Virtual Security Domain，虚拟安全域），并进入VSD视图。
 
-[**[undo virtual-security-domain]{lang="IT"}**]{#struct_0_x1322_12350_x1144891185}[命令用来删除已创建的]{style="font-family:宋体"}[VSD]{lang="IT"}[。]{style="font-family:宋体"}
+**[undo virtual-security-domain**]命令用来删除已创建的VSD。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1145224899}
+【命令】
 
-[**[virtual-security-domain]{lang="IT"}**]{#struct_0_x1322_12350_443576739}*[ vsd-name]{lang="IT"}*
+**[virtual-security-domain**]* vsd-name*
 
-[**[undo virtual-security-domain]{lang="IT"}**]{#struct_0_x1322_12350_x41573725}[ *vsd-name*]{lang="IT"}
+**[undo virtual-security-domain**] *vsd-name*
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_603539288}
+【缺省情况】
 
-[[不存在]{style="font-family:宋体"}[VSD]{lang="EN-US"}]{#struct_0_x1322_12350_1410916401}[。]{style="font-family:宋体"}
+不存在VSD。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_869199156}
+【视图】
 
-[[WIPS]{lang="EN-US"}]{#struct_0_x1322_12350_2113011399}[视图]{style="font-family:宋体"}
+WIPS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_438666242}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_2062645761}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1582468758}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x901131758}
+【参数】
 
-[*[vsd-name]{lang="IT"}*]{#struct_0_x1322_12350_538994039}[：]{style="font-family:宋体"}[虚拟安全域的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[vsd-name*]：虚拟安全域的名称，为1～63个字符的字符串，区分大小写。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1890870624}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_1289025478}[创建名为]{style="font-family:宋体"}[office]{lang="EN-US"}[的]{style="font-family:宋体"}[VSD]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[VSD]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+\# 创建名为office的VSD，并进入VSD视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1322_12350_x244859266}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="EN-US"}
+Sysname wips
 
-[\[Sysname-wips\] virtual-security-domain office]{lang="EN-US"}
+Sysname-wips virtual-security-domain office
 
-[\[Sysname-]{lang="EN-US"}[wips-vsd-]{lang="IT"}[office\]]{lang="EN-US"}
-:::
-
-::: {#-757446691 .myid}
-[]{#_Toc404795287}[]{#struct_0_x1322_12350_1974414147}
+Sysname-wips-vsd-office
 
 **WIPS \-- WIPS配置命令 \-- weak-iv**
 
 ------------------------------------------------------------------------
 
-[**[weak-iv]{lang="EN-US"}**]{#struct_0_x1322_12350_1104414443}[命令用来检测弱初始化向量。]{style="font-family:宋体"}
+**[weak-iv**]命令用来检测弱初始化向量。
 
-[**[undo]{lang="EN-US"}**[ **weak-iv**]{lang="EN-US"}]{#struct_0_x1322_12350_x1430653490}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **weak-iv**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x2110076442}
+【命令】
 
-[**[weak-iv]{lang="EN-US"}**[ \[ **quiet** *quiet-value* \]]{lang="EN-US"}]{#struct_0_x1322_12350_1683483595}
+**[weak-iv** [ **quiet** *quiet-value* ]]
 
-[**[undo weak-iv]{lang="EN-US"}**]{#struct_0_x1322_12350_x1694432677}
+**[undo weak-iv**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x2066562459}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_x1322_12350_672068397}[检测弱初始化向量]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+不检测弱初始化向量。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1045597438}
+【视图】
 
-[[攻击检测策略视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_919169075}
+攻击检测策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1143371278}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_2068297875}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x1439857877}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_877495348}
+【参数】
 
-[**[quiet]{lang="EN-US"}**]{#struct_0_x1322_12350_x1006255031}*[ quiet-value]{lang="IT"}*[：发送告警日志后的静默时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[604800]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。在静默期间，设备再次检测到初始化向量也不会发送告警日志。]{style="font-family:宋体"}
+**[quiet**]* quiet-value*：发送告警日志后的静默时间，取值范围为5～604800，单位为秒，缺省值为600秒。在静默期间，设备再次检测到初始化向量也不会发送告警日志。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1322_12350_603152919}
+【使用指导】
 
-[[设备检测到弱初始化向量后会发送告警日志。]{style="font-family:宋体"}]{#struct_0_x1322_12350_836380421}
+设备检测到弱初始化向量后会发送告警日志。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1246970058}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x456375628}[配置检测弱初始化向量]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 配置检测弱初始化向量。
 
-[[\<Sysname\> system-view]{lang="IT"}]{#struct_0_x1322_12350_1100983075}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="IT"}
+Sysname wips
 
-[\[Sysname-wips\] detect policy home]{lang="EN-US"}
+Sysname-wips detect policy home
 
-[\[Sysname-wips-dtc-home\] weak-iv]{lang="EN-US"}
-:::
-
-::: {#-1906429789 .myid}
-[]{#_Toc404795288}[]{#struct_0_x1322_12350_793882155}
+Sysname-wips-dtc-home weak-iv
 
 **WIPS \-- WIPS配置命令 \-- wips**
 
 ------------------------------------------------------------------------
 
-[**[wips]{lang="IT"}**]{#struct_0_x1322_12350_1015842821}[命令用来进入]{style="font-family:宋体"}[WIPS]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+**[wips**]命令用来进入WIPS视图。
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1322_12350_x622781719}**[wips]{lang="IT"}**[命令用来删除]{style="font-family:宋体"}[WIPS]{lang="EN-US"}[视图下所有配置。]{style="font-family:宋体"}
+**[undo **]**wips**命令用来删除WIPS视图下所有配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x622168556}
+【命令】
 
-[**[wips]{lang="IT"}**]{#struct_0_x1322_12350_955098535}
+**[wips**]
 
-[**[undo wips]{lang="IT"}**]{#struct_0_x1322_12350_x1843142404}
+**[undo wips**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x920159274}
+【缺省情况】
 
-[[没有配置]{style="font-family:宋体"}[WIPS]{lang="EN-US"}]{#struct_0_x1322_12350_x2139088317}[视图。]{style="font-family:宋体"}
+没有配置WIPS视图。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x701390749}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1322_12350_1184887068}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1914491969}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x321089532}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_x431679000}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1395649774}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x329071760}[进入]{style="font-family:宋体"}[WIPS]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+\# 进入WIPS视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1322_12350_1010988301}
+\<Sysname\> system-view
 
-[\[Sysname\] wips]{lang="EN-US"}
+Sysname wips
 
-[\[Sysname-]{lang="EN-US"}[wips]{lang="IT"}[\]]{lang="EN-US"}
-:::
-
-::: {#-352241931 .myid}
-[]{#_Toc404795289}[]{#struct_0_x1322_12350_x277058463}
+Sysname-wips
 
 **WIPS \-- WIPS配置命令 \-- wips enable**
 
 ------------------------------------------------------------------------
 
-[**[wips enable]{lang="EN-US"}**]{#struct_0_x1322_12350_224484545}[命令用来开启]{style="font-family:宋体"}[WIPS]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[wips enable**]命令用来开启WIPS功能。
 
-[**[undo]{lang="EN-US"}**[ **wips enable**]{lang="EN-US"}]{#struct_0_x1322_12350_438884481}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **wips enable**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1671810188}
+【命令】
 
-[**[wips enable]{lang="IT"}**]{#struct_0_x1322_12350_x948909903}
+**[wips enable**]
 
-[**[undo wips enable]{lang="IT"}**]{#struct_0_x1322_12350_x1059902682}
+**[undo wips enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1490233943}
+【缺省情况】
 
-[[WIPS]{lang="EN-US"}]{#struct_0_x1322_12350_x61539550}[功能处于关闭状态。]{style="font-family:宋体"}
+WIPS功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x345690068}
+【视图】
 
-[[Radio]{lang="EN-US"}]{#struct_0_x1322_12350_x165146222}[视图]{style="font-family:宋体"}
+Radio视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x715662239}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_639887783}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_28946638}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x1960383808}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_x1673986427}[开启]{style="font-family:宋体"}[WIPS]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 开启WIPS功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1322_12350_x680342990}
+\<Sysname\> system-view
 
-[\[Sysname\] wlan ap ap1 model WA2620i-AGN]{lang="EN-US"}
+Sysname wlan ap ap1 model WA2620i-AGN
 
-[\[Sysname-wlan-ap-ap1\] radio 1]{lang="EN-US"}
+Sysname-wlan-ap-ap1 radio 1
 
-[\[Sysname-wlan-ap-ap1-radio-1\] wips enable]{lang="EN-US"}
-:::
-
-::: {#-1043197222 .myid}
-[]{#_Toc404795290}[]{#struct_0_x1322_12350_1235704681}
+Sysname-wlan-ap-ap1-radio-1 wips enable
 
 **WIPS \-- WIPS配置命令 \-- wips virtual-security-domain**
 
 ------------------------------------------------------------------------
 
-[**[wips virtual-security-domain]{lang="EN-US"}**]{#struct_0_x1322_12350_474366534}[命令用来将]{style="font-family:
-宋体"}[AP]{lang="EN-US"}[加入到指定的]{style="font-family:宋体"}[VSD]{lang="EN-US"}[中。]{style="font-family:宋体"}
+**[wips virtual-security-domain**]命令用来将AP加入到指定的VSD中。
 
-[**[undo wips virtual-security-domain]{lang="EN-US"}**]{#struct_0_x1322_12350_1264832971}[命令用来删除已加入]{style="font-family:宋体"}[VSD]{lang="IT"}[的]{style="font-family:宋体"}[AP]{lang="IT"}[。]{style="font-family:
-宋体"}
+**[undo wips virtual-security-domain**]命令用来删除已加入VSD的AP。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1322_12350_974863359}
+【命令】
 
-[**[wips virtual-security-domain ]{lang="EN-US"}**]{#struct_0_x1322_12350_x1511199591}*[vsd-name]{lang="IT"}*
+**[wips virtual-security-domain **]*vsd-name*
 
-[**[undo wips virtual-security-domain]{lang="EN-US"}**]{#struct_0_x1322_12350_1549867702}
+**[undo wips virtual-security-domain**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1407646662}
+【缺省情况】
 
-[[没有将]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_x1322_12350_780733656}[加入到指定的]{style="font-family:宋体"}[VSD]{lang="EN-US"}[中。]{style="font-family:宋体"}
+没有将AP加入到指定的VSD中。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x402197701}
+【视图】
 
-[[AP]{lang="EN-US"}]{#struct_0_x1322_12350_970608304}[视图]{style="font-family:宋体"}
+AP视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1322_12350_1200147674}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1322_12350_2047574431}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1322_12350_1666999561}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1322_12350_885740951}
+【参数】
 
-[*[vsd-name]{lang="IT"}*]{#struct_0_x1322_12350_1098804852}[：]{style="font-family:宋体"}[虚拟安全域的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[vsd-name*]：虚拟安全域的名称，为1～63个字符的字符串，区分大小写。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1322_12350_x20960748}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1322_12350_326127485}[将]{style="font-family:宋体"}[ap1]{lang="EN-US"}[加入到名为]{style="font-family:宋体"}[office]{lang="EN-US"}[的]{style="font-family:宋体"}[VSD]{lang="EN-US"}[中。]{style="font-family:宋体"}
+\# 将ap1加入到名为office的VSD中。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1322_12350_39787887}
+\<Sysname\> system-view
 
-[\[Sysname\] wlan ap ap1 model WA2620i-AGN]{lang="EN-US"}
+Sysname wlan ap ap1 model WA2620i-AGN
 
-[\[Sysname-wlan-ap-ap1\] wips virtual-security-domain office]{lang="EN-US"}
+Sysname-wlan-ap-ap1 wips virtual-security-domain office
 
-[ ]{lang="EN-US"}
-:::

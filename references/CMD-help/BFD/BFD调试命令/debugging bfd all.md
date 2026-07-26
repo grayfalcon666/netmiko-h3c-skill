@@ -1,1241 +1,1123 @@
-::: {#1171686244 .myid}
-[]{#_Toc404796143}[]{#struct_0_78416_60374_1924992924}[]{#_Toc161626618}[]{#_Toc161569521}[]{#_Toc140491852}[]{#_Toc140491150}
 
 **BFD \-- BFD调试命令 \-- debugging bfd all**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_78416_60374_1985158125}
+【命令】
 
-[**[debugging bfd all]{lang="EN-US"}**]{#struct_0_78416_60374_914281081}
+**[debugging bfd all**]
 
-[**[undo debugging bfd all]{lang="EN-US"}**]{#struct_0_78416_60374_1708221029}
+**[undo debugging bfd all**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_78416_60374_x1351837500}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_78416_60374_25188532}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_78416_60374_1763612462}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_78416_60374_942357689}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_78416_60374_1544710184}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_78416_60374_x197085374}
+【参数】
 
-[[无]{style="font-family:宋体"}]{#struct_0_78416_60374_1548976911}
+无
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_78416_60374_182224651}
+【描述】
 
-[**[debugging bfd all]{lang="EN-US"}**]{#struct_0_78416_60374_341134059}[命令用来打开]{style="font-family:宋体"}[BFD]{lang="EN-US"}[的全部调试信息开关。]{style="font-family:宋体"}**[undo debugging bfd all]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[BFD]{lang="EN-US"}[的全部调试信息开关。]{style="font-family:宋体"}
+**[debugging bfd all**]命令用来打开BFD的全部调试信息开关。**undo debugging bfd all**命令用来关闭BFD的全部调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[BFD]{lang="EN-US"}]{#struct_0_78416_60374_x1840776117}[的全部调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，BFD的全部调试信息开关处于关闭状态。
 
-[[BFD]{lang="EN-US"}]{#struct_0_78416_60374_x277108124}[调试信息显示形式包括系统运行时间、设备名、]{style="font-family:宋体"}[BFD]{lang="EN-US"}[、调试信息级别、模块名和事件内容。]{style="font-family:宋体"}
+BFD调试信息显示形式包括系统运行时间、设备名、BFD、调试信息级别、模块名和事件内容。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_78416_60374_x1338483422}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_78416_60374_x271279726}[打开]{style="font-family:宋体"}[BFD]{lang="EN-US"}[的全部调试信息开关。]{style="font-family:宋体"}
+\# 打开BFD的全部调试信息开关。
 
-[[\<Sysname\> debugging bfd all]{lang="EN-US"}]{#struct_0_78416_60374_x964302744}
-:::
-
-::: {#745917740 .myid}
-[]{#_Toc404796144}[]{#struct_0_78416_60374_x197150910}[]{#_Toc161626619}[]{#_Toc161569522}
+\<Sysname\> debugging bfd all
 
 **BFD \-- BFD调试命令 \-- debugging bfd error**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_78416_60374_x428989021}
+【命令】
 
-[**[debugging bfd error]{lang="EN-US"}**]{#struct_0_78416_60374_x945349842}
+**[debugging bfd error**]
 
-[**[undo debugging bfd error]{lang="EN-US"}**]{#struct_0_78416_60374_2044209764}
+**[undo debugging bfd error**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_78416_60374_936857728}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_78416_60374_1195483526}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_78416_60374_x1060308390}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_78416_60374_x138145205}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_78416_60374_x197216446}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_78416_60374_787484341}
+【参数】
 
-[[无]{style="font-family:宋体"}]{#struct_0_78416_60374_135631139}
+无
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_78416_60374_631484562}
+【描述】
 
-[**[debugging bfd error]{lang="EN-US"}**]{#struct_0_78416_60374_926107259}[命令用来打开]{style="font-family:宋体"}[BFD]{lang="EN-US"}[错误调试信息开关。]{style="font-family:宋体"}**[undo debugging bfd error]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[BFD]{lang="EN-US"}[错误调试信息开关。]{style="font-family:宋体"}
+**[debugging bfd error**]命令用来打开BFD错误调试信息开关。**undo debugging bfd error**命令用来关闭BFD错误调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[BFD]{lang="EN-US"}]{#struct_0_78416_60374_1597987473}[错误调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，BFD错误调试信息开关处于关闭状态。
 
-[[表1-1 ]{lang="EN-US"}[debugging bfd error]{lang="EN-US"}]{#struct_0_78416_60374_2050411557}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging bfd error命令输出信息描述表
 
-[]{#table_struct_0_596078404}[[字段]{style="font-family:黑体"}]{#struct_0_78416_60374_x963140490}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_78416_60374_x197281982}
+描述
 
-[[Failed to reset session]{lang="EN-US"}]{#struct_0_78416_60374_1134670048}
+Failed to reset session
 
-[[主用板重置会话失败]{style="font-family:宋体"}]{#struct_0_78416_60374_791811285}
+主用板重置会话失败
 
-[[Failed to encapsulate driver information]{lang="EN-US"}]{#struct_0_78416_60374_x1481833913}
+Failed to encapsulate driver information
 
-[[封装驱动信息失败]{style="font-family:宋体"}]{#struct_0_78416_60374_x127911925}
+封装驱动信息失败
 
-[[Failed to get LIPC address]{lang="EN-US"}]{#struct_0_78416_60374_x1831766442}
+Failed to get LIPC address
 
-[[获取]{style="font-family:宋体"}[LIPC]{lang="EN-US"}]{#struct_0_78416_60374_909132660}[地址失败]{style="font-family:宋体"}
+获取LIPC地址失败
 
-[[Failed to synchronize message to kernel]{lang="EN-US"}]{#struct_0_78416_60374_x96976189}
+Failed to synchronize message to kernel
 
-[[同步消息到内核失败]{style="font-family:宋体"}]{#struct_0_78416_60374_x2053291334}
+同步消息到内核失败
 
-[[\[K\]Failed to receive configuration message, errno: *ret*, fail count: *cnt*.]{lang="EN-US"}]{#struct_0_78416_60374_x1892176137}
+KFailed to receive configuration message, errno: *ret*, fail count: *cnt*.
 
-[[接收来自用户态的配置消息失败：]{style="font-family:宋体"}]{#struct_0_78416_60374_x1125995866}
+接收来自用户态的配置消息失败：
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_x2053291333}*[ret]{lang="EN-US"}*[：]{style="font-family:宋体"}[LIPC]{lang="EN-US"}[调用返回的]{style="font-family:宋体"}[错误码]{style="font-family:宋体"}
+·   *ret*：LIPC调用返回的错误码
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_836707218}*[cnt]{lang="EN-US"}*[：接收失败的次数]{style="font-family:宋体"}
+·   *cnt*：接收失败的次数
 
-[[\[K\] Failed to send display information, errno: *ret*, fail count: *cnt*.]{lang="EN-US"}]{#struct_0_78416_60374_x2053291336}
+K Failed to send display information, errno: *ret*, fail count: *cnt*.
 
-[[向用户态发送显示信息失败：]{style="font-family:宋体"}]{#struct_0_78416_60374_1239991745}
+向用户态发送显示信息失败：
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_x2053291335}*[ret]{lang="EN-US"}*[：]{style="font-family:宋体"}[LIPC]{lang="EN-US"}[调用返回的]{style="font-family:宋体"}[错误码]{style="font-family:宋体"}
+·   *ret*：LIPC调用返回的错误码
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_x326092196}*[cnt]{lang="EN-US"}*[：发送失败的次数]{style="font-family:宋体"}
+·   *cnt*：发送失败的次数
 
-[[\[K\]Failed to add file descriptor *fd* to kepoll, errno: *ret*, fail count: *cnt*.]{lang="EN-US"}]{#struct_0_78416_60374_x2053291330}
+KFailed to add file descriptor *fd* to kepoll, errno: *ret*, fail count: *cnt*.
 
-[[向]{style="font-family:宋体"}[kepoll]{lang="EN-US"}]{#struct_0_78416_60374_433422691}[池添加描述符失败：]{style="font-family:宋体"}
+向kepoll池添加描述符失败：
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_x2053291329}*[fd]{lang="EN-US"}*[：文件描述符]{style="font-family:宋体"}[ ]{lang="EN-US" style="font-family:Symbol"}
+·   *fd*：文件描述符
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_1643341808}*[ret]{lang="EN-US"}*[：]{style="font-family:宋体"}[kepoll]{lang="EN-US"}[调用返回的]{style="font-family:宋体"}[错误码]{style="font-family:宋体"}
+·   *ret*：kepoll调用返回的错误码
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_x2053291332}*[cnt]{lang="EN-US"}*[：添加失败的次数]{style="font-family:宋体"}
+·   *cnt*：添加失败的次数
 
-[[\[K\]Failed to get driver head, return: *ret*, fail count: *cnt.*]{lang="EN-US"}]{#struct_0_78416_60374_x729376723}
+KFailed to get driver head, return: *ret*, fail count: *cnt.*
 
-[[获取发包驱动头失败：]{style="font-family:宋体"}]{#struct_0_78416_60374_x2053291331}
+获取发包驱动头失败：
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_1999506632}*[ret]{lang="EN-US"}*[：驱动接口返回的]{style="font-family:宋体"}[错误码，]{style="font-family:宋体"}[16]{lang="EN-US"}[进制形式]{style="font-family:宋体"}
+·   *ret*：驱动接口返回的错误码，16进制形式
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_x2053291326}*[cnt]{lang="EN-US"}*[：获取失败的次数]{style="font-family:宋体"}
+·   *cnt*：获取失败的次数
 
-[[\[K\]MDC *id* does not exist in speed limit timer, fail count: *cnt*.]{lang="EN-US"}]{#struct_0_78416_60374_1240057281}
+KMDC *id* does not exist in speed limit timer, fail count: *cnt*.
 
-[[MDC *id*]{lang="EN-US"}]{#struct_0_78416_60374_x2053291325}[不存在限速定时器中：]{style="font-family:宋体"}
+MDC *id*不存在限速定时器中：
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_x326026660}*[id]{lang="EN-US"}*[：]{style="font-family:宋体"}[MDC]{lang="EN-US"}[的编号]{style="font-family:宋体"}
+·   *id*：MDC的编号
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_285360826}*[cnt]{lang="EN-US"}*[：不存在的次数]{style="font-family:宋体"}
+·   *cnt*：不存在的次数
 
-[[\[K\]Failed to create socket when connect daemon. return: *ret*, MDC: *id*, fail count: *cnt*.]{lang="EN-US"}]{#struct_0_78416_60374_1718140332}
+KFailed to create socket when connect daemon. return: *ret*, MDC: *id*, fail count: *cnt*.
 
-[[连接用户进程中创建]{style="font-family:宋体"}[socket]{lang="EN-US"}]{#struct_0_78416_60374_285360827}[失败：]{style="font-family:宋体"}
+连接用户进程中创建socket失败：
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_1718140333}*[ret]{lang="EN-US"}*[：返回的错误码]{style="font-family:宋体"}
+·   *ret*：返回的错误码
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_285360824}*[id]{lang="EN-US"}*[：]{style="font-family:宋体"}[MDC]{lang="EN-US"}[的编号]{style="font-family:宋体"}
+·   *id*：MDC的编号
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_1718140334}*[cnt]{lang="EN-US"}*[：连接失败的次数]{style="font-family:宋体"}
+·   *cnt*：连接失败的次数
 
-[[\[K\]Failed to synchronize message to daemon, type: *type*, errno: *ret*, fail count: *cnt*.]{lang="EN-US"}]{#struct_0_78416_60374_285360825}
+KFailed to synchronize message to daemon, type: *type*, errno: *ret*, fail count: *cnt*.
 
-[[向用户进程同步消息失败：]{style="font-family:宋体"}]{#struct_0_78416_60374_285360830}
+向用户进程同步消息失败：
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_x620511830}*[type]{lang="EN-US"}*[：同步消息类型]{style="font-family:宋体"}
+·   *type*：同步消息类型
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_285360831}*[ret]{lang="EN-US"}*[：]{style="font-family:宋体"}[LIPC]{lang="EN-US"}[调用返回的错误码]{style="font-family:宋体"}
+·   *ret*：LIPC调用返回的错误码
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_x620511829}*[cnt]{lang="EN-US"}*[：发送失败的次数]{style="font-family:宋体"}
+·   *cnt*：发送失败的次数
 
-[[\[K\]Detect timer parameter error, timer: *id*, fail count: *cnt*.]{lang="EN-US"}]{#struct_0_78416_60374_285360828}
+KDetect timer parameter error, timer: *id*, fail count: *cnt*.
 
-[[检测定时器回调函数参数错误：]{style="font-family:宋体"}]{#struct_0_78416_60374_1718140322}
+检测定时器回调函数参数错误：
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_285360829}*[id]{lang="EN-US"}*[：定时器的编号]{style="font-family:宋体"}
+·   *id*：定时器的编号
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_1718140323}*[cnt]{lang="EN-US"}*[：参数错误的次数]{style="font-family:宋体"}
+·   *cnt*：参数错误的次数
 
-[[\[K\]MDC *id1* does not exist in detect timer *id2*, fail count: *cnt*.]{lang="EN-US"}]{#struct_0_78416_60374_285360834}
+KMDC *id1* does not exist in detect timer *id2*, fail count: *cnt*.
 
-[[MDC *id1*]{lang="EN-US"}]{#struct_0_78416_60374_x620511826}[不存在检测定时器]{style="font-family:宋体"}*[id2]{lang="EN-US"}*[中：]{style="font-family:宋体"}
+MDC *id1*不存在检测定时器*id2*中：
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_285360835}*[id1]{lang="EN-US"}*[：]{style="font-family:宋体"}[MDC]{lang="EN-US"}[的编号]{style="font-family:宋体"}
+·   *id1*：MDC的编号
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_x1670954310}*[id2]{lang="EN-US"}*[：定时器的编号]{style="font-family:宋体"}
+·   *id2*：定时器的编号
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_x2053637708}*[cnt]{lang="EN-US"}*[：不存在的次数]{style="font-family:宋体"}
+·   *cnt*：不存在的次数
 
-[[\[K\]Send timer parameter error, timer: *id*, fail count: *cnt*.]{lang="EN-US"}]{#struct_0_78416_60374_x1670954309}
+KSend timer parameter error, timer: *id*, fail count: *cnt*.
 
-[[发包定时器回调函数参数错误：]{style="font-family:宋体"}]{#struct_0_78416_60374_x131257871}
+发包定时器回调函数参数错误：
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_x1670954312}*[id]{lang="EN-US"}*[：定时器的编号]{style="font-family:宋体"}
+·   *id*：定时器的编号
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_x890838294}*[cnt]{lang="EN-US"}*[：参数错误的次数]{style="font-family:宋体"}
+·   *cnt*：参数错误的次数
 
-[[\[K\]MDC *id1* does not exist in send timer *id2*, fail count: *cnt*.]{lang="EN-US"}]{#struct_0_78416_60374_x1670954311}
+KMDC *id1* does not exist in send timer *id2*, fail count: *cnt*.
 
-[[MDC *id1*]{lang="EN-US"}]{#struct_0_78416_60374_x487553767}[不存在发包定时器]{style="font-family:宋体"}*[id2]{lang="EN-US"}*[中：]{style="font-family:宋体"}
+MDC *id1*不存在发包定时器*id2*中：
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_x1670954306}*[id1]{lang="EN-US"}*[：]{style="font-family:宋体"}[MDC]{lang="EN-US"}[的编号]{style="font-family:宋体"}
+·   *id1*：MDC的编号
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_x1670954305}*[id2]{lang="EN-US"}*[：定时器的编号]{style="font-family:宋体"}
+·   *id2*：定时器的编号
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_1838110597}*[cnt]{lang="EN-US"}*[：不存在的次数]{style="font-family:宋体"}
+·   *cnt*：不存在的次数
 
-[[\[K\]Failed to create session on OAM, without running data. index: *idx*, fail count: *cnt*.]{lang="EN-US"}]{#struct_0_78416_60374_x1670954308}
+KFailed to create session on OAM, without running data. index: *idx*, fail count: *cnt*.
 
-[[OAM]{lang="EN-US"}]{#struct_0_78416_60374_x1697341812}[上创建会话失败，没有运行数据：]{style="font-family:宋体"}
+OAM上创建会话失败，没有运行数据：
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_x1670954307}*[idx]{lang="EN-US"}*[：会话索引]{style="font-family:宋体"}
+·   *idx*：会话索引
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_x1294057285}*[cnt]{lang="EN-US"}*[：失败的次数]{style="font-family:宋体"}
+·   *cnt*：失败的次数
 
-[[\[K\]The session already exists, index: *idx*, repeat count: *cnt*.]{lang="EN-US"}]{#struct_0_78416_60374_x1670954302}
+KThe session already exists, index: *idx*, repeat count: *cnt*.
 
-[[待创建的会话已经存在：]{style="font-family:宋体"}]{#struct_0_78416_60374_x1670954301}
+待创建的会话已经存在：
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_x487488231}*[idx]{lang="EN-US"}*[：会话索引]{style="font-family:宋体"}
+·   *idx*：会话索引
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_667697850}*[cnt]{lang="EN-US"}*[：重复创建的次数]{style="font-family:宋体"}
+·   *cnt*：重复创建的次数
 
-[[\[K\]Failed to create session, index: *idx*, fail count: *cnt*.]{lang="EN-US"}]{#struct_0_78416_60374_x1249217712}
+KFailed to create session, index: *idx*, fail count: *cnt*.
 
-[[创建会话失败：]{style="font-family:宋体"}]{#struct_0_78416_60374_667697851}
+创建会话失败：
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_667697848}*[idx]{lang="EN-US"}*[：会话索引]{style="font-family:宋体"}
+·   *idx*：会话索引
 
-[[·   ]{lang="EN-US" style="font-family:Symbol"}]{#struct_0_78416_60374_707097416}*[cnt]{lang="EN-US"}*[：失败的次数]{style="font-family:宋体"}
+·   *cnt*：失败的次数
 
-[[Synchronize message to kernel, send failed.]{lang="EN-US"}]{#struct_0_78416_60374_x196823230}
+Synchronize message to kernel, send failed.
 
-[[同步消息到内核失败]{style="font-family:宋体"}]{#struct_0_78416_60374_401262809}
+同步消息到内核失败
 
-[[\[K\]Authentication type: *type* should not calculate digest.]{lang="EN-US"}]{#struct_0_78416_60374_x337343591}
+KAuthentication type: *type* should not calculate digest.
 
-[[该认证类型不必计算摘要：]{style="font-family:宋体"}]{#struct_0_78416_60374_x337278055}
+该认证类型不必计算摘要：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[type]{lang="EN-US"}*]{#struct_0_78416_60374_2065401540}[：认证类型]{style="font-family:
-  宋体"}
+l*type*：认证类型
 
-[[\[K\]Can not calculate digest. Auth type: *auth-type*, Direction: *packet-direction*. CCF handle: *handle*, CCF job: *job-address*.]{lang="EN-US"}]{#struct_0_78416_60374_1082047590}
+KCan not calculate digest. Auth type: *auth-type*, Direction: *packet-direction*. CCF handle: *handle*, CCF job: *job-address*.
 
-[[计算摘要错误：]{style="font-family:宋体"}]{#struct_0_78416_60374_x337867880}
+计算摘要错误：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[auth-type]{lang="EN-US"}*]{#struct_0_78416_60374_x647002802}[：认证类型]{style="font-family:宋体"}
+l*auth-type*：认证类型
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:6.5pt;
-  font-family:Wingdings;color:#0096d6"}*[packet-direction]{lang="EN-US"}*]{#struct_0_78416_60374_415704883}[：报文出入方向]{style="font-family:宋体"}
+l*packet-direction*：报文出入方向
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[handle]{lang="EN-US"}*]{#struct_0_78416_60374_x849759003}[：算法句柄]{style="font-family:宋体"}
+l*handle*：算法句柄
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[job-address]{lang="EN-US"}*]{#struct_0_78416_60374_x337802344}[：]{style="font-family:宋体"}[CCF]{lang="EN-US"}[任务的数据地址]{style="font-family:宋体"}
+l*job-address*：CCF任务的数据地址
 
-[[Configure change type error.]{lang="EN-US"}]{#struct_0_78416_60374_153078857}
+Configure change type error.
 
-[[BFD]{lang="EN-US"}]{#struct_0_78416_60374_1890695562}[命令行模板下配置的参数类型错误]{style="font-family:宋体"}
+BFD命令行模板下配置的参数类型错误
 
-[[Failed to modify session by template.]{lang="EN-US"}]{#struct_0_78416_60374_707704374}
+Failed to modify session by template.
 
-[[通过模板修改会话参数失败]{style="font-family:宋体"}]{#struct_0_78416_60374_x337736808}
+通过模板修改会话参数失败
 
-[[Failed to modify template.]{lang="EN-US"}]{#struct_0_78416_60374_2067396992}
+Failed to modify template.
 
-[[修改会话模板失败]{style="font-family:宋体"}]{#struct_0_78416_60374_x1440153007}
+修改会话模板失败
 
-[[Proc Sync Seq. Failed to get session.]{lang="EN-US"}]{#struct_0_78416_60374_x337671272}
+Proc Sync Seq. Failed to get session.
 
-[[处理内核上报的序列号时，会话获取失败]{style="font-family:宋体"}]{#struct_0_78416_60374_x1402114501}
+处理内核上报的序列号时，会话获取失败
 
-[[Proc Sync F Finish. Failed to get session.]{lang="EN-US"}]{#struct_0_78416_60374_x338130024}
+Proc Sync F Finish. Failed to get session.
 
-[[处理内核上报的]{style="font-family:宋体"}[F]{lang="EN-US"}]{#struct_0_78416_60374_1514136078}[报文结束事件时，会话获取失败]{style="font-family:宋体"}
+处理内核上报的F报文结束事件时，会话获取失败
 
-[[Failed to encapsulate digest information.]{lang="EN-US"}]{#struct_0_78416_60374_1960111680}
+Failed to encapsulate digest information.
 
-[[认证报文摘要封装失败]{style="font-family:宋体"}]{#struct_0_78416_60374_x338064488}
+认证报文摘要封装失败
 
-[[Failed to add session node to template.]{lang="EN-US"}]{#struct_0_78416_60374_x1561391301}
+Failed to add session node to template.
 
-[[模板哈希上会话节点添加失败]{style="font-family:宋体"}]{#struct_0_78416_60374_450590857}
+模板哈希上会话节点添加失败
 
-[[Failed to add session to interface. Session LD: *local-discr*]{lang="EN-US"}]{#struct_0_78416_60374_x337998952}
+Failed to add session to interface. Session LD: *local-discr*
 
-[[将会话节点从模板哈希加到接口会话链表资源申请失败：]{style="font-family:宋体"}]{#struct_0_78416_60374_1236240333}
+将会话节点从模板哈希加到接口会话链表资源申请失败：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[local-discr]{lang="EN-US"}*]{#struct_0_78416_60374_x445770406}[：会话本地鉴别码]{style="font-family:宋体"}
+l*local-discr*：会话本地鉴别码
 
-[[\[K\]Unknown message type: *message-type*]{lang="EN-US"}]{#struct_0_78416_60374_691081585}
+KUnknown message type: *message-type*
 
-[[未知消息类型：]{style="font-family:宋体"}]{#struct_0_78416_60374_x337933416}
+未知消息类型：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[message-type]{lang="EN-US"}*]{#struct_0_78416_60374_x630564972}[：消息类型]{style="font-family:宋体"}
+l*message-type*：消息类型
 
-[[\[K\]Unknown event type: *event-type*]{lang="EN-US"}]{#struct_0_78416_60374_x1455484916}
+KUnknown event type: *event-type*
 
-[[未知事件类型：]{style="font-family:宋体"}]{#struct_0_78416_60374_x337343592}
+未知事件类型：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[event-type]{lang="EN-US"}*]{#struct_0_78416_60374_1345345238}[：事件类型]{style="font-family:宋体"}
+l*event-type*：事件类型
 
-[[\[K\]BFD: MDC:*mdc-id* does not exist in CCF reinit timer]{lang="EN-US"}]{#struct_0_78416_60374_650700331}
+KBFD: MDC:*mdc-id* does not exist in CCF reinit timer
 
-[[Mdc]{lang="EN-US"}]{#struct_0_78416_60374_x337278056}[数据不存在]{style="font-family:宋体"}
+Mdc数据不存在
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[mdc-id]{lang="EN-US"}*]{#struct_0_78416_60374_2065598148}[：对应]{style="font-family:宋体"}[MDC]{lang="EN-US"}[的]{style="font-family:宋体"}[ID]{lang="EN-US"}[号]{style="font-family:宋体"}
+l*mdc-id*：对应MDC的ID号
 
-[[\[K\]BFD: Failed to create CCF reinit timer.]{lang="EN-US"}]{#struct_0_78416_60374_1508418202}
+KBFD: Failed to create CCF reinit timer.
 
-[[创建]{style="font-family:宋体"}[CCF]{lang="EN-US"}]{#struct_0_78416_60374_x337867877}[重新初始化定时器失败]{style="font-family:宋体"}
+创建CCF重新初始化定时器失败
 
-[[Apptype error. Apptype: *application-type*]{lang="EN-US"}]{#struct_0_78416_60374_x646806205}
+Apptype error. Apptype: *application-type*
 
-[[应用类型错误：]{style="font-family:宋体"}]{#struct_0_78416_60374_453596719}
+应用类型错误：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[application-type]{lang="EN-US"}*]{#struct_0_78416_60374_x337802341}[：应用类型]{style="font-family:宋体"}
+l*application-type*：应用类型
 
-[[Failed to send. Expect len: *expect-length*, Actual len: *actual-length*.]{lang="EN-US"}]{#struct_0_78416_60374_152882249}
+Failed to send. Expect len: *expect-length*, Actual len: *actual-length*.
 
-[[消息发送失败：]{style="font-family:宋体"}]{#struct_0_78416_60374_477699094}
+消息发送失败：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings;color:#0096d6"}*[expect-length]{lang="EN-US"}*]{#struct_0_78416_60374_x337736805}[：预期长度]{style="font-family:宋体"}
+l*expect-length*：预期长度
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[actual-length]{lang="EN-US"}*]{#struct_0_78416_60374_2066545024}[：实际长度]{style="font-family:宋体"}
+l*actual-length*：实际长度
 
-[[Scenario error. Scenario: *scenario.*]{lang="EN-US"}]{#struct_0_78416_60374_161517171}
+Scenario error. Scenario: *scenario.*
 
-[[情景类型错误：]{style="font-family:宋体"}]{#struct_0_78416_60374_2036306025}
+情景类型错误：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[scenario]{lang="EN-US"}*]{#struct_0_78416_60374_x337671269}[：情景类型]{style="font-family:宋体"}
+l*scenario*：情景类型
 
-[[Proc Sync Down Finish. Failed to get session. Session LD: *local-discr*.]{lang="EN-US"}]{#struct_0_78416_60374_x1402835396}
+Proc Sync Down Finish. Failed to get session. Session LD: *local-discr*.
 
-[[在处理内核上报]{style="font-family:宋体"}[down]{lang="EN-US"}]{#struct_0_78416_60374_734827969}[报文发送完成事件时，获取会话失败：]{style="font-family:宋体"}
+在处理内核上报down报文发送完成事件时，获取会话失败：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[local-discr]{lang="EN-US"}*]{#struct_0_78416_60374_x338130021}[：会话本地鉴别码]{style="font-family:宋体"}
+l*local-discr*：会话本地鉴别码
 
-[[Failed to process session down\[LD:local-discr\], Flag:*session-flag.*]{lang="EN-US"}]{#struct_0_78416_60374_1514332686}
+Failed to process session downLD:local-discr, Flag:*session-flag.*
 
-[[处理会话]{style="font-family:宋体"}[down]{lang="EN-US"}]{#struct_0_78416_60374_15932425}[事件失败，包括内核上报与状态机变化：]{style="font-family:宋体"}
+处理会话down事件失败，包括内核上报与状态机变化：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[local-discr]{lang="EN-US"}*]{#struct_0_78416_60374_x338064485}[：会话本地鉴别码]{style="font-family:宋体"}
+l*local-discr*：会话本地鉴别码
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[session-flag]{lang="EN-US"}*]{#struct_0_78416_60374_x1560539333}[：会话标记位]{style="font-family:宋体"}
+l*session-flag*：会话标记位
 
-[[Failed to disable session. Status:*session-status*.]{lang="EN-US"}]{#struct_0_78416_60374_1213179122}
+Failed to disable session. Status:*session-status*.
 
-[[去使能会话失败：]{style="font-family:宋体"}]{#struct_0_78416_60374_x337998949}
+去使能会话失败：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[session-status]{lang="EN-US"}*]{#struct_0_78416_60374_1235781580}[：会话状态]{style="font-family:宋体"}
+l*session-status*：会话状态
 
-[[Failed to proccess finish delete \[LD: *local-discr*\]]{lang="EN-US"}]{#struct_0_78416_60374_1627824151}
+Failed to proccess finish delete LD: *local-discr*
 
-[[删除带]{style="font-family:宋体"}[BFD_SESS_DELETING]{lang="EN-US"}]{#struct_0_78416_60374_x337933413}[标记会话失败：]{style="font-family:宋体"}
+删除带BFD_SESS_DELETING标记会话失败：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[local-discr]{lang="EN-US"}*]{#struct_0_78416_60374_x630368364}[：会话本地鉴别码]{style="font-family:宋体"}
+l*local-discr*：会话本地鉴别码
 
-[[Queue entry type err:*message-type*]{lang="EN-US"}]{#struct_0_78416_60374_x1921218781}
+Queue entry type err:*message-type*
 
-[[处理消息队列时，消息类型错误：]{style="font-family:宋体"}]{#struct_0_78416_60374_x337343589}
+处理消息队列时，消息类型错误：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[message-type]{lang="EN-US"}*]{#struct_0_78416_60374_1344755413}[：消息类型]{style="font-family:宋体"}
+l*message-type*：消息类型
 
-[[\[K\]Unknown mdc event:*event*]{lang="EN-US"}]{#struct_0_78416_60374_x337278053}
+KUnknown mdc event:*event*
 
-[[内核处理]{style="font-family:宋体"}[MDC]{lang="EN-US"}]{#struct_0_78416_60374_2065270468}[事件时，遇到未知的]{style="font-family:宋体"}[MDC]{lang="EN-US"}[事件：]{style="font-family:宋体"}
+内核处理MDC事件时，遇到未知的MDC事件：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:6.5pt;
-  font-family:Wingdings"}*[event]{lang="EN-US"}*]{#struct_0_78416_60374_677332739}[：]{style="font-family:
-  宋体"}[MDC]{lang="EN-US"}[事件]{style="font-family:宋体"}
+l*event*：MDC事件
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_78416_60374_1375049145}
+\# 打开BFD错误调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_78416_60374_x241755240}[打开]{style="font-family:宋体"}[BFD]{lang="EN-US"}[错误调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging bfd error
 
-[[\<Sysname\> debugging bfd error]{lang="NO-BOK"}]{#struct_0_78416_60374_306099100}
+\*Jul  4 15:15:33:783 2011 Sysname BFD/7/DEBUG: -MDC=1; BFD: Synchronize message to kernel[, send failed.]
 
-[\*Jul  4 15:15:33:783 2011 Sysname BFD/7/DEBUG: -MDC=1; BFD: Synchronize message to kernel[]{#_Toc161626620}[, send failed.]{#_Toc161569523}]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_78416_60374_1318174398}*[发送消息失败]{style="font-family:宋体"}*
-
-::: {#-952507383 .myid}
-[]{#_Toc404796145}[]{#struct_0_78416_60374_1791809387}
+*// 发送消息失败*
 
 **BFD \-- BFD调试命令 \-- debugging bfd event**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_78416_60374_x196888766}
+【命令】
 
-[**[debugging bfd event]{lang="EN-US"}**]{#struct_0_78416_60374_x1571388977}
+**[debugging bfd event**]
 
-[**[undo debugging bfd event]{lang="EN-US"}**]{#struct_0_78416_60374_x1970428098}
+**[undo debugging bfd event**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_78416_60374_488498367}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_78416_60374_713682056}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_78416_60374_x120718177}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_78416_60374_1651287634}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_78416_60374_x1778846444}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_78416_60374_x676465437}
+【参数】
 
-[[无]{style="font-family:宋体"}]{#struct_0_78416_60374_x196954302}
+无
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_78416_60374_348059894}
+【描述】
 
-[**[debugging bfd event]{lang="EN-US"}**]{#struct_0_78416_60374_x2136880519}[命令用来打开]{style="font-family:宋体"}[BFD]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}**[undo debugging bfd event]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[BFD]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}
+**[debugging bfd event**]命令用来打开BFD事件调试信息开关。**undo debugging bfd event**命令用来关闭BFD事件调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[BFD]{lang="EN-US"}]{#struct_0_78416_60374_1342355214}[事件调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，BFD事件调试信息开关处于关闭状态。
 
-[[表1-2 ]{lang="EN-US"}[debugging bfd event]{lang="EN-US"}]{#struct_0_78416_60374_x406657495}[命令输出信息描述表]{style="font-family:黑体"}
+表1-2 debugging bfd event命令输出信息描述表
 
-[]{#table_struct_0_597934908}[[字段]{style="font-family:黑体"}]{#struct_0_78416_60374_340217724}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_78416_60374_x580749026}
+描述
 
-[[Response interface event packet failed ]{lang="EN-US"}]{#struct_0_78416_60374_x400026419}
+Response interface event packet failed
 
-[[接收并解析接口事件通知报文失败]{style="font-family:宋体"}]{#struct_0_78416_60374_x197019838}
+接收并解析接口事件通知报文失败
 
-[[Notify driver to start receiving BFD packet]{lang="EN-US"}]{#struct_0_78416_60374_x1167324209}
+Notify driver to start receiving BFD packet
 
-[[创建第一个]{style="font-family:宋体"}[IPv4]{lang="EN-US"}]{#struct_0_78416_60374_541473845}[会话时，通知驱动开始接收]{style="font-family:宋体"}[BFD]{lang="EN-US"}[控制报文]{style="font-family:宋体"}
+创建第一个IPv4会话时，通知驱动开始接收BFD控制报文
 
-[[Notify driver to stop receiving BFD packet]{lang="EN-US"}]{#struct_0_78416_60374_2124192157}
+Notify driver to stop receiving BFD packet
 
-[[通知驱动停止接收]{style="font-family:宋体"}[BFD]{lang="EN-US"}]{#struct_0_78416_60374_x1318842321}[控制报文]{style="font-family:宋体"}
+通知驱动停止接收BFD控制报文
 
-[[Notify driver to start receiving ipv6 BFD packet]{lang="EN-US"}]{#struct_0_78416_60374_2084047640}
+Notify driver to start receiving ipv6 BFD packet
 
-[[创建第一个]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_78416_60374_x196561086}[会话时，通知驱动开始接收]{style="font-family:宋体"}[BFD]{lang="EN-US"}[控制报文]{style="font-family:宋体"}
+创建第一个IPv6会话时，通知驱动开始接收BFD控制报文
 
-[[Notify driver to stop receiving ipv6 BFD packet]{lang="EN-US"}]{#struct_0_78416_60374_1173467507}
+Notify driver to stop receiving ipv6 BFD packet
 
-[[通知驱动停止接收]{style="font-family:宋体"}[BFD]{lang="EN-US"}]{#struct_0_78416_60374_x64783478}[控制报文]{style="font-family:宋体"}
+通知驱动停止接收BFD控制报文
 
-[[\[K\]Write sync session queue success. Session LD: *local-discr*. MsgType: *message-type*.]{lang="EN-US"}]{#struct_0_78416_60374_x337802342}
+KWrite sync session queue success. Session LD: *local-discr*. MsgType: *message-type*.
 
-[[写同步会话消息队列：]{style="font-family:宋体"}]{#struct_0_78416_60374_x337736806}
+写同步会话消息队列：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[local-discr]{lang="EN-US"}*]{#struct_0_78416_60374_2066741632}[：会话本地鉴别码]{style="font-family:宋体"}
+l*local-discr*：会话本地鉴别码
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[message-type]{lang="EN-US"}*]{#struct_0_78416_60374_x1016939576}[：消息类型]{style="font-family:宋体"}
+l*message-type*：消息类型
 
-[[\[K\]Sync XmitAuthSeq: *sequence*. Session LD: *local-discr*.]{lang="EN-US"}]{#struct_0_78416_60374_x337671270}
+KSync XmitAuthSeq: *sequence*. Session LD: *local-discr*.
 
-[[向用户态同步序列号：]{style="font-family:宋体"}]{#struct_0_78416_60374_x1402245573}
+向用户态同步序列号：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[sequence]{lang="EN-US"}*]{#struct_0_78416_60374_1864896519}[：认证序列号]{style="font-family:宋体"}
+l*sequence*：认证序列号
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[local-discr]{lang="EN-US"}*]{#struct_0_78416_60374_x338130022}[：会话本地鉴别码]{style="font-family:宋体"}
+l*local-discr*：会话本地鉴别码
 
-[[\[K\]Update session success. Session LD: *local-discr* Status: *sess-status* Flag: *sess-flag*]{lang="EN-US"}]{#struct_0_78416_60374_1514529294}
+KUpdate session success. Session LD: *local-discr* Status: *sess-status* Flag: *sess-flag*
 
-[[更新会话成功：]{style="font-family:宋体"}]{#struct_0_78416_60374_x338064486}
+更新会话成功：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[local-discr]{lang="EN-US"}*]{#struct_0_78416_60374_x1560735941}[：会话本地鉴别码]{style="font-family:宋体"}
+l*local-discr*：会话本地鉴别码
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[sess-status]{lang="EN-US"}*]{#struct_0_78416_60374_x1552303182}[：会话状态]{style="font-family:宋体"}
+l*sess-status*：会话状态
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[sess-flag]{lang="EN-US"}*]{#struct_0_78416_60374_x337998950}[：会话标记位]{style="font-family:宋体"}
+l*sess-flag*：会话标记位
 
-[[\[K\]Update session LD: *local-discr*. XmitAuthSeq change to *sequence-number*.]{lang="EN-US"}]{#struct_0_78416_60374_1236371405}
+KUpdate session LD: *local-discr*. XmitAuthSeq change to *sequence-number*.
 
-[[用户态更新认证序列号到内核：]{style="font-family:宋体"}]{#struct_0_78416_60374_x833445725}
+用户态更新认证序列号到内核：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[local-discr]{lang="EN-US"}*]{#struct_0_78416_60374_x337933414}[：会话本地鉴别码]{style="font-family:宋体"}
+l*local-discr*：会话本地鉴别码
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[sequence-number]{lang="EN-US"}*]{#struct_0_78416_60374_x630696044}[：同步的认证序列号]{style="font-family:宋体"}
+l*sequence-number*：同步的认证序列号
 
-[[\[K\]Process sync finish.session LD: *local-discr* Type: *message-type*.]{lang="EN-US"}]{#struct_0_78416_60374_x1132332638}
+KProcess sync finish.session LD: *local-discr* Type: *message-type*.
 
-[[向用户态发送报文发送完成消息：]{style="font-family:宋体"}]{#struct_0_78416_60374_x337343590}
+向用户态发送报文发送完成消息：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[local-discr]{lang="EN-US"}*]{#struct_0_78416_60374_1345214166}[：会话本地鉴别码]{style="font-family:宋体"}
+l*local-discr*：会话本地鉴别码
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[message-type]{lang="EN-US"}*]{#struct_0_78416_60374_x337278054}[：消息类型]{style="font-family:宋体"}
+l*message-type*：消息类型
 
-[[\[K\]Proc sync sequence.session LD: *local-discr* XmitAuthSeq: *sequence-number.*]{lang="EN-US"}]{#struct_0_78416_60374_2065467076}
+KProc sync sequence.session LD: *local-discr* XmitAuthSeq: *sequence-number.*
 
-[[内核向用户态同步序列号：]{style="font-family:宋体"}]{#struct_0_78416_60374_1836349451}
+内核向用户态同步序列号：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[local-discr]{lang="EN-US"}*]{#struct_0_78416_60374_x337867883}[：会话本地鉴别码]{style="font-family:宋体"}
+l*local-discr*：会话本地鉴别码
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[sequence-number]{lang="EN-US"}*]{#struct_0_78416_60374_x647068338}[：同步的认证序列号]{style="font-family:宋体"}
+l*sequence-number*：同步的认证序列号
 
-[[LD: *local-discr* increase XmitAuthSeq: *sequence-number.*]{lang="EN-US"}]{#struct_0_78416_60374_1991685444}
+LD: *local-discr* increase XmitAuthSeq: *sequence-number.*
 
-[[增加序列号：]{style="font-family:宋体"}]{#struct_0_78416_60374_x337802347}
+增加序列号：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:6.5pt;
-  font-family:Wingdings;color:#0096d6"}*[local-discr]{lang="EN-US"}*]{#struct_0_78416_60374_153275465}[：会话本地鉴别码]{style="font-family:宋体"}
+l*local-discr*：会话本地鉴别码
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings;color:#0096d6"}*[seqeunce-number]{lang="EN-US"}*]{#struct_0_78416_60374_1839088200}[：认证序列号]{style="font-family:宋体"}
+l*seqeunce-number*：认证序列号
 
-[[Encap auth part. LD: *local-discr* XmitAuthSeq: *sequence-number*.]{lang="EN-US"}]{#struct_0_78416_60374_x337736811}
+Encap auth part. LD: *local-discr* XmitAuthSeq: *sequence-number*.
 
-[[封装认证部分报文：]{style="font-family:宋体"}]{#struct_0_78416_60374_2066807169}
+封装认证部分报文：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings;color:#0096d6"}*[local-discr]{lang="EN-US"}*]{#struct_0_78416_60374_x623675770}[：会话本地鉴别码]{style="font-family:宋体"}
+l*local-discr*：会话本地鉴别码
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings;color:#0096d6"}*[seqeunce-number]{lang="EN-US"}*]{#struct_0_78416_60374_x337671275}[：认证序列号]{style="font-family:宋体"}
+l*seqeunce-number*：认证序列号
 
-[[Proc Sync F Finish. Session LD:*local-discr*.]{lang="EN-US"}]{#struct_0_78416_60374_x1402048965}
+Proc Sync F Finish. Session LD:*local-discr*.
 
-[[处理内核上报]{style="font-family:宋体"}[F]{lang="EN-US"}]{#struct_0_78416_60374_x958180255}[报文发送结束事件：]{style="font-family:宋体"}
+处理内核上报F报文发送结束事件：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings;color:#0096d6"}*[local-discr]{lang="EN-US"}*]{#struct_0_78416_60374_x338130027}[：会话本地鉴别码]{style="font-family:宋体"}
+l*local-discr*：会话本地鉴别码
 
-[[Proc Sync Seq. Session LD: *local-discr* XmitAuthSeq: *sequence-number*.]{lang="EN-US"}]{#struct_0_78416_60374_1514201614}
+Proc Sync Seq. Session LD: *local-discr* XmitAuthSeq: *sequence-number*.
 
-[[处理内核向用户态同步序列号事件：]{style="font-family:宋体"}]{#struct_0_78416_60374_x338064491}
+处理内核向用户态同步序列号事件：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[local-discr]{lang="EN-US"}*]{#struct_0_78416_60374_x1560801478}[：会话本地鉴别码]{style="font-family:宋体"}
+l*local-discr*：会话本地鉴别码
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[sequence-number]{lang="EN-US"}*]{#struct_0_78416_60374_1208587125}[：同步的认证序列号]{style="font-family:宋体"}
+l*sequence-number*：同步的认证序列号
 
-[[Proc Sync Down Finish. Session LD: *local-discr*.]{lang="EN-US"}]{#struct_0_78416_60374_x337998955}
+Proc Sync Down Finish. Session LD: *local-discr*.
 
-[[处理内核上报]{style="font-family:宋体"}[down]{lang="EN-US"}]{#struct_0_78416_60374_1236043725}[报文发送完成事件：]{style="font-family:宋体"}
+处理内核上报down报文发送完成事件：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings;color:#0096d6"}*[local-discr]{lang="EN-US"}*]{#struct_0_78416_60374_x1247573576}[：会话本地鉴别码]{style="font-family:宋体"}
+l*local-discr*：会话本地鉴别码
 
-[[Proc Sync sequence.Session LD: *local-discr* XmitAuthSeq: *sequence-number.*]{lang="EN-US"}]{#struct_0_78416_60374_x337933419}
+Proc Sync sequence.Session LD: *local-discr* XmitAuthSeq: *sequence-number.*
 
-[[用户态向内核同步序列号：]{style="font-family:宋体"}]{#struct_0_78416_60374_x629975148}
+用户态向内核同步序列号：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[local-discr]{lang="EN-US"}*]{#struct_0_78416_60374_x337343595}[：会话本地鉴别码]{style="font-family:宋体"}
+l*local-discr*：会话本地鉴别码
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings;color:#0096d6"}*[sequence-number]{lang="EN-US"}*]{#struct_0_78416_60374_1345017558}[：同步的认证序列号]{style="font-family:宋体"}
+l*sequence-number*：同步的认证序列号
 
-[[Process finish delete success \[LD: *local-discr*\]]{lang="EN-US"}]{#struct_0_78416_60374_1812593874}
+Process finish delete success LD: *local-discr*
 
-[[删除带]{style="font-family:宋体"}[BFD_SESS_DELETING]{lang="EN-US"}]{#struct_0_78416_60374_x337278059}[标记会话成功：]{style="font-family:宋体"}
+删除带BFD_SESS_DELETING标记会话成功：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings;color:#0096d6"}*[local-discr]{lang="EN-US"}*]{#struct_0_78416_60374_2064615108}[：会话本地鉴别码]{style="font-family:宋体"}
+l*local-discr*：会话本地鉴别码
 
-[[\[K\]Enter Auth change .Update old packet buffer.]{lang="EN-US"}]{#struct_0_78416_60374_x337867884}
+KEnter Auth change .Update old packet buffer.
 
-[[配置的认证改变，更新旧的报文缓冲区]{style="font-family:宋体"}]{#struct_0_78416_60374_x646740658}
+配置的认证改变，更新旧的报文缓冲区
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_78416_60374_x1463926931}
+\# 打开BFD事件调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_78416_60374_x475949849}[打开]{style="font-family:宋体"}[BFD]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging bfd event
 
-[[\<Sysname\> debugging bfd event]{lang="EN-US"}]{#struct_0_78416_60374_634186093}
+\*Jul  4 13:36:59:481 2011 Sysname BFD/7/DEBUG: -MDC=1; Notify driver to stop receiving BFD packet
 
-[\*Jul  4 13:36:59:481 2011 Sysname BFD/7/DEBUG: -MDC=1; Notify driver to stop receiving BFD packet]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_78416_60374_x250468516}*[停止接收]{style="font-family:宋体"}[BFD]{lang="EN-US"}[控制报文]{style="font-family:宋体"}*
-
-::: {#-705998040 .myid}
-[]{#_Toc404796146}[]{#struct_0_78416_60374_x196626622}[]{#_Toc161626621}[]{#_Toc161569524}
+*// 停止接收BFD控制报文*
 
 **BFD \-- BFD调试命令 \-- debugging bfd fsm**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_78416_60374_1925582747}
+【命令】
 
-[**[debugging bfd fsm]{lang="EN-US"}**]{#struct_0_78416_60374_766123119}
+**[debugging bfd fsm**]
 
-[**[undo debugging bfd fsm]{lang="EN-US"}**]{#struct_0_78416_60374_x643060057}
+**[undo debugging bfd fsm**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_78416_60374_x473493402}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_78416_60374_x142772454}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_78416_60374_1304438840}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_78416_60374_x1546205126}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_78416_60374_x762073583}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_78416_60374_x197085373}
+【参数】
 
-[[无]{style="font-family:宋体"}]{#struct_0_78416_60374_1548649231}
+无
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_78416_60374_x1787405051}
+【描述】
 
-[**[debugging bfd fsm]{lang="EN-US"}**]{#struct_0_78416_60374_x356300786}[命令用来打开]{style="font-family:宋体"}[BFD]{lang="EN-US"}[状态机]{style="font-family:宋体"}[调试信息开关。]{style="font-family:宋体"}**[undo debugging bfd fsm]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[BFD]{lang="EN-US"}[状态机]{style="font-family:宋体"}[调试信息开关。]{style="font-family:宋体"}
+**[debugging bfd fsm**]命令用来打开BFD状态机调试信息开关。**undo debugging bfd fsm**命令用来关闭BFD状态机调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[BFD]{lang="EN-US"}]{#struct_0_78416_60374_x164236752}[状态机]{style="font-family:宋体"}[调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，BFD状态机调试信息开关处于关闭状态。
 
-[[表1-3 ]{lang="EN-US"}[debugging bfd fsm]{lang="EN-US"}]{#struct_0_78416_60374_845601855}[命令输出信息描述表]{style="font-family:黑体"}
+表1-3 debugging bfd fsm命令输出信息描述表
 
-[]{#table_struct_0_591439668}[[字段]{style="font-family:黑体"}]{#struct_0_78416_60374_x124656777}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_78416_60374_1040980069}
+描述
 
-[[FSM Proc packet status:1, session status:1, SlotNum:0]{lang="SV"}]{#struct_0_78416_60374_x197150909}
+FSM Proc packet status:1, session status:1, SlotNum:0
 
-[[会话状态为]{style="font-family:宋体"}[down]{lang="EN-US"}]{#struct_0_78416_60374_x428530270}[时收到状态为]{style="font-family:宋体"}[down]{lang="EN-US"}[的报文，会话状态变为]{style="font-family:宋体"}[Init]{lang="EN-US"}
+会话状态为down时收到状态为down的报文，会话状态变为Init
 
-[[FSM Proc packet status:2, session status:1, SlotNum:0]{lang="SV"}]{#struct_0_78416_60374_x100531908}
+FSM Proc packet status:2, session status:1, SlotNum:0
 
-[[会话状态为]{style="font-family:宋体"}[down]{lang="EN-US"}]{#struct_0_78416_60374_x1514576418}[时收到状态为]{style="font-family:宋体"}[Init]{lang="EN-US"}[的报文，会话状态变为]{style="font-family:宋体"}[up]{lang="EN-US"}
+会话状态为down时收到状态为Init的报文，会话状态变为up
 
-[[FSM Proc packet status:2, session status:2, SlotNum:0]{lang="SV"}]{#struct_0_78416_60374_x1499113383}
+FSM Proc packet status:2, session status:2, SlotNum:0
 
-[[会话状态为]{style="font-family:宋体"}[Init]{lang="EN-US"}]{#struct_0_78416_60374_1404139139}[时收到状态为]{style="font-family:宋体"}[Init]{lang="EN-US"}[的报文，会话状态变为]{style="font-family:宋体"}[up]{lang="EN-US"}
+会话状态为Init时收到状态为Init的报文，会话状态变为up
 
-[[Pkt Sta:Up, Sess Sta:Down, Oper:Keep session state and discard the packet]{lang="EN-US"}]{#struct_0_78416_60374_x197216445}
+Pkt Sta:Up, Sess Sta:Down, Oper:Keep session state and discard the packet
 
-[[会话状态为]{style="font-family:宋体"}[down]{lang="EN-US"}]{#struct_0_78416_60374_787287733}[时收到状态为]{style="font-family:宋体"}[up]{lang="EN-US"}[的报文，会话状态保持不变，丢弃报文]{style="font-family:宋体"}
+会话状态为down时收到状态为up的报文，会话状态保持不变，丢弃报文
 
-[[Pkt Sta: Down, Sess Sta: Init, Oper: Keep session state and discard the packet]{lang="EN-US"}]{#struct_0_78416_60374_x147364979}
+Pkt Sta: Down, Sess Sta: Init, Oper: Keep session state and discard the packet
 
-[[会话状态为]{style="font-family:宋体"}[Init]{lang="EN-US"}]{#struct_0_78416_60374_1422737032}[时收到状态为]{style="font-family:宋体"}[down]{lang="EN-US"}[的报文，会话状态保持不变，丢弃报文]{style="font-family:宋体"}
+会话状态为Init时收到状态为down的报文，会话状态保持不变，丢弃报文
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_78416_60374_714129127}
+\# 打开BFD状态机调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_78416_60374_x1742233938}[打开]{style="font-family:宋体"}[BFD]{lang="EN-US"}[状态机调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging bfd fsm
 
-[[\<Sysname\> debugging bfd fsm]{lang="EN-US"}]{#struct_0_78416_60374_504192136}
+\*Jan  1 23:38:28:329 2000 Sysname BFD/7/DEBUG: FSM Proc packet status:2, session status:1, SlotNum:3
 
-[\*Jan  1 23:38:28:329 2000 Sysname BFD/7/DEBUG: FSM Proc packet status:2, session status:1, SlotNum:3]{lang="EN-US"}
-
-[*[// ]{lang="PT-BR"}*]{#struct_0_78416_60374_x197281981}*[会话在]{style="font-family:宋体"}[down]{lang="PT-BR"}[状态收到]{style="font-family:宋体"}[Init]{lang="PT-BR"}[状态报文]{style="font-family:宋体"}*
-
-::::: {#-1247678732 .myid}
-[]{#_Toc161626623}[]{#_Toc161569526}[]{#_Toc404796147}[]{#struct_0_78416_60374_1134866656}[]{#_Toc291493578}[]{#_Toc161626622}[]{#_Toc161569525}
+*// 会话在down状态收到Init状态报文*
 
 **BFD \-- BFD调试命令 \-- debugging bfd ha**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](BFD%20Debug.files/image002.png){#图片 1 width="62" height="25"}]{lang="EN-US"}]{#struct_0_78416_60374_17574624}
-:::
+![说明](BFD%20Debug.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_78416_60374_x568447974}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_78416_60374_1017991559}
+**[debugging bfd ha**]
 
-[**[debugging bfd ha]{lang="EN-US"}**]{#struct_0_78416_60374_789876584}
+**[undo debugging bfd ha**]
 
-[**[undo debugging bfd ha]{lang="EN-US"}**]{#struct_0_78416_60374_2030869551}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_78416_60374_x335530028}
+用户视图
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_78416_60374_x196823229}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_78416_60374_400804058}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_78416_60374_x1876816145}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_78416_60374_x1403704245}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_78416_60374_x1713235599}
+无
 
-[[无]{style="font-family:宋体"}]{#struct_0_78416_60374_x2080970692}
+【描述】
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_78416_60374_x2036218476}
+**[debugging bfd ha**]命令用来打开BFD平滑事件调试信息开关。**undo debugging bfd ha**命令用来关闭BFD平滑事件调试信息开关。
 
-[**[debugging bfd ha]{lang="EN-US"}**]{#struct_0_78416_60374_331092466}[命令用来打开]{style="font-family:宋体"}[BFD]{lang="EN-US"}[平滑事件]{style="font-family:宋体"}[调试信息开关。]{style="font-family:宋体"}**[undo debugging bfd ha]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[BFD]{lang="EN-US"}[平滑事件]{style="font-family:宋体"}[调试信息开关。]{style="font-family:宋体"}
+缺省情况下，BFD平滑事件调试信息开关处于关闭状态。
 
-[[缺省情况下，]{style="font-family:宋体"}[BFD]{lang="EN-US"}]{#struct_0_78416_60374_1577111022}[平滑事件]{style="font-family:宋体"}[调试信息开关处于关闭状态。]{style="font-family:宋体"}
+表1-4 debugging bfd ha命令输出信息描述表
 
-[[表1-4 ]{lang="EN-US"}[debugging bfd ha]{lang="EN-US"}]{#struct_0_78416_60374_x196888765}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_595572946}[[字段]{style="font-family:黑体"}]{#struct_0_78416_60374_x1571192369}
-:::::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_78416_60374_1306991969}
+Ha standby to active
 
-[[Ha standby to active]{lang="EN-US"}]{#struct_0_78416_60374_x873556128}
+BFD进程收到HA升级事件
 
-[[BFD]{lang="EN-US"}]{#struct_0_78416_60374_x1688224256}[进程收到]{style="font-family:宋体"}[HA]{lang="EN-US"}[升级事件]{style="font-family:宋体"}
+Ha active to standby
 
-[[Ha active to standby]{lang="EN-US"}]{#struct_0_78416_60374_x169545221}
+BFD进程收到HA降级事件
 
-[[BFD]{lang="EN-US"}]{#struct_0_78416_60374_1716480042}[进程收到]{style="font-family:宋体"}[HA]{lang="EN-US"}[降级事件]{style="font-family:宋体"}
+【举例】
 
-[ ]{lang="EN-US"}
+\# 在启动了BFD功能的设备上打开平滑事件调试信息开关。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_78416_60374_x196954301}
+\<Sysname\> debugging bfd ha
 
-[[\# ]{lang="EN-US"}]{#struct_0_78416_60374_347863286}[在启动了]{style="font-family:宋体"}[BFD]{lang="EN-US"}[功能的设备上打开平滑事件调试信息开关。]{style="font-family:宋体"}
+\*Feb 17 11:04:47:153 2012 Sysname BFD/7/DEBUG: Ha standby to active
 
-[[\<Sysname\> debugging bfd ha]{lang="EN-US"}]{#struct_0_78416_60374_x580643325}
-
-[\*Feb 17 11:04:47:153 2012 Sysname BFD/7/DEBUG: Ha standby to active]{lang="EN-US"}
-
-[*[// ]{lang="PT-BR"}[BFD]{lang="EN-US"}*]{#struct_0_78416_60374_749916302}*[进程收到]{style="font-family:宋体"}[HA]{lang="EN-US"}[升级事件]{style="font-family:宋体"}*
-
-::: {#1656204889 .myid}
-[]{#_Toc404796148}[]{#struct_0_78416_60374_1322180921}
+*[// BFD*]*进程收到HA升级事件*
 
 **BFD \-- BFD调试命令 \-- debugging bfd ntfy**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_78416_60374_x120441921}
+【命令】
 
-[**[debugging bfd ntfy]{lang="EN-US"}**]{#struct_0_78416_60374_x1802930699}
+**[debugging bfd ntfy**]
 
-[**[undo debugging bfd ntfy]{lang="EN-US"}**]{#struct_0_78416_60374_1924513179}
+**[undo debugging bfd ntfy**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_78416_60374_x197019837}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_78416_60374_x1166472241}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_78416_60374_x259670177}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_78416_60374_x108006708}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_78416_60374_x1294870092}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_78416_60374_x191569192}
+【参数】
 
-[[无]{style="font-family:宋体"}]{#struct_0_78416_60374_x1541010276}
+无
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_78416_60374_924753532}
+【描述】
 
-[**[debugging bfd ntfy]{lang="EN-US"}**]{#struct_0_78416_60374_x1979841656}[命令用来打开]{style="font-family:宋体"}[BFD]{lang="EN-US"}[事件通知调试信息开关。]{style="font-family:宋体"}**[undo debugging bfd ntfy]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[BFD ]{lang="EN-US"}[事件通知调试信息开关。]{style="font-family:宋体"}
+**[debugging bfd ntfy**]命令用来打开BFD事件通知调试信息开关。**undo debugging bfd ntfy**命令用来关闭BFD 事件通知调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[BFD ]{lang="EN-US"}]{#struct_0_78416_60374_x196561085}[事件通知调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，BFD 事件通知调试信息开关处于关闭状态。
 
-[[表1-5 ]{lang="EN-US"}[debugging bfd ntfy]{lang="EN-US"}]{#struct_0_78416_60374_1173401971}[命令输出信息描述]{style="font-family:黑体"}
+表1-5 debugging bfd ntfy命令输出信息描述
 
-[]{#table_struct_0_588420642}[[字段]{style="font-family:黑体"}]{#struct_0_78416_60374_x1548304411}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_78416_60374_931346869}
+描述
 
-[[Notify application:*apptype* State:(*status*)]{lang="EN-US"}]{#struct_0_78416_60374_x2097428712}
+Notify application:*apptype* State:(*status*)
 
-[[会话状态变化]{style="font-family:宋体"}]{#struct_0_78416_60374_1125426569}
+会话状态变化
 
-[[Receive message, Application: *apptype* MsgType: APP_CreateSess]{lang="EN-US"}]{#struct_0_78416_60374_1844070948}
+Receive message, Application: *apptype* MsgType: APP_CreateSess
 
-[[收到应用的创建会话消息信息]{style="font-family:宋体"}]{#struct_0_78416_60374_x196626621}
+收到应用的创建会话消息信息
 
-[[Receive application protocol *apptype* smooth end message]{lang="EN-US"}]{#struct_0_78416_60374_1925517211}
+Receive application protocol *apptype* smooth end message
 
-[[收到应用的平滑结束消息]{style="font-family:宋体"}]{#struct_0_78416_60374_x1567113565}
+收到应用的平滑结束消息
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_78416_60374_763731745}
+\# 打开BFD事件通知调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_78416_60374_1272946021}[打开]{style="font-family:宋体"}[BFD]{lang="EN-US"}[事件通知调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging bfd ntfy
 
-[[\<Sysname\> debugging bfd ntfy]{lang="EN-US"}]{#struct_0_78416_60374_x778702976}
+\*Feb 17 11:04:47:153 2012 Sysname BFD/7/DEBUG: Receive message, Application:STATIC MsgType:APP_CreateSess [200.0.0.1/200.0.0.2, LD/RD:0/0, Interface:Vlan200, SessType:Ctrl, LinkType:INET, vrf:1]
 
-[\*Feb 17 11:04:47:153 2012 Sysname BFD/7/DEBUG: Receive message, Application:STATIC MsgType:APP_CreateSess \[200.0.0.1/200.0.0.2, LD/RD:0/0, Interface:Vlan200, SessType:Ctrl, LinkType:INET\], vrf:1]{lang="EN-US"}
+%Feb 17 11:04:47:266 2012 Sysname BFD/6/FSM: Sess[200.0.0.1/200.0.0.2, LD/RD:68/34, Interface:Vlan200, SessType:Ctrl, LinkType:INET, Sta: DOWN-\>UP, Diag: 0]
 
-[%Feb 17 11:04:47:266 2012 Sysname BFD/6/FSM: Sess\[200.0.0.1/200.0.0.2, LD/RD:68/34, Interface:Vlan200, SessType:Ctrl, LinkType:INET\], Sta: DOWN-\>UP, Diag: 0]{lang="EN-US"}
+\*Feb 17 11:04:47:268 2012 Sysname BFD/7/DEBUG: Notify application:STATIC State:UP
 
-[\*Feb 17 11:04:47:268 2012 Sysname BFD/7/DEBUG: Notify application:STATIC State:UP]{lang="EN-US"}
-
-[*[// ]{lang="PT-BR"}*]{#struct_0_78416_60374_1368998571}*[新建会话，收到应用创建会话的消息]{style="font-family:宋体"}*
-
-::: {#-213066037 .myid}
-[]{#_Toc404796149}[]{#struct_0_78416_60374_852602320}[]{#_Toc161626624}[]{#_Toc161569527}
+*// 新建会话，收到应用创建会话的消息*
 
 **BFD \-- BFD调试命令 \-- debugging bfd packet**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_78416_60374_x539448519}
+【命令】
 
-[**[debugging bfd packet ]{lang="EN-US"}**[\[ { **receive** \| **send** } \[ **acl** *acl-number* \| **acl6** *acl6-number* \] \]]{lang="EN-US"}]{#struct_0_78416_60374_x572553365}
+**[debugging bfd packet **[[ { **receive** \| **send** } [ **acl** *acl-number* \| **acl6** *acl6-number* ] ]]]
 
-[**[undo debugging bfd packet ]{lang="EN-US"}**[\[ **receive** \| **send** \]]{lang="EN-US"}]{#struct_0_78416_60374_841447168}
+**[undo debugging bfd packet **[[ **receive** \| **send** ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_78416_60374_x1334597209}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_78416_60374_x2049770736}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_78416_60374_1793300806}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_78416_60374_x2097915697}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_78416_60374_1368933035}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_78416_60374_x757813131}
+【参数】
 
-[**[receive]{lang="EN-US"}**]{#struct_0_78416_60374_x798583490}[：接收报文调试信息开关。]{style="font-family:宋体"}
+**[receive**]：接收报文调试信息开关。
 
-[**[send]{lang="EN-US"}**]{#struct_0_78416_60374_x562902981}[：发送报文调试信息开关。]{style="font-family:宋体"}
+**[send**]：发送报文调试信息开关。
 
-[**[acl ]{lang="EN-US"}***[acl-num]{lang="EN-US"}[ber]{lang="EN-US"}*]{#struct_0_78416_60374_352258790}[：指定]{style="font-family:宋体"}[ACL]{lang="EN-US"}[的序号。]{style="font-family:宋体"}*[acl-num]{lang="EN-US"}[ber]{lang="EN-US"}*[表示]{style="font-family:宋体"}[ACL]{lang="EN-US"}[的序号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[2999]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[acl ***acl-number*]：指定ACL的序号。*acl-number*表示ACL的序号，取值范围为2000～2999。
 
-[**[acl6 ]{lang="EN-US"}***[acl6-number]{lang="EN-US"}*]{#struct_0_78416_60374_1299691303}[：指定]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[的序号。]{style="font-family:宋体"}*[acl6-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[的序号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[2999]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[acl6 ***acl6-number*]：指定IPv6 ACL的序号。*acl6-number*表示IPv6 ACL的序号，取值范围为2000～2999。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_78416_60374_650830800}
+【描述】
 
-[**[debugging bfd packet]{lang="EN-US"}**]{#struct_0_78416_60374_713796249}[命令用来打开]{style="font-family:宋体"}[BFD]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}**[undo debugging bfd packet]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[BFD]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}
+**[debugging bfd packet**]命令用来打开BFD报文调试信息开关。**undo debugging bfd packet**命令用来关闭BFD报文调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[BFD]{lang="EN-US"}]{#struct_0_78416_60374_x2050562643}[报文调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，BFD报文调试信息开关处于关闭状态。
 
-[[表1-6 ]{lang="EN-US"}[debugging bfd packet]{lang="EN-US"}]{#struct_0_78416_60374_1368867499}[命令输出信息描述表]{style="font-family:黑体"}
+表1-6 debugging bfd packet命令输出信息描述表
 
-[]{#table_struct_0_587735320}[[字段]{style="font-family:黑体"}]{#struct_0_78416_60374_817988360}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_78416_60374_x81673165}
+描述
 
-[[Received Simple packet authentication type not match. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_x337343596}
+Received Simple packet authentication type not match. Discard packet.
 
-[[Simple]{lang="EN-US"}]{#struct_0_78416_60374_1345083094}[报文的认证类型不匹配]{style="font-family:宋体"}
+Simple报文的认证类型不匹配
 
-[[Received Simple packet length not match. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_1405996850}
+Received Simple packet length not match. Discard packet.
 
-[[Simple]{lang="EN-US"}]{#struct_0_78416_60374_x337278060}[报文的长度不匹配]{style="font-family:宋体"}
+Simple报文的长度不匹配
 
-[[Received Simple packet key ID not match. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_2065204931}
+Received Simple packet key ID not match. Discard packet.
 
-[[Simple]{lang="EN-US"}]{#struct_0_78416_60374_1228216062}[文的]{style="font-family:宋体"}[Key ID]{lang="EN-US"}[不匹配]{style="font-family:宋体"}
+Simple文的Key ID不匹配
 
-[[Received Simple packet password not correct. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_x734049554}
+Received Simple packet password not correct. Discard packet.
 
-[[Simple]{lang="EN-US"}]{#struct_0_78416_60374_1228281598}[报文的密码不正确]{style="font-family:宋体"}
+Simple报文的密码不正确
 
-[[Received (M)MD5 packet authentication type not match. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_422029492}
+Received (M)MD5 packet authentication type not match. Discard packet.
 
-[[(M)MD5]{lang="EN-US"}]{#struct_0_78416_60374_1228347134}[报文的类型不匹配]{style="font-family:宋体"}
+(M)MD5报文的类型不匹配
 
-[[Received (M)MD5 packet length not match. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_31768427}
+Received (M)MD5 packet length not match. Discard packet.
 
-[[(M)MD5]{lang="EN-US"}]{#struct_0_78416_60374_659295798}[报文的长度不匹配]{style="font-family:宋体"}
+(M)MD5报文的长度不匹配
 
-[[Received (M)MD5 packet key ID not match. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_1228412670}
+Received (M)MD5 packet key ID not match. Discard packet.
 
-[[(M)MD5]{lang="EN-US"}]{#struct_0_78416_60374_444669071}[报文的]{style="font-family:宋体"}[Key ID]{lang="EN-US"}[不匹配]{style="font-family:宋体"}
+(M)MD5报文的Key ID不匹配
 
-[[Received (M)MD5 packet sequence number not match. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_1227953918}
+Received (M)MD5 packet sequence number not match. Discard packet.
 
-[[(M)MD5]{lang="EN-US"}]{#struct_0_78416_60374_x605908853}[报文的序列号不匹配]{style="font-family:宋体"}
+(M)MD5报文的序列号不匹配
 
-[[Received (M)MD5 packet digest not match or calculate failed. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_1228019454}
+Received (M)MD5 packet digest not match or calculate failed. Discard packet.
 
-[[(M)MD5]{lang="EN-US"}]{#struct_0_78416_60374_x1545384618}[报文的摘要不匹配或者计算失败]{style="font-family:宋体"}
+(M)MD5报文的摘要不匹配或者计算失败
 
-[[Received (M)SHA1 packet HASH not match or calculate failed. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_1228084990}
+Received (M)SHA1 packet HASH not match or calculate failed. Discard packet.
 
-[[(M)SHA1]{lang="EN-US"}]{#struct_0_78416_60374_1956012395}[报文的哈希不匹配或者计算失败]{style="font-family:宋体"}
+(M)SHA1报文的哈希不匹配或者计算失败
 
-[[Received (M)SHA1 packet authentication type not match. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_1228150526}
+Received (M)SHA1 packet authentication type not match. Discard packet.
 
-[[(M)SHA1]{lang="EN-US"}]{#struct_0_78416_60374_1993814975}[报文的认证类型不匹配]{style="font-family:宋体"}
+(M)SHA1报文的认证类型不匹配
 
-[[Received (M)SHA1 packet length not match. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_1228740350}
+Received (M)SHA1 packet length not match. Discard packet.
 
-[[(M)SHA1]{lang="EN-US"}]{#struct_0_78416_60374_x1916390524}[报文的长度不匹配]{style="font-family:宋体"}
+(M)SHA1报文的长度不匹配
 
-[[Received (M)SHA1 packet key ID not match. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_1228805886}
+Received (M)SHA1 packet key ID not match. Discard packet.
 
-[[(M)SHA1]{lang="EN-US"}]{#struct_0_78416_60374_x1931029233}[报文的]{style="font-family:宋体"}[Key ID]{lang="EN-US"}[不匹配]{style="font-family:宋体"}
+(M)SHA1报文的Key ID不匹配
 
-[[Received (M)SHA1 packet sequence number not match. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_1228216061}
+Received (M)SHA1 packet sequence number not match. Discard packet.
 
-[[(M)SHA1]{lang="EN-US"}]{#struct_0_78416_60374_x733852946}[报文的序列号不匹配]{style="font-family:宋体"}
+(M)SHA1报文的序列号不匹配
 
-[[Received none authentication type packet. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_1228281597}
+Received none authentication type packet. Discard packet.
 
-[[收到不带认证报文，与本地会话认证类型不匹配]{style="font-family:宋体"}]{#struct_0_78416_60374_421832884}
+收到不带认证报文，与本地会话认证类型不匹配
 
-[[Received invalid authentication type packet. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_1228347133}
+Received invalid authentication type packet. Discard packet.
 
-[[收到无效认证类型的报文]{style="font-family:宋体"}]{#struct_0_78416_60374_32096107}
+收到无效认证类型的报文
 
-[[Failed to check Mbuffer. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_1228412669}
+Failed to check Mbuffer. Discard packet.
 
-[[报文的]{style="font-family:宋体"}[Mbuffer]{lang="EN-US"}]{#struct_0_78416_60374_444210320}[检查失败]{style="font-family:宋体"}
+报文的Mbuffer检查失败
 
-[[ADP master received packets from other self. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_1227953917}
+ADP master received packets from other self. Discard packet.
 
-[[ADP]{lang="EN-US"}]{#struct_0_78416_60374_x606760821}[模式下，主控板收到其它板的报文]{style="font-family:宋体"}
+ADP模式下，主控板收到其它板的报文
 
-[[Direct not match. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_1228019453}
+Direct not match. Discard packet.
 
-[[判断是否直连，报文与本地不匹配]{style="font-family:宋体"}]{#struct_0_78416_60374_x1545712298}
+判断是否直连，报文与本地不匹配
 
-[[SelfID not match. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_1228084989}
+SelfID not match. Discard packet.
 
-[[维护板]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_78416_60374_1956471148}[不匹配]{style="font-family:宋体"}
+维护板ID不匹配
 
-[[Session information not match. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_1228150525}
+Session information not match. Discard packet.
 
-[[会话状态、]{style="font-family:宋体"}[CRTL/ECHO]{lang="EN-US"}]{#struct_0_78416_60374_1994011583}[类型不匹配]{style="font-family:宋体"}
+会话状态、CRTL/ECHO类型不匹配
 
-[[UDP protocol error. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_215540746}
+UDP protocol error. Discard packet.
 
-[[UDP]{lang="EN-US"}]{#struct_0_78416_60374_1228740349}[报文协议字段错误]{style="font-family:宋体"}
+UDP报文协议字段错误
 
-[[UDP checksum error. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_x1915931773}
+UDP checksum error. Discard packet.
 
-[[UDP]{lang="EN-US"}]{#struct_0_78416_60374_1228805885}[报文检验和验证失败]{style="font-family:宋体"}
+UDP报文检验和验证失败
 
-[[Invalid UDP source port. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_x1931225841}
+Invalid UDP source port. Discard packet.
 
-[[UDP]{lang="EN-US"}]{#struct_0_78416_60374_1228216064}[报文源端口错误]{style="font-family:宋体"}
+UDP报文源端口错误
 
-[[Invalid UDP destination port. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_x733656338}
+Invalid UDP destination port. Discard packet.
 
-[[UDP]{lang="EN-US"}]{#struct_0_78416_60374_1228281600}[报文目的端口错误]{style="font-family:宋体"}
+UDP报文目的端口错误
 
-[[Incorrect UDP length. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_1995483325}
+Incorrect UDP length. Discard packet.
 
-[[UDP]{lang="EN-US"}]{#struct_0_78416_60374_1228347136}[报文长度字段错误]{style="font-family:宋体"}
+UDP报文长度字段错误
 
-[[Received packet source address is not match. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_31899499}
+Received packet source address is not match. Discard packet.
 
-[[报文中源地址和本地源地址不匹配]{style="font-family:宋体"}]{#struct_0_78416_60374_1228412672}
+报文中源地址和本地源地址不匹配
 
-[[Received packet destination address is not match. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_444537999}
+Received packet destination address is not match. Discard packet.
 
-[[报文中目的地址和本地目的地址不匹配]{style="font-family:宋体"}]{#struct_0_78416_60374_1227953920}
+报文中目的地址和本地目的地址不匹配
 
-[[Interface index not match. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_x606433144}
+Interface index not match. Discard packet.
 
-[[报文入接口索引不匹配]{style="font-family:宋体"}]{#struct_0_78416_60374_1228019456}
+报文入接口索引不匹配
 
-[[\'Vers\' bit is invalid. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_476405282}
+\'Vers\' bit is invalid. Discard packet.
 
-[[\'Vers\']{lang="EN-US"}]{#struct_0_78416_60374_x1875367936}[位无效]{style="font-family:宋体"}
+\'Vers\'位无效
 
-[[\'P\' & \'F\' bits are invalid. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_x18298376}
+\'P\' & \'F\' bits are invalid. Discard packet.
 
-[[\'P\' & \'F\']{lang="EN-US"}]{#struct_0_78416_60374_1273745582}[位无效]{style="font-family:宋体"}
+\'P\' & \'F\'位无效
 
-[[\'Multipoint\' bit is invalid. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_1368801963}
+\'Multipoint\' bit is invalid. Discard packet.
 
-[[保留位无效]{style="font-family:宋体"}]{#struct_0_78416_60374_1958594405}
+保留位无效
 
-[[\'Detect Mult\' bit is invalid. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_x1189785086}
+\'Detect Mult\' bit is invalid. Discard packet.
 
-[[\'Detect Mult\']{lang="EN-US"}]{#struct_0_78416_60374_x1228854327}[位无效]{style="font-family:宋体"}
+\'Detect Mult\'位无效
 
-[[\'Length\' bit is invalid. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_201607170}
+\'Length\' bit is invalid. Discard packet.
 
-[[\'Length\']{lang="EN-US"}]{#struct_0_78416_60374_x1990294519}[位无效]{style="font-family:宋体"}
+\'Length\'位无效
 
-[[\'My Discriminator\'(equals to zero) is invalid. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_600897599}
+\'My Discriminator\'(equals to zero) is invalid. Discard packet.
 
-[[报文]{style="font-family:宋体"}[\'My Discriminator\']{lang="EN-US"}]{#struct_0_78416_60374_1174556170}[为]{style="font-family:宋体"}[0]{lang="EN-US"}[，错误的报文]{style="font-family:宋体"}
+报文\'My Discriminator\'为0，错误的报文
 
-[[Received packet discriminator is not match. Discard packet]{lang="EN-US"}]{#struct_0_78416_60374_x1160799561}
+Received packet discriminator is not match. Discard packet
 
-[[报文中]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_78416_60374_96202264}[和本端]{style="font-family:宋体"}[ID]{lang="EN-US"}[匹配不成功]{style="font-family:宋体"}
+报文中ID和本端ID匹配不成功
 
-[[Received packet address is not match. Discard packet]{lang="EN-US"}]{#struct_0_78416_60374_1124416471}
+Received packet address is not match. Discard packet
 
-[[报文中地址和本端地址匹配不成功]{style="font-family:宋体"}]{#struct_0_78416_60374_x906540509}
+报文中地址和本端地址匹配不成功
 
-[[Interface PhyStatus is down. Discard packet.]{lang="EN-US"}]{#struct_0_78416_60374_1228281599}
+Interface PhyStatus is down. Discard packet.
 
-[[接口物理状态]{style="font-family:宋体"}[down]{lang="EN-US"}]{#struct_0_78416_60374_1228347135}
+接口物理状态down
 
-[[\[K\]Authentication type not match, session type: *sess-auth-type*, packet type: packet-auth-type.]{lang="EN-US"}]{#struct_0_78416_60374_31702891}
+KAuthentication type not match, session type: *sess-auth-type*, packet type: packet-auth-type.
 
-[[报文与本地会话的认证类型不匹配：]{style="font-family:宋体"}]{#struct_0_78416_60374_1228412671}
+报文与本地会话的认证类型不匹配：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[sess-auth-type]{lang="EN-US"}*]{#struct_0_78416_60374_1227953919}[：会话认证类型]{style="font-family:宋体"}
+l*sess-auth-type*：会话认证类型
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[packe-tauth-type]{lang="EN-US"}*]{#struct_0_78416_60374_x605843317}[：报文认证类型]{style="font-family:宋体"}
+l*packe-tauth-type*：报文认证类型
 
-[[\[K\]Check old authentication, session type: *sess-auth-type*, packet type:packet-auth-type.]{lang="EN-US"}]{#struct_0_78416_60374_1228019455}
+KCheck old authentication, session type: *sess-auth-type*, packet type:packet-auth-type.
 
-[[报文与本地会话的旧认证类型不匹配：]{style="font-family:宋体"}]{#struct_0_78416_60374_1228084991}
+报文与本地会话的旧认证类型不匹配：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[sess-auth-type]{lang="EN-US"}*]{#struct_0_78416_60374_1228150527}[：会话认证类型]{style="font-family:宋体"}
+l*sess-auth-type*：会话认证类型
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[packet-auth-type]{lang="EN-US"}*]{#struct_0_78416_60374_1993880511}[：报文认证类型]{style="font-family:宋体"}
+l*packet-auth-type*：报文认证类型
 
-[[Authentication type *type* is not supported]{lang="EN-US"}]{#struct_0_78416_60374_1228740351}
+Authentication type *type* is not supported
 
-[[认证类型不支持：]{style="font-family:宋体"}]{#struct_0_78416_60374_1228805887}
+认证类型不支持：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[type]{lang="EN-US"}*]{#struct_0_78416_60374_x1931094769}[：认证类型]{style="font-family:
-  宋体"}
+l*type*：认证类型
 
-[[\[K\]L2 Send: *packet-string* ErrCode: *error-code*.]{lang="EN-US"}]{#struct_0_78416_60374_1228216058}
+KL2 Send: *packet-string* ErrCode: *error-code*.
 
-[[二层发送报文：]{style="font-family:宋体"}]{#struct_0_78416_60374_1228281594}
+二层发送报文：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[packet-string]{lang="EN-US"}*]{#struct_0_78416_60374_1228347130}[：报文转换的信息字符串，包含]{style="font-family:宋体"}[BFD]{lang="EN-US"}[报文的基本信息和扩展信息等]{style="font-family:宋体"}
+l*packet-string*：报文转换的信息字符串，包含BFD报文的基本信息和扩展信息等
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:6.5pt;
-  font-family:Wingdings"}*[error-code]{lang="EN-US"}*]{#struct_0_78416_60374_32030571}[：报文发送后返回的错误码]{style="font-family:宋体"}
+l*error-code*：报文发送后返回的错误码
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_78416_60374_x1239188338}
+\# 打开BFD发送报文调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_78416_60374_1369064107}[打开]{style="font-family:宋体"}[BFD]{lang="EN-US"}[发送报文调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging bfd packet send
 
-[[\<Sysname\> debugging bfd packet send]{lang="EN-US"}]{#struct_0_78416_60374_431957560}
+\*Jul  4 14:57:58:311 2011 Sysname BFD/7/DEBUG: -MDC=1; [K L2 Send:Ctrl packet, Src:10.1.1.1, Dst:10.1.1.2, Ver:1, Diag:0, Sta:3, P/F/C/A/D/M:0/0/1/0/0/0, mult:5, LD/RD:513/514, Tx:500ms, Rx:500ms, EchoRx:500ms]
 
-[\*Jul  4 14:57:58:311 2011 Sysname BFD/7/DEBUG: -MDC=1; \[K\] L2 Send:Ctrl packet, Src:10.1.1.1, Dst:10.1.1.2, Ver:1, Diag:0, Sta:3, P/F/C/A/D/M:0/0/1/0/0/0, mult:5, LD/RD:513/514, Tx:500ms, Rx:500ms, EchoRx:500ms]{lang="EN-US"}
+*// 控制报文信息：源地址为10.1.1.2、目的地址为10.1.1.1、版本1、诊断码0、状态3、各标记位P/F/C/A/D/M分别为0/0/1/0/0/0、检测系数5、本地鉴别码513、对端鉴别码514、最小发送间隔500ms、最小接收间隔500ms、最小ECHO接收间隔500ms*
 
-[*[// ]{lang="PT-BR"}*]{#struct_0_78416_60374_1804815894}*[控制报文信息：源地址为]{style="font-family:宋体"}[10.1.1.2]{lang="PT-BR"}[、目的地址为]{style="font-family:宋体"}[10.1.1.1]{lang="PT-BR"}[、版本]{style="font-family:宋体"}[1]{lang="PT-BR"}[、诊断码]{style="font-family:宋体"}[0]{lang="PT-BR"}[、状态]{style="font-family:宋体"}[3]{lang="PT-BR"}[、各标记位]{style="font-family:宋体"}[P/F/C/A/D/M]{lang="PT-BR"}[分别为]{style="font-family:宋体"}[0/0/1/0/0/0]{lang="PT-BR"}[、检测系数]{style="font-family:宋体"}[5]{lang="PT-BR"}[、本地鉴别码]{style="font-family:宋体"}[513]{lang="EN-US"}[、]{style="font-family:宋体"}[对端鉴别码]{style="font-family:宋体"}[514]{lang="EN-US"}[、]{style="font-family:宋体"}[最小发送间隔]{style="font-family:宋体"}[500ms]{lang="EN-US"}[、]{style="font-family:宋体"}[最小接收间隔]{style="font-family:宋体"}[500ms]{lang="EN-US"}[、最小]{style="font-family:宋体"}[ECHO]{lang="EN-US"}[接收间隔]{style="font-family:宋体"}[500ms]{lang="EN-US"}*
+\# 打开BFD接收报文调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_78416_60374_x278173200}[打开]{style="font-family:宋体"}[BFD]{lang="EN-US"}[接收报文调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging bfd packet receive
 
-[[\<Sysname\> debugging bfd packet receive]{lang="EN-US"}]{#struct_0_78416_60374_x784566633}
+\*Jul  4 15:02:20:045 2011 Sysname BFD/7/DEBUG: -MDC=1; [K Recv:Ctrl packet, Src:fe80::102, Dst:fe80::101, Ver:1, Diag:0, Sta:3, P/F/C/A/D/M:0/0/1/0/0/0, mult:10, LD/RD:517/513, Tx:500ms, Rx:500ms, EchoRx:500ms]
 
-[\*Jul  4 15:02:20:045 2011 Sysname BFD/7/DEBUG: -MDC=1; \[K\] Recv:Ctrl packet, Src:fe80::102, Dst:fe80::101, Ver:1, Diag:0, Sta:3, P/F/C/A/D/M:0/0/1/0/0/0, mult:10, LD/RD:517/513, Tx:500ms, Rx:500ms, EchoRx:500ms]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_78416_60374_x862835199}*[控制报文信息：源地址为]{style="font-family:宋体"}[fe80::101]{lang="EN-US"}[、目的地址为]{style="font-family:宋体"}[fe80::102]{lang="EN-US"}[、版本]{style="font-family:宋体"}[1]{lang="EN-US"}[、诊断码]{style="font-family:宋体"}[0]{lang="EN-US"}[、状态]{style="font-family:宋体"}[3]{lang="EN-US"}[、]{style="font-family:宋体"}[各标记位]{style="font-family:宋体"}[P/F/C/A/D/M]{lang="EN-US"}[分别为]{style="font-family:宋体"}[0/0/1/0/0/0]{lang="EN-US"}[、检测系数]{style="font-family:宋体"}[5]{lang="EN-US"}[、]{style="font-family:宋体"}[本地鉴别码]{style="font-family:宋体"}[517]{lang="EN-US"}[、]{style="font-family:宋体"}[对端鉴别码]{style="font-family:宋体"}[513]{lang="EN-US"}[、]{style="font-family:宋体"}[最小发送间隔]{style="font-family:宋体"}[500ms]{lang="EN-US"}[、]{style="font-family:宋体"}[最小接收间隔]{style="font-family:宋体"}[500ms]{lang="EN-US"}[、最小]{style="font-family:宋体"}[ECHO]{lang="EN-US"}[接收间隔]{style="font-family:宋体"}[500ms]{lang="EN-US"}*
-
-::: {#-470293537 .myid}
-[]{#_Toc404796150}[]{#struct_0_78416_60374_x1823381290}[]{#_Toc161626625}[]{#_Toc161569528}
+*// 控制报文信息：源地址为fe80::101、目的地址为fe80::102、版本1、诊断码0、状态3、各标记位P/F/C/A/D/M分别为0/0/1/0/0/0、检测系数5、本地鉴别码517、对端鉴别码513、最小发送间隔500ms、最小接收间隔500ms、最小ECHO接收间隔500ms*
 
 **BFD \-- BFD调试命令 \-- debugging bfd scm**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_78416_60374_x771629820}
+【命令】
 
-[**[debugging bfd scm]{lang="EN-US"}**]{#struct_0_78416_60374_1369522859}
+**[debugging bfd scm**]
 
-[**[undo debugging bfd scm]{lang="EN-US"}**]{#struct_0_78416_60374_x1166066596}
+**[undo debugging bfd scm**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_78416_60374_1276700582}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_78416_60374_x619367266}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_78416_60374_1345079024}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_78416_60374_x1354670773}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_78416_60374_x1456159560}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_78416_60374_1667776430}
+【参数】
 
-[[无]{style="font-family:宋体"}]{#struct_0_78416_60374_1369457323}
+无
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_78416_60374_408585095}
+【描述】
 
-[**[debugging bfd scm]{lang="EN-US"}**]{#struct_0_78416_60374_x549297916}[命令用来打开]{style="font-family:宋体"}[BFD]{lang="EN-US"}[会话控制管理调试信息开关。]{style="font-family:宋体"}**[undo debugging bfd scm]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[BFD]{lang="EN-US"}[会话控制管理调试信息开关。]{style="font-family:宋体"}
+**[debugging bfd scm**]命令用来打开BFD会话控制管理调试信息开关。**undo debugging bfd scm**命令用来关闭BFD会话控制管理调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[BFD]{lang="EN-US"}]{#struct_0_78416_60374_x1010447963}[会话控制管理调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，BFD会话控制管理调试信息开关处于关闭状态。
 
-[[表1-7 ]{lang="EN-US"}[debugging bfd scm]{lang="EN-US"}]{#struct_0_78416_60374_x2016660947}[命令输出信息描述表]{style="font-family:黑体"}
+表1-7 debugging bfd scm命令输出信息描述表
 
-[]{#table_struct_0_618584930}[[字段]{style="font-family:黑体"}]{#struct_0_78416_60374_1874230933}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_78416_60374_1753822534}
+描述
 
-[[Create session success:(*application message*)]{lang="EN-US"}]{#struct_0_78416_60374_x2133181739}
+Create session success:(*application message*)
 
-[[创建会话成功]{style="font-family:宋体"}]{#struct_0_78416_60374_1368998572}
+创建会话成功
 
-[[Delete session success:(*application message*)]{lang="EN-US"}]{#struct_0_78416_60374_852536784}
+Delete session success:(*application message*)
 
-[[删除会话成功]{style="font-family:宋体"}]{#struct_0_78416_60374_43112754}
+删除会话成功
 
-[[Reset session LD:(*Local Discriminator*)]{lang="EN-US"}]{#struct_0_78416_60374_x38514024}
+Reset session LD:(*Local Discriminator*)
 
-[[重置会话]{style="font-family:宋体"}]{#struct_0_78416_60374_x931314589}
+重置会话
 
-[[Switch control to *device-info*, LD *local-discr* XmitAuthSeq: *sequence-number*]{lang="EN-US"}]{#struct_0_78416_60374_1228019450}
+Switch control to *device-info*, LD *local-discr* XmitAuthSeq: *sequence-number*
 
-[[会话维护权迁移到其它板：]{style="font-family:宋体"}]{#struct_0_78416_60374_x1545646762}
+会话维护权迁移到其它板：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[device-info]{lang="EN-US"}*]{#struct_0_78416_60374_1228084986}[：设备信息]{style="font-family:宋体"}
+l*device-info*：设备信息
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[local-discr]{lang="EN-US"}*]{#struct_0_78416_60374_1228150522}[：会话本地鉴别码]{style="font-family:宋体"}
+l*local-discr*：会话本地鉴别码
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[sequence-number]{lang="EN-US"}*]{#struct_0_78416_60374_1994077119}[：认证序列号]{style="font-family:宋体"}
+l*sequence-number*：认证序列号
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_78416_60374_414388174}
+\# 打开BFD会话控制管理调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_78416_60374_484024834}[打开]{style="font-family:宋体"}[BFD]{lang="EN-US"}[会话控制管理调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging bfd scm
 
-[[\<Sysname\> debugging bfd scm]{lang="EN-US"}]{#struct_0_78416_60374_1368933036}
+\*Jul  4 15:11:52:654 2011 Sysname BFD/7/DEBUG: -MDC=1; Delete session success [10.1.1.1/10.1.1.2, LD/RD:513/514, Interface:GE1/0/1, SessType:Ctrl, LinkType:INET]
 
-[\*Jul  4 15:11:52:654 2011 Sysname BFD/7/DEBUG: -MDC=1; Delete session success \[10.1.1.1/10.1.1.2, LD/RD:513/514, Interface:GE1/0/1, SessType:Ctrl, LinkType:INET\]]{lang="EN-US"}
+\*Jul  4 15:11:52:655 2011 Sysname BFD/7/DEBUG: -MDC=1; Delete session success [10.1.1.1/10.1.1.2, LD/RD:513/514, Interface:GE1/0/1, SessType:Ctrl, LinkType:INET]
 
-[\*Jul  4 15:11:52:655 2011 Sysname BFD/7/DEBUG: -MDC=1; Delete session success \[10.1.1.1/10.1.1.2, LD/RD:513/514, Interface:GE1/0/1, SessType:Ctrl, LinkType:INET\]]{lang="EN-US"}
-
-[*[// ]{lang="PT-BR"}*]{#struct_0_78416_60374_x757616523}*[删除]{style="font-family:宋体"}[BFD]{lang="PT-BR"}[会话]{style="font-family:宋体"}*
-
-::: {#-616703924 .myid}
-[]{#_Toc404796151}[]{#struct_0_78416_60374_x1160104154}[]{#_Toc161626626}[]{#_Toc161569529}
+*// 删除BFD会话*
 
 **BFD \-- BFD调试命令 \-- debugging bfd timer**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_78416_60374_302073976}
+【命令】
 
-[**[debugging bfd timer]{lang="EN-US"}**]{#struct_0_78416_60374_x851294986}
+**[debugging bfd timer**]
 
-[**[undo debugging bfd timer]{lang="EN-US"}**]{#struct_0_78416_60374_x401793165}
+**[undo debugging bfd timer**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_78416_60374_x838501144}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_78416_60374_1983081949}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_78416_60374_x2071008239}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_78416_60374_1368867500}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_78416_60374_x1137868031}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_78416_60374_x745329694}
+【参数】
 
-[[无]{style="font-family:宋体"}]{#struct_0_78416_60374_x495441290}
+无
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_78416_60374_2008920465}
+【描述】
 
-[**[debugging bfd timer]{lang="EN-US"}**]{#struct_0_78416_60374_87168538}[命令用来打开]{style="font-family:宋体"}[BFD]{lang="EN-US"}[定时器事件调试信息开关。]{style="font-family:宋体"}**[undo debugging bfd timer]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[BFD]{lang="EN-US"}[定时器事件调试信息开关。]{style="font-family:宋体"}
+**[debugging bfd timer**]命令用来打开BFD定时器事件调试信息开关。**undo debugging bfd timer**命令用来关闭BFD定时器事件调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[BFD]{lang="EN-US"}]{#struct_0_78416_60374_13670504}[定时器事件调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，BFD定时器事件调试信息开关处于关闭状态。
 
-[[表1-8 ]{lang="EN-US"}[debugging bfd timer]{lang="EN-US"}]{#struct_0_78416_60374_x982694897}[命令输出信息描述表]{style="font-family:黑体"}
+表1-8 debugging bfd timer命令输出信息描述表
 
-[]{#table_struct_0_620164110}[[字段]{style="font-family:黑体"}]{#struct_0_78416_60374_1368801964}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_78416_60374_1958659941}
+描述
 
-[[Create send-packet/detect-packet timer]{lang="EN-US"}]{#struct_0_78416_60374_x923249400}
+Create send-packet/detect-packet timer
 
-[[创建用户态发送]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_78416_60374_57940521}[监测定时器]{style="font-family:宋体"}
+创建用户态发送/监测定时器
 
-[[Delete session *send/ detect* timer]{lang="EN-US"}]{#struct_0_78416_60374_307060534}
+Delete session *send/ detect* timer
 
-[[删除内核态发送]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_78416_60374_1461422748}[监测定时器]{style="font-family:宋体"}
+删除内核态发送/监测定时器
 
-[[Update session *send/detect* timer ]{lang="EN-US"}]{#struct_0_78416_60374_1839086714}
+Update session *send/detect* timer
 
-[[删除内核态发送]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_78416_60374_1369260716}[检测定时器]{style="font-family:宋体"}
+删除内核态发送/检测定时器
 
-[[Detect timer expired]{lang="EN-US"}]{#struct_0_78416_60374_2018923533}
+Detect timer expired
 
-[[监测定时器超时]{style="font-family:宋体"}]{#struct_0_78416_60374_x162031225}
+监测定时器超时
 
-[[Start *send timer*, LD:*ldvalue*, mdc:*mdcvalue*]{lang="EN-US"}]{#struct_0_78416_60374_1774949629}
+Start *send timer*, LD:*ldvalue*, mdc:*mdcvalue*
 
-[[内核态创建发送定时器]{style="font-family:宋体"}]{#struct_0_78416_60374_1393236590}
+内核态创建发送定时器
 
-[[Change *send /detect* time, LD:*ldvalue*, Old:*timevalue* ms, New: *timevalue* ms]{lang="EN-US"}]{#struct_0_78416_60374_x704822756}
+Change *send /detect* time, LD:*ldvalue*, Old:*timevalue* ms, New: *timevalue* ms
 
-[[修改定时器时间间隔]{style="font-family:宋体"}]{#struct_0_78416_60374_1369195180}
+修改定时器时间间隔
 
-[[\[K\]BFD: Delete CCF reinit timer.]{lang="EN-US"}]{#struct_0_78416_60374_1228216057}
+KBFD: Delete CCF reinit timer.
 
-[[删除]{style="font-family:宋体"}[CCF]{lang="EN-US"}]{#struct_0_78416_60374_x733721873}[重初始化定时器]{style="font-family:宋体"}
+删除CCF重初始化定时器
 
-[[\[K\]BFD: Reset CCF reinit timer.]{lang="EN-US"}]{#struct_0_78416_60374_1228281593}
+KBFD: Reset CCF reinit timer.
 
-[[起]{style="font-family:宋体"}[CCF]{lang="EN-US"}]{#struct_0_78416_60374_1228347129}[重新初始化定时器]{style="font-family:宋体"}
+起CCF重新初始化定时器
 
-[[\[K\]BFD: Delete CCF reinit timer.]{lang="EN-US"}]{#struct_0_78416_60374_32489322}
+KBFD: Delete CCF reinit timer.
 
-[[删除]{style="font-family:宋体"}[CCF]{lang="EN-US"}]{#struct_0_78416_60374_1228412665}[重新初始化定时器]{style="font-family:宋体"}
+删除CCF重新初始化定时器
 
-[[\[K\]BFD: Create CCF reinit timer *timer-id*.]{lang="EN-US"}]{#struct_0_78416_60374_444996752}
+KBFD: Create CCF reinit timer *timer-id*.
 
-[[创建]{style="font-family:宋体"}[CCF]{lang="EN-US"}]{#struct_0_78416_60374_1227953913}[重新初始化定时器：]{style="font-family:宋体"}
+创建CCF重新初始化定时器：
 
-[[l[   ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  6.5pt;font-family:Wingdings"}*[timer-id]{lang="EN-US"}*]{#struct_0_78416_60374_1228019449}[：定时器]{style="font-family:宋体"}[ID]{lang="EN-US"}
+l*timer-id*：定时器ID
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_78416_60374_x1160209748}
+\# 打开BFD定时器事件调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_78416_60374_171950010}[打开]{style="font-family:宋体"}[BFD]{lang="EN-US"}[定时器事件调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging bfd timer
 
-[[\<Sysname\> debugging bfd timer]{lang="EN-US"}]{#struct_0_78416_60374_x35847039}
+\*Feb 17 13:42:06:576 2012 Sysname BFD/7/DEBUG: Create send timer[1000ms success, LD:68]
 
-[\*Feb 17 13:42:06:576 2012 Sysname BFD/7/DEBUG: Create send timer\[1000ms\] success, LD:68]{lang="EN-US"}
+%Feb 17 13:42:06:743 2012 Sysname BFD/6/FSM: Sess[200.0.0.1/200.0.0.2, LD/RD:68/34, Interface:Vlan200, SessType:Ctrl, LinkType:INET, Sta: DOWN-\>UP, Diag: 0]
 
-[%Feb 17 13:42:06:743 2012 Sysname BFD/6/FSM: Sess\[200.0.0.1/200.0.0.2, LD/RD:68/34, Interface:Vlan200, SessType:Ctrl, LinkType:INET\], Sta: DOWN-\>UP, Diag: 0]{lang="EN-US"}
+\*Feb 17 13:42:06:744 2012 Sysname BFD/7/DEBUG: Change detect time, LD:68, Old:5000ms, New:10000ms
 
-[\*Feb 17 13:42:06:744 2012 Sysname BFD/7/DEBUG: Change detect time, LD:68, Old:5000ms, New:10000ms]{lang="EN-US"}
+\*Feb 17 13:42:06:748 2012 Sysname BFD/7/DEBUG: Delete send timer [LD:68]
 
-[\*Feb 17 13:42:06:748 2012 Sysname BFD/7/DEBUG: Delete send timer \[LD:68\]]{lang="EN-US"}
+\*Feb 17 13:42:06:748 2012 Sysname BFD/7/DEBUG: -Slot=1; [K Start send timer, LD:68, mdc:1]
 
-[\*Feb 17 13:42:06:748 2012 Sysname BFD/7/DEBUG: -Slot=1; \[K\] Start send timer, LD:68, mdc:1]{lang="EN-US"}
+*// 创建Ctrl报文发送定时器和控制报文发送定时器为1000ms，会话（200.0.0.1/200.0.0.2, Vlan200, Ctrl）状态由down变为up，诊断码为0（无诊断信息）的BFD会话信息*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_78416_60374_x1096879472}*[创建]{style="font-family:宋体"}[Ctrl]{lang="EN-US"}[报文发送定时器和控制报文发送定时器为]{style="font-family:宋体"}[1000ms]{lang="EN-US"}[，会话（]{style="font-family:宋体"}[200.0.0.1/200.0.0.2, Vlan200, Ctrl]{lang="EN-US"}[）状态由]{style="font-family:宋体"}[down]{lang="EN-US"}[变为]{style="font-family:宋体"}[up]{lang="EN-US"}[，诊断码为]{style="font-family:宋体"}[0]{lang="EN-US"}[（无诊断信息）的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[会话信息]{style="font-family:宋体"}*
-
-[]{#_Toc164675096}[]{#_debugging_isis_event}[]{#_debugging_ospf_event}[]{#_debugging_ospf_event_bfd}[ ]{lang="EN-US"}

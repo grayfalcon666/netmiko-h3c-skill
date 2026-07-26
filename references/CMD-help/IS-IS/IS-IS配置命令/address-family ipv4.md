@@ -1,8772 +1,7877 @@
-::: {#-32210999 .myid}
-[]{#_Toc357599128}[]{#_Toc352311297}[]{#_Toc185927307}[]{#_Toc123026767}[]{#_Toc29974884}[]{#_Toc25576880}[]{#_Toc15724192}[]{#_Toc185927308}[]{#_Toc123026768}[]{#_Toc404788342}[]{#struct_0_x1984_13510_x613430857}
 
 **IS-IS \-- IS-IS配置命令 \-- address-family ipv4**
 
 ------------------------------------------------------------------------
 
-[**[address-family ipv4]{lang="EN-US"}**]{#struct_0_x1984_13510_x613234249}[命令用来创建并进入]{style="font-family:宋体"}[IS-IS IPv4]{lang="EN-US"}[地址族视图。]{style="font-family:宋体"}
+**[address-family ipv4**]命令用来创建并进入IS-IS IPv4地址族视图。
 
-[**[undo address-family ipv4]{lang="EN-US"}**]{#struct_0_x1984_13510_x967793566}[命令用来删除]{style="font-family:
-宋体"}[IS-IS IPv4]{lang="EN-US"}[地址族视图。]{style="font-family:
-宋体"}
+**[undo address-family ipv4**]命令用来删除IS-IS IPv4地址族视图。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1288666934}
+【命令】
 
-[**[address-family]{lang="EN-US"}**[ **ipv4** \[ **unicast** \]]{lang="EN-US"}]{#struct_0_x1984_13510_x296263581}
+**[address-family** **ipv4** [ **unicast** ]]
 
-[**[undo address-family]{lang="EN-US"}**[ **ipv4** \[ **unicast** \]]{lang="EN-US"}]{#struct_0_x1984_13510_x1114388566}
+**[undo address-family** **ipv4** [ **unicast** ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_549006183}
+【缺省情况】
 
-[[没有创建]{style="font-family:宋体"}[IS-IS IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_x1229794545}[地址族视图。]{style="font-family:宋体"}
+没有创建IS-IS IPv4地址族视图。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_577621989}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x247919910}[视图]{style="font-family:宋体"}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1686688985}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_385935607}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x616996729}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x613299785}
+【参数】
 
-[**[unicast]{lang="EN-US"}**]{#struct_0_x1984_13510_1330643503}[：表示单播地址族。缺省为单播地址族。]{style="font-family:宋体"}
+**[unicast**]：表示单播地址族。缺省为单播地址族。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_140413300}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1265413936}[创建并进入]{style="font-family:宋体"}[IS-IS IPv4]{lang="EN-US"}[单播地址族视图。]{style="font-family:宋体"}
+\# 创建并进入IS-IS IPv4单播地址族视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x193810150}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 100]{lang="EN-US"}
+Sysname isis 100
 
-[\[Sysname-isis-100\] address-family ipv4]{lang="EN-US"}
+Sysname-isis-100 address-family ipv4
 
-[\[Sysname-isis-100-ipv4\]]{lang="EN-US"}
-:::
-
-::: {#-1541660845 .myid}
-[]{#_Toc404788343}[]{#struct_0_x1984_13510_1809720996}[]{#_Toc353884860}
+Sysname-isis-100-ipv4
 
 **IS-IS \-- IS-IS配置命令 \-- area-authentication send-only**
 
 ------------------------------------------------------------------------
 
-[**[area-authentication send-only]{lang="EN-US"}**]{#struct_0_x1984_13510_1322197890}[命令用来配置对收到的]{style="font-family:
-宋体"}[Level-1]{lang="EN-US"}[报文（包括]{style="font-family:
-宋体"}[LSP]{lang="EN-US"}[、]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[、]{style="font-family:宋体"}[PSNP]{lang="EN-US"}[）忽略认证信息检查。]{style="font-family:宋体"}
+**[area-authentication send-only**]命令用来配置对收到的Level-1报文（包括LSP、CSNP、PSNP）忽略认证信息检查。
 
-[**[undo]{lang="EN-US"}[ area-authentication send-only]{lang="EN-US"}**]{#struct_0_x1984_13510_x897335521}[命令用来取消该配置。]{style="font-family:宋体"}
+**[undo area-authentication send-only**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1891009431}
+【命令】
 
-[**[area-authentication send-only]{lang="EN-US"}**]{#struct_0_x1984_13510_742342459}
+**[area-authentication send-only**]
 
-[**[undo area-authentication send-only]{lang="EN-US"}**]{#struct_0_x1984_13510_x613758536}
+**[undo area-authentication send-only**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_171079572}
+【缺省情况】
 
-[[如果配置了区域验证方式和验证密码，对收到的报文执行认证信息检查。]{style="font-family:宋体"}]{#struct_0_x1984_13510_920871570}
+如果配置了区域验证方式和验证密码，对收到的报文执行认证信息检查。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1631549288}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x1942469308}[视图]{style="font-family:宋体"}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1858976097}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_843396914}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_827351052}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x754364851}
+【使用指导】
 
-[[配置区域验证方式和验证密码后，验证密码将按照设定的方式插入到发送的]{style="font-family:宋体"}[Level-1]{lang="EN-US"}]{#struct_0_x1984_13510_x613824072}[报文（包括]{style="font-family:宋体"}[LSP]{lang="EN-US"}[、]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[、]{style="font-family:宋体"}[PSNP]{lang="EN-US"}[）中，并对收到的]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[报文进行验证密码的检查]{style="font-family:宋体"}[。当需要更改密码时由于密码不匹配可能导致业务发生中断。通过命令配置对]{style="font-family:宋体"}[收到的]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[报文]{style="font-family:宋体"}[忽略认证信息检查可保证业务不中断，报文正常接收。]{style="font-family:宋体"}
+配置区域验证方式和验证密码后，验证密码将按照设定的方式插入到发送的Level-1报文（包括LSP、CSNP、PSNP）中，并对收到的Level-1报文进行验证密码的检查。当需要更改密码时由于密码不匹配可能导致业务发生中断。通过命令配置对收到的Level-1报文忽略认证信息检查可保证业务不中断，报文正常接收。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x583096949}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x162058953}[对收到报文忽略认证信息检查]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 对收到报文忽略认证信息检查。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x896304253}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] area-authentication send-only]{lang="EN-US"}
+Sysname-isis-1 area-authentication send-only
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1270679499}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[area]{lang="EN-US"}[-authentication-mode]{lang="EN-US"}**]{#struct_0_x1984_13510_2140303358}
+·**area-authentication-mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[domain-authentication send-only]{lang="EN-US"}**]{#struct_0_x1984_13510_x2092973550}
+·**domain-authentication send-only**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[isis authentication send-only]{lang="EN-US"}**]{#struct_0_x1984_13510_1064230045}
-:::
-
-::: {#702106844 .myid}
-[]{#_Toc163546241}[]{#_Toc50204088}[]{#_Toc33866087}[]{#_Toc404788344}[]{#struct_0_x1984_13510_x603260711}[]{#_Toc297189165}[]{#_Toc290886750}[]{#_Toc252200729}[]{#_Toc163546232}[]{#_Toc50204086}[]{#_Toc33866085}[]{#_Toc132011605}[]{#_Toc131910394}[]{#_Toc132011600}[]{#_Toc132011606}[]{#_Toc131910395}[]{#_Toc132011601}[]{#_Toc132011607}
+·**isis authentication send-only**
 
 **IS-IS \-- IS-IS配置命令 \-- area-authentication-mode**
 
 ------------------------------------------------------------------------
 
-[**[area-authentication-mode]{lang="EN-US"}**]{#struct_0_x1984_13510_x1865289536}[命令用来配置区域验证方式和验证密码。]{style="font-family:
-宋体"}
+**[area-authentication-mode**]命令用来配置区域验证方式和验证密码。
 
-[**[undo area-authentication-mode]{lang="EN-US"}**]{#struct_0_x1984_13510_40736322}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo area-authentication-mode**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1341263331}
+【命令】
 
-[**[area-authentication-mode ]{lang="EN-US"}**[{ **gca** *key-id* { **hmac-sha-1** \| **hmac-sha-224** \| **hmac-sha-256** \| **hmac-sha-384** \| **hmac-sha-512** } \| **md5** \| **simple** } { **cipher** *cipher-string* \| **plain** *plain-string* } \[ **ip** \| **osi** \]]{lang="EN-US"}]{#struct_0_x1984_13510_x613627464}
+**[area-authentication-mode **[{ **gca** *key-id* { **hmac-sha-1** \| **hmac-sha-224** \| **hmac-sha-256** \| **hmac-sha-384** \| **hmac-sha-512** } \| **md5** \| **simple** } { **cipher** *cipher-string* \| **plain** *plain-string* } [ **ip** \| **osi** ]]]
 
-[**[undo]{lang="EN-US"}**[ **area-authentication-mode**]{lang="EN-US"}]{#struct_0_x1984_13510_x309962379}[]{#_Hlt7610771}
+**[undo** **area-authentication-mode**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1827796852}
+【缺省情况】
 
-[[系统没有配置区域验证方式和验证密码。]{style="font-family:宋体"}]{#struct_0_x1984_13510_x237185645}
+系统没有配置区域验证方式和验证密码。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2843899}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1024013807}[视图]{style="font-family:宋体"}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2068025777}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1956154969}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x238529912}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1060564302}
+【参数】
 
-[**[gca]{lang="EN-US"}**]{#struct_0_x1984_13510_584730491}[：]{style="font-family:宋体"}[GCA]{lang="EN-US"}[验证模式（]{style="font-family:宋体"}[Generic Cryptographic Authentication]{lang="EN-US"}[）。]{style="font-family:宋体"}
+**[gca**]：GCA验证模式（Generic Cryptographic Authentication）。
 
-[*[key-id]{lang="EN-US"}*]{#struct_0_x1984_13510_2135908490}[：唯一标识一个认证项（]{style="font-family:宋体"}[SA]{lang="EN-US"}[），取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。发送方将]{style="font-family:宋体"}[Key ID]{lang="EN-US"}[放入认证]{style="font-family:宋体"}[TLV]{lang="EN-US"}[中，接收方根据报文中提取的]{style="font-family:宋体"}[Key ID]{lang="EN-US"}[选择]{style="font-family:宋体"}[SA]{lang="EN-US"}[对报文进行认证。]{style="font-family:宋体"}
+*[key-id*]：唯一标识一个认证项（SA），取值范围为1～65535。发送方将Key ID放入认证TLV中，接收方根据报文中提取的Key ID选择SA对报文进行认证。
 
-[**[hmac-sha-1]{lang="EN-US"}**]{#struct_0_x1984_13510_x613693000}[：支持]{style="font-family:宋体"}[HMAC-SHA-1]{lang="EN-US"}[算法。]{style="font-family:宋体"}
+**[hmac-sha-1**]：支持HMAC-SHA-1算法。
 
-[**[hmac-sha-224]{lang="EN-US"}**]{#struct_0_x1984_13510_1768125709}[：支持]{style="font-family:宋体"}[HMAC-SHA-224]{lang="EN-US"}[算法。]{style="font-family:宋体"}
+**[hmac-sha-224**]：支持HMAC-SHA-224算法。
 
-[**[hmac-sha-256]{lang="EN-US"}**]{#struct_0_x1984_13510_1318427315}[：支持]{style="font-family:宋体"}[HMAC-SHA-256]{lang="EN-US"}[算法。]{style="font-family:宋体"}
+**[hmac-sha-256**]：支持HMAC-SHA-256算法。
 
-[**[hmac-sha-384]{lang="EN-US"}**]{#struct_0_x1984_13510_x2101839557}[：支持]{style="font-family:宋体"}[HMAC-SHA-384]{lang="EN-US"}[算法。]{style="font-family:宋体"}
+**[hmac-sha-384**]：支持HMAC-SHA-384算法。
 
-[**[hmac-sha-512]{lang="EN-US"}**]{#struct_0_x1984_13510_x1900467694}[：支持]{style="font-family:宋体"}[HMAC-SHA-512]{lang="EN-US"}[算法。]{style="font-family:宋体"}
+**[hmac-sha-512**]：支持HMAC-SHA-512算法。
 
-[**[md5]{lang="EN-US"}**]{#struct_0_x1984_13510_1711275156}[：]{style="font-family:宋体"}[MD5]{lang="EN-US"}[验证模式]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[md5**]：MD5验证模式。
 
-[**[simple]{lang="EN-US"}**]{#struct_0_x1984_13510_x1854774468}[：简单验证模式。]{style="font-family:宋体"}
+**[simple**]：简单验证模式。
 
-[**[cipher]{lang="EN-US"}**]{#struct_0_x1984_13510_x1625811739}[：表示输入的密码为密文。]{style="font-family:宋体"}
+**[cipher**]：表示输入的密码为密文。
 
-[*[cipher-string]{lang="EN-US"}*]{#struct_0_x1984_13510_x1679439593}[：表示设置的密文密码，为]{style="font-family:宋体"}[33]{lang="EN-US"}[～]{style="font-family:宋体"}[53]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[cipher-string*]：表示设置的密文密码，为33～53个字符的字符串，区分大小写。
 
-[**[plain]{lang="EN-US"}**]{#struct_0_x1984_13510_x1400233838}[：表示输入的密码为明文。]{style="font-family:宋体"}
+**[plain**]：表示输入的密码为明文。
 
-[*[plain-string]{lang="EN-US"}*]{#struct_0_x1984_13510_938620160}[：表示设置的明文密码，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[16]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[plain-string*]：表示设置的明文密码，为1～16个字符的字符串，区分大小写。
 
-[]{#_Hlt9932887}[**[ip]{lang="EN-US"}**]{#struct_0_x1984_13510_2037385687}[：检查]{style="font-family:宋体"}[LSP]{lang="EN-US"}[中]{style="font-family:宋体"}[IP]{lang="EN-US"}[的相应字段的配置内容。]{style="font-family:宋体"}
+**[ip**]：检查LSP中IP的相应字段的配置内容。
 
-[**[osi]{lang="EN-US"}**]{#struct_0_x1984_13510_139772152}[：检查]{style="font-family:宋体"}[LSP]{lang="EN-US"}[中]{style="font-family:宋体"}[OSI]{lang="EN-US"}[的相应字段的配置内容。]{style="font-family:宋体"}
+**[osi**]：检查LSP中OSI的相应字段的配置内容。
 
-[]{#struct_0_x1984_13510_x1292115021}[]{#_Hlt7610887}[【使用指导】]{style="font-family:黑体"}
+【使用指导】
 
-[[配置区域验证方式和验证密码后，验证密码将按照设定的方式插入到发送的]{style="font-family:宋体"}[Level-1]{lang="EN-US"}]{#struct_0_x1984_13510_x309569163}[报文（包括]{style="font-family:宋体"}[LSP]{lang="EN-US"}[、]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[、]{style="font-family:宋体"}[PSNP]{lang="EN-US"}[）中，并对收到的]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[报文进行验证密码的检查。]{style="font-family:宋体"}
+配置区域验证方式和验证密码后，验证密码将按照设定的方式插入到发送的Level-1报文（包括LSP、CSNP、PSNP）中，并对收到的Level-1报文进行验证密码的检查。
 
-[[通过配置区域验证，可防止将从不可信任的路由器学习到的路由信息加入到本地]{style="font-family:宋体"}[LSDB]{lang="EN-US"}]{#struct_0_x1984_13510_2038172344}[中。]{style="font-family:宋体"}
+通过配置区域验证，可防止将从不可信任的路由器学习到的路由信息加入到本地LSDB中。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x1984_13510_686485867}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[同一区域内的路由器必须配置相同的验证方式和验证密码。]{style="font-family:宋体"}]{#struct_0_x1984_13510_x338652554}
+·同一区域内的路由器必须配置相同的验证方式和验证密码。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果没有指定]{style="font-family:宋体"}]{#struct_0_x1984_13510_x30553074}**[ip]{lang="EN-US"}**[或]{style="font-family:宋体"}**[osi]{lang="EN-US"}**[参数，将检查]{style="font-family:宋体"}[LSP]{lang="EN-US"}[中]{style="font-family:宋体"}[OSI]{lang="EN-US"}[的相应字段的配置内容。]{style="font-family:宋体"}
+·如果没有指定**ip**或**osi**参数，将检查LSP中OSI的相应字段的配置内容。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[以明文或密文方式设置的验证密码，均以密文的方式保存在配置文件中。]{style="font-family:宋体"}]{#struct_0_x1984_13510_x779685561}
+·以明文或密文方式设置的验证密码，均以密文的方式保存在配置文件中。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[认证密码选用]{style="font-family:宋体"}]{#struct_0_x1984_13510_x2030280557}**[ip]{lang="EN-US"}**[或]{style="font-family:宋体"}**[osi]{lang="EN-US"}**[不受实际的网络环境影响。]{style="font-family:宋体"}
+·认证密码选用**ip**或**osi**不受实际的网络环境影响。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x686194767}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x412346672}[在]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[下配置区域采用简单明文验证模式，验证密码为]{style="font-family:宋体"}[123456]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在IS-IS进程1下配置区域采用简单明文验证模式，验证密码为123456。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x310027914}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] area-authentication-mode simple plain 123456]{lang="EN-US"}
+Sysname-isis-1 area-authentication-mode simple plain 123456
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x355383725}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[area-authentication send-only]{lang="EN-US"}**]{#struct_0_x1984_13510_x613496392}
+·**area-authentication send-only**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[domain-authentication-mode]{lang="EN-US"}**]{#struct_0_x1984_13510_355570777}
+·**domain-authentication-mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}]{#struct_0_x1984_13510_x2098926471}**[isis]{lang="EN-US"}[ authentication-mode]{lang="EN-US"}**
-:::
-
-::: {#-275634315 .myid}
-[]{#_Toc404788345}[]{#struct_0_x1984_13510_887822978}[]{#_Toc303839426}[]{#_Toc252200730}[]{#_Toc163546233}
+·**isis authentication-mode**
 
 **IS-IS \-- IS-IS配置命令 \-- auto-cost enable**
 
 ------------------------------------------------------------------------
 
-[**[auto-cost enable]{lang="EN-US"}**]{#struct_0_x1984_13510_x86231705}[命令用来使能自动计算接口链路开销值功能。]{style="font-family:宋体"}
+**[auto-cost enable**]命令用来使能自动计算接口链路开销值功能。
 
-[**[undo auto-cost enable]{lang="EN-US"}**]{#struct_0_x1984_13510_1298420005}[命令用来关闭自动计算接口链路开销值功能。]{style="font-family:宋体"}
+**[undo auto-cost enable**]命令用来关闭自动计算接口链路开销值功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_280975401}
+【命令】
 
-[**[auto-cost enable]{lang="EN-US"}**]{#struct_0_x1984_13510_x310093450}
+**[auto-cost enable**]
 
-[**[undo auto-cost enable]{lang="EN-US"}**]{#struct_0_x1984_13510_23032803}
+**[undo auto-cost enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1666651082}
+【缺省情况】
 
-[[自动计算接口链路开销值功能处于关闭状态。]{style="font-family:宋体"}]{#struct_0_x1984_13510_1718077484}
+自动计算接口链路开销值功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x826312265}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_2022304307}[视图]{style="font-family:宋体"}[/IS-IS IPv4]{lang="EN-US"}[单播拓扑视图]{style="font-family:宋体"}
+IS-IS视图/IS-IS IPv4单播拓扑视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x164539312}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1034817303}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x203138892}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x310158986}
+【使用指导】
 
-[[使能自动计算接口链路开销值功能后，将根据带宽参考值自动计算接口的链路度量值。当开销值的类型为]{style="font-family:宋体"}**[wide]{lang="EN-US"}**]{#struct_0_x1984_13510_1573943018}[或]{style="font-family:宋体"}**[wide-compatible]{lang="EN-US"}**[时，可以根据公式"开销]{style="font-family:宋体"}[=]{lang="EN-US"}[（参考值÷带宽）×]{style="font-family:宋体"}[10]{lang="EN-US"}["]{style="font-family:宋体"}[计算接口的链路度量值。当开销值类型为其他类型时，具体情况如下：接口带宽]{style="font-family:宋体"}[≤]{style="font-family:宋体"}[10Mbps]{lang="EN-US"}[时，值为]{style="font-family:宋体"}[60]{lang="EN-US"}[；接口带宽]{style="font-family:宋体"}[≤]{style="font-family:宋体"}[100Mbps]{lang="EN-US"}[时，值为]{style="font-family:宋体"}[50]{lang="EN-US"}[；接口带宽]{style="font-family:宋体"}[≤]{style="font-family:宋体"}[155Mbps]{lang="EN-US"}[时，值为]{style="font-family:宋体"}[40]{lang="EN-US"}[；接口带宽]{style="font-family:宋体"}[≤]{style="font-family:宋体"}[622Mbps]{lang="EN-US"}[时，值为]{style="font-family:宋体"}[30]{lang="EN-US"}[；接口带宽]{style="font-family:宋体"}[≤]{style="font-family:宋体"}[2500Mbps]{lang="EN-US"}[时，值为]{style="font-family:宋体"}[20]{lang="EN-US"}[；接口带宽]{style="font-family:宋体"}[\>2500Mbps]{lang="EN-US"}[时，值为]{style="font-family:宋体"}[10]{lang="EN-US"}[。]{style="font-family:宋体"}
+使能自动计算接口链路开销值功能后，将根据带宽参考值自动计算接口的链路度量值。当开销值的类型为**wide**或**wide-compatible**时，可以根据公式"开销=（参考值÷带宽）×10"计算接口的链路度量值。当开销值类型为其他类型时，具体情况如下：接口带宽≤10Mbps时，值为60；接口带宽≤100Mbps时，值为50；接口带宽≤155Mbps时，值为40；接口带宽≤622Mbps时，值为30；接口带宽≤2500Mbps时，值为20；接口带宽\>2500Mbps时，值为10。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1089886087}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1318158081}[使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[的自动计算接口链路开销值功能。]{style="font-family:宋体"}
+\# 使能IS-IS进程1的自动计算接口链路开销值功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_966738086}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] auto-cost enable]{lang="EN-US"}
+Sysname-isis-1 auto-cost enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1275621880}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[bandwidth-reference]{lang="EN-US"}**]{#struct_0_x1984_13510_1129431090}
+·**bandwidth-reference**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[cost-style]{lang="EN-US"}**]{#struct_0_x1984_13510_x420239362}
+·**cost-style**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[isis cost]{lang="EN-US"}**]{#struct_0_x1984_13510_x310224522}
-:::
-
-::: {#1475841160 .myid}
-[]{#_Toc404788346}[]{#struct_0_x1984_13510_6136933}[]{#_Toc303839427}[]{#_Toc252200731}[]{#_Toc163546234}
+·**isis cost**
 
 **IS-IS \-- IS-IS配置命令 \-- bandwidth-reference**
 
 ------------------------------------------------------------------------
 
-[**[bandwidth-reference]{lang="EN-US"}**]{#struct_0_x1984_13510_x1281459941}[命令用来配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[自动计算链路开销值时依据的带宽参考值。]{style="font-family:宋体"}
+**[bandwidth-reference**]命令用来配置IS-IS自动计算链路开销值时依据的带宽参考值。
 
-[**[undo]{lang="EN-US"}**[ **bandwidth-reference**]{lang="EN-US"}]{#struct_0_x1984_13510_x1612173271}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **bandwidth-reference**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_566823401}
+【命令】
 
-[**[bandwidth-reference]{lang="EN-US"}**[ *value*]{lang="EN-US"}]{#struct_0_x1984_13510_1909724534}
+**[bandwidth-reference** *value*]
 
-[**[undo bandwidth-reference]{lang="EN-US"}**]{#struct_0_x1984_13510_1151989240}
+**[undo bandwidth-reference**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1239526357}
+【缺省情况】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x564460374}[自动计算链路度量值时依据的带宽参考值为]{style="font-family:宋体"}[100Mbps]{lang="EN-US"}[。]{style="font-family:宋体"}
+IS-IS自动计算链路度量值时依据的带宽参考值为100Mbps。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x309765770}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x669697909}[视图]{style="font-family:宋体"}[/IS-IS IPv4]{lang="EN-US"}[单播拓扑视图]{style="font-family:宋体"}
+IS-IS视图/IS-IS IPv4单播拓扑视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1460097474}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x539327474}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1809548409}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1719846943}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_x1984_13510_x1643975338}[：带宽参考值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[2147483648]{lang="EN-US"}[，单位为]{style="font-family:宋体"}[Mbps]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[value*]：带宽参考值，取值范围为1～2147483648，单位为Mbps。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1967768980}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_892868403}[配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[的带宽参考值为]{style="font-family:宋体"}[200Mbps]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置IS-IS进程1的带宽参考值为200Mbps。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x309831306}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] bandwidth-reference 200]{lang="EN-US"}
+Sysname-isis-1 bandwidth-reference 200
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2049205889}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[auto-cost enable]{lang="EN-US"}**]{#struct_0_x1984_13510_x1287595702}
+·**auto-cost enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[isis cost]{lang="EN-US"}**]{#struct_0_x1984_13510_x401575468}
-:::
-
-::: {#188490618 .myid}
-[]{#_Toc404788347}[]{#struct_0_x1984_13510_x50317236}[]{#_Toc303839428}[]{#_Toc252200732}[]{#_Toc163546235}
+·**isis cost**
 
 **IS-IS \-- IS-IS配置命令 \-- circuit-cost**
 
 ------------------------------------------------------------------------
 
-[**[circuit-cost]{lang="EN-US"}**]{#struct_0_x1984_13510_429918118}[命令用来全局配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的链路开销值。]{style="font-family:宋体"}
+**[circuit-cost**]命令用来全局配置IS-IS的链路开销值。
 
-[**[undo circuit-cost]{lang="EN-US"}**]{#struct_0_x1984_13510_267439798}[命令用来取消该配置。]{style="font-family:宋体"}
+**[undo circuit-cost**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1569418993}
+【命令】
 
-[**[circuit-cost]{lang="EN-US"}**[ *value* \[ **level-1** \| **level-2** \]]{lang="EN-US"}]{#struct_0_x1984_13510_x309896842}
+**[circuit-cost**[ *value* [ **level-1** \| **level-2** ]]]
 
-[**[undo circuit-cost]{lang="EN-US"}**[ \[ **level-1** \| **level-2** \]]{lang="EN-US"}]{#struct_0_x1984_13510_x337061096}
+**[undo circuit-cost**[ [ **level-1** \| **level-2** ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1013420789}
+【缺省情况】
 
-[[没有全局配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1917959808}[的链路开销值。]{style="font-family:宋体"}
+没有全局配置IS-IS的链路开销值。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1783182395}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x1444114925}[视图]{style="font-family:宋体"}[/IS-IS IPv4]{lang="EN-US"}[单播拓扑视图]{style="font-family:宋体"}
+IS-IS视图/IS-IS IPv4单播拓扑视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1585459656}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_2060469933}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1776621461}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x309962378}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_x1984_13510_x1827862388}[：链路开销值，当指定的路径开销值类型不同时，取值范围也不同：]{style="font-family:宋体"}
+*[value*]：链路开销值，当指定的路径开销值类型不同时，取值范围也不同：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当指定的路径开销值类型为]{lang="EN-US" style="font-family:宋体"}**[narrow]{lang="EN-US"}**]{#struct_0_x1984_13510_1607436415}[、]{lang="EN-US" style="font-family:宋体"}**[narrow-compatibl]{lang="EN-US"}**[e]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}**[compatible]{lang="EN-US"}**[时，取值范围为]{lang="EN-US" style="font-family:宋体"}[0]{lang="EN-US"}[～]{lang="EN-US" style="font-family:宋体"}[63]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·当指定的路径开销值类型为**narrow**、**narrow-compatibl**e或**compatible**时，取值范围为0～63。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当指定的路径开销值类型为]{lang="EN-US" style="font-family:宋体"}**[wide]{lang="EN-US"}**]{#struct_0_x1984_13510_1014434972}[或]{lang="EN-US" style="font-family:宋体"}**[wide-compatible]{lang="EN-US"}**[时，取值范围为]{lang="EN-US" style="font-family:宋体"}[0]{lang="EN-US"}[～]{lang="EN-US" style="font-family:宋体"}[16777215]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·当指定的路径开销值类型为**wide**或**wide-compatible**时，取值范围为0～16777215。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_127522570}[：配置在计算]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[路由时使用的链路开销值。]{style="font-family:宋体"}
+**[level-1**]：配置在计算Level-1路由时使用的链路开销值。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_x505375974}[：配置在计算]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[路由时使用的链路开销值。]{style="font-family:宋体"}
+**[level-2**]：配置在计算Level-2路由时使用的链路开销值。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1472215072}
+【使用指导】
 
-[[如果不指定级别，将同时配置计算]{style="font-family:宋体"}[Level-1]{lang="EN-US"}]{#struct_0_x1984_13510_x511339749}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[路由时使用的链路开销值。]{style="font-family:宋体"}
+如果不指定级别，将同时配置计算Level-1和Level-2路由时使用的链路开销值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_247005844}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x309503626}[全局配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[下所有接口在计算]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[路由时的链路开销值为]{style="font-family:宋体"}[11]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 全局配置IS-IS进程1下所有接口在计算Level-1路由时的链路开销值为11。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x1823376218}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] circuit-cost 11 level-1]{lang="EN-US"}
+Sysname-isis-1 circuit-cost 11 level-1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1545789563}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[cost-style]{lang="EN-US"}**]{#struct_0_x1984_13510_82856413}
+·**cost-style**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[isis cost]{lang="EN-US"}**]{#struct_0_x1984_13510_x601105129}
-:::
-
-::: {#-1846795298 .myid}
-[]{#_Toc404788348}[]{#struct_0_x1984_13510_x1768343577}[]{#_Toc303839429}[]{#_Toc252200733}[]{#_Toc163546236}[]{#_Toc65038638}[]{#_Toc58333218}[]{#_Toc58294863}[]{#_Toc42309485}
+·**isis cost**
 
 **IS-IS \-- IS-IS配置命令 \-- cost-style**
 
 ------------------------------------------------------------------------
 
-[**[cost-style]{lang="EN-US"}**]{#struct_0_x1984_13510_760047997}[命令用来配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[开销值的类型，即]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[接收和发送的报文中到达目的地路径开销值的类型。]{style="font-family:宋体"}
+**[cost-style**]命令用来配置IS-IS开销值的类型，即IS-IS接收和发送的报文中到达目的地路径开销值的类型。
 
-[**[undo cost-style]{lang="EN-US"}**]{#struct_0_x1984_13510_x1362222355}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo cost-style**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x309569162}
+【命令】
 
-[**[cost-style]{lang="EN-US"}**[ { **narrow** \| **wide** \| **wide-compatible** \| { **compatible** \| **narrow-compatible** } \[ **relax-spf-limit** \] }]{lang="EN-US"}]{#struct_0_x1984_13510_2038106808}
+**[cost-style**[ { **narrow** \| **wide** \| **wide-compatible** \| { **compatible** \| **narrow-compatible** } [ **relax-spf-limit** ] }]]
 
-[**[undo cost-style]{lang="EN-US"}**]{#struct_0_x1984_13510_x2051334397}
+**[undo cost-style**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1576588190}
+【缺省情况】
 
-[[只接收和发送采用]{style="font-family:宋体"}**[narrow]{lang="EN-US"}**]{#struct_0_x1984_13510_x2116513902}[方式表示路径开销值的报文。]{style="font-family:宋体"}
+只接收和发送采用**narrow**方式表示路径开销值的报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x416174222}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x308501372}[视图]{style="font-family:宋体"}[]{#_Hlt24184665}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_893806049}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1397436077}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x310027917}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x355449261}
+【参数】
 
-[**[narrow]{lang="EN-US"}**]{#struct_0_x1984_13510_x820698420}[：表示只可以接收和发送采用]{style="font-family:宋体"}**[narrow]{lang="EN-US"}**[方式（取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[）表示到达目的地路径开销的报文。]{style="font-family:宋体"}
+**[narrow**]：表示只可以接收和发送采用**narrow**方式（取值范围为0～63）表示到达目的地路径开销的报文。
 
-[**[wide]{lang="EN-US"}**]{#struct_0_x1984_13510_x717117840}[：表示只可以接收和发送采用]{style="font-family:宋体"}**[wide]{lang="EN-US"}**[方式（取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[16777215]{lang="EN-US"}[）表示到达目的地路径开销的报文。]{style="font-family:宋体"}
+**[wide**]：表示只可以接收和发送采用**wide**方式（取值范围为0～16777215）表示到达目的地路径开销的报文。
 
-[**[compatible]{lang="EN-US"}**]{#struct_0_x1984_13510_1664763568}[：表示可以接收和发送采用]{style="font-family:宋体"}**[narrow]{lang="EN-US"}**[和]{style="font-family:宋体"}**[wide]{lang="EN-US"}**[方式表示到达目的地路径开销的报文。]{style="font-family:宋体"}
+**[compatible**]：表示可以接收和发送采用**narrow**和**wide**方式表示到达目的地路径开销的报文。
 
-[**[narrow-compatible]{lang="EN-US"}**]{#struct_0_x1984_13510_1427419445}[：表示可以接收采用]{style="font-family:宋体"}**[narrow]{lang="EN-US"}**[和]{style="font-family:宋体"}**[wide]{lang="EN-US"}**[方式表示到达目的地路径开销的报文，却只能发送采用]{style="font-family:宋体"}**[narrow]{lang="EN-US"}**[方式表示到达目的地路径开销的报文。]{style="font-family:宋体"}
+**[narrow-compatible**]：表示可以接收采用**narrow**和**wide**方式表示到达目的地路径开销的报文，却只能发送采用**narrow**方式表示到达目的地路径开销的报文。
 
-[**[wide-compatible]{lang="EN-US"}**]{#struct_0_x1984_13510_x1502130997}[：表示可以接收采用]{style="font-family:宋体"}**[narrow]{lang="EN-US"}**[和]{style="font-family:宋体"}**[wide]{lang="EN-US"}**[方式表示到达目的地路径开销的报文，却只能发送采用]{style="font-family:宋体"}**[wide]{lang="EN-US"}**[方式表示到达目的地路径开销的报文。]{style="font-family:宋体"}
+**[wide-compatible**]：表示可以接收采用**narrow**和**wide**方式表示到达目的地路径开销的报文，却只能发送采用**wide**方式表示到达目的地路径开销的报文。
 
-[**[relax-spf-limit]{lang="EN-US"}**]{#struct_0_x1984_13510_x409427327}[：表示允许接收到达目的地路径开销值大于]{style="font-family:宋体"}[1023]{lang="EN-US"}[的报文。如果不指定该参数，则在收到开销值大于]{style="font-family:宋体"}[1023]{lang="EN-US"}[的报文时，将丢弃。只有当指定了]{style="font-family:宋体"}**[compatible]{lang="EN-US"}**[或]{style="font-family:宋体"}**[narrow-compatible]{lang="EN-US"}**[时该参数可选。]{style="font-family:宋体"}
+**[relax-spf-limit**]：表示允许接收到达目的地路径开销值大于1023的报文。如果不指定该参数，则在收到开销值大于1023的报文时，将丢弃。只有当指定了**compatible**或**narrow-compatible**时该参数可选。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1009627339}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x310093453}[配置路由器可以接收采用]{style="font-family:宋体"}**[narrow]{lang="EN-US"}**[或]{style="font-family:宋体"}**[wide]{lang="EN-US"}**[方式表示路由开销值的报文，却只能发送采用]{style="font-family:宋体"}**[narrow]{lang="EN-US"}**[方式表示路由开销值的报文。]{style="font-family:宋体"}
+\# 配置路由器可以接收采用**narrow**或**wide**方式表示路由开销值的报文，却只能发送采用**narrow**方式表示路由开销值的报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_22836195}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] cost-style narrow-compatible]{lang="EN-US"}
+Sysname-isis-1 cost-style narrow-compatible
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x842451175}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[circuit-cost]{lang="EN-US"}**]{#struct_0_x1984_13510_423724526}
+·**circuit-cost**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[isis cost]{lang="EN-US"}**]{#struct_0_x1984_13510_767146329}
-:::
-
-::: {#225668895 .myid}
-[]{#_Toc404788349}[]{#struct_0_x1984_13510_x906588368}[]{#_Toc290886755}[]{#_Toc252200734}[]{#_Toc163546237}
+·**isis cost**
 
 **IS-IS \-- IS-IS配置命令 \-- default-route-advertise**
 
 ------------------------------------------------------------------------
 
-[**[default-route-advertise]{lang="EN-US"}**]{#struct_0_x1984_13510_x657418723}[命令用来配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[发布]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[或]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[级别的缺省路由，即在指定级别的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[中宣告目的地为]{style="font-family:宋体"}[0.0.0]{lang="EN-US"}[.0/0]{lang="EN-US"}[的路径信息。]{style="font-family:
-宋体"}
+**[default-route-advertise**]命令用来配置IS-IS发布Level-1或Level-2级别的缺省路由，即在指定级别的LSP中宣告目的地为0.0.0.0/0的路径信息。
 
-[**[undo default-route-advertise]{lang="EN-US"}**]{#struct_0_x1984_13510_x1778542750}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo default-route-advertise**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x310158989}
+【命令】
 
-[**[default-route-advertise ]{lang="EN-US"}**[\[ **avoid-learning** \| \[ **level-1** \| **level-1-2** \| **level-2** \] \| **route-policy** *route-policy-name* \| **tag** *tag* \] \*]{lang="EN-US"}]{#struct_0_x1984_13510_1573222122}
+**[default-route-advertise **[[ **avoid-learning** \| [ **level-1** \| **level-1-2** \| **level-2** ] \| **route-policy** *route-policy-name* \| **tag** *tag* ] \*]]
 
-[**[undo default-route-advertise]{lang="EN-US"}**]{#struct_0_x1984_13510_x703324548}
+**[undo default-route-advertise**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_616153992}
+【缺省情况】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1980433731}[不发布]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[或]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[级别的缺省路由。]{style="font-family:宋体"}
+IS-IS不发布Level-1或Level-2级别的缺省路由。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_763494996}
+【视图】
 
-[[IS-IS IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_x974312260}[单播地址族视图]{style="font-family:宋体"}[/IS-IS IPv4]{lang="EN-US"}[单播拓扑视图]{style="font-family:宋体"}
+IS-IS IPv4单播地址族视图/IS-IS IPv4单播拓扑视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1515252570}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1151656909}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x310224525}
+mdc-admin
 
-[[【参数】]{style="font-family:
-黑体"}]{#struct_0_x1984_13510_6071397}
+【参数】
 
-[**[avoid-learning]{lang="EN-US"}**]{#struct_0_x1984_13510_1896974953}[：禁止学习通过]{style="font-family:宋体"}[LSP]{lang="EN-US"}[发过来的缺省路由和]{style="font-family:宋体"}[ATT]{lang="EN-US"}[位产生的缺省路由，防止出现环路。]{style="font-family:宋体"}
+**[avoid-learning**]：禁止学习通过LSP发过来的缺省路由和ATT位产生的缺省路由，防止出现环路。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_x184128663}[：发布]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[级别的缺省路由。]{style="font-family:宋体"}
+**[level-1**]：发布Level-1级别的缺省路由。
 
-[**[level-1-2]{lang="EN-US"}**]{#struct_0_x1984_13510_x1929797751}[：同时发布]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[级别的缺省路由。]{style="font-family:宋体"}
+**[level-1-2**]：同时发布Level-1和Level-2级别的缺省路由。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_x1573764344}[：发布]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[级别的缺省路由。]{style="font-family:宋体"}
+**[level-2**]：发布Level-2级别的缺省路由。
 
-[**[route-policy]{lang="EN-US"}***[ route-policy-name]{lang="EN-US"}*]{#struct_0_x1984_13510_864237193}[：指定路由策略名。]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[route-policy*** route-policy-name*]：指定路由策略名。*route-policy-name*为1～63个字符的字符串，区分大小写。
 
-[**[tag ]{lang="EN-US"}***[tag]{lang="EN-US"}*]{#struct_0_x1984_13510_1896974952}[：配置缺省路由]{style="font-family:宋体"}[Tag]{lang="EN-US"}[值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[tag ***tag*]：配置缺省路由Tag值，取值范围为1～4294967295。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2015309223}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果不指定级别，则默认发布]{style="font-family:宋体"}]{#struct_0_x1984_13510_x570158323}[Level-2]{lang="EN-US"}[级别的缺省路由。]{style="font-family:宋体"}
+·如果不指定级别，则默认发布Level-2级别的缺省路由。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Level-1]{lang="EN-US"}]{#struct_0_x1984_13510_1018715429}[缺省路由只发布给本区域的其他路由器，]{lang="EN-US" style="font-family:宋体"}[Level-2]{lang="EN-US"}[缺省路由发布给所有]{lang="EN-US" style="font-family:宋体"}[Level-2]{lang="EN-US"}[和]{lang="EN-US" style="font-family:宋体"}[Level-1-2]{lang="EN-US"}[路由器。]{lang="EN-US" style="font-family:宋体"}
+·Level-1缺省路由只发布给本区域的其他路由器，Level-2缺省路由发布给所有Level-2和Level-1-2路由器。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果在路由策略视图中]{lang="EN-US" style="font-family:宋体"}**[apply isis level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_x309765773}[，则可以在]{lang="EN-US" style="font-family:
-宋体"}[L1 LSP]{lang="EN-US"}[中生成缺省路由；如果在路由策略视图中]{lang="EN-US" style="font-family:宋体"}**[apply isis level-2]{lang="EN-US"}**[，则可以在]{lang="EN-US" style="font-family:宋体"}[L2 LSP]{lang="EN-US"}[中生成缺省路由；如果在路由策略视图中]{lang="EN-US" style="font-family:宋体"}**[apply isis level-1-2]{lang="EN-US"}**[，可以在]{lang="EN-US" style="font-family:
-宋体"}[L1 LSP]{lang="EN-US"}[、]{lang="EN-US" style="font-family:
-宋体"}[L2 LSP]{lang="EN-US"}[中各自生成缺省路由。]{lang="EN-US" style="font-family:
-宋体"}
+·如果在路由策略视图中**apply isis level-1**，则可以在L1 LSP中生成缺省路由；如果在路由策略视图中**apply isis level-2**，则可以在L2 LSP中生成缺省路由；如果在路由策略视图中**apply isis level-1-2**，可以在L1 LSP、L2 LSP中各自生成缺省路由。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果在路由策略中指定了]{lang="EN-US" style="font-family:宋体"}[Tag]{lang="EN-US"}]{#struct_0_x1984_13510_x848156169}[值，则本命令中的]{lang="EN-US" style="font-family:宋体"}[Tag]{lang="EN-US"}[值不生效。]{lang="EN-US" style="font-family:宋体"}
+·如果在路由策略中指定了Tag值，则本命令中的Tag值不生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x669763445}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x790003909}[配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[发布]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[级别缺省路由。]{style="font-family:宋体"}
+\# 配置IS-IS进程1发布Level-2级别缺省路由。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x407058577}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv4]{lang="EN-US"}
+Sysname-isis-1 address-family ipv4
 
-[\[Sysname-isis-1-ipv4\] default-route-advertise]{lang="EN-US"}
-:::
-
-::::: {#-499535309 .myid}
-[]{#_Toc303839431}[]{#_Toc81626540}[]{#_Toc404788350}[]{#struct_0_x1984_13510_x1984129709}[]{#_Toc318209355}
+Sysname-isis-1-ipv4 default-route-advertise
 
 **IS-IS \-- IS-IS配置命令 \-- display isis**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IS-IS命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1984_13510_x1484266072}
-:::
+![说明](IS-IS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1984_13510_1954456295}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[display isis**]命令用来显示IS-IS的进程信息。
 
-[**[display isis]{lang="EN-US"}**]{#struct_0_x1984_13510_x309831309}[命令用来显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的进程信息。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2049795713}
+**[display isis ** *process-id* ]
 
-[**[display isis ]{lang="EN-US"}**[\[ *process-id* \]]{lang="EN-US"}]{#struct_0_x1984_13510_135965507}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1455401650}
+任意视图
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x309896845}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x337257704}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1368816608}
+network-operator
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1984_13510_x38230802}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1564647347}
+mdc-operator
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1984_13510_x1759607870}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_171329624}
+*[process-id*]：IS-IS进程号，取值范围为1～65535，显示指定IS-IS进程的进程信息。如果未指定本参数，将显示所有IS-IS进程的进程信息。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_x1984_13510_1964764832}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，显示指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的进程信息。]{style="font-family:宋体"}[如果未指定本参数，将显示所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的]{style="font-family:宋体"}[进程]{style="font-family:宋体"}[信息。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_297529287}
+\# 显示IS-IS的进程信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1168511349}[显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的进程信息。]{style="font-family:宋体"}
+\<Sysname\> display isis
 
-[[\<Sysname\> display isis]{lang="EN-US"}]{#struct_0_x1984_13510_x613693003}
+          IS-IS(1) Protocol Information
 
-[ ]{lang="EN-US"}
+Network-entity                 : 10.0000.0000.0001.00
 
-[          IS-IS(1) Protocol Information]{lang="EN-US"}
+IS-level                       : level-1-2
 
-[ ]{lang="EN-US"}
+Cost-style                     : Wide
 
-[Network-entity                 : 10.0000.0000.0001.00]{lang="EN-US"}
+Fast reroute                   : Disabled
 
-[IS-level                       : level-1-2]{lang="EN-US"}
+Preference                     : 15
 
-[Cost-style                     : Wide]{lang="EN-US"}
+LSP-length receive             : 1497
 
-[Fast reroute                   : Disabled]{lang="EN-US"}
+LSP-length originate
 
-[Preference                     : 15]{lang="EN-US"}
+    level-1                    : 1497
 
-[LSP-length receive             : 1497]{lang="EN-US"}
+    level-2                    : 1497
 
-[LSP-length originate]{lang="EN-US"}
+Maximum imported routes        : 1000
 
-[    level-1                    : 1497]{lang="EN-US"}
+Timers
 
-[    level-2                    : 1497]{lang="EN-US"}
+    LSP-max-age                : 1200
 
-[Maximum imported routes        : 1000]{lang="EN-US"}
+    LSP-refresh                : 900
 
-[Timers]{lang="EN-US"}
+    SPF intervals              : 5 50 200
 
-[    LSP-max-age                : 1200]{lang="EN-US"}
+IPv6 enabled
 
-[    LSP-refresh                : 900]{lang="EN-US"}
+    Multi-topology             : Standard
 
-[    SPF intervals              : 5 50 200]{lang="EN-US"}
+    Preference                 : 15
 
-[IPv6 enabled]{lang="EN-US"}
+    Maximum imported routes    : 1000
 
-[    Multi-topology             : Standard]{lang="EN-US"}
+    SPF intervals              : 5 50 200
 
-[    Preference                 : 15]{lang="EN-US"}
+IPv4-Unicast                   :
 
-[    Maximum imported routes    : 1000]{lang="EN-US"}
+  Topology red
 
-[    SPF intervals              : 5 50 200]{lang="EN-US"}
+    Topology ID                : 6
 
-[IPv4-Unicast                   :]{lang="EN-US"}
+    Preference                 : 15
 
-[  Topology red]{lang="EN-US"}
+    Maximum imported routes    : 1000000
 
-[    Topology ID                : 6]{lang="EN-US"}
+    SPF intervals              : 5 50 200
 
-[    Preference                 : 15]{lang="EN-US"}
+    Overload status            : Overloaded manually
 
-[    Maximum imported routes    : 1000000]{lang="EN-US"}
+表1-1 display isis显示信息描述表
 
-[    SPF intervals              : 5 50 200]{lang="EN-US"}
+字段
 
-[[    Overload status            : Overloaded manually]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1984_13510_1768060173}
+描述
 
-[[表1-1 ]{lang="EN-US"}[display isis]{lang="EN-US"}]{#struct_0_x1984_13510_x1824228186}[显示信息描述表]{style="font-family:黑体"}
+Network-entity
 
-[]{#table_struct_0_x1781451229}[[字段]{style="font-family:黑体"}]{#struct_0_x1984_13510_x613496395}
-:::::
+网络实体名称
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1984_13510_x613561931}
+IS-level
 
-[[Network-entity]{lang="EN-US"}]{#struct_0_x1984_13510_x906928669}
+路由器类型
 
-[[网络实体名称]{style="font-family:宋体"}]{#struct_0_x1984_13510_2051708569}
+Cost-style
 
-[[IS-level]{lang="EN-US"}]{#struct_0_x1984_13510_x613365323}
+开销类型
 
-[[路由器类型]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1729417174}
+Fast reroute
 
-[[Cost-style]{lang="EN-US"}]{#struct_0_x1984_13510_x1086929689}
+是否使能快速重路由功能：
 
-[[开销类型]{style="font-family:宋体"}]{#struct_0_x1984_13510_x402211042}
+·Disabled：表示未使能
 
-[[Fast reroute]{lang="EN-US"}]{#struct_0_x1984_13510_x613430859}
+·Auto：表示自动选取备份下一跳
 
-[[是否使能快速重路由功能：]{style="font-family:宋体"}]{#struct_0_x1984_13510_x145435999}
+·Route-policy：表示通过路由策略来指定备份下一跳
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[D]{lang="EN-US"}[isable]{lang="EN-US"}]{#struct_0_x1984_13510_827306884}[d]{lang="EN-US"}[：表示未使能]{style="font-family:宋体"}
+Preference
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Auto]{lang="EN-US"}]{#struct_0_x1984_13510_x613234251}[：表示自动选取备份下一跳]{style="font-family:宋体"}
+路由优先级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Route-policy]{lang="EN-US"}]{#struct_0_x1984_13510_x613299787}[：]{style="font-family:宋体"}[表示]{lang="EN-US" style="font-family:宋体"}[通过路由]{style="font-family:宋体"}[策略]{lang="EN-US" style="font-family:宋体"}[来指定备份下一跳]{style="font-family:宋体"}
+LSP-length receive
 
-[[Preference]{lang="EN-US"}]{#struct_0_x1984_13510_1330512431}
+可以接收LSP的最大长度
 
-[[路由优先级]{style="font-family:宋体"}]{#struct_0_x1984_13510_515374509}
+LSP-length originate
 
-[[LSP-length receive]{lang="EN-US"}]{#struct_0_x1984_13510_x613758538}
+生成的LSP的最大长度
 
-[[可以接收]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_170424212}[的最大长度]{style="font-family:宋体"}
+Maximum imported routes
 
-[[LSP-length originate]{lang="EN-US"}]{#struct_0_x1984_13510_516176627}
+引入Level1/Level2的IPv4路由/IPv6路由最大条数
 
-[[生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x1249902832}[的最大长度]{style="font-family:宋体"}
+Timers
 
-[[Maximum imported routes]{lang="EN-US"}]{#struct_0_x1984_13510_x613824074}
+LSP-max-age
 
-[[引入]{style="font-family:宋体"}[Level1/Level2]{lang="EN-US"}]{#struct_0_x1984_13510_x583228021}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[路由]{style="font-family:宋体"}[/IPv6]{lang="EN-US"}[路由最大]{style="font-family:宋体"}[条数]{style="font-family:宋体"}
+LSP的最大生存时间
 
-[[Timers]{lang="EN-US"}]{#struct_0_x1984_13510_x2081513619}
+LSP-refresh
 
-[[LSP-max-age]{lang="EN-US"}]{#struct_0_x1984_13510_x613627466}
+LSP的刷新周期
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_584599419}[的最大生存时间]{style="font-family:宋体"}
+SPF intervals
 
-[[LSP-refresh]{lang="EN-US"}]{#struct_0_x1984_13510_358244184}
+SPF的计算时间间隔
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x613693002}[的刷新周期]{style="font-family:宋体"}
+IPv6 enabled
 
-[[SPF intervals]{lang="EN-US"}]{#struct_0_x1984_13510_1767994637}
+IS-IS进程支持IPv6功能
 
-[[SPF]{lang="EN-US"}]{#struct_0_x1984_13510_746530065}[的计算时间间隔]{style="font-family:宋体"}
+Multi-topology
 
-[[IPv6 enabled]{lang="EN-US"}]{#struct_0_x1984_13510_x613496394}
+IS-IS进程支持IPv6单播拓扑
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x193610789}[进程支持]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[功能]{style="font-family:宋体"}
+·Standard：IPv6单播拓扑标准模式
 
-[[Multi-topology]{lang="EN-US"}]{#struct_0_x1984_13510_x2103499153}
+·Compatible：IPv6单播拓扑兼容模式
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x613561930}[进程支持]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[单播拓扑]{style="font-family:宋体"}
+IPv4-Unicast
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Standard]{lang="EN-US"}]{#struct_0_x1984_13510_x906863133}[：]{lang="EN-US" style="font-family:宋体"}[IPv6]{lang="EN-US"}[单播拓扑标准模式]{lang="EN-US" style="font-family:宋体"}
+IS-IS进程支持IPv4单播拓扑
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[Compatible]{lang="EN-US"}]{#struct_0_x1984_13510_149192012}[：]{lang="EN-US" style="font-family:宋体"}[IPv6]{lang="EN-US"}[单播拓扑兼容模式]{lang="EN-US" style="font-family:宋体"}
+Topology ID
 
-[[IPv4-Unicast]{lang="EN-US"}]{#struct_0_x1984_13510_x613365322}
+IPv4单播拓扑ID
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x1729351638}[进程支持]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[单播拓扑]{style="font-family:宋体"}
+Topology
 
-[[Topology ID]{lang="EN-US"}]{#struct_0_x1984_13510_x299471480}
+IPv4单播拓扑名称
 
-[[IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_x613430858}[单播拓扑]{style="font-family:宋体"}[ID]{lang="EN-US"}
+Overload status
 
-[[Topology]{lang="EN-US"}]{#struct_0_x1984_13510_x145501535}
+·Overloaded manually：手动设置过载标志位
 
-[[IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_1154909641}[单播拓扑名称]{style="font-family:宋体"}
+·Overloaded on startup：系统启动时设置过载标志位
 
-[[Overload status]{lang="EN-US"}]{#struct_0_x1984_13510_x613234250}
+·Overloaded on startup waiting for nbr*system-id*up* timeout1*：系统启动后在*timeout1*时长内等待邻居up时设置过载标志位
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Overloaded manually]{lang="EN-US"}]{#struct_0_x1984_13510_x967334813}[：]{lang="EN-US" style="font-family:宋体"}[手动设置过载标志位]{style="font-family:宋体"}
+·Overloaded on startup after nbr*system-id*up* timeout1*：系统启动邻居up后在*timeout1*时长内设置过载标志位
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Overloaded on startup]{lang="EN-US"}]{#struct_0_x1984_13510_x613299786}[：]{lang="EN-US" style="font-family:宋体"}[系统启动时设置过载标志位]{style="font-family:宋体"}
+·Overloaded for memory shortage：在内存不足时设置过载标志位
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Overloaded on startup waiting for nbr]{lang="EN-US"}]{#struct_0_x1984_13510_1330446895}[ ]{lang="EN-US"}*[system]{lang="EN-US"}[-id]{lang="EN-US"}[ ]{lang="EN-US"}*[up]{lang="EN-US"}[　]{style="font-family:
-  宋体"}*[ timeout1]{lang="EN-US"}*[：]{lang="EN-US" style="font-family:宋体"}[系统启动后在]{style="font-family:宋体"}*[timeout1]{lang="EN-US"}*[时长内等待邻居]{style="font-family:宋体"}[up]{lang="EN-US"}[时设置过载标志位]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Overloaded on startup after nbr]{lang="EN-US"}]{#struct_0_x1984_13510_1734945640}[ ]{lang="EN-US"}*[system]{lang="EN-US"}[-id]{lang="EN-US"}[ ]{lang="EN-US"}*[up]{lang="EN-US"}[　]{style="font-family:
-  宋体"}*[ timeout1]{lang="EN-US"}*[：]{lang="EN-US" style="font-family:宋体"}[系统启动邻居]{style="font-family:宋体"}[up]{lang="EN-US"}[后在]{style="font-family:宋体"}*[timeout1]{lang="EN-US"}*[时长内设置过载标志位]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Overloaded for memory shortage]{lang="EN-US"}]{#struct_0_x1984_13510_1752537468}[：]{lang="EN-US" style="font-family:宋体"}[在内存不足时设置过载标志位]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Overloaded for graceful starting]{lang="EN-US"}]{#struct_0_x1984_13510_1421472814}[：]{lang="EN-US" style="font-family:宋体"}[在]{style="font-family:宋体"}[GR starting]{lang="EN-US"}[阶段设置过载标志位]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::::: {#-374837253 .myid}
-[]{#_Toc404788351}[]{#struct_0_x1984_13510_176205293}[]{#_Toc332962773}
+·Overloaded for graceful starting：在GR starting阶段设置过载标志位
 
 **IS-IS \-- IS-IS配置命令 \-- display isis graceful-restart event-log**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IS-IS命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1984_13510_195509508}
-:::
+![说明](IS-IS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1984_13510_x309765772}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[display isis graceful-restart event-log**]命令用来显示IS-IS GR日志信息。
 
-[**[display isis graceful-restart event-log]{lang="EN-US"}**]{#struct_0_x1984_13510_x669828981}[命令用来显示]{style="font-family:宋体"}[IS-IS GR]{lang="EN-US"}[日志信息。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x796492553}
+集中式设备：
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_x1984_13510_66153271}
+**[display isis **]**graceful-restart event-log**
 
-[**[display isis ]{lang="EN-US"}**]{#struct_0_x1984_13510_2053007643}**[graceful-restart]{lang="EN-US"}[ event-log]{lang="EN-US"}**
+分布式设备－独立运行模式/集中式IRF设备：
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}]{#struct_0_x1984_13510_1134378227}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+**[display isis **]**graceful-restart event-log slot** *slot-number* [ **cpu** *cpu-number* ]
 
-[**[display isis ]{lang="EN-US"}**]{#struct_0_x1984_13510_764721688}**[graceful-restart]{lang="EN-US"}[ event-log slot]{lang="EN-US"}**[ *slot-number* \[ **cpu** *cpu-number* \]]{lang="EN-US"}
+分布式设备－IRF模式：
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1984_13510_x1911001485}[模式：]{style="font-family:宋体"}
+**[display isis **]**graceful-restart event-log chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number* ]
 
-[**[display isis ]{lang="EN-US"}**]{#struct_0_x1984_13510_x1291073666}**[graceful-restart]{lang="EN-US"}[ event-log chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \]]{lang="EN-US"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1660751843}
+任意视图
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x309831308}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2049861249}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x120935700}
+network-operator
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1984_13510_555328492}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1168686624}
+mdc-operator
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1984_13510_x1093039689}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x432875920}
+**[slot**]* slot-number*：显示指定单板的IS-IS GR日志信息，*slot-number*表示单板所在的槽位号。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**]{#struct_0_x1984_13510_510565394}*[ slot-number]{lang="EN-US"}*[：显示指定单板的]{style="font-family:宋体"}[IS-IS GR]{lang="EN-US"}[日志信息]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot**]* slot-number*：显示指定成员设备的IS-IS GR日志信息，*slot-number*表示设备在IRF中的成员编号。（集中式IRF设备）
 
-[**[slot]{lang="EN-US"}**]{#struct_0_x1984_13510_x309896844}*[ slot-number]{lang="EN-US"}*[：显示指定成员设备的]{style="font-family:宋体"}[IS-IS GR]{lang="EN-US"}[日志信息]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**[chassis**] *chassis-number* **slot** *slot-number*：显示指定成员设备上指定单板的IS-IS GR日志信息，*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。（分布式设备－IRF模式）
 
-[**[chassis]{lang="EN-US"}**]{#struct_0_x1984_13510_x337192168}[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}[：显示指定成员设备上指定单板的]{style="font-family:宋体"}[IS-IS GR]{lang="EN-US"}[日志信息]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**[cpu** *cpu-number*]：表示CPU的编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_x1984_13510_x59340187}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的编号。只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_513067840}
+\# 显示0号板上GR的日志信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x151672395}[显示]{style="font-family:宋体"}[0]{lang="EN-US"}[号板上]{style="font-family:宋体"}[GR]{lang="EN-US"}[的日志信息。]{style="font-family:宋体"}
+\<Sysname\> display isis graceful-restart event-log slot 0
 
-[[\<Sysname\> display isis graceful-restart event-log slot 0]{lang="EN-US"}]{#struct_0_x1984_13510_x59340188}
+IS-IS loginfo :
 
-[IS-IS loginfo :]{lang="EN-US"}
+Jul 18 20:44:33 2012 -Slot=0 Enter HA Block status
 
-[Jul 18 20:44:33 2012 -Slot=0 Enter HA Block status]{lang="EN-US"}
+Jul 18 10:44:33 2012 -Slot=0 Exit HA Block status
 
-[Jul 18 10:44:33 2012 -Slot=0 Exit HA Block status]{lang="EN-US"}
+Jul 18 20:46:13 2012 -Slot=0 Process 1 enter GR restarting phase(Initialization).
 
-[Jul 18 20:46:13 2012 -Slot=0 Process 1 enter GR restarting phase(Initialization).]{lang="EN-US"}
+Jul 18 20:46:13 2012 -Slot=0 Prcoess 1 enter GR phase (LSDB synchronization).
 
-[Jul 18 20:46:13 2012 -Slot=0 Prcoess 1 enter GR phase (LSDB synchronization).]{lang="EN-US"}
+Jul 18 20:46:40 2012 -Slot=0 Process 1 enter GR phase (First SPF computation).
 
-[Jul 18 20:46:40 2012 -Slot=0 Process 1 enter GR phase (First SPF computation).]{lang="EN-US"}
+Jul 18 20:46:40 2012 -Slot=0 Process 1 enter GR phase (Redistribution).
 
-[Jul 18 20:46:40 2012 -Slot=0 Process 1 enter GR phase (Redistribution).]{lang="EN-US"}
+Jul 18 20:46:40 2012 -Slot=0 Process 1 enter GR phase (Second SPF computation).
 
-[Jul 18 20:46:40 2012 -Slot=0 Process 1 enter GR phase (Second SPF computation).]{lang="EN-US"}
+Jul 18 20:46:40 2012 -Slot=0 Process 1 enter GR phase (LSP stability).
 
-[Jul 18 20:46:40 2012 -Slot=0 Process 1 enter GR phase (LSP stability).]{lang="EN-US"}
+Jul 18 20:46:40 2012 -Slot=0 Process 1 enter GR phase (LSP generation).
 
-[Jul 18 20:46:40 2012 -Slot=0 Process 1 enter GR phase (LSP generation).]{lang="EN-US"}
+Jul 18 20:46:40 2012 -Slot=0 Process 1 enter GR phase (Finish).
 
-[Jul 18 20:46:40 2012 -Slot=0 Process 1 enter GR phase (Finish).]{lang="EN-US"}
+Jul 18 20:46:40 2012 -Slot=0 Process 1 GR complete.
 
-[Jul 18 20:46:40 2012 -Slot=0 Process 1 GR complete.]{lang="EN-US"}
+表1-2 display isis graceful-restart event-log显示信息描述表
 
-[[表1-2 ]{lang="EN-US"}[display isis graceful-restart event-log]{lang="EN-US"}]{#struct_0_x1984_13510_1739707739}[显示]{style="font-family:黑体"}[信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1364728755}[[字段]{style="font-family:黑体"}]{#struct_0_x1984_13510_x309503628}
-:::::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1824293722}
+GR phase
 
-[[GR phase]{lang="EN-US"}]{#struct_0_x1984_13510_x891169427}
+GR阶段：
 
-[[GR]{lang="EN-US"}]{#struct_0_x1984_13510_731319341}[阶段：]{style="font-family:宋体"}
+·Initialization：初始化
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Initializa]{lang="EN-US"}]{#struct_0_x1984_13510_x1691841104}[tion]{lang="EN-US"}[：初始化]{style="font-family:宋体"}
+·LSDB synchronization：LSDB同步
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSDB synchronization]{lang="EN-US"}]{#struct_0_x1984_13510_x1935337549}[：]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步]{style="font-family:宋体"}
+·First SPF computation：第一次路由计算
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[First SPF computation]{lang="EN-US"}]{#struct_0_x1984_13510_x309569164}[：第一次路由计算]{style="font-family:宋体"}
+·Redistribution：引入路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Redistribution]{lang="EN-US"}]{#struct_0_x1984_13510_2038500024}[：引入路由]{style="font-family:宋体"}
+·Second SPF computation：第二次路由计算
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Second SPF computation]{lang="EN-US"}]{#struct_0_x1984_13510_1877870779}[：第二次路由计算]{style="font-family:宋体"}
+·LSP stability：准备生成LSP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSP stability]{lang="EN-US"}]{#struct_0_x1984_13510_x1496304636}[：准备生成]{style="font-family:宋体"}[LSP]{lang="EN-US"}
+·LSP generation：LSP生成和泛洪
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSP generation]{lang="EN-US"}]{#struct_0_x1984_13510_1291876325}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[生成和泛洪]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Finish]{lang="EN-US"}]{#struct_0_x1984_13510_x1140506403}[：完成]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-901490768 .myid}
-[]{#_Toc404788352}[]{#struct_0_x1984_13510_1476997547}
+·Finish：完成
 
 **IS-IS \-- IS-IS配置命令 \-- display isis graceful-restart status**
 
 ------------------------------------------------------------------------
 
-[**[display isis graceful-restart]{lang="EN-US"}**[ **status**]{lang="EN-US"}]{#struct_0_x1984_13510_x310027919}[命令用来显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议的]{style="font-family:宋体"}[GR]{lang="EN-US"}[状态。]{style="font-family:宋体"}
+**[display isis graceful-restart** **status**]命令用来显示IS-IS协议的GR状态。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x354531757}
+【命令】
 
-[**[display isis graceful-restart]{lang="EN-US"}**[ **status** \[ **level-1** \| **level-2** \] \[ *process-id* \]]{lang="EN-US"}]{#struct_0_x1984_13510_358120916}
+**[display isis graceful-restart**[ **status** [ **level-1** \| **level-2** ]  *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1966588306}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_236166966}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1030559570}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x333167440}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1984_13510_x1947237317}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1531290650}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1984_13510_x310093455}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_22705123}
+【参数】
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_x1671033310}[：表示]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[级别的]{style="font-family:宋体"}[IS-IS GR]{lang="EN-US"}[状态。]{style="font-family:宋体"}
+**[level-1**]：表示Level-1级别的IS-IS GR状态。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_x456491651}[：表示]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[级别的]{style="font-family:宋体"}[IS-IS GR]{lang="EN-US"}[状态。]{style="font-family:宋体"}
+**[level-2**]：表示Level-2级别的IS-IS GR状态。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_x1984_13510_x889422351}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}[如果未指定本参数，将显示所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的]{style="font-family:宋体"}[GR]{lang="EN-US"}[状态。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535。如果未指定本参数，将显示所有IS-IS进程的GR状态。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1566137271}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1218216942}[显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议的]{style="font-family:宋体"}[GR]{lang="EN-US"}[状态。]{style="font-family:宋体"}
+\# 显示IS-IS协议的GR状态。
 
-[[\<Sysname\> display isis graceful-restart status]{lang="EN-US"}]{#struct_0_x1984_13510_x310158991}
+\<Sysname\> display isis graceful-restart status
 
-[ ]{lang="EN-US"}
+                        Restart information for IS-IS(1)
 
-[                        Restart information for IS-IS(1)]{lang="EN-US"}
+                        \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                        \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+Restart status: COMPLETE
 
-[Restart status: COMPLETE]{lang="EN-US"}
+Restart phase: Finish
 
-[Restart phase: Finish]{lang="EN-US"}
+Restart t1: 3, count 10; Restart t2: 60; Restart t3: 300
 
-[Restart t1: 3, count 10; Restart t2: 60; Restart t3: 300]{lang="EN-US"}
+SA Bit: supported
 
-[SA Bit: supported]{lang="EN-US"}
+                          Level-1 restart information
 
-[ ]{lang="EN-US"}
+                          \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                          Level-1 restart information]{lang="EN-US"}
+Total number of interfaces: 1
 
-[                          \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+Number of waiting LSPs: 0
 
-[Total number of interfaces: 1]{lang="EN-US"}
+                          Level-2 restart information
 
-[Number of waiting LSPs: 0]{lang="EN-US"}
+                          \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ ]{lang="EN-US"}
+Total number of interfaces: 1
 
-[                          Level-2 restart information]{lang="EN-US"}
+Number of waiting LSPs: 0
 
-[                          \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+表1-3 display isis graceful-restart status命令显示信息描述表
 
-[Total number of interfaces: 1]{lang="EN-US"}
+字段
 
-[Number of waiting LSPs: 0]{lang="EN-US"}
+描述
 
-[]{#struct_0_x1984_13510_1573746411}[]{#_Toc86639912}[]{#_Toc138043182}[]{#_Toc94590060}[表1-3 ]{lang="EN-US"}[display isis graceful-restart status]{lang="EN-US"}[命令显示信息描述表]{style="font-family:黑体"}
+Restart status
 
-[]{#table_struct_0_1363733296}[[字段]{style="font-family:黑体"}]{#struct_0_x1984_13510_434892870}
-:::
+当前设备的Restarter状态：
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1984_13510_1479201378}
+·RESTARTING：保证能进行转发
 
-[[Restart status]{lang="EN-US"}]{#struct_0_x1984_13510_x310224527}
+·STARTING：不能保证转发
 
-[[当前设备的]{style="font-family:宋体"}]{#struct_0_x1984_13510_5940325}[Restarter]{lang="EN-US"}[状态：]{style="font-family:宋体"}
+·COMPLETE：完成GR
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RESTARTING]{lang="EN-US"}]{#struct_0_x1984_13510_x1686448697}[：保证能进行转发]{style="font-family:宋体"}
+Restart phase
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[STARTING]{lang="EN-US"}]{#struct_0_x1984_13510_1464711848}[：不能保证转发]{style="font-family:宋体"}
+当前设备的Restart阶段：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[COMPLETE]{lang="EN-US"}]{#struct_0_x1984_13510_54642698}[：完成]{style="font-family:宋体"}[GR]{lang="EN-US"}
+·Initialization：初始化
 
-[[Restart phase]{lang="EN-US"}]{#struct_0_x1984_13510_x424537264}
+·LSDB synchronization：LSDB同步
 
-[[当前设备的]{style="font-family:宋体"}]{#struct_0_x1984_13510_599428256}[Restart]{lang="EN-US"}[阶段：]{style="font-family:宋体"}
+·First SPF computation：第一次路由计算
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Initializa]{lang="EN-US"}]{#struct_0_x1984_13510_x309765775}[tion]{lang="EN-US"}[：初始化]{style="font-family:宋体"}
+·Redistribution：引入路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSDB synchronization]{lang="EN-US"}]{#struct_0_x1984_13510_x669370229}[：]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步]{style="font-family:宋体"}
+·Second SPF computation：第二次路由计算
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[First SPF computation]{lang="EN-US"}]{#struct_0_x1984_13510_757604608}[：第一次路由计算]{style="font-family:宋体"}
+·LSP stability：准备生成LSP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Redistribution]{lang="EN-US"}]{#struct_0_x1984_13510_x581445846}[：引入路由]{style="font-family:宋体"}
+·LSP generation：LSP生成和泛洪
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Second SPF computation]{lang="EN-US"}]{#struct_0_x1984_13510_1536461812}[：第二次路由计算]{style="font-family:宋体"}
+·Finish：完成
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSP stability]{lang="EN-US"}]{#struct_0_x1984_13510_x309831311}[：准备生成]{style="font-family:宋体"}[LSP]{lang="EN-US"}
+Restart t1
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSP generation]{lang="EN-US"}]{#struct_0_x1984_13510_2049271424}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[生成和泛洪]{style="font-family:宋体"}
+T1定时器的超时值，单位为秒
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Finish]{lang="EN-US"}]{#struct_0_x1984_13510_x1270699092}[：完成]{style="font-family:宋体"}
+count
 
-[[Restart t1]{lang="EN-US"}]{#struct_0_x1984_13510_x1455757975}
+T1定时器的超时次数
 
-[[T1]{lang="EN-US"}]{#struct_0_x1984_13510_x971376564}[定时器的超时值]{style="font-family:宋体"}[，单位为秒]{style="font-family:宋体"}
+Restart t2
 
-[[count]{lang="EN-US"}]{#struct_0_x1984_13510_x309896847}
+T2定时器的超时值，单位为秒
 
-[[T1]{lang="EN-US"}]{#struct_0_x1984_13510_x337388776}[定时器的超时次数]{style="font-family:宋体"}
+Restart t3
 
-[[Restart t2]{lang="EN-US"}]{#struct_0_x1984_13510_x1435334895}
+T3定时器的超时值，单位为秒
 
-[[T2]{lang="EN-US"}]{#struct_0_x1984_13510_1727013300}[定时器的超时值]{style="font-family:宋体"}[，单位为秒]{style="font-family:宋体"}
+SA Bit
 
-[[Restart t3]{lang="EN-US"}]{#struct_0_x1984_13510_1285919152}
+路由器是否支持SA：
 
-[[T3]{lang="EN-US"}]{#struct_0_x1984_13510_x309962383}[定时器的超时值]{style="font-family:宋体"}[，单位为秒]{style="font-family:宋体"}
+·supported：支持
 
-[[SA Bit]{lang="EN-US"}]{#struct_0_x1984_13510_x1827403623}
+·Not supported：不支持
 
-[[路由器是否支持]{style="font-family:宋体"}]{#struct_0_x1984_13510_554013175}[SA]{lang="EN-US"}[：]{style="font-family:宋体"}
+Total number of interfaces
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[supported]{lang="EN-US"}]{#struct_0_x1984_13510_x1980782776}[：支持]{style="font-family:宋体"}
+当前Level使能的IS-IS接口数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not supported]{lang="EN-US"}]{#struct_0_x1984_13510_x309503631}[：不支持]{style="font-family:宋体"}
+Number of waiting LSPs
 
-[[Total number of interfaces]{lang="EN-US"}]{#struct_0_x1984_13510_x1823703897}
-
-[[当前]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1773027567}[Level]{lang="EN-US"}[使能的]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[接口数]{style="font-family:宋体"}
-
-[[Number of waiting LSPs]{lang="EN-US"}]{#struct_0_x1984_13510_x175823032}
-
-[[GR Restarter]{lang="EN-US"}]{#struct_0_x1984_13510_x540313697}[从]{style="font-family:宋体"}[GR Helper]{lang="EN-US"}[进行]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步时，当前]{style="font-family:宋体"}[Level]{lang="EN-US"}[未完成同步的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[数目]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::::: {#-1625073209 .myid}
-[]{#_Toc404788353}[]{#struct_0_x1984_13510_x309569167}
+GR Restarter从GR Helper进行LSDB同步时，当前Level未完成同步的LSP数目
 
 **IS-IS \-- IS-IS配置命令 \-- display isis interface**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IS-IS命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1984_13510_2038434488}
-:::
+![说明](IS-IS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1984_13510_x1219545430}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[display isis interface]{lang="EN-US"}**]{#struct_0_x1984_13510_213814718}[命令用来显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的接口信息。]{style="font-family:宋体"}
+**[display isis interface**]命令用来显示IS-IS的接口信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_103000688}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **isis** **interface** \[ \[ *interface-type interface-number* \] \[ **verbose** \] \| **statistics** \] \[ *process-id* \]]{lang="EN-US"}]{#struct_0_x1984_13510_x750781972}
+**[display** **isis** **interface** [ [ *interface-type interface-number*   **verbose**  \| **statistics** ]  *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x534775938}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_572365739}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1582846209}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1684585853}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1984_13510_1322761680}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1438361618}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1984_13510_x310093454}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_22770659}
+【参数】
 
-[*[interface-type interface-number]{lang="EN-US"}*]{#struct_0_x1984_13510_x120618310}[：显示指定接口的信息。如果未指定本参数，将显示所有接口的信息。]{style="font-family:宋体"}
+*[interface-type interface-number*]：显示指定接口的信息。如果未指定本参数，将显示所有接口的信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_x1984_13510_1268622961}[：显示接口的详细信息。如果未指定该参数，将显示接口的概要信息。]{style="font-family:宋体"}
+**[verbose**]：显示接口的详细信息。如果未指定该参数，将显示接口的概要信息。
 
-[**[statistics]{lang="EN-US"}**]{#struct_0_x1984_13510_606354618}[：显示接口的统计信息。]{style="font-family:宋体"}
+**[statistics**]：显示接口的统计信息。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_x1984_13510_797307164}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，]{style="font-family:宋体"}[取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，显示与指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程相关联接口的信息。如果未指定本参数，将显示所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的接口信息。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535，显示与指定IS-IS进程相关联接口的信息。如果未指定本参数，将显示所有IS-IS进程的接口信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1573811947}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1840398489}[显示使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能接口的概要信息。]{style="font-family:宋体"}
+\# 显示使能IS-IS功能接口的概要信息。
 
-[[\<Sysname\> display isis interface]{lang="EN-US"}]{#struct_0_x1984_13510_x59340184}
+\<Sysname\> display isis interface
 
-[ ]{lang="EN-US"}
+                       Interface information for IS-IS(1)
 
-[                       Interface information for IS-IS(1)]{lang="EN-US"}
+                       \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                       \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  Interface:  GigabitEthernet1/0/2
 
-[ ]{lang="EN-US"}
+  Index     IPv4.State      IPv6.State     CircuitID   MTU   Type   DIS
 
-[  Interface:  GigabitEthernet1/0/2]{lang="EN-US"}
+  00001     Up              Down           1           1497  L1/L2  No/No
 
-[  Index     IPv4.State      IPv6.State     CircuitID   MTU   Type   DIS]{lang="EN-US"}
+\# 显示使能IS-IS功能接口的详细信息。
 
-[  00001     Up              Down           1           1497  L1/L2  No/No]{lang="EN-US"}
+\<Sysname\> display isis interface verbose
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1998996125}[显示使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能接口的详细信息。]{style="font-family:宋体"}
+                       Interface information for IS-IS(1)
 
-[[\<Sysname\> display isis interface verbose]{lang="EN-US"}]{#struct_0_x1984_13510_x392121971}
+                       \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ ]{lang="EN-US"}
+  Interface:  GigabitEthernet1/0/2
 
-[                       Interface information for IS-IS(1)]{lang="EN-US"}
+  Index     IPv4.State      IPv6.State     CircuitID   MTU   Type   DIS
 
-[                       \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  00001     Up              Down           1           1497  L1/L2  No/No
 
-[ ]{lang="EN-US"}
+  SNPA address                 : 000c-29e8-1bd5
 
-[  Interface:  GigabitEthernet1/0/2]{lang="EN-US"}
+  IP address                   : 192.168.220.10
 
-[  Index     IPv4.State      IPv6.State     CircuitID   MTU   Type   DIS]{lang="EN-US"}
+  Secondary IP address(es)     :
 
-[  00001     Up              Down           1           1497  L1/L2  No/No]{lang="EN-US"}
+  IPv6 link-local address      :
 
-[  SNPA address                 : 000c-29e8-1bd5]{lang="EN-US"}
+  Extended circuit ID          : 1
 
-[  IP address                   : 192.168.220.10]{lang="EN-US"}
+  CSNP timer value             : L1        10   L2        10
 
-[  Secondary IP address(es)     :]{lang="EN-US"}
+  Hello timer value            :           10
 
-[  IPv6 link-local address      :]{lang="EN-US"}
+  Hello multiplier value       :            3
 
-[  Extended circuit ID          : 1]{lang="EN-US"}
+  LSP timer value              : L12       33
 
-[  CSNP timer value             : L1        10   L2        10]{lang="EN-US"}
+  LSP transmit-Throttle count  : L12        5
 
-[  Hello timer value            :           10]{lang="EN-US"}
+  Cost                         : L1       100   L2        100
 
-[  Hello multiplier value       :            3]{lang="EN-US"}
+  IPv6 cost                    : L1        10   L2        10
 
-[  LSP timer value              : L12       33]{lang="EN-US"}
+  Priority                     : L1        64   L2        64
 
-[  LSP transmit-Throttle count  : L12        5]{lang="EN-US"}
+  Retransmit timer value       : L12        5
 
-[  Cost                         : L1       100   L2        100]{lang="EN-US"}
+  LDP state                    : L1      Init   L2      No-LDP
 
-[  IPv6 cost                    : L1        10   L2        10]{lang="EN-US"}
+  LDP sync state               : L1      Init   L2    Achieved
 
-[  Priority                     : L1        64   L2        64]{lang="EN-US"}
+MPLS TE status               : L1  Disabled   L2    Disabled
 
-[  Retransmit timer value       : L12        5]{lang="EN-US"}
+  IPv4 BFD                     : Disabled
 
-[[  LDP state                    : L1      ]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1984_13510_1304146178}[Init]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}[   L2      No-LDP]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}
+  IPv6 BFD                     : Disabled
 
-[[  LDP sync state               : L1      Init   L2    Achieved]{lang="EN-US"}]{#struct_0_x1984_13510_1752865149}
+  FRR LFA backup               : Enabled
 
-[  ]{lang="EN-US"}[MPLS TE status               : L1  Disabled   L2    Disabled]{lang="EN-US"}
+  IPv4 prefix-suppression      : Disabled
 
-[  IPv4 BFD                     : Disabled]{lang="EN-US"}
+  IPv6 prefix-suppression      : Disabled
 
-[  IPv6 BFD                     : Disabled]{lang="EN-US"}
+  IPv4 tag                     : 1
 
-[  FRR LFA backup               : Enabled]{lang="EN-US"}
+  IPv6 tag                     : 4294967295
 
-[  IPv4 prefix-suppression      : Disabled]{lang="EN-US"}
+  IPv4-Unicast                 :
 
-[  IPv6 prefix-suppression      : Disabled]{lang="EN-US"}
+    Topology ipv4_unicast_multopo
 
-[  IPv4 tag                     : 1]{lang="EN-US"}
+      Topology ID              : 6
 
-[  IPv6 tag                     : 4294967295]{lang="EN-US"}
+      Cost                     : L1       444  L2       444
 
-[  IPv4-Unicast                 :]{lang="EN-US"}
+      FRR LFA backup           : Disabled
 
-[    Topology ipv4_unicast_multopo]{lang="EN-US"}
+      Prefix-suppression       : Enabled
 
-[      Topology ID              : 6]{lang="EN-US"}
+      Tag                      : 44444444
 
-[      Cost                     : L1       444  L2       444]{lang="EN-US"}
+表1-4 display isis interface显示信息描述表
 
-[      FRR LFA backup           : Disabled]{lang="EN-US"}
+字段
 
-[      Prefix-suppression       : Enabled]{lang="EN-US"}
+描述
 
-[      Tag                      : 44444444]{lang="EN-US"}
+Interface
 
-[[表1-4 ]{lang="EN-US"}[display isis interface]{lang="EN-US"}]{#struct_0_x1984_13510_5874789}[显示信息描述表]{style="font-family:黑体"}
+接口类型和接口编号
 
-[]{#table_struct_0_1360714151}[[字段]{style="font-family:黑体"}]{#struct_0_x1984_13510_x309765774}
-:::::
+Index
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1984_13510_x669435765}
+接口索引
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1984_13510_x1594070960}
+IPv4.State
 
-[[接口类型和接口编号]{style="font-family:宋体"}]{#struct_0_x1984_13510_1189327748}
+IPv4状态：Up和Down
 
-[[Index]{lang="EN-US"}]{#struct_0_x1984_13510_1753061757}
+IPv6.State
 
-[[接口索引]{style="font-family:宋体"}]{#struct_0_x1984_13510_197832826}
+IPv6状态：Up和Down
 
-[[IPv4.State]{lang="EN-US"}]{#struct_0_x1984_13510_1066236686}
+CircuitID
 
-[[IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_x254865496}[状态：]{style="font-family:宋体"}[Up]{lang="EN-US"}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}
+链路ID
 
-[[IPv6.State]{lang="EN-US"}]{#struct_0_x1984_13510_587115533}
+MTU
 
-[[IPv6]{lang="EN-US"}]{#struct_0_x1984_13510_x1171947084}[状态：]{style="font-family:宋体"}[Up]{lang="EN-US"}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}
+接口MTU值
 
-[[CircuitID]{lang="EN-US"}]{#struct_0_x1984_13510_1753127293}
+Type
 
-[[链路]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1984_13510_1752537466}
+接口的链路邻接关系类型
 
-[[MTU]{lang="EN-US"}]{#struct_0_x1984_13510_x309896846}
+DIS
 
-[[接口]{style="font-family:宋体"}]{#struct_0_x1984_13510_x337323240}[MTU]{lang="EN-US"}[值]{style="font-family:宋体"}
+是否被选举为DIS，"\--"表示不进行DIS选举（P2P网络）
 
-[[Type]{lang="EN-US"}]{#struct_0_x1984_13510_x241740079}
+SNPA address
 
-[[接口的链路邻接关系类型]{style="font-family:宋体"}]{#struct_0_x1984_13510_x477032080}
+子网连接点地址
 
-[[DIS]{lang="EN-US"}]{#struct_0_x1984_13510_x1925125431}
+IP address
 
-[[是否被选举为]{style="font-family:宋体"}]{#struct_0_x1984_13510_1723239008}[DIS]{lang="EN-US"}[，"]{style="font-family:宋体"}[\--]{lang="EN-US"}["表示不进行]{style="font-family:宋体"}[DIS]{lang="EN-US"}[选举（]{style="font-family:宋体"}[P2P]{lang="EN-US"}[网络）]{style="font-family:宋体"}
+主IP地址
 
-[[SNPA address]{lang="EN-US"}]{#struct_0_x1984_13510_x309962382}
+Secondary IP address(es)
 
-[[子网连接点地址]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1827469159}
+从IP地址
 
-[[IP address]{lang="EN-US"}]{#struct_0_x1984_13510_x309503630}
+IPv6 link-local address
 
-[[主]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1823769433}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+IPv6链路本地地址
 
-[[Secondary IP address(es)]{lang="EN-US"}]{#struct_0_x1984_13510_x309569166}
+Extended circuit ID
 
-[[从]{style="font-family:宋体"}]{#struct_0_x1984_13510_2038368952}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+扩展链路ID，点对点链路存在该项
 
-[[IPv6 link-local address]{lang="EN-US"}]{#struct_0_x1984_13510_1612286386}
+CSNP timer value
 
-[[IPv6]{lang="EN-US"}]{#struct_0_x1984_13510_163180180}[链路本地地址]{style="font-family:宋体"}
+CSNP报文发送时间间隔
 
-[[Extended circuit ID]{lang="EN-US"}]{#struct_0_x1984_13510_1752603002}
+Hello timer value
 
-[[扩展链路]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1984_13510_227067645}[，点对点链路存在该项]{style="font-family:宋体"}
+Hello报文发送时间间隔
 
-[[CSNP timer value]{lang="EN-US"}]{#struct_0_x1984_13510_1612220850}
+Hello multiplier value
 
-[[CSNP]{lang="EN-US"}]{#struct_0_x1984_13510_x926939797}[报文发送时间间隔]{style="font-family:宋体"}
+Hello报文失效数目
 
-[[Hello timer value]{lang="EN-US"}]{#struct_0_x1984_13510_1612155314}
+LSP timer value
 
-[[Hello]{lang="EN-US"}]{#struct_0_x1984_13510_x1372298539}[报文发送时间间隔]{style="font-family:宋体"}
+发送LSP的最小时间间隔
 
-[[Hello multiplier value]{lang="EN-US"}]{#struct_0_x1984_13510_1612548530}
+LSP transmit-Throttle count
 
-[[Hello]{lang="EN-US"}]{#struct_0_x1984_13510_x1758025382}[报文失效数目]{style="font-family:宋体"}
+每次发送LSP的数目
 
-[[LSP timer value]{lang="EN-US"}]{#struct_0_x1984_13510_1612482994}
+Cost
 
-[[发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_220732275}[的最小时间间隔]{style="font-family:宋体"}
+接口的链路开销值
 
-[[LSP transmit-Throttle count]{lang="EN-US"}]{#struct_0_x1984_13510_1612417458}
+IPv6 cost
 
-[[每次发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_1612351922}[的数目]{style="font-family:宋体"}
+接口的IPv6链路开销值
 
-[[Cost]{lang="EN-US"}]{#struct_0_x1984_13510_x1315008342}
+Priority
 
-[[接口的链路开销值]{style="font-family:宋体"}]{#struct_0_x1984_13510_1309908730}
+DIS优先级
 
-[[IPv6 cost]{lang="EN-US"}]{#struct_0_x1984_13510_1752668538}
+Retransmit timer value
 
-[[接口的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_x1984_13510_1752734074}[链路开销值]{style="font-family:宋体"}
+LSP在点到点链路上的重传时间间隔
 
-[[Priority]{lang="EN-US"}]{#struct_0_x1984_13510_x1077295206}
+MPLS TE status
 
-[[DIS]{lang="EN-US"}]{#struct_0_x1984_13510_1955513924}[优先级]{style="font-family:宋体"}
+是否使能IS-IS的MPLS TE功能：
 
-[[Retransmit timer value]{lang="EN-US"}]{#struct_0_x1984_13510_1752799610}
+·Enabled：表示使能MPLS TE
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_1374573803}[在点到点链路上的重传时间间隔]{style="font-family:宋体"}
+·Disabled：表示未使能MPLS TE
 
-[[MPLS TE status]{lang="EN-US"}]{#struct_0_x1984_13510_1752865146}
+LDP state
 
-[[是否使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1383128325}[的]{style="font-family:宋体"}[MPLS TE]{lang="EN-US"}[功能：]{style="font-family:宋体"}
+LDP状态：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_x1984_13510_1752930682}[：]{style="font-family:宋体"}[表示使能]{lang="EN-US" style="font-family:宋体"}[MPLS TE]{lang="EN-US"}
+·Init：表示处于初始化状态，LDP还没有上报状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_x1984_13510_1752996218}[：]{style="font-family:宋体"}[表示未使能]{lang="EN-US" style="font-family:宋体"}[MPLS TE]{lang="EN-US"}
+·No-LDP：表示未配置LDP
 
-[[LDP state]{lang="EN-US"}]{#struct_0_x1984_13510_1022978118}
+·Not ready：表示未建立LDP会话
 
-[[LDP]{lang="EN-US"}]{#struct_0_x1984_13510_1753061754}[状态：]{style="font-family:宋体"}
+·Ready：表示已建立LDP会话
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Init]{lang="EN-US"}]{#struct_0_x1984_13510_197898362}[：表示处于初始化状态，]{style="font-family:宋体"}[LDP]{lang="EN-US"}[还没有上报状态]{style="font-family:宋体"}
+LDP sync state
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No-LDP]{lang="EN-US"}]{#struct_0_x1984_13510_1753127290}[：]{style="font-family:宋体"}[表示未配置]{lang="EN-US" style="font-family:宋体"}[LDP]{lang="EN-US"}
+LDP同步状态：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not ready]{lang="EN-US"}]{#struct_0_x1984_13510_1752537467}[：]{style="font-family:宋体"}[表示未建立]{lang="EN-US" style="font-family:宋体"}[LDP]{lang="EN-US"}[会话]{lang="EN-US" style="font-family:宋体"}
+·Init：表示初始化
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Ready]{lang="EN-US"}]{#struct_0_x1984_13510_1421276206}[：]{style="font-family:宋体"}[表示已建立]{lang="EN-US" style="font-family:宋体"}[LDP]{lang="EN-US"}[会话]{lang="EN-US" style="font-family:宋体"}
+·Achieved：表示已同步
 
-[[LDP sync state]{lang="EN-US"}]{#struct_0_x1984_13510_1752603003}
+·Max cost：表示保持最大开销值
 
-[[LDP]{lang="EN-US"}]{#struct_0_x1984_13510_1752668539}[同步状态：]{style="font-family:宋体"}
+IPv4 BFD
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Init]{lang="EN-US"}]{#struct_0_x1984_13510_1734134181}[：]{style="font-family:宋体"}[表示初始化]{lang="EN-US" style="font-family:宋体"}
+是否使能IS-IS的BFD功能：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Achieved]{lang="EN-US"}]{#struct_0_x1984_13510_1752734075}[：]{style="font-family:宋体"}[表示已同步]{lang="EN-US" style="font-family:宋体"}
+·Disabled：表示未使能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Max cost]{lang="EN-US"}]{#struct_0_x1984_13510_1752799611}[：]{style="font-family:宋体"}[表示保持]{lang="EN-US" style="font-family:宋体"}[最大开销值]{style="font-family:宋体"}
+·Enabled：表示使能
 
-[[IPv4 BFD]{lang="EN-US"}]{#struct_0_x1984_13510_1612810674}
+IPv6 BFD
 
-[[是否使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_213451811}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[功能：]{style="font-family:宋体"}
+是否使能IPv6 IS-IS的BFD功能：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_x1984_13510_x803426924}[：表示未使能]{style="font-family:宋体"}
+·Disabled：表示未使能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_x1984_13510_1612745138}[：表示使能]{style="font-family:宋体"}
+·Enabled：表示使能
 
-[[IPv6 BFD]{lang="EN-US"}]{#struct_0_x1984_13510_x1753390447}
+FRR LFA backup
 
-[[是否使能]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x2060668448}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[功能：]{style="font-family:宋体"}
+是否使能LFA计算功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_x1984_13510_x711623324}[：表示未使能]{style="font-family:宋体"}
+·Disabled：表示未使能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_x1984_13510_1612286387}[：表示使能]{style="font-family:宋体"}
+·Enabled：表示使能
 
-[[FRR LFA backup]{lang="EN-US"}]{#struct_0_x1984_13510_x59340180}
+IPv4 prefix-suppression
 
-[[是否使能]{style="font-family:宋体"}[LFA]{lang="EN-US"}]{#struct_0_x1984_13510_x392121975}[计算功能]{style="font-family:宋体"}
+是否使能IS-IS的前缀抑制功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_x1984_13510_1514637925}[：]{style="font-family:宋体"}[表示未使能]{lang="EN-US" style="font-family:宋体"}
+·Disabled：表示未使能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_x1984_13510_39680379}[：]{style="font-family:宋体"}[表示使能]{lang="EN-US" style="font-family:宋体"}
+·Enabled：表示使能
 
-[[IPv4 prefix-suppression]{lang="EN-US"}]{#struct_0_x1984_13510_1110799370}
+IPv6 prefix-suppression
 
-[[是否使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1514637924}[的前缀抑制功能]{style="font-family:宋体"}
+是否使能IPv6 IS-IS的前缀抑制功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_x1984_13510_39745915}[：]{style="font-family:宋体"}[表示未使能]{lang="EN-US" style="font-family:宋体"}
+·Disabled：表示未使能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_x1984_13510_428388466}[：]{style="font-family:宋体"}[表示使能]{lang="EN-US" style="font-family:宋体"}
+·Enabled：表示使能
 
-[[IPv6 prefix-suppression]{lang="EN-US"}]{#struct_0_x1984_13510_1310339949}
+IPv4 tag
 
-[[是否使能]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1514637923}[的前缀抑制功能]{style="font-family:宋体"}
+接口IPv4 tag值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_x1984_13510_39811451}[：]{style="font-family:宋体"}[表示未使能]{lang="EN-US" style="font-family:宋体"}
+IPv6 tag
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_x1984_13510_819768955}[：]{style="font-family:宋体"}[表示使能]{lang="EN-US" style="font-family:宋体"}
+接口IPv6 tag值
 
-[[IPv4 tag]{lang="EN-US"}]{#struct_0_x1984_13510_1514637922}
+IPv4-Unicast
 
-[[接口]{style="font-family:宋体"}[IPv4 tag]{lang="EN-US"}]{#struct_0_x1984_13510_39876987}[值]{style="font-family:宋体"}
+接口支持的IPv4单播拓扑
 
-[[IPv6 tag]{lang="EN-US"}]{#struct_0_x1984_13510_x638926179}
+Topology
 
-[[接口]{style="font-family:宋体"}[IPv6 tag]{lang="EN-US"}]{#struct_0_x1984_13510_1514637929}[值]{style="font-family:宋体"}
+IPv4单播拓扑名称
 
-[[IPv4-Unicast]{lang="EN-US"}]{#struct_0_x1984_13510_1752865147}
+Topology ID
 
-[[接口支持的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_1752930683}[单播拓扑]{style="font-family:宋体"}
+IPv4单播拓扑ID
 
-[[Topology]{lang="EN-US"}]{#struct_0_x1984_13510_x569302031}
+\# 显示IS-IS接口的统计信息。
 
-[[IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_1752996219}[单播拓扑名称]{style="font-family:宋体"}
+\<Sysname\> display isis interface statistics
 
-[[Topology ID]{lang="EN-US"}]{#struct_0_x1984_13510_1753061755}
+                  Interface Statistics information for IS-IS(1)
 
-[[IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_197963898}[单播拓扑]{style="font-family:宋体"}[ID]{lang="EN-US"}
+                  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ ]{lang="EN-US"}
+  Type            IPv4 Up/Down           IPv6 Up/Down
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_163114644}[显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[接口的统计信息。]{style="font-family:宋体"}
+  LAN                   1/0                    0/0
 
-[[\<Sysname\> display isis interface statistics]{lang="EN-US"}]{#struct_0_x1984_13510_x1089983543}
+  P2P                   0/0                    0/0
 
-[ ]{lang="EN-US"}
+表1-5 display isis interface statistics显示信息描述表
 
-[                  Interface Statistics information for IS-IS(1)]{lang="EN-US"}
+字段
 
-[                  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+描述
 
-[  Type            IPv4 Up/Down           IPv6 Up/Down]{lang="EN-US"}
+Type
 
-[  LAN                   1/0                    0/0]{lang="EN-US"}
+接口类型，取值为：
 
-[  P2P                   0/0                    0/0]{lang="EN-US"}
+·LAN：表示接口的网络类型为广播
 
-[[表1-5 ]{lang="EN-US"}[display isis interface statistics]{lang="EN-US"}]{#struct_0_x1984_13510_331371368}[显示信息描述表]{style="font-family:黑体"}
+·P2P：表示接口的网络类型为点对点
 
-[]{#table_struct_0_1393470572}[[字段]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2056872211}
+IPv4 Up
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1871651452}
+使能IS-IS功能且状态为up的接口数
 
-[[Type]{lang="EN-US"}]{#struct_0_x1984_13510_1612220851}
+IPv4 Down
 
-[[接口类型，取值为：]{style="font-family:宋体"}]{#struct_0_x1984_13510_x927005333}
+使能IS-IS功能且状态为down的接口数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LAN]{lang="EN-US"}]{#struct_0_x1984_13510_x1272536412}[：表示接口的网络类型为广播]{style="font-family:宋体"}
+IPv6 Up
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[P2P]{lang="EN-US"}]{#struct_0_x1984_13510_220821177}[：表示接口的网络类型为点对点]{style="font-family:宋体"}
+使能IPv6 IS-IS功能且状态为up的接口数
 
-[[IPv4 Up]{lang="EN-US"}]{#struct_0_x1984_13510_337808317}
+IPv6 Down
 
-[[使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1712562457}[功能且状态为]{style="font-family:宋体"}[up]{lang="EN-US"}[的接口数]{style="font-family:宋体"}
-
-[[IPv4 Down]{lang="EN-US"}]{#struct_0_x1984_13510_x1558766778}
-
-[[使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1612155315}[功能且状态为]{style="font-family:宋体"}[down]{lang="EN-US"}[的接口数]{style="font-family:宋体"}
-
-[[IPv6 Up]{lang="EN-US"}]{#struct_0_x1984_13510_x1372233003}
-
-[[使能]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x1364139011}[功能且状态为]{style="font-family:宋体"}[up]{lang="EN-US"}[的接口数]{style="font-family:宋体"}
-
-[[IPv6 Down]{lang="EN-US"}]{#struct_0_x1984_13510_221040085}
-
-[[使能]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x916719323}[功能且状态为]{style="font-family:宋体"}[down]{lang="EN-US"}[的接口数]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::::: {#-1482300807 .myid}
-[]{#_Toc404788354}[]{#struct_0_x1984_13510_x2097020161}[]{#_Toc163546243}[]{#_Toc50204089}[]{#_Toc33866088}[]{#_Toc209857781}[]{#_Toc209857782}[]{#_Toc209857783}[]{#_Toc209857784}[]{#_Toc209857785}[]{#_Toc209857786}[]{#_Toc209857787}[]{#_Toc209857788}[]{#_Toc209857789}[]{#_Toc209857790}[]{#_Toc209857791}[]{#_Toc209857792}[]{#_Toc209857793}[]{#_Toc209857795}[]{#_Toc209857798}[]{#_Toc209857805}[]{#_Toc209857811}[]{#_Toc209857814}[]{#_Toc209857821}[]{#_Toc209857826}[]{#_Toc209857827}[]{#_Toc209857885}
+使能IPv6 IS-IS功能且状态为down的接口数
 
 **IS-IS \-- IS-IS配置命令 \-- display isis lsdb**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IS-IS命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1984_13510_1612089779}
-:::
+![说明](IS-IS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1984_13510_157562216}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[display isis lsdb]{lang="EN-US"}**]{#struct_0_x1984_13510_x438821388}[命令用来显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的链路状态数据库信息。]{style="font-family:宋体"}
+**[display isis lsdb**]命令用来显示IS-IS的链路状态数据库信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_815754884}
+【命令】
 
-[**[display isis lsdb]{lang="EN-US"}**[ \[ \[ **level-1** \| **level-2** \] \| **local** \| \[ **lsp-id** *lspid* \| **lsp-name** *lspname* \] \| **verbose** \] \* \[ *process-id* \]]{lang="EN-US"}]{#struct_0_x1984_13510_x1534539161}
+**[display isis lsdb**[ [ [ **level-1** \| **level-2** ] \| **local** \| [ **lsp-id** *lspid* \| **lsp-name** *lspname* ] \| **verbose** ] \*  *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1233308638}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_666587590}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_697400917}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x10551794}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1984_13510_582700824}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1232062384}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1984_13510_1612482995}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_220666739}
+【参数】
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_x1869580939}[：显示]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[链路状态数据库。]{style="font-family:宋体"}
+**[level-1**]：显示Level-1链路状态数据库。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_1362586591}[：显示]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[链路状态数据库。]{style="font-family:宋体"}
+**[level-2**]：显示Level-2链路状态数据库。
 
-[**[local]{lang="EN-US"}**]{#struct_0_x1984_13510_x726987052}[：显示当前路由器产生的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[local**]：显示当前路由器产生的LSP的信息。
 
-[**[lsp-id]{lang="EN-US"}***[ lspid]{lang="EN-US"}*]{#struct_0_x1984_13510_921079068}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[标识，形式为]{style="font-family:宋体"}[SYSID*.*Pseudonode ID-fragment num]{lang="EN-US"}[，其中，]{style="font-family:宋体"}[SYSID]{lang="EN-US"}[是]{style="font-family:宋体"}[产生该]{style="font-family:宋体"}[LSP]{lang="EN-GB"}[的节点或伪节点的]{style="font-family:宋体"}[SystemID]{lang="EN-US"}[，]{style="font-family:宋体"}[Pseudonode ID]{lang="EN-US"}[是伪节点]{style="font-family:宋体"}[ID]{lang="EN-US"}[，]{style="font-family:宋体"}[fragment num]{lang="EN-US"}[是该]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的分片号。]{style="font-family:宋体"}
+**[lsp-id*** lspid*]：LSP标识，形式为SYSID*.*Pseudonode ID-fragment num，其中，SYSID是产生该LSP的节点或伪节点的SystemID，Pseudonode ID是伪节点ID，fragment num是该LSP的分片号。
 
-[**[lsp-name]{lang="EN-US"}***[ lspname]{lang="EN-US"}*]{#struct_0_x1984_13510_x549510444}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[名称，形式为]{style="font-family:宋体"}[Symbolic name.\[Pseudo ID\]-fragment num]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[lsp-name*** lspname*]：LSP名称，形式为Symbolic name.[Pseudo ID-fragment num]。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_x1984_13510_x191229646}[：显示链路状态数据库中的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的详细信息。如果未指定该参数，将显示链路状态数据库中的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的概要信息。]{style="font-family:宋体"}
+**[verbose**]：显示链路状态数据库中的LSP的详细信息。如果未指定该参数，将显示链路状态数据库中的LSP的概要信息。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_x1984_13510_423693324}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，显示指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的链路状态数据库信息。如果未指定本参数，将显示所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的链路状态数据库信息。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535，显示指定IS-IS进程的链路状态数据库信息。如果未指定本参数，将显示所有IS-IS进程的链路状态数据库信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1625943473}
+【使用指导】
 
-[[如果未指定级别，将同时显示]{style="font-family:宋体"}[Level-1]{lang="EN-US"}]{#struct_0_x1984_13510_1394052277}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的链路状态数据库信息。]{style="font-family:宋体"}
+如果未指定级别，将同时显示Level-1和Level-2的链路状态数据库信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1953001340}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_376418426}[显示]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[链路状态数据库的概要信息。]{style="font-family:宋体"}
+\# 显示Level-1链路状态数据库的概要信息。
 
-[[\<Sysname\> display isis lsdb level-1]{lang="EN-US"}]{#struct_0_x1984_13510_1514637926}
+\<Sysname\> display isis lsdb level-1
 
-[ ]{lang="EN-US"}
+                        Database information for IS-IS(1)
 
-[                        Database information for IS-IS(1)]{lang="EN-US"}
+                        \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                        \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+                          Level-1 Link State Database
 
-[ ]{lang="EN-US"}
+                          \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                          Level-1 Link State Database]{lang="EN-US"}
+LSPID                 Seq Num      Checksum      Holdtime      Length  ATT/P/OL
 
-[                          \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ ]{lang="EN-US"}
+0000.0000.0001.00-00\* 0x00000087   0xf846        1152          183     0/0/0
 
-[LSPID                 Seq Num      Checksum      Holdtime      Length  ATT/P/OL]{lang="EN-US"}
+0000.0000.0003.00-00  0x00000005   0x4bee        520           177     0/0/0
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+0000.0000.0003.00-01  0x00000004   0x7245        520           45      0/0/0
 
-[0000.0000.0001.00-00\* 0x00000087   0xf846        1152          183     0/0/0]{lang="EN-US"}
+0000.0000.0011.00-00  0x0000000b   0xcdf6        815           183     0/0/0
 
-[0000.0000.0003.00-00  0x00000005   0x4bee        520           177     0/0/0]{lang="EN-US"}
+    \*-Self LSP, +-Self LSP(Extended), ATT-Attached, P-Partition, OL-Overload
 
-[0000.0000.0003.00-01  0x00000004   0x7245        520           45      0/0/0]{lang="EN-US"}
+\# 显示Level-1链路状态数据库的详细信息。
 
-[0000.0000.0011.00-00  0x0000000b   0xcdf6        815           183     0/0/0]{lang="EN-US"}
+\<Sysname\> display isis lsdb level-1 verbose
 
-[ ]{lang="EN-US"}
+                        Database information for IS-IS(1)
 
-[    \*-Self LSP, +-Self LSP(Extended), ATT-Attached, P-Partition, OL-Overload]{lang="EN-US"}
+                        \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1314942806}[显示]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[链路状态数据库的详细信息。]{style="font-family:宋体"}
+                          Level-1 Link State Database
 
-[[\<Sysname\> display isis lsdb level-1 verbose]{lang="EN-US"}]{#struct_0_x1984_13510_1514637933}
+                          \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ ]{lang="EN-US"}
+LSPID                 Seq Num      Checksum      Holdtime      Length  ATT/P/OL
 
-[                        Database information for IS-IS(1)]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                        \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+0000.0000.0001.00-00\* 0x00000080   0x73f         1185          183     0/0/0
 
-[ ]{lang="EN-US"}
+ Source       0000.0000.0001.00
 
-[                          Level-1 Link State Database]{lang="EN-US"}
+ NLPID        IPv4
 
-[                          \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ Area address 10
 
-[ ]{lang="EN-US"}
+ IPv4 address 192.168.220.10
 
-[LSPID                 Seq Num      Checksum      Holdtime      Length  ATT/P/OL]{lang="EN-US"}
+ MT ID        0000   (-/-)
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ MT ID        0002   (-/-)
 
-[0000.0000.0001.00-00\* 0x00000080   0x73f         1185          183     0/0/0]{lang="EN-US"}
+ MT ID        0006   (-/-)
 
-[ Source       0000.0000.0001.00]{lang="EN-US"}
+ +NBR  ID
 
-[ NLPID        IPv4]{lang="EN-US"}
+     0000.0000.0011.00                Cost: 100
 
-[ Area address 10]{lang="EN-US"}
+     Admin group: 0x00000000
 
-[ IPv4 address 192.168.220.10]{lang="EN-US"}
+     Physical bandwidth: 12500000 bytes/sec
 
-[ MT ID        0000   (-/-)]{lang="EN-US"}
+     Reservable bandwidth: 0 bytes/sec
 
-[ MT ID        0002   (-/-)]{lang="EN-US"}
+     Unreserved bandwidth for each TE class:
 
-[ MT ID        0006   (-/-)]{lang="EN-US"}
+       TE class  0: 0 bytes/sec             TE class  1: 0 bytes/sec
 
-[ +NBR  ID]{lang="EN-US"}
+       TE class  2: 0 bytes/sec             TE class  3: 0 bytes/sec
 
-[     0000.0000.0011.00                Cost: 100]{lang="EN-US"}
+       TE class  4: 0 bytes/sec             TE class  5: 0 bytes/sec
 
-[     Admin group: 0x00000000]{lang="EN-US"}
+       TE class  6: 0 bytes/sec             TE class  7: 0 bytes/sec
 
-[     Physical bandwidth: 12500000 bytes/sec]{lang="EN-US"}
+       TE class  8: 0 bytes/sec             TE class  9: 0 bytes/sec
 
-[     Reservable bandwidth: 0 bytes/sec]{lang="EN-US"}
+       TE class 10: 0 bytes/sec             TE class 11: 0 bytes/sec
 
-[     Unreserved bandwidth for each TE class:]{lang="EN-US"}
+       TE class 12: 0 bytes/sec             TE class 13: 0 bytes/sec
 
-[       TE class  0: 0 bytes/sec             TE class  1: 0 bytes/sec]{lang="EN-US"}
+       TE class 14: 0 bytes/sec             TE class 15: 0 bytes/sec
 
-[       TE class  2: 0 bytes/sec             TE class  3: 0 bytes/sec]{lang="EN-US"}
+     TE cost: 10
 
-[       TE class  4: 0 bytes/sec             TE class  5: 0 bytes/sec]{lang="EN-US"}
+     Bandwidth constraint model: Prestandard DS-TE RDM
 
-[       TE class  6: 0 bytes/sec             TE class  7: 0 bytes/sec]{lang="EN-US"}
+     Bandwidth constraints:
 
-[       TE class  8: 0 bytes/sec             TE class  9: 0 bytes/sec]{lang="EN-US"}
+       BC[0      : 0 bytes/sec             BC1      : 0 bytes/sec]
 
-[       TE class 10: 0 bytes/sec             TE class 11: 0 bytes/sec]{lang="EN-US"}
+     Neighbor IP address: 192.168.220.30
 
-[       TE class 12: 0 bytes/sec             TE class 13: 0 bytes/sec]{lang="EN-US"}
+     Interface IP address: 192.168.220.10
 
-[       TE class 14: 0 bytes/sec             TE class 15: 0 bytes/sec]{lang="EN-US"}
+ IPv6 unicast NBR ID
 
-[     TE cost: 10]{lang="EN-US"}
+     6464.6464.6464.01                Cost: 10         MT ID: 2
 
-[     Bandwidth constraint model: Prestandard DS-TE RDM]{lang="EN-US"}
+ MT NBR ID
 
-[     Bandwidth constraints:]{lang="EN-US"}
+     6464.6464.6464.01                Cost: 10         MT ID: 6
 
-[       BC\[0\]      : 0 bytes/sec             BC\[1\]      : 0 bytes/sec]{lang="EN-US"}
+ +IP-Extended
 
-[     Neighbor IP address: 192.168.220.30]{lang="EN-US"}
+     192.168.220.0   255.255.255.0    Cost: 100
 
-[     Interface IP address: 192.168.220.10]{lang="EN-US"}
+ IPv4 unicast
 
-[ IPv6 unicast NBR ID]{lang="EN-US"}
+     1.1.1.1         255.255.255.255  Cost: 0          MT ID: 6
 
-[     6464.6464.6464.01                Cost: 10         MT ID: 2]{lang="EN-US"}
+ IPv4 unicast
 
-[ MT NBR ID]{lang="EN-US"}
+     10.10.10.0      255.255.255.0    Cost: 10         MT ID: 6
 
-[     6464.6464.6464.01                Cost: 10         MT ID: 6]{lang="EN-US"}
+ IPv6 unicast
 
-[ +IP-Extended]{lang="EN-US"}
+     1:1:1::1/128                     Cost: 0          MT ID: 2
 
-[     192.168.220.0   255.255.255.0    Cost: 100]{lang="EN-US"}
+ IPv6 unicast
 
-[ IPv4 unicast]{lang="EN-US"}
+     10:10:10::/64                    Cost: 10         MT ID: 2
 
-[     1.1.1.1         255.255.255.255  Cost: 0          MT ID: 6]{lang="EN-US"}
+ Router ID    1.1.1.1
 
-[ IPv4 unicast]{lang="EN-US"}
+0000.0000.0003.00-00  0x00000005   0x4bee        887           177     0/0/0
 
-[     10.10.10.0      255.255.255.0    Cost: 10         MT ID: 6]{lang="EN-US"}
+ Source       0000.0000.0003.00
 
-[ IPv6 unicast]{lang="EN-US"}
+ NLPID        IPv4
 
-[     1:1:1::1/128                     Cost: 0          MT ID: 2]{lang="EN-US"}
+ Area address 10
 
-[ IPv6 unicast]{lang="EN-US"}
+ IPv4 address 10.10.10.10
 
-[     10:10:10::/64                    Cost: 10         MT ID: 2]{lang="EN-US"}
+ IPv4 address 192.168.220.20
 
-[ Router ID    1.1.1.1]{lang="EN-US"}
+ +NBR  ID
 
-[ ]{lang="EN-US"}
+     0000.0000.0001.00                Cost: 10
 
-[0000.0000.0003.00-00  0x00000005   0x4bee        887           177     0/0/0]{lang="EN-US"}
+     Admin group: 0x00000000
 
-[ Source       0000.0000.0003.00]{lang="EN-US"}
+     Physical bandwidth: 12500000 bytes/sec
 
-[ NLPID        IPv4]{lang="EN-US"}
+     Reservable bandwidth: 0 bytes/sec
 
-[ Area address 10]{lang="EN-US"}
+     Unreserved bandwidth for each TE class:
 
-[ IPv4 address 10.10.10.10]{lang="EN-US"}
+       TE class  0: 0 bytes/sec             TE class  1: 0 bytes/sec
 
-[ IPv4 address 192.168.220.20]{lang="EN-US"}
+       TE class  2: 0 bytes/sec             TE class  3: 0 bytes/sec
 
-[ +NBR  ID]{lang="EN-US"}
+       TE class  4: 0 bytes/sec             TE class  5: 0 bytes/sec
 
-[     0000.0000.0001.00                Cost: 10]{lang="EN-US"}
+       TE class  6: 0 bytes/sec             TE class  7: 0 bytes/sec
 
-[     Admin group: 0x00000000]{lang="EN-US"}
+       TE class  8: 0 bytes/sec             TE class  9: 0 bytes/sec
 
-[     Physical bandwidth: 12500000 bytes/sec]{lang="EN-US"}
+       TE class 10: 0 bytes/sec             TE class 11: 0 bytes/sec
 
-[     Reservable bandwidth: 0 bytes/sec]{lang="EN-US"}
+       TE class 12: 0 bytes/sec             TE class 13: 0 bytes/sec
 
-[     Unreserved bandwidth for each TE class:]{lang="EN-US"}
+       TE class 14: 0 bytes/sec             TE class 15: 0 bytes/sec
 
-[       TE class  0: 0 bytes/sec             TE class  1: 0 bytes/sec]{lang="EN-US"}
+     TE cost: 10
 
-[       TE class  2: 0 bytes/sec             TE class  3: 0 bytes/sec]{lang="EN-US"}
+     Bandwidth constraint model: Prestandard DS-TE RDM
 
-[       TE class  4: 0 bytes/sec             TE class  5: 0 bytes/sec]{lang="EN-US"}
+     Bandwidth constraints:
 
-[       TE class  6: 0 bytes/sec             TE class  7: 0 bytes/sec]{lang="EN-US"}
+       BC[0: 0 bytes/sec                   BC1: 0 bytes/sec]
 
-[       TE class  8: 0 bytes/sec             TE class  9: 0 bytes/sec]{lang="EN-US"}
+     Interface IP address: 192.168.220.20
 
-[       TE class 10: 0 bytes/sec             TE class 11: 0 bytes/sec]{lang="EN-US"}
+     Neighbor IP address: 192.168.220.10
 
-[       TE class 12: 0 bytes/sec             TE class 13: 0 bytes/sec]{lang="EN-US"}
+ Router ID    3.3.3.3
 
-[       TE class 14: 0 bytes/sec             TE class 15: 0 bytes/sec]{lang="EN-US"}
+0000.0000.0003.00-01  0x00000004   0x7245        887           45      0/0/0
 
-[     TE cost: 10]{lang="EN-US"}
+ Source       0000.0000.0003.00
 
-[     Bandwidth constraint model: Prestandard DS-TE RDM]{lang="EN-US"}
+ +IP-Extended
 
-[     Bandwidth constraints:]{lang="EN-US"}
+         10.10.10.0      255.255.255.0    Cost: 10
 
-[       BC\[0\]: 0 bytes/sec                   BC\[1\]: 0 bytes/sec]{lang="EN-US"}
+ +IP-Extended
 
-[     Interface IP address: 192.168.220.20]{lang="EN-US"}
+         192.168.220.0   255.255.255.0    Cost: 10
 
-[     Neighbor IP address: 192.168.220.10]{lang="EN-US"}
+\*-Self LSP, +-Self LSP(Extended), ATT-Attached, P-Partition, OL-Overload
 
-[ Router ID    3.3.3.3]{lang="EN-US"}
+表1-6 display isis lsdb命令显示信息描述表
 
-[                                                                                ]{lang="EN-US"}
+字段
 
-[0000.0000.0003.00-01  0x00000004   0x7245        887           45      0/0/0]{lang="EN-US"}
+描述
 
-[ Source       0000.0000.0003.00]{lang="EN-US"}
+LSPID
 
-[ +IP-Extended]{lang="EN-US"}
+链路状态报文ID
 
-[         10.10.10.0      255.255.255.0    Cost: 10]{lang="EN-US"}
+Seq Num
 
-[ +IP-Extended]{lang="EN-US"}
+LSP序列号
 
-[         192.168.220.0   255.255.255.0    Cost: 10]{lang="EN-US"}
+Checksum
 
-[ ]{lang="EN-US"}
+LSP校验和
 
-[ ]{lang="EN-US"}
+Holdtime
 
-[\*-Self LSP, +-Self LSP(Extended), ATT-Attached, P-Partition, OL-Overload]{lang="EN-US"}
+LSP生存时间，随着时间推移递减
 
-[]{#struct_0_x1984_13510_1612745139}[]{#_Toc94753867}[]{#_Toc94671193}[]{#_Toc73952270}[[表1-6 ]{lang="EN-US"}[display isis lsdb]{lang="EN-US"}]{#_Toc68319403}[命令显示]{style="font-family:黑体"}[信息描述表]{style="font-family:
-黑体"}
+Length
 
-[]{#table_struct_0_1395641190}[[字段]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1753455983}
-:::::
+LSP长度
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1984_13510_1032999093}
+ATT/P/OL
 
-[[LSPID]{lang="EN-US"}]{#struct_0_x1984_13510_x1647819718}
+LSP中ATT（Attach bit）、P（Partition bit）、OL（Overload bit）的置位情况，1表示置位，0表示没有置位
 
-[[链路状态报文]{style="font-family:宋体"}]{#struct_0_x1984_13510_1204704442}[ID]{lang="EN-US"}
+Source
 
-[[Seq Num]{lang="EN-US"}]{#struct_0_x1984_13510_x1357187591}
+LSP生成路由器的System ID
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_1612286384}[序列号]{style="font-family:宋体"}
+HOST NAME
 
-[[Checksum]{lang="EN-US"}]{#struct_0_x1984_13510_163049108}
+LSP生成路由器的动态主机名
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_1595777027}[校验和]{style="font-family:宋体"}
+ORG ID
 
-[[Holdtime]{lang="EN-US"}]{#struct_0_x1984_13510_x1717318428}
+LSP生成路由器配置的虚拟系统所对应的原始系统ID
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_1325878620}[生存时间，随着时间推移递减]{style="font-family:宋体"}
+NLPID
 
-[[Length]{lang="EN-US"}]{#struct_0_x1984_13510_1640486834}
+LSP生成路由器运行的网络层协议
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_1612220848}[长度]{style="font-family:宋体"}
+Area address
 
-[[ATT/P/OL]{lang="EN-US"}]{#struct_0_x1984_13510_x926415510}
+LSP生成路由器的区域地址
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x525098106}[中]{style="font-family:宋体"}[ATT]{lang="EN-US"}[（]{style="font-family:宋体"}[Attach bit]{lang="EN-US"}[）、]{style="font-family:宋体"}[P]{lang="EN-US"}[（]{style="font-family:宋体"}[Partition bit]{lang="EN-US"}[）、]{style="font-family:宋体"}[OL]{lang="EN-US"}[（]{style="font-family:宋体"}[Overload bit]{lang="EN-US"}[）的置位情况，]{style="font-family:宋体"}[1]{lang="EN-US"}[表示置位，]{style="font-family:宋体"}[0]{lang="EN-US"}[表示没有置位]{style="font-family:宋体"}
+IPv4 address
 
-[[Source]{lang="EN-US"}]{#struct_0_x1984_13510_x2007587509}
+LSP生成路由器使能IS-IS功能接口的IP地址
 
-[[LSP]{lang="SV"}]{#struct_0_x1984_13510_425379096}[生成路由器的]{style="font-family:宋体"}[System ID]{lang="SV"}
+IPv6 address
 
-[[HOST NAME]{lang="EN-US"}]{#struct_0_x1984_13510_x1690352741}
+LSP生成路由器使能IPv6 IS-IS功能接口的IPv6地址
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_1038530614}[生成路由器的动态主机名]{style="font-family:宋体"}
+MT ID        0000     (-/-)
 
-[[ORG ID]{lang="EN-US"}]{#struct_0_x1984_13510_x883783687}
+MT ID        0002     (-/-)
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_1845099668}[生成路由器配置的虚拟系统所对应的原始系统]{style="font-family:宋体"}[ID]{lang="EN-US"}
+MT ID        0006     (-/-)
 
-[[NLPID]{lang="EN-US"}]{#struct_0_x1984_13510_1612155312}
+LSP生成路由器支持的拓扑信息
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x1372691755}[生成路由器运行的网络层协议]{style="font-family:宋体"}
+·0000表示标准拓扑，0002表示IPv6单播拓扑，0006表示IPv4单播拓扑
 
-[[Area address]{lang="EN-US"}]{#struct_0_x1984_13510_x423740390}
+·(-/-)，即ATT/OL
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_1521156484}[生成路由器的区域地址]{style="font-family:宋体"}
+NBR ID
 
-[[IPv4 address]{lang="EN-US"}]{#struct_0_x1984_13510_1831029378}
+LSP生成路由器邻居的System ID
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_1612089776}[生成路由器使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+MT NBR ID
 
-[[IPv6 address]{lang="EN-US"}]{#struct_0_x1984_13510_158020968}
+LSP生成路由器的IPv4单播拓扑邻居信息
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x1558952082}[生成路由器使能]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[功能接口的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址]{style="font-family:宋体"}
+IPv6 unicast NBR ID
 
-[[MT ID        0000     (-/-)]{lang="EN-US"}]{#struct_0_x1984_13510_1752537465}
+LSP生成路由器的IPv6单播邻居信息
 
-[[MT ID        0002     (-/-)]{lang="EN-US"}]{#struct_0_x1984_13510_1752603001}
+Admin group
 
-[[MT ID        0006     (-/-)]{lang="EN-US"}]{#struct_0_x1984_13510_1752668537}
+链路管理组属性
 
-[[LSP]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1984_13510_1752734073}[生成路由器支持的拓扑信息]{style="font-size:9.0pt;font-family:宋体"}
+Interface IP address
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[0000]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_x1984_13510_1752799609}[表示标准拓扑，]{style="font-size:9.0pt;font-family:宋体"}[0002]{lang="EN-US" style="font-size:9.0pt"}[表示]{style="font-size:9.0pt;font-family:
-  宋体"}[IPv6]{lang="EN-US" style="font-size:9.0pt"}[单播拓扑，]{style="font-size:9.0pt;font-family:宋体"}[0006]{lang="EN-US" style="font-size:9.0pt"}[表示]{style="font-size:9.0pt;font-family:
-  宋体"}[IPv4]{lang="EN-US" style="font-size:9.0pt"}[单播拓扑]{style="font-size:9.0pt;font-family:宋体"}
+与对端相连的本地接口IP地址
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[(-/-)]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_x1984_13510_1373983980}[，即]{style="font-size:9.0pt;font-family:宋体"}[ATT/OL]{lang="EN-US" style="font-size:9.0pt"}
+Neighbor IP address
 
-[[NBR ID]{lang="EN-US"}]{#struct_0_x1984_13510_x621588644}
+邻居的接口IP地址
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x521951724}[生成路由器邻居的]{style="font-family:宋体"}[System ID]{lang="EN-US"}
+Physical bandwidth
 
-[[MT NBR ID]{lang="EN-US"}]{#struct_0_x1984_13510_1752865145}
+物理带宽
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_1752930681}[生成路由器的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[单播拓扑邻居信息]{style="font-family:宋体"}
+Reservable bandwidth
 
-[[IPv6 unicast NBR ID]{lang="EN-US"}]{#struct_0_x1984_13510_1752996217}
+预留带宽
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_1753061753}[生成路由器的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[单播邻居信息]{style="font-family:宋体"}
+Unreserved bandwidth for each TE class
 
-[[Admin group]{lang="EN-US"}]{#struct_0_x1984_13510_198094970}
+每个TE class的可预留带宽
 
-[[链路管理组属性]{style="font-family:宋体"}]{#struct_0_x1984_13510_1753127289}
+TE class
 
-[[Interface IP address]{lang="EN-US"}]{#struct_0_x1984_13510_x976345887}
+8个或16个TE class各自的可用带宽
 
-[[与对端相连的本地接口]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x1984_13510_x976280351}[地址]{style="font-family:宋体"}
+TE cost
 
-[[Neighbor IP address]{lang="EN-US"}]{#struct_0_x1984_13510_x976214815}
+TE开销
 
-[[邻居的接口]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x1984_13510_x976149279}[地址]{style="font-family:宋体"}
+Bandwidth constraint model
 
-[[Physical bandwidth]{lang="EN-US"}]{#struct_0_x1984_13510_x976083743}
+带宽约束模型，取值包括：
 
-[[物理带宽]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1357613518}
+·Prestandard DS-TE RDM
 
-[[Reservable bandwidth]{lang="EN-US"}]{#struct_0_x1984_13510_x976018207}
+·IETF DS-TE RDM
 
-[[预留带宽]{style="font-family:宋体"}]{#struct_0_x1984_13510_x975952671}
+·IETF DS-TE MAM
 
-[[Unreserved bandwidth for each TE class]{lang="EN-US"}]{#struct_0_x1984_13510_x975887135}
+BC
 
-[[每个]{style="font-family:宋体"}[TE class]{lang="EN-US"}]{#struct_0_x1984_13510_x975821599}[的可预留带宽]{style="font-family:宋体"}
+各个带宽约束值（Prestandard模式支持2个BC，IETF模式支持至多8个BC）
 
-[[TE class]{lang="EN-US"}]{#struct_0_x1984_13510_x975756063}
+Router ID
 
-[[8]{lang="EN-US"}]{#struct_0_x1984_13510_x976345886}[个或]{style="font-family:宋体"}[16]{lang="EN-US"}[个]{style="font-family:宋体"}[TE class]{lang="EN-US"}[各自的可用带宽]{style="font-family:宋体"}
+路由器ID
 
-[[TE cost]{lang="EN-US"}]{#struct_0_x1984_13510_x939040777}
+IP-Internal
 
-[[TE]{lang="EN-US"}]{#struct_0_x1984_13510_x976280350}[开销]{style="font-family:宋体"}
+LSP生成路由器的IP内部可达地址和掩码信息
 
-[[Bandwidth constraint model]{lang="EN-US"}]{#struct_0_x1984_13510_x976214814}
+IP-External
 
-[[带宽约束模型，取值包括：]{style="font-family:宋体"}]{#struct_0_x1984_13510_x976149278}
+LSP生成路由器的IP外部可达地址和掩码信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Prestandard DS-TE RDM]{lang="EN-US"}]{#struct_0_x1984_13510_x976083742}
+IP-Extended
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IETF DS-TE RDM]{lang="EN-US"}]{#struct_0_x1984_13510_x976018206}
+LSP生成路由器的扩展IP可达地址和掩码信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IETF DS-TE MAM]{lang="EN-US"}]{#struct_0_x1984_13510_x975952670}
+Cost
 
-[[BC]{lang="EN-US"}]{#struct_0_x1984_13510_x975887134}
+开销值
 
-[[各个带宽约束值（]{style="font-family:宋体"}[Prestandard]{lang="EN-US"}]{#struct_0_x1984_13510_x975821598}[模式支持]{style="font-family:宋体"}[2]{lang="EN-US"}[个]{style="font-family:宋体"}[BC]{lang="EN-US"}[，]{style="font-family:宋体"}[IETF]{lang="EN-US"}[模式支持至多]{style="font-family:宋体"}[8]{lang="EN-US"}[个]{style="font-family:宋体"}[BC]{lang="EN-US"}[）]{style="font-family:宋体"}
+Auth
 
-[[Router ID]{lang="EN-US"}]{#struct_0_x1984_13510_1513721455}
+LSP生成路由器的认证信息
 
-[[路由器]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1984_13510_x975756062}
+IPV6
 
-[[IP-Internal]{lang="EN-US"}]{#struct_0_x1984_13510_1612548528}
+LSP生成路由器的IP内部可达IPv6地址和前缀信息
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x1758549669}[生成路由器的]{style="font-family:宋体"}[IP]{lang="EN-US"}[内部可达地址和掩码信息]{style="font-family:宋体"}
+IPV6-Ext
 
-[[IP-External]{lang="EN-US"}]{#struct_0_x1984_13510_x922987850}
+LSP生成路由器的IP外部可达IPv6地址和前缀信息
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x220295905}[生成路由器的]{style="font-family:宋体"}[IP]{lang="EN-US"}[外部可达地址和掩码信息]{style="font-family:宋体"}
+IPv4 unicast
 
-[[IP-Extended]{lang="EN-US"}]{#struct_0_x1984_13510_1612482992}
+LSP生成路由器的IPv4单播可达信息
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_221125491}[生成路由器的扩展]{style="font-family:宋体"}[IP]{lang="EN-US"}[可达地址和掩码信息]{style="font-family:宋体"}
+IPv6 unicast
 
-[[Cost]{lang="EN-US"}]{#struct_0_x1984_13510_x152253745}
+LSP生成路由器的IPv6单播内部可达信息
 
-[[开销值]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1698851822}
+IPv6 unicast-ext
 
-[[Auth]{lang="EN-US"}]{#struct_0_x1984_13510_1612417456}
-
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x1735100104}[生成路由器的认证信息]{style="font-family:宋体"}
-
-[[IPV6]{lang="EN-US"}]{#struct_0_x1984_13510_x168034106}
-
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_166589132}[生成路由器的]{style="font-family:宋体"}[IP]{lang="EN-US"}[内部可达]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址和前缀信息]{style="font-family:宋体"}
-
-[[IPV6-Ext]{lang="EN-US"}]{#struct_0_x1984_13510_1612351920}
-
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x1314877270}[生成路由器的]{style="font-family:宋体"}[IP]{lang="EN-US"}[外部可达]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址和前缀信息]{style="font-family:宋体"}
-
-[[IPv4 unicast]{lang="EN-US"}]{#struct_0_x1984_13510_x976149281}
-
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x1708726143}[生成路由器的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[单播可达信息]{style="font-family:宋体"}
-
-[[IPv6 unicast]{lang="EN-US"}]{#struct_0_x1984_13510_x976083745}
-
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x976018209}[生成路由器的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[单播内部可达信息]{style="font-family:宋体"}
-
-[[IPv6 unicast-ext]{lang="EN-US"}]{#struct_0_x1984_13510_x975952673}
-
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x975887137}[生成路由器的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[单播外部可达信息]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-297665974 .myid}
-[]{#_Toc163546246}[]{#_Toc50204091}[]{#_Toc33866090}[]{#_Toc404788355}[]{#struct_0_x1984_13510_x1561344843}[]{#_Toc310604324}[]{#_Toc290886761}[]{#_Toc252200740}[]{#_Toc163546244}[]{#_Toc50204090}[]{#_Toc33866089}
+LSP生成路由器的IPv6单播外部可达信息
 
 **IS-IS \-- IS-IS配置命令 \-- display isis mesh-group**
 
 ------------------------------------------------------------------------
 
-[**[display isis mesh-group]{lang="EN-US"}**]{#struct_0_x1984_13510_2146417389}[命令用来显示]{style="font-family:宋体"}[IS-IS Mesh-Group]{lang="EN-US"}[的配置信息。]{style="font-family:宋体"}
+**[display isis mesh-group**]命令用来显示IS-IS Mesh-Group的配置信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1437987018}
+【命令】
 
-[**[display]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x1984_13510_x2137737692}**[isis]{lang="EN-US"}**[ **mesh-group** \[ *process-id* \]]{lang="EN-US"}
+**[display**]**isis** **mesh-group** [ *process-id* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1612810672}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_213582883}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_414035053}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_240135857}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1984_13510_1508621211}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1583310781}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1984_13510_1803316842}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_641731903}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_x1984_13510_1612745136}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，显示指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[Mesh-Group]{lang="EN-US"}[的配置信息。如果未指定本参数，将显示所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[Mesh-Group]{lang="EN-US"}[的配置信息。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535，显示指定IS-IS进程Mesh-Group的配置信息。如果未指定本参数，将显示所有IS-IS进程Mesh-Group的配置信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1752472943}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_x1441821204}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_759552280}[配置路由器上运行]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[Serial2/1/0]{lang="EN-US"}[接口和]{style="font-family:宋体"}[Serial2/1/1]{lang="EN-US"}[接口属于]{style="font-family:宋体"}[Mesh-Group 100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置路由器上运行IS-IS的Serial2/1/0接口和Serial2/1/1接口属于Mesh-Group 100。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_1446073709}
+\<Sysname\> system-view
 
-[\[Sysname\] interface serial 2/1/0]{lang="EN-US"}
+Sysname interface serial 2/1/0
 
-[\[Sysname-Serial2/1/0\] isis mesh-group 100]{lang="EN-US"}
+Sysname-Serial2/1/0 isis mesh-group 100
 
-[\[Sysname-Serial2/1/0\] quit]{lang="EN-US"}
+Sysname-Serial2/1/0 quit
 
-[\[Sysname\] interface serial 2/1/1]{lang="EN-US"}
+Sysname interface serial 2/1/1
 
-[\[Sysname-Serial2/1/1\] isis mesh-group 100]{lang="EN-US"}
+Sysname-Serial2/1/1 isis mesh-group 100
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_166383419}[显示配置的]{style="font-family:宋体"}[IS-IS Mesh-Group]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+\# 显示配置的IS-IS Mesh-Group的信息。
 
-[[\[Sysname-Serial2/1/1\] display isis mesh-group]{lang="EN-US"}]{#struct_0_x1984_13510_1612286385}
+Sysname-Serial2/1/1 display isis mesh-group
 
-[               Mesh Group information for IS-IS(1)]{lang="EN-US"}
+               Mesh Group information for IS-IS(1)
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ Interface          Status]{lang="EN-US"}
+ Interface          Status
 
-[ Serial2/1/0         Blocked]{lang="EN-US"}
+ Serial2/1/0         Blocked
 
-[ Serial2/1/1          100]{lang="EN-US"}
+ Serial2/1/1          100
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_162983572}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1384917752}[配置交换机上运行]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[接口和]{style="font-family:宋体"}[Vlan-interface20]{lang="EN-US"}[接口属于]{style="font-family:宋体"}[Mesh-Group 100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置交换机上运行IS-IS的Vlan-interface10接口和Vlan-interface20接口属于Mesh-Group 100。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_449768312}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] isis mesh-group 100]{lang="EN-US"}
+Sysname-Vlan-interface10 isis mesh-group 100
 
-[\[Sysname-Vlan-interface10\] interface vlan-interface 20]{lang="EN-US"}
+Sysname-Vlan-interface10 interface vlan-interface 20
 
-[\[Sysname-Vlan-interface20\] isis mesh-group 100]{lang="EN-US"}
+Sysname-Vlan-interface20 isis mesh-group 100
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1636178271}[显示配置的]{style="font-family:宋体"}[IS-IS Mesh-Group]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+\# 显示配置的IS-IS Mesh-Group的信息。
 
-[[\[Sysname-Vlan-interface20\] display isis mesh-group]{lang="EN-US"}]{#struct_0_x1984_13510_1612220849}
+Sysname-Vlan-interface20 display isis mesh-group
 
-[ ]{lang="EN-US"}
+                       Mesh Group information for IS-IS(1)
 
-[                       Mesh Group information for IS-IS(1)]{lang="EN-US"}
+                       \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                       \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ Interface          Status
 
-[ Interface          Status]{lang="EN-US"}
+ Vlan10              Blocked
 
-[ Vlan10              Blocked]{lang="EN-US"}
+ Vlan20              100
 
-[ Vlan20              100]{lang="EN-US"}
+表1-7 display isis mesh-group命令显示信息描述表
 
-[[表1-7 ]{lang="EN-US"}[display isis mesh-group]{lang="EN-US"}]{#struct_0_x1984_13510_x926481046}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1420921593}[[字段]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1287424521}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1984_13510_x294958908}
+Interface
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1984_13510_x146505294}
+接口名称
 
-[[接口名称]{style="font-family:宋体"}]{#struct_0_x1984_13510_269333351}
+Status
 
-[[Status]{lang="EN-US"}]{#struct_0_x1984_13510_1612155313}
-
-[[接口所属的]{style="font-family:宋体"}[Mesh-Group/]{lang="EN-US"}]{#struct_0_x1984_13510_x1372626219}[是否配置了接口阻塞]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#461322032 .myid}
-[]{#_Toc404788356}[]{#struct_0_x1984_13510_x23322530}[]{#_Toc310604325}[]{#_Toc290886762}[]{#_Toc252200741}[]{#_Toc163546245}[]{#_Toc94930836}[]{#_Toc94586568}
+接口所属的Mesh-Group/是否配置了接口阻塞
 
 **IS-IS \-- IS-IS配置命令 \-- display isis name-table**
 
 ------------------------------------------------------------------------
 
-[**[display isis name-table]{lang="EN-US"}**]{#struct_0_x1984_13510_x2094097686}[命令用来显示系统]{style="font-family:宋体"}[ID]{lang="EN-US"}[到主机名称的映射关系表。]{style="font-family:宋体"}
+**[display isis name-table**]命令用来显示系统ID到主机名称的映射关系表。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1577865610}
+【命令】
 
-[**[display ]{lang="EN-US"}**]{#struct_0_x1984_13510_x533687856}**[isis]{lang="EN-US"}[ name-table ]{lang="EN-US"}**[\[ *process-id* \]]{lang="EN-US"}
+**[display **]**isis name-table ** *process-id*
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x117340920}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_1318113854}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1612089777}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_157955432}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1984_13510_1974339281}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1566579631}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1984_13510_x1853086996}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1849190908}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_x1984_13510_1265525732}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，显示指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程系统]{style="font-family:宋体"}[ID]{lang="EN-US"}[到主机名称的映射关系表。如果未指定本参数，将显示所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程系统]{style="font-family:宋体"}[ID]{lang="EN-US"}[到主机名称的映射关系表。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535，显示指定IS-IS进程系统ID到主机名称的映射关系表。如果未指定本参数，将显示所有IS-IS进程系统ID到主机名称的映射关系表。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x643524049}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x294692268}[显示系统]{style="font-family:宋体"}[ID]{lang="EN-US"}[到主机名称的映射关系表。]{style="font-family:宋体"}
+\# 显示系统ID到主机名称的映射关系表。
 
-[[\<Sysname\> display isis name-table]{lang="EN-US"}]{#struct_0_x1984_13510_x441677207}
+\<Sysname\> display isis name-table
 
-[                      Name table information for IS-IS(1)]{lang="EN-US"}
+                      Name table information for IS-IS(1)
 
-[                      \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+                      \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ System ID           Hostname                            Type       Level]{lang="EN-US"}
+ System ID           Hostname                            Type       Level
 
-[ 6789.0000.0001      RUTA                                DYNAMIC    Level-1]{lang="EN-US"}
+ 6789.0000.0001      RUTA                                DYNAMIC    Level-1
 
-[ 6789.0000.0001      RUTA                                DYNAMIC    Level-2]{lang="EN-US"}
+ 6789.0000.0001      RUTA                                DYNAMIC    Level-2
 
-[ 0000.0000.0041      RUTB                                STATIC     Level-1]{lang="EN-US"}
+ 0000.0000.0041      RUTB                                STATIC     Level-1
 
-[ 0000.0000.0041      RUTB                                STATIC     Level-2]{lang="EN-US"}
+ 0000.0000.0041      RUTB                                STATIC     Level-2
 
-[ 6789.0000.0001.01   DIS-A                               DYNAMIC    Level-1]{lang="EN-US"}
+ 6789.0000.0001.01   DIS-A                               DYNAMIC    Level-1
 
-[ 0000.0000.0041.01   DIS-B                               DYNAMIC    Level-2]{lang="EN-US"}
+ 0000.0000.0041.01   DIS-B                               DYNAMIC    Level-2
 
-[]{#struct_0_x1984_13510_x2101629899}[]{#_Toc94753869}[]{#_Toc94671195}[]{#_Toc73952272}[[表1-8 ]{lang="EN-US"}[display isis name-table]{lang="EN-US"}]{#_Toc68319405}[命令显示]{style="font-family:黑体"}[信息描述表]{style="font-family:黑体"}
+表1-8 display isis name-table命令显示信息描述表
 
-[]{#table_struct_0_1420232108}[[字段]{style="font-family:黑体"}]{#struct_0_x1984_13510_1612482993}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1984_13510_221059955}
+描述
 
-[[System ID]{lang="EN-US"}]{#struct_0_x1984_13510_x201185017}
+System ID
 
-[[系统]{style="font-family:宋体"}]{#struct_0_x1984_13510_838350823}[ID]{lang="EN-US"}
+系统ID
 
-[[Hostname]{lang="EN-US"}]{#struct_0_x1984_13510_1966336991}
+Hostname
 
-[[主机名称]{style="font-family:宋体"}]{#struct_0_x1984_13510_x294383734}
+主机名称
 
-[[Type]{lang="EN-US"}]{#struct_0_x1984_13510_1612417457}
+Type
 
-[[系统]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1735034568}[ID]{lang="EN-US"}[与主机名称映射关系的生成方式，其中：]{style="font-family:宋体"}
+系统ID与主机名称映射关系的生成方式，其中：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DYNAMIC]{lang="EN-US"}]{#struct_0_x1984_13510_x314024679}[：]{style="font-family:宋体"}[表示映射关系是动态生成的]{lang="EN-US" style="font-family:宋体"}
+·DYNAMIC：表示映射关系是动态生成的
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[STATIC]{lang="EN-US"}]{#struct_0_x1984_13510_x649223134}[：]{style="font-family:宋体"}[表示映射关系是通过静态配置的]{lang="EN-US" style="font-family:宋体"}
+·STATIC：表示映射关系是通过静态配置的
 
-[[Level]{lang="EN-US"}]{#struct_0_x1984_13510_x976149280}
+Level
 
-[[系统]{style="font-family:宋体"}]{#struct_0_x1984_13510_x976083744}[ID]{lang="EN-US"}[与主机名称映射关系生效的]{style="font-family:宋体"}[Level]{lang="EN-US"}
+系统ID与主机名称映射关系生效的Level
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Level-1]{lang="EN-US"}]{#struct_0_x1984_13510_x1357285838}[：表示该映射关系在]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[生效]{style="font-family:宋体"}
+·Level-1：表示该映射关系在Level-1生效
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Level-2]{lang="EN-US"}]{#struct_0_x1984_13510_x976018208}[：表示该映射关系在]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[生效]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::::: {#-1159071170 .myid}
-[]{#_Toc404788357}[]{#struct_0_x1984_13510_x121398257}[]{#_Toc332962779}
+·Level-2：表示该映射关系在Level-2生效
 
 **IS-IS \-- IS-IS配置命令 \-- display isis non-stop-routing event-log**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IS-IS命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1984_13510_461678036}
-:::
+![说明](IS-IS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1984_13510_x460787576}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[display isis non-stop-routing event-log**]命令用来显示IS-IS NSR日志信息。
 
-[**[display isis non-stop-routing event-log]{lang="EN-US"}**]{#struct_0_x1984_13510_1612351921}[命令用来显示]{style="font-family:宋体"}[IS-IS NSR]{lang="EN-US"}[日志信息。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1314811734}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}]{#struct_0_x1984_13510_x142343614}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+**[display isis non-stop-routing event-log slot** *slot-number* [ **cpu** *cpu-number* ]]
 
-[**[display isis non-stop-routing event-log slot]{lang="EN-US"}**[ *slot-number* \[ **cpu** *cpu-number* \]]{lang="EN-US"}]{#struct_0_x1984_13510_122723411}
+分布式设备－IRF模式：
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1984_13510_250896821}[模式：]{style="font-family:宋体"}
+**[display isis non-stop-routing event-log chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number* ]]
 
-[**[display isis non-stop-routing event-log chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \]]{lang="EN-US"}]{#struct_0_x1984_13510_344439544}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_289660190}
+任意视图
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1599875117}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1612810673}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_213648419}
+network-operator
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1984_13510_1062352555}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1601781026}
+mdc-operator
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1984_13510_x1779460063}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_618517633}
+**[slot**]* slot-number*：显示指定单板的IS-IS NSR日志信息，*slot-number*表示单板所在的槽位号。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**]{#struct_0_x1984_13510_x1979563329}*[ slot-number]{lang="EN-US"}*[：显示指定单板的]{style="font-family:宋体"}[IS-IS NSR]{lang="EN-US"}[日志信息]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot**]* slot-number*：显示指定成员设备的IS-IS NSR日志信息，*slot-number*表示设备在IRF中的成员编号。（集中式IRF设备）
 
-[**[slot]{lang="EN-US"}**]{#struct_0_x1984_13510_x2051520600}*[ slot-number]{lang="EN-US"}*[：显示指定成员设备的]{style="font-family:宋体"}[IS-IS NSR]{lang="EN-US"}[日志信息]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**[chassis**] *chassis-number* **slot** *slot-number*：显示指定成员设备上指定单板的IS-IS NSR日志信息，*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。（分布式设备－IRF模式）
 
-[**[chassis]{lang="EN-US"}**]{#struct_0_x1984_13510_x1012333905}[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}[：显示指定成员设备上指定单板的]{style="font-family:宋体"}[IS-IS NSR]{lang="EN-US"}[日志信息]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**[cpu** *cpu-number*]：表示CPU的编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_x1984_13510_x441677208}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的编号。只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1612745137}
+\# 显示IS-IS NSR日志信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1752538479}[显示]{style="font-family:宋体"}[IS-IS NSR]{lang="EN-US"}[日志信息。]{style="font-family:宋体"}
+\<Sysname\> display isis non-stop-routing event-log slot 0
 
-[[\<Sysname\> display isis non-stop-routing event-log slot 0]{lang="EN-US"}]{#struct_0_x1984_13510_x441677209}
+IS-IS loginfo :
 
-[IS-IS loginfo :]{lang="EN-US"}
+Jul 20 08:34:05 2012 -Slot=0 Enter HA Block status
 
-[Jul 20 08:34:05 2012 -Slot=0 Enter HA Block status]{lang="EN-US"}
+Jul 19 22:34:05 2012 -Slot=0 Exit HA Block status
 
-[Jul 19 22:34:05 2012 -Slot=0 Exit HA Block status]{lang="EN-US"}
+Jul 19 22:37:53 2012 -Slot=0 Process 1 enter NSR phase (Initialization).
 
-[Jul 19 22:37:53 2012 -Slot=0 Process 1 enter NSR phase (Initialization).]{lang="EN-US"}
+Jul 19 22:37:53 2012 -Slot=0 Process 1 enter NSR phase (Smooth).
 
-[Jul 19 22:37:53 2012 -Slot=0 Process 1 enter NSR phase (Smooth).]{lang="EN-US"}
+Jul 19 22:37:53 2012 -Slot=0 Process 1 enter NSR phase (First SPF computation).
 
-[Jul 19 22:37:53 2012 -Slot=0 Process 1 enter NSR phase (First SPF computation).]{lang="EN-US"}
+Jul 19 22:37:53 2012 -Slot=0 Process 1 enter NSR phase (Redistribution).
 
-[Jul 19 22:37:53 2012 -Slot=0 Process 1 enter NSR phase (Redistribution).]{lang="EN-US"}
+Jul 19 22:37:53 2012 -Slot=0 Process 1 enter NSR phase (Second SPF computation).
 
-[Jul 19 22:37:53 2012 -Slot=0 Process 1 enter NSR phase (Second SPF computation).]{lang="EN-US"}
+Jul 19 22:37:53 2012 -Slot=0 Process 1 enter NSR phase (LSP stability).
 
-[Jul 19 22:37:53 2012 -Slot=0 Process 1 enter NSR phase (LSP stability).]{lang="EN-US"}
+Jul 19 22:37:53 2012 -Slot=0 Process 1 enter NSR phase (LSP generation).
 
-[Jul 19 22:37:53 2012 -Slot=0 Process 1 enter NSR phase (LSP generation).]{lang="EN-US"}
+Jul 19 22:37:53 2012 -Slot=0 Process 1 enter NSR phase (Finish).
 
-[Jul 19 22:37:53 2012 -Slot=0 Process 1 enter NSR phase (Finish).]{lang="EN-US"}
+Jul 19 22:37:53 2012 -Slot=0 Process 1 NSR complete.
 
-[Jul 19 22:37:53 2012 -Slot=0 Process 1 NSR complete.]{lang="EN-US"}
+表1-9 display isis graceful-restart event-log显示信息描述表
 
-[[表1-9 ]{lang="EN-US"}[display isis graceful-restart event-log]{lang="EN-US"}]{#struct_0_x1984_13510_1571252500}[显示]{style="font-family:黑体"}[信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1413569493}[[字段]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1737941378}
-:::::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1984_13510_1612220846}
+NSR phase
 
-[[NSR phase]{lang="EN-US"}]{#struct_0_x1984_13510_x927333014}
+NSR阶段：
 
-[[NSR]{lang="EN-US"}]{#struct_0_x1984_13510_648568521}[阶段]{lang="EN-US" style="font-family:宋体"}[：]{style="font-family:宋体"}
+·Initialization：初始化
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Initializa]{lang="EN-US"}]{#struct_0_x1984_13510_x130703409}[tion]{lang="EN-US"}[：初始化]{style="font-family:宋体"}
+·Smooth：平滑
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Smooth]{lang="EN-US"}]{#struct_0_x1984_13510_x2064820399}[：平滑]{style="font-family:宋体"}
+·First SPF computation：第一次路由计算
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[First SPF computation]{lang="EN-US"}]{#struct_0_x1984_13510_x2083971924}[：第一次路由计算]{style="font-family:宋体"}
+·Redistribution：引入路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Redistribution]{lang="EN-US"}]{#struct_0_x1984_13510_1612155310}[：引入路由]{style="font-family:宋体"}
+·Second SPF computation：第二次路由计算
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Second SPF computation]{lang="EN-US"}]{#struct_0_x1984_13510_x1372560683}[：第二次路由计算]{style="font-family:宋体"}
+·LSP stability：准备生成LSP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSP stability]{lang="EN-US"}]{#struct_0_x1984_13510_x1078805488}[：准备生成]{style="font-family:宋体"}[LSP]{lang="EN-US"}
+·LSP generation：LSP生成和泛洪
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSP generation]{lang="EN-US"}]{#struct_0_x1984_13510_x95307642}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[生成和泛洪]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Finish]{lang="EN-US"}]{#struct_0_x1984_13510_x1195756027}[：完成]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-2003583750 .myid}
-[]{#_Toc404788358}[]{#struct_0_x1984_13510_x2047333177}[]{#_Toc332962780}
+·Finish：完成
 
 **IS-IS \-- IS-IS配置命令 \-- display isis non-stop-routing status**
 
 ------------------------------------------------------------------------
 
-[**[display isis non-stop-routing status]{lang="EN-US"}**]{#struct_0_x1984_13510_1612089774}[命令用来显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[NSR]{lang="EN-US"}[状态。]{style="font-family:宋体"}
+**[display isis non-stop-routing status**]命令用来显示IS-IS的NSR状态。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_157889896}
+【命令】
 
-[**[display isis non-stop-routing status]{lang="EN-US"}**]{#struct_0_x1984_13510_11898668}
+**[display isis non-stop-routing status**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2112532253}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1027451000}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1867312477}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1094794532}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1984_13510_668084923}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x718591308}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1984_13510_1612548526}
+mdc-operator
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1757632165}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x610068231}[显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[NSR]{lang="EN-US"}[状态。]{style="font-family:宋体"}
+\# 显示IS-IS的NSR状态。
 
-[[\<Sysname\> display isis non-stop-routing status]{lang="EN-US"}]{#struct_0_x1984_13510_x441677203}
+\<Sysname\> display isis non-stop-routing status
 
-[ ]{lang="EN-US"}
+                        Nonstop Routing information for IS-IS(1)
 
-[                        Nonstop Routing information for IS-IS(1)]{lang="EN-US"}
+                    \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                    \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+NSR phase: Finish
 
-[NSR phase: Finish]{lang="EN-US"}
+表1-10 display isis non-stop-routing status命令显示信息描述表
 
-[[表1-10 ]{lang="EN-US"}[display isis non-stop-routing status]{lang="EN-US"}]{#struct_0_x1984_13510_x880577268}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1416768338}[[字段]{style="font-family:黑体"}]{#struct_0_x1984_13510_1612482990}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1984_13510_220994419}
+NSR phase
 
-[[NSR phase]{lang="EN-US"}]{#struct_0_x1984_13510_1472391299}
+NSR阶段：
 
-[[NSR]{lang="EN-US"}]{#struct_0_x1984_13510_1823522952}[阶段]{lang="EN-US" style="font-family:宋体"}[：]{style="font-family:宋体"}
+·Initialization：初始化
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Initializa]{lang="EN-US"}]{#struct_0_x1984_13510_x1989927824}[tion]{lang="EN-US"}[：初始化]{style="font-family:宋体"}
+·Smooth：平滑
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Smooth]{lang="EN-US"}]{#struct_0_x1984_13510_x30260255}[：平滑]{style="font-family:宋体"}
+·First SPF computation：第一次路由计算
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[First SPF computation]{lang="EN-US"}]{#struct_0_x1984_13510_x222164879}[：第一次路由计算]{style="font-family:宋体"}
+·Redistribution：引入路由
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Redistribution]{lang="EN-US"}]{#struct_0_x1984_13510_1612417454}[：引入路由]{style="font-family:宋体"}
+·Second SPF computation：第二次路由计算
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Second SPF computation]{lang="EN-US"}]{#struct_0_x1984_13510_x1734969032}[：第二次路由计算]{style="font-family:宋体"}
+·LSP stability：准备生成LSP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSP stability]{lang="EN-US"}]{#struct_0_x1984_13510_1315361820}[：准备生成]{style="font-family:宋体"}[LSP]{lang="EN-US"}
+·LSP generation：LSP生成和泛洪
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSP generation]{lang="EN-US"}]{#struct_0_x1984_13510_1766625455}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[生成和泛洪]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Finish]{lang="EN-US"}]{#struct_0_x1984_13510_293116557}[：完成]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::::: {#-975655005 .myid}
-[]{#_Toc404788359}[]{#struct_0_x1984_13510_1976811819}
+·Finish：完成
 
 **IS-IS \-- IS-IS配置命令 \-- display isis peer**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IS-IS命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1984_13510_1612351918}
-:::
+![说明](IS-IS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1984_13510_x1315401557}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[display isis peer]{lang="EN-US"}**]{#struct_0_x1984_13510_1123083783}[命令用来显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的邻居信息。]{style="font-family:宋体"}
+**[display isis peer**]命令用来显示IS-IS的邻居信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1932235177}
+【命令】
 
-[**[display]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x1984_13510_x408009933}**[isis]{lang="EN-US"}**[ **peer** \[ **statistics** \| **verbose** \] \[ *process-id* \]]{lang="EN-US"}
+**[display**]**isis**[ **peer** [ **statistics** \| **verbose** ]  *process-id* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_671758449}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1012025025}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_269806540}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1167152644}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1984_13510_x942461689}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1786152433}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1984_13510_1762889245}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1612745134}
+【参数】
 
-[**[statistics]{lang="EN-US"}**]{#struct_0_x1984_13510_x1752604015}[：显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[邻居的统计信息。]{style="font-family:宋体"}
+**[statistics**]：显示IS-IS邻居的统计信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_x1984_13510_x454688702}[：显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[邻居的详细信息。如果未指定该参数，将显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[邻居的概要信息。]{style="font-family:宋体"}
+**[verbose**]：显示IS-IS邻居的详细信息。如果未指定该参数，将显示IS-IS邻居的概要信息。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_x1984_13510_x797534301}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，显示指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的邻居信息。如果未指定本参数，将显示所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的邻居信息。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535，显示指定IS-IS进程的邻居信息。如果未指定本参数，将显示所有IS-IS进程的邻居信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1525918165}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1612286383}[显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[邻居的概要信息。]{style="font-family:宋体"}
+\# 显示IS-IS邻居的概要信息。
 
-[[\<Sysname\> display isis peer]{lang="EN-US"}]{#struct_0_x1984_13510_163376788}
+\<Sysname\> display isis peer
 
-[ ]{lang="EN-US"}
+                         Peer information for IS-IS(1)
 
-[                         Peer information for IS-IS(1)]{lang="EN-US"}
+                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ System Id: 0000.0000.0001
 
-[ ]{lang="EN-US"}
+ Interface: GE1/0/2                  Circuit Id:  0000.0000.0001.01
 
-[ System Id: 0000.0000.0001]{lang="EN-US"}
+ State: Up     HoldTime:  27s       Type: L1(L1L2)     PRI: 64
 
-[ Interface: GE1/0/2                  Circuit Id:  0000.0000.0001.01]{lang="EN-US"}
+ System Id: 0000.0000.0001
 
-[ State: Up     HoldTime:  27s       Type: L1(L1L2)     PRI: 64]{lang="EN-US"}
+ Interface: GE1/0/2                  Circuit Id:  0000.0000.0001.01
 
-[ ]{lang="EN-US"}
+ State: Up     HoldTime:  27s       Type: L2(L1L2)     PRI: 64
 
-[ System Id: 0000.0000.0001]{lang="EN-US"}
+\# 显示IS-IS邻居的详细信息。
 
-[ Interface: GE1/0/2                  Circuit Id:  0000.0000.0001.01]{lang="EN-US"}
+\<Sysname\> display isis peer verbose
 
-[ State: Up     HoldTime:  27s       Type: L2(L1L2)     PRI: 64]{lang="EN-US"}
+                         Peer information for IS-IS(1)
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x16468240}[显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[邻居的详细信息。]{style="font-family:宋体"}
+                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[[\<Sysname\> display isis peer verbose]{lang="EN-US"}]{#struct_0_x1984_13510_x1633318302}
+ System ID: 0000.1111.2222
 
-[ ]{lang="EN-US"}
+ Interface: GE1/0/2                  Circuit Id:  0000.1111.2222.01
 
-[                         Peer information for IS-IS(1)]{lang="EN-US"}
+ State: Up     Holdtime:   6s       Type: L1(L1L2)     PRI: 64
 
-[                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ Area address(es): 49
 
-[ ]{lang="EN-US"}
+ Peer IP address(es): 12.0.0.2
 
-[ System ID: 0000.1111.2222]{lang="EN-US"}
+ Peer local circuit ID: 1
 
-[ Interface: GE1/0/2                  Circuit Id:  0000.1111.2222.01]{lang="EN-US"}
+ Peer circuit SNPA address: 000c-293b-c4be
 
-[ State: Up     Holdtime:   6s       Type: L1(L1L2)     PRI: 64]{lang="EN-US"}
+ Uptime: 00:05:07
 
-[ Area address(es): 49]{lang="EN-US"}
+ Adj protocol:  IPv4
 
-[ Peer IP address(es): 12.0.0.2]{lang="EN-US"}
+ Adj P2P three-way handshake: No
 
-[ Peer local circuit ID: 1]{lang="EN-US"}
+Graceful Restart capable
 
-[ Peer circuit SNPA address: 000c-293b-c4be]{lang="EN-US"}
+   Restarting signal: No
 
-[ Uptime: 00:05:07]{lang="EN-US"}
+   Suppress adjacency advertisement: No
 
-[ Adj protocol:  IPv4]{lang="EN-US"}
+ Local topology:
 
-[ Adj P2P three-way handshake: No]{lang="EN-US"}
+   0    2
 
-[Graceful Restart capable]{lang="EN-US"}
+ Remote topology:
 
-[   Restarting signal: No]{lang="EN-US"}
+   0    2
 
-[   Suppress adjacency advertisement: No]{lang="EN-US"}
+ System ID: 0000.0000.0002
 
-[ Local topology:]{lang="EN-US"}
+ Interface: GE1/0/3                  Circuit Id:  001
 
-[   0    2]{lang="EN-US"}
+ State: Up     HoldTime: 27s        Type: L1L2         PRI: \--
 
-[ Remote topology:]{lang="EN-US"}
+ Area address(es): 49
 
-[   0    2]{lang="EN-US"}
+ Peer IP address(es): 192.168.220.30
 
-[ ]{lang="EN-US"}
+ Peer local circuit ID: 1
 
-[ System ID: 0000.0000.0002]{lang="EN-US"}
+ Peer circuit SNPA address: 000c-29fd-ed69
 
-[ Interface: GE1/0/3                  Circuit Id:  001]{lang="EN-US"}
+ Uptime: 00:05:07
 
-[ State: Up     HoldTime: 27s        Type: L1L2         PRI: \--]{lang="EN-US"}
+ Adj protocol:  IPv4
 
-[ Area address(es): 49]{lang="EN-US"}
+ Adj P2P three-way handshake: Yes
 
-[ Peer IP address(es): 192.168.220.30]{lang="EN-US"}
+   Peer extended circuit ID: 2
 
-[ Peer local circuit ID: 1]{lang="EN-US"}
+Graceful Restart capable
 
-[ Peer circuit SNPA address: 000c-29fd-ed69]{lang="EN-US"}
+   Restarting signal: No
 
-[ Uptime: 00:05:07]{lang="EN-US"}
+   Suppress adjacency advertisement: No
 
-[ Adj protocol:  IPv4]{lang="EN-US"}
+表1-11 display isis peer命令显示信息描述表
 
-[ Adj P2P three-way handshake: Yes]{lang="EN-US"}
+字段
 
-[   Peer extended circuit ID: 2]{lang="EN-US"}
+描述
 
-[Graceful Restart capable]{lang="EN-US"}
+System Id
 
-[   Restarting signal: No]{lang="EN-US"}
+邻居的System ID
 
-[   Suppress adjacency advertisement: No]{lang="EN-US"}
+Interface
 
-[[表1-11 ]{lang="EN-US"}[display isis peer]{lang="EN-US"}]{#struct_0_x1984_13510_x927398550}[命令显示信息描述表]{style="font-family:黑体"}
+与对端相连的本地IS-IS接口
 
-[]{#table_struct_0_1415911530}[[字段]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1682528812}
-:::::
+Circuit Id
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1984_13510_1612155311}
+链路ID
 
-[[System Id]{lang="EN-US"}]{#struct_0_x1984_13510_x1372495147}
+State
 
-[[邻居的]{style="font-family:宋体"}[System ID]{lang="EN-US"}]{#struct_0_x1984_13510_1269704022}
+链路状态
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1984_13510_x1318967847}
+HoldTime
 
-[[与对端相连的本地]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1023189133}[IS-IS]{lang="EN-US"}[接口]{style="font-family:宋体"}
+抑制时间，随着时间推移递减，如果在抑制时间内还没有收到邻居发送的Hello报文，则认为邻居已经失效，如果收到了Hello报文，则抑制时间将重置为初始值
 
-[[Circuit Id]{lang="EN-US"}]{#struct_0_x1984_13510_x1898622298}
+Type
 
-[[链路]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1984_13510_1041983731}
+链路关系类型，其中：
 
-[[State]{lang="EN-US"}]{#struct_0_x1984_13510_1612089775}
+·L1：表示与邻居建立的链路类型为Level-1，邻居路由器类型为Level-1
 
-[[链路状态]{style="font-family:宋体"}]{#struct_0_x1984_13510_157824360}
+·L2：表示与邻居建立的链路类型为Level-2，邻居路由器类型为Level-2
 
-[[HoldTime]{lang="EN-US"}]{#struct_0_x1984_13510_x1889883677}
+·L1(L1L2)：表示与邻居建立的链路类型为Level-1，邻居路由器类型为Level-1-2
 
-[[抑制时间，随着时间推移递减，如果在抑制时间内还没有收到邻居发送的]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1359577103}[Hello]{lang="EN-US"}[报文，则认为邻居已经失效，如果收到了]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文，则抑制时间将重置为初始值]{style="font-family:宋体"}
+·L2(L1L2)：表示与邻居建立的链路类型为Level-2，邻居路由器类型为Level-1-2
 
-[[Type]{lang="EN-US"}]{#struct_0_x1984_13510_x2136750823}
+PRI
 
-[[链路关系类型，其中：]{style="font-family:宋体"}]{#struct_0_x1984_13510_970414788}
+邻居接口DIS优先级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[L1]{lang="EN-US"}]{#struct_0_x1984_13510_1612548527}[：表示与邻居建立的链路类型为]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[，邻居路由器类型为]{style="font-family:宋体"}[Level-1]{lang="EN-US"}
+Area Address(es)
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[L2]{lang="EN-US"}]{#struct_0_x1984_13510_x1757697701}[：表示与邻居建立的链路类型为]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[，邻居路由器类型为]{style="font-family:宋体"}[Level-2]{lang="EN-US"}
+邻居所在区域地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[L1(L]{lang="EN-US"}]{#struct_0_x1984_13510_x1569875051}[1L]{lang="EN-US"}[2)]{lang="EN-US"}[：表示与邻居建立的链路类型为]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[，邻居路由器类型为]{style="font-family:宋体"}[Level-1-2]{lang="EN-US"}
+Peer IP Address(es)
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[L2(L]{lang="EN-US"}]{#struct_0_x1984_13510_x993682152}[1L]{lang="EN-US"}[2)]{lang="EN-US"}[：表示与邻居建立的链路类型为]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[，邻居路由器类型为]{style="font-family:宋体"}[Level-1-2]{lang="EN-US"}
+邻居接口的IP地址
 
-[[PRI]{lang="EN-US"}]{#struct_0_x1984_13510_1165901108}
+Uptime
 
-[[邻居接口]{style="font-family:宋体"}]{#struct_0_x1984_13510_1612482991}[DIS]{lang="EN-US"}[优先级]{style="font-family:宋体"}
+邻居关系保持时间
 
-[[Area Address(es)]{lang="EN-US"}]{#struct_0_x1984_13510_220928883}
+Adj Protocol
 
-[[邻居所在区域地址]{style="font-family:宋体"}]{#struct_0_x1984_13510_x932594690}
+邻接协议：IPv4或IPv6
 
-[[Peer IP Address(es)]{lang="EN-US"}]{#struct_0_x1984_13510_x1658974191}
+Peer local circuit ID
 
-[[邻居接口的]{style="font-family:宋体"}]{#struct_0_x1984_13510_1612417455}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+邻居链路ID
 
-[[Uptime]{lang="EN-US"}]{#struct_0_x1984_13510_x1734903496}
+Peer circuit SNPA address
 
-[[邻居关系保持时间]{style="font-family:宋体"}]{#struct_0_x1984_13510_1379592734}
+邻居子网连接点地址
 
-[[Adj Protocol]{lang="EN-US"}]{#struct_0_x1984_13510_164437401}
+Adj P2P three-way handshake
 
-[[邻接协议：]{style="font-family:宋体"}]{#struct_0_x1984_13510_978612619}[IPv4]{lang="EN-US"}[或]{style="font-family:宋体"}[IPv6]{lang="EN-US"}
+邻居是否支持P2P三次握手
 
-[[Peer local circuit ID]{lang="EN-US"}]{#struct_0_x1984_13510_1612351919}
+Peer extended circuit ID
 
-[[邻居链路]{style="font-family:宋体"}[ID ]{lang="EN-US"}]{#struct_0_x1984_13510_x1315336021}
+邻居接口的扩展链路ID，邻居支持三次握手时存在该项
 
-[[Peer circuit SNPA address]{lang="EN-US"}]{#struct_0_x1984_13510_x678858779}
+Graceful Restart capable
 
-[[邻居子网连接点地址]{style="font-family:宋体"}]{#struct_0_x1984_13510_1726307881}
+GR Helper能力
 
-[[Adj P2P three-way handshake]{lang="EN-US"}]{#struct_0_x1984_13510_x975952675}
+Restarting signal
 
-[[邻居是否支持]{style="font-family:宋体"}]{#struct_0_x1984_13510_x975887139}[P2P]{lang="EN-US"}[三次握手]{style="font-family:宋体"}
+RR标记
 
-[[Peer extended circuit ID]{lang="EN-US"}]{#struct_0_x1984_13510_x975821603}
+Suppress adjacency advertisement
 
-[[邻居接口的扩展链路]{style="font-family:宋体"}]{#struct_0_x1984_13510_x975756067}[ID]{lang="EN-US"}[，邻居支持三次握手时存在该项]{style="font-family:宋体"}
+SA标记
 
-[[Graceful Restart capable]{lang="EN-US"}]{#struct_0_x1984_13510_1612810671}
+Local topology
 
-[[GR Helper]{lang="EN-US"}]{#struct_0_x1984_13510_213779491}[能力]{style="font-family:宋体"}
+本端接口支持的拓扑列表
 
-[[Restarting signal]{lang="EN-US"}]{#struct_0_x1984_13510_x1303759346}
+Remote topology
 
-[[RR]{lang="EN-US"}]{#struct_0_x1984_13510_323067285}[标记]{style="font-family:宋体"}
+邻居接口支持的拓扑列表
 
-[[Suppress adjacency advertisement]{lang="EN-US"}]{#struct_0_x1984_13510_1612745135}
+\# 显示IS-IS邻居的统计信息。
 
-[[SA]{lang="EN-US"}]{#struct_0_x1984_13510_x1752669551}[标记]{style="font-family:宋体"}
+\<Sysname\> display isis peer statistics
 
-[[Local topology]{lang="EN-US"}]{#struct_0_x1984_13510_x976149282}
+                    Peer Statistics information for IS-IS(1)
 
-[[本端接口支持的拓扑列表]{style="font-family:宋体"}]{#struct_0_x1984_13510_x976083746}
+                    \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[[Remote topology]{lang="EN-US"}]{#struct_0_x1984_13510_x975952674}
+  Type              IPv4 Up/Init              IPv6 Up/Init
 
-[[邻居接口支持的拓扑列表]{style="font-family:宋体"}]{#struct_0_x1984_13510_x975887138}
+  LAN Level-1             1/0                       0/0
 
-[]{#_Toc50204092}[[ ]{lang="EN-US"}]{#_Toc33866091}
+  LAN Level-2             1/0                       0/0
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1550402389}[显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[邻居的统计信息。]{style="font-family:宋体"}
+  P2P                     0/0                       0/0
 
-[[\<Sysname\> display isis peer statistics]{lang="EN-US"}]{#struct_0_x1984_13510_x1789583649}
+表1-12 display isis peer statistics命令显示信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[                    Peer Statistics information for IS-IS(1)]{lang="EN-US"}
+描述
 
-[                    \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+Type
 
-[  Type              IPv4 Up/Init              IPv6 Up/Init]{lang="EN-US"}
+邻居类型，取值为：
 
-[  LAN Level-1             1/0                       0/0]{lang="EN-US"}
+·LAN Level-1：表示网络类型为广播的Level-1邻居个数
 
-[  LAN Level-2             1/0                       0/0]{lang="EN-US"}
+·LAN Level-2：表示网络类型为广播的Level-2邻居个数
 
-[  P2P                     0/0                       0/0]{lang="EN-US"}
+·P2P：表示网络类型为点对点的邻居个数
 
-[[表1-12 ]{lang="EN-US"}[display isis peer statistics]{lang="EN-US"}]{#struct_0_x1984_13510_855027018}[命令显示信息描述表]{style="font-family:黑体"}
+IPv4 Up
 
-[]{#table_struct_0_1440257563}[[字段]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1116596969}
+状态为up的IPv4邻居个数
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1168249695}
+IPv4 Init
 
-[[Type]{lang="EN-US"}]{#struct_0_x1984_13510_x1152411128}
+状态为init的IPv4邻居个数
 
-[[邻居类型，取值为：]{style="font-family:宋体"}]{#struct_0_x1984_13510_x2092572989}
+IPv6 Up
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LAN Level-1]{lang="EN-US"}]{#struct_0_x1984_13510_x983126948}[：]{style="font-family:宋体"}[表示网络类型为广播的]{lang="EN-US" style="font-family:宋体"}[Level-1]{lang="EN-US"}[邻居个数]{lang="EN-US" style="font-family:宋体"}
+状态为up的IPv6邻居个数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LAN Level-2]{lang="EN-US"}]{#struct_0_x1984_13510_645868953}[：]{style="font-family:宋体"}[表示网络类型为广播的]{lang="EN-US" style="font-family:宋体"}[Level-2]{lang="EN-US"}[邻居个数]{lang="EN-US" style="font-family:宋体"}
+IPv6 Init
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[P2P]{lang="EN-US"}]{#struct_0_x1984_13510_x1116662505}[：表示网络类型为点对点的邻居个数]{style="font-family:宋体"}
-
-[[IPv4 Up]{lang="EN-US"}]{#struct_0_x1984_13510_7601776}
-
-[[状态为]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_x1984_13510_x249889640}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[邻居个数]{style="font-family:宋体"}
-
-[[IPv4 Init]{lang="EN-US"}]{#struct_0_x1984_13510_x676910271}
-
-[[状态为]{style="font-family:宋体"}[init]{lang="EN-US"}]{#struct_0_x1984_13510_667026144}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[邻居个数]{style="font-family:宋体"}
-
-[[IPv6 Up]{lang="EN-US"}]{#struct_0_x1984_13510_294560424}
-
-[[状态为]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_x1984_13510_x1116728041}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[邻居个数]{style="font-family:宋体"}
-
-[[IPv6 Init]{lang="EN-US"}]{#struct_0_x1984_13510_x421065707}
-
-[[状态为]{style="font-family:宋体"}[init]{lang="EN-US"}]{#struct_0_x1984_13510_1652662947}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[邻居个数]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1828480212 .myid}
-[]{#_Toc163546247}[]{#_Toc404788360}[]{#struct_0_x1984_13510_x307020908}[]{#_Toc303839435}
+状态为init的IPv6邻居个数
 
 **IS-IS \-- IS-IS配置命令 \-- display isis redistribute**
 
 ------------------------------------------------------------------------
 
-[**[display isis redistribute]{lang="EN-US"}**]{#struct_0_x1984_13510_x123735938}[命令用来显示]{style="font-family:
-宋体"}[IS-IS]{lang="EN-US"}[引入路由的信息。]{style="font-family:宋体"}
+**[display isis redistribute**]命令用来显示IS-IS引入路由的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_841917357}
+【命令】
 
-[**[display isis redistribute ]{lang="EN-US"}**[\[ **ipv4** \[ **topology** *topo-name* \] \[ *ip-address mask-lengh* ]{lang="EN-US"}[\] \] \[ **level-1** \| **level-2** \] \[ *process-id* \]]{lang="EN-US"}]{#struct_0_x1984_13510_x38223615}
+**[display isis redistribute **[ **ipv4** [ **topology** *topo-name*   *ip-address mask-lengh*    **level-1** \| **level-2** ]  *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1116793577}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_1922476095}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1437644243}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1268584659}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1984_13510_1028007314}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x198656188}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1984_13510_x598601819}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1275022900}
+【参数】
 
-[**[ipv4]{lang="EN-US"}**]{#struct_0_x1984_13510_x1845546556}[：显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[引入路由信息。缺省情况下，显示]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[引入路由信息。]{style="font-family:宋体"}
+**[ipv4**]：显示IS-IS的IPv4引入路由信息。缺省情况下，显示IPv4引入路由信息。
 
-[**[topology]{lang="EN-US"}**[ *topo-name*]{lang="EN-US"}]{#struct_0_x1984_13510_x975756066}[：显示指定拓扑的信息。]{style="font-family:宋体"}*[topo-name]{lang="EN-US"}*[表示拓扑名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写；]{style="font-family:宋体"}**[base]{lang="EN-US"}**[为公网拓扑。如果未指定本参数，则显示公网的信息。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[topology** *topo-name*]：显示指定拓扑的信息。*topo-name*表示拓扑名，为1～31个字符的字符串，区分大小写；**base**为公网拓扑。如果未指定本参数，则显示公网的信息。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[*[ip-address mask-lengh]{lang="EN-US"}*]{#struct_0_x1984_13510_x1116334825}[：显示指定目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址和掩码长度的引入路由。]{style="font-family:宋体"}
+*[ip-address mask-lengh*]：显示指定目的IP地址和掩码长度的引入路由。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_x1984_13510_x1089006568}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，显示指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[路由信息。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535，显示指定IS-IS进程的IPv4路由信息。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_x219003955}[：显示]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[的]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[路由信息。]{style="font-family:宋体"}
+**[level-1**]：显示Level-1的IS-IS路由信息。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_x1899596829}[：显示]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[路由信息。]{style="font-family:宋体"}
+**[level-2**]：显示Level-2的IS-IS路由信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1430202242}
+【使用指导】
 
-[[如果不指定级别，将同时显示]{style="font-family:宋体"}[Level-1]{lang="EN-US"}]{#struct_0_x1984_13510_x50682797}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的路由信息。]{style="font-family:宋体"}
+如果不指定级别，将同时显示Level-1和Level-2的路由信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_169824181}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1203051436}[显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[引入路由信息。]{style="font-family:宋体"}
+\# 显示IS-IS的IPv4引入路由信息。
 
-[[\<Sysname\> display isis redistribute 1]{lang="EN-US"}]{#struct_0_x1984_13510_x1116400361}
+\<Sysname\> display isis redistribute 1
 
-[ ]{lang="EN-US"}
+                         Route information for IS-IS(1)
 
-[                         Route information for IS-IS(1)]{lang="EN-US"}
+                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+                        Level-1 IPv4 Redistribute Table
 
-[ ]{lang="EN-US"}
+                        \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                        Level-1 IPv4 Redistribute Table]{lang="EN-US"}
+ Type IPv4 Destination     IntCost    ExtCost    Tag        State
 
-[                        \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ Type IPv4 Destination     IntCost    ExtCost    Tag        State]{lang="EN-US"}
+ D    192.168.30.0/24      0          0                     Active
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ D    11.11.11.11/32       0          0
 
-[ D    192.168.30.0/24      0          0                     Active]{lang="EN-US"}
+ D    10.10.10.0/24        0          0
 
-[ D    11.11.11.11/32       0          0]{lang="EN-US"}
+ Type: D -Direct, I -ISIS, S -Static, O -OSPF, B -BGP, R --RIP
 
-[ D    10.10.10.0/24        0          0]{lang="EN-US"}
+表1-1 display isis redistribute命令显示信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[ Type: D -Direct, I -ISIS, S -Static, O -OSPF, B -BGP, R --RIP]{lang="EN-US"}
+描述
 
-[[表1-1 ]{lang="EN-US"}[display isis redistribute]{lang="EN-US"}]{#struct_0_x1984_13510_x1772610552}[命令显示信息描述表]{style="font-family:黑体"}
+Route information for IS-IS(1)
 
-[]{#table_struct_0_1442599600}[[字段]{style="font-family:黑体"}]{#struct_0_x1984_13510_946294591}
-:::
+指定IS-IS进程引入路由信息
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1984_13510_164215237}
+Level-1 IPv4 Redistribute Table
 
-[[Route information for IS-IS(1)]{lang="EN-US"}]{#struct_0_x1984_13510_295328389}
+Level-1的IS-IS IPv4引入路由信息
 
-[[指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x1116465897}[进程引入路由信息]{style="font-family:宋体"}
+Level-2  IPv4 Redistribute  Table
 
-[[Level-1 IPv4 Redistribute Table]{lang="EN-US"}]{#struct_0_x1984_13510_2103895979}
+Level-2的IS-IS IPv4引入路由信息
 
-[[Level-1]{lang="EN-US"}]{#struct_0_x1984_13510_1459838319}[的]{style="font-family:宋体"}[IS-IS IPv4]{lang="EN-US"}[引入路由信息]{style="font-family:宋体"}
+Type
 
-[[Level-2  IPv4 Redistribute  Table]{lang="EN-US"}]{#struct_0_x1984_13510_487966944}
+引入的路由类型，包括直连、IS-IS、静态、OSPF、BGP、RIP
 
-[[Level-2]{lang="EN-US"}]{#struct_0_x1984_13510_x1267202221}[的]{style="font-family:宋体"}[IS-IS IPv4]{lang="EN-US"}[引入路由信息]{style="font-family:宋体"}
+IPV4 Destination
 
-[[Type]{lang="EN-US"}]{#struct_0_x1984_13510_532125348}
+IPv4目的地址
 
-[[引入的路由类型，包括直连、]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x1116531433}[、静态、]{style="font-family:宋体"}[OSPF]{lang="EN-US"}[、]{style="font-family:宋体"}[BGP]{lang="EN-US"}[、]{style="font-family:宋体"}[RIP]{lang="EN-US"}
+IntCost
 
-[[IPV4 Destination]{lang="EN-US"}]{#struct_0_x1984_13510_x696887182}
+路由内部Cost
 
-[[IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_141990731}[目的地址]{style="font-family:宋体"}
+ExtCost
 
-[[IntCost]{lang="EN-US"}]{#struct_0_x1984_13510_x867075942}
+路由外部Cost
 
-[[路由内部]{style="font-family:宋体"}]{#struct_0_x1984_13510_635922275}[Cost]{lang="EN-US"}
+Tag
 
-[[ExtCost]{lang="EN-US"}]{#struct_0_x1984_13510_x1116072681}
+引入路由发布时的Tag值
 
-[[路由外部]{style="font-family:宋体"}]{#struct_0_x1984_13510_x485989998}[Cost]{lang="EN-US"}
+State
 
-[[Tag]{lang="EN-US"}]{#struct_0_x1984_13510_1523389723}
-
-[[引入路由发布时的]{style="font-family:宋体"}]{#struct_0_x1984_13510_833899891}[Tag]{lang="EN-US"}[值]{style="font-family:宋体"}
-
-[[State]{lang="EN-US"}]{#struct_0_x1984_13510_1431753890}
-
-[[引入路由是否为最终生效路由]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1116138217}
-
-[ ]{lang="EN-US"}
-
-::: {#-535663809 .myid}
-[]{#_Toc404788361}[]{#struct_0_x1984_13510_x1720505640}
+引入路由是否为最终生效路由
 
 **IS-IS \-- IS-IS配置命令 \-- display isis route**
 
 ------------------------------------------------------------------------
 
-[**[display isis route]{lang="EN-US"}**]{#struct_0_x1984_13510_x1847078294}[命令用来显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[路由信息。]{style="font-family:宋体"}
+**[display isis route**]命令用来显示IS-IS的IPv4路由信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1475366301}
+【命令】
 
-[**[display isis route]{lang="EN-US"}**[ \[ **ipv4** \[ **topology** *topo-name* \] \[ ]{lang="EN-US"}*[ip-address mask-length]{lang="EN-US"}*[ \] \] \[ \[ **level-1** \| **level-2** \] \| **verbose** \] \* \[ *process-id* \]]{lang="EN-US"}]{#struct_0_x1984_13510_x1812991796}
+**[display isis route** [ **ipv4** [ **topology** *topo-name*  \*ip-address mask-length*    [ **level-1** \| **level-2** ] \| **verbose** ] \*  *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1441727059}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1374946189}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1517238991}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1116596968}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1984_13510_1560633660}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_854962516}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1984_13510_x1354104987}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1779666547}
+【参数】
 
-[**[ipv4]{lang="EN-US"}**]{#struct_0_x1984_13510_x542529814}[：显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[路由信息。缺省情况下，显示]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[路由信息。]{style="font-family:宋体"}
+**[ipv4**]：显示IS-IS的IPv4路由信息。缺省情况下，显示IPv4路由信息。
 
-[**[topology]{lang="EN-US"}**[ *topo-name*]{lang="EN-US"}]{#struct_0_x1984_13510_x1379433806}[：显示指定拓扑的信息。]{style="font-family:宋体"}*[topo-name]{lang="EN-US"}*[表示拓扑名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写；]{style="font-family:宋体"}**[base]{lang="EN-US"}**[为公网拓扑。如果未指定本参数，则显示公网的信息。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[topology** *topo-name*]：显示指定拓扑的信息。*topo-name*表示拓扑名，为1～31个字符的字符串，区分大小写；**base**为公网拓扑。如果未指定本参数，则显示公网的信息。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[*[ip-address ]{lang="EN-US"}[mask-length]{lang="EN-US"}*]{#struct_0_x1984_13510_222767776}[：显示指定目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址和掩码长度的路由。]{style="font-family:宋体"}*[mask-length]{lang="EN-US"}*[取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[ip-address mask-length*]：显示指定目的IP地址和掩码长度的路由。*mask-length*取值范围为0～32。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_x1984_13510_x1308052728}[：显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[详细的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[路由信息。如果未指定该参数，将显示路由信息的概要信息。]{style="font-family:宋体"}
+**[verbose**]：显示IS-IS详细的IPv4路由信息。如果未指定该参数，将显示路由信息的概要信息。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_x1984_13510_x1116662504}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，显示指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[路由信息。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535，显示指定IS-IS进程的IPv4路由信息。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_1573685717}[：显示]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[的]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[路由信息。]{style="font-family:宋体"}
+**[level-1**]：显示Level-1的IS-IS路由信息。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_x1915448682}[：显示]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[路由信息。]{style="font-family:宋体"}
+**[level-2**]：显示Level-2的IS-IS路由信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_377866511}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果未指定级别，将同时显示]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1700754792}[Level-1]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[路由信息]{lang="EN-US" style="font-family:宋体"}[。]{style="font-family:宋体"}
+·如果未指定级别，将同时显示Level-1和Level-2的路由信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果未指定]{style="font-family:宋体"}]{#struct_0_x1984_13510_x691394588}[IS-IS]{lang="EN-US"}[进程号，将显示所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的路由信息。]{style="font-family:宋体"}
+·如果未指定IS-IS进程号，将显示所有IS-IS进程的路由信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1421936569}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x274552319}[显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[路由信息。]{style="font-family:宋体"}
+\# 显示IS-IS的IPv4路由信息。
 
-[[\<Sysname\> display isis route]{lang="EN-US"}]{#struct_0_x1984_13510_x1116793576}
+\<Sysname\> display isis route
 
-[ ]{lang="EN-US"}
+                         Route information for IS-IS(1)
 
-[                         Route information for IS-IS(1)]{lang="EN-US"}
+                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+                         Level-1 IPv4 Forwarding Table
 
-[ ]{lang="EN-US"}
+                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                         Level-1 IPv4 Forwarding Table]{lang="EN-US"}
+ IPv4 Destination     IntCost    ExtCost ExitInterface   NextHop         Flags
 
-[                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ ]{lang="EN-US"}
+ 8.8.8.0/24           10         NULL    GE1/0/2         Direct          D/L/-
 
-[ IPv4 Destination     IntCost    ExtCost ExitInterface   NextHop         Flags]{lang="EN-US"}
+ 9.9.9.0/24           20         NULL    GE1/0/2         8.8.8.5         R/L/-
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+      Flags: D-Direct, R-Added to Rib, L-Advertised in LSPs, U-Up/Down Bit Set
 
-[ 8.8.8.0/24           10         NULL    GE1/0/2         Direct          D/L/-]{lang="EN-US"}
+                         Level-2 IPv4 Forwarding Table
 
-[ 9.9.9.0/24           20         NULL    GE1/0/2         8.8.8.5         R/L/-]{lang="EN-US"}
+                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ ]{lang="EN-US"}
+ IPv4 Destination     IntCost    ExtCost ExitInterface   NextHop         Flags
 
-[      Flags: D-Direct, R-Added to Rib, L-Advertised in LSPs, U-Up/Down Bit Set]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ ]{lang="EN-US"}
+ 8.8.8.0/24           10         NULL                                    D/L/-
 
-[                         Level-2 IPv4 Forwarding Table]{lang="EN-US"}
+      Flags: D-Direct, R-Added to Rib, L-Advertised in LSPs, U-Up/Down Bit Set
 
-[                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+表1-13 display isis route命令显示信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[ IPv4 Destination     IntCost    ExtCost ExitInterface   NextHop         Flags]{lang="EN-US"}
+描述
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+Route information for IS-IS(1)
 
-[ 8.8.8.0/24           10         NULL                                    D/L/-]{lang="EN-US"}
+指定IS-IS进程路由信息
 
-[ ]{lang="EN-US"}
+Level-1 IPv4 Forwarding Table
 
-[      Flags: D-Direct, R-Added to Rib, L-Advertised in LSPs, U-Up/Down Bit Set]{lang="EN-US"}
+Level-1的IS-IS IPv4路由信息
 
-[[表1-13 ]{lang="EN-US"}[display isis route]{lang="EN-US"}]{#struct_0_x1984_13510_356392154}[命令显示信息描述表]{style="font-family:黑体"}
+Level-2 IPv4 Forwarding Table
 
-[]{#table_struct_0_1437658818}[[字段]{style="font-family:黑体"}]{#struct_0_x1984_13510_320192217}
-:::
+Level-2的IS-IS IPv4路由信息
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1984_13510_890515730}
+IPv4 Destination
 
-[[Route information for IS-IS(1)]{lang="EN-US"}]{#struct_0_x1984_13510_x1116334824}
+IPv4目的地址
 
-[[指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1639876787}[进程路由信息]{style="font-family:宋体"}
+IntCost
 
-[[Level-1 IPv4 Forwarding Table]{lang="EN-US"}]{#struct_0_x1984_13510_x1639503132}
+路由内部Cost
 
-[[Level-1]{lang="EN-US"}]{#struct_0_x1984_13510_1306780133}[的]{style="font-family:宋体"}[IS-IS IPv4]{lang="EN-US"}[路由信息]{style="font-family:宋体"}
+ExtCost
 
-[[Level-2 IPv4 Forwarding Table]{lang="EN-US"}]{#struct_0_x1984_13510_x2068044916}
+路由外部Cost
 
-[[Level-2]{lang="EN-US"}]{#struct_0_x1984_13510_x1077076773}[的]{style="font-family:宋体"}[IS-IS IPv4]{lang="EN-US"}[路由信息]{style="font-family:宋体"}
+ExitInterface
 
-[[IPv4 Destination]{lang="EN-US"}]{#struct_0_x1984_13510_x1116400360}
+出接口
 
-[[IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_x206526611}[目的地址]{style="font-family:宋体"}
+NextHop
 
-[[IntCost]{lang="EN-US"}]{#struct_0_x1984_13510_x1865753990}
+下一跳
 
-[[路由内部]{style="font-family:宋体"}]{#struct_0_x1984_13510_360578951}[Cost]{lang="EN-US"}
+Flags
 
-[[ExtCost]{lang="EN-US"}]{#struct_0_x1984_13510_1836594428}
+路由状态标志
 
-[[路由外部]{style="font-family:宋体"}]{#struct_0_x1984_13510_237191690}[Cost]{lang="EN-US"}
+·D：直连路由
 
-[[ExitInterface]{lang="EN-US"}]{#struct_0_x1984_13510_x1116465896}
+·R：该路由是否已放到路由表中
 
-[[出接口]{style="font-family:宋体"}]{#struct_0_x1984_13510_x624987376}
+·L：是否已经通过LSP发布
 
-[[NextHop]{lang="EN-US"}]{#struct_0_x1984_13510_x1516729058}
+·U：路由渗透状态标识。设置为"Up"表示可以避免由L2发送到L1的LSP又返回给L2，设置为"Down"表示不可以
 
-[[下一跳]{style="font-family:宋体"}]{#struct_0_x1984_13510_x530968562}
+\# 显示IS-IS的IPv4路由详细信息。
 
-[[Flags]{lang="EN-US"}]{#struct_0_x1984_13510_1924237261}
+\<Sysname\> display isis route verbose
 
-[[路由状态标志]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1116531432}
+                         Route information for IS-IS(1)
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[D]{lang="EN-US"}]{#struct_0_x1984_13510_2031996173}[：直连路由]{lang="EN-US" style="font-family:宋体"}
+                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[R]{lang="EN-US"}]{#struct_0_x1984_13510_2034572820}[：该路由是否已放到路由表中]{style="font-family:宋体"}
+                         Level-1 IPv4 Forwarding Table
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[L]{lang="EN-US"}]{#struct_0_x1984_13510_630190577}[：是否已经通过]{style="font-family:宋体"}[LSP]{lang="EN-US"}[发布]{style="font-family:宋体"}
+                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[U]{lang="EN-US"}]{#struct_0_x1984_13510_x1116072680}[：路由渗透状态标识。设置为"]{style="font-family:宋体"}[Up]{lang="EN-US"}["表示可以避免由]{style="font-family:宋体"}[L2]{lang="EN-US"}[发送到]{style="font-family:宋体"}[L1]{lang="EN-US"}[的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[又返回给]{style="font-family:宋体"}[L2]{lang="EN-US"}[，设置为"]{style="font-family:宋体"}[Down]{lang="EN-US"}["表示不可以]{style="font-family:宋体"}
+ IPV4 Dest : 8.8.8.0/24          Int. Cost : 10               Ext. Cost : NULL
 
-[ ]{lang="EN-US"}
+ Admin Tag : -                   Src Count : 2                Flag      : D/L/-
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x2052073939}[显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[路由详细信息。]{style="font-family:宋体"}
+ NextHop   :                     Interface :                  ExitIndex :
 
-[[\<Sysname\> display isis route verbose]{lang="EN-US"}]{#struct_0_x1984_13510_x1116138216}
+    Direct                             GE1/0/2                     0x00000000
 
-[ ]{lang="EN-US"}
+ Nib ID    : 0x0
 
-[                         Route information for IS-IS(1)]{lang="EN-US"}
+ IPV4 Dest : 9.9.9.0/24          Int. Cost : 20               Ext. Cost : NULL
 
-[                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ Admin Tag : -                   Src Count : 1                Flag      : R/L/-
 
-[ ]{lang="EN-US"}
+ NextHop   :                     Interface :                  ExitIndex :
 
-[                         Level-1 IPv4 Forwarding Table]{lang="EN-US"}
+    8.8.8.5                            GE1/0/2                     0x00000003
 
-[                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ Nib ID    : 0x0
 
-[ ]{lang="EN-US"}
+      Flags: D-Direct, R-Added to Rib, L-Advertised in LSPs, U-Up/Down Bit Set
 
-[ IPV4 Dest : 8.8.8.0/24          Int. Cost : 10               Ext. Cost : NULL]{lang="EN-US"}
+                         Level-2 IPv4 Forwarding Table
 
-[ Admin Tag : -                   Src Count : 2                Flag      : D/L/-]{lang="EN-US"}
+                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ NextHop   :                     Interface :                  ExitIndex :]{lang="EN-US"}
+ IPV4 Dest : 8.8.8.0/24          Int. Cost : 10               Ext. Cost : NULL
 
-[    Direct                             GE1/0/2                     0x00000000]{lang="EN-US"}
+ Admin Tag : -                   Src Count : 2                Flag      : D/L/-
 
-[ Nib ID    : 0x0]{lang="EN-US"}
+      Flags: D-Direct, R-Added to Rib, L-Advertised in LSPs, U-Up/Down Bit Set
 
-[ ]{lang="EN-US"}
+表1-14 display isis route verbose命令显示信息描述表
 
-[ IPV4 Dest : 9.9.9.0/24          Int. Cost : 20               Ext. Cost : NULL]{lang="EN-US"}
+字段
 
-[ Admin Tag : -                   Src Count : 1                Flag      : R/L/-]{lang="EN-US"}
+描述
 
-[ NextHop   :                     Interface :                  ExitIndex :]{lang="EN-US"}
+Route information for IS-IS(1)
 
-[    8.8.8.5                            GE1/0/2                     0x00000003]{lang="EN-US"}
+指定IS-IS进程的IPv4路由信息
 
-[ Nib ID    : 0x0]{lang="EN-US"}
+Level-1 IPv4 Forwarding Table
 
-[ ]{lang="EN-US"}
+Level-1的IS-IS IPv4路由信息
 
-[      Flags: D-Direct, R-Added to Rib, L-Advertised in LSPs, U-Up/Down Bit Set]{lang="EN-US"}
+Level-2 IPv4 Forwarding Table
 
-[ ]{lang="EN-US"}
+Level-2的IS-IS IPv4路由信息
 
-[                         Level-2 IPv4 Forwarding Table]{lang="EN-US"}
+IPV4 Dest
 
-[                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+IPv4目的地址
 
-[ ]{lang="EN-US"}
+Int. Cost
 
-[ IPV4 Dest : 8.8.8.0/24          Int. Cost : 10               Ext. Cost : NULL]{lang="EN-US"}
+路由内部Cost
 
-[ Admin Tag : -                   Src Count : 2                Flag      : D/L/-]{lang="EN-US"}
+Ext. Cost
 
-[ ]{lang="EN-US"}
+路由外部Cost
 
-[      Flags: D-Direct, R-Added to Rib, L-Advertised in LSPs, U-Up/Down Bit Set]{lang="EN-US"}
+Admin Tag
 
-[[表1-14 ]{lang="EN-US"}[display isis route verbose]{lang="EN-US"}]{#struct_0_x1984_13510_1008377715}[命令显示信息描述表]{style="font-family:黑体"}
+Tag值
 
-[]{#table_struct_0_1430616852}[[字段]{style="font-family:黑体"}]{#struct_0_x1984_13510_1629127135}
+Src Count
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1984_13510_160874278}
+发布源个数
 
-[[Route information for IS-IS(1)]{lang="EN-US"}]{#struct_0_x1984_13510_462109274}
+Flag
 
-[[指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x2048456690}[进程的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[路由信息]{style="font-family:宋体"}
+路由状态标志
 
-[[Level-1 IPv4 Forwarding Table]{lang="EN-US"}]{#struct_0_x1984_13510_x1116596971}
+·R：该路由是否已放到路由表中
 
-[[Level-1]{lang="EN-US"}]{#struct_0_x1984_13510_x812084871}[的]{style="font-family:宋体"}[IS-IS IPv4]{lang="EN-US"}[路由信息]{style="font-family:宋体"}
+·L：是否已经通过LSP发布
 
-[[Level-2 IPv4 Forwarding Table]{lang="EN-US"}]{#struct_0_x1984_13510_x1959746526}
+·U：路由渗透状态标识。设置为"Up"表示可以避免由L2发送到L1的LSP又返回给L2，设置为"Down"表示不可以
 
-[[Level-2]{lang="EN-US"}]{#struct_0_x1984_13510_x246148971}[的]{style="font-family:宋体"}[IS-IS IPv4]{lang="EN-US"}[路由信息]{style="font-family:宋体"}
+Next Hop
 
-[[IPV4 Dest]{lang="EN-US"}]{#struct_0_x1984_13510_707311006}
+下一跳
 
-[[IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_962337632}[目的地址]{style="font-family:宋体"}
+Interface
 
-[[Int. Cost]{lang="EN-US"}]{#struct_0_x1984_13510_x1116662507}
+出接口
 
-[[路由内部]{style="font-family:宋体"}]{#struct_0_x1984_13510_1170401190}[Cost]{lang="EN-US"}
+ExitIndex
 
-[[Ext. Cost]{lang="EN-US"}]{#struct_0_x1984_13510_x688472081}
+出接口索引
 
-[[路由外部]{style="font-family:宋体"}]{#struct_0_x1984_13510_1830181819}[Cost]{lang="EN-US"}
+Nib ID
 
-[[Admin Tag]{lang="EN-US"}]{#struct_0_x1984_13510_1025089634}
-
-[[Tag]{lang="EN-US"}]{#struct_0_x1984_13510_x1116728043}[值]{style="font-family:宋体"}
-
-[[Src Count]{lang="EN-US"}]{#struct_0_x1984_13510_741733707}
-
-[[发布源个数]{style="font-family:宋体"}]{#struct_0_x1984_13510_488988636}
-
-[[Flag]{lang="EN-US"}]{#struct_0_x1984_13510_x378385865}
-
-[[路由状态标志]{style="font-family:宋体"}]{#struct_0_x1984_13510_2069520373}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[R]{lang="EN-US"}]{#struct_0_x1984_13510_x1116793579}[：该路由是否已放到路由表中]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[L]{lang="EN-US"}]{#struct_0_x1984_13510_x1565922147}[：是否已经通过]{style="font-family:宋体"}[LSP]{lang="EN-US"}[发布]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[U]{lang="EN-US"}]{#struct_0_x1984_13510_x1828491224}[：路由渗透状态标识。设置为"]{style="font-family:宋体"}[Up]{lang="EN-US"}["表示可以避免由]{style="font-family:宋体"}[L2]{lang="EN-US"}[发送到]{style="font-family:宋体"}[L1]{lang="EN-US"}[的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[又返回给]{style="font-family:宋体"}[L2]{lang="EN-US"}[，设置为"]{style="font-family:宋体"}[Down]{lang="EN-US"}["表示不可以]{style="font-family:宋体"}
-
-[[Next Hop]{lang="EN-US"}]{#struct_0_x1984_13510_x1799426888}
-
-[[下一跳]{style="font-family:宋体"}]{#struct_0_x1984_13510_540491483}
-
-[[Interface]{lang="EN-US"}]{#struct_0_x1984_13510_x1116334827}
-
-[[出接口]{style="font-family:宋体"}]{#struct_0_x1984_13510_2043161314}
-
-[[ExitIndex]{lang="EN-US"}]{#struct_0_x1984_13510_x63657074}
-
-[[出接口索引]{style="font-family:宋体"}]{#struct_0_x1984_13510_53994103}
-
-[[Nib ID]{lang="EN-US"}]{#struct_0_x1984_13510_x1379040590}
-
-[[路由管理分配的]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1984_13510_x1379630413}[，即下一跳索引]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1484573961 .myid}
-[]{#_Toc163546249}[]{#_Toc404788362}[]{#struct_0_x1984_13510_x1116400363}[]{#_Toc341967378}[]{#_Toc341285953}[]{#_Toc163546333}[]{#_Toc166583084}[]{#_Toc163546358}[]{#_Toc166583109}
+路由管理分配的ID，即下一跳索引
 
 **IS-IS \-- IS-IS配置命令 \-- display isis spf-tree**
 
 ------------------------------------------------------------------------
 
-[**[display isis spf-tree]{lang="EN-US"}**]{#struct_0_x1984_13510_1359557330}[命令用来显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[拓扑信息。]{style="font-family:宋体"}
+**[display isis spf-tree**]命令用来显示IS-IS的IPv4拓扑信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1849560016}
+【命令】
 
-[**[display isis spf-tree ]{lang="EN-US"}**[\[ **ipv4** \[ **topology** *topo-name* \] \] \[ \[ **level-1** \| **level-2** \] \| **verbose** \] \* \[ *process-id* \]]{lang="EN-US"}]{#struct_0_x1984_13510_x1008438796}
+**[display isis spf-tree **[ **ipv4** [ **topology** *topo-name*    [ **level-1** \| **level-2** ] \| **verbose** ] \*  *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1784687453}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x2086538931}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x968609220}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x2009992889}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1984_13510_x407904938}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1116465899}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1984_13510_x1740732623}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x587106880}
+【参数】
 
-[**[ipv4]{lang="EN-US"}**]{#struct_0_x1984_13510_1498033556}[：显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[拓扑信息。如果未指定该参数，显示]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[拓扑信息。]{style="font-family:宋体"}
+**[ipv4**]：显示IS-IS的IPv4拓扑信息。如果未指定该参数，显示IPv4拓扑信息。
 
-[**[topology]{lang="EN-US"}**[ *topo-name*]{lang="EN-US"}]{#struct_0_x1984_13510_x1379499341}[：显示指定拓扑的信息。]{style="font-family:宋体"}*[topo-name]{lang="EN-US"}*[表示拓扑名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写；]{style="font-family:宋体"}**[base]{lang="EN-US"}**[为公网拓扑。如果未指定本参数，则显示公网的信息。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[topology** *topo-name*]：显示指定拓扑的信息。*topo-name*表示拓扑名，为1～31个字符的字符串，区分大小写；**base**为公网拓扑。如果未指定本参数，则显示公网的信息。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_2104228575}[：显示]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[的]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[拓扑信息。如果未指定级别，将同时显示]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的拓扑信息。]{style="font-family:宋体"}
+**[level-1**]：显示Level-1的IS-IS拓扑信息。如果未指定级别，将同时显示Level-1和Level-2的拓扑信息。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_x1050952710}[：显示]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[拓扑信息。如果未指定级别，将同时显示]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的拓扑信息。]{style="font-family:宋体"}
+**[level-2**]：显示Level-2的IS-IS拓扑信息。如果未指定级别，将同时显示Level-1和Level-2的拓扑信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_x1984_13510_501506286}[：显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的详细拓扑信息。如果未指定该参数，显示概要拓扑信息。]{style="font-family:宋体"}
+**[verbose**]：显示IS-IS的详细拓扑信息。如果未指定该参数，显示概要拓扑信息。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_x1984_13510_x630191383}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，显示指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的拓扑信息。如果未指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，将显示所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的拓扑信息。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535，显示指定IS-IS进程的拓扑信息。如果未指定IS-IS进程号，将显示所有IS-IS进程的拓扑信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x741905044}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1116531435}[显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[拓扑信息。]{style="font-family:宋体"}
+\# 显示IS-IS的IPv4拓扑信息。
 
-[[\<Sysname\> display isis spf-tree]{lang="EN-US"}]{#struct_0_x1984_13510_x1116072683}
+\<Sysname\> display isis spf-tree
 
-[ ]{lang="EN-US"}
+                        Shortest Path Tree for IS-IS(1)
 
-[                        Shortest Path Tree for IS-IS(1)]{lang="EN-US"}
+                        \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                        \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+      Flags: S-Node is on SPF tree       T-Node is on tent list
 
-[ ]{lang="EN-US"}
+             O-Node is overload          R-Node is directly reachable
 
-[      Flags: S-Node is on SPF tree       T-Node is on tent list]{lang="EN-US"}
+             I-Node or Link is isolated  D-Node or Link is to be deleted
 
-[             O-Node is overload          R-Node is directly reachable]{lang="EN-US"}
+             C-Neighbor is child         P-Neighbor is parent
 
-[             I-Node or Link is isolated  D-Node or Link is to be deleted]{lang="EN-US"}
+             V-Link is involved          N-Link is a new path
 
-[             C-Neighbor is child         P-Neighbor is parent]{lang="EN-US"}
+             L-Link is on change list    U-Protocol usage is changed
 
-[             V-Link is involved          N-Link is a new path]{lang="EN-US"}
+             H-Nexthop is changed
 
-[             L-Link is on change list    U-Protocol usage is changed]{lang="EN-US"}
+                           Level-1 Shortest Path Tree
 
-[             H-Nexthop is changed]{lang="EN-US"}
+                           \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ ]{lang="EN-US"}
+SpfNode            NodeFlag       SpfLink            LinkCost LinkFlag
 
-[                           Level-1 Shortest Path Tree]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                           \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+0000.0000.0032.00  S/-/-/-/-/-
 
-[ ]{lang="EN-US"}
+                               \--\>0000.0000.0032.01  10       -/-/C/-/-/-/-/-/-
 
-[SpfNode            NodeFlag       SpfLink            LinkCost LinkFlag]{lang="EN-US"}
+                               \--\>0000.0000.0064.00  10       -/-/C/-/-/-/-/-/-
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+0000.0000.0032.01  S/-/-/R/-/-
 
-[0000.0000.0032.00  S/-/-/-/-/-]{lang="EN-US"}
+                               \--\>0000.0000.0064.00  0        -/-/C/-/-/-/-/-/-
 
-[                               \--\>0000.0000.0032.01  10       -/-/C/-/-/-/-/-/-]{lang="EN-US"}
+                               \--\>0000.0000.0032.00  0        -/-/-/P/-/-/-/-/-
 
-[                               \--\>0000.0000.0064.00  10       -/-/C/-/-/-/-/-/-]{lang="EN-US"}
+0000.0000.0064.00  S/-/-/R/-/-
 
-[0000.0000.0032.01  S/-/-/R/-/-]{lang="EN-US"}
+                               \--\>0000.0000.0032.00  10       -/-/-/P/-/-/-/-/-
 
-[                               \--\>0000.0000.0064.00  0        -/-/C/-/-/-/-/-/-]{lang="EN-US"}
+                               \--\>0000.0000.0032.01  10       -/-/-/P/-/-/-/-/-
 
-[                               \--\>0000.0000.0032.00  0        -/-/-/P/-/-/-/-/-]{lang="EN-US"}
+                           Level-2 Shortest Path Tree
 
-[0000.0000.0064.00  S/-/-/R/-/-]{lang="EN-US"}
+                           \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                               \--\>0000.0000.0032.00  10       -/-/-/P/-/-/-/-/-]{lang="EN-US"}
+SpfNode            NodeFlag       SpfLink            LinkCost LinkFlag
 
-[                               \--\>0000.0000.0032.01  10       -/-/-/P/-/-/-/-/-]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ ]{lang="EN-US"}
+0000.0000.0032.00  S/-/-/-/-/-
 
-[                           Level-2 Shortest Path Tree]{lang="EN-US"}
+                               \--\>0000.0000.0032.01  10       -/-/C/-/-/-/-/-/-
 
-[                           \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+                               \--\>0000.0000.0064.00  10       -/-/C/-/-/-/-/-/-
 
-[ ]{lang="EN-US"}
+0000.0000.0032.01  S/-/-/R/-/-
 
-[SpfNode            NodeFlag       SpfLink            LinkCost LinkFlag]{lang="EN-US"}
+                               \--\>0000.0000.0064.00  0        -/-/C/-/-/-/-/-/-
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+                               \--\>0000.0000.0032.00  0        -/-/-/P/-/-/-/-/-
 
-[0000.0000.0032.00  S/-/-/-/-/-]{lang="EN-US"}
+0000.0000.0064.00  S/-/-/R/-/-
 
-[                               \--\>0000.0000.0032.01  10       -/-/C/-/-/-/-/-/-]{lang="EN-US"}
+                               \--\>0000.0000.0032.00  10       -/-/-/P/-/-/-/-/-
 
-[                               \--\>0000.0000.0064.00  10       -/-/C/-/-/-/-/-/-]{lang="EN-US"}
+                               \--\>0000.0000.0032.01  10       -/-/-/P/-/-/-/-/-
 
-[0000.0000.0032.01  S/-/-/R/-/-]{lang="EN-US"}
+\# 显示IS-IS的IPv4详细拓扑信息。
 
-[                               \--\>0000.0000.0064.00  0        -/-/C/-/-/-/-/-/-]{lang="EN-US"}
+\<Sysname\> display isis spf-tree verbose
 
-[                               \--\>0000.0000.0032.00  0        -/-/-/P/-/-/-/-/-]{lang="EN-US"}
+                        Shortest Path Tree for IS-IS(1)
 
-[0000.0000.0064.00  S/-/-/R/-/-]{lang="EN-US"}
+                        \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                               \--\>0000.0000.0032.00  10       -/-/-/P/-/-/-/-/-]{lang="EN-US"}
+      Flags: S-Node is on SPF tree       T-Node is on tent list
 
-[                               \--\>0000.0000.0032.01  10       -/-/-/P/-/-/-/-/-]{lang="EN-US"}
+             O-Node is overload          R-Node is directly reachable
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1648789412}[显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[详细拓扑信息。]{style="font-family:宋体"}
+             I-Node or Link is isolated  D-Node or Link is to be deleted
 
-[[\<Sysname\> display isis spf-tree verbose]{lang="EN-US"}]{#struct_0_x1984_13510_1903463012}
+             C-Neighbor is child         P-Neighbor is parent
 
-[ ]{lang="EN-US"}
+             V-Link is involved          N-Link is a new path
 
-[                        Shortest Path Tree for IS-IS(1)]{lang="EN-US"}
+             L-Link is on change list    U-Protocol usage is changed
 
-[                        \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+             H-Nexthop is changed
 
-[ ]{lang="EN-US"}
+                           Level-1 Shortest Path Tree
 
-[      Flags: S-Node is on SPF tree       T-Node is on tent list]{lang="EN-US"}
+                           \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[             O-Node is overload          R-Node is directly reachable]{lang="EN-US"}
+ SpfNode        : 0000.0000.0001.00
 
-[             I-Node or Link is isolated  D-Node or Link is to be deleted]{lang="EN-US"}
+ Distance       : 0
 
-[             C-Neighbor is child         P-Neighbor is parent]{lang="EN-US"}
+ TE distance    : 0
 
-[             V-Link is involved          N-Link is a new path]{lang="EN-US"}
+ NodeFlag       : S/-/-/-/-/-
 
-[             L-Link is on change list    U-Protocol usage is changed]{lang="EN-US"}
+ RelayNibID     : 0x0
 
-[             H-Nexthop is changed]{lang="EN-US"}
+ TE tunnel count: 0
 
-[ ]{lang="EN-US"}
+ Nexthop count  : 0
 
-[                           Level-1 Shortest Path Tree]{lang="EN-US"}
+ SpfLink count  : 1
 
-[                           \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ \--\>0000.0000.0004.04
 
-[ ]{lang="EN-US"}
+    LinkCost    : 10
 
-[ SpfNode        : 0000.0000.0001.00]{lang="EN-US"}
+    LinkNewCost : 10
 
-[ Distance       : 0]{lang="EN-US"}
+    LinkFlag    : -/-/C/-/-/-/-/-/-
 
-[ TE distance    : 0]{lang="EN-US"}
+    LinkSrcCnt  : 1
 
-[ NodeFlag       : S/-/-/-/-/-]{lang="EN-US"}
+        Type: Adjacent       Interface: N/A
 
-[ RelayNibID     : 0x0]{lang="EN-US"}
+        Cost: 10             Nexthop  : N/A
 
-[ TE tunnel count: 0]{lang="EN-US"}
+ SpfNode        : 0000.0000.0004.00
 
-[ Nexthop count  : 0]{lang="EN-US"}
+ Distance       : 10
 
-[ SpfLink count  : 1]{lang="EN-US"}
+ Te Distance    : 10
 
-[ \--\>0000.0000.0004.04]{lang="EN-US"}
+ NodeFlag       : S/-/-/-/-/-
 
-[    LinkCost    : 10]{lang="EN-US"}
+ RelayNibID     : 0x14000000
 
-[    LinkNewCost : 10]{lang="EN-US"}
+ TE tunnel count: 1
 
-[    LinkFlag    : -/-/C/-/-/-/-/-/-]{lang="EN-US"}
+     Destination: 4.4.4.4                  Interface  : Tun0
 
-[    LinkSrcCnt  : 1]{lang="EN-US"}
+     TE cost    : 10                       Final cost : 10
 
-[        Type: Adjacent       Interface: N/A]{lang="EN-US"}
+     Add nexthop: YES                      Add TLV    : YES
 
-[        Cost: 10             Nexthop  : N/A]{lang="EN-US"}
+ Nexthop count  : 2
 
-[ ]{lang="EN-US"}
+     Neighbor   : 0000.0000.0004.00        Interface  : Tun0
 
-[ SpfNode        : 0000.0000.0004.00]{lang="EN-US"}
+     Nexthop    : 4.4.4.4
 
-[ Distance       : 10]{lang="EN-US"}
+     BkNeighbor : N/A                      BkInterface: N/A
 
-[ Te Distance    : 10]{lang="EN-US"}
+     BkNexthop  : N/A
 
-[ NodeFlag       : S/-/-/-/-/-]{lang="EN-US"}
+     Neighbor   : 0000.0000.0004.00        Interface  : Vlan50
 
-[ RelayNibID     : 0x14000000]{lang="EN-US"}
+     Nexthop    : 1.1.1.3
 
-[ TE tunnel count: 1]{lang="EN-US"}
+     BkNeighbor : N/A                      BkInterface: N/A
 
-[     Destination: 4.4.4.4                  Interface  : Tun0]{lang="EN-US"}
+     BkNexthop  : N/A
 
-[     TE cost    : 10                       Final cost : 10]{lang="EN-US"}
+ SpfLink count  : 1
 
-[     Add nexthop: YES                      Add TLV    : YES]{lang="EN-US"}
+ \--\>0000.0000.0004.04
 
-[ Nexthop count  : 2]{lang="EN-US"}
+    LinkCost    : 10
 
-[     Neighbor   : 0000.0000.0004.00        Interface  : Tun0]{lang="EN-US"}
+    LinkNewCost : 10
 
-[     Nexthop    : 4.4.4.4]{lang="EN-US"}
+    LinkFlag    : -/-/-/P/-/-/-/-/-
 
-[     BkNeighbor : N/A                      BkInterface: N/A]{lang="EN-US"}
+    LinkSrcCnt  : 1
 
-[     BkNexthop  : N/A]{lang="EN-US"}
+        Type: Remote         Interface: N/A
 
-[     Neighbor   : 0000.0000.0004.00        Interface  : Vlan50]{lang="EN-US"}
+        Cost: 10             Nexthop  : N/A
 
-[     Nexthop    : 1.1.1.3]{lang="EN-US"}
+        AdvMtID: 0
 
-[     BkNeighbor : N/A                      BkInterface: N/A]{lang="EN-US"}
+ SpfNode        : 0000.0000.0004.04
 
-[     BkNexthop  : N/A]{lang="EN-US"}
+ Distance       : 10
 
-[ SpfLink count  : 1]{lang="EN-US"}
+ TE distance    : 10
 
-[ \--\>0000.0000.0004.04]{lang="EN-US"}
+ NodeFlag       : S/-/-/R/-/-
 
-[    LinkCost    : 10]{lang="EN-US"}
+ RelayNibID     : 0x14000001
 
-[    LinkNewCost : 10]{lang="EN-US"}
+ TE tunnel count: 0
 
-[    LinkFlag    : -/-/-/P/-/-/-/-/-]{lang="EN-US"}
+ Nexthop count  : 0
 
-[    LinkSrcCnt  : 1]{lang="EN-US"}
+ SpfLink count  : 2
 
-[        Type: Remote         Interface: N/A]{lang="EN-US"}
+ \--\>0000.0000.0001.00
 
-[        Cost: 10             Nexthop  : N/A]{lang="EN-US"}
+    LinkCost    : 0
 
-[        AdvMtID: 0]{lang="EN-US"}
+    LinkNewCost : 0
 
-[ ]{lang="EN-US"}
+    LinkFlag    : -/-/-/P/-/-/-/-/-
 
-[ SpfNode        : 0000.0000.0004.04]{lang="EN-US"}
+    LinkSrcCnt  : 1
 
-[ Distance       : 10]{lang="EN-US"}
+        Type: Remote         Interface: N/A
 
-[ TE distance    : 10]{lang="EN-US"}
+        Cost: 0              Nexthop  : N/A
 
-[ NodeFlag       : S/-/-/R/-/-]{lang="EN-US"}
+ \--\>0000.0000.0004.00
 
-[ RelayNibID     : 0x14000001]{lang="EN-US"}
+    LinkCost    : 0
 
-[ TE tunnel count: 0]{lang="EN-US"}
+    LinkNewCost : 0
 
-[ Nexthop count  : 0]{lang="EN-US"}
+    LinkFlag    : -/-/C/-/-/-/-/-/-
 
-[ SpfLink count  : 2]{lang="EN-US"}
+    LinkSrcCnt  : 1
 
-[ \--\>0000.0000.0001.00]{lang="EN-US"}
+        Type: Remote         Interface: Vlan50
 
-[    LinkCost    : 0]{lang="EN-US"}
+        Cost: 0              Nexthop  : 1.1.1.3
 
-[    LinkNewCost : 0]{lang="EN-US"}
+                           Level-2 Shortest Path Tree
 
-[    LinkFlag    : -/-/-/P/-/-/-/-/-]{lang="EN-US"}
+                           \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[    LinkSrcCnt  : 1]{lang="EN-US"}
+ SpfNode        : 0000.0000.0001.00
 
-[        Type: Remote         Interface: N/A]{lang="EN-US"}
+ Distance       : 0
 
-[        Cost: 0              Nexthop  : N/A]{lang="EN-US"}
+ TE distance    : 0
 
-[ \--\>0000.0000.0004.00]{lang="EN-US"}
+ NodeFlag       : S/-/-/-/-/-
 
-[    LinkCost    : 0]{lang="EN-US"}
+ RelayNibID     : 0x0
 
-[    LinkNewCost : 0]{lang="EN-US"}
+ TE tunnel count: 0
 
-[    LinkFlag    : -/-/C/-/-/-/-/-/-]{lang="EN-US"}
+ Nexthop count  : 0
 
-[    LinkSrcCnt  : 1]{lang="EN-US"}
+ SpfLink count  : 1
 
-[        Type: Remote         Interface: Vlan50]{lang="EN-US"}
+ \--\>0000.0000.0004.04
 
-[        Cost: 0              Nexthop  : 1.1.1.3]{lang="EN-US"}
+    LinkCost    : 10
 
-[ ]{lang="EN-US"}
+    LinkNewCost : 10
 
-[                           Level-2 Shortest Path Tree]{lang="EN-US"}
+    LinkFlag    : -/-/C/-/-/-/-/-/-
 
-[                           \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+    LinkSrcCnt  : 1
 
-[ ]{lang="EN-US"}
+        Type: Adjacent       Interface: N/A
 
-[ SpfNode        : 0000.0000.0001.00]{lang="EN-US"}
+        Cost: 10             Nexthop  : N/A
 
-[ Distance       : 0]{lang="EN-US"}
+ SpfNode        : 0000.0000.0004.00
 
-[ TE distance    : 0]{lang="EN-US"}
+ Distance       : 10
 
-[ NodeFlag       : S/-/-/-/-/-]{lang="EN-US"}
+ TE distance    : 10
 
-[ RelayNibID     : 0x0]{lang="EN-US"}
+ NodeFlag       : S/-/-/-/-/-
 
-[ TE tunnel count: 0]{lang="EN-US"}
+ RelayNibID     : 0x0
 
-[ Nexthop count  : 0]{lang="EN-US"}
+ TE tunnel count: 1
 
-[ SpfLink count  : 1]{lang="EN-US"}
+     Destination: 4.4.4.4                  Interface  : Tun0
 
-[ \--\>0000.0000.0004.04]{lang="EN-US"}
+     TE cost    : 10                       Final cost : 10
 
-[    LinkCost    : 10]{lang="EN-US"}
+     Add nexthop: YES                      Add TLV    : YES
 
-[    LinkNewCost : 10]{lang="EN-US"}
+ Nexthop count  : 2
 
-[    LinkFlag    : -/-/C/-/-/-/-/-/-]{lang="EN-US"}
+     Neighbor   : 0000.0000.0004.00        Interface  : Tun0
 
-[    LinkSrcCnt  : 1]{lang="EN-US"}
+     Nexthop    : 4.4.4.4
 
-[        Type: Adjacent       Interface: N/A]{lang="EN-US"}
+     BkNeighbor : N/A                      BkInterface: N/A
 
-[        Cost: 10             Nexthop  : N/A]{lang="EN-US"}
+     BkNexthop  : N/A
 
-[ ]{lang="EN-US"}
+     Neighbor   : 0000.0000.0004.00        Interface  : Vlan50
 
-[ SpfNode        : 0000.0000.0004.00]{lang="EN-US"}
+     Nexthop    : 1.1.1.3
 
-[ Distance       : 10]{lang="EN-US"}
+     BkNeighbor : N/A                      BkInterface: N/A
 
-[ TE distance    : 10]{lang="EN-US"}
+     BkNexthop  : N/A
 
-[ NodeFlag       : S/-/-/-/-/-]{lang="EN-US"}
+ SpfLink count  : 1
 
-[ RelayNibID     : 0x0]{lang="EN-US"}
+ \--\>0000.0000.0004.04
 
-[ TE tunnel count: 1]{lang="EN-US"}
+    LinkCost    : 10
 
-[     Destination: 4.4.4.4                  Interface  : Tun0]{lang="EN-US"}
+    LinkNewCost : 10
 
-[     TE cost    : 10                       Final cost : 10]{lang="EN-US"}
+    LinkFlag    : -/-/-/P/-/-/-/-/-
 
-[     Add nexthop: YES                      Add TLV    : YES]{lang="EN-US"}
+    LinkSrcCnt  : 1
 
-[ Nexthop count  : 2]{lang="EN-US"}
+        Type: Remote         Interface: N/A
 
-[     Neighbor   : 0000.0000.0004.00        Interface  : Tun0]{lang="EN-US"}
+        Cost: 10             Nexthop  : N/A
 
-[     Nexthop    : 4.4.4.4]{lang="EN-US"}
+        AdvMtID: 0
 
-[     BkNeighbor : N/A                      BkInterface: N/A]{lang="EN-US"}
+ SpfNode        : 0000.0000.0004.04
 
-[     BkNexthop  : N/A]{lang="EN-US"}
+ Distance       : 10
 
-[     Neighbor   : 0000.0000.0004.00        Interface  : Vlan50]{lang="EN-US"}
+ TE distance    : 10
 
-[     Nexthop    : 1.1.1.3]{lang="EN-US"}
+ NodeFlag       : S/-/-/R/-/-
 
-[     BkNeighbor : N/A                      BkInterface: N/A]{lang="EN-US"}
+ RelayNibID     : 0x0
 
-[     BkNexthop  : N/A]{lang="EN-US"}
+ TE tunnel count: 0
 
-[ SpfLink count  : 1]{lang="EN-US"}
+ Nexthop count  : 0
 
-[ \--\>0000.0000.0004.04]{lang="EN-US"}
+ SpfLink count  : 2
 
-[    LinkCost    : 10]{lang="EN-US"}
+ \--\>0000.0000.0001.00
 
-[    LinkNewCost : 10]{lang="EN-US"}
+    LinkCost    : 0
 
-[    LinkFlag    : -/-/-/P/-/-/-/-/-]{lang="EN-US"}
+    LinkNewCost : 0
 
-[    LinkSrcCnt  : 1]{lang="EN-US"}
+    LinkFlag    : -/-/-/P/-/-/-/-/-
 
-[        Type: Remote         Interface: N/A]{lang="EN-US"}
+    LinkSrcCnt  : 1
 
-[        Cost: 10             Nexthop  : N/A]{lang="EN-US"}
+        Type: Remote         Interface: N/A
 
-[        AdvMtID: 0]{lang="EN-US"}
+        Cost: 0              Nexthop  : N/A
 
-[ ]{lang="EN-US"}
+ \--\>0000.0000.0004.00
 
-[ SpfNode        : 0000.0000.0004.04]{lang="EN-US"}
+    LinkCost    : 0
 
-[ Distance       : 10]{lang="EN-US"}
+    LinkNewCost : 0
 
-[ TE distance    : 10]{lang="EN-US"}
+    LinkFlag    : -/-/C/-/-/-/-/-/-
 
-[ NodeFlag       : S/-/-/R/-/-]{lang="EN-US"}
+    LinkSrcCnt  : 1
 
-[ RelayNibID     : 0x0]{lang="EN-US"}
+        Type: Remote         Interface: Vlan50
 
-[ TE tunnel count: 0]{lang="EN-US"}
+        Cost: 0              Nexthop  : 1.1.1.3
 
-[ Nexthop count  : 0]{lang="EN-US"}
+表1-15 display isis spf-tree命令显示信息描述表
 
-[ SpfLink count  : 2]{lang="EN-US"}
+字段
 
-[ \--\>0000.0000.0001.00]{lang="EN-US"}
+描述
 
-[    LinkCost    : 0]{lang="EN-US"}
+SpfNode
 
-[    LinkNewCost : 0]{lang="EN-US"}
+拓扑节点ID
 
-[    LinkFlag    : -/-/-/P/-/-/-/-/-]{lang="EN-US"}
+Distance
 
-[    LinkSrcCnt  : 1]{lang="EN-US"}
+根节点到该节点的最短距离
 
-[        Type: Remote         Interface: N/A]{lang="EN-US"}
+TE distance
 
-[        Cost: 0              Nexthop  : N/A]{lang="EN-US"}
+根节点到该节点的最短距离（包含隧道Link），如果未配置隧道，则与Distance值相等
 
-[ \--\>0000.0000.0004.00]{lang="EN-US"}
+NodeFlag
 
-[    LinkCost    : 0]{lang="EN-US"}
+节点状态标记：
 
-[    LinkNewCost : 0]{lang="EN-US"}
+·S：节点在SPF树上
 
-[    LinkFlag    : -/-/C/-/-/-/-/-/-]{lang="EN-US"}
+·T：节点在候选列表上
 
-[    LinkSrcCnt  : 1]{lang="EN-US"}
+·O：节点处于OverLoad
 
-[        Type: Remote         Interface: Vlan50]{lang="EN-US"}
+·R：节点是直连的
 
-[        Cost: 0              Nexthop  : 1.1.1.3]{lang="EN-US"}
+·I：孤立节点
 
-[[表1-15 ]{lang="EN-US"}[display isis spf-tree]{lang="EN-US"}]{#struct_0_x1984_13510_477077373}[命令显示信息描述表]{style="font-family:黑体"}
+·D：节点待删除
 
-[]{#table_struct_0_1426430829}[[字段]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1119185662}
-:::
+RelayNibID
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1826095569}
+节点的迭代下一跳ID
 
-[[SpfNode]{lang="EN-US"}]{#struct_0_x1984_13510_x139208618}
+TE tunnel count
 
-[[拓扑节点]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1984_13510_x1869773112}
+Destination为该节点的隧道条数
 
-[[Distance]{lang="EN-US"}]{#struct_0_x1984_13510_x1116400362}
+Destination
 
-[[根节点到该节点的最短距离]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1369326025}
+目的路由器
 
-[[TE distance]{lang="EN-US"}]{#struct_0_x1984_13510_x1379040592}
+TE cost
 
-[[根节点到该节点的最短距离（包含隧道]{style="font-family:宋体"}[Link]{lang="EN-US"}]{#struct_0_x1984_13510_x1379630415}[），如果未配置隧道，则与]{style="font-family:宋体"}[Distance]{lang="EN-US"}[值相等]{style="font-family:宋体"}
+TE隧道配置的IGP开销值
 
-[[NodeFlag]{lang="EN-US"}]{#struct_0_x1984_13510_951490731}
+Final cost
 
-[[节点状态标记：]{style="font-family:宋体"}]{#struct_0_x1984_13510_1185913007}
+TE隧道的最终生效开销值
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[S]{lang="EN-US"}]{#struct_0_x1984_13510_383648176}[：节点在]{lang="EN-US" style="font-family:
-  宋体"}[SPF]{lang="EN-US"}[树上]{lang="EN-US" style="font-family:
-  宋体"}
+Nexthop count
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[T]{lang="EN-US"}]{#struct_0_x1984_13510_x1116465898}[：节点在候选列表上]{lang="EN-US" style="font-family:
-  宋体"}
+节点的下一跳个数
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[O]{lang="EN-US"}]{#struct_0_x1984_13510_x174648682}[：节点处于]{lang="EN-US" style="font-family:
-  宋体"}[OverLoad]{lang="EN-US"}
+Nexthop
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[R]{lang="EN-US"}]{#struct_0_x1984_13510_254631409}[：节点是直连的]{lang="EN-US" style="font-family:
-  宋体"}
+节点的主用下一跳地址/链路发布源下一跳地址
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[I]{lang="EN-US"}]{#struct_0_x1984_13510_1162044494}[：孤立节点]{lang="EN-US" style="font-family:
-  宋体"}
+AdvMtID
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[D]{lang="EN-US"}]{#struct_0_x1984_13510_217589295}[：节点待删除]{lang="EN-US" style="font-family:
-  宋体"}
+从哪个拓扑学到的路由：
 
-[[RelayNibID]{lang="EN-US"}]{#struct_0_x1984_13510_x1379499343}
+·0：标准拓扑ID
 
-[[节点的迭代下一跳]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1984_13510_x1379433807}
+·6-4094：其它拓扑ID
 
-[[TE tunnel count]{lang="EN-US"}]{#struct_0_x1984_13510_x1379302735}
+Interface
 
-[[D]{lang="EN-US"}[estination]{lang="EN-US"}]{#struct_0_x1984_13510_x1379237199}[为该节点的隧道条数]{style="font-family:宋体"}
+节点的主用下一跳出接口/链路发布源下一跳出接口
 
-[[Destination]{lang="EN-US"}]{#struct_0_x1984_13510_x1379171663}
+BkNexthop
 
-[[目的路由器]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1379040591}
+节点的备份下一跳地址
 
-[[TE cost]{lang="EN-US"}]{#struct_0_x1984_13510_x1379630418}
+BkInterface
 
-[[TE]{lang="EN-US"}]{#struct_0_x1984_13510_x1379499346}[隧道配置的]{style="font-family:宋体"}[IGP]{lang="EN-US"}[开销值]{style="font-family:宋体"}
+节点的备份下一跳出接口
 
-[[Final cost]{lang="EN-US"}]{#struct_0_x1984_13510_x1379433810}
+Neighbor
 
-[[T]{lang="EN-US"}[E]{lang="EN-US"}]{#struct_0_x1984_13510_x1379368274}[隧道的最终生效开销值]{style="font-family:宋体"}
+节点主用下一跳邻居节点ID
 
-[[Nexthop count]{lang="EN-US"}]{#struct_0_x1984_13510_x1706487623}
+BkNeighbor
 
-[[节点的下一跳个数]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1116531434}
+节点备份下一跳邻居节点ID
 
-[[Nexthop]{lang="EN-US"}]{#struct_0_x1984_13510_1225427119}
+SpfLink
 
-[[节点的主用下一跳地址]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1984_13510_x419774784}[链路发布源下一跳地址]{style="font-family:宋体"}
+拓扑链路
 
-[[AdvMtID]{lang="EN-US"}]{#struct_0_x1984_13510_x1379630417}
+SpfLink count
 
-[[从哪个拓扑学到的路由：]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1379499345}
+拓扑链路个数
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[0]{lang="EN-US"}]{#struct_0_x1984_13510_x1379433809}[：标准拓扑]{lang="EN-US" style="font-family:
-  宋体"}[ID]{lang="EN-US"}
+LinkCost
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[6-4094]{lang="EN-US"}]{#struct_0_x1984_13510_x1379302737}[：其它拓扑]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+链路开销
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1984_13510_x2029345484}
+LinkNewCost
 
-[[节点的主用下一跳出接口]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1984_13510_2097254732}[链路发布源下一跳出接口]{style="font-family:宋体"}
+链路新开销
 
-[[BkNexthop]{lang="EN-US"}]{#struct_0_x1984_13510_x1116072682}
+LinkFlag
 
-[[节点的备份下一跳地址]{style="font-family:宋体"}]{#struct_0_x1984_13510_1080093943}
+链路状态标记：
 
-[[BkInterface]{lang="EN-US"}]{#struct_0_x1984_13510_70058715}
+·I：孤立链路
 
-[[节点的备份下一跳出接口]{style="font-family:宋体"}]{#struct_0_x1984_13510_1526237194}
+·D：链路待删除
 
-[[Neighbor]{lang="EN-US"}]{#struct_0_x1984_13510_x1116138218}
+·C：目的节点是源节点的子节点
 
-[[节点主用下一跳邻居节点]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1984_13510_201808661}
+·P：目的节点是源节点的父节点
 
-[[BkNeighbor]{lang="EN-US"}]{#struct_0_x1984_13510_x2139692581}
+·V：链路受到影响
 
-[[节点备份下一跳邻居节点]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1984_13510_x486829678}
+·N：新增链路
 
-[[SpfLink]{lang="EN-US"}]{#struct_0_x1984_13510_1747522862}
+·L：链路在变化链表上
 
-[[拓扑链路]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1116596973}
+·U：链路协议类型发生变化
 
-[[SpfLink count]{lang="EN-US"}]{#struct_0_x1984_13510_350714543}
+·H：链表下一跳发生变化
 
-[[拓扑链路个数]{style="font-family:宋体"}]{#struct_0_x1984_13510_546988620}
+LinkSrcCnt
 
-[[LinkCost]{lang="EN-US"}]{#struct_0_x1984_13510_62848258}
+链路发布源个数
 
-[[链路开销]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1116662509}
+Type
 
-[[LinkNewCost]{lang="EN-US"}]{#struct_0_x1984_13510_1620739884}
+链路发布源类型：
 
-[[链路新开销]{style="font-family:宋体"}]{#struct_0_x1984_13510_302337273}
+·Adjacent：本地邻居维护产生
 
-[[LinkFlag]{lang="EN-US"}]{#struct_0_x1984_13510_x583461838}
+·Remote：其它节点LSP产生
 
-[[链路状态标记：]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1116728045}
+Cost
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[I]{lang="EN-US"}]{#struct_0_x1984_13510_1548302761}[：孤立链路]{lang="EN-US" style="font-family:
-  宋体"}
-
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[D]{lang="EN-US"}]{#struct_0_x1984_13510_x175023420}[：链路待删除]{lang="EN-US" style="font-family:
-  宋体"}
-
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[C]{lang="EN-US"}]{#struct_0_x1984_13510_224228920}[：目的节点是源节点的子节点]{style="font-family:宋体"}
-
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[P]{lang="EN-US"}]{#struct_0_x1984_13510_x1116793581}[：目的节点是源节点的父节点]{style="font-family:宋体"}
-
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[V]{lang="EN-US"}]{#struct_0_x1984_13510_x1208708747}[：链路受到影响]{lang="EN-US" style="font-family:
-  宋体"}
-
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[N]{lang="EN-US"}]{#struct_0_x1984_13510_x1969914483}[：新增链路]{lang="EN-US" style="font-family:
-  宋体"}
-
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[L]{lang="EN-US"}]{#struct_0_x1984_13510_x1116334829}[：链路在变化链表上]{lang="EN-US" style="font-family:
-  宋体"}
-
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[U]{lang="EN-US"}]{#struct_0_x1984_13510_1236592260}[：链路协议类型发生变化]{style="font-family:宋体"}
-
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[H]{lang="EN-US"}]{#struct_0_x1984_13510_x1632371288}[：链表下一跳发生变化]{style="font-family:宋体"}
-
-[[LinkSrcCnt]{lang="EN-US"}]{#struct_0_x1984_13510_x1287767514}
-
-[[链路发布源个数]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1116400365}
-
-[[Type]{lang="EN-US"}]{#struct_0_x1984_13510_196757916}
-
-[[链路发布源类型：]{style="font-family:宋体"}]{#struct_0_x1984_13510_511255270}
-
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Adjacent]{lang="EN-US"}]{#struct_0_x1984_13510_1596066640}[：本地邻居维护产生]{style="font-family:
-  宋体"}
-
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Remote]{lang="EN-US"}]{#struct_0_x1984_13510_x1116465901}[：其它节点]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[产生]{lang="EN-US" style="font-family:宋体"}
-
-[[Cost]{lang="EN-US"}]{#struct_0_x1984_13510_x1385092088}
-
-[[链路发布源开销]{style="font-family:宋体"}]{#struct_0_x1984_13510_x251695222}
-
-[ ]{lang="EN-US"}
-
-::: {#1426816344 .myid}
-[]{#_Toc404788363}[]{#struct_0_x1984_13510_438479810}
+链路发布源开销
 
 **IS-IS \-- IS-IS配置命令 \-- display isis statistics**
 
 ------------------------------------------------------------------------
 
-[**[display isis statistics]{lang="EN-US"}**]{#struct_0_x1984_13510_x143344132}[命令用来显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+**[display isis statistics**]命令用来显示IS-IS的统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1116531437}
+【命令】
 
-[**[display ]{lang="EN-US"}**]{#struct_0_x1984_13510_1628711646}**[isis]{lang="EN-US"}[ statistics ]{lang="EN-US"}**[\[ **ipv4** \[ **topology** *topo-name* \] \] \[ **level-1** \| **level-1-2** \| **level-2** \] \[ *process-id* \]]{lang="EN-US"}
+**[display **]**isis statistics **[ **ipv4** [ **topology** *topo-name*    **level-1** \| **level-1-2** \| **level-2** ]  *process-id* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1724885013}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x509422329}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1970534355}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_138738956}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1984_13510_x1802483882}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_406636015}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1984_13510_1733443237}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1116072685}
+【参数】
 
-[**[ipv4]{lang="EN-US"}**]{#struct_0_x1984_13510_186846743}[：显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[统计信息。如果未指定该参数，显示]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[拓扑信息。]{style="font-family:宋体"}
+**[ipv4**]：显示IS-IS的IPv4统计信息。如果未指定该参数，显示IPv4拓扑信息。
 
-[**[topology]{lang="EN-US"}**[ *topo-name*]{lang="EN-US"}]{#struct_0_x1984_13510_1652261766}[：显示指定拓扑的信息。]{style="font-family:宋体"}*[topo-name]{lang="EN-US"}*[表示拓扑名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写；]{style="font-family:宋体"}**[base]{lang="EN-US"}**[为公网拓扑。如果未指定本参数，则显示公网的信息。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[topology** *topo-name*]：显示指定拓扑的信息。*topo-name*表示拓扑名，为1～31个字符的字符串，区分大小写；**base**为公网拓扑。如果未指定本参数，则显示公网的信息。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_1483378470}[：显示]{style="font-family:宋体"}[IS-IS Level-1]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+**[level-1**]：显示IS-IS Level-1的统计信息。
 
-[**[level-1-2]{lang="EN-US"}**]{#struct_0_x1984_13510_x1109142852}[：显示]{style="font-family:宋体"}[IS-IS Level-1-2]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+**[level-1-2**]：显示IS-IS Level-1-2的统计信息。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_x1765745071}[：显示]{style="font-family:宋体"}[IS-IS Level-2]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+**[level-2**]：显示IS-IS Level-2的统计信息。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_x1984_13510_1289661757}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，显示指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的统计信息。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535，显示指定IS-IS进程的统计信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x240391226}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果未指定级别，将同时显示]{style="font-family:宋体"}]{#struct_0_x1984_13510_1074496906}[Level-1]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+·如果未指定级别，将同时显示Level-1和Level-2的统计信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果未指定]{style="font-family:宋体"}]{#struct_0_x1984_13510_430370853}[IS-IS]{lang="EN-US"}[进程号，将显示所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的统计信息。]{style="font-family:宋体"}
+·如果未指定IS-IS进程号，将显示所有IS-IS进程的统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1067076575}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_13283280}[显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+\# 显示IS-IS的统计信息。
 
-[[\<Sysname\> display isis statistics]{lang="EN-US"}]{#struct_0_x1984_13510_x1116596972}
+\<Sysname\> display isis statistics
 
-[ ]{lang="EN-US"}
+                       Statistics information for IS-IS(1)
 
-[                       Statistics information for IS-IS(1)]{lang="EN-US"}
+                       \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                       \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+                               Level-1 Statistics
 
-[ ]{lang="EN-US"}
+                               \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                               Level-1 Statistics]{lang="EN-US"}
+MTR(base)
 
-[                               \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+Learnt routes information:
 
-[ ]{lang="EN-US"}
+         Total IPv4 Learnt Routes in IPv4 Routing Table: 1
 
-[MTR(base)]{lang="EN-US"}
+Imported routes information:
 
-[ ]{lang="EN-US"}
+         IPv4 Imported Routes:
 
-[Learnt routes information:]{lang="EN-US"}
+                         Static: 0       Direct: 0
 
-[         Total IPv4 Learnt Routes in IPv4 Routing Table: 1]{lang="EN-US"}
+                         ISIS:   0       BGP:    0
 
-[ ]{lang="EN-US"}
+                         RIP:    0       OSPF:   0
 
-[Imported routes information:]{lang="EN-US"}
+                         Total Number:   0
 
-[         IPv4 Imported Routes:]{lang="EN-US"}
+MTR(base)
 
-[                         Static: 0       Direct: 0]{lang="EN-US"}
+Learnt routes information:
 
-[                         ISIS:   0       BGP:    0]{lang="EN-US"}
+         Total IPv6 Learnt Routes in IPv6 Routing Table: 0
 
-[                         RIP:    0       OSPF:   0]{lang="EN-US"}
+Imported routes information:
 
-[                         Total Number:   0]{lang="EN-US"}
+         IPv6 Imported Routes:
 
-[ ]{lang="EN-US"}
+                         Static: 0       Direct: 0
 
-[MTR(base)]{lang="EN-US"}
+                         ISISv6: 0       BGP4+:  0
 
-[ ]{lang="EN-US"}
+                         RIPng:  0       OSPFv3: 0
 
-[Learnt routes information:]{lang="EN-US"}
+                         Total Number:   0
 
-[         Total IPv6 Learnt Routes in IPv6 Routing Table: 0]{lang="EN-US"}
+Lsp information:
 
-[ ]{lang="EN-US"}
+                  LSP Source ID:          No. of used LSPs
 
-[Imported routes information:]{lang="EN-US"}
+                  7777.8888.1111                  001
 
-[         IPv6 Imported Routes:]{lang="EN-US"}
+                               Level-2 Statistics
 
-[                         Static: 0       Direct: 0]{lang="EN-US"}
+                               \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                         ISISv6: 0       BGP4+:  0]{lang="EN-US"}
+MTR(base)
 
-[                         RIPng:  0       OSPFv3: 0]{lang="EN-US"}
+Learnt routes information:
 
-[                         Total Number:   0]{lang="EN-US"}
+         Total IPv4 Learnt Routes in IPv4 Routing Table: 0
 
-[ ]{lang="EN-US"}
+Imported routes information:
 
-[Lsp information:]{lang="EN-US"}
+         IPv4 Imported Routes:
 
-[                  LSP Source ID:          No. of used LSPs]{lang="EN-US"}
+                         Static: 0       Direct: 0
 
-[                  7777.8888.1111                  001]{lang="EN-US"}
+                         ISIS:   0       BGP:    0
 
-[ ]{lang="EN-US"}
+                         RIP:    0       OSPF:   0
 
-[                               Level-2 Statistics]{lang="EN-US"}
+                         Total Number:   0
 
-[                               \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+MTR(base)
 
-[ ]{lang="EN-US"}
+Learnt routes information:
 
-[MTR(base)]{lang="EN-US"}
+         Total IPv6 Learnt Routes in IPv6 Routing Table: 0
 
-[ ]{lang="EN-US"}
+Imported routes information:
 
-[Learnt routes information:]{lang="EN-US"}
+         IPv6 Imported Routes:
 
-[         Total IPv4 Learnt Routes in IPv4 Routing Table: 0]{lang="EN-US"}
+                         Static: 0       Direct: 0
 
-[ ]{lang="EN-US"}
+                         ISISv6: 0       BGP4+:  0
 
-[Imported routes information:]{lang="EN-US"}
+                         RIPng:  0       OSPFv3: 0
 
-[         IPv4 Imported Routes:]{lang="EN-US"}
+                         Total Number:   0
 
-[                         Static: 0       Direct: 0]{lang="EN-US"}
+Lsp information:
 
-[                         ISIS:   0       BGP:    0]{lang="EN-US"}
+                  LSP Source ID:          No. of used LSPs
 
-[                         RIP:    0       OSPF:   0]{lang="EN-US"}
+                  7777.8888.1111                  001
 
-[                         Total Number:   0]{lang="EN-US"}
+表1-16 display isis statistics命令显示信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[MTR(base)]{lang="EN-US"}
+描述
 
-[ ]{lang="EN-US"}
+Statistics information for IS-IS(*processid*)
 
-[Learnt routes information:]{lang="EN-US"}
+指定IS-IS进程的统计信息
 
-[         Total IPv6 Learnt Routes in IPv6 Routing Table: 0]{lang="EN-US"}
+Level-1 Statistics
 
-[ ]{lang="EN-US"}
+Level-1路由统计信息
 
-[Imported routes information:]{lang="EN-US"}
+Level-2 Statistics
 
-[         IPv6 Imported Routes:]{lang="EN-US"}
+Level-2路由统计信息
 
-[                         Static: 0       Direct: 0]{lang="EN-US"}
+MTR(*topo-name*)
 
-[                         ISISv6: 0       BGP4+:  0]{lang="EN-US"}
+指定某个拓扑，拓扑名为base则为公网拓扑
 
-[                         RIPng:  0       OSPFv3: 0]{lang="EN-US"}
+Learnt routes information
 
-[                         Total Number:   0]{lang="EN-US"}
+学习到的路由信息：
 
-[ ]{lang="EN-US"}
+Total IPv4 Learnt Routes in IPv4 Routing Table：学习到的IPv4路由信息的总数
 
-[Lsp information:]{lang="EN-US"}
+Total IPv6 Learnt Routes in IPv6 Routing Table：学习到的IPv6路由信息的总数
 
-[                  LSP Source ID:          No. of used LSPs]{lang="EN-US"}
+Imported routes information
 
-[                  7777.8888.1111                  001]{lang="EN-US"}
+IPv4 Imported Routes
 
-[]{#struct_0_x1984_13510_x1215369398}[]{#_Toc94753874}[]{#_Toc94671200}[[表1-16 ]{lang="EN-US"}[display isis statistics]{lang="EN-US"}]{#_Toc73952276}[命令显示]{style="font-family:黑体"}[信息描述表]{style="font-family:黑体"}
+引入IPv4路由数量：
 
-[]{#table_struct_0_1457692554}[[字段]{style="font-family:黑体"}]{#struct_0_x1984_13510_835600907}
-:::
+·Static：引入的IPv4静态路由数量
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1731105062}
+·Direct：引入的IPv4直连路由数量
 
-[[Statistics information for IS-IS(*processid*)]{lang="EN-US"}]{#struct_0_x1984_13510_x1116662508}
+·ISIS：从其它IS-IS进程引入的路由数量
 
-[[指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x1108143471}[进程的统计信息]{style="font-family:宋体"}
+·BGP：从BGP引入的路由数量
 
-[[Level-1 Statistics]{lang="EN-US"}]{#struct_0_x1984_13510_1992178741}
+·RIP：从RIP引入的路由数量
 
-[[Level-1]{lang="EN-US"}]{#struct_0_x1984_13510_1171043258}[路由统计信息]{style="font-family:宋体"}
+·OSPF：从OSPF引入的路由数量
 
-[[Level-2 Statistics]{lang="EN-US"}]{#struct_0_x1984_13510_x706106971}
+IPv6 Imported Routes
 
-[[Level-2]{lang="EN-US"}]{#struct_0_x1984_13510_1592056337}[路由统计信息]{style="font-family:宋体"}
+引入IPv6路由数量：
 
-[[MTR(*topo-name*)]{lang="EN-US"}]{#struct_0_x1984_13510_412774703}
+·Static：引入的IPv6静态路由数量
 
-[[指定某个拓扑，拓扑名为]{style="font-family:宋体"}[base]{lang="EN-US"}]{#struct_0_x1984_13510_x1153309238}[则为公网拓扑]{style="font-family:宋体"}
+·Direct：引入的IPv6直连路由数量
 
-[[Learnt routes information]{lang="EN-US"}]{#struct_0_x1984_13510_x1116728044}
+·ISISv6：从其它IS-ISv6进程引入的路由数量
 
-[[学习到的路由信息：]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1180580594}
+·BGP4+：从BGP4+引入的路由数量
 
-[[Total IPv4 Learnt Routes in IPv4 Routing Table]{lang="EN-US"}]{#struct_0_x1984_13510_x472116303}[：学习到的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[路由信息的总数]{style="font-family:宋体"}
+·RIPng：从RIPng引入的路由数量
 
-[[Total IPv6 Learnt Routes in IPv6 Routing Table]{lang="EN-US"}]{#struct_0_x1984_13510_1806417310}[：学习到的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[路由信息的总数]{style="font-family:宋体"}
+·OSPFv3：从OSPFv3引入的路由数量
 
-[[Imported routes information]{lang="EN-US"}]{#struct_0_x1984_13510_x1217560266}
+Lsp information
 
-[[IPv4 Imported Routes]{lang="EN-US"}]{#struct_0_x1984_13510_x1116793580}
+LSP信息：
 
-[[引入]{style="font-family:宋体"}[IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_1520174608}[路由]{style="font-family:宋体"}[数量：]{style="font-family:宋体"}
+·LSP Source ID：本地生成的LSP的System ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Static]{lang="EN-US"}]{#struct_0_x1984_13510_x494575276}[：引入的]{lang="EN-US" style="font-family:宋体"}[IPv4]{lang="EN-US"}[静态路由数量]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Direct]{lang="EN-US"}]{#struct_0_x1984_13510_x1515355174}[：引入的]{lang="EN-US" style="font-family:宋体"}[IPv4]{lang="EN-US"}[直连路由数量]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ISIS]{lang="EN-US"}]{#struct_0_x1984_13510_246477033}[：从其它]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程引入的路由数量]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[BGP]{lang="EN-US"}]{#struct_0_x1984_13510_817317677}[：从]{style="font-family:宋体"}[BGP]{lang="EN-US"}[引入的路由数量]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RIP]{lang="EN-US"}]{#struct_0_x1984_13510_x1116334828}[：从]{style="font-family:宋体"}[RIP]{lang="EN-US"}[引入的路由数量]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[OSPF]{lang="EN-US"}]{#struct_0_x1984_13510_x329491681}[：从]{style="font-family:宋体"}[OSPF]{lang="EN-US"}[引入的路由数量]{style="font-family:宋体"}
-
-[[IPv6 Imported Routes]{lang="EN-US"}]{#struct_0_x1984_13510_x964921861}
-
-[[引入]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_x1984_13510_632723006}[路由数量：]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Static]{lang="EN-US"}]{#struct_0_x1984_13510_397415963}[：引入的]{lang="EN-US" style="font-family:宋体"}[IPv6]{lang="EN-US"}[静态路由数量]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Direct]{lang="EN-US"}]{#struct_0_x1984_13510_x1116400364}[：引入的]{lang="EN-US" style="font-family:宋体"}[IPv6]{lang="EN-US"}[直连路由数量]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ISISv6]{lang="EN-US"}]{#struct_0_x1984_13510_1762841857}[：从其它]{lang="EN-US" style="font-family:宋体"}[IS-ISv6]{lang="EN-US"}[进程引入的路由数量]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[BGP4+]{lang="EN-US"}]{#struct_0_x1984_13510_x571291805}[：从]{style="font-family:宋体"}[BGP4+]{lang="EN-US"}[引入的路由数量]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RIPng]{lang="EN-US"}]{#struct_0_x1984_13510_215125313}[：从]{lang="EN-US" style="font-family:宋体"}[RIPng]{lang="EN-US"}[引入的路由数量]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[OSPFv3]{lang="EN-US"}]{#struct_0_x1984_13510_x1116465900}[：从]{lang="EN-US" style="font-family:宋体"}[OSPFv3]{lang="EN-US"}[引入的路由数量]{lang="EN-US" style="font-family:宋体"}
-
-[[Lsp information]{lang="EN-US"}]{#struct_0_x1984_13510_180991853}
-
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x606353510}[信息：]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSP Source ID]{lang="EN-US"}]{#struct_0_x1984_13510_210730116}[：本地生成的]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No. of used LSPs]{lang="EN-US"}]{#struct_0_x1984_13510_x1116531436}[：本地生成的]{lang="EN-US" style="font-family:
-  宋体"}[LSP]{lang="EN-US"}[已使用的分片数量]{lang="EN-US" style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1984253387 .myid}
-[]{#_Toc163546276}[]{#_Toc297189171}[]{#_Toc290886767}[]{#_Toc252200746}[]{#_Toc163546250}[]{#_Toc50204094}[]{#_Toc33866093}[]{#_Toc404788364}[]{#struct_0_x1984_13510_62627705}[]{#_Toc340564365}
+·No. of used LSPs：本地生成的LSP已使用的分片数量
 
 **IS-IS \-- IS-IS配置命令 \-- display osi**
 
 ------------------------------------------------------------------------
 
-[**[display osi]{lang="EN-US"}**]{#struct_0_x1984_13510_42484515}[命令用来显示]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的信息，包括]{style="font-family:宋体"}[socket]{lang="EN-US"}[的状态、选项等，以及接收报文时需要匹配的入接口和组播]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+**[display osi**]命令用来显示OSI连接的信息，包括socket的状态、选项等，以及接收报文时需要匹配的入接口和组播MAC地址信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x107763691}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_x1984_13510_1246919923}
+集中式设备：
 
-[[display osi]{lang="EN-US"}]{#struct_0_x1984_13510_x852141024}
+display osi
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1984_13510_x1778614935}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[[display osi]{lang="EN-US"}]{#struct_0_x1984_13510_x1116072684}[ \[ ]{lang="EN-US" style="font-weight:normal"}[slot ]{lang="EN-US"}[[slot-number]{lang="EN-US" style="font-weight:normal"}]{.commandparameterChar}[ \[ ]{lang="EN-US" style="font-weight:normal"}[cpu]{lang="EN-US"}[ *cpu-number* \] \]]{lang="EN-US" style="font-weight:normal"}
+display osi slot slot-number{.commandparameterChar} [cpu *cpu-number*  ]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1984_13510_x82705471}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display osi ]{lang="EN-US"}**[\[ **chassis** ]{lang="EN-US"}]{#struct_0_x1984_13510_x264622585}[[chassis-number]{lang="EN-US"}]{.commandparameterChar}**[ slot]{lang="EN-US"}**[ ]{lang="EN-US"}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[ \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}
+**[display osi ** **chassis** ]chassis-number{.commandparameterChar}** slot**slot-number{.commandparameterChar} [ **cpu** *cpu-number*  ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1023931708}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1239457322}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x760044110}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1669795124}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1984_13510_1740069933}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1116138220}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1984_13510_x154225091}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x235492649}
+【参数】
 
-[[[slot]{lang="EN-US"}]{.commandkeywordsChar}[ ]{lang="EN-US" style="color:black"}]{#struct_0_x1984_13510_x350893107}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[：]{style="font-family:宋体;color:black"}[显示指定单板的]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的信息[。]{style="color:black"}]{style="font-family:宋体"}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[表示单板所在的槽位号[，]{style="color:black"}取值范围请以设备的实际情况为准。如果未指定本参数，则显示所有单板的连接信息。（分布式－独立运行模式）]{style="font-family:宋体"}
+slot{.commandkeywordsChar}slot-number{.commandparameterChar}：显示指定单板的OSI连接的信息[。]slot-number{.commandparameterChar}表示单板所在的槽位号[，取值范围请以设备的实际情况为准。如果未指定本参数，则显示所有单板的连接信息。（分布式－独立运行模式）]
 
-[[[slot]{lang="EN-US"}]{.commandkeywordsChar}[ ]{lang="EN-US" style="color:black"}]{#struct_0_x1984_13510_x1733716676}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[：]{style="font-family:宋体;color:black"}[显示指定成员设备的]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的信息[。]{style="color:black"}]{style="font-family:宋体"}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号]{style="font-family:宋体"}[。如果未指定本参数，则显示所有成员设备的连接信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+slot{.commandkeywordsChar}slot-number{.commandparameterChar}：显示指定成员设备的OSI连接的信息[。]slot-number{.commandparameterChar}表示设备在IRF中的成员编号。如果未指定本参数，则显示所有成员设备的连接信息。（集中式IRF设备）（不支持IRF3的设备）
 
-[[[slot]{lang="EN-US"}]{.commandkeywordsChar}[ ]{lang="EN-US" style="color:black"}]{#struct_0_x1984_13510_1030075098}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[：]{style="font-family:宋体;color:black"}[显示指定成员设备的]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的信息[。]{style="color:black"}]{style="font-family:宋体"}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号]{style="font-family:宋体"}[。如果未指定本参数，则显示所有成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[的连接信息。（集中式设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+slot{.commandkeywordsChar}slot-number{.commandparameterChar}：显示指定成员设备的OSI连接的信息[。]slot-number{.commandparameterChar}表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果未指定本参数，则显示所有成员设备/PEX的连接信息。（集中式设备）（支持IRF3的设备）
 
-[[[chassis]{lang="EN-US"}]{.commandkeywordsChar}[ ]{lang="EN-US" style="color:black"}]{#struct_0_x1984_13510_1743837936}[[chassis-number]{lang="EN-US"}]{.commandparameterChar}[ ]{lang="EN-US" style="color:black"}[[slot]{lang="EN-US"}]{.commandkeywordsChar}[ ]{lang="EN-US"}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[：显示指定成员设备上指定单板的]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的信息。]{style="font-family:宋体"}[[chassis-numbe]{lang="EN-US"}]{.commandparameterChar}[r]{lang="EN-US"}[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[表示单板所在的槽位号，取值范围请以设备的实际情况为准。如果未指定本参数，则显示所有成员设备所有单板的连接信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+chassis{.commandkeywordsChar}chassis-number{.commandparameterChar}slot{.commandkeywordsChar}slot-number{.commandparameterChar}：显示指定成员设备上指定单板的OSI连接的信息。chassis-numbe{.commandparameterChar}r表示设备在IRF中的成员编号，slot-number{.commandparameterChar}表示单板所在的槽位号，取值范围请以设备的实际情况为准。如果未指定本参数，则显示所有成员设备所有单板的连接信息。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[[[chassis]{lang="EN-US"}]{.commandkeywordsChar}[ ]{lang="EN-US" style="color:black"}]{#struct_0_x1984_13510_x297808373}[[chassis-number]{lang="EN-US"}]{.commandparameterChar}[ ]{lang="EN-US" style="color:black"}[[slot]{lang="EN-US"}]{.commandkeywordsChar}[ ]{lang="EN-US"}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[：显示指定单板的]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的信息。]{style="font-family:宋体"}[[chassis-numbe]{lang="EN-US"}]{.commandparameterChar}[r]{lang="EN-US"}[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[表示单板或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号，取值范围请以设备的实际情况为准。如果未指定本参数，则显示所有单板的连接信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+chassis{.commandkeywordsChar}chassis-number{.commandparameterChar}slot{.commandkeywordsChar}slot-number{.commandparameterChar}：显示指定单板的OSI连接的信息。chassis-numbe{.commandparameterChar}r表示设备在IRF中的成员编号或者PEX对应的虚拟框号，slot-number{.commandparameterChar}表示单板或PEX所在的槽位号，取值范围请以设备的实际情况为准。如果未指定本参数，则显示所有单板的连接信息。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_x1984_13510_x52852124}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的编号。只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[cpu** *cpu-number*]：表示CPU的编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1039139895}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_265641972}[显示所有]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的信息。]{style="font-family:宋体"}
+\# 显示所有OSI连接的信息。
 
-[[\<Sysname\> display osi]{lang="EN-US"}]{#struct_0_x1984_13510_1262413018}
+\<Sysname\> display osi
 
-[Total OSI socket number: 2]{lang="EN-US"}
+Total OSI socket number: 2
 
-[ ]{lang="EN-US"}
+ Location: chassis 1 slot 0 cpu 0
 
-[ Location: chassis 1 slot 0 cpu 0]{lang="EN-US"}
+ Creator: isisd[1539]
 
-[ Creator: isisd\[1539\]]{lang="EN-US"}
+ State: N/A
 
-[ State: N/A]{lang="EN-US"}
+ Options: SO_FILTER
 
-[ Options: SO_FILTER]{lang="EN-US"}
+ Error: 0
 
-[ Error: 0]{lang="EN-US"}
+ Receiving buffer(cc/hiwat/lowat/state): 0 / 1048576 / 1 / N/A
 
-[ Receiving buffer(cc/hiwat/lowat/state): 0 / 1048576 / 1 / N/A]{lang="EN-US"}
+ Sending buffer(cc/hiwat/lowat/state): 0 / 262144 / 512 / N/A
 
-[ Sending buffer(cc/hiwat/lowat/state): 0 / 262144 / 512 / N/A]{lang="EN-US"}
+ Type: 2
 
-[ Type: 2]{lang="EN-US"}
+ Enabled interfaces:
 
-[ Enabled interfaces:]{lang="EN-US"}
+  GigabitEthernet0/0
 
-[  GigabitEthernet0/0]{lang="EN-US"}
+   MAC address: 0180-c200-0014
 
-[   MAC address: 0180-c200-0014]{lang="EN-US"}
+ Location: chassis 1 slot 0 cpu 0
 
-[ ]{lang="EN-US"}
+ Creator: isisd[1539]
 
-[ Location: chassis 1 slot 0 cpu 0]{lang="EN-US"}
+ State: N/A
 
-[ Creator: isisd\[1539\]]{lang="EN-US"}
+ Options: SO_FILTER
 
-[ State: N/A]{lang="EN-US"}
+ Error: 0
 
-[ Options: SO_FILTER]{lang="EN-US"}
+ Receiving buffer(cc/hiwat/lowat/state): 0 / 1048576 / 1 / N/A
 
-[ Error: 0]{lang="EN-US"}
+ Sending buffer(cc/hiwat/lowat/state): 0 / 262144 / 512 / N/A
 
-[ Receiving buffer(cc/hiwat/lowat/state): 0 / 1048576 / 1 / N/A]{lang="EN-US"}
+ Type: 2
 
-[ Sending buffer(cc/hiwat/lowat/state): 0 / 262144 / 512 / N/A]{lang="EN-US"}
+ Enabled interfaces:
 
-[ Type: 2]{lang="EN-US"}
+  GigabitEthernet0/0
 
-[ Enabled interfaces:]{lang="EN-US"}
+   MAC address: 0180-c200-0014
 
-[  GigabitEthernet0/0]{lang="EN-US"}
+表1-17 display osi命令显示信息描述表
 
-[   MAC address: 0180-c200-0014]{lang="EN-US"}
+字段
 
-[[表1-17 ]{lang="EN-US"}[display osi]{lang="EN-US"}]{#struct_0_x1984_13510_x1673219816}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_1452262091}[[字段]{style="font-family:黑体"}]{#struct_0_x1984_13510_1623426172}
-:::
+Total OSI socket number
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1984_13510_1262478554}
+OSI socket的总数
 
-[[Total OSI socket number]{lang="EN-US"}]{#struct_0_x1984_13510_x55726485}
+Chassis
 
-[[OSI socket]{lang="EN-US"}]{#struct_0_x1984_13510_499523447}[的总数]{style="font-family:宋体"}
+设备在IRF中的成员编号
 
-[[Chassis]{lang="EN-US"}]{#struct_0_x1984_13510_x576383393}
+Slot
 
-[[设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1984_13510_1350858447}[中的成员编号]{style="font-family:宋体"}
+单板的槽位号
 
-[[Slot]{lang="EN-US"}]{#struct_0_x1984_13510_x564737819}
+Cpu
 
-[[单板的槽位号]{style="font-family:宋体"}]{#struct_0_x1984_13510_x960736862}
+CPU编号
 
-[[Cpu]{lang="EN-US"}]{#struct_0_x1984_13510_412709167}
+Creator
 
-[[CPU]{lang="EN-US"}]{#struct_0_x1984_13510_x1153374774}[编号]{style="font-family:宋体"}
+创建socket的任务名称，括号中为创建者的进程号
 
-[[Creator]{lang="EN-US"}]{#struct_0_x1984_13510_1262544090}
+State
 
-[[创建]{style="font-family:宋体"}[socket]{lang="EN-US"}]{#struct_0_x1984_13510_1049568670}[的任务名称，括号中为创建者的进程号]{style="font-family:宋体"}
+OSI socket无状态，始终显示为N/A
 
-[[State]{lang="EN-US"}]{#struct_0_x1984_13510_1036249094}
+Options
 
-[[OSI socket]{lang="EN-US"}]{#struct_0_x1984_13510_x1102035567}[无状态，始终显示为]{style="font-family:宋体"}[N/A]{lang="EN-US"}
+socket的选项，OSI socket支持以下两种：
 
-[[Options]{lang="EN-US"}]{#struct_0_x1984_13510_1809132017}
+·SO_FILTER：设置了过滤选项
 
-[[socket]{lang="EN-US"}]{#struct_0_x1984_13510_1262609626}[的选项，]{style="font-family:宋体"}[OSI socket]{lang="EN-US"}[支持以下两种：]{style="font-family:宋体"}
+·N/A：没有设置选项
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[SO_FILTER]{lang="EN-US"}]{#struct_0_x1984_13510_723329867}[：设置了过滤选项]{lang="EN-US" style="font-family:宋体"}
+Error
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[N/A]{lang="EN-US"}]{#struct_0_x1984_13510_2105516080}[：没有设置选项]{lang="EN-US" style="font-family:宋体"}
+影响socket连接的错误
 
-[[Error]{lang="EN-US"}]{#struct_0_x1984_13510_1720778938}
+Receiving buffer(cc/hiwat/lowat/state)
 
-[[影响]{style="font-family:宋体"}[socket]{lang="EN-US"}]{#struct_0_x1984_13510_x317990829}[连接的错误]{style="font-family:宋体"}
+接收缓冲区信息，括号中分别为：当前使用空间、最大空间、最小空间、状态
 
-[[Receiving buffer(cc/hiwat/lowat/state)]{lang="EN-US"}]{#struct_0_x1984_13510_1262150874}
+Sending buffer(cc/hiwat/lowat/state)
 
-[[接收缓冲区信息，括号中分别为：当前使用空间、最大空间、最小空间、状态]{style="font-family:宋体"}]{#struct_0_x1984_13510_1487295408}
+发送缓冲区信息，括号中分别为：当前使用空间、最大空间、最小空间、状态
 
-[[Sending buffer(cc/hiwat/lowat/state)]{lang="EN-US"}]{#struct_0_x1984_13510_x1008288069}
+Type
 
-[[发送缓冲区信息，括号中分别为：当前使用空间、最大空间、最小空间、状态]{style="font-family:宋体"}]{#struct_0_x1984_13510_774882684}
+IS-IS使用的socket类型为2，对应无连接的、不可靠的运输层数据包协议
 
-[[Type]{lang="EN-US"}]{#struct_0_x1984_13510_1981771705}
+Enabled interfaces
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1262216410}[使用的]{style="font-family:宋体"}[socket]{lang="EN-US"}[类型为]{style="font-family:宋体"}[2]{lang="EN-US"}[，对应无连接的、不可靠的运输层数据包协议]{style="font-family:宋体"}
-
-[[Enabled interfaces]{lang="EN-US"}]{#struct_0_x1984_13510_1454313391}
-
-[[接收报文时需要匹配的入接口和组播]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1984_13510_x1493383332}[地址信息，仅以太链路层接口上收到的报文需要匹配组播]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
-
-[ ]{lang="EN-US" style="color:blue"}
-
-::: {#-1775481170 .myid}
-[]{#_Toc404788365}[]{#struct_0_x1984_13510_1442291407}[]{#_Toc340564366}
+接收报文时需要匹配的入接口和组播MAC地址信息，仅以太链路层接口上收到的报文需要匹配组播MAC地址
 
 **IS-IS \-- IS-IS配置命令 \-- display osi statistics**
 
 ------------------------------------------------------------------------
 
-[**[display osi statistics]{lang="EN-US"}**]{#struct_0_x1984_13510_817543347}[命令用来显示]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的报文统计信息，包括接收报文、中继转发报文、丢弃报文和发送报文等统计信息。]{style="font-family:宋体"}
+**[display osi statistics**]命令用来显示OSI连接的报文统计信息，包括接收报文、中继转发报文、丢弃报文和发送报文等统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_218940098}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_x1984_13510_1262281946}
+集中式设备：
 
-[**[display osi statistics]{lang="EN-US"}**]{#struct_0_x1984_13510_x2041067347}
+**[display osi statistics**]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1984_13510_1868594632}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display osi statistics]{lang="EN-US"}**[ \[ **slot** ]{lang="EN-US"}]{#struct_0_x1984_13510_1706829204}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[ \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}
+**[display osi statistics** [ **slot** ]slot-number]{.commandparameterChar} [ **cpu** *cpu-number*  ]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1984_13510_x1211679660}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display osi statistics]{lang="EN-US"}**[ \[ **chassis** ]{lang="EN-US"}]{#struct_0_x1984_13510_x1108227195}[[chassis-number]{lang="EN-US"}]{.commandparameterChar}[ **slot** ]{lang="EN-US"}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[ \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}
+**[display osi statistics** [ **chassis** ]chassis-number]{.commandparameterChar} **slot** slot-number{.commandparameterChar} [ **cpu** *cpu-number*  ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1059011050}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x351620999}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1048572626}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1262347482}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1984_13510_x118258652}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1144485582}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1984_13510_x1590106743}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x821014760}
+【参数】
 
-[[[slot]{lang="EN-US"}]{.commandkeywordsChar}[ ]{lang="EN-US" style="color:black"}]{#struct_0_x1984_13510_x293589498}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[：]{style="font-family:宋体;color:black"}[显示指定单板的]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的报文统计信息[。]{style="color:black"}]{style="font-family:宋体"}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[表示单板所在的槽位号[，]{style="color:black"}取值范围请以设备的实际情况为准。如果未指定本参数，则显示所有单板的报文统计信息之和。（分布式－独立运行模式）]{style="font-family:宋体"}
+slot{.commandkeywordsChar}slot-number{.commandparameterChar}：显示指定单板的OSI连接的报文统计信息[。]slot-number{.commandparameterChar}表示单板所在的槽位号[，取值范围请以设备的实际情况为准。如果未指定本参数，则显示所有单板的报文统计信息之和。（分布式－独立运行模式）]
 
-[[[slot]{lang="EN-US"}]{.commandkeywordsChar}[ ]{lang="EN-US" style="color:black"}]{#struct_0_x1984_13510_1884556444}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[：]{style="font-family:宋体;color:black"}[显示指定成员设备的]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的报文统计信息[。]{style="color:black"}]{style="font-family:宋体"}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号]{style="font-family:宋体"}[。如果未指定本参数，则显示所有成员设备的报文统计信息之和。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+slot{.commandkeywordsChar}slot-number{.commandparameterChar}：显示指定成员设备的OSI连接的报文统计信息[。]slot-number{.commandparameterChar}表示设备在IRF中的成员编号。如果未指定本参数，则显示所有成员设备的报文统计信息之和。（集中式IRF设备）（不支持IRF3的设备）
 
-[[[slot]{lang="EN-US"}]{.commandkeywordsChar}[ ]{lang="EN-US" style="color:black"}]{#struct_0_x1984_13510_x939358906}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[：]{style="font-family:宋体;color:black"}[显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[的]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的报文统计信息[。]{style="color:black"}]{style="font-family:宋体"}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号]{style="font-family:宋体"}[。如果未指定本参数，则显示所有成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[的报文统计信息之和。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+slot{.commandkeywordsChar}slot-number{.commandparameterChar}：显示指定成员设备/PEX的OSI连接的报文统计信息[。]slot-number{.commandparameterChar}表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果未指定本参数，则显示所有成员设备/PEX的报文统计信息之和。（集中式IRF设备）（支持IRF3的设备）
 
-[[[chassis]{lang="EN-US"}]{.commandkeywordsChar}[ ]{lang="EN-US" style="color:black"}]{#struct_0_x1984_13510_670261249}[[chassis-number]{lang="EN-US"}]{.commandparameterChar}[ ]{lang="EN-US" style="color:black"}[[slot]{lang="EN-US"}]{.commandkeywordsChar}[ ]{lang="EN-US"}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[：显示指定成员设备上指定单板的]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的报文统计信息。]{style="font-family:宋体"}[[chassis-numbe]{lang="EN-US"}]{.commandparameterChar}[r]{lang="EN-US"}[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[表示单板所在的槽位号，取值范围请以设备的实际情况为准。如果未指定本参数，则显示所有成员设备所有单板的报文统计信息之和。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+chassis{.commandkeywordsChar}chassis-number{.commandparameterChar}slot{.commandkeywordsChar}slot-number{.commandparameterChar}：显示指定成员设备上指定单板的OSI连接的报文统计信息。chassis-numbe{.commandparameterChar}r表示设备在IRF中的成员编号，slot-number{.commandparameterChar}表示单板所在的槽位号，取值范围请以设备的实际情况为准。如果未指定本参数，则显示所有成员设备所有单板的报文统计信息之和。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[[[chassis]{lang="EN-US"}]{.commandkeywordsChar}[ ]{lang="EN-US" style="color:black"}]{#struct_0_x1984_13510_x1805416694}[[chassis-number]{lang="EN-US"}]{.commandparameterChar}[ ]{lang="EN-US" style="color:black"}[[slot]{lang="EN-US"}]{.commandkeywordsChar}[ ]{lang="EN-US"}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[：显示指定单板的]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的报文统计信息。]{style="font-family:宋体"}[[chassis-numbe]{lang="EN-US"}]{.commandparameterChar}[r]{lang="EN-US"}[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}[[slot-number]{lang="EN-US"}]{.commandparameterChar}[表示单板或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号，取值范围请以设备的实际情况为准。如果未指定本参数，则显示所有单板的报文统计信息之和。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+chassis{.commandkeywordsChar}chassis-number{.commandparameterChar}slot{.commandkeywordsChar}slot-number{.commandparameterChar}：显示指定单板的OSI连接的报文统计信息。chassis-numbe{.commandparameterChar}r表示设备在IRF中的成员编号或者PEX对应的虚拟框号，slot-number{.commandparameterChar}表示单板或PEX所在的槽位号，取值范围请以设备的实际情况为准。如果未指定本参数，则显示所有单板的报文统计信息之和。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_x1984_13510_x52852121}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的编号。只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[cpu** *cpu-number*]：表示CPU的编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1446517759}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1262937306}[显示]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的报文统计信息。]{style="font-family:宋体"}
+\# 显示OSI连接的报文统计信息。
 
-[[\<Sysname\> display osi statistics]{lang="EN-US"}]{#struct_0_x1984_13510_x916880670}
+\<Sysname\> display osi statistics
 
-[Received packets:]{lang="EN-US"}
+Received packets:
 
-[     Total: 35]{lang="EN-US"}
+     Total: 35
 
-[     Relay received: 35]{lang="EN-US"}
+     Relay received: 35
 
-[     Relay forwarded: 35]{lang="EN-US"}
+     Relay forwarded: 35
 
-[     Invalid service slot: 0]{lang="EN-US"}
+     Invalid service slot: 0
 
-[     No matched socket: 0]{lang="EN-US"}
+     No matched socket: 0
 
-[     Not delivered, input socket full: 0]{lang="EN-US"}
+     Not delivered, input socket full: 0
 
-[Sent packets:]{lang="EN-US"}
+Sent packets:
 
-[     Total: 19]{lang="EN-US"}
+     Total: 19
 
-[     Relay forwarded: 19]{lang="EN-US"}
+     Relay forwarded: 19
 
-[     Relay received: 19]{lang="EN-US"}
+     Relay received: 19
 
-[     Failed: 0]{lang="EN-US"}
+     Failed: 0
 
-[[表1-18 ]{lang="EN-US"}[display osi statistics]{lang="EN-US"}]{#struct_0_x1984_13510_x1283140834}[命令显示信息描述表]{style="font-family:黑体"}
+表1-18 display osi statistics命令显示信息描述表
 
-[]{#table_struct_0_1447631443}[[字段]{style="font-family:黑体"}]{#struct_0_x1984_13510_778461040}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1984_13510_1263002842}
+描述
 
-[[Received packets]{lang="EN-US"}]{#struct_0_x1984_13510_x849789690}
+Received packets
 
-[[Total]{lang="EN-US"}]{#struct_0_x1984_13510_x4117779}
+Total
 
-[[从链路层接收的报文总数]{style="font-family:宋体"}]{#struct_0_x1984_13510_x7509890}
+从链路层接收的报文总数
 
-[[Relay received]{lang="EN-US"}]{#struct_0_x1984_13510_1694909454}
+Relay received
 
-[[业务板从其他板中继接收的入方向报文总数，该计数不计入]{style="font-family:宋体"}[Total]{lang="EN-US"}]{#struct_0_x1984_13510_1099382293}[中]{style="font-family:宋体"}
+业务板从其他板中继接收的入方向报文总数，该计数不计入Total中
 
-[[Relay forwarded]{lang="EN-US"}]{#struct_0_x1984_13510_1262413019}
+Relay forwarded
 
-[[中继转发给业务板的入方向报文数]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1673154280}
+中继转发给业务板的入方向报文数
 
-[[Invalid service slot]{lang="EN-US"}]{#struct_0_x1984_13510_x2036794824}
+Invalid service slot
 
-[[因为业务板不可用而被丢弃的报文数]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1252705532}
+因为业务板不可用而被丢弃的报文数
 
-[[No matched socket]{lang="EN-US"}]{#struct_0_x1984_13510_x1327560077}
+No matched socket
 
-[[因为未匹配报文入接口、或者未匹配]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1984_13510_1262478555}[地址、或者不满足连接的过滤条件而被丢弃的报文数]{style="font-family:宋体"}
+因为未匹配报文入接口、或者未匹配MAC地址、或者不满足连接的过滤条件而被丢弃的报文数
 
-[[Not delivered, input socket full]{lang="EN-US"}]{#struct_0_x1984_13510_x55660949}
+Not delivered, input socket full
 
-[[因为]{style="font-family:宋体"}[socket]{lang="EN-US"}]{#struct_0_x1984_13510_x1109187824}[接收缓冲区已满而没有向上层传送的报文数]{style="font-family:宋体"}
+因为socket接收缓冲区已满而没有向上层传送的报文数
 
-[[Sent packets]{lang="EN-US"}]{#struct_0_x1984_13510_1203377415}
+Sent packets
 
-[[Total]{lang="EN-US"}]{#struct_0_x1984_13510_718963167}
+Total
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1262544091}[通过]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接发送的报文总数]{style="font-family:宋体"}
+IS-IS通过OSI连接发送的报文总数
 
-[[Relay forwarded]{lang="EN-US"}]{#struct_0_x1984_13510_1049503134}
+Relay forwarded
 
-[[中继转发给出接口所在板的出方向报文数，该计数不计入]{style="font-family:宋体"}[Total]{lang="EN-US"}]{#struct_0_x1984_13510_303025815}[中]{style="font-family:宋体"}
+中继转发给出接口所在板的出方向报文数，该计数不计入Total中
 
-[[Relay received]{lang="EN-US"}]{#struct_0_x1984_13510_x1133530838}
+Relay received
 
-[[出接口所在板从其他板中继接收的出方向报文总数]{style="font-family:宋体"}]{#struct_0_x1984_13510_x631022980}
+出接口所在板从其他板中继接收的出方向报文总数
 
-[[Failed]{lang="EN-US"}]{#struct_0_x1984_13510_1262609627}
+Failed
 
-[[发送失败的报文个数]{style="font-family:宋体"}]{#struct_0_x1984_13510_723264331}
+发送失败的报文个数
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1744334601}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset]{lang="EN-US"}[ osi statistics]{lang="EN-US"}**]{#struct_0_x1984_13510_1128427916}
-
-::: {#1382834416 .myid}
-[]{#_Toc404788366}[]{#struct_0_x1984_13510_187043352}[]{#_Toc353884883}
+·**reset osi statistics**
 
 **IS-IS \-- IS-IS配置命令 \-- domain-authentication send-only**
 
 ------------------------------------------------------------------------
 
-[**[domain-authentication send-only]{lang="EN-US"}**]{#struct_0_x1984_13510_415869216}[命令用来配置对收到的]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[报文（包括]{style="font-family:宋体"}[LSP]{lang="EN-US"}[、]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[、]{style="font-family:宋体"}[PSNP]{lang="EN-US"}[）忽略认证信息检查。]{style="font-family:宋体"}
+**[domain-authentication send-only**]命令用来配置对收到的Level-2报文（包括LSP、CSNP、PSNP）忽略认证信息检查。
 
-[**[undo]{lang="EN-US"}[ domain-authentication send-only]{lang="EN-US"}**]{#struct_0_x1984_13510_186453525}[命令用来取消该配置。]{style="font-family:宋体"}
+**[undo domain-authentication send-only**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_186519061}
+【命令】
 
-[**[domain-authentication send-only]{lang="EN-US"}**]{#struct_0_x1984_13510_186584597}
+**[domain-authentication send-only**]
 
-[**[undo domain-authentication send-only]{lang="EN-US"}**]{#struct_0_x1984_13510_186650133}
+**[undo domain-authentication send-only**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1064421315}
+【缺省情况】
 
-[[如果配置了路由域验证方式和验证密码，对收到的报文执行认证信息检查。]{style="font-family:宋体"}]{#struct_0_x1984_13510_186715669}
+如果配置了路由域验证方式和验证密码，对收到的报文执行认证信息检查。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_186781205}
+【视图】
 
-[[IS-IS]{lang="FR"}]{#struct_0_x1984_13510_1858485245}[视图]{style="font-family:宋体"}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_186846741}
+【缺省用户角色】
 
-[[network-admin]{lang="FR"}]{#struct_0_x1984_13510_186912277}
+network-admin
 
-[[mdc-admin]{lang="FR"}]{#struct_0_x1984_13510_186977813}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_187043349}
+【使用指导】
 
-[[配置路由域验证方式和验证密码后，验证密码将按照设定的方式插入到发送的]{style="font-family:宋体"}[Level-2]{lang="EN-US"}]{#struct_0_x1984_13510_x1922782939}[报文（包括]{style="font-family:宋体"}[LSP]{lang="EN-US"}[、]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[、]{style="font-family:宋体"}[PSNP]{lang="EN-US"}[）中，并对收到的]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[报文进行验证密码的检查]{style="font-family:宋体"}[。当需要更改密码时由于密码不匹配可能导致业务发生中断。通过命令配置对]{style="font-family:宋体"}[收到的]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[报文]{style="font-family:宋体"}[忽略认证信息检查可保证业务不中断，报文正常接收。]{style="font-family:宋体"}
+配置路由域验证方式和验证密码后，验证密码将按照设定的方式插入到发送的Level-2报文（包括LSP、CSNP、PSNP）中，并对收到的Level-2报文进行验证密码的检查。当需要更改密码时由于密码不匹配可能导致业务发生中断。通过命令配置对收到的Level-2报文忽略认证信息检查可保证业务不中断，报文正常接收。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_186453526}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_186519062}[对收到报文忽略认证信息检查。]{style="font-family:宋体"}
+\# 对收到报文忽略认证信息检查。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_186584598}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] domain-authentication send-only]{lang="EN-US"}
+Sysname-isis-1 domain-authentication send-only
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1603574227}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[area-authentication]{lang="EN-US"}**]{#struct_0_x1984_13510_186650134}**[ send-only]{lang="EN-US"}**
+·**area-authentication**** send-only**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[domain-authentication-mode]{lang="EN-US"}**]{#struct_0_x1984_13510_186715670}
+·**domain-authentication-mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[isis authentication send-only]{lang="EN-US"}**]{#struct_0_x1984_13510_689770319}
-:::
-
-::: {#-1067944521 .myid}
-[]{#_Toc404788367}[]{#struct_0_x1984_13510_1507180224}
+·**isis authentication send-only**
 
 **IS-IS \-- IS-IS配置命令 \-- domain-authentication-mode**
 
 ------------------------------------------------------------------------
 
-[**[domain-authentication-mode]{lang="EN-US"}**]{#struct_0_x1984_13510_140452812}[命令用来配置路由域验证方式和验证密码。]{style="font-family:
-宋体"}
+**[domain-authentication-mode**]命令用来配置路由域验证方式和验证密码。
 
-[**[undo]{lang="EN-US"}**[ **domain-authentication-mode**]{lang="EN-US"}]{#struct_0_x1984_13510_x1902917603}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **domain-authentication-mode**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1262150875}
+【命令】
 
-[**[domain-authentication-mode ]{lang="EN-US"}**[{ **gca** *key-id* { **hmac-sha-1** \| **hmac-sha-224** \| **hmac-sha-256** \| **hmac-sha-384** \| **hmac-sha-512** } \| **md5** \| **simple** } { **cipher** *cipher-string* \| **plain** *plain-string* } \[ **ip** \| **osi** \]]{lang="EN-US"}]{#struct_0_x1984_13510_186781206}
+**[domain-authentication-mode **[{ **gca** *key-id* { **hmac-sha-1** \| **hmac-sha-224** \| **hmac-sha-256** \| **hmac-sha-384** \| **hmac-sha-512** } \| **md5** \| **simple** } { **cipher** *cipher-string* \| **plain** *plain-string* } [ **ip** \| **osi** ]]]
 
-[**[undo]{lang="FR"}**]{#struct_0_x1984_13510_x1789036655}[ **domain-authentication-mode**]{lang="FR"}[]{#_Hlt9932878}
+**[undo**] **domain-authentication-mode**
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x725173405}
+【缺省情况】
 
-[[系统没有配置路由域验证方式和验证密码。]{style="font-family:宋体"}]{#struct_0_x1984_13510_197615269}
+系统没有配置路由域验证方式和验证密码。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x992272873}
+【视图】
 
-[[IS-IS]{lang="FR"}]{#struct_0_x1984_13510_1173634118}[视图]{style="font-family:宋体"}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1262216411}
+【缺省用户角色】
 
-[[network-admin]{lang="FR"}]{#struct_0_x1984_13510_1454378927}
+network-admin
 
-[[mdc-admin]{lang="FR"}]{#struct_0_x1984_13510_1611975182}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1616551466}
+【参数】
 
-[**[gca]{lang="FR"}**]{#struct_0_x1984_13510_186912278}[：]{style="font-family:宋体"}[GCA]{lang="FR"}[验证模式]{style="font-family:
-宋体"}[（]{style="font-family:宋体"}[Generic Cryptographic Authentication]{lang="FR"}[）]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[gca**]：GCA验证模式（Generic Cryptographic Authentication）。
 
-[*[key-id]{lang="FR"}*]{#struct_0_x1984_13510_186977814}[：]{style="font-family:宋体"}[唯一标识一个认证项]{style="font-family:宋体"}[（]{style="font-family:宋体"}[SA]{lang="FR"}[），]{style="font-family:
-宋体"}[取值范围为]{style="font-family:宋体"}[1]{lang="FR"}[～]{style="font-family:宋体"}[65535]{lang="FR"}[。发送方将]{style="font-family:宋体"}[Key ID]{lang="EN-US"}[放入认证]{style="font-family:宋体"}[TLV]{lang="EN-US"}[中，接收方根据报文中提取的]{style="font-family:宋体"}[Key ID]{lang="EN-US"}[选择]{style="font-family:宋体"}[SA]{lang="EN-US"}[对报文进行认证。]{style="font-family:宋体"}
+*[key-id*]：唯一标识一个认证项（SA），取值范围为1～65535。发送方将Key ID放入认证TLV中，接收方根据报文中提取的Key ID选择SA对报文进行认证。
 
-[**[hmac-sha-1]{lang="EN-US"}**]{#struct_0_x1984_13510_187043350}[：支持]{style="font-family:宋体"}[HMAC-SHA-1]{lang="EN-US"}[算法。]{style="font-family:宋体"}
+**[hmac-sha-1**]：支持HMAC-SHA-1算法。
 
-[**[hmac-sha-224]{lang="EN-US"}**]{#struct_0_x1984_13510_415869214}[：支持]{style="font-family:宋体"}[HMAC-SHA-224]{lang="EN-US"}[算法。]{style="font-family:宋体"}
+**[hmac-sha-224**]：支持HMAC-SHA-224算法。
 
-[**[hmac-sha-256]{lang="EN-US"}**]{#struct_0_x1984_13510_186453523}[：支持]{style="font-family:宋体"}[HMAC-SHA-256]{lang="EN-US"}[算法。]{style="font-family:宋体"}
+**[hmac-sha-256**]：支持HMAC-SHA-256算法。
 
-[**[hmac-sha-384]{lang="EN-US"}**]{#struct_0_x1984_13510_186519059}[：支持]{style="font-family:宋体"}[HMAC-SHA-384]{lang="EN-US"}[算法。]{style="font-family:宋体"}
+**[hmac-sha-384**]：支持HMAC-SHA-384算法。
 
-[**[hmac-sha-512]{lang="EN-US"}**]{#struct_0_x1984_13510_186584595}[：支持]{style="font-family:宋体"}[HMAC-SHA-512]{lang="EN-US"}[算法。]{style="font-family:宋体"}
+**[hmac-sha-512**]：支持HMAC-SHA-512算法。
 
-[**[md5]{lang="FR"}**]{#struct_0_x1984_13510_365589464}[：]{style="font-family:宋体"}[MD5]{lang="FR"}[验证模式]{style="font-family:
-宋体"}[。]{style="font-family:宋体"}
+**[md5**]：MD5验证模式。
 
-[**[simple]{lang="FR"}**]{#struct_0_x1984_13510_1709660773}[：]{style="font-family:宋体"}[简单验证模式。]{style="font-family:宋体"}
+**[simple**]：简单验证模式。
 
-[**[cipher]{lang="FR"}**]{#struct_0_x1984_13510_x720618457}[：]{style="font-family:宋体"}[表示输入的密码为密文。]{style="font-family:宋体"}
+**[cipher**]：表示输入的密码为密文。
 
-[*[cipher-string]{lang="FR"}*]{#struct_0_x1984_13510_x1880512906}[：]{style="font-family:宋体"}[表示设置的密文密码]{style="font-family:宋体"}[，]{style="font-family:宋体"}[为]{style="font-family:宋体"}[33]{lang="FR"}[～]{style="font-family:宋体"}[53]{lang="FR"}[个字符的字符串。]{style="font-family:宋体"}
+*[cipher-string*]：表示设置的密文密码，为33～53个字符的字符串。
 
-[**[plain]{lang="FR"}**]{#struct_0_x1984_13510_1262281947}[：]{style="font-family:宋体"}[表示输入的密码为明文。]{style="font-family:宋体"}
+**[plain**]：表示输入的密码为明文。
 
-[*[plain-string]{lang="FR"}*]{#struct_0_x1984_13510_x2041132883}[：]{style="font-family:宋体"}[表示设置的明文密码]{style="font-family:宋体"}[，]{style="font-family:宋体"}[为]{style="font-family:宋体"}[1]{lang="FR"}[～]{style="font-family:宋体"}[16]{lang="FR"}[个字符的字符串。]{style="font-family:宋体"}
+*[plain-string*]：表示设置的明文密码，为1～16个字符的字符串。
 
-[**[ip]{lang="FR"}**]{#struct_0_x1984_13510_x1262347618}[：]{style="font-family:宋体"}[检查]{style="font-family:宋体"}[LSP]{lang="FR"}[中]{style="font-family:宋体"}[IP]{lang="FR"}[的相应字段的配置内容。]{style="font-family:宋体"}
+**[ip**]：检查LSP中IP的相应字段的配置内容。
 
-[**[osi]{lang="EN-US"}**]{#struct_0_x1984_13510_x1951881688}[：检查]{style="font-family:宋体"}[LSP]{lang="EN-US"}[中]{style="font-family:宋体"}[OSI]{lang="EN-US"}[的相应字段的配置内容。]{style="font-family:宋体"}
+**[osi**]：检查LSP中OSI的相应字段的配置内容。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1297547544}
+【使用指导】
 
-[[配置路由域验证方式和验证密码后，验证密码将按照设定的方式插入到发送的]{style="font-family:宋体"}[Level-2]{lang="EN-US"}]{#struct_0_x1984_13510_1273585641}[报文（包括]{style="font-family:宋体"}[LSP]{lang="EN-US"}[、]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[、]{style="font-family:宋体"}[PSNP]{lang="EN-US"}[）中并对收到的]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[报文进行验证密码的检查。]{style="font-family:宋体"}
+配置路由域验证方式和验证密码后，验证密码将按照设定的方式插入到发送的Level-2报文（包括LSP、CSNP、PSNP）中并对收到的Level-2报文进行验证密码的检查。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x1984_13510_782275121}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[所有骨干层（]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1251635663}[Level-2]{lang="EN-US"}[）路由器必须配置相同的验证方式和验证密码。]{style="font-family:宋体"}
+·所有骨干层（Level-2）路由器必须配置相同的验证方式和验证密码。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果没有指定]{style="font-family:宋体"}]{#struct_0_x1984_13510_1262347483}**[ip]{lang="EN-US"}**[或]{style="font-family:宋体"}**[osi]{lang="EN-US"}**[参数，将检查]{style="font-family:宋体"}[LSP]{lang="EN-US"}[中]{style="font-family:宋体"}[OSI]{lang="EN-US"}[的相应字段的配置内容。]{style="font-family:宋体"}
+·如果没有指定**ip**或**osi**参数，将检查LSP中OSI的相应字段的配置内容。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[以明文或密文方式设置的验证密码，均以密文的方式保存在配置文件中。]{style="font-family:宋体"}]{#struct_0_x1984_13510_x118324188}
+·以明文或密文方式设置的验证密码，均以密文的方式保存在配置文件中。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[认证密码选用]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1971739472}**[ip]{lang="EN-US"}**[或]{style="font-family:宋体"}**[osi]{lang="EN-US"}**[不受实际的网络环境影响。]{style="font-family:宋体"}
+·认证密码选用**ip**或**osi**不受实际的网络环境影响。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x570342289}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_204925803}[配置路由域采用简单明文验证模式，认证密码为]{style="font-family:宋体"}[123456]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置路由域采用简单明文验证模式，认证密码为123456。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_1421925354}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] domain-authentication-mode simple plain 123456]{lang="FR"}
+Sysname-isis-1 domain-authentication-mode simple plain 123456
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1886858003}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[area-authentication-mode]{lang="EN-US"}**]{#struct_0_x1984_13510_1078073001}
+·**area-authentication-mode**
 
-[]{#struct_0_x1984_13510_186715667}[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[domain-authentication send-only]{lang="EN-US"}**]{#_Toc349293880}
+·**domain-authentication send-only**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}]{#struct_0_x1984_13510_1262937307}**[isis]{lang="EN-US"}[ authentication-mode]{lang="EN-US"}**
-:::
-
-::::: {#1745414037 .myid}
-[]{#_Toc404788368}[]{#struct_0_x1984_13510_x916815134}[]{#_Toc303839439}
+·**isis authentication-mode**
 
 **IS-IS \-- IS-IS配置命令 \-- fast-reroute**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IS-IS命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1984_13510_x509792013}
-:::
+![说明](IS-IS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1984_13510_x39581619}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[fast-reroute**]命令用来配置IS-IS支持快速重路由功能。
 
-[**[fast-reroute]{lang="EN-US"}**]{#struct_0_x1984_13510_x1196355610}[命令用来配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[支持快速重路由功能。]{style="font-family:宋体"}
+**[undo fast-reroute**]命令用来恢复缺省情况。
 
-[**[undo fast-reroute]{lang="EN-US"}**]{#struct_0_x1984_13510_1898505763}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1702802901}
+**[fast-reroute**[ { **lfa** \| **route-policy** *route-policy-name* }]]
 
-[**[fast-reroute]{lang="EN-US"}**[ { **lfa** \| **route-policy** *route-policy-name* }]{lang="EN-US"}]{#struct_0_x1984_13510_1263002843}
+**[undo fast-reroute**]
 
-[**[undo fast-reroute]{lang="EN-US"}**]{#struct_0_x1984_13510_x849855226}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1940474877}
+IS-IS支持快速重路由功能处于关闭状态。
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1695536616}[支持快速重路由功能处于关闭状态]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2073345730}
+IS-IS IPv4单播地址族视图/IS-IS IPv4单播拓扑视图
 
-[[IS-IS IPv4]{lang="FR"}]{#struct_0_x1984_13510_x929877312}[单播地址族]{style="font-family:宋体"}[视图]{style="font-family:宋体"}[/IS-IS IPv4]{lang="EN-US"}[单播拓扑视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1252756800}
+network-admin
 
-[[network-admin]{lang="FR"}]{#struct_0_x1984_13510_x414553842}
+mdc-admin
 
-[[mdc-admin]{lang="FR"}]{#struct_0_x1984_13510_1262413016}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1672564456}
+**[lfa**]：为所有路由通过LFA（Loop Free Alternate）算法选取备份下一跳信息。
 
-[**[lfa]{lang="FR"}**]{#struct_0_x1984_13510_1826230754}[：]{style="font-family:宋体"}[为所有路由通过]{style="font-family:宋体"}[LFA]{lang="FR"}[（]{style="font-family:宋体"}[Loop Free Alternate]{lang="FR"}[）]{style="font-family:宋体"}[算法选取备份下一跳信息]{style="font-family:
-宋体"}[。]{style="font-family:宋体"}
+**[route-policy**] *route-policy-name*：指定路由策略名，*route-policy-name*为1～63个字符的字符串，区分大小写。为通过策略的路由指定备份下一跳信息。
 
-[**[route-policy]{lang="FR"}**]{#struct_0_x1984_13510_x335989723}[ *route-policy-name*]{lang="FR"}[：]{style="font-family:宋体"}[指定路由策略名]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[route-policy-name]{lang="FR"}*[为]{style="font-family:宋体"}[1]{lang="FR"}[～]{style="font-family:宋体"}[63]{lang="FR"}[个字符的字符串]{style="font-family:宋体"}[，]{style="font-family:宋体"}[区分大小写。为通过策略的路由指定备份下一跳信息。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2138172621}
+IS-IS支持快速重路由功能不能与IS-IS的BFD功能同时使用，否则可能导致快速重路由功能失效。
 
-[[IS-IS]{lang="FR"}]{#struct_0_x1984_13510_361783760}[支持快速重路由功能不能与]{style="font-family:宋体"}[IS-IS]{lang="FR"}[的]{style="font-family:宋体"}[BFD]{lang="FR"}[功能同时使用]{style="font-family:
-宋体"}[，]{style="font-family:宋体"}[否则可能导致快速重路由功能失效。]{style="font-family:
-宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x792105003}
+\# 为所有路由通过LFA算法选取备份下一跳信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1755544718}[为所有路由]{style="font-family:宋体"}[通过]{style="font-family:
-宋体"}[LFA]{lang="EN-US"}[算法]{style="font-family:宋体"}[选取备份下一跳信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_1521125992}
+Sysname isis 1
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname-isis-1 address-family ipv4
 
-[\[Sysname-isis-1\]]{lang="EN-US"}[ address-family ipv4]{lang="EN-US"}
-
-[\[Sysname-isis-1-ipv4\] fast-reroute lfa]{lang="EN-US"}
-:::::
-
-::: {#1247311243 .myid}
-[]{#_Toc303839440}[]{#_Toc252200750}[]{#_Toc163546253}[]{#_Toc131667486}[]{#_Toc404788369}[]{#struct_0_x1984_13510_1922149223}[]{#_Toc310604336}[]{#_Toc252200748}[]{#_Toc370737431}[]{#_Toc370737432}[]{#_Toc370737433}
+Sysname-isis-1-ipv4 fast-reroute lfa
 
 **IS-IS \-- IS-IS配置命令 \-- filter-policy export**
 
 ------------------------------------------------------------------------
 
-[**[filter-policy export]{lang="EN-US"}**]{#struct_0_x1984_13510_x1108456142}[命令用来配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[对引入的路由信息进行过滤]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[filter-policy export**]命令用来配置IS-IS对引入的路由信息进行过滤。
 
-[**[undo filter-policy export]{lang="EN-US"}**]{#struct_0_x1984_13510_x211300456}[命令用来取消该配置。]{style="font-family:
-宋体"}
+**[undo filter-policy export**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_635490881}
+【命令】
 
-[**[filter-policy]{lang="EN-US"}**[ { *acl-number* \| **prefix-list** *prefix-list-name* \| **route-policy** *route-policy-name* } **export** \[ *protocol* \[ *process-id* \] \]]{lang="EN-US"}]{#struct_0_x1984_13510_x799363830}
+**[filter-policy**[ { *acl-number* \| **prefix-list** *prefix-list-name* \| **route-policy** *route-policy-name* } **export** [ *protocol* [ *process-id* ] ]]]
 
-[**[undo]{lang="EN-US"}**[ **filter-policy** **export** \[ *protocol* \[ *process-id* \] \]]{lang="EN-US"}]{#struct_0_x1984_13510_x1816410097}
+**[undo** **filter-policy** **export** [ *protocol* [ *process-id*  ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1262544088}
+【缺省情况】
 
-[[没有配置该过滤功能。]{style="font-family:宋体"}]{#struct_0_x1984_13510_1050092957}
+没有配置该过滤功能。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x179029026}
+【视图】
 
-[[IS-IS IPv4]{lang="FR"}]{#struct_0_x1984_13510_x1193744342}[单播地址族视图]{style="font-family:宋体"}[/IS-IS IPv4]{lang="FR"}[单播拓扑视图]{style="font-family:宋体"}
+IS-IS IPv4单播地址族视图/IS-IS IPv4单播拓扑视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1896930694}
+【缺省用户角色】
 
-[[network-admin]{lang="FR"}]{#struct_0_x1984_13510_1465866127}
+network-admin
 
-[[mdc-admin]{lang="FR"}]{#struct_0_x1984_13510_796069480}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x292222068}
+【参数】
 
-[*[acl-number]{lang="FR"}*]{#struct_0_x1984_13510_1262609624}[：]{style="font-family:宋体"}[指定访问控制列表序号]{style="font-family:宋体"}[，]{style="font-family:宋体"}[取值范围为]{style="font-family:宋体"}[2000]{lang="FR"}[～]{style="font-family:宋体"}[3999]{lang="FR"}[，]{style="font-family:宋体"}[基于]{style="font-family:宋体"}[ACL]{lang="FR"}[对引入的路由信息进行过滤。]{style="font-family:宋体"}
+*[acl-number*]：指定访问控制列表序号，取值范围为2000～3999，基于ACL对引入的路由信息进行过滤。
 
-[**[prefix-list]{lang="FR"}**]{#struct_0_x1984_13510_723198795}[ *prefix-list-name*]{lang="FR"}[：]{style="font-family:宋体"}[指定]{style="font-family:宋体"}[IPv4]{lang="FR"}[地址前缀列表名]{style="font-family:宋体"}[，]{style="font-family:宋体"}[基于目的地址对引入的路由信息进行过滤。]{style="font-family:宋体"}*[prefix-list-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[prefix-list**] *prefix-list-name*：指定IPv4地址前缀列表名，基于目的地址对引入的路由信息进行过滤。*prefix-list-name*为1～63个字符的字符串，区分大小写。
 
-[**[route-policy]{lang="EN-US"}**[ *route-policy-name*]{lang="EN-US"}]{#struct_0_x1984_13510_1927257770}[：指定路由策略名，基于路由策略对引入的路由信息进行过滤。]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[route-policy** *route-policy-name*]：指定路由策略名，基于路由策略对引入的路由信息进行过滤。*route-policy-name*为1～63个字符的字符串，区分大小写。
 
-[*[protocol]{lang="EN-US"}*]{#struct_0_x1984_13510_x878854264}[：路由协议名称，指定过滤从哪种路由协议引入的路由信息。目前可包括：]{style="font-family:宋体"}**[bgp]{lang="EN-US"}[、]{style="font-family:宋体"}[direct]{lang="EN-US"}[、]{style="font-family:宋体"}[isis]{lang="EN-US"}[、]{style="font-family:宋体"}[ospf]{lang="EN-US"}**[、]{style="font-family:宋体"}**[rip]{lang="EN-US"}**[和]{style="font-family:宋体"}**[static]{lang="EN-US"}**[。如果不指定该参数，将对所有引入的路由进行过滤。]{style="font-family:宋体"}
+*[protocol*]：路由协议名称，指定过滤从哪种路由协议引入的路由信息。目前可包括：**bgp、direct、isis、ospf**、**rip**和**static**。如果不指定该参数，将对所有引入的路由进行过滤。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_x1984_13510_x545335955}[：路由协议进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。只有当]{style="font-family:宋体"}*[protocol]{lang="EN-US"}*[为]{style="font-family:宋体"}**[isis]{lang="EN-US"}**[、]{style="font-family:宋体"}**[ospf]{lang="EN-US"}**[、]{style="font-family:宋体"}**[rip]{lang="EN-US"}**[时，该参数可选，若未指定，缺省进程号为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：路由协议进程号，取值范围为1～65535。只有当*protocol*为**isis**、**ospf**、**rip**时，该参数可选，若未指定，缺省进程号为1。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_542094134}
+【使用指导】
 
-[[当配置的是高级]{style="font-family:宋体"}[ACL]{lang="EN-US"}]{#struct_0_x1984_13510_x717515156}[（]{style="font-family:宋体"}[3000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[）或者指定的路由策略中配置的是高级]{style="font-family:宋体"}[ACL]{lang="EN-US"}[时，]{style="font-family:宋体"}[ACL]{lang="EN-US"}[中的规则需要使用命令]{style="font-family:宋体"}**[rule]{lang="EN-US"}**[ \[ *rule-id* \] { **deny** \| **permit** } **ip source** *sour-addr sour-wildcard*]{lang="EN-US"}[来过滤指定目的地址的路由；使用命令]{style="font-family:宋体"}**[rule]{lang="EN-US"}**[ \[ *rule-id* \] { **deny** \| **permit** } **ip source** *sour-addr sour-wildcard* **destination** *dest-addr dest-wildcard*]{lang="EN-US"}[来过滤指定目的地址和掩码的路由，其中]{style="font-family:宋体"}**[source]{lang="EN-US"}**[用来过滤路由目的地址，]{style="font-family:宋体"}**[destination]{lang="EN-US"}**[用来过滤路由掩码，配置的掩码应该是连续的（当配置的掩码不连续时该过滤掩码的条件不生效）。]{style="font-family:宋体"}
+当配置的是高级ACL（3000～3999）或者指定的路由策略中配置的是高级ACL时，ACL中的规则需要使用命令**rule** [ *rule-id*  { **deny** \| **permit** } **ip source** *sour-addr sour-wildcard*]来过滤指定目的地址的路由；使用命令**rule** [ *rule-id*  { **deny** \| **permit** } **ip source** *sour-addr sour-wildcard* **destination** *dest-addr dest-wildcard*]来过滤指定目的地址和掩码的路由，其中**source**用来过滤路由目的地址，**destination**用来过滤路由掩码，配置的掩码应该是连续的（当配置的掩码不连续时该过滤掩码的条件不生效）。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1040306095}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1262150872}[使用编号为]{style="font-family:宋体"}[2000]{lang="EN-US"}[的基本]{style="font-family:宋体"}[ACL]{lang="EN-US"}[对引入的路由进行过滤。]{style="font-family:宋体"}
+\# 使用编号为2000的基本ACL对引入的路由进行过滤。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_1487426480}
+\<Sysname\> system-view
 
-[\[Sysname\] acl basic 2000]{lang="EN-US"}
+Sysname acl basic 2000
 
-[\[Sysname-acl-ipv4-basic-2000\] rule deny source 192.168.10.0 0.0.0.255]{lang="EN-US"}
+Sysname-acl-ipv4-basic-2000 rule deny source 192.168.10.0 0.0.0.255
 
-[\[Sysname-acl-ipv4-basic-2000\] quit]{lang="EN-US"}
+Sysname-acl-ipv4-basic-2000 quit
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\]]{lang="EN-US"}[ address-family ipv4]{lang="EN-US"}
+Sysname-isis-1 address-family ipv4
 
-[\[Sysname-isis-1-ipv4\] filter-policy 2000 export]{lang="EN-US"}
+Sysname-isis-1-ipv4 filter-policy 2000 export
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x590520276}[使用编号为]{style="font-family:宋体"}[3000]{lang="EN-US"}[的高级]{style="font-family:宋体"}[ACL]{lang="EN-US"}[对引入的路由进行过滤，只允许]{style="font-family:宋体"}[113.0.0.0/16]{lang="EN-US"}[通过。]{style="font-family:宋体"}
+\# 使用编号为3000的高级ACL对引入的路由进行过滤，只允许113.0.0.0/16通过。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x1855117814}
+\<Sysname\> system-view
 
-[\[Sysname\] acl advanced 3000]{lang="EN-US"}
+Sysname acl advanced 3000
 
-[\[Sysname-acl-ipv4-adv-3000\] rule 10 permit ip source 113.0.0.0 0 destination 255.255.0.0 0]{lang="EN-US"}
+Sysname-acl-ipv4-adv-3000 rule 10 permit ip source 113.0.0.0 0 destination 255.255.0.0 0
 
-[\[Sysname-acl-ipv4-adv-3000\] rule 100 deny ip]{lang="EN-US"}
+Sysname-acl-ipv4-adv-3000 rule 100 deny ip
 
-[\[Sysname-acl-ipv4-adv-3000\] quit]{lang="EN-US"}
+Sysname-acl-ipv4-adv-3000 quit
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis 1\]]{lang="EN-US"}[ address-family ipv4]{lang="EN-US"}
+Sysname-isis 1 address-family ipv4
 
-[\[Sysname-isis-1-ipv4\] filter-policy 3000 export]{lang="EN-US"}
+Sysname-isis-1-ipv4 filter-policy 3000 export
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x383803250}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display isis route]{lang="EN-US"}**]{#struct_0_x1984_13510_1262216408}
-:::
-
-::: {#632247711 .myid}
-[]{#_Toc404788370}[]{#struct_0_x1984_13510_1453789104}[]{#_Toc310604337}[]{#_Toc17101066}
+·**display isis route**
 
 **IS-IS \-- IS-IS配置命令 \-- filter-policy import**
 
 ------------------------------------------------------------------------
 
-[**[filter-policy import]{lang="EN-US"}**]{#struct_0_x1984_13510_519984365}[命令用来]{style="font-family:宋体"}[配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[对接收的路由是否加入]{style="font-family:宋体"}[IP]{lang="EN-US"}[路由表进行过滤]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[filter-policy import**]命令用来配置IS-IS对接收的路由是否加入IP路由表进行过滤。
 
-[**[undo filter-policy import]{lang="EN-US"}**]{#struct_0_x1984_13510_1002563691}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo filter-policy import**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_893038261}
+【命令】
 
-[**[filter-policy]{lang="EN-US"}**[ { *acl-number* \| **prefix-list** *prefix-list-name* \| **route-policy** *route-policy-name* } **import**]{lang="EN-US"}]{#struct_0_x1984_13510_798103610}
+**[filter-policy**[ { *acl-number* \| **prefix-list** *prefix-list-name* \| **route-policy** *route-policy-name* } **import**]]
 
-[**[undo filter-policy import]{lang="EN-US"}**]{#struct_0_x1984_13510_1907902242}
+**[undo filter-policy import**]
 
-[[【]{style="font-family:黑体"}]{#struct_0_x1984_13510_x217695855}[缺省情况]{style="font-family:黑体"}[】]{style="font-family:黑体"}
+【缺省情况】
 
-[[没有配置该过滤功能。]{style="font-family:宋体"}]{#struct_0_x1984_13510_1262281944}
+没有配置该过滤功能。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2041198419}
+【视图】
 
-[[IS-IS IPv4]{lang="FR"}]{#struct_0_x1984_13510_905895010}[单播地址族视图]{style="font-family:宋体"}[/IS-IS IPv4]{lang="FR"}[单播拓扑视图]{style="font-family:宋体"}
+IS-IS IPv4单播地址族视图/IS-IS IPv4单播拓扑视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x370654206}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1504695597}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x959026505}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_372323843}
+【参数】
 
-[*[acl-number]{lang="EN-US"}*]{#struct_0_x1984_13510_697290742}[：指定访问控制列表序号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[，基于]{style="font-family:宋体"}[ACL]{lang="EN-US"}[对接收的路由是否加入]{style="font-family:宋体"}[IP]{lang="EN-US"}[路由表进行过滤。]{style="font-family:宋体"}
+*[acl-number*]：指定访问控制列表序号，取值范围为2000～3999，基于ACL对接收的路由是否加入IP路由表进行过滤。
 
-[**[prefix-list]{lang="EN-US"}**[ *prefix-list-name*]{lang="EN-US"}]{#struct_0_x1984_13510_462970670}[：指定]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址前缀列表名，基于目的地址对接收的路由是否加入]{style="font-family:宋体"}[IP]{lang="EN-US"}[路由表进行过滤。]{style="font-family:宋体"}*[prefix-list-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[prefix-list** *prefix-list-name*]：指定IPv4地址前缀列表名，基于目的地址对接收的路由是否加入IP路由表进行过滤。*prefix-list-name*为1～63个字符的字符串，区分大小写。
 
-[**[route-policy]{lang="EN-US"}**[ *route-policy-name*]{lang="EN-US"}]{#struct_0_x1984_13510_1262347480}[：指定路由策略名，基于路由策略对]{style="font-family:宋体"}[接收的路由是否加入]{style="font-family:宋体"}[IP]{lang="EN-US"}[路由表进行过滤]{style="font-family:宋体"}[。]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[route-policy** *route-policy-name*]：指定路由策略名，基于路由策略对接收的路由是否加入IP路由表进行过滤。*route-policy-name*为1～63个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x118389724}
+【使用指导】
 
-[[当配置的是高级]{style="font-family:宋体"}[ACL]{lang="EN-US"}]{#struct_0_x1984_13510_752091771}[（]{style="font-family:宋体"}[3000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[）或者指定的路由策略中配置的是高级]{style="font-family:宋体"}[ACL]{lang="EN-US"}[时，]{style="font-family:宋体"}[ACL]{lang="EN-US"}[中的规则需要使用命令]{style="font-family:宋体"}**[rule]{lang="EN-US"}**[ \[ *rule-id* \] { **deny** \| **permit** } **ip source** *sour-addr sour-wildcard*]{lang="EN-US"}[来过滤指定目的地址的路由；使用命令]{style="font-family:宋体"}**[rule]{lang="EN-US"}**[ \[ *rule-id* \] { **deny** \| **permit** } **ip source** *sour-addr sour-wildcard* **destination** *dest-addr dest-wildcard*]{lang="EN-US"}[来过滤指定目的地址和掩码的路由，其中]{style="font-family:宋体"}**[source]{lang="EN-US"}**[用来过滤路由目的地址，]{style="font-family:宋体"}**[destination]{lang="EN-US"}**[用来过滤路由掩码，配置的掩码应该是连续的（当配置的掩码不连续时该过滤掩码的条件不生效）。]{style="font-family:宋体"}
+当配置的是高级ACL（3000～3999）或者指定的路由策略中配置的是高级ACL时，ACL中的规则需要使用命令**rule** [ *rule-id*  { **deny** \| **permit** } **ip source** *sour-addr sour-wildcard*]来过滤指定目的地址的路由；使用命令**rule** [ *rule-id*  { **deny** \| **permit** } **ip source** *sour-addr sour-wildcard* **destination** *dest-addr dest-wildcard*]来过滤指定目的地址和掩码的路由，其中**source**用来过滤路由目的地址，**destination**用来过滤路由掩码，配置的掩码应该是连续的（当配置的掩码不连续时该过滤掩码的条件不生效）。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1429382822}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x554361541}[基于编号为]{style="font-family:宋体"}[2000]{lang="EN-US"}[的基本]{style="font-family:宋体"}[ACL]{lang="EN-US"}[对接收的路由是否加入]{style="font-family:宋体"}[IP]{lang="EN-US"}[路由表进行过滤。]{style="font-family:宋体"}
+\# 基于编号为2000的基本ACL对接收的路由是否加入IP路由表进行过滤。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_621641128}
+\<Sysname\> system-view
 
-[\[Sysname\] acl basic 2000]{lang="EN-US"}
+Sysname acl basic 2000
 
-[\[Sysname-acl-ipv4-basic-2000\] rule deny source 192.168.10.0 0.0.0.255]{lang="EN-US"}
+Sysname-acl-ipv4-basic-2000 rule deny source 192.168.10.0 0.0.0.255
 
-[\[Sysname-acl-ipv4-basic-2000\] quit]{lang="EN-US"}
+Sysname-acl-ipv4-basic-2000 quit
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\]]{lang="EN-US"}[ address-family ipv4]{lang="EN-US"}
+Sysname-isis-1 address-family ipv4
 
-[\[Sysname-isis-1-ipv4\] filter-policy 2000 import]{lang="EN-US"}
+Sysname-isis-1-ipv4 filter-policy 2000 import
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x928419191}[基于编号为]{style="font-family:宋体"}[3000]{lang="EN-US"}[的高级]{style="font-family:宋体"}[ACL]{lang="EN-US"}[对接收的路由是否加入]{style="font-family:宋体"}[IP]{lang="EN-US"}[路由表进行过滤，只允许]{style="font-family:宋体"}[113.0.0.0/16]{lang="EN-US"}[加入]{style="font-family:宋体"}[IP]{lang="EN-US"}[路由表。]{style="font-family:宋体"}
+\# 基于编号为3000的高级ACL对接收的路由是否加入IP路由表进行过滤，只允许113.0.0.0/16加入IP路由表。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_1262937304}
+\<Sysname\> system-view
 
-[\[Sysname\] acl number 3000]{lang="EN-US"}
+Sysname acl number 3000
 
-[\[Sysname-acl-ipv4-adv-3000\] rule 10 permit ip source 113.0.0.0 0 destination 255.255.0.0 0]{lang="EN-US"}
+Sysname-acl-ipv4-adv-3000 rule 10 permit ip source 113.0.0.0 0 destination 255.255.0.0 0
 
-[\[Sysname-acl-ipv4-adv-3000\] rule 100 deny ip]{lang="EN-US"}
+Sysname-acl-ipv4-adv-3000 rule 100 deny ip
 
-[\[Sysname-acl-ipv4-adv-3000\] quit]{lang="EN-US"}
+Sysname-acl-ipv4-adv-3000 quit
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis 1\]]{lang="EN-US"}[ address-family ipv4]{lang="EN-US"}
+Sysname-isis 1 address-family ipv4
 
-[\[Sysname-isis-1-ipv4\] filter-policy 3000 import]{lang="EN-US"}
+Sysname-isis-1-ipv4 filter-policy 3000 import
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x917011742}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display ip routing-table]{lang="EN-US"}**]{#struct_0_x1984_13510_714104090}[（三层技术]{lang="EN-US" style="font-family:宋体"}[-IP]{lang="EN-US"}[路由命令参考]{lang="EN-US" style="font-family:宋体"}[/IP]{lang="EN-US"}[路由基础）]{lang="EN-US" style="font-family:宋体"}
-:::
-
-::: {#1202717567 .myid}
-[]{#_Toc404788371}[]{#struct_0_x1984_13510_x120706480}
+·**display ip routing-table**（三层技术-IP路由命令参考/IP路由基础）
 
 **IS-IS \-- IS-IS配置命令 \-- flash-flood**
 
 ------------------------------------------------------------------------
 
-[**[flash-flood]{lang="EN-US"}**]{#struct_0_x1984_13510_1329928269}[命令用来使能]{style="font-family:宋体"}[LSP]{lang="EN-US"}[快速扩散功能。]{style="font-family:宋体"}
+**[flash-flood**]命令用来使能LSP快速扩散功能。
 
-[**[undo flash-flood]{lang="EN-US"}**]{#struct_0_x1984_13510_1739970451}[命令用来关闭]{style="font-family:宋体"}[LSP]{lang="EN-US"}[快速扩散功能。]{style="font-family:宋体"}
+**[undo flash-flood**]命令用来关闭LSP快速扩散功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1263002840}
+【命令】
 
-[**[flash-flood]{lang="EN-US"}**[ \[ **flood-count** *flooding-count* \| **max-timer-interval** *flooding-interval* \| \[ **level-1** \| **level-2** \] \] \*]{lang="EN-US"}]{#struct_0_x1984_13510_x849920762}
+**[flash-flood**[ [ **flood-count** *flooding-count* \| **max-timer-interval** *flooding-interval* \| [ **level-1** \| **level-2** ] ] \*]]
 
-[**[undo flash-flood]{lang="EN-US"}**[ \[ **level-1** \| **level-2** \]]{lang="EN-US"}]{#struct_0_x1984_13510_x1154412115}
+**[undo flash-flood**[ [ **level-1** \| **level-2** ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1847975100}
+【缺省情况】
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x967187234}[快速扩散功能处于关闭状态。]{style="font-family:宋体"}
+LSP快速扩散功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2038124797}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_739653076}[视图]{style="font-family:宋体"}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1350353270}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1423059062}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1262413017}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1672498920}
+【参数】
 
-[**[flood-count]{lang="EN-US"}***[ flooding-count]{lang="EN-US"}*]{#struct_0_x1984_13510_x526504568}[：在]{style="font-family:宋体"}[SPF]{lang="EN-US"}[重新计算前快速扩散]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的个数，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[15]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[5]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[flood-count*** flooding-count*]：在SPF重新计算前快速扩散LSP的个数，取值范围为1～15，缺省值为5。
 
-[**[max-timer-interval]{lang="EN-US"}***[ flooding-interval]{lang="EN-US"}*]{#struct_0_x1984_13510_258551506}[：在]{style="font-family:宋体"}[LSP]{lang="EN-US"}[快速扩散之前的等待时间，取值范围为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[50000]{lang="EN-US"}[，单位为毫秒，缺省值为]{style="font-family:宋体"}[10]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+**[max-timer-interval*** flooding-interval*]：在LSP快速扩散之前的等待时间，取值范围为10～50000，单位为毫秒，缺省值为10毫秒。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_x707677668}[：使能在]{style="font-family:宋体"}**[level-1]{lang="EN-US"}**[级别的快速扩散功能。]{style="font-family:宋体"}
+**[level-1**]：使能在**level-1**级别的快速扩散功能。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_x1164161162}[：使能在]{style="font-family:宋体"}**[level-2]{lang="EN-US"}**[级别的快速扩散功能。]{style="font-family:宋体"}
+**[level-2**]：使能在**level-2**级别的快速扩散功能。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x384953100}
+【使用指导】
 
-[[如果不指定级别，将同时使能]{style="font-family:宋体"}**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_1803866292}[和]{style="font-family:宋体"}**[level-2]{lang="EN-US"}**[级别的快速扩散功能。]{style="font-family:宋体"}
+如果不指定级别，将同时使能**level-1**和**level-2**级别的快速扩散功能。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1262478553}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x55792021}[使能]{style="font-family:宋体"}[LSP]{lang="EN-US"}[快速扩散功能，配置发送个数]{style="font-family:宋体"}[10]{lang="EN-US"}[个，发送延时]{style="font-family:宋体"}[100]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+\# 使能LSP快速扩散功能，配置发送个数10个，发送延时100毫秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_904786668}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[[\[Sysname-isis-1\] flash-flood flood-count 10 max-timer-interval 100]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1984_13510_120694460}
-:::
-
-::::: {#63544256 .myid}
-[]{#_Toc303839444}[]{#_Toc404788372}[]{#struct_0_x1984_13510_1506965467}[]{#_Toc303839441}[]{#_Toc163546251}[]{#_Toc50204095}[]{#_Toc33866094}[]{#_Toc17101067}[]{#_Toc302996860}[]{#_Toc252200747}[]{#_Toc199911156}[]{#_Toc193268606}[]{#_Toc193268506}[]{#_Toc193260336}[]{#_Toc131910356}[]{#_Toc132011562}
+Sysname-isis-1 flash-flood flood-count 10 max-timer-interval 100
 
 **IS-IS \-- IS-IS配置命令 \-- graceful-restart**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IS-IS命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1984_13510_1299737039}
-:::
+![说明](IS-IS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1984_13510_1262544089}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[graceful-restart**]命令用来使能IS-IS协议的GR能力。
 
-[**[graceful-restart]{lang="EN-US"}**]{#struct_0_x1984_13510_1050027421}[命令用来使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议的]{style="font-family:宋体"}[GR]{lang="EN-US"}[能力。]{style="font-family:宋体"}
+**[undo graceful-restart**]命令用来关闭IS-IS协议的GR能力。
 
-[**[undo graceful-restart]{lang="EN-US"}**]{#struct_0_x1984_13510_1797453014}[命令用来关闭]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议的]{style="font-family:宋体"}[GR]{lang="EN-US"}[能力。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_357235288}
+**[graceful-restart**]
 
-[**[graceful-restart]{lang="EN-US"}**]{#struct_0_x1984_13510_x679144095}
+**[undo graceful-restart**]
 
-[**[undo ]{lang="FR"}[graceful-restart]{lang="EN-US"}**]{#struct_0_x1984_13510_x291777442}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1617009375}
+IS-IS协议的GR能力处于关闭状态。
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1118647656}[协议的]{style="font-family:宋体"}[GR]{lang="EN-US"}[能力处于关闭状态。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1262609625}
+IS-IS视图
 
-[[IS-IS]{lang="FR"}]{#struct_0_x1984_13510_723133259}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x819731341}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1243718111}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1588809791}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2110634443}
+IS-IS GR特性与IS-IS NSR特性互斥，即**graceful-restart**和**non-stop-routing**命令互斥，不能同时配置。
 
-[[IS-IS GR]{lang="EN-US"}]{#struct_0_x1984_13510_x217819324}[特性与]{style="font-family:宋体"}[IS-IS NSR]{lang="EN-US"}[特性互斥，即]{style="font-family:宋体"}**[graceful-restart]{lang="EN-US"}**[和]{style="font-family:宋体"}**[non-stop-routing]{lang="EN-US"}**[命令互斥，不能同时配置。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1402667872}
+\# 使能IS-IS进程1的GR能力。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1262150873}[使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[能力。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1984_13510_1487492016}
+Sysname isis 1
 
-[[\[Sysname\] isis 1]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1984_13510_2128907703}
+Sysname-isis-1 graceful-restart
 
-[[\[Sysname-isis-1\] graceful-restart]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1984_13510_x1173442181}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_237946554}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[graceful-restart suppress-sa]{lang="EN-US"}**]{#struct_0_x1984_13510_x1760983337}
-:::::
-
-::::: {#1056335496 .myid}
-[]{#_Toc404788373}[]{#struct_0_x1984_13510_2096343391}[]{#_Toc303839443}[]{#_Toc328662275}[]{#_Toc328662276}[]{#_Toc328662277}[]{#_Toc328662278}[]{#_Toc328662279}[]{#_Toc328662280}[]{#_Toc328662281}[]{#_Toc328662282}[]{#_Toc328662283}[]{#_Toc328662284}[]{#_Toc328662285}[]{#_Toc328662286}[]{#_Toc328662287}[]{#_Toc328662288}[]{#_Toc328662289}[]{#_Toc328662290}[]{#_Toc328662291}[]{#_Toc328662292}[]{#_Toc328662293}[]{#_Toc328662294}[]{#_Toc328662295}[]{#_Toc328662296}[]{#_Toc328662297}[]{#_Toc328662298}[]{#_Toc328662299}[]{#_Toc328662300}
+·**graceful-restart suppress-sa**
 
 **IS-IS \-- IS-IS配置命令 \-- graceful-restart suppress-sa**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IS-IS命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1984_13510_x1358303809}
-:::
+![说明](IS-IS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1984_13510_1262216409}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[graceful-restart suppress-sa**]命令用来配置重启时抑制SA（Suppress-Advertisement）位置位。**undo graceful-restart suppress-sa**命令用来取消重启时抑制SA位置位。
 
-[**[graceful-restart suppress-sa]{lang="EN-US"}**]{#struct_0_x1984_13510_1453854640}[命令用来配置重启时抑制]{style="font-family:
-宋体"}[SA]{lang="EN-US"}[（]{style="font-family:宋体"}[Suppress-Advertisement]{lang="EN-US"}[）位置位。]{style="font-family:宋体"}**[undo graceful-restart suppress-sa]{lang="EN-US"}**[命令用来取消重启时抑制]{style="font-family:
-宋体"}[SA]{lang="EN-US"}[位置位。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x976465503}
+**[graceful-restart suppress-sa**]
 
-[**[graceful-restart suppress-sa]{lang="EN-US"}**]{#struct_0_x1984_13510_x598515632}
+**[undo graceful-restart suppress-sa**]
 
-[**[undo graceful-restart suppress-sa]{lang="EN-US"}**]{#struct_0_x1984_13510_x1632599081}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1250307473}
+SA位处于置位状态。
 
-[[SA]{lang="EN-US"}]{#struct_0_x1984_13510_1659172086}[位处于置位状态。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_799095731}
+IS-IS视图
 
-[[IS-IS]{lang="FR"}]{#struct_0_x1984_13510_1262281945}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2041263955}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x723753224}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1212784823}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1206612314}
+SA表示抑制邻接标志位，其主要目的是为了避免出现路由黑洞，例如在启动或者重启时没有保留本地转发表，此时如果GR Helper将报文送到设备来进行转发将会造成严重的丢包现象，在这种情况下GR Restarter发送的Hello报文中必须将SA位置1，而GR Helper接收到这种SA位被置1的Hello报文后就不会将发送该Hello报文的GR Restarter放入LSP扩散出去。
 
-[[SA]{lang="EN-US"}]{#struct_0_x1984_13510_x104943953}[表示抑制邻接标志位，其主要目的是为了避免出现路由黑洞，例如在启动或者重启时没有保留本地转发表，此时如果]{style="font-family:宋体"}[GR Helper]{lang="EN-US"}[将报文送到设备来进行转发将会造成严重的丢包现象，在这种情况下]{style="font-family:宋体"}[GR Restarter]{lang="EN-US"}[发送的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文中必须将]{style="font-family:宋体"}[SA]{lang="EN-US"}[位置]{style="font-family:宋体"}[1]{lang="EN-US"}[，而]{style="font-family:宋体"}[GR Helper]{lang="EN-US"}[接收到这种]{style="font-family:宋体"}[SA]{lang="EN-US"}[位被置]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文后就不会将发送该]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的]{style="font-family:宋体"}[GR Restarter]{lang="EN-US"}[放入]{style="font-family:宋体"}[LSP]{lang="EN-US"}[扩散出去。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2146991401}
+\# 配置重启时对SA位进行抑制。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1341674841}[配置重启时对]{style="font-family:宋体"}[SA]{lang="EN-US"}[位进行抑制。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1984_13510_1262347481}
+Sysname isis 1
 
-[[\[Sysname\] isis 1]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1984_13510_x118455260}
+Sysname-isis-1 graceful-restart suppress-sa
 
-[[\[Sysname-isis-1\] graceful-restart suppress-sa]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1984_13510_1149513844}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x340078956}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[graceful-restart]{lang="EN-US"}**]{#struct_0_x1984_13510_x298732227}
-:::::
-
-::::: {#-725244767 .myid}
-[]{#_Toc404788374}[]{#struct_0_x1984_13510_x1266467564}
+·**graceful-restart**
 
 **IS-IS \-- IS-IS配置命令 \-- graceful-restart t1**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IS-IS命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1984_13510_x628015161}
-:::
+![说明](IS-IS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1984_13510_x1409572192}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[graceful-restart t1**]命令用来配置T1定时器。
 
-[**[graceful-restart t1]{lang="EN-US"}**]{#struct_0_x1984_13510_1262937305}[命令用来配置]{style="font-family:宋体"}[T1]{lang="EN-US"}[定时器。]{style="font-family:宋体"}
+**[undo graceful-restart t1**]命令用来恢复缺省情况。
 
-[**[undo graceful-restart t1]{lang="EN-US"}**]{#struct_0_x1984_13510_x916946206}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x909263816}
+**[graceful-restart t1** *seconds* **count** *count*]
 
-[**[graceful-restart ]{lang="EN-US"}[t1]{lang="EN-US"}**[ *seconds* **count** *count*]{lang="EN-US"}]{#struct_0_x1984_13510_722172964}
+**[undo graceful-restart t1**]
 
-[**[undo graceful-restart t1]{lang="EN-US"}**]{#struct_0_x1984_13510_x1777519868}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1521106429}
+T1定时器的超时值为3秒，超时次数为10次。
 
-[[T1]{lang="EN-US"}]{#struct_0_x1984_13510_1127519190}[定时器的超时值为]{style="font-family:宋体"}[3]{lang="EN-US"}[秒，超时次数为]{style="font-family:宋体"}[10]{lang="EN-US"}[次。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1289899193}
+IS-IS视图
 
-[[IS-IS]{lang="FR"}]{#struct_0_x1984_13510_1263002841}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x849986298}
+network-admin
 
-[[network-admin]{lang="FR"}]{#struct_0_x1984_13510_x1518512614}
+mdc-admin
 
-[[mdc-admin]{lang="FR"}]{#struct_0_x1984_13510_x912279987}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x252050896}
+*[seconds*]：T1定时器的超时值，取值范围为3～10，单位为秒。
 
-[*[seconds]{lang="FR"}*]{#struct_0_x1984_13510_x1221529188}[：]{style="font-family:宋体"}[T1]{lang="SV"}[定时器的超时值，]{style="font-family:
-宋体"}[取值范围为]{style="font-family:宋体"}[3]{lang="FR"}[～]{style="font-family:宋体"}[10]{lang="SV"}[，]{style="font-family:
-宋体"}[单位为秒。]{style="font-family:宋体"}
+*[count*]：T1定时器超时次数，取值范围为1～20。
 
-[*[count]{lang="EN-US"}*]{#struct_0_x1984_13510_x576776219}[：]{style="font-family:宋体"}[T1]{lang="EN-US"}[定时器超时次数，取值范围为]{style="font-family:宋体"}[1]{lang="DE"}[～]{style="font-family:宋体"}[20]{lang="EN-US"}[。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x198590910}
+T1定时器用来控制发送带有RR标志位的Restart TLV的次数。重启路由器发送带有RR标志位的Restart TLV，如果在超时时间内收到对端回复的带有RA标志的Restart TLV，才能正常进入GR流程；否则GR流程失败。
 
-[[T1]{lang="EN-US"}]{#struct_0_x1984_13510_1262413014}[定时器用来控制发送带有]{style="font-family:宋体"}[RR]{lang="EN-US"}[标志位的]{style="font-family:宋体"}[Restart TLV]{lang="EN-US"}[的次数。重启路由器发送带有]{style="font-family:宋体"}[RR]{lang="EN-US"}[标志位的]{style="font-family:宋体"}[Restart TLV]{lang="EN-US"}[，如果在超时时间内收到对端回复的带有]{style="font-family:宋体"}[RA]{lang="EN-US"}[标志的]{style="font-family:宋体"}[Restart TLV]{lang="EN-US"}[，才能正常进入]{style="font-family:宋体"}[GR]{lang="EN-US"}[流程；否则]{style="font-family:宋体"}[GR]{lang="EN-US"}[流程失败。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1672433384}
+\# 配置IS-IS进程1的T1定时器超时值为5秒，超时次数为5。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1504684784}[配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[T1]{lang="EN-US"}[定时器超时值为]{style="font-family:宋体"}[5]{lang="EN-US"}[秒，超时次数为]{style="font-family:宋体"}[5]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1984_13510_222623259}
+Sysname isis 1
 
-[[\[Sysname\] isis 1]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1984_13510_x192671652}
+Sysname-isis-1 graceful-restart t1 5 count 5
 
-[[\[Sysname-isis-1\] graceful-restart t1 5 count 5]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1984_13510_248689103}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_942268039}
+·**graceful-restart**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[graceful-restart]{lang="EN-US"}**]{#struct_0_x1984_13510_1855082813}
+·**graceful-restart**** t2**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[graceful-restart]{lang="EN-US"}**]{#struct_0_x1984_13510_1262478550}**[ t2]{lang="EN-US"}**
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[graceful-restart ]{lang="EN-US"}**]{#struct_0_x1984_13510_x55988629}**[t3]{lang="EN-US"}**
-:::::
-
-::::: {#2003638588 .myid}
-[]{#_Toc404788375}[]{#struct_0_x1984_13510_x1242482829}
+·**graceful-restart ****t3**
 
 **IS-IS \-- IS-IS配置命令 \-- graceful-restart t2**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IS-IS命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1984_13510_x274607356}
-:::
+![说明](IS-IS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1984_13510_x1274394165}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[graceful-restart t2**]命令用来配置T2定时器。
 
-[**[graceful-restart t2]{lang="EN-US"}**]{#struct_0_x1984_13510_x1546167577}[命令用来配置]{style="font-family:宋体"}[T2]{lang="EN-US"}[定时器。]{style="font-family:宋体"}
+**[undo graceful-restart t2**]命令用来恢复缺省情况。
 
-[**[undo graceful-restart t2]{lang="EN-US"}**]{#struct_0_x1984_13510_745480290}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_87303005}
+**[graceful-restart t2** *seconds*]
 
-[**[graceful-restart ]{lang="EN-US"}[t2]{lang="EN-US"}**[ *seconds*]{lang="EN-US"}]{#struct_0_x1984_13510_1262544086}
+**[undo graceful-restart t2**]
 
-[**[undo graceful-restart t2]{lang="EN-US"}**]{#struct_0_x1984_13510_1049437597}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1501297746}
+T2定时器的超时值为60秒。
 
-[[T2]{lang="EN-US"}]{#struct_0_x1984_13510_892305920}[定时器的超时值为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1090165028}
+IS-IS视图
 
-[[IS-IS]{lang="FR"}]{#struct_0_x1984_13510_x539143555}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1800885925}
+network-admin
 
-[[network-admin]{lang="FR"}]{#struct_0_x1984_13510_1536322027}
+mdc-admin
 
-[[mdc-admin]{lang="FR"}]{#struct_0_x1984_13510_1262609622}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_723067723}
+*[seconds*]：T2定时器的超时值，取值范围为30～65535，单位为秒。
 
-[*[seconds]{lang="FR"}*]{#struct_0_x1984_13510_349084831}[：]{style="font-family:宋体"}[T2]{lang="SV"}[定时器的超时值，]{style="font-family:
-宋体"}[取值范围为]{style="font-family:宋体"}[30]{lang="FR"}[～]{style="font-family:宋体"}[65535]{lang="SV"}[，]{style="font-family:宋体"}[单位为秒。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_337881578}
+T2定时器用来控制LSDB同步时间。每个LSDB都有一个T2定时器，对于Level-1-2路由器来说，就需要有两个T2定时器，一个为Level-1的T2定时器，另外一个为Level-2的T2定时器。如果Level-1和Level-2的T2定时器都超时后，LSDB同步还没有完成，则GR失败。
 
-[[T2]{lang="FR"}]{#struct_0_x1984_13510_1743489254}[定时器用来控制]{style="font-family:宋体"}[LSDB]{lang="FR"}[同步时间]{style="font-family:宋体"}[。]{style="font-family:宋体"}[每个]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[都有一个]{style="font-family:宋体"}[T2]{lang="EN-US"}[定时器，对于]{style="font-family:宋体"}[Level-1-2]{lang="EN-US"}[路由器来说，就需要有两个]{style="font-family:宋体"}[T2]{lang="EN-US"}[定时器，一个为]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[的]{style="font-family:宋体"}[T2]{lang="FR"}[定时器，另外一个为]{style="font-family:
-宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:
-宋体"}[T2]{lang="FR"}[定时器。如果]{style="font-family:宋体"}[Level-1]{lang="FR"}[和]{style="font-family:宋体"}[Level-2]{lang="FR"}[的]{style="font-family:宋体"}[T2]{lang="FR"}[定时器都超时后]{style="font-family:
-宋体"}[，]{style="font-family:宋体"}[LSDB]{lang="FR"}[同步还没有完成，]{style="font-family:宋体"}[则]{style="font-family:宋体"}[GR]{lang="EN-US"}[失败。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2023513281}
+\# 配置IS-IS进程1的T2定时器超时值为50秒。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x563575477}[配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[T2]{lang="EN-US"}[定时器超时值为]{style="font-family:宋体"}[50]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1984_13510_694970416}
+Sysname isis 1
 
-[[\[Sysname\] isis 1]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1984_13510_1262150870}
+Sysname-isis-1 graceful-restart t2 50
 
-[[\[Sysname-isis-1\] graceful-restart t]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1984_13510_1487557552}[2]{lang="EN-US" style="font-size:8.5pt;
-font-family:\"Courier New\""}[ 5]{lang="EN-US" style="font-size:8.5pt;
-font-family:\"Courier New\""}[0]{lang="EN-US" style="font-size:8.5pt;
-font-family:\"Courier New\""}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x189213539}
+·**graceful-restart**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[graceful-restart]{lang="EN-US"}**]{#struct_0_x1984_13510_x1854746710}
+·**graceful-restart**** t1**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[graceful-restart]{lang="EN-US"}**]{#struct_0_x1984_13510_x1489953177}**[ t1]{lang="EN-US"}**
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[graceful-restart ]{lang="EN-US"}**]{#struct_0_x1984_13510_x207911891}**[t3]{lang="EN-US"}**
-:::::
-
-::::: {#437554647 .myid}
-[]{#_Toc404788376}[]{#struct_0_x1984_13510_860448363}
+·**graceful-restart ****t3**
 
 **IS-IS \-- IS-IS配置命令 \-- graceful-restart t3**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IS-IS命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1984_13510_1489881204}
-:::
+![说明](IS-IS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1984_13510_1262216406}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[graceful-restart t3**]命令用来配置T3定时器。
 
-[**[graceful-restart t3]{lang="EN-US"}**]{#struct_0_x1984_13510_1454444464}[命令用来配置]{style="font-family:宋体"}[T3]{lang="EN-US"}[定时器。]{style="font-family:宋体"}
+**[undo graceful-restart t3**]命令用来恢复缺省情况。
 
-[**[undo graceful-restart t3]{lang="EN-US"}**]{#struct_0_x1984_13510_x1108061665}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_43515565}
+**[graceful-restart t3 ***seconds*]
 
-[**[graceful-restart ]{lang="EN-US"}[t3 ]{lang="EN-US"}***[seconds]{lang="EN-US"}*]{#struct_0_x1984_13510_x1731831534}
+**[undo graceful-restart t3**]
 
-[**[undo graceful-restart t3]{lang="EN-US"}**]{#struct_0_x1984_13510_x1631441127}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x279004702}
+T3定时器的超时值为300秒。
 
-[[T3]{lang="EN-US"}]{#struct_0_x1984_13510_1558959111}[定时器的超时值为]{style="font-family:宋体"}[300]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1068258341}
+IS-IS视图
 
-[[IS-IS]{lang="FR"}]{#struct_0_x1984_13510_1262281942}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2041329491}
+network-admin
 
-[[network-admin]{lang="FR"}]{#struct_0_x1984_13510_x1327818373}
+mdc-admin
 
-[[mdc-admin]{lang="FR"}]{#struct_0_x1984_13510_x626559234}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1273292116}
+*[seconds*]：T3定时器的超时值，取值范围为300～65535，单位为秒。
 
-[*[seconds]{lang="FR"}*]{#struct_0_x1984_13510_2084026457}[：]{style="font-family:宋体"}[T3]{lang="SV"}[定时器的超时值，]{style="font-family:
-宋体"}[取值范围为]{style="font-family:宋体"}[300]{lang="FR"}[～]{style="font-family:宋体"}[65535]{lang="SV"}[，]{style="font-family:宋体"}[单位为秒。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_172839980}
+T3定时器用来控制路由器的重启时间间隔。重启时间间隔在IS-IS的Hello PDU中设置为保持时间，这样在该路由器重启的时间内邻居不会断掉与其的邻接关系。如果T3定时器超时后GR还没有完成，则GR失败。
 
-[[T3]{lang="EN-US"}]{#struct_0_x1984_13510_267144565}[定时器用来控制路由器的重启时间间隔。重启时间间隔在]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[Hello PDU]{lang="EN-US"}[中设置为保持时间，这样在该路由器重启的时间内邻居不会断掉与其的邻接关系。如果]{style="font-family:宋体"}[T3]{lang="EN-US"}[定时器超时后]{style="font-family:宋体"}[GR]{lang="EN-US"}[还没有完成，则]{style="font-family:宋体"}[GR]{lang="EN-US"}[失败。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1262347478}
+\# 配置IS-IS进程1的T3定时器超时值为500秒。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x117865429}[配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[T3]{lang="EN-US"}[定时器超时值为]{style="font-family:宋体"}[500]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1984_13510_963326196}
+Sysname isis 1
 
-[[\[Sysname\] isis 1]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1984_13510_x1192313269}
+Sysname-isis-1 graceful-restart t3 500
 
-[[\[Sysname-isis-1\] graceful-restart t]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1984_13510_x712641140}[3]{lang="EN-US" style="font-size:8.5pt;
-font-family:\"Courier New\""}[ 5]{lang="EN-US" style="font-size:8.5pt;
-font-family:\"Courier New\""}[00]{lang="EN-US" style="font-size:8.5pt;
-font-family:\"Courier New\""}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x10592697}
+·**graceful-restart**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[graceful-restart]{lang="EN-US"}**]{#struct_0_x1984_13510_x2139694344}
+·**graceful-restart**** t1**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[graceful-restart]{lang="EN-US"}**]{#struct_0_x1984_13510_x887671869}**[ t1]{lang="EN-US"}**
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[graceful-restart ]{lang="EN-US"}**]{#struct_0_x1984_13510_1262937302}**[t2]{lang="EN-US"}**
-:::::
-
-::: {#1224972849 .myid}
-[]{#_Toc404788377}[]{#struct_0_x1984_13510_x435189140}[]{#_Toc366163926}[]{#_Toc364753108}
+·**graceful-restart ****t2**
 
 **IS-IS \-- IS-IS配置命令 \-- ignore-att**
 
 ------------------------------------------------------------------------
 
-[**[ignore-att]{lang="EN-US"}**]{#struct_0_x1984_13510_1070338633}[命令用来配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[不采用]{style="font-family:宋体"}[ATT]{lang="EN-US"}[位计算缺省路由]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[ignore-att**]命令用来配置IS-IS不采用ATT位计算缺省路由。
 
-[**[undo ignore-att]{lang="EN-US"}**]{#struct_0_x1984_13510_x1626830235}[命令用来取消该配置]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo ignore-att**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_497724373}
+【命令】
 
-[**[ignore-att]{lang="EN-US"}**]{#struct_0_x1984_13510_1022268644}
+**[ignore-att**]
 
-[**[undo ignore-att]{lang="EN-US"}**]{#struct_0_x1984_13510_x1626830236}
+**[undo ignore-att**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_901008900}
+【缺省情况】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x1634577686}[采用]{style="font-family:宋体"}[ATT]{lang="EN-US"}[位计算缺省路由]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+IS-IS采用ATT位计算缺省路由。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x760905938}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x1626830237}[视图]{style="font-family:宋体"}[/IS-IS IPv4]{lang="EN-US"}[单播拓扑视图]{style="font-family:宋体"}
+IS-IS视图/IS-IS IPv4单播拓扑视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x665075041}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_269444962}
+network-admin
 
-[[mdc-admin ]{lang="EN-US"}]{#struct_0_x1984_13510_x1626830238}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x261790514}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_421405032}[配置不采用]{style="font-family:宋体"}[ATT]{lang="EN-US"}[位计算缺省路由。]{style="font-family:宋体"}
+\# 配置不采用ATT位计算缺省路由。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x1626830231}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] ignore-att]{lang="EN-US"}
-:::
-
-::: {#29262825 .myid}
-[]{#_Toc404788378}[]{#struct_0_x1984_13510_x916618526}
+Sysname-isis-1 ignore-att
 
 **IS-IS \-- IS-IS配置命令 \-- import-route**
 
 ------------------------------------------------------------------------
 
-[**[import-route]{lang="EN-US"}**]{#struct_0_x1984_13510_1014527925}[命令用来从其它路由协议或其它]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程引入路由信息。]{style="font-family:宋体"}
+**[import-route**]命令用来从其它路由协议或其它IS-IS进程引入路由信息。
 
-[**[undo import-route]{lang="EN-US"}**]{#struct_0_x1984_13510_533166363}[命令用来取消从其它路由协议或其它]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程引入路由信息。]{style="font-family:宋体"}
+**[undo import-route**]命令用来取消从其它路由协议或其它IS-IS进程引入路由信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1039566475}
+【命令】
 
-[**[import-route]{lang="EN-US"}**[ *protocol* \[ *process-id* \| **all-processes** \| **allow-ibgp** \] \[ **allow-direct** \| **cost** *cost* \| **cost-type** { **external** \| **internal** } \| \[ **level-1** \| **level-1-2** \| **level-2** \] \| **route-policy** *route-policy-name* \| **tag** *tag* \] \*]{lang="EN-US"}]{#struct_0_x1984_13510_x1356568605}
+**[import-route**[ *protocol* [ *process-id* \| **all-processes** \| **allow-ibgp**   **allow-direct** \| **cost** *cost* \| **cost-type** { **external** \| **internal** } \| [ **level-1** \| **level-1-2** \| **level-2** ] \| **route-policy** *route-policy-name* \| **tag** *tag* ] \*]]
 
-[**[undo import-route]{lang="EN-US"}**[ *protocol* \[ *process-id* \| **all-processes** \]]{lang="EN-US"}]{#struct_0_x1984_13510_1263002838}
+**[undo import-route**[ *protocol* [ *process-id* \| **all-processes** ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x850445053}
+【缺省情况】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x76960891}[不引入其它协议的路由信息。]{style="font-family:宋体"}
+IS-IS不引入其它协议的路由信息。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1013678930}
+【视图】
 
-[[IS-IS IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_x1080173332}[单播地址族视图]{style="font-family:宋体"}[/IS-IS IPv4]{lang="EN-US"}[单播拓扑视图]{style="font-family:宋体"}
+IS-IS IPv4单播地址族视图/IS-IS IPv4单播拓扑视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1956919913}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1433466724}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1872024733}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1975049992}
+【参数】
 
-[*[protocol]{lang="EN-US"}*]{#struct_0_x1984_13510_1262413015}[：指定引入的路由协议，可以是]{style="font-family:宋体"}**[bgp]{lang="EN-US"}**[、]{style="font-family:宋体"}**[direct]{lang="EN-US"}**[、]{style="font-family:宋体"}**[isis]{lang="EN-US"}**[、]{style="font-family:宋体"}**[ospf]{lang="EN-US"}**[、]{style="font-family:宋体"}**[rip]{lang="EN-US"}**[或]{style="font-family:宋体"}**[static]{lang="EN-US"}**[。]{style="font-family:宋体"}
+*[protocol*]：指定引入的路由协议，可以是**bgp**、**direct**、**isis**、**ospf**、**rip**或**static**。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_x1984_13510_x1672367848}[：路由协议进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[1]{lang="EN-US"}[。只有当]{style="font-family:宋体"}*[protocol]{lang="EN-US"}*[是]{style="font-family:宋体"}**[isis]{lang="EN-US"}**[、]{style="font-family:宋体"}**[ospf]{lang="EN-US"}**[或]{style="font-family:宋体"}**[rip]{lang="EN-US"}**[时该参数可选。]{style="font-family:宋体"}
+*[process-id*]：路由协议进程号，取值范围为1～65535，缺省值为1。只有当*protocol*是**isis**、**ospf**或**rip**时该参数可选。
 
-[**[all-processes]{lang="EN-US"}**]{#struct_0_x1984_13510_1434897792}[：引入指定路由协议所有进程的路由，只有当]{style="font-family:宋体"}*[protocol]{lang="EN-US"}*[是]{style="font-family:宋体"}**[rip]{lang="EN-US"}**[、]{style="font-family:宋体"}**[ospf]{lang="EN-US"}**[或]{style="font-family:宋体"}**[isis]{lang="EN-US"}**[时可以指定该参数。]{style="font-family:宋体"}
+**[all-processes**]：引入指定路由协议所有进程的路由，只有当*protocol*是**rip**、**ospf**或**isis**时可以指定该参数。
 
-[**[allow-ibgp]{lang="EN-US"}**]{#struct_0_x1984_13510_x463620535}[：允许引入]{style="font-family:宋体"}[IBGP]{lang="EN-US"}[路由。只有当]{style="font-family:宋体"}*[protocol]{lang="EN-US"}*[是]{style="font-family:宋体"}**[bgp]{lang="EN-US"}**[时该参数可选。]{style="font-family:宋体"}
+**[allow-ibgp**]：允许引入IBGP路由。只有当*protocol*是**bgp**时该参数可选。
 
-[**[allow-direct]{lang="EN-US"}**]{#struct_0_x1984_13510_2090213763}[：]{style="font-family:宋体"}[在引入的路由中包含使能了该协议的接口网段路由。缺省情况下，在引入]{style="font-family:宋体"}[协议]{style="font-family:宋体"}[路由时不会包含使能了]{style="font-family:宋体"}[该]{style="font-family:宋体"}[协议的接口网段路由。当]{style="font-family:宋体"}**[allow-direct]{lang="EN-US"}**[与]{style="font-family:宋体"}**[route-policy]{lang="EN-US"}**[ *route-policy-name*]{lang="EN-US"}[参数一起使用时，需要注意路由策略中配置的匹配规则不要与接口路由信息存在冲突，否则会导致]{style="font-family:宋体"}**[allow-direct]{lang="EN-US"}**[配置失效。例如，当配置]{style="font-family:宋体"}**[allow-direct]{lang="EN-US"}**[参数引入]{style="font-family:宋体"}[OSPF]{lang="EN-US"}[直连时，在路由策略中不要配置]{style="font-family:宋体"}**[if-match]{lang="EN-US"}**[ **route-type**]{lang="EN-US"}[匹配条件，否则，]{style="font-family:宋体"}**[allow-direct]{lang="EN-US"}**[参数失效。]{style="font-family:宋体"}
+**[allow-direct**]：在引入的路由中包含使能了该协议的接口网段路由。缺省情况下，在引入协议路由时不会包含使能了该协议的接口网段路由。当**allow-direct**与**route-policy** *route-policy-name*参数一起使用时，需要注意路由策略中配置的匹配规则不要与接口路由信息存在冲突，否则会导致**allow-direct**配置失效。例如，当配置**allow-direct**参数引入OSPF直连时，在路由策略中不要配置**if-match** **route-type**匹配条件，否则，**allow-direct**参数失效。
 
-[**[cost]{lang="EN-US"}**[ *cost*]{lang="EN-US"}]{#struct_0_x1984_13510_610856467}[：引入的路由的路径开销，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[4261412864]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[cost** *cost*]：引入的路由的路径开销，取值范围为0～4261412864。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当路径开销值类型为]{lang="EN-US" style="font-family:宋体"}**[narrow]{lang="EN-US"}**]{#struct_0_x1984_13510_1262478551}[、]{lang="EN-US" style="font-family:宋体"}**[narrow-compatible]{lang="EN-US"}**[或]{lang="EN-US" style="font-family:
-宋体"}**[compatible]{lang="EN-US"}**[时，取值范围为]{lang="EN-US" style="font-family:宋体"}[0]{lang="EN-US"}[～]{lang="EN-US" style="font-family:宋体"}[63]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·当路径开销值类型为**narrow**、**narrow-compatible**或**compatible**时，取值范围为0～63。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当路径开销值类型为]{lang="EN-US" style="font-family:宋体"}**[wide]{lang="EN-US"}**]{#struct_0_x1984_13510_x55923093}[或]{lang="EN-US" style="font-family:宋体"}**[wide-compatible]{lang="EN-US"}**[时，取值范围为]{lang="EN-US" style="font-family:宋体"}[0]{lang="EN-US"}[～]{lang="EN-US" style="font-family:宋体"}[4261412864]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·当路径开销值类型为**wide**或**wide-compatible**时，取值范围为0～4261412864。
 
-[**[cost-type ]{lang="EN-US"}**[{ **external** \| **internal** }]{lang="EN-US"}]{#struct_0_x1984_13510_1073738213}[：表示路径开销类型：]{style="font-family:宋体"}**[internal]{lang="EN-US"}**[表示内部路由；]{style="font-family:宋体"}**[external]{lang="EN-US"}**[表示外部路由，配置路径开销类型为]{style="font-family:宋体"}**[external]{lang="EN-US"}**[后，通过]{style="font-family:宋体"}[LSP]{lang="EN-US"}[发布路由时路径开销会在配置的]{style="font-family:宋体"}[cost]{lang="EN-US"}[值的基础上加上]{style="font-family:宋体"}[64]{lang="EN-US"}[，从而保证内部路由优于外部路由。缺省情况下为]{style="font-family:宋体"}**[external]{lang="EN-US"}**[类型。只有当开销类型为]{style="font-family:宋体"}**[narrow]{lang="EN-US"}**[、]{style="font-family:宋体"}**[narrow-compatible]{lang="EN-US"}**[或者]{style="font-family:宋体"}**[compatible]{lang="EN-US"}**[时，该参数有效。]{style="font-family:宋体"}
+**[cost-type **[{ **external** \| **internal** }]]：表示路径开销类型：**internal**表示内部路由；**external**表示外部路由，配置路径开销类型为**external**后，通过LSP发布路由时路径开销会在配置的cost值的基础上加上64，从而保证内部路由优于外部路由。缺省情况下为**external**类型。只有当开销类型为**narrow**、**narrow-compatible**或者**compatible**时，该参数有效。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_218337231}[：引入路由到]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[的路由表中。]{style="font-family:宋体"}
+**[level-1**]：引入路由到Level-1的路由表中。
 
-[**[level-1-2]{lang="EN-US"}**]{#struct_0_x1984_13510_x1042644713}[：同时引入路由到]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的路由表中。]{style="font-family:宋体"}
+**[level-1-2**]：同时引入路由到Level-1和Level-2的路由表中。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_1737044593}[：引入路由到]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的路由表中。如果不指定引入的级别，默认为引入路由到]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[路由表中。]{style="font-family:宋体"}
+**[level-2**]：引入路由到Level-2的路由表中。如果不指定引入的级别，默认为引入路由到Level-2路由表中。
 
-[]{#struct_0_x1984_13510_283132583}[**[route-policy]{lang="EN-US"}**[ *route-policy-name*]{lang="EN-US"}]{#_Hlt24449614}[：路由策略名称，]{style="font-family:宋体"}[只有满足指定路由策略匹配条件的路由才被引入。]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[route-policy** *route-policy-name*]：路由策略名称，只有满足指定路由策略匹配条件的路由才被引入。*route-policy-name*为1～63个字符的字符串，区分大小写。
 
-[**[tag ]{lang="EN-US"}***[tag]{lang="EN-US"}*]{#struct_0_x1984_13510_x534396687}[：为引入路由配置]{style="font-family:宋体"}[Tag]{lang="EN-US"}[值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[tag ***tag*]：为引入路由配置Tag值，取值范围为1～4294967295。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1262544087}
+【使用指导】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1049372061}[将所有引入路由域中的路由当作外部路由，它们描述了应该如何选择到路由域以外目的地的路由。]{style="font-family:宋体"}
+IS-IS将所有引入路由域中的路由当作外部路由，它们描述了应该如何选择到路由域以外目的地的路由。
 
-[[真正生效的开销值受当前开销类型的影响。]{style="font-family:宋体"}]{#struct_0_x1984_13510_x102409535}[当路径开销值类型为]{style="font-family:
-宋体"}**[narrow]{lang="EN-US"}**[、]{style="font-family:宋体"}**[narrow-compatible]{lang="EN-US"}**[或]{style="font-family:宋体"}**[compatible]{lang="EN-US"}**[时，生效的开销值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[，超过]{style="font-family:宋体"}[63]{lang="EN-US"}[的也取值为]{style="font-family:宋体"}[63]{lang="EN-US"}[；]{style="font-family:宋体"}[当路径开销值类型为]{style="font-family:宋体"}**[wide]{lang="EN-US"}**[或]{style="font-family:宋体"}**[wide-compatible]{lang="EN-US"}**[时]{style="font-family:宋体"}[，配置值即为生效值。]{style="font-family:宋体"}
+真正生效的开销值受当前开销类型的影响。当路径开销值类型为**narrow**、**narrow-compatible**或**compatible**时，生效的开销值范围为0～63，超过63的也取值为63；当路径开销值类型为**wide**或**wide-compatible**时，配置值即为生效值。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x1984_13510_x123008298}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[该命令不能引入缺省路由。]{style="font-family:宋体"}]{#struct_0_x1984_13510_x12409533}
+·该命令不能引入缺省路由。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[import-route bgp]{lang="EN-US"}**]{#struct_0_x1984_13510_1834984100}[表示只引入]{lang="EN-US" style="font-family:宋体"}[EBGP]{lang="EN-US"}[路由]{lang="EN-US" style="font-family:宋体"}[；]{lang="EN-US" style="font-family:
-宋体"}**[import-route bgp allow-ibgp]{lang="EN-US"}**[表示将]{lang="EN-US" style="font-family:宋体"}[IBGP]{lang="EN-US"}[路由也引入]{lang="EN-US" style="font-family:宋体"}[，容易引起路由环路，]{lang="EN-US" style="font-family:宋体"}[请慎用]{lang="EN-US" style="font-family:
-宋体"}[。]{lang="EN-US" style="font-family:宋体"}
+·**import-route bgp**表示只引入EBGP路由；**import-route bgp allow-ibgp**表示将IBGP路由也引入，容易引起路由环路，请慎用。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[只能引入路由表中状态为]{lang="EN-US" style="font-family:宋体"}[active]{lang="EN-US"}]{#struct_0_x1984_13510_1537556872}[的路由，是否为]{lang="EN-US" style="font-family:宋体"}[active]{lang="EN-US"}[状态可以通过]{lang="EN-US" style="font-family:宋体"}**[display ip routing-table]{lang="EN-US"}**[ **protocol**]{lang="EN-US"}[命令来查看。]{lang="EN-US" style="font-family:宋体"}
+·只能引入路由表中状态为active的路由，是否为active状态可以通过**display ip routing-table** **protocol**命令来查看。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[undo import-route]{lang="EN-US"}**[ *protocol* **all-processes**]{lang="EN-US"}]{#struct_0_x1984_13510_1937255230}[命令只能取消]{lang="EN-US" style="font-family:宋体"}**[import-route]{lang="EN-US"}**[ *protocol* **all-processes**]{lang="EN-US"}[命令的配置，不能取消]{lang="EN-US" style="font-family:宋体"}**[import-route]{lang="EN-US"}**[ *protocol* *process-id*]{lang="EN-US"}[命令的配置。]{lang="EN-US" style="font-family:宋体"}
+·**undo import-route** *protocol* **all-processes**命令只能取消**import-route** *protocol* **all-processes**命令的配置，不能取消**import-route** *protocol* *process-id*命令的配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1262609623}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_723002187}[引入静态路由，]{style="font-family:宋体"}[cost]{lang="EN-US"}[值为]{style="font-family:宋体"}[15]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 引入静态路由，cost值为15。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x216830999}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv4]{lang="EN-US"}
+Sysname-isis-1 address-family ipv4
 
-[\[Sysname-isis-1-ipv4\] import-route static cost 15]{lang="EN-US"}
+Sysname-isis-1-ipv4 import-route static cost 15
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x311813383}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[import-route limit]{lang="EN-US"}**]{#struct_0_x1984_13510_x369593000}
-:::
-
-::: {#1163395432 .myid}
-[]{#_Toc303839445}[]{#_Toc42309484}[]{#_Toc404788379}[]{#struct_0_x1984_13510_15630070}[]{#_Toc310604339}
+·**import-route limit**
 
 **IS-IS \-- IS-IS配置命令 \-- import-route isis level-1 into level-2**
 
 ------------------------------------------------------------------------
 
-[**[import-route isis level-1 into level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_1164211276}[命令用来]{style="font-family:宋体"}[配置将]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[区域的路由信息引入到]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[区域。]{style="font-family:宋体"}
+**[import-route isis level-1 into level-2**]命令用来配置将Level-1区域的路由信息引入到Level-2区域。
 
-[**[undo import-route isis level-1 into level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_1262150871}[命令用来取消此功能。]{style="font-family:宋体"}
+**[undo import-route isis level-1 into level-2**]命令用来取消此功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1487623088}
+【命令】
 
-[**[import-route isis level-1 into level-2]{lang="EN-US"}**[ \[ **filter-policy** { *acl-number* \| **prefix-list** *prefix-list-name* \| **route-policy** *route-policy-name* } \| **tag** *tag* \] \*]{lang="EN-US"}]{#struct_0_x1984_13510_577962653}
+**[import-route isis level-1 into level-2**[ [ **filter-policy** { *acl-number* \| **prefix-list** *prefix-list-name* \| **route-policy** *route-policy-name* } \| **tag** *tag* ] \*]]
 
-[**[undo import-route isis level-1 into level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_1836572777}
+**[undo import-route isis level-1 into level-2**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2123627945}
+【缺省情况】
 
-[[Level-1]{lang="EN-US"}]{#struct_0_x1984_13510_2011411210}[区域的路由信息]{style="font-family:宋体"}[向]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[区域发布。]{style="font-family:宋体"}
+Level-1区域的路由信息向Level-2区域发布。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x806058866}
+【视图】
 
-[[IS-IS IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_x421685932}[单播地址族视图]{style="font-family:宋体"}[/IS-IS IPv4]{lang="EN-US"}[单播拓扑视图]{style="font-family:宋体"}
+IS-IS IPv4单播地址族视图/IS-IS IPv4单播拓扑视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1262216407}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1454510000}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_441918574}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x486257266}
+【参数】
 
-[**[filter-policy]{lang="EN-US"}**]{#struct_0_x1984_13510_x1782799853}[：过滤策略。]{style="font-family:宋体"}
+**[filter-policy**]：过滤策略。
 
-[*[acl-number]{lang="EN-US"}*]{#struct_0_x1984_13510_x170437694}[：指定访问控制列表序号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[，过滤从]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[区域引入到]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[区域的路由信息。]{style="font-family:宋体"}
+*[acl-number*]：指定访问控制列表序号，取值范围为2000～3999，过滤从Level-1区域引入到Level-2区域的路由信息。
 
-[**[prefix-list]{lang="EN-US"}**[ *prefix-list-name*]{lang="EN-US"}]{#struct_0_x1984_13510_x687519347}[：指定]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址前缀列表名，基于目的地址对从]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[区域引入到]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[区域的路由信息进行过滤。]{style="font-family:宋体"}*[prefix-list-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[prefix-list** *prefix-list-name*]：指定IPv4地址前缀列表名，基于目的地址对从Level-1区域引入到Level-2区域的路由信息进行过滤。*prefix-list-name*为1～63个字符的字符串，区分大小写。
 
-[**[route-policy]{lang="EN-US"}**[ *route-policy-name*]{lang="EN-US"}]{#struct_0_x1984_13510_x1477765999}[：指定路由策略名，基于路由策略从]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[区域引入到]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[区域的路由信息进行过滤。]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[route-policy** *route-policy-name*]：指定路由策略名，基于路由策略从Level-1区域引入到Level-2区域的路由信息进行过滤。*route-policy-name*为1～63个字符的字符串，区分大小写。
 
-[**[tag ]{lang="EN-US"}***[tag]{lang="EN-US"}*]{#struct_0_x1984_13510_1262281943}[：为引入路由配置]{style="font-family:宋体"}[Tag]{lang="EN-US"}[值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[tag ***tag*]：为引入路由配置Tag值，取值范围为1～4294967295。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2041395027}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果要通过路由策略对从]{lang="EN-US" style="font-family:宋体"}[Level-]{lang="EN-US"}]{#struct_0_x1984_13510_332514716}[1]{lang="EN-US"}[区域引入到]{lang="EN-US" style="font-family:宋体"}[Level-]{lang="EN-US"}[2]{lang="EN-US"}[区域的路由信息进行过滤，必须在]{lang="EN-US" style="font-family:宋体"}**[import-route isis level-]{lang="EN-US"}[1]{lang="EN-US"}[ into level-]{lang="EN-US"}[2]{lang="EN-US"}**[命令中]{lang="EN-US" style="font-family:宋体"}[同时指定要应用的路由策略，否则路由过滤将不会生效；其它路由策略，如在接收或引入路由时指定的路由策略对路由渗透无效。]{lang="EN-US" style="font-family:
-宋体"}
+·如果要通过路由策略对从Level-1区域引入到Level-2区域的路由信息进行过滤，必须在**import-route isis level-1 into level-2**命令中同时指定要应用的路由策略，否则路由过滤将不会生效；其它路由策略，如在接收或引入路由时指定的路由策略对路由渗透无效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定了过滤策略，则只有通过过滤的路由才能够被发布到]{style="font-family:宋体"}]{#struct_0_x1984_13510_x627788118}[Level-2]{lang="EN-US"}[区域中。]{style="font-family:宋体"}
+·如果指定了过滤策略，则只有通过过滤的路由才能够被发布到Level-2区域中。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1675188655}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1465688458}[配置路由器从]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[向]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[进行路由渗透。]{style="font-family:宋体"}
+\# 配置路由器从Level-1向Level-2进行路由渗透。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_25996973}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv4]{lang="EN-US"}
+Sysname-isis-1 address-family ipv4
 
-[\[Sysname-isis-1-ipv4\] import-route isis level-1 into level-2]{lang="EN-US"}
+Sysname-isis-1-ipv4 import-route isis level-1 into level-2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1557708076}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[import-route]{lang="EN-US"}**]{#struct_0_x1984_13510_1262347479}
+·**import-route**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[import-route isis level-1 into level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_x117930965}
-:::
-
-::: {#1163494859 .myid}
-[]{#_Toc404788380}[]{#struct_0_x1984_13510_1324929788}
+·**import-route isis level-1 into level-2**
 
 **IS-IS \-- IS-IS配置命令 \-- import-route isis level-2 into level-1**
 
 ------------------------------------------------------------------------
 
-[**[import-route isis level-2 into level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_862604340}[命令用来]{style="font-family:宋体"}[配置将]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[区域的路由信息引入到]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[区域。]{style="font-family:宋体"}
+**[import-route isis level-2 into level-1**]命令用来配置将Level-2区域的路由信息引入到Level-1区域。
 
-[**[undo import-route isis level-2 into level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_x85742791}[命令用来取消此功能。]{style="font-family:宋体"}
+**[undo import-route isis level-2 into level-1**]命令用来取消此功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x456146357}
+【命令】
 
-[**[import-route isis level-2 into level-1 ]{lang="EN-US"}**[\[ **filter-policy** { ]{lang="EN-US"}*[acl-number]{lang="EN-US"}***[ ]{lang="EN-US"}**[\| **prefix-list** ]{lang="EN-US"}*[prefix-list-name ]{lang="EN-US"}*[\| **route-policy** *route-policy-name* } \| **tag** ]{lang="EN-US"}*[tag]{lang="EN-US"}***[ ]{lang="EN-US"}**[\] \*]{lang="EN-US"}]{#struct_0_x1984_13510_x46975391}
+**[import-route isis level-2 into level-1 **[ **filter-policy** *[acl-number*****[\| **prefix-list** ]*prefix-list-name *[\| **route-policy** *route-policy-name* } \| **tag** ]*tag***** \*]]
 
-[**[undo import-route ]{lang="EN-US"}**]{#struct_0_x1984_13510_x697401543}**[isis]{lang="EN-US"}[ level-2 into level-1]{lang="EN-US"}**
+**[undo import-route **]**isis level-2 into level-1**
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1262937303}
+【缺省情况】]
 
-[[Level-2]{lang="EN-US"}]{#struct_0_x1984_13510_x916552990}[区域的路由信息不]{style="font-family:宋体"}[向]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[区域发布。]{style="font-family:宋体"}
+Level-2区域的路由信息不向Level-1区域发布。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1489496401}
+【视图】
 
-[[IS-IS IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_x7380956}[单播地址族视图]{style="font-family:宋体"}[/IS-IS IPv4]{lang="EN-US"}[单播拓扑视图]{style="font-family:宋体"}
+IS-IS IPv4单播地址族视图/IS-IS IPv4单播拓扑视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x450249525}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x881450462}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1773583120}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1687418957}
+【参数】
 
-[**[filter-policy]{lang="EN-US"}**]{#struct_0_x1984_13510_1263002839}[：过滤策略。]{style="font-family:宋体"}
+**[filter-policy**]：过滤策略。
 
-[*[acl-number]{lang="EN-US"}*]{#struct_0_x1984_13510_x850510589}[：指定访问控制列表序号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[，过滤从]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[区域引入到]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[区域的路由信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+*[acl-number*]：指定访问控制列表序号，取值范围为2000～3999，过滤从Level-2区域引入到Level-1区域的路由信息。
 
-[**[prefix-list]{lang="EN-US"}**[ *prefix-list-name*]{lang="EN-US"}]{#struct_0_x1984_13510_x2024738190}[：指定]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址前缀列表名，基于目的地址对从]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[区域引入到]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[区域的路由信息进行过滤]{style="font-family:宋体"}[。]{style="font-family:宋体"}*[prefix-list-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串]{style="font-family:宋体"}[，区分大小写。]{style="font-family:宋体"}
+**[prefix-list** *prefix-list-name*]：指定IPv4地址前缀列表名，基于目的地址对从Level-2区域引入到Level-1区域的路由信息进行过滤。*prefix-list-name*为1～63个字符的字符串，区分大小写。
 
-[**[route-policy]{lang="EN-US"}**[ *route-policy-name*]{lang="EN-US"}]{#struct_0_x1984_13510_x306791081}[：指定路由策略名，基于路由策略从]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[区域引入到]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[区域的路由信息进行过滤]{style="font-family:宋体"}[。]{style="font-family:宋体"}*[route-]{lang="EN-US"}[policy-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[route-policy** *route-policy-name*]：指定路由策略名，基于路由策略从Level-2区域引入到Level-1区域的路由信息进行过滤。*route-policy-name*为1～63个字符的字符串，区分大小写。
 
-[**[tag ]{lang="EN-US"}***[tag]{lang="EN-US"}*]{#struct_0_x1984_13510_x1682348504}[：为引入路由配置]{style="font-family:宋体"}[Tag]{lang="EN-US"}[值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[tag ***tag*]：为引入路由配置Tag值，取值范围为1～4294967295。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1067456398}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果要通过路由策略对从]{lang="EN-US" style="font-family:宋体"}[Level-2]{lang="EN-US"}]{#struct_0_x1984_13510_951127793}[区域引入到]{lang="EN-US" style="font-family:宋体"}[Level-1]{lang="EN-US"}[区域的路由信息进行过滤，必须在]{lang="EN-US" style="font-family:宋体"}**[import-route isis level-2 into level-1]{lang="EN-US"}**[命令中]{lang="EN-US" style="font-family:宋体"}[同时指定要应用的路由策略，否则路由过滤将不会生效；其它路由策略，如在接收或引入路由时指定的路由策略对路由渗透无效。]{lang="EN-US" style="font-family:宋体"}
+·如果要通过路由策略对从Level-2区域引入到Level-1区域的路由信息进行过滤，必须在**import-route isis level-2 into level-1**命令中同时指定要应用的路由策略，否则路由过滤将不会生效；其它路由策略，如在接收或引入路由时指定的路由策略对路由渗透无效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定了过滤策略，则只有通过过滤的路由才能够被发布到]{style="font-family:宋体"}]{#struct_0_x1984_13510_x84174968}[Level-1]{lang="EN-US"}[区域中。]{style="font-family:宋体"}
+·如果指定了过滤策略，则只有通过过滤的路由才能够被发布到Level-1区域中。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1466470337}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1289998817}[配置路由器从]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[向]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[进行路由渗透。]{style="font-family:宋体"}
+\# 配置路由器从Level-2向Level-1进行路由渗透。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_910479732}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv4]{lang="EN-US"}
+Sysname-isis-1 address-family ipv4
 
-[\[Sysname-isis-1-ipv4\] import-route isis level-2 into level-1]{lang="EN-US"}
+Sysname-isis-1-ipv4 import-route isis level-2 into level-1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1310760804}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[import-route]{lang="EN-US"}**]{#struct_0_x1984_13510_x1118763836}
+·**import-route**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[import-route isis level-1 into level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_x1431145646}
-:::
-
-::: {#-900064531 .myid}
-[]{#_Toc404788381}[]{#struct_0_x1984_13510_1803727444}[]{#_Toc303839446}[]{#_Toc180403842}
+·**import-route isis level-1 into level-2**
 
 **IS-IS \-- IS-IS配置命令 \-- import-route limit**
 
 ------------------------------------------------------------------------
 
-[**[import-route limit]{lang="EN-US"}**]{#struct_0_x1984_13510_1359118686}[命令用来配置引入]{style="font-family:宋体"}[Level1/Level2]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[路由最大条数。]{style="font-family:宋体"}
+**[import-route limit**]命令用来配置引入Level1/Level2的IPv4路由最大条数。
 
-[**[undo import-route limit]{lang="EN-US"}**]{#struct_0_x1984_13510_x1466404801}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo import-route limit**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x475552385}
+【命令】
 
-[**[import-route limit ]{lang="EN-US"}***[number]{lang="EN-US"}*]{#struct_0_x1984_13510_158526366}
+**[import-route limit ***number*]
 
-[**[undo import-route limit]{lang="EN-US"}**]{#struct_0_x1984_13510_1261044506}
+**[undo import-route limit**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1537661384}
+【缺省情况】
 
-[[本命令的缺省情况和设备的型号有关，请以设备的实际情况为准]{style="font-family:宋体"}]{#struct_0_x1984_13510_1541128818}[。]{style="font-family:宋体"}
+本命令的缺省情况和设备的型号有关，请以设备的实际情况为准。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1990662003}
+【视图】
 
-[[IS-IS IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_x913113255}[单播地址族视图]{style="font-family:宋体"}[/IS-IS IPv4]{lang="EN-US"}[单播拓扑视图]{style="font-family:宋体"}
+IS-IS IPv4单播地址族视图/IS-IS IPv4单播拓扑视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1466339265}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_862825840}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x255331710}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1747418510}
+【参数】
 
-[*[number]{lang="EN-US"}*]{#struct_0_x1984_13510_1380771882}[：引入]{style="font-family:宋体"}[Level1/Level2]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[路由最大条数。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[number*]：引入Level1/Level2的IPv4路由最大条数。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1441076316}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_784191774}[配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[引入]{style="font-family:宋体"}[Level1/Level2]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[路由最大条数为]{style="font-family:宋体"}[1000]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置IS-IS进程1引入Level1/Level2的IPv4路由最大条数为1000。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_711821928}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv4]{lang="EN-US"}
+Sysname-isis-1 address-family ipv4
 
-[\[Sysname-isis-1-ipv4\] import-route limit 1000]{lang="EN-US"}
+Sysname-isis-1-ipv4 import-route limit 1000
 
-[]{#struct_0_x1984_13510_x1874436109}[]{#_Toc302996870}[【相关命令】]{style="font-family:黑体"}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[import-route]{lang="EN-US"}**]{#struct_0_x1984_13510_856377767}
-:::
-
-::: {#1179077140 .myid}
-[]{#_Toc404788382}[]{#struct_0_x1984_13510_1476435337}
+·**import-route**
 
 **IS-IS \-- IS-IS配置命令 \-- isis**
 
 ------------------------------------------------------------------------
 
-[**[isis]{lang="EN-US"}**]{#struct_0_x1984_13510_x1554541995}[命令用来创建一个]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程，并进入]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+**[isis**]命令用来创建一个IS-IS进程，并进入IS-IS视图。
 
-[**[undo isis]{lang="EN-US"}**]{#struct_0_x1984_13510_1495913033}[命令用来删除]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程。]{style="font-family:宋体"}
+**[undo isis**]命令用来删除IS-IS进程。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_453310900}
+【命令】
 
-[**[isis]{lang="EN-US"}**[ \[ *process-id* \] \[ **vpn-instance** *vpn-instance-name* \]]{lang="EN-US"}]{#struct_0_x1984_13510_x1343082509}
+**[isis** [ *process-id*   **vpn-instance** *vpn-instance-name* ]]
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1984_13510_x1466732481}**[isis]{lang="EN-US"}[ ]{lang="EN-US"}**[\[ *process-id* \]]{lang="EN-US"}
+**[undo **]**isis** *process-id*
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1618926346}
+【缺省情况】
 
-[[系统没有运行任何]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_559803703}[进程。]{style="font-family:宋体"}
+系统没有运行任何IS-IS进程。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1643135930}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x317126386}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_430422856}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1205292025}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_78434148}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1466666945}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_x1984_13510_2077598512}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535，缺省值为1。
 
-[**[vpn-instance]{lang="EN-US"}***[ vpn-instance-name]{lang="EN-US"}*]{#struct_0_x1984_13510_x1979874352}[：指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[所属的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[。]{style="font-family:宋体"}*[vpn-instance-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果未指定本参数，则表示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[位于公网中。]{style="font-family:宋体"}
+**[vpn-instance*** vpn-instance-name*]：指定IS-IS所属的VPN。*vpn-instance-name*表示MPLS L3VPN的VPN实例名称，为1～31个字符的字符串，区分大小写。如果未指定本参数，则表示IS-IS位于公网中。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1092955674}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x455491842}[创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[，配置网络实体名称，其中系统]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[0000.0000.0002]{lang="EN-US"}[，区域]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[01.0001]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 创建IS-IS进程1，配置网络实体名称，其中系统ID为0000.0000.0002，区域ID为01.0001。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_1245478386}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] network-entity 01.0001.0000.0000.0002.00]{lang="EN-US"}
+Sysname-isis-1 network-entity 01.0001.0000.0000.0002.00
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1539315662}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}]{#struct_0_x1984_13510_x1466601409}**[isis]{lang="EN-US"}[ enable]{lang="EN-US"}**
+·**isis enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[network-entity]{lang="EN-US"}**]{#struct_0_x1984_13510_x425787229}
-:::
-
-::: {#1285146241 .myid}
-[]{#_Toc404788383}[]{#struct_0_x1984_13510_x216437786}[]{#_Toc353884899}
+·**network-entity**
 
 **IS-IS \-- IS-IS配置命令 \-- isis authentication send-only**
 
 ------------------------------------------------------------------------
 
-[**[isis authentication send-only]{lang="EN-US"}**]{#struct_0_x1984_13510_x216372250}[命令用来配置对收到的]{style="font-family:
-宋体"}[Hello]{lang="EN-US"}[报文忽略认证信息检查。]{style="font-family:
-宋体"}
+**[isis authentication send-only**]命令用来配置对收到的Hello报文忽略认证信息检查。
 
-[**[undo]{lang="EN-US"}[ isis authentication send-only]{lang="EN-US"}**]{#struct_0_x1984_13510_x216306714}[命令用来取消该配置。]{style="font-family:宋体"}
+**[undo isis authentication send-only**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x216241178}
+【命令】
 
-[**[isis authentication send-only]{lang="EN-US"}**[ \[ **level-1** \| **level-2** \]]{lang="EN-US"}]{#struct_0_x1984_13510_x216831001}
+**[isis authentication send-only**[ [ **level-1** \| **level-2** ]]]
 
-[**[undo isis authentication send-only]{lang="EN-US"}**[ \[ **level-1** \| **level-2** \]]{lang="EN-US"}]{#struct_0_x1984_13510_x216765465}
+**[undo isis authentication send-only**[ [ **level-1** \| **level-2** ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1775841423}
+【缺省情况】
 
-[[如果配置了接口验证方式和验证密码，对收到的报文执行认证信息检查。]{style="font-family:宋体"}]{#struct_0_x1984_13510_x216699929}
+如果配置了接口验证方式和验证密码，对收到的报文执行认证信息检查。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x216634393}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x216568857}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x216503321}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x216437785}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x954185920}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x216372249}
+【参数】
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_x216306713}[：]{style="font-family:宋体"}[对收到的]{style="font-family:宋体"}[Level-1 Hello]{lang="EN-US"}[报文忽略认证信息检查。]{style="font-family:宋体"}
+**[level-1**]：对收到的Level-1 Hello报文忽略认证信息检查。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_x216241177}[：对收到的]{style="font-family:宋体"}[Level-2 Hello]{lang="EN-US"}[报文忽略认证信息检查]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[level-2**]：对收到的Level-2 Hello报文忽略认证信息检查。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x216831004}
+【使用指导】
 
-[[配置邻居关系验证方式和验证密码后，验证密码将会按照设定的方式封装到]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_x1984_13510_x216765468}[报文中，并对接收到的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文进行验证密码的检查，通过检查才会形成邻居关系]{style="font-family:宋体"}[。当需要更改密码时由于密码不匹配可能导致邻居关系中断。通过命令配置对]{style="font-family:宋体"}[收到的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}[忽略认证信息检查可保证邻居关系不中断，报文正常接收。]{style="font-family:宋体"}
+配置邻居关系验证方式和验证密码后，验证密码将会按照设定的方式封装到Hello报文中，并对接收到的Hello报文进行验证密码的检查，通过检查才会形成邻居关系。当需要更改密码时由于密码不匹配可能导致邻居关系中断。通过命令配置对收到的Hello报文忽略认证信息检查可保证邻居关系不中断，报文正常接收。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x216699932}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x216634396}[为接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[配置]{style="font-family:宋体"}[对收到]{style="font-family:宋体"}[Level-1 Hello]{lang="EN-US"}[报文忽略认证信息检查]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 为接口GigabitEthernet1/0/1配置对收到Level-1 Hello报文忽略认证信息检查。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x216568860}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] isis authentication send-only level-1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis authentication send-only level-1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x216503324}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[area-authentication send-only]{lang="EN-US"}**]{#struct_0_x1984_13510_248673451}
+·**area-authentication send-only**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[domain-authentication]{lang="EN-US"}**]{#struct_0_x1984_13510_x216437788}**[ send-only]{lang="EN-US"}**
+·**domain-authentication**** send-only**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[isis authentication]{lang="EN-US"}**]{#struct_0_x1984_13510_x216372252}**[-mode]{lang="EN-US"}**
-:::
-
-::: {#-1066909690 .myid}
-[]{#_Toc163546280}[]{#_Toc50204102}[]{#_Toc33866101}[]{#_Toc290886781}[]{#_Toc252200760}[]{#_Toc404788384}[]{#struct_0_x1984_13510_2130545890}[]{#_Toc297189173}[]{#_Toc290886779}[]{#_Toc252200758}[]{#_Toc163546277}[]{#_Toc50204100}[]{#_Toc33866099}[]{#_Toc290911758}
+·**isis authentication****-mode**
 
 **IS-IS \-- IS-IS配置命令 \-- isis authentication-mode**
 
 ------------------------------------------------------------------------
 
-[**[isis authentication-mode]{lang="EN-US"}**]{#struct_0_x1984_13510_x2031107667}[命令用来配置邻居关系验证方式和验证密码。]{style="font-family:
-宋体"}
+**[isis authentication-mode**]命令用来配置邻居关系验证方式和验证密码。
 
-[**[undo isis authentication-mode]{lang="EN-US"}**]{#struct_0_x1984_13510_302792761}[命令用来取消该配置。]{style="font-family:
-宋体"}
+**[undo isis authentication-mode**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1171174813}
+【命令】
 
-[**[isis authentication-mode]{lang="EN-US"}**[ { **gca** *key-id* { **hmac-sha-1** \| **hmac-sha-224** \| **hmac-sha-256** \| **hmac-sha-384** \| **hmac-sha-512** } \| **md5** \| **simple** } { **cipher** *cipher-string* \| **plain** *plain-string* } \[ **level-1** \| **level-2** \] \[ **ip** \| **osi** \]]{lang="EN-US"}]{#struct_0_x1984_13510_x216306716}
+**[isis authentication-mode**[ { **gca** *key-id* { **hmac-sha-1** \| **hmac-sha-224** \| **hmac-sha-256** \| **hmac-sha-384** \| **hmac-sha-512** } \| **md5** \| **simple** } { **cipher** *cipher-string* \| **plain** *plain-string* } [ **level-1** \| **level-2**   **ip** \| **osi** ]]]
 
-[**[undo isis authentication-mode]{lang="EN-US"}**[ \[ **level-1** \| **level-2** \]]{lang="EN-US"}]{#struct_0_x1984_13510_x2139582449}
+**[undo isis authentication-mode**[ [ **level-1** \| **level-2** ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1616557866}
+【缺省情况】
 
-[[接口没有配置邻居关系验证方式和验证密码。]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1466535873}
+接口没有配置邻居关系验证方式和验证密码。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1919957948}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1496504083}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_520106204}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1074452052}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_135952543}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_495115622}
+【参数】
 
-[**[gca]{lang="EN-US"}**]{#struct_0_x1984_13510_x216831003}[：]{style="font-family:宋体"}[GCA]{lang="EN-US"}[验证模式（]{style="font-family:宋体"}[Generic Cryptographic Authentication]{lang="EN-US"}[）。]{style="font-family:宋体"}
+**[gca**]：GCA验证模式（Generic Cryptographic Authentication）。
 
-[*[key-id]{lang="EN-US"}*]{#struct_0_x1984_13510_x216765467}[：唯一标识一个认证项（]{style="font-family:宋体"}[SA]{lang="EN-US"}[），取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。发送方将]{style="font-family:宋体"}[Key ID]{lang="EN-US"}[放入认证]{style="font-family:宋体"}[TLV]{lang="EN-US"}[中，接收方根据报文中提取的]{style="font-family:宋体"}[Key ID]{lang="EN-US"}[选择]{style="font-family:宋体"}[SA]{lang="EN-US"}[对报文进行认证。]{style="font-family:宋体"}
+*[key-id*]：唯一标识一个认证项（SA），取值范围为1～65535。发送方将Key ID放入认证TLV中，接收方根据报文中提取的Key ID选择SA对报文进行认证。
 
-[**[hmac-sha-1]{lang="EN-US"}**]{#struct_0_x1984_13510_x216699931}[：支持]{style="font-family:宋体"}[HMAC-SHA-1]{lang="EN-US"}[算法。]{style="font-family:宋体"}
+**[hmac-sha-1**]：支持HMAC-SHA-1算法。
 
-[**[hmac-sha-224]{lang="EN-US"}**]{#struct_0_x1984_13510_x216634395}[：支持]{style="font-family:宋体"}[HMAC-SHA-224]{lang="EN-US"}[算法。]{style="font-family:宋体"}
+**[hmac-sha-224**]：支持HMAC-SHA-224算法。
 
-[**[hmac-sha-256]{lang="EN-US"}**]{#struct_0_x1984_13510_x216568859}[：支持]{style="font-family:宋体"}[HMAC-SHA-256]{lang="EN-US"}[算法。]{style="font-family:宋体"}
+**[hmac-sha-256**]：支持HMAC-SHA-256算法。
 
-[**[hmac-sha-384]{lang="EN-US"}**]{#struct_0_x1984_13510_242120539}[：支持]{style="font-family:宋体"}[HMAC-SHA-384]{lang="EN-US"}[算法。]{style="font-family:宋体"}
+**[hmac-sha-384**]：支持HMAC-SHA-384算法。
 
-[**[hmac-sha-512]{lang="EN-US"}**]{#struct_0_x1984_13510_x216503323}[：支持]{style="font-family:宋体"}[HMAC-SHA-512]{lang="EN-US"}[算法。]{style="font-family:宋体"}
+**[hmac-sha-512**]：支持HMAC-SHA-512算法。
 
-[**[md5]{lang="FR"}**]{#struct_0_x1984_13510_x616265735}[：]{style="font-family:宋体"}[MD5]{lang="FR"}[验证模式]{style="font-family:
-宋体"}[。]{style="font-family:宋体"}
+**[md5**]：MD5验证模式。
 
-[**[simple]{lang="FR"}**]{#struct_0_x1984_13510_2112617620}[：]{style="font-family:宋体"}[简单验证模式。]{style="font-family:宋体"}
+**[simple**]：简单验证模式。
 
-[**[cipher]{lang="EN-US"}**]{#struct_0_x1984_13510_162802178}[：表示输入的密码为密文。]{style="font-family:宋体"}
+**[cipher**]：表示输入的密码为密文。
 
-[*[cipher-string]{lang="EN-US"}*]{#struct_0_x1984_13510_x227825550}[：表示设置的密文密码，为]{style="font-family:宋体"}[33]{lang="EN-US"}[～]{style="font-family:宋体"}[53]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[cipher-string*]：表示设置的密文密码，为33～53个字符的字符串，区分大小写。
 
-[**[plain]{lang="EN-US"}**]{#struct_0_x1984_13510_x2078891002}[：表示输入的密码为明文。]{style="font-family:宋体"}
+**[plain**]：表示输入的密码为明文。
 
-[*[plain-string]{lang="EN-US"}*]{#struct_0_x1984_13510_x503998193}[：表示设置的明文密码，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[16]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[plain-string*]：表示设置的明文密码，为1～16个字符的字符串，区分大小写。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_x1992845659}[：为]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[配置认证密码。]{style="font-family:宋体"}
+**[level-1**]：为Level-1配置认证密码。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_x1077425363}[：为]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[配置认证密码。]{style="font-family:宋体"}
+**[level-2**]：为Level-2配置认证密码。
 
-[]{#_Hlt7610787}[**[ip]{lang="EN-US"}**]{#struct_0_x1984_13510_x564764369}[：检查]{style="font-family:宋体"}[SNP]{lang="EN-US"}[、]{style="font-family:宋体"}[LSP]{lang="EN-US"}[中]{style="font-family:宋体"}[IP]{lang="EN-US"}[的相应字段的配置内容。]{style="font-family:宋体"}
+**[ip**]：检查SNP、LSP中IP的相应字段的配置内容。
 
-[**[osi]{lang="EN-US"}**]{#struct_0_x1984_13510_x1465880513}[：检查]{style="font-family:宋体"}[SNP]{lang="EN-US"}[、]{style="font-family:宋体"}[LSP]{lang="EN-US"}[中]{style="font-family:宋体"}[OSI]{lang="EN-US"}[的相应字段的配置内容。]{style="font-family:宋体"}
+**[osi**]：检查SNP、LSP中OSI的相应字段的配置内容。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2034087389}
+【使用指导】
 
-[[配置邻居关系验证方式和验证密码后，验证密码将会按照设定的方式封装到]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_x1984_13510_x940463423}[报文中，并对接收到的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文进行验证密码的检查，通过检查才会形成邻居关系，否则将不会形成邻居关系。]{style="font-family:宋体"}
+配置邻居关系验证方式和验证密码后，验证密码将会按照设定的方式封装到Hello报文中，并对接收到的Hello报文进行验证密码的检查，通过检查才会形成邻居关系，否则将不会形成邻居关系。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x1984_13510_x27157323}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[两台路由器要形成邻居关系必须配置相同的验证方式和验证密码。]{style="font-family:宋体"}]{#struct_0_x1984_13510_x636258566}
+·两台路由器要形成邻居关系必须配置相同的验证方式和验证密码。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[以明文或密文方式设置的验证密码，均以密文的方式保存在配置文件中。]{style="font-family:宋体"}]{#struct_0_x1984_13510_22644418}
+·以明文或密文方式设置的验证密码，均以密文的方式保存在配置文件中。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果没有指定]{lang="EN-US" style="font-family:宋体"}**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_x64374707}[或]{lang="EN-US" style="font-family:宋体"}**[level-2]{lang="EN-US"}**[参数，将同时为]{lang="EN-US" style="font-family:宋体"}**[level-1]{lang="EN-US"}**[和]{lang="EN-US" style="font-family:宋体"}**[level-2]{lang="EN-US"}**[的]{lang="EN-US" style="font-family:宋体"}[Hello]{lang="EN-US"}[报文配置验证方式及验证密码。]{lang="EN-US" style="font-family:宋体"}
+·如果没有指定**level-1**或**level-2**参数，将同时为**level-1**和**level-2**的Hello报文配置验证方式及验证密码。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果没有指定]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1240544662}**[ip]{lang="EN-US"}**[或]{style="font-family:宋体"}**[osi]{lang="EN-US"}**[参数，将检查]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文中]{style="font-family:宋体"}[OSI]{lang="EN-US"}[的相应字段的配置内容。]{style="font-family:宋体"}
+·如果没有指定**ip**或**osi**参数，将检查Hello报文中OSI的相应字段的配置内容。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[认证密码选用]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1763007679}**[ip]{lang="EN-US"}**[或]{style="font-family:宋体"}**[osi]{lang="EN-US"}**[不受实际的网络环境影响。]{style="font-family:宋体"}
+·认证密码选用**ip**或**osi**不受实际的网络环境影响。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[参数]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1466470336}**[level-1]{lang="EN-US"}**[和]{style="font-family:宋体"}**[level-2]{lang="EN-US"}**[的支持情况和产品相关，具体请以设备的实际情况为准。]{style="font-family:宋体"}
+·参数**level-1**和**level-2**的支持情况和产品相关，具体请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[必须先使用]{lang="EN-US" style="font-family:宋体"}**[isis enable]{lang="EN-US"}**]{#struct_0_x1984_13510_x276085124}[命令]{lang="EN-US" style="font-family:宋体"}[在接口上使能]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能才能进行参数]{lang="EN-US" style="font-family:宋体"}**[level-1]{lang="EN-US"}**[和]{lang="EN-US" style="font-family:宋体"}**[level-2]{lang="EN-US"}**[的配置]{lang="EN-US" style="font-family:宋体"}[。]{lang="EN-US" style="font-family:
-宋体"}
+·必须先使用**isis enable**命令在接口上使能IS-IS功能才能进行参数**level-1**和**level-2**的配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1804509330}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_x1088938692}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1680779024}[为接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[配置邻居关系采用简单明文验证模式，验证密码为]{style="font-family:宋体"}[123456]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 为接口GigabitEthernet1/0/1配置邻居关系采用简单明文验证模式，验证密码为123456。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x331069743}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] isis authentication-mode simple plain 123456]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis authentication-mode simple plain 123456
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_113250792}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1466404800}[为]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[接口配置邻居关系采用简单明文验证模式，验证[]{#_Hlt9926332}密码为]{style="font-family:宋体"}[123456]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 为Vlan-interface10接口配置邻居关系采用简单明文验证模式，验证密码为123456。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_1090531556}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] isis authentication-mode simple plain 123456]{lang="EN-US"}
+Sysname-Vlan-interface10 isis authentication-mode simple plain 123456
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2143362196}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[area-authentication-mode]{lang="EN-US"}**]{#struct_0_x1984_13510_x558534042}
+·**area-authentication-mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[domain-authentication-mode]{lang="EN-US"}**]{#struct_0_x1984_13510_x1227743231}
+·**domain-authentication-mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[isis authentication send-only]{lang="EN-US"}**]{#struct_0_x1984_13510_x216306715}
-:::
-
-::::: {#1835630031 .myid}
-[]{#_Toc297189174}[]{#_Toc404788385}[]{#struct_0_x1984_13510_857217255}[]{#_Toc303839449}[]{#_Toc252200759}[]{#_Toc209857742}
+·**isis authentication send-only**
 
 **IS-IS \-- IS-IS配置命令 \-- isis bfd enable**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IS-IS命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1984_13510_x1866450967}
-:::
+![说明](IS-IS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1984_13510_x802655103}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[isis bfd enable**]命令用来使能IS-IS的BFD功能。
 
-[**[isis bfd enable]{lang="EN-US"}**]{#struct_0_x1984_13510_x1466339264}[命令用来使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo** **isis** **bfd enable**]命令用来关闭IS-IS的BFD功能。
 
-[**[undo]{lang="EN-US"}**[ **isis** **bfd enable**]{lang="EN-US"}]{#struct_0_x1984_13510_x703258101}[命令用来关闭]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2127063657}
+**[isis bfd enable**]
 
-[**[isis bfd enable]{lang="EN-US"}**]{#struct_0_x1984_13510_1252452226}
+**[undo**]**isis bfd enable**
 
-[**[undo]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x1984_13510_x472630439}**[isis]{lang="EN-US"}[ bfd enable]{lang="EN-US"}**
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x876608834}
+IS-IS的BFD功能处于关闭状态。
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x674996762}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[功能处于关闭状态。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1915928195}
+接口视图
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1466273728}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_854447246}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1460243518}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x2136623971}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x770503652}
+·路由应用
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_855537405}
+\# 使能接口GigabitEthernet1/0/1的IS-IS BFD功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1299747693}[使能接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的]{style="font-family:宋体"}[IS-IS BFD]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x1466732480}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis enable
 
-[\[Sysname-GigabitEthernet1/0/1\] isis enable]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis bfd enable
 
-[\[Sysname-GigabitEthernet1/0/1\] isis bfd enable]{lang="EN-US"}
+·交换应用
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_52842405}
+\# 使能接口Vlan-interface11的IS-IS BFD功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_945645363}[使能接口]{style="font-family:宋体"}[Vlan-interface11]{lang="EN-US"}[的]{style="font-family:宋体"}[IS-IS BFD]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x2025266075}
+Sysname interface vlan-interface 11
 
-[\[Sysname\] interface vlan-interface 11]{lang="EN-US"}
+Sysname-Vlan-interface11 isis enable
 
-[\[Sysname-Vlan-interface11\] isis enable]{lang="EN-US"}
-
-[\[Sysname-Vlan-interface11\] isis bfd enable]{lang="EN-US"}
-:::::
-
-::: {#-1226687879 .myid}
-[]{#_Toc404788386}[]{#struct_0_x1984_13510_x836802717}
+Sysname-Vlan-interface11 isis bfd enable
 
 **IS-IS \-- IS-IS配置命令 \-- isis circuit-level**
 
 ------------------------------------------------------------------------
 
-[**[isis circuit-level]{lang="EN-US"}**]{#struct_0_x1984_13510_2128530508}[命令用来配置接口的链路邻接关系类型。]{style="font-family:宋体"}
+**[isis circuit-level**]命令用来配置接口的链路邻接关系类型。
 
-[**[undo isis circuit-level]{lang="EN-US"}**]{#struct_0_x1984_13510_1935288194}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo isis circuit-level**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_116570668}
+【命令】
 
-[**[isis circuit-level]{lang="EN-US"}**[ \[ **level-1** \| **level-1-2** \| **level-2** \]]{lang="EN-US"}]{#struct_0_x1984_13510_x1466666944}
+**[isis circuit-level**[ [ **level-1** \| **level-1-2** \| **level-2** ]]]
 
-[**[undo]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x1984_13510_x651284843}**[isis]{lang="EN-US"}[ circuit-level]{lang="EN-US"}**
+**[undo**]**isis circuit-level**
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_966139766}
+【缺省情况】
 
-[[接口既可以建立]{style="font-family:宋体"}[Level-1]{lang="EN-US"}]{#struct_0_x1984_13510_485073461}[的邻接关系，也可以建立]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的邻接关系。]{style="font-family:宋体"}
+接口既可以建立Level-1的邻接关系，也可以建立Level-2的邻接关系。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1512652294}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x246867019}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1212888374}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_888740368}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1466601408}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1140296712}
+【参数】
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_654805109}[：配置本接口链路邻接关系类型为]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[level-1**]：配置本接口链路邻接关系类型为Level-1。
 
-[**[level-1-2]{lang="EN-US"}**]{#struct_0_x1984_13510_x1766679822}[：配置本接口链路邻接关系类型为]{style="font-family:宋体"}[Level-1-2]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[level-1-2**]：配置本接口链路邻接关系类型为Level-1-2。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_1478367814}[：配置本接口链路邻接关系类型为]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[level-2**]：配置本接口链路邻接关系类型为Level-2。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x974029774}
+【使用指导】
 
-[[如果路由器类型是]{style="font-family:宋体"}[Level-1]{lang="EN-US"}]{#struct_0_x1984_13510_372697125}[（]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[），接口的链路类型只能为]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[（]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[），因此仅当路由器类型是]{style="font-family:宋体"}[Level-1-2]{lang="EN-US"}[时，才需要通过配置接口的链路邻接关系类型来限制接口上所能建立的邻接关系，让接口只发送和接收]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[（]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[）类型的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+如果路由器类型是Level-1（Level-2），接口的链路类型只能为Level-1（Level-2），因此仅当路由器类型是Level-1-2时，才需要通过配置接口的链路邻接关系类型来限制接口上所能建立的邻接关系，让接口只发送和接收Level-1（Level-2）类型的Hello报文。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1864458516}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_x1466535872}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_808925407}[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[和同一区域内的非骨干路由器相连，配置接口的链路邻接关系类型为]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[，禁止发送和接收]{style="font-family:宋体"}[Level-2 Hello]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+\# 接口GigabitEthernet1/0/1和同一区域内的非骨干路由器相连，配置接口的链路邻接关系类型为Level-1，禁止发送和接收Level-2 Hello报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x2079759448}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] isis enable]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis enable
 
-[\[Sysname-GigabitEthernet1/0/1\] isis circuit-level level-1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis circuit-level level-1
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_x192692898}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_655441208}[接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[和同一区域内的非骨干路由器相连，配置接口的链路邻接关系类型为]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[，禁止发送和接收]{style="font-family:宋体"}[Level-2 Hello]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+\# 接口Vlan-interface10和同一区域内的非骨干路由器相连，配置接口的链路邻接关系类型为Level-1，禁止发送和接收Level-2 Hello报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x933946007}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] isis enable]{lang="EN-US"}
+Sysname-Vlan-interface10 isis enable
 
-[\[Sysname-Vlan-interface10\] isis circuit-level level-1]{lang="EN-US"}
+Sysname-Vlan-interface10 isis circuit-level level-1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_643955138}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[is-level]{lang="EN-US"}**]{#struct_0_x1984_13510_x1465946048}
-:::
-
-::: {#982519246 .myid}
-[]{#_Toc404788387}[]{#struct_0_x1984_13510_1728886119}[]{#_Toc290886782}[]{#_Toc252200761}[]{#_Toc163546279}[]{#_Toc94930862}[]{#_Toc94586594}
+·**is-level**
 
 **IS-IS \-- IS-IS配置命令 \-- isis circuit-type p2p**
 
 ------------------------------------------------------------------------
 
-[**[isis circuit-type p2p]{lang="EN-US"}**]{#struct_0_x1984_13510_1128352162}[命令用来配置接口的网络类型为]{style="font-family:宋体"}[P2P]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[isis circuit-type p2p**]命令用来配置接口的网络类型为P2P。
 
-[**[undo isis circuit-type]{lang="EN-US"}**]{#struct_0_x1984_13510_x444523209}[命令用来取消配置接口的网络类型为]{style="font-family:宋体"}[P2P]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo isis circuit-type**]命令用来取消配置接口的网络类型为P2P。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_319855764}
+【命令】
 
-[**[isis circuit-type p2p]{lang="EN-US"}**]{#struct_0_x1984_13510_1777321255}
+**[isis circuit-type p2p**]
 
-[**[undo]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x1984_13510_2040643729}**[isis]{lang="EN-US"}[ circuit-type]{lang="EN-US"}**
+**[undo**]**isis circuit-type**
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1639432954}
+【缺省情况】
 
-[[接口网络类型根据物理接口决定。（]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1984_13510_x1465880512}[接口网络类型为]{style="font-family:宋体"}[Broadcast]{lang="EN-US"}[。）]{style="font-family:宋体"}
+接口网络类型根据物理接口决定。（VLAN接口网络类型为Broadcast。）
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x694795966}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x486505446}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x244544554}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_51527368}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x669886155}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1490607462}
+【使用指导】
 
-[[接口网络类型不同，其工作机制也略微不同，如：当网络类型为广播网时，需要选举]{style="font-family:宋体"}[DIS]{lang="EN-US"}]{#struct_0_x1984_13510_696372480}[、通过泛洪]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文来实现]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步，当网络类型为]{style="font-family:宋体"}[P2P]{lang="EN-US"}[时不需要选举]{style="font-family:宋体"}[DIS]{lang="EN-US"}[，]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步机制也不同。]{style="font-family:宋体"}
+接口网络类型不同，其工作机制也略微不同，如：当网络类型为广播网时，需要选举DIS、通过泛洪CSNP报文来实现LSDB同步，当网络类型为P2P时不需要选举DIS，LSDB同步机制也不同。
 
-[[当只有两台路由器接入到同一个广播网时，通过将接口网络类型配置为]{style="font-family:宋体"}[P2P]{lang="EN-US"}]{#struct_0_x1984_13510_x1466470339}[可以使]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[按照]{style="font-family:宋体"}[P2P]{lang="EN-US"}[而不是广播网的工作机制运行，避免]{style="font-family:宋体"}[DIS]{lang="EN-US"}[选举以及]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[的泛洪，既可以节省网络带宽，又可以加快网络的收敛速度。]{style="font-family:宋体"}
+当只有两台路由器接入到同一个广播网时，通过将接口网络类型配置为P2P可以使IS-IS按照P2P而不是广播网的工作机制运行，避免DIS选举以及CSNP的泛洪，既可以节省网络带宽，又可以加快网络的收敛速度。
 
-[[需要注意的是，仅当接口的网络类型为广播网且只有两台路由器接入该广播网时才需要进行该项配置且两台路由器都要进行此项配置。]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1485938705}
+需要注意的是，仅当接口的网络类型为广播网且只有两台路由器接入该广播网时才需要进行该项配置且两台路由器都要进行此项配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x176545361}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_x1480761293}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1726141078}[配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[为]{style="font-family:宋体"}[P2P]{lang="EN-US"}[类型。]{style="font-family:宋体"}
+\# 配置接口GigabitEthernet1/0/1为P2P类型。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_1692947062}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] isis enable]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis enable
 
-[\[Sysname-GigabitEthernet1/0/1\] isis circuit-type p2p]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis circuit-type p2p
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_1595001894}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x121445366}[配置接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[为]{style="font-family:宋体"}[P2P]{lang="EN-US"}[类型。]{style="font-family:宋体"}
+\# 配置接口Vlan-interface10为P2P类型。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x1466404803}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] isis enable]{lang="EN-US"}
+Sysname-Vlan-interface10 isis enable
 
-[\[Sysname-Vlan-interface10\] isis circuit-type p2p]{lang="EN-US"}
-:::
-
-::: {#-951638787 .myid}
-[]{#_Toc404788388}[]{#struct_0_x1984_13510_x1638351799}
+Sysname-Vlan-interface10 isis circuit-type p2p
 
 **IS-IS \-- IS-IS配置命令 \-- isis cost**
 
 ------------------------------------------------------------------------
 
-[**[isis cost]{lang="EN-US"}**]{#struct_0_x1984_13510_1723375600}[命令用来配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[接口的链路开销值。]{style="font-family:宋体"}
+**[isis cost**]命令用来配置IS-IS接口的链路开销值。
 
-[**[undo isis cost]{lang="EN-US"}**]{#struct_0_x1984_13510_354407985}[命令用来取消该配置。]{style="font-family:宋体"}
+**[undo isis cost**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_493638851}
+【命令】
 
-[**[isis cost]{lang="EN-US"}**[ *value* \[ **level-1** \| **level-2** \]]{lang="EN-US"}]{#struct_0_x1984_13510_750232784}
+**[isis cost**[ *value* [ **level-1** \| **level-2** ]]]
 
-[**[undo]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x1984_13510_1590585303}**[isis]{lang="EN-US"}[ cost]{lang="EN-US"}**[ \[ **level-1** \| **level-2** \]]{lang="EN-US"}
+**[undo**]**isis cost**[ [ **level-1** \| **level-2** ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_51885530}
+【缺省情况】
 
-[[没有配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x1466339267}[接口的链路开销值。]{style="font-family:宋体"}
+没有配置IS-IS接口的链路开销值。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2025625254}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1984_13510_1273350613}[接口]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[单播拓扑视图]{style="font-family:宋体"}
+接口视图/接口IPv4单播拓扑视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1192178987}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x482298962}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1870028950}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_772047091}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_x1984_13510_x674752138}[：链路开销值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[16777215]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[value*]：链路开销值，取值范围为1～16777215。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_x1466273731}[：配置在计算]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[路由时使用的链路开销值。]{style="font-family:宋体"}
+**[level-1**]：配置在计算Level-1路由时使用的链路开销值。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_2064366363}[：配置在计算]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[路由时使用的链路开销值。]{style="font-family:宋体"}
+**[level-2**]：配置在计算Level-2路由时使用的链路开销值。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_279970376}
+【使用指导】
 
-[[如果没有指定]{style="font-family:宋体"}**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_x1755648447}[或者]{style="font-family:宋体"}**[level-2]{lang="EN-US"}**[，将同时配置计算]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[路由时使用的链路开销值。]{style="font-family:宋体"}
+如果没有指定**level-1**或者**level-2**，将同时配置计算Level-1和Level-2路由时使用的链路开销值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2086365411}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_28291412}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x213608356}[配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的链路开销值为]{style="font-family:宋体"}[5]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置接口GigabitEthernet1/0/1上Level-2的链路开销值为5。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x1466732483}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] isis cost 5 level-2]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis cost 5 level-2
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_x1513241536}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x141432656}[配置接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[上]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的链路开销值为]{style="font-family:宋体"}[5]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置接口Vlan-interface10上Level-2的链路开销值为5。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x2082920421}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] isis cost 5 level-2]{lang="EN-US"}
+Sysname-Vlan-interface10 isis cost 5 level-2
 
-[]{#_Toc163546282}[]{#_Toc50204103}[]{#_Toc33866102}[]{#_Toc310604347}[]{#_Toc290886784}[]{#_Toc252200763}[]{#_Toc163546281}[]{#_Toc94930864}[]{#_Toc94586596}[]{#_Toc60036214}[]{#_Toc53707158}[]{#_Toc53487853}[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_517282140}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[auto-cost enable]{lang="EN-US"}**]{#struct_0_x1984_13510_772124160}
+·**auto-cost enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[bandwidth-reference]{lang="EN-US"}**]{#struct_0_x1984_13510_1652985522}
-:::
-
-::: {#-1251407350 .myid}
-[]{#_Toc404788389}[]{#struct_0_x1984_13510_824433892}
+·**bandwidth-reference**
 
 **IS-IS \-- IS-IS配置命令 \-- isis dis-name**
 
 ------------------------------------------------------------------------
 
-[**[isis dis-name]{lang="EN-US"}**]{#struct_0_x1984_13510_x1466666947}[命令用来在]{style="font-family:宋体"}[DIS]{lang="EN-US"}[上配置局域网名称来代表这个广播网中的伪节点。]{style="font-family:宋体"}
+**[isis dis-name**]命令用来在DIS上配置局域网名称来代表这个广播网中的伪节点。
 
-[**[undo isis dis-name]{lang="EN-US"}**]{#struct_0_x1984_13510_x1054569370}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo isis dis-name**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x443538651}
+【命令】
 
-[**[isis dis-name]{lang="EN-US"}**[ *symbolic-name*]{lang="EN-US"}]{#struct_0_x1984_13510_388478476}
+**[isis dis-name** *symbolic-name*]
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1984_13510_x483114623}**[isis]{lang="EN-US"}[ dis-name]{lang="EN-US"}**
+**[undo **]**isis dis-name**
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1186207441}
+【缺省情况】
 
-[[没有配置本地局域网名称。]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1331178103}
+没有配置本地局域网名称。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2094545100}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_1480043040}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1466601411}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x69491333}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1483720889}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1241872137}
+【参数】
 
-[*[symbolic-name]{lang="EN-US"}*]{#struct_0_x1984_13510_318790041}[：本地局域网的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[64]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+*[symbolic-name*]：本地局域网的名称，为1～64个字符的字符串，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1676448310}
+【使用指导】
 
-[[该命令只有在使能了动态主机名映射功能的路由器上配置才能有效，在点到点链路的接口上配置无效。]{style="font-family:宋体"}]{#struct_0_x1984_13510_x654173797}
+该命令只有在使能了动态主机名映射功能的路由器上配置才能有效，在点到点链路的接口上配置无效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x858614741}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_x1466535875}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x757158534}[配置本地局域网的名称为"]{style="font-family:宋体"}[LOCALAREA]{lang="EN-US"}["。]{style="font-family:宋体"}
+\# 配置本地局域网的名称为"LOCALAREA"。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x1617062178}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] isis dis-name LOCALAREA]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis dis-name LOCALAREA
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_1057511859}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_579186640}[配置本地局域网的名称为"]{style="font-family:宋体"}[LOCALAREA]{lang="EN-US"}["。]{style="font-family:宋体"}
+\# 配置本地局域网的名称为"LOCALAREA"。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x454217866}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] isis dis-name LOCALAREA]{lang="EN-US"}
+Sysname-Vlan-interface10 isis dis-name LOCALAREA
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1285603748}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display ]{lang="EN-US"}**]{#struct_0_x1984_13510_x1465946051}**[isis]{lang="EN-US"}[ name-table]{lang="EN-US"}**
+·**display ****isis name-table**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[is-name]{lang="EN-US"}**]{#struct_0_x1984_13510_x193493718}
-:::
-
-::: {#-829126747 .myid}
-[]{#_Toc404788390}[]{#struct_0_x1984_13510_x1716402093}
+·**is-name**
 
 **IS-IS \-- IS-IS配置命令 \-- isis dis-priority**
 
 ------------------------------------------------------------------------
 
-[**[isis dis-priority]{lang="EN-US"}**]{#struct_0_x1984_13510_1237987683}[命令用来配置接口在不同层次的]{style="font-family:宋体"}[DIS]{lang="EN-US"}[优先级。]{style="font-family:宋体"}
+**[isis dis-priority**]命令用来配置接口在不同层次的DIS优先级。
 
-[**[undo isis dis-priority]{lang="EN-US"}**]{#struct_0_x1984_13510_1159837227}[命令用来取消该配置。]{style="font-family:宋体"}
+**[undo isis dis-priority**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_627569614}
+【命令】
 
-[**[isis dis-priority]{lang="EN-US"}**[ *value* \[ **level-1** \| **level-2** \]]{lang="EN-US"}]{#struct_0_x1984_13510_x2075143686}
+**[isis dis-priority**[ *value* [ **level-1** \| **level-2** ]]]
 
-[**[undo]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x1984_13510_x39904205}**[isis]{lang="EN-US"}[ dis-priority]{lang="EN-US"}**[ \[ **level-1** \| **level-2** \]]{lang="EN-US"}
+**[undo**]**isis dis-priority**[ [ **level-1** \| **level-2** ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1465880515}
+【缺省情况】
 
-[[接口]{style="font-family:宋体"}[Level-1]{lang="EN-US"}]{#struct_0_x1984_13510_1227518335}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[级别]{style="font-family:宋体"}[DIS]{lang="EN-US"}[优先级为]{style="font-family:宋体"}[64]{lang="EN-US"}[。]{style="font-family:宋体"}
+接口Level-1和Level-2级别DIS优先级为64。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1749624812}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_323353213}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_212727351}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1328514287}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1801347289}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_705921494}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_x1984_13510_x756598559}[：配置接口]{style="font-family:宋体"}[DIS]{lang="EN-US"}[优先级，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[127]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[value*]：配置接口DIS优先级，取值范围为0～127。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_x1466470338}[：配置]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[级别]{style="font-family:宋体"}[DIS]{lang="EN-US"}[选举优先级。]{style="font-family:宋体"}
+**[level-1**]：配置Level-1级别DIS选举优先级。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_1242944650}[：配置]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[级别]{style="font-family:宋体"}[DIS]{lang="EN-US"}[选举优先级。]{style="font-family:宋体"}
+**[level-2**]：配置Level-2级别DIS选举优先级。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_593326152}
+【使用指导】
 
-[[如果不指定级别，将同时配置]{style="font-family:宋体"}[Level-1]{lang="EN-US"}]{#struct_0_x1984_13510_1804570556}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[级别]{style="font-family:宋体"}[DIS]{lang="EN-US"}[选举优先级。]{style="font-family:宋体"}
+如果不指定级别，将同时配置Level-1和Level-2级别DIS选举优先级。
 
-[[当网络类型为广播网时，]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x710991036}[需要选举]{style="font-family:宋体"}[DIS]{lang="EN-US"}[，]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[DIS]{lang="EN-US"}[是分别选举的，用户可以为不同级别的]{style="font-family:宋体"}[DIS]{lang="EN-US"}[选举配置不同的优先级，]{style="font-family:宋体"}[DIS]{lang="EN-US"}[优先级数值越高，被选中的可能性就越大；如果两台路由器]{style="font-family:宋体"}[DIS]{lang="EN-US"}[优先级相同，则]{style="font-family:宋体"}[SNPA]{lang="EN-US"}[（]{style="font-family:宋体"}[Subnetwork Point of Attachment]{lang="EN-US"}[，子网连接点）地址（广播网络中的]{style="font-family:宋体"}[SNPA]{lang="EN-US"}[地址是]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址）最大的路由器会被选中。]{style="font-family:宋体"}
+当网络类型为广播网时，IS-IS需要选举DIS，Level-1和Level-2的DIS是分别选举的，用户可以为不同级别的DIS选举配置不同的优先级，DIS优先级数值越高，被选中的可能性就越大；如果两台路由器DIS优先级相同，则SNPA（Subnetwork Point of Attachment，子网连接点）地址（广播网络中的SNPA地址是MAC地址）最大的路由器会被选中。
 
-[[在]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1697668711}[中并没有备份]{style="font-family:宋体"}[DIS]{lang="EN-US"}[的概念，优先级为]{style="font-family:宋体"}[0]{lang="EN-US"}[的路由器也可以参与选举]{style="font-family:宋体"}[DIS]{lang="EN-US"}[。]{style="font-family:宋体"}
+在IS-IS中并没有备份DIS的概念，优先级为0的路由器也可以参与选举DIS。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_642888595}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_244038031}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_540292785}[配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的]{style="font-family:宋体"}[Level-2 DIS]{lang="EN-US"}[优先级为]{style="font-family:宋体"}[127]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置接口GigabitEthernet1/0/1的Level-2 DIS优先级为127。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x1466404802}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] isis dis-priority 127 level-2]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis dis-priority 127 level-2
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_x72267858}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_713926265}[配置接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[的]{style="font-family:宋体"}[Level-2 DIS]{lang="EN-US"}[优先级为]{style="font-family:宋体"}[127]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置接口Vlan-interface10的Level-2 DIS优先级为127。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x1070144372}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] isis dis-priority 127 level-2]{lang="EN-US"}
-:::
-
-::: {#-1913845503 .myid}
-[]{#_Toc404788391}[]{#struct_0_x1984_13510_1992837377}[]{#_Toc163546283}[]{#_Toc50204104}[]{#_Toc33866103}[]{#_Toc131842023}[]{#_Toc131842774}[]{#_Toc131842024}[]{#_Toc131842775}[]{#_Toc131842025}[]{#_Toc131842776}
+Sysname-Vlan-interface10 isis dis-priority 127 level-2
 
 **IS-IS \-- IS-IS配置命令 \-- isis enable**
 
 ------------------------------------------------------------------------
 
-[**[isis enable]{lang="EN-US"}**]{#struct_0_x1984_13510_732548165}[命令用来在指定接口上使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能，并配置与该接口关联的]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程。]{style="font-family:宋体"}
+**[isis enable**]命令用来在指定接口上使能IS-IS功能，并配置与该接口关联的IS-IS进程。
 
-[**[undo isis enable]{lang="EN-US"}**]{#struct_0_x1984_13510_x300249588}[命令用来在指定接口上关闭]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo isis enable**]命令用来在指定接口上关闭IS-IS功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1466339266}
+【命令】
 
-[**[isis enable]{lang="EN-US"}**[ \[ *process-id* \]]{lang="EN-US"}]{#struct_0_x1984_13510_459541313}
+**[isis enable** [ *process-id* ]]
 
-[**[undo]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x1984_13510_x2098600355}**[isis]{lang="EN-US"}[ enable]{lang="EN-US"}**
+**[undo**]**isis enable**
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1973397487}
+【缺省情况】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_237364346}[功能在接口上处于关闭状态，且没有任何]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程与其关联。]{style="font-family:宋体"}
+IS-IS功能在接口上处于关闭状态，且没有任何IS-IS进程与其关联。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x185098907}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1129013458}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1402180820}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1304671565}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1466273730}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_498282422}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_x1984_13510_982659953}[：指定与该接口关联的]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程，]{style="font-family:宋体"}*[process-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，]{style="font-family:宋体"}[缺省值为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：指定与该接口关联的IS-IS进程，*process-id*为IS-IS进程号，取值范围为1～65535，缺省值为1。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1907856681}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_19205933}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_332104177}[创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[路由进程]{style="font-family:宋体"}[1]{lang="EN-US"}[，并在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 创建IS-IS路由进程1，并在接口GigabitEthernet1/0/1上使能IS-IS功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x382885902}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] network-entity 10.0001.1010.1020.1030.00]{lang="EN-US"}
+Sysname-isis-1 network-entity 10.0001.1010.1020.1030.00
 
-[\[Sysname-isis-1\] quit]{lang="EN-US"}
+Sysname-isis-1 quit
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] isis enable 1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis enable 1
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_x819295115}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1466732482}[创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[路由进程]{style="font-family:宋体"}[1]{lang="EN-US"}[，并在接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[上使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 创建IS-IS路由进程1，并在接口Vlan-interface10上使能IS-IS功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_1215641819}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] network-entity 10.0001.1010.1020.1030.00]{lang="EN-US"}
+Sysname-isis-1 network-entity 10.0001.1010.1020.1030.00
 
-[\[Sysname-isis-1\] quit]{lang="EN-US"}
+Sysname-isis-1 quit
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] isis enable 1]{lang="EN-US"}
+Sysname-Vlan-interface10 isis enable 1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1963888711}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}]{#struct_0_x1984_13510_1944825323}**[isis]{lang="EN-US"}**
+·**isis**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[network-entity]{lang="EN-US"}**]{#struct_0_x1984_13510_2075256063}
-:::
-
-::::: {#1700014286 .myid}
-[]{#_Toc404788392}[]{#struct_0_x1984_13510_x437351836}[]{#_Toc366163941}[]{#_Toc364753104}
+·**network-entity**
 
 **IS-IS \-- IS-IS配置命令 \-- isis fast-reroute lfa-backup exclude**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IS-IS命令.files/image001.png){#图片 5 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1984_13510_585002394}
-:::
+![说明](IS-IS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1984_13510_x437351837}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[isis fast-reroute lfa-backup exclude**]命令用来去使能接口LFA计算功能。
 
-[**[isis fast-reroute lfa-backup exclude]{lang="EN-US"}**]{#struct_0_x1984_13510_585067930}[命令用来]{style="font-family:宋体"}[去使能接口]{style="font-family:宋体"}[LFA]{lang="EN-US"}[计算功能。]{style="font-family:宋体"}
+**[undo isis fast-reroute lfa-backup exclude**]命令用来恢复缺省情况。
 
-[**[undo isis fast-reroute lfa-backup exclude]{lang="EN-US"}**]{#struct_0_x1984_13510_265307408}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x437351838}
+**[isis fast-reroute lfa-backup exclude**]
 
-[**[isis fast-reroute lfa-backup exclude]{lang="EN-US"}**]{#struct_0_x1984_13510_584609178}
+**[undo isis fast-reroute lfa-backup exclude**]
 
-[**[undo isis fast-reroute lfa-backup exclude]{lang="EN-US"}**]{#struct_0_x1984_13510_x437351831}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_585199002}
+接口参与LFA计算。
 
-[[接口参与]{style="font-family:宋体"}[LFA]{lang="EN-US"}]{#struct_0_x1984_13510_1495929604}[计算]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x437351832}
+接口视图/接口IPv4单播拓扑视图
 
-[[接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1984_13510_585264538}[接口]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[单播拓扑视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1381904956}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x437351833}
+mdc-admin
 
-[[mdc-admin ]{lang="EN-US"}]{#struct_0_x1984_13510_585330074}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x437351834}
+接口缺省参与LFA计算，有资格成为备份接口。配置本功能后，接口不会被选为备份接口。
 
-[[接口缺省参与]{style="font-family:宋体"}[LFA]{lang="EN-US"}]{#struct_0_x1984_13510_584871322}[计算，有资格成为备份接口。配置本功能后，接口不会被选为备份接口。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1975828192}
+·路由应用
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_x437351827}
+\# 去使能接口GigabitEthernet1/0/1的LFA计算功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_585067929}[去使能接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的]{style="font-family:宋体"}[LFA]{lang="EN-US"}[计算功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x437351828}
+Sysname isis 1
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname-isis-1 network-entity 10.0001.1010.1020.1030.00
 
-[\[Sysname-isis-1\] network-entity 10.0001.1010.1020.1030.00]{lang="EN-US"}
+Sysname-isis-1 quit
 
-[\[Sysname-isis-1\] quit]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis enable 1
 
-[\[Sysname-GigabitEthernet1/0/1\] isis enable 1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis fast-reroute lfa-backup exclude
 
-[\[Sysname-GigabitEthernet1/0/1\] ]{lang="EN-US"}[isis fast-reroute lfa-backup exclude]{lang="EN-US"}
+·交换应用
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_584609177}
+\#去使能接口Vlan-interface10的LFA计算功能。
 
-[[\#]{lang="EN-US"}]{#struct_0_x1984_13510_2130880362}[去使能接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[的]{style="font-family:宋体"}[LFA]{lang="EN-US"}[计算功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x1628992923}
+Sysname isis 1
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname-isis-1 network-entity 10.0001.1010.1020.1030.00
 
-[\[Sysname-isis-1\] network-entity 10.0001.1010.1020.1030.00]{lang="EN-US"}
+Sysname-isis-1 quit
 
-[\[Sysname-isis-1\] quit]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname-Vlan-interface10 isis enable 1
 
-[\[Sysname-Vlan-interface10\] isis enable 1]{lang="EN-US"}
+Sysname-Vlan-interface10 isis fast-reroute lfa-backup exclude
 
-[[\[Sysname-Vlan-interface10\] isis fast-reroute lfa-backup exclude]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1984_13510_828839924}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1628992924}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[fast-reroute]{lang="EN-US"}**]{#struct_0_x1984_13510_x1093474377}
-:::::
-
-::: {#-1799458523 .myid}
-[]{#_Toc163546293}[]{#_Toc50204111}[]{#_Toc33866110}[]{#_Toc290886791}[]{#_Toc252200769}[]{#_Toc163546286}[]{#_Toc290886793}[]{#_Toc252200771}[]{#_Toc163546288}[]{#_Toc50204106}[]{#_Toc33866105}[]{#_Toc297189179}[]{#_Toc404788393}[]{#struct_0_x1984_13510_414049248}[]{#_Toc310604350}[]{#_Toc290886787}[]{#_Toc252200766}[]{#_Toc163546284}[]{#_Toc50204105}[]{#_Toc33866104}[]{#_Toc17101076}[]{#_Toc290911762}[]{#_Toc167021737}[]{#_Toc167021738}
+·**fast-reroute**
 
 **IS-IS \-- IS-IS配置命令 \-- isis mesh-group**
 
 ------------------------------------------------------------------------
 
-[**[isis mesh-group]{lang="EN-US"}**]{#struct_0_x1984_13510_1025000985}[命令用来配置接口属于]{style="font-family:宋体"}[Mesh group]{lang="EN-US"}[或配置接口阻塞。]{style="font-family:宋体"}
+**[isis mesh-group**]命令用来配置接口属于Mesh group或配置接口阻塞。
 
-[**[undo isis mesh-group]{lang="EN-US"}**]{#struct_0_x1984_13510_x1466666946}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo isis mesh-group**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_511514571}
+【命令】
 
-[**[isis mesh-group ]{lang="EN-US"}**[{ *mesh-group-number* \| **mesh-blocked** }]{lang="EN-US"}]{#struct_0_x1984_13510_261575124}
+**[isis mesh-group **[{ *mesh-group-number* \| **mesh-blocked** }]]
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1984_13510_x689011731}**[isis]{lang="EN-US"}[ mesh-group]{lang="EN-US"}**
+**[undo **]**isis mesh-group**
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x523061085}
+【缺省情况】
 
-[[接口不属于任何]{style="font-family:宋体"}[Mesh-Group]{lang="EN-US"}]{#struct_0_x1984_13510_x1824557818}[且接口不阻塞。]{style="font-family:宋体"}
+接口不属于任何Mesh-Group且接口不阻塞。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1974980638}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1191444617}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1466601410}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1496592608}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x498962732}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_167001427}
+【参数】
 
-[*[mesh-group-number]{lang="EN-US"}*]{#struct_0_x1984_13510_1425606521}[：]{style="font-family:宋体"}[Mesh-Group]{lang="EN-US"}[号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[mesh-group-number*]：Mesh-Group号，取值范围为1～4294967295。
 
-[**[mesh-blocked]{lang="EN-US"}**]{#struct_0_x1984_13510_1764444774}[：配置接口阻塞，接口只有在收到邻居路由器要求发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的请求时才会发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}[，否则不会主动向外发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[mesh-blocked**]：配置接口阻塞，接口只有在收到邻居路由器要求发送LSP的请求时才会发送LSP，否则不会主动向外发送LSP。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x751622734}
+【使用指导】
 
-[]{#struct_0_x1984_13510_746981779}[]{#_Hlt9930022}[对于不属于]{style="font-family:宋体"}[Mesh-Group]{lang="EN-US"}[的接口，当收到]{style="font-family:宋体"}[LSP]{lang="EN-US"}[时，接口将按照正常流程将]{style="font-family:宋体"}[LSP]{lang="EN-US"}[扩散到所有其它接口。对于连通程度比较高，有多条点到点链路的]{style="font-family:宋体"}[NBMA]{lang="EN-US"}[网络，这种处理会造成]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的重复扩散，浪费带宽。]{style="font-family:宋体"}
+对于不属于Mesh-Group的接口，当收到LSP时，接口将按照正常流程将LSP扩散到所有其它接口。对于连通程度比较高，有多条点到点链路的NBMA网络，这种处理会造成LSP的重复扩散，浪费带宽。
 
-[[把接口配置属于一个]{style="font-family:宋体"}[Mesh-Group]{lang="EN-US"}]{#struct_0_x1984_13510_x292131966}[后，当接收到一个新的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[时，只把]{style="font-family:宋体"}[LSP]{lang="EN-US"}[扩散到其它]{style="font-family:宋体"}[Mesh-Group]{lang="EN-US"}[的接口以及没有配置]{style="font-family:宋体"}[Mesh group]{lang="EN-US"}[的接口，而不会扩散到到同]{style="font-family:宋体"}[Mesh-Group]{lang="EN-US"}[中的其它接口。]{style="font-family:宋体"}
+把接口配置属于一个Mesh-Group后，当接收到一个新的LSP时，只把LSP扩散到其它Mesh-Group的接口以及没有配置Mesh group的接口，而不会扩散到到同Mesh-Group中的其它接口。
 
-[[若配置某个接口阻塞，则该接口只有在收到邻居路由器要求发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x1466535874}[的请求时才会发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}[，否则不会主动向外发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}[。]{style="font-family:宋体"}
+若配置某个接口阻塞，则该接口只有在收到邻居路由器要求发送LSP的请求时才会发送LSP，否则不会主动向外发送LSP。
 
-[[需要注意的是，]{style="font-family:宋体"}[Mesh-Group]{lang="EN-US"}]{#struct_0_x1984_13510_1971724821}[只对点到点类型链路的接口起作用。]{style="font-family:宋体"}
+需要注意的是，Mesh-Group只对点到点类型链路的接口起作用。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1781860116}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x203524502}[将帧中继子接口]{style="font-family:宋体"}[Serial2/1/1.1]{lang="EN-US"}[加入组号为]{style="font-family:宋体"}[3]{lang="EN-US"}[的]{style="font-family:宋体"}[Mesh-Group]{lang="EN-US"}[中。]{style="font-family:宋体"}
+\# 将帧中继子接口Serial2/1/1.1加入组号为3的Mesh-Group中。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_1119404975}
+\<Sysname\> system-view
 
-[\[Sysname\] interface serial 2/1/1]{lang="EN-US"}
+Sysname interface serial 2/1/1
 
-[\[Sysname-Serial2/1/1\] link-protocol fr]{lang="EN-US"}
+Sysname-Serial2/1/1 link-protocol fr
 
-[\[Sysname-Serial2/1/1\] quit]{lang="EN-US"}
+Sysname-Serial2/1/1 quit
 
-[\[Sysname\] interface serial 2/1/1.1]{lang="EN-US"}
+Sysname interface serial 2/1/1.1
 
-[\[Sysname-Serial2/1/1.1\] isis mesh-group 3]{lang="EN-US"}
-:::
-
-::: {#170545295 .myid}
-[]{#_Toc310604353}[]{#_Toc404788394}[]{#struct_0_x1984_13510_x44181750}[]{#_Toc327790393}[]{#_Toc319940292}[]{#_Toc308430274}[]{#_Toc252200778}
+Sysname-Serial2/1/1.1 isis mesh-group 3
 
 **IS-IS \-- IS-IS配置命令 \-- isis mib-binding**
 
 ------------------------------------------------------------------------
 
-[**[isis mib-binding]{lang="EN-US"}**]{#struct_0_x1984_13510_x180434229}[命令]{style="font-family:宋体"}[用来配]{style="font-family:宋体"}[置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程绑定]{style="font-family:宋体"}[MIB]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[isis mib-binding**]命令用来配置IS-IS进程绑定MIB。
 
-[**[undo isis mib-binding]{lang="EN-US"}**]{#struct_0_x1984_13510_x1465946050}[命令]{style="font-family:宋体"}[用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo isis mib-binding**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1372590223}
+【命令】
 
-[**[isis mib-binding]{lang="EN-US"}***[ process-id]{lang="EN-US"}*]{#struct_0_x1984_13510_187380834}
+**[isis mib-binding*** process-id*]
 
-[**[undo isis mib-binding]{lang="EN-US"}**]{#struct_0_x1984_13510_x1615294677}
+**[undo isis mib-binding**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x810007328}
+【缺省情况】
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1984_13510_1644709462}[绑定在进程号最小的]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程上。]{style="font-family:宋体"}
+MIB绑定在进程号最小的IS-IS进程上。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1447797535}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x839524775}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1893658613}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1465880514}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1501365020}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x507014091}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_x1984_13510_x1429159198}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体;color:black"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1322881012}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[如果指定的]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_x917727120}*[process-id]{lang="FR"}*[不存在]{lang="EN-US" style="font-family:宋体"}[，]{lang="EN-US" style="font-family:宋体"}[配置]{lang="EN-US" style="font-family:
-宋体"}[IS-IS]{lang="FR"}[进程绑定命令时将会提示]{lang="EN-US" style="font-family:
-宋体"}[IS-IS]{lang="FR"}[进程不存在]{lang="EN-US" style="font-family:宋体"}[，]{lang="EN-US" style="font-family:宋体"}[无法完成配置。]{lang="EN-US" style="font-family:宋体"}
+·如果指定的*process-id*不存在，配置IS-IS进程绑定命令时将会提示IS-IS进程不存在，无法完成配置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="FR" style="font-size:10.0pt;font-family:Symbol"}[如果配置了]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_x1268889763}[IS-IS]{lang="FR"}[进程绑定]{lang="EN-US" style="font-family:宋体"}[MIB]{lang="FR"}[，]{lang="EN-US" style="font-family:宋体"}[若删除]{lang="EN-US" style="font-family:宋体"}*[process-id]{lang="FR"}*[对应的]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="FR"}[进程]{lang="EN-US" style="font-family:宋体"}[，]{lang="EN-US" style="font-family:
-宋体"}[则同时删除]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="FR"}[进程绑定]{lang="EN-US" style="font-family:宋体"}[MIB]{lang="FR"}[配置]{lang="EN-US" style="font-family:宋体"}[，]{style="font-family:宋体"}[MIB]{lang="FR"}[绑定]{lang="EN-US" style="font-family:宋体"}[到]{style="font-family:宋体"}[进程号最小的]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="FR"}[进程上。]{lang="EN-US" style="font-family:宋体"}
+·如果配置了IS-IS进程绑定MIB，若删除*process-id*对应的IS-IS进程，则同时删除IS-IS进程绑定MIB配置，MIB绑定到进程号最小的IS-IS进程上。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1728805422}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x425601784}[配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[100]{lang="EN-US"}[绑定]{style="font-family:宋体"}[MIB]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置IS-IS进程100绑定MIB。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x1466470341}
+\<Sysname\> system-view
 
-[\[Sysname\] isis mib-binding 100]{lang="EN-US"}
-:::
-
-::::: {#-1720857105 .myid}
-[]{#_Toc404788395}[]{#struct_0_x1984_13510_x1842365673}
+Sysname isis mib-binding 100
 
 **IS-IS \-- IS-IS配置命令 \-- isis peer-ip-check**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IS-IS命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1984_13510_x2068066632}
-:::
+![说明](IS-IS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1984_13510_x1062400804}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[isis peer-ip-check**]命令用来配置在PPP接口上建立邻接关系必须在同一网段的检查功能，即在接收Hello报文时，对端的IP地址与当前接口必须在同一网段。
 
-[**[isis peer-ip-check]{lang="EN-US"}**]{#struct_0_x1984_13510_754073624}[命令用来配置在]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口上建立邻接关系必须在同一网段的检查功能，即在接收]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文时，对端的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址与当前接口必须在同一网段。]{style="font-family:宋体"}
+**[undo isis peer-ip-check**]命令用来恢复缺省情况。
 
-[**[undo isis peer-ip-check]{lang="EN-US"}**]{#struct_0_x1984_13510_x1182110236}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_524278809}
+**[isis peer-ip-check**]
 
-[**[isis peer-ip-check]{lang="EN-US"}**]{#struct_0_x1984_13510_1349580619}
+**[undo isis peer-ip-check**]
 
-[**[undo isis peer-ip-check]{lang="EN-US"}**]{#struct_0_x1984_13510_1349646155}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_724461939}
+协议类型为PPP的接口要与对端路由器建立邻接关系，双方可以不在同一网段。
 
-[[协议类型为]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x1984_13510_28197524}[的接口要与对端路由器建立邻接关系，双方可以不在同一网段。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_629017554}
+接口视图
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_40409244}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x307994367}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_271959085}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1466339269}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1819003348}
+\# 配置在Serial2/1/0接口上与对端路由器建立邻接关系必须在同一网段的检查功能，即在Serial2/1/0上接收IS-IS Hello报文时，对端的IP地址与当前接口必须在同一网段才可以建立邻接关系。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1896315079}[配置在]{style="font-family:宋体"}[Serial2/1/0]{lang="EN-US"}[接口上与对端路由器建立邻接关系必须在同一网段的检查功能，即在]{style="font-family:宋体"}[Serial2/1/0]{lang="EN-US"}[上接收]{style="font-family:宋体"}[IS-IS Hello]{lang="EN-US"}[报文时，对端的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址与当前接口必须在同一网段才可以建立邻接关系。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x79776096}
+Sysname interface serial 2/1/0
 
-[\[Sysname\] interface serial 2/1/0]{lang="EN-US"}
-
-[\[Sysname-Serial2/1/0\] isis peer-ip-check]{lang="EN-US"}
-:::::
-
-::: {#-271487563 .myid}
-[]{#_Toc404788396}[]{#struct_0_x1984_13510_x1628992916}[]{#_Toc366163946}[]{#_Toc364753100}
+Sysname-Serial2/1/0 isis peer-ip-check
 
 **IS-IS \-- IS-IS配置命令 \-- isis prefix-suppression**
 
 ------------------------------------------------------------------------
 
-[**[isis prefix-suppression]{lang="EN-US"}**]{#struct_0_x1984_13510_709659237}[命令用来配置接口的前缀抑制功能。]{style="font-family:宋体"}
+**[isis prefix-suppression**]命令用来配置接口的前缀抑制功能。
 
-[**[undo isis prefix-suppression]{lang="EN-US"}**]{#struct_0_x1984_13510_1361007957}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo isis prefix-suppression**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_709659236}
+【命令】
 
-[**[isis prefix-suppression]{lang="EN-US"}**]{#struct_0_x1984_13510_1361007956}
+**[isis prefix-suppression**]
 
-[**[undo isis prefix-suppression]{lang="EN-US"}**]{#struct_0_x1984_13510_709659235}
+**[undo isis prefix-suppression**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1361007955}
+【缺省情况】
 
-[[未配置接口的前缀抑制功能。]{style="font-family:宋体"}]{#struct_0_x1984_13510_1388676108}
+未配置接口的前缀抑制功能。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_709659234}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1984_13510_1361007954}[接口]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[单播拓扑视图]{style="font-family:宋体"}
+接口视图/接口IPv4单播拓扑视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_709659241}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x595307185}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_232102518}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_709659240}
+【使用指导】
 
-[[接口使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x595307186}[时，有时候不希望在]{style="font-family:宋体"}[LSP]{lang="EN-US"}[中发布此接口的前缀，可以通过在接口上配置本命令，减少此接口的前缀在]{style="font-family:宋体"}[LSP]{lang="EN-US"}[中携带，屏蔽内部节点被发布，提高安全性，加快路由收敛。]{style="font-family:宋体"}
+接口使能IS-IS时，有时候不希望在LSP中发布此接口的前缀，可以通过在接口上配置本命令，减少此接口的前缀在LSP中携带，屏蔽内部节点被发布，提高安全性，加快路由收敛。
 
-[[本命令对接口从地址同样生效。]{style="font-family:宋体"}]{#struct_0_x1984_13510_709659239}
+本命令对接口从地址同样生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1361007959}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_709659238}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1361007958}[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[使能前缀抑制功能。]{style="font-family:宋体"}
+\# 接口GigabitEthernet1/0/1使能前缀抑制功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_709659245}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] isis prefix-suppression]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis prefix-suppression
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_x595307181}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_709659244}[接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[使能前缀抑制功能。]{style="font-family:宋体"}
+\# 接口Vlan-interface10使能前缀抑制功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x595307182}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] isis prefix-suppression]{lang="EN-US"}
-:::
-
-::::: {#-110867320 .myid}
-[]{#_Toc404788397}[]{#struct_0_x1984_13510_1349252937}[]{#_Toc363978778}
+Sysname-Vlan-interface10 isis prefix-suppression
 
 **IS-IS \-- IS-IS配置命令 \-- isis primary-path-detect bfd echo**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IS-IS命令.files/image001.png){#图片 1 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1984_13510_1349318473}
-:::
+![说明](IS-IS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1984_13510_1349384009}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[isis primary-path-detect bfd echo]{lang="EN-US"}**]{#struct_0_x1984_13510_1349449545}[命令用来使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议中主用链路的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[（]{style="font-family:宋体"}[Echo]{lang="EN-US"}[方式）检测功能。]{style="font-family:宋体"}
+**[isis primary-path-detect bfd echo**]命令用来使能IS-IS协议中主用链路的BFD（Echo方式）检测功能。
 
-[**[undo isis primary-path-detect bfd]{lang="EN-US"}**]{#struct_0_x1984_13510_1349515081}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo isis primary-path-detect bfd**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1349580617}
+【命令】
 
-[**[isis primary-path-detect bfd echo]{lang="EN-US"}**]{#struct_0_x1984_13510_1349646153}
+**[isis primary-path-detect bfd echo**]
 
-[**[undo isis primary-path-detect bfd]{lang="EN-US"}**]{#struct_0_x1984_13510_1349711689}
+**[undo isis primary-path-detect bfd**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1349777225}
+【缺省情况】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1349842761}[协议中主用链路的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[（]{style="font-family:宋体"}[Echo]{lang="EN-US"}[方式）检测功能处于关闭状态。]{style="font-family:宋体"}
+IS-IS协议中主用链路的BFD（Echo方式）检测功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1349252938}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_1349318474}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1349384010}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1349449546}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1349515082}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1349580618}
+【使用指导】
 
-[[配置本功能后，]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1349646154}[协议的快速重路由特性和]{style="font-family:宋体"}[PIC]{lang="EN-US"}[特性中的主用链路将使用]{style="font-family:宋体"}[BFD]{lang="EN-US"}[（]{style="font-family:宋体"}[Echo]{lang="EN-US"}[方式）进行检测。]{style="font-family:宋体"}
+配置本功能后，IS-IS协议的快速重路由特性和PIC特性中的主用链路将使用BFD（Echo方式）进行检测。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1349711690}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_1349777226}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1349842762}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议快速重路由特性中主用链路使能]{style="font-family:宋体"}[BFD]{lang="EN-US"}[（]{style="font-family:宋体"}[Echo]{lang="EN-US"}[方式）检测功能。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置IS-IS协议快速重路由特性中主用链路使能BFD（Echo方式）检测功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_945968414}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv4]{lang="EN-US"}
+Sysname-isis-1 address-family ipv4
 
-[\[Sysname-isis-1-ipv4\] ]{lang="EN-US"}[fast-reroute lfa]{lang="EN-US"}
+Sysname-isis-1-ipv4 fast-reroute lfa
 
-[\[Sysname-isis-1-ipv4\] quit]{lang="EN-US"}
+Sysname-isis-1-ipv4 quit
 
-[\[Sysname-isis-1\] quit]{lang="EN-US"}
+Sysname-isis-1 quit
 
-[\[Sysname\] bfd echo-source-ip 1.1.1.1]{lang="EN-US"}
+Sysname bfd echo-source-ip 1.1.1.1
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] isis primary-path-detect bfd echo]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis primary-path-detect bfd echo
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_946033950}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[上配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议]{style="font-family:宋体"}[PIC]{lang="EN-US"}[特性中主用链路使能]{style="font-family:宋体"}[BFD]{lang="EN-US"}[（]{style="font-family:宋体"}[Echo]{lang="EN-US"}[方式）检测功能。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/2上配置IS-IS协议PIC特性中主用链路使能BFD（Echo方式）检测功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_946099486}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] pic additional-path-always]{lang="EN-US"}
+Sysname-isis-1 pic additional-path-always
 
-[\[Sysname-isis-1\] quit]{lang="EN-US"}
+Sysname-isis-1 quit
 
-[\[Sysname\] bfd echo-source-ip 1.1.1.1]{lang="EN-US"}
+Sysname bfd echo-source-ip 1.1.1.1
 
-[\[Sysname\] interface gigabitethernet 1/0/2]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/2
 
-[\[Sysname-GigabitEthernet1/0/2\] isis primary-path-detect bfd echo]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/2 isis primary-path-detect bfd echo
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_946165022}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_946230558}[在接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[上配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议快速重路由特性中主用链路使能]{style="font-family:宋体"}[BFD]{lang="EN-US"}[（]{style="font-family:宋体"}[Echo]{lang="EN-US"}[方式）检测功能。]{style="font-family:宋体"}
+\# 在接口Vlan-interface10上配置IS-IS协议快速重路由特性中主用链路使能BFD（Echo方式）检测功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_946361630}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv4]{lang="EN-US"}
+Sysname-isis-1 address-family ipv4
 
-[\[Sysname-isis-1-ipv4\] ]{lang="EN-US"}[fast-reroute lfa]{lang="EN-US"}
+Sysname-isis-1-ipv4 fast-reroute lfa
 
-[\[Sysname-isis-1-ipv4\] quit]{lang="EN-US"}
+Sysname-isis-1-ipv4 quit
 
-[\[Sysname-isis-1\] quit]{lang="EN-US"}
+Sysname-isis-1 quit
 
-[\[Sysname\] bfd echo-source-ip 1.1.1.1]{lang="EN-US"}
+Sysname bfd echo-source-ip 1.1.1.1
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] isis primary-path-detect bfd echo]{lang="EN-US"}
+Sysname-Vlan-interface10 isis primary-path-detect bfd echo
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_140324052}[在接口]{style="font-family:宋体"}[Vlan-interface11]{lang="EN-US"}[上配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议]{style="font-family:宋体"}[PIC]{lang="EN-US"}[特性中主用链路使能]{style="font-family:宋体"}[BFD]{lang="EN-US"}[（]{style="font-family:宋体"}[Echo]{lang="EN-US"}[方式）检测功能。]{style="font-family:宋体"}
+\# 在接口Vlan-interface11上配置IS-IS协议PIC特性中主用链路使能BFD（Echo方式）检测功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_946492702}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] pic additional-path-always]{lang="EN-US"}
+Sysname-isis-1 pic additional-path-always
 
-[\[Sysname-isis-1\] quit]{lang="EN-US"}
+Sysname-isis-1 quit
 
-[\[Sysname\] bfd echo-source-ip 1.1.1.1]{lang="EN-US"}
+Sysname bfd echo-source-ip 1.1.1.1
 
-[\[Sysname\] interface vlan-interface 11]{lang="EN-US"}
+Sysname interface vlan-interface 11
 
-[\[Sysname-Vlan-interface11\] isis primary-path-detect bfd echo]{lang="EN-US"}
-:::::
-
-::: {#-470447966 .myid}
-[]{#_Toc404788398}[]{#struct_0_x1984_13510_x858315191}
+Sysname-Vlan-interface11 isis primary-path-detect bfd echo
 
 **IS-IS \-- IS-IS配置命令 \-- isis silent**
 
 ------------------------------------------------------------------------
 
-[**[isis silent]{lang="EN-US"}**]{#struct_0_x1984_13510_x618681558}[命令用来禁止接口发送和接收]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+**[isis silent**]命令用来禁止接口发送和接收IS-IS报文。
 
-[**[undo isis silent]{lang="EN-US"}**]{#struct_0_x1984_13510_552689224}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo isis silent**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1002834597}
+【命令】
 
-[**[isis silent]{lang="EN-US"}**]{#struct_0_x1984_13510_x679217835}
+**[isis silent**]
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1984_13510_x1466273733}**[isis]{lang="EN-US"}[ silent]{lang="EN-US"}**
+**[undo **]**isis silent**
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1067801519}
+【缺省情况】
 
-[[接口既发送也接收]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1727343809}[报文。]{style="font-family:宋体"}
+接口既发送也接收IS-IS报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1239585235}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_2124598640}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_212913246}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1545015342}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1845041656}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x152345268}
+【使用指导】
 
-[[Loopback]{lang="EN-US"}]{#struct_0_x1984_13510_x1466732485}[接口视图下不支持此命令。]{style="font-family:宋体"}
+Loopback接口视图下不支持此命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x350442122}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_1025968469}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1600182163}[禁止接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[发送和接收]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+\# 禁止接口GigabitEthernet1/0/1发送和接收IS-IS报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_178666138}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] isis silent]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis silent
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_x982062126}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x560833838}[禁止接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[发送和接收]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+\# 禁止接口Vlan-interface10发送和接收IS-IS报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x1466666949}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] isis silent]{lang="EN-US"}
-:::
-
-::: {#-1733297603 .myid}
-[]{#_Toc404788399}[]{#struct_0_x1984_13510_464460404}[]{#_Toc297189180}
+Sysname-Vlan-interface10 isis silent
 
 **IS-IS \-- IS-IS配置命令 \-- isis small-hello**
 
 ------------------------------------------------------------------------
 
-[**[isis small-hello]{lang="EN-US"}**]{#struct_0_x1984_13510_963468592}[命令用来配置接口发送不加入填充]{style="font-family:宋体"}[CLV]{lang="EN-US"}[的小型]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+**[isis small-hello**]命令用来配置接口发送不加入填充CLV的小型Hello报文。
 
-[**[undo isis small-hello]{lang="EN-US"}**]{#struct_0_x1984_13510_612887415}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo isis small-hello**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_367281396}
+【命令】
 
-[**[isis small-hello]{lang="EN-US"}**]{#struct_0_x1984_13510_x1006657615}
+**[isis small-hello**]
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1984_13510_x1107217275}**[isis]{lang="EN-US"}[ small-hello]{lang="EN-US"}**
+**[undo **]**isis small-hello**
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1689682159}
+【缺省情况】
 
-[[接口发送标准]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_x1984_13510_x1466601413}[报文。]{style="font-family:宋体"}
+接口发送标准Hello报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1232290747}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_1322301456}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1052092571}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_853556192}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x991577659}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1861772634}
+【使用指导】
 
-[[Loopback]{lang="EN-US"}]{#struct_0_x1984_13510_x1193229942}[接口视图下不支持此命令。]{style="font-family:宋体"}
+Loopback接口视图下不支持此命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x683245546}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_x1466535877}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_405640880}[指定接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[发送小型]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+\# 指定接口GigabitEthernet1/0/1发送小型Hello报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x179063446}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] isis small-hello]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis small-hello
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_x447515086}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_593408870}[指定接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[发送小型]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+\# 指定接口Vlan-interface10发送小型Hello报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_100116719}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] isis small-hello]{lang="EN-US"}
-:::
-
-::: {#226552829 .myid}
-[]{#_Toc404788400}[]{#struct_0_x1984_13510_x83129752}[]{#_Toc366163957}[]{#_Toc364753102}
+Sysname-Vlan-interface10 isis small-hello
 
 **IS-IS \-- IS-IS配置命令 \-- isis tag**
 
 ------------------------------------------------------------------------
 
-[**[isis tag]{lang="EN-US"}**]{#struct_0_x1984_13510_x921795554}[命令用来配置接口的]{style="font-family:宋体"}[Tag]{lang="EN-US"}[值。]{style="font-family:宋体"}
+**[isis tag**]命令用来配置接口的Tag值。
 
-[**[undo isis tag]{lang="EN-US"}**]{#struct_0_x1984_13510_1856414631}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo isis tag**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x83129753}
+【命令】
 
-[**[isis tag ]{lang="EN-US"}***[tag]{lang="EN-US"}*]{#struct_0_x1984_13510_x921795555}
+**[isis tag ***tag*]
 
-[**[undo isis tag]{lang="EN-US"}**]{#struct_0_x1984_13510_x83129754}
+**[undo isis tag**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x921795556}
+【缺省情况】
 
-[[没有配置接口的]{style="font-family:宋体"}[Tag]{lang="EN-US"}]{#struct_0_x1984_13510_x83129747}[值。]{style="font-family:宋体"}
+没有配置接口的Tag值。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1416856601}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1984_13510_x702091949}[接口]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[单播拓扑视图]{style="font-family:宋体"}
+接口视图/接口IPv4单播拓扑视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x83129748}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1416856600}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1490848357}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_341095120}
+【参数】
 
-[*[tag]{lang="EN-US"}*]{#struct_0_x1984_13510_1490848356}[：管理标记值]{style="font-family:宋体"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[tag*]：管理标记值，取值范围为1～4294967295。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_341160656}
+【使用指导】
 
-[[当]{style="font-family:宋体"}[cost-sytle]{lang="EN-US"}]{#struct_0_x1984_13510_x686627295}[为]{style="font-family:宋体"}[wide]{lang="EN-US"}[、]{style="font-family:宋体"}[wide-compatible ]{lang="EN-US"}[或]{style="font-family:宋体"}[compatible]{lang="EN-US"}[时，如果发布可达的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀具有]{style="font-family:宋体"}[Tag]{lang="EN-US"}[属性，]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[会将]{style="font-family:宋体"}[Tag]{lang="EN-US"}[加入到该前缀的]{style="font-family:宋体"}[IP]{lang="EN-US"}[可达信息]{style="font-family:宋体"}[TLV]{lang="EN-US"}[中]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+当cost-sytle为wide、wide-compatible 或compatible时，如果发布可达的IP地址前缀具有Tag属性，IS-IS会将Tag加入到该前缀的IP可达信息TLV中。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1490848355}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_341226192}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1490848354}[配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的]{style="font-family:宋体"}[Tag]{lang="EN-US"}[值。]{style="font-family:宋体"}
+\# 配置接口GigabitEthernet1/0/1的Tag值。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_341291728}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] isis ]{lang="EN-US"}[tag 4294967295]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis tag 4294967295
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_1490848361}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_340964051}[配置接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[的]{style="font-family:宋体"}[Tag]{lang="EN-US"}[值。]{style="font-family:宋体"}
+\# 配置接口Vlan-interface10的Tag值。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_1490848360}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] isis ]{lang="EN-US"}[tag 4294967295]{lang="EN-US"}
-:::
-
-::: {#1594687059 .myid}
-[]{#_Toc404788401}[]{#struct_0_x1984_13510_1775468949}[]{#_Toc297189181}
+Sysname-Vlan-interface10 isis tag 4294967295
 
 **IS-IS \-- IS-IS配置命令 \-- isis timer csnp**
 
 ------------------------------------------------------------------------
 
-[**[isis timer csnp]{lang="EN-US"}**]{#struct_0_x1984_13510_644124582}[命令用来配置]{style="font-family:宋体"}[DIS]{lang="EN-US"}[在广播网络上发送]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文的时间间隔。]{style="font-family:宋体"}
+**[isis timer csnp**]命令用来配置DIS在广播网络上发送CSNP报文的时间间隔。
 
-[**[undo isis timer csnp]{lang="EN-US"}**]{#struct_0_x1984_13510_x1465946053}[命令用来取消该配置。]{style="font-family:宋体"}
+**[undo isis timer csnp**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1356293132}
+【命令】
 
-[**[isis timer csnp]{lang="EN-US"}**[ *seconds* \[ **level-1** \| **level-2** \]]{lang="EN-US"}]{#struct_0_x1984_13510_x526524621}
+**[isis timer csnp**[ *seconds* [ **level-1** \| **level-2** ]]]
 
-[**[undo]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x1984_13510_x1693897010}**[isis]{lang="EN-US"}[ timer csnp]{lang="EN-US"}**[ \[ **level-1** \| **level-2** \]]{lang="EN-US"}
+**[undo**]**isis timer csnp**[ [ **level-1** \| **level-2** ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_765770039}
+【缺省情况】
 
-[[DIS]{lang="EN-US"}]{#struct_0_x1984_13510_x1371141444}[在广播网络上发送]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文的时间间隔为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+DIS在广播网络上发送CSNP报文的时间间隔为10秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_911882144}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1542213858}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1512914397}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1465880517}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_64718921}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x891875933}
+【参数】
 
-[*[seconds]{lang="EN-US"}*]{#struct_0_x1984_13510_316310651}[：]{style="font-family:宋体"}[DIS]{lang="EN-US"}[在广播网络上发送]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文的时间间隔，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[600]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[seconds*]：DIS在广播网络上发送CSNP报文的时间间隔，取值范围为1～600，单位为秒。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_1360856782}[：配置]{style="font-family:宋体"}[DIS]{lang="EN-US"}[在]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[发送]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文的时间间隔。]{style="font-family:宋体"}
+**[level-1**]：配置DIS在Level-1发送CSNP报文的时间间隔。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_x1357705618}[：配置]{style="font-family:宋体"}[DIS]{lang="EN-US"}[在]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[发送]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文的时间间隔。]{style="font-family:宋体"}
+**[level-2**]：配置DIS在Level-2发送CSNP报文的时间间隔。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1529578952}
+【使用指导】
 
-[[如果不指定级别，将同时配置]{style="font-family:宋体"}[DIS]{lang="EN-US"}]{#struct_0_x1984_13510_415815695}[在]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[发送]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文的时间间隔。]{style="font-family:宋体"}
+如果不指定级别，将同时配置DIS在Level-1和Level-2发送CSNP报文的时间间隔。
 
-[[当网络类型为广播网时，]{style="font-family:宋体"}[DIS]{lang="EN-US"}]{#struct_0_x1984_13510_1751143430}[使用]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文来进行]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步，因此只有在被选举为]{style="font-family:宋体"}[DIS]{lang="EN-US"}[的路由器上进行该项配置才有效。]{style="font-family:宋体"}
+当网络类型为广播网时，DIS使用CSNP报文来进行LSDB同步，因此只有在被选举为DIS的路由器上进行该项配置才有效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1466470340}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_886517682}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1920980712}[配置]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上的发送时间间隔为]{style="font-family:宋体"}[15]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置Level-2的CSNP报文在接口GigabitEthernet1/0/1上的发送时间间隔为15秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x1740571679}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] isis timer csnp 15 level-2]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis timer csnp 15 level-2
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_505658862}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1814972088}[配置]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文在]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[接口上的发送时间间隔为]{style="font-family:宋体"}[15]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置Level-2的CSNP报文在Vlan-interface10接口上的发送时间间隔为15秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_2048204772}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] isis timer csnp 15 level-2]{lang="EN-US"}
-:::
-
-::: {#-962323879 .myid}
-[]{#_Toc404788402}[]{#struct_0_x1984_13510_x1466404804}[]{#_Toc297189182}
+Sysname-Vlan-interface10 isis timer csnp 15 level-2
 
 **IS-IS \-- IS-IS配置命令 \-- isis timer hello**
 
 ------------------------------------------------------------------------
 
-[**[isis timer hello]{lang="EN-US"}**]{#struct_0_x1984_13510_x878836912}[命令用来配置]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的发送时间间隔。]{style="font-family:宋体"}
+**[isis timer hello**]命令用来配置Hello报文的发送时间间隔。
 
-[**[undo isis timer hello]{lang="EN-US"}**]{#struct_0_x1984_13510_576765604}[命令用来取消该配置。]{style="font-family:宋体"}
+**[undo isis timer hello**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1263599821}
+【命令】
 
-[**[isis timer hello]{lang="EN-US"}**[ *seconds* \[ **level-1** \| **level-2** \]]{lang="EN-US"}]{#struct_0_x1984_13510_709462051}
+**[isis timer hello**[ *seconds* [ **level-1** \| **level-2** ]]]
 
-[**[undo]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x1984_13510_x1645789696}**[isis]{lang="EN-US"}[ timer hello]{lang="EN-US"}**[ \[ **level-1** \| **level-2** \]]{lang="EN-US"}
+**[undo**]**isis timer hello**[ [ **level-1** \| **level-2** ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1151366134}
+【缺省情况】
 
-[[Hello]{lang="EN-US"}]{#struct_0_x1984_13510_x768054891}[报文的发送时间间隔为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+Hello报文的发送时间间隔为10秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1082002748}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1466339268}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_909880007}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_416053058}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x29212956}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1927810089}
+【参数】
 
-[*[seconds]{lang="EN-US"}*]{#struct_0_x1984_13510_1047737056}[：配置]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的发送时间间隔，取值范围为]{style="font-family:宋体"}[3]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[seconds*]：配置Hello报文的发送时间间隔，取值范围为3～255，单位为秒。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_x288490381}[：配置]{style="font-family:宋体"}[Level-1 Hello]{lang="EN-US"}[报文的发送时间间隔。]{style="font-family:宋体"}
+**[level-1**]：配置Level-1 Hello报文的发送时间间隔。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_909526258}[：配置]{style="font-family:宋体"}[Level-2 Hello]{lang="EN-US"}[报文的发送时间间隔。]{style="font-family:宋体"}
+**[level-2**]：配置Level-2 Hello报文的发送时间间隔。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1879412041}
+【使用指导】
 
-[[如果路由器在邻居关系保持时间内（即]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_x1984_13510_x1466273732}[报文失效数目与]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文发送时间间隔的乘积）没有收到来自邻居路由器的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文时将宣告邻居关系失效。通过设置]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文失效数目和]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的发送时间间隔，可以调整邻居关系保持时间，即邻居路由器要花多长时间能够监测到链路已经失效并重新进行路由计算。]{style="font-family:宋体"}
+如果路由器在邻居关系保持时间内（即Hello报文失效数目与Hello报文发送时间间隔的乘积）没有收到来自邻居路由器的Hello报文时将宣告邻居关系失效。通过设置Hello报文失效数目和Hello报文的发送时间间隔，可以调整邻居关系保持时间，即邻居路由器要花多长时间能够监测到链路已经失效并重新进行路由计算。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x1984_13510_1661081836}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在广播链路上，]{style="font-family:宋体"}]{#struct_0_x1984_13510_139184233}[Level-1]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-2 Hello]{lang="EN-US"}[报文会分别发送，其时间间隔也要分别配置；在点到点链路中，]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文是在同一个点到点]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文中发送，不需要分别配置发送时间间隔。]{style="font-family:宋体"}
+·在广播链路上，Level-1和Level-2 Hello报文会分别发送，其时间间隔也要分别配置；在点到点链路中，Level-1和Level-2的Hello报文是在同一个点到点Hello报文中发送，不需要分别配置发送时间间隔。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[参数]{lang="EN-US" style="font-family:宋体"}[level-1]{lang="EN-US"}]{#struct_0_x1984_13510_630615664}[和]{lang="EN-US" style="font-family:宋体"}[level-2]{lang="EN-US"}[仅在广播接口上是可配置的，而且必须先在接口上使能]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能。]{lang="EN-US" style="font-family:宋体"}
+·参数level-1和level-2仅在广播接口上是可配置的，而且必须先在接口上使能IS-IS功能。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[发送时间间隔越短，网络收敛更快，但也需要占用更多的系统资源；因此，需要根据实际情况指定。]{style="font-family:宋体"}]{#struct_0_x1984_13510_x2076446914}
+·发送时间间隔越短，网络收敛更快，但也需要占用更多的系统资源；因此，需要根据实际情况指定。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果不指定级别，将同时配置]{style="font-family:宋体"}]{#struct_0_x1984_13510_1518405071}[Level-1]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文发送时间间隔。]{style="font-family:宋体"}
+·如果不指定级别，将同时配置Level-1和Level-2的Hello报文发送时间间隔。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1261462128}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_x1930806144}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_103633541}[配置]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上的发送时间间隔为]{style="font-family:宋体"}[20]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置Level-2的Hello报文在接口GigabitEthernet1/0/1上的发送时间间隔为20秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x1466732484}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] isis timer hello 20 level-2]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis timer hello 20 level-2
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_x1916526063}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1696041997}[配置]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文在]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[接口上的发送时间间隔为]{style="font-family:宋体"}[20]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置Level-2的Hello报文在Vlan-interface10接口上的发送时间间隔为20秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x1515210067}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] isis timer hello 20 level-2]{lang="EN-US"}
+Sysname-Vlan-interface10 isis timer hello 20 level-2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2103650887}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[isis timer holding-multiplier]{lang="EN-US"}**]{#struct_0_x1984_13510_x1247995997}
-:::
-
-::: {#-512477566 .myid}
-[]{#_Toc404788403}[]{#struct_0_x1984_13510_769964261}[]{#_Toc297189183}
+·**isis timer holding-multiplier**
 
 **IS-IS \-- IS-IS配置命令 \-- isis timer holding-multiplier**
 
 ------------------------------------------------------------------------
 
-[**[isis timer holding-multiplier]{lang="EN-US"}**]{#struct_0_x1984_13510_x1466666948}[命令用来配置]{style="font-family:
-宋体"}[Hello]{lang="EN-US"}[报文失效数目。]{style="font-family:宋体"}
+**[isis timer holding-multiplier**]命令用来配置Hello报文失效数目。
 
-[**[undo isis timer holding-multiplier]{lang="EN-US"}**]{#struct_0_x1984_13510_2030544345}[命令用来取消该配置。]{style="font-family:宋体"}
+**[undo isis timer holding-multiplier**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_97924693}
+【命令】
 
-[**[isis timer holding-multiplier]{lang="EN-US"}**[ *value* \[ **level-1** \| **level-2** \]]{lang="EN-US"}]{#struct_0_x1984_13510_x1500762015}
+**[isis timer holding-multiplier**[ *value* [ **level-1** \| **level-2** ]]]
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1984_13510_x246204925}**[isis]{lang="EN-US"}[ timer holding-multiplier]{lang="EN-US"}**[ \[ **level-1** \| **level-2** \]]{lang="EN-US"}
+**[undo **]**isis timer holding-multiplier**[ [ **level-1** \| **level-2** ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1965605314}
+【缺省情况】
 
-[[Hello]{lang="EN-US"}]{#struct_0_x1984_13510_x1460156443}[报文失效数目为]{style="font-family:宋体"}[3]{lang="EN-US"}[。]{style="font-family:宋体"}
+Hello报文失效数目为3。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_206954672}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_1548616462}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1466601412}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_333793194}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1836804389}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1004469241}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_x1984_13510_1831090672}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[邻居的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文失效数目，取值范围为]{style="font-family:宋体"}[3]{lang="EN-US"}[～]{style="font-family:宋体"}[1000]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[value*]：IS-IS邻居的Hello报文失效数目，取值范围为3～1000。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_1397101856}[：]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[的]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[邻居]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文失效数目。]{style="font-family:宋体"}
+**[level-1**]：Level-1的IS-IS邻居Hello报文失效数目。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_x946543624}[：]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[邻居]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文失效数目。]{style="font-family:宋体"}
+**[level-2**]：Level-2的IS-IS邻居Hello报文失效数目。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1609786222}
+【使用指导】
 
-[[Hello]{lang="EN-US"}]{#struct_0_x1984_13510_x1802329590}[报文失效数目，即宣告邻居失效前]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[没有收到的邻居]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的数目。]{style="font-family:宋体"}
+Hello报文失效数目，即宣告邻居失效前IS-IS没有收到的邻居Hello报文的数目。
 
-[[如果路由器在邻居关系保持时间内（即]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_x1984_13510_x1466535876}[报文失效数目与]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文发送时间间隔的乘积）没有收到来自邻居路由器的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文时将宣告邻居关系失效。通过设置]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文失效数目和]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的发送时间间隔，可以调整邻居关系保持时间，即邻居路由器要花多长时间能够监测到链路已经失效并重新进行路由计算。]{style="font-family:宋体"}
+如果路由器在邻居关系保持时间内（即Hello报文失效数目与Hello报文发送时间间隔的乘积）没有收到来自邻居路由器的Hello报文时将宣告邻居关系失效。通过设置Hello报文失效数目和Hello报文的发送时间间隔，可以调整邻居关系保持时间，即邻居路由器要花多长时间能够监测到链路已经失效并重新进行路由计算。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1160443061}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在广播链路上，]{lang="EN-US" style="font-family:宋体"}[Level-1]{lang="EN-US"}]{#struct_0_x1984_13510_x534854090}[和]{lang="EN-US" style="font-family:宋体"}[Level-2 Hello]{lang="EN-US"}[报文会分别发送，]{lang="EN-US" style="font-family:宋体"}[Hello]{lang="EN-US"}[报文失效数目需要分别设置；在点到点链路中，]{lang="EN-US" style="font-family:宋体"}[Level-1]{lang="EN-US"}[和]{lang="EN-US" style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Hello]{lang="EN-US"}[报文是在同一个点到点]{lang="EN-US" style="font-family:宋体"}[Hello]{lang="EN-US"}[报文中发送，因此不需要指定]{lang="EN-US" style="font-family:宋体"}[Level-1]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[Level-2]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·在广播链路上，Level-1和Level-2 Hello报文会分别发送，Hello报文失效数目需要分别设置；在点到点链路中，Level-1和Level-2的Hello报文是在同一个点到点Hello报文中发送，因此不需要指定Level-1或Level-2。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[参数]{lang="EN-US" style="font-family:宋体"}[level-1]{lang="EN-US"}]{#struct_0_x1984_13510_x1806823245}[和]{lang="EN-US" style="font-family:宋体"}[level-2]{lang="EN-US"}[仅在广播接口上是可配置的，而且必须先在接口上使能]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能。]{lang="EN-US" style="font-family:宋体"}
+·参数level-1和level-2仅在广播接口上是可配置的，而且必须先在接口上使能IS-IS功能。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果不指定级别，将同时配置]{lang="EN-US" style="font-family:宋体"}[Level-1]{lang="EN-US"}]{#struct_0_x1984_13510_x2015335594}[和]{lang="EN-US" style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Hello]{lang="EN-US"}[报文失效数目。]{lang="EN-US" style="font-family:宋体"}
+·如果不指定级别，将同时配置Level-1和Level-2的Hello报文失效数目。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Hello]{lang="EN-US"}]{#struct_0_x1984_13510_1125182162}[报文失效数目与]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文发送时间间隔的乘积不能超过]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+·Hello报文失效数目与Hello报文发送时间间隔的乘积不能超过65535。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x911270663}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_1445450229}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_312492884}[指定接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上标志邻居失效的]{style="font-family:宋体"}[Level-2 Hello]{lang="EN-US"}[报文数目为]{style="font-family:宋体"}[6]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 指定接口GigabitEthernet1/0/1上标志邻居失效的Level-2 Hello报文数目为6。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x1465946052}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] isis timer holding-multiplier 6 level-2]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis timer holding-multiplier 6 level-2
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_209790809}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_245736962}[指定接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[上标志邻居失效的]{style="font-family:宋体"}[Level-2 Hello]{lang="EN-US"}[报文数目为]{style="font-family:宋体"}[6]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 指定接口Vlan-interface10上标志邻居失效的Level-2 Hello报文数目为6。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x2022750164}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] isis timer holding-multiplier 6]{lang="EN-US"}
+Sysname-Vlan-interface10 isis timer holding-multiplier 6
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_101564163}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[isis timer hello]{lang="EN-US"}**]{#struct_0_x1984_13510_484413509}
-:::
-
-::: {#1203487485 .myid}
-[]{#_Toc404788404}[]{#struct_0_x1984_13510_325177512}[]{#_Toc297189184}
+·**isis timer hello**
 
 **IS-IS \-- IS-IS配置命令 \-- isis timer lsp**
 
 ------------------------------------------------------------------------
 
-[**[isis timer lsp]{lang="EN-US"}**]{#struct_0_x1984_13510_x1465880516}[命令用来配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[在接口上发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最小时间间隔以及一次最多可以发送的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文数目。]{style="font-family:宋体"}
+**[isis timer lsp**]命令用来配置IS-IS在接口上发送LSP的最小时间间隔以及一次最多可以发送的LSP报文数目。
 
-[**[undo isis timer lsp]{lang="EN-US"}**]{#struct_0_x1984_13510_1630802862}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo isis timer lsp**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x318440114}
+【命令】
 
-[**[isis timer lsp ]{lang="EN-US"}***[time ]{lang="EN-US"}*[\[ **count** *count* \]]{lang="EN-US"}]{#struct_0_x1984_13510_x140520804}
+**[isis timer lsp ***time * **count** *count* ]
 
-[**[undo]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x1984_13510_1449791791}**[isis]{lang="EN-US"}[ timer lsp]{lang="EN-US"}**
+**[undo**]**isis timer lsp**
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_778483721}
+【缺省情况】
 
-[[发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_1111080133}[的最小时间间隔为]{style="font-family:宋体"}[33]{lang="EN-US"}[毫秒，一次最多可以发送]{style="font-family:宋体"}[5]{lang="EN-US"}[个]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+发送LSP的最小时间间隔为33毫秒，一次最多可以发送5个LSP报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1023277786}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_1623300236}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x586664961}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_99613604}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1766832902}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2045145671}
+【参数】
 
-[*[time]{lang="EN-US"}*]{#struct_0_x1984_13510_509823431}[：发送链路状态报文的最小时间间隔，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1000]{lang="EN-US"}[，单位为毫秒。]{style="font-family:宋体"}
+*[time*]：发送链路状态报文的最小时间间隔，取值范围为1～1000，单位为毫秒。
 
-[*[count]{lang="EN-US"}*]{#struct_0_x1984_13510_400824918}[：一次最多发送的链路状态报文的数目，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1000]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[count*]：一次最多发送的链路状态报文的数目，取值范围为1～1000。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1972971668}
+【使用指导】
 
-[[当]{style="font-family:宋体"}[LSDB]{lang="EN-US"}]{#struct_0_x1984_13510_1648017223}[的内容发生变化时，]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[将把发生变化的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[扩散出去，用户可以对]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最小发送时间间隔进行调节。]{style="font-family:宋体"}
+当LSDB的内容发生变化时，IS-IS将把发生变化的LSP扩散出去，用户可以对LSP的最小发送时间间隔进行调节。
 
-[[请合理配置]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x1280836400}[发送时间间隔，当存在大量]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[接口或大量路由时，会发送大量的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文，导致]{style="font-family:宋体"}[LSP]{lang="EN-US"}[风暴的出现。]{style="font-family:宋体"}
+请合理配置LSP发送时间间隔，当存在大量IS-IS接口或大量路由时，会发送大量的LSP报文，导致LSP风暴的出现。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_99679140}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_2126845804}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1369192314}[配置在]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[接口]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的发送时间间隔为]{style="font-family:宋体"}[500]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+\# 配置在GigabitEthernet1/0/1接口LSP的发送时间间隔为500毫秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_635816076}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] isis timer lsp 500]{lang="NO-BOK"}
+Sysname-GigabitEthernet1/0/1 isis timer lsp 500
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_x1859385555}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1852181361}[配置在]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[接口]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的发送时间间隔为]{style="font-family:宋体"}[500]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+\# 配置在Vlan-interface10接口LSP的发送时间间隔为500毫秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_1004848628}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] isis timer lsp 500]{lang="NO-BOK"}
+Sysname-Vlan-interface10 isis timer lsp 500
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_720553916}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[isis timer retransmit]{lang="EN-US"}**]{#struct_0_x1984_13510_99744676}
-:::
-
-::: {#1595350185 .myid}
-[]{#_Toc297189185}[]{#_Toc294861138}[]{#_Toc264877107}[]{#_Toc404788405}[]{#struct_0_x1984_13510_1195207989}
+·**isis timer retransmit**
 
 **IS-IS \-- IS-IS配置命令 \-- isis timer retransmit**
 
 ------------------------------------------------------------------------
 
-[**[isis timer retransmit]{lang="EN-US"}**]{#struct_0_x1984_13510_x1012019838}[命令用来]{style="font-family:宋体"}[配置]{style="font-family:宋体"}[LSP]{lang="EN-US"}[在点到点链路上的重传时间间隔。]{style="font-family:宋体"}
+**[isis timer retransmit**]命令用来配置LSP在点到点链路上的重传时间间隔。
 
-[**[undo isis timer retransmit]{lang="EN-US"}**]{#struct_0_x1984_13510_x303664772}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo isis timer retransmit**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_527287313}
+【命令】
 
-[**[isis timer retransmit ]{lang="EN-US"}***[seconds]{lang="EN-US"}*]{#struct_0_x1984_13510_803837751}
+**[isis timer retransmit ***seconds*]
 
-[**[undo isis timer retransmit]{lang="EN-US"}**]{#struct_0_x1984_13510_x454045389}
+**[undo isis timer retransmit**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1648798358}
+【缺省情况】
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x2137069497}[在点到点链路上的重传时间间隔]{style="font-family:宋体"}[为]{style="font-family:宋体"}[5]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+LSP在点到点链路上的重传时间间隔为5秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_99810212}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_1215552824}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x767747254}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1088508326}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_715444725}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1796810139}
+【参数】
 
-[*[seconds]{lang="EN-US"}*]{#struct_0_x1984_13510_807917795}[：表示]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文的重传时间间隔，取值范围]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[300]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[seconds*]：表示LSP报文的重传时间间隔，取值范围1～300，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2033227193}
+【使用指导】
 
-[[在点到点链路上，发送的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x411653488}[需要得到对端的应答，否则将在重传时间间隔内重新发送该]{style="font-family:宋体"}[LSP]{lang="EN-US"}[；在广播链路上，]{style="font-family:宋体"}[DIS]{lang="EN-US"}[周期性广播]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[来实现]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[的同步，不需要进行此项配置。]{style="font-family:宋体"}
+在点到点链路上，发送的LSP需要得到对端的应答，否则将在重传时间间隔内重新发送该LSP；在广播链路上，DIS周期性广播CSNP来实现LSDB的同步，不需要进行此项配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_99351460}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_239082769}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_239648712}[在接口]{style="font-family:宋体"}[Serial2/1/1]{lang="EN-US"}[上配置]{style="font-family:宋体"}[LSP]{lang="EN-US"}[在点到点链路上的重传时间间隔]{style="font-family:宋体"}[为]{style="font-family:宋体"}[50]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 在接口Serial2/1/1上配置LSP在点到点链路上的重传时间间隔为50秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_220709197}
+\<Sysname\> system-view
 
-[\[Sysname\] interface serial 2/1/1]{lang="EN-US"}
+Sysname interface serial 2/1/1
 
-[\[Sysname-Serial2]{lang="NO-BOK"}[/1]{lang="EN-US"}[/1\] isis timer retransmit 50]{lang="NO-BOK"}
+Sysname-Serial2/1/1 isis timer retransmit 50
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1984_13510_x1494512629}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_2068822659}[在接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[上配置]{style="font-family:宋体"}[LSP]{lang="EN-US"}[在点到点链路上的重传时间间隔]{style="font-family:宋体"}[为]{style="font-family:宋体"}[50]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 在接口Vlan-interface10上配置LSP在点到点链路上的重传时间间隔为50秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_99416996}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] ]{lang="NO-BOK"}[isis circuit-type p2p]{lang="EN-US"}
+Sysname-Vlan-interface10 isis circuit-type p2p
 
-[\[Sysname-Vlan-interface10\] isis timer retransmit 50]{lang="NO-BOK"}
+Sysname-Vlan-interface10 isis timer retransmit 50
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1983532658}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[isis circuit-type p2p]{lang="EN-US"}**]{#struct_0_x1984_13510_x1722315370}
+·**isis circuit-type p2p**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[isis timer ]{lang="EN-US"}**]{#struct_0_x1984_13510_1157230960}**[lsp]{lang="EN-US"}**
-:::
-
-::: {#1045460818 .myid}
-[]{#_Toc404788406}[]{#struct_0_x1984_13510_946099484}[]{#_Toc357599184}[]{#_Toc352311299}
+·**isis timer ****lsp**
 
 **IS-IS \-- IS-IS配置命令 \-- isis topology enable**
 
 ------------------------------------------------------------------------
 
-[**[isis topology enable]{lang="EN-US"}**]{#struct_0_x1984_13510_946165020}[命令用来在接口使能拓扑的]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[isis topology enable**]命令用来在接口使能拓扑的IS-IS功能。
 
-[**[undo isis topology enable]{lang="EN-US"}**]{#struct_0_x1984_13510_946230556}[命令用来关闭此拓扑的]{style="font-family:
-宋体"}[IS-IS]{lang="EN-US"}[功能。]{style="font-family:
-宋体"}
+**[undo isis topology enable**]命令用来关闭此拓扑的IS-IS功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_920238332}
+【命令】
 
-[**[isis topology enable]{lang="EN-US"}**]{#struct_0_x1984_13510_946296092}
+**[isis topology enable**]
 
-[**[undo isis topology enable]{lang="EN-US"}**]{#struct_0_x1984_13510_946361628}
+**[undo isis topology enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_946427164}
+【缺省情况】
 
-[[没有使能拓扑的]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_946492700}[功能。]{style="font-family:宋体"}
+没有使能拓扑的IS-IS功能。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_946558236}
+【视图】
 
-[[接口]{style="font-family:宋体"}[IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_945968413}[单播拓扑视图]{style="font-family:宋体"}
+接口IPv4单播拓扑视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_946033949}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_946099485}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_946165021}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_946230557}
+【使用指导】
 
-[[本命令必须满足下面条件才能进行配置：]{style="font-family:宋体"}]{#struct_0_x1984_13510_946361629}
+本命令必须满足下面条件才能进行配置：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[接口使能了]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_946427165}[；]{lang="EN-US" style="font-family:宋体"}
+·接口使能了IS-IS；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[创建了]{lang="EN-US" style="font-family:宋体"}[IS-IS IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_946492701}[单播]{style="font-family:宋体"}[拓扑。]{lang="EN-US" style="font-family:宋体"}
+·创建了IS-IS IPv4单播拓扑。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_772514555}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_946558237}[在接口上]{style="font-family:宋体"}[IS-IS IPv4]{lang="EN-US"}[单播拓扑]{style="font-family:宋体"}[voice]{lang="EN-US"}[中使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[功能]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 在接口上IS-IS IPv4单播拓扑voice中使能IS-IS功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_946099482}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 100]{lang="EN-US"}
+Sysname isis 100
 
-[\[Sysname-isis-100\] address-family ipv4]{lang="EN-US"}
+Sysname-isis-100 address-family ipv4
 
-[\[Sysname-isis-100-ipv4\] topology voice tid 4000]{lang="EN-US"}
+Sysname-isis-100-ipv4 topology voice tid 4000
 
-[\[Sysname-isis-100-ipv4-topo-voice\] quit]{lang="EN-US"}
+Sysname-isis-100-ipv4-topo-voice quit
 
-[\[Sysname-isis-100-ipv4\] quit]{lang="EN-US"}
+Sysname-isis-100-ipv4 quit
 
-[\[Sysname-isis-100\] quit]{lang="EN-US"}
+Sysname-isis-100 quit
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-]{lang="EN-US"}[Gigabit]{lang="NO-BOK"}[Ethernet1/0/1\] isis enable 100]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis enable 100
 
-[\[Sysname-]{lang="EN-US"}[Gigabit]{lang="NO-BOK"}[Ethernet1/0/1\] topology ipv4 voice]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 topology ipv4 voice
 
-[\[Sysname-]{lang="EN-US"}[Gigabit]{lang="NO-BOK"}[Ethernet1/0/1-topo-voice\] isis topology enable]{lang="EN-US"}
-:::
-
-::::: {#-835536423 .myid}
-[]{#_Toc404788407}[]{#struct_0_x1984_13510_760096085}
+Sysname-GigabitEthernet1/0/1-topo-voice isis topology enable
 
 **IS-IS \-- IS-IS配置命令 \-- ispf enable**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IS-IS命令.files/image001.png){#图片 18 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1984_13510_1801784143}
-:::
+![说明](IS-IS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1984_13510_738063865}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[ispf enable**]命令用来使能IS-IS ISPF功能，即增量SPF计算功能。
 
-[**[ispf enable]{lang="EN-US"}**]{#struct_0_x1984_13510_143374313}[命令用来使能]{style="font-family:宋体"}[IS-IS ISPF]{lang="EN-US"}[功能，即增量]{style="font-family:宋体"}[SPF]{lang="EN-US"}[计算功能。]{style="font-family:宋体"}
+**[undo ispf enable**]命令用来关闭IS-IS ISPF功能。
 
-[**[undo ispf enable]{lang="EN-US"}**]{#struct_0_x1984_13510_1638238552}[命令用来关闭]{style="font-family:宋体"}[IS-IS ISPF]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_99482532}
+**[ispf enable**]
 
-[**[ispf enable]{lang="EN-US"}**]{#struct_0_x1984_13510_1081131112}
+**[undo ispf enable**]
 
-[**[undo ispf enable]{lang="EN-US"}**]{#struct_0_x1984_13510_x1118442513}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_527586046}
+使能IS-IS ISPF功能。
 
-[[使能]{style="font-family:宋体"}[IS-IS ISPF]{lang="EN-US"}]{#struct_0_x1984_13510_1845568153}[功能。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1288312824}
+IS-IS视图/IS-IS IPv4单播拓扑视图
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x1100566788}[视图]{style="font-family:宋体"}[/IS-IS IPv4]{lang="EN-US"}[单播拓扑视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x149614235}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1083883743}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_99548068}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x386966878}
+使能增量SPF计算功能后，当网络的拓扑结构发生变化影响到最短路径树的结构时，只将受影响的部分节点进行修正，而不重建整棵最短路径树。
 
-[[使能增量]{style="font-family:宋体"}[SPF]{lang="EN-US"}]{#struct_0_x1984_13510_2096836224}[计算功能后，当网络的拓扑结构发生变化影响到最短路径树的结构时，只将受影响的部分节点进行修正，而不重建整棵最短路径树。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1360147548}
+\# 使能增量SPF计算功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1759478766}[使能增量]{style="font-family:宋体"}[SPF]{lang="EN-US"}[计算功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x640824990}
+Sysname isis 1
 
-[\[Sysname\] isis 1]{lang="EN-US"}
-
-[\[Sysname-isis-1\] ispf enable]{lang="EN-US"}
-:::::
-
-::: {#-1193310726 .myid}
-[]{#_Toc404788408}[]{#struct_0_x1984_13510_1244675950}
+Sysname-isis-1 ispf enable
 
 **IS-IS \-- IS-IS配置命令 \-- is-level**
 
 ------------------------------------------------------------------------
 
-[**[is-level]{lang="EN-US"}**]{#struct_0_x1984_13510_488957374}[命令用来配置路由器的]{style="font-family:宋体"}[Level]{lang="EN-US"}[级别。]{style="font-family:宋体"}
+**[is-level**]命令用来配置路由器的Level级别。
 
-[**[undo is-level]{lang="EN-US"}**]{#struct_0_x1984_13510_100137892}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo is-level**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1007798503}
+【命令】
 
-[**[is-level]{lang="EN-US"}**[ { **level-1** \| **level-1-2** \| **level-2** }]{lang="EN-US"}]{#struct_0_x1984_13510_x1724331935}
+**[is-level**[ { **level-1** \| **level-1-2** \| **level-2** }]]
 
-[**[undo]{lang="EN-US"}**[ **is-level**]{lang="EN-US"}]{#struct_0_x1984_13510_x420431093}
+**[undo** **is-level**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1609201146}
+【缺省情况】
 
-[[路由器的的]{style="font-family:宋体"}[Level]{lang="EN-US"}]{#struct_0_x1984_13510_1601870026}[级别为]{style="font-family:宋体"}[Level-1-2]{lang="EN-US"}[。]{style="font-family:宋体"}
+路由器的的Level级别为Level-1-2。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x178838813}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x2020909526}[视图]{style="font-family:宋体"}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_100203428}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1870006706}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1124543155}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x275247584}
+【参数】
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_264980700}[：配置路由器工作在]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[，它只计算区域内路由，维护]{style="font-family:宋体"}[L1]{lang="EN-US"}[的]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[level-1**]：配置路由器工作在Level-1，它只计算区域内路由，维护L1的LSDB。
 
-[**[level-1-2]{lang="EN-US"}**]{#struct_0_x1984_13510_x115544347}[：配置路由器工作在]{style="font-family:宋体"}[Level-1-2]{lang="EN-US"}[，同时参与]{style="font-family:宋体"}[L1]{lang="EN-US"}[和]{style="font-family:宋体"}[L2]{lang="EN-US"}[的路由计算，维护]{style="font-family:宋体"}[L1]{lang="EN-US"}[和]{style="font-family:宋体"}[L2]{lang="EN-US"}[两个]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[level-1-2**]：配置路由器工作在Level-1-2，同时参与L1和L2的路由计算，维护L1和L2两个LSDB。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_x2066373394}[：配置路由器工作在]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[，只参加]{style="font-family:宋体"}[L2]{lang="EN-US"}[的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[交换和]{style="font-family:宋体"}[L2]{lang="EN-US"}[的路由计算，维护]{style="font-family:宋体"}[L2]{lang="EN-US"}[的]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[level-2**]：配置路由器工作在Level-2，只参加L2的LSP交换和L2的路由计算，维护L2的LSDB。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1082448758}
+【使用指导】
 
-[[如果只有一个区域，建议用户将所有路由器的]{style="font-family:宋体"}[Level]{lang="EN-US"}]{#struct_0_x1984_13510_915413246}[配置为]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[或者]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[，因为没有必要让所有路由器同时维护两个完全相同的数据库。]{style="font-family:宋体"}
+如果只有一个区域，建议用户将所有路由器的Level配置为Level-1或者Level-2，因为没有必要让所有路由器同时维护两个完全相同的数据库。
 
-[[在]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x1984_13510_99613605}[网络中使用时，建议将所有的路由器都配置为]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[，这[]{#_Hlt9930802}样有利于以后的扩展。]{style="font-family:宋体"}
+在IP网络中使用时，建议将所有的路由器都配置为Level-2，这样有利于以后的扩展。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_189482234}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_841117299}[配置路由器的]{style="font-family:宋体"}[Level]{lang="EN-US"}[级别为]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置路由器的Level级别为Level-1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_524563870}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] is-level level-1]{lang="EN-US"}
-:::
-
-::: {#-1398635010 .myid}
-[]{#_Toc163546297}[]{#_Toc50204112}[]{#_Toc33866111}[]{#_Toc404788409}[]{#struct_0_x1984_13510_x765339536}[]{#_Toc310604351}[]{#_Toc53487862}
+Sysname-isis-1 is-level level-1
 
 **IS-IS \-- IS-IS配置命令 \-- is-name**
 
 ------------------------------------------------------------------------
 
-[**[is-name]{lang="EN-US"}**]{#struct_0_x1984_13510_77525186}[命令用来使能动态主机名映射功能并为当前路由器配置主机名称。]{style="font-family:宋体"}
+**[is-name**]命令用来使能动态主机名映射功能并为当前路由器配置主机名称。
 
-[**[undo is-name]{lang="EN-US"}**]{#struct_0_x1984_13510_13678947}[命令用来关闭动态主机名映射功能。]{style="font-family:宋体"}
+**[undo is-name**]命令用来关闭动态主机名映射功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_99679141}
+【命令】
 
-[**[is-name ]{lang="EN-US"}***[sys-name]{lang="EN-US"}*]{#struct_0_x1984_13510_x211806356}
+**[is-name ***sys-name*]
 
-[**[undo is-name]{lang="EN-US"}**]{#struct_0_x1984_13510_606649426}
+**[undo is-name**]
 
-[[【]{style="font-family:黑体"}]{#struct_0_x1984_13510_2100561973}[缺省情况]{style="font-family:黑体"}[】]{style="font-family:黑体"}
+【缺省情况】
 
-[[动态主机名映射功能处于关闭状态且没有为当前路由器配置主机名称。]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1516139480}
+动态主机名映射功能处于关闭状态且没有为当前路由器配置主机名称。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1474571345}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_356968557}[视图]{style="font-family:宋体"}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2066509159}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1423102750}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_99744677}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x761107147}
+【参数】
 
-[*[sys-name]{lang="EN-US"}*]{#struct_0_x1984_13510_x1662824199}[：为本地]{style="font-family:宋体"}[IS]{lang="EN-US"}[配置的主机名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[64]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+*[sys-name*]：为本地IS配置的主机名称，为1～64个字符的字符串，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1848959386}
+【使用指导】
 
-[[只有使能动态主机名映射功能后，使用]{style="font-family:宋体"}**[display isis lsdb]{lang="EN-US"}**]{#struct_0_x1984_13510_x126323523}[等命令才可以看到路由器的主机名而不是]{style="font-family:宋体"}[System ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+只有使能动态主机名映射功能后，使用**display isis lsdb**等命令才可以看到路由器的主机名而不是System ID。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1824629046}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_613873275}[为本地]{style="font-family:宋体"}[IS]{lang="EN-US"}[配置主机名称。]{style="font-family:宋体"}
+\# 为本地IS配置主机名称。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x273686592}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] is-name RUTA]{lang="EN-US"}
+Sysname-isis-1 is-name RUTA
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_99810213}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display isis name-table]{lang="EN-US"}**]{#struct_0_x1984_13510_x1123099336}
-:::
-
-::: {#2119776104 .myid}
-[]{#_Toc404788410}[]{#struct_0_x1984_13510_1582963767}[]{#_Toc310604352}[]{#_Toc163546295}
+·**display isis name-table**
 
 **IS-IS \-- IS-IS配置命令 \-- is-name map**
 
 ------------------------------------------------------------------------
 
-[**[is-name map]{lang="EN-US"}**]{#struct_0_x1984_13510_1021641141}[命令用来为远端]{style="font-family:宋体"}[IS]{lang="EN-US"}[配置]{style="font-family:宋体"}[System ID]{lang="EN-US"}[与主机名称的映射关系。]{style="font-family:宋体"}
+**[is-name map**]命令用来为远端IS配置System ID与主机名称的映射关系。
 
-[**[undo is-name map]{lang="EN-US"}**]{#struct_0_x1984_13510_337750069}[命令用来取消此配置。]{style="font-family:宋体"}
+**[undo is-name map**]命令用来取消此配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x3789597}
+【命令】
 
-[**[is-name map]{lang="EN-US"}**[ *sys-id* *map-sys-name*]{lang="EN-US"}]{#struct_0_x1984_13510_x993457580}
+**[is-name map** *sys-id* *map-sys-name*]
 
-[**[undo]{lang="EN-US"}**[ **is-name map** *sys-id*]{lang="EN-US"}]{#struct_0_x1984_13510_1505598152}
+**[undo** **is-name map** *sys-id*]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1724987367}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_99351461}[视图]{style="font-family:宋体"}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2099569391}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x872793518}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_705787710}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1801247830}
+【参数】
 
-[*[sys-id]{lang="EN-US"}*]{#struct_0_x1984_13510_x1205173766}[：远端]{style="font-family:宋体"}[IS]{lang="EN-US"}[的系统]{style="font-family:宋体"}[ID]{lang="EN-US"}[或伪系统]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[sys-id*]：远端IS的系统ID或伪系统ID。
 
-[*[map-sys-name]{lang="EN-US"}*]{#struct_0_x1984_13510_x1477242800}[：为远端]{style="font-family:宋体"}[IS]{lang="EN-US"}[配置的主机名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[64]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+*[map-sys-name*]：为远端IS配置的主机名称，为1～64个字符的字符串，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1721036583}
+【使用指导】
 
-[[每个]{style="font-family:宋体"}[System ID]{lang="EN-US"}]{#struct_0_x1984_13510_x823626208}[只能对应一个主机名称。]{style="font-family:宋体"}
+每个System ID只能对应一个主机名称。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_99416997}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x355119502}[为远端]{style="font-family:宋体"}[IS]{lang="EN-US"}[配置静态主机名映射，远端]{style="font-family:宋体"}[IS]{lang="EN-US"}[的]{style="font-family:宋体"}[System ID]{lang="EN-US"}[为"]{style="font-family:宋体"}[0000.0000.0041]{lang="EN-US"}["，为其配置的主机名称为"]{style="font-family:宋体"}[RUTB]{lang="EN-US"}["。]{style="font-family:宋体"}
+\# 为远端IS配置静态主机名映射，远端IS的System ID为"0000.0000.0041"，为其配置的主机名称为"RUTB"。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_1502749251}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] is-name map 0000.0000.0041 RUTB]{lang="EN-US"}
+Sysname-isis-1 is-name map 0000.0000.0041 RUTB
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1591722762}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display isis name-table]{lang="EN-US"}**]{#struct_0_x1984_13510_x1482515118}
-:::
-
-::: {#-1110888516 .myid}
-[]{#_Toc404788411}[]{#struct_0_x1984_13510_x93240001}
+·**display isis name-table**
 
 **IS-IS \-- IS-IS配置命令 \-- log-peer-change**
 
 ------------------------------------------------------------------------
 
-[**[log-peer-change]{lang="EN-US"}**]{#struct_0_x1984_13510_1032774290}[命令用来打开邻接状态变化的输出开关。]{style="font-family:宋体"}
+**[log-peer-change**]命令用来打开邻接状态变化的输出开关。
 
-[**[undo log-peer-change]{lang="EN-US"}**]{#struct_0_x1984_13510_x1214299577}[命令用来关闭邻接状态变化的输出开关。]{style="font-family:宋体"}
+**[undo log-peer-change**]命令用来关闭邻接状态变化的输出开关。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_99482533}
+【命令】
 
-[**[log-peer-change]{lang="EN-US"}**]{#struct_0_x1984_13510_x875184024}
+**[log-peer-change**]
 
-[**[undo log-peer-change]{lang="EN-US"}**]{#struct_0_x1984_13510_x225258394}
+**[undo log-peer-change**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1261984379}
+【缺省情况】
 
-[[邻接状态变化的输出开关处于打开状态。]{style="font-family:宋体"}]{#struct_0_x1984_13510_x556714805}
+邻接状态变化的输出开关处于打开状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_935272511}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1680800690}[视图]{style="font-family:宋体"}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_433550962}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_214446202}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_99548069}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1951685282}
+【使用指导】
 
-[[打开邻接状态输出开关后，]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_903536080}[邻接状态变化]{style="font-family:宋体"}[时会生成日志信息发送到设备的信息中心，通过设置信息中心的参数，最终决定]{style="font-family:宋体"}[日志信息]{style="font-family:宋体"}[的输出规则（即是否允许输出以及输出方向）。（有关信息中心参数的配置请参见"网络管理和监控配置指导"中的"信息中心"。）]{style="font-family:宋体"}
+打开邻接状态输出开关后，IS-IS邻接状态变化时会生成日志信息发送到设备的信息中心，通过设置信息中心的参数，最终决定日志信息的输出规则（即是否允许输出以及输出方向）。（有关信息中心参数的配置请参见"网络管理和监控配置指导"中的"信息中心"。）
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_250295110}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_2984634}[关闭]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[邻接状态变化的输出开关。]{style="font-family:宋体"}
+\# 关闭IS-IS邻接状态变化的输出开关。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x404735550}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] undo log-peer-change]{lang="EN-US"}
-:::
-
-::: {#-1316377163 .myid}
-[]{#_Toc163546302}[]{#_Toc50204113}[]{#_Toc33866112}[]{#_Toc290886806}[]{#_Toc252200784}[]{#_Toc163546301}[]{#_Toc303839460}[]{#_Toc252200782}[]{#_Toc163546299}[]{#_Toc94930881}[]{#_Toc94586613}[]{#_Toc60036225}[]{#_Toc53707169}[]{#_Toc53487865}[]{#_Toc404788412}[]{#struct_0_x1984_13510_x733857655}[]{#_Toc310604363}[]{#_Toc290886803}[]{#_Toc252200781}[]{#_Toc163546298}[]{#_Toc94930880}[]{#_Toc94586612}[]{#_Toc60036224}[]{#_Toc53707168}[]{#_Toc53487864}
+Sysname-isis-1 undo log-peer-change
 
 **IS-IS \-- IS-IS配置命令 \-- lsp-fragments-extend**
 
 ------------------------------------------------------------------------
 
-[**[lsp-fragments--extend]{lang="EN-US"}**]{#struct_0_x1984_13510_1662354754}[命令用来在指定]{style="font-family:宋体"}[Level]{lang="EN-US"}[上使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[分片扩展功能。]{style="font-family:宋体"}
+**[lsp-fragments--extend**]命令用来在指定Level上使能IS-IS进程的LSP分片扩展功能。
 
-[**[undo lsp-fragments--extend]{lang="EN-US"}**]{#struct_0_x1984_13510_100137893}[命令用来关闭该功能。]{style="font-family:
-宋体"}
+**[undo lsp-fragments--extend**]命令用来关闭该功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1007798504}
+【命令】
 
-[**[lsp-fragments-extend]{lang="EN-US"}**[ \[ **level-1** \| **level-1-2** \| **level-2** \]]{lang="EN-US"}]{#struct_0_x1984_13510_x1724790687}
+**[lsp-fragments-extend**[ [ **level-1** \| **level-1-2** \| **level-2** ]]]
 
-[**[undo lsp-fragments-extend]{lang="EN-US"}**]{#struct_0_x1984_13510_310585054}
+**[undo lsp-fragments-extend**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1023600132}
+【缺省情况】
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_1024493417}[分片扩展功能处于关闭状态。]{style="font-family:宋体"}
+LSP分片扩展功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_49778988}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x2016116793}[视图]{style="font-family:宋体"}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_33577206}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_100203429}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1870006707}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1604340200}
+【参数】
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_x811785204}[：只对]{style="font-family:宋体"}[Level-1 LSP]{lang="EN-US"}[进行分片扩展。]{style="font-family:宋体"}
+**[level-1**]：只对Level-1 LSP进行分片扩展。
 
-[**[level-1-2]{lang="EN-US"}**]{#struct_0_x1984_13510_2034577553}[：对]{style="font-family:宋体"}[Level-1 LSP]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-2 LSP]{lang="EN-US"}[都进行分片扩展。]{style="font-family:宋体"}
+**[level-1-2**]：对Level-1 LSP和Level-2 LSP都进行分片扩展。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_208317167}[：只对]{style="font-family:宋体"}[Level-2 LSP]{lang="EN-US"}[进行分片扩展。]{style="font-family:宋体"}
+**[level-2**]：只对Level-2 LSP进行分片扩展。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1862852388}
+【使用指导】
 
-[[如果配置时没有指定]{style="font-family:宋体"}**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_x1042138110}[、]{style="font-family:宋体"}**[level-2]{lang="EN-US"}**[或]{style="font-family:宋体"}**[level-1-2]{lang="EN-US"}**[参数，]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程运行]{style="font-family:宋体"}[LSP]{lang="EN-US"}[分片扩展功能时，将同时对]{style="font-family:宋体"}[Level-1 LSP]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-2 LSP]{lang="EN-US"}[都进行分片扩展。]{style="font-family:宋体"}
+如果配置时没有指定**level-1**、**level-2**或**level-1-2**参数，IS-IS进程运行LSP分片扩展功能时，将同时对Level-1 LSP和Level-2 LSP都进行分片扩展。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x126632779}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_99613602}[使能]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[分片扩展功能。]{style="font-family:宋体"}
+\# 使能Level-2的LSP分片扩展功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x619821830}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] lsp-fragments-extend level-2]{lang="EN-US"}
-:::
-
-::: {#-446381553 .myid}
-[]{#_Toc404788413}[]{#struct_0_x1984_13510_1320509064}
+Sysname-isis-1 lsp-fragments-extend level-2
 
 **IS-IS \-- IS-IS配置命令 \-- lsp-length originate**
 
 ------------------------------------------------------------------------
 
-[**[lsp-length originate]{lang="EN-US"}**]{#struct_0_x1984_13510_1905085610}[命令用来配置当前路由器生成的]{style="font-family:宋体"}[Level-1 LSP]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-2 LSP]{lang="EN-US"}[的最大长度。]{style="font-family:宋体"}
+**[lsp-length originate**]命令用来配置当前路由器生成的Level-1 LSP和Level-2 LSP的最大长度。
 
-[**[undo lsp-length originate]{lang="EN-US"}**]{#struct_0_x1984_13510_x1311347984}[命令用来取消该配置。]{style="font-family:
-宋体"}
+**[undo lsp-length originate**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2008859394}
+【命令】
 
-[**[lsp-length originate ]{lang="EN-US"}***[size]{lang="EN-US"}***[ ]{lang="EN-US"}**[\[ **level-1** \| **level-2** \]]{lang="EN-US"}]{#struct_0_x1984_13510_1592012765}
+**[lsp-length originate ***size*****[[ **level-1** \| **level-2** ]]]
 
-[**[undo lsp-length originate]{lang="EN-US"}**[ \[ **level-1** \| **level-2** \]]{lang="EN-US"}]{#struct_0_x1984_13510_x422875268}
+**[undo lsp-length originate**[ [ **level-1** \| **level-2** ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_99679138}
+【缺省情况】
 
-[[生成的]{style="font-family:宋体"}[Level-1 LSP]{lang="EN-US"}]{#struct_0_x1984_13510_927310545}[和]{style="font-family:宋体"}[Level-2 LSP]{lang="EN-US"}[的最大长度均为]{style="font-family:宋体"}[1497]{lang="EN-US"}[个字节。]{style="font-family:宋体"}
+生成的Level-1 LSP和Level-2 LSP的最大长度均为1497个字节。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1178841286}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x2017083540}[视图]{style="font-family:宋体"}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1474437493}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x203701250}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1584830947}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1417239757}
+【参数】
 
-[*[size]{lang="EN-US"}*]{#struct_0_x1984_13510_99744674}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最大长度，取值范围为]{style="font-family:宋体"}[512]{lang="EN-US"}[～]{style="font-family:宋体"}[16384]{lang="EN-US"}[，单位为字节。]{style="font-family:宋体"}
+*[size*]：LSP的最大长度，取值范围为512～16384，单位为字节。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_1577545013}[：配置]{style="font-family:宋体"}[Level-1 LSP]{lang="EN-US"}[长度。]{style="font-family:宋体"}
+**[level-1**]：配置Level-1 LSP长度。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_608932403}[：配置]{style="font-family:宋体"}[Level-2 LSP]{lang="EN-US"}[长度。]{style="font-family:宋体"}
+**[level-2**]：配置Level-2 LSP长度。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2077611081}
+【使用指导】
 
-[[如果命令中没有指定]{style="font-family:宋体"}[Level-1]{lang="EN-US"}]{#struct_0_x1984_13510_x927281807}[或]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[，则默认为对当前]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[系统进行配置。]{style="font-family:宋体"}
+如果命令中没有指定Level-1或Level-2，则默认为对当前IS-IS系统进行配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1025996113}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1266174340}[配置生成的]{style="font-family:宋体"}[Level-2 LSP]{lang="EN-US"}[最大长度为]{style="font-family:宋体"}[1024]{lang="EN-US"}[字节。]{style="font-family:宋体"}
+\# 配置生成的Level-2 LSP最大长度为1024字节。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_13444637}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] lsp-length originate 1024 level-2]{lang="EN-US"}
-:::
-
-::: {#-1321064373 .myid}
-[]{#_Toc404788414}[]{#struct_0_x1984_13510_99810210}[]{#_Toc303839461}[]{#_Toc252200783}[]{#_Toc163546300}
+Sysname-isis-1 lsp-length originate 1024 level-2
 
 **IS-IS \-- IS-IS配置命令 \-- lsp-length receive**
 
 ------------------------------------------------------------------------
 
-[**[lsp-length receive]{lang="EN-US"}**]{#struct_0_x1984_13510_833215800}[命令用来配置当前路由器可以接收的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最大长度。]{style="font-family:宋体"}
+**[lsp-length receive**]命令用来配置当前路由器可以接收的LSP的最大长度。
 
-[**[undo lsp-length receive]{lang="EN-US"}**]{#struct_0_x1984_13510_751031195}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo lsp-length receive**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1661634907}
+【命令】
 
-[**[lsp-length receive ]{lang="EN-US"}***[size]{lang="EN-US"}*]{#struct_0_x1984_13510_872107322}
+**[lsp-length receive ***size*]
 
-[**[undo lsp-length receive]{lang="EN-US"}**]{#struct_0_x1984_13510_x720983237}
+**[undo lsp-length receive**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2060803982}
+【缺省情况】
 
-[[可以接收的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x986536932}[的最大长度为]{style="font-family:宋体"}[1497]{lang="EN-US"}[个字节。]{style="font-family:宋体"}
+可以接收的LSP的最大长度为1497个字节。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_781135360}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_99351458}[视图]{style="font-family:宋体"}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x886980800}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1795507535}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_854052005}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1604166378}
+【参数】
 
-[*[size]{lang="EN-US"}*]{#struct_0_x1984_13510_2019973520}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最大长度，取值范围为]{style="font-family:宋体"}[512]{lang="EN-US"}[～]{style="font-family:宋体"}[16384]{lang="EN-US"}[，单位为字节。]{style="font-family:宋体"}
+*[size*]：LSP的最大长度，取值范围为512～16384，单位为字节。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_228891016}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1310157218}[配置接收]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文最大长度为]{style="font-family:宋体"}[1024]{lang="EN-US"}[字节。]{style="font-family:宋体"}
+\# 配置接收LSP报文最大长度为1024字节。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_99416994}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] lsp-length receive 1024]{lang="EN-US"}
-:::
-
-::::: {#1012649285 .myid}
-[]{#_Toc404788415}[]{#struct_0_x1984_13510_1601195634}
+Sysname-isis-1 lsp-length receive 1024
 
 **IS-IS \-- IS-IS配置命令 \-- maximum load-balancing**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IS-IS命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1984_13510_170027730}
-:::
+![说明](IS-IS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1984_13510_351306236}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[maximum load**-**balancing**]命令用来配置IS-IS支持的等价路由的最大条数。
 
-[**[maximum load]{lang="EN-US"}**[-**balancing**]{lang="EN-US"}]{#struct_0_x1984_13510_1736053606}[命令用来配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[支持的等价路由的最大条数。]{style="font-family:宋体"}
+**[undo maximum load-balancing**]命令用来恢复缺省情况。
 
-[**[undo maximum load-balancing]{lang="EN-US"}**]{#struct_0_x1984_13510_209160629}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1343763869}
+**[maximum load-balancing ***number*]
 
-[**[maximum load-balancing ]{lang="EN-US"}***[number]{lang="EN-US"}*]{#struct_0_x1984_13510_x370225440}
+**[undo** **maximum load-balancing**]
 
-[**[undo]{lang="EN-US"}**[ **maximum load-balancing**]{lang="EN-US"}]{#struct_0_x1984_13510_x1613275222}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_99482530}
+IS-IS支持的等价路由的最大条数与系统支持最大等价路由的条数相同。
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1463468136}[支持的等价路由的最大条数与]{style="font-family:宋体"}[系统支持最大等价路由的条数相同。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_978693745}
+IS-IS IPv4单播地址族视图/IS-IS IPv4单播拓扑视图
 
-[[IS-IS IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_x1769081802}[单播地址族视图]{style="font-family:宋体"}[/IS-IS IPv4]{lang="EN-US"}[单播拓扑视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1147735626}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x345399468}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x610325914}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_740372523}
+*[number*]：等价路由的最大条数。不同设备支持的取值范围和缺省值不同，请以设备的实际情况为准。
 
-[*[number]{lang="EN-US"}*]{#struct_0_x1984_13510_590565541}[：等价路由的最大条数]{style="font-family:宋体"}[。不同设备支持的取值范围和缺省值不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_99548066}
+如果通过**max-ecmp-num**命令配置系统支持最大等价路由的条数为m，则本命令的缺省值为m，取值范围为1～m。
 
-[[如果通过]{style="font-family:宋体"}**[max-ecmp-num]{lang="EN-US"}**]{#struct_0_x1984_13510_1524718242}[命令配置系统支持最大等价路由的条数为]{style="font-family:宋体"}[m]{lang="EN-US"}[，则本命令的缺省值为]{style="font-family:宋体"}[m]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[m]{lang="EN-US"}[。]{style="font-family:
-宋体"}
+**[max-ecmp-num**]命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[max-ecmp-num]{lang="EN-US"}**]{#struct_0_x1984_13510_x1154792549}[命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x819799982}
+\# 配置IS-IS支持的等价路由的最大条数为2。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_281215749}[配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[支持的等价路由的最大条数为]{style="font-family:宋体"}[2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x812356379}
+Sysname isis 100
 
-[\[Sysname\] isis 100]{lang="EN-US"}
+Sysname-isis-100 address-family ipv4
 
-[\[Sysname-isis-100\] address-family ipv4]{lang="EN-US"}
+Sysname-isis-1-ipv4 maximum load-balancing 2
 
-[\[Sysname-isis-1-ipv4\]]{lang="EN-US"}[ maximum load-balancing 2]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1108851577}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[max-ecmp-num]{lang="EN-US"}**]{#struct_0_x1984_13510_638883714}[（三层技术]{style="font-family:宋体"}[-IP]{lang="EN-US"}[路由命令参考]{style="font-family:宋体"}[/IP]{lang="EN-US"}[路由基础）]{style="font-family:宋体"}
-:::::
-
-::: {#-1364991054 .myid}
-[]{#_Toc404788416}[]{#struct_0_x1984_13510_688437442}
+·**max-ecmp-num**（三层技术-IP路由命令参考/IP路由基础）
 
 **IS-IS \-- IS-IS配置命令 \-- network-entity**
 
 ------------------------------------------------------------------------
 
-[**[network-entity]{lang="EN-US"}**]{#struct_0_x1984_13510_100137890}[命令用来配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的网络实体名称（]{style="font-family:宋体"}[Network Entity Title]{lang="EN-US"}[，简称]{style="font-family:宋体"}[NET]{lang="EN-US"}[）。]{style="font-family:宋体"}
+**[network-entity**]命令用来配置IS-IS进程的网络实体名称（Network Entity Title，简称NET）。
 
-[**[undo network-entity]{lang="EN-US"}**]{#struct_0_x1984_13510_1007798501}[命令用来删除网络实体名称。]{style="font-family:宋体"}
+**[undo network-entity**]命令用来删除网络实体名称。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1724463007}
+【命令】
 
-[**[network-entity]{lang="EN-US"}**[ *net*]{lang="EN-US"}]{#struct_0_x1984_13510_380705571}
+**[network-entity** *net*]
 
-[**[undo]{lang="EN-US"}**[ **network-entity** *net*]{lang="EN-US"}]{#struct_0_x1984_13510_x1192140178}
+**[undo** **network-entity** *net*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2122112609}
+【缺省情况】
 
-[[没有配置]{style="font-family:宋体"}[NET]{lang="EN-US"}]{#struct_0_x1984_13510_362476936}[。]{style="font-family:宋体"}
+没有配置NET。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_35865849}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1234057700}[视图]{style="font-family:宋体"}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_100203426}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1870006692}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1200596922}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1264454779}
+【参数】
 
-[*[net]{lang="EN-US"}*]{#struct_0_x1984_13510_x258071119}[：格式为]{style="font-family:宋体"}[X...X.XXXX\....XXXX.00]{lang="EN-US"}[，为十六进制数。前面的"]{style="font-family:宋体"}[X...X]{lang="EN-US"}["是区域地址，中间的]{style="font-family:宋体"}[12]{lang="EN-US"}[个"]{style="font-family:宋体"}[X]{lang="EN-US"}["是路由器的]{style="font-family:宋体"}[System ID]{lang="EN-US"}[，最后的"]{style="font-family:宋体"}[00]{lang="EN-US"}["]{style="font-family:宋体"}[是]{style="font-family:宋体"}[SEL]{lang="EN-US"}[。]{style="font-family:宋体"}[]{#_Hlt9849512}
+*[net*]：格式为X...X.XXXX\....XXXX.00，为十六进制数。前面的"X...X"是区域地址，中间的12个"X"是路由器的System ID，最后的"00"是SEL。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1055489289}
+【使用指导】
 
-[[NET]{lang="EN-US"}]{#struct_0_x1984_13510_x493726510}[可以看作是一类特殊的]{style="font-family:宋体"}[NSAP]{lang="EN-US"}[，即]{style="font-family:宋体"}[SEL]{lang="EN-US"}[为]{style="font-family:宋体"}[0]{lang="EN-US"}[的]{style="font-family:
-宋体"}[NSAP]{lang="EN-US"}[地址，长度为]{style="font-family:宋体"}[8]{lang="EN-US"}[～]{style="font-family:宋体"}[20]{lang="EN-US"}[个字节。]{style="font-family:宋体"}
+NET可以看作是一类特殊的NSAP，即SEL为0的NSAP地址，长度为8～20个字节。
 
-[[NET]{lang="EN-US"}]{#struct_0_x1984_13510_x631435393}[由三部分组成：]{style="font-family:宋体"}
+NET由三部分组成：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[区域]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1881367660}[ID]{lang="EN-US"}[：它的长度可变的，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[13]{lang="EN-US"}[个字节。]{style="font-family:宋体"}
+·区域ID：它的长度可变的，为1～13个字节。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[System ID]{lang="EN-US"}]{#struct_0_x1984_13510_99613603}[：用来在区域内唯一标识主机或路由器，它的长度固定为]{style="font-family:
-宋体"}[6]{lang="EN-US"}[个字节。]{style="font-family:宋体"}
+·System ID：用来在区域内唯一标识主机或路由器，它的长度固定为6个字节。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SEL]{lang="EN-US"}]{#struct_0_x1984_13510_1336493306}[：为]{style="font-family:宋体"}[0]{lang="EN-US"}[，它的长度固定为]{style="font-family:宋体"}[1]{lang="EN-US"}[个字节。]{style="font-family:宋体"}
+·SEL：为0，它的长度固定为1个字节。
 
-[]{#struct_0_x1984_13510_2059962674}[]{#_Hlt9848777}[例如]{style="font-family:宋体"}[NET]{lang="EN-US"}[为：]{style="font-family:宋体"}[ab.cdef.1234.5678.9abc.00]{lang="EN-US"}[，则其中区域]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[ab.cdef]{lang="EN-US"}[，]{style="font-family:宋体"}[System ID]{lang="EN-US"}[为]{style="font-family:宋体"}[1234.5678.9abc]{lang="EN-US"}[，]{style="font-family:宋体"}[SEL]{lang="EN-US"}[为]{style="font-family:宋体"}[00]{lang="EN-US"}[。]{style="font-family:宋体"}
+例如NET为：ab.cdef.1234.5678.9abc.00，则其中区域ID为ab.cdef，System ID为1234.5678.9abc，SEL为00。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_820915722}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1466669925}[指定]{style="font-family:宋体"}[NET]{lang="EN-US"}[为]{style="font-family:宋体"}[10.0001.1010.1020.1030.00]{lang="EN-US"}[。其中区域]{style="font-family:宋体"}[ID]{lang="EN-US"}[是]{style="font-family:宋体"}[10.0001]{lang="EN-US"}[，]{style="font-family:宋体"}[System ID]{lang="EN-US"}[是]{style="font-family:宋体"}[1010.1020.1030]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 指定NET为10.0001.1010.1020.1030.00。其中区域ID是10.0001，System ID是1010.1020.1030。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x1983044789}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] network-entity 10.0001.1010.1020.1030.00]{lang="EN-US"}
+Sysname-isis-1 network-entity 10.0001.1010.1020.1030.00
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1297298565}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}]{#struct_0_x1984_13510_2138951587}**[isis]{lang="EN-US"}**
+·**isis**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}]{#struct_0_x1984_13510_99679139}**[isis]{lang="EN-US"}[ enable]{lang="EN-US"}**
-:::
-
-::::: {#-1554088180 .myid}
-[]{#_Toc163546304}[]{#_Toc50204115}[]{#_Toc33866114}[]{#_Toc404788417}[]{#struct_0_x1984_13510_x1411341615}[]{#_Toc332962826}
+·**isis enable**
 
 **IS-IS \-- IS-IS配置命令 \-- non-stop-routing**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IS-IS命令.files/image002.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1984_13510_x1795206013}
-:::
+![说明](IS-IS命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1984_13510_788279554}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[non-stop-routing]{lang="EN-US"}**]{#struct_0_x1984_13510_833135658}[命令用来使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议的]{style="font-family:宋体"}[NSR]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[non-stop-routing**]命令用来使能IS-IS协议的NSR功能。
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x1984_13510_939869655}**[non-stop-routing]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议的]{style="font-family:宋体"}[NSR]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo **]**non-stop-routing**命令用来关闭IS-IS协议的NSR功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1514119356}
+【命令】
 
-[**[non-stop-routing]{lang="EN-US"}**]{#struct_0_x1984_13510_1732222722}
+**[non-stop-routing**]
 
-[**[undo non-stop-routing]{lang="EN-US"}**]{#struct_0_x1984_13510_x1074332016}
+**[undo non-stop-routing**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_99744675}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x378770123}[视图]{style="font-family:宋体"}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x997850460}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_121579175}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x2003464146}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_736948871}
+【使用指导】
 
-[[IS-IS NSR]{lang="EN-US"}]{#struct_0_x1984_13510_1637782665}[特性与]{style="font-family:宋体"}[IS-IS GR]{lang="EN-US"}[特性互斥，即]{style="font-family:宋体"}**[non-stop-routing]{lang="EN-US"}**[和]{style="font-family:宋体"}**[graceful-restart]{lang="EN-US"}**[命令互斥，不能同时配置。]{style="font-family:宋体"}
+IS-IS NSR特性与IS-IS GR特性互斥，即**non-stop-routing**和**graceful-restart**命令互斥，不能同时配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1627192809}
+【举例】
 
-[[\#]{lang="EN-US"}]{#struct_0_x1984_13510_99810211}[在]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[中使能]{style="font-family:宋体"}[NSR]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\#在IS-IS进程1中使能NSR功能。
 
-[[\<Sysname\> system-view]{lang="EN-US" style="font-size:8.5pt;
-font-family:\"Courier New\""}]{#struct_0_x1984_13510_x1505436360}
+\<Sysname\> system-view
 
-[[\[Sysname\] isis 1]{lang="EN-US" style="font-size:8.5pt;
-font-family:\"Courier New\""}]{#struct_0_x1984_13510_x1980837047}
+Sysname isis 1
 
-[[\[Sysname-isis-1\] non-stop-routing]{lang="EN-US" style="font-size:8.5pt;
-font-family:\"Courier New\""}]{#struct_0_x1984_13510_x1972938020}
-:::::
-
-::::: {#537581611 .myid}
-[]{#_Toc404788418}[]{#struct_0_x1984_13510_x1782587261}[]{#_Toc356910955}
+Sysname-isis-1 non-stop-routing
 
 **IS-IS \-- IS-IS配置命令 \-- pic**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IS-IS命令.files/image002.png){#图片 6 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1984_13510_x1782521725}
-:::
+![说明](IS-IS命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1984_13510_x1782456189}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[pic]{lang="EN-US"}**]{#struct_0_x1984_13510_x1782390653}[命令用来使能前缀无关收敛功能。]{style="font-family:宋体"}
+**[pic**]命令用来使能前缀无关收敛功能。
 
-[**[undo pic]{lang="EN-US"}**]{#struct_0_x1984_13510_x1782325117}[命令用来]{style="font-family:宋体"}[关闭]{style="font-family:宋体"}[前缀无关收敛功能。]{style="font-family:宋体"}
+**[undo pic**]命令用来关闭前缀无关收敛功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1782914940}
+【命令】
 
-[**[pic]{lang="EN-US" style="color:black"}**[ \[ **[additional-path-always]{style="color:black"}** \]]{lang="EN-US"}]{#struct_0_x1984_13510_x1782849404}
+**[pic** [ **[additional-path-always** ]]]
 
-[**[undo ]{lang="EN-US" style="color:black"}[pic]{lang="EN-US" style="color:black"}**]{#struct_0_x1984_13510_x1782783868}
+**[undo pic**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1869662298}
+【缺省情况】
 
-[[前缀无关收敛]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1782718332}[功能处于开启状态。]{style="font-family:宋体"}
+前缀无关收敛功能处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1782652796}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x1782587260}[视图]{style="font-family:宋体"}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1782521724}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1782456188}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1782390652}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1782325116}
+【参数】
 
-[**[additional-path-always]{lang="EN-US"}**]{#struct_0_x1984_13510_x1782914943}[：支持非直连的次优路由作为备份。]{style="font-family:宋体"}
+**[additional-path-always**]：支持非直连的次优路由作为备份。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1782849407}
+【使用指导】
 
-[[PIC]{lang="EN-US"}]{#struct_0_x1984_13510_x1782783871}[（]{style="font-family:宋体"}[Prefix Independent Convergence]{lang="EN-US"}[，前缀无关收敛），即收敛时间与前缀数量无关，加快收敛速度。传统的路由计算快速收敛都与前缀数量相关，收敛时间与前缀数量成正比。只有邻居发送的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[才会进行]{style="font-family:宋体"}[PIC]{lang="EN-US"}[。]{style="font-family:宋体"}
+PIC（Prefix Independent Convergence，前缀无关收敛），即收敛时间与前缀数量无关，加快收敛速度。传统的路由计算快速收敛都与前缀数量相关，收敛时间与前缀数量成正比。只有邻居发送的LSP才会进行PIC。
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x1782718335}[快速重路由功能和]{style="font-family:宋体"}[PIC]{lang="EN-US"}[同时配置时，]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[快速重路由功能生效。]{style="font-family:宋体"}
+IS-IS快速重路由功能和PIC同时配置时，IS-IS快速重路由功能生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1782652799}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1782587263}[使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议的]{style="font-family:宋体"}[PIC]{lang="EN-US"}[支持非直连次优路由做备份功能。]{style="font-family:宋体"}
+\# 使能IS-IS协议的PIC支持非直连次优路由做备份功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x1782456191}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] pic additional-path-always]{lang="EN-US"}
-:::::
-
-::: {#830408614 .myid}
-[]{#_Toc404788419}[]{#struct_0_x1984_13510_x1879418082}
+Sysname-isis-1 pic additional-path-always
 
 **IS-IS \-- IS-IS配置命令 \-- preference**
 
 ------------------------------------------------------------------------
 
-[**[preference]{lang="EN-US"}**]{#struct_0_x1984_13510_622430784}[命令用来配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[路由优先级。]{style="font-family:宋体"}
+**[preference**]命令用来配置IS-IS路由优先级。
 
-[**[undo preference]{lang="EN-US"}**]{#struct_0_x1984_13510_x401366751}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo preference**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1600857540}
+【命令】
 
-[**[preference]{lang="EN-US"}**[ { *preference* \| **route-policy** *route-policy-name* } \*]{lang="EN-US"}]{#struct_0_x1984_13510_x1189837549}
+**[preference**[ { *preference* \| **route-policy** *route-policy-name* } \*]]
 
-[**[undo preference]{lang="EN-US"}**]{#struct_0_x1984_13510_99351459}
+**[undo preference**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1069334336}
+【缺省情况】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1156064862}[路由的优先级为]{style="font-family:宋体"}[15]{lang="EN-US"}[。]{style="font-family:宋体"}
+IS-IS路由的优先级为15。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1223250603}
+【视图】
 
-[[IS-IS IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_452867106}[单播地址族视图]{style="font-family:宋体"}[/IS-IS IPv4]{lang="EN-US"}[单播拓扑视图]{style="font-family:宋体"}
+IS-IS IPv4单播地址族视图/IS-IS IPv4单播拓扑视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1480027073}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1477030572}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1596209333}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1038336134}
+【参数】
 
-[*[preference]{lang="EN-US"}*]{#struct_0_x1984_13510_99416995}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[路由]{style="font-family:宋体"}[优先级，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[preference*]：IS-IS路由优先级，取值范围为1～255。
 
-[**[route-policy]{lang="EN-US"}***[ route-policy-name]{lang="EN-US"}*]{#struct_0_x1984_13510_x737456526}[：指定路由策略，对通过该路由策略过滤的路由指定优先级。]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[route-policy*** route-policy-name*]：指定路由策略，对通过该路由策略过滤的路由指定优先级。*route-policy-name*为1～63个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1441069406}
+【使用指导】
 
-[[配置了]{style="font-family:宋体"}**[route-policy]{lang="EN-US"}**]{#struct_0_x1984_13510_1713593673}[参数后，如果]{style="font-family:宋体"}**[route-policy]{lang="EN-US"}**[中对某些匹配的路由优先级进行了修改，则这些匹配的路由取]{style="font-family:宋体"}**[route-policy]{lang="EN-US"}**[修改的优先级，其它路由的优先级均取]{style="font-family:宋体"}**[preference]{lang="EN-US"}**[命令所设的值。]{style="font-family:宋体"}
+配置了**route-policy**参数后，如果**route-policy**中对某些匹配的路由优先级进行了修改，则这些匹配的路由取**route-policy**修改的优先级，其它路由的优先级均取**preference**命令所设的值。
 
-[[由于在一台路由器上可能同时运行多种动态路由协议，就存在各个路由协议之间路由信息共享和选择的问题。系统为每一种路由协议配置一个优先级，当不同协议都发现了到同一目的地的路由时，优先级高的协议将起决定作用。]{style="font-family:宋体"}]{#struct_0_x1984_13510_1968678573}
+由于在一台路由器上可能同时运行多种动态路由协议，就存在各个路由协议之间路由信息共享和选择的问题。系统为每一种路由协议配置一个优先级，当不同协议都发现了到同一目的地的路由时，优先级高的协议将起决定作用。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1512025771}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_2088461052}[配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议的优先级为]{style="font-family:宋体"}[25]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置IS-IS协议的优先级为25。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_1831264269}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv4]{lang="EN-US"}
+Sysname-isis-1 address-family ipv4
 
-[\[Sysname-isis-1-ipv4\]]{lang="EN-US"}[ preference 25]{lang="EN-US"}
-:::
-
-::: {#-330683803 .myid}
-[]{#_Toc404788420}[]{#struct_0_x1984_13510_x199081229}[]{#_Toc290886812}[]{#_Toc280710927}[]{#_Toc280362185}
+Sysname-isis-1-ipv4 preference 25
 
 **IS-IS \-- IS-IS配置命令 \-- prefix-priority**
 
 ------------------------------------------------------------------------
 
-[**[prefix-priority]{lang="EN-US"}**]{#struct_0_x1984_13510_99482531}[命令用来配置指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[路由收敛的优先级。]{style="font-family:宋体"}
+**[prefix-priority**]命令用来配置指定IS-IS路由收敛的优先级。
 
-[**[undo ]{lang="EN-US"}[prefix-priority]{lang="EN-US"}**]{#struct_0_x1984_13510_x492847000}[命令用来取消该配置。]{style="font-family:宋体"}
+**[undo prefix-priority**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1737595716}
+【命令】
 
-[**[prefix-priority]{lang="EN-US"}**[ { **critical** \| **high** \| **medium** } { **prefix-list** *prefix-list-name* \| **tag** *tag-value* }]{lang="EN-US"}]{#struct_0_x1984_13510_1486409071}
+**[prefix-priority**[ { **critical** \| **high** \| **medium** } { **prefix-list** *prefix-list-name* \| **tag** *tag-value* }]]
 
-[**[prefix-priority]{lang="EN-US"}**[ **route-policy** *route-policy-name*]{lang="EN-US"}]{#struct_0_x1984_13510_x1782521726}
+**[prefix-priority** **route-policy** *route-policy-name*]
 
-[**[undo prefix-priority]{lang="EN-US"}**[ { **critical** \| **high** \| **medium** } \[ **prefix-list** \| **tag** \]]{lang="EN-US"}]{#struct_0_x1984_13510_604260014}
+**[undo prefix-priority**[ { **critical** \| **high** \| **medium** } [ **prefix-list** \| **tag** ]]]
 
-[**[undo prefix-priority]{lang="EN-US"}**[ **route-policy**]{lang="EN-US"}]{#struct_0_x1984_13510_x1782390654}
+**[undo prefix-priority** **route-policy**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1493181735}
+【缺省情况】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x630070286}[路由收敛的优先级为低优先级。]{style="font-family:宋体"}
+IS-IS路由收敛的优先级为低优先级。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x323559002}
+【视图】
 
-[[IS-IS IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_x1336206676}[单播地址族视图]{style="font-family:宋体"}[/IS-IS IPv4]{lang="EN-US"}[单播拓扑视图]{style="font-family:宋体"}
+IS-IS IPv4单播地址族视图/IS-IS IPv4单播拓扑视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_99548067}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x431596894}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1736509113}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1344392862}
+【参数】
 
-[**[critical]{lang="EN-US"}**]{#struct_0_x1984_13510_431696723}[：最高优先级。]{style="font-family:宋体"}
+**[critical**]：最高优先级。
 
-[**[high]{lang="EN-US"}**]{#struct_0_x1984_13510_26764149}[：高优先级。]{style="font-family:宋体"}
+**[high**]：高优先级。
 
-[**[medium]{lang="EN-US"}**]{#struct_0_x1984_13510_x860555431}[：中优先级。]{style="font-family:宋体"}
+**[medium**]：中优先级。
 
-[**[prefix-list ]{lang="EN-US"}***[prefix-list-name]{lang="EN-US"}*]{#struct_0_x1984_13510_x904370133}[：指定]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址前缀列表名，唯一标识一个]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址前缀列表。]{style="font-family:宋体"}*[prefix-list-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[prefix-list ***prefix-list-name*]：指定IPv4地址前缀列表名，唯一标识一个IPv4地址前缀列表。*prefix-list-name*为1～63个字符的字符串，区分大小写。
 
-[**[tag]{lang="EN-US"}***[ tag-value]{lang="EN-US"}*]{#struct_0_x1984_13510_x1680936700}[：指定要求的标记值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[tag*** tag-value*]：指定要求的标记值，取值范围为1～4294967295。
 
-[**[route-policy]{lang="EN-US"}**[ *route-policy-name*]{lang="EN-US"}]{#struct_0_x1984_13510_x1782783873}[：指定路由策略名，]{style="font-family:宋体"}[配置路由收敛的优先级]{style="font-family:宋体"}[。]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[route-policy** *route-policy-name*]：指定路由策略名，配置路由收敛的优先级。*route-policy-name*为1～63个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_100137891}
+【使用指导】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1007798502}[路由的优先级越高收敛的速度越快。]{style="font-family:宋体"}
+IS-IS路由的优先级越高收敛的速度越快。
 
-[[需要注意的是，]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x1724397471}[主机路由的优先级为中优先级。]{style="font-family:宋体"}
+需要注意的是，IS-IS主机路由的优先级为中优先级。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x710132314}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_903604450}[配置前缀列表]{style="font-family:宋体"}[standtest]{lang="EN-US"}[的]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[路由收敛的优先级为高优先级。]{style="font-family:宋体"}
+\# 配置前缀列表standtest的IS-IS路由收敛的优先级为高优先级。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_2045468727}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv4]{lang="EN-US"}
+Sysname-isis-1 address-family ipv4
 
-[\[Sysname-isis-1-ipv4\]]{lang="EN-US"}[ prefix-priority high prefix-list standtest]{lang="EN-US"}
-:::
-
-::: {#-1821009193 .myid}
-[]{#_Toc404788421}[]{#struct_0_x1984_13510_x639116109}
+Sysname-isis-1-ipv4 prefix-priority high prefix-list standtest
 
 **IS-IS \-- IS-IS配置命令 \-- reset isis all**
 
 ------------------------------------------------------------------------
 
-[**[reset isis all]{lang="EN-US"}**]{#struct_0_x1984_13510_x1269499687}[命令用来清除]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程所有的数据结构信息。]{style="font-family:宋体"}
+**[reset isis all**]命令用来清除IS-IS进程所有的数据结构信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_100203427}
+【命令】
 
-[**[reset isis all ]{lang="EN-US"}**[\[ ]{lang="EN-US"}*[process-id]{lang="EN-US"}***[ ]{lang="EN-US"}**[\] \[ **graceful-restart** \]]{lang="EN-US"}]{#struct_0_x1984_13510_x1870006693}
+**[reset isis all **\*[process-id*****  **graceful-restart** ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x365487019}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_1480216960}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x601595668}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_169752655}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1762442950}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_127541580}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_x1984_13510_x845245868}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，清除该]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程所有的数据结构信息。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535，清除该IS-IS进程所有的数据结构信息。
 
-[**[graceful-restart]{lang="EN-US"}**]{#struct_0_x1984_13510_99613600}[：清除]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[数据之后，通过]{style="font-family:宋体"}[GR]{lang="EN-US"}[方式来恢复。]{style="font-family:宋体"}
+**[graceful-restart**]：清除IS-IS数据之后，通过GR方式来恢复。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1002158854}
+【使用指导】
 
-[[如果未指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_858636028}[进程号，将清除所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的数据结构信息。]{style="font-family:宋体"}
+如果未指定IS-IS进程号，将清除所有IS-IS进程的数据结构信息。
 
-[[本命令用在某些需要立即刷新]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x1585933981}[的情况下。]{style="font-family:宋体"}
+本命令用在某些需要立即刷新LSP的情况下。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2096013640}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1365822866}[清除所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的数据结构信息。]{style="font-family:宋体"}
+\# 清除所有IS-IS进程的数据结构信息。
 
-[[\<Sysname\> reset isis all]{lang="EN-US"}]{#struct_0_x1984_13510_x796640256}
-:::
-
-::::: {#-1340509168 .myid}
-[]{#_Toc297189189}[]{#_Toc290886818}[]{#_Toc252200794}[]{#_Toc163546310}[]{#_Toc50204122}[]{#_Toc33866121}[]{#_Toc310604370}[]{#_Toc290886814}[]{#_Toc252200790}[]{#_Toc163546305}[]{#_Toc50204116}[]{#_Toc33866115}[]{#_Toc404788422}[]{#struct_0_x1984_13510_x442816917}[]{#_Toc332962830}
+\<Sysname\> reset isis all
 
 **IS-IS \-- IS-IS配置命令 \-- reset isis graceful-restart event-log**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IS-IS命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1984_13510_486495791}
-:::
+![说明](IS-IS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1984_13510_99679136}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[reset isis graceful-restart event-log**]命令用来清除IS-ISGR的日志信息。
 
-[**[reset isis ]{lang="EN-US"}[graceful-restart event-log]{lang="EN-US"}**]{#struct_0_x1984_13510_x1749048623}[命令用来清除]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[ ]{lang="EN-US" style="font-family:宋体"}[GR]{lang="EN-US"}[的日志信息。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1903817844}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}]{#struct_0_x1984_13510_x2017057706}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+**[reset isis **]**graceful-restart event-log slot** *slot-number* [ **cpu** *cpu-number* ]
 
-[**[reset ]{lang="EN-US"}[isis ]{lang="EN-US"}**]{#struct_0_x1984_13510_x797976942}**[graceful-restart]{lang="EN-US"}[ event-log slot]{lang="EN-US"}**[ *slot-number* \[ **cpu** *cpu-number* \]]{lang="EN-US"}
+分布式设备－IRF模式：
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1984_13510_303501243}[模式：]{style="font-family:宋体"}
+**[reset isis **]**graceful-restart event-log chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number* ]
 
-[**[reset ]{lang="EN-US"}[isis ]{lang="EN-US"}**]{#struct_0_x1984_13510_x572721716}**[graceful-restart]{lang="EN-US"}[ event-log chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \]]{lang="EN-US"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1083798011}
+用户视图
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_1847689568}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_99744672}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_430533941}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x33216454}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x359002208}
+**[slot**]* slot-number*：清除指定单板的IS-IS GR日志信息，*slot-number*表示单板所在的槽位号。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**]{#struct_0_x1984_13510_1245775983}*[ slot-number]{lang="EN-US"}*[：清除指定单板的]{style="font-family:宋体"}[IS-IS GR]{lang="EN-US"}[日志信息]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot**]* slot-number*：清除指定成员设备的IS-IS GR日志信息，*slot-number*表示设备在IRF中的成员编号。（集中式IRF设备）
 
-[**[slot]{lang="EN-US"}**]{#struct_0_x1984_13510_890824092}*[ slot-number]{lang="EN-US"}*[：清除指定成员设备的]{style="font-family:宋体"}[IS-IS GR]{lang="EN-US"}[日志信息]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**[chassis**] *chassis-number* **slot** *slot-number*：清除指定成员设备上指定单板的IS-IS GR日志信息，*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。（分布式设备－IRF模式）
 
-[**[chassis]{lang="EN-US"}**]{#struct_0_x1984_13510_709180855}[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}[：清除指定成员设备上指定单板的]{style="font-family:宋体"}[IS-IS GR]{lang="EN-US"}[日志信息]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**[cpu** *cpu-number*]：清除指定CPU的信息。*cpu-number*表示CPU编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_x1984_13510_x85292442}[：清除指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的信息。]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号。]{style="font-family:宋体"}[只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_634035034}
+\# 清除1号板上GR的日志信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_497034674}[清除]{style="font-family:宋体"}[1]{lang="EN-US"}[号板上]{style="font-family:宋体"}[GR]{lang="EN-US"}[的日志信息。]{style="font-family:宋体"}
-
-[[\<Sysname\> reset isis graceful-restart event-log slot 1]{lang="EN-US" style="font-size:8.5pt;
-font-family:\"Courier New\""}]{#struct_0_x1984_13510_99810208}
-:::::
-
-::::: {#-955252832 .myid}
-[]{#_Toc404788423}[]{#struct_0_x1984_13510_869951645}[]{#_Toc332962831}
+\<Sysname\> reset isis graceful-restart event-log slot 1
 
 **IS-IS \-- IS-IS配置命令 \-- reset isis non-stop-routing event-log**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IS-IS命令.files/image001.png){#图片 22 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1984_13510_1172134691}
-:::
+![说明](IS-IS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1984_13510_1910703949}[。]{style="font-family:KaiTi_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[reset isis non-stop-routing event-log**]命令用来清除IS-ISNSR的日志信息。
 
-[**[reset isis ]{lang="EN-US"}[non-stop-routing event-log]{lang="EN-US"}**]{#struct_0_x1984_13510_x2037602569}[命令用来清除]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[ ]{lang="EN-US" style="font-family:宋体"}[NSR]{lang="EN-US"}[的日志信息。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2074292496}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}]{#struct_0_x1984_13510_1620297251}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+**[reset isis non-stop-routing event-log slot** *slot-number* [ **cpu** *cpu-number* ]]
 
-[**[reset ]{lang="EN-US"}[isis non-stop-routing event-log slot]{lang="EN-US"}**[ *slot-number* \[ **cpu** *cpu-number* \]]{lang="EN-US"}]{#struct_0_x1984_13510_x89407605}
+分布式设备－IRF模式：
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1984_13510_99351456}[模式：]{style="font-family:宋体"}
+**[reset isis non-stop-routing event-log chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number* ]]
 
-[**[reset ]{lang="EN-US"}[isis non-stop-routing event-log chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \]]{lang="EN-US"}]{#struct_0_x1984_13510_1789378368}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1225904830}
+用户视图
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_789078092}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_342965856}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1667248002}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1733623115}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1612675819}
+**[slot**]* slot-number*：清除指定单板的IS-IS NSR日志信息，*slot-number*表示单板所在的槽位号。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**]{#struct_0_x1984_13510_99416992}*[ slot-number]{lang="EN-US"}*[：清除指定单板的]{style="font-family:宋体"}[IS-IS NSR]{lang="EN-US"}[日志信息]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot**]* slot-number*：清除指定成员设备的IS-IS NSR日志信息，*slot-number*表示设备在IRF中的成员编号。（集中式IRF设备）
 
-[**[slot]{lang="EN-US"}**]{#struct_0_x1984_13510_x1546760590}*[ slot-number]{lang="EN-US"}*[：清除指定成员设备的]{style="font-family:宋体"}[IS-IS NSR]{lang="EN-US"}[日志信息]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**[chassis**] *chassis-number* **slot** *slot-number*：清除指定成员设备上指定单板的IS-IS NSR日志信息，*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。（分布式设备－IRF模式）
 
-[**[chassis]{lang="EN-US"}**]{#struct_0_x1984_13510_x423127811}[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}[：清除指定成员设备上指定单板的]{style="font-family:宋体"}[IS-IS NSR]{lang="EN-US"}[日志信息]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+**[cpu** *cpu-number*]：清除指定CPU的信息。*cpu-number*表示CPU编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[cpu]{lang="EN-US"}**[ *cpu-number*]{lang="EN-US"}]{#struct_0_x1984_13510_1488685669}[：清除指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[的信息。]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号。]{style="font-family:宋体"}[只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x29127621}
+\# 清除1号板上NSR的日志信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1198853816}[清除]{style="font-family:宋体"}[1]{lang="EN-US"}[号板上]{style="font-family:宋体"}[NSR]{lang="EN-US"}[的日志信息。]{style="font-family:宋体"}
-
-[[\<Sysname\> reset isis non-stop-routing event-log slot 1]{lang="EN-US" style="font-size:8.5pt;
-font-family:\"Courier New\""}]{#struct_0_x1984_13510_2126903763}
-:::::
-
-::: {#942553127 .myid}
-[]{#_Toc404788424}[]{#struct_0_x1984_13510_x1446870047}
+\<Sysname\> reset isis non-stop-routing event-log slot 1
 
 **IS-IS \-- IS-IS配置命令 \-- reset isis peer**
 
 ------------------------------------------------------------------------
 
-[**[reset isis peer]{lang="EN-US"}**]{#struct_0_x1984_13510_x531216769}[命令用来清除]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[指定邻居的数据结构信息。]{style="font-family:宋体"}
+**[reset isis peer**]命令用来清除IS-IS指定邻居的数据结构信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1170208948}
+【命令】
 
-[**[reset ]{lang="EN-US"}**]{#struct_0_x1984_13510_99482528}**[isis]{lang="EN-US"}[ peer]{lang="EN-US"}**[ *system-id* \[ *process-id* \]]{lang="EN-US"}
+**[reset **]**isis peer** *system-id* [ *process-id* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_263932877}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x130175795}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_687512322}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_541625274}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x688059607}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x80538680}
+【参数】
 
-[*[system-id]{lang="EN-US"}*]{#struct_0_x1984_13510_923458103}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[邻居的]{style="font-family:宋体"}[System ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[system-id*]：IS-IS邻居的System ID。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_x1984_13510_99548064}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，清除指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程邻居的数据结构信息。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535，清除指定IS-IS进程邻居的数据结构信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1907055266}
+【使用指导】
 
-[[本命令用在需要重建某个特定邻居的情况下使用。]{style="font-family:宋体"}]{#struct_0_x1984_13510_1700096759}
+本命令用在需要重建某个特定邻居的情况下使用。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1181355300}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_1371192988}[清除系统]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[0000.0c]{lang="EN-US"}[11.1111]{lang="EN-US"}[的]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[邻居的数据结构信息。]{style="font-family:宋体"}
+\# 清除系统ID为0000.0c11.1111的IS-IS邻居的数据结构信息。
 
-[[\<Sysname\> reset isis peer ]{lang="EN-US"}]{#struct_0_x1984_13510_1910709782}[0000.0c]{lang="EN-US"}[11.1111]{lang="EN-US"}
-:::
-
-::: {#654289525 .myid}
-[]{#_Toc310604371}[]{#_Toc290886815}[]{#_Toc252200791}[]{#_Toc163546306}[]{#_Toc50204117}[]{#_Toc404788425}[]{#struct_0_x1984_13510_x136956679}[]{#_Toc340564367}
+\<Sysname\> reset isis peer 0000.0c11.1111
 
 **IS-IS \-- IS-IS配置命令 \-- reset osi statistics**
 
 ------------------------------------------------------------------------
 
-[**[reset osi statistics]{lang="EN-US"}**]{#struct_0_x1984_13510_1039399357}[命令用来清除]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的报文统计信息。]{style="font-family:宋体"}
+**[reset osi statistics**]命令用来清除OSI连接的报文统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_100137888}
+【命令】
 
-[**[reset osi statistics]{lang="EN-US"}**]{#struct_0_x1984_13510_x948516643}
+**[reset osi statistics**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_238638481}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1059570503}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x505755940}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1467627663}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_680494017}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1476262131}
+【使用指导】
 
-[[在某些情况下，需要统计从某个时刻开始的报文统计信息，这时必须在统计开始前清除原有的统计信息，重新进行统计。]{style="font-family:宋体"}]{#struct_0_x1984_13510_1290368404}
+在某些情况下，需要统计从某个时刻开始的报文统计信息，这时必须在统计开始前清除原有的统计信息，重新进行统计。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_100203424}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1870006694}[清除]{style="font-family:宋体"}[OSI]{lang="EN-US"}[连接的报文统计信息。]{style="font-family:宋体"}
+\# 清除OSI连接的报文统计信息。
 
-[[\<Sysname\> reset osi statistics]{lang="EN-US"}]{#struct_0_x1984_13510_37797508}
+\<Sysname\> reset osi statistics
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1090771701}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display osi statistics]{lang="EN-US"}**]{#struct_0_x1984_13510_x292794120}
-:::
-
-::: {#-698792996 .myid}
-[]{#_Toc404788426}[]{#struct_0_x1984_13510_1488685667}[]{#_Toc366163989}[]{#_Toc364753106}
+·**display osi statistics**
 
 **IS-IS \-- IS-IS配置命令 \-- set-att**
 
 ------------------------------------------------------------------------
 
-[**[set-att]{lang="EN-US"}**]{#struct_0_x1984_13510_1488685666}[命令用来设置系统自身发布的]{style="font-family:宋体"}[Level-1 LSP]{lang="EN-US"}[的]{style="font-family:宋体"}[ATT]{lang="EN-US"}[位。]{style="font-family:宋体"}
+**[set-att**]命令用来设置系统自身发布的Level-1 LSP的ATT位。
 
-[**[undo set-att]{lang="EN-US"}**]{#struct_0_x1984_13510_x1581728207}[命令用来取消该配置。]{style="font-family:宋体"}
+**[undo set-att**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1488685673}
+【命令】
 
-[**[set-att]{lang="EN-US"}**[ { **always** \| **never** }]{lang="EN-US"}]{#struct_0_x1984_13510_x1581531600}
+**[set-att**[ { **always** \| **never** }]]
 
-[**[undo set-att]{lang="EN-US"}**]{#struct_0_x1984_13510_1488685672}
+**[undo set-att**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1581466064}
+【缺省情况】
 
-[[没有设置系统自身发布的]{style="font-family:宋体"}[Level-1 LSP]{lang="EN-US"}]{#struct_0_x1984_13510_1488685671}[的]{style="font-family:宋体"}[ATT]{lang="EN-US"}[位。]{style="font-family:宋体"}
+没有设置系统自身发布的Level-1 LSP的ATT位。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1581400528}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1488685670}[视图]{style="font-family:宋体"}[/IS-IS IPv4]{lang="EN-US"}[单播拓扑视图]{style="font-family:宋体"}
+IS-IS视图/IS-IS IPv4单播拓扑视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1581334992}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1488685677}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1581793744}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1488685676}
+【参数】
 
-[**[always]{lang="SV"}**]{#struct_0_x1984_13510_x1581728208}[：]{style="font-family:宋体"}[保持对]{style="font-family:宋体"}[Level-1 LSP]{lang="SV"}[的]{style="font-family:宋体"}[ATT]{lang="SV"}[位置位。]{style="font-family:宋体"}
+**[always**]：保持对Level-1 LSP的ATT位置位。
 
-[**[never]{lang="SV"}**]{#struct_0_x1984_13510_x467629467}[：保持对]{style="font-family:宋体"}[Lev]{lang="EN-US"}[el-1 LSP]{lang="SV"}[的]{style="font-family:宋体"}[ATT]{lang="SV"}[位不置位。]{style="font-family:宋体"}
+**[never**]：保持对Level-1 LSP的ATT位不置位。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1512894795}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x467629468}[设置]{style="font-family:宋体"}[ATT]{lang="EN-US"}[位置位。]{style="font-family:宋体"}
+\# 设置ATT位置位。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_1513615691}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] set-att always]{lang="EN-US"}
-:::
-
-::: {#116059579 .myid}
-[]{#_Toc404788427}[]{#struct_0_x1984_13510_x507250506}
+Sysname-isis-1 set-att always
 
 **IS-IS \-- IS-IS配置命令 \-- set-overload**
 
 ------------------------------------------------------------------------
 
-[**[set-overload]{lang="EN-US"}**]{#struct_0_x1984_13510_1740959935}[命令用来为当前路由器配置过载标志位。]{style="font-family:宋体"}
+**[set-overload**]命令用来为当前路由器配置过载标志位。
 
-[**[undo set-overload]{lang="EN-US"}**]{#struct_0_x1984_13510_2133089314}[命令用来清除过载标志位。]{style="font-family:宋体"}
+**[undo set-overload**]命令用来清除过载标志位。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_99613601}
+【命令】
 
-[**[set-overload]{lang="EN-US"}**[ \[ **on-startup** \[ \[ **start-from-nbr**]{lang="EN-US"}[ *system-id* \[ *timeout1* \[ *nbr-timeout* \] \] \] \| *timeout2* \| **wait-for-bgp** \[ *timeout3* \]]{lang="EN-US"}]{#struct_0_x1984_13510_954156282}[ ]{lang="EN-US" style="font-size:10.0pt;font-family:,\"serif\""}[\] \] ]{lang="EN-US"}[\[ **allow** { **external** \| **interlevel** } \* \]]{lang="EN-US"}
+**[set-overload** [ **on-startup** [ [ **start-from-nbr** *system-id* [ *timeout1* [ *nbr-timeout*  ] ] \| *timeout2* \| **wait-for-bgp**  *timeout3* ]] ]  [ **allow** { **external** \| **interlevel** } \* ]]
 
-[**[undo]{lang="EN-US"}**[ **set-overload**]{lang="EN-US"}]{#struct_0_x1984_13510_791312422}
+**[undo** **set-overload**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x248267282}
+【缺省情况】
 
-[[不配置过载标志位。]{style="font-family:宋体"}]{#struct_0_x1984_13510_x997733987}
+不配置过载标志位。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_491178111}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1076067307}[视图]{style="font-family:宋体"}[/IS-IS IPv4]{lang="EN-US"}[单播拓扑视图]{style="font-family:宋体"}
+IS-IS视图/IS-IS IPv4单播拓扑视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x112755698}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_99679137}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_207266513}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2098562712}
+【参数】
 
-[**[on-startup]{lang="EN-US"}**]{#struct_0_x1984_13510_435184408}[：系统启动时将过载标志位置位。]{style="font-family:宋体"}
+**[on-startup**]：系统启动时将过载标志位置位。
 
-[**[start-from-nbr]{lang="EN-US"}**[ *system-id* \[ *timeout1* \[ *nbr-timeout* \] \]]{lang="EN-US"}]{#struct_0_x1984_13510_x1694745550}[：从系统启动时开始计算，如果在]{style="font-family:宋体"}*[nbr-timeout]{lang="EN-US"}*[参数指定的时长内仍未与指定邻居建立邻接关系完毕，过载标志位将结束置位状态；如果在]{style="font-family:宋体"}*[nbr-timeout]{lang="EN-US"}*[参数指定的时长内与指定邻居建立邻接关系完毕，过载标志位将继续保持置位状态，]{style="font-family:宋体"}[且从与指定邻居建立邻接关系时重新计时，在]{style="font-family:宋体"}*[timeout1]{lang="EN-US"}*[参数配置的时长内保持置位状态。]{style="font-family:宋体"}
+**[start-from-nbr** *system-id* [ *timeout1* [ *nbr-timeout*  ]]]：从系统启动时开始计算，如果在*nbr-timeout*参数指定的时长内仍未与指定邻居建立邻接关系完毕，过载标志位将结束置位状态；如果在*nbr-timeout*参数指定的时长内与指定邻居建立邻接关系完毕，过载标志位将继续保持置位状态，且从与指定邻居建立邻接关系时重新计时，在*timeout1*参数配置的时长内保持置位状态。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[system-id]{lang="EN-US"}*]{#struct_0_x1984_13510_932113060}[：指定邻居的]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·*system-id*：指定邻居的System ID。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[timeout1]{lang="EN-US"}*]{#struct_0_x1984_13510_x788246071}[：]{style="font-family:宋体"}[取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[86400]{lang="EN-US"}[秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒（]{style="font-family:宋体"}[10]{lang="EN-US"}[分钟）。]{style="font-family:宋体"}
+·*timeout1*：取值范围为5～86400秒，缺省值为600秒（10分钟）。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nbr-timeout]{lang="EN-US"}*]{#struct_0_x1984_13510_x368562824}[：取值范围为]{lang="EN-US" style="font-family:宋体"}[5]{lang="EN-US"}[～]{lang="EN-US" style="font-family:宋体"}[86400]{lang="EN-US"}[秒，缺省值为]{lang="EN-US" style="font-family:宋体"}[1200]{lang="EN-US"}[秒（]{lang="EN-US" style="font-family:宋体"}[20]{lang="EN-US"}[分钟）。]{lang="EN-US" style="font-family:宋体"}
+·*nbr-timeout*：取值范围为5～86400秒，缺省值为1200秒（20分钟）。
 
-[*[timeout2]{lang="EN-US"}*]{#struct_0_x1984_13510_x1941763495}[：]{style="font-family:宋体"}[从系统启动时开始计算，过载标志位保持置位状态的时间长度，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[86400]{lang="EN-US"}[秒。缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒（]{style="font-family:宋体"}[10]{lang="EN-US"}[分钟）。]{style="font-family:宋体"}
+*[timeout2*]：从系统启动时开始计算，过载标志位保持置位状态的时间长度，取值范围为5～86400秒。缺省值为600秒（10分钟）。
 
-[**[wait-for-bgp]{lang="EN-US"}**[ \[ *timeout3* \]]{lang="EN-US"}]{#struct_0_x1984_13510_x467629463}[：]{style="font-family:宋体"}[从系统启动时开始计算，如果在]{style="font-family:宋体"}*[timeout3]{lang="EN-US"}*[参数指定的时长内]{style="font-family:宋体"}[BGP]{lang="EN-US"}[仍未收敛，过载标志位将结束置位状态。]{style="font-family:宋体"}*[timeout3]{lang="EN-US"}*[取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[86400]{lang="EN-US"}[秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒]{style="font-family:宋体"}[（]{style="font-family:宋体"}[10]{lang="EN-US"}[分钟）]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[wait-for-bgp** [ *timeout3* ]]：从系统启动时开始计算，如果在*timeout3*参数指定的时长内BGP仍未收敛，过载标志位将结束置位状态。*timeout3*取值范围为5～86400秒，缺省值为600秒（10分钟）。
 
-[**[allow]{lang="EN-US"}**]{#struct_0_x1984_13510_99744673}[：允许发布地址前缀。缺省情况下，当系统进入过载状态时不允许发布地址前缀。]{style="font-family:宋体"}
+**[allow**]：允许发布地址前缀。缺省情况下，当系统进入过载状态时不允许发布地址前缀。
 
-[**[external]{lang="EN-US"}**]{#struct_0_x1984_13510_x1525781195}[：当配置]{style="font-family:宋体"}**[allow]{lang="EN-US"}**[时，允许发布从其它协议学来的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀。]{style="font-family:宋体"}
+**[external**]：当配置**allow**时，允许发布从其它协议学来的IP地址前缀。
 
-[**[interlevel]{lang="EN-US"}**]{#struct_0_x1984_13510_x2040789637}[：当配置]{style="font-family:宋体"}**[allow]{lang="EN-US"}**[时，允许发布从不同层次学来的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀。]{style="font-family:宋体"}
+**[interlevel**]：当配置**allow**时，允许发布从不同层次学来的IP地址前缀。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_384729012}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果没有指定]{lang="EN-US" style="font-family:宋体"}**[on-startup]{lang="EN-US"}**]{#struct_0_x1984_13510_x1343341804}[参数，]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[将立即把过载标志位置位且一直保持置位状态直到用户通过]{lang="EN-US" style="font-family:宋体"}**[undo]{lang="EN-US"}**[ **set-overload**]{lang="EN-US"}[清除过载标志位。]{lang="EN-US" style="font-family:宋体"}
+·如果没有指定**on-startup**参数，IS-IS将立即把过载标志位置位且一直保持置位状态直到用户通过**undo** **set-overload**清除过载标志位。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果只指定]{style="font-family:宋体"}]{#struct_0_x1984_13510_1865007923}**[on-startup]{lang="EN-US"}**[参数，过载标志位将在系统启动时开始置位，并且在]{style="font-family:宋体"}*[timeout2]{lang="EN-US"}*[参数]{style="font-family:宋体"}[指定的时长内保持置位状态。]{style="font-family:宋体"}
+·如果只指定**on-startup**参数，过载标志位将在系统启动时开始置位，并且在*timeout2*参数指定的时长内保持置位状态。
 
-[]{#struct_0_x1984_13510_x1523284981}[]{#_Hlt9934657}[【举例】]{style="font-family:黑体"}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_612053717}[在当前路由器上配置过载标志位。]{style="font-family:宋体"}
+\# 在当前路由器上配置过载标志位。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_99810209}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] set-overload]{lang="EN-US"}
-:::
-
-::: {#870763228 .myid}
-[]{#_Toc310604372}[]{#_Toc290886816}[]{#_Toc252200792}[]{#_Toc163546308}[]{#_Toc50204121}[]{#_Toc33866120}[]{#_Toc327790416}[]{#_Toc319940294}[]{#_Toc404788428}[]{#struct_0_x1984_13510_x1468700515}[]{#_Toc350155037}[]{#_Toc344302280}[]{#_Toc370737493}[]{#_Toc370737494}[]{#_Toc370737495}[]{#_Toc370737496}[]{#_Toc269462885}
+Sysname-isis-1 set-overload
 
 **IS-IS \-- IS-IS配置命令 \-- snmp context-name**
 
 ------------------------------------------------------------------------
 
-[**[snmp]{lang="EN-US"}**]{#struct_0_x1984_13510_x1911457760}[ **context-name**]{lang="EN-US"}[命令用来配置管理]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体所使用的上下文名称]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[snmp**] **context-name**命令用来配置管理IS-IS的SNMP实体所使用的上下文名称。
 
-[**[undo]{lang="EN-US"}**[ **snmp** ]{lang="EN-US"}]{#struct_0_x1984_13510_x1838382305}**[context-name]{lang="EN-US"}**[命令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo** **snmp** ]**context-name**命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1026451743}
+【命令】
 
-[**[snmp]{lang="EN-US"}**]{#struct_0_x1984_13510_x861832990}[ **context-name**]{lang="EN-US"}[ *context-name*]{lang="EN-US"}
+**[snmp**] **context-name** *context-name*
 
-[**[undo]{lang="EN-US"}**[ **snmp** ]{lang="EN-US"}]{#struct_0_x1984_13510_1478822661}**[context-name]{lang="EN-US"}**
+**[undo** **snmp** ]**context-name**
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1038884155}
+【缺省情况】
 
-[[没有配置]{style="font-family:宋体"}]{#struct_0_x1984_13510_99351457}[管理]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体所使用的上下文名称]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+没有配置管理IS-IS的SNMP实体所使用的上下文名称。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x549273792}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x568353783}[视图]{style="font-family:宋体"}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_304447179}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_566407274}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1684263943}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1559418535}
+【参数】
 
-[*[context-name]{lang="EN-US"}*]{#struct_0_x1984_13510_2089394019}[：上下文的名称，]{style="font-family:宋体"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[32]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[context-name*]：上下文的名称，为1～32个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_99416993}
+【使用指导】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1984_13510_409554546}[使用]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[（]{style="font-family:宋体"}[Management Information Base]{lang="EN-US"}[，管理信息库）对]{style="font-family:宋体"}[NMS]{lang="EN-US"}[（]{style="font-family:宋体"}[Network Management System]{lang="EN-US"}[，网络管理系统）提供]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[对象的管理，但标准]{style="font-family:宋体"}[IS-IS MIB]{lang="EN-US"}[中定义的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[为单实例管理对象，无法同时对]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[和]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[进行管理]{style="font-family:宋体"}[。因此，参考]{style="font-family:宋体"}[RFC 4750]{lang="EN-US"}[中对]{style="font-family:宋体"}[OSPF]{lang="EN-US"}[多实例的管理方法，为管理]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[定义一个上下文名称，以区分来自]{style="font-family:宋体"}[NMS]{lang="EN-US"}[的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[请求是要对]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[还是]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[进行管理。需要注意的是，由于上下文名称只是]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[独有的概念，因此对于]{style="font-family:宋体"}[SNMPv1/v2c]{lang="EN-US"}[，会将团体名映射为上下文名称以对不同协议进行区分。]{style="font-family:宋体"}
+TRILL使用IS-IS的MIB（Management Information Base，管理信息库）对NMS（Network Management System，网络管理系统）提供TRILL对象的管理，但标准IS-IS MIB中定义的MIB为单实例管理对象，无法同时对IS-IS和TRILL进行管理。因此，参考RFC 4750中对OSPF多实例的管理方法，为管理TRILL定义一个上下文名称，以区分来自NMS的SNMP请求是要对IS-IS还是TRILL进行管理。需要注意的是，由于上下文名称只是SNMPv3独有的概念，因此对于SNMPv1/v2c，会将团体名映射为上下文名称以对不同协议进行区分。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_686924196}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1092441438}[配置管理]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体所使用的上下文名称为]{style="font-family:宋体"}[isis]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置管理IS-IS进程1的SNMP实体所使用的上下文名称为isis。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x2071979775}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] snmp context-name isis]{lang="EN-US"}
-:::
-
-::: {#140071955 .myid}
-[]{#_Toc404788429}[]{#struct_0_x1984_13510_29536040}
+Sysname-isis-1 snmp context-name isis
 
 **IS-IS \-- IS-IS配置命令 \-- snmp-agent trap enable isis**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent trap enable isis]{lang="EN-US"}**]{#struct_0_x1984_13510_x1473559927}[命令用来开启]{style="font-family:
-宋体"}[IS-IS]{lang="EN-US"}[的告警功能。]{style="font-family:宋体"}
+**[snmp-agent trap enable isis**]命令用来开启IS-IS的告警功能。
 
-[**[undo snmp-agent trap enable isis]{lang="EN-US"}**]{#struct_0_x1984_13510_99482529}[命令用来关闭]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的告警功能。]{style="font-family:宋体"}
+**[undo snmp-agent trap enable isis**]命令用来关闭IS-IS的告警功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1692382259}
+【命令】
 
-[**[snmp-agent trap enable isis]{lang="EN-US"}**[ \[ **adjacency-state-change** \| **area-mismatch** \| **authentication** \| **authentication-type** \| **buffsize-mismatch** \| **id-length-mismatch** \| **lsdboverload-state-change** \| **lsp-corrupt** \| **lsp-parse-error** \| **lsp-size-exceeded** \| **manual-address-drop** \| **max-seq-exceeded** \| **maxarea-mismatch** \| **own-lsp-purge** \| **protocol-support**  \| **rejected-adjacency** \| **skip-sequence-number** \| **version-skew** \] \*]{lang="EN-US"}]{#struct_0_x1984_13510_x674645386}
+**[snmp-agent trap enable isis**[ [ **adjacency-state-change** \| **area-mismatch** \| **authentication** \| **authentication-type** \| **buffsize-mismatch** \| **id-length-mismatch** \| **lsdboverload-state-change** \| **lsp-corrupt** \| **lsp-parse-error** \| **lsp-size-exceeded** \| **manual-address-drop** \| **max-seq-exceeded** \| **maxarea-mismatch** \| **own-lsp-purge** \| **protocol-support**  \| **rejected-adjacency** \| **skip-sequence-number** \| **version-skew** ] \*]]
 
-[**[undo snmp-agent trap enable isis]{lang="EN-US"}**[ \[ **adjacency-state-change** \| **area-mismatch** \| **authentication** \| **authentication-type** \| **buffsize-mismatch** \| **id-length-mismatch** \| **lsdboverload-state-change** \| **lsp-corrupt** \| **lsp-parse-error** \| **lsp-size-exceeded** \| **manual-address-drop** \| **max-seq-exceeded** \| **maxarea-mismatch** \| **own-lsp-purge** \| **protocol-support**  \| **rejected-adjacency** \| **skip-sequence-number** \| **version-skew** \] \*]{lang="EN-US"}]{#struct_0_x1984_13510_1580949657}
+**[undo snmp-agent trap enable isis**[ [ **adjacency-state-change** \| **area-mismatch** \| **authentication** \| **authentication-type** \| **buffsize-mismatch** \| **id-length-mismatch** \| **lsdboverload-state-change** \| **lsp-corrupt** \| **lsp-parse-error** \| **lsp-size-exceeded** \| **manual-address-drop** \| **max-seq-exceeded** \| **maxarea-mismatch** \| **own-lsp-purge** \| **protocol-support**  \| **rejected-adjacency** \| **skip-sequence-number** \| **version-skew** ] \*]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1546959344}
+【缺省情况】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_884011334}[的告警功能处于开启状态。]{style="font-family:宋体"}
+IS-IS的告警功能处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1381898009}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1984_13510_x41289077}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1616129250}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_99548065}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x49259870}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_581861678}
+【参数】
 
-[**[adjacency-state-change]{lang="EN-US"}**]{#struct_0_x1984_13510_720166421}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[邻居状态变化。]{style="font-family:宋体"}
+**[adjacency-state-change**]：IS-IS邻居状态变化。
 
-[**[area-mismatch]{lang="EN-US"}**]{#struct_0_x1984_13510_x1498686551}[：]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文区域地址不匹配。]{style="font-family:宋体"}
+**[area-mismatch**]：Hello报文区域地址不匹配。
 
-[**[authentication]{lang="EN-US"}**]{#struct_0_x1984_13510_x2049490469}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[报文认证失败。]{style="font-family:宋体"}
+**[authentication**]：IS-IS报文认证失败。
 
-[**[authentication-type]{lang="EN-US"}**]{#struct_0_x1984_13510_x172040886}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[报文认证类型错误。]{style="font-family:宋体"}
+**[authentication-type**]：IS-IS报文认证类型错误。
 
-[**[buffsize-mismatch]{lang="EN-US"}**]{#struct_0_x1984_13510_x1568865901}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文长度和产生缓冲区大小不匹配。]{style="font-family:宋体"}
+**[buffsize-mismatch**]：LSP报文长度和产生缓冲区大小不匹配。
 
-[**[id-length-mismatch]{lang="EN-US"}**]{#struct_0_x1984_13510_100137889}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[报文中]{style="font-family:宋体"}[System ID]{lang="EN-US"}[长度不匹配。]{style="font-family:宋体"}
+**[id-length-mismatch**]：IS-IS报文中System ID长度不匹配。
 
-[**[lsdboverload-state-change]{lang="EN-US"}**]{#struct_0_x1984_13510_x948516642}[：]{style="font-family:
-宋体"}[LSDB]{lang="EN-US"}[过载状态变化。]{style="font-family:宋体"}
+**[lsdboverload-state-change**]：LSDB过载状态变化。
 
-[**[lsp-corrupt]{lang="EN-US"}**]{#struct_0_x1984_13510_238704017}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[在]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[中校验和错误。]{style="font-family:宋体"}
+**[lsp-corrupt**]：LSP在LSDB中校验和错误。
 
-[**[lsp-parse-error]{lang="EN-US"}**]{#struct_0_x1984_13510_910453496}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文解析错误。]{style="font-family:宋体"}
+**[lsp-parse-error**]：LSP报文解析错误。
 
-[**[lsp-size-exceeded]{lang="EN-US"}**]{#struct_0_x1984_13510_x1380707371}[：超大的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[报文导致泛洪失败。]{style="font-family:宋体"}
+**[lsp-size-exceeded**]：超大的LSP报文导致泛洪失败。
 
-[**[manual-address-drop]{lang="EN-US"}**]{#struct_0_x1984_13510_1362766236}[：手动配置区域地址丢弃。]{style="font-family:宋体"}
+**[manual-address-drop**]：手动配置区域地址丢弃。
 
-[**[max-seq-exceeded]{lang="EN-US"}**]{#struct_0_x1984_13510_x1896935664}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[序列号超过最大序列号。]{style="font-family:宋体"}
+**[max-seq-exceeded**]：LSP序列号超过最大序列号。
 
-[**[maxarea-mismatch]{lang="EN-US"}**]{#struct_0_x1984_13510_1295326296}[：最大配置区域地址数不匹配。]{style="font-family:宋体"}
+**[maxarea-mismatch**]：最大配置区域地址数不匹配。
 
-[**[own-lsp-purge]{lang="EN-US"}**]{#struct_0_x1984_13510_1744191999}[：尝试清除本地]{style="font-family:宋体"}[LSP]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[own-lsp-purge**]：尝试清除本地LSP。
 
-[**[protocol-support]{lang="EN-US"}**]{#struct_0_x1984_13510_100203425}[：报文协议支持类型不匹配。]{style="font-family:宋体"}
+**[protocol-support**]：报文协议支持类型不匹配。
 
-[**[rejected-adjacency]{lang="EN-US"}**]{#struct_0_x1984_13510_x1870006695}[：]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文邻接不匹配丢弃。]{style="font-family:宋体"}
+**[rejected-adjacency**]：Hello报文邻接不匹配丢弃。
 
-[**[skip-sequence-number]{lang="EN-US"}**]{#struct_0_x1984_13510_x1528286433}[：跳过已经产生过的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[序列号。]{style="font-family:宋体"}
+**[skip-sequence-number**]：跳过已经产生过的LSP序列号。
 
-[**[version-skew]{lang="EN-US"}**]{#struct_0_x1984_13510_x817804681}[：]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文版本号不匹配。]{style="font-family:宋体"}
+**[version-skew**]：Hello报文版本号不匹配。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x275143275}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果未指定任何参数，将开启]{style="font-family:宋体"}]{#struct_0_x1984_13510_x104368494}[IS-IS]{lang="EN-US"}[所有类型的告警功能。]{style="font-family:宋体"}
+·如果未指定任何参数，将开启IS-IS所有类型的告警功能。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果配置时不存在任何]{style="font-family:宋体"}]{#struct_0_x1984_13510_897160674}[IS-IS]{lang="EN-US"}[进程，将会提示无]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程，并不允许配置。]{style="font-family:宋体"}
+·如果配置时不存在任何IS-IS进程，将会提示无IS-IS进程，并不允许配置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果删除了所有配置的]{style="font-family:宋体"}]{#struct_0_x1984_13510_1751779828}[IS-IS]{lang="EN-US"}[进程，则本功能不生效。]{style="font-family:宋体"}
+·如果删除了所有配置的IS-IS进程，则本功能不生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1665697545}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x170163262}[关闭]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的告警功能]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 关闭IS-IS的告警功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_2044098193}
+\<Sysname\> system-view
 
-[\[Sysname\] undo snmp-agent trap enable isis]{lang="EN-US"}
-:::
-
-::: {#-1230299672 .myid}
-[]{#_Toc404788430}[]{#struct_0_x1984_13510_2101206054}
+Sysname undo snmp-agent trap enable isis
 
 **IS-IS \-- IS-IS配置命令 \-- summary**
 
 ------------------------------------------------------------------------
 
-[**[summary]{lang="EN-US"}**]{#struct_0_x1984_13510_1191837786}[命令用来配置一条聚合路由。]{style="font-family:宋体"}
+**[summary**]命令用来配置一条聚合路由。
 
-[**[undo summary]{lang="EN-US"}**]{#struct_0_x1984_13510_x402011064}[命令用来删除指定的聚合路由。]{style="font-family:宋体"}
+**[undo summary**]命令用来删除指定的聚合路由。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2131008233}
+【命令】
 
-[**[summary ]{lang="EN-US"}***[ip-address ]{lang="EN-US"}*[{ *mask-length* \| *mask* } \[ **avoid-feedback** \| **generate_null0_route** \| \[ **level-1** \| **level-1-2** \| **level-2** \] \| **tag** *tag* \] \*]{lang="EN-US"}]{#struct_0_x1984_13510_x1541328370}
+**[summary ***ip-address *[{ *mask-length* \| *mask* } [ **avoid-feedback** \| **generate_null0_route** \| [ **level-1** \| **level-1-2** \| **level-2** ] \| **tag** *tag* ] \*]]
 
-[**[undo summary ]{lang="EN-US"}***[ip-address ]{lang="EN-US"}*[{ *mask-length* \| *mask* } \[ **level-1** \| **level-1-2** \| **level-2** \]]{lang="EN-US"}]{#struct_0_x1984_13510_1665763081}
+**[undo summary ***ip-address *[{ *mask-length* \| *mask* } [ **level-1** \| **level-1-2** \| **level-2** ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x891440829}
+【缺省情况】
 
-[[没有对路由进行聚合。]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1239275993}
+没有对路由进行聚合。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x894216223}
+【视图】
 
-[[IS-IS IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_835784375}[单播地址族视图]{style="font-family:宋体"}[/IS-IS IPv4]{lang="EN-US"}[单播拓扑视图]{style="font-family:宋体"}
+IS-IS IPv4单播地址族视图/IS-IS IPv4单播拓扑视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1648172586}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x207257689}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x661238135}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_566066120}
+【参数】
 
-[*[ip-address]{lang="EN-US"}*]{#struct_0_x1984_13510_1665828617}[：聚合路由的目的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[ip-address*]：聚合路由的目的IP地址。
 
-[*[mask-length]{lang="EN-US"}*]{#struct_0_x1984_13510_293580268}[：聚合路由的网络掩码长度，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[mask-length*]：聚合路由的网络掩码长度，取值范围为0～32。
 
-[*[mask]{lang="EN-US"}*]{#struct_0_x1984_13510_99414224}[：聚合路由的网络掩码，点分十进制格式。]{style="font-family:宋体"}
+*[mask*]：聚合路由的网络掩码，点分十进制格式。
 
-[**[avoid-feedback]{lang="EN-US"}**]{#struct_0_x1984_13510_1647922119}[：避免通过路由计算学习到聚合路由。]{style="font-family:宋体"}
+**[avoid-feedback**]：避免通过路由计算学习到聚合路由。
 
-[**[generate_null0_route]{lang="EN-US"}**]{#struct_0_x1984_13510_847337847}[：为防止路由循环而生成]{style="font-family:宋体"}[NULL0]{lang="EN-US"}[路由。]{style="font-family:宋体"}
+**[generate_null0_route**]：为防止路由循环而生成NULL0路由。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_1089645082}[：只对引入到]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[区域的路由进行聚合。]{style="font-family:宋体"}
+**[level-1**]：只对引入到Level-1区域的路由进行聚合。
 
-[**[level-1-2]{lang="EN-US"}**]{#struct_0_x1984_13510_649969215}[：对引入到]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[区域的路由都进行聚合。]{style="font-family:宋体"}
+**[level-1-2**]：对引入到Level-1和Level-2区域的路由都进行聚合。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_1692946633}[：只对[]{#_Hlt9934357}引入到]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[区域的路由进行聚合。]{style="font-family:宋体"}
+**[level-2**]：只对引入到Level-2区域的路由进行聚合。
 
-[**[tag ]{lang="EN-US"}***[tag]{lang="EN-US"}*]{#struct_0_x1984_13510_1665894153}[：管理标记，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[tag ***tag*]：管理标记，取值范围为1～4294967295。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x531421900}
+【使用指导】
 
-[[如果不输入]{style="font-family:宋体"}**[level]{lang="EN-US"}**]{#struct_0_x1984_13510_x1532662281}[参数，则默认只对]{style="font-family:宋体"}**[level-2]{lang="EN-US"}**[的路由进行聚合。]{style="font-family:宋体"}
+如果不输入**level**参数，则默认只对**level-2**的路由进行聚合。
 
-[[如果没有指定拓扑名，则只对标准拓扑的路由进行聚合。]{style="font-family:宋体"}]{#struct_0_x1984_13510_x1860433745}
+如果没有指定拓扑名，则只对标准拓扑的路由进行聚合。
 
-[[通过路由聚合，一方面可以减小路由表规模，还可以减少本路由器生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_1874271021}[报文大小和]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[的规模。其中，被聚合的路由可以是]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议发现的路由，也可以是引入的外部路由。另外，聚合后路由的开销值取所有被聚合路由中最小的开销值。]{style="font-family:宋体"}
+通过路由聚合，一方面可以减小路由表规模，还可以减少本路由器生成的LSP报文大小和LSDB的规模。其中，被聚合的路由可以是IS-IS协议发现的路由，也可以是引入的外部路由。另外，聚合后路由的开销值取所有被聚合路由中最小的开销值。
 
-[[需要注意的是，路由器只对本地生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x1790787412}[中的路由进行聚合。]{style="font-family:宋体"}
+需要注意的是，路由器只对本地生成的LSP中的路由进行聚合。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x692552762}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x342672171}[配置一条]{style="font-family:宋体"}[202.0.0.0/8]{lang="EN-US"}[的聚合路由。]{style="font-family:宋体"}
+\# 配置一条202.0.0.0/8的聚合路由。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_1665435401}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv4]{lang="EN-US"}
+Sysname-isis-1 address-family ipv4
 
-[\[Sysname-isis-1-ipv4\]]{lang="EN-US"}[ summary 202.0.0.0 255.0.0.0]{lang="EN-US"}[]{#_Hlt12072832}
-:::
-
-::: {#408390348 .myid}
-[]{#_Toc404788431}[]{#struct_0_x1984_13510_1025481294}[]{#_Toc310604373}[]{#_Toc290886817}[]{#_Toc252200793}[]{#_Toc163546309}
+Sysname-isis-1-ipv4 summary 202.0.0.0 255.0.0.0
 
 **IS-IS \-- IS-IS配置命令 \-- timer lsp-generation**
 
 ------------------------------------------------------------------------
 
-[**[timer lsp-generation]{lang="EN-US"}**]{#struct_0_x1984_13510_x708990978}[命令用来配置]{style="font-family:宋体"}[LSP]{lang="EN-US"}[重新生成的时间间隔。]{style="font-family:宋体"}
+**[timer lsp-generation**]命令用来配置LSP重新生成的时间间隔。
 
-[**[undo timer lsp-generation]{lang="EN-US"}**]{#struct_0_x1984_13510_x198577725}[命令用来取消该配置。]{style="font-family:
-宋体"}
+**[undo timer lsp-generation**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x176055649}
+【命令】
 
-[**[timer lsp-generation ]{lang="EN-US"}***[maximum-interval]{lang="EN-US"}*[ \[ *minimum-interval* \[ *incremental-interval* \] \] \[ **level-1** \| **level-2** \]]{lang="EN-US"}]{#struct_0_x1984_13510_1234263912}
+**[timer lsp-generation ***maximum-interval* [ *minimum-interval* [ *incremental-interval*    **level-1** \| **level-2** ]]]
 
-[**[undo timer lsp-generation]{lang="EN-US"}**[ \[ **level-1** \| **level-2** \]]{lang="EN-US"}]{#struct_0_x1984_13510_107776503}
+**[undo timer lsp-generation**[ [ **level-1** \| **level-2** ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1079480954}
+【缺省情况】
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_1665500937}[重新生成的最大时间间隔为]{style="font-family:宋体"}[5]{lang="EN-US"}[秒，最小时间间隔为]{style="font-family:宋体"}[50]{lang="EN-US"}[毫秒，时间间隔惩罚增量为]{style="font-family:宋体"}[200]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+LSP重新生成的最大时间间隔为5秒，最小时间间隔为50毫秒，时间间隔惩罚增量为200毫秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x74296535}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1627829212}[视图]{style="font-family:宋体"}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1256633269}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1420576610}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_874203656}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_890610114}
+【参数】
 
-[*[maximum-interval]{lang="EN-US"}*]{#struct_0_x1984_13510_1319285297}[：网络拓扑变化导致]{style="font-family:宋体"}[LSP]{lang="EN-US"}[重新生成时，]{style="font-family:宋体"}[LSP]{lang="EN-US"}[生成的最大时间间隔，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[120]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[maximum-interval*]：网络拓扑变化导致LSP重新生成时，LSP生成的最大时间间隔，取值范围为1～120，单位为秒。
 
-[*[minimum-interval]{lang="EN-US"}*]{#struct_0_x1984_13510_1665566473}[：网络拓扑变化导致]{style="font-family:宋体"}[LSP]{lang="EN-US"}[重新生成时，]{style="font-family:宋体"}[LSP]{lang="EN-US"}[生成的最小时间间隔，取值范围为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[60000]{lang="EN-US"}[，单位为毫秒。]{style="font-family:宋体"}
+*[minimum-interval*]：网络拓扑变化导致LSP重新生成时，LSP生成的最小时间间隔，取值范围为10～60000，单位为毫秒。
 
-[*[incremental-interval]{lang="EN-US"}*]{#struct_0_x1984_13510_x530182457}[：网络拓扑变化导致]{style="font-family:宋体"}[LSP]{lang="EN-US"}[重新生成时，]{style="font-family:宋体"}[LSP]{lang="EN-US"}[生成的]{style="font-family:宋体"}[时间间隔惩罚增量]{style="font-family:宋体"}[，取值范围为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[60000]{lang="EN-US"}[，单位为毫秒。]{style="font-family:宋体"}
+*[incremental-interval*]：网络拓扑变化导致LSP重新生成时，LSP生成的时间间隔惩罚增量，取值范围为10～60000，单位为毫秒。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_x1984_13510_355126080}[：配置]{style="font-family:宋体"}[Level-1 LSP]{lang="EN-US"}[生成时间间隔。]{style="font-family:宋体"}
+**[level-1**]：配置Level-1 LSP生成时间间隔。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_x1984_13510_x1036903348}[：配置]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[生成时间间隔，默认不配置级别时对]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[同时起作用。]{style="font-family:宋体"}
+**[level-2**]：配置Level-2的LSP生成时间间隔，默认不配置级别时对Level-1和Level-2同时起作用。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_702759850}
+【使用指导】
 
-[[通过调节]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x2005811569}[重新生成的时间间隔，可以抑制网络频繁变化可能导致的占用过多带宽资源和路由器资源。在网络变化不频繁的情况下，将]{style="font-family:宋体"}[LSA]{lang="EN-US"}[重新生成时间间隔缩小到]{style="font-family:宋体"}*[minimum-interval]{lang="EN-US"}*[，而在网络变化频繁的情况下可以进行相应惩罚，将等待时间按照配置的惩罚增量延长，最大不超过]{style="font-family:宋体"}*[maximum-interval]{lang="EN-US"}*[。]{style="font-family:宋体"}
+通过调节LSP重新生成的时间间隔，可以抑制网络频繁变化可能导致的占用过多带宽资源和路由器资源。在网络变化不频繁的情况下，将LSA重新生成时间间隔缩小到*minimum-interval*，而在网络变化频繁的情况下可以进行相应惩罚，将等待时间按照配置的惩罚增量延长，最大不超过*maximum-interval*。
 
-[[需要注意的是，]{style="font-family:宋体"}*[minimum-interval]{lang="EN-US"}*]{#struct_0_x1984_13510_1034086055}[和]{style="font-family:宋体"}*[incremental-interva]{lang="EN-US"}*[l]{lang="EN-US"}[配置值不允许大于]{style="font-family:宋体"}*[maximum-interval]{lang="EN-US"}*[配置值。]{style="font-family:宋体"}
+需要注意的是，*minimum-interval*和*incremental-interva*l配置值不允许大于*maximum-interval*配置值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x168154136}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_153350956}[配置]{style="font-family:宋体"}[IS-IS LSP]{lang="EN-US"}[重新生成的最大时间间隔为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒，最小时间间隔为]{style="font-family:宋体"}[100]{lang="EN-US"}[毫秒，时间间隔惩罚增量为]{style="font-family:宋体"}[200]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+\# 配置IS-IS LSP重新生成的最大时间间隔为10秒，最小时间间隔为100毫秒，时间间隔惩罚增量为200毫秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_1665632009}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] timer lsp-generation 10 100 200]{lang="EN-US"}
-:::
-
-::: {#490996559 .myid}
-[]{#_Toc404788432}[]{#struct_0_x1984_13510_663567551}
+Sysname-isis-1 timer lsp-generation 10 100 200
 
 **IS-IS \-- IS-IS配置命令 \-- timer lsp-max-age**
 
 ------------------------------------------------------------------------
 
-[**[timer lsp-max-age]{lang="EN-US"}**]{#struct_0_x1984_13510_x953962649}[命令用来配置当前路由器生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[在]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[里的最大生存时间。]{style="font-family:宋体"}
+**[timer lsp-max-age**]命令用来配置当前路由器生成的LSP在LSDB里的最大生存时间。
 
-[**[undo timer lsp-max-age]{lang="EN-US"}**]{#struct_0_x1984_13510_747112884}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo timer lsp-max-age**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1482983802}
+【命令】
 
-[**[timer lsp-max-age ]{lang="EN-US"}***[second]{lang="EN-US"}*[s]{lang="EN-US"}]{#struct_0_x1984_13510_1586208387}
+**[timer lsp-max-age ***second*s]
 
-[**[undo timer lsp-max-age]{lang="EN-US"}**]{#struct_0_x1984_13510_386323155}
+**[undo timer lsp-max-age**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1666221833}
+【缺省情况】
 
-[[当前路由器生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_186370215}[在]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[里的最大生存时间为]{style="font-family:宋体"}[1200]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+当前路由器生成的LSP在LSDB里的最大生存时间为1200秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1017889626}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x1383074474}[视图]{style="font-family:宋体"}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x540937750}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x1175270746}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_883033610}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2146482737}
+【参数】
 
-[*[seconds]{lang="EN-US"}*]{#struct_0_x1984_13510_x1368874942}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[在]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[里的最大生存时间，取值范围是]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[seconds*]：LSP在LSDB里的最大生存时间，取值范围是1～65535，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1666287369}
+【使用指导】
 
-[[每个]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x693140404}[都有一个最大生存时间，随着时间的推移最大生存时间将逐渐减小，当]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最大生存时间为]{style="font-family:宋体"}[0]{lang="EN-US"}[时，]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[将启动清除过期]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的过程。用户可根据网络规模对]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最大生存时间进行调整。]{style="font-family:宋体"}
+每个LSP都有一个最大生存时间，随着时间的推移最大生存时间将逐渐减小，当LSP的最大生存时间为0时，IS-IS将启动清除过期LSP的过程。用户可根据网络规模对LSP的最大生存时间进行调整。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_414918049}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_80424569}[配置当前路由器生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[在]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[里的最大生存时间为]{style="font-family:宋体"}[25]{lang="EN-US"}[分钟，即]{style="font-family:宋体"}[1500]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置当前路由器生成的LSP在LSDB里的最大生存时间为25分钟，即1500秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_370899260}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] timer lsp-max-age 1500]{lang="EN-US"}
+Sysname-isis-1 timer lsp-max-age 1500
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2079837910}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[timer lsp-refresh]{lang="EN-US"}**]{#struct_0_x1984_13510_x1421266335}
-:::
-
-::: {#-1091829735 .myid}
-[]{#_Toc404788433}[]{#struct_0_x1984_13510_1665697546}[]{#_Toc297189190}[]{#_Toc290886819}[]{#_Toc252200795}[]{#_Toc163546311}[]{#_Toc50204123}[]{#_Toc33866122}
+·**timer lsp-refresh**
 
 **IS-IS \-- IS-IS配置命令 \-- timer lsp-refresh**
 
 ------------------------------------------------------------------------
 
-[**[timer lsp-refresh]{lang="EN-US"}**]{#struct_0_x1984_13510_x170359870}[命令用来配置]{style="font-family:宋体"}[LSP]{lang="EN-US"}[刷新周期。]{style="font-family:宋体"}
+**[timer lsp-refresh**]命令用来配置LSP刷新周期。
 
-[**[undo timer lsp-refresh]{lang="EN-US"}**]{#struct_0_x1984_13510_x632756046}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo timer lsp-refresh**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x840304253}
+【命令】
 
-[**[timer lsp-refresh ]{lang="EN-US"}***[second]{lang="EN-US"}*[s]{lang="EN-US"}]{#struct_0_x1984_13510_972177030}
+**[timer lsp-refresh ***second*s]
 
-[**[undo]{lang="EN-US"}**[ **timer lsp-refresh**]{lang="EN-US"}]{#struct_0_x1984_13510_1638617510}
+**[undo** **timer lsp-refresh**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x870336760}
+【缺省情况】
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_794082758}[刷新周期为]{style="font-family:宋体"}[900]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+LSP刷新周期为900秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2497463}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1665763082}[视图]{style="font-family:宋体"}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x891506365}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x496103618}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1086441426}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2001660811}
+【参数】
 
-[*[second]{lang="EN-US"}*[s]{lang="EN-US"}]{#struct_0_x1984_13510_x1303832660}[：]{style="font-family:宋体"}[LSP]{lang="EN-US"}[刷新周期，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65534]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[second*s]：LSP刷新周期，取值范围为1～65534，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1932584004}
+【使用指导】
 
-[[路由器必须定时刷新自己生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1984_13510_x1278393844}[，防止]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最大生存时间减小为]{style="font-family:宋体"}[0]{lang="EN-US"}[。另外，通过定时刷新]{style="font-family:宋体"}[LSP]{lang="EN-US"}[可以使整个区域中的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[保持同步。用户可对]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的刷新周期进行配置，提高]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的刷新频率可以加快网络收敛速度，但是将占用更多的带宽。]{style="font-family:宋体"}
+路由器必须定时刷新自己生成的LSP，防止LSP的最大生存时间减小为0。另外，通过定时刷新LSP可以使整个区域中的LSP保持同步。用户可对LSP的刷新周期进行配置，提高LSP的刷新频率可以加快网络收敛速度，但是将占用更多的带宽。
 
-[**[timer lsp-refresh]{lang="EN-US"}**]{#struct_0_x1984_13510_1048956943}[命令配置的时间必须小于]{style="font-family:宋体"}**[timer lsp-max-age]{lang="EN-US"}**[命令配置的时间，以保证在]{style="font-family:宋体"}[LSP]{lang="EN-US"}[失效前进行刷新。]{style="font-family:宋体"}
+**[timer lsp-refresh**]命令配置的时间必须小于**timer lsp-max-age**命令配置的时间，以保证在LSP失效前进行刷新。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1665828618}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_294563308}[配置当前系统的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[刷新周期为]{style="font-family:宋体"}[1500]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置当前系统的LSP刷新周期为1500秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_2066531060}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] timer lsp-refresh 1500]{lang="NO-BOK"}
+Sysname-isis-1 timer lsp-refresh 1500
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2133441547}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[timer lsp-max-age]{lang="EN-US"}**]{#struct_0_x1984_13510_1301320831}
-:::
-
-::: {#1171776781 .myid}
-[]{#_Toc404788434}[]{#struct_0_x1984_13510_x1647565808}[]{#_Toc297189191}[]{#_Toc290886820}[]{#_Toc252200796}[]{#_Toc163546312}[]{#_Toc50204124}[]{#_Toc33866123}
+·**timer lsp-max-age**
 
 **IS-IS \-- IS-IS配置命令 \-- timer spf**
 
 ------------------------------------------------------------------------
 
-[**[timer spf]{lang="EN-US"}**]{#struct_0_x1984_13510_1031821754}[命令用来配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[路由计算[的时间间隔]{#_Hlt23147082}。]{style="font-family:宋体"}
+**[timer spf**]命令用来配置IS-IS路由计算[的时间间隔。]
 
-[**[undo timer spf]{lang="EN-US"}**]{#struct_0_x1984_13510_101228411}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo timer spf**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1665894154}
+【命令】
 
-[**[timer spf ]{lang="EN-US"}***[maximum-interval]{lang="EN-US"}***[ ]{lang="EN-US"}**[\[ *minimum-interval* \[ *incremental-interval* \] \]]{lang="EN-US"}]{#struct_0_x1984_13510_x531618508}
+**[timer spf ***maximum-interval***** *minimum-interval*  *incremental-interval*  ]
 
-[**[undo timer spf]{lang="EN-US"}**]{#struct_0_x1984_13510_x1987999828}
+**[undo timer spf**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x1084597178}
+【缺省情况】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_498690125}[路由计算的最大时间间隔为]{style="font-family:宋体"}[5]{lang="EN-US"}[秒，最小时间间隔为]{style="font-family:宋体"}[50]{lang="EN-US"}[毫秒，]{style="font-family:宋体"}[时间间隔惩罚增量为]{style="font-family:宋体"}[200]{lang="EN-US"}[毫秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+IS-IS路由计算的最大时间间隔为5秒，最小时间间隔为50毫秒，时间间隔惩罚增量为200毫秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1917179324}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_1832400193}[视图]{style="font-family:宋体"}[/IS-IS IPv4]{lang="EN-US"}[单播拓扑视图]{style="font-family:宋体"}
+IS-IS视图/IS-IS IPv4单播拓扑视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x717089634}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1665435402}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_1025546830}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2085964294}
+【参数】
 
-[*[maximum-interval]{lang="EN-US"}*]{#struct_0_x1984_13510_1728068619}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[路由计算的最大时间间隔，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[120]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[maximum-interval*]：IS-IS路由计算的最大时间间隔，取值范围为1～120，单位为秒。
 
-[*[minimum-interval]{lang="EN-US"}*]{#struct_0_x1984_13510_x874850120}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[路由计算的最小时间间隔，取值范围为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[60000]{lang="EN-US"}[，单位为毫秒。]{style="font-family:宋体"}
+*[minimum-interval*]：IS-IS路由计算的最小时间间隔，取值范围为10～60000，单位为毫秒。
 
-[*[incremental-interval]{lang="EN-US"}*]{#struct_0_x1984_13510_x1016069371}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[路由计算的时间间隔惩罚增量，取值范围为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[60000]{lang="EN-US"}[，单位为毫秒。]{style="font-family:宋体"}
+*[incremental-interval*]：IS-IS路由计算的时间间隔惩罚增量，取值范围为10～60000，单位为毫秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2084554195}
+【使用指导】
 
-[[根据本地维护的]{style="font-family:宋体"}]{#struct_0_x1984_13510_2117350464}[LSDB]{lang="EN-US"}[，运行]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议的路由器通过]{style="font-family:宋体"}[SPF]{lang="EN-US"}[算法计算出以自己为根的最短路径树，并根据这一最短路径树决定到目的网络的下一跳。通过调节]{style="font-family:宋体"}[SPF]{lang="EN-US"}[的计算间隔，可以抑制网络频繁变化可能导致的占用过多带宽资源和路由器资源。]{style="font-family:宋体"}
+根据本地维护的LSDB，运行IS-IS协议的路由器通过SPF算法计算出以自己为根的最短路径树，并根据这一最短路径树决定到目的网络的下一跳。通过调节SPF的计算间隔，可以抑制网络频繁变化可能导致的占用过多带宽资源和路由器资源。
 
-[[本命令在网络变化不频繁的情况下将连续路由计算的时间间隔缩小到]{style="font-family:宋体"}]{#struct_0_x1984_13510_1356134399}*[minimum-interval]{lang="EN-US"}*[，而在网络变化频繁的情况下可以进行相应惩罚，将等待时间按照配置的惩罚增量延长，最大不超过]{style="font-family:宋体"}*[maximum-interval]{lang="EN-US"}*[。]{style="font-family:宋体"}
+本命令在网络变化不频繁的情况下将连续路由计算的时间间隔缩小到*minimum-interval*，而在网络变化频繁的情况下可以进行相应惩罚，将等待时间按照配置的惩罚增量延长，最大不超过*maximum-interval*。
 
-[[需要注意的是，]{style="font-family:宋体"}*[minimum-interval]{lang="EN-US"}*]{#struct_0_x1984_13510_1665500938}[和]{style="font-family:宋体"}*[incremental-interval]{lang="EN-US"}*[配置值不允许大于]{style="font-family:宋体"}*[maximum-interval]{lang="EN-US"}*[配置值。]{style="font-family:宋体"}
+需要注意的是，*minimum-interval*和*incremental-interval*配置值不允许大于*maximum-interval*配置值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x73575639}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_x1975322234}[配置路由器]{style="font-family:宋体"}[Sysname]{lang="EN-US"}[的]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[路由计算的最大时间间隔为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒，最小时间间隔为]{style="font-family:宋体"}[100]{lang="EN-US"}[毫秒，惩罚增量为]{style="font-family:宋体"}[300]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+\# 配置路由器Sysname的IS-IS路由计算的最大时间间隔为10秒，最小时间间隔为100毫秒，惩罚增量为300毫秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x136136722}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] timer spf 10 100 300]{lang="EN-US"}
-:::
-
-::: {#-1660379657 .myid}
-[]{#_Toc404788435}[]{#struct_0_x1984_13510_2109029973}[]{#_Toc357599211}[]{#_Toc352311298}
+Sysname-isis-1 timer spf 10 100 300
 
 **IS-IS \-- IS-IS配置命令 \-- topology**
 
 ------------------------------------------------------------------------
 
-[**[topology]{lang="EN-US"}**]{#struct_0_x1984_13510_2109095509}[命令用来创建并进入]{style="font-family:宋体"}[IS-IS IPv4]{lang="EN-US"}[单播拓扑视图。]{style="font-family:宋体"}
+**[topology**]命令用来创建并进入IS-IS IPv4单播拓扑视图。
 
-[**[undo topology]{lang="EN-US"}**]{#struct_0_x1984_13510_2109161045}[命令用来删除该视图下的所有配置。]{style="font-family:宋体"}
+**[undo topology**]命令用来删除该视图下的所有配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2109226581}
+【命令】
 
-[**[topology ]{lang="EN-US"}***[topo-name]{lang="EN-US"}***[ ]{lang="EN-US"}**[\[ **tid** *tid* \]]{lang="EN-US"}]{#struct_0_x1984_13510_2109292117}
+**[topology ***topo-name***** **tid** *tid* ]
 
-[**[undo topology ]{lang="EN-US"}***[topo-name]{lang="EN-US"}*]{#struct_0_x1984_13510_2109357653}
+**[undo topology ***topo-name*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2108767826}
+【缺省情况】
 
-[[没有创建]{style="font-family:宋体"}[IS-IS IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_2108833362}[单播拓扑视图。]{style="font-family:宋体"}
+没有创建IS-IS IPv4单播拓扑视图。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2108898898}
+【视图】
 
-[[IS-IS IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_2108964434}[单播地址族视图]{style="font-family:宋体"}
+IS-IS IPv4单播地址族视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2109029970}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_2109095506}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_2109161042}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2109226578}
+【参数】
 
-[*[topo-name]{lang="EN-US"}*]{#struct_0_x1984_13510_2109292114}[：拓扑名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[topo-name*]：拓扑名，为1～31个字符的字符串，区分大小写。
 
-[*[tid]{lang="EN-US"}*]{#struct_0_x1984_13510_2109357650}[：拓扑号，取值范围为]{style="font-family:宋体"}[6]{lang="EN-US"}[～]{style="font-family:宋体"}[4095]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[tid*]：拓扑号，取值范围为6～4095。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2108767827}
+【使用指导】
 
-[[拓扑名]{style="font-family:宋体"}**[base]{lang="EN-US"}**]{#struct_0_x1984_13510_2108833363}[已经为标准拓扑保留，在此处不能配置。]{style="font-family:宋体"}
+拓扑名**base**已经为标准拓扑保留，在此处不能配置。
 
-[[本命令必须在配置了对应的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}]{#struct_0_x1984_13510_2108898899}[子拓扑后才能生效。]{style="font-family:宋体"}
+本命令必须在配置了对应的IPv4子拓扑后才能生效。
 
-[[本命令必须在链路开销值类型为]{style="font-family:宋体"}**[wide]{lang="EN-US"}**]{#struct_0_x1984_13510_2108964435}**[、]{style="font-family:宋体"}[compatible]{lang="EN-US"}**[或]{style="font-family:宋体"}**[wide-compatible]{lang="EN-US"}**[时才能配置。]{style="font-family:宋体"}
+本命令必须在链路开销值类型为**wide****、compatible**或**wide-compatible**时才能配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2109029971}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_2109161043}[创建并进入]{style="font-family:宋体"}[IS-IS IPv4]{lang="EN-US"}[单播拓扑]{style="font-family:宋体"}[voice]{lang="EN-US"}[（]{style="font-family:宋体"}[4000]{lang="EN-US"}[）视图。]{style="font-family:宋体"}
+\# 创建并进入IS-IS IPv4单播拓扑voice（4000）视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_2109226579}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 100]{lang="EN-US"}
+Sysname isis 100
 
-[\[Sysname-isis-100\] address-family ipv4]{lang="EN-US"}
+Sysname-isis-100 address-family ipv4
 
-[\[Sysname-isis-100-ipv4\] topology voice tid 4000]{lang="EN-US"}
+Sysname-isis-100-ipv4 topology voice tid 4000
 
-[\[Sysname-isis-100-ipv4-topo-voice\]]{lang="EN-US"}
+Sysname-isis-100-ipv4-topo-voice
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2109292115}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}**[cost-style]{lang="EN-US"}**]{#struct_0_x1984_13510_2109357651}
-:::
-
-::: {#1347731002 .myid}
-[]{#_Toc404788436}[]{#struct_0_x1984_13510_x904529704}[]{#_Toc310604377}[]{#_Toc290886821}[]{#_Toc252200797}[]{#_Toc163546313}[]{#_Toc94930894}[]{#_Toc94586626}[]{#_Toc60036242}[]{#_Toc53707186}[]{#_Toc53487882}
+·**cost-style**
 
 **IS-IS \-- IS-IS配置命令 \-- virtual-system**
 
 ------------------------------------------------------------------------
 
-[**[virtual-system]{lang="EN-US"}**]{#struct_0_x1984_13510_1790970550}[命令用来配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的虚拟系统]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[virtual-system**]命令用来配置IS-IS进程的虚拟系统ID。
 
-[**[undo virtual-system]{lang="EN-US"}**]{#struct_0_x1984_13510_x63481976}[命令用来删除虚拟系统]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo virtual-system**]命令用来删除虚拟系统ID。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1984_13510_930878289}
+【命令】
 
-[**[virtual-system]{lang="EN-US"}**[ *virtual-system-id*]{lang="EN-US"}]{#struct_0_x1984_13510_1665566474}
+**[virtual-system** *virtual-system-id*]
 
-[**[undo virtual-system]{lang="EN-US"}**[ *virtual-system-id*]{lang="EN-US"}]{#struct_0_x1984_13510_x529723705}
+**[undo virtual-system** *virtual-system-id*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1984_13510_2037735243}
+【缺省情况】
 
-[[没有配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_915259768}[进程的虚拟系统]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+没有配置IS-IS进程的虚拟系统ID。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1984_13510_x2075389359}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_x1984_13510_x728948055}[视图]{style="font-family:宋体"}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1984_13510_283551375}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x461210277}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1984_13510_x513138533}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1984_13510_1665632010}
+【参数】
 
-[*[virtual-system-id]{lang="EN-US"}*]{#struct_0_x1984_13510_664026304}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的虚拟系统]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[virtual-system-id*]：IS-IS进程的虚拟系统ID。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1984_13510_37597559}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1984_13510_388353550}[配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[的虚拟系统]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[2222.2222.2222]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置IS-IS进程1的虚拟系统ID为2222.2222.2222。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1984_13510_x1552435620}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] virtual-system 2222.2222.2222]{lang="EN-US"}
+Sysname-isis-1 virtual-system 2222.2222.2222
 
-[ ]{lang="EN-US"}
-:::

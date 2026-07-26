@@ -1,2448 +1,2187 @@
-::: {#-1195010413 .myid}
-[]{#_Toc404789066}[]{#struct_0_15908_44860_983472504}[]{#_Toc357603575}[]{#_Toc352311320}
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- address-family ipv6**
 
 ------------------------------------------------------------------------
 
-[**[address-family ipv6]{lang="EN-US"}**]{#struct_0_15908_44860_746515391}[命令用来创建并进入]{style="font-family:宋体"}[IS-IS IPv6]{lang="EN-US"}[地址族视图。]{style="font-family:宋体"}
+**[address-family ipv6**]命令用来创建并进入IS-IS IPv6地址族视图。
 
-[**[undo address-family ipv6]{lang="EN-US"}**]{#struct_0_15908_44860_983669112}[命令用来删除]{style="font-family:
-宋体"}[IS-IS IPv6]{lang="EN-US"}[地址族视图。]{style="font-family:
-宋体"}
+**[undo address-family ipv6**]命令用来删除IS-IS IPv6地址族视图。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_1407368676}
+【命令】
 
-[**[address-family ipv6 ]{lang="EN-US"}**[\[ **unicast** \]]{lang="EN-US"}]{#struct_0_15908_44860_x29636380}
+**[address-family ipv6 ** **unicast** ]
 
-[**[undo address-family ipv6 ]{lang="EN-US"}**[\[ **unicast** \]]{lang="EN-US"}]{#struct_0_15908_44860_x1455175693}
+**[undo address-family ipv6 ** **unicast** ]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1223646223}
+【缺省情况】
 
-[[没有创建]{style="font-family:宋体"}[IS-IS IPv6]{lang="EN-US"}]{#struct_0_15908_44860_370552621}[地址族视图。]{style="font-family:宋体"}
+没有创建IS-IS IPv6地址族视图。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_1673790721}
+【视图】
 
-[[IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_x1438370653}[视图]{style="font-family:宋体"}
+IS-IS视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_1665210667}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_643585039}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_983603576}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_207154082}
+【参数】
 
-[**[unicast]{lang="EN-US"}**]{#struct_0_15908_44860_x845600601}[：表示单播地址族。缺省为单播地址族。]{style="font-family:宋体"}
+**[unicast**]：表示单播地址族。缺省为单播地址族。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_15908_44860_x251017254}
+【使用指导】
 
-[[配置本命令后，进程的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_15908_44860_x706625181}[被使能。]{style="font-family:宋体"}
+配置本命令后，进程的IPv6被使能。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_1851855248}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_1094376710}[在]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[视图下，创建并进入]{style="font-family:宋体"}[IS-IS IPv6]{lang="EN-US"}[地址族视图。]{style="font-family:宋体"}
+\# 在IS-IS视图下，创建并进入IS-IS IPv6地址族视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_x872857081}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 100]{lang="EN-US"}
+Sysname isis 100
 
-[\[Sysname-isis-100\] address-family ipv6]{lang="EN-US"}
+Sysname-isis-100 address-family ipv6
 
-[\[Sysname-isis-100-ipv6\]]{lang="EN-US"}
-:::
-
-::: {#-275634315 .myid}
-[]{#_Toc404789067}[]{#struct_0_15908_44860_1432046098}[]{#_Toc357603576}[]{#_Toc352311324}
+Sysname-isis-100-ipv6
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- auto-cost enable**
 
 ------------------------------------------------------------------------
 
-[**[auto-cost enable]{lang="EN-US"}**]{#struct_0_15908_44860_x696177700}[命令用来使能自动计算接口链路开销值功能。]{style="font-family:宋体"}
+**[auto-cost enable**]命令用来使能自动计算接口链路开销值功能。
 
-[**[undo auto-cost enable]{lang="EN-US"}**]{#struct_0_15908_44860_983275896}[命令用来关闭自动计算接口链路开销值功能。]{style="font-family:宋体"}
+**[undo auto-cost enable**]命令用来关闭自动计算接口链路开销值功能。
 
-[[【命令】]{style="font-size:10.0pt;font-family:黑体;color:#0096d6"}]{#struct_0_15908_44860_x1893345376}
+【命令】
 
-[**[auto-cost enable]{lang="EN-US"}**]{#struct_0_15908_44860_x740203253}
+**[auto-cost enable**]
 
-[**[undo auto-cost enable]{lang="EN-US"}**]{#struct_0_15908_44860_x564159475}
+**[undo auto-cost enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_15908_44860_1787687040}
+【缺省情况】
 
-[[自动计算接口链路开销值功能处于关闭状态。]{style="font-family:宋体"}]{#struct_0_15908_44860_x1722821380}
+自动计算接口链路开销值功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_1628496545}
+【视图】
 
-[[IS-IS IPv6]{lang="EN-US"}]{#struct_0_15908_44860_983210360}[单播地址族视图]{style="font-family:宋体"}
+IS-IS IPv6单播地址族视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_x705845345}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_x1069008664}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_1833976097}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_15908_44860_855780039}
+【使用指导】
 
-[[使能自动计算接口链路开销值功能后，将根据带宽参考值自动计算接口的链路度量值。当开销值的类型为]{style="font-family:宋体"}**[wide]{lang="EN-US"}**]{#struct_0_15908_44860_x1438171240}[或]{style="font-family:宋体"}**[wide-compatible]{lang="EN-US"}**[时，可以根据公式"开销]{style="font-family:宋体"}[=]{lang="EN-US"}[（参考值÷带宽）×]{style="font-family:宋体"}[10]{lang="EN-US"}["]{style="font-family:宋体"}[计算接口的链路度量值。当开销值类型为其他类型时，具体情况如下：接口带宽]{style="font-family:宋体"}[≤]{style="font-family:宋体"}[10Mbps]{lang="EN-US"}[时，值为]{style="font-family:宋体"}[60]{lang="EN-US"}[；接口带宽]{style="font-family:宋体"}[≤]{style="font-family:宋体"}[100Mbps]{lang="EN-US"}[时，值为]{style="font-family:宋体"}[50]{lang="EN-US"}[；接口带宽]{style="font-family:宋体"}[≤]{style="font-family:宋体"}[155Mbps]{lang="EN-US"}[时，值为]{style="font-family:宋体"}[40]{lang="EN-US"}[；接口带宽]{style="font-family:宋体"}[≤]{style="font-family:宋体"}[622Mbps]{lang="EN-US"}[时，值为]{style="font-family:宋体"}[30]{lang="EN-US"}[；接口带宽]{style="font-family:宋体"}[≤]{style="font-family:宋体"}[2500Mbps]{lang="EN-US"}[时，值为]{style="font-family:宋体"}[20]{lang="EN-US"}[；接口带宽]{style="font-family:宋体"}[\>2500Mbps]{lang="EN-US"}[时，值为]{style="font-family:宋体"}[10]{lang="EN-US"}[。]{style="font-family:宋体"}
+使能自动计算接口链路开销值功能后，将根据带宽参考值自动计算接口的链路度量值。当开销值的类型为**wide**或**wide-compatible**时，可以根据公式"开销=（参考值÷带宽）×10"计算接口的链路度量值。当开销值类型为其他类型时，具体情况如下：接口带宽≤10Mbps时，值为60；接口带宽≤100Mbps时，值为50；接口带宽≤155Mbps时，值为40；接口带宽≤622Mbps时，值为30；接口带宽≤2500Mbps时，值为20；接口带宽\>2500Mbps时，值为10。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_x2096841890}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_x1656832311}[使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[自动计算接口链路开销值功能。]{style="font-family:宋体"}
+\# 使能IS-IS进程1的IPv6自动计算接口链路开销值功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_176032165}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv6]{lang="EN-US"}
+Sysname-isis-1 address-family ipv6
 
-[\[Sysname-isis-1-ipv6\] auto-cost enable]{lang="EN-US"}
+Sysname-isis-1-ipv6 auto-cost enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_x456013684}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[bandwidth-reference]{lang="EN-US"}**]{#struct_0_15908_44860_983406968}
+·**bandwidth-reference**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[cost-style]{lang="EN-US"}**]{#struct_0_15908_44860_x492936472}
+·**cost-style**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[isis ]{lang="EN-US"}**]{#struct_0_15908_44860_x608301125}**[ipv6 ]{lang="EN-US"}[cost]{lang="EN-US"}**
-:::
-
-::: {#1475841160 .myid}
-[]{#_Toc404789068}[]{#struct_0_15908_44860_1199990201}[]{#_Toc357603577}[]{#_Toc352311325}
+·**isis ****ipv6 cost**
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- bandwidth-reference**
 
 ------------------------------------------------------------------------
 
-[**[bandwidth-reference]{lang="EN-US"}**]{#struct_0_15908_44860_1352030086}[命令用来配置]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[ ]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[自动计算链路开销值时依据的带宽参考值。]{style="font-family:宋体"}
+**[bandwidth-reference**]命令用来配置IPv6IS-IS自动计算链路开销值时依据的带宽参考值。
 
-[**[undo]{lang="EN-US"}**[ **bandwidth-reference**]{lang="EN-US"}]{#struct_0_15908_44860_98313481}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **bandwidth-reference**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-size:10.0pt;font-family:黑体;color:#0096d6"}]{#struct_0_15908_44860_x1109742815}
+【命令】
 
-[**[bandwidth-reference]{lang="EN-US"}**[ *value*]{lang="EN-US"}]{#struct_0_15908_44860_151981710}
+**[bandwidth-reference** *value*]
 
-[**[undo bandwidth-reference]{lang="EN-US"}**]{#struct_0_15908_44860_x1461356361}
+**[undo bandwidth-reference**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_15908_44860_983341432}
+【缺省情况】
 
-[[IPv6 IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_1277124565}[自动计算链路度量值时依据的带宽参考值为]{style="font-family:宋体"}[100Mbps]{lang="EN-US"}[。]{style="font-family:宋体"}
+IPv6 IS-IS自动计算链路度量值时依据的带宽参考值为100Mbps。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_582944598}
+【视图】
 
-[[IS-IS IPv6]{lang="EN-US"}]{#struct_0_15908_44860_1441580423}[单播地址族视图]{style="font-family:宋体"}*[ ]{style="color:blue"}*
+IS-IS IPv6单播地址族视图**
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1400028367}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_1891662569}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_314601263}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_x537636325}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_15908_44860_1977088412}[：带宽参考值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[2147483648]{lang="EN-US"}[，单位为]{style="font-family:宋体"}[Mbps]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[value*]：带宽参考值，取值范围为1～2147483648，单位为Mbps。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_680824878}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_984062328}[配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[带宽参考值为]{style="font-family:宋体"}[200Mbps]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置IS-IS进程1的IPv6带宽参考值为200Mbps。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_567930009}
+\<Sysname\> system-view
 
-[\[Sysname-isis-1\] address-family ipv6]{lang="EN-US"}
+Sysname-isis-1 address-family ipv6
 
-[\[Sysname-isis-1-ipv6\] bandwidth-reference 200]{lang="EN-US"}
+Sysname-isis-1-ipv6 bandwidth-reference 200
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_1665606700}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[auto-cost enable]{lang="EN-US"}**]{#struct_0_15908_44860_1795690283}
+·**auto-cost enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[isis cost]{lang="EN-US"}**]{#struct_0_15908_44860_92428402}
-:::
-
-::: {#188490618 .myid}
-[]{#_Toc404789069}[]{#struct_0_15908_44860_x867027703}[]{#_Toc357603578}[]{#_Toc352311326}
+·**isis cost**
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- circuit-cost**
 
 ------------------------------------------------------------------------
 
-[**[circuit-cost]{lang="EN-US"}**]{#struct_0_15908_44860_x877244259}[命令用来全局配置]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[的链路开销值。]{style="font-family:宋体"}
+**[circuit-cost**]命令用来全局配置IPv6 IS-IS的链路开销值。
 
-[**[undo circuit-cost]{lang="EN-US"}**]{#struct_0_15908_44860_x364522428}[命令用来取消该配置。]{style="font-family:宋体"}
+**[undo circuit-cost**]命令用来取消该配置。
 
-[[【命令】]{style="font-size:10.0pt;font-family:黑体;color:#0096d6"}]{#struct_0_15908_44860_983996792}
+【命令】
 
-[**[circuit-cost]{lang="EN-US"}**[ *value* \[ **level-1** \| **level-2** \]]{lang="EN-US"}]{#struct_0_15908_44860_x1553738183}
+**[circuit-cost**[ *value* [ **level-1** \| **level-2** ]]]
 
-[**[undo circuit-cost]{lang="EN-US"}**[ \[ **level-1** \| **level-2** \]]{lang="EN-US"}]{#struct_0_15908_44860_1207477621}
+**[undo circuit-cost**[ [ **level-1** \| **level-2** ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_15908_44860_x657424071}
+【缺省情况】
 
-[[没有全局配置]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_x968351709}[的链路开销值。]{style="font-family:宋体"}
+没有全局配置IPv6 IS-IS的链路开销值。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_x84896386}
+【视图】
 
-[[IS-IS IPv6]{lang="EN-US"}]{#struct_0_15908_44860_x422601454}[单播地址族视图]{style="font-family:宋体"}
+IS-IS IPv6单播地址族视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_1118467640}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_x767264456}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_1098183434}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_983538041}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_15908_44860_x1218628793}[：链路开销值，当指定的路径开销值类型不同时，取值范围也不同：]{style="font-family:宋体"}
+*[value*]：链路开销值，当指定的路径开销值类型不同时，取值范围也不同：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当指定的路径开销值类型为]{lang="EN-US" style="font-family:宋体"}**[narrow]{lang="EN-US"}**]{#struct_0_15908_44860_x1787415973}[、]{lang="EN-US" style="font-family:宋体"}**[narrow-compatibl]{lang="EN-US"}**[e]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}**[compatible]{lang="EN-US"}**[时，取值范围为]{lang="EN-US" style="font-family:宋体"}[0]{lang="EN-US"}[～]{lang="EN-US" style="font-family:宋体"}[63]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·当指定的路径开销值类型为**narrow**、**narrow-compatibl**e或**compatible**时，取值范围为0～63。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当指定的路径开销值类型为]{lang="EN-US" style="font-family:宋体"}**[wide]{lang="EN-US"}**]{#struct_0_15908_44860_308974704}[或]{lang="EN-US" style="font-family:宋体"}**[wide-compatible]{lang="EN-US"}**[时，取值范围为]{lang="EN-US" style="font-family:宋体"}[0]{lang="EN-US"}[～]{lang="EN-US" style="font-family:宋体"}[16777215]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·当指定的路径开销值类型为**wide**或**wide-compatible**时，取值范围为0～16777215。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_15908_44860_x515846936}[：配置在计算]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[路由时使用的链路开销值。]{style="font-family:宋体"}
+**[level-1**]：配置在计算Level-1路由时使用的链路开销值。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_15908_44860_x1113605031}[：配置在计算]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[路由时使用的链路开销值。]{style="font-family:宋体"}
+**[level-2**]：配置在计算Level-2路由时使用的链路开销值。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1098245272}
+【使用指导】
 
-[[如果不指定级别，将同时配置计算]{style="font-family:宋体"}[Level-1]{lang="EN-US"}]{#struct_0_15908_44860_x4413381}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[路由时使用的链路开销值。]{style="font-family:宋体"}
+如果不指定级别，将同时配置计算Level-1和Level-2路由时使用的链路开销值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_1575278440}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_1150914676}[全局配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[下]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[所有接口在计算]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[路由时的链路开销值为]{style="font-family:宋体"}[11]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 全局配置IS-IS进程1下IPv6所有接口在计算Level-1路由时的链路开销值为11。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_983472505}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv6]{lang="EN-US"}
+Sysname-isis-1 address-family ipv6
 
-[\[Sysname-isis-1-ipv6\] circuit-cost 11 level-1]{lang="EN-US"}
+Sysname-isis-1-ipv6 circuit-cost 11 level-1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_746515392}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[cost-style]{lang="EN-US"}**]{#struct_0_15908_44860_x326985734}
+·**cost-style**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[isis cost]{lang="EN-US"}**]{#struct_0_15908_44860_x800021525}
-:::
-
-::: {#225668895 .myid}
-[]{#_Toc404789070}[]{#struct_0_15908_44860_x46242533}[]{#_Toc357603579}[]{#_Toc352311327}
+·**isis cost**
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- default-route-advertise**
 
 ------------------------------------------------------------------------
 
-[**[default-route-advertise]{lang="EN-US"}**]{#struct_0_15908_44860_2062903372}[命令用来配置路由器生成]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[或]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[级别的]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[缺省路由。]{style="font-family:宋体"}
+**[default-route-advertise**]命令用来配置路由器生成Level-1或Level-2级别的IPv6 IS-IS缺省路由。
 
-[**[undo default-route-advertise]{lang="EN-US"}**]{#struct_0_15908_44860_1192928204}[命令用来取消此项功能。]{style="font-family:
-宋体"}
+**[undo default-route-advertise**]命令用来取消此项功能。
 
-[[【命令】]{style="font-size:10.0pt;font-family:黑体;color:#0096d6"}]{#struct_0_15908_44860_x894061906}
+【命令】
 
-[**[default-route-advertise]{lang="EN-US"}**[ \[ **avoid-learning** \| \[ **level-1** \| **level-1-2** \| **level-2** \] \| **route-policy** *route-policy-name* \| **tag** *tag* \] \*]{lang="EN-US"}]{#struct_0_15908_44860_x1881821018}
+**[default-route-advertise**[ [ **avoid-learning** \| [ **level-1** \| **level-1-2** \| **level-2** ] \| **route-policy** *route-policy-name* \| **tag** *tag* ] \*]]
 
-[**[undo default-route-advertise]{lang="EN-US"}**]{#struct_0_15908_44860_983669113}
+**[undo default-route-advertise**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_15908_44860_1407368675}
+【缺省情况】
 
-[[IPv6 IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_x29832988}[不发布]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[或]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[级别的缺省路由。]{style="font-family:宋体"}
+IPv6 IS-IS不发布Level-1或Level-2级别的缺省路由。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1278145447}
+【视图】
 
-[[IS-IS IPv6]{lang="EN-US"}]{#struct_0_15908_44860_963087837}[单播地址族视图]{style="font-family:宋体"}
+IS-IS IPv6单播地址族视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1922443127}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_x191688816}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_1984201102}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_x692523953}
+【参数】
 
-[**[avoid-learning]{lang="EN-US"}**]{#struct_0_15908_44860_667753563}[：禁止学习通过]{style="font-family:宋体"}[LSP]{lang="EN-US"}[发过来的缺省路由和]{style="font-family:宋体"}[ATT]{lang="EN-US"}[位产生的缺省路由，防止出现环路。]{style="font-family:宋体"}
+**[avoid-learning**]：禁止学习通过LSP发过来的缺省路由和ATT位产生的缺省路由，防止出现环路。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_15908_44860_983603577}[：发布]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[级别的缺省路由。]{style="font-family:宋体"}
+**[level-1**]：发布Level-1级别的缺省路由。
 
-[**[level-1-2]{lang="EN-US"}**]{#struct_0_15908_44860_207154081}[：同时发布]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[级别的缺省路由。]{style="font-family:宋体"}
+**[level-1-2**]：同时发布Level-1和Level-2级别的缺省路由。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_15908_44860_x845600600}[：发布]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[级别的缺省路由。]{style="font-family:宋体"}
+**[level-2**]：发布Level-2级别的缺省路由。
 
-[**[route-policy]{lang="EN-US"}***[ route-policy-name]{lang="EN-US"}*]{#struct_0_15908_44860_1851920784}[：指定路由策略名。]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[route-policy*** route-policy-name*]：指定路由策略名。*route-policy-name*为1～63个字符的字符串，区分大小写。
 
-[**[tag ]{lang="EN-US"}***[tag]{lang="EN-US"}*]{#struct_0_15908_44860_x476285812}[：配置缺省路由]{style="font-family:宋体"}[Tag]{lang="EN-US"}[值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[tag ***tag*]：配置缺省路由Tag值，取值范围为1～4294967295。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1251728398}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果不指定级别，则默认发布]{style="font-family:宋体"}]{#struct_0_15908_44860_x1655468930}[Level-2]{lang="EN-US"}[级别的缺省路由。]{style="font-family:宋体"}
+·如果不指定级别，则默认发布Level-2级别的缺省路由。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Level-1]{lang="EN-US"}]{#struct_0_15908_44860_958802236}[缺省路由只发布给本区域的其他路由器，]{lang="EN-US" style="font-family:宋体"}[Level-2]{lang="EN-US"}[缺省路由发布给所有]{lang="EN-US" style="font-family:宋体"}[Level-2]{lang="EN-US"}[和]{lang="EN-US" style="font-family:宋体"}[Level-1-2]{lang="EN-US"}[路由器。]{lang="EN-US" style="font-family:宋体"}
+·Level-1缺省路由只发布给本区域的其他路由器，Level-2缺省路由发布给所有Level-2和Level-1-2路由器。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[通过使用路由策略，可以强制]{lang="EN-US" style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_x585323575}[只在路由表中有匹配的路由项时才生成缺省路由。如果在路由策略视图中]{lang="EN-US" style="font-family:宋体"}**[apply isis level-1]{lang="EN-US"}**[，则可以在]{lang="EN-US" style="font-family:
-宋体"}[L1 LSP]{lang="EN-US"}[中生成缺省路由；如果在路由策略视图中]{lang="EN-US" style="font-family:宋体"}**[apply isis level-2]{lang="EN-US"}**[，则可以在]{lang="EN-US" style="font-family:宋体"}[L2 LSP]{lang="EN-US"}[中生成缺省路由；如果在路由策略视图中]{lang="EN-US" style="font-family:宋体"}**[apply isis level-1-2]{lang="EN-US"}**[，可以在]{lang="EN-US" style="font-family:
-宋体"}[L1 LSP]{lang="EN-US"}[、]{lang="EN-US" style="font-family:
-宋体"}[L2 LSP]{lang="EN-US"}[中各自生成缺省路由。]{lang="EN-US" style="font-family:
-宋体"}
+·通过使用路由策略，可以强制IPv6 IS-IS只在路由表中有匹配的路由项时才生成缺省路由。如果在路由策略视图中**apply isis level-1**，则可以在L1 LSP中生成缺省路由；如果在路由策略视图中**apply isis level-2**，则可以在L2 LSP中生成缺省路由；如果在路由策略视图中**apply isis level-1-2**，可以在L1 LSP、L2 LSP中各自生成缺省路由。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果在路由策略中指定了]{lang="EN-US" style="font-family:宋体"}[Tag]{lang="EN-US"}]{#struct_0_15908_44860_x1526964307}[值，则本命令中的]{lang="EN-US" style="font-family:宋体"}[Tag]{lang="EN-US"}[值不生效。]{lang="EN-US" style="font-family:宋体"}
+·如果在路由策略中指定了Tag值，则本命令中的Tag值不生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1465135098}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_983275897}[配置]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[发布]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[级别缺省路由。]{style="font-family:宋体"}
+\# 配置IPv6 IS-IS进程1发布Level-2级别缺省路由。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_x1893345375}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv6]{lang="EN-US"}
+Sysname-isis-1 address-family ipv6
 
-[\[Sysname-isis-1-ipv6\] default-route-advertise]{lang="EN-US"}
+Sysname-isis-1-ipv6 default-route-advertise
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_x336918726}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[apply isis]{lang="EN-US"}**]{#struct_0_15908_44860_467175374}
-:::
-
-::: {#-765249180 .myid}
-[]{#_Toc245204060}[]{#_Toc86723936}[]{#_Toc85873450}[]{#_Toc77992843}[]{#_Toc65740915}[]{#_Toc61239727}[]{#_Toc404789071}[]{#struct_0_15908_44860_x970029962}[]{#_Toc303846170}[]{#_Toc156184347}[]{#_Toc156184348}[]{#_Hlt7610887}[]{#_Hlt24184665}[]{#_Hlt536417594}
+·**apply isis**
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- display isis redistribute ipv6**
 
 ------------------------------------------------------------------------
 
-[**[display isis redistribute ipv6]{lang="EN-US"}**]{#struct_0_15908_44860_x2074154970}[命令用来显示]{style="font-family:
-宋体"}[IPv6 IS-IS]{lang="EN-US"}[引入路由信息。]{style="font-family:
-宋体"}
+**[display isis redistribute ipv6**]命令用来显示IPv6 IS-IS引入路由信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_1640587740}
+【命令】
 
-[**[display isis redistribute ipv6 ]{lang="EN-US"}**[\[ *ipv6-address mask-length* \] \[ **level-1** \| **level-2** \] \[ *process-id* \]]{lang="EN-US"}]{#struct_0_15908_44860_x1129776089}
+**[display isis redistribute ipv6 **[ *ipv6-address mask-length*  [ **level-1** \| **level-2** ]  *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_540542603}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_15908_44860_1643969697}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_x300852878}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_706611373}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_15908_44860_x1802659845}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_x1004154529}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_15908_44860_370064640}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_x797113121}
+【参数】
 
-[*[ipv6-address mask-length]{lang="EN-US"}*]{#struct_0_15908_44860_x1974679598}[：显示指定目的]{style="font-family:
-宋体"}[IP]{lang="EN-US"}[地址和掩码长度的引入路由。]{style="font-family:宋体"}
+*[ipv6-address mask-length*]：显示指定目的IP地址和掩码长度的引入路由。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_15908_44860_934841639}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，显示指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[路由信息。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535，显示指定IS-IS进程的IPv6路由信息。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_15908_44860_x1598577329}[：显示]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[的]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[路由信息。]{style="font-family:宋体"}
+**[level-1**]：显示Level-1的IS-IS路由信息。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_15908_44860_x300918414}[：显示]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[路由信息。]{style="font-family:宋体"}
+**[level-2**]：显示Level-2的IS-IS路由信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1313040736}
+【使用指导】
 
-[[如果不指定级别，将同时显示]{style="font-family:宋体"}[Level-1]{lang="EN-US"}]{#struct_0_15908_44860_x1522488216}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的路由信息。]{style="font-family:宋体"}
+如果不指定级别，将同时显示Level-1和Level-2的路由信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_x430856412}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_x1730020896}[显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[引入路由信息。]{style="font-family:宋体"}
+\# 显示IS-IS的IPv6引入路由信息。
 
-[[\<Sysname\> display isis redistribute ipv6 1]{lang="EN-US"}]{#struct_0_15908_44860_1620937138}
+\<Sysname\> display isis redistribute ipv6 1
 
-[ ]{lang="EN-US"}
+                         Route information for IS-IS(1)
 
-[                         Route information for IS-IS(1)]{lang="EN-US"}
+                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+                        Level-1 IPv6 Redistribute Table
 
-[ ]{lang="EN-US"}
+                        \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                        Level-1 IPv6 Redistribute Table]{lang="EN-US"}
+Type       : direct     Destination: 12:1::/64
 
-[                        \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+IntCost    : 0          Tag        :
 
-[Type       : direct     Destination: 12:1::/64]{lang="EN-US"}
+State      : Active
 
-[IntCost    : 0          Tag        :]{lang="EN-US"}
+                        Level-2 IPv6 Redistribute Table
 
-[State      : Active]{lang="EN-US"}
+                        \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ ]{lang="EN-US"}
+Type       : direct     Destination: 12:1::/64
 
-[ ]{lang="EN-US"}
+IntCost    : 0          Tag        :
 
-[                        Level-2 IPv6 Redistribute Table]{lang="EN-US"}
+State      : Active
 
-[                        \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+表1-1 display isis redistribute ipv6命令显示信息描述表
 
-[Type       : direct     Destination: 12:1::/64]{lang="EN-US"}
+字段
 
-[IntCost    : 0          Tag        :]{lang="EN-US"}
+描述
 
-[State      : Active]{lang="EN-US"}
+Route information for IS-IS(1)
 
-[[表1-1 ]{lang="EN-US"}[display isis redistribute ipv6]{lang="EN-US"}]{#struct_0_15908_44860_x1644446178}[命令显示信息描述表]{style="font-family:黑体"}
+指定IS-IS进程引入路由信息
 
-[]{#table_struct_0_442944632}[[字段]{style="font-family:黑体"}]{#struct_0_15908_44860_1029588424}
-:::
+Level-1 IPv6 Redistribute Table
 
-[[描述]{style="font-family:黑体"}]{#struct_0_15908_44860_932173843}
+Level-1的IS-IS IPv6引入路由信息
 
-[[Route information for IS-IS(1)]{lang="EN-US"}]{#struct_0_15908_44860_x814352798}
+Level-2 IPv6 Redistribute Table
 
-[[指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_x949032689}[进程引入路由信息]{style="font-family:宋体"}
+Level-2的IS-IS IPv6引入路由信息
 
-[[Level-1 IPv6 Redistribute Table]{lang="EN-US"}]{#struct_0_15908_44860_x177330388}
+Type
 
-[[Level-1]{lang="EN-US"}]{#struct_0_15908_44860_1620871602}[的]{style="font-family:宋体"}[IS-IS IPv6]{lang="EN-US"}[引入路由信息]{style="font-family:宋体"}
+引入的路由类型，包括直连、ISISv6、静态、OSPFv3、BGP4+、RIPng
 
-[[Level-2 IPv6 Redistribute Table]{lang="EN-US"}]{#struct_0_15908_44860_336963442}
+Destination
 
-[[Level-2]{lang="EN-US"}]{#struct_0_15908_44860_1991777786}[的]{style="font-family:宋体"}[IS-IS IPv6]{lang="EN-US"}[引入路由信息]{style="font-family:宋体"}
+IPv6目的地址
 
-[[Type]{lang="EN-US"}]{#struct_0_15908_44860_94751967}
+IntCost
 
-[[引入的路由类型，包括直连、]{style="font-family:宋体"}[ISISv6]{lang="EN-US"}]{#struct_0_15908_44860_x1178672683}[、静态、]{style="font-family:宋体"}[OSPFv3]{lang="EN-US"}[、]{style="font-family:宋体"}[BGP4+]{lang="EN-US"}[、]{style="font-family:宋体"}[RIPng]{lang="EN-US"}
+内部路由Cost
 
-[[Destination]{lang="EN-US"}]{#struct_0_15908_44860_1545185495}
+Tag
 
-[[IPv6]{lang="EN-US"}]{#struct_0_15908_44860_1620806066}[目的地址]{style="font-family:宋体"}
+引入路由发布时的Tag值
 
-[[IntCost]{lang="EN-US"}]{#struct_0_15908_44860_1876052391}
+State
 
-[[内部路由]{style="font-family:宋体"}]{#struct_0_15908_44860_796925492}[Cost]{lang="EN-US"}
-
-[[Tag]{lang="EN-US"}]{#struct_0_15908_44860_x1707668366}
-
-[[引入路由发布时的]{style="font-family:宋体"}]{#struct_0_15908_44860_x1117477202}[Tag]{lang="EN-US"}[值]{style="font-family:宋体"}
-
-[[State]{lang="EN-US"}]{#struct_0_15908_44860_1741417688}
-
-[[引入路由是否为最终生效路由]{style="font-family:宋体"}]{#struct_0_15908_44860_1620740530}
-
-[ ]{lang="EN-US"}
-
-::: {#-928487688 .myid}
-[]{#_Toc404789072}[]{#struct_0_15908_44860_326644603}
+引入路由是否为最终生效路由
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- display isis route ipv6**
 
 ------------------------------------------------------------------------
 
-[**[display isis route ipv6]{lang="EN-US"}**]{#struct_0_15908_44860_x1550186643}[命令用来显示]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[路由信息。]{style="font-family:宋体"}
+**[display isis route ipv6**]命令用来显示IPv6 IS-IS路由信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_15783030}
+【命令】
 
-[**[display isis route ipv6]{lang="EN-US"}**[ \[ *ipv6-address* \] \[ \[ **level-1** \| **level-2** \] \| **verbose** \] \* \[ ]{lang="EN-US"}*[process-id ]{lang="EN-US"}*[\]]{lang="EN-US"}]{#struct_0_15908_44860_x670590488}
+**[display isis route ipv6** [ *ipv6-address*  [ [ **level-1** \| **level-2** ] \| **verbose** ] \* \*process-id *]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1299119513}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_15908_44860_x641320393}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_1588465923}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_x1034306058}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_15908_44860_1620674994}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_1533370682}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_15908_44860_1421546805}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_1282427399}
+【参数】
 
-[*[ipv6-address]{lang="EN-US"}*]{#struct_0_15908_44860_160289990}[：显示指定目的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址的路由。]{style="font-family:宋体"}
+*[ipv6-address*]：显示指定目的IPv6地址的路由。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_15908_44860_x1124713388}[：显示]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[路由。]{style="font-family:宋体"}
+**[level-1**]：显示Level-1的IPv6 IS-IS路由。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_15908_44860_x1412666676}[：显示]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[路由。]{style="font-family:宋体"}
+**[level-2**]：显示Level-2的IPv6 IS-IS路由。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_15908_44860_541553835}[：显示]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[路由的详细信息。]{style="font-family:宋体"}
+**[verbose**]：显示IPv6 IS-IS路由的详细信息。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_15908_44860_187210083}[：]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：IPv6 IS-IS进程号，取值范围为1～65535。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_15908_44860_1620609458}
+【使用指导】
 
-[[如果不指定级别，默认为显示]{style="font-family:宋体"}[Level-1]{lang="EN-US"}]{#struct_0_15908_44860_1064979725}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[路由信息，即]{style="font-family:宋体"}[Level-1-2]{lang="EN-US"}[。]{style="font-family:宋体"}
+如果不指定级别，默认为显示Level-1和Level-2路由信息，即Level-1-2。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_x73391514}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_2081463276}[显示]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[的路由信息。]{style="font-family:宋体"}
+\# 显示IPv6 IS-IS的路由信息。
 
-[[\<Sysname\> display isis route ipv6]{lang="EN-US"}]{#struct_0_15908_44860_1620543922}
+\<Sysname\> display isis route ipv6
 
-[ ]{lang="EN-US"}
+                         Route information for IS-IS(1)
 
-[                         Route information for IS-IS(1)]{lang="EN-US"}
+                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+                         Level-1 IPv6 Forwarding Table
 
-[ ]{lang="EN-US"}
+                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                         Level-1 IPv6 Forwarding Table]{lang="EN-US"}
+ Destination: 2001:1::                                PrefixLen: 64
 
-[                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ Flag       : R/L/-                                   Cost     : 20
 
-[ ]{lang="EN-US"}
+ Next Hop   : FE80::200:5EFF:FE64:8905                Interface: GE1/0/1
 
-[ Destination: 2001:1::                                PrefixLen: 64]{lang="EN-US"}
+ Destination: 2001:2::                                PrefixLen: 64
 
-[ Flag       : R/L/-                                   Cost     : 20]{lang="EN-US"}
+ Flag       : D/L/-                                   Cost     : 10
 
-[ Next Hop   : FE80::200:5EFF:FE64:8905                Interface: GE1/0/1]{lang="EN-US"}
+ Next Hop   : Direct                                  Interface: GE1/0/1
 
-[ ]{lang="EN-US"}
+       Flags: D-Direct, R-Added to Rib, L-Advertised in LSPs, U-Up/Down Bit Set
 
-[ Destination: 2001:2::                                PrefixLen: 64]{lang="EN-US"}
+                         Level-2 IPv6 Forwarding Table
 
-[ Flag       : D/L/-                                   Cost     : 10]{lang="EN-US"}
+                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ Next Hop   : Direct                                  Interface: GE1/0/1]{lang="EN-US"}
+ Destination: 2001:1::                                PrefixLen: 64
 
-[ ]{lang="EN-US"}
+ Flag       : -/-/-                                   Cost     : 20
 
-[       Flags: D-Direct, R-Added to Rib, L-Advertised in LSPs, U-Up/Down Bit Set]{lang="EN-US"}
+ Destination: 2001:2::                                PrefixLen: 64
 
-[ ]{lang="EN-US"}
+ Flag       : D/L/-                                   Cost     : 10
 
-[                         Level-2 IPv6 Forwarding Table]{lang="EN-US"}
+       Flags: D-Direct, R-Added to Rib, L-Advertised in LSPs, U-Up/Down Bit Set
 
-[                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+表1-2 display isis route ipv6命令显示信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[ Destination: 2001:1::                                PrefixLen: 64]{lang="EN-US"}
+描述
 
-[ Flag       : -/-/-                                   Cost     : 20]{lang="EN-US"}
+Destination
 
-[ ]{lang="EN-US"}
+IPv6目的地址前缀
 
-[ ]{lang="EN-US"}
+PrefixLen
 
-[ Destination: 2001:2::                                PrefixLen: 64]{lang="EN-US"}
+前缀长度
 
-[ Flag       : D/L/-                                   Cost     : 10]{lang="EN-US"}
+Flag/Flags
 
-[ ]{lang="EN-US"}
+路由信息状态标志位
 
-[       Flags: D-Direct, R-Added to Rib, L-Advertised in LSPs, U-Up/Down Bit Set]{lang="EN-US"}
+·D：直连路由
 
-[[表1-2 ]{lang="EN-US"}[display isis route ipv6]{lang="EN-US"}]{#struct_0_15908_44860_x841182961}[命令显示信息描述表]{style="font-family:黑体"}
+·R：该路由是否已放到路由表中
 
-[]{#table_struct_0_440096852}[[字段]{style="font-family:黑体"}]{#struct_0_15908_44860_x549247089}
-:::
+·L：是否已经通过LSP发布
 
-[[描述]{style="font-family:黑体"}]{#struct_0_15908_44860_x171259492}
+·U：路由渗透状态标识，标识Level-1路由是否来自Level-2。如果配置为"U"则可避免由Level-2发送到Level-1的LSP又返回给Level-2
 
-[[Destination]{lang="EN-US"}]{#struct_0_15908_44860_916056161}
+Cost
 
-[[IPv6]{lang="EN-US"}]{#struct_0_15908_44860_1620478386}[目的地址前缀]{style="font-family:宋体"}
+开销值
 
-[[PrefixLen]{lang="EN-US"}]{#struct_0_15908_44860_1067374651}
+Next Hop
 
-[[前缀长度]{style="font-family:宋体"}]{#struct_0_15908_44860_1358571096}
+下一跳
 
-[[Flag/Flags]{lang="EN-US"}]{#struct_0_15908_44860_x1487753252}
+Interface
 
-[[路由信息状态标志位]{style="font-family:宋体"}]{#struct_0_15908_44860_x598875715}
+出接口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[D]{lang="EN-US"}]{#struct_0_15908_44860_719094906}[：直连路由]{lang="EN-US" style="font-family:宋体"}
+\# 显示IPv6 IS-IS的详细路由信息。
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[R]{lang="EN-US"}]{#struct_0_15908_44860_6039195}[：该路由是否已放到路由表中]{style="font-family:宋体"}
+\<Sysname\> display isis route ipv6 verbose
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[L]{lang="EN-US"}]{#struct_0_15908_44860_1621461426}[：是否已经通过]{style="font-family:宋体"}[LSP]{lang="EN-US"}[发布]{style="font-family:宋体"}
+                         Route information for IS-IS(1)
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[U]{lang="EN-US"}]{#struct_0_15908_44860_1505339384}[：路由渗透状态标识，标识]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[路由是否来自]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[。]{style="font-family:宋体"}[如果配置为"]{lang="EN-US" style="font-family:宋体"}[U]{lang="EN-US"}["则可避免由]{lang="EN-US" style="font-family:宋体"}[Level-2]{lang="EN-US"}[发送到]{lang="EN-US" style="font-family:宋体"}[Level-1]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[又返回给]{lang="EN-US" style="font-family:宋体"}[Level-2]{lang="EN-US"}
+                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[[Cost]{lang="EN-US"}]{#struct_0_15908_44860_1405369719}
+                         Level-1 IPv6 Forwarding Table
 
-[[开销值]{style="font-family:宋体"}]{#struct_0_15908_44860_x1909113471}
+                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[[Next Hop]{lang="EN-US"}]{#struct_0_15908_44860_1350075105}
+ IPV6 Dest  : 2001:1::/64                    Cost : 20            Flag : R/L/-
 
-[[下一跳]{style="font-family:宋体"}]{#struct_0_15908_44860_1621395890}
+ Admin Tag  : -                         Src Count : 1
 
-[[Interface]{lang="EN-US"}]{#struct_0_15908_44860_x1615276504}
+ NextHop    :                           Interface :          ExitIndex :
 
-[[出接口]{style="font-family:宋体"}]{#struct_0_15908_44860_575563844}
+    FE80::200:5EFF:FE64:8905                GE1/0/1             0x00000003
 
-[ ]{lang="EN-US"}
+ Nib ID    : 0x24000002
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_1986705838}[显示]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[的详细路由信息。]{style="font-family:宋体"}
+ IPV6 Dest  : 2001:2::/64                    Cost : 10            Flag : D/L/-
 
-[[\<Sysname\> display isis route ipv6 verbose]{lang="EN-US"}]{#struct_0_15908_44860_1620937139}
+ Admin Tag  : -                         Src Count : 2
 
-[ ]{lang="EN-US"}
+ NextHop    :                           Interface :          ExitIndex :
 
-[                         Route information for IS-IS(1)]{lang="EN-US"}
+    Direct                                  GE1/0/1             0x00000000
 
-[                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+      Flags: D-Direct, R-Added to Rib, L-Advertised in LSPs, U-Up/Down Bit Set
 
-[ ]{lang="EN-US"}
+                         Level-2 IPv6 Forwarding Table
 
-[                         Level-1 IPv6 Forwarding Table]{lang="EN-US"}
+                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ IPV6 Dest  : 2001:1::/64                    Cost : 20            Flag : -/-/-
 
-[ ]{lang="EN-US"}
+ Admin Tag  : -                         Src Count : 1
 
-[ IPV6 Dest  : 2001:1::/64                    Cost : 20            Flag : R/L/-]{lang="EN-US"}
+ IPV6 Dest  : 2001:2::/64                    Cost : 10            Flag : D/L/-
 
-[ Admin Tag  : -                         Src Count : 1]{lang="EN-US"}
+ Admin Tag  : -                         Src Count : 2
 
-[ NextHop    :                           Interface :          ExitIndex :]{lang="EN-US"}
+      Flags: D-Direct, R-Added to Rib, L-Advertised in LSPs, U-Up/Down Bit Set
 
-[    FE80::200:5EFF:FE64:8905                GE1/0/1             0x00000003]{lang="EN-US"}
+表1-3 display isis route ipv6 verbose命令显示信息描述表
 
-[ Nib ID    : 0x24000002]{lang="EN-US"}
+字段
 
-[ ]{lang="EN-US"}
+描述
 
-[ IPV6 Dest  : 2001:2::/64                    Cost : 10            Flag : D/L/-]{lang="EN-US"}
+IPV6 Dest
 
-[ Admin Tag  : -                         Src Count : 2]{lang="EN-US"}
+IPv6目的地址和前缀信息
 
-[ NextHop    :                           Interface :          ExitIndex :]{lang="EN-US"}
+Cost
 
-[    Direct                                  GE1/0/1             0x00000000]{lang="EN-US"}
+开销值
 
-[ ]{lang="EN-US"}
+Flag/Flags
 
-[      Flags: D-Direct, R-Added to Rib, L-Advertised in LSPs, U-Up/Down Bit Set]{lang="EN-US"}
+路由信息状态标志位
 
-[ ]{lang="EN-US"}
+·D：直连路由
 
-[                         Level-2 IPv6 Forwarding Table]{lang="EN-US"}
+·R：该路由是否已放到路由表中
 
-[                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+·L：是否已经通过LSP发布
 
-[ ]{lang="EN-US"}
+·U：路由渗透状态标识，标识Level-1路由是否来自Level-2。如果配置为"U"则可避免由Level-2发送到Level-1的LSP又返回给Level-2
 
-[ IPV6 Dest  : 2001:1::/64                    Cost : 20            Flag : -/-/-]{lang="EN-US"}
+Admin Tag
 
-[ Admin Tag  : -                         Src Count : 1]{lang="EN-US"}
+管理标记
 
-[ ]{lang="EN-US"}
+Src Count
 
-[ IPV6 Dest  : 2001:2::/64                    Cost : 10            Flag : D/L/-]{lang="EN-US"}
+发布源个数
 
-[ Admin Tag  : -                         Src Count : 2]{lang="EN-US"}
+Next Hop
 
-[ ]{lang="EN-US"}
+下一跳
 
-[      Flags: D-Direct, R-Added to Rib, L-Advertised in LSPs, U-Up/Down Bit Set]{lang="EN-US"}
+Interface
 
-[[表1-3 ]{lang="EN-US"}[display isis route ipv6 verbose]{lang="EN-US"}]{#struct_0_15908_44860_x1644380642}[命令显示信息描述表]{style="font-family:黑体"}
+出接口
 
-[]{#table_struct_0_467600594}[[字段]{style="font-family:黑体"}]{#struct_0_15908_44860_x2103008851}
+ExitIndex
 
-[[描述]{style="font-family:黑体"}]{#struct_0_15908_44860_1620871603}
+出接口索引
 
-[[IPV6 Dest]{lang="EN-US"}]{#struct_0_15908_44860_337028978}
+Nib ID
 
-[[IPv6]{lang="EN-US"}]{#struct_0_15908_44860_1940067032}[目的地址和前缀信息]{style="font-family:宋体"}
-
-[[Cost]{lang="EN-US"}]{#struct_0_15908_44860_x1588134704}
-
-[[开销值]{style="font-family:宋体"}]{#struct_0_15908_44860_x1274281602}
-
-[[Flag/Flags]{lang="EN-US"}]{#struct_0_15908_44860_x1679489768}
-
-[[路由信息状态标志位]{style="font-family:宋体"}]{#struct_0_15908_44860_1549640880}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[D]{lang="EN-US"}]{#struct_0_15908_44860_1620806067}[：直连路由]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[R]{lang="EN-US"}]{#struct_0_15908_44860_1875986855}[：该路由是否已放到路由表中]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[L]{lang="EN-US"}]{#struct_0_15908_44860_x591859833}[：是否已经通过]{style="font-family:宋体"}[LSP]{lang="EN-US"}[发布]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[U]{lang="EN-US"}]{#struct_0_15908_44860_x1010627272}[：路由渗透状态标识，标识]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[路由是否来自]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[。]{style="font-family:宋体"}[如果配置为"]{lang="EN-US" style="font-family:宋体"}[U]{lang="EN-US"}["则可避免由]{lang="EN-US" style="font-family:宋体"}[Level-2]{lang="EN-US"}[发送到]{lang="EN-US" style="font-family:宋体"}[Level-1]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[又返回给]{lang="EN-US" style="font-family:宋体"}[Level-2]{lang="EN-US"}
-
-[[Admin Tag]{lang="EN-US"}]{#struct_0_15908_44860_x761224059}
-
-[[管理标记]{style="font-family:宋体"}]{#struct_0_15908_44860_1075442442}
-
-[[Src Count]{lang="EN-US"}]{#struct_0_15908_44860_1620740531}
-
-[[发布源个数]{style="font-family:宋体"}]{#struct_0_15908_44860_326579067}
-
-[[Next Hop]{lang="EN-US"}]{#struct_0_15908_44860_913132400}
-
-[[下一跳]{style="font-family:宋体"}]{#struct_0_15908_44860_x1273995046}
-
-[[Interface]{lang="EN-US"}]{#struct_0_15908_44860_x1837057960}
-
-[[出接口]{style="font-family:宋体"}]{#struct_0_15908_44860_1620674995}
-
-[[ExitIndex]{lang="EN-US"}]{#struct_0_15908_44860_1533436218}
-
-[[出接口索引]{style="font-family:宋体"}]{#struct_0_15908_44860_x513922207}
-
-[[Nib ID]{lang="EN-US"}]{#struct_0_15908_44860_x654367317}
-
-[[路由管理分配的]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_15908_44860_348242441}[，即下一跳索引]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#154106903 .myid}
-[]{#_Toc245204061}[]{#_Toc86723945}[]{#_Toc85873459}[]{#_Toc77992844}[]{#_Toc65740917}[]{#_Toc61239720}[]{#_Toc404789073}[]{#struct_0_15908_44860_x225318453}[]{#_Toc341967693}[]{#_Toc341782289}[]{#_Toc341285953}[]{#_Hlt9932878}
+路由管理分配的ID，即下一跳索引
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- display isis spf-tree ipv6**
 
 ------------------------------------------------------------------------
 
-[**[display isis spf-tree ipv6]{lang="EN-US"}**]{#struct_0_15908_44860_1467852244}[命令用来显示]{style="font-family:
-宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[拓扑信息。]{style="font-family:宋体"}
+**[display isis spf-tree ipv6**]命令用来显示IS-IS的IPv6拓扑信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_696269822}
+【命令】
 
-[**[display isis spf-tree ipv6]{lang="EN-US"}**[ \[ \[ **level-1** \| **level-2** \] \| **verbose** \] \* \[ *process-id* \]]{lang="EN-US"}]{#struct_0_15908_44860_x794587065}
+**[display isis spf-tree ipv6**[ [ [ **level-1** \| **level-2** ] \| **verbose** ] \*  *process-id* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_1620609459}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_15908_44860_1064914189}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_x490068711}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_x428048280}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_15908_44860_270705988}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_709439715}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_15908_44860_307606374}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1676631780}
+【参数】
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_15908_44860_x729186748}[：显示]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[的]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[拓扑信息。如果未指定级别，将同时显示]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的拓扑信息。]{style="font-family:宋体"}
+**[level-1**]：显示Level-1的IS-IS拓扑信息。如果未指定级别，将同时显示Level-1和Level-2的拓扑信息。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_15908_44860_1620543923}[：显示]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[拓扑信息。如果未指定级别，将同时显示]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的拓扑信息。]{style="font-family:宋体"}
+**[level-2**]：显示Level-2的IS-IS拓扑信息。如果未指定级别，将同时显示Level-1和Level-2的拓扑信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_15908_44860_x841248497}[：显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的详细拓扑信息。如果未指定该参数，显示摘要拓扑信息。]{style="font-family:宋体"}
+**[verbose**]：显示IS-IS的详细拓扑信息。如果未指定该参数，显示摘要拓扑信息。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_15908_44860_x246106757}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，显示指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的拓扑信息。如果未指定]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，将显示所有]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的拓扑信息。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围为1～65535，显示指定IS-IS进程的拓扑信息。如果未指定IS-IS进程号，将显示所有IS-IS进程的拓扑信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_x451914458}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_1894523007}[显示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[拓扑信息。]{style="font-family:宋体"}
+\# 显示IS-IS的IPv6拓扑信息。
 
-[[\<Sysname\> display isis spf-tree ipv6]{lang="EN-US"}]{#struct_0_15908_44860_1620478387}
+\<Sysname\> display isis spf-tree ipv6
 
-[ ]{lang="EN-US"}
+                        Shortest Path Tree for IS-IS(1)
 
-[                        Shortest Path Tree for IS-IS(1)]{lang="EN-US"}
+                        \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                        \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+      Flags: S-Node is on SPF tree       T-Node is on tent list
 
-[ ]{lang="EN-US"}
+             O-Node is overload          R-Node is directly reachable
 
-[      Flags: S-Node is on SPF tree       T-Node is on tent list]{lang="EN-US"}
+             I-Node or Link is isolated  D-Node or Link is to be deleted
 
-[             O-Node is overload          R-Node is directly reachable]{lang="EN-US"}
+             C-Neighbor is child         P-Neighbor is parent
 
-[             I-Node or Link is isolated  D-Node or Link is to be deleted]{lang="EN-US"}
+             V-Link is involved          N-Link is a new path
 
-[             C-Neighbor is child         P-Neighbor is parent]{lang="EN-US"}
+             L-Link is on change list    U-Protocol usage is changed
 
-[             V-Link is involved          N-Link is a new path]{lang="EN-US"}
+             H-Nexthop is changed
 
-[             L-Link is on change list    U-Protocol usage is changed]{lang="EN-US"}
+                       Level-1 Shortest Path Tree
 
-[             H-Nexthop is changed]{lang="EN-US"}
+                       \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ ]{lang="EN-US"}
+SpfNode            NodeFlag       SpfLink            LinkCost LinkFlag
 
-[                       Level-1 Shortest Path Tree]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                       \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+0000.0000.0032.00  S/-/-/-/-/-
 
-[ ]{lang="EN-US"}
+                               \--\>0000.0000.0032.01  10       -/-/C/-/-/-/-/-/-
 
-[SpfNode            NodeFlag       SpfLink            LinkCost LinkFlag]{lang="EN-US"}
+                               \--\>0000.0000.0064.00  10       -/-/C/-/-/-/-/-/-
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+0000.0000.0032.01  S/-/-/R/-/-
 
-[0000.0000.0032.00  S/-/-/-/-/-]{lang="EN-US"}
+                               \--\>0000.0000.0064.00  0        -/-/C/-/-/-/-/-/-
 
-[                               \--\>0000.0000.0032.01  10       -/-/C/-/-/-/-/-/-]{lang="EN-US"}
+                               \--\>0000.0000.0032.00  0        -/-/-/P/-/-/-/-/-
 
-[                               \--\>0000.0000.0064.00  10       -/-/C/-/-/-/-/-/-]{lang="EN-US"}
+0000.0000.0064.00  S/-/-/R/-/-
 
-[0000.0000.0032.01  S/-/-/R/-/-]{lang="EN-US"}
+                               \--\>0000.0000.0032.00  10       -/-/-/P/-/-/-/-/-
 
-[                               \--\>0000.0000.0064.00  0        -/-/C/-/-/-/-/-/-]{lang="EN-US"}
+                               \--\>0000.0000.0032.01  10       -/-/-/P/-/-/-/-/-
 
-[                               \--\>0000.0000.0032.00  0        -/-/-/P/-/-/-/-/-]{lang="EN-US"}
+                       Level-2 Shortest Path Tree
 
-[0000.0000.0064.00  S/-/-/R/-/-]{lang="EN-US"}
+                       \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                               \--\>0000.0000.0032.00  10       -/-/-/P/-/-/-/-/-]{lang="EN-US"}
+SpfNode            NodeFlag       SpfLink            LinkCost LinkFlag
 
-[                               \--\>0000.0000.0032.01  10       -/-/-/P/-/-/-/-/-]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ ]{lang="EN-US"}
+0000.0000.0032.00  S/-/-/-/-/-
 
-[                       Level-2 Shortest Path Tree]{lang="EN-US"}
+                               \--\>0000.0000.0032.01  10       -/-/C/-/-/-/-/-/-
 
-[                       \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+                               \--\>0000.0000.0064.00  10       -/-/C/-/-/-/-/-/-
 
-[ ]{lang="EN-US"}
+0000.0000.0032.01  S/-/-/R/-/-
 
-[SpfNode            NodeFlag       SpfLink            LinkCost LinkFlag]{lang="EN-US"}
+                               \--\>0000.0000.0064.00  0        -/-/C/-/-/-/-/-/-
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+                               \--\>0000.0000.0032.00  0        -/-/-/P/-/-/-/-/-
 
-[0000.0000.0032.00  S/-/-/-/-/-]{lang="EN-US"}
+0000.0000.0064.00  S/-/-/R/-/-
 
-[                               \--\>0000.0000.0032.01  10       -/-/C/-/-/-/-/-/-]{lang="EN-US"}
+                               \--\>0000.0000.0032.00  10       -/-/-/P/-/-/-/-/-
 
-[                               \--\>0000.0000.0064.00  10       -/-/C/-/-/-/-/-/-]{lang="EN-US"}
+                               \--\>0000.0000.0032.01  10       -/-/-/P/-/-/-/-/-
 
-[0000.0000.0032.01  S/-/-/R/-/-]{lang="EN-US"}
+\# 显示IS-IS Level-1的IPv6详细拓扑信息。
 
-[                               \--\>0000.0000.0064.00  0        -/-/C/-/-/-/-/-/-]{lang="EN-US"}
+\<Sysname\> display isis spf-tree ipv6 level-1 verbose
 
-[                               \--\>0000.0000.0032.00  0        -/-/-/P/-/-/-/-/-]{lang="EN-US"}
+                        Shortest Path Tree for IS-IS(1)
 
-[0000.0000.0064.00  S/-/-/R/-/-]{lang="EN-US"}
+                        \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                               \--\>0000.0000.0032.00  10       -/-/-/P/-/-/-/-/-]{lang="EN-US"}
+      Flags: S-Node is on SPF tree       T-Node is on tent list
 
-[                               \--\>0000.0000.0032.01  10       -/-/-/P/-/-/-/-/-]{lang="EN-US"}
+             O-Node is overload          R-Node is directly reachable
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_1621461427}[显示]{style="font-family:宋体"}[IS-IS Level-1]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[详细拓扑信息。]{style="font-family:宋体"}
+             I-Node or Link is isolated  D-Node or Link is to be deleted
 
-[[\<Sysname\> display isis spf-tree ipv6 level-1 verbose]{lang="EN-US"}]{#struct_0_15908_44860_1620740528}
+             C-Neighbor is child         P-Neighbor is parent
 
-[                        Shortest Path Tree for IS-IS(1)]{lang="EN-US"}
+             V-Link is involved          N-Link is a new path
 
-[                        \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+             L-Link is on change list    U-Protocol usage is changed
 
-[ ]{lang="EN-US"}
+             H-Nexthop is changed
 
-[      Flags: S-Node is on SPF tree       T-Node is on tent list]{lang="EN-US"}
+                           Level-1 Shortest Path Tree
 
-[             O-Node is overload          R-Node is directly reachable]{lang="EN-US"}
+                           \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[             I-Node or Link is isolated  D-Node or Link is to be deleted]{lang="EN-US"}
+ SpfNode        : 0000.0000.0032.00
 
-[             C-Neighbor is child         P-Neighbor is parent]{lang="EN-US"}
+ Distance       : 0
 
-[             V-Link is involved          N-Link is a new path]{lang="EN-US"}
+ TE distance    : 0
 
-[             L-Link is on change list    U-Protocol usage is changed]{lang="EN-US"}
+ NodeFlag       : S/-/-/-/-/-
 
-[             H-Nexthop is changed]{lang="EN-US"}
+ RelayNibID     : 0x0
 
-[ ]{lang="EN-US"}
+ TE tunnel count: 0
 
-[                           Level-1 Shortest Path Tree]{lang="EN-US"}
+ Nexthop count  : 0
 
-[                           \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ SpfLink count  : 2
 
-[ ]{lang="EN-US"}
+ \--\>0000.0000.0032.01
 
-[ SpfNode        : 0000.0000.0032.00]{lang="EN-US"}
+    LinkCost    : 10
 
-[ Distance       : 0]{lang="EN-US"}
+    LinkNewCost : 10
 
-[ TE distance    : 0]{lang="EN-US"}
+    LinkFlag    : -/-/C/-/-/-/-/-/-
 
-[ NodeFlag       : S/-/-/-/-/-]{lang="EN-US"}
+    LinkSrcCnt  : 1
 
-[ RelayNibID     : 0x0]{lang="EN-US"}
+        Type    : Adjacent   Interface: N/A
 
-[ TE tunnel count: 0]{lang="EN-US"}
+        Cost    : 10         Nexthop  : N/A
 
-[ Nexthop count  : 0]{lang="EN-US"}
+\--\>0000.0000.0064.00
 
-[ SpfLink count  : 2]{lang="EN-US"}
+    LinkCost    : 10
 
-[ \--\>0000.0000.0032.01]{lang="EN-US"}
+    LinkNewCost : 10
 
-[    LinkCost    : 10]{lang="EN-US"}
+    LinkFlag    : -/-/C/-/-/-/-/-/-
 
-[    LinkNewCost : 10]{lang="EN-US"}
+    LinkSrcCnt  : 1
 
-[    LinkFlag    : -/-/C/-/-/-/-/-/-]{lang="EN-US"}
+        Type    : Adjacent   Interface: Tun1
 
-[    LinkSrcCnt  : 1]{lang="EN-US"}
+        Cost    : 10         Nexthop  : FE80::A0A:A40
 
-[        Type    : Adjacent   Interface: N/A]{lang="EN-US"}
+SpfNode        : 0000.0000.0032.01
 
-[        Cost    : 10         Nexthop  : N/A]{lang="EN-US"}
+ Distance       : 10
 
-[\--\>0000.0000.0064.00]{lang="EN-US"}
+ TE distance    : 10
 
-[    LinkCost    : 10]{lang="EN-US"}
+ NodeFlag       : S/-/-/R/-/-
 
-[    LinkNewCost : 10]{lang="EN-US"}
+ RelayNibID     : 0x0
 
-[    LinkFlag    : -/-/C/-/-/-/-/-/-]{lang="EN-US"}
+ TE tunnel count: 0
 
-[    LinkSrcCnt  : 1]{lang="EN-US"}
+ Nexthop count  : 0
 
-[        Type    : Adjacent   Interface: Tun1]{lang="EN-US"}
+ SpfLink count  : 2
 
-[        Cost    : 10         Nexthop  : FE80::A0A:A40]{lang="EN-US"}
+ \--\>0000.0000.0064.00
 
-[ ]{lang="EN-US"}
+    LinkCost    : 0
 
-[SpfNode        : 0000.0000.0032.01]{lang="EN-US"}
+    LinkNewCost : 0
 
-[ Distance       : 10]{lang="EN-US"}
+    LinkFlag    : -/-/C/-/-/-/-/-/-
 
-[ TE distance    : 10]{lang="EN-US"}
+    LinkSrcCnt  : 1
 
-[ NodeFlag       : S/-/-/R/-/-]{lang="EN-US"}
+        Type    : Adjacent   Interface: Vlan2
 
-[ RelayNibID     : 0x0]{lang="EN-US"}
+        Cost    : 10         Nexthop  : FE80::200:12FF:FE34:1
 
-[ TE tunnel count: 0]{lang="EN-US"}
+\--\>0000.0000.0032.00
 
-[ Nexthop count  : 0]{lang="EN-US"}
+    LinkCost    : 0
 
-[ SpfLink count  : 2]{lang="EN-US"}
+    LinkNewCost : 0
 
-[ \--\>0000.0000.0064.00]{lang="EN-US"}
+    LinkFlag    : -/-/-/P/-/-/-/-/-
 
-[    LinkCost    : 0]{lang="EN-US"}
+    LinkSrcCnt  : 1
 
-[    LinkNewCost : 0]{lang="EN-US"}
+        Type    : Adjacent   Interface: N/A
 
-[    LinkFlag    : -/-/C/-/-/-/-/-/-]{lang="EN-US"}
+        Cost    : 0           Nexthop  : N/A
 
-[    LinkSrcCnt  : 1]{lang="EN-US"}
+SpfNode        : 0000.0000.0064.00
 
-[        Type    : Adjacent   Interface: Vlan2]{lang="EN-US"}
+ Distance       : 10
 
-[        Cost    : 10         Nexthop  : FE80::200:12FF:FE34:1]{lang="EN-US"}
+ TE distance    : 10
 
-[\--\>0000.0000.0032.00]{lang="EN-US"}
+ NodeFlag       : S/-/-/R/-/-
 
-[    LinkCost    : 0]{lang="EN-US"}
+ RelayNibID     : 0x0
 
-[    LinkNewCost : 0]{lang="EN-US"}
+ TE tunnel count: 0
 
-[    LinkFlag    : -/-/-/P/-/-/-/-/-]{lang="EN-US"}
+ Nexthop count  : 2
 
-[    LinkSrcCnt  : 1]{lang="EN-US"}
+     Neighbor  : 0000.0000.0064.00        Interface  : Vlan2
 
-[        Type    : Adjacent   Interface: N/A]{lang="EN-US"}
+     NextHop   : FE80::200:12FF:FE34:1
 
-[        Cost    : 0           Nexthop  : N/A]{lang="EN-US"}
+     BkNeighbor: N/A                      BkInterface: N/A
 
-[ ]{lang="EN-US"}
+     BkNextHop : N/A
 
-[SpfNode        : 0000.0000.0064.00]{lang="EN-US"}
+     Neighbor  : 0000.0000.0064.00        Interface  : Tun1
 
-[ Distance       : 10]{lang="EN-US"}
+     NextHop   : FE80::A0A:A40
 
-[ TE distance    : 10]{lang="EN-US"}
+     BkNeighbor: N/A                      BkInterface: N/A
 
-[ NodeFlag       : S/-/-/R/-/-]{lang="EN-US"}
+     BkNextHop : N/A
 
-[ RelayNibID     : 0x0]{lang="EN-US"}
+ SpfLink count  : 2
 
-[ TE tunnel count: 0]{lang="EN-US"}
+ \--\>0000.0000.0032.00
 
-[ Nexthop count  : 2]{lang="EN-US"}
+    LinkCost    : 10
 
-[     Neighbor  : 0000.0000.0064.00        Interface  : Vlan2]{lang="EN-US"}
+    LinkNewCost : 10
 
-[     NextHop   : FE80::200:12FF:FE34:1]{lang="EN-US"}
+    LinkFlag    : -/-/-/P/-/-/-/-/-
 
-[     BkNeighbor: N/A                      BkInterface: N/A]{lang="EN-US"}
+    LinkSrcCnt  : 1
 
-[     BkNextHop : N/A]{lang="EN-US"}
+        Type    : Remote     Interface: N/A
 
-[     Neighbor  : 0000.0000.0064.00        Interface  : Tun1]{lang="EN-US"}
+        Cost    : 10         Nexthop  : N/A
 
-[     NextHop   : FE80::A0A:A40]{lang="EN-US"}
+        AdvMtID : 0
 
-[     BkNeighbor: N/A                      BkInterface: N/A]{lang="EN-US"}
+\--\>0000.0000.0064.00
 
-[     BkNextHop : N/A]{lang="EN-US"}
+    LinkCost    : 10
 
-[ SpfLink count  : 2]{lang="EN-US"}
+    LinkNewCost : 10
 
-[ \--\>0000.0000.0032.00]{lang="EN-US"}
+    LinkFlag    : -/-/C/-/-/-/-/-/-
 
-[    LinkCost    : 10]{lang="EN-US"}
+    LinkSrcCnt  : 1
 
-[    LinkNewCost : 10]{lang="EN-US"}
+        Type    : Remote     Interface: Tun1
 
-[    LinkFlag    : -/-/-/P/-/-/-/-/-]{lang="EN-US"}
+        Cost    : 10         Nexthop  : FE80::A0A:A40
 
-[    LinkSrcCnt  : 1]{lang="EN-US"}
+        AdvMtID : 0
 
-[        Type    : Remote     Interface: N/A]{lang="EN-US"}
+表1-1 display isis spf-tree ipv6命令显示信息描述表
 
-[        Cost    : 10         Nexthop  : N/A]{lang="EN-US"}
+字段
 
-[        AdvMtID : 0]{lang="EN-US"}
+描述
 
-[\--\>0000.0000.0064.00]{lang="EN-US"}
+SpfNode
 
-[    LinkCost    : 10]{lang="EN-US"}
+拓扑节点ID
 
-[    LinkNewCost : 10]{lang="EN-US"}
+Distance
 
-[    LinkFlag    : -/-/C/-/-/-/-/-/-]{lang="EN-US"}
+根节点到该节点的最短距离
 
-[    LinkSrcCnt  : 1]{lang="EN-US"}
+TE distance
 
-[        Type    : Remote     Interface: Tun1]{lang="EN-US"}
+根节点到该节点的最短距离（包含隧道Link），如果未配置隧道，则与Distance值相等
 
-[        Cost    : 10         Nexthop  : FE80::A0A:A40]{lang="EN-US"}
+NodeFlag
 
-[        AdvMtID : 0]{lang="EN-US"}
+节点状态标记：
 
-[[表1-1 ]{lang="EN-US"}[display isis spf-tree ipv6]{lang="EN-US"}]{#struct_0_15908_44860_326120316}[命令显示信息描述表]{style="font-family:黑体"}
+·S：节点在SPF树上
 
-[]{#table_struct_0_468498376}[[字段]{style="font-family:黑体"}]{#struct_0_15908_44860_798730455}
-:::
+·T：节点在候选列表上
 
-[[描述]{style="font-family:黑体"}]{#struct_0_15908_44860_x1187762180}
+·O：节点处于OverLoad
 
-[[SpfNode]{lang="EN-US"}]{#struct_0_15908_44860_x1322338488}
+·R：节点是直连的
 
-[[拓扑节点]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_15908_44860_1620674992}
+·I：孤立节点
 
-[[Distance]{lang="EN-US"}]{#struct_0_15908_44860_1533763898}
+·D：节点待删除
 
-[[根节点到该节点的最短距离]{style="font-family:宋体"}]{#struct_0_15908_44860_x2050258597}
+TE tunnel count
 
-[[TE distance]{lang="EN-US"}]{#struct_0_15908_44860_x1817232267}
+Destination为该节点的隧道条数
 
-[[根节点到该节点的最短距离（包含隧道]{style="font-family:宋体"}[Link]{lang="EN-US"}]{#struct_0_15908_44860_x251148326}[），如果未配置隧道，则与]{style="font-family:宋体"}[Distance]{lang="EN-US"}[值相等]{style="font-family:宋体"}
+Nexthop count
 
-[[NodeFlag]{lang="EN-US"}]{#struct_0_15908_44860_368825735}
+节点的下一跳个数
 
-[[节点状态标记：]{style="font-family:宋体"}]{#struct_0_15908_44860_247712891}
+NextHop
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[S]{lang="EN-US"}]{#struct_0_15908_44860_40403788}[：节点在]{lang="EN-US" style="font-family:
-  宋体"}[SPF]{lang="EN-US"}[树上]{lang="EN-US" style="font-family:
-  宋体"}
+节点的主用下一跳地址/链路发布源下一跳地址
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[T]{lang="EN-US"}]{#struct_0_15908_44860_1620609456}[：节点在候选列表上]{lang="EN-US" style="font-family:
-  宋体"}
+AdvMtID
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[O]{lang="EN-US"}]{#struct_0_15908_44860_1064324365}[：节点处于]{lang="EN-US" style="font-family:
-  宋体"}[OverLoad]{lang="EN-US"}
+从哪个拓扑学到的路由：
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[R]{lang="EN-US"}]{#struct_0_15908_44860_x874043815}[：节点是直连的]{lang="EN-US" style="font-family:
-  宋体"}
+·0：标准拓扑ID
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[I]{lang="EN-US"}]{#struct_0_15908_44860_2135193141}[：孤立节点]{lang="EN-US" style="font-family:
-  宋体"}
+·6～4094：其它拓扑ID
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[D]{lang="EN-US"}]{#struct_0_15908_44860_1952480464}[：节点待删除]{lang="EN-US" style="font-family:
-  宋体"}
+Interface
 
-[[TE tunnel count]{lang="EN-US"}]{#struct_0_15908_44860_x773744932}
+节点的主用下一跳出接口/链路发布源下一跳出接口
 
-[[Destination]{lang="EN-US"}]{#struct_0_15908_44860_x1225599734}[为该节点的隧道条数]{style="font-family:宋体"}
+BkNextHop
 
-[[Nexthop count]{lang="EN-US"}]{#struct_0_15908_44860_205963}
+节点的备份下一跳地址
 
-[[节点的下一跳个数]{style="font-family:宋体"}]{#struct_0_15908_44860_1620543920}
+BkInterface
 
-[[NextHop]{lang="EN-US"}]{#struct_0_15908_44860_x841314033}
+节点的备份下一跳出接口
 
-[[节点的主用下一跳地址]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_15908_44860_2145271428}[链路发布源下一跳地址]{style="font-family:宋体"}
+Neighbor
 
-[[AdvMtID]{lang="EN-US"}]{#struct_0_15908_44860_x654432853}
+节点主用下一跳邻居节点ID
 
-[[从哪个拓扑学到的路由：]{style="font-family:宋体"}]{#struct_0_15908_44860_1906510167}
+BkNeighbor
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[0]{lang="EN-US"}]{#struct_0_15908_44860_x1410391231}[：标准拓扑]{lang="EN-US" style="font-family:
-  宋体"}[ID]{lang="EN-US"}
+节点备份下一跳邻居节点ID
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[6]{lang="EN-US"}]{#struct_0_15908_44860_1282869995}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[：其它拓扑]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+SpfLink
 
-[[Interface]{lang="EN-US"}]{#struct_0_15908_44860_x811881556}
+拓扑链路
 
-[[节点的主用下一跳出接口]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_15908_44860_518151809}[链路发布源下一跳出接口]{style="font-family:宋体"}
+SpfLink count
 
-[[BkNextHop]{lang="EN-US"}]{#struct_0_15908_44860_1620478384}
+拓扑链路个数
 
-[[节点的备份下一跳地址]{style="font-family:宋体"}]{#struct_0_15908_44860_1067243579}
+LinkCost
 
-[[BkInterface]{lang="EN-US"}]{#struct_0_15908_44860_975090144}
+链路开销
 
-[[节点的备份下一跳出接口]{style="font-family:宋体"}]{#struct_0_15908_44860_354144106}
+LinkNewCost
 
-[[Neighbor]{lang="EN-US"}]{#struct_0_15908_44860_1913041012}
+链路新开销
 
-[[节点主用下一跳邻居节点]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_15908_44860_1621461424}
+LinkFlag
 
-[[BkNeighbor]{lang="EN-US"}]{#struct_0_15908_44860_1505470456}
+链路状态标记：
 
-[[节点备份下一跳邻居节点]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_15908_44860_1050288994}
+·I：孤立链路
 
-[[SpfLink]{lang="EN-US"}]{#struct_0_15908_44860_1342360098}
+·D：链路待删除
 
-[[拓扑链路]{style="font-family:宋体"}]{#struct_0_15908_44860_1621395888}
+·C：目的节点是源节点的子节点
 
-[[SpfLink count]{lang="EN-US"}]{#struct_0_15908_44860_x1615800791}
+·P：目的节点是源节点的父节点
 
-[[拓扑链路个数]{style="font-family:宋体"}]{#struct_0_15908_44860_x909552130}
+·V：链路受到影响
 
-[[LinkCost]{lang="EN-US"}]{#struct_0_15908_44860_x1580333044}
+·N：新增链路
 
-[[链路开销]{style="font-family:宋体"}]{#struct_0_15908_44860_x1671364583}
+·L：链路在变化链表上
 
-[[LinkNewCost]{lang="EN-US"}]{#struct_0_15908_44860_1620937137}
+·U：链路协议类型发生变化
 
-[[链路新开销]{style="font-family:宋体"}]{#struct_0_15908_44860_x1643463138}
+·H：链表下一跳发生变化
 
-[[LinkFlag]{lang="EN-US"}]{#struct_0_15908_44860_1841453359}
+LinkSrcCnt
 
-[[链路状态标记：]{style="font-family:宋体"}]{#struct_0_15908_44860_x222572878}
+链路发布源个数
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[I]{lang="EN-US"}]{#struct_0_15908_44860_1620871601}[：孤立链路]{lang="EN-US" style="font-family:
-  宋体"}
+Type
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[D]{lang="EN-US"}]{#struct_0_15908_44860_336897906}[：链路待删除]{lang="EN-US" style="font-family:
-  宋体"}
+链路发布源类型：
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[C]{lang="EN-US"}]{#struct_0_15908_44860_2028149228}[：目的节点是源节点的子节点]{style="font-family:宋体"}
+·Adjacent：本地邻居维护产生
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[P]{lang="EN-US"}]{#struct_0_15908_44860_x1026670481}[：目的节点是源节点的父节点]{style="font-family:宋体"}
+·Remote：其它节点LSP产生
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[V]{lang="EN-US"}]{#struct_0_15908_44860_1620806065}[：链路受到影响]{lang="EN-US" style="font-family:
-  宋体"}
+Cost
 
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[N]{lang="EN-US"}]{#struct_0_15908_44860_1875855783}[：新增链路]{lang="EN-US" style="font-family:
-  宋体"}
-
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[L]{lang="EN-US"}]{#struct_0_15908_44860_129536472}[：链路在变化链表上]{lang="EN-US" style="font-family:
-  宋体"}
-
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[U]{lang="EN-US"}]{#struct_0_15908_44860_1620740529}[：链路协议类型发生变化]{style="font-family:宋体"}
-
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[H]{lang="EN-US"}]{#struct_0_15908_44860_326054780}[：链表下一跳发生变化]{style="font-family:宋体"}
-
-[[LinkSrcCnt]{lang="EN-US"}]{#struct_0_15908_44860_x1153991700}
-
-[[链路发布源个数]{style="font-family:宋体"}]{#struct_0_15908_44860_701987340}
-
-[[Type]{lang="EN-US"}]{#struct_0_15908_44860_1620674993}
-
-[[链路发布源类型：]{style="font-family:宋体"}]{#struct_0_15908_44860_1533829434}
-
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Adjacent]{lang="EN-US"}]{#struct_0_15908_44860_x570669998}[：本地邻居维护产生]{style="font-family:
-  宋体"}
-
-[[·[      ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Remote]{lang="EN-US"}]{#struct_0_15908_44860_1447881046}[：其它节点]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[产生]{lang="EN-US" style="font-family:宋体"}
-
-[[Cost]{lang="EN-US"}]{#struct_0_15908_44860_1620609457}
-
-[[链路发布源开销]{style="font-family:宋体"}]{#struct_0_15908_44860_1064258829}
-
-[ ]{lang="EN-US"}
-
-::: {#1247311243 .myid}
-[]{#_Toc245204065}[]{#_Toc86723949}[]{#_Toc85873463}[]{#_Toc77992848}[]{#_Toc65740921}[]{#_Toc61239734}[]{#_Toc404789074}[]{#struct_0_15908_44860_x806175292}[]{#_Toc310607874}[]{#_Toc290886941}[]{#_Toc245204063}[]{#_Toc86723947}[]{#_Toc85873461}[]{#_Toc77992846}[]{#_Toc65740919}[]{#_Toc367622347}[]{#_Toc367622348}[]{#_Toc367622349}[]{#_Toc367622350}[]{#_Toc367622351}[]{#_Toc367622352}[]{#_Toc367622353}[]{#_Toc367622354}[]{#_Toc367622355}[]{#_Toc367622356}[]{#_Toc367622357}[]{#_Toc367622358}[]{#_Toc367622359}[]{#_Toc367622360}[]{#_Toc367622361}[]{#_Toc367622362}[]{#_Toc367622363}[]{#_Toc367622364}[]{#_Toc367622365}[]{#_Toc367622366}[]{#_Toc367622367}[]{#_Toc367622368}[]{#_Toc367622369}[]{#_Toc367622370}[]{#_Toc367622371}[]{#_Toc367622372}[]{#_Toc367622373}[]{#_Toc367622374}[]{#_Toc367622375}[]{#_Toc367622376}[]{#_Toc367622377}[]{#_Toc367622378}[]{#_Toc367622379}[]{#_Toc367622380}[]{#_Toc367622381}[]{#_Toc367622382}[]{#_Toc367622383}[]{#_Toc367622384}[]{#_Toc367622385}[]{#_Toc367622386}[]{#_Toc367622387}[]{#_Toc367622388}[]{#_Toc367622389}[]{#_Toc367622390}[]{#_Toc367622391}[]{#_Toc367622392}[]{#_Toc367622393}
+链路发布源开销
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- filter-policy export**
 
 ------------------------------------------------------------------------
 
-[**[filter-policy export]{lang="EN-US"}**]{#struct_0_15908_44860_1890531295}[命令用来配置]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[对引入的路由进行过滤。]{style="font-family:宋体"}
+**[filter-policy export**]命令用来配置IPv6 IS-IS对引入的路由进行过滤。
 
-[**[undo filter-policy export]{lang="EN-US"}**]{#struct_0_15908_44860_699327352}[命令用来取消对引入的路由进行过滤。]{style="font-family:
-宋体"}
+**[undo filter-policy export**]命令用来取消对引入的路由进行过滤。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_x818815725}
+【命令】
 
-[**[filter-policy]{lang="EN-US"}**[ { *acl6-number* \| **prefix-list** *prefix-list-name* \| **route-policy** *route-policy-name* } **export** \[ *protocol* \[ *process-id* \] \]]{lang="EN-US"}]{#struct_0_15908_44860_x845074188}
+**[filter-policy**[ { *acl6-number* \| **prefix-list** *prefix-list-name* \| **route-policy** *route-policy-name* } **export** [ *protocol* [ *process-id* ] ]]]
 
-[**[undo filter-policy]{lang="EN-US"}**[ **export** \[ *protocol* \[ *process-id* \] \]]{lang="EN-US"}]{#struct_0_15908_44860_1620871598}
+**[undo filter-policy** **export** [ *protocol* [ *process-id*  ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1237670021}
+【缺省情况】
 
-[[IPv6 IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_662192332}[不对引入的路由进行过滤。]{style="font-family:宋体"}
+IPv6 IS-IS不对引入的路由进行过滤。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_1464562896}
+【视图】
 
-[[IS-IS IPv6]{lang="FR"}]{#struct_0_15908_44860_x1504166808}[单播地址族视图]{style="font-family:宋体"}
+IS-IS IPv6单播地址族视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_246692248}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_1045442352}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_1376541207}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1975599159}
+【参数】
 
-[*[acl6-number]{lang="EN-US"}*]{#struct_0_15908_44860_1620806062}[：用来过滤引入路由的基本或高级]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[acl6-number*]：用来过滤引入路由的基本或高级IPv6 ACL的编号，取值范围为2000～3999。
 
-[**[prefix-list]{lang="EN-US"}***[ prefix-list-name]{lang="EN-US"}*]{#struct_0_15908_44860_1876314535}[：用来过滤引入路由的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址前缀列表名称，]{style="font-family:宋体"}*[prefix-list-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[prefix-list*** prefix-list-name*]：用来过滤引入路由的IPv6地址前缀列表名称，*prefix-list-name*为1～63个字符的字符串，区分大小写。
 
-[**[route-policy]{lang="EN-US"}***[ route-policy-name]{lang="EN-US"}*]{#struct_0_15908_44860_x1944516711}[：用来过滤引入路由的路由策略名称，]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[route-policy*** route-policy-name*]：用来过滤引入路由的路由策略名称，*route-policy-name*为1～63个字符的字符串，区分大小写。
 
-[*[protocol]{lang="EN-US"}*]{#struct_0_15908_44860_1432978053}[：路由协议名称，指定过滤从哪种路由协议引入的路由信息。目前可包括：]{style="font-family:宋体"}**[bgp4+]{lang="EN-US"}**[、]{style="font-family:宋体"}**[direct]{lang="EN-US"}**[、]{style="font-family:宋体"}**[isisv6]{lang="EN-US"}**[、]{style="font-family:宋体"}**[ospfv3]{lang="EN-US"}**[、]{style="font-family:宋体"}**[ripng]{lang="EN-US"}**[和]{style="font-family:宋体"}**[static]{lang="EN-US"}**[。如果不指定该参数，将对所有引入的路由进行过滤。]{style="font-family:宋体"}
+*[protocol*]：路由协议名称，指定过滤从哪种路由协议引入的路由信息。目前可包括：**bgp4+**、**direct**、**isisv6**、**ospfv3**、**ripng**和**static**。如果不指定该参数，将对所有引入的路由进行过滤。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_15908_44860_816953553}[：路由协议进程号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。当]{style="font-family:宋体"}*[protocol]{lang="EN-US"}*[为]{style="font-family:宋体"}**[isisv6]{lang="EN-US"}**[、]{style="font-family:宋体"}**[ospfv3]{lang="EN-US"}**[、]{style="font-family:宋体"}**[ripng]{lang="EN-US"}**[时，支持该参数。]{style="font-family:宋体"}
+*[process-id*]：路由协议进程号，取值范围为1～65535。当*protocol*为**isisv6**、**ospfv3**、**ripng**时，支持该参数。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1761561576}
+【使用指导】
 
-[[某些情况下，可能要求只发布某些满足条件的路由信息，此时，可以定义]{style="font-family:宋体"}**[filter-policy]{lang="EN-US"}**]{#struct_0_15908_44860_1135549085}[配置所发布路由信息的过滤条件，只有通过了过滤的路由信息才能被发布。]{style="font-family:宋体"}
+某些情况下，可能要求只发布某些满足条件的路由信息，此时，可以定义**filter-policy**配置所发布路由信息的过滤条件，只有通过了过滤的路由信息才能被发布。
 
-[**[filter-policy export]{lang="EN-US"}**]{#struct_0_15908_44860_x795523907}[命令一般和]{style="font-family:宋体"}**[import-route]{lang="EN-US"}**[命令结合使用，它只对已引入的路由在发布给其他路由器时进行过滤。]{style="font-family:宋体"}
+**[filter-policy export**]命令一般和**import-route**命令结合使用，它只对已引入的路由在发布给其他路由器时进行过滤。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果没有指定]{style="font-family:宋体"}]{#struct_0_15908_44860_525453364}*[protocol]{lang="EN-US"}*[参数，将对所有协议引入的路由进行过滤；]{style="font-family:宋体"}
+·如果没有指定*protocol*参数，将对所有协议引入的路由进行过滤；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定了]{style="font-family:宋体"}]{#struct_0_15908_44860_1620740526}*[protocol]{lang="EN-US"}*[参数，则只对特定协议引入的路由进行过滤。]{style="font-family:宋体"}
+·如果指定了*protocol*参数，则只对特定协议引入的路由进行过滤。
 
-[[需要注意的是，当配置的是高级]{style="font-family:宋体"}[ACL]{lang="EN-US"}]{#struct_0_15908_44860_327037820}[（]{style="font-family:宋体"}[3000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[）或者指定的路由策略中配置的是高级]{style="font-family:宋体"}[ACL]{lang="EN-US"}[时，]{style="font-family:宋体"}[ACL]{lang="EN-US"}[中的规则需要使用命令]{style="font-family:宋体"}**[rule]{lang="EN-US"}**[ \[ *rule-id* \] { **deny** \| **permit** } **ipv6 source** *sour sour-prefix*]{lang="EN-US"}[来过滤指定目的地址的路由；使用命令]{style="font-family:宋体"}**[rule]{lang="EN-US"}**[ \[ *rule-id* \] { **deny** \| **permit** } **ipv6 source** *sour sour-prefix* **destination** *dest dest-prefix*]{lang="EN-US"}[来过滤指定目的地址和前缀的路由，其中]{style="font-family:宋体"}**[source]{lang="EN-US"}**[用来过滤路由目的地址，]{style="font-family:宋体"}**[destination]{lang="EN-US"}**[用来过滤路由前缀，配置的前缀应该是连续的（当配置的前缀不连续时该过滤前缀的条件不生效）。]{style="font-family:宋体"}
+需要注意的是，当配置的是高级ACL（3000～3999）或者指定的路由策略中配置的是高级ACL时，ACL中的规则需要使用命令**rule** [ *rule-id*  { **deny** \| **permit** } **ipv6 source** *sour sour-prefix*]来过滤指定目的地址的路由；使用命令**rule** [ *rule-id*  { **deny** \| **permit** } **ipv6 source** *sour sour-prefix* **destination** *dest dest-prefix*]来过滤指定目的地址和前缀的路由，其中**source**用来过滤路由目的地址，**destination**用来过滤路由前缀，配置的前缀应该是连续的（当配置的前缀不连续时该过滤前缀的条件不生效）。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_x975075508}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_x461217940}[配置]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[使用编号为]{style="font-family:宋体"}[2006]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[基本]{style="font-family:宋体"}[ACL]{lang="EN-US"}[对引入的路由进行过滤。]{style="font-family:宋体"}
+\# 配置IPv6 IS-IS使用编号为2006的IPv6基本ACL对引入的路由进行过滤。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_1453347035}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv6]{lang="EN-US"}
+Sysname-isis-1 address-family ipv6
 
-[\[Sysname-isis-1-ipv6\] filter-policy 2006 export]{lang="EN-US"}
+Sysname-isis-1-ipv6 filter-policy 2006 export
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_x953289478}[使用编号为]{style="font-family:宋体"}[3000]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[高级]{style="font-family:宋体"}[ACL]{lang="EN-US"}[对引入的路由进行过滤，只允许]{style="font-family:宋体"}[2001::1/128]{lang="EN-US"}[通过。]{style="font-family:宋体"}
+\# 使用编号为3000的IPv6高级ACL对引入的路由进行过滤，只允许2001::1/128通过。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_1620674990}
+\<Sysname\> system-view
 
-[\[Sysname\] acl ipv6 advanced 3000]{lang="EN-US"}
+Sysname acl ipv6 advanced 3000
 
-[\[Sysname-acl-ipv6-adv-3000\] rule 10 permit ipv6 source 2001::1 128 destination ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff 128]{lang="EN-US"}
+Sysname-acl-ipv6-adv-3000 rule 10 permit ipv6 source 2001::1 128 destination ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff 128
 
-[\[Sysname-acl-ipv6-adv-3000\] rule 100 deny ipv6]{lang="EN-US"}
+Sysname-acl-ipv6-adv-3000 rule 100 deny ipv6
 
-[\[Sysname-acl-ipv6-adv-3000\] quit]{lang="EN-US"}
+Sysname-acl-ipv6-adv-3000 quit
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv6]{lang="EN-US"}
+Sysname-isis-1 address-family ipv6
 
-[\[Sysname-isis-1-ipv6\] filter-policy 3000 export]{lang="EN-US"}
+Sysname-isis-1-ipv6 filter-policy 3000 export
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_1533632826}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[filter-policy import]{lang="EN-US"}**]{#struct_0_15908_44860_663748108}
-:::
-
-::: {#632247711 .myid}
-[]{#_Toc404789075}[]{#struct_0_15908_44860_x1114013170}[]{#_Toc310607875}[]{#_Toc290886942}[]{#_Toc245204064}[]{#_Toc86723948}[]{#_Toc85873462}[]{#_Toc77992847}[]{#_Toc65740920}[]{#_Toc61239732}
+·**filter-policy import**
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- filter-policy import**
 
 ------------------------------------------------------------------------
 
-[**[filter-policy import]{lang="EN-US"}**]{#struct_0_15908_44860_x1635138062}[命令用来配置]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[对接收的路由进行过滤。]{style="font-family:宋体"}
+**[filter-policy import**]命令用来配置IPv6 IS-IS对接收的路由进行过滤。
 
-[**[undo filter-policy import]{lang="EN-US"}**]{#struct_0_15908_44860_116596753}[命令用来取消对接收的路由进行过滤。]{style="font-family:
-宋体"}
+**[undo filter-policy import**]命令用来取消对接收的路由进行过滤。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_58229473}
+【命令】
 
-[**[filter-policy]{lang="EN-US"}**[ { *acl6-number* \| **prefix-list** *prefix-list-name* \| **route-policy** *route-policy-name* } **import**]{lang="EN-US"}]{#struct_0_15908_44860_x955404547}
+**[filter-policy**[ { *acl6-number* \| **prefix-list** *prefix-list-name* \| **route-policy** *route-policy-name* } **import**]]
 
-[**[undo filter-policy]{lang="EN-US"}**[ **import**]{lang="EN-US"}]{#struct_0_15908_44860_x2100289503}
+**[undo filter-policy** **import**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_15908_44860_1620609454}
+【缺省情况】
 
-[[IPv6 IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_1064193293}[不对接收的路由信息进行过滤。]{style="font-family:宋体"}
+IPv6 IS-IS不对接收的路由信息进行过滤。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1661619849}
+【视图】
 
-[[IS-IS IPv6]{lang="FR"}]{#struct_0_15908_44860_1464685581}[单播地址族视图]{style="font-family:宋体"}
+IS-IS IPv6单播地址族视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1598121319}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_133661932}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_1270039828}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_x548922474}
+【参数】
 
-[*[acl6-number]{lang="EN-US"}*]{#struct_0_15908_44860_x2126829447}[：用来过滤接收的路由的基本或高级]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[acl6-number*]：用来过滤接收的路由的基本或高级IPv6 ACL的编号，取值范围为2000～3999。
 
-[**[prefix-list]{lang="EN-US"}***[ prefix-list-name]{lang="EN-US"}*]{#struct_0_15908_44860_1620543918}[：用来过滤接收的路由的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址前缀列表名称，]{style="font-family:宋体"}*[prefix-list-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[prefix-list*** prefix-list-name*]：用来过滤接收的路由的IPv6地址前缀列表名称，*prefix-list-name*为1～63个字符的字符串，区分大小写。
 
-[**[route-policy]{lang="EN-US"}***[ route-policy-name]{lang="EN-US"}*]{#struct_0_15908_44860_x841838324}[：用来过滤接收的路由的路由策略名称，]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[route-policy*** route-policy-name*]：用来过滤接收的路由的路由策略名称，*route-policy-name*为1～63个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1428441428}
+【使用指导】
 
-[[某些情况下，可能要求只接收某些满足条件的路由信息，此时，可以定义]{style="font-family:宋体"}**[filter-policy]{lang="EN-US"}**]{#struct_0_15908_44860_x809549461}[配置接收路由信息的过滤条件，只有通过了过滤的路由信息才能被加入路由表。]{style="font-family:宋体"}
+某些情况下，可能要求只接收某些满足条件的路由信息，此时，可以定义**filter-policy**配置接收路由信息的过滤条件，只有通过了过滤的路由信息才能被加入路由表。
 
-[[需要注意的是，当配置的是高级]{style="font-family:宋体"}[ACL]{lang="EN-US"}]{#struct_0_15908_44860_154274488}[（]{style="font-family:宋体"}[3000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[）或者指定的路由策略中配置的是高级]{style="font-family:宋体"}[ACL]{lang="EN-US"}[时，]{style="font-family:宋体"}[ACL]{lang="EN-US"}[中的规则需要使用命令]{style="font-family:宋体"}**[rule]{lang="EN-US"}**[ \[ *rule-id* \] { **deny** \| **permit** } **ipv6 source** *sour sour-prefix*]{lang="EN-US"}[来过滤指定目的地址的路由；使用命令]{style="font-family:宋体"}**[rule]{lang="EN-US"}**[ \[ *rule-id* \] { **deny** \| **permit** } **ipv6 source** *sour sour-prefix* **destination** *dest dest-prefix*]{lang="EN-US"}[来过滤指定目的地址和前缀的路由，其中]{style="font-family:宋体"}**[source]{lang="EN-US"}**[用来过滤路由目的地址，]{style="font-family:宋体"}**[destination]{lang="EN-US"}**[用来过滤路由前缀，配置的前缀应该是连续的（当配置的前缀不连续时该过滤前缀的条件不生效）。]{style="font-family:宋体"}
+需要注意的是，当配置的是高级ACL（3000～3999）或者指定的路由策略中配置的是高级ACL时，ACL中的规则需要使用命令**rule** [ *rule-id*  { **deny** \| **permit** } **ipv6 source** *sour sour-prefix*]来过滤指定目的地址的路由；使用命令**rule** [ *rule-id*  { **deny** \| **permit** } **ipv6 source** *sour sour-prefix* **destination** *dest dest-prefix*]来过滤指定目的地址和前缀的路由，其中**source**用来过滤路由目的地址，**destination**用来过滤路由前缀，配置的前缀应该是连续的（当配置的前缀不连续时该过滤前缀的条件不生效）。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_x892047088}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_x1792173612}[使用编号为]{style="font-family:宋体"}[2003]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[基本]{style="font-family:宋体"}[ACL]{lang="EN-US"}[对接收的路由进行过滤。]{style="font-family:宋体"}
+\# 使用编号为2003的IPv6基本ACL对接收的路由进行过滤。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_x1633978587}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv6]{lang="EN-US"}
+Sysname-isis-1 address-family ipv6
 
-[\[Sysname-isis-1-ipv6\] filter-policy 2003 import]{lang="EN-US"}
+Sysname-isis-1-ipv6 filter-policy 2003 import
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_x1130630297}[使用编号为]{style="font-family:宋体"}[3000]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[高级]{style="font-family:宋体"}[ACL]{lang="EN-US"}[对接收的路由进行过滤，只允许]{style="font-family:宋体"}[2001::1/128]{lang="EN-US"}[通过。]{style="font-family:宋体"}
+\# 使用编号为3000的IPv6高级ACL对接收的路由进行过滤，只允许2001::1/128通过。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_1620478382}
+\<Sysname\> system-view
 
-[\[Sysname\] acl ipv6 advanced 3000]{lang="EN-US"}
+Sysname acl ipv6 advanced 3000
 
-[\[Sysname-acl-ipv6-adv-3000\] rule 10 permit ipv6 source 2001::1 128 destination ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff 128]{lang="EN-US"}
+Sysname-acl-ipv6-adv-3000 rule 10 permit ipv6 source 2001::1 128 destination ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff 128
 
-[\[Sysname-acl-ipv6-adv-3000\] rule 100 deny ipv6]{lang="EN-US"}
+Sysname-acl-ipv6-adv-3000 rule 100 deny ipv6
 
-[\[Sysname-acl-ipv6-adv-3000\] quit]{lang="EN-US"}
+Sysname-acl-ipv6-adv-3000 quit
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv6]{lang="EN-US"}
+Sysname-isis-1 address-family ipv6
 
-[\[Sysname-isis-1-ipv6\] filter-policy 3000 import]{lang="EN-US"}
+Sysname-isis-1-ipv6 filter-policy 3000 import
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_1067636795}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[filter-policy export]{lang="EN-US"}**]{#struct_0_15908_44860_191631155}
-:::
-
-::: {#29262825 .myid}
-[]{#_Toc404789076}[]{#struct_0_15908_44860_x2072014678}
+·**filter-policy export**
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- import-route**
 
 ------------------------------------------------------------------------
 
-[**[import-route]{lang="EN-US"}**]{#struct_0_15908_44860_x1731336679}[命令用来配置]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[引入其他协议的路由信息。]{style="font-family:宋体"}
+**[import-route**]命令用来配置IPv6 IS-IS引入其他协议的路由信息。
 
-[**[undo import-route]{lang="EN-US"}**]{#struct_0_15908_44860_1517742095}[命令用来配置]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[不引入其它协议的路由信息。]{style="font-family:宋体"}
+**[undo import-route**]命令用来配置IPv6 IS-IS不引入其它协议的路由信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_696785812}
+【命令】
 
-[**[import-route ]{lang="EN-US"}***[protocol]{lang="EN-US"}*[ \[ *process-id* \] \[ **allow-ibgp** \] \[ **allow-direct** \| **cost** *cost* \| \[ **level-1** \| **level-1-2** \| **level-2** \] \| **route-policy** *route-policy-name* \| **tag** *tag* \] \*]{lang="EN-US"}]{#struct_0_15908_44860_1621461422}
+**[import-route ***protocol* [ *process-id*   **allow-ibgp**  [ **allow-direct** \| **cost** *cost* \| [ **level-1** \| **level-1-2** \| **level-2** ] \| **route-policy** *route-policy-name* \| **tag** *tag* ] \*]]
 
-[**[undo import-route ]{lang="EN-US"}***[protocol ]{lang="EN-US"}*[\[]{lang="EN-US"}*[ process-id ]{lang="EN-US"}*[\]]{lang="EN-US"}]{#struct_0_15908_44860_1505077240}
+**[undo import-route ***protocol *\*[ process-id *]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_15908_44860_264536510}
+【缺省情况】
 
-[[IPv6 IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_x2144282400}[不引入其它协议的路由信息。]{style="font-family:宋体"}
+IPv6 IS-IS不引入其它协议的路由信息。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_x596449526}
+【视图】
 
-[[IS-IS IPv6]{lang="FR"}]{#struct_0_15908_44860_x647164749}[单播地址族视图]{style="font-family:宋体"}
+IS-IS IPv6单播地址族视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1454883238}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_1621395886}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_x1615669719}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_x203037480}
+【参数】
 
-[*[protocol]{lang="EN-US"}*]{#struct_0_15908_44860_727273031}[：要引入的路由协议，可以是]{style="font-family:宋体"}**[direct]{lang="EN-US"}**[、]{style="font-family:宋体"}**[static]{lang="EN-US"}**[、]{style="font-family:宋体"}**[ripng]{lang="EN-US"}**[、]{style="font-family:宋体"}**[isisv6]{lang="EN-US"}**[、]{style="font-family:宋体"}**[bgp4+]{lang="EN-US"}**[及]{style="font-family:宋体"}**[ospfv3]{lang="EN-US"}**[。]{style="font-family:宋体"}
+*[protocol*]：要引入的路由协议，可以是**direct**、**static**、**ripng**、**isisv6**、**bgp4+**及**ospfv3**。
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_15908_44860_x1534059843}[：引入路由的源路由协议号]{style="font-family:宋体"}[，取值范围]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[1]{lang="EN-US"}[。只有当]{style="font-family:宋体"}*[protocol]{lang="EN-US"}*[是]{style="font-family:宋体"}**[ripng]{lang="EN-US"}[、]{style="font-family:宋体"}[isisv6]{lang="EN-US"}**[及]{style="font-family:宋体"}**[ospfv3]{lang="EN-US"}**[时，该参数可选。]{style="font-family:宋体"}
+*[process-id*]：引入路由的源路由协议号，取值范围1～65535，缺省值为1。只有当*protocol*是**ripng、isisv6**及**ospfv3**时，该参数可选。
 
-[**[allow-direct]{lang="EN-US"}**]{#struct_0_15908_44860_1790588950}[：]{style="font-family:宋体"}[在引入的路由中包含使能了该协议的接口网段路由。缺省情况下，在引入]{style="font-family:宋体"}[协议]{style="font-family:宋体"}[路由时不会包含使能了]{style="font-family:宋体"}[该]{style="font-family:宋体"}[协议的接口网段路由。当]{style="font-family:宋体"}**[allow-direct]{lang="EN-US"}**[与]{style="font-family:宋体"}**[route-policy]{lang="EN-US"}**[ *route-policy-name*]{lang="EN-US"}[参数一起使用时，需要注意路由策略中配置的匹配规则不要与接口路由信息存在冲突，否则会导致]{style="font-family:宋体"}**[allow-direct]{lang="EN-US"}**[配置失效。例如，当配置]{style="font-family:宋体"}**[allow-direct]{lang="EN-US"}**[参数引入]{style="font-family:宋体"}[OSPFv3]{lang="EN-US"}[直连时，在路由策略中不要配置]{style="font-family:宋体"}**[if-match]{lang="EN-US"}**[ **route-type**]{lang="EN-US"}[匹配条件，否则，]{style="font-family:宋体"}**[allow-direct]{lang="EN-US"}**[参数失效。]{style="font-family:宋体"}
+**[allow-direct**]：在引入的路由中包含使能了该协议的接口网段路由。缺省情况下，在引入协议路由时不会包含使能了该协议的接口网段路由。当**allow-direct**与**route-policy** *route-policy-name*参数一起使用时，需要注意路由策略中配置的匹配规则不要与接口路由信息存在冲突，否则会导致**allow-direct**配置失效。例如，当配置**allow-direct**参数引入OSPFv3直连时，在路由策略中不要配置**if-match** **route-type**匹配条件，否则，**allow-direct**参数失效。
 
-[**[cost]{lang="EN-US"}***[ cost]{lang="EN-US"}*]{#struct_0_15908_44860_x1149848788}[：引入路由的路由开销，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[4261412864]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[cost*** cost*]：引入路由的路由开销，取值范围为0～4261412864。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_15908_44860_327164578}[：引入路由到]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[的路由表中。]{style="font-family:宋体"}
+**[level-1**]：引入路由到Level-1的路由表中。
 
-[**[level-1-2]{lang="EN-US"}**]{#struct_0_15908_44860_1711704720}[：引入路由到]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的路由表中。]{style="font-family:宋体"}
+**[level-1-2**]：引入路由到Level-1和Level-2的路由表中。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_15908_44860_1620937135}[：引入路由到]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[的路由表中。如果不指定引入的级别，默认为引入路由到]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[路由表中。]{style="font-family:宋体"}
+**[level-2**]：引入路由到Level-2的路由表中。如果不指定引入的级别，默认为引入路由到Level-2路由表中。
 
-[**[route-policy]{lang="EN-US"}***[ route-policy-name]{lang="EN-US"}*]{#struct_0_15908_44860_x1643594210}[：用来过滤引入的路由的路由策略名称，]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[route-policy*** route-policy-name*]：用来过滤引入的路由的路由策略名称，*route-policy-name*为1～63个字符的字符串，区分大小写。
 
-[**[tag ]{lang="EN-US"}***[tag]{lang="EN-US"}*]{#struct_0_15908_44860_1219606841}[：为引入的路由分配管理标签号，取值范围]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[tag ***tag*]：为引入的路由分配管理标签号，取值范围1～4294967295。
 
-[**[allow-ibgp]{lang="EN-US"}**]{#struct_0_15908_44860_1198321173}[：允许引入]{style="font-family:宋体"}[IBGP]{lang="EN-US"}[路由，只有当]{style="font-family:宋体"}*[protocol]{lang="EN-US"}*[为]{style="font-family:宋体"}[bgp4+]{lang="EN-US"}[时，该参数可选。]{style="font-family:宋体"}
+**[allow-ibgp**]：允许引入IBGP路由，只有当*protocol*为bgp4+时，该参数可选。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_15908_44860_x176298956}
+【使用指导】
 
-[[对]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_934894848}[而言，其它路由协议发现的路由总被当作路由域外部的路由来处理。从其它协议引入]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[路由时，还可指定引入路由的缺省开销]{style="font-family:宋体"}[cost]{lang="EN-US"}[。]{style="font-family:宋体"}
+对IPv6 IS-IS而言，其它路由协议发现的路由总被当作路由域外部的路由来处理。从其它协议引入IPv6路由时，还可指定引入路由的缺省开销cost。
 
-[[在]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_x464124009}[引入路由时，可以指定将路由引入到]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[级、]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[级或者]{style="font-family:宋体"}[Level-1-2]{lang="EN-US"}[级路由表中。]{style="font-family:宋体"}
+在IPv6 IS-IS引入路由时，可以指定将路由引入到Level-1级、Level-2级或者Level-1-2级路由表中。
 
-[[需要注意的是，]{style="font-family:宋体"}**[import-route bgp4+]{lang="EN-US"}**]{#struct_0_15908_44860_1179382573}[表示只引入]{style="font-family:宋体"}[EBGP]{lang="EN-US"}[路由，]{style="font-family:宋体"}**[import-route bgp4+ allow-ibgp]{lang="EN-US"}**[表示将]{style="font-family:宋体"}[IBGP]{lang="EN-US"}[路由也引入，容易引起路由环路，请慎用。]{style="font-family:宋体"}
+需要注意的是，**import-route bgp4+**表示只引入EBGP路由，**import-route bgp4+ allow-ibgp**表示将IBGP路由也引入，容易引起路由环路，请慎用。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_x70705569}
+【举例】
 
-[[\# IPv6 IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_1620871599}[引入静态路由，并配置]{style="font-family:宋体"}[cost]{lang="EN-US"}[值为]{style="font-family:宋体"}[15]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# IPv6 IS-IS引入静态路由，并配置cost值为15。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_x1237604485}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv6]{lang="EN-US"}
+Sysname-isis-1 address-family ipv6
 
-[\[Sysname-isis-1-ipv6\] import-route static cost 15]{lang="EN-US"}
-:::
-
-::: {#1540786921 .myid}
-[]{#_Toc245204066}[]{#_Toc86723950}[]{#_Toc85873464}[]{#_Toc77992849}[]{#_Toc65740922}[]{#_Toc61239735}[]{#_Toc404789077}[]{#struct_0_15908_44860_x2058459551}[]{#_Toc310607877}[]{#_Toc290886944}
+Sysname-isis-1-ipv6 import-route static cost 15
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- import-route isisv6 level-1 into level-2**
 
 ------------------------------------------------------------------------
 
-[**[import-route isisv6 level-1 into level-2]{lang="EN-US"}**]{#struct_0_15908_44860_x672797255}[命令用来配置]{style="font-family:宋体"}[从]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[向]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[进行路由渗透。]{style="font-family:宋体"}
+**[import-route isisv6 level-1 into level-2**]命令用来配置从Level-1向Level-2进行路由渗透。
 
-[**[undo import-route isisv6 level-1 into level-2]{lang="EN-US"}**]{#struct_0_15908_44860_875514283}[命令用来配置不]{style="font-family:宋体"}[从]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[向]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[进行路由渗透。]{style="font-family:宋体"}
+**[undo import-route isisv6 level-1 into level-2**]命令用来配置不从Level-1向Level-2进行路由渗透。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1828498043}
+【命令】
 
-[**[import-route isisv6 level-1 into level-2]{lang="EN-US"}**[ \[ **filter-policy** { *acl6-number* \| **prefix-list** *prefix-list-name* \| **route-policy** *route-policy-name* } \| **tag** *tag* \] \*]{lang="EN-US"}]{#struct_0_15908_44860_1620806063}
+**[import-route isisv6 level-1 into level-2**[ [ **filter-policy** { *acl6-number* \| **prefix-list** *prefix-list-name* \| **route-policy** *route-policy-name* } \| **tag** *tag* ] \*]]
 
-[**[undo import-route isisv6 level-1 into level-2]{lang="EN-US"}**]{#struct_0_15908_44860_1876248999}
+**[undo import-route isisv6 level-1 into level-2**]
 
-[[【]{style="font-family:黑体"}]{#struct_0_15908_44860_1656262760}[缺省情况]{style="font-family:黑体"}[】]{style="font-family:黑体"}
+【缺省情况】
 
-[[从]{style="font-family:宋体"}[Level-1]{lang="EN-US"}]{#struct_0_15908_44860_x1390134242}[向]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[进行路由渗透。]{style="font-family:宋体"}
+从Level-1向Level-2进行路由渗透。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1816015629}
+【视图】
 
-[[IS-IS IPv6]{lang="FR"}]{#struct_0_15908_44860_x1857827203}[单播地址族视图]{style="font-family:宋体"}
+IS-IS IPv6单播地址族视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_505995222}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_1589193166}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_x1390280003}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_1620740527}
+【参数】
 
-[**[filter-policy]{lang="EN-US"}**]{#struct_0_15908_44860_326972284}[：过滤策略。]{style="font-family:宋体"}
+**[filter-policy**]：过滤策略。
 
-[*[acl6-number]{lang="EN-US"}*]{#struct_0_15908_44860_x951372633}[：]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[的编号，取值范围]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[acl6-number*]：IPv6 ACL的编号，取值范围2000～3999。
 
-[**[prefix-list]{lang="EN-US"}***[ prefix-list-name]{lang="EN-US"}*]{#struct_0_15908_44860_x281999115}[：]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址前缀列表名称，]{style="font-family:宋体"}*[prefix-list-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[prefix-list*** prefix-list-name*]：IPv6地址前缀列表名称，*prefix-list-name*为1～63个字符的字符串，区分大小写。
 
-[**[route-policy]{lang="EN-US"}***[ route-policy-name]{lang="EN-US"}*]{#struct_0_15908_44860_x1629940461}[：路由策略名称]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[route-policy*** route-policy-name*]：路由策略名称，*route-policy-name*为1～63个字符的字符串，区分大小写。
 
-[**[tag]{lang="EN-US"}**[ *tag*]{lang="EN-US"}]{#struct_0_15908_44860_x1336379801}[：为引入的路由分配管理标签号，取值范围]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[tag** *tag*]：为引入的路由分配管理标签号，取值范围1～4294967295。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_15908_44860_1069961314}
+【使用指导】
 
-[[Level-1-2]{lang="EN-US"}]{#struct_0_15908_44860_1552336705}[路由器可以将它所知道的其他区域的]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[区域路由信息发布给本区域的]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-1-2]{lang="EN-US"}[路由器。]{style="font-family:宋体"}
+Level-1-2路由器可以将它所知道的其他区域的Level-1区域路由信息发布给本区域的Level-2和Level-1-2路由器。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1568052847}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_1620674991}[设定路由器从]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[向]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[进行路由渗透。]{style="font-family:宋体"}
+\# 设定路由器从Level-1向Level-2进行路由渗透。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_1533698362}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv6]{lang="EN-US"}
+Sysname-isis-1 address-family ipv6
 
-[\[Sysname-isis-1-ipv6\] import-route isisv6 level-1 into level-2]{lang="EN-US"}
-:::
-
-::: {#-474252976 .myid}
-[]{#_Toc404789078}[]{#struct_0_15908_44860_x1353467478}
+Sysname-isis-1-ipv6 import-route isisv6 level-1 into level-2
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- import-route isisv6 level-2 into level-1**
 
 ------------------------------------------------------------------------
 
-[**[import-route isisv6 level-2 into level-1]{lang="EN-US"}**]{#struct_0_15908_44860_x2036613372}[命令用来配置]{style="font-family:宋体"}[从]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[向]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[进行路由渗透。]{style="font-family:宋体"}
+**[import-route isisv6 level-2 into level-1**]命令用来配置从Level-2向Level-1进行路由渗透。
 
-[**[undo import-route isisv6 level-2 into level-1]{lang="EN-US"}**]{#struct_0_15908_44860_1978066007}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo import-route isisv6 level-2 into level-1**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_788197545}
+【命令】
 
-[**[import-route isisv6 level-2 into level-1]{lang="EN-US"}**[ \[ **filter-policy** { *acl6-number* \| **prefix-list** *prefix-list-name* \| **route-policy** *route-policy-name* } \| **tag** *tag* \] \*]{lang="EN-US"}]{#struct_0_15908_44860_x1019566631}
+**[import-route isisv6 level-2 into level-1**[ [ **filter-policy** { *acl6-number* \| **prefix-list** *prefix-list-name* \| **route-policy** *route-policy-name* } \| **tag** *tag* ] \*]]
 
-[**[undo import-route isisv6 level-2 into level-1]{lang="EN-US"}**]{#struct_0_15908_44860_1258043981}
+**[undo import-route isisv6 level-2 into level-1**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_15908_44860_1620609455}
+【缺省情况】
 
-[[不]{style="font-family:宋体"}]{#struct_0_15908_44860_1064127757}[从]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[向]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[进行路由渗透。]{style="font-family:宋体"}
+不从Level-2向Level-1进行路由渗透。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_x512523281}
+【视图】
 
-[[IS-IS IPv6]{lang="FR"}]{#struct_0_15908_44860_1321039028}[单播地址族视图]{style="font-family:宋体"}
+IS-IS IPv6单播地址族视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1616294571}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_352792184}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_228761325}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_341178013}
+【参数】
 
-[**[filter-policy]{lang="EN-US"}**]{#struct_0_15908_44860_x1102054203}[：过滤策略。]{style="font-family:宋体"}
+**[filter-policy**]：过滤策略。
 
-[*[acl6-number]{lang="EN-US"}*]{#struct_0_15908_44860_1620543919}[：]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[的编号，取值范围]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[acl6-number*]：IPv6 ACL的编号，取值范围2000～3999。
 
-[**[prefix-list]{lang="EN-US"}***[ prefix-list-name]{lang="EN-US"}*]{#struct_0_15908_44860_x841903860}[：]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址前缀列表名称，]{style="font-family:宋体"}*[prefix-list-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[prefix-list*** prefix-list-name*]：IPv6地址前缀列表名称，*prefix-list-name*为1～63个字符的字符串，区分大小写。
 
-[**[route-policy]{lang="EN-US"}***[ route-policy-name]{lang="EN-US"}*]{#struct_0_15908_44860_206085394}[：路由策略名称]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[route-policy*** route-policy-name*]：路由策略名称，*route-policy-name*为1～63个字符的字符串，区分大小写。
 
-[**[tag]{lang="EN-US"}**[ *tag*]{lang="EN-US"}]{#struct_0_15908_44860_x996039656}[：为引入的路由分配管理标签号，取值范围]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[tag** *tag*]：为引入的路由分配管理标签号，取值范围1～4294967295。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1824846903}
+【使用指导】
 
-[[Level-1-2]{lang="EN-US"}]{#struct_0_15908_44860_x774627735}[路由器可以将它所知道的其他区域的]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[区域路由信息发布给本区域的]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[和]{style="font-family:宋体"}[Level-1-2]{lang="EN-US"}[路由器。]{style="font-family:宋体"}
+Level-1-2路由器可以将它所知道的其他区域的Level-2区域路由信息发布给本区域的Level-1和Level-1-2路由器。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1009366586}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_944042825}[设定路由器从]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[向]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[进行路由渗透。]{style="font-family:宋体"}
+\# 设定路由器从Level-2向Level-1进行路由渗透。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_1620478383}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv6]{lang="EN-US"}
+Sysname-isis-1 address-family ipv6
 
-[\[Sysname-isis-1-ipv6\] import-route isisv6 level-2 into level-1]{lang="EN-US"}
-:::
-
-::: {#-900064531 .myid}
-[]{#_Toc86723951}[]{#_Toc85873465}[]{#_Toc77992850}[]{#_Toc72055069}[]{#_Toc404789079}[]{#struct_0_15908_44860_1067702331}[]{#_Toc245204067}[]{#_Toc180404167}
+Sysname-isis-1-ipv6 import-route isisv6 level-2 into level-1
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- import-route limit**
 
 ------------------------------------------------------------------------
 
-[**[import-route limit]{lang="EN-US"}**]{#struct_0_15908_44860_x1363329884}[命令用来配置引入]{style="font-family:宋体"}[Level1/Level2]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[路由最大条数。]{style="font-family:宋体"}
+**[import-route limit**]命令用来配置引入Level1/Level2的IPv6路由最大条数。
 
-[**[undo import-route limit]{lang="EN-US"}**]{#struct_0_15908_44860_1125584008}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo import-route limit**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_x2060361519}
+【命令】
 
-[**[import-route limit ]{lang="EN-US"}***[number]{lang="EN-US"}*]{#struct_0_15908_44860_819196414}
+**[import-route limit ***number*]
 
-[**[undo import-route limit]{lang="EN-US"}**]{#struct_0_15908_44860_x428522035}
+**[undo import-route limit**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_15908_44860_1446308462}
+【缺省情况】
 
-[[引入]{style="font-family:宋体"}[Level1/Level2]{lang="EN-US"}]{#struct_0_15908_44860_528541903}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[路由最大条数与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+引入Level1/Level2的IPv6路由最大条数与设备的型号有关，请以设备的实际情况为准。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_1621461423}
+【视图】
 
-[[IS-IS IPv6]{lang="FR"}]{#struct_0_15908_44860_1505011704}[单播地址族视图]{style="font-family:宋体"}
+IS-IS IPv6单播地址族视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_1809488004}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_x1785739202}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_x822220000}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_x68878154}
+【参数】
 
-[*[number]{lang="EN-US"}*]{#struct_0_15908_44860_x1325549141}[：引入]{style="font-family:宋体"}[Level1/Level2]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[路由最大条数。不同型号的设备支持的取值范围和缺省值不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[number*]：引入Level1/Level2的IPv6路由最大条数。不同型号的设备支持的取值范围和缺省值不同，请以设备的实际情况为准。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_x859370891}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_104657457}[配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[引入]{style="font-family:宋体"}[Level1/Level2]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[路由最大条数为]{style="font-family:宋体"}[1000]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置IS-IS进程1引入Level1/Level2的IPv6路由最大条数为1000。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_1621395887}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv6]{lang="EN-US"}
+Sysname-isis-1 address-family ipv6
 
-[\[Sysname-isis-1-ipv6\] import-route limit 1000]{lang="EN-US"}
-:::
-
-::::: {#-982480200 .myid}
-[]{#_Toc404789080}[]{#struct_0_15908_44860_x1744886560}
+Sysname-isis-1-ipv6 import-route limit 1000
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- isis ipv6 bfd enable**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IPv6%20IS-IS命令.files/image001.png){#图片 22 width="62" height="25"}]{lang="EN-US"}]{#struct_0_15908_44860_x1745345315}
-:::
+![说明](IPv6%20IS-IS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:楷体_GB2312"}]{#struct_0_15908_44860_1811412035}[。]{style="font-family:楷体_GB2312"}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[isis ipv6 bfd enable**]命令用来在使能IPv6 IS-IS的BFD功能。
 
-[**[isis ipv6 bfd enable]{lang="EN-US"}**]{#struct_0_15908_44860_x1745410851}[命令用来在使能]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo** **isis ipv6** **bfd enable**]命令用来关闭IPv6 IS-IS的BFD功能。
 
-[**[undo]{lang="EN-US"}**[ **isis ipv6** **bfd enable**]{lang="EN-US"}]{#struct_0_15908_44860_x1733395101}[命令用来关闭]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1745214243}
+**[isis ipv6 bfd enable**]
 
-[**[isis ipv6 bfd enable]{lang="EN-US"}**]{#struct_0_15908_44860_876123171}
+**[undo**]**isis ipv6 bfd enable**
 
-[**[undo]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_15908_44860_x1248140752}**[isis]{lang="EN-US"}[ ipv6 bfd enable]{lang="EN-US"}**
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1745279779}
+IPv6 IS-IS的BFD功能处于关闭状态。
 
-[[IPv6 IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_1596243640}[的]{style="font-family:宋体"}[BFD]{lang="EN-US"}[功能处于关闭状态。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_884800289}
+接口视图
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_15908_44860_x1745607459}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_x19684616}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_x1745672995}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_x1407849390}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_x349397959}
+·路由应用
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_15908_44860_x1745476387}
+\# 使能接口GigabitEthernet1/0/1的IPv6 IS-IS BFD功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_x783952514}[使能接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6 IS-IS BFD]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_x1745541923}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis ipv6 bfd enable
 
-[\[Sysname-GigabitEthernet1/0/1\] isis ipv6 bfd enable]{lang="EN-US"}
+·交换应用
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_15908_44860_1171393303}
+\# 使能接口Vlan-interface11的IPv6 IS-IS BFD功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_1234741701}[使能接口]{style="font-family:宋体"}[Vlan-interface11]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6 IS-IS BFD]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_x1744821027}
+Sysname interface vlan-interface 11
 
-[\[Sysname\] interface vlan-interface 11]{lang="EN-US"}
-
-[\[Sysname-Vlan-interface11\] isis ipv6 bfd enable]{lang="EN-US"}
-:::::
-
-::: {#1081396902 .myid}
-[]{#_Toc404789081}[]{#struct_0_15908_44860_1115135039}[]{#_Toc357603593}[]{#_Toc352311322}
+Sysname-Vlan-interface11 isis ipv6 bfd enable
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- isis ipv6 cost**
 
 ------------------------------------------------------------------------
 
-[**[isis ipv6 cost]{lang="EN-US"}**]{#struct_0_15908_44860_x1744886563}[命令用来配置接口的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[链路开销值。]{style="font-family:宋体"}
+**[isis ipv6 cost**]命令用来配置接口的IPv6链路开销值。
 
-[**[undo isis ipv6 cost]{lang="EN-US"}**]{#struct_0_15908_44860_x1545604788}[命令用来取消该配置。]{style="font-family:宋体"}
+**[undo isis ipv6 cost**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_2138447782}
+【命令】
 
-[**[isis ipv6 cost ]{lang="EN-US"}***[value]{lang="EN-US"}***[ ]{lang="EN-US"}**[\[ **level-1** \| **level-2** \]]{lang="EN-US"}]{#struct_0_15908_44860_x1745345314}
+**[isis ipv6 cost ***value*****[[ **level-1** \| **level-2** ]]]
 
-[**[undo isis ipv6 cost ]{lang="EN-US"}**[\[ **level-1** \| **level-2** \]]{lang="EN-US"}]{#struct_0_15908_44860_x917471320}
+**[undo isis ipv6 cost **[[ **level-1** \| **level-2** ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_15908_44860_1476419076}
+【缺省情况】
 
-[[没有配置接口的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_15908_44860_x1745410850}[链路开销值。]{style="font-family:宋体"}
+没有配置接口的IPv6链路开销值。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_995488254}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_15908_44860_x1318888849}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1745214242}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_x689960770}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_x1745279778}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_668605527}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_15908_44860_x761552652}[：链路开销值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[16777215]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[value*]：链路开销值，取值范围为1～16777215。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_15908_44860_x478999971}[：配置在计算]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[路由时使用的链路开销值。]{style="font-family:宋体"}
+**[level-1**]：配置在计算Level-1路由时使用的链路开销值。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_15908_44860_668539991}[：配置在计算]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[路由时使用的链路开销值。]{style="font-family:宋体"}
+**[level-2**]：配置在计算Level-2路由时使用的链路开销值。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_15908_44860_30159699}
+【使用指导】
 
-[[接口必须使能]{style="font-family:宋体"}]{#struct_0_15908_44860_x270457508}[IPv6 IS-IS]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+接口必须使能IPv6 IS-IS功能。
 
-[[只有]{style="font-family:宋体"}]{#struct_0_15908_44860_x1745607458}[IS-IS]{lang="EN-US"}[支持]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[拓扑标准模式的情况下，接口中配置的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[链路开销值才会生效。]{style="font-family:宋体"}
+只有IS-IS支持IPv6拓扑标准模式的情况下，接口中配置的IPv6链路开销值才会生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_1546399325}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_15908_44860_x1613919333}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_687234409}[配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[链路开销值为]{style="font-family:宋体"}[10]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置接口GigabitEthernet1/0/1的IPv6链路开销值为10。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_x1745672994}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 100]{lang="EN-US"}
+Sysname isis 100
 
-[\[Sysname-isis-100\] address-family ipv6 unicast]{lang="EN-US"}
+Sysname-isis-100 address-family ipv6 unicast
 
-[\[Sysname-isis-100-ipv6\] quit]{lang="EN-US"}
+Sysname-isis-100-ipv6 quit
 
-[\[Sysname-isis-100\] quit]{lang="EN-US"}
+Sysname-isis-100 quit
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] isis ipv6 enable 100]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis ipv6 enable 100
 
-[\[Sysname-GigabitEthernet1/0/1\] isis ipv6 cost 10]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis ipv6 cost 10
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_15908_44860_x1613853797}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_31897055}[配置接口]{style="font-family:宋体"}[Vlan-interface11]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[链路开销值为]{style="font-family:宋体"}[10]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置接口Vlan-interface11的IPv6链路开销值为10。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_1441574525}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 100]{lang="EN-US"}
+Sysname isis 100
 
-[\[Sysname-isis-100\] address-family ipv6 unicast]{lang="EN-US"}
+Sysname-isis-100 address-family ipv6 unicast
 
-[\[Sysname-isis-100-ipv6\] quit]{lang="EN-US"}
+Sysname-isis-100-ipv6 quit
 
-[\[Sysname-isis-100\] quit]{lang="EN-US"}
+Sysname-isis-100 quit
 
-[\[Sysname\] interface vlan-interface 11]{lang="EN-US"}
+Sysname interface vlan-interface 11
 
-[\[Sysname-Vlan-interface11\] isis ipv6 enable 100]{lang="EN-US"}
+Sysname-Vlan-interface11 isis ipv6 enable 100
 
-[\[Sysname-Vlan-interface11\] isis ipv6 cost 10]{lang="EN-US"}
-:::
-
-::: {#-750766096 .myid}
-[]{#_Toc404789082}[]{#struct_0_15908_44860_1321033965}
+Sysname-Vlan-interface11 isis ipv6 cost 10
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- isis ipv6 enable**
 
 ------------------------------------------------------------------------
 
-[**[isis ipv6 enable]{lang="EN-US"}**]{#struct_0_15908_44860_x1745476386}[命令用来使能接口]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[能力。]{style="font-family:宋体"}
+**[isis ipv6 enable**]命令用来使能接口IS-IS的IPv6能力。
 
-[**[undo isis ipv6 enable]{lang="EN-US"}**]{#struct_0_15908_44860_1944930841}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo isis ipv6 enable**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1811922253}
+【命令】
 
-[**[isis ipv6 enable]{lang="EN-US"}**[ \[ *process-id* \]]{lang="EN-US"}]{#struct_0_15908_44860_x1745541922}
+**[isis ipv6 enable** [ *process-id* ]]
 
-[**[undo]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_15908_44860_x1557490052}**[isis]{lang="EN-US"}[ ipv6 enable]{lang="EN-US"}**
+**[undo**]**isis ipv6 enable**
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_15908_44860_836574047}
+【缺省情况】
 
-[[没有使能接口]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_x1744821026}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[能力。]{style="font-family:宋体"}
+没有使能接口IS-IS的IPv6能力。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1613748316}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_15908_44860_x1744886562}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_20479153}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_2052117982}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_2146337458}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_x513937498}
+【参数】
 
-[*[process-id]{lang="EN-US"}*]{#struct_0_15908_44860_512116643}[：]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程号，取值范围]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[process-id*]：IS-IS进程号，取值范围1～65535，缺省值为1。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_2146271922}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_15908_44860_x1284133972}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_x714079541}[创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[，使能]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[能力，并在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[能力。]{style="font-family:宋体"}
+\# 创建IS-IS进程1，使能IPv6能力，并在接口GigabitEthernet1/0/1上使能IS-IS的IPv6能力。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_2146468530}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] network-entity 10.0001.1010.1020.1030.00]{lang="EN-US"}
+Sysname-isis-1 network-entity 10.0001.1010.1020.1030.00
 
-[\[Sysname-isis-1\] address-family ipv6 unicast]{lang="EN-US"}
+Sysname-isis-1 address-family ipv6 unicast
 
-[\[Sysname-isis-1-ipv6\] quit]{lang="EN-US"}
+Sysname-isis-1-ipv6 quit
 
-[\[Sysname-isis-1\] quit]{lang="EN-US"}
+Sysname-isis-1 quit
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ipv6 address 2002::1/64]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 ipv6 address 2002::1/64
 
-[\[Sysname-GigabitEthernet1/0/1\] isis ipv6 enable 1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis ipv6 enable 1
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_15908_44860_x1356276556}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_2146402994}[创建]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[1]{lang="EN-US"}[，使能]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[能力，并在接口]{style="font-family:宋体"}[Vlan-interface100]{lang="EN-US"}[上使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[能力。]{style="font-family:宋体"}
+\# 创建IS-IS进程1，使能IPv6能力，并在接口Vlan-interface100上使能IS-IS的IPv6能力。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_x869773668}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] network-entity 10.0001.1010.1020.1030.00]{lang="EN-US"}
+Sysname-isis-1 network-entity 10.0001.1010.1020.1030.00
 
-[\[Sysname-isis-1\] address-family ipv6 unicast]{lang="EN-US"}
+Sysname-isis-1 address-family ipv6 unicast
 
-[\[Sysname-isis-1-ipv6\] quit]{lang="EN-US"}
+Sysname-isis-1-ipv6 quit
 
-[\[Sysname-isis-1\] quit]{lang="EN-US"}
+Sysname-isis-1 quit
 
-[\[Sysname\] interface vlan-interface 100]{lang="EN-US"}
+Sysname interface vlan-interface 100
 
-[\[Sysname-Vlan-interface100\] ipv6 address 2002::1/64]{lang="EN-US"}
+Sysname-Vlan-interface100 ipv6 address 2002::1/64
 
-[\[Sysname-Vlan-interface100\] isis ipv6 enable 1]{lang="EN-US"}
-:::
-
-::: {#903357565 .myid}
-[]{#_Toc404789083}[]{#struct_0_15908_44860_668343382}[]{#_Toc366163116}[]{#_Toc364753100}
+Sysname-Vlan-interface100 isis ipv6 enable 1
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- isis ipv6 prefix-suppression**
 
 ------------------------------------------------------------------------
 
-[**[isis ipv6 prefix-suppression]{lang="EN-US"}**]{#struct_0_15908_44860_x1622547349}[命令用来配置接口的前缀抑制功能。]{style="font-family:
-宋体"}
+**[isis ipv6 prefix-suppression**]命令用来配置接口的前缀抑制功能。
 
-[**[undo isis ipv6 prefix-suppression]{lang="EN-US"}**]{#struct_0_15908_44860_x1550724983}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo isis ipv6 prefix-suppression**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_x258040595}
+【命令】
 
-[**[isis ipv6 prefix-suppression ]{lang="EN-US"}**]{#struct_0_15908_44860_x1277431396}
+**[isis ipv6 prefix-suppression **]
 
-[**[undo isis ipv6 prefix-suppression ]{lang="EN-US"}**]{#struct_0_15908_44860_668277846}
+**[undo isis ipv6 prefix-suppression **]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_15908_44860_739423243}
+【缺省情况】
 
-[[未配置接口的前缀抑制功能。]{style="font-family:宋体"}]{#struct_0_15908_44860_x1206954576}
+未配置接口的前缀抑制功能。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_1514984231}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_15908_44860_x1576413590}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_907892799}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_668474454}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_x1039389875}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_15908_44860_x717514799}
+【使用指导】
 
-[[接口上使能]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_541893872}[时，有时候不希望在]{style="font-family:宋体"}[LSP]{lang="EN-US"}[中发布此接口的前缀，可以通过在接口上配置此命令，减少此接口的前缀在]{style="font-family:宋体"}[LSP]{lang="EN-US"}[中携带，屏蔽内部节点被发布，提高安全性，加快路由收敛。]{style="font-family:宋体"}
+接口上使能IS-IS时，有时候不希望在LSP中发布此接口的前缀，可以通过在接口上配置此命令，减少此接口的前缀在LSP中携带，屏蔽内部节点被发布，提高安全性，加快路由收敛。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_x877946896}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_15908_44860_668408918}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_x1782961737}[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[使能前缀抑制功能。]{style="font-family:宋体"}
+\# 接口GigabitEthernet1/0/1使能前缀抑制功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_x610985350}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] isis ]{lang="EN-US"}[ipv6 ]{lang="EN-US"}[prefix-suppression]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis ipv6 prefix-suppression
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_15908_44860_1859727565}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_2139944057}[接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[使能前缀抑制功能。]{style="font-family:宋体"}
+\# 接口Vlan-interface10使能前缀抑制功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_668605526}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] isis ]{lang="EN-US"}[ipv6 ]{lang="EN-US"}[prefix-suppression]{lang="EN-US"}
-:::
-
-::: {#764034563 .myid}
-[]{#_Toc404789084}[]{#struct_0_15908_44860_x761552651}[]{#_Toc366163123}[]{#_Toc364753102}[]{#_Toc366163117}[]{#_Toc366163118}[]{#_Toc366163119}[]{#_Toc366163120}[]{#_Toc366163121}[]{#_Toc366163122}
+Sysname-Vlan-interface10 isis ipv6 prefix-suppression
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- isis ipv6 tag**
 
 ------------------------------------------------------------------------
 
-[**[isis ipv6 tag]{lang="EN-US"}**]{#struct_0_15908_44860_x478934435}[命令用来配置接口的]{style="font-family:宋体"}[Tag]{lang="EN-US"}[值。]{style="font-family:宋体"}
+**[isis ipv6 tag**]命令用来配置接口的Tag值。
 
-[**[undo isis ipv6 tag]{lang="EN-US"}**]{#struct_0_15908_44860_x1713121969}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo isis ipv6 tag**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_x159599951}
+【命令】
 
-[**[isis ipv6 tag ]{lang="EN-US"}***[tag]{lang="EN-US"}*]{#struct_0_15908_44860_x1036180820}
+**[isis ipv6 tag ***tag*]
 
-[**[undo isis ipv6 tag]{lang="EN-US"}**]{#struct_0_15908_44860_668539990}
+**[undo isis ipv6 tag**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_15908_44860_1386490124}
+【缺省情况】
 
-[[没有配置接口的]{style="font-family:宋体"}[Tag]{lang="EN-US"}]{#struct_0_15908_44860_481457904}[值。]{style="font-family:宋体"}
+没有配置接口的Tag值。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_x590798714}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_15908_44860_x663912082}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_391776998}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_668736598}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_x1167024040}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1378546698}
+【参数】
 
-[*[tag]{lang="EN-US"}*]{#struct_0_15908_44860_x40259603}[：管理标记值]{style="font-family:宋体"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[tag*]：管理标记值，取值范围为1～4294967295。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_15908_44860_581360248}
+【使用指导】
 
-[[当]{style="font-family:宋体"}[cost-sytle]{lang="EN-US"}]{#struct_0_15908_44860_668671062}[为]{style="font-family:宋体"}[wide]{lang="EN-US"}[、]{style="font-family:宋体"}[wide-compatible ]{lang="EN-US"}[或]{style="font-family:宋体"}[compatible]{lang="EN-US"}[时，如果发布可达的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀具有]{style="font-family:宋体"}[Tag]{lang="EN-US"}[属性，]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[会将]{style="font-family:宋体"}[Tag]{lang="EN-US"}[加入到该前缀的]{style="font-family:宋体"}[IP]{lang="EN-US"}[可达信息]{style="font-family:宋体"}[TLV]{lang="EN-US"}[中]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+当cost-sytle为wide、wide-compatible 或compatible时，如果发布可达的IP地址前缀具有Tag属性，IS-IS会将Tag加入到该前缀的IP可达信息TLV中。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_x765044505}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[路由应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_15908_44860_32436939}
+·路由应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_1527496510}[配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的]{style="font-family:宋体"}[Tag]{lang="EN-US"}[值。]{style="font-family:宋体"}
+\# 配置接口GigabitEthernet1/0/1的Tag值。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_271600166}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] isis ipv6 ]{lang="EN-US"}[tag 4294967295]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 isis ipv6 tag 4294967295
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[交换应用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_15908_44860_667819094}
+·交换应用
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_439490340}[配置接口]{style="font-family:宋体"}[Vlan-interface10]{lang="EN-US"}[的]{style="font-family:宋体"}[Tag]{lang="EN-US"}[值。]{style="font-family:宋体"}
+\# 配置接口Vlan-interface10的Tag值。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_365618320}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 10]{lang="EN-US"}
+Sysname interface vlan-interface 10
 
-[\[Sysname-Vlan-interface10\] isis ipv6 ]{lang="EN-US"}[tag 4294967295]{lang="EN-US"}
-:::
-
-::::: {#-835536423 .myid}
-[]{#_Toc404789085}[]{#struct_0_15908_44860_2146075314}[]{#_Toc357603595}[]{#_Toc357412668}
+Sysname-Vlan-interface10 isis ipv6 tag 4294967295
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- ispf enable**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](IPv6%20IS-IS命令.files/image001.png){#图片 18 width="62" height="25"}]{lang="EN-US"}]{#struct_0_15908_44860_x1698178683}
-:::
+![说明](IPv6%20IS-IS命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_15908_44860_1763189209}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[ispf enable**]命令用来使能IPv6 IS-IS ISPF功能，即增量SPF计算功能。
 
-[**[ispf enable]{lang="EN-US"}**]{#struct_0_15908_44860_2146009778}[命令用来使能]{style="font-family:宋体"}[IPv6 IS-IS ISPF]{lang="EN-US"}[功能，即增量]{style="font-family:宋体"}[SPF]{lang="EN-US"}[计算功能。]{style="font-family:宋体"}
+**[undo ispf enable**]命令用来关闭IPv6 IS-IS ISPF功能。
 
-[**[undo ispf enable]{lang="EN-US"}**]{#struct_0_15908_44860_1758744783}[命令用来关闭]{style="font-family:宋体"}[IPv6 IS-IS ISPF]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_2146206386}
+**[ispf enable**]
 
-[**[ispf enable]{lang="EN-US"}**]{#struct_0_15908_44860_x1283818631}
+**[undo ispf enable**]
 
-[**[undo ispf enable]{lang="EN-US"}**]{#struct_0_15908_44860_x2051387324}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_15908_44860_2146140850}
+使能IPv6 IS-IS ISPF功能。
 
-[[使能]{style="font-family:宋体"}[IPv6 IS-IS ISPF]{lang="EN-US"}]{#struct_0_15908_44860_x2054539537}[功能。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_x990391259}
+IS-IS IPv6单播地址族视图
 
-[[IS-IS IPv6]{lang="EN-US"}]{#struct_0_15908_44860_2146861746}[单播地址族视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_1399106284}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_x1898888772}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_2146796210}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_15908_44860_648706963}
+使能增量SPF计算功能后，当网络的拓扑结构发生变化影响到最短路径树的结构时，只将受影响的部分节点进行修正，而不重建整棵最短路径树。
 
-[[使能增量]{style="font-family:宋体"}[SPF]{lang="EN-US"}]{#struct_0_15908_44860_2146337459}[计算功能后，当网络的拓扑结构发生变化影响到最短路径树的结构时，只将受影响的部分节点进行修正，而不重建整棵最短路径树。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_x514003034}
+\# 使能增量SPF计算功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_1201828842}[使能增量]{style="font-family:宋体"}[SPF]{lang="EN-US"}[计算功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_2146271923}
+Sysname isis 1
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname-isis-1 address-family ipv6
 
-[\[Sysname-isis-1\] address-family ipv6]{lang="EN-US"}
-
-[\[Sysname-isis-1-ipv6\] ]{lang="EN-US"}[ispf enable]{lang="EN-US"}
-:::::
-
-::: {#1012649285 .myid}
-[]{#_Toc404789086}[]{#struct_0_15908_44860_x1615604183}[]{#_Toc245204068}
+Sysname-isis-1-ipv6 ispf enable
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- maximum load-balancing**
 
 ------------------------------------------------------------------------
 
-[**[maximum load]{lang="EN-US"}**[-**balancing**]{lang="EN-US"}]{#struct_0_15908_44860_x1524929338}[命令用来配置]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[支持的等]{style="font-family:宋体"}[价路由的最大条数。]{style="font-family:宋体"}
+**[maximum load**-**balancing**]命令用来配置IPv6 IS-IS支持的等价路由的最大条数。
 
-[**[undo maximum load-balancing]{lang="EN-US"}**]{#struct_0_15908_44860_x666955827}[命令用来恢复缺省]{style="font-family:
-宋体"}[情况。]{style="font-family:宋体"}
+**[undo maximum load-balancing**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1780324175}
+【命令】
 
-[**[maximum load-balancing ]{lang="EN-US"}***[number]{lang="EN-US"}*]{#struct_0_15908_44860_1471513744}
+**[maximum load-balancing ***number*]
 
-[**[undo maximum load-balancing]{lang="EN-US"}**]{#struct_0_15908_44860_416196859}
+**[undo maximum load-balancing**]
 
-[[【缺省情况】]{style="font-family:
-黑体"}]{#struct_0_15908_44860_9738399}
+【缺省情况】
 
-[[IPv6 IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_x1107946217}[支持的]{style="font-family:宋体"}[等价路由的最大条数与与]{style="font-family:
-宋体"}[系统支持最大等价路由的条数相同]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+IPv6 IS-IS支持的等价路由的最大条数与与系统支持最大等价路由的条数相同。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_x488233712}
+【视图】
 
-[[IS-IS IPv6]{lang="EN-US"}]{#struct_0_15908_44860_1580978092}[单播地址族视图]{style="font-family:宋体"}
+IS-IS IPv6单播地址族视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_1163776377}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_205852436}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_1218528841}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_x387929770}
+【参数】
 
-[*[number]{lang="EN-US"}*]{#struct_0_15908_44860_2126255373}[：等价路由的最大条数，不同型号的设备支持的取值范围和缺省值不同，请以设备的情况为准]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+*[number*]：等价路由的最大条数，不同型号的设备支持的取值范围和缺省值不同，请以设备的情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_15908_44860_x116996134}
+【使用指导】
 
-[[如果通过]{style="font-family:宋体"}**[max-ecmp-num]{lang="EN-US"}**]{#struct_0_15908_44860_535149623}[命令配置系统支持最大等价路由的条数为]{style="font-family:宋体"}[m]{lang="EN-US"}[，则本命令的缺省值为]{style="font-family:宋体"}[m]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[m]{lang="EN-US"}[。]{style="font-family:
-宋体"}
+如果通过**max-ecmp-num**命令配置系统支持最大等价路由的条数为m，则本命令的缺省值为m，取值范围为1～m。
 
-[**[max-ecmp-num]{lang="EN-US"}**]{#struct_0_15908_44860_1791645936}[命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[max-ecmp-num**]命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1419851449}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_x1108011753}[配置]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[支持的]{style="font-family:宋体"}[等价路由的最大条数为]{style="font-family:宋体"}[2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置IPv6 IS-IS支持的等价路由的最大条数为2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_991443727}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv6]{lang="EN-US"}
+Sysname-isis-1 address-family ipv6
 
-[\[Sysname-isis-1-ipv6\] maximum load-balancing 2]{lang="EN-US"}
-:::
-
-::: {#1298394237 .myid}
-[]{#_Toc404789087}[]{#struct_0_15908_44860_2146009779}[]{#_Toc357603597}[]{#_Toc352311321}
+Sysname-isis-1-ipv6 maximum load-balancing 2
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- multi-topology**
 
 ------------------------------------------------------------------------
 
-[**[multi-topology]{lang="EN-US"}**]{#struct_0_15908_44860_2146206387}[命令用来]{style="font-family:宋体"}[配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[支持]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[拓扑]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[multi-topology**]命令用来配置IS-IS支持IPv6拓扑。
 
-[**[undo multiple-topology]{lang="EN-US"}**]{#struct_0_15908_44860_x1283753095}[命令用来取消]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[支持]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[拓扑。]{style="font-family:宋体"}
+**[undo multiple-topology**]命令用来取消IS-IS支持IPv6拓扑。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_1694784998}
+【命令】
 
-[**[multi-topology]{lang="EN-US"}**[ \[ **compatible** \]]{lang="EN-US"}]{#struct_0_15908_44860_2146140851}
+**[multi-topology** [ **compatible** ]]
 
-[**[undo multi-topology]{lang="EN-US"}**]{#struct_0_15908_44860_x2054474001}
+**[undo multi-topology**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_15908_44860_2146861747}
+【缺省情况】
 
-[[没有配置支持]{style="font-family:宋体"}[IPv6]{lang="EN-US"}]{#struct_0_15908_44860_1399171820}[拓扑。]{style="font-family:宋体"}
+没有配置支持IPv6拓扑。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_x350886927}
+【视图】
 
-[[IS-IS IPv6]{lang="EN-US"}]{#struct_0_15908_44860_2146796211}[地址族视图]{style="font-family:宋体"}
+IS-IS IPv6地址族视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_648641427}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_938617820}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_2146337456}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_x513282138}
+【参数】
 
-[**[compatible]{lang="EN-US"}**]{#struct_0_15908_44860_2146271920}[：支持]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[拓扑兼容模式，发布]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[前缀时，会向]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[拓扑和]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[拓扑中分别发布一份。如果未指定本参数，表示不支持]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[拓扑兼容模式，发布]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[前缀时，只会向]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[拓扑中发布一份。]{style="font-family:宋体"}
+**[compatible**]：支持IPv6拓扑兼容模式，发布IPv6前缀时，会向IPv4拓扑和IPv6拓扑中分别发布一份。如果未指定本参数，表示不支持IPv6拓扑兼容模式，发布IPv6前缀时，只会向IPv6拓扑中发布一份。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1284002900}
+【使用指导】
 
-[[配置此命令之后，]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_x1837716144}[的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[和]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[将分拓扑进行计算。]{style="font-family:宋体"}
+配置此命令之后，IS-IS的IPv4和IPv6将分拓扑进行计算。
 
-[[本命令必须在链路开销值类型为]{lang="EN-US" style="font-family:宋体"}**[wide]{lang="EN-US"}**]{#struct_0_15908_44860_2146468528}[、]{lang="EN-US" style="font-family:宋体"}**[compatible]{lang="EN-US"}**[或]{lang="EN-US" style="font-family:宋体"}**[wide-compatible]{lang="EN-US"}**[时才能配置。]{lang="EN-US" style="font-family:宋体"}
+本命令必须在链路开销值类型为**wide**、**compatible**或**wide-compatible**时才能配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1356800845}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_2146402992}[配置]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[支持]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[拓扑。]{style="font-family:宋体"}
+\# 配置IS-IS支持IPv6拓扑。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_x870166884}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv6]{lang="EN-US"}
+Sysname-isis-1 address-family ipv6
 
-[\[Sysname-isis-1-ipv6\] multi-topology]{lang="EN-US"}
+Sysname-isis-1-ipv6 multi-topology
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1940079210}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[cost-style]{lang="EN-US"}**]{#struct_0_15908_44860_2146075312}
-:::
-
-::: {#830408614 .myid}
-[]{#_Toc404789088}[]{#struct_0_15908_44860_x363358495}[]{#_Toc245204069}[]{#_Toc86723952}[]{#_Toc85873466}[]{#_Toc77992851}
+·**cost-style**
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- preference**
 
 ------------------------------------------------------------------------
 
-[**[preference]{lang="EN-US"}**]{#struct_0_15908_44860_x282231788}[命令用来配置]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[路由优先级。]{style="font-family:宋体"}
+**[preference**]命令用来配置IPv6 IS-IS路由优先级。
 
-[**[undo preference]{lang="EN-US"}**]{#struct_0_15908_44860_x1769162533}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo preference**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_251057278}
+【命令】
 
-[**[preference ]{lang="EN-US"}**[{ *preference* \| **route-policy** *route-policy-name* } \*]{lang="EN-US"}]{#struct_0_15908_44860_299765640}
+**[preference **[{ *preference* \| **route-policy** *route-policy-name* } \*]]
 
-[**[undo preference]{lang="EN-US"}**]{#struct_0_15908_44860_1281242532}
+**[undo preference**]
 
-[[【缺省情况下】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1624600965}
+【缺省情况下】
 
-[[IPv6 IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_x1108077289}[路由优先级为]{style="font-family:宋体"}[15]{lang="EN-US"}[。]{style="font-family:宋体"}
+IPv6 IS-IS路由优先级为15。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_705037996}
+【视图】
 
-[[IS-IS IPv6]{lang="EN-US"}]{#struct_0_15908_44860_x1383449751}[单播地址族视图]{style="font-family:宋体"}
+IS-IS IPv6单播地址族视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_55249465}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_1231108706}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_x1246905900}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1307267694}
+【参数】
 
-[*[preference]{lang="EN-US"}*]{#struct_0_15908_44860_1898304419}[：]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[协议]{style="font-family:宋体"}[优先级，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[preference*]：IPv6 IS-IS协议优先级，取值范围为1～255。
 
-[**[route-policy]{lang="EN-US"}***[ route-policy-name]{lang="EN-US"}*]{#struct_0_15908_44860_x1818940611}[：指定路由策略名。]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[route-policy*** route-policy-name*]：指定路由策略名。*route-policy-name*为1～63个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1108142825}
+【使用指导】
 
-[[由于在一台路由器上可能同时运行多种动态路由协议，就存在各个路由协议之间路由信息共享和选择的问题。系统为每一种路由协议配置一个优先级，当不同协议都发现了到同一目的地址的路由时，优先级高的协议将起决定作用。]{style="font-family:宋体"}]{#struct_0_15908_44860_156503725}
+由于在一台路由器上可能同时运行多种动态路由协议，就存在各个路由协议之间路由信息共享和选择的问题。系统为每一种路由协议配置一个优先级，当不同协议都发现了到同一目的地址的路由时，优先级高的协议将起决定作用。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_1735558157}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_x838026934}[配置]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[路由优先级为]{style="font-family:宋体"}[20]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置IPv6 IS-IS路由优先级为20。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_779221114}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv6]{lang="EN-US"}
+Sysname-isis-1 address-family ipv6
 
-[\[Sysname-isis-1-ipv6\] preference 20]{lang="EN-US"}
-:::
-
-::: {#-330683803 .myid}
-[]{#_Toc352311337}[]{#_Toc404789089}[]{#struct_0_15908_44860_2146796208}[]{#_Toc357603600}
+Sysname-isis-1-ipv6 preference 20
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- prefix-priority**
 
 ------------------------------------------------------------------------
 
-[**[prefix-priority]{lang="EN-US"}**]{#struct_0_15908_44860_649231252}[命令用来配置指定]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[路由收敛的优先级。]{style="font-family:宋体"}
+**[prefix-priority**]命令用来配置指定IPv6 IS-IS路由收敛的优先级。
 
-[**[undo prefix-]{lang="EN-US"}[priority]{lang="EN-US"}**]{#struct_0_15908_44860_2146337457}[命令用来取消该配置。]{style="font-family:宋体"}
+**[undo prefix-priority**]命令用来取消该配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_x513347674}
+【命令】
 
-[**[prefix-priority]{lang="EN-US"}**[ { **critical** \| **high** \| **medium** } { **prefix-list** *prefix-list-name* \| **tag** *tag-value* }]{lang="EN-US"}]{#struct_0_15908_44860_2146271921}
+**[prefix-priority**[ { **critical** \| **high** \| **medium** } { **prefix-list** *prefix-list-name* \| **tag** *tag-value* }]]
 
-[**[prefix-priority]{lang="EN-US"}[ route-policy]{lang="EN-US"}**[ *route-policy-name*]{lang="EN-US"}]{#struct_0_15908_44860_x1284068436}
+**[prefix-priority route-policy** *route-policy-name*]
 
-[**[undo prefix-priority]{lang="EN-US"}**[ { **critical** \| **high** \| **medium** } \[ **prefix-list** \| **tag** \]]{lang="EN-US"}]{#struct_0_15908_44860_237810721}
+**[undo prefix-priority**[ { **critical** \| **high** \| **medium** } [ **prefix-list** \| **tag** ]]]
 
-[**[undo prefix-priority route-policy]{lang="EN-US"}**]{#struct_0_15908_44860_2146468529}
+**[undo prefix-priority route-policy**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1356735309}
+【缺省情况】
 
-[[IPv6 IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_2146402993}[路由收敛的优先级为低优先级。]{style="font-family:宋体"}
+IPv6 IS-IS路由收敛的优先级为低优先级。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_x870101348}
+【视图】
 
-[[IS-IS IPv6]{lang="EN-US"}]{#struct_0_15908_44860_2146075313}[单播地址族视图]{style="font-family:宋体"}
+IS-IS IPv6单播地址族视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1698113147}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_678135128}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_2146009777}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_1759465679}
+【参数】
 
-[**[critical]{lang="EN-US"}**]{#struct_0_15908_44860_2146206385}[：最高优先级。]{style="font-family:宋体"}
+**[critical**]：最高优先级。
 
-[**[high]{lang="EN-US"}**]{#struct_0_15908_44860_x1283622023}[：高优先级。]{style="font-family:宋体"}
+**[high**]：高优先级。
 
-[**[medium]{lang="EN-US"}**]{#struct_0_15908_44860_2146140849}[：中优先级。]{style="font-family:宋体"}
+**[medium**]：中优先级。
 
-[**[route-policy]{lang="EN-US"}**[ *route-policy-name*]{lang="EN-US"}]{#struct_0_15908_44860_x2053949712}[：指]{style="font-family:宋体"}[定路由策略名，]{style="font-family:宋体"}[配置路由收敛的优先级]{style="font-family:宋体"}[。]{style="font-family:宋体"}*[route-policy-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的]{style="font-family:宋体"}[字符串，区分]{style="font-family:宋体"}[大小写。]{style="font-family:宋体"}
+**[route-policy** *route-policy-name*]：指定路由策略名，配置路由收敛的优先级。*route-policy-name*为1～63个字符的字符串，区分大小写。
 
-[**[prefix-list ]{lang="EN-US"}***[prefix-list-name]{lang="EN-US"}*]{#struct_0_15908_44860_x1825683062}[：指定]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址前缀列表名，唯一标识一个]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址前缀列表。]{style="font-family:宋体"}*[prefix-list-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[prefix-list ***prefix-list-name*]：指定IPv6地址前缀列表名，唯一标识一个IPv6地址前缀列表。*prefix-list-name*为1～63个字符的字符串，区分大小写。
 
-[**[tag]{lang="EN-US"}***[ tag-value]{lang="EN-US"}*]{#struct_0_15908_44860_2146861745}[：指定要求的标记值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[tag*** tag-value*]：指定要求的标记值，取值范围为1～4294967295。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_15908_44860_1399040748}
+【使用指导】
 
-[[IPv6 IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_2146796209}[路由的优先级越高收敛的速度越快。]{style="font-family:宋体"}
+IPv6 IS-IS路由的优先级越高收敛的速度越快。
 
-[[需要注意的是，]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_649165716}[主机路由的优先级为中优先级。]{style="font-family:宋体"}
+需要注意的是，IPv6 IS-IS主机路由的优先级为中优先级。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_2146337454}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_x513151066}[配置前缀列表]{style="font-family:宋体"}[standtest]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[路由收敛的优先级为高优先级。]{style="font-family:宋体"}
+\# 配置前缀列表standtest的IPv6 IS-IS路由收敛的优先级为高优先级。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_2146271918}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv6]{lang="EN-US"}
+Sysname-isis-1 address-family ipv6
 
-[\[Sysname-isis-1-ipv6\] prefix-priority high prefix-list standtest]{lang="EN-US"}
-:::
-
-::: {#116059579 .myid}
-[]{#_Toc404789090}[]{#struct_0_15908_44860_x1283478609}[]{#_Toc357603601}
+Sysname-isis-1-ipv6 prefix-priority high prefix-list standtest
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- set-overload**
 
 ------------------------------------------------------------------------
 
-[**[set-overload]{lang="EN-US"}**]{#struct_0_15908_44860_2146468526}[命令用来为当前路由器配置]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[拓扑的过载标志位。]{style="font-family:宋体"}
+**[set-overload**]命令用来为当前路由器配置IPv6拓扑的过载标志位。
 
-[**[undo set-overload]{lang="EN-US"}**]{#struct_0_15908_44860_x1355883341}[命令用来清除]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[拓扑的过载标志位。]{style="font-family:宋体"}
+**[undo set-overload**]命令用来清除IPv6拓扑的过载标志位。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1731088452}
+【命令】
 
-[**[set-overload]{lang="EN-US"}**[ \[ **on-startup** \[ \[ **start-from-nbr** *system-id* \[ *timeout1* \[ *nbr-timeout* \] \] \] \| *timeout2* \| **wait-for-bgp4+** \[ *timeout3* \] \] \] \[ **allow** { **external** \| **interlevel** } \* \]]{lang="EN-US"}]{#struct_0_15908_44860_2146402990}
+**[set-overload** [ **on-startup** [ [ **start-from-nbr** *system-id* [ *timeout1* [ *nbr-timeout*  ] ] \| *timeout2* \| **wait-for-bgp4+**  *timeout3*  ]   **allow** { **external** \| **interlevel** } \* ]]]
 
-[**[undo set-overload]{lang="EN-US"}**]{#struct_0_15908_44860_x870035812}
+**[undo set-overload**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_15908_44860_2146075310}
+【缺省情况】
 
-[[没有配置过载标志位。]{style="font-family:宋体"}]{#struct_0_15908_44860_x1697916539}
+没有配置过载标志位。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_1868876115}
+【视图】
 
-[[IS-IS IPv6]{lang="EN-US"}]{#struct_0_15908_44860_2146009774}[单播地址族视图]{style="font-family:宋体"}
+IS-IS IPv6单播地址族视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_1759531215}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_2146206382}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_x1284080775}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_2146140846}
+【参数】
 
-[**[on-startup]{lang="EN-US"}**]{#struct_0_15908_44860_x2054932752}[：系统启动时将过载标志位置位。]{style="font-family:宋体"}
+**[on-startup**]：系统启动时将过载标志位置位。
 
-[**[start-from-nbr]{lang="EN-US"}**[ *system-id* \[ *timeout1* \[ *nbr-timeout* \] \]]{lang="EN-US"}]{#struct_0_15908_44860_2146861742}[：从系统启动时开始计算，如果在]{style="font-family:宋体"}*[nbr-timeout]{lang="EN-US"}*[参数指定的时长内仍未与指定邻居建立邻接关系完毕，过载标志位将结束置位状态；如果在]{style="font-family:宋体"}*[nbr-timeout]{lang="EN-US"}*[参数指定的时长内与指定邻居建立邻接关系完毕，过载标志位将继续保持置位状态，]{style="font-family:宋体"}[且从与指定邻居建立邻接关系时重新计时，在]{style="font-family:宋体"}*[timeout1]{lang="EN-US"}*[参数配置的时长内保持置位状态。]{style="font-family:宋体"}
+**[start-from-nbr** *system-id* [ *timeout1* [ *nbr-timeout*  ]]]：从系统启动时开始计算，如果在*nbr-timeout*参数指定的时长内仍未与指定邻居建立邻接关系完毕，过载标志位将结束置位状态；如果在*nbr-timeout*参数指定的时长内与指定邻居建立邻接关系完毕，过载标志位将继续保持置位状态，且从与指定邻居建立邻接关系时重新计时，在*timeout1*参数配置的时长内保持置位状态。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[system-id]{lang="EN-US"}*]{#struct_0_15908_44860_1398844140}[：指定邻居的]{lang="EN-US" style="font-family:宋体"}[System ID]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·*system-id*：指定邻居的System ID。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[timeout1]{lang="EN-US"}*]{#struct_0_15908_44860_444606997}[：]{style="font-family:宋体"}[取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[86400]{lang="EN-US"}[秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒（]{style="font-family:宋体"}[10]{lang="EN-US"}[分钟）。]{style="font-family:宋体"}
+·*timeout1*：取值范围为5～86400秒，缺省值为600秒（10分钟）。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[nbr-timeout]{lang="EN-US"}*]{#struct_0_15908_44860_2146796206}[：取值范围为]{lang="EN-US" style="font-family:宋体"}[5]{lang="EN-US"}[～]{lang="EN-US" style="font-family:宋体"}[86400]{lang="EN-US"}[秒，缺省值为]{lang="EN-US" style="font-family:宋体"}[1200]{lang="EN-US"}[秒（]{lang="EN-US" style="font-family:宋体"}[20]{lang="EN-US"}[分钟）。]{lang="EN-US" style="font-family:宋体"}
+·*nbr-timeout*：取值范围为5～86400秒，缺省值为1200秒（20分钟）。
 
-[*[timeout2]{lang="EN-US"}*]{#struct_0_15908_44860_649100180}[：]{style="font-family:宋体"}[从系统启动时开始计算，过载标志位保持置位状态的时间长度，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[86400]{lang="EN-US"}[秒。缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒（]{style="font-family:宋体"}[10]{lang="EN-US"}[分钟）。]{style="font-family:宋体"}
+*[timeout2*]：从系统启动时开始计算，过载标志位保持置位状态的时间长度，取值范围为5～86400秒。缺省值为600秒（10分钟）。
 
-[**[wait-for-bgp4+]{lang="EN-US"}**[ \[ *timeout3* \]]{lang="EN-US"}]{#struct_0_15908_44860_x2048546215}[：]{style="font-family:宋体"}[从系统启动时开始计算，如果在]{style="font-family:宋体"}*[timeout3]{lang="EN-US"}*[参数指定的时长内]{style="font-family:宋体"}[IPv6 BGP]{lang="EN-US"}[仍未收敛，过载标志位将结束置位状态。]{style="font-family:宋体"}*[timeout3]{lang="EN-US"}*[取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[86400]{lang="EN-US"}[秒，缺省值为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒]{style="font-family:宋体"}[（]{style="font-family:宋体"}[10]{lang="EN-US"}[分钟）]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[wait-for-bgp4+** [ *timeout3* ]]：从系统启动时开始计算，如果在*timeout3*参数指定的时长内IPv6 BGP仍未收敛，过载标志位将结束置位状态。*timeout3*取值范围为5～86400秒，缺省值为600秒（10分钟）。
 
-[**[allow]{lang="EN-US"}**]{#struct_0_15908_44860_2146337455}[：允许发布地址前缀。缺省情况下，当系统进入过载状态时不允许发布地址前缀。]{style="font-family:宋体"}
+**[allow**]：允许发布地址前缀。缺省情况下，当系统进入过载状态时不允许发布地址前缀。
 
-[**[external]{lang="EN-US"}**]{#struct_0_15908_44860_x513216602}[：当配置]{style="font-family:宋体"}**[allow]{lang="EN-US"}**[时，允许发布从其它协议学来的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀。]{style="font-family:宋体"}
+**[external**]：当配置**allow**时，允许发布从其它协议学来的IP地址前缀。
 
-[**[interlevel]{lang="EN-US"}**]{#struct_0_15908_44860_2146271919}[：当配置]{style="font-family:宋体"}**[allow]{lang="EN-US"}**[时，允许发布从不同层次学来的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀。]{style="font-family:宋体"}
+**[interlevel**]：当配置**allow**时，允许发布从不同层次学来的IP地址前缀。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1283544145}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果没有指定]{lang="EN-US" style="font-family:宋体"}**[on-startup]{lang="EN-US"}**]{#struct_0_15908_44860_x1423840562}[参数，]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[将立即把过载标志位置位且一直保持置位状态直到用户通过]{lang="EN-US" style="font-family:宋体"}**[undo]{lang="EN-US"}**[ **set-overload**]{lang="EN-US"}[清除过载标志位。]{lang="EN-US" style="font-family:宋体"}
+·如果没有指定**on-startup**参数，IS-IS将立即把过载标志位置位且一直保持置位状态直到用户通过**undo** **set-overload**清除过载标志位。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果只指定]{style="font-family:宋体"}]{#struct_0_15908_44860_2146468527}**[on-startup]{lang="EN-US"}**[参数，过载标志位将在系统启动时开始置位，并且在]{style="font-family:宋体"}*[timeout2]{lang="EN-US"}*[参数]{style="font-family:宋体"}[指定的时长内保持置位状态。]{style="font-family:宋体"}
+·如果只指定**on-startup**参数，过载标志位将在系统启动时开始置位，并且在*timeout2*参数指定的时长内保持置位状态。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1355817805}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_2146402991}[在当前路由器上配置过载标志位。]{style="font-family:宋体"}
+\# 在当前路由器上配置过载标志位。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_x869970276}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv6]{lang="EN-US"}
+Sysname-isis-1 address-family ipv6
 
-[\[Sysname-isis-1-ipv6\] ]{lang="EN-US"}[set-overload]{lang="EN-US"}
-:::
-
-::: {#-1230299672 .myid}
-[]{#_Toc86723962}[]{#_Toc85873476}[]{#_Toc77992853}[]{#_Toc65740925}[]{#_Toc61239741}[]{#_Toc245204071}[]{#_Toc237920074}[]{#_Toc60036216}[]{#_Toc53707160}[]{#_Toc53487855}[]{#_Toc404789091}[]{#struct_0_15908_44860_x1842644707}[]{#_Toc310607882}[]{#_Toc290886948}[]{#_Toc245204070}[]{#_Toc86723953}[]{#_Toc85873467}[]{#_Toc77992852}[]{#_Toc65740924}[]{#_Toc61239765}[]{#_Toc50980001}[]{#_Toc50984564}[]{#_Toc50988873}[]{#_Toc51059013}[]{#_Toc51059074}[]{#_Toc51068451}[]{#_Toc51069325}[]{#_Toc51073230}[]{#_Toc51074588}[]{#_Toc51074658}[]{#_Toc51076177}[]{#_Toc51077624}[]{#_Toc51139297}[]{#_Toc51146419}[]{#_Toc51147135}[]{#_Toc51148149}[]{#_Toc51148961}[]{#_Toc51149521}[]{#_Toc51109198}[]{#_Toc51356139}[]{#_Toc51870973}[]{#_Toc53375380}[]{#_Toc53384916}[]{#_Toc53465718}[]{#_Toc53485127}[]{#_Toc53485185}[]{#_Toc367622409}[]{#_Toc367622410}[]{#_Toc367622411}[]{#_Toc367622412}[]{#_Toc367622413}[]{#_Toc367622414}[]{#_Toc367622415}[]{#_Toc367622416}[]{#_Toc367622417}[]{#_Toc367622418}[]{#_Toc367622419}[]{#_Toc367622420}[]{#_Toc367622421}[]{#_Toc367622422}[]{#_Toc367622423}[]{#_Toc367622424}[]{#_Toc367622425}[]{#_Toc367622426}[]{#_Toc367622427}[]{#_Toc367622428}[]{#_Toc367622429}[]{#_Toc367622430}[]{#_Toc367622431}[]{#_Toc367622432}[]{#_Toc367622433}[]{#_Toc367622434}[]{#_Toc367622435}
+Sysname-isis-1-ipv6 set-overload
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- summary**
 
 ------------------------------------------------------------------------
 
-[**[summary]{lang="EN-US"}**]{#struct_0_15908_44860_1007415333}[命令用来配置]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[聚合路由。]{style="font-family:宋体"}
+**[summary**]命令用来配置IPv6 IS-IS聚合路由。
 
-[**[undo summary]{lang="EN-US"}**]{#struct_0_15908_44860_x921408914}[命令用来删除该聚合路由。]{style="font-family:宋体"}
+**[undo summary**]命令用来删除该聚合路由。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_1025353263}
+【命令】
 
-[**[summary ]{lang="EN-US"}***[ipv6-prefix prefix-length]{lang="EN-US"}*[ \[ **avoid-feedback** \| **generate_null0_route** \| \[ **level-1** \| **level-1-2** \| **level-2** \] \| **tag** ]{lang="EN-US"}*[tag ]{lang="EN-US"}*[\] \*]{lang="EN-US"}]{#struct_0_15908_44860_460362194}
+**[summary ***ipv6-prefix prefix-length*[ [ **avoid-feedback** \| **generate_null0_route** \| [ **level-1** \| **level-1-2** \| **level-2** ] \| **tag** ]*tag * \*]]
 
-[**[undo summary ]{lang="EN-US"}***[ipv6-prefix prefix-length ]{lang="EN-US"}*[\[ **level-1** \| **level-1-2** \| **level-2** \]]{lang="EN-US"}]{#struct_0_15908_44860_x1108404969}
+**[undo summary ***ipv6-prefix prefix-length *[[ **level-1** \| **level-1-2** \| **level-2** ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_15908_44860_x983252692}
+【缺省情况】
 
-[[没有配置]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_x1733600503}[聚合路由。]{style="font-family:宋体"}
+没有配置IPv6 IS-IS聚合路由。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_1756311749}
+【视图】
 
-[[IS-IS IPv6]{lang="EN-US"}]{#struct_0_15908_44860_1110093980}[单播地址族视图]{style="font-family:宋体"}
+IS-IS IPv6单播地址族视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_1737664332}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_654525035}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_2056201745}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_1754178479}
+【参数】
 
-[*[ipv6-prefix]{lang="EN-US"}*]{#struct_0_15908_44860_x1107421929}[：]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[聚合路由前缀。]{style="font-family:宋体"}
+*[ipv6-prefix*]：IPv6 IS-IS聚合路由前缀。
 
-[*[prefix-length]{lang="EN-US"}*]{#struct_0_15908_44860_x1370115881}[：]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[聚合路由前缀长度，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[128]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[prefix-length*]：IPv6 IS-IS聚合路由前缀长度，取值范围为0～128。
 
-[**[avoid-feedback]{lang="EN-US"}**]{#struct_0_15908_44860_337558771}[：避免通过路由计算学习到聚合路由。]{style="font-family:宋体"}
+**[avoid-feedback**]：避免通过路由计算学习到聚合路由。
 
-[**[generate_null0_route]{lang="EN-US"}**]{#struct_0_15908_44860_426013682}[：为防止路由循环而生成]{style="font-family:宋体"}[NULL 0]{lang="EN-US"}[路由。]{style="font-family:宋体"}
+**[generate_null0_route**]：为防止路由循环而生成NULL 0路由。
 
-[**[level-1]{lang="EN-US"}**]{#struct_0_15908_44860_427227660}[：只对引入到]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[区域的路由进行聚合。]{style="font-family:宋体"}
+**[level-1**]：只对引入到Level-1区域的路由进行聚合。
 
-[**[level-1-2]{lang="EN-US"}**]{#struct_0_15908_44860_x1157637144}[：对向]{style="font-family:宋体"}[Level-1]{lang="EN-US"}[区域和]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[区域引入的路由都进行聚合。]{style="font-family:宋体"}
+**[level-1-2**]：对向Level-1区域和Level-2区域引入的路由都进行聚合。
 
-[**[level-2]{lang="EN-US"}**]{#struct_0_15908_44860_x995731376}[：只对引入到]{style="font-family:宋体"}[Level-2]{lang="EN-US"}[区域的路由进行聚合。]{style="font-family:宋体"}
+**[level-2**]：只对引入到Level-2区域的路由进行聚合。
 
-[*[tag]{lang="EN-US"}*]{#struct_0_15908_44860_239251884}[：管理标签号，取值范围]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[tag*]：管理标签号，取值范围1～4294967295。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_15908_44860_1337108347}
+【使用指导】
 
-[[如果命令中没有指定]{style="font-family:宋体"}[Level]{lang="EN-US"}]{#struct_0_15908_44860_x1107487465}[，缺省为]{style="font-family:宋体"}**[level-2]{lang="EN-US"}**[。]{style="font-family:宋体"}
+如果命令中没有指定Level，缺省为**level-2**。
 
-[[可以将有相同下一跳的路由聚合为一条路由，这样一方面可以减小路由表规模，另一方面可以减少本路由器生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_15908_44860_x365524652}[报文和]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[的规模。其中，被聚合的路由可以是]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议发现的路由，也可以是被引入的路由。另外，聚合后路由的开销取所有被聚合路由中最小的开销值。]{style="font-family:宋体"}
+可以将有相同下一跳的路由聚合为一条路由，这样一方面可以减小路由表规模，另一方面可以减少本路由器生成的LSP报文和LSDB的规模。其中，被聚合的路由可以是IS-IS协议发现的路由，也可以是被引入的路由。另外，聚合后路由的开销取所有被聚合路由中最小的开销值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_x1252199530}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_x724632464}[配置一条]{style="font-family:宋体"}[2002::/32]{lang="EN-US"}[的聚合路由。]{style="font-family:宋体"}
+\# 配置一条2002::/32的聚合路由。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_986835665}
+\<Sysname\> system-view
 
-[\[Sysname\] isis]{lang="EN-US"}
+Sysname isis
 
-[\[Sysname-isis-1\] address-family ipv6]{lang="EN-US"}
+Sysname-isis-1 address-family ipv6
 
-[\[Sysname-isis-1-ipv6\]]{lang="EN-US"}[ summary 2002:: 32]{lang="EN-US"}
-:::
-
-::: {#1171776781 .myid}
-[]{#_Toc404789092}[]{#struct_0_15908_44860_x582808041}[]{#_Toc357603603}[]{#_Toc367622437}[]{#_Toc367622438}[]{#_Toc367622439}[]{#_Toc367622440}[]{#_Toc367622441}[]{#_Toc367622442}[]{#_Toc367622443}[]{#_Toc367622444}[]{#_Toc367622445}[]{#_Toc367622446}[]{#_Toc367622447}[]{#_Toc367622448}[]{#_Toc367622449}[]{#_Toc367622450}[]{#_Toc367622451}[]{#_Toc367622452}[]{#_Toc367622453}[]{#_Toc367622454}[]{#_Toc367622455}[]{#_Toc367622456}[]{#_Toc367622457}[]{#_Toc367622458}[]{#_Toc367622459}[]{#_Toc367622460}[]{#_Toc367622461}[]{#_Toc367622462}[]{#_Toc367622463}[]{#_Toc367622464}[]{#_Toc367622465}[]{#_Toc367622466}[]{#_Toc367622467}[]{#_Toc367622468}[]{#_Toc367622469}[]{#_Toc367622470}[]{#_Toc367622471}[]{#_Toc367622472}[]{#_Toc367622473}[]{#_Toc367622474}[]{#_Toc367622475}[]{#_Toc367622476}[]{#_Toc367622477}[]{#_Toc367622478}[]{#_Toc367622479}[]{#_Toc367622480}[]{#_Toc367622481}[]{#_Toc367622482}[]{#_Toc367622483}[]{#_Toc367622484}[]{#_Toc367622485}[]{#_Toc367622486}[]{#_Toc367622487}[]{#_Toc367622488}[]{#_Hlt9934657}[]{#_Toc50980019}[]{#_Toc50984582}[]{#_Toc50988891}[]{#_Toc51059031}[]{#_Toc51059092}[]{#_Toc51068469}[]{#_Toc51069343}[]{#_Toc51073248}[]{#_Toc51074606}[]{#_Toc51074676}[]{#_Toc51076195}[]{#_Toc51077642}[]{#_Toc51139315}[]{#_Toc51146437}[]{#_Toc51147153}[]{#_Toc51148167}[]{#_Toc51148979}[]{#_Toc51149539}[]{#_Toc51109216}[]{#_Toc51356157}[]{#_Toc51870991}[]{#_Hlt12072832}[]{#_Toc58396797}[]{#_Toc58396798}[]{#_Toc58396799}[]{#_Toc58396800}[]{#_Toc58396801}[]{#_Toc58396802}[]{#_Toc58396803}[]{#_Toc58396804}[]{#_Toc58396805}[]{#_Toc58396806}[]{#_Toc58396807}[]{#_Toc58396808}[]{#_Toc58396809}[]{#_Toc58396810}[]{#_Toc58396811}[]{#_Toc58396812}[]{#_Toc367622489}[]{#_Toc367622490}[]{#_Toc367622491}[]{#_Toc367622492}[]{#_Toc367622493}[]{#_Toc367622494}[]{#_Toc367622495}[]{#_Toc367622496}[]{#_Toc367622497}[]{#_Toc367622498}[]{#_Toc367622499}
+Sysname-isis-1-ipv6 summary 2002:: 32
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- timer spf**
 
 ------------------------------------------------------------------------
 
-[**[timer spf]{lang="EN-US"}**]{#struct_0_15908_44860_1425121425}[命令用来配置]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[ ]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}[路由计算的时间间隔。]{style="font-family:宋体"}
+**[timer spf**]命令用来配置IPv6IS-IS路由计算的时间间隔。
 
-[**[undo timer spf]{lang="EN-US"}**]{#struct_0_15908_44860_x582873577}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo timer spf**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_15908_44860_633065681}
+【命令】
 
-[**[timer spf ]{lang="EN-US"}***[maximum-interval]{lang="EN-US"}***[ ]{lang="EN-US"}**[\[ *minimum-interval* \[ *incremental-interval* \] \]]{lang="EN-US"}]{#struct_0_15908_44860_1729826107}
+**[timer spf ***maximum-interval***** *minimum-interval*  *incremental-interval*  ]
 
-[**[undo timer spf]{lang="EN-US"}**]{#struct_0_15908_44860_x582676969}
+**[undo timer spf**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_15908_44860_x535548317}
+【缺省情况】
 
-[[IPv6 IS-IS]{lang="EN-US"}]{#struct_0_15908_44860_x582742505}[路由计算的最大时间间隔为]{style="font-family:宋体"}[5]{lang="EN-US"}[秒，最小时间间隔为]{style="font-family:宋体"}[50]{lang="EN-US"}[毫秒，]{style="font-family:宋体"}[时间间隔惩罚增量为]{style="font-family:宋体"}[200]{lang="EN-US"}[毫秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+IPv6 IS-IS路由计算的最大时间间隔为5秒，最小时间间隔为50毫秒，时间间隔惩罚增量为200毫秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_15908_44860_x2093524010}
+【视图】
 
-[[IS-IS IPv6]{lang="EN-US"}]{#struct_0_15908_44860_x582021609}[单播地址族视图]{style="font-family:宋体"}
+IS-IS IPv6单播地址族视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_15908_44860_x163268448}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_15908_44860_x582087145}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_15908_44860_x602103342}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_15908_44860_x582545896}
+【参数】
 
-[*[maximum-interval]{lang="EN-US"}*]{#struct_0_15908_44860_1020234712}[：]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[路由计算的最大时间间隔，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[120]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[maximum-interval*]：IPv6 IS-IS路由计算的最大时间间隔，取值范围为1～120，单位为秒。
 
-[*[minimum-interval]{lang="EN-US"}*]{#struct_0_15908_44860_x582611432}[：]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[路由计算的最小时间间隔，取值范围为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[60000]{lang="EN-US"}[，单位为毫秒。]{style="font-family:宋体"}
+*[minimum-interval*]：IPv6 IS-IS路由计算的最小时间间隔，取值范围为10～60000，单位为毫秒。
 
-[*[incremental-interval]{lang="EN-US"}*]{#struct_0_15908_44860_x555697723}[：]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[路由计算的时间间隔惩罚增量，取值范围为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[60000]{lang="EN-US"}[，单位为毫秒。]{style="font-family:宋体"}
+*[incremental-interval*]：IPv6 IS-IS路由计算的时间间隔惩罚增量，取值范围为10～60000，单位为毫秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_15908_44860_x582414824}
+【使用指导】
 
-[[根据本地维护的]{style="font-family:宋体"}]{#struct_0_15908_44860_x1724049577}[LSDB]{lang="EN-US"}[，运行]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[协议的路由器通过]{style="font-family:宋体"}[SPF]{lang="EN-US"}[算法计算出以自己为根的最短路径树，并根据这一最短路径树决定到目的网络的下一跳。通过调节]{style="font-family:宋体"}[SPF]{lang="EN-US"}[的计算间隔，可以抑制网络频繁变化可能导致的占用过多带宽资源和路由器资源。]{style="font-family:宋体"}
+根据本地维护的LSDB，运行IS-IS协议的路由器通过SPF算法计算出以自己为根的最短路径树，并根据这一最短路径树决定到目的网络的下一跳。通过调节SPF的计算间隔，可以抑制网络频繁变化可能导致的占用过多带宽资源和路由器资源。
 
-[[本命令在网络变化不频繁的情况下将连续路由计算的时间间隔缩小到]{style="font-family:宋体"}]{#struct_0_15908_44860_41409948}*[minimum-interval]{lang="EN-US"}*[，而在网络变化频繁的情况下可以进行相应惩罚，将等待时间按照配置的惩罚增量延长，最大不超过]{style="font-family:宋体"}*[maximum-interval]{lang="EN-US"}*[。]{style="font-family:宋体"}
+本命令在网络变化不频繁的情况下将连续路由计算的时间间隔缩小到*minimum-interval*，而在网络变化频繁的情况下可以进行相应惩罚，将等待时间按照配置的惩罚增量延长，最大不超过*maximum-interval*。
 
-[[需要注意的是，]{style="font-family:宋体"}*[minimum-interval]{lang="EN-US"}*]{#struct_0_15908_44860_x582480360}[和]{style="font-family:宋体"}*[incremental-interval]{lang="EN-US"}*[配置值不允许大于]{style="font-family:宋体"}*[maximum-interval]{lang="EN-US"}*[配置值。]{style="font-family:宋体"}
+需要注意的是，*minimum-interval*和*incremental-interval*配置值不允许大于*maximum-interval*配置值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_15908_44860_183715055}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_15908_44860_x582808040}[配置路由器]{style="font-family:宋体"}[Sysname]{lang="EN-US"}[的]{style="font-family:宋体"}[IPv6 IS-IS]{lang="EN-US"}[路由计算的最大时间间隔为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒，最小时间间隔为]{style="font-family:宋体"}[100]{lang="EN-US"}[毫秒，惩罚增量为]{style="font-family:宋体"}[300]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+\# 配置路由器Sysname的IPv6 IS-IS路由计算的最大时间间隔为10秒，最小时间间隔为100毫秒，惩罚增量为300毫秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_15908_44860_1425055889}
+\<Sysname\> system-view
 
-[\[Sysname\] isis 1]{lang="EN-US"}
+Sysname isis 1
 
-[\[Sysname-isis-1\] address-family ipv6]{lang="EN-US"}
+Sysname-isis-1 address-family ipv6
 
-[\[Sysname-isis-1-ipv6\] ]{lang="EN-US"}[timer spf 10 100 300]{lang="EN-US"}
+Sysname-isis-1-ipv6 timer spf 10 100 300
 
-[ ]{lang="EN-US"}
-:::

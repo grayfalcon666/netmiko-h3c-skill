@@ -1,1732 +1,1555 @@
-::: {#1882814787 .myid}
-[]{#_Toc404792843}[]{#struct_0_x2060_63618_135631139}[]{#_Toc257729101}[]{#_Toc131563064}
 
 **端口安全 \-- 端口安全配置命令 \-- display port-security**
 
 ------------------------------------------------------------------------
 
-[**[display port-security]{lang="EN-US"}**]{#struct_0_x2060_63618_631484562}[命令用来显示端口安全的配置信息、运行情况和统计信息。]{style="font-family:宋体"}
+**[display port-security**]命令用来显示端口安全的配置信息、运行情况和统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x197281982}
+【命令】
 
-[**[display port-security]{lang="EN-US"}**[ \[ **interface** *interface-type interface-number* \] ]{lang="EN-US"}]{#struct_0_x2060_63618_1134670048}
+**[display port-security** [ **interface** *interface-type interface-number*  ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2060_63618_791811285}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x2060_63618_x1481833913}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x127911925}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2060_63618_x1831766442}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x2060_63618_909132660}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2060_63618_574775310}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x2060_63618_x947274019}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x196823230}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_x2060_63618_401262809}[：显示指定端口的端口安全相关信息，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[表示端口类型和端口编号]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：显示指定端口的端口安全相关信息，*interface-type interface-number*表示端口类型和端口编号
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1375049145}
+【使用指导】
 
-[[如果不指定]{style="font-family:宋体"}**[interface]{lang="EN-US"}**]{#struct_0_x2060_63618_x241755240}[参数，则显示所有端口的端口安全信息。]{style="font-family:宋体"}
+如果不指定**interface**参数，则显示所有端口的端口安全信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2060_63618_306099100}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_1318174398}[显示所有端口的端口安全相关状态。]{style="font-family:宋体"}
+\# 显示所有端口的端口安全相关状态。
 
-[[\<Sysname\> display port-security]{lang="EN-US"}]{#struct_0_x2060_63618_x196888766}
+\<Sysname\> display port-security
 
-[Port security parameters:]{lang="EN-US"}
+Port security parameters:
 
-[   Port security           : Enabled]{lang="EN-US"}
+   Port security           : Enabled
 
-[   AutoLearn aging time   : 30 min]{lang="EN-US"}
+   AutoLearn aging time   : 30 min
 
-[   Disableport timeout    : 30 s]{lang="EN-US"}
+   Disableport timeout    : 30 s
 
-[   MAC move                 : Denied]{lang="EN-US"}
+   MAC move                 : Denied
 
-[   Authorization fail     : Offline]{lang="EN-US"}
+   Authorization fail     : Offline
 
-[   NAS-ID profile          : globalnasidprofile]{lang="EN-US"}
+   NAS-ID profile          : globalnasidprofile
 
-[   OUI value list          :]{lang="EN-US"}
+   OUI value list          :
 
-[       Index :  1       Value : 123401]{lang="EN-US"}
+       Index :  1       Value : 123401
 
-[ ]{lang="EN-US"}
+ GigabitEthernet1/0/1 is link-up
 
-[ GigabitEthernet1/0/1 is link-up]{lang="EN-US"}
+   Port mode                      : userLoginWithOUI
 
-[   Port mode                      : userLoginWithOUI]{lang="EN-US"}
+   NeedToKnow mode               : Disabled
 
-[   NeedToKnow mode               : Disabled]{lang="EN-US"}
+   Intrusion protection mode   : NoAction
 
-[   Intrusion protection mode   : NoAction]{lang="EN-US"}
+   Security MAC address attribute
 
-[   Security MAC address attribute ]{lang="EN-US"}
+        Learning mode             ： Dynamic
 
-[        Learning mode             ]{lang="EN-US"}[：]{style="font-family:宋体"}[ Dynamic]{lang="EN-US"}
+        Aging type                 : Periodical
 
-[        Aging type                 : ]{lang="EN-US"}[Periodical]{lang="EN-US"}
+   Max secure MAC addresses      : 64
 
-[   Max secure MAC addresses      : 64]{lang="EN-US"}
+   Current secure MAC addresses   : 1
 
-[   Current secure MAC addresses   : 1]{lang="EN-US"}
+   Authorization                   ： Permitted
 
-[   Authorization                   ]{lang="EN-US"}[：]{style="font-family:宋体"}[ Permitted]{lang="EN-US"}
+NAS-ID profile                : portnasidprofile
 
-[NAS-ID profile                : portnasidprofile]{lang="EN-US"}
+表1-1 display port-security命令显示信息描述表
 
-[[表1-1 ]{lang="EN-US"}[display port-security]{lang="EN-US"}]{#struct_0_x2060_63618_x1571388977}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_632169390}[[字段]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1970428098}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x2060_63618_488498367}
+Port security
 
-[[Port security]{lang="EN-US"}]{#struct_0_x2060_63618_x196954302}
+端口安全的开启状态
 
-[[端口安全的开启状态]{style="font-family:宋体"}]{#struct_0_x2060_63618_348059894}
+AutoLearn aging time
 
-[[AutoLearn aging time]{lang="EN-US"}]{#struct_0_x2060_63618_x2136880519}
+Sticky MAC地址的老化时间，单位为分钟
 
-[[Sticky MAC]{lang="EN-US"}]{#struct_0_x2060_63618_1342355214}[地址的老化时间，单位为分钟]{style="font-family:宋体"}
+Disableport timeout
 
-[[Disableport timeout]{lang="EN-US"}]{#struct_0_x2060_63618_x406657495}
+收到非法报文的端口暂时被关闭的时间，单位为秒
 
-[[收到非法报文的端口暂时被关闭的时间，单位为秒]{style="font-family:宋体"}]{#struct_0_x2060_63618_340217724}
+MAC move
 
-[[MAC move]{lang="EN-US"}]{#struct_0_x2060_63618_x197019838}
+MAC迁移功能的开启状态
 
-[[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_x1167324209}[迁移功能的开启状态]{style="font-family:宋体"}
+·如果MAC迁移功能处于开启状态，则显示Permitted
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_541473845}[迁移功能处于开启状态，则显示]{lang="EN-US" style="font-family:宋体"}[P]{lang="EN-US"}[ermitted]{lang="EN-US"}
+·如果MAC迁移功能处于关闭状态，则显示Denied
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果]{style="font-family:宋体"}]{#struct_0_x2060_63618_2124192157}[MAC]{lang="EN-US"}[迁移功能处于]{style="font-family:宋体"}[关闭状态，则显示]{style="font-family:宋体"}[Denied]{lang="EN-US"}
+Authorization fail
 
-[[Authorization fail]{lang="EN-US"}]{#struct_0_x2060_63618_x629920196}
+授权失败后用户的状态，包括下线（Offline）和保持在线（Online）两种类型
 
-[[授权失败后用户的状态，包括下线（]{style="font-family:宋体"}[Offline]{lang="EN-US"}]{#struct_0_x2060_63618_x1405287997}[）和保持在线（]{style="font-family:宋体"}[Online]{lang="EN-US"}[）两种类型]{style="font-family:宋体"}
+NAS-ID profile
 
-[[NAS-ID profile]{lang="EN-US"}]{#struct_0_x2060_63618_x1643693686}
+全局引用的 NAS-ID Profile
 
-[[全局引用的]{style="font-family:宋体"}[ NAS-ID Profile]{lang="EN-US"}]{#struct_0_x2060_63618_736481287}
+OUI value list
 
-[[OUI value list]{lang="EN-US"}]{#struct_0_x2060_63618_x1318842321}
+允许通过认证的用户的24位OUI值
 
-[[允许通过认证的用户的]{style="font-family:宋体"}[24]{lang="EN-US"}]{#struct_0_x2060_63618_2084047640}[位]{style="font-family:宋体"}[OUI]{lang="EN-US"}[值]{style="font-family:宋体"}
+Index
 
-[[Index]{lang="EN-US"}]{#struct_0_x2060_63618_x196561086}
+OUI的索引
 
-[[OUI]{lang="EN-US"}]{#struct_0_x2060_63618_1173467507}[的索引]{style="font-family:宋体"}
+Value
 
-[[Value]{lang="EN-US"}]{#struct_0_x2060_63618_x1892860511}
+OUI值
 
-[[OUI]{lang="EN-US"}]{#struct_0_x2060_63618_x1639991313}[值]{style="font-family:宋体"}
+Port mode
 
-[[Port mode]{lang="EN-US"}]{#struct_0_x2060_63618_x64783478}
+端口安全模式，包括以下几种：
 
-[[端口安全模式，包括以下几种：]{style="font-family:宋体"}]{#struct_0_x2060_63618_x1463926931}
+·noRestriction
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[noRestriction]{lang="EN-US"}]{#struct_0_x2060_63618_x475949849}
+·autoLearn
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[autoLearn]{lang="FR"}]{#struct_0_x2060_63618_x196626622}
+·macAddressWithRadius
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[macAddressWithRadius]{lang="EN-US"}]{#struct_0_x2060_63618_1925582747}
+·macAddressElseUserLoginSecure
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[macAddressElseUserLoginSecure]{lang="EN-US"}]{#struct_0_x2060_63618_766123119}
+·macAddressElseUserLoginSecureExt
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[macAddressElseUserLoginSecureExt]{lang="EN-US"}]{#struct_0_x2060_63618_x643060057}
+·secure
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[secure]{lang="EN-US"}]{#struct_0_x2060_63618_x197085373}
+·userLogin
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[userLogin]{lang="EN-US"}]{#struct_0_x2060_63618_1548649231}
+·userLoginSecure
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[userLoginSecure]{lang="EN-US"}]{#struct_0_x2060_63618_x1787405051}
+·userLoginSecureExt
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[userLoginSecureExt]{lang="EN-US"}]{#struct_0_x2060_63618_x356300786}
+·macAddressOrUserLoginSecure
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[macAddressOrUserLoginSecure]{lang="EN-US"}]{#struct_0_x2060_63618_x164236752}
+·macAddressOrUserLoginSecureExt
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[macAddressOrUserLoginSecureExt]{lang="EN-US"}]{#struct_0_x2060_63618_x197150909}
+·userLoginWithOUI
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[userLoginWithOUI]{lang="EN-US"}]{#struct_0_x2060_63618_x428530270}
+以上各模式的支持情况以及生效情况与设备的型号有关，请以设备的实际情况为准。关于各模式的具体涵义，请参考端口安全配置手册
 
-[[以上各模式的支持情况以及生效情况与设备的型号有关，请以设备的实际情况为准。关于各模式的具体涵义，请参考端口安全配置手册]{style="font-family:宋体"}]{#struct_0_x2060_63618_x100531908}
+NeedToKnow mode
 
-[[NeedToKnow mode]{lang="EN-US"}]{#struct_0_x2060_63618_x1514576418}
+Need To Know模式，包括以下四种：
 
-[[Need To Know]{lang="EN-US"}]{#struct_0_x2060_63618_x197216445}[模式，包括以下四种：]{style="font-family:宋体"}
+·NeedToKnowOnly：表示仅允许目的MAC地址为已通过认证的MAC地址的单播报文通过
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NeedToKnowOnly]{lang="EN-US"}]{#struct_0_x2060_63618_787287733}[：表示仅允许目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为已通过认证的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的单播报文通过]{style="font-family:宋体"}
+·NeedToKnowWithBroadcast：允许目的MAC地址为已通过认证的MAC地址的单播报文或广播地址的报文通过
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NeedToKnowWithBroadcast]{lang="EN-US"}]{#struct_0_x2060_63618_x147364979}[：允许目的]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为已通过认证的]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的单播报文或广播地址的报文通过]{lang="EN-US" style="font-family:宋体"}
+·NeedToKnowWithMulticast：允许目的MAC地址为已通过认证的MAC地址的单播报文，广播地址或组播地址的报文通过
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NeedToKnowWithMulticast]{lang="EN-US"}]{#struct_0_x2060_63618_1422737032}[：允许目的]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为已通过认证的]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的单播报文，广播地址或组播地址的报文通过]{lang="EN-US" style="font-family:宋体"}
+·Disabled：表示不进行NTK处理
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_x2060_63618_x197281981}[：表示不进行]{style="font-family:宋体"}[NTK]{lang="EN-US"}[处理]{style="font-family:宋体"}
+该模式的生效情况与设备的型号有关，请以设备的实际情况为准
 
-[[该模式的生效情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:宋体"}]{#struct_0_x2060_63618_1134866656}
+Intrusion protection mode
 
-[[Intrusion protection mode]{lang="EN-US"}]{#struct_0_x2060_63618_17574624}
+入侵检测特性模式，包括以下四种：
 
-[[入侵检测特性模式，包括以下四种：]{style="font-family:宋体"}]{#struct_0_x2060_63618_x568447974}
+·BlockMacAddress：表示将非法报文的源MAC地址加入阻塞MAC地址列表中
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[BlockMacAddress]{lang="EN-US"}]{#struct_0_x2060_63618_x196823229}[：表示将非法报文的源]{lang="EN-US" style="font-family:
-  宋体"}[MAC]{lang="EN-US"}[地址加入阻塞]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址列表中]{lang="EN-US" style="font-family:宋体"}
+·DisablePort：表示将收到非法报文的端口永久关闭
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DisablePort]{lang="EN-US"}]{#struct_0_x2060_63618_400804058}[：表示将收到非法报文的端口永久关闭]{lang="EN-US" style="font-family:宋体"}
+·DisablePortTemporarily：表示将收到非法报文的端口暂时关闭一段时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DisablePortTemporarily]{lang="EN-US"}]{#struct_0_x2060_63618_x1876816145}[：表示将收到非法报文的端口暂时关闭一段时间]{lang="EN-US" style="font-family:宋体"}
+·NoAction：表示不进行入侵检测处理
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NoAction]{lang="EN-US"}]{#struct_0_x2060_63618_x196888765}[：表示不进行入侵检测处理]{lang="EN-US" style="font-family:宋体"}
+Security MAC address attribute
 
-[[Security MAC address attribute]{lang="EN-US"}]{#struct_0_x2060_63618_x630378947}
+安全MAC地址的相关属性
 
-[[安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_x630313411}[地址的相关属性]{style="font-family:宋体"}
+Security MAC address learning mode
 
-[[Security MAC address learning mode]{lang="EN-US"}]{#struct_0_x2060_63618_2010207979}
+安全MAC地址的学习方式：
 
-[[安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_x630247875}[地址的学习方式：]{style="font-family:宋体"}
+·Dynamic：动态类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Dynamic]{lang="EN-US"}]{#struct_0_x2060_63618_x1069251558}[：动态类型]{lang="EN-US" style="font-family:宋体"}
+·Sticky：Sticky类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Sticky]{lang="EN-US"}]{#struct_0_x2060_63618_x630182339}[：]{lang="EN-US" style="font-family:宋体"}[Sticky]{lang="EN-US"}[类型]{lang="EN-US" style="font-family:宋体"}
+Security MAC address aging type
 
-[[Security MAC address aging type]{lang="EN-US"}]{#struct_0_x2060_63618_x1152070842}
+安全MAC地址的老化方式：
 
-[[安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_x1693175024}[地址的老化方式：]{style="font-family:宋体"}
+·Periodical：按照配置的老化时间间隔进行老化
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Periodical]{lang="EN-US"}]{#struct_0_x2060_63618_x630116803}[：按照配置的老化时间间隔进行老化]{lang="EN-US" style="font-family:宋体"}
+·Inactivity：无流量命中时老化
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Inactivity]{lang="EN-US"}]{#struct_0_x2060_63618_1648687321}[：无流量命中时老化]{lang="EN-US" style="font-family:宋体"}
+Max secure MAC addresses
 
-[[Max secure MAC addresses]{lang="EN-US"}]{#struct_0_x2060_63618_x1571192369}
+端口安全允许的最大安全MAC地址数目或上线用户数
 
-[[端口安全允许的最大安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_1306991969}[地址数目或上线用户数]{style="font-family:宋体"}
+Current secure MAC addresses
 
-[[Current secure MAC addresses]{lang="EN-US"}]{#struct_0_x2060_63618_x873556128}
+端口下保存的安全MAC地址数目
 
-[[端口下保存的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_x196954301}[地址数目]{style="font-family:宋体"}
+Authorization
 
-[[Authorization]{lang="EN-US"}]{#struct_0_x2060_63618_347863286}
+服务器的授权信息是否被忽略
 
-[[服务器的授权信息是否被忽略]{style="font-family:宋体"}]{#struct_0_x2060_63618_x580643325}
+·Permitted：表示当前端口应用RADIUS服务器或本地设备下发的授权信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[P]{lang="EN-US"}[ermitted]{lang="EN-US"}]{#struct_0_x2060_63618_x197019837}[：表示当前端口应用]{lang="EN-US" style="font-family:宋体"}[RADIUS]{lang="EN-US"}[服务器]{lang="EN-US" style="font-family:宋体"}[或本地设备]{style="font-family:宋体"}[下发的授权信息]{lang="EN-US" style="font-family:宋体"}
+·Ignored：表示当前端口不应用RADIUS服务器或本地设备下发的授权信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Ignored]{lang="EN-US"}]{#struct_0_x2060_63618_x1166472241}[：表示当前端口不应用]{lang="EN-US" style="font-family:宋体"}[RADIUS]{lang="EN-US"}[服务器]{lang="EN-US" style="font-family:宋体"}[或本地设备]{style="font-family:宋体"}[下发的授权信息]{lang="EN-US" style="font-family:宋体"}
+NAS-ID profile
 
-[[NAS-ID profile]{lang="EN-US"}]{#struct_0_x2060_63618_681905142}
-
-[[端口下引用的]{style="font-family:宋体"}[ NAS-ID Profile]{lang="EN-US"}]{#struct_0_x2060_63618_x57511161}
-
-[ ]{lang="EN-US"}
-
-::: {#-1282111703 .myid}
-[]{#_Toc404792844}[]{#struct_0_x2060_63618_x259670177}[]{#_Toc257729102}[]{#_Toc161544324}
+端口下引用的 NAS-ID Profile
 
 **端口安全 \-- 端口安全配置命令 \-- display port-security mac-address block**
 
 ------------------------------------------------------------------------
 
-[**[display port-security mac-address block]{lang="EN-US"}**]{#struct_0_x2060_63618_x108006708}[命令用来显示阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+**[display port-security mac-address block**]命令用来显示阻塞MAC地址信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1294870092}
+【命令】
 
-[**[display port-security mac-address block]{lang="EN-US"}**[ \[ **interface** *interface-type interface-number* \] \[ **vlan** *vlan-id* \] \[ **count** \]]{lang="EN-US"}]{#struct_0_x2060_63618_x191569192}
+**[display port-security mac-address block** [ **interface** *interface-type interface-number*   **vlan** *vlan-id*   **count** ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x196561085}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x2060_63618_1173401971}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1548304411}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2060_63618_931346869}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x2060_63618_x2097428712}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2060_63618_1125426569}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x2060_63618_1844070948}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x2060_63618_725173210}
+【参数】
 
-[**[interface]{lang="EN-US"}***[ interface-type interface-number]{lang="EN-US"}*]{#struct_0_x2060_63618_1631986064}[：显示指定端口的阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[表示端口类型和端口编号。]{style="font-family:
-宋体"}
+**[interface*** interface-type interface-number*]：显示指定端口的阻塞MAC地址信息，*interface-type interface-number*表示端口类型和端口编号。
 
-[**[vlan]{lang="EN-US"}***[ vlan-id]{lang="EN-US"}*]{#struct_0_x2060_63618_x196626621}[：显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vlan*** vlan-id*]：显示指定VLAN的阻塞MAC地址信息。其中，*vlan-id*表示VLAN编号，取值范围为1～4094。
 
-[**[count]{lang="EN-US"}**]{#struct_0_x2060_63618_1925517211}[：显示阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的个数。]{style="font-family:宋体"}
+**[count**]：显示阻塞MAC地址的个数。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1567113565}
+【使用指导】
 
-[[如果不指定任何参数，则显示所有阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_763731745}[地址的信息。]{style="font-family:宋体"}
+如果不指定任何参数，则显示所有阻塞MAC地址的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1272946021}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_x778702976}[显示所有阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。（集中式设备）]{style="font-family:宋体"}
+\# 显示所有阻塞MAC地址。（集中式设备）
 
-[[\<Sysname\> display port-security mac-address block]{lang="EN-US"}]{#struct_0_x2060_63618_1410657240}
+\<Sysname\> display port-security mac-address block
 
-[ MAC ADDR             Port                         VLAN ID]{lang="EN-US"}
+ MAC ADDR             Port                         VLAN ID
 
-[ 0002-0002-0002      GE1/0/1                     1]{lang="EN-US"}
+ 0002-0002-0002      GE1/0/1                     1
 
-[ 000d-88f8-0577      GE1/0/1                     1]{lang="EN-US"}
+ 000d-88f8-0577      GE1/0/1                     1
 
-[ ]{lang="EN-US"}
+ \-\--  2 mac address(es) found  \-\--
 
-[ \-\--  2 mac address(es) found  \-\--]{lang="EN-US"}
+\# 显示所有阻塞MAC地址。（分布式设备－独立运行模式/集中式IRF设备）
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_x1468761734}[显示所有阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。（分布式设备]{style="font-family:宋体"}[－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+\<Sysname\> display port-security mac-address block
 
-[[\<Sysname\> display port-security mac-address block]{lang="EN-US"}]{#struct_0_x2060_63618_1368998571}
+ MAC ADDR             Port                         VLAN ID
 
-[ MAC ADDR             Port                         VLAN ID]{lang="EN-US"}
+ \-\-- On slot 0, no MAC address found \-\--
 
-[ ]{lang="EN-US"}
+ MAC ADDR              Port                        VLAN ID
 
-[ \-\-- On slot 0, no MAC address found \-\--]{lang="EN-US"}
+ 000f-3d80-0d2d       GE1/0/1                    30
 
-[ MAC ADDR              Port                        VLAN ID]{lang="EN-US"}
+ \-\-- On slot 1, 1 MAC address(es) found \-\--
 
-[ 000f-3d80-0d2d       GE1/0/1                    30]{lang="EN-US"}
+ \-\-- 1 mac address(es) found \-\--
 
-[ ]{lang="EN-US"}
+\# 显示所有阻塞MAC地址。（分布式设备－IRF模式）
 
-[ \-\-- On slot 1, 1 MAC address(es) found \-\--]{lang="EN-US"}
+\<Sysname\> display port-security mac-address block
 
-[ ]{lang="EN-US"}
+ MAC ADDR             Port                         VLAN ID
 
-[ \-\-- 1 mac address(es) found \-\--]{lang="EN-US"}
+ \-\-- On slot 0 in chassis 1, no MAC address found \-\--
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_852602320}[显示所有阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。（分布式设备]{style="font-family:宋体"}[－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+ MAC ADDR              Port                        VLAN ID
 
-[[\<Sysname\> display port-security mac-address block]{lang="EN-US"}]{#struct_0_x2060_63618_x539448519}
+ 000f-3d80-0d2d       GE1/0/1                    30
 
-[ MAC ADDR             Port                         VLAN ID]{lang="EN-US"}
+ \-\-- On slot 1 in chassis 1, 1 MAC address(es) found \-\--
 
-[ ]{lang="EN-US"}
+ \-\--  1 mac address(es) found  \-\--
 
-[ \-\-- On slot 0 in chassis 1, no MAC address found \-\--]{lang="EN-US"}
+\# 显示所有阻塞MAC地址计数。（集中式设备）
 
-[ MAC ADDR              Port                        VLAN ID]{lang="EN-US"}
+\<Sysname\> display port-security mac-address block count
 
-[ 000f-3d80-0d2d       GE1/0/1                    30]{lang="EN-US"}
+\-\-- 2 mac address(es) found \-\--
 
-[ ]{lang="EN-US"}
+\# 显示所有阻塞MAC地址计数。（分布式设备－独立运行模式/集中式IRF设备）
 
-[ \-\-- On slot 1 in chassis 1, 1 MAC address(es) found \-\--]{lang="EN-US"}
+\<Sysname\> display port-security mac-address block count
 
-[ ]{lang="EN-US"}
+\-\-- On slot 0, no MAC address found \-\--
 
-[ \-\--  1 mac address(es) found  \-\--]{lang="EN-US"}
+\-\-- On slot 1, 1 MAC address(es) found \-\--
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_1368933035}[显示所有阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址计数。（集中式设备）]{style="font-family:宋体"}
+\-\-- 1 mac address(es) found \-\--
 
-[[\<Sysname\> display port-security mac-address block count]{lang="EN-US"}]{#struct_0_x2060_63618_x757813131}
+\# 显示所有阻塞MAC地址计数。（分布式设备－IRF模式）
 
-[ ]{lang="EN-US"}
+\<Sysname\> display port-security mac-address block count
 
-[\-\-- 2 mac address(es) found \-\--]{lang="EN-US"}
+ \-\-- On slot 0 in chassis 1, no MAC address found \-\--
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_x798583490}[显示所有阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址计数。（分布式设备]{style="font-family:宋体"}[－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+ \-\-- On slot 1 in chassis 1, 1 MAC address(es) found \-\--
 
-[[\<Sysname\> display port-security mac-address block count]{lang="EN-US"}]{#struct_0_x2060_63618_x562902981}
+ \-\--  1 mac address(es) found  \-\--
 
-[ ]{lang="EN-US"}
+\# 显示指定VLAN中的阻塞MAC地址。（集中式设备）
 
-[\-\-- On slot 0, no MAC address found \-\--]{lang="EN-US"}
+\<Sysname\> display port-security mac-address block vlan 1
 
-[ ]{lang="EN-US"}
+ MAC ADDR             Port                         VLAN ID
 
-[\-\-- On slot 1, 1 MAC address(es) found \-\--]{lang="EN-US"}
+ 0002-0002-0002      GE1/0/1                     1
 
-[ ]{lang="EN-US"}
+ 000d-88f8-0577      GE1/0/1                     1
 
-[\-\-- 1 mac address(es) found \-\--]{lang="EN-US"}
+ \-\--  2 mac address(es) found  \-\--
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_352258790}[显示所有阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址计数。（分布式设备]{style="font-family:宋体"}[－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+\# 显示指定VLAN中的阻塞MAC地址。（分布式设备－独立运行模式/集中式IRF设备）
 
-[[\<Sysname\> display port-security mac-address block count]{lang="EN-US"}]{#struct_0_x2060_63618_1368867499}
+\<Sysname\> display port-security mac-address block vlan 30
 
-[ ]{lang="EN-US"}
+ MAC ADDR               Port                        VLAN ID
 
-[ \-\-- On slot 0 in chassis 1, no MAC address found \-\--]{lang="EN-US"}
+ \-\-- On slot 0, no MAC address found \-\--
 
-[ ]{lang="EN-US"}
+ MAC ADDR               Port                        VLAN ID
 
-[ \-\-- On slot 1 in chassis 1, 1 MAC address(es) found \-\--]{lang="EN-US"}
+ 000f-3d80-0d2d        GE1/0/1                    30
 
-[ ]{lang="EN-US"}
+ \-\-- On slot 1, 1 MAC address(es) found \-\--
 
-[ \-\--  1 mac address(es) found  \-\--]{lang="EN-US"}
+ \-\-- 1 mac address(es) found \-\--
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_817988360}[显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[中的阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。（集中式设备）]{style="font-family:宋体"}
+\# 显示指定VLAN中的阻塞MAC地址。（分布式设备－IRF模式）
 
-[[\<Sysname\> display port-security mac-address block vlan 1]{lang="EN-US"}]{#struct_0_x2060_63618_x81673165}
+\<Sysname\> display port-security mac-address block vlan 30
 
-[ MAC ADDR             Port                         VLAN ID]{lang="EN-US"}
+ MAC ADDR               Port                        VLAN ID
 
-[ 0002-0002-0002      GE1/0/1                     1]{lang="EN-US"}
+ \-\-- On slot 0 in chassis 1, no MAC address found \-\--
 
-[ 000d-88f8-0577      GE1/0/1                     1]{lang="EN-US"}
+ MAC ADDR               Port                       VLAN ID
 
-[ ]{lang="EN-US"}
+ 000f-3d80-0d2d        GE1/0/1                   30
 
-[ \-\--  2 mac address(es) found  \-\--]{lang="EN-US"}
+ \-\-- On slot 1 in chassis 1, 1 MAC address(es) found \-\--
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_476405282}[显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[中的阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。（分布式设备]{style="font-family:宋体"}[－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+ \-\-- 1 mac address(es) found \-\--
 
-[[\<Sysname\> display port-security mac-address block vlan 30]{lang="EN-US"}]{#struct_0_x2060_63618_x1875367936}
+\# 显示指定端口下的阻塞MAC地址。（集中式设备）
 
-[ MAC ADDR               Port                        VLAN ID]{lang="EN-US"}
+\<Sysname\> display port-security mac-address block interface GigabitEthernet1/0/1
 
-[ ]{lang="EN-US"}
+ MAC ADDR             Port                        VLAN ID
 
-[ \-\-- On slot 0, no MAC address found \-\--]{lang="EN-US"}
+ 000d-88f8-0577      GE1/0/1                    1
 
-[ MAC ADDR               Port                        VLAN ID]{lang="EN-US"}
+ \-\--  1 mac address(es) found  \-\--
 
-[ 000f-3d80-0d2d        GE1/0/1                    30]{lang="EN-US"}
+\# 显示指定端口下的阻塞MAC地址。（分布式设备－独立运行模式/集中式IRF设备）
 
-[ ]{lang="EN-US"}
+\<Sysname\> display port-security mac-address block interface GigabitEthernet1/0/1
 
-[ \-\-- On slot 1, 1 MAC address(es) found \-\--]{lang="EN-US"}
+ MAC ADDR             Port                        VLAN ID
 
-[ ]{lang="EN-US"}
+ 000f-3d80-0d2d      GE1/0/1                    30
 
-[ \-\-- 1 mac address(es) found \-\--]{lang="EN-US"}
+ \-\-- On slot 1, 1 MAC address(es) found \-\--
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_1368801963}[显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[中的阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。（分布式设备]{style="font-family:宋体"}[－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+ \-\-- 1 mac address(es) found \-\--
 
-[[\<Sysname\> display port-security mac-address block vlan 30]{lang="EN-US"}]{#struct_0_x2060_63618_1958594405}
+\# 显示指定端口下的阻塞MAC地址。（分布式设备－IRF模式）
 
-[ MAC ADDR               Port                        VLAN ID]{lang="EN-US"}
+\<Sysname\> display port-security mac-address block interface GigabitEthernet1/0/1
 
-[ ]{lang="EN-US"}
+ MAC ADDR             Port                        VLAN ID
 
-[ \-\-- On slot 0 in chassis 1, no MAC address found \-\--]{lang="EN-US"}
+ 000f-3d80-0d2d      GE1/0/1                    30
 
-[ MAC ADDR               Port                       VLAN ID]{lang="EN-US"}
+ \-\-- On slot 1 in chassis 1, 1 MAC address(es) found \-\--
 
-[ 000f-3d80-0d2d        GE1/0/1                   30]{lang="EN-US"}
+ \-\-- 1 mac address(es) found \-\--
 
-[ ]{lang="EN-US"}
+\# 显示指定端口下的在指定VLAN中的阻塞MAC地址。（集中式设备）
 
-[ \-\-- On slot 1 in chassis 1, 1 MAC address(es) found \-\--]{lang="EN-US"}
+\<Sysname\> display port-security mac-address block interface ethernet 1/1 vlan 1
 
-[ ]{lang="EN-US"}
+ MAC ADDR             Port                        VLAN ID
 
-[ \-\-- 1 mac address(es) found \-\--]{lang="EN-US"}
+ 000d-88f8-0577      GE1/0/1                    1
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_x1189785086}[显示指定端口下的阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。（集中式设备）]{style="font-family:宋体"}
+ \-\--  1 mac address(es) found  \-\--
 
-[[\<Sysname\> display port-security mac-address block interface GigabitEthernet1/0/1]{lang="EN-US"}]{#struct_0_x2060_63618_x1228854327}
+\# 显示指定端口下的在指定VLAN中的阻塞MAC地址。（分布式设备－独立运行模式/集中式IRF设备）
 
-[ MAC ADDR             Port                        VLAN ID]{lang="EN-US"}
+\<Sysname\> display port-security mac-address block interface ethernet 1/1 vlan 30
 
-[ 000d-88f8-0577      GE1/0/1                    1]{lang="EN-US"}
+ MAC ADDR             Port                        VLAN ID
 
-[ ]{lang="EN-US"}
+ 000f-3d80-0d2d      GE1/0/1                    30
 
-[ \-\--  1 mac address(es) found  \-\--]{lang="EN-US"}
+ \-\-- On slot 1, 1 MAC address(es) found \-\--
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_201607170}[显示指定端口下的阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。（分布式设备]{style="font-family:宋体"}[－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+ \-\-- 1 mac address(es) found \-\--
 
-[[\<Sysname\> display port-security mac-address block interface GigabitEthernet1/0/1]{lang="EN-US"}]{#struct_0_x2060_63618_1369260715}
+\# 显示指定端口下的在指定VLAN中的阻塞MAC地址。（分布式设备－IRF模式）
 
-[ MAC ADDR             Port                        VLAN ID]{lang="EN-US"}
+\<Sysname\> display port-security mac-address block interface ethernet 1/1 vlan 30
 
-[ 000f-3d80-0d2d      GE1/0/1                    30]{lang="EN-US"}
+ MAC ADDR             Port                        VLAN ID
 
-[ ]{lang="EN-US"}
+ 000f-3d80-0d2d      GE1/0/1                    30
 
-[ \-\-- On slot 1, 1 MAC address(es) found \-\--]{lang="EN-US"}
+ \-\-- On slot 1 in chassis 1, 1 MAC address(es) found \-\--
 
-[ ]{lang="EN-US"}
+ \-\-- 1 mac address(es) found \-\--
 
-[ \-\-- 1 mac address(es) found \-\--]{lang="EN-US"}
+表1-2 display port-security mac-address block命令显示信息描述表
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_2019120141}[显示指定端口下的阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。（分布式设备]{style="font-family:宋体"}[－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+字段
 
-[[\<Sysname\> display port-security mac-address block interface GigabitEthernet1/0/1]{lang="EN-US"}]{#struct_0_x2060_63618_600897599}
+描述
 
-[ MAC ADDR             Port                        VLAN ID]{lang="EN-US"}
+MAC ADDR
 
-[ 000f-3d80-0d2d      GE1/0/1                    30]{lang="EN-US"}
+阻塞MAC地址
 
-[ ]{lang="EN-US"}
+Port
 
-[ \-\-- On slot 1 in chassis 1, 1 MAC address(es) found \-\--]{lang="EN-US"}
+阻塞MAC地址所在端口
 
-[ ]{lang="EN-US"}
+VLAN ID
 
-[ \-\-- 1 mac address(es) found \-\--]{lang="EN-US"}
+端口所属VLAN
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_1174556170}[显示指定端口下的在指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[中的阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。（集中式设备）]{style="font-family:宋体"}
+*[number* mac address(es) found]
 
-[[\<Sysname\> display port-security mac-address block interface ethernet 1/1 vlan 1]{lang="EN-US"}]{#struct_0_x2060_63618_1754394625}
+当前阻塞MAC地址数目为*number*个
 
-[ MAC ADDR             Port                        VLAN ID]{lang="EN-US"}
+【相关命令】
 
-[ 000d-88f8-0577      GE1/0/1                    1]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[ \-\--  1 mac address(es) found  \-\--]{lang="EN-US"}
-
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_1369195179}[显示指定端口下的在指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[中的阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。（分布式设备]{style="font-family:宋体"}[－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
-
-[[\<Sysname\> display port-security mac-address block interface ethernet 1/1 vlan 30]{lang="EN-US"}]{#struct_0_x2060_63618_x1160799561}
-
-[ MAC ADDR             Port                        VLAN ID]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[ 000f-3d80-0d2d      GE1/0/1                    30]{lang="EN-US"}
-
-[ \-\-- On slot 1, 1 MAC address(es) found \-\--]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[ \-\-- 1 mac address(es) found \-\--]{lang="EN-US"}
-
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_96202264}[显示指定端口下的在指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[中的阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。（分布式设备]{style="font-family:宋体"}[－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式]{style="font-family:宋体"}[）]{style="font-family:宋体"}
-
-[[\<Sysname\> display port-security mac-address block interface ethernet 1/1 vlan 30]{lang="EN-US"}]{#struct_0_x2060_63618_1124416471}
-
-[ MAC ADDR             Port                        VLAN ID]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[ 000f-3d80-0d2d      GE1/0/1                    30]{lang="EN-US"}
-
-[ \-\-- On slot 1 in chassis 1, 1 MAC address(es) found \-\--]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[ \-\-- 1 mac address(es) found \-\--]{lang="EN-US"}
-
-[[表1-2 ]{lang="EN-US"}[display port-security mac-address block]{lang="EN-US"}]{#struct_0_x2060_63618_x906540509}[命令显示信息描述表]{style="font-family:黑体"}
-
-[]{#table_struct_0_622177682}[[字段]{style="font-family:黑体"}]{#struct_0_x2060_63618_x655101629}
-:::
-
-[[描述]{style="font-family:黑体"}]{#struct_0_x2060_63618_1369129643}
-
-[[MAC ADDR]{lang="EN-US"}]{#struct_0_x2060_63618_x1868553356}
-
-[[阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_1518266712}[地址]{style="font-family:宋体"}
-
-[[Port]{lang="EN-US"}]{#struct_0_x2060_63618_x262738275}
-
-[[阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_x1239188338}[地址所在端口]{style="font-family:宋体"}
-
-[[VLAN ID]{lang="EN-US"}]{#struct_0_x2060_63618_x1179236179}
-
-[[端口所属]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x2060_63618_1369064107}
-
-[*[number]{lang="EN-US"}*[ mac address(es) found]{lang="EN-US"}]{#struct_0_x2060_63618_431957560}
-
-[[当前阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_1804815894}[地址数目为]{style="font-family:宋体"}*[number]{lang="EN-US"}*[个]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x278173200}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[port-security intrusion-mode]{lang="EN-US"}**]{#struct_0_x2060_63618_x784566633}
-
-::: {#-1901710462 .myid}
-[]{#_Toc404792845}[]{#struct_0_x2060_63618_x862835199}[]{#_Toc257729103}
+·**port-security intrusion-mode**
 
 **端口安全 \-- 端口安全配置命令 \-- display port-security mac-address security**
 
 ------------------------------------------------------------------------
 
-[**[display port-security mac-address security]{lang="EN-US"}**]{#struct_0_x2060_63618_x1823381290}[命令用来显示安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。]{style="font-family:宋体"}
+**[display port-security mac-address security**]命令用来显示安全MAC地址信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x771629820}
+【命令】
 
-[**[display port-security mac-address security]{lang="EN-US"}**[ \[ **interface** *interface-type interface-number* \] \[ **vlan** *vlan-id* \] \[ **count** \] ]{lang="EN-US"}]{#struct_0_x2060_63618_1369522859}
+**[display port-security mac-address security** [ **interface** *interface-type interface-number*   **vlan** *vlan-id*   **count**  ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1166066596}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x2060_63618_1276700582}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x619367266}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2060_63618_1345079024}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x2060_63618_x1354670773}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2060_63618_x1456159560}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x2060_63618_1667776430}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1793585399}
+【参数】
 
-[**[interface]{lang="EN-US"}***[ interface-type interface-number]{lang="EN-US"}*]{#struct_0_x2060_63618_1369457323}[：显示指定端口的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。其中，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[表示端口类型和端口编号。]{style="font-family:
-宋体"}
+**[interface*** interface-type interface-number*]：显示指定端口的安全MAC地址信息。其中，*interface-type interface-number*表示端口类型和端口编号。
 
-[**[vlan]{lang="EN-US"}***[ vlan-id]{lang="EN-US"}*]{#struct_0_x2060_63618_408585095}[：显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息。其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vlan*** vlan-id*]：显示指定VLAN的安全MAC地址信息。其中，*vlan-id*表示VLAN编号，取值范围为1～4094。
 
-[**[count]{lang="EN-US"}**]{#struct_0_x2060_63618_x549297916}[：统计符合条件的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址个数。]{style="font-family:宋体"}
+**[count**]：统计符合条件的安全MAC地址个数。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1010447963}
+【使用指导】
 
-[[当端口工作于]{style="font-family:宋体"}[autoLearn]{lang="EN-US"}]{#struct_0_x2060_63618_x2016660947}[模式时，端口上通过自动学习或者静态配置的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址可通过该命令查看。]{style="font-family:宋体"}
+当端口工作于autoLearn模式时，端口上通过自动学习或者静态配置的安全MAC地址可通过该命令查看。
 
-[[如果不指定任何参数，则显示所有安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_1874230933}[地址的信息。]{style="font-family:宋体"}
+如果不指定任何参数，则显示所有安全MAC地址的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1753822534}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_x2133181739}[显示所有安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+\# 显示所有安全MAC地址。
 
-[[\<Sysname\> display port-security mac-address security]{lang="EN-US"}]{#struct_0_x2060_63618_1368998572}
+\<Sysname\> display port-security mac-address security
 
-[ MAC ADDR         VLAN ID  STATE          PORT INDEX                      AGING TIME]{lang="EN-US"}
+ MAC ADDR         VLAN ID  STATE          PORT INDEX                      AGING TIME
 
-[ 0002-0002-0002  1         Security       GE1/0/1                         NOAGED]{lang="EN-US"}
+ 0002-0002-0002  1         Security       GE1/0/1                         NOAGED
 
-[ 000d-88f8-0577  1         Security       GE1/0/1                         28]{lang="EN-US"}
+ 000d-88f8-0577  1         Security       GE1/0/1                         28
 
-[ ]{lang="EN-US"}
+ \-\--  2 mac address(es) found  \-\--
 
-[ \-\--  2 mac address(es) found  \-\--]{lang="EN-US"}
+\# 显示所有安全MAC地址计数。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_852536784}[显示所有安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址计数。]{style="font-family:宋体"}
+\<Sysname\> display port-security mac-address security count
 
-[[\<Sysname\> display port-security mac-address security count]{lang="EN-US"}]{#struct_0_x2060_63618_43112754}
+ \-\--  2 mac address(es) found  \-\--
 
-[ ]{lang="EN-US"}
+\# 显示指定VLAN中的安全MAC地址。
 
-[ \-\--  2 mac address(es) found  \-\--]{lang="EN-US"}
+\<Sysname\> display port-security mac-address security vlan 1
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_x38514024}[显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[中的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+ MAC ADDR         VLAN ID  STATE          PORT INDEX                      AGING TIME
 
-[[\<Sysname\> display port-security mac-address security vlan 1]{lang="EN-US"}]{#struct_0_x2060_63618_x931314589}
+ 0002-0002-0002  1         Security       GE1/0/1                         NOAGED
 
-[ MAC ADDR         VLAN ID  STATE          PORT INDEX                      AGING TIME]{lang="EN-US"}
+ 000d-88f8-0577  1         Security       GE1/0/1                         28
 
-[ 0002-0002-0002  1         Security       GE1/0/1                         NOAGED]{lang="EN-US"}
+ \-\--  2 mac address(es) found  \-\--
 
-[ 000d-88f8-0577  1         Security       GE1/0/1                         28]{lang="EN-US"}
+\# 显示指定端口下的安全MAC地址。
 
-[ ]{lang="EN-US"}
+\<Sysname\> display port-security mac-address security interface gigabitethernet 1/0/1
 
-[ \-\--  2 mac address(es) found  \-\--]{lang="EN-US"}
+ MAC ADDR         VLAN ID  STATE          PORT INDEX                      AGING TIME
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_414388174}[显示指定端口下的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+ 000d-88f8-0577  1         Security       GE/0/1                          NOAGED
 
-[[\<Sysname\> display port-security mac-address security interface gigabitethernet 1/0/1]{lang="EN-US"}]{#struct_0_x2060_63618_1368933036}
+  \-\--  1 mac address(es) found  \-\--
 
-[ MAC ADDR         VLAN ID  STATE          PORT INDEX                      AGING TIME]{lang="EN-US"}
+\# 显示指定端口下的在指定VLAN中的安全MAC地址。
 
-[ 000d-88f8-0577  1         Security       GE/0/1                          NOAGED]{lang="EN-US"}
+\<Sysname\> display port-security mac-address security interface gigabitethernet 1/0/1 vlan 1
 
-[ ]{lang="EN-US"}
+ MAC ADDR         VLAN ID  STATE          PORT INDEX                      AGING TIME
 
-[  \-\--  1 mac address(es) found  \-\--]{lang="EN-US"}
+ 000d-88f8-0577  1         Security       GE1/0/1                         NOAGED
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_x757616523}[显示指定端口下的在指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[中的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+ \-\--  1 mac address(es) found  \-\--
 
-[[\<Sysname\> display port-security mac-address security interface gigabitethernet 1/0/1 vlan 1]{lang="EN-US"}]{#struct_0_x2060_63618_x1160104154}
+表1-3 display port-security mac-address security命令显示信息描述表
 
-[ MAC ADDR         VLAN ID  STATE          PORT INDEX                      AGING TIME]{lang="EN-US"}
+字段
 
-[ 000d-88f8-0577  1         Security       GE1/0/1                         NOAGED]{lang="EN-US"}
+描述
 
-[ ]{lang="EN-US"}
+MAC ADDR
 
-[ \-\--  1 mac address(es) found  \-\--]{lang="EN-US"}
+安全MAC地址
 
-[[表1-3 ]{lang="EN-US"}[display port-security mac-address security]{lang="EN-US"}]{#struct_0_x2060_63618_302073976}[命令显示信息描述表]{style="font-family:黑体"}
+VLAN ID
 
-[]{#table_struct_0_624519820}[[字段]{style="font-family:黑体"}]{#struct_0_x2060_63618_x851294986}
-:::
+端口所属VLAN
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x2060_63618_x401793165}
+STATE
 
-[[MAC ADDR]{lang="EN-US"}]{#struct_0_x2060_63618_1368867500}
+添加的MAC地址类型
 
-[[安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_x1137868031}[地址]{style="font-family:宋体"}
+·Security：表示该项是安全MAC地址
 
-[[VLAN ID]{lang="EN-US"}]{#struct_0_x2060_63618_x745329694}
+PORT INDEX
 
-[[端口所属]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x2060_63618_x495441290}
+安全MAC地址所在端口
 
-[[STATE]{lang="EN-US"}]{#struct_0_x2060_63618_2008920465}
+AGING TIME
 
-[[添加的]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_87168538}[地址类型]{style="font-family:宋体"}
+安全MAC地址的剩余存活时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Security]{lang="EN-US"}]{#struct_0_x2060_63618_1368801964}[：表示该项是安全]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+·对于静态MAC地址，显示为NOAGED
 
-[[PORT INDEX]{lang="EN-US"}]{#struct_0_x2060_63618_1958659941}
+·对于Sticky MAC地址，显示为具体的剩余存活时间，单位为分钟。缺省情况下为不进行老化，显示为NOAGED
 
-[[安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_x923249400}[地址所在端口]{style="font-family:宋体"}
+*[number* mac address(es) found]
 
-[[AGING TIME]{lang="EN-US"}]{#struct_0_x2060_63618_57940521}
+当前保存的安全MAC地址数目为*number*个
 
-[[安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_307060534}[地址的剩余存活时间]{style="font-family:宋体"}
+【相关命令】
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于静态]{style="font-family:宋体"}]{#struct_0_x2060_63618_1461422748}[MAC]{lang="EN-US"}[地址，显示为]{style="font-family:宋体"}[NOAGED]{lang="EN-US"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于]{style="font-family:宋体"}]{#struct_0_x2060_63618_1369260716}[Sticky MAC]{lang="EN-US"}[地址，显示为具体的剩余存活时间，单位为分钟。缺省情况下为不进行老化，显示为]{style="font-family:宋体"}[NOAGED]{lang="EN-US"}
-
-[*[number]{lang="EN-US"}*[ mac address(es) found]{lang="EN-US"}]{#struct_0_x2060_63618_2018923533}
-
-[[当前保存的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_x162031225}[地址数目为]{style="font-family:宋体"}*[number]{lang="EN-US"}*[个]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1774949629}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[port-security mac-address security]{lang="EN-US"}**]{#struct_0_x2060_63618_1393236590}
-
-::: {#-1962576612 .myid}
-[]{#_Toc404792846}[]{#struct_0_x2060_63618_x704822756}[]{#_Toc257729105}
+·**port-security mac-address security**
 
 **端口安全 \-- 端口安全配置命令 \-- port-security authorization ignore**
 
 ------------------------------------------------------------------------
 
-[**[port-security authorization ignore]{lang="EN-US"}**]{#struct_0_x2060_63618_906102956}[命令用来配置端口不应用]{style="font-family:宋体"}[RADIUS]{lang="EN-US"}[服务器或设备本地下发的授权信息。]{style="font-family:宋体"}
+**[port-security authorization ignore**]命令用来配置端口不应用RADIUS服务器或设备本地下发的授权信息。
 
-[**[undo port-security authorization ignore]{lang="EN-US"}**]{#struct_0_x2060_63618_1369195180}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo port-security authorization ignore**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1160209748}
+【命令】
 
-[**[port-security authorization ignore]{lang="EN-US"}**]{#struct_0_x2060_63618_171950010}
+**[port-security authorization ignore**]
 
-[**[undo port-security authorization ignore]{lang="EN-US"}**]{#struct_0_x2060_63618_x35847039}
+**[undo port-security authorization ignore**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1096879472}
+【缺省情况】
 
-[[端口应用]{style="font-family:宋体"}[RADIUS]{lang="EN-US"}]{#struct_0_x2060_63618_1358546624}[服务器或设备本地下发的授权信息。]{style="font-family:宋体"}
+端口应用RADIUS服务器或设备本地下发的授权信息。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2060_63618_910715082}
+【视图】
 
-[[以太网接口视图]{style="font-family:宋体"}]{#struct_0_x2060_63618_x1947450927}
+以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1369129644}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2060_63618_x1868749964}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2060_63618_x1574702759}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1010098233}
+【使用指导】
 
-[[当用户通过]{style="font-family:宋体"}[RADIUS]{lang="EN-US"}]{#struct_0_x2060_63618_x357001303}[认证或本地认证后，]{style="font-family:宋体"}[RADIUS]{lang="EN-US"}[服务器或设备会根据用户帐号配置的相关属性进行授权，比如动态下发]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[等。若不希望接受这类动态下发的属性，则可通过配置本命令来忽略。]{style="font-family:宋体"}
+当用户通过RADIUS认证或本地认证后，RADIUS服务器或设备会根据用户帐号配置的相关属性进行授权，比如动态下发VLAN等。若不希望接受这类动态下发的属性，则可通过配置本命令来忽略。
 
-[[需要注意的是，该命令在三层以太网接口视图下的支持情况与产品型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_x2060_63618_273972490}
+需要注意的是，该命令在三层以太网接口视图下的支持情况与产品型号有关，请以设备的实际情况为准。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1118751218}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_1995784589}[配置端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[不应用]{style="font-family:宋体"}[RADIUS]{lang="EN-US"}[服务器或设备本地下发的授权信息。]{style="font-family:宋体"}
+\# 配置端口GigabitEthernet1/0/1不应用RADIUS服务器或设备本地下发的授权信息。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x2060_63618_1391471280}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] port-security authorization ignore]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 port-security authorization ignore
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1369064108}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display port-security]{lang="EN-US"}**]{#struct_0_x2060_63618_431236664}
-:::
-
-::: {#-1542001396 .myid}
-[]{#_Toc404792847}[]{#struct_0_x2060_63618_936229277}[]{#_Toc373237207}
+·**display port-security**
 
 **端口安全 \-- 端口安全配置命令 \-- port-security authorization-fail offline**
 
 ------------------------------------------------------------------------
 
-[**[port-security authorization-fail offline]{lang="EN-US"}**]{#struct_0_x2060_63618_1619352269}[命令用来开启授权失败用户下线功能。]{style="font-family:宋体"}
+**[port-security authorization-fail offline**]命令用来开启授权失败用户下线功能。
 
-[**[undo port-security authorization-fail offline]{lang="EN-US"}**]{#struct_0_x2060_63618_1741429779}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo port-security authorization-fail offline**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_935639454}
+【命令】
 
-[**[port-security authorization-fail offline]{lang="EN-US"}**]{#struct_0_x2060_63618_1399812300}
+**[port-security authorization-fail offline**]
 
-[**[undo port-security authorization-fail offline]{lang="EN-US"}**]{#struct_0_x2060_63618_2020175471}
+**[undo port-security authorization-fail offline**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1204106970}
+【缺省情况】
 
-[[授权失败用户下线功能处于关闭状态，即授权失败后用户保持在线。]{style="font-family:宋体"}]{#struct_0_x2060_63618_x310465200}
+授权失败用户下线功能处于关闭状态，即授权失败后用户保持在线。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2060_63618_935704990}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x2060_63618_x1747750186}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1236096643}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2060_63618_1101605865}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2060_63618_x740726103}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x2060_63618_935770526}
+【使用指导】
 
-[[如果配置为授权失败用户下线，当下发的授权]{style="font-family:宋体"}[ACL]{lang="EN-US"}]{#struct_0_x2060_63618_283704247}[、]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[不存在或者]{style="font-family:宋体"}[ACL]{lang="EN-US"}[、]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[下发失败时，将强制用户下线；]{style="font-family:宋体"}
+如果配置为授权失败用户下线，当下发的授权ACL、User Profile不存在或者ACL、User Profile下发失败时，将强制用户下线；
 
-[[如果配置为授权失败用户保持在线，当下发的授权]{style="font-family:宋体"}[ACL]{lang="EN-US"}]{#struct_0_x2060_63618_x1343360553}[、]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[不存在或者]{style="font-family:宋体"}[ACL]{lang="EN-US"}[、]{style="font-family:宋体"}[User Profile]{lang="EN-US"}[下发失败时，用户保持在线，授权]{style="font-family:宋体"}[ACL]{lang="EN-US"}[、]{style="font-family:宋体"}[User Porfile]{lang="EN-US"}[不生效，设备打印]{style="font-family:宋体"}[LOG]{lang="EN-US"}[信息。]{style="font-family:宋体"}
+如果配置为授权失败用户保持在线，当下发的授权ACL、User Profile不存在或者ACL、User Profile下发失败时，用户保持在线，授权ACL、User Porfile不生效，设备打印LOG信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1313485047}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_1037656686}[开启授权失败用户下线功能。]{style="font-family:宋体"}
+\# 开启授权失败用户下线功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x2060_63618_935836062}
+\<Sysname\> system-view
 
-[\[Sysname\] port-security authorization-fail offline]{lang="EN-US"}
+Sysname port-security authorization-fail offline
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_96944958}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display port-security]{lang="EN-US"}**]{#struct_0_x2060_63618_1499768741}
-:::
-
-::: {#-743452660 .myid}
-[]{#_Toc404792848}[]{#struct_0_x2060_63618_1455413557}[]{#_Toc257729106}[]{#_Toc131563063}
+·**display port-security**
 
 **端口安全 \-- 端口安全配置命令 \-- port-security enable**
 
 ------------------------------------------------------------------------
 
-[**[port-security enable]{lang="EN-US"}**]{#struct_0_x2060_63618_55690935}[命令用来使能端口安全。]{style="font-family:宋体"}
+**[port-security enable**]命令用来使能端口安全。
 
-[**[undo port-security enable]{lang="EN-US"}**]{#struct_0_x2060_63618_1163305308}[命令用来关闭端口安全。]{style="font-family:
-宋体"}
+**[undo port-security enable**]命令用来关闭端口安全。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1782553334}
+【命令】
 
-[**[port-security enable]{lang="EN-US"}**]{#struct_0_x2060_63618_1617494580}
+**[port-security enable**]
 
-[**[undo port-security enable]{lang="EN-US"}**]{#struct_0_x2060_63618_1122686740}
+**[undo port-security enable**]
 
-[[【缺省情况】]{style="font-family:
-黑体"}]{#struct_0_x2060_63618_6441572}
+【缺省情况】
 
-[[端口安全的使能情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_x2060_63618_1369522860}
+端口安全的使能情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1166656423}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x2060_63618_2059331109}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1599906642}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2060_63618_1488273599}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2060_63618_1971651344}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x2060_63618_586203174}
+【使用指导】
 
-[[如果已全局开启了]{style="font-family:宋体"}[802.1X]{lang="EN-US"}]{#struct_0_x2060_63618_x237979809}[或]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址认证，则无法使能端口安全。]{style="font-family:宋体"}
+如果已全局开启了802.1X或MAC地址认证，则无法使能端口安全。
 
-[[执行使能或关闭端口安全的命令后，端口上的相关配置将会恢复为如下情况：]{style="font-family:宋体"}]{#struct_0_x2060_63618_1070666549}
+执行使能或关闭端口安全的命令后，端口上的相关配置将会恢复为如下情况：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[802.1X]{lang="EN-US"}]{#struct_0_x2060_63618_1369457324}[端口接入控制方式恢复为]{style="font-family:宋体"}**[macbased]{lang="EN-US"}**[；]{style="font-family:宋体"}
+·802.1X端口接入控制方式恢复为**macbased**；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[802.1X]{lang="EN-US"}]{#struct_0_x2060_63618_409043847}[端口的授权状态恢复为]{style="font-family:宋体"}**[auto]{lang="EN-US"}**[。]{style="font-family:宋体"}
+·802.1X端口的授权状态恢复为**auto**。
 
-[[端口上有用户在线的情况下，若关闭端口安全，则在线用户将会下线。]{style="font-family:宋体"}]{#struct_0_x2060_63618_1024528044}
+端口上有用户在线的情况下，若关闭端口安全，则在线用户将会下线。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2060_63618_59955217}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_318297046}[使能端口安全。]{style="font-family:宋体"}
+\# 使能端口安全。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x2060_63618_1292463567}
+\<Sysname\> system-view
 
-[\[Sysname\] port-security enable]{lang="EN-US"}
+Sysname port-security enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1115290198}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display port-security]{lang="EN-US"}**]{#struct_0_x2060_63618_1368998569}
+·**display port-security**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dot1x]{lang="EN-US"}**]{#struct_0_x2060_63618_852078031}[（安全命令参考]{lang="EN-US" style="font-family:宋体"}[/802.1X]{lang="EN-US"}[）]{lang="EN-US" style="font-family:宋体"}
+·**dot1x**（安全命令参考/802.1X）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dot1x port-control]{lang="EN-US"}**]{#struct_0_x2060_63618_612846950}[（安全命令参考]{lang="EN-US" style="font-family:宋体"}[/802.1X]{lang="EN-US"}[）]{lang="EN-US" style="font-family:宋体"}
+·**dot1x port-control**（安全命令参考/802.1X）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dot1x port-method]{lang="EN-US"}**]{#struct_0_x2060_63618_720514890}[（安全命令参考]{lang="EN-US" style="font-family:宋体"}[/802.1X]{lang="EN-US"}[）]{lang="EN-US" style="font-family:宋体"}
+·**dot1x port-method**（安全命令参考/802.1X）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[mac-authentication]{lang="EN-US"}**]{#struct_0_x2060_63618_1402777373}[（安全命令参考]{lang="EN-US" style="font-family:宋体"}[/MAC]{lang="EN-US"}[地址认证）]{lang="EN-US" style="font-family:宋体"}
-:::
-
-::: {#430310708 .myid}
-[]{#_Toc404792849}[]{#struct_0_x2060_63618_1756791137}[]{#_Toc257729107}
+·**mac-authentication**（安全命令参考/MAC地址认证）
 
 **端口安全 \-- 端口安全配置命令 \-- port-security intrusion-mode**
 
 ------------------------------------------------------------------------
 
-[**[port-security intrusion-mode]{lang="EN-US"}**]{#struct_0_x2060_63618_x20008943}[命令用来配置入侵检测特性，对接收到非法报文的端口采取相应的安全策略。]{style="font-family:
-宋体"}
+**[port-security intrusion-mode**]命令用来配置入侵检测特性，对接收到非法报文的端口采取相应的安全策略。
 
-[**[undo port-security intrusion-mode]{lang="EN-US"}**]{#struct_0_x2060_63618_1611794930}[命令用来缺省情况。]{style="font-family:宋体"}
+**[undo port-security intrusion-mode**]命令用来缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x445327572}
+【命令】
 
-[**[port-security intrusion-mode ]{lang="EN-US"}**[{ **blockmac** \| **disableport** \| **disableport-temporarily** }]{lang="EN-US"}]{#struct_0_x2060_63618_1368933033}
+**[port-security intrusion-mode **[{ **blockmac** \| **disableport** \| **disableport-temporarily** }]]
 
-[**[undo port-security intrusion-mode]{lang="EN-US"}**]{#struct_0_x2060_63618_x757419915}
+**[undo port-security intrusion-mode**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x2044910906}
+【缺省情况】
 
-[[对接收到非法报文的端口不进行入侵检测处理。]{style="font-family:宋体"}]{#struct_0_x2060_63618_x619376205}
+对接收到非法报文的端口不进行入侵检测处理。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x223364207}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}]{#struct_0_x2060_63618_1663512203}
+二层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:
-黑体"}]{#struct_0_x2060_63618_9518174}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2060_63618_1009699005}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2060_63618_410598683}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x2060_63618_177338069}
+【参数】
 
-[**[blockmac]{lang="EN-US"}**]{#struct_0_x2060_63618_1368867497}[：表示将非法报文的源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址加入阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址列表中，源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的报文将被丢弃，实现在端口上过滤非法流量的作用。此]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址在被阻塞]{style="font-family:宋体"}[3]{lang="EN-US"}[分钟（系统默认，不可配）后恢复正常。阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址列表可以通过]{style="font-family:宋体"}**[display port-security mac-address block]{lang="EN-US"}**[命令查看。]{style="font-family:宋体"}
+**[blockmac**]：表示将非法报文的源MAC地址加入阻塞MAC地址列表中，源MAC地址为阻塞MAC地址的报文将被丢弃，实现在端口上过滤非法流量的作用。此MAC地址在被阻塞3分钟（系统默认，不可配）后恢复正常。阻塞MAC地址列表可以通过**display port-security mac-address block**命令查看。
 
-[**[disableport]{lang="EN-US"}**]{#struct_0_x2060_63618_818643720}[：表示将收到非法报文的端口永久关闭。]{style="font-family:宋体"}
+**[disableport**]：表示将收到非法报文的端口永久关闭。
 
-[**[disableport-temporarily]{lang="EN-US"}**]{#struct_0_x2060_63618_x1714557336}[：表示将收到非法报文的端口暂时关闭一段时间。关闭时长可通过]{style="font-family:宋体"}**[port-security timer disableport]{lang="EN-US"}**[命令配置。]{style="font-family:
-宋体"}
+**[disableport-temporarily**]：表示将收到非法报文的端口暂时关闭一段时间。关闭时长可通过**port-security timer disableport**命令配置。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1241798240}
+【使用指导】
 
-[[可以通过执行]{style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**]{#struct_0_x2060_63618_250406993}[命令重新开启被入侵检测特性临时或永久断开的端口。]{style="font-family:宋体"}
+可以通过执行**undo shutdown**命令重新开启被入侵检测特性临时或永久断开的端口。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x895864616}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_x591596}[配置端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的入侵检测特性检测到非法报文后，将非法报文的源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址置为阻塞]{style="font-family:宋体"}[MAC]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置端口GigabitEthernet1/0/1的入侵检测特性检测到非法报文后，将非法报文的源MAC地址置为阻塞MAC。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x2060_63618_x689753953}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] port-security intrusion-mode blockmac]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 port-security intrusion-mode blockmac
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1368801961}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display port-security]{lang="EN-US"}**]{#struct_0_x2060_63618_1958463333}
+·**display port-security**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display port-security mac-address block]{lang="EN-US"}**]{#struct_0_x2060_63618_x58538307}
+·**display port-security mac-address block**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[port-security timer disableport]{lang="EN-US"}**]{#struct_0_x2060_63618_83742726}
-:::
-
-::: {#599970268 .myid}
-[]{#_Toc404792850}[]{#struct_0_x2060_63618_936163742}[]{#_Toc373237210}
+·**port-security timer disableport**
 
 **端口安全 \-- 端口安全配置命令 \-- port-security mac-address aging-type inactivity**
 
 ------------------------------------------------------------------------
 
-[**[port-security mac-address aging-type inactivity]{lang="EN-US"}**]{#struct_0_x2060_63618_187081069}[命令用来配置安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的老化方式为无流量老化。]{style="font-family:宋体"}
+**[port-security mac-address aging-type inactivity**]命令用来配置安全MAC地址的老化方式为无流量老化。
 
-[**[undo port-security mac-address aging-type inactivity]{lang="EN-US"}**]{#struct_0_x2060_63618_x734710778}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo port-security mac-address aging-type inactivity**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1206066506}
+【命令】
 
-[**[port-security mac-address aging-type inactivity]{lang="EN-US"}**]{#struct_0_x2060_63618_x1184910238}
+**[port-security mac-address aging-type inactivity**]
 
-[**[undo port-security mac-address aging-type inactivity]{lang="EN-US"}**]{#struct_0_x2060_63618_936229278}
+**[undo port-security mac-address aging-type inactivity**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1619352276}
+【缺省情况】
 
-[[安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_1742019602}[地址按照配置的老化时间进行老化，即在安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的老化时间到达后立即老化，不论该安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址是否还有流量产生。]{style="font-family:宋体"}
+安全MAC地址按照配置的老化时间进行老化，即在安全MAC地址的老化时间到达后立即老化，不论该安全MAC地址是否还有流量产生。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1215978824}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}]{#struct_0_x2060_63618_935639451}
+二层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1399812305}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2060_63618_2019847791}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2060_63618_x1351848896}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1540480814}
+【使用指导】
 
-[[无流量老化方式下，设备会定期检测（检测周期不可配）端口上的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_935704987}[地址是否有流量产生，若某安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址在配置的老化时间内没有任何流量产生，则才会被老化，否则该安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址不会被老化，并在下一个老化周期内重复该检测过程。下一个周期内若还有流量产生则继续保持该安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的学习状态，该方式可有效避免非法用户通过仿冒合法用户]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址乘机在合法用户的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址老化时间到达之后占用端口资源。]{style="font-family:宋体"}
+无流量老化方式下，设备会定期检测（检测周期不可配）端口上的安全MAC地址是否有流量产生，若某安全MAC地址在配置的老化时间内没有任何流量产生，则才会被老化，否则该安全MAC地址不会被老化，并在下一个老化周期内重复该检测过程。下一个周期内若还有流量产生则继续保持该安全MAC地址的学习状态，该方式可有效避免非法用户通过仿冒合法用户MAC地址乘机在合法用户的安全MAC地址老化时间到达之后占用端口资源。
 
-[[此命令仅对于]{style="font-family:宋体"}[Sticky MAC]{lang="EN-US"}]{#struct_0_x2060_63618_590901979}[地址以及动态类型的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址有效。]{style="font-family:宋体"}
+此命令仅对于Sticky MAC地址以及动态类型的安全MAC地址有效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x2004210592}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_1235674139}[配置端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的老化方式为无流量老化。]{style="font-family:宋体"}
+\# 配置端口GigabitEthernet1/0/1的安全MAC地址的老化方式为无流量老化。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x2060_63618_935770523}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] port-security mac-address aging-type inactivity]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 port-security mac-address aging-type inactivity
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_283704244}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display port-security]{lang="EN-US"}**]{#struct_0_x2060_63618_x1343360556}
-:::
-
-::: {#-1162733567 .myid}
-[]{#_Toc404792851}[]{#struct_0_x2060_63618_553970160}[]{#_Toc373237211}[]{#_Toc361662989}[]{#_Toc296589716}
+·**display port-security**
 
 **端口安全 \-- 端口安全配置命令 \-- port-security mac-address dynamic**
 
 ------------------------------------------------------------------------
 
-[**[port-security mac-address dynamic]{lang="EN-US"}**]{#struct_0_x2060_63618_x948006878}[命令用来将]{style="font-family:宋体"}[Sticky MAC]{lang="EN-US"}[地址设置为动态类型的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[port-security mac-address dynamic**]命令用来将Sticky MAC地址设置为动态类型的安全MAC地址。
 
-[**[undo port-security mac-address dynamic]{lang="EN-US"}**]{#struct_0_x2060_63618_935836059}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo port-security mac-address dynamic**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1477033147}
+【命令】
 
-[**[port-security mac-address dynamic]{lang="EN-US"}**]{#struct_0_x2060_63618_1594660490}
+**[port-security mac-address dynamic**]
 
-[**[undo port-security mac-address dynamic]{lang="EN-US"}**]{#struct_0_x2060_63618_x164276109}
+**[undo port-security mac-address dynamic**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x2060_63618_935901595}
+【缺省情况】
 
-[[端口学习到的是]{style="font-family:宋体"}[Sticky]{lang="EN-US"}]{#struct_0_x2060_63618_452656021}[类型的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[，它能够被保存在配置文件中，设备重启后也不会丢失。]{style="font-family:宋体"}
+端口学习到的是Sticky类型的安全MAC，它能够被保存在配置文件中，设备重启后也不会丢失。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x127525120}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}]{#struct_0_x2060_63618_x1381260442}
+二层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2060_63618_935967131}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2060_63618_1635569115}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2060_63618_964379827}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x530905491}
+【使用指导】
 
-[[动态类型的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_936032667}[地址不会被保存在配置文件中，可通过执行]{style="font-family:宋体"}**[display port-security mac-address security]{lang="EN-US"}**[命令查看到，设备重启之后会丢失。在不希望设备上保存重启之前端口上已有的]{style="font-family:宋体"}[Sticky MAC]{lang="EN-US"}[地址的情况下，可将其设置为动态类型的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+动态类型的安全MAC地址不会被保存在配置文件中，可通过执行**display port-security mac-address security**命令查看到，设备重启之后会丢失。在不希望设备上保存重启之前端口上已有的Sticky MAC地址的情况下，可将其设置为动态类型的安全MAC地址。
 
-[[本命令成功执行后，指定端口上的]{style="font-family:宋体"}[Sticky MAC]{lang="EN-US"}]{#struct_0_x2060_63618_588983704}[地址会立即被转换为动态类型的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，且将不能手工添加]{style="font-family:宋体"}[Sticky MAC]{lang="EN-US"}[地址。之后，若成功执行对应的]{style="font-family:宋体"}**[undo]{lang="EN-US"}**[命令，该端口上的动态类型的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址会立即转换为]{style="font-family:宋体"}[Sticky MAC]{lang="EN-US"}[地址，且用户可以手工添加]{style="font-family:宋体"}[Sticky MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+本命令成功执行后，指定端口上的Sticky MAC地址会立即被转换为动态类型的安全MAC地址，且将不能手工添加Sticky MAC地址。之后，若成功执行对应的**undo**命令，该端口上的动态类型的安全MAC地址会立即转换为Sticky MAC地址，且用户可以手工添加Sticky MAC地址。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x7617837}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_141008987}[将端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上的]{style="font-family:宋体"}[Sticky MAC]{lang="EN-US"}[地址设置为动态类型的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+\# 将端口GigabitEthernet1/0/1上的Sticky MAC地址设置为动态类型的安全MAC地址。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x2060_63618_936098203}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] port-security mac-address dynamic]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 port-security mac-address dynamic
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x602579982}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display port-security]{lang="EN-US"}**]{#struct_0_x2060_63618_x1095365955}
+·**display port-security**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display port-security mac-address security]{lang="EN-US"}**]{#struct_0_x2060_63618_x1650497684}
-:::
-
-::: {#-1620667945 .myid}
-[]{#_Toc404792852}[]{#struct_0_x2060_63618_1579159371}[]{#_Toc257729108}
+·**display port-security mac-address security**
 
 **端口安全 \-- 端口安全配置命令 \-- port-security mac-address security**
 
 ------------------------------------------------------------------------
 
-[**[port-security mac-address security]{lang="EN-US"}**]{#struct_0_x2060_63618_857480057}[命令用来添加安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[port-security mac-address security**]命令用来添加安全MAC地址。
 
-[**[undo port-security mac-address security]{lang="EN-US"}**]{#struct_0_x2060_63618_x1242935396}[命令用来删除指定的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[undo port-security mac-address security**]命令用来删除指定的安全MAC地址。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x2012621685}
+【命令】
 
-[[在二层以太网接口视图下：]{style="font-family:宋体"}]{#struct_0_x2060_63618_x202380346}
+在二层以太网接口视图下：
 
-[**[port-security mac-address security ]{lang="EN-US"}**[\[ **sticky** \] *mac-address* **vlan** *vlan-id*]{lang="EN-US"}]{#struct_0_x2060_63618_1369260713}
+**[port-security mac-address security ** **sticky** ] *mac-address* **vlan** *vlan-id*
 
-[**[undo port-security mac-address security ]{lang="EN-US"}**[\[ **sticky** \] *mac-address* **vlan** *vlan-id*]{lang="EN-US"}]{#struct_0_x2060_63618_2018726925}
+**[undo port-security mac-address security ** **sticky** ] *mac-address* **vlan** *vlan-id*
 
-[[在系统视图下：]{style="font-family:宋体"}]{#struct_0_x2060_63618_x1403330115}
+在系统视图下：
 
-[**[port-security]{lang="EN-US"}**[ **mac-address** **security** \[ **sticky** \] *mac-address* **interface** *interface-type interface-number* **vlan** *vlan-id*]{lang="EN-US"}]{#struct_0_x2060_63618_1913856363}
+**[port-security** **mac-address** **security** [ **sticky**  *mac-address* **interface** *interface-type interface-number* **vlan** *vlan-id*]]
 
-[**[undo port-security mac-address security ]{lang="EN-US"}**[\[ \[ *mac-address* \[ **interface** *interface-type interface-number* \] \] **vlan** *vlan-id* \]]{lang="EN-US"}]{#struct_0_x2060_63618_533327193}
+**[undo port-security mac-address security **  *mac-address* [ **interface** *interface-type interface-number*  ] **vlan** *vlan-id* ]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1127444549}
+【缺省情况】
 
-[[未配置安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_x2013423875}[地址。]{style="font-family:宋体"}
+未配置安全MAC地址。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x475206635}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x2060_63618_1285733756}[系统视图]{style="font-family:宋体"}
+二层以太网接口视图/系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1369195177}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2060_63618_x1160668489}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2060_63618_868225380}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1892752545}
+【参数】
 
-[**[sticky]{lang="EN-US"}**]{#struct_0_x2060_63618_190213914}[：表示要添加一个可老化的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址（]{style="font-family:宋体"}[Sticky MAC]{lang="EN-US"}[地址）。]{style="font-family:宋体"}[Sticky MAC]{lang="EN-US"}[地址的老化时间可通过]{style="font-family:宋体"}**[port-security timer autolearn aging]{lang="EN-US"}**[命令]{style="font-family:宋体"}[配置。当]{style="font-family:宋体"}[Sticky MAC]{lang="EN-US"}[地址的老化时间到达时，]{style="font-family:宋体"}[Sticky MAC]{lang="EN-US"}[地址即被删除。若不指定本参数，则表示添加的是一个不老化的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[sticky**]：表示要添加一个可老化的安全MAC地址（Sticky MAC地址）。Sticky MAC地址的老化时间可通过**port-security timer autolearn aging**命令配置。当Sticky MAC地址的老化时间到达时，Sticky MAC地址即被删除。若不指定本参数，则表示添加的是一个不老化的安全MAC地址。
 
-[*[mac-address]{lang="EN-US"}*]{#struct_0_x2060_63618_1142111554}[：安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，格式为]{style="font-family:宋体"}[H-H-H]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[mac-address*]：安全MAC地址，格式为H-H-H。
 
-[**[interface]{lang="EN-US"}***[ interface-type interface-number]{lang="EN-US"}*]{#struct_0_x2060_63618_x1050298281}[：指定添加安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的接口。其中，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[表示接口类型和接口编号。]{style="font-family:
-宋体"}
+**[interface*** interface-type interface-number*]：指定添加安全MAC地址的接口。其中，*interface-type interface-number*表示接口类型和接口编号。
 
-[**[vlan ]{lang="EN-US"}***[vlan-id]{lang="EN-US"}*]{#struct_0_x2060_63618_x1425601468}[：指定安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址所属的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vlan ***vlan-id*]：指定安全MAC地址所属的VLAN。其中，*vlan-id*表示VLAN编号，取值范围为1～4094。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x2081810676}
+【使用指导】
 
-[[手工配置添加的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_1369129641}[地址在保存配置并设备重启后，不会被删除。因此，可以将网络中一些已知的、固定要接入某端口的主机或设备的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址添加为安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，这样在端口处于]{style="font-family:宋体"}[autoLearn]{lang="EN-US"}[安全模式时，此类源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的主机或设备的报文将被允许通过指定端口，而且还可避免与其它通过自动方式学习到端口上的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的报文争夺资源而被拒绝接收。]{style="font-family:宋体"}
+手工配置添加的安全MAC地址在保存配置并设备重启后，不会被删除。因此，可以将网络中一些已知的、固定要接入某端口的主机或设备的MAC地址添加为安全MAC地址，这样在端口处于autoLearn安全模式时，此类源MAC地址为安全MAC地址的主机或设备的报文将被允许通过指定端口，而且还可避免与其它通过自动方式学习到端口上的MAC地址的报文争夺资源而被拒绝接收。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x2060_63618_x1868422284}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[成功添加安全]{style="font-family:宋体"}]{#struct_0_x2060_63618_x861097990}[MAC]{lang="EN-US"}[地址的前提为：端口安全处于开启状态；端口的端口安全模式为]{style="font-family:宋体"}[autoLearn]{lang="EN-US"}[；当前的接口允许指定的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[通过或已加入该]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，且该]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[已存在。]{style="font-family:宋体"}
+·成功添加安全MAC地址的前提为：端口安全处于开启状态；端口的端口安全模式为autoLearn；当前的接口允许指定的VLAN通过或已加入该VLAN，且该VLAN已存在。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[已添加的安全]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_x2035003244}[地址，除非首先将其删除，否则不能重复添加或者修改其地址类型，例如已经在某端口上添加了一条安全]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}**[port-security mac-address security]{lang="EN-US"}**[ 1-1-1 **vlan** 10]{lang="EN-US"}[，则不能再添加一条安全]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}**[port-security mac-address security sticky]{lang="EN-US"}**[ 1-1-1 **vlan** 10]{lang="EN-US"}[。]{lang="EN-US" style="font-family:
-宋体"}
+·已添加的安全MAC地址，除非首先将其删除，否则不能重复添加或者修改其地址类型，例如已经在某端口上添加了一条安全MAC地址**port-security mac-address security** 1-1-1 **vlan** 10，则不能再添加一条安全MAC地址**port-security mac-address security sticky** 1-1-1 **vlan** 10。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1888367610}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_1671048627}[使能端口安全，配置端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的安全模式为]{style="font-family:宋体"}[autoLearn]{lang="EN-US"}[，并指定端口安全允许的最大]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数为]{style="font-family:宋体"}[100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 使能端口安全，配置端口GigabitEthernet1/0/1的安全模式为autoLearn，并指定端口安全允许的最大MAC地址数为100。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x2060_63618_x462254032}
+\<Sysname\> system-view
 
-[\[Sysname\] port-security enable]{lang="EN-US"}
+Sysname port-security enable
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] port-security max-mac-count 100]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 port-security max-mac-count 100
 
-[\[Sysname-GigabitEthernet1/0/1\] port-security port-mode autolearn]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 port-security port-mode autolearn
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_922219275}[为该端口添加一条]{style="font-family:宋体"}[Sticky MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}[0001-0002-0003]{lang="EN-US"}[，该安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址属于]{style="font-family:宋体"}[VLAN 4]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 为该端口添加一条Sticky MAC地址0001-0002-0003，该安全MAC地址属于VLAN 4。
 
-[[\[Sysname-GigabitEthernet1/0/1\] port-security mac-address security sticky ]{lang="EN-US"}]{#struct_0_x2060_63618_1369064105}[0001-0002-0003]{lang="EN-US"}[ vlan 4]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 port-security mac-address security sticky 0001-0002-0003 vlan 4
 
-[\[Sysname-GigabitEthernet1/0/1\] quit]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 quit
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_432088632}[在系统视图下为端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[添加一条安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}[0001-0001-0002]{lang="EN-US"}[，该安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址属于]{style="font-family:宋体"}[VLAN 10]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在系统视图下为端口GigabitEthernet1/0/1添加一条安全MAC地址0001-0001-0002，该安全MAC地址属于VLAN 10。
 
-[[\[Sysname\] port-security mac-address security ]{lang="EN-US"}]{#struct_0_x2060_63618_x407227331}[0001-0001-0002]{lang="EN-US"}[ interface gigabitethernet 1/0/1 vlan 10]{lang="EN-US"}
+Sysname port-security mac-address security 0001-0001-0002 interface gigabitethernet 1/0/1 vlan 10
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1922715278}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display port-security]{lang="EN-US"}**]{#struct_0_x2060_63618_513856949}
+·**display port-security**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[port-security timer autolearn aging]{lang="EN-US"}**]{#struct_0_x2060_63618_x1476971342}
-:::
-
-::: {#-1661734453 .myid}
-[]{#_Toc404792853}[]{#struct_0_x2060_63618_x2023810840}[]{#_Toc334531737}[]{#_Toc331088875}
+·**port-security timer autolearn aging**
 
 **端口安全 \-- 端口安全配置命令 \-- port-security mac-move permit**
 
 ------------------------------------------------------------------------
 
-[**[port-security mac-move permit]{lang="EN-US"}**]{#struct_0_x2060_63618_x1670460171}[命令用来开启允许]{style="font-family:
-宋体"}[MAC]{lang="EN-US"}[迁移功能。]{style="font-family:宋体"}
+**[port-security mac-move permit**]命令用来开启允许MAC迁移功能。
 
-[**[undo port-security mac-move permit]{lang="EN-US"}**]{#struct_0_x2060_63618_1369522857}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo port-security mac-move permit**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1166984100}
+【命令】
 
-[**[port-security mac-move permit]{lang="EN-US"}**]{#struct_0_x2060_63618_1480874978}
+**[port-security mac-move permit**]
 
-[**[undo port-security mac-move permit]{lang="EN-US"}**]{#struct_0_x2060_63618_565004507}
+**[undo port-security mac-move permit**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x988361468}
+【缺省情况】
 
-[[允许]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_1361295658}[迁移功能处于关闭状态。]{style="font-family:宋体"}
+允许MAC迁移功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x605840616}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x2060_63618_1501950438}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1019600189}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2060_63618_1369457321}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2060_63618_408716167}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x2060_63618_866899622}
+【使用指导】
 
-[[该功能对系统中的所有]{style="font-family:宋体"}[802.1X]{lang="EN-US"}]{#struct_0_x2060_63618_x1626396129}[认证用户和]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址认证用户生效。]{style="font-family:宋体"}
+该功能对系统中的所有802.1X认证用户和MAC地址认证用户生效。
 
-[[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_579195724}[迁移功能处于关闭状态时，如果用户从某一端口上线成功，则该用户在未从当前端口下线的情况下无法在设备的其它端口上（无论该端口是否与当前端口属于同一]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[）发起认证，也无法上线。]{style="font-family:宋体"}
+MAC迁移功能处于关闭状态时，如果用户从某一端口上线成功，则该用户在未从当前端口下线的情况下无法在设备的其它端口上（无论该端口是否与当前端口属于同一VLAN）发起认证，也无法上线。
 
-[[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_x2033927368}[迁移功能处于开启状态时，如果用户从某一端口上线成功，则允许该在线用户在设备的其它端口上（无论该端口是否与当前端口属于同一]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[）发起认证。如果该用户在后接入的端口上认证成功，则当前端口会将该用户立即进行下线处理，保证该用户仅在一个端口上处于上线状态。]{style="font-family:宋体"}
+MAC迁移功能处于开启状态时，如果用户从某一端口上线成功，则允许该在线用户在设备的其它端口上（无论该端口是否与当前端口属于同一VLAN）发起认证。如果该用户在后接入的端口上认证成功，则当前端口会将该用户立即进行下线处理，保证该用户仅在一个端口上处于上线状态。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2060_63618_520762135}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_908232778}[开启允许]{style="font-family:宋体"}[MAC]{lang="EN-US"}[迁移功能。]{style="font-family:宋体"}
+\# 开启允许MAC迁移功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x2060_63618_x472845450}
+\<Sysname\> system-view
 
-[\[Sysname\] port-security mac-move permit]{lang="EN-US"}
+Sysname port-security mac-move permit
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1368998570}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display port-security]{lang="EN-US"}**]{#struct_0_x2060_63618_852667856}
-:::
-
-::: {#1948322621 .myid}
-[]{#_Toc404792854}[]{#struct_0_x2060_63618_x1347423720}[]{#_Toc257729109}[]{#_Toc131563069}
+·**display port-security**
 
 **端口安全 \-- 端口安全配置命令 \-- port-security max-mac-count**
 
 ------------------------------------------------------------------------
 
-[**[port-security max-mac-count]{lang="EN-US"}**]{#struct_0_x2060_63618_x690305540}[命令用来设置端口安全允许的最大安全]{style="font-family:
-宋体"}[MAC]{lang="EN-US"}[地址数。]{style="font-family:
-宋体"}
+**[port-security max-mac-count**]命令用来设置端口安全允许的最大安全MAC地址数。
 
-[**[undo port-security max-mac-count]{lang="EN-US"}**]{#struct_0_x2060_63618_x239762512}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo port-security max-mac-count**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_573885421}
+【命令】
 
-[**[port-security max-mac-count ]{lang="EN-US"}***[count-value]{lang="EN-US"}*]{#struct_0_x2060_63618_x1482280893}
+**[port-security max-mac-count ***count-value*]
 
-[**[undo port-security max-mac-count]{lang="EN-US"}**]{#struct_0_x2060_63618_x1249039896}
+**[undo port-security max-mac-count**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x383199843}
+【缺省情况】
 
-[[端口安全不限制本端口可保存的最大安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_1368933034}[地址数。]{style="font-family:宋体"}
+端口安全不限制本端口可保存的最大安全MAC地址数。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x757747595}
+【视图】
 
-[[以太网接口视图]{style="font-family:宋体"}]{#struct_0_x2060_63618_404210293}
+以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1198963395}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2060_63618_x875102544}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2060_63618_1315629870}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x2060_63618_2114204953}
+【参数】
 
-[*[count-value]{lang="EN-US"}*]{#struct_0_x2060_63618_x75838773}[：端口允许的最大安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1024]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[count-value*]：端口允许的最大安全MAC地址数，取值范围为1～1024。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x2060_63618_240763399}
+【使用指导】
 
-[[对于]{style="font-family:宋体"}[autoLearn]{lang="EN-US"}]{#struct_0_x2060_63618_1368867498}[安全模式，端口允许的最大安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数由本命令配置，包括端口上学习到的以及手工配置的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数；对于采用]{style="font-family:宋体"}[802.1X]{lang="EN-US"}[、]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址认证或者两者组合形式的认证类安全模式，端口允许的最大用户数取本命令配置的值与相应模式下允许认证用户数的最小值。例如，]{style="font-family:宋体"}[userLoginSecureExt]{lang="EN-US"}[模式下，端口下所允许的最大安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数为配置的端口安全允许的最大安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数与]{style="font-family:宋体"}[802.1X]{lang="EN-US"}[认证所允许的最大用户数的最小值。]{style="font-family:宋体"}
+对于autoLearn安全模式，端口允许的最大安全MAC地址数由本命令配置，包括端口上学习到的以及手工配置的安全MAC地址数；对于采用802.1X、MAC地址认证或者两者组合形式的认证类安全模式，端口允许的最大用户数取本命令配置的值与相应模式下允许认证用户数的最小值。例如，userLoginSecureExt模式下，端口下所允许的最大安全MAC地址数为配置的端口安全允许的最大安全MAC地址数与802.1X认证所允许的最大用户数的最小值。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x2060_63618_817922824}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当端口工作于]{style="font-family:宋体"}]{#struct_0_x2060_63618_1914481142}[autoLearn]{lang="EN-US"}[模式时，无法更改端口安全允许的最大安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数。]{style="font-family:宋体"}
+·当端口工作于autoLearn模式时，无法更改端口安全允许的最大安全MAC地址数。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[无线端口上有用户在线时，无法更改端口安全允许的最大安全]{style="font-family:宋体"}]{#struct_0_x2060_63618_1206685698}[MAC]{lang="EN-US"}[地址数。]{style="font-family:宋体"}
+·无线端口上有用户在线时，无法更改端口安全允许的最大安全MAC地址数。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[端口安全允许的最大安全]{style="font-family:宋体"}]{#struct_0_x2060_63618_2004904630}[MAC]{lang="EN-US"}[地址数不能小于当前端口下已保存的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数。]{style="font-family:宋体"}
+·端口安全允许的最大安全MAC地址数不能小于当前端口下已保存的MAC地址数。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[该命令在三层以太网接口视图下的支持情况与产品型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_x2060_63618_x1596921719}
+·该命令在三层以太网接口视图下的支持情况与产品型号有关，请以设备的实际情况为准。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2060_63618_116360362}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_x574508711}[在端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置端口安全允许的最大安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数为]{style="font-family:宋体"}[100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在端口GigabitEthernet1/0/1上配置端口安全允许的最大安全MAC地址数为100。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x2060_63618_1368801962}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] port-security max-mac-count 100]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 port-security max-mac-count 100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1958528869}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display port-security]{lang="EN-US"}**]{#struct_0_x2060_63618_x523515584}
-:::
-
-::: {#-499997729 .myid}
-[]{#_Toc404792855}[]{#struct_0_x2060_63618_728828237}[]{#_Toc396314065}[]{#_Toc372540907}[]{#_Toc373314567}
+·**display port-security**
 
 **端口安全 \-- 端口安全配置命令 \-- port-security nas-id-profile**
 
 ------------------------------------------------------------------------
 
-[**[port-security nas-id-profile]{lang="EN-US"}**]{#struct_0_x2060_63618_x1643890294}[命令用来指定全局]{style="font-family:
-宋体"}[/]{lang="EN-US"}[端口引用的]{style="font-family:宋体"}[NAS-ID Profile]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[port-security nas-id-profile**]命令用来指定全局/端口引用的NAS-ID Profile。
 
-[**[undo port-security nas-id-profile]{lang="EN-US"}**]{#struct_0_x2060_63618_x572070195}[命令用来删除全局]{style="font-family:宋体"}[/]{lang="EN-US"}[端口引用的]{style="font-family:宋体"}[NAS-ID Profile]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo port-security nas-id-profile**]命令用来删除全局/端口引用的NAS-ID Profile。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_2029519251}
+【命令】
 
-[**[port-security nas-id-profile ]{lang="EN-US"}***[profile-name]{lang="EN-US"}*]{#struct_0_x2060_63618_528171256}
+**[port-security nas-id-profile ***profile-name*]
 
-[**[undo port-security nas-id-profile]{lang="EN-US"}**]{#struct_0_x2060_63618_x1617068579}
+**[undo port-security nas-id-profile**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x332471020}
+【缺省情况】
 
-[[未指定引用的]{style="font-family:宋体"}[NAS-ID Profile]{lang="EN-US"}]{#struct_0_x2060_63618_1955491322}[。]{style="font-family:宋体"}
+未指定引用的NAS-ID Profile。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1428336628}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x2060_63618_x2027468081}[接口视图]{style="font-family:宋体"}
+系统视图/接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1084993061}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2060_63618_x203816526}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2060_63618_x49489122}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x2060_63618_433304080}
+【参数】
 
-[*[profile-name]{lang="SV"}*]{#struct_0_x2060_63618_x348389352}[：标识指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[和]{style="font-family:宋体"}[NAS-ID]{lang="EN-US"}[绑定关系的]{style="font-family:宋体"}[Profile]{lang="EN-US"}[名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+*[profile-name*]：标识指定VLAN和NAS-ID绑定关系的Profile名称，为1～31个字符的字符串，不区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x2060_63618_668084837}
+【使用指导】
 
-[[本命令引用的]{style="font-family:宋体"}[NAS-ID Profile]{lang="EN-US"}]{#struct_0_x2060_63618_x1108822499}[由命令]{style="font-family:宋体"}**[aaa nas-id profile]{lang="EN-US"}**[配置，具体情况请参考"安全命令参考"中的"]{style="font-family:宋体"}[AAA]{lang="EN-US"}["。]{style="font-family:宋体"}
+本命令引用的NAS-ID Profile由命令**aaa nas-id profile**配置，具体情况请参考"安全命令参考"中的"AAA"。
 
-[[NAS-ID Profile]{lang="EN-US"}]{#struct_0_x2060_63618_x976375509}[可以在系统视图下或者接口视图下进行配置引用，接口上的配置优先，若接口上没有配置，则使用系统视图下的全局配置。]{style="font-family:宋体"}
+NAS-ID Profile可以在系统视图下或者接口视图下进行配置引用，接口上的配置优先，若接口上没有配置，则使用系统视图下的全局配置。
 
-[[需要注意的是，如果指定了]{style="font-family:宋体"}]{#struct_0_x2060_63618_x595173393}[NAS-ID Profile]{lang="PT-BR"}[，]{style="font-family:宋体"}[则此]{style="font-family:宋体"}[Profile]{lang="PT-BR"}[中定义的绑定关系优先使用]{style="font-family:宋体"}[；]{style="font-family:宋体"}[如果未指定]{style="font-family:宋体"}[NAS-ID Profile]{lang="EN-US"}[或指定的]{style="font-family:宋体"}[Profile]{lang="EN-US"}[中没有找到匹配的绑定关系，则使用设备名作为]{style="font-family:宋体"}[NAS-ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+需要注意的是，如果指定了NAS-ID Profile，则此Profile中定义的绑定关系优先使用；如果未指定NAS-ID Profile或指定的Profile中没有找到匹配的绑定关系，则使用设备名作为NAS-ID。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1704540217}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_1488277588}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上指定名为]{style="font-family:宋体"}[aaa]{lang="EN-US"}[的]{style="font-family:宋体"}[NAS-ID Profile]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上指定名为aaa的NAS-ID Profile。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x2060_63618_2217341}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] port-secutiry nas-id-profile aaa]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 port-secutiry nas-id-profile aaa
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_x2026340247}[在系统视图下指定名为]{style="font-family:宋体"}[aaa]{lang="EN-US"}[的]{style="font-family:宋体"}[NAS-ID Profile]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在系统视图下指定名为aaa的NAS-ID Profile。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x2060_63618_129762758}
+\<Sysname\> system-view
 
-[\[Sysname\] port-secutiry nas-id-profile aaa]{lang="EN-US"}
+Sysname port-secutiry nas-id-profile aaa
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_89115918}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[aaa nas-id profile]{lang="EN-US"}**]{#struct_0_x2060_63618_1186103697}[（安全命令参考]{lang="EN-US" style="font-family:宋体"}[/AAA]{lang="EN-US"}[）]{lang="EN-US" style="font-family:宋体"}
-:::
-
-::: {#1876013693 .myid}
-[]{#_Toc404792856}[]{#struct_0_x2060_63618_x1448565905}[]{#_Toc257729110}[]{#_Toc131563070}
+·**aaa nas-id profile**（安全命令参考/AAA）
 
 **端口安全 \-- 端口安全配置命令 \-- port-security ntk-mode**
 
 ------------------------------------------------------------------------
 
-[**[port-security ntk-mode]{lang="EN-US"}**]{#struct_0_x2060_63618_x1581716871}[命令用来配置端口]{style="font-family:宋体"}[Need To Know]{lang="EN-US"}[特性。]{style="font-family:宋体"}
+**[port-security ntk-mode**]命令用来配置端口Need To Know特性。
 
-[**[undo port-security ntk-mode]{lang="EN-US"}**]{#struct_0_x2060_63618_x1696895431}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo port-security ntk-mode**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x532664711}
+【命令】
 
-[**[port-security ntk-mode ]{lang="EN-US"}**[{ **ntk-withbroadcasts** \| **ntk-withmulticasts** \| **ntkonly** }]{lang="EN-US"}]{#struct_0_x2060_63618_x107540375}
+**[port-security ntk-mode **[{ **ntk-withbroadcasts** \| **ntk-withmulticasts** \| **ntkonly** }]]
 
-[**[undo port-security ntk-mode]{lang="EN-US"}**]{#struct_0_x2060_63618_x1897729722}
+**[undo port-security ntk-mode**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1369260714}
+【缺省情况】
 
-[[端口没有配置]{style="font-family:宋体"}[Need To Know]{lang="EN-US"}]{#struct_0_x2060_63618_2019054605}[特性，即所有报文都可成功发送。]{style="font-family:宋体"}
+端口没有配置Need To Know特性，即所有报文都可成功发送。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2060_63618_581880592}
+【视图】
 
-[[以太网接口视图]{style="font-family:宋体"}]{#struct_0_x2060_63618_1828278412}
+以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2060_63618_656005369}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2060_63618_860328990}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2060_63618_x725199065}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1344923067}
+【参数】
 
-[**[ntk-withbroadcasts]{lang="EN-US"}**]{#struct_0_x2060_63618_x1108073557}[：允许目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为已通过认证的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的单播报文或广播地址的报文通过。]{style="font-family:宋体"}
+**[ntk-withbroadcasts**]：允许目的MAC地址为已通过认证的MAC地址的单播报文或广播地址的报文通过。
 
-[**[ntk-withmulticasts]{lang="EN-US"}**]{#struct_0_x2060_63618_1369195178}[：允许目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为已通过认证的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的单播报文，广播地址或组播地址的报文通过。]{style="font-family:宋体"}
+**[ntk-withmulticasts**]：允许目的MAC地址为已通过认证的MAC地址的单播报文，广播地址或组播地址的报文通过。
 
-[**[ntkonly]{lang="EN-US"}**]{#struct_0_x2060_63618_x1160734025}[：仅允许目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为已通过认证的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的单播报文通过。]{style="font-family:宋体"}
+**[ntkonly**]：仅允许目的MAC地址为已通过认证的MAC地址的单播报文通过。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x2060_63618_2004667363}
+【使用指导】
 
-[[Need To Know]{lang="EN-US"}]{#struct_0_x2060_63618_1530230142}[特性通过检测从端口发出的数据帧的目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，保证数据帧只能被发送到已经通过认证的设备上，从而防止非法设备窃听网络数据。]{style="font-family:宋体"}
+Need To Know特性通过检测从端口发出的数据帧的目的MAC地址，保证数据帧只能被发送到已经通过认证的设备上，从而防止非法设备窃听网络数据。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x2060_63618_x1977543328}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[无线端口上有用户在线的情况下，无法更改]{lang="EN-US" style="font-family:宋体"}[Need To Know]{lang="EN-US"}]{#struct_0_x2060_63618_395037691}[特性的配置。]{lang="EN-US" style="font-family:宋体"}
+·无线端口上有用户在线的情况下，无法更改Need To Know特性的配置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Need To Know]{lang="EN-US"}]{#struct_0_x2060_63618_2092064909}[特性的配置生效情况与设备的型号有关，请以设备的实际情况为准。]{lang="EN-US" style="font-family:宋体"}
+·Need To Know特性的配置生效情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1887035752}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_142137304}[配置端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的]{style="font-family:宋体"}[Need To Know]{lang="EN-US"}[特性为]{style="font-family:宋体"}**[ntkonly]{lang="EN-US"}**[，即仅发送目的地址为已认证的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的报文。]{style="font-family:宋体"}
+\# 配置端口GigabitEthernet1/0/1的Need To Know特性为**ntkonly**，即仅发送目的地址为已认证的MAC地址的报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x2060_63618_1369129642}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] port-security ntk-mode ntkonly]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 port-security ntk-mode ntkonly
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1868618892}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display port-security]{lang="EN-US"}**]{#struct_0_x2060_63618_x1629386137}
-:::
-
-::: {#-81690441 .myid}
-[]{#_Toc404792857}[]{#struct_0_x2060_63618_1809186782}[]{#_Toc257729111}[]{#_Toc131563065}
+·**display port-security**
 
 **端口安全 \-- 端口安全配置命令 \-- port-security oui**
 
 ------------------------------------------------------------------------
 
-[**[port-security oui]{lang="EN-US"}**]{#struct_0_x2060_63618_594414841}[命令用来配置允许通过认证的用户的]{style="font-family:宋体"}[OUI]{lang="EN-US"}[值。]{style="font-family:宋体"}
+**[port-security oui**]命令用来配置允许通过认证的用户的OUI值。
 
-[**[undo port-security oui]{lang="EN-US"}**]{#struct_0_x2060_63618_826529676}[命令用来删除指定索引的]{style="font-family:宋体"}[OUI]{lang="EN-US"}[值。]{style="font-family:宋体"}
+**[undo port-security oui**]命令用来删除指定索引的OUI值。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_2062887223}
+【命令】
 
-[**[port-security oui index ]{lang="EN-US"}***[index-value ]{lang="EN-US"}***[mac-address ]{lang="EN-US"}***[oui-value]{lang="EN-US"}*]{#struct_0_x2060_63618_1162507906}
+**[port-security oui index ***index-value ***mac-address ***oui-value*]
 
-[**[undo port-security oui index ]{lang="EN-US"}***[index-value]{lang="EN-US"}*]{#struct_0_x2060_63618_1369064106}
+**[undo port-security oui index ***index-value*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x2060_63618_431892024}
+【缺省情况】
 
-[[不存在允许通过认证的用户]{style="font-family:宋体"}[OUI]{lang="EN-US"}]{#struct_0_x2060_63618_1417604821}[值。]{style="font-family:宋体"}
+不存在允许通过认证的用户OUI值。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1620301645}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x2060_63618_325560481}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1807567460}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2060_63618_358514962}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2060_63618_2063285905}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x2060_63618_828739088}
+【参数】
 
-[*[index-value]{lang="EN-US"}*]{#struct_0_x2060_63618_1369522858}[：标识此]{style="font-family:宋体"}[OUI]{lang="EN-US"}[的索引值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[16]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[index-value*]：标识此OUI的索引值，取值范围为1～16。
 
-[*[oui-value]{lang="EN-US"}*]{#struct_0_x2060_63618_x1166132132}[：]{style="font-family:宋体"}[OUI]{lang="EN-US"}[值，输入格式为]{style="font-family:宋体"}[H-H-H]{lang="EN-US"}[的]{style="font-family:宋体"}[48]{lang="EN-US"}[位]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。系统会自动取输入的前]{style="font-family:宋体"}[24]{lang="EN-US"}[位做为]{style="font-family:宋体"}[OUI]{lang="EN-US"}[值，忽略后]{style="font-family:宋体"}[24]{lang="EN-US"}[位。]{style="font-family:宋体"}
+*[oui-value*]：OUI值，输入格式为H-H-H的48位MAC地址。系统会自动取输入的前24位做为OUI值，忽略后24位。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1258482673}
+【使用指导】
 
-[[OUI]{lang="EN-US"}]{#struct_0_x2060_63618_387611183}[是]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的前]{style="font-family:宋体"}[24]{lang="EN-US"}[位（二进制），是]{style="font-family:宋体"}[IEEE]{lang="EN-US"}[为不同设备供应商分配的一个全球唯一的标识符。当需要允许某些特殊设备的（有线接入）报文总是可以通过认证，或仅允许这些设备的（无线接入）报文可以进行认证的情况下，就可以通过本命令来指定这些设备的]{style="font-family:宋体"}[OUI]{lang="EN-US"}[值，例如，某公司仅允许]{style="font-family:宋体"}[A]{lang="EN-US"}[厂商的]{style="font-family:宋体"}[IP]{lang="EN-US"}[电话在本企业网内使用，则可以通过本命令将]{style="font-family:宋体"}[A]{lang="EN-US"}[厂商设备的]{style="font-family:宋体"}[OUI]{lang="EN-US"}[值设置为认证的]{style="font-family:宋体"}[OUI]{lang="EN-US"}[值。]{style="font-family:宋体"}
+OUI是MAC地址的前24位（二进制），是IEEE为不同设备供应商分配的一个全球唯一的标识符。当需要允许某些特殊设备的（有线接入）报文总是可以通过认证，或仅允许这些设备的（无线接入）报文可以进行认证的情况下，就可以通过本命令来指定这些设备的OUI值，例如，某公司仅允许A厂商的IP电话在本企业网内使用，则可以通过本命令将A厂商设备的OUI值设置为认证的OUI值。
 
-[[可通过多次执行本命令，配置多个]{style="font-family:宋体"}[OUI]{lang="EN-US"}]{#struct_0_x2060_63618_1252374478}[值。]{style="font-family:宋体"}
+可通过多次执行本命令，配置多个OUI值。
 
-[[配置的]{style="font-family:宋体"}[OUI]{lang="EN-US"}]{#struct_0_x2060_63618_1516720839}[值只在端口安全模式为]{style="font-family:宋体"}[userLoginWithOUI]{lang="EN-US"}[时生效。在]{style="font-family:宋体"}[userLoginWithOUI]{lang="EN-US"}[模式下，端口上除了允许一个]{style="font-family:宋体"}[802.1X]{lang="EN-US"}[认证用户接入之外，还额外允许一个特殊用户接入，该用户报文的源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的]{style="font-family:宋体"}[OUI]{lang="EN-US"}[与设备上配置的某个]{style="font-family:宋体"}[OUI]{lang="EN-US"}[值相符。]{style="font-family:宋体"}
+配置的OUI值只在端口安全模式为userLoginWithOUI时生效。在userLoginWithOUI模式下，端口上除了允许一个802.1X认证用户接入之外，还额外允许一个特殊用户接入，该用户报文的源MAC地址的OUI与设备上配置的某个OUI值相符。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x458881856}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_86277741}[配置一个允许通过认证的用户]{style="font-family:宋体"}[OUI]{lang="EN-US"}[值为]{style="font-family:宋体"}[000d2a]{lang="EN-US"}[，索引为]{style="font-family:宋体"}[4]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置一个允许通过认证的用户OUI值为000d2a，索引为4。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x2060_63618_x24685955}
+\<Sysname\> system-view
 
-[\[Sysname\] port-security oui index 4 mac-address 000d-2a10-0033]{lang="EN-US"}
+Sysname port-security oui index 4 mac-address 000d-2a10-0033
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1369457322}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display port-security]{lang="EN-US"}**]{#struct_0_x2060_63618_408650631}
-:::
-
-::: {#-1993206321 .myid}
-[]{#_Toc404792858}[]{#struct_0_x2060_63618_x1897182265}[]{#_Toc257729112}[]{#_Toc131563071}
+·**display port-security**
 
 **端口安全 \-- 端口安全配置命令 \-- port-security port-mode**
 
 ------------------------------------------------------------------------
 
-[**[port-security port-mode]{lang="EN-US"}**]{#struct_0_x2060_63618_1484494465}[命令用来配置端口安全模式。]{style="font-family:宋体"}
+**[port-security port-mode**]命令用来配置端口安全模式。
 
-[**[undo port-security port-mode]{lang="EN-US"}**]{#struct_0_x2060_63618_1035159896}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo port-security port-mode**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x2116532942}
+【命令】
 
-[**[port-security port-mode ]{lang="EN-US"}**[{ **autolearn** \| **mac-authentication** \| **mac-else-userlogin-secure** \| **mac-else-userlogin-secure-ext** \| **secure** \| **userlogin** \| **userlogin-secure** \| **userlogin-secure-ext** \| **userlogin-secure-or-mac** \| **userlogin-secure-or-mac-ext** \| **userlogin-withoui** }]{lang="EN-US"}]{#struct_0_x2060_63618_1701367056}
+**[port-security port-mode **[{ **autolearn** \| **mac-authentication** \| **mac-else-userlogin-secure** \| **mac-else-userlogin-secure-ext** \| **secure** \| **userlogin** \| **userlogin-secure** \| **userlogin-secure-ext** \| **userlogin-secure-or-mac** \| **userlogin-secure-or-mac-ext** \| **userlogin-withoui** }]]
 
-[**[undo port-security port-mode]{lang="EN-US"}**]{#struct_0_x2060_63618_x822378016}
+**[undo port-security port-mode**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x2060_63618_286762448}
+【缺省情况】
 
-[[端口处于]{style="font-family:宋体"}[noRestrictions]{lang="EN-US"}]{#struct_0_x2060_63618_1368998567}[模式，此时该端口的安全功能关闭，端口处于不受端口安全限制的状态。]{style="font-family:宋体"}
+端口处于noRestrictions模式，此时该端口的安全功能关闭，端口处于不受端口安全限制的状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2060_63618_852209103}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x2060_63618_1651032580}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2060_63618_580795346}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2060_63618_x1959551682}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2060_63618_x51900565}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1659907974}
+【参数】
 
-[[表1-4 ]{lang="EN-US"}[安全模式的参数解释表]{style="font-family:黑体"}]{#struct_0_x2060_63618_x780799055}
+表1-4 安全模式的参数解释表
 
-[]{#table_struct_0_650236626}[[参数]{style="font-family:黑体"}]{#struct_0_x2060_63618_1368933031}
-:::
+参数
 
-[[安全模式]{style="font-family:黑体"}]{#struct_0_x2060_63618_x757550987}
+安全模式
 
-[[说明]{style="font-family:黑体"}]{#struct_0_x2060_63618_320533105}
+说明
 
-[**[autolearn]{lang="EN-US"}**]{#struct_0_x2060_63618_x931360865}
+**[autolearn**]
 
-[[autoLearn]{lang="EN-US"}]{#struct_0_x2060_63618_12509752}
+autoLearn
 
-[[端口可通过手工配置或自动学习]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_x1354838458}[地址。手工配置或自动学习到的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址被称为安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[，并被添加到安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表中]{style="font-family:宋体"}
+端口可通过手工配置或自动学习MAC地址。手工配置或自动学习到的MAC地址被称为安全MAC，并被添加到安全MAC地址表中
 
-[[当端口下的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_1409856614}[地址数超过端口安全允许的最大安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数后，端口模式会自动转变为]{style="font-family:宋体"}[secure]{lang="EN-US"}[模式。之后，该端口停止添加新的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[，只有源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址、通过命令]{style="font-family:宋体"}**[mac-address dynamic]{lang="EN-US"}**[或]{style="font-family:宋体"}**[mac-address static]{lang="EN-US"}**[手工配置的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的报文，才能通过该端口]{style="font-family:宋体"}
+当端口下的安全MAC地址数超过端口安全允许的最大安全MAC地址数后，端口模式会自动转变为secure模式。之后，该端口停止添加新的安全MAC，只有源MAC地址为安全MAC地址、通过命令**mac-address dynamic**或**mac-address static**手工配置的MAC地址的报文，才能通过该端口
 
-[**[mac-authentication]{lang="EN-US"}**]{#struct_0_x2060_63618_1368867495}
+**[mac-authentication**]
 
-[[macAddressWithRadius]{lang="EN-US"}]{#struct_0_x2060_63618_818774792}
+macAddressWithRadius
 
-[[对接入用户采用]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_x2133004601}[地址认证]{style="font-family:宋体"}
+对接入用户采用MAC地址认证
 
-[[此模式下，端口允许多个用户接入]{style="font-family:宋体"}]{#struct_0_x2060_63618_x1985275026}
+此模式下，端口允许多个用户接入
 
-[**[mac-else-userlogin-secure]{lang="EN-US"}**]{#struct_0_x2060_63618_x411219120}
+**[mac-else-userlogin-secure**]
 
-[[macAddressElseUserLoginSecure]{lang="EN-US"}]{#struct_0_x2060_63618_1368801959}
+macAddressElseUserLoginSecure
 
-[[端口同时处于]{style="font-family:宋体"}[macAddressWithRadius]{lang="EN-US"}]{#struct_0_x2060_63618_1957939042}[模式和]{style="font-family:宋体"}[userLoginSecure]{lang="EN-US"}[模式，但]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址认证优先级大于]{style="font-family:宋体"}[802.1X]{lang="EN-US"}[认证。允许端口下一个]{style="font-family:宋体"}[802.1X]{lang="EN-US"}[认证用户及多个]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址认证用户接入]{style="font-family:宋体"}
+端口同时处于macAddressWithRadius模式和userLoginSecure模式，但MAC地址认证优先级大于802.1X认证。允许端口下一个802.1X认证用户及多个MAC地址认证用户接入
 
-[[非]{style="font-family:宋体"}[802.1X]{lang="EN-US"}]{#struct_0_x2060_63618_x299543509}[报文直接进行]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址认证。]{style="font-family:宋体"}[802.1X]{lang="EN-US"}[报文先进行]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址认证，如果]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址认证失败再进行]{style="font-family:宋体"}[802.1X]{lang="EN-US"}[认证]{style="font-family:宋体"}
+非802.1X报文直接进行MAC地址认证。802.1X报文先进行MAC地址认证，如果MAC地址认证失败再进行802.1X认证
 
-[**[mac-else-userlogin-secure-ext]{lang="EN-US"}**]{#struct_0_x2060_63618_x1647785931}
+**[mac-else-userlogin-secure-ext**]
 
-[[macAddressElseUserLoginSecureExt]{lang="EN-US"}]{#struct_0_x2060_63618_x52685202}
+macAddressElseUserLoginSecureExt
 
-[[与]{style="font-family:宋体"}[macAddressElseUserLoginSecure]{lang="EN-US"}]{#struct_0_x2060_63618_1369260711}[类似，但允许端口下有多个]{style="font-family:宋体"}[802.1X]{lang="EN-US"}[和]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址认证用户]{style="font-family:宋体"}
+与macAddressElseUserLoginSecure类似，但允许端口下有多个802.1X和MAC地址认证用户
 
-[**[secure]{lang="EN-US"}**]{#struct_0_x2060_63618_2018857997}
+**[secure**]
 
-[[secure]{lang="EN-US"}]{#struct_0_x2060_63618_156658752}
+secure
 
-[[禁止端口学习]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_x374111385}[地址，只有源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为端口上的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址、手工配置的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的报文，才能通过该端口]{style="font-family:宋体"}
+禁止端口学习MAC地址，只有源MAC地址为端口上的安全MAC地址、手工配置的MAC地址的报文，才能通过该端口
 
-[**[userlogin]{lang="EN-US"}**]{#struct_0_x2060_63618_x684683943}
+**[userlogin**]
 
-[[userLogin]{lang="EN-US"}]{#struct_0_x2060_63618_173002900}
+userLogin
 
-[[对接入用户采用基于端口的]{style="font-family:宋体"}[802.1X]{lang="EN-US"}]{#struct_0_x2060_63618_1369195175}[认证]{style="font-family:宋体"}
+对接入用户采用基于端口的802.1X认证
 
-[[此模式下，端口下的第一个]{style="font-family:宋体"}[802.1X]{lang="EN-US"}]{#struct_0_x2060_63618_x1160537417}[用户认证成功后，其它用户无须认证就可接入]{style="font-family:宋体"}
+此模式下，端口下的第一个802.1X用户认证成功后，其它用户无须认证就可接入
 
-[**[userlogin-secure]{lang="EN-US"}**]{#struct_0_x2060_63618_x1533430507}
+**[userlogin-secure**]
 
-[[userLoginSecure]{lang="EN-US"}]{#struct_0_x2060_63618_x61889840}
+userLoginSecure
 
-[[对接入用户采用基于]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_1369129639}[地址的]{style="font-family:宋体"}[802.1X]{lang="EN-US"}[认证]{style="font-family:宋体"}
+对接入用户采用基于MAC地址的802.1X认证
 
-[[此模式下，端口最多只允许一个]{style="font-family:宋体"}[802.1X]{lang="EN-US"}]{#struct_0_x2060_63618_x1867898001}[认证用户接入]{style="font-family:宋体"}
+此模式下，端口最多只允许一个802.1X认证用户接入
 
-[**[userlogin-secure-ext]{lang="EN-US"}**]{#struct_0_x2060_63618_x2078687551}
+**[userlogin-secure-ext**]
 
-[[userLoginSecureExt]{lang="EN-US"}]{#struct_0_x2060_63618_1494992928}
+userLoginSecureExt
 
-[[对接入用户采用基于]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_1369064103}[的]{style="font-family:宋体"}[802.1X]{lang="EN-US"}[认证，且允许端口下有多个]{style="font-family:宋体"}[802.1X]{lang="EN-US"}[用户]{style="font-family:宋体"}
+对接入用户采用基于MAC的802.1X认证，且允许端口下有多个802.1X用户
 
-[**[userlogin-secure-or-mac]{lang="EN-US"}**]{#struct_0_x2060_63618_431695416}
+**[userlogin-secure-or-mac**]
 
-[[macAddressOrUserLoginSecure]{lang="EN-US"}]{#struct_0_x2060_63618_1581957443}
+macAddressOrUserLoginSecure
 
-[[端口同时处于]{style="font-family:宋体"}[userLoginSecure]{lang="EN-US"}]{#struct_0_x2060_63618_1131926559}[模式和]{style="font-family:宋体"}[macAddressWithRadius]{lang="EN-US"}[模式，且允许一个]{style="font-family:宋体"}[802.1X]{lang="EN-US"}[认证用户及多个]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址认证用户接入]{style="font-family:宋体"}
+端口同时处于userLoginSecure模式和macAddressWithRadius模式，且允许一个802.1X认证用户及多个MAC地址认证用户接入
 
-[[此模式下，]{style="font-family:宋体"}[802.1X]{lang="EN-US"}]{#struct_0_x2060_63618_1369522855}[认证优先级大于]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址认证：报文首先进行]{style="font-family:宋体"}[802.1X]{lang="EN-US"}[认证，如果]{style="font-family:宋体"}[802.1X]{lang="EN-US"}[认证失败再进行]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址认证]{style="font-family:宋体"}
+此模式下，802.1X认证优先级大于MAC地址认证：报文首先进行802.1X认证，如果802.1X认证失败再进行MAC地址认证
 
-[**[userlogin-secure-or-mac-ext]{lang="EN-US"}**]{#struct_0_x2060_63618_x1166853028}
+**[userlogin-secure-or-mac-ext**]
 
-[[macAddressOrUserLoginSecureExt]{lang="EN-US"}]{#struct_0_x2060_63618_525448676}
+macAddressOrUserLoginSecureExt
 
-[[与]{style="font-family:宋体"}[macAddressOrUserLoginSecure]{lang="EN-US"}]{#struct_0_x2060_63618_1369457319}[类似，但允许端口下有多个]{style="font-family:宋体"}[802.1X]{lang="EN-US"}[和]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址认证用户]{style="font-family:宋体"}
+与macAddressOrUserLoginSecure类似，但允许端口下有多个802.1X和MAC地址认证用户
 
-[**[userlogin-withoui]{lang="EN-US"}**]{#struct_0_x2060_63618_408191876}
+**[userlogin-withoui**]
 
-[[userLoginWithOUI]{lang="EN-US"}]{#struct_0_x2060_63618_x285426612}
+userLoginWithOUI
 
-[[与]{style="font-family:宋体"}[userLoginSecure]{lang="EN-US"}]{#struct_0_x2060_63618_1204629023}[模式类似，但端口上除了允许一个]{style="font-family:宋体"}[802.1X]{lang="EN-US"}[认证用户接入之外，还额外允许一个特殊用户接入，该用户报文的源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[的]{style="font-family:宋体"}[OUI]{lang="EN-US"}[与设备上配置的]{style="font-family:宋体"}[OUI]{lang="EN-US"}[值相符]{style="font-family:宋体"}
+与userLoginSecure模式类似，但端口上除了允许一个802.1X认证用户接入之外，还额外允许一个特殊用户接入，该用户报文的源MAC的OUI与设备上配置的OUI值相符
 
-[[此模式下，报文首先进行]{style="font-family:宋体"}[OUI]{lang="EN-US"}]{#struct_0_x2060_63618_852143567}[匹配，]{style="font-family:宋体"}[OUI]{lang="EN-US"}[匹配失败的报文再进行]{style="font-family:宋体"}[802.1X]{lang="EN-US"}[认证，]{style="font-family:宋体"}[OUI]{lang="EN-US"}[匹配成功和]{style="font-family:宋体"}[802.1X]{lang="EN-US"}[认证成功的报文都允许通过端口]{style="font-family:宋体"}
+此模式下，报文首先进行OUI匹配，OUI匹配失败的报文再进行802.1X认证，OUI匹配成功和802.1X认证成功的报文都允许通过端口
 
-[ ]{lang="EN-US"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x519049424}
+·各端口安全模式的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[各端口安全模式的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_x2060_63618_x679738889}
+·端口安全模式与端口下的802.1X认证使能、端口接入控制方式、端口授权状态以及端口下的MAC地址认证使能配置互斥。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[端口安全模式与端口下的]{style="font-family:宋体"}]{#struct_0_x2060_63618_x1451270703}[802.1X]{lang="EN-US"}[认证使能、端口接入控制方式、端口授权状态以及端口下的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址认证使能配置互斥。]{style="font-family:宋体"}
+·当端口安全已经使能且当前端口安全模式不是noRestrictions时，若要改变端口安全模式，必须首先执行**undo port-security port-mode**命令恢复端口安全模式为noRestrictions模式。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当端口安全已经使能且当前端口安全模式不是]{lang="EN-US" style="font-family:宋体"}[noRestrictions]{lang="EN-US"}]{#struct_0_x2060_63618_x810703994}[时，若要改变端口安全模式，必须首先执行]{lang="EN-US" style="font-family:宋体"}**[undo port-security port-mode]{lang="EN-US"}**[命令恢复端口安全模式为]{lang="EN-US" style="font-family:宋体"}[noRestrictions]{lang="EN-US"}[模式。]{lang="EN-US" style="font-family:宋体"}
+·配置端口安全autoLearn模式时，首先需要通过命令**port-security max-mac-count**设置端口安全允许的最大安全MAC地址数。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[配置端口安全]{lang="EN-US" style="font-family:宋体"}[autoLearn]{lang="EN-US"}]{#struct_0_x2060_63618_x1828162312}[模式时，首先需要通过命令]{lang="EN-US" style="font-family:宋体"}**[port-security max-mac-count]{lang="EN-US"}**[设置端口安全允许的最大安全]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数。]{lang="EN-US" style="font-family:宋体"}
+·端口上有用户在线的情况下，端口安全模式无法改变。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[端口上有用户在线的情况下，端口安全模式无法改变。]{style="font-family:宋体"}]{#struct_0_x2060_63618_1368933032}
+·开启了MAC地址认证延迟功能的接口上不建议同时配置端口安全的模式为**mac-else-userlogin-secure**或**mac-else-userlogin-secure-ext**，否则MAC地址认证延迟功能不生效。MAC地址认证延迟功能的具体配置请参见"安全命令参考"中的"MAC地址认证"。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[开启了]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_x757354379}[地址认证延迟功能的接口上不建议同时配置端口安全的模式为]{lang="EN-US" style="font-family:宋体"}**[mac-else-userlogin-secure]{lang="EN-US"}**[或]{lang="EN-US" style="font-family:宋体"}**[mac-else-userlogin-secure-ext]{lang="EN-US"}**[，否则]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址认证延迟功能不生效。]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址认证延迟功能的具体配置请参见"安全命令参考"中的"]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址认证"。]{style="font-family:宋体"}
+·部分端口安全模式的配置生效情况与设备的型号有关，请以设备的实际情况为准。即，部分设备上不支持autoLearn模式、基于MAC地址的802.1X认证的端口安全模式（userLoginSecure userLoginWithOUI userLoginSecureExt）以及基于MAC地址认证的端口安全模式（macAddressWithRadius、macAddressOrUserLoginSecure、macAddressElseUserLoginSecure、macAddressOrUserLoginSecureExt、macAddressElseUserLoginSecureExt），因此相关配置不生效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[部分端口安全模式的配置生效情况与设备的型号有关，请以设备的实际情况为准。即，]{style="font-family:宋体"}]{#struct_0_x2060_63618_378085332}[部分设备上不支持]{style="font-family:宋体"}[autoLearn]{lang="EN-US"}[模式、]{style="font-family:宋体"}[基于]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的]{style="font-family:宋体"}[802.1X]{lang="EN-US"}[认证的端口安全模式（]{style="font-family:宋体"}[userLoginSecure userLoginWithOUI userLoginSecureExt]{lang="EN-US"}[）以及基于]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址认证的端口安全模式（]{style="font-family:宋体"}[macAddressWithRadius]{lang="EN-US"}[、]{style="font-family:宋体"}[macAddressOrUserLoginSecure]{lang="EN-US"}[、]{style="font-family:宋体"}[macAddressElseUserLoginSecure]{lang="EN-US"}[、]{style="font-family:宋体"}[macAddressOrUserLoginSecureExt]{lang="EN-US"}[、]{style="font-family:宋体"}[macAddressElseUserLoginSecureExt]{lang="EN-US"}[），因此相关配置不生效。]{style="font-family:
-宋体"}
+表1-5 接口支持的端口安全模式列表
 
-[[表1-5 ]{lang="EN-US"}[接口支持的端口安全模式列表]{style="font-family:黑体"}]{#struct_0_x2060_63618_584251626}
+接口类型
 
-[]{#table_struct_0_649735264}[[接口类型]{style="font-family:黑体"}]{#struct_0_x2060_63618_847345559}
+支持的端口安全模式
 
-[[支持的端口安全模式]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1291736074}
+二层以太网接口
 
-[[二层以太网接口]{style="font-family:宋体"}]{#struct_0_x2060_63618_x1289437725}
+**[autolearn**]、**mac-authentication**、**mac-else-userlogin-secure**、**mac-else-userlogin-secure-ext**、**secure**、**userlogin**、**userlogin-secure**、**userlogin-secure-ext**、**userlogin-secure-or-mac**、**userlogin-secure-or-mac-ext**、**userlogin-withoui**
 
-[**[autolearn]{lang="EN-US"}**]{#struct_0_x2060_63618_1741042529}[、]{style="font-family:宋体"}**[mac-authentication]{lang="EN-US"}**[、]{style="font-family:宋体"}**[mac-else-userlogin-secure]{lang="EN-US"}**[、]{style="font-family:宋体"}**[mac-else-userlogin-secure-ext]{lang="EN-US"}**[、]{style="font-family:
-  宋体"}**[secure]{lang="EN-US"}**[、]{style="font-family:
-  宋体"}**[userlogin]{lang="EN-US"}**[、]{style="font-family:
-  宋体"}**[userlogin-secure]{lang="EN-US"}**[、]{style="font-family:宋体"}**[userlogin-secure-ext]{lang="EN-US"}**[、]{style="font-family:宋体"}**[userlogin-secure-or-mac]{lang="EN-US"}**[、]{style="font-family:宋体"}**[userlogin-secure-or-mac-ext]{lang="EN-US"}**[、]{style="font-family:宋体"}**[userlogin-withoui]{lang="EN-US"}**
+三层以太网接口
 
-[[三层以太网接口]{style="font-family:宋体"}]{#struct_0_x2060_63618_1368867496}
+**[mac-authentication**]、**mac-else-userlogin-secure**、**mac-else-userlogin-secure-ext**、**userlogin-secure**、**userlogin-secure-ext**、**userlogin-secure-or-mac**、**userlogin-secure-or-mac-ext**
 
-[**[mac-authentication]{lang="EN-US"}**]{#struct_0_x2060_63618_818578184}[、]{style="font-family:宋体"}**[mac-else-userlogin-secure]{lang="EN-US"}**[、]{style="font-family:宋体"}**[mac-else-userlogin-secure-ext]{lang="EN-US"}**[、]{style="font-family:
-  宋体"}**[userlogin-secure]{lang="EN-US"}**[、]{style="font-family:宋体"}**[userlogin-secure-ext]{lang="EN-US"}**[、]{style="font-family:宋体"}**[userlogin-secure-or-mac]{lang="EN-US"}**[、]{style="font-family:宋体"}**[userlogin-secure-or-mac-ext]{lang="EN-US"}**
+备注：三层以太网接口下配置安全模式的支持情况与产品型号有关
 
-[[备注：三层以太网接口下配置安全模式的支持情况与产品型号有关]{style="font-family:宋体"}]{#struct_0_x2060_63618_2688399}
+【举例】
 
-[ ]{lang="EN-US"}
+\# 使能端口安全，并配置端口GigabitEthernet1/0/1的端口安全模式为secure。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1986709740}
+\<Sysname\> system-view
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_151135769}[使能端口安全，并配置端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的端口安全模式为]{style="font-family:宋体"}[secure]{lang="EN-US"}[。]{style="font-family:宋体"}
+Sysname port-security enable
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x2060_63618_x897812007}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname\] port-security enable]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 port-security port-mode secure
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+\# 将端口GigabitEthernet1/1的端口安全模式改变为userLogin。
 
-[\[Sysname-GigabitEthernet1/0/1\] port-security port-mode secure]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 undo port-security port-mode
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_1368801960}[将端口]{style="font-family:宋体"}[GigabitEthernet1/1]{lang="EN-US"}[的端口安全模式改变为]{style="font-family:宋体"}[userLogin]{lang="EN-US"}[。]{style="font-family:宋体"}
+Sysname-GigabitEthernet1/0/1 port-security port-mode userlogin
 
-[[\[Sysname-GigabitEthernet1/0/1\] undo port-security port-mode]{lang="EN-US"}]{#struct_0_x2060_63618_1958397797}
+【相关命令】
 
-[\[Sysname-GigabitEthernet1/]{lang="FR"}[0/]{lang="EN-US"}[1\] port-security port-mode userlogin]{lang="FR"}
+·**display port-security**
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1169945840}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display port-security]{lang="EN-US"}**]{#struct_0_x2060_63618_x1431529040}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[port-security max-mac-count]{lang="EN-US"}**]{#struct_0_x2060_63618_x13259898}
-
-::: {#-1822212030 .myid}
-[]{#_Toc257729114}[]{#_Toc131563066}[]{#_Toc404792859}[]{#struct_0_x2060_63618_1677100884}[]{#_Toc269744548}[]{#_Toc286752740}[]{#_Toc286753578}[]{#_Toc286853455}[]{#_Toc286853684}[]{#_Toc293341734}[]{#_Toc286752743}[]{#_Toc286753581}[]{#_Toc286853458}[]{#_Toc286853687}[]{#_Toc293341737}[]{#_Toc286752745}[]{#_Toc286753583}[]{#_Toc286853460}[]{#_Toc286853689}[]{#_Toc293341739}[]{#_Toc286752746}[]{#_Toc286753584}[]{#_Toc286853461}[]{#_Toc286853690}[]{#_Toc293341740}[]{#_Toc286752748}[]{#_Toc286753586}[]{#_Toc286853463}[]{#_Toc286853692}[]{#_Toc293341742}[]{#_Toc286752749}[]{#_Toc286753587}[]{#_Toc286853464}[]{#_Toc286853693}[]{#_Toc293341743}[]{#_Toc286752750}[]{#_Toc286753588}[]{#_Toc286853465}[]{#_Toc286853694}[]{#_Toc293341744}[]{#_Toc286752751}[]{#_Toc286753589}[]{#_Toc286853466}[]{#_Toc286853695}[]{#_Toc293341745}[]{#_Toc286752752}[]{#_Toc286753590}[]{#_Toc286853467}[]{#_Toc286853696}[]{#_Toc293341746}[]{#_Toc286752753}[]{#_Toc286753591}[]{#_Toc286853468}[]{#_Toc286853697}[]{#_Toc293341747}[]{#_Toc286752754}[]{#_Toc286753592}[]{#_Toc286853469}[]{#_Toc286853698}[]{#_Toc293341748}[]{#_Toc286752755}[]{#_Toc286753593}[]{#_Toc286853470}[]{#_Toc286853699}[]{#_Toc293341749}[]{#_Toc286752756}[]{#_Toc286753594}[]{#_Toc286853471}[]{#_Toc286853700}[]{#_Toc293341750}[]{#_Toc286752757}[]{#_Toc286753595}[]{#_Toc286853472}[]{#_Toc286853701}[]{#_Toc293341751}[]{#_Toc286752758}[]{#_Toc286753596}[]{#_Toc286853473}[]{#_Toc286853702}[]{#_Toc293341752}[]{#_Toc286752759}[]{#_Toc286753597}[]{#_Toc286853474}[]{#_Toc286853703}[]{#_Toc293341753}[]{#_Toc286752760}[]{#_Toc286753598}[]{#_Toc286853475}[]{#_Toc286853704}[]{#_Toc293341754}[]{#_Toc286752761}[]{#_Toc286753599}[]{#_Toc286853476}[]{#_Toc286853705}[]{#_Toc293341755}[]{#_Toc286752762}[]{#_Toc286753600}[]{#_Toc286853477}[]{#_Toc286853706}[]{#_Toc293341756}[]{#_Toc286752763}[]{#_Toc286753601}[]{#_Toc286853478}[]{#_Toc286853707}[]{#_Toc293341757}[]{#_Toc286752767}[]{#_Toc286753605}[]{#_Toc286853482}[]{#_Toc286853711}[]{#_Toc293341761}[]{#_Toc286752768}[]{#_Toc286753606}[]{#_Toc286853483}[]{#_Toc286853712}[]{#_Toc293341762}[]{#_Toc286752771}[]{#_Toc286753609}[]{#_Toc286853486}[]{#_Toc286853715}[]{#_Toc293341765}[]{#_Toc286752774}[]{#_Toc286753612}[]{#_Toc286853489}[]{#_Toc286853718}[]{#_Toc293341768}[]{#_Toc286752775}[]{#_Toc286753613}[]{#_Toc286853490}[]{#_Toc286853719}[]{#_Toc293341769}[]{#_Toc286752776}[]{#_Toc286753614}[]{#_Toc286853491}[]{#_Toc286853720}[]{#_Toc293341770}[]{#_Toc286752779}[]{#_Toc286753617}[]{#_Toc286853494}[]{#_Toc286853723}[]{#_Toc293341773}[]{#_Toc286752780}[]{#_Toc286753618}[]{#_Toc286853495}[]{#_Toc286853724}[]{#_Toc293341774}[]{#_Toc286752783}[]{#_Toc286753621}[]{#_Toc286853498}[]{#_Toc286853727}[]{#_Toc293341777}[]{#_Toc286752784}[]{#_Toc286753622}[]{#_Toc286853499}[]{#_Toc286853728}[]{#_Toc293341778}[]{#_Toc286752785}[]{#_Toc286753623}[]{#_Toc286853500}[]{#_Toc286853729}[]{#_Toc293341779}[]{#_Toc286752787}[]{#_Toc286753625}[]{#_Toc286853502}[]{#_Toc286853731}[]{#_Toc293341781}
+·**port-security max-mac-count**
 
 **端口安全 \-- 端口安全配置命令 \-- port-security timer autolearn aging**
 
 ------------------------------------------------------------------------
 
-[**[port-security timer autolearn aging]{lang="EN-US"}**]{#struct_0_x2060_63618_x1695206177}[命令用来配置安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的老化时间。]{style="font-family:宋体"}
+**[port-security timer autolearn aging**]命令用来配置安全MAC地址的老化时间。
 
-[**[undo port-security timer autolearn aging]{lang="EN-US"}**]{#struct_0_x2060_63618_x455721166}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo port-security timer autolearn aging**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_450919951}
+【命令】
 
-[**[port-security timer autolearn aging ]{lang="EN-US"}***[time-value]{lang="EN-US"}*]{#struct_0_x2060_63618_1369260712}
+**[port-security timer autolearn aging ***time-value*]
 
-[**[undo port-security timer autolearn aging]{lang="EN-US"}**]{#struct_0_x2060_63618_2018661389}
+**[undo port-security timer autolearn aging**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1374848067}
+【缺省情况】
 
-[[安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_x253063379}[地址不会老化。]{style="font-family:宋体"}
+安全MAC地址不会老化。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1218669615}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x2060_63618_x281782578}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1632871466}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2060_63618_x495812990}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2060_63618_x686015110}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1369195176}
+【参数】
 
-[*[time-value]{lang="EN-US"}*]{#struct_0_x2060_63618_x1160602953}[：安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的老化时间，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[129600]{lang="EN-US"}[，单位为分钟，取值为]{style="font-family:宋体"}[0]{lang="EN-US"}[表示不会老化。]{style="font-family:宋体"}
+*[time-value*]：安全MAC地址的老化时间，取值范围为0～129600，单位为分钟，取值为0表示不会老化。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x994067189}
+【使用指导】
 
-[[安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x2060_63618_607820244}[地址的老化时间对所有端口学习到的安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址以及手工添加的]{style="font-family:宋体"}[Sticky MAC]{lang="EN-US"}[地址均有效。]{style="font-family:宋体"}
+安全MAC地址的老化时间对所有端口学习到的安全MAC地址以及手工添加的Sticky MAC地址均有效。
 
-[[较短的老化时间可提高端口接入的安全性和端口资源的利用率，但也会影响在线用户的在线稳定性，因此需要结合当前的网络环境和设备的性能合理设置老化时间。]{style="font-family:宋体"}]{#struct_0_x2060_63618_1707933818}
+较短的老化时间可提高端口接入的安全性和端口资源的利用率，但也会影响在线用户的在线稳定性，因此需要结合当前的网络环境和设备的性能合理设置老化时间。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x805786074}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_x1845044550}[配置安全]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的老化时间为]{style="font-family:宋体"}[30]{lang="EN-US"}[分钟。]{style="font-family:宋体"}
+\# 配置安全MAC地址的老化时间为30分钟。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x2060_63618_252553645}
+\<Sysname\> system-view
 
-[\[Sysname\] port-security timer autolearn aging 30]{lang="EN-US"}
+Sysname port-security timer autolearn aging 30
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1369129640}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display port-security]{lang="EN-US"}**]{#struct_0_x2060_63618_x1868487820}
+·**display port-security**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[port-security mac-address security]{lang="EN-US"}**]{#struct_0_x2060_63618_1641370250}
-:::
-
-::: {#-1965773354 .myid}
-[]{#_Toc404792860}[]{#struct_0_x2060_63618_x361020421}
+·**port-security mac-address security**
 
 **端口安全 \-- 端口安全配置命令 \-- port-security timer disableport**
 
 ------------------------------------------------------------------------
 
-[**[port-security timer disableport]{lang="EN-US"}**]{#struct_0_x2060_63618_x1729879966}[命令用来配置系统暂时关闭端口的时间。]{style="font-family:宋体"}
+**[port-security timer disableport**]命令用来配置系统暂时关闭端口的时间。
 
-[**[undo port-security timer disableport]{lang="EN-US"}**]{#struct_0_x2060_63618_x1400878425}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo port-security timer disableport**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1116906465}
+【命令】
 
-[**[port-security timer disableport ]{lang="EN-US"}***[time-value]{lang="EN-US"}*]{#struct_0_x2060_63618_450316707}
+**[port-security timer disableport ***time-value*]
 
-[**[undo port-security timer disableport]{lang="EN-US"}**]{#struct_0_x2060_63618_x382374827}
+**[undo port-security timer disableport**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1369064104}
+【缺省情况】
 
-[[系统暂时关闭端口的时间为]{style="font-family:宋体"}[20]{lang="EN-US"}]{#struct_0_x2060_63618_432023096}[秒。]{style="font-family:宋体"}
+系统暂时关闭端口的时间为20秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x380625115}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x2060_63618_454921266}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x970373672}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x2060_63618_1778742976}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x2060_63618_1402543572}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x2060_63618_x1709527385}
+【参数】
 
-[*[time-value]{lang="EN-US"}*]{#struct_0_x2060_63618_x1704360487}[：端口关闭的时间，取值范围为]{style="font-family:宋体"}[20]{lang="EN-US"}[～]{style="font-family:宋体"}[300]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[time-value*]：端口关闭的时间，取值范围为20～300，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1369522856}
+【使用指导】
 
-[[当]{style="font-family:宋体"}**[port-security intrusion-mode]{lang="EN-US"}**]{#struct_0_x2060_63618_x1167049636}[设置为]{style="font-family:宋体"}**[disableport-temporarily]{lang="EN-US"}**[模式时，系统暂时关闭端口的时间由该命令配置。]{style="font-family:宋体"}
+当**port-security intrusion-mode**设置为**disableport-temporarily**模式时，系统暂时关闭端口的时间由该命令配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x2060_63618_409740556}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x2060_63618_1390322177}[配置端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的入侵检测特性检测到非法报文后，将收到非法报文的端口暂时关闭]{style="font-family:宋体"}[30]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置端口GigabitEthernet1/0/1的入侵检测特性检测到非法报文后，将收到非法报文的端口暂时关闭30秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x2060_63618_x163549287}
+\<Sysname\> system-view
 
-[\[Sysname\] port-security timer disableport 30]{lang="EN-US"}
+Sysname port-security timer disableport 30
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] port-security intrusion-mode disableport-temporarily]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 port-security intrusion-mode disableport-temporarily
 
-[]{#_Toc257729115}[]{#_Toc131563067}[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x2060_63618_1430909168}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display port-security]{lang="EN-US"}**]{#struct_0_x2060_63618_157238323}
+·**display port-security**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[port-security intrusion-mode]{lang="EN-US"}**]{#struct_0_x2060_63618_x1520129599}
+·**port-security intrusion-mode**
 
-[ ]{lang="EN-US"}
-:::

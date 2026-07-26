@@ -1,2550 +1,2326 @@
-::::: {#853638386 .myid}
-[]{#_Toc379547053}[]{#_Toc375835809}[]{#_Toc404798630}[]{#struct_0_10286_17180_x69427510}[]{#_Toc384042036}[]{#_Toc383786740}[]{#_Toc383097749}[]{#_Toc376856930}[]{#_Toc371411810}
 
 **NVGRE \-- NVGRE配置命令 \-- arp suppression enable**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](NVGRE命令.files/image001.png){width="63" height="25"}]{lang="EN-US"}]{#struct_0_10286_17180_1072464723}
-:::
+![说明](NVGRE命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_10286_17180_153356017}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[arp suppression enable**]命令用来开启ARP泛洪抑制功能。
 
-[**[arp suppression enable]{lang="EN-US"}**]{#struct_0_10286_17180_x1296100236}[命令用来开启]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制功能。]{style="font-family:宋体"}
+**[undo arp suppression enable**]命令用来恢复缺省情况。
 
-[**[undo arp suppression enable]{lang="EN-US"}**]{#struct_0_10286_17180_x1202785817}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_526498874}
+**[arp suppression enable**]
 
-[]{#_Toc178914661}[**[arp suppression enable]{lang="EN-US"}**]{#struct_0_10286_17180_1344707813}
+**[undo arp suppression enable**]
 
-[**[undo arp suppression enable]{lang="EN-US"}**]{#struct_0_10286_17180_1079245935}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10286_17180_875402007}
+ARP泛洪抑制功能处于关闭状态。
 
-[[ARP]{lang="EN-US"}]{#struct_0_10286_17180_x1388931791}[泛洪抑制功能处于关闭状态。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_2093248645}
+VSI视图
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_86681358}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_1882622942}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_x1880650250}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_596412960}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10286_17180_x2103700884}
+为了避免广播发送的ARP请求报文占用核心网络带宽，NVE从本地站点、NVGRE隧道接收到ARP请求和ARP应答报文后，根据该报文在本地建立ARP泛洪抑制表项。后续当NVE收到本站点内虚拟机请求其它虚拟机MAC地址的ARP请求时，优先根据ARP泛洪抑制表项进行代答。如果没有对应的表项，则将ARP请求泛洪到核心网。ARP泛洪抑制功能可以大大减少ARP泛洪的次数。
 
-[[为了避免广播发送的]{style="font-family:宋体"}[ARP]{lang="EN-US"}]{#struct_0_10286_17180_1729614953}[请求报文占用核心网络带宽，]{style="font-family:宋体"}[NVE]{lang="EN-US"}[从本地站点、]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[隧道接收到]{style="font-family:宋体"}[ARP]{lang="EN-US"}[请求和]{style="font-family:宋体"}[ARP]{lang="EN-US"}[应答报文后，根据该报文在本地建立]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。后续当]{style="font-family:宋体"}[NVE]{lang="EN-US"}[收到本站点内虚拟机请求其它虚拟机]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[请求时，优先根据]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项进行代答。如果没有对应的表项，则将]{style="font-family:宋体"}[ARP]{lang="EN-US"}[请求泛洪到核心网。]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制功能可以大大减少]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪的次数。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_1873174830}
+\# 在VSI vsi1下开启ARP泛洪抑制功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x2044459181}[在]{style="font-family:宋体"}[VSI vsi1]{lang="EN-US"}[下开启]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10286_17180_1686725076}
+Sysname vsi vsi1
 
-[\[Sysname\] vsi vsi1]{lang="EN-US"}
+Sysname-vsi-vsi1 arp suppression enable
 
-[\[Sysname-vsi-vsi1\] arp suppression enable]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_177152150}
+·**display arp suppression**** vsi**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display arp suppression]{lang="EN-US"}**]{#struct_0_10286_17180_x1487159352}**[ vsi]{lang="EN-US"}**
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset arp suppression]{lang="EN-US"}**]{#struct_0_10286_17180_x1932926530}**[ vsi]{lang="EN-US"}**
-:::::
-
-::::: {#1742433432 .myid}
-[]{#_Toc404798631}[]{#struct_0_10286_17180_x1589963463}[]{#_Toc375835896}[]{#_Toc290542288}
+·**reset arp suppression**** vsi**
 
 **NVGRE \-- NVGRE配置命令 \-- bandwidth**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](NVGRE命令.files/image001.png){width="63" height="25"}]{lang="EN-US"}]{#struct_0_10286_17180_2098066154}
-:::
+![说明](NVGRE命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_10286_17180_x387566233}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[bandwidth**]命令用来配置接口的期望带宽。
 
-[**[bandwidth]{lang="DA"}**]{#struct_0_10286_17180_x266654208}[命令用来配置接口的期望带宽。]{style="font-family:宋体"}
+**[undo bandwidth**]命令用来恢复缺省情况。
 
-[**[undo bandwidth]{lang="DA"}**]{#struct_0_10286_17180_1965945842}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_x563701328}
+**[bandwidth** *bandwidth-value*]
 
-[**[bandwidth]{lang="EN-US"}**[ *bandwidth-value*]{lang="EN-US"}]{#struct_0_10286_17180_x827484673}
+**[undo bandwidth**]
 
-[**[undo bandwidth]{lang="EN-US"}**]{#struct_0_10286_17180_2094477041}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10286_17180_1743236091}
+接口的期望带宽＝接口的最大速率÷1000（kbit/s）。
 
-[[接口的期望带宽＝接口的最大速率÷]{style="font-family:宋体"}[1000]{lang="EN-US"}]{#struct_0_10286_17180_99518574}[（]{style="font-family:宋体"}[kbit/s]{lang="EN-US"}[）。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_x2103056889}
+VSI虚接口视图
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x88814573}[虚接口视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_1556319085}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_x1877387928}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_x313854206}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_x891509363}
+*[bandwidth-value*]：接口的期望带宽，取值范围为1～400000000，单位为kbps。
 
-[*[bandwidth-value]{lang="EN-US"}*]{#struct_0_10286_17180_x449442667}[：]{style="font-family:宋体"}[接口的期望带宽]{style="font-family:宋体"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[400000000]{lang="EN-US"}[，单位为]{style="font-family:宋体"}[kbps]{lang="EN-US"}[。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10286_17180_x746575842}
+接口的期望带宽会对下列内容有影响：
 
-[[接口的期望带宽会对下列内容有影响：]{style="font-family:宋体"}]{#struct_0_10286_17180_x2087931039}
+·CBQ队列带宽。具体介绍请参见"ACL和QoS配置指导"中的"[拥塞管理"。]
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[CBQ]{lang="EN-US"}]{#struct_0_10286_17180_316200686}[队列带宽。具体介绍请参见"]{style="font-family:宋体"}[ACL]{lang="EN-US"}[和]{style="font-family:宋体"}[QoS]{lang="EN-US"}[配置指导"中的"[拥塞管理]{#_Toc263760148}"。]{style="font-family:宋体"}
+·链路开销值。具体介绍请参见"三层技术-IP路由配置指导"中的"OSPF"、"OSPFv3"和"IS-IS"。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[链路开销值。具体介绍请参见"三层技术]{lang="EN-US" style="font-family:宋体"}[-IP]{lang="EN-US"}]{#struct_0_10286_17180_x629416904}[路由配置指导"中的"]{lang="EN-US" style="font-family:宋体"}[OSPF]{lang="EN-US"}["、"]{lang="EN-US" style="font-family:宋体"}[OSPFv3]{lang="EN-US"}["和"]{lang="EN-US" style="font-family:宋体"}[IS-IS]{lang="EN-US"}["。]{lang="EN-US" style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1044965343}
+\# 配置接口VSI-interface100的期望带宽为10000kbps。
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x459255623}[配置接口]{style="font-family:宋体"}[VSI-interface100]{lang="EN-US"}[的]{style="font-family:宋体"}[期望带宽]{style="font-family:宋体"}[为]{style="font-family:宋体"}[10000kbps]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10286_17180_958769886}
+Sysname interface vsi-interface 100
 
-[\[Sysname\] interface vsi-interface 100]{lang="EN-US"}
-
-[\[Sysname-Vsi-interface100\] bandwidth 10000]{lang="EN-US"}
-:::::
-
-::: {#1948332219 .myid}
-[]{#_Toc404798632}[]{#struct_0_10286_17180_x43585543}[]{#_Toc375835897}[]{#_Toc290542290}
+Sysname-Vsi-interface100 bandwidth 10000
 
 **NVGRE \-- NVGRE配置命令 \-- default**
 
 ------------------------------------------------------------------------
 
-[**[default]{lang="EN-US"}**]{#struct_0_10286_17180_1523096593}[命令用来恢复当前接口的缺省配置。]{style="font-family:宋体"}
+**[default**]命令用来恢复当前接口的缺省配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_1265453730}
+【命令】
 
-[**[default]{lang="EN-US"}**]{#struct_0_10286_17180_x1821200102}
+**[default**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_x597293585}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_1682884521}[虚接口视图]{style="font-family:宋体"}
+VSI虚接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_1429293271}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_936667037}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_1778413867}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10286_17180_631941403}
+【使用指导】
 
-[[接口下的某些配置恢复到缺省情况后，会对设备上当前运行的业务产生影响。建议您在执行该命令前，完全了解其对网络产生的影响。]{style="font-family:宋体"}]{#struct_0_10286_17180_616741259}
+接口下的某些配置恢复到缺省情况后，会对设备上当前运行的业务产生影响。建议您在执行该命令前，完全了解其对网络产生的影响。
 
-[[您可以在执行]{style="font-family:宋体"}**[default]{lang="EN-US"}**]{#struct_0_10286_17180_x1960698110}[命令后通过]{style="font-family:宋体"}**[display this]{lang="EN-US"}**[命令确认执行效果。对于未能成功恢复缺省的配置，建议您查阅相关功能的命令手册，手工执行恢复该配置缺省情况的命令。如果操作仍然不能成功，您可以通过设备的提示信息定位原因。]{style="font-family:宋体"}
+您可以在执行**default**命令后通过**display this**命令确认执行效果。对于未能成功恢复缺省的配置，建议您查阅相关功能的命令手册，手工执行恢复该配置缺省情况的命令。如果操作仍然不能成功，您可以通过设备的提示信息定位原因。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_1026632441}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_1896750288}[将接口]{style="font-family:宋体"}[VSI-interface100]{lang="EN-US"}[恢复为缺省配置。]{style="font-family:宋体"}
+\# 将接口VSI-interface100恢复为缺省配置。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10286_17180_697129028}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vsi-interface 100]{lang="EN-US"}
+Sysname interface vsi-interface 100
 
-[\[Sysname-Vsi-interface100\] default]{lang="EN-US"}
+Sysname-Vsi-interface100 default
 
-[This command will restore the default settings. Continue? \[Y/N\]:y]{lang="EN-US"}
-:::
-
-::: {#-1798254511 .myid}
-[]{#_Toc404798633}[]{#struct_0_10286_17180_1381832520}
+This command will restore the default settings. Continue? [Y/N:y]
 
 **NVGRE \-- NVGRE配置命令 \-- description (VSI view)**
 
 ------------------------------------------------------------------------
 
-[**[description]{lang="EN-US"}**]{#struct_0_10286_17180_x1792216318}[命令用来设置]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的描述信息。]{style="font-family:宋体"}
+**[description**]命令用来设置VSI的描述信息。
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_10286_17180_x468628328}[命令用来删除]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的描述信息。]{style="font-family:宋体"}
+**[undo description**]命令用来删除VSI的描述信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_1319795884}
+【命令】
 
-[**[description ]{lang="EN-US"}***[text]{lang="EN-US"}*]{#struct_0_10286_17180_x599301491}
+**[description ***text*]
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_10286_17180_1509404991}
+**[undo description**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1633880614}
+【缺省情况】
 
-[[未配置]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10286_17180_1225546990}[的描述信息。]{style="font-family:宋体"}
+未配置VSI的描述信息。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_x395425264}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x40729604}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_1900927474}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_x1423671145}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_x2061738841}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_x226132377}
+【参数】
 
-[*[text]{lang="EN-US"}*]{#struct_0_10286_17180_x576132602}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的描述信息，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[80]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[text*]：VSI的描述信息，为1～80个字符的字符串，区分大小写。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1767707855}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x718733041}[配置名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的描述信息为"]{style="font-family:宋体"}[vsi for vpn1]{lang="EN-US"}["。]{style="font-family:宋体"}
+\# 配置名为vpn1的VSI的描述信息为"vsi for vpn1"。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10286_17180_1914467570}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname vsi vpn1
 
-[\[Sysname-vsi-vpn1\] description vsi for vpn1]{lang="EN-US"}
+Sysname-vsi-vpn1 description vsi for vpn1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1182303943}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn vsi]{lang="EN-US"}**]{#struct_0_10286_17180_400568808}
-:::
-
-::: {#-2134435914 .myid}
-[]{#_Toc404798634}[]{#struct_0_10286_17180_1109898365}[]{#_Toc375835898}
+·**display l2vpn vsi**
 
 **NVGRE \-- NVGRE配置命令 \-- description (VSI interface view)**
 
 ------------------------------------------------------------------------
 
-[**[description]{lang="EN-US"}**]{#struct_0_10286_17180_x193345600}[命令用来配置当前接口的描述信息。]{style="font-family:宋体"}
+**[description**]命令用来配置当前接口的描述信息。
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_10286_17180_983721204}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo description**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_x567862241}
+【命令】
 
-[**[description]{lang="EN-US"}**[ *text*]{lang="EN-US"}]{#struct_0_10286_17180_493161209}
+**[description** *text*]
 
-[**[undo]{lang="EN-US"}**[ **description**]{lang="EN-US"}]{#struct_0_10286_17180_x1585321459}
+**[undo** **description**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10286_17180_x231963572}
+【缺省情况】
 
-[[接口的描述信息为"*接口名*]{style="font-family:宋体"}[ Interface]{lang="EN-US"}]{#struct_0_10286_17180_738547598}["，例如：]{style="font-family:宋体"}[Vsi-interface100 Interface]{lang="EN-US"}[。]{style="font-family:宋体"}
+接口的描述信息为"*接口名* Interface"，例如：Vsi-interface100 Interface。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_x133651449}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x660574658}[虚接口视图]{style="font-family:宋体"}
+VSI虚接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_x631639149}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_417469205}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_1377503741}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1745162151}
+【参数】
 
-[*[text]{lang="EN-US"}*]{#struct_0_10286_17180_136655311}[：接口的描述字符串，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[text*]：接口的描述字符串，为1～255个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10286_17180_997110011}
+【使用指导】
 
-[[当设备上存在多个接口时，可以根据接口的连接信息或用途来配置接口的描述信息，以便区别和管理各接口。]{style="font-family:宋体"}]{#struct_0_10286_17180_x1354280207}
+当设备上存在多个接口时，可以根据接口的连接信息或用途来配置接口的描述信息，以便区别和管理各接口。
 
-[[本命令仅用于标识某接口，并无特别的功能。使用]{style="font-family:宋体"}**[display interface]{lang="EN-US"}**]{#struct_0_10286_17180_1912564608}[等命令可以看到设置的描述信息。]{style="font-family:宋体"}
+本命令仅用于标识某接口，并无特别的功能。使用**display interface**等命令可以看到设置的描述信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1043540242}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_695510870}[配置接口]{style="font-family:宋体"}[VSI-interface100]{lang="EN-US"}[的描述信息为"]{style="font-family:宋体"}[gateway for NVGRE 5000]{lang="EN-US"}["。]{style="font-family:宋体"}
+\# 配置接口VSI-interface100的描述信息为"gateway for NVGRE 5000"。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10286_17180_966831107}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vsi-interface 100]{lang="EN-US"}
+Sysname interface vsi-interface 100
 
-[\[Sysname-Vsi-interface100\] description gateway for NVGRE 5000]{lang="EN-US"}
-:::
-
-::::: {#-530734358 .myid}
-[]{#_Toc404798635}[]{#struct_0_10286_17180_x1986271598}[]{#_Toc384042038}[]{#_Toc383786741}[]{#_Toc383097750}[]{#_Toc376856931}[]{#_Toc371411811}
+Sysname-Vsi-interface100 description gateway for NVGRE 5000
 
 **NVGRE \-- NVGRE配置命令 \-- display arp suppression vsi**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](NVGRE命令.files/image001.png){width="63" height="25"}]{lang="EN-US"}]{#struct_0_10286_17180_x2110168450}
-:::
+![说明](NVGRE命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_10286_17180_1340017100}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[display arp suppression vsi**]命令用来显示VSI的ARP泛洪抑制表项信息。
 
-[**[display arp suppression vsi]{lang="EN-US"}**]{#struct_0_10286_17180_110165199}[命令用来显示]{style="font-family:
-宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项信息。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1124296630}
+集中式设备：
 
-[]{#_Toc178914662}[[集中式设备：]{style="font-family:宋体"}]{#struct_0_10286_17180_2080900561}
+**[display arp suppression vsi** [ **name** *vsi-name*   **count** ]]
 
-[**[display arp suppression vsi]{lang="EN-US"}**[ \[ **name** *vsi-name* \] \[ **count** \]]{lang="EN-US"}]{#struct_0_10286_17180_x712283742}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_10286_17180_x1529646043}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+**[display arp suppression vsi** [ **name** *vsi-name*   **slot** *slot-number* [ **cpu** *cpu-number*  ]  **count** ]]
 
-[**[display arp suppression vsi]{lang="EN-US"}**[ \[ **name** *vsi-name* \] \[ **slot** *slot-number* \[ **cpu** *cpu-number* \] \] \[ **count** \]]{lang="EN-US"}]{#struct_0_10286_17180_887763064}
+分布式设备－IRF模式：
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_10286_17180_848318034}[模式：]{style="font-family:宋体"}
+**[display arp suppression vsi** [ **name** *vsi-name*   **chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number*  ]  **count** ]]
 
-[**[display arp suppression vsi]{lang="EN-US"}**[ \[ **name** *vsi-name* \] \[ **chassis** *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \] \] \[ **count** \]]{lang="EN-US"}]{#struct_0_10286_17180_33657118}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_713472107}
+任意视图
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10286_17180_x1388866255}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_x552449885}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_368321229}
+network-operator
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10286_17180_1086227840}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_875156873}
+mdc-operator
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_10286_17180_x2040995025}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_1473425009}
+**[name*** vsi-name*]：显示指定VSI的ARP泛洪抑制表项。如果不指定本参数，则显示所有VSI的ARP泛洪抑制表项。
 
-[**[name]{lang="EN-US"}***[ vsi-name]{lang="EN-US"}*]{#struct_0_10286_17180_270701140}[：显示指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。如果不指定本参数，则显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定单板的ARP泛洪抑制表项。*slot-number*表示单板所在的槽位号。如果不指定本参数，将显示主用主控板上的ARP泛洪抑制表项。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_10286_17180_x1932162045}[：显示指定单板的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果不指定本参数，将显示主用主控板上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备的ARP泛洪抑制表项。*slot-number*表示设备在IRF中的成员编号。如果不指定本参数，将显示主设备上的ARP泛洪抑制表项。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_10286_17180_2028005585}[：显示指定成员设备的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。如果不指定本参数，将显示主设备上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备/PEX的ARP泛洪抑制表项。*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果不指定本参数，将显示主设备上的ARP泛洪抑制表项。（集中式IRF设备）（支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_10286_17180_x1743861370}[：显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。如果不指定本参数，将显示主设备上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定成员设备上指定单板的ARP泛洪抑制表项。*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果不指定本参数，将显示全局主用主控板上的ARP泛洪抑制表项。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_10286_17180_1290124532}[：显示指定成员设备上指定单板的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果不指定本参数，将显示全局主用主控板上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定成员设备上指定单板的ARP泛洪抑制表项。*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。如果不指定本参数，将显示全局主用主控板上的ARP泛洪抑制表项。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_10286_17180_177217686}[：显示指定成员设备上指定单板的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。如果不指定本参数，将显示全局主用主控板上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[cpu ***cpu-number*]：显示指定CPU上的ARP泛洪抑制表项。*cpu-number*表示CPU编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[**[cpu ]{lang="EN-US"}***[cpu-number]{lang="EN-US"}*]{#struct_0_10286_17180_1482092687}[：显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号。只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[count**]：显示ARP泛洪抑制表项的个数。
 
-[**[count]{lang="EN-US"}**]{#struct_0_10286_17180_427068980}[：显示]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项的个数。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_x571144361}
+\# 显示所有VSI的ARP泛洪抑制表项信息。（集中式设备）
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_578278501}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项信息。（集中式设备）]{style="font-family:宋体"}
+\<Sysname\> display arp suppression vsi
 
-[[\<Sysname\> display arp suppression vsi]{lang="EN-US"}]{#struct_0_10286_17180_x1882739174}
+IP address      MAC address    Vsi Name                        Link ID    Aging
 
-[IP address      MAC address    Vsi Name                        Link ID    Aging]{lang="EN-US"}
+1.1.1.2         000f-e201-0101 vsi1                            0x70000    14
 
-[1.1.1.2         000f-e201-0101 vsi1                            0x70000    14]{lang="EN-US"}
+1.1.1.3         000f-e201-0202 vsi1                            0x80000    18
 
-[1.1.1.3         000f-e201-0202 vsi1                            0x80000    18]{lang="EN-US"}
+1.1.1.4         000f-e201-0203 vsi2                            0x90000    10
 
-[1.1.1.4         000f-e201-0203 vsi2                            0x90000    10]{lang="EN-US"}
+\# 显示所有VSI的ARP泛洪抑制表项个数。（集中式设备）
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x669443215}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项个数。（集中式设备）]{style="font-family:宋体"}
+\<Sysname\> display arp suppression vsi count
 
-[[\<Sysname\> display arp suppression vsi count]{lang="EN-US"}]{#struct_0_10286_17180_1743301627}
+Total entries: 3
 
-[Total entries: 3]{lang="EN-US"}
+\# 显示主用主控板上的ARP泛洪抑制表项信息。（分布式设备－独立运行模式）
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x1880115055}[显示主用主控板上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项信息。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+\<Sysname\> display arp suppression vsi
 
-[[\<Sysname\> display arp suppression vsi]{lang="EN-US"}]{#struct_0_10286_17180_x906190911}
+IP address      MAC address    Vsi Name                        Link ID    Aging
 
-[IP address      MAC address    Vsi Name                        Link ID    Aging]{lang="EN-US"}
+1.1.1.2         000f-e201-0101 vsi1                            0x70000    14
 
-[1.1.1.2         000f-e201-0101 vsi1                            0x70000    14]{lang="EN-US"}
+1.1.1.3         000f-e201-0202 vsi1                            0x80000    18
 
-[1.1.1.3         000f-e201-0202 vsi1                            0x80000    18]{lang="EN-US"}
+1.1.1.4         000f-e201-0203 vsi2                            0x90000    10
 
-[1.1.1.4         000f-e201-0203 vsi2                            0x90000    10]{lang="EN-US"}
+\# 显示主用主控板上的ARP泛洪抑制表项个数。（分布式设备－独立运行模式）
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_1372123360}[显示主用主控板上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项个数。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+\<Sysname\> display arp suppression vsi count
 
-[[\<Sysname\> display arp suppression vsi count]{lang="EN-US"}]{#struct_0_10286_17180_977381765}
+Total entries: 3
 
-[Total entries: 3]{lang="EN-US"}
+\# 显示主设备上的ARP泛洪抑制表项信息。（集中式IRF设备）
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_1461885602}[显示主设备上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\<Sysname\> display arp suppression vsi
 
-[[\<Sysname\> display arp suppression vsi]{lang="EN-US"}]{#struct_0_10286_17180_x629351368}
+IP address      MAC address    Vsi Name                        Link ID    Aging
 
-[IP address      MAC address    Vsi Name                        Link ID    Aging]{lang="EN-US"}
+1.1.1.2         000f-e201-0101 vsi1                            0x70000    14
 
-[1.1.1.2         000f-e201-0101 vsi1                            0x70000    14]{lang="EN-US"}
+1.1.1.3         000f-e201-0202 vsi1                            0x80000    18
 
-[1.1.1.3         000f-e201-0202 vsi1                            0x80000    18]{lang="EN-US"}
+1.1.1.4         000f-e201-0203 vsi2                            0x90000    10
 
-[1.1.1.4         000f-e201-0203 vsi2                            0x90000    10]{lang="EN-US"}
+\# 显示主设备上的ARP泛洪抑制表项个数。（集中式IRF设备）
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_1708094891}[显示主设备上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项个数。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\<Sysname\> display arp suppression vsi count
 
-[[\<Sysname\> display arp suppression vsi count]{lang="EN-US"}]{#struct_0_10286_17180_x211159474}
+Total entries: 3
 
-[Total entries: 3]{lang="EN-US"}
+\# 显示全局主用主控板上的ARP泛洪抑制表项信息。（分布式设备－IRF模式）
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x1748499886}[显示全局主用主控板上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\<Sysname\> display arp suppression vsi
 
-[[\<Sysname\> display arp suppression vsi]{lang="EN-US"}]{#struct_0_10286_17180_x69428225}
+IP address      MAC address    Vsi Name                        Link ID    Aging
 
-[IP address      MAC address    Vsi Name                        Link ID    Aging]{lang="EN-US"}
+1.1.1.2         000f-e201-0101 vsi1                            0x70000    14
 
-[1.1.1.2         000f-e201-0101 vsi1                            0x70000    14]{lang="EN-US"}
+1.1.1.3         000f-e201-0202 vsi1                            0x80000    18
 
-[1.1.1.3         000f-e201-0202 vsi1                            0x80000    18]{lang="EN-US"}
+1.1.1.4         000f-e201-0203 vsi2                            0x90000    10
 
-[1.1.1.4         000f-e201-0203 vsi2                            0x90000    10]{lang="EN-US"}
+\# 显示全局主用主控板上的ARP泛洪抑制表项个数。（分布式设备－IRF模式）
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_1854487625}[显示全局主用主控板上的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项个数。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\<Sysname\> display arp suppression vsi count
 
-[[\<Sysname\> display arp suppression vsi count]{lang="EN-US"}]{#struct_0_10286_17180_x297601966}
+Total entries: 3
 
-[Total entries: 3]{lang="EN-US"}
+表1-1 display arp suppression vsi命令显示信息描述表
 
-[[表1-1 ]{lang="EN-US"}[display arp suppression vsi]{lang="EN-US"}]{#struct_0_10286_17180_1219539406}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1744358475}[[字段]{style="font-family:黑体"}]{#struct_0_10286_17180_x333957953}
-:::::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10286_17180_936732573}
+IP Address
 
-[[IP Address]{lang="EN-US"}]{#struct_0_10286_17180_1403762945}
+ARP泛洪抑制表项的IP地址
 
-[[ARP]{lang="EN-US"}]{#struct_0_10286_17180_x510444969}[泛洪抑制表项的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+MAC Address
 
-[[MAC Address]{lang="EN-US"}]{#struct_0_10286_17180_x888625906}
+ARP泛洪抑制表项的MAC地址
 
-[[ARP]{lang="EN-US"}]{#struct_0_10286_17180_x60715981}[泛洪抑制表项的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+Vsi Name
 
-[[Vsi Name]{lang="EN-US"}]{#struct_0_10286_17180_940837456}
+VSI名称
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_178459775}[名称]{style="font-family:宋体"}
+Link ID
 
-[[Link ID]{lang="EN-US"}]{#struct_0_10286_17180_x58927974}
+MAC表项的出链路标识符，用来在VSI内唯一标识一条AC或一条NVGRE隧道
 
-[[MAC]{lang="EN-US"}]{#struct_0_10286_17180_x936700922}[表项的出链路标识符，用来在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内唯一标识一条]{style="font-family:宋体"}[AC]{lang="EN-US"}[或一条]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[隧道]{style="font-family:宋体"}
+Aging
 
-[[Aging]{lang="EN-US"}]{#struct_0_10286_17180_x1792150782}
+ARP泛洪抑制表项的老化时间，单位为分钟
 
-[[ARP]{lang="EN-US"}]{#struct_0_10286_17180_x2118899678}[泛洪抑制表项的老化时间，单位为分钟]{style="font-family:宋体"}
+Total entries
 
-[[Total entries]{lang="EN-US"}]{#struct_0_10286_17180_x1731894923}
+ARP泛洪抑制表项的数目
 
-[[ARP]{lang="EN-US"}]{#struct_0_10286_17180_1839551458}[泛洪抑制表项的数目]{style="font-family:宋体"}
+【相关命令】
 
-[ ]{lang="EN-US"}
+·**arp suppression enable**
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_x338255910}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[arp suppression enable]{lang="EN-US"}**]{#struct_0_10286_17180_340892393}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset arp suppression]{lang="EN-US"}**]{#struct_0_10286_17180_1702143401}**[ vsi]{lang="EN-US"}**
-
-::: {#429599933 .myid}
-[]{#_Toc404798636}[]{#struct_0_10286_17180_x122835153}[]{#_Toc375835899}
+·**reset arp suppression**** vsi**
 
 **NVGRE \-- NVGRE配置命令 \-- display interface vsi-interface**
 
 ------------------------------------------------------------------------
 
-[**[display interface ]{lang="EN-US"}**]{#struct_0_10286_17180_x226066841}**[vsi-interface]{lang="DE"}**[命令用来显示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口的相关信息。]{style="font-family:宋体"}
+**[display interface **]**vsi-interface**命令用来显示VSI虚接口的相关信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_1431246650}
+【命令】
 
-[**[display interface]{lang="EN-US"}**[ \[ ]{lang="EN-US"}]{#struct_0_10286_17180_x561763286}**[vsi-interface]{lang="DE"}**[ \[ *vsi-interface-id* \] \] \[ **brief** \[ **description** \| **down** \] \]]{lang="EN-US"}
+**[display interface** **vsi-interface** [ *vsi-interface-id*    **brief** [ **description** \| **down** ] ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1111785665}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10286_17180_x265123668}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_531922572}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_x540323278}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10286_17180_x417817494}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_x272152637}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_10286_17180_806021937}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_983786740}
+【参数】
 
-[*[vsi-nterface-id]{lang="EN-US"}*]{#struct_0_10286_17180_x2107189798}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[vsi-nterface-id*]：VSI虚接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[**[brief]{lang="EN-US"}**]{#struct_0_10286_17180_x783662512}[：显示接口的概要信息。如果不指定该参数，则显示接口的详细信息。]{style="font-family:宋体"}
+**[brief**]：显示接口的概要信息。如果不指定该参数，则显示接口的详细信息。
 
-[**[description]{lang="EN-US"}**]{#struct_0_10286_17180_x333620234}[：用来显示用户配置的接口的全部描述信息。如果某接口的描述信息超过]{style="font-family:宋体"}[27]{lang="EN-US"}[个字符，不指定该参数时，只显示描述信息中的前]{style="font-family:宋体"}[27]{lang="EN-US"}[个字符，超出部分不显示；指定该参数时，可以显示全部描述信息。]{style="font-family:宋体"}
+**[description**]：用来显示用户配置的接口的全部描述信息。如果某接口的描述信息超过27个字符，不指定该参数时，只显示描述信息中的前27个字符，超出部分不显示；指定该参数时，可以显示全部描述信息。
 
-[**[down]{lang="EN-US"}**]{#struct_0_10286_17180_788521682}[：显示当前物理状态为]{style="font-family:宋体"}[down]{lang="EN-US"}[的接口的信息以及]{style="font-family:宋体"}[down]{lang="EN-US"}[的原因。如果不指定该参数，则不会根据接口物理状态来过滤显示信息。]{style="font-family:宋体"}
+**[down**]：显示当前物理状态为down的接口的信息以及down的原因。如果不指定该参数，则不会根据接口物理状态来过滤显示信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10286_17180_x832420126}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果不指定接口类型（]{lang="EN-US" style="font-family:宋体"}]{#struct_0_10286_17180_x720837995}**[vsi-interface]{lang="DE"}**[），将显示设备支持的所有接口的相关信息。]{lang="EN-US" style="font-family:宋体"}
+·如果不指定接口类型（**vsi-interface**），将显示设备支持的所有接口的相关信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定接口类型，不指定接口编号（]{lang="EN-US" style="font-family:宋体"}*[vsi-interface-id]{lang="EN-US"}*]{#struct_0_10286_17180_899124553}[）]{lang="EN-US" style="font-family:
-宋体"}[，则显示所有]{lang="EN-US" style="font-family:宋体"}[VSI]{lang="EN-US"}[虚]{style="font-family:宋体"}[接口的信息。]{lang="EN-US" style="font-family:宋体"}
+·如果指定接口类型，不指定接口编号（*vsi-interface-id*），则显示所有VSI虚接口的信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果同时指定接口类型和接口编号，则显示指定]{style="font-family:宋体"}]{#struct_0_10286_17180_870305868}[VSI]{lang="EN-US"}[虚接口的信息。]{style="font-family:宋体"}
+·如果同时指定接口类型和接口编号，则显示指定VSI虚接口的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_592962130}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x1745096615}[显示接口]{style="font-family:宋体"}[VSI-interface100]{lang="EN-US"}[的相关信息。]{style="font-family:宋体"}
+\# 显示接口VSI-interface100的相关信息。
 
-[[\<Sysname\> ]{lang="EN-US"}]{#struct_0_10286_17180_1462636529}[display interface vsi-interface 100]{lang="NL-BE"}
+\<Sysname\> display interface vsi-interface 100
 
-[Vsi-interface100]{lang="IT"}
+Vsi-interface100
 
-[Current state: UP]{lang="IT"}
+Current state: UP
 
-[Line protocol state: UP]{lang="IT"}
+Line protocol state: UP
 
-[Description: Vsi-interface100 Interface]{lang="IT"}
+Description: Vsi-interface100 Interface
 
-[Bandwidth: 1000000kbps]{lang="IT"}
+Bandwidth: 1000000kbps
 
-[Maximum Transmit Unit: 1500]{lang="IT"}
+Maximum Transmit Unit: 1500
 
-[Internet Address is 10.1.1.1/24 Primary]{lang="IT"}
+Internet Address is 10.1.1.1/24 Primary
 
-[IP Packet Frame Type:PKTFMT_ETHNT_2, Hardware Address: 0011-2200-0102]{lang="IT"}
+IP Packet Frame Type:PKTFMT_ETHNT_2, Hardware Address: 0011-2200-0102
 
-[IPv6 Packet Frame Type:PKTFMT_ETHNT_2, Hardware Address: 0011-2200-0102]{lang="IT"}
+IPv6 Packet Frame Type:PKTFMT_ETHNT_2, Hardware Address: 0011-2200-0102
 
-[Physical: Unknown, baudrate: 1000000 kbps]{lang="IT"}
+Physical: Unknown, baudrate: 1000000 kbps
 
-[Last clearing of counters: Never]{lang="IT"}
+Last clearing of counters: Never
 
-[Last 300 seconds input rate: 0 bytes/sec, 0 bits/sec, 0 packets/sec]{lang="IT"}
+Last 300 seconds input rate: 0 bytes/sec, 0 bits/sec, 0 packets/sec
 
-[Last 300 seconds output rate: 0 bytes/sec, 0 bits/sec, 0 packets/sec]{lang="IT"}
+Last 300 seconds output rate: 0 bytes/sec, 0 bits/sec, 0 packets/sec
 
-[Input: 0 packets, 0 bytes, 0 drops]{lang="IT"}
+Input: 0 packets, 0 bytes, 0 drops
 
-[Output: 0 packets, 0 bytes, 0 drops]{lang="IT"}
+Output: 0 packets, 0 bytes, 0 drops
 
-[[表1-2 ]{lang="EN-US"}[display interface vsi-interface]{lang="EN-US"}]{#struct_0_10286_17180_x648474838}[命令显示信息描述表]{style="font-family:黑体"}
+表1-2 display interface vsi-interface命令显示信息描述表
 
-[]{#table_struct_0_1736946169}[[字段]{style="font-family:黑体"}]{#struct_0_10286_17180_x922730780}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10286_17180_1340082636}
+描述
 
-[[Vsi-interface100]{lang="NL-BE"}]{#struct_0_10286_17180_505633441}
+Vsi-interface100
 
-[[接口]{style="font-family:宋体"}]{#struct_0_10286_17180_x569032251}[VSI-interface100]{lang="NL-BE"}[的相关信息]{style="font-family:宋体"}
+接口VSI-interface100的相关信息
 
-[[C]{lang="NL-BE"}[urrent state]{lang="EN-US"}]{#struct_0_10286_17180_1840777618}
+Current state
 
-[[接口的物理状态和管理状态，取值包括：]{style="font-family:宋体"}]{#struct_0_10286_17180_1768750191}
+接口的物理状态和管理状态，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Administr]{lang="EN-US"}]{#struct_0_10286_17180_1696682865}[a]{lang="EN-US"}[t]{lang="EN-US"}[ive]{lang="EN-US"}[ly DOWN]{lang="EN-US"}[：表示该接口已经通过]{lang="EN-US" style="font-family:宋体"}**[shutdown]{lang="EN-US"}**[命令被关闭，即管理状态为关闭]{lang="EN-US" style="font-family:宋体"}
+·Administratively DOWN：表示该接口已经通过**shutdown**命令被关闭，即管理状态为关闭
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_10286_17180_971796270}[：该接口的管理状态为开启，但物理状态为关闭]{style="font-family:宋体"}
+·DOWN：该接口的管理状态为开启，但物理状态为关闭
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_10286_17180_1338260191}[：该接口的管理状态和物理状态均为开启]{style="font-family:宋体"}
+·UP：该接口的管理状态和物理状态均为开启
 
-[[Line protocol state]{lang="EN-US"}]{#struct_0_10286_17180_x1388800719}
+Line protocol state
 
-[[接口的链路层协议状态。其值由链路层经过参数协商决定，取值包括：]{style="font-family:宋体"}]{#struct_0_10286_17180_330991144}
+接口的链路层协议状态。其值由链路层经过参数协商决定，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_10286_17180_x1048604960}[：表示该接口的链路层协议状态为开启]{style="font-family:宋体"}
+·UP：表示该接口的链路层协议状态为开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP (spoofing)]{lang="EN-US"}]{#struct_0_10286_17180_x426860770}[：表示该接口的链路层协议状态为开启，但实际可能没有对应的链路，或者所对应的链路不是永久存在而是按需建立。通常]{style="font-family:宋体"}[NULL]{lang="EN-US"}[、]{style="font-family:宋体"}[LoopBack]{lang="EN-US"}[等接口会具有该属性]{style="font-family:宋体"}
+·UP (spoofing)：表示该接口的链路层协议状态为开启，但实际可能没有对应的链路，或者所对应的链路不是永久存在而是按需建立。通常NULL、LoopBack等接口会具有该属性
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_10286_17180_x1114897959}[：表示该接口的链路层协议状态为关闭]{style="font-family:宋体"}
+·DOWN：表示该接口的链路层协议状态为关闭
 
-[[Description]{lang="EN-US"}]{#struct_0_10286_17180_x1036194721}
+Description
 
-[[接口的描述信息]{style="font-family:宋体"}]{#struct_0_10286_17180_177283222}
+接口的描述信息
 
-[[Bandwidth]{lang="NL-BE"}]{#struct_0_10286_17180_1076829494}
+Bandwidth
 
-[[接口的期望带宽，单位为]{style="font-family:宋体"}[kbps]{lang="EN-US"}]{#struct_0_10286_17180_x1609622893}
+接口的期望带宽，单位为kbps
 
-[[Maximum Transmit Unit]{lang="EN-US"}]{#struct_0_10286_17180_148197299}
+Maximum Transmit Unit
 
-[[接口的最大传输单元]{style="font-family:宋体"}]{#struct_0_10286_17180_1774816542}
+接口的最大传输单元
 
-[[Internet protocol processing]{lang="EN-US"}]{#struct_0_10286_17180_2099376036}
+Internet protocol processing
 
-[[Tunnel]{lang="NO-BOK"}]{#struct_0_10286_17180_1743367163}[接口的]{style="font-family:宋体"}[IP]{lang="NO-BOK"}[地址。如果没有为]{style="font-family:宋体"}[Tunnel]{lang="NO-BOK"}[接口配置]{style="font-family:宋体"}[IP]{lang="NO-BOK"}[地址，则该字段显示为]{style="font-family:宋体"}[Internet protocol processing: disabled]{lang="EN-US"}[，表示不能处理]{style="font-family:宋体"}[IP]{lang="NO-BOK"}[报文]{style="font-family:宋体"}
+Tunnel接口的IP地址。如果没有为Tunnel接口配置IP地址，则该字段显示为Internet protocol processing: disabled，表示不能处理IP报文
 
-[[Primary]{lang="EN-US"}]{#struct_0_10286_17180_481164531}[表示该]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为接口的主]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+Primary表示该IP地址为接口的主IP地址
 
-[[IP Packet Frame Type]{lang="EN-US"}]{#struct_0_10286_17180_x327135558}[，]{style="font-family:宋体"}[Hardware Address]{lang="EN-US"}
+IP Packet Frame Type，Hardware Address
 
-[[IP]{lang="EN-US"}]{#struct_0_10286_17180_1991811841}[报文发送帧格式，硬件地址]{style="font-family:宋体"}
+IP报文发送帧格式，硬件地址
 
-[[IPv6 Packet Frame Type]{lang="EN-US"}]{#struct_0_10286_17180_126149390}[，]{style="font-family:宋体"}[Hardware Address]{lang="EN-US"}
+IPv6 Packet Frame Type，Hardware Address
 
-[[IPv6]{lang="EN-US"}]{#struct_0_10286_17180_x629285832}[报文发送帧格式，硬件地址]{style="font-family:宋体"}
+IPv6报文发送帧格式，硬件地址
 
-[[Physical]{lang="EN-US"}]{#struct_0_10286_17180_x1456364829}
+Physical
 
-[[接口的物理类型，取值为]{style="font-family:宋体"}[Unknown]{lang="EN-US"}]{#struct_0_10286_17180_589765237}
+接口的物理类型，取值为Unknown
 
-[[baudrate]{lang="IT"}]{#struct_0_10286_17180_1508400954}
+baudrate
 
-[[接口的波特率，单位为]{style="font-family:宋体"}]{#struct_0_10286_17180_x66509982}[kbps]{lang="IT"}
+接口的波特率，单位为kbps
 
-[[Last clearing of counters]{lang="EN-US"}]{#struct_0_10286_17180_323940388}
+Last clearing of counters
 
-[[最近一次使用]{style="font-family:宋体"}**[reset counters interface]{lang="EN-US"}**]{#struct_0_10286_17180_936798109}[命令清除接口下的统计信息的时间（如果从设备启动一直没有执行]{style="font-family:宋体"}**[reset counters interface]{lang="EN-US"}**[命令清除过该接口下的统计信息，则显示]{style="font-family:宋体"}[Never]{lang="EN-US"}[）]{style="font-family:宋体"}
+最近一次使用**reset counters interface**命令清除接口下的统计信息的时间（如果从设备启动一直没有执行**reset counters interface**命令清除过该接口下的统计信息，则显示Never）
 
-[[Last 300 seconds input rate]{lang="EN-US"}]{#struct_0_10286_17180_x1744115887}
+Last 300 seconds input rate
 
-[[最近]{style="font-family:宋体"}[300]{lang="EN-US"}]{#struct_0_10286_17180_x1238079816}[秒钟的平均输入速率：]{style="font-family:宋体"}[bytes/sec]{lang="EN-US"}[表示平均每秒输入的字节数，]{style="font-family:宋体"}[bits/sec]{lang="EN-US"}[表示平均每秒输入的比特数，]{style="font-family:宋体"}[packets/sec]{lang="EN-US"}[表示平均每秒输入的包数]{style="font-family:宋体"}
+最近300秒钟的平均输入速率：bytes/sec表示平均每秒输入的字节数，bits/sec表示平均每秒输入的比特数，packets/sec表示平均每秒输入的包数
 
-[[Last 300 seconds output rate]{lang="EN-US"}]{#struct_0_10286_17180_x50851592}
+Last 300 seconds output rate
 
-[[最近]{style="font-family:宋体"}[300]{lang="EN-US"}]{#struct_0_10286_17180_x1792085246}[秒钟的平均输出速率：]{style="font-family:宋体"}[bytes/sec]{lang="EN-US"}[表示平均每秒输出的字节数，]{style="font-family:宋体"}[bits/sec]{lang="EN-US"}[表示平均每秒输出的比特数，]{style="font-family:宋体"}[packets/sec]{lang="EN-US"}[表示平均每秒输出的包数]{style="font-family:宋体"}
+最近300秒钟的平均输出速率：bytes/sec表示平均每秒输出的字节数，bits/sec表示平均每秒输出的比特数，packets/sec表示平均每秒输出的包数
 
-[[Input: 0 packets, 0 bytes, 0 drops]{lang="NL-BE"}]{#struct_0_10286_17180_1555605918}
+Input: 0 packets, 0 bytes, 0 drops
 
-[[总计输入的报文数]{style="font-family:宋体"}[, ]{lang="EN-US"}]{#struct_0_10286_17180_686153160}[总计输入的字节，总计丢弃的输入报文数]{style="font-family:宋体"}
+总计输入的报文数, 总计输入的字节，总计丢弃的输入报文数
 
-[[Output: 0 packets, 0 bytes, 0 drops]{lang="NL-BE"}]{#struct_0_10286_17180_x2060408291}
+Output: 0 packets, 0 bytes, 0 drops
 
-[[总计输出的报文数]{style="font-family:宋体"}[, ]{lang="EN-US"}]{#struct_0_10286_17180_x1642756377}[总计输出的字节，总计丢弃的输出报文数]{style="font-family:宋体"}
+总计输出的报文数, 总计输出的字节，总计丢弃的输出报文数
 
-[ ]{lang="EN-US"}
+\# 显示所有VSI虚接口的概要信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x226001305}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口的概要信息。]{style="font-family:宋体"}
+\<Sysname\> display interface vsi-interface brief
 
-[[\<Sysname\> display interface vsi-interface brief]{lang="EN-US"}]{#struct_0_10286_17180_987919631}
+Brief information of interface(s) under route mode:
 
-[Brief information of interface(s) under route mode:]{lang="EN-US"}
+Link: ADM - administratively down; Stby - standby
 
-[Link: ADM - administratively down; Stby - standby]{lang="EN-US"}
+Protocol: (s) - spoofing
 
-[Protocol: (s) - spoofing]{lang="EN-US"}
+Interface            Link Protocol Main IP         Description
 
-[Interface            Link Protocol Main IP         Description]{lang="EN-US"}
+Vsi100               DOWN DOWN     \--
 
-[Vsi100               DOWN DOWN     \--]{lang="EN-US"}
+\# 显示接口VSI-interface100的概要信息，包括用户配置的全部描述信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x147845485}[显示接口]{style="font-family:宋体"}[VSI-interface100]{lang="EN-US"}[的概要信息，包括用户配置的全部描述信息。]{style="font-family:宋体"}
+\<Sysname\> display interface vsi-interface 100 brief description
 
-[[\<Sysname\> display interface vsi-interface 100 brief description]{lang="EN-US"}]{#struct_0_10286_17180_x102779895}
+Brief information of interface(s) under route mode:
 
-[Brief information of interface(s) under route mode:]{lang="EN-US"}
+Link: ADM - administratively down; Stby - standby
 
-[Link: ADM - administratively down; Stby - standby]{lang="EN-US"}
+Protocol: (s) - spoofing
 
-[Protocol: (s) - spoofing]{lang="EN-US"}
+Interface            Link Protocol Main IP         Description
 
-[Interface            Link Protocol Main IP         Description]{lang="EN-US"}
+Vsi100               UP    UP      1.1.1.1         VSI-interface100
 
-[Vsi100               UP    UP      1.1.1.1         VSI-interface100]{lang="EN-US"}
+\# 显示当前状态为down的接口的信息以及DOWN的原因。
 
-[ ]{lang="EN-US"}
+\<Sysname\> display interface brief down
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_1057295105}[显示当前状态为]{style="font-family:宋体"}[down]{lang="EN-US"}[的接口的信息以及]{style="font-family:宋体"}[DOWN]{lang="EN-US"}[的原因。]{style="font-family:宋体"}
+Brief information of interface(s) under route mode:
 
-[[\<Sysname\> display interface brief down]{lang="EN-US"}]{#struct_0_10286_17180_983852276}
+Link: ADM - administratively down; Stby - standby
 
-[Brief information of interface(s) under route mode:]{lang="NL-BE"}
+Interface            Link Cause
 
-[Link: ADM - administratively down; Stby - standby]{lang="NL-BE"}
+Vsi100               DOWN Administratively
 
-[Interface            Link Cause]{lang="NL-BE"}
+Vsi200               DOWN Administratively
 
-[Vsi100]{lang="EN-US"}[               DOWN ]{lang="NL-BE"}[Administratively]{lang="EN-US"}
+表1-3 display interface vsi-interface brief命令显示信息描述表
 
-[Vsi200]{lang="EN-US"}[               DOWN ]{lang="NL-BE"}[Administratively]{lang="EN-US"}
+字段
 
-[]{#struct_0_10286_17180_431365072}[[表1-3 ]{lang="EN-US"}[display interface vsi-interface brief]{lang="EN-US"}]{#_Ref129008332}[命令显示信息描述]{style="font-family:黑体"}[表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_1734611849}[[字段]{style="font-family:黑体"}]{#struct_0_10286_17180_x495193878}
+Brief information of interface(s) under route mode:
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10286_17180_x1093023796}
+三层模式下（route）的接口的概要信息，即三层接口的概要信息
 
-[[Brief information of interface(s) under route mode:]{lang="EN-US"}]{#struct_0_10286_17180_34502521}
+Link: ADM - administratively down; Stby - standby
 
-[[三层模式下（]{style="font-family:宋体"}[route]{lang="EN-US"}]{#struct_0_10286_17180_958933978}[）的接口的概要信息，即三层接口的概要信息]{style="font-family:宋体"}
+如果某接口的Link属性值为"ADM"，则表示该接口被管理员手工关闭了，需要在该接口下执行**undo shutdown**命令才能恢复端口本身的物理状态
 
-[[Link: ADM - administratively down; Stby - standby]{lang="EN-US"}]{#struct_0_10286_17180_x1745031079}
+如果某接口的Link属性值为"Stby"，则表示该接口是一个备份接口，使用**display interface-backup state**命令可以查看该备份接口对应的主接口。本状态的支持情况与设备的型号有关，请以设备的实际情况为准
 
-[[如果某接口的]{style="font-family:宋体"}[Link]{lang="EN-US"}]{#struct_0_10286_17180_1798170745}[属性值为"]{style="font-family:宋体"}[ADM]{lang="EN-US"}["，则表示该接口被管理员手工关闭了，需要在该接口下执行]{style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**[命令才能恢复端口本身的物理状态]{style="font-family:宋体"}
+Protocol: (s) - spoofing
 
-[[如果某接口的]{style="font-family:宋体"}[Link]{lang="EN-US"}]{#struct_0_10286_17180_955275409}[属性值为"]{style="font-family:宋体"}[Stby]{lang="EN-US"}["，则表示该接口是一个备份接口，使用]{style="font-family:宋体"}**[display interface-backup state]{lang="EN-US"}**[命令可以查看该备份接口对应的主接口。本状态的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:宋体"}
+如果某接口的Protocol属性值中带有"(s)"字符串，则表示该接口的网络层协议状态显示是UP的，但实际可能没有对应的链路，或者所对应的链路不是永久存在而是按需建立
 
-[[Protocol: (s) - spoofing]{lang="EN-US"}]{#struct_0_10286_17180_1939107938}
+Interface
 
-[[如果某接口的]{style="font-family:宋体"}[Protocol]{lang="EN-US"}]{#struct_0_10286_17180_x1753172182}[属性值中带有"]{style="font-family:宋体"}[(s)]{lang="EN-US"}["字符串，则表示该接口的网络层协议状态显示是]{style="font-family:宋体"}[UP]{lang="EN-US"}[的，但实际可能没有对应的链路，或者所对应的链路不是永久存在而是按需建立]{style="font-family:宋体"}
+接口名称缩写
 
-[[Interface]{lang="EN-US"}]{#struct_0_10286_17180_126294428}
+Link
 
-[[接口名称缩写]{style="font-family:宋体"}]{#struct_0_10286_17180_1339623884}
+接口物理连接状态，取值包括：
 
-[[Link]{lang="EN-US"}]{#struct_0_10286_17180_x2027189892}
+·UP：表示本链路物理上是连通的
 
-[[接口物理连接状态，取值包括：]{style="font-family:宋体"}]{#struct_0_10286_17180_901105612}
+·DOWN：表示本链路物理上是不通的
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_10286_17180_357043173}[：表示本链路物理上是连通的]{style="font-family:宋体"}
+·ADM：表示本链路被手工关闭了，需要执行**undo shutdown**命令才能恢复真实的物理状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_10286_17180_x2121942932}[：表示本链路物理上]{lang="EN-US" style="font-family:宋体"}[是]{style="font-family:宋体"}[不通的]{lang="EN-US" style="font-family:宋体"}
+·Stby：表示该接口是一个备份接口。本状态的支持情况与设备的型号有关，请以设备的实际情况为准
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ADM]{lang="EN-US"}]{#struct_0_10286_17180_x2000691878}[：表示本链路被手工关闭了，需要执行]{style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**[命令才能恢复真实的物理状态]{style="font-family:宋体"}
+Protocol
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Stby]{lang="EN-US"}]{#struct_0_10286_17180_x1389259471}[：表示该接口是一个备份接口。本状态的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:宋体"}
+接口的链路层协议状态。其值由链路层经过参数协商决定，取值包括：
 
-[[Protocol]{lang="EN-US"}]{#struct_0_10286_17180_1896562819}
+·UP：表示该接口的链路层协议状态为开启
 
-[[接口的链路层协议状态。其值由链路层经过参数协商决定，取值包括：]{style="font-family:宋体"}]{#struct_0_10286_17180_1907912405}
+·UP (s)：表示该接口的链路层协议状态为开启，但实际可能没有对应的链路，或者所对应的链路不是永久存在而是按需建立。通常NULL、LoopBack等接口会具有该属性
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_10286_17180_x597673587}[：表示该接口的链路层协议状态为开启]{style="font-family:宋体"}
+·DOWN：表示该接口的链路层协议状态为关闭
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP (s)]{lang="EN-US"}]{#struct_0_10286_17180_1711458461}[：表示该接口的链路层协议状态为开启，但实际可能没有对应的链路，或者所对应的链路不是永久存在而是按需建立。通常]{style="font-family:宋体"}[NULL]{lang="EN-US"}[、]{style="font-family:宋体"}[LoopBack]{lang="EN-US"}[等接口会具有该属性]{style="font-family:宋体"}
+Main IP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_10286_17180_483109238}[：表示该接口的链路层协议状态为关闭]{style="font-family:宋体"}
+接口主IP地址
 
-[[Main IP]{lang="EN-US"}]{#struct_0_10286_17180_984738134}
+Description
 
-[[接口主]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_10286_17180_176824470}[地址]{style="font-family:宋体"}
+接口的描述信息
 
-[[Description]{lang="EN-US"}]{#struct_0_10286_17180_x1418516871}
+Cause
 
-[[接口的描述信息]{style="font-family:宋体"}]{#struct_0_10286_17180_x336961567}
+接口物理连接状态为down的原因，取值为：
 
-[[Cause]{lang="EN-US"}]{#struct_0_10286_17180_1305964119}
+·Administratively：表示本链路被手工关闭了（配置了**shutdown**命令），需要执行**undo shutdown**命令才能恢复真实的物理状态
 
-[[接口物理连接状态为]{style="font-family:宋体"}[down]{lang="EN-US"}]{#struct_0_10286_17180_412415280}[的原因，取值为：]{style="font-family:宋体"}
+·Not connected：表示没有VSI关联该接口，或者关联该接口的VSI内没有AC或PW.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Administratively]{lang="EN-US"}]{#struct_0_10286_17180_1742908411}[：表示本链路被手工关闭了（配置了]{style="font-family:宋体"}**[shutdown]{lang="EN-US"}**[命令），需要执行]{style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**[命令才能恢复真实的物理状态]{style="font-family:宋体"}
+【相关命令】
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not connected]{lang="EN-US"}]{#struct_0_10286_17180_x1888688251}[：表示没有]{lang="EN-US" style="font-family:宋体"}[VSI]{lang="EN-US"}[关联该]{style="font-family:宋体"}[接口]{lang="EN-US" style="font-family:宋体"}[，]{style="font-family:宋体"}[或者]{lang="EN-US" style="font-family:宋体"}[关联该接口]{style="font-family:宋体"}[的]{lang="EN-US" style="font-family:宋体"}[VSI]{lang="EN-US"}[内]{style="font-family:宋体"}[没有]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}[或]{lang="EN-US" style="font-family:宋体"}[PW.]{lang="EN-US"}
-
-[ ]{lang="NL-BE"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1388680882}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset counters interface]{lang="EN-US"}**]{#struct_0_10286_17180_x2015979106}
-
-::: {#356357916 .myid}
-[]{#_Toc404798637}[]{#struct_0_10286_17180_x1701013304}
+·**reset counters interface**
 
 **NVGRE \-- NVGRE配置命令 \-- display l2vpn mac-address**
 
 ------------------------------------------------------------------------
 
-[**[display l2vpn mac-address]{lang="EN-US"}**]{#struct_0_10286_17180_x1324760067}[命令用来显示]{style="font-family:
-宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表信息。]{style="font-family:宋体"}
+**[display l2vpn mac-address**]命令用来显示VSI的MAC地址表信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1268162841}
+【命令】
 
-[**[display l2vpn mac-address ]{lang="EN-US"}**[\[ **vsi** *vsi-name* \] \[ **dynamic** \] \[ **count** \]]{lang="EN-US"}]{#struct_0_10286_17180_803899157}
+**[display l2vpn mac-address ** **vsi** *vsi-name* ]  **dynamic**   **count**
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_704428853}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10286_17180_x629744584}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_x195612906}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_x614253263}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10286_17180_893350947}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_208821913}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_10286_17180_x469419407}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_2113925383}
+【参数】
 
-[**[vsi]{lang="EN-US"}**[ *vsi-name*]{lang="EN-US"}]{#struct_0_10286_17180_x1519233756}[：显示指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表信息。]{style="font-family:宋体"}
+**[vsi** *vsi-name*]：显示指定VSI的MAC地址表信息。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，则显示所有VSI的MAC地址表信息。
 
-[**[dynamic]{lang="EN-US"}**]{#struct_0_10286_17180_x1995892697}[：显示通过源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址动态学习到的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。如果不指定本参数，则显示所有类型的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项，包括通过源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址动态学习的本地和远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项、静态配置的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[不支持静态配置本地]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}
+**[dynamic**]：显示通过源MAC地址动态学习到的MAC地址表项。如果不指定本参数，则显示所有类型的MAC地址表项，包括通过源MAC地址动态学习的本地和远端MAC地址表项、静态配置的远端MAC地址表项。NVGRE不支持静态配置本地MAC地址表项。
 
-[**[count]{lang="EN-US"}**]{#struct_0_10286_17180_8935765}[：显示]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项的数目。如果不指定本参数，则显示]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项的具体信息。]{style="font-family:宋体"}
+**[count**]：显示MAC地址表项的数目。如果不指定本参数，则显示MAC地址表项的具体信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_936339357}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_1601949639}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表信息。]{style="font-family:宋体"}
+\# 显示所有VSI的MAC地址表信息。
 
-[[\<Sysname\> display l2vpn mac-address]{lang="EN-US"}]{#struct_0_10286_17180_x1773781962}
+\<Sysname\> display l2vpn mac-address
 
-[MAC Address      State    VSI Name                        Link ID/Name  Aging]{lang="EN-US"}
+MAC Address      State    VSI Name                        Link ID/Name  Aging
 
-[0000-0000-000a   dynamic  vpn1                            1             Aging]{lang="EN-US"}
+0000-0000-000a   dynamic  vpn1                            1             Aging
 
-[0000-0000-000b   static   vpn1                            Tunnel10      NotAging]{lang="EN-US"}
+0000-0000-000b   static   vpn1                            Tunnel10      NotAging
 
-[0000-0000-000c   dynamic  vpn1                            Tunnel65535   Aging]{lang="EN-US"}
+0000-0000-000c   dynamic  vpn1                            Tunnel65535   Aging
 
-[0000-0000-000d   dynamic  vpn1                            Tunnel9999999 Aging]{lang="EN-US"}
+0000-0000-000d   dynamic  vpn1                            Tunnel9999999 Aging
 
-[\-\-- 4 mac address(es) found  \-\--]{lang="EN-US"}
+\-\-- 4 mac address(es) found  \-\--
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x788598543}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项总数。]{style="font-family:宋体"}
+\# 显示所有VSI的MAC地址表项总数。
 
-[[\<Sysname\> display l2vpn mac-address count]{lang="EN-US"}]{#struct_0_10286_17180_x294281226}
+\<Sysname\> display l2vpn mac-address count
 
-[4 mac address(es) found]{lang="EN-US"}
+4 mac address(es) found
 
-[[表1-4 ]{lang="EN-US"}[display l2vpn mac-address]{lang="EN-US"}]{#struct_0_10286_17180_577417446}[命令显示信息描述表]{style="font-family:黑体"}
+表1-4 display l2vpn mac-address命令显示信息描述表
 
-[]{#table_struct_0_1730197187}[[字段]{style="font-family:黑体"}]{#struct_0_10286_17180_x1413876147}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10286_17180_x654621219}
+描述
 
-[[MAC Address]{lang="EN-US"}]{#struct_0_10286_17180_x1792543998}
+MAC Address
 
-[[MAC]{lang="EN-US"}]{#struct_0_10286_17180_542331273}[地址]{style="font-family:宋体"}
+MAC地址
 
-[[State]{lang="EN-US"}]{#struct_0_10286_17180_x855962568}
+State
 
-[[MAC]{lang="EN-US"}]{#struct_0_10286_17180_x739309134}[地址的状态，取值包括：]{style="font-family:宋体"}
+MAC地址的状态，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[dynamic]{lang="EN-US"}]{#struct_0_10286_17180_1607013003}[：表示]{style="font-family:宋体"}[通过源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址动态学习的本地或远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项]{style="font-family:宋体"}
+·dynamic：表示通过源MAC地址动态学习的本地或远端MAC地址表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[static]{lang="EN-US"}]{#struct_0_10286_17180_x2117292210}[：表示静态配置的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项]{style="font-family:宋体"}
+·static：表示静态配置的远端MAC地址表项
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_10286_17180_1467745776}
+VSI Name
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_1487051385}[名称]{style="font-family:宋体"}
+VSI名称
 
-[[Link ID/Name]{lang="EN-US"}]{#struct_0_10286_17180_x970003451}
+Link ID/Name
 
-[[对于本端]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_10286_17180_x226460057}[地址，为]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的出链路标识符，即]{style="font-family:宋体"}[AC]{lang="EN-US"}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的链路标识符；对于远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，为]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址对应的隧道名称]{style="font-family:宋体"}
+对于本端MAC地址，为MAC地址的出链路标识符，即AC在VSI内的链路标识符；对于远端MAC地址，为MAC地址对应的隧道名称
 
-[[Aging]{lang="EN-US"}]{#struct_0_10286_17180_x171966117}
+Aging
 
-[[MAC]{lang="EN-US"}]{#struct_0_10286_17180_1631633031}[地址表项是否老化，取值包括]{style="font-family:宋体"}[Aging]{lang="EN-US"}[和]{style="font-family:宋体"}[NotAging]{lang="EN-US"}
+MAC地址表项是否老化，取值包括Aging和NotAging
 
-[[XX mac address(es) found]{lang="EN-US"}]{#struct_0_10286_17180_x731739790}
+XX mac address(es) found
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x187165959}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项的总数]{style="font-family:宋体"}
+VSI的MAC地址表项的总数
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_x963212437}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset l2vpn mac-address]{lang="EN-US"}**]{#struct_0_10286_17180_1874856405}
-
-::: {#-1122099741 .myid}
-[]{#_Toc404798638}[]{#struct_0_10286_17180_983393524}[]{#_Toc379547057}[]{#_Toc375835820}
+·**reset l2vpn mac-address**
 
 **NVGRE \-- NVGRE配置命令 \-- display l2vpn service-instance**
 
 ------------------------------------------------------------------------
 
-[**[display l2vpn service-instance]{lang="EN-US"}**]{#struct_0_10286_17180_882568457}[命令用来显示以太网服务实例的信息。]{style="font-family:
-宋体"}
+**[display l2vpn service-instance**]命令用来显示以太网服务实例的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_1403091650}
+【命令】
 
-[**[display l2vpn service-instance ]{lang="EN-US"}**[\[ **interface**]{lang="EN-US"}*[ interface-type interface-number]{lang="EN-US"}*[ \[ **service-instance** *instance-id* \] \] \[ **verbose** \]]{lang="EN-US"}]{#struct_0_10286_17180_x982214520}
+**[display l2vpn service-instance ** **interface**]* interface-type interface-number* [ **service-instance** *instance-id*  ]  **verbose**
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_x2126113102}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10286_17180_x530927766}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_1580565796}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_x817447460}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10286_17180_503990078}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_x62520568}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_10286_17180_1610719964}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1745489831}
+【参数】
 
-[**[interface]{lang="EN-US"}***[ interface-type interface-number]{lang="EN-US"}*]{#struct_0_10286_17180_x1494939652}[：显示指定二层以太网接口或二层聚合接口上的以太网服务实例信息。]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[为接口类型和接口编号。如果没有指定本参数，则显示所有二层以太网接口和二层聚合接口上的以太网服务实例信息。]{style="font-family:
-宋体"}
+**[interface*** interface-type interface-number*]：显示指定二层以太网接口或二层聚合接口上的以太网服务实例信息。*interface-type interface-number*为接口类型和接口编号。如果没有指定本参数，则显示所有二层以太网接口和二层聚合接口上的以太网服务实例信息。
 
-[**[service-instance]{lang="EN-US"}***[ instance-id]{lang="EN-US"}*]{#struct_0_10286_17180_463258624}[：显示指定以太网服务实例的信息。]{style="font-family:宋体"}*[instance-id]{lang="EN-US"}*[为以太网服务实例的]{style="font-family:宋体"}[ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4096]{lang="EN-US"}[。如果指定了]{style="font-family:宋体"}**[interface]{lang="EN-US"}***[ interface-type interface-number]{lang="EN-US"}*[参数，没有指定本参数，则显示指定二层以太网接口或二层聚合接口上所有以太网服务实例的信息。]{style="font-family:
-宋体"}
+**[service-instance*** instance-id*]：显示指定以太网服务实例的信息。*instance-id*为以太网服务实例的ID，取值范围为1～4096。如果指定了**interface*** interface-type interface-number*参数，没有指定本参数，则显示指定二层以太网接口或二层聚合接口上所有以太网服务实例的信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_10286_17180_x485157112}[：显示详细信息。如果不指定本参数，则显示简要信息。]{style="font-family:宋体"}
+**[verbose**]：显示详细信息。如果不指定本参数，则显示简要信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_307667513}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x1658680679}[显示所有以太网服务实例的简要信息。]{style="font-family:宋体"}
+\# 显示所有以太网服务实例的简要信息。
 
-[[\<Sysname\> display l2vpn service-instance]{lang="EN-US"}]{#struct_0_10286_17180_679156077}
+\<Sysname\> display l2vpn service-instance
 
-[Total number of service-instances: 4, 4 up, 0 down]{lang="EN-US"}
+Total number of service-instances: 4, 4 up, 0 down
 
-[Total number of ACs: 4, 4 up, 0 down]{lang="EN-US"}
+Total number of ACs: 4, 4 up, 0 down
 
-[ ]{lang="EN-US"}
+Interface                SrvID Owner                           LinkID State Type
 
-[Interface                SrvID Owner                           LinkID State Type]{lang="EN-US"}
+GE1/0/3                  1     vsi10                           1      Up    VSI
 
-[GE1/0/3                  1     vsi10                           1      Up    VSI]{lang="EN-US"}
+GE1/0/3                  2     vsi11                           1      Up    VSI
 
-[GE1/0/3                  2     vsi11                           1      Up    VSI]{lang="EN-US"}
+GE1/0/3                  3     vsi12                           1      Up    VSI
 
-[GE1/0/3                  3     vsi12                           1      Up    VSI]{lang="EN-US"}
+GE1/0/3                  4     vsi13                           1      Up    VSI
 
-[GE1/0/3                  4     vsi13                           1      Up    VSI]{lang="EN-US"}
+表1-5 display l2vpn service-instance命令显示信息描述表
 
-[[表1-5 ]{lang="EN-US"}[display l2vpn service-instance]{lang="EN-US"}]{#struct_0_10286_17180_721631837}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_2029050331}[[字段]{style="font-family:黑体"}]{#struct_0_10286_17180_1339689420}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10286_17180_x845527788}
+Total number of service-instances
 
-[[Total number of service-instances]{lang="EN-US"}]{#struct_0_10286_17180_x1250047440}
+以太网服务实例的总数，及处于up和down状态的以太网服务实例数目
 
-[[以太网服务实例的总数，及处于]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_10286_17180_2112618768}[和]{style="font-family:宋体"}[down]{lang="EN-US"}[状态的以太网服务实例数目]{style="font-family:宋体"}
+Total number of ACs
 
-[[Total number of ACs]{lang="EN-US"}]{#struct_0_10286_17180_x1172791872}
+AC的总数，及处于up和down状态的AC数目
 
-[[AC]{lang="EN-US"}]{#struct_0_10286_17180_x201486202}[的总数，及处于]{style="font-family:宋体"}[up]{lang="EN-US"}[和]{style="font-family:宋体"}[down]{lang="EN-US"}[状态的]{style="font-family:宋体"}[AC]{lang="EN-US"}[数目]{style="font-family:宋体"}
+Interface
 
-[[Interface]{lang="EN-US"}]{#struct_0_10286_17180_1623775896}
+二层以太网接口或二层聚合接口名称
 
-[[二层以太网接口或二层聚合接口名称]{style="font-family:宋体"}]{#struct_0_10286_17180_x1389193935}
+SrvID
 
-[[SrvID ]{lang="EN-US"}]{#struct_0_10286_17180_x794636824}
+以太网服务实例的ID
 
-[[以太网服务实例的]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_10286_17180_x1461645414}
+Owner
 
-[[Owner]{lang="EN-US"}]{#struct_0_10286_17180_x799916613}
+VSI名称，如果以太网服务实例上尚未关联VSI，则本字段显示为空
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_1339101118}[名称，如果以太网服务实例上尚未关联]{style="font-family:宋体"}[VSI]{lang="EN-US"}[，则本字段显示为空]{style="font-family:宋体"}
+LinkID
 
-[[LinkID]{lang="EN-US"}]{#struct_0_10286_17180_1536008290}
+以太网服务实例在VSI内的链路标识符
 
-[[以太网服务实例在]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10286_17180_1522842091}[内的链路标识符]{style="font-family:宋体"}
+State
 
-[[State]{lang="EN-US"}]{#struct_0_10286_17180_176890006}
+以太网服务实例的状态，取值包括Up和Down
 
-[[以太网服务实例的状态，取值包括]{style="font-family:宋体"}[Up]{lang="EN-US"}]{#struct_0_10286_17180_x632139094}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}
+Type
 
-[[Type]{lang="EN-US"}]{#struct_0_10286_17180_x2054352317}
+以太网服务实例所属的L2VPN类型，取值包括VSI和VPWS
 
-[[以太网服务实例所属的]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}]{#struct_0_10286_17180_x971450767}[类型，取值包括]{style="font-family:宋体"}[VSI]{lang="EN-US"}[和]{style="font-family:宋体"}[VPWS]{lang="EN-US"}
+\# 显示二层以太网接口GigabitEthernet1/0/3上所有以太网服务实例的详细信息。
 
-[ ]{lang="EN-US"}
+\<Sysname\> display l2vpn service-instance interface gigabitethernet 1/0/3 verbose
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x1744502139}[显示二层以太网接口]{style="font-family:宋体"}[GigabitEthernet1/0/3]{lang="EN-US"}[上所有以太网服务实例的详细信息。]{style="font-family:宋体"}
+Interface: GE1/0/3
 
-[[\<Sysname\> display l2vpn service-instance interface gigabitethernet 1/0/3 verbose]{lang="EN-US"}]{#struct_0_10286_17180_1742973947}
+  Service Instance: 1
 
-[Interface: GE1/0/3]{lang="EN-US"}
+    Encapsulation : s-vid 1 to 16
 
-[  Service Instance: 1]{lang="EN-US"}
+    VSI Name      : vsi10
 
-[    Encapsulation : s-vid 1 to 16]{lang="EN-US"}
+    Link ID       : 1
 
-[    VSI Name      : vsi10]{lang="EN-US"}
+    State         : Up
 
-[    Link ID       : 1]{lang="EN-US"}
+  Service Instance: 2
 
-[    State         : Up]{lang="EN-US"}
+    Encapsulation : s-vid 1001 to 1016
 
-[  Service Instance: 2]{lang="EN-US"}
+                    only-tagged
 
-[    Encapsulation : s-vid 1001 to 1016]{lang="EN-US"}
+    VSI Name      : vsi11
 
-[                    only-tagged]{lang="EN-US"}
+    Link ID       : 1
 
-[    VSI Name      : vsi11]{lang="EN-US"}
+    State         : Up
 
-[    Link ID       : 1]{lang="EN-US"}
+  Service Instance: 3
 
-[    State         : Up]{lang="EN-US"}
+    Encapsulation : s-vid 2000
 
-[  Service Instance: 3]{lang="EN-US"}
+                    c-vid 1001 to 1002 1015 to 1016
 
-[    Encapsulation : s-vid 2000]{lang="EN-US"}
+    VSI Name      : vsi12
 
-[                    c-vid 1001 to 1002 1015 to 1016]{lang="EN-US"}
+    Link ID       : 1
 
-[    VSI Name      : vsi12]{lang="EN-US"}
+    State         : Up
 
-[    Link ID       : 1]{lang="EN-US"}
+表1-6 display l2vpn service-instance verbose命令显示信息描述表
 
-[    State         : Up]{lang="EN-US"}
+字段
 
-[[表1-6 ]{lang="EN-US"}[display l2vpn service-instance verbose]{lang="EN-US"}]{#struct_0_10286_17180_877645335}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_2023999943}[[字段]{style="font-family:黑体"}]{#struct_0_10286_17180_1217839809}
+Interface
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10286_17180_x629679048}
+二层以太网接口或二层聚合接口
 
-[[Interface]{lang="EN-US"}]{#struct_0_10286_17180_x270001392}
+Service Instance
 
-[[二层以太网接口或二层聚合接口]{style="font-family:宋体"}]{#struct_0_10286_17180_x1003647753}
+以太网服务实例ID
 
-[[Service Instance]{lang="EN-US"}]{#struct_0_10286_17180_x1846267200}
+Encapsulation
 
-[[以太网服务实例]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_10286_17180_2097687921}
+以太网服务实例的报文匹配规则，如果没有配置报文匹配规则，则不显示本字段
 
-[[Encapsulation]{lang="EN-US"}]{#struct_0_10286_17180_x1787641593}
+VSI Name
 
-[[以太网服务实例的报文匹配规则，如果没有配置报文匹配规则，则不显示本字段]{style="font-family:宋体"}]{#struct_0_10286_17180_x309851315}
+与以太网服务实例关联的VSI的名称
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_10286_17180_2062509696}
+Link ID
 
-[[与以太网服务实例关联的]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10286_17180_936404893}[的名称]{style="font-family:宋体"}
+以太网服务实例在VSI内的链路标识符
 
-[[Link ID]{lang="EN-US"}]{#struct_0_10286_17180_x750793603}
+State
 
-[[以太网服务实例在]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x1177119526}[内的链路标识符]{style="font-family:宋体"}
+以太网服务实例的状态，取值包括Up和Down
 
-[[State]{lang="EN-US"}]{#struct_0_10286_17180_1830977292}
+【相关命令】
 
-[[以太网服务实例的状态，取值包括]{style="font-family:宋体"}[Up]{lang="EN-US"}]{#struct_0_10286_17180_987936300}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_1016514509}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[service-instance]{lang="EN-US"}**]{#struct_0_10286_17180_x1601644818}[]{#_Toc389834784}
-
-::: {#-1007637280 .myid}
-[]{#_Toc404798639}[]{#struct_0_10286_17180_1344030014}[]{#_Toc386982100}[]{#_Toc374372819}[]{#_Toc334795167}[]{#_Toc391301810}[]{#_Toc391301849}
+·**service-instance**
 
 **NVGRE \-- NVGRE配置命令 \-- display l2vpn vsi**
 
 ------------------------------------------------------------------------
 
-[**[display l2vpn vsi]{lang="EN-US"}**]{#struct_0_10286_17180_x1792478462}[命令用来显示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[display l2vpn vsi**]命令用来显示VSI的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_1721136935}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **l2vpn** **vsi** \[ **name** *vsi-name* \] \[ **verbose** \]]{lang="EN-US"}]{#struct_0_10286_17180_x1428075893}
+**[display** **l2vpn** **vsi** [ **name** *vsi-name*   **verbose** ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_1965824309}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10286_17180_587015472}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_x374081970}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_x1842311939}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10286_17180_2022886798}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_216743210}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_10286_17180_x1191694075}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_x226394521}
+【参数】
 
-[**[name]{lang="EN-US"}***[ vsi-name]{lang="EN-US"}*]{#struct_0_10286_17180_591277709}[：显示指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[name*** vsi-name*]：显示指定VSI的信息。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，则显示所有VSI的信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_10286_17180_x257463972}[：显示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的详细信息。如果不指定本参数，则显示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的简要信息。]{style="font-family:宋体"}
+**[verbose**]：显示VSI的详细信息。如果不指定本参数，则显示VSI的简要信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_1227986109}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_1393510787}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的简要信息。]{style="font-family:宋体"}
+\# 显示所有VSI的简要信息。
 
-[[\<Sysname\> display l2vpn vsi]{lang="EN-US"}]{#struct_0_10286_17180_2048874514}
+\<Sysname\> display l2vpn vsi
 
-[Total number of VSIs: 1, 1 up, 0 down, 0 admin down]{lang="EN-US"}
+Total number of VSIs: 1, 1 up, 0 down, 0 admin down
 
-[ ]{lang="EN-US"}
+VSI Name                        VSI Index       MTU    State
 
-[VSI Name                        VSI Index       MTU    State]{lang="EN-US"}
+vpna                            0               1500   Up
 
-[vpna                            0               1500   Up]{lang="EN-US"}
+\# 显示所有VSI的详细信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x475569182}[显示所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的详细信息。]{style="font-family:宋体"}
+\<Sysname\> display l2vpn vsi verbose
 
-[[\<Sysname\> display l2vpn vsi verbose]{lang="EN-US"}]{#struct_0_10286_17180_670435788}
+VSI Name: 0
 
-[VSI Name: 0]{lang="EN-US"}
+  VSI Index               : 0
 
-[  VSI Index               : 0]{lang="EN-US"}
+  VSI State               : Down
 
-[  VSI State               : Down]{lang="EN-US"}
+  MTU                     : 1500
 
-[  MTU                     : 1500]{lang="EN-US"}
+  Bandwidth               : 102400 kbps
 
-[  Bandwidth               : 102400 kbps]{lang="EN-US"}
+  Broadcast Restrain      : 5%
 
-[  Broadcast Restrain      : 5%]{lang="EN-US"}
+  Multicast Restrain      : 100%
 
-[  Multicast Restrain      : 100%]{lang="EN-US"}
+  Unknown Unicast Restrain: 100%
 
-[  Unknown Unicast Restrain: 100%]{lang="EN-US"}
+  MAC Learning            : Enabled
 
-[  MAC Learning            : Enabled]{lang="EN-US"}
+  MAC Table Limit         : Unlimited
 
-[  MAC Table Limit         : Unlimited]{lang="EN-US"}
+  Drop Unknown            : Disabled
 
-[  Drop Unknown            : Disabled]{lang="EN-US"}
+  Flooding                : Enabled
 
-[  Flooding                : Enabled]{lang="EN-US"}
+  Statistics              : Enabled
 
-[  Statistics              : Enabled]{lang="EN-US"}
+  Input statistics:
 
-[  Input statistics:]{lang="EN-US"}
+    Octets   : 0
 
-[    Octets   : 0]{lang="EN-US"}
+    Packets  : 0
 
-[    Packets  : 0]{lang="EN-US"}
+    Errors   : 0
 
-[    Errors   : 0]{lang="EN-US"}
+    Discards : 0
 
-[    Discards : 0]{lang="EN-US"}
+  Output statistics:
 
-[  Output statistics:]{lang="EN-US"}
+    Octets   : 0
 
-[    Octets   : 0]{lang="EN-US"}
+    Packets  : 0
 
-[    Packets  : 0]{lang="EN-US"}
+    Errors   : 0
 
-[    Errors   : 0]{lang="EN-US"}
+    Discards : 0
 
-[    Discards : 0]{lang="EN-US"}
+  Gateway Interface       : VSI-interface 100
 
-[  Gateway Interface       : VSI-interface 100]{lang="EN-US"}
+  NVGRE VSID              : 4096
 
-[  NVGRE VSID              : 4096]{lang="EN-US"}
+VSI Name: 1
 
-[ ]{lang="EN-US"}
+  VSI Index               : 1
 
-[VSI Name: 1]{lang="EN-US"}
+  VSI State               : Down
 
-[  VSI Index               : 1]{lang="EN-US"}
+  MTU                     : 1500
 
-[  VSI State               : Down]{lang="EN-US"}
+  Bandwidth               : 102400 kbps
 
-[  MTU                     : 1500]{lang="EN-US"}
+  Broadcast Restrain      : 5%
 
-[  Bandwidth               : 102400 kbps]{lang="EN-US"}
+  Multicast Restrain      : 100%
 
-[  Broadcast Restrain      : 5%]{lang="EN-US"}
+  Unknown Unicast Restrain: 100%
 
-[  Multicast Restrain      : 100%]{lang="EN-US"}
+  MAC Learning            : Enabled
 
-[  Unknown Unicast Restrain: 100%]{lang="EN-US"}
+  MAC Table Limit         : Unlimited
 
-[  MAC Learning            : Enabled]{lang="EN-US"}
+  Drop Unknown            : Disabled
 
-[  MAC Table Limit         : Unlimited]{lang="EN-US"}
+  Flooding                : Enabled
 
-[  Drop Unknown            : Disabled]{lang="EN-US"}
+  Statistics              : Enabled
 
-[  Flooding                : Enabled]{lang="EN-US"}
+  Input Statistics:
 
-[  Statistics              : Enabled]{lang="EN-US"}
+    Octets   : 0
 
-[  Input Statistics:]{lang="EN-US"}
+    Packets  : 0
 
-[    Octets   : 0]{lang="EN-US"}
+    Errors   : 0
 
-[    Packets  : 0]{lang="EN-US"}
+    Drops : 0
 
-[    Errors   : 0]{lang="EN-US"}
+  Output Statistics:
 
-[    Drops : 0]{lang="EN-US"}
+    Octets   : 0
 
-[  Output Statistics:]{lang="EN-US"}
+    Packets  : 0
 
-[    Octets   : 0]{lang="EN-US"}
+    Errors   : 0
 
-[    Packets  : 0]{lang="EN-US"}
+    Discards : 0
 
-[    Errors   : 0]{lang="EN-US"}
+  Gateway Interface       : VSI-interface 101
 
-[    Discards : 0]{lang="EN-US"}
+  NVGRE VSID              : 4097
 
-[  Gateway Interface       : VSI-interface 101]{lang="EN-US"}
+  Tunnels:
 
-[  NVGRE VSID              : 4097]{lang="EN-US"}
+    Tunnel Name          Link ID    State  Type
 
-[  Tunnels:]{lang="EN-US"}
+Tunnel1              0x7000001  Up     Manual
 
-[    Tunnel Name          Link ID    State  Type]{lang="EN-US"}
+Tunnel2              0x7000002  Up     Manual
 
-[Tunnel1              0x7000001  Up     Manual]{lang="EN-US"}
+  ACs:
 
-[Tunnel2              0x7000002  Up     Manual]{lang="EN-US"}
+    AC                               Link ID    State
 
-[  ACs:]{lang="EN-US"}
+    BAGG1 srv1                       0          Down
 
-[    AC                               Link ID    State]{lang="EN-US"}
+表1-7 display l2vpn vsi命令显示信息描述表
 
-[    BAGG1 srv1                       0          Down]{lang="EN-US"}
+字段
 
-[[表1-7 ]{lang="EN-US"}[display l2vpn vsi]{lang="EN-US"}]{#struct_0_10286_17180_1700488090}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_2019898927}[[字段]{style="font-family:黑体"}]{#struct_0_10286_17180_x809908154}
-:::
+VSI Name
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10286_17180_153261724}
+VSI名称
 
-[[VSI Name]{lang="EN-US"}]{#struct_0_10286_17180_1029027587}
+VSI Index
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x183582915}[名称]{style="font-family:宋体"}
+VSI索引
 
-[[VSI Index]{lang="EN-US"}]{#struct_0_10286_17180_2097961878}
+VSI Description
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x606874047}[索引]{style="font-family:宋体"}
+VSI的描述信息，如果不配置，则此行不显示
 
-[[VSI Description]{lang="EN-US"}]{#struct_0_10286_17180_x2128821171}
+VSI State
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x2058447567}[的描述信息，如果不配置，则此行不显示]{style="font-family:宋体"}
+VSI的状态，取值包括：
 
-[[VSI State]{lang="EN-US"}]{#struct_0_10286_17180_1364824426}
+·Up：up状态。只有NVGRE关联了处于up状态的隧道和AC，VSI才会处于up状态
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_1876174130}[的状态，取值包括：]{style="font-family:宋体"}
+·Down：down状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Up]{lang="EN-US"}]{#struct_0_10286_17180_1575094099}[：]{style="font-family:宋体"}[up]{lang="EN-US"}[状态。只有]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[关联了处于]{style="font-family:宋体"}[up]{lang="EN-US"}[状态的隧道和]{style="font-family:宋体"}[AC]{lang="EN-US"}[，]{style="font-family:宋体"}[VSI]{lang="EN-US"}[才会处于]{style="font-family:宋体"}[up]{lang="EN-US"}[状态]{style="font-family:宋体"}
+·Administratively down：通过**shutdown**命令手工关闭VSI
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Down]{lang="EN-US"}]{#struct_0_10286_17180_x1255667861}[：]{lang="EN-US" style="font-family:宋体"}[down]{lang="EN-US"}[状态]{lang="EN-US" style="font-family:宋体"}
+MTU
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Administratively down]{lang="EN-US"}]{#struct_0_10286_17180_260015730}[：通过]{lang="EN-US" style="font-family:
-  宋体"}**[shutdown]{lang="EN-US"}**[命令手工关闭]{lang="EN-US" style="font-family:宋体"}[VSI]{lang="EN-US"}
+VSI上配置的最大传输单元
 
-[[MTU]{lang="EN-US"}]{#struct_0_10286_17180_587035864}
+Bandwidth
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x1099595950}[上配置的最大传输单元]{style="font-family:宋体"}
+VSI的带宽限制值，单位为kbps
 
-[[Bandwidth]{lang="EN-US"}]{#struct_0_10286_17180_957222292}
+Broadcast Restrain
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x492363626}[的带宽限制值，单位为]{style="font-family:宋体"}[kbps]{lang="EN-US"}
+VSI的广播抑制百分比
 
-[[Broadcast Restrain]{lang="EN-US"}]{#struct_0_10286_17180_x974272523}
+Multicast Restrain
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_703523601}[的广播抑制百分比]{style="font-family:宋体"}
+VSI的组播抑制百分比
 
-[[Multicast Restrain]{lang="EN-US"}]{#struct_0_10286_17180_627642908}
+Unknown Unicast Restrain
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_1783168403}[的组播抑制百分比]{style="font-family:宋体"}
+VSI的未知单播抑制百分比
 
-[[Unknown Unicast Restrain]{lang="EN-US"}]{#struct_0_10286_17180_x1483287942}
+MAC Learning
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x2145476907}[的未知单播抑制百分比]{style="font-family:宋体"}
+是否使能了MAC地址学习功能，取值包括：
 
-[[MAC Learning]{lang="EN-US"}]{#struct_0_10286_17180_1073720315}
+·Enabled：使能了MAC地址学习功能
 
-[[是否使能了]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_10286_17180_x1761790809}[地址学习功能，取值包括：]{style="font-family:宋体"}
+·Disabled：未使能MAC地址学习功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_10286_17180_x406175808}[：使能了]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址学习功能]{lang="EN-US" style="font-family:宋体"}
+MAC Table Limit
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_10286_17180_x795658266}[：未使能]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址学习功能]{lang="EN-US" style="font-family:宋体"}
+VSI内MAC地址表项的最大数目
 
-[[MAC Table Limit]{lang="EN-US"}]{#struct_0_10286_17180_x287866480}
+取值为Unlimited，表示不限制VSI内MAC地址表项的最大数目
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x1298932680}[内]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项的最大数目]{style="font-family:宋体"}
+Drop Unknown
 
-[[取值为]{style="font-family:宋体"}[Unlimited]{lang="EN-US"}]{#struct_0_10286_17180_132377724}[，表示不限制]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项的最大数目]{style="font-family:宋体"}
+当VSI内学习到的MAC地址数达到最大值后，是否禁止转发源MAC地址不在MAC地址表里的报文
 
-[[Drop Unknown]{lang="EN-US"}]{#struct_0_10286_17180_1054260968}
+·Enabled：表示禁止转发
 
-[[当]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10286_17180_1526277461}[内学习到的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址数达到最大值后，是否禁止转发源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址不在]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表里的报文]{style="font-family:宋体"}
+·Disabled：表示允许转发
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_10286_17180_1817624456}[：表示禁止转发]{lang="EN-US" style="font-family:宋体"}
+Hub-Spoke
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_10286_17180_267151261}[：表示允许转发]{lang="EN-US" style="font-family:宋体"}
+是否使能了Hub-spoke能力。未使能Hub-spoke能力，则不显示此字段
 
-[[Hub-Spoke]{lang="EN-US"}]{#struct_0_10286_17180_1046811103}
+Flooding
 
-[[是否使能了]{style="font-family:宋体"}[Hub-spoke]{lang="EN-US"}]{#struct_0_10286_17180_463976297}[能力。未使能]{style="font-family:宋体"}[Hub-spoke]{lang="EN-US"}[能力，则不显示此字段]{style="font-family:宋体"}
+VSI是否使能泛洪功能
 
-[[Flooding]{lang="EN-US"}]{#struct_0_10286_17180_x1698240075}
+·Enabled：表示使能了VSI的泛洪功能，即NVE会将目的MAC地址未知的单播数据帧发送给所有本地和远端站点
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x481582050}[是否使能泛洪功能]{style="font-family:宋体"}
+·Disabled：表示禁止VSI的泛洪功能，即NVE只将目的MAC地址未知的单播数据帧发送给所有本地站点
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_10286_17180_1833235202}[：表示使能了]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的泛洪功能，即]{style="font-family:宋体"}[NVE]{lang="EN-US"}[会将目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址未知的单播数据帧发送给所有本地和远端站点]{style="font-family:宋体"}
+Statistics
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_10286_17180_883478102}[：]{lang="EN-US" style="font-family:宋体"}[表示]{style="font-family:宋体"}[禁止]{lang="EN-US" style="font-family:宋体"}[VSI]{lang="EN-US"}[的泛洪功能]{lang="EN-US" style="font-family:宋体"}[，即]{style="font-family:宋体"}[NVE]{lang="EN-US"}[只将目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址未知的单播数据帧发送给所有本地站点]{style="font-family:宋体"}
+是否使能VSI的统计功能，取值包括：
 
-[[Statistics]{lang="EN-US"}]{#struct_0_10286_17180_x1201227260}
+·Enabled：使能了VSI的统计功能
 
-[[是否使能]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x716456774}[的统计功能，取值包括：]{style="font-family:宋体"}
+·Disabled：禁止VSI的统计功能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enabled]{lang="EN-US"}]{#struct_0_10286_17180_x895648153}[：使能了]{lang="EN-US" style="font-family:宋体"}[VSI]{lang="EN-US"}[的统计功能]{lang="EN-US" style="font-family:宋体"}
+Input statistics
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disabled]{lang="EN-US"}]{#struct_0_10286_17180_x1868856942}[：禁止]{lang="EN-US" style="font-family:宋体"}[VSI]{lang="EN-US"}[的统计功能]{lang="EN-US" style="font-family:宋体"}
+入方向的VSI报文统计信息，包括入方向接收的字节数（Octets）、接收的报文数（Packets）、接收的错误报文数（Errors）和丢弃的报文数（Discards）
 
-[[Input statistics]{lang="EN-US"}]{#struct_0_10286_17180_x1210706190}
+Output statistics
 
-[[入方向的]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x747787164}[报文统计信息，包括入方向接收的字节数（]{style="font-family:宋体"}[Octets]{lang="EN-US"}[）、接收的报文数（]{style="font-family:宋体"}[Packets]{lang="EN-US"}[）、接收的错误报文数（]{style="font-family:宋体"}[Errors]{lang="EN-US"}[）和丢弃的报文数（]{style="font-family:宋体"}[Discards]{lang="EN-US"}[）]{style="font-family:宋体"}
+出方向的VSI报文统计信息，包括出方向发送的字节数（Octets）、发送的报文数（Packets）、错误报文数（Errors）和丢弃的报文数（Discards）
 
-[[Output statistics]{lang="EN-US"}]{#struct_0_10286_17180_314205428}
+Gateway Interface
 
-[[出方向的]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10286_17180_1285646576}[报文统计信息，包括出方向发送的字节数（]{style="font-family:宋体"}[Octets]{lang="EN-US"}[）、发送的报文数（]{style="font-family:宋体"}[Packets]{lang="EN-US"}[）、错误报文数（]{style="font-family:宋体"}[Errors]{lang="EN-US"}[）和丢弃的报文数（]{style="font-family:宋体"}[Discards]{lang="EN-US"}[）]{style="font-family:宋体"}
+VSI网关虚接口编号
 
-[[Gateway Interface]{lang="EN-US"}]{#struct_0_10286_17180_x1529323425}
+NVGRE VSID
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x868680692}[网关虚接口编号]{style="font-family:宋体"}
+NVGRE虚拟子网编号
 
-[[NVGRE VSID]{lang="EN-US"}]{#struct_0_10286_17180_x625401459}
+Tunnels
 
-[[NVGRE]{lang="EN-US"}]{#struct_0_10286_17180_1880289369}[虚拟子网编号]{style="font-family:宋体"}
+与NVGRE网络关联的隧道信息
 
-[[Tunnels]{lang="EN-US"}]{#struct_0_10286_17180_x1740028039}
+Tunnel Name
 
-[[与]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}]{#struct_0_10286_17180_1174712869}[网络关联的隧道信息]{style="font-family:宋体"}
+隧道名字
 
-[[Tunnel Name]{lang="EN-US"}]{#struct_0_10286_17180_x136176158}
+Link ID
 
-[[隧道名字]{style="font-family:宋体"}]{#struct_0_10286_17180_670501324}
+隧道在VSI内的链路标识符
 
-[[Link ID]{lang="EN-US"}]{#struct_0_10286_17180_2079232461}
+State
 
-[[隧道在]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x1806167692}[内的链路标识符]{style="font-family:宋体"}
+隧道状态，取值包括Up和Down
 
-[[State]{lang="EN-US"}]{#struct_0_10286_17180_1501119551}
+Type
 
-[[隧道状态，取值包括]{style="font-family:宋体"}[Up]{lang="EN-US"}]{#struct_0_10286_17180_x2058382031}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}
+NVGRE和NVGRE隧道的关联方式，取值为Manual，表示手动关联NVGRE和NVGRE隧道
 
-[[Type]{lang="EN-US"}]{#struct_0_10286_17180_50317349}
+ACs
 
-[[NVGRE]{lang="EN-US"}]{#struct_0_10286_17180_x1040960907}[和]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[隧道的关联方式，取值为]{style="font-family:宋体"}[Manual]{lang="EN-US"}[，表示手动关联]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[和]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[隧道]{style="font-family:宋体"}
+VSI的AC列表
 
-[[ACs]{lang="EN-US"}]{#struct_0_10286_17180_x492298090}
+AC
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x1375502174}[的]{style="font-family:宋体"}[AC]{lang="EN-US"}[列表]{style="font-family:宋体"}
+接入电路
 
-[[AC]{lang="EN-US"}]{#struct_0_10286_17180_828243149}
+Link ID
 
-[[接入电路]{style="font-family:宋体"}]{#struct_0_10286_17180_x193592021}
+AC在VSI内的链路标识符
 
-[[Link ID]{lang="EN-US"}]{#struct_0_10286_17180_1073785851}
+State
 
-[[AC]{lang="EN-US"}]{#struct_0_10286_17180_x986672516}[在]{style="font-family:宋体"}[VSI]{lang="EN-US"}[内的链路标识符]{style="font-family:宋体"}
-
-[[State]{lang="EN-US"}]{#struct_0_10286_17180_742743029}
-
-[[AC]{lang="EN-US"}]{#struct_0_10286_17180_x1298867144}[的状态，取值包括]{style="font-family:宋体"}[Up]{lang="EN-US"}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
-
-::: {#1771550832 .myid}
-[]{#_Toc404798640}[]{#struct_0_10286_17180_633260906}
+AC的状态，取值包括Up和Down
 
 **NVGRE \-- NVGRE配置命令 \-- display nvgre tunnel**
 
 ------------------------------------------------------------------------
 
-[**[display nvgre tunnel]{lang="EN-US"}**]{#struct_0_10286_17180_x1984354649}[命令用来显示与]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络关联的]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[隧道的信息。]{style="font-family:宋体"}
+**[display nvgre tunnel**]命令用来显示与NVGRE网络关联的NVGRE隧道的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_x875056150}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **nvgre tunnel** \[ **vsid** *vsid* \]]{lang="EN-US"}]{#struct_0_10286_17180_x1420968648}
+**[display** **nvgre tunnel** [ **vsid** *vsid* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_663171087}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_10286_17180_x698354035}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1971455924}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_267216797}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_10286_17180_1329753894}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_2133758281}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_10286_17180_1277013323}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_1361947044}
+【参数】
 
-[*[vsid]{lang="EN-US"}*]{#struct_0_10286_17180_969769702}[：显示与指定]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络关联的隧道的信息。]{style="font-family:宋体"}*[vsid]{lang="EN-US"}*[为]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[虚拟子网标识符，取值范围为]{style="font-family:宋体"}[4096]{lang="EN-US"}[～]{style="font-family:宋体"}[16777214]{lang="EN-US"}[。不指定此参数，则显示所有与]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络关联的隧道的信息。]{style="font-family:宋体"}
+*[vsid*]：显示与指定NVGRE网络关联的隧道的信息。*vsid*为NVGRE虚拟子网标识符，取值范围为4096～16777214。不指定此参数，则显示所有与NVGRE网络关联的隧道的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1407456597}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_1474528231}[显示所有与]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络关联的隧道的信息。]{style="font-family:宋体"}
+\# 显示所有与NVGRE网络关联的隧道的信息。
 
-[[\<Sysname\> display nvgre tunnel]{lang="EN-US"}]{#struct_0_10286_17180_1833300738}
+\<Sysname\> display nvgre tunnel
 
-[Total number of NVGREs: 2]{lang="EN-US"}
+Total number of NVGREs: 2
 
-[ ]{lang="EN-US"}
+NVGRE VSID: 4096; VSI name: 1
 
-[NVGRE VSID: 4096; VSI name: 1]{lang="EN-US"}
+NVGRE VSID: 4097; VSI name: 2; Total tunnels: 2 (1 up, 1 down)
 
-[ ]{lang="EN-US"}
+Tunnel name          Link ID    State  Type
 
-[NVGRE VSID: 4097; VSI name: 2; Total tunnels: 2 (1 up, 1 down)]{lang="EN-US"}
+Tunnel1              0x7000001  Up     Manual
 
-[Tunnel name          Link ID    State  Type]{lang="EN-US"}
+Tunnel3              0x7000002  Down   Manual
 
-[Tunnel1              0x7000001  Up     Manual]{lang="EN-US"}
+表1-8 display nvgre tunnel命令显示信息描述表
 
-[Tunnel3              0x7000002  Down   Manual]{lang="EN-US"}
+字段
 
-[[表1-8 ]{lang="EN-US"}[display nvgre tunnel]{lang="EN-US"}]{#struct_0_10286_17180_67638593}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_2040801681}[[字段]{style="font-family:黑体"}]{#struct_0_10286_17180_x1111092491}
-:::
+Total number of NVGREs
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10286_17180_x1332899671}
+已创建的NVGRE网络的总数
 
-[[Total number of NVGREs]{lang="EN-US"}]{#struct_0_10286_17180_x356737218}
+NVGRE VSID
 
-[[已创建的]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}]{#struct_0_10286_17180_x905461136}[网络的总数]{style="font-family:宋体"}
+NVGRE虚拟子网编号
 
-[[NVGRE VSID]{lang="EN-US"}]{#struct_0_10286_17180_1446077950}
+VSI name
 
-[[NVGRE]{lang="EN-US"}]{#struct_0_10286_17180_x540148526}[虚拟子网编号]{style="font-family:宋体"}
+NVGRE网络所属的VSI名称
 
-[[VSI name]{lang="EN-US"}]{#struct_0_10286_17180_x895582617}
+Total tunnels
 
-[[NVGRE]{lang="EN-US"}]{#struct_0_10286_17180_834354385}[网络所属的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[名称]{style="font-family:宋体"}
+与NVGRE网络关联的隧道的总数，包括处于Up和Down状态的隧道总数
 
-[[Total tunnels]{lang="EN-US"}]{#struct_0_10286_17180_x368580486}
+Tunnel name
 
-[[与]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}]{#struct_0_10286_17180_x1125113555}[网络关联的隧道的总数，包括处于]{style="font-family:宋体"}[Up]{lang="EN-US"}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}[状态的隧道总数]{style="font-family:宋体"}
+隧道名称
 
-[[Tunnel name]{lang="EN-US"}]{#struct_0_10286_17180_1770553042}
+Link ID
 
-[[隧道名称]{style="font-family:宋体"}]{#struct_0_10286_17180_1989388538}
+隧道在NVGRE网络内的链路标识符
 
-[[Link ID]{lang="EN-US"}]{#struct_0_10286_17180_1037095616}
+State
 
-[[隧道在]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}]{#struct_0_10286_17180_314270964}[网络内的链路标识符]{style="font-family:宋体"}
+隧道的状态，取值包括Up、Down
 
-[[State]{lang="EN-US"}]{#struct_0_10286_17180_1647531246}
+Type
 
-[[隧道的状态，取值包括]{style="font-family:宋体"}[Up]{lang="EN-US"}]{#struct_0_10286_17180_x1896695863}[、]{style="font-family:宋体"}[Down]{lang="EN-US"}
+NVGRE和NVGRE隧道的关联方式，取值为Manual，表示手动关联NVGRE和NVGRE隧道
 
-[[Type]{lang="EN-US"}]{#struct_0_10286_17180_1758349901}
+【相关命令】
 
-[[NVGRE]{lang="EN-US"}]{#struct_0_10286_17180_x1850911376}[和]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[隧道的关联方式，取值为]{style="font-family:宋体"}[Manual]{lang="EN-US"}[，表示手动关联]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[和]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[隧道]{style="font-family:宋体"}
+·**nvgre**
 
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_x760170868}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[nvgre]{lang="EN-US"}**]{#struct_0_10286_17180_1880354905}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[tunnel]{lang="EN-US"}**]{#struct_0_10286_17180_1342196225}
-
-::: {#-900899430 .myid}
-[]{#_Toc404798641}[]{#struct_0_10286_17180_x27817965}[]{#_Toc379547060}[]{#_Toc375835822}[]{#_Toc288911611}[]{#_Toc203551099}
+·**tunnel**
 
 **NVGRE \-- NVGRE配置命令 \-- encapsulation**
 
 ------------------------------------------------------------------------
 
-[**[encapsulation]{lang="EN-US"}**]{#struct_0_10286_17180_1227745414}[命令用来配置以太网服务实例的报文匹配规则。]{style="font-family:宋体"}
+**[encapsulation**]命令用来配置以太网服务实例的报文匹配规则。
 
-[**[undo encapsulation]{lang="EN-US"}**]{#struct_0_10286_17180_246535599}[命令用来删除以太网服务实例的报文匹配规则。]{style="font-family:宋体"}
+**[undo encapsulation**]命令用来删除以太网服务实例的报文匹配规则。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_835816886}
+【命令】
 
-[**[encapsulation]{lang="EN-US"}**[ **c-vid** { *vlan-id* \| *vlan-id-list* }]{lang="EN-US"}]{#struct_0_10286_17180_x1165433961}
+**[encapsulation**[ **c-vid** { *vlan-id* \| *vlan-id-list* }]]
 
-[**[encapsulation]{lang="EN-US"}**[ **s-vid** { *vlan-id* \| *vlan-id-list* } \[ **only-tagged** \]]{lang="EN-US"}]{#struct_0_10286_17180_170958621}
+**[encapsulation**[ **s-vid** { *vlan-id* \| *vlan-id-list* } [ **only-tagged** ]]]
 
-[**[encapsulation]{lang="EN-US"}**[ **s-vid** *vlan-id* **c-vid** { *vlan-id-list* \| **all** }]{lang="EN-US"}]{#struct_0_10286_17180_x1733686149}
+**[encapsulation**[ **s-vid** *vlan-id* **c-vid** { *vlan-id-list* \| **all** }]]
 
-[**[encapsulation]{lang="EN-US"}**[ { **default** \| **tagged** \| **untagged** }]{lang="EN-US"}]{#struct_0_10286_17180_670566860}
+**[encapsulation**[ { **default** \| **tagged** \| **untagged** }]]
 
-[**[undo encapsulation]{lang="EN-US"}**]{#struct_0_10286_17180_1623239190}
+**[undo encapsulation**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10286_17180_544558477}
+【缺省情况】
 
-[[未配置任何报文匹配规则。]{style="font-family:宋体"}]{#struct_0_10286_17180_681271502}
+未配置任何报文匹配规则。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_1123763308}
+【视图】
 
-[[以太网服务实例视图]{style="font-family:宋体"}]{#struct_0_10286_17180_1180078416}
+以太网服务实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_667013785}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_x1283170772}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_x283319682}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_x2058316495}
+【参数】
 
-[**[c-vid]{lang="EN-US"}**[ { *vlan-id* \| *vlan-id-list* }]{lang="EN-US"}]{#struct_0_10286_17180_x136316062}[：匹配内层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签（]{style="font-family:宋体"}[Customer VLAN ID]{lang="EN-US"}[）为指定值的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[c-vid**[ { *vlan-id* \| *vlan-id-list* }]]：匹配内层VLAN标签（Customer VLAN ID）为指定值的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[vlan-id]{lang="EN-US"}*]{#struct_0_10286_17180_x99288830}[表示]{style="font-family:
-宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+·*vlan-id*表示VLAN的编号，取值范围为1～4094。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[vlan-id-list]{lang="EN-US"}*]{#struct_0_10286_17180_1956413905}[为]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，表示一个或多个]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号。表示方式为]{lang="EN-US" style="font-family:宋体"}*[vlan-id-list]{lang="EN-US"}*[ = { *vlan-id* \[ to *vlan-id* \] }&\<1-8\>]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}[其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-8\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[8]{lang="EN-US"}[次。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+·*vlan-id-list*为VLAN列表，表示一个或多个VLAN的编号。表示方式为*vlan-id-list* = { *vlan-id* [ to *vlan-id*  }&\<1-8\>]。其中，*vlan-id*为指定VLAN的编号，取值范围为1～4094。&\<1-8\>表示前面的参数最多可以输入8次。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[s-vid]{lang="EN-US"}**[ { *vlan-id* \| *vlan-id-list* }]{lang="EN-US"}]{#struct_0_10286_17180_x1797273924}[：匹配外层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签（]{style="font-family:宋体"}[Service VLAN ID]{lang="EN-US"}[）为指定值的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[s-vid**[ { *vlan-id* \| *vlan-id-list* }]]：匹配外层VLAN标签（Service VLAN ID）为指定值的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[vlan-id]{lang="EN-US"}*]{#struct_0_10286_17180_x460299985}[表示]{style="font-family:
-宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+·*vlan-id*表示VLAN的编号，取值范围为1～4094。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[vlan-id-list]{lang="EN-US"}*]{#struct_0_10286_17180_1485041757}[为]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，表示一个或多个]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号。表示方式为]{lang="EN-US" style="font-family:宋体"}*[vlan-id-list]{lang="EN-US"}*[ = { *vlan-id* \[ **to** *vlan-id* \] }&\<1-8\>]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}[其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-8\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[8]{lang="EN-US"}[次。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+·*vlan-id-list*为VLAN列表，表示一个或多个VLAN的编号。表示方式为*vlan-id-list* = { *vlan-id* [ **to** *vlan-id*  }&\<1-8\>]。其中，*vlan-id*为指定VLAN的编号，取值范围为1～4094。&\<1-8\>表示前面的参数最多可以输入8次。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[only-tagged]{lang="EN-US"}**]{#struct_0_10286_17180_293858320}[：表示只匹配携带]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签的报文。当匹配的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[为缺省]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[时，如果未指定本关键字，则会同时匹配所携带]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签为缺省]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的报文和未携带]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签的报文；如果指定了本参数，则只匹配所携带]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签为缺省]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[only-tagged**]：表示只匹配携带VLAN标签的报文。当匹配的VLAN为缺省VLAN时，如果未指定本关键字，则会同时匹配所携带VLAN标签为缺省VLAN的报文和未携带VLAN标签的报文；如果指定了本参数，则只匹配所携带VLAN标签为缺省VLAN的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[s-vid]{lang="EN-US"}**[ *vlan-id* **c-vid** { *vlan-id-list* \| **all** }]{lang="EN-US"}]{#struct_0_10286_17180_235306328}[：匹配指定外层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签和内层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[s-vid**[ *vlan-id* **c-vid** { *vlan-id-list* \| **all** }]]：匹配指定外层VLAN标签和内层VLAN标签的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[vlan-id]{lang="EN-US"}*]{#struct_0_10286_17180_915258039}[表示]{style="font-family:
-宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+·*vlan-id*表示VLAN的编号，取值范围为1～4094。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[vlan-id-list]{lang="EN-US"}*]{#struct_0_10286_17180_x1342553457}[为]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，表示一个或多个]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号。表示方式为]{lang="EN-US" style="font-family:宋体"}*[vlan-id-list]{lang="EN-US"}*[ = { *vlan-id* \[ **to** *vlan-id* \] }&\<1-8\>]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}[其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-8\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[8]{lang="EN-US"}[次。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+·*vlan-id-list*为VLAN列表，表示一个或多个VLAN的编号。表示方式为*vlan-id-list* = { *vlan-id* [ **to** *vlan-id*  }&\<1-8\>]。其中，*vlan-id*为指定VLAN的编号，取值范围为1～4094。&\<1-8\>表示前面的参数最多可以输入8次。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[al]{lang="EN-US"}**]{#struct_0_10286_17180_x492232554}**[l]{lang="EN-US"}**[表示所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+·**al****l**表示所有VLAN。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[default]{lang="EN-US"}**]{#struct_0_10286_17180_x595379128}[：表示缺省的报文匹配规则。]{style="font-family:宋体"}
+**[default**]：表示缺省的报文匹配规则。
 
-[**[tagged]{lang="EN-US"}**]{#struct_0_10286_17180_x1280635794}[：表示匹配携带]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[tagged**]：表示匹配携带VLAN标签的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[**[untagged]{lang="EN-US"}**]{#struct_0_10286_17180_x1251623553}[：表示匹配未携带]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[untagged**]：表示匹配未携带VLAN标签的报文。本参数的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10286_17180_x931939143}
+【使用指导】
 
-[[当同一个接口下配置的不同以太网服务实例的报文匹配规则出现重叠时，如何匹配报文与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_10286_17180_1135678257}
+当同一个接口下配置的不同以太网服务实例的报文匹配规则出现重叠时，如何匹配报文与设备的型号有关，请以设备的实际情况为准。
 
-[[同一个以太网接口下可以创建多个服务实例，但是最多只能有一个服务实例采用缺省的报文匹配规则（]{style="font-family:宋体"}**[encapsulation default]{lang="EN-US"}**]{#struct_0_10286_17180_x1981564500}[）。如果接口下同时存在一个采用缺省报文匹配规则的服务实例和多个采用其他报文匹配规则的服务实例，则没有与任何其他报文匹配规则匹配的报文将匹配缺省报文匹配规则；如果接口下只存在一个采用缺省报文匹配规则的服务实例，则该接口上的所有报文都匹配缺省报文匹配规则。]{style="font-family:宋体"}
+同一个以太网接口下可以创建多个服务实例，但是最多只能有一个服务实例采用缺省的报文匹配规则（**encapsulation default**）。如果接口下同时存在一个采用缺省报文匹配规则的服务实例和多个采用其他报文匹配规则的服务实例，则没有与任何其他报文匹配规则匹配的报文将匹配缺省报文匹配规则；如果接口下只存在一个采用缺省报文匹配规则的服务实例，则该接口上的所有报文都匹配缺省报文匹配规则。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_10286_17180_180396518}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在同一个以太网服务实例视图下，不能重复执行本命令。]{style="font-family:宋体"}]{#struct_0_10286_17180_x587175470}
+·在同一个以太网服务实例视图下，不能重复执行本命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[删除以太网服务实例下的报文匹配规则后，会自动取消以太网服务实例]{style="font-family:宋体"}]{#struct_0_10286_17180_x1192653974}[与]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的关联。]{style="font-family:宋体"}
+·删除以太网服务实例下的报文匹配规则后，会自动取消以太网服务实例与VSI的关联。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[内层]{style="font-family:宋体"}]{#struct_0_10286_17180_x875972704}[VLAN]{lang="EN-US"}[标签和外层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签的介绍请参见"二层技术]{style="font-family:宋体"}[-]{lang="EN-US"}[以太网交换配置指导"中的"]{style="font-family:宋体"}[QinQ]{lang="EN-US"}["。]{style="font-family:宋体"}
+·内层VLAN标签和外层VLAN标签的介绍请参见"二层技术-以太网交换配置指导"中的"QinQ"。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_1692920858}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_1627805576}[在二层以太网接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的以太网服务实例]{style="font-family:宋体"}[1]{lang="EN-US"}[上配置如下报文匹配规则：匹配外层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签为]{style="font-family:宋体"}[111]{lang="EN-US"}[，内层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[标签为]{style="font-family:宋体"}[20]{lang="EN-US"}[、]{style="font-family:宋体"}[30]{lang="EN-US"}[～]{style="font-family:宋体"}[40]{lang="EN-US"}[的报文。]{style="font-family:宋体"}
+\# 在二层以太网接口GigabitEthernet1/0/1的以太网服务实例1上配置如下报文匹配规则：匹配外层VLAN标签为111，内层VLAN标签为20、30～40的报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10286_17180_1073851387}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] service-instance 1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 service-instance 1
 
-[\[Sysname-GigabitEthernet1/0/1-srv1\] encapsulation s-vid 111 c-vid 20 30 to 40]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1-srv1 encapsulation s-vid 111 c-vid 20 30 to 40
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_x201801876}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn service-instance]{lang="EN-US"}**]{#struct_0_10286_17180_1295738494}
-:::
-
-::: {#-2005881093 .myid}
-[]{#_Toc404798642}[]{#struct_0_10286_17180_605074285}[]{#_Toc384042060}[]{#_Toc371411812}
+·**display l2vpn service-instance**
 
 **NVGRE \-- NVGRE配置命令 \-- flooding disable**
 
 ------------------------------------------------------------------------
 
-[**[flooding disable]{lang="EN-US"}**]{#struct_0_10286_17180_1784880458}[命令用来关闭]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的泛洪功能。]{style="font-family:宋体"}
+**[flooding disable**]命令用来关闭VSI的泛洪功能。
 
-[**[undo flooding disable]{lang="EN-US"}**]{#struct_0_10286_17180_x1607174546}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo flooding disable**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_x432308408}
+【命令】
 
-[**[flooding disable]{lang="EN-US"}**]{#struct_0_10286_17180_50562826}
+**[flooding disable**]
 
-[**[undo flooding disable]{lang="EN-US"}**]{#struct_0_10286_17180_578431900}
+**[undo flooding disable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10286_17180_x21285293}
+【缺省情况】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_520415724}[的泛洪功能处于开启状态。]{style="font-family:宋体"}
+VSI的泛洪功能处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_x947883884}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x1298801608}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1530244445}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_x967817739}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_x1080274426}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10286_17180_781096958}
+【使用指导】
 
-[[缺省情况下，]{style="font-family:宋体"}[NVE]{lang="EN-US"}]{#struct_0_10286_17180_445455549}[从本地站点内接收到目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址未知的单播数据帧后，会在该]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络内除接收接口外的所有本地接口和]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[隧道上泛洪该数据帧，将该数据帧发送给]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络内的所有站点。如果用户希望把该类数据帧限制在本地站点内，不通过]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[隧道将其转发到远端站点，则可以通过本命令手工禁止]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络对应]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的泛洪功能。]{style="font-family:宋体"}
+缺省情况下，NVE从本地站点内接收到目的MAC地址未知的单播数据帧后，会在该NVGRE网络内除接收接口外的所有本地接口和NVGRE隧道上泛洪该数据帧，将该数据帧发送给NVGRE网络内的所有站点。如果用户希望把该类数据帧限制在本地站点内，不通过NVGRE隧道将其转发到远端站点，则可以通过本命令手工禁止NVGRE网络对应VSI的泛洪功能。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_456771873}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_147429972}[关闭名称为]{style="font-family:宋体"}[vsi1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的泛洪功能。]{style="font-family:宋体"}
+\# 关闭名称为vsi1的VSI的泛洪功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10286_17180_267282333}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vsi1]{lang="EN-US"}
+Sysname vsi vsi1
 
-[\[Sysname-vsi-vsi1\] flooding disable]{lang="EN-US"}
-:::
-
-::: {#17596291 .myid}
-[]{#_Toc404798643}[]{#struct_0_10286_17180_907189173}
+Sysname-vsi-vsi1 flooding disable
 
 **NVGRE \-- NVGRE配置命令 \-- gateway vsi-interface**
 
 ------------------------------------------------------------------------
 
-[**[gateway vsi-interface]{lang="EN-US"}**]{#struct_0_10286_17180_x477634819}[命令用来为]{style="font-family:宋体"}[VSI]{lang="EN-US"}[指定网关接口。]{style="font-family:宋体"}
+**[gateway vsi-interface**]命令用来为VSI指定网关接口。
 
-[**[undo gateway vsi-interface ]{lang="EN-US"}**]{#struct_0_10286_17180_767612204}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo gateway vsi-interface **]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_1450640539}
+【命令】
 
-[**[gateway vsi-interface ]{lang="EN-US"}***[vsi-interface-id]{lang="EN-US"}*]{#struct_0_10286_17180_1490429132}
+**[gateway vsi-interface ***vsi-interface-id*]
 
-[**[undo gateway vsi-interface]{lang="EN-US"}**]{#struct_0_10286_17180_x2018361673}
+**[undo gateway vsi-interface**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10286_17180_45568314}
+【缺省情况】
 
-[[没有为]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x1384407026}[指定网关接口。]{style="font-family:宋体"}
+没有为VSI指定网关接口。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_2124640646}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x128702555}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_1833366274}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_467151879}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_1484094279}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_x111588893}
+【参数】
 
-[*[vsi-interface-id]{lang="EN-US"}*]{#struct_0_10286_17180_142243679}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[网关虚接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[vsi-interface-id*]：VSI网关虚接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10286_17180_x57259475}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[一个]{style="font-family:宋体"}]{#struct_0_10286_17180_x351611698}[VSI]{lang="EN-US"}[只能指定一个网关接口。]{style="font-family:宋体"}
+·一个VSI只能指定一个网关接口。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不同的]{style="font-family:宋体"}]{#struct_0_10286_17180_1803255351}[VSI]{lang="EN-US"}[可以指定相同的网关接口。]{style="font-family:宋体"}
+·不同的VSI可以指定相同的网关接口。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_x961909962}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x1818234522}[为]{style="font-family:宋体"}[VSI]{lang="EN-US"}[指定网关接口为]{style="font-family:宋体"}[Vsi-interface100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 为VSI指定网关接口为Vsi-interface100。
 
-[[\<Sysname\> system]{lang="EN-US"}]{#struct_0_10286_17180_1380309045}
+\<Sysname\> system
 
-[\[Sysname\] vsi vpna]{lang="EN-US"}
+Sysname vsi vpna
 
-[\[Sysname-vsi-vpna\] gateway vsi-interface 100]{lang="EN-US"}
+Sysname-vsi-vpna gateway vsi-interface 100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_x265730220}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[interface vsi-interface]{lang="EN-US"}**]{#struct_0_10286_17180_x895517081}
-:::
-
-::: {#-256627221 .myid}
-[]{#_Toc404798644}[]{#struct_0_10286_17180_x726885719}[]{#_Toc381105348}
+·**interface vsi-interface**
 
 **NVGRE \-- NVGRE配置命令 \-- interface vsi-interface**
 
 ------------------------------------------------------------------------
 
-[**[interface vsi-interface]{lang="EN-US"}**]{#struct_0_10286_17180_x1051614197}[命令用来创建]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口，并进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口视图。]{style="font-family:宋体"}
+**[interface vsi-interface**]命令用来创建VSI虚接口，并进入VSI虚接口视图。
 
-[**[undo interface vsi-interface]{lang="EN-US"}**]{#struct_0_10286_17180_x1104998102}[命令用来删除]{style="font-family:
-宋体"}[VSI]{lang="EN-US"}[虚接口。]{style="font-family:宋体"}
+**[undo interface vsi-interface**]命令用来删除VSI虚接口。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_x522916096}
+【命令】
 
-[**[interface vsi-interface ]{lang="EN-US"}***[vsi-interface-id]{lang="EN-US"}*]{#struct_0_10286_17180_2070419597}
+**[interface vsi-interface ***vsi-interface-id*]
 
-[**[undo interface vsi-interface ]{lang="EN-US"}***[vsi-interface-id]{lang="EN-US"}*]{#struct_0_10286_17180_x1601695856}
+**[undo interface vsi-interface ***vsi-interface-id*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10286_17180_511496151}
+【缺省情况】
 
-[[设备上不存在任何]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10286_17180_1451261568}[虚接口。]{style="font-family:宋体"}
+设备上不存在任何VSI虚接口。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_x841043782}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_10286_17180_314336500}
+系统视图
 
-[[【支持的缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_127720738}
+【支持的缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_x608469944}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_x1195832616}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1339056362}
+【参数】
 
-[*[vsi-nterface-id]{lang="EN-US"}*]{#struct_0_10286_17180_1447742443}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[vsi-nterface-id*]：VSI虚接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1727243709}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x130562319}[创建]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口]{style="font-family:宋体"}[100]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口视图。]{style="font-family:宋体"}
+\# 创建VSI虚接口100，并进入VSI虚接口视图。
 
-[[\<Sysname\> system]{lang="EN-US"}]{#struct_0_10286_17180_x914240597}
+\<Sysname\> system
 
-[\[Sysname\] interface vsi-interface 100]{lang="EN-US"}
+Sysname interface vsi-interface 100
 
-[\[Sysname-Vsi-interface100\]]{lang="EN-US"}
+Sysname-Vsi-interface100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_381211122}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[gateway vsi-interface]{lang="EN-US"}**]{#struct_0_10286_17180_x819492885}
-:::
-
-::: {#2070950537 .myid}
-[]{#_Toc404798645}[]{#struct_0_10286_17180_1880420441}[]{#_Toc379547066}[]{#_Toc375835823}
+·**gateway vsi-interface**
 
 **NVGRE \-- NVGRE配置命令 \-- l2vpn enable**
 
 ------------------------------------------------------------------------
 
-[**[l2vpn enable]{lang="EN-US"}**]{#struct_0_10286_17180_1735161578}[命令用来使能]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[l2vpn enable**]命令用来使能L2VPN功能。
 
-[**[undo l2vpn enable]{lang="EN-US"}**]{#struct_0_10286_17180_1130078309}[命令用来关闭]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo l2vpn enable**]命令用来关闭L2VPN功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1726236173}
+【命令】
 
-[**[l2vpn enable]{lang="EN-US"}**]{#struct_0_10286_17180_x818841881}
+**[l2vpn enable**]
 
-[**[undo l2vpn enable]{lang="EN-US"}**]{#struct_0_10286_17180_1449221774}
+**[undo l2vpn enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10286_17180_793163956}
+【缺省情况】
 
-[[L2VPN]{lang="EN-US"}]{#struct_0_10286_17180_370158250}[功能处于关闭状态。]{style="font-family:宋体"}
+L2VPN功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_x356437354}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_10286_17180_1432404559}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_x292666842}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_670632396}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_1987809580}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1143847371}
+【使用指导】
 
-[[只有使能]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}]{#struct_0_10286_17180_1939159895}[功能后，才能进行]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[的相关配置。]{style="font-family:宋体"}
+只有使能L2VPN功能后，才能进行L2VPN的相关配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_2099135794}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x1927173725}[使能]{style="font-family:宋体"}[L2VPN]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 使能L2VPN功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10286_17180_x1546797012}
+\<Sysname\> system-view
 
-[\[Sysname\] l2vpn enable]{lang="EN-US"}
-:::
-
-::: {#-1775240408 .myid}
-[]{#_Toc404798646}[]{#struct_0_10286_17180_x72713905}[]{#_Toc384042067}
+Sysname l2vpn enable
 
 **NVGRE \-- NVGRE配置命令 \-- mac-address static**
 
 ------------------------------------------------------------------------
 
-[**[mac-address static]{lang="EN-US"}**]{#struct_0_10286_17180_x1097917886}[命令用来添加静态远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}
+**[mac-address static**]命令用来添加静态远端MAC地址表项。
 
-[**[undo mac-address static]{lang="EN-US"}**]{#struct_0_10286_17180_x1677454889}[命令用来删除指定的静态远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}
+**[undo mac-address static**]命令用来删除指定的静态远端MAC地址表项。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_x2058250959}
+【命令】
 
-[**[mac-address static]{lang="EN-US"}**[ *mac-address* **interface tunnel** *tunnel-number* **vsi** *vsi-name*]{lang="EN-US"}]{#struct_0_10286_17180_2074429677}
+**[mac-address static** *mac-address* **interface tunnel** *tunnel-number* **vsi** *vsi-name*]
 
-[**[undo mac-address static]{lang="EN-US"}**[ \[ *mac-address* \] \[ **interface tunnel** *tunnel-number* \] **vsi** *vsi-name*]{lang="EN-US"}]{#struct_0_10286_17180_2035290006}
+**[undo mac-address static** [ *mac-address*   **interface tunnel** *tunnel-number*  **vsi** *vsi-name*]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10286_17180_1776289880}
+【缺省情况】
 
-[[设备上不存在任何静态的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_10286_17180_x225305651}[地址表项。]{style="font-family:宋体"}
+设备上不存在任何静态的远端MAC地址表项。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_1899275051}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_10286_17180_1290909379}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_2040610326}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_844052373}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_1354688640}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_1098172835}
+【参数】
 
-[*[mac]{lang="EN-US"}*[-]{lang="EN-US"}]{#struct_0_10286_17180_770535255}*[address]{lang="EN-US"}*[：]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址，格式为]{style="font-family:宋体"}[H-H-H]{lang="EN-US"}[，不支持组播]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址和全]{style="font-family:宋体"}[0]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。在配置时，用户可以省去]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址中每段开头的"]{style="font-family:宋体"}[0]{lang="EN-US"}["，例如输入"]{style="font-family:宋体"}[f-e2-1]{lang="EN-US"}["即表示输入的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为"]{style="font-family:宋体"}[000f-00e2-0001]{lang="EN-US"}["。]{style="font-family:宋体"}
+*[mac*-]*address*：MAC地址，格式为H-H-H，不支持组播MAC地址和全0的MAC地址。在配置时，用户可以省去MAC地址中每段开头的"0"，例如输入"f-e2-1"即表示输入的MAC地址为"000f-00e2-0001"。
 
-[**[interface tunnel ]{lang="EN-US"}***[tunnel-number]{lang="EN-US"}*]{#struct_0_10286_17180_x492167018}[：指定远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址对应的]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[隧道接口。]{style="font-family:宋体"}*[tunnel-number]{lang="EN-US"}*[为]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[隧道接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[interface tunnel ***tunnel-number*]：指定远端MAC地址对应的NVGRE隧道接口。*tunnel-number*为NVGRE隧道接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[**[vsi]{lang="EN-US"}***[ vsi-name]{lang="EN-US"}*]{#struct_0_10286_17180_1732745790}[：指定远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址所属的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[vsi*** vsi-name*]：指定远端MAC地址所属的VSI。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10286_17180_1294126521}
+【使用指导】
 
-[[远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_10286_17180_x613989950}[地址是指]{style="font-family:宋体"}[NVE]{lang="EN-US"}[连接的远端站点内虚拟机的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址既可以通过本命令静态配置，也可以通过报文中的源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址动态学习。静态配置的远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项优先级高于源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址动态学习的表项。]{style="font-family:宋体"}
+远端MAC地址是指NVE连接的远端站点内虚拟机的MAC地址。远端MAC地址既可以通过本命令静态配置，也可以通过报文中的源MAC地址动态学习。静态配置的远端MAC地址表项优先级高于源MAC地址动态学习的表项。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_x587201735}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x1951090463}[添加一条静态远端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项：]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为]{style="font-family:宋体"}[000f-e201-0101]{lang="EN-US"}[，]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[隧道接口为]{style="font-family:宋体"}[Tunnel1]{lang="EN-US"}[，]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址所属的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[为]{style="font-family:宋体"}[vsi1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 添加一条静态远端MAC地址表项：MAC地址为000f-e201-0101，NVGRE隧道接口为Tunnel1，MAC地址所属的VSI为vsi1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10286_17180_1381611196}
+\<Sysname\> system-view
 
-[\[Sysname\] mac-address static 000f-e201-0101 interface tunnel 1 vsi vsi1]{lang="EN-US"}
-:::
-
-::: {#988247972 .myid}
-[]{#_Toc404798647}[]{#struct_0_10286_17180_x1471222830}[]{#_Toc375835902}
+Sysname mac-address static 000f-e201-0101 interface tunnel 1 vsi vsi1
 
 **NVGRE \-- NVGRE配置命令 \-- mtu**
 
 ------------------------------------------------------------------------
 
-[**[mtu]{lang="EN-US"}**]{#struct_0_10286_17180_x2003165159}[命令用来配置接口的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[值。]{style="font-family:宋体"}
+**[mtu**]命令用来配置接口的MTU值。
 
-[**[undo mtu]{lang="EN-US"}**]{#struct_0_10286_17180_1073916923}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo mtu**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_581889920}
+【命令】
 
-[**[mtu]{lang="EN-US"}**[ *size*]{lang="EN-US"}]{#struct_0_10286_17180_x76995850}
+**[mtu** *size*]
 
-[**[undo mtu]{lang="EN-US"}**]{#struct_0_10286_17180_976452816}
+**[undo mtu**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10286_17180_480103542}
+【缺省情况】
 
-[[本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_10286_17180_729830892}
+本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_x509896212}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x1626547428}[虚接口视图]{style="font-family:宋体"}
+VSI虚接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_1178551823}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_x111296569}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_x630998229}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1298736072}
+【参数】
 
-[*[size]{lang="EN-US"}*]{#struct_0_10286_17180_x482868408}[：接口的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[值，取值范围为]{style="font-family:宋体"}[46]{lang="EN-US"}[～]{style="font-family:宋体"}[1560]{lang="EN-US"}[，单位为字节。]{style="font-family:宋体"}
+*[size*]：接口的MTU值，取值范围为46～1560，单位为字节。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_873963670}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x1869789877}[配置接口]{style="font-family:宋体"}[VSI-interface100]{lang="EN-US"}[的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[值为]{style="font-family:宋体"}[1430]{lang="EN-US"}[字节。]{style="font-family:宋体"}
+\# 配置接口VSI-interface100的MTU值为1430字节。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10286_17180_x1541010588}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vsi-interface 100]{lang="EN-US"}
+Sysname interface vsi-interface 100
 
-[\[Sysname-Vsi-interface100\] mtu 1430]{lang="EN-US"}
-:::
-
-::: {#1896375162 .myid}
-[]{#_Toc404798648}[]{#struct_0_10286_17180_1374371329}[]{#_Toc386982098}
+Sysname-Vsi-interface100 mtu 1430
 
 **NVGRE \-- NVGRE配置命令 \-- nvgre**
 
 ------------------------------------------------------------------------
 
-[**[nvgre]{lang="EN-US"}**]{#struct_0_10286_17180_x680607599}[命令用来创建]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络，并进入]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络视图。]{style="font-family:宋体"}
+**[nvgre**]命令用来创建NVGRE网络，并进入NVGRE网络视图。
 
-[**[undo nvgre]{lang="EN-US"}**]{#struct_0_10286_17180_x1543265531}[命令用来删除指定的]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络。]{style="font-family:宋体"}
+**[undo nvgre**]命令用来删除指定的NVGRE网络。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_1651050743}
+【命令】
 
-[**[nvgre ]{lang="EN-US"}***[vsid]{lang="EN-US"}*]{#struct_0_10286_17180_267347869}
+**[nvgre ***vsid*]
 
-[**[undo nvgre]{lang="EN-US"}**]{#struct_0_10286_17180_573211688}
+**[undo nvgre**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10286_17180_1703484105}
+【缺省情况】
 
-[[设备上不存在任何]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}]{#struct_0_10286_17180_x127601199}[网络。]{style="font-family:宋体"}
+设备上不存在任何NVGRE网络。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_939554364}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_1540626525}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_779847663}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_x221304969}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_x2085736815}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1415291024}
+【参数】
 
-[*[vsid]{lang="EN-US"}*]{#struct_0_10286_17180_1833431810}[：]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[虚拟子网标识符，取值范围为]{style="font-family:宋体"}[4096]{lang="EN-US"}[～]{style="font-family:宋体"}[16777214]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[vsid*]：NVGRE虚拟子网标识符，取值范围为4096～16777214。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10286_17180_2062196731}
+【使用指导】
 
-[[在一个]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10286_17180_5833353}[下只能创建一个]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络。不同]{style="font-family:宋体"}[VSI]{lang="EN-US"}[下创建的]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络，其]{style="font-family:宋体"}[VSID]{lang="EN-US"}[不能相同。]{style="font-family:宋体"}
+在一个VSI下只能创建一个NVGRE网络。不同VSI下创建的NVGRE网络，其VSID不能相同。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1661830792}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x2140171197}[在名称为]{style="font-family:宋体"}[vpna]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[下创建编号为]{style="font-family:宋体"}[10000]{lang="EN-US"}[的]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络，并进入]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络视图。]{style="font-family:宋体"}
+\# 在名称为vpna的VSI下创建编号为10000的NVGRE网络，并进入NVGRE网络视图。
 
-[[\<Sysname\> system]{lang="EN-US"}]{#struct_0_10286_17180_910730439}
+\<Sysname\> system
 
-[\[Sysname\] vsi vpna]{lang="EN-US"}
+Sysname vsi vpna
 
-[\[Sysname-vsi-vpna\] nvgre 10000]{lang="EN-US"}
+Sysname-vsi-vpna nvgre 10000
 
-[\[Sysname-vsi-vpna-nvgre-10000\]]{lang="EN-US"}
+Sysname-vsi-vpna-nvgre-10000
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_433591434}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vsi]{lang="EN-US"}**]{#struct_0_10286_17180_1450978399}
-:::
-
-::::: {#-1851718045 .myid}
-[]{#_Toc404798649}[]{#struct_0_10286_17180_x2072196917}[]{#_Toc384042077}[]{#_Toc383786769}[]{#_Toc383097751}[]{#_Toc376856932}[]{#_Toc371411817}
+·**vsi**
 
 **NVGRE \-- NVGRE配置命令 \-- reset arp suppression vsi**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](NVGRE命令.files/image001.png){width="63" height="25"}]{lang="EN-US"}]{#struct_0_10286_17180_x895451545}
-:::
+![说明](NVGRE命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_10286_17180_822915470}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[reset arp suppression vsi**]命令用来清除VSI的ARP泛洪抑制表项。
 
-[**[reset arp suppression vsi]{lang="EN-US"}**]{#struct_0_10286_17180_453671708}[命令用来清除]{style="font-family:
-宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_1182245539}
+**[reset arp suppression vsi** [ **name** *vsi-name* ]]
 
-[**[reset arp suppression vsi]{lang="EN-US"}**[ \[ **name** *vsi-name* \]]{lang="EN-US"}]{#struct_0_10286_17180_97238712}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_x2146657874}
+用户视图
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_10286_17180_311277717}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_1579446628}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_420933670}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_x57608194}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1720414981}
+**[name*** vsi-name*]：清除指定VSI的ARP泛洪抑制表项。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，则清除所有VSI的ARP泛洪抑制表项。
 
-[**[name]{lang="EN-US"}***[ vsi-name]{lang="EN-US"}*]{#struct_0_10286_17180_314402036}[：清除指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则清除所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_1173175118}
+\# 清除所有VSI的ARP泛洪抑制表项。
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x1998548294}[清除所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[ARP]{lang="EN-US"}[泛洪抑制表项。]{style="font-family:宋体"}
+\<Sysname\> reset arp suppression vsi
 
-[[\<Sysname\> reset arp suppression vsi]{lang="EN-US"}]{#struct_0_10286_17180_719881556}
+This command will delete all entries. Continue? [Y/N:y]
 
-[This command will delete all entries. Continue? \[Y/N\]:y]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_1374789122}
+·**display arp suppression**** vsi**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display arp suppression]{lang="EN-US"}**]{#struct_0_10286_17180_x669050059}**[ vsi]{lang="EN-US"}**
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[arp suppression enable]{lang="EN-US"}**]{#struct_0_10286_17180_370942044}
-:::::
-
-::: {#877252436 .myid}
-[]{#_Toc404798650}[]{#struct_0_10286_17180_229841903}[]{#_Toc375835903}[]{#_Toc290542313}[]{#_Toc263067840}
+·**arp suppression enable**
 
 **NVGRE \-- NVGRE配置命令 \-- reset counters interface vsi-interface**
 
 ------------------------------------------------------------------------
 
-[**[reset counters interface]{lang="DE"}**]{#struct_0_10286_17180_1485321024}[命令用来清除接口的统计信息。]{style="font-family:宋体"}
+**[reset counters interface**]命令用来清除接口的统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_1472195634}
+【命令】
 
-[**[reset counters interface]{lang="EN-US"}**[ \[ ]{lang="EN-US"}]{#struct_0_10286_17180_x910847304}**[vsi-interface]{lang="DE"}**[ \[ *vsi-interface-id* \] \]]{lang="EN-US"}
+**[reset counters interface** **vsi-interface** [ *vsi-interface-id*  ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_1427589052}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_10286_17180_1880485977}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_x204554766}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_587908017}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_274211840}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1894065205}
+【参数】
 
-[*[vsi-nterface-id]{lang="EN-US"}*]{#struct_0_10286_17180_1016063532}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[虚接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[vsi-nterface-id*]：VSI虚接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10286_17180_760653653}
+【使用指导】
 
-[[在某些情况下]{style="font-family:宋体"}]{#struct_0_10286_17180_x195824877}[，]{style="font-family:宋体"}[需要统计一定时间内某接口的流量]{style="font-family:宋体"}[，]{style="font-family:宋体"}[这就需要在统计开始前清除该接口原有的统计信息]{style="font-family:宋体"}[，]{style="font-family:
-宋体"}[重新进行统计。]{style="font-family:宋体"}
+在某些情况下，需要统计一定时间内某接口的流量，这就需要在统计开始前清除该接口原有的统计信息，重新进行统计。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果不指定接口类型（]{lang="EN-US" style="font-family:宋体"}]{#struct_0_10286_17180_928053522}**[vsi-interface]{lang="DE"}**[），则清除所有接口的统计信息；]{lang="EN-US" style="font-family:宋体"}
+·如果不指定接口类型（**vsi-interface**），则清除所有接口的统计信息；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定接口类型]{lang="EN-US" style="font-family:宋体"}]{#struct_0_10286_17180_x2048402436}[，]{lang="EN-US" style="font-family:宋体"}[不指定接口编号（]{lang="EN-US" style="font-family:
-宋体"}*[vsi-interface-id]{lang="EN-US"}*[）]{lang="EN-US" style="font-family:宋体"}[，则清除所有]{lang="EN-US" style="font-family:
-宋体"}[VSI]{lang="EN-US"}[虚]{style="font-family:宋体"}[接口的统计信息；]{lang="EN-US" style="font-family:宋体"}
+·如果指定接口类型，不指定接口编号（*vsi-interface-id*），则清除所有VSI虚接口的统计信息；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果同时指定接口类型和接口编号，则清除指定]{style="font-family:宋体"}]{#struct_0_10286_17180_x723929635}[VSI]{lang="EN-US"}[虚接口的统计信息。]{style="font-family:宋体"}
+·如果同时指定接口类型和接口编号，则清除指定VSI虚接口的统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1245504720}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_670173644}[清除接口]{style="font-family:宋体"}[VSI-interface100]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+\# 清除接口VSI-interface100的统计信息。
 
-[[\<Sysname\> reset counters interface vsi-interface 100]{lang="EN-US"}]{#struct_0_10286_17180_x10948977}
+\<Sysname\> reset counters interface vsi-interface 100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_1773865690}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display interface]{lang="EN-US"}**]{#struct_0_10286_17180_285118936}
-:::
-
-::::: {#816869194 .myid}
-[]{#_Toc404798651}[]{#struct_0_10286_17180_1459767398}
+·**display interface**
 
 **NVGRE \-- NVGRE配置命令 \-- reset l2vpn mac-address**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](NVGRE命令.files/image002.png){#图片 1 width="61" height="26"}]{lang="EN-US"}]{#struct_0_10286_17180_x1781009300}
-:::
+![说明](NVGRE命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_10286_17180_x388050228}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-**[ ]{lang="EN-US"}**
+****
 
-[**[reset l2vpn mac-address]{lang="EN-US"}**]{#struct_0_10286_17180_x1617869816}[命令用来清除通过源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址动态学习的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}
+**[reset l2vpn mac-address**]命令用来清除通过源MAC地址动态学习的MAC地址表项。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_1350070404}
+【命令】
 
-[**[reset ]{lang="EN-US"}[l2vpn mac-address ]{lang="EN-US"}**[\[ **vsi**]{lang="EN-US"}*[ vsi-name ]{lang="EN-US"}*[\]]{lang="EN-US"}]{#struct_0_10286_17180_x925096687}
+**[reset l2vpn mac-address ** **vsi**]* vsi-name *
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_781326134}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_10286_17180_x2058709711}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1651341238}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_666615215}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_x1803149536}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_418538765}
+【参数】
 
-[**[vsi]{lang="EN-US"}***[ vsi-name]{lang="EN-US"}*]{#struct_0_10286_17180_x453132260}[：清除指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[动态学习的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则清除所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[动态学习的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}
+**[vsi*** vsi-name*]：清除指定VSI动态学习的MAC地址表项。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，则清除所有VSI动态学习的MAC地址表项。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10286_17180_x591329078}
+【使用指导】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_520162409}[通过源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址学习到错误的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项，或学习的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项数目达到最大值时，可以执行本命令，以便重新学习]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}
+VSI通过源MAC地址学习到错误的MAC地址表项，或学习的MAC地址表项数目达到最大值时，可以执行本命令，以便重新学习MAC地址表项。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1872370161}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x1573553559}[清除名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[通过源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址动态学习的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表项。]{style="font-family:宋体"}
+\# 清除名为vpn1的VSI通过源MAC地址动态学习的MAC地址表项。
 
-[[\<Sysname\> reset l2vpn mac-address vsi vpn1]{lang="EN-US"}]{#struct_0_10286_17180_255414565}
+\<Sysname\> reset l2vpn mac-address vsi vpn1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_x492625770}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn mac-address vsi]{lang="EN-US"}**]{#struct_0_10286_17180_548766777}
-:::::
-
-::::: {#1068872014 .myid}
-[]{#_Toc404798652}[]{#struct_0_10286_17180_x577125114}[]{#_Toc387305729}[]{#_Toc381105349}
+·**display l2vpn mac-address vsi**
 
 **NVGRE \-- NVGRE配置命令 \-- reset l2vpn statistics vsi**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](NVGRE命令.files/image001.png){width="63" height="25"}]{lang="EN-US"}]{#struct_0_10286_17180_x1733730357}
-:::
+![说明](NVGRE命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_10286_17180_969909212}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[reset l2vpn statistics vsi**]命令用来清除VSI的报文统计信息。
 
-[**[reset l2vpn statistics vsi]{lang="EN-US"}**]{#struct_0_10286_17180_1550224640}[命令用来清除]{style="font-family:
-宋体"}[VSI]{lang="EN-US"}[的报文统计信息。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_525292266}
+**[reset l2vpn statistics vsi ** **name** *vsi-name* ]
 
-[**[reset l2vpn statistics vsi ]{lang="EN-US"}**[\[ **name** *vsi-name* \]]{lang="EN-US"}]{#struct_0_10286_17180_x1225053750}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_2011020284}
+用户视图
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_10286_17180_1920792732}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_1831804088}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_1073458171}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_x1742172248}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_x649645365}
+**[name*** vsi-name*]：清除指定VSI的报文统计信息。*vsi-name*表示VSI的名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，则清除所有VSI的信息。
 
-[**[name]{lang="EN-US"}***[ vsi-name]{lang="EN-US"}*]{#struct_0_10286_17180_x897076288}[：清除指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的报文统计信息。]{style="font-family:宋体"}*[vsi-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则清除所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_1875971695}
+\# 清除本设备上所有VSI报文统计信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_139968334}[清除本设备上所有]{style="font-family:宋体"}[VSI]{lang="EN-US"}[报文统计信息。]{style="font-family:宋体"}
+\<Sysname\> reset l2vpn statistics vsi
 
-[[\<Sysname\> reset l2vpn statistics vsi]{lang="EN-US"}]{#struct_0_10286_17180_x722797930}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_1188334812}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[statistics enable]{lang="EN-US"}**]{#struct_0_10286_17180_x1536734718}
-:::::
-
-::: {#-26059450 .myid}
-[]{#_Toc404798653}[]{#struct_0_10286_17180_1678997636}[]{#_Toc371411814}
+·**statistics enable**
 
 **NVGRE \-- NVGRE配置命令 \-- selective-flooding mac-address**
 
 ------------------------------------------------------------------------
 
-[**[selective-flooding mac-addres]{lang="EN-US"}**]{#struct_0_10286_17180_x1299194824}[命令用来配置]{style="font-family:
-宋体"}[VSI]{lang="EN-US"}[选择性泛洪的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[selective-flooding mac-addres**]命令用来配置VSI选择性泛洪的MAC地址。
 
-[**[undo selective-flooding mac-addres]{lang="EN-US"}**]{#struct_0_10286_17180_1006328661}[命令用来删除]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的选择性泛洪]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[undo selective-flooding mac-addres**]命令用来删除VSI的选择性泛洪MAC地址。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_1756743907}
+【命令】
 
-[]{#_Toc178914659}[**[selective-flooding mac-addres]{lang="EN-US"}**[ *mac-addres*]{lang="EN-US"}]{#struct_0_10286_17180_1563608798}
+**[selective-flooding mac-addres** *mac-addres*]
 
-[**[undo selective-flooding mac-addres]{lang="EN-US"}**[ *mac-addres*]{lang="EN-US"}]{#struct_0_10286_17180_1147055802}
+**[undo selective-flooding mac-addres** *mac-addres*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10286_17180_x2109741563}
+【缺省情况】
 
-[[设备上不存在任何]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10286_17180_628708065}[选择性泛洪]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+设备上不存在任何VSI选择性泛洪MAC地址。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_x2009048598}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x164292087}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_72813008}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_266889117}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_335067766}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_1066003610}
+【参数】
 
-[*[mac-address]{lang="EN-US"}*]{#struct_0_10286_17180_154644892}[：选择性泛洪的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。该]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址不能为全]{style="font-family:宋体"}[F]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[mac-address*]：选择性泛洪的MAC地址。该MAC地址不能为全F。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10286_17180_369027115}
+【使用指导】
 
-[[通过]{style="font-family:宋体"}**[flooding disable]{lang="EN-US"}**]{#struct_0_10286_17180_x1788683446}[命令关闭]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的泛洪功能后，为了将某些]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的数据帧泛洪到远端站点以保证某些业务的流量在站点间互通，可以配置选择性泛洪的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。当数据帧的目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址匹配选择性泛洪的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址时，该数据帧可以泛洪到远端站点。]{style="font-family:宋体"}
+通过**flooding disable**命令关闭VSI的泛洪功能后，为了将某些MAC地址的数据帧泛洪到远端站点以保证某些业务的流量在站点间互通，可以配置选择性泛洪的MAC地址。当数据帧的目的MAC地址匹配选择性泛洪的MAC地址时，该数据帧可以泛洪到远端站点。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_913287874}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x1457858425}[在]{style="font-family:宋体"}[VSI vsi1]{lang="EN-US"}[下配置选择性泛洪的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为]{style="font-family:宋体"}[000f-e201-0101]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在VSI vsi1下配置选择性泛洪的MAC地址为000f-e201-0101。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10286_17180_762902657}
+\<Sysname\> system-view
 
-[\[Sysname\] VSI vsi1]{lang="EN-US"}
+Sysname VSI vsi1
 
-[\[Sysname-vsi-vsi1\] selective-flooding mac-address 000f-e201-0101]{lang="EN-US"}
+Sysname-vsi-vsi1 selective-flooding mac-address 000f-e201-0101
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_959459622}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[flooding disable]{lang="EN-US"}**]{#struct_0_10286_17180_1832973058}
-:::
-
-::: {#-1902885513 .myid}
-[]{#_Toc290542294}[]{#_Toc263067821}[]{#_Toc207010297}[]{#_Toc207010030}[]{#_Toc139515319}[]{#_Toc137103152}[]{#_Toc404798654}[]{#struct_0_10286_17180_x331708268}
+·**flooding disable**
 
 **NVGRE \-- NVGRE配置命令 \-- service-instance**
 
 ------------------------------------------------------------------------
 
-[**[service-instance]{lang="EN-US"}**]{#struct_0_10286_17180_1645709196}[命令用来创建以太网服务实例，并进入以太网服务实例视图。]{style="font-family:宋体"}
+**[service-instance**]命令用来创建以太网服务实例，并进入以太网服务实例视图。
 
-[**[undo service-instance]{lang="EN-US"}**]{#struct_0_10286_17180_527588590}[命令用来删除指定的以太网服务实例。]{style="font-family:宋体"}
+**[undo service-instance**]命令用来删除指定的以太网服务实例。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_1091600492}
+【命令】
 
-[**[service-instance ]{lang="EN-US"}***[instance-id]{lang="EN-US"}*]{#struct_0_10286_17180_x963028878}
+**[service-instance ***instance-id*]
 
-[**[undo service-instance ]{lang="EN-US"}***[instance-id]{lang="EN-US"}*]{#struct_0_10286_17180_x1935705211}
+**[undo service-instance ***instance-id*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10286_17180_735550032}
+【缺省情况】
 
-[[接口上不存在任何以太网服务实例。]{style="font-family:宋体"}]{#struct_0_10286_17180_x798553366}
+接口上不存在任何以太网服务实例。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_x895910297}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_10286_17180_1221404307}[二层聚合接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_x173121296}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_1941474650}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_1546416353}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1575712852}
+【参数】
 
-[*[instance-id]{lang="EN-US"}*]{#struct_0_10286_17180_x391745875}[：以太网服务实例的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4096]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[instance-id*]：以太网服务实例的编号，取值范围为1～4096。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_1820034072}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_1638949241}[在二层以太网接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上创建以太网服务实例]{style="font-family:宋体"}[1]{lang="EN-US"}[，并进入以太网服务实例]{style="font-family:宋体"}[1]{lang="EN-US"}[的视图。]{style="font-family:宋体"}
+\# 在二层以太网接口GigabitEthernet1/0/1上创建以太网服务实例1，并进入以太网服务实例1的视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10286_17180_313943284}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] service-instance 1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 service-instance 1
 
-[\[Sysname-GigabitEthernet1/0/1-srv1\]]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1-srv1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_848033367}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn service-instance]{lang="EN-US"}**]{#struct_0_10286_17180_2137070786}
-:::
-
-::: {#1602442547 .myid}
-[]{#_Toc404798655}[]{#struct_0_10286_17180_x1642985326}[]{#_Toc379547070}[]{#_Toc375835843}
+·**display l2vpn service-instance**
 
 **NVGRE \-- NVGRE配置命令 \-- shutdown (VSI view)**
 
 ------------------------------------------------------------------------
 
-[**[shutdown]{lang="EN-US"}**]{#struct_0_10286_17180_x468618386}[命令用来关闭当前的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[shutdown**]命令用来关闭当前的VSI。
 
-[**[undo shutdown]{lang="EN-US"}**]{#struct_0_10286_17180_1321958582}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo shutdown**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_1153750937}
+【命令】
 
-[**[shutdown]{lang="EN-US"}**]{#struct_0_10286_17180_1447634099}
+**[shutdown**]
 
-[**[undo shutdown]{lang="EN-US"}**]{#struct_0_10286_17180_x2139590353}
+**[undo shutdown**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10286_17180_401111754}
+【缺省情况】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_1167090776}[处于开启状态。]{style="font-family:宋体"}
+VSI处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_1880027225}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_1714476357}[视图]{style="font-family:宋体"}
+VSI视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_x537203245}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_x380348793}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_x1794465862}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10286_17180_x450178012}
+【使用指导】
 
-[[关闭]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10286_17180_266770143}[后，该]{style="font-family:宋体"}[VSI]{lang="EN-US"}[将不能提供二层交换服务。]{style="font-family:宋体"}
+关闭VSI后，该VSI将不能提供二层交换服务。
 
-[[关闭]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10286_17180_1727773641}[功能通常用于暂时禁用二层交换服务，但还需要再次启用该服务的场景。关闭]{style="font-family:宋体"}[VSI]{lang="EN-US"}[后，该]{style="font-family:宋体"}[VSI]{lang="EN-US"}[所有已存在的配置保持不变。在关闭状态下还可以对]{style="font-family:宋体"}[VSI]{lang="EN-US"}[进行配置。]{style="font-family:宋体"}[VSI]{lang="EN-US"}[再次被开启后，基于最新的配置提供二层交换服务。]{style="font-family:宋体"}
+关闭VSI功能通常用于暂时禁用二层交换服务，但还需要再次启用该服务的场景。关闭VSI后，该VSI所有已存在的配置保持不变。在关闭状态下还可以对VSI进行配置。VSI再次被开启后，基于最新的配置提供二层交换服务。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1446014645}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_1591947781}[关闭名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 关闭名为vpn1的VSI。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10286_17180_670239180}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1]{lang="EN-US"}
+Sysname vsi vpn1
 
-[\[Sysname-vsi-vpn1\] shutdown]{lang="EN-US"}
+Sysname-vsi-vpn1 shutdown
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_295860828}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn vsi]{lang="EN-US"}**]{#struct_0_10286_17180_1857994146}
-:::
-
-::: {#-1527177385 .myid}
-[]{#_Toc404798656}[]{#struct_0_10286_17180_1930908034}[]{#_Toc375835904}
+·**display l2vpn vsi**
 
 **NVGRE \-- NVGRE配置命令 \-- shutdown (VSI interface view)**
 
 ------------------------------------------------------------------------
 
-[**[shutdown]{lang="EN-US"}**]{#struct_0_10286_17180_1118353611}[命令用来关闭当前接口。]{style="font-family:宋体"}
+**[shutdown**]命令用来关闭当前接口。
 
-[**[undo]{lang="EN-US"}**[ **shutdown**]{lang="EN-US"}]{#struct_0_10286_17180_1191356280}[命令用来开启当前接口。]{style="font-family:宋体"}
+**[undo** **shutdown**]命令用来开启当前接口。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_1122124286}
+【命令】
 
-[**[shutdown]{lang="EN-US"}**]{#struct_0_10286_17180_1586127181}
+**[shutdown**]
 
-[**[undo shutdown]{lang="EN-US"}**]{#struct_0_10286_17180_x38349541}
+**[undo shutdown**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10286_17180_x2058644175}
+【缺省情况】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x1629455708}[虚接口均处于开启状态。]{style="font-family:宋体"}
+VSI虚接口均处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_x846189772}
+【视图】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x1813304775}[虚接口视图]{style="font-family:宋体"}
+VSI虚接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_x2134714918}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_x1373213998}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_1290380308}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_814569680}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x745692805}[关闭接口]{style="font-family:宋体"}[VSI-interface100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 关闭接口VSI-interface100。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10286_17180_x492560234}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vsi-interface 100]{lang="EN-US"}
+Sysname interface vsi-interface 100
 
-[\[Sysname-Vsi-interface100\] shutdown]{lang="EN-US"}
-:::
-
-::::: {#-655052582 .myid}
-[]{#_Toc404798657}[]{#struct_0_10286_17180_x613014011}[]{#_Toc387305730}[]{#_Toc381105350}[]{#_Toc376783185}
+Sysname-Vsi-interface100 shutdown
 
 **NVGRE \-- NVGRE配置命令 \-- statistics enable**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](NVGRE命令.files/image001.png){#图片 2 width="63" height="25"}]{lang="EN-US"}]{#struct_0_10286_17180_x589257691}
-:::
+![说明](NVGRE命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:楷体_GB2312"}]{#struct_0_10286_17180_x1379425775}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[statistics enable**]命令用来开启指定VSI的报文统计功能。
 
-[**[statistics enable]{lang="EN-US"}**]{#struct_0_10286_17180_x1775069018}[命令用来开启指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[报文统计功能。]{style="font-family:宋体"}
+**[undo statistics enable**]命令用来关闭指定VSI的报文统计功能。
 
-[**[undo statistics enable]{lang="EN-US"}**]{#struct_0_10286_17180_x356657498}[命令用来关闭指定]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[报文统计功能。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_x511196523}
+**[statistics enable**]
 
-[**[statistics enable]{lang="EN-US"}**]{#struct_0_10286_17180_x914769071}
+**[undo statistics enable**]
 
-[**[undo statistics enable]{lang="EN-US"}**]{#struct_0_10286_17180_x797179140}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1178923990}
+VSI的报文统计功能处于关闭状态。
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x362345378}[的报文统计功能处于关闭状态。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_1073523707}
+VSI视图
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_1731897599}[视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_x2067483062}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_452815347}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_x1086227381}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_1142954561}
+\# 开启名为vpls1的VSI的报文统计功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x1818791867}[开启名为]{style="font-family:宋体"}[vpls1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的报文统计功能。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10286_17180_x112232413}
+Sysname vsi vpls1
 
-[\[Sysname\] vsi vpls1]{lang="EN-US"}
+Sysname-vsi-vpls1 statistics enable
 
-[\[Sysname-vsi-vpls1\] statistics enable]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1113200444}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset l2vpn statistics vsi]{lang="EN-US"}**]{#struct_0_10286_17180_1775948901}
-:::::
-
-::: {#816204697 .myid}
-[]{#_Toc404798658}[]{#struct_0_10286_17180_x1299129288}[]{#_Toc386982097}[]{#_Toc374372823}[]{#_Toc371058550}
+·**reset l2vpn statistics vsi**
 
 **NVGRE \-- NVGRE配置命令 \-- tunnel**
 
 ------------------------------------------------------------------------
 
-[**[tunnel]{lang="EN-US"}**]{#struct_0_10286_17180_709236938}[命令用来配置]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络与指定的]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[隧道关联。]{style="font-family:宋体"}
+**[tunnel**]命令用来配置NVGRE网络与指定的NVGRE隧道关联。
 
-[**[undo tunnel]{lang="EN-US"}**]{#struct_0_10286_17180_x1094703781}[命令用来取消]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络与]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[隧道的关联。]{style="font-family:宋体"}
+**[undo tunnel**]命令用来取消NVGRE网络与NVGRE隧道的关联。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_145762813}
+【命令】
 
-[**[tunnel ]{lang="EN-US"}***[tunnel-number]{lang="EN-US"}*]{#struct_0_10286_17180_x494155356}
+**[tunnel ***tunnel-number*]
 
-[**[undo tunnel ]{lang="EN-US"}***[tunnel-number]{lang="EN-US"}*]{#struct_0_10286_17180_827360112}
+**[undo tunnel ***tunnel-number*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10286_17180_44882357}
+【缺省情况】
 
-[[NVGRE]{lang="EN-US"}]{#struct_0_10286_17180_655207963}[网络没有与任何]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[隧道关联。]{style="font-family:宋体"}
+NVGRE网络没有与任何NVGRE隧道关联。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_1514026949}
+【视图】
 
-[[NVGRE]{lang="EN-US"}]{#struct_0_10286_17180_x1520177570}[网络视图]{style="font-family:宋体"}
+NVGRE网络视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1835814252}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_x2073357025}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_266954653}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_755368718}
+【参数】
 
-[*[tunnel-numb]{lang="FR"}*[er]{lang="EN-US"}]{#struct_0_10286_17180_763943455}[：隧道接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[tunnel-numb*er]：隧道接口的编号。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10286_17180_1102784577}
+【使用指导】
 
-[[在]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}]{#struct_0_10286_17180_x899942916}[组网中，用户需要手工将]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络与]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[隧道关联。]{style="font-family:宋体"}[NVE]{lang="EN-US"}[接收到某个]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络的泛洪流量后，将在与该]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络关联的所有]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[隧道上发送该流量，以便将流量转发给所有的远端]{style="font-family:宋体"}[NVE]{lang="EN-US"}[。]{style="font-family:宋体"}
+在NVGRE组网中，用户需要手工将NVGRE网络与NVGRE隧道关联。NVE接收到某个NVGRE网络的泛洪流量后，将在与该NVGRE网络关联的所有NVGRE隧道上发送该流量，以便将流量转发给所有的远端NVE。
 
-[[执行本命令时，需要注意的是：]{style="font-family:宋体"}]{#struct_0_10286_17180_x280412843}
+执行本命令时，需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令指定的隧道必须是]{style="font-family:宋体"}]{#struct_0_10286_17180_x828220488}[NVGRE]{lang="EN-US"}[模式的隧道。]{style="font-family:宋体"}
+·本命令指定的隧道必须是NVGRE模式的隧道。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[一个]{style="font-family:宋体"}]{#struct_0_10286_17180_300613806}[NVGRE]{lang="EN-US"}[网络可以关联多条]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[隧道；一条]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[隧道可以关联多个]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络。]{style="font-family:宋体"}
+·一个NVGRE网络可以关联多条NVGRE隧道；一条NVGRE隧道可以关联多个NVGRE网络。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_608813095}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_x1317054065}[配置]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[隧道]{style="font-family:宋体"}[Tunne0]{lang="EN-US"}[和]{style="font-family:宋体"}[Tunnel1]{lang="EN-US"}[与]{style="font-family:宋体"}[NVGRE 10000]{lang="EN-US"}[关联。]{style="font-family:宋体"}
+\# 配置NVGRE隧道Tunne0和Tunnel1与NVGRE 10000关联。
 
-[[\<Sysname\> system]{lang="EN-US"}]{#struct_0_10286_17180_1833038594}
+\<Sysname\> system
 
-[\[Sysname\] vsi vpna]{lang="EN-US"}
+Sysname vsi vpna
 
-[\[Sysname-vsi-vpna\] nvgre 10000]{lang="EN-US"}
+Sysname-vsi-vpna nvgre 10000
 
-[\[Sysname-vsi-vpna-nvgre-10000\] tunnel 0]{lang="EN-US"}
+Sysname-vsi-vpna-nvgre-10000 tunnel 0
 
-[\[Sysname-vsi-vpna-nvgre-10000\] tunnel 1]{lang="EN-US"}
+Sysname-vsi-vpna-nvgre-10000 tunnel 1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_807975402}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display nvgre tunnel]{lang="EN-US"}**]{#struct_0_10286_17180_117973239}
-:::
-
-::: {#-981054953 .myid}
-[]{#_Toc404798659}[]{#struct_0_10286_17180_1092689365}[]{#_Toc379547097}[]{#_Toc375835849}
+·**display nvgre tunnel**
 
 **NVGRE \-- NVGRE配置命令 \-- vsi**
 
 ------------------------------------------------------------------------
 
-[**[vsi]{lang="EN-US"}**]{#struct_0_10286_17180_x1095680270}[命令用来创建一个]{style="font-family:宋体"}[VSI]{lang="EN-US"}[（]{style="font-family:宋体"}[Virtual Switching Instance]{lang="EN-US"}[，虚拟交换实例），并进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+**[vsi**]命令用来创建一个VSI（Virtual Switching Instance，虚拟交换实例），并进入VSI视图。
 
-[**[undo]{lang="EN-US"}**[ **vsi**]{lang="EN-US"}]{#struct_0_10286_17180_1885527626}[命令用来删除指定的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo** **vsi**]命令用来删除指定的VSI。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_268620958}
+【命令】
 
-[**[vsi]{lang="IT"}**]{#struct_0_10286_17180_x733201799}[ *vsi-name*]{lang="IT"}
+**[vsi**] *vsi-name*
 
-[**[undo]{lang="IT"}**]{#struct_0_10286_17180_500329806}[ ]{lang="IT"}**[vsi]{lang="IT"}**[ *vsi-name*]{lang="IT"}
+**[undo**]**vsi** *vsi-name*
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10286_17180_844281850}
+【缺省情况】
 
-[[设备上不存在任何]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10286_17180_801440575}[。]{style="font-family:宋体"}
+设备上不存在任何VSI。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_x686326760}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_10286_17180_x895844761}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_1960114451}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_456140318}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_446209301}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1831691109}
+【参数】
 
-[*[vsi-name]{lang="EN-US"}*]{#struct_0_10286_17180_x309012593}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[vsi-name*]：VSI的名称，为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10286_17180_1309738815}
+【使用指导】
 
-[[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x1132935070}[是]{style="font-family:宋体"}[NVE]{lang="EN-US"}[上为一个]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络提供二层交换服务的虚拟交换实例。]{style="font-family:宋体"}[VSI]{lang="EN-US"}[可以看做是]{style="font-family:宋体"}[NVE]{lang="EN-US"}[上的一台基于]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络进行二层转发的虚拟交换机，它具有传统以太网交换机的所有功能，包括源]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址学习、]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址老化、泛洪等。]{style="font-family:宋体"}[VSI]{lang="EN-US"}[与]{style="font-family:宋体"}[NVGRE]{lang="EN-US"}[网络一一对应。]{style="font-family:宋体"}
+VSI是NVE上为一个NVGRE网络提供二层交换服务的虚拟交换实例。VSI可以看做是NVE上的一台基于NVGRE网络进行二层转发的虚拟交换机，它具有传统以太网交换机的所有功能，包括源MAC地址学习、MAC地址老化、泛洪等。VSI与NVGRE网络一一对应。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1397312165}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_39816646}[创建名为]{style="font-family:宋体"}[nvgre5000]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[VSI]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+\# 创建名为nvgre5000的VSI，并进入VSI视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10286_17180_314008820}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi nvgre5000]{lang="EN-US"}
+Sysname vsi nvgre5000
 
-[\[Sysname-vsi-nvgre5000\]]{lang="EN-US"}
+Sysname-vsi-nvgre5000
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1366433748}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn vsi]{lang="EN-US"}**]{#struct_0_10286_17180_89502885}
-:::
-
-::: {#-216238939 .myid}
-[]{#_Toc404798660}[]{#struct_0_10286_17180_1730984695}[]{#_Toc379547105}[]{#_Toc375835850}
+·**display l2vpn vsi**
 
 **NVGRE \-- NVGRE配置命令 \-- xconnect vsi**
 
 ------------------------------------------------------------------------
 
-[**[xconnect vsi]{lang="EN-US"}**]{#struct_0_10286_17180_677659022}[命令用来将]{style="font-family:宋体"}[AC]{lang="NL-BE"}[与]{style="font-family:宋体"}[VSI]{lang="EN-US"}[关联。]{style="font-family:宋体"}
+**[xconnect vsi**]命令用来将AC与VSI关联。
 
-[**[undo]{lang="EN-US"}**[ **xconnect vsi**]{lang="EN-US"}]{#struct_0_10286_17180_471209658}[命令用来取消]{style="font-family:宋体"}[AC]{lang="EN-US"}[与]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的关联。]{style="font-family:宋体"}
+**[undo** **xconnect vsi**]命令用来取消AC与VSI的关联。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1157899937}
+【命令】
 
-[**[xconnect vsi ]{lang="EN-US"}***[vsi-name ]{lang="EN-US"}*[\[ **access-mode** { **ethernet** \| **vlan** } \]]{lang="EN-US"}]{#struct_0_10286_17180_1019884427}
+**[xconnect vsi ***vsi-name *[[ **access-mode** { **ethernet** \| **vlan** } ]]]
 
-[**[undo xconnect vsi]{lang="EN-US"}**]{#struct_0_10286_17180_192665227}
+**[undo xconnect vsi**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_10286_17180_1880092761}
+【缺省情况】
 
-[[AC]{lang="EN-US"}]{#struct_0_10286_17180_x1738174910}[没有]{style="font-family:宋体"}[与]{style="font-family:宋体"}[VSI]{lang="EN-US"}[关联。]{style="font-family:宋体"}
+AC没有与VSI关联。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10286_17180_x1953919198}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_10286_17180_x488323458}[以太网服务实例视图]{style="font-family:宋体"}
+接口视图/以太网服务实例视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10286_17180_x372649997}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10286_17180_1854531925}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10286_17180_x692342831}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10286_17180_468729002}
+【参数】
 
-[*[vsi-name]{lang="EN-US"}*]{#struct_0_10286_17180_x1145347410}[：]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[vsi-name*]：VSI的名称，为1～31个字符的字符串，区分大小写。
 
-[**[access-mode]{lang="EN-US"}**]{#struct_0_10286_17180_x774715649}[：指定]{style="font-family:宋体"}[接入]{style="font-family:宋体"}[模式。当关联]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[AC]{lang="EN-US"}[为三层以太网子接口、]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[接口、以太网服务实例时，接入模式缺省为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[；其他情况下，接入模式缺省为]{style="font-family:宋体"}[Ethernet]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[access-mode**]：指定接入模式。当关联VSI的AC为三层以太网子接口、VLAN接口、以太网服务实例时，接入模式缺省为VLAN；其他情况下，接入模式缺省为Ethernet。
 
-[**[ethernet]{lang="EN-US"}**]{#struct_0_10286_17180_536545740}[：指定]{style="font-family:宋体"}[接入模式]{style="font-family:宋体"}[为]{style="font-family:宋体"}[Ethernet]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[ethernet**]：指定接入模式为Ethernet。
 
-[**[vlan]{lang="EN-US"}**]{#struct_0_10286_17180_x2030013559}[：指定]{style="font-family:宋体"}[接入模式]{style="font-family:宋体"}[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vlan**]：指定接入模式为VLAN。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_10286_17180_1935992280}
+【使用指导】
 
-[[在接口视图下执行本命令后，从接口接收到的报文将通过查找关联]{style="font-family:宋体"}[VSI]{lang="EN-US"}]{#struct_0_10286_17180_x649069262}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表进行转发；在某个接口的以太网服务实例视图下执行本命令后，从该接口接收到的、符合以太网服务实例报文匹配规则的报文，将通过查找关联]{style="font-family:宋体"}[VSI]{lang="EN-US"}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表进行转发。]{style="font-family:宋体"}
+在接口视图下执行本命令后，从接口接收到的报文将通过查找关联VSI的MAC地址表进行转发；在某个接口的以太网服务实例视图下执行本命令后，从该接口接收到的、符合以太网服务实例报文匹配规则的报文，将通过查找关联VSI的MAC地址表进行转发。
 
-[[接入模式分为以下两种：]{style="font-family:宋体"}]{#struct_0_10286_17180_x167564838}
+接入模式分为以下两种：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VLAN]{lang="EN-US"}]{#struct_0_10286_17180_x459738224}[接入模式：从本地站点接收到的、发送给本地站点的以太网帧必须带有]{style="font-family:宋体"}[VLAN tag]{lang="EN-US"}[。]{style="font-family:宋体"}[NVE]{lang="EN-US"}[从本地站点接收到以太网帧后，删除该帧的所有]{style="font-family:宋体"}[VLAN tag]{lang="EN-US"}[，再转发该数据帧；]{style="font-family:宋体"}[NVE]{lang="EN-US"}[发送以太网帧到本地站点时，为其添加]{style="font-family:宋体"}[VLAN tag]{lang="EN-US"}[。采用该模式时，]{style="font-family:宋体"}[NVE]{lang="EN-US"}[不会传递]{style="font-family:宋体"}[VLAN tag]{lang="EN-US"}[信息，不同站点可以独立地规划自己的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，不同站点的不同]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[之间可以互通。]{style="font-family:宋体"}
+·VLAN接入模式：从本地站点接收到的、发送给本地站点的以太网帧必须带有VLAN tag。NVE从本地站点接收到以太网帧后，删除该帧的所有VLAN tag，再转发该数据帧；NVE发送以太网帧到本地站点时，为其添加VLAN tag。采用该模式时，NVE不会传递VLAN tag信息，不同站点可以独立地规划自己的VLAN，不同站点的不同VLAN之间可以互通。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Ethernet]{lang="EN-US"}]{#struct_0_10286_17180_x1469212794}[接入模式：]{lang="EN-US" style="font-family:宋体"}[从本地站点接收到的、发送给本地站点的以太网帧可以携带]{style="font-family:宋体"}[VLAN tag]{lang="EN-US"}[，也可以不携带]{style="font-family:宋体"}[VLAN tag]{lang="EN-US"}[。]{style="font-family:宋体"}[NVE]{lang="EN-US"}[从本地站点接收到以太网帧后，保持该帧的]{style="font-family:宋体"}[VLAN tag]{lang="EN-US"}[信息不变，转发该数据帧；]{style="font-family:宋体"}[NVE]{lang="EN-US"}[发送以太网帧到本地站点时，不会为其添加]{style="font-family:宋体"}[VLAN tag]{lang="EN-US"}[。采用该模式时，]{style="font-family:宋体"}[NVE]{lang="EN-US"}[会在不同站点间传递]{style="font-family:宋体"}[VLAN tag]{lang="EN-US"}[信息，不同站点的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[需要统一规划，否则无法互通。]{style="font-family:宋体"}
+·Ethernet接入模式：从本地站点接收到的、发送给本地站点的以太网帧可以携带VLAN tag，也可以不携带VLAN tag。NVE从本地站点接收到以太网帧后，保持该帧的VLAN tag信息不变，转发该数据帧；NVE发送以太网帧到本地站点时，不会为其添加VLAN tag。采用该模式时，NVE会在不同站点间传递VLAN tag信息，不同站点的VLAN需要统一规划，否则无法互通。
 
-[[需要注意的是，在以太网服务实例下配置该命令前，必须先配置]{style="font-family:宋体"}**[encapsulation]{lang="EN-US"}**]{#struct_0_10286_17180_2110140961}[命令]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+需要注意的是，在以太网服务实例下配置该命令前，必须先配置**encapsulation**命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10286_17180_1349449789}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_10286_17180_1095130317}[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[下采用以太网服务实例]{style="font-family:宋体"}[200]{lang="EN-US"}[来匹配外层]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[为]{style="font-family:宋体"}[200]{lang="EN-US"}[的报文，将该以太网服务实例与名为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VSI]{lang="EN-US"}[关联。]{style="font-family:宋体"}
+\# 接口GigabitEthernet1/0/1下采用以太网服务实例200来匹配外层VLAN为200的报文，将该以太网服务实例与名为vpn1的VSI关联。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_10286_17180_2102629681}
+\<Sysname\> system-view
 
-[\[Sysname\] vsi vpn1 hub-spoke]{lang="EN-US"}
+Sysname vsi vpn1 hub-spoke
 
-[\[Sysname-vsi-vpn1\] quit]{lang="EN-US"}
+Sysname-vsi-vpn1 quit
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] service-instance 200]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 service-instance 200
 
-[\[Sysname-GigabitEthernet1/0/1-srv200\] encapsulation s-vid 200]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1-srv200 encapsulation s-vid 200
 
-[\[Sysname-GigabitEthernet1/0/1-srv200\] xconnect vsi vpn1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1-srv200 xconnect vsi vpn1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_10286_17180_x2075250410}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn interface]{lang="EN-US"}**]{#struct_0_10286_17180_1111122362}
+·**display l2vpn interface**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2vpn service-instance]{lang="EN-US"}**]{#struct_0_10286_17180_x1781916718}
+·**display l2vpn service-instance**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[encapsulation]{lang="EN-US"}**]{#struct_0_10286_17180_x63615819}
+·**encapsulation**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vsi]{lang="EN-US"}**]{#struct_0_10286_17180_x741112098}
-:::
+·**vsi**

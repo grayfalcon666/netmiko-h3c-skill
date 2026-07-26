@@ -1,2943 +1,2735 @@
-::: {#-1461383778 .myid}
-[]{#_Toc404782242}[]{#struct_0_x1979_37509_x100625136}[]{#_Toc285213496}
 
 **RBAC \-- RBAC配置命令 \-- description**
 
 ------------------------------------------------------------------------
 
-[**[description]{lang="EN-US"}**]{#struct_0_x1979_37509_x1947846488}[命令用来配置用户角色描述信息。]{style="font-family:宋体"}
+**[description**]命令用来配置用户角色描述信息。
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_x1979_37509_940529497}[用来删除用户角色的描述信息。]{style="font-family:宋体"}
+**[undo description**]用来删除用户角色的描述信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1072032735}
+【命令】
 
-[**[description ]{lang="EN-US"}***[text]{lang="EN-US"}*]{#struct_0_x1979_37509_1394993731}
+**[description ***text*]
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_x1979_37509_x1991509580}
+**[undo description**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1979_37509_517809488}
+【缺省情况】
 
-[[未定义用户角色描述信息。]{style="font-family:宋体"}]{#struct_0_x1979_37509_640546423}
+未定义用户角色描述信息。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1097213872}
+【视图】
 
-[[用户角色视图]{style="font-family:宋体"}]{#struct_0_x1979_37509_139977795}
+用户角色视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x100625137}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x1947780952}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x1481048844}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1369126628}
+【参数】
 
-[*[text]{lang="EN-US"}*]{#struct_0_x1979_37509_994481660}[：用户角色描述信息，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[128]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[text*]：用户角色描述信息，为1～128个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1979_37509_901031620}
+【使用指导】
 
-[[描述信息用来方便管理员对用户角色进行管理。]{style="font-family:宋体"}]{#struct_0_x1979_37509_1538002054}
+描述信息用来方便管理员对用户角色进行管理。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1750073771}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_x136022298}[为用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[配置描述信息为"]{style="font-family:宋体"}[labVIP]{lang="EN-US"}["。]{style="font-family:宋体"}
+\# 为用户角色role1配置描述信息为"labVIP"。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_x100625138}
+\<Sysname\> system-view
 
-[\[Sysname\] role name role1]{lang="EN-US"}
+Sysname role name role1
 
-[\[Sysname-role-role1\] description labVIP]{lang="EN-US"}
+Sysname-role-role1 description labVIP
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1948239704}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[**[display role]{lang="EN-US"}**]{.ItemStepChar}]{#struct_0_x1979_37509_x595740142}
+·**[display role**]{.ItemStepChar}
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[role]{lang="EN-US"}**]{#struct_0_x1979_37509_1806902859}
-:::
-
-::: {#654469937 .myid}
-[]{#_Toc404782243}[]{#struct_0_x1979_37509_x1938343534}[]{#_Toc285213497}
+·**role**
 
 **RBAC \-- RBAC配置命令 \-- display role**
 
 ------------------------------------------------------------------------
 
-[**[display role]{lang="EN-US"}**]{#struct_0_x1979_37509_x845445811}[命令用来显示用户角色信息。]{style="font-family:宋体"}
+**[display role**]命令用来显示用户角色信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x427773060}
+【命令】
 
-[**[display role ]{lang="EN-US"}**[\[ **name** *role-name* \]]{lang="EN-US"}]{#struct_0_x1979_37509_73097034}
+**[display role ** **name** *role-name* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x100625139}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1979_37509_x1948174168}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1030331716}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_1928254267}
+network-admin
 
-[[netword-operator]{lang="EN-US"}]{#struct_0_x1979_37509_x1853333064}
+netword-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1979_37509_438603854}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1979_37509_902086035}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1112429171}
+【参数】
 
-[**[name]{lang="EN-US"}***[ role-name]{lang="EN-US"}*]{#struct_0_x1979_37509_x100625140}[：用户角色名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[name*** role-name*]：用户角色名称，为1～63个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1947715409}
+【使用指导】
 
-[[如果不指定用户角色名称，则表示显示所有用户角色的信息，包括系统缺省存在的用户角色的信息。]{style="font-family:宋体"}]{#struct_0_x1979_37509_679468487}
+如果不指定用户角色名称，则表示显示所有用户角色的信息，包括系统缺省存在的用户角色的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x274264982}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_x860171199}[显示用户角色]{style="font-family:宋体"}[123]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+\# 显示用户角色123的信息。
 
-[[\<Sysname\> display role name 123]{lang="EN-US"}]{#struct_0_x1979_37509_x2056940267}
+\<Sysname\> display role name 123
 
-[Role: 123]{lang="EN-US"}
+Role: 123
 
-[  Description: new role]{lang="EN-US"}
+  Description: new role
 
-[  VLAN policy: deny]{lang="EN-US"}
+  VLAN policy: deny
 
-[  Permitted VLANs: 1 to 5, 7 to 8]{lang="EN-US"}
+  Permitted VLANs: 1 to 5, 7 to 8
 
-[  Interface policy: deny]{lang="EN-US"}
+  Interface policy: deny
 
-[  Permitted interfaces: GigabitEthernet1/0/1 to GigabitEthernet1/0/2, Vlan-interface1 to Vlan-interface20]{lang="EN-US"}
+  Permitted interfaces: GigabitEthernet1/0/1 to GigabitEthernet1/0/2, Vlan-interface1 to Vlan-interface20
 
-[  VPN instance policy: deny]{lang="EN-US"}
+  VPN instance policy: deny
 
-[  Permitted VPN instances: vpn, vpn1, vpn2]{lang="EN-US"}
+  Permitted VPN instances: vpn, vpn1, vpn2
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  Rule    Perm   Type  Scope         Entity]{lang="EN-US"}
+  Rule    Perm   Type  Scope         Entity
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  1       permit RWX   feature-group abc]{lang="EN-US"}
+  1       permit RWX   feature-group abc
 
-[  2       deny   -W-   feature       ldap]{lang="EN-US"}
+  2       deny   -W-   feature       ldap
 
-[  3       permit       command       system ; radius sc \*]{lang="EN-US"}
+  3       permit       command       system ; radius sc \*
 
-[  4       permit R\--   xml-element   -]{lang="EN-US"}
+  4       permit R\--   xml-element   -
 
-[  5       permit RW-   oid           1.2.1]{lang="EN-US"}
+  5       permit RW-   oid           1.2.1
 
-[  R:Read W:Write X:Execute]{lang="EN-US"}
+  R:Read W:Write X:Execute
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_2023854379}[显示所有用户角色的信息。]{style="font-family:宋体"}
+\# 显示所有用户角色的信息。
 
-[[\<Sysname\> display role]{lang="EN-US"}]{#struct_0_x1979_37509_x2056940274}
+\<Sysname\> display role
 
-[Role: network-admin]{lang="EN-US"}
+Role: network-admin
 
-[  Description: Predefined network admin role has access to all commands on the device]{lang="EN-US"}
+  Description: Predefined network admin role has access to all commands on the device
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  Rule    Perm   Type  Scope         Entity]{lang="EN-US"}
+  Rule    Perm   Type  Scope         Entity
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  sys-1   permit       command       \*]{lang="EN-US"}
+  sys-1   permit       command       \*
 
-[  sys-2   permit RWX   web-menu      -]{lang="EN-US"}
+  sys-2   permit RWX   web-menu      -
 
-[  sys-3   permit RWX   xml-element   -]{lang="EN-US"}
+  sys-3   permit RWX   xml-element   -
 
-[  sys-4   deny         command       display security-logfile summary]{lang="EN-US"}
+  sys-4   deny         command       display security-logfile summary
 
-[  sys-5   deny         command       system-view ; info-center securi]{lang="EN-US"}
+  sys-5   deny         command       system-view ; info-center securi
 
-[                                     ty-logfile directory \*]{lang="EN-US"}
+                                     ty-logfile directory \*
 
-[  sys-6   deny         command       security-logfile save]{lang="EN-US"}
+  sys-6   deny         command       security-logfile save
 
-[  sys-7   permit RW-   oid           1]{lang="EN-US"}
+  sys-7   permit RW-   oid           1
 
-[  R:Read W:Write X:Execute]{lang="EN-US"}
+  R:Read W:Write X:Execute
 
-[ ]{lang="EN-US"}
+Role: network-operator
 
-[Role: network-operator]{lang="EN-US"}
+  Description: Predefined network operator role has access to all read commands on the device
 
-[  Description: Predefined network operator role has access to all read commands on the device]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  Rule    Perm   Type  Scope         Entity
 
-[  Rule    Perm   Type  Scope         Entity]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  sys-1   permit       command       display \*
 
-[  sys-1   permit       command       display \*]{lang="EN-US"}
+  sys-2   permit       command       xml
 
-[  sys-2   permit       command       xml]{lang="EN-US"}
+  sys-3   deny         command       display history-command all
 
-[  sys-3   deny         command       display history-command all]{lang="EN-US"}
+  sys-4   deny         command       display exception \*
 
-[  sys-4   deny         command       display exception \*]{lang="EN-US"}
+  sys-5   deny         command       display cpu-usage configuration
 
-[  sys-5   deny         command       display cpu-usage configuration]{lang="EN-US"}
+                                     \*
 
-[                                     \*]{lang="EN-US"}
+  sys-6   deny         command       display kernel exception \*
 
-[  sys-6   deny         command       display kernel exception \*]{lang="EN-US"}
+  sys-7   deny         command       display kernel deadloop \*
 
-[  sys-7   deny         command       display kernel deadloop \*]{lang="EN-US"}
+  sys-8   deny         command       display kernel starvation \*
 
-[  sys-8   deny         command       display kernel starvation \*]{lang="EN-US"}
+  sys-9   deny         command       display kernel reboot \*
 
-[  sys-9   deny         command       display kernel reboot \*]{lang="EN-US"}
+  sys-10  deny         command       display memory trace \*
 
-[  sys-10  deny         command       display memory trace \*]{lang="EN-US"}
+  sys-11  deny         command       display kernel memory \*
 
-[  sys-11  deny         command       display kernel memory \*]{lang="EN-US"}
+  sys-12  permit       command       system-view ; local-user \*
 
-[  sys-12  permit       command       system-view ; local-user \*]{lang="EN-US"}
+  sys-13  permit       command       system-view ; switchto mdc \*
 
-[  sys-13  permit       command       system-view ; switchto mdc \*]{lang="EN-US"}
+  sys-14  permit R\--   web-menu      -
 
-[  sys-14  permit R\--   web-menu      -]{lang="EN-US"}
+  sys-15  permit R\--   xml-element   -
 
-[  sys-15  permit R\--   xml-element   -]{lang="EN-US"}
+  sys-16  deny         command       display security-logfile summary
 
-[  sys-16  deny         command       display security-logfile summary]{lang="EN-US"}
+  sys-17  deny         command       system-view ; info-center securi
 
-[  sys-17  deny         command       system-view ; info-center securi]{lang="EN-US"}
+                                     ty-logfile directory \*
 
-[                                     ty-logfile directory \*]{lang="EN-US"}
+  sys-18  deny         command       security-logfile save
 
-[  sys-18  deny         command       security-logfile save]{lang="EN-US"}
+  sys-19  permit R\--   oid           1
 
-[  sys-19  permit R\--   oid           1]{lang="EN-US"}
+  R:Read W:Write X:Execute
 
-[  R:Read W:Write X:Execute]{lang="EN-US"}
+Role: mdc-admin
 
-[ ]{lang="EN-US"}
+  Description: Predefined MDC admin role has access to all commands within an MDC instance
 
-[Role: mdc-admin]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[  Description: Predefined MDC admin role has access to all commands within an MDC instance]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+  Rule    Perm   Type  Scope         Entity
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  Rule    Perm   Type  Scope         Entity]{lang="EN-US"}
+  sys-1   permit       command       \*
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  sys-2   permit RWX   web-menu      -
 
-[  sys-1   permit       command       \*]{lang="EN-US"}
+  sys-3   permit RWX   xml-element   -
 
-[  sys-2   permit RWX   web-menu      -]{lang="EN-US"}
+  sys-4   deny   RWX   feature       mdc
 
-[  sys-3   permit RWX   xml-element   -]{lang="EN-US"}
+  sys-5   permit       command       display mdc \*
 
-[  sys-4   deny   RWX   feature       mdc]{lang="EN-US"}
+  sys-6   permit       command       switchback
 
-[  sys-5   permit       command       display mdc \*]{lang="EN-US"}
+  sys-7   deny         command       display security-logfile summary
 
-[  sys-6   permit       command       switchback]{lang="EN-US"}
+  sys-8   deny         command       system-view ; info-center securi
 
-[  sys-7   deny         command       display security-logfile summary]{lang="EN-US"}
+                                     ty-logfile directory \*
 
-[  sys-8   deny         command       system-view ; info-center securi]{lang="EN-US"}
+  sys-9   deny         command       security-logfile save
 
-[                                     ty-logfile directory \*]{lang="EN-US"}
+  sys-10  permit RW-   oid           1
 
-[  sys-9   deny         command       security-logfile save]{lang="EN-US"}
+  R:Read W:Write X:Execute
 
-[  sys-10  permit RW-   oid           1]{lang="EN-US"}
+Role: mdc-operator
 
-[ ]{lang="EN-US"}
+  Description: Predefined MDC operator role has access to all read commands within an MDC instance
 
-[  R:Read W:Write X:Execute]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[ ]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[Role: mdc-operator]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[  Description: Predefined MDC operator role has access to all read commands within an MDC instance]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+  Rule    Perm   Type  Scope         Entity
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+  sys-1   permit       command       display \*
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  sys-2   permit       command       xml
 
-[  Rule    Perm   Type  Scope         Entity]{lang="EN-US"}
+  sys-3   deny         command       display history-command all
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  sys-4   deny         command       display exception \*
 
-[  sys-1   permit       command       display \*]{lang="EN-US"}
+  sys-5   deny         command       display cpu-usage configuration
 
-[  sys-2   permit       command       xml]{lang="EN-US"}
+  sys-6   deny         command       display kernel exception \*
 
-[  sys-3   deny         command       display history-command all]{lang="EN-US"}
+  sys-7   deny         command       display kernel deadloop \*
 
-[  sys-4   deny         command       display exception \*]{lang="EN-US"}
+  sys-8   deny         command       display kernel starvation \*
 
-[  sys-5   deny         command       display cpu-usage configuration]{lang="EN-US"}
+  sys-9   deny         command       display kernel reboot \*
 
-[                                     ]{lang="EN-US"}
+  sys-10  deny         command       display memory trace \*
 
-[  sys-6   deny         command       display kernel exception \*]{lang="EN-US"}
+  sys-11  deny         command       display kernel memory \*
 
-[  sys-7   deny         command       display kernel deadloop \*]{lang="EN-US"}
+  sys-12  permit       command       system-view ; local-user \*
 
-[  sys-8   deny         command       display kernel starvation \*]{lang="EN-US"}
+  sys-13  permit       command       switchback
 
-[  sys-9   deny         command       display kernel reboot \*]{lang="EN-US"}
+  sys-14  permit R\--   web-menu      -
 
-[  sys-10  deny         command       display memory trace \*]{lang="EN-US"}
+  sys-15  permit R\--   xml-element   -
 
-[  sys-11  deny         command       display kernel memory \*]{lang="EN-US"}
+  sys-16  deny         command       display security-logfile summary
 
-[  sys-12  permit       command       system-view ; local-user \*]{lang="EN-US"}
+  sys-17  deny         command       system-view ; info-center securi
 
-[  sys-13  permit       command       switchback]{lang="EN-US"}
+                                     ty-logfile directory \*
 
-[  sys-14  permit R\--   web-menu      -]{lang="EN-US"}
+  sys-18  deny         command       security-logfile save
 
-[  sys-15  permit R\--   xml-element   -]{lang="EN-US"}
+  sys-19  permit R\--   oid           1
 
-[  sys-16  deny         command       display security-logfile summary]{lang="EN-US"}
+  R:Read W:Write X:Execute
 
-[  sys-17  deny         command       system-view ; info-center securi]{lang="EN-US"}
+Role: context-admin
 
-[                                     ty-logfile directory \*]{lang="EN-US"}
+  Description: Predefined Context admin role has access to all commands within a Context
 
-[  sys-18  deny         command       security-logfile save]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[  sys-19  permit R\--   oid           1]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[  R:Read W:Write X:Execute]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[ ]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[Role: context-admin]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  Description: Predefined Context admin role has access to all commands within a Context]{lang="EN-US"}
+  Rule    Perm   Type  Scope         Entity
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+  sys-1   permit       command       \*
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+  sys-2   permit RWX   web-menu      -
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+  sys-3   permit RWX   xml-element   -
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  sys-4   deny   RWX   feature       context
 
-[  Rule    Perm   Type  Scope         Entity]{lang="EN-US"}
+  sys-5   permit R\--   command       display context \*
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  sys-5   deny         command       display security-logfile summary
 
-[  sys-1   permit       command       \*]{lang="EN-US"}
+  sys-6   deny         command       system-view ; info-center securi
 
-[  sys-2   permit RWX   web-menu      -]{lang="EN-US"}
+                                     ty-logfile directory \*
 
-[  sys-3   permit RWX   xml-element   -]{lang="EN-US"}
+  sys-7   deny         command       security-logfile save
 
-[  sys-4   deny   RWX   feature       context]{lang="EN-US"}
+  sys-8   permit RW-   oid           1
 
-[  sys-5   permit R\--   command       display context \*]{lang="EN-US"}
+  R:Read W:Write X:Execute
 
-[  sys-5   deny         command       display security-logfile summary]{lang="EN-US"}
+Role: context-operator
 
-[  sys-6   deny         command       system-view ; info-center securi]{lang="EN-US"}
+  Description: Predefined Context operator role has access to all read commands within a Context
 
-[                                     ty-logfile directory \*]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[  sys-7   deny         command       security-logfile save]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[  sys-8   permit RW-   oid           1]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[ ]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[  R:Read W:Write X:Execute]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ ]{lang="EN-US"}
+  Rule    Perm   Type  Scope         Entity
 
-[Role: context-operator]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  Description: Predefined Context operator role has access to all read commands within a Context]{lang="EN-US"}
+  sys-1   permit       command       display \*
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  sys-2   permit       command       xml
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+  sys-3   deny         command       display history-command all
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+  sys-4   permit       command       system-view ; local-user \*
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+  sys-5   permit R\--   web-menu      -
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  sys-6   permit R\--   xml-element   -
 
-[  Rule    Perm   Type  Scope         Entity]{lang="EN-US"}
+  sys-7   deny         command       display security-logfile summary
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  sys-8   deny         command       system-view ; info-center securi
 
-[  sys-1   permit       command       display \*]{lang="EN-US"}
+                                     ty-logfile directory \*
 
-[  sys-2   permit       command       xml]{lang="EN-US"}
+  sys-9   deny         command       security-logfile save
 
-[  sys-3   deny         command       display history-command all]{lang="EN-US"}
+  sys-10  permit R\--   oid           1
 
-[  sys-4   permit       command       system-view ; local-user \*]{lang="EN-US"}
+  R:Read W:Write X:Execute
 
-[  sys-5   permit R\--   web-menu      -]{lang="EN-US"}
+Role: level-0
 
-[  sys-6   permit R\--   xml-element   -]{lang="EN-US"}
+  Description: Predefined level-0 role
 
-[  sys-7   deny         command       display security-logfile summary]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[  sys-8   deny         command       system-view ; info-center securi]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[                                     ty-logfile directory \*]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[  sys-9   deny         command       security-logfile save]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[  sys-10  permit R\--   oid           1]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  R:Read W:Write X:Execute]{lang="EN-US"}
+  Rule    Perm   Type  Scope         Entity
 
-[ ]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[Role: level-0]{lang="EN-US"}
+  sys-1   permit       command       tracert \*
 
-[  Description: Predefined level-0 role]{lang="EN-US"}
+  sys-2   permit       command       telnet \*
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  sys-3   permit       command       ping \*
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+  sys-4   permit       command       ssh2 \*
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+  sys-5   permit       command       super \*
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+  R:Read W:Write X:Execute
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+Role: level-1
 
-[  Rule    Perm   Type  Scope         Entity]{lang="EN-US"}
+  Description: Predefined level-1 role
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[  sys-1   permit       command       tracert \*]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[  sys-2   permit       command       telnet \*]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[  sys-3   permit       command       ping \*]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[  sys-4   permit       command       ssh2 \*]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  sys-5   permit       command       super \*]{lang="EN-US"}
+  Rule    Perm   Type  Scope         Entity
 
-[  R:Read W:Write X:Execute]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ ]{lang="EN-US"}
+  sys-1   permit       command       tracert \*
 
-[Role: level-1]{lang="EN-US"}
+  sys-2   permit       command       telnet \*
 
-[  Description: Predefined level-1 role]{lang="EN-US"}
+  sys-3   permit       command       ping \*
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  sys-4   permit       command       ssh2 \*
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+  sys-5   permit       command       display \*
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+  sys-6   permit       command       super \*
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+  sys-7   deny         command       display history-command all
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  R:Read W:Write X:Execute
 
-[  Rule    Perm   Type  Scope         Entity]{lang="EN-US"}
+Role: level-2
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  Description: Predefined level-2 role
 
-[  sys-1   permit       command       tracert \*]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[  sys-2   permit       command       telnet \*]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[  sys-3   permit       command       ping \*]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[  sys-4   permit       command       ssh2 \*]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[  sys-5   permit       command       display \*]{lang="EN-US"}
+Role: level-3
 
-[  sys-6   permit       command       super \*]{lang="EN-US"}
+  Description: Predefined level-3 role
 
-[  sys-7   deny         command       display history-command all]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[  R:Read W:Write X:Execute]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[ ]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[Role: level-2]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[  Description: Predefined level-2 role]{lang="EN-US"}
+Role: level-4
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  Description: Predefined level-4 role
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[ ]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[Role: level-3]{lang="EN-US"}
+Role: level-5
 
-[  Description: Predefined level-3 role]{lang="EN-US"}
+  Description: Predefined level-5 role
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[ ]{lang="EN-US"}
+Role: level-6
 
-[Role: level-4]{lang="EN-US"}
+  Description: Predefined level-6 role
 
-[  Description: Predefined level-4 role]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+Role: level-7
 
-[ ]{lang="EN-US"}
+  Description: Predefined level-7 role
 
-[Role: level-5]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[  Description: Predefined level-5 role]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+Role: level-8
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+  Description: Predefined level-8 role
 
-[ ]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[Role: level-6]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[  Description: Predefined level-6 role]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+Role: level-9
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+  Description: Predefined leve-9 role
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[ ]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[Role: level-7]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[  Description: Predefined level-7 role]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+  Rule    Perm   Type  Scope         Entity
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+  sys-1   permit RWX   feature       -
 
-[ ]{lang="EN-US"}
+  sys-2   deny   RWX   feature       device
 
-[Role: level-8]{lang="EN-US"}
+  sys-3   deny   RWX   feature       filesystem
 
-[  Description: Predefined level-8 role]{lang="EN-US"}
+  sys-4   permit       command       display \*
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  sys-5   deny         command       display history-command all
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+  R:Read W:Write X:Execute
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+Role: level-10
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+  Description: Predefined level-10 role
 
-[ ]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[Role: level-9]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[  Description: Predefined leve-9 role]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+Role: level-11
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+  Description: Predefined level-11 role
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[  Rule    Perm   Type  Scope         Entity]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[  sys-1   permit RWX   feature       -]{lang="EN-US"}
+Role: level-12
 
-[  sys-2   deny   RWX   feature       device]{lang="EN-US"}
+  Description: Predefined level-12 role
 
-[  sys-3   deny   RWX   feature       filesystem]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[  sys-4   permit       command       display \*]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[  sys-5   deny         command       display history-command all]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[  R:Read W:Write X:Execute]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[ ]{lang="EN-US"}
+Role: level-13
 
-[Role: level-10]{lang="EN-US"}
+  Description: Predefined level-13 role
 
-[  Description: Predefined level-10 role]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+Role: level-14
 
-[ ]{lang="EN-US"}
+  Description: Predefined level-14 role
 
-[Role: level-11]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[  Description: Predefined level-11 role]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+Role: level-15
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+  Description: Predefined level-15 role
 
-[ ]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[Role: level-12]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[  Description: Predefined level-12 role]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+  Rule    Perm   Type  Scope         Entity
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[ ]{lang="EN-US"}
+  sys-1   permit       command       \*
 
-[Role: level-13]{lang="EN-US"}
+  sys-2   permit RWX   web-menu      -
 
-[  Description: Predefined level-13 role]{lang="EN-US"}
+  sys-3   permit RWX   xml-element   -
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  sys-4   deny         command       display security-logfile summary
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+  sys-5   deny         command       system-view ; info-center securi
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+                                     ty-logfile directory \*
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+  sys-6   deny         command       security-logfile save
 
-[ ]{lang="EN-US"}
+  sys-7   permit RW-   oid           1
 
-[Role: level-14]{lang="EN-US"}
+  R:Read W:Write X:Execute
 
-[  Description: Predefined level-14 role]{lang="EN-US"}
+Role: 123
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  Description: new role
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+  VLAN policy: deny
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+  Permitted VLANs: 1 to 5, 7 to 8
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+  Interface policy: deny
 
-[ ]{lang="EN-US"}
+  Permitted interfaces: GigabitEthernet1/0/1 to GigabitEthernet1/0/2, Vlan-interface1 to Vlan-interface20
 
-[Role: level-15]{lang="EN-US"}
+  VPN instance policy: deny
 
-[  Description: Predefined level-15 role]{lang="EN-US"}
+  Permitted VPN instances: vpn, vpn1, vpn2
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+  Rule    Perm   Type  Scope         Entity
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  1       permit RWX   feature-group abc
 
-[  Rule    Perm   Type  Scope         Entity]{lang="EN-US"}
+  2       deny   -W-   feature       ldap
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  3       permit       command       system ; radius sc \*
 
-[  sys-1   permit       command       \*]{lang="EN-US"}
+  4       permit R\--   xml-element   -
 
-[  sys-2   permit RWX   web-menu      -]{lang="EN-US"}
+  5       permit RW-   oid           1.2.1
 
-[  sys-3   permit RWX   xml-element   -]{lang="EN-US"}
+  R:Read W:Write X:Execute
 
-[  sys-4   deny         command       display security-logfile summary]{lang="EN-US"}
+Role: security-audit
 
-[  sys-5   deny         command       system-view ; info-center securi]{lang="EN-US"}
+  Description: Predefined security audit role only has access to commands for th
 
-[                                     ty-logfile directory \*]{lang="EN-US"}
+e security log administrator
 
-[  sys-6   deny         command       security-logfile save]{lang="EN-US"}
+  VLAN policy: permit (default)
 
-[  sys-7   permit RW-   oid           1]{lang="EN-US"}
+  Interface policy: permit (default)
 
-[  R:Read W:Write X:Execute]{lang="EN-US"}
+  VPN instance policy: permit (default)
 
-[ ]{lang="EN-US"}
+  Security zone policy: permit (default)
 
-[Role: 123]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  Description: new role]{lang="EN-US"}
+  Rule    Perm   Type  Scope         Entity
 
-[  VLAN policy: deny]{lang="EN-US"}
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[  Permitted VLANs: 1 to 5, 7 to 8]{lang="EN-US"}
+  sys-1   deny         command       \*
 
-[  Interface policy: deny]{lang="EN-US"}
+  sys-2   permit       command       display security-logfile summary
 
-[  Permitted interfaces: GigabitEthernet1/0/1 to GigabitEthernet1/0/2, Vlan-interface1 to Vlan-interface20]{lang="EN-US"}
+  sys-3   permit       command       system-view ; info-center securi
 
-[  VPN instance policy: deny]{lang="EN-US"}
+                                     ty-logfile directory \*
 
-[  Permitted VPN instances: vpn, vpn1, vpn2]{lang="EN-US"}
+  sys-4   permit       command       security-logfile save
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+  sys-5   permit       command       cd \*
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  sys-6   permit       command       copy \*
 
-[  Rule    Perm   Type  Scope         Entity]{lang="EN-US"}
+  sys-7   permit       command       delete \*
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  sys-8   permit       command       dir \*
 
-[  1       permit RWX   feature-group abc]{lang="EN-US"}
+  sys-9   permit       command       mkdir \*
 
-[  2       deny   -W-   feature       ldap]{lang="EN-US"}
+  sys-10  permit       command       more \*
 
-[  3       permit       command       system ; radius sc \*]{lang="EN-US"}
+  sys-11  permit       command       move \*
 
-[  4       permit R\--   xml-element   -]{lang="EN-US"}
+  sys-12  permit       command       rmdir \*
 
-[  5       permit RW-   oid           1.2.1]{lang="EN-US"}
+  sys-13  permit       command       pwd
 
-[  R:Read W:Write X:Execute]{lang="EN-US"}
+  sys-14  permit       command       rename \*
 
-[ ]{lang="EN-US"}
+  sys-15  permit       command       undelete \*
 
-[Role: security-audit]{lang="EN-US"}
+  sys-16  permit       command       ftp \*
 
-[  Description: Predefined security audit role only has access to commands for th]{lang="EN-US"}
+  sys-17  permit       command       sftp \*
 
-[e security log administrator]{lang="EN-US"}
+  sys-18  permit       command       virtual-ftp-append
 
-[  VLAN policy: permit (default)]{lang="EN-US"}
+  sys-19  permit       command       virtual-ftp-ascii
 
-[  Interface policy: permit (default)]{lang="EN-US"}
+  sys-20  permit       command       virtual-ftp-binary
 
-[  VPN instance policy: permit (default)]{lang="EN-US"}
+  sys-21  permit       command       virtual-ftp-bye
 
-[  Security zone policy: permit (default)]{lang="EN-US"}
+  sys-22  permit       command       virtual-ftp-cd
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  sys-23  permit       command       virtual-ftp-cdup
 
-[  Rule    Perm   Type  Scope         Entity]{lang="EN-US"}
+  sys-24  permit       command       virtual-ftp-close
 
-[  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+  sys-25  permit       command       virtual-ftp-delete
 
-[  sys-1   deny         command       \*]{lang="EN-US"}
+  sys-26  permit       command       virtual-ftp-debug
 
-[  sys-2   permit       command       display security-logfile summary]{lang="EN-US"}
+  sys-27  permit       command       virtual-ftp-dir
 
-[  sys-3   permit       command       system-view ; info-center securi]{lang="EN-US"}
+  sys-28  permit       command       virtual-ftp-disconnect
 
-[                                     ty-logfile directory \*]{lang="EN-US"}
+  sys-29  permit       command       virtual-ftp-get
 
-[  sys-4   permit       command       security-logfile save]{lang="EN-US"}
+  sys-30  permit       command       virtual-ftp-help
 
-[  sys-5   permit       command       cd \*]{lang="EN-US"}
+  sys-31  permit       command       virtual-ftp-lcd
 
-[  sys-6   permit       command       copy \*]{lang="EN-US"}
+  sys-32  permit       command       virtual-ftp-ls
 
-[  sys-7   permit       command       delete \*]{lang="EN-US"}
+  sys-33  permit       command       virtual-ftp-mkdir
 
-[  sys-8   permit       command       dir \*]{lang="EN-US"}
+  sys-34  permit       command       virtual-ftp-newer
 
-[  sys-9   permit       command       mkdir \*]{lang="EN-US"}
+  sys-35  permit       command       virtual-ftp-open
 
-[  sys-10  permit       command       more \*]{lang="EN-US"}
+  sys-36  permit       command       virtual-ftp-passive
 
-[  sys-11  permit       command       move \*]{lang="EN-US"}
+  sys-37  permit       command       virtual-ftp-put
 
-[  sys-12  permit       command       rmdir \*]{lang="EN-US"}
+  sys-38  permit       command       virtual-ftp-pwd
 
-[  sys-13  permit       command       pwd]{lang="EN-US"}
+  sys-39  permit       command       virtual-ftp-quit
 
-[  sys-14  permit       command       rename \*]{lang="EN-US"}
+  sys-40  permit       command       virtual-ftp-reget
 
-[  sys-15  permit       command       undelete \*]{lang="EN-US"}
+  sys-41  permit       command       virtual-ftp-rstatus
 
-[  sys-16  permit       command       ftp \*]{lang="EN-US"}
+  sys-42  permit       command       virtual-ftp-rhelp
 
-[  sys-17  permit       command       sftp \*]{lang="EN-US"}
+  sys-43  permit       command       virtual-ftp-rename
 
-[  sys-18  permit       command       virtual-ftp-append]{lang="EN-US"}
+  sys-44  permit       command       virtual-ftp-reset
 
-[  sys-19  permit       command       virtual-ftp-ascii]{lang="EN-US"}
+  sys-45  permit       command       virtual-ftp-restart
 
-[  sys-20  permit       command       virtual-ftp-binary]{lang="EN-US"}
+  sys-46  permit       command       virtual-ftp-rmdir
 
-[  sys-21  permit       command       virtual-ftp-bye]{lang="EN-US"}
+  sys-47  permit       command       virtual-ftp-status
 
-[  sys-22  permit       command       virtual-ftp-cd]{lang="EN-US"}
+  sys-48  permit       command       virtual-ftp-system
 
-[  sys-23  permit       command       virtual-ftp-cdup]{lang="EN-US"}
+  sys-49  permit       command       virtual-ftp-user
 
-[  sys-24  permit       command       virtual-ftp-close]{lang="EN-US"}
+  sys-50  permit       command       virtual-ftp-verbose
 
-[  sys-25  permit       command       virtual-ftp-delete]{lang="EN-US"}
+  sys-51  permit       command       virtual-ftp-remove
 
-[  sys-26  permit       command       virtual-ftp-debug]{lang="EN-US"}
+  sys-52  permit       command       virtual-ftp-exit
 
-[  sys-27  permit       command       virtual-ftp-dir]{lang="EN-US"}
+  R:Read W:Write X:Execute
 
-[  sys-28  permit       command       virtual-ftp-disconnect]{lang="EN-US"}
+表1-1 display role命令显示信息描述表
 
-[  sys-29  permit       command       virtual-ftp-get]{lang="EN-US"}
+字段
 
-[  sys-30  permit       command       virtual-ftp-help]{lang="EN-US"}
+描述
 
-[  sys-31  permit       command       virtual-ftp-lcd]{lang="EN-US"}
+Role
 
-[  sys-32  permit       command       virtual-ftp-ls]{lang="EN-US"}
+用户角色名称，其中系统预定义的用户角色名称分别为network-admin、network-operator、mdc-admin、mdc-operator、context-admin、context-operator、level-*n*（*n*为0～15）、security-audit
 
-[  sys-33  permit       command       virtual-ftp-mkdir]{lang="EN-US"}
+Description
 
-[  sys-34  permit       command       virtual-ftp-newer]{lang="EN-US"}
+用户角色描述信息
 
-[  sys-35  permit       command       virtual-ftp-open]{lang="EN-US"}
+VLAN policy
 
-[  sys-36  permit       command       virtual-ftp-passive]{lang="EN-US"}
+配置的VLAN策略：
 
-[  sys-37  permit       command       virtual-ftp-put]{lang="EN-US"}
+·deny：表示除允许操作指定的VLAN外，其它VLAN均不能被用户操作
 
-[  sys-38  permit       command       virtual-ftp-pwd]{lang="EN-US"}
+·permit (default)：表示系统缺省允许用户操作任何VLAN
 
-[  sys-39  permit       command       virtual-ftp-quit]{lang="EN-US"}
+Permitted VLANs
 
-[  sys-40  permit       command       virtual-ftp-reget]{lang="EN-US"}
+允许用户操作的VLAN
 
-[  sys-41  permit       command       virtual-ftp-rstatus]{lang="EN-US"}
+Interface policy
 
-[  sys-42  permit       command       virtual-ftp-rhelp]{lang="EN-US"}
+配置的接口策略：
 
-[  sys-43  permit       command       virtual-ftp-rename]{lang="EN-US"}
+·deny：表示除允许操作指定的接口外，其它接口均不能被用户操作
 
-[  sys-44  permit       command       virtual-ftp-reset]{lang="EN-US"}
+·permit (default)：表示系统缺省允许用户操作任何接口
 
-[  sys-45  permit       command       virtual-ftp-restart]{lang="EN-US"}
+Permitted interfaces
 
-[  sys-46  permit       command       virtual-ftp-rmdir]{lang="EN-US"}
+允许用户操作的接口
 
-[  sys-47  permit       command       virtual-ftp-status]{lang="EN-US"}
+VPN-instance policy
 
-[  sys-48  permit       command       virtual-ftp-system]{lang="EN-US"}
+配置的VPN策略：
 
-[  sys-49  permit       command       virtual-ftp-user]{lang="EN-US"}
+·deny：表示除允许操作指定的VPN实例外，其它VPN实例均不能被用户操作
 
-[  sys-50  permit       command       virtual-ftp-verbose]{lang="EN-US"}
+·permit (default)：表示系统缺省允许用户操作任何VPN实例
 
-[  sys-51  permit       command       virtual-ftp-remove]{lang="EN-US"}
+Permitted VPN instances
 
-[  sys-52  permit       command       virtual-ftp-exit]{lang="EN-US"}
+允许用户操作的VPN实例
 
-[  R:Read W:Write X:Execute]{lang="EN-US"}
+Security zone policy
 
-[[表1-1 ]{lang="EN-US"}[display role]{lang="EN-US"}]{#struct_0_x1979_37509_457835974}[命令显示信息描述表]{style="font-family:黑体"}
+配置的安全域策略：
 
-[]{#table_struct_0_369669503}[[字段]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1072429459}
-:::
+·deny：表示除允许操作指定的安全域外，其它安全域均不能被用户操作
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1979_37509_x2056940275}
+·permit (default)：表示系统缺省允许用户操作任何安全域
 
-[[Role]{lang="EN-US"}]{#struct_0_x1979_37509_x1108247967}
+该显示信息的支持情况与设备的型号有关，请以设备的实际情况为准
 
-[[用户角色名称，其中系统预定义的用户角色名称分别为]{style="font-family:宋体"}[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x594205322}[、]{style="font-family:宋体"}[network-operator]{lang="EN-US"}[、]{style="font-family:宋体"}[mdc-admin]{lang="EN-US"}[、]{style="font-family:宋体"}[mdc-operator]{lang="EN-US"}[、]{style="font-family:宋体"}[context-admin]{lang="EN-US"}[、]{style="font-family:宋体"}[context-operator]{lang="EN-US"}[、]{style="font-family:宋体"}[level-*n*]{lang="EN-US"}[（]{style="font-family:宋体"}*[n]{lang="EN-US"}*[为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[15]{lang="EN-US"}[）、]{style="font-family:宋体"}[security-audit]{lang="EN-US"}
+Permitted security zones
 
-[[Description]{lang="EN-US"}]{#struct_0_x1979_37509_610960209}
+允许用户操作的安全域
 
-[[用户角色描述信息]{style="font-family:宋体"}]{#struct_0_x1979_37509_264248322}
+该显示信息的支持情况与设备的型号有关，请以设备的实际情况为准
 
-[[VLAN policy]{lang="EN-US"}]{#struct_0_x1979_37509_657441595}
+Rule
 
-[[配置的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1979_37509_x2056940276}[策略：]{style="font-family:宋体"}
+用户角色规则编号（系统预定义的权限规则通过sys-n标识）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[deny]{lang="EN-US"}]{#struct_0_x1979_37509_x704963440}[：表示除允许操作指定的]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[外，其它]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[均不能被用户操作]{lang="EN-US" style="font-family:宋体"}
+Perm
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[permit (default)]{lang="EN-US"}]{#struct_0_x1979_37509_1663597863}[：表示系统缺省允许用户操作任何]{lang="EN-US" style="font-family:
-  宋体"}[VLAN ]{lang="EN-US"}
+对命令行的操作许可：
 
-[[Permitted VLANs]{lang="EN-US"}]{#struct_0_x1979_37509_x393182365}
+·permit：允许操作
 
-[[允许用户操作的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1979_37509_111230054}
+·deny：禁止操作
 
-[[Interface policy]{lang="EN-US"}]{#struct_0_x1979_37509_x1907620540}
+Type
 
-[[配置的接口策略：]{style="font-family:宋体"}]{#struct_0_x1979_37509_281711893}
+命令行类型：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[deny]{lang="EN-US"}]{#struct_0_x1979_37509_x1901421288}[：表示除允许操作指定的接口外，其它接口均不能被用户操作]{style="font-family:宋体"}
+·R：读类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[permit (default)]{lang="EN-US"}]{#struct_0_x1979_37509_x2146078589}[：表示系统缺省允许用户操作任何接口]{lang="EN-US" style="font-family:
-  宋体"}
+·W：写类型
 
-[[Permitted interfaces]{lang="EN-US"}]{#struct_0_x1979_37509_1667368555}
+·X：执行类型
 
-[[允许用户操作的接口]{style="font-family:宋体"}]{#struct_0_x1979_37509_615296793}
+Scope
 
-[[VPN-instance policy]{lang="EN-US"}]{#struct_0_x1979_37509_281711892}
+用户角色规则的类型：
 
-[[配置的]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_x1979_37509_x1901421287}[策略：]{style="font-family:宋体"}
+·command：基于命令行的规则
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[deny]{lang="EN-US"}]{#struct_0_x1979_37509_x223764288}[：表示除允许操作指定的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例外，其它]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例均不能被用户操作]{style="font-family:宋体"}
+·feature：基于特性的规则
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[permit (default)]{lang="EN-US"}]{#struct_0_x1979_37509_1664495383}[：表示系统缺省允许用户操作任何]{lang="EN-US" style="font-family:
-  宋体"}[VPN]{lang="EN-US"}[实例]{lang="EN-US" style="font-family:宋体"}
+·feature-group：基于特性组规则
 
-[[Permitted VPN instances]{lang="EN-US"}]{#struct_0_x1979_37509_1413454422}
+·web-menu：基于Web菜单的规则
 
-[[允许用户操作的]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_x1979_37509_281711891}[实例]{style="font-family:宋体"}
+·xml-element：基于XML元素的规则
 
-[[Security zone policy]{lang="EN-US"}]{#struct_0_x1979_37509_1817328033}
+·oid：基于OID元素的规则
 
-[[配置的安全域策略：]{style="font-family:宋体"}]{#struct_0_x1979_37509_1817262497}
+Entity
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[deny]{lang="EN-US"}]{#struct_0_x1979_37509_902765608}[：表示除允许操作指定的安全域外，其它安全域均不能被用户操作]{style="font-family:宋体"}
+用户角色规则中定义的具体内容（命令特征字符串、特性名称或者特性组名称）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[permit (default)]{lang="EN-US"}]{#struct_0_x1979_37509_1817459105}[：表示系统缺省允许用户操作任何]{lang="EN-US" style="font-family:
-  宋体"}[安全域]{style="font-family:宋体"}
+·"-"表示所有特性
 
-[[该显示信息的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:宋体"}]{#struct_0_x1979_37509_1817393569}
+·"\*"为通配符，表示0个或多个任意字符
 
-[[Permitted security zones]{lang="EN-US"}]{#struct_0_x1979_37509_1817590177}
+【相关命令】
 
-[[允许用户操作的安全域]{style="font-family:宋体"}]{#struct_0_x1979_37509_526255229}
-
-[[该显示信息的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:宋体"}]{#struct_0_x1979_37509_1817524641}
-
-[[Rule]{lang="EN-US"}]{#struct_0_x1979_37509_x1901421286}
-
-[[用户角色规则编号（系统预定义的权限规则通过]{style="font-family:宋体"}[sys-n]{lang="EN-US"}]{#struct_0_x1979_37509_1342319653}[标识）]{style="font-family:宋体"}
-
-[[Perm]{lang="EN-US"}]{#struct_0_x1979_37509_1501388137}
-
-[[对命令行的操作许可：]{style="font-family:宋体"}]{#struct_0_x1979_37509_281711890}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[permit]{lang="EN-US"}]{#struct_0_x1979_37509_x1901421285}[：允许操作]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[deny]{lang="EN-US"}]{#struct_0_x1979_37509_x1386563702}[：禁止操作]{lang="EN-US" style="font-family:宋体"}
-
-[[Type]{lang="EN-US"}]{#struct_0_x1979_37509_1508949243}
-
-[[命令行类型：]{style="font-family:宋体"}]{#struct_0_x1979_37509_x1222886343}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[R]{lang="EN-US"}]{#struct_0_x1979_37509_281711889}[：读类型]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[W]{lang="EN-US"}]{#struct_0_x1979_37509_437230882}[：写类型]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[X]{lang="EN-US"}]{#struct_0_x1979_37509_x2061927669}[：执行类型]{lang="EN-US" style="font-family:宋体"}
-
-[[Scope]{lang="EN-US"}]{#struct_0_x1979_37509_1271405602}
-
-[[用户角色规则的类型：]{style="font-family:宋体"}]{#struct_0_x1979_37509_281711888}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[command]{lang="EN-US"}]{#struct_0_x1979_37509_437230883}[：基于命令行的规则]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[feature]{lang="EN-US"}]{#struct_0_x1979_37509_x2061927670}[：基于特性的规则]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[feature-group]{lang="EN-US"}]{#struct_0_x1979_37509_281711887}[：基于特性组规则]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[web-menu]{lang="EN-US"}]{#struct_0_x1979_37509_437230868}[：基于]{lang="EN-US" style="font-family:宋体"}[Web]{lang="EN-US"}[菜单的]{style="font-family:宋体"}[规则]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[xml-element]{lang="EN-US"}]{#struct_0_x1979_37509_x914916587}[：基于]{lang="EN-US" style="font-family:宋体"}[XML]{lang="EN-US"}[元素的]{style="font-family:宋体"}[规则]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[oid]{lang="EN-US"}]{#struct_0_x1979_37509_438912262}[：基于]{style="font-family:宋体"}[OID]{lang="EN-US"}[元素的规则]{style="font-family:宋体"}
-
-[[Entity]{lang="EN-US"}]{#struct_0_x1979_37509_1553251392}
-
-[[用户角色规则中定义的具体内容（命令特征字符串、特性名称或者特性组名称）]{style="font-family:宋体"}]{#struct_0_x1979_37509_281711886}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}["]{lang="EN-US" style="font-family:宋体"}[-]{lang="EN-US"}]{#struct_0_x1979_37509_437230869}["表示所有特性]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}["]{style="font-family:宋体"}]{#struct_0_x1979_37509_x914916588}[\*]{lang="EN-US"}["为通配符，表示]{style="font-family:宋体"}[0]{lang="EN-US"}[个或多个任意字符]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1553448000}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[role]{lang="EN-US"}**]{#struct_0_x1979_37509_1115277668}
-
-::::: {#444522080 .myid}
-[]{#_Toc404782244}[]{#struct_0_x1979_37509_281711885}[]{#_Toc285213498}
+·**role**
 
 **RBAC \-- RBAC配置命令 \-- display role feature**
 
 ------------------------------------------------------------------------
 
-[**[display role feature]{lang="EN-US"}**]{#struct_0_x1979_37509_437230870}[命令用来显示特性相关信息。]{style="font-family:宋体"}
+**[display role feature**]命令用来显示特性相关信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1423735565}
+【命令】
 
-[**[display role feature ]{lang="EN-US"}**[\[ **name** *feature-name* \| **verbose** \]]{lang="EN-US"}]{#struct_0_x1979_37509_x1238706764}
+**[display role feature **[[ **name** *feature-name* \| **verbose** ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1979_37509_931978078}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1979_37509_x150002988}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x369948569}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_1284078795}
+network-admin
 
-[[netword-operator]{lang="EN-US"}]{#struct_0_x1979_37509_281711884}
+netword-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1979_37509_437230871}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1979_37509_1423735564}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1238772300}
+【参数】
 
-[**[name ]{lang="EN-US"}***[feature-name]{lang="EN-US"}*]{#struct_0_x1979_37509_x1805398893}[：显示指定特性的详细信息，]{style="font-family:宋体"}*[feature-name]{lang="EN-US"}*[表示系统中的特性名称，且所有特性名称中的字母均为小写。]{style="font-family:宋体"}
+**[name ***feature-name*]：显示指定特性的详细信息，*feature-name*表示系统中的特性名称，且所有特性名称中的字母均为小写。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_x1979_37509_x1238349332}[：显示所有特性的详细信息，即显示特性内包含的所有命令行列表。]{style="font-family:宋体"}
+**[verbose**]：显示所有特性的详细信息，即显示特性内包含的所有命令行列表。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x153901908}
+【使用指导】
 
-[[如果不指定任何关键字，则显示系统中所有特性的名称列表。]{style="font-family:宋体"}]{#struct_0_x1979_37509_x1266581933}
+如果不指定任何关键字，则显示系统中所有特性的名称列表。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1979_37509_659913206}
+【举例】
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](RBAC命令.files/image001.png){width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1979_37509_x1674603243}
-:::
+![说明](RBAC命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[以下内容中涉及的特性、命令行均为示例，具体的显示信息与设备的实际情况有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1979_37509_1004707107}
-:::
+以下内容中涉及的特性、命令行均为示例，具体的显示信息与设备的实际情况有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+\# 显示系统中所有特性的名称列表。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_1925546330}[显示系统中所有特性的名称列表。]{style="font-family:宋体"}
+\<Sysname\> display role feature
 
-[[\<Sysname\> display role feature]{lang="EN-US"}]{#struct_0_x1979_37509_1946765830}
+Feature: device          (Device configuration related commands)
 
-[Feature: device          (Device configuration related commands)]{lang="EN-US"}
+Feature: interface       (Interface related commands)
 
-[Feature: interface       (Interface related commands)]{lang="EN-US"}
+Feature: syslog          (Syslog related commands)
 
-[Feature: syslog          (Syslog related commands)]{lang="EN-US"}
+Feature: process         (Process related commands)
 
-[Feature: process         (Process related commands)]{lang="EN-US"}
+......（略）
 
-[......（略）]{style="font-family:宋体"}
+\# 显示所有特性的详细信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_x1151474265}[显示所有特性的详细信息。]{style="font-family:宋体"}
+\<Sysname\> display role feature verbose
 
-[[\<Sysname\> display role feature verbose]{lang="EN-US"}]{#struct_0_x1979_37509_x1674603245}
+Feature: device          (Device configuration related commands)
 
-[Feature: device          (Device configuration related commands)]{lang="EN-US"}
+  display clock    (R)
 
-[  display clock    (R)]{lang="EN-US"}
+  debugging dev    (W)
 
-[  debugging dev    (W)]{lang="EN-US"}
+  display debugging dev    (R)
 
-[  display debugging dev    (R)]{lang="EN-US"}
+  display device \*    (R)
 
-[  display device \*    (R)]{lang="EN-US"}
+  display diagnostic-information    (R)
 
-[  display diagnostic-information    (R)]{lang="EN-US"}
+  display environment \*    (R)
 
-[  display environment \*    (R)]{lang="EN-US"}
+  display fan \*    (R)
 
-[  display fan \*    (R)]{lang="EN-US"}
+  display power \*    (R)
 
-[  display power \*    (R)]{lang="EN-US"}
+  display rps \*    (R)
 
-[  display rps \*    (R)]{lang="EN-US"}
+  display current-configuration \*    (R)
 
-[  display current-configuration \*    (R)]{lang="EN-US"}
+  display saved-configuration \*    (R)
 
-[  display saved-configuration \*    (R)]{lang="EN-US"}
+  display startup    (R)
 
-[  display startup    (R)]{lang="EN-US"}
+  display this \*    (R)
 
-[  display this \*    (R)]{lang="EN-US"}
+  display version    (R)
 
-[  display version    (R)]{lang="EN-US"}
+  clock datetime \*    (W)
 
-[  clock datetime \*    (W)]{lang="EN-US"}
+  reboot \*    (W)
 
-[  reboot \*    (W)]{lang="EN-US"}
+  save \*    (W)
 
-[  save \*    (W)]{lang="EN-US"}
+  startup saved-configuration \*    (W)
 
-[  startup saved-configuration \*    (W)]{lang="EN-US"}
+  system-view ; temperature-limit \*    (W)
 
-[  system-view ; temperature-limit \*    (W)]{lang="EN-US"}
+  system-view ; sysname \*    (W)
 
-[  system-view ; sysname \*    (W)]{lang="EN-US"}
+  system-view ; clock timezone \*    (W)
 
-[  system-view ; clock timezone \*    (W)]{lang="EN-US"}
+  system-view ; configuration replace file \*    (W)
 
-[  system-view ; configuration replace file \*    (W)]{lang="EN-US"}
+  system-view ; user-interface \* ; idle-timeout \*    (W)
 
-[  system-view ; user-interface \* ; idle-timeout \*    (W)]{lang="EN-US"}
+Feature: interface       (Interface related commands)
 
-[Feature: interface       (Interface related commands)]{lang="EN-US"}
+  reset counters interface \*    (W)
 
-[  reset counters interface \*    (W)]{lang="EN-US"}
+  debugging ifnet \*    (W)
 
-[  debugging ifnet \*    (W)]{lang="EN-US"}
+  display port-group manual \*    (R)
 
-[  display port-group manual \*    (R)]{lang="EN-US"}
+  display debugging ifnet    (R)
 
-[  display debugging ifnet    (R)]{lang="EN-US"}
+  display interface \*   (R)
 
-[  display interface \*   (R)]{lang="EN-US"}
+......（略）
 
-[......（略）]{style="font-family:宋体"}
+\# 显示特性aaa的详细信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_1811276161}[显示特性]{style="font-family:宋体"}[aaa]{lang="EN-US"}[的详细信息。]{style="font-family:宋体"}
+\<Sysname\> display role feature name aaa
 
-[[\<Sysname\> display role feature name aaa]{lang="EN-US"}]{#struct_0_x1979_37509_x1674603246}
+Feature: aaa             (AAA related commands)
 
-[Feature: aaa             (AAA related commands)]{lang="EN-US"}
+  system-view ; domain \*    (W)
 
-[  system-view ; domain \*    (W)]{lang="EN-US"}
+  system-view ; header \*    (W)
 
-[  system-view ; header \*    (W)]{lang="EN-US"}
+  system-view ; aaa \*    (W)
 
-[  system-view ; aaa \*    (W)]{lang="EN-US"}
+  display domain \*    (R)
 
-[  display domain \*    (R)]{lang="EN-US"}
+  system-view ; user-group \*    (W)
 
-[  system-view ; user-group \*    (W)]{lang="EN-US"}
+  system-view ; local-user \*    (W)
 
-[  system-view ; local-user \*    (W)]{lang="EN-US"}
+  display local-user \*    (R)
 
-[  display local-user \*    (R)]{lang="EN-US"}
+  display user-group \*    (R)
 
-[  display user-group \*    (R)]{lang="EN-US"}
+  display debugging local-server    (R)
 
-[  display debugging local-server    (R)]{lang="EN-US"}
+  debugging local-server \*    (W)
 
-[  debugging local-server \*    (W)]{lang="EN-US"}
+  super \*    (X)
 
-[  super \*    (X)]{lang="EN-US"}
+  display password-control \*    (R)
 
-[  display password-control \*    (R)]{lang="EN-US"}
+  reset password-control \*    (W)
 
-[  reset password-control \*    (W)]{lang="EN-US"}
+  system-view ; password-control \*    (W)
 
-[  system-view ; password-control \*    (W)]{lang="EN-US"}
+表1-2 display role feature命令显示信息描述表（以display role feature name aaa的显示字段为例）
 
-[]{#struct_0_x1979_37509_245192220}[[表1-2 ]{lang="EN-US"}[display role feature]{lang="EN-US"}]{#_Ref285211276}[命令显示信息描述表（以]{style="font-family:黑体"}[display role feature name aaa]{lang="EN-US"}[的显示字段为例）]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_401794011}[[字段]{style="font-family:黑体"}]{#struct_0_x1979_37509_x95539695}
-:::::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1244055925}
+Feature
 
-[[Feature]{lang="EN-US"}]{#struct_0_x1979_37509_x1902092722}
+特性名称以及功能简介
 
-[[特性名称以及功能简介]{style="font-family:宋体"}]{#struct_0_x1979_37509_x2079088688}
+system-view ; domain \*
 
-[[system-view ; domain \*]{lang="EN-US"}]{#struct_0_x1979_37509_700624525}
+系统视图下以**domain**开头的所有命令，以及ISP域视图下的所有命令
 
-[[系统视图下以]{style="font-family:宋体"}**[domain]{lang="EN-US"}**]{#struct_0_x1979_37509_x1674603247}[开头的所有命令，以及]{style="font-family:宋体"}[ISP]{lang="EN-US"}[域视图下的所有命令]{style="font-family:宋体"}
+system-view ; header \*
 
-[[system-view ; header \*]{lang="EN-US"}]{#struct_0_x1979_37509_x1320891721}
+系统视图下以**header**开头的所有命令
 
-[[系统视图下以]{style="font-family:宋体"}**[header]{lang="EN-US"}**]{#struct_0_x1979_37509_x1798398209}[开头的所有命令]{style="font-family:宋体"}
+system-view ; aaa \*
 
-[[system-view ; aaa \*]{lang="EN-US"}]{#struct_0_x1979_37509_1593893632}
+系统视图下以**aaa**开头的所有命令
 
-[[系统视图下以]{style="font-family:宋体"}**[aaa]{lang="EN-US"}**]{#struct_0_x1979_37509_x1674603248}[开头的所有命令]{style="font-family:宋体"}
+display domain \*
 
-[[display domain \*]{lang="EN-US"}]{#struct_0_x1979_37509_1051761274}
+用户视图下以**display domain**开头的所有命令
 
-[[用户视图下以]{style="font-family:宋体"}**[display domain]{lang="EN-US"}**]{#struct_0_x1979_37509_x1381912548}[开头的所有命令]{style="font-family:宋体"}
+system-view ; user-group \*
 
-[[system-view ; user-group \*]{lang="EN-US"}]{#struct_0_x1979_37509_1567193339}
+系统视图下以**user-group**开头的所有命令，以及用户组视图下的所有命令
 
-[[系统视图下以]{style="font-family:宋体"}**[user-group]{lang="EN-US"}**]{#struct_0_x1979_37509_848212350}[开头的所有命令，以及用户组视图下的所有命令]{style="font-family:宋体"}
+system-view ; local-user \*
 
-[[system-view ; local-user \*]{lang="EN-US"}]{#struct_0_x1979_37509_828710015}
+系统视图下以**local-user**开头的所有命令，以及本地用户视图下的所有命令
 
-[[系统视图下以]{style="font-family:宋体"}**[local-user]{lang="EN-US"}**]{#struct_0_x1979_37509_x1674603249}[开头的所有命令，以及本地用户视图下的所有命令]{style="font-family:宋体"}
+display user-group \*
 
-[[display user-group \*]{lang="EN-US"}]{#struct_0_x1979_37509_x514322667}
+用户视图下以**display user-group**开头的所有命令
 
-[[用户视图下以]{style="font-family:宋体"}**[display user-group]{lang="EN-US"}**]{#struct_0_x1979_37509_23128351}[开头的所有命令]{style="font-family:宋体"}
+display debugging local-server
 
-[[display debugging local-server]{lang="EN-US"}]{#struct_0_x1979_37509_x1746644272}
+用户视图下以命令**display debugging local-server**开头的所有命令
 
-[[用户视图下以命令]{style="font-family:宋体"}**[display debugging local-server]{lang="EN-US"}**]{#struct_0_x1979_37509_x1948150062}[开头的所有命令]{style="font-family:宋体"}
+debugging local-server \*
 
-[[debugging local-server \*]{lang="EN-US"}]{#struct_0_x1979_37509_x1674603250}
+用户视图下以**debugging local-server**开头的所有命令
 
-[[用户视图下以]{style="font-family:宋体"}**[debugging local-server]{lang="EN-US"}**]{#struct_0_x1979_37509_1408057170}[开头的所有命令]{style="font-family:宋体"}
+super \*
 
-[[super \*]{lang="EN-US"}]{#struct_0_x1979_37509_x1782480448}
+用户视图下以**super**开头的所有命令
 
-[[用户视图下以]{style="font-family:宋体"}**[super]{lang="EN-US"}**]{#struct_0_x1979_37509_x1674603251}[开头的所有命令]{style="font-family:宋体"}
+display password-control \*
 
-[[display password-control \*]{lang="EN-US"}]{#struct_0_x1979_37509_x158026771}
+用户视图下以**display password-control**开头的所有命令
 
-[[用户视图下以]{style="font-family:宋体"}**[display password-control]{lang="EN-US"}**]{#struct_0_x1979_37509_x906873344}[开头的所有命令]{style="font-family:宋体"}
+reset password-control \*
 
-[[reset password-control \*]{lang="EN-US"}]{#struct_0_x1979_37509_x1674603252}
+用户视图下以**reset password-control**开头的所有命令
 
-[[用户视图下以]{style="font-family:宋体"}**[reset password-control]{lang="EN-US"}**]{#struct_0_x1979_37509_x1724110712}[开头的所有命令]{style="font-family:宋体"}
+system-view ; password-control \*
 
-[[system-view ; password-control \*]{lang="EN-US"}]{#struct_0_x1979_37509_x865299179}
+系统视图下以**password-control**开头的所有命令
 
-[[系统视图下以]{style="font-family:宋体"}**[password-control]{lang="EN-US"}**]{#struct_0_x1979_37509_479785054}[开头的所有命令]{style="font-family:宋体"}
+(W)
 
-[[(W)]{lang="EN-US"}]{#struct_0_x1979_37509_1144799805}
+命令行的类型为写命令
 
-[[命令行的类型为写命令]{style="font-family:宋体"}]{#struct_0_x1979_37509_747986152}
+(R)
 
-[[(R)]{lang="EN-US"}]{#struct_0_x1979_37509_x865299180}
+命令行的类型为读命令
 
-[[命令行的类型为读命令]{style="font-family:宋体"}]{#struct_0_x1979_37509_480243805}
+(X)
 
-[[(X)]{lang="EN-US"}]{#struct_0_x1979_37509_574993480}
+命令行的类型为执行命令
 
-[[命令行的类型为执行命令]{style="font-family:宋体"}]{#struct_0_x1979_37509_x368550050}
+【相关命令】
 
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x341237462}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[feature]{lang="EN-US"}**]{#struct_0_x1979_37509_x865299181}
-
-::::: {#-7848027 .myid}
-[]{#_Toc404782245}[]{#struct_0_x1979_37509_480309341}[]{#_Toc285213499}
+·**feature**
 
 **RBAC \-- RBAC配置命令 \-- display role feature-group**
 
 ------------------------------------------------------------------------
 
-[**[display role feature-group]{lang="EN-US"}**]{#struct_0_x1979_37509_x939812275}[命令用来显示特性组信息。]{style="font-family:
-宋体"}
+**[display role feature-group**]命令用来显示特性组信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_199674954}
+【命令】
 
-[**[display role feature-group ]{lang="EN-US"}**[\[ **name** *feature-group-name* \] \[ **verbose** \]]{lang="EN-US"}]{#struct_0_x1979_37509_119488221}
+**[display role feature-group ** **name** *feature-group-name* ]  **verbose**
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1979_37509_2072931950}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1979_37509_x1746619747}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1979_37509_371418867}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_1408803156}
+network-admin
 
-[[netword-operator]{lang="EN-US"}]{#struct_0_x1979_37509_x865299182}
+netword-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1979_37509_480374877}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1979_37509_x603802587}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1636108471}
+【参数】
 
-[**[name ]{lang="EN-US"}***[feature-group-name]{lang="EN-US"}*]{#struct_0_x1979_37509_1972156888}[：显示指定特性组包含的特性名称列表。]{style="font-family:宋体"}*[feature-group-name]{lang="EN-US"}*[表示特性组名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则表示显示所有特性组的相关信息。]{style="font-family:宋体"}
+**[name ***feature-group-name*]：显示指定特性组包含的特性名称列表。*feature-group-name*表示特性组名称，为1～31个字符的字符串，区分大小写。如果不指定本参数，则表示显示所有特性组的相关信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_x1979_37509_x1875971966}[：显示特性组的详细信息，即显示特性组内的特性所包含的命令行列表。如果不指定本参数，则表示显示特性组中的特性名称列表。]{style="font-family:宋体"}
+**[verbose**]：显示特性组的详细信息，即显示特性组内的特性所包含的命令行列表。如果不指定本参数，则表示显示特性组中的特性名称列表。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1979_37509_461286195}
+【举例】
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](RBAC命令.files/image001.png){#图片 2 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1979_37509_x1311671783}
-:::
+![说明](RBAC命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[以下内容中涉及的特性、命令行均为示例，具体的显示信息与设备的实际情况有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1979_37509_x865299183}
-:::
+以下内容中涉及的特性、命令行均为示例，具体的显示信息与设备的实际情况有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+\# 显示所有特性组内的特性名称列表。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_480440413}[显示所有特性组内的特性名称列表。]{style="font-family:宋体"}
+\<Sysname\> display role feature-group
 
-[[\<Sysname\> display role feature-group]{lang="EN-US"}]{#struct_0_x1979_37509_x865299184}
+Feature group: L2
 
-[Feature group: L2]{lang="EN-US"}
+Feature: igmp-snooping   (IGMP-Snooping related commands)
 
-[Feature: igmp-snooping   (IGMP-Snooping related commands)]{lang="EN-US"}
+Feature: mld-snooping    (MLD-Snooping related commands)
 
-[Feature: mld-snooping    (MLD-Snooping related commands)]{lang="EN-US"}
+Feature: lacp            (LACP related commands)
 
-[Feature: lacp            (LACP related commands)]{lang="EN-US"}
+Feature: stp             (STP related commands)
 
-[Feature: stp             (STP related commands)]{lang="EN-US"}
+Feature: lldp            (LLDP related commands)
 
-[Feature: lldp            (LLDP related commands)]{lang="EN-US"}
+Feature: dldp            (DLDP related commands)
 
-[Feature: dldp            (DLDP related commands)]{lang="EN-US"}
+Feature: cfm             (CFM related commands)
 
-[Feature: cfm             (CFM related commands)]{lang="EN-US"}
+Feature: eoam            (EOAM related commands)
 
-[Feature: eoam            (EOAM related commands)]{lang="EN-US"}
+Feature: loopbk-detect   (Loopback-detection related commands)
 
-[Feature: loopbk-detect   (Loopback-detection related commands)]{lang="EN-US"}
+Feature: vlan            (Virtual LAN related commands)
 
-[Feature: vlan            (Virtual LAN related commands)]{lang="EN-US"}
+Feature: evb             (EVB related commands)
 
-[Feature: evb             (EVB related commands)]{lang="EN-US"}
+Feature group: L3
 
-[ ]{lang="EN-US"}
+Feature: route           (Route management related commands)
 
-[Feature group: L3]{lang="EN-US"}
+Feature: ospf            (Open Shortest Path First protocol related commands)
 
-[Feature: route           (Route management related commands)]{lang="EN-US"}
+Feature: rip             (Routing Information Protocol related commands)
 
-[Feature: ospf            (Open Shortest Path First protocol related commands)]{lang="EN-US"}
+Feature: isis            (ISIS protocol related commands)
 
-[Feature: rip             (Routing Information Protocol related commands)]{lang="EN-US"}
+Feature: bgp             (Border Gateway Protocol related commands)
 
-[Feature: isis            (ISIS protocol related commands)]{lang="EN-US"}
+Feature: l3vpn           (Layer 3 Virtual Private Network related commands)
 
-[Feature: bgp             (Border Gateway Protocol related commands)]{lang="EN-US"}
+\# 显示所有特性组的详细信息。
 
-[Feature: l3vpn           (Layer 3 Virtual Private Network related commands)]{lang="EN-US"}
+\<Sysname\> display role feature-group verbose
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_479981661}[显示所有特性组的详细信息。]{style="font-family:宋体"}
+Feature group: L2
 
-[[\<Sysname\> display role feature-group verbose]{lang="EN-US"}]{#struct_0_x1979_37509_x865299186}
+Feature: igmp-snooping   (IGMP-Snooping related commands)
 
-[Feature group: L2]{lang="EN-US"}
+  system-view ; igmp-snooping    (W)
 
-[Feature: igmp-snooping   (IGMP-Snooping related commands)]{lang="EN-US"}
+  system-view ; vlan \* ; igmp-snooping \*    (W)
 
-[  system-view ; igmp-snooping    (W)]{lang="EN-US"}
+  system-view ; interface \* ; igmp-snooping \*    (W)
 
-[  system-view ; vlan \* ; igmp-snooping \*    (W)]{lang="EN-US"}
+  display igmp-snooping \*    (R)
 
-[  system-view ; interface \* ; igmp-snooping \*    (W)]{lang="EN-US"}
+  reset igmp-snooping \*    (W)
 
-[  display igmp-snooping \*    (R)]{lang="EN-US"}
+  debugging igmp-snooping \*    (W)
 
-[  reset igmp-snooping \*    (W)]{lang="EN-US"}
+  display debugging igmp-snooping \*    (R)
 
-[  debugging igmp-snooping \*    (W)]{lang="EN-US"}
+Feature: mld-snooping    (MLD-Snooping related commands)
 
-[  display debugging igmp-snooping \*    (R)]{lang="EN-US"}
+  system-view ; mld-snooping    (W)
 
-[Feature: mld-snooping    (MLD-Snooping related commands)]{lang="EN-US"}
+  system-view ; vlan \* ; mld-snooping \*    (W)
 
-[  system-view ; mld-snooping    (W)]{lang="EN-US"}
+  system-view ; interface \* ; mld-snooping \*    (W)
 
-[  system-view ; vlan \* ; mld-snooping \*    (W)]{lang="EN-US"}
+  display mld-snooping \*    (R)
 
-[  system-view ; interface \* ; mld-snooping \*    (W)]{lang="EN-US"}
+  reset mld-snooping \*    (W)
 
-[  display mld-snooping \*    (R)]{lang="EN-US"}
+  debugging mld-snooping \*    (W)
 
-[  reset mld-snooping \*    (W)]{lang="EN-US"}
+  display debugging mld-snooping \*    (R)
 
-[  debugging mld-snooping \*    (W)]{lang="EN-US"}
+Feature group: L3
 
-[  display debugging mld-snooping \*    (R)]{lang="EN-US"}
+Feature: route           (Route management related commands)
 
-[ ]{lang="EN-US"}
+  display ip routing-table \*    (R)
 
-[Feature group: L3]{lang="EN-US"}
+  display ipv6 routing-table \*    (R)
 
-[Feature: route           (Route management related commands)]{lang="EN-US"}
+  display router id \*    (R)
 
-[  display ip routing-table \*    (R)]{lang="EN-US"}
+  reset ip routing-table statistics \*    (W)
 
-[  display ipv6 routing-table \*    (R)]{lang="EN-US"}
+  reset ipv6 routing-table statistics \*    (W)
 
-[  display router id \*    (R)]{lang="EN-US"}
+  debugging rm \*    (W)
 
-[  reset ip routing-table statistics \*    (W)]{lang="EN-US"}
+  system-view ; ip route-static \*    (W)
 
-[  reset ipv6 routing-table statistics \*    (W)]{lang="EN-US"}
+  system-view ; ipv6 route-static \*    (W)
 
-[  debugging rm \*    (W)]{lang="EN-US"}
+  system-view ; router id \*    (W)
 
-[  system-view ; ip route-static \*    (W)]{lang="EN-US"}
+  system-view ; delete static-routes \*    (W)
 
-[  system-view ; ipv6 route-static \*    (W)]{lang="EN-US"}
+  system-view ; delete ipv6 static-routes \*    (W)
 
-[  system-view ; router id \*    (W)]{lang="EN-US"}
+Feature: ospf            (Open Shortest Path First protocol related commands)
 
-[  system-view ; delete static-routes \*    (W)]{lang="EN-US"}
+  display ospf \*    (R)
 
-[  system-view ; delete ipv6 static-routes \*    (W)]{lang="EN-US"}
+  display ospfv3 \*    (R)
 
-[Feature: ospf            (Open Shortest Path First protocol related commands)]{lang="EN-US"}
+  reset ospf \*    (W)
 
-[  display ospf \*    (R)]{lang="EN-US"}
+  debugging ospf \*    (W)
 
-[  display ospfv3 \*    (R)]{lang="EN-US"}
+  debugging ospfv3 \*    (W)
 
-[  reset ospf \*    (W)]{lang="EN-US"}
+  system-view ; ospf \*    (W)
 
-[  debugging ospf \*    (W)]{lang="EN-US"}
+  system-view ; interface \* ; ospf \*    (W)
 
-[  debugging ospfv3 \*    (W)]{lang="EN-US"}
+  system-view ; ospfv3 \*    (W)
 
-[  system-view ; ospf \*    (W)]{lang="EN-US"}
+  system-view ; interface \* ; ospfv3 \*    (W)
 
-[  system-view ; interface \* ; ospf \*    (W)]{lang="EN-US"}
+Feature: rip             (Routing Information Protocol related commands)
 
-[  system-view ; ospfv3 \*    (W)]{lang="EN-US"}
+  display rip \*    (R)
 
-[  system-view ; interface \* ; ospfv3 \*    (W)]{lang="EN-US"}
+  display ripng \*    (R)
 
-[Feature: rip             (Routing Information Protocol related commands)]{lang="EN-US"}
+  debugging rip \*    (W)
 
-[  display rip \*    (R)]{lang="EN-US"}
+  debugging ripng \*    (W)
 
-[  display ripng \*    (R)]{lang="EN-US"}
+  system-view ; rip \*    (W)
 
-[  debugging rip \*    (W)]{lang="EN-US"}
+  system-view ; interface \* ; rip \*    (W)
 
-[  debugging ripng \*    (W)]{lang="EN-US"}
+  system-view ; ripng \*    (W)
 
-[  system-view ; rip \*    (W)]{lang="EN-US"}
+  system-view ; interface \* ; ripng \*    (W)
 
-[  system-view ; interface \* ; rip \*    (W)]{lang="EN-US"}
+Feature: isis            (ISIS protocol related commands)
 
-[  system-view ; ripng \*    (W)]{lang="EN-US"}
+  display isis \*    (R)
 
-[  system-view ; interface \* ; ripng \*    (W)]{lang="EN-US"}
+  reset isis \*    (W)
 
-[Feature: isis            (ISIS protocol related commands)]{lang="EN-US"}
+  debugging isis \*    (W)
 
-[  display isis \*    (R)]{lang="EN-US"}
+  display debugging isis \*    (R)
 
-[  reset isis \*    (W)]{lang="EN-US"}
+  system-view ; isis \*    (W)
 
-[  debugging isis \*    (W)]{lang="EN-US"}
+  system-view ; interface \* ; isis \*    (W)
 
-[  display debugging isis \*    (R)]{lang="EN-US"}
+Feature: bgp             (Border Gateway Protocol related commands)
 
-[  system-view ; isis \*    (W)]{lang="EN-US"}
+  display bgp \*    (R)
 
-[  system-view ; interface \* ; isis \*    (W)]{lang="EN-US"}
+  reset bgp \*    (W)
 
-[Feature: bgp             (Border Gateway Protocol related commands)]{lang="EN-US"}
+  refresh bgp \*    (W)
 
-[  display bgp \*    (R)]{lang="EN-US"}
+  debugging bgp \*    (W)
 
-[  reset bgp \*    (W)]{lang="EN-US"}
+  system-view ; bgp \*    (W)
 
-[  refresh bgp \*    (W)]{lang="EN-US"}
+Feature: l3vpn           (Layer 3 Virtual Private Network related commands)
 
-[  debugging bgp \*    (W)]{lang="EN-US"}
+  display ip vpn-instance \*    (R)
 
-[  system-view ; bgp \*    (W)]{lang="EN-US"}
+  system-view ; ip vpn-instance \*    (W)
 
-[Feature: l3vpn           (Layer 3 Virtual Private Network related commands)]{lang="EN-US"}
+  system-view ; interface \* ; ip binding vpn-instance \*    (W)
 
-[  display ip vpn-instance \*    (R)]{lang="EN-US"}
+\# 显示特性组L3的特性名称列表。
 
-[  system-view ; ip vpn-instance \*    (W)]{lang="EN-US"}
+\<Sysname\> display role feature-group name L3
 
-[  system-view ; interface \* ; ip binding vpn-instance \*    (W)]{lang="EN-US"}
+Feature group: L3
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_480112733}[显示特性组]{style="font-family:宋体"}[L3]{lang="EN-US"}[的特性名称列表。]{style="font-family:宋体"}
+Feature: route           (Route management related commands)
 
-[[\<Sysname\> display role feature-group name L3]{lang="EN-US"}]{#struct_0_x1979_37509_x865299187}
+Feature: ospf            (Open Shortest Path First protocol related commands)
 
-[Feature group: L3]{lang="EN-US"}
+Feature: rip             (Routing Information Protocol related commands)
 
-[Feature: route           (Route management related commands)]{lang="EN-US"}
+Feature: isis            (ISIS protocol related commands)
 
-[Feature: ospf            (Open Shortest Path First protocol related commands)]{lang="EN-US"}
+Feature: bgp             (Border Gateway Protocol related commands)
 
-[Feature: rip             (Routing Information Protocol related commands)]{lang="EN-US"}
+Feature: l3vpn           (Layer 3 Virtual Private Network related commands)
 
-[Feature: isis            (ISIS protocol related commands)]{lang="EN-US"}
+表1-3 display role feature-group命令显示信息描述表
 
-[Feature: bgp             (Border Gateway Protocol related commands)]{lang="EN-US"}
+字段
 
-[Feature: l3vpn           (Layer 3 Virtual Private Network related commands)]{lang="EN-US"}
+描述
 
-[[表1-3 ]{lang="EN-US"}[display role feature-group]{lang="EN-US"}]{#struct_0_x1979_37509_480178269}[命令显示信息描述表]{style="font-family:黑体"}
+Feature group
 
-[]{#table_struct_0_389129265}[[字段]{style="font-family:黑体"}]{#struct_0_x1979_37509_x790682099}
-:::::
+特性组名称，其中L2和L3为系统预定义的两个特性组
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1979_37509_1528773945}
+Feature
 
-[[Feature group]{lang="EN-US"}]{#struct_0_x1979_37509_x745041589}
+特性名称以及功能简介
 
-[[特性组名称，其中]{style="font-family:宋体"}[L2]{lang="EN-US"}]{#struct_0_x1979_37509_718308604}[和]{style="font-family:宋体"}[L3]{lang="EN-US"}[为系统预定义的两个特性组]{style="font-family:宋体"}
+关于特性内具体命令的详细介绍请参考 表1-2(?444522080#_Ref285211276)
 
-[[Feature]{lang="EN-US"}]{#struct_0_x1979_37509_x865299188}
+【相关命令】
 
-[[特性名称以及功能简介]{style="font-family:宋体"}]{#struct_0_x1979_37509_479719517}
+·**feature**
 
-[[关于特性内具体命令的详细介绍请参考]{style="font-family:宋体"}]{#struct_0_x1979_37509_1532141848}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-2]{lang="EN-US"}](?444522080#_Ref285211276)
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_293576804}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[feature]{lang="EN-US"}**]{#struct_0_x1979_37509_x1858491049}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[role feature-group]{lang="EN-US"}**]{#struct_0_x1979_37509_1499292666}
-
-::: {#321417343 .myid}
-[]{#_Toc404782246}[]{#struct_0_x1979_37509_x646352965}[]{#_Toc285213500}[]{#_Toc301724426}[]{#_Toc301787485}
+·**role feature-group**
 
 **RBAC \-- RBAC配置命令 \-- feature**
 
 ------------------------------------------------------------------------
 
-[**[feature]{lang="EN-US"}**]{#struct_0_x1979_37509_x1081530416}[命令用来向特性组中添加一个特性。]{style="font-family:宋体"}
+**[feature**]命令用来向特性组中添加一个特性。
 
-[**[undo feature]{lang="EN-US"}**]{#struct_0_x1979_37509_1473352981}[命令用来删除特性组中的某个特性。]{style="font-family:宋体"}
+**[undo feature**]命令用来删除特性组中的某个特性。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x2020663720}
+【命令】
 
-[**[feature ]{lang="EN-US"}***[feature-name]{lang="EN-US"}*]{#struct_0_x1979_37509_x755585630}
+**[feature ***feature-name*]
 
-[**[undo feature ]{lang="EN-US"}***[feature-name]{lang="EN-US"}*]{#struct_0_x1979_37509_1280224099}
+**[undo feature ***feature-name*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x99595753}
+【缺省情况】
 
-[[自定义特性组中不包括任何特性。]{style="font-family:宋体"}]{#struct_0_x1979_37509_1770232612}
+自定义特性组中不包括任何特性。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x721215873}
+【视图】
 
-[[特性组视图]{style="font-family:宋体"}]{#struct_0_x1979_37509_x1814388001}
+特性组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1855678664}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_1473352980}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x2020729256}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1985775887}
+【参数】
 
-[*[feature-name]{lang="EN-US"}*]{#struct_0_x1979_37509_1140250301}[：系统支持的特性名称，所有特性名称中的字母均为小写。]{style="font-family:宋体"}
+*[feature-name*]：系统支持的特性名称，所有特性名称中的字母均为小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1979_37509_621364248}
+【使用指导】
 
-[[可通过多次执行本命令，向特性组中添加多个特性。]{style="font-family:宋体"}]{#struct_0_x1979_37509_1257635132}
+可通过多次执行本命令，向特性组中添加多个特性。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1457267259}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_462166608}[向特性组]{style="font-family:宋体"}[security-features]{lang="EN-US"}[中添加特性]{style="font-family:宋体"}[AAA]{lang="EN-US"}[和]{style="font-family:宋体"}[ACL]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 向特性组security-features中添加特性AAA和ACL。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_1473352979}
+\<Sysname\> system-view
 
-[\[Sysname\] role feature-group name security-features]{lang="EN-US"}
+Sysname role feature-group name security-features
 
-[\[Sysname-featuregrp-security-features\] feature aaa]{lang="EN-US"}
+Sysname-featuregrp-security-features feature aaa
 
-[\[Sysname-featuregrp-security-features\] feature acl]{lang="EN-US"}
+Sysname-featuregrp-security-features feature acl
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x2021188001}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display role feature]{lang="EN-US"}**]{#struct_0_x1979_37509_1438738765}
+·**display role feature**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display role feature-group]{lang="EN-US"}**]{#struct_0_x1979_37509_x1161512552}
+·**display role feature-group**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[role feature-group]{lang="EN-US"}**]{#struct_0_x1979_37509_419516626}
-:::
-
-::: {#1734184062 .myid}
-[]{#_Toc404782247}[]{#struct_0_x1979_37509_1665215613}[]{#_Toc285213501}
+·**role feature-group**
 
 **RBAC \-- RBAC配置命令 \-- interface policy deny**
 
 ------------------------------------------------------------------------
 
-[**[interface policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_1403362069}[命令用来进入接口策略视图。]{style="font-family:宋体"}
+**[interface policy deny**]命令用来进入接口策略视图。
 
-[**[undo interface policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_x938198315}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo interface policy deny**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1473352978}
+【命令】
 
-[**[interface policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_x2021253537}
+**[interface policy deny**]
 
-[**[undo interface policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_1276070533}
+**[undo interface policy deny**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x625658616}
+【缺省情况】
 
-[[用户具有操作任何接口的权限。]{style="font-family:宋体"}]{#struct_0_x1979_37509_1573561970}
+用户具有操作任何接口的权限。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1820868667}
+【视图】
 
-[[用户角色视图]{style="font-family:宋体"}]{#struct_0_x1979_37509_1379859470}
+用户角色视图
 
-[[【用户角色】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x2103043439}
+【用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_1709086336}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1979_37509_1473352977}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x2020794785}
+【使用指导】
 
-[[进入接口策略视图后，如果不配置允许操作的接口列表，则用户将没有操作任何接口的权限；如果需要限制或区分用户对接口资源的使用权限，则还应该通过]{style="font-family:宋体"}**[permit interface]{lang="EN-US"}**]{#struct_0_x1979_37509_x1850757522}[命令配置允许用户操作的接口列表。若接口策略视图中未配置允许操作的接口列表，则表示不允许用户操作所有的接口。对接口的操作指的是创建接口并进入接口视图、删除和应用接口。其中，创建和删除接口，仅针对逻辑接口。]{style="font-family:宋体"}
+进入接口策略视图后，如果不配置允许操作的接口列表，则用户将没有操作任何接口的权限；如果需要限制或区分用户对接口资源的使用权限，则还应该通过**permit interface**命令配置允许用户操作的接口列表。若接口策略视图中未配置允许操作的接口列表，则表示不允许用户操作所有的接口。对接口的操作指的是创建接口并进入接口视图、删除和应用接口。其中，创建和删除接口，仅针对逻辑接口。
 
-[[允许修改用户角色的接口策略，但修改后的策略只在被授权该角色的用户重新登录时才会生效。]{style="font-family:宋体"}]{#struct_0_x1979_37509_x1214966402}
+允许修改用户角色的接口策略，但修改后的策略只在被授权该角色的用户重新登录时才会生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1979_37509_683902605}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_1993084509}[在用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[中，进入接口策略视图，并禁止角色为]{style="font-family:宋体"}[role1]{lang="EN-US"}[的用户操作任何接口。]{style="font-family:宋体"}
+\# 在用户角色role1中，进入接口策略视图，并禁止角色为role1的用户操作任何接口。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_1123691289}
+\<Sysname\> system-view
 
-[\[Sysname\] role name role1]{lang="EN-US"}
+Sysname role name role1
 
-[\[Sysname-role-role1\] interface policy deny]{lang="EN-US"}
+Sysname-role-role1 interface policy deny
 
-[\[Sysname-role-role1-ifpolicy\] quit]{lang="EN-US"}
+Sysname-role-role1-ifpolicy quit
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_1473352976}[在用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[中，进入接口策略视图，允许角色为]{style="font-family:宋体"}[role1]{lang="EN-US"}[的用户操作接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[到]{style="font-family:宋体"} [GigabitEthernet1/0/5]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在用户角色role1中，进入接口策略视图，允许角色为role1的用户操作接口GigabitEthernet1/0/1到 GigabitEthernet1/0/5。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_x2020860321}
+\<Sysname\> system-view
 
-[\[Sysname\] role name role1]{lang="EN-US"}
+Sysname role name role1
 
-[\[Sysname-role-role1\] interface policy deny]{lang="EN-US"}
+Sysname-role-role1 interface policy deny
 
-[\[Sysname-role-role1-ifpolicy\] permit interface gigabitethernet 1/0/1 to gigabitethernet 1/0/5]{lang="EN-US"}
+Sysname-role-role1-ifpolicy permit interface gigabitethernet 1/0/1 to gigabitethernet 1/0/5
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1199454475}
+【相关命令】
 
-[[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}]{.ItemStepChar}[**[display role]{lang="EN-US"}**]{.ItemStepChar}]{#struct_0_x1979_37509_x1755960686}
+·{.ItemStepChar}**[display role**]{.ItemStepChar}
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[permit interface]{lang="EN-US"}**]{#struct_0_x1979_37509_1117133574}
+·**permit interface**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[role]{lang="EN-US"}**]{#struct_0_x1979_37509_x565729480}
-:::
-
-::: {#-414838793 .myid}
-[]{#_Toc404782248}[]{#struct_0_x1979_37509_x1721437903}[]{#_Toc285213502}
+·**role**
 
 **RBAC \-- RBAC配置命令 \-- permit interface**
 
 ------------------------------------------------------------------------
 
-[**[permit interface]{lang="EN-US"}**]{#struct_0_x1979_37509_x965642724}[命令用来配置允许用户操作的接口列表。]{style="font-family:宋体"}
+**[permit interface**]命令用来配置允许用户操作的接口列表。
 
-[**[undo permit interface]{lang="EN-US"}**]{#struct_0_x1979_37509_1473352975}[命令用来禁止用户操作指定的或所有的接口。]{style="font-family:宋体"}
+**[undo permit interface**]命令用来禁止用户操作指定的或所有的接口。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x2020925857}
+【命令】
 
-[**[permit interface ]{lang="EN-US"}***[interface-list]{lang="EN-US"}*]{#struct_0_x1979_37509_x968228276}
+**[permit interface ***interface-list*]
 
-[**[undo permit interface ]{lang="EN-US"}**]{#struct_0_x1979_37509_x439714877}[\[ ]{lang="DA"}*[interface-list]{lang="EN-US"}***[ ]{lang="EN-US"}**[\]]{lang="DA"}
+**[undo permit interface **]\*[interface-list*****]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1578307657}
+【缺省情况】
 
-[[接口策略视图下未定义允许操作的接口列表，用户没有操作任何接口的权限。]{style="font-family:宋体"}]{#struct_0_x1979_37509_429882419}
+接口策略视图下未定义允许操作的接口列表，用户没有操作任何接口的权限。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1979_37509_646911143}
+【视图】
 
-[[接口策略视图]{style="font-family:宋体"}]{#struct_0_x1979_37509_x1824216450}
+接口策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x188547462}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_1473352974}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x2020991393}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1369270360}
+【参数】
 
-[**[interface]{lang="EN-US"}***[ interface-list]{lang="EN-US"}*]{#struct_0_x1979_37509_1425160626}[：允许用户操作的接口列表，表示多个接口，表示方式为]{style="font-family:宋体"}*[interface-lis]{lang="EN-US"}*[t = { *interface-type* *interface-number* \[ to *interface-type interface-number* \] }&\<1-10\>]{lang="EN-US"}[。其中，]{style="font-family:宋体"}*[interface-type]{lang="EN-US"}*[为接口类型，]{style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[为接口编号。]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。起始接口类型必须和终止接口类型一致，并且终止接口编号必须大于起始接口编号。如果不指定本参数，则表示指定所有接口。]{style="font-family:宋体"}
+**[interface*** interface-list*]：允许用户操作的接口列表，表示多个接口，表示方式为*interface-lis*t = { *interface-type* *interface-number* [ to *interface-type interface-number*  }&\<1-10\>]。其中，*interface-type*为接口类型，*interface-number*为接口编号。&\<1-10\>表示前面的参数最多可以输入10次。起始接口类型必须和终止接口类型一致，并且终止接口编号必须大于起始接口编号。如果不指定本参数，则表示指定所有接口。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1358050239}
+【使用指导】
 
-[[对接口的操作指的是创建并进入接口视图、删除和应用接口。其中，创建和删除接口，只针对逻辑接口。]{style="font-family:宋体"}]{#struct_0_x1979_37509_862135570}
+对接口的操作指的是创建并进入接口视图、删除和应用接口。其中，创建和删除接口，只针对逻辑接口。
 
-[[可通过多次执行此命令向接口列表中添加允许用户操作的接口。]{style="font-family:宋体"}]{#struct_0_x1979_37509_1512959992}
+可通过多次执行此命令向接口列表中添加允许用户操作的接口。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1029884863}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_1473352973}[创建用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[并进入其视图。]{style="font-family:宋体"}
+\# 创建用户角色role1并进入其视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_x2020532641}
+\<Sysname\> system-view
 
-[\[Sysname\] role name role1]{lang="EN-US"}
+Sysname role name role1
 
-[[\# ]{lang="FR"}]{#struct_0_x1979_37509_1079062797}[配置用户角色规则]{style="font-family:宋体"}[1]{lang="EN-US"}[，允许用户执行进入接口视图以及接口视图下的相关命令。]{style="font-family:宋体"}
+\# 配置用户角色规则1，允许用户执行进入接口视图以及接口视图下的相关命令。
 
-[[\[Sysname-role-role1\] rule 1 permit command system-view ; interface \*]{lang="EN-US"}]{#struct_0_x1979_37509_525606452}
+Sysname-role-role1 rule 1 permit command system-view ; interface \*
 
-[[\# ]{lang="FR"}]{#struct_0_x1979_37509_1624719779}[配置用户角色规则]{style="font-family:宋体"}[2]{lang="EN-US"}[，允许用户执行创建]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[以及进入]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[视图后的相关命令。]{style="font-family:宋体"}
+\# 配置用户角色规则2，允许用户执行创建VLAN以及进入VLAN视图后的相关命令。
 
-[[\[Sysname-role-role1\] rule 2 permit command system-view ; vlan \*]{lang="EN-US"}]{#struct_0_x1979_37509_789269738}
+Sysname-role-role1 rule 2 permit command system-view ; vlan \*
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_958509716}[配置用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[仅可以对接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[以及]{style="font-family:宋体"} [GigabitEthernet1/0/5]{lang="EN-US"}[～]{style="font-family:宋体"} [GigabitEthernet1/0/7]{lang="EN-US"}[进行操作。]{style="font-family:宋体"}
+\# 配置用户角色role1仅可以对接口GigabitEthernet1/0/1以及 GigabitEthernet1/0/5～ GigabitEthernet1/0/7进行操作。
 
-[[\[Sysname-role-role1\] interface policy deny]{lang="EN-US"}]{#struct_0_x1979_37509_68547280}
+Sysname-role-role1 interface policy deny
 
-[\[Sysname-role-role1-ifpolicy\] permit interface gigabitethernet 1/0/1 gigabitethernet 1/0/5 to gigabitethernet 1/0/7]{lang="EN-US"}
+Sysname-role-role1-ifpolicy permit interface gigabitethernet 1/0/1 gigabitethernet 1/0/5 to gigabitethernet 1/0/7
 
-[[当拥有用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}]{#struct_0_x1979_37509_1473352972}[的用户登录设备后，可以操作接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[以及]{style="font-family:宋体"} [GigabitEthernet1/0/5]{lang="EN-US"}[～]{style="font-family:宋体"}[GigabitEthernet1/0/7]{lang="EN-US"}[，但不能操作其它接口。]{style="font-family:宋体"}
+当拥有用户角色role1的用户登录设备后，可以操作接口GigabitEthernet1/0/1以及 GigabitEthernet1/0/5～GigabitEthernet1/0/7，但不能操作其它接口。
 
-[[配置结果验证如下：]{style="font-family:宋体"}]{#struct_0_x1979_37509_x2020598177}
+配置结果验证如下：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[进入接口]{lang="EN-US" style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}]{#struct_0_x1979_37509_1812841786}[视图。]{lang="EN-US" style="font-family:
-宋体"}
+·进入接口GigabitEthernet1/0/1视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_742231946}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[将接口]{lang="EN-US" style="font-family:宋体"}[GigabitEthernet1/0/5]{lang="EN-US"}]{#struct_0_x1979_37509_1473983342}[加入到]{lang="EN-US" style="font-family:
-宋体"}[VLAN 10]{lang="FR"}[。]{style="font-family:宋体"}
+·将接口GigabitEthernet1/0/5加入到VLAN 10。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_662022271}
+\<Sysname\> system-view
 
-[\[Sysname\] vlan 10]{lang="EN-US"}
+Sysname vlan 10
 
-[\[Sysname-vlan10\] port gigabitethernet 1/0/5]{lang="EN-US"}
+Sysname-vlan10 port gigabitethernet 1/0/5
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[无法进入接口]{lang="EN-US" style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}]{#struct_0_x1979_37509_1099628365}[视图。]{lang="EN-US" style="font-family:
-宋体"}
+·无法进入接口GigabitEthernet1/0/2视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_x98462443}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/2]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/2
 
-[Permission denied.]{lang="EN-US"}
+Permission denied.
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1632769941}
+【相关命令】
 
-[[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}]{.ItemStepChar}[**[display role]{lang="EN-US"}**]{.ItemStepChar}]{#struct_0_x1979_37509_x1234680590}
+·{.ItemStepChar}**[display role**]{.ItemStepChar}
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[interface policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_x1892618972}
+·**interface policy deny**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[role]{lang="EN-US"}**]{#struct_0_x1979_37509_454628501}
-:::
-
-::::: {#-1953547838 .myid}
-[]{#_Toc404782249}[]{#struct_0_x1979_37509_x911424247}
+·**role**
 
 **RBAC \-- RBAC配置命令 \-- permit security-zone**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](RBAC命令.files/image002.png){border="0" width="62" height="26"}]{lang="EN-US"}]{#struct_0_x1979_37509_x911489783}
-:::
+![说明](RBAC命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1979_37509_1046741730}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[permit security-zone**]命令用来配置允许用户操作的安全域列表。
 
-[**[permit security-zone]{lang="EN-US"}**]{#struct_0_x1979_37509_1604171795}[命令用来配置允许用户操作的]{style="font-family:宋体"}[安全域]{style="font-family:宋体"}[列表。]{style="font-family:宋体"}
+**[undo permit security-zone**]命令用来禁止用户操作指定的或所有的安全域实例。
 
-[**[undo permit security-zone]{lang="EN-US"}**]{#struct_0_x1979_37509_x911293175}[命令用来禁止用户操作指定的或所有的]{style="font-family:
-宋体"}[安全域]{style="font-family:宋体"}[实例。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x87657437}
+**[permit security-zone **]*security-zone-name*&\<1-10\>
 
-[**[permit security-zone ]{lang="FR"}**]{#struct_0_x1979_37509_1954272463}*[security-zone-name]{lang="FR"}*[&\<1-10\>]{lang="FR"}
+**[undo permit security-zone **]\*[security-zone-name*&\<1-10\>****]
 
-[**[undo permit security-zone ]{lang="EN-US"}**]{#struct_0_x1979_37509_x911358711}[\[ ]{lang="DA"}*[security-zone-name]{lang="FR"}*[&\<1-10\>]{lang="FR"}**[ ]{lang="FR"}**[\]]{lang="DA"}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x541165803}
+安全域策略视图下未定义允许操作的安全域列表，用户没有操作任何安全域的权限。
 
-[[安全域]{style="font-family:宋体"}]{#struct_0_x1979_37509_x1934249223}[策略视图下未定义允许操作的]{style="font-family:宋体"}[安全域]{style="font-family:宋体"}[列表，用户没有操作任何]{style="font-family:宋体"}[安全域]{style="font-family:宋体"}[的权限。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x911817464}
+安全域策略视图
 
-[[安全域]{style="font-family:宋体"}]{#struct_0_x1979_37509_x500283462}[策略视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x263029730}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x911883000}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x2046200496}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x979389021}
+*[security-zone-name*&\<1-10\>]：表示允许用户操作的安全域的名称，为1～31个字符的字符串，区分大小写。&\<1-10\>表示前面的参数最多可以输入10次。如果不指定本参数，则表示指定所有安全域。
 
-[*[security-zone-name]{lang="EN-US"}*[&\<1-10\>]{lang="EN-US"}]{#struct_0_x1979_37509_x911686392}[：表示允许用户操作的]{style="font-family:宋体"}[安全域]{style="font-family:宋体"}[的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。如果不指定本参数，则表示指定所有]{style="font-family:宋体"}[安全域]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1051835420}
+对安全域的"操作"指的是创建安全域并进入其视图、删除和应用安全域。
 
-[[对]{style="font-family:宋体"}]{#struct_0_x1979_37509_x552674044}[安全域]{style="font-family:宋体"}[的"操作"指的是创建]{style="font-family:宋体"}[安全域]{style="font-family:宋体"}[并进入其视图、删除和应用]{style="font-family:宋体"}[安全域]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+可通过多次执行此本命令向安全域列表中添加允许用户操作的安全域。
 
-[[可通过多次执行此本命令向安全域列表中添加允许用户操作的]{style="font-family:宋体"}]{#struct_0_x1979_37509_1942626402}[安全域]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x911751928}
+\# 创建用户角色role1并进入其视图。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_x478781913}[创建用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[并进入其视图。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_x911555320}
+Sysname role name role1
 
-[\[Sysname\] role name role1]{lang="EN-US"}
+\# 配置用户角色规则1，允许用户执行系统视图下的所有命令以及所有子视图下的命令。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_x535941043}[配置用户角色规则]{style="font-family:宋体"}[1]{lang="EN-US"}[，允许用户执行系统视图下的所有命令以及所有子视图下的命令。]{style="font-family:宋体"}
+Sysname-role-role1 rule 1 permit command system-view ; \*
 
-[[\[Sysname-role-role1\] rule 1 permit command system-view ; \*]{lang="EN-US"}]{#struct_0_x1979_37509_x1419809192}
+\# 配置用户角色role1仅可以对安全域trust和abc进行操作。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_618964379}[配置用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[仅可以对安全域]{style="font-family:宋体"}[trust]{lang="EN-US"}[和]{style="font-family:宋体"}[abc]{lang="EN-US"}[进行操作。]{style="font-family:宋体"}
+Sysname-role-role1 security-zone policy deny
 
-[[\[Sysname-role-role1\] ]{lang="EN-US"}]{#struct_0_x1979_37509_x911620856}[security-zone]{lang="FR"}[ policy deny]{lang="EN-US"}
+Sysname-role-role1-zonepolicy permit security-zonetrust abc
 
-[\[Sysname-role-role1-zonepolicy\] permit ]{lang="EN-US"}[security-zone]{lang="FR"}[ ]{lang="FR"}[trust abc]{lang="EN-US"}
+拥有用户角色role1的用户登录设备后，可以操作安全域abc，但不能操作其它安全域。
 
-[[拥有用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}]{#struct_0_x1979_37509_303026914}[的用户登录设备后，可以操作安全域]{style="font-family:宋体"}[abc]{lang="EN-US"}[，但不能操作其它安全域。]{style="font-family:宋体"}
+配置结果验证如下：
 
-[[配置结果验证如下：]{style="font-family:宋体"}]{#struct_0_x1979_37509_x911424248}
+·创建并进入名称为abc的安全域视图。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[创建并进入名称为]{style="font-family:宋体"}]{#struct_0_x1979_37509_245998861}[abc]{lang="EN-US"}[的安全域视图。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_2047261726}
+Sysname security-zone name abc
 
-[\[Sysname\] security-zone name abc]{lang="EN-US"}
+Sysname-security-zone-abc
 
-[\[Sysname-security-zone-abc\] ]{lang="EN-US"}
+·创建源安全域trust到目的安全域abc的域间实例。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[创建源安全域]{style="font-family:宋体;color:black"}]{#struct_0_x1979_37509_x911489784}[trust]{lang="EN-US" style="color:black"}[到目的安全域]{style="font-family:宋体;
-color:black"}[abc]{lang="EN-US" style="color:black"}[的域间实例]{style="font-family:宋体;color:black"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_1047069410}
+Sysname interzone source trust destination abc
 
-[\[Sysname\] interzone source trust destination abc]{lang="EN-US"}
+Sysname-interzone-Trust-abc
 
-[\[Sysname-interzone-Trust-abc\] ]{lang="EN-US"}
+·无法创建名称为local的安全域或进入其视图。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[无法创建名称为]{style="font-family:宋体"}]{#struct_0_x1979_37509_x1510253240}[local]{lang="EN-US"}[的安全域或进入其视图。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_x911293176}
+Sysname security-zone name local
 
-[\[Sysname\] security-zone name local]{lang="EN-US"}
+Permission denied.
 
-[Permission denied.]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x87460829}
+·{.ItemStepChar}**[display role**]{.ItemStepChar}
 
-[[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}]{.ItemStepChar}[**[display role]{lang="EN-US"}**]{.ItemStepChar}]{#struct_0_x1979_37509_207117808}
+·**role**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[role]{lang="EN-US"}**]{#struct_0_x1979_37509_x911358712}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[security-zone]{lang="EN-US"}[ policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_x540969195}
-:::::
-
-::: {#849005739 .myid}
-[]{#_Toc404782250}[]{#struct_0_x1979_37509_x419180222}[]{#_Toc285213503}
+·**security-zone policy deny**
 
 **RBAC \-- RBAC配置命令 \-- permit vlan**
 
 ------------------------------------------------------------------------
 
-[**[permit vlan]{lang="EN-US"}**]{#struct_0_x1979_37509_x1277898216}[命令用来配置允许用户操作的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表。]{style="font-family:宋体"}
+**[permit vlan**]命令用来配置允许用户操作的VLAN列表。
 
-[**[undo permit vlan]{lang="EN-US"}**]{#struct_0_x1979_37509_723499230}[命令用来禁止用户操作指定的或所有的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[undo permit vlan**]命令用来禁止用户操作指定的或所有的VLAN。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x98462444}
+【命令】
 
-[**[permit vlan ]{lang="EN-US"}***[vlan-id-list]{lang="EN-US"}*]{#struct_0_x1979_37509_1632769948}
+**[permit vlan ***vlan-id-list*]
 
-[**[undo permit vlan ]{lang="DA"}**]{#struct_0_x1979_37509_x1235139342}[\[ *vlan-id-list* \]]{lang="DA"}
+**[undo permit vlan **] *vlan-id-list*
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1703936676}
+【缺省情况】
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1979_37509_1403194365}[接口视图下未定义允许操作的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，用户没有操作任何]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的权限。]{style="font-family:宋体"}
+VLAN接口视图下未定义允许操作的VLAN列表，用户没有操作任何VLAN的权限。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x193530311}
+【视图】
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1979_37509_1431643655}[策略视图]{style="font-family:宋体"}
+VLAN策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x964851345}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x185821601}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x98462445}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1632769947}
+【参数】
 
-[*[vlan-id-list]{lang="EN-US"}*]{#struct_0_x1979_37509_x1234549518}[：允许用户操作的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，表示方式为]{style="font-family:宋体"}*[vlan-id-list]{lang="EN-US"}*[ = { *vlan-id1* \[ to *vlan-id2* \] }&\<1-10\>]{lang="EN-US"}[，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[，]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以重复输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。终止]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[编号必须大于起始]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[编号。如果不指定本参数，则表示指定所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[vlan-id-list*]：允许用户操作的VLAN列表，表示方式为*vlan-id-list* = { *vlan-id1* [ to *vlan-id2*  }&\<1-10\>]，*vlan-id*取值范围为1～4094，&\<1-10\>表示前面的参数最多可以重复输入10次。终止VLAN编号必须大于起始VLAN编号。如果不指定本参数，则表示指定所有VLAN。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1352282680}
+【使用指导】
 
-[[对]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1979_37509_x1453310955}[的操作指的是创建]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[并进入]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[视图、删除和应用]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+对VLAN的操作指的是创建VLAN并进入VLAN视图、删除和应用VLAN。
 
-[[可通过多次执行此命令向]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1979_37509_x501039922}[列表中添加允许用户操作的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+可通过多次执行此命令向VLAN列表中添加允许用户操作的VLAN。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1041757710}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_1844243634}[创建用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[并进入其视图。]{style="font-family:宋体"}
+\# 创建用户角色role1并进入其视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_x98462446}
+\<Sysname\> system-view
 
-[\[Sysname\] role name role1]{lang="EN-US"}
+Sysname role name role1
 
-[[\# ]{lang="FR"}]{#struct_0_x1979_37509_1632769946}[配置用户角色规则]{style="font-family:宋体"}[1]{lang="EN-US"}[，允许用户执行进入接口视图以及接口视图下的相关命令。]{style="font-family:宋体"}
+\# 配置用户角色规则1，允许用户执行进入接口视图以及接口视图下的相关命令。
 
-[[\[Sysname-role-role1\] rule 1 permit command system-view ; interface \*]{lang="EN-US"}]{#struct_0_x1979_37509_x1234483982}
+Sysname-role-role1 rule 1 permit command system-view ; interface \*
 
-[[\# ]{lang="FR"}]{#struct_0_x1979_37509_1637876722}[配置用户角色规则]{style="font-family:宋体"}[2]{lang="EN-US"}[，允许用户执行创建]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[以及进入]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[视图后的相关命令。]{style="font-family:宋体"}
+\# 配置用户角色规则2，允许用户执行创建VLAN以及进入VLAN视图后的相关命令。
 
-[[\[Sysname-role-role1\] rule 2 permit command system-view ; vlan \*]{lang="EN-US"}]{#struct_0_x1979_37509_1292905182}
+Sysname-role-role1 rule 2 permit command system-view ; vlan \*
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_1078310239}[配置用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[仅可以操作]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[、]{style="font-family:宋体"}[VLAN 4]{lang="EN-US"}[、]{style="font-family:宋体"}[VLAN 50]{lang="EN-US"}[～]{style="font-family:宋体"}[VLAN 100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置用户角色role1仅可以操作VLAN 2、VLAN 4、VLAN 50～VLAN 100。
 
-[[\[Sysname-role-role1\] vlan policy deny]{lang="EN-US"}]{#struct_0_x1979_37509_928134445}
+Sysname-role-role1 vlan policy deny
 
-[\[Sysname-role-role1-vlanpolicy\] permit vlan 2 4 50 to 100]{lang="EN-US"}
+Sysname-role-role1-vlanpolicy permit vlan 2 4 50 to 100
 
-[[当拥有用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}]{#struct_0_x1979_37509_x95787002}[的用户登录设备后，可以操作]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[、]{style="font-family:宋体"}[VLAN 4]{lang="EN-US"}[、]{style="font-family:宋体"}[VLAN 50]{lang="EN-US"}[～]{style="font-family:宋体"}[VLAN 100]{lang="EN-US"}[，但不能操作其它]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+当拥有用户角色role1的用户登录设备后，可以操作VLAN 2、VLAN 4、VLAN 50～VLAN 100，但不能操作其它VLAN。
 
-[[配置结果验证如下：]{style="font-family:宋体"}]{#struct_0_x1979_37509_x98462447}
+配置结果验证如下：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[创建并进入]{style="font-family:宋体"}]{#struct_0_x1979_37509_1632769945}[VLAN 100]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+·创建并进入VLAN 100视图。
 
-[[\<Sysname\> system-view]{lang="DA"}]{#struct_0_x1979_37509_x1234418446}
+\<Sysname\> system-view
 
-[\[]{lang="DA"}[Sysname]{lang="EN-US"}[\] vlan 100]{lang="DA"}
+Sysname vlan 100
 
-[\[]{lang="DA"}[Sysname]{lang="EN-US"}[-vlan100\]]{lang="DA"}
+Sysname-vlan100
 
-[[·[              ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}[向]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1979_37509_x2089183318}[VLAN 100]{lang="DA"}[中添加]{lang="EN-US" style="font-family:宋体"}[Access]{lang="DA"}[类型的端口]{lang="EN-US" style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·向VLAN 100中添加Access类型的端口GigabitEthernet1/0/1。
 
-[[\<Sysname\> system-view]{lang="DA"}]{#struct_0_x1979_37509_1629698551}
+\<Sysname\> system-view
 
-[\[]{lang="DA"}[Sysname]{lang="EN-US"}[\] interface]{lang="DA"}[ ]{lang="DA"}[gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interfacegigabitethernet 1/0/1
 
-[\[]{lang="DA"}[Sysname]{lang="EN-US"}[-]{lang="DA"}[GigabitEthernet1/0/1]{lang="EN-US"}[\] port access vlan 100]{lang="DA"}
+Sysname-GigabitEthernet1/0/1 port access vlan 100
 
-[[·[              ]{style="font:7.0pt "}]{lang="DA" style="font-size:10.0pt;font-family:Symbol"}[无法创建]{style="font-family:宋体"}]{#struct_0_x1979_37509_x1834821518}[VLAN 101]{lang="DA"}[或进入其]{style="font-family:宋体"}[视图。]{style="font-family:
-宋体"}
+·无法创建VLAN 101或进入其视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_x1619236752}
+\<Sysname\> system-view
 
-[\[Sysname\] vlan 101]{lang="EN-US"}
+Sysname vlan 101
 
-[Permission denied.]{lang="EN-US"}
+Permission denied.
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x98462448}
+【相关命令】
 
-[[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}]{.ItemStepChar}[**[display role]{lang="EN-US"}**]{.ItemStepChar}]{#struct_0_x1979_37509_1632769952}
+·{.ItemStepChar}**[display role**]{.ItemStepChar}
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[role]{lang="EN-US"}**]{#struct_0_x1979_37509_x1234746127}
+·**role**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vlan policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_x2038562313}
-:::
-
-::: {#-2002014661 .myid}
-[]{#_Toc404782251}[]{#struct_0_x1979_37509_413421885}[]{#_Toc285213504}
+·**vlan policy deny**
 
 **RBAC \-- RBAC配置命令 \-- permit vpn-instance**
 
 ------------------------------------------------------------------------
 
-[**[permit vpn-instance]{lang="EN-US"}**]{#struct_0_x1979_37509_x376462025}[命令用来配置允许用户操作的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[列表。]{style="font-family:宋体"}
+**[permit vpn-instance**]命令用来配置允许用户操作的VPN列表。
 
-[**[undo permit vpn-instance]{lang="EN-US"}**]{#struct_0_x1979_37509_1529801655}[命令用来禁止用户操作指定的或所有的]{style="font-family:
-宋体"}[VPN]{lang="EN-US"}[实例。]{style="font-family:
-宋体"}
+**[undo permit vpn-instance**]命令用来禁止用户操作指定的或所有的VPN实例。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1086216329}
+【命令】
 
-[**[permit vpn-instance ]{lang="FR"}**]{#struct_0_x1979_37509_927917824}*[vpn-instance-name]{lang="FR"}*[&\<1-10\>]{lang="FR"}
+**[permit vpn-instance **]*vpn-instance-name*&\<1-10\>
 
-[**[undo permit vpn-instance ]{lang="EN-US"}**]{#struct_0_x1979_37509_x98462449}[\[ ]{lang="DA"}*[vpn-instance-name]{lang="FR"}*[&\<1-10\>]{lang="FR"}**[ ]{lang="FR"}**[\]]{lang="DA"}
+**[undo permit vpn-instance **]\*[vpn-instance-name*&\<1-10\>****]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1632769951}
+【缺省情况】
 
-[[VPN]{lang="EN-US"}]{#struct_0_x1979_37509_x1234680591}[策略视图下未定义允许操作的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[列表，用户没有操作任何]{style="font-family:宋体"}[VPN]{lang="EN-US"}[的权限。]{style="font-family:宋体"}
+VPN策略视图下未定义允许操作的VPN列表，用户没有操作任何VPN的权限。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x326535031}
+【视图】
 
-[[VPN]{lang="EN-US"}]{#struct_0_x1979_37509_15573863}[策略视图]{style="font-family:宋体"}
+VPN策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x551200331}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x1473646107}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x1953642169}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1055807194}
+【参数】
 
-[*[vpn-instance-name]{lang="EN-US"}*[&\<1-10\>]{lang="EN-US"}]{#struct_0_x1979_37509_x98462450}[：表示允许用户操作的]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[实例的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。如果不指定本参数，则表示指定所有]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[实例。]{style="font-family:宋体"}
+*[vpn-instance-name*&\<1-10\>]：表示允许用户操作的MPLS L3VPN实例的名称，为1～31个字符的字符串，区分大小写。&\<1-10\>表示前面的参数最多可以输入10次。如果不指定本参数，则表示指定所有MPLS L3VPN实例。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x323545192}
+【使用指导】
 
-[[对]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_x1979_37509_x2055101583}[实例的"操作"指的是创建]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[实例并进入其视图、删除和应用]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例。]{style="font-family:宋体"}
+对VPN实例的"操作"指的是创建MPLS L3VPN实例并进入其视图、删除和应用VPN实例。
 
-[[可通过多次执行此命令向接口列表中添加允许用户操作的]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_x1979_37509_413441657}[实例。]{style="font-family:宋体"}
+可通过多次执行此命令向接口列表中添加允许用户操作的VPN实例。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1557784727}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_x1690523670}[创建用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[并进入其视图。]{style="font-family:宋体"}
+\# 创建用户角色role1并进入其视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_406903237}
+\<Sysname\> system-view
 
-[\[Sysname\] role name role1]{lang="EN-US"}
+Sysname role name role1
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_x5822470}[配置用户角色规则]{style="font-family:宋体"}[1]{lang="EN-US"}[，允许用户执行系统视图下的所有命令以及所有子视图下的命令。]{style="font-family:宋体"}
+\# 配置用户角色规则1，允许用户执行系统视图下的所有命令以及所有子视图下的命令。
 
-[[\[Sysname-role-role1\] rule 1 permit command system-view ; \*]{lang="EN-US"}]{#struct_0_x1979_37509_x98462451}
+Sysname-role-role1 rule 1 permit command system-view ; \*
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_x323545193}[配置用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[仅可以对]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[进行操作。]{style="font-family:宋体"}
+\# 配置用户角色role1仅可以对VPN实例vpn1进行操作。
 
-[[\[Sysname-role-role1\] vpn policy deny]{lang="EN-US"}]{#struct_0_x1979_37509_x2055036047}
+Sysname-role-role1 vpn policy deny
 
-[\[Sysname-role-role1-vpnpolicy\] permit vpn-instance vpn1]{lang="EN-US"}
+Sysname-role-role1-vpnpolicy permit vpn-instance vpn1
 
-[[拥有用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}]{#struct_0_x1979_37509_1307235331}[的用户登录设备后，可以操作]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[，但不能操作其它]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例。]{style="font-family:宋体"}
+拥有用户角色role1的用户登录设备后，可以操作VPN实例vpn1，但不能操作其它VPN实例。
 
-[[配置结果验证如下：]{style="font-family:宋体"}]{#struct_0_x1979_37509_x1282839760}
+配置结果验证如下：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[进入名称为]{style="font-family:宋体"}]{#struct_0_x1979_37509_x901321903}[vpn1]{lang="EN-US"}[的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例视图。]{style="font-family:宋体"}
+·进入名称为vpn1的VPN实例视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_x610376292}
+\<Sysname\> system-view
 
-[\[Sysname\] ip vpn-instance vpn1]{lang="EN-US"}
+Sysname ip vpn-instance vpn1
 
-[\[Sysname-vpn-instance-vpn1\]]{lang="EN-US"}
+Sysname-vpn-instance-vpn1
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[设置]{style="font-family:宋体"}]{#struct_0_x1979_37509_1121827720}[RADIUS]{lang="EN-US"}[方案]{style="font-family:宋体"}[radius1]{lang="EN-US"}[的主计费服务器的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[10.110.1.2]{lang="EN-US"}[，且属于]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[。]{style="font-family:宋体"}
+·设置RADIUS方案radius1的主计费服务器的IP地址为10.110.1.2，且属于VPN实例vpn1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_x98462452}
+\<Sysname\> system-view
 
-[\[Sysname\] radius scheme radius1]{lang="EN-US"}
+Sysname radius scheme radius1
 
-[\[Sysname-radius-radius1\] primary accounting 10.110.1.2 vpn-instance vpn1]{lang="EN-US"}
+Sysname-radius-radius1 primary accounting 10.110.1.2 vpn-instance vpn1
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[无法创建名称为]{style="font-family:宋体"}]{#struct_0_x1979_37509_x323545194}[vpn2]{lang="EN-US"}[的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例或进入其视图。]{style="font-family:宋体"}
+·无法创建名称为vpn2的VPN实例或进入其视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_x2055494799}
+\<Sysname\> system-view
 
-[\[Sysname\] ip vpn-instance vpn2]{lang="EN-US"}
+Sysname ip vpn-instance vpn2
 
-[Permission denied.]{lang="EN-US"}
+Permission denied.
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_961505330}
+【相关命令】
 
-[[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}]{.ItemStepChar}[**[display role]{lang="EN-US"}**]{.ItemStepChar}]{#struct_0_x1979_37509_104514779}
+·{.ItemStepChar}**[display role**]{.ItemStepChar}
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[role]{lang="EN-US"}**]{#struct_0_x1979_37509_x1753482071}
+·**role**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vpn-instance policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_x1031695593}
-:::
-
-::: {#1628940268 .myid}
-[]{#_Toc404782252}[]{#struct_0_x1979_37509_x2054777579}[]{#_Toc285213505}
+·**vpn-instance policy deny**
 
 **RBAC \-- RBAC配置命令 \-- role**
 
 ------------------------------------------------------------------------
 
-[**[role]{lang="EN-US"}**]{#struct_0_x1979_37509_1676884079}[命令用来创建用户角色，并进入用户角色视图。]{style="font-family:宋体"}
+**[role**]命令用来创建用户角色，并进入用户角色视图。
 
-[**[undo role]{lang="EN-US"}**]{#struct_0_x1979_37509_x1706883471}[命令用来删除指定的用户角色。]{style="font-family:宋体"}
+**[undo role**]命令用来删除指定的用户角色。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1494681689}
+【命令】
 
-[**[role]{lang="EN-US"}**[ **name** *role-name*]{lang="EN-US"}]{#struct_0_x1979_37509_1192092632}
+**[role** **name** *role-name*]
 
-[**[undo role name]{lang="EN-US"}***[ role-name]{lang="EN-US"}*]{#struct_0_x1979_37509_1802071928}
+**[undo role name*** role-name*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x544040825}
+【缺省情况】
 
-[[系统预定义的用户角色为]{style="font-family:宋体"}[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_1704792171}[、]{style="font-family:宋体"}[network-operator]{lang="EN-US"}[、]{style="font-family:宋体"}[mdc-admin]{lang="EN-US"}[、]{style="font-family:宋体"}[mdc-operator]{lang="EN-US"}[、]{style="font-family:宋体"}[context-admin]{lang="EN-US"}[、]{style="font-family:宋体"}[context-operator]{lang="EN-US"}[、]{style="font-family:宋体"}[level-*n*]{lang="EN-US"}[（]{style="font-family:宋体"}*[n]{lang="EN-US"}*[为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:
-宋体"}[15]{lang="EN-US"}[的整数）、]{style="font-family:宋体"}[security-audit]{lang="EN-US"}[。]{style="font-family:宋体"}
+系统预定义的用户角色为network-admin、network-operator、mdc-admin、mdc-operator、context-admin、context-operator、level-*n*（*n*为0～15的整数）、security-audit。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1979_37509_538851915}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1979_37509_x2054777580}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1979_37509_466047458}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_2090930608}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x2136126749}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1080708882}
+【参数】
 
-[**[name]{lang="EN-US"}***[ role-name]{lang="EN-US"}*]{#struct_0_x1979_37509_x1297185059}[：用户角色名称，]{style="font-family:宋体"}*[role-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[name*** role-name*]：用户角色名称，*role-name*为1～63个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1259220015}
+【使用指导】
 
-[[除系统预定义的缺省用户角色之外，系统中最多允许创建]{style="font-family:宋体"}[64]{lang="EN-US"}]{#struct_0_x1979_37509_x1596229306}[个用户角色。]{style="font-family:宋体"}
+除系统预定义的缺省用户角色之外，系统中最多允许创建64个用户角色。
 
-[[缺省的用户角色不能被删除，而且其中的]{style="font-family:宋体"}[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_189034629}[、]{style="font-family:宋体"}[network-operator]{lang="EN-US"}[、]{style="font-family:宋体"}[mdc-admin]{lang="EN-US"}[、]{style="font-family:宋体"}[mdc-operator]{lang="EN-US"}[、]{style="font-family:宋体"}[context-admin]{lang="EN-US"}[、]{style="font-family:宋体"}[context-operator]{lang="EN-US"}[、]{style="font-family:宋体"}[level-15]{lang="EN-US"}[、]{style="font-family:宋体"}[security-audit]{lang="EN-US"}[这些用户角色内定义的所有权限均不能被修改；用户角色]{style="font-family:宋体"}[level-0]{lang="EN-US"}[～]{style="font-family:宋体"}[level-14]{lang="EN-US"}[可以通过自定义规则和资源控制策略调整自身的权限，但这种修改对于]{style="font-family:宋体"}**[display history-command all]{lang="EN-US"}**[命令不生效，即不能通过添加对应的规则来更改它的缺省执行权限。]{style="font-family:宋体"}
+缺省的用户角色不能被删除，而且其中的network-admin、network-operator、mdc-admin、mdc-operator、context-admin、context-operator、level-15、security-audit这些用户角色内定义的所有权限均不能被修改；用户角色level-0～level-14可以通过自定义规则和资源控制策略调整自身的权限，但这种修改对于**display history-command all**命令不生效，即不能通过添加对应的规则来更改它的缺省执行权限。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x2054777581}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_2032131399}[创建用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[，并进入用户角色视图。]{style="font-family:宋体"}
+\# 创建用户角色role1，并进入用户角色视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_729256869}
+\<Sysname\> system-view
 
-[\[Sysname\] role name role1]{lang="EN-US"}
+Sysname role name role1
 
-[\[Sysname-role-role1\]]{lang="EN-US"}
+Sysname-role-role1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1603233355}
+【相关命令】
 
-[[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}]{.ItemStepChar}[**[display role]{lang="EN-US"}**]{.ItemStepChar}]{#struct_0_x1979_37509_406301495}
+·{.ItemStepChar}**[display role**]{.ItemStepChar}
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[interface policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_x1884024526}
+·**interface policy deny**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[rule]{lang="EN-US"}**]{#struct_0_x1979_37509_x1028393346}
+·**rule**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vlan policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_1848332809}
+·**vlan policy deny**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[vpn-instance policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_x2054777582}
-:::
-
-::: {#-1270710712 .myid}
-[]{#_Toc404782253}[]{#struct_0_x1979_37509_1628846872}[]{#_Toc285213506}
+·**vpn-instance policy deny**
 
 **RBAC \-- RBAC配置命令 \-- role default-role enable**
 
 ------------------------------------------------------------------------
 
-[**[role default-role enable]{lang="EN-US"}**]{#struct_0_x1979_37509_520767912}[命令用来使能缺省用户角色授权功能。]{style="font-family:
-宋体"}
+**[role default-role enable**]命令用来使能缺省用户角色授权功能。
 
-[**[undo role default-role enable]{lang="EN-US"}**]{#struct_0_x1979_37509_1640312093}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo role default-role enable**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1591761593}
+【命令】
 
-[**[role default-role enable]{lang="EN-US"}**]{#struct_0_x1979_37509_2077418423}
+**[role default-role enable**]
 
-[**[undo role default-role enable]{lang="EN-US"}**]{#struct_0_x1979_37509_376144948}
+**[undo role default-role enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1979_37509_349772680}
+【缺省情况】
 
-[[缺省用户角色授权功能处于关闭状态，没有被]{style="font-family:宋体"}[AAA]{lang="EN-US"}]{#struct_0_x1979_37509_x1290651260}[授权用户角色的用户不能登录设备。]{style="font-family:宋体"}
+缺省用户角色授权功能处于关闭状态，没有被AAA授权用户角色的用户不能登录设备。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x2054777583}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1979_37509_x1100036483}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x115452092}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_690612590}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1979_37509_2119847179}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1178637250}
+【使用指导】
 
-[[对于通过]{style="font-family:宋体"}[AAA]{lang="EN-US"}]{#struct_0_x1979_37509_x1111545058}[认证登录设备的用户，由]{style="font-family:宋体"}[AAA]{lang="EN-US"}[服务器（远程认证）或设备（本地认证）为其授权对应的用户角色。如果用户没有被授权任何用户角色，将无法成功登录设备。使能该功能后，用户将在没有被授权任何用户角色的情况下，具有一个缺省的用户角色，具体情况如下：（不同设备的具体情况有所不同，请以设备的实际情况为准）]{style="font-family:宋体"}
+对于通过AAA认证登录设备的用户，由AAA服务器（远程认证）或设备（本地认证）为其授权对应的用户角色。如果用户没有被授权任何用户角色，将无法成功登录设备。使能该功能后，用户将在没有被授权任何用户角色的情况下，具有一个缺省的用户角色，具体情况如下：（不同设备的具体情况有所不同，请以设备的实际情况为准）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果用户登录设备，缺省用户角色为]{lang="EN-US" style="font-family:宋体"}[network-operator]{lang="EN-US"}]{#struct_0_x1979_37509_x464248385}[；]{lang="EN-US" style="font-family:宋体"}
+·如果用户登录设备，缺省用户角色为network-operator；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果用户登录于缺省]{lang="EN-US" style="font-family:宋体"}[MDC]{lang="EN-US"}]{#struct_0_x1979_37509_x2054777584}[，则缺省用户角色为]{lang="EN-US" style="font-family:宋体"}[network-operator]{lang="EN-US"}[；]{lang="EN-US" style="font-family:宋体"}
+·如果用户登录于缺省MDC，则缺省用户角色为network-operator；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果用户登录于非缺省]{lang="EN-US" style="font-family:宋体"}[MDC]{lang="EN-US"}]{#struct_0_x1979_37509_x1503321010}[，则缺省用户角色为]{lang="EN-US" style="font-family:宋体"}[mdc-operator]{lang="EN-US"}[；]{lang="EN-US" style="font-family:宋体"}
+·如果用户登录于非缺省MDC，则缺省用户角色为mdc-operator；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果用户登录于缺省]{lang="EN-US" style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_x1979_37509_2005192806}[，则缺省用户角色为]{lang="EN-US" style="font-family:宋体"}[context]{lang="EN-US"}[-operator]{lang="EN-US"}[；]{lang="EN-US" style="font-family:宋体"}
+·如果用户登录于缺省Context，则缺省用户角色为context-operator；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果用户登录于非缺省]{lang="EN-US" style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_x1979_37509_2005258342}[，则缺省用户角色为]{lang="EN-US" style="font-family:宋体"}[context]{lang="EN-US"}[-operator]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}
+·如果用户登录于非缺省Context，则缺省用户角色为context-operator。
 
-[[若用户通过]{style="font-family:宋体"}[AAA]{lang="EN-US"}]{#struct_0_x1979_37509_x1607158717}[认证且被授予了具体的用户角色，则用户不具有以上缺省的用户角色。]{style="font-family:宋体"}
+若用户通过AAA认证且被授予了具体的用户角色，则用户不具有以上缺省的用户角色。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1144763995}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_1587072723}[使能缺省用户角色授权功能。]{style="font-family:宋体"}
+\# 使能缺省用户角色授权功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_x1541173699}
+\<Sysname\> system-view
 
-[\[Sysname\] role default-role enable]{lang="EN-US"}
+Sysname role default-role enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_332391217}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[role]{lang="EN-US"}**]{#struct_0_x1979_37509_x1309666444}
-:::
-
-::: {#-1927973318 .myid}
-[]{#_Toc404782254}[]{#struct_0_x1979_37509_2024264675}[]{#_Toc285213507}
+·**role**
 
 **RBAC \-- RBAC配置命令 \-- role feature-group**
 
 ------------------------------------------------------------------------
 
-[**[role feature-group]{lang="EN-US"}**]{#struct_0_x1979_37509_x2054777585}[命令用来创建特性组并进入特性组视图。]{style="font-family:宋体"}
+**[role feature-group**]命令用来创建特性组并进入特性组视图。
 
-[**[undo role feature-group]{lang="EN-US"}**]{#struct_0_x1979_37509_62762931}[命令用来删除指定的特性组。]{style="font-family:宋体"}
+**[undo role feature-group**]命令用来删除指定的特性组。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1080203518}
+【命令】
 
-[**[role feature-group name ]{lang="EN-US"}***[feature-group-name]{lang="EN-US"}*]{#struct_0_x1979_37509_853345048}
+**[role feature-group name ***feature-group-name*]
 
-[**[undo role feature-group name ]{lang="EN-US"}***[feature-group-name]{lang="EN-US"}*]{#struct_0_x1979_37509_1800744503}
+**[undo role feature-group name ***feature-group-name*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x452135435}
+【缺省情况】
 
-[[存在两个特性组，名称分别为]{style="font-family:宋体"}[L2]{lang="EN-US"}]{#struct_0_x1979_37509_x1354585346}[和]{style="font-family:宋体"}[L3]{lang="EN-US"}[。]{style="font-family:宋体"}
+存在两个特性组，名称分别为L2和L3。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x74784742}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1979_37509_x1696740660}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x2054777586}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x340521596}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x1459452461}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1757989679}
+【参数】
 
-[**[name ]{lang="EN-US"}***[feature-group-name]{lang="EN-US"}*]{#struct_0_x1979_37509_1935365163}[：特性组名称，]{style="font-family:宋体"}*[feature-group-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[name ***feature-group-name*]：特性组名称，*feature-group-name*为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1020867019}
+【使用指导】
 
-[[除系统预定义的特性组]{style="font-family:宋体"}[L2]{lang="EN-US"}]{#struct_0_x1979_37509_1622466018}[和]{style="font-family:宋体"}[L3]{lang="EN-US"}[之外，系统中最多允许创建]{style="font-family:宋体"}[64]{lang="EN-US"}[个特性组。]{style="font-family:宋体"}
+除系统预定义的特性组L2和L3之外，系统中最多允许创建64个特性组。
 
-[[不能修改和删除系统预定义的特性组]{style="font-family:宋体"}[L2]{lang="EN-US"}]{#struct_0_x1979_37509_x2138551770}[和]{style="font-family:宋体"}[L3]{lang="EN-US"}[。]{style="font-family:宋体"}[L2]{lang="EN-US"}[中包含了所有的二层协议相关功能的命令，]{style="font-family:宋体"}[L3]{lang="EN-US"}[中包含了所有三层协议相关功能的命令。]{style="font-family:宋体"}
+不能修改和删除系统预定义的特性组L2和L3。L2中包含了所有的二层协议相关功能的命令，L3中包含了所有三层协议相关功能的命令。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x2054777587}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_1225562345}[创建特性组]{style="font-family:宋体"}[security-features]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 创建特性组security-features。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_x449110929}
+\<Sysname\> system-view
 
-[\[Sysname\] role feature-group name security-features]{lang="EN-US"}
+Sysname role feature-group name security-features
 
-[\[Sysname-featuregrp-security-features\]]{lang="EN-US"}
+Sysname-featuregrp-security-features
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x21950263}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display role feature]{lang="EN-US"}**]{#struct_0_x1979_37509_1252911431}
+·**display role feature**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display role feature-group]{lang="EN-US"}**]{#struct_0_x1979_37509_1118351182}
+·**display role feature-group**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[feature]{lang="EN-US"}**]{#struct_0_x1979_37509_1545048229}
-:::
-
-::: {#1629595628 .myid}
-[]{#_Toc404782255}[]{#struct_0_x1979_37509_460974255}[]{#_Toc285213508}
+·**feature**
 
 **RBAC \-- RBAC配置命令 \-- rule**
 
 ------------------------------------------------------------------------
 
-[**[rule]{lang="EN-US"}**]{#struct_0_x1979_37509_x2054777588}[命令用来为用户角色创建一条规则。]{style="font-family:宋体"}
+**[rule**]命令用来为用户角色创建一条规则。
 
-[**[undo rule]{lang="EN-US"}**]{#struct_0_x1979_37509_109817098}[命令用来为用户角色删除一条规则。]{style="font-family:宋体"}
+**[undo rule**]命令用来为用户角色删除一条规则。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x21735290}
+【命令】
 
-[**[rule]{lang="EN-US"}**[ *number* { **deny** \| **permit** } { **command** *command-string \|* { **execute** \| **read** \| **write** } \* { **feature** \[ *feature-name* \] \| **feature-group** *feature-group-name* \| ]{lang="EN-US"}]{#struct_0_x1979_37509_221374726}**[oid]{lang="EN-US"}**[ \[ *oid-string* \] ]{lang="EN-US"}[\| **web-menu** \[ *web-string* \] \| **xml-element** \[ *xml-string* \] } }]{lang="EN-US"}
+**[rule**[ *number* { **deny** \| **permit** } { **command** *command-string \|* { **execute** \| **read** \| **write** } \* ]**oid** [ *oid-string*   \| **web-menu** [ *web-string* ] \| **xml-element**  *xml-string*  } }]
 
-[**[undo rule]{lang="EN-US"}**[ { *number* \| **all** }]{lang="EN-US"}]{#struct_0_x1979_37509_x292655834}
+**[undo rule**[ { *number* \| **all** }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1494189109}
+【缺省情况】]
 
-[[新创建的用户角色中未定义规则，即当前用户角色无任何权限。]{style="font-family:宋体"}]{#struct_0_x1979_37509_x1502789861}
+新创建的用户角色中未定义规则，即当前用户角色无任何权限。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1979_37509_752038531}
+【视图】
 
-[[用户角色视图]{style="font-family:宋体"}]{#struct_0_x1979_37509_1016118310}
+用户角色视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1979_37509_283874581}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x1157578381}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1979_37509_929283909}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1979_37509_356015553}
+【参数】
 
-[*[number]{lang="EN-US"}*]{#struct_0_x1979_37509_449155630}[：权限规则编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[256]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[number*]：权限规则编号，取值范围为1～256。
 
-[**[deny]{lang="EN-US"}**]{#struct_0_x1979_37509_x1269551869}[：禁止执行指定的命令。]{style="font-family:宋体"}
+**[deny**]：禁止执行指定的命令。
 
-[**[permit]{lang="EN-US"}**]{#struct_0_x1979_37509_x1181785763}[：允许执行指定的命令。]{style="font-family:宋体"}
+**[permit**]：允许执行指定的命令。
 
-[**[command ]{lang="EN-US"}***[command-string]{lang="EN-US"}*]{#struct_0_x1979_37509_x470257181}[：配置基于命令的规则。]{style="font-family:宋体"}*[command-string]{lang="EN-US"}*[表示命令特征字符串，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[128]{lang="EN-US"}[个字符的字符串，区分大小写，可以是特定的一条命令行，也可以是用星号（]{style="font-family:宋体"}[\*]{lang="EN-US"}[）通配符表示的一批命令，可包含空格、]{style="font-family:宋体"}[Tab]{lang="EN-US"}[（它们用于分隔关键字、参数以及输入的字符），以及所有可打印字符。]{style="font-family:宋体"}
+**[command ***command-string*]：配置基于命令的规则。*command-string*表示命令特征字符串，为1～128个字符的字符串，区分大小写，可以是特定的一条命令行，也可以是用星号（\*）通配符表示的一批命令，可包含空格、Tab（它们用于分隔关键字、参数以及输入的字符），以及所有可打印字符。
 
-[**[execute]{lang="EN-US"}**]{#struct_0_x1979_37509_x1564063524}[：表示执行类型的命令，即]{style="font-family:宋体"}[用于执行特定的程序或功能]{style="font-family:宋体"}[的一类命令，如]{style="font-family:宋体"}**[ping]{lang="EN-US"}**[命令。]{style="font-family:宋体"}
+**[execute**]：表示执行类型的命令，即用于执行特定的程序或功能的一类命令，如**ping**命令。
 
-[**[read]{lang="EN-US"}**]{#struct_0_x1979_37509_283874580}[：表示读类型的命令，即显示系统配置和维护信息的一类命令，如]{style="font-family:宋体"}**[display]{lang="EN-US"}**[、]{style="font-family:宋体"}**[dir]{lang="EN-US"}**[、]{style="font-family:宋体"}**[more]{lang="EN-US"}**[和]{style="font-family:宋体"}**[pwd]{lang="EN-US"}**[命令。]{style="font-family:宋体"}
+**[read**]：表示读类型的命令，即显示系统配置和维护信息的一类命令，如**display**、**dir**、**more**和**pwd**命令。
 
-[**[write]{lang="EN-US"}**]{#struct_0_x1979_37509_x1157578380}[：表示写类型的命令，即用于对系统进行配置的一类命令，如]{style="font-family:宋体"}**[ssh server enable]{lang="EN-US"}**[命令。]{style="font-family:宋体"}
+**[write**]：表示写类型的命令，即用于对系统进行配置的一类命令，如**ssh server enable**命令。
 
-[**[feature ]{lang="EN-US"}**[\[ *feature-name* \]]{lang="EN-US"}]{#struct_0_x1979_37509_x1799599446}[：配置基于特性的规则。]{style="font-family:宋体"}*[feature-name]{lang="EN-US"}*[表示系统预定义的特性名称，区分大小写。若不指定特性名称，则表示所有特性。]{style="font-family:宋体"}
+**[feature ** *feature-name* ]：配置基于特性的规则。*feature-name*表示系统预定义的特性名称，区分大小写。若不指定特性名称，则表示所有特性。
 
-[**[feature-group]{lang="EN-US"}**[ *feature-group-name*]{lang="EN-US"}]{#struct_0_x1979_37509_955030484}[：配置基于特性组的规则。]{style="font-family:宋体"}*[feature-group-name]{lang="EN-US"}*[表示特性组名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[feature-group** *feature-group-name*]：配置基于特性组的规则。*feature-group-name*表示特性组名称，为1～31个字符的字符串，区分大小写。
 
-[**[oid ]{lang="EN-US"}**]{#struct_0_x1979_37509_2004602981}[\[*oid-string* \]]{lang="EN-US"}[：配置基]{style="font-family:宋体"}[于]{style="font-family:宋体"}[MIB]{lang="EN-US"}[节点]{style="font-family:宋体"}[OID]{lang="EN-US"}[（]{style="font-family:宋体"}[Object Identifier]{lang="EN-US"}[，对象标识符）]{style="font-family:宋体"}[的规]{style="font-family:宋体"}[则。]{style="font-family:宋体"}*[oid-string]{lang="EN-US"}*[表示允许操作的]{style="font-family:宋体"}[OID]{lang="EN-US"}[，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[个字符的字符串，不区分大小写。例如：]{style="font-family:宋体"}[1.3.6.1.4.1.25506.8.35.14.19.1.1]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[oid **]*oid-string* ：配置基于MIB节点OID（Object Identifier，对象标识符）的规则。*oid-string*表示允许操作的OID，为1～255个字符的字符串，不区分大小写。例如：1.3.6.1.4.1.25506.8.35.14.19.1.1。
 
-[**[web-menu]{lang="EN-US"}**[ \[ *web-string* \]]{lang="EN-US"}]{#struct_0_x1979_37509_135491795}[：配置基于]{style="font-family:宋体"}[Web]{lang="EN-US"}[菜单的规则。]{style="font-family:宋体"}*[web-string]{lang="EN-US"}*[表示允许操作的]{style="font-family:宋体"}[Web]{lang="EN-US"}[菜单选项的]{style="font-family:宋体"}[ID]{lang="EN-US"}[路径，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[个字符的字符串，不区分大小写，以"]{style="font-family:宋体"}[/]{lang="EN-US"}["为分隔符来分隔不同级别的菜单。]{style="font-family:宋体"}[合法的]{style="font-family:宋体"}*[web-string]{lang="EN-US"}*[为通过]{style="font-family:宋体"}**[display web menu]{lang="EN-US"}**[命令显示的]{style="font-family:宋体"}[ID]{lang="EN-US"}[路径]{style="font-family:宋体"}[,]{lang="EN-US"}[例如：]{style="font-family:宋体"}[M_DEVICE/I_BASIC_INFO/I_reboot]{lang="EN-US"}[；]{style="font-family:宋体"}[若不指定]{style="font-family:宋体"}*[web-string]{lang="EN-US"}*[参数，则表示]{style="font-family:宋体"}[对所有菜单选项生效。]{style="font-family:宋体"}
+**[web-menu** [ *web-string* ]]：配置基于Web菜单的规则。*web-string*表示允许操作的Web菜单选项的ID路径，为1～255个字符的字符串，不区分大小写，以"/"为分隔符来分隔不同级别的菜单。合法的*web-string*为通过**display web menu**命令显示的ID路径,例如：M_DEVICE/I_BASIC_INFO/I_reboot；若不指定*web-string*参数，则表示对所有菜单选项生效。
 
-[**[xml-element ]{lang="EN-US"}**[\[ *xml-string* \]]{lang="EN-US"}]{#struct_0_x1979_37509_x741411918}[：]{style="font-family:宋体"}[配置基于]{style="font-family:宋体"}[XML]{lang="EN-US"}[元素的规则。]{style="font-family:宋体"}*[xml-string]{lang="EN-US"}*[表示允许操作的]{style="font-family:宋体"}[XML]{lang="EN-US"}[元素的]{style="font-family:宋体"}[XPath]{lang="EN-US"}[，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[个字符的字符串，不区分大小写，以"]{style="font-family:宋体"}[/]{lang="EN-US"}["为分隔符来分隔不同级别的菜单，例如：]{style="font-family:宋体"}[Interfaces/Index/Name]{lang="EN-US"}[；若不指定]{style="font-family:宋体"}*[xml-string]{lang="EN-US"}*[参数]{style="font-family:宋体"}[，则表示对]{style="font-family:宋体"}[所有]{style="font-family:宋体"}[XML]{lang="EN-US"}[元素生效。]{style="font-family:宋体"}
+**[xml-element ** *xml-string* ]：配置基于XML元素的规则。*xml-string*表示允许操作的XML元素的XPath，为1～255个字符的字符串，不区分大小写，以"/"为分隔符来分隔不同级别的菜单，例如：Interfaces/Index/Name；若不指定*xml-string*参数，则表示对所有XML元素生效。
 
-[**[all]{lang="EN-US"}**]{#struct_0_x1979_37509_x2109045271}[：指定所有权限规则。]{style="font-family:宋体"}
+**[all**]：指定所有权限规则。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1961608168}
+【使用指导】
 
-[[可为一个用户角色定义以下几种类型的规则：]{style="font-family:宋体"}]{#struct_0_x1979_37509_x2044857065}
+可为一个用户角色定义以下几种类型的规则：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[禁止或允许执行特定的命令行。]{style="font-family:宋体"}]{#struct_0_x1979_37509_283874579}
+·禁止或允许执行特定的命令行。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[禁止或允许执行指定或所有特性的某一类或某几类命令。]{style="font-family:宋体"}]{#struct_0_x1979_37509_x1495285397}
+·禁止或允许执行指定或所有特性的某一类或某几类命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[禁止或允许执行某个特性组中所有特性的某一类或某几类命令。]{style="font-family:宋体"}]{#struct_0_x1979_37509_1848442078}
+·禁止或允许执行某个特性组中所有特性的某一类或某几类命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[禁止或允许执行指定所有或指定的]{style="font-family:宋体"}]{#struct_0_x1979_37509_330043416}[MIB]{lang="EN-US"}[节点]{style="font-family:宋体"}[OID]{lang="EN-US"}[。]{style="font-family:宋体"}
+·禁止或允许执行指定所有或指定的MIB节点OID。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[禁止或允许执行]{style="font-family:宋体"}]{#struct_0_x1979_37509_x383100391}[Web]{lang="EN-US"}[页面中所有菜单选项或某几类菜单选项。]{style="font-family:宋体"}
+·禁止或允许执行Web页面中所有菜单选项或某几类菜单选项。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[禁止或允许执行所有]{style="font-family:宋体"}]{#struct_0_x1979_37509_x12893088}[XML]{lang="EN-US"}[元素或某几类]{style="font-family:宋体"}[XML]{lang="EN-US"}[元素。]{style="font-family:宋体"}
+·禁止或允许执行所有XML元素或某几类XML元素。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x1979_37509_1892221381}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[[执行本命令时，如果指定编号的规则不存在，则表示创建一条新的规则；如果指定编号的规则已存在，则表示对已有的规则进行修改。]{style="font-family:宋体"}]{.ItemStepChar}]{#struct_0_x1979_37509_x231283636}[修改后的规则对于当前已经在线的用户不生效，对于之后使用该角色登录设备的用户生效。]{style="font-family:宋体"}
+· 执行本命令时，如果指定编号的规则不存在，则表示创建一条新的规则；如果指定编号的规则已存在，则表示对已有的规则进行修改。{.ItemStepChar}修改后的规则对于当前已经在线的用户不生效，对于之后使用该角色登录设备的用户生效。
 
-[[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}]{.ItemStepChar}[一个用户角色中允许创建多条规则，各规则以创建时指定的编号为唯一标识，被授权该角色的用户可以执行的命令为这些规则定义的可执行命令的并集。若这些规则定义的权限内容有冲突，则规则编号大的有效。例如，规则]{style="font-family:宋体"}]{#struct_0_x1979_37509_x847882615}[1]{lang="EN-US"}[允许执行命令]{style="font-family:宋体"}[A]{lang="EN-US"}[，规则]{style="font-family:宋体"}[2]{lang="EN-US"}[允许执行命令]{style="font-family:宋体"}[B]{lang="EN-US"}[，规则]{style="font-family:宋体"}[3]{lang="EN-US"}[禁止执行命令]{style="font-family:宋体"}[A]{lang="EN-US"}[，则最终规则]{style="font-family:宋体"}[2]{lang="EN-US"}[和规则]{style="font-family:宋体"}[3]{lang="EN-US"}[生效，即禁止执行命令]{style="font-family:宋体"}[A]{lang="EN-US"}[，允许执行命令]{style="font-family:宋体"}[B]{lang="EN-US"}[[。]{style="font-family:宋体"}]{.ItemStepChar}
+·{.ItemStepChar}一个用户角色中允许创建多条规则，各规则以创建时指定的编号为唯一标识，被授权该角色的用户可以执行的命令为这些规则定义的可执行命令的并集。若这些规则定义的权限内容有冲突，则规则编号大的有效。例如，规则1允许执行命令A，规则2允许执行命令B，规则3禁止执行命令A，则最终规则2和规则3生效，即禁止执行命令A，允许执行命令B。{.ItemStepChar}
 
-[[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}]{.ItemStepChar}[[在同时存在系统预定义规则（以]{style="font-family:宋体"}]{.ItemStepChar}]{#struct_0_x1979_37509_x2062299667}[[sys-x]{lang="EN-US"}]{.ItemStepChar}[[为权限规则编号，]{style="font-family:宋体"}]{.ItemStepChar}[[x]{lang="EN-US"}]{.ItemStepChar}[[为整数值）和自定义规则的用户角色中，若预定义规则定义的权限内容与自定义规则定义的权限内容有冲突，则以自定义规则为准。]{style="font-family:宋体"}]{.ItemStepChar}
+·{.ItemStepChar}[在同时存在系统预定义规则（以]{.ItemStepChar}sys-x{.ItemStepChar}为权限规则编号，{.ItemStepChar}x{.ItemStepChar}为整数值）和自定义规则的用户角色中，若预定义规则定义的权限内容与自定义规则定义的权限内容有冲突，则以自定义规则为准。{.ItemStepChar}
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[每个用户角色中最多可以配置]{style="font-family:宋体"}]{#struct_0_x1979_37509_x1319622501}[256]{lang="EN-US"}[条规则，系统中可以配置的用户角色规则总数不能超过]{style="font-family:宋体"}[1024]{lang="EN-US"}[。]{style="font-family:宋体"}
+·每个用户角色中最多可以配置256条规则，系统中可以配置的用户角色规则总数不能超过1024。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[访问文件系统的命令，受基于文件系统特性规则以及具体命令规则的双重控制。]{style="font-family:宋体"}]{#struct_0_x1979_37509_283874578}
+·访问文件系统的命令，受基于文件系统特性规则以及具体命令规则的双重控制。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于需要将输出信息重定向到文件中保存的命令，只有在用户角色被授权了文件系统写权限后才允许执行。]{style="font-family:宋体"}]{#struct_0_x1979_37509_x1495285396}
+·对于需要将输出信息重定向到文件中保存的命令，只有在用户角色被授权了文件系统写权限后才允许执行。
 
-[[输入命令特征字符串时，需要遵循以下规则：]{style="font-family:宋体"}]{#struct_0_x1979_37509_282358137}
+输入命令特征字符串时，需要遵循以下规则：
 
-[[(1)[      ]{style="font:7.0pt "}]{lang="EN-US"}[段（]{lang="EN-US" style="font-family:宋体"}[segment]{lang="EN-US"}]{#struct_0_x1979_37509_747805726}[）的划分]{lang="EN-US" style="font-family:宋体"}
+(1)段（segment）的划分
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若要描述多级视图下的命令，则需要使用分号（]{style="font-family:宋体"}]{#struct_0_x1979_37509_1412326026}[;]{lang="EN-US"}[）将命令特征字符串分成多个段，每一个段代表一个或一系列命令，后一个段中的命令是执行前一个段中命令所进入视图下的命令。一个段中可以包含多个星号（]{style="font-family:宋体"}[\*]{lang="EN-US"}[），每个星号（]{style="font-family:宋体"}[\*]{lang="EN-US"}[）代表了]{style="font-family:宋体"}[0]{lang="EN-US"}[个或多个任意字符。]{style="font-family:宋体"}[例如：命令特征字符串"]{lang="EN-US" style="font-family:
-宋体"}[system ; interface \* ; ip \* ;]{lang="EN-US"}["]{lang="EN-US" style="font-family:宋体"}[ ]{lang="EN-US"}[代表从系统视图进入到任意接口视图后，以]{lang="EN-US" style="font-family:宋体"}**[ip]{lang="EN-US"}**[开头的所有命令。]{lang="EN-US" style="font-family:宋体"}
+·若要描述多级视图下的命令，则需要使用分号（;）将命令特征字符串分成多个段，每一个段代表一个或一系列命令，后一个段中的命令是执行前一个段中命令所进入视图下的命令。一个段中可以包含多个星号（\*），每个星号（\*）代表了0个或多个任意字符。例如：命令特征字符串"system ; interface \* ; ip \* ;"代表从系统视图进入到任意接口视图后，以**ip**开头的所有命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[除最后一个段外，其余段中的命令应为描述如何进入子视图的命令特征字符串。]{style="font-family:宋体"}]{#struct_0_x1979_37509_1899163264}
+·除最后一个段外，其余段中的命令应为描述如何进入子视图的命令特征字符串。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[一个段中必须至少出现一个可打印字符，不能全部为空格或]{style="font-family:宋体"}]{#struct_0_x1979_37509_283874577}[Tab]{lang="EN-US"}[。]{style="font-family:宋体"}
+·一个段中必须至少出现一个可打印字符，不能全部为空格或Tab。
 
-[[(2)[      ]{style="font:7.0pt "}]{lang="EN-US"}[分号的使用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1979_37509_x1495285383}
+(2)分号的使用
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在输入命令特征字符串时必须指定该命令所在的视图，进入各视图的命令特征字符串由分号分隔。但是，对于能在任意视图下执行的命令（例如]{style="font-family:宋体"}]{#struct_0_x1979_37509_x477222286}**[display]{lang="EN-US"}**[命令）以及用户视图下的命令（例如]{style="font-family:宋体"}**[dir]{lang="EN-US"}**[命令），在配置包含此类命令的规则时，不需要在规则的命令匹配字符串中指定其所在的视图。]{style="font-family:宋体"}
+·在输入命令特征字符串时必须指定该命令所在的视图，进入各视图的命令特征字符串由分号分隔。但是，对于能在任意视图下执行的命令（例如**display**命令）以及用户视图下的命令（例如**dir**命令），在配置包含此类命令的规则时，不需要在规则的命令匹配字符串中指定其所在的视图。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当最后一个段中的最后一个可见字符为分号时，表示所指的命令范围不再扩展，否则将向子视图中的命令扩展。例如：命令特征字符串"]{style="font-family:宋体"}]{#struct_0_x1979_37509_1989405451}[system ; radius scheme \* ;]{lang="EN-US"}["代表系统视图下以]{style="font-family:宋体"}**[radius scheme]{lang="EN-US"}**[开头的所有命令；命令特征字符串"]{style="font-family:宋体"}[system ; radius scheme \* ]{lang="EN-US"}["代表系统视图下以]{style="font-family:宋体"}**[radius scheme]{lang="EN-US"}**[开头的所有命令，以及进入子视图（]{style="font-family:宋体"}[RADIUS]{lang="EN-US"}[方案视图）下的所有命令。]{style="font-family:宋体"}
+·当最后一个段中的最后一个可见字符为分号时，表示所指的命令范围不再扩展，否则将向子视图中的命令扩展。例如：命令特征字符串"system ; radius scheme \* ;"代表系统视图下以**radius scheme**开头的所有命令；命令特征字符串"system ; radius scheme \* "代表系统视图下以**radius scheme**开头的所有命令，以及进入子视图（RADIUS方案视图）下的所有命令。
 
-[[(3)[      ]{style="font:7.0pt "}]{lang="EN-US"}[星号的使用]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1979_37509_179813872}
+(3)星号的使用
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当星号（]{style="font-family:宋体"}]{#struct_0_x1979_37509_606974903}[\*]{lang="EN-US"}[）出现在一个段的首部时，其后面不能再出现其它可打印字符，且该段必须是命令特征字符串的最后一个段。]{style="font-family:宋体"}[例如：命令特征字符串"]{lang="EN-US" style="font-family:宋体"}[system ; \*]{lang="EN-US"}["就代表了系统视图下的所有命令，以及所有子视图下的命令。]{lang="EN-US" style="font-family:宋体"}
+·当星号（\*）出现在一个段的首部时，其后面不能再出现其它可打印字符，且该段必须是命令特征字符串的最后一个段。例如：命令特征字符串"system ; \*"就代表了系统视图下的所有命令，以及所有子视图下的命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当星号（]{style="font-family:宋体"}]{#struct_0_x1979_37509_x1141111548}[\*]{lang="EN-US"}[）出现在一个段的中间时，该段必须是命令特征字符串的最后一个段。]{style="font-family:宋体"}[例如：命令特征字符串"]{lang="EN-US" style="font-family:宋体"}[debugging \* event]{lang="EN-US"}["就代表了用户视图下所有模块的事件调试信息开关命令。]{lang="EN-US" style="font-family:宋体"}
+·当星号（\*）出现在一个段的中间时，该段必须是命令特征字符串的最后一个段。例如：命令特征字符串"debugging \* event"就代表了用户视图下所有模块的事件调试信息开关命令。
 
-[[(4)[      ]{style="font:7.0pt "}]{lang="EN-US"}[前缀匹配]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x1979_37509_x894014907}
+(4)前缀匹配
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[命令关键字与命令特征字符串是采用前缀匹配算法进行匹配的，即只要命令行中关键字的首部若干连续字符或全部字符与规则中定义的关键字相匹配，就认为该命令行与此规则匹配。因此，命令特征字符串中可以包括完整的或部分的命令关键字。例如，若规则"]{style="font-family:宋体"}]{#struct_0_x1979_37509_x1105004627}[rule 1 deny command dis mpls lsp protocol static asbr]{lang="EN-US"}["生效，则命令]{style="font-family:宋体"}**[display mpls lsp protocol static asbr]{lang="EN-US"}**[和命令]{style="font-family:宋体"}**[display mpls lsp protocol static-cr asbr]{lang="EN-US"}**[都会被禁止执行。]{style="font-family:宋体"}
+·命令关键字与命令特征字符串是采用前缀匹配算法进行匹配的，即只要命令行中关键字的首部若干连续字符或全部字符与规则中定义的关键字相匹配，就认为该命令行与此规则匹配。因此，命令特征字符串中可以包括完整的或部分的命令关键字。例如，若规则"rule 1 deny command dis mpls lsp protocol static asbr"生效，则命令**display mpls lsp protocol static asbr**和命令**display mpls lsp protocol static-cr asbr**都会被禁止执行。
 
-[[对于基于命令的规则，有以下使用注意事项：]{style="font-family:宋体"}]{#struct_0_x1979_37509_283874576}
+对于基于命令的规则，有以下使用注意事项：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[基于命令的规则只对指定视图下的命令生效。若用户输入的命令在当前视图下不存在而在其父视图下被查找到时，用于控制当前视图下的命令的规则不会对其父视图下的命令执行权限进行控制。例如，定义一条规则"]{style="font-family:宋体"}]{#struct_0_x1979_37509_x1495285382}[rule 1 deny command system ; interface \* ; \*]{lang="EN-US"}["禁止用户执行接口视图下的任何命令。当用户在接口视图下输入命令]{style="font-family:宋体"}**[acl number ]{lang="EN-US"}**[3000]{lang="EN-US"}[时，该命令仍然可以成功执行，因为系统在接口视图下搜索不到指定的]{style="font-family:宋体"}**[acl]{lang="EN-US"}**[命令时，会回溯到系统视图（父视图）下执行，此时该规则对此命令不生效。]{style="font-family:宋体"}
+·基于命令的规则只对指定视图下的命令生效。若用户输入的命令在当前视图下不存在而在其父视图下被查找到时，用于控制当前视图下的命令的规则不会对其父视图下的命令执行权限进行控制。例如，定义一条规则"rule 1 deny command system ; interface \* ; \*"禁止用户执行接口视图下的任何命令。当用户在接口视图下输入命令**acl number **3000时，该命令仍然可以成功执行，因为系统在接口视图下搜索不到指定的**acl**命令时，会回溯到系统视图（父视图）下执行，此时该规则对此命令不生效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**]{#struct_0_x1979_37509_x2043306227}[命令中的重定向符（"]{style="font-family:
-宋体"}[\|]{lang="EN-US"}["、"]{style="font-family:宋体"}[\>]{lang="EN-US"}["、"]{style="font-family:宋体"}[\>\>]{lang="EN-US"}["）及其后面的关键字不被作为命令行关键字参与规则的匹配。例如，若规则"]{style="font-family:宋体"}[rule 1 permit command display debugging]{lang="EN-US"}["生效，则命令]{style="font-family:宋体"}**[display debugging \> log]{lang="EN-US"}**[是被允许执行的，其中的关键字]{style="font-family:宋体"}**[\> log]{lang="EN-US"}**[将被忽略，]{style="font-family:宋体"}[RBAC]{lang="EN-US"}[只对重定向符前面的命令行]{style="font-family:宋体"}**[display debugging]{lang="EN-US"}**[进行匹配。但是，如果在规则中配置了重定向符，则]{style="font-family:宋体"}[RBAC]{lang="EN-US"}[会将其作为普通字符处理。例如，若规则"]{style="font-family:宋体"}[rule 1 permit command display debugging \> log]{lang="EN-US"}["生效，则命令]{style="font-family:宋体"}**[display debugging \> log]{lang="EN-US"}**[将会匹配失败，因为其中的关键字]{style="font-family:宋体"}**[\> log]{lang="EN-US"}**[被]{style="font-family:宋体"}[RBAC]{lang="EN-US"}[忽略了，最终是命令]{style="font-family:宋体"}**[display debugging]{lang="EN-US"}**[与规则进行匹配。因此，]{style="font-family:宋体"}[配置规则时不要使用重定向符。]{lang="EN-US" style="font-family:宋体"}
+·**display**命令中的重定向符（"[\|]"、"\>"、"\>\>"）及其后面的关键字不被作为命令行关键字参与规则的匹配。例如，若规则"rule 1 permit command display debugging"生效，则命令**display debugging \> log**是被允许执行的，其中的关键字**\> log**将被忽略，RBAC只对重定向符前面的命令行**display debugging**进行匹配。但是，如果在规则中配置了重定向符，则RBAC会将其作为普通字符处理。例如，若规则"rule 1 permit command display debugging \> log"生效，则命令**display debugging \> log**将会匹配失败，因为其中的关键字**\> log**被RBAC忽略了，最终是命令**display debugging**与规则进行匹配。因此，配置规则时不要使用重定向符。
 
-[[进行基于]{style="font-family:宋体"}]{#struct_0_x1979_37509_2004799589}[OID]{lang="EN-US"}[的规则的匹配时，遵循以下规则：]{style="font-family:宋体"}
+进行基于OID的规则的匹配时，遵循以下规则：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[与用户访问的]{style="font-family:宋体"}]{#struct_0_x1979_37509_1864839349}[OID]{lang="EN-US"}[形成最长匹配的规则生效。例如用户访问的]{style="font-family:宋体"}[OID]{lang="EN-US"}[为]{style="font-family:宋体"}[1.3.6.1.4.1.25506.141.3.0.1]{lang="EN-US"}[，角色中存在"]{style="font-family:宋体"}[rule 1 permit read write oid 1.3.6]{lang="EN-US"}["，"]{style="font-family:宋体"}[rule 2 deny read write oid 1.3.6.1.4.1]{lang="EN-US"}["和"]{style="font-family:宋体"}[rule 3 permit read write oid 1.3.6.1.4]{lang="EN-US"}["，其中]{style="font-family:
-宋体"}[rule 2]{lang="EN-US"}[与用户访问的]{style="font-family:宋体"}[OID]{lang="EN-US"}[形成最长匹配，则认为]{style="font-family:宋体"}[rule 2]{lang="EN-US"}[与]{style="font-family:宋体"}[OID]{lang="EN-US"}[匹配，匹配的结果为用户的此访问请求被拒绝。]{style="font-family:宋体"}
+·与用户访问的OID形成最长匹配的规则生效。例如用户访问的OID为1.3.6.1.4.1.25506.141.3.0.1，角色中存在"rule 1 permit read write oid 1.3.6"，"rule 2 deny read write oid 1.3.6.1.4.1"和"rule 3 permit read write oid 1.3.6.1.4"，其中rule 2与用户访问的OID形成最长匹配，则认为rule 2与OID匹配，匹配的结果为用户的此访问请求被拒绝。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于定义的]{style="font-family:宋体"}]{#struct_0_x1979_37509_x324787573}[OID]{lang="EN-US"}[长度相同的规则，规则编号大的生效。例如用户访问的]{style="font-family:宋体"}[OID]{lang="EN-US"}[为]{style="font-family:宋体"}[1.3.6.1.4.1.25506.141.3.0.1]{lang="EN-US"}[，角色中存在"]{style="font-family:宋体"}[rule 1 permit read write oid 1.3.6]{lang="EN-US"}["，"]{style="font-family:宋体"}[rule 2 deny read write oid 1.3.6.1.4.1]{lang="EN-US"}["和"]{style="font-family:宋体"}[rule 3 permit read write oid 1.3.6.1.4.1]{lang="EN-US"}["，其中]{style="font-family:宋体"}[rule 2]{lang="EN-US"}[和]{style="font-family:宋体"}[rule 3]{lang="EN-US"}[与访问的]{style="font-family:宋体"}[OID]{lang="EN-US"}[形成最长匹配，则]{style="font-family:宋体"}[rule 3]{lang="EN-US"}[生效，匹配的结果为用户的访问请求被允许。]{style="font-family:宋体"}
+·对于定义的OID长度相同的规则，规则编号大的生效。例如用户访问的OID为1.3.6.1.4.1.25506.141.3.0.1，角色中存在"rule 1 permit read write oid 1.3.6"，"rule 2 deny read write oid 1.3.6.1.4.1"和"rule 3 permit read write oid 1.3.6.1.4.1"，其中rule 2和rule 3与访问的OID形成最长匹配，则rule 3生效，匹配的结果为用户的访问请求被允许。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1979_37509_317603939}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_139989785}[为用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[创建一条规则，允许用户执行命令]{style="font-family:宋体"}**[display acl]{lang="EN-US"}**[。]{style="font-family:宋体"}
+\# 为用户角色role1创建一条规则，允许用户执行命令**display acl**。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_791333955}
+\<Sysname\> system-view
 
-[\[Sysname\] role name role1]{lang="EN-US"}
+Sysname role name role1
 
-[\[Sysname-role-role1\] rule 1 permit command display acl]{lang="EN-US"}
+Sysname-role-role1 rule 1 permit command display acl
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_x1845355648}[为用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[添加一条权限规则，允许用户执行所有以]{style="font-family:宋体"}**[display]{lang="EN-US"}**[开头的命令。]{style="font-family:宋体"}
+\# 为用户角色role1添加一条权限规则，允许用户执行所有以**display**开头的命令。
 
-[[\[Sysname-role-role1\] rule 2 permit command display \*]{lang="EN-US"}]{#struct_0_x1979_37509_1776758717}
+Sysname-role-role1 rule 2 permit command display \*
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_283874575}[为用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[添加一条权限规则，允许用户执行系统视图下的]{style="font-family:宋体"}**[radius scheme aaa]{lang="EN-US"}**[命令，以及使用该命令进入子视图后的所有命令。]{style="font-family:宋体"}
+\# 为用户角色role1添加一条权限规则，允许用户执行系统视图下的**radius scheme aaa**命令，以及使用该命令进入子视图后的所有命令。
 
-[[\[Sysname-role-role1\] rule 3 permit command system ; radius scheme aaa]{lang="EN-US"}]{#struct_0_x1979_37509_x1495285385}
+Sysname-role-role1 rule 3 permit command system ; radius scheme aaa
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_685577128}[为用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[添加一条权限规则，禁止用户执行所有特性中读类型和写类型的命令。]{style="font-family:宋体"}
+\# 为用户角色role1添加一条权限规则，禁止用户执行所有特性中读类型和写类型的命令。
 
-[[\[Sysname-role-role1\] rule 4 deny read write feature]{lang="EN-US"}]{#struct_0_x1979_37509_x345337374}
+Sysname-role-role1 rule 4 deny read write feature
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_1425132013}[为用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[添加一条权限规则，禁止用户执行特性]{style="font-family:宋体"}[aaa]{lang="EN-US"}[中所有读类型的命令。]{style="font-family:宋体"}
+\# 为用户角色role1添加一条权限规则，禁止用户执行特性aaa中所有读类型的命令。
 
-[[\[Sysname-role-role1\] rule 5 deny read feature aaa]{lang="EN-US"}]{#struct_0_x1979_37509_1362697464}
+Sysname-role-role1 rule 5 deny read feature aaa
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_x341343295}[为用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[添加一条权限规则，允许执行特性组]{style="font-family:宋体"}[security-features]{lang="EN-US"}[中所有特性的读类型、写类型以及执行类型的命令。]{style="font-family:宋体"}
+\# 为用户角色role1添加一条权限规则，允许执行特性组security-features中所有特性的读类型、写类型以及执行类型的命令。
 
-[[\[Sysname-role-role1\] rule 6 permit read write execute feature-group security-features]{lang="EN-US"}]{#struct_0_x1979_37509_1278254171}
+Sysname-role-role1 rule 6 permit read write execute feature-group security-features
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_2005192805}[为用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[添加一条基于]{style="font-family:宋体"}[OID]{lang="EN-US"}[的规则，允许对]{style="font-family:宋体"}[OID]{lang="EN-US"}[为]{style="font-family:宋体"}[1.1.2]{lang="EN-US"}[的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[节点进行读、写操作。]{style="font-family:宋体"}
+\# 为用户角色role1添加一条基于OID的规则，允许对OID为1.1.2的MIB节点进行读、写操作。
 
-[[\[Sysname-role-role1\] rule 7 permit read write oid 1.1.2]{lang="EN-US"}]{#struct_0_x1979_37509_x1937560110}
+Sysname-role-role1 rule 7 permit read write oid 1.1.2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1528891318}
+【相关命令】
 
-[[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}]{.ItemStepChar}[**[display role]{lang="EN-US"}**]{.ItemStepChar}]{#struct_0_x1979_37509_283874574}
+·{.ItemStepChar}**[display role**]{.ItemStepChar}
 
-[[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}]{.ItemStepChar}[**[display role feature]{lang="EN-US"}**]{.ItemStepChar}]{#struct_0_x1979_37509_x1495285384}
+·{.ItemStepChar}**[display role feature**]{.ItemStepChar}
 
-[[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}]{.ItemStepChar}[**[display role feature-group]{lang="EN-US"}**]{.ItemStepChar}]{#struct_0_x1979_37509_x880506813}
+·{.ItemStepChar}**[display role feature-group**]{.ItemStepChar}
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display web menu]{lang="EN-US"}**]{#struct_0_x1979_37509_2137468418}[(]{lang="EN-US"}[基础配置命令参考]{style="font-family:宋体"}[/]{lang="EN-US"}[登录设备]{style="font-family:宋体"}[)]{lang="EN-US"}
+·**display web menu**(基础配置命令参考/登录设备)
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[role]{lang="EN-US"}**]{#struct_0_x1979_37509_1440460279}
-:::
-
-::: {#2074012427 .myid}
-[]{#_Toc285213509}[]{#_Toc404782256}[]{#struct_0_x1979_37509_x1774173361}[]{#_Toc320537173}[]{#_Toc320518508}[]{#_Toc300678539}
+·**role**
 
 **RBAC \-- RBAC配置命令 \-- super**
 
 ------------------------------------------------------------------------
 
-[**[super]{lang="EN-US"}**]{#struct_0_x1979_37509_640186318}[命令用来]{style="font-family:宋体"}[使用户从当前角色切换到指定的用户角色]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[super**]命令用来使用户从当前角色切换到指定的用户角色。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x818310454}
+【命令】
 
-[**[super ]{lang="EN-US"}**[\[ *rolename* \]]{lang="EN-US"}]{#struct_0_x1979_37509_283874573}
+**[super ** *rolename* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1495285387}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x1979_37509_1848376542}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1132296109}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x1437537355}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1979_37509_2115969521}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x2082592874}
+【参数】
 
-[*[rolename]{lang="EN-US"}*]{#struct_0_x1979_37509_x1801111024}[：待切换的用户角色名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写，可以是系统中已存在的任意用户角色。若不指定本参数，则表示要从当前用户角色切换到用户角色]{style="font-family:宋体"}[network-admin]{lang="EN-US"}[。（不支持]{style="font-family:宋体"}[MDC]{lang="EN-US"}[、]{style="font-family:宋体"}[Context]{lang="EN-US"}[的设备）。若不指定本参数，则切换到当前缺省的目的用户角色。缺省的目的用户角色由]{style="font-family:宋体"}**[super default role]{lang="EN-US"}**[命令指定。]{style="font-family:宋体"}
+*[rolename*]：待切换的用户角色名称，为1～63个字符的字符串，区分大小写，可以是系统中已存在的任意用户角色。若不指定本参数，则表示要从当前用户角色切换到用户角色network-admin。（不支持MDC、Context的设备）。若不指定本参数，则切换到当前缺省的目的用户角色。缺省的目的用户角色由**super default role**命令指定。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1979_37509_283874572}
+【使用指导】
 
-[[为了保证操作的安全性，通常用户进行用户角色切换时，均需要输入用户角色切换密码。切换到不同的用户角色时，需要输入相应切换密码。如果服务器没有响应或者没有配置用户角色切换密码，则切换操作失败，若还有备份认证方案，则转而进行备份认证。因此，在进行切换操作前，请先保证配置了正确的用户角色切换密码。]{style="font-family:宋体"}]{#struct_0_x1979_37509_x1495285386}
+为了保证操作的安全性，通常用户进行用户角色切换时，均需要输入用户角色切换密码。切换到不同的用户角色时，需要输入相应切换密码。如果服务器没有响应或者没有配置用户角色切换密码，则切换操作失败，若还有备份认证方案，则转而进行备份认证。因此，在进行切换操作前，请先保证配置了正确的用户角色切换密码。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x1979_37509_x2061971987}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若级别切换认证方式为]{style="font-family:宋体"}]{#struct_0_x1979_37509_1893570652}**[local]{lang="EN-US"}**[，在设备上未配置切换密码的情况下，对于]{style="font-family:宋体"}[Console/AUX]{lang="EN-US"}[用户，设备不关心用户是否输入切换密码以及输入切换密码的内容，可允许用户成功切换用户角色。]{style="font-family:宋体"}
+·若级别切换认证方式为**local**，在设备上未配置切换密码的情况下，对于Console/AUX用户，设备不关心用户是否输入切换密码以及输入切换密码的内容，可允许用户成功切换用户角色。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[若级别切换认证方式为]{style="font-family:宋体"}]{#struct_0_x1979_37509_942692359}**[local scheme]{lang="EN-US"}**[，在设备上未配置切换密码的情况下，对于]{style="font-family:宋体"}[Console]{lang="EN-US"}[、]{style="font-family:宋体"}[TTY]{lang="EN-US"}[或]{style="font-family:宋体"}[VTY]{lang="EN-US"}[用户，则转为远程]{style="font-family:宋体"}[AAA]{lang="EN-US"}[认证；对于]{style="font-family:宋体"}[AUX]{lang="EN-US"}[用户，设备不关心用户是否输入切换密码以及输入切换密码的内容，可允许用户成功切换用户角色。]{style="font-family:宋体"}
+·若级别切换认证方式为**local scheme**，在设备上未配置切换密码的情况下，对于Console、TTY或VTY用户，则转为远程AAA认证；对于AUX用户，设备不关心用户是否输入切换密码以及输入切换密码的内容，可允许用户成功切换用户角色。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1979_37509_282292601}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_x1228522273}[将用户角色切换到]{style="font-family:宋体"}[network-operator]{lang="EN-US"}[。（假设用户当前的角色为]{style="font-family:宋体"}[network-admin]{lang="EN-US"}[，切换认证方式为]{style="font-family:宋体"}[local]{lang="EN-US"}[，切换密码已经设置）]{style="font-family:宋体"}
+\# 将用户角色切换到network-operator。（假设用户当前的角色为network-admin，切换认证方式为local，切换密码已经设置）
 
-[[\<Sysname\> super network-operator]{lang="EN-US"}]{#struct_0_x1979_37509_1302606432}
+\<Sysname\> super network-operator
 
-[Password:]{lang="EN-US"}
+Password:
 
-[User privilege role is network-operator, and only those commands can be used that authorized to the role.]{lang="EN-US"}
+User privilege role is network-operator, and only those commands can be used that authorized to the role.
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x231928613}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[authentication super]{lang="EN-US"}**]{#struct_0_x1979_37509_1095469009}[（安全命令参考]{lang="EN-US" style="font-family:宋体"}[/AAA]{lang="EN-US"}[）]{lang="EN-US" style="font-family:宋体"}
+·**authentication super**（安全命令参考/AAA）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[super authentication-mode]{lang="EN-US"}**]{#struct_0_x1979_37509_x1672440555}
+·**super authentication-mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[super password]{lang="EN-US"}**]{#struct_0_x1979_37509_1176199100}
-:::
-
-::: {#-1307615536 .myid}
-[]{#_Toc404782257}[]{#struct_0_x1979_37509_x265020555}[]{#_Toc320537174}[]{#_Toc320518509}[]{#_Toc300678540}
+·**super password**
 
 **RBAC \-- RBAC配置命令 \-- super authentication-mode**
 
 ------------------------------------------------------------------------
 
-[**[super authentication-mode]{lang="EN-US"}**]{#struct_0_x1979_37509_x1785061285}[命令用来设置切换用户角色时使用的认证方式]{style="font-family:
-宋体"}[。]{style="font-family:宋体"}
+**[super authentication-mode**]命令用来设置切换用户角色时使用的认证方式。
 
-[**[undo super authentication-mode]{lang="EN-US"}**]{#struct_0_x1979_37509_574882872}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo super authentication-mode**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1193727555}
+【命令】
 
-[**[super authentication-mode ]{lang="EN-US"}**[{ **local** \| **scheme** } \*]{lang="EN-US"}]{#struct_0_x1979_37509_1018809580}
+**[super authentication-mode **[{ **local** \| **scheme** } \*]]
 
-[**[undo super authentication-mode]{lang="EN-US"}**]{#struct_0_x1979_37509_1361261666}
+**[undo super authentication-mode**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1390069931}
+【缺省情况】
 
-[[采用]{style="font-family:宋体"}**[local]{lang="EN-US"}**]{#struct_0_x1979_37509_x1672440556}[认证方式]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+采用**local**认证方式。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x389884841}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1979_37509_x910551082}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1689100821}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x1999219065}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1979_37509_1363259513}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1979_37509_107619280}
+【参数】
 
-[**[local]{lang="EN-US"}**]{#struct_0_x1979_37509_330047006}[：使用本地配置的用户角色切换密码进行认证。]{style="font-family:宋体"}
+**[local**]：使用本地配置的用户角色切换密码进行认证。
 
-[**[scheme]{lang="EN-US"}**]{#struct_0_x1979_37509_x898950162}[：使用]{style="font-family:宋体"}[AAA]{lang="EN-US"}[配置进行认证。该方式下，]{style="font-family:宋体"}[设备将用户角色切换时使用的用户名和密码发送给]{style="font-family:宋体"}[HWTACACS/RADIUS]{lang="EN-US"}[服务器进行远程验证。]{style="font-family:宋体"}
+**[scheme**]：使用AAA配置进行认证。该方式下，设备将用户角色切换时使用的用户名和密码发送给HWTACACS/RADIUS服务器进行远程验证。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1672440557}
+【使用指导】
 
-[[用户可以选择使用]{style="font-family:宋体"}**[local]{lang="EN-US"}**]{#struct_0_x1979_37509_x1955968782}[或者]{style="font-family:宋体"}**[scheme]{lang="EN-US"}**[方式认证，也可以同时选择]{style="font-family:宋体"}**[local]{lang="EN-US"}**[和]{style="font-family:宋体"}**[scheme]{lang="EN-US"}**[方式，多选时根据配置顺序依次认证，例如]{style="font-family:宋体"}**[scheme local]{lang="EN-US"}**[方式，会先进行]{style="font-family:宋体"}**[scheme]{lang="EN-US"}**[方式认证，如果认证服务器没有响应，则转为采用]{style="font-family:宋体"}**[local]{lang="EN-US"}**[方式认证。]{style="font-family:宋体"}**[scheme]{lang="EN-US"}**[认证方式需要与]{style="font-family:宋体"}[AAA ]{lang="EN-US"}[的认证方案相配合，具体请参考"安全配置指导"中的"]{style="font-family:宋体"}[AAA]{lang="EN-US"}["。]{style="font-family:宋体"}
+用户可以选择使用**local**或者**scheme**方式认证，也可以同时选择**local**和**scheme**方式，多选时根据配置顺序依次认证，例如**scheme local**方式，会先进行**scheme**方式认证，如果认证服务器没有响应，则转为采用**local**方式认证。**scheme**认证方式需要与AAA 的认证方案相配合，具体请参考"安全配置指导"中的"AAA"。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1898315809}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_2047653537}[配置切换用户角色时采用]{style="font-family:宋体"}**[local]{lang="EN-US"}**[认证方式。]{style="font-family:宋体"}
+\# 配置切换用户角色时采用**local**认证方式。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_x1070218501}
+\<Sysname\> system-view
 
-[\[Sysname\] super authentication-mode local]{lang="EN-US"}
+Sysname super authentication-mode local
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_2103757925}[配置切换用户角色时采用先]{style="font-family:宋体"}**[scheme]{lang="EN-US"}**[后]{style="font-family:宋体"}**[local]{lang="EN-US"}**[的]{style="font-family:宋体"}[认证方式。]{style="font-family:宋体"}
+\# 配置切换用户角色时采用先**scheme**后**local**的认证方式。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_304903453}
+\<Sysname\> system-view
 
-[\[Sysname\] super authentication-mode scheme local]{lang="EN-US"}
+Sysname super authentication-mode scheme local
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x63936283}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[authentication super]{lang="EN-US"}**]{#struct_0_x1979_37509_640404356}[（安全命令参考]{lang="EN-US" style="font-family:宋体"}[/AAA]{lang="EN-US"}[）]{lang="EN-US" style="font-family:宋体"}
+·**authentication super**（安全命令参考/AAA）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[super password]{lang="EN-US"}**]{#struct_0_x1979_37509_x1672440558}
-:::
-
-::: {#-941848615 .myid}
-[]{#_Toc404782258}[]{#struct_0_x1979_37509_x452037423}[]{#_Toc375921060}[]{#_Toc373390834}
+·**super password**
 
 **RBAC \-- RBAC配置命令 \-- super default role**
 
 ------------------------------------------------------------------------
 
-[**[super default role]{lang="EN-US"}**]{#struct_0_x1979_37509_1777713514}[命令用来配置用户角色切换的缺省目的角色。]{style="font-family:宋体"}
+**[super default role**]命令用来配置用户角色切换的缺省目的角色。
 
-[**[undo super default role]{lang="EN-US"}**]{#struct_0_x1979_37509_x451971887}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo super default role**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_731610715}
+【命令】
 
-[**[super default role ]{lang="EN-US"}***[rolename]{lang="EN-US"}*]{#struct_0_x1979_37509_1978753048}
+**[super default role ***rolename*]
 
-[**[undo super default role]{lang="EN-US"}**]{#struct_0_x1979_37509_27502917}
+**[undo super default role**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1764712362}
+【缺省情况】
 
-[[用户角色切换的缺省目的角色为]{style="font-family:宋体"}[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_569004007}[。（不支持]{style="font-family:宋体"}[MDC]{lang="EN-US"}[、]{style="font-family:宋体"}[Context]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+用户角色切换的缺省目的角色为network-admin。（不支持MDC、Context的设备）
 
-[[对于登录缺省]{style="font-family:宋体"}[MDC]{lang="EN-US"}]{#struct_0_x1979_37509_x451119919}[的用户，用户角色切换的缺省目的角色为]{style="font-family:宋体"}[network-admin]{lang="EN-US"}[；对于登录非缺省]{style="font-family:宋体"}[MDC]{lang="EN-US"}[的用户，用户角色切换的缺省目的角色为]{style="font-family:宋体"}[mdc-admin]{lang="EN-US"}[。（支持]{style="font-family:宋体"}[MDC]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+对于登录缺省MDC的用户，用户角色切换的缺省目的角色为network-admin；对于登录非缺省MDC的用户，用户角色切换的缺省目的角色为mdc-admin。（支持MDC的设备）
 
-[[对于登录缺省]{style="font-family:宋体"}[Context]{lang="EN-US"}]{#struct_0_x1979_37509_x1255792060}[的用户，用户角色切换的缺省目的角色为]{style="font-family:宋体"}[network-admin]{lang="EN-US"}[；对于登录非缺省]{style="font-family:宋体"}[Context]{lang="EN-US"}[的用户，用户角色切换的缺省目的角色为]{style="font-family:宋体"}[context-admin.]{lang="EN-US"}[（支持]{style="font-family:宋体"}[Context]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+对于登录缺省Context的用户，用户角色切换的缺省目的角色为network-admin；对于登录非缺省Context的用户，用户角色切换的缺省目的角色为context-admin.（支持Context的设备）
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1979_37509_2092760312}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1979_37509_1993690124}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1963829143}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_1175584438}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x451054383}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1979_37509_712253233}
+【参数】
 
-[*[rolename]{lang="EN-US" style="color:black"}*]{#struct_0_x1979_37509_x1181941008}[：]{style="font-family:
-宋体;color:black"}[待切换的用户角色名称]{style="font-family:宋体"}[，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写，可以是系统中已存在的任意用户角色。]{style="font-family:宋体"}
+*[rolename*]：待切换的用户角色名称，为1～63个字符的字符串，区分大小写，可以是系统中已存在的任意用户角色。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1918902719}
+【使用指导】
 
-[[当执行]{style="font-family:宋体"}**[super]{lang="EN-US"}**]{#struct_0_x1979_37509_x1819927863}[命令切换用户角色时，或配置用户角色切换的密码时，如不指定目的切换的角色名称，则表示使用]{style="font-family:宋体"}**[super default role]{lang="EN-US"}**[命令配置的缺省用户角色。]{style="font-family:宋体"}
+当执行**super**命令切换用户角色时，或配置用户角色切换的密码时，如不指定目的切换的角色名称，则表示使用**super default role**命令配置的缺省用户角色。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x451644208}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_x1242750881}[配置用户切换角色的缺省目的角色为]{style="font-family:宋体"}[network-operator]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置用户切换角色的缺省目的角色为network-operator。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_1082929161}
+\<Sysname\> system-view
 
-[\[Sysname\] super default role network-operator]{lang="EN-US"}
+Sysname super default role network-operator
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1606466032}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[super]{lang="EN-US"}**]{#struct_0_x1979_37509_x1471111633}
+·**super**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[super password]{lang="EN-US"}**]{#struct_0_x1979_37509_681771259}
-:::
-
-::: {#912350306 .myid}
-[]{#_Toc404782259}[]{#struct_0_x1979_37509_772914573}[]{#_Toc320537175}[]{#_Toc320518510}[]{#_Toc300678541}
+·**super password**
 
 **RBAC \-- RBAC配置命令 \-- super password**
 
 ------------------------------------------------------------------------
 
-[**[super password]{lang="EN-US"}**]{#struct_0_x1979_37509_x1609843610}[命令用来设置用户角色切换的密码]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[super password**]命令用来设置用户角色切换的密码。
 
-[**[undo super password]{lang="EN-US"}**]{#struct_0_x1979_37509_1285614336}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo super password**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x741979751}
+【命令】
 
-[[非]{style="font-family:宋体"}[FIPS]{lang="EN-US"}]{#struct_0_x1979_37509_x617272544}[模式下：]{style="font-family:宋体"}
+非FIPS模式下：
 
-[**[super password ]{lang="EN-US"}**[\[ **role** *rolename* \] \[ { **hash** \| **simple** } *password* \]]{lang="EN-US"}]{#struct_0_x1979_37509_1957161152}
+**[super password **[ **role** *rolename*  [ { **hash** \| **simple** } *password* ]]]
 
-[**[undo super password]{lang="EN-US"}**[ \[ **role** *rolename* \]]{lang="EN-US"}]{#struct_0_x1979_37509_1290121308}
+**[undo super password** [ **role** *rolename* ]]
 
-[[FIPS]{lang="EN-US"}]{#struct_0_x1979_37509_x1672440559}[模式下：]{style="font-family:宋体"}
+FIPS模式下：
 
-[**[super password ]{lang="EN-US"}**[\[ **role** *rolename* \]]{lang="EN-US"}]{#struct_0_x1979_37509_x793169368}
+**[super password ** **role** *rolename* ]
 
-[**[undo super password]{lang="EN-US"}**[ \[ **role** *rolename* \]]{lang="EN-US"}]{#struct_0_x1979_37509_x2099377108}
+**[undo super password** [ **role** *rolename* ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1264859346}
+【缺省情况】
 
-[[未设置用户角色切换密码。]{style="font-family:宋体"}]{#struct_0_x1979_37509_x976674165}
+未设置用户角色切换密码。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1369298223}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1979_37509_444837684}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1949863154}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x701270722}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x1672440560}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1979_37509_416487605}
+【参数】
 
-[**[role]{lang="EN-US"}***[ rolename]{lang="EN-US"}*]{#struct_0_x1979_37509_x1882851072}[：待切换的用户角色的名称，]{style="font-family:宋体"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写，可以为系统预定义或用户自定义的用户角色。如果不指定角色名称，则表示设置的是切换到用户角色]{style="font-family:宋体"}[network-admin]{lang="EN-US"}[的密码。（不支持]{style="font-family:宋体"}[MDC]{lang="EN-US"}[、]{style="font-family:宋体"}[Context]{lang="EN-US"}[的设备）。如果不指定角色名称，则表示设置的是切换到当前缺省目的用户角色的密码。缺省的目的用户角色由]{style="font-family:宋体"}**[super default role]{lang="EN-US"}**[命令指定。]{style="font-family:宋体"}
+**[role*** rolename*]：待切换的用户角色的名称，为1～63个字符的字符串，区分大小写，可以为系统预定义或用户自定义的用户角色。如果不指定角色名称，则表示设置的是切换到用户角色network-admin的密码。（不支持MDC、Context的设备）。如果不指定角色名称，则表示设置的是切换到当前缺省目的用户角色的密码。缺省的目的用户角色由**super default role**命令指定。
 
-[**[hash]{lang="EN-US"}**]{#struct_0_x1979_37509_x713383638}[：表示以哈希方式设置用户密码。]{style="font-family:宋体"}
+**[hash**]：表示以哈希方式设置用户密码。
 
-[**[simple]{lang="EN-US"}**]{#struct_0_x1979_37509_1974695047}[：表示以明文方式设置用户密码。]{style="font-family:宋体"}
+**[simple**]：表示以明文方式设置用户密码。
 
-[*[password]{lang="EN-US"}*]{#struct_0_x1979_37509_349147794}[：设置的明文密码或哈希密码，区分大小写。]{style="font-family:宋体"}[非]{style="font-family:宋体"}[FIPS]{lang="EN-US"}[模式下，]{style="font-family:宋体"}[明文密码为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串；哈希密码为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[110]{lang="EN-US"}[个字符的字符串]{style="font-family:宋体"}[；]{style="font-family:宋体"}[FIPS]{lang="EN-US"}[模式下，密码为]{style="font-family:宋体"}[15]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，]{style="font-family:宋体"}[密码元素的最少组合类型为]{style="font-family:宋体"}[4]{lang="EN-US"}[（必须包括数字、大写字母、小写字母以及特殊字符）]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+*[password*]：设置的明文密码或哈希密码，区分大小写。非FIPS模式下，明文密码为1～63个字符的字符串；哈希密码为1～110个字符的字符串；FIPS模式下，密码为15～63个字符的字符串，密码元素的最少组合类型为4（必须包括数字、大写字母、小写字母以及特殊字符）。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1619475122}
+【使用指导】
 
-[[如果不指定任何参数，则表示以交互式方式设置本地用户密码，涵义与指定]{style="font-family:宋体"}**[simple]{lang="EN-US"}**]{#struct_0_x1979_37509_1770695970}[关键字相同。]{style="font-family:宋体"}[FIPS]{lang="EN-US"}[模式下，只支持交互式方式设置]{style="font-family:宋体"}[用户角色切换]{style="font-family:宋体"}[密码。]{style="font-family:宋体"}
+如果不指定任何参数，则表示以交互式方式设置本地用户密码，涵义与指定**simple**关键字相同。FIPS模式下，只支持交互式方式设置用户角色切换密码。
 
-[[以明文方式设置的密码，以哈希计算后的密文形式保存在配置文件中，以哈希方式设置的密码将以设置的原始形式保存在配置文件中。]{style="font-family:宋体"}]{#struct_0_x1979_37509_x309489008}
+以明文方式设置的密码，以哈希计算后的密文形式保存在配置文件中，以哈希方式设置的密码将以设置的原始形式保存在配置文件中。
 
-[[当用户切换认证方式为]{style="font-family:宋体"}**[local]{lang="EN-US"}**]{#struct_0_x1979_37509_x1672440561}[或包含]{style="font-family:宋体"}**[local]{lang="EN-US"}**[（]{style="font-family:宋体"}**[local scheme]{lang="EN-US"}**[、]{style="font-family:宋体"}**[scheme local]{lang="EN-US"}**[）时，才需要本命令指定的]{style="font-family:宋体"}[用户角色切换]{style="font-family:宋体"}[密码。]{style="font-family:宋体"}
+当用户切换认证方式为**local**或包含**local**（**local scheme**、**scheme local**）时，才需要本命令指定的用户角色切换密码。
 
-[[为保证权限控制更加安全，推荐给不同的用户角色指定不同的切换密码。]{style="font-family:宋体"}]{#struct_0_x1979_37509_x1149596336}
+为保证权限控制更加安全，推荐给不同的用户角色指定不同的切换密码。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1979_37509_609885433}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_396496543}[配置将用户角色切换到]{style="font-family:宋体"}[network-operator]{lang="EN-US"}[时使用的密码为明文密码]{style="font-family:宋体"}[123456TESTplat&!]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置将用户角色切换到network-operator时使用的密码为明文密码123456TESTplat&!。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_951816493}
+\<Sysname\> system-view
 
-[\[Sysname\] super password role network-operator simple 123456TESTplat&!]{lang="EN-US"}
+Sysname super password role network-operator simple 123456TESTplat&!
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_x721816198}[以交互式方式设置将用户角色切换到]{style="font-family:宋体"}[network-operator]{lang="EN-US"}[时使用的密码为明文密码]{style="font-family:宋体"}[123456TESTplat&!]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 以交互式方式设置将用户角色切换到network-operator时使用的密码为明文密码123456TESTplat&!。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_x1672440563}
+\<Sysname\> system-view
 
-[\[Sysname\] super password role network-operator]{lang="EN-US"}
+Sysname super password role network-operator
 
-[Password:]{lang="EN-US"}
+Password:
 
-[Confirm :]{lang="EN-US"}
+Confirm :
 
-[Updating user information. Please wait\... \...]{lang="EN-US"}
+Updating user information. Please wait\... \...
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_13203078}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[super authentication-mode]{lang="EN-US"}**]{#struct_0_x1979_37509_x1672440564}
+·**super authentication-mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[super default role]{lang="EN-US"}**]{#struct_0_x1979_37509_x452037424}
-:::
-
-::::: {#1502976409 .myid}
-[]{#_Toc404782260}[]{#struct_0_x1979_37509_x911686396}
+·**super default role**
 
 **RBAC \-- RBAC配置命令 \-- security-zone policy deny**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](RBAC命令.files/image002.png){#图片 1 border="0" width="62" height="26"}]{lang="EN-US"}]{#struct_0_x1979_37509_x911751932}
-:::
+![说明](RBAC命令.files/image002.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1979_37509_x478126552}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[security-zone policy deny**]命令用来进入安全域策略视图。
 
-[**[security-zone policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_x911555324}[命令用来进入安全域策略视图。]{style="font-family:
-宋体"}
+**[undo security-zone policy deny**]命令用来恢复缺省情况。
 
-[**[undo security-zone policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_x536203187}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x911620860}
+**[security-zone policy deny**]
 
-[**[security-zone policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_303157985}
+**[undo security-zone policy deny**]
 
-[**[undo security-zone policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_1639202104}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x911424252}
+用户具有操作任何安全域的权限。
 
-[[用户具有操作任何安全域的权限。]{style="font-family:宋体"}]{#struct_0_x1979_37509_245605644}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x911489788}
+用户角色视图
 
-[[用户角色视图]{style="font-family:宋体"}]{#struct_0_x1979_37509_1046282978}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x677029149}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x911293180}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x87854046}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1038221922}
+进入安全域策略视图后，如果不配置允许操作的安全域列表，则用户将没有操作任何安全域的权限；如果需要限制或区分用户对安全域资源的使用权限，则还应该通过**permit security-zone**命令配置允许用户操作的安全域列表。若安全域策略视图中未配置允许操作的安全域列表，则表示不允许用户操作所有的安全域。对安全域的"操作"指的是创建并进入安全域视图、删除和应用安全域。
 
-[[进入安全域策略视图后，如果不配置允许操作的安全域列表，则用户将没有操作任何安全域的权限；如果需要限制或区分用户对安全域资源的使用权限，则还应该通过]{style="font-family:宋体"}**[permit security-zone]{lang="EN-US"}**]{#struct_0_x1979_37509_x911358716}[命令配置允许用户操作的安全域列表。若安全域策略视图中未配置允许操作的安全域列表，则表示不允许用户操作所有的安全域。对安全域的"操作"指的是创建并进入安全域视图、删除和应用安全域。]{style="font-family:宋体"}
+允许修改用户角色的安全域策略，但修改后的策略只对被授权该角色的用户重新登录时才会生效。
 
-[[允许修改用户角色的安全域策略，但修改后的策略只对被授权该角色的用户重新登录时才会生效。]{style="font-family:宋体"}]{#struct_0_x1979_37509_x541231339}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1979_37509_654266478}
+\# 在用户角色role1中，进入安全域策略视图，禁止角色为role1的用户操作任意安全域。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_x1697033546}[在用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[中，进入安全域策略视图，禁止角色为]{style="font-family:宋体"}[role1]{lang="EN-US"}[的用户操作任意安全域。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_654200942}
+Sysname role name role1
 
-[\[Sysname\] role name role1]{lang="EN-US"}
+Sysname-role-role1 security-zone policy deny
 
-[\[Sysname-role-role1\] security-zone policy deny]{lang="EN-US"}
+Sysname-role-role1-zonepolicy quit
 
-[\[Sysname-role-role1-zonepolicy\] quit]{lang="EN-US"}
+\# 在用户角色role1中，进入安全域策略视图，允许角色为role1的用户操作安全域trust和abc。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_979713985}[在用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[中，进入安全域策略视图，允许角色为]{style="font-family:宋体"}[role1]{lang="EN-US"}[的用户操作安全域]{style="font-family:宋体"}[trust]{lang="EN-US"}[和]{style="font-family:宋体"}[abc]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_654397550}
+Sysname role name role1
 
-[\[Sysname\] role name role1]{lang="EN-US"}
+Sysname-role-role1 security-zone policy deny
 
-[\[Sysname-role-role1\] security-zone policy deny]{lang="EN-US"}
+Sysname-role-role1-zonepolicy permit security-zone trust abc
 
-[\[Sysname-role-role1-zonepolicy\] permit security-zone trust abc]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1716598490}
+·{.ItemStepChar}**[display role**]{.ItemStepChar}
 
-[[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}]{.ItemStepChar}[**[display role]{lang="EN-US"}**]{.ItemStepChar}]{#struct_0_x1979_37509_x1495944573}
+·**permit security-zone**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[permit security-zone]{lang="EN-US"}**]{#struct_0_x1979_37509_654332014}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[role]{lang="EN-US"}**]{#struct_0_x1979_37509_1403921841}
-:::::
-
-::: {#125460501 .myid}
-[]{#_Toc404782261}[]{#struct_0_x1979_37509_x1552880863}
+·**role**
 
 **RBAC \-- RBAC配置命令 \-- vlan policy deny**
 
 ------------------------------------------------------------------------
 
-[**[vlan policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_808047794}[命令用来进入]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[策略视图。]{style="font-family:宋体"}
+**[vlan policy deny**]命令用来进入VLAN策略视图。
 
-[**[undo vlan policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_x1894125980}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo vlan policy deny**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1961620148}
+【命令】
 
-[**[vlan policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_1461183777}
+**[vlan policy deny**]
 
-[**[undo vlan policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_x863136491}
+**[undo vlan policy deny**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1979_37509_115006556}
+【缺省情况】
 
-[[用户具有操作任何]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1979_37509_791076368}[的权限。]{style="font-family:宋体"}
+用户具有操作任何VLAN的权限。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1979_37509_299273473}
+【视图】
 
-[[用户角色视图]{style="font-family:宋体"}]{#struct_0_x1979_37509_x436527494}
+用户角色视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x2137553748}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x1717747415}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x863136492}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1979_37509_114809948}
+【使用指导】
 
-[[进入]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1979_37509_x1915593407}[策略视图后，如果不配置允许操作的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，则用户将没有操作任何]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的权限；如果需要限制或区分用户对]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[资源的使用权限，则还应该通过]{style="font-family:宋体"}**[permit vlan]{lang="EN-US"}**[命令配置允许用户操作的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表。若]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[策略视图中未配置允许操作的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，则表示不允许用户操作所有的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。对]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的"操作"指的是创建并进入]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[视图、删除和应用]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+进入VLAN策略视图后，如果不配置允许操作的VLAN列表，则用户将没有操作任何VLAN的权限；如果需要限制或区分用户对VLAN资源的使用权限，则还应该通过**permit vlan**命令配置允许用户操作的VLAN列表。若VLAN策略视图中未配置允许操作的VLAN列表，则表示不允许用户操作所有的VLAN。对VLAN的"操作"指的是创建并进入VLAN视图、删除和应用VLAN。
 
-[[允许修改用户角色的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1979_37509_1142249815}[策略，但修改后的策略只对被授权该角色的用户重新登录时才会生效。]{style="font-family:宋体"}
+允许修改用户角色的VLAN策略，但修改后的策略只对被授权该角色的用户重新登录时才会生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1979_37509_494820746}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_x944052204}[在用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[中，进入]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[策略视图，禁止角色为]{style="font-family:宋体"}[role1]{lang="EN-US"}[的用户操作任意]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在用户角色role1中，进入VLAN策略视图，禁止角色为role1的用户操作任意VLAN。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_x1838799052}
+\<Sysname\> system-view
 
-[\[Sysname\] role name role1]{lang="EN-US"}
+Sysname role name role1
 
-[\[Sysname-role-role1\] vlan policy deny]{lang="EN-US"}
+Sysname-role-role1 vlan policy deny
 
-[\[Sysname-role-role1-vlanpolicy\] quit]{lang="EN-US"}
+Sysname-role-role1-vlanpolicy quit
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_x863136493}[在用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[中，进入]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[策略视图，允许角色为]{style="font-family:宋体"}[role1]{lang="EN-US"}[的用户操作]{style="font-family:宋体"}[VLAN 50]{lang="EN-US"}[～]{style="font-family:宋体"}[VLAN 100]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在用户角色role1中，进入VLAN策略视图，允许角色为role1的用户操作VLAN 50～VLAN 100。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_114875484}
+\<Sysname\> system-view
 
-[\[Sysname\] role name role1]{lang="EN-US"}
+Sysname role name role1
 
-[\[Sysname-role-role1\] vlan policy deny]{lang="EN-US"}
+Sysname-role-role1 vlan policy deny
 
-[\[Sysname-role-role1-vlanpolicy\] permit vlan 50 to 100]{lang="EN-US"}
+Sysname-role-role1-vlanpolicy permit vlan 50 to 100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x728665843}
+【相关命令】
 
-[[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}]{.ItemStepChar}[**[display role]{lang="EN-US"}**]{.ItemStepChar}]{#struct_0_x1979_37509_1848943564}
+·{.ItemStepChar}**[display role**]{.ItemStepChar}
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[permit vlan]{lang="EN-US"}**]{#struct_0_x1979_37509_x374944234}
+·**permit vlan**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[role]{lang="EN-US"}**]{#struct_0_x1979_37509_2046219599}
-:::
-
-::: {#-119084857 .myid}
-[]{#_Toc404782262}[]{#struct_0_x1979_37509_1584222351}[]{#_Toc285213510}
+·**role**
 
 **RBAC \-- RBAC配置命令 \-- vpn-instance policy deny**
 
 ------------------------------------------------------------------------
 
-[**[vpn-instance policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_x1447981438}[命令用来进入]{style="font-family:
-宋体"}[VPN]{lang="EN-US"}[策略视图。]{style="font-family:宋体"}
+**[vpn-instance policy deny**]命令用来进入VPN策略视图。
 
-[**[undo vpn-instance policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_x863136494}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+**[undo vpn-instance policy deny**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_115203164}
+【命令】
 
-[**[vpn-instance policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_1434628218}
+**[vpn-instance policy deny**]
 
-[**[undo vpn-instance policy deny]{lang="EN-US"}**]{#struct_0_x1979_37509_696367536}
+**[undo vpn-instance policy deny**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x2019787742}
+【缺省情况】
 
-[[用户具有操作任何]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_x1979_37509_217565185}[实例的权限。]{style="font-family:宋体"}
+用户具有操作任何VPN实例的权限。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1044100146}
+【视图】
 
-[[用户角色视图]{style="font-family:宋体"}]{#struct_0_x1979_37509_1764246459}
+用户角色视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x863136495}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1979_37509_115268700}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1979_37509_x1690897262}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1979_37509_1928634860}
+【使用指导】
 
-[[进入]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_x1979_37509_69427500}[策略视图后，如果不配置允许操作的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[列表，则用户将没有操作任何]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例的权限；如果需要限制或区分用户对]{style="font-family:宋体"}[VPN]{lang="EN-US"}[资源的使用权限，则还应该通过]{style="font-family:宋体"}**[permit vpn-instance]{lang="EN-US"}**[命令配置允许用户操作的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[列表。若]{style="font-family:宋体"}[VPN]{lang="EN-US"}[策略视图中未配置允许操作的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[列表，则表示不允许用户操作所有的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例。对]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例的"操作"指的是创建并进入]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[视图、删除和应用]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例。]{style="font-family:宋体"}
+进入VPN策略视图后，如果不配置允许操作的VPN列表，则用户将没有操作任何VPN实例的权限；如果需要限制或区分用户对VPN资源的使用权限，则还应该通过**permit vpn-instance**命令配置允许用户操作的VPN列表。若VPN策略视图中未配置允许操作的VPN列表，则表示不允许用户操作所有的VPN实例。对VPN实例的"操作"指的是创建并进入MPLS L3VPN视图、删除和应用VPN实例。
 
-[[允许修改用户角色的]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_x1979_37509_x1236258003}[策略，但修改后的策略只对被授权该角色的用户重新登录时才会生效。]{style="font-family:宋体"}
+允许修改用户角色的VPN策略，但修改后的策略只对被授权该角色的用户重新登录时才会生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x1108010453}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_1125333774}[在用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[中，创建并进入一个]{style="font-family:宋体"}[VPN]{lang="EN-US"}[策略视图，并禁止角色为]{style="font-family:宋体"}[role1]{lang="EN-US"}[的用户操作任意]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例。]{style="font-family:宋体"}
+\# 在用户角色role1中，创建并进入一个VPN策略视图，并禁止角色为role1的用户操作任意VPN实例。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_x863136496}
+\<Sysname\> system-view
 
-[\[Sysname\] role name role1]{lang="EN-US"}
+Sysname role name role1
 
-[\[Sysname-role-role1\] vpn-instance policy deny]{lang="EN-US"}
+Sysname-role-role1 vpn-instance policy deny
 
-[\[Sysname-role-role1-vpnpolicy\] quit]{lang="EN-US"}
+Sysname-role-role1-vpnpolicy quit
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1979_37509_115072092}[在用户角色]{style="font-family:宋体"}[role1]{lang="EN-US"}[中，创建并进入一个]{style="font-family:宋体"}[VPN]{lang="EN-US"}[策略视图，允许角色为]{style="font-family:宋体"}[role1]{lang="EN-US"}[的用户操作]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例]{style="font-family:宋体"}[vpn2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在用户角色role1中，创建并进入一个VPN策略视图，允许角色为role1的用户操作VPN实例vpn2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1979_37509_794567858}
+\<Sysname\> system-view
 
-[\[Sysname\] role name role1]{lang="EN-US"}
+Sysname role name role1
 
-[\[Sysname-role-role1\] vpn-instance policy deny]{lang="EN-US"}
+Sysname-role-role1 vpn-instance policy deny
 
-[\[Sysname-role-role1-vpnpolicy\] permit vpn-instance vpn2]{lang="EN-US"}
+Sysname-role-role1-vpnpolicy permit vpn-instance vpn2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1979_37509_x725955078}
+【相关命令】
 
-[[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}]{.ItemStepChar}[**[display role]{lang="EN-US"}**]{.ItemStepChar}]{#struct_0_x1979_37509_243639272}
+·{.ItemStepChar}**[display role**]{.ItemStepChar}
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[permit vpn-instance]{lang="EN-US"}**]{#struct_0_x1979_37509_1329262895}
+·**permit vpn-instance**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[role]{lang="EN-US"}**]{#struct_0_x1979_37509_x593027761}
+·**role**
 
-[ ]{lang="EN-US"}
-:::

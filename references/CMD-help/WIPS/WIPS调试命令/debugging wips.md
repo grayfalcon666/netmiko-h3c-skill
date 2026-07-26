@@ -1,563 +1,441 @@
-::: {#-309197258 .myid}
-[]{#_Toc404795060}[]{#struct_0_x1926_14152_508482979}
 
 **WIPS \-- WIPS调试命令 \-- debugging wips**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1926_14152_x959433536}
+【命令】
 
-[**[debugging wips]{lang="EN-US"}**[ { **all** \| **classification** \| **countermeasure** \| **detect** \| **event** }]{lang="EN-US"}]{#struct_0_x1926_14152_x28601159}
+**[debugging wips**[ { **all** \| **classification** \| **countermeasure** \| **detect** \| **event** }]]
 
-[**[undo debugging wips]{lang="EN-US"}**[ { **all** \| **classification** \| **countermeasure** \| **detect** \| **event** }]{lang="EN-US"}]{#struct_0_x1926_14152_x89343848}
+**[undo debugging wips**[ { **all** \| **classification** \| **countermeasure** \| **detect** \| **event** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1926_14152_974422357}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x1926_14152_x845550329}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1926_14152_x1253109459}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1926_14152_1493692746}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1926_14152_940994353}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1926_14152_x177222081}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_x1926_14152_x1306098901}[：表示]{style="font-family:宋体"}[WIPS]{lang="EN-US"}[所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示WIPS所有调试信息开关。
 
-[**[classification]{lang="EN-US"}**]{#struct_0_x1926_14152_x822763473}[：表示]{style="font-family:宋体"}[WIPS]{lang="EN-US"}[的分类调试信息开关。]{style="font-family:宋体"}
+**[classification**]：表示WIPS的分类调试信息开关。
 
-[**[countermeasure]{lang="EN-US"}**]{#struct_0_x1926_14152_x1243324597}[：表示]{style="font-family:宋体"}[WIPS]{lang="EN-US"}[的反制调试信息开关。]{style="font-family:宋体"}
+**[countermeasure**]：表示WIPS的反制调试信息开关。
 
-[**[detect]{lang="EN-US"}**]{#struct_0_x1926_14152_x675150870}[：表示]{style="font-family:宋体"}[WIPS]{lang="EN-US"}[的检测调试信息开关。]{style="font-family:宋体"}
+**[detect**]：表示WIPS的检测调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_x1926_14152_x719846920}[：表示]{style="font-family:宋体"}[WIPS]{lang="EN-US"}[的事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示WIPS的事件调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_x1926_14152_x1644184488}
+【描述】
 
-[**[debugging wips]{lang="EN-US"}**]{#struct_0_x1926_14152_x1124651079}[命令用来打开]{style="font-family:宋体"}[WIPS]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}**[undo debugging wips]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[WIPS]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}
+**[debugging wips**]命令用来打开WIPS调试信息开关。**undo debugging wips**命令用来关闭WIPS调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[WIPS]{lang="EN-US"}]{#struct_0_x1926_14152_x849621908}[调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，WIPS调试信息开关处于关闭状态。
 
-[[表1-1 ]{lang="EN-US"}[debugging wips classification]{lang="EN-US"}]{#struct_0_x1926_14152_x808417749}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging wips classification命令输出信息描述表
 
-[]{#table_struct_0_1413207681}[[字段]{style="font-size:10.0pt;
-   font-family:黑体"}]{#struct_0_x1926_14152_2146717495}
-:::
+字段
 
-[[描述]{style="font-size:10.0pt;
-   font-family:黑体"}]{#struct_0_x1926_14152_x517541850}
+描述
 
-[[Classified *device* (MAC: *mac-address*) in VSD *vsd-name.*]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_x1926_14152_659709413}
+Classified *device* (MAC: *mac-address*) in VSD *vsd-name.*
 
-[[在名字为]{style="font-family:宋体"}*[vsd-name]{lang="EN-US"}*]{#struct_0_x1926_14152_74190224}[的]{style="font-family:宋体"}[VSD]{lang="EN-US"}[内将]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为]{style="font-family:宋体"}*[mac-address]{lang="EN-US"}*[的]{style="font-family:宋体"}[device]{lang="EN-US"}[设备进行分类，包括：]{style="font-family:宋体"}
+在名字为*vsd-name*的VSD内将MAC地址为*mac-address*的device设备进行分类，包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[AP]{lang="EN-US"}]{#struct_0_x1926_14152_605227884}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[设备]{lang="EN-US" style="font-family:宋体"}
+·AP：AP设备
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[C]{lang="EN-US"}[lient]{lang="EN-US"}]{#struct_0_x1926_14152_x725439450}[：]{style="font-family:
-  宋体"}[客户端设备]{lang="EN-US" style="font-family:宋体"}
+·Client：客户端设备
 
-[[Classified *device* as *type.*]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_x1709383428}
+Classified *device* as *type.*
 
-[[将]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_x863029071}*[device]{lang="EN-US" style="font-size:9.0pt"}*[设备分类成]{style="font-size:9.0pt;font-family:宋体"}*[type]{lang="EN-US" style="font-size:9.0pt"}*[类型]{style="font-size:9.0pt;
-  font-family:宋体"}
+将*device*设备分类成*type*类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[device]{lang="EN-US"}*]{#struct_0_x1926_14152_x1771900896}[：]{style="font-family:宋体"}[设备类型，包括：]{lang="EN-US" style="font-family:宋体"}
+·*device*：设备类型，包括：
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[AP]{lang="EN-US"}]{#struct_0_x1926_14152_x94544342}[：]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[设备]{lang="EN-US" style="font-family:宋体"}
+¡AP：AP设备
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[Client]{lang="EN-US"}]{#struct_0_x1926_14152_x1474585419}[：客户端设备]{lang="EN-US" style="font-family:宋体"}
+¡Client：客户端设备
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[type]{lang="EN-US"}*]{#struct_0_x1926_14152_32195593}[：]{style="font-family:宋体"}[分类的类型，包括：]{lang="EN-US" style="font-family:宋体"}
+·*type*：分类的类型，包括：
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[Auth]{lang="EN-US"}]{#struct_0_x1926_14152_x1792006808}[：认证的]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}
+¡Auth：认证的AP
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[Mis(C)]{lang="EN-US"}]{#struct_0_x1926_14152_830942670}[：错误配置的]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}
+¡Mis(C)：错误配置的AP
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[Rogue]{lang="EN-US"}]{#struct_0_x1926_14152_x278190523}[：非法的]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}
+¡Rogue：非法的AP
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[Ext]{lang="EN-US"}]{#struct_0_x1926_14152_x1570176518}[：外部的]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}
+¡Ext：外部的AP
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[Ad-hoc]{lang="EN-US"}]{#struct_0_x1926_14152_x1780560889}[：]{lang="EN-US" style="font-family:宋体"}[ad-hoc]{lang="EN-US"}[网络的]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}
+¡Ad-hoc：ad-hoc网络的AP
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[Auth(P)]{lang="EN-US"}]{#struct_0_x1926_14152_x143299487}[：潜在认证的]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}
+¡Auth(P)：潜在认证的AP
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[Rogue(P)]{lang="EN-US"}]{#struct_0_x1926_14152_x736613865}[：潜在非法的]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}
+¡Rogue(P)：潜在非法的AP
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[Ext(P)]{lang="EN-US"}]{#struct_0_x1926_14152_1834899313}[：潜在外部的]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}
+¡Ext(P)：潜在外部的AP
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[Uncate]{lang="EN-US"}]{#struct_0_x1926_14152_1114719311}[：未分类的]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}
+¡Uncate：未分类的AP
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[Auth]{lang="EN-US"}]{#struct_0_x1926_14152_661533954}[：授权的客户端]{lang="EN-US" style="font-family:宋体"}
+¡Auth：授权的客户端
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[Unauth]{lang="EN-US"}]{#struct_0_x1926_14152_2001540925}[：未授权的客户端]{lang="EN-US" style="font-family:宋体"}
+¡Unauth：未授权的客户端
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[Mis(A)]{lang="EN-US"}]{#struct_0_x1926_14152_656545674}[：错误关联的客户端]{lang="EN-US" style="font-family:宋体"}
+¡Mis(A)：错误关联的客户端
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[Uncate]{lang="EN-US"}]{#struct_0_x1926_14152_1731981568}[：未分类的客户端]{lang="EN-US" style="font-family:宋体"}
+¡Uncate：未分类的客户端
 
-[[Failed to classify *device*.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_x898261154}
+Failed to classify *device*.
 
-[[分类]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_x546584014}*[device]{lang="EN-US" style="font-size:9.0pt"}*[设备失败]{style="font-size:9.0pt;font-family:宋体"}
+分类*device*设备失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[device]{lang="EN-US"}*]{#struct_0_x1926_14152_1143488193}[为设备类型，包括：]{lang="EN-US" style="font-family:宋体"}
+·*device*为设备类型，包括：
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[AP]{lang="EN-US"}]{#struct_0_x1926_14152_2027087921}[：]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[设备]{lang="EN-US" style="font-family:宋体"}
+¡AP：AP设备
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[Client]{lang="EN-US"}]{#struct_0_x1926_14152_1498985158}[：客户端]{lang="EN-US" style="font-family:宋体"}[设备]{lang="EN-US" style="font-family:宋体"}
+¡Client：客户端设备
 
-[[Created reclassify timer.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_2044966236}
+Created reclassify timer.
 
-[[创建重分类定时器]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_x163415449}
+创建重分类定时器
 
-[ ]{lang="EN-US"}
+表1-2 debugging wips countermeasure命令输出信息描述表
 
-[[表1-2 ]{lang="EN-US"}[debugging wips countermeasure]{lang="EN-US"}]{#struct_0_x1926_14152_966813775}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1412320747}[[字段]{style="font-size:10.0pt;
-   font-family:黑体"}]{#struct_0_x1926_14152_x1596874252}
+描述
 
-[[描述]{style="font-size:10.0pt;
-   font-family:黑体"}]{#struct_0_x1926_14152_544983687}
+Stopped countermeasure timer.
 
-[[Stopped countermeasure timer.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_x1174506043}
+停止反制定时器
 
-[[停止反制定时器]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_1019499927}
+Failed to add countermeasure record for sensor *sensor-id* on radio *radio-id.*
 
-[[Failed to add countermeasure record for sensor *sensor-id* on radio *radio-id.*]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_x257411872}
+当用sensor *sensor-id*的radio *radio-id*反制时添加反制记录失败
 
-[[当用]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_436764147}[sensor *sensor-id*]{lang="EN-US" style="font-size:9.0pt"}[的]{style="font-size:9.0pt;font-family:宋体"}[radio *radio-id*]{lang="EN-US" style="font-size:9.0pt"}[反制时添加反制记录失败]{style="font-size:
-  9.0pt;font-family:宋体"}
+·*sensor-id*：sensor的ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sensor-id]{lang="EN-US"}*]{#struct_0_x1926_14152_1812116521}[：]{style="font-family:宋体"}[sensor]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*radio-id*：radio的ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[radio-id]{lang="EN-US"}*]{#struct_0_x1926_14152_x30020038}[：]{style="font-family:宋体"}[radio]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+Failed to set countermeasure plan for sensor *sensor-id* on radio *radio-id*.
 
-[[Failed to set countermeasure plan for sensor *sensor-id* on radio *radio-id*.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_1055191224}
+通知sensor *sensor-id*的radio *radio-id*执行反制失败
 
-[[通知]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_x852709291}[sensor *sensor-id*]{lang="EN-US" style="font-size:9.0pt"}[的]{style="font-size:9.0pt;font-family:宋体"}[radio *radio-id*]{lang="EN-US" style="font-size:9.0pt"}[执行反制失败]{style="font-size:
-  9.0pt;font-family:宋体"}
+·*sensor-id*：sensor的ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sensor-id]{lang="EN-US"}*]{#struct_0_x1926_14152_x1033297166}[：]{style="font-family:宋体"}[sensor]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*radio-id*：radio的ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[radio-id]{lang="EN-US"}*]{#struct_0_x1926_14152_x2070458076}[：]{style="font-family:宋体"}[radio]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+Countermeasure timer expired.
 
-[[Countermeasure timer expired.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_1189693991}
+反制定时器超时
 
-[[反制定时器超时]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_422511260}
+Started countermeasure timer.
 
-[[Started countermeasure timer.]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_x1926_14152_x96245320}
+启动反制定时器
 
-[[启动反制定时器]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_x867598571}
+Failed to start countermeasure timer
 
-[[Failed to start countermeasure timer]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_1549499472}
+启动反制定时器失败
 
-[[启动反制定时器失败]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_x1415881533}
+表1-3 debugging wips detect命令输出信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表1-3 ]{lang="EN-US"}[debugging wips detect]{lang="EN-US"}]{#struct_0_x1926_14152_x36230536}[命令输出信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_1438867131}[[字段]{style="font-size:10.0pt;
-   font-family:黑体"}]{#struct_0_x1926_14152_2000185328}
+Received AP *message-type* message from sensor *sensor-id* on radio *radio-id*.
 
-[[描述]{style="font-size:10.0pt;
-   font-family:黑体"}]{#struct_0_x1926_14152_x2141364723}
+从sensor *sensor-id*的radio *radio-id*收到AP的*message-type*事件
 
-[[Received AP *message-type* message from sensor *sensor-id* on radio *radio-id*.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_x958000019}
+·*sensor-id*：sensor的ID
 
-[[从]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_1881534884}[sensor *sensor-id*]{lang="EN-US" style="font-size:9.0pt"}[的]{style="font-size:9.0pt;font-family:宋体"}[radio *radio-id*]{lang="EN-US" style="font-size:9.0pt"}[收到]{style="font-size:
-  9.0pt;font-family:宋体"}[AP]{lang="EN-US" style="font-size:9.0pt"}[的]{style="font-size:9.0pt;font-family:宋体"}*[message-type]{lang="EN-US" style="font-size:9.0pt"}*[事件]{style="font-size:9.0pt;
-  font-family:宋体"}
+·*radio-id*：radio的ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sensor-id]{lang="EN-US"}*]{#struct_0_x1926_14152_x208189117}[：]{style="font-family:宋体"}[se]{lang="EN-US"}[nsor]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+*[message-type*]的类型包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[radio-id]{lang="EN-US"}*]{#struct_0_x1926_14152_1825049171}[：]{style="font-family:宋体"}[radio]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·update：AC收到AP更新事件
 
-[*[message-type]{lang="EN-US" style="font-size:
-  9.0pt"}*]{#struct_0_x1926_14152_1727090008}[的类型包括：]{style="font-size:9.0pt;font-family:
-  宋体"}
+·delete：AC收到AP删除事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[update]{lang="EN-US"}]{#struct_0_x1926_14152_1469838621}[：]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}[收到]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[更新事件]{lang="EN-US" style="font-family:宋体"}
+Received the message for clearing clients associated with AP *mac-address* from sensor *sensor-id* on radio *radio-id*.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[delete]{lang="EN-US"}]{#struct_0_x1926_14152_x237326866}[：]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}[收到]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[删除事件]{lang="EN-US" style="font-family:宋体"}
+从sensor *sensor-id*的radio *radio-id*收到清除MAC地址为*mac-address*的AP设备下关联的client
 
-[[Received the message for clearing clients associated with AP *mac-address* from sensor *sensor-id* on radio *radio-id*.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_x2003175166}
+·*sensor-id*：sensor的ID
 
-[[从]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_1705613446}[sensor *sensor-id*]{lang="EN-US" style="font-size:9.0pt"}[的]{style="font-size:9.0pt;font-family:宋体"}[radio *radio-id*]{lang="EN-US" style="font-size:9.0pt"}[收到清除]{style="font-size:
-  9.0pt;font-family:宋体"}[MAC]{lang="EN-US" style="font-size:9.0pt"}[地址为]{style="font-size:9.0pt;font-family:宋体"}*[mac-address]{lang="EN-US" style="font-size:9.0pt"}*[的]{style="font-size:9.0pt;
-  font-family:宋体"}[AP]{lang="EN-US" style="font-size:9.0pt"}[设备下关联的]{style="font-size:9.0pt;font-family:宋体"}[client]{lang="EN-US" style="font-size:9.0pt"}
+·*radio-id*：radio的ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sensor-id]{lang="EN-US"}*]{#struct_0_x1926_14152_x1834307832}[：]{style="font-family:宋体"}[se]{lang="EN-US"}[nsor]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*mac-address*：AP设备的MAC地址**
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[radio-id]{lang="EN-US"}*]{#struct_0_x1926_14152_x635304327}[：]{style="font-family:宋体"}[radio]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+Received AP status change message from sensor *sensor-id* on radio *radio-id*.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[mac-address]{lang="EN-US"}*]{#struct_0_x1926_14152_1380388835}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[设备的]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}*[ ]{lang="EN-US"}*
+从sensor *sensor-id*的radio *radio-id*收到AP状态改变消息
 
-[[Received AP status change message from sensor *sensor-id* on radio *radio-id*.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_x246295872}
+·*sensor-id*：sensor的ID
 
-[[从]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_x1595034924}[sensor *sensor-id*]{lang="EN-US" style="font-size:9.0pt"}[的]{style="font-size:9.0pt;font-family:宋体"}[radio *radio-id*]{lang="EN-US" style="font-size:9.0pt"}[收到]{style="font-size:
-  9.0pt;font-family:宋体"}[AP]{lang="EN-US" style="font-size:9.0pt"}[状态改变消息]{style="font-size:9.0pt;font-family:宋体"}
+·*radio-id*：radio的ID
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sensor-id]{lang="EN-US"}*]{#struct_0_x1926_14152_x1165623065}[：]{style="font-family:宋体"}[sensor]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+Received AP critical memory gate message from sensor *sensor-id*.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[radio-id]{lang="EN-US"}*]{#struct_0_x1926_14152_260050576}[：]{style="font-family:宋体"}[radio]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+从sensor *sensor-id*收到AP三级内存门限消息
 
-[[Received AP critical memory gate message from sensor *sensor-id*.]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_x1926_14152_974347924}
+·*sensor-id*：sensor的ID
 
-[[从]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_1988196968}[sensor *sensor-id*]{lang="EN-US" style="font-size:9.0pt"}[收到]{style="font-size:9.0pt;font-family:宋体"}[AP]{lang="EN-US" style="font-size:9.0pt"}[三级内存门限消息]{style="font-size:9.0pt;font-family:
-  宋体"}
+表1-4 debugging wips event令输出信息描述表
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[sensor-id]{lang="EN-US"}*]{#struct_0_x1926_14152_155541643}[：]{style="font-family:宋体"}[sensor]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+字段
 
-[ ]{lang="EN-US"}
+描述
 
-[[表1-4 ]{lang="EN-US"}[debugging wips event]{lang="EN-US"}]{#struct_0_x1926_14152_x1710855955}[令输出信息描述表]{style="font-family:黑体"}
+Failed to send IOCTL message to the AP.
 
-[]{#table_struct_0_1441868959}[[字段]{style="font-size:10.0pt;font-family:黑体"}]{#struct_0_x1926_14152_x58537459}
+给AP发送IOCTL消息失败
 
-[[描述]{style="font-size:10.0pt;
-   font-family:黑体"}]{#struct_0_x1926_14152_x702605557}
+Failed to create *timer-type* timer.
 
-[[Failed to send IOCTL message to the AP.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_1417754799}
+创建*timer-type*类型定时器失败，*timer-type*为定时器的类型，包括：
 
-[[给]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_906483497}[AP]{lang="EN-US" style="font-size:9.0pt"}[发送]{style="font-size:9.0pt;font-family:宋体"}[IOCTL]{lang="EN-US" style="font-size:9.0pt"}[消息失败]{style="font-size:9.0pt;font-family:
-  宋体"}
+·reclassify：学习到的设备重新分类定时器
 
-[[Failed to create *timer-type* timer.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_x2022226739}
+·memory threshold recover：内存门限恢复定时器
 
-[[创建]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_x1885553103}*[timer-type]{lang="EN-US" style="font-size:9.0pt"}*[类型定时器失败，]{style="font-size:9.0pt;font-family:宋体"}*[timer-type]{lang="EN-US" style="font-size:9.0pt"}*[为定时器的类型，包括：]{style="font-size:9.0pt;
-  font-family:宋体"}
+·scan：扫描列表定时器
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[reclassify]{lang="EN-US"}]{#struct_0_x1926_14152_x2009590199}[：]{lang="EN-US" style="font-family:宋体"}[学习到的设备重新分类定时器]{lang="EN-US" style="font-family:宋体"}
+·reconnect to APMGR：重连APMGR定时器
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[memory threshold recover]{lang="EN-US"}]{#struct_0_x1926_14152_1826134517}[：]{lang="EN-US" style="font-family:宋体"}[内存门限恢复定时器]{lang="EN-US" style="font-family:宋体"}
+Created *timer-type* timer.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[scan]{lang="EN-US"}]{#struct_0_x1926_14152_1250976086}[：]{style="font-family:宋体"}[扫描列表定时器]{style="font-family:宋体"}
+创建*timer-type*类型定时器，*timer-type*为定时器的类型，包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[reconnect to APMGR]{lang="EN-US"}]{#struct_0_x1926_14152_851732560}[：]{lang="EN-US" style="font-family:
-  宋体"}[重连]{lang="EN-US" style="font-family:宋体"}[APMGR]{lang="EN-US"}[定时器]{lang="EN-US" style="font-family:宋体"}
+·reclassify：学习到的设备重新分类定时器
 
-[[Created *timer-type* timer.]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_x1926_14152_301497567}
+·memory threshold recover：内存门限恢复定时器
 
-[[创建]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_1259166036}*[timer-type]{lang="EN-US" style="font-size:9.0pt"}*[类型定时器，]{style="font-size:9.0pt;font-family:宋体"}*[timer-type]{lang="EN-US" style="font-size:9.0pt"}*[为定时器的类型，包括：]{style="font-size:9.0pt;
-  font-family:宋体"}
+·scan：扫描列表定时器
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[reclassify]{lang="EN-US"}]{#struct_0_x1926_14152_x1256560305}[：]{lang="EN-US" style="font-family:宋体"}[学习到的设备重新分类定时器]{lang="EN-US" style="font-family:宋体"}
+·reconnect to APMGR：重连APMGR定时器
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[memory threshold recover]{lang="EN-US"}]{#struct_0_x1926_14152_x1407208356}[：]{lang="EN-US" style="font-family:宋体"}[内存门限恢复定时器]{lang="EN-US" style="font-family:宋体"}
+*[Timer-type*] timer expired.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[scan]{lang="EN-US"}]{#struct_0_x1926_14152_x1565886521}[：]{style="font-family:宋体"}[扫描列表定时器]{style="font-family:宋体"}
+*[Timer-type*]类型定时器超时，*Timer-type*为定时器的类型，包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[reconnect to APMGR]{lang="EN-US"}]{#struct_0_x1926_14152_1311620728}[：]{lang="EN-US" style="font-family:
-  宋体"}[重连]{lang="EN-US" style="font-family:宋体"}[APMGR]{lang="EN-US"}[定时器]{lang="EN-US" style="font-family:宋体"}
+·Reclassify：学习到的设备重新分类定时器
 
-[*[Timer-type]{lang="EN-US" style="font-size:
-  9.0pt"}*]{#struct_0_x1926_14152_x1534786335}[ timer expired.]{lang="EN-US" style="font-size:9.0pt"}
+·Memory threshold recover：内存门限恢复定时器
 
-[*[Timer-type]{lang="EN-US" style="font-size:
-  9.0pt"}*]{#struct_0_x1926_14152_1422849990}[类型定时器超时，]{style="font-size:9.0pt;font-family:
-  宋体"}*[Timer-type]{lang="EN-US" style="font-size:9.0pt"}*[为定时器的类型，包括：]{style="font-size:9.0pt;font-family:宋体"}
+·scan：扫描列表定时器
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Reclassify]{lang="EN-US"}]{#struct_0_x1926_14152_x1237365678}[：学习到的设备重新分类定时器]{lang="EN-US" style="font-family:宋体"}
+·Reconnect to APMGR：重连APMGR定时器
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Memory threshold recover]{lang="EN-US"}]{#struct_0_x1926_14152_x523615668}[：内存门限恢复定时器]{lang="EN-US" style="font-family:宋体"}
+Deleted*Timer-type* timer.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[scan]{lang="EN-US"}]{#struct_0_x1926_14152_508535754}[：扫描列表定时器]{lang="EN-US" style="font-family:宋体"}
+删除*Timer-type*类型定时器，*Timer-type*为定时器的类型，包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Reconnect to APMGR]{lang="EN-US"}]{#struct_0_x1926_14152_1341441126}[：重连]{lang="EN-US" style="font-family:
-  宋体"}[APMGR]{lang="EN-US"}[定时器]{lang="EN-US" style="font-family:
-  宋体"}
+·reclassify：学习到的设备重新分类定时器
 
-[[Deleted*Timer-type* timer.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_x279857169}
+·memory threshold recover：内存门限恢复定时器
 
-[[删除]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_364988936}*[Timer-type]{lang="EN-US" style="font-size:9.0pt"}*[类型定时器，]{style="font-size:9.0pt;font-family:宋体"}*[Timer-type]{lang="EN-US" style="font-size:9.0pt"}*[为定时器的类型，包括：]{style="font-size:9.0pt;
-  font-family:宋体"}
+·scan：扫描列表定时器
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[reclassify]{lang="EN-US"}]{#struct_0_x1926_14152_1755468632}[：学习到的设备重新分类定时器]{lang="EN-US" style="font-family:宋体"}
+·reconnect to APMGR：重连APMGR定时器
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[memory threshold recover]{lang="EN-US"}]{#struct_0_x1926_14152_x1935685273}[：内存门限恢复定时器]{lang="EN-US" style="font-family:宋体"}
+Failed to recover configuration of key (Type: *type*).
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[scan]{lang="EN-US"}]{#struct_0_x1926_14152_x1306033365}[：扫描列表定时器]{lang="EN-US" style="font-family:宋体"}
+DBM恢复类型为*type*的key的配置失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[reconnect to APMGR]{lang="EN-US"}]{#struct_0_x1926_14152_1412711087}[：重连]{lang="EN-US" style="font-family:
-  宋体"}[APMGR]{lang="EN-US"}[定时器]{lang="EN-US" style="font-family:
-  宋体"}
+·*type*：DBM存储的key的类型，取值为数值
 
-[[Failed to recover configuration of key (Type: *type*).]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_x1989636063}
+Received HA *type* event.
 
-[[DBM]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_x1926_14152_143428025}[恢复类型为]{style="font-size:9.0pt;font-family:宋体"}*[type]{lang="EN-US" style="font-size:9.0pt"}*[的]{style="font-size:9.0pt;
-  font-family:宋体"}[key]{lang="EN-US" style="font-size:9.0pt"}[的配置失败]{style="font-size:9.0pt;font-family:宋体"}
+收到HA *type*类型事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[type]{lang="EN-US"}*]{#struct_0_x1926_14152_323491168}[：]{style="font-family:宋体"}[DBM]{lang="EN-US"}[存储的]{style="font-family:宋体"}[key]{lang="EN-US"}[的类型，取值为数值]{style="font-family:宋体"}
+·*type*为HA事件类型：
 
-[[Received HA *type* event.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_x1478519073}
+¡upgrade：备进程收到HA模块通知的升级事件
 
-[[收到]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_x398261752}[HA *type*]{lang="EN-US" style="font-size:9.0pt"}[类型事件]{style="font-size:9.0pt;font-family:宋体"}
+¡stop：主进程收到HA模块通知的停止事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[type]{lang="EN-US"}*]{#struct_0_x1926_14152_x1466388253}[为]{lang="EN-US" style="font-family:宋体"}[HA]{lang="EN-US"}[事件类型：]{lang="EN-US" style="font-family:宋体"}
+¡degrade：主进程收到HA模块通知的降级事件
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[upgrade]{lang="EN-US"}]{#struct_0_x1926_14152_x1709317892}[：备进程收到]{lang="EN-US" style="font-family:宋体"}[HA]{lang="EN-US"}[模块通知的升级事件]{lang="EN-US" style="font-family:宋体"}
+Failed to process HA upgrade event.
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[stop]{lang="EN-US"}]{#struct_0_x1926_14152_14747980}[：主进程收到]{lang="EN-US" style="font-family:宋体"}[HA]{lang="EN-US"}[模块通知的停止事件]{lang="EN-US" style="font-family:宋体"}
+处理HA升级事件失败
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[degrade]{lang="EN-US"}]{#struct_0_x1926_14152_x320700303}[：主进程收到]{lang="EN-US" style="font-family:宋体"}[HA]{lang="EN-US"}[模块通知的降级事件]{lang="EN-US" style="font-family:宋体"}
+Failed to recover configuration from DBM.
 
-[[Failed to process HA upgrade event.]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_x1926_14152_776208763}
+从DBM中恢复配置失败
 
-[[处理]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_x208508287}[HA]{lang="EN-US" style="font-size:9.0pt"}[升级事件失败]{style="font-size:9.0pt;font-family:宋体"}
+Failed to synchronize data from APMGR.
 
-[[Failed to recover configuration from DBM.]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_x1926_14152_687445539}
+从APMGR模块同步获取数据失败
 
-[[从]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_x1802734376}[DBM]{lang="EN-US" style="font-size:9.0pt"}[中恢复配置失败]{style="font-size:9.0pt;font-family:宋体"}
+Processing system memory threshold alert stop event received by WIPS .
 
-[[Failed to synchronize data from APMGR.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_x1063320411}
+处理WIPS模块收到系统内存门限恢复事件
 
-[[从]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_x143233951}[APMGR]{lang="EN-US" style="font-size:9.0pt"}[模块同步获取数据失败]{style="font-size:9.0pt;font-family:宋体"}
+Processing system memory threshold event(Level *level*) received by WIPS.
 
-[[Processing system memory threshold alert stop event received by WIPS .]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_1722850316}
+处理WIPS模块收到系统内存门限事件，级别为*level*
 
-[[处理]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_1509700312}[WIPS]{lang="EN-US" style="font-size:9.0pt"}[模块收到系统内存门限恢复事件]{style="font-size:9.0pt;font-family:宋体"}
+·*level*：内存门限级别
 
-[[Processing system memory threshold event(Level *level*) received by WIPS.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_x811719801}
+Finished async get data from APMGR.
 
-[[处理]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_x1857617155}[WIPS]{lang="EN-US" style="font-size:9.0pt"}[模块收到系统内存门限事件，级别为]{style="font-size:9.0pt;font-family:宋体"}*[level]{lang="EN-US" style="font-size:9.0pt"}*
+完成从APMGR异步获取数据
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[level]{lang="EN-US"}*]{#struct_0_x1926_14152_1184705582}[：内存门限级别]{style="font-family:宋体"}
+Processing AP *event-ype* event from APMGR.
 
-[[Finished async get data from APMGR.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_x546518478}
+处理来自APMGR模块AP的*event-type*事件
 
-[[完成从]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_313046539}[APMGR]{lang="EN-US" style="font-size:9.0pt"}[异步获取数据]{style="font-size:9.0pt;font-family:宋体"}
+·*event-type*：APMGR上报AP的事件类型，包括：
 
-[[Processing AP *event-ype* event from APMGR.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_1455736333}
+¡down：AC收到AP的下线事件
 
-[[处理来自]{style="font-size:9.0pt;font-family:
-  宋体"}]{#struct_0_x1926_14152_71788817}[APMGR]{lang="EN-US" style="font-size:9.0pt"}[模块]{style="font-size:9.0pt;font-family:宋体"}[AP]{lang="EN-US" style="font-size:9.0pt"}[的]{style="font-size:9.0pt;font-family:
-  宋体"}*[event-type]{lang="EN-US" style="font-size:9.0pt"}*[事件]{style="font-size:9.0pt;font-family:宋体"}
+¡up：AC收到AP的上线事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[event-type]{lang="EN-US"}*]{#struct_0_x1926_14152_x633622543}[：]{style="font-family:宋体"}[APMGR]{lang="EN-US"}[上报]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[的事件类型，包括：]{lang="EN-US" style="font-family:宋体"}
+¡delete：AC收到AP的删除事件
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[down]{lang="EN-US"}]{#struct_0_x1926_14152_692702222}[：]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}[收到]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[的下线事件]{lang="EN-US" style="font-family:宋体"}
+¡create：AC收到AP的创建事件
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[up]{lang="EN-US"}]{#struct_0_x1926_14152_1019565463}[：]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}[收到]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[的上线事件]{lang="EN-US" style="font-family:宋体"}
+Processing radio *event-type* event for radio *radio-id* on AP *ap-id* from APMGR.
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[delete]{lang="EN-US"}]{#struct_0_x1926_14152_1763074637}[：]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}[收到]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[的删除事件]{lang="EN-US" style="font-family:宋体"}
+处理来自APMGR的AP *ap-id*上radio *radio-id*的*event-type*事件
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[create]{lang="EN-US"}]{#struct_0_x1926_14152_1711875642}[：]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}[收到]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[的创建事件]{lang="EN-US" style="font-family:宋体"}
+·*event-type*：APMGR上报radio的事件类型，包括：
 
-[[Processing radio *event-type* event for radio *radio-id* on AP *ap-id* from APMGR.]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_x1926_14152_101802481}
+¡down：AC收到radio的下线事件
 
-[[处理来自]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_1712445328}[APMGR]{lang="EN-US" style="font-size:9.0pt"}[的]{style="font-size:9.0pt;font-family:宋体"}[AP *ap-id*]{lang="EN-US" style="font-size:9.0pt"}[上]{style="font-size:9.0pt;
-  font-family:宋体"}[radio *radio-id*]{lang="EN-US" style="font-size:9.0pt"}[的]{style="font-size:9.0pt;font-family:宋体"}*[event-type]{lang="EN-US" style="font-size:9.0pt"}*[事件]{style="font-size:9.0pt;
-  font-family:宋体"}
+¡up：AC收到radio的上线事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[event-type]{lang="EN-US"}*]{#struct_0_x1926_14152_x1597087117}[：]{style="font-family:宋体"}[APMGR]{lang="EN-US"}[上报]{lang="EN-US" style="font-family:宋体"}[radio]{lang="EN-US"}[的事件类型，包括：]{lang="EN-US" style="font-family:宋体"}
+¡delete：AC收到radio的删除事件
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[down]{lang="EN-US"}]{#struct_0_x1926_14152_x96179784}[：]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}[收到]{lang="EN-US" style="font-family:宋体"}[radio]{lang="EN-US"}[的下线事件]{lang="EN-US" style="font-family:宋体"}
+¡create：AC收到radio的创建事件
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[up]{lang="EN-US"}]{#struct_0_x1926_14152_88494496}[：]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}[收到]{lang="EN-US" style="font-family:宋体"}[radio]{lang="EN-US"}[的上线事件]{lang="EN-US" style="font-family:宋体"}
+·*ap-id*：AP的ID
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[delete]{lang="EN-US"}]{#struct_0_x1926_14152_x904376751}[：]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}[收到]{lang="EN-US" style="font-family:宋体"}[radio]{lang="EN-US"}[的删除事件]{lang="EN-US" style="font-family:宋体"}
+·*radio-id*：radio的ID
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[create]{lang="EN-US"}]{#struct_0_x1926_14152_x135669188}[：]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}[收到]{lang="EN-US" style="font-family:宋体"}[radio]{lang="EN-US"}[的创建事件]{lang="EN-US" style="font-family:宋体"}
+Failed to async get data from APMGR: error code = *error-code*.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ap-id]{lang="EN-US"}*]{#struct_0_x1926_14152_1164776218}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+从APMGR异步获取数据失败，错误码为*error-code*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[radio-id]{lang="EN-US"}*]{#struct_0_x1926_14152_1469904157}[：]{style="font-family:宋体"}[radio]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*error-code*：失败的错误码
 
-[[Failed to async get data from APMGR: error code = *error-code*.]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_x1926_14152_494019862}
+Failed to process APMGR message: error code = *error-code*.
 
-[[从]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_x1596927156}[APMGR]{lang="EN-US" style="font-size:9.0pt"}[异步获取数据失败，错误码为]{style="font-size:9.0pt;font-family:宋体"}*[error-code]{lang="EN-US" style="font-size:9.0pt"}*
+处理APMGR的消息失败，错误码为*error-code*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[error-code]{lang="EN-US"}*]{#struct_0_x1926_14152_1500147847}[：]{style="font-family:宋体"}[失败的错误码]{lang="EN-US" style="font-family:宋体"}
+·*error-code*：失败的错误码
 
-[[Failed to process APMGR message: error code = *error-code*.]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_x1926_14152_260116112}
+Failed to *event-type* AP event: error code = *error-code*.
 
-[[处理]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_210406304}[APMGR]{lang="EN-US" style="font-size:9.0pt"}[的消息失败，错误码为]{style="font-size:9.0pt;font-family:宋体"}*[error-code]{lang="EN-US" style="font-size:9.0pt"}*
+处理AP的*event-type*事件失败，错误码为*error-code*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[error-code]{lang="EN-US"}*]{#struct_0_x1926_14152_1338942162}[：]{style="font-family:宋体"}[失败的错误码]{lang="EN-US" style="font-family:宋体"}
+·*event-type*：事件类型，包括：
 
-[[Failed to *event-type* AP event: error code = *error-code*.]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_x1926_14152_740359468}
+¡register：AC上用户态模块注册接收AP事件
 
-[[处理]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_1826200053}[AP]{lang="EN-US" style="font-size:9.0pt"}[的]{style="font-size:9.0pt;font-family:宋体"}*[event-type]{lang="EN-US" style="font-size:9.0pt"}*[ ]{lang="EN-US" style="font-size:9.0pt"}[事件失败，错误码为]{style="font-size:9.0pt;font-family:
-  宋体"}*[error-code]{lang="EN-US" style="font-size:9.0pt"}*
+¡unregister：AC上用户态模块去注册接收AP事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[event-type]{lang="EN-US"}*]{#struct_0_x1926_14152_470823973}[：]{style="font-family:宋体"}[事件类型，包括：]{lang="EN-US" style="font-family:宋体"}
+·*error-code*：失败的错误码
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[register]{lang="EN-US"}]{#struct_0_x1926_14152_190130328}[：]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}[上用户态模块注册接收]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[事件]{lang="EN-US" style="font-family:宋体"}
+Failed to process *event-type* radio event: error code = *error-code*.
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[unregister]{lang="EN-US"}]{#struct_0_x1926_14152_x1819168918}[：]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}[上用户态模块去]{lang="EN-US" style="font-family:宋体"}[注册接收]{lang="EN-US" style="font-family:宋体"}[AP]{lang="EN-US"}[事件]{lang="EN-US" style="font-family:宋体"}
+处理radio的*event-type*事件失败，错误码为*error-code*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[error-code]{lang="EN-US"}*]{#struct_0_x1926_14152_x1482651449}[：]{style="font-family:宋体"}[失败的错误码]{lang="EN-US" style="font-family:宋体"}
+·*event-type*：事件类型，包括：
 
-[[Failed to process *event-type* radio event: error code = *error-code*.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_1422915526}
+¡register：AC上用户态模块注册接收APMGR事件
 
-[[处理]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_1130157286}[radio]{lang="EN-US" style="font-size:9.0pt"}[的]{style="font-size:9.0pt;font-family:宋体"}*[event-type]{lang="EN-US" style="font-size:9.0pt"}*[ ]{lang="EN-US" style="font-size:9.0pt"}[事件失败，错误码为]{style="font-size:9.0pt;font-family:
-  宋体"}*[error-code]{lang="EN-US" style="font-size:9.0pt"}*
+¡unregister：AC上用户态模块去注册接收APMGR事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[event-type]{lang="EN-US"}*]{#struct_0_x1926_14152_272217891}[：]{style="font-family:宋体"}[事件类型，包括：]{lang="EN-US" style="font-family:宋体"}
+·*error-code*：失败的错误码
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[register]{lang="EN-US"}]{#struct_0_x1926_14152_x50738218}[：]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}[上用户态模块]{lang="EN-US" style="font-family:宋体"}[注册接收]{lang="EN-US" style="font-family:宋体"}[APMGR]{lang="EN-US"}[事件]{lang="EN-US" style="font-family:宋体"}
+Failed to set scan *type* for AP *ap-id* on radio *radio-id*: error code = *error-code*.
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[unregister]{lang="EN-US"}]{#struct_0_x1926_14152_x1305967829}[：]{lang="EN-US" style="font-family:宋体"}[AC]{lang="EN-US"}[上用户态模块去]{lang="EN-US" style="font-family:宋体"}[注册接收]{lang="EN-US" style="font-family:宋体"}[APMGR]{lang="EN-US"}[事件]{lang="EN-US" style="font-family:宋体"}
+在AP *ap-id*的radio *radio-id*上设置扫描*type*类型失败，错误码为*error-code*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[error-code]{lang="EN-US"}*]{#struct_0_x1926_14152_x1308311734}[：]{style="font-family:宋体"}[失败的错误码]{lang="EN-US" style="font-family:宋体"}
+·*type*：设置的类型，包括：
 
-[[Failed to set scan *type* for AP *ap-id* on radio *radio-id*: error code = *error-code*.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_x497417538}
+¡filter：过滤
 
-[[在]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_x57369919}[AP *ap-id*]{lang="EN-US" style="font-size:9.0pt"}[的]{style="font-size:9.0pt;font-family:宋体"}[radio *radio-id*]{lang="EN-US" style="font-size:9.0pt"}[上设置扫描]{style="font-size:
-  9.0pt;font-family:宋体"}*[type]{lang="EN-US" style="font-size:9.0pt"}*[类型失败，错误码为]{style="font-size:9.0pt;font-family:宋体"}*[error-code]{lang="EN-US" style="font-size:9.0pt"}*
+¡plan：列表
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[type]{lang="EN-US"}*]{#struct_0_x1926_14152_x683349674}[：]{style="font-family:宋体"}[设置的类型，包括：]{lang="EN-US" style="font-family:宋体"}
+·*ap-id*：AP的ID
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[filter]{lang="EN-US"}]{#struct_0_x1926_14152_x1709252356}[：]{lang="EN-US" style="font-family:宋体"}[过滤]{lang="EN-US" style="font-family:
-  宋体"}
+·*radio-id*：radio的ID
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[plan]{lang="EN-US"}]{#struct_0_x1926_14152_1024546499}[：]{lang="EN-US" style="font-family:宋体"}[列表]{lang="EN-US" style="font-family:
-  宋体"}
+·*error-code*：失败的错误码
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ap-id]{lang="EN-US"}*]{#struct_0_x1926_14152_x698529264}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+Set scan *type* for AP *ap-id* on radio *radio-id* successfully.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[radio-id]{lang="EN-US"}*]{#struct_0_x1926_14152_822545560}[：]{style="font-family:宋体"}[radio]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+在AP *ap-id*的radio *radio-id*上设置扫描*type*类型成功
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[error-code]{lang="EN-US"}*]{#struct_0_x1926_14152_x143168415}[：]{style="font-family:宋体"}[失败的错误码]{lang="EN-US" style="font-family:宋体"}
+·*type*：设置的类型，包括：
 
-[[Set scan *type* for AP *ap-id* on radio *radio-id* successfully.]{lang="EN-US" style="font-size:9.0pt"}]{#struct_0_x1926_14152_848803236}
+¡filter：过滤
 
-[[在]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_x382031929}[AP *ap-id*]{lang="EN-US" style="font-size:9.0pt"}[的]{style="font-size:9.0pt;font-family:宋体"}[radio *radio-id*]{lang="EN-US" style="font-size:9.0pt"}[上设置扫描]{style="font-size:
-  9.0pt;font-family:宋体"}*[type]{lang="EN-US" style="font-size:9.0pt"}*[类型成功]{style="font-size:9.0pt;font-family:宋体"}
+¡plan：列表
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[type]{lang="EN-US"}*]{#struct_0_x1926_14152_1157019811}[：]{style="font-family:宋体"}[设置的类型，包括：]{lang="EN-US" style="font-family:宋体"}
+·*ap-id*：AP的ID
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[filter]{lang="EN-US"}]{#struct_0_x1926_14152_x546452942}[：过滤]{lang="EN-US" style="font-family:宋体"}
+·*radio-id*：radio的ID
 
-[[¡[ ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:5.0pt;font-family:Wingdings"}[plan]{lang="EN-US"}]{#struct_0_x1926_14152_x1153095653}[：列表]{lang="EN-US" style="font-family:宋体"}
+Failed to clear scan filter for AP *ap-id* on radio *radio-id*: error code = *error-code*.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ap-id]{lang="EN-US"}*]{#struct_0_x1926_14152_1756497264}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+在AP *ap-id*的radio *radio-id*上清除射频的过滤类型失败，错误码为*error-code*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[radio-id]{lang="EN-US"}*]{#struct_0_x1926_14152_1019630999}[：]{style="font-family:宋体"}[radio]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+·*ap-id*：AP的ID
 
-[[Failed to clear scan filter for AP *ap-id* on radio *radio-id*: error code = *error-code*.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_2127824106}
+·*radio-id*：radio的ID
 
-[[在]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_184701931}[AP *ap-id*]{lang="EN-US" style="font-size:9.0pt"}[的]{style="font-size:9.0pt;font-family:宋体"}[radio *radio-id*]{lang="EN-US" style="font-size:9.0pt"}[上清除射频的过滤类型失败，错误码为]{style="font-size:
-  9.0pt;font-family:宋体"}*[error-code]{lang="EN-US" style="font-size:9.0pt"}*
+·*error-code*：失败的错误码
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ap-id]{lang="EN-US"}*]{#struct_0_x1926_14152_x96114248}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+Failed to stop scan plan for AP *ap-id* on radio *radio-id*: error code = *error-code*.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[radio-id]{lang="EN-US"}*]{#struct_0_x1926_14152_69863919}[：]{style="font-family:宋体"}[radio]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+在AP *ap-id*的radio *radio-id*上停止扫描列表失败，错误码为*error-code*
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[error-code]{lang="EN-US"}*]{#struct_0_x1926_14152_1662180200}[：]{style="font-family:宋体"}[失败的错误码]{lang="EN-US" style="font-family:宋体"}
+·*ap-id*：AP的ID
 
-[[Failed to stop scan plan for AP *ap-id* on radio *radio-id*: error code = *error-code*.]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_x1926_14152_1469969693}
+·*radio-id*：radio的ID
 
-[[在]{style="font-size:9.0pt;
-  font-family:宋体"}]{#struct_0_x1926_14152_x1792728463}[AP *ap-id*]{lang="EN-US" style="font-size:9.0pt"}[的]{style="font-size:9.0pt;font-family:宋体"}[radio *radio-id*]{lang="EN-US" style="font-size:9.0pt"}[上停止扫描列表失败，错误码为]{style="font-size:
-  9.0pt;font-family:宋体"}*[error-code]{lang="EN-US" style="font-size:9.0pt"}*
+·*error-code*：失败的错误码
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ap-id]{lang="EN-US"}*]{#struct_0_x1926_14152_1120955909}[：]{style="font-family:宋体"}[AP]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+【举例】
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[radio-id]{lang="EN-US"}*]{#struct_0_x1926_14152_160486632}[：]{style="font-family:宋体"}[radio]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[ID]{lang="EN-US"}
+\# 配置WIPS，并打开WIPS分类调试信息开关。
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[error-code]{lang="EN-US"}*]{#struct_0_x1926_14152_260181648}[：]{style="font-family:宋体"}[失败的错误码]{lang="EN-US" style="font-family:宋体"}
+\<Sysname\> debugging wips classification
 
-[ ]{lang="EN-US"}
+\*Apr  4 15:49:28:081 2014 Sysname WIPS/7/CLASS: -MDC=1; Classify AP as Rogue
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1926_14152_207486766}
+*// 将AP分类为Rouge AP*
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1926_14152_1572826763}[配置]{style="font-family:宋体"}[WIPS]{lang="EN-US"}[，并打开]{style="font-family:宋体"}[WIPS]{lang="EN-US"}[分类调试信息开关。]{style="font-family:宋体"}
+\# 配置WIPS，并打开WIPS反制调试信息开关。
 
-[[\<Sysname\> debugging wips classification]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1926_14152_838332326}
+\<Sysname\> debugging wips countermeasure
 
-[[\*Apr  4 15:49:28:081 2014 Sysname WIPS/7/]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}[ ]{lang="EN-US"}]{#struct_0_x1926_14152_x410641213}[CLASS: -MDC=1; Classify AP as Rogue]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}
+\*Apr  4 15:53:28:081 2014 Sysname WIPS/7/COUNTERMEASURE: -MDC=1; Failed to add countermeasure record for sensor 100 on radio 1
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x1926_14152_1665228355}*[将]{style="font-family:宋体"}[AP]{lang="EN-US"}[分类为]{style="font-family:宋体"}[Rouge AP]{lang="EN-US"}*
+*// 使用sensor 100的radio 1对非法设备进行反制时，添加反制记录失败*
 
-[ ]{lang="EN-US" style="font-size:9.0pt;font-family:\"Courier New\""}
+\# 配置WIPS，并打开WIPS检测调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1926_14152_1485352762}[配置]{style="font-family:宋体"}[WIPS]{lang="EN-US"}[，并打开]{style="font-family:宋体"}[WIPS]{lang="EN-US"}[反制调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging wips detect
 
-[[\<Sysname\> debugging wips countermeasure]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1926_14152_695176797}
+\*Apr  4 15:55:28:081 2014 Sysname WIPS/7/DETECT: -MDC=1; Received AP status change message from sensor 100 on radio 1.
 
-[[\*Apr  4 15:53:28:081 2014 Sysname WIPS/7/]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}[ ]{lang="EN-US"}]{#struct_0_x1926_14152_x232991163}[COUNTERMEASURE: -MDC=1; Failed to add countermeasure record for sensor 100 on radio 1]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}
+*// 从sensor 100的radio 1收到AP状态改变消息*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x1926_14152_191589975}*[使用]{style="font-family:宋体"}[sensor ]{lang="EN-US"}[100]{lang="EN-US"}[的]{style="font-family:宋体"}[radio ]{lang="EN-US"}[1]{lang="EN-US"}[对非法设备进行反制时，添加反制记录失败]{style="font-family:宋体"}*
+\# 配置WIPS，并打开WIPS事件调试信息开关。
 
-[ ]{lang="EN-US"}
+\<Sysname\> debugging wips event
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1926_14152_x1182256035}[配置]{style="font-family:宋体"}[WIPS]{lang="EN-US"}[，并打开]{style="font-family:宋体"}[WIPS]{lang="EN-US"}[检测调试信息开关。]{style="font-family:宋体"}
+\*Apr  4 15:59:28:081 2014 Sysname WIPS/7/EVENT: -MDC=1; Process AP down event from APMGR
 
-[[\<Sysname\> debugging wips detect]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1926_14152_1533297422}
+*// 处理来自APMGR模块的AP下线的事件*
 
-[[\*Apr  4 15:55:28:081 2014 Sysname WIPS/7/]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}[ ]{lang="EN-US"}]{#struct_0_x1926_14152_x2115717239}[DETECT: -MDC=1; Received AP status change message from sensor 100 on radio 1.]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_x1926_14152_883422735}*[从]{style="font-family:宋体"}[sensor 100]{lang="EN-US"}[的]{style="font-family:宋体"}[radio 1]{lang="EN-US"}[收到]{style="font-family:宋体"}[AP]{lang="EN-US"}[状态改变消息]{style="font-family:宋体"}*
-
-[ ]{lang="EN-US"}
-
-[[\# ]{lang="EN-US"}]{#struct_0_x1926_14152_x429338350}[配置]{style="font-family:宋体"}[WIPS]{lang="EN-US"}[，并打开]{style="font-family:宋体"}[WIPS]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}
-
-[[\<Sysname\> debugging wips event]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_x1926_14152_1826265589}
-
-[[\*Apr  4 15:59:28:081 2014 Sysname WIPS/7/]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}[ ]{lang="EN-US"}]{#struct_0_x1926_14152_x328804791}[EVENT: -MDC=1; Process AP down event from APMGR]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_x1926_14152_x912773257}*[处理来自]{style="font-family:宋体"}[APMGR]{lang="EN-US"}[模块的]{style="font-family:宋体"}[AP]{lang="EN-US"}[下线的事件]{style="font-family:宋体"}*
-
-[ ]{lang="EN-US"}

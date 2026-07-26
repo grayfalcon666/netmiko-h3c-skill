@@ -1,3708 +1,3429 @@
-::: {#1188054656 .myid}
-[]{#_Toc404796930}[]{#struct_0_x1400_15709_1906380415}
 
 **SNMP \-- SNMP配置命令 \-- display snmp-agent community**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **snmp-agent** **community**]{lang="EN-US"}]{#struct_0_x1400_15709_1325868046}[命令用来显示]{style="font-family:宋体"}[SNMPv1]{lang="EN-US"}[或]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[的团体信息。]{style="font-family:宋体"}
+**[display** **snmp-agent** **community**]命令用来显示SNMPv1或SNMPv2c的团体信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_499963828}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **snmp-agent** **community** \[ **read** \| **write** \]]{lang="EN-US"}]{#struct_0_x1400_15709_1520279440}
+**[display**[ **snmp-agent** **community** [ **read** \| **write** ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_974030602}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_x944658852}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1466386837}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x723613523}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1400_15709_1897160552}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x2013505389}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1400_15709_x1924870542}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1559224866}
+【参数】
 
-[**[read]{lang="EN-US"}**]{#struct_0_x1400_15709_515827022}[：显示只读访问权限的团体信息。]{style="font-family:宋体"}
+**[read**]：显示只读访问权限的团体信息。
 
-[**[write]{lang="EN-US"}**]{#struct_0_x1400_15709_974096138}[：显示读写访问权限的团体信息。]{style="font-family:宋体"}
+**[write**]：显示读写访问权限的团体信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1373972647}
+【使用指导】
 
-[[FIPS]{lang="EN-US"}]{#struct_0_x1400_15709_1008267756}[模式下，不支持本命令。]{style="font-family:宋体"}
+FIPS模式下，不支持本命令。
 
-[[不带参数时，显示所有]{style="font-family:宋体"}[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_1631224320}[团体的信息。]{style="font-family:宋体"}
+不带参数时，显示所有SNMP团体的信息。
 
-[[用户可以使用]{style="font-family:宋体"}**[snmp-agent]{lang="EN-US"}**[ **community**]{lang="EN-US"}]{#struct_0_x1400_15709_849363694}[命令来创建团体，另外，配置]{style="font-family:宋体"}**[snmp-agent]{lang="EN-US"}**[ **usm-user** { **v1** \| **v2c** }]{lang="EN-US"}[和]{style="font-family:宋体"}**[snmp-agent]{lang="EN-US"}**[ **group** { **v1** \| **v2c** }]{lang="EN-US"}[命令成功创建]{style="font-family:宋体"}[SNMPv1]{lang="EN-US"}[或]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[用户以及相应的组后，系统会自动添加一个新的同名的只读团体名。]{style="font-family:宋体"}**[display]{lang="EN-US"}**[ **snmp-agent** **community**]{lang="EN-US"}[会显示这两种方式创建的团体的信息。]{style="font-family:宋体"}
+用户可以使用**snmp-agent** **community**命令来创建团体，另外，配置**snmp-agent**[ **usm-user** { **v1** \| **v2c** }]和**snmp-agent**[ **group** { **v1** \| **v2c** }]命令成功创建SNMPv1或SNMPv2c用户以及相应的组后，系统会自动添加一个新的同名的只读团体名。**display** **snmp-agent** **community**会显示这两种方式创建的团体的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1368546094}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x1141698860}[显示设备当前所有已配置的团体信息。]{style="font-family:宋体"}
+\# 显示设备当前所有已配置的团体信息。
 
-[[\<Sysname\> display snmp-agent community]{lang="EN-US"}]{#struct_0_x1400_15709_973113098}
+\<Sysname\> display snmp-agent community
 
-[   Community name: aa]{lang="EN-US"}
+   Community name: aa
 
-[       Group name: aa]{lang="EN-US"}
+       Group name: aa
 
-[       ACL:2001]{lang="EN-US"}
+       ACL:2001
 
-[       Storage-type: nonVolatile]{lang="EN-US"}
+       Storage-type: nonVolatile
 
-[       Context name: con1]{lang="EN-US"}
+       Context name: con1
 
-[ ]{lang="EN-US"}
+   Community name: bb
 
-[   Community name: bb]{lang="EN-US"}
+       Role name: bb
 
-[       Role name: bb]{lang="EN-US"}
+       Storage-type: nonVolatile
 
-[       Storage-type: nonVolatile]{lang="EN-US"}
+   Community name: userv1
 
-[ ]{lang="EN-US"}
+       Group name: testv1
 
-[   Community name: userv1]{lang="EN-US"}
+       Storage type: nonVolatile
 
-[       Group name: testv1]{lang="EN-US"}
+   Community name: cc
 
-[       Storage type: nonVolatile]{lang="EN-US"}
+       Group name: cc
 
-[ ]{lang="EN-US"}
+       ACL name: testacl
 
-[   Community name: cc]{lang="EN-US"}
+       Storage type: nonVolatile
 
-[       Group name: cc]{lang="EN-US"}
+表1-1 display snmp-agent community命令显示信息描述表
 
-[       ACL name: testacl]{lang="EN-US"}
+字段
 
-[       Storage type: nonVolatile]{lang="EN-US"}
+描述
 
-[]{#struct_0_x1400_15709_1039545099}[[表1-1 ]{lang="EN-US"}[display snmp-agent community]{lang="EN-US"}]{#_Ref291745733}[命令显示信息描述表]{style="font-family:黑体"}
+Community name
 
-[]{#table_struct_0_1563467589}[[字段]{style="font-family:黑体"}]{#struct_0_x1400_15709_1893911930}
-:::
+团体名：
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1730551062}
+·如果团体是通过**snmp-agent** **community**命令创建的，则显示的是团体名
 
-[[Community name]{lang="EN-US"}]{#struct_0_x1400_15709_x748738585}
+[·如果团体名是通过**snmp-agent**[ **usm-user** { **v1** \| **v2c** }]]命令创建的，则显示的是用户名
 
-[[团体名：]{style="font-family:宋体"}]{#struct_0_x1400_15709_1573041744}
+Group name
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果团体是通过]{lang="EN-US" style="font-family:宋体"}**[snmp-agent]{lang="EN-US"}**[ **community**]{lang="EN-US"}]{#struct_0_x1400_15709_973178634}[命令创建的，则显示的是团体名]{lang="EN-US" style="font-family:
-  宋体"}
+组名：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果团体名是通过]{lang="EN-US" style="font-family:宋体"}**[snmp-agent]{lang="EN-US"}**[ **usm-user** { **v1** \| **v2c** }]{lang="EN-US"}]{#struct_0_x1400_15709_1812220327}[命令创建的，则显示的是用户名]{lang="EN-US" style="font-family:宋体"}
+·如果团体名是通过**snmp-agent** **community**命令的VACM方式创建的，则组名和团体名相同
 
-[[Group name]{lang="EN-US"}]{#struct_0_x1400_15709_x56228507}
+[·如果团体名是通过**snmp-agent**[ **usm-user** { **v1** \| **v2c** }]]命令创建的，则显示用户所在的组名
 
-[[组名：]{style="font-family:宋体"}]{#struct_0_x1400_15709_x880842845}
+Role name
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果团体名是通过]{lang="EN-US" style="font-family:宋体"}**[snmp-agent]{lang="EN-US"}**[ **community**]{lang="EN-US"}]{#struct_0_x1400_15709_x194814924}[命令]{lang="EN-US" style="font-family:
-  宋体"}[的]{style="font-family:宋体"}[VACM]{lang="EN-US"}[方式]{style="font-family:宋体"}[创建的，则组名和团体名相同]{lang="EN-US" style="font-family:宋体"}
+SNMP用户所在团体绑定的角色名：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果团体名是通过]{lang="EN-US" style="font-family:宋体"}**[snmp-agent]{lang="EN-US"}**[ **usm-user** { **v1** \| **v2c** }]{lang="EN-US"}]{#struct_0_x1400_15709_x1822623465}[命令创建的，则显示用户所在的组名]{lang="EN-US" style="font-family:宋体"}
+通过**snmp-agent** **community**命令的RBAC方式创建的团体名可绑定用户角色
 
-[[Role name]{lang="EN-US"}]{#struct_0_x1400_15709_388967996}
+ACL
 
-[[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_1950367483}[用户所在团体绑定的角色名：]{style="font-family:宋体"}
+使用的ACL列表的编号（该字段仅在团体名与ACL绑定后显示，不会与ACL name同时存在）
 
-[[通过]{style="font-family:宋体"}**[snmp-agent]{lang="EN-US"}**[ **community**]{lang="EN-US"}]{#struct_0_x1400_15709_2083386607}[命令的]{style="font-family:宋体"}[RBAC]{lang="EN-US"}[方式创建的团体名可绑定用户角色]{style="font-family:宋体"}
+ACL name
 
-[[ACL]{lang="EN-US"}]{#struct_0_x1400_15709_973637383}
+使用的ACL列表的名称（该字段仅在团体名与ACL名称绑定后显示，不会与ACL同时存在）
 
-[[使用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}]{#struct_0_x1400_15709_1822795741}[列表的编号（该字段仅在团体名与]{style="font-family:宋体"}[ACL]{lang="EN-US"}[绑定后显示，不会与]{style="font-family:宋体"}[ACL name]{lang="EN-US"}[同时存在）]{style="font-family:宋体"}
+Storage type
 
-[[ACL name]{lang="EN-US"}]{#struct_0_x1400_15709_1542968247}
+表示存储方式，分为以下几种：
 
-[[使用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}]{#struct_0_x1400_15709_x586094710}[列表的名称（该字段仅在团体名与]{style="font-family:宋体"}[ACL]{lang="EN-US"}[名称绑定后显示，不会与]{style="font-family:宋体"}[ACL]{lang="EN-US"}[同时存在）]{style="font-family:宋体"}
+·volatile：重启后信息丢失
 
-[[Storage type]{lang="EN-US"}]{#struct_0_x1400_15709_x1976183374}
+·nonVolatile：重启后信息仍保存
 
-[[表示存储方式，分为以下几种：]{style="font-family:宋体"}]{#struct_0_x1400_15709_840927340}
+·permanent：重启后信息仍保存，允许更改，但不许删除
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[volatile]{lang="EN-US"}]{#struct_0_x1400_15709_x2135701222}[：重启后信息丢失]{lang="EN-US" style="font-family:宋体"}
+·readOnly：重启后信息仍保存，既不允许更改，也不许删除
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[nonVolatile]{lang="EN-US"}]{#struct_0_x1400_15709_x918766121}[：重启后信息仍保存]{lang="EN-US" style="font-family:宋体"}
+·other：其他
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[permanent]{lang="EN-US"}]{#struct_0_x1400_15709_973702919}[：重启后信息仍保存，允许更改，但不许删除]{lang="EN-US" style="font-family:宋体"}
+Context name
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[readOnly]{lang="EN-US"}]{#struct_0_x1400_15709_1001743080}[：重启后信息仍保存，既不允许更改，也不许删除]{lang="EN-US" style="font-family:宋体"}
+SNMP上下文：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[other]{lang="EN-US"}]{#struct_0_x1400_15709_1795993318}[：其他]{lang="EN-US" style="font-family:宋体"}
+·如果此团体名配置了对应的上下文映射，则显示对应的上下文
 
-[[Context name]{lang="EN-US"}]{#struct_0_x1400_15709_x1843267149}
+·如果此团体名未配置对应的上下文映射，则不显示该字段
 
-[[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_973768455}[上下文：]{style="font-family:宋体"}
+【相关命令】
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果此团体名配置了对应的上下文映射，则显示对应的上下文]{style="font-family:宋体"}]{#struct_0_x1400_15709_305750033}
+·**snmp-agent** **community**
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果此团体名未配置对应的上下文映射，则不显示该字段]{style="font-family:宋体"}]{#struct_0_x1400_15709_x942924553}
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_973833991}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **community**]{lang="EN-US"}]{#struct_0_x1400_15709_x1569627263}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **usm-user** { **v1** \| **v2c** }]{lang="EN-US"}]{#struct_0_x1400_15709_x509108675}
-
-::: {#925430076 .myid}
-[]{#_Toc404796931}[]{#struct_0_x1400_15709_1118410163}[]{#_Toc345227791}
+[·**snmp-agent**[ **usm-user** { **v1** \| **v2c** }]]
 
 **SNMP \-- SNMP配置命令 \-- display snmp-agent context**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **snmp-agent context** ]{lang="EN-US"}]{#struct_0_x1400_15709_x12450657}[命令用来显示指定的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[上下文。]{style="font-family:宋体"}
+**[display** **snmp-agent context** ]命令用来显示指定的SNMP上下文。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1435375622}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **snmp-agent context** \[ *context-name* \]]{lang="EN-US"}]{#struct_0_x1400_15709_1899941433}
+**[display** **snmp-agent context** [ *context-name* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1801657622}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_1100587331}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_973899527}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_109767945}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1400_15709_1036336883}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1419039744}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1400_15709_494775696}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_752513944}
+【参数】
 
-[*[context-name]{lang="EN-US"}*]{#struct_0_x1400_15709_x449629263}[：显示指定的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[上下文，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[个字符的字符串，区分大小写。不指定该参数时，显示设备上所有已创建的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[上下文。]{style="font-family:宋体"}
+*[context-name*]：显示指定的SNMP上下文，为1～32个字符的字符串，区分大小写。不指定该参数时，显示设备上所有已创建的SNMP上下文。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_973965063}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_1627337343}[显示设备上所有已创建的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[上下文。]{style="font-family:宋体"}
+\# 显示设备上所有已创建的SNMP上下文。
 
-[[\<Sysname\> display snmp-agent context]{lang="EN-US"}]{#struct_0_x1400_15709_x821051541}
+\<Sysname\> display snmp-agent context
 
-[   trillcontext]{lang="EN-US"}
+   trillcontext
 
-[   isiscontext]{lang="EN-US"}
+   isiscontext
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_75003147}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent context]{lang="EN-US"}**]{#struct_0_x1400_15709_x1740708398}
-:::
-
-::: {#-116423928 .myid}
-[]{#_Toc404796932}[]{#struct_0_x1400_15709_x1282003563}
+·**snmp-agent context**
 
 **SNMP \-- SNMP配置命令 \-- display snmp-agent group**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **snmp-agent** **group**]{lang="EN-US"}]{#struct_0_x1400_15709_x1568190767}[命令用来显示]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[组信息，包括组名、安全模式、视图、存储方式等。]{style="font-family:宋体"}
+**[display** **snmp-agent** **group**]命令用来显示SNMP组信息，包括组名、安全模式、视图、存储方式等。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_974030599}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **snmp-agent** **group** \[ *group-name* \]]{lang="EN-US"}]{#struct_0_x1400_15709_x538639306}
+**[display** **snmp-agent** **group** [ *group-name* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_963580689}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_x1327740307}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1340154243}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_126513487}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1400_15709_584001052}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_964637396}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1400_15709_1652419943}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_974096135}
+【参数】
 
-[*[group-name]{lang="EN-US"}*]{#struct_0_x1400_15709_x1373972636}[：非]{style="font-family:宋体"}[FIPS]{lang="EN-US"}[模式下，指定要显示信息的]{style="font-family:宋体"}[SNMPv1]{lang="EN-US"}[、]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[或]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[组名；]{style="font-family:宋体"}[FIPS]{lang="EN-US"}[模式下，指定要显示信息的]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[组名。为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[个字符的字符串，区分大小写。不指定该参数时，显示设备上所有已创建的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[组的信息。]{style="font-family:宋体"}
+*[group-name*]：非FIPS模式下，指定要显示信息的SNMPv1、SNMPv2c或SNMPv3组名；FIPS模式下，指定要显示信息的SNMPv3组名。为1～32个字符的字符串，区分大小写。不指定该参数时，显示设备上所有已创建的SNMP组的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x523512888}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x643634570}[显示所有]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[组的信息。]{style="font-family:宋体"}
+\# 显示所有SNMP组的信息。
 
-[[\<Sysname\> display snmp-agent group]{lang="EN-US"}]{#struct_0_x1400_15709_x88850650}
+\<Sysname\> display snmp-agent group
 
-[   Group name: groupv3]{lang="EN-US"}
+   Group name: groupv3
 
-[       Security model: v3 noAuthnoPriv]{lang="EN-US"}
+       Security model: v3 noAuthnoPriv
 
-[       Readview: ViewDefault]{lang="EN-US"}
+       Readview: ViewDefault
 
-[       Writeview: \<no specified\>]{lang="EN-US"}
+       Writeview: \<no specified\>
 
-[       Notifyview: \<no specified\>]{lang="EN-US"}
+       Notifyview: \<no specified\>
 
-[       Storage-type: nonVolatile]{lang="EN-US"}
+       Storage-type: nonVolatile
 
-[       ACL name: testacl]{lang="EN-US"}
+       ACL name: testacl
 
-[[表1-2 ]{lang="EN-US"}[display snmp-agent group]{lang="EN-US"}]{#struct_0_x1400_15709_973113095}[命令显示信息描述表]{style="font-family:黑体"}
+表1-2 display snmp-agent group命令显示信息描述表
 
-[]{#table_struct_0_1592868709}[[字段]{style="font-family:黑体"}]{#struct_0_x1400_15709_1039545094}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1400_15709_1893191034}
+描述
 
-[[Group name]{lang="EN-US"}]{#struct_0_x1400_15709_x2140478478}
+Group name
 
-[[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_92961241}[组名]{style="font-family:宋体"}
+SNMP组名
 
-[[Security model]{lang="EN-US"}]{#struct_0_x1400_15709_x216261563}
+Security model
 
-[[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_1789025626}[组配置的安全模式，包括版本信息和安全模式，以空格分隔：]{style="font-family:宋体"}
+SNMP组配置的安全模式，包括版本信息和安全模式，以空格分隔：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于]{style="font-family:宋体"}]{#struct_0_x1400_15709_973178631}[SNMPv1]{lang="EN-US"}[和]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[版本，认证加密级别只能为]{style="font-family:宋体"}[noAuthNoPriv]{lang="EN-US"}[（无认证无加密）]{style="font-family:宋体"}
+·对于SNMPv1和SNMPv2c版本，认证加密级别只能为noAuthNoPriv（无认证无加密）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[对于]{lang="EN-US" style="font-family:宋体"}[SNMPv3]{lang="EN-US"}]{#struct_0_x1400_15709_1812220330}[版本，安全模式分为三种：]{lang="EN-US" style="font-family:宋体"}[authPriv]{lang="EN-US"}[（既认证又加密）、]{lang="EN-US" style="font-family:宋体"}[authNoPriv]{lang="EN-US"}[（只认证不加密）、]{lang="EN-US" style="font-family:宋体"}[noAuthNoPriv]{lang="EN-US"}[（不认证不加密）]{lang="EN-US" style="font-family:宋体"}
+·对于SNMPv3版本，安全模式分为三种：authPriv（既认证又加密）、authNoPriv（只认证不加密）、noAuthNoPriv（不认证不加密）
 
-[[Readview]{lang="EN-US"}]{#struct_0_x1400_15709_x56556188}
+Readview
 
-[[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_641242567}[组对应的只读的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[视图名]{style="font-family:宋体"}
+SNMP组对应的只读的MIB视图名
 
-[[Writeview]{lang="EN-US"}]{#struct_0_x1400_15709_x52280076}
+Writeview
 
-[[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_897909209}[组对应的可写的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[视图名]{style="font-family:宋体"}
+SNMP组对应的可写的MIB视图名
 
-[[Notifyview]{lang="EN-US"}]{#struct_0_x1400_15709_973637384}
+Notifyview
 
-[[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_1822795748}[组对应的可以发]{style="font-family:宋体"}[Trap]{lang="EN-US"}[和]{style="font-family:宋体"}[Inform]{lang="EN-US"}[信息的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[视图名]{style="font-family:宋体"}
+SNMP组对应的可以发Trap和Inform信息的MIB视图名
 
-[[Storage-type]{lang="EN-US"}]{#struct_0_x1400_15709_x1976773198}
+Storage-type
 
-[[存储方式，分为以下几种：]{style="font-family:宋体"}[volatile]{lang="EN-US"}]{#struct_0_x1400_15709_x2026664603}[、]{style="font-family:宋体"}[nonVolatile]{lang="EN-US"}[、]{style="font-family:宋体"}[permanent]{lang="EN-US"}[、]{style="font-family:宋体"}[readOnly]{lang="EN-US"}[、]{style="font-family:宋体"}[other]{lang="EN-US"}[，具体请参见]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-1]{lang="EN-US"}](?1188054656#_Ref291745733)
+存储方式，分为以下几种：volatile、nonVolatile、permanent、readOnly、other，具体请参见[表]1-1(?1188054656#_Ref291745733)
 
-[[ACL]{lang="EN-US"}]{#struct_0_x1400_15709_585060604}
+ACL
 
-[[使用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}]{#struct_0_x1400_15709_973702920}[列表的编号（该字段仅在]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[组与]{style="font-family:宋体"}[ACL]{lang="EN-US"}[绑定后显示，不会与]{style="font-family:宋体"}[ACL name]{lang="EN-US"}[同时存在）]{style="font-family:宋体"}
+使用的ACL列表的编号（该字段仅在SNMP组与ACL绑定后显示，不会与ACL name同时存在）
 
-[[ACL name]{lang="EN-US"}]{#struct_0_x1400_15709_1543164856}
+ACL name
 
-[[使用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}]{#struct_0_x1400_15709_x100699827}[列表的名称（该字段仅在]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[组与]{style="font-family:宋体"}[ACL]{lang="EN-US"}[名称绑定后显示，不会与]{style="font-family:宋体"}[ACL]{lang="EN-US"}[同时存在）]{style="font-family:宋体"}
+使用的ACL列表的名称（该字段仅在SNMP组与ACL名称绑定后显示，不会与ACL同时存在）
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1336909089}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **group**]{lang="EN-US"}]{#struct_0_x1400_15709_x1417902615}
-
-::: {#-364242265 .myid}
-[]{#_Toc404796933}[]{#struct_0_x1400_15709_1868044785}
+·**snmp-agent** **group**
 
 **SNMP \-- SNMP配置命令 \-- display snmp-agent local-engineid**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **snmp-agent** **local-engineid**]{lang="EN-US"}]{#struct_0_x1400_15709_x280156624}[命令用来显示本地设备的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[display** **snmp-agent** **local-engineid**]命令用来显示本地设备的SNMP实体引擎ID。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1870867867}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **snmp-agent** **local-engineid**]{lang="EN-US"}]{#struct_0_x1400_15709_x373916916}
+**[display** **snmp-agent** **local-engineid**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_224444039}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_973768456}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_305750030}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x942924556}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1400_15709_x1304084668}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1284287302}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1400_15709_571147244}
+mdc-operator
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1041233038}
+【使用指导】
 
-[[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_x696688211}[实体引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[是]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体的唯一标识，它在一个]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[管理域内是唯一的。]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体引擎是]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体的重要组成部分，完成]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[信息的信息调度、信息处理、安全验证、访问控制等功能。]{style="font-family:宋体"}
+SNMP实体引擎ID是SNMP实体的唯一标识，它在一个SNMP管理域内是唯一的。SNMP实体引擎是SNMP实体的重要组成部分，完成SNMP信息的信息调度、信息处理、安全验证、访问控制等功能。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_973833992}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x1569627264}[显示本地设备的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 显示本地设备的SNMP实体引擎ID。
 
-[[\<Sysname\> display snmp-agent local-engineid]{lang="EN-US"}]{#struct_0_x1400_15709_x912393202}
+\<Sysname\> display snmp-agent local-engineid
 
-[SNMP local engine ID: 800007DB7F0000013859]{lang="EN-US"}
+SNMP local engine ID: 800007DB7F0000013859
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_2117039211}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **local-engineid**]{lang="EN-US"}]{#struct_0_x1400_15709_973965064}[]{#_Toc340753834}
-:::
-
-::: {#-11971892 .myid}
-[]{#_Toc404796934}[]{#struct_0_x1400_15709_1627337340}
+·**snmp-agent** **local-engineid**
 
 **SNMP \-- SNMP配置命令 \-- display snmp-agent mib-node**
 
 ------------------------------------------------------------------------
 
-[**[display snmp-agent mib-node]{lang="EN-US"}**]{#struct_0_x1400_15709_x821248149}[命令用来显示当前]{style="font-family:
-宋体"}[SNMP]{lang="EN-US"}[支持的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[节点信息。]{style="font-family:宋体"}
+**[display snmp-agent mib-node**]命令用来显示当前SNMP支持的MIB节点信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1537890934}
+【命令】
 
-[**[display snmp-agent mib-node ]{lang="EN-US"}**[\[ **details** \| **index-node** \| **trap-node** \| **verbose** \]]{lang="EN-US"}]{#struct_0_x1400_15709_1340760687}
+**[display snmp-agent mib-node **[[ **details** \| **index-node** \| **trap-node** \| **verbose** ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1689863021}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_1050018256}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_165595628}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_974030600}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1400_15709_x944658850}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1466517909}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1400_15709_306071083}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1372212076}
+【参数】
 
-[**[details]{lang="SV"}**]{#struct_0_x1400_15709_982851200}[：]{style="font-family:宋体"} [表示显示]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[支持的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[节点细节信息，包括节点名、]{style="font-family:宋体"}[OID]{lang="EN-US"}[末位、下一个叶子节点名。]{style="font-family:宋体"}
+**[details**]： 表示显示SNMP支持的MIB节点细节信息，包括节点名、OID末位、下一个叶子节点名。
 
-[**[index-node]{lang="SV"}**]{#struct_0_x1400_15709_x2057749861}[：]{style="font-family:宋体"}[显示]{style="font-family:宋体"}[SNMP]{lang="SV"}[支持的]{style="font-family:宋体"}[MIB]{lang="SV"}[表、节点名及索引节点]{style="font-family:宋体"}[OID]{lang="SV"}[。]{style="font-family:宋体"}
+**[index-node**]：显示SNMP支持的MIB表、节点名及索引节点OID。
 
-[**[trap-node]{lang="EN-US"}**]{#struct_0_x1400_15709_2079303648}[：显示]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[支持的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[告警节点名及对应的]{style="font-family:宋体"}[OID]{lang="EN-US"}[、告警绑定变量节点名及对应的]{style="font-family:宋体"}[OID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[trap-node**]：显示SNMP支持的MIB告警节点名及对应的OID、告警绑定变量节点名及对应的OID。
 
-[**[verbose]{lang="SV"}**]{#struct_0_x1400_15709_974096136}[：显示]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[支持的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[节点详细信息，包括节点名、]{style="font-family:宋体"}[OID]{lang="EN-US"}[、节点类型、访问权限、数据类型，对应]{style="font-family:宋体"}[MOR]{lang="EN-US"}[（]{style="font-family:宋体"}[Managed Object Repository]{lang="EN-US"}[，管理对象库）定义、父子兄弟节点信息等。]{style="font-family:宋体"}
+**[verbose**]：显示SNMP支持的MIB节点详细信息，包括节点名、OID、节点类型、访问权限、数据类型，对应MOR（Managed Object Repository，管理对象库）定义、父子兄弟节点信息等。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1373972633}
+【使用指导】
 
-[[未指定任何参数时，显示]{style="font-family:宋体"}[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_x961297320}[支持的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[节点信息，包括节点名、]{style="font-family:宋体"}[OID]{lang="EN-US"}[和节点访问权限。]{style="font-family:宋体"}
+未指定任何参数时，显示SNMP支持的MIB节点信息，包括节点名、OID和节点访问权限。
 
-[[特性包中可以包含不同的]{style="font-family:宋体"}[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_x337424163}[插件，设备根据加载特性包的不同，支持的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[不相同。]{style="font-family:宋体"}
+特性包中可以包含不同的MIB插件，设备根据加载特性包的不同，支持的MIB不相同。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1337331757}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x219438944}[显示]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[支持]{style="font-family:宋体"}[MIB]{lang="EN-US"}[节点信息。]{style="font-family:宋体"}
+\# 显示SNMP支持MIB节点信息。
 
-[[\<Sysname\> display snmp-agent mib-node]{lang="EN-US"}]{#struct_0_x1400_15709_973113096}
+\<Sysname\> display snmp-agent mib-node
 
-[iso\<1\>(NA)]{lang="EN-US"}
+iso\<1\>(NA)
 
-[  \|-std\<1.0\>(NA)]{lang="EN-US"}
+[  \|-std\<1.0\>(NA)]
 
-[   \|-iso8802\<1.0.8802\>(NA)]{lang="EN-US"}
+[   \|-iso8802\<1.0.8802\>(NA)]
 
-[    \|-ieee802dot1\<1.0.8802.1\>(NA)]{lang="EN-US"}
+[    \|-ieee802dot1\<1.0.8802.1\>(NA)]
 
-[     \|-ieee802dot1mibs\<1.0.8802.1.1\>(NA)]{lang="EN-US"}
+[     \|-ieee802dot1mibs\<1.0.8802.1.1\>(NA)]
 
-[      \|-lldpMIB\<1.0.8802.1.1.2\>(NA)]{lang="EN-US"}
+[      \|-lldpMIB\<1.0.8802.1.1.2\>(NA)]
 
-[       \|-lldpNotifications\<1.0.8802.1.1.2.0\>(NA)]{lang="EN-US"}
+[       \|-lldpNotifications\<1.0.8802.1.1.2.0\>(NA)]
 
-[        \|-lldpNotificationPrefix\<1.0.8802.1.1.2.0.0\>(NA)]{lang="EN-US"}
+[        \|-lldpNotificationPrefix\<1.0.8802.1.1.2.0.0\>(NA)]
 
-[         \|-lldpRemTablesChange\<1.0.8802.1.1.2.0.0.1\>(NA)]{lang="EN-US"}
+[         \|-lldpRemTablesChange\<1.0.8802.1.1.2.0.0.1\>(NA)]
 
-[       \|-lldpObjects\<1.0.8802.1.1.2.1\>(NA)]{lang="EN-US"}
+[       \|-lldpObjects\<1.0.8802.1.1.2.1\>(NA)]
 
-[        \|-lldpConfiguration\<1.0.8802.1.1.2.1.1\>(NA)]{lang="EN-US"}
+[        \|-lldpConfiguration\<1.0.8802.1.1.2.1.1\>(NA)]
 
-[         \|-\*lldpMessageTxInterval\<1.0.8802.1.1.2.1.1.1\>(RW)]{lang="EN-US"}
+[         \|-\*lldpMessageTxInterval\<1.0.8802.1.1.2.1.1.1\>(RW)]
 
-[         \|-\*lldpMessageTxHoldMultiplier\<1.0.8802.1.1.2.1.1.2\>(RW)]{lang="EN-US"}
+[         \|-\*lldpMessageTxHoldMultiplier\<1.0.8802.1.1.2.1.1.2\>(RW)]
 
-[         \|-\*lldpReinitDelay\<1.0.8802.1.1.2.1.1.3\>(RW)]{lang="EN-US"}
+[         \|-\*lldpReinitDelay\<1.0.8802.1.1.2.1.1.3\>(RW)]
 
-[ ]{lang="SV"}
+表1-3 display snmp-agent mib-node命令显示信息描述表
 
-[[表1-3 ]{lang="EN-US"}[display snmp-agent mib-node]{lang="EN-US"}]{#struct_0_x1400_15709_1039545097}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1587440773}[[字段]{style="font-family:黑体"}]{#struct_0_x1400_15709_1892994426}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1400_15709_1365453296}
+-std
 
-[[-std]{lang="EN-US"}]{#struct_0_x1400_15709_x443895520}
+MIB节点名
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_x1533823997}[节点名]{style="font-family:宋体"}
+\<1.0\>
 
-[[\<1.0\>]{lang="EN-US"}]{#struct_0_x1400_15709_973178632}
+MIB节点对应的OID
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_1812220329}[节点对应的]{style="font-family:宋体"}[OID]{lang="EN-US"}
+(NA)
 
-[[(NA)]{lang="EN-US"}]{#struct_0_x1400_15709_x56097435}
+MIB节点访问权限，取值为：
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_x1893075953}[节点访问权限，取值为：]{style="font-family:宋体"}
+NA：表示节点不可访问
 
-[[NA]{lang="EN-US"}]{#struct_0_x1400_15709_1251661957}[：表示节点不可访问]{style="font-family:宋体"}
+NF：表示节点支持告警
 
-[[NF]{lang="EN-US"}]{#struct_0_x1400_15709_x1471565777}[：表示节点支持告警]{style="font-family:宋体"}
+RO：表示节点支持只读访问
 
-[[RO]{lang="EN-US"}]{#struct_0_x1400_15709_509512597}[：表示节点支持只读访问]{style="font-family:宋体"}
+RW：表示节点支持读写访问
 
-[[RW]{lang="EN-US"}]{#struct_0_x1400_15709_973637381}[：表示节点支持读写访问]{style="font-family:宋体"}
+RC：表示节点支持读写创建访问
 
-[[RC]{lang="EN-US"}]{#struct_0_x1400_15709_1822795743}[：表示节点支持读写创建访问]{style="font-family:宋体"}
+WO：表示节点支持只写访问
 
-[[WO]{lang="EN-US"}]{#struct_0_x1400_15709_x1976052302}[：表示节点支持只写访问]{style="font-family:宋体"}
+\*
 
-[[\*]{lang="EN-US"}]{#struct_0_x1400_15709_343281483}
+表示叶子节点或表节点
 
-[[表示叶子节点或表节点]{style="font-family:宋体"}]{#struct_0_x1400_15709_897530050}
+\# 显示SNMP支持MIB节点细节信息。
 
-[ ]{lang="EN-US"}
+\<Sysname\> display snmp-agent mib-node details
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x54046991}[显示]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[支持]{style="font-family:宋体"}[MIB]{lang="EN-US"}[节点细节信息。]{style="font-family:宋体"}
+iso(1)(lldpMessageTxInterval)
 
-[[\<Sysname\> display snmp-agent mib-node details]{lang="EN-US"}]{#struct_0_x1400_15709_973702917}
+[  \|-std(0)(lldpMessageTxInterval)]
 
-[iso(1)(lldpMessageTxInterval)]{lang="EN-US"}
+[   \|-iso8802(8802)(lldpMessageTxInterval)]
 
-[  \|-std(0)(lldpMessageTxInterval)]{lang="EN-US"}
+[    \|-ieee802dot1(1)(lldpMessageTxInterval)]
 
-[   \|-iso8802(8802)(lldpMessageTxInterval)]{lang="EN-US"}
+[     \|-ieee802dot1mibs(1)(lldpMessageTxInterval)]
 
-[    \|-ieee802dot1(1)(lldpMessageTxInterval)]{lang="EN-US"}
+[      \|-lldpMIB(2)(lldpMessageTxInterval)]
 
-[     \|-ieee802dot1mibs(1)(lldpMessageTxInterval)]{lang="EN-US"}
+[       \|-lldpNotifications(0)(lldpMessageTxInterval)]
 
-[      \|-lldpMIB(2)(lldpMessageTxInterval)]{lang="EN-US"}
+[        \|-lldpNotificationPrefix(0)(lldpMessageTxInterval)]
 
-[       \|-lldpNotifications(0)(lldpMessageTxInterval)]{lang="EN-US"}
+[         \|-lldpRemTablesChange(1)(NULL)]
 
-[        \|-lldpNotificationPrefix(0)(lldpMessageTxInterval)]{lang="EN-US"}
+[       \|-lldpObjects(1)(lldpMessageTxInterval)]
 
-[         \|-lldpRemTablesChange(1)(NULL)]{lang="EN-US"}
+[        \|-lldpConfiguration(1)(lldpMessageTxInterval)]
 
-[       \|-lldpObjects(1)(lldpMessageTxInterval)]{lang="EN-US"}
+[         \|-\*lldpMessageTxInterval(1)(lldpMessageTxHoldMultiplier)]
 
-[        \|-lldpConfiguration(1)(lldpMessageTxInterval)]{lang="EN-US"}
+[         \|-\*lldpMessageTxHoldMultiplier(2)(lldpReinitDelay)]
 
-[         \|-\*lldpMessageTxInterval(1)(lldpMessageTxHoldMultiplier)]{lang="EN-US"}
+[         \|-\*lldpReinitDelay(3)(lldpTxDelay)]
 
-[         \|-\*lldpMessageTxHoldMultiplier(2)(lldpReinitDelay)]{lang="EN-US"}
+[         \|-\*lldpTxDelay(4)(lldpNotificationInterval)]
 
-[         \|-\*lldpReinitDelay(3)(lldpTxDelay)]{lang="EN-US"}
+[         \|-\*lldpNotificationInterval(5)(lldpPortConfigPortNum)]
 
-[         \|-\*lldpTxDelay(4)(lldpNotificationInterval)]{lang="EN-US"}
+[         \|-lldpPortConfigTable(6)(lldpPortConfigPortNum)]
 
-[         \|-\*lldpNotificationInterval(5)(lldpPortConfigPortNum)]{lang="EN-US"}
+[          \|-lldpPortConfigEntry(1)(lldpPortConfigPortNum)]
 
-[         \|-lldpPortConfigTable(6)(lldpPortConfigPortNum)]{lang="EN-US"}
+[           \|-\*lldpPortConfigPortNum(1)(lldpPortConfigAdminStatus)]
 
-[          \|-lldpPortConfigEntry(1)(lldpPortConfigPortNum)]{lang="EN-US"}
+[           \|-\*lldpPortConfigAdminStatus(2)(lldpPortConfigNotificationEnable)]
 
-[           \|-\*lldpPortConfigPortNum(1)(lldpPortConfigAdminStatus)]{lang="EN-US"}
+[           \|-\*lldpPortConfigNotificationEnable(3)(lldpPortConfigTLVsTxEnable)]
 
-[           \|-\*lldpPortConfigAdminStatus(2)(lldpPortConfigNotificationEnable)]{lang="EN-US"}
+[           \|-\*lldpPortConfigTLVsTxEnable(4)(lldpConfigManAddrPortsTxEnable)]
 
-[           \|-\*lldpPortConfigNotificationEnable(3)(lldpPortConfigTLVsTxEnable)]{lang="EN-US"}
+表1-4 display snmp-agent mib-node details命令显示信息描述表
 
-[           \|-\*lldpPortConfigTLVsTxEnable(4)(lldpConfigManAddrPortsTxEnable)]{lang="EN-US"}
+字段
 
-[[表1-4 ]{lang="EN-US"}[display snmp-agent mib-node details]{lang="EN-US"}]{#struct_0_x1400_15709_973768453}[命令显示信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_1587683365}[[字段]{style="font-family:黑体"}]{#struct_0_x1400_15709_305750035}
+-std
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1400_15709_x942924559}
+MIB节点名
 
-[[-std]{lang="EN-US"}]{#struct_0_x1400_15709_x1303363772}
+(0)
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_x1775256482}[节点名]{style="font-family:宋体"}
+MIB节点对应OID末位
 
-[[(0)]{lang="EN-US"}]{#struct_0_x1400_15709_x232137641}
+(lldpMessageTxInterval)
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_624526395}[节点对应]{style="font-family:宋体"}[OID]{lang="EN-US"}[末位]{style="font-family:宋体"}
+MIB节点下一个叶子节点名
 
-[[(lldpMessageTxInterval)]{lang="EN-US"}]{#struct_0_x1400_15709_973833989}
+\*
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_386687881}[节点下一个叶子节点名]{style="font-family:宋体"}
+表示叶子节点或表节点
 
-[[\*]{lang="EN-US"}]{#struct_0_x1400_15709_x1986878199}
+\# 显示SNMP支持的MIB表名、索引节点名及对应的OID。
 
-[[表示叶子节点或表节点]{style="font-family:宋体"}]{#struct_0_x1400_15709_x1501893153}
+\<Sysname\> display snmp-agent mib-node index-node
 
-[ ]{lang="EN-US"}
+[Table          \|lldpPortConfigTable]
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_1529086960}[显示]{style="font-family:宋体"}[SNMP]{lang="SV"}[支持的]{style="font-family:宋体"}[MIB]{lang="SV"}[表名、索引节点名及对应的]{style="font-family:宋体"}[OID]{lang="SV"}[。]{style="font-family:宋体"}
+[Index          \|\|lldpPortConfigPortNum]
 
-[[\<Sysname\> display snmp-agent mib-node index-node]{lang="EN-US"}]{#struct_0_x1400_15709_973899525}
+[OID            \|\|\|  1.0.8802.1.1.2.1.1.6.1.1]
 
-[Table          \|lldpPortConfigTable]{lang="EN-US"}
+[Table          \|lldpConfigManAddrTable]
 
-[Index          \|\|lldpPortConfigPortNum]{lang="EN-US"}
+[Index          \|\|lldpLocManAddrSubtype]
 
-[OID            \|\|\|  1.0.8802.1.1.2.1.1.6.1.1]{lang="EN-US"}
+[OID            \|\|\|  1.0.8802.1.1.2.1.3.8.1.1]
 
-[ ]{lang="EN-US"}
+[Index          \|\|lldpLocManAddr]
 
-[Table          \|lldpConfigManAddrTable]{lang="EN-US"}
+[OID            \|\|\|  1.0.8802.1.1.2.1.3.8.1.2]
 
-[Index          \|\|lldpLocManAddrSubtype]{lang="EN-US"}
+[Table          \|lldpStatsTxPortTable]
 
-[OID            \|\|\|  1.0.8802.1.1.2.1.3.8.1.1]{lang="EN-US"}
+[Index          \|\|lldpStatsTxPortNum]
 
-[Index          \|\|lldpLocManAddr]{lang="EN-US"}
+[OID            \|\|\|  1.0.8802.1.1.2.1.2.6.1.1]
 
-[OID            \|\|\|  1.0.8802.1.1.2.1.3.8.1.2]{lang="EN-US"}
+[Table          \|lldpStatsRxPortTable]
 
-[ ]{lang="EN-US"}
+[Index          \|\|lldpStatsRxPortNum]
 
-[Table          \|lldpStatsTxPortTable]{lang="EN-US"}
+[OID            \|\|\|  1.0.8802.1.1.2.1.2.7.1.1]
 
-[Index          \|\|lldpStatsTxPortNum]{lang="EN-US"}
+[Table          \|lldpLocPortTable]
 
-[OID            \|\|\|  1.0.8802.1.1.2.1.2.6.1.1]{lang="EN-US"}
+[Index          \|\|lldpLocPortNum]
 
-[ ]{lang="EN-US"}
+[OID            \|\|\|  1.0.8802.1.1.2.1.3.7.1.1]
 
-[Table          \|lldpStatsRxPortTable]{lang="EN-US"}
+表1-5 display snmp-agent mib-node index-node命令显示信息描述表
 
-[Index          \|\|lldpStatsRxPortNum]{lang="EN-US"}
+字段
 
-[OID            \|\|\|  1.0.8802.1.1.2.1.2.7.1.1]{lang="EN-US"}
+描述
 
-[ ]{lang="EN-US"}
+Table
 
-[Table          \|lldpLocPortTable]{lang="EN-US"}
+MIB表名
 
-[Index          \|\|lldpLocPortNum]{lang="EN-US"}
+Index
 
-[OID            \|\|\|  1.0.8802.1.1.2.1.3.7.1.1]{lang="EN-US"}
+MIB索引节点名
 
-[[表1-5 ]{lang="EN-US"}[display snmp-agent mib-node index-node]{lang="EN-US"}]{#struct_0_x1400_15709_109767943}[命令显示信息描述表]{style="font-family:黑体"}
+OID
 
-[]{#table_struct_0_1583254693}[[字段]{style="font-family:黑体"}]{#struct_0_x1400_15709_1036336885}
+MIB索引节点对应的OID
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1418646528}
+\# 显示SNMP支持的MIB告警节点名及对应的OID、告警绑定变量节点名及对应的OID。
 
-[[Table]{lang="EN-US"}]{#struct_0_x1400_15709_973965061}
+\<Sysname\> display snmp-agent mib-node trap-node
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_1627337345}[表名]{style="font-family:宋体"}
+[Name          \|lldpRemTablesChange]
 
-[[Index]{lang="EN-US"}]{#struct_0_x1400_15709_x820920469}
+[OID           \|\|1.0.8802.1.1.2.0.0.1]
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_x1100873289}[索引节点名]{style="font-family:宋体"}
+Trap Object
 
-[[OID]{lang="EN-US"}]{#struct_0_x1400_15709_153224516}
+[Name          \|\|\|lldpStatsRemTablesInserts]
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_1833356887}[索引节点对应的]{style="font-family:宋体"}[OID]{lang="EN-US"}
+[OID           \|\|\|\|1.0.8802.1.1.2.1.2.2]
 
-[ ]{lang="EN-US"}
+[Name          \|\|\|lldpStatsRemTablesDeletes]
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_974030597}[显示]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[支持的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[告警节点名及对应的]{style="font-family:宋体"}[OID]{lang="EN-US"}[、告警绑定变量节点名及对应的]{style="font-family:宋体"}[OID]{lang="EN-US"}[。]{style="font-family:宋体"}
+[OID           \|\|\|\|1.0.8802.1.1.2.1.2.3]
 
-[[\<Sysname\> display snmp-agent mib-node trap-node]{lang="EN-US"}]{#struct_0_x1400_15709_974096133}
+[Name          \|\|\|lldpStatsRemTablesDrops]
 
-[Name          \|lldpRemTablesChange]{lang="SV"}
+[OID           \|\|\|\|1.0.8802.1.1.2.1.2.4]
 
-[OID           \|\|1.0.8802.1.1.2.0.0.1]{lang="SV"}
+[Name          \|\|\|lldpStatsRemTablesAgeouts]
 
-[Trap Object]{lang="SV"}
+[OID           \|\|\|\|1.0.8802.1.1.2.1.2.5]
 
-[Name          \|\|\|lldpStatsRemTablesInserts]{lang="SV"}
+[Name          \|lldpXMedTopologyChangeDetected]
 
-[OID           \|\|\|\|1.0.8802.1.1.2.1.2.2]{lang="SV"}
+[OID           \|\|1.0.8802.1.1.2.1.5.4795.0.1]
 
-[Name          \|\|\|lldpStatsRemTablesDeletes]{lang="SV"}
+Trap Object
 
-[OID           \|\|\|\|1.0.8802.1.1.2.1.2.3]{lang="SV"}
+[Name          \|\|\|lldpRemChassisIdSubtype]
 
-[Name          \|\|\|lldpStatsRemTablesDrops]{lang="SV"}
+[OID           \|\|\|\|1.0.8802.1.1.2.1.4.1.1.4]
 
-[OID           \|\|\|\|1.0.8802.1.1.2.1.2.4]{lang="SV"}
+[Name          \|\|\|lldpRemChassisId]
 
-[Name          \|\|\|lldpStatsRemTablesAgeouts]{lang="SV"}
+[OID           \|\|\|\|1.0.8802.1.1.2.1.4.1.1.5]
 
-[OID           \|\|\|\|1.0.8802.1.1.2.1.2.5]{lang="SV"}
+[Name          \|\|\|lldpXMedRemDeviceClass]
 
-[ ]{lang="SV"}
+[OID           \|\|\|\|1.0.8802.1.1.2.1.5.4795.1.3.1.1.3]
 
-[Name          \|lldpXMedTopologyChangeDetected]{lang="SV"}
+[Name          \|mplsL3VpnVrfUp]
 
-[OID           \|\|1.0.8802.1.1.2.1.5.4795.0.1]{lang="SV"}
+[OID           \|\|1.3.6.1.2.1.10.166.11.0.1]
 
-[Trap Object]{lang="SV"}
+Trap Object
 
-[Name          \|\|\|lldpRemChassisIdSubtype]{lang="SV"}
+[Name          \|\|\|mplsL3VpnIfConfRowStatus]
 
-[OID           \|\|\|\|1.0.8802.1.1.2.1.4.1.1.4]{lang="SV"}
+[OID           \|\|\|\|1.3.6.1.2.1.10.166.11.1.2.1.1.5]
 
-[Name          \|\|\|lldpRemChassisId]{lang="SV"}
+[Name          \|\|\|mplsL3VpnVrfOperStatus]
 
-[OID           \|\|\|\|1.0.8802.1.1.2.1.4.1.1.5]{lang="SV"}
+[OID           \|\|\|\|1.3.6.1.2.1.10.166.11.1.2.2.1.6]
 
-[Name          \|\|\|lldpXMedRemDeviceClass]{lang="SV"}
+表1-6 display snmp-agent mib-node trap-node命令显示信息描述表
 
-[OID           \|\|\|\|1.0.8802.1.1.2.1.5.4795.1.3.1.1.3]{lang="SV"}
+字段
 
-[ ]{lang="SV"}
+描述
 
-[Name          \|mplsL3VpnVrfUp]{lang="SV"}
+Name
 
-[OID           \|\|1.3.6.1.2.1.10.166.11.0.1]{lang="SV"}
+MIB告警节点名
 
-[Trap Object]{lang="SV"}
+OID
 
-[Name          \|\|\|mplsL3VpnIfConfRowStatus]{lang="SV"}
+MIB告警节点对应的OID
 
-[OID           \|\|\|\|1.3.6.1.2.1.10.166.11.1.2.1.1.5]{lang="SV"}
+Trap Object
 
-[Name          \|\|\|mplsL3VpnVrfOperStatus]{lang="SV"}
+MIB告警绑定变量节点相关信息（其中Name表示告警绑定变量节点名，OID表示变量名节点对应的OID）
 
-[OID           \|\|\|\|1.3.6.1.2.1.10.166.11.1.2.2.1.6]{lang="SV"}
+\# 显示SNMP支持的MIB节点详细信息，包括节点名、OID、节点类型、访问权限、数据类型，对应MOR定义、父子兄弟节点信息等。
 
-[[表1-6 ]{lang="EN-US"}[display snmp-agent mib-node trap-node]{lang="EN-US"}]{#struct_0_x1400_15709_x1373972638}[命令显示信息描述表]{style="font-family:黑体"}
+\<Sysname\> display snmp-agent mib-node verbose
 
-[]{#table_struct_0_1584977605}[[字段]{style="font-family:黑体"}]{#struct_0_x1400_15709_2123816395}
+[Name          \|lldpNotificationInterval]
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1400_15709_419249450}
+[OID           \|\|1.0.8802.1.1.2.1.1.5]
 
-[[Name]{lang="SV"}]{#struct_0_x1400_15709_x1342237030}
+[Properties    \|\|NodeType:   Leaf]
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_1778443261}[告警节点名]{style="font-family:宋体"}
+[              \|\|AccessType: RW]
 
-[[OID]{lang="EN-US"}]{#struct_0_x1400_15709_973113093}
+[              \|\|DataType:   Integer32]
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_1039545092}[告警节点对应的]{style="font-family:宋体"}[OID]{lang="EN-US"}
+[              \|\|MOR:        0x020c1105]
 
-[[Trap Object]{lang="SV"}]{#struct_0_x1400_15709_1893322106}
+[Parent        \|\|lldpConfiguration]
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_1354592154}[告警绑定变量节点相关信息（其中]{style="font-family:宋体"}[Name]{lang="EN-US"}[表示告警绑定变量节点名，]{style="font-family:宋体"}[OID]{lang="EN-US"}[表示变量名节点对应的]{style="font-family:宋体"}[OID]{lang="EN-US"}[）]{style="font-family:宋体"}
+[First child   \|\|]
 
-[ ]{lang="EN-US"}
+[Next leaf     \|\|lldpPortConfigPortNum]
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_1530936117}[显示]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[支持的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[节点详细信息，包括节点名、]{style="font-family:宋体"}[OID]{lang="EN-US"}[、节点类型、访问权限、数据类型，对应]{style="font-family:宋体"}[MOR]{lang="EN-US"}[定义、父子兄弟节点信息等。]{style="font-family:宋体"}
+[Next sibling  \|\|lldpPortConfigTable]
 
-[[\<Sysname\> display snmp-agent mib-node verbose]{lang="EN-US"}]{#struct_0_x1400_15709_973702918}
+[Allow         \|\|get/set/getnext]
 
-[Name          \|lldpNotificationInterval]{lang="EN-US"}
+[Value range   \|\|  [5..3600]]
 
-[OID           \|\|1.0.8802.1.1.2.1.1.5]{lang="EN-US"}
+[Name          \|lldpPortConfigTable]
 
-[Properties    \|\|NodeType:   Leaf]{lang="EN-US"}
+[OID           \|\|1.0.8802.1.1.2.1.1.6]
 
-[              \|\|AccessType: RW]{lang="EN-US"}
+[Properties    \|\|NodeType:   Table]
 
-[              \|\|DataType:   Integer32]{lang="EN-US"}
+[              \|\|AccessType: NA]
 
-[              \|\|MOR:        0x020c1105]{lang="EN-US"}
+[              \|\|DataType:   NA]
 
-[Parent        \|\|lldpConfiguration]{lang="EN-US"}
+[              \|\|MOR:        0x00000000]
 
-[First child   \|\|]{lang="EN-US"}
+[Parent        \|\|lldpConfiguration]
 
-[Next leaf     \|\|lldpPortConfigPortNum]{lang="EN-US"}
+[First child   \|\|lldpPortConfigEntry]
 
-[Next sibling  \|\|lldpPortConfigTable]{lang="EN-US"}
+[Next leaf     \|\|lldpPortConfigPortNum]
 
-[Allow         \|\|get/set/getnext]{lang="EN-US"}
+[Next sibling  \|\|lldpConfigManAddrTable]
 
-[Value range   \|\|  \[5..3600\]]{lang="EN-US"}
+[Name          \|lldpPortConfigEntry]
 
-[ ]{lang="EN-US"}
+[OID           \|\|1.0.8802.1.1.2.1.1.6.1]
 
-[Name          \|lldpPortConfigTable]{lang="EN-US"}
+[Properties    \|\|NodeType:   Row]
 
-[OID           \|\|1.0.8802.1.1.2.1.1.6]{lang="EN-US"}
+[              \|\|AccessType: NA]
 
-[Properties    \|\|NodeType:   Table]{lang="EN-US"}
+[              \|\|DataType:   NA]
 
-[              \|\|AccessType: NA]{lang="EN-US"}
+[              \|\|MOR:        0x00000000]
 
-[              \|\|DataType:   NA]{lang="EN-US"}
+[Parent        \|\|lldpPortConfigTable]
 
-[              \|\|MOR:        0x00000000]{lang="EN-US"}
+[First child   \|\|lldpPortConfigPortNum]
 
-[Parent        \|\|lldpConfiguration]{lang="EN-US"}
+[Next leaf     \|\|lldpPortConfigPortNum]
 
-[First child   \|\|lldpPortConfigEntry]{lang="EN-US"}
+[Next sibling  \|\|]
 
-[Next leaf     \|\|lldpPortConfigPortNum]{lang="EN-US"}
+[Index         \|\|[indexImplied:0, indexLength:1]:]
 
-[Next sibling  \|\|lldpConfigManAddrTable]{lang="EN-US"}
+[Name          \|lldpPortConfigPortNum]
 
-[ ]{lang="EN-US"}
+[OID           \|\|1.0.8802.1.1.2.1.1.6.1.1]
 
-[Name          \|lldpPortConfigEntry]{lang="EN-US"}
+[Properties    \|\|NodeType:   Column]
 
-[OID           \|\|1.0.8802.1.1.2.1.1.6.1]{lang="EN-US"}
+[              \|\|AccessType: NA]
 
-[Properties    \|\|NodeType:   Row]{lang="EN-US"}
+[              \|\|DataType:   Integer32]
 
-[              \|\|AccessType: NA]{lang="EN-US"}
+[              \|\|MOR:        0x020c1201]
 
-[              \|\|DataType:   NA]{lang="EN-US"}
+[Parent        \|\|lldpPortConfigEntry]
 
-[              \|\|MOR:        0x00000000]{lang="EN-US"}
+[First child   \|\|]
 
-[Parent        \|\|lldpPortConfigTable]{lang="EN-US"}
+[Next leaf     \|\|lldpPortConfigAdminStatus]
 
-[First child   \|\|lldpPortConfigPortNum]{lang="EN-US"}
+[Next sibling  \|\|lldpPortConfigAdminStatus]
 
-[Next leaf     \|\|lldpPortConfigPortNum]{lang="EN-US"}
+[Allow         \|\|get/set/getnext]
 
-[Next sibling  \|\|]{lang="EN-US"}
+[Index         \|\|[indexImplied:0, indexLength:1]:]
 
-[Index         \|\|\[indexImplied:0, indexLength:1\]:]{lang="EN-US"}
+[Value range   \|\|  [1..4096]]
 
-[ ]{lang="EN-US"}
+[Name          \|lldpPortConfigAdminStatus]
 
-[Name          \|lldpPortConfigPortNum]{lang="EN-US"}
+[OID           \|\|1.0.8802.1.1.2.1.1.6.1.2]
 
-[OID           \|\|1.0.8802.1.1.2.1.1.6.1.1]{lang="EN-US"}
+[Properties    \|\|NodeType:   Column]
 
-[Properties    \|\|NodeType:   Column]{lang="EN-US"}
+[              \|\|AccessType: RW]
 
-[              \|\|AccessType: NA]{lang="EN-US"}
+[              \|\|DataType:   Integer]
 
-[              \|\|DataType:   Integer32]{lang="EN-US"}
+[              \|\|MOR:        0x020c1202]
 
-[              \|\|MOR:        0x020c1201]{lang="EN-US"}
+[Parent        \|\|lldpPortConfigEntry]
 
-[Parent        \|\|lldpPortConfigEntry]{lang="EN-US"}
+[First child   \|\|]
 
-[First child   \|\|]{lang="EN-US"}
+[Next leaf     \|\|lldpPortConfigNotificationEnable]
 
-[Next leaf     \|\|lldpPortConfigAdminStatus]{lang="EN-US"}
+[Next sibling  \|\|lldpPortConfigNotificationEnable]
 
-[Next sibling  \|\|lldpPortConfigAdminStatus]{lang="EN-US"}
+[Allow         \|\|get/set/getnext]
 
-[Allow         \|\|get/set/getnext]{lang="EN-US"}
+[Index         \|\|[indexImplied:0, indexLength:1]:]
 
-[Index         \|\|\[indexImplied:0, indexLength:1\]:]{lang="EN-US"}
+[Value range   \|\|]
 
-[Value range   \|\|  \[1..4096\]]{lang="EN-US"}
+[              \|\|  [\'txOnly\', 1]]
 
-[ ]{lang="EN-US"}
+[              \|\|  [\'rxOnly\', 2]]
 
-[Name          \|lldpPortConfigAdminStatus]{lang="EN-US"}
+[              \|\|  [\'txAndRx\', 3]]
 
-[OID           \|\|1.0.8802.1.1.2.1.1.6.1.2]{lang="EN-US"}
+[              \|\|  [\'disabled\', 4]]
 
-[Properties    \|\|NodeType:   Column]{lang="EN-US"}
+表1-7 display snmp-agent mib-node verbose命令显示信息描述表
 
-[              \|\|AccessType: RW]{lang="EN-US"}
+字段
 
-[              \|\|DataType:   Integer]{lang="EN-US"}
+描述
 
-[              \|\|MOR:        0x020c1202]{lang="EN-US"}
+Name
 
-[Parent        \|\|lldpPortConfigEntry]{lang="EN-US"}
+MIB节点名
 
-[First child   \|\|]{lang="EN-US"}
+OID
 
-[Next leaf     \|\|lldpPortConfigNotificationEnable]{lang="EN-US"}
+MIB节点对应的OID
 
-[Next sibling  \|\|lldpPortConfigNotificationEnable]{lang="EN-US"}
+NodeType
 
-[Allow         \|\|get/set/getnext]{lang="EN-US"}
+MIB节点类型，取值为：
 
-[Index         \|\|\[indexImplied:0, indexLength:1\]:]{lang="EN-US"}
+·Table：表节点
 
-[Value range   \|\|]{lang="EN-US"}
+·Row：表中行节点
 
-[              \|\|  \[\'txOnly\', 1\]]{lang="EN-US"}
+·Column：表中列节点
 
-[              \|\|  \[\'rxOnly\', 2\]]{lang="EN-US"}
+·Leaf：叶子节点
 
-[              \|\|  \[\'txAndRx\', 3\]]{lang="EN-US"}
+·Group：组节点（叶子节点的父节点）
 
-[              \|\|  \[\'disabled\', 4\]]{lang="EN-US"}
+·Trapnode：告警节点
 
-[[表1-7 ]{lang="EN-US"}[display snmp-agent mib-node verbose]{lang="EN-US"}]{#struct_0_x1400_15709_1001743079}[命令显示信息描述表]{style="font-family:黑体"}
+·Other：其他类型
 
-[]{#table_struct_0_1578172037}[[字段]{style="font-family:黑体"}]{#struct_0_x1400_15709_1796452085}
+AccessType
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1992921350}
+MIB节点访问权限，取值为：
 
-[[Name]{lang="SV"}]{#struct_0_x1400_15709_1862276411}
+·NA：表示节点不可访问
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_2090078127}[节点名]{style="font-family:宋体"}
+·NF：表示节点支持告警
 
-[[OID]{lang="EN-US"}]{#struct_0_x1400_15709_973768454}
+·RO：表示节点支持只读访问
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_305750032}[节点对应的]{style="font-family:宋体"}[OID]{lang="EN-US"}
+·RW：表示节点支持读写访问
 
-[[NodeType]{lang="EN-US"}]{#struct_0_x1400_15709_x942924554}
+·RC：表示节点支持读写创建访问
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_x1304215740}[节点类型，取值为：]{style="font-family:宋体"}
+·WO：表示节点支持只写访问
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Table]{lang="EN-US"}]{#struct_0_x1400_15709_x1924934482}[：表节点]{lang="EN-US" style="font-family:宋体"}
+DataType
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Row]{lang="EN-US"}]{#struct_0_x1400_15709_x465109517}[：表中行节点]{lang="EN-US" style="font-family:宋体"}
+MIB节点数据类型，取值为：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Column]{lang="EN-US"}]{#struct_0_x1400_15709_973833990}[：表中列节点]{lang="EN-US" style="font-family:宋体"}
+·Integer：整数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Leaf]{lang="EN-US"}]{#struct_0_x1400_15709_x1569627262}[：叶子节点]{lang="EN-US" style="font-family:宋体"}
+·Integer32：32位整数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Group]{lang="EN-US"}]{#struct_0_x1400_15709_x2075192616}[：组节点（叶子节点的父节点）]{style="font-family:宋体"}
+·Unsigned32：32位无符号整数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Trapnode]{lang="EN-US"}]{#struct_0_x1400_15709_1614595586}[：告警节点]{lang="EN-US" style="font-family:宋体"}
+·Gauge：可增可减的非负整数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Other]{lang="EN-US"}]{#struct_0_x1400_15709_x746692006}[：其他类型]{lang="EN-US" style="font-family:宋体"}
+·Gauge32：32位可增可减的非负整数
 
-[[AccessType]{lang="EN-US"}]{#struct_0_x1400_15709_x2096486311}
+·Counter：可增不可减的非负整数
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_973899526}[节点访问权限，取值为：]{style="font-family:宋体"}
+·Counter32：32位可增不可减的非负整数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NA]{lang="EN-US"}]{#struct_0_x1400_15709_109767946}[：表示节点不可访问]{style="font-family:宋体"}
+·Counter64：64位可增不可减的非负整数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NF]{lang="EN-US"}]{#struct_0_x1400_15709_1036336882}[：表示节点支持告警]{style="font-family:宋体"}
+·Timeticks：用于计时的非负整数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RO]{lang="EN-US"}]{#struct_0_x1400_15709_x1419105280}[：表示节点支持只读访问]{style="font-family:宋体"}
+·Octstring：八进制字符串
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RW]{lang="EN-US"}]{#struct_0_x1400_15709_x1069564830}[：表示节点支持读写访问]{style="font-family:宋体"}
+·OID：对象标识符
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RC]{lang="EN-US"}]{#struct_0_x1400_15709_973965062}[：表示节点支持读写创建访问]{style="font-family:宋体"}
+·IPaddress：用于IP规范格式的32位地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[WO]{lang="EN-US"}]{#struct_0_x1400_15709_1627337342}[：表示节点支持只写访问]{style="font-family:宋体"}
+·Networkaddress：网络IP地址
 
-[[DataType]{lang="EN-US"}]{#struct_0_x1400_15709_x821117077}
+·Opaque：任意数据
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_2024049717}[节点数据类型，取值为：]{style="font-family:宋体"}
+·Userdefined：用户类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Integer]{lang="EN-US"}]{#struct_0_x1400_15709_974030598}[：整数]{lang="EN-US" style="font-family:宋体"}
+·BITS：所述位枚举
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Integer32]{lang="EN-US"}]{#struct_0_x1400_15709_x538639305}[：]{lang="EN-US" style="font-family:宋体"}[32]{lang="EN-US"}[位整数]{lang="EN-US" style="font-family:宋体"}
+MOR
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unsigned32]{lang="EN-US"}]{#struct_0_x1400_15709_963646225}[：]{lang="EN-US" style="font-family:宋体"}[32]{lang="EN-US"}[位无符号整数]{lang="EN-US" style="font-family:宋体"}
+MIB节点对应的MOR定义
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Gauge]{lang="EN-US"}]{#struct_0_x1400_15709_x1888674959}[：可增可减的非负整数]{style="font-family:宋体"}
+Parent
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Gauge32]{lang="EN-US"}]{#struct_0_x1400_15709_204444938}[：]{style="font-family:宋体"}[32]{lang="EN-US"}[位可增可减的非负整数]{style="font-family:宋体"}
+父节点名
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Counter]{lang="EN-US"}]{#struct_0_x1400_15709_974096134}[：可增不可减的非负整数]{lang="EN-US" style="font-family:宋体"}
+First child
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Counter32]{lang="EN-US"}]{#struct_0_x1400_15709_x1373972635}[：]{lang="EN-US" style="font-family:宋体"}[32]{lang="EN-US"}[位可增不可减的非负整数]{lang="EN-US" style="font-family:宋体"}
+第一个子节点名
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Counter64]{lang="EN-US"}]{#struct_0_x1400_15709_x2124096734}[：]{lang="EN-US" style="font-family:宋体"}[64]{lang="EN-US"}[位可增不可减的非负整数]{lang="EN-US" style="font-family:宋体"}
+Next leaf
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Timeticks]{lang="EN-US"}]{#struct_0_x1400_15709_x182111388}[：用于计时的非负整数]{lang="EN-US" style="font-family:宋体"}
+下一个叶子节点名
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Octstring]{lang="EN-US"}]{#struct_0_x1400_15709_973113094}[：]{lang="EN-US" style="font-family:宋体"}[八进制]{style="font-family:宋体"}[字符串]{lang="EN-US" style="font-family:宋体"}
+Next sibling
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[OID]{lang="EN-US"}]{#struct_0_x1400_15709_1039545095}[：对象标识符]{lang="EN-US" style="font-family:宋体"}
+右兄弟节点名
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[IPaddress]{lang="EN-US"}]{#struct_0_x1400_15709_1893125498}[：用于]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[规范格式的]{lang="EN-US" style="font-family:宋体"}[32]{lang="EN-US"}[位地址]{lang="EN-US" style="font-family:宋体"}
+Allow
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Networkaddress]{lang="EN-US"}]{#struct_0_x1400_15709_922596952}[：网络]{lang="EN-US" style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+允许的操作类型，取值包括如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Opaque]{lang="EN-US"}]{#struct_0_x1400_15709_973178630}[：任意数据]{lang="EN-US" style="font-family:宋体"}
+·get/set/getnext：允许所有操作
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Userdefined]{lang="EN-US"}]{#struct_0_x1400_15709_1812220331}[：用户类型]{lang="EN-US" style="font-family:宋体"}
+·get：只允许Get操作
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[BITS]{lang="EN-US"}]{#struct_0_x1400_15709_x56621724}[：所述位枚举]{lang="EN-US" style="font-family:宋体"}
+·set：只允许Set操作
 
-[[MOR]{lang="EN-US"}]{#struct_0_x1400_15709_1214992602}
+·getnext：只允许GetNext操作
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_x1399015610}[节点对应的]{style="font-family:宋体"}[MOR]{lang="EN-US"}[定义]{style="font-family:宋体"}
+Value range
 
-[[Parent]{lang="EN-US"}]{#struct_0_x1400_15709_1738528008}
+节点的取值范围
 
-[[父节点名]{style="font-family:宋体"}]{#struct_0_x1400_15709_1592047951}
+Index
 
-[[First child]{lang="EN-US"}]{#struct_0_x1400_15709_x1398950074}
-
-[[第一个子节点名]{style="font-family:宋体"}]{#struct_0_x1400_15709_x359037011}
-
-[[Next leaf]{lang="EN-US"}]{#struct_0_x1400_15709_93700455}
-
-[[下一个叶子节点名]{style="font-family:宋体"}]{#struct_0_x1400_15709_669352963}
-
-[[Next sibling]{lang="EN-US"}]{#struct_0_x1400_15709_x1398884538}
-
-[[右兄弟节点名]{style="font-family:宋体"}]{#struct_0_x1400_15709_2097894707}
-
-[[Allow]{lang="EN-US"}]{#struct_0_x1400_15709_x574349936}
-
-[[允许的操作类型，取值包括如下：]{style="font-family:宋体"}]{#struct_0_x1400_15709_x1398819002}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[get/set/getnext]{lang="EN-US"}]{#struct_0_x1400_15709_x1048318985}[：允许所有操作]{lang="EN-US" style="font-family:
-  宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[get]{lang="EN-US"}]{#struct_0_x1400_15709_x1806328}[：只允许]{lang="EN-US" style="font-family:宋体"}[G]{lang="EN-US"}[et]{lang="EN-US"}[操作]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[set]{lang="EN-US"}]{#struct_0_x1400_15709_x1398753466}[：只允许]{lang="EN-US" style="font-family:宋体"}[S]{lang="EN-US"}[et]{lang="EN-US"}[操作]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[getnext]{lang="EN-US"}]{#struct_0_x1400_15709_x1643471245}[：只允许]{lang="EN-US" style="font-family:宋体"}[G]{lang="EN-US"}[et]{lang="EN-US"}[N]{lang="EN-US"}[ext]{lang="EN-US"}[操作]{lang="EN-US" style="font-family:宋体"}
-
-[[Value range]{lang="EN-US"}]{#struct_0_x1400_15709_x1014244198}
-
-[[节点的取值范围]{style="font-family:宋体"}]{#struct_0_x1400_15709_x1398687930}
-
-[[Index]{lang="EN-US"}]{#struct_0_x1400_15709_1621012583}
-
-[[表索引，仅表节点显示此字段]{style="font-family:宋体"}]{#struct_0_x1400_15709_1880366349}
-
-[ ]{lang="EN-US"}
-
-::: {#-643173804 .myid}
-[]{#_Toc404796935}[]{#struct_0_x1400_15709_1316905159}
+表索引，仅表节点显示此字段
 
 **SNMP \-- SNMP配置命令 \-- display snmp-agent mib-view**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **snmp-agent** **mib-view**]{lang="EN-US"}]{#struct_0_x1400_15709_x1150721580}[命令用来显示]{style="font-family:宋体"}[MIB]{lang="EN-US"}[视图的信息。]{style="font-family:宋体"}
+**[display** **snmp-agent** **mib-view**]命令用来显示MIB视图的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1398622394}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **snmp-agent** **mib-view** \[ **exclude** \| **include** \| **viewname** *view-name* \]]{lang="EN-US"}]{#struct_0_x1400_15709_x151283509}
+**[display**[ **snmp-agent** **mib-view** [ **exclude** \| **include** \| **viewname** *view-name* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1948675050}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_x806025323}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x65390713}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_848282289}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1400_15709_x708532026}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x955119602}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1400_15709_575611459}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1398556858}
+【参数】
 
-[**[exclude]{lang="EN-US"}**]{#struct_0_x1400_15709_x2052629983}[：显示属性为]{style="font-family:宋体"}[exclude]{lang="EN-US"}[的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[视图的信息。]{style="font-family:宋体"}
+**[exclude**]：显示属性为exclude的MIB视图的信息。
 
-[**[include]{lang="EN-US"}**]{#struct_0_x1400_15709_x203726754}[：显示属性为]{style="font-family:宋体"}[include]{lang="EN-US"}[的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[视图的信息。]{style="font-family:宋体"}
+**[include**]：显示属性为include的MIB视图的信息。
 
-[**[viewname]{lang="EN-US"}**[ *view-name*]{lang="EN-US"}]{#struct_0_x1400_15709_x425338184}[：显示指定名称]{style="font-family:宋体"}[MIB]{lang="EN-US"}[视图的信息，]{style="font-family:宋体"}*[view-name]{lang="EN-US"}*[为视图的名称。]{style="font-family:宋体"}
+**[viewname** *view-name*]：显示指定名称MIB视图的信息，*view-name*为视图的名称。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1782733353}
+【使用指导】
 
-[[不指定参数时，显示所有]{style="font-family:宋体"}[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_2082436609}[视图的信息。]{style="font-family:宋体"}
+不指定参数时，显示所有MIB视图的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1244769109}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x1777939057}[显示设备的所有]{style="font-family:宋体"}[MIB]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+\# 显示设备的所有MIB视图。
 
-[[\<Sysname\> display snmp-agent mib-view]{lang="EN-US"}]{#struct_0_x1400_15709_x1399539898}
+\<Sysname\> display snmp-agent mib-view
 
-[   View name: ViewDefault]{lang="EN-US"}
+   View name: ViewDefault
 
-[       MIB Subtree: iso]{lang="EN-US"}
+       MIB Subtree: iso
 
-[       Subtree mask:]{lang="EN-US"}
+       Subtree mask:
 
-[       Storage-type: nonVolatile]{lang="EN-US"}
+       Storage-type: nonVolatile
 
-[       View Type: included]{lang="EN-US"}
+       View Type: included
 
-[       View status: active]{lang="EN-US"}
+       View status: active
 
-[ ]{lang="EN-US"}
+   View name: ViewDefault
 
-[   View name: ViewDefault]{lang="EN-US"}
+       MIB Subtree: snmpUsmMIB
 
-[       MIB Subtree: snmpUsmMIB]{lang="EN-US"}
+       Subtree mask:
 
-[       Subtree mask:]{lang="EN-US"}
+       Storage-type: nonVolatile
 
-[       Storage-type: nonVolatile]{lang="EN-US"}
+       View Type: excluded
 
-[       View Type: excluded]{lang="EN-US"}
+       View status: active
 
-[       View status: active]{lang="EN-US"}
+   View name: ViewDefault
 
-[ ]{lang="EN-US"}
+       MIB Subtree: snmpVacmMIB
 
-[   View name: ViewDefault]{lang="EN-US"}
+       Subtree mask:
 
-[       MIB Subtree: snmpVacmMIB]{lang="EN-US"}
+       Storage-type: nonVolatile
 
-[       Subtree mask:]{lang="EN-US"}
+       View Type: excluded
 
-[       Storage-type: nonVolatile]{lang="EN-US"}
+       View status: active
 
-[       View Type: excluded]{lang="EN-US"}
+   View name: ViewDefault
 
-[       View status: active]{lang="EN-US"}
+       MIB Subtree: snmpModules.18
 
-[ ]{lang="EN-US"}
+       Subtree mask:
 
-[   View name: ViewDefault]{lang="EN-US"}
+       Storage-type: nonVolatile
 
-[       MIB Subtree: snmpModules.18]{lang="EN-US"}
+       View Type: excluded
 
-[       Subtree mask:]{lang="EN-US"}
+       View status: active
 
-[       Storage-type: nonVolatile]{lang="EN-US"}
+以上信息表明，设备上当前有四个MIB视图，名称均为ViewDefault。使用ViewDefault视图名限制NMS访问时，除了snmpUsmMIB、snmpVacmMIB、snmpModules.18子树下的MIB对象，NMS可以访问iso子树下其它所有MIB对象。
 
-[       View Type: excluded]{lang="EN-US"}
+表1-8 display snmp-agent mib-view命令显示信息描述表
 
-[       View status: active]{lang="EN-US"}
+字段
 
-[[以上信息表明，设备上当前有四个]{style="font-family:宋体"}[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_x1399474362}[视图，名称均为]{style="font-family:宋体"}[ViewDefault]{lang="EN-US"}[。使用]{style="font-family:宋体"}[ViewDefault]{lang="EN-US"}[视图名限制]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问时，除了]{style="font-family:宋体"}[snmpUsmMIB]{lang="EN-US"}[、]{style="font-family:宋体"}[snmpVacmMIB]{lang="EN-US"}[、]{style="font-family:宋体"}[snmpModules.18]{lang="EN-US"}[子树下的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象，]{style="font-family:宋体"}[NMS]{lang="EN-US"}[可以访问]{style="font-family:宋体"}[iso]{lang="EN-US"}[子树下其它所有]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象。]{style="font-family:宋体"}
+描述
 
-[[表1-8 ]{lang="EN-US"}[display snmp-agent mib-view]{lang="EN-US"}]{#struct_0_x1400_15709_x1254314419}[命令显示信息描述表]{style="font-family:黑体"}
+View name
 
-[]{#table_struct_0_1607848805}[[字段]{style="font-family:黑体"}]{#struct_0_x1400_15709_1303066416}
-:::
+视图名
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1400_15709_2085752095}
+MIB Subtree
 
-[[View name]{lang="EN-US"}]{#struct_0_x1400_15709_x2139782765}
+MIB视图对应的MIB子树
 
-[[视图名]{style="font-family:宋体"}]{#struct_0_x1400_15709_x347829867}
+Subtree mask
 
-[[MIB Subtree]{lang="EN-US"}]{#struct_0_x1400_15709_439561027}
+MIB子树的掩码
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_x1399015609}[视图对应的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[子树]{style="font-family:宋体"}
+Storage-type
 
-[[Subtree mask]{lang="EN-US"}]{#struct_0_x1400_15709_x634190523}
+存储方式，分为以下几种：volatile、nonVolatile、permanent、readOnly、other，具体请参见[表]1-1(?1188054656#_Ref291745733)
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_x625417711}[子树的掩码]{style="font-family:宋体"}
+View Type
 
-[[Storage-type]{lang="EN-US"}]{#struct_0_x1400_15709_436047037}
+MIB视图的类型（即该视图与MIB子树的关系），包括included和excluded两种：
 
-[[存储方式，分为以下几种：]{style="font-family:宋体"}[volatile]{lang="EN-US"}]{#struct_0_x1400_15709_210386768}[、]{style="font-family:宋体"}[nonVolatile]{lang="EN-US"}[、]{style="font-family:宋体"}[permanent]{lang="EN-US"}[、]{style="font-family:宋体"}[readOnly]{lang="EN-US"}[、]{style="font-family:宋体"}[other]{lang="EN-US"}[，具体请参见]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-1]{lang="EN-US"}](?1188054656#_Ref291745733)
+·included表示当前视图包括该子树的所有节点，即可以访问子树内的所有MIB对象
 
-[[View Type]{lang="EN-US"}]{#struct_0_x1400_15709_268137530}
+·excluded表示当前视图不包括该子树的任意节点，即子树内的所有MIB对象都不能被访问
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_x1398950073}[视图的类型（即该视图与]{style="font-family:宋体"}[MIB]{lang="EN-US"}[子树的关系），包括]{style="font-family:宋体"}[included]{lang="EN-US"}[和]{style="font-family:宋体"}[excluded]{lang="EN-US"}[两种：]{style="font-family:宋体"}
+View status
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[included]{lang="EN-US"}]{#struct_0_x1400_15709_2013615984}[表示当前视图包括该子树的所有节点，即可以访问子树内的所有]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象]{style="font-family:宋体"}
+MIB视图的状态，包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[excluded]{lang="EN-US"}]{#struct_0_x1400_15709_1831687855}[表示当前视图不包括该子树的任意节点，即子树内的所有]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象都不能被访问]{style="font-family:宋体"}
+·active表示MIB视图可用
 
-[[View status]{lang="EN-US"}]{#struct_0_x1400_15709_647083779}
+·inactive表示MIB视图不可用
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_1571905418}[视图的状态，包括：]{style="font-family:宋体"}
+在无需删除MIB视图就可以通过命令行暂时关闭MIB视图。对MIB视图状态节点执行Set操作可以修改MIB视图的状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[active]{lang="EN-US"}]{#struct_0_x1400_15709_x1398884537}[表示]{lang="EN-US" style="font-family:宋体"}[MIB]{lang="EN-US"}[视图可用]{lang="EN-US" style="font-family:宋体"}
+【相关命令】
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[inactive]{lang="EN-US"}]{#struct_0_x1400_15709_x630988648}[表示]{lang="EN-US" style="font-family:宋体"}[MIB]{lang="EN-US"}[视图不可用]{lang="EN-US" style="font-family:宋体"}
-
-[[在无需删除]{style="font-family:宋体"}[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_x766933045}[视图就可以通过命令行暂时关闭]{style="font-family:宋体"}[MIB]{lang="EN-US"}[视图。对]{style="font-family:宋体"}[MIB]{lang="EN-US"}[视图状态节点执行]{style="font-family:宋体"}[Set]{lang="EN-US"}[操作可以修改]{style="font-family:宋体"}[MIB]{lang="EN-US"}[视图的状态]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1640857739}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **mib-view**]{lang="EN-US"}]{#struct_0_x1400_15709_1317445256}
-
-::: {#145985246 .myid}
-[]{#_Toc404796936}[]{#struct_0_x1400_15709_1216242285}
+·**snmp-agent** **mib-view**
 
 **SNMP \-- SNMP配置命令 \-- display snmp-agent remote**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **snmp-agent** **remote**]{lang="EN-US"}]{#struct_0_x1400_15709_629677097}[命令用来显示远端]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体的引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[display** **snmp-agent** **remote**]命令用来显示远端SNMP实体的引擎ID。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_482359838}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **snmp-agent** **remote** \[ *ip-address* \[ **vpn-instance** *vpn-instance-name* \] \| **ipv6** *ipv6-address* \[ **vpn-instance** *vpn-instance-name* \] \]]{lang="EN-US"}]{#struct_0_x1400_15709_x1398819001}
+**[display** **snmp-agent** **remote** [ *ip-address* [ **vpn-instance** *vpn-instance-name*  \| **ipv6** *ipv6-address*  **vpn-instance** *vpn-instance-name*  ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1680564370}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_1580484919}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_329402714}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_184337602}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1400_15709_1236043865}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1967617604}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1400_15709_x141715093}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x138890327}
+【参数】
 
-[*[ip-address]{lang="EN-US"}*]{#struct_0_x1400_15709_x1398753465}[：显示指定]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址的远端]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体的引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[ip-address*]：显示指定IP地址的远端SNMP实体的引擎ID。
 
-[**[ipv6]{lang="EN-US"}**[ *ipv6-address*]{lang="EN-US"}]{#struct_0_x1400_15709_1085412110}[：显示指定]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址的远端]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体的引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[ipv6** *ipv6-address*]：显示指定IPv6地址的远端SNMP实体的引擎ID。
 
-[**[vpn-instance]{lang="EN-US"}**[ *vpn-instance-name*]{lang="EN-US"}]{#struct_0_x1400_15709_x175141449}[：指定远端]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体所属的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[。]{style="font-family:宋体"}*[vpn-instance-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果未指定本参数，则表示远端]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体位于公网中。]{style="font-family:宋体"}
+**[vpn-instance** *vpn-instance-name*]：指定远端SNMP实体所属的VPN。*vpn-instance-name*表示MPLS L3VPN的VPN实例名称，为1～31个字符的字符串，区分大小写。如果未指定本参数，则表示远端SNMP实体位于公网中。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x950956707}
+【使用指导】
 
-[[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_x1821952180}[实体引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[是]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体的唯一标识，它在一个]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[管理域内是唯一的。]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体引擎是]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体的重要组成部分，完成]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[信息的信息调度、信息处理、安全验证、访问控制等功能。]{style="font-family:宋体"}
+SNMP实体引擎ID是SNMP实体的唯一标识，它在一个SNMP管理域内是唯一的。SNMP实体引擎是SNMP实体的重要组成部分，完成SNMP信息的信息调度、信息处理、安全验证、访问控制等功能。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1554025088}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x521544191}[显示所有远端]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体的引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 显示所有远端SNMP实体的引擎ID。
 
-[[\<Sysname\> display snmp-agent remote]{lang="EN-US"}]{#struct_0_x1400_15709_x1398687929}
+\<Sysname\> display snmp-agent remote
 
-[   Remote engineID: 800063A28000A0FC00580400000001]{lang="EN-US"}
+   Remote engineID: 800063A28000A0FC00580400000001
 
-[       IPv4 address: 1.1.1.1]{lang="EN-US"}
+       IPv4 address: 1.1.1.1
 
-[       VPN instance: vpn1]{lang="EN-US"}
+       VPN instance: vpn1
 
-[[表1-9 ]{lang="EN-US"}[display snmp-agent remote]{lang="EN-US"}]{#struct_0_x1400_15709_411093466}[命令显示信息描述表]{style="font-family:黑体"}
+表1-9 display snmp-agent remote命令显示信息描述表
 
-[]{#table_struct_0_1610361189}[[字段]{style="font-family:黑体"}]{#struct_0_x1400_15709_1726333251}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1400_15709_x694119978}
+描述
 
-[[Remote engineID]{lang="EN-US"}]{#struct_0_x1400_15709_1142754347}
+Remote engineID
 
-[[远端]{style="font-family:宋体"}[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_x671911667}[实体的引擎，可通过]{style="font-family:宋体"}**[snmp-agent]{lang="EN-US"}**[ **remote**]{lang="EN-US"}[命令配置]{style="font-family:宋体"}
+远端SNMP实体的引擎，可通过**snmp-agent** **remote**命令配置
 
-[[IPv4 address]{lang="EN-US"}]{#struct_0_x1400_15709_1448709702}
+IPv4 address
 
-[[远端]{style="font-family:宋体"}[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_x1398622393}[实体的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址]{style="font-family:宋体"}
+远端SNMP实体的IPv4地址
 
-[[如果配置]{style="font-family:宋体"}**[snmp-agent]{lang="EN-US"}**[ **remote**]{lang="EN-US"}]{#struct_0_x1400_15709_x910798396}[命令时绑定的是]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址，则显示]{style="font-family:宋体"}[IPv6 address]{lang="EN-US"}
+如果配置**snmp-agent** **remote**命令时绑定的是IPv6地址，则显示IPv6 address
 
-[[VPN instance]{lang="EN-US"}]{#struct_0_x1400_15709_x918521951}
+VPN instance
 
-[[远端]{style="font-family:宋体"}[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_x705864216}[实体所属的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[。只有配置]{style="font-family:宋体"}**[snmp-agent]{lang="EN-US"}**[ **remote**]{lang="EN-US"}[命令且绑定了]{style="font-family:宋体"}[VPN]{lang="EN-US"}[时，才显示该信息]{style="font-family:宋体"}
+远端SNMP实体所属的VPN。只有配置**snmp-agent** **remote**命令且绑定了VPN时，才显示该信息
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1470577582}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **remote**]{lang="EN-US"}]{#struct_0_x1400_15709_x1211557952}
-
-::: {#-2060619115 .myid}
-[]{#_Toc404796937}[]{#struct_0_x1400_15709_x477846332}
+·**snmp-agent** **remote**
 
 **SNMP \-- SNMP配置命令 \-- display snmp-agent statistics**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **snmp-agent** **statistics**]{lang="EN-US"}]{#struct_0_x1400_15709_x1398556857}[命令用来显示]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[报文的统计信息。]{style="font-family:宋体"}
+**[display** **snmp-agent** **statistics**]命令用来显示SNMP报文的统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_320023012}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **snmp-agent** **statistics**]{lang="EN-US"}]{#struct_0_x1400_15709_1653807912}
+**[display** **snmp-agent** **statistics**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x677776436}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_x489767360}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1553441500}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_751153137}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1400_15709_656045689}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_74707195}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1400_15709_x1399539897}
+mdc-operator
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_594422803}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_74831849}[显示]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[报文的统计信息。]{style="font-family:宋体"}
+\# 显示SNMP报文的统计信息。
 
-[[\<Sysname\> display snmp-agent statistics]{lang="EN-US"}]{#struct_0_x1400_15709_x1399474361}
+\<Sysname\> display snmp-agent statistics
 
-[  1684 messages delivered to the SNMP entity.]{lang="EN-US"}
+  1684 messages delivered to the SNMP entity.
 
-[  5 messages were for an unsupported version.]{lang="EN-US"}
+  5 messages were for an unsupported version.
 
-[  0 messages used an unknown SNMP community name.]{lang="EN-US"}
+  0 messages used an unknown SNMP community name.
 
-[  0 messages represented an illegal operation for the community supplied.]{lang="EN-US"}
+  0 messages represented an illegal operation for the community supplied.
 
-[  0 ASN.1 or BER errors in the process of decoding.]{lang="EN-US"}
+  0 ASN.1 or BER errors in the process of decoding.
 
-[  1679 messages passed from the SNMP entity.]{lang="EN-US"}
+  1679 messages passed from the SNMP entity.
 
-[  0 SNMP PDUs had badValue error-status.]{lang="EN-US"}
+  0 SNMP PDUs had badValue error-status.
 
-[  0 SNMP PDUs had genErr error-status.]{lang="EN-US"}
+  0 SNMP PDUs had genErr error-status.
 
-[  0 SNMP PDUs had noSuchName error-status.]{lang="EN-US"}
+  0 SNMP PDUs had noSuchName error-status.
 
-[  0 SNMP PDUs had tooBig error-status (Maximum packet size 1500).]{lang="EN-US"}
+  0 SNMP PDUs had tooBig error-status (Maximum packet size 1500).
 
-[  16544 MIB objects retrieved successfully.]{lang="EN-US"}
+  16544 MIB objects retrieved successfully.
 
-[  2 MIB objects altered successfully.]{lang="EN-US"}
+  2 MIB objects altered successfully.
 
-[  7 GetRequest-PDU accepted and processed.]{lang="EN-US"}
+  7 GetRequest-PDU accepted and processed.
 
-[  7 GetNextRequest-PDU accepted and processed.]{lang="EN-US"}
+  7 GetNextRequest-PDU accepted and processed.
 
-[  1653 GetBulkRequest-PDU accepted and processed.]{lang="EN-US"}
+  1653 GetBulkRequest-PDU accepted and processed.
 
-[  1669 GetResponse-PDU accepted and processed.]{lang="EN-US"}
+  1669 GetResponse-PDU accepted and processed.
 
-[  2 SetRequest-PDU accepted and processed.]{lang="EN-US"}
+  2 SetRequest-PDU accepted and processed.
 
-[  0 Trap PDUs accepted and processed.]{lang="EN-US"}
+  0 Trap PDUs accepted and processed.
 
-[  0 alternate Response Class PDUs dropped silently.]{lang="EN-US"}
+  0 alternate Response Class PDUs dropped silently.
 
-[  0 forwarded Confirmed Class PDUs dropped silently.]{lang="EN-US"}
+  0 forwarded Confirmed Class PDUs dropped silently.
 
-[[表1-10 ]{lang="EN-US"}[display snmp-agent statistics]{lang="EN-US"}]{#struct_0_x1400_15709_x851029892}[命令显示信息描述表]{style="font-family:黑体"}
+表1-10 display snmp-agent statistics命令显示信息描述表
 
-[]{#table_struct_0_1603695493}[[字段]{style="font-family:黑体"}]{#struct_0_x1400_15709_1862083033}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1015369314}
+描述
 
-[[messages delivered to the SNMP entity]{lang="EN-US"}]{#struct_0_x1400_15709_x1683563523}
+messages delivered to the SNMP entity
 
-[[Agent]{lang="EN-US"}]{#struct_0_x1400_15709_x1578358538}[收到的数据报文个数]{style="font-family:宋体"}
+Agent收到的数据报文个数
 
-[[messages were for an unsupported version]{lang="EN-US"}]{#struct_0_x1400_15709_x1399015612}
+messages were for an unsupported version
 
-[[版本不支持的数据报文个数]{style="font-family:宋体"}]{#struct_0_x1400_15709_575728594}
+版本不支持的数据报文个数
 
-[[messages used an unknown SNMP community name]{lang="EN-US"}]{#struct_0_x1400_15709_x411447997}
+messages used an unknown SNMP community name
 
-[[使用了非法团体名的数据报文个数]{style="font-family:宋体"}]{#struct_0_x1400_15709_126633791}
+使用了非法团体名的数据报文个数
 
-[[messages represented an illegal operation for the community supplied]{lang="EN-US"}]{#struct_0_x1400_15709_2003141677}
+messages represented an illegal operation for the community supplied
 
-[[包含了超出团体名权限的操作的数据报文个数]{style="font-family:宋体"}]{#struct_0_x1400_15709_x686519396}
+包含了超出团体名权限的操作的数据报文个数
 
-[[ASN.1 or BER errors in the process of decoding]{lang="EN-US"}]{#struct_0_x1400_15709_x1398950076}
+ASN.1 or BER errors in the process of decoding
 
-[[在解码过程中发生]{style="font-family:宋体"}[ASN.1]{lang="EN-US"}]{#struct_0_x1400_15709_x1521836425}[（]{style="font-family:宋体"}[Abstract Syntax Notation dot one]{lang="EN-US"}[，抽象记法]{style="font-family:宋体"}[1]{lang="EN-US"}[）或]{style="font-family:宋体"}[BER]{lang="EN-US"}[（]{style="font-family:宋体"}[Basic Encoding Rules ]{lang="EN-US"}[，基本编码规则）错误的数据报文个数]{style="font-family:宋体"}
+在解码过程中发生ASN.1（Abstract Syntax Notation dot one，抽象记法1）或BER（Basic Encoding Rules ，基本编码规则）错误的数据报文个数
 
-[[messages passed from the SNMP entity]{lang="EN-US"}]{#struct_0_x1400_15709_1257475035}
+messages passed from the SNMP entity
 
-[[Agent]{lang="EN-US"}]{#struct_0_x1400_15709_872930695}[发送给别的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体的数据报文个数]{style="font-family:宋体"}
+Agent发送给别的SNMP实体的数据报文个数
 
-[[SNMP PDUs had badValue error-status]{lang="EN-US"}]{#struct_0_x1400_15709_x1255578472}
+SNMP PDUs had badValue error-status
 
-[[错误类型为]{style="font-family:宋体"}[BadValues]{lang="EN-US"}]{#struct_0_x1400_15709_x1398884540}[的数据报文个数]{style="font-family:宋体"}
+错误类型为BadValues的数据报文个数
 
-[[SNMP PDUs had genErr error-status]{lang="EN-US"}]{#struct_0_x1400_15709_1741992027}
+SNMP PDUs had genErr error-status
 
-[[genErr]{lang="EN-US"}]{#struct_0_x1400_15709_x2115872390}[错误的数据报文个数]{style="font-family:宋体"}
+genErr错误的数据报文个数
 
-[[SNMP PDUs had noSuchName error-status]{lang="EN-US"}]{#struct_0_x1400_15709_x2001349175}
+SNMP PDUs had noSuchName error-status
 
-[[NoSuchName]{lang="EN-US"}]{#struct_0_x1400_15709_x342418482}[错误的数据报文个数]{style="font-family:宋体"}
+NoSuchName错误的数据报文个数
 
-[[SNMP PDUs had tooBig error-status]{lang="EN-US"}]{#struct_0_x1400_15709_x1398819004}
+SNMP PDUs had tooBig error-status
 
-[[TooBig]{lang="EN-US"}]{#struct_0_x1400_15709_2083848897}[错误的数据报文个数]{style="font-family:宋体"}
+TooBig错误的数据报文个数
 
-[[MIB objects retrieved successfully]{lang="EN-US"}]{#struct_0_x1400_15709_1165870362}
+MIB objects retrieved successfully
 
-[[已成功获取的]{style="font-family:宋体"}[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_2045203146}[对象个数]{style="font-family:宋体"}
+已成功获取的MIB对象个数
 
-[[MIB objects altered successfully]{lang="EN-US"}]{#struct_0_x1400_15709_x562969996}
+MIB objects altered successfully
 
-[[已成功修改的]{style="font-family:宋体"}[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_x1398753468}[对象个数]{style="font-family:宋体"}
+已成功修改的MIB对象个数
 
-[[GetRequest-PDU accepted and processed]{lang="EN-US"}]{#struct_0_x1400_15709_1844926997}
+GetRequest-PDU accepted and processed
 
-[[已接收并处理的]{style="font-family:宋体"}[Get]{lang="EN-US"}]{#struct_0_x1400_15709_1532790550}[请求的个数]{style="font-family:宋体"}
+已接收并处理的Get请求的个数
 
-[[GetNextRequest-PDU accepted and processed]{lang="EN-US"}]{#struct_0_x1400_15709_1801131188}
+GetNextRequest-PDU accepted and processed
 
-[[已接收并处理的]{style="font-family:宋体"}[GetNext]{lang="EN-US"}]{#struct_0_x1400_15709_x1398687932}[请求的个数]{style="font-family:宋体"}
+已接收并处理的GetNext请求的个数
 
-[[GetBulkRequest-PDU accepted and processed]{lang="EN-US"}]{#struct_0_x1400_15709_x1511155299}
+GetBulkRequest-PDU accepted and processed
 
-[[已接收并处理的]{style="font-family:宋体"}[GetBulk]{lang="EN-US"}]{#struct_0_x1400_15709_194442027}[请求的个数]{style="font-family:宋体"}
+已接收并处理的GetBulk请求的个数
 
-[[GetResponse-PDU accepted and processed]{lang="EN-US"}]{#struct_0_x1400_15709_x663731377}
+GetResponse-PDU accepted and processed
 
-[[已接收并处理的]{style="font-family:宋体"}[Get]{lang="EN-US"}]{#struct_0_x1400_15709_x1398622396}[响应的个数]{style="font-family:宋体"}
+已接收并处理的Get响应的个数
 
-[[SetRequest-PDU accepted and processed]{lang="EN-US"}]{#struct_0_x1400_15709_x1314082923}
+SetRequest-PDU accepted and processed
 
-[[已接收并处理的]{style="font-family:宋体"}[Set]{lang="EN-US"}]{#struct_0_x1400_15709_1549995444}[请求的个数]{style="font-family:宋体"}
+已接收并处理的Set请求的个数
 
-[[Trap PDUs accepted and processed]{lang="EN-US"}]{#struct_0_x1400_15709_196863201}
+Trap PDUs accepted and processed
 
-[[已接收并处理的]{style="font-family:宋体"}[Trap]{lang="EN-US"}]{#struct_0_x1400_15709_x1398556860}[和]{style="font-family:宋体"}[Inform]{lang="EN-US"}[报文的个数]{style="font-family:宋体"}
+已接收并处理的Trap和Inform报文的个数
 
-[[alternate Response Class PDUs dropped silently]{lang="EN-US"}]{#struct_0_x1400_15709_1886303561}
+alternate Response Class PDUs dropped silently
 
-[[被丢弃的响应数据报文个数]{style="font-family:宋体"}]{#struct_0_x1400_15709_x613022984}
+被丢弃的响应数据报文个数
 
-[[forwarded Confirmed Class PDUs dropped silently]{lang="EN-US"}]{#struct_0_x1400_15709_650307706}
+forwarded Confirmed Class PDUs dropped silently
 
-[[被丢弃的转发数据报文个数]{style="font-family:宋体"}]{#struct_0_x1400_15709_x1399539900}
-
-[ ]{lang="EN-US"}
-
-::: {#-1264282277 .myid}
-[]{#_Toc404796938}[]{#struct_0_x1400_15709_x165550835}
+被丢弃的转发数据报文个数
 
 **SNMP \-- SNMP配置命令 \-- display snmp-agent sys-info**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **snmp-agent** **sys-info**]{lang="EN-US"}]{#struct_0_x1400_15709_x1827331804}[命令用来显示当前]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[设备的系统信息。]{style="font-family:宋体"}
+**[display** **snmp-agent** **sys-info**]命令用来显示当前SNMP设备的系统信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1655315519}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **snmp-agent** **sys-info** \[ **contact** \| **location** \| **version** \] \*]{lang="EN-US"}]{#struct_0_x1400_15709_x1249714645}
+**[display**[ **snmp-agent** **sys-info** [ **contact** \| **location** \| **version** ] \*]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1987435670}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_x666572986}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1399474364}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x447745365}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1400_15709_x2117094498}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_1910006034}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1400_15709_x2087719332}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x976952258}
+【参数】
 
-[**[contact]{lang="EN-US"}**]{#struct_0_x1400_15709_x1754338281}[：显示当前设备维护者的联系信息。]{style="font-family:宋体"}
+**[contact**]：显示当前设备维护者的联系信息。
 
-[**[location]{lang="EN-US"}**]{#struct_0_x1400_15709_x1239159997}[：显示当前设备的物理位置信息。]{style="font-family:宋体"}
+**[location**]：显示当前设备的物理位置信息。
 
-[**[version]{lang="EN-US"}**]{#struct_0_x1400_15709_x1399015611}[：显示当前设备中运行的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[版本号。]{style="font-family:宋体"}
+**[version**]：显示当前设备中运行的SNMP版本号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x990355347}
+【使用指导】
 
-[[不指定参数时，显示设备的全部系统信息。]{style="font-family:宋体"}]{#struct_0_x1400_15709_851739545}
+不指定参数时，显示设备的全部系统信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_660045028}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x1348336264}[显示设备系统信息。]{style="font-family:宋体"}
+\# 显示设备系统信息。
 
-[[\<Sysname\> display snmp-agent sys-info]{lang="EN-US"}]{#struct_0_x1400_15709_x63457391}
+\<Sysname\> display snmp-agent sys-info
 
-[   The contact information of the agent:]{lang="EN-US"}
+   The contact information of the agent:
 
-[           Hangzhou H3C Technologies Co., Ltd.]{lang="EN-US"}
+           Hangzhou H3C Technologies Co., Ltd.
 
-[ ]{lang="EN-US"}
+   The location information of the agent:
 
-[   The location information of the agent:]{lang="EN-US"}
+           Hangzhou, China
 
-[           Hangzhou, China]{lang="EN-US"}
+   The SNMP version of the agent:
 
-[ ]{lang="EN-US"}
+     SNMPv3
 
-[   The SNMP version of the agent:]{lang="EN-US"}
+【相关命令】
 
-[     SNMPv3]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x161261811}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **sys-info**]{lang="EN-US"}]{#struct_0_x1400_15709_x1398950075}
-:::
-
-::: {#-887578282 .myid}
-[]{#_Toc404796939}[]{#struct_0_x1400_15709_1207046930}
+·**snmp-agent** **sys-info**
 
 **SNMP \-- SNMP配置命令 \-- display snmp-agent trap queue**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **snmp-agent** **trap** **queue**]{lang="EN-US"}]{#struct_0_x1400_15709_1244007713}[命令用来显示告警信息队列的基本信息，包括队列长度和队列中当前告警信息的数量。]{style="font-family:宋体"}
+**[display** **snmp-agent** **trap** **queue**]命令用来显示告警信息队列的基本信息，包括队列长度和队列中当前告警信息的数量。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1244265678}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **snmp-agent** **trap** **queue**]{lang="EN-US"}]{#struct_0_x1400_15709_64546376}
+**[display** **snmp-agent** **trap** **queue**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1221729236}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_x1023510436}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x928837297}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1398884539}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1400_15709_531810766}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x908826473}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1400_15709_1544280857}
+mdc-operator
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1671906332}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_1799548802}[显示当前告警信息队列的配置及使用情况。]{style="font-family:宋体"}
+\# 显示当前告警信息队列的配置及使用情况。
 
-[[\<Sysname\> display snmp-agent trap queue]{lang="EN-US"}]{#struct_0_x1400_15709_1729803057}
+\<Sysname\> display snmp-agent trap queue
 
-[   Queue size: 100]{lang="EN-US"}
+   Queue size: 100
 
-[   Message number: 6]{lang="EN-US"}
+   Message number: 6
 
-[[表1-11 ]{lang="EN-US"}[display snmp-agent trap queue]{lang="EN-US"}]{#struct_0_x1400_15709_316313773}[命令显示信息描述表]{style="font-family:黑体"}
+表1-11 display snmp-agent trap queue命令显示信息描述表
 
-[]{#table_struct_0_1601713381}[[字段]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1398819003}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1400_15709_517764956}
+描述
 
-[[Queue size]{lang="EN-US"}]{#struct_0_x1400_15709_x616166568}
+Queue size
 
-[[告警信息队列长度]{style="font-family:宋体"}]{#struct_0_x1400_15709_1117240141}
+告警信息队列长度
 
-[[Message number]{lang="EN-US"}]{#struct_0_x1400_15709_x211155605}
+Message number
 
-[[告警信息队列中当前告警信息的个数]{style="font-family:宋体"}]{#struct_0_x1400_15709_603271147}
+告警信息队列中当前告警信息的个数
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1544389105}
+·**snmp-agent** **trap** **life**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **trap** **life**]{lang="EN-US"}]{#struct_0_x1400_15709_x1398753467}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **trap** **queue-size**]{lang="EN-US"}]{#struct_0_x1400_15709_x77387304}
-
-::: {#-791797460 .myid}
-[]{#_Toc404796940}[]{#struct_0_x1400_15709_x1259047015}
+·**snmp-agent** **trap** **queue-size**
 
 **SNMP \-- SNMP配置命令 \-- display snmp-agent trap-list**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **snmp-agent** **trap-list**]{lang="EN-US"}]{#struct_0_x1400_15709_x1779260276}[命令用来显示设备当前可以生成告警信息的模块及其告警信息的使能状态。]{style="font-family:宋体"}
+**[display** **snmp-agent** **trap-list**]命令用来显示设备当前可以生成告警信息的模块及其告警信息的使能状态。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1391336326}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **snmp-agent** **trap-list**]{lang="EN-US"}]{#struct_0_x1400_15709_x1355070968}
+**[display** **snmp-agent** **trap-list**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1632951824}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_359374682}
+任意视图
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x786744955}
+【使用指导】
 
-[[如果一个模块包含多个子模块，只要有任何一个子模块的告警信息是使能的，就显示整个模块是使能的。]{style="font-family:宋体"}]{#struct_0_x1400_15709_x1398687931}
+如果一个模块包含多个子模块，只要有任何一个子模块的告警信息是使能的，就显示整个模块是使能的。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_54928642}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_1582504656}[显示设备当前可以生成告警信息的模块及其告警信息的使能状态。（本命令的显示信息与设备的型号有关，请以设备的实际情况为准）]{style="font-family:宋体"}
+\# 显示设备当前可以生成告警信息的模块及其告警信息的使能状态。（本命令的显示信息与设备的型号有关，请以设备的实际情况为准）
 
-[[\<Sysname\> display snmp-agent trap-list]{lang="EN-US"}]{#struct_0_x1400_15709_x570799819}
+\<Sysname\> display snmp-agent trap-list
 
-[   Standard notification is enabled.]{lang="EN-US"}
+   Standard notification is enabled.
 
-[ ]{lang="EN-US"}
+   Enabled notifications: 1; Disabled notifications: 0
 
-[   Enabled notifications: 1; Disabled notifications: 0]{lang="EN-US"}
+以上显示信息中enable表示允许该模块生成告警信息，disable表示不允许该模块生成告警信息。enable或者disable可以通过命令行配置。
 
-[[以上显示信息中]{style="font-family:宋体"}[enable]{lang="EN-US"}]{#struct_0_x1400_15709_x925374163}[表示允许该模块生成告警信息，]{style="font-family:宋体"}[disable]{lang="EN-US"}[表示不允许该模块生成告警信息。]{style="font-family:宋体"}[enable]{lang="EN-US"}[或者]{style="font-family:宋体"}[disable]{lang="EN-US"}[可以通过命令行配置。]{style="font-family:宋体"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_407776913}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **trap** **enable**]{lang="EN-US"}]{#struct_0_x1400_15709_353961715}
-:::
-
-::: {#-2110730190 .myid}
-[]{#_Toc404796941}[]{#struct_0_x1400_15709_225685262}
+·**snmp-agent** **trap** **enable**
 
 **SNMP \-- SNMP配置命令 \-- display snmp-agent usm-user**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **snmp-agent** **usm-user**]{lang="EN-US"}]{#struct_0_x1400_15709_x1398622395}[命令用来显示]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[用户信息。]{style="font-family:宋体"}
+**[display** **snmp-agent** **usm-user**]命令用来显示SNMPv3用户信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1717367450}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **snmp-agent** **usm-user** \[ **engineid** *engineid* \| **group** *group-name* \| **username** *user-name* \] \*]{lang="EN-US"}]{#struct_0_x1400_15709_1449770353}
+**[display**[ **snmp-agent** **usm-user** [ **engineid** *engineid* \| **group** *group-name* \| **username** *user-name* ] \*]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1164229766}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_x1064623454}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_639381712}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_101953741}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1400_15709_607877406}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1398556859}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1400_15709_x486546042}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x597021179}
+【参数】
 
-[**[engineid]{lang="EN-US"}**[ *engineid*]{lang="EN-US"}]{#struct_0_x1400_15709_x658853724}[：显示指定引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[的]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[用户信息，]{style="font-family:宋体"}*[engineid]{lang="EN-US"}*[表示]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[用户创建的时候，系统会记录当时设备的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[，如果设备的引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[被修改，则被创建的]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[用户将暂时无效，只有引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[恢复后，才能继续生效。]{style="font-family:宋体"}
+**[engineid** *engineid*]：显示指定引擎ID的SNMPv3用户信息，*engineid*表示SNMP引擎ID。SNMPv3用户创建的时候，系统会记录当时设备的SNMP实体引擎ID，如果设备的引擎ID被修改，则被创建的SNMPv3用户将暂时无效，只有引擎ID恢复后，才能继续生效。
 
-[**[group]{lang="EN-US"}**[ *group-name*]{lang="EN-US"}]{#struct_0_x1400_15709_x1526098627}[：显示属于指定]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[组的]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[用户信息，区分大小写。]{style="font-family:宋体"}
+**[group** *group-name*]：显示属于指定SNMP组的SNMPv3用户信息，区分大小写。
 
-[**[username]{lang="EN-US"}**[ *user-name*]{lang="EN-US"}]{#struct_0_x1400_15709_760600354}[：显示指定名字的]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[用户信息，区分大小写。]{style="font-family:宋体"}
+**[username** *user-name*]：显示指定名字的SNMPv3用户信息，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_200971724}
+【使用指导】
 
-[[使用]{style="font-family:宋体"}**[snmp-agent]{lang="EN-US"}**[ **usm-user**]{lang="EN-US"}]{#struct_0_x1400_15709_1618048287}[命令可以创建]{style="font-family:宋体"}[SNMPv1/v2c/v3]{lang="EN-US"}[用户，如果创建是的]{style="font-family:宋体"}[SNMPv1/v2c]{lang="EN-US"}[用户，系统自动添加一个新的同名的团体名，并将这个用户当成]{style="font-family:宋体"}[SNMPv1/v2c]{lang="EN-US"}[团体来处理。所以，不能通过]{style="font-family:宋体"}**[display]{lang="EN-US"}**[ **snmp-agent** **usm-user**]{lang="EN-US"}[命令来查看]{style="font-family:宋体"}[SNMPv1/v2c]{lang="EN-US"}[用户的信息，能通过]{style="font-family:宋体"}**[display]{lang="EN-US"}**[ **snmp-agent** **community**]{lang="EN-US"}[查看]{style="font-family:
-宋体"}[SNMPv1/v2c]{lang="EN-US"}[用户对应的团体的信息。]{style="font-family:宋体"}
+使用**snmp-agent** **usm-user**命令可以创建SNMPv1/v2c/v3用户，如果创建是的SNMPv1/v2c用户，系统自动添加一个新的同名的团体名，并将这个用户当成SNMPv1/v2c团体来处理。所以，不能通过**display** **snmp-agent** **usm-user**命令来查看SNMPv1/v2c用户的信息，能通过**display** **snmp-agent** **community**查看SNMPv1/v2c用户对应的团体的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1714596340}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x1399539899}[显示设备上已创建的所有]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[用户的信息。]{style="font-family:宋体"}
+\# 显示设备上已创建的所有SNMPv3用户的信息。
 
-[[\<Sysname\> display snmp-agent usm-user]{lang="EN-US"}]{#struct_0_x1400_15709_1044761497}
+\<Sysname\> display snmp-agent usm-user
 
-[   Username: userv3]{lang="EN-US"}
+   Username: userv3
 
-[   Group name: mygroupv3]{lang="EN-US"}
+   Group name: mygroupv3
 
-[       Engine ID: 800063A203000FE240A1A6]{lang="EN-US"}
+       Engine ID: 800063A203000FE240A1A6
 
-[       Storage type: nonVolatile]{lang="EN-US"}
+       Storage type: nonVolatile
 
-[       User status: active]{lang="EN-US"}
+       User status: active
 
-[       ACL: 2000]{lang="EN-US"}
+       ACL: 2000
 
-[ ]{lang="EN-US"}
+   Username: userv3
 
-[   Username: userv3]{lang="EN-US"}
+   Group name: mygroupv3
 
-[   Group name: mygroupv3]{lang="EN-US"}
+       Engine ID: 8000259503000BB3100A508
 
-[       Engine ID: 8000259503000BB3100A508]{lang="EN-US"}
+       Storage type: nonVolatile
 
-[       Storage type: nonVolatile]{lang="EN-US"}
+       User status: active
 
-[       User status: active]{lang="EN-US"}
+       ACL name: testacl
 
-[       ACL name: testacl]{lang="EN-US"}
+   Username: userv3code
 
-[ ]{lang="EN-US"}
+   Role name: groupv3code
 
-[   Username: userv3code]{lang="EN-US"}
+              network-operator
 
-[   Role name: groupv3code]{lang="EN-US"}
+       Engine ID: 800063A203000FE240A1A6
 
-[              network-operator]{lang="EN-US"}
+       Storage type: nonVolatile
 
-[       Engine ID: 800063A203000FE240A1A6]{lang="EN-US"}
+       User status: active
 
-[       Storage type: nonVolatile]{lang="EN-US"}
+   Username: userv3code
 
-[       User status: active]{lang="EN-US"}
+   Role name: snmprole
 
-[ ]{lang="EN-US"}
+              network-operator
 
-[   Username: userv3code]{lang="EN-US"}
+       Engine ID: 800063A280000002BB0001
 
-[   Role name: snmprole]{lang="EN-US"}
+       Storage type: nonVolatile
 
-[              network-operator]{lang="EN-US"}
+       User status: active
 
-[       Engine ID: 800063A280000002BB0001]{lang="EN-US"}
+表1-12 display snmp-agent usm-user命令显示信息描述表
 
-[       Storage type: nonVolatile]{lang="EN-US"}
+字段
 
-[       User status: active]{lang="EN-US"}
+描述
 
-[[表1-12 ]{lang="EN-US"}[display snmp-agent usm-user]{lang="EN-US"}]{#struct_0_x1400_15709_x1389119479}[命令显示信息描述表]{style="font-family:黑体"}
+Username
 
-[]{#table_struct_0_1601026629}[[字段]{style="font-family:黑体"}]{#struct_0_x1400_15709_1677854023}
-:::
+SNMP用户的用户名
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1400_15709_x892139924}
+Group name
 
-[[Username]{lang="EN-US"}]{#struct_0_x1400_15709_x1399474363}
+SNMP用户所在组的组名
 
-[[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_311769522}[用户的用户名]{style="font-family:宋体"}
+Role name
 
-[[Group name]{lang="EN-US"}]{#struct_0_x1400_15709_1327848120}
+SNMP用户的角色名称
 
-[[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_x1566713934}[用户所在组的组名]{style="font-family:宋体"}
+Engine ID
 
-[[Role name]{lang="EN-US"}]{#struct_0_x1400_15709_1954855323}
+SNMP用户创建时使用的SNMP实体引擎ID
 
-[[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_x2087527164}[用户的角色名称]{style="font-family:宋体"}
+Storage type
 
-[[Engine ID]{lang="EN-US"}]{#struct_0_x1400_15709_x1970066769}
+存储方式，分为以下几种：volatile、nonVolatile、permanent、readOnly、other，具体请参见[表]1-1(?1188054656#_Ref291745733)
 
-[[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_x1634843043}[用户创建时使用的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}
+User status
 
-[[Storage type]{lang="EN-US"}]{#struct_0_x1400_15709_x1399015614}
+SNMP用户的状态，分为以下几种：
 
-[[存储方式，分为以下几种：]{style="font-family:宋体"}[volatile]{lang="EN-US"}]{#struct_0_x1400_15709_x587070820}[、]{style="font-family:宋体"}[nonVolatile]{lang="EN-US"}[、]{style="font-family:宋体"}[permanent]{lang="EN-US"}[、]{style="font-family:宋体"}[readOnly]{lang="EN-US"}[、]{style="font-family:宋体"}[other]{lang="EN-US"}[，具体请参见]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-1]{lang="EN-US"}](?1188054656#_Ref291745733)
+·active：有效
 
-[[User status]{lang="EN-US"}]{#struct_0_x1400_15709_341853191}
+·notInService：当前不可用
 
-[[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_x1286698898}[用户的状态，分为以下几种：]{style="font-family:宋体"}
+·notReady：未配置完成
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[active]{lang="EN-US"}]{#struct_0_x1400_15709_1624255902}[：有效]{lang="EN-US" style="font-family:宋体"}
+·other：其他
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[notInService]{lang="EN-US"}]{#struct_0_x1400_15709_498652752}[：当前不可用]{lang="EN-US" style="font-family:宋体"}
+ACL
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[notReady]{lang="EN-US"}]{#struct_0_x1400_15709_x1398950078}[：未配置完成]{lang="EN-US" style="font-family:宋体"}
+使用的ACL列表的编号（该字段仅在用户与ACL绑定后显示，不会与ACL name同时存在）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[other]{lang="EN-US"}]{#struct_0_x1400_15709_1966561817}[：其他]{lang="EN-US" style="font-family:宋体"}
+ACL name
 
-[[ACL]{lang="EN-US"}]{#struct_0_x1400_15709_892258245}
+使用的ACL列表的名称（该字段仅在用户与ACL名称绑定后显示，不会与ACL同时存在）
 
-[[使用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}]{#struct_0_x1400_15709_144258645}[列表的编号（该字段仅在用户与]{style="font-family:宋体"}[ACL]{lang="EN-US"}[绑定后显示，不会与]{style="font-family:宋体"}[ACL name]{lang="EN-US"}[同时存在）]{style="font-family:宋体"}
+【相关命令】
 
-[[ACL name]{lang="EN-US"}]{#struct_0_x1400_15709_1543426996}
-
-[[使用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}]{#struct_0_x1400_15709_684689336}[列表的名称（该字段仅在用户与]{style="font-family:宋体"}[ACL]{lang="EN-US"}[名称绑定后显示，不会与]{style="font-family:宋体"}[ACL]{lang="EN-US"}[同时存在）]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1106344050}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **usm-user** **v3**]{lang="EN-US"}]{#struct_0_x1400_15709_x330840228}
-
-::: {#143449593 .myid}
-[]{#_Toc404796942}[]{#struct_0_x1400_15709_x1398884542}
+·**snmp-agent** **usm-user** **v3**
 
 **SNMP \-- SNMP配置命令 \-- enable snmp trap updown**
 
 ------------------------------------------------------------------------
 
-[**[enable]{lang="EN-US"}**[ **snmp** **trap** **updown**]{lang="EN-US"}]{#struct_0_x1400_15709_x1390175855}[命令用来开启接口状态变化的告警功能。]{style="font-family:宋体"}
+**[enable** **snmp** **trap** **updown**]命令用来开启接口状态变化的告警功能。
 
-[**[undo]{lang="EN-US"}**[ **enable** **snmp** **trap** **updown**]{lang="EN-US"}]{#struct_0_x1400_15709_1255111872}[命令用来关闭接口状态变化的告警功能。]{style="font-family:宋体"}
+**[undo** **enable** **snmp** **trap** **updown**]命令用来关闭接口状态变化的告警功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1405268058}
+【命令】
 
-[**[enable]{lang="EN-US"}**[ **snmp** **trap** **updown**]{lang="EN-US"}]{#struct_0_x1400_15709_848677127}
+**[enable** **snmp** **trap** **updown**]
 
-[**[undo]{lang="EN-US"}**[ **enable** **snmp** **trap** **updown**]{lang="EN-US"}]{#struct_0_x1400_15709_1346241932}
+**[undo** **enable** **snmp** **trap** **updown**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1407272784}
+【缺省情况】
 
-[[接口状态变化的告警功能处于开启状态。]{style="font-family:宋体"}]{#struct_0_x1400_15709_x332928882}
+接口状态变化的告警功能处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x786135080}
+【视图】
 
-[[接口视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_x1398819006}
+接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_921049483}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_1393751222}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1767515030}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x2006303598}
+【使用指导】
 
-[[需要注意的是，如果要求接口在状态发生改变时生成接口状态变化的告警信息，需要开启全局告警功能并在接口开启接口状态变化的告警功能。接口下开启请使用命令]{style="font-family:宋体"}**[enable]{lang="EN-US"}**[ **snmp** **trap** **updown**]{lang="EN-US"}]{#struct_0_x1400_15709_178013104}[，全局下开启请使用命令]{style="font-family:宋体"}**[snmp-agent]{lang="EN-US"}**[ **trap** **enable** **standard** \[ **linkdown** \| **linkup** \] \*]{lang="EN-US"}[。]{style="font-family:宋体"}
+需要注意的是，如果要求接口在状态发生改变时生成接口状态变化的告警信息，需要开启全局告警功能并在接口开启接口状态变化的告警功能。接口下开启请使用命令**enable** **snmp** **trap** **updown**，全局下开启请使用命令**snmp-agent**[ **trap** **enable** **standard** [ **linkdown** \| **linkup** ] \*]。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1398753470}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_1488631101}[允许发送端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的]{style="font-family:宋体"}[linkUp/linkDown]{lang="EN-US"}[的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[告警，使用团体名]{style="font-family:宋体"}[public]{lang="EN-US"}[，向]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[10.1.1.1]{lang="EN-US"}[的目的主机发送]{style="font-family:宋体"}[Trap]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+\# 允许发送端口GigabitEthernet1/0/1的linkUp/linkDown的SNMP告警，使用团体名public，向IP地址为10.1.1.1的目的主机发送Trap报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_x403969077}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent trap enable]{lang="EN-US"}
+Sysname snmp-agent trap enable
 
-[\[Sysname\] snmp-agent target-host trap address udp-domain 10.1.1.1 params securityname public]{lang="EN-US"}
+Sysname snmp-agent target-host trap address udp-domain 10.1.1.1 params securityname public
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] enable snmp trap updown]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 enable snmp trap updown
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x984347851}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **target-host**]{lang="EN-US"}]{#struct_0_x1400_15709_890872415}
+·**snmp-agent** **target-host**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **trap** **enable**]{lang="EN-US"}]{#struct_0_x1400_15709_1518407639}
-:::
-
-::: {#-1685889571 .myid}
-[]{#_Toc404796943}[]{#struct_0_x1400_15709_x1047824066}
+·**snmp-agent** **trap** **enable**
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**]{#struct_0_x1400_15709_x1398687934}[命令用来开启]{style="font-family:宋体"}[SNMP Agent]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[snmp-agent**]命令用来开启SNMP Agent功能。
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent**]{lang="EN-US"}]{#struct_0_x1400_15709_x348355885}[命令用来关闭]{style="font-family:宋体"}[SNMP Agent]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo** **snmp-agent**]命令用来关闭SNMP Agent功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1873916708}
+【命令】
 
-[**[snmp-agent]{lang="EN-US"}**]{#struct_0_x1400_15709_x1297223806}
+**[snmp-agent**]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent**]{lang="EN-US"}]{#struct_0_x1400_15709_1073445132}
+**[undo** **snmp-agent**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1787391403}
+【缺省情况】
 
-[[SNMP Agent]{lang="EN-US"}]{#struct_0_x1400_15709_909661323}[功能处于关闭状态。]{style="font-family:宋体"}
+SNMP Agent功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_605755455}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_637613142}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1398622398}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_1461854599}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1665456841}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1914075675}
+【使用指导】
 
-[[执行除]{style="font-family:宋体"}**[snmp-agent]{lang="EN-US"}**[ **calculate-password**]{lang="EN-US"}]{#struct_0_x1400_15709_x613629936}[外任何以]{style="font-family:宋体"}[snmp-agent]{lang="EN-US"}[开头的命令都可以开启]{style="font-family:宋体"}[SNMP Agent]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+执行除**snmp-agent** **calculate-password**外任何以snmp-agent开头的命令都可以开启SNMP Agent功能。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x559676646}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x1979959508}[开启设备的]{style="font-family:宋体"}[SNMP Agent]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 开启设备的SNMP Agent功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_x1398556862}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent]{lang="EN-US"}
-:::
-
-::: {#-251404023 .myid}
-[]{#_Toc404796944}[]{#struct_0_x1400_15709_723504147}
+Sysname snmp-agent
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent calculate-password**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**[ **calculate-password**]{lang="EN-US"}]{#struct_0_x1400_15709_x322992389}[命令用来计算用户给定明文密码通过加密算法处理后得到的密文密码所对应摘要。]{style="font-family:宋体"}
+**[snmp-agent** **calculate-password**]命令用来计算用户给定明文密码通过加密算法处理后得到的密文密码所对应摘要。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1345852677}
+【命令】
 
-[[非]{style="font-family:宋体"}[FIPS]{lang="EN-US"}]{#struct_0_x1400_15709_1707157819}[模式下：]{style="font-family:宋体"}
+非FIPS模式下：
 
-[**[snmp-agent]{lang="EN-US"}**[ **calculate-password** *plain-password* **mode** { **3desmd5** \| **3dessha** \| **md5** \| **sha** } { **local-engineid** \| **specified-engineid** *engineid* }]{lang="EN-US"}]{#struct_0_x1400_15709_1516470682}
+**[snmp-agent**[ **calculate-password** *plain-password* **mode** { **3desmd5** \| **3dessha** \| **md5** \| **sha** } { **local-engineid** \| **specified-engineid** *engineid* }]]
 
-[[FIPS]{lang="EN-US"}]{#struct_0_x1400_15709_x2074868568}[模式下：]{style="font-family:宋体"}
+FIPS模式下：
 
-[**[snmp-agent]{lang="EN-US"}**[ **calculate-password** *plain-password* **mode** **sha** { **local-engineid** \| **specified-engineid** *engineid* }]{lang="EN-US"}]{#struct_0_x1400_15709_1531215439}
+**[snmp-agent**[ **calculate-password** *plain-password* **mode** **sha** { **local-engineid** \| **specified-engineid** *engineid* }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x765145516}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_x1399539902}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_997248579}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_2038476787}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_1891114976}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1238947075}
+【参数】
 
-[*[plain-password]{lang="EN-US"}*]{#struct_0_x1400_15709_x754390094}[：需要被加密的明文密码。]{style="font-family:宋体"}
+*[plain-password*]：需要被加密的明文密码。
 
-[**[mode]{lang="EN-US"}**]{#struct_0_x1400_15709_102625854}[：指明使用的认证算法或加密算法。]{style="font-family:宋体"}[AES]{lang="EN-US"}[、]{style="font-family:宋体"}[3DES]{lang="EN-US"}[和]{style="font-family:宋体"}[DES]{lang="EN-US"}[是加密算法，这三个加密算法的安全性由高到低依次是：]{style="font-family:宋体"}[AES]{lang="EN-US"}[、]{style="font-family:宋体"}[3DES]{lang="EN-US"}[、]{style="font-family:宋体"}[DES]{lang="EN-US"}[，安全性高的加密算法实现机制复杂，运算速度慢。对于普通的安全要求，]{style="font-family:宋体"}[DES]{lang="EN-US"}[算法就可以满足需要；]{style="font-family:宋体"} [MD5]{lang="EN-US"}[和]{style="font-family:宋体"}[SHA-1]{lang="EN-US"}[是认证算法，其中]{style="font-family:宋体"}[MD5]{lang="EN-US"}[算法的计算速度比]{style="font-family:宋体"}[SHA-1]{lang="EN-US"}[算法快，而]{style="font-family:宋体"}[SHA-1]{lang="EN-US"}[算法的安全强度比]{style="font-family:宋体"}[MD5]{lang="EN-US"}[算法高。]{style="font-family:宋体"}
+**[mode**]：指明使用的认证算法或加密算法。AES、3DES和DES是加密算法，这三个加密算法的安全性由高到低依次是：AES、3DES、DES，安全性高的加密算法实现机制复杂，运算速度慢。对于普通的安全要求，DES算法就可以满足需要； MD5和SHA-1是认证算法，其中MD5算法的计算速度比SHA-1算法快，而SHA-1算法的安全强度比MD5算法高。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[3desmd5]{lang="EN-US"}**]{#struct_0_x1400_15709_1954789787}[：用于将明文密码转换为密文密码，此时对应的认证算法必须为]{style="font-family:
-宋体"}[MD5]{lang="EN-US"}[，加密协议必须为]{style="font-family:宋体"}[3DES]{lang="EN-US"}[。]{style="font-family:宋体"}
+·**3desmd5**：用于将明文密码转换为密文密码，此时对应的认证算法必须为MD5，加密协议必须为3DES。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[3dessha]{lang="EN-US"}**]{#struct_0_x1400_15709_1380930789}[：用于将明文密码转换为密文密码，此时对应的认证算法必须为]{style="font-family:
-宋体"}[SHA-1]{lang="EN-US"}[，加密协议必须为]{style="font-family:宋体"}[3DES]{lang="EN-US"}[。]{style="font-family:宋体"}
+·**3dessha**：用于将明文密码转换为密文密码，此时对应的认证算法必须为SHA-1，加密协议必须为3DES。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[md5]{lang="EN-US"}**]{#struct_0_x1400_15709_x869476098}[：用于将明文认证密码转换为密文认证密码，此时对应的认证算法必须为]{style="font-family:
-宋体"}[MD5]{lang="EN-US"}[；或者用于将明文加密密码转换为密文加密密码，此时对应的认证算法必须为]{style="font-family:宋体"}[MD5]{lang="EN-US"}[，加密协议可以为]{style="font-family:宋体"}[AES]{lang="EN-US"}[也可以是]{style="font-family:宋体"}[DES]{lang="EN-US"}[（当认证协议为]{style="font-family:宋体"}[MD5]{lang="EN-US"}[时，加密协议不管是]{style="font-family:宋体"}[AES]{lang="EN-US"}[还是]{style="font-family:宋体"}[DES]{lang="EN-US"}[，转换后的结果是一样的）。]{style="font-family:宋体"}
+·**md5**：用于将明文认证密码转换为密文认证密码，此时对应的认证算法必须为MD5；或者用于将明文加密密码转换为密文加密密码，此时对应的认证算法必须为MD5，加密协议可以为AES也可以是DES（当认证协议为MD5时，加密协议不管是AES还是DES，转换后的结果是一样的）。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[sha]{lang="EN-US"}**]{#struct_0_x1400_15709_476830957}[：用于将明文认证密码转换为密文认证密码，此时对应的认证算法必须为]{style="font-family:
-宋体"}[SHA-1]{lang="EN-US"}[；或者用于将明文加密密码转换为密文加密密码，此时对应的认证算法必须为]{style="font-family:宋体"}[SHA-1]{lang="EN-US"}[，加密协议可以为]{style="font-family:宋体"}[AES]{lang="EN-US"}[也可以是]{style="font-family:宋体"}[DES]{lang="EN-US"}[（当认证协议为]{style="font-family:宋体"}[SHA-1]{lang="EN-US"}[时，加密协议不管是]{style="font-family:宋体"}[AES]{lang="EN-US"}[还是]{style="font-family:宋体"}[DES]{lang="EN-US"}[，转换后的结果是一样的）。]{style="font-family:宋体"}
+·**sha**：用于将明文认证密码转换为密文认证密码，此时对应的认证算法必须为SHA-1；或者用于将明文加密密码转换为密文加密密码，此时对应的认证算法必须为SHA-1，加密协议可以为AES也可以是DES（当认证协议为SHA-1时，加密协议不管是AES还是DES，转换后的结果是一样的）。
 
-[**[local-engineid]{lang="EN-US"}**]{#struct_0_x1400_15709_x1399474366}[：使用本地引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[计算密文密码，引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[的相关描述与配置可参考命令]{style="font-family:宋体"}**[snmp-agent]{lang="EN-US"}**[ **local-engineid**]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[local-engineid**]：使用本地引擎ID计算密文密码，引擎ID的相关描述与配置可参考命令**snmp-agent** **local-engineid**。
 
-[**[specified-engineid]{lang="EN-US"}**]{#struct_0_x1400_15709_715054049}[：使用用户指定的引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[计算密文密码。]{style="font-family:宋体"}
+**[specified-engineid**]：使用用户指定的引擎ID计算密文密码。
 
-[*[engineid]{lang="EN-US"}*]{#struct_0_x1400_15709_x792392975}[：引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[，必须为偶数个十六进制数，偶数的取值范围为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[64]{lang="EN-US"}[。全]{style="font-family:宋体"}[0]{lang="EN-US"}[和全]{style="font-family:宋体"}[F]{lang="EN-US"}[均被认为是无效参数。]{style="font-family:宋体"}
+*[engineid*]：引擎ID，必须为偶数个十六进制数，偶数的取值范围为10～64。全0和全F均被认为是无效参数。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1694810970}
+【使用指导】
 
-[[执行本命令前，必须先开启设备的]{style="font-family:宋体"}[SNMP Agent]{lang="EN-US"}]{#struct_0_x1400_15709_x765068937}[功能。]{style="font-family:宋体"}
+执行本命令前，必须先开启设备的SNMP Agent功能。
 
-[[在创建]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}]{#struct_0_x1400_15709_x659719286}[用户时，如果指明认证或者加密密码采用密文形式，则可以借助此命令生成相应的密文密码所对应的摘要。]{style="font-family:宋体"}
+在创建SNMPv3用户时，如果指明认证或者加密密码采用密文形式，则可以借助此命令生成相应的密文密码所对应的摘要。
 
-[[生成的密码是和引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1400_15709_x41671952}[相关联的，在某一引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[下生成的密码，也只在此引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[下生效。]{style="font-family:宋体"}
+生成的密码是和引擎ID相关联的，在某一引擎ID下生成的密码，也只在此引擎ID下生效。
 
-[[通过该命令可以得到密文密码对应的摘要，从而在配置用户时使用摘要，避免由于输入明文密码造成的安全隐患，同时由于密码可以解密，摘要不可逆，所以增强了安全性。]{style="font-family:宋体"}]{#struct_0_x1400_15709_x1457293741}
+通过该命令可以得到密文密码对应的摘要，从而在配置用户时使用摘要，避免由于输入明文密码造成的安全隐患，同时由于密码可以解密，摘要不可逆，所以增强了安全性。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_2006057727}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x964922052}[使用本地引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[和]{style="font-family:宋体"}[SHA-1]{lang="EN-US"}[认证算法计算明文为]{style="font-family:宋体"}[authkey]{lang="EN-US"}[的加密密码所对应摘要。]{style="font-family:宋体"}
+\# 使用本地引擎ID和SHA-1认证算法计算明文为authkey的加密密码所对应摘要。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_x1399015613}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent calculate-password authkey mode sha local-engineid]{lang="EN-US"}
+Sysname snmp-agent calculate-password authkey mode sha local-engineid
 
-[The encrypted key is: 09659EC5A9AE91BA189E5845E1DDE0CC]{lang="EN-US"}
+The encrypted key is: 09659EC5A9AE91BA189E5845E1DDE0CC
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_2141812535}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **local-engineid**]{lang="EN-US"}]{#struct_0_x1400_15709_x513192678}
+·**snmp-agent** **local-engineid**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **usm-user** **v3**]{lang="EN-US"}]{#struct_0_x1400_15709_512485600}
-:::
-
-::: {#-673923415 .myid}
-[]{#_Toc404796945}[]{#struct_0_x1400_15709_x1678755778}
+·**snmp-agent** **usm-user** **v3**
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent community**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**[ **community**]{lang="EN-US"}]{#struct_0_x1400_15709_x1550934032}[命令用来创建一个新的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[团体，并设置该团体的参数，包括访问权限、配置团体名方式、访问控制列表和可访问的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+**[snmp-agent** **community**]命令用来创建一个新的SNMP团体，并设置该团体的参数，包括访问权限、配置团体名方式、访问控制列表和可访问的MIB视图。
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **community**]{lang="EN-US"}]{#struct_0_x1400_15709_1153445974}[命令用来删除指定的团体。]{style="font-family:宋体"}
+**[undo** **snmp-agent** **community**]命令用来删除指定的团体。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_694410627}
+【命令】
 
-[[VACM]{lang="EN-US"}]{#struct_0_x1400_15709_1955379611}[方式：]{style="font-family:宋体"}
+VACM方式：
 
-[**[snmp-agent]{lang="EN-US"}**[ **community** { **read** \| **write** } \[ **simple** \| **cipher** \] *community-name* \[ **mib-view** *view-name* \] \[ **acl** { *acl-number* \| **name** *acl-name* } \| **acl** **ipv6** { *ipv6-acl-number \|* **name** *ipv6-acl-name* } \] \*]{lang="EN-US"}]{#struct_0_x1400_15709_x1398950077}
+**[snmp-agent**[ **community** { **read** \| **write** } [ **simple** \| **cipher** ] *community-name*  **mib-view** *view-name*  [ **acl** { *acl-number* \| **name** *acl-name* } \| **acl** **ipv6** { *ipv6-acl-number \|* **name** *ipv6-acl-name* } ] \*]]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **community** { **read** \| **write** } \[ **cipher** \] *community-name*]{lang="EN-US"}]{#struct_0_x1400_15709_44247516}
+**[undo**[ **snmp-agent** **community** { **read** \| **write** } [ **cipher** ] *community-name*]]
 
-[[RBAC]{lang="EN-US"}]{#struct_0_x1400_15709_573199730}[方式：]{style="font-family:宋体"}
+RBAC方式：
 
-[**[snmp-agent]{lang="EN-US"}**[ **community** \[ **simple** \| **cipher** \] *community-name* **user-role** *role-name* \[ **acl** { *acl-number* \| **name** *acl-name* } \| **acl** **ipv6** { *ipv6-acl-number \|* **name** *ipv6-acl-name* } \] \*]{lang="EN-US"}]{#struct_0_x1400_15709_1955445147}
+**[snmp-agent**[ **community** [ **simple** \| **cipher** ] *community-name* **user-role** *role-name* [ **acl** { *acl-number* \| **name** *acl-name* } \| **acl** **ipv6** { *ipv6-acl-number \|* **name** *ipv6-acl-name* } ] \*]]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **community** \[ **cipher** \] *community-name*]{lang="EN-US"}]{#struct_0_x1400_15709_x1305944702}
+**[undo** **snmp-agent** **community** [ **cipher**  *community-name*]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1886742496}
+【缺省情况】
 
-[[设备上没有配置]{style="font-family:宋体"}[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_x1252563537}[团体。]{style="font-family:宋体"}
+设备上没有配置SNMP团体。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1591134784}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_x1091163407}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_673807813}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x378758038}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1398884541}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_175908086}
+【参数】
 
-[**[read]{lang="EN-US"}**]{#struct_0_x1400_15709_x1010162410}[：表示对]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象的访问权限为只读。]{style="font-family:宋体"}[NMS]{lang="EN-US"}[使用该团体名访问]{style="font-family:宋体"}[Agent]{lang="EN-US"}[时只能执行读操作。]{style="font-family:宋体"}
+**[read**]：表示对MIB对象的访问权限为只读。NMS使用该团体名访问Agent时只能执行读操作。
 
-[**[write]{lang="EN-US"}**]{#struct_0_x1400_15709_x835080799}[：表示对]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象的访问权限为读写。]{style="font-family:宋体"}[NMS]{lang="EN-US"}[使用该团体名访问]{style="font-family:宋体"}[Agent]{lang="EN-US"}[时可以执行读、写操作。]{style="font-family:宋体"}
+**[write**]：表示对MIB对象的访问权限为读写。NMS使用该团体名访问Agent时可以执行读、写操作。
 
-[**[simple]{lang="EN-US"}**]{#struct_0_x1400_15709_1116266918}[：表示以明文方式配置团体名并以密文方式保存到配置文件中，缺省情况下，表示以明文方式配置团体名，并以明文方式保存到配置文件。]{style="font-family:宋体"}
+**[simple**]：表示以明文方式配置团体名并以密文方式保存到配置文件中，缺省情况下，表示以明文方式配置团体名，并以明文方式保存到配置文件。
 
-[**[cipher]{lang="EN-US"}**]{#struct_0_x1400_15709_x1398819005}[：表示以密文方式配置团体名并以密文方式保存到配置文件中，缺省情况下，表示以明文方式配置团体名，并以明文方式保存到配置文件。]{style="font-family:宋体"}
+**[cipher**]：表示以密文方式配置团体名并以密文方式保存到配置文件中，缺省情况下，表示以明文方式配置团体名，并以明文方式保存到配置文件。
 
-[*[community-name]{lang="EN-US"}*]{#struct_0_x1400_15709_x645034458}[：设置明文团体名或密文团体名，是限制]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问]{style="font-family:宋体"}[Agent]{lang="EN-US"}[时所使用的团体名。区分大小写，需要转义的字符请加"]{style="font-family:宋体"}[\\]{lang="EN-US"}["后输入。当以明文方式配置时，团体名为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[个字符的字符串；当以密文方式配置时，团体名为]{style="font-family:宋体"}[33]{lang="EN-US"}[～]{style="font-family:宋体"}[73]{lang="EN-US"}[个字符的字符串。]{style="font-family:宋体"}
+*[community-name*]：设置明文团体名或密文团体名，是限制NMS访问Agent时所使用的团体名。区分大小写，需要转义的字符请加"\"后输入。当以明文方式配置时，团体名为1～32个字符的字符串；当以密文方式配置时，团体名为33～73个字符的字符串。
 
-[**[mib-view]{lang="EN-US"}**[ *view-name*]{lang="EN-US"}]{#struct_0_x1400_15709_x1777910278}[：用来指定]{style="font-family:宋体"}[NMS]{lang="EN-US"}[可以访问的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象的范围，]{style="font-family:宋体"}*[view-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[MIB]{lang="EN-US"}[视图名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[个字符的字符串。不指定参数时，缺省视图为]{style="font-family:宋体"}[ViewDefault]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[mib-view** *view-name*]：用来指定NMS可以访问的MIB对象的范围，*view-name*表示MIB视图名，为1～32个字符的字符串。不指定参数时，缺省视图为ViewDefault。
 
-[**[user-role]{lang="EN-US"}**[ *role-name*]{lang="EN-US"}]{#struct_0_x1400_15709_1954855330}[：该团体对应的角色名称，]{style="font-family:宋体"}*[role-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[user-role** *role-name*]：该团体对应的角色名称，*role-name*为1～63个字符的字符串，区分大小写。
 
-[**[acl]{lang="EN-US"}**[ *acl-number*]{lang="EN-US"}]{#struct_0_x1400_15709_x592068099}[：将团体名与基本]{style="font-family:宋体"}[ACL]{lang="EN-US"}[绑定，限制了只有]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址符合条件的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[可以访问]{style="font-family:宋体"}[Agent]{lang="EN-US"}[。]{style="font-family:宋体"}*[acl-number]{lang="EN-US"}*[表示访问列表号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[2999]{lang="EN-US"}[。当未引用]{style="font-family:宋体"}[ACL]{lang="EN-US"}[或者引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[不存在时，允许所有]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当]{style="font-family:宋体"}[ACL]{lang="EN-US"}[为空时，会禁止所有的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[非空时，则只有]{style="font-family:宋体"}[ACL]{lang="EN-US"}[中]{style="font-family:宋体"}[permit]{lang="EN-US"}[的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[才能访问设备，其它]{style="font-family:宋体"}[NMS]{lang="EN-US"}[不允许访问设备，以免非法]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备。关于]{style="font-family:宋体"}[ACL]{lang="EN-US"}[的详细描述和介绍请参见"]{style="font-family:宋体"}[ACL]{lang="EN-US"}[和]{style="font-family:宋体"}[QoS]{lang="EN-US"}[配置指导"中的"]{style="font-family:宋体"}[ACL]{lang="EN-US"}["。]{style="font-family:宋体"}
+**[acl** *acl-number*]：将团体名与基本ACL绑定，限制了只有IP地址符合条件的NMS可以访问Agent。*acl-number*表示访问列表号，取值范围为2000～2999。当未引用ACL或者引用的ACL不存在时，允许所有NMS访问设备；当ACL为空时，会禁止所有的NMS访问设备；当引用的ACL非空时，则只有ACL中permit的NMS才能访问设备，其它NMS不允许访问设备，以免非法NMS访问设备。关于ACL的详细描述和介绍请参见"ACL和QoS配置指导"中的"ACL"。
 
-[**[name]{lang="EN-US"}***[ acl-name]{lang="EN-US"}*]{#struct_0_x1400_15709_x1205146326}[：将团体名与基本]{style="font-family:宋体"}[ACL]{lang="EN-US"}[名绑定，]{style="font-family:宋体"}*[acl-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。当未引用]{style="font-family:宋体"}[ACL]{lang="EN-US"}[或者引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[不存在时，允许所有]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当]{style="font-family:宋体"}[ACL]{lang="EN-US"}[为空时，会禁止所有的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[非空时，则只有]{style="font-family:宋体"}[ACL]{lang="EN-US"}[中]{style="font-family:宋体"}[permit]{lang="EN-US"}[的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[才能访问设备，其它]{style="font-family:宋体"}[NMS]{lang="EN-US"}[不允许访问设备，以免非法]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备。关于]{style="font-family:宋体"}[ACL]{lang="EN-US"}[的详细描述和介绍请参见"]{style="font-family:宋体"}[ACL]{lang="EN-US"}[和]{style="font-family:宋体"}[QoS]{lang="EN-US"}[配置指导"中的"]{style="font-family:宋体"}[ACL]{lang="EN-US"}["。]{style="font-family:宋体"}
+**[name*** acl-name*]：将团体名与基本ACL名绑定，*acl-name*为1～63个字符的字符串，不区分大小写。当未引用ACL或者引用的ACL不存在时，允许所有NMS访问设备；当ACL为空时，会禁止所有的NMS访问设备；当引用的ACL非空时，则只有ACL中permit的NMS才能访问设备，其它NMS不允许访问设备，以免非法NMS访问设备。关于ACL的详细描述和介绍请参见"ACL和QoS配置指导"中的"ACL"。
 
-[**[acl]{lang="EN-US"}**[ **ipv6** *ipv6-acl-number*]{lang="EN-US"}]{#struct_0_x1400_15709_x1553432479}[：将团体名与基本]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[绑定，限制了只有]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址符合条件的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[可以访问]{style="font-family:宋体"}[Agent]{lang="EN-US"}[。]{style="font-family:宋体"}*[ipv6-acl-number]{lang="EN-US"}*[表示访问列表号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[2999]{lang="EN-US"}[。当未引用]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[或者引用的]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[不存在时，允许所有]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[为空时，会禁止]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当引用的]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[非空时，则只有]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[中]{style="font-family:宋体"}[permit]{lang="EN-US"}[的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[才能访问设备，其它]{style="font-family:宋体"}[NMS]{lang="EN-US"}[不允许访问设备，以免非法]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备。]{style="font-family:宋体"}
+**[acl** **ipv6** *ipv6-acl-number*]：将团体名与基本IPv6 ACL绑定，限制了只有IPv6地址符合条件的NMS可以访问Agent。*ipv6-acl-number*表示访问列表号，取值范围为2000～2999。当未引用IPv6 ACL或者引用的IPv6 ACL不存在时，允许所有NMS访问设备；当IPv6 ACL为空时，会禁止NMS访问设备；当引用的IPv6 ACL非空时，则只有IPv6 ACL中permit的NMS才能访问设备，其它NMS不允许访问设备，以免非法NMS访问设备。
 
-[**[name]{lang="EN-US"}***[ ipv6-acl-name]{lang="EN-US"}*]{#struct_0_x1400_15709_x1205342934}[：将团体名与基本]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[名绑定，]{style="font-family:宋体"}*[acl-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。当未引用]{style="font-family:宋体"}[ACL]{lang="EN-US"}[或者引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[不存在时，允许所有]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当]{style="font-family:宋体"}[ACL]{lang="EN-US"}[为空时，会禁止所有的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[非空时，则只有]{style="font-family:宋体"}[ACL]{lang="EN-US"}[中]{style="font-family:宋体"}[permit]{lang="EN-US"}[的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[才能访问设备，其它]{style="font-family:宋体"}[NMS]{lang="EN-US"}[不允许访问设备，以免非法]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备。]{style="font-family:宋体"}
+**[name*** ipv6-acl-name*]：将团体名与基本IPv6 ACL名绑定，*acl-name*为1～63个字符的字符串，不区分大小写。当未引用ACL或者引用的ACL不存在时，允许所有NMS访问设备；当ACL为空时，会禁止所有的NMS访问设备；当引用的ACL非空时，则只有ACL中permit的NMS才能访问设备，其它NMS不允许访问设备，以免非法NMS访问设备。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1649272982}
+【使用指导】
 
-[[FIPS]{lang="EN-US"}]{#struct_0_x1400_15709_1772793130}[模式下，不支持本命令。]{style="font-family:宋体"}
+FIPS模式下，不支持本命令。
 
-[[该命令用于]{style="font-family:宋体"}[SNMPv1]{lang="EN-US"}]{#struct_0_x1400_15709_x1398753469}[和]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[组网环境。]{style="font-family:宋体"}
+该命令用于SNMPv1和SNMPv2c组网环境。
 
-[[系统中可配置的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_1954920866}[团体最多为]{style="font-family:宋体"}[10]{lang="EN-US"}[个。]{style="font-family:宋体"}
+系统中可配置的SNMP团体最多为10个。
 
-[[团体是]{style="font-family:宋体"}[NMS]{lang="EN-US"}]{#struct_0_x1400_15709_x883956358}[和]{style="font-family:宋体"}[Agent]{lang="EN-US"}[的集合，用团体名来标志。团体名相当于密码，团体内的设备通信使用团体名来进行认证。只有]{style="font-family:宋体"}[NMS]{lang="EN-US"}[和]{style="font-family:宋体"}[Agent]{lang="EN-US"}[上配置的团体名相同时，才能互相访问。通常情况下，"]{style="font-family:宋体"}[public]{lang="EN-US"}["被用来作为读权限团体名、"]{style="font-family:宋体"}[private]{lang="EN-US"}["被用来作为写权限团体名。为了增强安全性，网络管理员也可以配置其它团体名。]{style="font-family:宋体"}
+团体是NMS和Agent的集合，用团体名来标志。团体名相当于密码，团体内的设备通信使用团体名来进行认证。只有NMS和Agent上配置的团体名相同时，才能互相访问。通常情况下，"public"被用来作为读权限团体名、"private"被用来作为写权限团体名。为了增强安全性，网络管理员也可以配置其它团体名。
 
-[[创建]{style="font-family:宋体"}[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_x510057492}[团体时，可以通过两种配置方式来控制团体的访问：]{style="font-family:宋体"}
+创建SNMP团体时，可以通过两种配置方式来控制团体的访问：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VACM]{lang="EN-US"}]{#struct_0_x1400_15709_x2065086900}[（]{lang="EN-US" style="font-family:宋体"}[View-based Access Control Model]{lang="EN-US"}[，基于视图的访问控制模型）的配置方式，通过]{lang="EN-US" style="font-family:宋体"}**[mib-view]{lang="EN-US"}**[参数限制]{lang="EN-US" style="font-family:宋体"}[NMS]{lang="EN-US"}[可以访问的]{lang="EN-US" style="font-family:宋体"}[Agent]{lang="EN-US"}[上的]{lang="EN-US" style="font-family:宋体"}[MIB]{lang="EN-US"}[对象，名称为]{lang="EN-US" style="font-family:宋体"}*[view-name]{lang="EN-US"}*[的所有]{lang="EN-US" style="font-family:宋体"}[MIB]{lang="EN-US"}[视图都会被访问引用；通过]{lang="EN-US" style="font-family:宋体"}**[read]{lang="EN-US"}**[、]{lang="EN-US" style="font-family:宋体"}**[write]{lang="EN-US"}**[参数限制]{lang="EN-US" style="font-family:宋体"}[NMS]{lang="EN-US"}[可以对]{lang="EN-US" style="font-family:宋体"}[Agent]{lang="EN-US"}[执行的操作类型。]{lang="EN-US" style="font-family:宋体"}
+·VACM（View-based Access Control Model，基于视图的访问控制模型）的配置方式，通过**mib-view**参数限制NMS可以访问的Agent上的MIB对象，名称为*view-name*的所有MIB视图都会被访问引用；通过**read**、**write**参数限制NMS可以对Agent执行的操作类型。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RBAC]{lang="EN-US"}]{#struct_0_x1400_15709_1222726384}[（]{lang="EN-US" style="font-family:宋体"}[Role Based Access Control]{lang="EN-US"}[，基于角色的访问控制）的配置方式，通过]{lang="EN-US" style="font-family:宋体"}**[user-role]{lang="EN-US"}**[ *role-name*]{lang="EN-US"}[配置团体的角色。角色定义了]{lang="EN-US" style="font-family:宋体"}[SNMP]{lang="EN-US"}[用户能够访问的]{lang="EN-US" style="font-family:宋体"}[MIB]{lang="EN-US"}[对象以及操作类型（通过]{lang="EN-US" style="font-family:宋体"}**[rule]{lang="EN-US"}**[规则来限定）。]{lang="EN-US" style="font-family:宋体"}[该角色可以是系统中预定义的角色，也可以是用户通过]{style="font-family:宋体"}**[role]{lang="EN-US"}**[命令自定义的角色。有关用户角色的详细信息，请参见"基础配置指导"中的"]{style="font-family:宋体"}[RBAC]{lang="EN-US"}["。]{style="font-family:宋体"}
+·RBAC（Role Based Access Control，基于角色的访问控制）的配置方式，通过**user-role** *role-name*配置团体的角色。角色定义了SNMP用户能够访问的MIB对象以及操作类型（通过**rule**规则来限定）。该角色可以是系统中预定义的角色，也可以是用户通过**role**命令自定义的角色。有关用户角色的详细信息，请参见"基础配置指导"中的"RBAC"。
 
-[[多次使用两种配置方式配置同一团体时，以最后一次的配置方式为准。]{style="font-family:宋体"}]{#struct_0_x1400_15709_860047937}
+多次使用两种配置方式配置同一团体时，以最后一次的配置方式为准。
 
-[[RBAC]{lang="EN-US"}]{#struct_0_x1400_15709_x215198082}[配置方式要求]{style="font-family:宋体"}[NMS]{lang="EN-US"}[在访问]{style="font-family:宋体"}[Agent]{lang="EN-US"}[时，不仅需要授予]{style="font-family:宋体"}[NMS]{lang="EN-US"}[对]{style="font-family:宋体"}[MIB]{lang="EN-US"}[节点的访问权限，还要求团体名]{style="font-family:宋体"}[/]{lang="EN-US"}[用户名所绑定的用户角色具有执行相应操作的权限，而]{style="font-family:宋体"}[VACM]{lang="EN-US"}[方式只需通过]{style="font-family:宋体"}[NMS]{lang="EN-US"}[控制]{style="font-family:宋体"}[MIB]{lang="EN-US"}[节点的访问权限即可，所以推荐使用]{style="font-family:宋体"}[RBAC]{lang="EN-US"}[配置方式，安全性更高。]{style="font-family:宋体"}
+RBAC配置方式要求NMS在访问Agent时，不仅需要授予NMS对MIB节点的访问权限，还要求团体名/用户名所绑定的用户角色具有执行相应操作的权限，而VACM方式只需通过NMS控制MIB节点的访问权限即可，所以推荐使用RBAC配置方式，安全性更高。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1398687933}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_1217728056}[以明文方式创建]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[团体]{style="font-family:宋体"}[readaccess]{lang="EN-US"}[，并且允许]{style="font-family:宋体"}[NMS]{lang="EN-US"}[使用该团体名对]{style="font-family:宋体"}[Agent]{lang="EN-US"}[进行只读访问。]{style="font-family:宋体"}
+\# 以明文方式创建SNMP团体readaccess，并且允许NMS使用该团体名对Agent进行只读访问。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_x1731155551}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent sys-info version v1 v2c]{lang="EN-US"}
+Sysname snmp-agent sys-info version v1 v2c
 
-[\[Sysname\] snmp-agent community read simple readaccess]{lang="EN-US"}
+Sysname snmp-agent community read simple readaccess
 
-[[在]{style="font-family:宋体"}[NMS]{lang="EN-US"}]{#struct_0_x1400_15709_1453563104}[上将版本号设置为]{style="font-family:宋体"}[SNMPv1]{lang="EN-US"}[或者]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[，并将只读团体名填写为]{style="font-family:宋体"}[readaccess]{lang="EN-US"}[，建立连接，就可以对设备上缺省视图内的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象进行只读操作。]{style="font-family:宋体"}
+在NMS上将版本号设置为SNMPv1或者SNMPv2c，并将只读团体名填写为readaccess，建立连接，就可以对设备上缺省视图内的MIB对象进行只读操作。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x970602851}[以明文方式设置团体名]{style="font-family:宋体"}[writeaccess]{lang="EN-US"}[，并且只允许]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1.1.1.1]{lang="EN-US"}[的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[使用该团体名设置]{style="font-family:宋体"}[Agent MIB]{lang="EN-US"}[对象的值，禁止其它]{style="font-family:宋体"}[NMS]{lang="EN-US"}[使用该团体名执行写操作。]{style="font-family:宋体"}
+\# 以明文方式设置团体名writeaccess，并且只允许IP地址为1.1.1.1的NMS使用该团体名设置Agent MIB对象的值，禁止其它NMS使用该团体名执行写操作。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_x1398622397}
+\<Sysname\> system-view
 
-[\[Sysname\] acl basic 2001]{lang="EN-US"}
+Sysname acl basic 2001
 
-[\[Sysname-acl-ipv4-basic-2001\] rule permit source 1.1.1.1 0.0.0.0]{lang="EN-US"}
+Sysname-acl-ipv4-basic-2001 rule permit source 1.1.1.1 0.0.0.0
 
-[\[Sysname-acl-]{lang="EN-US"}[ ]{lang="EN-US" style="font-size:10.5pt;font-family:\"Arial\",\"sans-serif\""}[ipv4-basic-2001\] rule deny source any]{lang="EN-US"}
+Sysname-acl-ipv4-basic-2001 rule deny source any
 
-[\[Sysname-acl-]{lang="EN-US"}[ ]{lang="EN-US" style="font-size:10.5pt;font-family:\"Arial\",\"sans-serif\""}[ipv4-basic-2001\] quit]{lang="EN-US"}
+Sysname-acl-ipv4-basic-2001 quit
 
-[\[Sysname\] snmp-agent sys-info version v2c]{lang="EN-US"}
+Sysname snmp-agent sys-info version v2c
 
-[\[Sysname\] snmp-agent community write simple writeaccess acl 2001]{lang="EN-US"}
+Sysname snmp-agent community write simple writeaccess acl 2001
 
-[[将]{style="font-family:宋体"}[NMS]{lang="EN-US"}]{#struct_0_x1400_15709_1414800432}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址配置为]{style="font-family:宋体"}[1.1.1.1]{lang="EN-US"}[，版本号指定为]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[，]{style="font-family:宋体"}[Write community]{lang="EN-US"}[选项填写为]{style="font-family:宋体"}[writeaccess]{lang="EN-US"}[，即可以对设备上缺省视图内的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象进行读写操作。]{style="font-family:宋体"}
+将NMS的IP地址配置为1.1.1.1，版本号指定为SNMPv2c，Write community选项填写为writeaccess，即可以对设备上缺省视图内的MIB对象进行读写操作。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x1204425430}[以明文方式设置团体名]{style="font-family:宋体"}[writeaccess]{lang="EN-US"}[，并且只允许]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1.1.1.2]{lang="EN-US"}[的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[使用该团体名设置]{style="font-family:宋体"}[Agent MIB]{lang="EN-US"}[对象的值，禁止其它]{style="font-family:宋体"}[NMS]{lang="EN-US"}[使用该团体名执行写操作。]{style="font-family:宋体"}
+\# 以明文方式设置团体名writeaccess，并且只允许IP地址为1.1.1.2的NMS使用该团体名设置Agent MIB对象的值，禁止其它NMS使用该团体名执行写操作。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_x997147325}
+\<Sysname\> system-view
 
-[\[Sysname\] acl basic name testacl]{lang="EN-US"}
+Sysname acl basic name testacl
 
-[\[Sysname-acl-ipv4-basic-testacl\] rule permit source 1.1.1.2 0.0.0.0]{lang="EN-US"}
+Sysname-acl-ipv4-basic-testacl rule permit source 1.1.1.2 0.0.0.0
 
-[\[Sysname-acl-ipv4-basic-testacl\] rule deny source any]{lang="EN-US"}
+Sysname-acl-ipv4-basic-testacl rule deny source any
 
-[\[Sysname-acl-ipv4-basic-testacl\] quit]{lang="EN-US"}
+Sysname-acl-ipv4-basic-testacl quit
 
-[\[Sysname\] snmp-agent sys-info version v2c]{lang="EN-US"}
+Sysname snmp-agent sys-info version v2c
 
-[\[Sysname\] snmp-agent community write simple writeaccess acl name 2002]{lang="EN-US"}
+Sysname snmp-agent community write simple writeaccess acl name 2002
 
-[[将]{style="font-family:宋体"}[NMS]{lang="EN-US"}]{#struct_0_x1400_15709_891918907}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址配置为]{style="font-family:宋体"}[1.1.1.2]{lang="EN-US"}[，版本号指定为]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[，]{style="font-family:宋体"}[Write community]{lang="EN-US"}[选项填写为]{style="font-family:宋体"}[writeaccess]{lang="EN-US"}[，即可以对设备上缺省视图内的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象进行读写操作。]{style="font-family:宋体"}
+将NMS的IP地址配置为1.1.1.2，版本号指定为SNMPv2c，Write community选项填写为writeaccess，即可以对设备上缺省视图内的MIB对象进行读写操作。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_1773143070}[以明文方式创建团体名]{style="font-family:宋体"}[wr-sys-acc]{lang="EN-US"}[，使用该团体名访问设备时只能对]{style="font-family:宋体"}[system]{lang="EN-US"}[（]{style="font-family:宋体"}[OID]{lang="EN-US"}[为]{style="font-family:宋体"}[1.3.6.1.2.1.1]{lang="EN-US"}[）子树下的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象执行写操作。]{style="font-family:宋体"}
+\# 以明文方式创建团体名wr-sys-acc，使用该团体名访问设备时只能对system（OID为1.3.6.1.2.1.1）子树下的MIB对象执行写操作。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_x1249400441}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent sys-info version v1 v2c]{lang="EN-US"}
+Sysname snmp-agent sys-info version v1 v2c
 
-[\[Sysname\] undo snmp-agent mib-view ViewDefault]{lang="EN-US"}
+Sysname undo snmp-agent mib-view ViewDefault
 
-[\[Sysname\] snmp-agent mib-view included test system]{lang="EN-US"}
+Sysname snmp-agent mib-view included test system
 
-[\[Sysname\] snmp-agent community write simple wr-sys-acc mib-view test]{lang="EN-US"}
+Sysname snmp-agent community write simple wr-sys-acc mib-view test
 
-[[在]{style="font-family:宋体"}[NMS]{lang="EN-US"}]{#struct_0_x1400_15709_943012111}[上将版本号设置为]{style="font-family:宋体"}[SNMPv1]{lang="EN-US"}[或者]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[，并将]{style="font-family:宋体"}[Write community]{lang="EN-US"}[填写为]{style="font-family:宋体"}[wr-sys-acc]{lang="EN-US"}[，建立连接，就可以对设备上]{style="font-family:宋体"}[system]{lang="EN-US"}[视图内的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象进行读写操作。]{style="font-family:宋体"}
+在NMS上将版本号设置为SNMPv1或者SNMPv2c，并将Write community填写为wr-sys-acc，建立连接，就可以对设备上system视图内的MIB对象进行读写操作。
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x206979478}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **snmp-agent** **community**]{lang="EN-US"}]{#struct_0_x1400_15709_x336917707}
+·**display** **snmp-agent** **community**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **mib-view**]{lang="EN-US"}]{#struct_0_x1400_15709_514164007}
-:::
-
-::: {#1252009757 .myid}
-[]{#_Toc345227790}[]{#_Toc404796946}[]{#struct_0_x1400_15709_x1398556861}
+·**snmp-agent** **mib-view**
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent community-map**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent community-map]{lang="FR"}**]{#struct_0_x1400_15709_x842579794}[命令用来创建一个团体名到]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[上下文的映射。]{style="font-family:宋体"}
+**[snmp-agent community-map**]命令用来创建一个团体名到SNMP上下文的映射。
 
-[**[undo snmp-agent community-map]{lang="FR"}**]{#struct_0_x1400_15709_394799787}[命令用来删除一个指定的映射。]{style="font-family:宋体"}
+**[undo snmp-agent community-map**]命令用来删除一个指定的映射。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1551037229}
+【命令】
 
-[**[snmp-agent community-map]{lang="EN-US"}***[ community-name]{lang="EN-US"}***[ context ]{lang="EN-US"}***[context-name]{lang="EN-US"}*]{#struct_0_x1400_15709_x1399539901}
+**[snmp-agent community-map*** community-name*** context ***context-name*]
 
-[**[undo snmp-agent community-map]{lang="EN-US"}***[ community-name]{lang="EN-US"}***[ context ]{lang="EN-US"}***[context-name]{lang="EN-US"}*]{#struct_0_x1400_15709_1400533106}
+**[undo snmp-agent community-map*** community-name*** context ***context-name*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1227903316}
+【缺省情况】
 
-[[设备上没有团体名到]{style="font-family:宋体"}[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_x479792691}[上下文的映射。]{style="font-family:宋体"}
+设备上没有团体名到SNMP上下文的映射。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1399474365}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_1118338576}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x416503265}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_2061661359}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_167068331}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x146888352}
+【参数】
 
-[*[community-name]{lang="EN-US"}*]{#struct_0_x1400_15709_x1751730523}[：团体名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[community-name*]：团体名，为1～32个字符的字符串，区分大小写。
 
-[*[context-name]{lang="EN-US"}*]{#struct_0_x1400_15709_813629829}[：]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[上下文。为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[context-name*]：SNMP上下文。为1～32个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_167133867}
+【使用指导】
 
-[[用户配置成功后，使用]{style="font-family:宋体"}[SNMP v1/v2]{lang="EN-US"}]{#struct_0_x1400_15709_x467890094}[版本连接]{style="font-family:宋体"}[SNMP Agent]{lang="EN-US"}[时，]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[插件端所获取的上下文，是此时]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问]{style="font-family:宋体"}[Agent]{lang="EN-US"}[，使用的团体名映射的上下文。如团体名未配置上下文映射，则获取不到。]{style="font-family:宋体"}
+用户配置成功后，使用SNMP v1/v2版本连接SNMP Agent时，SNMP插件端所获取的上下文，是此时NMS访问Agent，使用的团体名映射的上下文。如团体名未配置上下文映射，则获取不到。
 
-[[系统中可配置的映射最多为]{style="font-family:宋体"}[10]{lang="EN-US"}]{#struct_0_x1400_15709_x109633073}[个。]{style="font-family:宋体"}
+系统中可配置的映射最多为10个。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1300923126}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_167199403}[配置一个团体名到]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[上下文的映射。]{style="font-family:宋体"}
+\# 配置一个团体名到SNMP上下文的映射。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_x1720318388}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent community-map private context trillcontext]{lang="EN-US"}
+Sysname snmp-agent community-map private context trillcontext
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1469860954}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display snmp-agent community]{lang="EN-US"}**]{#struct_0_x1400_15709_167264939}
-:::
-
-::: {#1611202802 .myid}
-[]{#_Toc404796947}[]{#struct_0_x1400_15709_x607511718}
+·**display snmp-agent community**
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent context**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent context]{lang="EN-US"}**]{#struct_0_x1400_15709_x144611876}[命令用来创建一个新的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[上下文。]{style="font-family:宋体"}
+**[snmp-agent context**]命令用来创建一个新的SNMP上下文。
 
-[**[undo snmp-agent context]{lang="EN-US"}**]{#struct_0_x1400_15709_409241132}[命令用来删除指定的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[上下文。]{style="font-family:宋体"}
+**[undo snmp-agent context**]命令用来删除指定的SNMP上下文。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x723333231}
+【命令】
 
-[**[snmp-agent context ]{lang="EN-US"}***[context-name]{lang="EN-US"}*]{#struct_0_x1400_15709_x1210360092}
+**[snmp-agent context ***context-name*]
 
-[**[undo snmp-agent context ]{lang="EN-US"}***[context-name]{lang="EN-US"}*]{#struct_0_x1400_15709_437159333}
+**[undo snmp-agent context ***context-name*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1092981955}
+【缺省情况】
 
-[[设备上没有配置]{style="font-family:宋体"}[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_1643832048}[上下文。]{style="font-family:宋体"}
+设备上没有配置SNMP上下文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_167330475}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_901253016}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x935320924}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1782521292}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x776603284}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1107134621}
+【参数】
 
-[*[context-name]{lang="EN-US"}*]{#struct_0_x1400_15709_773865859}[：]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[上下文，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[context-name*]：SNMP上下文，为1～32个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1139105985}
+【使用指导】
 
-[[NMS]{lang="EN-US"}]{#struct_0_x1400_15709_167396011}[未配置上下文，或]{style="font-family:宋体"}[NMS]{lang="EN-US"}[与]{style="font-family:宋体"}[Agent]{lang="EN-US"}[配置为相同的上下文时，两者可以连接成功，否则返回超时。]{style="font-family:宋体"}
+NMS未配置上下文，或NMS与Agent配置为相同的上下文时，两者可以连接成功，否则返回超时。
 
-[[系统中可配置的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_x1793707042}[上下文最多为]{style="font-family:宋体"}[20]{lang="EN-US"}[个。]{style="font-family:宋体"}
+系统中可配置的SNMP上下文最多为20个。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1822049243}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x87614018}[创建一个新的]{style="font-family:宋体"}[context]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 创建一个新的context。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_x751500812}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent context trillcontext]{lang="EN-US"}
+Sysname snmp-agent context trillcontext
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1189350808}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display ]{lang="EN-US"}[snmp-agent context]{lang="EN-US"}**]{#struct_0_x1400_15709_167461547}
-:::
-
-::: {#-248260569 .myid}
-[]{#_Toc404796948}[]{#struct_0_x1400_15709_379294352}
+·**display snmp-agent context**
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent group**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**[ **group**]{lang="EN-US"}]{#struct_0_x1400_15709_613019984}[命令用来创建一个]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[组，并设置其访问权限。]{style="font-family:宋体"}
+**[snmp-agent** **group**]命令用来创建一个SNMP组，并设置其访问权限。
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **group**]{lang="EN-US"}]{#struct_0_x1400_15709_636757878}[命令用来删除一个指定的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[组。]{style="font-family:宋体"}
+**[undo** **snmp-agent** **group**]命令用来删除一个指定的SNMP组。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_294490274}
+【命令】
 
-[[SNMPv1]{lang="EN-US"}]{#struct_0_x1400_15709_1272466642}[和]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[版本下的命令格式是：]{style="font-family:宋体"}
+SNMPv1和SNMPv2c版本下的命令格式是：
 
-[**[snmp-agent]{lang="EN-US"}**[ **group** { **v1** \| **v2c** } *group-name* \[ **read-view** *view-name* \] \[ **write-view** *view-name* \] \[ **notify-view** *view-name* \] \[ **acl** { *acl-number \|* **name** *acl-name* } \| **acl** **ipv6** { *ipv6-acl-number* \| **name** *ipv6-acl-name* } \] \*]{lang="EN-US"}]{#struct_0_x1400_15709_x1156779999}
+**[snmp-agent**[ **group** { **v1** \| **v2c** } *group-name* [ **read-view** *view-name* ]  **write-view** *view-name*   **notify-view** *view-name*  [ **acl** { *acl-number \|* **name** *acl-name* } \| **acl** **ipv6** { *ipv6-acl-number* \| **name** *ipv6-acl-name* } ] \*]]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **group** { **v1** \| **v2c** } *group-name*]{lang="EN-US"}]{#struct_0_x1400_15709_711203472}
+**[undo**[ **snmp-agent** **group** { **v1** \| **v2c** } *group-name*]]
 
-[[SNMPv3]{lang="EN-US"}]{#struct_0_x1400_15709_802471433}[版本下的命令格式是：]{style="font-family:宋体"}
+SNMPv3版本下的命令格式是：
 
-[[非]{style="font-family:宋体"}[FIPS]{lang="EN-US"}]{#struct_0_x1400_15709_x540680458}[模式下]{style="font-family:宋体"}[:]{lang="EN-US"}
+非FIPS模式下:
 
-[**[snmp-agent]{lang="EN-US"}**[ **group** **v3** *group-name* \[ **authentication** \| **privacy** \] \[ **read-view** *read-view* \] \[ **write-view** *write-view* \] \[ **notify-view** *notify-view* \] \[ **acl** { *acl-number \|* **name** *acl-name* } \| **acl** **ipv6** { *ipv6-acl-number* \| **name** *ipv6-acl-name* } \] \*]{lang="EN-US"}]{#struct_0_x1400_15709_167527083}
+**[snmp-agent**[ **group** **v3** *group-name* [ **authentication** \| **privacy** ]  **read-view** *read-view*   **write-view** *write-view*   **notify-view** *notify-view*  [ **acl** { *acl-number \|* **name** *acl-name* } \| **acl** **ipv6** { *ipv6-acl-number* \| **name** *ipv6-acl-name* } ] \*]]
 
-[[FIPS]{lang="EN-US"}]{#struct_0_x1400_15709_x137395931}[模式下]{style="font-family:宋体"}[:]{lang="EN-US"}
+FIPS模式下:
 
-[**[snmp-agent]{lang="EN-US"}**[ **group** **v3** *group-name* { **authentication** \| **privacy** } \[ **read-view** *read-view* \] \[ **write-view** *write-view* \] \[ **notify-view** *notify-view* \] \[ **acl** { *acl-number \|* **name** *acl-name* } \| **acl** **ipv6** { *ipv6-acl-number* \| **name** *ipv6-acl-name* } \] \*]{lang="EN-US"}]{#struct_0_x1400_15709_261200686}
+**[snmp-agent**[ **group** **v3** *group-name* { **authentication** \| **privacy** } [ **read-view** *read-view* ]  **write-view** *write-view*   **notify-view** *notify-view*  [ **acl** { *acl-number \|* **name** *acl-name* } \| **acl** **ipv6** { *ipv6-acl-number* \| **name** *ipv6-acl-name* } ] \*]]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **group** **v3** *group-name* \[ **authentication** \| **privacy** \]]{lang="EN-US"}]{#struct_0_x1400_15709_x714459833}
+**[undo**[ **snmp-agent** **group** **v3** *group-name* [ **authentication** \| **privacy** ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1035928284}
+【缺省情况】
 
-[[设备上没有配置]{style="font-family:宋体"}[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_x1764706092}[组。]{style="font-family:宋体"}
+设备上没有配置SNMP组。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_783726467}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_x923457300}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x649753411}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_166544043}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_269112138}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1015490761}
+【参数】
 
-[**[v1]{lang="EN-US"}**]{#struct_0_x1400_15709_x274300507}[：]{style="font-family:宋体"}[SNMPv1]{lang="EN-US"}[版本。]{style="font-family:宋体"}
+**[v1**]：SNMPv1版本。
 
-[**[v2c]{lang="EN-US"}**]{#struct_0_x1400_15709_x886963682}[：]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[版本。]{style="font-family:宋体"}
+**[v2c**]：SNMPv2c版本。
 
-[**[v3]{lang="EN-US"}**]{#struct_0_x1400_15709_1714933948}[：]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[版本。]{style="font-family:宋体"}
+**[v3**]：SNMPv3版本。
 
-[*[group-name]{lang="EN-US"}*]{#struct_0_x1400_15709_1858512432}[：]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[组名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[group-name*]：SNMP组名，为1～32个字符的字符串，区分大小写。
 
-[**[authentication]{lang="EN-US"}**]{#struct_0_x1400_15709_169753399}[：表示对报文进行认证但不加密。]{style="font-family:宋体"}
+**[authentication**]：表示对报文进行认证但不加密。
 
-[**[privacy]{lang="EN-US"}**]{#struct_0_x1400_15709_x225772993}[：表示对报文进行认证和加密。]{style="font-family:宋体"}
+**[privacy**]：表示对报文进行认证和加密。
 
-[**[read-view]{lang="EN-US"}**[ *view-name*]{lang="EN-US"}]{#struct_0_x1400_15709_166609579}[：只读视图名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[个字符的字符串。缺省值为]{style="font-family:宋体"}[ViewDefault]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[read-view** *view-name*]：只读视图名，为1～32个字符的字符串。缺省值为ViewDefault。
 
-[**[write-view]{lang="EN-US"}**[ *view-name*]{lang="EN-US"}]{#struct_0_x1400_15709_x1085367605}[：读写视图名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[个字符的字符串。缺省情况下，未配置读写视图，即]{style="font-family:宋体"}[NMS]{lang="EN-US"}[不能对设备的所有]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象进行写操作。]{style="font-family:宋体"}
+**[write-view** *view-name*]：读写视图名，为1～32个字符的字符串。缺省情况下，未配置读写视图，即NMS不能对设备的所有MIB对象进行写操作。
 
-[**[notify-view]{lang="EN-US"}**[ *view-name*]{lang="EN-US"}]{#struct_0_x1400_15709_x1753127067}[：可以发告警信息的视图名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[个字符的字符串。缺省情况下，未配置告警信息视图。]{style="font-family:宋体"}
+**[notify-view** *view-name*]：可以发告警信息的视图名，为1～32个字符的字符串。缺省情况下，未配置告警信息视图。
 
-[**[acl]{lang="EN-US"}**[ *acl-number*]{lang="EN-US"}]{#struct_0_x1400_15709_x2035407037}[：将组与基本]{style="font-family:宋体"}[ACL]{lang="EN-US"}[绑定，]{style="font-family:宋体"}*[acl-number]{lang="EN-US"}*[表示访问列表号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[2999]{lang="EN-US"}[。当未引用]{style="font-family:宋体"}[ACL]{lang="EN-US"}[或者引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[不存在时，允许所有]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当]{style="font-family:宋体"}[ACL]{lang="EN-US"}[为空时，会禁止所有的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[非空时，则只有]{style="font-family:宋体"}[ACL]{lang="EN-US"}[中]{style="font-family:宋体"}[permit]{lang="EN-US"}[的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[才能访问设备，其它]{style="font-family:宋体"}[NMS]{lang="EN-US"}[不允许访问设备，以免非法]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备。]{style="font-family:宋体"}
+**[acl** *acl-number*]：将组与基本ACL绑定，*acl-number*表示访问列表号，取值范围为2000～2999。当未引用ACL或者引用的ACL不存在时，允许所有NMS访问设备；当ACL为空时，会禁止所有的NMS访问设备；当引用的ACL非空时，则只有ACL中permit的NMS才能访问设备，其它NMS不允许访问设备，以免非法NMS访问设备。
 
-[**[name]{lang="EN-US"}***[ acl-name]{lang="EN-US"}*]{#struct_0_x1400_15709_x1205211861}[：将团体名与基本]{style="font-family:宋体"}[ACL]{lang="EN-US"}[名绑定，]{style="font-family:宋体"}*[acl-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。当未引用]{style="font-family:宋体"}[ACL]{lang="EN-US"}[或者引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[不存在时，允许所有]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当]{style="font-family:宋体"}[ACL]{lang="EN-US"}[为空时，会禁止所有的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[非空时，则只有]{style="font-family:宋体"}[ACL]{lang="EN-US"}[中]{style="font-family:宋体"}[permit]{lang="EN-US"}[的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[才能访问设备，其它]{style="font-family:宋体"}[NMS]{lang="EN-US"}[不允许访问设备，以免非法]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备。关于]{style="font-family:宋体"}[ACL]{lang="EN-US"}[的详细描述和介绍请参见"]{style="font-family:宋体"}[ACL]{lang="EN-US"}[和]{style="font-family:宋体"}[QoS]{lang="EN-US"}[配置指导"中的"]{style="font-family:宋体"}[ACL]{lang="EN-US"}["。]{style="font-family:宋体"}
+**[name*** acl-name*]：将团体名与基本ACL名绑定，*acl-name*为1～63个字符的字符串，不区分大小写。当未引用ACL或者引用的ACL不存在时，允许所有NMS访问设备；当ACL为空时，会禁止所有的NMS访问设备；当引用的ACL非空时，则只有ACL中permit的NMS才能访问设备，其它NMS不允许访问设备，以免非法NMS访问设备。关于ACL的详细描述和介绍请参见"ACL和QoS配置指导"中的"ACL"。
 
-[**[acl]{lang="EN-US"}**[ **ipv6** *ipv6-acl-number*]{lang="EN-US"}]{#struct_0_x1400_15709_296108195}[：将组与基本]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[绑定，]{style="font-family:宋体"}*[ipv6-acl-number]{lang="EN-US"}*[表示访问列表号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[2999]{lang="EN-US"}[。当未引用]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[或者引用的]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[不存在时，允许所有]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[为空时，会禁止]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当引用的]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[非空时，则只有]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[中]{style="font-family:宋体"}[permit]{lang="EN-US"}[的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[才能访问设备，其它]{style="font-family:宋体"}[NMS]{lang="EN-US"}[不允许访问设备，以免非法]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备。]{style="font-family:宋体"}
+**[acl** **ipv6** *ipv6-acl-number*]：将组与基本IPv6 ACL绑定，*ipv6-acl-number*表示访问列表号，取值范围为2000～2999。当未引用IPv6 ACL或者引用的IPv6 ACL不存在时，允许所有NMS访问设备；当IPv6 ACL为空时，会禁止NMS访问设备；当引用的IPv6 ACL非空时，则只有IPv6 ACL中permit的NMS才能访问设备，其它NMS不允许访问设备，以免非法NMS访问设备。
 
-[**[name]{lang="EN-US"}***[ ipv6-acl-name]{lang="EN-US"}*]{#struct_0_x1400_15709_x1205146325}[：将团体名与基本]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[名绑定，]{style="font-family:宋体"}*[acl-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。当未引用]{style="font-family:宋体"}[ACL]{lang="EN-US"}[或者引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[不存在时，允许所有]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当]{style="font-family:宋体"}[ACL]{lang="EN-US"}[为空时，会禁止所有的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[非空时，则只有]{style="font-family:宋体"}[ACL]{lang="EN-US"}[中]{style="font-family:宋体"}[permit]{lang="EN-US"}[的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[才能访问设备，其它]{style="font-family:宋体"}[NMS]{lang="EN-US"}[不允许访问设备，以免非法]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备。]{style="font-family:宋体"}
+**[name*** ipv6-acl-name*]：将团体名与基本IPv6 ACL名绑定，*acl-name*为1～63个字符的字符串，不区分大小写。当未引用ACL或者引用的ACL不存在时，允许所有NMS访问设备；当ACL为空时，会禁止所有的NMS访问设备；当引用的ACL非空时，则只有ACL中permit的NMS才能访问设备，其它NMS不允许访问设备，以免非法NMS访问设备。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1441416213}
+【使用指导】
 
-[[FIPS]{lang="EN-US"}]{#struct_0_x1400_15709_x1637517926}[模式下，不支持]{style="font-family:宋体"}[SNMPv1]{lang="EN-US"}[和]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[版本下的本命令。]{style="font-family:宋体"}
+FIPS模式下，不支持SNMPv1和SNMPv2c版本下的本命令。
 
-[[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_x815001498}[组可以定义安全模式、视图权限等信息，配置在此组内的用户都具有这些公共属性。]{style="font-family:宋体"}
+SNMP组可以定义安全模式、视图权限等信息，配置在此组内的用户都具有这些公共属性。
 
-[[系统中可配置的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_167068332}[组最多为]{style="font-family:宋体"}[20]{lang="EN-US"}[个。]{style="font-family:宋体"}
+系统中可配置的SNMP组最多为20个。
 
-[[当不指定]{style="font-family:宋体"}**[authentication]{lang="EN-US"}**]{#struct_0_x1400_15709_x146888355}[和]{style="font-family:宋体"}**[privacy]{lang="EN-US"}**[时，表示不认证不加密。此时，使用和该组绑定的用户名建立]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[连接时，均不认证不加密。即便用户配置了认证密码]{style="font-family:宋体"}[/]{lang="EN-US"}[加密密码，认证密码]{style="font-family:宋体"}[/]{lang="EN-US"}[加密密码也不生效。]{style="font-family:宋体"}
+当不指定**authentication**和**privacy**时，表示不认证不加密。此时，使用和该组绑定的用户名建立SNMP连接时，均不认证不加密。即便用户配置了认证密码/加密密码，认证密码/加密密码也不生效。
 
-[[当指定]{style="font-family:宋体"}**[authentication]{lang="EN-US"}**]{#struct_0_x1400_15709_x1751271771}[时，表示认证不加密。此时，使用和该组绑定的用户名建立]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[连接时，均认证不加密。即便用户配置了加密密码，加密密码也不生效。]{style="font-family:宋体"}
+当指定**authentication**时，表示认证不加密。此时，使用和该组绑定的用户名建立SNMP连接时，均认证不加密。即便用户配置了加密密码，加密密码也不生效。
 
-[[当指定]{style="font-family:宋体"}**[privacy]{lang="EN-US"}**]{#struct_0_x1400_15709_135821125}[时，表示认证加密。此时，使用和该组绑定的用户名建立]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[连接时，均认证加密。该组内的用户必须配置认证密码和加密密码，否则，不能建立]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[连接。]{style="font-family:宋体"}
+当指定**privacy**时，表示认证加密。此时，使用和该组绑定的用户名建立SNMP连接时，均认证加密。该组内的用户必须配置认证密码和加密密码，否则，不能建立SNMP连接。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1873760069}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x1367660674}[在运行]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[版本的设备上创建一个]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[组]{style="font-family:宋体"}[group1]{lang="EN-US"}[，采用不认证、不加密方式。]{style="font-family:宋体"}
+\# 在运行SNMPv3版本的设备上创建一个SNMP组group1，采用不认证、不加密方式。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_395462718}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent group v3 group1]{lang="EN-US"}
+Sysname snmp-agent group v3 group1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1438903436}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **snmp-agent** **group**]{lang="EN-US"}]{#struct_0_x1400_15709_167133868}
+·**display** **snmp-agent** **group**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **mib-view**]{lang="EN-US"}]{#struct_0_x1400_15709_x467890103}
+·**snmp-agent** **mib-view**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **usm-user**]{lang="EN-US"}]{#struct_0_x1400_15709_1846616520}
-:::
-
-::: {#937991101 .myid}
-[]{#_Toc404796949}[]{#struct_0_x1400_15709_x190019600}
+·**snmp-agent** **usm-user**
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent local-engineid**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**[ **local-engineid**]{lang="EN-US"}]{#struct_0_x1400_15709_x1135539250}[命令用来设置本地]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体的引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[snmp-agent** **local-engineid**]命令用来设置本地SNMP实体的引擎ID。
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **local-engineid**]{lang="EN-US"}]{#struct_0_x1400_15709_217363932}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **snmp-agent** **local-engineid**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x758575277}
+【命令】
 
-[**[snmp-agent]{lang="EN-US"}**[ **local-engineid** *engineid*]{lang="EN-US"}]{#struct_0_x1400_15709_x202003609}
+**[snmp-agent** **local-engineid** *engineid*]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **local-engineid**]{lang="EN-US"}]{#struct_0_x1400_15709_762739683}
+**[undo** **snmp-agent** **local-engineid**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_167199404}
+【缺省情况】
 
-[[设备引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1400_15709_x1720318385}[为公司的"企业号＋设备信息"。设备信息由各个产品决定，可以是]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址、]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址或者自定义的十六进制数字串。]{style="font-family:宋体"}
+设备引擎ID为公司的"企业号＋设备信息"。设备信息由各个产品决定，可以是IP地址、MAC地址或者自定义的十六进制数字串。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1422806787}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_x52409942}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1255269912}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1748883294}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_1229177234}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1137721563}
+【参数】
 
-[*[engineid]{lang="EN-US"}*]{#struct_0_x1400_15709_167264940}[：引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[，必须为偶数个十六进制数，偶数的取值范围为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[64]{lang="EN-US"}[。全]{style="font-family:宋体"}[0]{lang="EN-US"}[和全]{style="font-family:宋体"}[F]{lang="EN-US"}[均被认为是无效参数。]{style="font-family:宋体"}
+*[engineid*]：引擎ID，必须为偶数个十六进制数，偶数的取值范围为10～64。全0和全F均被认为是无效参数。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_201792337}
+【使用指导】
 
-[[引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1400_15709_20683139}[有两个作用：]{style="font-family:宋体"}
+引擎ID有两个作用：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在]{style="font-family:宋体"}]{#struct_0_x1400_15709_x1223646852}[NMS]{lang="EN-US"}[管理的所有设备中，每一台设备都需要用一个唯一的引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[来标识]{style="font-family:宋体"}[Agent]{lang="EN-US"}[，缺省情况下每个设备有一个缺省的引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[，网络管理员需要确保管理域内不能有重复的引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+·在NMS管理的所有设备中，每一台设备都需要用一个唯一的引擎ID来标识Agent，缺省情况下每个设备有一个缺省的引擎ID，网络管理员需要确保管理域内不能有重复的引擎ID。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SNMPv3]{lang="EN-US"}]{#struct_0_x1400_15709_x1195334706}[版本的用户名、密文密码等都和引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[相关联，如果更改了引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[，则原引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[下配置的用户名、密码失效。]{style="font-family:宋体"}
+·SNMPv3版本的用户名、密文密码等都和引擎ID相关联，如果更改了引擎ID，则原引擎ID下配置的用户名、密码失效。
 
-[[通常情况下，使用设备的缺省引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x1400_15709_x520511721}[即可，用户也可以根据网络整体规划给设备配置方便记忆的引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[，比如]{style="font-family:宋体"}[A]{lang="EN-US"}[栋一楼的一号设备可以将它的引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[设置为]{style="font-family:宋体"}[000Af0010001]{lang="EN-US"}[，二号设备可以配置为]{style="font-family:宋体"}[000Af0010002]{lang="EN-US"}[。]{style="font-family:宋体"}
+通常情况下，使用设备的缺省引擎ID即可，用户也可以根据网络整体规划给设备配置方便记忆的引擎ID，比如A栋一楼的一号设备可以将它的引擎ID设置为000Af0010001，二号设备可以配置为000Af0010002。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1703905835}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x1698925274}[配置本地设备的引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[123456789A]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置本地设备的引擎ID为123456789A。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_167330476}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent local-engineid 123456789A]{lang="EN-US"}
+Sysname snmp-agent local-engineid 123456789A
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_901253015}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **snmp-agent** **local-engineid**]{lang="EN-US"}]{#struct_0_x1400_15709_x935320921}
+·**display** **snmp-agent** **local-engineid**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **usm-user**]{lang="EN-US"}]{#struct_0_x1400_15709_x1782193612}
-:::
-
-::: {#-372955629 .myid}
-[]{#_Toc404796950}[]{#struct_0_x1400_15709_x393033633}
+·**snmp-agent** **usm-user**
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent log**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**[ **log**]{lang="EN-US"}]{#struct_0_x1400_15709_492029809}[命令用来开启]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[日志功能。]{style="font-family:宋体"}
+**[snmp-agent** **log**]命令用来开启SNMP日志功能。
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **log**]{lang="EN-US"}]{#struct_0_x1400_15709_x167590928}[命令用来关闭]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[日志功能。]{style="font-family:宋体"}
+**[undo** **snmp-agent** **log**]命令用来关闭SNMP日志功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x847306461}
+【命令】
 
-[**[snmp-agent]{lang="EN-US"}**[ **log** { **all** \| **get-operation** \| **set-operation** }]{lang="EN-US"}]{#struct_0_x1400_15709_1014519121}
+**[snmp-agent**[ **log** { **all** \| **get-operation** \| **set-operation** }]]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **log** { **all** \| **get-operation** \| **set-operation** }]{lang="EN-US"}]{#struct_0_x1400_15709_167396012}
+**[undo**[ **snmp-agent** **log** { **all** \| **get-operation** \| **set-operation** }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1793707039}
+【缺省情况】
 
-[[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_x612130126}[日志功能处于关闭状态。]{style="font-family:宋体"}
+SNMP日志功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1355558373}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_x2083420407}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1690895067}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1831291525}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_1312907335}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1829009560}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_x1400_15709_167461548}[：表示]{style="font-family:宋体"}[SNMP Get]{lang="EN-US"}[和]{style="font-family:宋体"}[Set]{lang="EN-US"}[操作的日志开关。]{style="font-family:宋体"}
+**[all**]：表示SNMP Get和Set操作的日志开关。
 
-[**[get-operation]{lang="EN-US"}**]{#struct_0_x1400_15709_379294365}[：表示]{style="font-family:宋体"}[SNMP Get]{lang="EN-US"}[操作的日志开关。]{style="font-family:宋体"}
+**[get-operation**]：表示SNMP Get操作的日志开关。
 
-[**[set-operation]{lang="EN-US"}**]{#struct_0_x1400_15709_x1343295155}[：表示]{style="font-family:宋体"}[SNMP Set]{lang="EN-US"}[操作的日志开关。]{style="font-family:宋体"}
+**[set-operation**]：表示SNMP Set操作的日志开关。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x96219878}
+【使用指导】
 
-[[当打开]{style="font-family:宋体"}[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_779385825}[指定的日志开关，]{style="font-family:宋体"}[NMS]{lang="EN-US"}[对]{style="font-family:宋体"}[Agent]{lang="EN-US"}[执行指定的操作时，]{style="font-family:宋体"}[Agent]{lang="EN-US"}[会记录与该操作相关的信息并保存到设备的信息中心。通过设置信息中心的参数，最终决定]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[日志的输出规则（即是否允许输出以及输出方向）。]{style="font-family:宋体"}
+当打开SNMP指定的日志开关，NMS对Agent执行指定的操作时，Agent会记录与该操作相关的信息并保存到设备的信息中心。通过设置信息中心的参数，最终决定SNMP日志的输出规则（即是否允许输出以及输出方向）。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1320969381}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x1149560410}[打开]{style="font-family:宋体"}[SNMP Get]{lang="EN-US"}[操作的日志开关。]{style="font-family:宋体"}
+\# 打开SNMP Get操作的日志开关。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_x103696507}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent log get-operation]{lang="EN-US"}
+Sysname snmp-agent log get-operation
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_167527084}[打开]{style="font-family:宋体"}[SNMP Set]{lang="EN-US"}[操作的日志开关。]{style="font-family:宋体"}
+\# 打开SNMP Set操作的日志开关。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_x714459828}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent log set-operation]{lang="EN-US"}
-:::
-
-::: {#-986127289 .myid}
-[]{#_Toc404796951}[]{#struct_0_x1400_15709_1035600603}
+Sysname snmp-agent log set-operation
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent mib-view**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**[ **mib-view**]{lang="EN-US"}]{#struct_0_x1400_15709_x1352395559}[命令用来创建或者更新]{style="font-family:宋体"}[MIB]{lang="EN-US"}[视图的信息，以指定]{style="font-family:宋体"}[NMS]{lang="EN-US"}[可以访问的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象。]{style="font-family:宋体"}
+**[snmp-agent** **mib-view**]命令用来创建或者更新MIB视图的信息，以指定NMS可以访问的MIB对象。
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **mib-view**]{lang="EN-US"}]{#struct_0_x1400_15709_1121652360}[命令用来删除指定视图。]{style="font-family:宋体"}
+**[undo** **snmp-agent** **mib-view**]命令用来删除指定视图。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1062069042}
+【命令】
 
-[**[snmp-agent]{lang="EN-US"}**[ **mib-view** { **excluded** \| **included** } *view-name* *oid-tree* \[ **mask** *mask-value* \]]{lang="EN-US"}]{#struct_0_x1400_15709_611322808}
+**[snmp-agent**[ **mib-view** { **excluded** \| **included** } *view-name* *oid-tree* [ **mask** *mask-value* ]]]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **mib-view** *view-name*]{lang="EN-US"}]{#struct_0_x1400_15709_1957923902}
+**[undo** **snmp-agent** **mib-view** *view-name*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_166544044}
+【缺省情况】
 
-[[设备上已创建了四个视图，视图名均为]{style="font-family:宋体"}[ViewDefault]{lang="EN-US"}]{#struct_0_x1400_15709_269112131}[：]{style="font-family:宋体"}
+设备上已创建了四个视图，视图名均为ViewDefault：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[视图一包含]{style="font-family:宋体"}]{#struct_0_x1400_15709_x1015490768}[MIB]{lang="EN-US"}[子树]{style="font-family:宋体"}[iso]{lang="EN-US"}[；]{style="font-family:宋体"}
+·视图一包含MIB子树iso；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[视图二不包含子树]{lang="EN-US" style="font-family:宋体"}[snmpUsmMIB]{lang="EN-US"}]{#struct_0_x1400_15709_935553074}[；]{lang="EN-US" style="font-family:宋体"}
+·视图二不包含子树snmpUsmMIB；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[视图三不包含子树]{style="font-family:宋体"}]{#struct_0_x1400_15709_x40353134}[snmpVacmMIB]{lang="EN-US"}[；]{style="font-family:宋体"}
+·视图三不包含子树snmpVacmMIB；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[视图四不包含子树]{lang="EN-US" style="font-family:宋体"}[snmpModules.18]{lang="EN-US"}]{#struct_0_x1400_15709_223438306}[。]{lang="EN-US" style="font-family:宋体"}
+·视图四不包含子树snmpModules.18。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x717521776}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_x215917081}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_367282085}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_166609580}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1805411630}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x849871271}
+【参数】
 
-[**[excluded]{lang="EN-US"}**]{#struct_0_x1400_15709_382568042}[：表示当前视图不包括该]{style="font-family:宋体"}[MIB]{lang="EN-US"}[子树的任何节点（即禁止访问]{style="font-family:宋体"}[MIB]{lang="EN-US"}[子树的所有节点）。]{style="font-family:宋体"}
+**[excluded**]：表示当前视图不包括该MIB子树的任何节点（即禁止访问MIB子树的所有节点）。
 
-[**[included]{lang="EN-US"}**]{#struct_0_x1400_15709_1772366754}[：表示当前视图包括该]{style="font-family:宋体"}[MIB]{lang="EN-US"}[子树的所有节点（即允许访问]{style="font-family:宋体"}[MIB]{lang="EN-US"}[子树的所有节点）。]{style="font-family:宋体"}
+**[included**]：表示当前视图包括该MIB子树的所有节点（即允许访问MIB子树的所有节点）。
 
-[*[view-name]{lang="EN-US"}*]{#struct_0_x1400_15709_671543502}[：视图名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[个字符的字符串。]{style="font-family:宋体"}
+*[view-name*]：视图名，为1～32个字符的字符串。
 
-[*[oid-tree]{lang="EN-US"}*]{#struct_0_x1400_15709_1027163274}[：]{style="font-family:宋体"}[MIB]{lang="EN-US"}[子树，用子树根节点的]{style="font-family:宋体"}[OID]{lang="EN-US"}[（如"]{style="font-family:宋体"}[1.3.6.1.2.1.1]{lang="EN-US"}["）或名称（如"]{style="font-family:宋体"}[system]{lang="EN-US"}["）表示。]{style="font-family:宋体"}[OID]{lang="EN-US"}[是由一系列的整数组成，标明节点在]{style="font-family:宋体"}[MIB]{lang="EN-US"}[树中的位置，它能唯一地标识一个]{style="font-family:宋体"}[MIB]{lang="EN-US"}[库中的对象。]{style="font-family:宋体"}
+*[oid-tree*]：MIB子树，用子树根节点的OID（如"1.3.6.1.2.1.1"）或名称（如"system"）表示。OID是由一系列的整数组成，标明节点在MIB树中的位置，它能唯一地标识一个MIB库中的对象。
 
-[**[mask]{lang="EN-US"}**[ *mask-value*]{lang="EN-US"}]{#struct_0_x1400_15709_x39284331}[：对象子树的掩码，十六进制数，长度为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[中的偶数。]{style="font-family:宋体"}
+**[mask** *mask-value*]：对象子树的掩码，十六进制数，长度为1～32中的偶数。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_2062797015}
+【使用指导】
 
-[[MIB]{lang="EN-US"}]{#struct_0_x1400_15709_167068329}[视图是]{style="font-family:宋体"}[MIB]{lang="EN-US"}[的子集，由视图名和]{style="font-family:宋体"}[MIB]{lang="EN-US"}[子树来唯一确定一个]{style="font-family:宋体"}[MIB]{lang="EN-US"}[视图。视图名相同但包含的子树不同，则认为是不同的视图。除缺省视图外，用户最多可以创建]{style="font-family:宋体"}[16]{lang="EN-US"}[个]{style="font-family:宋体"}[MIB]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+MIB视图是MIB的子集，由视图名和MIB子树来唯一确定一个MIB视图。视图名相同但包含的子树不同，则认为是不同的视图。除缺省视图外，用户最多可以创建16个MIB视图。
 
-[[缺省视图可以通过]{style="font-family:宋体"}**[display]{lang="EN-US"}**[ **snmp-agent** **mib-view**]{lang="EN-US"}]{#struct_0_x1400_15709_1809426792}[命令来查看。如果使用缺省视图限制]{style="font-family:
-宋体"}[NMS]{lang="EN-US"}[的访问权限时，除了]{style="font-family:
-宋体"}[snmpUsmMIB]{lang="EN-US"}[、]{style="font-family:
-宋体"}[snmpVacmMIB]{lang="EN-US"}[、]{style="font-family:宋体"}[snmpModules.18]{lang="EN-US"}[子树下的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象，]{style="font-family:宋体"}[NMS]{lang="EN-US"}[可以访问]{style="font-family:宋体"}[iso]{lang="EN-US"}[子树下其它所有]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象。缺省视图可以通过]{style="font-family:宋体"}**[undo]{lang="EN-US"}**[ **snmp-agent** **mib-view**]{lang="EN-US"}[命令删除，但是删除以后，可能导致不能对]{style="font-family:
-宋体"}[Agent]{lang="EN-US"}[的所有]{style="font-family:宋体"}[MIB]{lang="EN-US"}[节点执行读写操作，除非另外手工配置视图。]{style="font-family:宋体"}
+缺省视图可以通过**display** **snmp-agent** **mib-view**命令来查看。如果使用缺省视图限制NMS的访问权限时，除了snmpUsmMIB、snmpVacmMIB、snmpModules.18子树下的MIB对象，NMS可以访问iso子树下其它所有MIB对象。缺省视图可以通过**undo** **snmp-agent** **mib-view**命令删除，但是删除以后，可能导致不能对Agent的所有MIB节点执行读写操作，除非另外手工配置视图。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_573050019}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x2121268110}[创建并更新]{style="font-family:宋体"}[MIB]{lang="EN-US"}[视图信息，名字为]{style="font-family:宋体"}[mibtest]{lang="EN-US"}[，先创建一个包含]{style="font-family:宋体"}[mib-2]{lang="EN-US"}[子树（]{style="font-family:宋体"}[OID]{lang="EN-US"}[为"]{style="font-family:宋体"}[1.3.6.1]{lang="EN-US"}["）所有对象的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[视图，再更新为不包含"]{style="font-family:宋体"}[system]{lang="EN-US"}["子树]{style="font-family:宋体"}[(OID]{lang="EN-US"}[为"]{style="font-family:宋体"}[1.3.6.1.2.1.1]{lang="EN-US"}["]{style="font-family:宋体"}[)]{lang="EN-US"}[所有对象的]{style="font-family:
-宋体"}[MIB]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+\# 创建并更新MIB视图信息，名字为mibtest，先创建一个包含mib-2子树（OID为"1.3.6.1"）所有对象的MIB视图，再更新为不包含"system"子树(OID为"1.3.6.1.2.1.1")所有对象的MIB视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_806991522}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent sys-info version v1]{lang="EN-US"}
+Sysname snmp-agent sys-info version v1
 
-[\[Sysname\] snmp-agent mib-view included mibtest 1.3.6.1]{lang="EN-US"}
+Sysname snmp-agent mib-view included mibtest 1.3.6.1
 
-[\[Sysname\] snmp-agent mib-view excluded mibtest system]{lang="EN-US"}
+Sysname snmp-agent mib-view excluded mibtest system
 
-[\[Sysname\] snmp-agent community read public mib-view mibtest]{lang="EN-US"}
+Sysname snmp-agent community read public mib-view mibtest
 
-[[以上配置成功后，当]{style="font-family:宋体"}[NMS]{lang="EN-US"}]{#struct_0_x1400_15709_1933882757}[使用]{style="font-family:宋体"}[SNMPv1]{lang="EN-US"}[版本，]{style="font-family:宋体"}[public]{lang="EN-US"}[团体名访问设备时，不能查询]{style="font-family:宋体"}[system]{lang="EN-US"}[子树的所有对象（比如]{style="font-family:宋体"}[sysDescr]{lang="EN-US"}[和]{style="font-family:宋体"}[sysObjectID]{lang="EN-US"}[等节点），可以查询]{style="font-family:宋体"}[mib-2]{lang="EN-US"}[子树下的其它所有对象。]{style="font-family:宋体"}
+以上配置成功后，当NMS使用SNMPv1版本，public团体名访问设备时，不能查询system子树的所有对象（比如sysDescr和sysObjectID等节点），可以查询mib-2子树下的其它所有对象。
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1037630796}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **snmp-agent** **mib-view**]{lang="EN-US"}]{#struct_0_x1400_15709_x1428351776}
+·**display** **snmp-agent** **mib-view**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **group**]{lang="EN-US"}]{#struct_0_x1400_15709_167133865}
-:::
-
-::: {#951936228 .myid}
-[]{#_Toc404796952}[]{#struct_0_x1400_15709_x467890092}
+·**snmp-agent** **group**
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent packet max-size**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**[ **packet** **max-size**]{lang="EN-US"}]{#struct_0_x1400_15709_x109764145}[命令用来设置]{style="font-family:宋体"}[Agent]{lang="EN-US"}[能接收或发送的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[报文的最大长度。]{style="font-family:宋体"}
+**[snmp-agent** **packet** **max-size**]命令用来设置Agent能接收或发送的SNMP报文的最大长度。
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **packet** **max-size**]{lang="EN-US"}]{#struct_0_x1400_15709_1413137389}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **snmp-agent** **packet** **max-size**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1526954393}
+【命令】
 
-[**[snmp-agent]{lang="EN-US"}**[ **packet** **max-size** *byte-count*]{lang="EN-US"}]{#struct_0_x1400_15709_x121937837}
+**[snmp-agent** **packet** **max-size** *byte-count*]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **packet** **max-size**]{lang="EN-US"}]{#struct_0_x1400_15709_x218788575}
+**[undo** **snmp-agent** **packet** **max-size**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x364677225}
+【缺省情况】
 
-[[本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_x1400_15709_328749505}
+本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_167199401}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_x1720318390}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1826025778}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_61199892}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_544285895}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_45405757}
+【参数】
 
-[*[byte-count]{lang="EN-US"}*]{#struct_0_x1400_15709_67687848}[：]{style="font-family:宋体"}[Agent]{lang="EN-US"}[能接收]{style="font-family:宋体"}[/]{lang="EN-US"}[发送的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[报文的最大长度，取值范围为]{style="font-family:宋体"}[484]{lang="EN-US"}[～]{style="font-family:宋体"}[17940]{lang="EN-US"}[，单位为字节。]{style="font-family:宋体"}
+*[byte-count*]：Agent能接收/发送的SNMP报文的最大长度，取值范围为484～17940，单位为字节。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x852290161}
+【使用指导】
 
-[[设置报文的最大长度是为了防止网络中存在不支持分片的主机，而导致超长数据被丢弃。通常情况下，使用缺省值即可。]{style="font-family:宋体"}]{#struct_0_x1400_15709_167264937}
+设置报文的最大长度是为了防止网络中存在不支持分片的主机，而导致超长数据被丢弃。通常情况下，使用缺省值即可。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x607511732}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x145267234}[设置]{style="font-family:宋体"}[Agent]{lang="EN-US"}[能接收]{style="font-family:宋体"}[/]{lang="EN-US"}[发送的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[报文的最大长度为]{style="font-family:宋体"}[1024]{lang="EN-US"}[字节。]{style="font-family:宋体"}
+\# 设置Agent能接收/发送的SNMP报文的最大长度为1024字节。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_x381564510}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent packet max-size 1024]{lang="EN-US"}
-:::
-
-::: {#-1400347777 .myid}
-[]{#_Toc404796953}[]{#struct_0_x1400_15709_1666848568}[]{#_Toc335813544}[]{#_Toc320867961}
+Sysname snmp-agent packet max-size 1024
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent port**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent port]{lang="EN-US"}**]{#struct_0_x1400_15709_1737928177}[命令用来指定设备上接收]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[报文的本地端口号。]{style="font-family:宋体"}
+**[snmp-agent port**]命令用来指定设备上接收SNMP报文的本地端口号。
 
-[**[undo snmp-agent port]{lang="EN-US"}**]{#struct_0_x1400_15709_x561006384}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo snmp-agent port**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_428137465}
+【命令】
 
-[**[snmp-agent port ]{lang="EN-US"}***[port-num]{lang="EN-US"}*]{#struct_0_x1400_15709_293024951}
+**[snmp-agent port ***port-num*]
 
-[**[undo snmp-agent port]{lang="EN-US"}**]{#struct_0_x1400_15709_167330473}
+**[undo snmp-agent port**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_901253010}
+【缺省情况】
 
-[[使用]{style="font-family:宋体"}[161]{lang="EN-US"}]{#struct_0_x1400_15709_x935320918}[作为本地端口号接收]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+使用161作为本地端口号接收SNMP报文。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1781734861}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_1321241829}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_811444411}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_1441788087}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x279386043}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_167396009}
+【参数】
 
-[*[port-num]{lang="EN-US"}*]{#struct_0_x1400_15709_544945126}[：设备上接收]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[报文的本地端口号。取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[161]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[port-num*]：设备上接收SNMP报文的本地端口号。取值范围为1～65535，缺省值为161。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x386226185}
+【使用指导】
 
-[[用户配置成功后，使用新端口重新连接设备后，可以进行]{style="font-family:宋体"}[Get/Set]{lang="EN-US"}]{#struct_0_x1400_15709_1661545846}[等操作，此时使用]{style="font-family:宋体"}[display current-configurantion]{lang="EN-US"}[命令查看]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[相关配置，此项配置可以显示。]{style="font-family:宋体"}
+用户配置成功后，使用新端口重新连接设备后，可以进行Get/Set等操作，此时使用display current-configurantion命令查看SNMP相关配置，此项配置可以显示。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x528723963}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x747348147}[指定新的端口号。]{style="font-family:宋体"}
+\# 指定新的端口号。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_2143598048}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent port 5555]{lang="EN-US"}
+Sysname snmp-agent port 5555
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_65002580}[恢复默认端口号。]{style="font-family:宋体"}
+\# 恢复默认端口号。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_167461545}
+\<Sysname\> system-view
 
-[\[Sysname\] undo snmp-agent port]{lang="EN-US"}
-:::
-
-::: {#525610896 .myid}
-[]{#_Toc404796954}[]{#struct_0_x1400_15709_379294354}
+Sysname undo snmp-agent port
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent remote**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**[ **remote**]{lang="EN-US"}]{#struct_0_x1400_15709_613019982}[命令用来配置远端]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体的引擎。]{style="font-family:宋体"}
+**[snmp-agent** **remote**]命令用来配置远端SNMP实体的引擎。
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **remote**]{lang="EN-US"}]{#struct_0_x1400_15709_636757872}[命令用来取消已配置的远端]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体的引擎。]{style="font-family:宋体"}
+**[undo** **snmp-agent** **remote**]命令用来取消已配置的远端SNMP实体的引擎。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_294490280}
+【命令】
 
-[**[snmp-agent]{lang="EN-US"}**[ **remote** { *ip-address* \| **ipv6** *ipv6-address* } \[ **vpn-instance** *vpn-instance-name* \] **engineid** *engineid*]{lang="EN-US"}]{#struct_0_x1400_15709_1317096662}
+**[snmp-agent**[ **remote** { *ip-address* \| **ipv6** *ipv6-address* } [ **vpn-instance** *vpn-instance-name* ] **engineid** *engineid*]]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **remote** *ip-address*]{lang="EN-US"}]{#struct_0_x1400_15709_1987440225}
+**[undo** **snmp-agent** **remote** *ip-address*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x802261264}
+【缺省情况】
 
-[[设备上没有配置远端]{style="font-family:宋体"}[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_167527081}[实体的引擎。]{style="font-family:宋体"}
+设备上没有配置远端SNMP实体的引擎。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x714459831}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_1036059356}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1617577307}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_1936423196}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1953003207}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x661427755}
+【参数】
 
-[*[ip-address]{lang="EN-US"}*]{#struct_0_x1400_15709_x1831317115}[：远端]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[ip-address*]：远端SNMP实体的IP地址。
 
-[**[ipv6]{lang="EN-US"}**[ *ipv6-address*]{lang="EN-US"}]{#struct_0_x1400_15709_x90726365}[：远端]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[ipv6** *ipv6-address*]：远端SNMP实体的IPv6地址。
 
-[**[vpn-instance]{lang="EN-US"}**[ *vpn-instance-name*]{lang="EN-US"}]{#struct_0_x1400_15709_166544041}[：指定远端]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体所属的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[。]{style="font-family:宋体"}*[vpn-instance-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果未指定本参数，则表示远端]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体位于公网中。]{style="font-family:宋体"}
+**[vpn-instance** *vpn-instance-name*]：指定远端SNMP实体所属的VPN。*vpn-instance-name*表示MPLS L3VPN的VPN实例名称，为1～31个字符的字符串，区分大小写。如果未指定本参数，则表示远端SNMP实体位于公网中。
 
-[*[engineid]{lang="EN-US"}*]{#struct_0_x1400_15709_269112136}[：引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[，必须为偶数个十六进制数，偶数的取值范围为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[64]{lang="EN-US"}[。全]{style="font-family:宋体"}[0]{lang="EN-US"}[和全]{style="font-family:宋体"}[F]{lang="EN-US"}[均被认为是无效参数。]{style="font-family:宋体"}
+*[engineid*]：引擎ID，必须为偶数个十六进制数，偶数的取值范围为10～64。全0和全F均被认为是无效参数。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1015490775}
+【使用指导】
 
-[[当设备需要向]{style="font-family:宋体"}[NMS]{lang="EN-US"}]{#struct_0_x1400_15709_1695133497}[发送]{style="font-family:宋体"}[SNMPv3 Inform]{lang="EN-US"}[报文时，必须配置该命令，并将]{style="font-family:宋体"}*[ip-address]{lang="EN-US"}*[配置为]{style="font-family:宋体"}[NMS]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，]{style="font-family:宋体"}*[engineid]{lang="EN-US"}*[配置为]{style="font-family:宋体"}[NMS]{lang="EN-US"}[的引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[。因为协议要求]{style="font-family:宋体"}[SNMPv3 Inform]{lang="EN-US"}[报文中必须携带一个权威引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[，]{style="font-family:宋体"}[NMS]{lang="EN-US"}[收到该报文后，会用自己的引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[和这个权威引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[比较，如果相同，才能接收。]{style="font-family:宋体"}
+当设备需要向NMS发送SNMPv3 Inform报文时，必须配置该命令，并将*ip-address*配置为NMS的IP地址，*engineid*配置为NMS的引擎ID。因为协议要求SNMPv3 Inform报文中必须携带一个权威引擎ID，NMS收到该报文后，会用自己的引擎ID和这个权威引擎ID比较，如果相同，才能接收。
 
-[[用户最多可以配置]{style="font-family:宋体"}[20]{lang="EN-US"}]{#struct_0_x1400_15709_1079835315}[个远端]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+用户最多可以配置20个远端SNMP实体引擎ID。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x268660273}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x520609401}[配置]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[10.1.1.1]{lang="EN-US"}[的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体的引擎为]{style="font-family:宋体"}[123456789A]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置IP地址为10.1.1.1的SNMP实体的引擎为123456789A。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_997464844}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent remote 10.1.1.1 engineid 123456789A]{lang="EN-US"}
+Sysname snmp-agent remote 10.1.1.1 engineid 123456789A
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1135717777}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **snmp-agent** **remote**]{lang="EN-US"}]{#struct_0_x1400_15709_166609577}
-:::
-
-::: {#1887005227 .myid}
-[]{#_Toc404796955}[]{#struct_0_x1400_15709_x1085367591}
+·**display** **snmp-agent** **remote**
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent { inform \| trap } source**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**[ { **inform** \| **trap** } **source**]{lang="EN-US"}]{#struct_0_x1400_15709_571881940}[命令用来指定告警信息中的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[snmp-agent**[ { **inform** \| **trap** } **source**]]命令用来指定告警信息中的源IP地址。
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** { **inform** \| **trap** } **source**]{lang="EN-US"}]{#struct_0_x1400_15709_x1620696331}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo**[ **snmp-agent** { **inform** \| **trap** } **source**]]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_220998992}
+【命令】
 
-[**[snmp-agent]{lang="EN-US"}**[ { **inform** \| **trap** } **source** *interface-type* { *interface-number* \| *interface-number*.*subnumber* }]{lang="EN-US"}]{#struct_0_x1400_15709_x542363759}
+**[snmp-agent**[ { **inform** \| **trap** } **source** *interface-type* { *interface-number* \| *interface-number*.*subnumber* }]]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** { **inform** \| **trap** } **source**]{lang="EN-US"}]{#struct_0_x1400_15709_x2097636244}
+**[undo**[ **snmp-agent** { **inform** \| **trap** } **source**]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x280630511}
+【缺省情况】
 
-[[由]{style="font-family:宋体"}[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_167068330}[选择路由出接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址作为告警信息源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+由SNMP选择路由出接口的IP地址作为告警信息源IP地址。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x146888353}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_x1751664987}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x2129025538}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_1054227570}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_1906111767}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1829463960}
+【参数】
 
-[**[inform]{lang="EN-US"}**]{#struct_0_x1400_15709_1837510047}**[：]{style="font-family:宋体"}**[用来指定]{style="font-family:宋体"}[Inform]{lang="EN-US"}[报文中的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[inform**]**：**用来指定Inform报文中的源IP地址。
 
-[**[trap]{lang="EN-US"}**]{#struct_0_x1400_15709_x1729686412}**[：]{style="font-family:宋体"}**[用来指定]{style="font-family:宋体"}[Trap]{lang="EN-US"}[报文中的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[trap**]**：**用来指定Trap报文中的源IP地址。
 
-[*[interface-type]{lang="EN-US"}*[ { *interface-number* \| *interface-number*.*subnumber* }]{lang="EN-US"}]{#struct_0_x1400_15709_167133866}[：指定三层接口类型与接口编号。其中]{style="font-family:
-宋体"}*[interface-number]{lang="EN-US"}*[为主接口编号；]{style="font-family:宋体"}*[subnumber]{lang="EN-US"}*[为子接口编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[interface-type*[ { *interface-number* \| *interface-number*.*subnumber* }]]：指定三层接口类型与接口编号。其中*interface-number*为主接口编号；*subnumber*为子接口编号，取值范围为1～4094。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x467890093}
+【使用指导】
 
-[[执行该命令后，系统会使用指定接口的主]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x1400_15709_x109698609}[地址作为发送出去的告警信息的源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。这样，在]{style="font-family:宋体"}[NMS]{lang="EN-US"}[上就可以使用该]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址唯一标志]{style="font-family:宋体"}[Agent]{lang="EN-US"}[。即便]{style="font-family:宋体"}[Agent]{lang="EN-US"}[使用不同的出接口发送告警信息，]{style="font-family:宋体"}[NMS]{lang="EN-US"}[都可以使用该]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址来过滤]{style="font-family:宋体"}[Agent]{lang="EN-US"}[发送的所有告警信息。]{style="font-family:宋体"}
+执行该命令后，系统会使用指定接口的主IP地址作为发送出去的告警信息的源IP地址。这样，在NMS上就可以使用该IP地址唯一标志Agent。即便Agent使用不同的出接口发送告警信息，NMS都可以使用该IP地址来过滤Agent发送的所有告警信息。
 
-[[在将某个接口设置为获取告警信息的源地址接口之前需要注意的是：]{style="font-family:宋体"}]{#struct_0_x1400_15709_1380882044}
+在将某个接口设置为获取告警信息的源地址接口之前需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果配置的接口已存在，并且配置了合法的]{style="font-family:宋体"}]{#struct_0_x1400_15709_476417336}[IP]{lang="EN-US"}[地址，则该]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址将作为告警信息的源地址；]{style="font-family:宋体"}
+·如果配置的接口已存在，并且配置了合法的IP地址，则该IP地址将作为告警信息的源地址；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果配置的接口不存在，则该命令会配置失败；]{style="font-family:宋体"}]{#struct_0_x1400_15709_39885878}
+·如果配置的接口不存在，则该命令会配置失败；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果配置的接口已存在，但没有配置合法的]{style="font-family:宋体"}]{#struct_0_x1400_15709_x151796407}[IP]{lang="EN-US"}[地址，则该命令不生效，在接口配置了合法]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址后，该命令会自动生效。]{style="font-family:宋体"}
+·如果配置的接口已存在，但没有配置合法的IP地址，则该命令不生效，在接口配置了合法IP地址后，该命令会自动生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_786642698}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x92080900}[配置]{style="font-family:宋体"}[Trap]{lang="EN-US"}[报文的源地址为以太网接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上的接口主]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+\# 配置Trap报文的源地址为以太网接口GigabitEthernet1/0/1上的接口主IP地址。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_167199402}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent trap source gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname snmp-agent trap source gigabitethernet 1/0/1
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x1720318387}[配置]{style="font-family:宋体"}[Inform]{lang="EN-US"}[报文的源地址为以太网接口]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[上的接口主]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+\# 配置Inform报文的源地址为以太网接口GigabitEthernet1/0/2上的接口主IP地址。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_260007373}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent inform source gigabitethernet 1/0/2]{lang="EN-US"}
+Sysname snmp-agent inform source gigabitethernet 1/0/2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1796055754}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **trap** **enable**]{lang="EN-US"}]{#struct_0_x1400_15709_237545227}
+·**snmp-agent** **trap** **enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **target-host**]{lang="EN-US"}]{#struct_0_x1400_15709_x1867902401}
-:::
-
-::: {#-1366745620 .myid}
-[]{#_Toc404796956}[]{#struct_0_x1400_15709_x399440240}
+·**snmp-agent** **target-host**
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent sys-info contact**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**[ **sys-info contact**]{lang="EN-US"}]{#struct_0_x1400_15709_167264938}[命令用来配置设备的维护联系信息。]{style="font-family:宋体"}
+**[snmp-agent** **sys-info contact**]命令用来配置设备的维护联系信息。
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **sys-info** **contact**]{lang="EN-US"}]{#struct_0_x1400_15709_x607511719}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **snmp-agent** **sys-info** **contact**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x144546340}
+【命令】
 
-[**[snmp-agent]{lang="EN-US"}**[ **sys-info** **contact** *sys-contact*]{lang="EN-US"}]{#struct_0_x1400_15709_1969902993}
+**[snmp-agent** **sys-info** **contact** *sys-contact*]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **sys-info** **contact**]{lang="EN-US"}]{#struct_0_x1400_15709_1432108004}
+**[undo** **snmp-agent** **sys-info** **contact**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_814463444}
+【缺省情况】
 
-[[本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_x1400_15709_1948748469}
+本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_161540179}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_167330474}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_901253017}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x935320923}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1782062540}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_217824427}
+【参数】
 
-[*[sys-contact]{lang="EN-US"}*]{#struct_0_x1400_15709_x1260324181}[：描述系统维护联系信息，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[个字符的字符串。]{style="font-family:宋体"}
+*[sys-contact*]：描述系统维护联系信息，为1～255个字符的字符串。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x24992368}
+【使用指导】
 
-[[如果设备发生故障，设备维护人员可以利用系统维护联系信息，及时与设备生产厂商取得联系。]{style="font-family:宋体"}]{#struct_0_x1400_15709_2117508384}
+如果设备发生故障，设备维护人员可以利用系统维护联系信息，及时与设备生产厂商取得联系。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x228418153}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_167396010}[配置设备的维护联系信息为]{style="font-family:宋体"}[Dial System Operator \# 27345]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置设备的维护联系信息为Dial System Operator \# 27345。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_x1793707041}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent sys-info contact Dial System Operator \# 27345]{lang="EN-US"}
+Sysname snmp-agent sys-info contact Dial System Operator \# 27345
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x255965302}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **snmp-agent** **sys-info**]{lang="EN-US"}]{#struct_0_x1400_15709_x1349604377}
-:::
-
-::: {#1213853256 .myid}
-[]{#_Toc404796957}[]{#struct_0_x1400_15709_849798789}
+·**display** **snmp-agent** **sys-info**
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent sys-info location**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**[ **sys-info location**]{lang="EN-US"}]{#struct_0_x1400_15709_262465519}[命令用来配置设备的物理位置信息。]{style="font-family:宋体"}
+**[snmp-agent** **sys-info location**]命令用来配置设备的物理位置信息。
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **sys-info** **location**]{lang="EN-US"}]{#struct_0_x1400_15709_2029177286}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **snmp-agent** **sys-info** **location**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1004293525}
+【命令】
 
-[**[snmp-agent]{lang="EN-US"}**[ **sys-info** **location** *sys-location*]{lang="EN-US"}]{#struct_0_x1400_15709_1740025688}
+**[snmp-agent** **sys-info** **location** *sys-location*]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **sys-info** **location**]{lang="EN-US"}]{#struct_0_x1400_15709_167461546}
+**[undo** **snmp-agent** **sys-info** **location**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_379294351}
+【缺省情况】
 
-[[本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_x1400_15709_613019985}
+本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_636757877}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_294490275}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1272466641}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1156714463}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1554463175}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_167527082}
+【参数】
 
-[*[sys-location]{lang="EN-US"}*]{#struct_0_x1400_15709_x714459834}[：设备的物理位置信息，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[个字符的字符串。]{style="font-family:宋体"}
+*[sys-location*]：设备的物理位置信息，为1～255个字符的字符串。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1035862748}
+【使用指导】
 
-[[为便于识别和管理设备，请使用该命令将设备所处的物理位置记录在设备中。]{style="font-family:宋体"}]{#struct_0_x1400_15709_1754463565}
+为便于识别和管理设备，请使用该命令将设备所处的物理位置记录在设备中。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x716388679}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x1851033812}[配置设备的物理位置信息为]{style="font-family:宋体"}[Room524-row1-3]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置设备的物理位置信息为Room524-row1-3。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_x365999162}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent sys-info location Room524-row1-3]{lang="EN-US"}
+Sysname snmp-agent sys-info location Room524-row1-3
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x413077146}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **snmp-agent** **sys-info**]{lang="EN-US"}]{#struct_0_x1400_15709_1917470288}
-:::
-
-::: {#984376935 .myid}
-[]{#_Toc404796958}[]{#struct_0_x1400_15709_166544042}
+·**display** **snmp-agent** **sys-info**
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent sys-info version**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**[ **sys-info version**]{lang="EN-US"}]{#struct_0_x1400_15709_269112137}[命令用来设置系统启用的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[版本号。]{style="font-family:宋体"}
+**[snmp-agent** **sys-info version**]命令用来设置系统启用的SNMP版本号。
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **sys-info** **version**]{lang="EN-US"}]{#struct_0_x1400_15709_x1015490774}[命令用来禁止使用指定版本的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo** **snmp-agent** **sys-info** **version**]命令用来禁止使用指定版本的SNMP功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1033749858}
+【命令】
 
-[[非]{style="font-family:宋体"}[FIPS]{lang="EN-US"}]{#struct_0_x1400_15709_241375566}[模式下：]{style="font-family:宋体"}
+非FIPS模式下：
 
-[**[snmp-agent]{lang="EN-US"}**[ **sys-info** **version** { **all** \| { **v1** \| **v2c** \| **v3** } \* }]{lang="EN-US"}]{#struct_0_x1400_15709_1511544412}
+**[snmp-agent**[ **sys-info** **version** { **all** \| { **v1** \| **v2c** \| **v3** } \* }]]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **sys-info** **version** { **all** \| { **v1** \| **v2c** \| **v3** } \* }]{lang="EN-US"}]{#struct_0_x1400_15709_x1678256404}
+**[undo**[ **snmp-agent** **sys-info** **version** { **all** \| { **v1** \| **v2c** \| **v3** } \* }]]
 
-[[FIPS]{lang="EN-US"}]{#struct_0_x1400_15709_567790979}[模式下：]{style="font-family:宋体"}
+FIPS模式下：
 
-[**[snmp-agent]{lang="EN-US"}**[ **sys-info** **version** **v3**]{lang="EN-US"}]{#struct_0_x1400_15709_x1208284801}
+**[snmp-agent** **sys-info** **version** **v3**]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **sys-info** **version** **v3**]{lang="EN-US"}]{#struct_0_x1400_15709_166609578}
+**[undo** **snmp-agent** **sys-info** **version** **v3**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1085367606}
+【缺省情况】
 
-[[本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_x1400_15709_x187043126}
+本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1690251411}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_129628591}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_63944383}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_740074287}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_777396324}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_167068327}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_x1400_15709_1809426778}[：启用]{style="font-family:宋体"}[SNMPv1]{lang="EN-US"}[、]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[和]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[版本。]{style="font-family:宋体"}
+**[all**]：启用SNMPv1、SNMPv2c和SNMPv3版本。
 
-[**[v1]{lang="EN-US"}**]{#struct_0_x1400_15709_573443225}[：启用]{style="font-family:宋体"}[SNMPv1]{lang="EN-US"}[版本。]{style="font-family:宋体"}
+**[v1**]：启用SNMPv1版本。
 
-[**[v2c]{lang="EN-US"}**]{#struct_0_x1400_15709_1144581589}[：启用]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[版本。]{style="font-family:宋体"}
+**[v2c**]：启用SNMPv2c版本。
 
-[**[v3]{lang="EN-US"}**]{#struct_0_x1400_15709_736212950}[：启用]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[版本。]{style="font-family:宋体"}
+**[v3**]：启用SNMPv3版本。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1832973846}
+【使用指导】
 
-[[FIPS]{lang="EN-US"}]{#struct_0_x1400_15709_1801401860}[模式下，不支持设置]{style="font-family:宋体"}[SNMPv1]{lang="EN-US"}[和]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[版本。]{style="font-family:宋体"}
+FIPS模式下，不支持设置SNMPv1和SNMPv2c版本。
 
-[[启用指定的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_1933547519}[版本后，设备才能收发该版本的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[报文。只有]{style="font-family:宋体"}[NMS]{lang="EN-US"}[和]{style="font-family:宋体"}[Agent]{lang="EN-US"}[使用的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[版本相同，]{style="font-family:宋体"}[NMS]{lang="EN-US"}[才能和]{style="font-family:宋体"}[Agent]{lang="EN-US"}[建立连接。]{style="font-family:宋体"}
+启用指定的SNMP版本后，设备才能收发该版本的SNMP报文。只有NMS和Agent使用的SNMP版本相同，NMS才能和Agent建立连接。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_635942568}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_167133863}[启用]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[版本。]{style="font-family:宋体"}
+\# 启用SNMPv3版本。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_x467890098}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent sys-info version v3]{lang="EN-US"}
+Sysname snmp-agent sys-info version v3
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x109370929}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **snmp-agent** **sys-info**]{lang="EN-US"}]{#struct_0_x1400_15709_610660611}
-:::
-
-::: {#1084945205 .myid}
-[]{#_Toc404796959}[]{#struct_0_x1400_15709_x748556682}[]{#_Toc309201717}
+·**display** **snmp-agent** **sys-info**
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent target-host**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**[ **target-host**]{lang="EN-US"}]{#struct_0_x1400_15709_x700164716}[命令用来设置接收]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[告警信息的目的主机（能够解析]{style="font-family:宋体"}[Trap]{lang="EN-US"}[和]{style="font-family:宋体"}[Inform]{lang="EN-US"}[报文的设备，通常为]{style="font-family:宋体"}[NMS]{lang="EN-US"}[）的属性。]{style="font-family:宋体"}
+**[snmp-agent** **target-host**]命令用来设置接收SNMP告警信息的目的主机（能够解析Trap和Inform报文的设备，通常为NMS）的属性。
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **target-host**]{lang="EN-US"}]{#struct_0_x1400_15709_x1980841143}[命令用来取消当前设置。]{style="font-family:宋体"}
+**[undo** **snmp-agent** **target-host**]命令用来取消当前设置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_792673506}
+【命令】
 
-[[非]{style="font-family:宋体"}[FIPS]{lang="EN-US"}]{#struct_0_x1400_15709_167199399}[模式下：]{style="font-family:宋体"}
+非FIPS模式下：
 
-[**[snmp-agent]{lang="EN-US"}**[ **target-host** **inform** **address** **udp-domain** { *ip-address* \| **ipv6** *ipv6-address* } \[ **udp-port** *port-number* \] \[ **vpn-instance** *vpn-instance-name* \] **params** **securityname** *security-string* { **v2c** \| **v3** \[ **authentication** \| **privacy** \] }]{lang="EN-US"}]{#struct_0_x1400_15709_x890066815}
+**[snmp-agent**[ **target-host** **inform** **address** **udp-domain** { *ip-address* \| **ipv6** *ipv6-address* } [ **udp-port** *port-number* ]  **vpn-instance** *vpn-instance-name*  **params** **securityname** *security-string* { **v2c** \| **v3** [ **authentication** \| **privacy** ] }]]
 
-[**[snmp-agent]{lang="EN-US"}**[ **target-host** **trap** **address** **udp-domain** { *ip-address* \| **ipv6** *ipv6-address* } \[ **udp-port** *port-number* \] \[ **vpn-instance** *vpn-instance-name* \] **params** **securityname** *security-string* \[ **v1** \| **v2c** \| **v3** \[ **authentication** \| **privacy** \] \]]{lang="EN-US"}]{#struct_0_x1400_15709_x864547210}
+**[snmp-agent**[ **target-host** **trap** **address** **udp-domain** { *ip-address* \| **ipv6** *ipv6-address* } [ **udp-port** *port-number* ]  **vpn-instance** *vpn-instance-name*  **params** **securityname** *security-string* [ **v1** \| **v2c** \| **v3** [ **authentication** \| **privacy** ] ]]]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **target-host** { **trap** \| **inform** } **address** **udp-domain** { *ip-address* \| **ipv6** *ipv6-address* } **params** **securityname** *security-string* \[ **vpn-instance** *vpn-instance-name* \]]{lang="EN-US"}]{#struct_0_x1400_15709_1172001123}
+**[undo**[ **snmp-agent** **target-host** { **trap** \| **inform** } **address** **udp-domain** { *ip-address* \| **ipv6** *ipv6-address* } **params** **securityname** *security-string* [ **vpn-instance** *vpn-instance-name* ]]]
 
-[[FIPS]{lang="EN-US"}]{#struct_0_x1400_15709_x420757394}[模式下：]{style="font-family:宋体"}
+FIPS模式下：
 
-[**[snmp-agent]{lang="EN-US"}**[ **target-host** **inform** **address** **udp-domain** { *ip-address* \| **ipv6** *ipv6-address* } \[ **udp-port** *port-number* \] \[ **vpn-instance** *vpn-instance-name* \] **params** **securityname** *security-string* **v3** { **authentication** \| **privacy** }]{lang="EN-US"}]{#struct_0_x1400_15709_x1879470871}
+**[snmp-agent**[ **target-host** **inform** **address** **udp-domain** { *ip-address* \| **ipv6** *ipv6-address* } [ **udp-port** *port-number* ]  **vpn-instance** *vpn-instance-name*  **params** **securityname** *security-string* **v3** { **authentication** \| **privacy** }]]
 
-[**[snmp-agent]{lang="EN-US"}**[ **target-host** **trap** **address** **udp-domain** { *ip-address* \| **ipv6** *ipv6-address* } \[ **udp-port** *port-number* \] \[ **vpn-instance** *vpn-instance-name* \] **params** **securityname** *security-string* **v3** { **authentication** \| **privacy** }]{lang="EN-US"}]{#struct_0_x1400_15709_x1580631175}
+**[snmp-agent**[ **target-host** **trap** **address** **udp-domain** { *ip-address* \| **ipv6** *ipv6-address* } [ **udp-port** *port-number* ]  **vpn-instance** *vpn-instance-name*  **params** **securityname** *security-string* **v3** { **authentication** \| **privacy** }]]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **target-host** { **trap** \| **inform** } **address** **udp-domain** { *ip-address* \| **ipv6** *ipv6-address* } **params** **securityname** *security-string* \[ **vpn-instance** *vpn-instance-name* \]]{lang="EN-US"}]{#struct_0_x1400_15709_x375157891}
+**[undo**[ **snmp-agent** **target-host** { **trap** \| **inform** } **address** **udp-domain** { *ip-address* \| **ipv6** *ipv6-address* } **params** **securityname** *security-string* [ **vpn-instance** *vpn-instance-name* ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_110971132}
+【缺省情况】
 
-[[设备上没有设置告警主机。]{style="font-family:宋体"}]{#struct_0_x1400_15709_167264935}
+设备上没有设置告警主机。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x607511730}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_x145136162}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1534569181}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x932837038}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_1439794503}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1223049806}
+【参数】
 
-[**[inform]{lang="EN-US"}**]{#struct_0_x1400_15709_1628261715}[：配置接收]{style="font-family:宋体"}[Inform]{lang="EN-US"}[报文的目的主机的参数。]{style="font-family:宋体"}
+**[inform**]：配置接收Inform报文的目的主机的参数。
 
-[**[trap]{lang="EN-US"}**]{#struct_0_x1400_15709_x215832387}[：配置接收]{style="font-family:宋体"}[Trap]{lang="EN-US"}[报文的目的主机的参数。]{style="font-family:宋体"}
+**[trap**]：配置接收Trap报文的目的主机的参数。
 
-[**[address]{lang="EN-US"}**]{#struct_0_x1400_15709_167330471}[：指定设备发出的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[信息中的目的地址。]{style="font-family:宋体"}
+**[address**]：指定设备发出的SNMP信息中的目的地址。
 
-[**[udp-domain]{lang="EN-US"}**]{#struct_0_x1400_15709_901253012}[：指定使用]{style="font-family:宋体"}[UDP]{lang="EN-US"}[协议来传输]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[告警信息。]{style="font-family:宋体"}
+**[udp-domain**]：指定使用UDP协议来传输SNMP告警信息。
 
-[*[ip-address]{lang="EN-US"}*]{#struct_0_x1400_15709_39356769}[：接收告警信息的目的主机的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址或主机名，主机名为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[253]{lang="EN-US"}[个字符的字符串，不区分大小写，字符串仅可包含字母、数字、"]{style="font-family:宋体"}[-]{lang="EN-US"}["、"]{style="font-family:宋体"}[\_]{lang="EN-US"}["或"]{style="font-family:宋体"}[.]{lang="EN-US"}["。若使用主机名配置，发送时将获取主机名对应的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址，向对应的主机发送告警信息。]{style="font-family:宋体"}
+*[ip-address*]：接收告警信息的目的主机的IPv4地址或主机名，主机名为1～253个字符的字符串，不区分大小写，字符串仅可包含字母、数字、"-"、"\_"或"."。若使用主机名配置，发送时将获取主机名对应的IPv4地址，向对应的主机发送告警信息。
 
-[**[ipv6]{lang="EN-US"}**[ *ipv6-address*]{lang="EN-US"}]{#struct_0_x1400_15709_666115048}[：接收告警信息的目的主机的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址或主机名，主机名为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[253]{lang="EN-US"}[个字符的字符串，不区分大小写，字符串仅可包含字母、数字、"]{style="font-family:宋体"}[-]{lang="EN-US"}["、"]{style="font-family:宋体"}[\_]{lang="EN-US"}["或"]{style="font-family:宋体"}[.]{lang="EN-US"}["。若使用主机名配置，发送时将获取主机名对应的]{style="font-family:宋体"}[Ipv6]{lang="EN-US"}[地址，向对应的主机发送告警信息。]{style="font-family:宋体"}
+**[ipv6** *ipv6-address*]：接收告警信息的目的主机的IPv6地址或主机名，主机名为1～253个字符的字符串，不区分大小写，字符串仅可包含字母、数字、"-"、"\_"或"."。若使用主机名配置，发送时将获取主机名对应的Ipv6地址，向对应的主机发送告警信息。
 
-[**[udp-port]{lang="EN-US"}**[ *port-number*]{lang="EN-US"}]{#struct_0_x1400_15709_1686137990}[：指定目的主机上用来接收告警信息的端口号，缺省值为]{style="font-family:宋体"}[162]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[udp-port** *port-number*]：指定目的主机上用来接收告警信息的端口号，缺省值为162。
 
-[**[vpn-instance]{lang="EN-US"}**[ *vpn-instance-name*]{lang="EN-US"}]{#struct_0_x1400_15709_x1502751462}[：指定目的主机所属的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[。]{style="font-family:宋体"}*[vpn-instance-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果未指定本参数，则表示目的主机位于公网中。]{style="font-family:宋体"}
+**[vpn-instance** *vpn-instance-name*]：指定目的主机所属的VPN。*vpn-instance-name*表示MPLS L3VPN的VPN实例名称，为1～31个字符的字符串，区分大小写。如果未指定本参数，则表示目的主机位于公网中。
 
-[**[params]{lang="EN-US"}**[ **securityname** *security-string*]{lang="EN-US"}]{#struct_0_x1400_15709_x1474974717}[：指定认证的参数，]{style="font-family:宋体"}*[security-string]{lang="EN-US"}*[为]{style="font-family:宋体"}[SNMPv1]{lang="EN-US"}[、]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[的团体名或]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[的用户名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[个字符的字符串。]{style="font-family:宋体"}
+**[params** **securityname** *security-string*]：指定认证的参数，*security-string*为SNMPv1、SNMPv2c的团体名或SNMPv3的用户名，为1～32个字符的字符串。
 
-[**[v1]{lang="EN-US"}**]{#struct_0_x1400_15709_1912983975}[：]{style="font-family:宋体"}[SNMPv1]{lang="EN-US"}[版本。]{style="font-family:宋体"}
+**[v1**]：SNMPv1版本。
 
-[**[v2c]{lang="EN-US"}**]{#struct_0_x1400_15709_x1752783312}[：]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[版本。]{style="font-family:宋体"}
+**[v2c**]：SNMPv2c版本。
 
-[**[v3]{lang="EN-US"}**]{#struct_0_x1400_15709_167396007}[：]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[版本。]{style="font-family:宋体"}
+**[v3**]：SNMPv3版本。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[authentication]{lang="EN-US"}**]{#struct_0_x1400_15709_544945124}[：指明对报文进行认证但不加密。认证功能用来验证报文的完整性或报文是否被篡改等，认证密码在创建]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[用户时配置。]{style="font-family:宋体"}
+·**authentication**：指明对报文进行认证但不加密。认证功能用来验证报文的完整性或报文是否被篡改等，认证密码在创建SNMPv3用户时配置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[privacy]{lang="EN-US"}**]{#struct_0_x1400_15709_x386226187}[：指明对报文进行认证和加密。加密是对报文的数据部分进行加密处理以防信息被窃取，认证密码和加密密码在创建]{style="font-family:
-宋体"}[SNMPv3]{lang="EN-US"}[用户时配置。]{style="font-family:宋体"}
+·**privacy**：指明对报文进行认证和加密。加密是对报文的数据部分进行加密处理以防信息被窃取，认证密码和加密密码在创建SNMPv3用户时配置。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1661414774}
+【使用指导】
 
-[[根据实际组网需要，用户可以多次使用该命令配置不同的目的主机的属性，使得设备可以向多个]{style="font-family:宋体"}[NMS]{lang="EN-US"}]{#struct_0_x1400_15709_x1434311246}[发送告警信息。可以配置的目的主机的个数与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+根据实际组网需要，用户可以多次使用该命令配置不同的目的主机的属性，使得设备可以向多个NMS发送告警信息。可以配置的目的主机的个数与设备的型号有关，请以设备的实际情况为准。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不指定]{lang="EN-US" style="font-family:宋体"}**[udp-port]{lang="EN-US"}**[ *port-number*]{lang="EN-US"}]{#struct_0_x1400_15709_x1776692238}[参数时，使用的端口号为]{lang="EN-US" style="font-family:宋体"}[162]{lang="EN-US"}[。]{lang="EN-US" style="font-family:宋体"}[162]{lang="EN-US"}[是]{lang="EN-US" style="font-family:宋体"}[SNMP]{lang="EN-US"}[协议规定的]{lang="EN-US" style="font-family:宋体"}[NMS]{lang="EN-US"}[接收告警信息的端口，通常情况下（比如使用]{lang="EN-US" style="font-family:宋体"}[iMC]{lang="EN-US"}[或者]{lang="EN-US" style="font-family:宋体"}[MIB Browser]{lang="EN-US"}[作为]{lang="EN-US" style="font-family:宋体"}[NMS]{lang="EN-US"}[时），使用该缺省值即可。]{lang="EN-US" style="font-family:宋体"}[如果要将该参数修改为其它值，则必须和]{style="font-family:
-宋体"}[NMS]{lang="EN-US"}[上的配置保持一致。]{style="font-family:
-宋体"}
+·不指定**udp-port** *port-number*参数时，使用的端口号为162。162是SNMP协议规定的NMS接收告警信息的端口，通常情况下（比如使用iMC或者MIB Browser作为NMS时），使用该缺省值即可。如果要将该参数修改为其它值，则必须和NMS上的配置保持一致。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不指定]{style="font-family:宋体"}]{#struct_0_x1400_15709_1536674800}**[v1]{lang="EN-US"}**[、]{style="font-family:宋体"}**[v2c]{lang="EN-US"}**[、]{style="font-family:宋体"}**[v3]{lang="EN-US"}**[版本参数时，使用的版本是]{style="font-family:宋体"}[v1]{lang="EN-US"}[。设备配置的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[版本必须和]{style="font-family:宋体"}[NMS]{lang="EN-US"}[上运行的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[版本一致，否则，]{style="font-family:宋体"}[NMS]{lang="EN-US"}[将收不到告警信息。]{style="font-family:宋体"}
+·不指定**v1**、**v2c**、**v3**版本参数时，使用的版本是v1。设备配置的SNMP版本必须和NMS上运行的SNMP版本一致，否则，NMS将收不到告警信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[不指定]{lang="EN-US" style="font-family:宋体"}**[authentication]{lang="EN-US"}**]{#struct_0_x1400_15709_1230914156}[和]{lang="EN-US" style="font-family:
-宋体"}**[privacy]{lang="EN-US"}**[参数时，使用的是不认证不加密的安全级别。]{lang="EN-US" style="font-family:宋体"}
+·不指定**authentication**和**privacy**参数时，使用的是不认证不加密的安全级别。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_167461543}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_379294356}[允许向]{style="font-family:宋体"}[10.1.1.1]{lang="EN-US"}[发送]{style="font-family:宋体"}[SNMPv3 Trap]{lang="EN-US"}[报文，用户名为]{style="font-family:宋体"}[public]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 允许向10.1.1.1发送SNMPv3 Trap报文，用户名为public。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_613019980}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent trap enable standard]{lang="EN-US"}
+Sysname snmp-agent trap enable standard
 
-[\[Sysname\] snmp-agent target-host trap address udp-domain 10.1.1.1 params securityname public v3]{lang="EN-US"}
+Sysname snmp-agent target-host trap address udp-domain 10.1.1.1 params securityname public v3
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_636757874}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ { **inform** \| **trap** } **source**]{lang="EN-US"}]{#struct_0_x1400_15709_294490278}
+[·**snmp-agent**[ { **inform** \| **trap** } **source**]]
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **trap** **enable**]{lang="EN-US"}]{#struct_0_x1400_15709_1272466638}
+·**snmp-agent** **trap** **enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **trap** **life**]{lang="EN-US"}]{#struct_0_x1400_15709_x1156124634}
-:::
-
-::: {#-1971955544 .myid}
-[]{#_Toc404796960}[]{#struct_0_x1400_15709_439892395}
+·**snmp-agent** **trap** **life**
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent trap enable**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**[ **trap** **enable**]{lang="EN-US"}]{#struct_0_x1400_15709_35513483}[命令用来在全局下开启告警功能。]{style="font-family:宋体"}
+**[snmp-agent** **trap** **enable**]命令用来在全局下开启告警功能。
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **trap** **enable**]{lang="EN-US"}]{#struct_0_x1400_15709_167527079}[命令用来在全局下关闭告警功能。]{style="font-family:宋体"}
+**[undo** **snmp-agent** **trap** **enable**]命令用来在全局下关闭告警功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x376752831}
+【命令】
 
-[**[snmp-agent]{lang="EN-US"}**[ **trap** **enable** \[ **configuration** \| *protocol* **\|** **standard** \[ **authentication** \| **coldstart** \| **linkdown** \| **linkup** \| **warmstart** \] \* \| **system** \]]{lang="EN-US"}]{#struct_0_x1400_15709_x1971237}
+**[snmp-agent**[ **trap** **enable** [ **configuration** \| *protocol* **\|** **standard** [ **authentication** \| **coldstart** \| **linkdown** \| **linkup** \| **warmstart** ] \* \| **system** ]]]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **trap** **enable** \[ **configuration** \| *protocol* **\|** **standard** \[ **authentication** \| **coldstart** \| **linkdown** \| **linkup** \| **warmstart** \] \* \| **system** \]]{lang="EN-US"}]{#struct_0_x1400_15709_1409018260}
+**[undo**[ **snmp-agent** **trap** **enable** [ **configuration** \| *protocol* **\|** **standard** [ **authentication** \| **coldstart** \| **linkdown** \| **linkup** \| **warmstart** ] \* \| **system** ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_166544039}
+【缺省情况】
 
-[[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_1843090256}[配置告警、标准告警和系统告警功能处于开启状态，其他各模块告警功能是否开启请参见各模块手册。]{style="font-family:宋体"}
+SNMP配置告警、标准告警和系统告警功能处于开启状态，其他各模块告警功能是否开启请参见各模块手册。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_78332889}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_1924442478}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1913855119}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x651075091}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x198858090}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_166609575}
+【参数】
 
-[**[configuration]{lang="EN-US"}**]{#struct_0_x1400_15709_x1085367593}[：]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[配置告警信息。配置该参数后，系统会以]{style="font-family:宋体"}[10]{lang="EN-US"}[分钟为周期，查看周期内当前运行配置或者启动配置是否被修改，以及是否有用户对启动配置文件进行修改，并将最后一次修改形成一条告警输出。]{style="font-family:宋体"}
+**[configuration**]：SNMP配置告警信息。配置该参数后，系统会以10分钟为周期，查看周期内当前运行配置或者启动配置是否被修改，以及是否有用户对启动配置文件进行修改，并将最后一次修改形成一条告警输出。
 
-[*[protocol]{lang="EN-US"}*]{#struct_0_x1400_15709_x590917474}[：开启指定协议模块的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[告警功能。有关此参数的详细介绍，请参见各模块的命令手册。]{style="font-family:宋体"}
+*[protocol*]：开启指定协议模块的SNMP告警功能。有关此参数的详细介绍，请参见各模块的命令手册。
 
-[**[standard]{lang="EN-US"}**]{#struct_0_x1400_15709_480090913}[：]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[标准告警信息。包括以下五种：]{style="font-family:宋体"}
+**[standard**]：SNMP标准告警信息。包括以下五种：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[authentication]{lang="EN-US"}**]{#struct_0_x1400_15709_1081943826}[：]{lang="EN-US" style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备时认证失败，输出]{lang="EN-US" style="font-family:宋体"}[SNMP]{lang="EN-US"}[认证失败的告警信息。]{lang="EN-US" style="font-family:宋体"}
+·**authentication**：NMS访问设备时认证失败，输出SNMP认证失败的告警信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[coldstart]{lang="EN-US"}**]{#struct_0_x1400_15709_x1474494034}[：当设备重新启动时，输出设备冷启动告警信息。]{style="font-family:宋体"}
+·**coldstart**：当设备重新启动时，输出设备冷启动告警信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[linkdown]{lang="EN-US"}**]{#struct_0_x1400_15709_449109561}[：当接口的链路]{lang="EN-US" style="font-family:宋体"}[down]{lang="EN-US"}[时，输出]{lang="EN-US" style="font-family:宋体"}[linkDown]{lang="EN-US"}[告警信息。]{lang="EN-US" style="font-family:宋体"}
+·**linkdown**：当接口的链路down时，输出linkDown告警信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[linkup]{lang="EN-US"}**]{#struct_0_x1400_15709_x1287609988}[：当接口的链路]{lang="EN-US" style="font-family:宋体"}[up]{lang="EN-US"}[时，输出]{lang="EN-US" style="font-family:宋体"}[linkUp]{lang="EN-US"}[告警信息。]{lang="EN-US" style="font-family:宋体"}
+·**linkup**：当接口的链路up时，输出linkUp告警信息。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[warmstart]{lang="EN-US"}**]{#struct_0_x1400_15709_167068328}[：当]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[模块重新启动时，输出热启动告警信息。]{style="font-family:宋体"}
+·**warmstart**：当SNMP模块重新启动时，输出热启动告警信息。
 
-[**[system]{lang="EN-US"}**]{#struct_0_x1400_15709_1809426791}**[：]{style="font-family:宋体"}**[SNMP]{lang="EN-US"}[系统告警信息。配置该参数后，如果系统时间被修改、系统重启或系统主用启动软件包不可用，均会生成告警信息。]{style="font-family:宋体"}
+**[system**]**：**SNMP系统告警信息。配置该参数后，如果系统时间被修改、系统重启或系统主用启动软件包不可用，均会生成告警信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_572853411}
+【使用指导】
 
-[[开启告警功能，设备就可以向目的主机发送告警信息。具体是发送]{style="font-family:宋体"}[Inform]{lang="EN-US"}]{#struct_0_x1400_15709_x60927789}[报文还是]{style="font-family:宋体"}[Trap]{lang="EN-US"}[报文，以及发往哪个目的主机，请通过]{style="font-family:宋体"}**[snmp-agent]{lang="EN-US"}**[ **target-host**]{lang="EN-US"}[命令来配置。]{style="font-family:宋体"}
+开启告警功能，设备就可以向目的主机发送告警信息。具体是发送Inform报文还是Trap报文，以及发往哪个目的主机，请通过**snmp-agent** **target-host**命令来配置。
 
-[[不指定可选参数时，表示在全局下开启]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1400_15709_x1945153911}[关闭所有可选模块的告警功能。]{style="font-family:宋体"}
+不指定可选参数时，表示在全局下开启/关闭所有可选模块的告警功能。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x146272522}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_1413162868}[允许发送]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[认证失败的告警信息，使用团体名]{style="font-family:宋体"}[public]{lang="EN-US"}[，向]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[10.1.1.1]{lang="EN-US"}[的目的主机发送]{style="font-family:宋体"}[Trap]{lang="EN-US"}[报文。]{style="font-family:宋体"}
+\# 允许发送SNMP认证失败的告警信息，使用团体名public，向IP地址为10.1.1.1的目的主机发送Trap报文。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_167133864}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent target-host trap address udp-domain 10.1.1.1 params securityname public]{lang="EN-US"}
+Sysname snmp-agent target-host trap address udp-domain 10.1.1.1 params securityname public
 
-[\[Sysname\] snmp-agent trap enable standard authentication]{lang="EN-US"}
+Sysname snmp-agent trap enable standard authentication
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x467890091}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **target-host**]{lang="EN-US"}]{#struct_0_x1400_15709_x109829681}
-:::
-
-::: {#1045862325 .myid}
-[]{#_Toc404796961}[]{#struct_0_x1400_15709_x157611167}
+·**snmp-agent** **target-host**
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent trap if-mib link extended**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**[ **trap** **if-mib** **link** **extended**]{lang="EN-US"}]{#struct_0_x1400_15709_792821298}[命令用来对标准格式的]{style="font-family:宋体"}[linkUp]{lang="EN-US"}[或]{style="font-family:宋体"}[linkDown]{lang="EN-US"}[告警信息进行私有扩展。]{style="font-family:宋体"}
+**[snmp-agent** **trap** **if-mib** **link** **extended**]命令用来对标准格式的linkUp或linkDown告警信息进行私有扩展。
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **trap** **if-mib** **link** **extended**]{lang="EN-US"}]{#struct_0_x1400_15709_1596130134}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **snmp-agent** **trap** **if-mib** **link** **extended**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1662212238}
+【命令】
 
-[**[snmp-agent]{lang="EN-US"}**[ **trap** **if-mib** **link** **extended**]{lang="EN-US"}]{#struct_0_x1400_15709_x9224894}
+**[snmp-agent** **trap** **if-mib** **link** **extended**]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **trap** **if-mib** **link** **extended**]{lang="EN-US"}]{#struct_0_x1400_15709_1367358478}
+**[undo** **snmp-agent** **trap** **if-mib** **link** **extended**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_167199400}
+【缺省情况】
 
-[[系统发送的]{style="font-family:宋体"}[linkUp/linkDown]{lang="EN-US"}]{#struct_0_x1400_15709_x1720318389}[告警信息的格式为标准格式，不对其进行私有扩展。]{style="font-family:宋体"}
+系统发送的linkUp/linkDown告警信息的格式为标准格式，不对其进行私有扩展。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1259022401}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_100968150}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1245091907}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1091520399}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_913817174}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_120962669}
+【使用指导】
 
-[[扩展格式的]{style="font-family:宋体"}[linkUp/linkDown]{lang="EN-US"}]{#struct_0_x1400_15709_x2016080667}[告警信息由标准格式的]{style="font-family:宋体"}[linkUp/linkDown]{lang="EN-US"}[告警信息后增加接口描述和接口类型信息构成，使用扩展格式的告警信息有助于网络管理员快速定位问题。]{style="font-family:宋体"}
+扩展格式的linkUp/linkDown告警信息由标准格式的linkUp/linkDown告警信息后增加接口描述和接口类型信息构成，使用扩展格式的告警信息有助于网络管理员快速定位问题。
 
-[[需要注意的是，配置该命令后，设备发送的]{style="font-family:宋体"}[linkUp/linkDown]{lang="EN-US"}]{#struct_0_x1400_15709_167264936}[告警信息为扩展格式的信息。如果]{style="font-family:宋体"}[NMS]{lang="EN-US"}[不支持扩展格式，可能会无法解析信息。]{style="font-family:宋体"}
+需要注意的是，配置该命令后，设备发送的linkUp/linkDown告警信息为扩展格式的信息。如果NMS不支持扩展格式，可能会无法解析信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x607511733}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x145201698}[对标准格式的]{style="font-family:宋体"}[linkUp/linkDown]{lang="EN-US"}[告警信息进行私有扩展。]{style="font-family:宋体"}
+\# 对标准格式的linkUp/linkDown告警信息进行私有扩展。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_x419920578}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent trap if-mib link extended]{lang="EN-US"}
-:::
-
-::: {#1502780694 .myid}
-[]{#_Toc404796962}[]{#struct_0_x1400_15709_x448670979}[]{#_Toc336007828}
+Sysname snmp-agent trap if-mib link extended
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent trap log**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**[ **trap log**]{lang="EN-US"}]{#struct_0_x1400_15709_x419294831}[命令用来开启]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[告警日志功能。]{style="font-family:宋体"}
+**[snmp-agent** **trap log**]命令用来开启SNMP告警日志功能。
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **trap log**]{lang="EN-US"}]{#struct_0_x1400_15709_x2095799196}[命令用来关闭]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[告警日志功能。]{style="font-family:宋体"}
+**[undo** **snmp-agent** **trap log**]命令用来关闭SNMP告警日志功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_232673638}
+【命令】
 
-[**[snmp-agent]{lang="EN-US"}**[ **trap log**]{lang="EN-US"}]{#struct_0_x1400_15709_167330472}
+**[snmp-agent** **trap log**]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **trap log**]{lang="EN-US"}]{#struct_0_x1400_15709_901253011}
+**[undo** **snmp-agent** **trap log**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x935320917}
+【缺省情况】
 
-[[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_x1782324685}[告警日志功能处于关闭状态。]{style="font-family:宋体"}
+SNMP告警日志功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1470923981}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_x1135105917}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1118281711}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_1540381730}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x2003388272}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_167396008}
+【使用指导】
 
-[[打开]{style="font-family:宋体"}[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_544945127}[告警日志开关，]{style="font-family:宋体"}[Agent]{lang="EN-US"}[向]{style="font-family:宋体"}[NMS]{lang="EN-US"}[发送告警时，]{style="font-family:宋体"}[Agent]{lang="EN-US"}[会记录该告警相关的信息并保存到设备的信息中心。通过设置信息中心的参数，最终决定]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[告警日志的输出规则（即是否允许输出以及输出方向）。]{style="font-family:宋体"}
+打开SNMP告警日志开关，Agent向NMS发送告警时，Agent会记录该告警相关的信息并保存到设备的信息中心。通过设置信息中心的参数，最终决定SNMP告警日志的输出规则（即是否允许输出以及输出方向）。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x386226186}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_1661349238}[打开]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[告警日志开关。]{style="font-family:宋体"}
+\# 打开SNMP告警日志开关。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_1726489518}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent trap log]{lang="EN-US"}
-:::
-
-::: {#-1474156421 .myid}
-[]{#_Toc404796963}[]{#struct_0_x1400_15709_1247825103}
+Sysname snmp-agent trap log
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent trap life**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**[ **trap** **life**]{lang="EN-US"}]{#struct_0_x1400_15709_x1596726019}[命令用来设置告警信息的保存时间。]{style="font-family:宋体"}
+**[snmp-agent** **trap** **life**]命令用来设置告警信息的保存时间。
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **trap** **life**]{lang="EN-US"}]{#struct_0_x1400_15709_263226537}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **snmp-agent** **trap** **life**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_167461544}
+【命令】
 
-[**[snmp-agent]{lang="EN-US"}**[ **trap** **life** *seconds*]{lang="EN-US"}]{#struct_0_x1400_15709_379294353}
+**[snmp-agent** **trap** **life** *seconds*]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **trap** **life**]{lang="EN-US"}]{#struct_0_x1400_15709_613019983}
+**[undo** **snmp-agent** **trap** **life**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_636757871}
+【缺省情况】
 
-[[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_294490281}[告警信息的保存时间为]{style="font-family:宋体"}[120]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+SNMP告警信息的保存时间为120秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1317096661}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_1987505761}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1155710416}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_2062361777}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_167527080}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x714459832}
+【参数】
 
-[*[seconds]{lang="EN-US"}*]{#struct_0_x1400_15709_1035993820}[：超时时间，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[2592000]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[seconds*]：超时时间，取值范围为1～2592000，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1319008115}
+【使用指导】
 
-[[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_906427729}[模块使用队列来发送告警信息，告警信息进入消息发送队列时会启动一个存活定时器。如果直到定时器超时（即达到]{style="font-family:宋体"}**[snmp-agent]{lang="EN-US"}**[ **trap** **life**]{lang="EN-US"}[命令设置的时间），告警信息还没有被发送出去，系统就会将该告警信息从发送队列中删除。]{style="font-family:宋体"}
+SNMP模块使用队列来发送告警信息，告警信息进入消息发送队列时会启动一个存活定时器。如果直到定时器超时（即达到**snmp-agent** **trap** **life**命令设置的时间），告警信息还没有被发送出去，系统就会将该告警信息从发送队列中删除。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_669163994}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_1013719178}[设置告警信息的保存时间为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 设置告警信息的保存时间为60秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_1391408392}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent trap life 60]{lang="EN-US"}
+Sysname snmp-agent trap life 60
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_166544040}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **trap** **enable**]{lang="EN-US"}]{#struct_0_x1400_15709_269112135}
+·**snmp-agent** **trap** **enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **target-host**]{lang="EN-US"}]{#struct_0_x1400_15709_x1015490772}
+·**snmp-agent** **target-host**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **trap** **queue-size**]{lang="EN-US"}]{#struct_0_x1400_15709_129049556}
-:::
-
-::::: {#-1474636508 .myid}
-[]{#_Toc404796964}[]{#struct_0_x1400_15709_x1204884185}[]{#_Toc393286384}
+·**snmp-agent** **trap** **queue-size**
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent trap periodical-interval**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](SNMP命令.files/image001.png){#图片 1 border="0" width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1400_15709_1817159193}
-:::
+![说明](SNMP命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1400_15709_x1872087748}
-:::
+本命令的支持情况与设备型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[snmp-agent trap periodical-interval**]命令用来配置周期Trap发送的时间间隔。
 
-[**[snmp-agent trap periodical-interval]{lang="EN-US"}**]{#struct_0_x1400_15709_x311429587}[命令用来配置周期]{style="font-family:宋体"}[Trap]{lang="EN-US"}[发送的时间间隔。]{style="font-family:宋体"}
+**[undo snmp-agent trap periodical-interval**]命令用来恢复缺省情况。
 
-[**[undo snmp-agent trap periodical-interval]{lang="EN-US"}**]{#struct_0_x1400_15709_4326114}[命令用来恢复缺省情况。]{style="font-family:
-宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_945574163}
+**[snmp-agent trap periodical-interval ***interval-time*]
 
-[**[snmp-agent trap periodical-interval ]{lang="EN-US"}***[interval-time]{lang="EN-US"}*]{#struct_0_x1400_15709_x1205080793}
+**[undo snmp-agent trap periodical-interval**]
 
-[**[undo snmp-agent trap periodical-interval]{lang="EN-US"}**]{#struct_0_x1400_15709_x1834250444}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x17932942}
+周期Trap发送的时间间隔为60秒。
 
-[[周期]{style="font-family:宋体"}[Trap]{lang="EN-US"}]{#struct_0_x1400_15709_x1961432915}[发送的时间间隔为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x760283803}
+系统视图
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_349404786}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_472892608}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1234619307}
+network-operator
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1400_15709_x1205015257}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x369751008}
+mdc-operator
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1400_15709_x1123838462}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1183593366}
+*[interval-time*]：周期Trap消息发送的时间间隔，取值范围为0或者10～3600，单位为秒。
 
-[*[interval-time]{lang="EN-US"}*]{#struct_0_x1400_15709_x479978441}[：周期]{style="font-family:宋体"}[Trap]{lang="EN-US"}[消息发送的时间间隔，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[或者]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_692936200}
+当设备开启周期Trap功能时，设备将在指定的时间间隔内向NMS发送周期Trap消息，表示当前设备的SNMP功能运行正常。
 
-[[当设备开启周期]{style="font-family:宋体"}[Trap]{lang="EN-US"}]{#struct_0_x1400_15709_x1490026770}[功能时，设备将在指定的时间间隔内向]{style="font-family:宋体"}[NMS]{lang="EN-US"}[发送周期]{style="font-family:宋体"}[Trap]{lang="EN-US"}[消息，表示当前设备的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[功能运行正常。]{style="font-family:宋体"}
+需要注意的是，如果周期Trap的时间间隔设置为0秒，则表示关闭周期Trap发送功能。
 
-[[需要注意的是，如果周期]{style="font-family:宋体"}[Trap]{lang="EN-US"}]{#struct_0_x1400_15709_2115414818}[的时间间隔设置为]{style="font-family:宋体"}[0]{lang="EN-US"}[秒，则表示关闭周期]{style="font-family:宋体"}[Trap]{lang="EN-US"}[发送功能。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1637299307}
+\# 设置周期Trap发送的时间间隔为10秒。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x1205211865}[设置周期]{style="font-family:宋体"}[Trap]{lang="EN-US"}[发送的时间间隔为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\<sysname\> system-view
 
-[[\<sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_x2064243980}
+sysname snmp-agent trap periodical-interval 10
 
-[\[sysname\] snmp-agent trap periodical-interval 10]{lang="EN-US"}
+\# 关闭周期Trap发送功能。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x2102119647}[关闭周期]{style="font-family:宋体"}[Trap]{lang="EN-US"}[发送功能。]{style="font-family:宋体"}
+\<sysname\> system-view
 
-[[\<sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_x198088838}
+sysname snmp-agent trap periodical-interval 0
 
-[\[sysname\] snmp-agent trap periodical-interval 0]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1365737578}
+·**snmp-agent****target-host**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x1400_15709_x87194705}**[target-host]{lang="EN-US"}**
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent trap enable]{lang="EN-US"}**]{#struct_0_x1400_15709_1944996328}
-:::::
-
-::: {#-2142649509 .myid}
-[]{#_Toc404796965}[]{#struct_0_x1400_15709_27440632}
+·**snmp-agent trap enable**
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent trap queue-size**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**[ **trap** **queue-size**]{lang="EN-US"}]{#struct_0_x1400_15709_187023133}[命令用来设置告警信息发送队列的长度。]{style="font-family:宋体"}
+**[snmp-agent** **trap** **queue-size**]命令用来设置告警信息发送队列的长度。
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **trap** **queue-size**]{lang="EN-US"}]{#struct_0_x1400_15709_x364592981}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **snmp-agent** **trap** **queue-size**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_741083747}
+【命令】
 
-[**[snmp-agent]{lang="EN-US"}**[ **trap** **queue-size** *size*]{lang="EN-US"}]{#struct_0_x1400_15709_x1863032509}
+**[snmp-agent** **trap** **queue-size** *size*]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **trap** **queue-size**]{lang="EN-US"}]{#struct_0_x1400_15709_166609576}
+**[undo** **snmp-agent** **trap** **queue-size**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1085367592}
+【缺省情况】
 
-[[告警信息的发送队列最多可以存储]{style="font-family:宋体"}[100]{lang="EN-US"}]{#struct_0_x1400_15709_2137965881}[条告警信息。]{style="font-family:宋体"}
+告警信息的发送队列最多可以存储100条告警信息。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1675640766}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_x384969502}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x917957358}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1660598374}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x818717980}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_668682083}
+【参数】
 
-[*[size]{lang="EN-US"}*]{#struct_0_x1400_15709_1733152272}[：消息队列中可以存储的告警信息的数目，取值范围]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1000]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[size*]：消息队列中可以存储的告警信息的数目，取值范围1～1000。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1657404982}
+【使用指导】
 
-[[告警信息产生后，会进入告警信息消息队列进行发送，告警信息消息队列的长度决定了队列最多可以存储的告警信息的数目。当告警信息队列达到设定长度后，最新生成的告警信息会进入消息队列，最早产生的告警信息被丢弃。]{style="font-family:宋体"}]{#struct_0_x1400_15709_x1781771736}
+告警信息产生后，会进入告警信息消息队列进行发送，告警信息消息队列的长度决定了队列最多可以存储的告警信息的数目。当告警信息队列达到设定长度后，最新生成的告警信息会进入消息队列，最早产生的告警信息被丢弃。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_584731057}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x2125319428}[设置发送告警信息的消息队列最多可以存储]{style="font-family:宋体"}[200]{lang="EN-US"}[条告警信息。]{style="font-family:宋体"}
+\# 设置发送告警信息的消息队列最多可以存储200条告警信息。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_5860016}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent trap queue-size 200]{lang="EN-US"}
+Sysname snmp-agent trap queue-size 200
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1122631469}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **trap** **enable**]{lang="EN-US"}]{#struct_0_x1400_15709_1191815219}
+·**snmp-agent** **trap** **enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **target-host**]{lang="EN-US"}]{#struct_0_x1400_15709_x435899019}
+·**snmp-agent** **target-host**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **trap** **life**]{lang="EN-US"}]{#struct_0_x1400_15709_1733217808}
-:::
-
-::: {#-1402084142 .myid}
-[]{#_Toc404796966}[]{#struct_0_x1400_15709_x241911925}
+·**snmp-agent** **trap** **life**
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent usm-user { v1 \| v2c }**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**[ **usm-user** { **v1** \| **v2c** }]{lang="EN-US"}]{#struct_0_x1400_15709_x1609660852}[命令用来为]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[组添加新用户。]{style="font-family:宋体"}
+**[snmp-agent**[ **usm-user** { **v1** \| **v2c** }]]命令用来为SNMP组添加新用户。
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **usm-user** { **v1** \| **v2c** }]{lang="EN-US"}]{#struct_0_x1400_15709_2025234010}[命令用来删除]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[组的用户。]{style="font-family:宋体"}
+**[undo**[ **snmp-agent** **usm-user** { **v1** \| **v2c** }]]命令用来删除SNMP组的用户。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1840163662}
+【命令】
 
-[**[snmp-agent]{lang="EN-US"}**[ **usm-user** { **v1** \| **v2c** } *user-name* *group-name* \[ **acl** { *acl-number \|* **name** *acl-name* } \| **acl** **ipv6** { *ipv6-acl-number* \| **name** *ipv6-acl-name* } \] \*]{lang="EN-US"}]{#struct_0_x1400_15709_1460159253}
+**[snmp-agent**[ **usm-user** { **v1** \| **v2c** } *user-name* *group-name* [ **acl** { *acl-number \|* **name** *acl-name* } \| **acl** **ipv6** { *ipv6-acl-number* \| **name** *ipv6-acl-name* } ] \*]]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **usm-user** { **v1** \| **v2c** } *user-name* ]{lang="EN-US"}]{#struct_0_x1400_15709_319234933}
+**[undo**[ **snmp-agent** **usm-user** { **v1** \| **v2c** } *user-name* ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1300154794}
+【缺省情况】
 
-[[设备上没有配置]{style="font-family:宋体"}[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_1088194114}[用户。]{style="font-family:宋体"}
+设备上没有配置SNMP用户。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1733283344}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_914917883}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1553463658}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1663062576}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_935989804}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1934563203}
+【参数】
 
-[**[v1]{lang="EN-US"}**]{#struct_0_x1400_15709_990183487}[：表示配置的用户名适用于]{style="font-family:宋体"}[SNMPv1]{lang="EN-US"}[组网环境。]{style="font-family:宋体"}
+**[v1**]：表示配置的用户名适用于SNMPv1组网环境。
 
-[**[v2c]{lang="EN-US"}**]{#struct_0_x1400_15709_1325798635}[：表示配置的用户名适用于]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[组网环境。]{style="font-family:宋体"}
+**[v2c**]：表示配置的用户名适用于SNMPv2c组网环境。
 
-[*[user-name]{lang="EN-US"}*]{#struct_0_x1400_15709_1733348880}[：用户名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[user-name*]：用户名，为1～32个字符的字符串，区分大小写。
 
-[*[group-name]{lang="EN-US"}*]{#struct_0_x1400_15709_x291784179}[：该用户对应的组名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[group-name*]：该用户对应的组名，为1～32个字符的字符串，区分大小写。
 
-[**[acl]{lang="EN-US"}**[ *acl-number*]{lang="EN-US"}]{#struct_0_x1400_15709_x370870093}[：将用户与基本]{style="font-family:宋体"}[ACL]{lang="EN-US"}[绑定，]{style="font-family:宋体"}*[acl-number]{lang="EN-US"}*[表示访问列表号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[2999]{lang="EN-US"}[。当未引用]{style="font-family:宋体"}[ACL]{lang="EN-US"}[或者引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[不存在时，允许所有]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当]{style="font-family:宋体"}[ACL]{lang="EN-US"}[为空时，会禁止所有的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[非空时，则只有]{style="font-family:宋体"}[ACL]{lang="EN-US"}[中]{style="font-family:宋体"}[permit]{lang="EN-US"}[的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[才能访问设备，其它]{style="font-family:宋体"}[NMS]{lang="EN-US"}[不允许访问设备，以免非法]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备。]{style="font-family:宋体"}
+**[acl** *acl-number*]：将用户与基本ACL绑定，*acl-number*表示访问列表号，取值范围为2000～2999。当未引用ACL或者引用的ACL不存在时，允许所有NMS访问设备；当ACL为空时，会禁止所有的NMS访问设备；当引用的ACL非空时，则只有ACL中permit的NMS才能访问设备，其它NMS不允许访问设备，以免非法NMS访问设备。
 
-[**[name]{lang="EN-US"}***[ acl-name]{lang="EN-US"}*]{#struct_0_x1400_15709_x1204425433}[：将团体名与基本]{style="font-family:宋体"}[ACL]{lang="EN-US"}[名绑定，]{style="font-family:宋体"}*[acl-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。当未引用]{style="font-family:宋体"}[ACL]{lang="EN-US"}[或者引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[不存在时，允许所有]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当]{style="font-family:宋体"}[ACL]{lang="EN-US"}[为空时，会禁止所有的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[非空时，则只有]{style="font-family:宋体"}[ACL]{lang="EN-US"}[中]{style="font-family:宋体"}[permit]{lang="EN-US"}[的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[才能访问设备，其它]{style="font-family:宋体"}[NMS]{lang="EN-US"}[不允许访问设备，以免非法]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备。关于]{style="font-family:宋体"}[ACL]{lang="EN-US"}[的详细描述和介绍请参见"]{style="font-family:宋体"}[ACL]{lang="EN-US"}[和]{style="font-family:宋体"}[QoS]{lang="EN-US"}[配置指导"中的"]{style="font-family:宋体"}[ACL]{lang="EN-US"}["。]{style="font-family:宋体"}
+**[name*** acl-name*]：将团体名与基本ACL名绑定，*acl-name*为1～63个字符的字符串，不区分大小写。当未引用ACL或者引用的ACL不存在时，允许所有NMS访问设备；当ACL为空时，会禁止所有的NMS访问设备；当引用的ACL非空时，则只有ACL中permit的NMS才能访问设备，其它NMS不允许访问设备，以免非法NMS访问设备。关于ACL的详细描述和介绍请参见"ACL和QoS配置指导"中的"ACL"。
 
-[**[acl]{lang="EN-US"}**[ **ipv6** *ipv6-acl-number*]{lang="EN-US"}]{#struct_0_x1400_15709_x442957046}[：将用户与基本]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[绑定，]{style="font-family:宋体"}*[ipv6-acl-number]{lang="EN-US"}*[表示访问列表号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[2999]{lang="EN-US"}[。当未引用]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[或者引用的]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[不存在时，允许所有]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[为空时，会禁止]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当引用的]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[非空时，则只有]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[中]{style="font-family:宋体"}[permit]{lang="EN-US"}[的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[才能访问设备，其它]{style="font-family:宋体"}[NMS]{lang="EN-US"}[不允许访问设备，以免非法]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备。]{style="font-family:宋体"}
+**[acl** **ipv6** *ipv6-acl-number*]：将用户与基本IPv6 ACL绑定，*ipv6-acl-number*表示访问列表号，取值范围为2000～2999。当未引用IPv6 ACL或者引用的IPv6 ACL不存在时，允许所有NMS访问设备；当IPv6 ACL为空时，会禁止NMS访问设备；当引用的IPv6 ACL非空时，则只有IPv6 ACL中permit的NMS才能访问设备，其它NMS不允许访问设备，以免非法NMS访问设备。
 
-[**[name]{lang="EN-US"}***[ ipv6-acl-name]{lang="EN-US"}*]{#struct_0_x1400_15709_1731736030}[：将团体名与基本]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[名绑定，]{style="font-family:宋体"}*[acl-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。当未引用]{style="font-family:宋体"}[ACL]{lang="EN-US"}[或者引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[不存在时，允许所有]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当]{style="font-family:宋体"}[ACL]{lang="EN-US"}[为空时，会禁止所有的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[非空时，则只有]{style="font-family:宋体"}[ACL]{lang="EN-US"}[中]{style="font-family:宋体"}[permit]{lang="EN-US"}[的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[才能访问设备，其它]{style="font-family:宋体"}[NMS]{lang="EN-US"}[不允许访问设备，以免非法]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备。]{style="font-family:宋体"}
+**[name*** ipv6-acl-name*]：将团体名与基本IPv6 ACL名绑定，*acl-name*为1～63个字符的字符串，不区分大小写。当未引用ACL或者引用的ACL不存在时，允许所有NMS访问设备；当ACL为空时，会禁止所有的NMS访问设备；当引用的ACL非空时，则只有ACL中permit的NMS才能访问设备，其它NMS不允许访问设备，以免非法NMS访问设备。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1880831320}
+【使用指导】
 
-[[FIPS]{lang="EN-US"}]{#struct_0_x1400_15709_x1573982819}[模式下，不支持本命令。]{style="font-family:宋体"}
+FIPS模式下，不支持本命令。
 
-[[SNMPv1]{lang="EN-US"}]{#struct_0_x1400_15709_x1459854575}[和]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[组网应用中]{style="font-family:宋体"}[NMS]{lang="EN-US"}[和]{style="font-family:宋体"}[Agent]{lang="EN-US"}[之间使用团体名来认证，]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[组网应用中使用用户名来认证。]{style="font-family:宋体"}
+SNMPv1和SNMPv2c组网应用中NMS和Agent之间使用团体名来认证，SNMPv3组网应用中使用用户名来认证。
 
-[[设备支持配置]{style="font-family:宋体"}[SNMPv1]{lang="EN-US"}]{#struct_0_x1400_15709_x843450172}[和]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[用户以供习惯用户名配置方式的用户。创建一个]{style="font-family:宋体"}[SNMPv1]{lang="EN-US"}[或]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[用户相当于添加一个新的团体名，其读写属性依赖于用户所在组的读、写、通知视图配置。]{style="font-family:宋体"}
+设备支持配置SNMPv1和SNMPv2c用户以供习惯用户名配置方式的用户。创建一个SNMPv1或SNMPv2c用户相当于添加一个新的团体名，其读写属性依赖于用户所在组的读、写、通知视图配置。
 
-[[要使配置的用户生效，必须先创建]{style="font-family:宋体"}[SNMP]{lang="EN-US"}]{#struct_0_x1400_15709_x1903685293}[组。]{style="font-family:宋体"}
+要使配置的用户生效，必须先创建SNMP组。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1733414416}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x677166549}[在]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[组]{style="font-family:宋体"}[readCom]{lang="EN-US"}[里创建]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[用户]{style="font-family:宋体"}[userv2c]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在SNMP组readCom里创建SNMPv2c用户userv2c。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_1468120473}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent sys-info version v2c]{lang="EN-US"}
+Sysname snmp-agent sys-info version v2c
 
-[\[Sysname\] snmp-agent group v2c readCom]{lang="EN-US"}
+Sysname snmp-agent group v2c readCom
 
-[\[Sysname\] snmp-agent usm-user v2c userv2c readCom]{lang="EN-US"}
+Sysname snmp-agent usm-user v2c userv2c readCom
 
-[[如果]{style="font-family:宋体"}[NMS]{lang="EN-US"}]{#struct_0_x1400_15709_x1045408848}[需要访问]{style="font-family:宋体"}[Agent]{lang="EN-US"}[，则应将]{style="font-family:宋体"}[NMS]{lang="EN-US"}[的版本号指定为]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[，]{style="font-family:宋体"}[Read community]{lang="EN-US"}[选项填写为]{style="font-family:宋体"}[userv2c]{lang="EN-US"}[。]{style="font-family:宋体"}
+如果NMS需要访问Agent，则应将NMS的版本号指定为SNMPv2c，Read community选项填写为userv2c。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_1531069268}[在]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[组]{style="font-family:宋体"}[readCom]{lang="EN-US"}[里创建]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[用户]{style="font-family:宋体"}[userv2c]{lang="EN-US"}[，并且只允许]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1.1.1.1]{lang="EN-US"}[的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[使用该用户名访问]{style="font-family:宋体"}[Agent]{lang="EN-US"}[，禁止其它]{style="font-family:宋体"}[NMS]{lang="EN-US"}[使用该用户名访问。]{style="font-family:宋体"}
+\# 在SNMP组readCom里创建SNMPv2c用户userv2c，并且只允许IP地址为1.1.1.1的NMS使用该用户名访问Agent，禁止其它NMS使用该用户名访问。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_1733479952}
+\<Sysname\> system-view
 
-[\[Sysname\] acl basic 2001]{lang="EN-US"}
+Sysname acl basic 2001
 
-[\[Sysname-acl-ipv4-basic-2001\] rule permit source 1.1.1.1 0.0.0.0]{lang="EN-US"}
+Sysname-acl-ipv4-basic-2001 rule permit source 1.1.1.1 0.0.0.0
 
-[\[Sysname-acl-ipv4-basic-2001\] rule deny source any]{lang="EN-US"}
+Sysname-acl-ipv4-basic-2001 rule deny source any
 
-[\[Sysname-acl-ipv4-basic-2001\] quit]{lang="EN-US"}
+Sysname-acl-ipv4-basic-2001 quit
 
-[\[Sysname\] snmp-agent sys-info version v2c]{lang="EN-US"}
+Sysname snmp-agent sys-info version v2c
 
-[\[Sysname\] snmp-agent group v2c readCom]{lang="EN-US"}
+Sysname snmp-agent group v2c readCom
 
-[\[Sysname\] snmp-agent usm-user v2c userv2c readCom acl 2001]{lang="EN-US"}
+Sysname snmp-agent usm-user v2c userv2c readCom acl 2001
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_361134223}[在]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[组]{style="font-family:宋体"}[readCom]{lang="EN-US"}[里创建]{style="font-family:宋体"}[SNMPv2c]{lang="EN-US"}[用户]{style="font-family:宋体"}[userv2c]{lang="EN-US"}[，并且只允许]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[1.1.1.2]{lang="EN-US"}[的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[使用该用户名访问]{style="font-family:宋体"}[Agent]{lang="EN-US"}[，禁止其它]{style="font-family:宋体"}[NMS]{lang="EN-US"}[使用该用户名访问。]{style="font-family:宋体"}
+\# 在SNMP组readCom里创建SNMPv2c用户userv2c，并且只允许IP地址为1.1.1.2的NMS使用该用户名访问Agent，禁止其它NMS使用该用户名访问。
 
-[[\[Sysname\] acl basic name testacl]{lang="EN-US"}]{#struct_0_x1400_15709_339350284}
+Sysname acl basic name testacl
 
-[\[Sysname-acl-ipv4-basic-testacl\] rule permit source 1.1.1.2 0.0.0.0]{lang="EN-US"}
+Sysname-acl-ipv4-basic-testacl rule permit source 1.1.1.2 0.0.0.0
 
-[\[Sysname-acl-ipv4-basic-testacl\] rule deny source any]{lang="EN-US"}
+Sysname-acl-ipv4-basic-testacl rule deny source any
 
-[\[Sysname-acl-ipv4-basic-testacl\] quit]{lang="EN-US"}
+Sysname-acl-ipv4-basic-testacl quit
 
-[\[Sysname\] snmp-agent sys-info version v2c]{lang="EN-US"}
+Sysname snmp-agent sys-info version v2c
 
-[\[Sysname\] snmp-agent group v2c readCom]{lang="EN-US"}
+Sysname snmp-agent group v2c readCom
 
-[\[Sysname\] snmp-agent usm-user v2c userv2c readCom acl name testacl]{lang="EN-US"}
+Sysname snmp-agent usm-user v2c userv2c readCom acl name testacl
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1651195929}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **group**]{lang="EN-US"}]{#struct_0_x1400_15709_199417324}
+·**snmp-agent** **group**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **community**]{lang="EN-US"}]{#struct_0_x1400_15709_x143394111}
+·**snmp-agent** **community**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[dispaly snmp-agent]{lang="EN-US"}**[ **community**]{lang="EN-US"}]{#struct_0_x1400_15709_x661111166}
-:::
-
-::: {#772646335 .myid}
-[]{#_Toc404796967}[]{#struct_0_x1400_15709_x648833703}
+·**dispaly snmp-agent** **community**
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent usm-user v3**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**[ **usm-user** **v3**]{lang="EN-US"}]{#struct_0_x1400_15709_x1671652042}[命令用来创建]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[用户。]{style="font-family:宋体"}
+**[snmp-agent** **usm-user** **v3**]命令用来创建SNMPv3用户。
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **usm-user** **v3**]{lang="EN-US"}]{#struct_0_x1400_15709_x1138957494}[命令用来删除]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[用户。]{style="font-family:宋体"}
+**[undo** **snmp-agent** **usm-user** **v3**]命令用来删除SNMPv3用户。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1733545488}
+【命令】
 
-[[非]{style="font-family:宋体"}[FIPS]{lang="EN-US"}]{#struct_0_x1400_15709_887016824}[模式下：]{style="font-family:宋体"}
+非FIPS模式下：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VACM]{lang="EN-US"}]{#struct_0_x1400_15709_39029087}[方式：]{lang="EN-US" style="font-family:宋体"}
+·VACM方式：
 
-[**[snmp-agent]{lang="EN-US"}**[ **usm-user** **v3** *user-name* *group-name* \[ **remote** { *ip-address* \| **ipv6** *ipv6-address* } \[ **vpn-instance** *vpn-instance-name* \] \] \[ { **cipher** \| **simple** } **authentication-mode** { **md5** \| **sha** } *auth-password* \[ **privacy-mode** { **aes128** \| **3des** \| **des56** } *priv-password* \] \] \[ **acl** { *acl-number \|* **name** *acl-name* } \| **acl** **ipv6** { *ipv6-acl-number* \| **name** *ipv6-acl-name* } \] \*]{lang="EN-US"}]{#struct_0_x1400_15709_x341399077}
+**[snmp-agent**[ **usm-user** **v3** *user-name* *group-name* [ **remote** { *ip-address* \| **ipv6** *ipv6-address* } [ **vpn-instance** *vpn-instance-name* ]   { **cipher** \| **simple** } **authentication-mode** { **md5** \| **sha** } *auth-password* [ **privacy-mode** { **aes128** \| **3des** \| **des56** } *priv-password* ]   **acl** { *acl-number \|* **name** *acl-name* } \| **acl** **ipv6** { *ipv6-acl-number* \| **name** *ipv6-acl-name* } ] \*]]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **usm-user** **v3** *user-name* { **local** \| **engineid** *engineid-string* \| **remote** { *ip-address* \| **ipv6** *ipv6-address* } \[ **vpn-instance** *vpn-instance-name* \] }]{lang="EN-US"}]{#struct_0_x1400_15709_x1910494617}
+**[undo**[ **snmp-agent** **usm-user** **v3** *user-name* { **local** \| **engineid** *engineid-string* \| **remote** { *ip-address* \| **ipv6** *ipv6-address* } [ **vpn-instance** *vpn-instance-name* ] }]]
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RBAC]{lang="EN-US"}]{#struct_0_x1400_15709_1641265340}[方式：]{lang="EN-US" style="font-family:宋体"}
+·RBAC方式：
 
-[**[snmp-agent]{lang="EN-US"}**[ **usm-user** **v3** *user-name* **user-role** *role-name* \[ **remote** { *ip-address* \| **ipv6** *ipv6-address* } \[ **vpn-instance** *vpn-instance-name* \] \] \[ { **cipher** \| **simple** } **authentication-mode** { **md5** \| **sha** } *auth-password* \[ **privacy-mode** { **aes128** \| **3des** **\| des56** } *priv-password* \] \] \[ **acl** { *acl-number \|* **name** *acl-name* } \| **acl** **ipv6** { *ipv6-acl-number* \| **name** *ipv6-acl-name* } \] \*]{lang="EN-US"}]{#struct_0_x1400_15709_2000610890}
+**[snmp-agent**[ **usm-user** **v3** *user-name* **user-role** *role-name* [ **remote** { *ip-address* \| **ipv6** *ipv6-address* } [ **vpn-instance** *vpn-instance-name* ]   { **cipher** \| **simple** } **authentication-mode** { **md5** \| **sha** } *auth-password* [ **privacy-mode** { **aes128** \| **3des** **\| des56** } *priv-password* ]   **acl** { *acl-number \|* **name** *acl-name* } \| **acl** **ipv6** { *ipv6-acl-number* \| **name** *ipv6-acl-name* } ] \*]]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **usm-user** **v3** *user-name* { **local** \| **engineid** *engineid-string* \| **remote** { *ip-address* \| **ipv6** *ipv6-address* } \[ **vpn-instance** *vpn-instance-name* \] }]{lang="EN-US"}]{#struct_0_x1400_15709_x2076829788}
+**[undo**[ **snmp-agent** **usm-user** **v3** *user-name* { **local** \| **engineid** *engineid-string* \| **remote** { *ip-address* \| **ipv6** *ipv6-address* } [ **vpn-instance** *vpn-instance-name* ] }]]
 
-[[FIPS]{lang="EN-US"}]{#struct_0_x1400_15709_1818122380}[模式下：]{style="font-family:宋体"}
+FIPS模式下：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VACM]{lang="EN-US"}]{#struct_0_x1400_15709_x1352619949}[方式：]{lang="EN-US" style="font-family:宋体"}
+·VACM方式：
 
-[**[snmp-agent]{lang="EN-US"}**[ **usm-user** **v3** *user-name* *group-name* \[ **remote** { *ip-address* \| **ipv6** *ipv6-address* } \[ **vpn-instance** *vpn-instance-name* \] \] { **cipher** \| **simple** } **authentication-mode** **sha** *auth-password* \[ **privacy-mode** **aes128** *priv-password* \] \[ **acl** { *acl-number \|* **name** *acl-name* } \| **acl** **ipv6** { *ipv6-acl-number* \| **name** *ipv6-acl-name* } \] \*]{lang="EN-US"}]{#struct_0_x1400_15709_x850388024}
+**[snmp-agent**[ **usm-user** **v3** *user-name* *group-name* [ **remote** { *ip-address* \| **ipv6** *ipv6-address* } [ **vpn-instance** *vpn-instance-name* ] ] { **cipher** \| **simple** } **authentication-mode** **sha** *auth-password*  **privacy-mode** **aes128** *priv-password*  [ **acl** { *acl-number \|* **name** *acl-name* } \| **acl** **ipv6** { *ipv6-acl-number* \| **name** *ipv6-acl-name* } ] \*]]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **usm-user** **v3** *user-name* { **local** \| **engineid** *engineid-string* \| **remote** { *ip-address* \| **ipv6** *ipv6-address* } \[ **vpn-instance** *vpn-instance-name* \] }]{lang="EN-US"}]{#struct_0_x1400_15709_1063098114}
+**[undo**[ **snmp-agent** **usm-user** **v3** *user-name* { **local** \| **engineid** *engineid-string* \| **remote** { *ip-address* \| **ipv6** *ipv6-address* } [ **vpn-instance** *vpn-instance-name* ] }]]
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RBAC]{lang="EN-US"}]{#struct_0_x1400_15709_38963551}[方式：]{style="font-family:宋体"}
+·RBAC方式：
 
-[**[snmp-agent]{lang="EN-US"}**[ **usm-user** **v3** *user-name* **user-role** *role-name* \[ **remote** { *ip-address* \| **ipv6** *ipv6-address* } \[ **vpn-instance** *vpn-instance-name* \] \] \[ { **cipher** \| **simple** } **authentication-mode**  **sha** *auth-password* \[ **privacy-mode** **aes128** *priv-password* \] \] \[ **acl** { *acl-number \|* **name** *acl-name* } \| **acl** **ipv6** { *ipv6-acl-number* \| **name** *ipv6-acl-name* } \] \*]{lang="EN-US"}]{#struct_0_x1400_15709_1369024126}
+**[snmp-agent**[ **usm-user** **v3** *user-name* **user-role** *role-name* [ **remote** { *ip-address* \| **ipv6** *ipv6-address* } [ **vpn-instance** *vpn-instance-name* ]   { **cipher** \| **simple** } **authentication-mode**  **sha** *auth-password* [ **privacy-mode** **aes128** *priv-password* ]   **acl** { *acl-number \|* **name** *acl-name* } \| **acl** **ipv6** { *ipv6-acl-number* \| **name** *ipv6-acl-name* } ] \*]]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **usm-user** **v3** *user-name* { **local** \| **engineid** *engineid-string* \| **remote** { *ip-address* \| **ipv6** *ipv6-address* } \[ **vpn-instance** *vpn-instance-name* \] }]{lang="EN-US"}]{#struct_0_x1400_15709_422716986}
+**[undo**[ **snmp-agent** **usm-user** **v3** *user-name* { **local** \| **engineid** *engineid-string* \| **remote** { *ip-address* \| **ipv6** *ipv6-address* } [ **vpn-instance** *vpn-instance-name* ] }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1239854835}
+【缺省情况】
 
-[[设备上没有配置]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}]{#struct_0_x1400_15709_1711751592}[用户。]{style="font-family:宋体"}
+设备上没有配置SNMPv3用户。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1733611024}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_x1844993989}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x183445480}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_71339001}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1219492703}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1530599763}
+【参数】
 
-[*[user-name]{lang="EN-US"}*]{#struct_0_x1400_15709_x1343683701}[：用户名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[user-name*]：用户名，为1～32个字符的字符串，区分大小写。
 
-[*[group-name]{lang="EN-US"}*]{#struct_0_x1400_15709_1175856157}[：该用户对应的组名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[group-name*]：该用户对应的组名，为1～32个字符的字符串，区分大小写。
 
-[**[user-role]{lang="EN-US"}**[ *role-name*]{lang="EN-US"}]{#struct_0_x1400_15709_x1899265306}[：该用户对应的角色名称，]{style="font-family:宋体"}*[role-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[user-role** *role-name*]：该用户对应的角色名称，*role-name*为1～63个字符的字符串，区分大小写。
 
-[**[remote]{lang="EN-US"}**[ { *ip-address* \| **ipv6** *ipv6-address* }]{lang="EN-US"}]{#struct_0_x1400_15709_x2139099228}[：接收]{style="font-family:宋体"}[Inform]{lang="EN-US"}[信息的目的主机的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址或者]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址，通常为]{style="font-family:宋体"}[NMS]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址或者]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址。当设备需要向目的主机发送]{style="font-family:宋体"}[SNMPv3 Inform]{lang="EN-US"}[报文时，该参数必须配置，还需要使用]{style="font-family:宋体"}**[snmp-agent]{lang="EN-US"}**[ **remote**]{lang="EN-US"}[命令将目的主机的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址或者]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址和引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[绑定。]{style="font-family:宋体"}
+**[remote**[ { *ip-address* \| **ipv6** *ipv6-address* }]]：接收Inform信息的目的主机的IP地址或者IPv6地址，通常为NMS的IP地址或者IPv6地址。当设备需要向目的主机发送SNMPv3 Inform报文时，该参数必须配置，还需要使用**snmp-agent** **remote**命令将目的主机的IP地址或者IPv6地址和引擎ID绑定。
 
-[**[vpn-instance]{lang="EN-US"}**[ *vpn-instance-name*]{lang="EN-US"}]{#struct_0_x1400_15709_1732627984}[：目的主机所属的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[。]{style="font-family:宋体"}*[vpn-instance-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果未指定本参数，则表示目的主机位于公网中。]{style="font-family:宋体"}
+**[vpn-instance** *vpn-instance-name*]：目的主机所属的VPN。*vpn-instance-name*表示MPLS L3VPN的VPN实例名称，为1～31个字符的字符串，区分大小写。如果未指定本参数，则表示目的主机位于公网中。
 
-[**[cipher]{lang="EN-US"}**]{#struct_0_x1400_15709_1314502415}[：以密文方式设置认证密码和加密密码。当使用]{style="font-family:宋体"}[16]{lang="EN-US"}[进制字符作为密文密码时可以使用]{style="font-family:宋体"}**[snmp-agent]{lang="EN-US"}**[ **calculate-password**]{lang="EN-US"}[命令来计算获得。]{style="font-family:宋体"}
+**[cipher**]：以密文方式设置认证密码和加密密码。当使用16进制字符作为密文密码时可以使用**snmp-agent** **calculate-password**命令来计算获得。
 
-[**[simple]{lang="EN-US"}**]{#struct_0_x1400_15709_543759181}[：以明文方式设置认证密码和加密密码。]{style="font-family:宋体"}
+**[simple**]：以明文方式设置认证密码和加密密码。
 
-[**[authentication-mode]{lang="EN-US"}**]{#struct_0_x1400_15709_560238562}[：指明安全模式为需要认证。]{style="font-family:宋体"}[MD5]{lang="EN-US"}[算法的计算速度比]{style="font-family:宋体"}[SHA]{lang="EN-US"}[算法快，而]{style="font-family:宋体"}[SHA]{lang="EN-US"}[算法的安全强度比]{style="font-family:宋体"}[MD5]{lang="EN-US"}[算法高。]{style="font-family:宋体"}
+**[authentication-mode**]：指明安全模式为需要认证。MD5算法的计算速度比SHA算法快，而SHA算法的安全强度比MD5算法高。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[md5]{lang="EN-US"}**]{#struct_0_x1400_15709_x349152755}[：指定认证协议为]{style="font-family:
-宋体"}[MD5]{lang="EN-US"}[。]{style="font-family:宋体"}[MD5]{lang="EN-US"}[的相关内容请参见"安全配置指导"中的"]{style="font-family:宋体"}[IPSec]{lang="EN-US"}["。]{style="font-family:宋体"}
+·**md5**：指定认证协议为MD5。MD5的相关内容请参见"安全配置指导"中的"IPSec"。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[sha]{lang="EN-US"}**]{#struct_0_x1400_15709_1136469906}[：指定认证协议为]{style="font-family:
-宋体"}[SHA-1]{lang="EN-US"}[。]{style="font-family:宋体"}[SHA]{lang="EN-US"}[的相关内容请参见"安全配置指导"中的"]{style="font-family:宋体"}[IPSec]{lang="EN-US"}["。]{style="font-family:宋体"}
+·**sha**：指定认证协议为SHA-1。SHA的相关内容请参见"安全配置指导"中的"IPSec"。
 
-[*[auth-password]{lang="EN-US"}*]{#struct_0_x1400_15709_x497531692}[：设置认证密码，区分大小写，具体如下。]{style="font-family:宋体"}
+*[auth-password*]：设置认证密码，区分大小写，具体如下。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[采用明文设置认证密码时：非]{style="font-family:宋体"}]{#struct_0_x1400_15709_1732693520}[FIPS]{lang="EN-US"}[模式下，认证密码的长度范围是]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[64]{lang="EN-US"}[个字符，]{style="font-family:宋体"}[FIPS]{lang="EN-US"}[模式下，认证密码的长度范围是]{style="font-family:宋体"}[15]{lang="EN-US"}[～]{style="font-family:宋体"}[64]{lang="EN-US"}[字符，密码元素的最少组合类型为]{style="font-family:宋体"}[4]{lang="EN-US"}[（必须包括数字、大写字母、小写字母以及特殊字符）。]{style="font-family:宋体"}
+·采用明文设置认证密码时：非FIPS模式下，认证密码的长度范围是1～64个字符，FIPS模式下，认证密码的长度范围是15～64字符，密码元素的最少组合类型为4（必须包括数字、大写字母、小写字母以及特殊字符）。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[采用密文设置认证密码时：对密文加密密码的要求请参见]{style="font-family:宋体"}]{#struct_0_x1400_15709_124815729}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:
-宋体"}1-13]{lang="EN-US"}](?772646335#_Ref316050483)[。]{style="font-family:
-宋体"}
+·采用密文设置认证密码时：对密文加密密码的要求请参见[表]1-13(?772646335#_Ref316050483)。
 
-[]{#struct_0_x1400_15709_x1002898263}[[表1-13 ]{lang="EN-US"}[密文方式认证密码描述表]{style="font-family:
-黑体"}]{#_Ref316050483}
+表1-13 密文方式认证密码描述表
 
-[]{#table_struct_0_1597387429}[[认证算法]{style="font-family:黑体"}]{#struct_0_x1400_15709_x476538905}
-:::
+认证算法
 
-[[16]{lang="EN-US"}]{#struct_0_x1400_15709_875912584}[进制格式的认证密码长度]{style="font-family:黑体"}
+16进制格式的认证密码长度
 
-[[非]{style="font-family:黑体"}[16]{lang="EN-US"}]{#struct_0_x1400_15709_x1791297611}[进制格式的认证密码长度]{style="font-family:黑体"}
+非16进制格式的认证密码长度
 
-[[md5]{lang="EN-US"}]{#struct_0_x1400_15709_x1578091239}
+md5
 
-[[32]{lang="EN-US"}]{#struct_0_x1400_15709_1733152273}
+32
 
-[[53]{lang="EN-US"}]{#struct_0_x1400_15709_1657339446}
+53
 
-[[sha]{lang="EN-US"}]{#struct_0_x1400_15709_x1781639820}
+sha
 
-[[40]{lang="EN-US"}]{#struct_0_x1400_15709_x1978531456}
+40
 
-[[57]{lang="EN-US"}]{#struct_0_x1400_15709_x1829014774}
+57
 
-[ ]{lang="EN-US"}
+**[privacy-mode**]：表示安全模式为需要加密。加密算法的安全性由高到低依次是：AES、3DES、DES，安全性高的加密算法实现机制复杂，运算速度慢。
 
-[**[privacy-mode]{lang="EN-US"}**]{#struct_0_x1400_15709_2044669034}[：表示安全模式为需要加密。加密算法的安全性由高到低依次是：]{style="font-family:宋体"}[AES]{lang="EN-US"}[、]{style="font-family:宋体"}[3DES]{lang="EN-US"}[、]{style="font-family:宋体"}[DES]{lang="EN-US"}[，安全性高的加密算法实现机制复杂，运算速度慢。]{style="font-family:宋体"}
+·**aes128**：指定加密协议为AES（Advanced Encryption Standard，高级加密标准）。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[aes128]{lang="EN-US"}**]{#struct_0_x1400_15709_1733217809}[：指定加密协议为]{lang="EN-US" style="font-family:宋体"}[AES]{lang="EN-US"}[（]{lang="EN-US" style="font-family:宋体"}[Advanced Encryption Standard]{lang="EN-US"}[，高级加密标准）。]{lang="EN-US" style="font-family:宋体"}
+·**3des**：指定加密协议为3DES（Triple Data Encryption Standard，三重数据加密标准）。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[3des]{lang="EN-US"}**]{#struct_0_x1400_15709_38766943}[：指定加密协议为]{lang="EN-US" style="font-family:宋体"}[3DES]{lang="EN-US"}[（]{lang="EN-US" style="font-family:宋体"}[Triple Data Encryption Standard]{lang="EN-US"}[，三重数据加密标准）。]{lang="EN-US" style="font-family:宋体"}
+·**des56**：指定加密协议为DES（Data Encryption Standard，数据加密标准）。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[des56]{lang="EN-US"}**]{#struct_0_x1400_15709_x241977461}[：指定加密协议为]{lang="EN-US" style="font-family:宋体"}[DES]{lang="EN-US"}[（]{lang="EN-US" style="font-family:宋体"}[Data Encryption Standard]{lang="EN-US"}[，数据加密标准）。]{lang="EN-US" style="font-family:宋体"}
+*[priv-password*]：设置加密密码，区分大小写，具体如下。明文加密密码的长度范围是1～64；如果选择密文方式，对密文加密密码的要求请参见[表]1-14(?772646335#_Ref312070103)。
 
-[*[priv-password]{lang="EN-US"}*]{#struct_0_x1400_15709_x1999320410}[：设置加密密码，区分大小写，具体如下。明文加密密码的长度范围是]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[64]{lang="EN-US"}[；如果选择密文方式，对密文加密密码的要求请参见]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-14]{lang="EN-US"}](?772646335#_Ref312070103)[。]{style="font-family:宋体"}
+·采用明文方式设置加密密码时：非FIPS模式下，密码的长度范围是1～64个字符；FIPS模式下，加密密码的长度范围是15～64字符，密码元素的最少组合类型为4（必须包括数字、大写字母、小写字母以及特殊字符）。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[采用明文方式设置加密密码时：非]{style="font-family:宋体"}]{#struct_0_x1400_15709_251318869}[FIPS]{lang="EN-US"}[模式下，密码的长度范围是]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[64]{lang="EN-US"}[个字符；]{style="font-family:宋体"}[FIPS]{lang="EN-US"}[模式下，加密密码的长度范围是]{style="font-family:宋体"}[15]{lang="EN-US"}[～]{style="font-family:宋体"}[64]{lang="EN-US"}[字符，密码元素的最少组合类型为]{style="font-family:宋体"}[4]{lang="EN-US"}[（必须包括数字、大写字母、小写字母以及特殊字符）。]{style="font-family:宋体"}
+·采用密文方式设置加密密码时：对密文加密密码的要求请参见[表]1-14(?772646335#_Ref312070103)。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[采用密文方式设置加密密码时：对密文加密密码的要求请参见]{style="font-family:宋体"}]{#struct_0_x1400_15709_2033163555}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:
-宋体"}1-14]{lang="EN-US"}](?772646335#_Ref312070103)[。]{style="font-family:
-宋体"}
+表1-14 密文方式加密密码描述表
 
-[]{#struct_0_x1400_15709_1749751361}[[表1-14 ]{lang="EN-US"}[密文方式加密密码描述表]{style="font-family:
-黑体"}]{#_Ref312070103}
+认证算法
 
-[]{#table_struct_0_1355840709}[[认证算法]{style="font-family:黑体"}]{#struct_0_x1400_15709_1196931081}
+加密算法
 
-[[加密算法]{style="font-family:黑体"}]{#struct_0_x1400_15709_1175315187}
+16进制格式的认证密码长度
 
-[[16]{lang="EN-US"}]{#struct_0_x1400_15709_x1726639373}[进制格式的认证密码长度]{style="font-family:黑体"}
+非16进制格式的认证密码长度
 
-[[非]{style="font-family:黑体"}[16]{lang="EN-US"}]{#struct_0_x1400_15709_x157518107}[进制格式的认证密码长度]{style="font-family:黑体"}
+md5
 
-[[md5]{lang="EN-US"}]{#struct_0_x1400_15709_1733283345}
+aes128或des56
 
-[[aes128]{lang="EN-US"}]{#struct_0_x1400_15709_914983419}[或]{style="font-family:宋体"}[des56]{lang="EN-US"}
+32
 
-[[32]{lang="EN-US"}]{#struct_0_x1400_15709_495292401}
+53
 
-[[53]{lang="EN-US"}]{#struct_0_x1400_15709_x1570816936}
+3des
 
-[[3des]{lang="EN-US"}]{#struct_0_x1400_15709_39422303}
+64
 
-[[64]{lang="EN-US"}]{#struct_0_x1400_15709_39356767}
+73
 
-[[73]{lang="EN-US"}]{#struct_0_x1400_15709_38832478}
+sha
 
-[[sha]{lang="EN-US"}]{#struct_0_x1400_15709_x1831911357}
+aes128或des56
 
-[[aes128]{lang="EN-US"}]{#struct_0_x1400_15709_x1007110421}[或]{style="font-family:宋体"}[des56]{lang="EN-US"}
+40
 
-[[40]{lang="EN-US"}]{#struct_0_x1400_15709_1733348881}
+53
 
-[[53]{lang="EN-US"}]{#struct_0_x1400_15709_x291718643}
+3des
 
-[[3des]{lang="EN-US"}]{#struct_0_x1400_15709_39029086}
+80
 
-[[80]{lang="EN-US"}]{#struct_0_x1400_15709_38963550}
+73
 
-[[73]{lang="EN-US"}]{#struct_0_x1400_15709_38635870}
+**[acl** *acl-number*]：将用户与基本ACL绑定，*acl-number*表示访问列表号，取值范围为2000～2999。当未引用ACL或者引用的ACL不存在时，允许所有NMS访问设备；当ACL为空时，会禁止所有的NMS访问设备；当引用的ACL非空时，则只有ACL中permit的NMS才能访问设备，其它NMS不允许访问设备，以免非法NMS访问设备。
 
-[ ]{lang="EN-US"}
+**[name*** acl-name*]：将团体名与基本ACL名绑定，*acl-name*为1～63个字符的字符串，不区分大小写。当未引用ACL或者引用的ACL不存在时，允许所有NMS访问设备；当ACL为空时，会禁止所有的NMS访问设备；当引用的ACL非空时，则只有ACL中permit的NMS才能访问设备，其它NMS不允许访问设备，以免非法NMS访问设备。关于ACL的详细描述和介绍请参见"ACL和QoS配置指导"中的"ACL"。
 
-[**[acl]{lang="EN-US"}**[ *acl-number*]{lang="EN-US"}]{#struct_0_x1400_15709_x1081638548}[：将用户与基本]{style="font-family:宋体"}[ACL]{lang="EN-US"}[绑定，]{style="font-family:宋体"}*[acl-number]{lang="EN-US"}*[表示访问列表号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[2999]{lang="EN-US"}[。当未引用]{style="font-family:宋体"}[ACL]{lang="EN-US"}[或者引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[不存在时，允许所有]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当]{style="font-family:宋体"}[ACL]{lang="EN-US"}[为空时，会禁止所有的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[非空时，则只有]{style="font-family:宋体"}[ACL]{lang="EN-US"}[中]{style="font-family:宋体"}[permit]{lang="EN-US"}[的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[才能访问设备，其它]{style="font-family:宋体"}[NMS]{lang="EN-US"}[不允许访问设备，以免非法]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备。]{style="font-family:宋体"}
+**[acl** **ipv6** *ipv6-acl-number*]：将用户与基本IPv6 ACL绑定，*ipv6-acl-number*表示访问列表号，取值范围为2000～2999。当未引用IPv6 ACL或者引用的IPv6 ACL不存在时，允许所有NMS访问设备；当IPv6 ACL为空时，会禁止NMS访问设备；当引用的IPv6 ACL非空时，则只有IPv6 ACL中permit的NMS才能访问设备，其它NMS不允许访问设备，以免非法NMS访问设备。
 
-[**[name]{lang="EN-US"}***[ acl-name]{lang="EN-US"}*]{#struct_0_x1400_15709_361134224}[：将团体名与基本]{style="font-family:宋体"}[ACL]{lang="EN-US"}[名绑定，]{style="font-family:宋体"}*[acl-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。当未引用]{style="font-family:宋体"}[ACL]{lang="EN-US"}[或者引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[不存在时，允许所有]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当]{style="font-family:宋体"}[ACL]{lang="EN-US"}[为空时，会禁止所有的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[非空时，则只有]{style="font-family:宋体"}[ACL]{lang="EN-US"}[中]{style="font-family:宋体"}[permit]{lang="EN-US"}[的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[才能访问设备，其它]{style="font-family:宋体"}[NMS]{lang="EN-US"}[不允许访问设备，以免非法]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备。关于]{style="font-family:宋体"}[ACL]{lang="EN-US"}[的详细描述和介绍请参见"]{style="font-family:宋体"}[ACL]{lang="EN-US"}[和]{style="font-family:宋体"}[QoS]{lang="EN-US"}[配置指导"中的"]{style="font-family:宋体"}[ACL]{lang="EN-US"}["。]{style="font-family:宋体"}
+**[name*** ipv6-acl-name*]：将团体名与基本IPv6 ACL名绑定，*acl-name*为1～63个字符的字符串，不区分大小写。当未引用ACL或者引用的ACL不存在时，允许所有NMS访问设备；当ACL为空时，会禁止所有的NMS访问设备；当引用的ACL非空时，则只有ACL中permit的NMS才能访问设备，其它NMS不允许访问设备，以免非法NMS访问设备。
 
-[**[acl]{lang="EN-US"}**[ **ipv6** *ipv6-acl-number*]{lang="EN-US"}]{#struct_0_x1400_15709_893346218}[：将用户与基本]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[绑定，]{style="font-family:宋体"}*[ipv6-acl-number]{lang="EN-US"}*[表示访问列表号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[2999]{lang="EN-US"}[。当未引用]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[或者引用的]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[不存在时，允许所有]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[为空时，会禁止]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当引用的]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[非空时，则只有]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[中]{style="font-family:宋体"}[permit]{lang="EN-US"}[的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[才能访问设备，其它]{style="font-family:宋体"}[NMS]{lang="EN-US"}[不允许访问设备，以免非法]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备。]{style="font-family:宋体"}
+**[local**]：表示本地实体引擎。
 
-[**[name]{lang="EN-US"}***[ ipv6-acl-name]{lang="EN-US"}*]{#struct_0_x1400_15709_339350279}[：将团体名与基本]{style="font-family:宋体"}[IPv6 ACL]{lang="EN-US"}[名绑定，]{style="font-family:宋体"}*[acl-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，不区分大小写。当未引用]{style="font-family:宋体"}[ACL]{lang="EN-US"}[或者引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[不存在时，允许所有]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当]{style="font-family:宋体"}[ACL]{lang="EN-US"}[为空时，会禁止所有的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备；当引用的]{style="font-family:宋体"}[ACL]{lang="EN-US"}[非空时，则只有]{style="font-family:宋体"}[ACL]{lang="EN-US"}[中]{style="font-family:宋体"}[permit]{lang="EN-US"}[的]{style="font-family:宋体"}[NMS]{lang="EN-US"}[才能访问设备，其它]{style="font-family:宋体"}[NMS]{lang="EN-US"}[不允许访问设备，以免非法]{style="font-family:宋体"}[NMS]{lang="EN-US"}[访问设备。]{style="font-family:宋体"}
+**[engineid** *engineid-string*]：指定与该用户相关联的引擎ID字符串，必须为偶数个十六进制数，十六进制数的个数为10～64。全0和全F均被认为是无效参数。由于SNMPv3版本的用户名、密文密码等都和引擎ID相关联，如果更改了引擎ID，则原引擎ID下配置的用户名、密码失效，更改后可以使用该参数将*engineid-string*指定为创建该用户时的本地引擎ID。
 
-[**[local]{lang="EN-US"}**]{#struct_0_x1400_15709_636622702}[：表示本地实体引擎。]{style="font-family:宋体"}
+【使用指导】
 
-[**[engineid]{lang="EN-US"}**[ *engineid-string*]{lang="EN-US"}]{#struct_0_x1400_15709_973235776}[：指定与该用户相关联的引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[字符串，必须为偶数个十六进制数，十六进制数的个数为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[64]{lang="EN-US"}[。全]{style="font-family:宋体"}[0]{lang="EN-US"}[和全]{style="font-family:宋体"}[F]{lang="EN-US"}[均被认为是无效参数。由于]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[版本的用户名、密文密码等都和引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[相关联，如果更改了引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[，则原引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[下配置的用户名、密码失效，更改后可以使用该参数将]{style="font-family:宋体"}*[engineid-string]{lang="EN-US"}*[指定为创建该用户时的本地引擎]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+SNMPv3用户与SNMP实体引擎相关联，缺省情况下，创建的SNMPv3用户与本地SNMP实体引擎相关联。使用**remote** *ip-address*参数创建与远端SNMP实体引擎关联的SNMP用户。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x1843341962}
+创建SNMPv3用户时，可以通过两种配置方式来控制用户访问的权限：
 
-[[SNMPv3]{lang="EN-US"}]{#struct_0_x1400_15709_1733414417}[用户与]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体引擎相关联，缺省情况下，创建的]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[用户与本地]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体引擎相关联。使用]{style="font-family:宋体"}**[remote]{lang="EN-US"}**[ *ip-address*]{lang="EN-US"}[参数创建与远端]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体引擎关联的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[用户。]{style="font-family:宋体"}
+·通过VACM方式配置的SNMP用户依附于SNMP组，创建用户时，请先创建组。否则，用户能够创建成功但是不生效。一个组可以包含多个用户。组定义了用户能够访问的SNMP对象（通过MIB视图来限定）以及是否进行认证和加密等，而认证和加密的具体算法和密码则是在创建用户时定义。
 
-[[创建]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}]{#struct_0_x1400_15709_38570334}[用户时，可以通过两种配置方式来控制用户访问的权限：]{style="font-family:宋体"}
+·通过RBAC方式配置的SNMP用户依附于用户角色，创建用户时，通过**user-role** *role-name*参数配置用户的角色。用户角色定义了SNMP用户能够访问的SNMP对象以及操作类型（通过**rule**规则来限定）。使用RBAC方式创建SNMP v3用户后，还可以使用**snmp-agent** **usm-user** **v3** **user-role**命令为该用户绑定更多的用户角色，最多可绑定64个用户角色。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[通过]{style="font-family:宋体"}]{#struct_0_x1400_15709_x677232085}[VACM]{lang="EN-US"}[方式配置的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[用户依附于]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[组，创建用户时，请先创建组。否则，用户能够创建成功但是不生效。一个组可以包含多个用户。组定义了用户能够访问的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[对象（通过]{style="font-family:宋体"}[MIB]{lang="EN-US"}[视图来限定）以及是否进行认证和加密等，而认证和加密的具体算法和密码则是在创建用户时定义。]{style="font-family:宋体"}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[通过]{lang="EN-US" style="font-family:宋体"}[RBAC]{lang="EN-US"}]{#struct_0_x1400_15709_1032501057}[方式配置的]{lang="EN-US" style="font-family:宋体"}[SNMP]{lang="EN-US"}[用户依附于用户角色，创建用户时，通过]{lang="EN-US" style="font-family:宋体"}**[user-role]{lang="EN-US"}**[ *role-name*]{lang="EN-US"}[参数配置用户的角色。用户角色定义了]{lang="EN-US" style="font-family:宋体"}[SNMP]{lang="EN-US"}[用户能够访问的]{lang="EN-US" style="font-family:宋体"}[SNMP]{lang="EN-US"}[对象以及操作类型（通过]{lang="EN-US" style="font-family:宋体"}**[rule]{lang="EN-US"}**[规则来限定）。使用]{lang="EN-US" style="font-family:宋体"}[RBAC]{lang="EN-US"}[方式创建]{lang="EN-US" style="font-family:宋体"}[SNMP v3]{lang="EN-US"}[用户后，还可以使用]{lang="EN-US" style="font-family:宋体"}**[snmp-agent]{lang="EN-US"}**[ **usm-user** **v3** **user-role**]{lang="EN-US"}[命令为该用户绑定更多的用户角色，最多可绑定]{lang="EN-US" style="font-family:宋体"}[64]{lang="EN-US"}[个用户角色。]{lang="EN-US" style="font-family:宋体"}
+·通过VACM方式配置SNMP用户时，当用户名相同，新配置会覆盖旧配置，以最后一次配置为准。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x1400_15709_x2058884342}
+·通过RBAC方式配置SNMP用户时，可以多次使用本命令为已创建的SNMPv3用户添加角色，若未配置其他参数，则其他配置不变，只添加角色；若同时配置其他参数（如认证方式），则为用户添加角色，同时修改其他配置。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[通过]{style="font-family:宋体"}]{#struct_0_x1400_15709_38766942}[VACM]{lang="EN-US"}[方式配置]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[用户时，当用户名相同，新配置会覆盖旧配置，以最后一次配置为准。]{style="font-family:宋体"}
+·以明文或密文方式设置的密码，均以密文方式保存在配置文件中。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[通过]{style="font-family:宋体"}]{#struct_0_x1400_15709_x1258817674}[RBAC]{lang="EN-US"}[方式配置]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[用户时，可以多次使用本命令为已创建的]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[用户添加角色，若未配置其他参数，则其他配置不变，只添加角色；若同时配置其他参数（如认证方式），则为用户添加角色，同时修改其他配置。]{style="font-family:宋体"}
+·NMS在访问设备时，必须输入明文密码，因此在创建用户时请牢记用户名以及对应的明文密码。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[以明文或密文方式设置的密码，均以密文方式保存在配置文件中。]{style="font-family:宋体"}]{#struct_0_x1400_15709_22303397}
+·RBAC配置方式要求NMS在访问Agent时，不仅需要授予NMS对MIB节点的访问权限，还要求团体名/用户名所绑定的用户角色具有执行相应操作的权限，而VACM方式只需通过控制MIB节点的访问权限即可，所以推荐使用RBAC配置方式，安全性更高。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NMS]{lang="EN-US"}]{#struct_0_x1400_15709_x1111411401}[在访问设备时，必须输入明文密码，因此在创建用户时请牢记用户名以及对应的明文密码。]{style="font-family:宋体"}
+【举例】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RBAC]{lang="EN-US"}]{#struct_0_x1400_15709_x2025053299}[配置方式要求]{style="font-family:宋体"}[NMS]{lang="EN-US"}[在访问]{style="font-family:宋体"}[Agent]{lang="EN-US"}[时，不仅需要授予]{style="font-family:宋体"}[NMS]{lang="EN-US"}[对]{style="font-family:宋体"}[MIB]{lang="EN-US"}[节点的访问权限，还要求团体名]{style="font-family:宋体"}[/]{lang="EN-US"}[用户名所绑定的用户角色具有执行相应操作的权限，而]{style="font-family:宋体"}[VACM]{lang="EN-US"}[方式只需通过控制]{style="font-family:宋体"}[MIB]{lang="EN-US"}[节点的访问权限即可，所以推荐使用]{style="font-family:宋体"}[RBAC]{lang="EN-US"}[配置方式，安全性更高。]{style="font-family:宋体"}
+VACM方式：
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_189878481}
+\# 为v3组testGroup加入一个用户testUser，安全级别为只认证不加密，认证协议为SHA-1，认证密码明文为123456TESTplat&!。
 
-[[VACM]{lang="EN-US"}]{#struct_0_x1400_15709_x247677732}[方式：]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_495069881}[为]{style="font-family:宋体"}[v3]{lang="EN-US"}[组]{style="font-family:宋体"}[testGroup]{lang="EN-US"}[加入一个用户]{style="font-family:宋体"}[testUser]{lang="EN-US"}[，安全级别为只认证不加密，认证协议为]{style="font-family:宋体"}[SHA-1]{lang="EN-US"}[，认证密码明文为]{style="font-family:宋体"}[123456TESTplat&!]{lang="EN-US"}[。]{style="font-family:宋体"}
+Sysname snmp-agent group v3 testGroup authentication
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_1733479953}
+Sysname snmp-agent usm-user v3 testUser testGroup simple authentication-mode sha 123456TESTplat&!
 
-[\[Sysname\] snmp-agent group v3 testGroup authentication]{lang="EN-US"}
+在NMS上将版本号设置为SNMPv3，并将用户名填写为testUser，认证协议设置为SHA-1，认证密码填写为123456TESTplat&!，建立连接，就可以对设备上缺省视图内的MIB对象进行访问了。
 
-[\[Sysname\] snmp-agent usm-user v3 testUser testGroup simple authentication-mode sha 123456TESTplat&!]{lang="EN-US"}
+\# 为v3组testGroup加入一个用户testUser，安全级别为认证和加密，认证协议为SHA-1、加密协议为AES，认证密码明文为123456TESTauth&!，加密密码明文为123456TESTencr&!。
 
-[[在]{style="font-family:宋体"}[NMS]{lang="EN-US"}]{#struct_0_x1400_15709_x1072872240}[上将版本号设置为]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[，并将用户名填写为]{style="font-family:宋体"}[testUser]{lang="EN-US"}[，认证协议设置为]{style="font-family:宋体"}[SHA-1]{lang="EN-US"}[，认证密码填写为]{style="font-family:宋体"}[123456TESTplat&!]{lang="EN-US"}[，建立连接，就可以对设备上缺省视图内的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象进行访问了。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_1572884795}[为]{style="font-family:宋体"}[v3]{lang="EN-US"}[组]{style="font-family:宋体"}[testGroup]{lang="EN-US"}[加入一个用户]{style="font-family:宋体"}[testUser]{lang="EN-US"}[，安全级别为认证和加密，认证协议为]{style="font-family:宋体"}[SHA-1]{lang="EN-US"}[、加密协议为]{style="font-family:宋体"}[AES]{lang="EN-US"}[，认证密码明文为]{style="font-family:宋体"}[123456TESTauth&!]{lang="EN-US"}[，加密密码明文为]{style="font-family:宋体"}[123456TESTencr&!]{lang="EN-US"}[。]{style="font-family:宋体"}
+Sysname snmp-agent group v3 testGroup privacy
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_x352778637}
+Sysname snmp-agent usm-user v3 testUser testGroup simple authentication-mode sha 123456TESTauth&! privacy-mode aes128 123456TESTencr&!
 
-[\[Sysname\] snmp-agent group v3 testGroup privacy]{lang="EN-US"}
+在NMS上将版本号设置为SNMPv3，并将用户名填写为testUser，认证协议设置为SHA-1，认证密码填写为123456TESTauth&!，加密协议设置为AES，加密密码填写为123456TESTencr&!，建立连接，就可以对设备上缺省视图内的MIB对象进行访问了。
 
-[\[Sysname\] snmp-agent usm-user v3 testUser testGroup simple authentication-mode sha 123456TESTauth&! privacy-mode aes128 123456TESTencr&!]{lang="EN-US"}
+\# 为v3组testGroup加入一个与IP为10.1.1.1的远端SNMP实体引擎相关联的SNMPv3用户remoteUser，安全级别为认证和加密，认证协议为SHA-1、加密协议为AES，认证密码明文为123456TESTauth&!，加密密码明文为123456TESTencr&!。
 
-[[在]{style="font-family:宋体"}[NMS]{lang="EN-US"}]{#struct_0_x1400_15709_81303431}[上将版本号设置为]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[，并将用户名填写为]{style="font-family:宋体"}[testUser]{lang="EN-US"}[，认证协议设置为]{style="font-family:宋体"}[SHA-1]{lang="EN-US"}[，认证密码填写为]{style="font-family:宋体"}[123456TESTauth&!]{lang="EN-US"}[，加密协议设置为]{style="font-family:宋体"}[AES]{lang="EN-US"}[，加密密码填写为]{style="font-family:宋体"}[123456TESTencr&!]{lang="EN-US"}[，建立连接，就可以对设备上缺省视图内的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象进行访问了。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_839678659}[为]{style="font-family:宋体"}[v3]{lang="EN-US"}[组]{style="font-family:宋体"}[testGroup]{lang="EN-US"}[加入一个与]{style="font-family:宋体"}[IP]{lang="EN-US"}[为]{style="font-family:宋体"}[10.1.1.1]{lang="EN-US"}[的远端]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体引擎相关联的]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[用户]{style="font-family:宋体"}[remoteUser]{lang="EN-US"}[，安全级别为认证和加密，认证协议为]{style="font-family:宋体"}[SHA-1]{lang="EN-US"}[、加密协议为]{style="font-family:宋体"}[AES]{lang="EN-US"}[，认证密码明文为]{style="font-family:宋体"}[123456TESTauth&!]{lang="EN-US"}[，加密密码明文为]{style="font-family:宋体"}[123456TESTencr&!]{lang="EN-US"}[。]{style="font-family:宋体"}
+Sysname snmp-agent remote 10.1.1.1 engineid 123456789A
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_x580691104}
+Sysname snmp-agent group v3 testGroup privacy
 
-[\[Sysname\] snmp-agent remote 10.1.1.1 engineid 123456789A]{lang="EN-US"}
+Sysname snmp-agent usm-user v3 remoteUser testGroup remote 10.1.1.1 simple authentication-mode sha 123456TESTauth&! privacy-mode aes128 123456TESTencr&!
 
-[\[Sysname\] snmp-agent group v3 testGroup privacy]{lang="EN-US"}
+RBAC方式：
 
-[\[Sysname\] snmp-agent usm-user v3 remoteUser testGroup remote 10.1.1.1 simple authentication-mode sha 123456TESTauth&! privacy-mode aes128 123456TESTencr&!]{lang="EN-US"}
+\# 创建一个新的SNMPv3用户testUser，角色为network-operator，安全级别为只认证不加密，认证协议为SHA-1，认证密码明文为123456TESTplat&!。
 
-[[RBAC]{lang="EN-US"}]{#struct_0_x1400_15709_38701406}[方式：]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_x1622989559}[创建一个新的]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[用户]{style="font-family:宋体"}[testUser]{lang="EN-US"}[，角色为]{style="font-family:宋体"}[network-operator]{lang="EN-US"}[，安全级别为只认证不加密，认证协议为]{style="font-family:宋体"}[SHA-1]{lang="EN-US"}[，认证密码明文为]{style="font-family:宋体"}[123456TESTplat&!]{lang="EN-US"}[。]{style="font-family:宋体"}
+Sysname snmp-agent usm-user v3 testUser user-role network-operator simple authentication-mode sha 123456TESTplat&!
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_1650834035}
+在NMS上将版本号设置为SNMPv3，并将用户名填写为testUser，认证协议设置为SHA-1，认证密码填写为123456TESTplat&!，建立连接，就可以对设备上所有MIB对象进行只读操作。
 
-[\[Sysname\] snmp-agent usm-user v3 testUser user-role network-operator simple authentication-mode sha 123456TESTplat&!]{lang="EN-US"}
+【相关命令】
 
-[[在]{style="font-family:宋体"}[NMS]{lang="EN-US"}]{#struct_0_x1400_15709_1737642399}[上将版本号设置为]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[，并将用户名填写为]{style="font-family:宋体"}[testUser]{lang="EN-US"}[，认证协议设置为]{style="font-family:宋体"}[SHA-1]{lang="EN-US"}[，认证密码填写为]{style="font-family:宋体"}[123456TESTplat&!]{lang="EN-US"}[，建立连接，就可以对设备上所有]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象进行只读操作。]{style="font-family:宋体"}
+·**display** **snmp-agent** **usm-user**
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1733545489}
+·**snmp-agent** **group**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **snmp-agent** **usm-user**]{lang="EN-US"}]{#struct_0_x1400_15709_887082360}
+·**snmp-agent** **calculate-password**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **group**]{lang="EN-US"}]{#struct_0_x1400_15709_1987691571}
+·**snmp-agent** **remote**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **calculate-password**]{lang="EN-US"}]{#struct_0_x1400_15709_x768349244}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **remote**]{lang="EN-US"}]{#struct_0_x1400_15709_39422302}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent]{lang="EN-US"}**[ **usm-user** **v3** **user-role**]{lang="EN-US"}]{#struct_0_x1400_15709_x853527595}
-
-::: {#1257770587 .myid}
-[]{#_Toc404796968}[]{#struct_0_x1400_15709_x1759329738}[]{#_Toc359338927}
+·**snmp-agent** **usm-user** **v3** **user-role**
 
 **SNMP \-- SNMP配置命令 \-- snmp-agent usm-user v3 user-role**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**[ **usm-user** **v3 user-role**]{lang="EN-US"}]{#struct_0_x1400_15709_1408873321}[命令用来为通过]{style="font-family:宋体"}[RBAC]{lang="EN-US"}[方式创建的]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[用户添加角色。]{style="font-family:宋体"}
+**[snmp-agent** **usm-user** **v3 user-role**]命令用来为通过RBAC方式创建的SNMPv3用户添加角色。
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **usm-user** **user-role**]{lang="EN-US"}]{#struct_0_x1400_15709_x199709111}[命令用来为]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[用户删除角色。]{style="font-family:宋体"}
+**[undo** **snmp-agent** **usm-user** **user-role**]命令用来为SNMPv3用户删除角色。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_x135328554}
+【命令】
 
-[**[snmp-agent]{lang="EN-US"}**[ **usm-user** **v3** *user-name* **user-role** *role-name*]{lang="EN-US"}]{#struct_0_x1400_15709_372279055}
+**[snmp-agent** **usm-user** **v3** *user-name* **user-role** *role-name*]
 
-[**[undo]{lang="EN-US"}**[ **snmp-agent** **usm-user** **v3** *user-name* **user-role** *role-name*]{lang="EN-US"}]{#struct_0_x1400_15709_387984259}
+**[undo** **snmp-agent** **usm-user** **v3** *user-name* **user-role** *role-name*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1400_15709_646386762}
+【缺省情况】
 
-[[设备上没有配置通过]{style="font-family:宋体"}[RBAC]{lang="EN-US"}]{#struct_0_x1400_15709_1679714190}[方式创建的]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[用户。]{style="font-family:宋体"}
+设备上没有配置通过RBAC方式创建的SNMPv3用户。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1400_15709_39356766}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1400_15709_1386159080}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1400_15709_539576078}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1400_15709_x1205647288}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1400_15709_477704724}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1226270470}
+【参数】
 
-[*[user-name]{lang="EN-US"}*]{#struct_0_x1400_15709_591148067}[：用户名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[user-name*]：用户名，为1～32个字符的字符串，区分大小写。
 
-[**[user-role ]{lang="EN-US"}***[role-name]{lang="EN-US"}*]{#struct_0_x1400_15709_1466299562}[：该用户对应的角色名称**，**]{style="font-family:宋体"}*[role-name]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[user-role ***role-name*]：该用户对应的角色名称**，***role-name*为1～63个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1400_15709_287253459}
+【使用指导】
 
-[[一个]{style="font-family:宋体"}[RBAC]{lang="EN-US"}]{#struct_0_x1400_15709_280361740}[方式配置的]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[用户可配置多个用户角色。用户可以通过本命令来为通过]{style="font-family:宋体"}[RBAC]{lang="EN-US"}[方式创建的]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[用户添加与删除角色，最多可以配置]{style="font-family:宋体"}[64]{lang="EN-US"}[个有效的用户角色且至少保留一个用户角色。]{style="font-family:宋体"}
+一个RBAC方式配置的SNMPv3用户可配置多个用户角色。用户可以通过本命令来为通过RBAC方式创建的SNMPv3用户添加与删除角色，最多可以配置64个有效的用户角色且至少保留一个用户角色。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1400_15709_1368487292}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1400_15709_1179288460}[已创建]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[用户]{style="font-family:宋体"}[testUser]{lang="EN-US"}[拥有]{style="font-family:宋体"}[network-operato]{lang="EN-US"}[用户角色，现为用户]{style="font-family:宋体"}[testUser]{lang="EN-US"}[添加]{style="font-family:宋体"}[network-admin]{lang="EN-US"}[用户角色。]{style="font-family:宋体"}
+\# 已创建SNMPv3用户testUser拥有network-operato用户角色，现为用户testUser添加network-admin用户角色。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1400_15709_38898021}
+\<Sysname\> system-view
 
-[\[Sysname\] snmp-agent usm-user v3 testUser user-role network-admin]{lang="EN-US"}
+Sysname snmp-agent usm-user v3 testUser user-role network-admin
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1400_15709_305495605}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[snmp-agent usm-user v]{lang="EN-US"}**]{#struct_0_x1400_15709_1526357963}**[3]{lang="EN-US"}**
+·**snmp-agent usm-user v****3**
 
-[ ]{lang="EN-US"}
-:::

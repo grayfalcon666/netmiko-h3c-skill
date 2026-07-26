@@ -1,4745 +1,4396 @@
-::: {#-275634315 .myid}
-[]{#_Toc293559741}[]{#_Toc404797953}[]{#struct_0_x1068_x9952_x1988512502}[]{#_Toc339972636}
 
 **TRILL \-- TRILL配置命令 \-- auto-cost enable**
 
 ------------------------------------------------------------------------
 
-[**[auto-cost]{lang="EN-US"}**[ **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_73982160}[命令用来开启]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[端口链路开销值的自动计算功能。]{style="font-family:宋体"}
+**[auto-cost** **enable**]命令用来开启TRILL端口链路开销值的自动计算功能。
 
-[**[undo]{lang="EN-US"}**[ **auto-cost** **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_1168781662}[命令用来关闭]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[端口链路开销值的自动计算功能。]{style="font-family:宋体"}
+**[undo** **auto-cost** **enable**]命令用来关闭TRILL端口链路开销值的自动计算功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1363658764}
+【命令】
 
-[**[auto-cost]{lang="EN-US"}**[ **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_x791413854}
+**[auto-cost** **enable**]
 
-[**[undo]{lang="EN-US"}**[ **auto-cost** **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1968388008}
+**[undo** **auto-cost** **enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x201195531}
+【缺省情况】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_2027698149}[端口链路开销值的自动计算功能处于开启状态。]{style="font-family:宋体"}
+TRILL端口链路开销值的自动计算功能处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1241592707}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_1715386417}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x910168452}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_631535343}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1398109907}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x791086174}
+【使用指导】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1995043211}[端口的链路开销可以由系统自动计算或用户手工配置，其中手工配置优先，即：只要进行了手工配置，就取手工配置值；如果没有进行手工配置，若开启了自动计算功能则取自动计算值，若关闭了自动计算功能则取缺省值]{style="font-family:宋体"}[2000]{lang="EN-US"}[。]{style="font-family:宋体"}
+TRILL端口的链路开销可以由系统自动计算或用户手工配置，其中手工配置优先，即：只要进行了手工配置，就取手工配置值；如果没有进行手工配置，若开启了自动计算功能则取自动计算值，若关闭了自动计算功能则取缺省值2000。
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_2075010780}[端口链路开销值自动计算的公式如下：链路开销值＝]{style="font-family:宋体"}[20000000000000]{lang="EN-US"}[÷端口波特率。]{style="font-family:宋体"}
+TRILL端口链路开销值自动计算的公式如下：链路开销值＝20000000000000÷端口波特率。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_37431422}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x2025502046}[关闭]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[端口链路开销值的自动计算功能。]{style="font-family:宋体"}
+\# 关闭TRILL端口链路开销值的自动计算功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x1508657858}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] undo auto-cost enable]{lang="EN-US"}
+Sysname-trill undo auto-cost enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1471125289}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[trill]{lang="EN-US"}**[ **cost**]{lang="EN-US"}]{#struct_0_x1068_x9952_759754722}
-:::
-
-::: {#1263346545 .myid}
-[]{#_Toc404797954}[]{#struct_0_x1068_x9952_x1833061572}
+·**trill** **cost**
 
 **TRILL \-- TRILL配置命令 \-- display trill adjacent-table**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **trill** **adjacent-table**]{lang="EN-US"}]{#struct_0_x1068_x9952_x791020638}[命令用来显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[邻接表信息。]{style="font-family:宋体"}
+**[display** **trill** **adjacent-table**]命令用来显示TRILL邻接表信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1222367933}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **trill** **adjacent-table** \[ **count** \| **nickname** *nickname* **interface** *interface-type* *interface-number* \]]{lang="EN-US"}]{#struct_0_x1068_x9952_x2013064893}
+**[display**[ **trill** **adjacent-table** [ **count** \| **nickname** *nickname* **interface** *interface-type* *interface-number* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_444420191}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x1619942479}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x2104831601}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_160383336}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x1073435060}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1747766894}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x791217246}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x2026202599}
+【参数】
 
-[**[count]{lang="EN-US"}**]{#struct_0_x1068_x9952_1591136021}[：显示表项的数量。]{style="font-family:宋体"}
+**[count**]：显示表项的数量。
 
-[**[nickname]{lang="EN-US"}**[ *nickname*]{lang="EN-US"}[ **interface** *interface-type* *interface-number*]{lang="EN-US"}]{#struct_0_x1068_x9952_467222981}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[RB]{lang="EN-US"}[指定端口上的信息。]{style="font-family:宋体"}*[nickname]{lang="EN-US"}*[表示]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[，为]{style="font-family:宋体"}[0x1]{lang="EN-US"}[～]{style="font-family:宋体"}[0xFFFE]{lang="EN-US"}[的十六进制数；]{style="font-family:宋体"}*[interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}[为端口类型和端口编号。如果未指定本参数，将显示所有]{style="font-family:宋体"}[RB]{lang="EN-US"}[所有端口上的信息。]{style="font-family:宋体"}
+**[nickname** *nickname* **interface** *interface-type* *interface-number*]：显示指定RB指定端口上的信息。*nickname*表示RB的Nickname，为0x1～0xFFFE的十六进制数；*interface-type* *interface-number*为端口类型和端口编号。如果未指定本参数，将显示所有RB所有端口上的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1865217578}
+【举例】
 
-[]{#_Ref189458167}[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_1472843295}[显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[邻接表所有表项的信息。]{style="font-family:宋体"}
+\# 显示TRILL邻接表所有表项的信息。
 
-[[\<Sysname\> display trill adjacent-table]{lang="EN-US"}]{#struct_0_x1068_x9952_x791151710}
+\<Sysname\> display trill adjacent-table
 
-[NextHop     MAC address       Interface]{lang="EN-US"}
+NextHop     MAC address       Interface
 
-[0x899b      00e0-fc58-123a    GE1/0/1]{lang="EN-US"}
+0x899b      00e0-fc58-123a    GE1/0/1
 
-[[\# ]{lang="FR"}]{#struct_0_x1068_x9952_x2004045563}[显示]{style="font-family:宋体"}[TRILL]{lang="FR"}[邻接表的表项数量。]{style="font-family:宋体"}
+\# 显示TRILL邻接表的表项数量。
 
-[[\<Sysname\> display trill adjacent-table count]{lang="FR"}]{#struct_0_x1068_x9952_x2042612963}
+\<Sysname\> display trill adjacent-table count
 
-[Total number of TRILL ADJ entries: 1]{lang="FR"}
+Total number of TRILL ADJ entries: 1
 
-[]{#struct_0_x1068_x9952_422533128}[[表1-1 ]{lang="EN-US"}[display trill adjacent-table]{lang="EN-US"}]{#_Toc94583057}[命令显示信息描述表]{style="font-family:黑体"}
+表1-1 display trill adjacent-table命令显示信息描述表
 
-[]{#table_struct_0_x1005930752}[[字段]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x831351967}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x548115043}
+描述
 
-[[NextHop]{lang="EN-US"}]{#struct_0_x1068_x9952_193049333}
+NextHop
 
-[[报文转发的下一跳]{style="font-family:宋体"}[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_1170377011}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}
+报文转发的下一跳RB的Nickname
 
-[[MAC address]{lang="EN-US"}]{#struct_0_x1068_x9952_x790824030}
+MAC address
 
-[[报文转发的下一跳]{style="font-family:宋体"}[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_701036823}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+报文转发的下一跳RB的MAC地址
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1068_x9952_716279829}
+Interface
 
-[[报文的出端口]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x1330932574}
+报文的出端口
 
-[[Total number of TRILL ADJ entries]{lang="EN-US"}]{#struct_0_x1068_x9952_306296354}
+Total number of TRILL ADJ entries
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_29927416}[邻接表的表项数量]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1183541893 .myid}
-[]{#_Toc404797955}[]{#struct_0_x1068_x9952_x790758494}
+TRILL邻接表的表项数量
 
 **TRILL \-- TRILL配置命令 \-- display trill brief**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **trill** **brief**]{lang="EN-US"}]{#struct_0_x1068_x9952_1540653430}[命令用来显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[摘要信息。]{style="font-family:宋体"}
+**[display** **trill** **brief**]命令用来显示TRILL摘要信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x801648905}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **trill** **brief**]{lang="EN-US"}]{#struct_0_x1068_x9952_1510315644}
+**[display** **trill** **brief**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1293655268}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x2002952047}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1675512425}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1566827109}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x2041507827}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x791348317}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_1138000138}
+mdc-operator
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x289008356}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_1739300649}[显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[摘要信息。]{style="font-family:宋体"}
+\# 显示TRILL摘要信息。
 
-[[\<Sysname\> display trill brief]{lang="EN-US"}]{#struct_0_x1068_x9952_x791282781}
+\<Sysname\> display trill brief
 
-[Network entity: 00.00a0.fc00.5806.00]{lang="EN-US"}
+Network entity: 00.00a0.fc00.5806.00
 
-[Nickname: 0xfa1b]{lang="EN-US"}
+Nickname: 0xfa1b
 
-[Nickname priority: 64]{lang="EN-US"}
+Nickname priority: 64
 
-[Tree-root priority: 32768]{lang="EN-US"}
+Tree-root priority: 32768
 
-[Cost style: Wide]{lang="EN-US"}
+Cost style: Wide
 
-[Maximum allowed LSP received: 1492]{lang="EN-US"}
+Maximum allowed LSP received: 1492
 
-[Maximum allowed LSP originated: 1458]{lang="EN-US"}
+Maximum allowed LSP originated: 1458
 
-[Maximum unicast load-balancing: 8]{lang="EN-US"}
+Maximum unicast load-balancing: 8
 
-[Overload status: None]{lang="EN-US"}
+Overload status: None
 
-[Overload remaining time: N/A]{lang="EN-US"}
+Overload remaining time: N/A
 
-[Device role: Normal]{lang="EN-US"}
+Device role: Normal
 
-[Timers:]{lang="EN-US"}
+Timers:
 
-[  LSP-max-age: 1200s]{lang="EN-US"}
+  LSP-max-age: 1200s
 
-[  LSP-refresh: 900s]{lang="EN-US"}
+  LSP-refresh: 900s
 
-[  Interval between SPFs: 10s  10ms  20ms]{lang="EN-US"}
+  Interval between SPFs: 10s  10ms  20ms
 
-[[表1-2 ]{lang="EN-US"}[display trill brief]{lang="EN-US"}]{#struct_0_x1068_x9952_x407684028}[命令显示信息描述表]{style="font-family:黑体"}
+表1-2 display trill brief命令显示信息描述表
 
-[]{#table_struct_0_x1003899424}[[字段]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1237072882}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1336926979}
+描述
 
-[[Network entity]{lang="EN-US"}]{#struct_0_x1068_x9952_569780929}
+Network entity
 
-[[网络实体的名称]{style="font-family:宋体"}]{#struct_0_x1068_x9952_1001270470}
+网络实体的名称
 
-[[Nickname]{lang="EN-US"}]{#struct_0_x1068_x9952_x541121491}
+Nickname
 
-[[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x791479389}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}
+RB的Nickname
 
-[[Nickname priority]{lang="EN-US"}]{#struct_0_x1068_x9952_x1600516935}
+Nickname priority
 
-[[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_1339005618}[拥有]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[的优先级]{style="font-family:宋体"}
+RB拥有Nickname的优先级
 
-[[Tree-root priority]{lang="EN-US"}]{#struct_0_x1068_x9952_1166724627}
+Tree-root priority
 
-[[设备作为]{style="font-family:宋体"}[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1616960039}[分发树根桥的优先级]{style="font-family:宋体"}
+设备作为TRILL分发树根桥的优先级
 
-[[Cost style]{lang="EN-US"}]{#struct_0_x1068_x9952_x1427380938}
+Cost style
 
-[[开销类型，仅支持]{style="font-family:宋体"}[Wide]{lang="EN-US"}]{#struct_0_x1068_x9952_x791413853}[类型]{style="font-family:宋体"}
+开销类型，仅支持Wide类型
 
-[[Maximum allowed LSP received]{lang="EN-US"}]{#struct_0_x1068_x9952_x1968846760}
+Maximum allowed LSP received
 
-[[可接收的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_x1270929538}[最大长度]{style="font-family:宋体"}
+可接收的LSP最大长度
 
-[[Maximum allowed LSP originated]{lang="EN-US"}]{#struct_0_x1068_x9952_864586777}
+Maximum allowed LSP originated
 
-[[可生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_2134906724}[最大长度]{style="font-family:宋体"}
+可生成的LSP最大长度
 
-[[Maximum unicast load-balancing]{lang="EN-US"}]{#struct_0_x1068_x9952_x791086173}
+Maximum unicast load-balancing
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1994584459}[单播等价多路径的最大路径数]{style="font-family:宋体"}
+TRILL单播等价多路径的最大路径数
 
-[[Overload status]{lang="EN-US"}]{#struct_0_x1068_x9952_1909194613}
+Overload status
 
-[[过载标志位的置位原因：]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x406653384}
+过载标志位的置位原因：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Config]{lang="EN-US"}]{#struct_0_x1068_x9952_x29131503}[：表示配置过载标志位置位]{style="font-family:宋体"}
+·Config：表示配置过载标志位置位
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[GR]{lang="EN-US"}]{#struct_0_x1068_x9952_x791020637}[：表示在平滑重启中过载标志位置位]{style="font-family:宋体"}
+·GR：表示在平滑重启中过载标志位置位
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[GR/Config]{lang="EN-US"}]{#struct_0_x1068_x9952_x1222695613}[：表示在]{style="font-family:宋体"}[Start]{lang="EN-US"}[类型的平滑重启中配置过载标志位置位]{style="font-family:宋体"}
+·GR/Config：表示在Start类型的平滑重启中配置过载标志位置位
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[None]{lang="EN-US"}]{#struct_0_x1068_x9952_x712383067}[：表示未配置过载标志位置位]{style="font-family:宋体"}
+·None：表示未配置过载标志位置位
 
-[[Device role]{lang="EN-US"}]{#struct_0_x1068_x9952_173724319}
+Device role
 
-[[设备角色：]{style="font-family:宋体"}]{#struct_0_x1068_x9952_1803979248}
+设备角色：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Normal]{lang="EN-US"}]{#struct_0_x1068_x9952_x595444678}[：]{lang="EN-US" style="font-family:宋体"}[表示]{style="font-family:宋体"}[普通]{lang="EN-US" style="font-family:宋体"}[RB]{lang="EN-US"}
+·Normal：表示普通RB
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Access]{lang="EN-US"}]{#struct_0_x1068_x9952_173658783}[：]{lang="EN-US" style="font-family:宋体"}[表示]{style="font-family:宋体"}[二层接入设备]{lang="EN-US" style="font-family:宋体"}
+·Access：表示二层接入设备
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Gateway]{lang="EN-US"}]{#struct_0_x1068_x9952_x470370649}[：表示网关设备]{lang="EN-US" style="font-family:宋体"}
+·Gateway：表示网关设备
 
-[[Overload remaining time]{lang="EN-US"}]{#struct_0_x1068_x9952_808809604}
+Overload remaining time
 
-[[过载标志位保持置位状态的时间，单位为秒。]{style="font-family:宋体"}[N/A]{lang="EN-US"}]{#struct_0_x1068_x9952_259750453}[表示未配置此时间或此时间已超时]{style="font-family:宋体"}
+过载标志位保持置位状态的时间，单位为秒。N/A表示未配置此时间或此时间已超时
 
-[[Timers]{lang="EN-US"}]{#struct_0_x1068_x9952_x791217245}
+Timers
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x2026137063}[定时器]{style="font-family:宋体"}
+TRILL定时器
 
-[[LSP-max-age]{lang="EN-US"}]{#struct_0_x1068_x9952_x1642390677}
+LSP-max-age
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_x960609195}[的最大生存时间，单位为秒]{style="font-family:宋体"}
+LSP的最大生存时间，单位为秒
 
-[[LSP-refresh]{lang="EN-US"}]{#struct_0_x1068_x9952_x791151709}
+LSP-refresh
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_x2004635386}[的刷新周期，单位为秒]{style="font-family:宋体"}
+LSP的刷新周期，单位为秒
 
-[[Interval between SPFs]{lang="EN-US"}]{#struct_0_x1068_x9952_1912132643}
+Interval between SPFs
 
-[[依次为使用]{style="font-family:宋体"}[SPF]{lang="EN-US"}]{#struct_0_x1068_x9952_x227009580}[（]{style="font-family:宋体"}[Shortest Path First]{lang="EN-US"}[，最短路径优先）算法进行路由计算的最大时间间隔（单位为秒）、最小时间间隔（单位为毫秒）和时间间隔惩罚增量（单位为毫秒）]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1309111719 .myid}
-[]{#_Toc65310809}[]{#_Toc36367100}[]{#_Toc34185794}[]{#_Toc404797956}[]{#struct_0_x1068_x9952_598612447}[]{#_Toc293559740}
+依次为使用SPF（Shortest Path First，最短路径优先）算法进行路由计算的最大时间间隔（单位为秒）、最小时间间隔（单位为毫秒）和时间间隔惩罚增量（单位为毫秒）
 
 **TRILL \-- TRILL配置命令 \-- display trill fib**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **trill** **fib**]{lang="EN-US"}]{#struct_0_x1068_x9952_x790824029}[命令用来显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[单播转发表信息。]{style="font-family:宋体"}
+**[display** **trill** **fib**]命令用来显示TRILL单播转发表信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_701626646}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **trill** **fib** \[ **count** \| **nickname** *nickname* \]]{lang="EN-US"}]{#struct_0_x1068_x9952_x821767015}
+**[display**[ **trill** **fib** [ **count** \| **nickname** *nickname* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_2006551777}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x2127721432}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1319010445}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1820067113}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x733364412}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x790758493}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_1540718966}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x446306234}
+【参数】
 
-[**[count]{lang="EN-US"}**]{#struct_0_x1068_x9952_596399438}[：显示表项的数量。]{style="font-family:宋体"}
+**[count**]：显示表项的数量。
 
-[**[nickname]{lang="EN-US"}**[ *nickname*]{lang="EN-US"}]{#struct_0_x1068_x9952_x432073691}[：显示指定]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[信息。]{style="font-family:宋体"}*[nickname]{lang="EN-US"}*[表示]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[，为]{style="font-family:宋体"}[0x1]{lang="EN-US"}[～]{style="font-family:宋体"}[0xFFFE]{lang="EN-US"}[的十六进制数]{style="font-family:宋体"}[。如果未指定本参数，将显示所有]{style="font-family:宋体"}[RB]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[nickname** *nickname*]：显示指定RB的信息。*nickname*表示RB的Nickname，为0x1～0xFFFE的十六进制数。如果未指定本参数，将显示所有RB的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1487579583}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x899409719}[显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[单播转发表所有表项的信息。]{style="font-family:宋体"}
+\# 显示TRILL单播转发表所有表项的信息。
 
-[[\<Sysname\> display trill fib]{lang="EN-US"}]{#struct_0_x1068_x9952_x791348320}
+\<Sysname\> display trill fib
 
-[Flags: T-Transit, E-Egress]{lang="EN-US"}
+Flags: T-Transit, E-Egress
 
-[Destination   HopCount   NextHop   Interface                Flags]{lang="EN-US"}
+Destination   HopCount   NextHop   Interface                Flags
 
-[0xfa1b        63         ]{lang="DE"}[N/A   ]{lang="EN-US"}[    ]{lang="DE"}[N/A                      ]{lang="EN-US"}[E]{lang="DE"}
+0xfa1b        63         N/A   N/A                      E
 
-[0x899b        63         0x2a5c    GE1/0/1                  T]{lang="DE"}
+0x899b        63         0x2a5c    GE1/0/1                  T
 
-[[\# ]{lang="DE"}]{#struct_0_x1068_x9952_1137541385}[显示]{style="font-family:宋体"}[TRILL]{lang="DE"}[单播转发表的表项数量。]{style="font-family:宋体"}
+\# 显示TRILL单播转发表的表项数量。
 
-[[\<Sysname\> display trill fib count]{lang="DE"}]{#struct_0_x1068_x9952_690003941}
+\<Sysname\> display trill fib count
 
-[Total number of TRILL FIB destinations: 1]{lang="DE"}
+Total number of TRILL FIB destinations: 1
 
-[Total number of TRILL FIB entries: 2]{lang="EN-US"}
+Total number of TRILL FIB entries: 2
 
-[[表1-3 ]{lang="EN-US"}[display trill fib]{lang="EN-US"}]{#struct_0_x1068_x9952_2065965017}[命令显示信息描述表]{style="font-family:黑体"}
+表1-3 display trill fib命令显示信息描述表
 
-[]{#table_struct_0_x980201600}[[字段]{style="font-family:黑体"}]{#struct_0_x1068_x9952_673484040}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1126627485}
+描述
 
-[[Destination]{lang="EN-US"}]{#struct_0_x1068_x9952_2100674315}
+Destination
 
-[[目的]{style="font-family:宋体"}[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x779294184}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}
+目的RB的Nickname
 
-[[HopCount]{lang="EN-US"}]{#struct_0_x1068_x9952_x791282784}
+HopCount
 
-[[到达目的]{style="font-family:宋体"}[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x408011708}[的跳数]{style="font-family:宋体"}
+到达目的RB的跳数
 
-[[NextHop]{lang="EN-US"}]{#struct_0_x1068_x9952_193488153}
+NextHop
 
-[[下一跳]{style="font-family:宋体"}[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_1692311417}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}
+下一跳RB的Nickname
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1068_x9952_x343612365}
+Interface
 
-[[报文的出端口]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x6346660}
+报文的出端口
 
-[[Flags]{lang="DE"}]{#struct_0_x1068_x9952_x791479392}
+Flags
 
-[[标志：]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x1599796038}
+标志：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[T]{lang="EN-US"}]{#struct_0_x1068_x9952_x1598868204}[：表示转发]{lang="EN-US" style="font-family:宋体"}
+·T：表示转发
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[E]{lang="EN-US"}]{#struct_0_x1068_x9952_x920861998}[：表示出隧道]{style="font-family:宋体"}
+·E：表示出隧道
 
-[[Total number of TRILL FIB destinations]{lang="EN-US"}]{#struct_0_x1068_x9952_x1302694274}
+Total number of TRILL FIB destinations
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x791413856}[单播转发表中目的]{style="font-family:宋体"}[RB]{lang="EN-US"}[的数量]{style="font-family:宋体"}
+TRILL单播转发表中目的RB的数量
 
-[[Total number of TRILL FIB entries]{lang="EN-US"}]{#struct_0_x1068_x9952_x1968519080}
+Total number of TRILL FIB entries
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x246780870}[单播转发表的表项数量]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#1978935495 .myid}
-[]{#_Toc404797957}[]{#struct_0_x1068_x9952_x1996156560}[]{#_Toc326062189}
+TRILL单播转发表的表项数量
 
 **TRILL \-- TRILL配置命令 \-- display trill graceful-restart status**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**]{#struct_0_x1068_x9952_1328055276}[ **tril**l **graceful-restart** **status**]{lang="EN-US"}[命令用来显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[（]{style="font-family:宋体"}[Graceful Restart]{lang="EN-US"}[，平滑重启）状态信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[display**] **tril**l **graceful-restart** **status**命令用来显示TRILL的GR（Graceful Restart，平滑重启）状态信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_244504084}
+【命令】
 
-[**[display]{lang="EN-US"}**]{#struct_0_x1068_x9952_x1599850663}[ **trill** **graceful-restart** **status**]{lang="EN-US"}
+**[display**] **trill** **graceful-restart** **status**
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x791086176}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x1994912139}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x320676441}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1185093736}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x825228584}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x234576506}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x1491404482}
+mdc-operator
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1039620946}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_1409316929}[显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[状态信息。]{style="font-family:宋体"}
+\# 显示TRILL的GR状态信息。
 
-[[\<Sysname\> display trill graceful-restart status]{lang="EN-US"}]{#struct_0_x1068_x9952_x791020640}
+\<Sysname\> display trill graceful-restart status
 
-[Restart status: RESTARTING]{lang="EN-US"}
+Restart status: RESTARTING
 
-[Restart phase: LSDB synchronization]{lang="EN-US"}
+Restart phase: LSDB synchronization
 
-[Restart interval: 300s]{lang="EN-US"}
+Restart interval: 300s
 
-[T3 remaining time: 140s]{lang="EN-US"}
+T3 remaining time: 140s
 
-[Total number of interfaces: 1]{lang="EN-US"}
+Total number of interfaces: 1
 
-[Number of waiting LSPs: 3]{lang="EN-US"}
+Number of waiting LSPs: 3
 
-[T2 remaining time: 55s]{lang="EN-US"}
+T2 remaining time: 55s
 
-[  Interface: GigabitEthernet1/0/1]{lang="EN-US"}
+  Interface: GigabitEthernet1/0/1
 
-[    T1 remaining time: 2s]{lang="EN-US"}
+    T1 remaining time: 2s
 
-[    RA received: Y]{lang="EN-US"}
+    RA received: Y
 
-[    CSNP received: N]{lang="EN-US"}
+    CSNP received: N
 
-[    T1 expiration number: 1]{lang="EN-US"}
+    T1 expiration number: 1
 
-[[表1-4 ]{lang="EN-US"}[display trill graceful-restart status]{lang="EN-US"}]{#struct_0_x1068_x9952_x1222892228}[显示信息描述表]{style="font-family:黑体"}
+表1-4 display trill graceful-restart status显示信息描述表
 
-[]{#table_struct_0_x977380800}[[字段]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x635491152}
-:::
+字段
 
-[[描述]{style="font-family:宋体"}]{#struct_0_x1068_x9952_577596924}
+描述
 
-[[Restart status]{lang="EN-US"}]{#struct_0_x1068_x9952_x791217248}
+Restart status
 
-[[重启状态：]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x2025809383}
+重启状态：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[COMPLETE]{lang="EN-US"}]{#struct_0_x1068_x9952_x712764658}[：表示]{lang="EN-US" style="font-family:宋体"}[平滑]{style="font-family:宋体"}[重启已完成]{lang="EN-US" style="font-family:宋体"}
+·COMPLETE：表示平滑重启已完成
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RESTARTING]{lang="EN-US"}]{#struct_0_x1068_x9952_x1983208146}[：表示正进行]{lang="EN-US" style="font-family:宋体"}[R]{lang="EN-US"}[estart]{lang="EN-US"}[类型的]{lang="EN-US" style="font-family:宋体"}[平滑]{style="font-family:宋体"}[重启]{lang="EN-US" style="font-family:宋体"}
+·RESTARTING：表示正进行Restart类型的平滑重启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[STARTING]{lang="EN-US"}]{#struct_0_x1068_x9952_1106602452}[：表示正进行]{lang="EN-US" style="font-family:宋体"}[S]{lang="EN-US"}[tart]{lang="EN-US"}[类型的]{lang="EN-US" style="font-family:宋体"}[平滑]{style="font-family:宋体"}[重启]{lang="EN-US" style="font-family:宋体"}
+·STARTING：表示正进行Start类型的平滑重启
 
-[[Restart phase]{lang="EN-US"}]{#struct_0_x1068_x9952_x350143891}
+Restart phase
 
-[[重启阶段：]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x791151712}
+重启阶段：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Finish]{lang="EN-US"}]{#struct_0_x1068_x9952_x2004176635}[：表示平滑重启已完成]{style="font-family:宋体"}
+·Finish：表示平滑重启已完成
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSDB synchronization]{lang="EN-US"}]{#struct_0_x1068_x9952_x621796271}[：表示]{lang="EN-US" style="font-family:
-  宋体"}[T2]{lang="EN-US"}[同步阶段]{lang="EN-US" style="font-family:
-  宋体"}
+·LSDB synchronization：表示T2同步阶段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LSP generation]{lang="EN-US"}]{#struct_0_x1068_x9952_x1269622715}[：表示]{lang="EN-US" style="font-family:宋体"}[LSP]{lang="EN-US"}[生成阶段]{lang="EN-US" style="font-family:宋体"}
+·LSP generation：表示LSP生成阶段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MCS synchronization]{lang="EN-US"}]{#struct_0_x1068_x9952_x1728284351}[：表示二层组播数据同步阶段]{lang="EN-US" style="font-family:
-  宋体"}
+·MCS synchronization：表示二层组播数据同步阶段
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SPF]{lang="EN-US"}]{#struct_0_x1068_x9952_x2130573160}[：表示路由计算阶段]{style="font-family:宋体"}
+·SPF：表示路由计算阶段
 
-[[Restart interval]{lang="EN-US"}]{#struct_0_x1068_x9952_x790824032}
+Restart interval
 
-[[重启间隔，单位为秒]{style="font-family:宋体"}]{#struct_0_x1068_x9952_700905751}
+重启间隔，单位为秒
 
-[[T3 remaining time]{lang="EN-US"}]{#struct_0_x1068_x9952_x1876269004}
+T3 remaining time
 
-[[T3]{lang="EN-US"}]{#struct_0_x1068_x9952_1245962522}[定时器的超时剩余时间，单位为秒。初始值为]{style="font-family:宋体"}[65535]{lang="EN-US"}[秒，后续会根据]{style="font-family:宋体"}[RA]{lang="EN-US"}[报文中的剩余时间来更新]{style="font-family:宋体"}
+T3定时器的超时剩余时间，单位为秒。初始值为65535秒，后续会根据RA报文中的剩余时间来更新
 
-[[Total number of interfaces]{lang="EN-US"}]{#struct_0_x1068_x9952_1620466039}
+Total number of interfaces
 
-[[进程下的所有端口数]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x790758496}
+进程下的所有端口数
 
-[[Number of waiting LSPs]{lang="EN-US"}]{#struct_0_x1068_x9952_1540522358}
+Number of waiting LSPs
 
-[[等待的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_x808035849}[数量]{style="font-family:宋体"}
+等待的LSP数量
 
-[[T2 remaining time]{lang="EN-US"}]{#struct_0_x1068_x9952_x652068991}
+T2 remaining time
 
-[[T2]{lang="EN-US"}]{#struct_0_x1068_x9952_1211864693}[定时器的超时剩余时间，单位为秒。对于]{style="font-family:宋体"}[Restart]{lang="EN-US"}[类型的]{style="font-family:宋体"}[GR]{lang="EN-US"}[，初始值固定为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒；对于]{style="font-family:宋体"}[Start]{lang="EN-US"}[类型的]{style="font-family:宋体"}[GR]{lang="EN-US"}[，初始值为]{style="font-family:宋体"}**[graceful-restart interval]{lang="EN-US"}**[命令的配置值（缺省为]{style="font-family:宋体"}[300]{lang="EN-US"}[秒）]{style="font-family:宋体"}
+T2定时器的超时剩余时间，单位为秒。对于Restart类型的GR，初始值固定为60秒；对于Start类型的GR，初始值为**graceful-restart interval**命令的配置值（缺省为300秒）
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1068_x9952_x791348319}
+Interface
 
-[[端口名称]{style="font-family:宋体"}]{#struct_0_x1068_x9952_1138131210}
+端口名称
 
-[[T1 remaining time]{lang="EN-US"}]{#struct_0_x1068_x9952_x1445420958}
+T1 remaining time
 
-[[T1]{lang="EN-US"}]{#struct_0_x1068_x9952_x711241525}[定时器的超时剩余时间，单位为秒。初始值为]{style="font-family:宋体"}[3]{lang="EN-US"}[秒]{style="font-family:宋体"}
+T1定时器的超时剩余时间，单位为秒。初始值为3秒
 
-[[RA received]{lang="EN-US"}]{#struct_0_x1068_x9952_x791282783}
+RA received
 
-[[RA]{lang="EN-US"}]{#struct_0_x1068_x9952_x407552956}[接收标记位：]{style="font-family:宋体"}
+RA接收标记位：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Y]{lang="EN-US"}]{#struct_0_x1068_x9952_x1209202670}[：表示置位]{lang="EN-US" style="font-family:宋体"}
+·Y：表示置位
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[N]{lang="EN-US"}]{#struct_0_x1068_x9952_x835736152}[：表示未置位]{lang="EN-US" style="font-family:宋体"}
+·N：表示未置位
 
-[[CSNP received]{lang="EN-US"}]{#struct_0_x1068_x9952_x1208354435}
+CSNP received
 
-[[CSNP]{lang="EN-US"}]{#struct_0_x1068_x9952_x791479391}[接收标记位：]{style="font-family:宋体"}
+CSNP接收标记位：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Y]{lang="EN-US"}]{#struct_0_x1068_x9952_x1599992646}[：表示置位]{lang="EN-US" style="font-family:宋体"}
+·Y：表示置位
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[N]{lang="EN-US"}]{#struct_0_x1068_x9952_985222104}[：表示未置位]{lang="EN-US" style="font-family:宋体"}
+·N：表示未置位
 
-[[T1 expiration number]{lang="EN-US"}]{#struct_0_x1068_x9952_x1772958140}
+T1 expiration number
 
-[[T1]{lang="EN-US"}]{#struct_0_x1068_x9952_x791413855}[定时器的超时次数。最大值为]{style="font-family:宋体"}[10]{lang="EN-US"}[次]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-184934579 .myid}
-[]{#_Toc404797958}[]{#struct_0_x1068_x9952_1523803190}[]{#_Toc386113371}[]{#_Toc385854369}[]{#_Toc379615177}
+T1定时器的超时次数。最大值为10次
 
 **TRILL \-- TRILL配置命令 \-- display trill ingress-route**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **trill** **ingress-route**]{lang="EN-US"}]{#struct_0_x1068_x9952_x42280751}[命令用来显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[入流量的转发信息。]{style="font-family:宋体"}
+**[display** **trill** **ingress-route**]命令用来显示TRILL入流量的转发信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x2003530432}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **trill** **ingress-route** \[ **vlan** *vlan-list* \]]{lang="EN-US"}]{#struct_0_x1068_x9952_x465852879}
+**[display** **trill** **ingress-route** [ **vlan** *vlan-list* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x718730501}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x1209806145}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1080990040}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_177278018}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_1894134957}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1109054721}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x67014236}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1964595052}
+【参数】
 
-[**[vlan]{lang="EN-US"}**[ *vlan-list*]{lang="EN-US"}]{#struct_0_x1068_x9952_x1887812952}[：显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的信息。]{style="font-family:宋体"}[v*lan-list*]{lang="EN-US"}[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，表示多个]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。表示方式为]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[ = { *vlan-id* \[ **to** *vlan-id* \] }&\<1-10\>]{lang="EN-US"}[。其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。如果未指定本参数，将显示所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[vlan** *vlan-list*]：显示指定VLAN的信息。v*lan-list*为VLAN列表，表示多个VLAN。表示方式为*vlan-list* = { *vlan-id* [ **to** *vlan-id*  }&\<1-10\>]。其中，*vlan-id*为VLAN的编号，取值范围为1～4094。&\<1-10\>表示前面的参数最多可以输入10次。如果未指定本参数，将显示所有VLAN的信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1677989228}
+【使用指导】
 
-[[通过本命令可以显示流量进入]{style="font-family:宋体"}[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_1874074222}[网络的本地入端口，以及流量转发所使用的树根和出端口信息。]{style="font-family:宋体"}
+通过本命令可以显示流量进入TRILL网络的本地入端口，以及流量转发所使用的树根和出端口信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1413806219}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x271736275}[显示所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[入流量的转发信息。]{style="font-family:宋体"}
+\# 显示所有VLAN的TRILL入流量的转发信息。
 
-[[\<Sysname\> display trill ingress-route]{lang="EN-US"}]{#struct_0_x1068_x9952_130661955}
+\<Sysname\> display trill ingress-route
 
-[Total number of VLANs: 1]{lang="EN-US"}
+Total number of VLANs: 1
 
-[ ]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+VLAN ID:
 
-[VLAN ID:]{lang="EN-US"}
+  1
 
-[  1]{lang="EN-US"}
+List of local ports:
 
-[List of local ports:]{lang="EN-US"}
+  GE1/0/1
 
-[  GE1/0/1]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+VLAN ID:
 
-[VLAN ID:]{lang="EN-US"}
+  1
 
-[  1]{lang="EN-US"}
+Tree root:
 
-[Tree root:]{lang="EN-US"}
+  0x1111
 
-[  0x1111]{lang="EN-US"}
+List of remote ports:
 
-[List of remote ports:]{lang="EN-US"}
+  GE1/0/2
 
-[  GE1/0/2]{lang="EN-US"}
+表1-5 display trill ingress-route命令显示信息描述表
 
-[[表1-5 ]{lang="EN-US"}[display trill ingress-route]{lang="EN-US"}]{#struct_0_x1068_x9952_1793539350}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_1003000003}[[字段]{style="font-family:黑体"}]{#struct_0_x1068_x9952_764288303}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1068_x9952_275101371}
+Total number of VLANs
 
-[[Total number of VLANs]{lang="EN-US"}]{#struct_0_x1068_x9952_x1983137091}
+VLAN总数
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1068_x9952_1169322537}[总数]{style="font-family:宋体"}
+VLAN ID
 
-[[VLAN ID]{lang="EN-US"}]{#struct_0_x1068_x9952_x1353040600}
+VLAN的编号
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1068_x9952_x1742582420}[的编号]{style="font-family:宋体"}
+List of local ports
 
-[[List of local ports]{lang="EN-US"}]{#struct_0_x1068_x9952_x604466478}
+流量进入TRILL网络的本地入端口
 
-[[流量进入]{style="font-family:宋体"}[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_1501813406}[网络的本地入端口]{style="font-family:宋体"}
+Tree root
 
-[[Tree root]{lang="EN-US"}]{#struct_0_x1068_x9952_538226246}
+本VLAN转发组播流量所使用的TRILL分发树树根的Nickname
 
-[[本]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1068_x9952_x2261644}[转发组播流量所使用的]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树树根的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}
+List of remote ports
 
-[[List of remote ports]{lang="EN-US"}]{#struct_0_x1068_x9952_986300935}
-
-[[报文经]{style="font-family:宋体"}[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x190365414}[封装后的转发出端口]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-2064055765 .myid}
-[]{#_Toc404797959}[]{#struct_0_x1068_x9952_x1968453544}
+报文经TRILL封装后的转发出端口
 
 **TRILL \-- TRILL配置命令 \-- display trill interface**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **trill** **interface**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1244083411}[命令用来显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[端口信息。]{style="font-family:宋体"}
+**[display** **trill** **interface**]命令用来显示TRILL端口信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x43419510}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **trill** **interface** \[ *interface-type* *interface-number* \| **verbose** \]]{lang="EN-US"}]{#struct_0_x1068_x9952_x2007852279}
+**[display**[ **trill** **interface** [ *interface-type* *interface-number* \| **verbose** ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_158580002}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x1465026965}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x791086175}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1994977675}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x1902657520}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1668185344}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x963891823}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1163957861}
+【参数】
 
-[*[interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}]{#struct_0_x1068_x9952_x172522780}[：显示指定端口的信息，]{style="font-family:宋体"}*[interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}[为端口类型和端口编号。如果未指定本参数，将显示所有端口的信息。]{style="font-family:宋体"}
+*[interface-type* *interface-number*]：显示指定端口的信息，*interface-type* *interface-number*为端口类型和端口编号。如果未指定本参数，将显示所有端口的信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_x1068_x9952_x1690287205}[：显示详细信息。如果未指定本参数，将显示摘要信息。]{style="font-family:宋体"}
+**[verbose**]：显示详细信息。如果未指定本参数，将显示摘要信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1202000994}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_1970333644}[显示所有]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[端口的摘要信息。]{style="font-family:宋体"}
+\# 显示所有TRILL端口的摘要信息。
 
-[[\<Sysname\> display trill interface]{lang="EN-US"}]{#struct_0_x1068_x9952_1785702849}
+\<Sysname\> display trill interface
 
-[Interface                   Protocol state   DRB  Cost      Link type]{lang="EN-US"}
+Interface                   Protocol state   DRB  Cost      Link type
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[GigabitEthernet1/0/1        UP               Yes  2000      Access]{lang="EN-US"}
+GigabitEthernet1/0/1        UP               Yes  2000      Access
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_861133362}[显示所有]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[端口的详细信息。]{style="font-family:宋体"}
+\# 显示所有TRILL端口的详细信息。
 
-[[\<Sysname\> display trill interface verbose]{lang="EN-US"}]{#struct_0_x1068_x9952_x791020639}
+\<Sysname\> display trill interface verbose
 
-[Interface: GigabitEthernet1/0/1]{lang="EN-US"}
+Interface: GigabitEthernet1/0/1
 
-[Protocol state: UP]{lang="EN-US"}
+Protocol state: UP
 
-[Nickname: 0xfa1b]{lang="EN-US"}
+Nickname: 0xfa1b
 
-[MTU: 1470]{lang="EN-US"}
+MTU: 1470
 
-[DRB: Yes]{lang="EN-US"}
+DRB: Yes
 
-[Designated VLAN: 1]{lang="EN-US"}
+Designated VLAN: 1
 
-[Link type: Access]{lang="EN-US"}
+Link type: Access
 
-[CSNP timer: 10s]{lang="NO-BOK"}
+CSNP timer: 10s
 
-[Hello timer: 10s]{lang="NO-BOK"}
+Hello timer: 10s
 
-[Hello multiplier: 3]{lang="NO-BOK"}
+Hello multiplier: 3
 
-[LSP timer: 10ms]{lang="NO-BOK"}
+LSP timer: 10ms
 
-[LSP transmit-throttle count: 5]{lang="EN-US"}
+LSP transmit-throttle count: 5
 
-[Cost: 2000]{lang="EN-US"}
+Cost: 2000
 
-[AVF inhibited timer: 30s]{lang="EN-US"}
+AVF inhibited timer: 30s
 
-[Priority: 64]{lang="EN-US"}
+Priority: 64
 
-[Track index: None]{lang="EN-US"}
+Track index: None
 
-[Track state: NotReady]{lang="EN-US"}
+Track state: NotReady
 
-[Active AVF:]{lang="EN-US"}
+Active AVF:
 
-[  1-3, 5, 58]{lang="EN-US"}
+  1-3, 5, 58
 
-[Inhibited AVF: None]{lang="EN-US"}
+Inhibited AVF: None
 
-[]{#struct_0_x1068_x9952_x1222302397}[[表1-6 ]{lang="EN-US"}[display trill interface]{lang="EN-US"}]{#_Toc283318652}[命令显示信息描述表]{style="font-family:黑体"}
+表1-6 display trill interface命令显示信息描述表
 
-[]{#table_struct_0_x981706752}[[字段]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1241283687}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x791217247}
+描述
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1068_x9952_x2026268135}
+Interface
 
-[[端口名称]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x33724477}
+端口名称
 
-[[Protocol state]{lang="EN-US"}]{#struct_0_x1068_x9952_200216446}
+Protocol state
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_1267132782}[协议的状态，包括]{style="font-family:宋体"}[UP]{lang="EN-US"}[和]{style="font-family:宋体"}[DOWN]{lang="EN-US"}
+TRILL协议的状态，包括UP和DOWN
 
-[[Nickname]{lang="EN-US"}]{#struct_0_x1068_x9952_2026716379}
+Nickname
 
-[[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x791151711}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}
+RB的Nickname
 
-[[MTU]{lang="EN-US"}]{#struct_0_x1068_x9952_x2004111099}
+MTU
 
-[[链路的]{style="font-family:宋体"}[MTU]{lang="EN-US"}]{#struct_0_x1068_x9952_1048504001}[值，单位为字节]{style="font-family:宋体"}
+链路的MTU值，单位为字节
 
-[[DRB]{lang="EN-US"}]{#struct_0_x1068_x9952_x2034339641}
+DRB
 
-[[是否被选举为]{style="font-family:宋体"}[DRB]{lang="EN-US"}]{#struct_0_x1068_x9952_x1627704839}[：]{style="font-family:宋体"}
+是否被选举为DRB：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Yes]{lang="EN-US"}]{#struct_0_x1068_x9952_x580013715}[：表示已被选举为]{style="font-family:宋体"}[DRB]{lang="EN-US"}
+·Yes：表示已被选举为DRB
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No]{lang="EN-US"}]{#struct_0_x1068_x9952_x790824031}[：表示未被选举为]{style="font-family:宋体"}[DRB]{lang="EN-US"}
+·No：表示未被选举为DRB
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Down]{lang="EN-US"}]{#struct_0_x1068_x9952_34047586}[：表示端口状态为]{style="font-family:宋体"}[down]{lang="EN-US"}[，不参与]{style="font-family:宋体"}[DRB]{lang="EN-US"}[的选举]{style="font-family:宋体"}
+·Down：表示端口状态为down，不参与DRB的选举
 
-[[Designated VLAN]{lang="EN-US"}]{#struct_0_x1068_x9952_701102359}
+Designated VLAN
 
-[[当前生效的指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1068_x9952_x1164997163}[。如果显示为]{style="font-family:宋体"}[65535]{lang="EN-US"}[，表示端口]{style="font-family:宋体"}[down]{lang="EN-US"}[或端口下没有使能]{style="font-family:宋体"}[VLAN]{lang="EN-US"}
+当前生效的指定VLAN。如果显示为65535，表示端口down或端口下没有使能VLAN
 
-[[Link type]{lang="EN-US"}]{#struct_0_x1068_x9952_1341720010}
+Link type
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x682933386}[端口的类型：]{style="font-family:宋体"}
+TRILL端口的类型：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Access]{lang="EN-US"}]{#struct_0_x1068_x9952_x790758495}[：表示]{lang="EN-US" style="font-family:宋体"}[Access]{lang="EN-US"}[类型]{lang="EN-US" style="font-family:宋体"}
+·Access：表示Access类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Hybrid]{lang="EN-US"}]{#struct_0_x1068_x9952_1540587894}[：表示]{lang="EN-US" style="font-family:宋体"}[Hybrid]{lang="EN-US"}[类型]{lang="EN-US" style="font-family:宋体"}
+·Hybrid：表示Hybrid类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Trunk]{lang="EN-US"}]{#struct_0_x1068_x9952_376896562}[：表示]{lang="EN-US" style="font-family:宋体"}[Trunk]{lang="EN-US"}[类型]{lang="EN-US" style="font-family:宋体"}
+·Trunk：表示Trunk类型
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VR]{lang="EN-US"}]{#struct_0_x1068_x9952_173724321}[：表示]{style="font-family:宋体"}[VR]{lang="EN-US"}[类型]{style="font-family:宋体"}
+·VR：表示VR类型
 
-[[CSNP timer]{lang="EN-US"}]{#struct_0_x1068_x9952_x1032613561}
+CSNP timer
 
-[[CSNP]{lang="EN-US"}]{#struct_0_x1068_x9952_774735625}[报文的发送间隔，单位为秒]{style="font-family:宋体"}
+CSNP报文的发送间隔，单位为秒
 
-[[Hello timer]{lang="NO-BOK"}]{#struct_0_x1068_x9952_249523791}
+Hello timer
 
-[[Hello]{lang="EN-US"}]{#struct_0_x1068_x9952_x1092566906}[报文发送间隔，单位为秒]{style="font-family:宋体"}
+Hello报文发送间隔，单位为秒
 
-[[Hello multiplier]{lang="NO-BOK"}]{#struct_0_x1068_x9952_x499256772}
+Hello multiplier
 
-[[Hello]{lang="EN-US"}]{#struct_0_x1068_x9952_x633729358}[报文的失效数目]{style="font-family:宋体"}
+Hello报文的失效数目
 
-[[LSP timer]{lang="NO-BOK"}]{#struct_0_x1068_x9952_774801161}
+LSP timer
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_1229889259}[的最小发送间隔，单位为毫秒]{style="font-family:宋体"}
+LSP的最小发送间隔，单位为毫秒
 
-[[LSP transmit-throttle count]{lang="EN-US"}]{#struct_0_x1068_x9952_370560078}
+LSP transmit-throttle count
 
-[[一次发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_x1058661471}[的最大数目]{style="font-family:宋体"}
+一次发送LSP的最大数目
 
-[[Cost]{lang="EN-US"}]{#struct_0_x1068_x9952_774604553}
+Cost
 
-[[端口的链路开销值]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x1744909187}
+端口的链路开销值
 
-[[AVF inhibited timer]{lang="EN-US"}]{#struct_0_x1068_x9952_493510324}
+AVF inhibited timer
 
-[[环路避免的抑制时间，单位为秒]{style="font-family:宋体"}]{#struct_0_x1068_x9952_900822094}
+环路避免的抑制时间，单位为秒
 
-[[Priority]{lang="EN-US"}]{#struct_0_x1068_x9952_774670089}
+Priority
 
-[[DRB]{lang="EN-US"}]{#struct_0_x1068_x9952_1817717121}[优先级]{style="font-family:宋体"}
+DRB优先级
 
-[[Track index]{lang="EN-US"}]{#struct_0_x1068_x9952_1389585462}
+Track index
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x475611696}[监测的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项，]{style="font-family:宋体"}[None]{lang="EN-US"}[表示没有]{style="font-family:宋体"}
+TRILL监测的Track项，None表示没有
 
-[[Track state]{lang="EN-US"}]{#struct_0_x1068_x9952_x637891027}
+Track state
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1111134595}[监测的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项状态：]{style="font-family:宋体"}
+TRILL监测的Track项状态：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NotReady]{lang="EN-US"}]{#struct_0_x1068_x9952_x176498479}[：]{lang="EN-US" style="font-family:宋体"}[表示]{style="font-family:宋体"}[没有监测任何]{lang="EN-US" style="font-family:宋体"}[Track]{lang="EN-US"}[项]{lang="EN-US" style="font-family:宋体"}[或未连接]{style="font-family:宋体"}[Track]{lang="EN-US"}[模块]{style="font-family:宋体"}
+·NotReady：表示没有监测任何Track项或未连接Track模块
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Positive]{lang="EN-US"}]{#struct_0_x1068_x9952_890330540}[：]{lang="EN-US" style="font-family:宋体"}[表示状态正常]{style="font-family:宋体"}
+·Positive：表示状态正常
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Negative]{lang="EN-US"}]{#struct_0_x1068_x9952_x1975614245}[：]{lang="EN-US" style="font-family:宋体"}[表示状态异常]{style="font-family:宋体"}
+·Negative：表示状态异常
 
-[[Active AVF]{lang="EN-US"}]{#struct_0_x1068_x9952_x1056999071}
+Active AVF
 
-[[当前端口上被]{style="font-family:宋体"}[DRB]{lang="EN-US"}]{#struct_0_x1068_x9952_x1318843032}[分配为]{style="font-family:宋体"}[AVF]{lang="EN-US"}[的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，]{style="font-family:宋体"}[None]{lang="EN-US"}[表示没有]{style="font-family:宋体"}
+当前端口上被DRB分配为AVF的VLAN，None表示没有
 
-[[Inhibited AVF]{lang="EN-US"}]{#struct_0_x1068_x9952_774997769}
+Inhibited AVF
 
-[[当前端口上暂时被抑制的]{style="font-family:宋体"}[AVF]{lang="EN-US"}]{#struct_0_x1068_x9952_x722803672}[的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，]{style="font-family:宋体"}[None]{lang="EN-US"}[表示没有]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1695344543 .myid}
-[]{#_Toc404797960}[]{#struct_0_x1068_x9952_x1983488085}
+当前端口上暂时被抑制的AVF的VLAN，None表示没有
 
 **TRILL \-- TRILL配置命令 \-- display trill lsdb**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **trill** **lsdb**]{lang="EN-US"}]{#struct_0_x1068_x9952_1820428236}[命令用来显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[链路状态数据库信息。]{style="font-family:宋体"}
+**[display** **trill** **lsdb**]命令用来显示TRILL链路状态数据库信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x362358731}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **trill** **lsdb** \[ **local** \| **lsp-id** *lsp-id* \| **verbose** \] \*]{lang="EN-US"}]{#struct_0_x1068_x9952_125139982}
+**[display**[ **trill** **lsdb** [ **local** \| **lsp-id** *lsp-id* \| **verbose** ] \*]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_775063305}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x50484080}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x2028998171}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_998146628}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_327450052}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x890426132}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x1284501668}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1898294745}
+【参数】
 
-[**[local]{lang="EN-US"}**]{#struct_0_x1068_x9952_469655886}[：显示本地生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[local**]：显示本地生成的LSP的信息。
 
-[**[lsp-id]{lang="EN-US"}**[ *lsp-id*]{lang="EN-US"}]{#struct_0_x1068_x9952_774866697}[：显示指定]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的信息。]{style="font-family:宋体"}*[lsp-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[LSP]{lang="EN-US"}[标识，形式为]{style="font-family:宋体"}[SYSID*.*Pseudonode ID-fragment num]{lang="EN-US"}[，其中，]{style="font-family:宋体"}[SYSID]{lang="EN-US"}[是]{style="font-family:宋体"}[产生该]{style="font-family:宋体"}[LSP]{lang="EN-GB"}[的结点或伪结点的]{style="font-family:宋体"}[System ID]{lang="EN-US"}[，]{style="font-family:宋体"}[fragment num]{lang="EN-US"}[是该]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的分片号。如果未指定本参数，将显示所有]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[lsp-id** *lsp-id*]：显示指定LSP的信息。*lsp-id*为LSP标识，形式为SYSID*.*Pseudonode ID-fragment num，其中，SYSID是产生该LSP的结点或伪结点的System ID，fragment num是该LSP的分片号。如果未指定本参数，将显示所有LSP的信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_x1068_x9952_16805254}[：显示详细信息。如果未指定本参数，将显示摘要信息。]{style="font-family:宋体"}
+**[verbose**]：显示详细信息。如果未指定本参数，将显示摘要信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1588309689}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x153794737}[显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[链路状态数据库的摘要信息。]{style="font-family:宋体"}
+\# 显示TRILL链路状态数据库的摘要信息。
 
-[[\<Sysname\> display trill lsdb]{lang="EN-US"}]{#struct_0_x1068_x9952_1025581123}
+\<Sysname\> display trill lsdb
 
-[Flags: \* - Self LSP]{lang="EN-US"}
+Flags: \* - Self LSP
 
-[LSP ID                 Seq num     Checksum  Holdtime  Length    Overload]{lang="EN-US"}
+LSP ID                 Seq num     Checksum  Holdtime  Length    Overload
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[00a0.fc00.5806.00-00\*  0x00000005  0xd315    361       78        0]{lang="EN-US"}
+00a0.fc00.5806.00-00\*  0x00000005  0xd315    361       78        0
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_864528342}[显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[链路状态数据库的详细信息。]{style="font-family:宋体"}
+\# 显示TRILL链路状态数据库的详细信息。
 
-[[\<Sysname\> display trill lsdb verbose]{lang="EN-US"}]{#struct_0_x1068_x9952_774932233}
+\<Sysname\> display trill lsdb verbose
 
-[LSP ID: 00a0.fc00.5806.00-00\*]{lang="EN-US"}
+LSP ID: 00a0.fc00.5806.00-00\*
 
-[Sequence number: 0x00000005]{lang="EN-US"}
+Sequence number: 0x00000005
 
-[Checksum: 0xd315]{lang="EN-US"}
+Checksum: 0xd315
 
-[Holdtime: 1145s]{lang="EN-US"}
+Holdtime: 1145s
 
-[Length: 78]{lang="EN-US"}
+Length: 78
 
-[Overload: 0]{lang="EN-US"}
+Overload: 0
 
-[Source: 00a0.fc00.5806.00]{lang="EN-US"}
+Source: 00a0.fc00.5806.00
 
-[TRILL version: 0x00]{lang="EN-US"}
+TRILL version: 0x00
 
-[Nickname:]{lang="EN-US"}
+Nickname:
 
-[  Nickname: 0xfa1b]{lang="EN-US"}
+  Nickname: 0xfa1b
 
-[  Priority: 64]{lang="EN-US"}
+  Priority: 64
 
-[  Tree-root priority: 32768]{lang="EN-US"}
+  Tree-root priority: 32768
 
-[Trees:]{lang="EN-US"}
+Trees:
 
-[  Compute trees number: 1]{lang="EN-US"}
+  Compute trees number: 1
 
-[  Max compute trees number: 15]{lang="EN-US"}
+  Max compute trees number: 15
 
-[  Used trees number: 1]{lang="EN-US"}
+  Used trees number: 1
 
-[Tree identifiers:]{lang="EN-US"}
+Tree identifiers:
 
-[  0x899b]{lang="EN-US"}
+  0x899b
 
-[Trees used identifiers:]{lang="EN-US"}
+Trees used identifiers:
 
-[  0x899b]{lang="EN-US"}
+  0x899b
 
-[Interested VLANs:]{lang="EN-US"}
+Interested VLANs:
 
-[  Start: 4, End: 4, M4: 0, M6: 0]{lang="EN-US"}
+  Start: 4, End: 4, M4: 0, M6: 0
 
-[  Start: 5, End: 6, M4: 1, M6: 0]{lang="EN-US"}
+  Start: 5, End: 6, M4: 1, M6: 0
 
-[Neighbor:]{lang="EN-US"}
+Neighbor:
 
-[  ID: 00e0.fc58.123a.01, Cost: 2000]{lang="EN-US"}
+  ID: 00e0.fc58.123a.01, Cost: 2000
 
-[Group address:]{lang="EN-US"}
+Group address:
 
-[  VLAN ID: 2]{lang="EN-US"}
+  VLAN ID: 2
 
-[  Group MAC address: 0100-5e01-0101]{lang="EN-US"}
+  Group MAC address: 0100-5e01-0101
 
-[Gateway information:]{lang="EN-US"}
+Gateway information:
 
-[  MAC address: 0100-5e01-0001]{lang="EN-US"}
+  MAC address: 0100-5e01-0001
 
-[   VR type: IPv4, VR ID: 2, VR priority: 64]{lang="EN-US"}
+   VR type: IPv4, VR ID: 2, VR priority: 64
 
-[Gateway router capability:]{lang="EN-US"}
+Gateway router capability:
 
-[  VR type: IPv4, VR ID: 2]{lang="EN-US"}
+  VR type: IPv4, VR ID: 2
 
-[   VLAN ID: 2]{lang="EN-US"}
+   VLAN ID: 2
 
-[    Virtual address:]{lang="EN-US"}
+    Virtual address:
 
-[     192.168.1.1]{lang="EN-US"}
+     192.168.1.1
 
-[     192.168.1.2]{lang="EN-US"}
+     192.168.1.2
 
-[[表1-7 ]{lang="EN-US"}[display trill lsdb]{lang="EN-US"}]{#struct_0_x1068_x9952_775259913}[命令显示信息描述表]{style="font-family:黑体"}
+表1-7 display trill lsdb命令显示信息描述表
 
-[]{#table_struct_0_x959139872}[[字段]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x198362303}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1068_x9952_998784142}
+描述
 
-[[LSP ID]{lang="EN-US"}]{#struct_0_x1068_x9952_1545538207}
+LSP ID
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_450291722}[标识，]{style="font-family:宋体"}[\*]{lang="EN-US"}[表示是本地生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}
+LSP标识，\*表示是本地生成的LSP
 
-[[Seq num/Sequence number]{lang="EN-US"}]{#struct_0_x1068_x9952_x799184016}
+Seq num/Sequence number
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_x1387005940}[的序列号]{style="font-family:宋体"}
+LSP的序列号
 
-[[Checksum]{lang="EN-US"}]{#struct_0_x1068_x9952_775325449}
+Checksum
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_x967231259}[的校验和]{style="font-family:宋体"}
+LSP的校验和
 
-[[Holdtime]{lang="EN-US"}]{#struct_0_x1068_x9952_x1461021384}
+Holdtime
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_x186715508}[的生存剩余时间，单位为秒]{style="font-family:宋体"}
+LSP的生存剩余时间，单位为秒
 
-[[Length]{lang="EN-US"}]{#struct_0_x1068_x9952_x2131653612}
+Length
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_x192164212}[的长度]{style="font-family:宋体"}
+LSP的长度
 
-[[Overload]{lang="EN-US"}]{#struct_0_x1068_x9952_774735626}
+Overload
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_249523794}[中]{style="font-family:宋体"}[Overload]{lang="EN-US"}[位的置位情况：]{style="font-family:宋体"}
+LSP中Overload位的置位情况：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0]{lang="EN-US"}]{#struct_0_x1068_x9952_x1092566911}[：表示]{lang="EN-US" style="font-family:宋体"}[未]{style="font-family:宋体"}[置位]{lang="EN-US" style="font-family:宋体"}
+·0：表示未置位
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[1]{lang="EN-US"}]{#struct_0_x1068_x9952_260192579}[：表示]{lang="EN-US" style="font-family:宋体"}[已]{style="font-family:宋体"}[置位]{lang="EN-US" style="font-family:宋体"}
+·1：表示已置位
 
-[[Source]{lang="EN-US"}]{#struct_0_x1068_x9952_2145017119}
+Source
 
-[[生成此]{style="font-family:宋体"}]{#struct_0_x1068_x9952_774801162}[LSP]{lang="SV"}[的]{style="font-family:宋体"}[RB]{lang="SV"}[的编号]{style="font-family:
-  宋体"}
+生成此LSP的RB的编号
 
-[[TRILL version]{lang="EN-US"}]{#struct_0_x1068_x9952_1229889256}
+TRILL version
 
-[[生成此]{style="font-family:宋体"}]{#struct_0_x1068_x9952_370494542}[LSP]{lang="SV"}[的]{style="font-family:宋体"}[RB]{lang="SV"}[支持的最高版本]{style="font-family:
-  宋体"}
+生成此LSP的RB支持的最高版本
 
-[[Nickname]{lang="EN-US"}]{#struct_0_x1068_x9952_864510309}
+Nickname
 
-[[生成此]{style="font-family:宋体"}]{#struct_0_x1068_x9952_774604554}[LSP]{lang="SV"}[的]{style="font-family:宋体"}[RB]{lang="SV"}[的]{style="font-family:
-  宋体"}[Nickname]{lang="EN-US"}[信息：]{style="font-family:宋体"}
+生成此LSP的RB的Nickname信息：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Nickname]{lang="EN-US"}]{#struct_0_x1068_x9952_x1744909182}[：]{lang="EN-US" style="font-family:宋体"}[RB]{lang="EN-US"}[的]{lang="EN-US" style="font-family:宋体"}[Nickname]{lang="EN-US"}
+·Nickname：RB的Nickname
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Priority]{lang="EN-US"}]{#struct_0_x1068_x9952_90225797}[：占有]{lang="EN-US" style="font-family:宋体"}[Nickname]{lang="EN-US"}[的优先级]{lang="EN-US" style="font-family:宋体"}
+·Priority：占有Nickname的优先级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Tree-root priority]{lang="EN-US"}]{#struct_0_x1068_x9952_x216318341}[：作为]{lang="EN-US" style="font-family:
-  宋体"}[TRILL]{lang="EN-US"}[分发树根桥的优先级]{lang="EN-US" style="font-family:
-  宋体"}
+·Tree-root priority：作为TRILL分发树根桥的优先级
 
-[[Trees]{lang="EN-US"}]{#struct_0_x1068_x9952_199391000}
+Trees
 
-[[生成此]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_774670090}[的]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树计算信息：]{style="font-family:宋体"}
+生成此LSP的RB的TRILL分发树计算信息：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Compute trees number]{lang="EN-US"}]{#struct_0_x1068_x9952_x138598006}[：希望整网计算的]{lang="EN-US" style="font-family:
-  宋体"}[TRILL]{lang="EN-US"}[分发树数量]{lang="EN-US" style="font-family:宋体"}
+·Compute trees number：希望整网计算的TRILL分发树数量
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Max compute trees number]{lang="EN-US"}]{#struct_0_x1068_x9952_2000783180}[：最多可计算的]{lang="EN-US" style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树数量]{lang="EN-US" style="font-family:宋体"}
+·Max compute trees number：最多可计算的TRILL分发树数量
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Used trees number]{lang="EN-US"}]{#struct_0_x1068_x9952_x952982873}[：作为]{lang="EN-US" style="font-family:
-  宋体"}[Ingress ]{lang="EN-US"}[RB]{lang="EN-US"}[时使用的]{lang="EN-US" style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树数量]{lang="EN-US" style="font-family:宋体"}
+·Used trees number：作为Ingress RB时使用的TRILL分发树数量
 
-[[Tree identifiers]{lang="EN-US"}]{#struct_0_x1068_x9952_774997770}
+Tree identifiers
 
-[[生成此]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_1233511473}[的]{style="font-family:宋体"}[RB]{lang="EN-US"}[作为根桥优先级最高的]{style="font-family:宋体"}[RB]{lang="EN-US"}[时，要求其它]{style="font-family:宋体"}[RB]{lang="EN-US"}[计算的]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树]{style="font-family:宋体"}
+生成此LSP的RB作为根桥优先级最高的RB时，要求其它RB计算的TRILL分发树
 
-[[Trees used identifiers]{lang="EN-US"}]{#struct_0_x1068_x9952_x581066792}
+Trees used identifiers
 
-[[生成此]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_752430388}[的]{style="font-family:宋体"}[RB]{lang="EN-US"}[作为]{style="font-family:宋体"}[Ingress RB]{lang="EN-US"}[时使用的]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树]{style="font-family:宋体"}
+生成此LSP的RB作为Ingress RB时使用的TRILL分发树
 
-[[Interested VLANs]{lang="EN-US"}]{#struct_0_x1068_x9952_775063306}
+Interested VLANs
 
-[[以生成此]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_x50484079}[的]{style="font-family:宋体"}[RB]{lang="EN-US"}[为]{style="font-family:宋体"}[AVF]{lang="EN-US"}[的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[信息：]{style="font-family:宋体"}
+以生成此LSP的RB为AVF的VLAN信息：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Start]{lang="EN-US"}]{#struct_0_x1068_x9952_x2073628178}[：起始]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号]{style="font-family:宋体"}
+·Start：起始VLAN的编号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[End]{lang="EN-US"}]{#struct_0_x1068_x9952_x1474517072}[：结束]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号]{style="font-family:宋体"}
+·End：结束VLAN的编号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[M4]{lang="EN-US"}]{#struct_0_x1068_x9952_774866698}[：在此]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[范围内是否存在]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[组播路由器。]{style="font-family:宋体"}[0]{lang="EN-US"}[表示存在，]{style="font-family:宋体"}[1]{lang="EN-US"}[表示不存在]{style="font-family:宋体"}
+·M4：在此VLAN范围内是否存在IPv4组播路由器。0表示存在，1表示不存在
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[M6]{lang="EN-US"}]{#struct_0_x1068_x9952_16805247}[：在此]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[范围内是否存在]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[组播路由器。]{style="font-family:宋体"}[0]{lang="EN-US"}[表示存在，]{style="font-family:宋体"}[1]{lang="EN-US"}[表示不存在]{style="font-family:宋体"}
+·M6：在此VLAN范围内是否存在IPv6组播路由器。0表示存在，1表示不存在
 
-[[Neighbor]{lang="EN-US"}]{#struct_0_x1068_x9952_815741470}
+Neighbor
 
-[[生成此]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_49834954}[的]{style="font-family:宋体"}[RB]{lang="EN-US"}[的邻居信息：]{style="font-family:宋体"}
+生成此LSP的RB的邻居信息：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ID]{lang="EN-US"}]{#struct_0_x1068_x9952_774932234}[：邻居的编号]{lang="EN-US" style="font-family:宋体"}
+·ID：邻居的编号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Cost]{lang="EN-US"}]{#struct_0_x1068_x9952_1605714108}[：到达此邻居的开销值]{style="font-family:宋体"}
+·Cost：到达此邻居的开销值
 
-[[Group address]{lang="EN-US"}]{#struct_0_x1068_x9952_331347444}
+Group address
 
-[[生成此]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_775259914}[的]{style="font-family:宋体"}[RB]{lang="EN-US"}[的组播]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址信息：]{style="font-family:宋体"}
+生成此LSP的RB的组播MAC地址信息：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VLAN ID]{lang="EN-US"}]{#struct_0_x1068_x9952_x198362304}[：组播]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[地址所]{lang="EN-US" style="font-family:宋体"}[属]{style="font-family:宋体"}[VLAN]{lang="EN-US"}
+·VLAN ID：组播MAC地址所属VLAN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Group MAC address]{lang="EN-US"}]{#struct_0_x1068_x9952_998849678}[：关注的组播]{lang="EN-US" style="font-family:
-  宋体"}[MAC]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}
+·Group MAC address：关注的组播MAC地址
 
-[[Gateway information]{lang="EN-US"}]{#struct_0_x1068_x9952_173789858}
+Gateway information
 
-[[生成此]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_x1309558542}[的]{style="font-family:宋体"}[RB]{lang="EN-US"}[的网关信息：]{style="font-family:宋体"}
+生成此LSP的RB的网关信息：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MAC address]{lang="EN-US"}]{#struct_0_x1068_x9952_173986466}[：封装的三层协议报文的实际]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+·MAC address：封装的三层协议报文的实际MAC地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VR type]{lang="EN-US"}]{#struct_0_x1068_x9952_x700431956}[：网络类型]{lang="EN-US" style="font-family:宋体"}[，]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[或]{style="font-family:宋体"}[IPv6]{lang="EN-US"}
+·VR type：网络类型，IPv4或IPv6
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VR ID]{lang="EN-US"}]{#struct_0_x1068_x9952_173920930}[：]{style="font-family:宋体"}[VR]{lang="EN-US"}[的编号]{style="font-family:宋体"}
+·VR ID：VR的编号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VR ]{lang="EN-US"}]{#struct_0_x1068_x9952_1986479513}[p]{lang="EN-US"}[riority]{lang="EN-US"}[：]{lang="EN-US" style="font-family:宋体"}[竞选主成员]{style="font-family:宋体"}[RB]{lang="EN-US"}[的优先级]{style="font-family:宋体"}
+·VR priority：竞选主成员RB的优先级
 
-[[Gateway router capability]{lang="EN-US"}]{#struct_0_x1068_x9952_x16562512}
+Gateway router capability
 
-[[生成此]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_173462171}[的]{style="font-family:宋体"}[RB]{lang="EN-US"}[的网关路由能力：]{style="font-family:宋体"}
+生成此LSP的RB的网关路由能力：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VR type]{lang="EN-US"}]{#struct_0_x1068_x9952_358391870}[：网络类型]{lang="EN-US" style="font-family:宋体"}[，]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[或]{style="font-family:宋体"}[IPv6]{lang="EN-US"}
+·VR type：网络类型，IPv4或IPv6
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VR ID]{lang="EN-US"}]{#struct_0_x1068_x9952_173396635}[：]{style="font-family:宋体"}[VR]{lang="EN-US"}[的编号]{style="font-family:宋体"}
+·VR ID：VR的编号
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VLAN ID]{lang="EN-US"}]{#struct_0_x1068_x9952_1285040832}[：虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址所属的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}
+·VLAN ID：虚拟IP地址所属的VLAN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Virtual ]{lang="EN-US"}]{#struct_0_x1068_x9952_1647736691}[a]{lang="EN-US"}[ddress]{lang="EN-US"}[：]{lang="EN-US" style="font-family:宋体"}[虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[列表]{lang="EN-US" style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::::: {#1645838662 .myid}
-[]{#_Toc404797961}[]{#struct_0_x1068_x9952_1773632964}[]{#_Toc296348982}[]{#_Toc287873945}
+·Virtual address：虚拟IP地址列表
 
 **TRILL \-- TRILL配置命令 \-- display trill mfib ingress**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](TRILL命令.files/image001.png){#图片 1 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1068_x9952_1904680436}
-:::
+![说明](TRILL命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1068_x9952_775325450}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[display** **trill** **mfib** **ingress**]命令用来显示TRILL组播转发表的入表项信息。
 
-[**[display]{lang="EN-US"}**[ **trill** **mfib** **ingress**]{lang="EN-US"}]{#struct_0_x1068_x9952_989083868}[命令用来显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[组播转发表的入表项信息。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1989029283}
+**[display**[ **trill** **mfib** **ingress** [ **vlan** *vlan-id* [ **local-entry** \| **remote-entry** ] ]]]
 
-[**[display]{lang="EN-US"}**[ **trill** **mfib** **ingress** \[ **vlan** *vlan-id* \[ **local-entry** \| **remote-entry** \] \]]{lang="EN-US"}]{#struct_0_x1068_x9952_40596500}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1976636599}
+任意视图
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x990842770}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x674284176}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_364434499}
+network-operator
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_1781426317}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1357144100}
+mdc-operator
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_774735623}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_249523789}
+**[vlan***vlan-id*]：显示指定VLAN内的信息，*vlan-id*的取值范围为1～4094。如果未指定本参数，将显示所有VLAN内的信息。
 
-[**[vlan]{lang="EN-US"}**[ ]{lang="EN-US"}*[vlan-id]{lang="EN-US"}*]{#struct_0_x1068_x9952_1246085262}[：显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果未指定本参数，将显示所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[local-entry**]：显示本地的入表项信息。本地入表项是指从该表项中的端口发出的报文无需进行TRILL封装。
 
-[**[local-entry]{lang="EN-US"}**]{#struct_0_x1068_x9952_318957067}[：显示本地的入表项信息。本地入表项是指从该表项中的端口发出的报文无需进行]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[封装。]{style="font-family:宋体"}
+**[remote-entry**]：显示远端的入表项信息。远端入表项是指从该表项中的端口发出的报文需要进行TRILL封装。
 
-[**[remote-entry]{lang="EN-US"}**]{#struct_0_x1068_x9952_x702517420}[：显示远端的入表项信息。远端入表项是指从该表项中的端口发出的报文需要进行]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[封装。]{style="font-family:宋体"}
+【使用指南】
 
-[[【使用指南】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x2089988331}
+如果未指定**local-entry**和**remote-entry**参数，将同时显示本地和远端的入表项信息。
 
-[[如果未指定]{style="font-family:宋体"}**[local-entry]{lang="EN-US"}**]{#struct_0_x1068_x9952_x1965397452}[和]{style="font-family:宋体"}**[remote-entry]{lang="EN-US"}**[参数，将同时显示本地和远端的入表项信息。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x2142092659}
+\# 显示TRILL组播转发表所有入表项的信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x694686800}[显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[组播转发表所有入表项的信息。]{style="font-family:宋体"}
+\<Sysname\> display trill mfib ingress
 
-[[\<Sysname\> display trill mfib ingress]{lang="EN-US"}]{#struct_0_x1068_x9952_x771799805}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+Ingress type: Local entry
 
-[Ingress type: Local entry]{lang="EN-US"}
+  VLAN ID: 1
 
-[  VLAN ID: 1]{lang="EN-US"}
+  Ports:
 
-[  Ports:]{lang="EN-US"}
+    GE1/0/1
 
-[    GE1/0/1]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+Ingress type: Remote entry
 
-[Ingress type: Remote entry]{lang="EN-US"}
+  VLAN ID: 1
 
-[  VLAN ID: 1]{lang="EN-US"}
+  RootNickName: 0x5092
 
-[  RootNickName: 0x5092]{lang="EN-US"}
+  Ports:
 
-[  Ports:]{lang="EN-US"}
+    GE1/0/2
 
-[    GE1/0/2]{lang="EN-US"}
+表1-8 display trill mfib ingress命令显示信息描述表
 
-[[表1-8 ]{lang="EN-US"}[display trill mfib ingress]{lang="EN-US"}]{#struct_0_x1068_x9952_299140065}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x962676352}[[字段]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x291746643}
-:::::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1068_x9952_430903162}
+Ingress type
 
-[[Ingress type]{lang="EN-US"}]{#struct_0_x1068_x9952_x670596224}
+入表项的类型：
 
-[[入表项的类型：]{style="font-family:宋体"}]{#struct_0_x1068_x9952_774670087}
+·Local entry：表示本地入表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Local entry]{lang="EN-US"}]{#struct_0_x1068_x9952_1817717127}[：表示本地入]{lang="EN-US" style="font-family:宋体"}[表项]{style="font-family:宋体"}
+·Remote entry：表示远端入表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Remote entry]{lang="EN-US"}]{#struct_0_x1068_x9952_x1057130143}[：表示远端入表]{lang="EN-US" style="font-family:宋体"}[项]{style="font-family:宋体"}
+VLAN ID
 
-[[VLAN ID]{lang="EN-US"}]{#struct_0_x1068_x9952_67806898}
+表项对应VLAN的编号
 
-[[表项对应]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1068_x9952_x1864157555}[的编号]{style="font-family:宋体"}
+RootNickName
 
-[[RootNickName]{lang="EN-US"}]{#struct_0_x1068_x9952_x574202511}
+表项对应RB的Nickname
 
-[[表项对应]{style="font-family:宋体"}[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x76944621}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}
+Ports
 
-[[Ports]{lang="EN-US"}]{#struct_0_x1068_x9952_774997767}
-
-[[表项对应的端口]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x722803662}
-
-[ ]{lang="EN-US"}
-
-::::: {#-1717650448 .myid}
-[]{#_Toc404797962}[]{#struct_0_x1068_x9952_x1983488086}
+表项对应的端口
 
 **TRILL \-- TRILL配置命令 \-- display trill mfib transit**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](TRILL命令.files/image001.png){#图片 2 width="62" height="25"}]{lang="EN-US"}]{#struct_0_x1068_x9952_x2071254533}
-:::
+![说明](TRILL命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x1068_x9952_2049835902}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[display** **trill** **mfib** **transit**]命令用来显示TRILL组播转发表的出表项信息。
 
-[**[display]{lang="EN-US"}**[ **trill** **mfib** **transit**]{lang="EN-US"}]{#struct_0_x1068_x9952_662820988}[命令用来显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[组播转发表的出表项信息。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_461778835}
+**[display**[ **trill** **mfib** **transit** [ **nickname** *nickname* [ **prune-entry** \| **rpf-entry** \| **vlan** *vlan-id* [ **mac** *mac-address* ] ] ]]]
 
-[**[display]{lang="EN-US"}**[ **trill** **mfib** **transit** \[ **nickname** *nickname* \[ **prune-entry** \| **rpf-entry** \| **vlan** *vlan-id* \[ **mac** *mac-address* \] \] \]]{lang="EN-US"}]{#struct_0_x1068_x9952_775063303}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x50484074}
+任意视图
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x2073628191}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_899053427}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1252017242}
+network-operator
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x1223232296}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1830693679}
+mdc-operator
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x40773845}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_342660698}
+**[nickname** *nickname*]：显示指定RB的信息。*nickname*表示RB的Nickname，为0x1～0xFFFE的十六进制数。如果未指定本参数，将显示所有RB的信息。
 
-[**[nickname]{lang="EN-US"}**[ *nickname*]{lang="EN-US"}]{#struct_0_x1068_x9952_774866695}[：显示指定]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[信息。]{style="font-family:宋体"}*[nickname]{lang="EN-US"}*[表示]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[，为]{style="font-family:宋体"}[0x1]{lang="EN-US"}[～]{style="font-family:宋体"}[0xFFFE]{lang="EN-US"}[的十六进制数]{style="font-family:宋体"}[。如果未指定本参数，将显示所有]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[信息。]{style="font-family:宋体"}
+**[prune-entry**]：显示被剪枝掉的表项的信息。如果未指定本参数，将显示所有表项的信息。
 
-[**[prune-entry]{lang="EN-US"}**]{#struct_0_x1068_x9952_16805252}[：显示被剪枝掉的表项的信息。如果未指定本参数，将显示所有表项的信息。]{style="font-family:宋体"}
+**[rpf-entry**]：显示RPF表项的信息。如果未指定本参数，将显示所有表项的信息。
 
-[**[rpf-entry]{lang="EN-US"}**]{#struct_0_x1068_x9952_1970646713}[：显示]{style="font-family:宋体"}[RPF]{lang="EN-US"}[表项的信息。如果未指定本参数，将显示所有表项的信息。]{style="font-family:宋体"}
+**[vlan** *vlan-id*]：显示指定VLAN内的信息，*vlan-id*的取值范围为1～4094。如果未指定本参数，将显示所有VLAN内的信息。
 
-[**[vlan]{lang="EN-US"}**[ *vlan-id*]{lang="EN-US"}]{#struct_0_x1068_x9952_575664230}[：显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果未指定本参数，将显示所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[mac** *mac-address*]**：**显示指定MAC地址的信息，*mac-address*为MAC地址。如果未指定本参数，将显示所有MAC地址的信息。
 
-[**[mac]{lang="EN-US"}**[ *mac-address*]{lang="EN-US"}]{#struct_0_x1068_x9952_1905601436}**[：]{style="font-family:宋体"}**[显示指定]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的信息，]{style="font-family:宋体"}*[mac-address]{lang="EN-US"}*[为]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。如果未指定本参数，将显示所有]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的信息。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_258512960}
+\# 显示TRILL组播转发表所有出表项的信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_2058959442}[显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[组播转发表所有出表项的信息。]{style="font-family:宋体"}
+\<Sysname\> display trill mfib transit
 
-[[\<Sysname\> display trill mfib transit]{lang="EN-US"}]{#struct_0_x1068_x9952_774932231}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+Transit type: RPF entry
 
-[Transit type: RPF entry]{lang="EN-US"}
+  RootNickName: 0x5092
 
-[  RootNickName: 0x5092]{lang="EN-US"}
+  InNickName: 0x5092
 
-[  InNickName: 0x5092]{lang="EN-US"}
+  Port:GE1/0/1
 
-[  Port:]{lang="EN-US"}[ ]{lang="EN-US"}[GE1/0/1]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+Transit type: RB entry
 
-[Transit type: RB entry]{lang="EN-US"}
+  RootNickName: 0x5092
 
-[  RootNickName: 0x5092]{lang="EN-US"}
+  Flag: Egress/Transit
 
-[  Flag: Egress/Transit]{lang="SV"}
+  Ports:
 
-[  Ports:]{lang="SV"}
+    GE1/0/1
 
-[    GE1/0/1]{lang="SV"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+Transit type: VLAN RB entry
 
-[Transit type: VLAN RB entry]{lang="EN-US"}
+  RootNickName: 0x5092
 
-[  RootNickName: 0x5092]{lang="EN-US"}
+  VLAN ID: 1
 
-[  VLAN ID: 1]{lang="SV"}
+  Flag: Egress/Transit
 
-[  Flag: Egress/Transit]{lang="SV"}
+  Ports:
 
-[  Ports:]{lang="SV"}
+    GE1/0/1
 
-[    GE1/0/1]{lang="SV"}
+表1-9 display trill mfib transit命令显示信息描述表
 
-[[表1-9 ]{lang="EN-US"}[display trill mfib transit]{lang="EN-US"}]{#struct_0_x1068_x9952_1605714103}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x960645024}[[字段]{style="font-family:黑体"}]{#struct_0_x1068_x9952_330757620}
-:::::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1468859651}
+Transit type
 
-[[Transit type]{lang="EN-US"}]{#struct_0_x1068_x9952_775259911}
+出表项的类型：
 
-[[出表项的类型：]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x198362301}
+·RB entry：表示RB表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RB entry]{lang="EN-US"}]{#struct_0_x1068_x9952_998653070}[：]{lang="EN-US" style="font-family:宋体"}[表示]{style="font-family:宋体"}[RB]{lang="EN-US"}[表项]{style="font-family:宋体"}
+·RPF entry：表示RPF表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RPF entry]{lang="EN-US"}]{#struct_0_x1068_x9952_x2001169161}[：]{lang="EN-US" style="font-family:宋体"}[表示]{style="font-family:宋体"}[RPF]{lang="EN-US"}[表项]{style="font-family:宋体"}
+·VLAN RB entry：表示指定VLAN的RB表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VLAN RB entry]{lang="EN-US"}]{#struct_0_x1068_x9952_1905146220}[：]{lang="EN-US" style="font-family:宋体"}[表示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的]{style="font-family:宋体"}[RB]{lang="EN-US"}[表项]{style="font-family:宋体"}
+·MAC VLAN RB entry：表示指定MAC地址和VLAN的RB表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MAC VLAN RB entry]{lang="EN-US"}]{#struct_0_x1068_x9952_x1696592641}[：]{lang="EN-US" style="font-family:
-  宋体"}[表示指定]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址和]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的]{style="font-family:宋体"}[RB]{lang="EN-US"}[表项]{style="font-family:宋体"}
+RootNickName
 
-[[RootNickName]{lang="EN-US"}]{#struct_0_x1068_x9952_775325447}
+表项对应RB的Nickname
 
-[[表项对应]{style="font-family:宋体"}[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x967231261}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}
+InNickName
 
-[[InNickName]{lang="EN-US"}]{#struct_0_x1068_x9952_x1461545673}
+表项入口RB的Nickname
 
-[[表项入口]{style="font-family:宋体"}[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x1214145654}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}
+VLAN ID
 
-[[VLAN ID]{lang="EN-US"}]{#struct_0_x1068_x9952_x1746772017}
+表项对应VLAN的编号
 
-[[表项对应]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1068_x9952_x251013664}[的编号]{style="font-family:宋体"}
+MAC address
 
-[[MAC address]{lang="EN-US"}]{#struct_0_x1068_x9952_774735624}
+表项对应的MAC地址
 
-[[表项对应的]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1068_x9952_249523792}[地址]{style="font-family:宋体"}
+Flag
 
-[[Flag]{lang="SV"}]{#struct_0_x1068_x9952_x1092566909}
+表项的类型：
 
-[[表项的类型：]{style="font-family:宋体"}]{#struct_0_x1068_x9952_616488475}
+·Egress：表示Egress表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Egress]{lang="EN-US"}]{#struct_0_x1068_x9952_x335476296}[：表示]{lang="EN-US" style="font-family:宋体"}[Egress]{lang="EN-US"}[表项]{lang="EN-US" style="font-family:宋体"}
+·Transit：表示Transit表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Transit]{lang="EN-US"}]{#struct_0_x1068_x9952_774801160}[：表示]{lang="EN-US" style="font-family:宋体"}[Transit]{lang="EN-US"}[表项]{lang="EN-US" style="font-family:宋体"}
+·Egress/Transit：表示既是Egress表项又是Transit表项
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Egress/Transit]{lang="EN-US"}]{#struct_0_x1068_x9952_1229889258}[：表示既是]{lang="EN-US" style="font-family:宋体"}[Egress]{lang="EN-US"}[表项又是]{lang="EN-US" style="font-family:宋体"}[Transit]{lang="EN-US"}[表项]{lang="EN-US" style="font-family:宋体"}
+Port/Ports
 
-[[Port]{lang="EN-US"}]{#struct_0_x1068_x9952_370625614}[/Ports]{lang="SV"}
-
-[[表项对应的端口]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x1187576745}
-
-[ ]{lang="EN-US"}
-
-::: {#295424289 .myid}
-[]{#_Toc404797963}[]{#struct_0_x1068_x9952_1439600388}
+表项对应的端口
 
 **TRILL \-- TRILL配置命令 \-- display trill multicast-route**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **trill** **multicast-route**]{lang="EN-US"}]{#struct_0_x1068_x9952_774604552}[命令用来显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[组播路由表信息，即基于组播分发树的组播报文的下一跳出端口列表。]{style="font-family:宋体"}
+**[display** **trill** **multicast-route**]命令用来显示TRILL组播路由表信息，即基于组播分发树的组播报文的下一跳出端口列表。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1744909188}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **trill** **multicast-route** \[ **tree-root** *nickname* \[ **vlan** *vlan-list* \[ **mac-address** *mac-address* \] \] \]]{lang="EN-US"}]{#struct_0_x1068_x9952_x1428803977}
+**[display** **trill** **multicast-route** [ **tree-root** *nickname* [ **vlan** *vlan-list* [ **mac-address** *mac-address*  ] ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1247018095}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x370269394}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1565202335}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1049269990}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x956801662}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x299139472}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_774670088}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1817717122}
+【参数】
 
-[**[tree-root]{lang="EN-US"}**[ *nickname*]{lang="EN-US"}]{#struct_0_x1068_x9952_x1056933535}[：显示以指定]{style="font-family:宋体"}[RB]{lang="EN-US"}[为]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树根桥的]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[组播路由表信息。]{style="font-family:宋体"}*[nickname]{lang="EN-US"}*[表示]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[，为]{style="font-family:宋体"}[0x1]{lang="EN-US"}[～]{style="font-family:宋体"}[0xFFFE]{lang="EN-US"}[的十六进制数]{style="font-family:宋体"}[。如果未指定本参数，将显示所有]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[组播路由表信息。]{style="font-family:宋体"}
+**[tree-root** *nickname*]：显示以指定RB为TRILL分发树根桥的TRILL组播路由表信息。*nickname*表示RB的Nickname，为0x1～0xFFFE的十六进制数。如果未指定本参数，将显示所有TRILL组播路由表信息。
 
-[**[vlan]{lang="EN-US"}**[ *vlan-list*]{lang="EN-US"}]{#struct_0_x1068_x9952_722987825}[：显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}[v*lan-list*]{lang="EN-US"}[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表，表示多个]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。表示方式为]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[ = { *vlan-id* \[ **to** *vlan-id* \] }&\<1-10\>]{lang="EN-US"}[。其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。如果未指定本参数，将显示所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[vlan** *vlan-list*]：显示指定VLAN内的信息。v*lan-list*为VLAN列表，表示多个VLAN。表示方式为*vlan-list* = { *vlan-id* [ **to** *vlan-id*  }&\<1-10\>]。其中，*vlan-id*为VLAN的编号，取值范围为1～4094。&\<1-10\>表示前面的参数最多可以输入10次。如果未指定本参数，将显示所有VLAN内的信息。
 
-[**[mac-address]{lang="EN-US"}**[ *mac-address*]{lang="EN-US"}]{#struct_0_x1068_x9952_1948172349}[：显示指定]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的信息，]{style="font-family:宋体"}*[mac-address]{lang="EN-US"}*[为]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。如果未指定本参数，将显示所有]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的信息。]{style="font-family:宋体"}
+**[mac-address** *mac-address*]：显示指定MAC地址的信息，*mac-address*为MAC地址。如果未指定本参数，将显示所有MAC地址的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1369725573}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x1907713415}[显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[组播路由表所有表项的信息。]{style="font-family:宋体"}
+\# 显示TRILL组播路由表所有表项的信息。
 
-[[\<Sysname\> display trill multicast-route]{lang="EN-US"}]{#struct_0_x1068_x9952_774997768}
+\<Sysname\> display trill multicast-route
 
-[Root                          Flag]{lang="EN-US"}
+Root                          Flag
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[0x899b                        Valid]{lang="EN-US"}
+0x899b                        Valid
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x722803671}[显示以指定]{style="font-family:宋体"}[RB]{lang="EN-US"}[（]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[为]{style="font-family:宋体"}[0x899B]{lang="EN-US"}[）为]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树根桥的]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[组播路由表信息。]{style="font-family:宋体"}
+\# 显示以指定RB（Nickname为0x899B）为TRILL分发树根桥的TRILL组播路由表信息。
 
-[[\<Sysname\> display trill multicast-route tree-root 899b]{lang="EN-US"}]{#struct_0_x1068_x9952_x1983553621}
+\<Sysname\> display trill multicast-route tree-root 899b
 
-[Root: 0x899b]{lang="EN-US"}
+Root: 0x899b
 
-[LocalRcvFlag: True]{lang="EN-US"}
+LocalRcvFlag: True
 
-[List of VLANs:]{lang="EN-US"}
+List of VLANs:
 
-[  1 to 10, 13, 40, 60 to 85, 200, 1001]{lang="EN-US"}
+  1 to 10, 13, 40, 60 to 85, 200, 1001
 
-[List of outgoing ports (4 in total):]{lang="EN-US"}
+List of outgoing ports (4 in total):
 
-[  GE1/0/1]{lang="EN-US"}
+  GE1/0/1
 
-[  GE1/0/2]{lang="EN-US"}
+  GE1/0/2
 
-[  GE1/0/3]{lang="EN-US"}
+  GE1/0/3
 
-[  GE1/0/4]{lang="EN-US"}
+  GE1/0/4
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x1646063951}[显示]{style="font-family:宋体"}[VLAN 1]{lang="EN-US"}[内以指定]{style="font-family:宋体"}[RB]{lang="EN-US"}[（]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[为]{style="font-family:宋体"}[0x899B]{lang="EN-US"}[）为]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树根桥的]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[组播路由表信息。]{style="font-family:宋体"}
+\# 显示VLAN 1内以指定RB（Nickname为0x899B）为TRILL分发树根桥的TRILL组播路由表信息。
 
-[[\<Sysname\> display trill multicast-route tree-root 899b vlan 1]{lang="EN-US"}]{#struct_0_x1068_x9952_775063304}
+\<Sysname\> display trill multicast-route tree-root 899b vlan 1
 
-[Root: 0x899b]{lang="EN-US"}
+Root: 0x899b
 
-[VLAN: 1]{lang="EN-US"}
+VLAN: 1
 
-[LocalRcvFlag: False]{lang="EN-US"}
+LocalRcvFlag: False
 
-[List of outgoing ports (3 in total):]{lang="EN-US"}
+List of outgoing ports (3 in total):
 
-[  GE1/0/1]{lang="EN-US"}
+  GE1/0/1
 
-[  GE1/0/2]{lang="EN-US"}
+  GE1/0/2
 
-[  GE1/0/3]{lang="EN-US"}
+  GE1/0/3
 
-[List of IPv4 multicast-router ports (2 in total):]{lang="EN-US"}
+List of IPv4 multicast-router ports (2 in total):
 
-[  GE1/0/1]{lang="EN-US"}
+  GE1/0/1
 
-[  GE1/0/2]{lang="EN-US"}
+  GE1/0/2
 
-[List of IPv6 multicast-router ports (2 in total):]{lang="EN-US"}
+List of IPv6 multicast-router ports (2 in total):
 
-[  GE1/0/2]{lang="EN-US"}
+  GE1/0/2
 
-[  GE1/0/3]{lang="EN-US"}
+  GE1/0/3
 
-[List of MAC addresses (4 in total):]{lang="EN-US"}
+List of MAC addresses (4 in total):
 
-[  0000-1111-00ee]{lang="EN-US"}
+  0000-1111-00ee
 
-[  00ff-1111-00ff]{lang="EN-US"}
+  00ff-1111-00ff
 
-[  00ef-1111-00ef]{lang="EN-US"}
+  00ef-1111-00ef
 
-[  0000-111f-00ff]{lang="EN-US"}
+  0000-111f-00ff
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x50484081}[显示]{style="font-family:宋体"}[VLAN 1]{lang="EN-US"}[内以指定]{style="font-family:宋体"}[RB]{lang="EN-US"}[（]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[为]{style="font-family:宋体"}[0x899B]{lang="EN-US"}[）为]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树根桥的、指定]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址（]{style="font-family:宋体"}[0011-11FF-0022]{lang="EN-US"}[）上的]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[组播路由表信息。]{style="font-family:宋体"}
+\# 显示VLAN 1内以指定RB（Nickname为0x899B）为TRILL分发树根桥的、指定MAC地址（0011-11FF-0022）上的TRILL组播路由表信息。
 
-[[\<Sysname\> display trill multicast-route tree-root 899b vlan 1 mac-address 0011-11ff-0022]{lang="EN-US"}]{#struct_0_x1068_x9952_774866696}
+\<Sysname\> display trill multicast-route tree-root 899b vlan 1 mac-address 0011-11ff-0022
 
-[Root: ]{lang="NL"}[0x899b]{lang="EN-US"}
+Root: 0x899b
 
-[VLAN: 1]{lang="EN-US"}
+VLAN: 1
 
-[MAC address: 0011-11ff-0022]{lang="EN-US"}
+MAC address: 0011-11ff-0022
 
-[LocalRcvFlag: True]{lang="EN-US"}
+LocalRcvFlag: True
 
-[List of outgoing ports (2 in total):]{lang="EN-US"}
+List of outgoing ports (2 in total):
 
-[  GE1/0/3]{lang="EN-US"}
+  GE1/0/3
 
-[  GE1/0/4]{lang="EN-US"}
+  GE1/0/4
 
-[[表1-10 ]{lang="EN-US"}[display trill multicast-route]{lang="EN-US"}]{#struct_0_x1068_x9952_16805253}[命令显示信息描述表]{style="font-family:黑体"}
+表1-10 display trill multicast-route命令显示信息描述表
 
-[]{#table_struct_0_x968338656}[[字段]{style="font-family:黑体"}]{#struct_0_x1068_x9952_14331577}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x435837042}
+描述
 
-[[Root]{lang="NL"}]{#struct_0_x1068_x9952_1907066178}
+Root
 
-[[作为]{style="font-family:宋体"}[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_147918117}[分发树根桥的]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[Nickname ]{lang="NL"}
+作为TRILL分发树根桥的RB的Nickname
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1068_x9952_1018478672}
+VLAN
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1068_x9952_774932232}[的编号]{style="font-family:宋体"}
+VLAN的编号
 
-[[MAC address]{lang="EN-US"}]{#struct_0_x1068_x9952_1605714106}
+MAC address
 
-[[MAC]{lang="EN-US"}]{#struct_0_x1068_x9952_330429940}[地址]{style="font-family:宋体"}
+MAC地址
 
-[[Flag]{lang="NL"}]{#struct_0_x1068_x9952_x830196583}
+Flag
 
-[[根桥是否有效：]{style="font-family:宋体"}]{#struct_0_x1068_x9952_1406662866}
+根桥是否有效：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Invalid]{lang="EN-US"}]{#struct_0_x1068_x9952_1579956844}[：]{lang="EN-US" style="font-family:宋体"}[表示]{style="font-family:宋体"}[无效]{lang="EN-US" style="font-family:宋体"}
+·Invalid：表示无效
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[V]{lang="EN-US"}[alid]{lang="EN-US"}]{#struct_0_x1068_x9952_775259912}[：]{lang="EN-US" style="font-family:宋体"}[表示]{style="font-family:宋体"}[有效]{lang="EN-US" style="font-family:宋体"}
+·Valid：表示有效
 
-[[LocalRcvFlag]{lang="EN-US"}]{#struct_0_x1068_x9952_x198362302}
+LocalRcvFlag
 
-[[本地接收标识，即是否需要进行本地转发：]{style="font-family:宋体"}]{#struct_0_x1068_x9952_998718606}
+本地接收标识，即是否需要进行本地转发：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[False]{lang="EN-US"}]{#struct_0_x1068_x9952_770080403}[：表示不需要进行本地转发]{style="font-family:宋体"}
+·False：表示不需要进行本地转发
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[True]{lang="EN-US"}]{#struct_0_x1068_x9952_1139006934}[：表示需要进行本地转发]{style="font-family:宋体"}
+·True：表示需要进行本地转发
 
-[[List of outgoing ports (4 in total)]{lang="EN-US"}]{#struct_0_x1068_x9952_775325448}
+List of outgoing ports (4 in total)
 
-[[出端口列表及其总数，]{style="font-family:宋体"}[None]{lang="EN-US"}]{#struct_0_x1068_x9952_x967231260}[表示没有]{style="font-family:宋体"}
+出端口列表及其总数，None表示没有
 
-[[List of VLANs (2 in total)]{lang="EN-US"}]{#struct_0_x1068_x9952_x1461480137}
+List of VLANs (2 in total)
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1068_x9952_73238497}[列表及其总数，]{style="font-family:宋体"}[None]{lang="EN-US"}[表示没有]{style="font-family:宋体"}
+VLAN列表及其总数，None表示没有
 
-[[List of IPv4 multicast-router ports (2 in total)]{lang="EN-US"}]{#struct_0_x1068_x9952_939932888}
+List of IPv4 multicast-router ports (2 in total)
 
-[[IPv4]{lang="EN-US"}]{#struct_0_x1068_x9952_774735621}[组播路由器的端口列表及其总数]{style="font-family:宋体"}
+IPv4组播路由器的端口列表及其总数
 
-[[List of IPv6 multicast-router ports (2 in total)]{lang="EN-US"}]{#struct_0_x1068_x9952_249523787}
+List of IPv6 multicast-router ports (2 in total)
 
-[[IPv6]{lang="EN-US"}]{#struct_0_x1068_x9952_1246085248}[组播路由器的端口列表及其总数]{style="font-family:宋体"}
+IPv6组播路由器的端口列表及其总数
 
-[[List of MAC addresses (4 in total)]{lang="EN-US"}]{#struct_0_x1068_x9952_319350281}
+List of MAC addresses (4 in total)
 
-[[MAC]{lang="EN-US"}]{#struct_0_x1068_x9952_1459447643}[地址列表及其总数]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1521198473 .myid}
-[]{#_Toc404797964}[]{#struct_0_x1068_x9952_774801157}
+MAC地址列表及其总数
 
 **TRILL \-- TRILL配置命令 \-- display trill neighbor-table**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **trill** **neighbor-table**]{lang="EN-US"}]{#struct_0_x1068_x9952_x344088851}[命令用来显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[邻居表信息。]{style="font-family:宋体"}
+**[display** **trill** **neighbor-table**]命令用来显示TRILL邻居表信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x2117421763}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **trill** ]{lang="EN-US"}**[neighbor-table]{lang="EN-US"}**]{#struct_0_x1068_x9952_x126290645}
+**[display** **trill** **neighbor-table**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_889323698}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x2139202634}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1937320671}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1428327068}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_774604549}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_211405959}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_1801005274}
+mdc-operator
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1876126454}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_1164374159}[显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[邻居表信息。]{style="font-family:宋体"}
+\# 显示TRILL邻居表信息。
 
-[[\<Sysname\> display trill neighbor-table]{lang="EN-US"}]{#struct_0_x1068_x9952_x707582376}
+\<Sysname\> display trill neighbor-table
 
-[Total number of nexthops: 3]{lang="EN-US"}
+Total number of nexthops: 3
 
-[ ]{lang="EN-US"}
+NextHop   MAC address       Interface
 
-[NextHop   MAC address       Interface]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+0x899b    00e0-fc58-123a    GE1/0/1
 
-[0x899b    00e0-fc58-123a    GE1/0/1]{lang="EN-US"}
+表1-11 display trill neighbor-table命令显示信息描述表
 
-[[表1-11 ]{lang="DE"}[display trill neighbor-table]{lang="DE"}]{#struct_0_x1068_x9952_832243729}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x971184288}[[字段]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1026283619}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1068_x9952_774670085}
+Total number of nexthops
 
-[[Total number of nexthops]{lang="EN-US"}]{#struct_0_x1068_x9952_231896024}
+下一跳的总数
 
-[[下一跳的总数]{style="font-family:宋体"}]{#struct_0_x1068_x9952_1426257751}
+NextHop
 
-[[NextHop]{lang="EN-US"}]{#struct_0_x1068_x9952_1817717125}
+下一跳的Nickname
 
-[[下一跳的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}]{#struct_0_x1068_x9952_x1057261215}
+MAC address
 
-[[MAC address]{lang="EN-US"}]{#struct_0_x1068_x9952_x735548848}
+下一跳的MAC地址
 
-[[下一跳的]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1068_x9952_x23492785}[地址]{style="font-family:宋体"}
+Interface
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1068_x9952_x255883996}
-
-[[出端口]{style="font-family:宋体"}]{#struct_0_x1068_x9952_774997765}
-
-[ ]{lang="EN-US"}
-
-::: {#-631074906 .myid}
-[]{#_Toc404797965}[]{#struct_0_x1068_x9952_x722803660}
+出端口
 
 **TRILL \-- TRILL配置命令 \-- display trill peer**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **trill** **peer**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1983619158}[命令用来显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[邻居统计信息。]{style="font-family:宋体"}
+**[display** **trill** **peer**]命令用来显示TRILL邻居统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1388138979}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **trill** **peer** \[ **interface** *interface-type* *interface-number* \]]{lang="EN-US"}]{#struct_0_x1068_x9952_x2030710146}
+**[display** **trill** **peer** [ **interface** *interface-type* *interface-number* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x750513977}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1068_x9952_762156189}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_737381992}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x2052652268}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_775063301}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x50484076}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x2073628189}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1255349323}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type* *interface-number*]{lang="EN-US"}]{#struct_0_x1068_x9952_1328108915}[：显示指定端口上的信息，]{style="font-family:宋体"}*[interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}[为端口类型和端口编号。如果未指定本参数，将显示所有端口上的信息。]{style="font-family:宋体"}
+**[interface** *interface-type* *interface-number*]：显示指定端口上的信息，*interface-type* *interface-number*为端口类型和端口编号。如果未指定本参数，将显示所有端口上的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_150722714}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_2100855296}[显示端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上的]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[邻居统计信息。]{style="font-family:宋体"}
+\# 显示端口GigabitEthernet1/0/1上的TRILL邻居统计信息。
 
-[[\<Sysname\> display trill peer interface gigabitethernet 1/0/1]{lang="EN-US"}]{#struct_0_x1068_x9952_774866693}
+\<Sysname\> display trill peer interface gigabitethernet 1/0/1
 
-[System ID: 00e0.fc58.123a]{lang="EN-US"}
+System ID: 00e0.fc58.123a
 
-[Interface: GigabitEthernet1/0/1]{lang="EN-US"}
+Interface: GigabitEthernet1/0/1
 
-[Circuit ID: 00e0.fc58.123a.01]{lang="EN-US"}
+Circuit ID: 00e0.fc58.123a.01
 
-[State: Up]{lang="EN-US"}
+State: Up
 
-[Holdtime: 8s]{lang="EN-US"}
+Holdtime: 8s
 
-[DRB priority: 64]{lang="EN-US"}
+DRB priority: 64
 
-[Nickname: 0x899b]{lang="EN-US"}
+Nickname: 0x899b
 
-[Uptime: 00:38:15]{lang="EN-US"}
+Uptime: 00:38:15
 
-[]{#struct_0_x1068_x9952_16805258}[[表1-12 ]{lang="EN-US"}[display trill peer]{lang="EN-US"}]{#_Toc283318653}[命令显示信息描述表]{style="font-family:黑体"}
+表1-12 display trill peer命令显示信息描述表
 
-[]{#table_struct_0_x969465472}[[字段]{style="font-family:黑体"}]{#struct_0_x1068_x9952_823635641}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1068_x9952_729040334}
+描述
 
-[[System ID]{lang="EN-US"}]{#struct_0_x1068_x9952_1231478894}
+System ID
 
-[[邻居的]{style="font-family:宋体"}[System ID]{lang="EN-US"}]{#struct_0_x1068_x9952_x61752970}
+邻居的System ID
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1068_x9952_774932229}
+Interface
 
-[[与邻居直连的本地]{style="font-family:宋体"}[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x350601025}[端口]{style="font-family:宋体"}
+与邻居直连的本地TRILL端口
 
-[[Circuit ID]{lang="EN-US"}]{#struct_0_x1068_x9952_1407745582}
+Circuit ID
 
-[[伪节点的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_x1578866040}[编号]{style="font-family:宋体"}
+伪节点的LSP编号
 
-[[State]{lang="EN-US"}]{#struct_0_x1068_x9952_x843445801}
+State
 
-[[邻居状态，包括]{style="font-family:宋体"}[Up]{lang="EN-US"}]{#struct_0_x1068_x9952_x695553155}[和]{style="font-family:宋体"}[Down]{lang="EN-US"}
+邻居状态，包括Up和Down
 
-[[Holdtime]{lang="EN-US"}]{#struct_0_x1068_x9952_775259909}
+Holdtime
 
-[[邻接关系保持时间，单位为秒。如果在该时间内未收到邻居发来的]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_x1068_x9952_1757952827}[报文，则认为与该邻居的邻接关系已失效；如果收到了，则重置此时间]{style="font-family:宋体"}
+邻接关系保持时间，单位为秒。如果在该时间内未收到邻居发来的Hello报文，则认为与该邻居的邻接关系已失效；如果收到了，则重置此时间
 
-[[DRB priority]{lang="EN-US"}]{#struct_0_x1068_x9952_1496398517}
+DRB priority
 
-[[邻居端口的]{style="font-family:宋体"}[DRB]{lang="EN-US"}]{#struct_0_x1068_x9952_x2031111175}[优先级]{style="font-family:宋体"}
+邻居端口的DRB优先级
 
-[[Nickname]{lang="EN-US"}]{#struct_0_x1068_x9952_x1015648517}
+Nickname
 
-[[邻居的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}]{#struct_0_x1068_x9952_775325445}
+邻居的Nickname
 
-[[Uptime]{lang="EN-US"}]{#struct_0_x1068_x9952_x967231263}
+Uptime
 
-[[与该邻居的邻接关系已保持的时间]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x1461676745}
-
-[ ]{lang="EN-US"}
-
-::: {#-382489365 .myid}
-[]{#_Toc404797966}[]{#struct_0_x1068_x9952_x671488028}
+与该邻居的邻接关系已保持的时间
 
 **TRILL \-- TRILL配置命令 \-- display trill rpf-table**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **trill** **rpf-table**]{lang="EN-US"}]{#struct_0_x1068_x9952_x113025624}[命令用来显示]{style="font-family:宋体"}[TRILL RPF]{lang="EN-US"}[检查表信息。]{style="font-family:宋体"}
+**[display** **trill** **rpf-table**]命令用来显示TRILL RPF检查表信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1583624076}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **trill** **rpf-table** **tree-root** *nickname*]{lang="EN-US"}]{#struct_0_x1068_x9952_600656278}
+**[display** **trill** **rpf-table** **tree-root** *nickname*]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_774735622}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1068_x9952_249523790}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1092566907}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1066827169}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x627997945}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1070697757}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_1843297223}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x680854257}
+【参数】
 
-[**[tree-root]{lang="EN-US"}**[ ]{lang="EN-US"}*[nickname]{lang="EN-US"}*]{#struct_0_x1068_x9952_774801158}[：显示以指定]{style="font-family:宋体"}[RB]{lang="EN-US"}[为]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树根桥的信息。]{style="font-family:宋体"}*[nickname]{lang="EN-US"}*[表示]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[，为]{style="font-family:宋体"}[0x1]{lang="EN-US"}[～]{style="font-family:宋体"}[0xFFFE]{lang="EN-US"}[的十六进制数]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[tree-root***nickname*]：显示以指定RB为TRILL分发树根桥的信息。*nickname*表示RB的Nickname，为0x1～0xFFFE的十六进制数。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x344088846}
+【使用指导】
 
-[[TRILL RPF]{lang="EN-US"}]{#struct_0_x1068_x9952_x2117094082}[（]{style="font-family:宋体"}[Reverse Path Forwarding]{lang="EN-US"}[，逆向路径转发）检查表用来检查组播报文的入端口是否合法。即根据报文中]{style="font-family:宋体"}[Egress RB]{lang="EN-US"}[（即该报文所属]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树的根桥）和]{style="font-family:宋体"}[Ingress RB]{lang="EN-US"}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[，检查报文的实际入端口与]{style="font-family:宋体"}[RPF]{lang="EN-US"}[表项中的入端口是否一致，如不一致则认为该报文非法并将其丢弃。]{style="font-family:宋体"}
+TRILL RPF（Reverse Path Forwarding，逆向路径转发）检查表用来检查组播报文的入端口是否合法。即根据报文中Egress RB（即该报文所属TRILL分发树的根桥）和Ingress RB的Nickname，检查报文的实际入端口与RPF表项中的入端口是否一致，如不一致则认为该报文非法并将其丢弃。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x865865948}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_1597663435}[显示以指定]{style="font-family:宋体"}[RB]{lang="EN-US"}[（]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[为]{style="font-family:宋体"}[0x899B]{lang="EN-US"}[）为]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树根桥的]{style="font-family:宋体"}[TRILL RPF]{lang="EN-US"}[检查表信息。]{style="font-family:宋体"}
+\# 显示以指定RB（Nickname为0x899B）为TRILL分发树根桥的TRILL RPF检查表信息。
 
-[[\<Sysname\> display trill rpf-table tree-root 899b]{lang="EN-US"}]{#struct_0_x1068_x9952_x238749032}
+\<Sysname\> display trill rpf-table tree-root 899b
 
-[Ingress-nickname           Expected-rcv-ports]{lang="EN-US"}
+Ingress-nickname           Expected-rcv-ports
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[0x1fff                     GE1/0/1]{lang="EN-US"}
+0x1fff                     GE1/0/1
 
-[0x1ff0                     GE1/0/2]{lang="EN-US"}
+0x1ff0                     GE1/0/2
 
-[0x0ffe                     GE1/0/3]{lang="EN-US"}
+0x0ffe                     GE1/0/3
 
-[[表1-13 ]{lang="EN-US"}[display trill rpf-table]{lang="EN-US"}]{#struct_0_x1068_x9952_x646311178}[命令显示信息描述表]{style="font-family:黑体"}
+表1-13 display trill rpf-table命令显示信息描述表
 
-[]{#table_struct_0_x943123616}[[字段]{style="font-family:黑体"}]{#struct_0_x1068_x9952_774604550}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1744909186}
+描述
 
-[[Ingress-nickname]{lang="EN-US"}]{#struct_0_x1068_x9952_2059594265}
+Ingress-nickname
 
-[[Ingress RB]{lang="EN-US"}]{#struct_0_x1068_x9952_416499273}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}
+Ingress RB的Nickname
 
-[[Expected-rcv-ports]{lang="EN-US"}]{#struct_0_x1068_x9952_x1500436809}
+Expected-rcv-ports
 
-[[期望的入端口]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x58129734}
-
-[ ]{lang="EN-US"}
-
-::: {#-1862794404 .myid}
-[]{#_Toc404797967}[]{#struct_0_x1068_x9952_986497543}[]{#_Toc386113380}[]{#_Toc385854378}[]{#_Toc379615176}
+期望的入端口
 
 **TRILL \-- TRILL配置命令 \-- display trill topology**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **trill** **topology**]{lang="EN-US"}]{#struct_0_x1068_x9952_1155119555}[命令用来显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[网络的拓扑信息。]{style="font-family:宋体"}
+**[display** **trill** **topology**]命令用来显示TRILL网络的拓扑信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x579586398}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **trill** **topology** \[ **verbose** \]]{lang="EN-US"}]{#struct_0_x1068_x9952_x1185300984}
+**[display** **trill** **topology** [ **verbose** ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_669177004}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x614450660}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1254806178}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x563582868}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x1226569120}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_343711124}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x1334143005}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_685783079}
+【参数】
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_x1068_x9952_x2145670339}[：显示详细信息。如果未指定本参数，将显示摘要信息。]{style="font-family:宋体"}
+**[verbose**]：显示详细信息。如果未指定本参数，将显示摘要信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_592250374}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_1281851670}[显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[网络拓扑的摘要信息。]{style="font-family:宋体"}
+\# 显示TRILL网络拓扑的摘要信息。
 
-[[\<Sysname\> display trill topology]{lang="EN-US"}]{#struct_0_x1068_x9952_690940682}
+\<Sysname\> display trill topology
 
-[                         TRILL topology information]{lang="EN-US"}
+                         TRILL topology information
 
-[                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[    Flags: O-Node is overloaded          R-Node is directly reachable]{lang="EN-US"}
+    Flags: O-Node is overloaded          R-Node is directly reachable
 
-[           D-Node or link is to be deleted]{lang="EN-US"}
+           D-Node or link is to be deleted
 
-[ ]{lang="EN-US"}
+SPF node          Node flag    SPF link               Link cost  Link flag
 
-[SPF node          Node flag    SPF link               Link cost  Link flag]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+0011.2200.0201.00 -/-/-
 
-[0011.2200.0201.00 -/-/-]{lang="EN-US"}
+                               \--\>0011.2200.0301.01   20000      -
 
-[                               \--\>0011.2200.0301.01   20000      -]{lang="EN-US"}
+0011.2200.0301.01 -/R/-
 
-[0011.2200.0301.01 -/R/-]{lang="EN-US"}
+                               \--\>0011.2200.0201.00   0          -
 
-[                               \--\>0011.2200.0201.00   0          -]{lang="EN-US"}
+                               \--\>0011.2200.0301.00   0          -
 
-[                               \--\>0011.2200.0301.00   0          -]{lang="EN-US"}
+0011.2200.0301.00 -/-/-
 
-[0011.2200.0301.00 -/-/-]{lang="EN-US"}
+                               \--\>0011.2200.0301.01   20000      -
 
-[                               \--\>0011.2200.0301.01   20000      -]{lang="EN-US"}
+\# 显示TRILL网络拓扑的详细信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_325971737}[显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[网络拓扑的详细信息。]{style="font-family:宋体"}
+\<Sysname\> display trill topology verbose
 
-[[\<Sysname\> display trill topology verbose]{lang="EN-US"}]{#struct_0_x1068_x9952_x1339101285}
+                         TRILL topology information
 
-[                         TRILL topology information]{lang="EN-US"}
+                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[                         \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+    Flags: O-Node is overloaded          R-Node is directly reachable
 
-[    Flags: O-Node is overloaded          R-Node is directly reachable]{lang="EN-US"}
+           D-Node or link is to be deleted
 
-[           D-Node or link is to be deleted]{lang="EN-US"}
+SPF node: 0011.2200.0201.00
 
-[ ]{lang="EN-US"}
+  Node flag: -/-/-
 
-[SPF node: 0011.2200.0201.00]{lang="EN-US"}
+  SPF links count: 1
 
-[  Node flag: -/-/-]{lang="EN-US"}
+  \--\>0011.2200.0301.01
 
-[  SPF links count: 1]{lang="EN-US"}
+    Link cost: 20000
 
-[  \--\>0011.2200.0301.01]{lang="EN-US"}
+    Link flag: -
 
-[    Link cost: 20000]{lang="EN-US"}
+    Link sources: 1
 
-[    Link flag: -]{lang="EN-US"}
+     Link source 1
 
-[    Link sources: 1]{lang="EN-US"}
+       Type: Adjacent       Interface: N/A
 
-[     Link source 1]{lang="EN-US"}
+       Cost: 20000          NextHop: N/A
 
-[       Type: Adjacent       Interface: N/A]{lang="EN-US"}
+SPF node: 0011.2200.0301.01
 
-[       Cost: 20000          NextHop: N/A]{lang="EN-US"}
+  Node flag: -/R/-
 
-[ ]{lang="EN-US"}
+  SPF links: 2
 
-[SPF node: 0011.2200.0301.01]{lang="EN-US"}
+  \--\>0011.2200.0201.00
 
-[  Node flag: -/R/-]{lang="EN-US"}
+    Link cost: 0
 
-[  SPF links: 2]{lang="EN-US"}
+    Link flag: -
 
-[  \--\>0011.2200.0201.00]{lang="EN-US"}
+    Link sources count: 1
 
-[    Link cost: 0]{lang="EN-US"}
+     Link source 1
 
-[    Link flag: -]{lang="EN-US"}
+       Type: Remote         Interface: N/A
 
-[    Link sources count: 1]{lang="EN-US"}
+       Cost: 0              NextHop: N/A
 
-[     Link source 1]{lang="EN-US"}
+  \--\>0011.2200.0301.00
 
-[       Type: Remote         Interface: N/A]{lang="EN-US"}
+    Link cost: 0
 
-[       Cost: 0              NextHop: N/A]{lang="EN-US"}
+    Link flag: -
 
-[  \--\>0011.2200.0301.00]{lang="EN-US"}
+    Link sources: 1
 
-[    Link cost: 0]{lang="EN-US"}
+     Link source 1
 
-[    Link flag: -]{lang="EN-US"}
+       Type: Remote         Interface: GE1/0/1
 
-[    Link sources: 1]{lang="EN-US"}
+       Cost: 0              NextHop: 0x0002
 
-[     Link source 1]{lang="EN-US"}
+SPF node: 0011.2200.0301.00
 
-[       Type: Remote         Interface: GE1/0/1]{lang="EN-US"}
+  Node flag: -/-/-
 
-[       Cost: 0              NextHop: 0x0002]{lang="EN-US"}
+  SPF links: 1
 
-[ ]{lang="EN-US"}
+  \--\>0011.2200.0301.01
 
-[SPF node: 0011.2200.0301.00]{lang="EN-US"}
+    Link cost: 20000
 
-[  Node flag: -/-/-]{lang="EN-US"}
+    Link flag: -
 
-[  SPF links: 1]{lang="EN-US"}
+    Link sources: 1
 
-[  \--\>0011.2200.0301.01]{lang="EN-US"}
+     Link source 1
 
-[    Link cost: 20000]{lang="EN-US"}
+       Type: Remote         Interface: N/A
 
-[    Link flag: -]{lang="EN-US"}
+       Cost: 20000          NextHop: N/A
 
-[    Link sources: 1]{lang="EN-US"}
+表1-14 display trill topology命令显示信息描述表
 
-[     Link source 1]{lang="EN-US"}
+字段
 
-[       Type: Remote         Interface: N/A]{lang="EN-US"}
+描述
 
-[       Cost: 20000          NextHop: N/A]{lang="EN-US"}
+SPF node
 
-[[表1-14 ]{lang="EN-US"}[display trill topology]{lang="EN-US"}]{#struct_0_x1068_x9952_209059150}[命令显示信息描述表]{style="font-family:黑体"}
+拓扑节点的编号
 
-[]{#table_struct_0_1028566813}[[字段]{style="font-family:黑体"}]{#struct_0_x1068_x9952_2139543476}
-:::
+Node flag
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1068_x9952_112033113}
+节点的状态标记：
 
-[[SPF node]{lang="EN-US"}]{#struct_0_x1068_x9952_1389782070}
+·O：OverLoad状态，表示节点当前不可用
 
-[[拓扑节点的编号]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x1633382942}
+·R：表示节点是直连节点
 
-[[Node flag]{lang="EN-US"}]{#struct_0_x1068_x9952_x1979604657}
+·D：表示节点待删除
 
-[[节点的状态标记：]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x176301871}
+SPF link
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[O]{lang="EN-US"}]{#struct_0_x1068_x9952_541887882}[：]{style="font-family:宋体"}[OverLoad]{lang="EN-US"}[状态，表示节点当前不可用]{style="font-family:宋体"}
+拓扑链路
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[R]{lang="EN-US"}]{#struct_0_x1068_x9952_x531589229}[：表示节点是直连节点]{style="font-family:宋体"}
+SPF links
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[D]{lang="EN-US"}]{#struct_0_x1068_x9952_x2098616172}[：]{lang="EN-US" style="font-family:宋体"}[表示]{style="font-family:宋体"}[节点待删除]{lang="EN-US" style="font-family:宋体"}
+拓扑链路的个数
 
-[[SPF link]{lang="EN-US"}]{#struct_0_x1068_x9952_599647387}
+Link cost
 
-[[拓扑链路]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x1022629279}
+拓扑链路的开销
 
-[[SPF links]{lang="EN-US"}]{#struct_0_x1068_x9952_630267183}
+Link flag
 
-[[拓扑链路的个数]{style="font-family:宋体"}]{#struct_0_x1068_x9952_568359385}
+链路状态标记，D表示链路待删除
 
-[[Link cost]{lang="EN-US"}]{#struct_0_x1068_x9952_x1742320276}
+Link sources
 
-[[拓扑链路的开销]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x1464391936}
+链路发布源的个数
 
-[[Link flag]{lang="EN-US"}]{#struct_0_x1068_x9952_x1479084790}
+Link source 1
 
-[[链路状态标记，]{style="font-family:宋体"}[D]{lang="EN-US"}]{#struct_0_x1068_x9952_986563079}[表示链路待删除]{style="font-family:宋体"}
+链路发布源的相关信息
 
-[[Link sources]{lang="EN-US"}]{#struct_0_x1068_x9952_x768052951}
+Type
 
-[[链路发布源的个数]{style="font-family:宋体"}]{#struct_0_x1068_x9952_93850002}
+链路发布源的类型：
 
-[[Link source 1]{lang="EN-US"}]{#struct_0_x1068_x9952_x579520862}
+·Adjacent：表示由本地邻居维护产生
 
-[[ ]{lang="EN-US"}]{#struct_0_x1068_x9952_x1159462299}[链路发布源的相关信息]{style="font-family:宋体"}
+·Remote：表示由其它节点的LSP产生
 
-[[Type]{lang="EN-US"}]{#struct_0_x1068_x9952_x2145604803}
+Cost
 
-[[链路发布源的类型：]{style="font-family:宋体"}]{#struct_0_x1068_x9952_1286943356}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Adjacent]{lang="EN-US"}]{#struct_0_x1068_x9952_x1642266187}[：表示由本地邻居维护产生]{style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Remote]{lang="EN-US"}]{#struct_0_x1068_x9952_227048192}[：]{lang="EN-US" style="font-family:宋体"}[表示由]{style="font-family:宋体"}[其它节点]{lang="EN-US" style="font-family:宋体"}[的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[产生]{lang="EN-US" style="font-family:宋体"}
-
-[[Cost]{lang="EN-US"}]{#struct_0_x1068_x9952_2123740273}
-
-[[链路发布源的开销]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x376821947}
-
-[ ]{lang="EN-US"}
-
-::: {#-650599762 .myid}
-[]{#_Toc404797968}[]{#struct_0_x1068_x9952_774670086}
+链路发布源的开销
 
 **TRILL \-- TRILL配置命令 \-- display trill unicast-route**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **trill** **unicast-route**]{lang="EN-US"}]{#struct_0_x1068_x9952_1817717128}[命令用来显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[单播路由表信息。]{style="font-family:宋体"}
+**[display** **trill** **unicast-route**]命令用来显示TRILL单播路由表信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1056540319}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **trill** **unicast-route** \[ **nickname** *nickname* \] \[ **verbose** \]]{lang="EN-US"}]{#struct_0_x1068_x9952_441910044}
+**[display** **trill** **unicast-route** [ **nickname** *nickname*   **verbose** ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1890643901}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1068_x9952_719190682}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x777705144}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1881317258}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x1393600231}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_774997766}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x722803661}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1983553622}
+【参数】
 
-[**[nickname]{lang="EN-US"}**[ *nickname*]{lang="EN-US"}]{#struct_0_x1068_x9952_x2049348478}[：显示指定]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[信息。]{style="font-family:宋体"}*[nickname]{lang="EN-US"}*[表示]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[，为]{style="font-family:宋体"}[0x1]{lang="EN-US"}[～]{style="font-family:宋体"}[0xFFFE]{lang="EN-US"}[的十六进制数]{style="font-family:宋体"}[。如果未指定本参数，将显示所有]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[信息。]{style="font-family:宋体"}
+**[nickname** *nickname*]：显示指定RB的信息。*nickname*表示RB的Nickname，为0x1～0xFFFE的十六进制数。如果未指定本参数，将显示所有RB的信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_x1068_x9952_332143112}[：显示详细信息。如果未指定本参数，将显示摘要信息。]{style="font-family:宋体"}
+**[verbose**]：显示详细信息。如果未指定本参数，将显示摘要信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x15687557}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x1173378045}[显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[单播路由表所有表项的摘要信息。]{style="font-family:宋体"}
+\# 显示TRILL单播路由表所有表项的摘要信息。
 
-[[\<Sysname\> display trill unicast-route]{lang="EN-US"}]{#struct_0_x1068_x9952_775063302}
+\<Sysname\> display trill unicast-route
 
-[Destinations: 2        Unicast routes: 2]{lang="EN-US"}
+Destinations: 2        Unicast routes: 2
 
-[ ]{lang="EN-US"}
+Destination    Interface                NextHop
 
-[Destination    Interface                NextHop]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+0xfa1b         N/A                      N/A
 
-[0xfa1b         N/A                      N/A]{lang="EN-US"}
+0x899b         GE1/0/1                  Direct
 
-[0x899b         GE1/0/1                  Direct]{lang="EN-US"}
+\# 显示TRILL单播路由表所有表项的详细信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x50484075}[显示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[单播路由表所有表项的详细信息。]{style="font-family:宋体"}
+\<Sysname\> display trill unicast-route verbose
 
-[[\<Sysname\> display trill unicast-route verbose]{lang="EN-US"}]{#struct_0_x1068_x9952_x2073628190}
+Destinations: 2        Unicast routes: 2
 
-[Destinations: 2        Unicast routes: 2]{lang="EN-US"}
+Destination: 0xfa1b
 
-[ ]{lang="EN-US"}
+NextHop count: 0             Neighbor ID: 0x0000
 
-[Destination: 0xfa1b]{lang="EN-US"}
+Destination: 0x899b
 
-[NextHop count: 0             Neighbor ID: 0x0000]{lang="EN-US"}
+NextHop count: 1             Neighbor ID: 0x0101
 
-[ ]{lang="EN-US"}
+Interface: GE1/0/1           NextHop: Direct
 
-[Destination: 0x899b]{lang="EN-US"}
+表1-15 display trill unicast-route命令显示信息描述表
 
-[NextHop count: 1             Neighbor ID: 0x0101]{lang="EN-US"}
+字段
 
-[Interface: GE1/0/1           NextHop: Direct]{lang="EN-US"}
+描述
 
-[]{#struct_0_x1068_x9952_x1829829928}[]{#_Toc266110051}[[表1-15 ]{lang="EN-US"}[display trill unicast-route]{lang="EN-US"}]{#_Toc265237222}[命令显示信息描述表]{style="font-family:黑体"}
+Destinations
 
-[]{#table_struct_0_x939784608}[[字段]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x918525733}
-:::
+目的RB的数量
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1056493490}
+Unicast routes
 
-[[Destinations]{lang="EN-US"}]{#struct_0_x1068_x9952_x1287199286}
+单播路由的条数
 
-[[目的]{style="font-family:宋体"}[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_325469251}[的数量]{style="font-family:宋体"}
+Destination
 
-[[Unicast routes]{lang="EN-US"}]{#struct_0_x1068_x9952_1797914429}
+目的RB的Nickname
 
-[[单播路由的条数]{style="font-family:宋体"}]{#struct_0_x1068_x9952_1522149875}
+Interface
 
-[[Destination]{lang="EN-US"}]{#struct_0_x1068_x9952_86409735}
+出端口
 
-[[目的]{style="font-family:宋体"}[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_774866694}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}
+NextHop
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1068_x9952_16805251}
+下一跳的Nickname
 
-[[出端口]{style="font-family:宋体"}]{#struct_0_x1068_x9952_396668601}
+NextHop count
 
-[[NextHop]{lang="EN-US"}]{#struct_0_x1068_x9952_x1089534163}
+下一跳的数量
 
-[[下一跳的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}]{#struct_0_x1068_x9952_1729436559}
+Neighbor ID
 
-[[NextHop count]{lang="EN-US"}]{#struct_0_x1068_x9952_738282018}
-
-[[下一跳的数量]{style="font-family:宋体"}]{#struct_0_x1068_x9952_774932230}
-
-[[Neighbor ID]{lang="EN-US"}]{#struct_0_x1068_x9952_1605714104}
-
-[[下一跳关联的邻居编号]{style="font-family:宋体"}]{#struct_0_x1068_x9952_330561012}
-
-[ ]{lang="EN-US"}
-
-::: {#1961216506 .myid}
-[]{#_Toc404797969}[]{#struct_0_x1068_x9952_x1754684829}[]{#_Toc350777172}[]{#_Toc350774928}
+下一跳关联的邻居编号
 
 **TRILL \-- TRILL配置命令 \-- display trill vr**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **trill** **vr**]{lang="EN-US"}]{#struct_0_x1068_x9952_x938461096}[命令用来显示]{style="font-family:宋体"}[TRILL VR]{lang="EN-US"}[（]{style="font-family:宋体"}[Virtual Router]{lang="EN-US"}[，虚拟路由器）的信息。]{style="font-family:宋体"}
+**[display** **trill** **vr**]命令用来显示TRILL VR（Virtual Router，虚拟路由器）的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x569545217}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **trill** **vr** \[ **ipv6** \] \[ **verbose** \[ **vrid** *vr-id* \[ **interface** *interface-type interface-number* \] \] \| **vrid** *vr-id* \]]{lang="EN-US"}]{#struct_0_x1068_x9952_1448437802}
+**[display** **trill** **vr** [ **ipv6**   **verbose** [ **vrid** *vr-id* [ **interface** *interface-type interface-number*  ] \| **vrid** *vr-id* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1754619293}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1068_x9952_337626243}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x2003954310}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1948586788}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x233272489}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1755209116}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_891248279}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_2125935885}
+【参数】
 
-[**[ipv6]{lang="EN-US"}**]{#struct_0_x1068_x9952_x845887427}[：显示]{style="font-family:宋体"}[IPv6 TRILL VR]{lang="EN-US"}[的信息。如果未指定本参数，将显示]{style="font-family:宋体"}[IPv4 TRILL VR]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[ipv6**]：显示IPv6 TRILL VR的信息。如果未指定本参数，将显示IPv4 TRILL VR的信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_x1068_x9952_727435981}[：显示详细信息。如果未指定本参数，将显示摘要信息。]{style="font-family:宋体"}
+**[verbose**]：显示详细信息。如果未指定本参数，将显示摘要信息。
 
-[**[vrid]{lang="EN-US"}**[ *vr-id*]{lang="EN-US"}]{#struct_0_x1068_x9952_x1755143580}[：显示指定]{style="font-family:宋体"}[VR]{lang="EN-US"}[的信息。]{style="font-family:宋体"}*[vr-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VR]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。如果未指定本参数，将显示所有]{style="font-family:宋体"}[VR]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[vrid** *vr-id*]：显示指定VR的信息。*vr-id*表示VR的编号，取值范围为1～255。如果未指定本参数，将显示所有VR的信息。
 
-[**[interface]{lang="EN-US"}**[ *interface-type* *interface-number*]{lang="EN-US"}]{#struct_0_x1068_x9952_119022045}[：]{style="font-family:宋体"}[显示指定端口上的信息，]{style="font-family:宋体"}*[interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}[为端口类型和端口编号。如果未指定本参数，将显示所有端口上的信息。]{style="font-family:宋体"}
+**[interface** *interface-type* *interface-number*]：显示指定端口上的信息，*interface-type* *interface-number*为端口类型和端口编号。如果未指定本参数，将显示所有端口上的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1955505934}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x1347434513}[显示所有]{style="font-family:宋体"}[IPv4 TRILL VR]{lang="EN-US"}[的摘要信息。]{style="font-family:宋体"}
+\# 显示所有IPv4 TRILL VR的摘要信息。
 
-[[\<Sysname\> display trill vr]{lang="EN-US"}]{#struct_0_x1068_x9952_x1755078044}
+\<Sysname\> display trill vr
 
-[VRID    Partner RB         State       Local]{lang="EN-US"}
+VRID    Partner RB         State       Local
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[1       0606.0606.0606     Backup      Y]{lang="EN-US"}
+1       0606.0606.0606     Backup      Y
 
-[        0808.0808.0808     Master      N]{lang="EN-US"}
+        0808.0808.0808     Master      N
 
-[2       0606.0606.0606     Backup      Y]{lang="EN-US"}
+2       0606.0606.0606     Backup      Y
 
-[        0808.0808.0808     Master      N]{lang="EN-US"}
+        0808.0808.0808     Master      N
 
-[3       0606.0606.0606     Backup      Y]{lang="EN-US"}
+3       0606.0606.0606     Backup      Y
 
-[        0808.0808.0808     Master      N]{lang="EN-US"}
+        0808.0808.0808     Master      N
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_665769343}[显示所有]{style="font-family:宋体"}[IPv4 TRILL VR]{lang="EN-US"}[的详细信息。]{style="font-family:宋体"}
+\# 显示所有IPv4 TRILL VR的详细信息。
 
-[[\<Sysname\> display trill vr verbose]{lang="EN-US"}]{#struct_0_x1068_x9952_x1755012508}
+\<Sysname\> display trill vr verbose
 
-[IPv4 virtual router information:]{lang="EN-US"}
+IPv4 virtual router information:
 
-[  VRID: 1     Virtual MAC: 0cda-41ed-be01]{lang="EN-US"}
+  VRID: 1     Virtual MAC: 0cda-41ed-be01
 
-[    Partner RB information:]{lang="EN-US"}
+    Partner RB information:
 
-[      System ID: 0606.0606.0606]{lang="EN-US"}
+      System ID: 0606.0606.0606
 
-[        State: Backup]{lang="EN-US"}
+        State: Backup
 
-[        Local: Y]{lang="EN-US"}
+        Local: Y
 
-[      System ID: 0808.0808.0808]{lang="EN-US"}
+      System ID: 0808.0808.0808
 
-[        State: Master]{lang="EN-US"}
+        State: Master
 
-[        Local: N]{lang="EN-US"}
+        Local: N
 
-[    Interface information:]{lang="EN-US"}
+    Interface information:
 
-[      Interface: Vlan-interface10]{lang="EN-US"}
+      Interface: Vlan-interface10
 
-[        Virtual IP: 193.1.1.1]{lang="EN-US"}
+        Virtual IP: 193.1.1.1
 
-[        Track index: 11     State: Positive]{lang="EN-US"}
+        Track index: 11     State: Positive
 
-[[表1-16 ]{lang="EN-US"}[display trill vr]{lang="EN-US"}]{#struct_0_x1068_x9952_x1083326018}[命令显示信息描述表]{style="font-family:黑体"}
+表1-16 display trill vr命令显示信息描述表
 
-[]{#table_struct_0_1694016569}[[字段]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1754946972}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1754881436}
+描述
 
-[[VRID]{lang="EN-US"}]{#struct_0_x1068_x9952_x1754815900}
+VRID
 
-[[VR]{lang="EN-US"}]{#struct_0_x1068_x9952_x1754750364}[的编号]{style="font-family:宋体"}
+VR的编号
 
-[[Partner RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x1754684828}
+Partner RB
 
-[[VR]{lang="EN-US"}]{#struct_0_x1068_x9952_x1754619292}[中成员]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[System ID]{lang="EN-US"}
+VR中成员RB的System ID
 
-[[State]{lang="EN-US"}]{#struct_0_x1068_x9952_x1755209115}
+State
 
-[[该成员]{style="font-family:宋体"}[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x1755143579}[在]{style="font-family:宋体"}[VR]{lang="EN-US"}[中的状态，包括]{style="font-family:宋体"}[Master]{lang="EN-US"}[、]{style="font-family:宋体"}[Backup]{lang="EN-US"}[和]{style="font-family:宋体"}[Inactive]{lang="EN-US"}[三种]{style="font-family:宋体"}
+该成员RB在VR中的状态，包括Master、Backup和Inactive三种
 
-[[Local]{lang="EN-US"}]{#struct_0_x1068_x9952_x1755078043}
+Local
 
-[[该成员]{style="font-family:宋体"}[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x1755012507}[是否为当前设备：]{style="font-family:宋体"}
+该成员RB是否为当前设备：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Y]{lang="EN-US"}]{#struct_0_x1068_x9952_x1754946971}[：表示是当前设备]{style="font-family:宋体"}
+·Y：表示是当前设备
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[N]{lang="EN-US"}]{#struct_0_x1068_x9952_x1754881435}[：表示不是当前设备]{style="font-family:宋体"}
+·N：表示不是当前设备
 
-[[IPv4 virtual router information]{lang="EN-US"}]{#struct_0_x1068_x9952_x1754815899}
+IPv4 virtual router information
 
-[[IPv4 TRILL VR]{lang="EN-US"}]{#struct_0_x1068_x9952_1494955643}[的信息]{style="font-family:宋体"}
+IPv4 TRILL VR的信息
 
-[[IPv6 virtual router information]{lang="EN-US"}]{#struct_0_x1068_x9952_x1754750363}
+IPv6 virtual router information
 
-[[IPv6 TRILL VR]{lang="EN-US"}]{#struct_0_x1068_x9952_x1754684827}[的信息]{style="font-family:宋体"}
+IPv6 TRILL VR的信息
 
-[[Virtual MAC]{lang="EN-US"}]{#struct_0_x1068_x9952_x1754619291}
+Virtual MAC
 
-[[VR]{lang="EN-US"}]{#struct_0_x1068_x9952_x1755209122}[的虚拟]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+VR的虚拟MAC地址
 
-[[Partner RB information]{lang="EN-US"}]{#struct_0_x1068_x9952_x1755143586}
+Partner RB information
 
-[[VR]{lang="EN-US"}]{#struct_0_x1068_x9952_x1755078050}[中成员]{style="font-family:宋体"}[RB]{lang="EN-US"}[的信息]{style="font-family:宋体"}
+VR中成员RB的信息
 
-[[System ID]{lang="EN-US"}]{#struct_0_x1068_x9952_x1755012514}
+System ID
 
-[[该成员]{style="font-family:宋体"}[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x1754946978}[的]{style="font-family:宋体"}[System ID]{lang="EN-US"}
+该成员RB的System ID
 
-[[Interface information]{lang="EN-US"}]{#struct_0_x1068_x9952_x1754881442}
+Interface information
 
-[[VR]{lang="EN-US"}]{#struct_0_x1068_x9952_x1754815906}[所在接口的信息]{style="font-family:宋体"}
+VR所在接口的信息
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1068_x9952_x1754750370}
+Interface
 
-[[接口的名称]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x1754684834}
+接口的名称
 
-[[Virtual IP]{lang="EN-US"}]{#struct_0_x1068_x9952_x1754619298}
+Virtual IP
 
-[[VR]{lang="EN-US"}]{#struct_0_x1068_x9952_x1755209121}[的虚拟]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+VR的虚拟IP地址
 
-[[Track index]{lang="EN-US"}]{#struct_0_x1068_x9952_x1755143585}
+Track index
 
-[[VR]{lang="EN-US"}]{#struct_0_x1068_x9952_x1755078049}[监测的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项（配置了]{style="font-family:宋体"}**[trill]{lang="EN-US"}**[ **vr** **vrid** **track**]{lang="EN-US"}[命令后，才会显示此项）]{style="font-family:宋体"}
+VR监测的Track项（配置了**trill** **vr** **vrid** **track**命令后，才会显示此项）
 
-[[State]{lang="EN-US"}]{#struct_0_x1068_x9952_x1755012513}
+State
 
-[[Track]{lang="EN-US"}]{#struct_0_x1068_x9952_x1754946977}[项的状态（配置了]{style="font-family:宋体"}**[trill]{lang="EN-US"}**[ **vr** **vrid** **track**]{lang="EN-US"}[命令后，才会显示此项）：]{style="font-family:宋体"}
+Track项的状态（配置了**trill** **vr** **vrid** **track**命令后，才会显示此项）：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Negative]{lang="EN-US"}]{#struct_0_x1068_x9952_x1754881441}[：表示无效状态]{style="font-family:宋体"}
+·Negative：表示无效状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Positive]{lang="EN-US"}]{#struct_0_x1068_x9952_x1754815905}[：表示有效状态]{style="font-family:宋体"}
+·Positive：表示有效状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NotReady]{lang="EN-US"}]{#struct_0_x1068_x9952_x1754750369}[：表示尚未就绪状态]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#140771917 .myid}
-[]{#_Toc404797970}[]{#struct_0_x1068_x9952_x1754684833}[]{#_Toc374084876}
+·NotReady：表示尚未就绪状态
 
 **TRILL \-- TRILL配置命令 \-- display trill vr-adjacent-table**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x1068_x9952_x131826506}**[trill]{lang="EN-US"}**[ **vr-**]{lang="EN-US"}**[adjacent-table]{lang="EN-US"}**[命令用来显示]{style="font-family:宋体"}[TRILL VR]{lang="PT-BR"}[邻接表信息。]{style="font-family:宋体"}
+**[display**]**trill** **vr-****adjacent-table**命令用来显示TRILL VR邻接表信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1083439585}
+【命令】
 
-[**[display]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x1068_x9952_x441760071}**[trill]{lang="EN-US"}**[ **vr-**]{lang="EN-US"}**[adjacent-table]{lang="EN-US"}**[ ]{lang="EN-US"}[\[ ]{lang="EN-US"}**[count]{lang="EN-US"}**[ \| ]{lang="EN-US"}**[nickname]{lang="EN-US"}**[ *nickname*]{lang="EN-US"}[ **interface** *interface-type* *interface-number* \]]{lang="EN-US"}
+**[display**]**trill** **vr-****adjacent-table**\**[count**[ \| ]**nickname** *nickname* **interface** *interface-type* *interface-number* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x607317648}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x1754619297}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1987972585}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x2138783702}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x1780416943}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_710710103}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x189125177}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1885435031}
+【参数】
 
-[**[count]{lang="EN-US"}**]{#struct_0_x1068_x9952_1699177212}[：显示表项的数量。]{style="font-family:宋体"}
+**[count**]：显示表项的数量。
 
-[**[nickname]{lang="EN-US"}**[ *nickname*]{lang="EN-US"}[ **interface** *interface-type* *interface-number*]{lang="EN-US"}]{#struct_0_x1068_x9952_x397685465}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[RB]{lang="EN-US"}[指定端口上的信息。]{style="font-family:宋体"}*[nickname]{lang="EN-US"}*[表示]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[，为]{style="font-family:宋体"}[0x1]{lang="EN-US"}[～]{style="font-family:宋体"}[0xFFFE]{lang="EN-US"}[的十六进制数]{style="font-family:宋体"}[；]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[为端口类型和端口编号。如果未指定本参数，将显示所有]{style="font-family:
-宋体"}[RB]{lang="EN-US"}[所有端口上的信息。]{style="font-family:宋体"}
+**[nickname** *nickname* **interface** *interface-type* *interface-number*]：显示指定RB指定端口上的信息。*nickname*表示RB的Nickname，为0x1～0xFFFE的十六进制数；*interface-type interface-number*为端口类型和端口编号。如果未指定本参数，将显示所有RB所有端口上的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x932346822}
+【举例】
 
-[]{#_Toc341712884}[]{#_Toc138044435}[]{#_Toc89146412}[]{#_Toc85625889}[]{#_Toc81455776}[]{#_Toc74708566}[]{#_Toc72635551}[]{#_Toc66068431}[]{#_Toc60132630}[]{#_Toc54665893}[]{#_Toc38708889}[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x1669203714}[显示]{style="font-family:宋体"}[TRILL VR]{lang="EN-US"}[邻接表所有表项的信息。]{style="font-family:宋体"}
+\# 显示TRILL VR邻接表所有表项的信息。
 
-[[\<Sysname\> display trill vr-adjacent-table]{lang="EN-US"}]{#struct_0_x1068_x9952_x189059641}
+\<Sysname\> display trill vr-adjacent-table
 
-[NextHop     MAC address       Interface]{lang="EN-US"}
+NextHop     MAC address       Interface
 
-[0x899b      00e0-fc58-123a    GE1/0/1]{lang="EN-US"}
+0x899b      00e0-fc58-123a    GE1/0/1
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_1664684997}[显示]{style="font-family:宋体"}[TRILL VR]{lang="FR"}[邻接表的表项数量。]{style="font-family:宋体"}
+\# 显示TRILL VR邻接表的表项数量。
 
-[[\<Sysname\> display trill vr-adjacent-table count]{lang="EN-US"}]{#struct_0_x1068_x9952_1826039294}
+\<Sysname\> display trill vr-adjacent-table count
 
-[Total number of TRILL VR ADJ entries: 3]{lang="EN-US"}
+Total number of TRILL VR ADJ entries: 3
 
-[[表1-17 ]{lang="EN-US"}[display trill ]{lang="EN-US"}]{#struct_0_x1068_x9952_x354202294}[vr-]{lang="EN-US"}[adjacent-table]{lang="FR"}[命令显示信息描述表]{style="font-family:
-黑体"}
+表1-17 display trill vr-adjacent-table命令显示信息描述表
 
-[]{#table_struct_0_1704822109}[[字段]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x188994105}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x188928569}
+描述
 
-[[NextHop]{lang="EN-US"}]{#struct_0_x1068_x9952_x188863033}
+NextHop
 
-[[报文转发下一跳]{style="font-family:宋体"}[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x188797497}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}
+报文转发下一跳RB的Nickname
 
-[[MAC address]{lang="EN-US"}]{#struct_0_x1068_x9952_x188731961}
+MAC address
 
-[[报文转发下一跳]{style="font-family:宋体"}[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x188666425}[的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+报文转发下一跳RB的MAC地址
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1068_x9952_x188600889}
+Interface
 
-[[报文的出端口]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x188535353}
+报文的出端口
 
-[[Total number of TRILL VR ADJ entries]{lang="EN-US"}]{#struct_0_x1068_x9952_x189125176}
+Total number of TRILL VR ADJ entries
 
-[[TRILL VR]{lang="EN-US"}]{#struct_0_x1068_x9952_x189059640}[邻接表的表项数量]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#1773648410 .myid}
-[]{#_Toc404797971}[]{#struct_0_x1068_x9952_x188994104}[]{#_Toc374084877}
+TRILL VR邻接表的表项数量
 
 **TRILL \-- TRILL配置命令 \-- display trill vr-fib**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x1068_x9952_x748677189}**[trill]{lang="EN-US"}**[ **vr-fib**]{lang="EN-US"}[命令用来显示]{style="font-family:宋体"}[TRILL VR]{lang="EN-US"}[单播转发表信息。]{style="font-family:宋体"}
+**[display**]**trill** **vr-fib**命令用来显示TRILL VR单播转发表信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1214630544}
+【命令】
 
-[**[display]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x1068_x9952_x38271777}**[trill]{lang="EN-US"}**[ **vr-fib** ]{lang="EN-US"}[\[ ]{lang="EN-US"}**[count]{lang="EN-US"}**[ \| ]{lang="EN-US"}**[mac]{lang="EN-US"}**[ *mac-address* **vlan** *vlan-id* \]]{lang="EN-US"}
+**[display**]**trill** **vr-fib** \**[count**[ \| ]**mac** *mac-address* **vlan** *vlan-id* ]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x823221539}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x188928568}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_126984305}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_235188376}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x1712801347}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x694919664}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_715001108}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x188863032}
+【参数】
 
-[**[count]{lang="EN-US"}**]{#struct_0_x1068_x9952_467325140}[：显示表项的数量。]{style="font-family:宋体"}
+**[count**]：显示表项的数量。
 
-[**[mac]{lang="EN-US"}**]{#struct_0_x1068_x9952_x1421431894}[ *mac-address* **vlan** *vlan-id*]{lang="EN-US"}[：显示指定]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址在指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}*[mac-address]{lang="EN-US"}*[为]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址；]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果未指定本参数，将显示所有]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址在所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[mac**] *mac-address* **vlan** *vlan-id*：显示指定MAC地址在指定VLAN内的信息。*mac-address*为MAC地址；*vlan-id*的取值范围为1～4094。如果未指定本参数，将显示所有MAC地址在所有VLAN内的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x708072283}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x1344338113}[显示]{style="font-family:宋体"}[TRILL VR]{lang="EN-US"}[单播转发表所有表项的信息。]{style="font-family:宋体"}
+\# 显示TRILL VR单播转发表所有表项的信息。
 
-[[\<Sysname\> display trill vr-fib]{lang="EN-US"}]{#struct_0_x1068_x9952_x188797496}
+\<Sysname\> display trill vr-fib
 
-[MAC ]{lang="EN-US"}[address]{lang="EN-US"}[    VLAN NextHop   Interface]{lang="EN-US"}
+MAC address    VLAN NextHop   Interface
 
-[0cad-41ed-be01 1    0x2a5c    GE1/0/1]{lang="EN-US"}
+0cad-41ed-be01 1    0x2a5c    GE1/0/1
 
-[0cad-41ed-bf01 2    0x2a5c    GE1/0/2]{lang="EN-US"}
+0cad-41ed-bf01 2    0x2a5c    GE1/0/2
 
-[[\# ]{lang="DE"}]{#struct_0_x1068_x9952_2009178855}[显示]{style="font-family:宋体"}[TRILL VR]{lang="DE"}[单播转发表的表项数量。]{style="font-family:宋体"}
+\# 显示TRILL VR单播转发表的表项数量。
 
-[[\<Sysname\> display trill vr-fib count]{lang="EN-US"}]{#struct_0_x1068_x9952_x784614437}
+\<Sysname\> display trill vr-fib count
 
-[Total number of TRILL VR FIB destinations: 2]{lang="EN-US"}
+Total number of TRILL VR FIB destinations: 2
 
-[Total number of TRILL VR FIB entries: 2]{lang="EN-US"}
+Total number of TRILL VR FIB entries: 2
 
-[[表1-18 ]{lang="EN-US"}[display trill vr-fib]{lang="EN-US"}]{#struct_0_x1068_x9952_695342998}[命令显示信息描述表]{style="font-family:黑体"}
+表1-18 display trill vr-fib命令显示信息描述表
 
-[]{#table_struct_0_1725239347}[[字段]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x188731960}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x188666424}
+描述
 
-[[MAC address]{lang="EN-US"}]{#struct_0_x1068_x9952_x188600888}
+MAC address
 
-[[目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1068_x9952_x188535352}[地址]{style="font-family:宋体"}
+目的MAC地址
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1068_x9952_x189125175}
+VLAN
 
-[[转发的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1068_x9952_x189059639}[编号]{style="font-family:宋体"}
+转发的VLAN编号
 
-[[NextHop]{lang="EN-US"}]{#struct_0_x1068_x9952_x188994103}
+NextHop
 
-[[下一跳]{style="font-family:宋体"}[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x188928567}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}
+下一跳RB的Nickname
 
-[[Interface]{lang="EN-US"}]{#struct_0_x1068_x9952_x188863031}
+Interface
 
-[[报文的出端口]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x188797495}
+报文的出端口
 
-[[Total number of TRILL VR FIB destinations]{lang="EN-US"}]{#struct_0_x1068_x9952_x188731959}
+Total number of TRILL VR FIB destinations
 
-[[TRILL VR]{lang="EN-US"}]{#struct_0_x1068_x9952_x188666423}[单播转发表中目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的数量]{style="font-family:宋体"}
+TRILL VR单播转发表中目的MAC地址的数量
 
-[[Total number of TRILL VR FIB entries]{lang="EN-US"}]{#struct_0_x1068_x9952_x188600887}
+Total number of TRILL VR FIB entries
 
-[[TRILL VR]{lang="EN-US"}]{#struct_0_x1068_x9952_x188535351}[单播转发表的表项数量]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#89449881 .myid}
-[]{#_Toc404797972}[]{#struct_0_x1068_x9952_1619168215}
+TRILL VR单播转发表的表项数量
 
 **TRILL \-- TRILL配置命令 \-- display trill vr-route**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **trill** **vr-route**]{lang="EN-US"}]{#struct_0_x1068_x9952_x189125174}[命令用来显示]{style="font-family:宋体"}[TRILL VR]{lang="EN-US"}[多端口单播]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表信息。]{style="font-family:宋体"}
+**[display** **trill** **vr-route**]命令用来显示TRILL VR多端口单播MAC地址表信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1885631639}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **trill** **vr-route** \[ **vrid** *vrid* \] \[ **vlan** *vlan-id* \] \[ **mac-address** *mac-address* \]]{lang="EN-US"}]{#struct_0_x1068_x9952_811974182}
+**[display** **trill** **vr-route** [ **vrid** *vrid*   **vlan** *vlan-id*   **mac-address** *mac-address* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1522838030}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x701048910}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_375100758}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x189059638}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_1665274826}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_305997431}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1068_x9952_x1916581635}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x176191375}
+【参数】
 
-[**[vrid]{lang="EN-US"}**[ *vr-id*]{lang="EN-US"}]{#struct_0_x1068_x9952_x188994102}[：显示指定]{style="font-family:宋体"}[VR]{lang="EN-US"}[的信息。]{style="font-family:宋体"}*[vr-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VR]{lang="EN-US"}[的编号]{style="font-family:宋体"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。如果未指定本参数，将显示所有]{style="font-family:宋体"}[VR]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+**[vrid** *vr-id*]：显示指定VR的信息。*vr-id*表示VR的编号，取值范围为1～255。如果未指定本参数，将显示所有VR的信息。
 
-[**[vlan]{lang="EN-US"}**[ ]{lang="EN-US"}*[vlan-id]{lang="EN-US"}*]{#struct_0_x1068_x9952_x748808261}[：显示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。如果未指定本参数，将显示所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内的信息。]{style="font-family:宋体"}
+**[vlan***vlan-id*]：显示指定VLAN内的信息，*vlan-id*的取值范围为1～4094。如果未指定本参数，将显示所有VLAN内的信息。
 
-[**[mac-address]{lang="EN-US"}**[ *mac-address*]{lang="EN-US"}]{#struct_0_x1068_x9952_x372722009}[：显示指定]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的信息，]{style="font-family:宋体"}*[mac-address]{lang="EN-US"}*[为]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。如果未指定本参数，将显示所有]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址的信息。]{style="font-family:宋体"}
+**[mac-address** *mac-address*]：显示指定MAC地址的信息，*mac-address*为MAC地址。如果未指定本参数，将显示所有MAC地址的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_985852888}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x319821978}[显示]{style="font-family:宋体"}[TRILL VR]{lang="EN-US"}[多端口单播]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址表所有表项的信息。]{style="font-family:宋体"}
+\# 显示TRILL VR多端口单播MAC地址表所有表项的信息。
 
-[[\<Sysname\> display trill vr-route]{lang="EN-US"}]{#struct_0_x1068_x9952_x188928566}
+\<Sysname\> display trill vr-route
 
-[VRID    MAC address     VLAN    Port]{lang="EN-US"}
+VRID    MAC address     VLAN    Port
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[1       0cda-41ed-be01  1       GE1/0/1]{lang="EN-US"}
+1       0cda-41ed-be01  1       GE1/0/1
 
-[                        2       GE1/0/3]{lang="EN-US"}
+                        2       GE1/0/3
 
-[                        3       GE1/0/4]{lang="EN-US"}
+                        3       GE1/0/4
 
-[2       0cda-41ed-be02  1       GE1/0/2]{lang="EN-US"}
+2       0cda-41ed-be02  1       GE1/0/2
 
-[                        3       GE1/0/5]{lang="EN-US"}
+                        3       GE1/0/5
 
-[[表1-19 ]{lang="EN-US"}[display trill vr-route]{lang="EN-US"}]{#struct_0_x1068_x9952_127377521}[命令显示信息描述表]{style="font-family:黑体"}
+表1-19 display trill vr-route命令显示信息描述表
 
-[]{#table_struct_0_1712453237}[[字段]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x188863030}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x188797494}
+描述
 
-[[VRID]{lang="EN-US"}]{#struct_0_x1068_x9952_x188731958}
+VRID
 
-[[VR]{lang="EN-US"}]{#struct_0_x1068_x9952_x188666422}[的编号]{style="font-family:宋体"}
+VR的编号
 
-[[MAC address]{lang="EN-US"}]{#struct_0_x1068_x9952_x188600886}
+MAC address
 
-[[VR]{lang="EN-US"}]{#struct_0_x1068_x9952_x188535350}[的虚拟]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址]{style="font-family:宋体"}
+VR的虚拟MAC地址
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1068_x9952_x189125181}
+VLAN
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1068_x9952_x189059645}[的编号]{style="font-family:宋体"}
+VLAN的编号
 
-[[Port]{lang="EN-US"}]{#struct_0_x1068_x9952_x188994109}
+Port
 
-[[出端口]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x188928573}
-
-[ ]{lang="EN-US"}
-
-::: {#1202717567 .myid}
-[]{#_Toc404797973}[]{#struct_0_x1068_x9952_630398255}[]{#_Toc386113382}[]{#_Toc385854380}[]{#_Toc379615170}[]{#_Toc379555238}[]{#_Toc378607610}
+出端口
 
 **TRILL \-- TRILL配置命令 \-- flash-flood**
 
 ------------------------------------------------------------------------
 
-[**[flash-flood]{lang="EN-US"}**]{#struct_0_x1068_x9952_1691557337}[命令用来开启]{style="font-family:宋体"}[LSP]{lang="EN-US"}[快速扩散功能。]{style="font-family:宋体"}
+**[flash-flood**]命令用来开启LSP快速扩散功能。
 
-[**[undo]{lang="EN-US"}**[ **flash-flood**]{lang="EN-US"}]{#struct_0_x1068_x9952_152947877}[命令用来关闭]{style="font-family:宋体"}[LSP]{lang="EN-US"}[快速扩散功能。]{style="font-family:宋体"}
+**[undo** **flash-flood**]命令用来关闭LSP快速扩散功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1494689742}
+【命令】
 
-[**[flash-flood]{lang="EN-US"}**[ ]{lang="EN-US"}[\[ **flood-count** *flooding-count* \| **max-timer-interval** *flooding-interval* \] \*]{lang="EN-US"}]{#struct_0_x1068_x9952_637116210}
+**[flash-flood**[[ **flood-count** *flooding-count* \| **max-timer-interval** *flooding-interval* ] \*]]
 
-[**[undo]{lang="EN-US"}**[ **flash-flood**]{lang="EN-US"}]{#struct_0_x1068_x9952_x831651753}
+**[undo** **flash-flood**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_598634045}
+【缺省情况】
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_x438016362}[快速扩散功能处于关闭状态。]{style="font-family:宋体"}
+LSP快速扩散功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1911228297}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1340912276}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x786032603}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x2147263793}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x287238889}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_333356904}
+【参数】
 
-[**[flood-count]{lang="EN-US"}**[ *flooding-count*]{lang="EN-US"}]{#struct_0_x1068_x9952_x1196016329}[：表示]{style="font-family:宋体"}[扩散次]{style="font-family:宋体"}[数，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[15]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[5]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[flood-count** *flooding-count*]：表示扩散次数，取值范围为1～15，缺省值为5。
 
-[**[max-timer-interval]{lang="EN-US"}**[ *flooding-interval*]{lang="EN-US"}]{#struct_0_x1068_x9952_x309201297}[：]{style="font-family:宋体"}[表示开始进行]{style="font-family:宋体"}[扩散的延迟时间，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[50000]{lang="EN-US"}[，单位为毫秒，缺省值为]{style="font-family:宋体"}[0]{lang="EN-US"}[毫秒（表示立即扩散）。]{style="font-family:宋体"}
+**[max-timer-interval** *flooding-interval*]：表示开始进行扩散的延迟时间，取值范围为0～50000，单位为毫秒，缺省值为0毫秒（表示立即扩散）。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_104162642}
+【使用指导】
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_x291665936}[的变化会导致重新计算]{style="font-family:宋体"}[SPF]{lang="EN-US"}[。开启本功能后，设备会将导致]{style="font-family:宋体"}[SPF]{lang="EN-US"}[重新计算的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[快速扩散出去，从而有效缩短拓扑变化时全网设备上]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[不一致的时间，提高全网的快速收敛性能。]{style="font-family:宋体"}
+LSP的变化会导致重新计算SPF。开启本功能后，设备会将导致SPF重新计算的LSP快速扩散出去，从而有效缩短拓扑变化时全网设备上LSDB不一致的时间，提高全网的快速收敛性能。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x322010059}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x918421393}[开启]{style="font-family:宋体"}[LSP]{lang="EN-US"}[快速扩散功能，并配置]{style="font-family:宋体"}[LSP]{lang="EN-US"}[快速扩散的个数为]{style="font-family:宋体"}[10]{lang="EN-US"}[个、延迟时间为]{style="font-family:宋体"}[10]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+\# 开启LSP快速扩散功能，并配置LSP快速扩散的个数为10个、延迟时间为10毫秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_1387971079}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] flash-flood flood-count 10 max-timer-interval 10]{lang="EN-US"}
-:::
-
-::: {#285548656 .myid}
-[]{#_Toc404797974}[]{#struct_0_x1068_x9952_1674898153}[]{#_Toc386113383}[]{#_Toc385854381}[]{#_Toc379615173}
+Sysname-trill flash-flood flood-count 10 max-timer-interval 10
 
 **TRILL \-- TRILL配置命令 \-- flush-policy difference**
 
 ------------------------------------------------------------------------
 
-[**[flush-policy]{lang="EN-US"}**[ **difference**]{lang="EN-US"}]{#struct_0_x1068_x9952_1984007979}[命令用来配置]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[组播路由采用差异化下刷策略。]{style="font-family:宋体"}
+**[flush-policy** **difference**]命令用来配置TRILL组播路由采用差异化下刷策略。
 
-[**[undo]{lang="EN-US"}**[ **flush-policy** **difference**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1058351800}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **flush-policy** **difference**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_924869217}
+【命令】
 
-[**[flush-policy]{lang="EN-US"}**[ **difference**]{lang="EN-US"}]{#struct_0_x1068_x9952_1306163199}
+**[flush-policy** **difference**]
 
-[**[undo]{lang="EN-US"}**[ **flush-policy** **difference**]{lang="EN-US"}]{#struct_0_x1068_x9952_x480989399}
+**[undo** **flush-policy** **difference**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1733104923}
+【缺省情况】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1008450927}[组播路由未采用差异化下刷策略。]{style="font-family:宋体"}
+TRILL组播路由未采用差异化下刷策略。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1350978454}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x178112862}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x505877716}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1309323337}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1580653553}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x631752923}
+【使用指导】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1866675223}[组播路由表项分为]{style="font-family:宋体"}[RB]{lang="EN-US"}[表项、]{style="font-family:宋体"}[RB]{lang="EN-US"}[＋]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[表项和]{style="font-family:宋体"}[RB]{lang="EN-US"}[＋]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[＋]{style="font-family:宋体"}[MAC]{lang="EN-US"}[表项三级。在特定的组网和配置下，如果]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[组播路由相关的下级表项与上一级表项完全相同，此时只需下刷上一级表项便可正确指导转发，这便是差异化下刷策略，即仅当下级表项与上一级表项不同时才下刷。]{style="font-family:宋体"}
+TRILL组播路由表项分为RB表项、RB＋VLAN表项和RB＋VLAN＋MAC表项三级。在特定的组网和配置下，如果TRILL组播路由相关的下级表项与上一级表项完全相同，此时只需下刷上一级表项便可正确指导转发，这便是差异化下刷策略，即仅当下级表项与上一级表项不同时才下刷。
 
-[[例如：若一棵]{style="font-family:宋体"}[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1184930686}[分发树的]{style="font-family:宋体"}[RB]{lang="EN-US"}[表项、]{style="font-family:宋体"}[RB]{lang="EN-US"}[＋]{style="font-family:宋体"}[VLAN 1]{lang="EN-US"}[表项和]{style="font-family:宋体"}[RB]{lang="EN-US"}[＋]{style="font-family:宋体"}[VLAN 1]{lang="EN-US"}[＋]{style="font-family:宋体"}[MAC]{lang="EN-US"}[表项均相同，则只需下刷]{style="font-family:宋体"}[RB]{lang="EN-US"}[表项即可，]{style="font-family:宋体"}[VLAN 1]{lang="EN-US"}[中的]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[数据报文可以直接查找]{style="font-family:宋体"}[RB]{lang="EN-US"}[表项进行转发。]{style="font-family:宋体"}
+例如：若一棵TRILL分发树的RB表项、RB＋VLAN 1表项和RB＋VLAN 1＋MAC表项均相同，则只需下刷RB表项即可，VLAN 1中的TRILL数据报文可以直接查找RB表项进行转发。
 
-[[需要注意的是，本命令只能应用在]{style="font-family:宋体"}[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x1179607239}[表项、]{style="font-family:宋体"}[RB]{lang="EN-US"}[＋]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[表项和]{style="font-family:宋体"}[RB]{lang="EN-US"}[＋]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[＋]{style="font-family:宋体"}[MAC]{lang="EN-US"}[表项的出端口和本地标识都相同的特殊组网中，否则将导致大量表项同一时间集中下刷而使性能下降。]{style="font-family:宋体"}
+需要注意的是，本命令只能应用在RB表项、RB＋VLAN表项和RB＋VLAN＋MAC表项的出端口和本地标识都相同的特殊组网中，否则将导致大量表项同一时间集中下刷而使性能下降。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1832275049}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_474926682}[配置]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[组播路由采用差异化下刷策略。]{style="font-family:宋体"}
+\# 配置TRILL组播路由采用差异化下刷策略。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x1744196803}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] flush-policy difference]{lang="EN-US"}
-:::
-
-::: {#63544256 .myid}
-[]{#_Toc404797975}[]{#struct_0_x1068_x9952_x1922360404}[]{#_Toc326062199}
+Sysname-trill flush-policy difference
 
 **TRILL \-- TRILL配置命令 \-- graceful-restart**
 
 ------------------------------------------------------------------------
 
-[**[graceful-restart]{lang="EN-US"}**]{#struct_0_x1068_x9952_x1067027406}[命令用来使能]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[能力。]{style="font-family:宋体"}
+**[graceful-restart**]命令用来使能TRILL的GR能力。
 
-[**[undo graceful-restart]{lang="EN-US"}**]{#struct_0_x1068_x9952_1270618657}[命令用来关闭]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[能力。]{style="font-family:宋体"}
+**[undo graceful-restart**]命令用来关闭TRILL的GR能力。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_775259910}
+【命令】
 
-[**[graceful-restart]{lang="EN-US"}**]{#struct_0_x1068_x9952_x198362300}
+**[graceful-restart**]
 
-[**[undo ]{lang="EN-US"}[graceful-restart]{lang="EN-US"}**]{#struct_0_x1068_x9952_998587534}
+**[undo graceful-restart**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1881088755}
+【缺省情况】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_585012692}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[能力处于关闭状态。]{style="font-family:宋体"}
+TRILL的GR能力处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1990961078}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_229066336}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1227157151}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x166346965}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_775325446}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x967231262}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x1461611209}[使能]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[能力。]{style="font-family:宋体"}
+\# 使能TRILL的GR能力。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_1120093533}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] graceful-restart]{lang="EN-US"}
-:::
-
-::: {#16863910 .myid}
-[]{#_Toc404797976}[]{#struct_0_x1068_x9952_109547954}[]{#_Toc326062200}
+Sysname-trill graceful-restart
 
 **TRILL \-- TRILL配置命令 \-- graceful-restart interval**
 
 ------------------------------------------------------------------------
 
-[**[graceful-restart interval]{lang="EN-US"}**]{#struct_0_x1068_x9952_x40747342}[命令用来配置]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[重启间隔。]{style="font-family:宋体"}
+**[graceful-restart interval**]命令用来配置TRILL的GR重启间隔。
 
-[**[undo graceful-restart interval]{lang="EN-US"}**]{#struct_0_x1068_x9952_1561165001}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo graceful-restart interval**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1597917370}
+【命令】
 
-[**[graceful-restart interval ]{lang="EN-US"}**]{#struct_0_x1068_x9952_720561029}*[interval]{lang="EN-US"}*
+**[graceful-restart interval **]*interval*
 
-[**[undo graceful-restart interval]{lang="EN-US"}**]{#struct_0_x1068_x9952_1012730165}
+**[undo graceful-restart interval**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x936049462}
+【缺省情况】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x49475094}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[重启间隔为]{style="font-family:宋体"}[300]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+TRILL的GR重启间隔为300秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_84813380}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_2025374631}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x701737903}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x386379947}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597851834}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1302204110}
+【参数】
 
-[*[interval]{lang="EN-US"}*]{#struct_0_x1068_x9952_x486755007}[：表示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[重启间隔]{style="font-family:宋体"}[，取值范围为]{style="font-family:宋体"}[30]{lang="EN-US"}[～]{style="font-family:宋体"}[1800]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[interval*]：表示TRILL的GR重启间隔，取值范围为30～1800，单位为秒。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1002271724}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x53432569}[配置]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[的]{style="font-family:宋体"}[GR]{lang="EN-US"}[重启间隔为]{style="font-family:宋体"}[120]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置TRILL的GR重启间隔为120秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_140483393}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] graceful-restart interval 120]{lang="EN-US"}
-:::
-
-::: {#1056335496 .myid}
-[]{#_Toc379615164}[]{#_Toc379555232}[]{#_Toc404797977}[]{#struct_0_x1068_x9952_x937627749}[]{#_Toc386113386}[]{#_Toc385854384}[]{#_Toc379615168}[]{#_Toc379555236}
+Sysname-trill graceful-restart interval 120
 
 **TRILL \-- TRILL配置命令 \-- graceful-restart suppress-sa**
 
 ------------------------------------------------------------------------
 
-[**[graceful-restart]{lang="EN-US"}**[ **suppress-sa**]{lang="EN-US"}]{#struct_0_x1068_x9952_x728267512}[命令用来]{style="font-family:宋体"}[配置]{style="font-family:宋体"}[TRILL GR]{lang="EN-US"}[重启时抑制]{style="font-family:宋体"}[SA]{lang="EN-US"}[（]{style="font-family:宋体"}[Suppress-Advertisement]{lang="EN-US"}[）位置位。]{style="font-family:宋体"}
+**[graceful-restart** **suppress-sa**]命令用来配置TRILL GR重启时抑制SA（Suppress-Advertisement）位置位。
 
-[**[undo]{lang="EN-US"}**[ **graceful-restart** **suppress-sa**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1238660069}[命令用来]{style="font-family:宋体"}[恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **graceful-restart** **suppress-sa**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1442172436}
+【命令】
 
-[**[graceful-restart]{lang="EN-US"}**[ **suppress-sa**]{lang="EN-US"}]{#struct_0_x1068_x9952_1791255606}
+**[graceful-restart** **suppress-sa**]
 
-[**[undo]{lang="EN-US"}**[ **graceful-restart** **suppress-sa**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1635141953}
+**[undo** **graceful-restart** **suppress-sa**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_2049215674}
+【缺省情况】
 
-[[TRILL GR]{lang="EN-US"}]{#struct_0_x1068_x9952_1093982525}[重启时]{style="font-family:宋体"}[SA]{lang="EN-US"}[位将被置位。]{style="font-family:宋体"}
+TRILL GR重启时SA位将被置位。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1610640974}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_1148519645}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_2013486242}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1721638310}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1542062471}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1042963110}
+【使用指导】
 
-[[SA]{lang="EN-US"}]{#struct_0_x1068_x9952_225171665}[表示抑制邻接标志位，将其置位的主要目的是避免出现路由黑洞，例如在启动或重启时没有保留本地转发表，此时如果]{style="font-family:宋体"}[GR Helper]{lang="EN-US"}[将报文送到设备来进行转发将造成严重的丢包现象。在这种情况下，]{style="font-family:宋体"}[GR Restarter]{lang="EN-US"}[发送的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文中必须将]{style="font-family:宋体"}[SA]{lang="EN-US"}[位置位，而]{style="font-family:宋体"}[GR Helper]{lang="EN-US"}[收到这种]{style="font-family:宋体"}[SA]{lang="EN-US"}[位被置位的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文后，将不会把发送该]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的]{style="font-family:宋体"}[GR Restarter]{lang="EN-US"}[放入]{style="font-family:宋体"}[LSP]{lang="EN-US"}[中扩散出去。而对于启动速度要求较高的场景，则可以不配置]{style="font-family:宋体"}[TRILL GR]{lang="EN-US"}[重启时抑制]{style="font-family:宋体"}[SA]{lang="EN-US"}[位置位。]{style="font-family:宋体"}
+SA表示抑制邻接标志位，将其置位的主要目的是避免出现路由黑洞，例如在启动或重启时没有保留本地转发表，此时如果GR Helper将报文送到设备来进行转发将造成严重的丢包现象。在这种情况下，GR Restarter发送的Hello报文中必须将SA位置位，而GR Helper收到这种SA位被置位的Hello报文后，将不会把发送该Hello报文的GR Restarter放入LSP中扩散出去。而对于启动速度要求较高的场景，则可以不配置TRILL GR重启时抑制SA位置位。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1258380498}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_671098157}[配置]{style="font-family:宋体"}[TRILL GR]{lang="EN-US"}[重启时抑制]{style="font-family:宋体"}[SA]{lang="EN-US"}[位置位。]{style="font-family:宋体"}
+\# 配置TRILL GR重启时抑制SA位置位。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x1020234834}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] graceful-restart suppress-sa]{lang="EN-US"}
-:::
-
-::: {#486671225 .myid}
-[]{#_Toc404797978}[]{#struct_0_x1068_x9952_1071311360}[]{#_Toc386113388}[]{#_Toc385854386}[]{#_Toc379615165}[]{#_Toc379555233}
+Sysname-trill graceful-restart suppress-sa
 
 **TRILL \-- TRILL配置命令 \-- ingress assign-delay**
 
 ------------------------------------------------------------------------
 
-[**[ingress]{lang="EN-US"}**[ **assign-delay**]{lang="EN-US"}]{#struct_0_x1068_x9952_303284365}[命令用来配置入流量分配给新]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树的延时时间。]{style="font-family:宋体"}
+**[ingress** **assign-delay**]命令用来配置入流量分配给新TRILL分发树的延时时间。
 
-[**[undo]{lang="EN-US"}**[ **ingress** **assign-delay**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1216249913}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **ingress** **assign-delay**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1171992533}
+【命令】
 
-[**[ingress]{lang="EN-US"}**[ **assign-delay** ]{lang="EN-US"}*[delay]{lang="EN-US"}*]{#struct_0_x1068_x9952_x1478353643}
+**[ingress** **assign-delay** *delay*]
 
-[**[undo]{lang="EN-US"}**[ **ingress** **assign-delay**]{lang="EN-US"}]{#struct_0_x1068_x9952_1518723610}
+**[undo** **ingress** **assign-delay**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_925279985}
+【缺省情况】
 
-[[入流量分配给新]{style="font-family:宋体"}[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1697142636}[分发树的延时时间为]{style="font-family:宋体"}[300]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+入流量分配给新TRILL分发树的延时时间为300秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_806170400}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_1714044862}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1443813270}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_837930552}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1765299008}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_2112146321}
+【参数】
 
-[*[delay]{lang="EN-US"}*]{#struct_0_x1068_x9952_396747127}[：入流量分配给新]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树的延时时间，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[delay*]：入流量分配给新TRILL分发树的延时时间，取值范围为1～3600，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1471168406}
+【使用指导】
 
-[[当入流量选择]{style="font-family:宋体"}[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_343873275}[分发树的策略为负载均衡优先时，当新增一棵]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树时，为了让所有]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树来进行流量分担，]{style="font-family:宋体"}[Ingress RB]{lang="EN-US"}[需要将部分已分配给其它树的]{style="font-family:宋体"}[AVF VLAN]{lang="EN-US"}[重新分配给新树，以使新树分担本地流量的转发。但在其他]{style="font-family:宋体"}[RB]{lang="EN-US"}[尚未声明使用新树前，本地流量是无法使用新树进行转发的。因此，可以通过本命令来设置新树生效后，入流量分配给该树的延时时间。]{style="font-family:宋体"}
+当入流量选择TRILL分发树的策略为负载均衡优先时，当新增一棵TRILL分发树时，为了让所有TRILL分发树来进行流量分担，Ingress RB需要将部分已分配给其它树的AVF VLAN重新分配给新树，以使新树分担本地流量的转发。但在其他RB尚未声明使用新树前，本地流量是无法使用新树进行转发的。因此，可以通过本命令来设置新树生效后，入流量分配给该树的延时时间。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x353700361}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_1031740719}[配置入流量分配给新]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树的延时时间为]{style="font-family:宋体"}[600]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置入流量分配给新TRILL分发树的延时时间为600秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x1468984133}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] ingress assign-delay 600]{lang="EN-US"}
+Sysname-trill ingress assign-delay 600
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1062956952}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ingress]{lang="EN-US"}**[ **assign-rule** **load-balancing**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1132458420}
-:::
-
-::: {#380640639 .myid}
-[]{#_Toc404797979}[]{#struct_0_x1068_x9952_1492170362}[]{#_Toc386113387}[]{#_Toc385854385}
+·**ingress** **assign-rule** **load-balancing**
 
 **TRILL \-- TRILL配置命令 \-- ingress assign-rule load-balancing**
 
 ------------------------------------------------------------------------
 
-[**[ingress]{lang="EN-US"}**[ **assign-rule** **load-balancing**]{lang="EN-US"}]{#struct_0_x1068_x9952_1723226256}[命令用来配置入流量选择]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树的策略为负载均衡优先。]{style="font-family:宋体"}
+**[ingress** **assign-rule** **load-balancing**]命令用来配置入流量选择TRILL分发树的策略为负载均衡优先。
 
-[**[undo]{lang="EN-US"}**[ **ingress** **assign-rule**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1963308304}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **ingress** **assign-rule**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_282642343}
+【命令】
 
-[**[ingress]{lang="EN-US"}**[ **assign-rule** **load-balancing**]{lang="EN-US"}]{#struct_0_x1068_x9952_831227319}
+**[ingress** **assign-rule** **load-balancing**]
 
-[**[undo]{lang="EN-US"}**[ **ingress** **assign-rule**]{lang="EN-US"}]{#struct_0_x1068_x9952_x880230104}
+**[undo** **ingress** **assign-rule**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_550192200}
+【缺省情况】
 
-[[入流量选择]{style="font-family:宋体"}[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1418319704}[分发树的策略为稳定优先。]{style="font-family:宋体"}
+入流量选择TRILL分发树的策略为稳定优先。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1340846740}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x253258479}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x2081253704}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x998785250}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x63470570}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1753113682}
+【使用指导】
 
-[[当新增或删除]{style="font-family:宋体"}[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_562712459}[分发树时，入流量选择]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树的策略缺省为稳定优先，即尽量保持原分发树不变；如果想让全部分发树都对入流量进行负载分担，则可将策略配置为负载均衡优先。]{style="font-family:宋体"}
+当新增或删除TRILL分发树时，入流量选择TRILL分发树的策略缺省为稳定优先，即尽量保持原分发树不变；如果想让全部分发树都对入流量进行负载分担，则可将策略配置为负载均衡优先。
 
-[[需要注意的是，本命令只影响减少]{style="font-family:宋体"}[AVF VLAN]{lang="EN-US"}]{#struct_0_x1068_x9952_x801419177}[时对剩余]{style="font-family:宋体"}[AVF VLAN]{lang="EN-US"}[选择]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树的策略。]{style="font-family:宋体"}
+需要注意的是，本命令只影响减少AVF VLAN时对剩余AVF VLAN选择TRILL分发树的策略。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1486752474}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_2134871522}[配置入表项选择]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树的策略为负载均衡优先。]{style="font-family:宋体"}
+\# 配置入表项选择TRILL分发树的策略为负载均衡优先。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_1388036615}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] ingress assign-rule load-balancing]{lang="EN-US"}
-:::
-
-::: {#-1553303123 .myid}
-[]{#_Toc404797980}[]{#struct_0_x1068_x9952_2074717768}
+Sysname-trill ingress assign-rule load-balancing
 
 **TRILL \-- TRILL配置命令 \-- log-peer-change enable**
 
 ------------------------------------------------------------------------
 
-[**[log-peer-change]{lang="EN-US"}**[ **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_x369922188}[命令用来开启]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[邻接状态输出开关。]{style="font-family:宋体"}
+**[log-peer-change** **enable**]命令用来开启TRILL邻接状态输出开关。
 
-[**[undo]{lang="EN-US"}**[ **log-peer-change** **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1598048442}[命令用来关闭]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[邻接状态输出开关。]{style="font-family:宋体"}
+**[undo** **log-peer-change** **enable**]命令用来关闭TRILL邻接状态输出开关。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x22823944}
+【命令】
 
-[**[log-peer-change]{lang="EN-US"}**[ **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1540285915}
+**[log-peer-change** **enable**]
 
-[**[undo]{lang="EN-US"}**[ **log-peer-change** **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_1980040364}
+**[undo** **log-peer-change** **enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x51021960}
+【缺省情况】
 
-[[邻接状态输出开关处于开启状态。]{style="font-family:宋体"}]{#struct_0_x1068_x9952_1033241143}
+邻接状态输出开关处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_746561734}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x393320103}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1597982906}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1368041460}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1629341805}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_901556381}
+【使用指导】
 
-[[开启邻接状态输出开关后，]{style="font-family:宋体"}[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_935904474}[邻接状态的变化会输出到配置终端上。]{style="font-family:宋体"}
+开启邻接状态输出开关后，TRILL邻接状态的变化会输出到配置终端上。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1280667697}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_310957320}[关闭]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[邻接状态输出开关。]{style="font-family:宋体"}
+\# 关闭TRILL邻接状态输出开关。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x925980878}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] undo log-peer-change enable]{lang="EN-US"}
-:::
-
-::: {#-446381553 .myid}
-[]{#_Toc404797981}[]{#struct_0_x1068_x9952_x1597655226}[]{#_Toc339972653}
+Sysname-trill undo log-peer-change enable
 
 **TRILL \-- TRILL配置命令 \-- lsp-length originate**
 
 ------------------------------------------------------------------------
 
-[**[lsp-length]{lang="EN-US"}**[ **originate**]{lang="EN-US"}]{#struct_0_x1068_x9952_409328226}[命令用来配置]{style="font-family:宋体"}[RB]{lang="EN-US"}[可生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[最大长度。]{style="font-family:宋体"}
+**[lsp-length** **originate**]命令用来配置RB可生成的LSP最大长度。
 
-[**[undo]{lang="EN-US"}**[ **lsp-length** **originate**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1496032580}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **lsp-length** **originate**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x7152887}
+【命令】
 
-[**[lsp-length]{lang="EN-US"}**[ **originate** *size*]{lang="EN-US"}]{#struct_0_x1068_x9952_821401782}
+**[lsp-length** **originate** *size*]
 
-[**[undo]{lang="EN-US"}**[ **lsp-length** **originate**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1945070777}
+**[undo** **lsp-length** **originate**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x2054695240}
+【缺省情况】
 
-[[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x110853693}[可生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[最大长度为]{style="font-family:宋体"}[1458]{lang="EN-US"}[字节。]{style="font-family:宋体"}
+RB可生成的LSP最大长度为1458字节。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x209947305}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597589690}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x455098701}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_373266045}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x674820897}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1506606325}
+【参数】
 
-[*[size]{lang="EN-US"}*]{#struct_0_x1068_x9952_x194835488}[：表示]{style="font-family:宋体"}[RB]{lang="EN-US"}[可生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[最大长度，取值范围为]{style="font-family:宋体"}[512]{lang="EN-US"}[～]{style="font-family:宋体"}[16384]{lang="EN-US"}[，单位为字节。]{style="font-family:宋体"}
+*[size*]：表示RB可生成的LSP最大长度，取值范围为512～16384，单位为字节。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x297630590}
+【使用指导】
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_178630810}[的实际最大长度将由本配置值、端口的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[值和所有其它]{style="font-family:宋体"}[RB]{lang="EN-US"}[在]{style="font-family:宋体"}[LSP]{lang="EN-US"}[中携带的自身能生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[最大长度这三者中的最小值来决定。]{style="font-family:宋体"}
+LSP的实际最大长度将由本配置值、端口的MTU值和所有其它RB在LSP中携带的自身能生成的LSP最大长度这三者中的最小值来决定。
 
-[[需要注意的是，]{style="font-family:宋体"}[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x67543401}[可生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[最大长度不得大于]{style="font-family:宋体"}[RB]{lang="EN-US"}[可接收的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[最大长度，否则系统将提示出错。]{style="font-family:宋体"}
+需要注意的是，RB可生成的LSP最大长度不得大于RB可接收的LSP最大长度，否则系统将提示出错。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1597786298}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_1110467471}[配置]{style="font-family:宋体"}[RB]{lang="EN-US"}[可生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[最大长度为]{style="font-family:宋体"}[1024]{lang="EN-US"}[字节。]{style="font-family:宋体"}
+\# 配置RB可生成的LSP最大长度为1024字节。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x1786283719}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] lsp-length originate 1024]{lang="EN-US"}
+Sysname-trill lsp-length originate 1024
 
-[]{#_Toc339972654}[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_874687790}
+【命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[lsp-length]{lang="EN-US"}**[ **receive**]{lang="EN-US"}]{#struct_0_x1068_x9952_x913238177}
-:::
-
-::: {#-1321064373 .myid}
-[]{#_Toc404797982}[]{#struct_0_x1068_x9952_119961292}
+·**lsp-length** **receive**
 
 **TRILL \-- TRILL配置命令 \-- lsp-length receive**
 
 ------------------------------------------------------------------------
 
-[**[lsp-length]{lang="EN-US"}**[ **receive**]{lang="EN-US"}]{#struct_0_x1068_x9952_x983994573}[命令用来配置]{style="font-family:宋体"}[RB]{lang="EN-US"}[可接收的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[最大长度。]{style="font-family:宋体"}
+**[lsp-length** **receive**]命令用来配置RB可接收的LSP最大长度。
 
-[**[undo]{lang="EN-US"}**[ **lsp-length** **receive**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597720762}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **lsp-length** **receive**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1214734852}
+【命令】
 
-[**[lsp-length]{lang="EN-US"}**[ **receive** *size*]{lang="EN-US"}]{#struct_0_x1068_x9952_782762700}
+**[lsp-length** **receive** *size*]
 
-[**[undo]{lang="EN-US"}**[ **lsp-length** **receive**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1475042151}
+**[undo** **lsp-length** **receive**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1003849003}
+【缺省情况】
 
-[[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x712360875}[可接收的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[最大长度为]{style="font-family:宋体"}[1492]{lang="EN-US"}[字节。]{style="font-family:宋体"}
+RB可接收的LSP最大长度为1492字节。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1160523180}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1259402514}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x28576590}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597393082}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1185646288}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1420025311}
+【参数】
 
-[*[size]{lang="EN-US"}*]{#struct_0_x1068_x9952_662386315}[：表示]{style="font-family:宋体"}[RB]{lang="EN-US"}[可接收的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[最大长度，取值范围为]{style="font-family:宋体"}[512]{lang="EN-US"}[～]{style="font-family:宋体"}[16384]{lang="EN-US"}[，单位为字节。]{style="font-family:宋体"}
+*[size*]：表示RB可接收的LSP最大长度，取值范围为512～16384，单位为字节。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1358656822}
+【使用指导】
 
-[[需要注意的是，]{style="font-family:宋体"}[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x714118869}[可接收的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[最大长度不得小于]{style="font-family:宋体"}[RB]{lang="EN-US"}[可生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[最大长度，否则系统将提示出错。]{style="font-family:宋体"}
+需要注意的是，RB可接收的LSP最大长度不得小于RB可生成的LSP最大长度，否则系统将提示出错。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x522946833}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_556144775}[配置]{style="font-family:宋体"}[RB]{lang="EN-US"}[可接收的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[最大长度为]{style="font-family:宋体"}[1024]{lang="EN-US"}[字节。]{style="font-family:宋体"}
+\# 配置RB可接收的LSP最大长度为1024字节。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597327546}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] lsp-length receive 1024]{lang="EN-US"}
+Sysname-trill lsp-length receive 1024
 
-[]{#_Toc339972655}[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1521840230}
+【命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[lsp-length originate]{lang="EN-US"}**]{#struct_0_x1068_x9952_x148032806}
-:::
-
-::: {#196595129 .myid}
-[]{#_Toc404797983}[]{#struct_0_x1068_x9952_446179124}
+·**lsp-length originate**
 
 **TRILL \-- TRILL配置命令 \-- max-unicast-load-balancing**
 
 ------------------------------------------------------------------------
 
-[**[max-unicast-load-balancing]{lang="EN-US"}**]{#struct_0_x1068_x9952_x2095926323}[命令用来配置]{style="font-family:
-宋体"}[TRILL]{lang="EN-US"}[单播等价多路径的最大路径数。]{style="font-family:宋体"}
+**[max-unicast-load-balancing**]命令用来配置TRILL单播等价多路径的最大路径数。
 
-[**[undo]{lang="EN-US"}**[ **max-unicast-load-balancing**]{lang="EN-US"}]{#struct_0_x1068_x9952_x275304276}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **max-unicast-load-balancing**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x498281327}
+【命令】
 
-[**[max-unicast-load-balancing]{lang="EN-US"}**[ *number*]{lang="EN-US"}]{#struct_0_x1068_x9952_x662916890}
+**[max-unicast-load-balancing** *number*]
 
-[**[undo]{lang="EN-US"}**[ **max-unicast-load-balancing**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597917369}
+**[undo** **max-unicast-load-balancing**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1930480146}
+【缺省情况】
 
-[[本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x1177021293}
+本命令的缺省情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_2121498771}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_1652935866}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_2042223848}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x810433932}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1826523955}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1992584031}
+【参数】
 
-[*[number]{lang="EN-US"}*]{#struct_0_x1068_x9952_x1597851833}[：表示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[单播等价多路径的最大路径数，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。取值为]{style="font-family:宋体"}[1]{lang="EN-US"}[表示不进行负载分担。]{style="font-family:宋体"}
+*[number*]：表示TRILL单播等价多路径的最大路径数，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。取值为1表示不进行负载分担。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x542689223}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_2106206976}[配置]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[单播等价多路径的最大路径数为]{style="font-family:宋体"}[3]{lang="EN-US"}[条。]{style="font-family:宋体"}
+\# 配置TRILL单播等价多路径的最大路径数为3条。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_2020343896}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] max-unicast-load-balancing 3]{lang="EN-US"}
-:::
-
-::: {#1854666751 .myid}
-[]{#_Toc404797984}[]{#struct_0_x1068_x9952_225237201}[]{#_Toc386113393}[]{#_Toc385854391}[]{#_Toc379615167}[]{#_Toc379555235}
+Sysname-trill max-unicast-load-balancing 3
 
 **TRILL \-- TRILL配置命令 \-- multicast multi-thread enable**
 
 ------------------------------------------------------------------------
 
-[**[multicast]{lang="EN-US"}**[ **multi-thread** **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_x849203530}[命令用来开启]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树计算]{style="font-family:宋体"}[支持多线程功能]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[multicast** **multi-thread** **enable**]命令用来开启TRILL分发树计算支持多线程功能。
 
-[**[undo]{lang="EN-US"}**[ **multicast** **multi-thread** **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_33528846}[命令用来关闭]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树计算]{style="font-family:宋体"}[支持多线程功能]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo** **multicast** **multi-thread** **enable**]命令用来关闭TRILL分发树计算支持多线程功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1635009182}
+【命令】
 
-[**[multicast]{lang="EN-US"}**[ **multi-thread** **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_951338319}
+**[multicast** **multi-thread** **enable**]
 
-[**[undo]{lang="EN-US"}**[ **multicast** **multi-thread** **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_x640760443}
+**[undo** **multicast** **multi-thread** **enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_2004750708}
+【缺省情况】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1595074742}[分发树计算]{style="font-family:宋体"}[支持多线程功能处于关闭状态]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+TRILL分发树计算支持多线程功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_562219563}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1697077100}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1676776982}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_300478543}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1493852817}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1393454702}
+【使用指导】
 
-[[在多核]{style="font-family:宋体"}[CPU]{lang="EN-US"}]{#struct_0_x1068_x9952_88484501}[设备上]{style="font-family:宋体"}[，]{style="font-family:宋体"}[可以]{style="font-family:宋体"}[开启]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树计算]{style="font-family:宋体"}[支]{style="font-family:宋体"}[持多线程功能，以提升]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树]{style="font-family:宋体"}[的计算效率。开启本功能后]{style="font-family:宋体"}[，每棵]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树将分别]{style="font-family:宋体"}[使用一个线程进行计算。]{style="font-family:宋体"}
+在多核CPU设备上，可以开启TRILL分发树计算支持多线程功能，以提升TRILL分发树的计算效率。开启本功能后，每棵TRILL分发树将分别使用一个线程进行计算。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x2052442914}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在单核]{style="font-family:宋体"}]{#struct_0_x1068_x9952_200475867}[CPU]{lang="EN-US"}[设备上]{style="font-family:宋体"}[开启本功能后，]{style="font-family:宋体"}[并不一定会带来效率的提升。]{style="font-family:宋体"}
+·在单核CPU设备上开启本功能后，并不一定会带来效率的提升。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[开启或关闭]{style="font-family:宋体"}]{#struct_0_x1068_x9952_719043623}[本功能，]{style="font-family:宋体"}[将会清除]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[进程当前的动态运行数据。]{style="font-family:宋体"}
+·开启或关闭本功能，将会清除TRILL进程当前的动态运行数据。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x412539018}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x1637678404}[开启]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树计算]{style="font-family:宋体"}[支持多线程功能]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 开启TRILL分发树计算支持多线程功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_1031806255}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] multicast multi-thread enable]{lang="EN-US"}
+Sysname-trill multicast multi-thread enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_479931104}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset]{lang="EN-US"}**]{#struct_0_x1068_x9952_2125975275}[ **trill**]{lang="EN-US"}
-:::
-
-::: {#766037401 .myid}
-[]{#_Toc404797985}[]{#struct_0_x1068_x9952_x2016026674}
+·**reset** **trill**
 
 **TRILL \-- TRILL配置命令 \-- multicast-ecmp enable**
 
 ------------------------------------------------------------------------
 
-[**[multicast-ecmp]{lang="EN-US"}**[ **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_x2015961138}[命令用来开启]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[组播等价多路径功能。]{style="font-family:宋体"}
+**[multicast-ecmp** **enable**]命令用来开启TRILL组播等价多路径功能。
 
-[**[undo]{lang="EN-US"}**[ **multicast-ecmp** **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_x23112893}[命令用来关闭]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[组播等价多路径功能。]{style="font-family:宋体"}
+**[undo** **multicast-ecmp** **enable**]命令用来关闭TRILL组播等价多路径功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1901823719}
+【命令】
 
-[**[multicast-ecmp]{lang="EN-US"}**[ **enable** [\[ **p2p-ignore** \]]{style="color:black"}]{lang="EN-US"}]{#struct_0_x1068_x9952_x625758650}
+**[multicast-ecmp** **enable**  **p2p-ignore** ]
 
-[**[undo]{lang="EN-US"}**[ **multicast-ecmp** **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_1573430869}
+**[undo** **multicast-ecmp** **enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1062849408}
+【缺省情况】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1207595620}[组播等价多路径功能处于关闭状态。]{style="font-family:宋体"}
+TRILL组播等价多路径功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x566523747}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x2015895602}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_857220051}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1254903504}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x201406951}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1340781204}
+【参数】
 
-[**[p2p-ignore]{lang="EN-US" style="color:black"}**]{#struct_0_x1068_x9952_498434406}[：表示在伪节点被旁路的等价路径上，只使用一条路径转发组播报文。如果未指定本参数，表示在伪节点被旁路的等价路径上，使用全部等价路径转发组播报文，这样可在最大程度上实现组播流量的负载分担。但当与第三方厂商的设备互通时，可能需要指定本参数以保证互通成功。]{style="font-family:
-宋体"}
+**[p2p-ignore**]：表示在伪节点被旁路的等价路径上，只使用一条路径转发组播报文。如果未指定本参数，表示在伪节点被旁路的等价路径上，使用全部等价路径转发组播报文，这样可在最大程度上实现组播流量的负载分担。但当与第三方厂商的设备互通时，可能需要指定本参数以保证互通成功。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1685510811}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[当]{style="font-family:宋体"}]{#struct_0_x1068_x9952_1368815309}[TRILL]{lang="EN-US"}[组播等价多路径功能关闭时，由于根桥不同而使各分发树拓扑不同，从而可在一定程度上实现组播流量的负载分担，但并未利用开销相同的等价路径来分担流量；当开启该功能后，]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[可将这些等价路径分给不同的分发树，从而实现更好的负载分担效果。]{style="font-family:宋体"}
+·当TRILL组播等价多路径功能关闭时，由于根桥不同而使各分发树拓扑不同，从而可在一定程度上实现组播流量的负载分担，但并未利用开销相同的等价路径来分担流量；当开启该功能后，TRILL可将这些等价路径分给不同的分发树，从而实现更好的负载分担效果。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本功能的配置在]{style="font-family:宋体"}]{#struct_0_x1068_x9952_855127222}[TRILL]{lang="EN-US"}[网络中所有]{style="font-family:宋体"}[RB]{lang="EN-US"}[上应完全一致，否则可能导致组播流量不通。]{style="font-family:宋体"}
+·本功能的配置在TRILL网络中所有RB上应完全一致，否则可能导致组播流量不通。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1928554037}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x806499534}[开启]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[组播等价多路径功能。]{style="font-family:宋体"}
+\# 开启TRILL组播等价多路径功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x2015830066}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] multicast-ecmp enable]{lang="EN-US"}
-:::
-
-::: {#1142895620 .myid}
-[]{#_Toc404797986}[]{#struct_0_x1068_x9952_1525515412}[]{#_Toc339972656}[]{#_Toc347394258}[]{#_Toc347394259}
+Sysname-trill multicast-ecmp enable
 
 **TRILL \-- TRILL配置命令 \-- nickname**
 
 ------------------------------------------------------------------------
 
-[**[nickname]{lang="EN-US"}**]{#struct_0_x1068_x9952_1158272362}[命令用来配置]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[nickname**]命令用来配置RB的Nickname。
 
-[**[undo]{lang="EN-US"}**[ **nickname**]{lang="EN-US"}]{#struct_0_x1068_x9952_x2126758881}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **nickname**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_775647630}
+【命令】
 
-[**[nickname]{lang="EN-US"}**[ *nickname* \[ **priority** *priority* \]]{lang="EN-US"}]{#struct_0_x1068_x9952_x1598048441}
+**[nickname** *nickname* [ **priority** *priority* ]]
 
-[**[undo]{lang="EN-US"}**[ **nickname** *nickname*]{lang="EN-US"}]{#struct_0_x1068_x9952_x426108471}
+**[undo** **nickname** *nickname*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_810919336}
+【缺省情况】
 
-[[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_1017366781}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[由系统自动分配，其持有]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[的优先级为]{style="font-family:宋体"}[64]{lang="EN-US"}[。]{style="font-family:宋体"}
+RB的Nickname由系统自动分配，其持有Nickname的优先级为64。
 
-[[【视图】]{style="font-family:
-黑体"}]{#struct_0_x1068_x9952_9956982}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1144836849}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_809559618}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x856794337}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1911627843}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1597982905}
+【参数】
 
-[*[nickname]{lang="EN-US"}*]{#struct_0_x1068_x9952_964756933}[：表示]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[，为]{style="font-family:宋体"}[0x1]{lang="EN-US"}[～]{style="font-family:宋体"}[0xFFBF]{lang="EN-US"}[的十六进制数]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+*[nickname*]：表示RB的Nickname，为0x1～0xFFBF的十六进制数。
 
-[**[priority]{lang="EN-US"}**[ *priority*]{lang="EN-US"}]{#struct_0_x1068_x9952_423000782}[：表示]{style="font-family:宋体"}[RB]{lang="EN-US"}[持有]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[的优先级，取值范围为]{style="font-family:宋体"}[129]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[，缺省值为]{style="font-family:宋体"}[192]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[priority** *priority*]：表示RB持有Nickname的优先级，取值范围为129～255，缺省值为192。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x795762107}
+【使用指导】
 
-[[Nickname]{lang="EN-US"}]{#struct_0_x1068_x9952_473251089}[是]{style="font-family:宋体"}[RB]{lang="EN-US"}[在]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[网络中的地址。如果]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[网络中不同]{style="font-family:宋体"}[RB]{lang="EN-US"}[拥有相同的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[，则优先级较高者保留此]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[；如果优先级也相同，则]{style="font-family:宋体"}[System ID]{lang="EN-US"}[较大者保留此]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[，其余]{style="font-family:宋体"}[RB]{lang="EN-US"}[再由系统为其自动分配一个新的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[。]{style="font-family:宋体"}
+Nickname是RB在TRILL网络中的地址。如果TRILL网络中不同RB拥有相同的Nickname，则优先级较高者保留此Nickname；如果优先级也相同，则System ID较大者保留此Nickname，其余RB再由系统为其自动分配一个新的Nickname。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1428684749}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x283449675}[配置]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[为]{style="font-family:宋体"}[0x0001]{lang="EN-US"}[，其持有]{style="font-family:宋体"}[Nickname]{lang="EN-US"}[的优先级为]{style="font-family:宋体"}[198]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置RB的Nickname为0x0001，其持有Nickname的优先级为198。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_1368855730}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] nickname 0001 priority 198]{lang="EN-US"}
-:::
-
-::: {#-1264590328 .myid}
-[]{#_Toc404797987}[]{#struct_0_x1068_x9952_x1597655225}
+Sysname-trill nickname 0001 priority 198
 
 **TRILL \-- TRILL配置命令 \-- reset trill**
 
 ------------------------------------------------------------------------
 
-[**[reset]{lang="EN-US"}**[ **trill**]{lang="EN-US"}]{#struct_0_x1068_x9952_812612753}[命令用来清除]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[进程当前的动态运行数据。]{style="font-family:宋体"}
+**[reset** **trill**]命令用来清除TRILL进程当前的动态运行数据。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_141416686}
+【命令】
 
-[**[reset]{lang="EN-US"}**[ **trill**]{lang="EN-US"}]{#struct_0_x1068_x9952_643231294}
+**[reset** **trill**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1865359315}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x1068_x9952_1304321358}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_24025253}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1503372586}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x782459817}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1597589689}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x1664886746}[清除]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[进程当前的动态运行数据。]{style="font-family:宋体"}
+\# 清除TRILL进程当前的动态运行数据。
 
-[[\<Sysname\> reset trill]{lang="EN-US"}]{#struct_0_x1068_x9952_54072903}
-:::
-
-::: {#916303518 .myid}
-[]{#_Toc404797988}[]{#struct_0_x1068_x9952_x1744065731}[]{#_Toc386113397}[]{#_Toc385854395}[]{#_Toc379615166}[]{#_Toc379555234}
+\<Sysname\> reset trill
 
 **TRILL \-- TRILL配置命令 \-- set ingress-load-balancing**
 
 ------------------------------------------------------------------------
 
-[**[set]{lang="EN-US"}**[ **ingress-load-balancing**]{lang="EN-US"}]{#struct_0_x1068_x9952_x794480142}[命令用来对]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树转发的流量进行手工均衡。]{style="font-family:宋体"}
+**[set** **ingress-load-balancing**]命令用来对TRILL分发树转发的流量进行手工均衡。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_628587264}
+【命令】
 
-[**[set]{lang="EN-US"}**[ **ingress-load-balancing**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1130466885}
+**[set** **ingress-load-balancing**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_250608959}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_1635660002}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1380390104}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x321882219}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1132129041}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1834072771}
+【使用指导】
 
-[[当入流量选择]{style="font-family:宋体"}[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_931590060}[分发树的策略为稳定优先时，当]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[在各]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树上分布不均衡时，可使用本命令对]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树转发的流量进行手工均衡。]{style="font-family:宋体"}
+当入流量选择TRILL分发树的策略为稳定优先时，当VLAN在各TRILL分发树上分布不均衡时，可使用本命令对TRILL分发树转发的流量进行手工均衡。
 
-[[需要注意的是，执行本命令可能影响当前某些报文的转发。]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x1425529834}
+需要注意的是，执行本命令可能影响当前某些报文的转发。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1586223494}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_357237521}[对]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树转发的流量进行手工均衡。]{style="font-family:宋体"}
+\# 对TRILL分发树转发的流量进行手工均衡。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x937496677}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] set ingress-load-balancing]{lang="EN-US"}
+Sysname-trill set ingress-load-balancing
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x457425061}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ingress]{lang="EN-US"}**[ **assign-rule** **load-balancing**]{lang="EN-US"}]{#struct_0_x1068_x9952_731818888}
-:::
-
-::: {#1011346875 .myid}
-[]{#_Toc404797989}[]{#struct_0_x1068_x9952_x2090658901}[]{#_Toc339972658}
+·**ingress** **assign-rule** **load-balancing**
 
 **TRILL \-- TRILL配置命令 \-- set overload**
 
 ------------------------------------------------------------------------
 
-[**[set]{lang="EN-US"}**[ **overload**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1706729240}[命令用来将]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的过载标志位置位并配置保持置位状态的时间。]{style="font-family:宋体"}
+**[set** **overload**]命令用来将LSP的过载标志位置位并配置保持置位状态的时间。
 
-[**[undo]{lang="EN-US"}**[ **set** **overload**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1836326010}[命令用来清除过载标志位。]{style="font-family:宋体"}
+**[undo** **set** **overload**]命令用来清除过载标志位。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1649537657}
+【命令】
 
-[**[set]{lang="EN-US"}**[ **overload** \[ *timeout* \]]{lang="EN-US"}]{#struct_0_x1068_x9952_x817904962}
+**[set** **overload** [ *timeout* ]]
 
-[**[undo]{lang="EN-US"}**[ **set** **overload**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597786297}
+**[undo** **set** **overload**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_350952584}
+【缺省情况】
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_x860200233}[的过载标志位未置位。]{style="font-family:宋体"}
+LSP的过载标志位未置位。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1279516513}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_99861916}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1999887673}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x442315707}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1230222108}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x456261997}
+【参数】
 
-[*[timeout]{lang="EN-US"}*]{#struct_0_x1068_x9952_x1597720761}[：表示过载标志位保持置位状态的时间，取值范围为]{style="font-family:宋体"}[5]{lang="EN-US"}[～]{style="font-family:宋体"}[3600]{lang="EN-US"}[，单位为秒。缺省值为无穷大，即一直保持置位状态直至被清除。]{style="font-family:宋体"}
+*[timeout*]：表示过载标志位保持置位状态的时间，取值范围为5～3600，单位为秒。缺省值为无穷大，即一直保持置位状态直至被清除。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_351349089}
+【使用指导】
 
-[[需要注意的是，请不要在作为]{style="font-family:宋体"}[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x236913377}[分发树根桥的]{style="font-family:宋体"}[RB]{lang="EN-US"}[上配置本命令，否则将导致使用该根桥的流量转发不通。]{style="font-family:宋体"}
+需要注意的是，请不要在作为TRILL分发树根桥的RB上配置本命令，否则将导致使用该根桥的流量转发不通。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x2005117042}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_1899619321}[将]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的过载标志位置位，并配置保持置位状态的时间为]{style="font-family:宋体"}[1200]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 将LSP的过载标志位置位，并配置保持置位状态的时间为1200秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_958611190}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] set overload 1200]{lang="EN-US"}
-:::
-
-::: {#870763228 .myid}
-[]{#_Toc339972659}[]{#_Toc404797990}[]{#struct_0_x1068_x9952_1554778613}[]{#_Toc344302280}
+Sysname-trill set overload 1200
 
 **TRILL \-- TRILL配置命令 \-- snmp context-name**
 
 ------------------------------------------------------------------------
 
-[**[snmp]{lang="EN-US"}**]{#struct_0_x1068_x9952_979159430}[ **context-name**]{lang="EN-US"}[命令用来配置管理]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体所使用的上下文名称]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[snmp**] **context-name**命令用来配置管理TRILL的SNMP实体所使用的上下文名称。
 
-[**[undo]{lang="EN-US"}**[ **snmp** ]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597393081}**[context-name]{lang="EN-US"}**[命令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo** **snmp** ]**context-name**命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x782361761}
+【命令】
 
-[**[snmp]{lang="EN-US"}**]{#struct_0_x1068_x9952_2009577789}[ **context-name**]{lang="EN-US"}[ *context-name*]{lang="EN-US"}
+**[snmp**] **context-name** *context-name*
 
-[**[undo]{lang="EN-US"}**[ **snmp** ]{lang="EN-US"}]{#struct_0_x1068_x9952_x1498712747}**[context-name]{lang="EN-US"}**
+**[undo** **snmp** ]**context-name**
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x703182580}
+【缺省情况】
 
-[[没有配置]{style="font-family:宋体"}]{#struct_0_x1068_x9952_1443825568}[管理]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体所使用的上下文名称]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+没有配置管理TRILL的SNMP实体所使用的上下文名称。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1518279421}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_667500386}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1597327545}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1207043125}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x812651694}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1591517621}
+【参数】
 
-[*[context-name]{lang="EN-US"}*]{#struct_0_x1068_x9952_x1999868357}[：上下文的名称，]{style="font-family:宋体"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[32]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[context-name*]：上下文的名称，为1～32个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_596497165}
+【使用指导】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1758284199}[使用]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[（]{style="font-family:宋体"}[Management Information Base]{lang="EN-US"}[，管理信息库）对]{style="font-family:宋体"}[NMS]{lang="EN-US"}[（]{style="font-family:宋体"}[Network Management System]{lang="EN-US"}[，网络管理系统）提供]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[对象的管理，但标准]{style="font-family:宋体"}[IS-IS MIB]{lang="EN-US"}[中定义的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[为单实例管理对象，无法同时对]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[和]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[进行管理]{style="font-family:宋体"}[。因此，参考]{style="font-family:宋体"}[RFC 4750]{lang="EN-US"}[中对]{style="font-family:宋体"}[OSPF]{lang="EN-US"}[多实例的管理方法，为管理]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[定义一个上下文名称，以区分来自]{style="font-family:宋体"}[NMS]{lang="EN-US"}[的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[请求是要对]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[还是]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[进行管理。需要注意的是，由于上下文名称只是]{style="font-family:宋体"}[SNMPv3]{lang="EN-US"}[独有的概念，因此对于]{style="font-family:宋体"}[SNMPv1/v2c]{lang="EN-US"}[，会将团体名映射为上下文名称以对不同协议进行区分。]{style="font-family:宋体"}
+TRILL使用IS-IS的MIB（Management Information Base，管理信息库）对NMS（Network Management System，网络管理系统）提供TRILL对象的管理，但标准IS-IS MIB中定义的MIB为单实例管理对象，无法同时对IS-IS和TRILL进行管理。因此，参考RFC 4750中对OSPF多实例的管理方法，为管理TRILL定义一个上下文名称，以区分来自NMS的SNMP请求是要对IS-IS还是TRILL进行管理。需要注意的是，由于上下文名称只是SNMPv3独有的概念，因此对于SNMPv1/v2c，会将团体名映射为上下文名称以对不同协议进行区分。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x930400045}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_762176151}[配置管理]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[实体所使用的上下文名称为]{style="font-family:宋体"}[trill]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置管理TRILL的SNMP实体所使用的上下文名称为trill。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597917372}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] snmp context-name trill]{lang="EN-US"}
-:::
-
-::: {#-1450992871 .myid}
-[]{#_Toc404797991}[]{#struct_0_x1068_x9952_1883360443}[]{#_Toc344302281}
+Sysname-trill snmp context-name trill
 
 **TRILL \-- TRILL配置命令 \-- snmp-agent trap enable trill**
 
 ------------------------------------------------------------------------
 
-[**[snmp-agent]{lang="EN-US"}**]{#struct_0_x1068_x9952_14907281}[ **trap** **enable** **trill**]{lang="EN-US"}[命令用来开启]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[的]{style="font-family:宋体"}[告警]{style="font-family:宋体"}[功能。]{style="font-family:宋体"}
+**[snmp-agent**] **trap** **enable** **trill**命令用来开启TRILL的告警功能。
 
-[**[undo]{lang="EN-US"}**]{#struct_0_x1068_x9952_588948503}[ **snmp-agent** **trap** **enable** **trill**]{lang="EN-US"}[命令用来关闭]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[的]{style="font-family:宋体"}[告警]{style="font-family:宋体"}[功能。]{style="font-family:宋体"}
+**[undo**] **snmp-agent** **trap** **enable** **trill**命令用来关闭TRILL的告警功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1174646266}
+【命令】
 
-[**[snmp-agent]{lang="EN-US"}**]{#struct_0_x1068_x9952_x960630687}[ **trap** **enable** **trill**]{lang="EN-US"}[ ]{lang="EN-US"}[\[ **adjacency-state-change** \| **area-mismatch** \| **buffsize-mismatch** \| **id-length-mismatch** \| **lsdboverload-state-change** \| **lsp-parse-error** \| **lsp-size-exceeded** \| **max-seq-exceeded** \| ]{lang="EN-US"}**[maxarea-mismatch]{lang="NO-BOK"}**[ \| **new-drb** \| **own-lsp-purge** \| **protocol-support** \| **rejected-adjacency** \| **skip-sequence-number** \| **topology-change** \| **version-skew** \] \*]{lang="EN-US"}
+**[snmp-agent**] **trap** **enable** **trill**[[ **adjacency-state-change** \| **area-mismatch** \| **buffsize-mismatch** \| **id-length-mismatch** \| **lsdboverload-state-change** \| **lsp-parse-error** \| **lsp-size-exceeded** \| **max-seq-exceeded** \| ]**maxarea-mismatch**[ \| **new-drb** \| **own-lsp-purge** \| **protocol-support** \| **rejected-adjacency** \| **skip-sequence-number** \| **topology-change** \| **version-skew** ] \*]
 
-[**[undo]{lang="EN-US"}**]{#struct_0_x1068_x9952_2047615374}[ ]{lang="EN-US"}**[snmp-agent]{lang="EN-US"}**[ **trap** **enable** **trill**]{lang="EN-US"}[ ]{lang="EN-US"}[\[ **adjacency-state-change** \| **area-mismatch** \| **buffsize-mismatch** \| **id-length-mismatch** \| **lsdboverload-state-change** \| **lsp-parse-error** \| **lsp-size-exceeded** \| **max-seq-exceeded** \| ]{lang="EN-US"}**[maxarea-mismatch]{lang="NO-BOK"}**[ \| **new-drb** \| **own-lsp-purge** \| **protocol-support** \| **rejected-adjacency** \| **skip-sequence-number** \| **topology-change** \| **version-skew** \] \*]{lang="EN-US"}
+**[undo**]**snmp-agent** **trap** **enable** **trill**[[ **adjacency-state-change** \| **area-mismatch** \| **buffsize-mismatch** \| **id-length-mismatch** \| **lsdboverload-state-change** \| **lsp-parse-error** \| **lsp-size-exceeded** \| **max-seq-exceeded** \| ]**maxarea-mismatch**[ \| **new-drb** \| **own-lsp-purge** \| **protocol-support** \| **rejected-adjacency** \| **skip-sequence-number** \| **topology-change** \| **version-skew** ] \*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1842751031}
+【缺省情况】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597851836}[的]{style="font-family:宋体"}[告警]{style="font-family:宋体"}[功能处于开启状态。]{style="font-family:宋体"}
+TRILL的告警功能处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x139404696}
+【视图】
 
-[[系统]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x255979474}[视图]{style="font-family:宋体"}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x243391706}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_552306056}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1835392295}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1439719596}
+【参数】
 
-[**[adjacency-state-change]{lang="EN-US"}**]{#struct_0_x1068_x9952_1193493744}[：表示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[邻接状态变化的告警信息。]{style="font-family:宋体"}
+**[adjacency-state-change**]：表示TRILL邻接状态变化的告警信息。
 
-[**[area-mismatch]{lang="EN-US"}**]{#struct_0_x1068_x9952_x1598048444}[：表示]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文区域地址不匹配的告警信息。]{style="font-family:宋体"}
+**[area-mismatch**]：表示Hello报文区域地址不匹配的告警信息。
 
-[**[buffsize-mismatch]{lang="EN-US"}**]{#struct_0_x1068_x9952_x1185623358}[：表示]{style="font-family:宋体"}[LSP]{lang="EN-US"}[长度与产生缓冲区大小不匹配的告警信息。]{style="font-family:宋体"}
+**[buffsize-mismatch**]：表示LSP长度与产生缓冲区大小不匹配的告警信息。
 
-[**[id-length-mismatch]{lang="EN-US"}**]{#struct_0_x1068_x9952_x529187856}[：表示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[报文中]{style="font-family:宋体"}[System ID]{lang="EN-US"}[长度不匹配的告警信息。]{style="font-family:宋体"}
+**[id-length-mismatch**]：表示TRILL报文中System ID长度不匹配的告警信息。
 
-[**[lsdboverload-state-change]{lang="EN-US"}**]{#struct_0_x1068_x9952_x361133004}[：表示]{style="font-family:
-宋体"}[LSDB]{lang="EN-US"}[过载状态变化的告警信息。]{style="font-family:宋体"}
+**[lsdboverload-state-change**]：表示LSDB过载状态变化的告警信息。
 
-[**[lsp-parse-error]{lang="EN-US"}**]{#struct_0_x1068_x9952_x1375175022}[：表示]{style="font-family:宋体"}[LSP]{lang="EN-US"}[解析错误的告警信息。]{style="font-family:宋体"}
+**[lsp-parse-error**]：表示LSP解析错误的告警信息。
 
-[**[lsp-size-exceeded]{lang="EN-US"}**]{#struct_0_x1068_x9952_1023823865}[：表示超大]{style="font-family:宋体"}[LSP]{lang="EN-US"}[导致泛洪失败的告警信息。]{style="font-family:宋体"}
+**[lsp-size-exceeded**]：表示超大LSP导致泛洪失败的告警信息。
 
-[**[max-seq-exceeded]{lang="EN-US"}**]{#struct_0_x1068_x9952_x1712746321}[：表示]{style="font-family:宋体"}[LSP]{lang="EN-US"}[序列号超过最大序列号的告警信息。]{style="font-family:宋体"}
+**[max-seq-exceeded**]：表示LSP序列号超过最大序列号的告警信息。
 
-[**[maxarea-mismatch]{lang="NO-BOK"}**]{#struct_0_x1068_x9952_23142738}[：表示]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文最大区域地址不匹配的告警信息。]{style="font-family:宋体"}
+**[maxarea-mismatch**]：表示Hello报文最大区域地址不匹配的告警信息。
 
-[**[new-drb]{lang="EN-US"}**]{#struct_0_x1068_x9952_x245065932}[：表示成为新]{style="font-family:宋体"}[DRB]{lang="EN-US"}[的告警信息。]{style="font-family:宋体"}
+**[new-drb**]：表示成为新DRB的告警信息。
 
-[**[own-lsp-purge]{lang="EN-US"}**]{#struct_0_x1068_x9952_x1597982908}[：表示尝试清除本地]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的告警信息。]{style="font-family:宋体"}
+**[own-lsp-purge**]：表示尝试清除本地LSP的告警信息。
 
-[**[protocol-support]{lang="EN-US"}**]{#struct_0_x1068_x9952_561472406}[：表示报文协议支持类型不匹配的告警信息。]{style="font-family:宋体"}
+**[protocol-support**]：表示报文协议支持类型不匹配的告警信息。
 
-[**[rejected-adjacency]{lang="EN-US"}**]{#struct_0_x1068_x9952_x1102330059}[：表示]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文邻接不匹配丢弃的告警信息。]{style="font-family:宋体"}
+**[rejected-adjacency**]：表示Hello报文邻接不匹配丢弃的告警信息。
 
-[**[skip-sequence-number]{lang="EN-US"}**]{#struct_0_x1068_x9952_598926744}[：表示跳过已产生过的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[序列号的告警信息。]{style="font-family:宋体"}
+**[skip-sequence-number**]：表示跳过已产生过的LSP序列号的告警信息。
 
-[**[topology-change]{lang="EN-US"}**]{#struct_0_x1068_x9952_x984234883}[：表示]{style="font-family:宋体"}[AVF]{lang="EN-US"}[状态变化的告警信息。]{style="font-family:宋体"}
+**[topology-change**]：表示AVF状态变化的告警信息。
 
-[**[version-skew]{lang="EN-US"}**]{#struct_0_x1068_x9952_x662563156}[：表示]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文版本号不匹配的告警信息。]{style="font-family:宋体"}
+**[version-skew**]：表示Hello报文版本号不匹配的告警信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_395607800}
+【使用指导】
 
-[[如果未指定任何可选参数，表示开启或关闭]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x490953535}[TRILL]{lang="EN-US"}[的全部告警功能。]{style="font-family:宋体"}
+如果未指定任何可选参数，表示开启或关闭TRILL的全部告警功能。
 
-[[开启了]{style="font-family:宋体"}[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_1635762535}[的告警功能之后，]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[会生成告警信息，以向网管软件报告本模块的重要事件。该信息将发送至]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[模块，通过设置]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[中告警信息的发送参数，来决定告警信息输出的相关属性。有关告警信息的详细介绍，请参见"网络管理和监控配置指导"中的"]{style="font-family:宋体"}[SNMP]{lang="EN-US"}["。]{style="font-family:宋体"}
+开启了TRILL的告警功能之后，TRILL会生成告警信息，以向网管软件报告本模块的重要事件。该信息将发送至SNMP模块，通过设置SNMP中告警信息的发送参数，来决定告警信息输出的相关属性。有关告警信息的详细介绍，请参见"网络管理和监控配置指导"中的"SNMP"。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_969539052}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597655228}[关闭]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[的全部]{style="font-family:宋体"}[告警]{style="font-family:宋体"}[功能]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 关闭TRILL的全部告警功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_1928358000}
+\<Sysname\> system-view
 
-[\[Sysname\] undo snmp-agent trap enable trill]{lang="EN-US"}
-:::
-
-::: {#928103452 .myid}
-[]{#_Toc404797992}[]{#struct_0_x1068_x9952_1211029723}
+Sysname undo snmp-agent trap enable trill
 
 **TRILL \-- TRILL配置命令 \-- system-id**
 
 ------------------------------------------------------------------------
 
-[**[system-id]{lang="EN-US"}**]{#struct_0_x1068_x9952_605238628}[命令用来配置]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[System ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[system-id**]命令用来配置RB的System ID。
 
-[**[undo]{lang="EN-US"}**[ **system-id**]{lang="EN-US"}]{#struct_0_x1068_x9952_1630096207}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **system-id**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1514722332}
+【命令】
 
-[**[system-id]{lang="EN-US"}**[ *system-id*]{lang="EN-US"}]{#struct_0_x1068_x9952_x484598309}
+**[system-id** *system-id*]
 
-[**[undo]{lang="EN-US"}**[ **system-id**]{lang="EN-US"}]{#struct_0_x1068_x9952_x454778893}
+**[undo** **system-id**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1597589692}
+【缺省情况】
 
-[[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x1617898115}[启动后会根据自己的]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址自动生成一个]{style="font-family:宋体"}[System ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+RB启动后会根据自己的MAC地址自动生成一个System ID。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1458742293}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x951870311}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x693046516}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x760803721}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1242005606}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x477040385}
+【参数】
 
-[*[system-id]{lang="EN-US"}*]{#struct_0_x1068_x9952_x1498742381}[：表示]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[System ID]{lang="EN-US"}[，格式为]{style="font-family:宋体"}[xxxx.xxxx.xxxx]{lang="EN-US"}[，]{style="font-family:宋体"}[x]{lang="EN-US"}[代表十六进制数。]{style="font-family:
-宋体"}
+*[system-id*]：表示RB的System ID，格式为xxxx.xxxx.xxxx，x代表十六进制数。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1597786300}
+【使用指导】
 
-[[需要注意的是，如果用户为]{style="font-family:宋体"}[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_753778360}[新配置的]{style="font-family:宋体"}[System ID]{lang="EN-US"}[与原有的不同，系统将重置]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[进程。]{style="font-family:宋体"}
+需要注意的是，如果用户为RB新配置的System ID与原有的不同，系统将重置TRILL进程。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1165267094}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x15663604}[配置]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[System ID]{lang="EN-US"}[为]{style="font-family:宋体"}[1010.1020.1030]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置RB的System ID为1010.1020.1030。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_1592997677}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] system-id 1010.1020.1030]{lang="EN-US"}
-:::
-
-::: {#408390348 .myid}
-[]{#_Toc404797993}[]{#struct_0_x1068_x9952_x177916254}[]{#_Toc386113402}[]{#_Toc385854400}[]{#_Toc379615172}[]{#_Toc379555240}[]{#_Toc378607612}[]{#_Toc350776425}[]{#_Toc333225599}[]{#_Toc33866123}
+Sysname-trill system-id 1010.1020.1030
 
 **TRILL \-- TRILL配置命令 \-- timer lsp-generation**
 
 ------------------------------------------------------------------------
 
-[**[timer]{lang="EN-US"}**[ **lsp-generation**]{lang="EN-US"}]{#struct_0_x1068_x9952_94092931}[命令用来配置]{style="font-family:宋体"}[LSP]{lang="EN-US"}[重新生成的时间间隔]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[timer** **lsp-generation**]命令用来配置LSP重新生成的时间间隔。
 
-[**[undo]{lang="EN-US"}**[ **timer** **lsp-generation**]{lang="EN-US"}]{#struct_0_x1068_x9952_455843964}[命令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo** **timer** **lsp-generation**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1744000195}
+【命令】
 
-[**[timer]{lang="EN-US"}**[ **lsp-generation** ]{lang="EN-US"}*[maximum-interval]{lang="EN-US"}*[ \[ *minimum-interval* \[ *incremental-interval* \] \]]{lang="EN-US"}]{#struct_0_x1068_x9952_x1583843970}
+**[timer** **lsp-generation** *maximum-interval* [ *minimum-interval* [ *incremental-interval*  ]]]
 
-[**[undo]{lang="EN-US"}**[ **timer** **lsp-generation**]{lang="EN-US"}]{#struct_0_x1068_x9952_x2069781418}
+**[undo** **timer** **lsp-generation**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1529654927}
+【缺省情况】
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_2025087279}[重新生成的最大时间间隔为]{style="font-family:宋体"}[2]{lang="EN-US"}[秒，最小时间间隔为]{style="font-family:宋体"}[10]{lang="EN-US"}[毫秒，时间间隔惩罚增量为]{style="font-family:宋体"}[20]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+LSP重新生成的最大时间间隔为2秒，最小时间间隔为10毫秒，时间间隔惩罚增量为20毫秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1871596853}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_890098909}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1449175036}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_376164871}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x40458572}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1130284984}
+【参数】
 
-[*[maximum-interval]{lang="EN-US"}*]{#struct_0_x1068_x9952_628652800}[：表示]{style="font-family:宋体"}[LSP]{lang="EN-US"}[重新]{style="font-family:宋体"}[生成的最大时间间隔，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[120]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[maximum-interval*]：表示LSP重新生成的最大时间间隔，取值范围为1～120，单位为秒。
 
-[*[minimum-interval]{lang="EN-US"}*]{#struct_0_x1068_x9952_x1980648368}[：表示]{style="font-family:宋体"}[LSP]{lang="EN-US"}[重新]{style="font-family:宋体"}[生成的最小时间间隔，取值范围为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[60000]{lang="EN-US"}[，单位为毫秒，必须为]{style="font-family:宋体"}[10]{lang="EN-US"}[的整数倍。最小时间间隔必须小于最大时间间隔。]{style="font-family:宋体"}
+*[minimum-interval*]：表示LSP重新生成的最小时间间隔，取值范围为10～60000，单位为毫秒，必须为10的整数倍。最小时间间隔必须小于最大时间间隔。
 
-[*[incremental-interval]{lang="EN-US"}*]{#struct_0_x1068_x9952_x1341303209}[：表示]{style="font-family:宋体"}[LSP]{lang="EN-US"}[重新]{style="font-family:宋体"}[生成的时间间隔惩罚增量，取值范围为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[60000]{lang="EN-US"}[，单位为毫秒，必须为]{style="font-family:宋体"}[10]{lang="EN-US"}[的整数倍。时间间隔惩罚增量必须小于最大时间间隔。]{style="font-family:宋体"}
+*[incremental-interval*]：表示LSP重新生成的时间间隔惩罚增量，取值范围为10～60000，单位为毫秒，必须为10的整数倍。时间间隔惩罚增量必须小于最大时间间隔。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1971422498}
+【使用指导】
 
-[[网络拓扑的变化会导致重新生成]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_1384193472}[，通过调节]{style="font-family:宋体"}[LSP]{lang="EN-US"}[重新生成的时间间隔，可以抑制网络频繁变化可能导致的对带宽资源和设备资源的过多占用。在网络变化不频繁的情况下，将]{style="font-family:宋体"}[LSP]{lang="EN-US"}[重新生成的时间间隔缩小到]{style="font-family:宋体"}*[minimum-interval]{lang="EN-US"}*[，而在网络变化频繁的情况下可进行相应惩罚，将等待时间按照配置的惩罚增量延长，最大不超过]{style="font-family:宋体"}*[maximum-interval]{lang="EN-US"}*[。]{style="font-family:宋体"}
+网络拓扑的变化会导致重新生成LSP，通过调节LSP重新生成的时间间隔，可以抑制网络频繁变化可能导致的对带宽资源和设备资源的过多占用。在网络变化不频繁的情况下，将LSP重新生成的时间间隔缩小到*minimum-interval*，而在网络变化频繁的情况下可进行相应惩罚，将等待时间按照配置的惩罚增量延长，最大不超过*maximum-interval*。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_205914811}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_385072390}[配置]{style="font-family:宋体"}[LSP]{lang="EN-US"}[重新生成的最大时间间隔为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒，最小时间间隔为]{style="font-family:宋体"}[100]{lang="EN-US"}[毫秒，时间间隔惩罚增量为]{style="font-family:宋体"}[200]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+\# 配置LSP重新生成的最大时间间隔为10秒，最小时间间隔为100毫秒，时间间隔惩罚增量为200毫秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_1900723937}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] timer lsp-generation 10 100 200]{lang="EN-US"}
-:::
-
-::: {#490996559 .myid}
-[]{#_Toc404797994}[]{#struct_0_x1068_x9952_1115081765}
+Sysname-trill timer lsp-generation 10 100 200
 
 **TRILL \-- TRILL配置命令 \-- timer lsp-max-age**
 
 ------------------------------------------------------------------------
 
-[**[timer]{lang="EN-US"}**[ **lsp-max-age**]{lang="EN-US"}]{#struct_0_x1068_x9952_x2069196656}[命令用来配置]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最大生存时间。]{style="font-family:宋体"}
+**[timer** **lsp-max-age**]命令用来配置LSP的最大生存时间。
 
-[**[undo]{lang="EN-US"}**[ **timer** **lsp-max-age**]{lang="EN-US"}]{#struct_0_x1068_x9952_441304702}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **timer** **lsp-max-age**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1597720764}
+【命令】
 
-[**[timer]{lang="EN-US"}**[ **lsp-max-age** *time*]{lang="EN-US"}]{#struct_0_x1068_x9952_x51935438}
+**[timer** **lsp-max-age** *time*]
 
-[**[undo]{lang="EN-US"}**[ **timer** **lsp-max-age**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1473665857}
+**[undo** **timer** **lsp-max-age**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_520719300}
+【缺省情况】
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_x1848009172}[的最大生存时间为]{style="font-family:宋体"}[1200]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+LSP的最大生存时间为1200秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_582616820}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_1199753109}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x956499333}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1650598599}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597393084}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x22846874}
+【参数】
 
-[*[time]{lang="EN-US"}*]{#struct_0_x1068_x9952_1971299892}[：表示]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最大生存时间，取值范围为]{style="font-family:宋体"}[3]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[time*]：表示LSP的最大生存时间，取值范围为3～65535，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_681188301}
+【使用指导】
 
-[[当]{style="font-family:宋体"}[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x1833268520}[生成一个]{style="font-family:宋体"}[LSP]{lang="EN-US"}[时，会将该]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最大生存时间作为]{style="font-family:宋体"}[LSP]{lang="EN-US"}[中的剩余生存时间告知其他]{style="font-family:宋体"}[RB]{lang="EN-US"}[。当]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[中一个]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的剩余生存时间为]{style="font-family:宋体"}[0]{lang="EN-US"}[时，说明该]{style="font-family:宋体"}[LSP]{lang="EN-US"}[已失效，]{style="font-family:宋体"}[RB]{lang="EN-US"}[将从]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[中删除该]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的内容，只保留其摘要，并将该]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的剩余生存时间置]{style="font-family:宋体"}[0]{lang="EN-US"}[后泛洪给其他]{style="font-family:宋体"}[RB]{lang="EN-US"}[以清除此]{style="font-family:宋体"}[LSP]{lang="EN-US"}[。]{style="font-family:宋体"}
+当RB生成一个LSP时，会将该LSP的最大生存时间作为LSP中的剩余生存时间告知其他RB。当LSDB中一个LSP的剩余生存时间为0时，说明该LSP已失效，RB将从LSDB中删除该LSP的内容，只保留其摘要，并将该LSP的剩余生存时间置0后泛洪给其他RB以清除此LSP。
 
-[[需要注意的是，由于]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_x868733739}[的实际刷新时间会受]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最小发送间隔和一次发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最大数目的影响，因此请合理配置]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最大生存时间和刷新周期，以免]{style="font-family:宋体"}[LSP]{lang="EN-US"}[被意外老化。]{style="font-family:宋体"}
+需要注意的是，由于LSP的实际刷新时间会受LSP的最小发送间隔和一次发送LSP的最大数目的影响，因此请合理配置LSP的最大生存时间和刷新周期，以免LSP被意外老化。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1295417147}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_582995136}[配置]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最大生存时间为]{style="font-family:宋体"}[1500]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置LSP的最大生存时间为1500秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597327548}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] timer lsp-max-age 1500]{lang="EN-US"}
+Sysname-trill timer lsp-max-age 1500
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1972178924}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[timer]{lang="FR"}**]{#struct_0_x1068_x9952_917606414}[ **lsp-refresh**]{lang="FR"}
+·**timer** **lsp-refresh**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[trill]{lang="EN-US"}**[ **timer** **lsp**]{lang="EN-US"}]{#struct_0_x1068_x9952_866919679}
-:::
-
-::: {#-1091829735 .myid}
-[]{#_Toc404797995}[]{#struct_0_x1068_x9952_1113925918}
+·**trill** **timer** **lsp**
 
 **TRILL \-- TRILL配置命令 \-- timer lsp-refresh**
 
 ------------------------------------------------------------------------
 
-[**[timer]{lang="EN-US"}**[ **lsp-refresh**]{lang="EN-US"}]{#struct_0_x1068_x9952_1628004816}[命令用来配置]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的刷新周期。]{style="font-family:宋体"}
+**[timer** **lsp-refresh**]命令用来配置LSP的刷新周期。
 
-[**[undo]{lang="EN-US"}**[ **timer** **lsp-refresh**]{lang="EN-US"}]{#struct_0_x1068_x9952_x650944140}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **timer** **lsp-refresh**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x212656003}
+【命令】
 
-[**[timer]{lang="FR"}**]{#struct_0_x1068_x9952_x1597917371}[ **lsp-refresh** ]{lang="FR"}*[time]{lang="FR"}*
+**[timer**] **lsp-refresh** *time*
 
-[**[undo]{lang="FR"}**]{#struct_0_x1068_x9952_x2008322326}[ **timer** **lsp-refresh**]{lang="FR"}
+**[undo**] **timer** **lsp-refresh**
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1401387096}
+【缺省情况】
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_x474185257}[的刷新周期为]{style="font-family:宋体"}[900]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+LSP的刷新周期为900秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x648060982}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x551022495}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1440216985}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1863266516}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_2058227631}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1597851835}
+【参数】
 
-[*[time]{lang="EN-US"}*]{#struct_0_x1068_x9952_263879831}[：表示]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的刷新周期，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65534]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[time*]：表示LSP的刷新周期，取值范围为1～65534，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x551309997}
+【使用指导】
 
-[[对于一个本地生成的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_x1463410053}[，当其剩余生存时间]{style="font-family:宋体"}[≤]{style="font-family:宋体"}[（最大生存时间－刷新周期）时，即使该]{style="font-family:宋体"}[LSP]{lang="EN-US"}[中的内容没有任何改变，也要重新更新此]{style="font-family:宋体"}[LSP]{lang="EN-US"}[，这样可避免网络中的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[老化太频繁，保证网络稳定性。]{style="font-family:宋体"}
+对于一个本地生成的LSP，当其剩余生存时间≤（最大生存时间－刷新周期）时，即使该LSP中的内容没有任何改变，也要重新更新此LSP，这样可避免网络中的LSP老化太频繁，保证网络稳定性。
 
-[[需要注意的是，由于]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_442892579}[的实际刷新时间会受]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最小发送间隔和一次发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最大数目的影响，因此请合理配置]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最大生存时间和刷新周期，以免]{style="font-family:宋体"}[LSP]{lang="EN-US"}[被意外老化。]{style="font-family:宋体"}
+需要注意的是，由于LSP的实际刷新时间会受LSP的最小发送间隔和一次发送LSP的最大数目的影响，因此请合理配置LSP的最大生存时间和刷新周期，以免LSP被意外老化。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1875623866}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x1372804774}[配置]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的刷新周期为]{style="font-family:宋体"}[1000]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置LSP的刷新周期为1000秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x1598048443}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] timer lsp-refresh 1000]{lang="NO-BOK"}
+Sysname-trill timer lsp-refresh 1000
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1588907885}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[timer]{lang="EN-US"}**[ **lsp-max-age**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1345385427}
+·**timer** **lsp-max-age**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[trill]{lang="EN-US"}**[ **timer** **lsp**]{lang="EN-US"}]{#struct_0_x1068_x9952_x431890434}
-:::
-
-::: {#1171776781 .myid}
-[]{#_Toc404797996}[]{#struct_0_x1068_x9952_190964504}[]{#_Toc339972662}
+·**trill** **timer** **lsp**
 
 **TRILL \-- TRILL配置命令 \-- timer spf**
 
 ------------------------------------------------------------------------
 
-[**[timer]{lang="EN-US"}**[ **spf**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1615304021}[命令用来配置]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[使用]{style="font-family:宋体"}[SPF]{lang="EN-US"}[算法进行路由计算的时间间隔。]{style="font-family:宋体"}
+**[timer** **spf**]命令用来配置TRILL使用SPF算法进行路由计算的时间间隔。
 
-[**[undo]{lang="EN-US"}**[ **timer** **spf**]{lang="EN-US"}]{#struct_0_x1068_x9952_x359442949}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **timer** **spf**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_62851415}
+【命令】
 
-[**[timer]{lang="EN-US"}**[ **spf** *maximum-interval* \[ *minimum-interval* \[ *incremental-interval* \] \]]{lang="EN-US"}]{#struct_0_x1068_x9952_x218768534}
+**[timer** **spf** *maximum-interval* [ *minimum-interval* [ *incremental-interval*  ]]]
 
-[**[undo]{lang="EN-US"}**[ **timer** **spf**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597982907}
+**[undo** **timer** **spf**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x198042481}
+【缺省情况】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1726661629}[使用]{style="font-family:宋体"}[SPF]{lang="EN-US"}[算法进行路由计算的最大时间间隔为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒，最小时间间隔为]{style="font-family:宋体"}[10]{lang="EN-US"}[毫秒，时间间隔惩罚增量为]{style="font-family:宋体"}[20]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+TRILL使用SPF算法进行路由计算的最大时间间隔为10秒，最小时间间隔为10毫秒，时间间隔惩罚增量为20毫秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x153626871}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_317470506}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x169112965}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_930548209}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x761636913}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1636639448}
+【参数】
 
-[*[maximum-interval]{lang="EN-US"}*]{#struct_0_x1068_x9952_x1597655227}[：表示最大时间间隔，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[120]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[maximum-interval*]：表示最大时间间隔，取值范围为1～120，单位为秒。
 
-[*[minimum-interval]{lang="EN-US"}*]{#struct_0_x1068_x9952_1975412167}[：表示最小时间间隔，取值范围为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[60000]{lang="EN-US"}[，单位为毫秒，必须为]{style="font-family:宋体"}[10]{lang="EN-US"}[的整数倍。最小时间间隔必须小于最大时间间隔。]{style="font-family:宋体"}
+*[minimum-interval*]：表示最小时间间隔，取值范围为10～60000，单位为毫秒，必须为10的整数倍。最小时间间隔必须小于最大时间间隔。
 
-[*[incremental-interval]{lang="EN-US"}*]{#struct_0_x1068_x9952_343285175}[：表示时间间隔惩罚增量，取值范围为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[60000]{lang="EN-US"}[，单位为毫秒，必须为]{style="font-family:宋体"}[10]{lang="EN-US"}[的整数倍。时间间隔惩罚增量必须小于最大时间间隔。]{style="font-family:宋体"}
+*[incremental-interval*]：表示时间间隔惩罚增量，取值范围为10～60000，单位为毫秒，必须为10的整数倍。时间间隔惩罚增量必须小于最大时间间隔。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x306407791}
+【使用指导】
 
-[[根据本地维护的]{style="font-family:宋体"}[LSDB]{lang="EN-US"}]{#struct_0_x1068_x9952_x1307160774}[，]{style="font-family:宋体"}[RB]{lang="EN-US"}[通过]{style="font-family:宋体"}[SPF]{lang="EN-US"}[算法算出以自己为根的最短路径树，并根据此树决定到达目的网络的下一跳。通过调节]{style="font-family:宋体"}[SPF]{lang="EN-US"}[算法的时间间隔，可抑制由于网络频繁变化而导致的带宽资源和设备资源的过多占用。]{style="font-family:宋体"}
+根据本地维护的LSDB，RB通过SPF算法算出以自己为根的最短路径树，并根据此树决定到达目的网络的下一跳。通过调节SPF算法的时间间隔，可抑制由于网络频繁变化而导致的带宽资源和设备资源的过多占用。
 
-[[系统在网络变化不频繁时将连续路由计算的时间间隔缩小至]{style="font-family:宋体"}*[minimum-interval]{lang="EN-US"}*]{#struct_0_x1068_x9952_1218958244}[，而在网络变化频繁时进行相应的惩罚，即]{style="font-family:宋体"}[增加]{style="font-family:宋体"}*[incremental-interval]{lang="EN-US"}*[×]{style="font-family:宋体"}[2^n-2^]{lang="EN-US"}[（]{style="font-family:宋体"}[n]{lang="EN-US"}[为连续触发路由计算的次数），但]{style="font-family:宋体"}[最大不超过]{style="font-family:宋体"}*[maximum-interval]{lang="EN-US"}*[。]{style="font-family:宋体"}
+系统在网络变化不频繁时将连续路由计算的时间间隔缩小至*minimum-interval*，而在网络变化频繁时进行相应的惩罚，即增加*incremental-interval*×2^n-2^（n为连续触发路由计算的次数），但最大不超过*maximum-interval*。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1980147930}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x1601055453}[配置]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[使用]{style="font-family:宋体"}[SPF]{lang="EN-US"}[算法进行路由计算的最大时间间隔为]{style="font-family:宋体"}[15]{lang="EN-US"}[秒，最小时间间隔为]{style="font-family:宋体"}[100]{lang="EN-US"}[毫秒，时间间隔惩罚增量为]{style="font-family:宋体"}[200]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+\# 配置TRILL使用SPF算法进行路由计算的最大时间间隔为15秒，最小时间间隔为100毫秒，时间间隔惩罚增量为200毫秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597589691}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] timer spf 15 100 200]{lang="EN-US"}
-:::
-
-::: {#489164287 .myid}
-[]{#_Toc404797997}[]{#struct_0_x1068_x9952_x2021182642}
+Sysname-trill timer spf 15 100 200
 
 **TRILL \-- TRILL配置命令 \-- tree-root priority**
 
 ------------------------------------------------------------------------
 
-[**[tree-root]{lang="EN-US"}**[ **priority**]{lang="EN-US"}]{#struct_0_x1068_x9952_x303184104}[命令用来配置]{style="font-family:宋体"}[RB]{lang="EN-US"}[作为]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树根桥的优先级。]{style="font-family:宋体"}
+**[tree-root** **priority**]命令用来配置RB作为TRILL分发树根桥的优先级。
 
-[**[undo]{lang="EN-US"}**[ **tree-root** **priority**]{lang="EN-US"}]{#struct_0_x1068_x9952_123716427}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **tree-root** **priority**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x794606957}
+【命令】
 
-[**[tree-root]{lang="EN-US"}**[ **priority** *priority*]{lang="EN-US"}]{#struct_0_x1068_x9952_887361441}
+**[tree-root** **priority** *priority*]
 
-[**[undo]{lang="EN-US"}**[ **tree-root** **priority**]{lang="EN-US"}]{#struct_0_x1068_x9952_259399867}
+**[undo** **tree-root** **priority**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x422205947}
+【缺省情况】
 
-[[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597786299}[作为]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树的根桥优先级为]{style="font-family:宋体"}[32768]{lang="EN-US"}[。]{style="font-family:宋体"}
+RB作为TRILL分发树的根桥优先级为32768。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x455616470}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1497811158}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x260487674}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x776908410}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_485318154}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1753651982}
+【参数】
 
-[*[priority]{lang="EN-US"}*]{#struct_0_x1068_x9952_x1707298757}[：表示]{style="font-family:宋体"}[RB]{lang="EN-US"}[作为]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树根桥的优先级，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，数值越大优先级越高。]{style="font-family:宋体"}
+*[priority*]：表示RB作为TRILL分发树根桥的优先级，取值范围为1～65535，数值越大优先级越高。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1149183738}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597720763}[配置]{style="font-family:宋体"}[RB]{lang="EN-US"}[作为]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树根桥的优先级为]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置RB作为TRILL分发树根桥的优先级为65535。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_1514148503}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] tree-root priority 65535]{lang="EN-US"}
-:::
-
-::: {#481906170 .myid}
-[]{#_Toc404797998}[]{#struct_0_x1068_x9952_x28005923}
+Sysname-trill tree-root priority 65535
 
 **TRILL \-- TRILL配置命令 \-- trees calculate**
 
 ------------------------------------------------------------------------
 
-[**[trees]{lang="EN-US"}**[ **calculate**]{lang="EN-US"}]{#struct_0_x1068_x9952_x448261174}[命令用来]{style="font-family:宋体"}[配置]{style="font-family:宋体"}[RB]{lang="EN-US"}[希望整网计算的]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树数量。]{style="font-family:宋体"}
+**[trees** **calculate**]命令用来配置RB希望整网计算的TRILL分发树数量。
 
-[**[undo]{lang="EN-US"}**[ **trees** **calculate**]{lang="EN-US"}]{#struct_0_x1068_x9952_782992704}[命令]{style="font-family:宋体"}[用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **trees** **calculate**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x876960092}
+【命令】
 
-[**[trees]{lang="EN-US"}**[ **calculate** *count*]{lang="EN-US"}]{#struct_0_x1068_x9952_1199571693}
+**[trees** **calculate** *count*]
 
-[**[undo]{lang="EN-US"}**[ **trees** ]{lang="EN-US"}**[calculate]{lang="EN-US"}**]{#struct_0_x1068_x9952_x2128682120}
+**[undo** **trees** **calculate**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1597393083}
+【缺省情况】
 
-[[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_380437653}[希望整网计算的]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树数量为]{style="font-family:宋体"}[1]{lang="EN-US"}[棵。]{style="font-family:宋体"}
+RB希望整网计算的TRILL分发树数量为1棵。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_449053756}
+【视图】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1265125266}[视图]{style="font-family:宋体"}
+TRILL视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1728374033}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1747846070}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_637175602}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x460205537}
+【参数】
 
-[*[count]{lang="EN-US"}*]{#struct_0_x1068_x9952_x1597327547}[：表示]{style="font-family:宋体"}[RB]{lang="EN-US"}[希望整网计算的]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树数量，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[15]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[count*]：表示RB希望整网计算的TRILL分发树数量，取值范围为1～15。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x44243711}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_446024262}[配置]{style="font-family:宋体"}[RB]{lang="EN-US"}[希望整网计算的]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[分发树数量为]{style="font-family:宋体"}[2]{lang="EN-US"}[棵。]{style="font-family:宋体"}
+\# 配置RB希望整网计算的TRILL分发树数量为2棵。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x1656608701}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] trees calculate 2]{lang="EN-US"}
-:::
-
-::: {#443679883 .myid}
-[]{#_Toc404797999}[]{#struct_0_x1068_x9952_264287278}
+Sysname-trill trees calculate 2
 
 **TRILL \-- TRILL配置命令 \-- trill**
 
 ------------------------------------------------------------------------
 
-[**[trill]{lang="EN-US"}**]{#struct_0_x1068_x9952_x465023826}[命令用来全局使能]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[协议，并进入]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+**[trill**]命令用来全局使能TRILL协议，并进入TRILL视图。
 
-[**[undo]{lang="EN-US"}**[ **trill**]{lang="EN-US"}]{#struct_0_x1068_x9952_1999535667}[命令用来全局关闭]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[协议。]{style="font-family:宋体"}
+**[undo** **trill**]命令用来全局关闭TRILL协议。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_709670357}
+【命令】
 
-[**[trill]{lang="EN-US"}**]{#struct_0_x1068_x9952_x1597917374}
+**[trill**]
 
-[**[undo]{lang="EN-US"}**[ **trill**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1248807439}
+**[undo** **trill**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_889118214}
+【缺省情况】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_1111197987}[协议处于全局关闭状态。]{style="font-family:宋体"}
+TRILL协议处于全局关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_170293657}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1068_x9952_1811483645}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_2076419788}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1112870799}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1532361692}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1597851838}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_1379625078}[全局使能]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[协议，并进入]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[视图。]{style="font-family:宋体"}
+\# 全局使能TRILL协议，并进入TRILL视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_1337365135}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\]]{lang="EN-US"}
-:::
-
-::: {#1903571002 .myid}
-[]{#_Toc404798000}[]{#struct_0_x1068_x9952_x1382494662}[]{#_Toc339972666}
+Sysname-trill
 
 **TRILL \-- TRILL配置命令 \-- trill announcing-vlan**
 
 ------------------------------------------------------------------------
 
-[**[trill]{lang="EN-US"}**[ **announcing-vlan**]{lang="EN-US"}]{#struct_0_x1068_x9952_x799003997}[命令用来配置通告]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[trill** **announcing-vlan**]命令用来配置通告VLAN。
 
-[**[undo]{lang="EN-US"}**[ **trill** **announcing-vlan**]{lang="EN-US"}]{#struct_0_x1068_x9952_159106920}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **trill** **announcing-vlan**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_908541753}
+【命令】
 
-[**[trill]{lang="EN-US"}**[ **announcing-vlan** { *vlan-list* \| **null** }]{lang="EN-US"}]{#struct_0_x1068_x9952_1350103656}
+**[trill**[ **announcing-vlan** { *vlan-list* \| **null** }]]
 
-[**[undo]{lang="EN-US"}**[ **trill** **announcing-vlan** { *vlan-list* \| **null** }]{lang="EN-US"}]{#struct_0_x1068_x9952_x1598048446}
+**[undo**[ **trill** **announcing-vlan** { *vlan-list* \| **null** }]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1946544524}
+【缺省情况】
 
-[[没有配置通告]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1068_x9952_749826245}[，此时通告]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[与使能]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的范围相同。]{style="font-family:宋体"}
+没有配置通告VLAN，此时通告VLAN与使能VLAN的范围相同。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1792584270}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1068_x9952_x1725918508}[二层聚合接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1448758563}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1942874195}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x544116631}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_112678185}
+【参数】
 
-[*[vlan-list]{lang="EN-US"}*]{#struct_0_x1068_x9952_x1597982910}[：通告]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的列表，表示多个通告]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。表示方式为]{style="font-family:宋体"}*[vlan-list]{lang="EN-US"}*[ = { *vlan-id* \[ **to** *vlan-id* \] }&\<1-10\>]{lang="EN-US"}[。其中，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}[&\<1-10\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[10]{lang="EN-US"}[次。]{style="font-family:宋体"}
+*[vlan-list*]：通告VLAN的列表，表示多个通告VLAN。表示方式为*vlan-list* = { *vlan-id* [ **to** *vlan-id*  }&\<1-10\>]。其中，*vlan-id*为VLAN的编号，取值范围为1～4094。&\<1-10\>表示前面的参数最多可以输入10次。
 
-[**[null]{lang="EN-US"}**]{#struct_0_x1068_x9952_205176510}[：表示通告]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[为空集，即不包含任何]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[null**]：表示通告VLAN为空集，即不包含任何VLAN。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x2136419990}
+【使用指导】
 
-[[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x836542725}[之间的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文，是通过一个]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[集合来交互的，具体来说：]{style="font-family:宋体"}
+RB之间的Hello报文，是通过一个VLAN集合来交互的，具体来说：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DRB]{lang="EN-US"}]{#struct_0_x1068_x9952_x836542726}[在]{style="font-family:宋体"}[以下]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[集合中发送]{lang="EN-US" style="font-family:宋体"}[Hello]{lang="EN-US"}[报文：使能]{lang="EN-US" style="font-family:宋体"}[VLAN ]{lang="EN-US"}[∩（]{lang="EN-US" style="font-family:宋体"}[指定]{style="font-family:宋体"}[VLAN ]{lang="EN-US"}[∪]{lang="EN-US" style="font-family:宋体"}[ ]{lang="EN-US"}[通告]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[）。]{lang="EN-US" style="font-family:宋体"}
+·DRB在以下VLAN集合中发送Hello报文：使能VLAN ∩（指定VLAN ∪通告VLAN）。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[非]{lang="EN-US" style="font-family:宋体"}[DRB]{lang="EN-US"}]{#struct_0_x1068_x9952_2121517992}[在]{style="font-family:宋体"}[以下]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[集合中发送]{lang="EN-US" style="font-family:宋体"}[Hello]{lang="EN-US"}[报文：使能]{lang="EN-US" style="font-family:宋体"}[VLAN ]{lang="EN-US"}[∩（指定]{lang="EN-US" style="font-family:宋体"}[VLAN ]{lang="EN-US"}[∪（通告]{lang="EN-US" style="font-family:宋体"}[VLAN ]{lang="EN-US"}[∩]{lang="EN-US" style="font-family:宋体"}[ AVF VLAN]{lang="EN-US"}[））。]{lang="EN-US" style="font-family:宋体"}
+·非DRB在以下VLAN集合中发送Hello报文：使能VLAN ∩（指定VLAN ∪（通告VLAN ∩ AVF VLAN））。
 
-[[由于]{style="font-family:宋体"}[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x836542723}[端口会在上述]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[集合的每个]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[内都发送]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文，这样当]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[集合较大时，设备会因发送大量]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文而占用过多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[资源，从而无法及时处理其它协议的报文。为了避免这种情况，可以通过减少通告]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的范围来缩小]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[集合的范围。]{style="font-family:宋体"}
+由于TRILL端口会在上述VLAN集合的每个VLAN内都发送Hello报文，这样当VLAN集合较大时，设备会因发送大量Hello报文而占用过多CPU资源，从而无法及时处理其它协议的报文。为了避免这种情况，可以通过减少通告VLAN的范围来缩小VLAN集合的范围。
 
-[[需要注意的是，二层以太网接口视图下的配置只对当前端口生效；二层聚合接口视图下的配置对当前接口及其成员端口均生效；聚合成员端口上的配置，只有当成员端口退出聚合组后才能生效。]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x795555358}
+需要注意的是，二层以太网接口视图下的配置只对当前端口生效；二层聚合接口视图下的配置对当前接口及其成员端口均生效；聚合成员端口上的配置，只有当成员端口退出聚合组后才能生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1621263321}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_1476301296}[配置通告]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[为]{style="font-family:宋体"}[VLAN 10]{lang="EN-US"}[～]{style="font-family:宋体"}[20]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置通告VLAN为VLAN 10～20。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597655230}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] trill announcing-vlan 10 to 20]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 trill announcing-vlan 10 to 20
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_1572193176}[配置通告]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[为空集。]{style="font-family:宋体"}
+\# 配置通告VLAN为空集。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_434940295}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] trill announcing-vlan null]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 trill announcing-vlan null
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1252440538}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[trill]{lang="EN-US"}**[ **designated-vlan**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1165646295}
-:::
-
-::: {#-1404112778 .myid}
-[]{#_Toc404798001}[]{#struct_0_x1068_x9952_1791517750}[]{#_Toc386113410}[]{#_Toc385854408}[]{#_Toc379615169}[]{#_Toc379555237}[]{#_Toc378607609}
+·**trill** **designated-vlan**
 
 **TRILL \-- TRILL配置命令 \-- trill bypass-pseudonode enable**
 
 ------------------------------------------------------------------------
 
-[**[trill]{lang="EN-US"}**[ **bypass-pseudonode** **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_x834679649}[命令用来开启旁路伪节点功能。]{style="font-family:宋体"}
+**[trill** **bypass-pseudonode** **enable**]命令用来开启旁路伪节点功能。
 
-[**[undo]{lang="EN-US"}**[ **trill** **bypass-pseudonode** **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_x488107242}[命令用来]{style="font-family:宋体"}[关闭旁路伪节点功能。]{style="font-family:宋体"}
+**[undo** **trill** **bypass-pseudonode** **enable**]命令用来关闭旁路伪节点功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1956011468}
+【命令】
 
-[**[trill]{lang="EN-US"}**[ **bypass-pseudonode** **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1536112860}
+**[trill** **bypass-pseudonode** **enable**]
 
-[**[undo]{lang="EN-US"}**[ **trill** **bypass-pseudonode** **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_1848566697}
+**[undo** **trill** **bypass-pseudonode** **enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_225433809}
+【缺省情况】
 
-[[旁路伪节点功能处于关闭状态。]{style="font-family:宋体"}]{#struct_0_x1068_x9952_946257100}
+旁路伪节点功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1322116588}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1068_x9952_x507164029}[二层聚合接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1410219188}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1829127421}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1644839132}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_115679279}
+【使用指导】
 
-[[开启本功能后，如果当前端口为]{style="font-family:宋体"}[DRB]{lang="EN-US"}]{#struct_0_x1068_x9952_x1207288973}[且只有一个邻居，则不再生成伪节点的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[，以减少网络中]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的数量。]{style="font-family:宋体"}
+开启本功能后，如果当前端口为DRB且只有一个邻居，则不再生成伪节点的LSP，以减少网络中LSP的数量。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x758411396}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_178486774}[在端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上开启旁路伪节点功能。]{style="font-family:宋体"}
+\# 在端口GigabitEthernet1/0/1上开启旁路伪节点功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x1696880492}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] ]{lang="NO-BOK"}[trill bypass-pseudonode enable]{lang="EN-US"}
-:::
-
-::: {#1902513059 .myid}
-[]{#_Toc404798002}[]{#struct_0_x1068_x9952_1393334629}[]{#_Toc339972667}
+Sysname-GigabitEthernet1/0/1 trill bypass-pseudonode enable
 
 **TRILL \-- TRILL配置命令 \-- trill cost**
 
 ------------------------------------------------------------------------
 
-[**[trill]{lang="EN-US"}**[ **cost**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1880216770}[命令用来配置]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[端口的链路开销值。]{style="font-family:宋体"}
+**[trill** **cost**]命令用来配置TRILL端口的链路开销值。
 
-[**[undo]{lang="EN-US"}**[ **trill** **cost**]{lang="EN-US"}]{#struct_0_x1068_x9952_x897385073}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **trill** **cost**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1597589694}
+【命令】
 
-[**[trill]{lang="EN-US"}**[ **cost** *value*]{lang="EN-US"}]{#struct_0_x1068_x9952_1870500127}
+**[trill** **cost** *value*]
 
-[**[undo]{lang="EN-US"}**[ **trill** **cost**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1549257630}
+**[undo** **trill** **cost**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1898628050}
+【缺省情况】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_554087310}[端口的链路开销值为]{style="font-family:宋体"}[2000]{lang="EN-US"}[。]{style="font-family:宋体"}
+TRILL端口的链路开销值为2000。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1987920690}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1068_x9952_1626215937}[二层聚合接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_757585487}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1535438583}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597786302}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x409021054}
+【参数】
 
-[*[value]{lang="EN-US"}*]{#struct_0_x1068_x9952_x216177388}[：表示链路开销值，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[16777214]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[value*]：表示链路开销值，取值范围为1～16777214。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1727838547}
+【使用指导】
 
-[[对于]{style="font-family:宋体"}[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_1932567642}[端口的链路开销值来说：如果进行了手工配置，则取配置值；如果没有手工配置且自动计算功能处于开启状态，则取自动计算值；如果没有手工配置且自动计算功能处于关闭状态，则取缺省值]{style="font-family:宋体"}[2000]{lang="EN-US"}[。]{style="font-family:宋体"}
+对于TRILL端口的链路开销值来说：如果进行了手工配置，则取配置值；如果没有手工配置且自动计算功能处于开启状态，则取自动计算值；如果没有手工配置且自动计算功能处于关闭状态，则取缺省值2000。
 
-[[需要注意的是，二层以太网接口视图下的配置只对当前端口生效；二层聚合接口视图下的配置对当前接口及其成员端口均生效；聚合成员端口上的配置，只有当成员端口退出聚合组后才能生效。]{style="font-family:宋体"}]{#struct_0_x1068_x9952_1046394531}
+需要注意的是，二层以太网接口视图下的配置只对当前端口生效；二层聚合接口视图下的配置对当前接口及其成员端口均生效；聚合成员端口上的配置，只有当成员端口退出聚合组后才能生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_451703184}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_650083202}[配置]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的链路开销值为]{style="font-family:宋体"}[20000]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置TRILL端口GigabitEthernet1/0/1的链路开销值为20000。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597720766}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] trill cost 20000]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 trill cost 20000
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1110863976}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[auto-cost]{lang="EN-US"}**[ **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_1757390417}
-:::
-
-::: {#-776834799 .myid}
-[]{#_Toc404798003}[]{#struct_0_x1068_x9952_389555506}[]{#_Toc339972668}
+·**auto-cost** **enable**
 
 **TRILL \-- TRILL配置命令 \-- trill designated-vlan**
 
 ------------------------------------------------------------------------
 
-[**[trill]{lang="EN-US"}**[ **designated-vlan**]{lang="EN-US"}]{#struct_0_x1068_x9952_426159711}[命令用来配置指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[trill** **designated-vlan**]命令用来配置指定VLAN。
 
-[**[undo]{lang="EN-US"}**[ **trill** **designated-vlan**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1185779928}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **trill** **designated-vlan**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_551451307}
+【命令】
 
-[**[trill]{lang="EN-US"}**[ **designated-vlan** *vlan-id*]{lang="EN-US"}]{#struct_0_x1068_x9952_1196791481}
+**[trill** **designated-vlan** *vlan-id*]
 
-[**[undo]{lang="EN-US"}**[ **trill** **designated-vlan**]{lang="EN-US"}]{#struct_0_x1068_x9952_1918362537}
+**[undo** **trill** **designated-vlan**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1597393086}
+【缺省情况】
 
-[[没有配置指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1068_x9952_1139952540}[，此时指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[由系统从使能]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[中自动选出。]{style="font-family:宋体"}
+没有配置指定VLAN，此时指定VLAN由系统从使能VLAN中自动选出。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_496303406}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1068_x9952_x2019028689}[二层聚合接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1231241415}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x458888537}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1079011354}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x586911775}
+【参数】
 
-[*[vlan-id]{lang="EN-US"}*]{#struct_0_x1068_x9952_x1597327550}[：表示指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[vlan-id*]：表示指定VLAN，取值范围为1～4094。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1966623548}
+【使用指导】
 
-[[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x1218879750}[之间的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文，是通过一个]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[集合来交互的，具体来说：]{style="font-family:宋体"}
+RB之间的Hello报文，是通过一个VLAN集合来交互的，具体来说：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DRB]{lang="EN-US"}]{#struct_0_x1068_x9952_x1121268593}[在]{style="font-family:宋体"}[以下]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[集合中发送]{lang="EN-US" style="font-family:宋体"}[Hello]{lang="EN-US"}[报文：使能]{lang="EN-US" style="font-family:宋体"}[VLAN ]{lang="EN-US"}[∩（]{lang="EN-US" style="font-family:宋体"}[指定]{style="font-family:宋体"}[VLAN ]{lang="EN-US"}[∪]{lang="EN-US" style="font-family:宋体"}[ ]{lang="EN-US"}[通告]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[）。]{lang="EN-US" style="font-family:宋体"}
+·DRB在以下VLAN集合中发送Hello报文：使能VLAN ∩（指定VLAN ∪通告VLAN）。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[非]{lang="EN-US" style="font-family:宋体"}[DRB]{lang="EN-US"}]{#struct_0_x1068_x9952_x1218879747}[在]{style="font-family:宋体"}[以下]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[集合中发送]{lang="EN-US" style="font-family:宋体"}[Hello]{lang="EN-US"}[报文：使能]{lang="EN-US" style="font-family:宋体"}[VLAN ]{lang="EN-US"}[∩（指定]{lang="EN-US" style="font-family:宋体"}[VLAN ]{lang="EN-US"}[∪（通告]{lang="EN-US" style="font-family:宋体"}[VLAN ]{lang="EN-US"}[∩]{lang="EN-US" style="font-family:宋体"}[ AVF VLAN]{lang="EN-US"}[））。]{lang="EN-US" style="font-family:宋体"}
+·非DRB在以下VLAN集合中发送Hello报文：使能VLAN ∩（指定VLAN ∪（通告VLAN ∩ AVF VLAN））。
 
-[[而除]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_x1068_x9952_x1218879748}[报文外的其它]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[协议报文和本地数据报文，则全部通过指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[来交互。因此，请确保所配置的指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[处于使能]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的范围内，否则可能导致]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[邻居无法建立或]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[数据报文无法转发。]{style="font-family:宋体"}
+而除Hello报文外的其它TRILL协议报文和本地数据报文，则全部通过指定VLAN来交互。因此，请确保所配置的指定VLAN处于使能VLAN的范围内，否则可能导致TRILL邻居无法建立或TRILL数据报文无法转发。
 
-[[需要注意的是，二层以太网接口视图下的配置只对当前端口生效；二层聚合接口视图下的配置对当前接口及其成员端口均生效；聚合成员端口上的配置，只有当成员端口退出聚合组后才能生效。]{style="font-family:宋体"}]{#struct_0_x1068_x9952_15058588}
+需要注意的是，二层以太网接口视图下的配置只对当前端口生效；二层聚合接口视图下的配置对当前接口及其成员端口均生效；聚合成员端口上的配置，只有当成员端口退出聚合组后才能生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x816269059}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x326827469}[配置指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[为]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置指定VLAN为VLAN 2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_1950059839}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] trill designated-vlan 2]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 trill designated-vlan 2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_867390799}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[trill]{lang="EN-US"}**[ **announcing-vlan**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597917373}
-:::
-
-::: {#-149570930 .myid}
-[]{#_Toc404798004}[]{#struct_0_x1068_x9952_x845522912}
+·**trill** **announcing-vlan**
 
 **TRILL \-- TRILL配置命令 \-- trill drb-priority**
 
 ------------------------------------------------------------------------
 
-[**[trill]{lang="EN-US"}**[ **drb-priority**]{lang="EN-US"}]{#struct_0_x1068_x9952_x35117062}[命令用来配置]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[端口的]{style="font-family:宋体"}[DRB]{lang="EN-US"}[优先级。]{style="font-family:宋体"}
+**[trill** **drb-priority**]命令用来配置TRILL端口的DRB优先级。
 
-[**[undo]{lang="EN-US"}**[ **trill**]{lang="EN-US"}[ **drb-priority**]{lang="EN-US"}]{#struct_0_x1068_x9952_242020868}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **trill** **drb-priority**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1907176451}
+【命令】
 
-[**[trill]{lang="EN-US"}**[ **drb-priority** *priority*]{lang="EN-US"}]{#struct_0_x1068_x9952_1737069205}
+**[trill** **drb-priority** *priority*]
 
-[**[undo]{lang="EN-US"}**[ **trill** ]{lang="EN-US"}**[drb-priority]{lang="EN-US"}**]{#struct_0_x1068_x9952_x1348909737}
+**[undo** **trill** **drb-priority**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1992104286}
+【缺省情况】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1490196080}[端口的]{style="font-family:宋体"}[DRB]{lang="EN-US"}[优先级为]{style="font-family:宋体"}[64]{lang="EN-US"}[。]{style="font-family:宋体"}
+TRILL端口的DRB优先级为64。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1597851837}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1068_x9952_1426679245}[二层聚合接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1134801651}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1399841841}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1488390912}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1616414826}
+【参数】
 
-[*[priority]{lang="EN-US"}*]{#struct_0_x1068_x9952_x386264956}[：表示]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[端口的]{style="font-family:宋体"}[DRB]{lang="EN-US"}[优先级，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[127]{lang="EN-US"}[，数值越大优先级越高。]{style="font-family:宋体"}
+*[priority*]：表示TRILL端口的DRB优先级，取值范围为0～127，数值越大优先级越高。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1303975599}
+【使用指导】
 
-[[当网络类型为广播网时，]{style="font-family:宋体"}[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x663262765}[需要选举]{style="font-family:宋体"}[DRB]{lang="EN-US"}[：]{style="font-family:宋体"}[DRB]{lang="EN-US"}[优先级较高的]{style="font-family:宋体"}[RB]{lang="EN-US"}[优先被选中为]{style="font-family:宋体"}[DRB]{lang="EN-US"}[；若两个]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[DRB]{lang="EN-US"}[优先级相同，则]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址最大者会被选为]{style="font-family:宋体"}[DRB]{lang="EN-US"}[。]{style="font-family:宋体"}
+当网络类型为广播网时，TRILL需要选举DRB：DRB优先级较高的RB优先被选中为DRB；若两个RB的DRB优先级相同，则MAC地址最大者会被选为DRB。
 
-[[需要注意的是，二层以太网接口视图下的配置只对当前端口生效；二层聚合接口视图下的配置对当前接口及其成员端口均生效；聚合成员端口上的配置，只有当成员端口退出聚合组后才能生效。]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x1598048445}
+需要注意的是，二层以太网接口视图下的配置只对当前端口生效；二层聚合接口视图下的配置对当前接口及其成员端口均生效；聚合成员端口上的配置，只有当成员端口退出聚合组后才能生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1543259997}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x1333830269}[配置]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的]{style="font-family:宋体"}[DRB]{lang="EN-US"}[优先级为]{style="font-family:宋体"}[2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置TRILL端口GigabitEthernet1/0/1的DRB优先级为2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x1071068467}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] trill drb-priority 2]{lang="EN-US"}
-:::
-
-::: {#772239676 .myid}
-[]{#_Toc404798005}[]{#struct_0_x1068_x9952_x535211302}
+Sysname-GigabitEthernet1/0/1 trill drb-priority 2
 
 **TRILL \-- TRILL配置命令 \-- trill enable**
 
 ------------------------------------------------------------------------
 
-[**[trill]{lang="EN-US"}**[ **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_904031573}[命令用来在端口上使能]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[协议。]{style="font-family:宋体"}
+**[trill** **enable**]命令用来在端口上使能TRILL协议。
 
-[**[undo]{lang="EN-US"}**[ **trill**]{lang="EN-US"}[ **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_483853363}[命令用来在端口上关闭]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[协议。]{style="font-family:宋体"}
+**[undo** **trill** **enable**]命令用来在端口上关闭TRILL协议。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x339053353}
+【命令】
 
-[**[trill]{lang="EN-US"}**[ **enable**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597982909}
+**[trill** **enable**]
 
-[**[undo]{lang="EN-US"}**[ **trill** ]{lang="EN-US"}**[enable]{lang="EN-US"}**]{#struct_0_x1068_x9952_x1004611535}
+**[undo** **trill** **enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1702006912}
+【缺省情况】
 
-[[端口上的]{style="font-family:宋体"}[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x514081829}[协议处于关闭状态。]{style="font-family:宋体"}
+端口上的TRILL协议处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_811490591}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1068_x9952_1487175077}[二层聚合接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x222314915}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_2074226316}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597655229}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x800525355}
+【使用指导】
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x71868677}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在端口上使能]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x1633273777}[TRILL]{lang="EN-US"}[协议之前，必须先全局使能]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[协议。]{style="font-family:宋体"}
+·在端口上使能TRILL协议之前，必须先全局使能TRILL协议。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[二层以太网接口视图下的配置只对当前端口生效；二层聚合接口视图下的配置对当前接口及其成员端口均生效；聚合成员端口上的配置，只有当成员端口退出聚合组后才能生效。]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x1772686487}
+·二层以太网接口视图下的配置只对当前端口生效；二层聚合接口视图下的配置对当前接口及其成员端口均生效；聚合成员端口上的配置，只有当成员端口退出聚合组后才能生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x872437348}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x137148022}[全局使能]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[协议，并在端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上使能]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[协议。]{style="font-family:宋体"}
+\# 全局使能TRILL协议，并在端口GigabitEthernet1/0/1上使能TRILL协议。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x2093775130}
+\<Sysname\> system-view
 
-[\[Sysname\] trill]{lang="EN-US"}
+Sysname trill
 
-[\[Sysname-trill\] quit]{lang="EN-US"}
+Sysname-trill quit
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] trill enable]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 trill enable
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1880415460}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[trill]{lang="EN-US"}**]{#struct_0_x1068_x9952_x1597589693}
-:::
-
-::: {#-694627945 .myid}
-[]{#_Toc404798006}[]{#struct_0_x1068_x9952_1110985240}
+·**trill**
 
 **TRILL \-- TRILL配置命令 \-- trill link-type**
 
 ------------------------------------------------------------------------
 
-[**[trill]{lang="EN-US"}**[ **link-type**]{lang="EN-US"}]{#struct_0_x1068_x9952_x254189101}[命令用来配置]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[端口的类型。]{style="font-family:宋体"}
+**[trill** **link-type**]命令用来配置TRILL端口的类型。
 
-[**[undo]{lang="EN-US"}**[ **trill**]{lang="EN-US"}[ **link-type**]{lang="EN-US"}]{#struct_0_x1068_x9952_535306819}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **trill** **link-type**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1088112404}
+【命令】
 
-[**[trill]{lang="EN-US"}**[ **link-type** { **access** \[ **alone** \] \| **hybrid** \| **trunk** \| **vr** }]{lang="EN-US"}]{#struct_0_x1068_x9952_x734200990}
+**[trill** **link-type** { **access** [ **alone**  \| **hybrid** \| **trunk** \| **vr** }]]
 
-[**[undo]{lang="EN-US"}**[ **trill** **link-type**]{lang="EN-US"}]{#struct_0_x1068_x9952_1183048169}
+**[undo** **trill** **link-type**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_147837600}
+【缺省情况】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_224260300}[端口的类型为]{style="font-family:宋体"}[Access]{lang="EN-US"}[类型（非]{style="font-family:宋体"}[Alone]{lang="EN-US"}[属性）。]{style="font-family:宋体"}
+TRILL端口的类型为Access类型（非Alone属性）。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1597786301}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1068_x9952_x812305581}[二层聚合接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1602605035}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1727866852}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_468732326}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_57863598}
+【参数】
 
-[**[access]{lang="EN-US"}**[ \[ **alone** \]]{lang="EN-US"}]{#struct_0_x1068_x9952_x1061669129}[：表示]{style="font-family:宋体"}[Access]{lang="EN-US"}[类型。如果未指定]{style="font-family:宋体"}**[alone]{lang="EN-US"}**[参数，表示非]{style="font-family:宋体"}[Alone]{lang="EN-US"}[属性的]{style="font-family:宋体"}[Access]{lang="EN-US"}[端口，此类端口只能处理本地数据报文和]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文；如果指定了]{style="font-family:宋体"}**[alone]{lang="EN-US"}**[参数，表示]{style="font-family:宋体"}[Alone]{lang="EN-US"}[属性的]{style="font-family:宋体"}[Access]{lang="EN-US"}[端口，此类端口不会收、发]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文，不参与]{style="font-family:宋体"}[DRB]{lang="EN-US"}[选举和]{style="font-family:宋体"}[AVF]{lang="EN-US"}[协商。]{style="font-family:宋体"}
+**[access** [ **alone** ]]：表示Access类型。如果未指定**alone**参数，表示非Alone属性的Access端口，此类端口只能处理本地数据报文和Hello报文；如果指定了**alone**参数，表示Alone属性的Access端口，此类端口不会收、发Hello报文，不参与DRB选举和AVF协商。
 
-[**[hybrid]{lang="EN-US"}**]{#struct_0_x1068_x9952_1816719973}[：表示]{style="font-family:宋体"}[Hybrid]{lang="EN-US"}[类型。该类型的端口同时具有]{style="font-family:宋体"}[Access]{lang="EN-US"}[和]{style="font-family:宋体"}[Trunk]{lang="EN-US"}[的属性，能够处理本地数据报文和过路数据报文。]{style="font-family:宋体"}
+**[hybrid**]：表示Hybrid类型。该类型的端口同时具有Access和Trunk的属性，能够处理本地数据报文和过路数据报文。
 
-[**[trunk]{lang="EN-US"}**]{#struct_0_x1068_x9952_x1597720765}[：表示]{style="font-family:宋体"}[Trunk]{lang="EN-US"}[类型。该类型的端口能够处理过路数据报文和部分二层协议报文（如]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[报文），不能处理本地数据报文。]{style="font-family:宋体"}
+**[trunk**]：表示Trunk类型。该类型的端口能够处理过路数据报文和部分二层协议报文（如LLDP报文），不能处理本地数据报文。
 
-[**[vr]{lang="EN-US"}**]{#struct_0_x1068_x9952_x592082027}[：表示]{style="font-family:宋体"}[VR]{lang="EN-US"}[类型。该类型的端口是一种特殊的虚拟路由端口，除了可以和]{style="font-family:宋体"}[Trunk]{lang="EN-US"}[类型端口一样转发]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[数据报文外，还可以转发非]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[封装的三层单播数据报文和非]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[封装的二、三层组播数据报文。]{style="font-family:宋体"}
+**[vr**]：表示VR类型。该类型的端口是一种特殊的虚拟路由端口，除了可以和Trunk类型端口一样转发TRILL数据报文外，还可以转发非TRILL封装的三层单播数据报文和非TRILL封装的二、三层组播数据报文。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1618019379}
+【使用指导】
 
-[[需要注意的是，二层以太网接口视图下的配置只对当前端口生效；二层聚合接口视图下的配置对当前接口及其成员端口均生效；聚合成员端口上的配置，只有当成员端口退出聚合组后才能生效。]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x467351112}
+需要注意的是，二层以太网接口视图下的配置只对当前端口生效；二层聚合接口视图下的配置对当前接口及其成员端口均生效；聚合成员端口上的配置，只有当成员端口退出聚合组后才能生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_306419071}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_1845840684}[配置]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的类型为]{style="font-family:宋体"}[Trunk]{lang="EN-US"}[类型。]{style="font-family:宋体"}
+\# 配置TRILL端口GigabitEthernet1/0/1的类型为Trunk类型。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_1845117654}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] trill link-type trunk]{lang="EN-US"}
-:::
-
-::: {#477865632 .myid}
-[]{#_Toc404798007}[]{#struct_0_x1068_x9952_1098513589}
+Sysname-GigabitEthernet1/0/1 trill link-type trunk
 
 **TRILL \-- TRILL配置命令 \-- trill timer avf-inhibited**
 
 ------------------------------------------------------------------------
 
-[**[trill]{lang="EN-US"}**[ **timer** **avf-inhibited**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1901004223}[命令用来配置环路避免的抑制时间。]{style="font-family:宋体"}
+**[trill** **timer** **avf-inhibited**]命令用来配置环路避免的抑制时间。
 
-[**[undo]{lang="EN-US"}**[ **trill** ]{lang="EN-US"}**[timer]{lang="EN-US"}**[ **avf-inhibited**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597393085}[命令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo** **trill** **timer** **avf-inhibited**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1543237067}
+【命令】
 
-[**[trill]{lang="EN-US"}**[ **timer** **avf-inhibited** *time*]{lang="EN-US"}]{#struct_0_x1068_x9952_x1315570414}
+**[trill** **timer** **avf-inhibited** *time*]
 
-[**[undo]{lang="EN-US"}**[ **trill** ]{lang="EN-US"}**[timer]{lang="EN-US"}**[ **avf-inhibited**]{lang="EN-US"}]{#struct_0_x1068_x9952_8385068}
+**[undo** **trill** **timer** **avf-inhibited**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1322828710}
+【缺省情况】
 
-[[环路避免的抑制时间]{style="font-family:宋体"}]{#struct_0_x1068_x9952_1395709871}[为]{style="font-family:宋体"}[30]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+环路避免的抑制时间为30秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x334610720}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1068_x9952_x921115949}[二层聚合接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1074635520}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1597327549}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_406094983}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x560919228}
+【参数】
 
-[*[time]{lang="EN-US"}*]{#struct_0_x1068_x9952_96792941}[：表示环路避免的抑制时间，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[30]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[time*]：表示环路避免的抑制时间，取值范围为0～30，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1668020384}
+【使用指导】
 
-[[AVF]{lang="EN-US"}]{#struct_0_x1068_x9952_1541166019}[的存在保证了在一条链路上与一个]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[相关的报文，只会有唯一的出口或入口，其他]{style="font-family:宋体"}[RB]{lang="EN-US"}[收到与该]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[相关的报文时将不做任何处理。然而，当]{style="font-family:宋体"}[RB]{lang="EN-US"}[发现链路上的根桥发生了变化，或其他]{style="font-family:宋体"}[RB]{lang="EN-US"}[宣称的]{style="font-family:宋体"}[AVF]{lang="EN-US"}[与本]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[AVF]{lang="EN-US"}[发生冲突时，会将相关的]{style="font-family:宋体"}[AVF]{lang="EN-US"}[抑制一段时间以避免环路的产生。抑制时间超时后，如果本]{style="font-family:宋体"}[RB]{lang="EN-US"}[仍是该]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的]{style="font-family:宋体"}[AVF]{lang="EN-US"}[，则重新履行]{style="font-family:宋体"}[AVF]{lang="EN-US"}[的职能。]{style="font-family:宋体"}
+AVF的存在保证了在一条链路上与一个VLAN相关的报文，只会有唯一的出口或入口，其他RB收到与该VLAN相关的报文时将不做任何处理。然而，当RB发现链路上的根桥发生了变化，或其他RB宣称的AVF与本RB的AVF发生冲突时，会将相关的AVF抑制一段时间以避免环路的产生。抑制时间超时后，如果本RB仍是该VLAN的AVF，则重新履行AVF的职能。
 
-[[需要注意的是，二层以太网接口视图下的配置只对当前端口生效；二层聚合接口视图下的配置对当前接口及其成员端口均生效；聚合成员端口上的配置，只有当成员端口退出聚合组后才能生效。]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x2258925}
+需要注意的是，二层以太网接口视图下的配置只对当前端口生效；二层聚合接口视图下的配置对当前接口及其成员端口均生效；聚合成员端口上的配置，只有当成员端口退出聚合组后才能生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x326628395}
+【举例】
 
-[[\#]{lang="EN-US"}]{#struct_0_x1068_x9952_x1599232391}[在端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置环路避免的抑制时间为]{style="font-family:宋体"}[20]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\#在端口GigabitEthernet1/0/1上配置环路避免的抑制时间为20秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x31833429}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] trill timer avf-inhibited 20]{lang="EN-US"}
-:::
-
-::: {#1571179840 .myid}
-[]{#_Toc404798008}[]{#struct_0_x1068_x9952_x553933647}
+Sysname-GigabitEthernet1/0/1 trill timer avf-inhibited 20
 
 **TRILL \-- TRILL配置命令 \-- trill timer csnp**
 
 ------------------------------------------------------------------------
 
-[**[trill]{lang="EN-US"}**[ **timer** **csnp**]{lang="EN-US"}]{#struct_0_x1068_x9952_1533515032}[命令用来配置]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文的发送间隔。]{style="font-family:宋体"}
+**[trill** **timer** **csnp**]命令用来配置CSNP报文的发送间隔。
 
-[**[undo]{lang="EN-US"}**[ **trill** **timer** **csnp**]{lang="EN-US"}]{#struct_0_x1068_x9952_266980721}[命令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo** **trill** **timer** **csnp**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1628670434}
+【命令】
 
-[**[trill]{lang="EN-US"}**[ **timer** **csnp** *interval*]{lang="EN-US"}]{#struct_0_x1068_x9952_443705566}
+**[trill** **timer** **csnp** *interval*]
 
-[**[undo]{lang="EN-US"}**[ **trill** ]{lang="EN-US"}**[timer]{lang="EN-US"}**[ **csnp**]{lang="EN-US"}]{#struct_0_x1068_x9952_x120801013}
+**[undo** **trill** **timer** **csnp**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1691252342}
+【缺省情况】
 
-[[CSNP]{lang="EN-US"}]{#struct_0_x1068_x9952_x31767893}[报文的发送间隔为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+CSNP报文的发送间隔为10秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1539274676}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1068_x9952_x534822157}[二层聚合接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x272249783}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x1100814238}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x729454103}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_337260267}
+【参数】
 
-[*[interval]{lang="EN-US"}*]{#struct_0_x1068_x9952_604116482}[：表示]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文的发送间隔，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[600]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[interval*]：表示CSNP报文的发送间隔，取值范围为1～600，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x31964501}
+【使用指导】
 
-[[当网络类型为广播网时，]{style="font-family:宋体"}[DRB]{lang="EN-US"}]{#struct_0_x1068_x9952_x2101333841}[定期发送]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文进行全网的]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[同步。]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文记录了本地]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[中的所有]{style="font-family:宋体"}[LSP]{lang="EN-US"}[摘要，当一个]{style="font-family:宋体"}[RB]{lang="EN-US"}[收到一个]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文时，就会与本地的]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[进行比较，检查其中的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[是否有老化和缺失。如果]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文中有某个]{style="font-family:宋体"}[LSP]{lang="EN-US"}[摘要而本地]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[中没有，]{style="font-family:宋体"}[RB]{lang="EN-US"}[将发送]{style="font-family:宋体"}[PSNP]{lang="EN-US"}[报文以请求获取该]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的信息。]{style="font-family:宋体"}
+当网络类型为广播网时，DRB定期发送CSNP报文进行全网的LSDB同步。CSNP报文记录了本地LSDB中的所有LSP摘要，当一个RB收到一个CSNP报文时，就会与本地的LSDB进行比较，检查其中的LSP是否有老化和缺失。如果CSNP报文中有某个LSP摘要而本地LSDB中没有，RB将发送PSNP报文以请求获取该LSP的信息。
 
-[[需要注意的是，二层以太网接口视图下的配置只对当前端口生效；二层聚合接口视图下的配置对当前接口及其成员端口均生效；聚合成员端口上的配置，只有当成员端口退出聚合组后才能生效。]{style="font-family:宋体"}]{#struct_0_x1068_x9952_447496407}
+需要注意的是，二层以太网接口视图下的配置只对当前端口生效；二层聚合接口视图下的配置对当前接口及其成员端口均生效；聚合成员端口上的配置，只有当成员端口退出聚合组后才能生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1806569180}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x1370804878}[在端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置]{style="font-family:宋体"}[CSNP]{lang="EN-US"}[报文的发送间隔为]{style="font-family:宋体"}[15]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 在端口GigabitEthernet1/0/1上配置CSNP报文的发送间隔为15秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x1587706693}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] trill timer csnp 15]{lang="EN-US"}
-:::
-
-::: {#1603844840 .myid}
-[]{#_Toc404798009}[]{#struct_0_x1068_x9952_x392015840}
+Sysname-GigabitEthernet1/0/1 trill timer csnp 15
 
 **TRILL \-- TRILL配置命令 \-- trill timer hello**
 
 ------------------------------------------------------------------------
 
-[**[trill]{lang="EN-US"}**[ **timer** **hello**]{lang="EN-US"}]{#struct_0_x1068_x9952_1288995598}[命令用来配置]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的发送间隔。]{style="font-family:宋体"}
+**[trill** **timer** **hello**]命令用来配置Hello报文的发送间隔。
 
-[**[undo]{lang="EN-US"}**[ **trill** **timer** **hello**]{lang="EN-US"}]{#struct_0_x1068_x9952_x31898965}[命令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo** **trill** **timer** **hello**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1732705476}
+【命令】
 
-[**[trill]{lang="EN-US"}**[ **timer** **hello** *interval*]{lang="EN-US"}]{#struct_0_x1068_x9952_588310900}
+**[trill** **timer** **hello** *interval*]
 
-[**[undo]{lang="EN-US"}**[ **trill** ]{lang="EN-US"}**[timer]{lang="EN-US"}**[ **hello**]{lang="EN-US"}]{#struct_0_x1068_x9952_1636840978}
+**[undo** **trill** **timer** **hello**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1668748313}
+【缺省情况】
 
-[[Hello]{lang="EN-US"}]{#struct_0_x1068_x9952_1189588625}[报文的发送间隔为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+Hello报文的发送间隔为10秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1066085899}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1068_x9952_x633199853}[二层聚合接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1475416647}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x31571285}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x971904633}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1370565297}
+【参数】
 
-[*[interval]{lang="EN-US"}*]{#struct_0_x1068_x9952_1559947626}[：表示]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的发送间隔，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[interval*]：表示Hello报文的发送间隔，取值范围为1～255，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x411831378}
+【使用指导】
 
-[[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_860970627}[定期发送]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文以维持邻接关系。]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的发送间隔越短，网络收敛越快，但也会占用更多的系统资源。]{style="font-family:宋体"}
+RB定期发送Hello报文以维持邻接关系。Hello报文的发送间隔越短，网络收敛越快，但也会占用更多的系统资源。
 
-[[Hello]{lang="EN-US"}]{#struct_0_x1068_x9952_x1541200224}[报文的发送间隔与失效数目的乘积为]{style="font-family:宋体"}[邻接关系保持时间，即]{style="font-family:宋体"}[RB]{lang="EN-US"}[监测到链路失效并进行路由重计算的时间。]{style="font-family:宋体"}[RB]{lang="EN-US"}[通过]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文将邻接关系保持时间通知给其邻居，若该邻居在邻接关系保持时间内未收到此报文，便宣告邻接关系失效。]{style="font-family:宋体"}
+Hello报文的发送间隔与失效数目的乘积为邻接关系保持时间，即RB监测到链路失效并进行路由重计算的时间。RB通过Hello报文将邻接关系保持时间通知给其邻居，若该邻居在邻接关系保持时间内未收到此报文，便宣告邻接关系失效。
 
-[[本命令用来配置]{style="font-family:宋体"}[RB]{lang="EN-US"}]{#struct_0_x1068_x9952_x2036165956}[发送]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的时间间隔，而]{style="font-family:宋体"}[DRB]{lang="EN-US"}[发送]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的时间间隔则为]{style="font-family:宋体"}[RB]{lang="EN-US"}[的]{style="font-family:宋体"}[1/3]{lang="EN-US"}[，以保证]{style="font-family:宋体"}[DRB]{lang="EN-US"}[失效后可被快速检测到。]{style="font-family:宋体"}
+本命令用来配置RB发送Hello报文的时间间隔，而DRB发送Hello报文的时间间隔则为RB的1/3，以保证DRB失效后可被快速检测到。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x1068_x9952_1113284347}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Hello]{lang="EN-US"}]{#struct_0_x1068_x9952_1188026327}[报文的发送间隔与失效数目的乘积不允许超过]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+·Hello报文的发送间隔与失效数目的乘积不允许超过65535。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[二层以太网接口视图下的配置只对当前端口生效；二层聚合接口视图下的配置对当前接口及其成员端口均生效；聚合成员端口上的配置，只有当成员端口退出聚合组后才能生效。]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x31505749}
+·二层以太网接口视图下的配置只对当前端口生效；二层聚合接口视图下的配置对当前接口及其成员端口均生效；聚合成员端口上的配置，只有当成员端口退出聚合组后才能生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_927483467}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x1279318520}[在端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的发送间隔]{style="font-family:宋体"}[为]{style="font-family:宋体"}[20]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 在端口GigabitEthernet1/0/1上配置Hello报文的发送间隔为20秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x195604223}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] trill timer hello 20]{lang="NO-BOK"}
+Sysname-GigabitEthernet1/0/1 trill timer hello 20
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1459554095}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[trill]{lang="EN-US"}**[ **timer** **holding-multiplier**]{lang="EN-US"}]{#struct_0_x1068_x9952_x840894265}
-:::
-
-::: {#-528109679 .myid}
-[]{#_Toc404798010}[]{#struct_0_x1068_x9952_995835748}
+·**trill** **timer** **holding-multiplier**
 
 **TRILL \-- TRILL配置命令 \-- trill timer holding-multiplier**
 
 ------------------------------------------------------------------------
 
-[**[trill]{lang="EN-US"}**[ **timer** **holding-multiplier**]{lang="EN-US"}]{#struct_0_x1068_x9952_x813690105}[命令用来配置]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的失效数目。]{style="font-family:宋体"}
+**[trill** **timer** **holding-multiplier**]命令用来配置Hello报文的失效数目。
 
-[**[undo]{lang="EN-US"}**[ **trill** **timer** **holding-multiplier**]{lang="EN-US"}]{#struct_0_x1068_x9952_x31702357}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **trill** **timer** **holding-multiplier**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x714181659}
+【命令】
 
-[**[trill]{lang="EN-US"}**[ **timer** **holding-multiplier** *count*]{lang="EN-US"}]{#struct_0_x1068_x9952_x1673634439}
+**[trill** **timer** **holding-multiplier** *count*]
 
-[**[undo]{lang="EN-US"}**[ **trill** **holding-multiplier**]{lang="EN-US"}]{#struct_0_x1068_x9952_883057713}
+**[undo** **trill** **holding-multiplier**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x589049713}
+【缺省情况】
 
-[[Hello]{lang="EN-US"}]{#struct_0_x1068_x9952_x935783479}[报文的失效数目为]{style="font-family:宋体"}[3]{lang="EN-US"}[个。]{style="font-family:宋体"}
+Hello报文的失效数目为3个。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1296848720}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1068_x9952_x1495813425}[二层聚合接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x31636821}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1949071125}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1750710387}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1505895607}
+【参数】
 
-[*[count]{lang="EN-US"}*]{#struct_0_x1068_x9952_x2131334680}[：表示]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的失效数目，取值范围为]{style="font-family:宋体"}[2]{lang="EN-US"}[～]{style="font-family:宋体"}[1000]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[count*]：表示Hello报文的失效数目，取值范围为2～1000。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1439058572}
+【使用指导】
 
-[[Hello]{lang="EN-US"}]{#struct_0_x1068_x9952_1696522746}[报文的发送间隔与失效数目的乘积为]{style="font-family:宋体"}[邻接关系保持时间，即]{style="font-family:宋体"}[RB]{lang="EN-US"}[监测到链路失效并进行路由重计算的时间。]{style="font-family:宋体"}[RB]{lang="EN-US"}[通过]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文将邻接关系保持时间通知给其邻居，若该邻居在邻接关系保持时间内未收到此报文，便宣告邻接关系失效。]{style="font-family:宋体"}
+Hello报文的发送间隔与失效数目的乘积为邻接关系保持时间，即RB监测到链路失效并进行路由重计算的时间。RB通过Hello报文将邻接关系保持时间通知给其邻居，若该邻居在邻接关系保持时间内未收到此报文，便宣告邻接关系失效。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x1225367811}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Hello]{lang="EN-US"}]{#struct_0_x1068_x9952_1719693007}[报文的发送间隔与失效数目的乘积不允许超过]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+·Hello报文的发送间隔与失效数目的乘积不允许超过65535。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[二层以太网接口视图下的配置只对当前端口生效；二层聚合接口视图下的配置对当前接口及其成员端口均生效；聚合成员端口上的配置，只有当成员端口退出聚合组后才能生效。]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x1574721775}
+·二层以太网接口视图下的配置只对当前端口生效；二层聚合接口视图下的配置对当前接口及其成员端口均生效；聚合成员端口上的配置，只有当成员端口退出聚合组后才能生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x31309141}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x529048291}[在端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的失效数目为]{style="font-family:宋体"}[6]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在端口GigabitEthernet1/0/1上配置Hello报文的失效数目为6。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_1609672004}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] trill timer holding-multiplier 6]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 trill timer holding-multiplier 6
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_59652721}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[trill]{lang="EN-US"}**[ **timer** **hello**]{lang="EN-US"}]{#struct_0_x1068_x9952_x1642517309}
-:::
-
-::: {#-765547089 .myid}
-[]{#_Toc404798011}[]{#struct_0_x1068_x9952_x1698051954}
+·**trill** **timer** **hello**
 
 **TRILL \-- TRILL配置命令 \-- trill timer lsp**
 
 ------------------------------------------------------------------------
 
-[**[trill]{lang="EN-US"}**[ **timer** **lsp**]{lang="EN-US"}]{#struct_0_x1068_x9952_x277718797}[命令用来配置]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最小发送间隔和一次发送的最大数目。]{style="font-family:宋体"}
+**[trill** **timer** **lsp**]命令用来配置LSP的最小发送间隔和一次发送的最大数目。
 
-[**[undo]{lang="EN-US"}**[ **trill** **timer** **lsp**]{lang="EN-US"}]{#struct_0_x1068_x9952_1807375827}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **trill** **timer** **lsp**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x31243605}
+【命令】
 
-[**[trill]{lang="EN-US"}**[ **timer** **lsp** *interval* \[ **count** *count* \]]{lang="EN-US"}]{#struct_0_x1068_x9952_1826929622}
+**[trill** **timer** **lsp** *interval* [ **count** *count* ]]
 
-[**[undo]{lang="EN-US"}**[ **trill** ]{lang="EN-US"}**[timer]{lang="EN-US"}**[ **lsp**]{lang="EN-US"}]{#struct_0_x1068_x9952_403983402}
+**[undo** **trill** **timer** **lsp**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_330705986}
+【缺省情况】
 
-[[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_1012217045}[的最小发送间隔为]{style="font-family:宋体"}[10]{lang="EN-US"}[毫秒，一次发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最大数目为]{style="font-family:宋体"}[5]{lang="EN-US"}[个。]{style="font-family:宋体"}
+LSP的最小发送间隔为10毫秒，一次发送LSP的最大数目为5个。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x542017018}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1068_x9952_x2102933149}[二层聚合接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_782624151}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_2002751154}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x31833428}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x553933648}
+【参数】
 
-[*[interval]{lang="EN-US"}*]{#struct_0_x1068_x9952_1534498072}[：表示]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最小发送间隔，取值范围为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[1000]{lang="EN-US"}[，步长为]{style="font-family:宋体"}[10]{lang="EN-US"}[，单位为毫秒。]{style="font-family:宋体"}
+*[interval*]：表示LSP的最小发送间隔，取值范围为10～1000，步长为10，单位为毫秒。
 
-[*[count]{lang="EN-US"}*]{#struct_0_x1068_x9952_851294573}[：表示一次发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最大数目，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1000]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[count*]：表示一次发送LSP的最大数目，取值范围为1～1000。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_2089581992}
+【使用指导】
 
-[[为了避免网络中的]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x1068_x9952_1801379750}[老化太频繁，]{style="font-family:宋体"}[RB]{lang="EN-US"}[需要定期发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}[，以使全网]{style="font-family:宋体"}[RB]{lang="EN-US"}[上的]{style="font-family:宋体"}[LSDB]{lang="EN-US"}[和路由计算保持稳定有效。]{style="font-family:宋体"}
+为了避免网络中的LSP老化太频繁，RB需要定期发送LSP，以使全网RB上的LSDB和路由计算保持稳定有效。
 
-[[需要注意的是，二层以太网接口视图下的配置只对当前端口生效；二层聚合接口视图下的配置对当前接口及其成员端口均生效；聚合成员端口上的配置，只有当成员端口退出聚合组后才能生效。]{style="font-family:宋体"}]{#struct_0_x1068_x9952_1093614973}
+需要注意的是，二层以太网接口视图下的配置只对当前端口生效；二层聚合接口视图下的配置对当前接口及其成员端口均生效；聚合成员端口上的配置，只有当成员端口退出聚合组后才能生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1474680112}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x31767892}[在端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最小发送间隔为]{style="font-family:宋体"}[500]{lang="EN-US"}[毫秒，一次发送]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的最大数目为]{style="font-family:宋体"}[10]{lang="EN-US"}[个。]{style="font-family:宋体"}
+\# 在端口GigabitEthernet1/0/1上配置LSP的最小发送间隔为500毫秒，一次发送LSP的最大数目为10个。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_1539274677}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] trill timer lsp 500 count 10]{lang="NO-BOK"}
-:::
-
-::: {#923477696 .myid}
-[]{#_Toc404798012}[]{#struct_0_x1068_x9952_x1071517797}[]{#_Toc386113421}[]{#_Toc385854419}[]{#_Toc379615171}[]{#_Toc379555239}[]{#_Toc378607611}
+Sysname-GigabitEthernet1/0/1 trill timer lsp 500 count 10
 
 **TRILL \-- TRILL配置命令 \-- trill track**
 
 ------------------------------------------------------------------------
 
-[**[trill]{lang="EN-US"}**[ **track**]{lang="EN-US"}]{#struct_0_x1068_x9952_604836132}[命令用来配置]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[监测的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项。]{style="font-family:宋体"}
+**[trill** **track**]命令用来配置TRILL监测的Track项。
 
-[**[undo]{lang="EN-US"}**[ **trill** **track**]{lang="EN-US"}]{#struct_0_x1068_x9952_665426507}[命令用来取消]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[监测的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项。]{style="font-family:宋体"}
+**[undo** **trill** **track**]命令用来取消TRILL监测的Track项。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x448479161}
+【命令】
 
-[**[trill]{lang="EN-US"}**[ **track**]{lang="EN-US"}[ *track-entry-number*]{lang="EN-US"}]{#struct_0_x1068_x9952_1136995015}
+**[trill** **track** *track-entry-number*]
 
-[**[undo]{lang="EN-US"}**[ **trill** **track**]{lang="EN-US"}]{#struct_0_x1068_x9952_286772462}
+**[undo** **trill** **track**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1867782554}
+【缺省情况】
 
-[[TRILL]{lang="EN-US"}]{#struct_0_x1068_x9952_x1232585562}[未监测任何]{style="font-family:宋体"}[Track]{lang="EN-US"}[项。]{style="font-family:宋体"}
+TRILL未监测任何Track项。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_827523908}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1068_x9952_x1993394841}[二层聚合接口视图]{style="font-family:宋体"}
+二层以太网接口视图/二层聚合接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1657365558}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1797578287}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x788876487}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1142083925}
+【参数】
 
-[*[track-entry-number]{lang="EN-US"}*]{#struct_0_x1068_x9952_x398554998}[：表示]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的序号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1024]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[track-entry-number*]：表示Track项的序号，取值范围为1～1024。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1967061115}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_866830438}[在]{style="font-family:宋体"}[端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上]{style="font-family:宋体"}[配置]{style="font-family:宋体"}[TRILL]{lang="EN-US"}[监测]{style="font-family:宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[10]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在端口GigabitEthernet1/0/1上配置TRILL监测Track项10。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_x435404759}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] trill track 10]{lang="EN-US"}
-:::
-
-::: {#1784025601 .myid}
-[]{#_Toc350777203}[]{#_Toc350774958}[]{#_Toc404798013}[]{#struct_0_x1068_x9952_973739774}[]{#_Toc350777204}[]{#_Toc350774959}
+Sysname-GigabitEthernet1/0/1 trill track 10
 
 **TRILL \-- TRILL配置命令 \-- trill vr ipv6 vrid**
 
 ------------------------------------------------------------------------
 
-[**[trill]{lang="EN-US"}**[ **vr** **ipv6** ]{lang="EN-US"}]{#struct_0_x1068_x9952_x1644833416}**[vrid]{lang="EN-US"}**[命令用来创建]{style="font-family:宋体"}[IPv6 TRILL VR]{lang="EN-US"}[并为其配置]{style="font-family:宋体"}[虚拟]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[trill** **vr** **ipv6** ]**vrid**命令用来创建IPv6 TRILL VR并为其配置虚拟IPv6地址。
 
-[**[undo]{lang="EN-US"}**[ **trill** **vr** **ipv6** ]{lang="EN-US"}]{#struct_0_x1068_x9952_973805310}**[vrid]{lang="EN-US"}**[命令用来删除指定的]{style="font-family:宋体"}[IPv6 TRILL VR]{lang="EN-US"}[，或为其删除一个]{style="font-family:宋体"}[虚拟]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo** **trill** **vr** **ipv6** ]**vrid**命令用来删除指定的IPv6 TRILL VR，或为其删除一个虚拟IPv6地址。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1998235453}
+【命令】
 
-[**[trill]{lang="EN-US"}**[ **vr** **ipv6** **vrid** *vr-id* **virtual-ip** *virtual-address* \[ **link-local** \]]{lang="EN-US"}]{#struct_0_x1068_x9952_x456935741}
+**[trill** **vr** **ipv6** **vrid** *vr-id* **virtual-ip** *virtual-address* [ **link-local** ]]
 
-[**[undo]{lang="EN-US"}**[ **trill** **vr** **ipv6** **vrid** *vr-id* **virtual-ip** \[ *virtual-address* \[ **link-local** \] \]]{lang="EN-US"}]{#struct_0_x1068_x9952_x863392797}
+**[undo** **trill** **vr** **ipv6** **vrid** *vr-id* **virtual-ip** [ *virtual-address* [ **link-local**  ]]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x615118302}
+【缺省情况】
 
-[[不存在任何]{style="font-family:宋体"}[IPv6 TRILL VR]{lang="EN-US"}]{#struct_0_x1068_x9952_973870846}[。]{style="font-family:宋体"}
+不存在任何IPv6 TRILL VR。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_828037043}
+【视图】
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1068_x9952_1096061273}[接口视图]{style="font-family:宋体"}
+VLAN接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1756619799}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1466324244}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_1828791895}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_973936382}
+【参数】
 
-[*[vr-id]{lang="EN-US"}*]{#struct_0_x1068_x9952_1970776030}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[VR]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[vr-id*]：表示VR的编号，取值范围为1～255。
 
-[*[virtual-address]{lang="EN-US"}*]{#struct_0_x1068_x9952_x609554357}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[VR]{lang="EN-US"}[的虚拟]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址，必须为]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[链路本地地址或]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[全球单播地址。如果未指定本参数，表示删除该]{style="font-family:宋体"}[VR]{lang="EN-US"}[中的所有虚拟]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[virtual-address*]：表示VR的虚拟IPv6地址，必须为IPv6链路本地地址或IPv6全球单播地址。如果未指定本参数，表示删除该VR中的所有虚拟IPv6地址。
 
-[**[link-local]{lang="EN-US"}**]{#struct_0_x1068_x9952_1587856305}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[链路本地地址。当虚拟]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址为]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[链路本地地址时，必须指定本参数；当虚拟]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址为]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[全球单播地址，则不得指定本参数，否则系统都将提示出错。]{style="font-family:宋体"}
+**[link-local**]：表示IPv6链路本地地址。当虚拟IPv6地址为IPv6链路本地地址时，必须指定本参数；当虚拟IPv6地址为IPv6全球单播地址，则不得指定本参数，否则系统都将提示出错。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1545166751}
+【使用指导】
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x78356742}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[使用]{lang="EN-US" style="font-family:宋体"}**[trill]{lang="EN-US"}**[ **vr** **ipv6** ]{lang="EN-US"}]{#struct_0_x1068_x9952_x657815529}**[vrid]{lang="EN-US"}**[命令时，]{lang="EN-US" style="font-family:宋体"}[如果指定编号的]{lang="EN-US" style="font-family:宋体"}[IPv6 TRILL VR]{lang="EN-US"}[不存在，则创建一个新的]{lang="EN-US" style="font-family:宋体"}[IPv6 TRILL VR]{lang="EN-US"}[；如果指定编号的]{lang="EN-US" style="font-family:宋体"}[IPv6 TRILL VR]{lang="EN-US"}[已存在，则为其]{lang="EN-US" style="font-family:宋体"}[更新或]{style="font-family:宋体"}[添加一个]{lang="EN-US" style="font-family:宋体"}[虚拟]{lang="EN-US" style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址]{lang="EN-US" style="font-family:宋体"}[（对于]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[链路本地地址]{lang="EN-US" style="font-family:宋体"}[是更新，对于]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[全球单播地址]{lang="EN-US" style="font-family:宋体"}[是添加）]{style="font-family:宋体"}[。]{lang="EN-US" style="font-family:宋体"}
+·使用**trill** **vr** **ipv6** **vrid**命令时，如果指定编号的IPv6 TRILL VR不存在，则创建一个新的IPv6 TRILL VR；如果指定编号的IPv6 TRILL VR已存在，则为其更新或添加一个虚拟IPv6地址（对于IPv6链路本地地址是更新，对于IPv6全球单播地址是添加）。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在一个]{style="font-family:宋体"}]{#struct_0_x1068_x9952_974001918}[VLAN]{lang="EN-US"}[接口上必须且只能]{style="font-family:宋体"}[为一个]{style="font-family:宋体"}[VR]{lang="EN-US"}[配置一个]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[链路本地地址；]{style="font-family:宋体"}[为]{style="font-family:宋体"}[VR]{lang="EN-US"}[配置的第一个虚拟]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址必须为]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[链路本地地址，且]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[链路本地地址必须被最后一个删除。否则，系统都将提示出错。]{style="font-family:宋体"}
+·在一个VLAN接口上必须且只能为一个VR配置一个IPv6链路本地地址；为VR配置的第一个虚拟IPv6地址必须为IPv6链路本地地址，且IPv6链路本地地址必须被最后一个删除。否则，系统都将提示出错。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在一个]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}]{#struct_0_x1068_x9952_x624592168}[接口上最多可配置]{lang="EN-US" style="font-family:宋体"}[4]{lang="EN-US"}[个]{lang="EN-US" style="font-family:宋体"}[IPv6 TRILL VR]{lang="EN-US"}[，且所有]{lang="EN-US" style="font-family:宋体"}[IPv6 TRILL VR]{lang="EN-US"}[的虚拟]{lang="EN-US" style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址总数不得超过]{lang="EN-US" style="font-family:宋体"}[16]{lang="EN-US"}[个。]{lang="EN-US" style="font-family:宋体"}
+·在一个VLAN接口上最多可配置4个IPv6 TRILL VR，且所有IPv6 TRILL VR的虚拟IPv6地址总数不得超过16个。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1531712908}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_1487617533}[在接口]{style="font-family:宋体"}[Vlan-interface2]{lang="EN-US"}[上]{style="font-family:宋体"}[先创建]{style="font-family:宋体"}[IPv6 ]{lang="EN-US"}[TRILL VR]{lang="EN-US"}[ 2]{lang="EN-US"}[并为其配置]{style="font-family:宋体"}[虚拟]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址]{style="font-family:宋体"}[FE80::1]{lang="EN-US"}[，然后再为其]{style="font-family:宋体"}[添加一个虚拟]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址]{style="font-family:宋体"}[1::1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在接口Vlan-interface2上先创建IPv6 TRILL VR 2并为其配置虚拟IPv6地址FE80::1，然后再为其添加一个虚拟IPv6地址1::1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_974067454}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 2]{lang="EN-US"}
+Sysname interface vlan-interface 2
 
-[\[Sysname-Vlan-interface2\] trill vr ipv6 vrid 2 virtual-ip fe80::1 link-local]{lang="EN-US"}
+Sysname-Vlan-interface2 trill vr ipv6 vrid 2 virtual-ip fe80::1 link-local
 
-[\[Sysname-Vlan-interface2\] trill vr ipv6 vrid 2 virtual-ip 1::1]{lang="EN-US"}
-:::
-
-::: {#1471538856 .myid}
-[]{#_Toc404798014}[]{#struct_0_x1068_x9952_1776979659}
+Sysname-Vlan-interface2 trill vr ipv6 vrid 2 virtual-ip 1::1
 
 **TRILL \-- TRILL配置命令 \-- trill vr vrid**
 
 ------------------------------------------------------------------------
 
-[**[trill]{lang="EN-US"}**[ **vr** ]{lang="EN-US"}]{#struct_0_x1068_x9952_x1879041425}**[vrid]{lang="EN-US"}**[命令用来创建]{style="font-family:宋体"}[IPv4 TRILL VR]{lang="EN-US"}[并为其配置]{style="font-family:宋体"}[虚拟]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[trill** **vr** ]**vrid**命令用来创建IPv4 TRILL VR并为其配置虚拟IPv4地址。
 
-[**[undo]{lang="EN-US"}**[ **trill** **vr** **vrid**]{lang="EN-US"}]{#struct_0_x1068_x9952_464217546}[命令用来删除指定的]{style="font-family:宋体"}[IPv4 TRILL VR]{lang="EN-US"}[，或为其删除一个]{style="font-family:宋体"}[虚拟]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo** **trill** **vr** **vrid**]命令用来删除指定的IPv4 TRILL VR，或为其删除一个虚拟IPv4地址。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1619930978}
+【命令】
 
-[**[trill]{lang="EN-US"}**[ **vr** **vrid** *vr-id* **virtual-ip** *virtual-address*]{lang="EN-US"}]{#struct_0_x1068_x9952_x412130052}
+**[trill** **vr** **vrid** *vr-id* **virtual-ip** *virtual-address*]
 
-[**[undo]{lang="EN-US"}**[ **trill** **vr** **vrid** *vr-id* **virtual-ip** \[ *virtual-address* \]]{lang="EN-US"}]{#struct_0_x1068_x9952_974132990}
+**[undo** **trill** **vr** **vrid** *vr-id* **virtual-ip** [ *virtual-address* ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1754432653}
+【缺省情况】
 
-[[不存在任何]{style="font-family:宋体"}[IPv4 TRILL VR]{lang="EN-US"}]{#struct_0_x1068_x9952_547815953}[。]{style="font-family:宋体"}
+不存在任何IPv4 TRILL VR。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x475985296}
+【视图】
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1068_x9952_900686014}[接口视图]{style="font-family:宋体"}
+VLAN接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1714535810}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_974198526}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x164297477}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1597001944}
+【参数】
 
-[*[vr-id]{lang="EN-US"}*]{#struct_0_x1068_x9952_866378773}[：表示]{style="font-family:宋体"}[VR]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[vr-id*]：表示VR的编号，取值范围为1～255。
 
-[*[virtual-address]{lang="EN-US"}*]{#struct_0_x1068_x9952_x823288435}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[VR]{lang="EN-US"}[的虚拟]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址，必须为合法的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址（]{style="font-family:宋体"}[A]{lang="EN-US"}[、]{style="font-family:宋体"}[B]{lang="EN-US"}[、]{style="font-family:
-宋体"}[C]{lang="EN-US"}[类地址，不包括全零、广播和环回地址）。如果未指定本参数，表示删除该]{style="font-family:宋体"}[VR]{lang="EN-US"}[中的所有虚拟]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[virtual-address*]：表示VR的虚拟IPv4地址，必须为合法的IPv4地址（A、B、C类地址，不包括全零、广播和环回地址）。如果未指定本参数，表示删除该VR中的所有虚拟IPv4地址。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1857856907}
+【使用指导】
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x1068_x9952_1497784059}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[使用]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x2022872985}**[trill]{lang="EN-US"}**[ **vr** ]{lang="EN-US"}**[vrid]{lang="EN-US"}**[命令时，]{style="font-family:宋体"}[如果指定编号的]{style="font-family:宋体"}[IPv4 TRILL VR]{lang="EN-US"}[不存在，则创建一个新的]{style="font-family:宋体"}[IPv4 TRILL]{lang="EN-US"}[ VR]{lang="EN-US"}[；如果指定编号的]{style="font-family:
-宋体"}[IPv4 TRILL ]{lang="EN-US"}[VR]{lang="EN-US"}[已存在，则为其添加一个]{style="font-family:宋体"}[虚拟]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+·使用**trill** **vr** **vrid**命令时，如果指定编号的IPv4 TRILL VR不存在，则创建一个新的IPv4 TRILL VR；如果指定编号的IPv4 TRILL VR已存在，则为其添加一个虚拟IPv4地址。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-font-family:Symbol"}[一个]{style="font-family:宋体"}]{#struct_0_x1068_x9952_974264062}[VLAN]{lang="EN-US"}[接口上最多可配置]{style="font-family:宋体"}[4]{lang="EN-US"}[个]{style="font-family:宋体"}[IPv4 TRILL VR]{lang="EN-US"}[，且所有]{style="font-family:宋体"}[IPv4 TRILL]{lang="EN-US"}[ VR]{lang="EN-US"}[的虚拟]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址总数不得超过]{style="font-family:宋体"}[16]{lang="EN-US"}[个。]{style="font-family:宋体"}
+·一个VLAN接口上最多可配置4个IPv4 TRILL VR，且所有IPv4 TRILL VR的虚拟IPv4地址总数不得超过16个。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1874435783}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_x2052925509}[在接口]{style="font-family:宋体"}[Vlan-interface2]{lang="EN-US"}[上]{style="font-family:宋体"}[先创建]{style="font-family:宋体"}[IPv4 ]{lang="EN-US"}[TRILL]{lang="EN-US"}[ ]{lang="EN-US" style="font-family:宋体"}[VR]{lang="EN-US"}[ 1]{lang="EN-US"}[并为其配置]{style="font-family:宋体"}[虚拟]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址]{style="font-family:宋体"}[10.1.1.1]{lang="EN-US"}[，然后再为其]{style="font-family:宋体"}[添加一个虚拟]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址]{style="font-family:宋体"}[10.1.1.2]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在接口Vlan-interface2上先创建IPv4 TRILLVR 1并为其配置虚拟IPv4地址10.1.1.1，然后再为其添加一个虚拟IPv4地址10.1.1.2。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_1662458884}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 2]{lang="EN-US"}
+Sysname interface vlan-interface 2
 
-[\[Sysname-Vlan-interface2\] trill vr vrid 1 virtual-ip 10.1.1.1]{lang="EN-US"}
+Sysname-Vlan-interface2 trill vr vrid 1 virtual-ip 10.1.1.1
 
-[\[Sysname-Vlan-interface2\] trill vr vrid 1 virtual-ip 10.1.1.2]{lang="EN-US"}
-:::
-
-::: {#2083220729 .myid}
-[]{#_Toc404798015}[]{#struct_0_x1068_x9952_863415927}[]{#_Toc350777205}
+Sysname-Vlan-interface2 trill vr vrid 1 virtual-ip 10.1.1.2
 
 **TRILL \-- TRILL配置命令 \-- trill vr vrid track**
 
 ------------------------------------------------------------------------
 
-[**[trill]{lang="EN-US"}**[ **vr** **vrid** **track**]{lang="EN-US"}]{#struct_0_x1068_x9952_973674239}[命令用来配置]{style="font-family:宋体"}[TRILL VR]{lang="EN-US"}[监测的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项。]{style="font-family:宋体"}
+**[trill** **vr** **vrid** **track**]命令用来配置TRILL VR监测的Track项。
 
-[**[undo]{lang="EN-US"}**[ **trill** **vr** **vrid** **track**]{lang="EN-US"}]{#struct_0_x1068_x9952_218569742}[命令用来取消]{style="font-family:宋体"}[TRILL VR]{lang="EN-US"}[监测的]{style="font-family:宋体"}[Track]{lang="EN-US"}[项。]{style="font-family:宋体"}
+**[undo** **trill** **vr** **vrid** **track**]命令用来取消TRILL VR监测的Track项。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x837629694}
+【命令】
 
-[**[trill]{lang="EN-US"}**[ **vr** \[ **ipv6** \] **vrid**]{lang="EN-US"}[ *vr-id* **track** *track-entry-number*]{lang="EN-US"}]{#struct_0_x1068_x9952_x964750567}
+**[trill** **vr** [ **ipv6**  **vrid**] *vr-id* **track** *track-entry-number*]
 
-[**[undo]{lang="EN-US"}**[ **trill** **vr** \[ **ipv6** \] **vrid**]{lang="EN-US"}[ *vr-id* **track** \[ *track-entry-number* \]]{lang="EN-US"}]{#struct_0_x1068_x9952_x1767562907}
+**[undo** **trill** **vr** [ **ipv6**  **vrid**] *vr-id* **track** [ *track-entry-number* ]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1727027532}
+【缺省情况】
 
-[[TRILL VR]{lang="EN-US"}]{#struct_0_x1068_x9952_973739775}[未监测任何]{style="font-family:宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+TRILL VR未监测任何Track项。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x1644833417}
+【视图】
 
-[[VLAN]{lang="EN-US"}]{#struct_0_x1068_x9952_x284245405}[接口视图]{style="font-family:宋体"}
+VLAN接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_x378172593}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_x599725269}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1068_x9952_690848794}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_973805311}
+【参数】
 
-[**[ipv6]{lang="EN-US"}**]{#struct_0_x1068_x9952_1998235454}[：表示]{style="font-family:宋体"}[IPv6 TRILL VR]{lang="EN-US"}[。如果未指定本参数，表示]{style="font-family:宋体"}[IPv4 TRILL VR]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[ipv6**]：表示IPv6 TRILL VR。如果未指定本参数，表示IPv4 TRILL VR。
 
-[*[vr-id]{lang="EN-US"}*]{#struct_0_x1068_x9952_x456476989}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[VR]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[vr-id*]：表示VR的编号，取值范围为1～255。
 
-[*[track-entry-number]{lang="EN-US"}*]{#struct_0_x1068_x9952_x1965541649}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[Track]{lang="EN-US"}[项的编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[1024]{lang="EN-US"}[。如果未指定本参数，表示取消监测所有]{style="font-family:宋体"}[Track]{lang="EN-US"}[项。]{style="font-family:宋体"}
+*[track-entry-number*]：表示Track项的编号，取值范围为1～1024。如果未指定本参数，表示取消监测所有Track项。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_1322735389}
+【使用指导】
 
-[[需要注意的是，如果]{style="font-family:宋体"}]{#struct_0_x1068_x9952_x2093427290}[当前接口下不存在指定的]{style="font-family:宋体"}[TRILL VR]{lang="EN-US"}[，或一个]{style="font-family:宋体"}[VR]{lang="EN-US"}[监测]{style="font-family:宋体"}[了超过]{style="font-family:宋体"}[8]{lang="EN-US"}[个]{style="font-family:宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[，均将导致配置失败。]{style="font-family:宋体"}
+需要注意的是，如果当前接口下不存在指定的TRILL VR，或一个VR监测了超过8个Track项，均将导致配置失败。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1068_x9952_973870847}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_828037042}[在]{style="font-family:宋体"}[接口]{style="font-family:宋体"}[Vlan-interface2]{lang="EN-US"}[上]{style="font-family:宋体"}[配置]{style="font-family:宋体"}[IPv4 TRILL VR 1]{lang="EN-US"}[监测]{style="font-family:宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[8]{lang="EN-US"}[。]{style="font-family:
-宋体"}
+\# 在接口Vlan-interface2上配置IPv4 TRILL VR 1监测Track项8。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_1096061274}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 2]{lang="EN-US"}
+Sysname interface vlan-interface 2
 
-[\[Sysname-Vlan-interface2\] trill vr vrid 1 track 8]{lang="EN-US"}
+Sysname-Vlan-interface2 trill vr vrid 1 track 8
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1068_x9952_1756292119}[在]{style="font-family:宋体"}[接口]{style="font-family:宋体"}[Vlan-interface2]{lang="EN-US"}[上]{style="font-family:宋体"}[配置]{style="font-family:宋体"}[IPv6 TRILL VR 2]{lang="EN-US"}[监测]{style="font-family:宋体"}[Track]{lang="EN-US"}[项]{style="font-family:宋体"}[9]{lang="EN-US"}[。]{style="font-family:
-宋体"}
+\# 在接口Vlan-interface2上配置IPv6 TRILL VR 2监测Track项9。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1068_x9952_973936383}
+\<Sysname\> system-view
 
-[\[Sysname\] interface vlan-interface 2]{lang="EN-US"}
+Sysname interface vlan-interface 2
 
-[\[Sysname-Vlan-interface2\] trill vr ipv6 vrid 2 track 9]{lang="EN-US"}
-:::
+Sysname-Vlan-interface2 trill vr ipv6 vrid 2 track 9

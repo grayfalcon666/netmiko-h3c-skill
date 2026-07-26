@@ -1,838 +1,786 @@
-::: {#463035767 .myid}
-[]{#_Toc404784415}[]{#struct_0_36352_15676_406296200}
 
 **生成树 \-- 生成树调试命令 \-- debugging stp all**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_36352_15676_575637938}
+【命令】
 
-[**[debugging stp]{lang="EN-US"}**[ **all**]{lang="EN-US"}]{#struct_0_36352_15676_689259636}
+**[debugging stp** **all**]
 
-[**[undo debugging stp all]{lang="EN-US"}**]{#struct_0_36352_15676_x607575149}
+**[undo debugging stp all**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_36352_15676_x954976179}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_36352_15676_x135448761}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_36352_15676_741967729}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_36352_15676_1478057739}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_36352_15676_x1310163953}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_36352_15676_784085094}
+【参数】
 
-[[无]{style="font-family:宋体"}]{#struct_0_36352_15676_191310684}
+无
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_36352_15676_575703474}
+【描述】
 
-[**[debugging stp all]{lang="EN-US"}**]{#struct_0_36352_15676_x382713444}[命令用来打开生成树的所有调试信息开关。]{style="font-family:宋体"}**[undo debugging stp all]{lang="EN-US"}**[命令用来关闭生成树的所有调试信息开关。]{style="font-family:宋体"}
+**[debugging stp all**]命令用来打开生成树的所有调试信息开关。**undo debugging stp all**命令用来关闭生成树的所有调试信息开关。
 
-[[缺省情况下，生成树的所有调试信息开关处于关闭状态。]{style="font-family:宋体"}]{#struct_0_36352_15676_x1576152978}
+缺省情况下，生成树的所有调试信息开关处于关闭状态。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_36352_15676_1696914735}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_36352_15676_906963442}[打开生成树的]{style="font-family:宋体"}[所有调试信息开关。]{style="font-family:宋体"}
+\# 打开生成树的所有调试信息开关。
 
-[[\<Sysname\> debugging stp all]{lang="EN-US"}]{#struct_0_36352_15676_x1946336356}
-:::
-
-::: {#-91971325 .myid}
-[]{#_Toc127096848}[]{#_Toc404784416}[]{#struct_0_36352_15676_1325256858}
+\<Sysname\> debugging stp all
 
 **生成树 \-- 生成树调试命令 \-- debugging stp error**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_36352_15676_1743866607}
+【命令】
 
-[**[debugging stp]{lang="EN-US"}**[ **error**]{lang="EN-US"}]{#struct_0_36352_15676_473007915}
+**[debugging stp** **error**]
 
-[**[undo debugging stp error]{lang="EN-US"}**]{#struct_0_36352_15676_x214093745}
+**[undo debugging stp error**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_36352_15676_575769010}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_36352_15676_x1183443758}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_36352_15676_x2093473304}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_36352_15676_x894783662}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_36352_15676_851560565}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_36352_15676_x1971553193}
+【参数】
 
-[[无]{style="font-family:宋体"}]{#struct_0_36352_15676_x1103461595}
+无
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_36352_15676_35323343}
+【描述】
 
-[]{#OLE_LINK1}[**[debugging stp]{lang="EN-US"}[ error]{lang="EN-US"}**]{#struct_0_36352_15676_721957551}[命令用来打开生成树错误调试信息开关。]{style="font-family:宋体"}**[undo debugging stp]{lang="EN-US"}[ error]{lang="EN-US"}**[命令用来关闭生成树错误调试信息开关。]{style="font-family:宋体"}
+**[debugging stp error**]命令用来打开生成树错误调试信息开关。**undo debugging stp error**命令用来关闭生成树错误调试信息开关。
 
-[[缺省情况下，生成树错误调试信息开关处于关闭状态。]{style="font-family:宋体"}]{#struct_0_36352_15676_x710719282}
+缺省情况下，生成树错误调试信息开关处于关闭状态。
 
-[[表1-1 ]{lang="EN-US"}[debugging stp error]{lang="EN-US"}]{#struct_0_36352_15676_575834546}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging stp error命令输出信息描述表
 
-[]{#table_struct_0_1560423342}[[字段]{style="font-family:黑体"}]{#struct_0_36352_15676_x578695902}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_36352_15676_x33988463}
+描述
 
-[[Failed to *String1* the STP *String2* configuration database]{lang="EN-US"}]{#struct_0_36352_15676_x419295060}
+Failed to *String1* the STP *String2* configuration database
 
-[[对]{lang="EN-US" style="font-family:宋体"}]{#struct_0_36352_15676_x2059128890}[STP]{lang="EN-US"}[配置数据库进行]{lang="EN-US" style="font-family:宋体"}*[String]{lang="EN-US"}[1]{lang="EN-US"}*[操作失败]{lang="EN-US" style="font-family:宋体"}
+对STP配置数据库进行*String1*操作失败
 
-[*[String]{lang="EN-US"}*]{#struct_0_36352_15676_62768699}*[1]{lang="EN-US"}*[的具体取值包括：]{lang="EN-US" style="font-family:宋体"}
+*[String*]*1*的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[write]{lang="EN-US"}]{#struct_0_36352_15676_66978725}[：表示写]{lang="EN-US" style="font-family:宋体"}[操作]{style="font-family:宋体"}
+·write：表示写操作
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[read]{lang="EN-US"}]{#struct_0_36352_15676_x1967846662}[：表示读操作]{style="font-family:宋体"}
+·read：表示读操作
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[delete]{lang="EN-US"}]{#struct_0_36352_15676_62834235}[：表示删除操作]{style="font-family:宋体"}
+·delete：表示删除操作
 
-[*[String]{lang="EN-US"}*]{#struct_0_36352_15676_x1648954831}*[2]{lang="EN-US"}*[的具体取值包括：]{lang="EN-US" style="font-family:宋体"}
+*[String*]*2*的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[region]{lang="EN-US"}]{#struct_0_36352_15676_821099299}[：表示域配置]{lang="EN-US" style="font-family:宋体"}
+·region：表示域配置
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[global]{lang="EN-US"}]{#struct_0_36352_15676_63686203}[：表示全局配置]{lang="EN-US" style="font-family:宋体"}
+·global：表示全局配置
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VLAN ]{lang="EN-US"}]{#struct_0_36352_15676_1552040740}[I]{lang="EN-US"}[gnore]{lang="EN-US"}[：表示]{lang="EN-US" style="font-family:宋体"}[VLAN Ignore]{lang="EN-US"}[配置]{lang="EN-US" style="font-family:宋体"}
+·VLAN Ignore：表示VLAN Ignore配置
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[interface]{lang="EN-US"}]{#struct_0_36352_15676_1931355412}[：表示接口配置]{lang="EN-US" style="font-family:宋体"}
+·interface：表示接口配置
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[instance]{lang="EN-US"}]{#struct_0_36352_15676_63751739}[：表示实例配置]{lang="EN-US" style="font-family:宋体"}
+·instance：表示实例配置
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[instance]{lang="EN-US"}]{#struct_0_36352_15676_x321087233}[-]{lang="EN-US"}[on]{lang="EN-US"}[-]{lang="EN-US"}[interface]{lang="EN-US"}[：表示接口实例配置]{lang="EN-US" style="font-family:宋体"}
+·instance-on-interface：表示接口实例配置
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VLAN list]{lang="EN-US"}]{#struct_0_36352_15676_1535019994}[：表示]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[列表]{style="font-family:宋体"}[配置]{lang="EN-US" style="font-family:宋体"}
+·VLAN list：表示VLAN列表配置
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VLAN]{lang="EN-US"}]{#struct_0_36352_15676_63161914}[：表示]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[配置]{lang="EN-US" style="font-family:宋体"}
+·VLAN：表示VLAN配置
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VLAN-on-interface]{lang="EN-US"}]{#struct_0_36352_15676_x816087065}[：表示接口]{lang="EN-US" style="font-family:
-  宋体"}[VLAN]{lang="EN-US"}[配置]{lang="EN-US" style="font-family:宋体"}
+·VLAN-on-interface：表示接口VLAN配置
 
-[[Failed to move database(key *String*)]{lang="EN-US"}]{#struct_0_36352_15676_218980061}
+Failed to move database(key *String*)
 
-[[移动]{lang="EN-US" style="font-family:宋体"}[key]{lang="EN-US"}]{#struct_0_36352_15676_575900082}[为]{lang="EN-US" style="font-family:宋体"}*[String]{lang="EN-US"}*[的数据库失败*，*]{lang="EN-US" style="font-family:宋体"}*[String]{lang="EN-US"}*[的具体取值包括：]{lang="EN-US" style="font-family:宋体"}*[PortName]{lang="EN-US"}*
+移动key为*String*的数据库失败*，**String*的具体取值包括：*PortName*
 
-[[Failed to *String* the global *DataType* database]{lang="EN-US"}]{#struct_0_36352_15676_x1027468274}
+Failed to *String* the global *DataType* database
 
-[[对全局]{style="font-family:宋体"}[DataType]{lang="EN-US"}]{#struct_0_36352_15676_x1679958974}[数据库进行]{style="font-family:宋体"}[String]{lang="EN-US"}[操作失败]{style="font-family:宋体"}
+对全局DataType数据库进行String操作失败
 
-[[String]{lang="EN-US"}]{#struct_0_36352_15676_63096378}[的具体取值包括：]{style="font-family:宋体"}
+String的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[write]{lang="EN-US"}]{#struct_0_36352_15676_x1334325903}[：表示写]{lang="EN-US" style="font-family:宋体"}[操作]{style="font-family:宋体"}
+·write：表示写操作
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[read]{lang="EN-US"}]{#struct_0_36352_15676_62899770}[：表示]{lang="EN-US" style="font-family:宋体"}[读操作]{style="font-family:宋体"}
+·read：表示读操作
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[delete]{lang="EN-US"}]{#struct_0_36352_15676_x910900056}[：表示]{lang="EN-US" style="font-family:宋体"}[删除操作]{style="font-family:宋体"}
+·delete：表示删除操作
 
-[*[DataType]{lang="EN-US"}*]{#struct_0_36352_15676_62965306}[的具体取值包括：]{style="font-family:宋体"}
+*[DataType*]的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[control]{lang="EN-US"}]{#struct_0_36352_15676_561530886}[：表示]{lang="EN-US" style="font-family:宋体"}[控制数据]{style="font-family:宋体"}
+·control：表示控制数据
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[run]{lang="EN-US"}]{#struct_0_36352_15676_62768698}[：表示运行数据]{style="font-family:宋体"}
+·run：表示运行数据
 
-[[Failed to *String* the *DataType* database on instance *InstanceID*]{lang="EN-US"}]{#struct_0_36352_15676_202592582}
+Failed to *String* the *DataType* database on instance *InstanceID*
 
-[[对]{style="font-family:宋体"}[MSTI *InstanceID*]{lang="EN-US"}]{#struct_0_36352_15676_x641742781}[的]{style="font-family:宋体"}*[DataType]{lang="EN-US"}*[数据库进行]{style="font-family:宋体"}*[String]{lang="EN-US"}*[操作失败]{style="font-family:宋体"}
+对MSTI *InstanceID*的*DataType*数据库进行*String*操作失败
 
-[*[String]{lang="EN-US"}*]{#struct_0_36352_15676_62834234}[的具体取值包括：]{style="font-family:宋体"}
+*[String*]的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[write]{lang="EN-US"}]{#struct_0_36352_15676_575965618}[：表示写]{lang="EN-US" style="font-family:宋体"}[操作]{style="font-family:宋体"}
+·write：表示写操作
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[read]{lang="EN-US"}]{#struct_0_36352_15676_63686202}[：表示]{lang="EN-US" style="font-family:宋体"}[读操作]{style="font-family:宋体"}
+·read：表示读操作
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[delete]{lang="EN-US"}]{#struct_0_36352_15676_63751738}[：表示]{lang="EN-US" style="font-family:宋体"}[删除操作]{style="font-family:宋体"}
+·delete：表示删除操作
 
-[*[DataType]{lang="EN-US"}*]{#struct_0_36352_15676_2017564927}[的具体取值包括：]{style="font-family:宋体"}
+*[DataType*]的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[run]{lang="EN-US"}]{#struct_0_36352_15676_63161917}[：表示运行数据]{style="font-family:宋体"}
+·run：表示运行数据
 
-[[Failed to *String* the *DataType* database for port*PortID(PortName)*]{lang="EN-US"}]{#struct_0_36352_15676_195254568}
+Failed to *String* the *DataType* database for port*PortID(PortName)*
 
-[[对端口]{style="font-family:宋体"}*[PortID(PortName)]{lang="EN-US"}*]{#struct_0_36352_15676_x400040593}[的]{style="font-family:宋体"}*[DataType]{lang="EN-US"}*[数据库进行]{style="font-family:宋体"}*[String]{lang="EN-US"}*[操作失败]{style="font-family:宋体"}
+对端口*PortID(PortName)*的*DataType*数据库进行*String*操作失败
 
-[*[String]{lang="EN-US"}*]{#struct_0_36352_15676_63030845}[的具体取值包括：]{style="font-family:宋体"}
+*[String*]的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[write]{lang="EN-US"}]{#struct_0_36352_15676_751497333}[：表示写]{lang="EN-US" style="font-family:宋体"}[操作]{style="font-family:宋体"}
+·write：表示写操作
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[read]{lang="EN-US"}]{#struct_0_36352_15676_63096381}[：表示]{lang="EN-US" style="font-family:宋体"}[读操作]{style="font-family:宋体"}
+·read：表示读操作
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[delete]{lang="EN-US"}]{#struct_0_36352_15676_x755779558}[：表示]{lang="EN-US" style="font-family:宋体"}[删除操作]{style="font-family:宋体"}
+·delete：表示删除操作
 
-[*[DataType]{lang="EN-US"}*]{#struct_0_36352_15676_62899773}[的具体取值包括：]{style="font-family:宋体"}
+*[DataType*]的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[control]{lang="EN-US"}]{#struct_0_36352_15676_1427752104}[：表示]{lang="EN-US" style="font-family:宋体"}[控制数据]{style="font-family:宋体"}
+·control：表示控制数据
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[run]{lang="EN-US"}]{#struct_0_36352_15676_62965309}[：表示运行数据]{style="font-family:宋体"}
+·run：表示运行数据
 
-[[Failed to open database(name= *String*)]{lang="EN-US"}]{#struct_0_36352_15676_x1128886605}
+Failed to open database(name= *String*)
 
-[[打开数据库]{style="font-family:宋体"}*[String]{lang="EN-US"}*]{#struct_0_36352_15676_x528643657}[失败，]{style="font-family:宋体"}*[String]{lang="EN-US"}*[的具体取值包括：]{style="font-family:宋体"}
+打开数据库*String*失败，*String*的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[eSTP]{lang="EN-US"}]{#struct_0_36352_15676_574982578}[：表示生效配置数据库]{style="font-family:宋体"}
+·eSTP：表示生效配置数据库
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[lSTP]{lang="EN-US"}]{#struct_0_36352_15676_x1887841392}[：表示本地运行数据库]{style="font-family:宋体"}
+·lSTP：表示本地运行数据库
 
-[[Received a *String* BPDU with invalid length]{lang="EN-US"}]{#struct_0_36352_15676_308646691}
+Received a *String* BPDU with invalid length
 
-[[收到一个长度错误的]{style="font-family:宋体"}*[String]{lang="EN-US"}*]{#struct_0_36352_15676_473127081}[类型报文，]{style="font-family:宋体"}*[String]{lang="EN-US"}*[的具体取值包括：]{style="font-family:宋体"}
+收到一个长度错误的*String*类型报文，*String*的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[STP]{lang="EN-US"}]{#struct_0_36352_15676_x925433768}[：表示生成树]{lang="EN-US" style="font-family:宋体"}
+·STP：表示生成树
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RSTP]{lang="EN-US"}]{#struct_0_36352_15676_575048114}[：表示快速生成树]{lang="EN-US" style="font-family:宋体"}
+·RSTP：表示快速生成树
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PVST]{lang="EN-US"}]{#struct_0_36352_15676_63686205}[：表示]{lang="EN-US" style="font-family:宋体"}[每]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[生成树]{style="font-family:宋体"}
+·PVST：表示每VLAN生成树
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MSTP]{lang="EN-US"}]{#struct_0_36352_15676_x820207623}[：表示多实例生成树]{style="font-family:宋体"}
+·MSTP：表示多实例生成树
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TCN]{lang="EN-US"}]{#struct_0_36352_15676_86543385}[：表示拓扑变化通知消息]{style="font-family:宋体"}
+·TCN：表示拓扑变化通知消息
 
-[[The protocol type ID is wrong]{lang="EN-US"}]{#struct_0_36352_15676_x521225482}
+The protocol type ID is wrong
 
-[[报文类型错误]{style="font-family:宋体"}]{#struct_0_36352_15676_x895966500}
+报文类型错误
 
-[[The protocol version ID is wrong]{lang="EN-US"}]{#struct_0_36352_15676_575506867}
+The protocol version ID is wrong
 
-[[报文版本错误]{style="font-family:宋体"}]{#struct_0_36352_15676_x1932412701}
+报文版本错误
 
-[[Port *PortID(PortName)* received an error BPDU with *String*]{lang="EN-US"}]{#struct_0_36352_15676_1830584791}
+Port *PortID(PortName)* received an error BPDU with *String*
 
-[[端口]{style="font-family:宋体"}*[PortID(PortName)]{lang="EN-US"}*]{#struct_0_36352_15676_x145079787}[收到错误原因为]{style="font-family:宋体"}*[String]{lang="EN-US"}*[的报文，]{style="font-family:宋体"}*[String]{lang="EN-US"}*[的具体取值包括：]{style="font-family:宋体"}
+端口*PortID(PortName)*收到错误原因为*String*的报文，*String*的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[invalid BPDU length]{lang="EN-US"}]{#struct_0_36352_15676_575572403}[：表示错误的报文长度]{lang="EN-US" style="font-family:
-  宋体"}
+·invalid BPDU length：表示错误的报文长度
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[invalid ]{lang="EN-US"}]{#struct_0_36352_15676_x1457634748}[MSTI]{lang="EN-US"}[ ]{lang="EN-US"}[information]{lang="EN-US"}[：表示错误的多实例信息]{lang="EN-US" style="font-family:宋体"}
+·invalid MSTIinformation：表示错误的多实例信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[invalid RemainingHops of CIST]{lang="EN-US"}]{#struct_0_36352_15676_x709449047}[：表示]{lang="EN-US" style="font-family:宋体"}[CIST]{lang="EN-US"}[错误的剩余跳数]{lang="EN-US" style="font-family:宋体"}
+·invalid RemainingHops of CIST：表示CIST错误的剩余跳数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[invalid IntRootPathCost of CIST]{lang="EN-US"}]{#struct_0_36352_15676_x216069416}[：表示]{lang="EN-US" style="font-family:宋体"}[CIST]{lang="EN-US"}[错误的内部根路径开销]{lang="EN-US" style="font-family:宋体"}
+·invalid IntRootPathCost of CIST：表示CIST错误的内部根路径开销
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[retired root priority]{lang="EN-US"}]{#struct_0_36352_15676_575637939}[：表示过期的根优先级]{lang="EN-US" style="font-family:
-  宋体"}
+·retired root priority：表示过期的根优先级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[invalid Root]{lang="EN-US"}]{#struct_0_36352_15676_689259635}[：表示错误的总根]{lang="EN-US" style="font-family:宋体"}
+·invalid Root：表示错误的总根
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[invalid RegionRoot]{lang="EN-US"}]{#struct_0_36352_15676_x607575148}[：表示错误的域根]{lang="EN-US" style="font-family:
-  宋体"}
+·invalid RegionRoot：表示错误的域根
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[invalid ExtRootPathCost]{lang="EN-US"}]{#struct_0_36352_15676_x955041715}[：表示错误的外部路径开销]{lang="EN-US" style="font-family:宋体"}
+·invalid ExtRootPathCost：表示错误的外部路径开销
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[retired ]{lang="EN-US"}]{#struct_0_36352_15676_575703475}[MSTI]{lang="EN-US"}[ root priority]{lang="EN-US"}[：表示过期的多实例根优先级]{lang="EN-US" style="font-family:宋体"}
+·retired MSTI root priority：表示过期的多实例根优先级
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[invalid RootPathCost]{lang="EN-US"}]{#struct_0_36352_15676_62965308}[：表示]{lang="EN-US" style="font-family:
-  宋体"}[错误的根路径开销]{style="font-family:宋体"}
+·invalid RootPathCost：表示错误的根路径开销
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[invalid RemainingHops of ]{lang="EN-US"}]{#struct_0_36352_15676_x2114828282}[MSTI ]{lang="EN-US"}*[InstanceID]{lang="EN-US"}*[：表示错误的]{lang="EN-US" style="font-family:宋体"}[MSTI *InstanceID*]{lang="EN-US"}[剩余跳数]{lang="EN-US" style="font-family:
-  宋体"}
+·invalid RemainingHops of MSTI *InstanceID*：表示错误的MSTI *InstanceID*剩余跳数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[invalid IntRootPathCost of ]{lang="EN-US"}]{#struct_0_36352_15676_62768700}[MSTI ]{lang="EN-US"}*[InstanceID]{lang="EN-US"}*[：表示错误的]{lang="EN-US" style="font-family:宋体"}[MSTI *InstanceID*]{lang="EN-US"}[内部根路径开销]{lang="EN-US" style="font-family:
-  宋体"}
+·invalid IntRootPathCost of MSTI *InstanceID*：表示错误的MSTI *InstanceID*内部根路径开销
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Excess MessageAge]{lang="EN-US"}]{#struct_0_36352_15676_62834236}[：表示]{lang="EN-US" style="font-family:
-  宋体"}[M]{lang="EN-US"}[essage]{lang="EN-US"}[A]{lang="EN-US"}[ge]{lang="EN-US"}[值过大]{lang="EN-US" style="font-family:宋体"}
+·Excess MessageAge：表示MessageAge值过大
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Invalid HelloTime]{lang="EN-US"}]{#struct_0_36352_15676_x1297223995}[：表示]{style="font-family:宋体"}[HelloTime]{lang="EN-US"}[值无效]{style="font-family:宋体"}
+·Invalid HelloTime：表示HelloTime值无效
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Invalid FwdDelay]{lang="EN-US"}]{#struct_0_36352_15676_1476270908}[：表示]{style="font-family:宋体"}[FwdDelay]{lang="EN-US"}[值无效]{style="font-family:宋体"}
+·Invalid FwdDelay：表示FwdDelay值无效
 
-[[BPDU's length is less than TCN\'s length]{lang="EN-US"}]{#struct_0_36352_15676_x382713443}
+BPDU's length is less than TCN\'s length
 
-[[BPDU]{lang="EN-US"}]{#struct_0_36352_15676_x1576087442}[报文长度有误]{style="font-family:宋体"}
+BPDU报文长度有误
 
-[[Port *PortID(PortName)* failed to send packet]{lang="EN-US"}]{#struct_0_36352_15676_443435581}
+Port *PortID(PortName)* failed to send packet
 
-[[端口]{style="font-family:宋体"}*[PortID(PortName)]{lang="EN-US"}*]{#struct_0_36352_15676_575769011}[发送报文失败]{style="font-family:宋体"}
+端口*PortID(PortName)*发送报文失败
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_36352_15676_x1183443757}
+\# 打开生成树错误调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_36352_15676_x2140527471}[打开生成树错误调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging stp error
 
-[[\<Sysname\> debugging stp error]{lang="EN-US"}]{#struct_0_36352_15676_x1435694357}
+\*Mar 18 14:28:41:744 2010 Sysname STP/7/ERROR:Port2(GigabitEthernet1/0/1) received an error BPDU with invalid Root
 
-[\*Mar 18 14:28:41:744 2010 Sysname STP/7/ERROR:Port2(GigabitEthernet1/0/1) received an error BPDU with invalid Root]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_36352_15676_2021258467}*[端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[收到错误的]{style="font-family:宋体"}[BPDU]{lang="EN-US"}[报文，错误原因是报文中的根信息有误]{style="font-family:宋体"}*
-
-::: {#1250092364 .myid}
-[]{#_Toc404784417}[]{#struct_0_36352_15676_x462435345}
+*// 端口GigabitEthernet1/0/1收到错误的BPDU报文，错误原因是报文中的根信息有误*
 
 **生成树 \-- 生成树调试命令 \-- debugging stp event**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_36352_15676_2063820879}
+【命令】
 
-[**[debugging stp]{lang="EN-US"}**[ **event** \[ **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_36352_15676_575834547}
+**[debugging stp** **event** [ **interface** *interface-type interface-number* ]]
 
-[**[undo debugging stp]{lang="EN-US"}**[ **event** \[ **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_36352_15676_x578695903}
+**[undo debugging stp** **event** [ **interface** *interface-type interface-number* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_36352_15676_x34053999}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_36352_15676_x1872811349}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_36352_15676_x103786247}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_36352_15676_1059904183}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_36352_15676_2009813382}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_36352_15676_1247846862}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_36352_15676_x1633056974}[：打开或关闭指定端口的生成树事件调试信息开关，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[为端口类型和端口编号。如果未指定本参数，则打开或关闭全局事件调试开关，和所有端口的事件调试信息开关。]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：打开或关闭指定端口的生成树事件调试信息开关，*interface-type interface-number*为端口类型和端口编号。如果未指定本参数，则打开或关闭全局事件调试开关，和所有端口的事件调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_36352_15676_575900083}
+【描述】
 
-[**[debugging stp event]{lang="EN-US"}**]{#struct_0_36352_15676_x1027468273}[命令用来打开生成树事件调试信息开关。]{style="font-family:宋体"}**[undo debugging stp event]{lang="EN-US"}**[命令用来关闭生成树事件调试信息开关。]{style="font-family:宋体"}
+**[debugging stp event**]命令用来打开生成树事件调试信息开关。**undo debugging stp event**命令用来关闭生成树事件调试信息开关。
 
-[[缺省情况下，生成树事件调试信息开关处于关闭状态。]{style="font-family:宋体"}]{#struct_0_36352_15676_1048924381}
+缺省情况下，生成树事件调试信息开关处于关闭状态。
 
-[[表1-2 ]{lang="EN-US"}[debugging stp event]{lang="EN-US"}]{#struct_0_36352_15676_x82350005}[命令输出信息描述表]{style="font-family:黑体"}
+表1-2 debugging stp event命令输出信息描述表
 
-[]{#table_struct_0_1591574542}[[字段]{style="font-family:黑体"}]{#struct_0_36352_15676_722600254}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_36352_15676_x199162988}
+描述
 
-[[Instance *InstanceID* enters PRS machine]{lang="EN-US"}]{#struct_0_36352_15676_x983548828}
+Instance *InstanceID* enters PRS machine
 
-[[全局事件调试信息：]{style="font-family:宋体"}[MSTI *InstanceID*]{lang="EN-US"}]{#struct_0_36352_15676_1453563889}[进入]{style="font-family:宋体"}[PRS]{lang="EN-US"}[状态机]{style="font-family:宋体"}
+全局事件调试信息：MSTI *InstanceID*进入PRS状态机
 
-[*[String]{lang="EN-US"}*[ event occured on port*PortID(PortName)*]{lang="EN-US"}]{#struct_0_36352_15676_575965619}
+*[String* event occured on port*PortID(PortName)*]
 
-[[端口]{style="font-family:宋体"}*[PortID(PortName)]{lang="EN-US"}*]{#struct_0_36352_15676_195254569}[上发生了]{style="font-family:宋体"}*[String]{lang="EN-US"}*[事件，]{style="font-family:宋体"}*[String]{lang="EN-US"}*[的具体取值包括：]{style="font-family:宋体"}
+端口*PortID(PortName)*上发生了*String*事件，*String*的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ADD VLAN]{lang="EN-US"}]{#struct_0_36352_15676_x400040592}[：表示端口加入]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[，]{lang="EN-US" style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[为]{lang="EN-US" style="font-family:宋体"}[65535]{lang="EN-US"}[表示批量]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[事件]{lang="EN-US" style="font-family:宋体"}
+·ADD VLAN：表示端口加入VLAN，VLAN ID为65535表示批量VLAN事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DEL VLAN]{lang="EN-US"}]{#struct_0_36352_15676_751562869}[：表示端口从]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[中删除，]{lang="EN-US" style="font-family:宋体"}[VLAN ID]{lang="EN-US"}[为]{lang="EN-US" style="font-family:宋体"}[65535]{lang="EN-US"}[表示批量]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}[事件]{lang="EN-US" style="font-family:宋体"}
+·DEL VLAN：表示端口从VLAN中删除，VLAN ID为65535表示批量VLAN事件
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SPEED CHANGE]{lang="EN-US"}]{#struct_0_36352_15676_x1207726263}[：表示端口速率变化]{lang="EN-US" style="font-family:宋体"}
+·SPEED CHANGE：表示端口速率变化
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DUPLEX CHANGE]{lang="EN-US"}]{#struct_0_36352_15676_2131046911}[：表示端口双工模式变化]{lang="EN-US" style="font-family:宋体"}
+·DUPLEX CHANGE：表示端口双工模式变化
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[FAST LINK DOWN]{lang="EN-US"}]{#struct_0_36352_15676_574982579}[：表示端口快速]{lang="EN-US" style="font-family:宋体"}[down]{lang="EN-US"}
+·FAST LINK DOWN：表示端口快速down
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LINK DOWN]{lang="EN-US"}]{#struct_0_36352_15676_x1887841391}[：表示端口]{lang="EN-US" style="font-family:宋体"}[down]{lang="EN-US"}
+·LINK DOWN：表示端口down
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LINK UP]{lang="EN-US"}]{#struct_0_36352_15676_711931218}[：表示端口]{lang="EN-US" style="font-family:宋体"}[up]{lang="EN-US"}
+·LINK UP：表示端口up
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DEACTIVE]{lang="EN-US"}]{#struct_0_36352_15676_x772603376}[：表示接口去激活]{lang="EN-US" style="font-family:宋体"}
+·DEACTIVE：表示接口去激活
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DELETE]{lang="EN-US"}]{#struct_0_36352_15676_696088414}[：表示接口删除]{lang="EN-US" style="font-family:宋体"}
+·DELETE：表示接口删除
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[JOIN AGG]{lang="EN-US"}]{#struct_0_36352_15676_x717026889}[：表示端口加入聚合组]{lang="EN-US" style="font-family:宋体"}
+·JOIN AGG：表示端口加入聚合组
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LEAVE AGG]{lang="EN-US"}]{#struct_0_36352_15676_575048115}[：表示端口退出聚合组]{lang="EN-US" style="font-family:宋体"}
+·LEAVE AGG：表示端口退出聚合组
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_36352_15676_x820207622}
+\# 打开端口GigabitEthernet1/0/1的生成树事件调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_36352_15676_86608921}[打开]{style="font-family:宋体"}[端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的生成树]{style="font-family:宋体"}[事件调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging stp event interface gigabitethernet 1/0/1
 
-[[\<Sysname\> debugging stp event interface gigabitethernet 1/0/1]{lang="EN-US"}]{#struct_0_36352_15676_1693134358}
+\*Mar 18 14:28:41:887 2010 Sysname STP/7/PEVT: LINK DOWN event occured on port2(GigabitEthernet1/0/1).
 
-[\*Mar 18 14:28:41:887 2010 Sysname STP/7/PEVT: LINK DOWN event occured on port2(GigabitEthernet1/0/1).]{lang="EN-US"}
+*// 端口GigabitEthernet1/0/1上发生了端口down事件*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_36352_15676_x752276740}*[端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上发生了端口]{style="font-family:宋体"}[down]{lang="EN-US"}[事件]{style="font-family:宋体"}*
+\# 打开生成树全局事件调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_36352_15676_x1725680064}[打开生成树全局事件调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging stp event
 
-[[\<Sysname\> debugging stp event]{lang="EN-US"}]{#struct_0_36352_15676_861257965}
+\*Sep 23 09:39:24:773 2010 Sysname STP/7/PEVT: DUPLEX CHANGE event occured on port2(GigabitEthernet1/0/1).
 
-[\*Sep 23 09:39:24:773 2010 Sysname STP/7/PEVT: DUPLEX CHANGE event occured on port2(GigabitEthernet1/0/1).]{lang="EN-US"}
+*// 端口GigabitEthernet1/0/1上发生了双工变化事件*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_36352_15676_x2144907614}*[端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上发生了双工变化事件]{style="font-family:宋体"}*
+\*Sep 23 09:39:24:777 2010 Sysname STP/7/PEVT: SPEED CHANGE event occured on port2(GigabitEthernet1/0/1).
 
-[[\*Sep 23 09:39:24:777 2010 Sysname STP/7/PEVT: SPEED CHANGE event occured on port2(GigabitEthernet1/0/1).]{lang="EN-US"}]{#struct_0_36352_15676_575506864}
+*// 端口GigabitEthernet1/0/1上发生了速率变化事件*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_36352_15676_x1932412704}*[端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上发生了速率变化事件]{style="font-family:宋体"}*
+\*Sep 23 09:39:24:783 2010 Sysname STP/7/PEVT: LINK UP event occured on port2(GigabitEthernet1/0/1).
 
-[[\*Sep 23 09:39:24:783 2010 Sysname STP/7/PEVT: LINK UP event occured on port2(GigabitEthernet1/0/1).]{lang="EN-US"}]{#struct_0_36352_15676_x2061097978}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_36352_15676_x853353377}*[端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上发生了链路]{style="font-family:宋体"}[up]{lang="EN-US"}[事件]{style="font-family:宋体"}*
-
-::: {#1602152669 .myid}
-[]{#_Toc127096846}[]{#_Toc404784418}[]{#struct_0_36352_15676_x578448290}
+*// 端口GigabitEthernet1/0/1上发生了链路up事件*
 
 **生成树 \-- 生成树调试命令 \-- debugging stp fsm**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_36352_15676_87776687}
+【命令】
 
-[**[debugging stp fsm]{lang="EN-US"}**[ \[ **instance** *instance-id* \| **vlan** *vlan-id* \] \[ **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_36352_15676_1529774393}
+**[debugging stp fsm**[ [ **instance** *instance-id* \| **vlan** *vlan-id* ]  **interface** *interface-type interface-number* ]]
 
-[**[undo]{lang="EN-US"}**[ **debugging stp** **fsm** \[ **instance** *instance-id* \| **vlan** *vlan-id* \] \[ **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_36352_15676_881877273}
+**[undo**[ **debugging stp** **fsm** [ **instance** *instance-id* \| **vlan** *vlan-id* ]  **interface** *interface-type interface-number* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_36352_15676_x1618397838}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_36352_15676_575572400}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_36352_15676_x1457634745}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_36352_15676_x756503214}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_36352_15676_1144558743}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_36352_15676_x2017007609}
+【参数】
 
-[**[instance]{lang="EN-US"}**[ *instance-id*]{lang="EN-US"}]{#struct_0_36352_15676_2112474865}[：打开或关闭指定]{style="font-family:宋体"}[MSTI]{lang="EN-US"}[的生成树状态机调试信息开关，]{style="font-family:宋体"}*[instance-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[MSTI]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[到设备支持的最大值（最大值与设备的型号有关，请以设备的实际情况为准），]{style="font-family:宋体"}[0]{lang="EN-US"}[表示]{style="font-family:宋体"}[CIST]{lang="EN-US"}[。如果未指定本参数，则打开或关闭所有]{style="font-family:宋体"}[MSTI]{lang="EN-US"}[的生成树状态机调试信息开关。本参数在]{style="font-family:宋体"}[PVST]{lang="EN-US"}[模式下无效。]{style="font-family:宋体"}
+**[instance** *instance-id*]：打开或关闭指定MSTI的生成树状态机调试信息开关，*instance-id*为MSTI的编号，取值范围为0到设备支持的最大值（最大值与设备的型号有关，请以设备的实际情况为准），0表示CIST。如果未指定本参数，则打开或关闭所有MSTI的生成树状态机调试信息开关。本参数在PVST模式下无效。
 
-[**[vlan]{lang="EN-US"}***[ vlan-id]{lang="EN-US"}*]{#struct_0_36352_15676_1629311389}[：打开或关闭指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的生成树状态机调试信息开关，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。如果未指定本参数，则打开所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的生成树状态机调试信息开关。本参数只在]{style="font-family:宋体"}[PVST]{lang="EN-US"}[模式下有效。]{style="font-family:宋体"}
+**[vlan*** vlan-id*]：打开或关闭指定VLAN的生成树状态机调试信息开关，*vlan-id*为VLAN的编号，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。如果未指定本参数，则打开所有VLAN的生成树状态机调试信息开关。本参数只在PVST模式下有效。
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_36352_15676_1601751954}[：打开或关闭指定端口的生成树状态机调试信息开关，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[为端口类型和端口编号。如果未指定本参数，则打开或关闭所有端口的生成树状态机调试信息开关。]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：打开或关闭指定端口的生成树状态机调试信息开关，*interface-type interface-number*为端口类型和端口编号。如果未指定本参数，则打开或关闭所有端口的生成树状态机调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_36352_15676_x1321887714}
+【描述】
 
-[**[debugging stp fsm]{lang="EN-US"}**]{#struct_0_36352_15676_512852416}[命令用来打开生成树状态机调试信息开关。]{style="font-family:宋体"}**[undo debugging stp fsm]{lang="EN-US"}**[命令用来关闭生成树状态机调试信息开关。]{style="font-family:宋体"}
+**[debugging stp fsm**]命令用来打开生成树状态机调试信息开关。**undo debugging stp fsm**命令用来关闭生成树状态机调试信息开关。
 
-[[缺省情况下，生成树状态机调试信息开关处于关闭状态。]{style="font-family:宋体"}]{#struct_0_36352_15676_575637936}
+缺省情况下，生成树状态机调试信息开关处于关闭状态。
 
-[[表1-3 ]{lang="EN-US"}[debugging stp fsm]{lang="EN-US"}]{#struct_0_36352_15676_689259622}[命令输出信息描述表]{style="font-family:黑体"}
+表1-3 debugging stp fsm命令输出信息描述表
 
-[]{#table_struct_0_1592851726}[[字段]{style="font-family:黑体"}]{#struct_0_36352_15676_1348739991}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_36352_15676_x1708761887}
+描述
 
-[[Instance *InstanceID*'s port *PortID(PortName)* enters *String* state]{lang="EN-US"}]{#struct_0_36352_15676_400169903}
+Instance *InstanceID*'s port *PortID(PortName)* enters *String* state
 
-[[VLAN *VLANID*'s port *PortID(PortName)* enters *String* state]{lang="EN-US"}]{#struct_0_36352_15676_1629114781}
+VLAN *VLANID*'s port *PortID(PortName)* enters *String* state
 
-[[端口]{style="font-family:宋体"}*[PortID(PortName)]{lang="EN-US"}*]{#struct_0_36352_15676_x989583069}[在]{style="font-family:宋体"}[MSTI *InstanceID*]{lang="EN-US"}[或]{style="font-family:宋体"}[VLAN *VLANID*]{lang="EN-US"}[上的状态为]{style="font-family:宋体"}*[String]{lang="EN-US"}*[，]{style="font-family:宋体"}*[String]{lang="EN-US"}*[的具体取值包括：]{style="font-family:宋体"}[PIM%DISABLED]{lang="EN-US"}[、]{style="font-family:宋体"}[PIM%AGED]{lang="EN-US"}[、]{style="font-family:宋体"}[PIM%UPDATE]{lang="EN-US"}[、]{style="font-family:宋体"}[PIM%CURRENT]{lang="EN-US"}[、]{style="font-family:宋体"}[PIM%RECEIVE]{lang="EN-US"}[、]{style="font-family:宋体"}[PIM%SUPERIOR_DESIGNATED]{lang="EN-US"}[、]{style="font-family:宋体"}[PIM%REPEATED_DESIGNATED]{lang="EN-US"}[、]{style="font-family:宋体"}[PIM%INFERIOR_DESIGNATED]{lang="EN-US"}[、]{style="font-family:宋体"}[PIM%NOT_DESIGNATED]{lang="EN-US"}[、]{style="font-family:宋体"}[PIM%OTHER]{lang="EN-US"}[、]{style="font-family:宋体"}[PPM%CHECKING_RSTP]{lang="EN-US"}[、]{style="font-family:宋体"}[PPM%SELECTING_STP]{lang="EN-US"}[、]{style="font-family:宋体"}[PPM%SENSING]{lang="EN-US"}[；]{style="font-family:宋体"}[PRT%BLOCK_PORT]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%BACKUP_PORT]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%ALTERNATE_PORT]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%ALTERNATE_PROPOSED]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%ALTERNATE_AGREED]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%MASTER_PORT]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%MASTER_PROPOSED]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%MASTER_AGREED]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%MASTER_SYNCED]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%MASTER_RETIRED]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%MASTER_DISCARD]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%MASTER_LEARN]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%MASTER_FORWARD]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%DESIGNATED_PORT]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%DESIGNATED_PROPOSE]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%DESIGNATED_AGREED]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%DESIGNATED_SYNCED]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%DESIGNATED_RETIRED]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%DESIGNATED_DISCARD]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%DESIGNATED_LEARN]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%DESIGNATED_FORWARD]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%ROOT_PORT]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%ROOT_PROPOSED]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%ROOT_AGREED]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%ROOT_SYNCED]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%ROOT_DISCARD]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%ROOT_LEARN]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%ROOT_FORWARD]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%ROOT_REROOT]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%ROOT_REROOTED]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%INIT_PORT]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%DISABLE_PORT]{lang="EN-US"}[、]{style="font-family:宋体"}[PRT%DISABLED_PORT]{lang="EN-US"}[、]{style="font-family:宋体"}[PTX%PERIODIC]{lang="EN-US"}[、]{style="font-family:宋体"}[PTX%TCN]{lang="EN-US"}[、]{style="font-family:宋体"}[PTX%CONFIG]{lang="EN-US"}[、]{style="font-family:宋体"}[PTX%RSTP]{lang="EN-US"}[、]{style="font-family:宋体"}[PTX%MSTP_DOT1S]{lang="EN-US"}[、]{style="font-family:宋体"}[PTX%MSTP_LEGACY]{lang="EN-US"}[、]{style="font-family:宋体"}[PST%DISCARDING]{lang="EN-US"}[、]{style="font-family:宋体"}[PST%LEARNING]{lang="EN-US"}[、]{style="font-family:宋体"}[PST%FORWARDING]{lang="EN-US"}[、]{style="font-family:宋体"}[TCM%INACTIVE]{lang="EN-US"}[、]{style="font-family:宋体"}[TCM%LEARNINGT]{lang="EN-US"}[、]{style="font-family:宋体"}[CM%DETECTED]{lang="EN-US"}[、]{style="font-family:宋体"}[TCM%ACTIVE]{lang="EN-US"}[、]{style="font-family:宋体"}[TCM%NOTIFIED_TCN]{lang="EN-US"}[、]{style="font-family:宋体"}[TCM%NOTIFIED_TC]{lang="EN-US"}[、]{style="font-family:宋体"}[TCM%PROPAGATING]{lang="EN-US"}[和]{style="font-family:宋体"}[TCM%ACKNOLEDGED]{lang="EN-US"}[。各字段]{style="font-family:宋体"}[%]{lang="EN-US"}[之前表示状态机名称，]{style="font-family:宋体"}[%]{lang="EN-US"}[之后表示具体状态]{style="font-family:宋体"}
+端口*PortID(PortName)*在MSTI *InstanceID*或VLAN *VLANID*上的状态为*String*，*String*的具体取值包括：PIM%DISABLED、PIM%AGED、PIM%UPDATE、PIM%CURRENT、PIM%RECEIVE、PIM%SUPERIOR_DESIGNATED、PIM%REPEATED_DESIGNATED、PIM%INFERIOR_DESIGNATED、PIM%NOT_DESIGNATED、PIM%OTHER、PPM%CHECKING_RSTP、PPM%SELECTING_STP、PPM%SENSING；PRT%BLOCK_PORT、PRT%BACKUP_PORT、PRT%ALTERNATE_PORT、PRT%ALTERNATE_PROPOSED、PRT%ALTERNATE_AGREED、PRT%MASTER_PORT、PRT%MASTER_PROPOSED、PRT%MASTER_AGREED、PRT%MASTER_SYNCED、PRT%MASTER_RETIRED、PRT%MASTER_DISCARD、PRT%MASTER_LEARN、PRT%MASTER_FORWARD、PRT%DESIGNATED_PORT、PRT%DESIGNATED_PROPOSE、PRT%DESIGNATED_AGREED、PRT%DESIGNATED_SYNCED、PRT%DESIGNATED_RETIRED、PRT%DESIGNATED_DISCARD、PRT%DESIGNATED_LEARN、PRT%DESIGNATED_FORWARD、PRT%ROOT_PORT、PRT%ROOT_PROPOSED、PRT%ROOT_AGREED、PRT%ROOT_SYNCED、PRT%ROOT_DISCARD、PRT%ROOT_LEARN、PRT%ROOT_FORWARD、PRT%ROOT_REROOT、PRT%ROOT_REROOTED、PRT%INIT_PORT、PRT%DISABLE_PORT、PRT%DISABLED_PORT、PTX%PERIODIC、PTX%TCN、PTX%CONFIG、PTX%RSTP、PTX%MSTP_DOT1S、PTX%MSTP_LEGACY、PST%DISCARDING、PST%LEARNING、PST%FORWARDING、TCM%INACTIVE、TCM%LEARNINGT、CM%DETECTED、TCM%ACTIVE、TCM%NOTIFIED_TCN、TCM%NOTIFIED_TC、TCM%PROPAGATING和TCM%ACKNOLEDGED。各字段%之前表示状态机名称，%之后表示具体状态
 
-[[Instance *InstanceID*'s port *PortID(PortName)* is selected as *String* role]{lang="EN-US"}]{#struct_0_36352_15676_1767821362}
+Instance *InstanceID*'s port *PortID(PortName)* is selected as *String* role
 
-[[VLAN *VLANID*'s port *PortID(PortName)* is selected as *String* role]{lang="EN-US"}]{#struct_0_36352_15676_1628983709}
+VLAN *VLANID*'s port *PortID(PortName)* is selected as *String* role
 
-[[端口]{style="font-family:宋体"}*[PortID(PortName)]{lang="EN-US"}*]{#struct_0_36352_15676_575703472}[在]{style="font-family:宋体"}[MSTI *InstanceID*]{lang="EN-US"}[或]{style="font-family:宋体"}[VLAN *VLANID*]{lang="EN-US"}[上的角色为]{style="font-family:宋体"}*[String]{lang="EN-US"}*[，]{style="font-family:宋体"}*[String]{lang="EN-US"}*[的具体取值包括：]{style="font-family:宋体"}
+端口*PortID(PortName)*在MSTI *InstanceID*或VLAN *VLANID*上的角色为*String*，*String*的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DESIGNATED]{lang="EN-US"}]{#struct_0_36352_15676_x382713438}[：表示指定端口]{lang="EN-US" style="font-family:宋体"}
+·DESIGNATED：表示指定端口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ROOT]{lang="EN-US"}]{#struct_0_36352_15676_x1575366539}[：表示根端口]{lang="EN-US" style="font-family:宋体"}
+·ROOT：表示根端口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ALTERNATE]{lang="EN-US"}]{#struct_0_36352_15676_1093679478}[：表示替换端口]{lang="EN-US" style="font-family:宋体"}
+·ALTERNATE：表示替换端口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[BACKUP]{lang="EN-US"}]{#struct_0_36352_15676_2029600497}[：表示备份端口]{lang="EN-US" style="font-family:宋体"}
+·BACKUP：表示备份端口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MASTER]{lang="EN-US"}]{#struct_0_36352_15676_593045402}[：表示主端口]{lang="EN-US" style="font-family:宋体"}
+·MASTER：表示主端口
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_36352_15676_x1571409359}
+\# 在MSTP模式下，打开所有MSTI端口的生成树状态机调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_36352_15676_575769008}[在]{style="font-family:宋体"}[MSTP]{lang="EN-US"}[模式下，打开所有]{style="font-family:宋体"}[MSTI]{lang="EN-US"}[端口的生成树状态机调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging stp fsm
 
-[[\<Sysname\> debugging stp fsm]{lang="EN-US"}]{#struct_0_36352_15676_1155208394}
+\*Mar 18 14:28:41:739 2010 Sysname STP/7/FSMSTATE:Instance 0\'s port2(GigabitEthernet1/0/1) enters PTX%PERIODIC state.
 
-[\*Mar 18 14:28:41:739 2010 Sysname STP/7/FSMSTATE:Instance 0\'s port2(GigabitEthernet1/0/1) enters PTX%PERIODIC state.]{lang="EN-US"}
+*// 端口GigabitEthernet1/0/1上的PTX状态机处于PERIODIC状态*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_36352_15676_x296170974}*[端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上的]{style="font-family:宋体"}[PTX]{lang="EN-US"}[状态机处于]{style="font-family:宋体"}[PERIODIC]{lang="EN-US"}[状态]{style="font-family:宋体"}*
+\*Mar 18 14:28:41:739 2010 Sysname STP/7/FSMSTATE:Instance 0\'s port2(GigabitEthernet1/0/1) enters PTX%MSTP_DOT1S state.
 
-[[\*Mar 18 14:28:41:739 2010 Sysname STP/7/FSMSTATE:Instance 0\'s port2(GigabitEthernet1/0/1) enters PTX%MSTP_DOT1S state.]{lang="EN-US"}]{#struct_0_36352_15676_481568157}
+*// 端口GigabitEthernet1/0/1上的PTX状态机处于MSTP_DOT1S状态*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_36352_15676_x1708884916}*[端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上的]{style="font-family:宋体"}[PTX]{lang="EN-US"}[状态机处于]{style="font-family:宋体"}[MSTP_DOT1S]{lang="EN-US"}[状态]{style="font-family:宋体"}*
+\*Mar 18 14:28:41:741 2010 Sysname STP/7/FSMSTATE:Instance 2\'s port2(GigabitEthernet1/0/1) is selected as MASTER role
 
-[[\*Mar 18 14:28:41:741 2010 Sysname STP/7/FSMSTATE:Instance 2\'s port2(GigabitEthernet1/0/1) is selected as MASTER role]{lang="EN-US"}]{#struct_0_36352_15676_x1995461939}
+*// 端口GigabitEthernet1/0/1在MSTI 2中被选举为主端口*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_36352_15676_x1322402871}*[端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[在]{style="font-family:宋体"}[MSTI ]{lang="EN-US"}[2]{lang="EN-US"}[中被选举为主端口]{style="font-family:
-宋体"}*
+\# 在PVST模式下，打开所有VLAN端口的生成树状态机调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_36352_15676_1629245856}[在]{style="font-family:宋体"}[PVST]{lang="EN-US"}[模式下，打开所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[端口的生成树状态机调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging stp fsm
 
-[[\<Sysname\> debugging stp fsm]{lang="EN-US"}]{#struct_0_36352_15676_1629311392}
+\*Mar 18 14:28:41:741 2010 Sysname STP/7/MEXS:Slot=1;VLAN 2's port105(GigabitEthernet1/0/1) enters PTX%PERIODIC state.
 
-[\*Mar 18 14:28:41:741 2010 Sysname STP/7/MEXS:Slot=1;VLAN 2's port105(GigabitEthernet1/0/1) enters PTX%PERIODIC state.]{lang="EN-US"}
+*// 端口GigabitEthernet1/0/1在VLAN 2上处于PTX状态机中的PERIODIC状态*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_36352_15676_1699850388}*[端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[在]{style="font-family:宋体"}[VLAN ]{lang="EN-US"}[2]{lang="EN-US"}[上处于]{style="font-family:
-宋体"}[PTX]{lang="EN-US"}[状态机中的]{style="font-family:宋体"}[PERIODIC]{lang="EN-US"}[状态]{style="font-family:宋体"}*
+\*Mar 18 14:28:41:741 2010 Sysname STP/7/MEXS:Slot=1;VLAN 2's port105(GigabitEthernet1/0/1) is selected as MASTER role
 
-[[\*Mar 18 14:28:41:741 2010 Sysname STP/7/MEXS:Slot=1;VLAN 2's port105(GigabitEthernet1/0/1) is selected as MASTER role]{lang="EN-US"}]{#struct_0_36352_15676_1629114784}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_36352_15676_175530316}*[端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[在]{style="font-family:宋体"}[VLAN ]{lang="EN-US"}[2]{lang="EN-US"}[上被指定为主端口]{style="font-family:
-宋体"}*
-
-::: {#-453020650 .myid}
-[]{#_Toc404784419}[]{#struct_0_36352_15676_1672227285}[]{#_Toc127096847}[]{#_Toc148517517}[]{#_Toc148610733}[]{#_Toc148517518}[]{#_Toc148610734}[]{#_Toc148517521}[]{#_Toc148610737}[]{#_Toc148517522}[]{#_Toc148610738}[]{#_Toc148517523}[]{#_Toc148610739}[]{#_Toc148517524}[]{#_Toc148610740}[]{#_Toc148517525}[]{#_Toc148610741}[]{#_Toc148517526}[]{#_Toc148610742}[]{#_Toc148517527}[]{#_Toc148610743}[]{#_Toc148517528}[]{#_Toc148610744}[]{#_Toc148517529}[]{#_Toc148610745}[]{#_Toc148517530}[]{#_Toc148610746}[]{#_Toc148517531}[]{#_Toc148610747}[]{#_Toc148517532}[]{#_Toc148610748}[]{#_Toc148517534}[]{#_Toc148610750}[]{#_Toc148517538}[]{#_Toc148610754}[]{#_Toc147113358}[]{#_Toc148517540}[]{#_Toc148610756}[]{#_Toc147113359}[]{#_Toc148517541}[]{#_Toc148610757}[]{#_Toc147113360}[]{#_Toc148517542}[]{#_Toc148610758}[]{#_Toc147113361}[]{#_Toc148517543}[]{#_Toc148610759}[]{#_Toc147113362}[]{#_Toc148517544}[]{#_Toc148610760}[]{#_Toc147113363}[]{#_Toc148517545}[]{#_Toc148610761}[]{#_Toc147113364}[]{#_Toc148517546}[]{#_Toc148610762}[]{#_Toc147113365}[]{#_Toc148517547}[]{#_Toc148610763}[]{#_Toc146534346}[]{#_Toc147113367}[]{#_Toc148517549}[]{#_Toc148610765}[]{#_Toc146534347}[]{#_Toc147113368}[]{#_Toc148517550}[]{#_Toc148610766}[]{#_Toc146534348}[]{#_Toc147113369}[]{#_Toc148517551}[]{#_Toc148610767}[]{#_Toc146534349}[]{#_Toc147113370}[]{#_Toc148517552}[]{#_Toc148610768}[]{#_Toc146534350}[]{#_Toc147113371}[]{#_Toc148517553}[]{#_Toc148610769}[]{#_Toc146534351}[]{#_Toc147113372}[]{#_Toc148517554}[]{#_Toc148610770}[]{#_Toc146534352}[]{#_Toc147113373}[]{#_Toc148517555}[]{#_Toc148610771}[]{#_Toc146534353}[]{#_Toc147113374}[]{#_Toc148517556}[]{#_Toc148610772}[]{#_Toc146534354}[]{#_Toc147113375}[]{#_Toc148517557}[]{#_Toc148610773}[]{#_Toc146534355}[]{#_Toc147113376}[]{#_Toc148517558}[]{#_Toc148610774}[]{#_Toc146534356}[]{#_Toc147113377}[]{#_Toc148517559}[]{#_Toc148610775}[]{#_Toc146534357}[]{#_Toc147113378}[]{#_Toc148517560}[]{#_Toc148610776}[]{#_Toc146534367}[]{#_Toc147113388}[]{#_Toc148517570}[]{#_Toc148610786}[]{#_Toc146534368}[]{#_Toc147113389}[]{#_Toc148517571}[]{#_Toc148610787}[]{#_Toc146534369}[]{#_Toc147113390}[]{#_Toc148517572}[]{#_Toc148610788}[]{#_Toc146534370}[]{#_Toc147113391}[]{#_Toc148517573}[]{#_Toc148610789}[]{#_Toc146534375}[]{#_Toc147113396}[]{#_Toc148517578}[]{#_Toc148610794}[]{#_Toc146534377}[]{#_Toc147113398}[]{#_Toc148517580}[]{#_Toc148610796}[]{#_Toc146534380}[]{#_Toc147113401}[]{#_Toc148517583}[]{#_Toc148610799}[]{#_Toc146534381}[]{#_Toc147113402}[]{#_Toc148517584}[]{#_Toc148610800}
+*// 端口GigabitEthernet1/0/1在VLAN 2上被指定为主端口*
 
 **生成树 \-- 生成树调试命令 \-- debugging stp packet**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_36352_15676_575834544}
+【命令】
 
-[**[debugging stp]{lang="EN-US"}**[ **packet** \[ **receive** \| **send** \] \[ **vlan** *vlan-id* \] \[ **interface** *interface-type interface-number* \] \[ **brief** \| **verbose** \]]{lang="EN-US"}]{#struct_0_36352_15676_x578695900}
+**[debugging stp**[ **packet** [ **receive** \| **send** ]  **vlan** *vlan-id*   **interface** *interface-type interface-number*  [ **brief** \| **verbose** ]]]
 
-[**[undo debugging stp]{lang="EN-US"}**[ **packet** \[ **receive** \| **send** \] \[ **vlan** *vlan-id* \] \[ **interface** *interface-type interface-number* \] \[ **brief** \| **verbose** \]]{lang="EN-US"}]{#struct_0_36352_15676_x34119535}
+**[undo debugging stp**[ **packet** [ **receive** \| **send** ]  **vlan** *vlan-id*   **interface** *interface-type interface-number*  [ **brief** \| **verbose** ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_36352_15676_2040705783}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_36352_15676_484628829}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_36352_15676_947704806}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_36352_15676_862694845}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_36352_15676_673772396}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_36352_15676_x957322457}
+【参数】
 
-[**[receive]{lang="EN-US"}**]{#struct_0_36352_15676_575900080}[：打开或关闭接收生成树报文的调试信息开关。]{style="font-family:宋体"}
+**[receive**]：打开或关闭接收生成树报文的调试信息开关。
 
-[**[send]{lang="EN-US"}**]{#struct_0_36352_15676_x1027468276}[：打开或关闭发送生成树报文的调试信息开关。]{style="font-family:宋体"}
+**[send**]：打开或关闭发送生成树报文的调试信息开关。
 
-[**[vlan]{lang="EN-US"}***[ vlan-id]{lang="EN-US"}*]{#struct_0_36352_15676_1629049248}[：打开或关闭指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的生成树报文调试信息开关，]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的编号，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。如果未指定本参数，则打开所有]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的生成树报文调试信息开关。本参数只在]{style="font-family:宋体"}[PVST]{lang="EN-US"}[模式下有效。]{style="font-family:宋体"}
+**[vlan*** vlan-id*]：打开或关闭指定VLAN的生成树报文调试信息开关，*vlan-id*为VLAN的编号，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。如果未指定本参数，则打开所有VLAN的生成树报文调试信息开关。本参数只在PVST模式下有效。
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_36352_15676_1452208908}[：打开或关闭指定端口的生成树报文调试信息开关，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[为端口类型和端口编号。如果未指定本参数，则打开或关闭所有端口的生成树报文调试信息开关。]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：打开或关闭指定端口的生成树报文调试信息开关，*interface-type interface-number*为端口类型和端口编号。如果未指定本参数，则打开或关闭所有端口的生成树报文调试信息开关。
 
-[**[brief]{lang="EN-US"}**]{#struct_0_36352_15676_1342229035}[：打开或关闭生成树报文的简要调试信息开关。]{style="font-family:宋体"}
+**[brief**]：打开或关闭生成树报文的简要调试信息开关。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_36352_15676_1885756808}[：打开或关闭生成树报文的详细调试信息开关。]{style="font-family:宋体"}
+**[verbose**]：打开或关闭生成树报文的详细调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_36352_15676_x839491513}
+【描述】
 
-[**[debugging stp packet]{lang="EN-US"}**]{#struct_0_36352_15676_1643671031}[命令用来打开生成树报文调试信息开关。]{style="font-family:宋体"}**[undo debugging stp packet]{lang="EN-US"}**[命令用来关闭生成树报文调试信息开关。]{style="font-family:宋体"}
+**[debugging stp packet**]命令用来打开生成树报文调试信息开关。**undo debugging stp packet**命令用来关闭生成树报文调试信息开关。
 
-[[缺省情况下，生成树报文调试信息开关处于关闭状态。]{style="font-family:宋体"}]{#struct_0_36352_15676_x2041595859}
+缺省情况下，生成树报文调试信息开关处于关闭状态。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_36352_15676_x843588514}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果未指定]{style="font-family:宋体"}]{#struct_0_36352_15676_575965616}**[receive]{lang="EN-US"}**[和]{style="font-family:宋体"}**[send]{lang="EN-US"}**[参数，则同时打开接收和发送生成树报文的调试信息开关。]{style="font-family:宋体"}
+·如果未指定**receive**和**send**参数，则同时打开接收和发送生成树报文的调试信息开关。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果未指定]{style="font-family:宋体"}]{#struct_0_36352_15676_195254578}**[brief]{lang="EN-US"}**[和]{style="font-family:宋体"}**[verbose]{lang="EN-US"}**[参数，则打开生成树报文的简要调试信息开关。]{style="font-family:宋体"}
+·如果未指定**brief**和**verbose**参数，则打开生成树报文的简要调试信息开关。
 
-[[表1-4 ]{lang="EN-US"}[debugging stp packet]{lang="EN-US"}]{#struct_0_36352_15676_1938611567}[命令输出信息描述表]{style="font-family:黑体"}
+表1-4 debugging stp packet命令输出信息描述表
 
-[]{#table_struct_0_1591994894}[[字段]{style="font-family:黑体"}]{#struct_0_36352_15676_1010737208}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_36352_15676_x1196787361}
+描述
 
-[[Port *PortID(PortName)* sent *Type* packet(Length:*number*)]{lang="EN-US"}]{#struct_0_36352_15676_794975200}
+Port *PortID(PortName)* sent *Type* packet(Length:*number*)
 
-[[端口]{style="font-family:宋体"}*[PortID(PortName)]{lang="EN-US"}*]{#struct_0_36352_15676_190529621}[发送了类型为]{style="font-family:宋体"}*[Type]{lang="EN-US"}*[的报文，报文的长度为]{style="font-family:宋体"}*[Number]{lang="EN-US"}*[（单位为字节），]{style="font-family:宋体"}*[Type]{lang="EN-US"}*[的具体取值包括：]{style="font-family:宋体"}[TCN]{lang="EN-US"}[、]{style="font-family:宋体"}[STP]{lang="EN-US"}[、]{style="font-family:宋体"}[RSTP]{lang="EN-US"}[、]{style="font-family:宋体"}[MSTP-dot1s]{lang="EN-US"}[和]{style="font-family:宋体"}[MSTP-legacy]{lang="EN-US"}
+端口*PortID(PortName)*发送了类型为*Type*的报文，报文的长度为*Number*（单位为字节），*Type*的具体取值包括：TCN、STP、RSTP、MSTP-dot1s和MSTP-legacy
 
-[[Port *PortID(PortName)* received *Type* packet(Length:*number*)]{lang="EN-US"}]{#struct_0_36352_15676_574982576}
+Port *PortID(PortName)* received *Type* packet(Length:*number*)
 
-[[端口]{style="font-family:宋体"}*[PortID(PortName)]{lang="EN-US"}*]{#struct_0_36352_15676_x1887841386}[收到了类型为]{style="font-family:宋体"}*[Type]{lang="EN-US"}*[的报文，报文的长度为]{style="font-family:宋体"}*[Number]{lang="EN-US"}*[（单位为字节），]{style="font-family:宋体"}*[Type]{lang="EN-US"}*[的具体取值包括：]{style="font-family:宋体"}[TCN]{lang="EN-US"}[、]{style="font-family:宋体"}[STP]{lang="EN-US"}[、]{style="font-family:宋体"}[RSTP]{lang="EN-US"}[、]{style="font-family:宋体"}[MSTP-dot1s]{lang="EN-US"}[和]{style="font-family:宋体"}[MSTP-legacy]{lang="EN-US"}
+端口*PortID(PortName)*收到了类型为*Type*的报文，报文的长度为*Number*（单位为字节），*Type*的具体取值包括：TCN、STP、RSTP、MSTP-dot1s和MSTP-legacy
 
-[[Port *PortID(PortName)* VLAN *VLANID* sent *Type* packet(Length:*number*)]{lang="EN-US"}]{#struct_0_36352_15676_1629245855}
+Port *PortID(PortName)* VLAN *VLANID* sent *Type* packet(Length:*number*)
 
-[[端口]{style="font-family:宋体"}*[PortID(PortName)]{lang="EN-US"}*]{#struct_0_36352_15676_1629311391}[在]{style="font-family:宋体"}[VLAN *VLANID*]{lang="EN-US"}[上发送了类型为]{style="font-family:宋体"}*[Type]{lang="EN-US"}*[的报文，报文的长度为]{style="font-family:宋体"}*[Number]{lang="EN-US"}*[（单位为字节），]{style="font-family:宋体"}*[Type]{lang="EN-US"}*[的具体取值包括：]{style="font-family:宋体"}[TCN]{lang="EN-US"}[、]{style="font-family:宋体"}[STP]{lang="EN-US"}[和]{style="font-family:宋体"}[RSTP]{lang="EN-US"}
+端口*PortID(PortName)*在VLAN *VLANID*上发送了类型为*Type*的报文，报文的长度为*Number*（单位为字节），*Type*的具体取值包括：TCN、STP和RSTP
 
-[[Port *PortID(PortName)* VLAN *VLANID* received *Type* packet(Length:*number*)]{lang="EN-US"}]{#struct_0_36352_15676_1629114783}
+Port *PortID(PortName)* VLAN *VLANID* received *Type* packet(Length:*number*)
 
-[[端口]{style="font-family:宋体"}*[PortID(PortName))]{lang="EN-US"}*]{#struct_0_36352_15676_1629180319}[在]{style="font-family:宋体"}[VLAN *VLANID*]{lang="EN-US"}[上收到了类型为]{style="font-family:宋体"}*[Type]{lang="EN-US"}*[的报文，报文的长度为]{style="font-family:宋体"}*[Number]{lang="EN-US"}*[（单位为字节），]{style="font-family:宋体"}*[Type]{lang="EN-US"}*[的具体取值包括：]{style="font-family:宋体"}[TCN]{lang="EN-US"}[、]{style="font-family:宋体"}[STP]{lang="EN-US"}[和]{style="font-family:宋体"}[RSTP]{lang="EN-US"}
+端口*PortID(PortName))*在VLAN *VLANID*上收到了类型为*Type*的报文，报文的长度为*Number*（单位为字节），*Type*的具体取值包括：TCN、STP和RSTP
 
-[[ProtocolVersionID]{lang="EN-US"}]{#struct_0_36352_15676_x1660787313}
+ProtocolVersionID
 
-[[协议的版本号]{style="font-family:宋体"}]{#struct_0_36352_15676_685988966}
+协议的版本号
 
-[[BPDUType]{lang="EN-US"}]{#struct_0_36352_15676_140196047}
+BPDUType
 
-[[BPDU]{lang="EN-US"}]{#struct_0_36352_15676_x810409274}[报文的类型]{style="font-family:宋体"}
+BPDU报文的类型
 
-[[CIST Root ID]{lang="EN-US"}]{#struct_0_36352_15676_x1500773665}
+CIST Root ID
 
-[[CIST]{lang="EN-US"}]{#struct_0_36352_15676_575048112}[根桥编号]{style="font-family:宋体"}
+CIST根桥编号
 
-[[External RPC]{lang="EN-US"}]{#struct_0_36352_15676_x820207625}
+External RPC
 
-[[外部根路径开销]{style="font-family:宋体"}]{#struct_0_36352_15676_86936601}
+外部根路径开销
 
-[[Reg Root ID]{lang="EN-US"}]{#struct_0_36352_15676_1610828215}
+Reg Root ID
 
-[[域根桥编号]{style="font-family:宋体"}]{#struct_0_36352_15676_308193525}
+域根桥编号
 
-[[Internal RPC]{lang="EN-US"}]{#struct_0_36352_15676_575506865}
+Internal RPC
 
-[[内部根路径开销]{style="font-family:宋体"}]{#struct_0_36352_15676_x1932412703}
+内部根路径开销
 
-[[CIST Bridge ID]{lang="EN-US"}]{#struct_0_36352_15676_x1301583091}
+CIST Bridge ID
 
-[[CIST]{lang="EN-US"}]{#struct_0_36352_15676_672015348}[桥编号]{style="font-family:宋体"}
+CIST桥编号
 
-[[CIST Port ID]{lang="EN-US"}]{#struct_0_36352_15676_1647277010}
+CIST Port ID
 
-[[CIST]{lang="EN-US"}]{#struct_0_36352_15676_575572401}[端口编号]{style="font-family:宋体"}
+CIST端口编号
 
-[[Root ID]{lang="EN-US"}]{#struct_0_36352_15676_x1457634746}
+Root ID
 
-[[根桥编号]{style="font-family:宋体"}]{#struct_0_36352_15676_x1159787741}
+根桥编号
 
-[[Path Cost]{lang="EN-US"}]{#struct_0_36352_15676_x1513560218}
+Path Cost
 
-[[路径开销]{style="font-family:宋体"}]{#struct_0_36352_15676_x462931663}
+路径开销
 
-[[Bridge ID]{lang="EN-US"}]{#struct_0_36352_15676_575637937}
+Bridge ID
 
-[[桥编号]{style="font-family:宋体"}]{#struct_0_36352_15676_689259621}
+桥编号
 
-[[Port ID]{lang="EN-US"}]{#struct_0_36352_15676_1348739992}
+Port ID
 
-[[端口编号]{style="font-family:宋体"}]{#struct_0_36352_15676_x1708565279}
+端口编号
 
-[[(Instance)Flags  ]{lang="EN-US"}]{#struct_0_36352_15676_124114763}[：]{style="font-family:宋体"} [(*InstanceID*)*Port-Role*\[*Flag*\]]{lang="EN-US"}
+(Instance)Flags  ： (*InstanceID*)*Port-Role*[*Flag*]
 
-[[收发]{style="font-family:宋体"}[BPDU]{lang="EN-US"}]{#struct_0_36352_15676_575703473}[报文的端口在]{style="font-family:宋体"}[MSTI *InstanceID*]{lang="EN-US"}[上的端口角色为]{style="font-family:宋体"}*[Port-Role]{lang="EN-US"}*[，报文类型为]{style="font-family:宋体"}*[FlagA]{lang="EN-US"}*[，端口的状态为]{style="font-family:宋体"}*[FlagB]{lang="EN-US"}*[，其中：]{style="font-family:宋体"}
+收发BPDU报文的端口在MSTI *InstanceID*上的端口角色为*Port-Role*，报文类型为*FlagA*，端口的状态为*FlagB*，其中：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[Port-Role]{lang="EN-US"}*]{#struct_0_36352_15676_x382713437}[的具体取值包括：]{lang="EN-US" style="font-family:宋体"}[Mast]{lang="EN-US"}[（表示]{lang="EN-US" style="font-family:宋体"}[Master]{lang="EN-US"}[端口）、]{lang="EN-US" style="font-family:宋体"}[Altn]{lang="EN-US"}[（表示]{lang="EN-US" style="font-family:宋体"}[Alternate]{lang="EN-US"}[端口或]{lang="EN-US" style="font-family:宋体"}[Backup]{lang="EN-US"}[端口）、]{lang="EN-US" style="font-family:宋体"}[Root]{lang="EN-US"}[（表示根端口）和]{lang="EN-US" style="font-family:宋体"}[Desi]{lang="EN-US"}[（表示指定端口）]{lang="EN-US" style="font-family:宋体"}
+·*Port-Role*的具体取值包括：Mast（表示Master端口）、Altn（表示Alternate端口或Backup端口）、Root（表示根端口）和Desi（表示指定端口）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[FlagA]{lang="EN-US"}*]{#struct_0_36352_15676_x1576349579}[的具体取值包括：]{lang="EN-US" style="font-family:宋体"}[Ta]{lang="EN-US"}[（表示]{lang="EN-US" style="font-family:宋体"}[TCA]{lang="EN-US"}[报文）、]{lang="EN-US" style="font-family:宋体"}[P]{lang="EN-US"}[（表示]{lang="EN-US" style="font-family:宋体"}[Proposal]{lang="EN-US"}[报文）、]{lang="EN-US" style="font-family:宋体"}[A]{lang="EN-US"}[（表示]{lang="EN-US" style="font-family:宋体"}[Agreement]{lang="EN-US"}[报文）和]{lang="EN-US" style="font-family:宋体"}[Tc]{lang="EN-US"}[（表示]{lang="EN-US" style="font-family:宋体"}[TC]{lang="EN-US"}[报文）]{lang="EN-US" style="font-family:宋体"}
+·*FlagA*的具体取值包括：Ta（表示TCA报文）、P（表示Proposal报文）、A（表示Agreement报文）和Tc（表示TC报文）
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[FlagB]{lang="EN-US"}*]{#struct_0_36352_15676_x928953909}[的具体取值包括：]{lang="EN-US" style="font-family:宋体"}[F]{lang="EN-US"}[（表示]{lang="EN-US" style="font-family:宋体"}[Forwarding]{lang="EN-US"}[）和]{lang="EN-US" style="font-family:宋体"}[L]{lang="EN-US"}[（表示]{lang="EN-US" style="font-family:宋体"}[Learning]{lang="EN-US"}[）]{lang="EN-US" style="font-family:宋体"}[，如果没有显示该值，则表示]{style="font-family:宋体"}[Discarding]{lang="EN-US"}
+·*FlagB*的具体取值包括：F（表示Forwarding）和L（表示Learning），如果没有显示该值，则表示Discarding
 
-[[PKT]{lang="EN-US"}]{#struct_0_36352_15676_575769009}
+PKT
 
-[[报文调试信息：包括端口号、端口名称、报文出入方向是发送还是接收、报文类型、报文长度以及十六进制显示的全部报文内容]{style="font-family:宋体"}]{#struct_0_36352_15676_1155208395}
+报文调试信息：包括端口号、端口名称、报文出入方向是发送还是接收、报文类型、报文长度以及十六进制显示的全部报文内容
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_36352_15676_x296105438}
+\# 在MSTP模式下，打开所有端口的接收生成树报文的调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_36352_15676_39224178}[在]{style="font-family:宋体"}[MSTP]{lang="EN-US"}[模式下，打开所有端口的接收生成树报文的调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging stp packet receive
 
-[[\<Sysname\> debugging stp packet receive]{lang="EN-US"}]{#struct_0_36352_15676_575834545}
+\*Mar 18 14:28:41:781 2010 Sysname STP/7/PKT:
 
-[\*Mar 18 14:28:41:781 2010 Sysname STP/7/PKT:]{lang="EN-US"}
+Port2(GigabitEthernet1/0/1) received MSTP-legacy packet(Length: 103)
 
-[Port2(GigabitEthernet1/0/1) received MSTP-legacy packet(Length: 103)]{lang="EN-US"}
+ProtocolVersionID: 03
 
-[ProtocolVersionID: 03]{lang="EN-US"}
+BPDUType         : 02
 
-[BPDUType         : 02]{lang="EN-US"}
+CIST Root ID     : 32768.000f-e200-3700
 
-[CIST Root ID     : 32768.000f-e200-3700]{lang="EN-US"}
+External RPC     : 0
 
-[External RPC     : 0]{lang="EN-US"}
+Reg Root ID      : 32768.000f-e200-3700
 
-[Reg Root ID      : 32768.000f-e200-3700]{lang="EN-US"}
+Internal RPC     : 0
 
-[Internal RPC     : 0]{lang="EN-US"}
+CIST Bridge ID   : 32768.000f-e200-3700
 
-[CIST Bridge ID   : 32768.000f-e200-3700]{lang="EN-US"}
+CIST Port ID     : 128.2
 
-[CIST Port ID     : 128.2]{lang="EN-US"}
+(Instance)Flags  : (00)Desi[  A  P  ]
 
-[(Instance)Flags  : (00)Desi\[  A  P  \]]{lang="EN-US"}
+*// 端口GigabitEthernet1/0/1收到长度为103字节的生成树私有格式报文，并对报文进行解析得到如下信息：对端设备运行的生成树协议版本号为3，BPDU报文类型为2，CIST根桥编号为32768.000F-E200-3700，外部根路径开销为0，域根桥编号为32768.000F-E200-3700，内部根路径开销为0，CIST桥编号为32768.000F-E200-3700，CIST端口编号为128.2，MSTI编号为00，且BPDU报文是指定端口发送的Agreement和Proposal报文*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_36352_15676_x578695901}*[端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[收到长度为]{style="font-family:宋体"}[103]{lang="EN-US"}[字节的生成树私有格式报文，并对报文进行解析得到如下信息：对端设备运行的生成树协议版本号为]{style="font-family:宋体"}[3]{lang="EN-US"}[，]{style="font-family:宋体"}[BPDU]{lang="EN-US"}[报文类型为]{style="font-family:宋体"}[2]{lang="EN-US"}[，]{style="font-family:宋体"}[CIST]{lang="EN-US"}[根桥编号为]{style="font-family:宋体"}[32768.000F-E200-3700]{lang="EN-US"}[，外部根路径开销为]{style="font-family:宋体"}[0]{lang="EN-US"}[，域根桥编号为]{style="font-family:宋体"}[32768.000F-E200-3700]{lang="EN-US"}[，内部根路径开销为]{style="font-family:宋体"}[0]{lang="EN-US"}[，]{style="font-family:宋体"}[CIST]{lang="EN-US"}[桥编号为]{style="font-family:宋体"}[32768.000F-E200-3700]{lang="EN-US"}[，]{style="font-family:宋体"}[CIST]{lang="EN-US"}[端口编号为]{style="font-family:宋体"}[128.2]{lang="EN-US"}[，]{style="font-family:宋体"}[MSTI]{lang="EN-US"}[编号为]{style="font-family:宋体"}[00]{lang="EN-US"}[，且]{style="font-family:宋体"}[BPDU]{lang="EN-US"}[报文是指定端口发送的]{style="font-family:宋体"}[Agreement]{lang="EN-US"}[和]{style="font-family:宋体"}[Proposal]{lang="EN-US"}[报文]{style="font-family:宋体"}*
+\# 在MSTP模式下，打开所有端口的发送生成树报文的详细调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_36352_15676_x34185071}[在]{style="font-family:宋体"}[MSTP]{lang="EN-US"}[模式下，打开所有端口的发送生成树报文的详细调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging stp packet send verbose
 
-[[\<Sysname\> debugging stp packet send verbose]{lang="EN-US"}]{#struct_0_36352_15676_898699729}
+\*Mar 18 14:28:41:782 2010 Sysname STP/7/PKT:
 
-[\*Mar 18 14:28:41:782 2010 Sysname STP/7/PKT:]{lang="EN-US"}
+Port2(GigabitEthernet1/0/1) sent MSTP-legacy Packet(Length: 103)
 
-[Port2(GigabitEthernet1/0/1) sent MSTP-legacy Packet(Length: 103)]{lang="EN-US"}
+00 00 03 02 6c 80 00 00 e0 fc 00 00 00 00 00 00
 
-[00 00 03 02 6c 80 00 00 e0 fc 00 00 00 00 00 00]{lang="EN-US"}
+00 80 00 00 e0 fc 00 00 00 81 81 00 00 14 00 02
 
-[00 80 00 00 e0 fc 00 00 00 81 81 00 00 14 00 02]{lang="EN-US"}
+00 0f 00 00 00 00 40 30 30 65 30 66 63 30 30 30
 
-[00 0f 00 00 00 00 40 30 30 65 30 66 63 30 30 30]{lang="EN-US"}
+30 30 30 00 00 00 00 00 00 00 00 00 00 00 00 00
 
-[30 30 30 00 00 00 00 00 00 00 00 00 00 00 00 00]{lang="EN-US"}
+00 00 00 00 00 00 00 00 00 ac 36 17 7f 50 28 3c
 
-[00 00 00 00 00 00 00 00 00 ac 36 17 7f 50 28 3c]{lang="EN-US"}
+d4 b8 38 21 d8 ab 26 de 62 80 00 00 e0 fc 00 00
 
-[d4 b8 38 21 d8 ab 26 de 62 80 00 00 e0 fc 00 00]{lang="EN-US"}
+00 00 00 00 00 14 00
 
-[00 00 00 00 00 14 00]{lang="EN-US"}
+*// 端口GigabitEthernet1/0/1发送长度为103字节的生成树私有格式报文，103字节的十六进制报文内容全部显示*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_36352_15676_x1199837206}*[端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[发送长度为]{style="font-family:宋体"}[103]{lang="EN-US"}[字节的生成树私有格式报文，]{style="font-family:宋体"}[103]{lang="EN-US"}[字节的十六进制报文内容全部显示]{style="font-family:宋体"}*
+\# 在PVST模式下，打开所有端口的接收生成树报文的调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_36352_15676_1628983714}[在]{style="font-family:宋体"}[PVST]{lang="EN-US"}[模式下，打开所有端口的接收生成树报文的调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging stp packet receive
 
-[[\<Sysname\> debugging stp packet receive]{lang="EN-US"}]{#struct_0_36352_15676_1629049250}
+\*Mar 18 14:28:41:781 2010 Sysname STP/7/PKT:
 
-[\*Mar 18 14:28:41:781 2010 Sysname STP/7/PKT:]{lang="EN-US"}
+Port386(GigabitEthernet1/0/1) VLAN 2 received RSTP-legacy packet(Length: 42)
 
-[Port386(GigabitEthernet1/0/1) VLAN 2 received RSTP-legacy packet(Length: 42)]{lang="EN-US"}
+ProtocolVersionID: 03
 
-[ProtocolVersionID: 03]{lang="EN-US"}
+BPDUType         : 02
 
-[BPDUType         : 02]{lang="EN-US"}
+Flags            : Desi[  P  ]
 
-[Flags            : Desi\[  P  \]]{lang="EN-US"}
+*// 端口GigabitEthernet1/0/1收到长度为42字节的PVST报文，并对报文进行解析得到如下信息：对端设备运行的生成树协议版本号为3，BPDU报文类型为2，VLAN编号为2，且BPDU报文是指定端口发送的Proposal报文*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_36352_15676_1628852642}*[端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[收到长度为]{style="font-family:宋体"}[42]{lang="EN-US"}[字节的]{style="font-family:宋体"}[PVST]{lang="EN-US"}[报文，并对报文进行解析得到如下信息：对端设备运行的生成树协议版本号为]{style="font-family:宋体"}[3]{lang="EN-US"}[，]{style="font-family:宋体"}[BPDU]{lang="EN-US"}[报文类型为]{style="font-family:宋体"}[2]{lang="EN-US"}[，]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[编号为]{style="font-family:宋体"}[2]{lang="EN-US"}[，且]{style="font-family:宋体"}[BPDU]{lang="EN-US"}[报文是指定端口发送的]{style="font-family:宋体"}[Proposal]{lang="EN-US"}[报文]{style="font-family:宋体"}*
+\# 在PVST模式下，打开所有端口的发送生成树报文的详细调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_36352_15676_1628918178}[在]{style="font-family:宋体"}[PVST]{lang="EN-US"}[模式下，打开所有端口的发送生成树报文的详细调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging stp packet send verbose
 
-[[\<Sysname\> debugging stp packet send verbose]{lang="EN-US"}]{#struct_0_36352_15676_x1456154731}
+\*Mar 18 14:28:41:782 2010 Sysname STP/7/PKT:
 
-[\*Mar 18 14:28:41:782 2010 Sysname STP/7/PKT:]{lang="EN-US"}
+Port385(GigabitEthernet1/0/1) VLAN 2 sent RSTP Packet(Length: 42)
 
-[Port385(GigabitEthernet1/0/1) VLAN 2 sent RSTP Packet(Length: 42)]{lang="EN-US"}
+00 00 02 02 6c 80 00 00 e0 fc 00 00 00 00 00 00
 
-[00 00 02 02 6c 80 00 00 e0 fc 00 00 00 00 00 00]{lang="EN-US"}
+00 80 00 00 e0 fc 00 00 00 81 81 00 00 14 00 02
 
-[00 80 00 00 e0 fc 00 00 00 81 81 00 00 14 00 02]{lang="EN-US"}
+00 0f 00 00 00 00 00 02 00 02
 
-[00 0f 00 00 00 00 00 02 00 02]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_36352_15676_1629770146}*[端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[发送长度为]{style="font-family:宋体"}[42]{lang="EN-US"}[字节的]{style="font-family:宋体"}[PVST]{lang="EN-US"}[报文，]{style="font-family:宋体"}[42]{lang="EN-US"}[字节的十六进制报文内容全部显示]{style="font-family:宋体"}*
-
-::: {#-670748357 .myid}
-[]{#_Toc404784420}[]{#struct_0_36352_15676_x669671530}[]{#_Toc144801805}[]{#_Toc143943785}[]{#_Toc148517586}[]{#_Toc148610802}[]{#_Toc148517595}[]{#_Toc148610811}[]{#_Toc148517596}[]{#_Toc148610812}
+*// 端口GigabitEthernet1/0/1发送长度为42字节的PVST报文，42字节的十六进制报文内容全部显示*
 
 **生成树 \-- 生成树调试命令 \-- debugging stp roles**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_36352_15676_575900081}
+【命令】
 
-[**[debugging stp roles]{lang="EN-US"}**]{#struct_0_36352_15676_x1027468275}
+**[debugging stp roles**]
 
-[**[undo debugging stp roles]{lang="EN-US"}**]{#struct_0_36352_15676_x113875033}
+**[undo debugging stp roles**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_36352_15676_1186345203}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_36352_15676_x559497572}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_36352_15676_1131922002}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_36352_15676_x2077295318}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_36352_15676_859692303}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_36352_15676_x269675122}
+【参数】
 
-[[无]{style="font-family:宋体"}]{#struct_0_36352_15676_575965617}
+无
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_36352_15676_195254579}
+【描述】
 
-[**[debugging stp roles]{lang="EN-US"}**]{#struct_0_36352_15676_1938611568}[命令用来打开生成树端口角色变化调试信息开关。]{style="font-family:宋体"}**[undo]{lang="EN-US"}**[ **debugging stp** **roles**]{lang="EN-US"}[命令用来关闭生成树端口角色变化调试信息开关。]{style="font-family:宋体"}
+**[debugging stp roles**]命令用来打开生成树端口角色变化调试信息开关。**undo** **debugging stp** **roles**命令用来关闭生成树端口角色变化调试信息开关。
 
-[[缺省情况下，生成树端口角色变化调试信息开关处于关闭状态。]{style="font-family:宋体"}]{#struct_0_36352_15676_1010933816}
+缺省情况下，生成树端口角色变化调试信息开关处于关闭状态。
 
-[[表1-5 ]{lang="EN-US"}[debugging stp roles]{lang="EN-US"}]{#struct_0_36352_15676_x373774802}[命令输出信息描述表]{style="font-family:黑体"}
+表1-5 debugging stp roles命令输出信息描述表
 
-[]{#table_struct_0_1581452046}[[字段]{style="font-family:黑体"}]{#struct_0_36352_15676_1405146382}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_36352_15676_x296350471}
+描述
 
-[[Instance *InstanceID*'s port *PortID(PortName)* is the currently *String* port]{lang="EN-US"}]{#struct_0_36352_15676_432416203}
+Instance *InstanceID*'s port *PortID(PortName)* is the currently *String* port
 
-[[VLAN *VLANID*'s port *PortID(PortName)* is the current *String* port]{lang="EN-US"}]{#struct_0_36352_15676_1629311393}
+VLAN *VLANID*'s port *PortID(PortName)* is the current *String* port
 
-[[端口]{style="font-family:宋体"}*[PortID(PortName)]{lang="EN-US"}*]{#struct_0_36352_15676_574982577}[在]{style="font-family:宋体"}[MSTI *InstanceID*]{lang="EN-US"}[或]{style="font-family:宋体"}[VLAN *VLANID*]{lang="EN-US"}[上的角色为]{style="font-family:宋体"}*[String]{lang="EN-US"}*[，]{style="font-family:宋体"}*[String]{lang="EN-US"}*[的具体取值包括：]{style="font-family:宋体"}[ALTERNATE]{lang="EN-US"}[、]{style="font-family:宋体"}[BACKUP]{lang="EN-US"}[、]{style="font-family:宋体"}[ROOT]{lang="EN-US"}[、]{style="font-family:宋体"}[DESIGNATED]{lang="EN-US"}[和]{style="font-family:宋体"}[MASTER]{lang="EN-US"}
+端口*PortID(PortName)*在MSTI *InstanceID*或VLAN *VLANID*上的角色为*String*，*String*的具体取值包括：ALTERNATE、BACKUP、ROOT、DESIGNATED和MASTER
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_36352_15676_x1887841385}
+\# 打开生成树端口角色变化调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_36352_15676_x1257502786}[打开生成树端口角色变化调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging stp roles
 
-[[\<Sysname\> debugging stp roles]{lang="EN-US"}]{#struct_0_36352_15676_1128324520}
+\*Mar 18 14:28:41:783 2010 Sysname STP/7/ROLES: slot=6;Instance 2\'s port2(GigabitEthernet1/0/1) is currently ROOT port.
 
-[\*Mar 18 14:28:41:783 2010 Sysname STP/7/ROLES: slot=6;Instance 2\'s port2(GigabitEthernet1/0/1) is currently ROOT port.]{lang="EN-US"}
+*// 端口GigabitEthernet1/0/1在MSTI 2上的端口角色被更新为根端口*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_36352_15676_x383426151}*[端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[在]{style="font-family:宋体"}[MSTI 2]{lang="EN-US"}[上的端口角色被更新为根端口]{style="font-family:宋体"}*
+\# 在PVST模式下，打开生成树端口角色变化调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_36352_15676_1628918177}[在]{style="font-family:宋体"}[PVST]{lang="EN-US"}[模式下，打开生成树端口角色变化调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging stp roles
 
-[[\<Sysname\> debugging stp roles]{lang="EN-US"}]{#struct_0_36352_15676_1629770145}
+\*Mar 18 14:28:41:783 2010 Sysname STP/7/UPDTROLES:Slot=1; The role of ports on VLAN 2 was updated\...
 
-[\*Mar 18 14:28:41:783 2010 Sysname STP/7/UPDTROLES:Slot=1; The role of ports on VLAN 2 was updated\...]{lang="EN-US"}
+\*Mar 18 14:28:41:783 2010 Sysname STP/7/ROLES: Slot=1;VLAN 2\'s port2(GigabitEthernet1/0/1) is the current ROOT port.
 
-[\*Mar 18 14:28:41:783 2010 Sysname STP/7/ROLES: Slot=1;VLAN 2\'s port2(GigabitEthernet1/0/1) is the current ROOT port.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_36352_15676_x1398459526}*[端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[在]{style="font-family:宋体"}[VLAN 2]{lang="EN-US"}[上的端口角色被更新为根端口]{style="font-family:宋体"}*
-
-::: {#-1092076175 .myid}
-[]{#_Toc404784421}[]{#struct_0_36352_15676_1527918115}[]{#_Toc144801806}[]{#_Toc143943786}
+*// 端口GigabitEthernet1/0/1在VLAN 2上的端口角色被更新为根端口*
 
 **生成树 \-- 生成树调试命令 \-- debugging stp tc**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_36352_15676_x1724786801}
+【命令】
 
-[**[debugging stp tc]{lang="EN-US"}**[ \[ **interface** *interface-type* i*nterface-number* \]]{lang="EN-US"}]{#struct_0_36352_15676_1881802779}
+**[debugging stp tc** [ **interface** *interface-type* i*nterface-number* ]]
 
-[**[undo debugging stp tc]{lang="EN-US"}**[ \[ **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_36352_15676_x595096263}
+**[undo debugging stp tc** [ **interface** *interface-type interface-number* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_36352_15676_575048113}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_36352_15676_x820207624}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_36352_15676_87002137}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_36352_15676_1790419037}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_36352_15676_x416661832}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_36352_15676_1317559873}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_36352_15676_1152136378}[：打开或关闭指定端口的生成树]{style="font-family:宋体"}[TC]{lang="EN-US"}[事件调试信息开关，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[为端口类型和端口编号。如果未指定本参数，则打开或关闭所有端口的生成树]{style="font-family:宋体"}[ TC]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：打开或关闭指定端口的生成树TC事件调试信息开关，*interface-type interface-number*为端口类型和端口编号。如果未指定本参数，则打开或关闭所有端口的生成树 TC事件调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_36352_15676_x518100653}
+【描述】
 
-[**[debugging stp]{lang="EN-US"}**[ **tc**]{lang="EN-US"}]{#struct_0_36352_15676_517591572}[命令用来打开生成树]{style="font-family:宋体"}[TC]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}**[undo]{lang="EN-US"}**[ **debugging stp** **tc**]{lang="EN-US"}[命令用来关闭生成树]{style="font-family:宋体"}[TC]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}
+**[debugging stp** **tc**]命令用来打开生成树TC事件调试信息开关。**undo** **debugging stp** **tc**命令用来关闭生成树TC事件调试信息开关。
 
-[[缺省情况下，生成树]{style="font-family:宋体"}[TC]{lang="EN-US"}]{#struct_0_36352_15676_x578912053}[事件调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，生成树TC事件调试信息开关处于关闭状态。
 
-[[表1-6 ]{lang="EN-US"}[debugging stp tc]{lang="EN-US"}]{#struct_0_36352_15676_575506862}[命令输出信息描述表]{style="font-family:黑体"}
+表1-6 debugging stp tc命令输出信息描述表
 
-[]{#table_struct_0_1584512206}[[字段]{style="font-family:黑体"}]{#struct_0_36352_15676_x1932412698}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_36352_15676_x91139685}
+描述
 
-[[TC event *String* occurs on Instance *InstanceID*'s port *PortID(PortName)*]{lang="EN-US"}]{#struct_0_36352_15676_1479916407}
+TC event *String* occurs on Instance *InstanceID*'s port *PortID(PortName)*
 
-[[TC event *String* occurs on VLAN *VLANID*'s port *PortID(PortName*]{lang="EN-US"}]{#struct_0_36352_15676_x1099703037}
+TC event *String* occurs on VLAN *VLANID*'s port *PortID(PortName*
 
-[[端口]{style="font-family:宋体"}*[PortID(PortName)]{lang="EN-US"}*]{#struct_0_36352_15676_238677890}[在]{style="font-family:宋体"}[MSTI *InstanceID*]{lang="EN-US"}[或]{style="font-family:宋体"}[VLAN *VLANID*]{lang="EN-US"}[上发生的]{style="font-family:宋体"}[TC]{lang="EN-US"}[事件为]{style="font-family:宋体"}*[String]{lang="EN-US"}*[，]{style="font-family:宋体"}*[String]{lang="EN-US"}*[的具体取值包括：]{style="font-family:宋体"}
+端口*PortID(PortName)*在MSTI *InstanceID*或VLAN *VLANID*上发生的TC事件为*String*，*String*的具体取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Receiving TCN]{lang="EN-US"}]{#struct_0_36352_15676_x1383283206}[：表示接收]{lang="EN-US" style="font-family:宋体"}[TCN]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+·Receiving TCN：表示接收TCN报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Receiving TCA]{lang="EN-US"}]{#struct_0_36352_15676_452684575}[：表示接收]{lang="EN-US" style="font-family:宋体"}[TCA]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+·Receiving TCA：表示接收TCA报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Receiving TC]{lang="EN-US"}]{#struct_0_36352_15676_575572398}[：表示接收]{lang="EN-US" style="font-family:宋体"}[TC]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+·Receiving TC：表示接收TC报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Sending TCN]{lang="EN-US"}]{#struct_0_36352_15676_1698215642}[：表示发送]{lang="EN-US" style="font-family:宋体"}[TCN]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+·Sending TCN：表示发送TCN报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Sending TC]{lang="EN-US"}]{#struct_0_36352_15676_x1561479485}[：表示发送]{lang="EN-US" style="font-family:宋体"}[TC]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+·Sending TC：表示发送TC报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Sending TCA]{lang="EN-US"}]{#struct_0_36352_15676_x1703753280}[：表示发送]{lang="EN-US" style="font-family:宋体"}[TCA]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+·Sending TCA：表示发送TCA报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TcWhile Expiring]{lang="EN-US"}]{#struct_0_36352_15676_69800354}[：表示]{lang="EN-US" style="font-family:
-  宋体"}[TC]{lang="EN-US"}[报文发送定时器超时]{lang="EN-US" style="font-family:
-  宋体"}
+·TcWhile Expiring：表示TC报文发送定时器超时
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_36352_15676_1610067415}
+\# 在MSTP模式下，打开所有端口的生成树TC事件调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_36352_15676_x1987282496}[在]{style="font-family:宋体"}[MSTP]{lang="EN-US"}[模式下，打开所有端口的生成树]{style="font-family:宋体"}[TC]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging stp tc
 
-[[\<Sysname\> debugging stp tc]{lang="EN-US"}]{#struct_0_36352_15676_575637934}
+\*Mar 18 14:28:41:784 2010 Sysname STP/7/TC: TC event Sending TC occurs on Instance 1\'s port2(GigabitEthernet1/0/1).
 
-[\*Mar 18 14:28:41:784 2010 Sysname STP/7/TC: TC event Sending TC occurs on Instance 1\'s port2(GigabitEthernet1/0/1).]{lang="EN-US"}
+*[// MSTI 1*]*中的端口GigabitEthernet1/0/1发出了TC报文*
 
-[*[// MSTI 1]{lang="EN-US"}*]{#struct_0_36352_15676_689259624}*[中的端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[发出了]{style="font-family:宋体"}[TC]{lang="EN-US"}[报文]{style="font-family:宋体"}*
+\*Mar 18 14:28:41:784 2010 Sysname STP/7/TC: TC event Receiving TC occurs on Instance 1\'s port2(GigabitEthernet1/0/1).
 
-[[\*Mar 18 14:28:41:784 2010 Sysname STP/7/TC: TC event Receiving TC occurs on Instance 1\'s port2(GigabitEthernet1/0/1).]{lang="EN-US"}]{#struct_0_36352_15676_1348739989}
+*[// MSTI 1*]*中的端口GigabitEthernet1/0/1收到了TC报文*
 
-[*[// MSTI 1]{lang="EN-US"}*]{#struct_0_36352_15676_x1708237600}*[中的端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[收到了]{style="font-family:宋体"}[TC]{lang="EN-US"}[报文]{style="font-family:宋体"}*
+\# 在PVST模式下，打开所有端口的生成树TC事件调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_36352_15676_x1099571966}[在]{style="font-family:宋体"}[PVST]{lang="EN-US"}[模式下，打开所有端口的生成树]{style="font-family:宋体"}[TC]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging stp tc
 
-[[\<Sysname\> debugging stp tc]{lang="EN-US"}]{#struct_0_36352_15676_462264660}
+\*Mar 18 14:28:41:784 2010 Sysname STP/8/PORTMSTTC: Slot=1; TC event Sending TC occurs on VLAN 1\'s port2(GigabitEthernet1/0/1).
 
-[\*Mar 18 14:28:41:784 2010 Sysname STP/8/PORTMSTTC: Slot=1; TC event Sending TC occurs on VLAN 1\'s port2(GigabitEthernet1/0/1).]{lang="EN-US"}
+*[// VLAN 1*]*的端口GigabitEthernet1/0/1发出了TC报文*
 
-[*[// VLAN 1]{lang="EN-US"}*]{#struct_0_36352_15676_x1099768574}*[的端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[发出了]{style="font-family:宋体"}[TC]{lang="EN-US"}[报文]{style="font-family:宋体"}*
+\*Mar 18 14:28:41:784 2010 Sysname STP/8/PORTMSTTC: Slot=1; TC event Receiving TC occurs on VLAN 1\'s port2(GigabitEthernet1/0/1).
 
-[[\*Mar 18 14:28:41:784 2010 Sysname STP/8/PORTMSTTC: Slot=1; TC event Receiving TC occurs on VLAN 1\'s port2(GigabitEthernet1/0/1).]{lang="EN-US"}]{#struct_0_36352_15676_x1099703038}
-
-[*[// VLAN 1]{lang="EN-US"}*]{#struct_0_36352_15676_x1064811568}*[的端口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[收到了]{style="font-family:宋体"}[TC]{lang="EN-US"}[报文]{style="font-family:宋体"}*
+*[// VLAN 1*]*的端口GigabitEthernet1/0/1收到了TC报文*

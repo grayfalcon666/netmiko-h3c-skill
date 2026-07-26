@@ -1,1265 +1,1242 @@
-::: {#1620260494 .myid}
-[]{#_Toc404789582}[]{#struct_0_12031_59956_701677540}[]{#_Toc135105529}[]{#_Toc133042077}[]{#_Toc94588229}[]{#_Toc80176776}
 
 **PIM \-- PIM调试命令 \-- debugging pim**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_12031_59956_1909278891}
+【命令】
 
-[**[debugging pim]{lang="EN-US"}**[ \[ **vpn-instance** *vpn-instance-name* \] { **all** \| **df** \| **error** \| { **event** \| **register** \| **routing-table** } \[ *advanced-acl-number* \] \| { **assert** \| **join-prune** \| **rp** \| **state-refresh** } \[ *advanced-acl-number* \] \[ **receive** \| **send** \] \| **neighbor** \[ *basic-acl-number* \] \[ **receive** \| **send** \] }]{lang="EN-US"}]{#struct_0_12031_59956_x483997445}
+**[debugging pim** [ **vpn-instance** *vpn-instance-name*  { **all** \| **df** \| **error** \| { **event** \| **register** \| **routing-table** }  *advanced-acl-number*  \| { **assert** \| **join-prune** \| **rp** \| **state-refresh** }  *advanced-acl-number*  [ **receive** \| **send** ] \| **neighbor**  *basic-acl-number*  [ **receive** \| **send** ] }]]
 
-[**[undo debugging pim]{lang="EN-US"}**[ \[ **vpn-instance** *vpn-instance-name* \] { **all** \| **df** \| **error** \| **event** \| **register** \| **routing-table** \| { **assert** \| **join-prune** \| **neighbor** \| **rp** \| **state-refresh** } \[ **receive** \| **send** \] }]{lang="EN-US"}]{#struct_0_12031_59956_x1177509092}
+**[undo debugging pim** [ **vpn-instance** *vpn-instance-name*  { **all** \| **df** \| **error** \| **event** \| **register** \| **routing-table** \| { **assert** \| **join-prune** \| **neighbor** \| **rp** \| **state-refresh** } [ **receive** \| **send** ] }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_12031_59956_1157247670}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_12031_59956_x1506544361}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_12031_59956_2060458376}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_12031_59956_x314156682}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_12031_59956_x1806124216}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_12031_59956_x36964677}
+【参数】
 
-[**[vpn-instance]{lang="EN-US"}***[ vpn-instance-name]{lang="EN-US"}*]{#struct_0_12031_59956_1213390121}[：指定]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例，]{style="font-family:宋体"}*[vpn-instance-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果未指定本参数，表示公网实例。]{style="font-family:宋体"}
+**[vpn-instance*** vpn-instance-name*]：指定VPN实例，*vpn-instance-name*表示MPLS L3VPN的VPN实例名称，为1～31个字符的字符串，区分大小写。如果未指定本参数，表示公网实例。
 
-[**[all]{lang="EN-US"}**]{#struct_0_12031_59956_x690354870}[：表示]{style="font-family:宋体"}[PIM]{lang="EN-US"}[所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示PIM所有调试信息开关。
 
-[**[df]{lang="EN-US"}**]{#struct_0_12031_59956_x607586232}[：表示双向]{style="font-family:宋体"}[PIM DF]{lang="EN-US"}[选举调试信息开关。]{style="font-family:宋体"}
+**[df**]：表示双向PIM DF选举调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_12031_59956_1370675833}[：表示]{style="font-family:宋体"}[PIM]{lang="EN-US"}[错误调试信息开关。]{style="font-family:宋体"}
+**[error**]：表示PIM错误调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_12031_59956_1919390355}[：表示]{style="font-family:宋体"}[PIM]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示PIM事件调试信息开关。
 
-[**[register]{lang="EN-US"}**]{#struct_0_12031_59956_1292830021}[：表示]{style="font-family:宋体"}[PIM]{lang="EN-US"}[注册报文调试信息开关。]{style="font-family:宋体"}
+**[register**]：表示PIM注册报文调试信息开关。
 
-[**[routing-table]{lang="EN-US"}**]{#struct_0_12031_59956_x313960074}[：表示]{style="font-family:宋体"}[PIM]{lang="EN-US"}[组播路由表状态改变调试信息开关。]{style="font-family:宋体"}
+**[routing-table**]：表示PIM组播路由表状态改变调试信息开关。
 
-[*[advanced-acl-number]{lang="EN-US"}*]{#struct_0_12031_59956_1462358781}[：表示]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[高级]{style="font-family:宋体"}[ACL]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[3000]{lang="EN-US"}[～]{style="font-family:宋体"}[3999]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[advanced-acl-number*]：表示IPv4高级ACL的编号，取值范围为3000～3999。
 
-[**[assert]{lang="EN-US"}**]{#struct_0_12031_59956_196652815}[：表示]{style="font-family:宋体"}[PIM]{lang="EN-US"}[断言报文调试信息开关。]{style="font-family:宋体"}
+**[assert**]：表示PIM断言报文调试信息开关。
 
-[**[join-prune]{lang="EN-US"}**]{#struct_0_12031_59956_1686482510}[：表示]{style="font-family:宋体"}[PIM]{lang="EN-US"}[加入]{style="font-family:宋体"}[/]{lang="EN-US"}[剪枝报文调试信息开关。]{style="font-family:宋体"}
+**[join-prune**]：表示PIM加入/剪枝报文调试信息开关。
 
-[**[rp]{lang="EN-US"}**]{#struct_0_12031_59956_5868984}[：表示]{style="font-family:宋体"}[PIM]{lang="EN-US"}[与]{style="font-family:宋体"}[RP]{lang="EN-US"}[相关报文的调试信息开关。]{style="font-family:宋体"}
+**[rp**]：表示PIM与RP相关报文的调试信息开关。
 
-[**[state-refresh]{lang="EN-US"}**]{#struct_0_12031_59956_x1110829584}[：表示]{style="font-family:宋体"}[PIM]{lang="EN-US"}[状态刷新报文调试信息开关。]{style="font-family:宋体"}
+**[state-refresh**]：表示PIM状态刷新报文调试信息开关。
 
-[**[receive]{lang="EN-US"}**]{#struct_0_12031_59956_x1052523549}[：表示接收的]{style="font-family:宋体"}[PIM]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}
+**[receive**]：表示接收的PIM报文调试信息开关。
 
-[**[send]{lang="EN-US"}**]{#struct_0_12031_59956_1867258884}[：表示发送的]{style="font-family:宋体"}[PIM]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}
+**[send**]：表示发送的PIM报文调试信息开关。
 
-[**[neighbor]{lang="EN-US"}**]{#struct_0_12031_59956_1861463854}[：表示]{style="font-family:宋体"}[PIM]{lang="EN-US"}[与邻居信息相关的调试信息开关。]{style="font-family:宋体"}
+**[neighbor**]：表示PIM与邻居信息相关的调试信息开关。
 
-[*[basic-acl-number]{lang="EN-US"}*]{#struct_0_12031_59956_x314025610}[：表示]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[基本]{style="font-family:宋体"}[ACL]{lang="EN-US"}[的编号，取值范围为]{style="font-family:宋体"}[2000]{lang="EN-US"}[～]{style="font-family:宋体"}[2999]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[basic-acl-number*]：表示IPv4基本ACL的编号，取值范围为2000～2999。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_12031_59956_916270985}
+【描述】
 
-[**[debugging pim]{lang="EN-US"}**]{#struct_0_12031_59956_x494255813}[命令用来打开]{style="font-family:宋体"}[PIM]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}**[undo debugging pim]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[PIM]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}
+**[debugging pim**]命令用来打开PIM调试信息开关。**undo debugging pim**命令用来关闭PIM调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[PIM]{lang="EN-US"}]{#struct_0_12031_59956_1636991827}[调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，PIM调试信息开关处于关闭状态。
 
-[[表1-1 ]{lang="EN-US"}[debugging pim assert]{lang="EN-US"}]{#struct_0_12031_59956_870489946}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging pim assert命令输出信息描述表
 
-[]{#table_struct_0_588262309}[[字段]{style="font-family:黑体"}]{#struct_0_12031_59956_x1081059341}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_12031_59956_x2005507759}
+描述
 
-[[Assert FSM]{lang="EN-US"}]{#struct_0_12031_59956_x313829002}
+Assert FSM
 
-[[断言状态机]{style="font-family:宋体"}]{#struct_0_12031_59956_x919338146}
+断言状态机
 
-[*[state1]{lang="EN-US"}*[-\>*state2*]{lang="EN-US"}]{#struct_0_12031_59956_1253668632}
+*[state1*-\>*state2*]
 
-[[断言状态机从]{style="font-family:宋体"}*[state1]{lang="EN-US"}*]{#struct_0_12031_59956_1837025700}[转换到]{style="font-family:宋体"}*[state2]{lang="EN-US"}*
+断言状态机从*state1*转换到*state2*
 
-[[loser/winner/noinfo]{lang="EN-US"}]{#struct_0_12031_59956_x1690513900}
+loser/winner/noinfo
 
-[[断言状态机处于]{style="font-family:宋体"}[Loser/Winner/Noinfo]{lang="EN-US"}]{#struct_0_12031_59956_x896862077}[状态]{style="font-family:宋体"}
+断言状态机处于Loser/Winner/Noinfo状态
 
-[[timeout of the winner]{lang="EN-US"}]{#struct_0_12031_59956_x857326224}
+timeout of the winner
 
-[[Winner]{lang="EN-US"}]{#struct_0_12031_59956_x313894538}[老化]{style="font-family:宋体"}
+Winner老化
 
-[[Rbit]{lang="EN-US"}]{#struct_0_12031_59956_x2107660914}
+Rbit
 
-[[RPT]{lang="EN-US"}]{#struct_0_12031_59956_1806010812}[标识位]{style="font-family:宋体"}
+RPT标识位
 
-[[Preference]{lang="EN-US"}]{#struct_0_12031_59956_x769514519}
+Preference
 
-[[优先级字段]{style="font-family:宋体"}]{#struct_0_12031_59956_x628624497}
+优先级字段
 
-[[Metric]{lang="EN-US"}]{#struct_0_12031_59956_1353985846}
+Metric
 
-[[Metric]{lang="EN-US"}]{#struct_0_12031_59956_x314353293}[字段]{style="font-family:宋体"}
+Metric字段
 
-[[assert timer expired]{lang="EN-US"}]{#struct_0_12031_59956_964588660}
+assert timer expired
 
-[[断言定时器超时]{style="font-family:宋体"}]{#struct_0_12031_59956_1714398915}
+断言定时器超时
 
-[[insufficient memory]{lang="EN-US"}]{#struct_0_12031_59956_1832757790}
+insufficient memory
 
-[[内存不足]{style="font-family:宋体"}]{#struct_0_12031_59956_x698239262}
+内存不足
 
-[[inferior assert]{lang="EN-US"}]{#struct_0_12031_59956_x314418829}
+inferior assert
 
-[[度量值比自身差的断言报文]{style="font-family:宋体"}]{#struct_0_12031_59956_x237471881}
+度量值比自身差的断言报文
 
-[[acceptable assert]{lang="EN-US"}]{#struct_0_12031_59956_714960384}
+acceptable assert
 
-[[来自断言获胜路由器的度量值比自身好的断言报文]{style="font-family:宋体"}]{#struct_0_12031_59956_x337136501}
+来自断言获胜路由器的度量值比自身好的断言报文
 
-[[preferred assert]{lang="EN-US"}]{#struct_0_12031_59956_1729099994}
+preferred assert
 
-[[比当前断言获胜路由器具备更优开销的断言报文]{style="font-family:宋体"}]{#struct_0_12031_59956_x314222221}
+比当前断言获胜路由器具备更优开销的断言报文
 
-[[NIIF]{lang="EN-US"}]{#struct_0_12031_59956_x607852349}
+NIIF
 
-[[入接口为空]{style="font-family:宋体"}]{#struct_0_12031_59956_1031014571}
+入接口为空
 
-[[OIF]{lang="EN-US"}]{#struct_0_12031_59956_124273332}
+OIF
 
-[[出接口]{style="font-family:宋体"}]{#struct_0_12031_59956_x989606180}
+出接口
 
-[[(\*,G) Entry is not exist]{lang="EN-US"}]{#struct_0_12031_59956_x314287757}
+(\*,G) Entry is not exist
 
-[[（]{style="font-family:宋体"}[\*]{lang="EN-US"}]{#struct_0_12031_59956_2079606417}[，]{style="font-family:宋体"}[G]{lang="EN-US"}[）表项不存在]{style="font-family:宋体"}
+（\*，G）表项不存在
 
-[[self metric]{lang="EN-US"}]{#struct_0_12031_59956_525788267}
+self metric
 
-[[自身到源的路由度量值]{style="font-family:宋体"}]{#struct_0_12031_59956_x691787412}
+自身到源的路由度量值
 
-[[unknown neighbor]{lang="EN-US"}]{#struct_0_12031_59956_x314091149}
+unknown neighbor
 
-[[未知邻居]{style="font-family:宋体"}]{#struct_0_12031_59956_529161498}
+未知邻居
 
-[[wrong packet length]{lang="EN-US"}]{#struct_0_12031_59956_x1884349741}
+wrong packet length
 
-[[报文长度非法]{style="font-family:宋体"}]{#struct_0_12031_59956_x344246991}
+报文长度非法
 
-[[bad group address]{lang="EN-US"}]{#struct_0_12031_59956_697521409}
+bad group address
 
-[[错误的组地址]{style="font-family:宋体"}]{#struct_0_12031_59956_x314156685}
+错误的组地址
 
-[[invalid group address]{lang="EN-US"}]{#struct_0_12031_59956_x1805796536}
+invalid group address
 
-[[非法的组地址]{style="font-family:宋体"}]{#struct_0_12031_59956_2021065442}
+非法的组地址
 
-[[group boundary]{lang="EN-US"}]{#struct_0_12031_59956_x418002542}
+group boundary
 
-[[组边界]{style="font-family:宋体"}]{#struct_0_12031_59956_x313960077}
+组边界
 
-[[bad source address]{lang="EN-US"}]{#struct_0_12031_59956_1462293245}
+bad source address
 
-[[错误的源地址]{style="font-family:宋体"}]{#struct_0_12031_59956_x1450069533}
+错误的源地址
 
-[[invalid source address]{lang="EN-US"}]{#struct_0_12031_59956_x314025613}
+invalid source address
 
-[[非法的源地址]{style="font-family:宋体"}]{#struct_0_12031_59956_916205449}
+非法的源地址
 
-[[SSM group]{lang="EN-US"}]{#struct_0_12031_59956_212550599}
+SSM group
 
-[[SSM]{lang="EN-US"}]{#struct_0_12031_59956_1109117352}[组]{style="font-family:宋体"}
+SSM组
 
-[ ]{lang="EN-US"}
+表1-2 debugging pim df命令输出信息描述表
 
-[[表1-2 ]{lang="EN-US"}[debugging pim df]{lang="EN-US"}]{#struct_0_12031_59956_x935624287}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_616806506}[[字段]{style="font-family:黑体"}]{#struct_0_12031_59956_x313829005}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_12031_59956_x919403682}
+DF election/DF-Election
 
-[[DF election/DF-Election]{lang="EN-US"}]{#struct_0_12031_59956_x1044548396}
+DF选举
 
-[[DF]{lang="EN-US"}]{#struct_0_12031_59956_x202016222}[选举]{style="font-family:宋体"}
+DFT
 
-[[DFT]{lang="EN-US"}]{#struct_0_12031_59956_1122556342}
+DF选举定时器
 
-[[DF]{lang="EN-US"}]{#struct_0_12031_59956_773540355}[选举定时器]{style="font-family:宋体"}
+WinTimer
 
-[[WinTimer]{lang="EN-US"}]{#struct_0_12031_59956_x313894541}
+Winner定时器
 
-[[Winner]{lang="EN-US"}]{#struct_0_12031_59956_x2107202167}[定时器]{style="font-family:宋体"}
+expire time
 
-[[expire time]{lang="EN-US"}]{#struct_0_12031_59956_x720150453}
+定时器的超时时间
 
-[[定时器的超时时间]{style="font-family:宋体"}]{#struct_0_12031_59956_2051408079}
+MC
 
-[[MC]{lang="EN-US"}]{#struct_0_12031_59956_1333509611}
+Offer或Winner报文的发送个数
 
-[[Offer]{lang="EN-US"}]{#struct_0_12031_59956_x814791498}[或]{style="font-family:宋体"}[Winner]{lang="EN-US"}[报文的发送个数]{style="font-family:宋体"}
+robustness
 
-[[robustness]{lang="EN-US"}]{#struct_0_12031_59956_x151560658}
+DF选举健壮系数，缺省值为3
 
-[[DF]{lang="EN-US"}]{#struct_0_12031_59956_x314353292}[选举健壮系数，缺省值为]{style="font-family:宋体"}[3]{lang="EN-US"}
+RPL
 
-[[RPL]{lang="EN-US"}]{#struct_0_12031_59956_964654196}
+RPL链路
 
-[[RPL]{lang="EN-US"}]{#struct_0_12031_59956_x1486236173}[链路]{style="font-family:宋体"}
+Offer
 
-[[Offer]{lang="EN-US"}]{#struct_0_12031_59956_563034326}
+DF选举的初始状态
 
-[[DF]{lang="EN-US"}]{#struct_0_12031_59956_x1894942514}[选举的初始状态]{style="font-family:宋体"}
+Lose
 
-[[Lose]{lang="EN-US"}]{#struct_0_12031_59956_x314418828}
+DF选举失败
 
-[[DF]{lang="EN-US"}]{#struct_0_12031_59956_x237406345}[选举失败]{style="font-family:宋体"}
+Win
 
-[[Win]{lang="EN-US"}]{#struct_0_12031_59956_x1962804895}
+DF选举胜出
 
-[[DF]{lang="EN-US"}]{#struct_0_12031_59956_227365568}[选举胜出]{style="font-family:宋体"}
+Backoff
 
-[[Backoff]{lang="EN-US"}]{#struct_0_12031_59956_790005393}
+处于Win状态的DF收到更优的Offer报文
 
-[[处于]{style="font-family:宋体"}[Win]{lang="EN-US"}]{#struct_0_12031_59956_2107938246}[状态的]{style="font-family:宋体"}[DF]{lang="EN-US"}[收到更优的]{style="font-family:宋体"}[Offer]{lang="EN-US"}[报文]{style="font-family:宋体"}
+DF FSM
 
-[[DF FSM]{lang="EN-US"}]{#struct_0_12031_59956_x314222220}
+DF选举状态
 
-[[DF]{lang="EN-US"}]{#struct_0_12031_59956_x607917885}[选举状态]{style="font-family:宋体"}
+Receive better Backoff/Pass/Offer/Win
 
-[[Receive better Backoff/Pass/Offer/Win]{lang="EN-US"}]{#struct_0_12031_59956_1737510815}
+收到更优的Backoff/Pass/Offer/Win报文
 
-[[收到更优的]{style="font-family:宋体"}[Backoff/Pass/Offer/Win]{lang="EN-US"}]{#struct_0_12031_59956_x1346235274}[报文]{style="font-family:宋体"}
+Receive worse Backoff/Pass/Offer/Win
 
-[[Receive worse Backoff/Pass/Offer/Win]{lang="EN-US"}]{#struct_0_12031_59956_x458967221}
+收到更差的Backoff/Pass/Offer/Win报文
 
-[[收到更差的]{style="font-family:宋体"}[Backoff/Pass/Offer/Win]{lang="EN-US"}]{#struct_0_12031_59956_x314287756}[报文]{style="font-family:宋体"}
+Receive Backoff/Pass for us
 
-[[Receive Backoff/Pass for us]{lang="EN-US"}]{#struct_0_12031_59956_2079540881}
+收到通告自己的Backoff/Pass报文
 
-[[收到通告自己的]{style="font-family:宋体"}[Backoff/Pass]{lang="EN-US"}]{#struct_0_12031_59956_x677369695}[报文]{style="font-family:宋体"}
+表1-3 debugging pim error命令输出信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表1-3 ]{lang="EN-US"}[debugging pim error]{lang="EN-US"}]{#struct_0_12031_59956_1146677441}[命令输出信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_614268738}[[字段]{style="font-family:黑体"}]{#struct_0_12031_59956_x522126199}
+IPC data
 
-[[描述]{style="font-family:黑体"}]{#struct_0_12031_59956_x314091148}
+用于进程间通信的数据
 
-[[IPC data]{lang="EN-US"}]{#struct_0_12031_59956_529227034}
+Mfib
 
-[[用于进程间通信的数据]{style="font-family:宋体"}]{#struct_0_12031_59956_1858488295}
+组播转发信息库
 
-[[Mfib]{lang="EN-US"}]{#struct_0_12031_59956_2082130284}
+Reference
 
-[[组播转发信息库]{style="font-family:宋体"}]{#struct_0_12031_59956_x1642173800}
+引用计数
 
-[[Reference]{lang="EN-US"}]{#struct_0_12031_59956_x1503423160}
+config info
 
-[[引用计数]{style="font-family:宋体"}]{#struct_0_12031_59956_x1346325436}
+配置信息
 
-[[config info]{lang="EN-US"}]{#struct_0_12031_59956_x314156684}
+insufficient memory
 
-[[配置信息]{style="font-family:宋体"}]{#struct_0_12031_59956_x1805731000}
+内存不足
 
-[[insufficient memory]{lang="EN-US"}]{#struct_0_12031_59956_x569512351}
+secondary address node
 
-[[内存不足]{style="font-family:宋体"}]{#struct_0_12031_59956_x502199715}
+二级地址节点
 
-[[secondary address node]{lang="EN-US"}]{#struct_0_12031_59956_x48362928}
+unsupported PIM packet type
 
-[[二级地址节点]{style="font-family:宋体"}]{#struct_0_12031_59956_462951671}
+不支持的PIM数据包类型
 
-[[unsupported PIM packet type]{lang="EN-US"}]{#struct_0_12031_59956_x313960076}
+checksum error
 
-[[不支持的]{style="font-family:宋体"}[PIM]{lang="EN-US"}]{#struct_0_12031_59956_1462227709}[数据包类型]{style="font-family:宋体"}
+检验和字段错误
 
-[[checksum error]{lang="EN-US"}]{#struct_0_12031_59956_x1830321077}
+invalid pim interface
 
-[[检验和字段错误]{style="font-family:宋体"}]{#struct_0_12031_59956_1481146620}
+非法的PIM接口
 
-[[invalid pim interface]{lang="EN-US"}]{#struct_0_12031_59956_x998547321}
+unknown neighbor
 
-[[非法的]{style="font-family:宋体"}[PIM]{lang="EN-US"}]{#struct_0_12031_59956_1088592543}[接口]{style="font-family:宋体"}
+未知邻居
 
-[[unknown neighbor]{lang="EN-US"}]{#struct_0_12031_59956_x314025612}
+CRPT
 
-[[未知邻居]{style="font-family:宋体"}]{#struct_0_12031_59956_916139913}
+C-RP发送定时器
 
-[[CRPT]{lang="EN-US"}]{#struct_0_12031_59956_x806796867}
+Blank Group
 
-[[C-RP]{lang="EN-US"}]{#struct_0_12031_59956_410376889}[发送定时器]{style="font-family:宋体"}
+不存在C-RP的组
 
-[[Blank Group]{lang="EN-US"}]{#struct_0_12031_59956_x884034533}
+Fail to get ifindex
 
-[[不存在]{style="font-family:宋体"}[C-RP]{lang="EN-US"}]{#struct_0_12031_59956_x313829004}[的组]{style="font-family:宋体"}
+获取接口索引失败
 
-[[Fail to get ifindex]{lang="EN-US"}]{#struct_0_12031_59956_x919469218}
+best route
 
-[[获取接口索引失败]{style="font-family:宋体"}]{#struct_0_12031_59956_1235485401}
+最优路由
 
-[[best route]{lang="EN-US"}]{#struct_0_12031_59956_1640811920}
+Assert_Timer
 
-[[最优路由]{style="font-family:宋体"}]{#struct_0_12031_59956_1997846378}
+断言定时器
 
-[[Assert_Timer]{lang="EN-US"}]{#struct_0_12031_59956_x313894540}
+invalid event
 
-[[断言定时器]{style="font-family:宋体"}]{#struct_0_12031_59956_x2107136631}
+非法事件
 
-[[invalid event]{lang="EN-US"}]{#struct_0_12031_59956_1112818051}
+MRIB
 
-[[非法事件]{style="font-family:宋体"}]{#struct_0_12031_59956_1166321912}
+组播路由信息库
 
-[[MRIB]{lang="EN-US"}]{#struct_0_12031_59956_x314353295}
+valid RPF interface
 
-[[组播路由信息库]{style="font-family:宋体"}]{#struct_0_12031_59956_964981876}
+合法的RPF邻居
 
-[[valid RPF interface]{lang="EN-US"}]{#struct_0_12031_59956_x1718614205}
+Ifstate
 
-[[合法的]{style="font-family:宋体"}[RPF]{lang="EN-US"}]{#struct_0_12031_59956_741101676}[邻居]{style="font-family:宋体"}
+接口状态
 
-[[Ifstate]{lang="EN-US"}]{#struct_0_12031_59956_x314418831}
+negotiation
 
-[[接口状态]{style="font-family:宋体"}]{#struct_0_12031_59956_x237996170}
+协商
 
-[[negotiation]{lang="EN-US"}]{#struct_0_12031_59956_x1599997507}
+wrong flag
 
-[[协商]{style="font-family:宋体"}]{#struct_0_12031_59956_x1074473152}
+错误标识
 
-[[wrong flag]{lang="EN-US"}]{#struct_0_12031_59956_x314222223}
+表1-4 debugging pim event命令输出信息描述表
 
-[[错误标识]{style="font-family:宋体"}]{#struct_0_12031_59956_x607983421}
+字段
 
-[ ]{lang="EN-US"}
+描述
 
-[[表1-4 ]{lang="EN-US"}[debugging pim event]{lang="EN-US"}]{#struct_0_12031_59956_1391426861}[命令输出信息描述表]{style="font-family:黑体"}
+PIM mrt
 
-[]{#table_struct_0_608466972}[[字段]{style="font-family:黑体"}]{#struct_0_12031_59956_x921550499}
+PIM组播路由表
 
-[[描述]{style="font-family:黑体"}]{#struct_0_12031_59956_x527892158}
+No-Cache msg
 
-[[PIM mrt]{lang="EN-US"}]{#struct_0_12031_59956_x933631218}
+未知组播消息
 
-[[PIM]{lang="EN-US"}]{#struct_0_12031_59956_x1290703303}[组播路由表]{style="font-family:宋体"}
+Wrong-If msg
 
-[[No-Cache msg]{lang="EN-US"}]{#struct_0_12031_59956_x314287759}
+从非入接口收到组播流消息
 
-[[未知组播消息]{style="font-family:宋体"}]{#struct_0_12031_59956_2079737489}
+SPT msg
 
-[[Wrong-If msg]{lang="EN-US"}]{#struct_0_12031_59956_2084990822}
+SPT切换消息
 
-[[从非入接口收到组播流消息]{style="font-family:宋体"}]{#struct_0_12031_59956_995781030}
+Active msg
 
-[[SPT msg]{lang="EN-US"}]{#struct_0_12031_59956_x653114463}
+MFIB上报新的组播流消息
 
-[[SPT]{lang="EN-US"}]{#struct_0_12031_59956_x745594985}[切换消息]{style="font-family:宋体"}
+Inactive msg
 
-[[Active msg]{lang="EN-US"}]{#struct_0_12031_59956_x314091151}
+MFIB上报流老化消息
 
-[[MFIB]{lang="EN-US"}]{#struct_0_12031_59956_529685785}[上报新的组播流消息]{style="font-family:宋体"}
+Reg-Timeout msg
 
-[[Inactive msg]{lang="EN-US"}]{#struct_0_12031_59956_868268759}
+注册定时器超时消息
 
-[[MFIB]{lang="EN-US"}]{#struct_0_12031_59956_x1296372064}[上报流老化消息]{style="font-family:宋体"}
+reset forwarding-table msg
 
-[[Reg-Timeout msg]{lang="EN-US"}]{#struct_0_12031_59956_x1607337500}
+MIFB转发表重置消息
 
-[[注册定时器超时消息]{style="font-family:宋体"}]{#struct_0_12031_59956_532416902}
+Received BFD event: *type*, *source* -\> *destination*, *interface*
 
-[[reset forwarding-table msg]{lang="EN-US"}]{#struct_0_12031_59956_x314156687}
+收到BFD会话消息：类型为*type*，源地址为*source*，目的地址为*destination*，接口为*interface*
 
-[[MIFB]{lang="EN-US"}]{#struct_0_12031_59956_x1805927608}[转发表重置消息]{style="font-family:宋体"}
+表1-5 debugging pim join-prune命令输出信息描述表
 
-[[Received BFD event: *type*, *source* -\> *destination*, *interface*]{lang="EN-US"}]{#struct_0_12031_59956_x1439340464}
+字段
 
-[[收到]{style="font-family:宋体"}[BFD]{lang="EN-US"}]{#struct_0_12031_59956_1046792712}[会话消息：类型为]{style="font-family:宋体"}*[type]{lang="EN-US"}*[，源地址为]{style="font-family:宋体"}*[source]{lang="EN-US"}*[，目的地址为]{style="font-family:宋体"}*[destination]{lang="EN-US"}*[，接口为]{style="font-family:宋体"}*[interface]{lang="EN-US"}*
+描述
 
-[ ]{lang="EN-US"}
+JP
 
-[[表1-5 ]{lang="EN-US"}[debugging pim join-prune]{lang="EN-US"}]{#struct_0_12031_59956_1996905024}[命令输出信息描述表]{style="font-family:黑体"}
+加入/剪枝报文
 
-[]{#table_struct_0_610804813}[[字段]{style="font-family:黑体"}]{#struct_0_12031_59956_x296241835}
+Upstream
 
-[[描述]{style="font-family:黑体"}]{#struct_0_12031_59956_x313960079}
+报文中的上游邻居信息
 
-[[JP]{lang="EN-US"}]{#struct_0_12031_59956_1461637885}
+Groups
 
-[[加入]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_12031_59956_x507477041}[剪枝报文]{style="font-family:宋体"}
+报文中的组数目信息
 
-[[Upstream]{lang="EN-US"}]{#struct_0_12031_59956_149901110}
+Holdtime
 
-[[报文中的上游邻居信息]{style="font-family:宋体"}]{#struct_0_12031_59956_144172050}
+加入/剪枝报文的保持时间字段
 
-[[Groups]{lang="EN-US"}]{#struct_0_12031_59956_572605301}
+Group: *addr*/*mask* \-\-- *m* joins *n* prunes
 
-[[报文中的组数目信息]{style="font-family:宋体"}]{#struct_0_12031_59956_x1079672659}
+报文中的组信息：组地址/掩码长度------*m*个加入*n*个剪枝
 
-[[Holdtime]{lang="EN-US"}]{#struct_0_12031_59956_x314025615}
+Join: *addr/mask* flag
 
-[[加入]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_12031_59956_916074377}[剪枝报文的保持时间字段]{style="font-family:宋体"}
+加入：源地址/掩码，标志位
 
-[[Group: *addr*/*mask* \-\-- *m* joins *n* prunes]{lang="EN-US"}]{#struct_0_12031_59956_x825634997}
+RP change
 
-[[报文中的组信息：组地址]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_12031_59956_x909168843}[掩码长度------]{style="font-family:宋体"}*[m]{lang="EN-US"}*[个加入]{style="font-family:宋体"}*[n]{lang="EN-US"}*[个剪枝]{style="font-family:宋体"}
+RP发生变化
 
-[[Join: *addr/mask* flag]{lang="EN-US"}]{#struct_0_12031_59956_x487877197}
+the packet is received from interface *A*, but destination is *B*. Ignored.
 
-[[加入：源地址]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_12031_59956_571188038}[掩码，标志位]{style="font-family:宋体"}
+从接口A上收到一个发给B的报文，将其丢弃
 
-[[RP change]{lang="EN-US"}]{#struct_0_12031_59956_x313829007}
+Message Truncated
 
-[[RP]{lang="EN-US"}]{#struct_0_12031_59956_x919534754}[发生变化]{style="font-family:宋体"}
+报文长度非法
 
-[[the packet is received from interface *A*, but destination is *B*. Ignored.]{lang="EN-US"}]{#struct_0_12031_59956_x1454136081}
+multicast boundary
 
-[[从接口]{style="font-family:宋体"}[A]{lang="EN-US"}]{#struct_0_12031_59956_942267076}[上收到一个发给]{style="font-family:宋体"}[B]{lang="EN-US"}[的报文，将其丢弃]{style="font-family:宋体"}
+组播边界
 
-[[Message Truncated]{lang="EN-US"}]{#struct_0_12031_59956_1114198336}
+Join/Prune received from non-local neighbor
 
-[[报文长度非法]{style="font-family:宋体"}]{#struct_0_12031_59956_x313894543}
+从不属于本接口网段的上游邻居收到一个加入/剪枝报文
 
-[[multicast boundary]{lang="EN-US"}]{#struct_0_12031_59956_x2107333239}
+*[Address *is not a valid multicast address]
 
-[[组播边界]{style="font-family:宋体"}]{#struct_0_12031_59956_804185695}
+*[Address*]是一个非法组播地址
 
-[[Join/Prune received from non-local neighbor]{lang="EN-US"}]{#struct_0_12031_59956_897819338}
+Message from unknown neighbor
 
-[[从不属于本接口网段的上游邻居收到一个加入]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_12031_59956_2007155538}[剪枝报文]{style="font-family:宋体"}
+从未知邻居收到报文
 
-[*[Address ]{lang="EN-US"}*[is not a valid multicast address]{lang="EN-US"}]{#struct_0_12031_59956_x314353294}
+表1-6 debugging pim neighbor命令输出信息描述表
 
-[*[Address]{lang="EN-US"}*]{#struct_0_12031_59956_965047412}[是一个非法组播地址]{style="font-family:宋体"}
+字段
 
-[[Message from unknown neighbor]{lang="EN-US"}]{#struct_0_12031_59956_x209293366}
+描述
 
-[[从未知邻居收到报文]{style="font-family:宋体"}]{#struct_0_12031_59956_1087798303}
+hello packet
 
-[ ]{lang="EN-US"}
+PIM Hello报文
 
-[[表1-6 ]{lang="EN-US"}[debugging pim neighbor]{lang="EN-US"}]{#struct_0_12031_59956_499765817}[命令输出信息描述表]{style="font-family:黑体"}
+invalid secondary address
 
-[]{#table_struct_0_607475458}[[字段]{style="font-family:黑体"}]{#struct_0_12031_59956_x1811767401}
+非法二级地址
 
-[[描述]{style="font-family:黑体"}]{#struct_0_12031_59956_x314418830}
+Holdtime
 
-[[hello packet]{lang="EN-US"}]{#struct_0_12031_59956_x237930634}
+PIM Hello报文的保持时间字段
 
-[[PIM Hello]{lang="EN-US"}]{#struct_0_12031_59956_775807735}[报文]{style="font-family:宋体"}
+Tbit
 
-[[invalid secondary address]{lang="EN-US"}]{#struct_0_12031_59956_973003602}
+T位选项
 
-[[非法二级地址]{style="font-family:宋体"}]{#struct_0_12031_59956_x1334228626}
+Lan delay
 
-[[Holdtime]{lang="EN-US"}]{#struct_0_12031_59956_1278586646}
+剪枝延迟时间选项
 
-[[PIM Hello]{lang="EN-US"}]{#struct_0_12031_59956_x800264190}[报文的保持时间字段]{style="font-family:宋体"}
+Override interval
 
-[[Tbit]{lang="EN-US"}]{#struct_0_12031_59956_x314222222}
+剪枝否决时间选项
 
-[[T]{lang="EN-US"}]{#struct_0_12031_59956_x608048957}[位选项]{style="font-family:宋体"}
+DR priority
 
-[[Lan delay]{lang="EN-US"}]{#struct_0_12031_59956_365991250}
+DR优先级选项
 
-[[剪枝延迟时间选项]{style="font-family:宋体"}]{#struct_0_12031_59956_1978937937}
+Genid
 
-[[Override interval]{lang="EN-US"}]{#struct_0_12031_59956_1937603302}
+Generation ID选项
 
-[[剪枝否决时间选项]{style="font-family:宋体"}]{#struct_0_12031_59956_x1937995404}
+Discarding Hello packet from *address* without Generation ID.
 
-[[DR priority]{lang="EN-US"}]{#struct_0_12031_59956_x314287758}
+丢弃没有Generation ID的Hello报文
 
-[[DR]{lang="EN-US"}]{#struct_0_12031_59956_2079671953}[优先级选项]{style="font-family:宋体"}
+the neighbor information being refreshed
 
-[[Genid]{lang="EN-US"}]{#struct_0_12031_59956_x1456294862}
+更新邻居信息
 
-[[Generation ID]{lang="EN-US"}]{#struct_0_12031_59956_x49339679}[选项]{style="font-family:宋体"}
+Too many neighbors, ignoring new neighbor *address*.
 
-[[Discarding Hello packet from *address* without Generation ID.]{lang="EN-US"}]{#struct_0_12031_59956_x1027731709}
+邻居过多，忽略新的Hello报文
 
-[[丢弃没有]{style="font-family:宋体"}[Generation ID]{lang="EN-US"}]{#struct_0_12031_59956_x314091150}[的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+secondary address list
 
-[[the neighbor information being refreshed]{lang="EN-US"}]{#struct_0_12031_59956_529751321}
+二级地址列表
 
-[[更新邻居信息]{style="font-family:宋体"}]{#struct_0_12031_59956_482339390}
+bad secondary address
 
-[[Too many neighbors, ignoring new neighbor *address*.]{lang="EN-US"}]{#struct_0_12031_59956_765754511}
+错误的二级地址
 
-[[邻居过多，忽略新的]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_12031_59956_x1739668481}[报文]{style="font-family:宋体"}
+Received Hello packet from invalid source: *address*
 
-[[secondary address list]{lang="EN-US"}]{#struct_0_12031_59956_x314156686}
+收到来自非法源地址的Hello报文
 
-[[二级地址列表]{style="font-family:宋体"}]{#struct_0_12031_59956_x1805862072}
+Received Hello packet on *interface* from non-local source: *address*
 
-[[bad secondary address]{lang="EN-US"}]{#struct_0_12031_59956_1089291228}
+收到非本地主机的Hello报文
 
-[[错误的二级地址]{style="font-family:宋体"}]{#struct_0_12031_59956_x1303319475}
+Received Hello packet with short data from *address*
 
-[[Received Hello packet from invalid source: *address*]{lang="EN-US"}]{#struct_0_12031_59956_2140048709}
+收到数据不完整的Hello报文
 
-[[收到来自非法源地址的]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_12031_59956_x313960078}[报文]{style="font-family:宋体"}
+Received Hello packet from *address* with wrong Holdtime length:
 
-[[Received Hello packet on *interface* from non-local source: *address*]{lang="EN-US"}]{#struct_0_12031_59956_1461572349}
+收到Holdtime选项长度非法的Hello报文
 
-[[收到非本地主机的]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_12031_59956_x1685570469}[报文]{style="font-family:宋体"}
+Received Hello packet from *address* with invalid LAN Prune Delay length:
 
-[[Received Hello packet with short data from *address*]{lang="EN-US"}]{#struct_0_12031_59956_x52318390}
+收到LAN Prune Delay选项长度非法的Hello报文
 
-[[收到数据不完整的]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_12031_59956_x314025614}[报文]{style="font-family:宋体"}
+Received Hello packet from *address* with invalid DR Priority length:
 
-[[Received Hello packet from *address* with wrong Holdtime length:]{lang="EN-US"}]{#struct_0_12031_59956_916008841}
+收到DR优先级选项长度非法的Hello报文
 
-[[收到]{style="font-family:宋体"}[Holdtime]{lang="EN-US"}]{#struct_0_12031_59956_1551420539}[选项长度非法的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+Received Hello packet from *address* with invalid Generation ID length:
 
-[[Received Hello packet from *address* with invalid LAN Prune Delay length:]{lang="EN-US"}]{#struct_0_12031_59956_1678124175}
+收到Generation ID选项长度非法的Hello报文
 
-[[收到]{style="font-family:宋体"}[LAN Prune Delay]{lang="EN-US"}]{#struct_0_12031_59956_x313829006}[选项长度非法的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+Received Hello packet from *address* with invalid State Refresh length:
 
-[[Received Hello packet from *address* with invalid DR Priority length:]{lang="EN-US"}]{#struct_0_12031_59956_x919600290}
+收到状态更新选项长度非法的Hello报文
 
-[[收到]{style="font-family:宋体"}[DR]{lang="EN-US"}]{#struct_0_12031_59956_x683027738}[优先级选项长度非法的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+Received Hello packet from *address* with Bidir option
 
-[[Received Hello packet from *address* with invalid Generation ID length:]{lang="EN-US"}]{#struct_0_12031_59956_277586393}
+收到带有双向PIM选项的Hello报文
 
-[[收到]{style="font-family:宋体"}[Generation ID]{lang="EN-US"}]{#struct_0_12031_59956_x313894542}[选项长度非法的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+Received Hello packet from *address* with unsupported option:
 
-[[Received Hello packet from *address* with invalid State Refresh length:]{lang="EN-US"}]{#struct_0_12031_59956_x2107267703}
+收到带有错误选项的Hello报文
 
-[[收到状态更新选项长度非法的]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_12031_59956_x244706025}[报文]{style="font-family:宋体"}
+Received Hello packet from *address* with wrong data length
 
-[[Received Hello packet from *address* with Bidir option]{lang="EN-US"}]{#struct_0_12031_59956_89478609}
+收到长度错误的Hello报文
 
-[[收到带有双向]{style="font-family:宋体"}[PIM]{lang="EN-US"}]{#struct_0_12031_59956_x725797654}[选项的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+Notify create/delete/disable BFD session *source* -\> *destination*, *interface*
 
-[[Received Hello packet from *address* with unsupported option:]{lang="EN-US"}]{#struct_0_12031_59956_1607961010}
+通知创建/删除/关闭BFD会话，源地址为*source*，目的地址为*destination*，接口为*interface*
 
-[[收到带有错误选项的]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_12031_59956_x939419812}[报文]{style="font-family:宋体"}
+表1-7 debugging pim register命令输出信息描述表
 
-[[Received Hello packet from *address* with wrong data length]{lang="EN-US"}]{#struct_0_12031_59956_2106135247}
+字段
 
-[[收到长度错误的]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_12031_59956_1607895474}[报文]{style="font-family:宋体"}
+描述
 
-[[Notify create/delete/disable BFD session *source* -\> *destination*, *interface*]{lang="EN-US"}]{#struct_0_12031_59956_591030767}
+probe
 
-[[通知创建]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_12031_59956_x1665767194}[删除]{style="font-family:宋体"}[/]{lang="EN-US"}[关闭]{style="font-family:宋体"}[BFD]{lang="EN-US"}[会话，源地址为]{style="font-family:宋体"}*[source]{lang="EN-US"}*[，目的地址为]{style="font-family:宋体"}*[destination]{lang="EN-US"}*[，接口为]{style="font-family:宋体"}*[interface]{lang="EN-US"}*
+探测报文
 
-[ ]{lang="EN-US"}
+no route to RP
 
-[[表1-7 ]{lang="EN-US"}[debugging pim register]{lang="EN-US"}]{#struct_0_12031_59956_1418918816}[命令输出信息描述表]{style="font-family:黑体"}
+没有通往RP的路由
 
-[]{#table_struct_0_636019655}[[字段]{style="font-family:黑体"}]{#struct_0_12031_59956_x536565545}
+not knowing RP
 
-[[描述]{style="font-family:黑体"}]{#struct_0_12031_59956_x1154114704}
+未知RP
 
-[[probe]{lang="EN-US"}]{#struct_0_12031_59956_1608092082}
+register packet
 
-[[探测报文]{style="font-family:宋体"}]{#struct_0_12031_59956_x752403797}
+注册报文
 
-[[no route to RP]{lang="EN-US"}]{#struct_0_12031_59956_x2111793984}
+Bbit
 
-[[没有通往]{style="font-family:宋体"}[RP]{lang="EN-US"}]{#struct_0_12031_59956_x735104299}[的路由]{style="font-family:宋体"}
+边界位
 
-[[not knowing RP]{lang="EN-US"}]{#struct_0_12031_59956_x784920678}
+Nbit
 
-[[未知]{style="font-family:宋体"}[RP]{lang="EN-US"}]{#struct_0_12031_59956_x2010102453}
+空位
 
-[[register packet]{lang="EN-US"}]{#struct_0_12031_59956_1608026546}
+RST
 
-[[注册报文]{style="font-family:宋体"}]{#struct_0_12031_59956_x1126494941}
+注册停止定时器
 
-[[Bbit]{lang="EN-US"}]{#struct_0_12031_59956_x393637511}
+register state
 
-[[边界位]{style="font-family:宋体"}]{#struct_0_12031_59956_861182721}
+注册状态机状态
 
-[[Nbit]{lang="EN-US"}]{#struct_0_12031_59956_x68250545}
+reg tunnel
 
-[[空位]{style="font-family:宋体"}]{#struct_0_12031_59956_1840024532}
+注册通道
 
-[[RST]{lang="EN-US"}]{#struct_0_12031_59956_x1370459797}
+reg-stop packet
 
-[[注册停止定时器]{style="font-family:宋体"}]{#struct_0_12031_59956_1608223154}
+注册停止报文
 
-[[register state]{lang="EN-US"}]{#struct_0_12031_59956_41594773}
+invalid RPF interface
 
-[[注册状态机状态]{style="font-family:宋体"}]{#struct_0_12031_59956_x1908349832}
+非法的RPF接口
 
-[[reg tunnel]{lang="EN-US"}]{#struct_0_12031_59956_147442104}
+RP changed
 
-[[注册通道]{style="font-family:宋体"}]{#struct_0_12031_59956_1720238052}
+RP发生变化
 
-[[reg-stop packet]{lang="EN-US"}]{#struct_0_12031_59956_1608157618}
+Null-Register
 
-[[注册停止报文]{style="font-family:宋体"}]{#struct_0_12031_59956_x1116438118}
+空注册报文
 
-[[invalid RPF interface]{lang="EN-US"}]{#struct_0_12031_59956_199645974}
+register oif
 
-[[非法的]{style="font-family:宋体"}[RPF]{lang="EN-US"}]{#struct_0_12031_59956_499662514}[接口]{style="font-family:宋体"}
+注册出接口
 
-[[RP changed]{lang="EN-US"}]{#struct_0_12031_59956_2049614397}
+the group address *address* is not valid.
 
-[[RP]{lang="EN-US"}]{#struct_0_12031_59956_1086285092}[发生变化]{style="font-family:宋体"}
+组地址非法
 
-[[Null-Register]{lang="EN-US"}]{#struct_0_12031_59956_1608354226}
+Received register-stop message with bad group masks from *address* for *address/mask*.
 
-[[空注册报文]{style="font-family:宋体"}]{#struct_0_12031_59956_x1917192586}
+收到组掩码错误的注册终止报文
 
-[[register oif]{lang="EN-US"}]{#struct_0_12031_59956_x549597651}
+the source address is not valid
 
-[[注册出接口]{style="font-family:宋体"}]{#struct_0_12031_59956_x583415254}
+源地址非法
 
-[[the group address *address* is not valid.]{lang="EN-US"}]{#struct_0_12031_59956_x1359115275}
+RP for group *address* is unknown.
 
-[[组地址非法]{style="font-family:宋体"}]{#struct_0_12031_59956_1608288690}
+相关组的RP未知
 
-[[Received register-stop message with bad group masks from *address* for *address/mask*.]{lang="EN-US"}]{#struct_0_12031_59956_x386610948}
+RP dispute for *address*
 
-[[收到组掩码错误的注册终止报文]{style="font-family:宋体"}]{#struct_0_12031_59956_x1031912144}
+RP映射错误
 
-[[the source address is not valid]{lang="EN-US"}]{#struct_0_12031_59956_595720800}
+no matching entry for *(S,G)*
 
-[[源地址非法]{style="font-family:宋体"}]{#struct_0_12031_59956_1608485298}
+没有相关的（*S**，G*）表项
 
-[[RP for group *address* is unknown.]{lang="EN-US"}]{#struct_0_12031_59956_780823157}
+Anycast-RP timer
 
-[[相关组的]{style="font-family:宋体"}[RP]{lang="EN-US"}]{#struct_0_12031_59956_1360297666}[未知]{style="font-family:宋体"}
+Anycast-RP定时器
 
-[[RP dispute for *address*]{lang="EN-US"}]{#struct_0_12031_59956_x991591347}
+the source address belongs to the Anycast-RP set
 
-[[RP]{lang="EN-US"}]{#struct_0_12031_59956_1608419762}[映射错误]{style="font-family:宋体"}
+源地址在Anycast-RP集中
 
-[[no matching entry for *(S,G)*]{lang="EN-US"}]{#struct_0_12031_59956_407387350}
+Notify MFIB not to suppress register packets
 
-[[没有相关的（]{style="font-family:宋体"}*[S]{lang="EN-US"}*]{#struct_0_12031_59956_2104267575}*[，]{style="font-family:宋体"}[G]{lang="EN-US"}*[）表项]{style="font-family:宋体"}
+通知MFIB不要抑制注册报文
 
-[[Anycast-RP timer]{lang="EN-US"}]{#struct_0_12031_59956_x118061909}
+no active local RP exists
 
-[[Anycast-RP]{lang="EN-US"}]{#struct_0_12031_59956_x118127445}[定时器]{style="font-family:宋体"}
+没有激活的本地RP存在
 
-[[the source address belongs to the Anycast-RP set]{lang="EN-US"}]{#struct_0_12031_59956_x376486223}
+表1-8 debugging pim rp命令输出信息描述表
 
-[[源地址在]{style="font-family:宋体"}[Anycast-RP]{lang="EN-US"}]{#struct_0_12031_59956_x118192981}[集中]{style="font-family:宋体"}
+字段
 
-[[Notify MFIB not to suppress register packets]{lang="EN-US"}]{#struct_0_12031_59956_336652508}
+描述
 
-[[通知]{style="font-family:宋体"}[MFIB]{lang="EN-US"}]{#struct_0_12031_59956_x117209941}[不要抑制注册报文]{style="font-family:宋体"}
+auto-RP announce packet
 
-[[no active local RP exists]{lang="EN-US"}]{#struct_0_12031_59956_x1045822924}
+自动RP宣告报文
 
-[[没有激活的本地]{style="font-family:宋体"}[RP]{lang="EN-US"}]{#struct_0_12031_59956_x117275477}[存在]{style="font-family:宋体"}
+Truncated bootstrap message
 
-[ ]{lang="EN-US"}
+长度非法的自举报文
 
-[[表1-8 ]{lang="EN-US"}[debugging pim rp]{lang="EN-US"}]{#struct_0_12031_59956_x1818594061}[命令输出信息描述表]{style="font-family:黑体"}
+BSM packet
 
-[]{#table_struct_0_632004899}[[字段]{style="font-family:黑体"}]{#struct_0_12031_59956_x521194563}
+BSR自举报文
 
-[[描述]{style="font-family:黑体"}]{#struct_0_12031_59956_x1694486938}
+Nbit
 
-[[auto-RP announce packet]{lang="EN-US"}]{#struct_0_12031_59956_1607961011}
+BSR报文段禁止转发标志位
 
-[[自动]{style="font-family:宋体"}[RP]{lang="EN-US"}]{#struct_0_12031_59956_x939485348}[宣告报文]{style="font-family:宋体"}
+Fragment tag
 
-[[Truncated bootstrap message]{lang="EN-US"}]{#struct_0_12031_59956_248224656}
+用于BSR报文的分片
 
-[[长度非法的自举报文]{style="font-family:宋体"}]{#struct_0_12031_59956_438391775}
+Hash mask len
 
-[[BSM packet]{lang="EN-US"}]{#struct_0_12031_59956_343129842}
+哈希掩码长度
 
-[[BSR]{lang="EN-US"}]{#struct_0_12031_59956_547991857}[自举报文]{style="font-family:宋体"}
+BSR Priority
 
-[[Nbit]{lang="EN-US"}]{#struct_0_12031_59956_x1649050081}
+BSR优先级
 
-[[BSR]{lang="EN-US"}]{#struct_0_12031_59956_1607895475}[报文段禁止转发标志位]{style="font-family:宋体"}
+BSR address
 
-[[Fragment tag]{lang="EN-US"}]{#struct_0_12031_59956_591096303}
+BSR地址
 
-[[用于]{style="font-family:宋体"}[BSR]{lang="EN-US"}]{#struct_0_12031_59956_1446286664}[报文的分片]{style="font-family:宋体"}
+Group
 
-[[Hash mask len]{lang="EN-US"}]{#struct_0_12031_59956_1337493624}
+组地址
 
-[[哈希掩码长度]{style="font-family:宋体"}]{#struct_0_12031_59956_x1023899340}
+Zbit
 
-[[BSR Priority]{lang="EN-US"}]{#struct_0_12031_59956_x1929573176}
+BSR报文段自治域标志位
 
-[[BSR]{lang="EN-US"}]{#struct_0_12031_59956_1608092083}[优先级]{style="font-family:宋体"}
+RP Count
 
-[[BSR address]{lang="EN-US"}]{#struct_0_12031_59956_x752338261}
+BSR报文中表示服务这个组播组范围的RP个数
 
-[[BSR]{lang="EN-US"}]{#struct_0_12031_59956_551458585}[地址]{style="font-family:宋体"}
+Frag RP Count
 
-[[Group]{lang="EN-US"}]{#struct_0_12031_59956_x1154264487}
+表示BSR分片报文中服务这个组播组范围的RP个数
 
-[[组地址]{style="font-family:宋体"}]{#struct_0_12031_59956_x1324518710}
+RP: *address* \-\-- Holdtime *holdtime*, Priority *priority*
 
-[[Zbit]{lang="EN-US"}]{#struct_0_12031_59956_x1027812178}
+RP：地址为*address*------保持时间为*holdtime*，优先级为*priority*
 
-[[BSR]{lang="EN-US"}]{#struct_0_12031_59956_1608026547}[报文段自治域标志位]{style="font-family:宋体"}
+Truncated crp packet
 
-[[RP Count]{lang="EN-US"}]{#struct_0_12031_59956_x1126560477}
+长度非法的C-RP宣告报文
 
-[[BSR]{lang="EN-US"}]{#struct_0_12031_59956_1571678119}[报文中表示服务这个组播组范围的]{style="font-family:宋体"}[RP]{lang="EN-US"}[个数]{style="font-family:宋体"}
+C-RP-Adv
 
-[[Frag RP Count]{lang="EN-US"}]{#struct_0_12031_59956_1806405613}
+C-RP宣告报文
 
-[[表示]{style="font-family:宋体"}[BSR]{lang="EN-US"}]{#struct_0_12031_59956_1608223155}[分片报文中服务这个组播组范围的]{style="font-family:宋体"}[RP]{lang="EN-US"}[个数]{style="font-family:宋体"}
+Prefix count
 
-[[RP: *address* \-\-- Holdtime *holdtime*, Priority *priority*]{lang="EN-US"}]{#struct_0_12031_59956_41529237}
+C-RP宣告报文中包含的组地址个数
 
-[[RP]{lang="EN-US"}]{#struct_0_12031_59956_x1882409257}[：地址为]{style="font-family:宋体"}*[address]{lang="EN-US"}*[------保持时间为]{style="font-family:宋体"}*[holdtime]{lang="EN-US"}*[，优先级为]{style="font-family:宋体"}*[priority]{lang="EN-US"}*
+Priority
 
-[[Truncated crp packet]{lang="EN-US"}]{#struct_0_12031_59956_475446982}
+C-RP宣告报文的优先级字段
 
-[[长度非法的]{style="font-family:宋体"}[C-RP]{lang="EN-US"}]{#struct_0_12031_59956_468271312}[宣告报文]{style="font-family:宋体"}
+Holdtime
 
-[[C-RP-Adv]{lang="EN-US"}]{#struct_0_12031_59956_1608157619}
+C-RP宣告报文的保持时间字段
 
-[[C-RP]{lang="EN-US"}]{#struct_0_12031_59956_x1116372582}[宣告报文]{style="font-family:宋体"}
+RP address
 
-[[Prefix count]{lang="EN-US"}]{#struct_0_12031_59956_1078062328}
+RP地址
 
-[[C-RP]{lang="EN-US"}]{#struct_0_12031_59956_124657215}[宣告报文中包含的组地址个数]{style="font-family:宋体"}
+Failed to build BSM pkt because MTU is too small
 
-[[Priority]{lang="EN-US"}]{#struct_0_12031_59956_1608354227}
+构造BSR自举报文失败，原因是MTU太小了
 
-[[C-RP]{lang="EN-US"}]{#struct_0_12031_59956_x1917127050}[宣告报文的优先级字段]{style="font-family:宋体"}
+BSR boundary
 
-[[Holdtime]{lang="EN-US"}]{#struct_0_12031_59956_x1149889021}
+BSR边界
 
-[[C-RP]{lang="EN-US"}]{#struct_0_12031_59956_x1581884410}[宣告报文的保持时间字段]{style="font-family:宋体"}
+multicast boundary
 
-[[RP address]{lang="EN-US"}]{#struct_0_12031_59956_1608288691}
+组播边界
 
-[[RP]{lang="EN-US"}]{#struct_0_12031_59956_x386676484}[地址]{style="font-family:宋体"}
+EBSR
 
-[[Failed to build BSM pkt because MTU is too small]{lang="EN-US"}]{#struct_0_12031_59956_90320490}
+最优BSR
 
-[[构造]{style="font-family:宋体"}[BSR]{lang="EN-US"}]{#struct_0_12031_59956_x2031405437}[自举报文失败，原因是]{style="font-family:宋体"}[MTU]{lang="EN-US"}[太小了]{style="font-family:宋体"}
+EBSR updates RPs by self in scope
 
-[[BSR boundary]{lang="EN-US"}]{#struct_0_12031_59956_28327995}
+最优BSR在域内自动更新了RP
 
-[[BSR]{lang="EN-US"}]{#struct_0_12031_59956_1608485299}[边界]{style="font-family:宋体"}
+Protocol conflict while updating group *address* for crp *address*.
 
-[[multicast boundary]{lang="EN-US"}]{#struct_0_12031_59956_780757621}
+更新C-RP地址时使用组地址，与协议冲突
 
-[[组播边界]{style="font-family:宋体"}]{#struct_0_12031_59956_x1984826632}
+Invalid group address
 
-[[EBSR]{lang="EN-US"}]{#struct_0_12031_59956_x696778980}
+非法组地址
 
-[[最优]{style="font-family:宋体"}[BSR]{lang="EN-US"}]{#struct_0_12031_59956_1608419763}
+multicast boundary
 
-[[EBSR updates RPs by self in scope]{lang="EN-US"}]{#struct_0_12031_59956_407452886}
+组播边界
 
-[[最优]{style="font-family:宋体"}[BSR]{lang="EN-US"}]{#struct_0_12031_59956_x1445954731}[在域内自动更新了]{style="font-family:宋体"}[RP]{lang="EN-US"}
+Received an invalid length C-RP-Adv packet
 
-[[Protocol conflict while updating group *address* for crp *address*.]{lang="EN-US"}]{#struct_0_12031_59956_x192856243}
+收到一个长度非法的C-RP的宣告报文
 
-[[更新]{style="font-family:宋体"}[C-RP]{lang="EN-US"}]{#struct_0_12031_59956_1607961008}[地址时使用组地址，与协议冲突]{style="font-family:宋体"}
+The length of C-RP-Adv packet is wrong
 
-[[Invalid group address]{lang="EN-US"}]{#struct_0_12031_59956_x939944099}
+C-RP宣告报文长度出错
 
-[[非法组地址]{style="font-family:宋体"}]{#struct_0_12031_59956_614666389}
+Received BSR packet with bad bsr address
 
-[[multicast boundary]{lang="EN-US"}]{#struct_0_12031_59956_1607895472}
+收到BSR地址非法的BSR报文
 
-[[组播边界]{style="font-family:宋体"}]{#struct_0_12031_59956_591161839}
+Received BSR packet with non-unicast bsr address *address*
 
-[[Received an invalid length C-RP-Adv packet]{lang="EN-US"}]{#struct_0_12031_59956_229087670}
+收到BSR地址不是单播地址的BSR报文
 
-[[收到一个长度非法的]{style="font-family:宋体"}[C-RP]{lang="EN-US"}]{#struct_0_12031_59956_1224160346}[的宣告报文]{style="font-family:宋体"}
+Received a BSM with bad first group address from BSR *address*
 
-[[The length of C-RP-Adv packet is wrong]{lang="EN-US"}]{#struct_0_12031_59956_1608092080}
+收到的BSR自举报文中第一个组地址错误
 
-[[C-RP]{lang="EN-US"}]{#struct_0_12031_59956_x752272725}[宣告报文长度出错]{style="font-family:宋体"}
+Unable to pass multicast boundary check for *address/mask*
 
-[[Received BSR packet with bad bsr address]{lang="EN-US"}]{#struct_0_12031_59956_599591086}
+由于组地址和掩码问题无法通过组播边界检查
 
-[[收到]{style="font-family:宋体"}[BSR]{lang="EN-US"}]{#struct_0_12031_59956_1608026544}[地址非法的]{style="font-family:宋体"}[BSR]{lang="EN-US"}[报文]{style="font-family:宋体"}
+no route to BSR *address*
 
-[[Received BSR packet with non-unicast bsr address *address*]{lang="EN-US"}]{#struct_0_12031_59956_x1126363869}
+没有通往BSR的路由信息
 
-[[收到]{style="font-family:宋体"}[BSR]{lang="EN-US"}]{#struct_0_12031_59956_1633650481}[地址不是单播地址的]{style="font-family:宋体"}[BSR]{lang="EN-US"}[报文]{style="font-family:宋体"}
+BSM from BSR *address* comes from wrong interface *interface*
 
-[[Received a BSM with bad first group address from BSR *address*]{lang="EN-US"}]{#struct_0_12031_59956_1608223152}
+收到来自错误接口的BSR报文
 
-[[收到的]{style="font-family:宋体"}[BSR]{lang="EN-US"}]{#struct_0_12031_59956_41725845}[自举报文中第一个组地址错误]{style="font-family:宋体"}
+Source address *address1* is not next hop to BSR %A (next hop is*address2*)
 
-[[Unable to pass multicast boundary check for *address/mask*]{lang="EN-US"}]{#struct_0_12031_59956_x625412330}
+源地址不是通往BSR的下一跳地址
 
-[[由于组地址和掩码问题无法通过组播边界检查]{style="font-family:宋体"}]{#struct_0_12031_59956_1608157616}
+Received a BSR packet from other PIM-SM domain from *address* on *interface*
 
-[[no route to BSR *address*]{lang="EN-US"}]{#struct_0_12031_59956_x1115782758}
+收到来自其他PIM-SM域的BSR报文
 
-[[没有通往]{style="font-family:宋体"}[BSR]{lang="EN-US"}]{#struct_0_12031_59956_x1961803246}[的路由信息]{style="font-family:宋体"}
+Received a BSR packet from *address* with too short length
 
-[[BSM from BSR *address* comes from wrong interface *interface*]{lang="EN-US"}]{#struct_0_12031_59956_1608354224}
+收到长度过短的BSR报文
 
-[[收到来自错误接口的]{style="font-family:宋体"}[BSR]{lang="EN-US"}]{#struct_0_12031_59956_x1917061514}[报文]{style="font-family:宋体"}
+Received BSR packet with bad hash mask length
 
-[[Source address *address1* is not next hop to BSR %A (next hop is*address2*)]{lang="EN-US"}]{#struct_0_12031_59956_x1075415816}
+收到哈希掩码长度错误的BSR报文
 
-[[源地址不是通往]{style="font-family:宋体"}[BSR]{lang="EN-US"}]{#struct_0_12031_59956_1608288688}[的下一跳地址]{style="font-family:宋体"}
+Received a BSR packet from unknown neighbor *address*
 
-[[Received a BSR packet from other PIM-SM domain from *address* on *interface*]{lang="EN-US"}]{#struct_0_12031_59956_x387135237}
+收到来自未知邻居的BSR报文
 
-[[收到来自其他]{style="font-family:宋体"}[PIM-SM]{lang="EN-US"}]{#struct_0_12031_59956_x685077651}[域的]{style="font-family:宋体"}[BSR]{lang="EN-US"}[报文]{style="font-family:宋体"}
+Scope
 
-[[Received a BSR packet from *address* with too short length ]{lang="EN-US"}]{#struct_0_12031_59956_1608485296}
+BSR域
 
-[[收到长度过短的]{style="font-family:宋体"}[BSR]{lang="EN-US"}]{#struct_0_12031_59956_781216373}[报文]{style="font-family:宋体"}
+Group: *address*/*mask* \-\-- RP Count: *m*, Frag RP Count: *n*
 
-[[Received BSR packet with bad hash mask length]{lang="EN-US"}]{#struct_0_12031_59956_x423457358}
+BSR自举报文中的组*address*/*length*对应的Frag字段的数目为*n*，C-RP的数目为*m*
 
-[[收到哈希掩码长度错误的]{style="font-family:宋体"}[BSR]{lang="EN-US"}]{#struct_0_12031_59956_1608419760}[报文]{style="font-family:宋体"}
+RP count *m* differs from previous *n*,  or  accumulative frag count *k* is wrong
 
-[[Received a BSR packet from unknown neighbor *address*]{lang="EN-US"}]{#struct_0_12031_59956_407518422}
+RP数量与之前不同，或者累计分片数量错误
 
-[[收到来自未知邻居的]{style="font-family:宋体"}[BSR]{lang="EN-US"}]{#struct_0_12031_59956_1607961009}[报文]{style="font-family:宋体"}
+表1-9 debugging pim routing-table命令输出信息描述表
 
-[[Scope]{lang="EN-US"}]{#struct_0_12031_59956_x940009635}
+字段
 
-[[BSR]{lang="EN-US"}]{#struct_0_12031_59956_1113991646}[域]{style="font-family:宋体"}
+描述
 
-[[Group: *address*/*mask* \-\-- RP Count: *m*, Frag RP Count: *n*]{lang="EN-US"}]{#struct_0_12031_59956_1607895473}
+RPF Interface
 
-[[BSR]{lang="EN-US"}]{#struct_0_12031_59956_591227375}[自举报文中的组]{style="font-family:宋体"}*[address]{lang="EN-US"}*[/*length*]{lang="EN-US"}[对应的]{style="font-family:宋体"}[Frag]{lang="EN-US"}[字段的数目为]{style="font-family:宋体"}*[n]{lang="EN-US"}*[，]{style="font-family:宋体"}[C-RP]{lang="EN-US"}[的数目为]{style="font-family:宋体"}*[m]{lang="EN-US"}*
+RPF接口
 
-[[RP count *m* differs from previous *n*,  or  accumulative frag count *k* is wrong]{lang="EN-US"}]{#struct_0_12031_59956_x626747763}
+multicast boundary
 
-[[RP]{lang="EN-US"}]{#struct_0_12031_59956_1608092081}[数量与之前不同，或者累计分片数量错误]{style="font-family:宋体"}
+组播边界
 
-[ ]{lang="EN-US"}
+Claim the route
 
-[[表1-9 ]{lang="EN-US"}[debugging pim routing-table]{lang="EN-US"}]{#struct_0_12031_59956_x752207189}[命令输出信息描述表]{style="font-family:黑体"}
+组播表项声明使用某条单播路由
 
-[]{#table_struct_0_651548505}[[字段]{style="font-family:黑体"}]{#struct_0_12031_59956_240566689}
+Unclaim the route
 
-[[描述]{style="font-family:黑体"}]{#struct_0_12031_59956_123273434}
+组播表项声明放弃使用某条单播路由
 
-[[RPF Interface]{lang="EN-US"}]{#struct_0_12031_59956_999965266}
+Wrong IIF
 
-[[RPF]{lang="EN-US"}]{#struct_0_12031_59956_x63927081}[接口]{style="font-family:宋体"}
+错误的入接口
 
-[[multicast boundary]{lang="EN-US"}]{#struct_0_12031_59956_1608026545}
+Assert state machine
 
-[[组播边界]{style="font-family:宋体"}]{#struct_0_12031_59956_x1126429405}
+断言状态机
 
-[[Claim the route]{lang="EN-US"}]{#struct_0_12031_59956_1561082285}
+reg oif
 
-[[组播表项声明使用某条单播路由]{style="font-family:宋体"}]{#struct_0_12031_59956_417676537}
+注册出接口
 
-[[Unclaim the route]{lang="EN-US"}]{#struct_0_12031_59956_x1479639493}
+ET
 
-[[组播表项声明放弃使用某条单播路由]{style="font-family:宋体"}]{#struct_0_12031_59956_x2074885029}
+下游超时定时器
 
-[[Wrong IIF]{lang="EN-US"}]{#struct_0_12031_59956_1608223153}
+Downstream FSM
 
-[[错误的入接口]{style="font-family:宋体"}]{#struct_0_12031_59956_41660309}
+下游接口状态机
 
-[[Assert state machine]{lang="EN-US"}]{#struct_0_12031_59956_x188529812}
+PPT
 
-[[断言状态机]{style="font-family:宋体"}]{#struct_0_12031_59956_x1483074417}
+下游剪枝否决定时器
 
-[[reg oif]{lang="EN-US"}]{#struct_0_12031_59956_x1469889056}
+Upstream FSM
 
-[[注册出接口]{style="font-family:宋体"}]{#struct_0_12031_59956_x1726671827}
+上游接口状态机
 
-[[ET]{lang="EN-US"}]{#struct_0_12031_59956_1608157617}
+NotJoined
 
-[[下游超时定时器]{style="font-family:宋体"}]{#struct_0_12031_59956_x1115717222}
+PIM-SM的（S，G，RPT）、（S，G）或（\*，G）上游状态机处于未加入状态
 
-[[Downstream FSM]{lang="EN-US"}]{#struct_0_12031_59956_52211464}
+Joined
 
-[[下游接口状态机]{style="font-family:宋体"}]{#struct_0_12031_59956_1916680810}
+PIM-SM的（S，G）或（\*，G）上游状态机处于加入状态
 
-[[PPT]{lang="EN-US"}]{#struct_0_12031_59956_335480034}
+Join
 
-[[下游剪枝否决定时器]{style="font-family:宋体"}]{#struct_0_12031_59956_x1964893405}
+PIM-SM下游状态机处于加入状态
 
-[[Upstream FSM]{lang="EN-US"}]{#struct_0_12031_59956_1608354225}
+Prune-Pending
 
-[[上游接口状态机]{style="font-family:宋体"}]{#struct_0_12031_59956_x1916995978}
+下游状态机处于剪枝未决状态
 
-[[NotJoined]{lang="EN-US"}]{#struct_0_12031_59956_1890212964}
+RPF\'(\*,G)
 
-[[PIM-SM]{lang="EN-US"}]{#struct_0_12031_59956_x834179141}[的（]{style="font-family:宋体"}[S]{lang="EN-US"}[，]{style="font-family:宋体"}[G]{lang="EN-US"}[，]{style="font-family:宋体"}[RPT]{lang="EN-US"}[）、（]{style="font-family:宋体"}[S]{lang="EN-US"}[，]{style="font-family:宋体"}[G]{lang="EN-US"}[）或（]{style="font-family:宋体"}[\*]{lang="EN-US"}[，]{style="font-family:宋体"}[G]{lang="EN-US"}[）上游状态机处于未加入状态]{style="font-family:宋体"}
+（\*，G）表项的上游邻居
 
-[[Joined]{lang="EN-US"}]{#struct_0_12031_59956_1608288689}
+RPF\'(S,G)
 
-[[PIM-SM]{lang="EN-US"}]{#struct_0_12031_59956_x387200773}[的（]{style="font-family:宋体"}[S]{lang="EN-US"}[，]{style="font-family:宋体"}[G]{lang="EN-US"}[）或（]{style="font-family:宋体"}[\*]{lang="EN-US"}[，]{style="font-family:宋体"}[G]{lang="EN-US"}[）上游状态机处于加入状态]{style="font-family:宋体"}
+（S，G）表项的上游邻居
 
-[[Join]{lang="EN-US"}]{#struct_0_12031_59956_x241875903}
+Join suppressed
 
-[[PIM-SM]{lang="EN-US"}]{#struct_0_12031_59956_355251201}[下游状态机处于加入状态]{style="font-family:宋体"}
+从入接口收到给上游邻居的加入，抑制自己的加入
 
-[[Prune-Pending]{lang="EN-US"}]{#struct_0_12031_59956_x1201720388}
+genid changed
 
-[[下游状态机处于剪枝未决状态]{style="font-family:宋体"}]{#struct_0_12031_59956_1608485297}
+Generation ID变化
 
-[[RPF\'(\*,G)]{lang="EN-US"}]{#struct_0_12031_59956_781150837}
+override interval
 
-[[（]{style="font-family:宋体"}[\*]{lang="EN-US"}]{#struct_0_12031_59956_441028571}[，]{style="font-family:宋体"}[G]{lang="EN-US"}[）表项的上游邻居]{style="font-family:宋体"}
+剪枝否决时间
 
-[[RPF\'(S,G)]{lang="EN-US"}]{#struct_0_12031_59956_1240944182}
+NoInfo
 
-[[（]{style="font-family:宋体"}[S]{lang="EN-US"}]{#struct_0_12031_59956_1608419761}[，]{style="font-family:宋体"}[G]{lang="EN-US"}[）表项的上游邻居]{style="font-family:宋体"}
+下游状态机处于Noinfo状态
 
-[[Join suppressed]{lang="EN-US"}]{#struct_0_12031_59956_407583958}
+NotPruned
 
-[[从入接口收到给上游邻居的加入，抑制自己的加入]{style="font-family:宋体"}]{#struct_0_12031_59956_861668641}
+PIM-SM的（S，G，RPT）上游状态机处于非剪枝状态
 
-[[genid changed]{lang="EN-US"}]{#struct_0_12031_59956_x1254291520}
+Pruned
 
-[[Generation ID]{lang="EN-US"}]{#struct_0_12031_59956_1607961006}[变化]{style="font-family:宋体"}
+PIM-SM的（S，G，RPT）上游状态机处于剪枝状态
 
-[[override interval]{lang="EN-US"}]{#struct_0_12031_59956_x939288739}
+override timer
 
-[[剪枝否决时间]{style="font-family:宋体"}]{#struct_0_12031_59956_599361222}
+剪枝覆盖定时器
 
-[[NoInfo]{lang="EN-US"}]{#struct_0_12031_59956_x1188929737}
+PruneTmp
 
-[[下游状态机处于]{style="font-family:宋体"}[Noinfo]{lang="EN-US"}]{#struct_0_12031_59956_1607895470}[状态]{style="font-family:宋体"}
+PIM-SM的（S，G，RPT）下游状态机处于Prune Tmp状态
 
-[[NotPruned]{lang="EN-US"}]{#struct_0_12031_59956_591292911}
+PrunePendingTmp
 
-[[PIM-SM]{lang="EN-US"}]{#struct_0_12031_59956_1285432152}[的（]{style="font-family:宋体"}[S]{lang="EN-US"}[，]{style="font-family:宋体"}[G]{lang="EN-US"}[，]{style="font-family:宋体"}[RPT]{lang="EN-US"}[）上游状态机处于非剪枝状态]{style="font-family:宋体"}
+PIM-SM的（S，G，RPT）下游状态机处于Prune Pending Tmp状态
 
-[[Pruned]{lang="EN-US"}]{#struct_0_12031_59956_1608092078}
+RP changed, no RP is available for*(\*,G)* now
 
-[[PIM-SM]{lang="EN-US"}]{#struct_0_12031_59956_x752796998}[的（]{style="font-family:宋体"}[S]{lang="EN-US"}[，]{style="font-family:宋体"}[G]{lang="EN-US"}[，]{style="font-family:宋体"}[RPT]{lang="EN-US"}[）上游状态机处于剪枝状态]{style="font-family:宋体"}
+RP变化，没有当前（\*，G）表项可用的RP
 
-[[override timer]{lang="EN-US"}]{#struct_0_12031_59956_1449932560}
+RP changed, update the upstream state of *(\*,G)*
 
-[[剪枝覆盖定时器]{style="font-family:宋体"}]{#struct_0_12031_59956_812341627}
+RP变化，更新（\*，G）表项的上游状态
 
-[[PruneTmp]{lang="EN-US"}]{#struct_0_12031_59956_1608026542}
+SPT switch
 
-[[PIM-SM]{lang="EN-US"}]{#struct_0_12031_59956_x1126232797}[的（]{style="font-family:宋体"}[S]{lang="EN-US"}[，]{style="font-family:宋体"}[G]{lang="EN-US"}[，]{style="font-family:宋体"}[RPT]{lang="EN-US"}[）下游状态机处于]{style="font-family:宋体"}[Prune Tmp]{lang="EN-US"}[状态]{style="font-family:宋体"}
+SPT切换
 
-[[PrunePendingTmp]{lang="EN-US"}]{#struct_0_12031_59956_1390226139}
+表1-10 debugging pim state-refresh命令输出信息描述表
 
-[[PIM-SM]{lang="EN-US"}]{#struct_0_12031_59956_1608223150}[的（]{style="font-family:宋体"}[S]{lang="EN-US"}[，]{style="font-family:宋体"}[G]{lang="EN-US"}[，]{style="font-family:宋体"}[RPT]{lang="EN-US"}[）下游状态机处于]{style="font-family:宋体"}[Prune Pending Tmp]{lang="EN-US"}[状态]{style="font-family:宋体"}
+字段
 
-[[RP changed, no RP is available for*(\*,G)* now]{lang="EN-US"}]{#struct_0_12031_59956_41856917}
+描述
 
-[[RP]{lang="EN-US"}]{#struct_0_12031_59956_161209267}[变化，没有当前（]{style="font-family:宋体"}[\*]{lang="EN-US"}[，]{style="font-family:宋体"}[G]{lang="EN-US"}[）表项可用的]{style="font-family:宋体"}[RP]{lang="EN-US"}
+SRM
 
-[[RP changed, update the upstream state of *(\*,G)*]{lang="EN-US"}]{#struct_0_12031_59956_1608157614}
+状态刷新报文
 
-[[RP]{lang="EN-US"}]{#struct_0_12031_59956_x1115651686}[变化，更新（]{style="font-family:宋体"}[\*]{lang="EN-US"}[，]{style="font-family:宋体"}[G]{lang="EN-US"}[）表项的上游状态]{style="font-family:宋体"}
+Drop SRM for (S, G) because of rate limit
 
-[[SPT switch]{lang="EN-US"}]{#struct_0_12031_59956_1551343972}
+由于对状态刷新报文的接收进行限速，因此丢弃此期间收到的状态刷新报文
 
-[[SPT]{lang="EN-US"}]{#struct_0_12031_59956_1608354222}[切换]{style="font-family:宋体"}
+Drop SRM for (S, G) because of invalid ttl(0) or interval(0)
 
-[ ]{lang="EN-US"}
+丢弃TTL值为0或发送间隔为0的状态刷新报文
 
-[[表1-10 ]{lang="EN-US"}[debugging pim state-refresh]{lang="EN-US"}]{#struct_0_12031_59956_x1917454730}[命令输出信息描述表]{style="font-family:黑体"}
+Originator address
 
-[]{#table_struct_0_649565600}[[字段]{style="font-family:黑体"}]{#struct_0_12031_59956_x1704164407}
+产生状态刷新报文的地址
 
-[[描述]{style="font-family:黑体"}]{#struct_0_12031_59956_1073421095}
+preference
 
-[[SRM]{lang="EN-US"}]{#struct_0_12031_59956_x1769685009}
+报文的优先级字段
 
-[[状态刷新报文]{style="font-family:宋体"}]{#struct_0_12031_59956_x928106315}
+metric
 
-[[Drop SRM for (S, G) because of rate limit]{lang="EN-US"}]{#struct_0_12031_59956_1653151648}
+报文的Metric字段
 
-[[由于对状态刷新报文的接收进行限速，因此丢弃此期间收到的状态刷新报文]{style="font-family:宋体"}]{#struct_0_12031_59956_1608288686}
+mask length
 
-[[Drop SRM for (S, G) because of invalid ttl(0) or interval(0)]{lang="EN-US"}]{#struct_0_12031_59956_x386742021}
+报文的掩码长度字段
 
-[[丢弃]{style="font-family:宋体"}[TTL]{lang="EN-US"}]{#struct_0_12031_59956_1305500633}[值为]{style="font-family:宋体"}[0]{lang="EN-US"}[或发送间隔为]{style="font-family:宋体"}[0]{lang="EN-US"}[的状态刷新报文]{style="font-family:宋体"}
+ttl
 
-[[Originator address]{lang="EN-US"}]{#struct_0_12031_59956_1568809798}
+报文的TTL值
 
-[[产生状态刷新报文的地址]{style="font-family:宋体"}]{#struct_0_12031_59956_x1216404849}
+prune indicator
 
-[[preference]{lang="EN-US"}]{#struct_0_12031_59956_1443618256}
+Prune Indicator标志位
 
-[[报文的优先级字段]{style="font-family:宋体"}]{#struct_0_12031_59956_1608485294}
+prune now
 
-[[metric]{lang="EN-US"}]{#struct_0_12031_59956_781085301}
+Prune Now标志位
 
-[[报文的]{style="font-family:宋体"}[Metric]{lang="EN-US"}]{#struct_0_12031_59956_1653903061}[字段]{style="font-family:宋体"}
+assert override
 
-[[mask length]{lang="EN-US"}]{#struct_0_12031_59956_1220658718}
+Assert Override标志位
 
-[[报文的掩码长度字段]{style="font-family:宋体"}]{#struct_0_12031_59956_567203957}
+Interval
 
-[[ttl]{lang="EN-US"}]{#struct_0_12031_59956_1608419758}
+状态刷新报文的发送间隔
 
-[[报文的]{style="font-family:宋体"}[TTL]{lang="EN-US"}]{#struct_0_12031_59956_408042709}[值]{style="font-family:宋体"}
+【举例】
 
-[[prune indicator]{lang="EN-US"}]{#struct_0_12031_59956_1598013629}
+\# 接口上使能PIM-SM，并打开公网实例接收PIM断言报文的调试信息开关。
 
-[[Prune Indicator]{lang="EN-US"}]{#struct_0_12031_59956_x825689379}[标志位]{style="font-family:宋体"}
+\<Sysname\> debugging pim assert received
 
-[[prune now]{lang="EN-US"}]{#struct_0_12031_59956_2132744974}
+\*Dec 10 13:53:28:147 2010 Sysname PIM/7/ASSERT: -MDC=1; Received assert packet for (2.1.1.1, 225.0.0.25), 5.1.1.10 -\> 224.0.0.13 on GigabitEthernet1/0/1, Rbit: 0, Preference: 10, Metric: 2. (SM141564)
 
-[[Prune Now]{lang="EN-US"}]{#struct_0_12031_59956_1607961007}[标志位]{style="font-family:宋体"}
+*// 从接口GigabitEthernet1/0/1收到一个针对表项（2.1.1.1，225.0.0.25）的断言报文，报文源地址为5.1.1.10，目的地址为224.0.0.13，RPT标志为0，优先级为10，度量值为2*
 
-[[assert override]{lang="EN-US"}]{#struct_0_12031_59956_x939354275}
+\*Dec 10 13:53:28:190 2010 Sysname PIM/7/ASSERT: -MDC=1; Assert (2.1.1.1, 225.0.0.25) GigabitEthernet1/0/1 FSM Loser-\>Loser, acceptable assert received from current Winner. (SM041341)
 
-[[Assert Override]{lang="EN-US"}]{#struct_0_12031_59956_999165901}[标志位]{style="font-family:宋体"}
+*// 接口GigabitEthernet1/0/1上的表项（2.1.1.1，225.0.0.25）的断言状态机保持Loser状态，此时从当前的Winner收到一个可接受的断言报文*
 
-[[Interval]{lang="EN-US"}]{#struct_0_12031_59956_1289641119}
+\# 接口上使能PIM-SM，并打开公网实例发送PIM断言报文的调试信息开关。
 
-[[状态刷新报文的发送间隔]{style="font-family:宋体"}]{#struct_0_12031_59956_138537930}
+\<Sysname\> debugging pim assert send
 
-[ ]{lang="EN-US"}
+\*Dec 10 13:54:04:921 2010 Sysname PIM/7/ASSERT: -MDC=1; PIM ver 2 assert packet sending 5.1.1.10 -\> 224.0.0.13 for (2.1.1.1, 225.0.0.25) through interface GigabitEthernet1/0/1, Rbit: 0, Preference: 10, Metric: 2. (SM04155)
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_12031_59956_x903788712}
+*// 从接口GigabitEthernet1/0/1发送一个针对表项（2.1.1.1，225.0.0.25）的断言报文，报文源地址为5.1.1.10，目的地址为224.0.0.13，RPT标志为0，优先级为10，度量值为2*
 
-[[\# ]{lang="EN-US"}]{#struct_0_12031_59956_1607895471}[接口上使能]{style="font-family:宋体"}[PIM-SM]{lang="EN-US"}[，并打开公网实例接收]{style="font-family:宋体"}[PIM]{lang="EN-US"}[断言报文的调试信息开关。]{style="font-family:宋体"}
+\# 接口上使能PIM-SM，并打开公网实例双向PIM DF选举的调试信息开关。
 
-[[\<Sysname\> debugging pim assert received]{lang="EN-US"}]{#struct_0_12031_59956_591358447}
+\<Sysname\> debugging pim df
 
-[\*Dec 10 13:53:28:147 2010 Sysname PIM/7/ASSERT: -MDC=1; Received assert packet for (2.1.1.1, 225.0.0.25), 5.1.1.10 -\> 224.0.0.13 on GigabitEthernet1/0/1, Rbit: 0, Preference: 10, Metric: 2. (SM141564)]{lang="EN-US"}
+\*Dec 27 12:02:01:846 2012 Sysname PIM/7/DF: -MDC=1; Start DF election on interface GigabitEthernet1/0/1 of RP 1.1.0.1 (BD012845)
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_911722229}*[从接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[收到一个针对表项（]{style="font-family:宋体"}[2.1.1.1]{lang="EN-US"}[，]{style="font-family:宋体"}[225.0.0.25]{lang="EN-US"}[）的断言报文，报文源地址为]{style="font-family:宋体"}[5.1.1.10]{lang="EN-US"}[，目的地址为]{style="font-family:宋体"}[224.0.0.13]{lang="EN-US"}[，]{style="font-family:宋体"}[RPT]{lang="EN-US"}[标志为]{style="font-family:宋体"}[0]{lang="EN-US"}[，优先级为]{style="font-family:宋体"}[10]{lang="EN-US"}[，度量值为]{style="font-family:宋体"}[2]{lang="EN-US"}*
+\*Dec 27 12:02:01:846 2012 Sysname PIM/7/DF: -MDC=1; Create DFT for RP: 1.1.0.1 on interface GigabitEthernet1/0/1, expire time is 1880 msec (BD012050)
 
-[[\*Dec 10 13:53:28:190 2010 Sysname PIM/7/ASSERT: -MDC=1; Assert (2.1.1.1, 225.0.0.25) GigabitEthernet1/0/1 FSM Loser-\>Loser, acceptable assert received from current Winner. (SM041341)]{lang="EN-US"}]{#struct_0_12031_59956_592132544}
+\*Dec 27 12:02:01:846 2012 Sysname PIM/7/DF: -MDC=1; Set MC to 0 for RP (1.1.0.1) on interface GigabitEthernet1/0/1 (BD01523)
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_x112016078}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上的表项（]{style="font-family:宋体"}[2.1.1.1]{lang="EN-US"}[，]{style="font-family:宋体"}[225.0.0.25]{lang="EN-US"}[）的断言状态机保持]{style="font-family:宋体"}[Loser]{lang="EN-US"}[状态，此时从当前的]{style="font-family:宋体"}[Winner]{lang="EN-US"}[收到一个可接受的断言报文]{style="font-family:宋体"}*
+\*Dec 27 12:02:02:803 2012 Sysname PIM/7/DF: -MDC=1; Send bidir-pim offer packet for RP (1.1.0.1) on interface GigabitEthernet1/0/1. (BD01200)
 
-[[\# ]{lang="EN-US"}]{#struct_0_12031_59956_1608092079}[接口上使能]{style="font-family:宋体"}[PIM-SM]{lang="EN-US"}[，并打开公网实例发送]{style="font-family:宋体"}[PIM]{lang="EN-US"}[断言报文的调试信息开关。]{style="font-family:宋体"}
+\*Dec 27 12:02:02:803 2012 Sysname PIM/7/DF: -MDC=1; DF FSM Offer-\>Offer for RP (1.1.0.1) on interface GigabitEthernet1/0/1, while DFT expires and MC is less than robustness (BD011974)
 
-[[\<Sysname\> debugging pim assert send]{lang="EN-US"}]{#struct_0_12031_59956_x752731462}
+\*Dec 27 12:02:02:803 2012 Sysname PIM/7/DF: -MDC=1; Set MC to 1 for RP (1.1.0.1) on interface GigabitEthernet1/0/1 (BD01523)
 
-[\*Dec 10 13:54:04:921 2010 Sysname PIM/7/ASSERT: -MDC=1; PIM ver 2 assert packet sending 5.1.1.10 -\> 224.0.0.13 for (2.1.1.1, 225.0.0.25) through interface GigabitEthernet1/0/1, Rbit: 0, Preference: 10, Metric: 2. (SM04155)]{lang="EN-US"}
+*// 双向PIM的RP为1.1.0.1，在接口GigabitEthernet1/0/1上触发DF选举。启动DF选举定时器并设置Offer报文的发送个数为0，该定时器超时后发送Offer报文，并设置Offer报文的发送个数为1*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_614497810}*[从接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[发送一个针对表项（]{style="font-family:宋体"}[2.1.1.1]{lang="EN-US"}[，]{style="font-family:宋体"}[225.0.0.25]{lang="EN-US"}[）的断言报文，报文源地址为]{style="font-family:宋体"}[5.1.1.10]{lang="EN-US"}[，目的地址为]{style="font-family:宋体"}[224.0.0.13]{lang="EN-US"}[，]{style="font-family:宋体"}[RPT]{lang="EN-US"}[标志为]{style="font-family:宋体"}[0]{lang="EN-US"}[，优先级为]{style="font-family:宋体"}[10]{lang="EN-US"}[，度量值为]{style="font-family:宋体"}[2]{lang="EN-US"}*
+\*Dec 27 12:02:03:882 2012 Sysname PIM/7/DF: -MDC=1; Send bidir-pim offer packet for RP (1.1.0.1) on interface GigabitEthernet1/0/1. (BD01200)
 
-[[\# ]{lang="EN-US"}]{#struct_0_12031_59956_1900923856}[接口上使能]{style="font-family:宋体"}[PIM-SM]{lang="EN-US"}[，并打开公网实例双向]{style="font-family:宋体"}[PIM DF]{lang="EN-US"}[选举的调试信息开关。]{style="font-family:宋体"}
+\*Dec 27 12:02:03:952 2012 Sysname PIM/7/DF: -MDC=1; DF FSM Offer-\>Win for RP (1.1.0.1) on interface GigabitEthernet1/0/1, while DFT expires and MC is equal to robustness and we have path to RPA (BD011974)
 
-[[\<Sysname\> debugging pim df]{lang="EN-US"}]{#struct_0_12031_59956_1608026543}
+\*Dec 27 12:02:03:952 2012 Sysname PIM/7/DF: -MDC=1; Set DF to 8.13.0.1 (pref: 0, metric: 0) for RP (1.1.0.1) on interface GigabitEthernet1/0/1 (BD01394)
 
-[\*Dec 27 12:02:01:846 2012 Sysname PIM/7/DF: -MDC=1; Start DF election on interface GigabitEthernet1/0/1 of RP 1.1.0.1 (BD012845)]{lang="EN-US"}
+\*Dec 27 12:02:03:952 2012 Sysname PIM/7/DF: -MDC=1; Send bidir-pim winner packet for RP (1.1.0.1) on interface GigabitEthernet1/0/1. (BD01200)
 
-[\*Dec 27 12:02:01:846 2012 Sysname PIM/7/DF: -MDC=1; Create DFT for RP: 1.1.0.1 on interface GigabitEthernet1/0/1, expire time is 1880 msec (BD012050)]{lang="EN-US"}
+\*Dec 27 12:02:03:953 2012 Sysname PIM/7/DF: -MDC=1; Create WinTimer for RP: 1.1.0.1 on interface GigabitEthernet1/0/1, expire time is 5000 msec (BD012275)
 
-[\*Dec 27 12:02:01:846 2012 Sysname PIM/7/DF: -MDC=1; Set MC to 0 for RP (1.1.0.1) on interface GigabitEthernet1/0/1 (BD01523)]{lang="EN-US"}
+*// 定时器再次超时后发送Offer报文，Offer报文的发送个数等于健壮系数，接口的DF状态由Offer切换为Win。将DF设置为本接口的IP地址8.13.0.1，发送Winner报文并设置Winner定时器为5000毫秒*
 
-[\*Dec 27 12:02:02:803 2012 Sysname PIM/7/DF: -MDC=1; Send bidir-pim offer packet for RP (1.1.0.1) on interface GigabitEthernet1/0/1. (BD01200)]{lang="EN-US"}
+\# 接口上使能PIM-SM，并打开公网实例PIM错误调试信息开关。
 
-[\*Dec 27 12:02:02:803 2012 Sysname PIM/7/DF: -MDC=1; DF FSM Offer-\>Offer for RP (1.1.0.1) on interface GigabitEthernet1/0/1, while DFT expires and MC is less than robustness (BD011974)]{lang="EN-US"}
+\<Sysname\> debugging pim error
 
-[\*Dec 27 12:02:02:803 2012 Sysname PIM/7/DF: -MDC=1; Set MC to 1 for RP (1.1.0.1) on interface GigabitEthernet1/0/1 (BD01523)]{lang="EN-US"}
+\*Dec 10 13:57:31:714 2010 Sysname PIM/7/ERROR: -MDC=1; Received a PIM packet from unknown neighbor 6.1.1.3. Ignored. (PM08341)
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_x1126298333}*[双向]{style="font-family:宋体"}[PIM]{lang="EN-US"}[的]{style="font-family:宋体"}[RP]{lang="EN-US"}[为]{style="font-family:宋体"}[1.1.0.1]{lang="EN-US"}[，在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上触发]{style="font-family:宋体"}[DF]{lang="EN-US"}[选举。启动]{style="font-family:宋体"}[DF]{lang="EN-US"}[选举定时器并设置]{style="font-family:宋体"}[Offer]{lang="EN-US"}[报文的发送个数为]{style="font-family:宋体"}[0]{lang="EN-US"}[，该定时器超时后发送]{style="font-family:宋体"}[Offer]{lang="EN-US"}[报文，并设置]{style="font-family:宋体"}[Offer]{lang="EN-US"}[报文的发送个数为]{style="font-family:宋体"}[1]{lang="EN-US"}*
+*// 从未知邻居6.1.1.3收到一个PIM报文，将其忽略*
 
-[[\*Dec 27 12:02:03:882 2012 Sysname PIM/7/DF: -MDC=1; Send bidir-pim offer packet for RP (1.1.0.1) on interface GigabitEthernet1/0/1. (BD01200)]{lang="EN-US"}]{#struct_0_12031_59956_1318156965}
+\# 接口上使能PIM-SM，并打开公网实例PIM事件调试信息开关。
 
-[\*Dec 27 12:02:03:952 2012 Sysname PIM/7/DF: -MDC=1; DF FSM Offer-\>Win for RP (1.1.0.1) on interface GigabitEthernet1/0/1, while DFT expires and MC is equal to robustness and we have path to RPA (BD011974)]{lang="EN-US"}
+\<Sysname\> debugging pim event
 
-[\*Dec 27 12:02:03:952 2012 Sysname PIM/7/DF: -MDC=1; Set DF to 8.13.0.1 (pref: 0, metric: 0) for RP (1.1.0.1) on interface GigabitEthernet1/0/1 (BD01394)]{lang="EN-US"}
+\*Dec 14 18:24:27:191 2010 Sysname PIM/7/EVENT: -MDC=1; Receive No-Cache msg for (1.0.0.7,/225.0.0.25) with IIF GigabitEthernet1/0/1. (SM161073)
 
-[\*Dec 27 12:02:03:952 2012 Sysname PIM/7/DF: -MDC=1; Send bidir-pim winner packet for RP (1.1.0.1) on interface GigabitEthernet1/0/1. (BD01200)]{lang="EN-US"}
+*// 收到一个未知组播流消息，组播流源地址为1.0.0.7，目的地址为225.0.0.25，入接口为GigabitEthernet1/0/1*
 
-[\*Dec 27 12:02:03:953 2012 Sysname PIM/7/DF: -MDC=1; Create WinTimer for RP: 1.1.0.1 on interface GigabitEthernet1/0/1, expire time is 5000 msec (BD012275)]{lang="EN-US"}
+\# 接口上使能PIM-SM，并打开公网实例接收PIM加入/剪枝报文的调试信息开关。
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_x1749225922}*[定时器再次超时后发送]{style="font-family:宋体"}[Offer]{lang="EN-US"}[报文，]{style="font-family:宋体"}[Offer]{lang="EN-US"}[报文的发送个数等于健壮系数，接口的]{style="font-family:宋体"}[DF]{lang="EN-US"}[状态由]{style="font-family:宋体"}[Offer]{lang="EN-US"}[切换为]{style="font-family:宋体"}[Win]{lang="EN-US"}[。将]{style="font-family:宋体"}[DF]{lang="EN-US"}[设置为本接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[8.13.0.1]{lang="EN-US"}[，发送]{style="font-family:宋体"}[Winner]{lang="EN-US"}[报文并设置]{style="font-family:宋体"}[Winner]{lang="EN-US"}[定时器为]{style="font-family:宋体"}[5000]{lang="EN-US"}[毫秒]{style="font-family:宋体"}*
+\<Sysname\> debugging pim join-prune received
 
-[[\# ]{lang="EN-US"}]{#struct_0_12031_59956_198179454}[接口上使能]{style="font-family:宋体"}[PIM-SM]{lang="EN-US"}[，并打开公网实例]{style="font-family:宋体"}[PIM]{lang="EN-US"}[错误调试信息开关。]{style="font-family:宋体"}
+\*Dec 10 10:43:05:326 2010 Sysname PIM/7/JP: -MDC=1; PIM ver 2 JP received 6.1.1.5 -\> 224.0.0.13 on interface GigabitEthernet1/0/1 (SM141126)
 
-[[\<Sysname\> debugging pim error]{lang="EN-US"}]{#struct_0_12031_59956_1608223151}
+\*Dec 10 10:43:05:331 2010 Sysname PIM/7/JP: -MDC=1;  Upstream: 6.0.0.10, Number of groups: 1, Holdtime: 210 (SM141128)
 
-[\*Dec 10 13:57:31:714 2010 Sysname PIM/7/ERROR: -MDC=1; Received a PIM packet from unknown neighbor 6.1.1.3. Ignored. (PM08341)]{lang="EN-US"}
+\*Dec 10 10:43:05:339 2010 Sysname PIM/7/JP: -MDC=1;  Group: 225.0.0.25 \-\-- 1 joins 0 prunes (SM141134)
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_41791381}*[从未知邻居]{style="font-family:宋体"}[6.1.1.3]{lang="EN-US"}[收到一个]{style="font-family:宋体"}[PIM]{lang="EN-US"}[报文，将其忽略]{style="font-family:宋体"}*
+\*Dec 10 10:43:05:349 2010 Sysname PIM/7/JP: -MDC=1;   Join: 3.0.0.5 \-\-- Flags: S (SM141138)
 
-[[\# ]{lang="EN-US"}]{#struct_0_12031_59956_x1006665778}[接口上使能]{style="font-family:宋体"}[PIM-SM]{lang="EN-US"}[，并打开公网实例]{style="font-family:宋体"}[PIM]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}
+*// 从接口GigabitEthernet1/0/1收到PIMv2的加入/剪枝报文，报文源地址为6.1.1.5，目的地址为224.0.0.13，上游邻居为6.0.0.10，组数目为1，保持时间为210秒，组播组225.0.0.25的信息为：1个加入，0个剪枝；加入3.0.0.5，S标志位为1*
 
-[[\<Sysname\> debugging pim event]{lang="EN-US"}]{#struct_0_12031_59956_90723236}
+\# 接口上使能PIM-SM，并打开公网实例发送PIM加入/剪枝报文的调试信息开关。
 
-[\*Dec 14 18:24:27:191 2010 Sysname PIM/7/EVENT: -MDC=1; Receive No-Cache msg for (1.0.0.7,/225.0.0.25) with IIF GigabitEthernet1/0/1. (SM161073)]{lang="EN-US"}
+\<Sysname\> debugging pim join-prune send
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_2123274960}*[收到一个未知组播流消息，组播流源地址为]{style="font-family:宋体"}[1.0.0.7]{lang="EN-US"}[，目的地址为]{style="font-family:宋体"}[225.0.0.25]{lang="EN-US"}[，入接口为]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}*
+\*Dec 10 10:43:06:415 2010 Sysname PIM/7/JP: -MDC=1; Send a JP packet to interface GigabitEthernet1/0/1. (PM09198)
 
-[[\# ]{lang="EN-US"}]{#struct_0_12031_59956_1608157615}[接口上使能]{style="font-family:宋体"}[PIM-SM]{lang="EN-US"}[，并打开公网实例接收]{style="font-family:宋体"}[PIM]{lang="EN-US"}[加入]{style="font-family:宋体"}[/]{lang="EN-US"}[剪枝报文的调试信息开关。]{style="font-family:宋体"}
+\*Dec 10 10:43:06:416 2010 Sysname PIM/7/JP: -MDC=1;  Upstream: 5.0.0.10, Groups: 1, Holdtime: 210 (PM09200)
 
-[[\<Sysname\> debugging pim join-prune received]{lang="EN-US"}]{#struct_0_12031_59956_1608354223}
+\*Dec 10 10:43:06:416 2010 Sysname PIM/7/JP: -MDC=1;  Group: 225.0.0.25 \-\-- 1 joins 0 prunes (PM09206)
 
-[\*Dec 10 10:43:05:326 2010 Sysname PIM/7/JP: -MDC=1; PIM ver 2 JP received 6.1.1.5 -\> 224.0.0.13 on interface GigabitEthernet1/0/1 (SM141126)]{lang="EN-US"}
+\*Dec 10 10:43:06:417 2010 Sysname PIM/7/JP: -MDC=1;   Join: 3.0.0.5 \-\-- Flags: S (PM09210) 
 
-[\*Dec 10 10:43:05:331 2010 Sysname PIM/7/JP: -MDC=1;  Upstream: 6.0.0.10, Number of groups: 1, Holdtime: 210 (SM141128)]{lang="EN-US"}
+*// 向接口GigabitEthernet1/0/1发送加入/剪枝报文，上游邻居为5.0.0.10，组数目为1，保持时间为210秒，组播组225.0.0.25的信息为：1个加入，0个剪枝；加入3.0.0.5，S标志位为1*
 
-[\*Dec 10 10:43:05:339 2010 Sysname PIM/7/JP: -MDC=1;  Group: 225.0.0.25 \-\-- 1 joins 0 prunes (SM141134)]{lang="EN-US"}
+\# 接口上使能PIM-SM，并打开公网实例接收PIM Hello报文的调试信息开关。
 
-[\*Dec 10 10:43:05:349 2010 Sysname PIM/7/JP: -MDC=1;   Join: 3.0.0.5 \-\-- Flags: S (SM141138)]{lang="EN-US"}
+\<Sysname\> debugging pim neighbor receive
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_x1917389194}*[从接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[收到]{style="font-family:宋体"}[PIMv2]{lang="EN-US"}[的加入]{style="font-family:宋体"}[/]{lang="EN-US"}[剪枝报文，报文源地址为]{style="font-family:宋体"}[6.1.1.5]{lang="EN-US"}[，目的地址为]{style="font-family:宋体"}[224.0.0.13]{lang="EN-US"}[，上游邻居为]{style="font-family:宋体"}[6.0.0.10]{lang="EN-US"}[，组数目为]{style="font-family:宋体"}[1]{lang="EN-US"}[，保持时间为]{style="font-family:宋体"}[210]{lang="EN-US"}[秒，组播组]{style="font-family:宋体"}[225.0.0.25]{lang="EN-US"}[的信息为：]{style="font-family:宋体"}[1]{lang="EN-US"}[个加入，]{style="font-family:宋体"}[0]{lang="EN-US"}[个剪枝；加入]{style="font-family:宋体"}[3.0.0.5]{lang="EN-US"}[，]{style="font-family:宋体"}[S]{lang="EN-US"}[标志位为]{style="font-family:宋体"}[1]{lang="EN-US"}*
+\*Dec 10 10:31:45:76 2010 Sysname PIM/7/NBR: -MDC=1; Received Hello packet from neighbor 3.0.0.5, incoming interface is GigabitEthernet1/0/1. (PM073099)
 
-[[\# ]{lang="EN-US"}]{#struct_0_12031_59956_x1821633610}[接口上使能]{style="font-family:宋体"}[PIM-SM]{lang="EN-US"}[，并打开公网实例发送]{style="font-family:宋体"}[PIM]{lang="EN-US"}[加入]{style="font-family:宋体"}[/]{lang="EN-US"}[剪枝报文的调试信息开关。]{style="font-family:宋体"}
+\*Dec 10 10:31:45:89 2010 Sysname PIM/7/NBR: -MDC=1; Holdtime: 105 (PM073147)
 
-[[\<Sysname\> debugging pim join-prune send]{lang="EN-US"}]{#struct_0_12031_59956_1608485295}
+\*Dec 10 10:31:45:98 2010 Sysname PIM/7/NBR: -MDC=1; Tbit: 0, Lan delay: 500, Override interval: 2500 (PM073184)
 
-[\*Dec 10 10:43:06:415 2010 Sysname PIM/7/JP: -MDC=1; Send a JP packet to interface GigabitEthernet1/0/1. (PM09198)]{lang="EN-US"}
+\*Dec 10 10:31:45:101 2010 Sysname PIM/7/NBR: -MDC=1; DR priority: 1 (PM073207)
 
-[\*Dec 10 10:43:06:416 2010 Sysname PIM/7/JP: -MDC=1;  Upstream: 5.0.0.10, Groups: 1, Holdtime: 210 (PM09200)]{lang="EN-US"}
+\*Dec 10 10:31:45:119 2010 Sysname PIM/7/NBR: -MDC=1; Genid: 0xB3DC0254 (PM073231)
 
-[\*Dec 10 10:43:06:416 2010 Sysname PIM/7/JP: -MDC=1;  Group: 225.0.0.25 \-\-- 1 joins 0 prunes (PM09206)]{lang="EN-US"}
+*// 从接口GigabitEthernet1/0/1上收到源地址为3.0.0.5的PIMv2的Hello报文，保持时间为105秒，T位没有设置，剪枝延迟时间为500毫秒，剪枝否决时间为2500毫秒，DR优先级为1，Generation ID为0xB3DC0254*
 
-[\*Dec 10 10:43:06:417 2010 Sysname PIM/7/JP: -MDC=1;   Join: 3.0.0.5 \-\-- Flags: S (PM09210)  ]{lang="EN-US"}
+\# 接口上使能PIM-SM，并打开公网实例发送PIM Hello报文的调试信息开关。
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_781019765}*[向接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[发送加入]{style="font-family:宋体"}[/]{lang="EN-US"}[剪枝报文，上游邻居为]{style="font-family:宋体"}[5.0.0.10]{lang="EN-US"}[，组数目为]{style="font-family:宋体"}[1]{lang="EN-US"}[，保持时间为]{style="font-family:宋体"}[210]{lang="EN-US"}[秒，组播组]{style="font-family:宋体"}[225.0.0.25]{lang="EN-US"}[的信息为：]{style="font-family:宋体"}[1]{lang="EN-US"}[个加入，]{style="font-family:宋体"}[0]{lang="EN-US"}[个剪枝；加入]{style="font-family:宋体"}[3.0.0.5]{lang="EN-US"}[，]{style="font-family:宋体"}[S]{lang="EN-US"}[标志位为]{style="font-family:宋体"}[1]{lang="EN-US"}*
+\<Sysname\> debugging pim neighbor send
 
-[[\# ]{lang="EN-US"}]{#struct_0_12031_59956_x1436524520}[接口上使能]{style="font-family:宋体"}[PIM-SM]{lang="EN-US"}[，并打开公网实例接收]{style="font-family:宋体"}[PIM Hello]{lang="EN-US"}[报文的调试信息开关。]{style="font-family:宋体"}
+\*Dec 10 10:31:31:241 2010 Sysname PIM/7/NBR: -MDC=1; PIM ver 2 Hello sending 3.0.0.10 -\> 224.0.0.13 on GigabitEthernet1/0/1 (PM071410)
 
-[[\<Sysname\> debugging pim neighbor receive]{lang="EN-US"}]{#struct_0_12031_59956_x1120922345}
+\*Dec 10 10:31:31:244 2010 Sysname PIM/7/NBR: -MDC=1; Holdtime: 105 s (PM071412)
 
-[\*Dec 10 10:31:45:76 2010 Sysname PIM/7/NBR: -MDC=1; Received Hello packet from neighbor 3.0.0.5, incoming interface is GigabitEthernet1/0/1. (PM073099)]{lang="EN-US"}
+\*Dec 10 10:31:31:247 2010 Sysname PIM/7/NBR: -MDC=1; Tbit: 0, Lan delay: 500 ms, Override interval: 2500 ms (PM071416)
 
-[\*Dec 10 10:31:45:89 2010 Sysname PIM/7/NBR: -MDC=1; Holdtime: 105 (PM073147)]{lang="EN-US"}
+\*Dec 10 10:31:31:249 2010 Sysname PIM/7/NBR: -MDC=1; DR priority: 1 (PM071418)
 
-[\*Dec 10 10:31:45:98 2010 Sysname PIM/7/NBR: -MDC=1; Tbit: 0, Lan delay: 500, Override interval: 2500 (PM073184)]{lang="EN-US"}
+\*Dec 10 10:31:31:251 2010 Sysname PIM/7/NBR: -MDC=1; Genid: 0x7EF237CB (PM071420)
 
-[\*Dec 10 10:31:45:101 2010 Sysname PIM/7/NBR: -MDC=1; DR priority: 1 (PM073207)]{lang="EN-US"}
+*// 从接口GigabitEthernet1/0/1上发送PIMv2的Hello报文，源地址为3.0.0.10，目的地址为224.0.0.13，保持时间为105秒，T位没有设置，剪枝延迟时间为500毫秒，剪枝否决时间为2500毫秒，DR优先级为1，Generation ID为07EF237CB*
 
-[\*Dec 10 10:31:45:119 2010 Sysname PIM/7/NBR: -MDC=1; Genid: 0xB3DC0254 (PM073231)]{lang="EN-US"}
+\# 接口上使能PIM-SM，并打开公网实例PIM注册报文的调试信息开关。
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_341325956}*[从接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上收到源地址为]{style="font-family:宋体"}[3.0.0.5]{lang="EN-US"}[的]{style="font-family:宋体"}[PIMv2]{lang="EN-US"}[的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文，保持时间为]{style="font-family:宋体"}[105]{lang="EN-US"}[秒，]{style="font-family:宋体"}[T]{lang="EN-US"}[位没有设置，剪枝延迟时间为]{style="font-family:宋体"}[500]{lang="EN-US"}[毫秒，剪枝否决时间为]{style="font-family:宋体"}[2500]{lang="EN-US"}[毫秒，]{style="font-family:宋体"}[DR]{lang="EN-US"}[优先级为]{style="font-family:宋体"}[1]{lang="EN-US"}[，]{style="font-family:宋体"}[Generation ID]{lang="EN-US"}[为]{style="font-family:宋体"}[0xB3DC0254]{lang="EN-US"}*
+\<Sysname\> debugging pim register
 
-[[\# ]{lang="EN-US"}]{#struct_0_12031_59956_1880829084}[接口上使能]{style="font-family:宋体"}[PIM-SM]{lang="EN-US"}[，并打开公网实例发送]{style="font-family:宋体"}[PIM Hello]{lang="EN-US"}[报文的调试信息开关。]{style="font-family:宋体"}
+\*Dec 10 10:51:15:332 2010 Sysname PIM/7/REG: -MDC=1; (1.0.0.5, 225.0.0.25) register state transited from NoInfo to Join due to CouldRegister(S,G) == True. Add reg tunnel. (SM06512)
 
-[[\<Sysname\> debugging pim neighbor send]{lang="EN-US"}]{#struct_0_12031_59956_x1120856809}
+\*Dec 10 10:51:15:340 2010 Sysname PIM/7/REG: -MDC=1; Add register oiffor (1.0.0.5, 225.0.0.25) (SM061336)
 
-[\*Dec 10 10:31:31:241 2010 Sysname PIM/7/NBR: -MDC=1; PIM ver 2 Hello sending 3.0.0.10 -\> 224.0.0.13 on GigabitEthernet1/0/1 (PM071410)]{lang="EN-US"}
+*// 表项（1.0.0.5，225.0.0.25）的注册状态机由NoInfo状态变为加入状态。添加注册通道，并为该表项添加注册出接口*
 
-[\*Dec 10 10:31:31:244 2010 Sysname PIM/7/NBR: -MDC=1; Holdtime: 105 s (PM071412)]{lang="EN-US"}
+\*Dec 10 10:51:25:382 2010 Sysname PIM/7/REG: -MDC=1; PIM ver 2 Reg-Stop received 5.0.0.10 -\> 1.0.0.10 for (1.0.0.5, 225.0.0.25) (SM061767)
 
-[\*Dec 10 10:31:31:247 2010 Sysname PIM/7/NBR: -MDC=1; Tbit: 0, Lan delay: 500 ms, Override interval: 2500 ms (PM071416)]{lang="EN-US"}
+\*Dec 10 10:51:25:391 2010 Sysname PIM/7/REG: -MDC=1; Received register-stop message for (1.0.0.5, 225.0.0.25). (SM061834)
 
-[\*Dec 10 10:31:31:249 2010 Sysname PIM/7/NBR: -MDC=1; DR priority: 1 (PM071418)]{lang="EN-US"}
+\*Dec 10 10:51:25:399 2010 Sysname PIM/7/REG: -MDC=1; (1.0.0.5, 225.0.0.25) register state transited from Join to Prune due to received RegStop. Remove reg tunnel, set RST to 61s. (SM06695)
 
-[\*Dec 10 10:31:31:251 2010 Sysname PIM/7/NBR: -MDC=1; Genid: 0x7EF237CB (PM071420)]{lang="EN-US"}
+\*Dec 10 10:51:25:404 2010 Sysname PIM/7/REG: -MDC=1; RST(61s) create successfully for (1.0.0.5, 225.0.0.25). (SM06388)
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_x461386880}*[从接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上发送]{style="font-family:宋体"}[PIMv2]{lang="EN-US"}[的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文，源地址为]{style="font-family:宋体"}[3.0.0.10]{lang="EN-US"}[，目的地址为]{style="font-family:宋体"}[224.0.0.13]{lang="EN-US"}[，保持时间为]{style="font-family:宋体"}[105]{lang="EN-US"}[秒，]{style="font-family:宋体"}[T]{lang="EN-US"}[位没有设置，剪枝延迟时间为]{style="font-family:宋体"}[500]{lang="EN-US"}[毫秒，剪枝否决时间为]{style="font-family:宋体"}[2500]{lang="EN-US"}[毫秒，]{style="font-family:宋体"}[DR]{lang="EN-US"}[优先级为]{style="font-family:宋体"}[1]{lang="EN-US"}[，]{style="font-family:宋体"}[Generation ID]{lang="EN-US"}[为]{style="font-family:宋体"}[07EF237CB]{lang="EN-US"}*
+\*Dec 10 10:51:25:425 2010 Sysname PIM/7/REG: -MDC=1; Delete register oif for (1.0.0.5, 225.0.0.25) (SM061428)
 
-[[\# ]{lang="EN-US"}]{#struct_0_12031_59956_1041554573}[接口上使能]{style="font-family:宋体"}[PIM-SM]{lang="EN-US"}[，并打开公网实例]{style="font-family:宋体"}[PIM]{lang="EN-US"}[注册报文的调试信息开关。]{style="font-family:宋体"}
+*// 从接口收到PIMv2的表项（1.0.0.5，225.0.0.25）的注册终止报文，源地址为5.0.0.10，目的地址为1.0.0.10。该表项的注册状态机由加入状态变为剪枝状态，删除注册通道。设置注册停止定时器时间为61秒，注册停止定时器被成功地创建。删除该表项的注册出接口*
 
-[[\<Sysname\> debugging pim register]{lang="EN-US"}]{#struct_0_12031_59956_x1120660201}
+\*May  3 07:09:25:137 2013 Sysname PIM/7/REG: -MDC=1; Register packets of (7.11.0.123, 225.1.1.1) not forwarded because no active local RP exists. (SM06406)
 
-[\*Dec 10 10:51:15:332 2010 Sysname PIM/7/REG: -MDC=1; (1.0.0.5, 225.0.0.25) register state transited from NoInfo to Join due to CouldRegister(S,G) == True. Add reg tunnel. (SM06512)]{lang="EN-US"}
+*// 由于没有激活的本地Anycast-RP存在，不为（7.11.0.123，225.1.1.1）转发注册报文*
 
-[\*Dec 10 10:51:15:340 2010 Sysname PIM/7/REG: -MDC=1; Add register oiffor (1.0.0.5, 225.0.0.25) (SM061336)]{lang="EN-US"}
+\*May  3 07:09:25:137 2013 Sysname PIM/7/REG: -MDC=1; Register packets of (7.11.0.123, 225.1.1.1) not forwarded because the source address belongs to the Anycast-RP set. (SM061936)
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_x1905841443}*[表项（]{style="font-family:宋体"}[1.0.0.5]{lang="EN-US"}[，]{style="font-family:宋体"}[225.0.0.25]{lang="EN-US"}[）的注册状态机由]{style="font-family:宋体"}[NoInfo]{lang="EN-US"}[状态变为加入状态。添加注册通道，并为该表项添加注册出接口]{style="font-family:宋体"}*
+*// 由于源地址在Anycast-RP集中，不为（7.11.0.123，225.1.1.1）转发注册报文*
 
-[[\*Dec 10 10:51:25:382 2010 Sysname PIM/7/REG: -MDC=1; PIM ver 2 Reg-Stop received 5.0.0.10 -\> 1.0.0.10 for (1.0.0.5, 225.0.0.25) (SM061767)]{lang="EN-US"}]{#struct_0_12031_59956_x1120398057}
+\# 接口上使能PIM-SM，并打开公网实例接收PIM与RP相关报文的调试信息开关。
 
-[\*Dec 10 10:51:25:391 2010 Sysname PIM/7/REG: -MDC=1; Received register-stop message for (1.0.0.5, 225.0.0.25). (SM061834)]{lang="EN-US"}
+\<Sysname\> debugging pim rp receive
 
-[\*Dec 10 10:51:25:399 2010 Sysname PIM/7/REG: -MDC=1; (1.0.0.5, 225.0.0.25) register state transited from Join to Prune due to received RegStop. Remove reg tunnel, set RST to 61s. (SM06695)]{lang="EN-US"}
+\*Dec 10 10:55:41:438 2010 Sysname PIM/7/RP: -MDC=1; Received a C-RP-Adv Packet from self, prefix count 1, priority 192, holdtime 150, RP address 5.0.0.10. (RP03676)
 
-[\*Dec 10 10:51:25:404 2010 Sysname PIM/7/REG: -MDC=1; RST(61s) create successfully for (1.0.0.5, 225.0.0.25). (SM06388)]{lang="EN-US"}
+\*Dec 10 10:55:41:438 2010 Sysname PIM/7/RP: -MDC=1;  Group: 224.0.0.0/4, Bbit: 0, Zbit: 0 (RP03681)
 
-[\*Dec 10 10:51:25:425 2010 Sysname PIM/7/REG: -MDC=1; Delete register oif for (1.0.0.5, 225.0.0.25) (SM061428) ]{lang="EN-US"}
+*[// RP*]*收到一个自已发送的RP宣告报文，前缀数目为1，优先级为192，保持时间为150秒，RP地址为5.0.0.10。组播组224.0.0.0/4的信息为：B位没有设置，Z位没有设置*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_x1013799146}*[从接口收到]{style="font-family:宋体"}[PIMv2]{lang="EN-US"}[的表项（]{style="font-family:宋体"}[1.0.0.5]{lang="EN-US"}[，]{style="font-family:宋体"}[225.0.0.25]{lang="EN-US"}[）的注册终止报文，源地址为]{style="font-family:宋体"}[5.0.0.10]{lang="EN-US"}[，目的地址为]{style="font-family:宋体"}[1.0.0.10]{lang="EN-US"}[。该表项的注册状态机由加入状态变为剪枝状态，删除注册通道。设置注册停止定时器时间为]{style="font-family:宋体"}[61]{lang="EN-US"}[秒，注册停止定时器被成功地创建。删除该表项的注册出接口]{style="font-family:宋体"}*
+\*Dec 10 10:54:55:54 2010 Sysname PIM/7/RP: -MDC=1; Received BSM packet on GigabitEthernet1/0/1 from 3.0.0.10. Scope Global, Nbit: 0, Fragment tag: 0x5e67, Hash mask len: 30, BSR Priority: 64, BSR address: 4.0.0.10. (RP04760)
 
-[[\*May  3 07:09:25:137 2013 Sysname PIM/7/REG: -MDC=1; Register packets of (7.11.0.123, 225.1.1.1) not forwarded because no active local RP exists. (SM06406)]{lang="EN-US"}]{#struct_0_12031_59956_x117865304}
+*// 在接口GigabitEthernet1/0/1收到一个BSR自举报文，源地址为3.0.0.10，属全局域，N位没有设置，分片信息为0x5e67，哈希掩码长度为30，BSR优先级为64，BSR地址为4.0.0.10*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_x992268046}*[由于没有激活的本地]{style="font-family:宋体"}[Anycast-RP]{lang="EN-US"}[存在，不为（]{style="font-family:宋体"}[7.11.0.123]{lang="EN-US"}[，]{style="font-family:宋体"}[225.1.1.1]{lang="EN-US"}[）转发注册报文]{style="font-family:宋体"}*
+\*Dec 10 10:54:55:55 2010 Sysname PIM/7/RP: -MDC=1; Scope \'Global\' receive an event of \'Receive Preferred BSM\' at state \'Accept Preferred\'. (RP042346)
 
-[[\*May  3 07:09:25:137 2013 Sysname PIM/7/REG: -MDC=1; Register packets of (7.11.0.123, 225.1.1.1) not forwarded because the source address belongs to the Anycast-RP set. (SM061936)]{lang="EN-US"}]{#struct_0_12031_59956_x788954969}
+*// 全局域内在Accept Preferred状态下收到一个更优BSR的自举报文*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_362354616}*[由于源地址在]{style="font-family:宋体"}[Anycast-RP]{lang="EN-US"}[集中，不为（]{style="font-family:宋体"}[7.11.0.123]{lang="EN-US"}[，]{style="font-family:宋体"}[225.1.1.1]{lang="EN-US"}[）转发注册报文]{style="font-family:宋体"}*
+\*Dec 10 10:54:55:56 2010 Sysname PIM/7/RP: -MDC=1;  Group: 224.0.0.0/4 \-\-- RPCount: 1, Frag RP Count: 1 (RP05535)
 
-[[\# ]{lang="EN-US"}]{#struct_0_12031_59956_x993504988}[接口上使能]{style="font-family:宋体"}[PIM-SM]{lang="EN-US"}[，并打开公网实例接收]{style="font-family:宋体"}[PIM]{lang="EN-US"}[与]{style="font-family:宋体"}[RP]{lang="EN-US"}[相关报文的调试信息开关。]{style="font-family:宋体"}
+\*Dec 10 10:54:55:56 2010 Sysname PIM/7/RP: -MDC=1;   RP: 5.0.0.10 \-\-- Holdtime 180, Priority 192 (RP05539)
 
-[[\<Sysname\> debugging pim rp receive]{lang="EN-US"}]{#struct_0_12031_59956_x1120463593}
+*// 组播组224.0.0.0/4的信息为：C-RP个数为1，分片信息为1。RP地址为5.0.0.10，保持时间为180秒，优先级为192*
 
-[\*Dec 10 10:55:41:438 2010 Sysname PIM/7/RP: -MDC=1; Received a C-RP-Adv Packet from self, prefix count 1, priority 192, holdtime 150, RP address 5.0.0.10. (RP03676)]{lang="EN-US"}
+\# 接口上使能PIM-SM，并打开公网实例发送PIM与RP相关报文的调试信息开关。
 
-[\*Dec 10 10:55:41:438 2010 Sysname PIM/7/RP: -MDC=1;  Group: 224.0.0.0/4, Bbit: 0, Zbit: 0 (RP03681)]{lang="EN-US"}
+\<Sysname\> debugging pim rp send
 
-[*[// RP]{lang="EN-US"}*]{#struct_0_12031_59956_x1148447732}*[收到一个自已发送的]{style="font-family:宋体"}[RP]{lang="EN-US"}[宣告报文，前缀数目为]{style="font-family:宋体"}[1]{lang="EN-US"}[，优先级为]{style="font-family:宋体"}[192]{lang="EN-US"}[，保持时间为]{style="font-family:宋体"}[150]{lang="EN-US"}[秒，]{style="font-family:宋体"}[RP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[5.0.0.10]{lang="EN-US"}[。组播组]{style="font-family:宋体"}[224.0.0.0/4]{lang="EN-US"}[的信息为：]{style="font-family:宋体"}[B]{lang="EN-US"}[位没有设置，]{style="font-family:宋体"}[Z]{lang="EN-US"}[位没有设置]{style="font-family:宋体"}*
+\*Dec 10 10:54:55:56 2010 Sysname PIM/7/RP: -MDC=1; Send out BSM packet to interface GigabitEthernet1/0/1. (PM09364)
 
-[[\*Dec 10 10:54:55:54 2010 Sysname PIM/7/RP: -MDC=1; Received BSM packet on GigabitEthernet1/0/1 from 3.0.0.10. Scope Global, Nbit: 0, Fragment tag: 0x5e67, Hash mask len: 30, BSR Priority: 64, BSR address: 4.0.0.10. (RP04760)]{lang="EN-US"}]{#struct_0_12031_59956_x1120922344}
+\*Dec 10 10:54:55:57 2010 Sysname PIM/7/RP: -MDC=1;  Nbit: 0, Fragment tag: 0x5e67, Hash mask len: 30, BSR Priority: 64, BSR address: 4.0.0.10. (PM09368)
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_1907409897}*[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[收到一个]{style="font-family:宋体"}[BSR]{lang="EN-US"}[自举报文，源地址为]{style="font-family:宋体"}[3.0.0.10]{lang="EN-US"}[，属全局域，]{style="font-family:宋体"}[N]{lang="EN-US"}[位没有设置，分片信息为]{style="font-family:宋体"}[0x5e67]{lang="EN-US"}[，哈希掩码长度为]{style="font-family:宋体"}[30]{lang="EN-US"}[，]{style="font-family:宋体"}[BSR]{lang="EN-US"}[优先级为]{style="font-family:宋体"}[64]{lang="EN-US"}[，]{style="font-family:宋体"}[BSR]{lang="EN-US"}[地址为]{style="font-family:宋体"}[4.0.0.10]{lang="EN-US"}*
+*// 向接口GigabitEthernet1/0/1发送BSR自举报文。N位没有设置，分片信息为0x5E67，哈希掩码长度为30，BSR优先级为64，BSR地址为4.0.0.10*
 
-[[\*Dec 10 10:54:55:55 2010 Sysname PIM/7/RP: -MDC=1; Scope \'Global\' receive an event of \'Receive Preferred BSM\' at state \'Accept Preferred\'. (RP042346)]{lang="EN-US"}]{#struct_0_12031_59956_x1120987880}
+\*Dec 10 10:54:55:57 2010 Sysname PIM/7/RP: -MDC=1;  Group: 224.0.0.0/4, Bbit:0, Zbit: 0, RP Count: 1, Frag RP Count: 1 (PM09378)
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_x1071651302}*[全局域内在]{style="font-family:宋体"}[Accept Preferred]{lang="EN-US"}[状态下收到一个更优]{style="font-family:宋体"}[BSR]{lang="EN-US"}[的自举报文]{style="font-family:宋体"}*
+\*Dec 10 10:54:55:57 2010 Sysname PIM/7/RP: -MDC=1;   RP: 5.0.0.10 \-\-- Holdtime 180, Priority 192 (PM09382)
 
-[[\*Dec 10 10:54:55:56 2010 Sysname PIM/7/RP: -MDC=1;  Group: 224.0.0.0/4 \-\-- RPCount: 1, Frag RP Count: 1 (RP05535)]{lang="EN-US"}]{#struct_0_12031_59956_x1120856808}
+\*Dec 10 10:54:55:105 2010 Sysname PIM/7/RP: -MDC=1; Set BST of scope Global to 130. (RP041140)
 
-[\*Dec 10 10:54:55:56 2010 Sysname PIM/7/RP: -MDC=1;   RP: 5.0.0.10 \-\-- Holdtime 180, Priority 192 (RP05539)]{lang="EN-US"}
+*// 组播组224.0.0.0/4的信息为：B位没有设置，Z位没有设置，C-RP个数为1，分片信息为1。C-RP地址为5.0.0.10，保持时间为180秒，优先级为192。设置全局域自举定时器为130秒*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_x2027470821}*[组播组]{style="font-family:宋体"}[224.0.0.0/4]{lang="EN-US"}[的信息为：]{style="font-family:宋体"}[C-RP]{lang="EN-US"}[个数为]{style="font-family:宋体"}[1]{lang="EN-US"}[，分片信息为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}[RP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[5.0.0.10]{lang="EN-US"}[，保持时间为]{style="font-family:宋体"}[180]{lang="EN-US"}[秒，优先级为]{style="font-family:宋体"}[192]{lang="EN-US"}*
+\*Dec 10 10:55:57:439 2010 Sysname PIM/7/RP: -MDC=1; Send BSM packet to all neighbor in scope Global. (RP011260)
 
-[[\# ]{lang="EN-US"}]{#struct_0_12031_59956_784617994}[接口上使能]{style="font-family:宋体"}[PIM-SM]{lang="EN-US"}[，并打开公网实例发送]{style="font-family:宋体"}[PIM]{lang="EN-US"}[与]{style="font-family:宋体"}[RP]{lang="EN-US"}[相关报文的调试信息开关。]{style="font-family:宋体"}
+*// 自举路由器向全局域内的所有邻居发送自举报文*
 
-[[\<Sysname\> debugging pim rp send]{lang="EN-US"}]{#struct_0_12031_59956_x1120725736}
+\*Dec 10 10:55:57:443 2010 Sysname PIM/7/RP: -MDC=1; EBSR updates RPs by self in scope Global. (RP01984)
 
-[\*Dec 10 10:54:55:56 2010 Sysname PIM/7/RP: -MDC=1; Send out BSM packet to interface GigabitEthernet1/0/1. (PM09364)]{lang="EN-US"}
+\*Dec 10 10:55:57:443 2010 Sysname PIM/7/RP: -MDC=1;  Group: 224.0.0.0/4 \-\-- RP Count: 1, Frag RP Count: 1 (RP05535)
 
-[\*Dec 10 10:54:55:57 2010 Sysname PIM/7/RP: -MDC=1;  Nbit: 0, Fragment tag: 0x5e67, Hash mask len: 30, BSR Priority: 64, BSR address: 4.0.0.10. (PM09368)]{lang="EN-US"}
+\*Dec 10 10:55:57:444 2010 Sysname PIM/7/RP: -MDC=1;   RP: 5.0.0.10 \-\-- Holdtime 180, Priority 192 (RP05539)
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_x542790373}*[向接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[发送]{style="font-family:宋体"}[BSR]{lang="EN-US"}[自举报文。]{style="font-family:宋体"}[N]{lang="EN-US"}[位没有设置，分片信息为]{style="font-family:宋体"}[0x5E67]{lang="EN-US"}[，哈希掩码长度为]{style="font-family:宋体"}[30]{lang="EN-US"}[，]{style="font-family:宋体"}[BSR]{lang="EN-US"}[优先级为]{style="font-family:宋体"}[64]{lang="EN-US"}[，]{style="font-family:宋体"}[BSR]{lang="EN-US"}[地址为]{style="font-family:宋体"}[4.0.0.10]{lang="EN-US"}*
+*// 被选中的自举路由器在全局域内更新RP，组播组224.0.0.0/4的信息为：C-RP个数为1，分片信息为1。C-RP地址为5.0.0.10，保持时间为180秒，优先级为192*
 
-[[\*Dec 10 10:54:55:57 2010 Sysname PIM/7/RP: -MDC=1;  Group: 224.0.0.0/4, Bbit:0, Zbit: 0, RP Count: 1, Frag RP Count: 1 (PM09378)]{lang="EN-US"}]{#struct_0_12031_59956_x1120594664}
+\*Dec 10 10:55:57:448 2010 Sysname PIM/7/RP: -MDC=1; Send out BSM packet to interface GigabitEthernet1/0/1. (PM09364)
 
-[\*Dec 10 10:54:55:57 2010 Sysname PIM/7/RP: -MDC=1;   RP: 5.0.0.10 \-\-- Holdtime 180, Priority 192 (PM09382)]{lang="EN-US"}
+\*Dec 10 10:55:57:448 2010 Sysname PIM/7/RP: -MDC=1;  Nbit: 0, Fragment tag: 0x5e67, Hash mask len: 30, BSR Priority: 64, BSR address: 4.0.0.10. (PM09368)
 
-[\*Dec 10 10:54:55:105 2010 Sysname PIM/7/RP: -MDC=1; Set BST of scope Global to 130. (RP041140)]{lang="EN-US"}
+*// 向接口GigabitEthernet1/0/1发送BSR自举报文，N位没有设置，分片信息为0x5e67，哈希掩码长度为30，BSR优先级为64，BSR地址为4.0.0.10*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_3420793}*[组播组]{style="font-family:宋体"}[224.0.0.0/4]{lang="EN-US"}[的信息为：]{style="font-family:宋体"}[B]{lang="EN-US"}[位没有设置，]{style="font-family:宋体"}[Z]{lang="EN-US"}[位没有设置，]{style="font-family:宋体"}[C-RP]{lang="EN-US"}[个数为]{style="font-family:宋体"}[1]{lang="EN-US"}[，分片信息为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}[C-RP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[5.0.0.10]{lang="EN-US"}[，保持时间为]{style="font-family:宋体"}[180]{lang="EN-US"}[秒，优先级为]{style="font-family:宋体"}[192]{lang="EN-US"}[。设置全局域自举定时器为]{style="font-family:宋体"}[130]{lang="EN-US"}[秒]{style="font-family:宋体"}*
+\*Dec 10 10:55:57:452 2010 Sysname PIM/7/RP: -MDC=1;  Group: 224.0.0.0/4, Bbit: 0, Zbit: 0, RP Count: 1, Frag RP Count: 1 (PM09378)
 
-[[\*Dec 10 10:55:57:439 2010 Sysname PIM/7/RP: -MDC=1; Send BSM packet to all neighbor in scope Global. (RP011260)]{lang="EN-US"}]{#struct_0_12031_59956_x1120398056}
+\*Dec 10 10:55:57:453 2010 Sysname PIM/7/RP: -MDC=1;   RP: 5.0.0.10 \-\-- Holdtime 180, Priority 192 (PM09382)
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_1715084209}*[自举路由器向全局域内的所有邻居发送自举报文]{style="font-family:宋体"}*
+\*Dec 10 10:55:57:503 2010 Sysname PIM/7/RP: -MDC=1; Set BST of scope Global to 60. (RP041140)
 
-[[\*Dec 10 10:55:57:443 2010 Sysname PIM/7/RP: -MDC=1; EBSR updates RPs by self in scope Global. (RP01984)]{lang="EN-US"}]{#struct_0_12031_59956_x1120987883}
+*// 组播组224.0.0.0/4的信息为：B位没有设置，Z位没有设置，C-RP个数为1，分片信息为1。RP地址为5.0.0.10，保持时间为180秒，优先级为192。设置全局域自举定时器为60秒*
 
-[\*Dec 10 10:55:57:443 2010 Sysname PIM/7/RP: -MDC=1;  Group: 224.0.0.0/4 \-\-- RP Count: 1, Frag RP Count: 1 (RP05535)]{lang="EN-US"}
+\# 接口上使能PIM-SM，并打开公网实例PIM组播路由表状态改变调试信息开关。
 
-[\*Dec 10 10:55:57:444 2010 Sysname PIM/7/RP: -MDC=1;   RP: 5.0.0.10 \-\-- Holdtime 180, Priority 192 (RP05539)]{lang="EN-US"}
+\<Sysname\> debugging pim routing-table
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_494432639}*[被选中的自举路由器在全局域内更新]{style="font-family:宋体"}[RP]{lang="EN-US"}[，组播组]{style="font-family:宋体"}[224.0.0.0/4]{lang="EN-US"}[的信息为：]{style="font-family:宋体"}[C-RP]{lang="EN-US"}[个数为]{style="font-family:宋体"}[1]{lang="EN-US"}[，分片信息为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}[C-RP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[5.0.0.10]{lang="EN-US"}[，保持时间为]{style="font-family:宋体"}[180]{lang="EN-US"}[秒，优先级为]{style="font-family:宋体"}[192]{lang="EN-US"}*
+\*Dec 10 10:46:32:258 2010 Sysname PIM/7/ROUTE: -MDC=1; Creating (4.0.0.5, 225.0.0.25), flags: 0x00000004, down if protocol: 0 (SM134084)
 
-[[\*Dec 10 10:55:57:448 2010 Sysname PIM/7/RP: -MDC=1; Send out BSM packet to interface GigabitEthernet1/0/1. (PM09364)]{lang="EN-US"}]{#struct_0_12031_59956_x1120856811}
+*// 创建表项（4.0.0.5，225.0.0.25），标志为0x00000004，下游接口协议号为0（表示PIM-SM）*
 
-[\*Dec 10 10:55:57:448 2010 Sysname PIM/7/RP: -MDC=1;  Nbit: 0, Fragment tag: 0x5e67, Hash mask len: 30, BSR Priority: 64, BSR address: 4.0.0.10. (PM09368)]{lang="EN-US"}
+\*Dec 10 10:46:32:272 2010 Sysname PIM/7/ROUTE: -MDC=1; ET(210s) create successfully for downstream (4.0.0.5, 225.0.0.25) on interface GigabitEthernet1/0/1 (6.0.0.10) (SM07344)
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_x105090984}*[向接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[发送]{style="font-family:宋体"}[BSR]{lang="EN-US"}[自举报文，]{style="font-family:宋体"}[N]{lang="EN-US"}[位没有设置，分片信息为]{style="font-family:宋体"}[0x5e67]{lang="EN-US"}[，哈希掩码长度为]{style="font-family:宋体"}[30]{lang="EN-US"}[，]{style="font-family:宋体"}[BSR]{lang="EN-US"}[优先级为]{style="font-family:宋体"}[64]{lang="EN-US"}[，]{style="font-family:宋体"}[BSR]{lang="EN-US"}[地址为]{style="font-family:宋体"}[4.0.0.10]{lang="EN-US"}*
+*// 为表项（4.0.0.5，225.0.0.25）的出接口GigabitEthernet1/0/1（IP地址为6.0.0.10）创建超时定时器（210秒）成功*
 
-[[\*Dec 10 10:55:57:452 2010 Sysname PIM/7/RP: -MDC=1;  Group: 224.0.0.0/4, Bbit: 0, Zbit: 0, RP Count: 1, Frag RP Count: 1 (PM09378)]{lang="EN-US"}]{#struct_0_12031_59956_x1120529131}
+\*Dec 10 10:46:32:273 2010 Sysname PIM/7/ROUTE: -MDC=1; Downstream (4.0.0.5, 225.0.0.25) FSM on interface GigabitEthernet1/0/1 (6.0.0.10) transited from NoInfo to Join. Join Received (SM071418)
 
-[\*Dec 10 10:55:57:453 2010 Sysname PIM/7/RP: -MDC=1;   RP: 5.0.0.10 \-\-- Holdtime 180, Priority 192 (PM09382)]{lang="EN-US"}
+*// 接口GigabitEthernet1/0/1上的表项（4.0.0.5，225.0.0.25）的下游状态机从NoInfo状态越迁到加入状态，原因是收到加入报文*
 
-[\*Dec 10 10:55:57:503 2010 Sysname PIM/7/RP: -MDC=1; Set BST of scope Global to 60. (RP041140)]{lang="EN-US"}
+\*Dec 10 10:46:46:515 2010 Sysname PIM/7/ROUTE: -MDC=1; Delete (3.0.0.5, 225.0.0.25) for inactive (SM12343)
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_x414577938}*[组播组]{style="font-family:宋体"}[224.0.0.0/4]{lang="EN-US"}[的信息为：]{style="font-family:宋体"}[B]{lang="EN-US"}[位没有设置，]{style="font-family:宋体"}[Z]{lang="EN-US"}[位没有设置，]{style="font-family:宋体"}[C-RP]{lang="EN-US"}[个数为]{style="font-family:宋体"}[1]{lang="EN-US"}[，分片信息为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}[RP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[5.0.0.10]{lang="EN-US"}[，保持时间为]{style="font-family:宋体"}[180]{lang="EN-US"}[秒，优先级为]{style="font-family:宋体"}[192]{lang="EN-US"}[。设置全局域自举定时器为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒]{style="font-family:宋体"}*
+*// 删除老化的表项（3.0.0.5，225.0.0.25）*
 
-[[\# ]{lang="EN-US"}]{#struct_0_12031_59956_x1120594667}[接口上使能]{style="font-family:宋体"}[PIM-SM]{lang="EN-US"}[，并打开公网实例]{style="font-family:宋体"}[PIM]{lang="EN-US"}[组播路由表状态改变调试信息开关。]{style="font-family:宋体"}
+\# 在接口上使能PIM-DM，并打开公网实例接收PIM状态刷新报文的调试信息开关。
 
-[[\<Sysname\> debugging pim routing-table]{lang="EN-US"}]{#struct_0_12031_59956_x1120398059}
+\<Sysname\> debugging pim state-refresh receive
 
-[\*Dec 10 10:46:32:258 2010 Sysname PIM/7/ROUTE: -MDC=1; Creating (4.0.0.5, 225.0.0.25), flags: 0x00000004, down if protocol: 0 (SM134084)]{lang="EN-US"}
+\*Mar 16 05:50:15:086 2012 Sysname PIM/7/SRM: -MDC=1; PIM ver 2 SRM receiving 8.12.0.1 -\> 224.0.0.13 for (7.11.0.100, 225.0.0.1) on GigabitEthernet1/0/1, Originator address: 7.11.0.1, preference: 0, metric: 0, mask length: 16, ttl: 255, prune indicator: unset, prune now: unset, assert override: set, interval: 60s (DM141415)
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_x207230092}*[创建表项（]{style="font-family:宋体"}[4.0.0.5]{lang="EN-US"}[，]{style="font-family:宋体"}[225.0.0.25]{lang="EN-US"}[），标志为]{style="font-family:宋体"}[0x00000004]{lang="EN-US"}[，下游接口协议号为]{style="font-family:宋体"}[0]{lang="EN-US"}[（表示]{style="font-family:宋体"}[PIM-SM]{lang="EN-US"}[）]{style="font-family:宋体"}*
+*// 在接口GigabitEthernet1/0/1收到状态刷新报文，报文的源地址是8.12.0.1，目的地址是224.0.0.13；组播组为225.0.0.1/32；组播源为7.11.0.100；产生状态刷新报文设备的地址为7.11.0.1；优先级和Metric值都是0；掩码长度为16；TTL为255，没有设置Prune Indicator和Prune Now标志位，设置了Assert Override标志位；发送间隔为60秒*
 
-[[\*Dec 10 10:46:32:272 2010 Sysname PIM/7/ROUTE: -MDC=1; ET(210s) create successfully for downstream (4.0.0.5, 225.0.0.25) on interface GigabitEthernet1/0/1 (6.0.0.10) (SM07344)]{lang="EN-US"}]{#struct_0_12031_59956_x1120463595}
+\# 在接口上使能PIM-DM，并打开公网实例发送PIM状态刷新报文的调试信息开关。
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_14351682}*[为表项（]{style="font-family:宋体"}[4.0.0.5]{lang="EN-US"}[，]{style="font-family:宋体"}[225.0.0.25]{lang="EN-US"}[）的出接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[（]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[6.0.0.10]{lang="EN-US"}[）创建超时定时器（]{style="font-family:宋体"}[210]{lang="EN-US"}[秒）成功]{style="font-family:宋体"}*
+\<Sysname\> debugging pim state-refresh send
 
-[[\*Dec 10 10:46:32:273 2010 Sysname PIM/7/ROUTE: -MDC=1; Downstream (4.0.0.5, 225.0.0.25) FSM on interface GigabitEthernet1/0/1 (6.0.0.10) transited from NoInfo to Join. Join Received (SM071418)]{lang="EN-US"}]{#struct_0_12031_59956_x1120922346}
+\*Mar 16 05:50:15:086 2012 Sysname PIM/7/SRM: -MDC=1; PIM ver 2 SRM sending 8.24.0.2 -\> 224.0.0.13 for (7.11.0.100, 225.0.0.1) on GigabitEthernet1/0/1, Originator address: 7.11.0.1, preference: 10, metric: 2, mask length: 16, ttl: 254, prune indicator: unset, prune now: unset, assert override: set, interval: 60s. (DM09330)
 
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_x1224757985}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上的表项（]{style="font-family:宋体"}[4.0.0.5]{lang="EN-US"}[，]{style="font-family:宋体"}[225.0.0.25]{lang="EN-US"}[）的下游状态机从]{style="font-family:宋体"}[NoInfo]{lang="EN-US"}[状态越迁到加入状态，原因是收到加入报文]{style="font-family:宋体"}*
-
-[[\*Dec 10 10:46:46:515 2010 Sysname PIM/7/ROUTE: -MDC=1; Delete (3.0.0.5, 225.0.0.25) for inactive (SM12343)]{lang="EN-US"}]{#struct_0_12031_59956_x1120987882}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_2060516580}*[删除老化的表项（]{style="font-family:宋体"}[3.0.0.5]{lang="EN-US"}[，]{style="font-family:宋体"}[225.0.0.25]{lang="EN-US"}[）]{style="font-family:宋体"}*
-
-[[\# ]{lang="EN-US"}]{#struct_0_12031_59956_x1120791274}[在接口上使能]{style="font-family:宋体"}[PIM-DM]{lang="EN-US"}[，并打开公网实例接收]{style="font-family:宋体"}[PIM]{lang="EN-US"}[状态刷新报文的调试信息开关。]{style="font-family:宋体"}
-
-[[\<Sysname\> debugging pim state-refresh receive]{lang="EN-US"}]{#struct_0_12031_59956_x1120856810}
-
-[\*Mar 16 05:50:15:086 2012 Sysname PIM/7/SRM: -MDC=1; PIM ver 2 SRM receiving 8.12.0.1 -\> 224.0.0.13 for (7.11.0.100, 225.0.0.1) on GigabitEthernet1/0/1, Originator address: 7.11.0.1, preference: 0, metric: 0, mask length: 16, ttl: 255, prune indicator: unset, prune now: unset, assert override: set, interval: 60s (DM141415)]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_x1671174925}*[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[收到状态刷新报文，报文的源地址是]{style="font-family:宋体"}[8.12.0.1]{lang="EN-US"}[，目的地址是]{style="font-family:宋体"}[224.0.0.13]{lang="EN-US"}[；组播组为]{style="font-family:宋体"}[225.0.0.1/32]{lang="EN-US"}[；组播源为]{style="font-family:宋体"}[7.11.0.100]{lang="EN-US"}[；产生状态刷新报文设备的地址为]{style="font-family:宋体"}[7.11.0.1]{lang="EN-US"}[；优先级和]{style="font-family:宋体"}[Metric]{lang="EN-US"}[值都是]{style="font-family:宋体"}[0]{lang="EN-US"}[；掩码长度为]{style="font-family:宋体"}[16]{lang="EN-US"}[；]{style="font-family:宋体"}[TTL]{lang="EN-US"}[为]{style="font-family:宋体"}[255]{lang="EN-US"}[，没有设置]{style="font-family:宋体"}[Prune Indicator]{lang="EN-US"}[和]{style="font-family:宋体"}[Prune Now]{lang="EN-US"}[标志位，设置了]{style="font-family:宋体"}[Assert Override]{lang="EN-US"}[标志位；发送间隔为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒]{style="font-family:宋体"}*
-
-[[\# ]{lang="EN-US"}]{#struct_0_12031_59956_1573218260}[在接口上使能]{style="font-family:宋体"}[PIM-DM]{lang="EN-US"}[，并打开公网实例发送]{style="font-family:宋体"}[PIM]{lang="EN-US"}[状态刷新报文的调试信息开关。]{style="font-family:宋体"}
-
-[[\<Sysname\> debugging pim state-refresh send]{lang="EN-US"}]{#struct_0_12031_59956_x1120660202}
-
-[\*Mar 16 05:50:15:086 2012 Sysname PIM/7/SRM: -MDC=1; PIM ver 2 SRM sending 8.24.0.2 -\> 224.0.0.13 for (7.11.0.100, 225.0.0.1) on GigabitEthernet1/0/1, Originator address: 7.11.0.1, preference: 10, metric: 2, mask length: 16, ttl: 254, prune indicator: unset, prune now: unset, assert override: set, interval: 60s. (DM09330)]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_12031_59956_823041912}*[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[发送状态刷新报文，报文的源地址是]{style="font-family:宋体"}[8.24.0.2]{lang="EN-US"}[，目的地址是]{style="font-family:宋体"}[224.0.0.13]{lang="EN-US"}[；组播组为]{style="font-family:宋体"}[225.0.0.1/32]{lang="EN-US"}[；组播源为]{style="font-family:宋体"}[7.11.0.100]{lang="EN-US"}[；产生状态刷新报文设备的地址为]{style="font-family:宋体"}[7.11.0.1]{lang="EN-US"}[；优先级为]{style="font-family:宋体"}[10]{lang="EN-US"}[；]{style="font-family:宋体"}[Metric]{lang="EN-US"}[值为]{style="font-family:宋体"}[2]{lang="EN-US"}[；掩码长度都是]{style="font-family:宋体"}[16]{lang="EN-US"}[；]{style="font-family:宋体"}[TTL]{lang="EN-US"}[为]{style="font-family:宋体"}[254]{lang="EN-US"}[，没有设置]{style="font-family:宋体"}[Prune Indicator]{lang="EN-US"}[和]{style="font-family:宋体"}[Prune Now]{lang="EN-US"}[标志位，设置了]{style="font-family:宋体"}[Assert Override]{lang="EN-US"}[标志位；发送间隔为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒]{style="font-family:宋体"}*
+*// 在接口GigabitEthernet1/0/1发送状态刷新报文，报文的源地址是8.24.0.2，目的地址是224.0.0.13；组播组为225.0.0.1/32；组播源为7.11.0.100；产生状态刷新报文设备的地址为7.11.0.1；优先级为10；Metric值为2；掩码长度都是16；TTL为254，没有设置Prune Indicator和Prune Now标志位，设置了Assert Override标志位；发送间隔为60秒*

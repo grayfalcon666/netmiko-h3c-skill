@@ -1,236 +1,228 @@
-::: {#1865991273 .myid}
-[]{#_Toc174448765}[]{#_Toc404784736}[]{#struct_0_13719_95673_x694961537}
 
 **业务环回组 \-- 业务环回组调试命令 \-- debugging service-loopback**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_13719_95673_x487411217}
+【命令】
 
-[**[debugging service-loopback]{lang="EN-US"}**[ { **all** \| **error** \| **event** }]{lang="EN-US"}]{#struct_0_13719_95673_1360640388}
+**[debugging service-loopback**[ { **all** \| **error** \| **event** }]]
 
-[**[undo debugging service-loopback]{lang="EN-US"}**[ { **all** \| **error** \| **event** }]{lang="EN-US"}]{#struct_0_13719_95673_219501458}
+**[undo debugging service-loopback**[ { **all** \| **error** \| **event** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_13719_95673_873864848}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_13719_95673_819385169}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_13719_95673_1794244252}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_13719_95673_2111736239}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_13719_95673_x1419714116}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_13719_95673_x1630809002}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_13719_95673_2107760795}[：表示业务环回组的所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示业务环回组的所有调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_13719_95673_1637422913}[：表示业务环回组错误调试信息开关。]{style="font-family:宋体"}
+**[error**]：表示业务环回组错误调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_13719_95673_1992949197}[：表示业务环回组事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示业务环回组事件调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_13719_95673_x1182122468}
+【描述】
 
-[**[debugging service-loopback]{lang="EN-US"}**]{#struct_0_13719_95673_x397264022}[命令用来打开业务环回组调试信息开关。]{style="font-family:
-宋体"}**[undo debugging service-loopback]{lang="EN-US"}**[命令用来关闭业务环回组调试信息开关。]{style="font-family:宋体"}
+**[debugging service-loopback**]命令用来打开业务环回组调试信息开关。**undo debugging service-loopback**命令用来关闭业务环回组调试信息开关。
 
-[[缺省情况下，业务环回组调试信息开关处于关闭状态。]{style="font-family:宋体"}]{#struct_0_13719_95673_x1712588819}
+缺省情况下，业务环回组调试信息开关处于关闭状态。
 
-[[表1-1 ]{lang="EN-US"}[debugging service-loopback error]{lang="EN-US"}]{#struct_0_13719_95673_2111801775}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging service-loopback error命令输出信息描述表
 
-[]{#table_struct_0_89794169}[[字段]{style="font-family:黑体"}]{#struct_0_13719_95673_178160392}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_13719_95673_x150273390}
+描述
 
-[[Failed to get group information when processing update-group message.]{lang="EN-US"}]{#struct_0_13719_95673_x1961978867}
+Failed to get group information when processing update-group message.
 
-[[非主用主控板处理主用主控板发来的组数据时读取组信息失败]{style="font-family:宋体"}]{#struct_0_13719_95673_93394942}
+非主用主控板处理主用主控板发来的组数据时读取组信息失败
 
-[[Failed to send the information of group *GroupID*.]{lang="EN-US"}]{#struct_0_13719_95673_304624598}
+Failed to send the information of group *GroupID*.
 
-[[发送组]{style="font-family:宋体"}*[GroupID]{lang="EN-US"}*]{#struct_0_13719_95673_894033225}[的信息失败]{style="font-family:宋体"}
+发送组*GroupID*的信息失败
 
-[[Failed to send the information of the debug switch status.]{lang="EN-US"}]{#struct_0_13719_95673_1930720397}
+Failed to send the information of the debug switch status.
 
-[[发送调试开关信息失败]{style="font-family:宋体"}]{#struct_0_13719_95673_x617671401}
+发送调试开关信息失败
 
-[[Failed to set driver.]{lang="EN-US"}]{#struct_0_13719_95673_x1564910013}
+Failed to set driver.
 
-[[设置内核驱动失败]{style="font-family:宋体"}]{#struct_0_13719_95673_1954210655}
+设置内核驱动失败
 
-[[Failed to switch over member port type.]{lang="EN-US"}]{#struct_0_13719_95673_1399661910}
+Failed to switch over member port type.
 
-[[业务环回组切换成员端口类型失败]{style="font-family:宋体"}]{#struct_0_13719_95673_1611785167}
+业务环回组切换成员端口类型失败
 
-[[Failed to send sync group data.]{lang="EN-US"}]{#struct_0_13719_95673_x1651416434}
+Failed to send sync group data.
 
-[[发送同步组数据失败]{style="font-family:宋体"}]{#struct_0_13719_95673_x617605865}
+发送同步组数据失败
 
-[[Failed to create group *GroupID*, which arealdy exists.]{lang="EN-US"}]{#struct_0_13719_95673_x1251594063}
+Failed to create group *GroupID*, which arealdy exists.
 
-[[创建业务环回组]{style="font-family:宋体"}*[GroupID]{lang="EN-US"}*]{#struct_0_13719_95673_254832943}[失败，因为该组已存在]{style="font-family:宋体"}
+创建业务环回组*GroupID*失败，因为该组已存在
 
-[[Failed to mofidy group *GroupID*, which does not exist.]{lang="EN-US"}]{#struct_0_13719_95673_2117685287}
+Failed to mofidy group *GroupID*, which does not exist.
 
-[[修改业务环回组]{style="font-family:宋体"}*[GroupID]{lang="EN-US"}*]{#struct_0_13719_95673_1333352111}[失败，因为该组不存在]{style="font-family:宋体"}
+修改业务环回组*GroupID*失败，因为该组不存在
 
-[[Failed to mofidy group *GroupID*, the type of which is invalid.]{lang="EN-US"}]{#struct_0_13719_95673_x617802473}
+Failed to mofidy group *GroupID*, the type of which is invalid.
 
-[[修改业务环回组]{style="font-family:宋体"}*[GroupID]{lang="EN-US"}*]{#struct_0_13719_95673_x9770519}[失败，因为组类型非法]{style="font-family:宋体"}
+修改业务环回组*GroupID*失败，因为组类型非法
 
-[[Failed to delete group *GroupID*, which does not exist.]{lang="EN-US"}]{#struct_0_13719_95673_1861725987}
+Failed to delete group *GroupID*, which does not exist.
 
-[[删除业务环回组]{style="font-family:宋体"}*[GroupID]{lang="EN-US"}*]{#struct_0_13719_95673_1069521514}[失败，因为该组已不存在]{style="font-family:宋体"}
+删除业务环回组*GroupID*失败，因为该组已不存在
 
-[[No group can process set-intftype result.]{lang="EN-US"}]{#struct_0_13719_95673_414500805}
+No group can process set-intftype result.
 
-[[没有任何组能够处理切换接口类型结果]{style="font-family:宋体"}]{#struct_0_13719_95673_352768936}
+没有任何组能够处理切换接口类型结果
 
-[[Failed to switch over interface type when deleting the group.]{lang="EN-US"}]{#struct_0_13719_95673_x617736937}
+Failed to switch over interface type when deleting the group.
 
-[[删除业务环回组时切换接口类型失败]{style="font-family:宋体"}]{#struct_0_13719_95673_x2021082126}
+删除业务环回组时切换接口类型失败
 
-[[No group can process set-loopback result.]{lang="EN-US"}]{#struct_0_13719_95673_1668084915}
+No group can process set-loopback result.
 
-[[没有任何组能处理设置接口自环结果]{style="font-family:宋体"}]{#struct_0_13719_95673_1455498808}
+没有任何组能处理设置接口自环结果
 
-[[Can't process set-loopback result because of invliad interface indexes.]{lang="EN-US"}]{#struct_0_13719_95673_x617409257}
+Can't process set-loopback result because of invliad interface indexes.
 
-[[由于接口索引非法而不能处理设置接口自环结果]{style="font-family:宋体"}]{#struct_0_13719_95673_x837549346}
+由于接口索引非法而不能处理设置接口自环结果
 
-[[No group can process interface-up]{lang="EN-US"}]{#struct_0_13719_95673_1753354933}
+No group can process interface-up
 
-[[没有任何组能够处理接口]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_13719_95673_x1304079676}[事件]{style="font-family:宋体"}
+没有任何组能够处理接口up事件
 
-[[Can't process interface-up because of invalid group operation flag.]{lang="EN-US"}]{#struct_0_13719_95673_2021251971}
+Can't process interface-up because of invalid group operation flag.
 
-[[由于无效组操作标记而不能处理接口]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_13719_95673_x617343721}[事件]{style="font-family:宋体"}
+由于无效组操作标记而不能处理接口up事件
 
-[[Can't process interface-up for non-operation members.]{lang="EN-US"}]{#struct_0_13719_95673_x1156156280}
+Can't process interface-up for non-operation members.
 
-[[不能处理非操作成员的接口]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_13719_95673_346184378}[事件]{style="font-family:宋体"}
+不能处理非操作成员的接口up事件
 
-[[No group can process expiration of wait-up timer.]{lang="EN-US"}]{#struct_0_13719_95673_282306475}
+No group can process expiration of wait-up timer.
 
-[[没有组能处理等待接口]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_13719_95673_x617540329}[事件定时器超时]{style="font-family:宋体"}
+没有组能处理等待接口up事件定时器超时
 
-[[Can't process expiration of wait-up timer because of invalid group operation flag.]{lang="EN-US"}]{#struct_0_13719_95673_x795291009}
+Can't process expiration of wait-up timer because of invalid group operation flag.
 
-[[由于无效组操作标记而不能处理等待接口]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_13719_95673_1275769063}[事件定时器超时]{style="font-family:宋体"}
+由于无效组操作标记而不能处理等待接口up事件定时器超时
 
-[[Can't process the response message from the slot because the group does not exsit.]{lang="EN-US"}]{#struct_0_13719_95673_x2001265863}
+Can't process the response message from the slot because the group does not exsit.
 
-[[由于环回组不存在而不能处理接口板回应消息]{style="font-family:宋体"}]{#struct_0_13719_95673_x617474793}
+由于环回组不存在而不能处理接口板回应消息
 
-[ ]{lang="EN-US"}
+表1-2 debugging service-loopback event命令输出信息描述表
 
-[[表1-2 ]{lang="EN-US"}[debugging service-loopback event]{lang="EN-US"}]{#struct_0_13719_95673_768714001}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_87333759}[[字段]{style="font-family:黑体"}]{#struct_0_13719_95673_x1121559093}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_13719_95673_1729845751}
+Processing *usMsgType* message succeeded.
 
-[[Processing *usMsgType* message succeeded.]{lang="EN-US"}]{#struct_0_13719_95673_x1606626037}
+处理*usMsgType*消息成功
 
-[[处理]{style="font-family:宋体"}*[usMsgType]{lang="EN-US"}*]{#struct_0_13719_95673_x1641186020}[消息成功]{style="font-family:宋体"}
+Setting driver succeeded.
 
-[[Setting driver succeeded.]{lang="EN-US"}]{#struct_0_13719_95673_x1212446118}
+设置内核驱动成功
 
-[[设置内核驱动成功]{style="font-family:宋体"}]{#struct_0_13719_95673_x617147113}
+Synchronized group *GroupID* to other slots.
 
-[[Synchronized group *GroupID* to other slots.]{lang="EN-US"}]{#struct_0_13719_95673_x1978382669}
+同步业务环回组*GroupID*的数据到其它接口板
 
-[[同步业务环回组]{style="font-family:宋体"}*[GroupID]{lang="EN-US"}*]{#struct_0_13719_95673_664111960}[的数据到其它接口板]{style="font-family:宋体"}
+Processed group *GroupID* set-intftype result.
 
-[[Processed group *GroupID* set-intftype result.]{lang="EN-US"}]{#struct_0_13719_95673_1947484002}
+处理业务环回组*GroupID*切换接口类型结果
 
-[[处理业务环回组]{style="font-family:宋体"}*[GroupID]{lang="EN-US"}*]{#struct_0_13719_95673_x1545506586}[切换接口类型结果]{style="font-family:宋体"}
+Processed port *IFIndex* set-loopback result.
 
-[[Processed port *IFIndex* set-loopback result.]{lang="EN-US"}]{#struct_0_13719_95673_x379343434}
+处理接口*IFIndex*的自环结果
 
-[[处理接口]{style="font-family:宋体"}*[IFIndex]{lang="EN-US"}*]{#struct_0_13719_95673_x577931588}[的自环结果]{style="font-family:宋体"}
+Processed port *IFIndex* up.
 
-[[Processed port *IFIndex* up.]{lang="EN-US"}]{#struct_0_13719_95673_x617081577}
+处理接口*IFIndex*的up事件
 
-[[处理接口]{style="font-family:宋体"}*[IFIndex]{lang="EN-US"}*]{#struct_0_13719_95673_356605212}[的]{style="font-family:宋体"}[up]{lang="EN-US"}[事件]{style="font-family:宋体"}
+Processed the wait-up timer expiration of group *GroupID*.
 
-[[Processed the wait-up timer expiration of group *GroupID*.]{lang="EN-US"}]{#struct_0_13719_95673_x1874512771}
+处理业务环回组*GroupID*等待接口up事件定时器超时
 
-[[处理业务环回组]{style="font-family:宋体"}*[GroupID]{lang="EN-US"}*]{#struct_0_13719_95673_388169339}[等待接口]{style="font-family:宋体"}[up]{lang="EN-US"}[事件定时器超时]{style="font-family:宋体"}
+Received a response from slot *SlotID*.
 
-[[Received a response from slot *SlotID*.]{lang="EN-US"}]{#struct_0_13719_95673_x1374356850}
+收到接口板*SlotID*的回应
 
-[[收到接口板]{style="font-family:宋体"}*[SlotID]{lang="EN-US"}*]{#struct_0_13719_95673_x1687738016}[的回应]{style="font-family:宋体"}
+Received responses from all slots.
 
-[[Received responses from all slots.]{lang="EN-US"}]{#struct_0_13719_95673_x617671400}
+收到所有接口板回应
 
-[[收到所有接口板回应]{style="font-family:宋体"}]{#struct_0_13719_95673_x1564975549}
+Processed group *GroupID* sync data.
 
-[[Processed group *GroupID* sync data.]{lang="EN-US"}]{#struct_0_13719_95673_x643874418}
+处理业务环回组*GroupID*同步数据
 
-[[处理业务环回组]{style="font-family:宋体"}*[GroupID]{lang="EN-US"}*]{#struct_0_13719_95673_x2037039258}[同步数据]{style="font-family:宋体"}
+Completed upgrading backup daemon.
 
-[[Completed upgrading backup daemon.]{lang="EN-US"}]{#struct_0_13719_95673_292774485}
+备用守护进程升级完成
 
-[[备用守护进程升级完成]{style="font-family:宋体"}]{#struct_0_13719_95673_x617605864}
+Received a change type result *ResultType.*
 
-[[Received a change type result *ResultType.*]{lang="EN-US"}]{#struct_0_13719_95673_x1251528527}
+接收切换接口类型结果
 
-[[接收切换接口类型结果]{style="font-family:宋体"}]{#struct_0_13719_95673_x1707176155}
+Received *EventType* interface-event of port *IFIndex*.
 
-[[Received *EventType* interface-event of port *IFIndex*.]{lang="EN-US"}]{#struct_0_13719_95673_x1367282548}
+接收到接口*IFIndex*的接口事件*EventType*
 
-[[接收到接口]{style="font-family:宋体"}*[IFIndex]{lang="EN-US"}*]{#struct_0_13719_95673_1385613679}[的接口事件]{style="font-family:宋体"}*[EventType]{lang="EN-US"}*
+Adding interface *IFIndex* node to the setLB list succeeded.
 
-[[Adding interface *IFIndex* node to the setLB list succeeded.]{lang="EN-US"}]{#struct_0_13719_95673_x617802472}
+成功添加接口*IFIndex*节点到设置自环状态并设置自环链表
 
-[[成功添加接口]{style="font-family:宋体"}*[IFIndex]{lang="EN-US"}*]{#struct_0_13719_95673_x9704983}[节点到设置自环状态并设置自环链表]{style="font-family:宋体"}
+Processing interface *IFIndex* in setLB list succeeded.
 
-[[Processing interface *IFIndex* in setLB list succeeded.]{lang="EN-US"}]{#struct_0_13719_95673_1118469866}
+从设置接口自环链表中成功处理接口*IFIndex*
 
-[[从设置接口自环链表中成功处理接口]{style="font-family:宋体"}*[IFIndex]{lang="EN-US"}*]{#struct_0_13719_95673_1102918876}
+Adding interface *IFIndex* node to pending list succeeded.
 
-[[Adding interface *IFIndex* node to pending list succeeded.]{lang="EN-US"}]{#struct_0_13719_95673_x617736936}
+成功添加接口*IFIndex*节点到待处理接口事件链表
 
-[[成功添加接口]{style="font-family:宋体"}*[IFIndex]{lang="EN-US"}*]{#struct_0_13719_95673_x2021147662}[节点到待处理接口事件链表]{style="font-family:宋体"}
+Processing interface *IFIndex* in pending list succeeded.
 
-[[Processing interface *IFIndex* in pending list succeeded.]{lang="EN-US"}]{#struct_0_13719_95673_663004972}
+从待处理接口事件链表中成功处理接口*IFIndex*
 
-[[从待处理接口事件链表中成功处理接口]{style="font-family:宋体"}*[IFIndex]{lang="EN-US"}*]{#struct_0_13719_95673_x1127536688}
+Completed processing pending list interface node *IFIndex.*
 
-[[Completed processing pending list interface node *IFIndex.*]{lang="EN-US"}]{#struct_0_13719_95673_x465216778}
+完成处理待处理接口链表的节点接口*IFIndex*
 
-[[完成处理待处理接口链表的节点接口]{style="font-family:宋体"}*[IFIndex]{lang="EN-US"}*]{#struct_0_13719_95673_x617409256}
+Creating thread succeeded.
 
-[[Creating thread succeeded.]{lang="EN-US"}]{#struct_0_13719_95673_x837483810}
+创建线程成功
 
-[[创建线程成功]{style="font-family:宋体"}]{#struct_0_13719_95673_x1755424979}
+Switch over a dissociating loopback interface *IFIndex*.
 
-[[Switch over a dissociating loopback interface *IFIndex*.]{lang="EN-US"}]{#struct_0_13719_95673_1227636312}
+切换游离口*IFIndex*的接口类型成功
 
-[[切换游离口]{style="font-family:宋体"}*[IFIndex]{lang="EN-US"}*]{#struct_0_13719_95673_x617343720}[的接口类型成功]{style="font-family:宋体"}
+【举例】
 
-[ ]{lang="EN-US"}
+\# 打开业务环回组错误调试信息开关。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_13719_95673_x1156090744}
+\<Sysname\> debugging service-loopback error
 
-[[\# ]{lang="EN-US"}]{#struct_0_13719_95673_x1733580739}[打开业务环回组错误调试信息开关。]{style="font-family:宋体"}
+\*Nov  3 19:29:12:860 2010 Sysname SLBG/7/Error:
 
-[[\<Sysname\> debugging service-loopback error]{lang="EN-US"}]{#struct_0_13719_95673_2068425873}
+Failed to create wait response timer.
 
-[\*Nov  3 19:29:12:860 2010 Sysname SLBG/7/Error:]{lang="EN-US"}
+*// 创建等待回应定时器失败*
 
-[Failed to create wait response timer.]{lang="EN-US"}
+\# 打开业务环回组事件调试信息开关。
 
-[*[// ]{lang="EN-US"}*]{#struct_0_13719_95673_x2001367339}*[创建等待回应定时器失败]{style="font-family:宋体"}*
+\<Sysname\> debugging service-loopback event
 
-[[\# ]{lang="EN-US"}]{#struct_0_13719_95673_1997987394}[打开业务环回组事件调试信息开关。]{style="font-family:宋体"}
+\*Nov  3 19:29:12:860 2010 Sysname SLBG/7/Event:
 
-[[\<Sysname\> debugging service-loopback event]{lang="EN-US"}]{#struct_0_13719_95673_916245546}
+Received responses from all slots.
 
-[\*Nov  3 19:29:12:860 2010 Sysname SLBG/7/Event:]{lang="EN-US"}
-
-[Received responses from all slots.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_13719_95673_x617540328}*[主控板收到其它所有板的回应消息]{style="font-family:宋体"}*
+*// 主控板收到其它所有板的回应消息*

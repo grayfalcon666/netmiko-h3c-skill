@@ -1,2495 +1,2340 @@
-::: {#-13705271 .myid}
-[]{#_Toc404795464}[]{#struct_0_x1112_41438_158417578}[]{#_Toc129683607}
 
 **以太网OAM \-- 以太网OAM配置命令 \-- display oam**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **oam**]{lang="EN-US"}]{#struct_0_x1112_41438_1242283601}[命令用来显示以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[连接的信息，包括连接状态、以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[报文头部信息和以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[报文统计信息。]{style="font-family:宋体"}
+**[display** **oam**]命令用来显示以太网OAM连接的信息，包括连接状态、以太网OAM报文头部信息和以太网OAM报文统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_181325693}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **oam** { **local** \| **remote** } \[ **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_x1112_41438_x402788710}
+**[display**[ **oam** { **local** \| **remote** } [ **interface** *interface-type interface-number* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1725797982}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1112_41438_1857666795}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x413636300}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x39732203}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1112_41438_158483114}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x1474303224}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1112_41438_167314184}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_577355856}
+【参数】
 
-[**[local]{lang="EN-US"}**]{#struct_0_x1112_41438_x1618837611}[：显示本端信息。]{style="font-family:宋体"}
+**[local**]：显示本端信息。
 
-[**[remote]{lang="EN-US"}**]{#struct_0_x1112_41438_x1214218621}[：显示远端信息。]{style="font-family:宋体"}
+**[remote**]：显示远端信息。
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_x1112_41438_1212829861}[：显示指定接口上的信息，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[表示接口类型和接口编号。如果未指定本参数，将显示所有接口上的信息。]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：显示指定接口上的信息，*interface-type interface-number*表示接口类型和接口编号。如果未指定本参数，将显示所有接口上的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1280783456}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_x1644428677}[显示所有接口上以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[连接的本端信息。]{style="font-family:宋体"}
+\# 显示所有接口上以太网OAM连接的本端信息。
 
-[[\<Sysname\> display oam local]{lang="EN-US"}]{#struct_0_x1112_41438_158548650}
+\<Sysname\> display oam local
 
-[\-\-\-\-\-\-\-\-\-\-- \[GigabitEthernet1/0/1\] \-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-- [GigabitEthernet1/0/1 \-\-\-\-\-\-\-\-\-\--]
 
-[ Enable status     : Enable]{lang="EN-US"}
+ Enable status     : Enable
 
-[ Loopback status   : No loopback]{lang="EN-US"}
+ Loopback status   : No loopback
 
-[ Link status       : UP]{lang="EN-US"}
+ Link status       : UP
 
-[ OAM mode          : Active]{lang="EN-US"}
+ OAM mode          : Active
 
-[ PDU               : ANY]{lang="EN-US"}
+ PDU               : ANY
 
-[ Mux action        : FWD]{lang="EN-US"}
+ Mux action        : FWD
 
-[ Par action        : FWD]{lang="EN-US"}
+ Par action        : FWD
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_x1893507037}[显示接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[连接的本端信息。]{style="font-family:宋体"}
+\# 显示接口GigabitEthernet1/0/1上以太网OAM连接的本端信息。
 
-[[\<Sysname\> display oam local interface gigabitethernet 1/0/1]{lang="EN-US"}]{#struct_0_x1112_41438_158614186}
+\<Sysname\> display oam local interface gigabitethernet 1/0/1
 
-[ Enable status     : Enable]{lang="EN-US"}
+ Enable status     : Enable
 
-[ Loopback status   : No loopback]{lang="EN-US"}
+ Loopback status   : No loopback
 
-[ Link status       : UP]{lang="EN-US"}
+ Link status       : UP
 
-[ OAM mode          : Active]{lang="EN-US"}
+ OAM mode          : Active
 
-[ PDU               : ANY]{lang="EN-US"}
+ PDU               : ANY
 
-[ Mux action        : FWD]{lang="EN-US"}
+ Mux action        : FWD
 
-[ Par action        : FWD]{lang="EN-US"}
+ Par action        : FWD
 
-[ Flags]{lang="EN-US"}
+ Flags
 
-[   Link fault        : Not occurred]{lang="EN-US"}
+   Link fault        : Not occurred
 
-[   Dying gasp        : Not occurred]{lang="EN-US"}
+   Dying gasp        : Not occurred
 
-[   Critical event    : Not occurred]{lang="EN-US"}
+   Critical event    : Not occurred
 
-[   Local evaluating  : COMPLETE]{lang="EN-US"}
+   Local evaluating  : COMPLETE
 
-[   Remote evaluating : COMPLETE]{lang="EN-US"}
+   Remote evaluating : COMPLETE
 
-[ Packets statistics]{lang="EN-US"}
+ Packets statistics
 
-[   Packet type                      Sent                   Received]{lang="EN-US"}
+   Packet type                      Sent                   Received
 
-[   \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+   \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-[   OAMPDU                           100                    80]{lang="EN-US"}
+   OAMPDU                           100                    80
 
-[   OAMInformation                   64                     60]{lang="EN-US"}
+   OAMInformation                   64                     60
 
-[   OAMEventNotification             36                     20]{lang="EN-US"}
+   OAMEventNotification             36                     20
 
-[   OAMUniqueEventNotification       36                     10]{lang="EN-US"}
+   OAMUniqueEventNotification       36                     10
 
-[   OAMDuplicateEventNotification    0                      10]{lang="EN-US"}
+   OAMDuplicateEventNotification    0                      10
 
-[[表1-1 ]{lang="EN-US"}[display oam local]{lang="EN-US"}]{#struct_0_x1112_41438_x773067789}[命令显示信息描述表]{style="font-family:黑体"}
+表1-1 display oam local命令显示信息描述表
 
-[]{#table_struct_0_409376132}[[字段]{style="font-family:黑体"}]{#struct_0_x1112_41438_x891205479}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1112_41438_x870284467}
+描述
 
-[[GigabitEthernet1/0/1]{lang="EN-US"}]{#struct_0_x1112_41438_1985270851}
+GigabitEthernet1/0/1
 
-[[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}]{#struct_0_x1112_41438_2084403127}[上的信息]{style="font-family:宋体"}
+接口GigabitEthernet1/0/1上的信息
 
-[[Enable status]{lang="EN-US"}]{#struct_0_x1112_41438_158155434}
+Enable status
 
-[[本端的以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_x1624815306}[状态：]{style="font-family:宋体"}
+本端的以太网OAM状态：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Enable]{lang="EN-US"}]{#struct_0_x1112_41438_x384298949}[：表示已使能]{lang="EN-US" style="font-family:宋体"}
+·Enable：表示已使能
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Disable]{lang="EN-US"}]{#struct_0_x1112_41438_x1672241300}[：表示未使能]{lang="EN-US" style="font-family:宋体"}
+·Disable：表示未使能
 
-[[Loopback status]{lang="EN-US"}]{#struct_0_x1112_41438_563746999}
+Loopback status
 
-[[以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_x1536805680}[远端环回状态：]{style="font-family:宋体"}
+以太网OAM远端环回状态：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No loopback]{lang="EN-US"}]{#struct_0_x1112_41438_158220970}[：表示尚未建立远端环回]{lang="EN-US" style="font-family:宋体"}
+·No loopback：表示尚未建立远端环回
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Remote loopback]{lang="EN-US"}]{#struct_0_x1112_41438_1812154230}[：表示远端环回的主控端]{lang="EN-US" style="font-family:
-  宋体"}
+·Remote loopback：表示远端环回的主控端
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Local loopback]{lang="EN-US"}]{#struct_0_x1112_41438_x67577999}[：表示远端环回的被控端]{lang="EN-US" style="font-family:宋体"}
+·Local loopback：表示远端环回的被控端
 
-[[Link status]{lang="EN-US"}]{#struct_0_x1112_41438_x1843271371}
+Link status
 
-[[链路状态：]{style="font-family:宋体"}]{#struct_0_x1112_41438_678358857}
+链路状态：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_x1112_41438_506508362}[：表示链路]{lang="EN-US" style="font-family:宋体"}[up]{lang="EN-US"}
+·UP：表示链路up
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_x1112_41438_158286506}[：表示链路]{lang="EN-US" style="font-family:宋体"}[down]{lang="EN-US"}
+·DOWN：表示链路down
 
-[[OAM mode]{lang="EN-US"}]{#struct_0_x1112_41438_x1744323210}
+OAM mode
 
-[[本端以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_x2137201848}[的连接模式：]{style="font-family:宋体"}
+本端以太网OAM的连接模式：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Active]{lang="EN-US"}]{#struct_0_x1112_41438_611077169}[：表示主动模式]{lang="EN-US" style="font-family:宋体"}
+·Active：表示主动模式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Passive]{lang="EN-US"}]{#struct_0_x1112_41438_958165493}[：表示被动模式]{lang="EN-US" style="font-family:宋体"}
+·Passive：表示被动模式
 
-[[PDU]{lang="EN-US"}]{#struct_0_x1112_41438_158352042}
+PDU
 
-[[本端对]{style="font-family:宋体"}[OAMPDU]{lang="EN-US"}]{#struct_0_x1112_41438_x963807536}[的处理方式：]{style="font-family:宋体"}
+本端对OAMPDU的处理方式：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RX_INFO]{lang="EN-US"}]{#struct_0_x1112_41438_293491206}[：表示只接收]{lang="EN-US" style="font-family:宋体"}[Information OAMPDU]{lang="EN-US"}[，不允许发送任何]{lang="EN-US" style="font-family:宋体"}[OAMPDU]{lang="EN-US"}
+·RX_INFO：表示只接收Information OAMPDU，不允许发送任何OAMPDU
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LF_INFO]{lang="EN-US"}]{#struct_0_x1112_41438_x1833766783}[：表示只发送不带]{lang="EN-US" style="font-family:宋体"}[Information TLV]{lang="EN-US"}[且链路错误标志位已被置位的]{lang="EN-US" style="font-family:宋体"}[Information OAMPDU]{lang="EN-US"}
+·LF_INFO：表示只发送不带Information TLV且链路错误标志位已被置位的Information OAMPDU
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[INFO]{lang="EN-US"}]{#struct_0_x1112_41438_x1818964218}[：表示只收发]{lang="EN-US" style="font-family:宋体"}[Information OAMPDU]{lang="EN-US"}
+·INFO：表示只收发Information OAMPDU
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ANY]{lang="EN-US"}]{#struct_0_x1112_41438_158941866}[：表示可收发所有]{lang="EN-US" style="font-family:宋体"}[OAMPDU]{lang="EN-US"}
+·ANY：表示可收发所有OAMPDU
 
-[[Mux action]{lang="EN-US"}]{#struct_0_x1112_41438_x1339895277}
+Mux action
 
-[[本端发送器的工作方式：]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1156848473}
+本端发送器的工作方式：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[FWD]{lang="EN-US"}]{#struct_0_x1112_41438_x377299414}[：表示发送方向为]{lang="EN-US" style="font-family:宋体"}[FORWARDING]{lang="EN-US"}[，允许发送任何报文]{lang="EN-US" style="font-family:宋体"}
+·FWD：表示发送方向为FORWARDING，允许发送任何报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DISCARD]{lang="EN-US"}]{#struct_0_x1112_41438_159007402}[：表示发送方向为]{lang="EN-US" style="font-family:宋体"}[DISCARDING]{lang="EN-US"}[，只允许发送]{lang="EN-US" style="font-family:宋体"}[OAMPDU]{lang="EN-US"}
+·DISCARD：表示发送方向为DISCARDING，只允许发送OAMPDU
 
-[[Par action]{lang="EN-US"}]{#struct_0_x1112_41438_855780122}
+Par action
 
-[[本端接收器的工作方式：]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1828402424}
+本端接收器的工作方式：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[FWD]{lang="EN-US"}]{#struct_0_x1112_41438_x71611569}[：表示接收方向为]{lang="EN-US" style="font-family:宋体"}[FORWARDING]{lang="EN-US"}[，允许接收任何报文]{lang="EN-US" style="font-family:宋体"}
+·FWD：表示接收方向为FORWARDING，允许接收任何报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DISCARD]{lang="EN-US"}]{#struct_0_x1112_41438_158417575}[：表示接收方向为]{lang="EN-US" style="font-family:宋体"}[DISCARDING]{lang="EN-US"}[，只允许接收]{lang="EN-US" style="font-family:宋体"}[OAMPDU]{lang="EN-US"}
+·DISCARD：表示接收方向为DISCARDING，只允许接收OAMPDU
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LB]{lang="EN-US"}]{#struct_0_x1112_41438_1242283612}[：表示接收方向处于环回状态，收到的所有非]{style="font-family:宋体"}[OAMPDU]{lang="EN-US"}[都将按原路返回]{style="font-family:宋体"}
+·LB：表示接收方向处于环回状态，收到的所有非OAMPDU都将按原路返回
 
-[[Flags]{lang="EN-US"}]{#struct_0_x1112_41438_181522300}
+Flags
 
-[[以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_x1319327850}[报文中的本端标识域]{style="font-family:宋体"}
+以太网OAM报文中的本端标识域
 
-[[Link fault]{lang="EN-US"}]{#struct_0_x1112_41438_158483111}
+Link fault
 
-[[是否发生链路故障：]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1474303227}
+是否发生链路故障：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Occurred]{lang="EN-US"}]{#struct_0_x1112_41438_1733398125}[：表示已发生]{lang="EN-US" style="font-family:宋体"}
+·Occurred：表示已发生
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not occurred]{lang="EN-US"}]{#struct_0_x1112_41438_x1081296365}[：表示未发生]{lang="EN-US" style="font-family:宋体"}
+·Not occurred：表示未发生
 
-[[Dying gasp]{lang="EN-US"}]{#struct_0_x1112_41438_158548647}
+Dying gasp
 
-[[是否发生致命故障：]{style="font-family:宋体"}]{#struct_0_x1112_41438_445145122}
+是否发生致命故障：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Occurred]{lang="EN-US"}]{#struct_0_x1112_41438_x1646486539}[：表示已发生]{lang="EN-US" style="font-family:宋体"}
+·Occurred：表示已发生
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not occurred]{lang="EN-US"}]{#struct_0_x1112_41438_707378015}[：表示未发生]{lang="EN-US" style="font-family:宋体"}
+·Not occurred：表示未发生
 
-[[Critical event]{lang="EN-US"}]{#struct_0_x1112_41438_158614183}
+Critical event
 
-[[是否发生紧急事件：]{style="font-family:宋体"}]{#struct_0_x1112_41438_x773067794}
+是否发生紧急事件：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Occurred]{lang="EN-US"}]{#struct_0_x1112_41438_x891008870}[：表示已发生]{lang="EN-US" style="font-family:宋体"}
+·Occurred：表示已发生
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not occurred]{lang="EN-US"}]{#struct_0_x1112_41438_158155431}[：表示未发生]{lang="EN-US" style="font-family:宋体"}
+·Not occurred：表示未发生
 
-[[Local evaluating]{lang="EN-US"}]{#struct_0_x1112_41438_x1624815303}
+Local evaluating
 
-[[本端对远端配置的协商过程：]{style="font-family:宋体"}]{#struct_0_x1112_41438_375215938}
+本端对远端配置的协商过程：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[COMPLETE]{lang="EN-US"}]{#struct_0_x1112_41438_158026932}[：表示协商已完成]{lang="EN-US" style="font-family:宋体"}
+·COMPLETE：表示协商已完成
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NOTCOMPLETE]{lang="EN-US"}]{#struct_0_x1112_41438_158220967}[：表示协商未完成]{lang="EN-US" style="font-family:宋体"}
+·NOTCOMPLETE：表示协商未完成
 
-[[Remote evaluating]{lang="EN-US"}]{#struct_0_x1112_41438_x526497927}
+Remote evaluating
 
-[[远端对本端配置的协商过程：]{style="font-family:宋体"}]{#struct_0_x1112_41438_1833929918}
+远端对本端配置的协商过程：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[COMPLETE]{lang="EN-US"}]{#struct_0_x1112_41438_158286503}[：表示协商已完成]{lang="EN-US" style="font-family:宋体"}
+·COMPLETE：表示协商已完成
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NOTCOMPLETE]{lang="EN-US"}]{#struct_0_x1112_41438_x1744323213}[：表示协商未完成]{lang="EN-US" style="font-family:宋体"}
+·NOTCOMPLETE：表示协商未完成
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RESERVED]{lang="EN-US"}]{#struct_0_x1112_41438_x571117907}[：表示此字段为保留值，协商未完成]{lang="EN-US" style="font-family:宋体"}
+·RESERVED：表示此字段为保留值，协商未完成
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UNSATISFIED]{lang="EN-US"}]{#struct_0_x1112_41438_158352039}[：表示远端对本端的配置不满意，协商未完成]{lang="EN-US" style="font-family:宋体"}
+·UNSATISFIED：表示远端对本端的配置不满意，协商未完成
 
-[[Packets statistics]{lang="EN-US"}]{#struct_0_x1112_41438_x154503467}
+Packets statistics
 
-[[各种以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_1687786651}[报文的发送和接收数量]{style="font-family:宋体"}
+各种以太网OAM报文的发送和接收数量
 
-[[Packet type]{lang="EN-US"}]{#struct_0_x1112_41438_158941863}
+Packet type
 
-[[报文类型]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1339895272}
+报文类型
 
-[[Sent]{lang="EN-US"}]{#struct_0_x1112_41438_x397333586}
+Sent
 
-[[发送的报文数量]{style="font-family:宋体"}]{#struct_0_x1112_41438_1836697595}
+发送的报文数量
 
-[[Received]{lang="EN-US"}]{#struct_0_x1112_41438_159007399}
+Received
 
-[[收到的报文数量]{style="font-family:宋体"}]{#struct_0_x1112_41438_x257230124}
+收到的报文数量
 
-[[OAMPDU]{lang="EN-US"}]{#struct_0_x1112_41438_x698158619}
+OAMPDU
 
-[[以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_158417576}[报文]{style="font-family:宋体"}
+以太网OAM报文
 
-[[OAMInformation]{lang="EN-US"}]{#struct_0_x1112_41438_1242283615}
+OAMInformation
 
-[[以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_158483112}[信息报文]{style="font-family:宋体"}
+以太网OAM信息报文
 
-[[OAMEventNotification]{lang="EN-US"}]{#struct_0_x1112_41438_x1474303226}
+OAMEventNotification
 
-[[以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_x995485230}[事件通知报文]{style="font-family:宋体"}
+以太网OAM事件通知报文
 
-[[OAMUniqueEventNotification]{lang="EN-US"}]{#struct_0_x1112_41438_158548648}
+OAMUniqueEventNotification
 
-[[以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_445145131}[一次性发送或接收的事件报文]{style="font-family:宋体"}
+以太网OAM一次性发送或接收的事件报文
 
-[[OAMDuplicateEventNotification]{lang="EN-US"}]{#struct_0_x1112_41438_309828600}
+OAMDuplicateEventNotification
 
-[[以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_158614184}[重复发送或接收的事件报文]{style="font-family:宋体"}
+以太网OAM重复发送或接收的事件报文
 
-[ ]{lang="EN-US"}
+\# 显示所有接口上以太网OAM连接的远端信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_x773067791}[显示所有接口上以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[连接的远端信息。]{style="font-family:宋体"}
+\<Sysname\> display oam remote
 
-[[\<Sysname\> display oam remote]{lang="EN-US"}]{#struct_0_x1112_41438_x890681190}
+\-\-\-\-\-\-\-\-\-\-- [GigabitEthernet1/0/1 \-\-\-\-\-\-\-\-\-\--]
 
-[\-\-\-\-\-\-\-\-\-\-- \[GigabitEthernet1/0/1\] \-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ OAM mode          : Active
 
-[ OAM mode          : Active]{lang="EN-US"}
+ MAC address       : 3822-d6a2-a800
 
-[ MAC address       : 3822-d6a2-a800]{lang="EN-US"}
+MTU size          : 1500
 
-[ ]{lang="EN-US"}[MTU size          : 1500]{lang="FR"}
+ Mux action        : FWD
 
-[ Mux action        : FWD]{lang="FR"}
+ Par action        : FWD
 
-[ Par action        : FWD]{lang="FR"}
+\# 显示接口GigabitEthernet1/0/1上以太网OAM连接的远端信息。
 
-[[\# ]{lang="FR"}]{#struct_0_x1112_41438_x859721261}[显示接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="FR"}[上以太网]{style="font-family:宋体"}[OAM]{lang="FR"}[连接的远端信息。]{style="font-family:宋体"}
+\<Sysname\> display oam remote interface gigabitethernet 1/0/1
 
-[]{#_Toc98246493}[[\<Sysname\> display oam remote interface gigabitethernet 1/0/1]{lang="FR"}]{#struct_0_x1112_41438_158155432}
+ OAM mode          : Active
 
-[ OAM mode          : Active]{lang="FR"}
+MAC address       : 3822-d6a2-a800
 
-[ ]{lang="FR"}[MAC address       : 3822-d6a2-a800]{lang="EN-US"}
+MTU size          : 1500
 
-[ ]{lang="EN-US"}[MTU size          : 1500]{lang="FR"}
+ Mux action        : FWD
 
-[ Mux action        : FWD]{lang="FR"}
+ Par action        : FWD
 
-[ Par action        : FWD]{lang="FR"}
+Configuration
 
-[ ]{lang="FR"}[Configuration]{lang="EN-US"}
+   Unidirectional    : Not supported
 
-[   Unidirectional    : Not supported]{lang="EN-US"}
+   Remote loopback   : Supported
 
-[   Remote loopback   : Supported]{lang="EN-US"}
+   Link events       : Supported
 
-[   Link events       : Supported]{lang="EN-US"}
+   MIB retrieval     : Not supported
 
-[   MIB retrieval     : Not supported]{lang="EN-US"}
+ Flags
 
-[ Flags]{lang="EN-US"}
+   Link fault        : Not occurred
 
-[   Link fault        : Not occurred]{lang="EN-US"}
+   Dying gasp        : Not occurred
 
-[   Dying gasp        : Not occurred]{lang="EN-US"}
+   Critical event    : Not occurred
 
-[   Critical event    : Not occurred]{lang="EN-US"}
+   Local evaluating  : COMPLETE
 
-[   Local evaluating  : COMPLETE]{lang="EN-US"}
+   Remote evaluating : COMPLETE
 
-[   Remote evaluating : COMPLETE]{lang="EN-US"}
+表1-2 display oam remote命令显示信息描述表
 
-[[表1-2 ]{lang="EN-US"}[display oam remote]{lang="EN-US"}]{#struct_0_x1112_41438_x1624815300}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_435927430}[[字段]{style="font-family:黑体"}]{#struct_0_x1112_41438_778500465}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1112_41438_1864839260}
+GigabitEthernet1/0/1
 
-[[GigabitEthernet1/0/1]{lang="EN-US"}]{#struct_0_x1112_41438_158220968}
+接口GigabitEthernet1/0/1上的信息
 
-[[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}]{#struct_0_x1112_41438_x526497938}[上的信息]{style="font-family:宋体"}
+OAM mode
 
-[[OAM mode]{lang="EN-US"}]{#struct_0_x1112_41438_1833602239}
+远端的以太网OAM连接模式：
 
-[[远端的以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_x1490616820}[连接模式：]{style="font-family:宋体"}
+·Active：表示主动模式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Active]{lang="EN-US"}]{#struct_0_x1112_41438_242411982}[：表示主动模式]{lang="EN-US" style="font-family:宋体"}
+·Passive：表示被动模式
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Passive]{lang="EN-US"}]{#struct_0_x1112_41438_977092719}[：表示被动模式]{lang="EN-US" style="font-family:宋体"}
+MAC address
 
-[[MAC address]{lang="EN-US"}]{#struct_0_x1112_41438_158286504}
+远端的MAC地址
 
-[[远端的]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x1112_41438_x1744323212}[地址]{style="font-family:宋体"}
+MTU size
 
-[[MTU size]{lang="EN-US"}]{#struct_0_x1112_41438_994966034}
+以太网OAM实体间传送的报文最大长度，单位为字节
 
-[[以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_x596483784}[实体间传送的报文最大长度，单位为字节]{style="font-family:宋体"}
+Mux action
 
-[[Mux action]{lang="FR"}]{#struct_0_x1112_41438_x1104033701}
+远端发送器的工作方式
 
-[[远端发送器的工作方式]{style="font-family:宋体"}]{#struct_0_x1112_41438_378421607}
+·FWD：表示发送方向为FORWARDING，允许发送任何报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[FWD]{lang="EN-US"}]{#struct_0_x1112_41438_158352040}[：表示发送方向为]{lang="EN-US" style="font-family:宋体"}[FORWARDING]{lang="EN-US"}[，允许发送任何报文]{lang="EN-US" style="font-family:宋体"}
+·DISCARD：表示发送方向为DISCARDING，只允许发送OAMPDU
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DISCARD]{lang="EN-US"}]{#struct_0_x1112_41438_x963807538}[：表示发送方向为]{lang="EN-US" style="font-family:宋体"}[DISCARDING]{lang="EN-US"}[，只允许发送]{lang="EN-US" style="font-family:宋体"}[OAMPDU]{lang="EN-US"}
+Par action
 
-[[Par action]{lang="FR"}]{#struct_0_x1112_41438_293884422}
+远端接收器的工作方式：
 
-[[远端接收器的工作方式：]{style="font-family:宋体"}]{#struct_0_x1112_41438_x550161112}
+·FWD：表示接收方向为FORWARDING，允许接收任何报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[FWD]{lang="EN-US"}]{#struct_0_x1112_41438_x678527639}[：表示接收方向为]{lang="EN-US" style="font-family:宋体"}[FORWARDING]{lang="EN-US"}[，允许接收任何报文]{lang="EN-US" style="font-family:宋体"}
+·DISCARD：表示接收方向为DISCARDING，只允许接收OAMPDU
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DISCARD]{lang="EN-US"}]{#struct_0_x1112_41438_158941864}[：表示接收方向为]{lang="EN-US" style="font-family:宋体"}[DISCARDING]{lang="EN-US"}[，只允许接收]{lang="EN-US" style="font-family:宋体"}[OAMPDU]{lang="EN-US"}
+·LB：表示接收方向处于环回状态，收到的所有非OAMPDU都将按原路返回
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LB]{lang="EN-US"}]{#struct_0_x1112_41438_x1339895279}[：表示接收方向处于环回状态，收到的所有非]{style="font-family:宋体"}[OAMPDU]{lang="EN-US"}[都将按原路返回]{style="font-family:宋体"}
+Configuration
 
-[[Configuration]{lang="FR"}]{#struct_0_x1112_41438_1975319409}
+远端以太网OAM实体的配置信息
 
-[[远端以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_x801170505}[实体的配置信息]{style="font-family:宋体"}
+Unidirectional
 
-[[Unidirectional]{lang="EN-US"}]{#struct_0_x1112_41438_1920921823}
+是否支持单向传输：
 
-[[是否支持单向传输：]{style="font-family:宋体"}]{#struct_0_x1112_41438_159007400}
+·Supported：表示支持
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Supported]{lang="EN-US"}]{#struct_0_x1112_41438_855780120}[：表示支持]{lang="EN-US" style="font-family:宋体"}
+·Not supported：表示不支持
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not supported]{lang="EN-US"}]{#struct_0_x1112_41438_x1828402426}[：表示不支持]{lang="EN-US" style="font-family:宋体"}
+Remote loopback
 
-[[Remote loopback]{lang="EN-US"}]{#struct_0_x1112_41438_1091187845}
+是否支持远端环回：
 
-[[是否支持远端环回：]{style="font-family:宋体"}]{#struct_0_x1112_41438_984206637}
+·Supported：表示支持
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Supported]{lang="EN-US"}]{#struct_0_x1112_41438_1724501520}[：表示支持]{lang="EN-US" style="font-family:宋体"}
+·Not supported：表示不支持
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not supported]{lang="EN-US"}]{#struct_0_x1112_41438_607037401}[：表示不支持]{lang="EN-US" style="font-family:宋体"}
+Link events
 
-[[Link events]{lang="EN-US"}]{#struct_0_x1112_41438_x2071795382}
+是否支持一般链路事件：
 
-[[是否支持一般链路事件：]{style="font-family:宋体"}]{#struct_0_x1112_41438_41981959}
+·Supported：表示支持
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Supported]{lang="EN-US"}]{#struct_0_x1112_41438_1724567056}[：表示支持]{lang="EN-US" style="font-family:宋体"}
+·Not supported：表示不支持
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not supported]{lang="EN-US"}]{#struct_0_x1112_41438_616218268}[：表示不支持]{lang="EN-US" style="font-family:宋体"}
+MIB retrieval
 
-[[MIB retrieval]{lang="EN-US"}]{#struct_0_x1112_41438_x574415068}
+是否支持获取MIB变量：
 
-[[是否支持获取]{style="font-family:宋体"}[MIB]{lang="EN-US"}]{#struct_0_x1112_41438_x457285547}[变量：]{style="font-family:宋体"}
+·Supported：表示支持
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Supported]{lang="EN-US"}]{#struct_0_x1112_41438_1724632592}[：表示支持]{lang="EN-US" style="font-family:宋体"}
+·Not supported：表示不支持
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not supported]{lang="EN-US"}]{#struct_0_x1112_41438_x969597732}[：表示不支持]{lang="EN-US" style="font-family:宋体"}
+Flags
 
-[[Flags]{lang="EN-US"}]{#struct_0_x1112_41438_299454817}
+以太网OAM报文中的远端标识域
 
-[[以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_1815914360}[报文中的远端标识域]{style="font-family:宋体"}
+Link fault
 
-[[Link fault]{lang="EN-US"}]{#struct_0_x1112_41438_1724698128}
+是否发生链路故障：
 
-[[是否发生链路故障：]{style="font-family:宋体"}]{#struct_0_x1112_41438_1775097971}
+·Occurred：表示已发生
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Occurred]{lang="EN-US"}]{#struct_0_x1112_41438_1790475284}[：表示已发生]{lang="EN-US" style="font-family:宋体"}
+·Not occurred：表示未发生
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not occurred]{lang="EN-US"}]{#struct_0_x1112_41438_1724239376}[：表示未发生]{lang="EN-US" style="font-family:宋体"}
+Dying gasp
 
-[[Dying gasp]{lang="EN-US"}]{#struct_0_x1112_41438_x194032233}
+是否发生致命故障：
 
-[[是否发生致命故障：]{style="font-family:宋体"}]{#struct_0_x1112_41438_2091138060}
+·Occurred：表示已发生
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Occurred]{lang="EN-US"}]{#struct_0_x1112_41438_x560814355}[：表示已发生]{lang="EN-US" style="font-family:宋体"}
+·Not occurred：表示未发生
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not occurred]{lang="EN-US"}]{#struct_0_x1112_41438_1724304912}[：表示未发生]{lang="EN-US" style="font-family:宋体"}
+Critical event
 
-[[Critical event]{lang="EN-US"}]{#struct_0_x1112_41438_1848598933}
+是否发生紧急事件：
 
-[[是否发生紧急事件：]{style="font-family:宋体"}]{#struct_0_x1112_41438_739895306}
+·Occurred：表示已发生
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Occurred]{lang="EN-US"}]{#struct_0_x1112_41438_1724370448}[：表示已发生]{lang="EN-US" style="font-family:宋体"}
+·Not occurred：表示未发生
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not occurred]{lang="EN-US"}]{#struct_0_x1112_41438_x183290874}[：表示未发生]{lang="EN-US" style="font-family:宋体"}
+Local evaluating
 
-[[Local evaluating]{lang="EN-US"}]{#struct_0_x1112_41438_1298023489}
+本端对远端配置的协商过程：
 
-[[本端对远端配置的协商过程：]{style="font-family:宋体"}]{#struct_0_x1112_41438_x81200428}
+·COMPLETE：表示协商已完成
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[COMPLETE]{lang="EN-US"}]{#struct_0_x1112_41438_1724435984}[：表示协商已完成]{lang="EN-US" style="font-family:宋体"}
+·NOTCOMPLETE：表示协商未完成
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NOTCOMPLETE]{lang="EN-US"}]{#struct_0_x1112_41438_271963538}[：表示协商未完成]{lang="EN-US" style="font-family:宋体"}
+·RESERVED：表示此字段为保留值，协商未完成
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[RESERVED]{lang="EN-US"}]{#struct_0_x1112_41438_x63285586}[：表示此字段为保留值，协商未完成]{lang="EN-US" style="font-family:宋体"}
+·UNSATISFIED：表示本端对远端的配置不满意，协商未完成
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UNSATISFIED]{lang="EN-US"}]{#struct_0_x1112_41438_1725025808}[：表示本端对远端的配置不满意，协商未完成]{lang="EN-US" style="font-family:宋体"}
+Remote evaluating
 
-[[Remote evaluating]{lang="EN-US"}]{#struct_0_x1112_41438_x1276062194}
+远端对本端配置的协商过程：
 
-[[远端对本端配置的协商过程：]{style="font-family:宋体"}]{#struct_0_x1112_41438_688013251}
+·COMPLETE：表示协商已完成
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[COMPLETE]{lang="EN-US"}]{#struct_0_x1112_41438_1725091344}[：表示协商已完成]{lang="EN-US" style="font-family:宋体"}
+·NOTCOMPLETE：表示协商未完成
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[NOTCOMPLETE]{lang="EN-US"}]{#struct_0_x1112_41438_637577342}[：表示协商未完成]{lang="EN-US" style="font-family:宋体"}
+·UNSATISFIED：表示本端对远端的配置不满意，协商未完成
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UNSATISFIED]{lang="EN-US"}]{#struct_0_x1112_41438_76188440}[：表示本端对远端的配置不满意，协商未完成]{lang="EN-US" style="font-family:宋体"}
+【相关命令】
 
-[ ]{lang="EN-US"}
-
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x224606442}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset]{lang="EN-US"}**[ **oam**]{lang="EN-US"}]{#struct_0_x1112_41438_x832956312}
-
-::: {#-1981072478 .myid}
-[]{#_Toc404795465}[]{#struct_0_x1112_41438_1724501521}[]{#_Toc129683608}
+·**reset** **oam**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- display oam configuration**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **oam** **configuration**]{lang="EN-US"}]{#struct_0_x1112_41438_607102937}[命令用来显示以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[的配置信息，包括各一般链路事件的检测窗口和检测阈值。]{style="font-family:宋体"}
+**[display** **oam** **configuration**]命令用来显示以太网OAM的配置信息，包括各一般链路事件的检测窗口和检测阈值。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x58393074}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **oam** **configuration** \[ **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_x1112_41438_607995210}
+**[display** **oam** **configuration** [ **interface** *interface-type interface-number* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_911475039}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1268309291}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1730057989}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_1037285185}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1112_41438_x1051734450}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_1724567057}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1112_41438_616283804}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1691643277}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_x1112_41438_x1786398241}[：显示指定接口上的信息，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[表示接口类型和接口编号。如果未指定本参数，将显示全局以及未采用缺省配置的接口上的信息。]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：显示指定接口上的信息，*interface-type interface-number*表示接口类型和接口编号。如果未指定本参数，将显示全局以及未采用缺省配置的接口上的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1135492578}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_1151663562}[显示全局以及未采用缺省配置的接口上的以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[配置信息。]{style="font-family:宋体"}
+\# 显示全局以及未采用缺省配置的接口上的以太网OAM配置信息。
 
-[[\<Sysname\> display oam configuration]{lang="EN-US"}]{#struct_0_x1112_41438_1724632593}
+\<Sysname\> display oam configuration
 
-[\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-- \[Global\] \-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]{lang="NO-BOK"}
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-- [Global \-\-\-\-\-\-\-\-\-\-\-\-\-\-\--]
 
-[ OAM timers]{lang="NO-BOK"}
+ OAM timers
 
-[   Hello timer        : 1000 milliseconds]{lang="NO-BOK"}
+   Hello timer        : 1000 milliseconds
 
-[   Keepalive timer    : 5000 milliseconds]{lang="EN-US"}
+   Keepalive timer    : 5000 milliseconds
 
-[ Link monitoring]{lang="EN-US"}
+ Link monitoring
 
-[   Errored symbol period]{lang="EN-US"}
+   Errored symbol period
 
-[     Window           : 100 x 1000000 symbols]{lang="EN-US"}
+     Window           : 100 x 1000000 symbols
 
-[     Threshold        : 1 error symbols]{lang="EN-US"}
+     Threshold        : 1 error symbols
 
-[   Errored frame]{lang="EN-US"}
+   Errored frame
 
-[     Window           : 10 x 100 milliseconds]{lang="EN-US"}
+     Window           : 10 x 100 milliseconds
 
-[     Threshold        : 1 error frames]{lang="EN-US"}
+     Threshold        : 1 error frames
 
-[   Errored frame period]{lang="EN-US"}
+   Errored frame period
 
-[     Window           : 1000 x 10000 frames]{lang="EN-US"}
+     Window           : 1000 x 10000 frames
 
-[     Threshold        : 1 error frames]{lang="EN-US"}
+     Threshold        : 1 error frames
 
-[   Errored frame seconds]{lang="EN-US"}
+   Errored frame seconds
 
-[     Window           : 600 x 100 milliseconds]{lang="EN-US"}
+     Window           : 600 x 100 milliseconds
 
-[     Threshold        : 1 error seconds]{lang="EN-US"}
+     Threshold        : 1 error seconds
 
-[ ]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-- [GigabitEthernet1/0/1 \-\-\-\-\-\-\-\-\-\--]
 
-[\-\-\-\-\-\-\-\-\-\-- \[GigabitEthernet1/0/1\] \-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+ OAM timers
 
-[ OAM timers]{lang="NO-BOK"}
+   Hello timer        : 500 milliseconds
 
-[   Hello timer        : 500 milliseconds]{lang="NO-BOK"}
+   Keepalive timer    : 5000 milliseconds
 
-[   Keepalive timer    : 5000 milliseconds]{lang="NO-BOK"}
+Link monitoring
 
-[ ]{lang="NO-BOK"}[Link monitoring]{lang="EN-US"}
+   Errored symbol period
 
-[   Errored symbol period]{lang="EN-US"}
+     Window           : 100 x 1000000 symbols
 
-[     Window           : 100 x 1000000 symbols]{lang="EN-US"}
+     Threshold        : 1 error symbols
 
-[     Threshold        : 1 error symbols]{lang="EN-US"}
+   Errored frame
 
-[   Errored frame]{lang="EN-US"}
+     Window           : 10 x 100 milliseconds
 
-[     Window           : 10 x 100 milliseconds]{lang="EN-US"}
+     Threshold        : 1 error frames
 
-[     Threshold        : 1 error frames]{lang="EN-US"}
+   Errored frame period
 
-[   Errored frame period]{lang="EN-US"}
+     Window           : 1000 x 10000 frames
 
-[     Window           : 1000 x 10000 frames]{lang="EN-US"}
+     Threshold        : 1 error frames
 
-[     Threshold        : 1 error frames]{lang="EN-US"}
+   Errored frame seconds
 
-[   Errored frame seconds]{lang="EN-US"}
+     Window           : 600 x 100 milliseconds
 
-[     Window           : 600 x 100 milliseconds]{lang="EN-US"}
+     Threshold        : 1 error seconds
 
-[     Threshold        : 1 error seconds]{lang="EN-US"}
+表1-3 display oam configuration命令显示信息描述表
 
-[[表1-3 ]{lang="EN-US"}[display oam configuration]{lang="EN-US"}]{#struct_0_x1112_41438_1724698129}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_424902936}[[字段]{style="font-family:黑体"}]{#struct_0_x1112_41438_1775032435}
-:::
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1784865217}
+Global
 
-[[Global]{lang="NO-BOK"}]{#struct_0_x1112_41438_x69067995}
+全局信息
 
-[[全局信息]{style="font-family:宋体"}]{#struct_0_x1112_41438_620694776}
+GigabitEthernet1/0/1
 
-[[GigabitEthernet1/0/1]{lang="EN-US"}]{#struct_0_x1112_41438_x1109236513}
+接口GigabitEthernet1/0/1上的信息
 
-[[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}]{#struct_0_x1112_41438_x110536562}[上的信息]{style="font-family:宋体"}
+OAM timers
 
-[[OAM timers]{lang="EN-US"}]{#struct_0_x1112_41438_1724239377}
+以太网OAM连接检测定时器
 
-[[以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_x194097769}[连接检测定时器]{style="font-family:宋体"}
+Hello timer
 
-[[Hello timer]{lang="EN-US"}]{#struct_0_x1112_41438_475240922}
+以太网OAM握手报文的发送间隔
 
-[[以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_2125152464}[握手报文的发送间隔]{style="font-family:宋体"}
+Keepalive timer
 
-[[Keepalive timer]{lang="EN-US"}]{#struct_0_x1112_41438_x2100752338}
+以太网OAM连接的超时时间
 
-[[以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_2098872356}[连接的超时时间]{style="font-family:宋体"}
+Link monitoring
 
-[[Link monitoring]{lang="EN-US"}]{#struct_0_x1112_41438_1724304913}
+一般链路事件的检测窗口和检测阈值
 
-[[一般链路事件的检测窗口和检测阈值]{style="font-family:宋体"}]{#struct_0_x1112_41438_1848664469}
+Errored symbol period
 
-[[Errored symbol period]{lang="EN-US"}]{#struct_0_x1112_41438_1980002594}
+错误信号事件
 
-[[错误信号事件]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1589080525}
+Errored frame
 
-[[Errored frame]{lang="EN-US"}]{#struct_0_x1112_41438_1153631739}
+错误帧事件
 
-[[错误帧事件]{style="font-family:宋体"}]{#struct_0_x1112_41438_1724370449}
+Errored frame period
 
-[[Errored frame period]{lang="EN-US"}]{#struct_0_x1112_41438_x183356410}
+错误帧周期事件
 
-[[错误帧周期事件]{style="font-family:宋体"}]{#struct_0_x1112_41438_468266432}
+Errored frame seconds
 
-[[Errored frame seconds]{lang="EN-US"}]{#struct_0_x1112_41438_x1685178978}
+错误帧秒事件
 
-[[错误帧秒事件]{style="font-family:宋体"}]{#struct_0_x1112_41438_451754676}
+Window
 
-[[Window]{lang="EN-US"}]{#struct_0_x1112_41438_1724435985}
+检测窗口
 
-[[检测窗口]{style="font-family:宋体"}]{#struct_0_x1112_41438_271898002}
+Threshold
 
-[[Threshold]{lang="EN-US"}]{#struct_0_x1112_41438_1536096088}
-
-[[检测阈值]{style="font-family:宋体"}]{#struct_0_x1112_41438_x400610340}
-
-[ ]{lang="EN-US"}
-
-::: {#108458142 .myid}
-[]{#_Toc404795466}[]{#struct_0_x1112_41438_1123348904}[]{#_Toc129683609}
+检测阈值
 
 **以太网OAM \-- 以太网OAM配置命令 \-- display oam critical-event**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **oam** **critical-event**]{lang="EN-US"}]{#struct_0_x1112_41438_788519131}[命令用来显示以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[的紧急链路事件统计信息。]{style="font-family:宋体"}
+**[display** **oam** **critical-event**]命令用来显示以太网OAM的紧急链路事件统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1725025809}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **oam** **critical-event** \[ **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_x1112_41438_x1275996658}
+**[display** **oam** **critical-event** [ **interface** *interface-type interface-number* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x540433966}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1112_41438_767597752}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:
-黑体"}]{#struct_0_x1112_41438_418670}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_1512006809}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1112_41438_165080666}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x577935252}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1112_41438_215834799}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1725091345}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_x1112_41438_637511806}[：显示指定接口上的信息，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[表示接口类型和接口编号。如果未指定本参数，将显示所有接口上的信息。]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：显示指定接口上的信息，*interface-type interface-number*表示接口类型和接口编号。如果未指定本参数，将显示所有接口上的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_517042763}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_x684561521}[显示所有接口上以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[紧急链路事件的统计信息。]{style="font-family:宋体"}
+\# 显示所有接口上以太网OAM紧急链路事件的统计信息。
 
-[[\<Sysname\> display oam critical-event]{lang="EN-US"}]{#struct_0_x1112_41438_x628704921}
+\<Sysname\> display oam critical-event
 
-[\-\-\-\-\-\-\-\-\-\-- \[GigabitEthernet1/0/1\] \-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-- [GigabitEthernet1/0/1 \-\-\-\-\-\-\-\-\-\--]
 
-[ Local link status   : UP]{lang="EN-US"}
+ Local link status   : UP
 
-[ Event statistics]{lang="EN-US"}
+ Event statistics
 
-[   Link fault        : Not occurred]{lang="EN-US"}
+   Link fault        : Not occurred
 
-[   Dying gasp        : Not occurred]{lang="EN-US"}
+   Dying gasp        : Not occurred
 
-[   Critical event    : Not occurred]{lang="EN-US"}
+   Critical event    : Not occurred
 
-[[表1-4 ]{lang="EN-US"}[display oam critical-event]{lang="EN-US"}]{#struct_0_x1112_41438_1687760652}[命令显示信息描述表]{style="font-family:黑体"}
+表1-4 display oam critical-event命令显示信息描述表
 
-[]{#table_struct_0_420749574}[[字段]{style="font-family:黑体"}]{#struct_0_x1112_41438_2033743627}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1112_41438_1724501518}
+描述
 
-[[GigabitEthernet1/0/1]{lang="EN-US"}]{#struct_0_x1112_41438_607561686}
+GigabitEthernet1/0/1
 
-[[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}]{#struct_0_x1112_41438_x1105800712}[上的信息]{style="font-family:宋体"}
+接口GigabitEthernet1/0/1上的信息
 
-[[Local link status]{lang="EN-US"}]{#struct_0_x1112_41438_x1479950884}
+Local link status
 
-[[本端的链路状态：]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1633194646}
+本端的链路状态：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_x1112_41438_x78589945}[：表示链路]{lang="EN-US" style="font-family:宋体"}[up]{lang="EN-US"}
+·UP：表示链路up
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_x1112_41438_1724567054}[：表示链路]{lang="EN-US" style="font-family:宋体"}[down]{lang="EN-US"}
+·DOWN：表示链路down
 
-[[Event statistics]{lang="EN-US"}]{#struct_0_x1112_41438_616349340}
+Event statistics
 
-[[紧急链路事件的统计信息]{style="font-family:宋体"}]{#struct_0_x1112_41438_x211643500}
+紧急链路事件的统计信息
 
-[[Link fault]{lang="EN-US"}]{#struct_0_x1112_41438_x1308920562}
+Link fault
 
-[[是否发生链路故障：]{style="font-family:宋体"}]{#struct_0_x1112_41438_1799871779}
+是否发生链路故障：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Occurred]{lang="EN-US"}]{#struct_0_x1112_41438_x607526128}[：表示已发生]{lang="EN-US" style="font-family:宋体"}
+·Occurred：表示已发生
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not occurred]{lang="EN-US"}]{#struct_0_x1112_41438_1724632590}[：表示未发生]{lang="EN-US" style="font-family:宋体"}
+·Not occurred：表示未发生
 
-[[Dying gasp]{lang="EN-US"}]{#struct_0_x1112_41438_x969728804}
+Dying gasp
 
-[[是否发生致命故障：]{style="font-family:宋体"}]{#struct_0_x1112_41438_x2039120753}
+是否发生致命故障：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Occurred]{lang="EN-US"}]{#struct_0_x1112_41438_719204652}[：表示已发生]{lang="EN-US" style="font-family:宋体"}
+·Occurred：表示已发生
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not occurred]{lang="EN-US"}]{#struct_0_x1112_41438_1800743003}[：表示未发生]{lang="EN-US" style="font-family:宋体"}
+·Not occurred：表示未发生
 
-[[Critical event]{lang="EN-US"}]{#struct_0_x1112_41438_1509338862}
+Critical event
 
-[[是否发生紧急事件：]{style="font-family:宋体"}]{#struct_0_x1112_41438_1724698126}
+是否发生紧急事件：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Occurred]{lang="EN-US"}]{#struct_0_x1112_41438_1775753331}[：表示已发生]{lang="EN-US" style="font-family:宋体"}
+·Occurred：表示已发生
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not occurred]{lang="EN-US"}]{#struct_0_x1112_41438_1352706365}[：表示未发生]{lang="EN-US" style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#80402374 .myid}
-[]{#_Toc404795467}[]{#struct_0_x1112_41438_x657954540}[]{#_Toc129683610}
+·Not occurred：表示未发生
 
 **以太网OAM \-- 以太网OAM配置命令 \-- display oam link-event**
 
 ------------------------------------------------------------------------
 
-[**[display]{lang="EN-US"}**[ **oam** **link-event**]{lang="EN-US"}]{#struct_0_x1112_41438_225648765}[命令用来显示以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[的一般链路事件统计信息。]{style="font-family:宋体"}
+**[display** **oam** **link-event**]命令用来显示以太网OAM的一般链路事件统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_58714324}
+【命令】
 
-[**[display]{lang="EN-US"}**[ **oam** **link-event** { **local** \| **remote** } \[ **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_x1112_41438_1724239374}
+**[display**[ **oam** **link-event** { **local** \| **remote** } [ **interface** *interface-type interface-number* ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x194163305}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x1112_41438_1699137489}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1553937120}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x143177820}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x1112_41438_1727318466}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x293087012}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x1112_41438_x1656448549}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_31077140}
+【参数】
 
-[**[local]{lang="EN-US"}**]{#struct_0_x1112_41438_1724304910}[：显示本端统计信息。]{style="font-family:宋体"}
+**[local**]：显示本端统计信息。
 
-[**[remote]{lang="EN-US"}**]{#struct_0_x1112_41438_1848467861}[：显示远端统计信息。]{style="font-family:宋体"}
+**[remote**]：显示远端统计信息。
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_x1112_41438_1545665609}[：显示指定接口上的信息，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[表示接口类型和接口编号。如果未指定本参数，将显示所有接口上的信息。]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：显示指定接口上的信息，*interface-type interface-number*表示接口类型和接口编号。如果未指定本参数，将显示所有接口上的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1277027778}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_x1366197229}[显示所有接口上以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[一般链路事件的本端统计信息。]{style="font-family:宋体"}
+\# 显示所有接口上以太网OAM一般链路事件的本端统计信息。
 
-[[\<Sysname\> display oam link-event local]{lang="EN-US"}]{#struct_0_x1112_41438_1724370446}
+\<Sysname\> display oam link-event local
 
-[\-\-\-\-\-\-\-\-\-\-- \[GigabitEthernet1/0/1\] \-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-- [GigabitEthernet1/0/1 \-\-\-\-\-\-\-\-\-\--]
 
-[ Link status: UP]{lang="EN-US"}
+ Link status: UP
 
-[ OAM local errored frame event]{lang="EN-US"}
+ OAM local errored frame event
 
-[   Event time stamp        : 49582 x 100 milliseconds]{lang="EN-US"}
+   Event time stamp        : 49582 x 100 milliseconds
 
-[   Errored frame window    : 10 x 100 milliseconds]{lang="EN-US"}
+   Errored frame window    : 10 x 100 milliseconds
 
-[   Errored frame threshold : 1 error frames]{lang="EN-US"}
+   Errored frame threshold : 1 error frames
 
-[   Errored frame           : 1 error frames]{lang="EN-US"}
+   Errored frame           : 1 error frames
 
-[   Error running total     : 6 error frames]{lang="EN-US"}
+   Error running total     : 6 error frames
 
-[   Event running total     : 6 events]{lang="EN-US"}
+   Event running total     : 6 events
 
-[ OAM local errored frame period event]{lang="EN-US"}
+ OAM local errored frame period event
 
-[   Event time stamp                : 16382 x 100 milliseconds]{lang="EN-US"}
+   Event time stamp                : 16382 x 100 milliseconds
 
-[   Errored frame period window     : 10000000 frames]{lang="EN-US"}
+   Errored frame period window     : 10000000 frames
 
-[   Errored frame period threshold  : 1 error frames]{lang="EN-US"}
+   Errored frame period threshold  : 1 error frames
 
-[   Errored frame period            : 1 error frames]{lang="EN-US"}
+   Errored frame period            : 1 error frames
 
-[   Error running total             : 5 error frames]{lang="EN-US"}
+   Error running total             : 5 error frames
 
-[   Event running total             : 5 events]{lang="EN-US"}
+   Event running total             : 5 events
 
-[ OAM local errored frame seconds summary event]{lang="EN-US"}
+ OAM local errored frame seconds summary event
 
-[   Event time stamp                : 50022 x 100 milliseconds]{lang="EN-US"}
+   Event time stamp                : 50022 x 100 milliseconds
 
-[   Errored frame seconds window    : 600 x 100 milliseconds]{lang="EN-US"}
+   Errored frame seconds window    : 600 x 100 milliseconds
 
-[   Errored frame seconds threshold : 1 error seconds]{lang="EN-US"}
+   Errored frame seconds threshold : 1 error seconds
 
-[   Errored frame seconds           : 1 error seconds]{lang="EN-US"}
+   Errored frame seconds           : 1 error seconds
 
-[   Error running total             : 1 error seconds]{lang="EN-US"}
+   Error running total             : 1 error seconds
 
-[   Event running total             : 1 events]{lang="EN-US"}
+   Event running total             : 1 events
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_x182897658}[显示所有接口上以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[一般链路事件的远端统计信息。]{style="font-family:宋体"}
+\# 显示所有接口上以太网OAM一般链路事件的远端统计信息。
 
-[[\<Sysname\> display oam link-event remote]{lang="EN-US"}]{#struct_0_x1112_41438_1724435982}
+\<Sysname\> display oam link-event remote
 
-[\-\-\-\-\-\-\-\-\-\-- \[GigabitEthernet1/0/1\] \-\-\-\-\-\-\-\-\-\--]{lang="EN-US"}
+\-\-\-\-\-\-\-\-\-\-- [GigabitEthernet1/0/1 \-\-\-\-\-\-\-\-\-\--]
 
-[ Link status: UP]{lang="EN-US"}
+ Link status: UP
 
-[ OAM remote errored symbol event]{lang="EN-US"}
+ OAM remote errored symbol event
 
-[   Event time stamp         : 35498 x 100 milliseconds]{lang="EN-US"}
+   Event time stamp         : 35498 x 100 milliseconds
 
-[   Errored symbol window    : 100000000  symbols]{lang="EN-US"}
+   Errored symbol window    : 100000000  symbols
 
-[   Errored symbol threshold : 1 error symbols]{lang="EN-US"}
+   Errored symbol threshold : 1 error symbols
 
-[   Errored symbol           : 1 error symbols]{lang="EN-US"}
+   Errored symbol           : 1 error symbols
 
-[   Error running total      : 4 error symbols]{lang="EN-US"}
+   Error running total      : 4 error symbols
 
-[   Event running total      : 4 events]{lang="EN-US"}
+   Event running total      : 4 events
 
-[ OAM remote errored frame event]{lang="EN-US"}
+ OAM remote errored frame event
 
-[   Event time stamp        : 49582 x 100 milliseconds]{lang="EN-US"}
+   Event time stamp        : 49582 x 100 milliseconds
 
-[   Errored frame window    : 10 x 100 milliseconds]{lang="EN-US"}
+   Errored frame window    : 10 x 100 milliseconds
 
-[   Errored frame threshold : 1 error frames]{lang="EN-US"}
+   Errored frame threshold : 1 error frames
 
-[   Errored frame           : 1 error frames]{lang="EN-US"}
+   Errored frame           : 1 error frames
 
-[   Error running total     : 6 error frames]{lang="EN-US"}
+   Error running total     : 6 error frames
 
-[   Event running total     : 6 events]{lang="EN-US"}
+   Event running total     : 6 events
 
-[ OAM remote errored frame period event]{lang="EN-US"}
+ OAM remote errored frame period event
 
-[   Event time stamp                : 16382 x 100 milliseconds]{lang="EN-US"}
+   Event time stamp                : 16382 x 100 milliseconds
 
-[   Errored frame period window     : 10000000 frames]{lang="EN-US"}
+   Errored frame period window     : 10000000 frames
 
-[   Errored frame period threshold  : 1 error frames]{lang="EN-US"}
+   Errored frame period threshold  : 1 error frames
 
-[   Errored frame period            : 1 error frames]{lang="EN-US"}
+   Errored frame period            : 1 error frames
 
-[   Error running total             : 5 error frames]{lang="EN-US"}
+   Error running total             : 5 error frames
 
-[   Event running total             : 5 events]{lang="EN-US"}
+   Event running total             : 5 events
 
-[ OAM remote errored frame seconds summary event]{lang="EN-US"}
+ OAM remote errored frame seconds summary event
 
-[   Event time stamp                : 50022 x 100 milliseconds]{lang="EN-US"}
+   Event time stamp                : 50022 x 100 milliseconds
 
-[   Errored frame seconds window    : 600 x 100 milliseconds]{lang="EN-US"}
+   Errored frame seconds window    : 600 x 100 milliseconds
 
-[   Errored frame seconds threshold : 1 error seconds]{lang="EN-US"}
+   Errored frame seconds threshold : 1 error seconds
 
-[   Errored frame seconds           : 1 error seconds]{lang="EN-US"}
+   Errored frame seconds           : 1 error seconds
 
-[   Error running total             : 1 error seconds]{lang="EN-US"}
+   Error running total             : 1 error seconds
 
-[   Event running total             : 1 events]{lang="EN-US"}
+   Event running total             : 1 events
 
-[[表1-5 ]{lang="EN-US"}[display oam link-event]{lang="EN-US"}]{#struct_0_x1112_41438_271832466}[命令显示信息描述表]{style="font-family:黑体"}
+表1-5 display oam link-event命令显示信息描述表
 
-[]{#table_struct_0_423093380}[[字段]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1601910166}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1038741576}
+描述
 
-[[GigabitEthernet1/0/1]{lang="EN-US"}]{#struct_0_x1112_41438_1725025806}
+GigabitEthernet1/0/1
 
-[[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}]{#struct_0_x1112_41438_x1276455410}[上的信息]{style="font-family:宋体"}
+接口GigabitEthernet1/0/1上的信息
 
-[[Link status]{lang="EN-US"}]{#struct_0_x1112_41438_2103193849}
+Link status
 
-[[链路状态：]{style="font-family:宋体"}]{#struct_0_x1112_41438_310092393}
+链路状态：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_x1112_41438_1621337513}[：表示链路]{lang="EN-US" style="font-family:宋体"}[up]{lang="EN-US"}
+·UP：表示链路up
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_x1112_41438_x2006728858}[：表示链路]{lang="EN-US" style="font-family:宋体"}[down]{lang="EN-US"}
+·DOWN：表示链路down
 
-[[OAM remote errored symbol event]{lang="EN-US"}]{#struct_0_x1112_41438_1725091342}
+OAM remote errored symbol event
 
-[[远端产生的错误信号事件信息（只有产生了错误信号事件才会显示）：]{style="font-family:宋体"}]{#struct_0_x1112_41438_637184126}
+远端产生的错误信号事件信息（只有产生了错误信号事件才会显示）：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Event time stamp]{lang="EN-US"}]{#struct_0_x1112_41438_x1998019603}[：表示错误信号事件的发生时间]{lang="EN-US" style="font-family:
-  宋体"}
+·Event time stamp：表示错误信号事件的发生时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Errored symbol window]{lang="EN-US"}]{#struct_0_x1112_41438_552496184}[：表示错误信号事件的检测窗口]{lang="EN-US" style="font-family:
-  宋体"}
+·Errored symbol window：表示错误信号事件的检测窗口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Errored symbol threshold]{lang="EN-US"}]{#struct_0_x1112_41438_421893739}[：表示错误信号事件的检测阈值]{lang="EN-US" style="font-family:宋体"}
+·Errored symbol threshold：表示错误信号事件的检测阈值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Errored symbol]{lang="EN-US"}]{#struct_0_x1112_41438_x1884200085}[：表示]{lang="EN-US" style="font-family:宋体"}[最近一次错误]{style="font-family:宋体"}[信号]{lang="EN-US" style="font-family:宋体"}[事件中错误信号的]{style="font-family:宋体"}[数量]{lang="EN-US" style="font-family:
-  宋体"}
+·Errored symbol：表示最近一次错误信号事件中错误信号的数量
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Error running total]{lang="EN-US"}]{#struct_0_x1112_41438_530306612}[：表示错误信号的总数量]{lang="EN-US" style="font-family:
-  宋体"}
+·Error running total：表示错误信号的总数量
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Event running total]{lang="EN-US"}]{#struct_0_x1112_41438_1724501519}[：表示错误信号事件的总数量]{lang="EN-US" style="font-family:
-  宋体"}
+·Event running total：表示错误信号事件的总数量
 
-[[OAM local/remote errored frame event]{lang="EN-US"}]{#struct_0_x1112_41438_607627222}
+OAM local/remote errored frame event
 
-[[本端]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1112_41438_x2048917388}[远端产生的错误帧事件信息（只有产生了错误帧事件才会显示）：]{style="font-family:宋体"}
+本端/远端产生的错误帧事件信息（只有产生了错误帧事件才会显示）：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Event time stamp]{lang="EN-US"}]{#struct_0_x1112_41438_x1470860629}[：表示错误帧事件的发生时间]{lang="EN-US" style="font-family:
-  宋体"}
+·Event time stamp：表示错误帧事件的发生时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Errored frame window]{lang="EN-US"}]{#struct_0_x1112_41438_1356863813}[：表示错误帧事件的检测窗口]{lang="EN-US" style="font-family:
-  宋体"}
+·Errored frame window：表示错误帧事件的检测窗口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Errored frame threshold]{lang="EN-US"}]{#struct_0_x1112_41438_1724567055}[：表示错误帧事件的检测阈值]{lang="EN-US" style="font-family:宋体"}
+·Errored frame threshold：表示错误帧事件的检测阈值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Errored frame]{lang="EN-US"}]{#struct_0_x1112_41438_616414876}[：表示最近一次错误帧事件中错误帧的数量]{style="font-family:宋体"}
+·Errored frame：表示最近一次错误帧事件中错误帧的数量
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Error running total]{lang="EN-US"}]{#struct_0_x1112_41438_1286312208}[：表示错误帧的总数量]{lang="EN-US" style="font-family:
-  宋体"}
+·Error running total：表示错误帧的总数量
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Event running total]{lang="EN-US"}]{#struct_0_x1112_41438_1886359135}[：表示错误帧事件的总数量]{lang="EN-US" style="font-family:
-  宋体"}
+·Event running total：表示错误帧事件的总数量
 
-[[OAM local/remote errored frame period event]{lang="EN-US"}]{#struct_0_x1112_41438_x573028517}
+OAM local/remote errored frame period event
 
-[[本端]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1112_41438_1724632591}[远端产生的错误帧周期事件信息（只有产生了错误帧周期事件才会显示）：]{style="font-family:宋体"}
+本端/远端产生的错误帧周期事件信息（只有产生了错误帧周期事件才会显示）：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Event time stamp]{lang="EN-US"}]{#struct_0_x1112_41438_x969794340}[：表示错误帧周期事件的发生时间]{lang="EN-US" style="font-family:
-  宋体"}
+·Event time stamp：表示错误帧周期事件的发生时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Errored frame period window]{lang="EN-US"}]{#struct_0_x1112_41438_1467282383}[：表示错误帧周期事件的检测窗口]{lang="EN-US" style="font-family:宋体"}
+·Errored frame period window：表示错误帧周期事件的检测窗口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Errored frame period threshold]{lang="EN-US"}]{#struct_0_x1112_41438_x1672528580}[：表示错误帧周期事件的检测阈值]{lang="EN-US" style="font-family:宋体"}
+·Errored frame period threshold：表示错误帧周期事件的检测阈值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Errored frame period]{lang="EN-US"}]{#struct_0_x1112_41438_x357544289}[：表示]{lang="EN-US" style="font-family:
-  宋体"}[最近一次错误帧周期事件中错误帧的]{style="font-family:宋体"}[数量]{lang="EN-US" style="font-family:宋体"}
+·Errored frame period：表示最近一次错误帧周期事件中错误帧的数量
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Error running total]{lang="EN-US"}]{#struct_0_x1112_41438_1724698127}[：表示错误帧周期的总数量]{lang="EN-US" style="font-family:
-  宋体"}
+·Error running total：表示错误帧周期的总数量
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Event running total]{lang="EN-US"}]{#struct_0_x1112_41438_1775687795}[：表示错误帧周期事件的总数量]{lang="EN-US" style="font-family:
-  宋体"}
+·Event running total：表示错误帧周期事件的总数量
 
-[[OAM local/remote errored frame seconds summary event]{lang="EN-US"}]{#struct_0_x1112_41438_178093012}
+OAM local/remote errored frame seconds summary event
 
-[[本端]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1112_41438_x595167668}[远端产生的错误帧秒事件信息（只有产生了错误帧秒事件才会显示）：]{style="font-family:宋体"}
+本端/远端产生的错误帧秒事件信息（只有产生了错误帧秒事件才会显示）：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Event time stamp]{lang="EN-US"}]{#struct_0_x1112_41438_x564553158}[：表示错误帧秒事件的发生时间]{lang="EN-US" style="font-family:
-  宋体"}
+·Event time stamp：表示错误帧秒事件的发生时间
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Errored frame second]{lang="EN-US"}]{#struct_0_x1112_41438_1724239375}[s]{lang="EN-US"}[ window]{lang="EN-US"}[：表示错误帧秒事件的检测窗口]{lang="EN-US" style="font-family:宋体"}
+·Errored frame seconds window：表示错误帧秒事件的检测窗口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Errored frame second]{lang="EN-US"}]{#struct_0_x1112_41438_x194228841}[s]{lang="EN-US"}[ threshold]{lang="EN-US"}[：表示错误帧秒事件的检测阈值]{lang="EN-US" style="font-family:宋体"}
+·Errored frame seconds threshold：表示错误帧秒事件的检测阈值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Errored frame second]{lang="EN-US"}]{#struct_0_x1112_41438_1757315239}[s]{lang="EN-US"}[：表示]{lang="EN-US" style="font-family:宋体"}[最近一次错误帧秒事件中错误帧的]{style="font-family:宋体"}[数量]{lang="EN-US" style="font-family:宋体"}
+·Errored frame seconds：表示最近一次错误帧秒事件中错误帧的数量
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Error running total]{lang="EN-US"}]{#struct_0_x1112_41438_x4530647}[：表示错误帧秒的总数量]{lang="EN-US" style="font-family:
-  宋体"}
+·Error running total：表示错误帧秒的总数量
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Event running total]{lang="EN-US"}]{#struct_0_x1112_41438_1724304911}[：表示错误帧秒事件的总数量]{lang="EN-US" style="font-family:
-  宋体"}
+·Event running total：表示错误帧秒事件的总数量
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1848533397}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset]{lang="EN-US"}**[ **oam**]{lang="EN-US"}]{#struct_0_x1112_41438_16436897}
-
-::: {#-1928468887 .myid}
-[]{#_Toc404795468}[]{#struct_0_x1112_41438_654527882}[]{#_Toc129683613}
+·**reset** **oam**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam enable**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **enable**]{lang="EN-US"}]{#struct_0_x1112_41438_x1451242776}[命令用来使能以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[oam** **enable**]命令用来使能以太网OAM功能。
 
-[**[undo]{lang="EN-US"}**[ **oam** **enable**]{lang="EN-US"}]{#struct_0_x1112_41438_x1696902012}[命令用来关闭以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo** **oam** **enable**]命令用来关闭以太网OAM功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x615980607}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **enable**]{lang="EN-US"}]{#struct_0_x1112_41438_x1521888511}
+**[oam** **enable**]
 
-[**[undo]{lang="EN-US"}**[ **oam** **enable**]{lang="EN-US"}]{#struct_0_x1112_41438_1126576807}
+**[undo** **oam** **enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1724370447}
+【缺省情况】
 
-[[以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_x182963194}[功能处于关闭状态。]{style="font-family:宋体"}
+以太网OAM功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1672466621}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1112_41438_x1424887770}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1674491388}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x771440657}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x332987773}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1561033438}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_x63790427}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上使能以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上使能以太网OAM功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_1724435983}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] oam enable]{lang="EN-US"}
-:::
-
-::: {#-576625541 .myid}
-[]{#_Toc404795469}[]{#struct_0_x1112_41438_271766930}
+Sysname-GigabitEthernet1/0/1 oam enable
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam errored-frame threshold**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **errored-frame** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_893069602}[命令用来在接口上配置错误帧事件的检测阈值。]{style="font-family:宋体"}
+**[oam** **errored-frame** **threshold**]命令用来在接口上配置错误帧事件的检测阈值。
 
-[**[undo]{lang="EN-US"}**[ **oam** **errored-frame** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_x382646994}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **oam** **errored-frame** **threshold**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x390451607}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **errored-frame** **threshold** *threshold-value*]{lang="EN-US"}]{#struct_0_x1112_41438_x913329782}
+**[oam** **errored-frame** **threshold** *threshold-value*]
 
-[**[undo]{lang="EN-US"}**[ **oam** **errored-frame** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_2066416257}
+**[undo** **oam** **errored-frame** **threshold**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1015413906}
+【缺省情况】
 
-[[接口采用全局值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1200811626}
+接口采用全局值。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1725025807}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1112_41438_x1276389874}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1594102126}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x1759990321}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x919626793}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1675934748}
+【参数】
 
-[*[threshold-value]{lang="EN-US"}*]{#struct_0_x1112_41438_1938622031}[：表示错误帧事件的检测阈值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[，单位为次。]{style="font-family:宋体"}
+*[threshold-value*]：表示错误帧事件的检测阈值，取值范围为0～4294967295，单位为次。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x964493812}
+【使用指导】
 
-[[接口值只对当前接口有效，但配置优先级高于全局值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_1810595604}
+接口值只对当前接口有效，但配置优先级高于全局值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x272932269}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_1725091343}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置错误帧事件的检测阈值为]{style="font-family:宋体"}[100]{lang="EN-US"}[次。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置错误帧事件的检测阈值为100次。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_637118590}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] oam errored-frame threshold 100]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 oam errored-frame threshold 100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_346256626}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display oam configuration]{lang="EN-US"}**]{#struct_0_x1112_41438_x1833171121}
+·**display oam configuration**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display oam link-event]{lang="EN-US"}**]{#struct_0_x1112_41438_791277383}
+·**display oam link-event**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **global** **errored-frame** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_182553864}
-:::
-
-::: {#2011015490 .myid}
-[]{#_Toc404795470}[]{#struct_0_x1112_41438_x1803495407}[]{#_Toc129683614}
+·**oam** **global** **errored-frame** **threshold**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam errored-frame window**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **errored-frame** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_55539514}[命令用来在接口上配置错误帧事件的检测窗口。]{style="font-family:宋体"}
+**[oam** **errored-frame** **window**]命令用来在接口上配置错误帧事件的检测窗口。
 
-[**[undo]{lang="EN-US"}**[ **oam** **errored-frame** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_1724501516}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **oam** **errored-frame** **window**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_606906326}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **errored-frame** **window** *window-value*]{lang="EN-US"}]{#struct_0_x1112_41438_755930134}
+**[oam** **errored-frame** **window** *window-value*]
 
-[**[undo]{lang="EN-US"}**[ **oam** **errored-frame** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_1490654866}
+**[undo** **oam** **errored-frame** **window**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x464966959}
+【缺省情况】
 
-[[接口采用全局值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1135878840}
+接口采用全局值。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x482880046}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1112_41438_1967080810}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_2027246539}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_780221926}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_1724567052}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_616480412}
+【参数】
 
-[*[window-value]{lang="EN-US"}*]{#struct_0_x1112_41438_x700511811}[：表示错误帧事件的检测窗口，取值范围为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[600]{lang="EN-US"}[，步长为]{style="font-family:宋体"}[10]{lang="EN-US"}[，单位为]{style="font-family:宋体"}[100]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+*[window-value*]：表示错误帧事件的检测窗口，取值范围为10～600，步长为10，单位为100毫秒。
 
-[[【使用指导】]{style="font-family:
-黑体"}]{#struct_0_x1112_41438_9659868}
+【使用指导】
 
-[[接口值只对当前接口有效，但配置优先级高于全局值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1388332260}
+接口值只对当前接口有效，但配置优先级高于全局值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_950134053}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_940458513}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置错误帧事件的检测窗口为]{style="font-family:宋体"}[2000]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置错误帧事件的检测窗口为2000毫秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_x1512601483}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] oam errored-frame window 20]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 oam errored-frame window 20
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_44060505}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **configuration**]{lang="EN-US"}]{#struct_0_x1112_41438_1724632588}
+·**display** **oam** **configuration**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **link-event**]{lang="EN-US"}]{#struct_0_x1112_41438_x969204517}
+·**display** **oam** **link-event**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **global** **errored-frame** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_301134605}
-:::
-
-::: {#-1793419803 .myid}
-[]{#_Toc404795471}[]{#struct_0_x1112_41438_x1601444491}
+·**oam** **global** **errored-frame** **window**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam errored-frame-period threshold**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **errored-frame-period** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_x1032424065}[命令用来在接口上配置错误帧周期事件的检测阈值。]{style="font-family:宋体"}
+**[oam** **errored-frame-period** **threshold**]命令用来在接口上配置错误帧周期事件的检测阈值。
 
-[**[undo]{lang="EN-US"}**[ **oam** **errored-frame-period** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_x697308212}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **oam** **errored-frame-period** **threshold**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x561544950}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **errored-frame-period** **threshold** *threshold-value*]{lang="EN-US"}]{#struct_0_x1112_41438_1657533331}
+**[oam** **errored-frame-period** **threshold** *threshold-value*]
 
-[**[undo]{lang="EN-US"}**[ **oam** **errored-frame-period** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_x962345315}
+**[undo** **oam** **errored-frame-period** **threshold**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1724698124}
+【缺省情况】
 
-[[接口采用全局值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_1775884403}
+接口采用全局值。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x594082198}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1112_41438_209796099}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x220312870}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x1339102668}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x771878549}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_875126310}
+【参数】
 
-[*[threshold-value]{lang="EN-US"}*]{#struct_0_x1112_41438_x1611603702}[：表示错误帧周期事件的检测阈值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[，单位为次。]{style="font-family:宋体"}
+*[threshold-value*]：表示错误帧周期事件的检测阈值，取值范围为0～4294967295，单位为次。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1724239372}
+【使用指导】
 
-[[接口值只对当前接口有效，但配置优先级高于全局值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_x194294377}
+接口值只对当前接口有效，但配置优先级高于全局值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x692848664}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_x1872330290}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置错误帧周期事件的检测阈值为]{style="font-family:宋体"}[100]{lang="EN-US"}[次。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置错误帧周期事件的检测阈值为100次。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_x1150786953}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] oam errored-frame-period threshold 100]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 oam errored-frame-period threshold 100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1484651747}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **configuration**]{lang="EN-US"}]{#struct_0_x1112_41438_x874648633}
+·**display** **oam** **configuration**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **link-event**]{lang="EN-US"}]{#struct_0_x1112_41438_961895910}
+·**display** **oam** **link-event**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **global** **errored-frame-period** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_1724304908}
-:::
-
-::: {#1804190451 .myid}
-[]{#_Toc404795472}[]{#struct_0_x1112_41438_1848992150}
+·**oam** **global** **errored-frame-period** **threshold**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam errored-frame-period window**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **errored-frame-period** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_1986287998}[命令用来在接口上配置错误帧周期事件的检测窗口。]{style="font-family:宋体"}
+**[oam** **errored-frame-period** **window**]命令用来在接口上配置错误帧周期事件的检测窗口。
 
-[**[undo]{lang="EN-US"}**[ **oam** **errored-frame-period** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_x774384260}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **oam** **errored-frame-period** **window**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1769657507}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **errored-frame-period** **window** *window-value*]{lang="EN-US"}]{#struct_0_x1112_41438_x1039367226}
+**[oam** **errored-frame-period** **window** *window-value*]
 
-[**[undo]{lang="EN-US"}**[ **oam** **errored-frame-period** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_356447050}
+**[undo** **oam** **errored-frame-period** **window**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1758874573}
+【缺省情况】
 
-[[接口采用全局值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_188502435}
+接口采用全局值。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1724370444}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1112_41438_x183028730}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_542547759}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_201764540}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_1166104247}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1909270045}
+【参数】
 
-[*[window-value]{lang="EN-US"}*]{#struct_0_x1112_41438_1925129264}[：表示错误帧周期事件的检测窗口，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，单位为]{style="font-family:宋体"}[10000]{lang="EN-US"}[次。]{style="font-family:宋体"}
+*[window-value*]：表示错误帧周期事件的检测窗口，取值范围为1～65535，单位为10000次。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x45986506}
+【使用指导】
 
-[[接口值只对当前接口有效，但配置优先级高于全局值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_1335471108}
+接口值只对当前接口有效，但配置优先级高于全局值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1724435980}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_271701394}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置错误帧周期事件的检测窗口为]{style="font-family:宋体"}[20000000]{lang="EN-US"}[次。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置错误帧周期事件的检测窗口为20000000次。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_1296538318}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] oam errored-frame-period window 2000]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 oam errored-frame-period window 2000
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_2044900147}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **configuration**]{lang="EN-US"}]{#struct_0_x1112_41438_1764177416}
+·**display** **oam** **configuration**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **link-event**]{lang="EN-US"}]{#struct_0_x1112_41438_1174766568}
+·**display** **oam** **link-event**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **global** **errored-frame-period** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_x1765740466}
-:::
-
-::: {#-281529413 .myid}
-[]{#_Toc404795473}[]{#struct_0_x1112_41438_x413475458}
+·**oam** **global** **errored-frame-period** **window**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam errored-frame-seconds threshold**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **errored-frame-seconds** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_1725025804}[命令用来在接口上配置错误帧秒事件的检测阈值。]{style="font-family:宋体"}
+**[oam** **errored-frame-seconds** **threshold**]命令用来在接口上配置错误帧秒事件的检测阈值。
 
-[**[undo]{lang="EN-US"}**[ **oam** **errored-frame-seconds** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_x1276324338}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **oam** **errored-frame-seconds** **threshold**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1936224959}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **errored-frame-seconds** **threshold** *threshold-value*]{lang="EN-US"}]{#struct_0_x1112_41438_542631404}
+**[oam** **errored-frame-seconds** **threshold** *threshold-value*]
 
-[**[undo]{lang="EN-US"}**[ **oam** **errored-frame-seconds** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_1658474647}
+**[undo** **oam** **errored-frame-seconds** **threshold**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_2000310812}
+【缺省情况】
 
-[[接口采用全局值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_x2076698939}
+接口采用全局值。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_676423831}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1112_41438_95588651}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1725091340}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_637315198}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x1687772530}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1429575186}
+【参数】
 
-[*[threshold-value]{lang="EN-US"}*]{#struct_0_x1112_41438_x860760716}[：表示错误帧秒事件的检测阈值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[900]{lang="EN-US"}[，单位为次。]{style="font-family:宋体"}
+*[threshold-value*]：表示错误帧秒事件的检测阈值，取值范围为0～900，单位为次。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_283648360}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在数量上，错误帧秒事件的检测阈值不应大于其检测窗口值（换算成秒），否则将不会产生错误帧秒事件。]{style="font-family:宋体"}]{#struct_0_x1112_41438_1376353721}
+·在数量上，错误帧秒事件的检测阈值不应大于其检测窗口值（换算成秒），否则将不会产生错误帧秒事件。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[接口值只对当前接口有效，但配置优先级高于全局值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_x2010797625}
+·接口值只对当前接口有效，但配置优先级高于全局值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x2128368017}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_1724501517}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置错误帧秒事件的检测阈值为]{style="font-family:宋体"}[100]{lang="EN-US"}[次。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置错误帧秒事件的检测阈值为100次。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_606971862}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] oam errored-frame-seconds threshold 100]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 oam errored-frame-seconds threshold 100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_53448810}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **configuration**]{lang="EN-US"}]{#struct_0_x1112_41438_1740679208}
+·**display** **oam** **configuration**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **link-event**]{lang="EN-US"}]{#struct_0_x1112_41438_936926470}
+·**display** **oam** **link-event**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **errored-frame-seconds** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_46285826}
+·**oam** **errored-frame-seconds** **window**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **global** **errored-frame-seconds** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_173477049}
-:::
-
-::: {#-107589351 .myid}
-[]{#_Toc404795474}[]{#struct_0_x1112_41438_1120146624}
+·**oam** **global** **errored-frame-seconds** **threshold**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam errored-frame-seconds window**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **errored-frame-seconds** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_1724567053}[命令用来在接口上配置错误帧秒事件的检测窗口。]{style="font-family:宋体"}
+**[oam** **errored-frame-seconds** **window**]命令用来在接口上配置错误帧秒事件的检测窗口。
 
-[**[undo]{lang="EN-US"}**[ **oam** **errored-frame-seconds** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_616545948}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **oam** **errored-frame-seconds** **window**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1454242418}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **errored-frame-seconds** **window** *window-value*]{lang="EN-US"}]{#struct_0_x1112_41438_x2147109494}
+**[oam** **errored-frame-seconds** **window** *window-value*]
 
-[**[undo]{lang="EN-US"}**[ **oam** **errored-frame-seconds** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_x1130113823}
+**[undo** **oam** **errored-frame-seconds** **window**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1869691298}
+【缺省情况】
 
-[[接口采用全局值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_127846444}
+接口采用全局值。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1571289365}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1112_41438_x667578246}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1724632589}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x969270053}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_1078272157}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_504110722}
+【参数】
 
-[*[window-value]{lang="EN-US"}*]{#struct_0_x1112_41438_x706417750}[：表示错误帧秒事件的检测窗口，取值范围为]{style="font-family:宋体"}[100]{lang="EN-US"}[～]{style="font-family:宋体"}[9000]{lang="EN-US"}[，步长为]{style="font-family:宋体"}[10]{lang="EN-US"}[，单位为]{style="font-family:宋体"}[100]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+*[window-value*]：表示错误帧秒事件的检测窗口，取值范围为100～9000，步长为10，单位为100毫秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1599058121}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在数量上，错误帧秒事件的检测阈值不应大于其检测窗口值（换算成秒），否则将不会产生错误帧秒事件。]{style="font-family:宋体"}]{#struct_0_x1112_41438_1401704254}
+·在数量上，错误帧秒事件的检测阈值不应大于其检测窗口值（换算成秒），否则将不会产生错误帧秒事件。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[接口值只对当前接口有效，但配置优先级高于全局值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1634208262}
+·接口值只对当前接口有效，但配置优先级高于全局值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1995366785}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_1724698125}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置错误帧秒事件的检测窗口为]{style="font-family:宋体"}[10000]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置错误帧秒事件的检测窗口为10000毫秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_1775818867}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] oam errored-frame-seconds window 100]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 oam errored-frame-seconds window 100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1298755796}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **configuration**]{lang="EN-US"}]{#struct_0_x1112_41438_766694243}
+·**display** **oam** **configuration**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **link-event**]{lang="EN-US"}]{#struct_0_x1112_41438_915678305}
+·**display** **oam** **link-event**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **errored-frame-seconds** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_1170269420}
+·**oam** **errored-frame-seconds** **threshold**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **global** **errored-frame-seconds** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_142613460}
-:::
-
-::: {#1956788938 .myid}
-[]{#_Toc404795475}[]{#struct_0_x1112_41438_x1493802667}
+·**oam** **global** **errored-frame-seconds** **window**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam errored-symbol-period threshold**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **errored-symbol-period** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_1724239373}[命令用来在接口上配置错误信号事件的检测阈值。]{style="font-family:宋体"}
+**[oam** **errored-symbol-period** **threshold**]命令用来在接口上配置错误信号事件的检测阈值。
 
-[**[undo]{lang="EN-US"}**[ **oam** **errored-symbol-period** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_x194359913}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **oam** **errored-symbol-period** **threshold**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1347750994}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **errored-symbol-period** **threshold** *threshold-value*]{lang="EN-US"}]{#struct_0_x1112_41438_x682015890}
+**[oam** **errored-symbol-period** **threshold** *threshold-value*]
 
-[**[undo]{lang="EN-US"}**[ **oam** **errored-symbol-period** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_1076464389}
+**[undo** **oam** **errored-symbol-period** **threshold**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1453983479}
+【缺省情况】
 
-[[接口采用全局值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_2103952924}
+接口采用全局值。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x454546200}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1112_41438_876820168}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1724304909}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_1849057686}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_427031751}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_2101307115}
+【参数】
 
-[*[threshold-value]{lang="EN-US"}*]{#struct_0_x1112_41438_1582134422}[：表示错误信号事件的检测阈值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[，单位为次。]{style="font-family:宋体"}
+*[threshold-value*]：表示错误信号事件的检测阈值，取值范围为0～4294967295，单位为次。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x954906176}
+【使用指导】
 
-[[接口值只对当前接口有效，但配置优先级高于全局值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_x134531257}
+接口值只对当前接口有效，但配置优先级高于全局值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1983737310}
+【举例】
 
-[]{#_Toc129683622}[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_228316387}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置错误信号事件的检测阈值为]{style="font-family:宋体"}[100]{lang="EN-US"}[次。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置错误信号事件的检测阈值为100次。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_1724370445}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] oam errored-symbol-period threshold 100]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 oam errored-symbol-period threshold 100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x183094266}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **configuration**]{lang="EN-US"}]{#struct_0_x1112_41438_475797104}
+·**display** **oam** **configuration**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **link-event**]{lang="EN-US"}]{#struct_0_x1112_41438_x1603954139}
+·**display** **oam** **link-event**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **global** **errored-symbol-period** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_1754832655}
-:::
-
-::: {#1836161897 .myid}
-[]{#_Toc404795476}[]{#struct_0_x1112_41438_x699516201}
+·**oam** **global** **errored-symbol-period** **threshold**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam errored-symbol-period window**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **errored-symbol-period** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_x1976824005}[命令用来在接口上配置错误信号事件的检测窗口。]{style="font-family:宋体"}
+**[oam** **errored-symbol-period** **window**]命令用来在接口上配置错误信号事件的检测窗口。
 
-[**[undo]{lang="EN-US"}**[ **oam** **errored-symbol-period** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_1682654134}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **oam** **errored-symbol-period** **window**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1724435981}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **errored-symbol-period** **window** *window-value*]{lang="EN-US"}]{#struct_0_x1112_41438_271635858}
+**[oam** **errored-symbol-period** **window** *window-value*]
 
-[**[undo]{lang="EN-US"}**[ **oam** **errored-symbol-period** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_74489056}
+**[undo** **oam** **errored-symbol-period** **window**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x863513205}
+【缺省情况】
 
-[[接口采用全局值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_x624656650}
+接口采用全局值。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1494280088}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1112_41438_775641807}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_710127481}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_1725025805}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x1276258802}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1538333235}
+【参数】
 
-[*[window-value]{lang="EN-US"}*]{#struct_0_x1112_41438_x568423979}[：表示错误信号事件的检测窗口，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，单位为]{style="font-family:宋体"}[1000000]{lang="EN-US"}[次。]{style="font-family:宋体"}
+*[window-value*]：表示错误信号事件的检测窗口，取值范围为1～65535，单位为1000000次。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1312653541}
+【使用指导】
 
-[[接口值只对当前接口有效，但配置优先级高于全局值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_x235454597}
+接口值只对当前接口有效，但配置优先级高于全局值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_2037387310}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_x271472091}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置错误信号事件的检测值为]{style="font-family:宋体"}[200000000]{lang="EN-US"}[次。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置错误信号事件的检测值为200000000次。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_1725091341}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] oam errored-symbol-period window 200]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 oam errored-symbol-period window 200
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_637249662}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **configuration**]{lang="EN-US"}]{#struct_0_x1112_41438_x1384721758}
+·**display** **oam** **configuration**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **link-event**]{lang="EN-US"}]{#struct_0_x1112_41438_1487085831}
+·**display** **oam** **link-event**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **global** **errored-symbol-period** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_1280884346}
-:::
-
-::: {#-463138958 .myid}
-[]{#_Toc404795477}[]{#struct_0_x1112_41438_1836075226}
+·**oam** **global** **errored-symbol-period** **window**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam global errored-frame threshold**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **global** **errored-frame** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_1392889366}[命令用来全局配置错误帧事件的检测阈值。]{style="font-family:宋体"}
+**[oam** **global** **errored-frame** **threshold**]命令用来全局配置错误帧事件的检测阈值。
 
-[**[undo]{lang="EN-US"}**[ **oam** **global** **errored-frame** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_x1448001992}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **oam** **global** **errored-frame** **threshold**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x312498752}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **global** **errored-frame** **threshold** *threshold-value*]{lang="EN-US"}]{#struct_0_x1112_41438_x1004381835}
+**[oam** **global** **errored-frame** **threshold** *threshold-value*]
 
-[**[undo]{lang="EN-US"}**[ **oam** **global** **errored-frame** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_1889048428}
+**[undo** **oam** **global** **errored-frame** **threshold**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x733293924}
+【缺省情况】
 
-[[错误帧事件检测阈值的全局值为]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_x1112_41438_x237939063}[次。]{style="font-family:宋体"}
+错误帧事件检测阈值的全局值为1次。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x449375441}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1112_41438_430813984}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_813311989}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_1705860871}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x1412422936}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1004316299}
+【参数】
 
-[*[threshold-value]{lang="EN-US"}*]{#struct_0_x1112_41438_1918559939}[：表示错误帧事件的检测阈值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[，单位为次。]{style="font-family:宋体"}
+*[threshold-value*]：表示错误帧事件的检测阈值，取值范围为0～4294967295，单位为次。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x359123778}
+【使用指导】
 
-[[全局值对所有接口都有效，但配置优先级低于接口值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_x294742992}
+全局值对所有接口都有效，但配置优先级低于接口值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x951436005}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_2076653287}[全局配置错误帧事件的检测阈值为]{style="font-family:宋体"}[100]{lang="EN-US"}[次。]{style="font-family:宋体"}
+\# 全局配置错误帧事件的检测阈值为100次。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_x479093413}
+\<Sysname\> system-view
 
-[\[Sysname\] oam global errored-frame threshold 100]{lang="EN-US"}
+Sysname oam global errored-frame threshold 100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x538413515}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **configuration**]{lang="EN-US"}]{#struct_0_x1112_41438_1383552814}
+·**display** **oam** **configuration**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **link-event**]{lang="EN-US"}]{#struct_0_x1112_41438_x1004250763}
+·**display** **oam** **link-event**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **errored-frame** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_x961644380}
-:::
-
-::: {#649023895 .myid}
-[]{#_Toc129683623}[]{#_Toc404795478}[]{#struct_0_x1112_41438_39973882}
+·**oam** **errored-frame** **threshold**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam global errored-frame window**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **global** **errored-frame** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_x526539819}[命令用来全局配置错误帧事件的检测窗口。]{style="font-family:宋体"}
+**[oam** **global** **errored-frame** **window**]命令用来全局配置错误帧事件的检测窗口。
 
-[**[undo]{lang="EN-US"}**[ **oam** **global** **errored-frame** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_1034492586}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **oam** **global** **errored-frame** **window**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_963444181}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **global** **errored-frame** **window** *window-value*]{lang="EN-US"}]{#struct_0_x1112_41438_625786276}
+**[oam** **global** **errored-frame** **window** *window-value*]
 
-[**[undo]{lang="EN-US"}**[ **oam** **global** **errored-frame** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_1277501276}
+**[undo** **oam** **global** **errored-frame** **window**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1754677308}
+【缺省情况】
 
-[[错误帧事件检测窗口的全局值为]{style="font-family:宋体"}[1000]{lang="EN-US"}]{#struct_0_x1112_41438_x1004185227}[毫秒。]{style="font-family:宋体"}
+错误帧事件检测窗口的全局值为1000毫秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x711556964}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1813857351}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_519175999}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_1214852822}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x1551623447}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1819643969}
+【参数】
 
-[*[window-value]{lang="EN-US"}*]{#struct_0_x1112_41438_x2113873294}[：表示错误帧事件的检测窗口，取值范围为]{style="font-family:宋体"}[10]{lang="EN-US"}[～]{style="font-family:宋体"}[600]{lang="EN-US"}[，步长为]{style="font-family:宋体"}[10]{lang="EN-US"}[，单位为]{style="font-family:宋体"}[100]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+*[window-value*]：表示错误帧事件的检测窗口，取值范围为10～600，步长为10，单位为100毫秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_101909278}
+【使用指导】
 
-[[全局值对所有接口都有效，但配置优先级低于接口值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1004643979}
+全局值对所有接口都有效，但配置优先级低于接口值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_394241299}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_x909159783}[全局配置错误帧事件的检测窗口配置为]{style="font-family:宋体"}[2000]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+\# 全局配置错误帧事件的检测窗口配置为2000毫秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_x2009658806}
+\<Sysname\> system-view
 
-[\[Sysname\] oam global errored-frame window 20]{lang="EN-US"}
+Sysname oam global errored-frame window 20
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x235284771}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **configuration**]{lang="EN-US"}]{#struct_0_x1112_41438_x1881600130}
+·**display** **oam** **configuration**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **link-event**]{lang="EN-US"}]{#struct_0_x1112_41438_1281891513}
+·**display** **oam** **link-event**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **errored-frame** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_x2038764796}
-:::
-
-::: {#-524286167 .myid}
-[]{#_Toc404795479}[]{#struct_0_x1112_41438_x1004578443}
+·**oam** **errored-frame** **window**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam global errored-frame-period threshold**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **global** **errored-frame-period** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_x1597031655}[命令用来全局配置错误帧周期事件的检测阈值。]{style="font-family:宋体"}
+**[oam** **global** **errored-frame-period** **threshold**]命令用来全局配置错误帧周期事件的检测阈值。
 
-[**[undo]{lang="EN-US"}**[ **oam** **global** **errored-frame-period** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_x750461}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **oam** **global** **errored-frame-period** **threshold**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_751607601}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **global** **errored-frame-period** **threshold** *threshold-value*]{lang="EN-US"}]{#struct_0_x1112_41438_x2057906987}
+**[oam** **global** **errored-frame-period** **threshold** *threshold-value*]
 
-[**[undo]{lang="EN-US"}**[ **oam** **global** **errored-frame-period** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_1429326931}
+**[undo** **oam** **global** **errored-frame-period** **threshold**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x904312112}
+【缺省情况】
 
-[[错误帧周期事件检测阈值的全局值为]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_x1112_41438_1453787084}[次。]{style="font-family:宋体"}
+错误帧周期事件检测阈值的全局值为1次。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x985992085}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1004512907}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1820952142}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x1127998477}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x1035294695}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1419226936}
+【参数】
 
-[*[threshold-value]{lang="EN-US"}*]{#struct_0_x1112_41438_x1287459174}[：表示错误帧周期事件的检测阈值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[，单位为次。]{style="font-family:宋体"}
+*[threshold-value*]：表示错误帧周期事件的检测阈值，取值范围为0～4294967295，单位为次。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1923213776}
+【使用指导】
 
-[[全局值对所有接口都有效，但配置优先级低于接口值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1847488012}
+全局值对所有接口都有效，但配置优先级低于接口值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1837024956}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_x1004447371}[全局配置错误帧周期事件的检测阈值为]{style="font-family:宋体"}[100]{lang="EN-US"}[次。]{style="font-family:宋体"}
+\# 全局配置错误帧周期事件的检测阈值为100次。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_1280920037}
+\<Sysname\> system-view
 
-[\[Sysname\] oam global errored-frame-period threshold 100]{lang="EN-US"}
+Sysname oam global errored-frame-period threshold 100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1870427722}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **configuration**]{lang="EN-US"}]{#struct_0_x1112_41438_x1941013620}
+·**display** **oam** **configuration**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **link-event**]{lang="EN-US"}]{#struct_0_x1112_41438_283506322}
+·**display** **oam** **link-event**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **errored-frame-period** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_1097628983}
-:::
-
-::: {#1647370698 .myid}
-[]{#_Toc404795480}[]{#struct_0_x1112_41438_x564677733}
+·**oam** **errored-frame-period** **threshold**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam global errored-frame-period window**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **global** **errored-frame-period** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_x997371455}[命令用来全局配置错误帧周期事件的检测窗口。]{style="font-family:宋体"}
+**[oam** **global** **errored-frame-period** **window**]命令用来全局配置错误帧周期事件的检测窗口。
 
-[**[undo]{lang="EN-US"}**[ **oam** **global** **errored-frame-period** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_x1003857547}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **oam** **global** **errored-frame-period** **window**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_2012170927}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **global** **errored-frame-period** **window** *window-value*]{lang="EN-US"}]{#struct_0_x1112_41438_1820260417}
+**[oam** **global** **errored-frame-period** **window** *window-value*]
 
-[**[undo]{lang="EN-US"}**[ **oam** **global** **errored-frame-period** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_x1108069343}
+**[undo** **oam** **global** **errored-frame-period** **window**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x48032390}
+【缺省情况】
 
-[[错误帧周期事件检测窗口的全局值为]{style="font-family:宋体"}[10000000]{lang="EN-US"}]{#struct_0_x1112_41438_x203763730}[次。]{style="font-family:宋体"}
+错误帧周期事件检测窗口的全局值为10000000次。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x30966547}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1112_41438_1283471532}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x228463734}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x1003792011}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x110657184}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1306019714}
+【参数】
 
-[*[window-value]{lang="EN-US"}*]{#struct_0_x1112_41438_x2120401572}[：表示错误帧周期事件的检测窗口，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，单位为]{style="font-family:宋体"}[10000]{lang="EN-US"}[次。]{style="font-family:宋体"}
+*[window-value*]：表示错误帧周期事件的检测窗口，取值范围为1～65535，单位为10000次。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1291600625}
+【使用指导】
 
-[[全局值对所有接口都有效，但配置优先级低于接口值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_1528194489}
+全局值对所有接口都有效，但配置优先级低于接口值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1260937548}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_1962902246}[全局配置错误帧周期事件的检测窗口为]{style="font-family:宋体"}[20000000]{lang="EN-US"}[次。]{style="font-family:宋体"}
+\# 全局配置错误帧周期事件的检测窗口为20000000次。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_x1004381834}
+\<Sysname\> system-view
 
-[\[Sysname\] oam global errored-frame-period window 2000]{lang="EN-US"}
+Sysname oam global errored-frame-period window 2000
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_322964487}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **configuration**]{lang="EN-US"}]{#struct_0_x1112_41438_406870329}
+·**display** **oam** **configuration**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **link-event**]{lang="EN-US"}]{#struct_0_x1112_41438_x779772682}
+·**display** **oam** **link-event**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **errored-frame-period** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_x2072646689}
-:::
-
-::: {#1044132000 .myid}
-[]{#_Toc129683624}[]{#_Toc404795481}[]{#struct_0_x1112_41438_1570374197}
+·**oam** **errored-frame-period** **window**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam global errored-frame-seconds threshold**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **global** **errored-frame-seconds** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_x207747188}[命令用来全局配置错误帧秒事件的检测阈值。]{style="font-family:宋体"}
+**[oam** **global** **errored-frame-seconds** **threshold**]命令用来全局配置错误帧秒事件的检测阈值。
 
-[**[undo]{lang="EN-US"}**[ **oam** **global** **errored-frame-seconds** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_x1850912930}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **oam** **global** **errored-frame-seconds** **threshold**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1968672220}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **global** **errored-frame-seconds** **threshold** *threshold-value*]{lang="EN-US"}]{#struct_0_x1112_41438_x1004316298}
+**[oam** **global** **errored-frame-seconds** **threshold** *threshold-value*]
 
-[**[undo]{lang="EN-US"}**[ **oam** **global** **errored-frame-seconds** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_x810323416}
+**[undo** **oam** **global** **errored-frame-seconds** **threshold**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_888632428}
+【缺省情况】
 
-[[错误帧秒事件检测阈值的全局值为]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_x1112_41438_1719362512}[次。]{style="font-family:宋体"}
+错误帧秒事件检测阈值的全局值为1次。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1979573232}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1224814107}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x6681536}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x1956405163}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_1387347169}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1004250762}
+【参数】
 
-[*[threshold-value]{lang="EN-US"}*]{#struct_0_x1112_41438_604439561}[：表示错误帧秒事件的检测阈值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[900]{lang="EN-US"}[，单位为次。]{style="font-family:宋体"}
+*[threshold-value*]：表示错误帧秒事件的检测阈值，取值范围为0～900，单位为次。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_192792540}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在数量上，错误帧秒事件的检测阈值不应大于其检测窗口值（换算成秒），否则将不会产生错误帧秒事件。]{style="font-family:宋体"}]{#struct_0_x1112_41438_691328232}
+·在数量上，错误帧秒事件的检测阈值不应大于其检测窗口值（换算成秒），否则将不会产生错误帧秒事件。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[全局值对所有接口都有效，但配置优先级低于接口值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1767375322}
+·全局值对所有接口都有效，但配置优先级低于接口值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x126281182}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_520910153}[全局配置错误帧秒事件的检测阈值配置为]{style="font-family:宋体"}[100]{lang="EN-US"}[次。]{style="font-family:宋体"}
+\# 全局配置错误帧秒事件的检测阈值配置为100次。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_1119651681}
+\<Sysname\> system-view
 
-[\[Sysname\] oam global errored-frame-seconds threshold 100]{lang="EN-US"}
+Sysname oam global errored-frame-seconds threshold 100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x392130480}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **configuration**]{lang="EN-US"}]{#struct_0_x1112_41438_x1004185226}
+·**display** **oam** **configuration**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **link-event**]{lang="EN-US"}]{#struct_0_x1112_41438_2017326391}
+·**display** **oam** **link-event**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **errored-frame-seconds** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_783278398}
+·**oam** **errored-frame-seconds** **threshold**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **global** **errored-frame-seconds** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_503082851}
-:::
-
-::: {#963476194 .myid}
-[]{#_Toc404795482}[]{#struct_0_x1112_41438_x1896044666}
+·**oam** **global** **errored-frame-seconds** **window**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam global errored-frame-seconds window**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **global** **errored-frame-seconds** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_x871995987}[命令用来全局配置错误帧秒事件的检测窗口。]{style="font-family:宋体"}
+**[oam** **global** **errored-frame-seconds** **window**]命令用来全局配置错误帧秒事件的检测窗口。
 
-[**[undo]{lang="EN-US"}**[ **oam** **global** **errored-frame-seconds** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_1238261949}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **oam** **global** **errored-frame-seconds** **window**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1424842554}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **global** **errored-frame-seconds** **window** *window-value*]{lang="EN-US"}]{#struct_0_x1112_41438_661506474}
+**[oam** **global** **errored-frame-seconds** **window** *window-value*]
 
-[**[undo]{lang="EN-US"}**[ **oam** **global** **errored-frame-seconds** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_x1004643978}
+**[undo** **oam** **global** **errored-frame-seconds** **window**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1171842642}
+【缺省情况】
 
-[[错误帧秒事件检测窗口的全局值为]{style="font-family:宋体"}[60000]{lang="EN-US"}]{#struct_0_x1112_41438_1795117558}[毫秒。]{style="font-family:宋体"}
+错误帧秒事件检测窗口的全局值为60000毫秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_848416043}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1270247141}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1891142226}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x1681693468}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_765091305}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1004578442}
+【参数】
 
-[*[window-value]{lang="EN-US"}*]{#struct_0_x1112_41438_x30947714}[：表示错误帧秒事件的检测窗口，取值范围为]{style="font-family:宋体"}[100]{lang="EN-US"}[～]{style="font-family:宋体"}[9000]{lang="EN-US"}[，步长为]{style="font-family:宋体"}[10]{lang="EN-US"}[，单位为]{style="font-family:宋体"}[100]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+*[window-value*]：表示错误帧秒事件的检测窗口，取值范围为100～9000，步长为10，单位为100毫秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1455468745}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在数量上，错误帧秒事件的检测阈值不应大于其检测窗口值（换算成秒），否则将不会产生错误帧秒事件。]{style="font-family:宋体"}]{#struct_0_x1112_41438_x492133685}
+·在数量上，错误帧秒事件的检测阈值不应大于其检测窗口值（换算成秒），否则将不会产生错误帧秒事件。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[全局值对所有接口都有效，但配置优先级低于接口值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_x985544759}
+·全局值对所有接口都有效，但配置优先级低于接口值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_445978428}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_130104831}[全局配置错误帧秒事件的检测窗口为]{style="font-family:宋体"}[10000]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+\# 全局配置错误帧秒事件的检测窗口为10000毫秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_x1708537663}
+\<Sysname\> system-view
 
-[\[Sysname\] oam global errored-frame-seconds window 100]{lang="EN-US"}
+Sysname oam global errored-frame-seconds window 100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x683378904}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **configuration**]{lang="EN-US"}]{#struct_0_x1112_41438_x1004512906}
+·**display** **oam** **configuration**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **link-event**]{lang="EN-US"}]{#struct_0_x1112_41438_x907931213}
+·**display** **oam** **link-event**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **errored-frame-seconds** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_x614701469}
+·**oam** **errored-frame-seconds** **window**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **global** **errored-frame-seconds** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_x1097900506}
-:::
-
-::: {#-884061978 .myid}
-[]{#_Toc404795483}[]{#struct_0_x1112_41438_1832236413}
+·**oam** **global** **errored-frame-seconds** **threshold**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam global errored-symbol-period threshold**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **global** **errored-symbol-period** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_x686085082}[命令用来全局配置错误信号事件的检测阈值。]{style="font-family:宋体"}
+**[oam** **global** **errored-symbol-period** **threshold**]命令用来全局配置错误信号事件的检测阈值。
 
-[**[undo]{lang="EN-US"}**[ **oam** **global** **errored-symbol-period** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_x1175024892}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **oam** **global** **errored-symbol-period** **threshold**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_957084914}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **global** **errored-symbol-period** **threshold** *threshold-value*]{lang="EN-US"}]{#struct_0_x1112_41438_x1324664281}
+**[oam** **global** **errored-symbol-period** **threshold** *threshold-value*]
 
-[**[undo]{lang="EN-US"}**[ **oam** **global** **errored-symbol-period** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_x1004447370}
+**[undo** **oam** **global** **errored-symbol-period** **threshold**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x285163904}
+【缺省情况】
 
-[[错误信号事件检测阈值的全局值为]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_x1112_41438_879087564}[次。]{style="font-family:宋体"}
+错误信号事件检测阈值的全局值为1次。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1106170130}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1918884918}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_176130913}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x1215552594}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x339940974}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1508172531}
+【参数】
 
-[*[threshold-value]{lang="EN-US"}*]{#struct_0_x1112_41438_x1003857546}[：表示错误信号事件的检测阈值，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[，单位为次。]{style="font-family:宋体"}
+*[threshold-value*]：表示错误信号事件的检测阈值，取值范围为0～4294967295，单位为次。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x716712428}
+【使用指导】
 
-[[全局值对所有接口都有效，但配置优先级低于接口值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_519891335}
+全局值对所有接口都有效，但配置优先级低于接口值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1731270450}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_x1407807984}[全局配置错误信号事件的检测阈值为]{style="font-family:宋体"}[100]{lang="EN-US"}[次。]{style="font-family:宋体"}
+\# 全局配置错误信号事件的检测阈值为100次。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_1143705239}
+\<Sysname\> system-view
 
-[\[Sysname\] oam global errored-symbol-period threshold 100]{lang="EN-US"}
+Sysname oam global errored-symbol-period threshold 100
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x247601753}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **configuration**]{lang="EN-US"}]{#struct_0_x1112_41438_x422214098}
+·**display** **oam** **configuration**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **link-event**]{lang="EN-US"}]{#struct_0_x1112_41438_x1003792010}
+·**display** **oam** **link-event**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **errored-symbol-period** **threshold**]{lang="EN-US"}]{#struct_0_x1112_41438_1455426757}
-:::
-
-::: {#821643370 .myid}
-[]{#_Toc404795484}[]{#struct_0_x1112_41438_838363366}
+·**oam** **errored-symbol-period** **threshold**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam global errored-symbol-period window**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **global** **errored-symbol-period** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_351869988}[命令用来全局配置错误信号事件的检测窗口。]{style="font-family:宋体"}
+**[oam** **global** **errored-symbol-period** **window**]命令用来全局配置错误信号事件的检测窗口。
 
-[**[undo]{lang="EN-US"}**[ **oam** **global** **errored-symbol-period** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_798764313}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **oam** **global** **errored-symbol-period** **window**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1191253972}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **global** **errored-symbol-period** **window** *window-value*]{lang="EN-US"}]{#struct_0_x1112_41438_x2030645621}
+**[oam** **global** **errored-symbol-period** **window** *window-value*]
 
-[**[undo]{lang="EN-US"}**[ **oam** **global** **errored-symbol-period** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_630606078}
+**[undo** **oam** **global** **errored-symbol-period** **window**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x902756755}
+【缺省情况】
 
-[[错误信号事件检测窗口的全局值为]{style="font-family:宋体"}[100000000]{lang="EN-US"}]{#struct_0_x1112_41438_x1004381837}[。]{style="font-family:宋体"}
+错误信号事件检测窗口的全局值为100000000。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1243119454}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1112_41438_1056222739}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x979813350}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x1137739879}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_2143872613}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1059435240}
+【参数】
 
-[*[window-value]{lang="EN-US"}*]{#struct_0_x1112_41438_1229402710}[：表示错误信号事件的检测窗口，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[，单位为]{style="font-family:宋体"}[1000000]{lang="EN-US"}[次。]{style="font-family:宋体"}
+*[window-value*]：表示错误信号事件的检测窗口，取值范围为1～65535，单位为1000000次。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x343270255}
+【使用指导】
 
-[[全局值对所有接口都有效，但配置优先级低于接口值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1004316301}
+全局值对所有接口都有效，但配置优先级低于接口值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1562919402}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_x18144665}[全局配置错误信号事件的检测窗口为]{style="font-family:宋体"}[200000000]{lang="EN-US"}[次。]{style="font-family:宋体"}
+\# 全局配置错误信号事件的检测窗口为200000000次。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_x943313373}
+\<Sysname\> system-view
 
-[\[Sysname\] oam global errored-symbol-period window 200]{lang="EN-US"}
+Sysname oam global errored-symbol-period window 200
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x925459367}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **configuration**]{lang="EN-US"}]{#struct_0_x1112_41438_1901533905}
+·**display** **oam** **configuration**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **link-event**]{lang="EN-US"}]{#struct_0_x1112_41438_x1771131220}
+·**display** **oam** **link-event**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **errored-symbol-period** **window**]{lang="EN-US"}]{#struct_0_x1112_41438_x367167967}
-:::
-
-::: {#-1066992626 .myid}
-[]{#_Toc404795485}[]{#struct_0_x1112_41438_959926520}
+·**oam** **errored-symbol-period** **window**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam global timer hello**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ ]{lang="EN-US"}]{#struct_0_x1112_41438_x1004250765}**[global]{lang="NO-BOK"}**[ **timer**]{lang="NO-BOK"}[ ]{lang="NO-BOK"}**[hello]{lang="EN-US"}**[命令用来全局配置以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[握手报文的发送间隔。]{style="font-family:宋体"}
+**[oam**]**global** **timer****hello**命令用来全局配置以太网OAM握手报文的发送间隔。
 
-[**[undo]{lang="EN-US"}**[ **oam** **global** **timer** **hello**]{lang="EN-US"}]{#struct_0_x1112_41438_x1768213434}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **oam** **global** **timer** **hello**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1257280708}
+【命令】
 
-[**[oam]{lang="NO-BOK"}**]{#struct_0_x1112_41438_x1863965357}[ **global** **timer** **hello** *interval*]{lang="NO-BOK"}
+**[oam**] **global** **timer** **hello** *interval*
 
-[**[undo]{lang="NO-BOK"}**]{#struct_0_x1112_41438_980237899}[ **oam** **global** **timer** **hello**]{lang="NO-BOK"}
+**[undo**] **oam** **global** **timer** **hello**
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1375659766}
+【缺省情况】
 
-[[以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_899226444}[握手报文发送间隔的全局值为]{style="font-family:宋体"}[1000]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+以太网OAM握手报文发送间隔的全局值为1000毫秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1130972384}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1112_41438_x920388302}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1004185229}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_95012090}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x1388761462}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1245101368}
+【参数】
 
-[*[interval]{lang="NO-BOK"}*]{#struct_0_x1112_41438_838776916}[：表示以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[握手报文的发送间隔，单位为毫秒，步长为]{style="font-family:宋体"}[100]{lang="EN-US"}[，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[interval*]：表示以太网OAM握手报文的发送间隔，单位为毫秒，步长为100，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1016176459}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[由于本端]{style="font-family:宋体"}]{#struct_0_x1112_41438_487107917}[OAM]{lang="EN-US"}[实体在连接超时后将老化与远端]{style="font-family:宋体"}[OAM]{lang="EN-US"}[实体的连接关系，导致]{style="font-family:宋体"}[OAM]{lang="EN-US"}[连接中断，因此连接超时时间必须大于握手报文发送间隔（建议为五倍或以上），否则将导致以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[连接不稳定。]{style="font-family:宋体"}
+·由于本端OAM实体在连接超时后将老化与远端OAM实体的连接关系，导致OAM连接中断，因此连接超时时间必须大于握手报文发送间隔（建议为五倍或以上），否则将导致以太网OAM连接不稳定。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[全局值对所有接口都有效，但配置优先级低于接口值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_54527628}
+·全局值对所有接口都有效，但配置优先级低于接口值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1653484449}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_x1004643981}[全局配置以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[握手报文的发送间隔为]{style="font-family:宋体"}[600]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+\# 全局配置以太网OAM握手报文的发送间隔为600毫秒。
 
-[[\<Sysname\> system-view]{lang="NO-BOK"}]{#struct_0_x1112_41438_749488619}
+\<Sysname\> system-view
 
-[\[Sysname\] oam global timer hello 600]{lang="NO-BOK"}
+Sysname oam global timer hello 600
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1546114724}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **configuration**]{lang="EN-US"}]{#struct_0_x1112_41438_x780028402}
+·**display** **oam** **configuration**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="NO-BOK"}**]{#struct_0_x1112_41438_245407533}[ **timer** **hello**]{lang="NO-BOK"}
-:::
-
-::: {#1492456160 .myid}
-[]{#_Toc404795486}[]{#struct_0_x1112_41438_1644089740}
+·**oam** **timer** **hello**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam global timer keepalive**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **global** **timer** **keepalive**]{lang="EN-US"}]{#struct_0_x1112_41438_484793676}[命令用来全局配置以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[连接的超时时间。]{style="font-family:宋体"}
+**[oam** **global** **timer** **keepalive**]命令用来全局配置以太网OAM连接的超时时间。
 
-[**[undo]{lang="EN-US"}**[ **oam** **global** **timer** **keepalive**]{lang="EN-US"}]{#struct_0_x1112_41438_x1705414170}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **oam** **global** **timer** **keepalive**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1004578445}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **global** **timer** **keepalive** *interval*]{lang="EN-US"}]{#struct_0_x1112_41438_x434232241}
+**[oam** **global** **timer** **keepalive** *interval*]
 
-[**[undo]{lang="EN-US"}**[ **oam** **global** **timer** **keepalive**]{lang="EN-US"}]{#struct_0_x1112_41438_1500433187}
+**[undo** **oam** **global** **timer** **keepalive**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1433424174}
+【缺省情况】
 
-[[以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_221829437}[连接超时时间的全局值为]{style="font-family:宋体"}[5000]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+以太网OAM连接超时时间的全局值为5000毫秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1985858249}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x1112_41438_x659959402}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1179770070}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_1674398441}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x1004512909}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1370613448}
+【参数】
 
-[*[interval]{lang="NO-BOK"}*]{#struct_0_x1112_41438_1517398364}[：表示以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[连接的超时时间，单位为毫秒，步长为]{style="font-family:宋体"}[100]{lang="EN-US"}[，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[interval*]：表示以太网OAM连接的超时时间，单位为毫秒，步长为100，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x535975391}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[由于本端]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1408787465}[OAM]{lang="EN-US"}[实体在连接超时后将老化与远端]{style="font-family:宋体"}[OAM]{lang="EN-US"}[实体的连接关系，导致]{style="font-family:宋体"}[OAM]{lang="EN-US"}[连接中断，因此连接超时时间必须大于握手报文发送间隔（建议为五倍或以上），否则将导致以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[连接不稳定。]{style="font-family:宋体"}
+·由于本端OAM实体在连接超时后将老化与远端OAM实体的连接关系，导致OAM连接中断，因此连接超时时间必须大于握手报文发送间隔（建议为五倍或以上），否则将导致以太网OAM连接不稳定。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[全局值对所有接口都有效，但配置优先级低于接口值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_1565987912}
+·全局值对所有接口都有效，但配置优先级低于接口值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1757446880}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_x824481550}[全局配置以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[连接的超时时间为]{style="font-family:宋体"}[6000]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+\# 全局配置以太网OAM连接的超时时间为6000毫秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_x1004447373}
+\<Sysname\> system-view
 
-[\[Sysname\] ]{lang="EN-US"}[oam global]{lang="NO-BOK"}[ ]{lang="NO-BOK"}[timer keepalive 6000]{lang="NO-BOK"}
+Sysname oam globaltimer keepalive 6000
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1851247845}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **configuration**]{lang="EN-US"}]{#struct_0_x1112_41438_x581737250}
+·**display** **oam** **configuration**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **timer** **keepalive**]{lang="EN-US"}]{#struct_0_x1112_41438_x2020433184}
-:::
-
-::: {#1000385863 .myid}
-[]{#_Toc404795487}[]{#struct_0_x1112_41438_188475911}
+·**oam** **timer** **keepalive**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam mode**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **mode**]{lang="EN-US"}]{#struct_0_x1112_41438_x842185003}[命令用来配置以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[的连接模式。]{style="font-family:宋体"}
+**[oam** **mode**]命令用来配置以太网OAM的连接模式。
 
-[**[undo]{lang="EN-US"}**[ **oam** **mode**]{lang="EN-US"}]{#struct_0_x1112_41438_73511674}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **oam** **mode**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x2122128302}
+【命令】
 
-[**[oam]{lang="FR"}**]{#struct_0_x1112_41438_x1766817847}[ **mode** { **active** \| **passive** }]{lang="FR"}
+**[oam**  **mode** { **active** \| **passive** }]
 
-[**[undo]{lang="EN-US"}**[ **oam** **mode**]{lang="EN-US"}]{#struct_0_x1112_41438_x1003857549}
+**[undo** **oam** **mode**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_493141153}
+【缺省情况】
 
-[[以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_9604096}[连接模式为主动模式。]{style="font-family:宋体"}
+以太网OAM连接模式为主动模式。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_150863435}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1112_41438_346682896}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x428956412}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x1632561016}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_527921079}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x767744948}
+【参数】
 
-[**[active]{lang="EN-US"}**]{#struct_0_x1112_41438_1065087958}[：表示主动模式。]{style="font-family:宋体"}
+**[active**]：表示主动模式。
 
-[**[passive]{lang="EN-US"}**]{#struct_0_x1112_41438_x1003792013}[：表示被动模式。]{style="font-family:宋体"}
+**[passive**]：表示被动模式。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1273456598}
+【使用指导】
 
-[[不允许在已使能以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_x1701128913}[功能的接口上更改以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[的连接模式。如需更改，请先关闭该接口上的以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+不允许在已使能以太网OAM功能的接口上更改以太网OAM的连接模式。如需更改，请先关闭该接口上的以太网OAM功能。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x131830239}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_1430119192}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上先关闭以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[功能，再配置以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[的连接模式为被动模式。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上先关闭以太网OAM功能，再配置以太网OAM的连接模式为被动模式。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_154813746}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] undo oam enable]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 undo oam enable
 
-[\[Sysname-GigabitEthernet1/0/1\] oam mode passive]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 oam mode passive
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1729102667}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **enable**]{lang="EN-US"}]{#struct_0_x1112_41438_x1004381836}
-:::
-
-::: {#672022086 .myid}
-[]{#_Toc404795488}[]{#struct_0_x1112_41438_1485763901}
+·**oam** **enable**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam remote-failure action**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **remote-failure action**]{lang="EN-US"}]{#struct_0_x1112_41438_745210486}[命令用来配置接口收到远端以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[事件时的响应动作。]{style="font-family:宋体"}
+**[oam** **remote-failure action**]命令用来配置接口收到远端以太网OAM事件时的响应动作。
 
-[**[undo oam]{lang="EN-US"}**[ **remote-failure action**]{lang="EN-US"}]{#struct_0_x1112_41438_613038334}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo oam** **remote-failure action**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_636185490}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **remote-failure** { **connection-expired** \| **critical-event** \| **dying-gasp** \| **link-fault** } **action** **error-link-down**]{lang="EN-US"}]{#struct_0_x1112_41438_1794967995}
+**[oam**[ **remote-failure** { **connection-expired** \| **critical-event** \| **dying-gasp** \| **link-fault** } **action** **error-link-down**]]
 
-[**[undo]{lang="EN-US"}**[ **oam** **remote-failure** { **connection-expired** \| **critical-event** \| **dying-gasp** \| **link-fault** } **action** **error-link-down**]{lang="EN-US"}]{#struct_0_x1112_41438_x1860907993}
+**[undo**[ **oam** **remote-failure** { **connection-expired** \| **critical-event** \| **dying-gasp** \| **link-fault** } **action** **error-link-down**]]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_2063735886}
+【缺省情况】
 
-[[接口收到远端以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_x1116697045}[事件时仅记录日志。]{style="font-family:宋体"}
+接口收到远端以太网OAM事件时仅记录日志。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1004316300}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1112_41438_x1165963953}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_895852612}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_738689717}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_77380806}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_309331096}
+【参数】
 
-[**[connection-expired]{lang="EN-US"}**]{#struct_0_x1112_41438_495538116}[：表示以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[连接超时。]{style="font-family:宋体"}
+**[connection-expired**]：表示以太网OAM连接超时。
 
-[**[critical-event]{lang="EN-US"}**]{#struct_0_x1112_41438_1046977358}[：表示紧急事件。]{style="font-family:宋体"}
+**[critical-event**]：表示紧急事件。
 
-[**[dying-gasp]{lang="EN-US"}**]{#struct_0_x1112_41438_1640233901}[：表示致命故障。]{style="font-family:宋体"}
+**[dying-gasp**]：表示致命故障。
 
-[**[link-fault]{lang="EN-US"}**]{#struct_0_x1112_41438_x1004250764}[：表示链路故障。]{style="font-family:宋体"}
+**[link-fault**]：表示链路故障。
 
-[**[error-link-down]{lang="EN-US"}**]{#struct_0_x1112_41438_x202129493}[：表示断开]{style="font-family:宋体"}[OAM]{lang="EN-US"}[连接，并设置接口的链路层状态为]{style="font-family:宋体"}[down]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[error-link-down**]：表示断开OAM连接，并设置接口的链路层状态为down。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1904151115}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_1043503207}[配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[收到远端致命故障时的响应动作为断开]{style="font-family:宋体"}[OAM]{lang="EN-US"}[连接，并设置该接口的链路层状态为]{style="font-family:宋体"}[down]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置接口GigabitEthernet1/0/1收到远端致命故障时的响应动作为断开OAM连接，并设置该接口的链路层状态为down。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_1125502616}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] oam remote-failure dying-gasp action error-link-down]{lang="EN-US"}
-:::
-
-::: {#-1964257071 .myid}
-[]{#_Toc404795489}[]{#struct_0_x1112_41438_x1703011212}
+Sysname-GigabitEthernet1/0/1 oam remote-failure dying-gasp action error-link-down
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam remote-loopback**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **remote-loopback** **start**]{lang="EN-US"}]{#struct_0_x1112_41438_x785905536}[命令用来使能当前接口的以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[远端环回功能。]{style="font-family:宋体"}
+**[oam** **remote-loopback** **start**]命令用来使能当前接口的以太网OAM远端环回功能。
 
-[**[oam]{lang="EN-US"}**[ **remote-loopback** **stop**]{lang="EN-US"}]{#struct_0_x1112_41438_1875741782}[命令用来关闭当前接口的以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[远端环回功能。]{style="font-family:宋体"}
+**[oam** **remote-loopback** **stop**]命令用来关闭当前接口的以太网OAM远端环回功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1004185228}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **remote-loopback** **start**]{lang="EN-US"}]{#struct_0_x1112_41438_x1471071851}
+**[oam** **remote-loopback** **start**]
 
-[**[oam]{lang="EN-US"}**[ **remote-loopback** **stop**]{lang="EN-US"}]{#struct_0_x1112_41438_x1596802483}
+**[oam** **remote-loopback** **stop**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1367257019}
+【缺省情况】
 
-[[以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_x439401746}[远端环回功能处于关闭状态。]{style="font-family:宋体"}
+以太网OAM远端环回功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1220832764}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1112_41438_1385962516}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_243502358}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x1637253843}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x1004643980}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x816595322}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[只有当接口上的以太网]{style="font-family:宋体"}]{#struct_0_x1112_41438_103821389}[OAM]{lang="EN-US"}[连接已建立完成，且以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[的连接模式为主动模式时，才允许在该接口上使能以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[远端环回功能。]{style="font-family:宋体"}
+·只有当接口上的以太网OAM连接已建立完成，且以太网OAM的连接模式为主动模式时，才允许在该接口上使能以太网OAM远端环回功能。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[用户既可在用户视图或系统视图下使能指定接口的以太网]{style="font-family:宋体"}]{#struct_0_x1112_41438_1839892975}[OAM]{lang="EN-US"}[远端环回功能，也可在接口视图下使能当前接口的以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[远端环回功能，三者的配置效果相同。]{style="font-family:宋体"}
+·用户既可在用户视图或系统视图下使能指定接口的以太网OAM远端环回功能，也可在接口视图下使能当前接口的以太网OAM远端环回功能，三者的配置效果相同。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x760939186}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_x1624379021}[配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[的连接模式为主动模式并使能其以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[功能，然后在该接口视图下使能其以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[远端环回功能。]{style="font-family:宋体"}
+\# 配置接口GigabitEthernet1/0/1的以太网OAM的连接模式为主动模式并使能其以太网OAM功能，然后在该接口视图下使能其以太网OAM远端环回功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_1786186381}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] oam mode active]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 oam mode active
 
-[\[Sysname-GigabitEthernet1/0/1\] oam enable]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 oam enable
 
-[\[Sysname-GigabitEthernet1/0/1\] oam remote-loopback start]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 oam remote-loopback start
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1004578444}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **enable**]{lang="EN-US"}]{#struct_0_x1112_41438_1131851700}
+·**oam** **enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **mode**]{lang="EN-US"}]{#struct_0_x1112_41438_x119496840}
+·**oam** **mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **remote-loopback** **interface**]{lang="EN-US"}]{#struct_0_x1112_41438_1107672023}
-:::
-
-::: {#-1254044710 .myid}
-[]{#_Toc404795490}[]{#struct_0_x1112_41438_x341558672}
+·**oam** **remote-loopback** **interface**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam remote-loopback interface**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **remote-loopback** **start** **interface**]{lang="EN-US"}]{#struct_0_x1112_41438_x702564854}[命令用来使能指定接口的以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[远端环回功能。]{style="font-family:宋体"}
+**[oam** **remote-loopback** **start** **interface**]命令用来使能指定接口的以太网OAM远端环回功能。
 
-[**[oam]{lang="EN-US"}**[ **remote-loopback** **stop** **interface**]{lang="EN-US"}]{#struct_0_x1112_41438_x138951759}[命令用来关闭指定接口的以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[远端环回功能。]{style="font-family:宋体"}
+**[oam** **remote-loopback** **stop** **interface**]命令用来关闭指定接口的以太网OAM远端环回功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_116026970}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **remote-loopback** **start** **interface** *interface-type interface-number*]{lang="EN-US"}]{#struct_0_x1112_41438_1954620369}
+**[oam** **remote-loopback** **start** **interface** *interface-type interface-number*]
 
-[**[oam]{lang="EN-US"}**[ **remote-loopback** **stop** **interface** *interface-type interface-number*]{lang="EN-US"}]{#struct_0_x1112_41438_x1004512908}
+**[oam** **remote-loopback** **stop** **interface** *interface-type interface-number*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1358269907}
+【缺省情况】
 
-[[以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_1867573975}[远端环回功能处于关闭状态。]{style="font-family:宋体"}
+以太网OAM远端环回功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x526929675}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1112_41438_x577889492}[系统视图]{style="font-family:宋体"}
+用户视图/系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1425074584}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_604266860}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x884553213}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x73543631}
+【参数】
 
-[*[interface-type interface-number]{lang="EN-US"}*]{#struct_0_x1112_41438_x1004447372}[：表示接口类型和接口编号。]{style="font-family:宋体"}
+*[interface-type interface-number*]：表示接口类型和接口编号。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_877635510}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[只有当接口上的以太网]{style="font-family:宋体"}]{#struct_0_x1112_41438_1998302401}[OAM]{lang="EN-US"}[连接已建立完成，且以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[的连接模式为主动模式时，才允许在该接口上使能以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[远端环回功能。]{style="font-family:宋体"}
+·只有当接口上的以太网OAM连接已建立完成，且以太网OAM的连接模式为主动模式时，才允许在该接口上使能以太网OAM远端环回功能。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[用户既可在用户视图或系统视图下使能指定接口的以太网]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1222545510}[OAM]{lang="EN-US"}[远端环回功能，也可在接口视图下使能当前接口的以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[远端环回功能，三者的配置效果相同。]{style="font-family:宋体"}
+·用户既可在用户视图或系统视图下使能指定接口的以太网OAM远端环回功能，也可在接口视图下使能当前接口的以太网OAM远端环回功能，三者的配置效果相同。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_90279094}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_x1617412473}[配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[的连接模式为主动模式并使能其以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[功能，然后在系统视图下使能该接口的以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[远端环回功能。]{style="font-family:宋体"}
+\# 配置接口GigabitEthernet1/0/1的以太网OAM的连接模式为主动模式并使能其以太网OAM功能，然后在系统视图下使能该接口的以太网OAM远端环回功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_x430287008}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] oam mode active]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 oam mode active
 
-[\[Sysname-GigabitEthernet1/0/1\] oam enable]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 oam enable
 
-[\[Sysname-GigabitEthernet1/0/1\] quit]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1 quit
 
-[\[Sysname\] oam remote-loopback start interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname oam remote-loopback start interface gigabitethernet 1/0/1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1003857548}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **enable**]{lang="EN-US"}]{#struct_0_x1112_41438_2059225094}
+·**oam** **enable**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **mode**]{lang="EN-US"}]{#struct_0_x1112_41438_1615712592}
+·**oam** **mode**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **remote-loopback**]{lang="EN-US"}]{#struct_0_x1112_41438_x1089070188}
-:::
-
-::: {#2116219960 .myid}
-[]{#_Toc404795491}[]{#struct_0_x1112_41438_690895058}
+·**oam** **remote-loopback**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam remote-loopback reject-request**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **remote-loopback** **reject-request**]{lang="EN-US"}]{#struct_0_x1112_41438_x1587017980}[命令用来配置接口拒绝远端发起的以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[远端环回。]{style="font-family:宋体"}
+**[oam** **remote-loopback** **reject-request**]命令用来配置接口拒绝远端发起的以太网OAM远端环回。
 
-[**[undo]{lang="EN-US"}**[ **oam** **remote-loopback** **reject-request**]{lang="EN-US"}]{#struct_0_x1112_41438_908714891}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **oam** **remote-loopback** **reject-request**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1876168572}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **remote-loopback** **reject-request**]{lang="EN-US"}]{#struct_0_x1112_41438_x61081625}
+**[oam** **remote-loopback** **reject-request**]
 
-[**[undo]{lang="EN-US"}**[ **oam** **remote-loopback** **reject-request**]{lang="EN-US"}]{#struct_0_x1112_41438_x1003792012}
+**[undo** **oam** **remote-loopback** **reject-request**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_292627343}
+【缺省情况】
 
-[[接口不拒绝远端发起的以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}]{#struct_0_x1112_41438_619283693}[远端环回。]{style="font-family:宋体"}
+接口不拒绝远端发起的以太网OAM远端环回。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1046881641}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1112_41438_x743196819}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1408740057}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x877642042}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x1144525829}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1418153805}
+【使用指导】
 
-[[在执行]{style="font-family:宋体"}**[oam remote-loopback reject-request]{lang="EN-US"}**]{#struct_0_x1112_41438_x1004381839}[命令时若接口已处于环回状态，则该配置将从下次环回开始时生效。]{style="font-family:宋体"}
+在执行**oam remote-loopback reject-request**命令时若接口已处于环回状态，则该配置将从下次环回开始时生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x436550400}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_1765335668}[配置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[拒绝远端发起的以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[远端环回。]{style="font-family:宋体"}
+\# 配置接口GigabitEthernet1/0/1拒绝远端发起的以太网OAM远端环回。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_1185520375}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] oam remote-loopback reject-request]{lang="EN-US"}
-:::
-
-::: {#-1795407457 .myid}
-[]{#_Toc404795492}[]{#struct_0_x1112_41438_1166374602}[]{#_Toc232931916}
+Sysname-GigabitEthernet1/0/1 oam remote-loopback reject-request
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam timer hello**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **timer** **hello**]{lang="EN-US"}]{#struct_0_x1112_41438_x1632033189}[命令用来在接口上配置以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[握手报文的发送间隔。]{style="font-family:宋体"}
+**[oam** **timer** **hello**]命令用来在接口上配置以太网OAM握手报文的发送间隔。
 
-[**[undo]{lang="EN-US"}**[ **oam** **timer** **hello**]{lang="EN-US"}]{#struct_0_x1112_41438_x1306929018}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **oam** **timer** **hello**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x751754940}
+【命令】
 
-[**[oam]{lang="NO-BOK"}**]{#struct_0_x1112_41438_x1571676093}[ **timer** **hello** *interval*]{lang="NO-BOK"}
+**[oam**] **timer** **hello** *interval*
 
-[**[undo]{lang="NO-BOK"}**]{#struct_0_x1112_41438_x1004316303}[ **oam** **timer** **hello**]{lang="NO-BOK"}
+**[undo**] **oam** **timer** **hello**
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_400119988}
+【缺省情况】
 
-[[接口采用全局值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_1776035841}
+接口采用全局值。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1866493221}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1112_41438_752008926}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1359295438}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_480501321}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x1071670707}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_2077333598}
+【参数】
 
-[*[interval]{lang="NO-BOK"}*]{#struct_0_x1112_41438_x1004250767}[：表示以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[握手报文的发送间隔，单位为毫秒，步长为]{style="font-family:宋体"}[100]{lang="EN-US"}[，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[interval*]：表示以太网OAM握手报文的发送间隔，单位为毫秒，步长为100，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1363954448}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[由于本端]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1896078059}[OAM]{lang="EN-US"}[实体在连接超时后将老化与远端]{style="font-family:宋体"}[OAM]{lang="EN-US"}[实体的连接关系，导致]{style="font-family:宋体"}[OAM]{lang="EN-US"}[连接中断，因此连接超时时间必须大于握手报文发送间隔（建议为五倍或以上），否则将导致以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[连接不稳定。]{style="font-family:宋体"}
+·由于本端OAM实体在连接超时后将老化与远端OAM实体的连接关系，导致OAM连接中断，因此连接超时时间必须大于握手报文发送间隔（建议为五倍或以上），否则将导致以太网OAM连接不稳定。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[接口值只对当前接口有效，但配置优先级高于全局值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1295477567}
+·接口值只对当前接口有效，但配置优先级高于全局值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_621053165}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_1038185019}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[握手报文的发送间隔为]{style="font-family:宋体"}[600]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置以太网OAM握手报文的发送间隔为600毫秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_1101254134}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] oam timer hello 600]{lang="NO-BOK"}
+Sysname-GigabitEthernet1/0/1 oam timer hello 600
 
-[[【相关命令】]{style="font-family:
-黑体"}]{#struct_0_x1112_41438_456341}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **configuration**]{lang="EN-US"}]{#struct_0_x1112_41438_x1004185231}
+·**display** **oam** **configuration**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **global** **timer** **hello**]{lang="EN-US"}]{#struct_0_x1112_41438_451176914}
-:::
-
-::: {#218381349 .myid}
-[]{#_Toc404795493}[]{#struct_0_x1112_41438_640753863}
+·**oam** **global** **timer** **hello**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- oam timer keepalive**
 
 ------------------------------------------------------------------------
 
-[**[oam]{lang="EN-US"}**[ **timer** **keepalive**]{lang="EN-US"}]{#struct_0_x1112_41438_x39671179}[命令用来在接口上配置以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[连接的超时时间。]{style="font-family:宋体"}
+**[oam** **timer** **keepalive**]命令用来在接口上配置以太网OAM连接的超时时间。
 
-[**[undo]{lang="EN-US"}**[ **oam** **timer** **keepalive**]{lang="EN-US"}]{#struct_0_x1112_41438_220049846}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **oam** **timer** **keepalive**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1114915645}
+【命令】
 
-[**[oam]{lang="EN-US"}**[ **timer** **keepalive** *interval*]{lang="EN-US"}]{#struct_0_x1112_41438_x1614905614}
+**[oam** **timer** **keepalive** *interval*]
 
-[**[undo]{lang="EN-US"}**[ **oam** **timer** **keepalive**]{lang="EN-US"}]{#struct_0_x1112_41438_512400679}
+**[undo** **oam** **timer** **keepalive**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1053047213}
+【缺省情况】
 
-[[接口采用全局值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1004643983}
+接口采用全局值。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1912288033}
+【视图】
 
-[[二层以太网接口视图]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1112_41438_1685432892}[三层以太网接口视图]{style="font-family:宋体"}
+二层以太网接口视图/三层以太网接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_210406848}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_893762617}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_x1144765133}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1172237068}
+【参数】
 
-[*[interval]{lang="NO-BOK"}*]{#struct_0_x1112_41438_x747122994}[：表示以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[连接的超时时间，单位为毫秒，步长为]{style="font-family:宋体"}[100]{lang="EN-US"}[，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[interval*]：表示以太网OAM连接的超时时间，单位为毫秒，步长为100，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x2136922229}
+【使用指导】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[由于本端]{style="font-family:宋体"}]{#struct_0_x1112_41438_x1004578447}[OAM]{lang="EN-US"}[实体在连接超时后将老化与远端]{style="font-family:宋体"}[OAM]{lang="EN-US"}[实体的连接关系，导致]{style="font-family:宋体"}[OAM]{lang="EN-US"}[连接中断，因此连接超时时间必须大于握手报文发送间隔（建议为五倍或以上），否则将导致以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[连接不稳定。]{style="font-family:宋体"}
+·由于本端OAM实体在连接超时后将老化与远端OAM实体的连接关系，导致OAM连接中断，因此连接超时时间必须大于握手报文发送间隔（建议为五倍或以上），否则将导致以太网OAM连接不稳定。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[接口值只对当前接口有效，但配置优先级高于全局值。]{style="font-family:宋体"}]{#struct_0_x1112_41438_728567173}
+·接口值只对当前接口有效，但配置优先级高于全局值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_422564194}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_x801860550}[在接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上配置以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[连接的超时时间为]{style="font-family:宋体"}[6000]{lang="EN-US"}[毫秒。]{style="font-family:宋体"}
+\# 在接口GigabitEthernet1/0/1上配置以太网OAM连接的超时时间为6000毫秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x1112_41438_1914761697}
+\<Sysname\> system-view
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\] oam timer keepalive 6000]{lang="NO-BOK"}
+Sysname-GigabitEthernet1/0/1 oam timer keepalive 6000
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x770666462}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **configuration**]{lang="EN-US"}]{#struct_0_x1112_41438_1977859684}
+·**display** **oam** **configuration**
 
-[[·[              ]{style="font:7.0pt "}]{lang="NO-BOK" style="font-size:10.0pt;font-family:Symbol"}**[oam]{lang="EN-US"}**[ **global** **timer** **keepalive**]{lang="EN-US"}]{#struct_0_x1112_41438_1842616980}
-:::
-
-::: {#763873786 .myid}
-[]{#_Toc404795494}[]{#struct_0_x1112_41438_x1004512911}
+·**oam** **global** **timer** **keepalive**
 
 **以太网OAM \-- 以太网OAM配置命令 \-- reset oam**
 
 ------------------------------------------------------------------------
 
-[**[reset]{lang="EN-US"}**[ **oam**]{lang="EN-US"}]{#struct_0_x1112_41438_1014317552}[命令用来清除以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[的报文和一般链路事件统计信息。]{style="font-family:宋体"}
+**[reset** **oam**]命令用来清除以太网OAM的报文和一般链路事件统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1465550368}
+【命令】
 
-[**[reset]{lang="EN-US"}**[ **oam** \[ **interface** *interface-type interface-number* \]]{lang="EN-US"}]{#struct_0_x1112_41438_954197025}
+**[reset** **oam** [ **interface** *interface-type interface-number* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x431332663}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x1112_41438_1748749166}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1112_41438_773872865}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1112_41438_441360290}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1112_41438_785844146}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1112_41438_x1004447375}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_x1112_41438_x688448431}[：清除指定接口上的信息，]{style="font-family:宋体"}*[interface-type interface-number]{lang="EN-US"}*[表示接口类型和接口编号。如果未指定本参数，将清除所有接口上的信息。]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：清除指定接口上的信息，*interface-type interface-number*表示接口类型和接口编号。如果未指定本参数，将清除所有接口上的信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1869651988}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x1112_41438_x1088698323}[清除所有接口上以太网]{style="font-family:宋体"}[OAM]{lang="EN-US"}[的报文和一般链路事件统计信息。]{style="font-family:宋体"}
+\# 清除所有接口上以太网OAM的报文和一般链路事件统计信息。
 
-[[\<Sysname\> reset oam]{lang="EN-US"}]{#struct_0_x1112_41438_691443984}
+\<Sysname\> reset oam
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x1112_41438_1978013533}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam**]{lang="EN-US"}]{#struct_0_x1112_41438_1608624547}
+·**display** **oam**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display]{lang="EN-US"}**[ **oam** **link-event**]{lang="EN-US"}]{#struct_0_x1112_41438_36238863}
-:::
+·**display** **oam** **link-event**

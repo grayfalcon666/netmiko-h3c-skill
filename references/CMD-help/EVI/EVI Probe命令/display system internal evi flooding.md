@@ -1,317 +1,289 @@
-::: {#1653360252 .myid}
-[]{#_Toc404798838}[]{#struct_0_x1633_18491_973833989}[]{#_Toc340162905}
 
 **EVI \-- EVI Probe命令 \-- display system internal evi flooding**
 
 ------------------------------------------------------------------------
 
-[**[display system internal evi flooding]{lang="EN-US"}**]{#struct_0_x1633_18491_386687881}[命令用来显示]{style="font-family:宋体"}[EVI]{lang="EN-US"}[泛洪功能信息。]{style="font-family:宋体"}
+**[display system internal evi flooding**]命令用来显示EVI泛洪功能信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1633_18491_x1986878199}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_x1633_18491_x1501893153}
+集中式设备：
 
-[**[display system internal evi flooding]{lang="EN-US"}**[ **interface** *interface-type interface-number*]{lang="EN-US"}]{#struct_0_x1633_18491_1529086960}
+**[display system internal evi flooding** **interface** *interface-type interface-number*]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1633_18491_x1133294929}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display system internal evi flooding interface]{lang="EN-US"}**[ *interface-type interface-number* **slot** *slot-number* \[ **cpu** *cpu-number* \]]{lang="EN-US"}]{#struct_0_x1633_18491_x1705186304}
+**[display system internal evi flooding interface** *interface-type interface-number* **slot** *slot-number* [ **cpu** *cpu-number* ]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1633_18491_1415364844}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display system internal evi flooding interface]{lang="EN-US"}**[ *interface-type interface-number* **chassis** *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \]]{lang="EN-US"}]{#struct_0_x1633_18491_x1701521488}
+**[display system internal evi flooding interface** *interface-type interface-number* **chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1633_18491_1027751399}
+【视图】
 
-[[Probe]{lang="EN-US"}]{#struct_0_x1633_18491_973899525}[视图]{style="font-family:宋体"}
+Probe视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1633_18491_109767943}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1633_18491_1036336885}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1633_18491_x1418646528}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1633_18491_x547667606}
+【参数】
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_x1633_18491_x1911698808}[：显示指定接口的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[泛洪功能信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：显示指定接口的EVI泛洪功能信息。
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1633_18491_x1984078960}[：显示指定单板的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[泛洪功能信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定单板的EVI泛洪功能信息。*slot-number*表示单板所在的槽位号。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1633_18491_1600063256}[：显示指定成员设备的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[泛洪功能信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备的EVI泛洪功能信息。*slot-number*表示设备在IRF中的成员编号。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x1633_18491_1834613543}[：显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[泛洪功能信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot*** slot-number*]：显示指定成员设备/PEX的EVI泛洪功能信息。*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1633_18491_223194963}[：显示指定成员设备上指定单板的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[泛洪功能]{style="font-family:宋体"}[信息。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式]{style="font-family:宋体"}[）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定成员设备上指定单板的EVI泛洪功能信息。*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1633_18491_x1243969168}[：]{style="font-family:宋体"}[显示指定单板的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[泛洪功能信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定单板的EVI泛洪功能信息。*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu ]{lang="EN-US"}***[cpu-number]{lang="EN-US"}*]{#struct_0_x1633_18491_489309246}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[泛洪功能]{style="font-family:宋体"}[信息。]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号。只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
-:::
-
-::: {#519267423 .myid}
-[]{#_Toc404798839}[]{#struct_0_x1633_18491_x1373972638}[]{#_Toc349048577}[]{#_Toc342471545}[]{#_Toc360181485}[]{#_Toc360181486}[]{#_Toc360181487}[]{#_Toc360181488}[]{#_Toc360181489}[]{#_Toc360181490}[]{#_Toc360181491}[]{#_Toc360181492}[]{#_Toc360181493}[]{#_Toc360181494}[]{#_Toc360181509}
+**[cpu ***cpu-number*]：显示指定CPU上的EVI泛洪功能信息。*cpu-number*表示CPU编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
 **EVI \-- EVI Probe命令 \-- display system internal evi selective-flooding**
 
 ------------------------------------------------------------------------
 
-[**[display system internal evi selective-flooding]{lang="EN-US"}**]{#struct_0_x1633_18491_2123816395}[命令用来显示]{style="font-family:宋体"}[EVI]{lang="EN-US"}[保存的指定]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口下指定泛洪]{style="font-family:宋体"}[MAC]{lang="EN-US"}[在指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的下发驱动信息。]{style="font-family:宋体"}
+**[display system internal evi selective-flooding**]命令用来显示EVI保存的指定EVI隧道接口下指定泛洪MAC在指定VLAN的下发驱动信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1633_18491_419249450}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_x1633_18491_x1342237030}
+集中式设备：
 
-[**[display system internal evi selective-flooding interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}***[ ]{lang="EN-US"}[mac-address ]{lang="EN-US"}***[mac-address]{lang="EN-US"}***[ vlan ]{lang="EN-US"}***[vlan-id]{lang="EN-US"}*]{#struct_0_x1633_18491_1778443261}
+**[display system internal evi selective-flooding interface tunnel*** interface-number***mac-address ***mac-address*** vlan ***vlan-id*]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1633_18491_x1282037477}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display system internal evi selective-flooding interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}***[ ]{lang="EN-US"}[mac-address ]{lang="EN-US"}***[mac-address]{lang="EN-US"}***[ vlan ]{lang="EN-US"}***[vlan-id]{lang="EN-US"}***[ slot]{lang="EN-US"}**]{#struct_0_x1633_18491_587221285}**[ ]{lang="EN-US"}***[slot-number ]{lang="EN-US"}*[\[ **cpu** *cpu-number* \]]{lang="EN-US"}
+**[display system internal evi selective-flooding interface tunnel*** interface-number***mac-address ***mac-address*** vlan ***vlan-id*** slot**]*****slot-number * **cpu** *cpu-number*
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1633_18491_973113093}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display system internal evi selective-flooding interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}***[ ]{lang="EN-US"}[mac-address ]{lang="EN-US"}***[mac-address]{lang="EN-US"}***[ vlan ]{lang="EN-US"}***[vlan-id]{lang="EN-US"}***[ chassis]{lang="EN-US"}**[ *chassis-number* ]{lang="EN-US"}**[slot]{lang="EN-US"}**]{#struct_0_x1633_18491_1039545092}**[ ]{lang="EN-US"}***[slot-number ]{lang="EN-US"}*[\[ **cpu** *cpu-number* \]]{lang="EN-US"}
+**[display system internal evi selective-flooding interface tunnel*** interface-number***mac-address ***mac-address*** vlan ***vlan-id*** chassis** *chassis-number* **slot**]*****slot-number * **cpu** *cpu-number*
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1633_18491_1893322106}
+【视图】
 
-[[Probe]{lang="EN-US"}]{#struct_0_x1633_18491_1354592154}[视图]{style="font-family:宋体"}
+Probe视图
 
-[[【支持的缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1633_18491_1530936117}
+【支持的缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1633_18491_1154296508}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1633_18491_111438257}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1633_18491_x1290593263}
+【参数】
 
-[**[interface]{lang="EN-US"}[ tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*]{#struct_0_x1633_18491_1894049131}[：]{style="font-family:宋体"}[指定]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口。]{style="font-family:宋体"}
+**[interface tunnel*** interface-number*]：指定EVI隧道接口。
 
-[**[mac-address ]{lang="EN-US"}***[mac-address]{lang="EN-US"}*]{#struct_0_x1633_18491_973178629}[：指定泛洪]{lang="EN-US" style="font-family:宋体"}[MAC]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[mac-address ***mac-address*]：指定泛洪MAC。
 
-[**[vlan ]{lang="EN-US"}***[vlan-id]{lang="EN-US"}*]{#struct_0_x1633_18491_x144094814}[：指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vlan ***vlan-id*]：指定VLAN。*vlan-id*表示VLAN编号，取值范围为1～4094。
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x1633_18491_x367706627}[：显示指定]{style="font-family:宋体"}[单板的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[保存的指定]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口下指定泛洪]{style="font-family:宋体"}[MAC]{lang="EN-US"}[在指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的下发驱动信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位]{style="font-family:宋体"}[号。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定单板的EVI保存的指定EVI隧道接口下指定泛洪MAC在指定VLAN的下发驱动信息。*slot-number*表示单板所在的槽位号。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x1633_18491_x2110726901}[：显示指定成员设备的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[保存的指定]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口下指定泛洪]{style="font-family:宋体"}[MAC]{lang="EN-US"}[在指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的下发驱动信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备的EVI保存的指定EVI隧道接口下指定泛洪MAC在指定VLAN的下发驱动信息。*slot-number*表示设备在IRF中的成员编号。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x1633_18491_x1297554339}[：]{style="font-family:宋体"}[显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[保存的指定]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口下指定泛洪]{style="font-family:宋体"}[MAC]{lang="EN-US"}[在指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的下发驱动信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的]{style="font-family:宋体"}[成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设]{style="font-family:宋体"}[备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备/PEX的EVI保存的指定EVI隧道接口下指定泛洪MAC在指定VLAN的下发驱动信息。*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。（集中式IRF设备）（支持IRF3的设备）
 
-[**[cpu ]{lang="EN-US"}***[cpu-number]{lang="EN-US"}*]{#struct_0_x1633_18491_488981566}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上]{style="font-family:宋体"}[EVI]{lang="EN-US"}[保存的指定]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口下指定泛洪]{style="font-family:宋体"}[MAC]{lang="EN-US"}[在指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的下发驱动信息。]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号。只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
-:::
-
-::: {#-419395048 .myid}
-[]{#_Toc404798840}[]{#struct_0_x1633_18491_2090078127}[]{#_Toc349048578}[]{#_Toc342471543}[]{#_Toc360181511}[]{#_Toc360181512}[]{#_Toc360181513}[]{#_Toc360181514}[]{#_Toc360181515}[]{#_Toc360181516}[]{#_Toc360181517}[]{#_Toc360181518}[]{#_Toc360181519}[]{#_Toc360181535}
+**[cpu ***cpu-number*]：显示指定CPU上EVI保存的指定EVI隧道接口下指定泛洪MAC在指定VLAN的下发驱动信息。*cpu-number*表示CPU编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
 **EVI \-- EVI Probe命令 \-- display system internal evi statistics**
 
 ------------------------------------------------------------------------
 
-[**[display system internal evi statistics]{lang="EN-US"}**]{#struct_0_x1633_18491_973768454}[命令用来显示]{style="font-family:宋体"}[EVI]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+**[display system internal evi statistics**]命令用来显示EVI的统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1633_18491_305750032}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_x1633_18491_x942924554}
+集中式设备：
 
-[**[display system internal evi statistics]{lang="EN-US"}**]{#struct_0_x1633_18491_x1304215740}
+**[display system internal evi statistics**]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1633_18491_x1924934482}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display system internal evi statistics slot]{lang="EN-US"}**]{#struct_0_x1633_18491_x465109517}**[ ]{lang="EN-US"}***[slot-number ]{lang="EN-US"}*[\[ **cpu** *cpu-number* \]]{lang="EN-US"}
+**[display system internal evi statistics slot**]*****slot-number * **cpu** *cpu-number*
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1633_18491_439873669}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display system internal evi statistics chassis]{lang="EN-US"}**[ *chassis-number* ]{lang="EN-US"}**[slot]{lang="EN-US"}**]{#struct_0_x1633_18491_72822076}**[ ]{lang="EN-US"}***[slot-number ]{lang="EN-US"}*[\[ **cpu** *cpu-number* \]]{lang="EN-US"}
+**[display system internal evi statistics chassis** *chassis-number* **slot**]*****slot-number * **cpu** *cpu-number*
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1633_18491_1084146878}
+【视图】
 
-[[Probe]{lang="EN-US"}]{#struct_0_x1633_18491_973833990}[视图]{style="font-family:宋体"}
+Probe视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1633_18491_x1569627262}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1633_18491_x2075192616}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1633_18491_1614595586}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1633_18491_x746692006}
+【参数】
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x1633_18491_x2096486311}[：显示指定]{style="font-family:宋体"}[单板的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[统计信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位]{style="font-family:宋体"}[号。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定单板的EVI统计信息。*slot-number*表示单板所在的槽位号。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x1633_18491_x513381873}[：显示指定成员设备的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[统计信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备的EVI统计信息。*slot-number*表示设备在IRF中的成员编号。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x1633_18491_x847215645}[：显示指定成]{style="font-family:宋体"}[员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[统计信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
-:::
-
-::: {#-1777368592 .myid}
-[]{#_Toc33197998}[]{#_Toc404798841}[]{#struct_0_x1633_18491_x1399015612}[]{#_Toc340162904}[]{#_Toc360181537}[]{#_Toc360181538}[]{#_Toc360181539}[]{#_Toc360181540}[]{#_Toc360181541}[]{#_Toc360181542}[]{#_Toc360181543}[]{#_Toc360181544}[]{#_Toc360181545}[]{#_Toc360181546}[]{#_Toc360181547}[]{#_Toc360181548}[]{#_Toc360181549}[]{#_Toc360181550}[]{#_Toc360181551}[]{#_Toc360181552}[]{#_Toc360181553}[]{#_Toc360181554}[]{#_Toc360181555}[]{#_Toc360181556}[]{#_Toc360181557}[]{#_Toc360181558}[]{#_Toc360181559}[]{#_Toc360181560}[]{#_Toc360181561}[]{#_Toc360181562}[]{#_Toc360181563}[]{#_Toc360181564}[]{#_Toc360181565}[]{#_Toc360181566}[]{#_Toc360181567}[]{#_Toc360181703}
+**[slot** *slot-number*]：显示指定成员设备/PEX的EVI统计信息。*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。（集中式IRF设备）（支持IRF3的设备）
 
 **EVI \-- EVI Probe命令 \-- display system internal evi vlan-mapping**
 
 ------------------------------------------------------------------------
 
-[**[display system internal evi vlan-mapping]{lang="EN-US"}**]{#struct_0_x1633_18491_575728594}[命令用来显示]{style="font-family:宋体"}[EVI]{lang="EN-US"}[的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[映射信息。]{style="font-family:宋体"}
+**[display system internal evi vlan-mapping**]命令用来显示EVI的VLAN映射信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1633_18491_x411447997}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_x1633_18491_126633791}
+集中式设备：
 
-[**[display system internal evi vlan-mapping vlan]{lang="EN-US"}**[ *vlan-id* **interface** *interface-type interface-number*]{lang="EN-US"}]{#struct_0_x1633_18491_2003141677}
+**[display system internal evi vlan-mapping vlan** *vlan-id* **interface** *interface-type interface-number*]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1633_18491_x686519396}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display system internal evi vlan-mapping vlan]{lang="EN-US"}**[ *vlan-id* **interface** *interface-type interface-number* **slot** *slot-number* \[ **cpu** *cpu-number* \]]{lang="EN-US"}]{#struct_0_x1633_18491_x1114827628}
+**[display system internal evi vlan-mapping vlan** *vlan-id* **interface** *interface-type interface-number* **slot** *slot-number* [ **cpu** *cpu-number* ]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1633_18491_825310230}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display system internal evi vlan-mapping vlan]{lang="EN-US"}**[ *vlan-id* **interface** *interface-type interface-number* **chassis** *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \]]{lang="EN-US"}]{#struct_0_x1633_18491_1510954371}
+**[display system internal evi vlan-mapping vlan** *vlan-id* **interface** *interface-type interface-number* **chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1633_18491_x1398950076}
+【视图】
 
-[[Probe]{lang="EN-US"}]{#struct_0_x1633_18491_x1521836425}[视图]{style="font-family:宋体"}
+Probe视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1633_18491_1257475035}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1633_18491_872930695}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1633_18491_x1255578472}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1633_18491_806311768}
+【参数】
 
-[**[vlan ]{lang="EN-US"}***[vlan-id]{lang="EN-US"}*]{#struct_0_x1633_18491_1963040185}[：显示指定本地]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[映射信息。]{style="font-family:宋体"}[v*lan-id*]{lang="EN-US"}[表示]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vlan ***vlan-id*]：显示指定本地VLAN的VLAN映射信息。v*lan-id*表示VLAN编号，取值范围为1～4094。
 
-[**[interface]{lang="EN-US"}**[ *interface-type interface-number*]{lang="EN-US"}]{#struct_0_x1633_18491_1894601668}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[接口]{style="font-family:宋体"}[的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[映射信息。]{style="font-family:宋体"}
+**[interface** *interface-type interface-number*]：显示指定接口的VLAN映射信息。
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x1633_18491_1997726666}[：显示指定单板的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[映射信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定单板的VLAN映射信息。*slot-number*表示单板所在的槽位号。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x1633_18491_x1398884540}[：显示指定成员设备的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[映射信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（]{style="font-family:宋体"}[不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备的VLAN映射信息。*slot-number*表示设备在IRF中的成员编号。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x1633_18491_x624678725}[：显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[映射信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备/PEX的VLAN映射信息。*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1633_18491_1741992027}[：显示指定成员设备上指定单板的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[映射]{style="font-family:宋体"}[信息。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定成员设备上指定单板的VLAN映射信息。*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1633_18491_x1927436689}[：显示指定单板的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[映射]{style="font-family:宋体"}[信息。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成]{style="font-family:宋体"}[员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号]{style="font-family:宋体"}[，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定单板的VLAN映射信息。*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu ]{lang="EN-US"}***[cpu-number]{lang="EN-US"}*]{#struct_0_x1633_18491_489178173}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上]{style="font-family:宋体"}[的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[映射信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号。只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
-:::
-
-::: {#-1214142678 .myid}
-[]{#_Toc404798842}[]{#struct_0_x1633_18491_1801131188}[]{#_Toc349048579}[]{#_Toc342471544}[]{#_Toc360181705}[]{#_Toc360181706}[]{#_Toc360181707}[]{#_Toc360181708}[]{#_Toc360181709}[]{#_Toc360181710}[]{#_Toc360181711}[]{#_Toc360181712}[]{#_Toc360181713}[]{#_Toc360181714}[]{#_Toc360181715}[]{#_Toc360181731}
+**[cpu ***cpu-number*]：显示指定CPU上的VLAN映射信息。*cpu-number*表示CPU编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
 **EVI \-- EVI Probe命令 \-- display system internal evi vlan-status**
 
 ------------------------------------------------------------------------
 
-[**[display system internal evi vlan-status]{lang="EN-US"}**]{#struct_0_x1633_18491_1126799454}[命令用来显示]{style="font-family:宋体"}[EVI]{lang="EN-US"}[保存的指定]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口下的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[下发驱动信息。]{style="font-family:宋体"}
+**[display system internal evi vlan-status**]命令用来显示EVI保存的指定EVI隧道接口下的VLAN下发驱动信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1633_18491_x702788361}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_x1633_18491_x2116053410}
+集中式设备：
 
-[**[display system internal evi vlan-status interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}***[ vlan ]{lang="EN-US"}***[vlan-id]{lang="EN-US"}*]{#struct_0_x1633_18491_x2133006811}
+**[display system internal evi vlan-status interface tunnel*** interface-number*** vlan ***vlan-id*]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1633_18491_x1398687932}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display system internal evi vlan-status interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}***[ vlan ]{lang="EN-US"}***[vlan-id]{lang="EN-US"}***[ slot]{lang="EN-US"}**]{#struct_0_x1633_18491_x1511155299}**[ ]{lang="EN-US"}***[slot-number ]{lang="EN-US"}*[\[ **cpu** *cpu-number* \]]{lang="EN-US"}
+**[display system internal evi vlan-status interface tunnel*** interface-number*** vlan ***vlan-id*** slot**]*****slot-number * **cpu** *cpu-number*
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1633_18491_194442027}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display system internal evi vlan-status interface tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}***[ vlan ]{lang="EN-US"}***[vlan-id]{lang="EN-US"}***[ chassis]{lang="EN-US"}**[ *chassis-number* ]{lang="EN-US"}**[slot]{lang="EN-US"}**]{#struct_0_x1633_18491_x663731377}**[ ]{lang="EN-US"}***[slot-number ]{lang="EN-US"}*[\[ **cpu** *cpu-number* \]]{lang="EN-US"}
+**[display system internal evi vlan-status interface tunnel*** interface-number*** vlan ***vlan-id*** chassis** *chassis-number* **slot**]*****slot-number * **cpu** *cpu-number*
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1633_18491_x758213118}
+【视图】
 
-[[Probe]{lang="EN-US"}]{#struct_0_x1633_18491_x601582570}[视图]{style="font-family:宋体"}
+Probe视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1633_18491_x184416239}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1633_18491_x1186910687}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1633_18491_2073520230}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1633_18491_x1398622396}
+【参数】
 
-[**[interface]{lang="EN-US"}[ tunnel]{lang="EN-US"}***[ interface-number]{lang="EN-US"}*]{#struct_0_x1633_18491_x1314082923}[：指定]{style="font-family:宋体"}[EVI]{lang="EN-US"}[隧道接口。]{style="font-family:宋体"}
+**[interface tunnel*** interface-number*]：指定EVI隧道接口。
 
-[**[vlan ]{lang="EN-US"}***[vlan-id]{lang="EN-US"}*]{#struct_0_x1633_18491_1549995444}[：指定]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[。]{style="font-family:宋体"}*[vlan-id]{lang="EN-US"}*[表示]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[编号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4094]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vlan ***vlan-id*]：指定VLAN。*vlan-id*表示VLAN编号，取值范围为1～4094。
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x1633_18491_196863201}[：显示指定]{style="font-family:宋体"}[单板的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[保存的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[下发驱动信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位]{style="font-family:宋体"}[号。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定单板的EVI保存的VLAN下发驱动信息。*slot-number*表示单板所在的槽位号。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x1633_18491_1462779071}[：显示指定成员设备的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[保存的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[下发驱动]{style="font-family:宋体"}[信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备的EVI保存的VLAN下发驱动信息。*slot-number*表示设备在IRF中的成员编号。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x1633_18491_538120689}[：显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[的]{style="font-family:宋体"}[EVI]{lang="EN-US"}[保存的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[下发驱动信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编]{style="font-family:宋体"}[号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备/PEX的EVI保存的VLAN下发驱动信息。*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。（集中式IRF设备）（支持IRF3的设备）
 
-[**[cpu ]{lang="EN-US"}***[cpu-number]{lang="EN-US"}*]{#struct_0_x1633_18491_489374781}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上]{style="font-family:宋体"}[EVI]{lang="EN-US"}[保存的]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[下发驱动信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号。只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
-:::
-
-::: {#665348980 .myid}
-[]{#_Toc404798843}[]{#struct_0_x1633_18491_x447745365}[]{#_Toc345077579}[]{#_Toc360181733}[]{#_Toc360181734}[]{#_Toc360181735}[]{#_Toc360181736}[]{#_Toc360181737}[]{#_Toc360181738}[]{#_Toc360181739}[]{#_Toc360181740}[]{#_Toc360181741}[]{#_Toc360181758}
+**[cpu ***cpu-number*]：显示指定CPU上EVI保存的VLAN下发驱动信息。*cpu-number*表示CPU编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
 **EVI \-- EVI Probe命令 \-- display system internal eviisis status**
 
 ------------------------------------------------------------------------
 
-[**[display system internal eviisis status]{lang="EN-US"}**]{#struct_0_x1633_18491_x2117094498}[命令用来显示]{style="font-family:宋体"}[EVI IS-IS]{lang="EN-US"}[进程的状态信息。]{style="font-family:宋体"}
+**[display system internal eviisis status**]命令用来显示EVI IS-IS进程的状态信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1633_18491_1910006034}
+【命令】
 
-[**[display system internal eviisis status]{lang="EN-US"}**]{#struct_0_x1633_18491_x2087719332}
+**[display system internal eviisis status**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1633_18491_x976952258}
+【视图】
 
-[[Probe]{lang="EN-US"}]{#struct_0_x1633_18491_x1754338281}[视图]{style="font-family:宋体"}
+Probe视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1633_18491_x1239159997}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1633_18491_983975915}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1633_18491_x1399015611}
-:::
-
-::: {#-1628633610 .myid}
-[]{#_Toc404798844}[]{#struct_0_x1633_18491_603271147}[]{#_Toc342056480}[]{#_Toc338505887}[]{#_Toc360181760}[]{#_Toc360181761}[]{#_Toc360181762}[]{#_Toc360181763}[]{#_Toc360181764}[]{#_Toc360181765}[]{#_Toc360181766}[]{#_Toc360181767}[]{#_Toc360181768}[]{#_Toc360181769}[]{#_Toc360181770}[]{#_Toc360181771}[]{#_Toc360181772}[]{#_Toc360181773}[]{#_Toc360181774}[]{#_Toc360181799}
+mdc-admin
 
 **EVI \-- EVI Probe命令 \-- display system internal evi-link data**
 
 ------------------------------------------------------------------------
 
-[**[display system internal evi-link data]{lang="EN-US"}**]{#struct_0_x1633_18491_1544389105}[命令用来显示]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口内核数据信息。]{style="font-family:宋体"}
+**[display system internal evi-link data**]命令用来显示EVI-Link接口内核数据信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x1633_18491_x1398753467}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_x1633_18491_x77387304}
+集中式设备：
 
-[**[display system internal evi-link data interface evi-link]{lang="EN-US"}**[ *number* \[ **cpu** *cpu-number* \]]{lang="EN-US"}]{#struct_0_x1633_18491_x1259047015}
+**[display system internal evi-link data interface evi-link** *number* [ **cpu** *cpu-number* ]]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x1633_18491_x1779260276}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[display system internal evi-link data interface evi-link]{lang="EN-US"}**[ *number* \[ **slot** *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}]{#struct_0_x1633_18491_1391336326}
+**[display system internal evi-link data interface evi-link** *number* [ **slot** *slot-number* [ **cpu** *cpu-number*  ]]]
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x1633_18491_x1355070968}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[display system internal evi-link data interface evi-link]{lang="EN-US"}**[ *number* \[ **chassis** *chassis-number* **slot** *slot-number* \[ **cpu** *cpu-number* \] \]]{lang="EN-US"}]{#struct_0_x1633_18491_1632951824}
+**[display system internal evi-link data interface evi-link** *number* [ **chassis** *chassis-number* **slot** *slot-number* [ **cpu** *cpu-number*  ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x1633_18491_359374682}
+【视图】
 
-[[Probe]{lang="EN-US"}]{#struct_0_x1633_18491_x786744955}[视图]{style="font-family:宋体"}
+Probe视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x1633_18491_x1398687931}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x1633_18491_54928642}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x1633_18491_1582504656}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x1633_18491_x570799819}
+【参数】
 
-[**[interface evi-link ]{lang="EN-US"}***[number]{lang="EN-US"}*]{#struct_0_x1633_18491_x925374163}[：显示指定]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口的内核数据信息。]{style="font-family:宋体"}*[number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口编号，取值为已创建的]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口编号。]{style="font-family:宋体"}
+**[interface evi-link ***number*]：显示指定EVI-Link接口的内核数据信息。*number*表示EVI-Link接口编号，取值为已创建的EVI-Link接口编号。
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x1633_18491_407776913}[：显示指定单板的]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口内核数据信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果不指定本参数，则显示主用主控板的信息。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定单板的EVI-Link接口内核数据信息。*slot-number*表示单板所在的槽位号。如果不指定本参数，则显示主用主控板的信息。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x1633_18491_353961715}[：显示指定成员设备的]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口内核数据信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。如果不指定本参数，则显示主成员设备的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备的EVI-Link接口内核数据信息。*slot-number*表示设备在IRF中的成员编号。如果不指定本参数，则显示主成员设备的信息。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x1633_18491_134836162}[：显示指定成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[的]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口内核数据信息。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。如果不指定本参数，则显示主成员设备的信息。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot** *slot-number*]：显示指定成员设备/PEX的EVI-Link接口内核数据信息。*slot-number*表示设备在IRF中的成员编号或者PEX的虚拟槽位号。如果不指定本参数，则显示主成员设备的信息。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1633_18491_225685262}[：显示指定成员设备上指定单板的]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口内核数据信息。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。如果不指定本参数，则显示全局主用主控板的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定成员设备上指定单板的EVI-Link接口内核数据信息。*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。如果不指定本参数，则显示全局主用主控板的信息。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x1633_18491_1521858710}[：显示指定单板的]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口内核数据信息。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板或]{style="font-family:宋体"}[PEX]{lang="EN-US"}[所在的槽位号。如果不指定本参数，则显示全局主用主控板的信息。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：显示指定单板的EVI-Link接口内核数据信息。*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板或PEX所在的槽位号。如果不指定本参数，则显示全局主用主控板的信息。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[cpu ]{lang="EN-US"}***[cpu-number]{lang="EN-US"}*]{#struct_0_x1633_18491_x1076512547}[：]{style="font-family:宋体"}[显示指定]{style="font-family:宋体"}[CPU]{lang="EN-US"}[上的]{style="font-family:宋体"}[EVI-Link]{lang="EN-US"}[接口内核数据信息。]{style="font-family:宋体"}*[cpu-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[CPU]{lang="EN-US"}[编号。只有指定的]{style="font-family:宋体"}**[slot]{lang="EN-US"}**[支持多]{style="font-family:宋体"}[CPU]{lang="EN-US"}[时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[cpu ***cpu-number*]：显示指定CPU上的EVI-Link接口内核数据信息。*cpu-number*表示CPU编号。只有指定的**slot**支持多CPU时，才能配置该参数。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
-:::

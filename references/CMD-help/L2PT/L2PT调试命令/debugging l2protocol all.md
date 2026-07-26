@@ -1,433 +1,411 @@
-::: {#944218427 .myid}
-[]{#_Toc404784707}[]{#struct_0_x5462_x3353_x232249797}
 
 **L2PT \-- L2PT调试命令 \-- debugging l2protocol all**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_604842171}
+【命令】
 
-[**[debugging l2protocol all]{lang="EN-US"}**]{#struct_0_x5462_x3353_x90596759}
+**[debugging l2protocol all**]
 
-[**[undo debugging l2protocol all]{lang="EN-US"}**]{#struct_0_x5462_x3353_x918663263}
+**[undo debugging l2protocol all**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_x1832553200}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x5462_x3353_x1960932770}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_x1178314023}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5462_x3353_x227621257}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5462_x3353_x1327204808}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_x596242121}
+【参数】
 
-[[无]{style="font-family:宋体"}]{#struct_0_x5462_x3353_510409802}
+无
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_113948608}
+【描述】
 
-[**[debugging l2protocol all]{lang="EN-US"}**]{#struct_0_x5462_x3353_1268591465}[命令用于打开]{style="font-family:
-宋体"}[L2PT]{lang="EN-US"}[的所有调试信息开关。]{style="font-family:宋体"}**[undo debugging l2protocol all]{lang="EN-US"}**[命令用于关闭]{style="font-family:
-宋体"}[L2PT]{lang="EN-US"}[的所有调试信息开关。]{style="font-family:宋体"}
+**[debugging l2protocol all**]命令用于打开L2PT的所有调试信息开关。**undo debugging l2protocol all**命令用于关闭L2PT的所有调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[L2PT]{lang="EN-US"}]{#struct_0_x5462_x3353_1811466174}[的所有调试信息开关均处于关闭状态。]{style="font-family:宋体"}
-:::
-
-::: {#-555509580 .myid}
-[]{#_Toc404784708}[]{#struct_0_x5462_x3353_850980308}[]{#_Toc398300818}[]{#_Toc398300819}[]{#_Toc398300820}[]{#_Toc398300821}[]{#_Toc398300822}
+缺省情况下，L2PT的所有调试信息开关均处于关闭状态。
 
 **L2PT \-- L2PT调试命令 \-- debugging l2protocol error**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_x1587295785}
+【命令】
 
-[**[debugging l2protocol error]{lang="EN-US"}**]{#struct_0_x5462_x3353_1982721482}
+**[debugging l2protocol error**]
 
-[**[undo debugging l2protocol error]{lang="EN-US"}**]{#struct_0_x5462_x3353_235924388}
+**[undo debugging l2protocol error**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_x961241770}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x5462_x3353_x321415882}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_x1528847473}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5462_x3353_740831379}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5462_x3353_x967731855}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_450401791}
+【参数】
 
-[[无]{style="font-family:宋体"}]{#struct_0_x5462_x3353_x104436554}
+无
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_x250291557}
+【描述】
 
-[**[debugging ]{lang="EN-US"}[l2protocol error]{lang="EN-US"}**]{#struct_0_x5462_x3353_x1122927289}[命令用来打开]{style="font-family:宋体"}[L2PT]{lang="EN-US"}[错误调试信息开关。]{style="font-family:宋体"}**[undo debugging ]{lang="EN-US"}[l2protocol error]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[L2PT]{lang="EN-US"}[错误调试信息开关。]{style="font-family:宋体"}
+**[debugging l2protocol error**]命令用来打开L2PT错误调试信息开关。**undo debugging l2protocol error**命令用来关闭L2PT错误调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[L2PT]{lang="EN-US"}]{#struct_0_x5462_x3353_x869879801}[错误调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，L2PT错误调试信息开关处于关闭状态。
 
-[[表1-1 ]{lang="EN-US"}[debugging l2protocol error]{lang="EN-US"}]{#struct_0_x5462_x3353_891023755}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging l2protocol error命令输出信息描述表
 
-[]{#table_struct_0_x306004327}[[字段]{style="font-family:黑体"}]{#struct_0_x5462_x3353_1057395592}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x5462_x3353_x2100830682}
+描述
 
-[[Failed to multicast a *Protocol_Type* packet to the *Network_Type*.]{lang="EN-US"}]{#struct_0_x5462_x3353_1860881377}
+Failed to multicast a *Protocol_Type* packet to the *Network_Type*.
 
-[[向]{style="font-family:宋体"}*[Network_Type]{lang="EN-US"}*]{#struct_0_x5462_x3353_x489371804}[网络发送]{style="font-family:宋体"}*[Protocol_Type]{lang="EN-US"}*[报文失败，]{style="font-family:宋体"}*[Protocol_Type]{lang="EN-US"}*[包括]{style="font-family:宋体"}[CDP]{lang="EN-US"}[、]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[、]{style="font-family:宋体"}[GVRP]{lang="EN-US"}[、]{style="font-family:宋体"}[PAGP]{lang="EN-US"}[、]{style="font-family:宋体"}[PVST]{lang="EN-US"}[、]{style="font-family:宋体"}[VTP]{lang="EN-US"}[、]{style="font-family:宋体"}[tunnel]{lang="EN-US"}[，]{style="font-family:宋体"}*[Network_Type]{lang="EN-US"}*[包括]{style="font-family:宋体"}[customer network]{lang="EN-US"}[、]{style="font-family:宋体"}[service provider network]{lang="EN-US"}
+向*Network_Type*网络发送*Protocol_Type*报文失败，*Protocol_Type*包括CDP、DLDP、GVRP、PAGP、PVST、VTP、tunnel，*Network_Type*包括customer network、service provider network
 
-[[Failed to multicast an *Protocol_Type* packet to the *Network_Type*.]{lang="EN-US"}]{#struct_0_x5462_x3353_1767641585}
+Failed to multicast an *Protocol_Type* packet to the *Network_Type*.
 
-[[向]{style="font-family:宋体"}*[Network_Type]{lang="EN-US"}*]{#struct_0_x5462_x3353_x825833428}[网络发送]{style="font-family:宋体"}*[Protocol_Type]{lang="EN-US"}*[报文失败，]{style="font-family:宋体"}*[Protocol_Type]{lang="EN-US"}*[包括]{style="font-family:宋体"}[EOAM]{lang="EN-US"}[、]{style="font-family:宋体"}[LACP]{lang="EN-US"}[、]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[、]{style="font-family:宋体"}[MVRP]{lang="EN-US"}[、]{style="font-family:宋体"}[STP]{lang="EN-US"}[，]{style="font-family:宋体"}*[Network_Type]{lang="EN-US"}*[包括]{style="font-family:宋体"}[customer network]{lang="EN-US"}[、]{style="font-family:宋体"}[service provider network]{lang="EN-US"}
+向*Network_Type*网络发送*Protocol_Type*报文失败，*Protocol_Type*包括EOAM、LACP、LLDP、MVRP、STP，*Network_Type*包括customer network、service provider network
 
-[[Failed to broadcast a *PacketType* packet in VLAN *vlan-id*.]{lang="EN-US"}]{#struct_0_x5462_x3353_1351180207}
+Failed to broadcast a *PacketType* packet in VLAN *vlan-id*.
 
-[[在]{style="font-family:宋体"}[VLAN *vlan-id*]{lang="EN-US"}]{#struct_0_x5462_x3353_990848242}[内广播]{style="font-family:宋体"}*[PacketType]{lang="EN-US"}*[报文失败。]{style="font-family:宋体"}*[PacketType]{lang="EN-US"}*[包括]{style="font-family:宋体"}[CDP]{lang="EN-US"}[、]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[、]{style="font-family:宋体"}[GVRP]{lang="EN-US"}[、]{style="font-family:宋体"}[PAGP]{lang="EN-US"}[、]{style="font-family:宋体"}[PVST]{lang="EN-US"}[、]{style="font-family:宋体"}[VTP]{lang="EN-US"}[、]{style="font-family:宋体"}[tunnel]{lang="EN-US"}
+在VLAN *vlan-id*内广播*PacketType*报文失败。*PacketType*包括CDP、DLDP、GVRP、PAGP、PVST、VTP、tunnel
 
-[[Failed to broadcast an *PacketType* packet in VLAN *vlan-id*.]{lang="EN-US"}]{#struct_0_x5462_x3353_x765372454}
+Failed to broadcast an *PacketType* packet in VLAN *vlan-id*.
 
-[[在]{style="font-family:宋体"}[VLAN *vlan-id*]{lang="EN-US"}]{#struct_0_x5462_x3353_1199114803}[内广播]{style="font-family:宋体"}*[PacketType]{lang="EN-US"}*[报文失败。]{style="font-family:宋体"}*[PacketType]{lang="EN-US"}*[包括]{style="font-family:宋体"}[unrecognized tunnel]{lang="EN-US"}[、]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[、]{style="font-family:宋体"}[MVRP]{lang="EN-US"}[、]{style="font-family:宋体"}[STP]{lang="EN-US"}
+在VLAN *vlan-id*内广播*PacketType*报文失败。*PacketType*包括unrecognized tunnel、LLDP、MVRP、STP
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_547105530}
+\# 在设备上使能CDP协议的L2PT Tunnel功能后，打开L2PT调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5462_x3353_x1941863980}[在设备上使能]{style="font-family:宋体"}[CDP]{lang="EN-US"}[协议的]{style="font-family:宋体"}[L2PT Tunnel]{lang="FR"}[功能后，打开]{style="font-family:宋体"}[L2PT]{lang="EN-US"}[调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\<Sysname\> debugging l2protocol error
 
-[[\<Sysname\> debugging l2protocol error]{lang="EN-US"}]{#struct_0_x5462_x3353_1268294114}
+%Jun 13 09:50:53 672 2014 Sysname L2PT/7/ERROR:
 
-[%Jun 13 09:50:53 672 2014 Sysname L2PT/7/ERROR:]{lang="EN-US"}
+Failed to multicast a CDP packet to the customer network.
 
-[Failed to multicast a CDP packet to the customer network.]{lang="EN-US"}
+*// 向用户网络发送一个CDP报文失败。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x5462_x3353_216475257}*[向用户网络发送一个]{style="font-family:宋体"}[CDP]{lang="EN-US"}[报文失败。]{style="font-family:宋体"}*
+%Jun 13 09:50:53 672 2014 Sysname L2PT/7/ERROR:
 
-[[%Jun 13 09:50:53 672 2014 Sysname L2PT/7/ERROR:]{lang="EN-US"}]{#struct_0_x5462_x3353_x1109446553}
+Failed to broadcast an unrecognized tunnel packet in VLAN 3.
 
-[Failed to broadcast an unrecognized tunnel packet in VLAN 3.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_x5462_x3353_1496011489}*[向]{style="font-family:宋体"}[VLAN 3]{lang="EN-US"}[内广播一个不识别的]{style="font-family:宋体"}[tunnel]{lang="EN-US"}[报文失败]{style="font-family:宋体"}*
-
-::: {#-631585209 .myid}
-[]{#_Toc404784709}[]{#struct_0_x5462_x3353_1863902218}
+*// 向VLAN 3内广播一个不识别的tunnel报文失败*
 
 **L2PT \-- L2PT调试命令 \-- debugging l2protocol event**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_201557644}
+【命令】
 
-[**[debugging l2protocol event]{lang="EN-US"}**]{#struct_0_x5462_x3353_x303373823}
+**[debugging l2protocol event**]
 
-[**[undo debugging l2protocol event]{lang="EN-US"}**]{#struct_0_x5462_x3353_188578920}
+**[undo debugging l2protocol event**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_x1990703404}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x5462_x3353_x1000648062}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_1284351697}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5462_x3353_1206840361}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5462_x3353_x1467538712}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_x1745340233}
+【参数】
 
-[[无]{style="font-family:宋体"}]{#struct_0_x5462_x3353_1317931788}
+无
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_63606635}
+【描述】
 
-[**[debugging ]{lang="EN-US"}[l2protocol event]{lang="EN-US"}**]{#struct_0_x5462_x3353_x634740491}[命令用来打开]{style="font-family:宋体"}[L2PT]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}**[undo debugging l2protocol ]{lang="EN-US"}[event]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[L2PT]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}
+**[debugging l2protocol event**]命令用来打开L2PT事件调试信息开关。**undo debugging l2protocol event**命令用来关闭L2PT事件调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[L2PT]{lang="EN-US"}]{#struct_0_x5462_x3353_1356784316}[事件调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，L2PT事件调试信息开关处于关闭状态。
 
-[[表1-2 ]{lang="EN-US"}[debugging l2protocol event]{lang="EN-US"}]{#struct_0_x5462_x3353_1023169093}[命令输出信息描述表]{style="font-family:黑体"}
+表1-2 debugging l2protocol event命令输出信息描述表
 
-[]{#table_struct_0_x302295523}[[字段]{style="font-family:黑体"}]{#struct_0_x5462_x3353_x998748883}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x5462_x3353_1871348088}
+描述
 
-[[Received *IF_event_name* event for *IfName.*]{lang="EN-US"}]{#struct_0_x5462_x3353_x1364526297}
+Received *IF_event_name* event for *IfName.*
 
-[[收到接口]{style="font-family:宋体"}*[IfName]{lang="EN-US"}*]{#struct_0_x5462_x3353_x223695086}[的]{style="font-family:宋体"}*[IF_event_name]{lang="EN-US"}*[事件，]{style="font-family:宋体"}[IF\_*event_name*]{lang="EN-US"}[包括]{style="font-family:宋体"}[IF_DELETE]{lang="EN-US"}[、]{style="font-family:宋体"}[IF_ACTIVE]{lang="EN-US"}[、]{style="font-family:宋体"}[IF_DEACTIVE]{lang="EN-US"}
+收到接口*IfName*的*IF_event_name*事件，IF\_*event_name*包括IF_DELETE、IF_ACTIVE、IF_DEACTIVE
 
-[*[IfName ]{lang="EN-US"}*[joined the ]{lang="EN-US"}]{#struct_0_x5462_x3353_465347537}[[aggregation group that corresponds to aggregate ]{lang="EN-US"}]{#_Toc384888506}[interface *IfAggName.*]{lang="EN-US"}
+*[IfName *joined the ]aggregation group that corresponds to aggregate interface *IfAggName.*
 
-[[接口]{style="font-family:宋体"}*[IfName]{lang="EN-US"}*]{#struct_0_x5462_x3353_1643891087}[加入聚合组，该聚合组对应的聚合口为]{style="font-family:宋体"}*[IfAggName]{lang="EN-US"}*
+接口*IfName*加入聚合组，该聚合组对应的聚合口为*IfAggName*
 
-[*[IfName ]{lang="EN-US"}*[leaved the aggregation group that corresponds to aggregate interface *IfAggName.*]{lang="EN-US"}]{#struct_0_x5462_x3353_x2070169744}
+*[IfName *leaved the aggregation group that corresponds to aggregate interface *IfAggName.*]
 
-[[接口]{style="font-family:宋体"}*[IfName]{lang="EN-US"}*]{#struct_0_x5462_x3353_67105961}[退出聚合组，该聚合组对应的聚合口为]{style="font-family:宋体"}*[IfAggName]{lang="EN-US"}*
+接口*IfName*退出聚合组，该聚合组对应的聚合口为*IfAggName*
 
-[[Received SLOT_INSERT event for slot *slot_id.*]{lang="EN-US"}]{#struct_0_x5462_x3353_x456335948}[（分布式设备－独立运行模式、集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+Received SLOT_INSERT event for slot *slot_id.*（分布式设备－独立运行模式、集中式IRF设备）
 
-[[Received SLOT_INSERT event for chassis *chassis_id* slot *slot_id.*]{lang="EN-US"}]{#struct_0_x5462_x3353_755673893}[（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+Received SLOT_INSERT event for chassis *chassis_id* slot *slot_id.*（分布式设备－IRF模式）
 
-[[收到板]{style="font-family:宋体"}*[slot_id]{lang="EN-US"}*]{#struct_0_x5462_x3353_1364357058}[的]{style="font-family:宋体"}[SLOT_INSERT]{lang="EN-US"}[事件（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+收到板*slot_id*的SLOT_INSERT事件（分布式设备－独立运行模式/集中式IRF设备）
 
-[[收到成员设备]{style="font-family:宋体"}*[chassis_id]{lang="EN-US"}*]{#struct_0_x5462_x3353_714703913}[上板]{style="font-family:宋体"}*[slot_id]{lang="EN-US"}*[的]{style="font-family:宋体"}[SLOT_INSERT]{lang="EN-US"}[事件（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+收到成员设备*chassis_id*上板*slot_id*的SLOT_INSERT事件（分布式设备－IRF模式）
 
-[[Received ISSU PRESOFTREBOOT event for slot *slot_id*.]{lang="EN-US"}]{#struct_0_x5462_x3353_1012941760}[（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+Received ISSU PRESOFTREBOOT event for slot *slot_id*.（分布式设备－独立运行模式/集中式IRF设备）
 
-[[Received ISSU PRESOFTREBOOT event for chassis *chassis_id* slot *slot_id*.]{lang="EN-US"}]{#struct_0_x5462_x3353_245075813}[（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+Received ISSU PRESOFTREBOOT event for chassis *chassis_id* slot *slot_id*.（分布式设备－IRF模式）
 
-[[收到板]{style="font-family:宋体"}*[slot_id]{lang="EN-US"}*]{#struct_0_x5462_x3353_x1684030134}[的]{style="font-family:宋体"}[ISSU PRESOFTREBOOT]{lang="EN-US"}[事件（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+收到板*slot_id*的ISSU PRESOFTREBOOT事件（分布式设备－独立运行模式/集中式IRF设备）
 
-[[收到成员设备]{style="font-family:宋体"}*[chassis_id]{lang="EN-US"}*]{#struct_0_x5462_x3353_836581113}[上板]{style="font-family:宋体"}*[slot_id]{lang="EN-US"}*[的]{style="font-family:宋体"}[ISSU PRESOFTREBOOT]{lang="EN-US"}[事件（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+收到成员设备*chassis_id*上板*slot_id*的ISSU PRESOFTREBOOT事件（分布式设备－独立运行模式/集中式IRF设备）
 
-[[Received ISSU SOFTREBOOTOK event for slot *slot_id.*]{lang="EN-US"}]{#struct_0_x5462_x3353_x40443145}[（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+Received ISSU SOFTREBOOTOK event for slot *slot_id.*（分布式设备－独立运行模式/集中式IRF设备）
 
-[[Received ISSU SOFTREBOOT_OK event for chassis *chassis_id* slot *slot_id*.]{lang="EN-US"}]{#struct_0_x5462_x3353_x1102092800}[（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+Received ISSU SOFTREBOOT_OK event for chassis *chassis_id* slot *slot_id*.（分布式设备－IRF模式）
 
-[[收到板]{style="font-family:宋体"}*[slot_id]{lang="EN-US"}*]{#struct_0_x5462_x3353_x201726883}[的]{style="font-family:宋体"}[ISSU SOFTREBOOTOK]{lang="EN-US"}[事件（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+收到板*slot_id*的ISSU SOFTREBOOTOK事件（分布式设备－独立运行模式/集中式IRF设备）
 
-[[收到成员设备]{style="font-family:宋体"}*[chassis_id]{lang="EN-US"}*]{#struct_0_x5462_x3353_x266609981}[上板]{style="font-family:宋体"}*[slot_id]{lang="EN-US"}*[的]{style="font-family:宋体"}[ISSU SOFTREBOOT_OK]{lang="EN-US"}[事件（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+收到成员设备*chassis_id*上板*slot_id*的ISSU SOFTREBOOT_OK事件（分布式设备－独立运行模式/集中式IRF设备）
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_x1844907695}
+\# 在设备上使能STP协议 tunneling功能后，打开L2PT调试信息开关，进行如下操作：拔去某一接口板，然后插入。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5462_x3353_1592972858}[在设备上使能]{style="font-family:宋体"}[STP]{lang="EN-US"}[协议]{style="font-family:宋体"}[ tunneling]{lang="EN-US"}[功能后，打开]{style="font-family:宋体"}[L2PT]{lang="EN-US"}[调试信息开关，进行如下操作：]{style="font-family:宋体"}[拔去某一接口板，然后插入。]{style="font-family:宋体"}
+\<Sysname\> debugging l2protocol event{.TerminalDisplayChar}
 
-[[[\<Sysname\> debugging l2protocol event]{lang="EN-US" style="font-size:8.5pt"}]{.TerminalDisplayChar}]{#struct_0_x5462_x3353_399208018}
+%Jun 13 09:59:53 672 2014 Sysname L2PT/7/EVENT:{.TerminalDisplayChar}
 
-[[%Jun 13 09:59:53 672 2014 Sysname L2PT/7/EVENT:]{lang="EN-US" style="font-size:8.5pt"}]{.TerminalDisplayChar}
+Received IF_DEACTIVE event for GigabitEthernet1/0/1.{.TerminalDisplayChar}
 
-[[Received IF_DEACTIVE event for GigabitEthernet1/0/1.]{lang="EN-US" style="font-size:8.5pt"}]{.TerminalDisplayChar}
+*// 拔去某一接口板，收到接口去激活事件* *，接口为GigabitEthernet1/0/1*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x5462_x3353_1930317875}*[拔去某一接口板，收到接口去激活事件]{style="font-family:宋体"}* *[，接口为]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}*
+%Jun 13 10:04:53 674 2014 Sysname L2PT/7/EVENT:{.TerminalDisplayChar}
 
-[[[%Jun 13 10:04:53 674 2014 Sysname L2PT/7/EVENT:]{lang="EN-US" style="font-size:8.5pt"}]{.TerminalDisplayChar}]{#struct_0_x5462_x3353_x361973908}
+GigabitEthernet1/0/1 joined the aggregation group that corresponds to aggregate interface BAGG1.{.TerminalDisplayChar}
 
-[[GigabitEthernet1/0/1 joined the aggregation group that corresponds to aggregate interface BAGG1.]{lang="EN-US" style="font-size:8.5pt"}]{.TerminalDisplayChar}
+*// 接口GigabitEthernet1/0/1加入聚合组，该聚合组对应的聚合接口为BAGG1*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x5462_x3353_x939819142}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[加入聚合组，该聚合组对应的聚合接口为]{style="font-family:宋体"}[BAGG1]{lang="EN-US"}*
+%Jun 13 10:04:53 674 2014 Sysname L2PT/7/EVENT:{.TerminalDisplayChar}
 
-[[[%Jun 13 10:04:53 674 2014 Sysname L2PT/7/EVENT:]{lang="EN-US" style="font-size:8.5pt"}]{.TerminalDisplayChar}]{#struct_0_x5462_x3353_x1761864880}
+GigabitEthernet1/0/1 leaved the aggregation group that corresponds to aggregate interface BAGG1.{.TerminalDisplayChar}
 
-[[GigabitEthernet1/0/1 leaved the aggregation group that corresponds to aggregate interface BAGG1.]{lang="EN-US" style="font-size:8.5pt"}]{.TerminalDisplayChar}
+*// 接口GigabitEthernet1/0/1退出聚合组，该聚合组对应的聚合接口为BAGG1*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x5462_x3353_x430493342}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[退出聚合组，该聚合组对应的聚合接口为]{style="font-family:宋体"}[BAGG1]{lang="EN-US"}*
+%Jun 13 10:04:53 674 2014 Sysname L2PT/7/EVENT:{.TerminalDisplayChar}
 
-[[[%Jun 13 10:04:53 674 2014 Sysname L2PT/7/EVENT:]{lang="EN-US" style="font-size:8.5pt"}]{.TerminalDisplayChar}]{#struct_0_x5462_x3353_x1767810824}
+Received SLOT_INSERT event for slot 2.{.TerminalDisplayChar}
 
-[[Received SLOT_INSERT event for slot 2.]{lang="EN-US" style="font-size:8.5pt"}]{.TerminalDisplayChar}
+*// 插入接口板，收到板插入事件，槽号为2（分布式设备－独立运行模式/集中式-IRF设备）*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x5462_x3353_1636996207}*[插入接口板，收到板插入事件，槽号为]{style="font-family:宋体"}[2]{lang="EN-US"}[（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[-IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}*
+%Jun 13 10:04:53 674 2014 Sysname L2PT/7/EVENT:{.TerminalDisplayChar}
 
-[[[%Jun 13 10:04:53 674 2014 Sysname L2PT/7/EVENT:]{lang="EN-US" style="font-size:8.5pt"}]{.TerminalDisplayChar}]{#struct_0_x5462_x3353_53291709}
+Received ISSU PRESOFTREBOOT event for slot 2.{.TerminalDisplayChar}
 
-[[Received ISSU PRESOFTREBOOT event for slot 2.]{lang="EN-US" style="font-size:8.5pt"}]{.TerminalDisplayChar}
+*// 收到板ISSU*{.TerminalDisplayChar}*PRESOFTREBOOT事件，槽号为2（分布式设备－独立运行模式/集中式-IRF设备）*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x5462_x3353_135275424}*[收到板]{style="font-family:宋体"}[ISSU]{lang="EN-US"}*[[ ]{lang="EN-US" style="font-size:8.5pt"}]{.TerminalDisplayChar}*[PRESOFTREBOOT]{lang="EN-US"}[事件，槽号为]{style="font-family:宋体"}[2]{lang="EN-US"}[（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[-IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}*
+%Jun 13 10:04:53 674 2014 Sysname L2PT/7/EVENT:{.TerminalDisplayChar}
 
-[[[%Jun 13 10:04:53 674 2014 Sysname L2PT/7/EVENT:]{lang="EN-US" style="font-size:8.5pt"}]{.TerminalDisplayChar}]{#struct_0_x5462_x3353_x1830792632}
+Received ISSU SOFTREBOOT_OK event for slot 2.{.TerminalDisplayChar}
 
-[[Received ISSU SOFTREBOOT_OK event for slot 2.]{lang="EN-US" style="font-size:8.5pt"}]{.TerminalDisplayChar}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_x5462_x3353_x134622078}*[收到板]{style="font-family:宋体"}[ISSU SOFTREBOOT_OK]{lang="EN-US"}[事件，槽号为]{style="font-family:宋体"}[2]{lang="EN-US"}[（分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[-IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}*
-
-::: {#2069268361 .myid}
-[]{#_Toc404784710}[]{#struct_0_x5462_x3353_1968557068}
+*// 收到板ISSU SOFTREBOOT_OK事件，槽号为2（分布式设备－独立运行模式/集中式-IRF设备）*
 
 **L2PT \-- L2PT调试命令 \-- debugging l2protocol packet**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_x2083028128}
+【命令】
 
-[**[debugging l2protocol packet]{lang="EN-US"}**[ \[ **drop** \| **receive** \| **send** \] \[ **interface** *interface-type* *interface-number* \]]{lang="EN-US"}]{#struct_0_x5462_x3353_x1744096491}
+**[debugging l2protocol packet**[ [ **drop** \| **receive** \| **send** ]  **interface** *interface-type* *interface-number* ]]
 
-[**[undo debugging l2protocol packet]{lang="EN-US"}**[ \[ **drop** \| **receive** \| **send** \] \[ **interface** *interface-type* *interface-number* \]]{lang="EN-US"}]{#struct_0_x5462_x3353_x863486554}
+**[undo debugging l2protocol packet**[ [ **drop** \| **receive** \| **send** ]  **interface** *interface-type* *interface-number* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_2086788329}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x5462_x3353_865060348}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_x598876002}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5462_x3353_1093210078}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5462_x3353_67000560}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_195230846}
+【参数】
 
-[**[drop]{lang="EN-US"}**]{#struct_0_x5462_x3353_248611811}[：表示丢弃报文调试信息开关。]{style="font-family:宋体"}
+**[drop**]：表示丢弃报文调试信息开关。
 
-[**[receive]{lang="EN-US"}**]{#struct_0_x5462_x3353_213108151}[：表示接收报文调试信息开关。]{style="font-family:宋体"}
+**[receive**]：表示接收报文调试信息开关。
 
-[**[send]{lang="EN-US"}**]{#struct_0_x5462_x3353_x507276288}[：表示发送报文调试信息开关。]{style="font-family:宋体"}
+**[send**]：表示发送报文调试信息开关。
 
-[**[interface]{lang="EN-US"}**[ *interface-type* *interface-number*]{lang="EN-US"}]{#struct_0_x5462_x3353_1333189101}[：表示指定接口上的调试信息开关。]{style="font-family:宋体"}*[interface-type]{lang="EN-US"}*[ *interface-number*]{lang="EN-US"}[表示接口类型和接口编号。如未指定本参数，表示所有接口上的调试信息开关。]{style="font-family:宋体"}
+**[interface** *interface-type* *interface-number*]：表示指定接口上的调试信息开关。*interface-type* *interface-number*表示接口类型和接口编号。如未指定本参数，表示所有接口上的调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_741885241}
+【描述】
 
-[**[debugging ]{lang="EN-US"}[l2protocol packet]{lang="EN-US"}**]{#struct_0_x5462_x3353_x45350032}[命令用来打开]{style="font-family:宋体"}[L2PT]{lang="EN-US"}[报文调试信息开关，当报文类型不一样时，报文的具体字段不同。]{style="font-family:宋体"}**[undo debugging ]{lang="EN-US"}[l2protocol packet]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[L2PT ]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}
+**[debugging l2protocol packet**]命令用来打开L2PT报文调试信息开关，当报文类型不一样时，报文的具体字段不同。**undo debugging l2protocol packet**命令用来关闭L2PT 报文调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[L2PT]{lang="EN-US"}]{#struct_0_x5462_x3353_x1763970456}[报文调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，L2PT报文调试信息开关处于关闭状态。
 
-[[需要注意的是，在指定本命令时，如果未指定]{style="font-family:宋体"}**[receive]{lang="EN-US"}**]{#struct_0_x5462_x3353_x1447498741}[、]{style="font-family:宋体"}**[send]{lang="EN-US"}**[和]{style="font-family:宋体"}**[drop]{lang="EN-US"}**[，则表示]{style="font-family:宋体"}[L2PT]{lang="EN-US"}[的所有报文调试信息开关。]{style="font-family:宋体"}
+需要注意的是，在指定本命令时，如果未指定**receive**、**send**和**drop**，则表示L2PT的所有报文调试信息开关。
 
-[[表1-3 ]{lang="EN-US"}[debugging l2protocol packet]{lang="EN-US"}]{#struct_0_x5462_x3353_x1690366993}[命令输出信息描述表]{style="font-family:黑体"}
+表1-3 debugging l2protocol packet命令输出信息描述表
 
-[]{#table_struct_0_x308884907}[[字段]{style="font-family:黑体"}]{#struct_0_x5462_x3353_x1329780635}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x5462_x3353_x1180764350}
+描述
 
-[*[IfName]{lang="EN-US"}*[ received a *PacketType* packet with PDU length *ulMsgTotal*.]{lang="EN-US"}]{#struct_0_x5462_x3353_x1055410623}
+*[IfName* received a *PacketType* packet with PDU length *ulMsgTotal*.]
 
-[[接口]{style="font-family:宋体"}*[IfName]{lang="EN-US"}*]{#struct_0_x5462_x3353_1752163323}[收到]{style="font-family:宋体"}*[PacketType]{lang="EN-US"}*[报文，]{style="font-family:宋体"}[PDU]{lang="EN-US"}[长度为]{style="font-family:宋体"}*[ulMsgTotal]{lang="EN-US"}*[。]{style="font-family:宋体"}*[PacketType]{lang="EN-US"}*[包括]{style="font-family:宋体"}[CDP]{lang="EN-US"}[、]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[、]{style="font-family:宋体"}[GVRP]{lang="EN-US"}[、]{style="font-family:宋体"}[PAGP]{lang="EN-US"}[、]{style="font-family:宋体"}[PVST]{lang="EN-US"}[、]{style="font-family:宋体"}[VTP]{lang="EN-US"}[、]{style="font-family:宋体"}[tunnel]{lang="EN-US"}
+接口*IfName*收到*PacketType*报文，PDU长度为*ulMsgTotal*。*PacketType*包括CDP、DLDP、GVRP、PAGP、PVST、VTP、tunnel
 
-[*[IfName]{lang="EN-US"}*[ received an *PacketType* packet with PDU length *ulMsgTotal*.]{lang="EN-US"}]{#struct_0_x5462_x3353_x1317472130}
+*[IfName* received an *PacketType* packet with PDU length *ulMsgTotal*.]
 
-[[接口]{style="font-family:宋体"}*[IfName]{lang="EN-US"}*]{#struct_0_x5462_x3353_2072560855}[收到]{style="font-family:宋体"}*[PacketType]{lang="EN-US"}*[报文，]{style="font-family:宋体"}[PDU]{lang="EN-US"}[长度为]{style="font-family:宋体"}*[ulMsgTotal]{lang="EN-US"}*[。]{style="font-family:宋体"}*[PacketType]{lang="EN-US"}*[包括]{style="font-family:宋体"}[EOAM ]{lang="EN-US"}[、]{style="font-family:宋体"}[LACP ]{lang="EN-US"}[、]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[、]{style="font-family:宋体"}[MVRP]{lang="EN-US"}[、]{style="font-family:宋体"}[STP]{lang="EN-US"}
+接口*IfName*收到*PacketType*报文，PDU长度为*ulMsgTotal*。*PacketType*包括EOAM 、LACP 、LLDP、MVRP、STP
 
-[*[IfName]{lang="EN-US"}*[ multicast a *PacketType* packet to the *Network_Type*.]{lang="EN-US"}]{#struct_0_x5462_x3353_x1363334996}
+*[IfName* multicast a *PacketType* packet to the *Network_Type*.]
 
-[[接口]{style="font-family:宋体"}*[IfName]{lang="EN-US"}*]{#struct_0_x5462_x3353_1480933912}[组播发送]{style="font-family:宋体"}*[PacketType]{lang="EN-US"}*[报文到]{style="font-family:宋体"}*[Network_Type]{lang="EN-US"}*[网络。]{style="font-family:宋体"}*[PacketType]{lang="EN-US"}*[包括]{style="font-family:宋体"}[CDP]{lang="EN-US"}[、]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[、]{style="font-family:宋体"}[GVRP]{lang="EN-US"}[、]{style="font-family:宋体"}[PAGP]{lang="EN-US"}[、]{style="font-family:宋体"}[PVST]{lang="EN-US"}[、]{style="font-family:宋体"}[VTP]{lang="EN-US"}[、]{style="font-family:宋体"}[tunnel]{lang="EN-US"}[；]{style="font-family:宋体"}*[Network_Type]{lang="EN-US"}*[包括]{style="font-family:宋体"}[customer network]{lang="EN-US"}[、]{style="font-family:宋体"}[service provider network]{lang="EN-US"}
+接口*IfName*组播发送*PacketType*报文到*Network_Type*网络。*PacketType*包括CDP、DLDP、GVRP、PAGP、PVST、VTP、tunnel；*Network_Type*包括customer network、service provider network
 
-[*[IfName]{lang="EN-US"}*[ multicast an *PacketType* packet to the *Network_Type*.]{lang="EN-US"}]{#struct_0_x5462_x3353_x202767951}
+*[IfName* multicast an *PacketType* packet to the *Network_Type*.]
 
-[[接口]{style="font-family:宋体"}*[IfName]{lang="EN-US"}*]{#struct_0_x5462_x3353_x18788525}[组播发送]{style="font-family:宋体"}*[PacketType]{lang="EN-US"}*[报文到]{style="font-family:宋体"}*[Network_Type]{lang="EN-US"}*[网络。]{style="font-family:宋体"}*[PacketType]{lang="EN-US"}*[包括]{style="font-family:宋体"}[EOAM]{lang="EN-US"}[、]{style="font-family:宋体"}[LACP]{lang="EN-US"}[、]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[、]{style="font-family:宋体"}[MVRP]{lang="EN-US"}[、]{style="font-family:宋体"}[STP]{lang="EN-US"}[；]{style="font-family:宋体"}*[Network_Type]{lang="EN-US"}*[包括]{style="font-family:宋体"}[customer network]{lang="EN-US"}[、]{style="font-family:宋体"}[service provider network]{lang="EN-US"}
+接口*IfName*组播发送*PacketType*报文到*Network_Type*网络。*PacketType*包括EOAM、LACP、LLDP、MVRP、STP；*Network_Type*包括customer network、service provider network
 
-[*[IfName]{lang="EN-US"}*[ broadcast a *PacketType* packet in VLAN *vlan-id*.]{lang="EN-US"}]{#struct_0_x5462_x3353_x551908240}
+*[IfName* broadcast a *PacketType* packet in VLAN *vlan-id*.]
 
-[[接口]{style="font-family:宋体"}*[IfName]{lang="EN-US"}*]{#struct_0_x5462_x3353_1221171137}[在]{style="font-family:宋体"}[VLAN *vlan-id*]{lang="EN-US"}[内广播]{style="font-family:宋体"}*[PacketType]{lang="EN-US"}*[报文。]{style="font-family:宋体"}*[PacketType]{lang="EN-US"}*[包括]{style="font-family:宋体"}[CDP]{lang="EN-US"}[、]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[、]{style="font-family:宋体"}[GVRP]{lang="EN-US"}[、]{style="font-family:宋体"}[PAGP]{lang="EN-US"}[、]{style="font-family:宋体"}[PVST]{lang="EN-US"}[、]{style="font-family:宋体"}[VTP]{lang="EN-US"}[、]{style="font-family:宋体"}[tunnel]{lang="EN-US"}
+接口*IfName*在VLAN *vlan-id*内广播*PacketType*报文。*PacketType*包括CDP、DLDP、GVRP、PAGP、PVST、VTP、tunnel
 
-[*[IfName]{lang="EN-US"}*[ broadcast an *PacketType* packet in VLAN *vlan-id*.]{lang="EN-US"}]{#struct_0_x5462_x3353_197830747}
+*[IfName* broadcast an *PacketType* packet in VLAN *vlan-id*.]
 
-[[接口]{style="font-family:宋体"}*[IfName]{lang="EN-US"}*]{#struct_0_x5462_x3353_1596619824}[在]{style="font-family:宋体"}[VLAN *vlan-id*]{lang="EN-US"}[内广播]{style="font-family:宋体"}*[PacketType]{lang="EN-US"}*[报文。]{style="font-family:宋体"}*[PacketType]{lang="EN-US"}*[包括]{style="font-family:宋体"}[unrecognized tunnel]{lang="EN-US"}[、]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[、]{style="font-family:宋体"}[MVRP]{lang="EN-US"}[、]{style="font-family:宋体"}[STP]{lang="EN-US"}
+接口*IfName*在VLAN *vlan-id*内广播*PacketType*报文。*PacketType*包括unrecognized tunnel、LLDP、MVRP、STP
 
-[*[IfName]{lang="EN-US"}*[ dropped a *PacketType* packet.]{lang="EN-US"}]{#struct_0_x5462_x3353_604776635}
+*[IfName* dropped a *PacketType* packet.]
 
-[[接口]{style="font-family:宋体"}*[IfName]{lang="EN-US"}*]{#struct_0_x5462_x3353_x1453299293}[丢弃]{style="font-family:宋体"}*[PacketType]{lang="EN-US"}*[报文。]{style="font-family:宋体"}*[PacketType]{lang="EN-US"}*[包括]{style="font-family:宋体"}[CDP]{lang="EN-US"}[、]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[、]{style="font-family:宋体"}[GVRP]{lang="EN-US"}[、]{style="font-family:宋体"}[PAGP]{lang="EN-US"}[、]{style="font-family:宋体"}[PVST]{lang="EN-US"}[、]{style="font-family:宋体"}[VTP]{lang="EN-US"}[、]{style="font-family:宋体"}[tunnel]{lang="EN-US"}
+接口*IfName*丢弃*PacketType*报文。*PacketType*包括CDP、DLDP、GVRP、PAGP、PVST、VTP、tunnel
 
-[*[IfName]{lang="EN-US"}*[ dropped an *PacketType* packet.]{lang="EN-US"}]{#struct_0_x5462_x3353_x1037980259}
+*[IfName* dropped an *PacketType* packet.]
 
-[[接口]{style="font-family:宋体"}*[IfName]{lang="EN-US"}*]{#struct_0_x5462_x3353_25347357}[丢弃]{style="font-family:宋体"}[PacketType]{lang="EN-US"}[报文。]{style="font-family:宋体"}*[PacketType]{lang="EN-US"}*[包括]{style="font-family:宋体"}[EOAM ]{lang="EN-US"}[、]{style="font-family:宋体"}[LACP]{lang="EN-US"}[、]{style="font-family:宋体"}[LLDP]{lang="EN-US"}[、]{style="font-family:宋体"}[MVRP]{lang="EN-US"}[、]{style="font-family:宋体"}[STP]{lang="EN-US"}
+接口*IfName*丢弃PacketType报文。*PacketType*包括EOAM 、LACP、LLDP、MVRP、STP
 
-[*[IfName]{lang="EN-US"}*[ dropped a tunnel packet because the interface has been enabled with l2protocol tunneling.]{lang="EN-US"}]{#struct_0_x5462_x3353_x1739145737}
+*[IfName* dropped a tunnel packet because the interface has been enabled with l2protocol tunneling.]
 
-[[接口]{style="font-family:宋体"}*[IfName]{lang="EN-US"}*]{#struct_0_x5462_x3353_x1201545735}[丢弃]{style="font-family:宋体"}[tunnel]{lang="EN-US"}[报文，因为接口使能了]{style="font-family:宋体"}[tunneling]{lang="EN-US"}[功能]{style="font-family:宋体"}
+接口*IfName*丢弃tunnel报文，因为接口使能了tunneling功能
 
-[[Destination MAC address]{lang="EN-US"}]{#struct_0_x5462_x3353_x559682906}
+Destination MAC address
 
-[[报文目的]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x5462_x3353_x112064108}[地址]{style="font-family:宋体"}
+报文目的MAC地址
 
-[[Source MAC address]{lang="EN-US"}]{#struct_0_x5462_x3353_1180935205}
+Source MAC address
 
-[[报文源]{style="font-family:宋体"}[MAC]{lang="EN-US"}]{#struct_0_x5462_x3353_x961307306}[地址]{style="font-family:宋体"}
+报文源MAC地址
 
-[[Outer VLAN ID]{lang="EN-US"}]{#struct_0_x5462_x3353_x356626144}
+Outer VLAN ID
 
-[[报文外层]{style="font-family:宋体"}[VLAN  ID]{lang="EN-US"}]{#struct_0_x5462_x3353_x509659347}
+报文外层VLAN  ID
 
-[[Inner VLAN ID]{lang="EN-US"}]{#struct_0_x5462_x3353_x2018833638}
+Inner VLAN ID
 
-[[报文内层]{style="font-family:宋体"}[VLAN ID]{lang="EN-US"}]{#struct_0_x5462_x3353_x1310367054}
+报文内层VLAN ID
 
-[[DSAP]{lang="EN-US"}]{#struct_0_x5462_x3353_1727255198}
+DSAP
 
-[[报文目的服务访问点信息]{style="font-family:宋体"}]{#struct_0_x5462_x3353_x1827219895}
+报文目的服务访问点信息
 
-[[SSAP]{lang="EN-US"}]{#struct_0_x5462_x3353_883925200}
+SSAP
 
-[[报文源服务访问点信息]{style="font-family:宋体"}]{#struct_0_x5462_x3353_21567516}
+报文源服务访问点信息
 
-[[Control]{lang="EN-US"}]{#struct_0_x5462_x3353_1767576049}
+Control
 
-[[报文]{style="font-family:宋体"}[control]{lang="EN-US"}]{#struct_0_x5462_x3353_x1267462458}[字段信息]{style="font-family:宋体"}
+报文control字段信息
 
-[[OUI]{lang="EN-US"}]{#struct_0_x5462_x3353_x1571506459}
+OUI
 
-[[报文]{style="font-family:宋体"}[OUI]{lang="EN-US"}]{#struct_0_x5462_x3353_x478863557}[字段信息]{style="font-family:宋体"}
+报文OUI字段信息
 
-[[SNAP type]{lang="EN-US"}]{#struct_0_x5462_x3353_1040021401}
+SNAP type
 
-[[报文]{style="font-family:宋体"}[SNAP]{lang="EN-US"}]{#struct_0_x5462_x3353_849721457}[封装协议类型信息]{style="font-family:宋体"}
+报文SNAP封装协议类型信息
 
-[[Protocol type]{lang="EN-US"}]{#struct_0_x5462_x3353_201492108}
+Protocol type
 
-[[报文]{style="font-family:宋体"}[ETH II]{lang="EN-US"}]{#struct_0_x5462_x3353_x1442282824}[封装协议类型信息]{style="font-family:宋体"}
+报文ETH II封装协议类型信息
 
-**[ ]{lang="EN-US"}**
+****
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5462_x3353_107382713}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5462_x3353_x623281401}[在设备上使能]{style="font-family:宋体"}[PVST]{lang="EN-US"}[和]{style="font-family:宋体"}[EOAM]{lang="EN-US"}[协议的]{style="font-family:宋体"}[L2PT Tunnel]{lang="EN-US"}[功能以及]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[协议的]{style="font-family:宋体"}[L2PT Drop]{lang="EN-US"}[功能，打开]{style="font-family:宋体"}[L2PT]{lang="EN-US"}[报文调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+\# 在设备上使能PVST和EOAM协议的L2PT Tunnel功能以及DLDP协议的L2PT Drop功能，打开L2PT报文调试信息开关。
 
-[[\<Sysname\> debugging l2protocol packet]{lang="EN-US"}]{#struct_0_x5462_x3353_x1029278384}
+\<Sysname\> debugging l2protocol packet
 
-[%Jun 13 09:50:53 672 2014 Sysname L2PT/7/PKT_RECV:]{lang="EN-US"}
+%Jun 13 09:50:53 672 2014 Sysname L2PT/7/PKT_RECV:
 
-[GigabitEthernet1/0/1 received a PVST packet with PDU length 150.]{lang="EN-US"}
+GigabitEthernet1/0/1 received a PVST packet with PDU length 150.
 
-[Destination MAC address   : 0100-0CCC-CCCD]{lang="EN-US"}
+Destination MAC address   : 0100-0CCC-CCCD
 
-[Source MAC address        : 0011-FFFE-0001]{lang="EN-US"}
+Source MAC address        : 0011-FFFE-0001
 
-[Outer VLAN ID             : 50]{lang="EN-US"}
+Outer VLAN ID             : 50
 
-[Inner VLAN ID             : 20]{lang="EN-US"}
+Inner VLAN ID             : 20
 
-[DSAP                      : 0x42]{lang="EN-US"}
+DSAP                      : 0x42
 
-[SSAP                      : 0x42]{lang="EN-US"}
+SSAP                      : 0x42
 
-[Control                   : 0x03]{lang="EN-US"}
+Control                   : 0x03
 
-[OUI                       : 0x00000C]{lang="EN-US"}
+OUI                       : 0x00000C
 
-[SNAP type                 : 0x010B]{lang="EN-US"}
+SNAP type                 : 0x010B
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x5462_x3353_1397731348}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[接收到一个]{style="font-family:宋体"}[PVST]{lang="EN-US"}[报文，报文]{style="font-family:宋体"}[PDU]{lang="EN-US"}[长度为]{style="font-family:宋体"}[150]{lang="EN-US"}*
+*// 接口GigabitEthernet1/0/1接收到一个PVST报文，报文PDU长度为150*
 
-[[%Jun 13 09:50:53 672 2014 Sysname L2PT/7/PKT_SEND:]{lang="EN-US"}]{#struct_0_x5462_x3353_x912464971}
+%Jun 13 09:50:53 672 2014 Sysname L2PT/7/PKT_SEND:
 
-[GigabitEthernet1/0/1 multicast an EOAM packet to customer networks.]{lang="EN-US"}
+GigabitEthernet1/0/1 multicast an EOAM packet to customer networks.
 
-[Destination MAC address   : 0180-C200-0002]{lang="EN-US"}
+Destination MAC address   : 0180-C200-0002
 
-[Source MAC address        : 0011-FFFE-0001]{lang="EN-US"}
+Source MAC address        : 0011-FFFE-0001
 
-[Outer vlan ID             : 50]{lang="EN-US"}
+Outer vlan ID             : 50
 
-[Inner vlan ID             : 20]{lang="EN-US"}
+Inner vlan ID             : 20
 
-[Protocol type             : 0x8809]{lang="EN-US"}
+Protocol type             : 0x8809
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x5462_x3353_x1364591833}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[向用户网络组播发送一个]{style="font-family:宋体"}[EOAM]{lang="EN-US"}[报文]{style="font-family:宋体"}*
+*// 接口GigabitEthernet1/0/1向用户网络组播发送一个EOAM报文*
 
-[[%Jun 13 09:50:53 672 2014 Sysname L2PT/7/PKT_SEND:]{lang="EN-US"}]{#struct_0_x5462_x3353_x1967697003}
+%Jun 13 09:50:53 672 2014 Sysname L2PT/7/PKT_SEND:
 
-[GigabitEthernet1/0/1 broadcast an EOAM packet in VLAN 5.]{lang="EN-US"}
+GigabitEthernet1/0/1 broadcast an EOAM packet in VLAN 5.
 
-[Destination MAC address   : 0180-C200-0002]{lang="EN-US"}
+Destination MAC address   : 0180-C200-0002
 
-[Source MAC address        : 0011-FFFE-0001]{lang="EN-US"}
+Source MAC address        : 0011-FFFE-0001
 
-[Outer VLAN ID             : 50]{lang="EN-US"}
+Outer VLAN ID             : 50
 
-[Inner VLAN ID             : 20]{lang="EN-US"}
+Inner VLAN ID             : 20
 
-[Protocol type             : 0x8809]{lang="EN-US"}
+Protocol type             : 0x8809
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x5462_x3353_584300390}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[在]{style="font-family:宋体"}[VLAN 5]{lang="EN-US"}[内广播一个]{style="font-family:宋体"}[EOAM]{lang="EN-US"}[报文]{style="font-family:宋体"}*
+*// 接口GigabitEthernet1/0/1在VLAN 5内广播一个EOAM报文*
 
-[[%Jun 13 09:50:53 672 2014 Sysname L2PT/7/PACKET_DROP:]{lang="EN-US"}]{#struct_0_x5462_x3353_x1861632457}
+%Jun 13 09:50:53 672 2014 Sysname L2PT/7/PACKET_DROP:
 
-[GigabitEthernet1/0/1 dropped a DLDP packet.]{lang="EN-US"}
+GigabitEthernet1/0/1 dropped a DLDP packet.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x5462_x3353_x1119091517}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[丢弃一个]{style="font-family:宋体"}[DLDP]{lang="EN-US"}[报文]{style="font-family:宋体"}*
+*// 接口GigabitEthernet1/0/1丢弃一个DLDP报文*
 
-[[%Jun 13 09:50:53 672 2014 Sysname L2PT/7/PACKET_DROP:]{lang="EN-US"}]{#struct_0_x5462_x3353_x2093504420}
+%Jun 13 09:50:53 672 2014 Sysname L2PT/7/PACKET_DROP:
 
-[GigabitEthernet1/0/1 dropped a tunnel packet because the interface has been enabled with l2protocol tunneling.]{lang="EN-US"}
+GigabitEthernet1/0/1 dropped a tunnel packet because the interface has been enabled with l2protocol tunneling.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x5462_x3353_x684483018}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[丢弃一个]{style="font-family:宋体"}[tunnel]{lang="EN-US"}[报文，因为该接口使能了]{style="font-family:宋体"}[tunneling]{lang="EN-US"}[功能]{style="font-family:宋体"}*
+*// 接口GigabitEthernet1/0/1丢弃一个tunnel报文，因为该接口使能了tunneling功能*
 
-[ ]{lang="EN-US"}

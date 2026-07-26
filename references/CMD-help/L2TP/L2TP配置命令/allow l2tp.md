@@ -1,2278 +1,2094 @@
-::: {#1179903853 .myid}
-[]{#_Toc404785001}[]{#struct_0_x5615_53139_266699108}[]{#_Toc303863680}
 
 **L2TP \-- L2TP配置命令 \-- allow l2tp**
 
 ------------------------------------------------------------------------
 
-[**[allow l2tp]{lang="EN-US"}**]{#struct_0_x5615_53139_1693301396}[命令用来配置]{style="font-family:宋体"}[LNS]{lang="EN-US"}[接受来自指定]{style="font-family:宋体"}[LAC]{lang="EN-US"}[的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道建立请求，并指定[]{#_Toc60322392}[]{#_Toc99783685}建立]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道时使用的虚拟模板]{style="font-family:宋体"}[接口。]{style="font-family:宋体"}
+**[allow l2tp**]命令用来配置LNS接受来自指定LAC的L2TP隧道建立请求，并指定建立L2TP隧道时使用的虚拟模板接口。
 
-[**[undo allow]{lang="EN-US"}**]{#struct_0_x5615_53139_x1513692117}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo allow**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x726804866}
+【命令】
 
-[]{#struct_0_x5615_53139_x2138667257}[**[allow l2tp virtual-template ]{lang="EN-US"}***[virtual-template-number]{lang="EN-US"}*[ \[ **remote** *remote-name*]{lang="EN-US"}]{#_Hlt25484868}*[ ]{lang="EN-US"}*[\]]{lang="EN-US"}
+**[allow l2tp virtual-template ***virtual-template-number* [ **remote** *remote-name*]**]
 
-[**[undo ]{lang="EN-US"}**]{#struct_0_x5615_53139_1617815527}[]{#_Hlt20218653}**[allow]{lang="EN-US"}**
+**[undo **]**allow**
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1591320081}
+【缺省情况】
 
-[[LNS]{lang="EN-US"}]{#struct_0_x5615_53139_359868604}[不接受任何]{style="font-family:宋体"}[LAC]{lang="EN-US"}[的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道建立请求。]{style="font-family:宋体"}
+LNS不接受任何LAC的L2TP隧道建立请求。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1066285478}
+【视图】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_918330134}[组视图]{style="font-family:宋体"}
+L2TP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1439430092}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x1634548641}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x154831348}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x255492498}
+【参数】
 
-[**[virtual-template]{lang="EN-US"}***[ virtual-template-number]{lang="EN-US"}*]{#struct_0_x5615_53139_953747802}[：指定虚拟模板接口。其中，]{style="font-family:宋体"}*[virtual-template-number]{lang="EN-US"}*[为虚拟模板接口序号，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}[LNS]{lang="EN-US"}[根据虚拟模板接口下配置的参数，动态地创建]{style="font-family:宋体"}[VA]{lang="EN-US"}[（]{style="font-family:宋体"}[Virtual Access]{lang="EN-US"}[，虚拟访问）接口。不同的]{style="font-family:宋体"}[VA]{lang="EN-US"}[接口用来处理不同]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[会话上的数据。]{style="font-family:宋体"}
+**[virtual-template*** virtual-template-number*]：指定虚拟模板接口。其中，*virtual-template-number*为虚拟模板接口序号，不同型号的设备支持的取值范围不同，请以设备的实际情况为准。LNS根据虚拟模板接口下配置的参数，动态地创建VA（Virtual Access，虚拟访问）接口。不同的VA接口用来处理不同L2TP会话上的数据。
 
-[**[remote]{lang="EN-US"}***[ remote-name]{lang="EN-US"}*]{#struct_0_x5615_53139_x2138208505}[：指定发起]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道建立请求的对端（即]{style="font-family:宋体"}[LAC]{lang="EN-US"}[）。其中，]{style="font-family:宋体"}*[remote-name]{lang="EN-US"}*[表示隧道对端的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[remote*** remote-name*]：指定发起L2TP隧道建立请求的对端（即LAC）。其中，*remote-name*表示隧道对端的名称，为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1595099612}
+【使用指导】
 
-[[本命令需要在]{style="font-family:宋体"}[LNS]{lang="EN-US"}]{#struct_0_x5615_53139_x2117451974}[设备上执行，用来指定]{style="font-family:宋体"}[LNS]{lang="EN-US"}[可以接受来自哪些]{style="font-family:宋体"}[LAC]{lang="EN-US"}[的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道建立请求。]{style="font-family:宋体"}
+本命令需要在LNS设备上执行，用来指定LNS可以接受来自哪些LAC的L2TP隧道建立请求。
 
-[[在]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_451590263}[组]{style="font-family:宋体"}[1]{lang="EN-US"}[下，可以不指定隧道对端名称。即在]{style="font-family:
-宋体"}[L2TP]{lang="EN-US"}[组]{style="font-family:
-宋体"}[1]{lang="EN-US"}[下，本命令的格式为：]{style="font-family:宋体"}**[allow l2tp virtual-template]{lang="EN-US"}**[ *virtual-template-number* \[ **remote** *remote-name* \]]{lang="EN-US"}[。如果指定了隧道对端名称，则]{style="font-family:宋体"}[LNS]{lang="EN-US"}[只接受来自指定隧道对端的建立请求。如果不指定隧道对端名称，则]{style="font-family:宋体"}[LNS]{lang="EN-US"}[可以接受任何名称的隧道对端的建立请求，此时]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组]{style="font-family:宋体"}[1]{lang="EN-US"}[称为缺省]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组。]{style="font-family:宋体"}
+在L2TP组1下，可以不指定隧道对端名称。即在L2TP组1下，本命令的格式为：**allow l2tp virtual-template** *virtual-template-number* [ **remote** *remote-name* ]。如果指定了隧道对端名称，则LNS只接受来自指定隧道对端的建立请求。如果不指定隧道对端名称，则LNS可以接受任何名称的隧道对端的建立请求，此时L2TP组1称为缺省L2TP组。
 
-[[在其他]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_1563887013}[组（非]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组]{style="font-family:宋体"}[1]{lang="EN-US"}[）下，必须指定隧道对端的名称。即在其他]{style="font-family:
-宋体"}[L2TP]{lang="EN-US"}[组下，本命令的格式为：]{style="font-family:宋体"}**[allow l2tp virtual-template ]{lang="EN-US"}***[virtual-template-number]{lang="EN-US"}*[ **remote** *remote-name*]{lang="EN-US"}*[。]{style="font-family:
-宋体"}*
+在其他L2TP组（非L2TP组1）下，必须指定隧道对端的名称。即在其他L2TP组下，本命令的格式为：**allow l2tp virtual-template ***virtual-template-number* **remote** *remote-name**。*
 
-[[如果发起建立请求的隧道对端与某个]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_1062765313}[组下配置的对端名称匹配，则]{style="font-family:宋体"}[LNS]{lang="EN-US"}[与该对端建立]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道时采用该]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组下配置的隧道参数（如隧道验证功能、流控功能等）。如果隧道对端不与任何]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组下配置的对端名称匹配，则存在缺省]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组时，]{style="font-family:宋体"}[LNS]{lang="EN-US"}[与该对端建立的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道采用缺省]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组下配置的隧道参数，不存在缺省]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组时，]{style="font-family:宋体"}[LNS]{lang="EN-US"}[无法与该对端建立]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道。]{style="font-family:宋体"}
+如果发起建立请求的隧道对端与某个L2TP组下配置的对端名称匹配，则LNS与该对端建立L2TP隧道时采用该L2TP组下配置的隧道参数（如隧道验证功能、流控功能等）。如果隧道对端不与任何L2TP组下配置的对端名称匹配，则存在缺省L2TP组时，LNS与该对端建立的L2TP隧道采用缺省L2TP组下配置的隧道参数，不存在缺省L2TP组时，LNS无法与该对端建立L2TP隧道。
 
-[[如下情况下，建议用户在]{style="font-family:宋体"}[LNS]{lang="EN-US"}]{#struct_0_x5615_53139_x1952015757}[上配置缺省]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组：]{style="font-family:宋体"}
+如下情况下，建议用户在LNS上配置缺省L2TP组：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[某些]{style="font-family:宋体"}]{#struct_0_x5615_53139_1820206086}[LAC]{lang="EN-US"}[（如采用]{style="font-family:宋体"}[Windows 2000 beta 2]{lang="EN-US"}[版本的主机）发送的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道建立请求中本端名称为空。为了接受这种不知名的对端发起的隧道建立请求，]{style="font-family:宋体"}[LNS]{lang="EN-US"}[上需要配置缺省]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组。]{style="font-family:宋体"}
+·某些LAC（如采用Windows 2000 beta 2版本的主机）发送的L2TP隧道建立请求中本端名称为空。为了接受这种不知名的对端发起的隧道建立请求，LNS上需要配置缺省L2TP组。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LNS]{lang="EN-US"}]{#struct_0_x5615_53139_x1494988060}[与多个]{style="font-family:宋体"}[LAC]{lang="EN-US"}[建立的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道参数相同时，可以通过缺省]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组简化配置。]{style="font-family:宋体"}
+·LNS与多个LAC建立的L2TP隧道参数相同时，可以通过缺省L2TP组简化配置。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x5615_53139_x678775305}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[只能在]{style="font-family:宋体"}]{#struct_0_x5615_53139_x2138274041}[LNS]{lang="EN-US"}[模式的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组下执行本命令。]{style="font-family:宋体"}[LAC]{lang="EN-US"}[模式的]{lang="EN-US" style="font-family:宋体"}[L2TP]{lang="EN-US"}[组下不支持本命令。]{lang="EN-US" style="font-family:宋体"}
+·只能在LNS模式的L2TP组下执行本命令。LAC模式的L2TP组下不支持本命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[执行本命令时要确保指定的隧道对端名称和]{style="font-family:宋体"}]{#struct_0_x5615_53139_x434806318}[LAC]{lang="EN-US"}[侧配置的隧道本端名称一致。]{style="font-family:宋体"}
+·执行本命令时要确保指定的隧道对端名称和LAC侧配置的隧道本端名称一致。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果在同一个]{style="font-family:宋体"}]{#struct_0_x5615_53139_1520302560}[L2TP]{lang="EN-US"}[组下重复执行本命令，则新的配置覆盖已有配置。]{style="font-family:宋体"}
+·如果在同一个L2TP组下重复执行本命令，则新的配置覆盖已有配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1413750074}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_1531184331}[配置]{style="font-family:宋体"}[LNS]{lang="EN-US"}[接受名称为]{style="font-family:宋体"}[aaa]{lang="EN-US"}[的对端（]{style="font-family:宋体"}[LAC]{lang="EN-US"}[）发起的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道建立请求，并指定建立]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道时使用的虚拟模板接口为]{style="font-family:宋体"}[Virtual-Template2]{lang="EN-US"}[。对于其他名称的对端，]{style="font-family:宋体"}[LNS]{lang="EN-US"}[接受]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道建立请求，]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道建立时使用的虚拟模板接口为]{style="font-family:宋体"}[Virtual-Template1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置LNS接受名称为aaa的对端（LAC）发起的L2TP隧道建立请求，并指定建立L2TP隧道时使用的虚拟模板接口为Virtual-Template2。对于其他名称的对端，LNS接受L2TP隧道建立请求，L2TP隧道建立时使用的虚拟模板接口为Virtual-Template1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_754467472}
+\<Sysname\> system-view
 
-[\[Sysname\] l2tp-group 1 mode lns]{lang="EN-US"}
+Sysname l2tp-group 1 mode lns
 
-[\[Sysname-l2tp1\] allow l2tp virtual-template 1]{lang="EN-US"}
+Sysname-l2tp1 allow l2tp virtual-template 1
 
-[\[Sysname-l2tp1\] quit]{lang="EN-US"}
+Sysname-l2tp1 quit
 
-[\[Sysname\] l2tp-group 2 mode lns]{lang="EN-US"}
+Sysname l2tp-group 2 mode lns
 
-[\[Sysname-l2tp2\] allow l2tp virtual-template 2 remote aaa]{lang="EN-US"}
+Sysname-l2tp2 allow l2tp virtual-template 2 remote aaa
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x666741057}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[tunnel name]{lang="EN-US"}**]{#struct_0_x5615_53139_1720555012}
-:::
-
-::: {#1742433432 .myid}
-[]{#_Toc404785002}[]{#struct_0_x5615_53139_x2138732792}[]{#_Toc345061223}
+·**tunnel name**
 
 **L2TP \-- L2TP配置命令 \-- bandwidth**
 
 ------------------------------------------------------------------------
 
-[**[bandwidth]{lang="EN-US"}**]{#struct_0_x5615_53139_x1807102648}[命令用来配置接口的期望带宽。]{style="font-family:宋体"}
+**[bandwidth**]命令用来配置接口的期望带宽。
 
-[**[undo bandwidth]{lang="EN-US"}**]{#struct_0_x5615_53139_x2105771900}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo bandwidth**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1959406125}
+【命令】
 
-[**[bandwidth]{lang="EN-US"}**[ *bandwidth-value*]{lang="EN-US"}]{#struct_0_x5615_53139_x176860208}
+**[bandwidth** *bandwidth-value*]
 
-[**[undo bandwidth]{lang="EN-US"}**]{#struct_0_x5615_53139_882574083}
+**[undo bandwidth**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x547599005}
+【缺省情况】
 
-[[接口的期望带宽＝接口的波特率÷]{style="font-family:宋体"}[1000]{lang="EN-US"}]{#struct_0_x5615_53139_x1249760607}[（]{style="font-family:宋体"}[kbit/s]{lang="EN-US"}[）。]{style="font-family:宋体"}
+接口的期望带宽＝接口的波特率÷1000（kbit/s）。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_60768225}
+【视图】
 
-[[虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x5615_53139_283446691}[接口视图]{style="font-family:宋体"}
+虚拟PPP接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x2138798328}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x1608228488}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x2124990893}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_290814574}
+【参数】
 
-[*[bandwidth-value]{lang="EN-US"}*]{#struct_0_x5615_53139_x1207673333}[：表示接口的期望带宽，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[400000000]{lang="EN-US"}[，单位为]{style="font-family:宋体"}[kbit/s]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[bandwidth-value*]：表示接口的期望带宽，取值范围为1～400000000，单位为kbit/s。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x715892839}
+【使用指导】
 
-[[接口的期望带宽会影响链路的开销值。具体介绍请参见"三层技术]{style="font-family:宋体"}[-IP]{lang="EN-US"}]{#struct_0_x5615_53139_x1241716243}[路由配置指导"中的"]{style="font-family:宋体"}[OSPF]{lang="EN-US"}["、"]{style="font-family:宋体"}[OSPFv3]{lang="EN-US"}["和"]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}["。]{style="font-family:宋体"}
+接口的期望带宽会影响链路的开销值。具体介绍请参见"三层技术-IP路由配置指导"中的"OSPF"、"OSPFv3"和"IS-IS"。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1412512080}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_x424010924}[设置虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口]{style="font-family:宋体"}[10]{lang="EN-US"}[的期望带宽为]{style="font-family:宋体"}[100kbit/s]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 设置虚拟PPP接口10的期望带宽为100kbit/s。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_229834870}
+\<Sysname\> system-view
 
-[\[Sysname\] interface virtual-ppp 10]{lang="EN-US"}
+Sysname interface virtual-ppp 10
 
-[\[Sysname-Virtual-PPP10\] bandwidth 100]{lang="EN-US"}
-:::
-
-::: {#1948332219 .myid}
-[]{#_Toc404785003}[]{#struct_0_x5615_53139_x2138863864}
+Sysname-Virtual-PPP10 bandwidth 100
 
 **L2TP \-- L2TP配置命令 \-- default**
 
 ------------------------------------------------------------------------
 
-[**[default]{lang="EN-US"}**]{#struct_0_x5615_53139_x1750562276}[命令用来恢复当前接口的缺省配置。]{style="font-family:宋体"}
+**[default**]命令用来恢复当前接口的缺省配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_857283137}
+【命令】
 
-[**[default]{lang="EN-US"}**]{#struct_0_x5615_53139_x324805887}
+**[default**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1770347501}
+【视图】
 
-[[虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x5615_53139_x1287082893}[接口视图]{style="font-family:宋体"}
+虚拟PPP接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1730776955}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x532862082}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_1424608340}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1734858866}
+【使用指导】
 
-[[接口下的某些配置恢复到缺省情况后，会对设备上当前运行的业务产生影响。建议您在执行该命令前，完全了解其对网络产生的影响。]{style="font-family:宋体"}]{#struct_0_x5615_53139_x2138929400}
+接口下的某些配置恢复到缺省情况后，会对设备上当前运行的业务产生影响。建议您在执行该命令前，完全了解其对网络产生的影响。
 
-[[您可以在执行]{style="font-family:宋体"}**[default]{lang="EN-US"}**]{#struct_0_x5615_53139_1584371640}[命令后通过]{style="font-family:宋体"}**[display this]{lang="EN-US"}**[命令确认执行效果。对于未能成功恢复缺省的配置，建议您查阅相关功能的命令手册，手工执行恢复该配置缺省情况的命令。如果操作仍然不能成功，您可以通过设备的提示信息定位原因。]{style="font-family:宋体"}
+您可以在执行**default**命令后通过**display this**命令确认执行效果。对于未能成功恢复缺省的配置，建议您查阅相关功能的命令手册，手工执行恢复该配置缺省情况的命令。如果操作仍然不能成功，您可以通过设备的提示信息定位原因。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_871951411}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_x2007371563}[将虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口]{style="font-family:宋体"}[10]{lang="EN-US"}[恢复为缺省配置。]{style="font-family:宋体"}
+\# 将虚拟PPP接口10恢复为缺省配置。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_1577401141}
+\<Sysname\> system-view
 
-[\[Sysname\] interface virtual-ppp 10]{lang="EN-US"}
+Sysname interface virtual-ppp 10
 
-[\[Sysname-Virtual-PPP10\] default]{lang="EN-US"}
-:::
-
-::: {#-1461383778 .myid}
-[]{#_Toc404785004}[]{#struct_0_x5615_53139_231129059}[]{#_Toc335656812}
+Sysname-Virtual-PPP10 default
 
 **L2TP \-- L2TP配置命令 \-- description**
 
 ------------------------------------------------------------------------
 
-[**[description]{lang="EN-US"}**]{#struct_0_x5615_53139_x1935935381}[命令用来设置当前接口的描述信息。]{style="font-family:宋体"}
+**[description**]命令用来设置当前接口的描述信息。
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_x5615_53139_1428976234}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo description**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1254405758}
+【命令】
 
-[**[description]{lang="EN-US"}**[ *text*]{lang="EN-US"}]{#struct_0_x5615_53139_1450409233}
+**[description** *text*]
 
-[**[undo description]{lang="EN-US"}**]{#struct_0_x5615_53139_x2138470648}
+**[undo description**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1122600125}
+【缺省情况】
 
-[[接口的描述信息为"*该接口的接口名*]{style="font-family:宋体"}[ Interface]{lang="EN-US"}]{#struct_0_x5615_53139_345983162}["，比如：]{style="font-family:宋体"}[Virtual-PPP254 Interface]{lang="EN-US"}[。]{style="font-family:宋体"}
+接口的描述信息为"*该接口的接口名* Interface"，比如：Virtual-PPP254 Interface。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1022712182}
+【视图】
 
-[[虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x5615_53139_1133765493}[接口视图]{style="font-family:宋体"}
+虚拟PPP接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1319226796}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_1028517524}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x583549280}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_269292693}
+【参数】
 
-[*[text]{lang="EN-US"}*]{#struct_0_x5615_53139_830616599}[：接口描述信息，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[text*]：接口描述信息，为1～255个字符的字符串，区分大小写。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x2138536184}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_1142393068}[配置虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口]{style="font-family:宋体"}[10]{lang="EN-US"}[的描述信息为"]{style="font-family:宋体"}[virtual-interface]{lang="EN-US"}["。]{style="font-family:宋体"}
+\# 配置虚拟PPP接口10的描述信息为"virtual-interface"。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_490852188}
+\<Sysname\> system-view
 
-[\[Sysname\] interface virtual-ppp 10]{lang="EN-US"}
+Sysname interface virtual-ppp 10
 
-[\[Sysname-Virtual-PPP10\] description virtual-interface]{lang="EN-US"}
-:::
-
-::: {#-1101078304 .myid}
-[]{#_Toc404785005}[]{#struct_0_x5615_53139_1112376221}[]{#_Toc335656813}[]{#_Toc323804934}
+Sysname-Virtual-PPP10 description virtual-interface
 
 **L2TP \-- L2TP配置命令 \-- display interface virtual-ppp**
 
 ------------------------------------------------------------------------
 
-[**[display interface ]{lang="EN-US"}[virtual-ppp]{lang="EN-US"}**]{#struct_0_x5615_53139_x1944064384}[命令用来显示虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口的相关信息。]{style="font-family:宋体"}
+**[display interface virtual-ppp**]命令用来显示虚拟PPP接口的相关信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1354271527}
+【命令】
 
-[**[display interface ]{lang="EN-US"}**[\[]{lang="EN-US"}]{#struct_0_x5615_53139_x146995377}**[ virtual-ppp]{lang="EN-US"}**[ \[ *interface-number* \] \] \[ **brief** \[ **description** \| **down** \] \]]{lang="EN-US"}
+**[display interface **** virtual-ppp** [ *interface-number*    **brief** [ **description** \| **down** ] ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1710574627}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x5615_53139_x2138601720}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_245802927}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x1452652332}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x5615_53139_x965978738}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x1335788336}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x5615_53139_x1573295266}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x203494071}
+【参数】
 
-[*[interface-number]{lang="EN-US"}*]{#struct_0_x5615_53139_x1625046061}[：显示指定虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口的信息。]{style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[表示虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口的编号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[interface-number*]：显示指定虚拟PPP接口的信息。*interface-number*表示虚拟PPP接口的编号，取值范围为0～255。
 
-[**[brief]{lang="EN-US"}**]{#struct_0_x5615_53139_x1045203481}[：显示接口的概要信息。如果不指定该参数，则显示接口的详细信息。]{style="font-family:宋体"}
+**[brief**]：显示接口的概要信息。如果不指定该参数，则显示接口的详细信息。
 
-[**[description]{lang="EN-US"}**]{#struct_0_x5615_53139_x310383138}[：显示用户配置的接口的全部描述信息。如果某接口的描述信息超过]{style="font-family:宋体"}[27]{lang="EN-US"}[个字符，不指定该参数时，只显示描述信息中的前]{style="font-family:宋体"}[27]{lang="EN-US"}[个字符，超出部分不显示；指定该参数时，可以显示全部描述信息。]{style="font-family:宋体"}
+**[description**]：显示用户配置的接口的全部描述信息。如果某接口的描述信息超过27个字符，不指定该参数时，只显示描述信息中的前27个字符，超出部分不显示；指定该参数时，可以显示全部描述信息。
 
-[**[down]{lang="EN-US"}**]{#struct_0_x5615_53139_280895234}[：显示当前物理状态为]{style="font-family:宋体"}[down]{lang="EN-US"}[的接口的信息以及]{style="font-family:宋体"}[down]{lang="EN-US"}[的原因。如果不指定该参数，则不会根据接口物理状态来过滤显示信息。]{style="font-family:宋体"}
+**[down**]：显示当前物理状态为down的接口的信息以及down的原因。如果不指定该参数，则不会根据接口物理状态来过滤显示信息。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x2138667256}
+【使用指导】
 
-[[执行本命令时，如果不指定]{style="font-family:宋体"}]{#struct_0_x5615_53139_x1111067828}**[virtual-ppp]{lang="EN-US"}**[参数，则显示设备支持的所有接口的相关信息；如果指定]{style="font-family:宋体"}**[virtual-ppp]{lang="EN-US"}**[参数，不指定]{style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[参数，则显示所有已创建的虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口的相关信息。]{style="font-family:宋体"}
+执行本命令时，如果不指定**virtual-ppp**参数，则显示设备支持的所有接口的相关信息；如果指定**virtual-ppp**参数，不指定*interface-number*参数，则显示所有已创建的虚拟PPP接口的相关信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x434499135}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_673256145}[显示虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口]{style="font-family:宋体"}[10]{lang="EN-US"}[的详细信息。]{style="font-family:宋体"}
+\# 显示虚拟PPP接口10的详细信息。
 
-[[\<Sysname\> display interface virtual-ppp 10]{lang="EN-US"}]{#struct_0_x5615_53139_x2138208504}
+\<Sysname\> display interface virtual-ppp 10
 
-[Virtual-PPP10]{lang="EN-US"}
+Virtual-PPP10
 
-[Current state: Administratively DOWN]{lang="EN-US"}
+Current state: Administratively DOWN
 
-[Line protocol state: DOWN]{lang="EN-US"}
+Line protocol state: DOWN
 
-[Description: Virtual-PPP10 Interface]{lang="EN-US"}
+Description: Virtual-PPP10 Interface
 
-[Bandwidth: 100000kbps]{lang="EN-US"}
+Bandwidth: 100000kbps
 
-[Maximum Transmit Unit: 1500]{lang="EN-US"}
+Maximum Transmit Unit: 1500
 
-[Hold timer: 10 seconds, retry times: 5]{lang="EN-US"}
+Hold timer: 10 seconds, retry times: 5
 
-[Internet Address is 10.0.0.1/24 Primary]{lang="EN-US"}
+Internet Address is 10.0.0.1/24 Primary
 
-[Link layer protocol: PPP]{lang="EN-US"}
+Link layer protocol: PPP
 
-[LCP: initial]{lang="EN-US"}
+LCP: initial
 
-[Physical: L2TP, baudrate: 100000000 bps]{lang="EN-US"}
+Physical: L2TP, baudrate: 100000000 bps
 
-[Last clearing of counters: Never]{lang="EN-US"}
+Last clearing of counters: Never
 
-[Last 300 seconds input rate: 0 bytes/sec, 0 bits/sec, 0 packets/sec]{lang="EN-US"}
+Last 300 seconds input rate: 0 bytes/sec, 0 bits/sec, 0 packets/sec
 
-[Last 300 seconds output rate: 0 bytes/sec, 0 bits/sec, 0 packets/sec]{lang="EN-US"}
+Last 300 seconds output rate: 0 bytes/sec, 0 bits/sec, 0 packets/sec
 
-[Input: 154 packets, 1880 bytes, 0 drops]{lang="EN-US"}
+Input: 154 packets, 1880 bytes, 0 drops
 
-[Output: 155 packets, 1875 bytes, 0 drops]{lang="EN-US"}
+Output: 155 packets, 1875 bytes, 0 drops
 
-[[表1-1 ]{lang="EN-US"}[display interface virtual-ppp]{lang="EN-US"}]{#struct_0_x5615_53139_x1133783743}[命令显示信息描述表]{style="font-family:
-黑体"}
+表1-1 display interface virtual-ppp命令显示信息描述表
 
-[]{#table_struct_0_527205475}[[字段]{style="font-family:黑体"}]{#struct_0_x5615_53139_876835345}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1810904181}
+描述
 
-[[Current state]{lang="EN-US"}]{#struct_0_x5615_53139_169715643}
+Current state
 
-[[接口当前的物理状态和管理状态，可能的取值及含义如下：]{style="font-family:宋体"}]{#struct_0_x5615_53139_582697412}
+接口当前的物理状态和管理状态，可能的取值及含义如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Administratively DOWN]{lang="EN-US"}]{#struct_0_x5615_53139_476401511}[：表示该接口已经通过]{lang="EN-US" style="font-family:
-  宋体"}**[shutdown]{lang="EN-US"}**[命令被关闭，即管理状态为关闭]{lang="EN-US" style="font-family:宋体"}
+·Administratively DOWN：表示该接口已经通过**shutdown**命令被关闭，即管理状态为关闭
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_x5615_53139_1597998542}[：表示该接口的管理状态为开启，但物理状态为关闭]{style="font-family:宋体"}
+·DOWN：表示该接口的管理状态为开启，但物理状态为关闭
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_x5615_53139_x2138274040}[：该接口的管理状态和物理状态均为开启]{style="font-family:宋体"}
+·UP：该接口的管理状态和物理状态均为开启
 
-[[Line protocol state]{lang="EN-US"}]{#struct_0_x5615_53139_x2000890259}
+Line protocol state
 
-[[接口的链路层协议状态，可能的状态及含义如下：]{style="font-family:宋体"}]{#struct_0_x5615_53139_x673981433}
+接口的链路层协议状态，可能的状态及含义如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_x5615_53139_x1452634551}[：表示该接口的链路层协议状态为开启]{style="font-family:宋体"}
+·UP：表示该接口的链路层协议状态为开启
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_x5615_53139_1212930589}[：表示该接口的链路层协议状态为关闭]{style="font-family:宋体"}
+·DOWN：表示该接口的链路层协议状态为关闭
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP (spoofing)]{lang="EN-US"}]{#struct_0_x5615_53139_x1835596794}[：表示该接口的链路层协议状态为开启，但实际可能没有对应的链路，或者所对应的链路不是永久存在而是按需建立]{style="font-family:宋体"}
+·UP (spoofing)：表示该接口的链路层协议状态为开启，但实际可能没有对应的链路，或者所对应的链路不是永久存在而是按需建立
 
-[[Description]{lang="EN-US"}]{#struct_0_x5615_53139_x1836651498}
+Description
 
-[[接口描述信息]{style="font-family:宋体"}]{#struct_0_x5615_53139_x2138732795}
+接口描述信息
 
-[[Bandwidth]{lang="EN-US"}]{#struct_0_x5615_53139_x1047587761}
+Bandwidth
 
-[[接口的期望带宽]{style="font-family:宋体"}]{#struct_0_x5615_53139_132606450}
+接口的期望带宽
 
-[[Maximum Transmit Unit]{lang="EN-US"}]{#struct_0_x5615_53139_401957236}
+Maximum Transmit Unit
 
-[[接口的最大传输单元]{style="font-family:宋体"}]{#struct_0_x5615_53139_x189135083}
+接口的最大传输单元
 
-[[Hold timer]{lang="EN-US"}]{#struct_0_x5615_53139_446729062}
+Hold timer
 
-[[当前接口发送]{style="font-family:宋体"}[keepalive]{lang="EN-US"}]{#struct_0_x5615_53139_x2138798331}[报文的周期，单位为秒]{style="font-family:宋体"}
+当前接口发送keepalive报文的周期，单位为秒
 
-[[retry times]{lang="EN-US"}]{#struct_0_x5615_53139_1011509315}
+retry times
 
-[[在多少个]{style="font-family:宋体"}[keepalive]{lang="EN-US"}]{#struct_0_x5615_53139_x1709479861}[周期内没有收到]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的应答就拆除链路]{style="font-family:宋体"}
+在多少个keepalive周期内没有收到keepalive报文的应答就拆除链路
 
-[[Internet Address]{lang="EN-US"}]{#struct_0_x5615_53139_314151349}
+Internet Address
 
-[[虚拟]{style="font-family:宋体"}]{#struct_0_x5615_53139_260228887}[PPP]{lang="NO-BOK"}[接口的]{style="font-family:宋体"}[IP]{lang="NO-BOK"}[地址。如果没有为]{style="font-family:宋体"}[虚拟]{style="font-family:宋体"}[PPP]{lang="NO-BOK"}[接口配置]{style="font-family:宋体"}[IP]{lang="NO-BOK"}[地址，则该字段显示为]{style="font-family:宋体"}[Internet protocol processing: disabled]{lang="EN-US"}[，表示不能处理]{style="font-family:宋体"}[IP]{lang="NO-BOK"}[报文]{style="font-family:宋体"}
+虚拟PPP接口的IP地址。如果没有为虚拟PPP接口配置IP地址，则该字段显示为Internet protocol processing: disabled，表示不能处理IP报文
 
-[[Primary]{lang="EN-US"}]{#struct_0_x5615_53139_x1899447301}[表示该]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为接口的主]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}
+Primary表示该IP地址为接口的主IP地址
 
-[[Link layer protocol]{lang="EN-US"}]{#struct_0_x5615_53139_1357985168}
+Link layer protocol
 
-[[链路层封装的协议，取值为]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x5615_53139_x2138863867}
+链路层封装的协议，取值为PPP
 
-[[LCP]{lang="EN-US"}]{#struct_0_x5615_53139_2141120493}
+LCP
 
-[[LCP]{lang="EN-US"}]{#struct_0_x5615_53139_x1296025861}[（]{style="font-family:宋体"}[Link Control Protocol]{lang="EN-US"}[，链路控制协议）状态]{style="font-family:宋体"}
+LCP（Link Control Protocol，链路控制协议）状态
 
-[[Physical]{lang="EN-US"}]{#struct_0_x5615_53139_x49723154}
+Physical
 
-[[接口的物理类型，取值为]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_x1222922012}
+接口的物理类型，取值为L2TP
 
-[[baudrate]{lang="EN-US"}]{#struct_0_x5615_53139_x1709479870}
+baudrate
 
-[[接口的波特率]{style="font-family:宋体"}]{#struct_0_x5615_53139_629172298}
+接口的波特率
 
-[[Last clearing of counters: Never]{lang="EN-US"}]{#struct_0_x5615_53139_x271997485}
+Last clearing of counters: Never
 
-[[最后一次清除接口统计信息的时间（]{style="font-family:宋体"}[Never]{lang="EN-US"}]{#struct_0_x5615_53139_x2138929403}[表示未清除过接口的统计信息）]{style="font-family:宋体"}
+最后一次清除接口统计信息的时间（Never表示未清除过接口的统计信息）
 
-[[Last 300 seconds input rate: 0 bytes/sec, 0 bits/sec, 0 packets/sec]{lang="EN-US"}]{#struct_0_x5615_53139_1181087113}
+Last 300 seconds input rate: 0 bytes/sec, 0 bits/sec, 0 packets/sec
 
-[[当前接口最近]{style="font-family:宋体"}[300]{lang="EN-US"}]{#struct_0_x5615_53139_x176302782}[秒内输入报文的平均速率]{style="font-family:宋体"}
+当前接口最近300秒内输入报文的平均速率
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[bytes/sec]{lang="EN-US"}]{#struct_0_x5615_53139_858450780}[表示平均每秒输入的字节数]{lang="EN-US" style="font-family:宋体"}
+·bytes/sec表示平均每秒输入的字节数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[bits/sec]{lang="EN-US"}]{#struct_0_x5615_53139_x2138470651}[表示平均每秒输入的比特数]{lang="EN-US" style="font-family:宋体"}
+·bits/sec表示平均每秒输入的比特数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[packets/sec]{lang="EN-US"}]{#struct_0_x5615_53139_87187920}[表示平均每秒输入的包数]{lang="EN-US" style="font-family:宋体"}
+·packets/sec表示平均每秒输入的包数
 
-[[Last 300 seconds output rate: 0 bytes/sec, 0 bits/sec, 0 packets/sec]{lang="EN-US"}]{#struct_0_x5615_53139_575802616}
+Last 300 seconds output rate: 0 bytes/sec, 0 bits/sec, 0 packets/sec
 
-[[当前接口最近]{style="font-family:宋体"}[300]{lang="EN-US"}]{#struct_0_x5615_53139_x199927704}[秒内输出报文的平均速率]{style="font-family:宋体"}
+当前接口最近300秒内输出报文的平均速率
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[bytes/sec]{lang="EN-US"}]{#struct_0_x5615_53139_1005361957}[表示平均每秒输]{lang="EN-US" style="font-family:宋体"}[出]{style="font-family:宋体"}[的字节数]{lang="EN-US" style="font-family:宋体"}
+·bytes/sec表示平均每秒输出的字节数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[bits/sec]{lang="EN-US"}]{#struct_0_x5615_53139_x2138536187}[表示平均每秒输]{lang="EN-US" style="font-family:宋体"}[出]{style="font-family:宋体"}[的比特数]{lang="EN-US" style="font-family:宋体"}
+·bits/sec表示平均每秒输出的比特数
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[packets/sec]{lang="EN-US"}]{#struct_0_x5615_53139_1545677595}[表示平均每秒输]{lang="EN-US" style="font-family:宋体"}[出]{style="font-family:宋体"}[的包数]{lang="EN-US" style="font-family:宋体"}
+·packets/sec表示平均每秒输出的包数
 
-[[Input: 154 packets, 1880 bytes, 0 drops]{lang="EN-US"}]{#struct_0_x5615_53139_1682504853}
+Input: 154 packets, 1880 bytes, 0 drops
 
-[[总计输入的报文数，总计输入的字节，总计丢弃的输入报文数]{style="font-family:宋体"}]{#struct_0_x5615_53139_x1650308811}
+总计输入的报文数，总计输入的字节，总计丢弃的输入报文数
 
-[[Output: 155 packets, 1875 bytes, 0 drops]{lang="EN-US"}]{#struct_0_x5615_53139_266515199}
+Output: 155 packets, 1875 bytes, 0 drops
 
-[[总计输出的报文数]{style="font-family:宋体"}[, ]{lang="EN-US"}]{#struct_0_x5615_53139_x2138601723}[总计输出的字节，总计丢弃的输出报文数]{style="font-family:宋体"}
+总计输出的报文数, 总计输出的字节，总计丢弃的输出报文数
 
-[ ]{lang="EN-US"}
+\# 显示虚拟PPP接口10的概要信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_1811886868}[显示虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口]{style="font-family:宋体"}[10]{lang="EN-US"}[的概要信息。]{style="font-family:宋体"}
+\<Sysname\> display interface virtual-ppp 10 brief
 
-[[\<Sysname\> display interface virtual-ppp 10 brief]{lang="EN-US"}]{#struct_0_x5615_53139_1688202585}
+Brief information on interface(s) under route mode:
 
-[Brief information on interface(s) under route mode:]{lang="EN-US"}
+Link: ADM - administratively down; Stby - standby
 
-[Link: ADM - administratively down; Stby - standby]{lang="EN-US"}
+Protocol: (s) - spoofing
 
-[Protocol: (s) - spoofing]{lang="EN-US"}
+Interface            Link Protocol Main IP         Description
 
-[Interface            Link Protocol Main IP         Description]{lang="EN-US"}
+VPPP10               ADM  DOWN     10.0.0.1        Virtual-PPP10 Interface
 
-[VPPP10               ADM  DOWN     10.0.0.1        Virtual-PPP10 Interface]{lang="EN-US"}
+\# 显示所有当前物理状态为down的虚拟PPP接口的信息以及down的原因。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_x902132107}[显示所有当前物理状态为]{style="font-family:宋体"}[down]{lang="EN-US"}[的虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口的信息以及]{style="font-family:宋体"}[down]{lang="EN-US"}[的原因。]{style="font-family:宋体"}
+\<Sysname\> display interface virtual-ppp brief down
 
-[[\<Sysname\> display interface virtual-ppp brief down]{lang="EN-US"}]{#struct_0_x5615_53139_1190266793}
+Brief information on interface(s) under route mode:
 
-[Brief information on interface(s) under route mode:]{lang="EN-US"}
+Link: ADM - administratively down; Stby - standby
 
-[Link: ADM - administratively down; Stby - standby]{lang="EN-US"}
+Interface            Link Cause
 
-[Interface            Link Cause ]{lang="EN-US"}
+VPPP9                ADM  Administratively
 
-[VPPP9                ADM  Administratively]{lang="EN-US"}
+VPPP10               ADM  Administratively
 
-[VPPP10               ADM  Administratively]{lang="EN-US"}
+VPPP12               ADM  Administratively
 
-[VPPP12               ADM  Administratively]{lang="EN-US"}
+\# 显示虚拟PPP接口10的概要信息，包括用户配置的全部描述信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_x2138667259}[显示虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口]{style="font-family:宋体"}[10]{lang="EN-US"}[的概要信息，包括用户配置的全部描述信息。]{style="font-family:宋体"}
+\<Sysname\> display inter Virtual-PPP 10 brief description
 
-[[\<Sysname\> display inter Virtual-PPP 10 brief description]{lang="EN-US"}]{#struct_0_x5615_53139_2068154221}
+Brief information on interface(s) under route mode:
 
-[Brief information on interface(s) under route mode:]{lang="EN-US"}
+Link: ADM - administratively down; Stby - standby
 
-[Link: ADM - administratively down; Stby - standby]{lang="EN-US"}
+Protocol: (s) - spoofing
 
-[Protocol: (s) - spoofing]{lang="EN-US"}
+Interface            Link Protocol Main IP         Description
 
-[Interface            Link Protocol Main IP         Description]{lang="EN-US"}
+VPPP10               ADM  DOWN     10.0.0.1        Virtual-PPP10 Interface
 
-[VPPP10               ADM  DOWN     10.0.0.1        Virtual-PPP10 Interface]{lang="EN-US"}
+表1-2 display interface virtual-ppp brief命令显示信息描述表
 
-[[表1-2 ]{lang="EN-US"}[display interface virtual-ppp brief]{lang="EN-US"}]{#struct_0_x5615_53139_1941641556}[命令显示信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_522264393}[[字段]{style="font-family:黑体"}]{#struct_0_x5615_53139_x421808086}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x5615_53139_26584764}
+The brief information of interface(s) under route mode/Brief information on interface(s) under route mode
 
-[[The brief information of interface(s) under route mode/Brief information on interface(s) under route mode]{lang="EN-US"}]{#struct_0_x5615_53139_1222203733}
+三层模式下（route）的接口的概要信息，即三层接口的概要信息
 
-[[三层模式下（]{style="font-family:宋体"}[route]{lang="EN-US"}]{#struct_0_x5615_53139_850366960}[）的接口的概要信息，即三层接口的概要信息]{style="font-family:宋体"}
+Link: ADM - administratively down; Stby - standby
 
-[[Link: ADM - administratively down; Stby - standby]{lang="EN-US"}]{#struct_0_x5615_53139_x2138208507}
+·如果某接口的Link属性值为"ADM"，则表示该接口被管理员手工关闭了，需要在该接口下执行**undo shutdown**命令才能恢复端口本身的物理状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果某接口的]{style="font-family:宋体"}]{#struct_0_x5615_53139_432300198}[Link]{lang="EN-US"}[属性值为"]{style="font-family:宋体"}[ADM]{lang="EN-US"}["，则表示该接口被管理员手工关闭了，需要在该接口下执行]{style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**[命令才能恢复端口本身的物理状态]{style="font-family:宋体"}
+·如果某接口的Link属性值为"Stby"，则表示该接口是一个备份接口，使用**display interface-backup state**命令可以查看该备份接口对应的主接口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果某接口的]{lang="EN-US" style="font-family:宋体"}[Link]{lang="EN-US"}]{#struct_0_x5615_53139_x1270770816}[属性值为"]{lang="EN-US" style="font-family:宋体"}[Stby]{lang="EN-US"}["，则表示该接口是一个备份接口，使用]{lang="EN-US" style="font-family:宋体"}**[display ]{lang="EN-US"}[interface-backup]{lang="EN-US"}[ state]{lang="EN-US"}**[命令可以查看该备份接口对应的主接口]{lang="EN-US" style="font-family:宋体"}
+Protocol: (s) - spoofing
 
-[[Protocol: (s) - spoofing]{lang="EN-US"}]{#struct_0_x5615_53139_1955824667}
+如果某接口的Protocol属性值中带有"(s)"字符串，则表示该接口的数据链路层协议状态显示为UP，但实际可能没有对应的链路，或者对应的链路不是永久存在而是按需建立的。通常NULL、LoopBack等接口会具有该属性
 
-[[如果某接口的]{style="font-family:宋体"}[Protocol]{lang="EN-US"}]{#struct_0_x5615_53139_624775587}[属性值中带有"]{style="font-family:宋体"}[(s)]{lang="EN-US"}["字符串，则表示该接口的数据链路层协议状态显示为]{style="font-family:宋体"}[UP]{lang="EN-US"}[，但实际可能没有对应的链路，或者对应的链路不是永久存在而是按需建立的。通常]{style="font-family:宋体"}[NULL]{lang="EN-US"}[、]{style="font-family:宋体"}[LoopBack]{lang="EN-US"}[等接口会具有该属性]{style="font-family:宋体"}
+Interface
 
-[[Interface]{lang="EN-US"}]{#struct_0_x5615_53139_x2037463178}
+接口名称缩写
 
-[[接口名称缩写]{style="font-family:宋体"}]{#struct_0_x5615_53139_x2138274043}
+Link
 
-[[Link]{lang="EN-US"}]{#struct_0_x5615_53139_x1597605732}
+接口物理连接状态，取值为：
 
-[[接口物理连接状态，取值为：]{style="font-family:宋体"}]{#struct_0_x5615_53139_1148705670}
+·UP：表示接口物理上是连通的
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_x5615_53139_x662182485}[：表示接口物理上是连通的]{style="font-family:宋体"}
+·DOWN：表示接口物理上不通
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_x5615_53139_2049956817}[：表示接口物理上不通]{style="font-family:宋体"}
+·ADM：表示接口被手工关闭了，需要执行{.TableTextChar}**undo shutdown**命令才能打开接口{.TableTextChar}
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[ADM]{lang="EN-US"}]{#struct_0_x5615_53139_x1178662418}[[：表示接口被手工关闭了，需要执行]{style="font-family:宋体"}]{.TableTextChar}**[undo shutdown]{lang="EN-US"}**[[命令才能打开接口]{style="font-family:宋体"}]{.TableTextChar}
+·Stby：表示该接口是一个备份接口。本状态的支持情况与设备的型号有关，请以设备的实际情况为准
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Stby]{lang="EN-US"}]{#struct_0_x5615_53139_x1398175897}[：表示该接口是一个备份接口。本状态的支持情况与设备的型号有关，请以设备的实际情况为准]{style="font-family:宋体"}
+Protocol
 
-[[Protocol]{lang="EN-US"}]{#struct_0_x5615_53139_x1877842066}
+接口数据链路层协议状态，取值为：
 
-[[接口数据链路层协议状态，取值为：]{style="font-family:宋体"}]{#struct_0_x5615_53139_x2138732794}
+·UP：表示接口的数据链路层是连通的
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP]{lang="EN-US"}]{#struct_0_x5615_53139_1681295594}[：表示接口的数据链路层是连通的]{style="font-family:宋体"}
+·DOWN：表示接口的数据链路层不通
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[DOWN]{lang="EN-US"}]{#struct_0_x5615_53139_3260083}[：表示接口的数据链路层不通]{style="font-family:宋体"}
+·UP(s)：表示接口的数据链路层协议状态显示为UP，但实际可能没有对应的链路，或者对应的链路不是永久存在而是按需建立的。通常NULL、LoopBack等接口会取该值
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UP(s)]{lang="EN-US"}]{#struct_0_x5615_53139_1505796510}[：表示接口的数据链路层协议状态显示为]{style="font-family:宋体"}[UP]{lang="EN-US"}[，但实际可能没有对应的链路，或者对应的链路不是永久存在而是按需建立的。通常]{style="font-family:宋体"}[NULL]{lang="EN-US"}[、]{style="font-family:宋体"}[LoopBack]{lang="EN-US"}[等接口会取该值]{style="font-family:宋体"}
+Main IP
 
-[[Main IP]{lang="EN-US"}]{#struct_0_x5615_53139_x153875267}
+接口主IP地址
 
-[[接口主]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x5615_53139_x2138798330}[地址]{style="font-family:宋体"}
+Description
 
-[[Description]{lang="EN-US"}]{#struct_0_x5615_53139_x1251932592}
+用户通过**description**命令给接口配置的描述信息。使用**display interface brief**命令，不指定**description**参数时，该字段最多显示27个字符；指定**description**参数时，可显示配置的全部描述信息
 
-[[用户通过]{style="font-family:宋体"}**[description]{lang="EN-US"}**]{#struct_0_x5615_53139_x1105234215}[命令给接口配置的描述信息。使用]{style="font-family:宋体"}**[display interface brief]{lang="EN-US"}**[命令，不指定]{style="font-family:宋体"}**[description]{lang="EN-US"}**[参数时，该字段最多显示]{style="font-family:宋体"}[27]{lang="EN-US"}[个字符；指定]{style="font-family:宋体"}**[description]{lang="EN-US"}**[参数时，可显示配置的全部描述信息]{style="font-family:宋体"}
+Cause
 
-[[Cause]{lang="EN-US"}]{#struct_0_x5615_53139_x1184885843}
+接口物理连接状态为down的原因，取值为：
 
-[[接口物理连接状态为]{style="font-family:宋体"}[down]{lang="EN-US"}]{#struct_0_x5615_53139_x476220813}[的原因，取值为：]{style="font-family:宋体"}
+·Administratively：表示本链路被手工关闭了（配置了**shutdown**命令），需要执行**undo shutdown**命令才能恢复真实的物理状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Administratively]{lang="EN-US"}]{#struct_0_x5615_53139_x2138863866}[：]{style="font-family:宋体"}[表示本链路被手工关闭了（配置了]{lang="EN-US" style="font-family:宋体"}**[shutdown]{lang="EN-US"}**[命令），需要执行]{lang="EN-US" style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**[命令才能恢复真实的物理状态]{lang="EN-US" style="font-family:宋体"}
-
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Not connected]{lang="EN-US"}]{#struct_0_x5615_53139_x587762862}[：]{style="font-family:宋体"}[表示没有物理连接，一般是因为]{lang="EN-US" style="font-family:宋体"}[L2TP]{lang="EN-US"}[协商失败，或者配置不充分未能触发]{lang="EN-US" style="font-family:宋体"}[L2TP]{lang="EN-US"}[协商]{lang="EN-US" style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#1936016661 .myid}
-[]{#_Toc404785006}[]{#struct_0_x5615_53139_x814457896}
+·Not connected：表示没有物理连接，一般是因为L2TP协商失败，或者配置不充分未能触发L2TP协商
 
 **L2TP \-- L2TP配置命令 \-- display l2tp session**
 
 ------------------------------------------------------------------------
 
-[**[display l2tp session]{lang="EN-US"}**]{#struct_0_x5615_53139_x1307818177}[命令用来显示]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[会话的信息。]{style="font-family:宋体"}
+**[display l2tp session**]命令用来显示L2TP会话的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1096000656}
+【命令】
 
-[**[display l2tp session]{lang="EN-US"}**[ \[ **statistics** \]]{lang="EN-US"}]{#struct_0_x5615_53139_968251568}
+**[display l2tp session** [ **statistics** ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x2070422539}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x5615_53139_x1705501758}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x2138929402}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x1547796242}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x5615_53139_60979506}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x944551918}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x5615_53139_x1050704437}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1637993279}
+【参数】
 
-[**[statistics]{lang="EN-US"}**]{#struct_0_x5615_53139_x330790765}[：显示]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[会话的统计信息。]{style="font-family:宋体"}
+**[statistics**]：显示L2TP会话的统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1293410996}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_351885360}[显示]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[会话的统计信息。]{style="font-family:宋体"}
+\# 显示L2TP会话的统计信息。
 
-[[\<Sysname\> display l2tp session statistics]{lang="EN-US"}]{#struct_0_x5615_53139_x2138470650}
+\<Sysname\> display l2tp session statistics
 
-[Total number of sessions: 1]{lang="EN-US"}
+Total number of sessions: 1
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_x1478896021}[显示]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[会话的信息。]{style="font-family:宋体"}
+\# 显示L2TP会话的信息。
 
-[[\<Sysname\> display l2tp session]{lang="EN-US"}]{#struct_0_x5615_53139_x51341386}
+\<Sysname\> display l2tp session
 
-[LocalSID      RemoteSID      LocalTID      State]{lang="EN-US"}
+LocalSID      RemoteSID      LocalTID      State
 
-[89            36245          10878         Established]{lang="EN-US"}[]{#_Toc42598111}[]{#_Toc137627620}[]{#_Toc85622795}[]{#_Toc81453338}[]{#_Toc74711151}[]{#_Toc72631497}[]{#_Toc66003570}[]{#_Toc60131642}
+89            36245          10878         Established
 
-[[表1-3 ]{lang="EN-US"}[display l2tp session]{lang="EN-US"}]{#struct_0_x5615_53139_183661777}[命令显示信息描述表]{style="font-family:黑体"}
+表1-3 display l2tp session命令显示信息描述表
 
-[]{#table_struct_0_281022478}[[字段]{style="font-family:黑体"}]{#struct_0_x5615_53139_1374271233}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x5615_53139_1276362923}
+描述
 
-[[Total number of sessions]{lang="EN-US"}]{#struct_0_x5615_53139_x1755242910}
+Total number of sessions
 
-[[会话的数目]{style="font-family:宋体"}]{#struct_0_x5615_53139_x3595807}
+会话的数目
 
-[[LocalSID]{lang="EN-US"}]{#struct_0_x5615_53139_x755362867}
+LocalSID
 
-[[本端的会话]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x5615_53139_x2138536186}
+本端的会话ID
 
-[[RemoteSID]{lang="EN-US"}]{#struct_0_x5615_53139_x20406346}
+RemoteSID
 
-[[对端的会话]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x5615_53139_x2124317727}
+对端的会话ID
 
-[[LocalTID]{lang="EN-US"}]{#struct_0_x5615_53139_x750426073}
+LocalTID
 
-[[本端的隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x5615_53139_358037229}
+本端的隧道ID
 
-[[State]{lang="EN-US"}]{#struct_0_x5615_53139_x23952033}
+State
 
-[[会话的状态，取值包括：]{style="font-family:宋体"}]{#struct_0_x5615_53139_563733107}
+会话的状态，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Idle]{lang="EN-US"}]{#struct_0_x5615_53139_x2138601722}[：空闲状态]{lang="EN-US" style="font-family:宋体"}
+·Idle：空闲状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Wait-tunnel]{lang="EN-US"}]{#struct_0_x5615_53139_x916996487}[：等待建立]{lang="EN-US" style="font-family:宋体"}[隧道]{style="font-family:宋体"}
+·Wait-tunnel：等待建立隧道
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Wait-reply]{lang="EN-US"}]{#struct_0_x5615_53139_x500319168}[：等待]{lang="EN-US" style="font-family:宋体"}[ICRP]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+·Wait-reply：等待ICRP报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Wait-]{lang="EN-US"}]{#struct_0_x5615_53139_82250381}[c]{lang="EN-US"}[onnect]{lang="EN-US"}[：等待]{lang="EN-US" style="font-family:宋体"}[ICCN]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+·Wait-connect：等待ICCN报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Established]{lang="EN-US"}]{#struct_0_x5615_53139_x1897215548}[：]{lang="EN-US" style="font-family:宋体"}[会话成功建立]{style="font-family:宋体"}
-
-[ ]{lang="EN-US"}
-
-::: {#-1641042205 .myid}
-[]{#_Toc404785007}[]{#struct_0_x5615_53139_x1285269058}
+·Established：会话成功建立
 
 **L2TP \-- L2TP配置命令 \-- display l2tp tunnel**
 
 ------------------------------------------------------------------------
 
-[**[display l2tp tunnel]{lang="DE"}**]{#struct_0_x5615_53139_x2138667258}[命令用来显示]{style="font-family:宋体"}[L2TP]{lang="DE"}[隧道的信息。]{style="font-family:宋体"}
+**[display l2tp tunnel**]命令用来显示L2TP隧道的信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x660729134}
+【命令】
 
-[**[display l2tp tunnel]{lang="EN-US"}**[ \[ **statistics** \]]{lang="EN-US"}]{#struct_0_x5615_53139_x1400245978}
+**[display l2tp tunnel** [ **statistics** ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x507756546}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x5615_53139_x1391207746}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1972138238}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_497979407}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x5615_53139_431551190}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x581665878}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x5615_53139_1540131893}
+mdc-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x2138208506}
+【参数】
 
-[**[statistics]{lang="EN-US"}**]{#struct_0_x5615_53139_1998384139}[：显示]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道的统计信息。]{style="font-family:宋体"}
+**[statistics**]：显示L2TP隧道的统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1090988863}
+【举例】
 
-[]{#_Toc42598112}[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_1409659568}[显示]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道的统计信息。]{style="font-family:宋体"}
+\# 显示L2TP隧道的统计信息。
 
-[[\<Sysname\> display l2tp tunnel statistics]{lang="EN-US"}]{#struct_0_x5615_53139_1342389525}
+\<Sysname\> display l2tp tunnel statistics
 
-[Total number of tunnels: 1]{lang="EN-US"}
+Total number of tunnels: 1
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_x847684242}[显示]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道的信息。]{style="font-family:宋体"}
+\# 显示L2TP隧道的信息。
 
-[[\<Sysname\> display l2tp tunnel]{lang="EN-US"}]{#struct_0_x5615_53139_x1718075608}
+\<Sysname\> display l2tp tunnel
 
-[LocalTID RemoteTID State         Sessions RemoteAddress    RemotePort RemoteName]{lang="EN-US"}
+LocalTID RemoteTID State         Sessions RemoteAddress    RemotePort RemoteName
 
-[10878    21        Established   1        20.1.1.2         1701       lns]{lang="EN-US"}
+10878    21        Established   1        20.1.1.2         1701       lns
 
-[[表1-4 ]{lang="EN-US"}[display l2tp tunnel]{lang="EN-US"}]{#struct_0_x5615_53139_x633064463}[命令显示信息描述表]{style="font-family:黑体"}
+表1-4 display l2tp tunnel命令显示信息描述表
 
-[]{#table_struct_0_284535471}[[字段]{style="font-family:黑体"}]{#struct_0_x5615_53139_x2138274042}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x5615_53139_1131277623}
+描述
 
-[[Total number of tunnels]{lang="EN-US"}]{#struct_0_x5615_53139_1060485002}
+Total number of tunnels
 
-[[隧道的数目]{style="font-family:宋体"}]{#struct_0_x5615_53139_x650339761}
+隧道的数目
 
-[[LocalTID]{lang="EN-US"}]{#struct_0_x5615_53139_x1413012866}
+LocalTID
 
-[[本端的隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x5615_53139_1871696791}
+本端的隧道ID
 
-[[RemoteTID]{lang="EN-US"}]{#struct_0_x5615_53139_1982132334}
+RemoteTID
 
-[[对端的隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_x5615_53139_x167932388}
+对端的隧道ID
 
-[[State]{lang="EN-US"}]{#struct_0_x5615_53139_x216418490}
+State
 
-[[隧道的状态，取值包括：]{style="font-family:宋体"}]{#struct_0_x5615_53139_x1756989572}
+隧道的状态，取值包括：
 
-[[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:
-  Symbol"}]{.TableTextChar}[Idle]{lang="EN-US"}]{#struct_0_x5615_53139_23458190}[：空闲状态]{lang="EN-US" style="font-family:宋体"}
+·{.TableTextChar}Idle：空闲状态
 
-[[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:
-  Symbol"}]{.TableTextChar}[Wait-reply]{lang="EN-US"}]{#struct_0_x5615_53139_x1413591773}[：等待]{lang="EN-US" style="font-family:宋体"}[SCCRP]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+·{.TableTextChar}Wait-reply：等待SCCRP报文
 
-[[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:
-  Symbol"}]{.TableTextChar}[Wait-]{lang="EN-US"}]{#struct_0_x5615_53139_107094589}[c]{lang="EN-US"}[onnect]{lang="EN-US"}[：等待]{lang="EN-US" style="font-family:宋体"}[SCCCN]{lang="EN-US"}[报文]{lang="EN-US" style="font-family:宋体"}
+·{.TableTextChar}Wait-connect：等待SCCCN报文
 
-[[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:
-  Symbol"}]{.TableTextChar}[Established]{lang="EN-US"}]{#struct_0_x5615_53139_x2032889414}[：隧道]{lang="EN-US" style="font-family:宋体"}[成功建立]{style="font-family:宋体"}
+·{.TableTextChar}Established：隧道成功建立
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Stopping]{lang="EN-US"}]{#struct_0_x5615_53139_x216484026}[：正在下线]{lang="EN-US" style="font-family:宋体"}
+·Stopping：正在下线
 
-[[Sessions]{lang="EN-US"}]{#struct_0_x5615_53139_x567171829}
+Sessions
 
-[[此隧道上的会话数目]{style="font-family:宋体"}]{#struct_0_x5615_53139_x331049635}
+此隧道上的会话数目
 
-[[RemoteAddress]{lang="EN-US"}]{#struct_0_x5615_53139_x1838870035}
+RemoteAddress
 
-[[对端的]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_x5615_53139_x1323122025}[地址]{style="font-family:宋体"}
+对端的IP地址
 
-[[RemotePort]{lang="EN-US"}]{#struct_0_x5615_53139_x576713600}
+RemotePort
 
-[[对端]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_x216549562}[使用的]{style="font-family:宋体"}[UDP]{lang="EN-US"}[端口号]{style="font-family:宋体"}
+对端L2TP使用的UDP端口号
 
-[[RemoteName]{lang="EN-US"}]{#struct_0_x5615_53139_2141258429}
+RemoteName
 
-[[隧道对端的名称]{style="font-family:宋体"}]{#struct_0_x5615_53139_x958866455}
+隧道对端的名称
 
-[]{#_Toc16585284}[]{#_Hlt25567314}[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1918842726}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[reset l2tp tunnel]{lang="EN-US"}**]{#struct_0_x5615_53139_x1827464471}
-
-::: {#2023868928 .myid}
-[]{#_Toc404785008}[]{#struct_0_x5615_53139_1722839281}[]{#_Toc390949862}[]{#_Toc366514053}
+·**reset l2tp tunnel**
 
 **L2TP \-- L2TP配置命令 \-- display l2tp va-pool**
 
 ------------------------------------------------------------------------
 
-[**[display l2tp va-pool]{lang="EN-US"}**]{#struct_0_x5615_53139_x2036249518}[命令用来显示]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[的]{style="font-family:宋体"}[VA]{lang="EN-US"}[池信息。]{style="font-family:宋体"}
+**[display l2tp va-pool**]命令用来显示L2TP的VA池信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_323688940}
+【命令】
 
-[**[display l2tp va-pool]{lang="EN-US"}**]{#struct_0_x5615_53139_x491635858}
+**[display l2tp va-pool**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1872790587}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_x5615_53139_x2022624098}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1103114963}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x1252133319}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x5615_53139_1418086013}
+network-operator
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x1281495462}
+mdc-admin
 
-[[mdc-operator]{lang="EN-US"}]{#struct_0_x5615_53139_1722773745}
+mdc-operator
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_337482059}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_x1104532716}[显示]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[的]{style="font-family:宋体"}[VA]{lang="EN-US"}[池信息。]{style="font-family:宋体"}
+\# 显示L2TP的VA池信息。
 
-[[\<Sysname\> display l2tp va-pool]{lang="PT-BR"}]{#struct_0_x5615_53139_93953848}
+\<Sysname\> display l2tp va-pool
 
-[VT interface          Size      Unused      State]{lang="PT-BR"}
+VT interface          Size      Unused      State
 
-[Virtual-Template1     1000      900         Normal]{lang="PT-BR"}
+Virtual-Template1     1000      900         Normal
 
-[[表1-5 ]{lang="EN-US"}[display l2tp va-pool]{lang="EN-US"}]{#struct_0_x5615_53139_719920199}[命令显示信息描述表]{style="font-family:黑体"}
+表1-5 display l2tp va-pool命令显示信息描述表
 
-[]{#table_struct_0_1540087868}[[字段]{style="font-family:黑体"}]{#struct_0_x5615_53139_1747044945}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x5615_53139_990998893}
+描述
 
-[[VT interface]{lang="PT-BR"}]{#struct_0_x5615_53139_1493034930}
+VT interface
 
-[[使用]{style="font-family:宋体"}[VA]{lang="EN-US"}]{#struct_0_x5615_53139_1722708209}[池的虚拟模板接口]{style="font-family:宋体"}
+使用VA池的虚拟模板接口
 
-[[Size]{lang="PT-BR"}]{#struct_0_x5615_53139_x458827690}
+Size
 
-[[用户申请的]{style="font-family:宋体"}[VA]{lang="EN-US"}]{#struct_0_x5615_53139_x1763851561}[池容量]{style="font-family:宋体"}
+用户申请的VA池容量
 
-[[Unused]{lang="PT-BR"}]{#struct_0_x5615_53139_273311611}
+Unused
 
-[[VA]{lang="EN-US"}]{#struct_0_x5615_53139_1678188291}[池中可用的]{style="font-family:宋体"}[VA]{lang="EN-US"}[接口数量]{style="font-family:宋体"}
+VA池中可用的VA接口数量
 
-[[State]{lang="EN-US"}]{#struct_0_x5615_53139_122523654}
+State
 
-[[VA]{lang="EN-US"}]{#struct_0_x5615_53139_1722642673}[池当前的状态，取值包括：]{style="font-family:宋体"}
+VA池当前的状态，取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:
-  10.0pt;font-family:Symbol"}[Creating]{lang="EN-US"}]{#struct_0_x5615_53139_x425976626}[：]{style="font-family:
-  宋体"}[表示正在创建]{lang="EN-US" style="font-family:宋体"}[VA]{lang="EN-US"}[池]{lang="EN-US" style="font-family:宋体"}
+·Creating：表示正在创建VA池
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;
-  font-family:Symbol"}[Destroying]{lang="EN-US"}]{#struct_0_x5615_53139_192944261}[：]{style="font-family:
-  宋体"}[表示正在删除]{lang="EN-US" style="font-family:宋体"}[VA]{lang="EN-US"}[池]{lang="EN-US" style="font-family:宋体"}
+·Destroying：表示正在删除VA池
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Normal]{lang="EN-US"}]{#struct_0_x5615_53139_x1876681583}[：表示]{style="font-family:宋体"}[VA]{lang="EN-US"}[池已经创建完成]{style="font-family:宋体"}
+·Normal：表示VA池已经创建完成
 
-[ ]{lang="EN-US"}
+【相关命令】
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1723101425}
-
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[l2tp virtual-template va-pool]{lang="EN-US"}**]{#struct_0_x5615_53139_x1215584163}
-
-::: {#-1268060838 .myid}
-[]{#_Toc404785009}[]{#struct_0_x5615_53139_45922485}
+·**l2tp virtual-template va-pool**
 
 **L2TP \-- L2TP配置命令 \-- interface virtual-ppp**
 
 ------------------------------------------------------------------------
 
-[**[interface virtual-ppp]{lang="EN-US"}**]{#struct_0_x5615_53139_86090615}[命令用来创建虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口，并进入指定的虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口视图。如果指定的虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口已经创建，则该命令用来直接进入虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口视图。]{style="font-family:宋体"}
+**[interface virtual-ppp**]命令用来创建虚拟PPP接口，并进入指定的虚拟PPP接口视图。如果指定的虚拟PPP接口已经创建，则该命令用来直接进入虚拟PPP接口视图。
 
-[**[undo interface virtual-ppp]{lang="EN-US"}**]{#struct_0_x5615_53139_850495889}[命令用来删除指定的虚拟]{style="font-family:
-宋体"}[PPP]{lang="EN-US"}[接口。]{style="font-family:宋体"}
+**[undo interface virtual-ppp**]命令用来删除指定的虚拟PPP接口。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x216615098}
+【命令】
 
-[**[interface virtual-ppp]{lang="EN-US"}**[ *interface-number*]{lang="EN-US"}]{#struct_0_x5615_53139_1013264567}
+**[interface virtual-ppp** *interface-number*]
 
-[**[undo interface virtual-ppp]{lang="EN-US"}**[ *interface-number*]{lang="EN-US"}]{#struct_0_x5615_53139_x1746217003}
+**[undo interface virtual-ppp** *interface-number*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1010275462}
+【缺省情况】
 
-[[设备上不存在任何虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x5615_53139_x424582342}[接口。]{style="font-family:宋体"}
+设备上不存在任何虚拟PPP接口。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1777276301}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x5615_53139_1052145651}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x688923152}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x1699032914}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_671364968}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x216156346}
+【参数】
 
-[*[interface-number]{lang="EN-US"}*]{#struct_0_x5615_53139_996850508}[：虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口的编号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[interface-number*]：虚拟PPP接口的编号，取值范围为0～255。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1057339472}
+【使用指导】
 
-[[配置]{style="font-family:宋体"}[LAC-Auto-Initiated]{lang="EN-US"}]{#struct_0_x5615_53139_x1362602640}[模式的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道时，需要在]{style="font-family:宋体"}[LAC]{lang="EN-US"}[端创建虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口。]{style="font-family:宋体"}
+配置LAC-Auto-Initiated模式的L2TP隧道时，需要在LAC端创建虚拟PPP接口。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x2124207657}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_x607166419}[创建虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口]{style="font-family:宋体"}[10]{lang="EN-US"}[，并进入虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口视图。]{style="font-family:宋体"}
+\# 创建虚拟PPP接口10，并进入虚拟PPP接口视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_1024186899}
+\<Sysname\> system-view
 
-[\[Sysname\] interface virtual-ppp 10]{lang="EN-US"}
+Sysname interface virtual-ppp 10
 
-[\[Sysname-Virtual-PPP10\]]{lang="EN-US"}
-:::
-
-::: {#-843408420 .myid}
-[]{#_Toc404785010}[]{#struct_0_x5615_53139_1293765252}
+Sysname-Virtual-PPP10
 
 **L2TP \-- L2TP配置命令 \-- l2tp enable**
 
 ------------------------------------------------------------------------
 
-[**[l2tp enable]{lang="EN-US"}**]{#struct_0_x5615_53139_x863259102}[命令用来开启]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[l2tp enable**]命令用来开启L2TP功能。
 
-[**[undo l2tp enable]{lang="EN-US"}**]{#struct_0_x5615_53139_x216221882}[命令用来关闭]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+**[undo l2tp enable**]命令用来关闭L2TP功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1460034904}
+【命令】
 
-[**[l2tp enable]{lang="EN-US"}**]{#struct_0_x5615_53139_1450387000}
+**[l2tp enable**]
 
-[**[undo l2tp enable]{lang="EN-US"}**]{#struct_0_x5615_53139_x2037517065}
+**[undo l2tp enable**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1292669024}
+【缺省情况】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_x692794811}[功能处于关闭状态。]{style="font-family:宋体"}
+L2TP功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x363595598}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x5615_53139_x1529714635}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1605714319}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_713750003}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x216287418}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_600917653}
+【使用指导】
 
-[[只有开启该功能后其他]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_x314511561}[相关配置才能生效。]{style="font-family:宋体"}
+只有开启该功能后其他L2TP相关配置才能生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1309564389}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_1660614075}[开启]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[功能。]{style="font-family:宋体"}
+\# 开启L2TP功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_502736368}
+\<Sysname\> system-view
 
-[\[Sysname\] l2tp enable]{lang="EN-US"}
-:::
-
-::: {#-1213666689 .myid}
-[]{#_Toc404785011}[]{#struct_0_x5615_53139_1866994890}
+Sysname l2tp enable
 
 **L2TP \-- L2TP配置命令 \-- l2tp tsa-id**
 
 ------------------------------------------------------------------------
 
-[**[l2tp tsa-id]{lang="EN-US"}**]{#struct_0_x5615_53139_1867191498}[命令用来配置]{style="font-family:宋体"}[LTS]{lang="EN-US"}[设备的]{style="font-family:宋体"}[TSA ID]{lang="EN-US"}[，并开启]{style="font-family:宋体"}[LTS]{lang="EN-US"}[设备的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[环路检测功能。]{style="font-family:宋体"}
+**[l2tp tsa-id**]命令用来配置LTS设备的TSA ID，并开启LTS设备的L2TP环路检测功能。
 
-[**[undo l2tp tsa-id]{lang="EN-US"}**]{#struct_0_x5615_53139_x1617246143}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo l2tp tsa-id**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1946520820}
+【命令】
 
-[**[l2tp tsa-id ]{lang="EN-US"}***[tsa-id]{lang="EN-US"}*]{#struct_0_x5615_53139_x1546108111}
+**[l2tp tsa-id ***tsa-id*]
 
-[**[undo l2tp tsa-id]{lang="EN-US"}**]{#struct_0_x5615_53139_x1761265290}
+**[undo l2tp tsa-id**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x543739544}
+【缺省情况】
 
-[[未指定]{style="font-family:宋体"}[LTS]{lang="EN-US"}]{#struct_0_x5615_53139_955263719}[设备的]{style="font-family:宋体"}[TSA ID]{lang="EN-US"}[，且]{style="font-family:宋体"}[LTS]{lang="EN-US"}[设备的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[环路检测功能处于关闭状态。]{style="font-family:宋体"}
+未指定LTS设备的TSA ID，且LTS设备的L2TP环路检测功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1867125962}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x5615_53139_636394166}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1871402101}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_253560303}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x268731017}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1697606141}
+【参数】
 
-[*[tsa-id]{lang="EN-US"}*]{#struct_0_x5615_53139_x1626843586}[：]{style="font-family:宋体"}[LTS]{lang="EN-US"}[设备的唯一标识，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[64]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[tsa-id*]：LTS设备的唯一标识，为1～64个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1803890500}
+【使用指导】
 
-[[在]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_1463382678}[隧道交换组网中，]{style="font-family:宋体"}[LTS]{lang="EN-US"}[通过]{style="font-family:宋体"}[ICRQ]{lang="EN-US"}[（]{style="font-family:宋体"}[Incoming Call Request]{lang="EN-US"}[，入呼叫请求）报文中的]{style="font-family:宋体"}[TSA]{lang="EN-US"}[（]{style="font-family:宋体"}[Tunnel Switching Aggregator]{lang="EN-US"}[，隧道交换聚合）]{style="font-family:宋体"}[ ID AVP]{lang="EN-US"}[来避免环路。]{style="font-family:宋体"}
+在L2TP隧道交换组网中，LTS通过ICRQ（Incoming Call Request，入呼叫请求）报文中的TSA（Tunnel Switching Aggregator，隧道交换聚合） ID AVP来避免环路。
 
-[[LTS]{lang="EN-US"}]{#struct_0_x5615_53139_894909732}[接收到]{style="font-family:宋体"}[ICRQ]{lang="EN-US"}[报文后，将报文中携带的所有]{style="font-family:宋体"}[TSA ID AVP]{lang="EN-US"}[中的]{style="font-family:宋体"}[TSA ID]{lang="EN-US"}[逐一与本地配置的]{style="font-family:宋体"}[TSA ID]{lang="EN-US"}[进行比较。如果]{style="font-family:宋体"}[TSA ID AVP]{lang="EN-US"}[中存在与本地相同的]{style="font-family:宋体"}[TSA ID]{lang="EN-US"}[，则表示存在环路，]{style="font-family:宋体"}[LTS]{lang="EN-US"}[立即拆除会话。否则，]{style="font-family:宋体"}[LTS]{lang="EN-US"}[将自己的]{style="font-family:宋体"}[TSA ID]{lang="EN-US"}[封装到新的]{style="font-family:宋体"}[TSA ID AVP]{lang="EN-US"}[中，]{style="font-family:宋体"}[LTS]{lang="EN-US"}[向它的下一跳]{style="font-family:宋体"}[LTS]{lang="EN-US"}[发送]{style="font-family:宋体"}[ICRQ]{lang="EN-US"}[报文时携带接收到的所有]{style="font-family:宋体"}[TSA ID AVP]{lang="EN-US"}[及本地封装的]{style="font-family:宋体"}[TSA ID AVP]{lang="EN-US"}[。]{style="font-family:宋体"}
+LTS接收到ICRQ报文后，将报文中携带的所有TSA ID AVP中的TSA ID逐一与本地配置的TSA ID进行比较。如果TSA ID AVP中存在与本地相同的TSA ID，则表示存在环路，LTS立即拆除会话。否则，LTS将自己的TSA ID封装到新的TSA ID AVP中，LTS向它的下一跳LTS发送ICRQ报文时携带接收到的所有TSA ID AVP及本地封装的TSA ID AVP。
 
-[[为不同]{style="font-family:宋体"}[LTS]{lang="EN-US"}]{#struct_0_x5615_53139_x1336535466}[设备配置的]{style="font-family:宋体"}[TSA ID]{lang="EN-US"}[不能相同，否则会导致环路检测错误。]{style="font-family:宋体"}
+为不同LTS设备配置的TSA ID不能相同，否则会导致环路检测错误。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_807837831}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_x1395873256}[配置]{style="font-family:宋体"}[LTS]{lang="EN-US"}[设备的]{style="font-family:宋体"}[TSA ID]{lang="EN-US"}[为]{style="font-family:宋体"}[lts0]{lang="EN-US"}[，并开启]{style="font-family:宋体"}[LTS]{lang="EN-US"}[设备的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[环路检测功能。]{style="font-family:宋体"}
+\# 配置LTS设备的TSA ID为lts0，并开启LTS设备的L2TP环路检测功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_37673820}
+\<Sysname\> system-view
 
-[\[Sysname\] l2tp tsa-id lts0]{lang="EN-US"}
-:::
-
-::: {#1244361336 .myid}
-[]{#_Toc404785012}[]{#struct_0_x5615_53139_1722446062}[]{#_Toc390949878}[]{#_Toc366514068}
+Sysname l2tp tsa-id lts0
 
 **L2TP \-- L2TP配置命令 \-- l2tp virtual-template va-pool**
 
 ------------------------------------------------------------------------
 
-[**[l2tp virtual-template va-pool]{lang="EN-US"}**]{#struct_0_x5615_53139_1925663267}[命令用来配置]{style="font-family:
-宋体"}[VA]{lang="EN-US"}[池。]{style="font-family:宋体"}
+**[l2tp virtual-template va-pool**]命令用来配置VA池。
 
-[**[undo l2tp ]{lang="EN-US"}[virtual-template va-pool]{lang="EN-US"}**]{#struct_0_x5615_53139_752652649}[命令用来删除]{style="font-family:宋体"}[VA]{lang="EN-US"}[池。]{style="font-family:宋体"}
+**[undo l2tp virtual-template va-pool**]命令用来删除VA池。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x916639593}
+【命令】
 
-[**[l2tp virtual-template]{lang="EN-US"}**[ *template-number* **va-pool** *va-volume*]{lang="EN-US"}]{#struct_0_x5615_53139_x1710619869}
+**[l2tp virtual-template** *template-number* **va-pool** *va-volume*]
 
-[**[undo ]{lang="EN-US"}[l2tp virtual-template]{lang="EN-US"}**[ *template-number* **va-pool**]{lang="EN-US"}]{#struct_0_x5615_53139_x1270884426}
+**[undo l2tp virtual-template** *template-number* **va-pool**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1026021014}
+【缺省情况】
 
-[[设备上不存在任何]{style="font-family:宋体"}[VA]{lang="EN-US"}]{#struct_0_x5615_53139_x1594578822}[池。]{style="font-family:宋体"}
+设备上不存在任何VA池。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1059599793}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x5615_53139_1822106704}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_729238155}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x2032547280}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_1722380526}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_393163776}
+【参数】
 
-[**[virtual-template ]{lang="EN-US"}***[template-number]{lang="EN-US"}*]{#struct_0_x5615_53139_x766529776}[：指定需要使用]{style="font-family:宋体"}[VA]{lang="EN-US"}[池的虚拟模板接口。该接口必须已经存在。]{style="font-family:宋体"}
+**[virtual-template ***template-number*]：指定需要使用VA池的虚拟模板接口。该接口必须已经存在。
 
-[**[va-pool ]{lang="EN-US"}***[va-volume]{lang="EN-US"}*]{#struct_0_x5615_53139_332067052}[：指定需要创建的]{style="font-family:宋体"}[VA]{lang="EN-US"}[池的大小，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65534]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[va-pool ***va-volume*]：指定需要创建的VA池的大小，取值范围为1～65534。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_392702882}
+【使用指导】
 
-[[LNS]{lang="EN-US"}]{#struct_0_x5615_53139_x1356672972}[设备在用户上线创建会话时需要创建]{style="font-family:宋体"}[VA]{lang="EN-US"}[接口，用于和]{style="font-family:宋体"}[LAC]{lang="EN-US"}[交换数据。在用户下线后需要删除]{style="font-family:宋体"}[VA]{lang="EN-US"}[接口。由于创建]{style="font-family:宋体"}[/]{lang="EN-US"}[删除]{style="font-family:宋体"}[VA]{lang="EN-US"}[接口需要一定的时间，所以如果有大量用户上线]{style="font-family:宋体"}[/]{lang="EN-US"}[下线，]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[连接的建立和拆除性能会受到影响。]{style="font-family:宋体"}
+LNS设备在用户上线创建会话时需要创建VA接口，用于和LAC交换数据。在用户下线后需要删除VA接口。由于创建/删除VA接口需要一定的时间，所以如果有大量用户上线/下线，L2TP连接的建立和拆除性能会受到影响。
 
-[[VA]{lang="EN-US"}]{#struct_0_x5615_53139_x157855647}[池可以用来解决上述问题。]{style="font-family:宋体"}[VA]{lang="EN-US"}[池是在建立]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[连接前事先创建的]{style="font-family:宋体"}[VA]{lang="EN-US"}[接口的集合。创建]{style="font-family:宋体"}[VA]{lang="EN-US"}[池后，当需要创建]{style="font-family:宋体"}[VA]{lang="EN-US"}[接口时，直接从]{style="font-family:宋体"}[VA]{lang="EN-US"}[池中获取一个]{style="font-family:宋体"}[VA]{lang="EN-US"}[接口，加快了]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[连接的建立速度。当用户下线后，直接把]{style="font-family:宋体"}[VA]{lang="EN-US"}[接口放入]{style="font-family:宋体"}[VA]{lang="EN-US"}[池中，不需要删除]{style="font-family:宋体"}[VA]{lang="EN-US"}[接口，加快了]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[连接的拆除速度。当]{style="font-family:宋体"}[VA]{lang="EN-US"}[池中的]{style="font-family:宋体"}[VA]{lang="EN-US"}[接口耗光后，仍需在建立]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[连接时再创建]{style="font-family:宋体"}[VA]{lang="EN-US"}[接口，在用户下线后删除]{style="font-family:宋体"}[VA]{lang="EN-US"}[接口。]{style="font-family:宋体"}
+VA池可以用来解决上述问题。VA池是在建立L2TP连接前事先创建的VA接口的集合。创建VA池后，当需要创建VA接口时，直接从VA池中获取一个VA接口，加快了L2TP连接的建立速度。当用户下线后，直接把VA接口放入VA池中，不需要删除VA接口，加快了L2TP连接的拆除速度。当VA池中的VA接口耗光后，仍需在建立L2TP连接时再创建VA接口，在用户下线后删除VA接口。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x5615_53139_x350311422}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[每个虚拟模板接口只能关联一个]{style="font-family:宋体"}]{#struct_0_x5615_53139_636255631}[VA]{lang="EN-US"}[池。如果想要修改使用的]{style="font-family:宋体"}[VA]{lang="EN-US"}[池的大小，只能先删除原来的配置，然后重新配置]{style="font-family:宋体"}[VA]{lang="EN-US"}[池。]{style="font-family:宋体"}
+·每个虚拟模板接口只能关联一个VA池。如果想要修改使用的VA池的大小，只能先删除原来的配置，然后重新配置VA池。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[创建]{style="font-family:宋体"}]{#struct_0_x5615_53139_440594723}[/]{lang="EN-US"}[删除]{style="font-family:宋体"}[VA]{lang="EN-US"}[池需要花费一定的时间，请用户耐心等待。在]{style="font-family:宋体"}[VA]{lang="EN-US"}[池创建]{style="font-family:宋体"}[/]{lang="EN-US"}[删除过程中（还没创建]{style="font-family:宋体"}[/]{lang="EN-US"}[删除完成）允许用户上线]{style="font-family:宋体"}[/]{lang="EN-US"}[下线，但正在创建]{style="font-family:宋体"}[/]{lang="EN-US"}[删除的]{style="font-family:宋体"}[VA]{lang="EN-US"}[池不生效。]{style="font-family:宋体"}
+·创建/删除VA池需要花费一定的时间，请用户耐心等待。在VA池创建/删除过程中（还没创建/删除完成）允许用户上线/下线，但正在创建/删除的VA池不生效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[系统可能由于资源不足不能创建用户指定容量的]{style="font-family:宋体"}]{#struct_0_x5615_53139_473197424}[VA]{lang="EN-US"}[池，用户可以通过]{style="font-family:宋体"}**[display l2tp va-pool]{lang="EN-US"}**[命令查看实际可用的]{style="font-family:宋体"}[VA]{lang="EN-US"}[池的容量以及]{style="font-family:宋体"}[VA]{lang="EN-US"}[池的状态。]{style="font-family:宋体"}
+·系统可能由于资源不足不能创建用户指定容量的VA池，用户可以通过**display l2tp va-pool**命令查看实际可用的VA池的容量以及VA池的状态。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VA]{lang="EN-US"}]{#struct_0_x5615_53139_x1339347874}[池会占用较多的系统内存，请用户根据实际情况创建大小合适的]{style="font-family:宋体"}[VA]{lang="EN-US"}[池。]{style="font-family:宋体"}
+·VA池会占用较多的系统内存，请用户根据实际情况创建大小合适的VA池。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[删除]{style="font-family:宋体"}]{#struct_0_x5615_53139_1722839278}[VA]{lang="EN-US"}[池时，如果已有在线用户使用该]{style="font-family:宋体"}[VA]{lang="EN-US"}[池中的]{style="font-family:宋体"}[VA]{lang="EN-US"}[接口，不会导致这些用户下线。]{style="font-family:宋体"}
+·删除VA池时，如果已有在线用户使用该VA池中的VA接口，不会导致这些用户下线。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x2035659695}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_x154979292}[为虚拟模板]{style="font-family:宋体"}[2]{lang="EN-US"}[创建容量为]{style="font-family:宋体"}[1000]{lang="EN-US"}[的]{style="font-family:宋体"}[VA]{lang="EN-US"}[池。]{style="font-family:宋体"}
+\# 为虚拟模板2创建容量为1000的VA池。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_2048795444}
+\<Sysname\> system-view
 
-[\[Sysname\] l2tp virtual-template 2 va-pool 1000]{lang="EN-US"}
+Sysname l2tp virtual-template 2 va-pool 1000
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x89663127}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2tp va-pool]{lang="EN-US"}**]{#struct_0_x5615_53139_x2029014579}
-:::
-
-::: {#-1412536338 .myid}
-[]{#_Toc404785013}[]{#struct_0_x5615_53139_x806846264}
+·**display l2tp va-pool**
 
 **L2TP \-- L2TP配置命令 \-- l2tp-auto-client**
 
 ------------------------------------------------------------------------
 
-[**[l2tp-auto-client]{lang="EN-US"}**]{#struct_0_x5615_53139_x2003313894}[命令用来触发]{style="font-family:宋体"}[LAC]{lang="EN-US"}[自动建立]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道。]{style="font-family:宋体"}
+**[l2tp-auto-client**]命令用来触发LAC自动建立L2TP隧道。
 
-[**[undo l2tp-auto-client]{lang="EN-US"}**]{#struct_0_x5615_53139_204864137}[命令用来拆除]{style="font-family:宋体"}[LAC]{lang="EN-US"}[自动建立的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道。]{style="font-family:宋体"}
+**[undo l2tp-auto-client**]命令用来拆除LAC自动建立的L2TP隧道。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x216352954}
+【命令】
 
-[**[l2tp-auto-client ]{lang="EN-US"}[l2tp-group ]{lang="EN-US"}***[group-number]{lang="EN-US"}*]{#struct_0_x5615_53139_1054664971}
+**[l2tp-auto-client l2tp-group ***group-number*]
 
-[**[undo l2tp-auto-client]{lang="EN-US"}**]{#struct_0_x5615_53139_x799911332}
+**[undo l2tp-auto-client**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_168473071}
+【缺省情况】
 
-[[LAC]{lang="EN-US"}]{#struct_0_x5615_53139_545486607}[不会自动建立]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道。]{style="font-family:宋体"}
+LAC不会自动建立L2TP隧道。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1251694336}
+【视图】
 
-[[虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x5615_53139_828985952}[接口视图]{style="font-family:宋体"}
+虚拟PPP接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x983801404}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x1749894647}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_14952247}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1060051806}
+【参数】
 
-[**[l2tp-group]{lang="EN-US"}***[ group-number]{lang="EN-US"}*]{#struct_0_x5615_53139_x215894202}[：指定]{style="font-family:宋体"}[LAC]{lang="EN-US"}[采用特定]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组下配置的隧道参数建立]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道。]{style="font-family:宋体"}*[group-number]{lang="EN-US"}*[为]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[l2tp-group*** group-number*]：指定LAC采用特定L2TP组下配置的隧道参数建立L2TP隧道。*group-number*为L2TP组号，取值范围为1～65535。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_328836493}
+【使用指导】
 
-[[配置本命令时指定的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_863650042}[组必须已经创建，并且]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组的模式必须是]{style="font-family:宋体"}[LAC]{lang="EN-US"}[。]{style="font-family:宋体"}
+配置本命令时指定的L2TP组必须已经创建，并且L2TP组的模式必须是LAC。
 
-[[触发]{style="font-family:宋体"}[LAC]{lang="EN-US"}]{#struct_0_x5615_53139_1612852832}[建立]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道后，该隧道将始终存在，直到通过]{style="font-family:宋体"}**[undo]{lang="EN-US"}**[ **l2tp-auto-client**]{lang="EN-US"}[或]{style="font-family:宋体"}**[undo l2tp-group]{lang="EN-US"}***[ group-number]{lang="EN-US"}*[命令拆除该隧道。]{style="font-family:宋体"}
+触发LAC建立L2TP隧道后，该隧道将始终存在，直到通过**undo** **l2tp-auto-client**或**undo l2tp-group*** group-number*命令拆除该隧道。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x2087576855}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_x1628298122}[触发]{style="font-family:宋体"}[LAC]{lang="EN-US"}[自动建立]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道，建立隧道时采用]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组]{style="font-family:宋体"}[10]{lang="EN-US"}[下配置的隧道参数。]{style="font-family:宋体"}
+\# 触发LAC自动建立L2TP隧道，建立隧道时采用L2TP组10下配置的隧道参数。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_x533159087}
+\<Sysname\> system-view
 
-[\[Sysname\] interface virtual-ppp 1]{lang="EN-US"}
+Sysname interface virtual-ppp 1
 
-[\[Sysname-Virtual-PPP1\] l2tp-auto-client l2tp-group 10]{lang="EN-US"}
+Sysname-Virtual-PPP1 l2tp-auto-client l2tp-group 10
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1337322940}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[l2tp-group]{lang="EN-US"}**]{#struct_0_x5615_53139_x693778938}
-:::
-
-::: {#870583763 .myid}
-[]{#_Toc404785014}[]{#struct_0_x5615_53139_x215959738}
+·**l2tp-group**
 
 **L2TP \-- L2TP配置命令 \-- l2tp-group**
 
 ------------------------------------------------------------------------
 
-[**[l2tp-group]{lang="EN-US"}**]{#struct_0_x5615_53139_x1639120066}[命令用来创建]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组，指定]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组的模式，并进入]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组视图。]{style="font-family:宋体"}
+**[l2tp-group**]命令用来创建L2TP组，指定L2TP组的模式，并进入L2TP组视图。
 
-[**[undo l2tp-group]{lang="EN-US"}**]{#struct_0_x5615_53139_631763418}[命令用来删除]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组。]{style="font-family:宋体"}
+**[undo l2tp-group**]命令用来删除L2TP组。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1970649310}
+【命令】
 
-[**[l2tp-group]{lang="EN-US"}**[ *group-number* \[ **mode** { **lac** \| **lns** } \]]{lang="EN-US"}]{#struct_0_x5615_53139_x938140847}
+**[l2tp-group**[ *group-number* [ **mode** { **lac** \| **lns** } ]]]
 
-[**[undo l2tp-group]{lang="EN-US"}**[ *group-number*]{lang="EN-US"}]{#struct_0_x5615_53139_x609230324}
+**[undo l2tp-group** *group-number*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x742002499}
+【缺省情况】
 
-[[设备上不存在任何]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_887760684}[组。]{style="font-family:宋体"}
+设备上不存在任何L2TP组。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1574696460}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_x5615_53139_x1240529802}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x216418489}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x1757448323}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x243951944}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1351121334}
+【参数】
 
-[*[group-number]{lang="SV"}*]{#struct_0_x5615_53139_174132317}[：]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组号，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[group-number*]：L2TP组号，取值范围为1～65535。
 
-[**[mode]{lang="EN-US"}**]{#struct_0_x5615_53139_x1744122018}[：指定]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组的模式。]{style="font-family:宋体"}
+**[mode**]：指定L2TP组的模式。
 
-[**[lac]{lang="EN-US"}**]{#struct_0_x5615_53139_1931099758}[：]{style="font-family:宋体"}[LAC]{lang="EN-US"}[模式，表示设备可以作为]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道的]{style="font-family:宋体"}[LAC]{lang="EN-US"}[端向]{style="font-family:宋体"}[LNS]{lang="EN-US"}[发起隧道建立请求。]{style="font-family:宋体"}
+**[lac**]：LAC模式，表示设备可以作为L2TP隧道的LAC端向LNS发起隧道建立请求。
 
-[**[lns]{lang="EN-US"}**]{#struct_0_x5615_53139_766002523}[：]{style="font-family:宋体"}[LNS]{lang="EN-US"}[模式，表示设备可以作为]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道的]{style="font-family:宋体"}[LNS]{lang="EN-US"}[端接受来自]{style="font-family:宋体"}[LAC]{lang="EN-US"}[的隧道建立请求。]{style="font-family:宋体"}
+**[lns**]：LNS模式，表示设备可以作为L2TP隧道的LNS端接受来自LAC的隧道建立请求。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1442283189}
+【使用指导】
 
-[[通过本命令创建]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_x430447215}[组时，必须携带]{style="font-family:宋体"}**[mode]{lang="EN-US"}**[关键字，指定]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组的模式。通过本命令进入已经创建的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组视图时，不需要携带]{style="font-family:宋体"}**[mode]{lang="EN-US"}**[关键字。]{style="font-family:宋体"}
+通过本命令创建L2TP组时，必须携带**mode**关键字，指定L2TP组的模式。通过本命令进入已经创建的L2TP组视图时，不需要携带**mode**关键字。
 
-[[在]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_x216484025}[组视图下，可以配置]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道的参数，如隧道验证功能、流控功能等。]{style="font-family:宋体"}
+在L2TP组视图下，可以配置L2TP隧道的参数，如隧道验证功能、流控功能等。
 
-[[一台设备上可以同时存在]{style="font-family:宋体"}[LAC]{lang="EN-US"}]{#struct_0_x5615_53139_x567368437}[模式和]{style="font-family:宋体"}[LNS]{lang="EN-US"}[模式的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组，且最多能够创建]{style="font-family:宋体"}[1000]{lang="EN-US"}[个]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组。]{style="font-family:宋体"}
+一台设备上可以同时存在LAC模式和LNS模式的L2TP组，且最多能够创建1000个L2TP组。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1408336857}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_x414708851}[创建]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组]{style="font-family:宋体"}[2]{lang="EN-US"}[，指定]{style="font-family:
-宋体"}[L2TP]{lang="EN-US"}[组模式为]{style="font-family:宋体"}[LAC]{lang="EN-US"}[，并进入]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组视图。]{style="font-family:宋体"}
+\# 创建L2TP组2，指定L2TP组模式为LAC，并进入L2TP组视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_x164595819}
+\<Sysname\> system-view
 
-[\[Sysname\] l2tp-group 2 mode lac]{lang="EN-US"}
+Sysname l2tp-group 2 mode lac
 
-[\[Sysname-l2tp2\]]{lang="EN-US"}
+Sysname-l2tp2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1859688403}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[allow l2tp]{lang="EN-US"}**]{#struct_0_x5615_53139_780918212}
+·**allow l2tp**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[lns-ip]{lang="EN-US"}**]{#struct_0_x5615_53139_x1345576687}
+·**lns-ip**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[user]{lang="EN-US"}**]{#struct_0_x5615_53139_x1433704763}
-:::
-
-::: {#-456898580 .myid}
-[]{#_Toc404785015}[]{#struct_0_x5615_53139_x216549561}
+·**user**
 
 **L2TP \-- L2TP配置命令 \-- lns-ip**
 
 ------------------------------------------------------------------------
 
-[**[lns-ip]{lang="EN-US"}**]{#struct_0_x5615_53139_2141061821}[命令用来在]{style="font-family:宋体"}[LAC]{lang="EN-US"}[端配置]{style="font-family:宋体"}[LNS]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[lns-ip**]命令用来在LAC端配置LNS的IP地址。
 
-[**[undo]{lang="EN-US"}**[ **lns-ip**]{lang="EN-US"}]{#struct_0_x5615_53139_659401714}[命令用来在]{style="font-family:宋体"}[LAC]{lang="EN-US"}[端删除]{style="font-family:宋体"}[LNS]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+**[undo** **lns-ip**]命令用来在LAC端删除LNS的IP地址。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x174673978}
+【命令】
 
-[**[lns-ip ]{lang="EN-US"}**[{ *ip-address* }&\<1-5\>]{lang="EN-US"}]{#struct_0_x5615_53139_x529631395}
+**[lns-ip **{ *ip-address* }&\<1-5\>]
 
-[**[undo lns-ip]{lang="EN-US"}**]{#struct_0_x5615_53139_1632597565}
+**[undo lns-ip**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x2019379548}
+【缺省情况】
 
-[[没有在]{style="font-family:宋体"}[LAC]{lang="EN-US"}]{#struct_0_x5615_53139_x1229309746}[端]{style="font-family:宋体"}[指定]{style="font-family:宋体"}[LNS]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+没有在LAC端指定LNS的IP地址。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_881062407}
+【视图】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_x716574497}[组视图]{style="font-family:宋体"}
+L2TP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x216615097}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_1013985463}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x2140773935}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1957327371}
+【参数】
 
-[[{ *ip-address* }*&*\<1-5\>]{lang="EN-US"}]{#struct_0_x5615_53139_x1723197946}[：]{style="font-family:
-宋体"}[LNS]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，]{style="font-family:宋体"}[&\<1-5\>]{lang="EN-US"}[表示前面的参数最多可以输入]{style="font-family:宋体"}[5]{lang="EN-US"}[次。]{style="font-family:宋体"}
+{ *ip-address* }*&*\<1-5\>：LNS的IP地址，&\<1-5\>表示前面的参数最多可以输入5次。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1117545701}
+【使用指导】
 
-[[在建立]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_x1673774121}[隧道时，]{style="font-family:宋体"}[LAC]{lang="EN-US"}[将按照]{style="font-family:宋体"}[LNS]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址配置的先后顺序依次向每个]{style="font-family:宋体"}[LNS]{lang="EN-US"}[发送建立]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道的请求。]{style="font-family:宋体"}[LAC]{lang="EN-US"}[接收到某个]{style="font-family:宋体"}[LNS]{lang="EN-US"}[的接受应答后，该]{style="font-family:宋体"}[LNS]{lang="EN-US"}[就作为隧道的对端；否则，]{style="font-family:宋体"}[LAC]{lang="EN-US"}[向下一个]{style="font-family:宋体"}[LNS]{lang="EN-US"}[发起隧道建立请求。]{style="font-family:宋体"}
+在建立L2TP隧道时，LAC将按照LNS的IP地址配置的先后顺序依次向每个LNS发送建立L2TP隧道的请求。LAC接收到某个LNS的接受应答后，该LNS就作为隧道的对端；否则，LAC向下一个LNS发起隧道建立请求。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x5615_53139_x756968046}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[只能在]{style="font-family:宋体"}]{#struct_0_x5615_53139_695769025}[LAC]{lang="EN-US"}[模式的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组下执行本命令。]{style="font-family:宋体"}[LNS]{lang="EN-US"}[模式的]{lang="EN-US" style="font-family:宋体"}[L2TP]{lang="EN-US"}[组下不支持本命令。]{lang="EN-US" style="font-family:宋体"}
+·只能在LAC模式的L2TP组下执行本命令。LNS模式的L2TP组下不支持本命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果在同一个]{style="font-family:宋体"}]{#struct_0_x5615_53139_x216156345}[L2TP]{lang="EN-US"}[组下重复执行本命令，则新的配置覆盖已有配置。]{style="font-family:宋体"}
+·如果在同一个L2TP组下重复执行本命令，则新的配置覆盖已有配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_997047116}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_x196354674}[在]{style="font-family:宋体"}[LAC]{lang="EN-US"}[端配置]{style="font-family:宋体"}[LNS]{lang="EN-US"}[的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[202.1.1.1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 在LAC端配置LNS的IP地址为202.1.1.1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_x1226311625}
+\<Sysname\> system-view
 
-[\[Sysname\] l2tp-group 1 mode lac]{lang="EN-US"}
+Sysname l2tp-group 1 mode lac
 
-[\[Sysname-l2tp1\] lns-ip 202.1.1.1]{lang="EN-US"}
-:::
-
-::: {#-1053061097 .myid}
-[]{#_Toc404785016}[]{#struct_0_x5615_53139_x1823792305}
+Sysname-l2tp1 lns-ip 202.1.1.1
 
 **L2TP \-- L2TP配置命令 \-- mandatory-chap**
 
 ------------------------------------------------------------------------
 
-[**[mandatory-chap]{lang="EN-US"}**]{#struct_0_x5615_53139_793665647}[命令用来强制]{style="font-family:宋体"}[LNS]{lang="EN-US"}[重新对用户进行]{style="font-family:宋体"}[CHAP]{lang="EN-US"}[验证。]{style="font-family:宋体"}
+**[mandatory-chap**]命令用来强制LNS重新对用户进行CHAP验证。
 
-[**[undo mandatory-chap]{lang="EN-US"}**]{#struct_0_x5615_53139_1159401782}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo mandatory-chap**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1014476794}
+【命令】
 
-[**[mandatory-chap]{lang="EN-US"}**]{#struct_0_x5615_53139_867626462}
+**[mandatory-chap**]
 
-[**[undo mandatory-chap]{lang="EN-US"}**]{#struct_0_x5615_53139_x525852357}
+**[undo mandatory-chap**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x216221881}
+【缺省情况】
 
-[[LNS]{lang="EN-US"}]{#struct_0_x5615_53139_1460100440}[不会重新对用户进行]{style="font-family:宋体"}[CHAP]{lang="EN-US"}[验证。]{style="font-family:宋体"}
+LNS不会重新对用户进行CHAP验证。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1852396465}
+【视图】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_1022454160}[组视图]{style="font-family:宋体"}
+L2TP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x557621010}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x1438613968}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_1264862829}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1370014724}
+【使用指导】
 
-[[缺省情况下，]{style="font-family:宋体"}[LAC]{lang="EN-US"}]{#struct_0_x5615_53139_x192865591}[代替]{style="font-family:宋体"}[LNS]{lang="EN-US"}[对用户进行验证，并将用户的所有验证信息及]{style="font-family:宋体"}[LAC]{lang="EN-US"}[端本身配置的验证方式发送给]{style="font-family:宋体"}[LNS]{lang="EN-US"}[。]{style="font-family:宋体"}[LNS]{lang="EN-US"}[根据接收到的信息及]{style="font-family:宋体"}[LNS]{lang="EN-US"}[端配置的验证方式，判断用户是否合法。]{style="font-family:宋体"}
+缺省情况下，LAC代替LNS对用户进行验证，并将用户的所有验证信息及LAC端本身配置的验证方式发送给LNS。LNS根据接收到的信息及LNS端配置的验证方式，判断用户是否合法。
 
-[[为了增加安全性，可以执行]{style="font-family:宋体"}**[mandatory-chap]{lang="EN-US"}**]{#struct_0_x5615_53139_242189441}[命令，强制在]{style="font-family:宋体"}[LAC]{lang="EN-US"}[代理验证成功后，]{style="font-family:宋体"}[LNS]{lang="EN-US"}[再次对用户进行]{style="font-family:宋体"}[CHAP]{lang="EN-US"}[验证。]{style="font-family:宋体"}
+为了增加安全性，可以执行**mandatory-chap**命令，强制在LAC代理验证成功后，LNS再次对用户进行CHAP验证。
 
-[[执行]{style="font-family:宋体"}**[mandatory-chap]{lang="EN-US"}**]{#struct_0_x5615_53139_x216287417}[命令配置强制]{style="font-family:宋体"}[CHAP]{lang="EN-US"}[验证后，对于]{style="font-family:宋体"}[NAS-Initiated]{lang="EN-US"}[模式]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道的用户来说，会经过两次验证：一次是在]{style="font-family:宋体"}[NAS]{lang="EN-US"}[端的验证，另一次是在]{style="font-family:宋体"}[LNS]{lang="EN-US"}[端的验证。一些用户可能不支持进行第二次验证，这时，]{style="font-family:宋体"}[LNS]{lang="EN-US"}[端的]{style="font-family:宋体"}[CHAP]{lang="EN-US"}[重新验证会失败。在这种情况下，建议不要开启]{style="font-family:宋体"}[LNS]{lang="EN-US"}[的强制]{style="font-family:宋体"}[CHAP]{lang="EN-US"}[验证功能。]{style="font-family:宋体"}
+执行**mandatory-chap**命令配置强制CHAP验证后，对于NAS-Initiated模式L2TP隧道的用户来说，会经过两次验证：一次是在NAS端的验证，另一次是在LNS端的验证。一些用户可能不支持进行第二次验证，这时，LNS端的CHAP重新验证会失败。在这种情况下，建议不要开启LNS的强制CHAP验证功能。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x5615_53139_600721045}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[只能在]{style="font-family:宋体"}]{#struct_0_x5615_53139_276235816}[LNS]{lang="EN-US"}[模式的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组下执行本命令。]{style="font-family:宋体"}[LAC]{lang="EN-US"}[模式的]{lang="EN-US" style="font-family:宋体"}[L2TP]{lang="EN-US"}[组下不支持本命令。]{lang="EN-US" style="font-family:宋体"}
+·只能在LNS模式的L2TP组下执行本命令。LAC模式的L2TP组下不支持本命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令只对]{style="font-family:宋体"}[NAS-In]{lang="EN-US"}]{#struct_0_x5615_53139_205824461}[i]{lang="EN-US"}[tiated]{lang="EN-US"}[模式的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道有效，对]{style="font-family:宋体"}[Client-Initiated]{lang="EN-US"}[模式和]{style="font-family:宋体"}[LAC-Auto-Initiated]{lang="EN-US"}[模式的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道无效。]{style="font-family:宋体"}
+·本命令只对NAS-Initiated模式的L2TP隧道有效，对Client-Initiated模式和LAC-Auto-Initiated模式的L2TP隧道无效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[mandatory-lcp]{lang="EN-US"}**]{#struct_0_x5615_53139_x1889122845}[命令]{lang="EN-US" style="font-family:宋体"}[的优先级高于本命令，即如果在]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组下同时执行了]{style="font-family:宋体"}**[mandatory-chap]{lang="EN-US"}**[命令和]{style="font-family:宋体"}**[mandatory-lcp]{lang="EN-US"}**[命令]{lang="EN-US" style="font-family:宋体"}[，则]{style="font-family:宋体"}[LNS]{lang="EN-US"}[与用户重新进行]{style="font-family:宋体"}[LCP]{lang="EN-US"}[协商。]{style="font-family:宋体"}
+·**mandatory-lcp**命令的优先级高于本命令，即如果在L2TP组下同时执行了**mandatory-chap**命令和**mandatory-lcp**命令，则LNS与用户重新进行LCP协商。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1426746243}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_x1081914803}[强制]{style="font-family:宋体"}[LNS]{lang="EN-US"}[重新对用户进行]{style="font-family:宋体"}[CHAP]{lang="EN-US"}[验证。]{style="font-family:宋体"}
+\# 强制LNS重新对用户进行CHAP验证。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_x887007192}
+\<Sysname\> system-view
 
-[\[Sysname\] l2tp-group 1 mode lns]{lang="EN-US"}
+Sysname l2tp-group 1 mode lns
 
-[\[Sysname-l2tp1\] mandatory-chap]{lang="EN-US"}
+Sysname-l2tp1 mandatory-chap
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1349493198}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[mandatory-lcp]{lang="EN-US"}**]{#struct_0_x5615_53139_x216352953}
-:::
-
-::: {#482311173 .myid}
-[]{#_Toc404785017}[]{#struct_0_x5615_53139_1054861579}
+·**mandatory-lcp**
 
 **L2TP \-- L2TP配置命令 \-- mandatory-lcp**
 
 ------------------------------------------------------------------------
 
-[**[mandatory-lcp]{lang="EN-US"}**]{#struct_0_x5615_53139_1091350387}[命令用来强制]{style="font-family:宋体"}[LNS]{lang="EN-US"}[与用户重新进行]{style="font-family:宋体"}[LCP]{lang="EN-US"}[（]{style="font-family:宋体"}[Link Control Protocol]{lang="EN-US"}[，链路控制协议）协商。]{style="font-family:宋体"}
+**[mandatory-lcp**]命令用来强制LNS与用户重新进行LCP（Link Control Protocol，链路控制协议）协商。
 
-[**[undo mandatory-lcp]{lang="EN-US"}**]{#struct_0_x5615_53139_2130204872}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo mandatory-lcp**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_706295271}
+【命令】
 
-[**[mandatory-lcp]{lang="EN-US"}**]{#struct_0_x5615_53139_1984832614}
+**[mandatory-lcp**]
 
-[**[undo mandatory-lcp]{lang="EN-US"}**]{#struct_0_x5615_53139_2056162611}
+**[undo mandatory-lcp**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_968371960}
+【缺省情况】
 
-[[LNS]{lang="EN-US"}]{#struct_0_x5615_53139_1091396859}[不会与用户重新进行]{style="font-family:宋体"}[LCP]{lang="EN-US"}[协商。]{style="font-family:宋体"}
+LNS不会与用户重新进行LCP协商。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x583515645}
+【视图】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_x215894201}[组视图]{style="font-family:宋体"}
+L2TP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_329033101}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_444455728}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x1994201113}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1121078982}
+【使用指导】
 
-[[缺省情况下，对于]{style="font-family:宋体"}[NAS-Initialized]{lang="EN-US"}]{#struct_0_x5615_53139_x1731597271}[模式的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道，用户先和]{style="font-family:宋体"}[LAC]{lang="EN-US"}[进行]{style="font-family:宋体"}[LCP]{lang="EN-US"}[协商。如果协商通过，则由]{style="font-family:宋体"}[LAC]{lang="EN-US"}[发起]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道建立请求，并把与用户协商时收集到的信息（包括验证信息）发送给]{style="font-family:宋体"}[LNS]{lang="EN-US"}[。]{style="font-family:宋体"}[LNS]{lang="EN-US"}[根据接收到的信息判断用户是否合法。]{style="font-family:宋体"}[LNS]{lang="EN-US"}[不会与用户重新进行]{style="font-family:宋体"}[LCP]{lang="EN-US"}[协商。]{style="font-family:宋体"}
+缺省情况下，对于NAS-Initialized模式的L2TP隧道，用户先和LAC进行LCP协商。如果协商通过，则由LAC发起L2TP隧道建立请求，并把与用户协商时收集到的信息（包括验证信息）发送给LNS。LNS根据接收到的信息判断用户是否合法。LNS不会与用户重新进行LCP协商。
 
-[[LAC]{lang="EN-US"}]{#struct_0_x5615_53139_x888718051}[与用户协商出来的]{style="font-family:宋体"}[LCP]{lang="EN-US"}[参数可能不是]{style="font-family:宋体"}[LNS]{lang="EN-US"}[期望的参数。此时，需要在]{style="font-family:宋体"}[LNS]{lang="EN-US"}[上执行]{style="font-family:宋体"}**[mandatory-lcp]{lang="EN-US"}**[命令，强制]{style="font-family:宋体"}[LNS]{lang="EN-US"}[与用户重新进行]{style="font-family:宋体"}[LCP]{lang="EN-US"}[协商，忽略]{style="font-family:宋体"}[LAC]{lang="EN-US"}[发送的信息。]{style="font-family:宋体"}
+LAC与用户协商出来的LCP参数可能不是LNS期望的参数。此时，需要在LNS上执行**mandatory-lcp**命令，强制LNS与用户重新进行LCP协商，忽略LAC发送的信息。
 
-[[如果一些]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x5615_53139_x739139534}[用户不支持]{style="font-family:宋体"}[LCP]{lang="EN-US"}[重新协商，则]{style="font-family:宋体"}[LCP]{lang="EN-US"}[重新协商过程会失败。在这种情况下，建议不要开启]{style="font-family:宋体"}[LNS]{lang="EN-US"}[的强制]{style="font-family:宋体"}[LCP]{lang="EN-US"}[重协商功能。]{style="font-family:宋体"}
+如果一些PPP用户不支持LCP重新协商，则LCP重新协商过程会失败。在这种情况下，建议不要开启LNS的强制LCP重协商功能。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x5615_53139_832180813}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[只能在]{style="font-family:宋体"}]{#struct_0_x5615_53139_1913123656}[LNS]{lang="EN-US"}[模式的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组下执行本命令。]{style="font-family:宋体"}[LAC]{lang="EN-US"}[模式的]{lang="EN-US" style="font-family:宋体"}[L2TP]{lang="EN-US"}[组下不支持本命令。]{lang="EN-US" style="font-family:宋体"}
+·只能在LNS模式的L2TP组下执行本命令。LAC模式的L2TP组下不支持本命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令只对]{style="font-family:宋体"}[NAS-In]{lang="EN-US"}]{#struct_0_x5615_53139_x215959737}[i]{lang="EN-US"}[tiated]{lang="EN-US"}[模式的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道有效，对]{style="font-family:宋体"}[Client-Initiated]{lang="EN-US"}[模式和]{style="font-family:宋体"}[LAC-Auto-Initiated]{lang="EN-US"}[模式的隧道无效。]{style="font-family:宋体"}
+·本命令只对NAS-Initiated模式的L2TP隧道有效，对Client-Initiated模式和LAC-Auto-Initiated模式的隧道无效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本]{style="font-family:宋体"}]{#struct_0_x5615_53139_x1639972034}[命令]{lang="EN-US" style="font-family:宋体"}[的优先级高于]{style="font-family:宋体"}**[mandatory-chap]{lang="EN-US"}**[命令，即如果在]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组下同时执行了]{style="font-family:宋体"}**[mandatory-chap]{lang="EN-US"}**[命令和]{style="font-family:宋体"}**[mandatory-lcp]{lang="EN-US"}**[命令]{lang="EN-US" style="font-family:宋体"}[，则]{style="font-family:宋体"}[LNS]{lang="EN-US"}[与用户重新进行]{style="font-family:宋体"}[LCP]{lang="EN-US"}[协商。]{style="font-family:宋体"}
+·本命令的优先级高于**mandatory-chap**命令，即如果在L2TP组下同时执行了**mandatory-chap**命令和**mandatory-lcp**命令，则LNS与用户重新进行LCP协商。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_794454211}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_881475704}[强制]{style="font-family:宋体"}[LNS]{lang="EN-US"}[与用户重新进行]{style="font-family:宋体"}[LCP]{lang="EN-US"}[协商。]{style="font-family:宋体"}
+\# 强制LNS与用户重新进行LCP协商。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_220107586}
+\<Sysname\> system-view
 
-[\[Sysname\] l2tp-group 1 mode lns]{lang="EN-US"}
+Sysname l2tp-group 1 mode lns
 
-[\[Sysname-l2tp1\] mandatory-lcp]{lang="EN-US"}[]{#_Toc16585282}[]{#_Toc16497322}
+Sysname-l2tp1 mandatory-lcp
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x679321994}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[mandatory-chap]{lang="EN-US"}**]{#struct_0_x5615_53139_x1865380455}
-:::
-
-::: {#988247972 .myid}
-[]{#_Toc404785018}[]{#struct_0_x5615_53139_445007104}
+·**mandatory-chap**
 
 **L2TP \-- L2TP配置命令 \-- mtu**
 
 ------------------------------------------------------------------------
 
-[**[mtu]{lang="EN-US"}**]{#struct_0_x5615_53139_1477811055}[命令用来配置接口的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[（]{style="font-family:宋体"}[Maximum Transmission Unit]{lang="EN-US"}[，最大传输单元）值。]{style="font-family:宋体"}
+**[mtu**]命令用来配置接口的MTU（Maximum Transmission Unit，最大传输单元）值。
 
-[**[undo mtu]{lang="EN-US"}**]{#struct_0_x5615_53139_x1517174937}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo mtu**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_445465856}
+【命令】
 
-[**[mtu]{lang="EN-US"}**[ *size*]{lang="EN-US"}]{#struct_0_x5615_53139_x383797846}
+**[mtu** *size*]
 
-[**[undo mtu]{lang="EN-US"}**]{#struct_0_x5615_53139_753443546}
+**[undo mtu**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_520663971}
+【缺省情况】
 
-[[虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x5615_53139_x1900663522}[接口的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[值为]{style="font-family:宋体"}[1500]{lang="EN-US"}[字节。]{style="font-family:宋体"}
+虚拟PPP接口的MTU值为1500字节。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1950059193}
+【视图】
 
-[[虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x5615_53139_441079109}[接口视图]{style="font-family:宋体"}
+虚拟PPP接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_2020834275}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_445400320}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_461746749}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x403282633}
+【参数】
 
-[*[size]{lang="EN-US"}*]{#struct_0_x5615_53139_x583399545}[：接口的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[值，单位为字节。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。]{style="font-family:宋体"}
+*[size*]：接口的MTU值，单位为字节。不同型号的设备支持的取值范围不同，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x952888217}
+【使用指导】
 
-[[接口的]{style="font-family:宋体"}[MTU]{lang="EN-US"}]{#struct_0_x5615_53139_1503369188}[值影响]{style="font-family:宋体"}[IP]{lang="EN-US"}[协议报文在该接口上传输时的分片与重组。]{style="font-family:宋体"}
+接口的MTU值影响IP协议报文在该接口上传输时的分片与重组。
 
-[[需要注意的是，配置了]{style="font-family:宋体"}**[mtu]{lang="EN-US"}**]{#struct_0_x5615_53139_769998199}[命令后需要执行命令]{style="font-family:宋体"}**[shutdown]{lang="EN-US"}**[和]{style="font-family:宋体"}**[undo shutdown]{lang="EN-US"}**[，这样该配置才能在接口上生效。]{style="font-family:宋体"}
+需要注意的是，配置了**mtu**命令后需要执行命令**shutdown**和**undo shutdown**，这样该配置才能在接口上生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1511312235}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_444941575}[配置虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口]{style="font-family:宋体"}[10]{lang="EN-US"}[的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[值为]{style="font-family:宋体"}[1400]{lang="EN-US"}[字节。]{style="font-family:宋体"}
+\# 配置虚拟PPP接口10的MTU值为1400字节。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_x1528835701}
+\<Sysname\> system-view
 
-[\[Sysname\] interface virtual-ppp 10]{lang="EN-US"}
+Sysname interface virtual-ppp 10
 
-[\[Sysname-Virtual-PPP10\] mtu 1400]{lang="EN-US"}
-:::
-
-::: {#-82843708 .myid}
-[]{#_Toc404785019}[]{#struct_0_x5615_53139_x1306135534}[]{#_Toc335656819}[]{#_Toc323804933}[]{#_Toc345658524}[]{#_Toc345658525}[]{#_Toc345658526}[]{#_Toc345658527}[]{#_Toc345658528}[]{#_Toc345658529}[]{#_Toc345658530}[]{#_Toc345658531}[]{#_Toc345658532}[]{#_Toc345658533}[]{#_Toc345658534}[]{#_Toc345658535}[]{#_Toc345658536}[]{#_Toc345658537}[]{#_Toc345658538}[]{#_Toc345658539}[]{#_Toc345658540}[]{#_Toc345658541}[]{#_Toc345658542}[]{#_Toc345658543}[]{#_Toc345658544}[]{#_Toc345658545}[]{#_Toc345658546}
+Sysname-Virtual-PPP10 mtu 1400
 
 **L2TP \-- L2TP配置命令 \-- reset counters interface virtual-ppp**
 
 ------------------------------------------------------------------------
 
-[**[reset counters interface virtual-ppp]{lang="EN-US"}**]{#struct_0_x5615_53139_107984720}[命令用来清除虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口的统计信息。]{style="font-family:宋体"}
+**[reset counters interface virtual-ppp**]命令用来清除虚拟PPP接口的统计信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x216418492}
+【命令】
 
-[**[reset counters interface]{lang="EN-US"}**[ \[ **virtual-ppp** \[ *interface-number* \] \]]{lang="EN-US"}]{#struct_0_x5615_53139_x1757120644}
+**[reset counters interface** [ **virtual-ppp** [ *interface-number*  ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1769372266}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x5615_53139_x1693717301}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1923060307}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x1468280245}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_1248817695}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1759642674}
+【参数】
 
-[*[interface-number]{lang="EN-US"}*]{#struct_0_x5615_53139_x1981221694}[：虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口的编号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[interface-number*]：虚拟PPP接口的编号，取值范围为0～255。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x806206741}
+【使用指导】
 
-[[在某些情况下，需要统计一定时间内某接口的流量，这就需要在统计开始前清除该接口原有的统计信息，重新进行统计。]{style="font-family:宋体"}]{#struct_0_x5615_53139_x216484028}
+在某些情况下，需要统计一定时间内某接口的流量，这就需要在统计开始前清除该接口原有的统计信息，重新进行统计。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果不指定]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x5615_53139_x567040757}**[virtual-ppp]{lang="EN-US"}**[和]{lang="EN-US" style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[，则清除所有接口的统计信息；]{lang="EN-US" style="font-family:宋体"}
+·如果不指定**virtual-ppp**和*interface-number*，则清除所有接口的统计信息；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x5615_53139_517808220}**[virtual-ppp]{lang="EN-US"}**[而不指定]{lang="EN-US" style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[，则清除所有]{lang="EN-US" style="font-family:宋体"}[虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口]{lang="EN-US" style="font-family:宋体"}[的统计信息；]{lang="EN-US" style="font-family:宋体"}
+·如果指定**virtual-ppp**而不指定*interface-number*，则清除所有虚拟PPP接口的统计信息；
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果同时指定]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x5615_53139_1863191865}**[virtual-ppp]{lang="EN-US"}**[和]{lang="EN-US" style="font-family:宋体"}*[interface-number]{lang="EN-US"}*[，则清除指定]{lang="EN-US" style="font-family:宋体"}[虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口]{lang="EN-US" style="font-family:宋体"}[的统计信息。]{lang="EN-US" style="font-family:宋体"}
+·如果同时指定**virtual-ppp**和*interface-number*，则清除指定虚拟PPP接口的统计信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1377814602}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_x1976498581}[清除虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口]{style="font-family:宋体"}[10]{lang="EN-US"}[的统计信息。]{style="font-family:宋体"}
+\# 清除虚拟PPP接口10的统计信息。
 
-[[\<Sysname\> reset counters interface virtual-ppp 10]{lang="EN-US"}]{#struct_0_x5615_53139_1711841470}
-:::
-
-::: {#954707549 .myid}
-[]{#_Toc404785020}[]{#struct_0_x5615_53139_1697288072}
+\<Sysname\> reset counters interface virtual-ppp 10
 
 **L2TP \-- L2TP配置命令 \-- reset l2tp tunnel**
 
 ------------------------------------------------------------------------
 
-[**[reset l2tp tunnel]{lang="EN-US"}**]{#struct_0_x5615_53139_x202787815}[命令用来断开指定的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道，同时断开该隧道内的所有会话。]{style="font-family:宋体"}
+**[reset l2tp tunnel**]命令用来断开指定的L2TP隧道，同时断开该隧道内的所有会话。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1924812631}
+【命令】
 
-[**[reset l2tp tunnel]{lang="EN-US"}**[ { **id** *tunnel-id* \| **name** *remote-name* }]{lang="EN-US"}]{#struct_0_x5615_53139_x216549564}
+**[reset l2tp tunnel**[ { **id** *tunnel-id* \| **name** *remote-name* }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_2140865213}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x5615_53139_x1303062403}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1089482998}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x2089644609}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x135223957}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_451106439}
+【参数】
 
-[**[id ]{lang="EN-US"}**]{#struct_0_x5615_53139_1426375316}*[tunnel-id]{lang="SV"}*[：断开隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}[为指定值的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道。]{style="font-family:宋体"}*[tunnel-id]{lang="SV"}*[为隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[id **]*tunnel-id*：断开隧道ID为指定值的L2TP隧道。*tunnel-id*为隧道ID，取值范围为1～65535。
 
-[**[name]{lang="SV"}**]{#struct_0_x5615_53139_x1478175181}[ ]{lang="SV"}*[remote-name]{lang="SV"}*[：断开与指定隧道对端之间的]{style="font-family:
-宋体"}[L2TP]{lang="EN-US"}[隧道。]{style="font-family:
-宋体"}*[remote-name]{lang="SV"}*[表示隧道对端的名称，为]{style="font-family:
-宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[name**]*remote-name*：断开与指定隧道对端之间的L2TP隧道。*remote-name*表示隧道对端的名称，为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x216615100}
+【使用指导】
 
-[[在用户数为零、网络发生故障等情况下，可以通过本命令强制断开指定的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_x942526288}[隧道。]{style="font-family:宋体"}[LAC]{lang="EN-US"}[和]{style="font-family:宋体"}[LNS]{lang="EN-US"}[任何一端都可主动发起断开]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道的请求。隧道断开后，该隧道上的所有]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[会话也将被清除。]{style="font-family:宋体"}
+在用户数为零、网络发生故障等情况下，可以通过本命令强制断开指定的L2TP隧道。LAC和LNS任何一端都可主动发起断开L2TP隧道的请求。隧道断开后，该隧道上的所有L2TP会话也将被清除。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x5615_53139_637097365}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[强制断开一个]{style="font-family:宋体"}]{#struct_0_x5615_53139_1139903687}[L2TP]{lang="EN-US"}[隧道后，当对端用户再次呼入时，隧道可以重新建立。]{style="font-family:宋体"}
+·强制断开一个L2TP隧道后，当对端用户再次呼入时，隧道可以重新建立。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[通过指定隧道的对端名称来确定需要断开的]{style="font-family:宋体"}]{#struct_0_x5615_53139_503613591}[L2TP]{lang="EN-US"}[隧道时，如果没有符合条件的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道存在，则对当前的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道没有影响；如果有多个符合条件的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道存在（同一个名称，不同]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址），则断开所有符合条件的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道。]{style="font-family:宋体"}
+·通过指定隧道的对端名称来确定需要断开的L2TP隧道时，如果没有符合条件的L2TP隧道存在，则对当前的L2TP隧道没有影响；如果有多个符合条件的L2TP隧道存在（同一个名称，不同IP地址），则断开所有符合条件的L2TP隧道。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1324006642}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_x1425061202}[断开对端名称为]{style="font-family:宋体"}[aaa]{lang="EN-US"}[的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道，并断开该隧道内的所有会话。]{style="font-family:宋体"}
+\# 断开对端名称为aaa的L2TP隧道，并断开该隧道内的所有会话。
 
-[[\<Sysname\> reset l2tp tunnel ]{lang="EN-US"}]{#struct_0_x5615_53139_x2037472570}[[name aaa]{lang="EN-US"}]{#_Toc16585292}
+\<Sysname\> reset l2tp tunnel name aaa
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1574380188}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[display l2tp tunnel]{lang="EN-US"}**]{#struct_0_x5615_53139_1022416900}[]{#_Hlt21862211}
-:::
-
-::::: {#-780779607 .myid}
-[]{#_Toc404785021}[]{#struct_0_x5615_53139_x216156348}[]{#_Toc335656821}[]{#_Toc303865071}[]{#_Toc215545670}[]{#_Toc215479545}
+·**display l2tp tunnel**
 
 **L2TP \-- L2TP配置命令 \-- service**
 
 ------------------------------------------------------------------------
 
-::: {style="border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[![说明](L2TP命令.files/image001.png){#图片 7 width="63" height="25"}]{lang="EN-US"}]{#struct_0_x5615_53139_997768012}
-:::
+![说明](L2TP命令.files/image001.png)
 
-::: {style="border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
-margin-left:31.2pt;margin-right:0cm"}
-[[本命令的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:KaiTi_GB2312"}]{#struct_0_x5615_53139_x533638549}
-:::
+本命令的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[ ]{lang="EN-US"}
+**[service**]命令用来指定虚拟PPP接口下流量的业务处理板。
 
-[**[service]{lang="EN-US"}**]{#struct_0_x5615_53139_x186611792}[命令用来指定虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口下流量的业务处理板。]{style="font-family:宋体"}
+**[undo service**]命令用来恢复缺省情况。
 
-[**[undo service]{lang="EN-US"}**]{#struct_0_x5615_53139_220707278}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+【命令】
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_540356139}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_x5615_53139_229935071}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+**[service slot*** slot-number*]
 
-[**[service slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x5615_53139_x1670165624}
+**[undo service slot**]
 
-[**[undo service slot]{lang="EN-US"}**]{#struct_0_x5615_53139_x1162937640}
+分布式设备－IRF模式：
 
-[[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}]{#struct_0_x5615_53139_1187129840}[模式：]{style="font-family:宋体"}
+**[service chassis ***chassis-number*** slot*** slot-number*]
 
-[**[service ]{lang="EN-US"}[chassis ]{lang="EN-US"}***[chassis-number]{lang="EN-US"}***[ slot]{lang="EN-US"}***[ slot-number]{lang="EN-US"}*]{#struct_0_x5615_53139_x216221884}
+**[undo service chassis**]
 
-[**[undo service ]{lang="EN-US"}[chassis]{lang="EN-US"}**]{#struct_0_x5615_53139_1460428120}
+【缺省情况】
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_300199538}
+没有指定虚拟PPP接口下流量的业务处理板。
 
-[[没有指定虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x5615_53139_x976527024}[接口下流量的业务处理板。]{style="font-family:宋体"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1764116837}
+虚拟PPP接口视图
 
-[[虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x5615_53139_457903951}[接口视图]{style="font-family:宋体"}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x292747633}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_1480760038}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_1727100692}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x216287420}
+**[slot** *slot-number*]：指定单板所在的槽位号。*slot-number*表示单板所在的槽位号。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x5615_53139_600393364}[：指定单板所在的槽位号。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot** *slot-number*]：指定设备在IRF中的成员编号。*slot-number*表示设备在IRF中的成员编号。（集中式IRF设备）
 
-[**[slot]{lang="EN-US"}**[ *slot-number*]{lang="EN-US"}]{#struct_0_x5615_53139_x1845521803}[：指定设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+**[chassis** *chassis-number* **slot** *slot-number*]：指定成员设备上的指定单板。*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。（分布式设备－IRF模式）
 
-[**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}]{#struct_0_x5615_53139_x980897955}[：指定成员设备上的指定单板。]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1574984902}
+**[service**]命令仅对L2TP数据报文的处理产生影响，L2TP控制报文始终在主用主控板上处理，不受本命令的控制。
 
-[**[service]{lang="EN-US"}**]{#struct_0_x5615_53139_17844734}[命令仅对]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[数据报文的处理产生影响，]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[控制报文始终在主用主控板上处理，不受本命令的控制。]{style="font-family:宋体"}
+如果通过本命令指定了虚拟PPP接口下流量的业务处理板，则通过该接口转发的报文均在指定的单板/成员设备上进行封装和解封装处理。否则，由系统自动选择处理L2TP数据报文的单板/成员设备。
 
-[[如果通过本命令指定了虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x5615_53139_157872918}[接口下流量的业务处理板，则通过该接口转发的报文均在指定的单板]{style="font-family:宋体"}[/]{lang="EN-US"}[成员设备上进行封装和解封装处理。否则，由系统自动选择处理]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[数据报文的单板]{style="font-family:宋体"}[/]{lang="EN-US"}[成员设备。]{style="font-family:宋体"}
+需要注意的是：
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x5615_53139_72424250}
+·通过**tunnel flow-control**命令为L2TP数据报文开启了流控功能时，需要在虚拟PPP接口下配置**service**命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[通过]{lang="EN-US" style="font-family:宋体"}**[tunnel flow-control]{lang="EN-US"}**]{#struct_0_x5615_53139_x845687426}[命令为]{lang="EN-US" style="font-family:
-宋体"}[L2TP]{lang="EN-US"}[数据报文开启了流控功能时，需要在虚拟]{lang="EN-US" style="font-family:
-宋体"}[PPP]{lang="EN-US"}[接口下配置]{lang="EN-US" style="font-family:宋体"}**[service]{lang="EN-US"}**[命令。]{lang="EN-US" style="font-family:宋体"}
+·如果指定的业务处理板被拔出，则即使接口UP，流量也转发不通。重新插入该业务处理板后，流量可以恢复在指定板上进行封装和解封装处理。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果指定的业务处理板被拔出，则即使接口]{style="font-family:宋体"}]{#struct_0_x5615_53139_727501447}[UP]{lang="EN-US"}[，流量也转发不通。重新插入该业务处理板后，流量可以恢复在指定板上进行封装和解封装处理。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x216352956}
+\# 指定在2号单板集中处理虚拟PPP接口10的流量。（分布式设备－独立运行模式）
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_1054533899}[指定在]{style="font-family:宋体"}[2]{lang="EN-US"}[号单板集中处理虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口]{style="font-family:宋体"}[10]{lang="EN-US"}[的流量。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_x403454298}
+Sysname interface virtual-ppp 10
 
-[\[Sysname\] interface virtual-ppp 10]{lang="EN-US"}
+Sysname-Virtual-PPP10 service slot 2
 
-[\[Sysname-Virtual-PPP10\] service slot 2]{lang="EN-US"}
+\# 指定在2号成员设备集中处理虚拟PPP接口的流量。（集中式IRF设备）
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_x2124758059}[指定在]{style="font-family:宋体"}[2]{lang="EN-US"}[号成员设备集中处理虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口的流量。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_420269164}
+Sysname interface virtual-ppp 10
 
-[\[Sysname\] interface virtual-ppp 10]{lang="EN-US"}
+Sysname-Virtual-PPP10 service slot 2
 
-[\[Sysname-Virtual-PPP10\] service slot 2]{lang="EN-US"}
+\# 指定在2号成员设备的2号单板集中处理虚拟PPP接口10的流量。（分布式设备－IRF模式）
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_1907852356}[指定在]{style="font-family:宋体"}[2]{lang="EN-US"}[号成员设备的]{style="font-family:宋体"}[2]{lang="EN-US"}[号单板集中处理虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口]{style="font-family:宋体"}[10]{lang="EN-US"}[的流量。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_1734097327}
+Sysname interface virtual-ppp 10
 
-[\[Sysname\] interface virtual-ppp 10]{lang="EN-US"}
-
-[\[Sysname-Virtual-PPP10\]]{lang="EN-US"}[ ]{lang="EN-US"}[service ]{lang="IT"}[chassis]{lang="EN-US"}[ ]{lang="EN-US"}[2 slot 2]{lang="IT"}
-:::::
-
-::: {#1170655049 .myid}
-[]{#_Toc404785022}[]{#struct_0_x5615_53139_x1550600373}[]{#_Toc335656822}
+Sysname-Virtual-PPP10service chassis2 slot 2
 
 **L2TP \-- L2TP配置命令 \-- shutdown**
 
 ------------------------------------------------------------------------
 
-[**[shutdown]{lang="EN-US"}**]{#struct_0_x5615_53139_x215894204}[命令用来关闭接口。]{style="font-family:宋体"}
+**[shutdown**]命令用来关闭接口。
 
-[**[undo]{lang="EN-US"}**[ **shutdown**]{lang="EN-US"}]{#struct_0_x5615_53139_329229709}[命令用来打开接口。]{style="font-family:宋体"}
+**[undo** **shutdown**]命令用来打开接口。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1853408395}
+【命令】
 
-[**[shutdown]{lang="EN-US"}**]{#struct_0_x5615_53139_x623457940}
+**[shutdown**]
 
-[**[undo shutdown]{lang="EN-US"}**]{#struct_0_x5615_53139_1795460288}
+**[undo shutdown**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_61888560}
+【缺省情况】
 
-[[接口处于打开状态。]{style="font-family:宋体"}]{#struct_0_x5615_53139_x131117042}
+接口处于打开状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1447461947}
+【视图】
 
-[[虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x5615_53139_2116007913}[接口视图]{style="font-family:宋体"}
+虚拟PPP接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_595225920}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x215959740}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x1639644357}
+mdc-admin
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x943670584}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_x1347087976}[关闭虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口]{style="font-family:宋体"}[10]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 关闭虚拟PPP接口10。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_1404332970}
+\<Sysname\> system-view
 
-[\[Sysname\] interface virtual-ppp 10]{lang="EN-US"}
+Sysname interface virtual-ppp 10
 
-[\[Sysname-Virtual-PPP10\] shutdown]{lang="EN-US"}
-:::
-
-::: {#1646906047 .myid}
-[]{#_Toc404785023}[]{#struct_0_x5615_53139_445007111}[]{#_Toc374353031}
+Sysname-Virtual-PPP10 shutdown
 
 **L2TP \-- L2TP配置命令 \-- source-ip**
 
 ------------------------------------------------------------------------
 
-[**[source-ip]{lang="EN-US"}**]{#struct_0_x5615_53139_x478504076}[命令用来设置]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道的源端地址，即封装后]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道报文的源地址。]{style="font-family:宋体"}
+**[source-ip**]命令用来设置L2TP隧道的源端地址，即封装后L2TP隧道报文的源地址。
 
-[**[undo source-ip]{lang="EN-US"}**]{#struct_0_x5615_53139_x942287665}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo source-ip**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_445465863}
+【命令】
 
-[**[source-ip]{lang="EN-US"}**[ *ip-address*]{lang="EN-US"}]{#struct_0_x5615_53139_1190180271}
+**[source-ip** *ip-address*]
 
-[**[undo source-ip]{lang="EN-US"}**]{#struct_0_x5615_53139_x1591584623}
+**[undo source-ip**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1711519378}
+【缺省情况】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_1446726841}[隧道的源端地址为本端隧道出接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+L2TP隧道的源端地址为本端隧道出接口的IP地址。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1319401513}
+【视图】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_x1202252777}[组]{style="font-family:宋体"}[视图]{style="font-family:宋体"}
+L2TP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x291289388}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_445400327}
+network-admin
 
-[[network-operator]{lang="EN-US"}]{#struct_0_x5615_53139_461746744}
+network-operator
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x403282620}
+【参数】
 
-[*[ip-address]{lang="SV"}*]{#struct_0_x5615_53139_x583202936}[：]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道的源端]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[ip-address*]：L2TP隧道的源端IP地址。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1829067536}
+【使用指导】
 
-[[建议将]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_304856902}[隧道的源端地址配置为设备上某]{style="font-family:宋体"}[LoopBack]{lang="EN-US"}[接口的]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址，以减小物理接口故障对]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[业务造成的影响。]{style="font-family:宋体"}
+建议将L2TP隧道的源端地址配置为设备上某LoopBack接口的IP地址，以减小物理接口故障对L2TP业务造成的影响。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x5615_53139_444941574}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[只能在]{style="font-family:宋体"}]{#struct_0_x5615_53139_x1528835702}[LAC]{lang="EN-US"}[模式的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组下执行本命令。]{style="font-family:宋体"}[LN]{lang="EN-US"}[S]{lang="EN-US"}[模式的]{lang="EN-US" style="font-family:宋体"}[L2TP]{lang="EN-US"}[组下不支持本命令。]{lang="EN-US" style="font-family:宋体"}
+·只能在LAC模式的L2TP组下执行本命令。LNS模式的L2TP组下不支持本命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[在]{lang="EN-US" style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_988211892}[多机备份的情况下，如果]{lang="EN-US" style="font-family:宋体"}[L2TP]{lang="EN-US"}[组]{lang="EN-US" style="font-family:宋体"}[视图]{style="font-family:宋体"}[下同时配置了]{lang="EN-US" style="font-family:宋体"}**[tunnel vsrp source-ip]{lang="EN-US"}**[和]{lang="EN-US" style="font-family:宋体"}**[source-ip]{lang="EN-US"}**[命令，将使用]{lang="EN-US" style="font-family:宋体"}**[tunnel vsrp source-ip]{lang="EN-US"}**[命令指定的地址作为]{lang="EN-US" style="font-family:
-宋体"}[L2TP]{lang="EN-US"}[隧道的源端地址；如果]{lang="EN-US" style="font-family:宋体"}[L2TP]{lang="EN-US"}[组]{lang="EN-US" style="font-family:宋体"}[视图]{style="font-family:宋体"}[下配置了]{lang="EN-US" style="font-family:宋体"}**[source-ip]{lang="EN-US"}**[命令，没有配置]{lang="EN-US" style="font-family:宋体"}**[tunnel vsrp source-ip]{lang="EN-US"}**[命令，将会导致]{lang="EN-US" style="font-family:宋体"}[L2TP]{lang="EN-US"}[多机备份故障。]{lang="EN-US" style="font-family:宋体"}[关于]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[多机备份的详细介绍请参见"可靠性配置指导"中的"多机备份"。]{style="font-family:宋体"}
+·在L2TP多机备份的情况下，如果L2TP组视图下同时配置了**tunnel vsrp source-ip**和**source-ip**命令，将使用**tunnel vsrp source-ip**命令指定的地址作为L2TP隧道的源端地址；如果L2TP组视图下配置了**source-ip**命令，没有配置**tunnel vsrp source-ip**命令，将会导致L2TP多机备份故障。关于L2TP多机备份的详细介绍请参见"可靠性配置指导"中的"多机备份"。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1064570751}
+【举例】
 
-[[\# ]{lang="SV"}]{#struct_0_x5615_53139_444876038}[设置]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道的源端地址]{style="font-family:宋体"}[为]{style="font-family:宋体"}[2.2.2.2]{lang="SV"}[。]{style="font-family:宋体"}
+\# 设置L2TP隧道的源端地址为2.2.2.2。
 
-[[\<Sysname\> system-view]{lang="SV"}]{#struct_0_x5615_53139_1963339568}
+\<Sysname\> system-view
 
-[\[Sysname\] l2tp-group 1 ]{lang="SV"}[mode lac]{lang="EN-US"}
+Sysname l2tp-group 1 mode lac
 
-[\[Sysname-l2tp1\] source-ip 2.2.2.2]{lang="SV"}
+Sysname-l2tp1 source-ip 2.2.2.2
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_444810502}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[tunnel vsrp source-ip]{lang="EN-US"}**]{#struct_0_x5615_53139_405983395}[（可靠性命令参考]{lang="EN-US" style="font-family:宋体"}[/]{lang="EN-US"}[多机备份）]{lang="EN-US" style="font-family:宋体"}
-:::
-
-::: {#-2024387197 .myid}
-[]{#_Toc404785024}[]{#struct_0_x5615_53139_x655213866}
+·**tunnel vsrp source-ip**（可靠性命令参考/多机备份）
 
 **L2TP \-- L2TP配置命令 \-- tunnel authentication**
 
 ------------------------------------------------------------------------
 
-[**[tunnel authentication]{lang="EN-US"}**]{#struct_0_x5615_53139_x43281393}[命令用来开启]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道验证功能。]{style="font-family:宋体"}
+**[tunnel authentication**]命令用来开启L2TP隧道验证功能。
 
-[**[undo tunnel authentication]{lang="EN-US"}**]{#struct_0_x5615_53139_x299280461}[命令用来关闭]{style="font-family:
-宋体"}[L2TP]{lang="EN-US"}[隧道验证功能。]{style="font-family:宋体"}
+**[undo tunnel authentication**]命令用来关闭L2TP隧道验证功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_278406525}
+【命令】
 
-[**[tunnel authentication]{lang="EN-US"}**]{#struct_0_x5615_53139_x216418491}
+**[tunnel authentication**]
 
-[**[undo tunnel authentication]{lang="EN-US"}**]{#struct_0_x5615_53139_x1756924036}
+**[undo tunnel authentication**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_809737345}
+【缺省情况】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_229774537}[隧道验证功能处于开启状态。]{style="font-family:宋体"}
+L2TP隧道验证功能处于开启状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1621273059}
+【视图】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_x864775689}[组视图]{style="font-family:宋体"}
+L2TP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_775448694}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_1721454336}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x682008334}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x82141392}
+【使用指导】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_x216484027}[隧道验证功能用来防止本端设备与非法的对端设备建立]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道，提高网络的安全性。]{style="font-family:宋体"}
+L2TP隧道验证功能用来防止本端设备与非法的对端设备建立L2TP隧道，提高网络的安全性。
 
-[[如果]{style="font-family:宋体"}[LAC]{lang="EN-US"}]{#struct_0_x5615_53139_x567237365}[和]{style="font-family:宋体"}[LNS]{lang="EN-US"}[两端都开启了隧道验证功能，则两端密钥（通过]{style="font-family:宋体"}**[tunnel password]{lang="EN-US"}**[命令配置）不为空并且完全一致的情况下，二者之间才能成功建立]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道。]{style="font-family:宋体"}
+如果LAC和LNS两端都开启了隧道验证功能，则两端密钥（通过**tunnel password**命令配置）不为空并且完全一致的情况下，二者之间才能成功建立L2TP隧道。
 
-[[如果]{style="font-family:宋体"}[LAC]{lang="EN-US"}]{#struct_0_x5615_53139_x86584030}[和]{style="font-family:宋体"}[LNS]{lang="EN-US"}[中的一端开启了隧道验证功能，则另一端可不开启隧道验证功能，但需要两端密钥（通过]{style="font-family:宋体"}**[tunnel password]{lang="EN-US"}**[命令配置）不为空并且完全一致，二者之间才能成功建立]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道。]{style="font-family:宋体"}
+如果LAC和LNS中的一端开启了隧道验证功能，则另一端可不开启隧道验证功能，但需要两端密钥（通过**tunnel password**命令配置）不为空并且完全一致，二者之间才能成功建立L2TP隧道。
 
-[[如果]{style="font-family:宋体"}[LAC]{lang="EN-US"}]{#struct_0_x5615_53139_x1539235384}[和]{style="font-family:宋体"}[LNS]{lang="EN-US"}[两端都禁用隧道验证功能，则无论两端是否配置密钥、密钥是否相同，都不影响隧道建立。]{style="font-family:宋体"}
+如果LAC和LNS两端都禁用隧道验证功能，则无论两端是否配置密钥、密钥是否相同，都不影响隧道建立。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x5615_53139_x854392479}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[为了保证隧道安全，建议用户不要禁用隧道验证功能。]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x5615_53139_849938681}
+·为了保证隧道安全，建议用户不要禁用隧道验证功能。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果用户需要修改隧道验证的密钥，请在隧道开始协商前进行，否则修改的密钥不生效。]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x5615_53139_x705537076}
+·如果用户需要修改隧道验证的密钥，请在隧道开始协商前进行，否则修改的密钥不生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1101377320}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_x1218914971}[开启]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道验证功能。]{style="font-family:宋体"}
+\# 开启L2TP隧道验证功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_649482538}
+\<Sysname\> system-view
 
-[\[Sysname\] l2tp-group 1 mode lns]{lang="EN-US"}
+Sysname l2tp-group 1 mode lns
 
-[\[Sysname-l2tp1\] tunnel authentication]{lang="EN-US"}
+Sysname-l2tp1 tunnel authentication
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_813406713}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[tunnel password]{lang="EN-US"}**]{#struct_0_x5615_53139_x758525742}
-:::
-
-::: {#-1842633323 .myid}
-[]{#_Toc404785025}[]{#struct_0_x5615_53139_1384950630}
+·**tunnel password**
 
 **L2TP \-- L2TP配置命令 \-- tunnel avp-hidden**
 
 ------------------------------------------------------------------------
 
-[**[tunnel avp-hidden]{lang="EN-US"}**]{#struct_0_x5615_53139_x1718520246}[命令用来配置隧道采用隐藏方式（即密文方式）传输]{style="font-family:宋体"}[AVP]{lang="EN-US"}[数据。]{style="font-family:宋体"}
+**[tunnel avp-hidden**]命令用来配置隧道采用隐藏方式（即密文方式）传输AVP数据。
 
-[**[undo]{lang="EN-US"}**[ **tunnel avp-hidden**]{lang="EN-US"}]{#struct_0_x5615_53139_x216549563}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo** **tunnel avp-hidden**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_2141192893}
+【命令】
 
-[**[tunnel avp-hidden]{lang="EN-US"}**]{#struct_0_x5615_53139_1043353029}
+**[tunnel avp-hidden**]
 
-[**[undo tunnel avp-hidden]{lang="EN-US"}**]{#struct_0_x5615_53139_1496633184}
+**[undo tunnel avp-hidden**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x2024015198}
+【缺省情况】
 
-[[隧道采用明文方式传输]{style="font-family:宋体"}[AVP]{lang="EN-US"}]{#struct_0_x5615_53139_x896110043}[数据。]{style="font-family:宋体"}
+隧道采用明文方式传输AVP数据。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_323102110}
+【视图】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_346068990}[组视图]{style="font-family:宋体"}
+L2TP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1483610959}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x1095403733}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x216615099}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1013330103}
+【使用指导】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_x534772408}[协议通过]{style="font-family:宋体"}[AVP]{lang="EN-US"}[（]{style="font-family:宋体"}[Attribute Value Pair]{lang="EN-US"}[，属性值对）来传输隧道协商参数、会话协商参数和用户认证信息等。如果用户不希望这些信息（如用户密码）被窃取，则可以使用本配置将]{style="font-family:宋体"}[AVP]{lang="EN-US"}[数据的传输方式配置为隐藏传输，即利用隧道验证密钥（通过]{style="font-family:宋体"}**[tunnel password]{lang="EN-US"}**[命令配置）对]{style="font-family:宋体"}[AVP]{lang="EN-US"}[数据进行加密传输。]{style="font-family:宋体"}
+L2TP协议通过AVP（Attribute Value Pair，属性值对）来传输隧道协商参数、会话协商参数和用户认证信息等。如果用户不希望这些信息（如用户密码）被窃取，则可以使用本配置将AVP数据的传输方式配置为隐藏传输，即利用隧道验证密钥（通过**tunnel password**命令配置）对AVP数据进行加密传输。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x5615_53139_x1844917269}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[LAC]{lang="EN-US"}]{#struct_0_x5615_53139_1734069819}[和]{style="font-family:宋体"}[LNS]{lang="EN-US"}[模式的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组下都可以执行本命令。但是，目前]{style="font-family:宋体"}[LNS]{lang="EN-US"}[模式的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组下本命令不会生效。]{style="font-family:宋体"}
+·LAC和LNS模式的L2TP组下都可以执行本命令。但是，目前LNS模式的L2TP组下本命令不会生效。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[只有通过]{lang="EN-US" style="font-family:宋体"}**[tunnel authentication]{lang="EN-US"}**]{#struct_0_x5615_53139_746997080}[命令开启隧道验证功能后，]{lang="EN-US" style="font-family:宋体"}[本命令才会生效。]{style="font-family:宋体"}
+·只有通过**tunnel authentication**命令开启隧道验证功能后，本命令才会生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_2040216367}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_1650686827}[配置]{style="font-family:宋体"}[AVP]{lang="EN-US"}[数据采用隐藏方式传输。]{style="font-family:宋体"}
+\# 配置AVP数据采用隐藏方式传输。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_x980915926}
+\<Sysname\> system-view
 
-[\[Sysname\] l2tp-group 1 mode lac]{lang="EN-US"}
+Sysname l2tp-group 1 mode lac
 
-[\[Sysname-l2tp1\] tunnel avp-hidden]{lang="EN-US"}
+Sysname-l2tp1 tunnel avp-hidden
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x216156347}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[tunnel authentication]{lang="EN-US"}**]{#struct_0_x5615_53139_996916044}
+·**tunnel authentication**
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[tunnel password]{lang="EN-US"}**]{#struct_0_x5615_53139_312832441}
-:::
-
-::: {#-1023556656 .myid}
-[]{#_Toc404785026}[]{#struct_0_x5615_53139_1569740946}
+·**tunnel password**
 
 **L2TP \-- L2TP配置命令 \-- tunnel flow-control**
 
 ------------------------------------------------------------------------
 
-[**[tunnel flow-control]{lang="EN-US"}**]{#struct_0_x5615_53139_x502770842}[命令用来开启]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[会话的流控功能。]{style="font-family:宋体"}
+**[tunnel flow-control**]命令用来开启L2TP会话的流控功能。
 
-[**[undo tunnel flow-control]{lang="EN-US"}**]{#struct_0_x5615_53139_1999171976}[命令用来关闭]{style="font-family:
-宋体"}[L2TP]{lang="EN-US"}[会话的流控功能。]{style="font-family:宋体"}
+**[undo tunnel flow-control**]命令用来关闭L2TP会话的流控功能。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x2049907722}
+【命令】
 
-[**[tunnel flow-control]{lang="EN-US"}**]{#struct_0_x5615_53139_921339945}
+**[tunnel flow-control**]
 
-[**[undo tunnel flow-control]{lang="EN-US"}**]{#struct_0_x5615_53139_41309066}
+**[undo tunnel flow-control**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_2052529020}
+【缺省情况】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_x216221883}[会话的流控功能处于关闭状态。]{style="font-family:宋体"}
+L2TP会话的流控功能处于关闭状态。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1459969368}
+【视图】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_2063619113}[组视图]{style="font-family:宋体"}
+L2TP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x308471983}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x1491573243}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_273356836}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1490899562}
+【使用指导】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_x397628141}[会话的流控功能是指在]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[会话上传递的报文中携带序列号，通过序列号检测是否存在丢包，并根据序列号对乱序报文进行排序。]{style="font-family:宋体"}
+L2TP会话的流控功能是指在L2TP会话上传递的报文中携带序列号，通过序列号检测是否存在丢包，并根据序列号对乱序报文进行排序。
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_1848410515}[会话的流控功能应用在]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[数据报文的接收与发送过程中。]{style="font-family:宋体"}
+L2TP会话的流控功能应用在L2TP数据报文的接收与发送过程中。
 
-[[只要]{style="font-family:宋体"}[LAC]{lang="EN-US"}]{#struct_0_x5615_53139_x1928051887}[和]{style="font-family:宋体"}[LNS]{lang="EN-US"}[中的一端开启了流控功能，二者之间建立的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[会话就支持流控功能。设备作为]{style="font-family:宋体"}[LAC]{lang="EN-US"}[时，]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[会话建立后如果]{style="font-family:宋体"}[LNS]{lang="EN-US"}[上改变了流控功能的状态，则]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[会话的流控功能状态随之改变。设备作为]{style="font-family:宋体"}[LNS]{lang="EN-US"}[时，]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[会话建立后如果]{style="font-family:宋体"}[LAC]{lang="EN-US"}[上改变了流控功能的状态，则]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[会话的流控功能状态不会随之改变。]{style="font-family:宋体"}
+只要LAC和LNS中的一端开启了流控功能，二者之间建立的L2TP会话就支持流控功能。设备作为LAC时，L2TP会话建立后如果LNS上改变了流控功能的状态，则L2TP会话的流控功能状态随之改变。设备作为LNS时，L2TP会话建立后如果LAC上改变了流控功能的状态，则L2TP会话的流控功能状态不会随之改变。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x216287419}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_600852117}[开启]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[会话的流控功能。]{style="font-family:宋体"}
+\# 开启L2TP会话的流控功能。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_1621064244}
+\<Sysname\> system-view
 
-[\[Sysname\] l2tp-group 1 mode lac]{lang="EN-US"}
+Sysname l2tp-group 1 mode lac
 
-[\[Sysname-l2tp1\] tunnel flow-control]{lang="EN-US"}
-:::
-
-::: {#-1004152632 .myid}
-[]{#_Toc404785027}[]{#struct_0_x5615_53139_1892966775}
+Sysname-l2tp1 tunnel flow-control
 
 **L2TP \-- L2TP配置命令 \-- tunnel name**
 
 ------------------------------------------------------------------------
 
-[**[tunnel name]{lang="EN-US"}**]{#struct_0_x5615_53139_x1406058305}[命令用来配置隧道本端的名称。]{style="font-family:宋体"}
+**[tunnel name**]命令用来配置隧道本端的名称。
 
-[**[undo tunnel name]{lang="EN-US"}**]{#struct_0_x5615_53139_x1381798596}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo tunnel name**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x437495719}
+【命令】
 
-[**[tunnel name]{lang="EN-US"}**[ *name*]{lang="EN-US"}]{#struct_0_x5615_53139_1809095563}
+**[tunnel name** *name*]
 
-[**[undo tunnel name]{lang="EN-US"}**]{#struct_0_x5615_53139_x184521993}
+**[undo tunnel name**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x216352955}
+【缺省情况】
 
-[[隧道本端的名称为设备的名称。设备名称的详细介绍，请参见"基础配置指导"中的"设备管理"。]{style="font-family:宋体"}]{#struct_0_x5615_53139_1054730507}
+隧道本端的名称为设备的名称。设备名称的详细介绍，请参见"基础配置指导"中的"设备管理"。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x468376400}
+【视图】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_x1845437307}[组视图]{style="font-family:宋体"}
+L2TP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1224440261}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x826002598}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_442689953}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1565275879}
+【参数】
 
-[*[name]{lang="EN-US"}*]{#struct_0_x5615_53139_x1331913961}[：隧道本端的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[name*]：隧道本端的名称，为1～31个字符的字符串，区分大小写。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x36937852}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_x215894203}[配置隧道本端的名称为]{style="font-family:宋体"}[itsme]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置隧道本端的名称为itsme。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_328902029}
+\<Sysname\> system-view
 
-[\[Sysname\] l2tp-group 1 mode lns]{lang="EN-US"}
+Sysname l2tp-group 1 mode lns
 
-[\[Sysname-l2tp1\] tunnel name itsme]{lang="EN-US"}
+Sysname-l2tp1 tunnel name itsme
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_140013303}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[sysname]{lang="EN-US"}**]{#struct_0_x5615_53139_729853743}[（基础配置命令参考]{style="font-family:
-宋体"}[/]{lang="EN-US"}[设备管理）]{style="font-family:宋体"}
-:::
-
-::: {#250721067 .myid}
-[]{#_Toc404785028}[]{#struct_0_x5615_53139_x2050968798}
+·**sysname**（基础配置命令参考/设备管理）
 
 **L2TP \-- L2TP配置命令 \-- tunnel password**
 
 ------------------------------------------------------------------------
 
-[**[tunnel password]{lang="EN-US"}**]{#struct_0_x5615_53139_x870154907}[命令用来配置隧道验证密钥。]{style="font-family:宋体"}
+**[tunnel password**]命令用来配置隧道验证密钥。
 
-[**[undo tunnel password]{lang="EN-US"}**]{#struct_0_x5615_53139_x754920344}[命令用来删除隧道验证密钥。]{style="font-family:宋体"}
+**[undo tunnel password**]命令用来删除隧道验证密钥。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_2043671273}
+【命令】
 
-[**[tunnel password]{lang="EN-US"}**[ { **cipher** \| **simple** } *password*]{lang="EN-US"}]{#struct_0_x5615_53139_x2021807051}
+**[tunnel password**[ { **cipher** \| **simple** } *password*]]
 
-[**[undo tunnel password]{lang="EN-US"}**]{#struct_0_x5615_53139_x215959739}
+**[undo tunnel password**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1639054530}
+【缺省情况】
 
-[[没有配置隧道验证密钥。]{style="font-family:宋体"}]{#struct_0_x5615_53139_x2028632482}
+没有配置隧道验证密钥。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x479877362}
+【视图】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_616843784}[组视图]{style="font-family:宋体"}
+L2TP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1045076476}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_1464834251}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_794633523}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_769838109}
+【参数】
 
-[**[cipher]{lang="EN-US"}**]{#struct_0_x5615_53139_1536608817}[：以密文方式设置密钥。]{style="font-family:宋体"}
+**[cipher**]：以密文方式设置密钥。
 
-[**[simple]{lang="EN-US"}**]{#struct_0_x5615_53139_x216418494}[：以明文方式设置密钥。]{style="font-family:宋体"}
+**[simple**]：以明文方式设置密钥。
 
-[*[password]{lang="EN-US"}*]{#struct_0_x5615_53139_x1756727428}[：隧道验证密钥，区分大小写。如果是]{style="font-family:宋体"}**[cipher]{lang="EN-US"}**[方式，则]{style="font-family:宋体"}*[password]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[53]{lang="EN-US"}[个字符的密文字符串；如果是]{style="font-family:宋体"}**[simple]{lang="EN-US"}**[方式，则]{style="font-family:宋体"}*[password]{lang="EN-US"}*[为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:
-宋体"}[16]{lang="EN-US"}[个字符的明文字符串。]{style="font-family:宋体"}
+*[password*]：隧道验证密钥，区分大小写。如果是**cipher**方式，则*password*为1～53个字符的密文字符串；如果是**simple**方式，则*password*为1～16个字符的明文字符串。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x474172593}
+【使用指导】
 
-[[只有通过]{style="font-family:宋体"}**[tunnel authentication]{lang="EN-US"}**]{#struct_0_x5615_53139_134998827}[命令开启隧道验证功能后，本命令才会生效。]{style="font-family:宋体"}
+只有通过**tunnel authentication**命令开启隧道验证功能后，本命令才会生效。
 
-[[以明文或密文形式设置的密钥，均以密文的方式保存在配置文件中。]{style="font-family:宋体"}]{#struct_0_x5615_53139_1440933770}
+以明文或密文形式设置的密钥，均以密文的方式保存在配置文件中。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1355795991}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_806739362}[以明文方式配置隧道验证密钥为]{style="font-family:宋体"}[yougotit]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 以明文方式配置隧道验证密钥为yougotit。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_x1373647995}
+\<Sysname\> system-view
 
-[\[Sysname\] l2tp-group 1 mode lac]{lang="EN-US"}
+Sysname l2tp-group 1 mode lac
 
-[\[Sysname-l2tp1\] tunnel password simple yougotit]{lang="EN-US"}
+Sysname-l2tp1 tunnel password simple yougotit
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1012350156}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[tunnel authentication]{lang="EN-US"}**]{#struct_0_x5615_53139_x216484030}
-:::
-
-::: {#1370339540 .myid}
-[]{#_Toc404785029}[]{#struct_0_x5615_53139_x567565046}
+·**tunnel authentication**
 
 **L2TP \-- L2TP配置命令 \-- tunnel timer hello**
 
 ------------------------------------------------------------------------
 
-[**[tunnel timer hello]{lang="EN-US"}**]{#struct_0_x5615_53139_472016943}[命令用来配置隧道中]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的发送时间间隔。]{style="font-family:宋体"}
+**[tunnel timer hello**]命令用来配置隧道中Hello报文的发送时间间隔。
 
-[**[undo tunnel timer hello]{lang="EN-US"}**]{#struct_0_x5615_53139_838547441}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo tunnel timer hello**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1770152708}
+【命令】
 
-[**[tunnel timer hello]{lang="EN-US"}**[ *hello-interval*]{lang="EN-US"}]{#struct_0_x5615_53139_1614552605}
+**[tunnel timer hello** *hello-interval*]
 
-[**[undo tunnel timer hello]{lang="EN-US"}**]{#struct_0_x5615_53139_92347211}
+**[undo tunnel timer hello**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_214864298}
+【缺省情况】
 
-[[隧道中]{style="font-family:宋体"}[Hello]{lang="EN-US"}]{#struct_0_x5615_53139_x1520021927}[报文的发送时间间隔为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+隧道中Hello报文的发送时间间隔为60秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_563930100}
+【视图】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_x216549566}[组视图]{style="font-family:宋体"}
+L2TP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_2140996285}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x919111070}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_502750586}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1605909134}
+【参数】
 
-[*[hello-interval]{lang="EN-US"}*]{#struct_0_x5615_53139_677879043}[：]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的发送时间间隔，取值范围为]{style="font-family:宋体"}[60]{lang="EN-US"}[～]{style="font-family:宋体"}[1000]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[hello-interval*]：Hello报文的发送时间间隔，取值范围为60～1000，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x77719939}
+【使用指导】
 
-[[LAC]{lang="EN-US"}]{#struct_0_x5615_53139_x638261121}[和]{style="font-family:宋体"}[LNS]{lang="EN-US"}[在没有]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[报文发送时，按照本命令配置的时间间隔周期性发送]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文，以免]{style="font-family:宋体"}[LAC]{lang="EN-US"}[和]{style="font-family:宋体"}[LNS]{lang="EN-US"}[之间的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道和会话在超时后被删除。]{style="font-family:宋体"}
+LAC和LNS在没有L2TP报文发送时，按照本命令配置的时间间隔周期性发送Hello报文，以免LAC和LNS之间的L2TP隧道和会话在超时后被删除。
 
-[[在]{style="font-family:宋体"}[LNS]{lang="EN-US"}]{#struct_0_x5615_53139_1072065875}[和]{style="font-family:宋体"}[LAC]{lang="EN-US"}[上，可以配置不同的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文发送时间间隔。]{style="font-family:宋体"}
+在LNS和LAC上，可以配置不同的Hello报文发送时间间隔。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1766616355}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_x216615102}[配置隧道中]{style="font-family:宋体"}[Hello]{lang="EN-US"}[报文的发送时间间隔为]{style="font-family:宋体"}[90]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置隧道中Hello报文的发送时间间隔为90秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_x942657360}
+\<Sysname\> system-view
 
-[\[Sysname\] l2tp-group 1 mode lac]{lang="EN-US"}
+Sysname l2tp-group 1 mode lac
 
-[\[Sysname-l2tp1\] tunnel timer hello 90]{lang="EN-US"}
-:::
-
-::: {#464137912 .myid}
-[]{#_Toc404785030}[]{#struct_0_x5615_53139_1400294027}[]{#_Hlt13991793}
+Sysname-l2tp1 tunnel timer hello 90
 
 **L2TP \-- L2TP配置命令 \-- ip dscp**
 
 ------------------------------------------------------------------------
 
-[**[ip dscp]{lang="EN-US"}**]{#struct_0_x5615_53139_1475802774}[命令用来配置隧道报文的]{style="font-family:宋体"}[DSCP]{lang="EN-US"}[（]{style="font-family:宋体"}[Differentiated Services Code Point]{lang="EN-US"}[，区分服务编码点）优先级。]{style="font-family:宋体"}
+**[ip dscp**]命令用来配置隧道报文的DSCP（Differentiated Services Code Point，区分服务编码点）优先级。
 
-[**[undo ip dscp]{lang="EN-US"}**]{#struct_0_x5615_53139_916528442}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo ip dscp**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1507769344}
+【命令】
 
-[**[ip dscp]{lang="EN-US"}**[ *dscp-value*]{lang="EN-US"}]{#struct_0_x5615_53139_1989132914}
+**[ip dscp** *dscp-value*]
 
-[**[undo ip dscp]{lang="EN-US"}**]{#struct_0_x5615_53139_x1780576738}
+**[undo ip dscp**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1614269816}
+【缺省情况】
 
-[[隧道报文的]{style="font-family:宋体"}[DSCP]{lang="EN-US"}]{#struct_0_x5615_53139_x216156350}[优先级为]{style="font-family:宋体"}[0]{lang="EN-US"}[。]{style="font-family:宋体"}
+隧道报文的DSCP优先级为0。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_997243725}
+【视图】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_1612159277}[组视图]{style="font-family:宋体"}
+L2TP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1385417401}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x1101504525}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_624052439}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1620946153}
+【参数】
 
-[*[dscp-value]{lang="EN-US"}*]{#struct_0_x5615_53139_2063371243}[：隧道报文的]{style="font-family:宋体"}[DSCP]{lang="EN-US"}[优先级，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[dscp-value*]：隧道报文的DSCP优先级，取值范围为0～63。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1990835007}
+【使用指导】
 
-[[DSCP]{lang="EN-US"}]{#struct_0_x5615_53139_x1093421706}[携带在]{style="font-family:宋体"}[IP]{lang="EN-US"}[报文中的]{style="font-family:宋体"}[ToS]{lang="EN-US"}[字段，用来体现报文自身的优先等级，决定报文传输的优先程度。通过本命令可以指定发送的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道报文中携带的]{style="font-family:宋体"}[DSCP]{lang="EN-US"}[优先级的取值。]{style="font-family:宋体"}
+DSCP携带在IP报文中的ToS字段，用来体现报文自身的优先等级，决定报文传输的优先程度。通过本命令可以指定发送的L2TP隧道报文中携带的DSCP优先级的取值。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x216221886}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_1460297048}[配置隧道报文的]{style="font-family:宋体"}[DSCP]{lang="EN-US"}[优先级为]{style="font-family:宋体"}[50]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置隧道报文的DSCP优先级为50。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_225608783}
+\<Sysname\> system-view
 
-[\[Sysname\] l2tp-group 1 mode lac]{lang="EN-US"}
+Sysname l2tp-group 1 mode lac
 
-[\[Sysname-l2tp1\] ip dscp 50]{lang="EN-US"}
-:::
-
-::: {#1474946988 .myid}
-[]{#_Toc404785031}[]{#struct_0_x5615_53139_1677322326}[]{#_Toc317856915}[]{#_Toc309228573}[]{#_Toc205607563}[]{#_Toc335656823}
+Sysname-l2tp1 ip dscp 50
 
 **L2TP \-- L2TP配置命令 \-- timer-hold**
 
 ------------------------------------------------------------------------
 
-[**[timer-hold]{lang="EN-US"}**]{#struct_0_x5615_53139_x483582371}[命令用来配置接口发送]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的周期。]{style="font-family:宋体"}
+**[timer-hold**]命令用来配置接口发送keepalive报文的周期。
 
-[**[undo timer-hold]{lang="EN-US"}**]{#struct_0_x5615_53139_x1132373096}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo timer-hold**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x331343451}
+【命令】
 
-[**[timer-hold]{lang="EN-US"}**[ *seconds*]{lang="EN-US"}]{#struct_0_x5615_53139_x1414375726}
+**[timer-hold** *seconds*]
 
-[**[undo timer-hold]{lang="EN-US"}**]{#struct_0_x5615_53139_1328009639}
+**[undo timer-hold**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x216287422}
+【缺省情况】
 
-[[接口发送]{style="font-family:宋体"}[keepalive]{lang="EN-US"}]{#struct_0_x5615_53139_600524436}[报文的周期为]{style="font-family:宋体"}[10]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+接口发送keepalive报文的周期为10秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1131600017}
+【视图】
 
-[[虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x5615_53139_1050612952}[接口视图]{style="font-family:宋体"}
+虚拟PPP接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x161530988}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x393797331}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x296707354}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_833526496}
+【参数】
 
-[*[seconds]{lang="EN-US"}*]{#struct_0_x5615_53139_x454206344}[：接口发送]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的周期，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[32767]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+*[seconds*]：接口发送keepalive报文的周期，取值范围为0～32767，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1088407999}
+【使用指导】
 
-[[虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x5615_53139_x216352958}[接口定期向对端发送]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文。如果在一段时间内无法收到对端发来的]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文，虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口的链路层会认为对端故障，上报链路层]{style="font-family:宋体"}[Down]{lang="EN-US"}[。可以通过]{style="font-family:宋体"}**[timer-hold]{lang="EN-US"}**[命令修改发送]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的时间间隔。]{style="font-family:宋体"}
+虚拟PPP接口定期向对端发送keepalive报文。如果在一段时间内无法收到对端发来的keepalive报文，虚拟PPP接口的链路层会认为对端故障，上报链路层Down。可以通过**timer-hold**命令修改发送keepalive报文的时间间隔。
 
-[[在速率非常低的链路上，参数]{style="font-family:宋体"}*[seconds]{lang="EN-US"}*]{#struct_0_x5615_53139_1055451403}[不能配置过小。因为在低速链路上，大报文可能会需要很长的时间才能传送完毕，这样就会延迟]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的发送与接收。而接口如果在]{style="font-family:宋体"}[retry]{lang="EN-US"}[个（可以通过]{style="font-family:宋体"}**[timer-hold retry]{lang="EN-US"}**[命令修改该个数）]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[周期之后仍然无法收到对端的]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文，它就会认为链路发生故障。如果]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文被延迟的时间超过接口的这个限制，链路就会被认为发生故障而被关闭。]{style="font-family:宋体"}
+在速率非常低的链路上，参数*seconds*不能配置过小。因为在低速链路上，大报文可能会需要很长的时间才能传送完毕，这样就会延迟keepalive报文的发送与接收。而接口如果在retry个（可以通过**timer-hold retry**命令修改该个数）keepalive周期之后仍然无法收到对端的keepalive报文，它就会认为链路发生故障。如果keepalive报文被延迟的时间超过接口的这个限制，链路就会被认为发生故障而被关闭。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x461262862}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_x1255994926}[配置虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口]{style="font-family:宋体"}[10]{lang="EN-US"}[发送]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的周期为]{style="font-family:宋体"}[20]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置虚拟PPP接口10发送keepalive报文的周期为20秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_1005959331}
+\<Sysname\> system-view
 
-[\[Sysname\] interface virtual-ppp 10]{lang="EN-US"}
+Sysname interface virtual-ppp 10
 
-[\[Sysname-Virtual-PPP10\] timer-hold 20]{lang="EN-US"}
+Sysname-Virtual-PPP10 timer-hold 20
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1709479894}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[timer-hold retry]{lang="EN-US"}**]{#struct_0_x5615_53139_x1709479895}
-:::
-
-::: {#518520923 .myid}
-[]{#_Toc404785032}[]{#struct_0_x5615_53139_x1709479896}
+·**timer-hold retry**
 
 **L2TP \-- L2TP配置命令 \-- timer-hold retry**
 
 ------------------------------------------------------------------------
 
-[**[timer-hold]{lang="EN-US"}**[ **retry**]{lang="EN-US"}]{#struct_0_x5615_53139_x1638577498}[命令用来配置接口在多少个]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[周期内没有收到]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的应答就拆除链路。]{style="font-family:宋体"}
+**[timer-hold** **retry**]命令用来配置接口在多少个keepalive周期内没有收到keepalive报文的应答就拆除链路。
 
-[**[undo timer-hold retry]{lang="EN-US"}**]{#struct_0_x5615_53139_x1344444308}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo timer-hold retry**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1344444307}
+【命令】
 
-[**[timer-hold]{lang="EN-US"}**[ **retry** *retry*]{lang="EN-US"}]{#struct_0_x5615_53139_1053434206}
+**[timer-hold** **retry** *retry*]
 
-[**[undo timer-hold retry]{lang="EN-US"}**]{#struct_0_x5615_53139_x1344444306}
+**[undo timer-hold retry**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1344444305}
+【缺省情况】
 
-[[接口在]{style="font-family:宋体"}[5]{lang="EN-US"}]{#struct_0_x5615_53139_x109365208}[个]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[周期内没有收到]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的应答就拆除链路。]{style="font-family:宋体"}
+接口在5个keepalive周期内没有收到keepalive报文的应答就拆除链路。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1344444304}
+【视图】
 
-[[虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x5615_53139_x1344444303}[接口视图]{style="font-family:宋体"}
+虚拟PPP接口视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x915934262}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x1344444302}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_650149679}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1344444301}
+【参数】
 
-[*[retry]{lang="EN-US"}*]{#struct_0_x5615_53139_x1344444300}[：接口在多少个]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[周期内没有收到]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的应答就拆除链路，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[retry*]：接口在多少个keepalive周期内没有收到keepalive报文的应答就拆除链路，取值范围为1～255。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x512649735}
+【使用指导】
 
-[[虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}]{#struct_0_x5615_53139_x1344444299}[接口定期向对端发送]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文。如果在一段时间内无法收到对端发来的]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文，虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口的链路层会认为对端故障，上报链路层]{style="font-family:宋体"}[Down]{lang="EN-US"}[。可以通过]{style="font-family:宋体"}**[timer-hold]{lang="EN-US"}**[命令修改发送]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的时间间隔。]{style="font-family:宋体"}
+虚拟PPP接口定期向对端发送keepalive报文。如果在一段时间内无法收到对端发来的keepalive报文，虚拟PPP接口的链路层会认为对端故障，上报链路层Down。可以通过**timer-hold**命令修改发送keepalive报文的时间间隔。
 
-[[在速率非常低的链路上，参数]{style="font-family:宋体"}*[seconds]{lang="EN-US"}*]{#struct_0_x5615_53139_994207852}[不能配置过小。因为在低速链路上，大报文可能会需要很长的时间才能传送完毕，这样就会延迟]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的发送与接收。而接口如果在]{style="font-family:宋体"}*[retry]{lang="EN-US"}*[个（可以通过]{style="font-family:宋体"}**[timer-hold retry]{lang="EN-US"}**[命令修改该个数）]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[周期之后仍然无法收到对端的]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文，它就会认为链路发生故障。如果]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文被延迟的时间超过接口的这个限制，链路就会被认为发生故障而被关闭。]{style="font-family:宋体"}
+在速率非常低的链路上，参数*seconds*不能配置过小。因为在低速链路上，大报文可能会需要很长的时间才能传送完毕，这样就会延迟keepalive报文的发送与接收。而接口如果在*retry*个（可以通过**timer-hold retry**命令修改该个数）keepalive周期之后仍然无法收到对端的keepalive报文，它就会认为链路发生故障。如果keepalive报文被延迟的时间超过接口的这个限制，链路就会被认为发生故障而被关闭。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1370228280}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_994207853}[配置虚拟]{style="font-family:宋体"}[PPP]{lang="EN-US"}[接口]{style="font-family:宋体"}[10]{lang="EN-US"}[在]{style="font-family:宋体"}[10]{lang="EN-US"}[个]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[周期内没有收到]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[报文的应答就拆除链路。]{style="font-family:宋体"}
+\# 配置虚拟PPP接口10在10个keepalive周期内没有收到keepalive报文的应答就拆除链路。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_994207855}
+\<Sysname\> system-view
 
-[\[Sysname\] interface virtual-ppp 10]{lang="EN-US"}
+Sysname interface virtual-ppp 10
 
-[\[Sysname-Virtual-PPP10\] timer-hold retry 10]{lang="EN-US"}
+Sysname-Virtual-PPP10 timer-hold retry 10
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1370228281}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[timer-hold]{lang="EN-US"}**]{#struct_0_x5615_53139_994207856}
-:::
-
-::: {#1904591196 .myid}
-[]{#_Toc404785033}[]{#struct_0_x5615_53139_1892301877}[]{#_Toc395702175}
+·**timer-hold**
 
 **L2TP \-- L2TP配置命令 \-- user**
 
 ------------------------------------------------------------------------
 
-[**[user]{lang="EN-US"}**]{#struct_0_x5615_53139_x182197196}[命令用来配置本端作为]{style="font-family:宋体"}[LAC]{lang="EN-US"}[端时向]{style="font-family:宋体"}[LNS]{lang="EN-US"}[发起隧道建立请求的触发条件。]{style="font-family:宋体"}
+**[user**]命令用来配置本端作为LAC端时向LNS发起隧道建立请求的触发条件。
 
-[**[undo]{lang="EN-US"}**[ **user**]{lang="EN-US"}]{#struct_0_x5615_53139_x316104143}[命令用来删除配置的触发条件。]{style="font-family:宋体"}
+**[undo** **user**]命令用来删除配置的触发条件。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1578804354}
+【命令】
 
-[**[user]{lang="EN-US"}**[ { **domain** *domain-name* \| **fullusername** *user-name* }]{lang="EN-US"}]{#struct_0_x5615_53139_x215894206}
+**[user**[ { **domain** *domain-name* \| **fullusername** *user-name* }]]
 
-[**[undo user]{lang="EN-US"}**]{#struct_0_x5615_53139_329098637}
+**[undo user**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1973696577}
+【缺省情况】
 
-[[没有指定本端作为]{style="font-family:宋体"}[LAC]{lang="EN-US"}]{#struct_0_x5615_53139_x1111887776}[端时向]{style="font-family:宋体"}[LNS]{lang="EN-US"}[发起隧道建立请求的触发条件。]{style="font-family:宋体"}
+没有指定本端作为LAC端时向LNS发起隧道建立请求的触发条件。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x135648548}
+【视图】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_360089521}[组视图]{style="font-family:宋体"}
+L2TP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x614768377}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x1103530088}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x979805580}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x1123983140}
+【参数】
 
-[**[domain]{lang="EN-US"}**[ *domain-name*]{lang="EN-US"}]{#struct_0_x5615_53139_x215959742}[：指定接入用户的域名与配置的域名匹配时，]{style="font-family:宋体"}[LAC]{lang="EN-US"}[向]{style="font-family:宋体"}[LNS]{lang="EN-US"}[发起]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道建立请求。]{style="font-family:宋体"}*[domain-name]{lang="EN-US"}*[表示用户域名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[24]{lang="EN-US"}[个字符的字符串，不区分大小写。]{style="font-family:宋体"}
+**[domain** *domain-name*]：指定接入用户的域名与配置的域名匹配时，LAC向LNS发起L2TP隧道建立请求。*domain-name*表示用户域名，为1～24个字符的字符串，不区分大小写。
 
-[**[fullusername]{lang="EN-US"}**[ *user-name*]{lang="EN-US"}]{#struct_0_x5615_53139_x1639775429}[：指定接入用户的用户名与配置的完整用户名匹配时，]{style="font-family:宋体"}[LAC]{lang="EN-US"}[向]{style="font-family:宋体"}[LNS]{lang="EN-US"}[发起]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道建立请求。]{style="font-family:宋体"}*[user-name]{lang="EN-US"}*[表示完整的用户名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[fullusername** *user-name*]：指定接入用户的用户名与配置的完整用户名匹配时，LAC向LNS发起L2TP隧道建立请求。*user-name*表示完整的用户名，为1～255个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_897298374}
+【使用指导】
 
-[[只有接入用户的域名或完整用户名符合本命令配置的触发条件时，]{style="font-family:宋体"}[LAC]{lang="EN-US"}]{#struct_0_x5615_53139_875676758}[才会向对端]{style="font-family:宋体"}[LNS]{lang="EN-US"}[发送建立]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道的请求。]{style="font-family:宋体"}
+只有接入用户的域名或完整用户名符合本命令配置的触发条件时，LAC才会向对端LNS发送建立L2TP隧道的请求。
 
-[[需要注意的是：]{style="font-family:宋体"}]{#struct_0_x5615_53139_1524108881}
+需要注意的是：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[只能在]{style="font-family:宋体"}]{#struct_0_x5615_53139_x1960519536}[LAC]{lang="EN-US"}[模式的]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[组下执行本命令。]{style="font-family:宋体"}[LNS]{lang="EN-US"}[模式的]{lang="EN-US" style="font-family:宋体"}[L2TP]{lang="EN-US"}[组下不支持本命令。]{lang="EN-US" style="font-family:宋体"}
+·只能在LAC模式的L2TP组下执行本命令。LNS模式的L2TP组下不支持本命令。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[如果在同一个]{style="font-family:宋体"}]{#struct_0_x5615_53139_559329067}[L2TP]{lang="EN-US"}[组下重复执行本命令，则新的配置覆盖已有配置。]{style="font-family:宋体"}
+·如果在同一个L2TP组下重复执行本命令，则新的配置覆盖已有配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x65976347}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_1599509723}[配置接入用户的完整用户名为]{style="font-family:宋体"}[test@aabbcc.net]{lang="EN-US"}[时，触发]{style="font-family:宋体"}[LAC]{lang="EN-US"}[向]{style="font-family:宋体"}[LNS]{lang="EN-US"}[发送]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道建立请求。]{style="font-family:宋体"}
+\# 配置接入用户的完整用户名为test@aabbcc.net时，触发LAC向LNS发送L2TP隧道建立请求。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_x5615_53139_x803258728}
+\<Sysname\> system-view
 
-[\[Sysname\] l2tp-group 1 mode lac]{lang="EN-US"}
+Sysname l2tp-group 1 mode lac
 
-[\[Sysname-l2tp1\] user fullusername test@aabbcc.net]{lang="EN-US"}
-:::
-
-::: {#1715388964 .myid}
-[]{#_Toc404785034}[]{#struct_0_x5615_53139_x216418493}
+Sysname-l2tp1 user fullusername test@aabbcc.net
 
 **L2TP \-- L2TP配置命令 \-- vpn-instance**
 
 ------------------------------------------------------------------------
 
-[**[vpn-instance]{lang="EN-US"}**]{#struct_0_x5615_53139_x1757055108}[命令用来配置隧道对端所属的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[vpn-instance**]命令用来配置隧道对端所属的VPN。
 
-[**[undo vpn-instance]{lang="EN-US"}**]{#struct_0_x5615_53139_1800640568}[命令用来恢复缺省情况。]{style="font-family:宋体"}
+**[undo vpn-instance**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1516905378}
+【命令】
 
-[**[vpn-instance]{lang="EN-US"}**[ *vpn-instance-name*]{lang="EN-US"}]{#struct_0_x5615_53139_x910138925}
+**[vpn-instance** *vpn-instance-name*]
 
-[**[undo vpn-instance]{lang="EN-US"}**]{#struct_0_x5615_53139_x2078705936}
+**[undo vpn-instance**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_x5615_53139_432691223}
+【缺省情况】
 
-[[隧道对端属于公网。]{style="font-family:宋体"}]{#struct_0_x5615_53139_1162872523}
+隧道对端属于公网。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1391475708}
+【视图】
 
-[[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_617395706}[组视图]{style="font-family:宋体"}
+L2TP组视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_x5615_53139_x216484029}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x567106293}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_x5615_53139_x1489314727}
+mdc-admin
 
-[[【参数】]{style="font-family:
-黑体"}]{#struct_0_x5615_53139_6506731}
+【参数】
 
-[*[vpn-instance-name]{lang="EN-US"}*]{#struct_0_x5615_53139_1983219676}[：]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[vpn-instance-name*]：VPN实例名称，为1～31个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_x5615_53139_1808680824}
+【使用指导】
 
-[[通过本命令指定隧道对端所属的]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_x5615_53139_x1396628570}[后，设备将在指定的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[内发送]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[控制消息和数据消息，即在指定]{style="font-family:宋体"}[VPN]{lang="EN-US"}[内查找到达控制消息和数据消息目的地址的路由，根据指定]{style="font-family:宋体"}[VPN]{lang="EN-US"}[的路由转发控制消息和数据消息。]{style="font-family:宋体"}
+通过本命令指定隧道对端所属的VPN后，设备将在指定的VPN内发送L2TP控制消息和数据消息，即在指定VPN内查找到达控制消息和数据消息目的地址的路由，根据指定VPN的路由转发控制消息和数据消息。
 
-[[当]{style="font-family:宋体"}[L2TP]{lang="EN-US"}]{#struct_0_x5615_53139_1015662111}[隧道的一个端点位于某个]{style="font-family:宋体"}[VPN]{lang="EN-US"}[中时，需要在]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道的另一个端点上通过本命令指定隧道对端属于该]{style="font-family:宋体"}[VPN]{lang="EN-US"}[，以便正确地在]{style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道端点之间转发报文。]{style="font-family:宋体"}
+当L2TP隧道的一个端点位于某个VPN中时，需要在L2TP隧道的另一个端点上通过本命令指定隧道对端属于该VPN，以便正确地在L2TP隧道端点之间转发报文。
 
-[[执行本命令时需要注意：]{style="font-family:宋体"}]{#struct_0_x5615_53139_x1436410964}
+执行本命令时需要注意：
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[隧道]{lang="EN-US" style="font-family:宋体"}]{#struct_0_x5615_53139_x755057297}[对端]{style="font-family:宋体"}[所属的]{lang="EN-US" style="font-family:宋体"}[VPN]{lang="EN-US"}[应该与本端设备连接]{lang="EN-US" style="font-family:宋体"}[L2TP]{lang="EN-US"}[隧道对端的物理接口所属的]{lang="EN-US" style="font-family:宋体"}[VPN]{lang="EN-US"}[（通过]{lang="EN-US" style="font-family:宋体"}**[ip binding vpn-instance]{lang="EN-US"}**[命令配置）相同。]{lang="EN-US" style="font-family:
-宋体"}
+·隧道对端所属的VPN应该与本端设备连接L2TP隧道对端的物理接口所属的VPN（通过**ip binding vpn-instance**命令配置）相同。
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[本命令中指定的]{style="font-family:宋体"}]{#struct_0_x5615_53139_x216549565}[VPN]{lang="EN-US"}[实例必须已经创建。]{style="font-family:宋体"}
+·本命令中指定的VPN实例必须已经创建。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x5615_53139_2140799677}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x5615_53139_594890926}[配置隧道对端所属的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[为]{style="font-family:宋体"}[vpn1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置隧道对端所属的VPN为vpn1。
 
-[[\<Sysname\>system-view]{lang="EN-US"}]{#struct_0_x5615_53139_x1012053192}
+\<Sysname\>system-view
 
-[\[Sysname\] l2tp-group 1 mode lac]{lang="EN-US"}
+Sysname l2tp-group 1 mode lac
 
-[\[Sysname-l2tp1\] vpn-instance vpn1]{lang="EN-US"}
+Sysname-l2tp1 vpn-instance vpn1
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_x5615_53139_568329057}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ip vpn-instance]{lang="EN-US"}**]{#struct_0_x5615_53139_1040082602}[（]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[命令参考]{style="font-family:宋体"}[/MPLS L3VPN]{lang="EN-US"}[）]{style="font-family:宋体"}
+·**ip vpn-instance**（MPLS命令参考/MPLS L3VPN）
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[ip binding vpn-instance]{lang="EN-US"}**]{#struct_0_x5615_53139_857627296}[（]{style="font-family:宋体"}[MPLS]{lang="EN-US"}[命令参考]{style="font-family:宋体"}[/MPLS L3VPN]{lang="EN-US"}[）]{style="font-family:宋体"}
-:::
+·**ip binding vpn-instance**（MPLS命令参考/MPLS L3VPN）

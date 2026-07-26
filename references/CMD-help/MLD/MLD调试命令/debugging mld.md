@@ -1,680 +1,656 @@
-::: {#-1504013224 .myid}
-[]{#_Toc404790171}[]{#struct_0_20662_54297_x288107522}[]{#_Toc135105529}[]{#_Toc133042077}[]{#_Toc94588229}[]{#_Toc80176776}
 
 **MLD \-- MLD调试命令 \-- debugging mld**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_20662_54297_143303222}
+【命令】
 
-[**[debugging]{lang="EN-US"}**[ **mld** \[ **vpn-instance** *vpn-instance-name* \] ]{lang="EN-US"}[{ **all** \| **done** \| **event** \| **query** \[ **receive** \| **send** \] \| **report** \| \| **timer** }]{lang="EN-US"}]{#struct_0_20662_54297_2017656403}
+**[debugging** **mld** [ **vpn-instance** *vpn-instance-name*   { **all** \| **done** \| **event** \| **query** [ **receive** \| **send** ] \| **report** \| \| **timer** }]]
 
-[**[undo]{lang="EN-US"}**[ **debugging** **mld** \[ **vpn-instance** *vpn-instance-name* \] { **all** \| **done** \| **event** \| **query** \[ **receive** \| **send** \] \| **report** \| **timer** }]{lang="EN-US"}]{#struct_0_20662_54297_x820160138}
+**[undo** **debugging** **mld** [ **vpn-instance** *vpn-instance-name*  { **all** \| **done** \| **event** \| **query** [ **receive** \| **send** ] \| **report** \| **timer** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_20662_54297_1994916052}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_20662_54297_1003962561}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_20662_54297_2051488143}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_20662_54297_x1022050840}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_20662_54297_2010115216}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_20662_54297_x29272557}
+【参数】
 
-[**[vpn-instance]{lang="EN-US"}***[ vpn-instance-name]{lang="EN-US"}*]{#struct_0_20662_54297_314672152}[：指定]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例，]{style="font-family:宋体"}*[vpn-instance-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[MPLS L3VPN]{lang="EN-US"}[的]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[31]{lang="EN-US"}[个字符的字符串，区分大小写。如果未指定本参数，表示公网实例。]{style="font-family:宋体"}
+**[vpn-instance*** vpn-instance-name*]：指定VPN实例，*vpn-instance-name*表示MPLS L3VPN的VPN实例名称，为1～31个字符的字符串，区分大小写。如果未指定本参数，表示公网实例。
 
-[**[all]{lang="EN-US"}**]{#struct_0_20662_54297_1021882384}[：表示]{style="font-family:宋体"}[MLD]{lang="EN-US"}[所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示MLD所有调试信息开关。
 
-[**[done]{lang="EN-US"}**]{#struct_0_20662_54297_x854320106}[：表示]{style="font-family:宋体"}[MLD]{lang="EN-US"}[离开组报文调试信息开关。]{style="font-family:宋体"}
+**[done**]：表示MLD离开组报文调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_20662_54297_x820094602}[：表示]{style="font-family:宋体"}[MLD]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示MLD事件调试信息开关。
 
-[**[query]{lang="EN-US"}**]{#struct_0_20662_54297_513814024}[：表示]{style="font-family:宋体"}[MLD]{lang="EN-US"}[查询报文调试信息开关。]{style="font-family:宋体"}
+**[query**]：表示MLD查询报文调试信息开关。
 
-[**[receive]{lang="EN-US"}**]{#struct_0_20662_54297_1273693172}[：表示接收的]{style="font-family:宋体"}[MLD]{lang="EN-US"}[查询报文调试信息开关。]{style="font-family:宋体"}
+**[receive**]：表示接收的MLD查询报文调试信息开关。
 
-[**[send]{lang="EN-US"}**]{#struct_0_20662_54297_1191356761}[：表示发送的]{style="font-family:宋体"}[MLD]{lang="EN-US"}[查询报文调试信息开关。]{style="font-family:宋体"}
+**[send**]：表示发送的MLD查询报文调试信息开关。
 
-[**[report]{lang="EN-US"}**]{#struct_0_20662_54297_x1981267452}[：表示]{style="font-family:宋体"}[MLD]{lang="EN-US"}[成员关系报告报文调试信息开关。]{style="font-family:宋体"}
+**[report**]：表示MLD成员关系报告报文调试信息开关。
 
-[**[timer]{lang="EN-US"}**]{#struct_0_20662_54297_1496222491}[：表示]{style="font-family:宋体"}[MLD]{lang="EN-US"}[定时器调试信息开关。]{style="font-family:宋体"}
+**[timer**]：表示MLD定时器调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_20662_54297_x866881616}
+【描述】
 
-[**[debugging]{lang="EN-US"}**[ **mld**]{lang="EN-US"}]{#struct_0_20662_54297_x495282590}[命令用来打开]{style="font-family:宋体"}[MLD]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}**[undo]{lang="EN-US"}**[ **debugging** **mld**]{lang="EN-US"}[命令用来关闭]{style="font-family:宋体"}[MLD]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}
+**[debugging** **mld**]命令用来打开MLD调试信息开关。**undo** **debugging** **mld**命令用来关闭MLD调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[MLD]{lang="EN-US"}]{#struct_0_20662_54297_1586445380}[调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，MLD调试信息开关处于关闭状态。
 
-[[表1-1 ]{lang="EN-US"}[debugging mld done]{lang="EN-US"}]{#struct_0_20662_54297_x820029066}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging mld done命令输出信息描述表
 
-[]{#table_struct_0_538340807}[[字段]{style="font-family:黑体"}]{#struct_0_20662_54297_x1546118683}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20662_54297_1229281342}
+描述
 
-[[Ignore MLD packet from *src* to *dest*]{lang="EN-US"}]{#struct_0_20662_54297_1970317505}
+Ignore MLD packet from *src* to *dest*
 
-[[忽略源地址为]{style="font-family:宋体"}*[src]{lang="EN-US"}*]{#struct_0_20662_54297_x1762034639}[、]{style="font-family:宋体"}[目的地址为]{style="font-family:宋体"}*[dest]{lang="EN-US"}*[的]{style="font-family:宋体"}[MLD]{lang="EN-US"}[报文]{style="font-family:宋体"}
+忽略源地址为*src*、目的地址为*dest*的MLD报文
 
-[[TTL is 0]{lang="EN-US"}]{#struct_0_20662_54297_1239762369}
+TTL is 0
 
-[[TTL]{lang="EN-US"}]{#struct_0_20662_54297_1721499126}[值为]{style="font-family:宋体"}[0]{lang="EN-US"}
+TTL值为0
 
-[[length *length* is too short]{lang="EN-US"}]{#struct_0_20662_54297_x819963530}
+length *length* is too short
 
-[[报文长度]{style="font-family:宋体"}*[length]{lang="EN-US"}*]{#struct_0_20662_54297_728462640}[太短]{style="font-family:宋体"}
+报文长度*length*太短
 
-[[Router-Alert option]{lang="EN-US"}]{#struct_0_20662_54297_35276284}
+Router-Alert option
 
-[[IPv6]{lang="EN-US"}]{#struct_0_20662_54297_x66205509}[选项]{style="font-family:宋体"}[Router-Alert]{lang="EN-US"}
+IPv6选项Router-Alert
 
-[[interface *interfacename*(*address*)]{lang="EN-US"}]{#struct_0_20662_54297_x785684641}
+interface *interfacename*(*address*)
 
-[[接口]{style="font-family:宋体"}*[interfacename]{lang="EN-US"}*]{#struct_0_20662_54297_1885345691}[的地址为]{style="font-family:宋体"}*[address]{lang="EN-US"}*
+接口*interfacename*的地址为*address*
 
-[[done]{lang="EN-US"}]{#struct_0_20662_54297_x819373706}
+done
 
-[[MLD]{lang="EN-US"}]{#struct_0_20662_54297_1116763243}[离开组报文]{style="font-family:宋体"}
+MLD离开组报文
 
-[[group address *gaddr* is not in multicast range ]{lang="EN-US"}]{#struct_0_20662_54297_2133567223}
+group address *gaddr* is not in multicast range
 
-[[组播组]{style="font-family:宋体"}[g*addr*]{lang="EN-US"}]{#struct_0_20662_54297_1335012074}[不是组播地址]{style="font-family:宋体"}
+组播组g*addr*不是组播地址
 
-[[group address *gaddr* is reserved ]{lang="EN-US"}]{#struct_0_20662_54297_x1695547818}
+group address *gaddr* is reserved
 
-[[组地址]{style="font-family:宋体"}[g*addr*]{lang="EN-US"}]{#struct_0_20662_54297_304039346}[为保留地址]{style="font-family:宋体"}
+组地址g*addr*为保留地址
 
-[[group address g*addr* is node-local]{lang="EN-US"}]{#struct_0_20662_54297_x819308170}
+group address g*addr* is node-local
 
-[[组地址]{style="font-family:宋体"}[g*addr*]{lang="EN-US"}]{#struct_0_20662_54297_1456961307}[为节点本地地址]{style="font-family:宋体"}
+组地址g*addr*为节点本地地址
 
-[[group address g*addr* is link-local]{lang="EN-US"}]{#struct_0_20662_54297_708489039}
+group address g*addr* is link-local
 
-[[组地址]{style="font-family:宋体"}[g*addr*]{lang="EN-US"}]{#struct_0_20662_54297_187391723}[为链路本地地址]{style="font-family:宋体"}
+组地址g*addr*为链路本地地址
 
-[[scope of group address g*addr* is zero]{lang="EN-US"}]{#struct_0_20662_54297_1841265382}
+scope of group address g*addr* is zero
 
-[[组地址]{style="font-family:宋体"}[g*addr*]{lang="EN-US"}]{#struct_0_20662_54297_x819897997}[的]{style="font-family:宋体"}[Scope]{lang="EN-US"}[为]{style="font-family:宋体"}[0]{lang="EN-US"}
+组地址g*addr*的Scope为0
 
-[[group(]{lang="EN-US"}*[gaddr)]{lang="EN-US"}*]{#struct_0_20662_54297_1087588291}
+group(*gaddr)*
 
-[[组播组]{style="font-family:宋体"}*[gaddr]{lang="EN-US"}*]{#struct_0_20662_54297_x1454779904}
+组播组*gaddr*
 
-[[this group does not exist]{lang="EN-US"}]{#struct_0_20662_54297_x380216050}
+this group does not exist
 
-[[组播组不存在]{style="font-family:宋体"}]{#struct_0_20662_54297_x1482281607}
+组播组不存在
 
-[[this group has v1 host]{lang="EN-US"}]{#struct_0_20662_54297_x819832461}
+this group has v1 host
 
-[[存在]{style="font-family:宋体"}[MLDv1]{lang="EN-US"}]{#struct_0_20662_54297_1514007017}[的主机]{style="font-family:宋体"}
+存在MLDv1的主机
 
-[[fast-leave is off and interface is non-querier]{lang="EN-US"}]{#struct_0_20662_54297_x767592000}
+fast-leave is off and interface is non-querier
 
-[[组播组成员快速离开功能处于关闭状态，接口也不是查询器]{style="font-family:宋体"}]{#struct_0_20662_54297_730663514}
+组播组成员快速离开功能处于关闭状态，接口也不是查询器
 
-[[this group is leaving]{lang="EN-US"}]{#struct_0_20662_54297_x1301065663}
+this group is leaving
 
-[[组播组正在离开]{style="font-family:宋体"}]{#struct_0_20662_54297_x819766925}
+组播组正在离开
 
-[ ]{lang="EN-US"}
+表1-2 debugging mld event命令输出信息描述表
 
-[[表1-2 ]{lang="EN-US"}[debugging mld event]{lang="EN-US"}]{#struct_0_20662_54297_x513295368}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_566233095}[[字段]{style="font-family:黑体"}]{#struct_0_20662_54297_x1831325755}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20662_54297_2108517006}
+Create/Add/Remove/Delete MLD configuration interface *interfacename*
 
-[[Create/Add/Remove/Delete MLD configuration interface *interfacename* ]{lang="EN-US"}]{#struct_0_20662_54297_236942685}
+创建/添加/移动/删除MLD配置接口*interfacename*
 
-[[创建]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_20662_54297_1155793774}[添加]{style="font-family:宋体"}[/]{lang="EN-US"}[移动]{style="font-family:宋体"}[/]{lang="EN-US"}[删除]{style="font-family:宋体"}[MLD]{lang="EN-US"}[配置接口]{style="font-family:宋体"}*[interfacename]{lang="EN-US"}*
+Create /Delete MLD interface *interfacename*(*address*)
 
-[[Create /Delete MLD interface *interfacename*(*address*)]{lang="EN-US"}]{#struct_0_20662_54297_491898598}
+创建/删除MLD接口*interfacename*，其地址为*address*
 
-[[创建]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_20662_54297_x819701389}[删除]{style="font-family:宋体"}[MLD]{lang="EN-US"}[接口]{style="font-family:宋体"}*[interfacename]{lang="EN-US"}*[，其地址为]{style="font-family:宋体"}*[address]{lang="EN-US"}*
+interface *interfacename*(*address*)
 
-[[interface *interfacename*(*address*)]{lang="EN-US"}]{#struct_0_20662_54297_x1245356499}
+接口*interfacename*的地址为*address*
 
-[[接口]{style="font-family:宋体"}*[interfacename]{lang="EN-US"}*]{#struct_0_20662_54297_1178916208}[的地址为]{style="font-family:宋体"}*[address]{lang="EN-US"}*
+Send/Notify/Receive/Ignore
 
-[[Send/Notify/Receive/Ignore]{lang="EN-US"}]{#struct_0_20662_54297_x92606590}
+发送/通知/接收/忽略
 
-[[发送]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_20662_54297_1472635555}[通知]{style="font-family:宋体"}[/]{lang="EN-US"}[接收]{style="font-family:宋体"}[/]{lang="EN-US"}[忽略]{style="font-family:宋体"}
+*[message-type* message]
 
-[*[message-type]{lang="EN-US"}*[ message]{lang="EN-US"}]{#struct_0_20662_54297_1057985169}
+*[message-type*]类型的消息，*message-type*包括：
 
-[*[message-type]{lang="EN-US"}*]{#struct_0_20662_54297_x1333797659}[类型的消息，]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[包括：]{style="font-family:宋体"}
+·join-prune：表示加入/剪枝消息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[join-prune]{lang="EN-US"}]{#struct_0_20662_54297_x820160141}[：]{lang="EN-US" style="font-family:宋体"}[表示]{lang="EN-US" style="font-family:宋体"}[加入]{lang="EN-US" style="font-family:
-  宋体"}[/]{lang="EN-US"}[剪枝消息]{lang="EN-US" style="font-family:
-  宋体"}
+·querier：表示查询器消息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[querier]{lang="EN-US"}]{#struct_0_20662_54297_1995374801}[：]{lang="EN-US" style="font-family:宋体"}[表示]{lang="EN-US" style="font-family:宋体"}[查询器消息]{lang="EN-US" style="font-family:
-  宋体"}
+·smooth：表示平滑消息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[smooth]{lang="EN-US"}]{#struct_0_20662_54297_1418996540}[：]{lang="EN-US" style="font-family:宋体"}[表示]{lang="EN-US" style="font-family:宋体"}[平滑消息]{lang="EN-US" style="font-family:
-  宋体"}
+·smooth over：表示平滑结束消息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[smooth over]{lang="EN-US"}]{#struct_0_20662_54297_296938808}[：]{lang="EN-US" style="font-family:宋体"}[表示]{lang="EN-US" style="font-family:宋体"}[平滑结束消息]{lang="EN-US" style="font-family:
-  宋体"}
+·HA：表示高可靠性相关的消息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[HA]{lang="EN-US"}]{#struct_0_20662_54297_742891992}[：]{style="font-family:宋体"}[表示]{style="font-family:宋体"}[高可靠性相关的消息]{style="font-family:宋体"}
+·MLD enable：表示协议使能消息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MLD enable]{lang="EN-US"}]{#struct_0_20662_54297_x1349634888}[：]{lang="EN-US" style="font-family:宋体"}[表示]{lang="EN-US" style="font-family:宋体"}[协议使能消息]{lang="EN-US" style="font-family:
-  宋体"}
+·MRIB connection up：表示与MRIB建立连接成功消息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MRIB connection up]{lang="EN-US"}]{#struct_0_20662_54297_x820094605}[：]{lang="EN-US" style="font-family:
-  宋体"}[表示]{lang="EN-US" style="font-family:宋体"}[与]{lang="EN-US" style="font-family:宋体"}[MRIB]{lang="EN-US"}[建立连接成功消息]{lang="EN-US" style="font-family:宋体"}
+·MRIB connection down：表示与MRIB连接中断消息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MRIB connection down]{lang="EN-US"}]{#struct_0_20662_54297_513486344}[：]{lang="EN-US" style="font-family:
-  宋体"}[表示]{lang="EN-US" style="font-family:宋体"}[与]{lang="EN-US" style="font-family:宋体"}[MRIB]{lang="EN-US"}[连接中断消息]{lang="EN-US" style="font-family:宋体"}
+·MRIB smooth：表示与MRIB进行平滑消息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MRIB smooth]{lang="EN-US"}]{#struct_0_20662_54297_x6916282}[：]{lang="EN-US" style="font-family:宋体"}[表示]{lang="EN-US" style="font-family:宋体"}[与]{lang="EN-US" style="font-family:
-  宋体"}[MRIB]{lang="EN-US"}[进行平滑消息]{lang="EN-US" style="font-family:
-  宋体"}
+·multicast boundary message：表示组播边界消息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[multicast boundary message]{lang="EN-US"}]{#struct_0_20662_54297_x587423086}[：]{lang="EN-US" style="font-family:宋体"}[表示]{lang="EN-US" style="font-family:宋体"}[组播边界消息]{lang="EN-US" style="font-family:宋体"}
+·multicast routing-enable：表示三层组播使能消息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[multicast routing-enable]{lang="EN-US"}]{#struct_0_20662_54297_376688726}[：]{lang="EN-US" style="font-family:宋体"}[表示]{lang="EN-US" style="font-family:宋体"}[三层组播使能消息]{lang="EN-US" style="font-family:宋体"}
+·multicast routing-disable：表示三层组播关闭消息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[multicast routing-disable]{lang="EN-US"}]{#struct_0_20662_54297_x820029069}[：]{lang="EN-US" style="font-family:宋体"}[表示]{lang="EN-US" style="font-family:宋体"}[三层组播关闭消息]{lang="EN-US" style="font-family:宋体"}
+·PIM DR：表示PIM指定路由器消息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[PIM DR]{lang="EN-US"}]{#struct_0_20662_54297_x1546053147}[：]{lang="EN-US" style="font-family:宋体"}[表示]{lang="EN-US" style="font-family:宋体"}[PIM]{lang="EN-US"}[指定路由器消息]{lang="EN-US" style="font-family:宋体"}
+MRIB
 
-[[MRIB]{lang="EN-US"}]{#struct_0_20662_54297_x1461754397}
+组播路由信息库
 
-[[组播路由信息库]{style="font-family:宋体"}]{#struct_0_20662_54297_x1854992728}
+set binary data
 
-[[set binary data]{lang="EN-US"}]{#struct_0_20662_54297_x483076074}
+设置二进制数据
 
-[[设置二进制数据]{style="font-family:宋体"}]{#struct_0_20662_54297_x819963533}
+static-group
 
-[[static-group]{lang="EN-US"}]{#struct_0_20662_54297_728528176}
+添加静态组
 
-[[添加静态组]{style="font-family:宋体"}]{#struct_0_20662_54297_407425611}
+open DBM
 
-[[open DBM ]{lang="EN-US"}]{#struct_0_20662_54297_1969544169}
+打开DBM
 
-[[打开]{style="font-family:宋体"}[DBM]{lang="EN-US"}]{#struct_0_20662_54297_x819373709}
+batch backup data on interface(*interfacename*) configuration
 
-[[batch backup data on interface(*interfacename*) configuration]{lang="EN-US"}]{#struct_0_20662_54297_1116697707}
+关于接口*interfacename*配置的批量备份数据
 
-[[关于接口]{style="font-family:宋体"}*[interfacename]{lang="EN-US"}*]{#struct_0_20662_54297_x1046644354}[配置的批量备份数据]{style="font-family:宋体"}
+batch backup data on global configuration
 
-[[batch backup data on global configuration]{lang="EN-US"}]{#struct_0_20662_54297_x819308173}
+关于全局配置的批量备份数据
 
-[[关于全局配置的批量备份数据]{style="font-family:宋体"}]{#struct_0_20662_54297_1456764699}
+Add/Delete address  *address* for interface *interfacename*
 
-[[Add/Delete address  *address* for interface *interfacename*]{lang="EN-US"}]{#struct_0_20662_54297_x463121859}
+为接口*interfacename*添加/删除地址*address*
 
-[[为接口]{style="font-family:宋体"}*[interfacename]{lang="EN-US"}*]{#struct_0_20662_54297_569546073}[添加]{style="font-family:宋体"}[/]{lang="EN-US"}[删除地址]{style="font-family:宋体"}*[address]{lang="EN-US"}*
+(*saddr, gaddr*)
 
-[[(*saddr, gaddr*)]{lang="EN-US"}]{#struct_0_20662_54297_x819897996}
+（S，G）表项，*saddr*为源地址，*gaddr*为组地址
 
-[[（]{style="font-family:宋体"}[S]{lang="EN-US"}]{#struct_0_20662_54297_1087522755}[，]{style="font-family:宋体"}[G]{lang="EN-US"}[）表项，]{style="font-family:宋体"}*[saddr]{lang="EN-US"}*[为源地址，]{style="font-family:宋体"}*[gaddr]{lang="EN-US"}*[为组地址]{style="font-family:宋体"}
+group(*gaddr*)
 
-[[group(*gaddr*)]{lang="EN-US"}]{#struct_0_20662_54297_x1056469610}
+组播组*gaddr*
 
-[[组播组]{style="font-family:宋体"}*[gaddr]{lang="EN-US"}*]{#struct_0_20662_54297_x819832460}
+Change mode from *mode1* to *mode2*
 
-[[Change mode from *mode1* to *mode2*]{lang="FR"}]{#struct_0_20662_54297_1513941481}
+组播组的模式由*mode1*变更为*mode2*，具体模式包括INCLUDE和EXCLUDE
 
-[[组播组的模式由]{style="font-family:宋体"}]{#struct_0_20662_54297_x640446614}*[mode1]{lang="FR"}*[变更为]{style="font-family:宋体"}*[mode2]{lang="FR"}*[，具体模式包括]{style="font-family:宋体"}[INCLUDE]{lang="EN-US"}[和]{style="font-family:宋体"}[EXCLUDE]{lang="EN-US"}
+Create group (*gaddr*)
 
-[[Create group (*gaddr*)]{lang="EN-US"}]{#struct_0_20662_54297_x1869851220}
+创建组播组*gaddr*
 
-[[创建组播组]{style="font-family:宋体"}*[gaddr]{lang="EN-US"}*]{#struct_0_20662_54297_x819766924}
+Becomes querier/non-querier
 
-[[Becomes querier/non-querier]{lang="EN-US"}]{#struct_0_20662_54297_x513229832}
+成为查询器/非查询器
 
-[[成为查询器]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_20662_54297_1712456246}[非查询器]{style="font-family:宋体"}
+Stop event thread
 
-[[Stop event thread]{lang="EN-US"}]{#struct_0_20662_54297_x819701388}
+终止事件处理线程
 
-[[终止事件处理线程]{style="font-family:宋体"}]{#struct_0_20662_54297_x1245290963}
+real time backup data
 
-[[real time backup data]{lang="EN-US"}]{#struct_0_20662_54297_x820160140}
+实时备份数据
 
-[[实时备份数据]{style="font-family:宋体"}]{#struct_0_20662_54297_1995440337}
+batch backup data
 
-[[batch backup data]{lang="EN-US"}]{#struct_0_20662_54297_x1340188630}
+批量备份数据
 
-[[批量备份数据]{style="font-family:宋体"}]{#struct_0_20662_54297_x820094604}
+HA batch backup event
 
-[[HA batch backup event]{lang="EN-US"}]{#struct_0_20662_54297_513420808}
+高可靠性的批量备份事件
 
-[[高可靠性的批量备份事件]{style="font-family:宋体"}]{#struct_0_20662_54297_1155049785}
+HA degrade/stop/upgrade event
 
-[[HA degrade/stop/upgrade event]{lang="EN-US"}]{#struct_0_20662_54297_x820029068}
+高可靠性的降级/停止/升级事件
 
-[[高可靠性的降级]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_20662_54297_x1545987611}[停止]{style="font-family:宋体"}[/]{lang="EN-US"}[升级事件]{style="font-family:宋体"}
+*[event* event on interface *interfacename*]
 
-[*[event]{lang="EN-US"}*[ event on interface *interfacename*]{lang="EN-US"}]{#struct_0_20662_54297_x105893104}
+接口*interfacename*上发生事件*event*，*event*包括：
 
-[[接口]{style="font-family:宋体"}*[interfacename]{lang="EN-US"}*]{#struct_0_20662_54297_x231637685}[上发生事件]{style="font-family:宋体"}*[event]{lang="EN-US"}*[，]{style="font-family:宋体"}*[event]{lang="EN-US"}*[包括：]{style="font-family:宋体"}
+·0x1：表示添加接口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x1]{lang="EN-US"}]{#struct_0_20662_54297_x819963532}[：表示添加接口]{lang="EN-US" style="font-family:宋体"}
+·0x2：表示删除接口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x2]{lang="EN-US"}]{#struct_0_20662_54297_728593712}[：表示删除接口]{lang="EN-US" style="font-family:宋体"}
+·0x3：表示接口down
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x3]{lang="EN-US"}]{#struct_0_20662_54297_447003816}[：表示接口]{lang="EN-US" style="font-family:宋体"}[down]{lang="EN-US"}
+·0x4：表示接口up
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x4]{lang="EN-US"}]{#struct_0_20662_54297_x819373708}[：表示接口]{lang="EN-US" style="font-family:宋体"}[up]{lang="EN-US"}
+·0x6：表示接口配置变化
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x6]{lang="EN-US"}]{#struct_0_20662_54297_1116632171}[：表示接口配置变化]{lang="EN-US" style="font-family:宋体"}
+·0x9：表示接口解除绑定
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x9]{lang="EN-US"}]{#struct_0_20662_54297_x1769137242}[：表示接口解除绑定]{lang="EN-US" style="font-family:宋体"}
+·0xa：表示拔出接口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0xa]{lang="EN-US"}]{#struct_0_20662_54297_x819308172}[：表示拔出接口]{lang="EN-US" style="font-family:宋体"}
+·0xb：表示插入接口
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0xb]{lang="EN-US"}]{#struct_0_20662_54297_1456830235}[：表示插入接口]{lang="EN-US" style="font-family:宋体"}
+address event *event* on interface *interfacename* (*address*), state is *state*
 
-[[address event *event* on interface *interfacename* (*address*), state is *state*]{lang="EN-US"}]{#struct_0_20662_54297_1087513610}
+接口*interfacename*（地址为*address*）上发生地址事件。事件类型为*event*，状态为*state*。
 
-[[接口]{style="font-family:宋体"}*[interfacename]{lang="EN-US"}*]{#struct_0_20662_54297_x819897999}[（地址为]{style="font-family:宋体"}*[address]{lang="EN-US"}*[）上发生地址事件。事件类型为]{style="font-family:宋体"}*[event]{lang="EN-US"}*[，状态为]{style="font-family:宋体"}*[state]{lang="EN-US"}*[。]{style="font-family:宋体"}
+*[event*]包括：
 
-[*[event]{lang="EN-US"}*]{#struct_0_20662_54297_1087195075}[包括：]{style="font-family:宋体"}
+·0x1：表示添加地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x1]{lang="EN-US"}]{#struct_0_20662_54297_41139805}[：表示添加地址]{lang="EN-US" style="font-family:宋体"}
+·0x2：表示删除地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x2]{lang="EN-US"}]{#struct_0_20662_54297_x819832463}[：表示删除地址]{lang="EN-US" style="font-family:宋体"}
+*[state*]包括：
 
-[*[state]{lang="EN-US"}*]{#struct_0_20662_54297_1513875945}[包括：]{style="font-family:宋体"}
+·0x200：表示主地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x200]{lang="EN-US"}]{#struct_0_20662_54297_1345544689}[：表示主地址]{lang="EN-US" style="font-family:宋体"}
+·0x400：表示链路本地地址
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0x400]{lang="EN-US"}]{#struct_0_20662_54297_x819766927}[：表示链路本地地址]{style="font-family:宋体"}
+ifnet connection down event
 
-[[ifnet connection down event]{lang="EN-US"}]{#struct_0_20662_54297_x513164296}
+与接口管理的连接中断事件
 
-[[与接口管理的连接中断事件]{style="font-family:宋体"}]{#struct_0_20662_54297_x819701391}
+Process interface *interfacename* *event*
 
-[[Process interface *interfacename* *event*]{lang="EN-US"}]{#struct_0_20662_54297_x1245880786}
+处理接口*interfacename*上发生的事件*event*，*event*包括：
 
-[[处理接口]{style="font-family:宋体"}*[interfacename]{lang="EN-US"}*]{#struct_0_20662_54297_x953667229}[上发生的事件]{style="font-family:宋体"}*[event]{lang="EN-US"}*[，]{style="font-family:宋体"}*[event]{lang="EN-US"}*[包括：]{style="font-family:宋体"}
+·add：表示添加
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[add]{lang="EN-US"}]{#struct_0_20662_54297_x820160143}[：表示添加]{lang="EN-US" style="font-family:宋体"}
+·delete：表示删除
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[delete]{lang="EN-US"}]{#struct_0_20662_54297_1995505873}[：表示删除]{lang="EN-US" style="font-family:宋体"}
+·plugout：表示拔出
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[plugout]{lang="EN-US"}]{#struct_0_20662_54297_x820094607}[：表示拔出]{lang="EN-US" style="font-family:宋体"}
+·up：表示连接成功
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[up]{lang="EN-US"}]{#struct_0_20662_54297_513617416}[：表示连接成功]{lang="EN-US" style="font-family:宋体"}
+·down：表示连接中断
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[down]{lang="EN-US"}]{#struct_0_20662_54297_1073164678}[：表示连接中断]{lang="EN-US" style="font-family:宋体"}
+·attribute changed：表示属性变化
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[attribute changed]{lang="EN-US"}]{#struct_0_20662_54297_x820029071}[：表示属性变化]{lang="EN-US" style="font-family:
-  宋体"}
+MLD proxy
 
-[[MLD proxy]{lang="EN-US"}]{#struct_0_20662_54297_278253669}
+MLD代理
 
-[[MLD]{lang="EN-US"}]{#struct_0_20662_54297_x1885580222}[代理]{style="font-family:宋体"}
+proxy database
 
-[[proxy database]{lang="EN-US"}]{#struct_0_20662_54297_278319205}
+代理成员关系数据库
 
-[[代理成员关系数据库]{style="font-family:宋体"}]{#struct_0_20662_54297_1271759190}
+proxy cache
 
-[[proxy cache]{lang="EN-US"}]{#struct_0_20662_54297_x586671316}
+代理缓存
 
-[[代理缓存]{style="font-family:宋体"}]{#struct_0_20662_54297_278909029}
+Create/Delete MLD proxy interface *interfacename*
 
-[[Create/Delete MLD proxy interface *interfacename*]{lang="EN-US"}]{#struct_0_20662_54297_x344429833}
+创建/删除MLD代理接口*interfacename*
 
-[[创建]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_20662_54297_278974565}[删除]{style="font-family:宋体"}[MLD]{lang="EN-US"}[代理接口]{style="font-family:宋体"}*[interfacename]{lang="EN-US"}*
+Send MLD proxy enable/disable on interface *interfacename* to MRIB
 
-[[Send MLD proxy enable/disable on interface *interfacename* to MRIB]{lang="EN-US"}]{#struct_0_20662_54297_x373378595}
+通过接口*interfacename*向MRIB通知使能/关闭MLD代理功能
 
-[[通过接口]{style="font-family:宋体"}*[interfacename]{lang="EN-US"}*]{#struct_0_20662_54297_x1321247409}[向]{style="font-family:宋体"}[MRIB]{lang="EN-US"}[通知使能]{style="font-family:宋体"}[/]{lang="EN-US"}[关闭]{style="font-family:宋体"}[MLD]{lang="EN-US"}[代理功能]{style="font-family:宋体"}
+Add/Remove source(*saddr*) to proxy cache on interface *interfacename* for group(*gaddr*)
 
-[[Add/Remove source(*saddr*) to proxy cache on interface *interfacename* for group(*gaddr*)]{lang="EN-US"}]{#struct_0_20662_54297_278384742}
+在接口*interfacename*上为组节点*gaddr*添加/删除源节点*saddr*到代理缓存
 
-[[在接口]{style="font-family:宋体"}*[interfacename]{lang="EN-US"}*]{#struct_0_20662_54297_x1522809001}[上为组节点]{style="font-family:宋体"}*[gaddr]{lang="EN-US"}*[添加]{style="font-family:宋体"}[/]{lang="EN-US"}[删除源节点]{style="font-family:宋体"}*[saddr]{lang="EN-US"}*[到代理缓存]{style="font-family:宋体"}
+Add/Remove/Update group(*gaddr*) to proxy cache on interface *interfacename*
 
-[[Add/Remove/Update group(*gaddr*) to proxy cache on interface *interfacename*]{lang="EN-US"}]{#struct_0_20662_54297_278450278}
+在接口*interfacename*上添加/删除/更新组节点*gaddr*到代理缓存
 
-[[在接口]{style="font-family:宋体"}*[interfacename]{lang="EN-US"}*]{#struct_0_20662_54297_x833584683}[上添加]{style="font-family:宋体"}[/]{lang="EN-US"}[删除]{style="font-family:宋体"}[/]{lang="EN-US"}[更新组节点]{style="font-family:宋体"}*[gaddr]{lang="EN-US"}*[到代理缓存]{style="font-family:宋体"}
+Add/Remove source(*saddr*) to proxy database for group(*gaddr*)
 
-[[Add/Remove source(*saddr*) to proxy database for group(*gaddr*)]{lang="EN-US"}]{#struct_0_20662_54297_278515814}
+在代理成员关系数据库的组节点*gaddr*下添加/删除源*saddr*
 
-[[在代理成员关系数据库的组节点]{style="font-family:宋体"}*[gaddr]{lang="EN-US"}*]{#struct_0_20662_54297_x18496077}[下添加]{style="font-family:宋体"}[/]{lang="EN-US"}[删除源]{style="font-family:宋体"}*[saddr]{lang="EN-US"}*
+Add INCLUDE/EXCLUDE group(*gaddr*) to proxy database
 
-[[Add INCLUDE/EXCLUDE group(*gaddr*) to proxy database]{lang="EN-US"}]{#struct_0_20662_54297_278581350}
+在代理成员关系数据库中添加INCLUDE/EXCLUDE模式的组播组*gaddr*
 
-[[在代理成员关系数据库中添加]{style="font-family:宋体"}[INCLUDE/EXCLUDE]{lang="EN-US"}]{#struct_0_20662_54297_278122598}[模式的组播组]{style="font-family:宋体"}*[gaddr]{lang="EN-US"}*
+表1-3 debugging mld query命令输出信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表1-3 ]{lang="EN-US"}[debugging mld query]{lang="EN-US"}]{#struct_0_20662_54297_x1546577436}[命令输出信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_564729095}[[字段]{style="font-family:黑体"}]{#struct_0_20662_54297_x970679047}
+Ignore MLD packet from *src* to *dest*
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20662_54297_1406396754}
+忽略源地址为*src*、目的地址为*dest*的MLD报文
 
-[[Ignore MLD packet from *src* to *dest*]{lang="EN-US"}]{#struct_0_20662_54297_306842944}
+TTL is 0
 
-[[忽略源地址为]{style="font-family:宋体"}*[src]{lang="EN-US"}*]{#struct_0_20662_54297_1609505685}[、]{style="font-family:宋体"}[目的地址为]{style="font-family:宋体"}*[dest]{lang="EN-US"}*[的]{style="font-family:宋体"}[MLD]{lang="EN-US"}[报文]{style="font-family:宋体"}
+TTL值为0
 
-[[TTL is 0]{lang="EN-US"}]{#struct_0_20662_54297_x819963535}
+length *length* is too short
 
-[[TTL]{lang="EN-US"}]{#struct_0_20662_54297_728134960}[值为]{style="font-family:宋体"}[0]{lang="EN-US"}
+报文长度*length*太短
 
-[[length *length* is too short]{lang="EN-US"}]{#struct_0_20662_54297_333589838}
+Router-Alert option
 
-[[报文长度]{style="font-family:宋体"}*[length]{lang="EN-US"}*]{#struct_0_20662_54297_x179458047}[太短]{style="font-family:宋体"}
+IPv6选项Router-Alert
 
-[[Router-Alert option]{lang="EN-US"}]{#struct_0_20662_54297_1515740587}
+interface *interfacename*(*address*)
 
-[[IPv6]{lang="EN-US"}]{#struct_0_20662_54297_17695947}[选项]{style="font-family:宋体"}[Router-Alert]{lang="EN-US"}
+接口*interfacename*的地址为*address*
 
-[[interface *interfacename*(*address*)]{lang="EN-US"}]{#struct_0_20662_54297_x23718280}
+query
 
-[[接口]{style="font-family:宋体"}*[interfacename]{lang="EN-US"}*]{#struct_0_20662_54297_x819373711}[的地址为]{style="font-family:宋体"}*[address]{lang="EN-US"}*
+MLD查询报文
 
-[[query]{lang="EN-US"}]{#struct_0_20662_54297_1117221996}
+length is invalid
 
-[[MLD]{lang="EN-US"}]{#struct_0_20662_54297_x1397911357}[查询报文]{style="font-family:宋体"}
+报文长度非法
 
-[[length is invalid]{lang="EN-US"}]{#struct_0_20662_54297_x742873966}
+group address is invalid
 
-[[报文长度非法]{style="font-family:宋体"}]{#struct_0_20662_54297_877698356}
+组地址非法
 
-[[group address is invalid]{lang="EN-US"}]{#struct_0_20662_54297_1628292183}
+group address *gaddr* is reserved
 
-[[组地址非法]{style="font-family:宋体"}]{#struct_0_20662_54297_x819308175}
+组地址*gaddr*为保留地址
 
-[[group address *gaddr* is reserved ]{lang="EN-US"}]{#struct_0_20662_54297_1457157915}
+group address *gaddr* is node-local
 
-[[组地址]{style="font-family:宋体"}*[gaddr]{lang="EN-US"}*]{#struct_0_20662_54297_x1229458250}[为保留地址]{style="font-family:宋体"}
+组地址*gaddr*为节点本地地址
 
-[[group address *gaddr* is node-local]{lang="EN-US"}]{#struct_0_20662_54297_x820331397}
+group address *gaddr* is link-local
 
-[[组地址]{style="font-family:宋体"}*[gaddr]{lang="EN-US"}*]{#struct_0_20662_54297_60126619}[为节点本地地址]{style="font-family:宋体"}
+组地址*gaddr*为链路本地地址
 
-[[group address *gaddr* is link-local]{lang="EN-US"}]{#struct_0_20662_54297_x819897998}
+general query
 
-[[组地址]{style="font-family:宋体"}*[gaddr]{lang="EN-US"}*]{#struct_0_20662_54297_1087129539}[为链路本地地址]{style="font-family:宋体"}
+MLD普遍组查询
 
-[[general query]{lang="EN-US"}]{#struct_0_20662_54297_x1434433771}
+group specific query
 
-[[MLD]{lang="EN-US"}]{#struct_0_20662_54297_332287844}[普遍组查询]{style="font-family:宋体"}
+MLD特定组查询
 
-[[group specific query]{lang="EN-US"}]{#struct_0_20662_54297_x1321939254}
+group-source specific query
 
-[[MLD]{lang="EN-US"}]{#struct_0_20662_54297_x819832462}[特定组查询]{style="font-family:宋体"}
+MLD特定源组查询
 
-[[group-source specific query]{lang="EN-US"}]{#struct_0_20662_54297_1513810409}
+group *gaddr*
 
-[[MLD]{lang="EN-US"}]{#struct_0_20662_54297_2073822236}[特定源组查询]{style="font-family:宋体"}
+查询的组地址为*gaddr*
 
-[[group *gaddr*]{lang="EN-US"}]{#struct_0_20662_54297_1739854007}
+source count *num*
 
-[[查询的组地址为]{style="font-family:宋体"}*[gaddr]{lang="EN-US"}*]{#struct_0_20662_54297_x819766926}
+源数目为*num*
 
-[[source count *num*]{lang="EN-US"}]{#struct_0_20662_54297_x513098760}
+S flag
 
-[[源数目为]{style="font-family:宋体"}*[num]{lang="EN-US"}*]{#struct_0_20662_54297_x306612594}
+查询报文的S标记
 
-[[S flag]{lang="EN-US"}]{#struct_0_20662_54297_1839270005}
+表1-4 debugging mld report命令输出信息描述表
 
-[[查询报文的]{style="font-family:宋体"}[S]{lang="EN-US"}]{#struct_0_20662_54297_x819701390}[标记]{style="font-family:宋体"}
+字段
 
-[ ]{lang="EN-US"}
+描述
 
-[[表1-4 ]{lang="EN-US"}[debugging mld report]{lang="EN-US"}]{#struct_0_20662_54297_x1245815250}[命令输出信息描述表]{style="font-family:黑体"}
+Ignore MLD packet from *src* to *dest*
 
-[]{#table_struct_0_560547911}[[字段]{style="font-family:黑体"}]{#struct_0_20662_54297_1408097251}
+忽略源地址为*src*、目的地址为*dest*的MLD报文
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20662_54297_x234389058}
+TTL is 0
 
-[[Ignore MLD packet from *src* to *dest*]{lang="EN-US"}]{#struct_0_20662_54297_x1520430476}
+TTL值为0
 
-[[忽略源地址为]{style="font-family:宋体"}*[src]{lang="EN-US"}*]{#struct_0_20662_54297_x1730734369}[、]{style="font-family:宋体"}[目的地址为]{style="font-family:宋体"}*[dest]{lang="EN-US"}*[的]{style="font-family:宋体"}[MLD]{lang="EN-US"}[报文]{style="font-family:宋体"}
+length *length* is too short
 
-[[TTL is 0]{lang="EN-US"}]{#struct_0_20662_54297_1240852405}
+报文长度*length*太短
 
-[[TTL]{lang="EN-US"}]{#struct_0_20662_54297_1103780248}[值为]{style="font-family:宋体"}[0]{lang="EN-US"}
+Router-Alert option
 
-[[length *length* is too short]{lang="EN-US"}]{#struct_0_20662_54297_x820160142}
+IPv6选项Router-Alert
 
-[[报文长度]{style="font-family:宋体"}*[length]{lang="EN-US"}*]{#struct_0_20662_54297_1995571409}[太短]{style="font-family:宋体"}
+interface *interfacename*(*address*)
 
-[[Router-Alert option]{lang="EN-US"}]{#struct_0_20662_54297_x1341987985}
+接口*interfacename*的地址为*address*
 
-[[IPv6]{lang="EN-US"}]{#struct_0_20662_54297_x1347881383}[选项]{style="font-family:宋体"}[Router-Alert]{lang="EN-US"}
+group address *gaddr* is not in multicast range
 
-[[interface *interfacename*(*address*)]{lang="EN-US"}]{#struct_0_20662_54297_2058423763}
+组地址*gaddr*不是组播地址
 
-[[接口]{style="font-family:宋体"}*[interfacename]{lang="EN-US"}*]{#struct_0_20662_54297_x1109017791}[的地址为]{style="font-family:宋体"}*[address]{lang="EN-US"}*
+group address *gaddr* is reserved
 
-[[group address *gaddr* is not in multicast range ]{lang="EN-US"}]{#struct_0_20662_54297_x820094606}
+组地址*gaddr*为保留地址
 
-[[组地址]{style="font-family:宋体"}*[gaddr]{lang="EN-US"}*]{#struct_0_20662_54297_513551880}[不是组播地址]{style="font-family:宋体"}
+group address *gaddr* is node-local
 
-[[group address *gaddr* is reserved ]{lang="EN-US"}]{#struct_0_20662_54297_407546196}
+组地址*gaddr*为节点本地地址
 
-[[组地址]{style="font-family:宋体"}*[gaddr]{lang="EN-US"}*]{#struct_0_20662_54297_x1086936081}[为保留地址]{style="font-family:宋体"}
+group address *gaddr* is link-local
 
-[[group address *gaddr* is node-local]{lang="EN-US"}]{#struct_0_20662_54297_826421813}
+组地址*gaddr*为链路本地地址
 
-[[组地址]{style="font-family:宋体"}*[gaddr]{lang="EN-US"}*]{#struct_0_20662_54297_x820029070}[为节点本地地址]{style="font-family:宋体"}
+scope of group address *gaddr* is scope-none
 
-[[group address *gaddr* is link-local]{lang="EN-US"}]{#struct_0_20662_54297_x1546511900}
+组地址*gaddr*的Scope为scope-none
 
-[[组地址]{style="font-family:宋体"}*[gaddr]{lang="EN-US"}*]{#struct_0_20662_54297_1582228392}[为链路本地地址]{style="font-family:宋体"}
+group(*gaddr)*
 
-[[scope of group address *gaddr* is scope-none]{lang="EN-US"}]{#struct_0_20662_54297_x144452908}
+组播组*gaddr*
 
-[[组地址]{style="font-family:宋体"}*[gaddr]{lang="EN-US"}*]{#struct_0_20662_54297_x1152309224}[的]{style="font-family:宋体"}[Scope]{lang="EN-US"}[为]{style="font-family:宋体"}[scope-none]{lang="EN-US"}
+report
 
-[[group(]{lang="EN-US"}*[gaddr)]{lang="EN-US"}*]{#struct_0_20662_54297_x819963534}
+MLD成员关系报告报文
 
-[[组播组]{style="font-family:宋体"}*[gaddr]{lang="EN-US"}*]{#struct_0_20662_54297_728200496}
+group record
 
-[[report]{lang="EN-US"}]{#struct_0_20662_54297_970600538}
+组播组记录
 
-[[MLD]{lang="EN-US"}]{#struct_0_20662_54297_x1197700992}[成员关系报告报文]{style="font-family:宋体"}
+IS_IN/IS_EX/TO_IN/TO_EX/ALLOW/BLOCK
 
-[[group record]{lang="EN-US"}]{#struct_0_20662_54297_x819373710}
+MLDv2报告报文中组记录的类型
 
-[[组播组记录]{style="font-family:宋体"}]{#struct_0_20662_54297_1117156460}
+number of sources is zero
 
-[[IS_IN/IS_EX/TO_IN/TO_EX/ALLOW/BLOCK]{lang="EN-US"}]{#struct_0_20662_54297_x1775768002}
+组播源的数目为0
 
-[[MLDv2]{lang="EN-US"}]{#struct_0_20662_54297_x2020325224}[报告报文中组记录的类型]{style="font-family:宋体"}
+this group does not exist
 
-[[number of sources is zero]{lang="EN-US"}]{#struct_0_20662_54297_x1350082521}
+组播组不存在
 
-[[组播源的数目为]{style="font-family:宋体"}[0]{lang="EN-US"}]{#struct_0_20662_54297_x819308174}
+old version host exists
 
-[[this group does not exist]{lang="EN-US"}]{#struct_0_20662_54297_1457223451}
+存在低版本主机
 
-[[组播组不存在]{style="font-family:宋体"}]{#struct_0_20662_54297_1129957253}
+fast-leave is off and interface is non-querier
 
-[[old version host exists]{lang="EN-US"}]{#struct_0_20662_54297_x1213612509}
+组播组成员快速离开功能处于关闭状态，接口也不是查询器
 
-[[存在低版本主机]{style="font-family:宋体"}]{#struct_0_20662_54297_1102416306}
+v1 host exists
 
-[[fast-leave is off and interface is non-querier]{lang="EN-US"}]{#struct_0_20662_54297_x904590180}
+存在MLDv1的主机
 
-[[组播组成员快速离开功能处于关闭状态，接口也不是查询器]{style="font-family:宋体"}]{#struct_0_20662_54297_x1661210293}
+can\'t pass multicast boundary
 
-[[v1 host exists]{lang="EN-US"}]{#struct_0_20662_54297_2054414881}
+不能通过组播边界
 
-[[存在]{style="font-family:宋体"}[MLDv1]{lang="EN-US"}]{#struct_0_20662_54297_1102481842}[的主机]{style="font-family:宋体"}
+can\'t pass group policy
 
-[[can\'t pass multicast boundary]{lang="EN-US"}]{#struct_0_20662_54297_694654973}
+不能通过组播组策略
 
-[[不能通过组播边界]{style="font-family:宋体"}]{#struct_0_20662_54297_x2045755652}
+group address is in SSM range
 
-[[can\'t pass group policy]{lang="EN-US"}]{#struct_0_20662_54297_485426151}
+组地址属于SSM组范围
 
-[[不能通过组播组策略]{style="font-family:宋体"}]{#struct_0_20662_54297_1102547378}
+destination address *addr* is invalid
 
-[[group address is in SSM range]{lang="EN-US"}]{#struct_0_20662_54297_1822130451}
+目的地址*addr*非法
 
-[[组地址属于]{style="font-family:宋体"}[SSM]{lang="EN-US"}]{#struct_0_20662_54297_x827116602}[组范围]{style="font-family:宋体"}
+Proxy send
 
-[[destination address *addr* is invalid]{lang="EN-US"}]{#struct_0_20662_54297_x1048307809}
+代理发送
 
-[[目的地址]{style="font-family:宋体"}*[addr]{lang="EN-US"}*]{#struct_0_20662_54297_1102612914}[非法]{style="font-family:宋体"}
+Failed to send packet
 
-[[Proxy send]{lang="EN-US"}]{#struct_0_20662_54297_278515819}
+发送报文失败
 
-[[代理发送]{style="font-family:宋体"}]{#struct_0_20662_54297_278581355}
+表1-5 debugging mld timer命令输出信息描述表
 
-[[Failed to send packet]{lang="EN-US"}]{#struct_0_20662_54297_x1617824536}
+字段
 
-[[发送报文失败]{style="font-family:宋体"}]{#struct_0_20662_54297_909111701}
+描述
 
-[ ]{lang="EN-US"}
+Static group activation timer
 
-[[表1-5 ]{lang="EN-US"}[debugging mld timer]{lang="EN-US"}]{#struct_0_20662_54297_x847037839}[命令输出信息描述表]{style="font-family:黑体"}
+静态组激活定时器
 
-[]{#table_struct_0_583732231}[[字段]{style="font-family:黑体"}]{#struct_0_20662_54297_1745144164}
+Group reset timer
 
-[[描述]{style="font-family:黑体"}]{#struct_0_20662_54297_x806194864}
+表项清除定时器
 
-[[Static group activation timer]{lang="EN-US"}]{#struct_0_20662_54297_1572979525}
+Multicast boundary timer
 
-[[静态组激活定时器]{style="font-family:宋体"}]{#struct_0_20662_54297_x1820255634}
+组播边界定时器
 
-[[Group reset timer]{lang="EN-US"}]{#struct_0_20662_54297_1102154162}
+Multicast routing enable timer
 
-[[表项清除定时器]{style="font-family:宋体"}]{#struct_0_20662_54297_x133040583}
+组播使能定时器
 
-[[Multicast boundary timer]{lang="EN-US"}]{#struct_0_20662_54297_x264511065}
+v1/v2 host timer
 
-[[组播边界定时器]{style="font-family:宋体"}]{#struct_0_20662_54297_1727567298}
+v1/v2主机存在定时器
 
-[[Multicast ]{lang="EN-US"}[routing enable timer]{lang="EN-US"}]{#struct_0_20662_54297_1285537448}
+Source aging timer
 
-[[组播使能定时器]{style="font-family:宋体"}]{#struct_0_20662_54297_x746204004}
+源老化定时器
 
-[[v1/v2 host timer]{lang="EN-US"}]{#struct_0_20662_54297_1102219698}
+Group aging timer
 
-[[v1/v2]{lang="EN-US"}]{#struct_0_20662_54297_x2086519402}[主机存在定时器]{style="font-family:宋体"}
+组老化定时器
 
-[[Source aging timer]{lang="EN-US"}]{#struct_0_20662_54297_x981474210}
+Group retransmit timer
 
-[[源老化定时器]{style="font-family:宋体"}]{#struct_0_20662_54297_1491212117}
+组重传定时器
 
-[[Group aging timer]{lang="EN-US"}]{#struct_0_20662_54297_308244408}
+General query timer
 
-[[组老化定时器]{style="font-family:宋体"}]{#struct_0_20662_54297_295387608}
+普遍组查询定时器
 
-[[Group retransmit timer]{lang="EN-US"}]{#struct_0_20662_54297_1102285234}
+Source retransmit timer
 
-[[组重传定时器]{style="font-family:宋体"}]{#struct_0_20662_54297_637365040}
+源重传定时器
 
-[[General query timer]{lang="EN-US"}]{#struct_0_20662_54297_1378817628}
+Delay timer
 
-[[普遍组查询定时器]{style="font-family:宋体"}]{#struct_0_20662_54297_567114504}
+延迟发送报告报文定时器
 
-[[Source retransmit timer]{lang="EN-US"}]{#struct_0_20662_54297_x130448976}
+Other/other querier present timer
 
-[[源重传定时器]{style="font-family:宋体"}]{#struct_0_20662_54297_1102350770}
+其它查询器存在时间定时器
 
-[[Delay timer]{lang="EN-US"}]{#struct_0_20662_54297_x507999410}
+Create/Delete/Set/expired
 
-[[延迟发送报告报文定时器]{style="font-family:宋体"}]{#struct_0_20662_54297_x1449456840}
+创建/删除/设置/超时
 
-[[Other/other querier present timer]{lang="EN-US"}]{#struct_0_20662_54297_1453859852}
+Smooth timer
 
-[[其它查询器存在时间定时器]{style="font-family:宋体"}]{#struct_0_20662_54297_1359893577}
+平滑定时器
 
-[[Create/Delete/Set/expired]{lang="EN-US"}]{#struct_0_20662_54297_x695286211}
+Smooth over timer
 
-[[创建]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_20662_54297_1430589113}[删除]{style="font-family:宋体"}[/]{lang="EN-US"}[设置]{style="font-family:宋体"}[/]{lang="EN-US"}[超时]{style="font-family:宋体"}
+平滑结束定时器
 
-[[Smooth timer]{lang="EN-US"}]{#struct_0_20662_54297_1102940594}
+Proxy database adjust timer
 
-[[平滑定时器]{style="font-family:宋体"}]{#struct_0_20662_54297_1077617356}
+代理成员关系数据库调整定时器
 
-[[Smooth over timer]{lang="EN-US"}]{#struct_0_20662_54297_x464749625}
+old querier present timer
 
-[[平滑结束定时器]{style="font-family:宋体"}]{#struct_0_20662_54297_1621487916}
+旧版本查询器的存在时间定时器
 
-[[Proxy database adjust timer]{lang="EN-US"}]{#struct_0_20662_54297_278319211}
+【举例】
 
-[[代理成员关系数据库调整定时器]{style="font-family:宋体"}]{#struct_0_20662_54297_278909035}
+\# 在接口上使能MLD，并打开公网实例MLD离开组报文调试信息开关。
 
-[[old querier present timer]{lang="EN-US"}]{#struct_0_20662_54297_1611885291}
+\<Sysname\> debugging mld done
 
-[[旧版本查询器的存在时间定时器]{style="font-family:宋体"}]{#struct_0_20662_54297_278974571}
+\*Jun 23 15:01:00:288 2011 Sysname MLD/7/DONE: -MDC=1; Received MLDv1 done for group FF0E::101:101 on interface GigabitEthernet1/0/1(FE80::1:101) (G19849)
 
-[ ]{lang="EN-US"}
+*// 接口GigabitEthernet1/0/1收到离开组FF0E::101:101的报文*
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_20662_54297_1497349825}
+\# 在接口上使能MLD，并打开公网实例MLD事件调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_20662_54297_x1227276449}[在接口上使能]{style="font-family:宋体"}[MLD]{lang="EN-US"}[，并打开公网实例]{style="font-family:宋体"}[MLD]{lang="EN-US"}[离开组报文调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging mld event
 
-[[\<Sysname\> debugging mld done]{lang="EN-US"}]{#struct_0_20662_54297_1103006130}
+\*Jun 23 15:06:16:139 2011 Sysname MLD/7/EVENT: -MDC=1; Create group(FF0E::101:101) on interface GigabitEthernet1/0/1(FE80::1:101) (G102769)
 
-[\*Jun 23 15:01:00:288 2011 Sysname MLD/7/DONE: -MDC=1; Received MLDv1 done for group FF0E::101:101 on interface GigabitEthernet1/0/1(FE80::1:101) (G19849)]{lang="EN-US"}
+*// 接口GigabitEthernet1/0/2上创建组播组FF0E::101:101*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_20662_54297_x879293151}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[收到离开组]{style="font-family:宋体"}[FF0E::101:101]{lang="EN-US"}[的报文]{style="font-family:宋体"}*
+\*Jun 23 15:06:16:152 2011 Sysname MLD/7/EVENT: -MDC=1; Change mode from INCLUDE to EXCLUDE for group(FF0E::101:101) on interface GigabitEthernet1/0/1(FE80::1:101) (G101882)
 
-[[\# ]{lang="EN-US"}]{#struct_0_20662_54297_x1288604045}[在接口上使能]{style="font-family:宋体"}[MLD]{lang="EN-US"}[，并打开公网实例]{style="font-family:宋体"}[MLD]{lang="EN-US"}[事件调试信息开关。]{style="font-family:宋体"}
+*// 接口GigabitEthernet1/0/1上组播组FF0E::101:101的模式由INCLUDE变为EXCLUDE*
 
-[[\<Sysname\> debugging mld event]{lang="EN-US"}]{#struct_0_20662_54297_1961453254}
+\*Jun 23 15:06:16:153 2011 Sysname MLD/7/EVENT: -MDC=1; Send JOIN for (::,FF0E::101:101) on interface GigabitEthernet1/0/1(FE80::1:101) to MRIB (G10105)
 
-[\*Jun 23 15:06:16:139 2011 Sysname MLD/7/EVENT: -MDC=1; Create group(FF0E::101:101) on interface GigabitEthernet1/0/1(FE80::1:101) (G102769)]{lang="EN-US"}
+*// 通知MRIB接口GigabitEthernet1/0/1上有（::，FF0E::101:101）加入*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_20662_54297_x348475116}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[上创建组播组]{style="font-family:宋体"}[FF0E::101:101]{lang="EN-US"}*
+\*Jun 23 15:06:39:766 2011 Sysname MLD/7/EVENT: -MDC=1; Change mode from EXCLUDE to INCLUDE for group(FF0E::101:101) on interface GigabitEthernet1/0/1(FE80::1:101) (G101789)
 
-[[\*Jun 23 15:06:16:152 2011 Sysname MLD/7/EVENT: -MDC=1; Change mode from INCLUDE to EXCLUDE for group(FF0E::101:101) on interface GigabitEthernet1/0/1(FE80::1:101) (G101882)]{lang="EN-US"}]{#struct_0_20662_54297_x1615875204}
+*// 接口GigabitEthernet1/0/1上组播组FF0E::101:101的模式由EXCLUDE变为INCLUDE*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_20662_54297_955607101}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上组播组]{style="font-family:宋体"}[FF0E::101:101]{lang="EN-US"}[的模式由]{style="font-family:宋体"}[INCLUDE]{lang="EN-US"}[变为]{style="font-family:宋体"}[EXCLUDE]{lang="EN-US"}*
+\*Jun 23 15:06:39:767 2011 Sysname MLD/7/EVENT: -MDC=1; Send PRUNE for (::,FF0E::101:101) on interface GigabitEthernet1/0/1(FE80::1:101) to MRIB (G10105)
 
-[[\*Jun 23 15:06:16:153 2011 Sysname MLD/7/EVENT: -MDC=1; Send JOIN for (::,FF0E::101:101) on interface GigabitEthernet1/0/1(FE80::1:101) to MRIB (G10105)]{lang="EN-US"}]{#struct_0_20662_54297_1102416307}
+*// 通知MRIB接口GigabitEthernet1/0/1上有（::，FF0E::101:101）离开*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_20662_54297_x904655716}*[通知]{style="font-family:宋体"}[MRIB]{lang="EN-US"}[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上有（]{style="font-family:宋体"}[::]{lang="EN-US"}[，]{style="font-family:宋体"}[FF0E::101:101]{lang="EN-US"}[）加入]{style="font-family:宋体"}*
+\# 在接口上使能MLD，并打开公网实例接收MLD查询报文调试信息开关。
 
-[[\*Jun 23 15:06:39:766 2011 Sysname MLD/7/EVENT: -MDC=1; Change mode from EXCLUDE to INCLUDE for group(FF0E::101:101) on interface GigabitEthernet1/0/1(FE80::1:101) (G101789)]{lang="EN-US"}]{#struct_0_20662_54297_x543344470}
+\<Sysname\> debugging mld query receive
 
-[*[// ]{lang="EN-US"}*]{#struct_0_20662_54297_x2105852263}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上组播组]{style="font-family:宋体"}[FF0E::101:101]{lang="EN-US"}[的模式由]{style="font-family:宋体"}[EXCLUDE]{lang="EN-US"}[变为]{style="font-family:宋体"}[INCLUDE]{lang="EN-US"}*
+\*Jun 22 18:31:11:221 2011 Sysname MLD/7/QUERY SEND: -MDC=1; Received MLD  v1 query on GigabitEthernet1/0/1(FE80::1:101) from FE80::1:102 (G10308)
 
-[[\*Jun 23 15:06:39:767 2011 Sysname MLD/7/EVENT: -MDC=1; Send PRUNE for (::,FF0E::101:101) on interface GigabitEthernet1/0/1(FE80::1:101) to MRIB (G10105)]{lang="EN-US"}]{#struct_0_20662_54297_878271065}
+*// 接口GigabitEthernet1/0/1收到MLDv1普遍组查询报文*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_20662_54297_1250922740}*[通知]{style="font-family:宋体"}[MRIB]{lang="EN-US"}[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上有（]{style="font-family:宋体"}[::]{lang="EN-US"}[，]{style="font-family:宋体"}[FF0E::101:101]{lang="EN-US"}[）离开]{style="font-family:宋体"}*
+\# 在接口上使能MLD，并打开公网实例发送MLD查询报文调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_20662_54297_84294328}[在接口上使能]{style="font-family:宋体"}[MLD]{lang="EN-US"}[，并打开公网实例接收]{style="font-family:宋体"}[MLD]{lang="EN-US"}[查询报文调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging mld query send
 
-[[\<Sysname\> debugging mld query receive]{lang="EN-US"}]{#struct_0_20662_54297_x656339426}
+Jun 23 15:16:32:744 2011 Sysname MLD/7/QUERY SEND: -MDC=1; Send MLD version 1 general query on GigabitEthernet1/0/1(FE80::1:101) to destination FF02::1 (G10308)
 
-[\*Jun 22 18:31:11:221 2011 Sysname MLD/7/QUERY SEND: -MDC=1; Received MLD  v1 query on GigabitEthernet1/0/1(FE80::1:101) from FE80::1:102 (G10308) ]{lang="EN-US"}
+*// 接口GigabitEthernet1/0/1发送MLDv1普遍组查询报文*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_20662_54297_x1036311934}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[收到]{style="font-family:宋体"}[MLDv1]{lang="EN-US"}[普遍组查询报文]{style="font-family:宋体"}*
+\# 在接口上使能MLD，并打开公网实例MLD成员关系报告报文调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_20662_54297_1102481843}[在接口上使能]{style="font-family:宋体"}[MLD]{lang="EN-US"}[，并打开公网实例发送]{style="font-family:宋体"}[MLD]{lang="EN-US"}[查询报文调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging mld report
 
-[[\<Sysname\> debugging mld query send]{lang="EN-US"}]{#struct_0_20662_54297_694720509}
+\*Jun 23 15:55:25:514 2011 Sysname MLD/7/REPORT: -MDC=1; Received MLDv1 report for group FF0E::101:101 on interface GigabitEthernet1/0/1(FE80::1:101) (G19849)
 
-[Jun 23 15:16:32:744 2011 Sysname MLD/7/QUERY SEND: -MDC=1; Send MLD version 1 general query on GigabitEthernet1/0/1(FE80::1:101) to destination FF02::1 (G10308)]{lang="EN-US"}
+*[//*]*接口GigabitEthernet1/0/1上收到加入组FF0E::101:101的成员关系报告报文*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_20662_54297_1169344583}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[发送]{style="font-family:宋体"}[MLDv1]{lang="EN-US"}[普遍组查询报文]{style="font-family:宋体"}*
+\# 在接口上使能MLD，并打开公网实例MLD定时器调试信息开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_20662_54297_x203217325}[在接口上使能]{style="font-family:宋体"}[MLD]{lang="EN-US"}[，并打开公网实例]{style="font-family:宋体"}[MLD]{lang="EN-US"}[成员关系报告报文调试信息开关。]{style="font-family:宋体"}
+\<Sysname\> debugging mld timer
 
-[[\<Sysname\> debugging mld report]{lang="EN-US"}]{#struct_0_20662_54297_1532579471}
+\*Jun 22 18:53:49:129 2011 Sysname MLD/7/TIMER: -MDC=1; Setting v1 host timer for group(FF0E::101:101) on interface GigabitEthernet1/0/1(FE80::1:101) to 260s (G102089)
 
-[\*Jun 23 15:55:25:514 2011 Sysname MLD/7/REPORT: -MDC=1; Received MLDv1 report for group FF0E::101:101 on interface GigabitEthernet1/0/1(FE80::1:101) (G19849)]{lang="EN-US"}
+*// 接口GigabitEthernet1/0/1设置组FF0E::101:101的MLDv1主机存在定时器*
 
-[*[//]{lang="EN-US"}*]{#struct_0_20662_54297_1412908209}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[上收到加入组]{style="font-family:宋体"}[FF0E::101:101]{lang="EN-US"}[的成员关系报告报文]{style="font-family:宋体"}*
+\*Jun 22 18:55:58:012 2011 Sysname MLD/7/TIMER: -MDC=1;Setting group aging timer for group(FF0E::101:101) on interface GigabitEthernet1/0/1(FE80::1:101) to 260s (G102379)
 
-[[\# ]{lang="EN-US"}]{#struct_0_20662_54297_1479846102}[在接口上使能]{style="font-family:宋体"}[MLD]{lang="EN-US"}[，并打开公网实例]{style="font-family:宋体"}[MLD]{lang="EN-US"}[定时器调试信息开关。]{style="font-family:宋体"}
+*// 设置组FF0E::101:101的老化定时器超时*
 
-[[\<Sysname\> debugging mld timer]{lang="EN-US"}]{#struct_0_20662_54297_x1325207647}
+\*Jun 22 18:56:33:261 2011 Sysname MLD/7/TIMER: -MDC=1; Setting general query timer on interface GigabitEthernet1/0/1(FE80::1:101) to 125s (G10338)
 
-[\*Jun 22 18:53:49:129 2011 Sysname MLD/7/TIMER: -MDC=1; ]{lang="NO-BOK"}[Setting v1 host timer for group(FF0E::101:101) on interface GigabitEthernet1/0/1(FE80::1:101) to 260s (G102089)]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_20662_54297_1102547379}*[接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[设置组]{style="font-family:宋体"}[FF0E::101:101]{lang="EN-US"}[的]{style="font-family:宋体"}[MLDv1]{lang="EN-US"}[主机存在定时器]{style="font-family:宋体"}*
-
-[[\*Jun 22 18:55:58:012 2011 Sysname MLD/7/TIMER: -MDC=1;]{lang="NO-BOK"}[ ]{lang="NO-BOK"}[Setting group aging timer for group(FF0E::101:101) on interface GigabitEthernet1/0/1(FE80::1:101) to 260s (G102379)]{lang="EN-US"}]{#struct_0_20662_54297_1822195987}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_20662_54297_1171641832}*[设置组]{style="font-family:宋体"}[FF0E::101:101]{lang="EN-US"}[的老化定时器超时]{style="font-family:宋体"}*
-
-[[\*Jun 22 18:56:33:261 2011 Sysname MLD/7/TIMER: -MDC=1; ]{lang="NO-BOK"}[Setting general query timer on interface GigabitEthernet1/0/1(FE80::1:101) to 125s (G10338)]{lang="EN-US"}]{#struct_0_20662_54297_513720359}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_20662_54297_1476163835}*[设置接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[的普遍组查询定时器]{style="font-family:宋体"}*
+*// 设置接口GigabitEthernet1/0/1的普遍组查询定时器*

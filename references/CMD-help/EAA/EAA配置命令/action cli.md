@@ -1,1531 +1,1390 @@
-::: {#-725530759 .myid}
-[]{#_Toc404797117}[]{#struct_0_86484_x7486_x1132185055}[]{#_Toc309396735}
 
 **EAA \-- EAA配置命令 \-- action cli**
 
 ------------------------------------------------------------------------
 
-[**[action ]{lang="EN-US"}[cli]{lang="EN-US"}**]{#struct_0_86484_x7486_x1084520301}[命令用]{style="font-family:宋体"}[来]{style="font-family:宋体"}[配置事件发生时执行指定的命令行。]{style="font-family:宋体"}
+**[action cli**]命令用来配置事件发生时执行指定的命令行。
 
-[**[undo action]{lang="EN-US"}**]{#struct_0_86484_x7486_454695427}[命令用来取]{style="font-family:宋体"}[消指定的操作。]{style="font-family:宋体"}
+**[undo action**]命令用来取消指定的操作。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1553029916}
+【命令】
 
-[**[action ]{lang="EN-US"}***[number ]{lang="EN-US"}***[cli ]{lang="EN-US"}***[command-line]{lang="EN-US"}*]{#struct_0_86484_x7486_x1190570674}
+**[action ***number ***cli ***command-line*]
 
-[**[undo action ]{lang="EN-US"}***[number]{lang="EN-US"}*]{#struct_0_86484_x7486_1371290026}
+**[undo action ***number*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_86484_x7486_321074503}
+【缺省情况】
 
-[[监控策略下未配置任何]{style="font-family:宋体"}[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_200694422}[动作。]{style="font-family:宋体"}
+监控策略下未配置任何CLI动作。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1340938102}
+【视图】
 
-[[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_90885360}[监控策略视图]{style="font-family:宋体"}
+CLI监控策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x124497456}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_86484_x7486_1805487296}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_86484_x7486_1266057534}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x12090358}
+【参数】
 
-[*[number]{lang="EN-US"}*]{#struct_0_86484_x7486_129982358}[：动作序号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[231]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[number*]：动作序号，取值范围为0～231。
 
-[**[cli ]{lang="EN-US"}***[command-line]{lang="EN-US"}*]{#struct_0_86484_x7486_1371355562}[：需要执行的命令。该参数可以是命令的不完整形式，比如为命令]{style="font-family:宋体"}**[display current-configuration]{lang="EN-US"}**[的缩写形式]{style="font-family:
-宋体"}**[dis cu]{lang="EN-US"}**[，但需要用户保证其为设备可识别的合法命令，否则，该动作不能成功执行。]{style="font-family:
-宋体"}
+**[cli ***command-line*]：需要执行的命令。该参数可以是命令的不完整形式，比如为命令**display current-configuration**的缩写形式**dis cu**，但需要用户保证其为设备可识别的合法命令，否则，该动作不能成功执行。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1133548281}
+【使用指导】
 
-[[如果配置事件发生时执行指定的命令行为非用户视图下的，则必须先配置进入相应视图的]{style="font-family:宋体"}**[action cli]{lang="EN-US"}**]{#struct_0_86484_x7486_1371158954}[，且进视图的]{style="font-family:宋体"}**[action]{lang="EN-US"}**[的编号应小于执行指定命令的]{style="font-family:宋体"}**[action]{lang="EN-US"}**[的编号。比如，要使用]{style="font-family:宋体"}[CLI]{lang="EN-US"}[策略来关闭接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[，则需要配置三条]{style="font-family:宋体"}**[action]{lang="EN-US"}**[命令，]{style="font-family:宋体"}**[action]{lang="EN-US"}**[ 1 **cli** system-view]{lang="EN-US"}[、]{style="font-family:宋体"}**[action]{lang="EN-US"}**[ 2 **cli** interface gigabitethernet 1/0/1]{lang="EN-US"}[、]{style="font-family:宋体"}**[action]{lang="EN-US"}**[ 3 **cli** shutdown]{lang="EN-US"}[。]{style="font-family:宋体"}
+如果配置事件发生时执行指定的命令行为非用户视图下的，则必须先配置进入相应视图的**action cli**，且进视图的**action**的编号应小于执行指定命令的**action**的编号。比如，要使用CLI策略来关闭接口GigabitEthernet1/0/1，则需要配置三条**action**命令，**action** 1 **cli** system-view、**action** 2 **cli** interface gigabitethernet 1/0/1、**action** 3 **cli** shutdown。
 
-[[同一个监控策略下可以配置多个动作，当监控策略被触发后，系统会按照动作序号从小到大依次执行这些动作。如果用户配置了相同序号的动作，当管理员执行]{style="font-family:宋体"}**[commit]{lang="EN-US"}**]{#struct_0_86484_x7486_416321557}[命令时，新配置的]{style="font-family:宋体"}**[action]{lang="EN-US"}**[生效。]{style="font-family:宋体"}
+同一个监控策略下可以配置多个动作，当监控策略被触发后，系统会按照动作序号从小到大依次执行这些动作。如果用户配置了相同序号的动作，当管理员执行**commit**命令时，新配置的**action**生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1370192359}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_2033585740}[为]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[配置动作：当]{style="font-family:宋体"}[test]{lang="EN-US"}[被触发时，关闭接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 为CLI监控策略test配置动作：当test被触发时，关闭接口GigabitEthernet1/0/1。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_86484_x7486_x1205157446}
+\<Sysname\> system-view
 
-[[\[Sysname\] rtm cli-policy test]{lang="EN-US"}]{#struct_0_86484_x7486_1666110151}
+Sysname rtm cli-policy test
 
-[[\[Sysname-rtm-test\] action 1 cli system-view]{lang="EN-US"}]{#struct_0_86484_x7486_1319392175}
+Sysname-rtm-test action 1 cli system-view
 
-[[\[Sysname-rtm-test\] action 2 cli interface gigabitethernet 1/0/1]{lang="EN-US"}]{#struct_0_86484_x7486_x931914735}
+Sysname-rtm-test action 2 cli interface gigabitethernet 1/0/1
 
-[[\[Sysname-rtm-test\] action 3 cli shutdown]{lang="EN-US"}]{#struct_0_86484_x7486_796463243}
-:::
-
-::: {#-1324787428 .myid}
-[]{#_Toc404797118}[]{#struct_0_86484_x7486_1371224490}[]{#_Toc309396734}[]{#_Toc307902158}
+Sysname-rtm-test action 3 cli shutdown
 
 **EAA \-- EAA配置命令 \-- action reboot**
 
 ------------------------------------------------------------------------
 
-[**[action reboot]{lang="EN-US"}**]{#struct_0_86484_x7486_1899628460}[命令用]{style="font-family:宋体"}[来]{style="font-family:宋体"}[配置事件发生时]{style="font-family:宋体"}[执行重启操作。]{style="font-family:宋体"}
+**[action reboot**]命令用来配置事件发生时执行重启操作。
 
-[**[undo action]{lang="EN-US"}**]{#struct_0_86484_x7486_573420429}[命令用来取]{style="font-family:宋体"}[消指定的操作。]{style="font-family:宋体"}
+**[undo action**]命令用来取消指定的操作。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1957638645}
+【命令】
 
-[[集中式设备：]{style="font-family:宋体"}]{#struct_0_86484_x7486_1282656675}
+集中式设备：
 
-[**[action ]{lang="EN-US"}***[number]{lang="EN-US"}***[ ]{lang="EN-US"}**]{#struct_0_86484_x7486_x1391566753}**[reboot ]{lang="EN-US"}**[\[ **subslot** *subslot-number* \]]{lang="EN-US"}
+**[action ***number*****]**reboot ** **subslot** *subslot-number*
 
-[**[undo action ]{lang="EN-US"}***[number]{lang="EN-US"}*]{#struct_0_86484_x7486_178860235}
+**[undo action ***number*]
 
-[[分布式设备－独立运行模式]{style="font-family:宋体"}]{#struct_0_86484_x7486_x732393994}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+分布式设备－独立运行模式/集中式IRF设备：
 
-[**[action ]{lang="EN-US"}***[number]{lang="EN-US"}***[ ]{lang="EN-US"}**]{#struct_0_86484_x7486_x639609117}**[reboot ]{lang="EN-US"}**[\[ **slot** *slot-number* \[ **subslot** *subslot-number* \] \]]{lang="EN-US"}
+**[action ***number*****]**reboot ** **slot** *slot-number*  **subslot** *subslot-number*
 
-[**[undo action ]{lang="EN-US"}***[number]{lang="EN-US"}*]{#struct_0_86484_x7486_1816859410}
+**[undo action ***number*]
 
-[[分布式设备－]{style="font-family:宋体"}]{#struct_0_86484_x7486_1371552170}[IRF]{lang="EN-US"}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[action ]{lang="EN-US"}***[number]{lang="EN-US"}***[ ]{lang="EN-US"}**]{#struct_0_86484_x7486_x830530155}**[reboot ]{lang="EN-US"}**[\[ **chassis** *chassis-number* \[ **slot** *slot-number* \[ **subslot** *subslot-number* \] \] \]]{lang="EN-US"}
+**[action ***number*****]**reboot ** **chassis** *chassis-number*  **slot** *slot-number* [ **subslot** *subslot-number*  ]
 
-[**[undo action ]{lang="EN-US"}***[number]{lang="EN-US"}*]{#struct_0_86484_x7486_x982326663}
+**[undo action ***number*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x947769915}
+【缺省情况】
 
-[[监控策略下未配置任何重启动作。]{style="font-family:宋体"}]{#struct_0_86484_x7486_x1260246299}
+监控策略下未配置任何重启动作。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_86484_x7486_916855433}
+【视图】
 
-[[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_x227785796}[监控策略视图]{style="font-family:宋体"}
+CLI监控策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1812505523}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x1602723247}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_86484_x7486_1977515062}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1371617706}
+【参数】
 
-[*[number]{lang="EN-US"}*]{#struct_0_86484_x7486_x1625195572}[：动作序号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[231]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[number*]：动作序号，取值范围为0～231。
 
-[**[chassis ]{lang="EN-US"}**]{#struct_0_86484_x7486_x1213095244}*[chassis-number]{lang="EN-US"}*[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。不指定该参数时，表示所有成员设备。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis **]*chassis-number*：表示设备在IRF中的成员编号。不指定该参数时，表示所有成员设备。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis ]{lang="EN-US"}**]{#struct_0_86484_x7486_1120649106}*[chassis-number]{lang="EN-US"}*[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应的虚拟框号。不指定该参数时，表示所有成员设备]{style="font-family:宋体"}[/]{lang="EN-US"}[虚拟框。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis **]*chassis-number*：表示设备在IRF中的成员编号或者PEX对应的虚拟框号。不指定该参数时，表示所有成员设备/虚拟框。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**]{#struct_0_86484_x7486_2144426633}[ *slot-number*]{lang="EN-US"}[：表示单板所在的槽位号。不指定该参数时，表示所有单板。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot**] *slot-number*：表示单板所在的槽位号。不指定该参数时，表示所有单板。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**]{#struct_0_86484_x7486_82201873}[ *slot-number*]{lang="EN-US"}[：表示单板所在的槽位号。不指定该参数时，表示所有单板。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot**] *slot-number*：表示单板所在的槽位号。不指定该参数时，表示所有单板。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**]{#struct_0_86484_x7486_x2007650224}[ *slot-number*]{lang="EN-US"}[：表示单板]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[所在的槽位号。不指定该参数时，表示所有单板]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot**] *slot-number*：表示单板/PEX所在的槽位号。不指定该参数时，表示所有单板/PEX。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**]{#struct_0_86484_x7486_409107514}*[ slot-number]{lang="EN-US"}*[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。不指定该参数时，表示所有成员设备。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot**]* slot-number*：表示设备在IRF中的成员编号。不指定该参数时，表示所有成员设备。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**]{#struct_0_86484_x7486_x143736885}*[ slot-number]{lang="EN-US"}*[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。不指定该参数时，表示所有成员设备]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot**]* slot-number*：表示设备在IRF中的成员编号或者PEX的虚拟槽位号。不指定该参数时，表示所有成员设备/PEX。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[subslot]{lang="EN-US"}**]{#struct_0_86484_x7486_1340842359}[ *subslot-number*]{lang="EN-US"}[：子卡所在的子槽位号。不指定该参数时，表示所有子卡。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[subslot**] *subslot-number*：子卡所在的子槽位号。不指定该参数时，表示所有子卡。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x660907621}
+【使用指导】
 
-[[使用]{style="font-family:宋体"}**[action reboot]{lang="EN-US"}**]{#struct_0_86484_x7486_x1357855478}[命令，或者使用]{style="font-family:宋体"}**[action ]{lang="EN-US"}[cli]{lang="EN-US"}**[命令并将]{style="font-family:宋体"}*[command-line]{lang="EN-US"}*[参数指定为]{style="font-family:宋体"}**[reboot]{lang="EN-US"}**[命令，均可实现在事件发生时执行重启操作。只是]{style="font-family:宋体"}**[action reboot]{lang="EN-US"}**[命令会直接执行重启操作，使用]{style="font-family:宋体"}**[action ]{lang="EN-US"}[cli]{lang="EN-US"}**[命令时，用户可以选择是否先保存当前配置，再执行重启操作。]{style="font-family:宋体"}
+使用**action reboot**命令，或者使用**action cli**命令并将*command-line*参数指定为**reboot**命令，均可实现在事件发生时执行重启操作。只是**action reboot**命令会直接执行重启操作，使用**action cli**命令时，用户可以选择是否先保存当前配置，再执行重启操作。
 
-[[同一个监控策略下可以配置多个动作，当监控策略被触发后，系统会按照动作序号从小到大依次执行这些动作。如果用户配置了相同序号的动作，当管理员执行]{style="font-family:宋体"}**[commit]{lang="EN-US"}**]{#struct_0_86484_x7486_1496370767}[命令时，新配置的]{style="font-family:宋体"}**[action]{lang="EN-US"}**[生效。]{style="font-family:宋体"}
+同一个监控策略下可以配置多个动作，当监控策略被触发后，系统会按照动作序号从小到大依次执行这些动作。如果用户配置了相同序号的动作，当管理员执行**commit**命令时，新配置的**action**生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1271179058}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_572843262}[为]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[配置动作：当]{style="font-family:宋体"}[test]{lang="EN-US"}[被触发时，重启整个设备。（]{style="font-family:宋体"}[集中式设备[/]{lang="EN-US"}分布式设备－独立运行模式）]{style="font-family:宋体"}
+\# 为CLI监控策略test配置动作：当test被触发时，重启整个设备。（集中式设备[/分布式设备－独立运行模式）]
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_86484_x7486_x58192745}
+\<Sysname\> system-view
 
-[[\[Sysname\] rtm cli-policy test]{lang="EN-US"}]{#struct_0_86484_x7486_1130734362}
+Sysname rtm cli-policy test
 
-[[\[Sysname-rtm-test\] action 3 reboot]{lang="EN-US"}]{#struct_0_86484_x7486_x105037228}
+Sysname-rtm-test action 3 reboot
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_540823121}[为]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[配置动作：当]{style="font-family:宋体"}[test]{lang="EN-US"}[被触发时，重启成员设备]{style="font-family:宋体"}[1]{lang="EN-US"}[。（]{style="font-family:宋体"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}
+\# 为CLI监控策略test配置动作：当test被触发时，重启成员设备1。（集中式IRF设备）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_86484_x7486_x1383233598}
+\<Sysname\> system-view
 
-[[\[Sysname\] rtm cli-policy test]{lang="EN-US"}]{#struct_0_86484_x7486_x1357789942}
+Sysname rtm cli-policy test
 
-[[\[Sysname-rtm-test\] action 3 reboot slot 1]{lang="EN-US"}]{#struct_0_86484_x7486_x789377575}
+Sysname-rtm-test action 3 reboot slot 1
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_32023154}[为]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[配置动作：当]{style="font-family:宋体"}[test]{lang="EN-US"}[被触发时，重启成员设备]{style="font-family:宋体"}[1]{lang="EN-US"}[。（]{style="font-family:宋体"}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}
+\# 为CLI监控策略test配置动作：当test被触发时，重启成员设备1。（分布式设备－IRF模式）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_86484_x7486_x689546511}
+\<Sysname\> system-view
 
-[[\[Sysname\] rtm cli-policy test]{lang="EN-US"}]{#struct_0_86484_x7486_1834036735}
+Sysname rtm cli-policy test
 
-[[\[Sysname-rtm-test\] action 3 reboot chassis 1]{lang="EN-US"}]{#struct_0_86484_x7486_x1227215898}
-:::
-
-::: {#1697134716 .myid}
-[]{#_Toc404797119}[]{#struct_0_86484_x7486_1897019223}[]{#_Toc309396737}
+Sysname-rtm-test action 3 reboot chassis 1
 
 **EAA \-- EAA配置命令 \-- action switchover**
 
 ------------------------------------------------------------------------
 
-[**[action ]{lang="EN-US"}[switchover]{lang="EN-US"}**]{#struct_0_86484_x7486_x735803443}[命令用]{style="font-family:宋体"}[来]{style="font-family:宋体"}[配置事件发生时启动主备倒换]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[action switchover**]命令用来配置事件发生时启动主备倒换。
 
-[**[undo action]{lang="EN-US"}**]{#struct_0_86484_x7486_x1357921014}[命令用来取]{style="font-family:宋体"}[消指定的操作。]{style="font-family:宋体"}
+**[undo action**]命令用来取消指定的操作。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_86484_x7486_156699908}
+【命令】
 
-[**[action ]{lang="EN-US"}***[number]{lang="EN-US"}***[ switchover]{lang="EN-US"}**]{#struct_0_86484_x7486_1265705583}
+**[action ***number*** switchover**]
 
-[**[undo action ]{lang="EN-US"}***[number]{lang="EN-US"}*]{#struct_0_86484_x7486_x1029989782}
+**[undo action ***number*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_86484_x7486_813418497}
+【缺省情况】
 
-[[监控策略下未配置主备倒换动作。]{style="font-family:宋体"}]{#struct_0_86484_x7486_x734765988}
+监控策略下未配置主备倒换动作。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_86484_x7486_403741622}
+【视图】
 
-[[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_517412708}[监控策略视图]{style="font-family:宋体"}
+CLI监控策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_86484_x7486_998009587}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_86484_x7486_1542904838}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x1357593334}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_86484_x7486_616810574}
+【参数】
 
-[*[number]{lang="EN-US"}*]{#struct_0_86484_x7486_1747221745}[：动作序号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[231]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[number*]：动作序号，取值范围为0～231。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x921519946}
+【使用指导】
 
-[[同一个监控策略下可以配置多个动作，当监控策略被触发后，系统会按照动作序号从小到大依次执行这些动作。如果用户配置了相同序号的动作，当管理员执行]{style="font-family:宋体"}**[commit]{lang="EN-US"}**]{#struct_0_86484_x7486_x538568016}[命令时，新配置的]{style="font-family:宋体"}**[action]{lang="EN-US"}**[生效。]{style="font-family:宋体"}
+同一个监控策略下可以配置多个动作，当监控策略被触发后，系统会按照动作序号从小到大依次执行这些动作。如果用户配置了相同序号的动作，当管理员执行**commit**命令时，新配置的**action**生效。
 
-[[即便当前设备不是主备环境（未部署备用主控板或者备用主控板未正常启动），该命令也会执行成功，但不会触发主备倒换动作。]{style="font-family:宋体"}]{#struct_0_86484_x7486_x42199303}
+即便当前设备不是主备环境（未部署备用主控板或者备用主控板未正常启动），该命令也会执行成功，但不会触发主备倒换动作。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1751418698}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_307939693}[为]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[配置动作：当]{style="font-family:宋体"}[test]{lang="EN-US"}[被触发时，执行主备倒换。]{style="font-family:宋体"}
+\# 为CLI监控策略test配置动作：当test被触发时，执行主备倒换。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_86484_x7486_462809029}
+\<Sysname\> system-view
 
-[[\[Sysname\] rtm cli-policy test]{lang="EN-US"}]{#struct_0_86484_x7486_x255189277}
+Sysname rtm cli-policy test
 
-[[\[Sysname-rtm-test\] action 3 switchover]{lang="EN-US"}]{#struct_0_86484_x7486_x636607938}
-:::
-
-::: {#139847418 .myid}
-[]{#_Toc404797120}[]{#struct_0_86484_x7486_x1357527798}[]{#_Toc309396736}
+Sysname-rtm-test action 3 switchover
 
 **EAA \-- EAA配置命令 \-- action syslog**
 
 ------------------------------------------------------------------------
 
-[**[action ]{lang="EN-US"}[syslog]{lang="EN-US"}**]{#struct_0_86484_x7486_975672767}[命令用]{lang="EN-US" style="font-family:宋体"}[来]{lang="EN-US" style="font-family:宋体"}[配置事件发生时]{lang="EN-US" style="font-family:宋体"}[生成]{style="font-family:宋体"}[一条指定内容的日志]{lang="EN-US" style="font-family:宋体"}[。]{lang="EN-US" style="font-family:宋体"}
+**[action syslog**]命令用来配置事件发生时生成一条指定内容的日志。
 
-[**[undo action]{lang="EN-US"}**]{#struct_0_86484_x7486_x423554413}[命令用来取]{style="font-family:宋体"}[消指定的操作。]{style="font-family:宋体"}
+**[undo action**]命令用来取消指定的操作。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1615581490}
+【命令】
 
-[**[action ]{lang="EN-US"}***[number ]{lang="EN-US"}***[syslog priority ]{lang="EN-US"}***[level]{lang="EN-US"}***[ facility ]{lang="EN-US"}***[local-number]{lang="EN-US"}***[ msg ]{lang="EN-US"}***[msg-body]{lang="EN-US"}*]{#struct_0_86484_x7486_x1210283326}
+**[action ***number ***syslog priority ***level*** facility ***local-number*** msg ***msg-body*]
 
-[**[undo action ]{lang="EN-US"}***[number]{lang="EN-US"}*]{#struct_0_86484_x7486_x1457508196}
+**[undo action ***number*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x585229836}
+【缺省情况】
 
-[[监控策略下未配置任何日志动作。]{style="font-family:宋体"}]{#struct_0_86484_x7486_x1357724406}
+监控策略下未配置任何日志动作。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1662508086}
+【视图】
 
-[[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_801789304}[监控策略视图]{style="font-family:宋体"}
+CLI监控策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1564098071}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_86484_x7486_1657829645}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_86484_x7486_2132300873}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x995227660}
+【参数】
 
-[*[number]{lang="EN-US"}*]{#struct_0_86484_x7486_208247320}[：动作序号，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[231]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[number*]：动作序号，取值范围为0～231。
 
-[**[priority ]{lang="EN-US"}***[level]{lang="EN-US"}*]{#struct_0_86484_x7486_x83953958}[：生成的日志的优先级，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[7]{lang="EN-US"}[。优先级的值越小，优先级越高。]{style="font-family:
-宋体"}
+**[priority ***level*]：生成的日志的优先级，取值范围为0～7。优先级的值越小，优先级越高。
 
-[**[facility ]{lang="EN-US"}***[local-number]{lang="EN-US"}*]{#struct_0_86484_x7486_x1357658870}[：生成日志的设备号，取值范围为]{style="font-family:宋体"}[local0]{lang="EN-US"}[～]{style="font-family:宋体"}[local7]{lang="EN-US"}[。]{style="font-family:宋体"}[主要用于在日志主机端标志不同的日志来源，查找、过滤对应日志源的日志。]{style="font-family:宋体"}
+**[facility ***local-number*]：生成日志的设备号，取值范围为local0～local7。主要用于在日志主机端标志不同的日志来源，查找、过滤对应日志源的日志。
 
-[**[msg ]{lang="EN-US"}***[msg-body]{lang="EN-US"}*]{#struct_0_86484_x7486_x1668798077}[：生成的日志的内容。]{style="font-family:宋体"}
+**[msg ***msg-body*]：生成的日志的内容。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1914228966}
+【使用指导】
 
-[[事件触发后生成的日志信息会交给信息中心模块处理，信息中心模块的配置将决定日志信息的发送规则和发送方向。关于信息中心的详细描述请参见"网络管理和监控配置指导"中的"信息中心"。]{style="font-family:宋体"}]{#struct_0_86484_x7486_x1545491903}
+事件触发后生成的日志信息会交给信息中心模块处理，信息中心模块的配置将决定日志信息的发送规则和发送方向。关于信息中心的详细描述请参见"网络管理和监控配置指导"中的"信息中心"。
 
-[[同一个监控策略下可以配置多个动作，当监控策略被触发后，系统会按照动作序号从小到大依次执行这些动作。如果用户配置了相同序号的动作，当管理员执行]{style="font-family:宋体"}**[commit]{lang="EN-US"}**]{#struct_0_86484_x7486_1763247196}[命令时，新配置的]{style="font-family:宋体"}**[action]{lang="EN-US"}**[生效。]{style="font-family:宋体"}
+同一个监控策略下可以配置多个动作，当监控策略被触发后，系统会按照动作序号从小到大依次执行这些动作。如果用户配置了相同序号的动作，当管理员执行**commit**命令时，新配置的**action**生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1403222973}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_x1357331190}[为]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[配置动作：当]{style="font-family:宋体"}[test]{lang="EN-US"}[被触发时，生成一条优先级为]{style="font-family:宋体"}[7]{lang="EN-US"}[、设备号为]{style="font-family:宋体"}[local3]{lang="EN-US"}[、内容为]{style="font-family:宋体"}[hello]{lang="EN-US"}[的日志。]{style="font-family:宋体"}
+\# 为CLI监控策略test配置动作：当test被触发时，生成一条优先级为7、设备号为local3、内容为hello的日志。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_86484_x7486_843209054}
+\<Sysname\> system-view
 
-[[\[Sysname\] rtm cli-policy test]{lang="EN-US"}]{#struct_0_86484_x7486_2014195368}
+Sysname rtm cli-policy test
 
-[[\[Sysname-rtm-test\] action 3 syslog priority 7 facility local3 msg hello]{lang="EN-US"}]{#struct_0_86484_x7486_x1466673650}
-:::
-
-::: {#399103237 .myid}
-[]{#_Toc404797121}[]{#struct_0_86484_x7486_489762743}[]{#_Toc309396738}
+Sysname-rtm-test action 3 syslog priority 7 facility local3 msg hello
 
 **EAA \-- EAA配置命令 \-- commit**
 
 ------------------------------------------------------------------------
 
-[**[commit]{lang="EN-US"}**]{#struct_0_86484_x7486_x1231374066}[命令用]{style="font-family:宋体"}[来]{style="font-family:宋体"}[启用]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略。]{style="font-family:宋体"}
+**[commit**]命令用来启用CLI监控策略。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1793388567}
+【命令】
 
-[**[commit]{lang="EN-US"}**]{#struct_0_86484_x7486_x1753211263}
+**[commit**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x724515806}
+【缺省情况】
 
-[[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_x2062507161}[监控策略未被启用]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+CLI监控策略未被启用。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1357265654}
+【视图】
 
-[[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_x142587842}[监控策略视图]{style="font-family:宋体"}
+CLI监控策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_86484_x7486_936561196}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x1569790521}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_86484_x7486_575699311}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1181829837}
+【使用指导】
 
-[[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_x671604206}[策略策略创建并配置事件和动作后，并不会立即生效，需要执行]{style="font-family:宋体"}**[commit]{lang="EN-US"}**[命令才会生效。]{style="font-family:宋体"}
+CLI策略策略创建并配置事件和动作后，并不会立即生效，需要执行**commit**命令才会生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1319840468}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_x20563151}[启用]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 启用CLI监控策略test。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_86484_x7486_x1357855477}
+\<Sysname\> system-view
 
-[[\[Sysname\] rtm cli-policy test]{lang="EN-US"}]{#struct_0_86484_x7486_x1588742948}
+Sysname rtm cli-policy test
 
-[[\[Sysname-rtm-test\] commit]{lang="EN-US"}]{#struct_0_86484_x7486_x1573500399}
-:::
-
-::: {#1318966325 .myid}
-[]{#_Toc404797122}[]{#struct_0_86484_x7486_x1281417372}[]{#_Toc309396726}[]{#_Toc307902150}
+Sysname-rtm-test commit
 
 **EAA \-- EAA配置命令 \-- display rtm environment**
 
 ------------------------------------------------------------------------
 
-[**[display rtm environment]{lang="EN-US"}**]{#struct_0_86484_x7486_x1868512074}[命令用来显示用户自定义的]{style="font-family:宋体"}[EAA]{lang="EN-US"}[环境变量配置。]{style="font-family:宋体"}
+**[display rtm environment**]命令用来显示用户自定义的EAA环境变量配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_86484_x7486_153461033}
+【命令】
 
-[**[display rtm environment]{lang="EN-US"}**[ \[ *var-name* \]]{lang="EN-US"}]{#struct_0_86484_x7486_x1827466025}
+**[display rtm environment** [ *var-name* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1357789941}
+【视图】
 
-[[任意]{style="font-family:宋体;color:black"}]{#struct_0_86484_x7486_x386093048}[视图]{style="font-family:宋体"}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x291385497}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x1525906530}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x1262500736}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1540021469}
+【参数】
 
-[*[var-name]{lang="EN-US"}*]{#struct_0_86484_x7486_362723446}[：]{style="font-family:宋体"}[显示指定名称的环境变量的配置。不指定该参数时，显示所有环境变量的配置。]{style="font-family:宋体"}
+*[var-name*]：显示指定名称的环境变量的配置。不指定该参数时，显示所有环境变量的配置。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1357986549}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_x2050665260}[显示用户自定义的所有]{style="font-family:宋体"}[EAA]{lang="EN-US"}[环境变量配置。]{style="font-family:宋体"}
+\# 显示用户自定义的所有EAA环境变量配置。
 
-[[\<Sysname\> display rtm environment]{lang="EN-US"}]{#struct_0_86484_x7486_x1972690366}
+\<Sysname\> display rtm environment
 
-[[Name             Value]{lang="EN-US"}]{#struct_0_86484_x7486_864841623}
+Name             Value
 
-[[config_cmd       interface m1/0/1]{lang="EN-US"}]{#struct_0_86484_x7486_286368089}
+config_cmd       interface m1/0/1
 
-[[save_cmd         save main force]{lang="EN-US"}]{#struct_0_86484_x7486_x1354086522}
+save_cmd         save main force
 
-[[show_run_cmd     display current-configuration]{lang="EN-US"}]{#struct_0_86484_x7486_1508052400}
+show_run_cmd     display current-configuration
 
-[[表1-1 ]{lang="EN-US"}[display rtm environment]{lang="EN-US"}]{#struct_0_86484_x7486_x1564460365}[命令信息描述]{style="font-family:黑体"}
+表1-1 display rtm environment命令信息描述
 
-[]{#table_struct_0_x751009406}[[主要字段]{style="font-size:9.0pt;
-   line-height:125%;font-family:宋体"}]{#struct_0_86484_x7486_x1357921013}
-:::
+主要字段
 
-[[描述]{style="font-size:9.0pt;
-   line-height:125%;font-family:宋体"}]{#struct_0_86484_x7486_x1765614393}
+描述
 
-[[Name]{lang="EN-US" style="font-size:9.0pt;line-height:125%"}]{#struct_0_86484_x7486_x1258568607}
+Name
 
-[[环境变量的名称]{style="font-size:9.0pt;
-  line-height:125%;font-family:宋体"}]{#struct_0_86484_x7486_x1498887319}
+环境变量的名称
 
-[[Value]{lang="EN-US" style="font-size:9.0pt;line-height:125%"}]{#struct_0_86484_x7486_x1572608327}
+Value
 
-[[环境变量的值]{style="font-size:9.0pt;
-  line-height:125%;font-family:宋体"}]{#struct_0_86484_x7486_x823153365}
-
-[ ]{lang="EN-US"}
-
-::: {#-884705362 .myid}
-[]{#_Toc404797123}[]{#struct_0_86484_x7486_1888181920}[]{#_Toc309752979}
+环境变量的值
 
 **EAA \-- EAA配置命令 \-- display rtm policy**
 
 ------------------------------------------------------------------------
 
-[**[display rtm policy]{lang="EN-US"}**]{#struct_0_86484_x7486_x1357593333}[命令用来]{style="font-family:宋体"}[显示监控策略的相关信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[display rtm policy**]命令用来显示监控策略的相关信息。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x2112072781}
+【命令】
 
-[**[display rtm policy]{lang="EN-US"}**[ ]{lang="EN-US"}[{ **active** \| **registered** \[ **verbose** \] } \[ *policy-name* \]]{lang="EN-US"}]{#struct_0_86484_x7486_x418946907}
+**[display rtm policy**[{ **active** \| **registered** [ **verbose** ] }  *policy-name* ]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1675969480}
+【视图】
 
-[[任意]{style="font-family:宋体;color:black"}]{#struct_0_86484_x7486_x817157833}[视图]{style="font-family:宋体"}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1492498764}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x1329960715}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x118011779}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_86484_x7486_405953819}
+【参数】
 
-[**[active]{lang="EN-US"}**]{#struct_0_86484_x7486_391558400}[：显示正在执行的监控策略的相关信息。]{style="font-family:宋体"}
+**[active**]：显示正在执行的监控策略的相关信息。
 
-[**[registered]{lang="EN-US"}**]{#struct_0_86484_x7486_x1357527797}[：显示已创建的监控策略的相关信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[registered**]：显示已创建的监控策略的相关信息。
 
-[*[policy-name]{lang="EN-US"}*]{#struct_0_86484_x7486_x234180814}[：显示指定监控策略的相关信息。]{style="font-family:宋体"}*[policy-name]{lang="EN-US"}*[表示监控策略的名称，]{style="font-family:宋体"}[不指定]{style="font-family:宋体"}[该参数]{style="font-family:宋体"}[时，显示所有]{style="font-family:宋体"}[正在执行的或者是已创建的]{style="font-family:宋体"}[监控策略的]{style="font-family:宋体"}[相关信息]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+*[policy-name*]：显示指定监控策略的相关信息。*policy-name*表示监控策略的名称，不指定该参数时，显示所有正在执行的或者是已创建的监控策略的相关信息。
 
-[**[verbose]{lang="EN-US"}**]{#struct_0_86484_x7486_654668932}[：显示监控策略的详细信息。]{style="font-family:宋体"}
+**[verbose**]：显示监控策略的详细信息。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x677387759}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_x1679668929}[显示所有正在运行的监控策略。]{style="font-family:宋体"}
+\# 显示所有正在运行的监控策略。
 
-[[\<Sysname\> display rtm policy active]{lang="EN-US"}]{#struct_0_86484_x7486_x2141961421}
+\<Sysname\> display rtm policy active
 
-[[JID   Type  Event      TimeActive           PolicyName]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_86484_x7486_x1357724405}
+JID   Type  Event      TimeActive           PolicyName
 
-[[507   TCL   INTERFACE  Aug 29 14:55:55 2013 test]{lang="EN-US"}]{#struct_0_86484_x7486_654603396}
+507   TCL   INTERFACE  Aug 29 14:55:55 2013 test
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_1066375269}[显示所有监控策略的相关信息。]{style="font-family:宋体"}
+\# 显示所有监控策略的相关信息。
 
-[[\<Sysname\> display rtm policy registered]{lang="EN-US"}]{#struct_0_86484_x7486_538352372}
+\<Sysname\> display rtm policy registered
 
-[Total number: 1]{lang="EN-US"}
+Total number: 1
 
-[Type  Event      TimeRegistered       PolicyName]{lang="EN-US"}
+Type  Event      TimeRegistered       PolicyName
 
-[CLI              Aug 29 14:54:50 2013 test]{lang="EN-US"}
+CLI              Aug 29 14:54:50 2013 test
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_654800004}[显示所有监控策略的详细信息。]{style="font-family:宋体"}
+\# 显示所有监控策略的详细信息。
 
-[[\<Sysname\> display  rtm policy registered verbose]{lang="EN-US"}]{#struct_0_86484_x7486_654734468}
+\<Sysname\> display  rtm policy registered verbose
 
-[  Total number: 1]{lang="EN-US"}
+  Total number: 1
 
-[ ]{lang="EN-US"}
+   Policy Name: test
 
-[   Policy Name: test]{lang="EN-US"}
+   Policy Type: CLI
 
-[   Policy Type: CLI]{lang="EN-US"}
+    Event Type:
 
-[    Event Type:]{lang="EN-US"}
+TimeRegistered: Aug 29 14:54:50 2013
 
-[TimeRegistered: Aug 29 14:54:50 2013]{lang="EN-US"}
+     User-role: network-operator
 
-[     User-role: network-operator]{lang="EN-US"}
+                network-admin
 
-[                network-admin]{lang="EN-US"}
+表1-2 display rtm policy命令显示信息描述表
 
-[[表1-2 ]{lang="EN-US"}[display rtm policy]{lang="EN-US"}]{#struct_0_86484_x7486_1416250102}[命令显示信息描述表]{style="font-family:黑体"}
+主要字段
 
-[]{#table_struct_0_x724257214}[[主要字段]{style="font-size:9.0pt;
-   line-height:125%;font-family:宋体"}]{#struct_0_86484_x7486_x673184409}
-:::
+描述
 
-[[描述]{style="font-size:9.0pt;
-   line-height:125%;font-family:宋体"}]{#struct_0_86484_x7486_x693775257}
+JID
 
-[[JID]{lang="EN-US"}]{#struct_0_86484_x7486_x1133411301}
+任务ID，执行**display  rtm policy active**命令时才显示该信息
 
-[[任务]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_86484_x7486_x1357331189}[，执行]{style="font-family:宋体"}**[display  rtm policy active]{lang="EN-US"}**[命令时才显示该信息]{style="font-family:宋体"}
+PolicyName
 
-[[PolicyName]{lang="EN-US"}]{#struct_0_86484_x7486_x1079039711}
+监控策略的名称
 
-[[监控策略的名称]{style="font-family:宋体"}]{#struct_0_86484_x7486_x1779253832}
+Type
 
-[[Type]{lang="EN-US"}]{#struct_0_86484_x7486_x633086753}
+监控策略的类型，其中：
 
-[[监控策略的类型，其中：]{style="font-family:宋体"}]{#struct_0_86484_x7486_x2042890123}
+·TCL表示这个策略是通过TCL脚本定义的
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[TCL]{lang="EN-US"}]{#struct_0_86484_x7486_x1357265653}[表示这个策略是通过]{style="font-family:宋体"}[TCL]{lang="EN-US"}[脚本定义的]{style="font-family:宋体"}
+·CLI表示这个策略是通过命令行定义的
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_x1708671783}[表示这个策略是通过命令行定义的]{style="font-family:宋体"}
+Policy Type
 
-[[Policy Type]{lang="EN-US"}]{#struct_0_86484_x7486_654275713}
+Event
 
-[[Event]{lang="EN-US"}]{#struct_0_86484_x7486_828965811}
+监控策略触发事件的类型，包括CLI、HOTPLUG、INTERFACE、PROCESS、SNMP、SNMP_NOTIF、SYSLOG七种，具体配置及含义参考相应**event**命令
 
-[[监控策略触发事件的类型]{style="font-family:宋体"}]{#struct_0_86484_x7486_1346956258}[，包括]{style="font-family:宋体"}[CLI]{lang="EN-US"}[、]{style="font-family:宋体"}[HOTPLUG]{lang="EN-US"}[、]{style="font-family:宋体"}[INTERFACE]{lang="EN-US"}[、]{style="font-family:宋体"}[PROCESS]{lang="EN-US"}[、]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[、]{style="font-family:宋体"}[SNMP_NOTIF]{lang="EN-US"}[、]{style="font-family:宋体"}[SYSLOG]{lang="EN-US"}[七种，具体配置及含义参考相应]{style="font-family:宋体"}**[event]{lang="EN-US"}**[命令]{style="font-family:宋体"}
+Event Type
 
-[[Event Type]{lang="EN-US"}]{#struct_0_86484_x7486_244899397}
+TimeActive
 
-[[TimeActive]{lang="EN-US"}]{#struct_0_86484_x7486_1126678890}
+监控策略开始运行的时间
 
-[[监控策略开始运行的时间]{style="font-family:宋体"}]{#struct_0_86484_x7486_654210177}
+PolicyName
 
-[[PolicyName]{lang="EN-US"}]{#struct_0_86484_x7486_x950494579}
+监控策略的名称
 
-[[监控策略的名称]{style="font-family:宋体"}]{#struct_0_86484_x7486_x253353950}
+TimeRegistered
 
-[[TimeRegistered]{lang="EN-US"}]{#struct_0_86484_x7486_531400466}
+监控策略的创建时间
 
-[[监控策略的创建时间]{style="font-family:宋体"}]{#struct_0_86484_x7486_x648624501}
+Total number
 
-[[Total number]{lang="EN-US"}]{#struct_0_86484_x7486_654406785}
+监控策略的总数
 
-[[监控策略的总数]{style="font-family:宋体"}]{#struct_0_86484_x7486_946134860}
+User-role
 
-[[User-role]{lang="EN-US"}]{#struct_0_86484_x7486_x1357789940}
-
-[[执行监控策略需要的最小用户角色]{style="font-family:宋体"}]{#struct_0_86484_x7486_x1952176989}
-
-[ ]{lang="EN-US"}
-
-::: {#1187546778 .myid}
-[]{#_Toc404797124}[]{#struct_0_86484_x7486_678218095}[]{#_Toc309396727}[]{#_Toc307902151}
+执行监控策略需要的最小用户角色
 
 **EAA \-- EAA配置命令 \-- event cli**
 
 ------------------------------------------------------------------------
 
-[**[event cli]{lang="EN-US"}**]{#struct_0_86484_x7486_x1832953456}[命令用来配置命令行事件。]{style="font-family:宋体"}
+**[event cli**]命令用来配置命令行事件。
 
-[**[undo event]{lang="EN-US"}**]{#struct_0_86484_x7486_x806587502}[命令用来取消当前的事件配置]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo event**]命令用来取消当前的事件配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x824422636}
+【命令】
 
-[**[event cli ]{lang="EN-US"}**[{ **async** \[ ]{lang="EN-US"}**[skip ]{lang="EN-US"}**[\]]{lang="EN-US"}[ \| **sync** } **mode** { **execute** \| **help** \| **tab** } **pattern** *regular-exp*]{lang="EN-US"}]{#struct_0_86484_x7486_x1357921012}
+**[event cli ****[skip **  \| **sync** } **mode** { **execute** \| **help** \| **tab** } **pattern** *regular-exp*]]
 
-[**[undo event]{lang="EN-US"}**]{#struct_0_86484_x7486_963268962}
+**[undo event**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1835295419}
+【缺省情况】
 
-[[未配置任何命令行事件。]{style="font-family:宋体"}]{#struct_0_86484_x7486_x1975398827}
+未配置任何命令行事件。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1770593088}
+【视图】
 
-[[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_1660209868}[监控策略视图]{style="font-family:宋体"}
+CLI监控策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x976804910}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x159525522}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x1688884383}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1507709551}
+【参数】
 
-[**[async]{lang="EN-US"}**[ \[ ]{lang="EN-US"}**[skip]{lang="EN-US"}**[ \]]{lang="EN-US"}]{#struct_0_86484_x7486_x1357658868}[：]{style="font-family:宋体"}[异步监控。如果指定]{style="font-family:宋体"}**[skip]{lang="EN-US"}**[参数]{style="font-family:宋体"}[，则表示事件发生时，只执]{style="font-family:宋体"}[行]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监]{style="font-family:宋体"}[控策略中的动作，不执行]{style="font-family:宋体"}**[event cli]{lang="EN-US"}**[中指定的命令；如果不]{style="font-family:宋体"}[指定]{style="font-family:宋体"}**[skip]{lang="EN-US"}**[参数]{style="font-family:宋体"}[，则表示事件发生时，]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监]{style="font-family:宋体"}[控策略和]{style="font-family:宋体"}**[event cli]{lang="EN-US"}**[中指定的命令同时执行。]{style="font-family:宋体"}
+**[async** \**[skip** ]]：异步监控。如果指定**skip**参数，则表示事件发生时，只执行CLI监控策略中的动作，不执行**event cli**中指定的命令；如果不指定**skip**参数，则表示事件发生时，CLI监控策略和**event cli**中指定的命令同时执行。
 
-[**[sync]{lang="EN-US"}**]{#struct_0_86484_x7486_x1312633253}[：]{style="font-family:宋体"}[同步监控。只有]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控]{style="font-family:宋体"}[策略执行成功，]{style="font-family:宋体"}**[event cli]{lang="EN-US"}**[中指定的命令]{style="font-family:宋体"}[才能执行。]{style="font-family:宋体"}
+**[sync**]：同步监控。只有CLI监控策略执行成功，**event cli**中指定的命令才能执行。
 
-[**[execute]{lang="EN-US"}**]{#struct_0_86484_x7486_80435350}[：]{style="font-family:宋体"}[监控命令行的执行。当用户执行特定命令时，触发]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[execute**]：监控命令行的执行。当用户执行特定命令时，触发CLI监控策略。
 
-[**[help]{lang="EN-US"}**]{#struct_0_86484_x7486_x57551092}[：]{style="font-family:宋体"}[监控命令行]{style="font-family:宋体"}[的"]{style="font-family:宋体"}[?]{lang="EN-US"}["]{style="font-family:宋体"}[帮助。当用户执行特定帮助命令时，触发]{style="font-family:
-宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:
-宋体"}[。]{style="font-family:宋体"}
+**[help**]：监控命令行的"?"帮助。当用户执行特定帮助命令时，触发CLI监控策略。
 
-[**[tab]{lang="EN-US"}**]{#struct_0_86484_x7486_1157497441}[：]{style="font-family:宋体"}[监控命令行]{style="font-family:宋体"}[的]{style="font-family:宋体"}[Tab]{lang="EN-US"}[补]{style="font-family:宋体"}[全。当用户执行特定命令并使用]{style="font-family:宋体"}[Tab]{lang="EN-US"}[键]{style="font-family:宋体"}[自动补全功能时，触发]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[tab**]：监控命令行的Tab补全。当用户执行特定命令并使用Tab键自动补全功能时，触发CLI监控策略。
 
-[**[pattern]{lang="EN-US"}***[ regular-exp]{lang="EN-US"}*]{#struct_0_86484_x7486_x1357265652}[：]{style="font-family:宋体"}[用于匹配命令行的正则表达式。只要输入的命令行中包含该字符串，则匹配成功，触发策略执行。关于正则表达式的详细描述请参见"基础配置指导"中的"]{style="font-family:宋体"}[CLI]{lang="EN-US"}["。]{style="font-family:宋体"}
+**[pattern*** regular-exp*]：用于匹配命令行的正则表达式。只要输入的命令行中包含该字符串，则匹配成功，触发策略执行。关于正则表达式的详细描述请参见"基础配置指导"中的"CLI"。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1020211572}
+【使用指导】
 
-[[配置该事件后，当用户输入指定的命令并执行相应动作（执行、帮助或者补全）就会触发策略执行。用户输入命令是否执行、帮助或者补全，以及是否等待]{style="font-family:宋体"}[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_x821778242}[监控]{style="font-family:宋体"}[策略执行成功后再执行、帮助或者补全，由]{style="font-family:宋体"}**[sync]{lang="EN-US"}**[、]{style="font-family:宋体"}**[async]{lang="EN-US"}**[ \[ ]{lang="EN-US"}**[skip]{lang="EN-US"}**[ \]]{lang="EN-US"}[参数]{style="font-family:宋体"}[决定。]{style="font-family:宋体"}
+配置该事件后，当用户输入指定的命令并执行相应动作（执行、帮助或者补全）就会触发策略执行。用户输入命令是否执行、帮助或者补全，以及是否等待CLI监控策略执行成功后再执行、帮助或者补全，由**sync**、**async** \**[skip** ]参数决定。
 
-[[同一监控策略下，只能配置一个事件。如果多次执行]{style="font-family:宋体"}**[event]{lang="EN-US"}**]{#struct_0_86484_x7486_1185588815}[命令配置了不同事件，则最新配置并]{style="font-family:宋体"}**[commit]{lang="EN-US"}**[的生效。]{style="font-family:宋体"}
+同一监控策略下，只能配置一个事件。如果多次执行**event**命令配置了不同事件，则最新配置并**commit**的生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1357855475}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_1543424934}[为]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[配置异步]{style="font-family:宋体"}[CLI]{lang="EN-US"}[事件，当用户输入命令中含有]{style="font-family:宋体"}[dis inter brief]{lang="EN-US"}[字符并执行该命令时触发策略执行，同时跳过命令行执行。]{style="font-family:宋体"}
+\# 为CLI监控策略test配置异步CLI事件，当用户输入命令中含有dis inter brief字符并执行该命令时触发策略执行，同时跳过命令行执行。
 
-[[\<Sysname\>system-view]{lang="EN-US"}]{#struct_0_86484_x7486_1847357672}
+\<Sysname\>system-view
 
-[[\[Sysname\] rtm cli-policy test]{lang="EN-US"}]{#struct_0_86484_x7486_x935985935}
+Sysname rtm cli-policy test
 
-[[\[Sysname-rmt-test\] event cli async skip mode execute pattern dis inter brief]{lang="EN-US"}]{#struct_0_86484_x7486_x1357789939}
+Sysname-rmt-test event cli async skip mode execute pattern dis inter brief
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_x1357986547}[为]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[配置异步]{style="font-family:宋体"}[CLI]{lang="EN-US"}[事件，当用户输入的命令中含有]{style="font-family:宋体"}[dis inter brief]{lang="EN-US"}[字符并使用了]{style="font-family:宋体"}[\<Tab\>]{lang="EN-US"}[键补全功能时，触发策略执行，同时将]{style="font-family:宋体"}[\<Tab\>]{lang="EN-US"}[键补全的结果返回给用户。]{style="font-family:宋体"}
+\# 为CLI监控策略test配置异步CLI事件，当用户输入的命令中含有dis inter brief字符并使用了\<Tab\>键补全功能时，触发策略执行，同时将\<Tab\>键补全的结果返回给用户。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_86484_x7486_1081502622}
+\<Sysname\> system-view
 
-[[\[Sysname\] rtm cli-policy test]{lang="EN-US"}]{#struct_0_86484_x7486_1247514007}
+Sysname rtm cli-policy test
 
-[[\[Sysname-rmt-test\] event cli async mode tab pattern dis inter brief]{lang="EN-US"}]{#struct_0_86484_x7486_x1357921011}
+Sysname-rmt-test event cli async mode tab pattern dis inter brief
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_x1357593331}[为]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[配置同步]{style="font-family:宋体"}[CLI]{lang="EN-US"}[事件，当用户输入的命令中含有]{style="font-family:宋体"}[dis inter brief]{lang="EN-US"}[字符并使用了帮助功能时，触发策略执行。系统等策略执行成功后，返回帮助的结果。]{style="font-family:宋体"}
+\# 为CLI监控策略test配置同步CLI事件，当用户输入的命令中含有dis inter brief字符并使用了帮助功能时，触发策略执行。系统等策略执行成功后，返回帮助的结果。
 
-[[\<Sysname\>system-view]{lang="EN-US"}]{#struct_0_86484_x7486_1020095101}
+\<Sysname\>system-view
 
-[[\[Sysname\] rtm cli-policy test]{lang="EN-US"}]{#struct_0_86484_x7486_1894897167}
+Sysname rtm cli-policy test
 
-[[\[Sysname-rmt-test\] event cli sync mode help pattern dis inter brief]{lang="EN-US"}]{#struct_0_86484_x7486_x1357527795}
-:::
-
-::: {#806257264 .myid}
-[]{#_Toc404797125}[]{#struct_0_86484_x7486_928618600}[]{#_Toc309396729}
+Sysname-rmt-test event cli sync mode help pattern dis inter brief
 
 **EAA \-- EAA配置命令 \-- event hotplug**
 
 ------------------------------------------------------------------------
 
-[**[event hotplug]{lang="EN-US"}**]{#struct_0_86484_x7486_x483230063}[命令用来配置板卡热插拔事件。]{style="font-family:宋体"}
+**[event hotplug**]命令用来配置板卡热插拔事件。
 
-[**[undo event]{lang="EN-US"}**]{#struct_0_86484_x7486_x1526315966}[命令用来取消当前的事件配置]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo event**]命令用来取消当前的事件配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1077518154}
+【命令】
 
-[[集中式设备[/]{lang="EN-US"}分布式设备－独立运行模式]{style="font-family:宋体"}]{#struct_0_86484_x7486_x1357724403}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+集中式设备/分布式设备－独立运行模式/集中式IRF设备：
 
-[**[event hotplug]{lang="EN-US"}**]{#struct_0_86484_x7486_1872944323}**[ ]{lang="EN-US"}**[\[ ]{lang="EN-US"}**[insert]{lang="EN-US"}**[ \| ]{lang="EN-US"}**[remove]{lang="EN-US"}**[ \] ]{lang="EN-US"}**[slot]{lang="EN-US"}**[ *slot-number* \[ **subslot** *subslot-number* \]]{lang="EN-US"}
+**[event hotplug**]****\**[insert**[ \| ]**remove**  ]**slot** *slot-number* [ **subslot** *subslot-number* ]
 
-[**[undo event]{lang="EN-US"}**]{#struct_0_86484_x7486_1419642442}
+**[undo event**]
 
-[[分布式设备－]{style="font-family:宋体"}]{#struct_0_86484_x7486_337119792}[IRF]{lang="EN-US"}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[event hotplug]{lang="EN-US"}**]{#struct_0_86484_x7486_x1357658867}**[ ]{lang="EN-US"}**[\[ ]{lang="EN-US"}**[insert]{lang="EN-US"}**[ \| ]{lang="EN-US"}**[remove]{lang="EN-US"}**[ \] ]{lang="EN-US"}**[chassis]{lang="EN-US"}**[ *chassis-number* **slot** *slot-number* \[ **subslot** *subslot-number* \]]{lang="EN-US"}
+**[event hotplug**]****\**[insert**[ \| ]**remove**  ]**chassis** *chassis-number* **slot** *slot-number* [ **subslot** *subslot-number* ]
 
-[**[undo event]{lang="EN-US"}**]{#struct_0_86484_x7486_x102779672}
+**[undo event**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x2090464521}
+【缺省情况】
 
-[[未配置任何热插拔事件。]{style="font-family:宋体"}]{#struct_0_86484_x7486_601569541}
+未配置任何热插拔事件。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1873787828}
+【视图】
 
-[[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_x322505091}[监控策略视图]{style="font-family:宋体"}
+CLI监控策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x509172879}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_86484_x7486_1517291429}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x1665101623}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1357331187}
+【参数】
 
-[**[insert]{lang="EN-US"}**]{#struct_0_86484_x7486_x445680433}[：表示监控单板的插入事件。不指定]{style="font-family:宋体"}**[insert]{lang="EN-US"}**[和]{style="font-family:宋体"}**[remove]{lang="EN-US"}**[参数时，表示监控单板的插入和拔出事件。]{style="font-family:宋体"}
+**[insert**]：表示监控单板的插入事件。不指定**insert**和**remove**参数时，表示监控单板的插入和拔出事件。
 
-[**[remove]{lang="EN-US"}**]{#struct_0_86484_x7486_664867213}[：表示监控单板的拔出事件。不指定]{style="font-family:宋体"}**[insert]{lang="EN-US"}**[和]{style="font-family:宋体"}**[remove]{lang="EN-US"}**[参数时，表示监控单板的插入和拔出事件。]{style="font-family:宋体"}
+**[remove**]：表示监控单板的拔出事件。不指定**insert**和**remove**参数时，表示监控单板的插入和拔出事件。
 
-[**[slot]{lang="EN-US"}**]{#struct_0_86484_x7486_x1357265651}*[ slot-number]{lang="EN-US"}*[：取值]{style="font-family:宋体"}[为]{style="font-family:宋体"}[0]{lang="EN-US"}[，无实际意义。（集中式设备）]{style="font-family:
-宋体"}
+**[slot**]* slot-number*：取值为0，无实际意义。（集中式设备）
 
-[**[slot]{lang="EN-US"}**]{#struct_0_86484_x7486_x1357855474}[ *slot-number*]{lang="EN-US"}[：表示单板所在的槽位号。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot**] *slot-number*：表示单板所在的槽位号。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**]{#struct_0_86484_x7486_x1185458421}*[ slot-number]{lang="EN-US"}*[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}[（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot**]* slot-number*：表示设备在IRF中的成员编号。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**]{#struct_0_86484_x7486_1120321427}*[ slot-number]{lang="EN-US"}*[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟槽位号。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot**]* slot-number*：表示设备在IRF中的成员编号或者PEX的虚拟槽位号。（集中式IRF设备）（支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**]{#struct_0_86484_x7486_1614901545}[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}[：表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的指定单板。其中，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示单板所在的槽位号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis**] *chassis-number* **slot** *slot-number*：表示IRF中的指定单板。其中，*chassis-number*表示设备在IRF中的成员编号，*slot-number*表示单板所在的槽位号。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis]{lang="EN-US"}**]{#struct_0_86484_x7486_930916512}[ *chassis-number* **slot** *slot-number*]{lang="EN-US"}[：表示]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的指定单板]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[。其中，]{style="font-family:宋体"}*[chassis-number]{lang="EN-US"}*[表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或]{style="font-family:宋体"}[者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对]{style="font-family:宋体"}[应的虚拟框号，]{style="font-family:宋体"}*[slot-number]{lang="EN-US"}*[表示]{style="font-family:宋体"}[单板]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[所在的槽位号。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis**] *chassis-number* **slot** *slot-number*：表示IRF中的指定单板/PEX。其中，*chassis-number*表示设备在IRF中的成员编号或者PEX对应的虚拟框号，*slot-number*表示单板/PEX所在的槽位号。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[subslot]{lang="EN-US"}**]{#struct_0_86484_x7486_x1357986546}[ *subslot-number*]{lang="EN-US"}[：子卡所在的子槽位号。不指定该参数时，表示单板上的任一子卡。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。]{style="font-family:宋体"}
+**[subslot**] *subslot-number*：子卡所在的子槽位号。不指定该参数时，表示单板上的任一子卡。本参数的支持情况与设备的型号有关，请以设备的实际情况为准。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x484581319}
+【使用指导】
 
-[[配置该事件后，当用户插入]{style="font-family:宋体"}[/]{lang="EN-US"}]{#struct_0_86484_x7486_x1670071961}[拔出指定板卡，会触发监控策略执行。]{style="font-family:宋体"}
+配置该事件后，当用户插入/拔出指定板卡，会触发监控策略执行。
 
-[[同一监控策略下，只能配置一个事件。如果多次执行]{style="font-family:宋体"}**[event]{lang="EN-US"}**]{#struct_0_86484_x7486_x1147693819}[命令配置了不同事件，则最新配置并]{style="font-family:宋体"}**[commit]{lang="EN-US"}**[的生效。]{style="font-family:宋体"}
+同一监控策略下，只能配置一个事件。如果多次执行**event**命令配置了不同事件，则最新配置并**commit**的生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x900076413}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_x1357921010}[为]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[配置监控事件：热插拔]{style="font-family:宋体"}[2]{lang="EN-US"}[号子卡均触发策略执行。（]{style="font-family:宋体"}[集中式设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+\# 为CLI监控策略test配置监控事件：热插拔2号子卡均触发策略执行。（集中式设备）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_86484_x7486_2126068376}
+\<Sysname\> system-view
 
-[[\[Sysname\] rtm cli-policy test]{lang="EN-US"}]{#struct_0_86484_x7486_x1357593330}
+Sysname rtm cli-policy test
 
-[[\[Sysname-rtm-test\] event hotplug slot 0 subslot 2]{lang="EN-US"}]{#struct_0_86484_x7486_x1708788254}
+Sysname-rtm-test event hotplug slot 0 subslot 2
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_x1357527794}[为]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[配置监控事件：热插拔]{style="font-family:宋体"}[2]{lang="EN-US"}[号槽位的板卡时触发策略执行。（]{style="font-family:宋体"}[分布式设备－独立运行模式]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+\# 为CLI监控策略test配置监控事件：热插拔2号槽位的板卡时触发策略执行。（分布式设备－独立运行模式）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_86484_x7486_x637465341}
+\<Sysname\> system-view
 
-[[\[Sysname\] rtm cli-policy test]{lang="EN-US"}]{#struct_0_86484_x7486_x1832281201}
+Sysname rtm cli-policy test
 
-[[\[Sysname-rtm-test\] event hotplug slot 2]{lang="EN-US"}]{#struct_0_86484_x7486_1171613732}
+Sysname-rtm-test event hotplug slot 2
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_487434589}[为]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[配置监控事件：热插拔成员设备]{style="font-family:宋体"}[2]{lang="EN-US"}[上的子卡时均触发策略执行。（]{style="font-family:宋体"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+\# 为CLI监控策略test配置监控事件：热插拔成员设备2上的子卡时均触发策略执行。（集中式IRF设备）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_86484_x7486_x995590723}
+\<Sysname\> system-view
 
-[[\[Sysname\] rtm cli-policy test]{lang="EN-US"}]{#struct_0_86484_x7486_x549247484}
+Sysname rtm cli-policy test
 
-[[\[Sysname-rtm-test\] event hotplug slot 2]{lang="EN-US"}]{#struct_0_86484_x7486_x935212644}
+Sysname-rtm-test event hotplug slot 2
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_98552611}[为]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[配置监控事件：热插拔成员设备]{style="font-family:宋体"}[1]{lang="EN-US"}[上]{style="font-family:宋体"}[2]{lang="EN-US"}[号槽位的板卡时触发策略执行。（]{style="font-family:
-宋体"}[分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式]{style="font-family:宋体"}[）]{style="font-family:宋体"}
+\# 为CLI监控策略test配置监控事件：热插拔成员设备1上2号槽位的板卡时触发策略执行。（分布式设备－IRF模式）
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_86484_x7486_x1357724402}
+\<Sysname\> system-view
 
-[[\[Sysname\] rtm cli-policy test]{lang="EN-US"}]{#struct_0_86484_x7486_306860382}
+Sysname rtm cli-policy test
 
-[[\[Sysname-rtm-test\] event hotplug chassis 1 slot 2]{lang="EN-US"}]{#struct_0_86484_x7486_1131915615}
-:::
-
-::: {#823272471 .myid}
-[]{#_Toc404797126}[]{#struct_0_86484_x7486_x97596178}[]{#_Toc309396730}
+Sysname-rtm-test event hotplug chassis 1 slot 2
 
 **EAA \-- EAA配置命令 \-- event interface**
 
 ------------------------------------------------------------------------
 
-[**[event interface]{lang="EN-US"}**]{#struct_0_86484_x7486_1890029137}[命令用来配置接口事件。]{style="font-family:宋体"}
+**[event interface**]命令用来配置接口事件。
 
-[**[undo event]{lang="EN-US"}**]{#struct_0_86484_x7486_x1237237957}[命令用来取消当前的事件配置]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo event**]命令用来取消当前的事件配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1134774775}
+【命令】
 
-[**[event interface]{lang="EN-US"}**[ ]{lang="EN-US"}*[interface-type interface-number]{lang="EN-US"}*[ **monitor-obj** *monitor-obj* **start-op** *start-op* **start-val** *start-val* **restart-op** *restart-op* **restart-val** *restart-val* \[ **interval** *interval* \]]{lang="EN-US"}]{#struct_0_86484_x7486_1186349653}
+**[event interface***interface-type interface-number* **monitor-obj** *monitor-obj* **start-op** *start-op* **start-val** *start-val* **restart-op** *restart-op* **restart-val** *restart-val* [ **interval** *interval* ]]
 
-[**[undo event]{lang="EN-US"}**]{#struct_0_86484_x7486_1818314581}
+**[undo event**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x2028546132}
+【缺省情况】
 
-[[未配置任何接口事件。]{style="font-family:宋体"}]{#struct_0_86484_x7486_x1357658866}
+未配置任何接口事件。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1463304269}
+【视图】
 
-[[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_1317611097}[监控策略视图]{style="font-family:宋体"}
+CLI监控策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x742354865}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x1053540710}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x1930743104}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x853900311}
+【参数】
 
-[*[interface-type interface-number]{lang="EN-US"}*]{#struct_0_86484_x7486_x979963153}[：表示要监控的接口类型和编号。]{style="font-family:宋体"}
+*[interface-type interface-number*]：表示要监控的接口类型和编号。
 
-[**[monitor-obj]{lang="EN-US"}***[ monitor-obj]{lang="EN-US"}*]{#struct_0_86484_x7486_x1526237316}[：]{style="font-family:宋体"}[表示要监控的对]{style="font-family:宋体"}[象，具体描述请见]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-3]{lang="EN-US"}](?823272471#_Ref323135376)[。]{style="font-family:宋体"}
+**[monitor-obj*** monitor-obj*]：表示要监控的对象，具体描述请见[表]1-3(?823272471#_Ref323135376)。
 
-[**[start-op ]{lang="EN-US"}***[start-op]{lang="EN-US"}*]{#struct_0_86484_x7486_x1583474682}[：]{style="font-family:宋体"}[触发监控策略执行的操]{style="font-family:宋体"}[作码，取值如]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-4]{lang="EN-US"}](?823272471#_Ref323135406)[所示。]{style="font-family:宋体"}
+**[start-op ***start-op*]：触发监控策略执行的操作码，取值如[表]1-4(?823272471#_Ref323135406)所示。
 
-[**[start-val ]{lang="EN-US"}***[start-val]{lang="EN-US"}*]{#struct_0_86484_x7486_x1357331186}[：]{style="font-family:宋体"}[触发监控策略执行的监控对象的值，]{style="font-family:宋体"}[取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[，单位请见]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-3]{lang="EN-US"}](?823272471#_Ref323135376)[。]{style="font-family:宋体"}
+**[start-val ***start-val*]：触发监控策略执行的监控对象的值，取值范围为0～4294967295，单位请见[表]1-3(?823272471#_Ref323135376)。
 
-[**[restart-op ]{lang="EN-US"}***[restart-op]{lang="EN-US"}*]{#struct_0_86484_x7486_2006074004}[：重新开启触发开关]{style="font-family:宋体"}[的操]{style="font-family:宋体"}[作码，具体描述请见]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-4]{lang="EN-US"}](?823272471#_Ref323135406)[。]{style="font-family:宋体"}
+**[restart-op ***restart-op*]：重新开启触发开关的操作码，具体描述请见[表]1-4(?823272471#_Ref323135406)。
 
-[**[restart-val ]{lang="EN-US"}***[restart-val]{lang="EN-US"}*]{#struct_0_86484_x7486_x1726748203}[：重新开启触发开关]{style="font-family:宋体"}[的监控对象的值，]{style="font-family:宋体"}[取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[，单位请见]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-3]{lang="EN-US"}](?823272471#_Ref323135376)[。]{style="font-family:宋体"}
+**[restart-val ***restart-val*]：重新开启触发开关的监控对象的值，取值范围为0～4294967295，单位请见[表]1-3(?823272471#_Ref323135376)。
 
-[**[interval]{lang="EN-US"}***[ interval]{lang="EN-US"}*]{#struct_0_86484_x7486_x1357265650}[：]{style="font-family:宋体"}[获取监控对象数据的时]{style="font-family:宋体"}[间间隔，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[300]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+**[interval*** interval*]：获取监控对象数据的时间间隔，取值范围为1～4294967295，单位为秒，缺省值为300秒。
 
-[]{#struct_0_86484_x7486_x2111956310}[[表1-3 ]{lang="EN-US"}[监控对象说明]{style="font-family:
-黑体"}]{#_Ref323135376}
+表1-3 监控对象说明
 
-[]{#table_struct_0_x711398590}[[监控对象]{style="font-size:9.0pt;
-   line-height:125%;font-family:宋体"}]{#struct_0_86484_x7486_x1750538917}
-:::
+监控对象
 
-[[含义]{style="font-size:9.0pt;
-   line-height:125%;font-family:宋体"}]{#struct_0_86484_x7486_x445108558}
+含义
 
-[[input-drops]{lang="EN-US" style="font-size:9.0pt;line-height:125%"}]{#struct_0_86484_x7486_x1293240928}
+input-drops
 
-[[接口接收方向丢弃包的个数]{style="font-size:9.0pt;
-  line-height:125%;font-family:宋体"}]{#struct_0_86484_x7486_x1077726755}
+接口接收方向丢弃包的个数
 
-[[input-errors]{lang="EN-US" style="font-size:9.0pt;line-height:125%"}]{#struct_0_86484_x7486_x1357855473}
+input-errors
 
-[[接口接收到的错误包的个数]{style="font-size:9.0pt;
-  line-height:125%;font-family:宋体"}]{#struct_0_86484_x7486_736855880}
+接口接收到的错误包的个数
 
-[[output-drops]{lang="EN-US" style="font-size:9.0pt;line-height:125%"}]{#struct_0_86484_x7486_832935115}
+output-drops
 
-[[接口发送方向丢弃包的个数]{style="font-size:9.0pt;
-  line-height:125%;font-family:宋体"}]{#struct_0_86484_x7486_1398719080}
+接口发送方向丢弃包的个数
 
-[[output-errors]{lang="EN-US" style="font-size:9.0pt;line-height:125%"}]{#struct_0_86484_x7486_1270169297}
+output-errors
 
-[[接口发送出去的错误包的个数]{style="font-size:9.0pt;
-  line-height:125%;font-family:宋体"}]{#struct_0_86484_x7486_591534958}
+接口发送出去的错误包的个数
 
-[[rcv-bps]{lang="EN-US" style="font-size:9.0pt;line-height:125%"}]{#struct_0_86484_x7486_x1588386695}
+rcv-bps
 
-[[接口接收速率，单位为比特]{style="font-size:9.0pt;
-  line-height:125%;font-family:宋体"}]{#struct_0_86484_x7486_x1357789937}[/]{lang="EN-US" style="font-size:9.0pt;line-height:125%"}[秒]{style="font-size:9.0pt;
-  line-height:125%;font-family:宋体"}
+接口接收速率，单位为比特/秒
 
-[[rcv-broadcasts]{lang="EN-US" style="font-size:9.0pt;line-height:125%"}]{#struct_0_86484_x7486_x1192596566}
+rcv-broadcasts
 
-[[接口接收到的广播包个数]{style="font-size:9.0pt;
-  line-height:125%;font-family:宋体"}]{#struct_0_86484_x7486_x243655698}
+接口接收到的广播包个数
 
-[[rcv-pps]{lang="EN-US" style="font-size:9.0pt;line-height:125%"}]{#struct_0_86484_x7486_574403526}
+rcv-pps
 
-[[接口接收速率，单位为包]{style="font-size:9.0pt;
-  line-height:125%;font-family:宋体"}]{#struct_0_86484_x7486_x1201220354}[/]{lang="EN-US" style="font-size:9.0pt;line-height:125%"}[秒]{style="font-size:9.0pt;
-  line-height:125%;font-family:宋体"}
+接口接收速率，单位为包/秒
 
-[[tx-bps]{lang="EN-US" style="font-size:9.0pt;line-height:125%"}]{#struct_0_86484_x7486_939626279}
+tx-bps
 
-[[接口传输速率，单位为比特]{style="font-size:9.0pt;
-  line-height:125%;font-family:宋体"}]{#struct_0_86484_x7486_x1357986545}[/]{lang="EN-US" style="font-size:9.0pt;line-height:125%"}[秒]{style="font-size:9.0pt;
-  line-height:125%;font-family:宋体"}
+接口传输速率，单位为比特/秒
 
-[[tx-pps]{lang="EN-US" style="font-size:9.0pt;line-height:125%"}]{#struct_0_86484_x7486_x81296792}
+tx-pps
 
-[[接口传输速率，单位为包]{style="font-size:9.0pt;
-  line-height:125%;font-family:宋体"}]{#struct_0_86484_x7486_755124123}[/]{lang="EN-US" style="font-size:9.0pt;line-height:125%"}[秒]{style="font-size:9.0pt;
-  line-height:125%;font-family:宋体"}
+接口传输速率，单位为包/秒
 
-[ ]{lang="EN-US" style="font-size:9.0pt"}
+表1-4 比较操作符说明
 
-[]{#struct_0_86484_x7486_x1858431312}[[表1-4 ]{lang="EN-US"}[比较操作符说明]{style="font-family:
-黑体"}]{#_Ref323135406}
+比较操作符
 
-[]{#table_struct_0_x716033470}[[比较操作符]{style="font-size:9.0pt;
-   line-height:125%;font-family:宋体"}]{#struct_0_86484_x7486_x106869546}
+含义
 
-[[含义]{style="font-size:9.0pt;
-   line-height:125%;font-family:宋体"}]{#struct_0_86484_x7486_1937640277}
+eq
 
-[[eq]{lang="EN-US"}]{#struct_0_86484_x7486_1959990482}
+等于
 
-[[等于]{style="font-family:宋体"}]{#struct_0_86484_x7486_x1357921009}
+ge
 
-[[ge]{lang="EN-US"}]{#struct_0_86484_x7486_x958979803}
+大于等于
 
-[[大于等于]{style="font-family:宋体"}]{#struct_0_86484_x7486_1037247275}
+gt
 
-[[gt]{lang="EN-US"}]{#struct_0_86484_x7486_2075506573}
+大于
 
-[[大于]{style="font-family:宋体"}]{#struct_0_86484_x7486_x1149639604}
+le
 
-[[le]{lang="EN-US"}]{#struct_0_86484_x7486_x1864398648}
+小于等于
 
-[[小于等于]{style="font-family:宋体"}]{#struct_0_86484_x7486_1021958167}
+lt
 
-[[lt]{lang="EN-US"}]{#struct_0_86484_x7486_x1357593329}
+小于
 
-[[小于]{style="font-family:宋体"}]{#struct_0_86484_x7486_1376390997}
+ne
 
-[[ne]{lang="EN-US"}]{#struct_0_86484_x7486_1149646115}
+不等于
 
-[[不等于]{style="font-family:宋体"}]{#struct_0_86484_x7486_x675379215}
+【使用指导】
 
-[ ]{lang="EN-US" style="font-size:9.0pt"}
+接口事件中存在一个触发开关：
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1889146679}
+(1)配置该事件后，触发开关立即打开。
 
-[[接口事件中存在一个触发开关：]{style="font-family:宋体"}]{#struct_0_86484_x7486_x1357527793}
+(2)当指定接口上的指定报文的数目达到**start-op** *start-op* **start-val** *start-val*参数指定的条件时，触发监控策略执行一次（第一次执行），并关闭触发开关，但系统会继续监控接口事件。
 
-[[(1)[      ]{style="font:7.0pt "}]{lang="EN-US"}[配置该事件后，触发开关立即打开。]{style="font-family:宋体"}]{#struct_0_86484_x7486_x1357724401}
+(3)当满足**restart-op ***restart-op*** restart-val ***restart-val*参数指定的条件时，才重新开启触发开关。
 
-[[(2)[      ]{style="font:7.0pt "}]{lang="EN-US"}[当指定接口上的指定报文的数目达到]{lang="EN-US" style="font-family:宋体"}**[start-op]{lang="EN-US"}**[ *start-op* **start-val** *start-val*]{lang="EN-US"}]{#struct_0_86484_x7486_x1357658865}[参数指定的条件时，触发监控策略执行一次（第一次执行），并关闭触发开关，但系统会继续监控接口事件。]{lang="EN-US" style="font-family:宋体"}
+(4)如果指定接口上的指定报文的数目再次达到**start-op** *start-op* **start-val** *start-val*参数指定的条件时，则再次触发监控策略执行一次（第二次执行），并关闭触发开关，系统继续监控接口事件。
 
-[[(3)[      ]{style="font:7.0pt "}]{lang="EN-US"}[当满足]{lang="EN-US" style="font-family:宋体"}**[restart-op ]{lang="EN-US"}***[restart-op]{lang="EN-US"}***[ restart-val ]{lang="EN-US"}***[restart-val]{lang="EN-US"}*]{#struct_0_86484_x7486_x1265579086}[参数指定的条件时，才重新开启触发开关。]{lang="EN-US" style="font-family:宋体"}
+(5)如此循环。
 
-[[(4)[      ]{style="font:7.0pt "}]{lang="EN-US"}[如果指定接口上的指定报文的数目再次达到]{lang="EN-US" style="font-family:宋体"}**[start-op]{lang="EN-US"}**[ *start-op* **start-val** *start-val*]{lang="EN-US"}]{#struct_0_86484_x7486_x1357331185}[参数指定的条件时，则再次触发监控策略执行一次（第二次执行），并关闭触发开关，系统继续监控接口事件。]{lang="EN-US" style="font-family:宋体"}
+同一监控策略下，只能配置一个事件。如果多次执行**event**命令配置了不同事件，则最新配置并**commit**的生效。
 
-[[(5)[      ]{style="font:7.0pt "}]{lang="EN-US"}[如此循环。]{lang="EN-US" style="font-family:宋体"}]{#struct_0_86484_x7486_x1357265649}
+【举例】
 
-[[同一监控策略下，只能配置一个事件。如果多次执行]{style="font-family:宋体"}**[event]{lang="EN-US"}**]{#struct_0_86484_x7486_x189707545}[命令配置了不同事件，则最新配置并]{style="font-family:宋体"}**[commit]{lang="EN-US"}**[的生效。]{style="font-family:宋体"}
+\# 为CLI监控策略test配置监控事件：每60秒获取一次GigabitEthernet1/0/1接收到的错误包的个数。当错误包的个数大于1000时触发test执行并关闭触发开关，当错误包的个数小于50时重新开启触发开关，如此循环。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_86484_x7486_478126810}
+\<Sysname\> system-view
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_x556220968}[为]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[配置监控事件：每]{style="font-family:宋体"}[60]{lang="EN-US"}[秒获取一次]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[接收到的错误包的个数。当错误包的个数大于]{style="font-family:宋体"}[1000]{lang="EN-US"}[时触发]{style="font-family:宋体"}[test]{lang="EN-US"}[执行并关闭触发开关，当错误包的个数小于]{style="font-family:宋体"}[50]{lang="EN-US"}[时重新开启触发开关，如此循环。]{style="font-family:宋体"}
+Sysname rtm cli-policy test
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_86484_x7486_1315041760}
-
-[[\[Sysname\] rtm cli-policy test]{lang="EN-US"}]{#struct_0_86484_x7486_2108657808}
-
-[[\[Sysname-rtm-test\] event interface gigabitethernet 1/0/1 monitor-obj input-errors start-op gt start-val 1000 restart-op lt restart-val 50 interval 60]{lang="EN-US"}]{#struct_0_86484_x7486_1757771132}
-
-::: {#737186560 .myid}
-[]{#_Toc404797127}[]{#struct_0_86484_x7486_353546257}[]{#_Toc309396728}
+Sysname-rtm-test event interface gigabitethernet 1/0/1 monitor-obj input-errors start-op gt start-val 1000 restart-op lt restart-val 50 interval 60
 
 **EAA \-- EAA配置命令 \-- event process**
 
 ------------------------------------------------------------------------
 
-[**[event process]{lang="EN-US"}**]{#struct_0_86484_x7486_899151445}[命令用来配置进程事件。]{style="font-family:宋体"}
+**[event process**]命令用来配置进程事件。
 
-[**[undo event]{lang="EN-US"}**]{#struct_0_86484_x7486_1649362008}[命令用来取消当前的事件配置]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo event**]命令用来取消当前的事件配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_86484_x7486_208228463}
+【命令】
 
-[[集中式设备[/]{lang="EN-US"}分布式设备－独立运行模式]{style="font-family:宋体"}]{#struct_0_86484_x7486_x698342395}[/]{lang="EN-US"}[集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备：]{style="font-family:宋体"}
+集中式设备/分布式设备－独立运行模式/集中式IRF设备：
 
-[**[event process ]{lang="EN-US"}**[{ **exception** \| **restart** \| **shutdown** \| **start** } \[ **name** *process-name* \[ **instance** *instance-id* \] \] \[ **slot** *slot-number* \]]{lang="EN-US"}]{#struct_0_86484_x7486_793328804}
+**[event process **[{ **exception** \| **restart** \| **shutdown** \| **start** } [ **name** *process-name* [ **instance** *instance-id* ] ]  **slot** *slot-number* ]]
 
-[**[undo event]{lang="EN-US"}**]{#struct_0_86484_x7486_x2104647633}
+**[undo event**]
 
-[[分布式设备－]{style="font-family:宋体"}]{#struct_0_86484_x7486_1433490053}[IRF]{lang="EN-US"}[模式：]{style="font-family:宋体"}
+分布式设备－IRF模式：
 
-[**[event process ]{lang="EN-US"}**[{ **exception** \| **restart** \| **shutdown** \| **start** } \[ **name** *process-name* \[ **instance** *instance-id* \] \] \[ **chassis** *chassis-number* \[ **slot** *slot-number* \] \]]{lang="EN-US"}]{#struct_0_86484_x7486_208293999}
+**[event process **[{ **exception** \| **restart** \| **shutdown** \| **start** } [ **name** *process-name* [ **instance** *instance-id* ] ]  **chassis** *chassis-number* [ **slot** *slot-number*  ]]]
 
-[**[undo event]{lang="EN-US"}**]{#struct_0_86484_x7486_1158232418}
+**[undo event**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x544523236}
+【缺省情况】
 
-[[未配置任何进程事件。]{style="font-family:宋体"}]{#struct_0_86484_x7486_118660244}
+未配置任何进程事件。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x2093904394}
+【视图】
 
-[[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_1276955593}[监控策略视图]{style="font-family:宋体"}
+CLI监控策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1033530950}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_86484_x7486_208097391}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_86484_x7486_75232524}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1734216849}
+【参数】
 
-[**[exception]{lang="EN-US"}**]{#struct_0_86484_x7486_1970678826}**[：]{style="font-family:宋体"}**[监控进程异常事件。当进程发生异常时，触]{style="font-family:宋体"}[发]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策]{style="font-family:宋体"}[略。]{style="font-family:宋体"}
+**[exception**]**：**监控进程异常事件。当进程发生异常时，触发CLI监控策略。
 
-[**[restart]{lang="EN-US"}**]{#struct_0_86484_x7486_x1688956949}[：]{style="font-family:宋体"}[监控进程重启事件。当进程重启时，触]{style="font-family:宋体"}[发]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策]{style="font-family:宋体"}[略。]{style="font-family:宋体"}
+**[restart**]：监控进程重启事件。当进程重启时，触发CLI监控策略。
 
-[**[shutdown]{lang="EN-US"}**]{#struct_0_86484_x7486_1025089530}[：]{style="font-family:宋体"}[监控进程关闭事件。当进程关闭时，触]{style="font-family:宋体"}[发]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策]{style="font-family:宋体"}[略。]{style="font-family:宋体"}
+**[shutdown**]：监控进程关闭事件。当进程关闭时，触发CLI监控策略。
 
-[**[start]{lang="EN-US"}**]{#struct_0_86484_x7486_1985629524}[：]{style="font-family:宋体"}[监控进程启动事件。当进程启动时，触]{style="font-family:宋体"}[发]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策]{style="font-family:宋体"}[略。]{style="font-family:宋体"}
+**[start**]：监控进程启动事件。当进程启动时，触发CLI监控策略。
 
-[**[name]{lang="EN-US"}***[ process-name]{lang="EN-US"}*]{#struct_0_86484_x7486_121784049}[：监控的用户态]{style="font-family:宋体"}[进程的名称，可以是当前正在运行的进程也可以是没有运行的进程。]{style="font-family:宋体"}
+**[name*** process-name*]：监控的用户态进程的名称，可以是当前正在运行的进程也可以是没有运行的进程。
 
-[**[instance]{lang="EN-US"}***[ instance-id]{lang="EN-US"}*]{#struct_0_86484_x7486_1426654244}**[：]{style="font-family:宋体"}**[监控的]{style="font-family:宋体"}[用户态]{style="font-family:宋体"}[进程的实例的编号。不指定该参数时，表示进程下的任意实例异常、重启、关闭、启动都会触发事件，]{style="font-family:宋体"}[取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[。可以是当前不存在的实例号]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[instance*** instance-id*]**：**监控的用户态进程的实例的编号。不指定该参数时，表示进程下的任意实例异常、重启、关闭、启动都会触发事件，取值范围为0～4294967295。可以是当前不存在的实例号。
 
-[**[chassis ]{lang="EN-US"}**]{#struct_0_86484_x7486_2048155950}*[chassis-number]{lang="EN-US"}*[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。不指定该参数时，表示所有成员设备。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis **]*chassis-number*：表示设备在IRF中的成员编号。不指定该参数时，表示所有成员设备。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[chassis ]{lang="EN-US"}**]{#struct_0_86484_x7486_x1608561925}*[chassis-number]{lang="EN-US"}*[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或]{style="font-family:宋体"}[者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[对应]{style="font-family:宋体"}[的虚拟框号。不指定该参数时，表示所有成员设备[/]{lang="EN-US"}虚拟框。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[chassis **]*chassis-number*：表示设备在IRF中的成员编号或者PEX对应的虚拟框号。不指定该参数时，表示所有成员设备[/虚拟框。（分布式设备－]IRF模式）（支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**]{#struct_0_86484_x7486_208162927}[ *slot-number*]{lang="EN-US"}[：表示单板所在的槽位号。不指定该参数时，表示所有单板。（分布式设备－独立运行模式）]{style="font-family:宋体"}
+**[slot**] *slot-number*：表示单板所在的槽位号。不指定该参数时，表示所有单板。（分布式设备－独立运行模式）
 
-[**[slot]{lang="EN-US"}**]{#struct_0_86484_x7486_314381075}[ *slot-number*]{lang="EN-US"}[：表示单板所在的槽位号。不指定该参数时，表示所有单板。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot**] *slot-number*：表示单板所在的槽位号。不指定该参数时，表示所有单板。（分布式设备－IRF模式）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**]{#struct_0_86484_x7486_2065250791}[ *slot-number*]{lang="EN-US"}[：表示单板]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[所在的槽位号。不指定该参数时，表示所有单板]{style="font-family:宋体"}[/PEX]{lang="EN-US"}[。（分布式设备－]{style="font-family:宋体"}[IRF]{lang="EN-US"}[模式）]{style="font-family:宋体"}[（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot**] *slot-number*：表示单板/PEX所在的槽位号。不指定该参数时，表示所有单板/PEX。（分布式设备－IRF模式）（支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**]{#struct_0_86484_x7486_1245330169}*[ slot-number]{lang="EN-US"}*[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号。不指定该参数时，表示所有成员设备。（集中式]{style="font-family:宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}[（不支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot**]* slot-number*：表示设备在IRF中的成员编号。不指定该参数时，表示所有成员设备。（集中式IRF设备）（不支持IRF3的设备）
 
-[**[slot]{lang="EN-US"}**]{#struct_0_86484_x7486_x1607709957}*[ slot-number]{lang="EN-US"}*[：表示设备在]{style="font-family:宋体"}[IRF]{lang="EN-US"}[中的成员编号或]{style="font-family:宋体"}[者]{style="font-family:宋体"}[PEX]{lang="EN-US"}[的虚拟]{style="font-family:宋体"}[槽位号。不指定该参数时，表示所有成员设备[/]{lang="EN-US"}]{style="font-family:宋体"}[PEX]{lang="EN-US"}[。（集中式]{style="font-family:
-宋体"}[IRF]{lang="EN-US"}[设备）]{style="font-family:宋体"}[（支持]{style="font-family:宋体"}[IRF3]{lang="EN-US"}[的设备）]{style="font-family:宋体"}
+**[slot**]* slot-number*：表示设备在IRF中的成员编号或者PEX的虚拟槽位号。不指定该参数时，表示所有成员设备[/]PEX。（集中式IRF设备）（支持IRF3的设备）
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_86484_x7486_2024883191}
+【使用指导】
 
-[[配置该事件后，当指定进程异常、关闭、启动或重启时（可以为用户命令行触发的或者系统自动触发的），均触发]{style="font-family:宋体"}]{#struct_0_86484_x7486_1625785393}[监控策]{style="font-family:宋体"}[略执行。]{style="font-family:宋体"}
+配置该事件后，当指定进程异常、关闭、启动或重启时（可以为用户命令行触发的或者系统自动触发的），均触发监控策略执行。
 
-[[同一监控策略下，只能配置一个事件。如果多次执行]{style="font-family:宋体"}**[event]{lang="EN-US"}**]{#struct_0_86484_x7486_208490607}[命令配置了不同事件，则最新配置并]{style="font-family:宋体"}**[commit]{lang="EN-US"}**[的生效。]{style="font-family:宋体"}
+同一监控策略下，只能配置一个事件。如果多次执行**event**命令配置了不同事件，则最新配置并**commit**的生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x590982441}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_866467151}[为]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[配置监控事件：当进程]{style="font-family:宋体"}[snmpd]{lang="EN-US"}[重启时触发策略执行。]{style="font-family:宋体"}
+\# 为CLI监控策略test配置监控事件：当进程snmpd重启时触发策略执行。
 
-[[\<Sysname\>system-view]{lang="EN-US"}]{#struct_0_86484_x7486_264167884}
+\<Sysname\>system-view
 
-[[\[Sysname\] rtm cli-policy test]{lang="EN-US"}]{#struct_0_86484_x7486_x1915429774}
+Sysname rtm cli-policy test
 
-[[\[Sysname-rtm-test\] event process restart name snmpd]{lang="EN-US"}]{#struct_0_86484_x7486_1620001624}
-:::
-
-::: {#607682884 .myid}
-[]{#_Toc404797128}[]{#struct_0_86484_x7486_325625980}[]{#_Toc309396732}
+Sysname-rtm-test event process restart name snmpd
 
 **EAA \-- EAA配置命令 \-- event snmp oid**
 
 ------------------------------------------------------------------------
 
-[**[event snmp oid]{lang="EN-US"}**]{#struct_0_86484_x7486_1237798026}[命令用来配置]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[操作事件]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[event snmp oid**]命令用来配置SNMP操作事件。
 
-[**[undo event]{lang="EN-US"}**]{#struct_0_86484_x7486_x2037139052}[命令用来取消当前的事件配置]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo event**]命令用来取消当前的事件配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1097442993}
+【命令】
 
-[**[event snmp]{lang="EN-US"}**[ **oid** *oid* **monitor-obj** { **get** ]{lang="EN-US"}[\| **next** } **start-op** *start-op* **start-val** *start-val* **restart-op** *restart-op* **restart-val** *restart-val* \[ **interval** *interval* \]]{lang="EN-US"}]{#struct_0_86484_x7486_208556143}
+**[event snmp**[ **oid** *oid* **monitor-obj** [\| **next** } **start-op** *start-op* **start-val** *start-val* **restart-op** *restart-op* **restart-val** *restart-val* [ **interval** *interval* ]]]
 
-[**[undo event]{lang="EN-US"}**]{#struct_0_86484_x7486_x1784160340}
+**[undo event**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x56312493}
+【缺省情况】]
 
-[[未配置任何]{style="font-family:宋体"}[SNMP]{lang="EN-US"}]{#struct_0_86484_x7486_1917842221}[操作事件]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+未配置任何SNMP操作事件。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1079909097}
+【视图】
 
-[[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_x988079498}[监控策略视图]{style="font-family:宋体"}
+CLI监控策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1008145344}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x732075306}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_86484_x7486_2050071207}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1362273269}
+【参数】
 
-[**[oid]{lang="EN-US"}***[ oid]{lang="EN-US"}*]{#struct_0_86484_x7486_208359535}[：]{style="font-family:宋体"}[表示需要监控的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象的]{style="font-family:宋体"}[OID]{lang="EN-US"}[，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[256]{lang="EN-US"}[个字符的字符串。]{style="font-family:宋体"}
+**[oid*** oid*]：表示需要监控的MIB对象的OID，为1～256个字符的字符串。
 
-[**[monitor-obj]{lang="EN-US"}**[ { **get \| next** }]{lang="EN-US"}]{#struct_0_86484_x7486_1080799774}[：表示需要监控的]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[操作。]{style="font-family:宋体"}**[get]{lang="EN-US"}**[表示]{style="font-family:宋体"}[SNMP Get]{lang="EN-US"}[操作；]{style="font-family:宋体"}**[next]{lang="EN-US"}**[表示]{style="font-family:宋体"}[SNMP Get Next]{lang="EN-US"}[操作。]{style="font-family:宋体"}
+**[monitor-obj**[ { **get \| next** }]]：表示需要监控的SNMP操作。**get**表示SNMP Get操作；**next**表示SNMP Get Next操作。
 
-[**[start-op ]{lang="EN-US"}***[start-op]{lang="EN-US"}*]{#struct_0_86484_x7486_1258505947}[：]{style="font-family:宋体"}[触发监控策略执行的操]{style="font-family:宋体"}[作码，取值如]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:宋体"}1-4]{lang="EN-US"}](?823272471#_Ref323135406)[所示。]{style="font-family:宋体"}
+**[start-op ***start-op*]：触发监控策略执行的操作码，取值如[表]1-4(?823272471#_Ref323135406)所示。
 
-[*[start-val]{lang="EN-US"}*]{#struct_0_86484_x7486_208425071}[：]{style="font-family:宋体"}[触发监控策略执行的值。]{style="font-family:宋体"}[可以是]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[模块支持的所有类型，例如，数字、字符串等。因为支持多类型，帮助时统一提示为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[512]{lang="EN-US"}[个字符的字符串。如果该值中包含空格，需要在值的首末添加英文格式的引号，形如]{style="font-family:宋体"}["xxx xxx"]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[start-val*]：触发监控策略执行的值。可以是SNMP模块支持的所有类型，例如，数字、字符串等。因为支持多类型，帮助时统一提示为1～512个字符的字符串。如果该值中包含空格，需要在值的首末添加英文格式的引号，形如"xxx xxx"。
 
-[**[restart-op ]{lang="EN-US"}***[op]{lang="EN-US"}*]{#struct_0_86484_x7486_960719536}[：]{style="font-family:宋体"}[重新开启触发开关]{style="font-family:宋体"}[的操]{style="font-family:宋体"}[作码，取值如]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:
-宋体"}1-4]{lang="EN-US"}](?823272471#_Ref323135406)[所示。]{style="font-family:
-宋体"}
+**[restart-op ***op*]：重新开启触发开关的操作码，取值如[表]1-4(?823272471#_Ref323135406)所示。
 
-[*[restart-val]{lang="EN-US"}*]{#struct_0_86484_x7486_208228464}[：]{style="font-family:宋体"}[重新开启触发开关]{style="font-family:宋体"}[的监控对象的值]{style="font-family:宋体"}[。可以是]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[模块支持的所有类型，例如，数字、字符串等。因为支持多类型，帮助时统一提示为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[512]{lang="EN-US"}[个字符的字符串。如果该值中包含空格，需要在值的首末添加英文格式的引号，形如]{style="font-family:宋体"}["xxx xxx"]{lang="EN-US"}[。]{style="font-family:宋体"}
+*[restart-val*]：重新开启触发开关的监控对象的值。可以是SNMP模块支持的所有类型，例如，数字、字符串等。因为支持多类型，帮助时统一提示为1～512个字符的字符串。如果该值中包含空格，需要在值的首末添加英文格式的引号，形如"xxx xxx"。
 
-[**[interval ]{lang="EN-US"}***[interval]{lang="EN-US"}*]{#struct_0_86484_x7486_208294000}[：]{style="font-family:宋体"}[获取监控对象数据的时]{style="font-family:宋体"}[间间隔，取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[，单位为秒，缺省值为]{style="font-family:宋体"}[300]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+**[interval ***interval*]：获取监控对象数据的时间间隔，取值范围为1～4294967295，单位为秒，缺省值为300秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x2030212696}
+【使用指导】
 
-[[SNMP]{lang="EN-US"}]{#struct_0_86484_x7486_208097392}[操作]{style="font-family:宋体"}[事件中存在一个触发开关：]{style="font-family:宋体"}
+SNMP操作事件中存在一个触发开关：
 
-[[(1)[      ]{style="font:7.0pt "}]{lang="EN-US"}[配置该事件后，触发开关立即打开。]{style="font-family:宋体"}]{#struct_0_86484_x7486_208162928}
+(1)配置该事件后，触发开关立即打开。
 
-[[(2)[      ]{style="font:7.0pt "}]{lang="EN-US"}[此后系统按照用户设定的]{lang="EN-US" style="font-family:宋体"}**[interval ]{lang="EN-US"}***[interval]{lang="EN-US"}*]{#struct_0_86484_x7486_208490608}[值定时]{lang="EN-US" style="font-family:宋体"}[获取设备上某个]{lang="EN-US" style="font-family:宋体"}[OID]{lang="EN-US"}[对应节点的值，且该值达到]{lang="EN-US" style="font-family:宋体"}**[start-op]{lang="EN-US"}**[ *start-op* **start-val** *start-val*]{lang="EN-US"}[参数指定的条件时，触发监控策略执行一次（第一次执行），并关闭触发开关，但系统会继续监控]{lang="EN-US" style="font-family:宋体"}[SNMP]{lang="EN-US"}[操作]{lang="EN-US" style="font-family:宋体"}[事件。]{lang="EN-US" style="font-family:宋体"}
+(2)此后系统按照用户设定的**interval ***interval*值定时获取设备上某个OID对应节点的值，且该值达到**start-op** *start-op* **start-val** *start-val*参数指定的条件时，触发监控策略执行一次（第一次执行），并关闭触发开关，但系统会继续监控SNMP操作事件。
 
-[[(3)[      ]{style="font:7.0pt "}]{lang="EN-US"}[当满足]{lang="EN-US" style="font-family:宋体"}**[restart-op ]{lang="EN-US"}***[restart-op]{lang="EN-US"}***[ restart-val ]{lang="EN-US"}***[restart-val]{lang="EN-US"}*]{#struct_0_86484_x7486_208556144}[参数指定的条件时，才重新开启触发开关。]{lang="EN-US" style="font-family:宋体"}
+(3)当满足**restart-op ***restart-op*** restart-val ***restart-val*参数指定的条件时，才重新开启触发开关。
 
-[[(4)[      ]{style="font:7.0pt "}]{lang="EN-US"}[如果用户获取的]{lang="EN-US" style="font-family:宋体"}[MIB]{lang="EN-US"}]{#struct_0_86484_x7486_208359536}[对象的值再次达到]{lang="EN-US" style="font-family:宋体"}**[start-op]{lang="EN-US"}**[ *start-op* **start-val** *start-val*]{lang="EN-US"}[参数指定的条件时，则再次触发监控策略执行一次（第二次执行），并关闭触发开关，系统继续监控]{lang="EN-US" style="font-family:宋体"}[SNMP]{lang="EN-US"}[操作]{lang="EN-US" style="font-family:宋体"}[事件。]{lang="EN-US" style="font-family:宋体"}
+(4)如果用户获取的MIB对象的值再次达到**start-op** *start-op* **start-val** *start-val*参数指定的条件时，则再次触发监控策略执行一次（第二次执行），并关闭触发开关，系统继续监控SNMP操作事件。
 
-[[(5)[      ]{style="font:7.0pt "}]{lang="EN-US"}[如此循环。]{lang="EN-US" style="font-family:宋体"}]{#struct_0_86484_x7486_1080799773}
+(5)如此循环。
 
-[[同一监控策略下，只能配置一个事件。如果多次执行]{style="font-family:宋体"}**[event]{lang="EN-US"}**]{#struct_0_86484_x7486_1258964699}[命令配置了不同事件，则最新配置并]{style="font-family:宋体"}**[commit]{lang="EN-US"}**[的生效。]{style="font-family:宋体"}
+同一监控策略下，只能配置一个事件。如果多次执行**event**命令配置了不同事件，则最新配置并**commit**的生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_86484_x7486_208425072}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_960719533}[为]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[配置监控事件：系统每]{style="font-family:宋体"}[5]{lang="EN-US"}[秒检查]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象]{style="font-family:宋体"}[1.3.6.4.9.9.42.1.2.1.6.4]{lang="EN-US"}[的值，当该值等于]{style="font-family:宋体"}[1]{lang="EN-US"}[时触发执行监控策略并关闭监控开关，当等于]{style="font-family:宋体"}[2]{lang="EN-US"}[时重新启动监控。]{style="font-family:宋体"}
+\# 为CLI监控策略test配置监控事件：系统每5秒检查MIB对象1.3.6.4.9.9.42.1.2.1.6.4的值，当该值等于1时触发执行监控策略并关闭监控开关，当等于2时重新启动监控。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_86484_x7486_x1366062886}
+\<Sysname\> system-view
 
-[[\[Sysname\] rtm cli-policy snmp]{lang="EN-US"}]{#struct_0_86484_x7486_x1031774415}
+Sysname rtm cli-policy snmp
 
-[[\[Sysname-rtm-snmp\] event snmp oid 1.3.6.4.9.9.42.1.2.1.6.4 monitor-obj get start-op eq start-val 1 restart-op eq restart-val 2 interval 5]{lang="EN-US"}]{#struct_0_86484_x7486_x1687149628}
-:::
-
-::: {#321727526 .myid}
-[]{#_Toc404797129}[]{#struct_0_86484_x7486_x1396226582}[]{#_Toc309396733}
+Sysname-rtm-snmp event snmp oid 1.3.6.4.9.9.42.1.2.1.6.4 monitor-obj get start-op eq start-val 1 restart-op eq restart-val 2 interval 5
 
 **EAA \-- EAA配置命令 \-- event snmp-notification**
 
 ------------------------------------------------------------------------
 
-[**[event snmp-notification]{lang="EN-US"}**]{#struct_0_86484_x7486_1199430889}[命令用来配置]{style="font-family:宋体"}[SNMP Trap]{lang="EN-US"}[事件]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[event snmp-notification**]命令用来配置SNMP Trap事件。
 
-[**[undo event]{lang="EN-US"}**]{#struct_0_86484_x7486_x1774823375}[命令用来取消当前的事件配置]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo event**]命令用来取消当前的事件配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_86484_x7486_434180315}
+【命令】
 
-[**[event snmp-notification oid]{lang="EN-US"}**[ *oid* **oid-val** *oid-val* **op** *op* \[ **drop** \]]{lang="EN-US"}]{#struct_0_86484_x7486_x1454327603}
+**[event snmp-notification oid** *oid* **oid-val** *oid-val* **op** *op* [ **drop** ]]
 
-[**[undo event]{lang="EN-US"}**]{#struct_0_86484_x7486_208752752}
+**[undo event**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_86484_x7486_82036963}
+【缺省情况】
 
-[[未配置任何]{style="font-family:宋体"}[SNMP Trap]{lang="EN-US"}]{#struct_0_86484_x7486_x1459093974}[触发事件。]{style="font-family:宋体"}
+未配置任何SNMP Trap触发事件。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x458236249}
+【视图】
 
-[[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_1728263745}[监控策略视图]{style="font-family:宋体"}
+CLI监控策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_86484_x7486_704549366}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x1390693173}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_86484_x7486_205239755}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_86484_x7486_95020971}
+【参数】
 
-[**[oid]{lang="EN-US"}***[ oid]{lang="EN-US"}*]{#struct_0_86484_x7486_1239642854}[：]{style="font-family:宋体"}[Trap]{lang="EN-US"}[信息中携带的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象的]{style="font-family:宋体"}[OID]{lang="EN-US"}[，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[256]{lang="EN-US"}[个字符的字符串。]{style="font-family:宋体"}
+**[oid*** oid*]：Trap信息中携带的MIB对象的OID，为1～256个字符的字符串。
 
-[**[oid-val]{lang="EN-US"}***[ oid-val]{lang="EN-US"}*]{#struct_0_86484_x7486_208294001}[：]{style="font-family:宋体"}[Trap]{lang="EN-US"}[信息中携带的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象的值。可以是]{style="font-family:宋体"}[SNMP]{lang="EN-US"}[模块支持的所有类型，例如，数字、字符串等。因为支持多类型，帮助时统一提示为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[512]{lang="EN-US"}[个字符的字符串。如果该值中包含空格，需要在值的首末添加英文格式的引号，形如]{style="font-family:宋体"}["xxx xxx"]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[oid-val*** oid-val*]：Trap信息中携带的MIB对象的值。可以是SNMP模块支持的所有类型，例如，数字、字符串等。因为支持多类型，帮助时统一提示为1～512个字符的字符串。如果该值中包含空格，需要在值的首末添加英文格式的引号，形如"xxx xxx"。
 
-[**[op ]{lang="EN-US"}***[op]{lang="EN-US"}*]{#struct_0_86484_x7486_x2030212697}[：比较操作码，]{style="font-family:宋体"}[取值如]{style="font-family:宋体"}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:
-宋体"}1-4]{lang="EN-US"}](?823272471#_Ref323135406)[所示。]{style="font-family:
-宋体"}
+**[op ***op*]：比较操作码，取值如[表]1-4(?823272471#_Ref323135406)所示。
 
-[**[drop]{lang="EN-US"}**]{#struct_0_86484_x7486_x2038987423}[：表示匹配成功后丢弃该]{style="font-family:宋体"}[Trap]{lang="EN-US"}[信息。不指定该参数时，表示正常发送。]{style="font-family:宋体"}
+**[drop**]：表示匹配成功后丢弃该Trap信息。不指定该参数时，表示正常发送。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1481528198}
+【使用指导】
 
-[[配置该事件后，当系统生成一条]{style="font-family:宋体"}[Trap]{lang="EN-US"}]{#struct_0_86484_x7486_208097393}[，且]{style="font-family:宋体"}[Trap]{lang="EN-US"}[中携带的]{style="font-family:宋体"}[MIB]{lang="EN-US"}[对象（由]{style="font-family:宋体"}*[oid]{lang="EN-US"}*[参数指定）的值到达]{style="font-family:宋体"}**[oid-val]{lang="EN-US"}***[ oid-val ]{lang="EN-US"}***[op]{lang="EN-US"}***[ op]{lang="EN-US"}*[指定的条件]{style="font-family:宋体"}[时，触发监控策略执行。]{style="font-family:宋体"}
+配置该事件后，当系统生成一条Trap，且Trap中携带的MIB对象（由*oid*参数指定）的值到达**oid-val*** oid-val ***op*** op*指定的条件时，触发监控策略执行。
 
-[[同一监控策略下，只能配置一个事件。如果多次执行]{style="font-family:宋体"}**[event]{lang="EN-US"}**]{#struct_0_86484_x7486_75232522}[命令配置了不同事件，则最新配置并]{style="font-family:宋体"}**[commit]{lang="EN-US"}**[的生效。]{style="font-family:宋体"}
+同一监控策略下，只能配置一个事件。如果多次执行**event**命令配置了不同事件，则最新配置并**commit**的生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_86484_x7486_587205777}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_208425073}[为]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[配置]{style="font-family:宋体"}[SNMP Trap]{lang="EN-US"}[监控事件：当发生]{style="font-family:宋体"}[Trap]{lang="EN-US"}[的]{style="font-family:宋体"}[OID]{lang="EN-US"}[为]{style="font-family:宋体"}[1.3.6.1.4.1.318.2.8.3]{lang="EN-US"}[，并且其值为]{style="font-family:宋体"}[UPS:Returned from battery backup power]{lang="EN-US"}[时，触发策略，同时丢弃这个]{style="font-family:宋体"}[Trap]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 为CLI监控策略test配置SNMP Trap监控事件：当发生Trap的OID为1.3.6.1.4.1.318.2.8.3，并且其值为UPS:Returned from battery backup power时，触发策略，同时丢弃这个Trap。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_86484_x7486_960719534}
+\<Sysname\> system-view
 
-[[\[Sysname\] rtm cli-policy snmp-notification]{lang="EN-US"}]{#struct_0_86484_x7486_x1366062883}
+Sysname rtm cli-policy snmp-notification
 
-[[\[Sysname-rtm-snmp-notification\] event snmp-notification oid 1.3.6.1.4.1.318.2.8.3 oid-val "UPS:Returned from battery backup power" op eq drop]{lang="EN-US"}]{#struct_0_86484_x7486_x1435058942}
-:::
-
-::: {#-2035667460 .myid}
-[]{#_Toc404797130}[]{#struct_0_86484_x7486_1696588162}[]{#_Toc309396731}
+Sysname-rtm-snmp-notification event snmp-notification oid 1.3.6.1.4.1.318.2.8.3 oid-val "UPS:Returned from battery backup power" op eq drop
 
 **EAA \-- EAA配置命令 \-- event syslog**
 
 ------------------------------------------------------------------------
 
-[**[event syslog]{lang="EN-US"}**]{#struct_0_86484_x7486_1351856943}[命令用来配置日志事件。]{style="font-family:宋体"}
+**[event syslog**]命令用来配置日志事件。
 
-[**[undo event]{lang="EN-US"}**]{#struct_0_86484_x7486_208752753}[命令用来取消当前的事件配置]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo event**]命令用来取消当前的事件配置。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_86484_x7486_82036962}
+【命令】
 
-[**[event syslog ]{lang="EN-US"}[priority ]{lang="EN-US"}***[level]{lang="EN-US"}***[ msg]{lang="EN-US"}***[ msg ]{lang="EN-US"}***[occurs ]{lang="EN-US"}***[times]{lang="EN-US"}***[ period ]{lang="EN-US"}***[period]{lang="EN-US"}*]{#struct_0_86484_x7486_879558186}
+**[event syslog priority ***level*** msg*** msg ***occurs ***times*** period ***period*]
 
-[**[undo event]{lang="EN-US"}**]{#struct_0_86484_x7486_208818289}
+**[undo event**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x538672799}
+【缺省情况】
 
-[[未配置任何日志事件。]{style="font-family:宋体"}]{#struct_0_86484_x7486_x552154093}
+未配置任何日志事件。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1938104208}
+【视图】
 
-[[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_x544128368}[监控策略视图]{style="font-family:宋体"}
+CLI监控策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1246541216}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x1642022961}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x516070043}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1073009076}
+【参数】
 
-[**[priority]{lang="EN-US"}***[ level]{lang="EN-US"}*]{#struct_0_86484_x7486_x2121655399}[：表示需要匹配的日志的最低优先级，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[7]{lang="EN-US"}[或者]{style="font-family:
-宋体"}[all]{lang="EN-US"}[。对于数字表示的优先级，值越小，优先级越高。当]{style="font-family:宋体"}*[level]{lang="EN-US"}*[配置为]{style="font-family:宋体"}[3]{lang="EN-US"}[时，表示能匹配优先级为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[3]{lang="EN-US"}[的日志；]{style="font-family:宋体"}[all]{lang="EN-US"}[表示和任意优先级匹配。]{style="font-family:宋体"}
+**[priority*** level*]：表示需要匹配的日志的最低优先级，取值范围为0～7或者all。对于数字表示的优先级，值越小，优先级越高。当*level*配置为3时，表示能匹配优先级为0～3的日志；all表示和任意优先级匹配。
 
-[**[msg]{lang="EN-US"}***[ msg]{lang="EN-US"}*]{#struct_0_86484_x7486_208097394}[：正则表达式，表示需要匹配的日志的部分或全部，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[255]{lang="EN-US"}[个字符的字符串。该日志必须为]{style="font-family:宋体"}[H3C]{lang="EN-US"}[格式的日志，关于日志的详细介绍请参见"网络管理和监控配置指导"中的"信息中心"。]{style="font-family:宋体"}
+**[msg*** msg*]：正则表达式，表示需要匹配的日志的部分或全部，为1～255个字符的字符串。该日志必须为H3C格式的日志，关于日志的详细介绍请参见"网络管理和监控配置指导"中的"信息中心"。
 
-[**[occurs ]{lang="EN-US"}***[times]{lang="EN-US"}***[ period ]{lang="EN-US"}***[period]{lang="EN-US"}*]{#struct_0_86484_x7486_75232521}[：表示指定日志在]{style="font-family:宋体"}*[period]{lang="EN-US"}*[秒内发生了]{style="font-family:宋体"}*[times]{lang="EN-US"}*[次时触发监控策略执行。]{style="font-family:宋体"}*[times]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[32]{lang="EN-US"}[，]{style="font-family:宋体"}*[period]{lang="EN-US"}*[的取值范围为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[4294967295]{lang="EN-US"}[，单位为秒。]{style="font-family:宋体"}
+**[occurs ***times*** period ***period*]：表示指定日志在*period*秒内发生了*times*次时触发监控策略执行。*times*的取值范围为1～32，*period*的取值范围为1～4294967295，单位为秒。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1369109359}
+【使用指导】
 
-[[配置该事件后，当系统在指定时间段内生成指定规格的日志信息时触发监控策略执行。为了防止循环触发，]{style="font-family:宋体"}[RTM]{lang="EN-US"}]{#struct_0_86484_x7486_208162930}[模块产生的日志不会触发策略。]{style="font-family:宋体"}
+配置该事件后，当系统在指定时间段内生成指定规格的日志信息时触发监控策略执行。为了防止循环触发，RTM模块产生的日志不会触发策略。
 
-[[同一监控策略下，只能配置一个事件。如果多次执行]{style="font-family:宋体"}**[event]{lang="EN-US"}**]{#struct_0_86484_x7486_208490610}[命令配置了不同事件，则最新配置并]{style="font-family:宋体"}**[commit]{lang="EN-US"}**[的生效。]{style="font-family:宋体"}
+同一监控策略下，只能配置一个事件。如果多次执行**event**命令配置了不同事件，则最新配置并**commit**的生效。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1747669726}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_x580952828}[为]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[配置监控事件：当优先级高于或等于]{style="font-family:宋体"}[3]{lang="EN-US"}[、内容中含有]{style="font-family:宋体"}[down]{lang="EN-US"}[的日志在]{style="font-family:宋体"}[6]{lang="EN-US"}[秒内出现过]{style="font-family:宋体"}[5]{lang="EN-US"}[次时触发执行策略。]{style="font-family:宋体"}
+\# 为CLI监控策略test配置监控事件：当优先级高于或等于3、内容中含有down的日志在6秒内出现过5次时触发执行策略。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_86484_x7486_x1176871910}
+\<Sysname\> system-view
 
-[[\[Sysname\] rtm cli-policy syslog]{lang="EN-US"}]{#struct_0_86484_x7486_1802193613}
+Sysname rtm cli-policy syslog
 
-[[\[Sysname-rtm-syslog\] event syslog priority 3 msg down occurs 5 period 6]{lang="EN-US"}]{#struct_0_86484_x7486_1425387313}
-:::
-
-::: {#267419540 .myid}
-[]{#_Toc404797131}[]{#struct_0_86484_x7486_x207700119}
+Sysname-rtm-syslog event syslog priority 3 msg down occurs 5 period 6
 
 **EAA \-- EAA配置命令 \-- rtm cli-policy**
 
 ------------------------------------------------------------------------
 
-[**[rtm cli-policy]{lang="EN-US"}**]{#struct_0_86484_x7486_x1440091770}[命令用来创建]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略并进入]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略视图。]{style="font-family:宋体"}
+**[rtm cli-policy**]命令用来创建CLI监控策略并进入CLI监控策略视图。
 
-[**[undo rtm cli-policy]{lang="EN-US"}**]{#struct_0_86484_x7486_x1320184245}[命令来删除指定的]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略。]{style="font-family:宋体"}
+**[undo rtm cli-policy**]命令来删除指定的CLI监控策略。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_86484_x7486_208556146}
+【命令】
 
-[**[rtm cli-policy ]{lang="EN-US"}***[policy-name]{lang="EN-US"}*]{#struct_0_86484_x7486_x1784160335}
+**[rtm cli-policy ***policy-name*]
 
-[**[undo rtm cli-policy]{lang="EN-US"}***[ policy-name]{lang="EN-US"}*]{#struct_0_86484_x7486_703005786}
+**[undo rtm cli-policy*** policy-name*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x659513914}
+【缺省情况】
 
-[[未创建]{style="font-family:宋体"}[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_1542755479}[监控策略。]{style="font-family:宋体"}
+未创建CLI监控策略。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1697258084}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_86484_x7486_x1479255925}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_86484_x7486_629930192}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_86484_x7486_1814087148}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_86484_x7486_208359538}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1080799763}
+【参数】
 
-[*[policy-name]{lang="EN-US"}*]{#struct_0_86484_x7486_1258964698}[：]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略的名称。为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[policy-name*]：CLI监控策略的名称。为1～63个字符的字符串，区分大小写。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x2023861881}
+【使用指导】
 
-[[使用该命令用来创建]{style="font-family:宋体"}[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_647201514}[监控策略并进入]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略视图。在该视图下，用户可以通过命令行给]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略配置触发事件以及需要执行的动作。其中，触发事件只能定义一个，动作可以定义多个。当条件满足、事件被触发时，系统会按照动作序号由小到大顺序执行这些动作。监控动作在后台执行，用户可以通过查看日志信息了解策略的执行结果。]{style="font-family:宋体"}
+使用该命令用来创建CLI监控策略并进入CLI监控策略视图。在该视图下，用户可以通过命令行给CLI监控策略配置触发事件以及需要执行的动作。其中，触发事件只能定义一个，动作可以定义多个。当条件满足、事件被触发时，系统会按照动作序号由小到大顺序执行这些动作。监控动作在后台执行，用户可以通过查看日志信息了解策略的执行结果。
 
-[[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_1828222287}[监控策略配置完成后（即配置完触发事件以及需要执行的动作后），必须执行]{style="font-family:宋体"}**[commit]{lang="EN-US"}**[命令才能启用]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略，使配置的事件和动作生效。]{style="font-family:宋体"}
+CLI监控策略配置完成后（即配置完触发事件以及需要执行的动作后），必须执行**commit**命令才能启用CLI监控策略，使配置的事件和动作生效。
 
-[[多次执行该命令可以创建多个]{style="font-family:宋体"}[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_1845566800}[监控策略且数量没有限制。请尽量确保同时启用的策略间动作不要冲突，因为当系统同时执行多个策略，且不同策略间动作有冲突时，执行结果是随机的。]{style="font-family:宋体"}
+多次执行该命令可以创建多个CLI监控策略且数量没有限制。请尽量确保同时启用的策略间动作不要冲突，因为当系统同时执行多个策略，且不同策略间动作有冲突时，执行结果是随机的。
 
-[[如果同为]{style="font-family:宋体"}[TCL]{lang="EN-US"}]{#struct_0_86484_x7486_x28735599}[监控策略或者同为]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略，则策略名不能相同。如果策略类型不同，则名称可以相同。]{style="font-family:宋体"}
+如果同为TCL监控策略或者同为CLI监控策略，则策略名不能相同。如果策略类型不同，则名称可以相同。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x901018727}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_208425074}[创建]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[并进入]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略视图。]{style="font-family:宋体"}
+\# 创建CLI监控策略test并进入CLI监控策略视图。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_86484_x7486_960719531}
+\<Sysname\> system-view
 
-[\[Sysname\] rtm cli-policy test]{lang="EN-US"}
+Sysname rtm cli-policy test
 
-[[【相关命令】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1366062888}
+【相关命令】
 
-[[·[              ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}**[commit]{lang="EN-US"}**]{#struct_0_86484_x7486_x1482113109}
-:::
-
-::: {#417053394 .myid}
-[]{#_Toc404797132}[]{#struct_0_86484_x7486_x1918387750}[]{#_Toc309396725}[]{#_Toc307902149}
+·**commit**
 
 **EAA \-- EAA配置命令 \-- rtm environment**
 
 ------------------------------------------------------------------------
 
-[**[rtm environment]{lang="EN-US"}**]{#struct_0_86484_x7486_x298588545}[命令用来创建监控]{style="font-family:宋体"}[策略]{style="font-family:宋体"}[的环境变量。]{style="font-family:宋体"}
+**[rtm environment**]命令用来创建监控策略的环境变量。
 
-[**[undo rtm environment]{lang="EN-US"}**]{#struct_0_86484_x7486_1477083442}[命令来]{style="font-family:宋体"}[删除指定的]{style="font-family:宋体"}[环境变量。]{style="font-family:宋体"}
+**[undo rtm environment**]命令来删除指定的环境变量。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1141069402}
+【命令】
 
-[**[rtm environment ]{lang="EN-US"}***[var-name]{lang="EN-US"}***[ ]{lang="EN-US"}***[var-value]{lang="EN-US"}*]{#struct_0_86484_x7486_2011406291}
+**[rtm environment ***var-name******var-value*]
 
-[**[undo rtm environment ]{lang="EN-US"}***[var-name]{lang="EN-US"}*]{#struct_0_86484_x7486_208752754}
+**[undo rtm environment ***var-name*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_86484_x7486_82036969}
+【缺省情况】
 
-[[无用户自定义的环境变量，系统中支持一系列内部环境变量，不同事件支持的内部环境变量及其意义有所不同，请参见]{style="font-family:宋体"}]{#struct_0_86484_x7486_1688862250}[[[[表]{lang="EN-US"}]{lang="EN-US" style="font-family:
-宋体"}1-5]{lang="EN-US"}](?417053394#_Ref321835254)[。]{style="font-family:
-宋体"}
+无用户自定义的环境变量，系统中支持一系列内部环境变量，不同事件支持的内部环境变量及其意义有所不同，请参见 表1-5(?417053394#_Ref321835254)。
 
-[]{#struct_0_86484_x7486_1449823544}[[表1-5 ]{lang="EN-US"}[内部环境变量描述表]{style="font-family:
-黑体"}]{#_Ref321835254}
+表1-5 内部环境变量描述表
 
-[]{#table_struct_0_x713862014}[[事件]{style="font-family:黑体"}]{#struct_0_86484_x7486_x751972809}
-:::
+事件
 
-[[内部环境变量的名称]{style="font-family:黑体"}]{#struct_0_86484_x7486_1924860343}
+内部环境变量的名称
 
-[[描述]{style="font-family:黑体"}]{#struct_0_86484_x7486_1945645788}
+描述
 
-[[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_x300292661}
+CLI
 
-[[\_cmd]{lang="EN-US"}]{#struct_0_86484_x7486_208818290}
+\_cmd
 
-[[匹配上的命令]{style="font-family:宋体"}]{#struct_0_86484_x7486_1799979354}
+匹配上的命令
 
-[[SYSLOG]{lang="EN-US"}]{#struct_0_86484_x7486_x198754795}
+SYSLOG
 
-[[\_syslog_pattern]{lang="EN-US"}]{#struct_0_86484_x7486_x583665475}
+\_syslog_pattern
 
-[[匹配的日志信息的内容]{style="font-family:宋体"}]{#struct_0_86484_x7486_x192705483}
+匹配的日志信息的内容
 
-[[HOTPLUG]{lang="EN-US"}]{#struct_0_86484_x7486_x2092268511}
+HOTPLUG
 
-[[\_slot]{lang="EN-US"}]{#struct_0_86484_x7486_x992331449}
+\_slot
 
-[[发生热插拔的单板所在的槽位号]{style="font-family:宋体"}]{#struct_0_86484_x7486_208294003}
+发生热插拔的单板所在的槽位号
 
-[[\_subslot]{lang="EN-US"}]{#struct_0_86484_x7486_x2030212699}
+\_subslot
 
-[[发生热插拔的子卡所在的子槽位号]{style="font-family:宋体"}]{#struct_0_86484_x7486_208490611}
+发生热插拔的子卡所在的子槽位号
 
-[[INTERFACE]{lang="EN-US"}]{#struct_0_86484_x7486_1747669725}
+INTERFACE
 
-[[\_ifname]{lang="EN-US"}]{#struct_0_86484_x7486_208556147}
+\_ifname
 
-[[接口的名称]{style="font-family:宋体"}]{#struct_0_86484_x7486_x1784160336}
+接口的名称
 
-[[SNMP]{lang="EN-US"}]{#struct_0_86484_x7486_1106290313}
+SNMP
 
-[[\_oid]{lang="EN-US"}]{#struct_0_86484_x7486_x1549458389}
+\_oid
 
-[[SNMP]{lang="EN-US"}]{#struct_0_86484_x7486_986117140}[操作中携带的]{style="font-family:宋体"}[OID]{lang="EN-US"}
+SNMP操作中携带的OID
 
-[[\_oid_value]{lang="EN-US"}]{#struct_0_86484_x7486_1843586640}
+\_oid_value
 
-[[OID]{lang="EN-US"}]{#struct_0_86484_x7486_208425075}[对应节点的值]{style="font-family:宋体"}
+OID对应节点的值
 
-[[SNMP TRAP]{lang="EN-US"}]{#struct_0_86484_x7486_960719532}
+SNMP TRAP
 
-[[\_oid]{lang="EN-US"}]{#struct_0_86484_x7486_208752755}
+\_oid
 
-[[SNMP Trap]{lang="EN-US"}]{#struct_0_86484_x7486_82036968}[信息中携带的]{style="font-family:宋体"}[OID]{lang="EN-US"}
+SNMP Trap信息中携带的OID
 
-[[PROCESS]{lang="EN-US"}]{#struct_0_86484_x7486_x267452886}
+PROCESS
 
-[[\_process_name]{lang="EN-US"}]{#struct_0_86484_x7486_x1561720190}
+\_process_name
 
-[[进程的名称]{style="font-family:宋体"}]{#struct_0_86484_x7486_1987913917}
+进程的名称
 
-[[公共环境变量]{style="font-family:宋体"}]{#struct_0_86484_x7486_208818291}
+公共环境变量
 
-[[\_event_id]{lang="EN-US"}]{#struct_0_86484_x7486_1799979353}
+\_event_id
 
-[[事件的]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_86484_x7486_x198427115}
+事件的ID
 
-[[\_event_type]{lang="EN-US"}]{#struct_0_86484_x7486_986094271}
+\_event_type
 
-[[事件的类型]{style="font-family:宋体"}]{#struct_0_86484_x7486_1451973620}
+事件的类型
 
-[[\_event_type_string]{lang="EN-US"}]{#struct_0_86484_x7486_208228468}
+\_event_type_string
 
-[[事件类型字符串，用于对事件类型进行详细描述]{style="font-family:宋体"}]{#struct_0_86484_x7486_x95601373}
+事件类型字符串，用于对事件类型进行详细描述
 
-[[\_event_time]{lang="EN-US"}]{#struct_0_86484_x7486_877827029}
+\_event_time
 
-[[事件发生的时间]{style="font-family:宋体"}]{#struct_0_86484_x7486_274353880}
+事件发生的时间
 
-[[\_event_severity]{lang="EN-US"}]{#struct_0_86484_x7486_x1879057329}
+\_event_severity
 
-[[事件的严重级别]{style="font-family:宋体"}]{#struct_0_86484_x7486_208294004}
+事件的严重级别
 
-[ ]{lang="EN-US"}
+【视图】
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x2030212700}
+系统视图
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_86484_x7486_x1278882713}
+【缺省用户角色】
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1161722414}
+network-admin
 
-[[network-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x416007006}
+mdc-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x290109868}
+【参数】
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1445000151}
+*[var-name*]：环境变量的名称，为1～63个字符的字符串，只能包含数字、字母和下划线，并且不能以下划线开头。
 
-[*[var-name]{lang="EN-US"}*]{#struct_0_86484_x7486_225462086}[：]{style="font-family:宋体"}[环境变量的名称，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，只能包含数字、字母和下划线，并且不能以下划线开头。]{style="font-family:宋体"}
+*[var-value*]：环境变量的值。
 
-[*[var-value]{lang="EN-US"}*]{#struct_0_86484_x7486_208097396}[：环境变量的值。]{style="font-family:宋体"}
+【使用指导】
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_86484_x7486_75232519}
+在配置监控策略的动作时，我们可以在应该输入参数的地方输入"\$环境变量名"，表示此处需要引用环境变量值。系统在运行监控策略的时候，会自动用环境变量值去替代"\$环境变量名"。
 
-[[在配置监控策略的动作时，我们可以在应该输入参数的地方输入"]{style="font-family:宋体"}[\$]{lang="EN-US"}]{#struct_0_86484_x7486_x1332373514}[环境变量名"，表示此处需要引用环境变量值。系统在运行监控策略的时候，会自动用环境变量值去替代"]{style="font-family:宋体"}[\$]{lang="EN-US"}[环境变量名"。]{style="font-family:宋体"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_86484_x7486_669839776}
+\# 设置环境变量if，其值为interface。
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_x401756379}[设置环境变量]{style="font-family:宋体"}[if]{lang="EN-US"}[，其值为]{style="font-family:宋体"}[interface]{lang="EN-US"}[。]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_86484_x7486_x834282822}
-
-[\[Sysname\] rtm environment if interface]{lang="EN-US"}
-
-::: {#1477639925 .myid}
-[]{#_Toc404797133}[]{#struct_0_86484_x7486_1157810981}[]{#_Toc309396739}
+Sysname rtm environment if interface
 
 **EAA \-- EAA配置命令 \-- rtm scheduler suspend**
 
 ------------------------------------------------------------------------
 
-[**[rt]{lang="EN-US"}[m scheduler suspend]{lang="EN-US"}**]{#struct_0_86484_x7486_755704849}[命令用来暂停运行所有的]{style="font-family:宋体"}[监控]{style="font-family:宋体"}[策略，包]{style="font-family:宋体"}[括所有]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略和]{style="font-family:宋体"}[TCL]{lang="EN-US"}[监控策]{style="font-family:宋体"}[略。]{style="font-family:宋体"}
+**[rtm scheduler suspend**]命令用来暂停运行所有的监控策略，包括所有CLI监控策略和TCL监控策略。
 
-[**[undo rtm scheduler suspend]{lang="EN-US"}**]{#struct_0_86484_x7486_883011691}[命令用]{style="font-family:
-宋体"}[来]{style="font-family:宋体"}[恢复运行监控策略。]{style="font-family:
-宋体"}
+**[undo rtm scheduler suspend**]命令用来恢复运行监控策略。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_86484_x7486_208162932}
+【命令】
 
-[**[rt]{lang="EN-US"}[m scheduler suspend]{lang="EN-US"}**]{#struct_0_86484_x7486_x1093321996}
+**[rtm scheduler suspend**]
 
-[**[undo rt]{lang="EN-US"}[m scheduler suspend]{lang="EN-US"}**]{#struct_0_86484_x7486_300119931}
+**[undo rtm scheduler suspend**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1349072061}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_86484_x7486_x442082650}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1598433071}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_86484_x7486_325122646}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_86484_x7486_878207145}
+mdc-admin
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x710474344}
+【使用指导】
 
-[[本命令是用来暂停所有已经配置但还未被触发的策略的，不能暂停处于]{style="font-family:宋体"}[active]{lang="EN-US"}]{#struct_0_86484_x7486_89957644}[状态的策略。]{style="font-family:宋体"}
+本命令是用来暂停所有已经配置但还未被触发的策略的，不能暂停处于active状态的策略。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_86484_x7486_208490612}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_1747669724}[暂停所有的]{style="font-family:宋体"}[监控]{style="font-family:
-宋体"}[策略]{style="font-family:宋体"}[。]{style="font-family:
-宋体"}
+\# 暂停所有的监控策略。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_86484_x7486_x580821756}
+\<Sysname\> system-view
 
-[[\[Sysname\] rtm scheduler suspend]{lang="EN-US"}]{#struct_0_86484_x7486_1143781893}
-:::
-
-::: {#1338959532 .myid}
-[]{#_Toc404797134}[]{#struct_0_86484_x7486_914077705}[]{#_Toc309752976}[]{#_Toc307475479}
+Sysname rtm scheduler suspend
 
 **EAA \-- EAA配置命令 \-- rtm tcl-policy**
 
 ------------------------------------------------------------------------
 
-[**[rtm tcl-policy]{lang="EN-US"}**]{#struct_0_86484_x7486_x2089018757}[命令用来创建并启用]{style="font-family:宋体"}[TCL]{lang="EN-US"}[监控策略，并将它和]{style="font-family:宋体"}[TCL]{lang="EN-US"}[脚本绑定。]{style="font-family:宋体"}
+**[rtm tcl-policy**]命令用来创建并启用TCL监控策略，并将它和TCL脚本绑定。
 
-[**[undo rtm tcl-policy]{lang="EN-US"}**]{#struct_0_86484_x7486_x433420633}[命令来删除]{style="font-family:宋体"}[TCL]{lang="EN-US"}[监控策略。]{style="font-family:宋体"}
+**[undo rtm tcl-policy**]命令来删除TCL监控策略。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1620566676}
+【命令】
 
-[**[rtm tcl-policy]{lang="EN-US"}***[ policy-name tcl-filename]{lang="EN-US"}*]{#struct_0_86484_x7486_742279683}
+**[rtm tcl-policy*** policy-name tcl-filename*]
 
-[**[undo rtm tcl-policy ]{lang="EN-US"}***[policy-name]{lang="EN-US"}*]{#struct_0_86484_x7486_208556148}
+**[undo rtm tcl-policy ***policy-name*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1784160345}
+【缺省情况】
 
-[[未创建]{style="font-family:宋体"}[TCL]{lang="EN-US"}]{#struct_0_86484_x7486_703202394}[监控策略。]{style="font-family:宋体"}
+未创建TCL监控策略。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x20287436}
+【视图】
 
-[[系统视图]{style="font-family:宋体"}]{#struct_0_86484_x7486_325895248}
+系统视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x484560326}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x75086647}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x418367639}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x834910502}
+【参数】
 
-[*[policy-name]{lang="EN-US"}*]{#struct_0_86484_x7486_322036472}[：]{style="font-family:宋体"}[TCL]{lang="EN-US"}[监控策略的名称。为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+*[policy-name*]：TCL监控策略的名称。为1～63个字符的字符串，区分大小写。
 
-[*[tcl-filename]{lang="EN-US"}*]{#struct_0_86484_x7486_208359540}[：]{style="font-family:宋体"}[TCL]{lang="EN-US"}[脚本文件的名称。文件名区分大小写，扩展名必须为"]{style="font-family:宋体"}[.tcl]{lang="EN-US"}["，扩展名不区分大小写，且必须为设备存储介]{style="font-family:宋体"}[质（]{style="font-family:宋体"}[Flash]{lang="EN-US"}[或者]{style="font-family:宋体"}[CF]{lang="EN-US"}[卡）上存]{style="font-family:宋体"}[在的文件。]{style="font-family:宋体"}
+*[tcl-filename*]：TCL脚本文件的名称。文件名区分大小写，扩展名必须为".tcl"，扩展名不区分大小写，且必须为设备存储介质（Flash或者CF卡）上存在的文件。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_86484_x7486_271495707}
+【使用指导】
 
-[[使用该命令用来创建并启用一个]{style="font-family:宋体"}[TCL]{lang="EN-US"}]{#struct_0_86484_x7486_x1055445168}[监控策略，策略的具体内容由绑定的]{style="font-family:宋体"}[TCL]{lang="EN-US"}[脚本来定义。脚本中会定义策略的触发事件、事件触发时要执行的操作、执行操作需要的角色、策略的运行时间等参数。]{style="font-family:宋体"}
+使用该命令用来创建并启用一个TCL监控策略，策略的具体内容由绑定的TCL脚本来定义。脚本中会定义策略的触发事件、事件触发时要执行的操作、执行操作需要的角色、策略的运行时间等参数。
 
-[[TCL]{lang="EN-US"}]{#struct_0_86484_x7486_1612353060}[监控策略启用后，不允许修改]{style="font-family:宋体"}[TCL]{lang="EN-US"}[脚本。如需修改，请先停用]{style="font-family:宋体"}[TCL]{lang="EN-US"}[监控策略，修改后，再启用]{style="font-family:宋体"}[TCL]{lang="EN-US"}[监控策略。否则，]{style="font-family:宋体"}[TCL]{lang="EN-US"}[监控策略将不能运行。]{style="font-family:宋体"}
+TCL监控策略启用后，不允许修改TCL脚本。如需修改，请先停用TCL监控策略，修改后，再启用TCL监控策略。否则，TCL监控策略将不能运行。
 
-[[TCL]{lang="EN-US"}]{#struct_0_86484_x7486_485262286}[监控策略创建后，如果需要绑定另外一个]{style="font-family:宋体"}[TCL]{lang="EN-US"}[脚本，请先删除该]{style="font-family:宋体"}[TCL]{lang="EN-US"}[监控策略，再重新创建并绑定。]{style="font-family:宋体"}
+TCL监控策略创建后，如果需要绑定另外一个TCL脚本，请先删除该TCL监控策略，再重新创建并绑定。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1007986552}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_x916059138}[创建并启用]{style="font-family:宋体"}[TCL]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[，并将它和脚本]{style="font-family:宋体"}[test.tcl]{lang="EN-US"}[绑定。]{style="font-family:宋体"}
+\# 创建并启用TCL监控策略test，并将它和脚本test.tcl绑定。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_86484_x7486_1808466423}
+\<Sysname\> system-view
 
-[\[Sysname\] rtm tcl-policy test test.tcl]{lang="EN-US"}
-:::
-
-::: {#838869868 .myid}
-[]{#_Toc404797135}[]{#struct_0_86484_x7486_1738738846}
+Sysname rtm tcl-policy test test.tcl
 
 **EAA \-- EAA配置命令 \-- running-time**
 
 ------------------------------------------------------------------------
 
-[**[running-time]{lang="EN-US"}**]{#struct_0_86484_x7486_208752756}[命令用]{lang="EN-US" style="font-family:宋体"}[来]{lang="EN-US" style="font-family:
-宋体"}[配置事件发生时]{lang="EN-US" style="font-family:宋体"}[CLI]{lang="EN-US"}[监控]{style="font-family:宋体"}[策略的运行时间]{lang="EN-US" style="font-family:宋体"}[。]{lang="EN-US" style="font-family:宋体"}
+**[running-time**]命令用来配置事件发生时CLI监控策略的运行时间。
 
-[**[undo running-time]{lang="EN-US"}**]{#struct_0_86484_x7486_82036967}[命令用来恢复缺省情况]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo running-time**]命令用来恢复缺省情况。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x694419926}
+【命令】
 
-[**[running-time]{lang="EN-US"}***[ time]{lang="EN-US"}*]{#struct_0_86484_x7486_1141836979}
+**[running-time*** time*]
 
-[**[undo running-time]{lang="EN-US"}**]{#struct_0_86484_x7486_695043889}
+**[undo running-time**]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x688280599}
+【缺省情况】
 
-[[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_2130542764}[监控策略的运行时间为]{style="font-family:宋体"}[20]{lang="EN-US"}[秒]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+CLI监控策略的运行时间为20秒。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1683033611}
+【视图】
 
-[[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_1730117030}[监控策略视图]{style="font-family:宋体"}
+CLI监控策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_86484_x7486_235124523}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_86484_x7486_2130608300}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x1716015692}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_86484_x7486_119343395}
+【参数】
 
-[*[time]{lang="EN-US"}*]{#struct_0_86484_x7486_2130411692}[：]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略的运行时间，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[31536000]{lang="EN-US"}[，单位为秒。取值为]{style="font-family:宋体"}[0]{lang="EN-US"}[时，表示策略可以永久运行下去。]{style="font-family:宋体"}
+*[time*]：CLI监控策略的运行时间，取值范围为0～31536000，单位为秒。取值为0时，表示策略可以永久运行下去。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_86484_x7486_679253116}
+【使用指导】
 
-[[当条件满足，监控策略被触发时，系统会开始计时。当运行时间到，即便策略还没有执行完，也会立即停止执行。该命令用于限制策略的运行时间，以免策略长时间运行占用系统资源。而策略是否会触发以及停止后是否会被再次触发则由]{style="font-family:宋体"}**[event]{lang="EN-US"}**]{#struct_0_86484_x7486_2130673836}[配置决定。]{style="font-family:宋体"}
+当条件满足，监控策略被触发时，系统会开始计时。当运行时间到，即便策略还没有执行完，也会立即停止执行。该命令用于限制策略的运行时间，以免策略长时间运行占用系统资源。而策略是否会触发以及停止后是否会被再次触发则由**event**配置决定。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1454865782}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_2131067052}[配置]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[的运行时间为]{style="font-family:宋体"}[60]{lang="EN-US"}[秒。]{style="font-family:宋体"}
+\# 配置CLI监控策略test的运行时间为60秒。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_86484_x7486_1449503438}
+\<Sysname\> system-view
 
-[[\[Sysname\] rtm cli-policy test]{lang="EN-US"}]{#struct_0_86484_x7486_1591791255}
+Sysname rtm cli-policy test
 
-[[\[Sysname-rtm-test\] running-time 60]{lang="EN-US"}]{#struct_0_86484_x7486_1233052587}
-:::
-
-::: {#1580969545 .myid}
-[]{#_Toc404797136}[]{#struct_0_86484_x7486_963051081}
+Sysname-rtm-test running-time 60
 
 **EAA \-- EAA配置命令 \-- user-role**
 
 ------------------------------------------------------------------------
 
-[**[user-role]{lang="EN-US"}**]{#struct_0_86484_x7486_x1482345826}[命令用]{lang="EN-US" style="font-family:宋体"}[来]{lang="EN-US" style="font-family:宋体"}[配置执行]{lang="EN-US" style="font-family:
-宋体"}[CLI]{lang="EN-US"}[监控]{style="font-family:宋体"}[策略]{lang="EN-US" style="font-family:宋体"}[时]{style="font-family:宋体"}[使用的]{lang="EN-US" style="font-family:宋体"}[用户]{style="font-family:宋体"}[角色]{lang="EN-US" style="font-family:宋体"}[。]{lang="EN-US" style="font-family:
-宋体"}
+**[user-role**]命令用来配置执行CLI监控策略时使用的用户角色。
 
-[**[undo user-role]{lang="EN-US"}**]{#struct_0_86484_x7486_1264038451}[命令用来删除已经配置的指定用户角色]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[undo user-role**]命令用来删除已经配置的指定用户角色。
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x588796169}
+【命令】
 
-[**[user-role ]{lang="EN-US"}***[role-name]{lang="EN-US"}*]{#struct_0_86484_x7486_2099260996}
+**[user-role ***role-name*]
 
-[**[undo user-role ]{lang="EN-US"}***[role-name]{lang="EN-US"}*]{#struct_0_86484_x7486_2131132588}
+**[undo user-role ***role-name*]
 
-[[【缺省情况】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x892669577}
+【缺省情况】
 
-[[执行]{style="font-family:宋体"}[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_x1741222667}[监控策略时使用的用户角色为创建该策略的用户]{style="font-family:宋体"}[的角色。]{style="font-family:
-宋体"}
+执行CLI监控策略时使用的用户角色为创建该策略的用户的角色。
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1538431926}
+【视图】
 
-[[CLI]{lang="EN-US"}]{#struct_0_86484_x7486_x1775919107}[监控策略视图]{style="font-family:宋体"}
+CLI监控策略视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_86484_x7486_392688119}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_86484_x7486_1054252680}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x61719531}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_86484_x7486_x1224921111}
+【参数】
 
-[*[role-name]{lang="EN-US"}*]{#struct_0_86484_x7486_265177251}[：执行]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略时使用的用户角色，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符。必须为设备支持的用户角色。]{style="font-family:宋体"}
+*[role-name*]：执行CLI监控策略时使用的用户角色，为1～63个字符。必须为设备支持的用户角色。
 
-[[【使用指导】]{style="font-family:黑体"}]{#struct_0_86484_x7486_2130542765}
+【使用指导】
 
-[[本命令用来指定执行监控策略的用户角色。用户角色中定义了允许用户操作哪些系统功能以及资源对象，设备支持的每条命令都有缺省用户角色，如果监控策略中指定的用户角色权限比命令行的缺省用户角色的权限小，则不能执行该命令以及该命令后面的所有动作。如果指定的用户角色不存在，则监控策略不能执行。如果给某个监控策略配置了多个用户角色，则使用这些用户角色权限的并集去执行该策略。例如，给某策略配置了用户角色]{style="font-family:宋体"}[A]{lang="EN-US"}]{#struct_0_86484_x7486_x1682968075}[和]{style="font-family:宋体"}[B]{lang="EN-US"}[，如果策略中的动作是角色]{style="font-family:宋体"}[A]{lang="EN-US"}[或者]{style="font-family:宋体"}[B]{lang="EN-US"}[允许执行的，则策略可以执行；如果策略中存在角色]{style="font-family:宋体"}[A]{lang="EN-US"}[和]{style="font-family:宋体"}[B]{lang="EN-US"}[都不能执行的命令，则该命令以及该命令后面的所有动作都不能执行。关于用户角色的详细描述请参见"基础配置指导"中的"]{style="font-family:
-宋体"}[RBAC]{lang="EN-US"}["。]{style="font-family:宋体"}
+本命令用来指定执行监控策略的用户角色。用户角色中定义了允许用户操作哪些系统功能以及资源对象，设备支持的每条命令都有缺省用户角色，如果监控策略中指定的用户角色权限比命令行的缺省用户角色的权限小，则不能执行该命令以及该命令后面的所有动作。如果指定的用户角色不存在，则监控策略不能执行。如果给某个监控策略配置了多个用户角色，则使用这些用户角色权限的并集去执行该策略。例如，给某策略配置了用户角色A和B，如果策略中的动作是角色A或者B允许执行的，则策略可以执行；如果策略中存在角色A和B都不能执行的命令，则该命令以及该命令后面的所有动作都不能执行。关于用户角色的详细描述请参见"基础配置指导"中的"RBAC"。
 
-[[同一监控策略下可配置多个用户角色，最多可以配置]{style="font-family:宋体"}[64]{lang="EN-US"}]{#struct_0_86484_x7486_x1629023770}[个有效用户角色，]{style="font-family:宋体"}[超过该上限后，新配置的用户角色即便]{style="font-family:宋体"}**[commit]{lang="EN-US"}**[也不会生效。]{style="font-family:宋体"}
+同一监控策略下可配置多个用户角色，最多可以配置64个有效用户角色，超过该上限后，新配置的用户角色即便**commit**也不会生效。
 
-[[安全日志管理员角色与其它用户角色互斥：为监控策略配置安全日志管理员角色后，系统会自动删除当前配置的其它用户角色；反之亦然。]{style="font-family:宋体"}]{#struct_0_86484_x7486_2016593510}
+安全日志管理员角色与其它用户角色互斥：为监控策略配置安全日志管理员角色后，系统会自动删除当前配置的其它用户角色；反之亦然。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_86484_x7486_1296620299}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_86484_x7486_64444530}[配置执行]{style="font-family:宋体"}[CLI]{lang="EN-US"}[监控策略]{style="font-family:宋体"}[test]{lang="EN-US"}[时使用的用户角色为]{style="font-family:宋体"}[network-admin]{lang="EN-US"}[和]{style="font-family:宋体"}[admin]{lang="EN-US"}[。]{style="font-family:宋体"}
+\# 配置执行CLI监控策略test时使用的用户角色为network-admin和admin。
 
-[[\<Sysname\> system-view]{lang="EN-US"}]{#struct_0_86484_x7486_580763285}
+\<Sysname\> system-view
 
-[[\[Sysname\] rtm cli-policy test]{lang="EN-US"}]{#struct_0_86484_x7486_1904880249}
+Sysname rtm cli-policy test
 
-[[\[Sysname-rtm-test\] user-role network-admin]{lang="EN-US"}]{#struct_0_86484_x7486_x89709850}
+Sysname-rtm-test user-role network-admin
 
-[[\[Sysname-rtm-test\] user-role admin]{lang="EN-US"}]{#struct_0_86484_x7486_1958576233}
-:::
+Sysname-rtm-test user-role admin

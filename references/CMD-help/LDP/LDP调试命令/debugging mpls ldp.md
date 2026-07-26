@@ -1,1059 +1,997 @@
-::: {#-1296451632 .myid}
-[]{#_Toc404790512}[]{#struct_0_10226_54647_x1233930428}[]{#_Toc131060009}
 
 **LDP \-- LDP调试命令 \-- debugging mpls ldp**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10226_54647_1288062661}
+【命令】
 
-[**[debugging mpls ldp ]{lang="EN-US"}**[{ **all** \| **error** \| **event** \| **process** \[ { **ipv4** \| **ipv6** } \[ **prefix-list** *prefix-list-name* \] \] \| **socket** \| **timer** }]{lang="EN-US"}]{#struct_0_10226_54647_953257538}
+**[debugging mpls ldp **[{ **all** \| **error** \| **event** \| **process** [ { **ipv4** \| **ipv6** } [ **prefix-list** *prefix-list-name* ] ] \| **socket** \| **timer** }]]
 
-[**[undo debugging mpls ldp ]{lang="EN-US"}**[{ **all** \| **error** \| **event** \| **process** ** **\[ { **ipv4** \| **ipv6** } \| **socket** \| **timer** } \] }]{lang="EN-US"}]{#struct_0_10226_54647_x2077103216}
+**[undo debugging mpls ldp **[{ **all** \| **error** \| **event** \| **process** ** **[ { **ipv4** \| **ipv6** } \| **socket** \| **timer** } ] }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10226_54647_169105329}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_10226_54647_166853332}
+用户视图
 
-[[【缺省级别】]{style="font-family:黑体"}]{#struct_0_10226_54647_1137160443}
+【缺省级别】
 
-[[1]{lang="EN-US"}]{#struct_0_10226_54647_1084953856}[：监控级]{style="font-family:宋体"}
+1：监控级
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10226_54647_x1724186187}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_10226_54647_722804444}[：表示]{style="font-family:宋体"}[LDP]{lang="EN-US"}[的所有调试信息开关。]{style="font-family:宋体"}
+**[all**]：表示LDP的所有调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_10226_54647_1623803890}[：表示]{style="font-family:宋体"}[LDP]{lang="EN-US"}[的错误调试信息开关。]{style="font-family:宋体"}
+**[error**]：表示LDP的错误调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_10226_54647_x1233733820}[：表示]{style="font-family:宋体"}[LDP]{lang="EN-US"}[的事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示LDP的事件调试信息开关。
 
-[**[process]{lang="EN-US"}**]{#struct_0_10226_54647_2058677153}[：表示]{style="font-family:宋体"}[LDP]{lang="EN-US"}[创建]{style="font-family:宋体"}[LSP]{lang="EN-US"}[过程调试信息开关。如果指定参数]{style="font-family:宋体"}**[ipv4]{lang="EN-US"}[，]{style="font-family:宋体"}**[则表示创建]{style="font-family:宋体"}[IPv4 LSP]{lang="EN-US"}[的过程调试信息开关；如果指定参数]{style="font-family:宋体"}**[ipv6]{lang="EN-US"}[，]{style="font-family:宋体"}**[则表示创建]{style="font-family:宋体"}[IPv6 LSP]{lang="EN-US"}[的过程调试信息开关；如果不指定]{style="font-family:宋体"}**[ipv4]{lang="EN-US"}**[和]{style="font-family:宋体"}**[ipv6]{lang="EN-US"}**[参数，则打开所有]{style="font-family:宋体"}[FEC]{lang="EN-US"}[对应的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[维护过程调试信息开关。]{style="font-family:宋体"}
+**[process**]：表示LDP创建LSP过程调试信息开关。如果指定参数**ipv4，**则表示创建IPv4 LSP的过程调试信息开关；如果指定参数**ipv6，**则表示创建IPv6 LSP的过程调试信息开关；如果不指定**ipv4**和**ipv6**参数，则打开所有FEC对应的LSP维护过程调试信息开关。
 
-[**[prefix-list ]{lang="EN-US"}***[prefix-list-name]{lang="EN-US"}*]{#struct_0_10226_54647_1996548250}[：指定通过]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀列表对调试信息进行过滤。只有]{style="font-family:宋体"}[FEC]{lang="EN-US"}[目的地址通过]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀列表过滤时，才会打开该]{style="font-family:宋体"}[FEC]{lang="EN-US"}[对应]{style="font-family:宋体"}[LSP]{lang="EN-US"}[建立过程的调试信息开关。]{style="font-family:宋体"}*[prefix-list-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀列表名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。]{style="font-family:宋体"}
+**[prefix-list ***prefix-list-name*]：指定通过IP地址前缀列表对调试信息进行过滤。只有FEC目的地址通过IP地址前缀列表过滤时，才会打开该FEC对应LSP建立过程的调试信息开关。*prefix-list-name*表示IP地址前缀列表名，为1～63个字符的字符串，区分大小写。
 
-[**[socket]{lang="EN-US"}**]{#struct_0_10226_54647_126333743}[：表示]{style="font-family:宋体"}[LDP]{lang="EN-US"}[套接字调试信息开关。]{style="font-family:宋体"}
+**[socket**]：表示LDP套接字调试信息开关。
 
-[**[timer]{lang="EN-US"}**]{#struct_0_10226_54647_x2088008657}[：表示]{style="font-family:宋体"}[LDP]{lang="EN-US"}[定时器调试信息开关。]{style="font-family:宋体"}
+**[timer**]：表示LDP定时器调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_10226_54647_x1979301564}
+【描述】
 
-[**[debugging mpls ldp]{lang="EN-US"}**]{#struct_0_10226_54647_x552023961}[命令用来打开]{style="font-family:宋体"}[LDP]{lang="EN-US"}[的调试信息开关。]{style="font-family:宋体"}**[undo debugging mpls ldp]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[LDP]{lang="EN-US"}[的调试信息开关。]{style="font-family:宋体"}
+**[debugging mpls ldp**]命令用来打开LDP的调试信息开关。**undo debugging mpls ldp**命令用来关闭LDP的调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_1183355857}[调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，LDP调试信息开关处于关闭状态。
 
-[[表1-1 ]{lang="EN-US"}[debugging mpls ldp error]{lang="EN-US"}]{#struct_0_10226_54647_2065743513}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging mpls ldp error命令输出信息描述表
 
-[]{#table_struct_0_549295878}[[字段]{style="font-family:黑体"}]{#struct_0_10226_54647_x1233799356}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10226_54647_x216644672}
+描述
 
-[[Failed to process a configuration command.]{lang="EN-US"}]{#struct_0_10226_54647_588227916}
+Failed to process a configuration command.
 
-[[处理配置命令失败]{style="font-family:宋体"}]{#struct_0_10226_54647_x1114294675}
+处理配置命令失败
 
-[[Failed to create the timer.]{lang="EN-US"}]{#struct_0_10226_54647_1444527818}
+Failed to create the timer.
 
-[[创建定时器失败]{style="font-family:宋体"}]{#struct_0_10226_54647_1142291501}
+创建定时器失败
 
-[[Failed to reset the timer.]{lang="EN-US"}]{#struct_0_10226_54647_x1067927373}
+Failed to reset the timer.
 
-[[重设定时器失败]{style="font-family:宋体"}]{#struct_0_10226_54647_x1233602748}
+重设定时器失败
 
-[[Unsupported label type.]{lang="EN-US"}]{#struct_0_10226_54647_x138587705}
+Unsupported label type.
 
-[[不支持的标签类型]{style="font-family:宋体"}]{#struct_0_10226_54647_x1049197405}
+不支持的标签类型
 
-[[Unsupported address family.]{lang="EN-US"}]{#struct_0_10226_54647_1687269302}
+Unsupported address family.
 
-[[不支持的地址协议族]{style="font-family:宋体"}]{#struct_0_10226_54647_x1462548618}
+不支持的地址协议族
 
-[[Failed to allocate a label for *destination*.]{lang="EN-US"}]{#struct_0_10226_54647_x683297570}
+Failed to allocate a label for *destination*.
 
-[[为目的地址为]{style="font-family:宋体"}*[destination]{lang="EN-US"}*]{#struct_0_10226_54647_x1233668284}[的]{style="font-family:宋体"}[FEC]{lang="EN-US"}[分配标签失败]{style="font-family:宋体"}
+为目的地址为*destination*的FEC分配标签失败
 
-[[Failed to create a TCP socket.]{lang="EN-US"}]{#struct_0_10226_54647_x1735538040}
+Failed to create a TCP socket.
 
-[[在]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_1633485292}[会话的被动方上创建]{style="font-family:宋体"}[TCP]{lang="EN-US"}[套接字失败]{style="font-family:宋体"}
+在LDP会话的被动方上创建TCP套接字失败
 
-[[Failed to create a UDP socket.]{lang="EN-US"}]{#struct_0_10226_54647_x65548904}
+Failed to create a UDP socket.
 
-[[创建]{style="font-family:宋体"}[UDP]{lang="EN-US"}]{#struct_0_10226_54647_x1307893047}[套接字失败]{style="font-family:宋体"}
+创建UDP套接字失败
 
-[ ]{lang="EN-US"}
+表1-2 debugging mpls ldp event命令输出信息描述表
 
-[[表1-2 ]{lang="EN-US"}[debugging mpls ldp event]{lang="EN-US"}]{#struct_0_10226_54647_x970464153}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_542943346}[[字段]{style="font-family:黑体"}]{#struct_0_10226_54647_x1233471676}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10226_54647_x1131016175}
+*[Module-A* created a connection to *Module-B*.]
 
-[*[Module-A]{lang="EN-US"}*[ created a connection to *Module-B*.]{lang="EN-US"}]{#struct_0_10226_54647_2013232746}
+*[Module-A*]模块与*Module-B*模块建立一个连接
 
-[*[Module-A]{lang="EN-US"}*]{#struct_0_10226_54647_x1315041496}[模块与]{style="font-family:宋体"}*[Module-B]{lang="EN-US"}*[模块建立一个连接]{style="font-family:宋体"}
+Received an HA upgrade event.
 
-[[Received an HA upgrade event.]{lang="EN-US"}]{#struct_0_10226_54647_x1388991321}
+收到HA升级事件
 
-[[收到]{style="font-family:宋体"}[HA]{lang="EN-US"}]{#struct_0_10226_54647_1245945963}[升级事件]{style="font-family:宋体"}
+Received an HA degrade event.
 
-[[Received an HA degrade event.]{lang="EN-US"}]{#struct_0_10226_54647_888399072}
+收到HA降级事件
 
-[[收到]{style="font-family:宋体"}[HA]{lang="EN-US"}]{#struct_0_10226_54647_x1233537212}[降级事件]{style="font-family:宋体"}
+Received the interface *event* event. Interface index: *index*.
 
-[[Received the interface *event* event. Interface index: *index*.]{lang="EN-US"}]{#struct_0_10226_54647_356057701}
+收到接口变化事件，事件为*event*，接口的索引为*index*
 
-[[收到接口变化事件，事件为]{style="font-family:宋体"}*[event]{lang="EN-US"}*]{#struct_0_10226_54647_42302442}[，接口的索引为]{style="font-family:宋体"}*[index]{lang="EN-US"}*
+表1-3 debugging mpls ldp process命令输出信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表1-3 ]{lang="EN-US"}[debugging mpls ldp process]{lang="EN-US"}]{#struct_0_10226_54647_1656173137}[命令输出信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_542082450}[[字段]{style="font-family:黑体"}]{#struct_0_10226_54647_x973158623}
+Refreshed the LSP (*lsp-destination*) to LSM.
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10226_54647_1270635810}
+向LSM下发一条LSP，LSP的目的地址为*lsp-destination*
 
-[[Refreshed the LSP (*lsp-destination*) to LSM.]{lang="EN-US"}]{#struct_0_10226_54647_2133430933}
+Added an LSP establishment triggering policy on the egress (VPN instance: *vpn-name*).
 
-[[向]{style="font-family:宋体"}[LSM]{lang="EN-US"}]{#struct_0_10226_54647_x1233340604}[下发一条]{style="font-family:宋体"}[LSP]{lang="EN-US"}[，]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的目的地址为]{style="font-family:宋体"}*[lsp-destination]{lang="EN-US"}*
+在Egress上添加一个VPN实例名称为*vpn-name*的LSP触发策略。
 
-[[Added an LSP establishment triggering policy on the egress (VPN instance: *vpn-name*).]{lang="EN-US"}]{#struct_0_10226_54647_2129682286}
+如果不显示VPN实例名称，则表示公网。下文与此相同，不再赘述
 
-[[在]{style="font-family:宋体"}[Egress]{lang="EN-US"}]{#struct_0_10226_54647_x1619128113}[上添加一个]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例名称为]{style="font-family:宋体"}*[vpn-name]{lang="EN-US"}*[的]{style="font-family:宋体"}[LSP]{lang="EN-US"}[触发策略。]{style="font-family:宋体"}
+Notified LSM to delete the LSP (*lsp-destination*).
 
-[[如果不显示]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_10226_54647_1052331948}[实例名称，则表示公网。下文与此相同，不再赘述]{style="font-family:宋体"}
+通知LSM删除一条LSP，LSP的目的地址为*lsp-destination*
 
-[[Notified LSM to delete the LSP (*lsp-destination*).]{lang="EN-US"}]{#struct_0_10226_54647_x1464815467}
+Process the label distribution control mode change event. VPN instance: *vpn-name*.
 
-[[通知]{style="font-family:宋体"}[LSM]{lang="EN-US"}]{#struct_0_10226_54647_2090718196}[删除一条]{style="font-family:宋体"}[LSP]{lang="EN-US"}[，]{style="font-family:宋体"}[LSP]{lang="EN-US"}[的目的地址为]{style="font-family:宋体"}*[lsp-destination]{lang="EN-US"}*
+处理标签分发控制方式改变事件，VPN实例名称为*vpn-name*
 
-[[Process the label distribution control mode change event. VPN instance: *vpn-name*.]{lang="EN-US"}]{#struct_0_10226_54647_998025004}
+表1-4 debugging mpls ldp socket命令输出信息描述表
 
-[[处理标签分发控制方式改变事件，]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_10226_54647_x1233406140}[实例名称为]{style="font-family:宋体"}*[vpn-name]{lang="EN-US"}*
+字段
 
-[ ]{lang="EN-US"}
+描述
 
-[[表1-4 ]{lang="EN-US"}[debugging mpls ldp socket]{lang="EN-US"}]{#struct_0_10226_54647_x1035227927}[命令输出信息描述表]{style="font-family:黑体"}
+Accepted a new socket (*socket-id*).
 
-[]{#table_struct_0_543184150}[[字段]{style="font-family:黑体"}]{#struct_0_10226_54647_x1444936926}
+接收一个新的套接字，套接字的ID为*socket-id*
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10226_54647_552179309}
+Created a new socket (*socket-id*) on the passive LSR.
 
-[[Accepted a new socket (*socket-id*).]{lang="EN-US"}]{#struct_0_10226_54647_x964918966}
+在LDP会话的被动方上创建一个新的套接字，套接字的ID为*socket-id*
 
-[[接收一个新的套接字，套接字的]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_10226_54647_x115704629}[为]{style="font-family:宋体"}*[socket-id]{lang="EN-US"}*
+Closed the socket (*socket-id*) on the passive LSR.
 
-[[Created a new socket (*socket-id*) on the passive LSR.]{lang="EN-US"}]{#struct_0_10226_54647_1045472558}
+在LDP会话的被动方上关闭套接字，套接字的ID为*socket-id*
 
-[[在]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x1233864891}[会话的被动方上创建一个新的套接字，套接字的]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[socket-id]{lang="EN-US"}*
+Created a new socket (*socket-id*) on the active LSR.
 
-[[Closed the socket (*socket-id*) on the passive LSR.]{lang="EN-US"}]{#struct_0_10226_54647_537602143}
+在LDP会话的主动方上创建一个新的套接字，套接字的ID为*socket-id*
 
-[[在]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x1609322647}[会话的被动方上关闭套接字，套接字的]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[socket-id]{lang="EN-US"}*
+Closed the socket (*socket-id*) on the active LSR.
 
-[[Created a new socket (*socket-id*) on the active LSR.]{lang="EN-US"}]{#struct_0_10226_54647_2120580409}
+在LDP会话的主动方上关闭套接字，套接字的ID为*socket-id*
 
-[[在]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x1818941566}[会话的主动方上创建一个新的套接字，套接字的]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[socket-id]{lang="EN-US"}*
+Created a new UDP socket (*socket-id*).
 
-[[Closed the socket (*socket-id*) on the active LSR.]{lang="EN-US"}]{#struct_0_10226_54647_x299342360}
+创建一个新的UDP套接字，套接字的ID为*socket-id*
 
-[[在]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x2067317612}[会话的主动方上关闭套接字，套接字的]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[socket-id]{lang="EN-US"}*
+表1-5 debugging mpls ldp timer命令输出信息描述表
 
-[[Created a new UDP socket (*socket-id*).]{lang="EN-US"}]{#struct_0_10226_54647_x1233930427}
+字段
 
-[[创建一个新的]{style="font-family:宋体"}[UDP]{lang="EN-US"}]{#struct_0_10226_54647_1241008494}[套接字，套接字的]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[socket-id]{lang="EN-US"}*
+描述
 
-[ ]{lang="EN-US"}
+Created the *timer-type* timer (size: *timer-size*).
 
-[[表1-5 ]{lang="EN-US"}[debugging mpls ldp timer]{lang="EN-US"}]{#struct_0_10226_54647_x877008731}[命令输出信息描述表]{style="font-family:黑体"}
+创建一个类型为*timer-type*的定时器，定时器的值为*timer-size*
 
-[]{#table_struct_0_538924610}[[字段]{style="font-family:黑体"}]{#struct_0_10226_54647_x1847632700}
+Reset the *timer-type* timer (size: *timer-size*).
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10226_54647_332132002}
+重置类型为*timer-type*的定时器，定时器的值为*timer-size*
 
-[[Created the *timer-type* timer (size: *timer-size*).]{lang="EN-US"}]{#struct_0_10226_54647_x403756293}
+Deleted the *timer-type* timer.
 
-[[创建一个类型为]{style="font-family:宋体"}*[timer-type]{lang="EN-US"}*]{#struct_0_10226_54647_x1233733819}[的定时器，定时器的值为]{style="font-family:宋体"}*[timer-size]{lang="EN-US"}*
+删除类型为*timer-type*的定时器
 
-[[Reset the *timer-type* timer (size: *timer-size*).]{lang="EN-US"}]{#struct_0_10226_54647_136428388}
+*[timer-type*] timer expired.
 
-[[重置类型为]{style="font-family:宋体"}*[timer-type]{lang="EN-US"}*]{#struct_0_10226_54647_1132507607}[的定时器，定时器的值为]{style="font-family:宋体"}*[timer-size]{lang="EN-US"}*
+类型为*timer-type*的定时器超时
 
-[[Deleted the *timer-type* timer.]{lang="EN-US"}]{#struct_0_10226_54647_555333287}
+【举例】
 
-[[删除类型为]{style="font-family:宋体"}*[timer-type]{lang="EN-US"}*]{#struct_0_10226_54647_x1942738190}[的定时器]{style="font-family:宋体"}
+\# 打开LDP的错误调试信息开关。配置一个不存在对应VPN实例的LDP实例，打印如下信息。
 
-[*[timer-type]{lang="DA"}*]{#struct_0_10226_54647_1492969090}[ timer expired.]{lang="DA"}
+\<Sysname\> debugging mpls ldp error
 
-[[类型为]{style="font-family:宋体"}*[timer-type]{lang="EN-US"}*]{#struct_0_10226_54647_214253084}[的定时器超时]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[ ]{lang="EN-US"}
+Sysname mpls ldp
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10226_54647_x1233799355}
+Sysname-ldp vpn-instance vpn1
 
-[[\# ]{lang="PT-BR"}]{#struct_0_10226_54647_1349439269}[打开]{style="font-family:宋体"}[LDP]{lang="PT-BR"}[的错误调试信息开关。配置一个不存在对应]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例的]{style="font-family:宋体"}[LDP]{lang="EN-US"}[实例，打印如下信息。]{style="font-family:宋体"}
+Sysname-ldp
 
-[[\<Sysname\> debugging mpls ldp error]{lang="EN-US"}]{#struct_0_10226_54647_x114926397}
+\*Mar 14 17:20:25:520 2011 Sysname LDP/7/ERROR: -MDC=1; Failed to process a configuration command.
 
-[\<Sysname\> system-view]{lang="EN-US"}
+*// 处理配置命令失败。*
 
-[\[Sysname\] mpls ldp]{lang="EN-US"}
+\# 打开LDP的事件调试信息开关。将一个使能了MPLS LDP能力的接口shutdown，打印如下信息。
 
-[\[Sysname-ldp\] vpn-instance vpn1]{lang="EN-US"}
+\<Sysname\> debugging mpls ldp event
 
-[\[Sysname-ldp\]]{lang="EN-US"}
+\<Sysname\> system-view
 
-[\*Mar 14 17:20:25:520 2011 Sysname LDP/7/ERROR: -MDC=1; Failed to process a configuration command.]{lang="EN-US"}
+Sysname interface gigabitethernet 1/0/1
 
-[*[// ]{lang="EN-US"}*]{#struct_0_10226_54647_x87311295}*[处理配置命令失败。]{style="font-family:宋体"}*
+Sysname-GigabitEthernet1/0/1 shutdown
 
-[[\# ]{lang="PT-BR"}]{#struct_0_10226_54647_x1241126097}[打开]{style="font-family:宋体"}[LDP]{lang="PT-BR"}[的事件调试信息开关。将一个使能了]{style="font-family:宋体"}[MPLS LDP]{lang="EN-US"}[能力的接口]{style="font-family:宋体"}[shutdown]{lang="EN-US"}[，打印如下信息。]{style="font-family:宋体"}
+Sysname-GigabitEthernet1/0/1
 
-[[\<Sysname\> debugging mpls ldp event]{lang="EN-US"}]{#struct_0_10226_54647_x411696189}
+\*Jun 23 15:54:30:088 2011 Sysname LDP/7/EVENT: -MDC=1; Received the interface down event. Interface index: 66794.
 
-[\<Sysname\> system-view]{lang="EN-US"}
+*// 收到接口down事件。*
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+\# 打开LDP的套接字调试信息开关。配置MPLS LDP实例，打印如下信息。
 
-[\[Sysname-GigabitEthernet1/0/1\] shutdown]{lang="EN-US"}
+\<Sysname\> debugging mpls ldp socket
 
-[\[Sysname-GigabitEthernet1/0/1\]]{lang="EN-US"}
+\<Sysname\> system-view
 
-[\*Jun 23 15:54:30:088 2011 Sysname LDP/7/EVENT: -MDC=1; Received the interface down event. Interface index: 66794.]{lang="EN-US"}
+Sysname mpls ldp
 
-[*[// ]{lang="EN-US"}*]{#struct_0_10226_54647_x1233602747}*[收到接口]{style="font-family:宋体"}[down]{lang="EN-US"}[事件。]{style="font-family:宋体"}*
+Sysname-ldp vpn-instance vpn2
 
-[[\# ]{lang="PT-BR"}]{#struct_0_10226_54647_1877834930}[打开]{style="font-family:宋体"}[LDP]{lang="PT-BR"}[的套接字调试信息开关。配置]{style="font-family:宋体"}[MPLS LDP]{lang="EN-US"}[实例，打印如下信息。]{style="font-family:宋体"}
+Sysname-ldp
 
-[[\<Sysname\> debugging mpls ldp socket]{lang="EN-US"}]{#struct_0_10226_54647_x782301588}
+\*Mar 14 19:07:21:584 2011 Sysname LDP/7/SOCKET: -MDC=1; Created a new socket (32) on the active LSR.
 
-[\<Sysname\> system-view]{lang="EN-US"}
+\*Mar 14 19:07:21:584 2011 Sysname LDP/7/SOCKET: -MDC=1; Created a new UDP socket (33).
 
-[\[Sysname\] mpls ldp]{lang="EN-US"}
+*// 在LDP会话的主动方上创建TCP服务套接字，创建UDP套接字。*
 
-[\[Sysname-ldp\] vpn-instance vpn2]{lang="EN-US"}
+\# 打开LDP的定时器调试信息开关。在接口上使能MPLS LDP能力后，打印如下信息。
 
-[\[Sysname-ldp\]]{lang="EN-US"}
+\<Sysname\> debugging mpls ldp timer
 
-[\*Mar 14 19:07:21:584 2011 Sysname LDP/7/SOCKET: -MDC=1; Created a new socket (32) on the active LSR.]{lang="EN-US"}
+\<Sysname\> system-view
 
-[\*Mar 14 19:07:21:584 2011 Sysname LDP/7/SOCKET: -MDC=1; Created a new UDP socket (33).]{lang="EN-US"}
+Sysname mpls ldp
 
-[*[// ]{lang="EN-US"}*]{#struct_0_10226_54647_1646967099}*[在]{style="font-family:宋体"}[LDP]{lang="EN-US"}[会话的主动方上创建]{style="font-family:宋体"}[TCP]{lang="EN-US"}[服务套接字，创建]{style="font-family:宋体"}[UDP]{lang="EN-US"}[套接字。]{style="font-family:宋体"}*
+Sysname-ldp quit
 
-[[\# ]{lang="PT-BR"}]{#struct_0_10226_54647_x1482097746}[打开]{style="font-family:宋体"}[LDP]{lang="PT-BR"}[的定时器调试信息开关。在接口上使能]{style="font-family:宋体"}[MPLS LDP]{lang="EN-US"}[能力后，打印如下信息。]{style="font-family:宋体"}
+Sysname interface gigabitethernet 1/0/1
 
-[[\<Sysname\> debugging mpls ldp timer]{lang="DA"}]{#struct_0_10226_54647_x1233668283}
+Sysname-GigabitEthernet1/0/1 mpls enable
 
-[\<Sysname\> system-view]{lang="DA"}
+Sysname-GigabitEthernet1/0/1 mpls ldp enable
 
-[\[Sysname\] mpls ldp]{lang="EN-US"}
+\*Mar 14 18:49:45:839 2011 Sysname LDP/7/TIMER: -MDC=1; Created a hello interval timer (size: 5000).
 
-[\[Sysname-ldp\] quit]{lang="EN-US"}
+\*Mar 14 18:49:45:842 2011 Sysname LDP/7/TIMER: -MDC=1; Created a hello hold timer (size: 15000).
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+*// 创建一个5000ms的hello interval定时器，创建一个15000ms的hello hold定时器。*
 
-[\[Sysname-GigabitEthernet1/0/1\] mpls enable ]{lang="EN-US"}
+\# 打开LDP创建LSP过程调试信息开关。配置标签分发控制方式为独立方式后，打印如下信息。
 
-[\[Sysname-GigabitEthernet1/0/1\] mpls ldp enable]{lang="EN-US"}
+\<Sysname\> debugging mpls ldp process
 
-[\*Mar 14 18:49:45:839 2011 Sysname LDP/7/TIMER: -MDC=1; Created a hello interval timer (size: 5000).]{lang="EN-US"}
+\<Sysname\> system-view
 
-[\*Mar 14 18:49:45:842 2011 Sysname LDP/7/TIMER: -MDC=1; Created a hello hold timer (size: 15000).]{lang="EN-US"}
+Sysname mpls ldp
 
-[*[// ]{lang="EN-US"}*]{#struct_0_10226_54647_x976023153}*[创建一个]{style="font-family:宋体"}[5000ms]{lang="EN-US"}[的]{style="font-family:宋体"}[hello interval]{lang="EN-US"}[定时器，创建一个]{style="font-family:宋体"}[15000ms]{lang="EN-US"}[的]{style="font-family:宋体"}[hello hold]{lang="EN-US"}[定时器。]{style="font-family:宋体"}*
+Sysname-ldp label-distribution independent
 
-[[\# ]{lang="PT-BR"}]{#struct_0_10226_54647_1777628721}[打开]{style="font-family:宋体"}[LDP]{lang="EN-US"}[创建]{style="font-family:宋体"}[LSP]{lang="EN-US"}[过程调试信息开关。配置]{style="font-family:宋体"}[标签]{style="font-family:宋体"}[分发]{style="font-family:宋体"}[控制方式]{style="font-family:宋体"}[为独立方式后，打印如下信息。]{style="font-family:宋体"}
+\*Mar 14 19:25:40:030 2011 Sysname LDP/7/PROCESS: -MDC=1; Process the label distribution control mode change event.
 
-[[\<Sysname\> debugging mpls ldp process]{lang="EN-US"}]{#struct_0_10226_54647_1309708266}
+*// 处理标签分发控制方式改变事件。*
 
-[\<Sysname\> system-view]{lang="EN-US"}
+在Egress上配置一条掩码长度为32位的IPv4路由，在Ingress上打印如下信息。
 
-[\[Sysname\] mpls ldp]{lang="EN-US"}
+\*Jan 6 18:25:09:172 2014 H3C LDP/7/PROCESS: -MDC=1; Refreshed the LSP (2.2.2.2/32) to LSM.
 
-[\[Sysname-ldp\] label-distribution independent]{lang="EN-US"}
+*// 向LSM下刷LSP（LSP对应的IPv4地址为2.2.2.2/32）。*
 
-[\*Mar 14 19:25:40:030 2011 Sysname LDP/7/PROCESS: -MDC=1; Process the label distribution control mode change event.]{lang="EN-US"}
+在Egress上配置一条掩码长度为128位的IPv6路由，在Ingress上打印如下信息。
 
-[*[// ]{lang="EN-US"}*]{#struct_0_10226_54647_2026424423}*[处理标签分发控制方式改变事件。]{style="font-family:宋体"}*
+\*Jan 6 18:28:41:768 2014 H3C LDP/7/PROCESS: -MDC=1; LSP refresh job (type: 8) for 200::22/128. 
 
-[[在]{style="font-family:宋体"}[Egress]{lang="EN-US"}]{#struct_0_10226_54647_1991990791}[上配置一条掩码长度为]{style="font-family:宋体"}[32]{lang="EN-US"}[位的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[路由，]{style="font-family:宋体"}[在]{style="font-family:宋体"}[Ingress]{lang="PT-BR"}[上]{style="font-family:宋体"}[打印如下信息。]{style="font-family:宋体"}
-
-[[\*Jan 6 18:25:09:172 2014 H3C LDP/7/PROCESS: -MDC=1; Refreshed the LSP (2.2.2.2/32) to LSM.]{lang="EN-US"}]{#struct_0_10226_54647_1991794183}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_10226_54647_93792944}*[向]{style="font-family:宋体"}[LSM]{lang="EN-US"}[下刷]{style="font-family:宋体"}[LSP]{lang="EN-US"}[（]{style="font-family:宋体"}[LSP]{lang="EN-US"}[对应的]{style="font-family:宋体"}[IPv4]{lang="EN-US"}[地址为]{style="font-family:宋体"}[2.2.2.2/32]{lang="EN-US"}[）。]{style="font-family:宋体"}*
-
-[[在]{style="font-family:宋体"}[Egress]{lang="EN-US"}]{#struct_0_10226_54647_x1050806112}[上配置一条掩码长度为]{style="font-family:宋体"}[128]{lang="EN-US"}[位的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[路由，]{style="font-family:宋体"}[在]{style="font-family:宋体"}[Ingress]{lang="PT-BR"}[上]{style="font-family:宋体"}[打印如下信息。]{style="font-family:宋体"}
-
-[[\*Jan 6 18:28:41:768 2014 H3C LDP/7/PROCESS: -MDC=1; LSP refresh job (type: 8) for 200::22/128.  ]{lang="EN-US"}]{#struct_0_10226_54647_960571667}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_10226_54647_x1640224033}*[向]{style="font-family:宋体"}[LSM]{lang="EN-US"}[下刷]{style="font-family:宋体"}[LSP]{lang="EN-US"}[（]{style="font-family:宋体"}[LSP]{lang="EN-US"}[对应的]{style="font-family:宋体"}[IPv6]{lang="EN-US"}[地址为]{style="font-family:宋体"}[200::22/128]{lang="EN-US"}[）。]{style="font-family:宋体"}*
-
-::: {#1667590062 .myid}
-[]{#_Toc404790513}[]{#struct_0_10226_54647_x1589619335}
+*// 向LSM下刷LSP（LSP对应的IPv6地址为200::22/128）。*
 
 **LDP \-- LDP调试命令 \-- debugging mpls ldp peer**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10226_54647_x1372634732}
+【命令】
 
-[**[debugging mpls ldp ]{lang="EN-US"}**[{ **advertisement  **\[ { **ipv4** \| **ipv6** } \[ **prefix-list** *prefix-list-name* \] \] **\| discovery** \[ **ipv4** \| **ipv6** \] \| **notification** \| **packet** { **received** \| **sent** } \| **session** } \[ **peer** *peer-prefix-list-name* \]]{lang="EN-US"}]{#struct_0_10226_54647_327380827}
+**[debugging mpls ldp **[{ **advertisement  **[ { **ipv4** \| **ipv6** } [ **prefix-list** *prefix-list-name* ] ] **\| discovery** [ **ipv4** \| **ipv6** ] \| **notification** \| **packet** { **received** \| **sent** } \| **session** }  **peer** *peer-prefix-list-name* ]]
 
-[**[undo debugging mpls ldp ]{lang="EN-US"}**[{ **advertisement** \[ **ipv4** \| **ipv6** \] **\| discovery** \[ **ipv4** \| **ipv6** \] \| **notification** \| **packet** { **received** \| **sent** } \| **session** }]{lang="EN-US"}]{#struct_0_10226_54647_x1233471675}
+**[undo debugging mpls ldp **[{ **advertisement** [ **ipv4** \| **ipv6** ] **\| discovery** [ **ipv4** \| **ipv6** ] \| **notification** \| **packet** { **received** \| **sent** } \| **session** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10226_54647_x1534300702}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_10226_54647_1725881193}
+用户视图
 
-[[【缺省级别】]{style="font-family:黑体"}]{#struct_0_10226_54647_261531515}
+【缺省级别】
 
-[[1]{lang="EN-US"}]{#struct_0_10226_54647_x1093052978}[：监控级]{style="font-family:宋体"}
+1：监控级
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10226_54647_243943434}
+【参数】
 
-[**[advertisement]{lang="EN-US"}**]{#struct_0_10226_54647_x1911081298}[：表示]{style="font-family:宋体"}[LDP]{lang="EN-US"}[标签通告和地址通告调试信息开关。如果指定参数]{style="font-family:宋体"}**[ipv4]{lang="EN-US"}[，]{style="font-family:宋体"}**[则表示]{style="font-family:宋体"}[IPv4 LDP]{lang="EN-US"}[标签通告和地址通告调试信息开关；如果指定参数]{style="font-family:宋体"}**[ipv6]{lang="EN-US"}[，]{style="font-family:宋体"}**[则表示]{style="font-family:宋体"}[IPv6 LDP]{lang="EN-US"}[标签通告和地址通告调试信息开关；如果不指定]{style="font-family:宋体"}**[ipv4]{lang="EN-US"}**[和]{style="font-family:宋体"}**[ipv6]{lang="EN-US"}**[参数，则表示打开所有]{style="font-family:宋体"}[FEC]{lang="EN-US"}[的通告调试信息开关。]{style="font-family:宋体"}
+**[advertisement**]：表示LDP标签通告和地址通告调试信息开关。如果指定参数**ipv4，**则表示IPv4 LDP标签通告和地址通告调试信息开关；如果指定参数**ipv6，**则表示IPv6 LDP标签通告和地址通告调试信息开关；如果不指定**ipv4**和**ipv6**参数，则表示打开所有FEC的通告调试信息开关。
 
-[**[prefix-list ]{lang="EN-US"}***[prefix-list-name]{lang="EN-US"}*]{#struct_0_10226_54647_x208762287}[：指定通过]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀列表对调试信息进行过滤。只有]{style="font-family:宋体"}[FEC]{lang="EN-US"}[目的地址通过]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀列表过滤时，才会打开该]{style="font-family:宋体"}[FEC]{lang="EN-US"}[对应标签通告和地址通告的调试信息开关。]{style="font-family:宋体"}*[prefix-list-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀列表名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[prefix-list ***prefix-list-name*]：指定通过IP地址前缀列表对调试信息进行过滤。只有FEC目的地址通过IP地址前缀列表过滤时，才会打开该FEC对应标签通告和地址通告的调试信息开关。*prefix-list-name*表示IP地址前缀列表名，为1～63个字符的字符串，区分大小写。
 
-[**[discovery]{lang="EN-US"}**]{#struct_0_10226_54647_x836695977}[：表示]{style="font-family:宋体"}[LDP]{lang="EN-US"}[发现过程调试信息开关。如果指定参数]{style="font-family:宋体"}**[ipv4]{lang="EN-US"}[，]{style="font-family:宋体"}**[则表示]{style="font-family:宋体"}[IPv4 LDP]{lang="EN-US"}[发现过程调试信息开关；如果指定参数]{style="font-family:宋体"}**[ipv6]{lang="EN-US"}[，]{style="font-family:宋体"}**[则表示]{style="font-family:宋体"}[IPv6 LDP]{lang="EN-US"}[发现过程调试信息开关；如果不指定]{style="font-family:宋体"}**[ipv4]{lang="EN-US"}**[和]{style="font-family:宋体"}**[ipv6]{lang="EN-US"}**[参数，则打开所有发现过程调试信息开关。]{style="font-family:宋体"}
+**[discovery**]：表示LDP发现过程调试信息开关。如果指定参数**ipv4，**则表示IPv4 LDP发现过程调试信息开关；如果指定参数**ipv6，**则表示IPv6 LDP发现过程调试信息开关；如果不指定**ipv4**和**ipv6**参数，则打开所有发现过程调试信息开关。
 
-[**[notification]{lang="EN-US"}**]{#struct_0_10226_54647_x1233537211}[：表示]{style="font-family:宋体"}[LDP]{lang="EN-US"}[通知消息调试信息开关。]{style="font-family:宋体"}
+**[notification**]：表示LDP通知消息调试信息开关。
 
-[**[packet]{lang="EN-US"}**]{#struct_0_10226_54647_x47226826}[：表示除]{style="font-family:宋体"}[Hello]{lang="EN-US"}[消息以外其他所有]{style="font-family:宋体"}[LDP]{lang="EN-US"}[消息的调试信息开关。]{style="font-family:宋体"}
+**[packet**]：表示除Hello消息以外其他所有LDP消息的调试信息开关。
 
-[**[received]{lang="EN-US"}**]{#struct_0_10226_54647_x78881537}[：表示]{style="font-family:宋体"}[LDP]{lang="EN-US"}[接收消息调试信息开关。]{style="font-family:宋体"}
+**[received**]：表示LDP接收消息调试信息开关。
 
-[**[sent]{lang="EN-US"}**]{#struct_0_10226_54647_1187744883}[：表示]{style="font-family:宋体"}[LDP]{lang="EN-US"}[发送消息调试信息开关。]{style="font-family:宋体"}
+**[sent**]：表示LDP发送消息调试信息开关。
 
-[**[session]{lang="EN-US"}**]{#struct_0_10226_54647_x1357362827}[：表示]{style="font-family:宋体"}[LDP]{lang="EN-US"}[会话调试信息开关。]{style="font-family:宋体"}
+**[session**]：表示LDP会话调试信息开关。
 
-[**[peer ]{lang="EN-US"}***[peer-prefix-list-name]{lang="EN-US"}*]{#struct_0_10226_54647_388295287}[：表示指定对等体的]{style="font-family:宋体"}[LDP]{lang="EN-US"}[调试信息开关。只有对等体通过]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀过滤时，才会打开该对等体相关的调试信息开关。]{style="font-family:宋体"}*[peer-prefix-list-name]{lang="EN-US"}*[表示]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址前缀列表名，为]{style="font-family:宋体"}[1]{lang="EN-US"}[～]{style="font-family:宋体"}[63]{lang="EN-US"}[个字符的字符串，区分大小写。如果不指定本参数，则打开所有对等体相关]{style="font-family:宋体"}[的调试信息开关。]{style="font-family:宋体"}
+**[peer ***peer-prefix-list-name*]：表示指定对等体的LDP调试信息开关。只有对等体通过IP地址前缀过滤时，才会打开该对等体相关的调试信息开关。*peer-prefix-list-name*表示IP地址前缀列表名，为1～63个字符的字符串，区分大小写。如果不指定本参数，则打开所有对等体相关的调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_10226_54647_76514458}
+【描述】
 
-[**[debugging mpls ldp peer]{lang="EN-US"}**]{#struct_0_10226_54647_x1726165629}[命令用来打开]{style="font-family:宋体"}[LDP]{lang="EN-US"}[对等体的调试信息开关。]{style="font-family:宋体"}**[undo debugging mpls ldp peer]{lang="EN-US"}**[命令用来关闭]{style="font-family:
-宋体"}[LDP]{lang="EN-US"}[对等体的调试信息开关。]{style="font-family:宋体"}
+**[debugging mpls ldp peer**]命令用来打开LDP对等体的调试信息开关。**undo debugging mpls ldp peer**命令用来关闭LDP对等体的调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_379901705}[对等体的调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，LDP对等体的调试信息开关处于关闭状态。
 
-[[表1-6 ]{lang="EN-US"}[debugging mpls ldp advertisement]{lang="EN-US"}]{#struct_0_10226_54647_x1233340603}[命令输出信息描述表]{style="font-family:黑体"}
+表1-6 debugging mpls ldp advertisement命令输出信息描述表
 
-[]{#table_struct_0_540650614}[[字段]{style="font-family:黑体"}]{#struct_0_10226_54647_207367985}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10226_54647_629870426}
+描述
 
-[[Loop detected by hop count (hop count: *hops*, max hop count: *max-hops*).]{lang="EN-US"}]{#struct_0_10226_54647_x2078405493}
+Loop detected by hop count (hop count: *hops*, max hop count: *max-hops*).
 
-[[发现环路：]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_10226_54647_1190174483}[经过的跳数]{style="font-family:宋体"}*[hops]{lang="EN-US"}*[超过允许的最大跳数]{style="font-family:宋体"}*[max-hops]{lang="EN-US"}*
+发现环路：LSP经过的跳数*hops*超过允许的最大跳数*max-hops*
 
-[[Received a label mapping message from peer (*peer-ldp-id*, VPN instance: *vpn-name*).]{lang="EN-US"}]{#struct_0_10226_54647_x1233406139}
+Received a label mapping message from peer (*peer-ldp-id*, VPN instance: *vpn-name*).
 
-[[从]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_10226_54647_887282982}[实例]{style="font-family:宋体"}*[vpn-name]{lang="EN-US"}*[内的对端]{style="font-family:宋体"}*[peer-ldp-id]{lang="EN-US"}*[收到标签映射消息]{style="font-family:宋体"}
+从VPN实例*vpn-name*内的对端*peer-ldp-id*收到标签映射消息
 
-[[The label mapping message from peer (*peer-ldp-id*: *space-id*) has *fec-destination/mask-length*, label (*label*)]{lang="EN-US"}]{#struct_0_10226_54647_1992056326}
+The label mapping message from peer (*peer-ldp-id*: *space-id*) has *fec-destination/mask-length*, label (*label*)
 
-[[来自对端]{style="font-family:宋体"}*[peer-ldp-id]{lang="EN-US"}*]{#struct_0_10226_54647_x844611099}[的标签映射消息，]{style="font-family:宋体"}[FEC]{lang="EN-US"}[为]{style="font-family:宋体"}*[fec-destination]{lang="EN-US"}[，]{style="font-family:宋体"}*[掩码长度为]{style="font-family:宋体"}*[mask-length]{lang="EN-US"}*[，标签为]{style="font-family:宋体"}*[label]{lang="EN-US"}*
+来自对端*peer-ldp-id*的标签映射消息，FEC为*fec-destination，*掩码长度为*mask-length*，标签为*label*
 
-[ ]{lang="EN-US"}
+表1-7 debugging mpls ldp discovery命令信息描述表
 
-[[表1-7 ]{lang="EN-US"}[debugging mpls ldp discovery]{lang="EN-US"}]{#struct_0_10226_54647_354104867}[命令信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_539655114}[[字段]{style="font-family:黑体"}]{#struct_0_10226_54647_x841949146}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10226_54647_908864290}
+Created an adjacency (index *index*, source address *source-ip*, transport address *transport-ip*, destination address *destination-ip*) for peer (*peer-ldp-id*, VPN instance: *vpn-name*).
 
-[[Created an adjacency (index *index*, source address *source-ip*, transport address *transport-ip*, destination address *destination-ip*) for peer (*peer-ldp-id*, VPN instance: *vpn-name*).]{lang="EN-US"}]{#struct_0_10226_54647_1808640930}
+创建一个hello邻接体，邻接体索引为*index*，源IP地址为*source-ip*，传输地址为*transport-ip，*目的地址为*destination-ip*，对端LDP ID为*peer-ldp-id*，VPN实例名称为*vpn-name*
 
-[[创建一个]{style="font-family:宋体"}[hello]{lang="EN-US"}]{#struct_0_10226_54647_917906341}[邻接体，邻接体索引为]{style="font-family:宋体"}*[index]{lang="EN-US"}*[，源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}*[source-ip]{lang="EN-US"}*[，传输地址为]{style="font-family:宋体"}*[transport-ip]{lang="EN-US"}[，]{style="font-family:宋体"}*[目的地址为]{style="font-family:宋体"}*[destination-ip]{lang="EN-US"}*[，对端]{style="font-family:宋体"}[LDP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[peer-ldp-id]{lang="EN-US"}*[，]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例名称为]{style="font-family:宋体"}*[vpn-name]{lang="EN-US"}*
+Deleted an adjacency (index *index*, source address *source-ip*, transport address *transport-ip*, destination address *destination-ip*) for peer (*peer-ldp-id*, VPN instance: *vpn-name*).
 
-[[Deleted an adjacency (index *index*, source address *source-ip*, transport address *transport-ip*, destination address *destination-ip*) for peer (*peer-ldp-id*, VPN instance: *vpn-name*).]{lang="EN-US"}]{#struct_0_10226_54647_x1233864894}
+删除一个邻接体，邻接体索引为*index*，源IP地址为*source-ip*，传输地址为*transport-ip，*目的地址为*destination-ip*，对端LDP ID为*peer-ldp-id*，VPN实例名称为*vpn-name*
 
-[[删除一个邻接体，邻接体索引为]{style="font-family:宋体"}*[index]{lang="EN-US"}*]{#struct_0_10226_54647_940886670}[，源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}*[source-ip]{lang="EN-US"}*[，传输地址为]{style="font-family:宋体"}*[transport-ip]{lang="EN-US"}[，]{style="font-family:宋体"}*[目的地址为]{style="font-family:宋体"}*[destination-ip]{lang="EN-US"}*[，对端]{style="font-family:宋体"}[LDP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[peer-ldp-id]{lang="EN-US"}*[，]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例名称为]{style="font-family:宋体"}*[vpn-name]{lang="EN-US"}*
+Discovered a new peer (*peer-ldp-id*, VPN instance: *vpn-name*).
 
-[[Discovered a new peer (*peer-ldp-id*, VPN instance: *vpn-name*).]{lang="EN-US"}]{#struct_0_10226_54647_x1368839248}
+在VPN实例*vpn-name*内发现一个LDP ID为*peer-ldp-id*的对端
 
-[[在]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_10226_54647_1420276968}[实例]{style="font-family:宋体"}*[vpn-name]{lang="EN-US"}*[内发现一个]{style="font-family:宋体"}[LDP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[peer-ldp-id]{lang="EN-US"}*[的对端]{style="font-family:宋体"}
+The peer (*peer-ldp-id*, VPN instance: *vpn-name*) is lost.
 
-[[The peer (*peer-ldp-id*, VPN instance: *vpn-name*) is lost.]{lang="EN-US"}]{#struct_0_10226_54647_x1464972562}
+与VPN实例*vpn-name*内LDP ID为*peer-ldp-id*的对端失去连接，删除该hello邻接体
 
-[[与]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_10226_54647_1767184556}[实例]{style="font-family:宋体"}*[vpn-name]{lang="EN-US"}*[内]{style="font-family:宋体"}[LDP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[peer-ldp-id]{lang="EN-US"}*[的对端失去连接，删除该]{style="font-family:宋体"}[hello]{lang="EN-US"}[邻接体]{style="font-family:宋体"}
+表1-8 debugging mpls ldp notification命令描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表1-8 ]{lang="EN-US"}[debugging mpls ldp notification]{lang="EN-US"}]{#struct_0_10226_54647_x1233930430}[命令描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_567987022}[[字段]{style="font-family:黑体"}]{#struct_0_10226_54647_1644227485}
+Received a notification message (*event*) from peer (*peer-ldp-id*, VPN instance: *vpn-name*).
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10226_54647_x993592056}
+从VPN实例*vpn-name*内的对端*peer-ldp-id*收到Notification消息，通知的事件为*event*
 
-[[Received a notification message (*event*) from peer (*peer-ldp-id*, VPN instance: *vpn-name*).]{lang="EN-US"}]{#struct_0_10226_54647_x787858219}
+Sent a notification message (*event*) to peer (*peer-ldp-id*, VPN instance: *vpn-name*).
 
-[[从]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_10226_54647_x2088918890}[实例]{style="font-family:宋体"}*[vpn-name]{lang="EN-US"}*[内的对端]{style="font-family:宋体"}*[peer-ldp-id]{lang="EN-US"}*[收到]{style="font-family:宋体"}[Notification]{lang="EN-US"}[消息，通知的事件为]{style="font-family:宋体"}*[event]{lang="EN-US"}*
+向VPN实例*vpn-name*内的对端*peer-ldp-id*发送Notification消息，通知的事件为*event*
 
-[[Sent a notification message (*event*) to peer (*peer-ldp-id*, VPN instance: *vpn-name*).]{lang="EN-US"}]{#struct_0_10226_54647_307154394}
+表1-9 debugging mpls ldp packet命令描述表
 
-[[向]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_10226_54647_x455368319}[实例]{style="font-family:宋体"}*[vpn-name]{lang="EN-US"}*[内的对端]{style="font-family:宋体"}*[peer-ldp-id]{lang="EN-US"}*[发送]{style="font-family:宋体"}[Notification]{lang="EN-US"}[消息，通知的事件为]{style="font-family:宋体"}*[event]{lang="EN-US"}*
+字段
 
-[ ]{lang="EN-US"}
+描述
 
-[[表1-9 ]{lang="EN-US"}[debugging mpls ldp packet]{lang="EN-US"}]{#struct_0_10226_54647_x1233733822}[命令描述表]{style="font-family:黑体"}
+Received a keepalive message from peer (*peer-ldp-id*{.TableTextChar}, VPN instance: *vpn-name*).{.TableTextChar} message content: *content*
 
-[]{#table_struct_0_566852902}[[字段]{style="font-family:黑体"}]{#struct_0_10226_54647_895877739}
+收到VPN实例*vpn-name*内的对端*peer-ldp-id*发送的Keepalive 消息，消息内容为*content*
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10226_54647_1911623249}
+Sent a keepalive message to peer (*[peer-ldp-id*]{.TableTextChar}, VPN instance: *vpn-name*). message content: *[content*]{.TableTextChar}
 
-[[Received a keepalive message from peer ([*peer-ldp-id*]{.TableTextChar}, VPN instance: *vpn-name*)[.]{.TableTextChar} message content: *content*]{lang="EN-US"}]{#struct_0_10226_54647_x1676237042}
+向VPN实例*vpn-name*内的对端*peer-ldp-id*发送Keepalive 消息，消息内容为*content*
 
-[[收到]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_10226_54647_x1079732979}[实例]{style="font-family:宋体"}*[vpn-name]{lang="EN-US"}*[内的对端]{style="font-family:宋体"}*[peer-ldp-id]{lang="EN-US"}*[发送的]{style="font-family:宋体"}[Keepalive ]{lang="EN-US"}[消息，消息内容为]{style="font-family:宋体"}*[content]{lang="EN-US"}*
+表1-10 debugging mpls ldp session命令描述表
 
-[[Sent a keepalive message to peer (]{lang="EN-US" style="font-size:
-  9.0pt"}]{#struct_0_10226_54647_x229219682}[*[peer-ldp-id]{lang="EN-US" style="font-size:9.0pt"}*]{.TableTextChar}[, VPN instance: *vpn-name*)]{lang="EN-US" style="font-size:9.0pt"}[. message content: ]{lang="EN-US" style="font-size:9.0pt"}[*[content]{lang="EN-US" style="font-size:9.0pt"}*]{.TableTextChar}
+字段
 
-[[向]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_10226_54647_x379446751}[实例]{style="font-family:宋体"}*[vpn-name]{lang="EN-US"}*[内的对端]{style="font-family:宋体"}*[peer-ldp-id]{lang="EN-US"}*[发送]{style="font-family:宋体"}[Keepalive ]{lang="EN-US"}[消息，消息内容为]{style="font-family:宋体"}*[content]{lang="EN-US"}*
+描述
 
-[ ]{lang="EN-US"}
+Stopped the socket (*socket-id*) to the peer (*peer-ldp-id*{.TableTextChar}, VPN instance: *vpn-name*). MD5 check is needed for the socket.
 
-[[表1-10 ]{lang="EN-US"}[debugging mpls ldp session]{lang="EN-US"}]{#struct_0_10226_54647_x1233799358}[命令描述表]{style="font-family:黑体"}
+关闭到VPN实例*vpn-name*内的对端*[peer-ldp-id*]{.TableTextChar}的套接字，套接字的ID为*socket-id*，该套接字需要进行MD5检查
 
-[]{#table_struct_0_569880350}[[字段]{style="font-family:黑体"}]{#struct_0_10226_54647_946154742}
+Started the socket (*socket-id*) to the peer (*peer-ldp-id*{.TableTextChar}, VPN instance: *vpn-name*). MD5 check is needed for the socket.
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10226_54647_269263244}
+打开到VPN实例*vpn-name*内的对端*[peer-ldp-id*]{.TableTextChar}的套接字，套接字的ID为*socket-id*，该套接字需要进行MD5检查
 
-[[Stopped the socket (*socket-id*) to the peer ([*peer-ldp-id*]{.TableTextChar}, VPN instance: *vpn-name*). MD5 check is needed for the socket.]{lang="EN-US"}]{#struct_0_10226_54647_1228170043}
+Created a new session (*peer-ldp-id*, VPN instance: *vpn-name*). Local transport address: *local-address*, peer transport address: *peer-address*.
 
-[[关闭到]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_10226_54647_424752069}[实例]{style="font-family:宋体"}*[vpn-name]{lang="EN-US"}*[内的对端]{style="font-family:宋体"}[*[peer-ldp-id]{lang="EN-US"}*]{.TableTextChar}[的套接字，套接字的]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[socket-id]{lang="EN-US"}*[，该套接字需要进行]{style="font-family:宋体"}[MD5]{lang="EN-US"}[检查]{style="font-family:宋体"}
+创建一个会话，对端LDP ID为*peer-ldp-id*，VPN实例名称为*vpn-name*，本端传输地址为*local-address*，对端传输地址为*peer-address*
 
-[[Started the socket (*socket-id*) to the peer ([*peer-ldp-id*]{.TableTextChar}, VPN instance: *vpn-name*). MD5 check is needed for the socket.]{lang="EN-US"}]{#struct_0_10226_54647_x811323667}
+Deleted the session (*peer-ldp-id*, VPN instance: *vpn-name*).
 
-[[打开到]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_10226_54647_2054911089}[实例]{style="font-family:宋体"}*[vpn-name]{lang="EN-US"}*[内的对端]{style="font-family:宋体"}[*[peer-ldp-id]{lang="EN-US"}*]{.TableTextChar}[的套接字，套接字的]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[socket-id]{lang="EN-US"}*[，该套接字需要进行]{style="font-family:宋体"}[MD5]{lang="EN-US"}[检查]{style="font-family:宋体"}
+删除与VPN实例*vpn-name*内的对端*peer-ldp-id*的会话
 
-[[Created a new session (*peer-ldp-id*, VPN instance: *vpn-name*). Local transport address: *local-address*, peer transport address: *peer-address*.]{lang="EN-US"}]{#struct_0_10226_54647_x1233602750}
+MD5 check of the session (*peer-ldp-id*, VPN instance: *vpn-name*) failed.
 
-[[创建一个会话，对端]{style="font-family:宋体"}[LDP ID]{lang="EN-US"}]{#struct_0_10226_54647_x494752529}[为]{style="font-family:宋体"}*[peer-ldp-id]{lang="EN-US"}*[，]{style="font-family:宋体"}[VPN]{lang="EN-US"}[实例名称为]{style="font-family:宋体"}*[vpn-name]{lang="EN-US"}*[，本端传输地址为]{style="font-family:宋体"}*[local-address]{lang="EN-US"}*[，对端传输地址为]{style="font-family:宋体"}*[peer-address]{lang="EN-US"}*
+与VPN实例*vpn-name*内的对端*peer-ldp-id*的会话进行MD5检查失败
 
-[[Deleted the session (*peer-ldp-id*, VPN instance: *vpn-name*).]{lang="EN-US"}]{#struct_0_10226_54647_1214528788}
+【举例】
 
-[[删除与]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_10226_54647_x62609054}[实例]{style="font-family:宋体"}*[vpn-name]{lang="EN-US"}*[内的对端]{style="font-family:宋体"}*[peer-ldp-id]{lang="EN-US"}*[的会话]{style="font-family:宋体"}
+\# 打开LDP IPv4发现过程调试信息开关。在接口上使能MPLS LDP支持IPv4能力后，打印如下信息。
 
-[[MD5 check of the session (*peer-ldp-id*, VPN instance: *vpn-name*) failed.]{lang="EN-US"}]{#struct_0_10226_54647_x1662582673}
+\<Sysname\> debugging mpls ldp discovery ipv4
 
-[[与]{style="font-family:宋体"}[VPN]{lang="EN-US"}]{#struct_0_10226_54647_1350982817}[实例]{style="font-family:宋体"}*[vpn-name]{lang="EN-US"}*[内的对端]{style="font-family:宋体"}*[peer-ldp-id]{lang="EN-US"}*[的会话进行]{style="font-family:宋体"}[MD5]{lang="EN-US"}[检查失败]{style="font-family:宋体"}
+\<Sysname\> system-view
 
-[ ]{lang="EN-US"}
+Sysname mpls ldp
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10226_54647_1427323573}
+Sysname-ldp quit
 
-[[\# ]{lang="PT-BR"}]{#struct_0_10226_54647_x1233668286}[打开]{style="font-family:宋体"}[LDP IPv4]{lang="EN-US"}[发现过程调试信息开关。在]{style="font-family:宋体"}[接口上使能]{style="font-family:宋体"}[MPLS LDP]{lang="PT-BR"}[支持]{style="font-family:宋体"}[IPv4]{lang="PT-BR"}[能力后]{style="font-family:宋体"}[，打印如下信息。]{style="font-family:宋体"}
+Sysname interface gigabitethernet 1/0/1
 
-[[\<Sysname\> debugging mpls ldp discovery ipv4]{lang="EN-US"}]{#struct_0_10226_54647_x572738626}
+Sysname-GigabitEthernet1/0/1 mpls enable
 
-[\<Sysname\> system-view]{lang="DA"}
+Sysname-GigabitEthernet1/0/1 mpls ldp enable
 
-[\[Sysname\] mpls ldp]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1
 
-[\[Sysname-ldp\] quit]{lang="EN-US"}
+\*Jan 6 14:26:32:105 2014 H3C LDP/7/DISCOVERY: -MDC=1; Created an adjacency (index 4, source address 77.99.99.99, transport address 99.99.3.3, destination address 224.0.0.2) for peer (99.99.3.3:0).
 
-[\[Sysname\] interface gigabitethernet 1/0/1]{lang="EN-US"}
+\*Jan 6 14:26:32:105 2014 H3C LDP/7/DISCOVERY: -MDC=1; Discovered a new peer (99.99.3.3:0).
 
-[\[Sysname-GigabitEthernet1/0/1\] mpls enable ]{lang="EN-US"}
+*// 创建一个与对端99.99.3.3的Hello邻接体，邻接体的索引为4，源IP地址为77.99.99.99，传输地址为99.99.3.3，目的地址为224.0.0.2。*
 
-[\[Sysname-GigabitEthernet1/0/1\] mpls ldp enable]{lang="EN-US"}
+\# 打开LDP IPv6发现过程调试信息开关。在接口上使能MPLS LDP支持Ipv6能力后，打印如下信息。
 
-[\[Sysname-GigabitEthernet1/0/1\]]{lang="EN-US"}
+\<Sysname\> debugging mpls ldp discovery ipv6
 
-[\*Jan 6 14:26:32:105 2014 H3C LDP/7/DISCOVERY: -MDC=1; Created an adjacency (index 4, source address 77.99.99.99, transport address 99.99.3.3, destination address 224.0.0.2) for peer (99.99.3.3:0).]{lang="EN-US"}
+\<Sysname\> system-view
 
-[\*Jan 6 14:26:32:105 2014 H3C LDP/7/DISCOVERY: -MDC=1; Discovered a new peer (99.99.3.3:0).]{lang="EN-US"}
+Sysname mpls ldp
 
-[*[// ]{lang="EN-US"}*]{#struct_0_10226_54647_x1056940601}*[创建一个与对端]{style="font-family:宋体"}[99.99.3.3]{lang="EN-US"}[的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[邻接体，邻接体的索引为]{style="font-family:宋体"}[4]{lang="EN-US"}[，源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[77.99.99.99]{lang="EN-US"}[，传输地址为]{style="font-family:宋体"}[99.99.3.3]{lang="EN-US"}[，目的地址为]{style="font-family:宋体"}[224.0.0.2]{lang="EN-US"}[。]{style="font-family:宋体"}*
+Sysname-ldp quit
 
-[[\# ]{lang="PT-BR"}]{#struct_0_10226_54647_1992121857}[打开]{style="font-family:宋体"}[LDP IPv6]{lang="EN-US"}[发现过程调试信息开关。在]{style="font-family:宋体"}[接口上使能]{style="font-family:宋体"}[MPLS LDP]{lang="PT-BR"}[支持]{style="font-family:宋体"}[Ipv6]{lang="PT-BR"}[能力后]{style="font-family:宋体"}[，打印如下信息。]{style="font-family:宋体"}
+Sysname interface ethernet 1/1
 
-[[\<Sysname\> debugging mpls ldp discovery ipv6]{lang="EN-US"}]{#struct_0_10226_54647_x387783688}
+Sysname-Ethernet1/1 mpls enable
 
-[\<Sysname\> system-view]{lang="DA"}
+Sysname-Ethernet1/1 mpls ldp ipv6 enable
 
-[\[Sysname\] mpls ldp]{lang="EN-US"}
+Sysname-Ethernet1/1
 
-[\[Sysname-ldp\] quit]{lang="EN-US"}
+\*Jan 6 16:02:15:092 2014 H3C LDP/7/DISCOVERY: -MDC=1; Created an adjacency (index 5, source address FE80::20C:29FF:FEB3:BC0A, transport address 2001::2, destination address FF02::2) for peer (99.99.3.3:0).
 
-[\[Sysname\] interface ethernet 1/1]{lang="EN-US"}
+\*Jan 6 16:02:15:093 2014 H3C LDP/7/DISCOVERY: -MDC=1; Discovered a new peer (99.99.3.3:0).
 
-[\[Sysname-Ethernet1/1\] mpls enable ]{lang="EN-US"}
+*// 创建一个与对端99.99.3.3的Hello邻接体，邻接体的索引为5，源IP地址为FE80::20C:29FF:FEB3:BC0A，传输地址为2001::2，目的地址为FF02::2。*
 
-[\[Sysname-Ethernet1/1\] mpls ldp ipv6 enable]{lang="EN-US"}
+\# 打开LDP标签通告和地址通告调试信息开关。
 
-[\[Sysname-Ethernet1/1\]]{lang="EN-US"}
+在Egress上配置LSP触发策略为所有路由项都会触发LDP建立LSP后，打印如下信息。
 
-[\*Jan 6 16:02:15:092 2014 H3C LDP/7/DISCOVERY: -MDC=1; Created an adjacency (index 5, source address FE80::20C:29FF:FEB3:BC0A, transport address 2001::2, destination address FF02::2) for peer (99.99.3.3:0).]{lang="EN-US"}
+\<Sysname\> debugging mpls ldp advertisement ipv4
 
-[\*Jan 6 16:02:15:093 2014 H3C LDP/7/DISCOVERY: -MDC=1; Discovered a new peer (99.99.3.3:0).]{lang="EN-US"}
+\<Sysname\> system-view
 
-[*[// ]{lang="EN-US"}*]{#struct_0_10226_54647_1991925249}*[创建一个与对端]{style="font-family:宋体"}[99.99.3.3]{lang="EN-US"}[的]{style="font-family:宋体"}[Hello]{lang="EN-US"}[邻接体，邻接体的索引为]{style="font-family:宋体"}[5]{lang="EN-US"}[，源]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[FE80::20C:29FF:FEB3:BC0A]{lang="EN-US"}[，传输地址为]{style="font-family:宋体"}[2001::2]{lang="EN-US"}[，目的地址为]{style="font-family:宋体"}[FF02::2]{lang="EN-US"}[。]{style="font-family:宋体"}*
+Sysname mpls ldp
 
-[[\# ]{lang="PT-BR"}]{#struct_0_10226_54647_789555193}[打开]{style="font-family:宋体"}[LDP]{lang="EN-US"}[标签通告和地址通告调试信息开关。]{style="font-family:宋体"}
+Sysname-ldp lsp-trigger all
 
-[[在]{style="font-family:宋体"}[Egress]{lang="EN-US"}]{#struct_0_10226_54647_71415131}[上]{style="font-family:宋体"}[配置]{style="font-family:宋体"}[LSP]{lang="EN-US"}[触发策略为所有路由项都会触发]{style="font-family:宋体"}[LDP]{lang="EN-US"}[建立]{style="font-family:宋体"}[LSP]{lang="EN-US"}[后]{style="font-family:宋体"}[，]{style="font-family:宋体"}[打印如下信息。]{style="font-family:宋体"}
+\*Jan 6 16:59:12:910 2014 H3C LDP/7/ADVERTISEMENT: -MDC=1; Received a label mapping message from peer (99.99.3.3:0).
 
-[[\<Sysname\> debugging mpls ldp advertisement ipv4]{lang="EN-US"}]{#struct_0_10226_54647_x1233471678}
+\*Jan 6 16:59:12:910 2014 H3C LDP/7/ADVERTISEMENT: -MDC=1; The label mapping message from peer (99.99.3.3:0) has 20.1.1.2/32, label (3).
 
-[\<Sysname\> system-view]{lang="EN-US"}
+*// 接收到对端99.99.3.3为IPv4前缀路由20.1.1.2发送的mapping消息*
 
-[\[Sysname\] mpls ldp]{lang="EN-US"}
+在Egress上配置LSP触发策略为所有IPv6路由项触发LDP建立LSP后，在Ingress上打印如下信息:
 
-[\[]{lang="PT-BR"}[Sysname]{lang="EN-US"}[-ldp\] lsp-trigger all]{lang="PT-BR"}
+\<Sysname\> debugging mpls ldp advertisement ipv6
 
-[\*Jan 6 16:59:12:910 2014 H3C LDP/7/ADVERTISEMENT: -MDC=1; Received a label mapping message from peer (99.99.3.3:0).]{lang="EN-US"}
+\*Jan 6 17:22:19:937 2014 H3C LDP/7/ADVERTISEMENT: -MDC=1; Received a label mapping message from peer (99.99.3.3:0).
 
-[\*Jan 6 16:59:12:910 2014 H3C LDP/7/ADVERTISEMENT: -MDC=1; The label mapping message from peer (99.99.3.3:0) has 20.1.1.2/32, label (3)]{lang="EN-US"}[.]{lang="PT-BR"}
+\*Jan 6 17:22:19:937 2014 H3C LDP/7/ADVERTISEMENT: -MDC=1; The label mapping message from peer (99.99.3.3:0) has 200::24/128, label (3).
 
-[*[// ]{lang="PT-BR"}*]{#struct_0_10226_54647_x1581354869}*[接收到对端]{style="font-family:宋体"}[99.99.3.3]{lang="PT-BR"}[为]{style="font-family:宋体"}[IPv4]{lang="PT-BR"}[前缀路由]{style="font-family:宋体"}[20.1.1.2]{lang="PT-BR"}[发送的]{style="font-family:宋体"}[mapping]{lang="PT-BR"}[消息]{style="font-family:宋体"}*
+*// 接收到对端99.99.3.3为IPv6前缀路由200::24发送的mapping消息*
 
-[[在]{style="font-family:宋体"}]{#struct_0_10226_54647_1991663105}[Egress]{lang="PT-BR"}[上]{style="font-family:宋体"}[配置]{style="font-family:宋体"}[LSP]{lang="PT-BR"}[触发策略为所有]{style="font-family:宋体"}[IPv6]{lang="PT-BR"}[路由项触发]{style="font-family:宋体"}[LDP]{lang="PT-BR"}[建立]{style="font-family:宋体"}[LSP]{lang="PT-BR"}[后]{style="font-family:宋体"}[，在]{style="font-family:宋体"}[Ingress]{lang="PT-BR"}[上]{style="font-family:宋体"}[打印如下信息]{style="font-family:宋体"}[:]{lang="PT-BR"}
+\# 打开LDP通知消息调试信息开关。hello定时器超时如果仍未收到hello消息，则打印如下信息。
 
-[[\<Sysname\> debugging mpls ldp advertisement ipv6]{lang="EN-US"}]{#struct_0_10226_54647_1991728641}
+\<Sysname\> debugging mpls ldp notification
 
-[[\*Jan 6 17:22:19:937 2014 H3C LDP/7/ADVERTISEMENT: -MDC=1; Received a label mapping message from peer (99.99.3.3:0).]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_x646728840}
+\<Sysname\>
 
-[[\*Jan 6 17:22:19:937 2014 H3C LDP/7/ADVERTISEMENT: -MDC=1; The label mapping message from peer (99.99.3.3:0) has 200::24/128, label (3).]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_x1903774132}
+\*Mar 16 09:56:21:076 2011 SysnameLDP/7/NOTIFICATION: -MDC=1; Sent a notification message (hold timer expired) to peer (100.100.100.6:0).
 
-[*[// ]{lang="PT-BR"}*]{#struct_0_10226_54647_1992580609}*[接收到对端]{style="font-family:宋体"}[99.99.3.3]{lang="PT-BR"}[为]{style="font-family:宋体"}[IPv6]{lang="PT-BR"}[前缀路由]{style="font-family:宋体"}[200::24]{lang="PT-BR"}[发送的]{style="font-family:宋体"}[mapping]{lang="PT-BR"}[消息]{style="font-family:宋体"}*
+*// 发送hello hold定时器超时的notification消息。*
 
-[[\# ]{lang="PT-BR"}]{#struct_0_10226_54647_x1034554587}[打开]{style="font-family:宋体"}[LDP]{lang="PT-BR"}[通知消息调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}[hello]{lang="PT-BR"}[定时器超时如果仍未收到]{style="font-family:宋体"}[hello]{lang="PT-BR"}[消息]{style="font-family:宋体"}[，则]{style="font-family:宋体"}[打印如下信息。]{style="font-family:宋体"}
+\# 打开LDP接收消息调试信息开关。收到keepalive消息后，打印如下信息。
 
-[[\<Sysname\> debugging mpls ldp notification]{lang="EN-US"}]{#struct_0_10226_54647_1158957838}
+\<Sysname\> debugging mpls ldp packet received
 
-[\<Sysname\>]{lang="EN-US"}
+\<Sysname\>
 
-[\*Mar 16 09:56:21:076 2011 ]{lang="PT-BR"}[Sysname]{lang="EN-US"}[ ]{lang="EN-US"}[LDP/7/NOTIFICATION: -MDC=1; Sent a notification message (hold timer expired) to peer (100.100.100.6:0).]{lang="PT-BR"}
+\*Mar 16 10:02:32:030 2011 SysnameLDP/7/PACKET RECEIVE: -MDC=1; Received a keepalive message from peer 100.100.100.6:0. message content:
 
-[*[// ]{lang="PT-BR"}*]{#struct_0_10226_54647_978056108}*[发送]{style="font-family:宋体"}[hello hold]{lang="PT-BR"}[定时器超时的]{style="font-family:宋体"}[notification]{lang="PT-BR"}[消息。]{style="font-family:宋体"}*
+ 02 01 00 04 00 00 0d 67
 
-[[\# ]{lang="PT-BR"}]{#struct_0_10226_54647_x211416695}[打开]{style="font-family:宋体"}[LDP]{lang="PT-BR"}[接收消息调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}[收到]{style="font-family:宋体"}[keepalive]{lang="PT-BR"}[消息后]{style="font-family:宋体"}[，]{style="font-family:宋体"}[打印如下信息。]{style="font-family:宋体"}
+*// 收到keepalive消息*
 
-[[\<Sysname\> debugging mpls ldp packet received]{lang="EN-US"}]{#struct_0_10226_54647_x1233537214}
+\# 打开LDP发送消息调试信息开关。发送keepalive消息后，打印如下信息。
 
-[\<Sysname\>]{lang="EN-US"}
+\<Sysname\> debugging mpls ldp packet sent
 
-[\*Mar 16 10:02:32:030 2011 ]{lang="PT-BR"}[Sysname]{lang="EN-US"}[ ]{lang="EN-US"}[LDP/7/PACKET RECEIVE: -MDC=1; Received a keepalive message from peer 100.100.100.6:0. message content:]{lang="PT-BR"}
+\<Sysname\>
 
-[ 02 01 00 04 00 00 0d 67]{lang="PT-BR"}
+\*Mar 16 10:06:01:976 2011 SysnameLDP/7/PACKET SEND: -MDC=1; Sent a keepalive message to peer 100.100.100.6:0. message content:
 
-[*[// ]{lang="PT-BR"}*]{#struct_0_10226_54647_x450511353}*[收到]{style="font-family:宋体"}[keepalive]{lang="PT-BR"}[消息]{style="font-family:宋体"}*
+ 02 01 00 04 00 00 00 ae
 
-[[\# ]{lang="PT-BR"}]{#struct_0_10226_54647_x866026028}[打开]{style="font-family:宋体"}[LDP]{lang="EN-US"}[发送消息调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}[发送]{style="font-family:宋体"}[keepalive]{lang="PT-BR"}[消息后]{style="font-family:宋体"}[，]{style="font-family:宋体"}[打印如下信息。]{style="font-family:宋体"}
+*// 发送keepalive消息*
 
-[[\<Sysname\> debugging mpls ldp packet sent]{lang="EN-US"}]{#struct_0_10226_54647_x904012796}
+\# 打开LDP会话调试信息开关。重启MPLS LDP会话后，打印如下信息。
 
-[\<Sysname\>]{lang="EN-US"}
+\<Sysname\> debugging mpls ldp session
 
-[\*Mar 16 10:06:01:976 2011 ]{lang="PT-BR"}[Sysname]{lang="EN-US"}[ ]{lang="EN-US"}[LDP/7/PACKET SEND: -MDC=1; Sent a keepalive message to peer 100.100.100.6:0. message content:]{lang="PT-BR"}
+\<Sysname\> reset mpls ldp
 
-[ 02 01 00 04 00 00 00 ae]{lang="PT-BR"}
+\<Sysname\>
 
-[*[// ]{lang="PT-BR"}*]{#struct_0_10226_54647_1836386111}*[发送]{style="font-family:宋体"}[keepalive]{lang="EN-US"}[消息]{style="font-family:宋体"}*
+\*Mar 15 16:27:01:686 2011 Sysname LDP/7/SESSION: -MDC=1; Deleted the session (100.100.100.6:0).
 
-[[\# ]{lang="PT-BR"}]{#struct_0_10226_54647_x1326896119}[打开]{style="font-family:宋体"}[LDP]{lang="EN-US"}[会话调试信息开关]{style="font-family:宋体"}[。重启]{style="font-family:宋体"}[MPLS LDP]{lang="PT-BR"}[会话后，打印如下信息。]{style="font-family:宋体"}
+*// 删除会话。*
 
-[[\<Sysname\> debugging mpls ldp session]{lang="EN-US"}]{#struct_0_10226_54647_x1752761521}
+\*Mar 15 16:27:03:997 2011 Sysname LDP/7/SESSION: -MDC=1; Created a new session (100.100.100.6:0): Local transport (100.100.100.66), peer transport (100.100.100.6).
 
-[\<Sysname\> ]{lang="EN-US"}[reset mpls ldp]{lang="PT-BR"}
-
-[\<Sysname\>]{lang="EN-US"}[ ]{lang="EN-US"}
-
-[\*Mar 15 16:27:01:686 2011 Sysname LDP/7/SESSION: -MDC=1; Deleted the session (100.100.100.6:0).]{lang="PT-BR"}
-
-[*[// ]{lang="PT-BR"}*]{#struct_0_10226_54647_1666628779}*[删除会话。]{style="font-family:宋体"}*
-
-[[\*Mar 15 16:27:03:997 2011 Sysname LDP/7/SESSION: -MDC=1; Created a new session (100.100.100.6:0): Local transport (100.100.100.66), peer transport (100.100.100.6). ]{lang="PT-BR"}]{#struct_0_10226_54647_x1233340606}
-
-[*[// ]{lang="PT-BR"}*]{#struct_0_10226_54647_966882872}*[创建新会话。]{style="font-family:宋体"}*
-
-::: {#-716408296 .myid}
-[]{#_Toc404790514}[]{#struct_0_10226_54647_x504329395}[]{#_Toc358904298}[]{#_Toc355273095}[]{#_Toc350865778}[]{#_Toc345666324}
+*// 创建新会话。*
 
 **LDP \-- LDP调试命令 \-- debugging isis mpls ldp sync**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10226_54647_245959306}
+【命令】
 
-[**[debugging isis mpls ldp sync ]{lang="EN-US"}**[\[ **event** \| **fsm** \| **query** \] ]{lang="EN-US"}]{#struct_0_10226_54647_x1816151324}
+**[debugging isis mpls ldp sync **[[ **event** \| **fsm** \| **query** ] ]]
 
-[**[undo debugging isis mpls ldp sync]{lang="EN-US"}**[ \[ **event** \| **fsm** \| **query** \]]{lang="EN-US"}]{#struct_0_10226_54647_x504394931}
+**[undo debugging isis mpls ldp sync**[ [ **event** \| **fsm** \| **query** ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10226_54647_x1686846583}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_10226_54647_1361087765}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10226_54647_x1776581617}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10226_54647_x503936179}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10226_54647_x1166353671}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10226_54647_x668938407}
+【参数】
 
-[**[event]{lang="EN-US"}**]{#struct_0_10226_54647_x1537377072}[：表示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[收到的]{style="font-family:宋体"}[LDP-IGP]{lang="EN-US"}[同步]{style="font-family:宋体"}[事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示IS-IS进程收到的LDP-IGP同步事件调试信息开关。
 
-[**[fsm]{lang="EN-US"}**]{#struct_0_10226_54647_x504001715}[：表示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程的]{style="font-family:宋体"}[LDP-IGP]{lang="EN-US"}[同步状态机调试开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[fsm**]：表示IS-IS进程的LDP-IGP同步状态机调试开关。
 
-[**[query]{lang="EN-US"}**]{#struct_0_10226_54647_649553177}[：表示]{style="font-family:宋体"}[IS-IS]{lang="EN-US"}[进程]{style="font-family:宋体"}[向]{style="font-family:宋体"}[LDP]{lang="EN-US"}[进程发送消息队列的]{style="font-family:宋体"}[调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[query**]：表示IS-IS进程向LDP进程发送消息队列的调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_10226_54647_420988353}
+【描述】
 
-[**[debugging isis mpls ldp sync]{lang="EN-US"}**]{#struct_0_10226_54647_x60450589}[命令用来打开]{style="font-family:
-宋体"}[LDP IS-IS]{lang="EN-US"}[同步]{style="font-family:
-宋体"}[调试信息开关。]{style="font-family:宋体"}**[undo debugging isis mpls ldp sync]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[LDP IS-IS]{lang="EN-US"}[同步]{style="font-family:宋体"}[调试信息开关。]{style="font-family:宋体"}
+**[debugging isis mpls ldp sync**]命令用来打开LDP IS-IS同步调试信息开关。**undo debugging isis mpls ldp sync**命令用来关闭LDP IS-IS同步调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}]{#struct_0_10226_54647_x504067251}[LDP IS-IS]{lang="EN-US"}[同步]{style="font-family:宋体"}[调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，LDP IS-IS同步调试信息开关处于关闭状态。
 
-[[执行本命令时，如果没有指定任何参数，则表示所有]{style="font-family:宋体"}]{#struct_0_10226_54647_x1277735349}[LDP IS-IS]{lang="EN-US"}[同步]{style="font-family:宋体"}[调试信息开关。]{style="font-family:宋体"}
+执行本命令时，如果没有指定任何参数，则表示所有LDP IS-IS同步调试信息开关。
 
-[[表1-11 ]{lang="EN-US"}[debugging isis mpls ldp sync event]{lang="EN-US"}]{#struct_0_10226_54647_x1831254200}[命令输出信息描述表]{style="font-family:黑体"}
+表1-11 debugging isis mpls ldp sync event命令输出信息描述表
 
-[]{#table_struct_0_x44674917}[[字段]{style="font-family:黑体"}]{#struct_0_10226_54647_1416137341}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10226_54647_x504132787}
+描述
 
-[[ISIS-LDP-SYNC]{lang="EN-US"}]{#struct_0_10226_54647_1050544032}
+ISIS-LDP-SYNC
 
-[[LDP IS-IS]{lang="EN-US"}]{#struct_0_10226_54647_x503674035}[同步]{style="font-family:宋体"}[调试信息]{style="font-family:宋体"}
+LDP IS-IS同步调试信息
 
-[[Subscribe LDP global famous port successfully.]{lang="EN-US"}]{#struct_0_10226_54647_x1951480818}
+Subscribe LDP global famous port successfully.
 
-[[订阅]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x503739571}[端口成功]{style="font-family:宋体"}
+订阅LDP端口成功
 
-[[Subscribe LDP global famous port failed.]{lang="EN-US"}]{#struct_0_10226_54647_1520110328}
+Subscribe LDP global famous port failed.
 
-[[订阅]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_627454914}[端口失败]{style="font-family:宋体"}
+订阅LDP端口失败
 
-[[Unsubscribe LDP global famous port successfully.]{lang="EN-US"}]{#struct_0_10226_54647_x504198322}
+Unsubscribe LDP global famous port successfully.
 
-[[注销]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_1785959864}[端口成功]{style="font-family:宋体"}
+注销LDP端口成功
 
-[[LDP port state change to up.]{lang="EN-US"}]{#struct_0_10226_54647_x504263858}
+LDP port state change to up.
 
-[[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x455967711}[端口状态变为]{style="font-family:宋体"}[up]{lang="EN-US"}
+LDP端口状态变为up
 
-[[LDP port state change to down.]{lang="EN-US"}]{#struct_0_10226_54647_x504329394}
+LDP port state change to down.
 
-[[LDP]{lang="EN-US"}]{#struct_0_10226_54647_245893770}[端口状态变为]{style="font-family:宋体"}[down]{lang="EN-US"}
+LDP端口状态变为down
 
-[[IS-IS connect LDP daemon successfully.]{lang="EN-US"}]{#struct_0_10226_54647_573826826}
+IS-IS connect LDP daemon successfully.
 
-[[ISIS]{lang="EN-US"}]{#struct_0_10226_54647_x504394930}[与]{style="font-family:宋体"}[LDP]{lang="EN-US"}[进程连接成功]{style="font-family:宋体"}
+ISIS与LDP进程连接成功
 
-[[IS-IS disconnect from LDP daemon.]{lang="EN-US"}]{#struct_0_10226_54647_x1686781047}
+IS-IS disconnect from LDP daemon.
 
-[[ISIS]{lang="EN-US"}]{#struct_0_10226_54647_x503936178}[与]{style="font-family:宋体"}[LDP]{lang="EN-US"}[进程断开]{style="font-family:宋体"}
+ISIS与LDP进程断开
 
-[[Receive LDP if-state message: *interfaceName*, ifIndex: *ifIndex*, ldpstate: ldp*State*, vrfIndex: *vrfIndex*.]{lang="EN-US"}]{#struct_0_10226_54647_x1166288135}
+Receive LDP if-state message: *interfaceName*, ifIndex: *ifIndex*, ldpstate: ldp*State*, vrfIndex: *vrfIndex*.
 
-[[接收到]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x504001714}[接口状态信息]{style="font-family:宋体"}
+接收到LDP接口状态信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[interfaceName]{lang="EN-US"}*[,]{lang="EN-US"}]{#struct_0_10226_54647_649487641}[：接口名称]{lang="EN-US" style="font-family:宋体"}
+·*interfaceName*,：接口名称
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ifIndex]{lang="EN-US"}*]{#struct_0_10226_54647_x504067250}[：接口索引]{lang="EN-US" style="font-family:宋体"}
+·*ifIndex*：接口索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ldpState]{lang="EN-US"}*]{#struct_0_10226_54647_x1277800885}[：]{lang="EN-US" style="font-family:宋体"}[LDP]{lang="EN-US"}[状态]{lang="EN-US" style="font-family:宋体"}
+·*ldpState*：LDP状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[vrfIndex]{lang="EN-US"}*]{#struct_0_10226_54647_x504132786}[：]{lang="EN-US" style="font-family:宋体"}[VPN]{lang="EN-US"}[实例索引]{lang="EN-US" style="font-family:宋体"}
+·*vrfIndex*：VPN实例索引
 
-[[Receive LDP if-state message: ifIndex(inactive): *ifIndex*, ldpstate: ldp*State*, vrfIndex: *vrfIndex*.]{lang="EN-US"}]{#struct_0_10226_54647_1050609568}
+Receive LDP if-state message: ifIndex(inactive): *ifIndex*, ldpstate: ldp*State*, vrfIndex: *vrfIndex*.
 
-[[接收到没有接口索引的]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x503674034}[接口状态信息]{style="font-family:宋体"}
+接收到没有接口索引的LDP接口状态信息
 
-[[Receive LDP push-finish message.]{lang="EN-US"}]{#struct_0_10226_54647_x1951415282}
+Receive LDP push-finish message.
 
-[[接收到]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_1408467451}[平滑结束消息]{style="font-family:宋体"}
+接收到LDP平滑结束消息
 
-[[Receive LDP disable message.]{lang="EN-US"}]{#struct_0_10226_54647_x503739570}
+Receive LDP disable message.
 
-[[接收到]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_1520175864}[去使能消息]{style="font-family:宋体"}
+接收到LDP去使能消息
 
-[[Receive LDP unknown message.]{lang="EN-US"}]{#struct_0_10226_54647_x504198325}
+Receive LDP unknown message.
 
-[[接收到未知的]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_1785501112}[消息]{style="font-family:宋体"}
+接收到未知的LDP消息
 
-[[Parse LDP message failed.]{lang="EN-US"}]{#struct_0_10226_54647_x504263861}
+Parse LDP message failed.
 
-[[解析]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x455377890}[信息失败]{style="font-family:宋体"}
+解析LDP信息失败
 
-[[LDP waiting timer expired.]{lang="EN-US"}]{#struct_0_10226_54647_x504329397}
+LDP waiting timer expired.
 
-[[LDP]{lang="EN-US"}]{#struct_0_10226_54647_246090378}[等待时间超时]{style="font-family:宋体"}
+LDP等待时间超时
 
-[[Create LDP waiting timer.]{lang="EN-US"}]{#struct_0_10226_54647_x504394933}
+Create LDP waiting timer.
 
-[[创建]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x1686715511}[等待定时器]{style="font-family:宋体"}
+创建LDP等待定时器
 
-[[Delete LDP waiting timer.]{lang="EN-US"}]{#struct_0_10226_54647_x503936181}
+Delete LDP waiting timer.
 
-[[删除]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x1166877948}[等待定时器]{style="font-family:宋体"}
+删除LDP等待定时器
 
-[[LDP break the connection.]{lang="EN-US"}]{#struct_0_10226_54647_x504001717}
+LDP break the connection.
 
-[[LDP]{lang="EN-US"}]{#struct_0_10226_54647_649422105}[断开连接]{style="font-family:宋体"}
+LDP断开连接
 
-[[LDP send buffer is free.]{lang="EN-US"}]{#struct_0_10226_54647_x504067253}
+LDP send buffer is free.
 
-[[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x1277604277}[发送缓冲区为空]{style="font-family:宋体"}
+LDP发送缓冲区为空
 
-[ ]{lang="EN-US"}
+表1-12 debugging isis mpls ldp sync fsm命令输出信息描述表
 
-[[表1-12 ]{lang="EN-US"}[debugging isis mpls ldp sync fsm]{lang="EN-US"}]{#struct_0_10226_54647_623006278}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x258001522}[[字段]{style="font-family:黑体"}]{#struct_0_10226_54647_x504132789}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10226_54647_1051461536}
+ISIS-LDP-SYNC
 
-[[ISIS-LDP-SYNC]{lang="EN-US"}]{#struct_0_10226_54647_x503674037}
+LDP IS-IS同步调试信息
 
-[[LDP IS-IS]{lang="EN-US"}]{#struct_0_10226_54647_x1951611890}[同步]{style="font-family:宋体"}[调试信息]{style="font-family:宋体"}
+Circuit(*interfaceName*) received event(ldp*Event*), LDP_SYNC state changed from *ldpSyncState1* to *ldpSyncState2*.
 
-[[Circuit(*interfaceName*) received event(ldp*Event*), LDP_SYNC state changed from *ldpSyncState1* to *ldpSyncState2*.]{lang="EN-US"}]{#struct_0_10226_54647_x1184797909}
+接口*interfaceName*收到事件ldp*Event*后，触发LDP同步状态机变化，接口的LDP同步状态由*ldpSyncState1*变为*ldpSyncState2*
 
-[[接口]{style="font-family:宋体"}*[interfaceName]{lang="EN-US"}*]{#struct_0_10226_54647_x503739573}[收到事件]{style="font-family:宋体"}[ldp*Event*]{lang="EN-US"}[后，触发]{style="font-family:宋体"}[LDP]{lang="EN-US"}[同步状态机变化，接口的]{style="font-family:宋体"}[LDP]{lang="EN-US"}[同步状态由]{style="font-family:宋体"}*[ldpSyncState1]{lang="EN-US"}*[变为]{style="font-family:宋体"}*[ldpSyncState2]{lang="EN-US"}*
+表1-13 debugging isis mpls ldp sync query命令输出信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表1-13 ]{lang="EN-US"}[debugging isis mpls ldp sync query]{lang="EN-US"}]{#struct_0_10226_54647_1519979256}[命令输出信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x266653478}[[字段]{style="font-family:黑体"}]{#struct_0_10226_54647_465122365}
+ISIS-LDP-SYNC
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10226_54647_x504198324}
+LDP IS-IS同步调试信息
 
-[[ISIS-LDP-SYNC]{lang="EN-US"}]{#struct_0_10226_54647_1785566648}
+Send LDP *msgType* message *resultState*: *interfaceName*, ifIndex: *ifIndex*.
 
-[[LDP IS-IS]{lang="EN-US"}]{#struct_0_10226_54647_x504263860}[同步]{style="font-family:宋体"}[调试信息]{style="font-family:宋体"}
+发送LDP信息
 
-[[Send LDP *msgType* message *resultState*: *interfaceName*, ifIndex: *ifIndex*.]{lang="EN-US"}]{#struct_0_10226_54647_x455443426}
+·*msgType**：*信息类型，取值为注册或注销
 
-[[发送]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x1890282310}[信息]{style="font-family:宋体"}
+·*resultState*：结果状态，取值为成功或失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[msgType]{lang="EN-US"}*]{#struct_0_10226_54647_x504329396}*[：]{style="font-family:宋体"}*[信息类型，取值为注册或注销]{style="font-family:宋体"}
+·*interfaceName*：接口名称
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[resultState]{lang="EN-US"}*]{#struct_0_10226_54647_246024842}[：结果状态，]{lang="EN-US" style="font-family:
-  宋体"}[取值为]{style="font-family:宋体"}[成功或失败]{lang="EN-US" style="font-family:宋体"}
+·*ifIndex*：接口索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[interfaceName]{lang="EN-US"}*]{#struct_0_10226_54647_1501667887}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+Resend LDP *msgType* message *resultState*: *interfaceName*, ifIndex: *ifIndex*.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ifIndex]{lang="EN-US"}*]{#struct_0_10226_54647_x504394932}[：接口索引]{lang="EN-US" style="font-family:宋体"}
+重新发送LDP信息
 
-[[Resend LDP *msgType* message *resultState*: *interfaceName*, ifIndex: *ifIndex*.]{lang="EN-US"}]{#struct_0_10226_54647_x1686649975}
+Send LDP smooth *msgType* message *resultState*.
 
-[[重新发送]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x503936180}[信息]{style="font-family:宋体"}
+发送LDP平滑信息
 
-[[Send LDP smooth *msgType* message *resultState*.]{lang="EN-US"}]{#struct_0_10226_54647_x1166812412}
+·*msgType*：信息类型，取值为平滑开始或结束
 
-[[发送]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x504001716}[平滑信息]{style="font-family:宋体"}
+·*resultState*：结果状态，取值为成功或失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[msgType]{lang="EN-US"}*]{#struct_0_10226_54647_649356569}[：信息类型，取值为平滑开始或结束]{style="font-family:宋体"}
+Resend LDP smooth *msgType* message *resultState*.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[resultState]{lang="EN-US"}*]{#struct_0_10226_54647_x235694037}[：结果状态，]{lang="EN-US" style="font-family:
-  宋体"}[取值为]{style="font-family:宋体"}[成功或失败]{lang="EN-US" style="font-family:宋体"}
+重新发送LDP平滑信息
 
-[[Resend LDP smooth *msgType* message *resultState*.]{lang="EN-US"}]{#struct_0_10226_54647_x504067252}
+【举例】
 
-[[重新发送]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x1277669813}[平滑信息]{style="font-family:宋体"}
+\# 在设备上打开所有LDP IS-IS同步调试信息开关后，在设备上配置LDP IS-IS同步功能，设备上将打印如下调试信息。
 
-[ ]{lang="EN-US"}
+\<Sysname\> debugging isis mpls ldp sync
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10226_54647_x924082818}
+\*Jun 25 14:15:57:736 2013 Sysname ISIS/7/ISISDBG: -MDC=1;
 
-[[\# ]{lang="EN-US"}]{#struct_0_10226_54647_x504132788}[在设备上打开所有]{style="font-family:宋体"}[LDP IS-IS]{lang="EN-US"}[同步调试信息开关后，在设备上配置]{style="font-family:宋体"}[LDP IS-IS]{lang="EN-US"}[同步功能，设备上将打印如下调试信息。]{style="font-family:宋体"}
+ISIS-LDP-SYNC: Subscribe LDP global famous port successfully.
 
-[[\<Sysname\> debugging isis mpls ldp sync]{lang="EN-US"}]{#struct_0_10226_54647_1051527072}
+*// 订阅LDP全局端口成功。*
 
-[[\*Jun 25 14:15:57:736 2013 Sysname ISIS/7/ISISDBG: -MDC=1;]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_x948636628}
+\*Jun 25 14:15:57:737 2013 Sysname ISIS/7/ISISDBG: -MDC=1;
 
-[[ISIS-LDP-SYNC: Subscribe LDP global famous port successfully.]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_243422700}
+ISIS-LDP-SYNC: LDP port state change to up.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_10226_54647_x503674036}*[订阅]{style="font-family:宋体"}[LDP]{lang="EN-US"}[全局端口成功。]{style="font-family:宋体"}*
+*[// LDP*]*端口状态变为up。*
 
-[[\*Jun 25 14:15:57:737 2013 Sysname ISIS/7/ISISDBG: -MDC=1; ]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_x1951546354}
+\*Jun 25 14:15:57:737 2013 Sysname ISIS/7/ISISDBG: -MDC=1;
 
-[[ISIS-LDP-SYNC: LDP port state change to up.]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_912128229}
+ISIS-LDP-SYNC: IS-IS connect LDP daemon successfully.
 
-[*[// LDP]{lang="EN-US"}*]{#struct_0_10226_54647_1271151335}*[端口状态变为]{style="font-family:宋体"}[up]{lang="EN-US"}[。]{style="font-family:宋体"}*
+*[// IS-IS*]*进程与LDP进程连接成功。*
 
-[[\*Jun 25 14:15:57:737 2013 Sysname ISIS/7/ISISDBG: -MDC=1; ]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_x503739572}
+\*Jun 25 14:15:57:737 2013 Sysname ISIS/7/ISISDBG: -MDC=1;
 
-[[ISIS-LDP-SYNC: IS-IS connect LDP daemon successfully.]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_1520044792}
+ISIS-LDP-SYNC: Send LDP smooth start message successfully.
 
-[*[// IS-IS]{lang="EN-US"}*]{#struct_0_10226_54647_1846501740}*[进程与]{style="font-family:宋体"}[LDP]{lang="EN-US"}[进程连接成功。]{style="font-family:宋体"}*
+*// 发送LDP平滑开始信息成功。*
 
-[[\*Jun 25 14:15:57:737 2013 Sysname ISIS/7/ISISDBG: -MDC=1; ]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_2108274634}
+\*Jun 25 14:15:57:737 2013 Sysname ISIS/7/ISISDBG: -MDC=1;
 
-[[ISIS-LDP-SYNC: Send LDP smooth start message successfully.]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_1813834130}
+ISIS-LDP-SYNC: Send LDP register message successfully: GigabitEthernet1/0/2, ifIndex: 3.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_10226_54647_1061885620}*[发送]{style="font-family:宋体"}[LDP]{lang="EN-US"}[平滑开始信息成功。]{style="font-family:宋体"}*
+*// 发送LDP注册信息成功：接口为GigabitEthernet1/0/2，接口索引为3。*
 
-[[\*Jun 25 14:15:57:737 2013 Sysname ISIS/7/ISISDBG: -MDC=1; ]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_x248538675}
+\*Jun 25 14:15:57:738 2013 Sysname ISIS/7/ISISDBG: -MDC=1;
 
-[[ISIS-LDP-SYNC: Send LDP register message successfully: GigabitEthernet1/0/2, ifIndex: 3.]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_x640109046}
+ISIS-LDP-SYNC: Send LDP smooth end message successfully.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_10226_54647_1546660409}*[发送]{style="font-family:宋体"}[LDP]{lang="EN-US"}[注册信息成功：接口为]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[，接口索引为]{style="font-family:宋体"}[3]{lang="EN-US"}[。]{style="font-family:宋体"}*
+*// 发送LDP平滑结束信息成功。*
 
-[[\*Jun 25 14:15:57:738 2013 Sysname ISIS/7/ISISDBG: -MDC=1; ]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_1061820084}
+\*Jun 25 14:17:23:883 2013 Sysname ISIS/7/ISISDBG: -MDC=1;
 
-[[ISIS-LDP-SYNC: Send LDP smooth end message successfully.]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_x612478260}
+ISIS-LDP-SYNC: Receive LDP if-state message: GigabitEthernet1/0/2, ifIndex: 3, ldpstate: no-ldp, vrfIndex: 0.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_10226_54647_1347581818}*[发送]{style="font-family:宋体"}[LDP]{lang="EN-US"}[平滑结束信息成功。]{style="font-family:宋体"}*
+*// 接收LDP接口状态信息：接口为GigabitEthernet1/0/2，接口索引为3，LDP状态为no-ldp，实例索引为0。*
 
-[[\*Jun 25 14:17:23:883 2013 Sysname ISIS/7/ISISDBG: -MDC=1; ]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_71219151}
+\*Jun 25 14:17:23:883 2013 Sysname ISIS/7/ISISDBG: -MDC=1;
 
-[[ISIS-LDP-SYNC: Receive LDP if-state message: GigabitEthernet1/0/2, ifIndex: 3, ldpstate: no-ldp, vrfIndex: 0.]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_1906951573}
+ISIS-LDP-SYNC: Circuit(GigabitEthernet1/0/2) received event(IGP_LDP_IF_UP), LDP_SYNC state changed from INIT to SYNC_ACHIEVED.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_10226_54647_1061754548}*[接收]{style="font-family:宋体"}[LDP]{lang="EN-US"}[接口状态信息：接口为]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[，接口索引为]{style="font-family:宋体"}[3]{lang="EN-US"}[，]{style="font-family:宋体"}[LDP]{lang="EN-US"}[状态为]{style="font-family:宋体"}[no-ldp]{lang="EN-US"}[，实例索引为]{style="font-family:宋体"}[0]{lang="EN-US"}[。]{style="font-family:宋体"}*
+*[// GigabitEthernet1/0/2*]*接口的LDP状态变为no-ldp触发LDP同步状态机变化，接口的LDP同步状态由INIT变为SYNC_ACHIEVED。*
 
-[[\*Jun 25 14:17:23:883 2013 Sysname ISIS/7/ISISDBG: -MDC=1; ]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_x1397348901}
+\*Jun 25 14:17:23:884 2013 Sysname ISIS/7/ISISDBG: -MDC=1;
 
-[[ISIS-LDP-SYNC: Circuit(GigabitEthernet1/0/2) received event(IGP_LDP_IF_UP), LDP_SYNC state changed from INIT to SYNC_ACHIEVED. ]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_298388159}
+ISIS-LDP-SYNC: Receive LDP push-finish message.
 
-[*[// GigabitEthernet1/0/2]{lang="EN-US"}*]{#struct_0_10226_54647_226614925}*[接口的]{style="font-family:
-宋体"}[LDP]{lang="EN-US"}[状态变为]{style="font-family:宋体"}[no-ldp]{lang="EN-US"}[触发]{style="font-family:宋体"}[LDP]{lang="EN-US"}[同步状态机变化，接口的]{style="font-family:宋体"}[LDP]{lang="EN-US"}[同步状态由]{style="font-family:宋体"}[INIT]{lang="EN-US"}[变为]{style="font-family:宋体"}[SYNC_ACHIEVED]{lang="EN-US"}[。]{style="font-family:宋体"}*
-
-[[\*Jun 25 14:17:23:884 2013 Sysname ISIS/7/ISISDBG: -MDC=1; ]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_1061689012}
-
-[[ISIS-LDP-SYNC: Receive LDP push-finish message.]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_1746805580}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_10226_54647_x1733106428}*[接收到]{style="font-family:宋体"}[LDP push-finish]{lang="EN-US"}[信息。]{style="font-family:宋体"}*
-
-::: {#874550062 .myid}
-[]{#_Toc404790515}[]{#struct_0_10226_54647_1533685275}[]{#_Toc358904299}[]{#_Toc355341531}
+*// 接收到LDP push-finish信息。*
 
 **LDP \-- LDP调试命令 \-- debugging ospf mpls ldp sync**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_10226_54647_x132919860}
+【命令】
 
-[**[debugging ospf mpls ldp sync ]{lang="EN-US"}**[\[ **event** \| **fsm** \| **query** \] ]{lang="EN-US"}]{#struct_0_10226_54647_1062147764}
+**[debugging ospf mpls ldp sync **[[ **event** \| **fsm** \| **query** ] ]]
 
-[**[undo debugging ospf mpls ldp sync ]{lang="EN-US"}**[ \[ **event** \| **fsm** \| **query** \]]{lang="EN-US"}]{#struct_0_10226_54647_x1549892628}
+**[undo debugging ospf mpls ldp sync **[ [ **event** \| **fsm** \| **query** ]]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_10226_54647_x216517362}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_10226_54647_x1723119845}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_10226_54647_1062082228}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_10226_54647_403717380}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_10226_54647_2012836946}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_10226_54647_x1302798122}
+【参数】
 
-[**[event]{lang="EN-US"}**]{#struct_0_10226_54647_1062016692}[：表示]{style="font-family:宋体"}[OSPF]{lang="EN-US"}[进程]{style="font-family:宋体"}[收到的]{style="font-family:宋体"}[LDP-IGP]{lang="EN-US"}[同步]{style="font-family:宋体"}[事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：表示OSPF进程收到的LDP-IGP同步事件调试信息开关。
 
-[**[fsm]{lang="EN-US"}**]{#struct_0_10226_54647_1979518821}[：表示]{style="font-family:宋体"}[OSPF]{lang="EN-US"}[进程的]{style="font-family:宋体"}[LDP-IGP]{lang="EN-US"}[同步状态机调试开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[fsm**]：表示OSPF进程的LDP-IGP同步状态机调试开关。
 
-[**[query]{lang="EN-US"}**]{#struct_0_10226_54647_x737243254}[：表示]{style="font-family:宋体"}[OSPF]{lang="EN-US"}[进程]{style="font-family:宋体"}[向]{style="font-family:宋体"}[LDP]{lang="EN-US"}[进程发送消息队列的]{style="font-family:宋体"}[调试信息开关]{style="font-family:宋体"}[。]{style="font-family:宋体"}
+**[query**]：表示OSPF进程向LDP进程发送消息队列的调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_10226_54647_x531278200}
+【描述】
 
-[**[debugging ospf mpls ldp sync]{lang="EN-US"}**]{#struct_0_10226_54647_1510115016}[命令用来打开]{style="font-family:
-宋体"}[LDP OSPF]{lang="EN-US"}[同步]{style="font-family:宋体"}[调试信息开关。]{style="font-family:宋体"}**[undo debugging ospf mpls ldp sync]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[LDP OSPF]{lang="EN-US"}[同步]{style="font-family:宋体"}[调试信息开关。]{style="font-family:宋体"}
+**[debugging ospf mpls ldp sync**]命令用来打开LDP OSPF同步调试信息开关。**undo debugging ospf mpls ldp sync**命令用来关闭LDP OSPF同步调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}]{#struct_0_10226_54647_1061951156} [LDP OSPF]{lang="EN-US"}[同步]{style="font-family:宋体"}[调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下， LDP OSPF同步调试信息开关处于关闭状态。
 
-[[执行本命令时，如果没有指定任何参数，则表示所有]{style="font-family:宋体"}]{#struct_0_10226_54647_x228473019}[LDP OSPF]{lang="EN-US"}[同步]{style="font-family:宋体"}[调试信息开关。]{style="font-family:宋体"}
+执行本命令时，如果没有指定任何参数，则表示所有LDP OSPF同步调试信息开关。
 
-[[表1-14 ]{lang="EN-US"}[debugging ospf mpls ldp sync event]{lang="EN-US"}]{#struct_0_10226_54647_20799272}[命令输出信息描述表]{style="font-family:黑体"}
+表1-14 debugging ospf mpls ldp sync event命令输出信息描述表
 
-[]{#table_struct_0_x243667873}[[字段]{style="font-family:黑体"}]{#struct_0_10226_54647_1062409908}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10226_54647_2056790795}
+描述
 
-[[LDP waiting timer expired.]{lang="EN-US"}]{#struct_0_10226_54647_168368232}
+LDP waiting timer expired.
 
-[[LDP]{lang="EN-US"}]{#struct_0_10226_54647_1062344372}[等待定时器超时]{style="font-family:宋体"}
+LDP等待定时器超时
 
-[[Create LDP waiting timer.]{lang="EN-US"}]{#struct_0_10226_54647_x381802918}
+Create LDP waiting timer.
 
-[[创建]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_1703894071}[等待定时器]{style="font-family:宋体"}
+创建LDP等待定时器
 
-[[Delete LDP waiting timer.]{lang="EN-US"}]{#struct_0_10226_54647_1061885621}
+Delete LDP waiting timer.
 
-[[删除]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x248604211}[等待定时器]{style="font-family:宋体"}
+删除LDP等待定时器
 
-[[Receive LDP if-state message: *interfaceName*, ifIndex: *ifIndex*, ldpstate: *state*, vrfIndex: *vrfIndex*.]{lang="EN-US"}]{#struct_0_10226_54647_1735540515}
+Receive LDP if-state message: *interfaceName*, ifIndex: *ifIndex*, ldpstate: *state*, vrfIndex: *vrfIndex*.
 
-[[接收到]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_1061820085}[接口状态信息]{style="font-family:宋体"}
+接收到LDP接口状态信息
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[interfaceName]{lang="EN-US"}*]{#struct_0_10226_54647_x612543796}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+·*interfaceName*：接口名称
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ifIndex]{lang="EN-US"}*]{#struct_0_10226_54647_1061754549}[：接口索引]{lang="EN-US" style="font-family:宋体"}
+·*ifIndex*：接口索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[state]{lang="EN-US"}*]{#struct_0_10226_54647_x1397283365}[：]{lang="EN-US" style="font-family:宋体"}[LDP]{lang="EN-US"}[状态]{lang="EN-US" style="font-family:宋体"}
+·*state*：LDP状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[vrfIndex]{lang="EN-US"}*]{#struct_0_10226_54647_1853290249}[：]{lang="EN-US" style="font-family:宋体"}[VPN]{lang="EN-US"}[实例索引]{lang="EN-US" style="font-family:宋体"}
+·*vrfIndex*：VPN实例索引
 
-[[Receive LDP if-state message: ifIndex(inactive): *ifIndex*, ldpstate: *state*, vrfIndex: *vrfIndex*.]{lang="EN-US"}]{#struct_0_10226_54647_1061689013}
+Receive LDP if-state message: ifIndex(inactive): *ifIndex*, ldpstate: *state*, vrfIndex: *vrfIndex*.
 
-[[接收到没有接口索引的]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_1746740044}[接口状态信息]{style="font-family:宋体"}
+接收到没有接口索引的LDP接口状态信息
 
-[[LDP send buffer is free.]{lang="EN-US"}]{#struct_0_10226_54647_1062147765}
+LDP send buffer is free.
 
-[[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x1549958164}[发送缓冲区为空]{style="font-family:宋体"}
+LDP发送缓冲区为空
 
-[[LDP break the connection.]{lang="EN-US"}]{#struct_0_10226_54647_1018032493}
+LDP break the connection.
 
-[[LDP]{lang="EN-US"}]{#struct_0_10226_54647_1062082229}[断开连接]{style="font-family:宋体"}
+LDP断开连接
 
-[[Receive LDP state message.]{lang="EN-US"}]{#struct_0_10226_54647_403651844}
+Receive LDP state message.
 
-[[接收到]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x1895521001}[状态信息]{style="font-family:宋体"}
+接收到LDP状态信息
 
-[[Receive LDP push-finish message.]{lang="EN-US"}]{#struct_0_10226_54647_1062016693}
+Receive LDP push-finish message.
 
-[[接收到]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_1979584357}[平滑结束消息]{style="font-family:宋体"}
+接收到LDP平滑结束消息
 
-[[Receive LDP disable message.]{lang="EN-US"}]{#struct_0_10226_54647_1061951157}
+Receive LDP disable message.
 
-[[接收到]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x228407483}[去使能消息]{style="font-family:宋体"}
+接收到LDP去使能消息
 
-[[Receive LDP unknown message.]{lang="EN-US"}]{#struct_0_10226_54647_1062409909}
+Receive LDP unknown message.
 
-[[接收到未知的]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_2056725259}[消息]{style="font-family:宋体"}
+接收到未知的LDP消息
 
-[[Parse LDP message failed.]{lang="EN-US"}]{#struct_0_10226_54647_615108973}
+Parse LDP message failed.
 
-[[解析]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_1062344373}[信息失败]{style="font-family:宋体"}
+解析LDP信息失败
 
-[[OSPF connect LDP daemon successfully.]{lang="EN-US"}]{#struct_0_10226_54647_x381868454}
+OSPF connect LDP daemon successfully.
 
-[[OSPF]{lang="EN-US"}]{#struct_0_10226_54647_1061885618}[与]{style="font-family:宋体"}[LDP]{lang="EN-US"}[进程连接成功]{style="font-family:宋体"}
+OSPF与LDP进程连接成功
 
-[[OSPF disconnect from LDP daemon.]{lang="EN-US"}]{#struct_0_10226_54647_x248014390}
+OSPF disconnect from LDP daemon.
 
-[[OSPF]{lang="EN-US"}]{#struct_0_10226_54647_1061820082}[与]{style="font-family:宋体"}[LDP]{lang="EN-US"}[断开连接]{style="font-family:宋体"}
+OSPF与LDP断开连接
 
-[[LDP port state change to up.]{lang="EN-US"}]{#struct_0_10226_54647_x612609332}
+LDP port state change to up.
 
-[[LDP]{lang="EN-US"}]{#struct_0_10226_54647_946537242}[端口状态变为]{style="font-family:宋体"}[up]{lang="EN-US"}
+LDP端口状态变为up
 
-[[LDP port state change to down.]{lang="EN-US"}]{#struct_0_10226_54647_1061754546}
+LDP port state change to down.
 
-[[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x1396431397}[端口状态变为]{style="font-family:宋体"}[down]{lang="EN-US"}
+LDP端口状态变为down
 
-[[Subscribe LDP global famous port successfully.]{lang="EN-US"}]{#struct_0_10226_54647_1061689010}
+Subscribe LDP global famous port successfully.
 
-[[订阅]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_1746936652}[端口成功]{style="font-family:宋体"}
+订阅LDP端口成功
 
-[[Subscribe LDP global famous port failed.]{lang="EN-US"}]{#struct_0_10226_54647_1062147762}
+Subscribe LDP global famous port failed.
 
-[[订阅]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x1549761556}[端口失败]{style="font-family:宋体"}
+订阅LDP端口失败
 
-[[Unsubscribe LDP global famous port successfully.]{lang="EN-US"}]{#struct_0_10226_54647_1062082226}
+Unsubscribe LDP global famous port successfully.
 
-[[注销]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_403324164}[端口成功]{style="font-family:宋体"}
+注销LDP端口成功
 
-[ ]{lang="EN-US"}
+表1-15 debugging ospf mpls ldp sync fsm命令输出信息描述表
 
-[[表1-15 ]{lang="EN-US"}[debugging ospf mpls ldp sync fsm]{lang="EN-US"}]{#struct_0_10226_54647_x830370877}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x213173208}[[字段]{style="font-family:黑体"}]{#struct_0_10226_54647_1062016690}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10226_54647_1979387749}
+Circuit(*interfaceName*) received event(ldp*Event*), LDP_SYNC state changed from *ldpSyncState1* to *ldpSyncState2*.
 
-[[Circuit(*interfaceName*) received event(ldp*Event*), LDP_SYNC state changed from *ldpSyncState1* to *ldpSyncState2*. ]{lang="EN-US"}]{#struct_0_10226_54647_438008877}
+接口*interfaceName*收到事件ldp*Event*后，触发LDP同步状态机变化，接口的LDP同步状态由*ldpSyncState1*变为*ldpSyncState2*
 
-[[接口]{style="font-family:宋体"}*[interfaceName]{lang="EN-US"}*]{#struct_0_10226_54647_1061951154}[收到事件]{style="font-family:宋体"}[ldp*Event*]{lang="EN-US"}[后，触发]{style="font-family:宋体"}[LDP]{lang="EN-US"}[同步状态机变化，接口的]{style="font-family:宋体"}[LDP]{lang="EN-US"}[同步状态由]{style="font-family:宋体"}*[ldpSyncState1]{lang="EN-US"}*[变为]{style="font-family:宋体"}*[ldpSyncState2]{lang="EN-US"}*
+表1-16 debugging ospf mpls ldp query命令输出信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表1-16 ]{lang="EN-US"}[debugging ospf mpls ldp query]{lang="EN-US"}]{#struct_0_10226_54647_x228604091}[命令输出信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x214933011}[[字段]{style="font-family:黑体"}]{#struct_0_10226_54647_x1894764747}
+Send LDP *msgType* message *resultState*: *interfaceName*, ifIndex: *ifIndex*.
 
-[[描述]{style="font-family:黑体"}]{#struct_0_10226_54647_x291570439}
+发送LDP信息
 
-[[Send LDP *msgType* message *resultState*: *interfaceName*, ifIndex: *ifIndex*.]{lang="EN-US"}]{#struct_0_10226_54647_1062409906}
+·*msgType*：信息类型，取值为注册或注销
 
-[[发送]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_2057446155}[信息]{style="font-family:宋体"}
+·*resultState*：结果状态，取值为成功或失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[msgType]{lang="EN-US"}*]{#struct_0_10226_54647_240147823}[：信息类型，取值为注册或注销]{style="font-family:宋体"}
+·*interfaceName*：接口名称
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[resultState]{lang="EN-US"}*]{#struct_0_10226_54647_1062344370}[：结果状态，]{lang="EN-US" style="font-family:
-  宋体"}[取值为]{style="font-family:宋体"}[成功或失败]{lang="EN-US" style="font-family:宋体"}
+·*ifIndex*：接口索引
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[interfaceName]{lang="EN-US"}*]{#struct_0_10226_54647_x381671846}[：接口名称]{lang="EN-US" style="font-family:
-  宋体"}
+Resend LDP *msgType* message *resultState*: *circuitName*, ifIndex: *ifIndex*.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[ifIndex]{lang="EN-US"}*]{#struct_0_10226_54647_x656819765}[：接口索引]{lang="EN-US" style="font-family:宋体"}
+重新发送LDP信息
 
-[[Resend LDP *msgType* message *resultState*: *circuitName*, ifIndex: *ifIndex*.]{lang="EN-US"}]{#struct_0_10226_54647_1061885619}
+Send LDP smooth *msgType resultState*.
 
-[[重新发送]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x248079926}[信息]{style="font-family:宋体"}
+发送LDP平滑信息
 
-[[Send LDP smooth *msgType resultState*.]{lang="EN-US"}]{#struct_0_10226_54647_x1494210081}
+·*msgType*：信息类型，取值为平滑开始或结束
 
-[[发送]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_1061820083}[平滑信息]{style="font-family:宋体"}
+·*resultState*：结果状态，取值为成功或失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[msgType]{lang="EN-US"}*]{#struct_0_10226_54647_x612674868}[：信息类型，取值为平滑开始或结束]{style="font-family:宋体"}
+Resend LDP smooth *msgType resultState*.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}*[resultState]{lang="EN-US"}*]{#struct_0_10226_54647_1404740940}[：结果状态，]{lang="EN-US" style="font-family:
-  宋体"}[取值为]{style="font-family:宋体"}[成功或失败]{lang="EN-US" style="font-family:宋体"}
+重新发送LDP平滑信息
 
-[[Resend LDP smooth *msgType resultState*.]{lang="EN-US"}]{#struct_0_10226_54647_1061754547}
+【举例】
 
-[[重新发送]{style="font-family:宋体"}[LDP]{lang="EN-US"}]{#struct_0_10226_54647_x1396365861}[平滑信息]{style="font-family:宋体"}
+\# 在设备上打开所有LDP OSPF同步调试信息开关后，在设备上配置LDP OSPF同步功能，设备上将打印如下调试信息。
 
-[ ]{lang="EN-US"}
+\<Sysname\> debugging ospf mpls ldp sync
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_10226_54647_1756764883}
+\*Jun 25 16:34:47:352 2013 Sysname OSPF/7/DEBUG: -MDC=1; Subscribe LDP global famous port successfully.
 
-[[\# ]{lang="EN-US"}]{#struct_0_10226_54647_1061689011}[在设备上打开所有]{style="font-family:宋体"}[LDP OSPF]{lang="EN-US"}[同步调试信息开关后，在设备上配置]{style="font-family:宋体"}[LDP OSPF]{lang="EN-US"}[同步功能，设备上将打印如下调试信息。]{style="font-family:宋体"}
+*// 订阅LDP全局端口成功。*
 
-[[\<Sysname\> debugging ospf mpls ldp sync]{lang="EN-US"}]{#struct_0_10226_54647_1746871116}
+\*Jun 25 16:34:47:353 2013 Sysname OSPF/7/DEBUG: -MDC=1; LDP port state change to up.
 
-[[\*Jun 25 16:34:47:352 2013 Sysname OSPF/7/DEBUG: -MDC=1; Subscribe LDP global famous port successfully.]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_x189548695}
+*[// LDP*]*端口状态变为up。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_10226_54647_x1057972228}*[订阅]{style="font-family:宋体"}[LDP]{lang="EN-US"}[全局端口成功。]{style="font-family:宋体"}*
+\*Jun 25 16:34:47:354 2013 Sysname OSPF/7/DEBUG: -MDC=1; OSPF connect LDP daemon successfully.
 
-[[\*Jun 25 16:34:47:353 2013 Sysname OSPF/7/DEBUG: -MDC=1; LDP port state change to up.]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_427797804}
+*[// OSPF*]*进程与LDP进程连接成功。*
 
-[*[// LDP]{lang="EN-US"}*]{#struct_0_10226_54647_1062147763}*[端口状态变为]{style="font-family:宋体"}[up]{lang="EN-US"}[。]{style="font-family:宋体"}*
+\*Jun 25 16:34:47:354 2013 Sysname OSPF/7/DEBUG: -MDC=1; Send LDP smooth start message successfully.
 
-[[\*Jun 25 16:34:47:354 2013 Sysname OSPF/7/DEBUG: -MDC=1; OSPF connect LDP daemon successfully.]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_x1549827092}
+*// 发送LDP平滑开始信息成功。*
 
-[*[// OSPF]{lang="EN-US" style="font-size:10.5pt;font-family:\"Arial\",\"sans-serif\""}*]{#struct_0_10226_54647_x233136577}*[进程与]{style="font-size:10.5pt;font-family:宋体"}[LDP]{lang="EN-US" style="font-size:10.5pt;font-family:\"Arial\",\"sans-serif\""}[进程连接成功。]{style="font-size:10.5pt;font-family:宋体"}*
+\*Jun 25 16:34:47:354 2013 Sysname OSPF/7/DEBUG: -MDC=1; Send LDP register message successfully: GigabitEthernet1/0/2, ifIndex: 3.
 
-[[\*Jun 25 16:34:47:354 2013 Sysname OSPF/7/DEBUG: -MDC=1; Send LDP smooth start message successfully.]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_x1349322539}
+*// 发送LDP注册信息成功：接口为GigabitEthernet1/0/2，接口索引为3。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_10226_54647_1822791167}*[发送]{style="font-family:宋体"}[LDP]{lang="EN-US"}[平滑开始信息成功。]{style="font-family:宋体"}*
+\*Jun 25 16:34:47:354 2013 Sysname OSPF/7/DEBUG: -MDC=1; Send LDP smooth end message successfully.
 
-[[\*Jun 25 16:34:47:354 2013 Sysname OSPF/7/DEBUG: -MDC=1; Send LDP register message successfully: GigabitEthernet1/0/2, ifIndex: 3.]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_1062082227}
+*// 发送LDP平滑结束信息成功。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_10226_54647_403258628}*[发送]{style="font-family:宋体"}[LDP]{lang="EN-US"}[注册信息成功：接口为]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[，接口索引为]{style="font-family:宋体"}[3]{lang="EN-US"}[。]{style="font-family:宋体"}*
+\*Jun 25 16:36:13:707 2013 Sysname OSPF/7/DEBUG: -MDC=1; Receive LDP state message.
 
-[[\*Jun 25 16:34:47:354 2013 Sysname OSPF/7/DEBUG: -MDC=1; Send LDP smooth end message successfully.]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_x56944899}
+*// 接收LDP状态信息。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_10226_54647_x862290828}*[发送]{style="font-family:宋体"}[LDP]{lang="EN-US"}[平滑结束信息成功。]{style="font-family:宋体"}*
+\*Jun 25 16:36:13:707 2013 Sysname OSPF/7/DEBUG: -MDC=1; Receive LDP push-finish message.
 
-[[\*Jun 25 16:36:13:707 2013 Sysname OSPF/7/DEBUG: -MDC=1; Receive LDP state message.]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_x2135416672}
+*// 接收LDP push-finish信息。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_10226_54647_1062016691}*[接收]{style="font-family:宋体"}[LDP]{lang="EN-US"}[状态信息。]{style="font-family:宋体"}*
+\*Jun 25 16:36:13:707 2013 Sysname OSPF/7/DEBUG: -MDC=1; Receive LDP if-state message: GigabitEthernet1/0/2, ifIndex: 3, ldpstate: no-ldp, vrfIndex: 0.
 
-[[\*Jun 25 16:36:13:707 2013 Sysname OSPF/7/DEBUG: -MDC=1; Receive LDP push-finish message.]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_1979453285}
+*// 接收LDP接口状态信息：接口为GigabitEthernet1/0/2，接口索引为3，LDP状态为no-ldp，实例索引为0。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_10226_54647_1194043686}*[接收]{style="font-family:宋体"}[LDP push-finish]{lang="EN-US"}[信息。]{style="font-family:宋体"}*
+\*Jun 25 16:36:43:508 2013 Sysname OSPF/7/DEBUG: -MDC=1; Circuit(GigabitEthernet1/0/2) received event(IGP_LDP_IF_UP), LDP_SYNC state changed from INIT to SYNC_ACHIEVED.
 
-[[\*Jun 25 16:36:13:707 2013 Sysname OSPF/7/DEBUG: -MDC=1; Receive LDP if-state message: GigabitEthernet1/0/2, ifIndex: 3, ldpstate: no-ldp, vrfIndex: 0.]{lang="EN-US" style="font-size:8.5pt;font-family:\"Courier New\""}]{#struct_0_10226_54647_120126164}
+*[// GigabitEthernet1/0/2*]*接口接收到IGP_LDP_NO_LDP事件触发LDP同步状态机裱花，接口的LDP同步状态由INIT变为SYNC_ACHIEVED*。
 
-[*[// ]{lang="EN-US"}*]{#struct_0_10226_54647_x1860069173}*[接收]{style="font-family:宋体"}[LDP]{lang="EN-US"}[接口状态信息：接口为]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[，接口索引为]{style="font-family:宋体"}[3]{lang="EN-US"}[，]{style="font-family:宋体"}[LDP]{lang="EN-US"}[状态为]{style="font-family:宋体"}[no-ldp]{lang="EN-US"}[，实例索引为]{style="font-family:宋体"}[0]{lang="EN-US"}[。]{style="font-family:宋体"}*
-
-[[\*Jun 25 16:36:43:508 2013 Sysname OSPF/7/DEBUG: -MDC=1; Circuit(GigabitEthernet1/0/2) received event(IGP_LDP_IF_UP), LDP_SYNC state changed from INIT to SYNC_ACHIEVED.]{lang="EN-US"}]{#struct_0_10226_54647_1061951155}
-
-[*[// GigabitEthernet1/0/2]{lang="EN-US"}*]{#struct_0_10226_54647_x228538555}*[接口接收到]{style="font-family:
-宋体"}[IGP_LDP_NO_LDP]{lang="EN-US"}[事件触发]{style="font-family:宋体"}[LDP]{lang="EN-US"}[同步状态机裱花，接口的]{style="font-family:宋体"}[LDP]{lang="EN-US"}[同步状态由]{style="font-family:宋体"}[INIT]{lang="EN-US"}[变为]{style="font-family:宋体"}[SYNC_ACHIEVED]{lang="EN-US"}*[。]{style="font-size:8.5pt;font-family:宋体"}
-
-[ ]{lang="EN-US"}

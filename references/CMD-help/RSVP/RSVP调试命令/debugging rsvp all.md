@@ -1,1780 +1,1720 @@
-::: {#433753167 .myid}
-[]{#_Toc404790950}[]{#struct_0_x6691_30153_180352295}
 
 **RSVP \-- RSVP调试命令 \-- debugging rsvp all**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x6691_30153_264780302}
+【命令】
 
-[**[debugging rsvp all]{lang="EN-US"}**]{#struct_0_x6691_30153_x1633020653}
+**[debugging rsvp all**]
 
-[**[undo debugging rsvp all]{lang="EN-US"}**]{#struct_0_x6691_30153_234770155}
+**[undo debugging rsvp all**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x252859436}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x6691_30153_1465459531}
+用户视图
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x6691_30153_447030028}
+【参数】
 
-[[无]{style="font-family:宋体"}]{#struct_0_x6691_30153_x759422995}
+无
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x234813093}
+【描述】
 
-[**[debugging rsvp all]{lang="EN-US"}**]{#struct_0_x6691_30153_x699181127}[命令用来打开]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[所有调试信息开关。]{style="font-family:宋体"}**[undo debugging rsvp authentication]{lang="EN-US"}**[命令用来关闭]{style="font-family:
-宋体"}[RSVP]{lang="EN-US"}[所有调试信息开关。]{style="font-family:宋体"}
+**[debugging rsvp all**]命令用来打开RSVP所有调试信息开关。**undo debugging rsvp authentication**命令用来关闭RSVP所有调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[RSVP]{lang="EN-US"}]{#struct_0_x6691_30153_x21384952}[所有的调试信息开关均处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，RSVP所有的调试信息开关均处于关闭状态。
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x6691_30153_2004091744}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x6691_30153_x1632561901}[打开]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[的所有调试信息开关。]{style="font-family:宋体"}
+\# 打开RSVP的所有调试信息开关。
 
-[[\<Sysname\> debugging rsvp all]{lang="EN-US"}]{#struct_0_x6691_30153_x1394327695}
-:::
-
-::: {#24512083 .myid}
-[]{#_Toc404790951}[]{#struct_0_x6691_30153_x1045754649}[]{#_Toc253298421}[]{#_Toc130718952}[]{#_Toc87257691}
+\<Sysname\> debugging rsvp all
 
 **RSVP \-- RSVP调试命令 \-- debugging rsvp authentication**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x212157216}
+【命令】
 
-[**[debugging rsvp authentication]{lang="EN-US"}**]{#struct_0_x6691_30153_x311277898}
+**[debugging rsvp authentication**]
 
-[**[undo debugging rsvp authentication]{lang="EN-US"}**]{#struct_0_x6691_30153_x1907997043}
+**[undo debugging rsvp authentication**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x134599679}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x6691_30153_x1211559244}
+用户视图
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x6691_30153_1132128551}
+【参数】
 
-[[无]{style="font-family:宋体"}]{#struct_0_x6691_30153_x1632627437}
+无
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_x6691_30153_2065792052}
+【描述】
 
-[**[debugging rsvp authentication]{lang="EN-US"}**]{#struct_0_x6691_30153_1070739557}[命令用来打开]{style="font-family:
-宋体"}[RSVP]{lang="EN-US"}[认证调试信息开关。]{style="font-family:宋体"}**[undo debugging rsvp authentication]{lang="EN-US"}**[命令用来关闭]{style="font-family:
-宋体"}[RSVP]{lang="EN-US"}[认证调试信息开关。]{style="font-family:宋体"}
+**[debugging rsvp authentication**]命令用来打开RSVP认证调试信息开关。**undo debugging rsvp authentication**命令用来关闭RSVP认证调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[RSVP]{lang="EN-US"}]{#struct_0_x6691_30153_x1605756104}[认证调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，RSVP认证调试信息开关处于关闭状态。
 
-[]{#struct_0_x6691_30153_1276008522}[[表1-1 ]{lang="EN-US"}[debugging rsvp authentication]{lang="EN-US"}]{#_Toc130718927}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging rsvp authentication命令输出信息描述表
 
-[]{#table_struct_0_290856627}[[字段]{style="font-family:黑体"}]{#struct_0_x6691_30153_x975597519}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x6691_30153_721045864}
+描述
 
-[[Looking up SA for the incoming *message-type* message: from *start-address* to *end-address*.]{lang="EN-US"}]{#struct_0_x6691_30153_x184643697}
+Looking up SA for the incoming *message-type* message: from *start-address* to *end-address*.
 
-[[为接收的]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*]{#struct_0_x6691_30153_x1632692973}[报文查找认证关联：起点地址]{style="font-family:宋体"}*[start-address]{lang="EN-US"}*[，终点地址]{style="font-family:宋体"}*[end-address]{lang="EN-US"}*
+为接收的*message-type*报文查找认证关联：起点地址*start-address*，终点地址*end-address*
 
-[[Looking up SA for the outgoing *message-type* message: from *start-address* to *end-address*.]{lang="EN-US"}]{#struct_0_x6691_30153_1486493374}
+Looking up SA for the outgoing *message-type* message: from *start-address* to *end-address*.
 
-[[为发送的]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*]{#struct_0_x6691_30153_x1795292592}[报文查找认证关联：起点地址]{style="font-family:宋体"}*[start-address]{lang="EN-US"}*[，终点地址]{style="font-family:宋体"}*[end-address]{lang="EN-US"}*
+为发送的*message-type*报文查找认证关联：起点地址*start-address*，终点地址*end-address*
 
-[[Created a receive mode SA: from *start-address* to *end-address*.]{lang="EN-US"}]{#struct_0_x6691_30153_x681981715}
+Created a receive mode SA: from *start-address* to *end-address*.
 
-[[创建接收认证关联：起点地址]{style="font-family:宋体"}*[start-address]{lang="EN-US"}*]{#struct_0_x6691_30153_x1946437144}[，终点地址]{style="font-family:宋体"}*[end-address]{lang="EN-US"}*
+创建接收认证关联：起点地址*start-address*，终点地址*end-address*
 
-[[Created a send mode SA: from *start-address* to *end-address*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1947878958}
+Created a send mode SA: from *start-address* to *end-address*.
 
-[[创建发送认证关联：起点地址]{style="font-family:宋体"}*[start-address]{lang="EN-US"}*]{#struct_0_x6691_30153_x1632758509}[，终点地址]{style="font-family:宋体"}*[end-address]{lang="EN-US"}*
+创建发送认证关联：起点地址*start-address*，终点地址*end-address*
 
-[[Sent an integrity challenge message.]{lang="EN-US"}]{#struct_0_x6691_30153_x1642422584}
+Sent an integrity challenge message.
 
-[[发送]{style="font-family:宋体"}[integrity challenge]{lang="EN-US"}]{#struct_0_x6691_30153_x121043048}[消息]{style="font-family:宋体"}
+发送integrity challenge消息
 
-[[Sent an integrity response message.]{lang="EN-US"}]{#struct_0_x6691_30153_x664969663}
+Sent an integrity response message.
 
-[[发送]{style="font-family:宋体"}[integrity response]{lang="EN-US"}]{#struct_0_x6691_30153_1482682729}[消息]{style="font-family:宋体"}
+发送integrity response消息
 
-[[Received an integrity challenge message, from *start-address* to *end-address.*]{lang="EN-US"}]{#struct_0_x6691_30153_x1632299757}
+Received an integrity challenge message, from *start-address* to *end-address.*
 
-[[收到]{style="font-family:宋体"}[integrity challenge]{lang="EN-US"}]{#struct_0_x6691_30153_106120276}[消息，起点地址]{style="font-family:宋体"}*[start-address]{lang="EN-US"}*[，终点地址]{style="font-family:宋体"}*[end-address]{lang="EN-US"}*
+收到integrity challenge消息，起点地址*start-address*，终点地址*end-address*
 
-[[Received an integrity response message, from *start-address* to *end-address*.]{lang="EN-US"}]{#struct_0_x6691_30153_2125217094}
+Received an integrity response message, from *start-address* to *end-address*.
 
-[[收到]{style="font-family:宋体"}[integrity response]{lang="EN-US"}]{#struct_0_x6691_30153_1842000523}[消息，起点地址]{style="font-family:宋体"}*[start-address]{lang="EN-US"}*[，终点地址]{style="font-family:宋体"}*[end-address]{lang="EN-US"}*
+收到integrity response消息，起点地址*start-address*，终点地址*end-address*
 
-[[Challenge state is not in progress.]{lang="EN-US"}]{#struct_0_x6691_30153_1226916824}
+Challenge state is not in progress.
 
-[[Challenge]{lang="EN-US"}]{#struct_0_x6691_30153_1433880961}[状态不是正在协商]{style="font-family:宋体"}
+Challenge状态不是正在协商
 
-[[Challenge object is valid.]{lang="EN-US"}]{#struct_0_x6691_30153_x1632365293}
+Challenge object is valid.
 
-[[Challenge]{lang="EN-US"}]{#struct_0_x6691_30153_x754702162}[对象有效]{style="font-family:宋体"}
+Challenge对象有效
 
-[[Challenge object is invalid.]{lang="EN-US"}]{#struct_0_x6691_30153_1267403127}
+Challenge object is invalid.
 
-[[Challenge]{lang="EN-US"}]{#struct_0_x6691_30153_1605546267}[对象无效]{style="font-family:宋体"}
+Challenge对象无效
 
-[[No integrity object.]{lang="EN-US"}]{#struct_0_x6691_30153_x1632824044}
+No integrity object.
 
-[[没有]{style="font-family:宋体"}[integrity]{lang="EN-US"}]{#struct_0_x6691_30153_x1077672035}[对象]{style="font-family:宋体"}
+没有integrity对象
 
-[[No challenge object.]{lang="EN-US"}]{#struct_0_x6691_30153_1182511059}
+No challenge object.
 
-[[没有]{style="font-family:宋体"}[challenge]{lang="EN-US"}]{#struct_0_x6691_30153_493742951}[对象]{style="font-family:宋体"}
+没有challenge对象
 
-[[Sequence *sequence* is out of the receiving window.]{lang="EN-US"}]{#struct_0_x6691_30153_1175662810}
+Sequence *sequence* is out of the receiving window.
 
-[[序列号]{style="font-family:宋体"}*[sequence]{lang="EN-US"}*]{#struct_0_x6691_30153_x1632889580}[超出接收窗口]{style="font-family:宋体"}
+序列号*sequence*超出接收窗口
 
-[[Replayed sequence *sequence*.]{lang="EN-US"}]{#struct_0_x6691_30153_105417270}
+Replayed sequence *sequence*.
 
-[[序列号]{style="font-family:宋体"}*[sequence]{lang="EN-US"}*]{#struct_0_x6691_30153_x2021311556}[重复]{style="font-family:宋体"}
+序列号*sequence*重复
 
-[[Sequence *sequence* is valid.]{lang="EN-US"}]{#struct_0_x6691_30153_x978644698}
+Sequence *sequence* is valid.
 
-[[序列号]{style="font-family:宋体"}*[sequence]{lang="EN-US"}*]{#struct_0_x6691_30153_x1632955116}[有效]{style="font-family:宋体"}
+序列号*sequence*有效
 
-[[MD5 digest is valid.]{lang="EN-US"}]{#struct_0_x6691_30153_1569997051}
+MD5 digest is valid.
 
-[[MD5]{lang="EN-US"}]{#struct_0_x6691_30153_x2096528668}[摘要有效]{style="font-family:宋体"}
+MD5摘要有效
 
-[[MD5 digest is invalid.]{lang="EN-US"}]{#struct_0_x6691_30153_x1652870215}
+MD5 digest is invalid.
 
-[[MD5]{lang="EN-US"}]{#struct_0_x6691_30153_x1633020652}[摘要无效]{style="font-family:宋体"}
+MD5摘要无效
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x1331313786}
+\# 在接口视图下配置RSVP认证密钥，打开RSVP认证调试信息开关，从接口接收到RSVP消息后打印如下调试信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x6691_30153_x775743361}[在接口视图下配置]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[认证密钥，打开]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[认证调试信息开关，从接口接收到]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[消息后打印如下调试信息。]{style="font-family:宋体"}
+\<Sysname\> debugging rsvp authentication
 
-[[\<Sysname\> debugging rsvp authentication]{lang="EN-US"}]{#struct_0_x6691_30153_1357084478}
+\*Aug 19 08:33:11:934 2012 Sysname RSVP/7/AUTH: -MDC=1; Looking up SA for the incoming path message: from 12.11.110.11 to 10.33.33.33.                             
 
-[\*Aug 19 08:33:11:934 2012 Sysname RSVP/7/AUTH: -MDC=1; Looking up SA for the incoming path message: from 12.11.110.11 to 10.33.33.33.                              ]{lang="EN-US"}
+*// 为接收到的Path消息查找认证关联，认证起点地址为12.11.110.11，目的地址为10.33.33.33。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x1678355798}*[为接收到的]{style="font-family:宋体"}[Path]{lang="EN-US"}[消息查找认证关联，认证起点地址为]{style="font-family:宋体"}[12.11.110.11]{lang="EN-US"}[，目的地址为]{style="font-family:宋体"}[10.33.33.33]{lang="EN-US"}[。]{style="font-family:宋体"}*
+\*Aug 19 08:33:11:934 2012 Sysname RSVP/7/AUTH: -MDC=1; MD5 digest is valid.       
 
-[[\*Aug 19 08:33:11:934 2012 Sysname RSVP/7/AUTH: -MDC=1; MD5 digest is valid.        ]{lang="EN-US"}]{#struct_0_x6691_30153_x1542414352}
+*[// Path*]*消息的MD5摘要有效。*
 
-[*[// Path]{lang="EN-US"}*]{#struct_0_x6691_30153_x1945449488}*[消息的]{style="font-family:宋体"}[MD5]{lang="EN-US"}[摘要有效。]{style="font-family:宋体"}*
+\*Aug 19 08:33:11:934 2012 Sysname RSVP/7/AUTH: -MDC=1; Sequence 5778030575734489139 is valid.
 
-[[\*Aug 19 08:33:11:934 2012 Sysname RSVP/7/AUTH: -MDC=1; Sequence 5778030575734489139 is valid.]{lang="EN-US"}]{#struct_0_x6691_30153_x2140776673}
+*[// Path*]*消息的序列号有效。*
 
-[*[// Path]{lang="EN-US"}*]{#struct_0_x6691_30153_x1632561900}*[消息的序列号有效。]{style="font-family:宋体"}*
+\*Aug 19 08:33:15:278 2012 Sysname RSVP/7/AUTH: -MDC=1; Looking up SA for the outgoing resv message: from 12.11.110.12 to 12.11.110.11.
 
-[[\*Aug 19 08:33:15:278 2012 Sysname RSVP/7/AUTH: -MDC=1; Looking up SA for the outgoing resv message: from 12.11.110.12 to 12.11.110.11.]{lang="EN-US"}]{#struct_0_x6691_30153_1334555660}
+*// 为发送的Resv消息查找认证关联，认证起点地址为12.11.110.12，目的地址为12.11.110.11。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_284347755}*[为发送的]{style="font-family:宋体"}[Resv]{lang="EN-US"}[消息查找认证关联，认证起点地址为]{style="font-family:宋体"}[12.11.110.12]{lang="EN-US"}[，目的地址为]{style="font-family:宋体"}[12.11.110.11]{lang="EN-US"}[。]{style="font-family:宋体"}*
+\*Aug 19 08:33:22:434 2012 Sysname RSVP/7/AUTH: -MDC=1; MD5 digest is valid.
 
-[[\*Aug 19 08:33:22:434 2012 Sysname RSVP/7/AUTH: -MDC=1; MD5 digest is valid.]{lang="EN-US"}]{#struct_0_x6691_30153_x1904021297}
+*[// Resv*]*消息的MD5摘要有效。*
 
-[*[// Resv]{lang="EN-US"}*]{#struct_0_x6691_30153_x216096441}*[消息的]{style="font-family:宋体"}[MD5]{lang="EN-US"}[摘要有效。]{style="font-family:宋体"}*
+\*Aug 19 08:33:22:434 2012 Sysname RSVP/7/AUTH: -MDC=1; Sequence 5778030575734489140 is valid.
 
-[[\*Aug 19 08:33:22:434 2012 Sysname RSVP/7/AUTH: -MDC=1; Sequence 5778030575734489140 is valid.]{lang="EN-US"}]{#struct_0_x6691_30153_x967656725}
-
-[*[// Resv]{lang="EN-US"}*]{#struct_0_x6691_30153_478469414}*[消息的序列号有效。]{style="font-family:宋体"}*
-
-::: {#-1825538218 .myid}
-[]{#_Toc404790952}[]{#struct_0_x6691_30153_x2007353948}
+*[// Resv*]*消息的序列号有效。*
 
 **RSVP \-- RSVP调试命令 \-- debugging rsvp error**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x1632627436}
+【命令】
 
-[**[debugging rsvp error]{lang="EN-US"}**]{#struct_0_x6691_30153_499708111}
+**[debugging rsvp error**]
 
-[**[undo debugging rsvp error]{lang="EN-US"}**]{#struct_0_x6691_30153_138661648}
+**[undo debugging rsvp error**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x6691_30153_86794350}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x6691_30153_1278444512}
+用户视图
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x6691_30153_766314222}
+【参数】
 
-[[无]{style="font-family:宋体"}]{#struct_0_x6691_30153_17113946}
+无
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x1230518313}
+【描述】
 
-[**[debugging rsvp error]{lang="EN-US"}**]{#struct_0_x6691_30153_x1692059406}[命令用来打开]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[错误调试信息开关。]{style="font-family:宋体"}**[undo debugging rsvp error]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[错误调试信息开关。]{style="font-family:宋体"}
+**[debugging rsvp error**]命令用来打开RSVP错误调试信息开关。**undo debugging rsvp error**命令用来关闭RSVP错误调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[RSVP]{lang="EN-US"}]{#struct_0_x6691_30153_x1632692972}[错误调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，RSVP错误调试信息开关处于关闭状态。
 
-[[表1-2 ]{lang="EN-US"}[debugging rsvp error]{lang="EN-US"}]{#struct_0_x6691_30153_x1242389981}[命令输出信息描述表]{style="font-family:黑体"}
+表1-2 debugging rsvp error命令输出信息描述表
 
-[]{#table_struct_0_285846388}[[字段]{style="font-family:黑体"}]{#struct_0_x6691_30153_757299163}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x6691_30153_845195211}
+描述
 
-[[Failed to receive a packet from socket (*socket-fd*).]{lang="EN-US"}]{#struct_0_x6691_30153_1493587594}
+Failed to receive a packet from socket (*socket-fd*).
 
-[[从]{style="font-family:宋体"}[socket]{lang="EN-US"}]{#struct_0_x6691_30153_915131566}[（]{style="font-family:宋体"}*[socket-fd]{lang="EN-US"}*[）接收报文错误]{style="font-family:宋体"}
+从socket（*socket-fd*）接收报文错误
 
-[[IP TTL expired.]{lang="EN-US"}]{#struct_0_x6691_30153_x379061197}
+IP TTL expired.
 
-[[IP TTL]{lang="EN-US"}]{#struct_0_x6691_30153_x1632758508}[超时]{style="font-family:宋体"}
+IP TTL超时
 
-[[RSVP TTL expired.]{lang="EN-US"}]{#struct_0_x6691_30153_x76338643}
+RSVP TTL expired.
 
-[[RSVP TTL]{lang="EN-US"}]{#struct_0_x6691_30153_x1006379871}[超时]{style="font-family:宋体"}
+RSVP TTL超时
 
-[[Invalid RSVP message type: *message-type*.]{lang="EN-US"}]{#struct_0_x6691_30153_1414550057}
+Invalid RSVP message type: *message-type*.
 
-[[无效的]{style="font-family:宋体"}[RSVP]{lang="EN-US"}]{#struct_0_x6691_30153_1015153791}[报文类型]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*
+无效的RSVP报文类型*message-type*
 
-[[Invalid RSVP message length: *length*.]{lang="EN-US"}]{#struct_0_x6691_30153_1279108910}
+Invalid RSVP message length: *length*.
 
-[[RSVP]{lang="EN-US"}]{#struct_0_x6691_30153_x1632299756}[报文长度]{style="font-family:宋体"}*[length]{lang="EN-US"}*[错误]{style="font-family:宋体"}
+RSVP报文长度*length*错误
 
-[[Invalid RSVP message checksum: *checksum*.]{lang="EN-US"}]{#struct_0_x6691_30153_1672204217}
+Invalid RSVP message checksum: *checksum*.
 
-[[RSVP]{lang="EN-US"}]{#struct_0_x6691_30153_x1836120139}[报文校验和]{style="font-family:宋体"}*[checksum]{lang="EN-US"}*[错误]{style="font-family:宋体"}
+RSVP报文校验和*checksum*错误
 
-[[Failed to decode object (class number *class-number*) in the *message-type* message.]{lang="EN-US"}]{#struct_0_x6691_30153_x176098285}
+Failed to decode object (class number *class-number*) in the *message-type* message.
 
-[[解码]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*]{#struct_0_x6691_30153_507731131}[报文中类型值为]{style="font-family:宋体"}*[class-number]{lang="EN-US"}*[的对象失败]{style="font-family:宋体"}
+解码*message-type*报文中类型值为*class-number*的对象失败
 
-[[Failed to decode the *message-type* message.]{lang="EN-US"}]{#struct_0_x6691_30153_342994828}
+Failed to decode the *message-type* message.
 
-[[解码]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*]{#struct_0_x6691_30153_x1632365292}[报文失败]{style="font-family:宋体"}
+解码*message-type*报文失败
 
-[[Failed to encode *object-type* object in the *message-type* message.]{lang="EN-US"}]{#struct_0_x6691_30153_1974181193}
+Failed to encode *object-type* object in the *message-type* message.
 
-[[编码]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*]{#struct_0_x6691_30153_359776326}[报文的]{style="font-family:宋体"}*[object-type]{lang="EN-US"}*[对象失败]{style="font-family:宋体"}
+编码*message-type*报文的*object-type*对象失败
 
-[[Failed to encode the *message-type* message.]{lang="EN-US"}]{#struct_0_x6691_30153_140636802}
+Failed to encode the *message-type* message.
 
-[[编码]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*]{#struct_0_x6691_30153_329828583}[报文失败]{style="font-family:宋体"}
+编码*message-type*报文失败
 
-[[Failed to set socket (*socket-fd*) option.]{lang="EN-US"}]{#struct_0_x6691_30153_746185946}
+Failed to set socket (*socket-fd*) option.
 
-[[设置]{style="font-family:宋体"}[socket]{lang="EN-US"}]{#struct_0_x6691_30153_721750803}[（]{style="font-family:宋体"}*[socket-fd]{lang="EN-US"}*[）选项失败]{style="font-family:宋体"}
+设置socket（*socket-fd*）选项失败
 
-[[Failed to send packet to socket (*socket-fd*), error code *error-code*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1738764329}
+Failed to send packet to socket (*socket-fd*), error code *error-code*.
 
-[[向]{style="font-family:宋体"}[socket]{lang="EN-US"}]{#struct_0_x6691_30153_x459483318}[（]{style="font-family:宋体"}*[socket-fd]{lang="EN-US"}*[）发送报文失败，错误值为]{style="font-family:宋体"}*[error-code]{lang="EN-US"}*
+向socket（*socket-fd*）发送报文失败，错误值为*error-code*
 
-[[Memory alert (*alert-state*).]{lang="EN-US"}]{#struct_0_x6691_30153_746251482}
+Memory alert (*alert-state*).
 
-[[内存门限告警，]{style="font-family:宋体"}*[alert-state]{lang="EN-US"}*]{#struct_0_x6691_30153_x614855663}[代表内存不足的严重程度，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[3]{lang="EN-US"}[，]{style="font-family:宋体"}[0]{lang="EN-US"}[代表内存状态正常，值越大内存不足越严重]{style="font-family:宋体"}
+内存门限告警，*alert-state*代表内存不足的严重程度，取值范围为0～3，0代表内存状态正常，值越大内存不足越严重
 
-[[Different service IDs in Tspec: *service-ID1 service-ID2.*]{lang="EN-US"}]{#struct_0_x6691_30153_851456239}
+Different service IDs in Tspec: *service-ID1 service-ID2.*
 
-[[Tspec]{lang="EN-US"}]{#struct_0_x6691_30153_1602172203}[中服务]{style="font-family:宋体"}[ID]{lang="EN-US"}[不一致，分别为]{style="font-family:宋体"}*[service-ID1]{lang="EN-US"}*[和]{style="font-family:宋体"}*[service-ID2]{lang="EN-US"}*
+Tspec中服务ID不一致，分别为*service-ID1*和*service-ID2*
 
-[[Invalid service ID *service-ID* in Tspec.]{lang="EN-US"}]{#struct_0_x6691_30153_746317018}
+Invalid service ID *service-ID* in Tspec.
 
-[[Tspec]{lang="EN-US"}]{#struct_0_x6691_30153_1333541423}[中服务]{style="font-family:宋体"}[ID]{lang="EN-US"}[（]{style="font-family:宋体"}*[service-ID]{lang="EN-US"}*[）无效]{style="font-family:宋体"}
+Tspec中服务ID（*service-ID*）无效
 
-[[Failed to send HA message.]{lang="EN-US"}]{#struct_0_x6691_30153_x779903013}
+Failed to send HA message.
 
-[[发送]{style="font-family:宋体"}[HA]{lang="EN-US"}]{#struct_0_x6691_30153_x106924163}[消息失败]{style="font-family:宋体"}
+发送HA消息失败
 
-[[RSVP is not enabled on interface *interface*]{lang="EN-US"}]{#struct_0_x6691_30153_x939921298}
+RSVP is not enabled on interface *interface*
 
-[[接口]{style="font-family:宋体"}*[interface]{lang="EN-US"}*]{#struct_0_x6691_30153_605580902}[未使能]{style="font-family:宋体"}[RSVP]{lang="EN-US"}
+接口*interface*未使能RSVP
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x6691_30153_421905453}
+\# 打开RSVP错误调试信息开关，收到IP TTL超时的RSVP消息后打印如下调试信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x6691_30153_2013840013}[打开]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[错误调试信息开关，收到]{style="font-family:宋体"}[IP TTL]{lang="EN-US"}[超时的]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[消息后打印如下调试信息。]{style="font-family:宋体"}
+\<Sysname\> debugging rsvp error
 
-[[\<Sysname\> debugging rsvp error]{lang="EN-US"}]{#struct_0_x6691_30153_746382554}
+\*Aug 19 08:45:40:847 2012 Sysname RSVP/7/FRR: -MDC=1; IP TTL expired.
 
-[\*Aug 19 08:45:40:847 2012 Sysname RSVP/7/FRR: -MDC=1; IP TTL expired.]{lang="EN-US"}
-
-[*[// RSVP]{lang="EN-US"}*]{#struct_0_x6691_30153_x1448050087}*[消息的]{style="font-family:宋体"}[IP TTL]{lang="EN-US"}[超时。]{style="font-family:宋体"}*
-
-::: {#2008648793 .myid}
-[]{#_Toc404790953}[]{#struct_0_x6691_30153_1172341835}
+*[// RSVP*]*消息的IP TTL超时。*
 
 **RSVP \-- RSVP调试命令 \-- debugging rsvp frr**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x2572142}
+【命令】
 
-[**[debugging rsvp frr]{lang="EN-US"}**]{#struct_0_x6691_30153_x1333444258}
+**[debugging rsvp frr**]
 
-[**[undo debugging rsvp frr]{lang="EN-US"}**]{#struct_0_x6691_30153_x300991887}
+**[undo debugging rsvp frr**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x6691_30153_279537258}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x6691_30153_1239245402}
+用户视图
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x6691_30153_986173014}
+【参数】
 
-[[无]{style="font-family:宋体"}]{#struct_0_x6691_30153_745923802}
+无
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x1850232797}
+【描述】
 
-[**[debugging rsvp frr]{lang="EN-US"}**]{#struct_0_x6691_30153_x1255603101}[命令用来打开]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[快速重路由调试信息开关。]{style="font-family:宋体"}**[undo debugging rsvp frr]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[快速重路由调试信息开关。]{style="font-family:宋体"}
+**[debugging rsvp frr**]命令用来打开RSVP快速重路由调试信息开关。**undo debugging rsvp frr**命令用来关闭RSVP快速重路由调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[RSVP]{lang="EN-US"}]{#struct_0_x6691_30153_512857697}[快速重路由调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，RSVP快速重路由调试信息开关处于关闭状态。
 
-[[表1-3 ]{lang="EN-US"}[debugging rsvp frr]{lang="EN-US"}]{#struct_0_x6691_30153_x1235535346}[命令输出信息描述表]{style="font-family:黑体"}
+表1-3 debugging rsvp frr命令输出信息描述表
 
-[]{#table_struct_0_318103380}[[字段]{style="font-family:黑体"}]{#struct_0_x6691_30153_x1881287408}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x6691_30153_x849641036}
+描述
 
-[[TC updated bypass *tunnel-name* info, backup bandwidth *bandwidth*, protection CT *class-type*.]{lang="EN-US"}]{#struct_0_x6691_30153_x2259416}
+TC updated bypass *tunnel-name* info, backup bandwidth *bandwidth*, protection CT *class-type*.
 
-[[TC]{lang="EN-US"}]{#struct_0_x6691_30153_745989338}[更新旁路隧道]{style="font-family:宋体"}*[tunnel-name]{lang="EN-US"}*[信息，保护带宽为]{style="font-family:宋体"}*[bandwidth]{lang="EN-US"}*[，保护带宽类型为]{style="font-family:宋体"}*[class-type]{lang="EN-US"}*[.]{lang="EN-US"}
+TC更新旁路隧道*tunnel-name*信息，保护带宽为*bandwidth*，保护带宽类型为*class-type*.
 
-[[TC deleted bypass *tunnel-name* info.]{lang="EN-US"}]{#struct_0_x6691_30153_522497722}
+TC deleted bypass *tunnel-name* info.
 
-[[TC]{lang="EN-US"}]{#struct_0_x6691_30153_743484728}[删除旁路隧道]{style="font-family:宋体"}*[tunnel-name]{lang="EN-US"}*[信息]{style="font-family:宋体"}
+TC删除旁路隧道*tunnel-name*信息
 
-[[Bound bypass *tunnel-name* to CR-LSP (dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id*, LSP ID *lsp-id*, direction *direction*).]{lang="EN-US"}]{#struct_0_x6691_30153_752721604}
+Bound bypass *tunnel-name* to CR-LSP (dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id*, LSP ID *lsp-id*, direction *direction*).
 
-[[旁路隧道]{style="font-family:宋体"}*[tunnel-name]{lang="EN-US"}*]{#struct_0_x6691_30153_x903794459}[绑定]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[，]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[的目的地址为]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址为]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[lsp-id]{lang="EN-US"}*[，方向为]{style="font-family:宋体"}*[direction]{lang="EN-US"}*
+旁路隧道*tunnel-name*绑定CR-LSP，CR-LSP的目的地址为*dst-addr*，源地址为*src-addr*，tunnel ID为*tunnel-id*，LSP ID为*lsp-id*，方向为*direction*
 
-[[其中，]{style="font-family:宋体"}*[direction]{lang="EN-US"}*]{#struct_0_x6691_30153_x393952274}[取值包括：]{style="font-family:宋体"}
+其中，*direction*取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0]{lang="EN-US"}]{#struct_0_x6691_30153_x1825555121}[：表示单向隧道]{style="font-family:宋体"}
+·0：表示单向隧道
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[1]{lang="EN-US"}]{#struct_0_x6691_30153_746054874}[：表示双向隧道的正向]{style="font-family:宋体"}[CRLSP]{lang="EN-US"}
+·1：表示双向隧道的正向CRLSP
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[2]{lang="EN-US"}]{#struct_0_x6691_30153_x836987697}[：表示双向隧道的反向]{style="font-family:宋体"}[CRLSP]{lang="EN-US"}
+·2：表示双向隧道的反向CRLSP
 
-[[Unbound bypass *tunnel-name* from CR-LSP (dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id*, LSP ID *lsp-id*, direction *direction*).]{lang="EN-US"}]{#struct_0_x6691_30153_x952335056}
+Unbound bypass *tunnel-name* from CR-LSP (dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id*, LSP ID *lsp-id*, direction *direction*).
 
-[[旁路隧道]{style="font-family:宋体"}*[tunnel-name]{lang="EN-US"}*]{#struct_0_x6691_30153_x5723354}[取消绑定]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[，]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[的目的地址为]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址为]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[lsp-id]{lang="EN-US"}*[，方向为]{style="font-family:宋体"}*[direction]{lang="EN-US"}*
+旁路隧道*tunnel-name*取消绑定CR-LSP，CR-LSP的目的地址为*dst-addr*，源地址为*src-addr*，tunnel ID为*tunnel-id*，LSP ID为*lsp-id*，方向为*direction*
 
-[[Got bypass *tunnel-name* info from TC: backup bandwidth *bandwidth*, protection CT *class-type*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1406041710}
+Got bypass *tunnel-name* info from TC: backup bandwidth *bandwidth*, protection CT *class-type*.
 
-[[从]{style="font-family:宋体"}[TC]{lang="EN-US"}]{#struct_0_x6691_30153_746120410}[获取旁路隧道]{style="font-family:宋体"}*[tunnel-name]{lang="EN-US"}*[信息：保护带宽为]{style="font-family:宋体"}*[bandwidth]{lang="EN-US"}*[，保护带宽类型为]{style="font-family:宋体"}*[class-type]{lang="EN-US"}*[.]{lang="EN-US"}
+从TC获取旁路隧道*tunnel-name*信息：保护带宽为*bandwidth*，保护带宽类型为*class-type*.
 
-[[Failed to get bypass *tunnel-name* info from TC.]{lang="EN-US"}]{#struct_0_x6691_30153_x910095248}
+Failed to get bypass *tunnel-name* info from TC.
 
-[[从]{style="font-family:宋体"}[TC]{lang="EN-US"}]{#struct_0_x6691_30153_277360518}[获取旁路隧道]{style="font-family:宋体"}*[tunnel-name]{lang="EN-US"}*[信息失败]{style="font-family:宋体"}
+从TC获取旁路隧道*tunnel-name*信息失败
 
-[[Updated the used bandwidth of bypass *tunnel-name* from *bandwidth1* to *bandwidth2*.]{lang="EN-US"}]{#struct_0_x6691_30153_1875216016}
+Updated the used bandwidth of bypass *tunnel-name* from *bandwidth1* to *bandwidth2*.
 
-[[旁路隧道]{style="font-family:宋体"}*[tunnel-name]{lang="EN-US"}*]{#struct_0_x6691_30153_926216426}[的已用带宽从]{style="font-family:宋体"}*[bandwidth1]{lang="EN-US"}*[更新为]{style="font-family:宋体"}*[bandwidth2]{lang="EN-US"}*
+旁路隧道*tunnel-name*的已用带宽从*bandwidth1*更新为*bandwidth2*
 
-[[Looking up bypass tunnel for CR-LSP (dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id*, LSP ID *lsp-id*, direction *direction*).]{lang="EN-US"}]{#struct_0_x6691_30153_746710234}
+Looking up bypass tunnel for CR-LSP (dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id*, LSP ID *lsp-id*, direction *direction*).
 
-[[为]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}]{#struct_0_x6691_30153_x1651891367}[查找旁路隧道，]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[的目的地址为]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址为]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[lsp-id]{lang="EN-US"}*[，方向为]{style="font-family:宋体"}*[direction]{lang="EN-US"}*
+为CR-LSP查找旁路隧道，CR-LSP的目的地址为*dst-addr*，源地址为*src-addr*，tunnel ID为*tunnel-id*，LSP ID为*lsp-id*，方向为*direction*
 
-[[The unused bandwidth *bandwidth* of bypass *tunnel-name* is insufficient for CR-LSP (dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id*, LSP ID *lsp-id*, direction *direction*).]{lang="EN-US"}]{#struct_0_x6691_30153_826593246}
+The unused bandwidth *bandwidth* of bypass *tunnel-name* is insufficient for CR-LSP (dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id*, LSP ID *lsp-id*, direction *direction*).
 
-[[旁路隧道]{style="font-family:宋体"}*[tunnel-name]{lang="EN-US"}*]{#struct_0_x6691_30153_1715230648}[的未用带宽为]{style="font-family:宋体"}*[bandwidth]{lang="EN-US"}*[，带宽不足以保护]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[，]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[的目的地址为]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址为]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[lsp-id]{lang="EN-US"}*[，方向为]{style="font-family:宋体"}*[direction]{lang="EN-US"}*
+旁路隧道*tunnel-name*的未用带宽为*bandwidth*，带宽不足以保护CR-LSP，CR-LSP的目的地址为*dst-addr*，源地址为*src-addr*，tunnel ID为*tunnel-id*，LSP ID为*lsp-id*，方向为*direction*
 
-[[Optimizing bypass tunnel for all CR-LSPs.]{lang="EN-US"}]{#struct_0_x6691_30153_x1718024854}
+Optimizing bypass tunnel for all CR-LSPs.
 
-[[正在为所有]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}]{#struct_0_x6691_30153_x154922650}[优化旁路隧道]{style="font-family:宋体"}
+正在为所有CR-LSP优化旁路隧道
 
-[[Finished smoothing FRR configurations.]{lang="EN-US"}]{#struct_0_x6691_30153_746775770}
+Finished smoothing FRR configurations.
 
-[[FRR]{lang="EN-US"}]{#struct_0_x6691_30153_x1646237250}[配置平滑结束]{style="font-family:宋体"}
+FRR配置平滑结束
 
-[[Reset bypass *tunnel-name* info.]{lang="EN-US"}]{#struct_0_x6691_30153_x38925914}
+Reset bypass *tunnel-name* info.
 
-[[重置旁路隧道]{style="font-family:宋体"}*[tunnel-name]{lang="EN-US"}*]{#struct_0_x6691_30153_x415951865}[信息]{style="font-family:宋体"}
+重置旁路隧道*tunnel-name*信息
 
-[[Set staled flag to the bypass *tunnel-name.*]{lang="EN-US"}]{#struct_0_x6691_30153_746185947}
+Set staled flag to the bypass *tunnel-name.*
 
-[[设置旁路隧道]{style="font-family:宋体"}*[tunnel-name]{lang="EN-US"}*]{#struct_0_x6691_30153_721750802}[的老化标记]{style="font-family:宋体"}
+设置旁路隧道*tunnel-name*的老化标记
 
-[[TC disconnected.]{lang="EN-US"}]{#struct_0_x6691_30153_x1738764330}
+TC disconnected.
 
-[[TC]{lang="EN-US"}]{#struct_0_x6691_30153_750304727}[和]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[的连接断开]{style="font-family:宋体"}
+TC和RSVP的连接断开
 
-[[Finished smoothing all CR-LSPs.]{lang="EN-US"}]{#struct_0_x6691_30153_x769038281}
+Finished smoothing all CR-LSPs.
 
-[[CR-LSP]{lang="EN-US"}]{#struct_0_x6691_30153_746251483}[平滑结束]{style="font-family:宋体"}
+CR-LSP平滑结束
 
-[[Created CR-LSP: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id*, LSP ID *lsp-id*, direction *direction*.]{lang="EN-US"}]{#struct_0_x6691_30153_x614855662}
+Created CR-LSP: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id*, LSP ID *lsp-id*, direction *direction*.
 
-[[创建]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}]{#struct_0_x6691_30153_851390703}[，]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[的目的地址为]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址为]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[lsp-id]{lang="EN-US"}*[，方向为]{style="font-family:宋体"}*[direction]{lang="EN-US"}*
+创建CR-LSP，CR-LSP的目的地址为*dst-addr*，源地址为*src-addr*，tunnel ID为*tunnel-id*，LSP ID为*lsp-id*，方向为*direction*
 
-[[Deleted CR-LSP: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id*, LSP ID *lsp-id*, direction *direction.*]{lang="EN-US"}]{#struct_0_x6691_30153_x254176142}
+Deleted CR-LSP: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id*, LSP ID *lsp-id*, direction *direction.*
 
-[[删除]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}]{#struct_0_x6691_30153_746317019}[，]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[的目的地址为]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址为]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[lsp-id]{lang="EN-US"}*[，方向为]{style="font-family:宋体"}*[direction]{lang="EN-US"}*
+删除CR-LSP，CR-LSP的目的地址为*dst-addr*，源地址为*src-addr*，tunnel ID为*tunnel-id*，LSP ID为*lsp-id*，方向为*direction*
 
-[[No tunnel available to protect CR-LSP (dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id*, LSP ID *lsp-id*, direction *direction*).]{lang="EN-US"}]{#struct_0_x6691_30153_x851493470}
+No tunnel available to protect CR-LSP (dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id*, LSP ID *lsp-id*, direction *direction*).
 
-[[没有可用的]{style="font-family:宋体"}[Bypass]{lang="EN-US"}]{#struct_0_x6691_30153_x851427934}[隧道保护主]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[，主]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[的目的地址为]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址为]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[lsp-id]{lang="EN-US"}*[，方向为]{style="font-family:宋体"}*[direction]{lang="EN-US"}*
+没有可用的Bypass隧道保护主CR-LSP，主CR-LSP的目的地址为*dst-addr*，源地址为*src-addr*，tunnel ID为*tunnel-id*，LSP ID为*lsp-id*，方向为*direction*
 
-[[Tunnel *bypass-tunnel-id* is the best bypass tunnel for CR-LSP (dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id*, LSP ID *lsp-id*, direction *direction*).]{lang="EN-US"}]{#struct_0_x6691_30153_x26099123}
+Tunnel *bypass-tunnel-id* is the best bypass tunnel for CR-LSP (dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id*, LSP ID *lsp-id*, direction *direction*).
 
-[[旁路隧道]{style="font-family:宋体"}*[bypass-tunnel-id]{lang="EN-US"}*]{#struct_0_x6691_30153_x851362398}[是可以保护主]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[的最佳隧道，]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[的目的地址为]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址为]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[lsp-id]{lang="EN-US"}*[，方向为]{style="font-family:宋体"}*[direction]{lang="EN-US"}*
+旁路隧道*bypass-tunnel-id*是可以保护主CR-LSP的最佳隧道，CR-LSP的目的地址为*dst-addr*，源地址为*src-addr*，tunnel ID为*tunnel-id*，LSP ID为*lsp-id*，方向为*direction*
 
-[[Received FRR configurations on an interface from TC: ]{lang="EN-US"}]{#struct_0_x6691_30153_x1657206533}
+Received FRR configurations on an interface from TC:
 
-[[interface index: *if-index*; Bypass number: *bypass-number*;]{lang="EN-US"}]{#struct_0_x6691_30153_x851296862}
+interface index: *if-index*; Bypass number: *bypass-number*;
 
-[[Bypass tunnel ID: *tunnel-id1*, *tunnel-id2*, *tunnel-id3*;]{lang="EN-US"}]{#struct_0_x6691_30153_774321727}
+Bypass tunnel ID: *tunnel-id1*, *tunnel-id2*, *tunnel-id3*;
 
-[[Auto backup flag: *auto-backup-flag*.]{lang="EN-US"}]{#struct_0_x6691_30153_x851231326}
+Auto backup flag: *auto-backup-flag*.
 
-[[从]{style="font-family:宋体"}[TC]{lang="EN-US"}]{#struct_0_x6691_30153_1085242698}[获取接口]{style="font-family:宋体"}[FRR]{lang="EN-US"}[的配置信息：接口索引为]{style="font-family:宋体"}*[if-index]{lang="EN-US"}*[；旁路隧道数目为]{style="font-family:宋体"}*[bypass-number]{lang="EN-US"}*[；旁路隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}[为：]{style="font-family:宋体"}*[ tunnel-id1]{lang="EN-US"}*[，]{style="font-family:宋体"}*[tunnel-id2]{lang="EN-US"}*[，]{style="font-family:宋体"}*[tunnel-id3]{lang="EN-US"}*[；自动备份隧道标记为]{style="font-family:宋体"}*[auto-backup-flag]{lang="EN-US"}*
+从TC获取接口FRR的配置信息：接口索引为*if-index*；旁路隧道数目为*bypass-number*；旁路隧道ID为：* tunnel-id1*，*tunnel-id2*，*tunnel-id3*；自动备份隧道标记为*auto-backup-flag*
 
-[[Updated CR-LSP: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id*, LSP ID *lsp-id*, direction *direction*.]{lang="EN-US"}]{#struct_0_x6691_30153_x851165790}
+Updated CR-LSP: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id*, LSP ID *lsp-id*, direction *direction*.
 
-[[FRR]{lang="EN-US"}]{#struct_0_x6691_30153_x2018071816}[处理]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[更新，]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[的目的地址为]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址为]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[lsp-id]{lang="EN-US"}*[，方向为]{style="font-family:宋体"}*[direction]{lang="EN-US"}*
+FRR处理CR-LSP更新，CR-LSP的目的地址为*dst-addr*，源地址为*src-addr*，tunnel ID为*tunnel-id*，LSP ID为*lsp-id*，方向为*direction*
 
-[[TC updated FRR configurations. FRR reoptimization time *reoptimize time*; auto backup *auto backup enable flag*; auto backup nexthop only *nexthop only flag*; auto backup removal time *remove time*; auto backup max tunnel number *max-tnlid*; auto backup min tunnel number *min-tnlid*.]{lang="EN-US"}]{#struct_0_x6691_30153_x2066153497}
+TC updated FRR configurations. FRR reoptimization time *reoptimize time*; auto backup *auto backup enable flag*; auto backup nexthop only *nexthop only flag*; auto backup removal time *remove time*; auto backup max tunnel number *max-tnlid*; auto backup min tunnel number *min-tnlid*.
 
-[[收到]{style="font-family:宋体"}[TC]{lang="EN-US"}]{#struct_0_x6691_30153_x965814602}[处的]{style="font-family:宋体"}[FRR]{lang="EN-US"}[配置，优化定时器时间为]{style="font-family:宋体"}*[reoptimize time]{lang="EN-US"}*[；]{style="font-family:宋体"}[AUTOFRR]{lang="EN-US"}[使能标记为]{style="font-family:宋体"}*[auto backup enable flag]{lang="EN-US"}*[；下一跳的使能标记为]{style="font-family:宋体"}*[nexthop only flag]{lang="EN-US"}*[；删除定时器时间为]{style="font-family:宋体"}*[removal time]{lang="EN-US"}*[；自动隧道最大值为]{style="font-family:宋体"}*[max-tnlid]{lang="EN-US"}*[；自动隧道最小值为]{style="font-family:宋体"}*[min-tnlid]{lang="EN-US"}*[.]{lang="EN-US"}
+收到TC处的FRR配置，优化定时器时间为*reoptimize time*；AUTOFRR使能标记为*auto backup enable flag*；下一跳的使能标记为*nexthop only flag*；删除定时器时间为*removal time*；自动隧道最大值为*max-tnlid*；自动隧道最小值为*min-tnlid*.
 
-[[Finished smoothing auto FRR configurations, protected path tables, and automatic bypass tunnels.]{lang="EN-US"}]{#struct_0_x6691_30153_x2065432601}
+Finished smoothing auto FRR configurations, protected path tables, and automatic bypass tunnels.
 
-[[auto FRR]{lang="EN-US"}]{#struct_0_x6691_30153_x1153909445}[配置平滑，被保护路径表平滑和自动备份隧道信息平滑结束]{style="font-family:宋体"}
+auto FRR配置平滑，被保护路径表平滑和自动备份隧道信息平滑结束
 
-[[Finished smoothing all tunnels with process tunnel.]{lang="EN-US"}]{#struct_0_x6691_30153_x2065498137}
+Finished smoothing all tunnels with process tunnel.
 
-[[与]{style="font-family:宋体"}[tunnel]{lang="EN-US"}]{#struct_0_x6691_30153_x419999386}[进程的隧道平滑结束]{style="font-family:宋体"}
+与tunnel进程的隧道平滑结束
 
-[[Tunnel disconnected.]{lang="EN-US"}]{#struct_0_x6691_30153_x499872945}
+Tunnel disconnected.
 
-[[Tunnel]{lang="EN-US"}]{#struct_0_x6691_30153_x1051771537}[进程和]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[进程断开连接]{style="font-family:宋体"}
+Tunnel进程和RSVP进程断开连接
 
-[[Created an auto backup removal timer for the protected path. Interface index *if-index*; destination address *dest-addr*; protected address *prot-addr;*  protected type *prot-type*; auto tunnel number *tunnel-id*.]{lang="EN-US"}]{#struct_0_x6691_30153_x499938481}
+Created an auto backup removal timer for the protected path. Interface index *if-index*; destination address *dest-addr*; protected address *prot-addr;*  protected type *prot-type*; auto tunnel number *tunnel-id*.
 
-[[为被保护路径表创建]{style="font-family:宋体"}[removal]{lang="EN-US"}]{#struct_0_x6691_30153_x209485382}[定时器。接口为]{style="font-family:宋体"}*[if-index]{lang="EN-US"}*[，目的地址为]{style="font-family:宋体"}*[dest-addr]{lang="EN-US"}*[，保护的地址为]{style="font-family:宋体"}*[prot-addr]{lang="EN-US"}*[，保护类型为]{style="font-family:宋体"}*[prot-type]{lang="EN-US"}*[，自动隧道编号为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[.]{lang="EN-US"}
+为被保护路径表创建removal定时器。接口为*if-index*，目的地址为*dest-addr*，保护的地址为*prot-addr*，保护类型为*prot-type*，自动隧道编号为*tunnel-id*.
 
-[[Deleted the auto backup removal timer for the protected path. Interface index *if-index*; destination address *dest-addr*; protected address *prot-addr;*  protected type *prot-type*; auto tunnel number *tunnel-id*.]{lang="EN-US"}]{#struct_0_x6691_30153_x499741873}
+Deleted the auto backup removal timer for the protected path. Interface index *if-index*; destination address *dest-addr*; protected address *prot-addr;*  protected type *prot-type*; auto tunnel number *tunnel-id*.
 
-[[删除被保护路径表]{style="font-family:宋体"}[removal]{lang="EN-US"}]{#struct_0_x6691_30153_x499807409}[定时器。接口为]{style="font-family:宋体"}*[if-index]{lang="EN-US"}*[，目的地址为]{style="font-family:宋体"}*[dest-addr]{lang="EN-US"}*[，保护的地址为]{style="font-family:宋体"}*[prot-addr]{lang="EN-US"}*[，保护类型为]{style="font-family:宋体"}*[prot-type]{lang="EN-US"}*[，自动隧道编号为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+删除被保护路径表removal定时器。接口为*if-index*，目的地址为*dest-addr*，保护的地址为*prot-addr*，保护类型为*prot-type*，自动隧道编号为*tunnel-id*
 
-[[Auto backup removal timer for the protected path expired. Interface index *if-index*; destination address *dest-addr*; protected address *prot-addr;* protected type *prot-type*; auto tunnel number *tunnel-id*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1412588732}
+Auto backup removal timer for the protected path expired. Interface index *if-index*; destination address *dest-addr*; protected address *prot-addr;* protected type *prot-type*; auto tunnel number *tunnel-id*.
 
-[[被保护路径表的删除定时器超时。接口为]{style="font-family:宋体"}*[if-index]{lang="EN-US"}*]{#struct_0_x6691_30153_x500135089}[，目的地址为]{style="font-family:宋体"}*[dest-addr]{lang="EN-US"}*[，保护的地址为]{style="font-family:宋体"}*[prot-addr]{lang="EN-US"}*[，保护类型为]{style="font-family:宋体"}*[prot-type]{lang="EN-US"}*[，自动隧道编号为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[.]{lang="EN-US"}
+被保护路径表的删除定时器超时。接口为*if-index*，目的地址为*dest-addr*，保护的地址为*prot-addr*，保护类型为*prot-type*，自动隧道编号为*tunnel-id*.
 
-[[Begin to recreate automatic bypass tunnels.]{lang="EN-US"}]{#struct_0_x6691_30153_x282773539}
+Begin to recreate automatic bypass tunnels.
 
-[[开始重新创建自动旁路隧道]{style="font-family:宋体"}]{#struct_0_x6691_30153_x500200625}
+开始重新创建自动旁路隧道
 
-[[Reference count of the protected path updated to *ref-counter*. Interface index *if-index*; destination address *dest-addr*; protected address *prot-addr*; protected type *prot-type*.]{lang="EN-US"}]{#struct_0_x6691_30153_2107044029}
+Reference count of the protected path updated to *ref-counter*. Interface index *if-index*; destination address *dest-addr*; protected address *prot-addr*; protected type *prot-type*.
 
-[[被保护路径表更新引用计数到]{style="font-family:宋体"}*[ref-counter]{lang="EN-US"}*]{#struct_0_x6691_30153_x500004017}*[，]{style="font-family:宋体"}*[被保护接口为]{style="font-family:宋体"}*[if-index]{lang="EN-US"}*[，目的地址为]{style="font-family:宋体"}*[dest-addr]{lang="EN-US"}*[，被保护地址为]{style="font-family:宋体"}*[prot-addr]{lang="EN-US"}*[，保护类型为]{style="font-family:宋体"}*[prot-type]{lang="EN-US"}*
+被保护路径表更新引用计数到*ref-counter**，*被保护接口为*if-index*，目的地址为*dest-addr*，被保护地址为*prot-addr*，保护类型为*prot-type*
 
-[[Finished smoothing all tunnel interfaces with process IF.]{lang="EN-US"}]{#struct_0_x6691_30153_1284555498}
+Finished smoothing all tunnel interfaces with process IF.
 
-[[与]{style="font-family:宋体"}[IF]{lang="EN-US"}]{#struct_0_x6691_30153_x500069553}[进程的隧道接口信息平滑结束]{style="font-family:宋体"}
+与IF进程的隧道接口信息平滑结束
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x6691_30153_1333541424}
+\# 打开RSVP快速重路由调试信息开关。关闭MPLS TE隧道模式的Tunnel接口时，打印如下调试信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x6691_30153_x780361765}[打开]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[快速重路由调试信息开关。关闭]{style="font-family:宋体"}[MPLS TE]{lang="EN-US"}[隧道模式的]{style="font-family:宋体"}[Tunnel]{lang="EN-US"}[接口时，打印如下调试信息。]{style="font-family:宋体"}
+\<Sysname\> debugging rsvp frr
 
-[[\<Sysname\> debugging rsvp frr]{lang="EN-US"}]{#struct_0_x6691_30153_746382555}
+\<Sysname\> system-view
 
-[\<Sysname\> system-view]{lang="EN-US"}
+Sysname interface tunnel 1
 
-[\[Sysname\] interface tunnel 1]{lang="EN-US"}
+Sysname-Tunnel1 display this
 
-[\[Sysname-Tunnel1\] display this]{lang="EN-US"}
+\#
 
-[\#]{lang="EN-US"}
+interface Tunnel1 mode mpls-te
 
-[interface Tunnel1 mode mpls-te]{lang="EN-US"}
+ mpls te backup bandwidth 1000
 
-[ mpls te backup bandwidth 1000]{lang="EN-US"}
+ destination 10.33.33.33
 
-[ destination 10.33.33.33]{lang="EN-US"}
+\#
 
-[\#]{lang="EN-US"}
+return
 
-[return]{lang="EN-US"}
+Sysname-Tunnel1 shutdown
 
-[\[Sysname-Tunnel1\] shutdown]{lang="EN-US"}
+Sysname-Tunnel1
 
-[\[Sysname-Tunnel1\]]{lang="EN-US"}
+\*Aug 19 08:45:40:847 2012 Sysname RSVP/7/FRR: -MDC=1; TC deleted bypass tunnel1 info.
 
-[\*Aug 19 08:45:40:847 2012 Sysname RSVP/7/FRR: -MDC=1; TC deleted bypass tunnel1 info.]{lang="EN-US"}
+*// 删除旁路隧道Tunnel1的信息。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x1448050088}*[删除旁路隧道]{style="font-family:宋体"}[Tunnel1]{lang="EN-US"}[的信息。]{style="font-family:宋体"}*
+\*Aug 19 08:45:40:847 2012 Sysname RSVP/7/FRR: -MDC=1; Deleted CR-LSP: dst 10.33.33.33, src 10.22.22.22, tunnel ID 1, LSP ID 51011, direction 0.
 
-[[\*Aug 19 08:45:40:847 2012 Sysname RSVP/7/FRR: -MDC=1; Deleted CR-LSP: dst 10.33.33.33, src 10.22.22.22, tunnel ID 1, LSP ID 51011, direction 0.]{lang="EN-US"}]{#struct_0_x6691_30153_x2006880214}
+*// 删除CR-LSP，该CR-LSP的目的地址为10.33.33.33，源地址为10.22.22.22，隧道的Tunnel ID为1，LSP ID为51011，该隧道为单向隧道。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_508759103}*[删除]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[，该]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[的目的地址为]{style="font-family:宋体"}[10.33.33.33]{lang="EN-US"}[，源地址为]{style="font-family:宋体"}[10.22.22.22]{lang="EN-US"}[，隧道的]{style="font-family:宋体"}[Tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}[51011]{lang="EN-US"}[，该隧道为单向隧道。]{style="font-family:宋体"}*
+Sysname-Tunnel1 undo shutdown
 
-[[\[Sysname-Tunnel1\] undo shutdown]{lang="EN-US"}]{#struct_0_x6691_30153_2011749229}
+Sysname-Tunnel1
 
-[\[Sysname-Tunnel1\]]{lang="EN-US"}
+\*Aug 19 08:45:44:148 2012 Sysname RSVP/7/FRR: -MDC=1; Created CR-LSP: dst 10.33.33.33, src 10.22.22.22, tunnel ID 1, LSP ID 51012, direction 0.
 
-[\*Aug 19 08:45:44:148 2012 Sysname RSVP/7/FRR: -MDC=1; Created CR-LSP: dst 10.33.33.33, src 10.22.22.22, tunnel ID 1, LSP ID 51012, direction 0.]{lang="EN-US"}
+*// 创建CR-LSP，该CR-LSP的目的地址为10.33.33.33，源地址为10.22.22.22，隧道的Tunnel ID为1，LSP ID为51011，该隧道为单向隧道。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x455989052}*[创建]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[，该]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[的目的地址为]{style="font-family:宋体"}[10.33.33.33]{lang="EN-US"}[，源地址为]{style="font-family:宋体"}[10.22.22.22]{lang="EN-US"}[，隧道的]{style="font-family:宋体"}[Tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}[51011]{lang="EN-US"}[，该隧道为单向隧道。]{style="font-family:宋体"}*
+\*Aug 19 08:45:44:148 2012 Sysname RSVP/7/FRR: -MDC=1; TC updated bypass tunnel1 info, backup bandwidth 1000kbps, protection CT 4.
 
-[[\*Aug 19 08:45:44:148 2012 Sysname RSVP/7/FRR: -MDC=1; TC updated bypass tunnel1 info, backup bandwidth 1000kbps, protection CT 4.]{lang="EN-US"}]{#struct_0_x6691_30153_x1168432344}
+*// 更新旁路隧道Tunnel1的信息，保护带宽为1000kbps，保护带宽类型为CT 4。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x454534991}*[更新旁路隧道]{style="font-family:宋体"}[Tunnel1]{lang="EN-US"}[的信息，保护带宽为]{style="font-family:宋体"}[1000kbps]{lang="EN-US"}[，保护带宽类型为]{style="font-family:宋体"}[CT 4]{lang="EN-US"}[。]{style="font-family:宋体"}*
+Sysname-Tunnel1 interface gigabitethernet 1/0/1
 
-[[\[Sysname-Tunnel1\] interface gigabitethernet 1/0/1]{lang="EN-US"}]{#struct_0_x6691_30153_745923803}
+Sysname-GigabitEthernet1/0/1 rsvp fast-reroute bypass-tunnel tunnel1
 
-[\[Sysname-GigabitEthernet1/0/1\] rsvp fast-reroute bypass-tunnel tunnel1]{lang="EN-US"}
+Sysname-GigabitEthernet1/0/1
 
-[\[Sysname-GigabitEthernet1/0/1\]]{lang="EN-US"}
+\*Aug 19 08:45:52:706 2012 Sysname RSVP/7/FRR: -MDC=1; Got bypass tunnel1 info from TC: backup bandwidth 1000kbps, protection CT 4.
 
-[\*Aug 19 08:45:52:706 2012 Sysname RSVP/7/FRR: -MDC=1; Got bypass tunnel1 info from TC: backup bandwidth 1000kbps, protection CT 4.]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x1850232798}*[从]{style="font-family:宋体"}[TC]{lang="EN-US"}[获取旁路隧道的信息，保护带宽为]{style="font-family:宋体"}[1000kbps]{lang="EN-US"}[，保护带宽类型为]{style="font-family:宋体"}[CT 4]{lang="EN-US"}[。]{style="font-family:宋体"}*
-
-::: {#-1288965152 .myid}
-[]{#_Toc404790954}[]{#struct_0_x6691_30153_x2015117988}
+*// 从TC获取旁路隧道的信息，保护带宽为1000kbps，保护带宽类型为CT 4。*
 
 **RSVP \-- RSVP调试命令 \-- debugging rsvp hello**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x1042451952}
+【命令】
 
-[**[debugging rsvp hello]{lang="EN-US"}**]{#struct_0_x6691_30153_951124825}
+**[debugging rsvp hello**]
 
-[**[undo debugging rsvp hello]{lang="EN-US"}**]{#struct_0_x6691_30153_1791346635}
+**[undo debugging rsvp hello**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x64077310}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x6691_30153_x1916560171}
+用户视图
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x821291192}
+【参数】
 
-[[无]{style="font-family:宋体"}]{#struct_0_x6691_30153_745989339}
+无
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_x6691_30153_522497721}
+【描述】
 
-[**[debugging rsvp hello]{lang="EN-US"}**]{#struct_0_x6691_30153_743484731}[命令用来打开]{style="font-family:宋体"}[RSVP Hello]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}**[undo debugging rsvp hello]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[RSVP Hello]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}
+**[debugging rsvp hello**]命令用来打开RSVP Hello调试信息开关。**undo debugging rsvp hello**命令用来关闭RSVP Hello调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[RSVP Hello]{lang="EN-US"}]{#struct_0_x6691_30153_x1203593525}[调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，RSVP Hello调试信息开关处于关闭状态。
 
-[[表1-4 ]{lang="EN-US"}[debugging rsvp hello]{lang="EN-US"}]{#struct_0_x6691_30153_x74789081}[命令输出信息描述表]{style="font-family:黑体"}
+表1-4 debugging rsvp hello命令输出信息描述表
 
-[]{#table_struct_0_314394610}[[字段]{style="font-family:黑体"}]{#struct_0_x6691_30153_1380585938}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x6691_30153_x1086669355}
+描述
 
-[[Handling GR ASM, interface *interface*, peer *peer-addr*, GR state *state*, GR event *event*.]{lang="EN-US"}]{#struct_0_x6691_30153_665413569}
+Handling GR ASM, interface *interface*, peer *peer-addr*, GR state *state*, GR event *event*.
 
-[[GR]{lang="EN-US"}]{#struct_0_x6691_30153_746054875}[状态处理，接口为]{style="font-family:宋体"}*[interface]{lang="EN-US"}*[，邻居地址为]{style="font-family:宋体"}*[peer-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[GR]{lang="EN-US"}[状态为]{style="font-family:宋体"}*[state]{lang="EN-US"}*[，]{style="font-family:宋体"}[GR]{lang="EN-US"}[事件为]{style="font-family:宋体"}*[event]{lang="EN-US"}*
+GR状态处理，接口为*interface*，邻居地址为*peer-addr*，GR状态为*state*，GR事件为*event*
 
-[[GR state changed from invalid to ready.]{lang="EN-US"}]{#struct_0_x6691_30153_x836987696}
+GR state changed from invalid to ready.
 
-[[GR]{lang="EN-US"}]{#struct_0_x6691_30153_x952269520}[状态由]{style="font-family:宋体"}[invalid]{lang="EN-US"}[变更为]{style="font-family:宋体"}[ready]{lang="EN-US"}
+GR状态由invalid变更为ready
 
-[[GR state changed from ready to invalid.]{lang="EN-US"}]{#struct_0_x6691_30153_x55696862}
+GR state changed from ready to invalid.
 
-[[GR]{lang="EN-US"}]{#struct_0_x6691_30153_2015008711}[状态由]{style="font-family:宋体"}[ready]{lang="EN-US"}[变更为]{style="font-family:宋体"}[invalid]{lang="EN-US"}
+GR状态由ready变更为invalid
 
-[[GR state changed from ready to restart.]{lang="EN-US"}]{#struct_0_x6691_30153_1242602877}
+GR state changed from ready to restart.
 
-[[GR]{lang="EN-US"}]{#struct_0_x6691_30153_746120411}[状态由]{style="font-family:宋体"}[ready]{lang="EN-US"}[变更为]{style="font-family:宋体"}[restart]{lang="EN-US"}
+GR状态由ready变更为restart
 
-[[GR state changed from restart to recovery.]{lang="EN-US"}]{#struct_0_x6691_30153_x910095249}
+GR state changed from restart to recovery.
 
-[[GR]{lang="EN-US"}]{#struct_0_x6691_30153_277294982}[状态由]{style="font-family:宋体"}[restart]{lang="EN-US"}[变更为]{style="font-family:宋体"}[recovery]{lang="EN-US"}
+GR状态由restart变更为recovery
 
-[[GR state changed from restart to invalid.]{lang="EN-US"}]{#struct_0_x6691_30153_x789967417}
+GR state changed from restart to invalid.
 
-[[GR]{lang="EN-US"}]{#struct_0_x6691_30153_x1926323426}[状态由]{style="font-family:宋体"}[restart]{lang="EN-US"}[变更为]{style="font-family:宋体"}[invalid]{lang="EN-US"}
+GR状态由restart变更为invalid
 
-[[GR state changed from recovery to invalid.]{lang="EN-US"}]{#struct_0_x6691_30153_746710235}
+GR state changed from recovery to invalid.
 
-[[GR]{lang="EN-US"}]{#struct_0_x6691_30153_x1651891366}[状态由]{style="font-family:宋体"}[recovery]{lang="EN-US"}[变更为]{style="font-family:宋体"}[invalid]{lang="EN-US"}
+GR状态由recovery变更为invalid
 
-[[GR state changed from recovery to restart.]{lang="EN-US"}]{#struct_0_x6691_30153_x739490695}
+GR state changed from recovery to restart.
 
-[[GR]{lang="EN-US"}]{#struct_0_x6691_30153_1652417179}[状态由]{style="font-family:宋体"}[recovery]{lang="EN-US"}[变更为]{style="font-family:宋体"}[restart]{lang="EN-US"}
+GR状态由recovery变更为restart
 
-[[Sent a hello request message, src instance *src-instance*, dst instance *dst-instance*.]{lang="EN-US"}]{#struct_0_x6691_30153_448328782}
+Sent a hello request message, src instance *src-instance*, dst instance *dst-instance*.
 
-[[发送]{style="font-family:宋体"}[hello]{lang="EN-US"}]{#struct_0_x6691_30153_822001796}[请求消息，]{style="font-family:宋体"}[src instance]{lang="EN-US"}[为]{style="font-family:宋体"}*[src-instance]{lang="EN-US"}*[，]{style="font-family:宋体"}[dst instance]{lang="EN-US"}[为]{style="font-family:宋体"}*[dst-instance]{lang="EN-US"}*
+发送hello请求消息，src instance为*src-instance*，dst instance为*dst-instance*
 
-[[Replied a hello ACK message, src instance *src-instance*, dst instance *dst-instance*.]{lang="EN-US"}]{#struct_0_x6691_30153_746775771}
+Replied a hello ACK message, src instance *src-instance*, dst instance *dst-instance*.
 
-[[回应]{style="font-family:宋体"}[hello]{lang="EN-US"}]{#struct_0_x6691_30153_x1646237249}[应答消息，]{style="font-family:宋体"}[src instance]{lang="EN-US"}[为]{style="font-family:宋体"}*[src-instance]{lang="EN-US"}*[，]{style="font-family:宋体"}[dst instance]{lang="EN-US"}[为]{style="font-family:宋体"}*[dst-instance]{lang="EN-US"}*
+回应hello应答消息，src instance为*src-instance*，dst instance为*dst-instance*
 
-[[Handling hello ASM, interface *interface*, peer  *peer-addr*, hello state *state,* hello event *event.*]{lang="EN-US"}]{#struct_0_x6691_30153_x1961305751}
+Handling hello ASM, interface *interface*, peer  *peer-addr*, hello state *state,* hello event *event.*
 
-[[Hello]{lang="EN-US"}]{#struct_0_x6691_30153_x1861016242}[状态处理，接口为]{style="font-family:宋体"}*[interface]{lang="EN-US"}*[，邻居地址为]{style="font-family:宋体"}*[peer-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[hello]{lang="EN-US"}[状态为]{style="font-family:宋体"}*[state]{lang="EN-US"}*[，]{style="font-family:宋体"}[hello]{lang="EN-US"}[事件为]{style="font-family:宋体"}*[event]{lang="EN-US"}*
+Hello状态处理，接口为*interface*，邻居地址为*peer-addr*，hello状态为*state*，hello事件为*event*
 
-[[Hello state changed from idle to init.]{lang="EN-US"}]{#struct_0_x6691_30153_746185944}
+Hello state changed from idle to init.
 
-[[Hello]{lang="EN-US"}]{#struct_0_x6691_30153_721750805}[状态从]{style="font-family:宋体"}[idle]{lang="EN-US"}[变更为]{style="font-family:宋体"}[init]{lang="EN-US"}
+Hello状态从idle变更为init
 
-[[Hello state changed from init to up.]{lang="EN-US"}]{#struct_0_x6691_30153_x1738764327}
+Hello state changed from init to up.
 
-[[Hello]{lang="EN-US"}]{#struct_0_x6691_30153_347085736}[状态从]{style="font-family:宋体"}[init]{lang="EN-US"}[变更为]{style="font-family:宋体"}[up]{lang="EN-US"}
+Hello状态从init变更为up
 
-[[Hello state changed from init to idle.]{lang="EN-US"}]{#struct_0_x6691_30153_x1945406946}
+Hello state changed from init to idle.
 
-[[Hello]{lang="EN-US"}]{#struct_0_x6691_30153_746251480}[状态从]{style="font-family:宋体"}[init]{lang="EN-US"}[变更为]{style="font-family:宋体"}[idle]{lang="EN-US"}
+Hello状态从init变更为idle
 
-[[Hello state changed from up to idle.]{lang="EN-US"}]{#struct_0_x6691_30153_x614855665}
+Hello state changed from up to idle.
 
-[[Hello]{lang="EN-US"}]{#struct_0_x6691_30153_851849455}[状态从]{style="font-family:宋体"}[up]{lang="EN-US"}[变更为]{style="font-family:宋体"}[idle]{lang="EN-US"}
+Hello状态从up变更为idle
 
-[[Hello state changed from up to init.]{lang="EN-US"}]{#struct_0_x6691_30153_1246687408}
+Hello state changed from up to init.
 
-[[Hello]{lang="EN-US"}]{#struct_0_x6691_30153_746317016}[状态从]{style="font-family:宋体"}[up]{lang="EN-US"}[变更为]{style="font-family:宋体"}[init]{lang="EN-US"}
+Hello状态从up变更为init
 
-[[The peer *peer-addr* was lost. Hello state changed from up to init.]{lang="EN-US"}]{#struct_0_x6691_30153_1333541413}
+The peer *peer-addr* was lost. Hello state changed from up to init.
 
-[[邻居]{style="font-family:宋体"}*[peer-addr]{lang="EN-US"}*]{#struct_0_x6691_30153_x779903010}[丢失，]{style="font-family:宋体"}[hello]{lang="EN-US"}[状态从]{style="font-family:宋体"}[up]{lang="EN-US"}[变更为]{style="font-family:宋体"}[init]{lang="EN-US"}
+邻居*peer-addr*丢失，hello状态从up变更为init
 
-[[The peer\'s hello function was disabled. Hello state changed from up to init.]{lang="EN-US"}]{#struct_0_x6691_30153_x107120771}
+The peer\'s hello function was disabled. Hello state changed from up to init.
 
-[[邻居关闭]{style="font-family:宋体"}[hello]{lang="EN-US"}]{#struct_0_x6691_30153_746382552}[功能，]{style="font-family:宋体"}[hello]{lang="EN-US"}[状态从]{style="font-family:宋体"}[up]{lang="EN-US"}[变更为]{style="font-family:宋体"}[init]{lang="EN-US"}
+邻居关闭hello功能，hello状态从up变更为init
 
-[[Received a hello message in idle state.]{lang="EN-US"}]{#struct_0_x6691_30153_x1448050093}
+Received a hello message in idle state.
 
-[[在]{style="font-family:宋体"}[idle]{lang="EN-US"}]{#struct_0_x6691_30153_x796961097}[状态收到]{style="font-family:宋体"}[hello]{lang="EN-US"}[报文]{style="font-family:宋体"}
+在idle状态收到hello报文
 
-[[Received a hello request message in init state, src instance *src-instance*, dst instance *dst-instance*.]{lang="EN-US"}]{#struct_0_x6691_30153_729592309}
+Received a hello request message in init state, src instance *src-instance*, dst instance *dst-instance*.
 
-[[在]{style="font-family:宋体"}[init]{lang="EN-US"}]{#struct_0_x6691_30153_745923800}[状态收到]{style="font-family:宋体"}[hello]{lang="EN-US"}[请求报文，]{style="font-family:宋体"}[src instance]{lang="EN-US"}[为]{style="font-family:宋体"}*[src- instance]{lang="EN-US"}*[，]{style="font-family:宋体"}[dst instance]{lang="EN-US"}[为]{style="font-family:宋体"}*[dst-instance]{lang="EN-US"}*
+在init状态收到hello请求报文，src instance为*src- instance*，dst instance为*dst-instance*
 
-[[Receive a hello ACK message in init state, src instance *src-instance*, dst instance *dst-instance*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1850232799}
+Receive a hello ACK message in init state, src instance *src-instance*, dst instance *dst-instance*.
 
-[[在]{style="font-family:宋体"}[init]{lang="EN-US"}]{#struct_0_x6691_30153_x449034047}[状态收到]{style="font-family:宋体"}[hello]{lang="EN-US"}[应答报文，]{style="font-family:宋体"}[src instance]{lang="EN-US"}[为]{style="font-family:宋体"}*[src-instance]{lang="EN-US"}*[，]{style="font-family:宋体"}[dst instance]{lang="EN-US"}[为]{style="font-family:宋体"}*[dst-instance]{lang="EN-US"}*
+在init状态收到hello应答报文，src instance为*src-instance*，dst instance为*dst-instance*
 
-[[Received a hello request message in up state, src instance *src-instance*, dst instance *dst-instance*.]{lang="EN-US"}]{#struct_0_x6691_30153_745989336}
+Received a hello request message in up state, src instance *src-instance*, dst instance *dst-instance*.
 
-[[在]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_x6691_30153_522497732}[状态收到]{style="font-family:宋体"}[hello]{lang="EN-US"}[请求报文，]{style="font-family:宋体"}[src instance]{lang="EN-US"}[为]{style="font-family:宋体"}*[src-instance]{lang="EN-US"}*[，]{style="font-family:宋体"}[dst instance]{lang="EN-US"}[为]{style="font-family:宋体"}*[dst-instance]{lang="EN-US"}*
+在up状态收到hello请求报文，src instance为*src-instance*，dst instance为*dst-instance*
 
-[[Received a hello ACK message in up state, src instance *src-instance*, dst instance *dst-instance*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1212830408}
+Received a hello ACK message in up state, src instance *src-instance*, dst instance *dst-instance*.
 
-[[在]{style="font-family:宋体"}[up]{lang="EN-US"}]{#struct_0_x6691_30153_1047479932}[状态收到]{style="font-family:宋体"}[hello]{lang="EN-US"}[应答报文，]{style="font-family:宋体"}[src instance]{lang="EN-US"}[为]{style="font-family:宋体"}*[src-instance]{lang="EN-US"}*[，]{style="font-family:宋体"}[dst instance]{lang="EN-US"}[为]{style="font-family:宋体"}*[dst-instance]{lang="EN-US"}*
+在up状态收到hello应答报文，src instance为*src-instance*，dst instance为*dst-instance*
 
-[[Hello src instance *src-instance* is different from old src instance *old-instance*.]{lang="EN-US"}]{#struct_0_x6691_30153_746054872}
+Hello src instance *src-instance* is different from old src instance *old-instance*.
 
-[[Hello]{lang="EN-US"}]{#struct_0_x6691_30153_x836987699}[报文中的]{style="font-family:宋体"}[src instance]{lang="EN-US"}[（]{style="font-family:宋体"}*[src-instance]{lang="EN-US"}*[）与原来的]{style="font-family:宋体"}[src instance]{lang="EN-US"}[（]{style="font-family:宋体"}*[old-instance]{lang="EN-US"}*[）不一致]{style="font-family:宋体"}
+Hello报文中的src instance（*src-instance*）与原来的src instance（*old-instance*）不一致
 
-[[Hello dst instance *dst-instance* is different from old dst instance *old-instance*.]{lang="EN-US"}]{#struct_0_x6691_30153_x952990416}
+Hello dst instance *dst-instance* is different from old dst instance *old-instance*.
 
-[[Hello]{lang="EN-US"}]{#struct_0_x6691_30153_746120408}[报文中的]{style="font-family:宋体"}[dst instance]{lang="EN-US"}[（]{style="font-family:宋体"}*[dst-instance]{lang="EN-US"}*[）与原来的]{style="font-family:宋体"}[dst instance]{lang="EN-US"}[（]{style="font-family:宋体"}*[old-instance]{lang="EN-US"}*[）不一致]{style="font-family:宋体"}
+Hello报文中的dst instance（*dst-instance*）与原来的dst instance（*old-instance*）不一致
 
-[[Received more than *max-num* erroneous hello messages.]{lang="EN-US"}]{#struct_0_x6691_30153_1428556920}
+Received more than *max-num* erroneous hello messages.
 
-[[接收错误的]{style="font-family:宋体"}[hello]{lang="EN-US"}]{#struct_0_x6691_30153_x1294972411}[报文数大于]{style="font-family:宋体"}*[max-num]{lang="EN-US"}*
+接收错误的hello报文数大于*max-num*
 
-[[Received an incorrect hello message. Src instance is 0.]{lang="EN-US"}]{#struct_0_x6691_30153_746710232}
+Received an incorrect hello message. Src instance is 0.
 
-[[接收错误的]{style="font-family:宋体"}[hello]{lang="EN-US"}]{#struct_0_x6691_30153_x1651891361}[报文，]{style="font-family:宋体"}[src instance]{lang="EN-US"}[为]{style="font-family:宋体"}[0]{lang="EN-US"}
+接收错误的hello报文，src instance为0
 
-[[Received an incorrect hello message. Src instance is different.]{lang="EN-US"}]{#struct_0_x6691_30153_1989392660}
+Received an incorrect hello message. Src instance is different.
 
-[[接收错误的]{style="font-family:宋体"}[hello]{lang="EN-US"}]{#struct_0_x6691_30153_746775768}[报文，]{style="font-family:宋体"}[src instance]{lang="EN-US"}[不一致]{style="font-family:宋体"}
+接收错误的hello报文，src instance不一致
 
-[[Received an incorrect hello message. Dst instance is different.]{lang="EN-US"}]{#struct_0_x6691_30153_692414902}
+Received an incorrect hello message. Dst instance is different.
 
-[[接收错误的]{style="font-family:宋体"}[hello]{lang="EN-US"}]{#struct_0_x6691_30153_x1221906581}[报文，]{style="font-family:宋体"}[dst instance]{lang="EN-US"}[不一致]{style="font-family:宋体"}
+接收错误的hello报文，dst instance不一致
 
-[[Sent *message-type* message to BFD, interface *interface*, src address *src-address*, dst address *dst-address*.]{lang="EN-US"}]{#struct_0_x6691_30153_746185945}
+Sent *message-type* message to BFD, interface *interface*, src address *src-address*, dst address *dst-address*.
 
-[[发送]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*]{#struct_0_x6691_30153_721750804}[消息给]{style="font-family:宋体"}[BFD]{lang="EN-US"}[，接口为]{style="font-family:宋体"}*[interface]{lang="EN-US"}*[，源地址为]{style="font-family:宋体"}*[src-address]{lang="EN-US"}*[，目的地址为]{style="font-family:宋体"}*[dst-address]{lang="EN-US"}*
+发送*message-type*消息给BFD，接口为*interface*，源地址为*src-address*，目的地址为*dst-address*
 
-[[Received BFD down message, interface *interface*, peer *peer-address*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1738764328}
+Received BFD down message, interface *interface*, peer *peer-address*.
 
-[[收到]{style="font-family:宋体"}[BFD down]{lang="EN-US"}]{#struct_0_x6691_30153_746251481}[消息，接口为]{style="font-family:宋体"}*[interface]{lang="EN-US"}*[，邻居地址为]{style="font-family:宋体"}*[peer-address]{lang="EN-US"}*
+收到BFD down消息，接口为*interface*，邻居地址为*peer-address*
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x614855664}
+\# 在接口视图下配置RSVP Hello扩展功能后，打开RSVP Hello调试信息开关，打印如下调试信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x6691_30153_851783919}[在接口视图下配置]{style="font-family:宋体"}[RSVP Hello]{lang="EN-US"}[扩展功能后，打开]{style="font-family:宋体"}[RSVP Hello]{lang="EN-US"}[调试信息开关，打印如下调试信息。]{style="font-family:宋体"}
+\<Sysname\> debugging rsvp hello
 
-[[\<Sysname\> debugging rsvp hello]{lang="EN-US"}]{#struct_0_x6691_30153_1433292777}
+\*Aug 19 08:35:12:478 2012 Sysname RSVP/7/HELLO: -MDC=1; Sent a hello request message, src instance 728, dst instance 727.
 
-[\*Aug 19 08:35:12:478 2012 Sysname RSVP/7/HELLO: -MDC=1; Sent a hello request message, src instance 728, dst instance 727.]{lang="EN-US"}
+*// 发送Hello request消息，source instance为728，destination instance为727。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_430112404}*[发送]{style="font-family:宋体"}[Hello request]{lang="EN-US"}[消息，]{style="font-family:宋体"}[source instance]{lang="EN-US"}[为]{style="font-family:宋体"}[728]{lang="EN-US"}[，]{style="font-family:宋体"}[destination instance]{lang="EN-US"}[为]{style="font-family:宋体"}[727]{lang="EN-US"}[。]{style="font-family:宋体"}*
+\*Aug 19 08:35:12:479 2012 Sysname RSVP/7/HELLO: -MDC=1; Handling hello ASM, interface GE1/0/1, peer 12.11.110.11, hello state up, hello event received message.
 
-[[\*Aug 19 08:35:12:479 2012 Sysname RSVP/7/HELLO: -MDC=1; Handling hello ASM, interface GE1/0/1, peer 12.11.110.11, hello state up, hello event received message.]{lang="EN-US"}]{#struct_0_x6691_30153_x2090802962}
+*[// Hello*]*状态处理，接口为GigabitEthernet1/0/1，邻居地址为12.11.110.11，hello状态为up，hello事件为接收到消息*
 
-[*[// Hello]{lang="EN-US"}*]{#struct_0_x6691_30153_x331118884}*[状态处理，接口为]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[，邻居地址为]{style="font-family:宋体"}[12.11.110.11]{lang="EN-US"}[，]{style="font-family:宋体"}[hello]{lang="EN-US"}[状态为]{style="font-family:宋体"}[up]{lang="EN-US"}[，]{style="font-family:宋体"}[hello]{lang="EN-US"}[事件为接收到消息]{style="font-family:宋体"}*
+\*Aug 19 08:35:12:479 2012 Sysname RSVP/7/HELLO: -MDC=1; Received a hello ACK message in up state, src instance 727, dst instance 728.
 
-[[\*Aug 19 08:35:12:479 2012 Sysname RSVP/7/HELLO: -MDC=1; Received a hello ACK message in up state, src instance 727, dst instance 728.]{lang="EN-US"}]{#struct_0_x6691_30153_x272070944}
+*// 在up状态接收到Hello ACK消息，source instance为727，destination instance为728。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_839778711}*[在]{style="font-family:宋体"}[up]{lang="EN-US"}[状态接收到]{style="font-family:宋体"}[Hello ACK]{lang="EN-US"}[消息，]{style="font-family:宋体"}[source instance]{lang="EN-US"}[为]{style="font-family:宋体"}[727]{lang="EN-US"}[，]{style="font-family:宋体"}[destination instance]{lang="EN-US"}[为]{style="font-family:宋体"}[728]{lang="EN-US"}[。]{style="font-family:宋体"}*
+\*Aug 19 08:35:12:479 2012 Sysname RSVP/7/HELLO: -MDC=1; Handling GR ASM, interface GE1/0/1, peer 12.11.110.11, GR state invalid, GR event without object.
 
-[[\*Aug 19 08:35:12:479 2012 Sysname RSVP/7/HELLO: -MDC=1; Handling GR ASM, interface GE1/0/1, peer 12.11.110.11, GR state invalid, GR event without object.]{lang="EN-US"}]{#struct_0_x6691_30153_746317017}
-
-[*[// GR]{lang="EN-US"}*]{#struct_0_x6691_30153_1333541414}*[状态处理，接口为]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[，邻居地址为]{style="font-family:宋体"}[12.11.110.11]{lang="EN-US"}[，]{style="font-family:宋体"}[GR]{lang="EN-US"}[状态为]{style="font-family:宋体"}[invalid]{lang="EN-US"}[，]{style="font-family:宋体"}[GR]{lang="EN-US"}[事件为不存在对象]{style="font-family:宋体"}*
-
-::: {#1358900568 .myid}
-[]{#_Toc404790955}[]{#struct_0_x6691_30153_x780361762}
+*[// GR*]*状态处理，接口为GigabitEthernet1/0/1，邻居地址为12.11.110.11，GR状态为invalid，GR事件为不存在对象*
 
 **RSVP \-- RSVP调试命令 \-- debugging rsvp packet**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x6691_30153_976927037}
+【命令】
 
-[**[debugging rsvp packet]{lang="EN-US"}**]{#struct_0_x6691_30153_x1819577960}
+**[debugging rsvp packet**]
 
-[**[undo debugging rsvp packet]{lang="EN-US"}**]{#struct_0_x6691_30153_x1925547142}
+**[undo debugging rsvp packet**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x422131442}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x6691_30153_1112241516}
+用户视图
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x347434805}
+【参数】
 
-[[无]{style="font-family:宋体"}]{#struct_0_x6691_30153_746382553}
+无
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x1448050094}
+【描述】
 
-[**[debugging rsvp packet]{lang="EN-US"}**]{#struct_0_x6691_30153_x393676570}[命令用来打开]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}**[undo debugging rsvp packet]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[报文调试信息开关。]{style="font-family:宋体"}
+**[debugging rsvp packet**]命令用来打开RSVP报文调试信息开关。**undo debugging rsvp packet**命令用来关闭RSVP报文调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[RSVP]{lang="EN-US"}]{#struct_0_x6691_30153_x696184930}[报文调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，RSVP报文调试信息开关处于关闭状态。
 
-[[表1-5 ]{lang="EN-US"}[debugging rsvp packet]{lang="EN-US"}]{#struct_0_x6691_30153_x1790773234}[命令输出信息描述表]{style="font-family:黑体"}
+表1-5 debugging rsvp packet命令输出信息描述表
 
-[]{#table_struct_0_304582140}[[字段]{style="font-family:黑体"}]{#struct_0_x6691_30153_x475635679}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x6691_30153_1683579027}
+描述
 
-[[Received a packet from socket *socket-fd*, length *length*, content: *content*.]{lang="EN-US"}]{#struct_0_x6691_30153_720914067}
+Received a packet from socket *socket-fd*, length *length*, content: *content*.
 
-[[从]{style="font-family:宋体"}[socket]{lang="EN-US"}]{#struct_0_x6691_30153_745923801}[（]{style="font-family:宋体"}*[socket-fd]{lang="EN-US"}*[）接收到报文，报文长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*[，内容为]{style="font-family:宋体"}*[content]{lang="EN-US"}*
+从socket（*socket-fd*）接收到报文，报文长度为*length*，内容为*content*
 
-[[Sent a packet to socket *socket-fd*, length *length*, content: *content*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1850232800}
+Sent a packet to socket *socket-fd*, length *length*, content: *content*.
 
-[[向]{style="font-family:宋体"}[socket]{lang="EN-US"}]{#struct_0_x6691_30153_x1658428881}[（]{style="font-family:宋体"}*[socket-fd]{lang="EN-US"}*[）发送报文，报文长度为]{style="font-family:宋体"}*[length]{lang="EN-US"}*[，内容为]{style="font-family:宋体"}*[content]{lang="EN-US"}*
+向socket（*socket-fd*）发送报文，报文长度为*length*，内容为*content*
 
-[[Received *message-type* message from interface *interface*.]{lang="EN-US"}]{#struct_0_x6691_30153_x21838739}
+Received *message-type* message from interface *interface*.
 
-[[从接口]{style="font-family:宋体"}*[interface]{lang="EN-US"}*]{#struct_0_x6691_30153_x1907996960}[收到]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[消息]{style="font-family:宋体"}
+从接口*interface*收到*message-type*消息
 
-[[Sent *message-type* message to interface *interface*, nexthop *nexthop-addr*, result *result*.]{lang="EN-US"}]{#struct_0_x6691_30153_1565505391}
+Sent *message-type* message to interface *interface*, nexthop *nexthop-addr*, result *result*.
 
-[[向接口]{style="font-family:宋体"}*[interface]{lang="EN-US"}*]{#struct_0_x6691_30153_745989337}[发送]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[消息，下一跳地址为]{style="font-family:宋体"}*[nexthop-addr]{lang="EN-US"}*[，返回值为]{style="font-family:宋体"}*[result  ]{lang="EN-US"}*
+向接口*interface*发送*message-type*消息，下一跳地址为*nexthop-addr*，返回值为*result  *
 
-[[其中，]{style="font-family:宋体"}[result]{lang="EN-US"}]{#struct_0_x6691_30153_727170694}[的取值包括：]{style="font-family:宋体"}
+其中，result的取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[s]{lang="EN-US"}[uccessful]{lang="EN-US"}]{#struct_0_x6691_30153_727236230}[：发送]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[消息]{lang="EN-US" style="font-family:宋体"}[成功]{style="font-family:宋体"}
+·successful：发送*message-type*消息成功
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[failed]{lang="EN-US"}]{#struct_0_x6691_30153_x382073770}[：]{lang="EN-US" style="font-family:宋体"}[发送]{style="font-family:宋体"}*[message-type]{lang="EN-US"}*[消息失败]{lang="EN-US" style="font-family:宋体"}
+·failed：发送*message-type*消息失败
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x6691_30153_522497731}
+\# 打开RSVP报文调试信息开关，收到RSVP报文后打印如下调试信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x6691_30153_x1212830405}[打开]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[报文调试信息开关，收到]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[报文后打印如下调试信息。]{style="font-family:宋体"}
+\<Sysname\> debugging rsvp packet
 
-[[\<Sysname\> debugging rsvp packet]{lang="EN-US"}]{#struct_0_x6691_30153_x2131742117}
+\*Aug 19 08:37:47:978 2012 Sysname RSVP/7/PKT: -MDC=1; Sent a packet to socket 41, length 164, content: 45 C0 A4 00 00 00 00 00 FF 2E 9C F8 0C 0B 6E 0C 0C 0B 6E 0B 10 02 00 00 FF 00 00 90 00 24 04 01 01 00 00 01 02 00 00 00 50 30 A4 AC 00 00 00 38 0E EE AA E5 A9 AD 67 71 68 A8 AF A0 BD 8A 4E 91 00 10 01 07 0A 21 21 21 00 00 00 01 0A 0B 0B 0B 00 0C 03 01 0C 0B 6E 0C 00 00 00 02 00 08 05 01 00 00 27 10 00 08 08 01 00 00 00 12 00 24 09 02 00 00 00 07 05 00 00 06 7F 00 00 05 00 00 00 00 44 7A 00 00 00 00 00 00 00 00 00 00 00 00 05 DC 00 0C 0A 07 0A 0B 0B 0B 00 00 47 24 00 08 10 01 00 00 04 7B .
 
-[\*Aug 19 08:37:47:978 2012 Sysname RSVP/7/PKT: -MDC=1; Sent a packet to socket 41, length 164, content: 45 C0 A4 00 00 00 00 00 FF 2E 9C F8 0C 0B 6E 0C 0C 0B 6E 0B 10 02 00 00 FF 00 00 90 00 24 04 01 01 00 00 01 02 00 00 00 50 30 A4 AC 00 00 00 38 0E EE AA E5 A9 AD 67 71 68 A8 AF A0 BD 8A 4E 91 00 10 01 07 0A 21 21 21 00 00 00 01 0A 0B 0B 0B 00 0C 03 01 0C 0B 6E 0C 00 00 00 02 00 08 05 01 00 00 27 10 00 08 08 01 00 00 00 12 00 24 09 02 00 00 00 07 05 00 00 06 7F 00 00 05 00 00 00 00 44 7A 00 00 00 00 00 00 00 00 00 00 00 00 05 DC 00 0C 0A 07 0A 0B 0B 0B 00 00 47 24 00 08 10 01 00 00 04 7B .]{lang="EN-US"}
+*// 向socket 41发送RSVP报文，报文长度为164字节，报文内容以十六进制形式打印。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x590076823}*[向]{style="font-family:宋体"}[socket 41]{lang="EN-US"}[发送]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[报文，报文长度为]{style="font-family:宋体"}[164]{lang="EN-US"}[字节，报文内容以十六进制形式打印。]{style="font-family:宋体"}*
+\*Aug 19 08:37:47:978 2012 Sysname RSVP/7/PKT: -MDC=1; Sent resv message to interface GE1/0/1, nexthop 12.11.110.11, result successful.
 
-[[\*Aug 19 08:37:47:978 2012 Sysname RSVP/7/PKT: -MDC=1; Sent resv message to interface GE1/0/1, nexthop 12.11.110.11, result s]{lang="EN-US"}]{#struct_0_x6691_30153_x1837625736}[uccessful]{lang="EN-US"}[.]{lang="EN-US"}
+*// 成功向接口GigabitEthernet1/0/1发送Resv报文，下一跳地址为12.11.110.11。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x622659939}*[成功向接口]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[发送]{style="font-family:宋体"}[Resv]{lang="EN-US"}[报文，下一跳地址为]{style="font-family:宋体"}[12.11.110.11]{lang="EN-US"}[。]{style="font-family:宋体"}*
+\*Aug 19 08:37:51:278 2012 Sysname RSVP/7/PKT: -MDC=1; Sent a packet to socket 41, length 188, content: 46 C0 BC 00 00 00 00 00 FD 2E FF FF 0A 0B 0B 0B 0A 21 21 21 94 04 00 00 10 01 5B 0F FD 00 00 A4 00 10 01 07 0A 21 21 21 00 00 00 01 0A 0B 0B 0B 00 0C 03 01 17 0B 6E 0B 00 00 00 04 00 08 05 01 00 00 27 10 00 08 13 01 00 00 08 00 00 10 CF 07 07 07 04 07 54 75 6E 6E 65 6C 31 00 00 0C 0B 07 0A 0B 0B 0B 00 00 47 24 00 24 0C 02 00 00 00 07 01 00 00 06 7F 00 00 05 00 00 00 00 44 7A 00 00 00 00 00 00 00 00 00 00 00 00 05 DC 00 30 0D 02 00 00 00 0A 01 00 00 08 04 00 00 01 00 00 00 01 06 00 00 01 49 98 96 80 08 00 00 01 00 00 00 00 0A 00 00 01 00 00 05 DC 05 00 00 00 .
 
-[[\*Aug 19 08:37:51:278 2012 Sysname RSVP/7/PKT: -MDC=1; Sent a packet to socket 41, length 188, content: 46 C0 BC 00 00 00 00 00 FD 2E FF FF 0A 0B 0B 0B 0A 21 21 21 94 04 00 00 10 01 5B 0F FD 00 00 A4 00 10 01 07 0A 21 21 21 00 00 00 01 0A 0B 0B 0B 00 0C 03 01 17 0B 6E 0B 00 00 00 04 00 08 05 01 00 00 27 10 00 08 13 01 00 00 08 00 00 10 CF 07 07 07 04 07 54 75 6E 6E 65 6C 31 00 00 0C 0B 07 0A 0B 0B 0B 00 00 47 24 00 24 0C 02 00 00 00 07 01 00 00 06 7F 00 00 05 00 00 00 00 44 7A 00 00 00 00 00 00 00 00 00 00 00 00 05 DC 00 30 0D 02 00 00 00 0A 01 00 00 08 04 00 00 01 00 00 00 01 06 00 00 01 49 98 96 80 08 00 00 01 00 00 00 00 0A 00 00 01 00 00 05 DC 05 00 00 00 .]{lang="EN-US"}]{#struct_0_x6691_30153_x1382606069}
+*// 向socket 41发送RSVP报文，报文长度为188字节，报文内容以十六进制形式打印。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_1147634949}*[向]{style="font-family:宋体"}[socket 41]{lang="EN-US"}[发送]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[报文，报文长度为]{style="font-family:宋体"}[188]{lang="EN-US"}[字节，报文内容以十六进制形式打印。]{style="font-family:宋体"}*
+\*Aug 19 08:37:51:279 2012 Sysname RSVP/7/PKT: -MDC=1; Sent path message to interface GE1/0/2, nexthop 23.11.110.12, result successful.
 
-[[\*Aug 19 08:37:51:279 2012 Sysname RSVP/7/PKT: -MDC=1; Sent path message to interface GE1/0/2, nexthop 23.11.110.12, result s]{lang="EN-US"}]{#struct_0_x6691_30153_746054873}[uccessful]{lang="EN-US"}[. ]{lang="EN-US"}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x836987698}*[成功向接口]{style="font-family:宋体"}[GigabitEthernet1/0/2]{lang="EN-US"}[发送]{style="font-family:宋体"}[Path]{lang="EN-US"}[报文，下一跳地址为]{style="font-family:宋体"}*[23.11.110.12]{lang="EN-US"}*[。]{style="font-family:宋体"}*
-
-::: {#-640081544 .myid}
-[]{#_Toc404790956}[]{#struct_0_x6691_30153_x952924880}
+*// 成功向接口GigabitEthernet1/0/2发送Path报文，下一跳地址为*23.11.110.12*。*
 
 **RSVP \-- RSVP调试命令 \-- debugging rsvp path**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x6691_30153_1191649418}
+【命令】
 
-[**[debugging rsvp path]{lang="EN-US"}**[ \[ **destination** *ip-address* **source** *ip-address* **tunnel-id** *tunnel-id* \]]{lang="EN-US"}]{#struct_0_x6691_30153_29048567}
+**[debugging rsvp path** [ **destination** *ip-address* **source** *ip-address* **tunnel-id** *tunnel-id* ]]
 
-[**[undo debugging rsvp path]{lang="EN-US"}**]{#struct_0_x6691_30153_x815006470}
+**[undo debugging rsvp path**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x6691_30153_206027500}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x6691_30153_x646869488}
+用户视图
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x6691_30153_746120409}
+【参数】
 
-[**[destination]{lang="EN-US"}**[ *ip-address*]{lang="EN-US"}]{#struct_0_x6691_30153_1428556919}[：指定隧道的目的地址。]{style="font-family:宋体"}
+**[destination** *ip-address*]：指定隧道的目的地址。
 
-[**[source]{lang="EN-US"}**[ *ip-address*]{lang="EN-US"}]{#struct_0_x6691_30153_x1295431160}[：指定隧道的源地址，即]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[消息中]{style="font-family:宋体"}[Session]{lang="EN-US"}[对象的扩展]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[source** *ip-address*]：指定隧道的源地址，即RSVP消息中Session对象的扩展tunnel ID。
 
-[**[tunnel-id]{lang="EN-US"}**[ *tunnel-id*]{lang="EN-US"}]{#struct_0_x6691_30153_548137948}[：指定隧道的]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[tunnel-id** *tunnel-id*]：指定隧道的ID。*tunnel-id*为隧道ID，取值范围为0～65535。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x176343476}
+【描述】
 
-[**[debugging rsvp path]{lang="EN-US"}**]{#struct_0_x6691_30153_x305367360}[命令用来打开]{style="font-family:宋体"}[RSVP Path]{lang="EN-US"}[相关的调试信息开关。]{style="font-family:宋体"}**[undo debugging rsvp path]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[RSVP Path]{lang="EN-US"}[相关的调试信息开关。]{style="font-family:宋体"}
+**[debugging rsvp path**]命令用来打开RSVP Path相关的调试信息开关。**undo debugging rsvp path**命令用来关闭RSVP Path相关的调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[RSVP Path]{lang="EN-US"}]{#struct_0_x6691_30153_x1933685032}[相关的调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，RSVP Path相关的调试信息开关处于关闭状态。
 
-[[表1-6 ]{lang="EN-US"}[debugging rsvp path]{lang="EN-US"}]{#struct_0_x6691_30153_x2020213657}[命令输出信息描述表]{style="font-family:黑体"}
+表1-6 debugging rsvp path命令输出信息描述表
 
-[]{#table_struct_0_331465641}[[字段]{style="font-family:黑体"}]{#struct_0_x6691_30153_746710233}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x6691_30153_x1651891360}
+描述
 
-[[TC triggered to create ingress CR-LSP, LSP ID *lsp-id*, direction *direction*.]{lang="EN-US"}]{#struct_0_x6691_30153_423308719}
+TC triggered to create ingress CR-LSP, LSP ID *lsp-id*, direction *direction*.
 
-[[TC]{lang="EN-US"}]{#struct_0_x6691_30153_x570580400}[触发创建头节点]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[lsp-id]{lang="EN-US"}*[，方向为]{style="font-family:宋体"}*[direction]{lang="EN-US"}*
+TC触发创建头节点CR-LSP，LSP ID为*lsp-id*，方向为*direction*
 
-[[TC triggered to delete ingress CR-LSP, LSP ID *lsp-id*, direction *direction*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1371995553}
+TC triggered to delete ingress CR-LSP, LSP ID *lsp-id*, direction *direction*.
 
-[[TC]{lang="EN-US"}]{#struct_0_x6691_30153_x1070443769}[触发删除头节点]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[lsp-id]{lang="EN-US"}*[，方向为]{style="font-family:宋体"}*[direction]{lang="EN-US"}*
+TC触发删除头节点CR-LSP，LSP ID为*lsp-id*，方向为*direction*
 
-[[TC triggered to create egress CR-LSP, ingress LSR ID *lsr-id*, tunnel ID *tunnel-id*.]{lang="EN-US"}]{#struct_0_x6691_30153_746775769}
+TC triggered to create egress CR-LSP, ingress LSR ID *lsr-id*, tunnel ID *tunnel-id*.
 
-[[TC]{lang="EN-US"}]{#struct_0_x6691_30153_692414903}[触发创建尾节点]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[，头节点]{style="font-family:宋体"}[LSR ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[lsr-id]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+TC触发创建尾节点CR-LSP，头节点LSR ID为*lsr-id*，tunnel ID为*tunnel-id*
 
-[[TC triggered to delete egress CR-LSP, ingress LSR ID *lsr-id*, tunnel ID *tunnel-id*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1221906582}
+TC triggered to delete egress CR-LSP, ingress LSR ID *lsr-id*, tunnel ID *tunnel-id*.
 
-[[TC]{lang="EN-US"}]{#struct_0_x6691_30153_x1779121267}[触发创建尾节点]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[，头节点]{style="font-family:宋体"}[LSR ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[lsr-id]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+TC触发创建尾节点CR-LSP，头节点LSR ID为*lsr-id*，tunnel ID为*tunnel-id*
 
-[[Received a path message. Created a new PSB.]{lang="EN-US"}]{#struct_0_x6691_30153_x985257977}
+Received a path message. Created a new PSB.
 
-[[收到]{style="font-family:宋体"}[path]{lang="EN-US"}]{#struct_0_x6691_30153_x662003182}[消息，新建]{style="font-family:宋体"}[PSB]{lang="EN-US"}
+收到path消息，新建PSB
 
-[[Received a path message. Updated the old PSB.]{lang="EN-US"}]{#struct_0_x6691_30153_746185942}
+Received a path message. Updated the old PSB.
 
-[[收到]{style="font-family:宋体"}[path]{lang="EN-US"}]{#struct_0_x6691_30153_721750799}[消息，更新]{style="font-family:宋体"}[PSB]{lang="EN-US"}
+收到path消息，更新PSB
 
-[[PSB\'s PHOP changed from *phop-addr1* to *phop-addr2*.]{lang="EN-US"}]{#struct_0_x6691_30153_x175415392}
+PSB\'s PHOP changed from *phop-addr1* to *phop-addr2*.
 
-[[PSB]{lang="EN-US"}]{#struct_0_x6691_30153_x1344511913}[的]{style="font-family:宋体"}[PHOP]{lang="EN-US"}[从]{style="font-family:宋体"}*[phop-addr1]{lang="EN-US"}*[变为]{style="font-family:宋体"}*[phop-addr2]{lang="EN-US"}*
+PSB的PHOP从*phop-addr1*变为*phop-addr2*
 
-[[PSB incoming label *label1* is different from the recovery label *label2* in the path message.]{lang="EN-US"}]{#struct_0_x6691_30153_x1582729505}
+PSB incoming label *label1* is different from the recovery label *label2* in the path message.
 
-[[PSB]{lang="EN-US"}]{#struct_0_x6691_30153_746251478}[的入标签]{style="font-family:宋体"}*[label1]{lang="EN-US"}*[与]{style="font-family:宋体"}[path]{lang="EN-US"}[消息中的]{style="font-family:宋体"}[recovery label *label2*]{lang="EN-US"}[不一致]{style="font-family:宋体"}
+PSB的入标签*label1*与path消息中的recovery label *label2*不一致
 
-[[Allocated resource from TRM: interface *interface*, bandwidth *bandwidth*, CT *class-type*, result *result*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1424159721}
+Allocated resource from TRM: interface *interface*, bandwidth *bandwidth*, CT *class-type*, result *result*.
 
-[[从]{style="font-family:宋体"}[TRM]{lang="EN-US"}]{#struct_0_x6691_30153_1050492782}[分配资源：接口为]{style="font-family:宋体"}*[interface]{lang="EN-US"}*[，带宽为]{style="font-family:宋体"}*[bandwidth]{lang="EN-US"}*[，带宽类型为]{style="font-family:宋体"}*[class-type]{lang="EN-US"}*[，返回值为]{style="font-family:宋体"}*[result ]{lang="EN-US"}*
+从TRM分配资源：接口为*interface*，带宽为*bandwidth*，带宽类型为*class-type*，返回值为*result *
 
-[[其中，]{style="font-family:宋体"}[result]{lang="EN-US"}]{#struct_0_x6691_30153_726908549}[的取值包括：]{style="font-family:宋体"}
+其中，result的取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[s]{lang="EN-US"}[uccessful]{lang="EN-US"}]{#struct_0_x6691_30153_624656724}[：资源分配成功]{style="font-family:宋体"}
+·successful：资源分配成功
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[failed]{lang="EN-US"}]{#struct_0_x6691_30153_726974085}[：资源分配失败]{style="font-family:宋体"}
+·failed：资源分配失败
 
-[[Checked resource from TRM: interface *interface*, bandwidth *bandwidth*, CT *class-type*, result *result*.]{lang="EN-US"}]{#struct_0_x6691_30153_203504479}
+Checked resource from TRM: interface *interface*, bandwidth *bandwidth*, CT *class-type*, result *result*.
 
-[[检查]{style="font-family:宋体"}[TRM]{lang="EN-US"}]{#struct_0_x6691_30153_x1733282265}[资源：接口为]{style="font-family:宋体"}*[interface]{lang="EN-US"}*[，带宽为]{style="font-family:宋体"}*[bandwidth]{lang="EN-US"}*[，带宽类型为]{style="font-family:宋体"}*[class-type]{lang="EN-US"}*[，返回值为]{style="font-family:宋体"}*[result]{lang="EN-US"}*
+检查TRM资源：接口为*interface*，带宽为*bandwidth*，带宽类型为*class-type*，返回值为*result*
 
-[[其中，]{style="font-family:宋体"}*[result]{lang="EN-US"}*]{#struct_0_x6691_30153_x2127152770}[的取值包括：]{style="font-family:宋体"}
+其中，*result*的取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[s]{lang="EN-US"}[uccessful]{lang="EN-US"}]{#struct_0_x6691_30153_726777477}[：资源分配成功]{style="font-family:宋体"}
+·successful：资源分配成功
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[bandwidth unavailable]{lang="EN-US"}]{#struct_0_x6691_30153_726843013}[：带宽无效，资源分配失败]{style="font-family:宋体"}
+·bandwidth unavailable：带宽无效，资源分配失败
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[no route]{lang="EN-US"}]{#struct_0_x6691_30153_x2086717089}[：亲和属性检查不通过，资源分配失败]{style="font-family:宋体"}
+·no route：亲和属性检查不通过，资源分配失败
 
-[[Freed resource to TRM.]{lang="EN-US"}]{#struct_0_x6691_30153_746317014}
+Freed resource to TRM.
 
-[[释放]{style="font-family:宋体"}[TRM]{lang="EN-US"}]{#struct_0_x6691_30153_1333541411}[资源]{style="font-family:宋体"}
+释放TRM资源
 
-[[Created a reverse CR-LSP, LSP ID *lsp-id*.]{lang="EN-US"}]{#struct_0_x6691_30153_x780034082}
+Created a reverse CR-LSP, LSP ID *lsp-id*.
 
-[[创建反向]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}]{#struct_0_x6691_30153_x609151383}[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[lsp-id]{lang="EN-US"}*
+创建反向CR-LSP，LSP ID为*lsp-id*
 
-[[Deleted the reverse CR-LSP, LSP ID *lsp-id*.]{lang="EN-US"}]{#struct_0_x6691_30153_1990878577}
+Deleted the reverse CR-LSP, LSP ID *lsp-id*.
 
-[[删除反向]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}]{#struct_0_x6691_30153_746382550}[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[lsp-id]{lang="EN-US"}*
+删除反向CR-LSP，LSP ID为*lsp-id*
 
-[[Allocated incoming label *label* for reverse LSP.]{lang="EN-US"}]{#struct_0_x6691_30153_x1448050091}
+Allocated incoming label *label* for reverse LSP.
 
-[[为反向]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x6691_30153_365838317}[分配入标签]{style="font-family:宋体"}*[label]{lang="EN-US"}*
+为反向LSP分配入标签*label*
 
-[[Allocated incoming label *label* for LSP.]{lang="EN-US"}]{#struct_0_x6691_30153_x406405543}
+Allocated incoming label *label* for LSP.
 
-[[为]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x6691_30153_745923798}[分配入标签]{style="font-family:宋体"}*[label]{lang="EN-US"}*
+为LSP分配入标签*label*
 
-[[Deleted MP information. PHOP is *phop-addr*.]{lang="EN-US"}]{#struct_0_x6691_30153_x643114220}
+Deleted MP information. PHOP is *phop-addr*.
 
-[[删除]{style="font-family:宋体"}[MP]{lang="EN-US"}]{#struct_0_x6691_30153_1098464864}[信息，]{style="font-family:宋体"}[PHOP]{lang="EN-US"}[是]{style="font-family:宋体"}*[phop-addr]{lang="EN-US"}*
+删除MP信息，PHOP是*phop-addr*
 
-[[Failed to trigger CSPF.]{lang="EN-US"}]{#struct_0_x6691_30153_x34067821}
+Failed to trigger CSPF.
 
-[[触发]{style="font-family:宋体"}[CSPF]{lang="EN-US"}]{#struct_0_x6691_30153_745989334}[失败]{style="font-family:宋体"}
+触发CSPF失败
 
-[[FRR bind.]{lang="EN-US"}]{#struct_0_x6691_30153_522497734}
+FRR bind.
 
-[[FRR]{lang="EN-US"}]{#struct_0_x6691_30153_x1212830410}[绑定]{style="font-family:宋体"}
+FRR绑定
 
-[[FRR unbind.]{lang="EN-US"}]{#struct_0_x6691_30153_1403775828}
+FRR unbind.
 
-[[FRR]{lang="EN-US"}]{#struct_0_x6691_30153_746054870}[取消绑定]{style="font-family:宋体"}
+FRR取消绑定
 
-[[FRR inuse.]{lang="EN-US"}]{#struct_0_x6691_30153_x836987701}
+FRR inuse.
 
-[[已经进行]{style="font-family:宋体"}[FRR]{lang="EN-US"}]{#struct_0_x6691_30153_1386186023}[切换]{style="font-family:宋体"}
+已经进行FRR切换
 
-[[Finished smoothing all egress CR-LSP configurations.]{lang="EN-US"}]{#struct_0_x6691_30153_x689676153}
+Finished smoothing all egress CR-LSP configurations.
 
-[[尾节点]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}]{#struct_0_x6691_30153_746120406}[配置平滑结束]{style="font-family:宋体"}
+尾节点CR-LSP配置平滑结束
 
-[[TC disconnected.]{lang="EN-US"}]{#struct_0_x6691_30153_1428556918}
+TC disconnected.
 
-[[TC]{lang="EN-US"}]{#struct_0_x6691_30153_x1295496696}[和]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[的连接断开]{style="font-family:宋体"}
+TC和RSVP的连接断开
 
-[[TRM reconnected.]{lang="EN-US"}]{#struct_0_x6691_30153_746710230}
+TRM reconnected.
 
-[[TRM]{lang="EN-US"}]{#struct_0_x6691_30153_x1651891363}[和]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[重新建立连接]{style="font-family:宋体"}
+TRM和RSVP重新建立连接
 
-[[Resource was preempted.]{lang="EN-US"}]{#struct_0_x6691_30153_x1142775222}
+Resource was preempted.
 
-[[资源被抢占]{style="font-family:宋体"}]{#struct_0_x6691_30153_1059318799}
+资源被抢占
 
-[[Deleted the PSB.]{lang="EN-US"}]{#struct_0_x6691_30153_746775766}
+Deleted the PSB.
 
-[[删除]{style="font-family:宋体"}[PSB]{lang="EN-US"}]{#struct_0_x6691_30153_692414904}
+删除PSB
 
-[[Released the incoming label *label* for reverse LSP.]{lang="EN-US"}]{#struct_0_x6691_30153_x1221906575}
+Released the incoming label *label* for reverse LSP.
 
-[[释放反向]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x6691_30153_746185943}[的入标签]{style="font-family:宋体"}*[label]{lang="EN-US"}*
+释放反向LSP的入标签*label*
 
-[[Released the incoming label *label* for LSP.]{lang="EN-US"}]{#struct_0_x6691_30153_721750798}
+Released the incoming label *label* for LSP.
 
-[[释放]{style="font-family:宋体"}[LSP]{lang="EN-US"}]{#struct_0_x6691_30153_x175415393}[的入标签]{style="font-family:宋体"}*[label]{lang="EN-US"}*
+释放LSP的入标签*label*
 
-[[Sent a path message.]{lang="EN-US"}]{#struct_0_x6691_30153_746251479}
+Sent a path message.
 
-[[发送]{style="font-family:宋体"}[path]{lang="EN-US"}]{#struct_0_x6691_30153_x1424159720}[消息]{style="font-family:宋体"}
+发送path消息
 
-[[The path message length *length* is greater than interface MTU *mtu*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1678390573}
+The path message length *length* is greater than interface MTU *mtu*.
 
-[[Path]{lang="EN-US"}]{#struct_0_x6691_30153_x1014652083}[消息的长度]{style="font-family:宋体"}*[length]{lang="EN-US"}*[大于接口的]{style="font-family:宋体"}[MTU]{lang="EN-US"}[值]{style="font-family:宋体"}*[mtu]{lang="EN-US"}*
+Path消息的长度*length*大于接口的MTU值*mtu*
 
-[[Started to smooth all PSBs.]{lang="EN-US"}]{#struct_0_x6691_30153_746317015}
+Started to smooth all PSBs.
 
-[[PSB]{lang="EN-US"}]{#struct_0_x6691_30153_1333541412}[平滑开始]{style="font-family:宋体"}
+PSB平滑开始
 
-[[Smoothing the PSB.]{lang="EN-US"}]{#struct_0_x6691_30153_x779968546}
+Smoothing the PSB.
 
-[[PSB]{lang="EN-US"}]{#struct_0_x6691_30153_746382551}[平滑]{style="font-family:宋体"}
+PSB平滑
 
-[[Finished smoothing all PSBs.]{lang="EN-US"}]{#struct_0_x6691_30153_x1448050092}
+Finished smoothing all PSBs.
 
-[[PSB]{lang="EN-US"}]{#struct_0_x6691_30153_769122844}[平滑结束]{style="font-family:宋体"}
+PSB平滑结束
 
-[[Received interface *interface* change message.]{lang="EN-US"}]{#struct_0_x6691_30153_745923799}
+Received interface *interface* change message.
 
-[[收到接口]{style="font-family:宋体"}*[interface]{lang="EN-US"}*]{#struct_0_x6691_30153_x643114221}[状态变化消息]{style="font-family:宋体"}
+收到接口*interface*状态变化消息
 
-[[Processing interface change message.]{lang="EN-US"}]{#struct_0_x6691_30153_745989335}
+Processing interface change message.
 
-[[处理接口状态变化消息]{style="font-family:宋体"}]{#struct_0_x6691_30153_522497733}
+处理接口状态变化消息
 
-[[Interface change message processing completed.]{lang="EN-US"}]{#struct_0_x6691_30153_x1212830407}
+Interface change message processing completed.
 
-[[接口状态变化消息结束]{style="font-family:宋体"}]{#struct_0_x6691_30153_746054871}
+接口状态变化消息结束
 
-[[Received peer *peer-addr* lost message, interface *interface*.]{lang="EN-US"}]{#struct_0_x6691_30153_x836987700}
+Received peer *peer-addr* lost message, interface *interface*.
 
-[[收到邻居]{style="font-family:宋体"}*[peer-addr]{lang="EN-US"}*]{#struct_0_x6691_30153_1386251559}[丢失消息，邻居所在的接口为]{style="font-family:宋体"}*[interface]{lang="EN-US"}*
+收到邻居*peer-addr*丢失消息，邻居所在的接口为*interface*
 
-[[Processing peer lost message.]{lang="EN-US"}]{#struct_0_x6691_30153_746120407}
+Processing peer lost message.
 
-[[处理邻居丢失]{style="font-family:宋体"}]{#struct_0_x6691_30153_1428556917}
+处理邻居丢失
 
-[[Peer lost message processing completed.]{lang="EN-US"}]{#struct_0_x6691_30153_x1295037944}
+Peer lost message processing completed.
 
-[[邻居丢失消息处理结束]{style="font-family:宋体"}]{#struct_0_x6691_30153_746710231}
+邻居丢失消息处理结束
 
-[[GR started: Set the staled flag on the PSB.]{lang="EN-US"}]{#struct_0_x6691_30153_x1651891362}
+GR started: Set the staled flag on the PSB.
 
-[[GR]{lang="EN-US"}]{#struct_0_x6691_30153_746775767}[开始，给]{style="font-family:宋体"}[PSB]{lang="EN-US"}[打上老化标记]{style="font-family:宋体"}
+GR开始，给PSB打上老化标记
 
-[[GR disabled: Deleted the staled flag on the PSB.]{lang="EN-US"}]{#struct_0_x6691_30153_692414905}
+GR disabled: Deleted the staled flag on the PSB.
 
-[[GR]{lang="EN-US"}]{#struct_0_x6691_30153_x1221906576}[去使能，清除]{style="font-family:宋体"}[PSB]{lang="EN-US"}[老化标记]{style="font-family:宋体"}
+GR去使能，清除PSB老化标记
 
-[[GR ended: Deleted the staled PSB.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982697409}
+GR ended: Deleted the staled PSB.
 
-[[GR]{lang="EN-US"}]{#struct_0_x6691_30153_x1919818022}[结束，删除带有老化标记的]{style="font-family:宋体"}[PSB]{lang="EN-US"}
+GR结束，删除带有老化标记的PSB
 
-[[Received an error notification from LSM, LSP ID *lsp-id*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982631873}
+Received an error notification from LSM, LSP ID *lsp-id*.
 
-[[收到]{style="font-family:宋体"}[LSM]{lang="EN-US"}]{#struct_0_x6691_30153_x793737046}[错误通知，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[lsp-id]{lang="EN-US"}*
+收到LSM错误通知，LSP ID为*lsp-id*
 
-[[Received a PathErr message: error code = *error-code*, error value = *error-value*, error description = *description*.]{lang="EN-US"}]{#struct_0_x6691_30153_x2144822554}
+Received a PathErr message: error code = *error-code*, error value = *error-value*, error description = *description*.
 
-[[收到]{style="font-family:宋体"}[PathErr]{lang="EN-US"}]{#struct_0_x6691_30153_x1982566337}[消息，错误码为]{style="font-family:宋体"}[error-code]{lang="EN-US"}[，错误值为]{style="font-family:宋体"}[error-value]{lang="EN-US"}[，错误描述信息为]{style="font-family:宋体"}[description]{lang="EN-US"}
+收到PathErr消息，错误码为error-code，错误值为error-value，错误描述信息为description
 
-[[Received a PathErr message. Sent a path message.]{lang="EN-US"}]{#struct_0_x6691_30153_x1924410876}
+Received a PathErr message. Sent a path message.
 
-[[收到]{style="font-family:宋体"}[PathErr]{lang="EN-US"}]{#struct_0_x6691_30153_x1982500801}[消息，发送]{style="font-family:宋体"}[path]{lang="EN-US"}[消息]{style="font-family:宋体"}
+收到PathErr消息，发送path消息
 
-[[Received a PathErr message. Teared the CR-LSP.]{lang="EN-US"}]{#struct_0_x6691_30153_x214001209}
+Received a PathErr message. Teared the CR-LSP.
 
-[[收到]{style="font-family:宋体"}[PathErr]{lang="EN-US"}]{#struct_0_x6691_30153_x1960485602}[消息，拆除]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}
+收到PathErr消息，拆除CR-LSP
 
-[[Forwarded the PathErr message.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982959553}
+Forwarded the PathErr message.
 
-[[转发]{style="font-family:宋体"}[PathErr]{lang="EN-US"}]{#struct_0_x6691_30153_x1830750309}[消息]{style="font-family:宋体"}
+转发PathErr消息
 
-[[Sent a PathErr message: error code = *error-code*, error value = *error-value*, error description = *description*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982894017}
+Sent a PathErr message: error code = *error-code*, error value = *error-value*, error description = *description*.
 
-[[发送]{style="font-family:宋体"}[PathErr]{lang="EN-US"}]{#struct_0_x6691_30153_709318864}[消息，错误码为]{style="font-family:宋体"}*[error-code]{lang="EN-US"}*[，错误值为]{style="font-family:宋体"}*[error-value]{lang="EN-US"}*[，错误描述信息为]{style="font-family:宋体"}*[description]{lang="EN-US"}*
+发送PathErr消息，错误码为*error-code*，错误值为*error-value*，错误描述信息为*description*
 
-[[Received a PathTear message.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982828481}
+Received a PathTear message.
 
-[[收到]{style="font-family:宋体"}[PathTear]{lang="EN-US"}]{#struct_0_x6691_30153_x1004566059}[消息]{style="font-family:宋体"}
+收到PathTear消息
 
-[[Received a PathTear message. Deleted MP information for PHOP *phop-addr*.]{lang="EN-US"}]{#struct_0_x6691_30153_2047008454}
+Received a PathTear message. Deleted MP information for PHOP *phop-addr*.
 
-[[收到]{style="font-family:宋体"}[PathTear]{lang="EN-US"}]{#struct_0_x6691_30153_x1982762945}[消息，删除]{style="font-family:宋体"}[MP]{lang="EN-US"}[信息，]{style="font-family:宋体"}[PHOP]{lang="EN-US"}[为]{style="font-family:宋体"}*[phop-addr]{lang="EN-US"}*
+收到PathTear消息，删除MP信息，PHOP为*phop-addr*
 
-[[Received a PathTear message. Deleted the PSB.]{lang="EN-US"}]{#struct_0_x6691_30153_676194504}
+Received a PathTear message. Deleted the PSB.
 
-[[收到]{style="font-family:宋体"}[PathTear]{lang="EN-US"}]{#struct_0_x6691_30153_x1982173121}[消息，删除]{style="font-family:宋体"}[PSB]{lang="EN-US"}
+收到PathTear消息，删除PSB
 
-[[Forwarded the PathTear message.]{lang="EN-US"}]{#struct_0_x6691_30153_69833171}
+Forwarded the PathTear message.
 
-[[转发]{style="font-family:宋体"}[PathTear]{lang="EN-US"}]{#struct_0_x6691_30153_x1982107585}[消息]{style="font-family:宋体"}
+转发PathTear消息
 
-[[Sent a PathTear message.]{lang="EN-US"}]{#struct_0_x6691_30153_x1862023330}
+Sent a PathTear message.
 
-[[发送]{style="font-family:宋体"}[PathTear]{lang="EN-US"}]{#struct_0_x6691_30153_x1982697408}[消息]{style="font-family:宋体"}
+发送PathTear消息
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x6691_30153_809065333}
+\# 打开RSVP Path相关的调试信息开关，收到Path消息后打印如下调试信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x6691_30153_1367741478}[打开]{style="font-family:宋体"}[RSVP Path]{lang="EN-US"}[相关的调试信息开关，收到]{style="font-family:宋体"}[Path]{lang="EN-US"}[消息后打印如下调试信息。]{style="font-family:宋体"}
+\<Sysname\> debugging rsvp path
 
-[[\<Sysname\> debugging rsvp path]{lang="EN-US"}]{#struct_0_x6691_30153_1814743053}
+\*Aug 19 08:25:17:440 2012 Sysname RSVP/7/PATH: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Received a path message. Created a new PSB.
 
-[\*Aug 19 08:25:17:440 2012 Sysname RSVP/7/PATH: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Received a path message. Created a new PSB.]{lang="EN-US"}
+*// 接收到Path消息，创建新的PSB。消息的目的地址为10.33.33.33，源地址为10.11.11.11，隧道的Tunnel ID为1。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x2108905736}*[接收到]{style="font-family:宋体"}[Path]{lang="EN-US"}[消息，创建新的]{style="font-family:宋体"}[PSB]{lang="EN-US"}[。消息的目的地址为]{style="font-family:宋体"}[10.33.33.33]{lang="EN-US"}[，源地址为]{style="font-family:宋体"}[10.11.11.11]{lang="EN-US"}[，隧道的]{style="font-family:宋体"}[Tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}*
+\*Aug 19 08:25:17:441 2012 Sysname RSVP/7/PATH: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Failed to trigger CSPF.
 
-[[\*Aug 19 08:25:17:441 2012 Sysname RSVP/7/PATH: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Failed to trigger CSPF.]{lang="EN-US"}]{#struct_0_x6691_30153_955968525}
+*// 触发CSPF计算失败。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_1486420844}*[触发]{style="font-family:宋体"}[CSPF]{lang="EN-US"}[计算失败。]{style="font-family:宋体"}*
+\*Aug 19 08:25:17:441 2012 Sysname RSVP/7/PATH: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Checked resource from TRM: interface GE1/0/1, bandwidth 0kbps, CT 0, result  successful.
 
-[[\*Aug 19 08:25:17:441 2012 Sysname RSVP/7/PATH: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Checked resource from TRM: interface GE1/0/1, bandwidth 0kbps, CT 0, result  successful.]{lang="EN-US"}]{#struct_0_x6691_30153_992704234}
+*// 检查TRM资源成功：接口为GigabitEthernet1/0/1，带宽为0kbps，带宽类型为CT 0。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x1982631872}*[检查]{style="font-family:宋体"}[TRM]{lang="EN-US"}[资源成功：接口为]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[，带宽为]{style="font-family:宋体"}[0kbps]{lang="EN-US"}[，带宽类型为]{style="font-family:宋体"}[CT 0]{lang="EN-US"}[。]{style="font-family:宋体"}*
+\*Aug 19 08:25:17:441 2012 Sysname RSVP/7/PATH: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Allocated incoming label 1148 for LSP.
 
-[[\*Aug 19 08:25:17:441 2012 Sysname RSVP/7/PATH: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Allocated incoming label 1148 for LSP.]{lang="EN-US"}]{#struct_0_x6691_30153_1935146309}
+*// 为LSP分配入标签值1148。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x1044698170}*[为]{style="font-family:宋体"}[LSP]{lang="EN-US"}[分配入标签值]{style="font-family:宋体"}[1148]{lang="EN-US"}[。]{style="font-family:宋体"}*
+\*Aug 19 08:25:17:441 2012 Sysname RSVP/7/PATH: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Sent a path message.
 
-[[\*Aug 19 08:25:17:441 2012 Sysname RSVP/7/PATH: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Sent a path message.]{lang="EN-US"}]{#struct_0_x6691_30153_x1535701723}
+*// 发送Path消息。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_284905443}*[发送]{style="font-family:宋体"}[Path]{lang="EN-US"}[消息。]{style="font-family:宋体"}*
+\*Aug 19 08:25:48:035 2012 Sysname RSVP/7/PATH: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Received a path message. Updated the old PSB.
 
-[[\*Aug 19 08:25:48:035 2012 Sysname RSVP/7/PATH: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Received a path message. Updated the old PSB.]{lang="EN-US"}]{#struct_0_x6691_30153_x1522834196}
+*// 接收到Path消息，更新已有的PSB。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x1202907356}*[接收到]{style="font-family:宋体"}[Path]{lang="EN-US"}[消息，更新已有的]{style="font-family:宋体"}[PSB]{lang="EN-US"}[。]{style="font-family:宋体"}*
+\*Aug 19 08:25:48:035 2012 Sysname RSVP/7/PATH: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Failed to trigger CSPF.
 
-[[\*Aug 19 08:25:48:035 2012 Sysname RSVP/7/PATH: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Failed to trigger CSPF.]{lang="EN-US"}]{#struct_0_x6691_30153_344781058}
+*// 触发CSPF计算失败。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_1382431204}*[触发]{style="font-family:宋体"}[CSPF]{lang="EN-US"}[计算失败。]{style="font-family:宋体"}*
+\*Aug 19 08:25:48:035 2012 Sysname RSVP/7/PATH: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Sent a path message.
 
-[[\*Aug 19 08:25:48:035 2012 Sysname RSVP/7/PATH: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Sent a path message.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982566336}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x358326935}*[发送]{style="font-family:宋体"}[Path]{lang="EN-US"}[消息。]{style="font-family:宋体"}*
-
-::: {#1168098875 .myid}
-[]{#_Toc404790957}[]{#struct_0_x6691_30153_1617835657}
+*// 发送Path消息。*
 
 **RSVP \-- RSVP调试命令 \-- debugging rsvp reduction**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x6691_30153_370106866}
+【命令】
 
-[**[debugging rsvp reduction]{lang="EN-US"}**]{#struct_0_x6691_30153_x441663431}
+**[debugging rsvp reduction**]
 
-[**[undo debugging rsvp reduction]{lang="EN-US"}**]{#struct_0_x6691_30153_194092274}
+**[undo debugging rsvp reduction**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x788113027}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x6691_30153_37015501}
+用户视图
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x1982500800}
+【参数】
 
-[[无]{style="font-family:宋体"}]{#struct_0_x6691_30153_1352082732}
+无
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_x6691_30153_885472220}
+【描述】
 
-[**[debugging rsvp reduction]{lang="EN-US"}**]{#struct_0_x6691_30153_x321432223}[命令用来打开]{style="font-family:
-宋体"}[RSVP]{lang="EN-US"}[摘要刷新和消息可靠传递调试信息开关。]{style="font-family:宋体"}**[undo debugging rsvp reduction]{lang="EN-US"}**[命令用来关闭]{style="font-family:
-宋体"}[RSVP]{lang="EN-US"}[摘要刷新和消息可靠传递调试信息开关。]{style="font-family:宋体"}
+**[debugging rsvp reduction**]命令用来打开RSVP摘要刷新和消息可靠传递调试信息开关。**undo debugging rsvp reduction**命令用来关闭RSVP摘要刷新和消息可靠传递调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[RSVP]{lang="EN-US"}]{#struct_0_x6691_30153_1138223760}[摘要刷新和消息可靠传递调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，RSVP摘要刷新和消息可靠传递调试信息开关处于关闭状态。
 
-[[表1-7 ]{lang="EN-US"}[debugging rsvp reduction]{lang="EN-US"}]{#struct_0_x6691_30153_1297713658}[命令输出信息描述表]{style="font-family:黑体"}
+表1-7 debugging rsvp reduction命令输出信息描述表
 
-[]{#table_struct_0_322930324}[[字段]{style="font-family:黑体"}]{#struct_0_x6691_30153_x283903360}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x6691_30153_1762906286}
+描述
 
-[[Created message ID *message-id* for retransmit message.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982959552}
+Created message ID *message-id* for retransmit message.
 
-[[为重传报文分配]{style="font-family:宋体"}[message ID]{lang="EN-US"}]{#struct_0_x6691_30153_898133046}[，值为]{style="font-family:宋体"}*[message-id]{lang="EN-US"}*
+为重传报文分配message ID，值为*message-id*
 
-[[Added message ID *message-id* to srefresh message.]{lang="EN-US"}]{#struct_0_x6691_30153_x1975873186}
+Added message ID *message-id* to srefresh message.
 
-[[为摘要刷新消息添加]{style="font-family:宋体"}[message ID]{lang="EN-US"}]{#struct_0_x6691_30153_1098949584}[（]{style="font-family:宋体"}*[message-id]{lang="EN-US"}*[）]{style="font-family:宋体"}
+为摘要刷新消息添加message ID（*message-id*）
 
-[[Received a srefresh message.]{lang="EN-US"}]{#struct_0_x6691_30153_x1100857829}
+Received a srefresh message.
 
-[[收到摘要刷新消息]{style="font-family:宋体"}]{#struct_0_x6691_30153_x306656384}
+收到摘要刷新消息
 
-[[Received an ACK message.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982894016}
+Received an ACK message.
 
-[[收到]{style="font-family:宋体"}[ACK]{lang="EN-US"}]{#struct_0_x6691_30153_x856765077}[消息]{style="font-family:宋体"}
+收到ACK消息
 
-[[Replied an ACK message.]{lang="EN-US"}]{#struct_0_x6691_30153_722054052}
+Replied an ACK message.
 
-[[回应]{style="font-family:宋体"}[ACK]{lang="EN-US"}]{#struct_0_x6691_30153_591665593}[消息]{style="font-family:宋体"}
+回应ACK消息
 
-[[Replied a NACK message.]{lang="EN-US"}]{#struct_0_x6691_30153_x2049092939}
+Replied a NACK message.
 
-[[回应]{style="font-family:宋体"}[NACK]{lang="EN-US"}]{#struct_0_x6691_30153_x1982828480}[消息]{style="font-family:宋体"}
+回应NACK消息
 
-[[Processing ACK message ID list from *peer-addr*.]{lang="EN-US"}]{#struct_0_x6691_30153_561517882}
+Processing ACK message ID list from *peer-addr*.
 
-[[处理来自]{style="font-family:宋体"}*[peer-addr]{lang="EN-US"}*]{#struct_0_x6691_30153_488741083}[的]{style="font-family:宋体"}[ACK]{lang="EN-US"}[消息的]{style="font-family:宋体"}[message ID]{lang="EN-US"}[链]{style="font-family:宋体"}
+处理来自*peer-addr*的ACK消息的message ID链
 
-[[Reset PSB cleanup timer by message ID *message-id*.]{lang="EN-US"}]{#struct_0_x6691_30153_1331258098}
+Reset PSB cleanup timer by message ID *message-id*.
 
-[[根据]{style="font-family:宋体"}[message ID]{lang="EN-US"}]{#struct_0_x6691_30153_1265678892}[（]{style="font-family:宋体"}*[message-id]{lang="EN-US"}*[）重置]{style="font-family:宋体"}[PSB]{lang="EN-US"}[老化定时器]{style="font-family:宋体"}
+根据message ID（*message-id*）重置PSB老化定时器
 
-[[Reset RSB cleanup timer by message ID *message-id*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982762944}
+Reset RSB cleanup timer by message ID *message-id*.
 
-[[根据]{style="font-family:宋体"}[message ID]{lang="EN-US"}]{#struct_0_x6691_30153_x2052688851}[（]{style="font-family:宋体"}*[message-id]{lang="EN-US"}*[）重置]{style="font-family:宋体"}[RSB]{lang="EN-US"}[老化定时器]{style="font-family:宋体"}
+根据message ID（*message-id*）重置RSB老化定时器
 
-[[Invalid message ID *message-id*.]{lang="EN-US"}]{#struct_0_x6691_30153_1382074103}
+Invalid message ID *message-id*.
 
-[[无效的]{style="font-family:宋体"}[message ID]{lang="EN-US"}]{#struct_0_x6691_30153_x2003613218}[（]{style="font-family:宋体"}*[message-id]{lang="EN-US"}*[）]{style="font-family:宋体"}
+无效的message ID（*message-id*）
 
-[[Processing NACK message ID list from *peer-addr*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1414499897}
+Processing NACK message ID list from *peer-addr*.
 
-[[处理来自]{style="font-family:宋体"}*[peer-addr]{lang="EN-US"}*]{#struct_0_x6691_30153_x1982173120}[的]{style="font-family:宋体"}[NACK]{lang="EN-US"}[消息的]{style="font-family:宋体"}[message ID]{lang="EN-US"}[链]{style="font-family:宋体"}
+处理来自*peer-addr*的NACK消息的message ID链
 
-[[Sent a path message for message ID *message-id*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1496250770}
+Sent a path message for message ID *message-id*.
 
-[[为]{style="font-family:宋体"}[message ID]{lang="EN-US"}]{#struct_0_x6691_30153_547736337}[（]{style="font-family:宋体"}*[message-id]{lang="EN-US"}*[）发送]{style="font-family:宋体"}[path]{lang="EN-US"}[消息]{style="font-family:宋体"}
+为message ID（*message-id*）发送path消息
 
-[[Sent a resv message for message ID *message-id*.]{lang="EN-US"}]{#struct_0_x6691_30153_1222482120}
+Sent a resv message for message ID *message-id*.
 
-[[为]{style="font-family:宋体"}[message ID]{lang="EN-US"}]{#struct_0_x6691_30153_x1513546604}[（]{style="font-family:宋体"}*[message-id]{lang="EN-US"}*[）发送]{style="font-family:宋体"}[resv]{lang="EN-US"}[消息]{style="font-family:宋体"}
+为message ID（*message-id*）发送resv消息
 
-[[Added message ID *message-id* to the retransmit buffer.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982107584}
+Added message ID *message-id* to the retransmit buffer.
 
-[[向重传缓冲区添加]{style="font-family:宋体"}[message ID]{lang="EN-US"}]{#struct_0_x6691_30153_x295939389}[（]{style="font-family:宋体"}*[message-id]{lang="EN-US"}*[）]{style="font-family:宋体"}
+向重传缓冲区添加message ID（*message-id*）
 
-[[Deleted message ID *message-id* from the retransmit buffer.]{lang="EN-US"}]{#struct_0_x6691_30153_x550040289}
+Deleted message ID *message-id* from the retransmit buffer.
 
-[[从重传缓冲区中删除]{style="font-family:宋体"}[message ID]{lang="EN-US"}]{#struct_0_x6691_30153_x675548772}[（]{style="font-family:宋体"}*[message-id]{lang="EN-US"}*[）]{style="font-family:宋体"}
+从重传缓冲区中删除message ID（*message-id*）
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x1982697411}
+\# 在接口视图下配置RSVP摘要刷新和消息可靠传递功能后，打开RSVP摘要刷新和消息可靠传递调试信息开关，打印如下调试信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x6691_30153_2018984450}[在接口视图下配置]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[摘要刷新和消息可靠传递功能后，打开]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[摘要刷新和消息可靠传递调试信息开关，打印如下调试信息。]{style="font-family:宋体"}
+\<Sysname\> debugging rsvp reduction
 
-[[\<Sysname\> debugging rsvp reduction]{lang="EN-US"}]{#struct_0_x6691_30153_x591410750}
+\*Aug 19 08:50:04:178 2012 Sysname RSVP/7/REDUC: -MDC=1; Created message ID 7 for retransmit message.
 
-[\*Aug 19 08:50:04:178 2012 Sysname RSVP/7/REDUC: -MDC=1; Created message ID 7 for retransmit message.]{lang="EN-US"}
+*// 为重传报文分配message ID，值为7。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_874128937}*[为重传报文分配]{style="font-family:宋体"}[message ID]{lang="EN-US"}[，值为]{style="font-family:宋体"}[7]{lang="EN-US"}[。]{style="font-family:宋体"}*
+\*Aug 19 08:50:04:178 2012 Sysname RSVP/7/REDUC: -MDC=1; Added message ID 6 to srefresh message.
 
-[[\*Aug 19 08:50:04:178 2012 Sysname RSVP/7/REDUC: -MDC=1; Added message ID 6 to srefresh message.]{lang="EN-US"}]{#struct_0_x6691_30153_178878228}
+*// 为摘要刷新消息添加message ID（6）。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_1241222626}*[为摘要刷新消息添加]{style="font-family:宋体"}[message ID]{lang="EN-US"}[（]{style="font-family:宋体"}[6]{lang="EN-US"}[）。]{style="font-family:宋体"}*
+\*Aug 19 08:50:04:178 2012 Sysname RSVP/7/REDUC: -MDC=1; Added message ID 7 to the retransmit buffer.
 
-[[\*Aug 19 08:50:04:178 2012 Sysname RSVP/7/REDUC: -MDC=1; Added message ID 7 to the retransmit buffer.]{lang="EN-US"}]{#struct_0_x6691_30153_x2009507104}
+*// 向重传缓冲区添加message ID（6）。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x1980773235}*[向重传缓冲区添加]{style="font-family:宋体"}[message ID]{lang="EN-US"}[（]{style="font-family:宋体"}[6]{lang="EN-US"}[）。]{style="font-family:宋体"}*
+\*Aug 19 08:50:04:179 2012 Sysname RSVP/7/REDUC: -MDC=1; Received an ACK message.
 
-[[\*Aug 19 08:50:04:179 2012 Sysname RSVP/7/REDUC: -MDC=1; Received an ACK message.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982631875}
+*// 接收到ACK消息。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x1600306100}*[接收到]{style="font-family:宋体"}[ACK]{lang="EN-US"}[消息。]{style="font-family:宋体"}*
+\*Aug 19 08:50:04:179 2012 Sysname RSVP/7/REDUC: -MDC=1; Processing ACK message ID list from 12.11.110.11.
 
-[[\*Aug 19 08:50:04:179 2012 Sysname RSVP/7/REDUC: -MDC=1; Processing ACK message ID list from 12.11.110.11.]{lang="EN-US"}]{#struct_0_x6691_30153_x1760048688}
+*// 处理来自12.11.110.11的ACK消息的message ID链。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_1830995433}*[处理来自]{style="font-family:宋体"}[12.11.110.11]{lang="EN-US"}[的]{style="font-family:宋体"}[ACK]{lang="EN-US"}[消息的]{style="font-family:宋体"}[message ID]{lang="EN-US"}[链。]{style="font-family:宋体"}*
+\*Aug 19 08:50:04:179 2012 Sysname RSVP/7/REDUC: -MDC=1; Deleted message ID 7 from the retransmit buffer.
 
-[[\*Aug 19 08:50:04:179 2012 Sysname RSVP/7/REDUC: -MDC=1; Deleted message ID 7 from the retransmit buffer.]{lang="EN-US"}]{#struct_0_x6691_30153_x528691988}
+*// 从重传缓冲区中删除message ID（7）。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x1936755140}*[从重传缓冲区中删除]{style="font-family:宋体"}[message ID]{lang="EN-US"}[（]{style="font-family:宋体"}[7]{lang="EN-US"}[）。]{style="font-family:宋体"}*
+\*Aug 19 08:50:04:334 2012 Sysname RSVP/7/REDUC: -MDC=1; Replied an ACK message.
 
-[[\*Aug 19 08:50:04:334 2012 Sysname RSVP/7/REDUC: -MDC=1; Replied an ACK message.]{lang="EN-US"}]{#struct_0_x6691_30153_1898152936}
+*// 应答ACK消息。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x677023913}*[应答]{style="font-family:宋体"}[ACK]{lang="EN-US"}[消息。]{style="font-family:宋体"}*
+\*Aug 19 08:50:14:134 2012 Sysname RSVP/7/REDUC: -MDC=1; Received a srefresh message.
 
-[[\*Aug 19 08:50:14:134 2012 Sysname RSVP/7/REDUC: -MDC=1; Received a srefresh message.]{lang="EN-US"}]{#struct_0_x6691_30153_x1300597194}
+*// 接收到Srefresh消息。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x1982566339}*[接收到]{style="font-family:宋体"}[Srefresh]{lang="EN-US"}[消息。]{style="font-family:宋体"}*
+\*Aug 19 08:50:14:134 2012 Sysname RSVP/7/REDUC: -MDC=1; Reset PSB cleanup timer by message ID 7.
 
-[[\*Aug 19 08:50:14:134 2012 Sysname RSVP/7/REDUC: -MDC=1; Reset PSB cleanup timer by message ID 7.]{lang="EN-US"}]{#struct_0_x6691_30153_x761611462}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_711300642}*[根据]{style="font-family:宋体"}[message ID]{lang="EN-US"}[（]{style="font-family:宋体"}[7]{lang="EN-US"}[）重置]{style="font-family:宋体"}[PSB]{lang="EN-US"}[老化定时器。]{style="font-family:宋体"}*
-
-::: {#1324087602 .myid}
-[]{#_Toc404790958}[]{#struct_0_x6691_30153_x770124589}
+*// 根据message ID（7）重置PSB老化定时器。*
 
 **RSVP \-- RSVP调试命令 \-- debugging rsvp resv**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x1125591969}
+【命令】
 
-[**[debugging rsvp resv]{lang="EN-US"}**[ \[ **destination** *ip-address* **source** *ip-address* **tunnel-id** *tunnel-id* \]]{lang="EN-US"}]{#struct_0_x6691_30153_x1425544126}
+**[debugging rsvp resv** [ **destination** *ip-address* **source** *ip-address* **tunnel-id** *tunnel-id* ]]
 
-[**[undo debugging rsvp resv]{lang="EN-US"}**]{#struct_0_x6691_30153_x1665224001}
+**[undo debugging rsvp resv**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x1471691838}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x6691_30153_x1917341670}
+用户视图
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x1982500803}
+【参数】
 
-[**[destination]{lang="EN-US"}**[ *ip-address*]{lang="EN-US"}]{#struct_0_x6691_30153_x1376800623}[：指定隧道的目的地址。]{style="font-family:宋体"}
+**[destination** *ip-address*]：指定隧道的目的地址。
 
-[**[source]{lang="EN-US"}**[ *ip-address*]{lang="EN-US"}]{#struct_0_x6691_30153_961519454}[：指定隧道的源地址，即]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[消息中]{style="font-family:宋体"}[Session]{lang="EN-US"}[对象的扩展]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[source** *ip-address*]：指定隧道的源地址，即RSVP消息中Session对象的扩展tunnel ID。
 
-[**[tunnel-id]{lang="EN-US"}**[ *tunnel-id*]{lang="EN-US"}]{#struct_0_x6691_30153_x1911753347}[：指定隧道的]{style="font-family:宋体"}[ID]{lang="EN-US"}[。]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*[为]{style="font-family:宋体"}[隧道]{style="font-family:宋体"}[ID]{lang="EN-US"}[，取值范围为]{style="font-family:宋体"}[0]{lang="EN-US"}[～]{style="font-family:宋体"}[65535]{lang="EN-US"}[。]{style="font-family:宋体"}
+**[tunnel-id** *tunnel-id*]：指定隧道的ID。*tunnel-id*为隧道ID，取值范围为0～65535。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x1616328150}
+【描述】
 
-[**[debugging rsvp resv]{lang="EN-US"}**]{#struct_0_x6691_30153_x1671963924}[命令用来打开]{style="font-family:宋体"}[RSVP Resv]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}**[undo debugging rsvp resv]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[RSVP Resv]{lang="EN-US"}[调试信息开关。]{style="font-family:宋体"}
+**[debugging rsvp resv**]命令用来打开RSVP Resv调试信息开关。**undo debugging rsvp resv**命令用来关闭RSVP Resv调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[RSVP Resv]{lang="EN-US"}]{#struct_0_x6691_30153_x1448019148}[调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，RSVP Resv调试信息开关处于关闭状态。
 
-[[表1-8 ]{lang="EN-US"}[debugging rsvp resv]{lang="EN-US"}]{#struct_0_x6691_30153_1948993125}[命令输出信息描述表]{style="font-family:黑体"}
+表1-8 debugging rsvp resv命令输出信息描述表
 
-[]{#table_struct_0_350234193}[[字段]{style="font-family:黑体"}]{#struct_0_x6691_30153_x1982959555}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x6691_30153_x667950895}
+描述
 
-[[Received a resv message. Created a new RSB.]{lang="EN-US"}]{#struct_0_x6691_30153_1302995375}
+Received a resv message. Created a new RSB.
 
-[[收到]{style="font-family:宋体"}[resv]{lang="EN-US"}]{#struct_0_x6691_30153_x1466537523}[消息，新建]{style="font-family:宋体"}[RSB]{lang="EN-US"}
+收到resv消息，新建RSB
 
-[[Received a resv message. Updated the old RSB.]{lang="EN-US"}]{#struct_0_x6691_30153_2107556927}
+Received a resv message. Updated the old RSB.
 
-[[收到]{style="font-family:宋体"}[resv]{lang="EN-US"}]{#struct_0_x6691_30153_1170407616}[消息，更新]{style="font-family:宋体"}[RSB]{lang="EN-US"}
+收到resv消息，更新RSB
 
-[[Allocated resource from TRM: interface *interface*, bandwidth *bandwidth*, CT *class-type*, result *result*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982894019}
+Allocated resource from TRM: interface *interface*, bandwidth *bandwidth*, CT *class-type*, result *result*.
 
-[[从]{style="font-family:宋体"}[TRM]{lang="EN-US"}]{#struct_0_x6691_30153_x2066618658}[分配资源：接口为]{style="font-family:宋体"}*[interface]{lang="EN-US"}*[，带宽为]{style="font-family:宋体"}*[bandwidth]{lang="EN-US"}*[，带宽类型为]{style="font-family:宋体"}*[class-type]{lang="EN-US"}*[，返回值为]{style="font-family:宋体"}*[result ]{lang="EN-US"}*
+从TRM分配资源：接口为*interface*，带宽为*bandwidth*，带宽类型为*class-type*，返回值为*result *
 
-[[其中，]{style="font-family:宋体"}[result]{lang="EN-US"}]{#struct_0_x6691_30153_x1289317473}[的取值包括：]{style="font-family:宋体"}
+其中，result的取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[s]{lang="EN-US"}[uccessful]{lang="EN-US"}]{#struct_0_x6691_30153_x1290038369}[：资源分配成功]{style="font-family:宋体"}
+·successful：资源分配成功
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[failed]{lang="EN-US"}]{#struct_0_x6691_30153_1724955354}[：资源分配失败]{style="font-family:宋体"}
+·failed：资源分配失败
 
-[[Modified resource from TRM: interface *interface*, bandwidth *bandwidth*, CT *class-type*, result *result*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1303189755}
+Modified resource from TRM: interface *interface*, bandwidth *bandwidth*, CT *class-type*, result *result*.
 
-[[修改]{style="font-family:宋体"}[TRM]{lang="EN-US"}]{#struct_0_x6691_30153_x485624183}[资源：接口为]{style="font-family:宋体"}*[interface]{lang="EN-US"}*[，带宽为]{style="font-family:宋体"}*[bandwidth]{lang="EN-US"}*[，带宽类型为]{style="font-family:宋体"}*[class-type]{lang="EN-US"}*[，返回值为]{style="font-family:宋体"}*[result ]{lang="EN-US"}*
+修改TRM资源：接口为*interface*，带宽为*bandwidth*，带宽类型为*class-type*，返回值为*result *
 
-[[其中，]{style="font-family:宋体"}[result]{lang="EN-US"}]{#struct_0_x6691_30153_x1289972833}[的取值包括：]{style="font-family:宋体"}
+其中，result的取值包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[s]{lang="EN-US"}[uccessful]{lang="EN-US"}]{#struct_0_x6691_30153_x1289514082}[：资源修改成功]{style="font-family:宋体"}
+·successful：资源修改成功
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[failed]{lang="EN-US"}]{#struct_0_x6691_30153_x2007906913}[：资源修改失败]{style="font-family:宋体"}
+·failed：资源修改失败
 
-[[Freed resource to TRM.]{lang="EN-US"}]{#struct_0_x6691_30153_x1269426272}
+Freed resource to TRM.
 
-[[向]{style="font-family:宋体"}[TRM]{lang="EN-US"}]{#struct_0_x6691_30153_104089863}[释放资源]{style="font-family:宋体"}
+向TRM释放资源
 
-[[Failed to get PSB.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982828483}
+Failed to get PSB.
 
-[[获取]{style="font-family:宋体"}[PSB]{lang="EN-US"}]{#struct_0_x6691_30153_158233355}[失败]{style="font-family:宋体"}
+获取PSB失败
 
-[[Created a new TCSB.]{lang="EN-US"}]{#struct_0_x6691_30153_625410812}
+Created a new TCSB.
 
-[[新建]{style="font-family:宋体"}[TCSB]{lang="EN-US"}]{#struct_0_x6691_30153_x1016550399}
+新建TCSB
 
-[[Updated the old TCSB.]{lang="EN-US"}]{#struct_0_x6691_30153_x71385796}
+Updated the old TCSB.
 
-[[更新旧的]{style="font-family:宋体"}[TCSB]{lang="EN-US"}]{#struct_0_x6691_30153_x1982762947}
+更新旧的TCSB
 
-[[Added filterspec to TCSB.]{lang="EN-US"}]{#struct_0_x6691_30153_1838993918}
+Added filterspec to TCSB.
 
-[[向]{style="font-family:宋体"}[TCSB]{lang="EN-US"}]{#struct_0_x6691_30153_403146896}[添加]{style="font-family:宋体"}[filterspec]{lang="EN-US"}
+向TCSB添加filterspec
 
-[[The TCSB is blockaded.]{lang="EN-US"}]{#struct_0_x6691_30153_2027267446}
+The TCSB is blockaded.
 
-[[TCSB]{lang="EN-US"}]{#struct_0_x6691_30153_x1982173123}[被阻塞]{style="font-family:宋体"}
+TCSB被阻塞
 
-[[Merged flowdesc from TCSB. The merge flag is off.]{lang="EN-US"}]{#struct_0_x6691_30153_x1092966243}
+Merged flowdesc from TCSB. The merge flag is off.
 
-[[根据]{style="font-family:宋体"}[TCSB]{lang="EN-US"}]{#struct_0_x6691_30153_x910929900}[合并流量描述，合并标记为]{style="font-family:宋体"}[off]{lang="EN-US"}
+根据TCSB合并流量描述，合并标记为off
 
-[[Merged flowdesc from TCSB. The merge flag is on.]{lang="EN-US"}]{#struct_0_x6691_30153_x514849985}
+Merged flowdesc from TCSB. The merge flag is on.
 
-[[根据]{style="font-family:宋体"}[TCSB]{lang="EN-US"}]{#struct_0_x6691_30153_x755563675}[合并流量描述，合并标记为]{style="font-family:宋体"}[on]{lang="EN-US"}
+根据TCSB合并流量描述，合并标记为on
 
-[[Merged flowspec with LUB.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982107587}
+Merged flowspec with LUB.
 
-[[用]{style="font-family:宋体"}[LUB]{lang="EN-US"}]{#struct_0_x6691_30153_1270144552}[算法合并流量描述]{style="font-family:宋体"}
+用LUB算法合并流量描述
 
-[[Merged flowspec with GLB.]{lang="EN-US"}]{#struct_0_x6691_30153_x635107495}
+Merged flowspec with GLB.
 
-[[用]{style="font-family:宋体"}[GLB]{lang="EN-US"}]{#struct_0_x6691_30153_x1759804363}[算法合并流量描述]{style="font-family:宋体"}
+用GLB算法合并流量描述
 
-[[Updated TCSB: TC_B_Police_flag *flag1*, TC_E_Police_flag *flag2,* TC_M_Police_flag *flag3*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982697410}
+Updated TCSB: TC_B_Police_flag *flag1*, TC_E_Police_flag *flag2,* TC_M_Police_flag *flag3*.
 
-[[更新]{style="font-family:宋体"}[TCSB]{lang="EN-US"}]{#struct_0_x6691_30153_452900509}[，]{style="font-family:宋体"}[TC_B_Police_flag]{lang="EN-US"}[为]{style="font-family:宋体"}*[flag1]{lang="EN-US"}*[，]{style="font-family:宋体"}[TC_E_Police_flag]{lang="EN-US"}[为]{style="font-family:宋体"}*[flag2]{lang="EN-US"}[，]{style="font-family:宋体"}*[TC_M_Police_flag]{lang="EN-US"}[为]{style="font-family:宋体"}*[flag3]{lang="EN-US"}*
+更新TCSB，TC_B_Police_flag为*flag1*，TC_E_Police_flag为*flag2，*TC_M_Police_flag为*flag3*
 
-[[Updated CR-LSP, LSP ID *lsp-id*, direction *direction*.]{lang="EN-US"}]{#struct_0_x6691_30153_1262534930}
+Updated CR-LSP, LSP ID *lsp-id*, direction *direction*.
 
-[[更新]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}]{#struct_0_x6691_30153_1869817236}[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[lsp-id]{lang="EN-US"}*[，方向为]{style="font-family:宋体"}*[direction]{lang="EN-US"}*
+更新CR-LSP，LSP ID为*lsp-id*，方向为*direction*
 
-[[Deleted CR-LSP, LSP ID *lsp-id*, direction *direction*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982631874}
+Deleted CR-LSP, LSP ID *lsp-id*, direction *direction*.
 
-[[删除]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}]{#struct_0_x6691_30153_1128577255}[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[lsp-id]{lang="EN-US"}*[，方向为]{style="font-family:宋体"}*[direction]{lang="EN-US"}*
+删除CR-LSP，LSP ID为*lsp-id*，方向为*direction*
 
-[[Created request info.]{lang="EN-US"}]{#struct_0_x6691_30153_1536605855}
+Created request info.
 
-[[创建]{style="font-family:宋体"}[request]{lang="EN-US"}]{#struct_0_x6691_30153_x1504784946}[信息]{style="font-family:宋体"}
+创建request信息
 
-[[Updated request info.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982566338}
+Updated request info.
 
-[[更新]{style="font-family:宋体"}[request]{lang="EN-US"}]{#struct_0_x6691_30153_804472479}[信息]{style="font-family:宋体"}
+更新request信息
 
-[[Deleted filterspec in request info.]{lang="EN-US"}]{#struct_0_x6691_30153_x186610969}
+Deleted filterspec in request info.
 
-[[从]{style="font-family:宋体"}[request]{lang="EN-US"}]{#struct_0_x6691_30153_x1982500802}[信息中删除]{style="font-family:宋体"}[filterspec]{lang="EN-US"}
+从request信息中删除filterspec
 
-[[No filterspec in request info, deleted request info.]{lang="EN-US"}]{#struct_0_x6691_30153_189283318}
+No filterspec in request info, deleted request info.
 
-[[request]{lang="EN-US"}]{#struct_0_x6691_30153_x1771046436}[信息中没有]{style="font-family:宋体"}[filterspec]{lang="EN-US"}[，删除]{style="font-family:宋体"}[request]{lang="EN-US"}[信息]{style="font-family:宋体"}
+request信息中没有filterspec，删除request信息
 
-[[Sent a resv message.]{lang="EN-US"}]{#struct_0_x6691_30153_503307538}
+Sent a resv message.
 
-[[发送]{style="font-family:宋体"}[resv]{lang="EN-US"}]{#struct_0_x6691_30153_x1982959554}[消息]{style="font-family:宋体"}
+发送resv消息
 
-[[Resource was preempted.]{lang="EN-US"}]{#struct_0_x6691_30153_2060932460}
+Resource was preempted.
 
-[[资源被抢占]{style="font-family:宋体"}]{#struct_0_x6691_30153_x1000657102}
+资源被抢占
 
-[[GR started: Set the staled flag on the RSB.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982894018}
+GR started: Set the staled flag on the RSB.
 
-[[GR]{lang="EN-US"}]{#struct_0_x6691_30153_662264697}[开始：给]{style="font-family:宋体"}[RSB]{lang="EN-US"}[打上老化标记]{style="font-family:宋体"}
+GR开始：给RSB打上老化标记
 
-[[GR recovered: Recovered the staled RSB.]{lang="EN-US"}]{#struct_0_x6691_30153_x1336202245}
+GR recovered: Recovered the staled RSB.
 
-[[GR]{lang="EN-US"}]{#struct_0_x6691_30153_x1982828482}[恢复：恢复]{style="font-family:宋体"}[RSB]{lang="EN-US"}
+GR恢复：恢复RSB
 
-[[GR disabled: Deleted the staled flag on the RSB.]{lang="EN-US"}]{#struct_0_x6691_30153_1724317296}
+GR disabled: Deleted the staled flag on the RSB.
 
-[[GR]{lang="EN-US"}]{#struct_0_x6691_30153_247316318}[去使能：清除]{style="font-family:宋体"}[RSB]{lang="EN-US"}[中老化标记]{style="font-family:宋体"}
+GR去使能：清除RSB中老化标记
 
-[[GR ended: Deleted the staled RSB.]{lang="EN-US"}]{#struct_0_x6691_30153_1069259976}
+GR ended: Deleted the staled RSB.
 
-[[GR]{lang="EN-US"}]{#struct_0_x6691_30153_x1982762946}[结束：删除带有老化标记的]{style="font-family:宋体"}[RSB]{lang="EN-US"}
+GR结束：删除带有老化标记的RSB
 
-[[Received interface *interface* change message.]{lang="EN-US"}]{#struct_0_x6691_30153_x889889437}
+Received interface *interface* change message.
 
-[[收到接口]{style="font-family:宋体"}*[interface]{lang="EN-US"}*]{#struct_0_x6691_30153_2020021554}[状态变化消息]{style="font-family:宋体"}
+收到接口*interface*状态变化消息
 
-[[Processing interface change message.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982173122}
+Processing interface change message.
 
-[[处理接口状态变化消息]{style="font-family:宋体"}]{#struct_0_x6691_30153_1635917112}
+处理接口状态变化消息
 
-[[Interface change message processing completed.]{lang="EN-US"}]{#struct_0_x6691_30153_x569985503}
+Interface change message processing completed.
 
-[[接口状态变化消息处理结束]{style="font-family:宋体"}]{#struct_0_x6691_30153_x1982107586}
+接口状态变化消息处理结束
 
-[[Received peer *peer-addr* lost message, interface *interface*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1458738803}
+Received peer *peer-addr* lost message, interface *interface*.
 
-[[收到邻居]{style="font-family:宋体"}*[peer-addr]{lang="EN-US"}*]{#struct_0_x6691_30153_x1982697413}[丢失消息，邻居所在的接口为]{style="font-family:宋体"}*[interface]{lang="EN-US"}*
+收到邻居*peer-addr*丢失消息，邻居所在的接口为*interface*
 
-[[Processing peer lost message.]{lang="EN-US"}]{#struct_0_x6691_30153_x1113183432}
+Processing peer lost message.
 
-[[处理邻居丢失消息]{style="font-family:宋体"}]{#struct_0_x6691_30153_1665203571}
+处理邻居丢失消息
 
-[[Peer lost message processing completed.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982631877}
+Peer lost message processing completed.
 
-[[处理邻居丢失消息结束]{style="font-family:宋体"}]{#struct_0_x6691_30153_1531861782}
+处理邻居丢失消息结束
 
-[[Started to smooth all RSBs.]{lang="EN-US"}]{#struct_0_x6691_30153_x376856705}
+Started to smooth all RSBs.
 
-[[RSB]{lang="EN-US"}]{#struct_0_x6691_30153_x1982566341}[平滑开始]{style="font-family:宋体"}
+RSB平滑开始
 
-[[Smoothing the RSB.]{lang="EN-US"}]{#struct_0_x6691_30153_x1118169502}
+Smoothing the RSB.
 
-[[RSB]{lang="EN-US"}]{#struct_0_x6691_30153_1881645273}[平滑]{style="font-family:宋体"}
+RSB平滑
 
-[[Finished smoothing all RSBs.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982500805}
+Finished smoothing all RSBs.
 
-[[RSB]{lang="EN-US"}]{#struct_0_x6691_30153_1755367259}[平滑结束]{style="font-family:宋体"}
+RSB平滑结束
 
-[[TRM reconnected.]{lang="EN-US"}]{#struct_0_x6691_30153_x684264199}
+TRM reconnected.
 
-[[TRM]{lang="EN-US"}]{#struct_0_x6691_30153_x1982959557}[和]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[重新建立连接]{style="font-family:宋体"}
+TRM和RSVP重新建立连接
 
-[[Received a ResvErr message: error code = *error-code*, error value = *error-value*, error description = *description.*]{lang="EN-US"}]{#struct_0_x6691_30153_494848519}
+Received a ResvErr message: error code = *error-code*, error value = *error-value*, error description = *description.*
 
-[[收到]{style="font-family:宋体"}[ResvErr]{lang="EN-US"}]{#struct_0_x6691_30153_x1982894021}[消息，错误码为]{style="font-family:宋体"}[error-code]{lang="EN-US"}[，错误值为]{style="font-family:宋体"}*[error-value]{lang="EN-US"}*[，错误描述信息为]{style="font-family:宋体"}*[description]{lang="EN-US"}*
+收到ResvErr消息，错误码为error-code，错误值为*error-value*，错误描述信息为*description*
 
-[[Forwarded the ResvErr message.]{lang="EN-US"}]{#struct_0_x6691_30153_1871921670}
+Forwarded the ResvErr message.
 
-[[转发]{style="font-family:宋体"}[ResvErr]{lang="EN-US"}]{#struct_0_x6691_30153_x1924546744}[消息]{style="font-family:宋体"}
+转发ResvErr消息
 
-[[Created a new BSB.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982828485}
+Created a new BSB.
 
-[[新建]{style="font-family:宋体"}[BSB]{lang="EN-US"}]{#struct_0_x6691_30153_964802409}
+新建BSB
 
-[[Updated the old BSB.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982762949}
+Updated the old BSB.
 
-[[更新旧的]{style="font-family:宋体"}[BSB]{lang="EN-US"}]{#struct_0_x6691_30153_x1293173964}
+更新旧的BSB
 
-[[Sent a ResvErr message: error code = *error-code*, error value = *error-value*, error description = *description.*]{lang="EN-US"}]{#struct_0_x6691_30153_x1477510838}
+Sent a ResvErr message: error code = *error-code*, error value = *error-value*, error description = *description.*
 
-[[发送]{style="font-family:宋体"}[ResvErr]{lang="EN-US"}]{#struct_0_x6691_30153_x1982173125}[消息，错误码为]{style="font-family:宋体"}[error-code]{lang="EN-US"}[，错误值为]{style="font-family:宋体"}*[error-value]{lang="EN-US"}*[，错误描述信息为]{style="font-family:宋体"}*[description]{lang="EN-US"}*
+发送ResvErr消息，错误码为error-code，错误值为*error-value*，错误描述信息为*description*
 
-[[Received a ResvTear message.]{lang="EN-US"}]{#struct_0_x6691_30153_2039201639}
+Received a ResvTear message.
 
-[[收到]{style="font-family:宋体"}[ResvTear]{lang="EN-US"}]{#struct_0_x6691_30153_x1982107589}[消息]{style="font-family:宋体"}
+收到ResvTear消息
 
-[[Received a ResvTear message. Sent a PathTear message.]{lang="EN-US"}]{#struct_0_x6691_30153_107345138}
+Received a ResvTear message. Sent a PathTear message.
 
-[[收到]{style="font-family:宋体"}[ResvTear]{lang="EN-US"}]{#struct_0_x6691_30153_x201211920}[消息，发送]{style="font-family:宋体"}[PathTear]{lang="EN-US"}[消息]{style="font-family:宋体"}
+收到ResvTear消息，发送PathTear消息
 
-[[Received a ResvTear message. Sent a resv message.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982697412}
+Received a ResvTear message. Sent a resv message.
 
-[[收到]{style="font-family:宋体"}[ResvTear]{lang="EN-US"}]{#struct_0_x6691_30153_1615699923}[消息，发送]{style="font-family:宋体"}[resv]{lang="EN-US"}[消息]{style="font-family:宋体"}
+收到ResvTear消息，发送resv消息
 
-[[Forwarded the ResvTear message.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982631876}
+Forwarded the ResvTear message.
 
-[[转发]{style="font-family:宋体"}[ResvTear]{lang="EN-US"}]{#struct_0_x6691_30153_x34222159}[消息]{style="font-family:宋体"}
+转发ResvTear消息
 
-[[Sent a ResvTear message.]{lang="EN-US"}]{#struct_0_x6691_30153_x1982566340}
+Sent a ResvTear message.
 
-[[发送]{style="font-family:宋体"}[ResvTear]{lang="EN-US"}]{#struct_0_x6691_30153_447914439}[消息]{style="font-family:宋体"}
+发送ResvTear消息
 
-[[Received a ResvConf message.]{lang="EN-US"}]{#struct_0_x6691_30153_x2108689898}
+Received a ResvConf message.
 
-[[收到]{style="font-family:宋体"}[ResvConf]{lang="EN-US"}]{#struct_0_x6691_30153_x1982500804}[消息]{style="font-family:宋体"}
+收到ResvConf消息
 
-[[Sent a ResvConf message.]{lang="EN-US"}]{#struct_0_x6691_30153_x973516096}
+Sent a ResvConf message.
 
-[[发送]{style="font-family:宋体"}[ResvConf]{lang="EN-US"}]{#struct_0_x6691_30153_x1982959556}[消息]{style="font-family:宋体"}
+发送ResvConf消息
 
-[ ]{lang="EN-US"}
+【举例】
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x1071235422}
+\# 打开RSVP Resv调试信息开关，收到Resv消息后打印如下调试信息。
 
-[[\# ]{lang="EN-US"}]{#struct_0_x6691_30153_x571467102}[打开]{style="font-family:宋体"}[RSVP Resv]{lang="EN-US"}[调试信息开关，收到]{style="font-family:宋体"}[Resv]{lang="EN-US"}[消息后打印如下调试信息。]{style="font-family:宋体"}
+\<Sysname\> debugging rsvp resv
 
-[[\<Sysname\> debugging rsvp resv]{lang="EN-US"}]{#struct_0_x6691_30153_x1365751419}
+\*Aug 19 08:30:13:404 2012 Sysname RSVP/7/RESV: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Received a resv message. Created a new RSB.
 
-[\*Aug 19 08:30:13:404 2012 Sysname RSVP/7/RESV: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Received a resv message. Created a new RSB.]{lang="EN-US"}
+*// 接收到Resv消息，创建新的RSB。消息的目的地址为10.33.33.33，源地址为10.11.11.11，隧道的Tunnel ID为1。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_348799664}*[接收到]{style="font-family:宋体"}[Resv]{lang="EN-US"}[消息，创建新的]{style="font-family:宋体"}[RSB]{lang="EN-US"}[。消息的目的地址为]{style="font-family:宋体"}[10.33.33.33]{lang="EN-US"}[，源地址为]{style="font-family:宋体"}[10.11.11.11]{lang="EN-US"}[，隧道的]{style="font-family:宋体"}[Tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}*
+\*Aug 19 08:30:13:404 2012 Sysname RSVP/7/RESV: -MDC=1; dst 10.33.33.33, src 10.11.1
 
-[[\*Aug 19 08:30:13:404 2012 Sysname RSVP/7/RESV: -MDC=1; dst 10.33.33.33, src 10.11.1]{lang="EN-US"}]{#struct_0_x6691_30153_x986818813}
+1.11, tunnel ID 1: TCSB param: TC_B_Police_flag 0, TC_E_Police_flag 0, TC_M_Police_flag 0.
 
-[1.11, tunnel ID 1: TCSB param: TC_B_Police_flag 0, TC_E_Police_flag 0, TC_M_Police_flag 0.]{lang="EN-US"}
+*[// TC_B_Police_flag*]*为0，TC_E_Police_flag为0，TC_M_Police_flag为0。*
 
-[*[// TC_B_Police_flag]{lang="EN-US"}*]{#struct_0_x6691_30153_x1982894020}*[为]{style="font-family:宋体"}[0]{lang="EN-US"}[，]{style="font-family:宋体"}[TC_E_Police_flag]{lang="EN-US"}[为]{style="font-family:宋体"}[0]{lang="EN-US"}[，]{style="font-family:宋体"}[TC_M_Police_flag]{lang="EN-US"}[为]{style="font-family:宋体"}[0]{lang="EN-US"}[。]{style="font-family:宋体"}*
+\*Aug 19 08:30:13:404 2012 Sysname RSVP/7/RESV: -MDC=1; dst 10.33.33.33, src 10.11.1
 
-[[\*Aug 19 08:30:13:404 2012 Sysname RSVP/7/RESV: -MDC=1; dst 10.33.33.33, src 10.11.1]{lang="EN-US"}]{#struct_0_x6691_30153_305837729}
+1.11, tunnel ID 1: Created a new TCSB.
 
-[1.11, tunnel ID 1: Created a new TCSB.]{lang="EN-US"}
+*// 新建TCSB。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x723325958}*[新建]{style="font-family:宋体"}[TCSB]{lang="EN-US"}[。]{style="font-family:宋体"}*
+\*Aug 19 08:30:13:404 2012 Sysname RSVP/7/RESV: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Allocated resource from TRM: interface GE1/0/1, bandwidth 0kbps, CT 0, result successful.
 
-[[\*Aug 19 08:30:13:404 2012 Sysname RSVP/7/RESV: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Allocated resource from TRM: interface GE1/0/1, bandwidth 0kbps, CT 0, result successful.]{lang="EN-US"}]{#struct_0_x6691_30153_412459840}
+*// 成功从TRM分配资源：接口为GigabitEthernet1/0/1，带宽为0kbps，带宽类型为CT0。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_596296664}*[成功从]{style="font-family:宋体"}[TRM]{lang="EN-US"}[分配资源：接口为]{style="font-family:宋体"}[GigabitEthernet1/0/1]{lang="EN-US"}[，带宽为]{style="font-family:宋体"}[0kbps]{lang="EN-US"}[，带宽类型为]{style="font-family:宋体"}[CT0]{lang="EN-US"}[。]{style="font-family:宋体"}*
+\*Aug 19 08:30:13:404 2012 Sysname RSVP/7/RESV: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Updated CR-LSP, LSP ID 18212, direction 0.
 
-[[\*Aug 19 08:30:13:404 2012 Sysname RSVP/7/RESV: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Updated CR-LSP, LSP ID 18212, direction 0.]{lang="EN-US"}]{#struct_0_x6691_30153_x2029060769}
+*// 更新CR-LSP，LSP ID为18212，该隧道为单向隧道。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_1573248806}*[更新]{style="font-family:宋体"}[CR-LSP]{lang="EN-US"}[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}[18212]{lang="EN-US"}[，该隧道为单向隧道。]{style="font-family:宋体"}*
+\*Aug 19 08:30:13:404 2012 Sysname RSVP/7/RESV: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Created request info.
 
-[[\*Aug 19 08:30:13:404 2012 Sysname RSVP/7/RESV: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Created request info.]{lang="EN-US"}]{#struct_0_x6691_30153_x1408724880}
+*// 创建request信息。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x1982828484}*[创建]{style="font-family:宋体"}[request]{lang="EN-US"}[信息。]{style="font-family:宋体"}*
+\*Aug 19 08:30:13:405 2012 Sysname RSVP/7/RESV: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Merged flowdesc from TCSB. The merge flag is off.
 
-[[\*Aug 19 08:30:13:405 2012 Sysname RSVP/7/RESV: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Merged flowdesc from TCSB. The merge flag is off.]{lang="EN-US"}]{#struct_0_x6691_30153_x1764080946}
+*// 根据TCSB合并流量描述，合并标记为off。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_955784932}*[根据]{style="font-family:宋体"}[TCSB]{lang="EN-US"}[合并流量描述，合并标记为]{style="font-family:宋体"}[off]{lang="EN-US"}[。]{style="font-family:宋体"}*
+\*Aug 19 08:30:13:405 2012 Sysname RSVP/7/RESV: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Sent a resv message.
 
-[[\*Aug 19 08:30:13:405 2012 Sysname RSVP/7/RESV: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Sent a resv message.]{lang="EN-US"}]{#struct_0_x6691_30153_492794847}
+*// 发送Resv消息。*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_631292521}*[发送]{style="font-family:宋体"}[Resv]{lang="EN-US"}[消息。]{style="font-family:宋体"}*
+\*Aug 19 08:30:23:967 2012 Sysname RSVP/7/RESV: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Received a resv message. Updated the old RSB.
 
-[[\*Aug 19 08:30:23:967 2012 Sysname RSVP/7/RESV: -MDC=1; dst 10.33.33.33, src 10.11.11.11, tunnel ID 1: Received a resv message. Updated the old RSB.]{lang="EN-US"}]{#struct_0_x6691_30153_645350935}
-
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_158349055}*[接收到]{style="font-family:宋体"}[Resv]{lang="EN-US"}[消息，更新已有的]{style="font-family:宋体"}[RSB]{lang="EN-US"}[。]{style="font-family:宋体"}*
-
-::: {#-1257960097 .myid}
-[]{#_Toc404790959}[]{#struct_0_x6691_30153_968718058}
+*// 接收到Resv消息，更新已有的RSB。*
 
 **RSVP \-- RSVP调试命令 \-- debugging rsvp timer**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_x6691_30153_44143970}
+【命令】
 
-[**[debugging rsvp timer]{lang="EN-US"}**]{#struct_0_x6691_30153_x1982762948}
+**[debugging rsvp timer**]
 
-[**[undo debugging rsvp timer]{lang="EN-US"}**]{#struct_0_x6691_30153_272909977}
+**[undo debugging rsvp timer**]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_x6691_30153_1095778506}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_x6691_30153_x1608273036}
+用户视图
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x823361620}
+【参数】
 
-[[无]{style="font-family:宋体"}]{#struct_0_x6691_30153_x475171436}
+无
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x1016165024}
+【描述】
 
-[**[debugging rsvp timer]{lang="EN-US"}**]{#struct_0_x6691_30153_2071714911}[命令用来打开定时器调试信息开关。]{style="font-family:宋体"}**[undo debugging rsvp timer]{lang="EN-US"}**[命令用来关闭定时器调试信息开关。]{style="font-family:宋体"}
+**[debugging rsvp timer**]命令用来打开定时器调试信息开关。**undo debugging rsvp timer**命令用来关闭定时器调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[RSVP]{lang="EN-US"}]{#struct_0_x6691_30153_x1982173124}[定时器调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，RSVP定时器调试信息开关处于关闭状态。
 
-[[表1-9 ]{lang="EN-US"}[debugging rsvp timer]{lang="EN-US"}]{#struct_0_x6691_30153_473117698}[命令输出信息描述表]{style="font-family:黑体"}
+表1-9 debugging rsvp timer命令输出信息描述表
 
-[]{#table_struct_0_338332676}[[字段]{style="font-family:黑体"}]{#struct_0_x6691_30153_x131918200}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_x6691_30153_1782613968}
+描述
 
-[[Created cleanup timer for SA: from *start-address* to *end-address*.]{lang="EN-US"}]{#struct_0_x6691_30153_x286850418}
+Created cleanup timer for SA: from *start-address* to *end-address*.
 
-[[创建认证老化定时器：起点地址]{style="font-family:宋体"}*[start-address]{lang="EN-US"}*]{#struct_0_x6691_30153_x871086739}[，终点地址]{style="font-family:宋体"}*[end-address]{lang="EN-US"}*
+创建认证老化定时器：起点地址*start-address*，终点地址*end-address*
 
-[[Reset cleanup timer of SA: from *start-address* to *end-address*.]{lang="EN-US"}]{#struct_0_x6691_30153_1975106878}
+Reset cleanup timer of SA: from *start-address* to *end-address*.
 
-[[重置认证老化定时器：起点地址]{style="font-family:宋体"}*[start-address]{lang="EN-US"}*]{#struct_0_x6691_30153_x1982107588}[，终点地址]{style="font-family:宋体"}*[end-address]{lang="EN-US"}*
+重置认证老化定时器：起点地址*start-address*，终点地址*end-address*
 
-[[Cleanup timer of SA expired: from *start-address* to *end-address*.]{lang="EN-US"}]{#struct_0_x6691_30153_1673429079}
+Cleanup timer of SA expired: from *start-address* to *end-address*.
 
-[[认证老化定时器超时：起点地址]{style="font-family:宋体"}*[start-address]{lang="EN-US"}*]{#struct_0_x6691_30153_1749752590}[，终点地址]{style="font-family:宋体"}*[end-address]{lang="EN-US"}*
+认证老化定时器超时：起点地址*start-address*，终点地址*end-address*
 
-[[Deleted cleanup timer of SA: from *start-address* to *end-address*.]{lang="EN-US"}]{#struct_0_x6691_30153_453270085}
+Deleted cleanup timer of SA: from *start-address* to *end-address*.
 
-[[删除认证老化定时器：起点地址]{style="font-family:宋体"}*[start-address]{lang="EN-US"}*]{#struct_0_x6691_30153_x1283784575}[，终点地址]{style="font-family:宋体"}*[end-address]{lang="EN-US"}*
+删除认证老化定时器：起点地址*start-address*，终点地址*end-address*
 
-[[Created challenge timer for SA: from *start-address* to *end-address*.]{lang="EN-US"}]{#struct_0_x6691_30153_825075134}
+Created challenge timer for SA: from *start-address* to *end-address*.
 
-[[创建认证挑战定时器：起点地址]{style="font-family:宋体"}*[start-address]{lang="EN-US"}*]{#struct_0_x6691_30153_x416613468}[，终点地址]{style="font-family:宋体"}*[end-address]{lang="EN-US"}*
+创建认证挑战定时器：起点地址*start-address*，终点地址*end-address*
 
-[[Reset challenge timer for SA: from *start-address* to *end-address*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1853197040}
+Reset challenge timer for SA: from *start-address* to *end-address*.
 
-[[重置认证挑战定时器：起点地址]{style="font-family:宋体"}*[start-address]{lang="EN-US"}*]{#struct_0_x6691_30153_x1223544104}[，终点地址]{style="font-family:宋体"}*[end-address]{lang="EN-US"}*
+重置认证挑战定时器：起点地址*start-address*，终点地址*end-address*
 
-[[Challenge timer of SA expired: from *start-address* to *end-address*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1745133719}
+Challenge timer of SA expired: from *start-address* to *end-address*.
 
-[[认证挑战定时器超时：起点地址]{style="font-family:宋体"}*[start-address]{lang="EN-US"}*]{#struct_0_x6691_30153_2059331708}[，终点地址]{style="font-family:宋体"}*[end-address]{lang="EN-US"}*
+认证挑战定时器超时：起点地址*start-address*，终点地址*end-address*
 
-[[Deleted challenge timer of SA: from *start-address* to *end-address*.]{lang="EN-US"}]{#struct_0_x6691_30153_x416547932}
+Deleted challenge timer of SA: from *start-address* to *end-address*.
 
-[[删除认证挑战定时器：起点地址]{style="font-family:宋体"}*[start-address]{lang="EN-US"}*]{#struct_0_x6691_30153_528107288}[，终点地址]{style="font-family:宋体"}*[end-address]{lang="EN-US"}*
+删除认证挑战定时器：起点地址*start-address*，终点地址*end-address*
 
-[[FRR optimize timer expired.]{lang="EN-US"}]{#struct_0_x6691_30153_x47416000}
+FRR optimize timer expired.
 
-[[FRR]{lang="EN-US"}]{#struct_0_x6691_30153_162791932}[优化定时器超时]{style="font-family:宋体"}
+FRR优化定时器超时
 
-[[Created resend timer for HA message.]{lang="EN-US"}]{#struct_0_x6691_30153_694504493}
+Created resend timer for HA message.
 
-[[创建]{style="font-family:宋体"}[HA]{lang="EN-US"}]{#struct_0_x6691_30153_x416482396}[消息重发定时器]{style="font-family:宋体"}
+创建HA消息重发定时器
 
-[[Resend timer of HA message expired.]{lang="EN-US"}]{#struct_0_x6691_30153_x1484396178}
+Resend timer of HA message expired.
 
-[[HA]{lang="EN-US"}]{#struct_0_x6691_30153_x1520223223}[消息重发定时器超时]{style="font-family:宋体"}
+HA消息重发定时器超时
 
-[[Deleted the resend timer of HA message.]{lang="EN-US"}]{#struct_0_x6691_30153_x2024861293}
+Deleted the resend timer of HA message.
 
-[[删除]{style="font-family:宋体"}[HA]{lang="EN-US"}]{#struct_0_x6691_30153_x416416860}[消息重发定时器]{style="font-family:宋体"}
+删除HA消息重发定时器
 
-[[Created GR restart timer, peer *peer-addr,* interface *interface*.]{lang="EN-US"}]{#struct_0_x6691_30153_907787225}
+Created GR restart timer, peer *peer-addr,* interface *interface*.
 
-[[创建]{style="font-family:宋体"}[GR]{lang="EN-US"}]{#struct_0_x6691_30153_x2029568816}[重启定时器，邻居地址]{style="font-family:宋体"}*[peer-addr]{lang="EN-US"}*[，接口]{style="font-family:宋体"}*[interface]{lang="EN-US"}*
+创建GR重启定时器，邻居地址*peer-addr*，接口*interface*
 
-[[GR restart timer expired, peer *peer-addr,* interface *interface*.]{lang="EN-US"}]{#struct_0_x6691_30153_1517613908}
+GR restart timer expired, peer *peer-addr,* interface *interface*.
 
-[[GR]{lang="EN-US"}]{#struct_0_x6691_30153_1438754577}[重启定时器超时，邻居地址]{style="font-family:宋体"}*[peer-addr]{lang="EN-US"}*[，接口]{style="font-family:宋体"}*[interface]{lang="EN-US"}*
+GR重启定时器超时，邻居地址*peer-addr*，接口*interface*
 
-[[Created GR recovery timer, peer *peer-addr,* interface *interface*.]{lang="EN-US"}]{#struct_0_x6691_30153_x416875612}
+Created GR recovery timer, peer *peer-addr,* interface *interface*.
 
-[[创建]{style="font-family:宋体"}[GR]{lang="EN-US"}]{#struct_0_x6691_30153_2022256881}[恢复定时器，邻居地址]{style="font-family:宋体"}*[peer-addr]{lang="EN-US"}*[，接口]{style="font-family:宋体"}*[interface]{lang="EN-US"}*
+创建GR恢复定时器，邻居地址*peer-addr*，接口*interface*
 
-[[GR recovery timer expired, peer *peer-addr,* interface *interface*.]{lang="EN-US"}]{#struct_0_x6691_30153_1032207855}
+GR recovery timer expired, peer *peer-addr,* interface *interface*.
 
-[[GR]{lang="EN-US"}]{#struct_0_x6691_30153_x381896817}[恢复定时器超时，邻居地址]{style="font-family:宋体"}*[peer-addr]{lang="EN-US"}*[，接口]{style="font-family:宋体"}*[interface]{lang="EN-US"}*
+GR恢复定时器超时，邻居地址*peer-addr*，接口*interface*
 
-[[Created hello timer, peer *peer-addr,* interface *interface*.]{lang="EN-US"}]{#struct_0_x6691_30153_x416810076}
+Created hello timer, peer *peer-addr,* interface *interface*.
 
-[[创建]{style="font-family:宋体"}[hello]{lang="EN-US"}]{#struct_0_x6691_30153_1274729246}[定时器，邻居地址]{style="font-family:宋体"}*[peer-addr]{lang="EN-US"}*[，接口]{style="font-family:宋体"}*[interface]{lang="EN-US"}*
+创建hello定时器，邻居地址*peer-addr*，接口*interface*
 
-[[Hello timer expired, peer *peer-addr,* interface *interface*.]{lang="EN-US"}]{#struct_0_x6691_30153_1136335671}
+Hello timer expired, peer *peer-addr,* interface *interface*.
 
-[[Hello]{lang="EN-US"}]{#struct_0_x6691_30153_1455148598}[定时器超时，邻居地址]{style="font-family:宋体"}*[peer-addr]{lang="EN-US"}*[，接口]{style="font-family:宋体"}*[interface]{lang="EN-US"}*
+Hello定时器超时，邻居地址*peer-addr*，接口*interface*
 
-[[Reset hello timer.]{lang="EN-US"}]{#struct_0_x6691_30153_x416744540}
+Reset hello timer.
 
-[[重置]{style="font-family:宋体"}[hello]{lang="EN-US"}]{#struct_0_x6691_30153_x1875991256}[定时器]{style="font-family:宋体"}
+重置hello定时器
 
-[[Created local repair timer for PSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*]{lang="EN-US"}]{#struct_0_x6691_30153_615806838}
+Created local repair timer for PSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*
 
-[[创建]{style="font-family:宋体"}[PSB]{lang="EN-US"}]{#struct_0_x6691_30153_x416679004}[本地修复定时器，目的地址]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+创建PSB本地修复定时器，目的地址*dst-addr*，源地址*src-addr*，tunnel ID为*tunnel-id*
 
-[[Local repair timer of PSB expired: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*]{lang="EN-US"}]{#struct_0_x6691_30153_x1093729508}
+Local repair timer of PSB expired: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*
 
-[[PSB]{lang="EN-US"}]{#struct_0_x6691_30153_x1585630439}[本地修复定时器超时，目的地址]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+PSB本地修复定时器超时，目的地址*dst-addr*，源地址*src-addr*，tunnel ID为*tunnel-id*
 
-[[Deleted local repair timer of PSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*]{lang="EN-US"}]{#struct_0_x6691_30153_x1854667893}
+Deleted local repair timer of PSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*
 
-[[删除]{style="font-family:宋体"}[PSB]{lang="EN-US"}]{#struct_0_x6691_30153_x416089180}[本地修复定时器，目的地址]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+删除PSB本地修复定时器，目的地址*dst-addr*，源地址*src-addr*，tunnel ID为*tunnel-id*
 
-[[Created cleanup timer for PSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*]{lang="EN-US"}]{#struct_0_x6691_30153_1218773486}
+Created cleanup timer for PSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*
 
-[[创建]{style="font-family:宋体"}[PSB]{lang="EN-US"}]{#struct_0_x6691_30153_1649845995}[老化定时器，目的地址]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+创建PSB老化定时器，目的地址*dst-addr*，源地址*src-addr*，tunnel ID为*tunnel-id*
 
-[[Reset cleanup timer of PSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*]{lang="EN-US"}]{#struct_0_x6691_30153_249947397}
+Reset cleanup timer of PSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*
 
-[[重置]{style="font-family:宋体"}[PSB]{lang="EN-US"}]{#struct_0_x6691_30153_x416023644}[老化定时器，目的地址]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+重置PSB老化定时器，目的地址*dst-addr*，源地址*src-addr*，tunnel ID为*tunnel-id*
 
-[[Deleted cleanup timer of PSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*]{lang="EN-US"}]{#struct_0_x6691_30153_x1472891932}
+Deleted cleanup timer of PSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*
 
-[[删除]{style="font-family:宋体"}[PSB]{lang="EN-US"}]{#struct_0_x6691_30153_845357548}[老化定时器，目的地址]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+删除PSB老化定时器，目的地址*dst-addr*，源地址*src-addr*，tunnel ID为*tunnel-id*
 
-[[Cleanup timer of PSB expired: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*]{lang="EN-US"}]{#struct_0_x6691_30153_x416613467}
+Cleanup timer of PSB expired: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*
 
-[[PSB]{lang="EN-US"}]{#struct_0_x6691_30153_x1852214000}[老化定时器超时，目的地址]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+PSB老化定时器超时，目的地址*dst-addr*，源地址*src-addr*，tunnel ID为*tunnel-id*
 
-[[Created path refresh timer for PSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*]{lang="EN-US"}]{#struct_0_x6691_30153_2086433391}
+Created path refresh timer for PSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*
 
-[[创建]{style="font-family:宋体"}[path]{lang="EN-US"}]{#struct_0_x6691_30153_x416547931}[刷新定时器，目的地址]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+创建path刷新定时器，目的地址*dst-addr*，源地址*src-addr*，tunnel ID为*tunnel-id*
 
-[[Reset path refresh timer of PSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*]{lang="EN-US"}]{#struct_0_x6691_30153_528172824}
+Reset path refresh timer of PSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*
 
-[[重置]{style="font-family:宋体"}[path]{lang="EN-US"}]{#struct_0_x6691_30153_x1617640903}[刷新定时器，目的地址]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+重置path刷新定时器，目的地址*dst-addr*，源地址*src-addr*，tunnel ID为*tunnel-id*
 
-[[Deleted path refresh timer of PSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*]{lang="EN-US"}]{#struct_0_x6691_30153_x416482395}
+Deleted path refresh timer of PSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*
 
-[[删除]{style="font-family:宋体"}[path]{lang="EN-US"}]{#struct_0_x6691_30153_x1484330642}[刷新定时器，目的地址]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+删除path刷新定时器，目的地址*dst-addr*，源地址*src-addr*，tunnel ID为*tunnel-id*
 
-[[Path refresh timer of PSB expired: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*]{lang="EN-US"}]{#struct_0_x6691_30153_1319748608}
+Path refresh timer of PSB expired: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*
 
-[[path]{lang="EN-US"}]{#struct_0_x6691_30153_x416416859}[刷新定时器超时，目的地址]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+path刷新定时器超时，目的地址*dst-addr*，源地址*src-addr*，tunnel ID为*tunnel-id*
 
-[[Created srefresh timer, peer *peer-addr,* interface *interface*.]{lang="EN-US"}]{#struct_0_x6691_30153_907328470}
+Created srefresh timer, peer *peer-addr,* interface *interface*.
 
-[[创建摘要刷新定时器，邻居地址]{style="font-family:宋体"}*[peer-addr]{lang="EN-US"}*]{#struct_0_x6691_30153_1312171325}[，接口]{style="font-family:宋体"}*[interface]{lang="EN-US"}*
+创建摘要刷新定时器，邻居地址*peer-addr*，接口*interface*
 
-[[Deleted srefresh timer, peer *peer-addr,* interface *interface*.]{lang="EN-US"}]{#struct_0_x6691_30153_x416875611}
+Deleted srefresh timer, peer *peer-addr,* interface *interface*.
 
-[[删除摘要刷新定时器，邻居地址]{style="font-family:宋体"}*[peer-addr]{lang="EN-US"}*]{#struct_0_x6691_30153_2022453489}[，接口]{style="font-family:宋体"}*[interface]{lang="EN-US"}*
+删除摘要刷新定时器，邻居地址*peer-addr*，接口*interface*
 
-[[Srefresh timer expired, peer *peer-addr,* interface *interface*.]{lang="EN-US"}]{#struct_0_x6691_30153_x1739094612}
+Srefresh timer expired, peer *peer-addr,* interface *interface*.
 
-[[摘要刷新定时器超时，邻居地址]{style="font-family:宋体"}*[peer-addr]{lang="EN-US"}*]{#struct_0_x6691_30153_x416810075}[，接口]{style="font-family:宋体"}*[interface]{lang="EN-US"}*
+摘要刷新定时器超时，邻居地址*peer-addr*，接口*interface*
 
-[[Created retransmit timer for message ID *message-id*.]{lang="EN-US"}]{#struct_0_x6691_30153_1274663710}
+Created retransmit timer for message ID *message-id*.
 
-[[为]{style="font-family:宋体"}[message ID]{lang="EN-US"}]{#struct_0_x6691_30153_1454942559}[（]{style="font-family:宋体"}*[message-id]{lang="EN-US"}*[）创建重传定时器]{style="font-family:宋体"}
+为message ID（*message-id*）创建重传定时器
 
-[[Retransmit timer of message ID *message-id* expired.]{lang="EN-US"}]{#struct_0_x6691_30153_x416744539}
+Retransmit timer of message ID *message-id* expired.
 
-[[message ID]{lang="EN-US"}]{#struct_0_x6691_30153_x1876581073}[（]{style="font-family:宋体"}*[message-id]{lang="EN-US"}*[）的重传定时器超时]{style="font-family:宋体"}
+message ID（*message-id*）的重传定时器超时
 
-[[Reset the retransmit timer.]{lang="EN-US"}]{#struct_0_x6691_30153_x416679003}
+Reset the retransmit timer.
 
-[[重置重传定时器]{style="font-family:宋体"}]{#struct_0_x6691_30153_x1094057188}
+重置重传定时器
 
-[[The message ID *message-id* has been retransmitted more than *max-num* times, so deleted the message ID.]{lang="EN-US"}]{#struct_0_x6691_30153_912672865}
+The message ID *message-id* has been retransmitted more than *max-num* times, so deleted the message ID.
 
-[[message ID]{lang="EN-US"}]{#struct_0_x6691_30153_x416089179}[（]{style="font-family:宋体"}*[message-id]{lang="EN-US"}*[）重传次数超过]{style="font-family:宋体"}*[max-num]{lang="EN-US"}*[次，删除该]{style="font-family:宋体"}[message ID]{lang="EN-US"}
+message ID（*message-id*）重传次数超过*max-num*次，删除该message ID
 
-[[Created cleanup timer for BSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*]{lang="EN-US"}]{#struct_0_x6691_30153_1218183667}
+Created cleanup timer for BSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*
 
-[[创建]{style="font-family:宋体"}[BSB]{lang="EN-US"}]{#struct_0_x6691_30153_1256498999}[老化定时器，目的地址]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+创建BSB老化定时器，目的地址*dst-addr*，源地址*src-addr*，tunnel ID为*tunnel-id*
 
-[[Reset cleanup timer for BSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.* ]{lang="EN-US"}]{#struct_0_x6691_30153_x416023643}
+Reset cleanup timer for BSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*
 
-[[重置]{style="font-family:宋体"}[BSB]{lang="EN-US"}]{#struct_0_x6691_30153_x1472564252}[老化定时器，目的地址]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+重置BSB老化定时器，目的地址*dst-addr*，源地址*src-addr*，tunnel ID为*tunnel-id*
 
-[[Cleanup timer of BSB expired: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*]{lang="EN-US"}]{#struct_0_x6691_30153_x416613470}
+Cleanup timer of BSB expired: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*
 
-[[BSB]{lang="EN-US"}]{#struct_0_x6691_30153_x1852672753}[老化定时器超时，目的地址]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址]{style="font-family:宋体"} *[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID *tunnel-id*]{lang="EN-US"}
+BSB老化定时器超时，目的地址*dst-addr*，源地址 *src-addr*，tunnel ID *tunnel-id*
 
-[[Created cleanup timer for RSB: src *src-addr*, LSP ID *lsp-id.*]{lang="EN-US"}]{#struct_0_x6691_30153_x927439975}
+Created cleanup timer for RSB: src *src-addr*, LSP ID *lsp-id.*
 
-[[创建]{style="font-family:宋体"}[RSB]{lang="EN-US"}]{#struct_0_x6691_30153_x416547934}[老化定时器，源地址]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[lsp-id]{lang="EN-US"}*
+创建RSB老化定时器，源地址*dst-addr*，LSP ID为*lsp-id*
 
-[[Reset cleanup timer of RSB: src *src-addr*, LSP ID *lsp-id.*]{lang="EN-US"}]{#struct_0_x6691_30153_528500504}
+Reset cleanup timer of RSB: src *src-addr*, LSP ID *lsp-id.*
 
-[[重置]{style="font-family:宋体"}[RSB]{lang="EN-US"}]{#struct_0_x6691_30153_x416482398}[老化定时器，源地址]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[lsp-id]{lang="EN-US"}*
+重置RSB老化定时器，源地址*dst-addr*，LSP ID为*lsp-id*
 
-[[Deleted cleanup timer of RSB: src *src-addr*, LSP ID *lsp-id.*]{lang="EN-US"}]{#struct_0_x6691_30153_x1484527250}
+Deleted cleanup timer of RSB: src *src-addr*, LSP ID *lsp-id.*
 
-[[删除]{style="font-family:宋体"}[RSB]{lang="EN-US"}]{#struct_0_x6691_30153_x1895846901}[老化定时器，源地址]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[lsp-id]{lang="EN-US"}*
+删除RSB老化定时器，源地址*dst-addr*，LSP ID为*lsp-id*
 
-[[Cleanup timer of RSB expired: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*]{lang="EN-US"}]{#struct_0_x6691_30153_x416416862}
+Cleanup timer of RSB expired: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*
 
-[[RSB]{lang="EN-US"}]{#struct_0_x6691_30153_907918297}[老化定时器超时，目的地址]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+RSB老化定时器超时，目的地址*dst-addr*，源地址*src-addr*，tunnel ID为*tunnel-id*
 
-[[Created resv refresh timer for RSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id*.]{lang="EN-US"}]{#struct_0_x6691_30153_x416875614}
+Created resv refresh timer for RSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id*.
 
-[[创建]{style="font-family:宋体"}[resv]{lang="EN-US"}]{#struct_0_x6691_30153_2022650097}[刷新定时器，目的地址]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+创建resv刷新定时器，目的地址*dst-addr*，源地址*src-addr*，tunnel ID为*tunnel-id*
 
-[[Reset resv refresh timer of RSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*]{lang="EN-US"}]{#struct_0_x6691_30153_x416810078}
+Reset resv refresh timer of RSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*
 
-[[重置]{style="font-family:宋体"}[resv]{lang="EN-US"}]{#struct_0_x6691_30153_1273811742}[刷新定时器，目的地址]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+重置resv刷新定时器，目的地址*dst-addr*，源地址*src-addr*，tunnel ID为*tunnel-id*
 
-[[Deleted resv refresh timer of RSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*]{lang="EN-US"}]{#struct_0_x6691_30153_428195688}
+Deleted resv refresh timer of RSB: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*
 
-[[删除]{style="font-family:宋体"}[resv]{lang="EN-US"}]{#struct_0_x6691_30153_x416744542}[刷新定时器，目的地址]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+删除resv刷新定时器，目的地址*dst-addr*，源地址*src-addr*，tunnel ID为*tunnel-id*
 
-[[Resv refresh timer of RSB expired: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*]{lang="EN-US"}]{#struct_0_x6691_30153_x1876122328}
+Resv refresh timer of RSB expired: dst *dst-addr*, src *src-addr*, tunnel ID *tunnel-id.*
 
-[[resv]{lang="EN-US"}]{#struct_0_x6691_30153_x416679006}[刷新定时器超时，目的地址]{style="font-family:宋体"}*[dst-addr]{lang="EN-US"}*[，源地址]{style="font-family:宋体"}*[src-addr]{lang="EN-US"}*[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[tunnel-id]{lang="EN-US"}*
+resv刷新定时器超时，目的地址*dst-addr*，源地址*src-addr*，tunnel ID为*tunnel-id*
 
-**[ ]{lang="EN-US"}**
+****
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_x6691_30153_x1093860580}
+【举例】
 
-[[\# ]{lang="EN-US"}]{#struct_0_x6691_30153_x1575375315}[打开]{style="font-family:宋体"}[RSVP]{lang="EN-US"}[定时器调试信息开关，第一次收到]{style="font-family:宋体"}[Path]{lang="EN-US"}[和]{style="font-family:宋体"}[Resv]{lang="EN-US"}[消息后打印如下调试信息。]{style="font-family:宋体"}
+\# 打开RSVP定时器调试信息开关，第一次收到Path和Resv消息后打印如下调试信息。
 
-[[\<Sysname\> debugging rsvp timer]{lang="EN-US"}]{#struct_0_x6691_30153_x1863071193}
+\<Sysname\> debugging rsvp timer
 
-[\*Aug 19 08:40:42:119 2012 Sysname RSVP/7/TIMER: -MDC=1; Created path refresh timer for PSB: dst 10.33.33.33, src 10.11.11.11, tunnel ID 1.]{lang="EN-US"}
+\*Aug 19 08:40:42:119 2012 Sysname RSVP/7/TIMER: -MDC=1; Created path refresh timer for PSB: dst 10.33.33.33, src 10.11.11.11, tunnel ID 1.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x645635102}*[为]{style="font-family:宋体"}[PSB]{lang="EN-US"}[创建路径刷新定时器，目的地址为]{style="font-family:宋体"}[10.33.33.33]{lang="EN-US"}[，源地址为]{style="font-family:宋体"}[10.11.11.11]{lang="EN-US"}[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}*
+*// 为PSB创建路径刷新定时器，目的地址为10.33.33.33，源地址为10.11.11.11，tunnel ID为1。*
 
-[[\*Aug 19 08:40:42:119 2012 Sysname RSVP/7/TIMER: -MDC=1; Created cleanup timer for PSB: dst 10.33.33.33, src 10.11.11.11, tunnel ID 1.]{lang="EN-US"}]{#struct_0_x6691_30153_2143269822}
+\*Aug 19 08:40:42:119 2012 Sysname RSVP/7/TIMER: -MDC=1; Created cleanup timer for PSB: dst 10.33.33.33, src 10.11.11.11, tunnel ID 1.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_1283477636}*[创建]{style="font-family:宋体"}[PSB]{lang="EN-US"}[老化定时器，目的地址为]{style="font-family:宋体"}[10.33.33.33]{lang="EN-US"}[，源地址为]{style="font-family:宋体"}[10.11.11.11]{lang="EN-US"}[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}*
+*// 创建PSB老化定时器，目的地址为10.33.33.33，源地址为10.11.11.11，tunnel ID为1。*
 
-[[\*Aug 19 08:40:42:120 2012 Sysname RSVP/7/TIMER: -MDC=1; Created cleanup timer for RSB: src 10.11.11.11, LSP ID 18213.]{lang="EN-US"}]{#struct_0_x6691_30153_x416089182}
+\*Aug 19 08:40:42:120 2012 Sysname RSVP/7/TIMER: -MDC=1; Created cleanup timer for RSB: src 10.11.11.11, LSP ID 18213.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_1218642414}*[创建]{style="font-family:宋体"}[RSB]{lang="EN-US"}[老化定时器，源地址为]{style="font-family:宋体"}[10.11.11.11]{lang="EN-US"}[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}[18213]{lang="EN-US"}[。]{style="font-family:宋体"}*
+*// 创建RSB老化定时器，源地址为10.11.11.11，LSP ID为18213。*
 
-[[\*Aug 19 08:40:42:120 2012 Sysname RSVP/7/TIMER: -MDC=1; Created resv refresh timer for RSB: dst 10.33.33.33, src 10.11.11.11, tunnel ID 1.]{lang="EN-US"}]{#struct_0_x6691_30153_80812972}
+\*Aug 19 08:40:42:120 2012 Sysname RSVP/7/TIMER: -MDC=1; Created resv refresh timer for RSB: dst 10.33.33.33, src 10.11.11.11, tunnel ID 1.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x1926052271}*[为]{style="font-family:宋体"}[PSB]{lang="EN-US"}[创建]{style="font-family:宋体"}[Resv]{lang="EN-US"}[刷新定时器，目的地址为]{style="font-family:宋体"}[10.33.33.33]{lang="EN-US"}[，源地址为]{style="font-family:宋体"}[10.11.11.11]{lang="EN-US"}[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}*
+*// 为PSB创建Resv刷新定时器，目的地址为10.33.33.33，源地址为10.11.11.11，tunnel ID为1。*
 
-[[\*Aug 19 08:40:52:378 2012 Sysname RSVP/7/TIMER: -MDC=1; Path refresh timer of PSB expired: dst 10.33.33.33, src 10.11.11.11, tunnel ID 1.]{lang="EN-US"}]{#struct_0_x6691_30153_x788132020}
+\*Aug 19 08:40:52:378 2012 Sysname RSVP/7/TIMER: -MDC=1; Path refresh timer of PSB expired: dst 10.33.33.33, src 10.11.11.11, tunnel ID 1.
 
-[*[// PSB]{lang="EN-US"}*]{#struct_0_x6691_30153_1598708530}*[的路径刷新定时器超时，目的地址为]{style="font-family:宋体"}[10.33.33.33]{lang="EN-US"}[，源地址为]{style="font-family:宋体"}[10.11.11.11]{lang="EN-US"}[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}*
+*[// PSB*]*的路径刷新定时器超时，目的地址为10.33.33.33，源地址为10.11.11.11，tunnel ID为1。*
 
-[[\*Aug 19 08:40:52:734 2012 Sysname RSVP/7/TIMER: -MDC=1; Reset cleanup timer of PSB: dst 10.33.33.33, src 10.11.11.11, tunnel ID 1.]{lang="EN-US"}]{#struct_0_x6691_30153_1141683056}
+\*Aug 19 08:40:52:734 2012 Sysname RSVP/7/TIMER: -MDC=1; Reset cleanup timer of PSB: dst 10.33.33.33, src 10.11.11.11, tunnel ID 1.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_1013042932}*[重置]{style="font-family:宋体"}[PSB]{lang="EN-US"}[老化定时器，目的地址为]{style="font-family:宋体"}[10.33.33.33]{lang="EN-US"}[，源地址为]{style="font-family:宋体"}[10.11.11.11]{lang="EN-US"}[，]{style="font-family:宋体"}[tunnel ID]{lang="EN-US"}[为]{style="font-family:宋体"}[1]{lang="EN-US"}[。]{style="font-family:宋体"}*
+*// 重置PSB老化定时器，目的地址为10.33.33.33，源地址为10.11.11.11，tunnel ID为1。*
 
-[[\*Aug 19 08:40:52:767 2012 Sysname RSVP/7/TIMER: -MDC=1; Reset cleanup timer of RSB: src 10.11.11.11, LSP ID 18213.]{lang="EN-US"}]{#struct_0_x6691_30153_1065688048}
+\*Aug 19 08:40:52:767 2012 Sysname RSVP/7/TIMER: -MDC=1; Reset cleanup timer of RSB: src 10.11.11.11, LSP ID 18213.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_x6691_30153_x445862226}*[重置]{style="font-family:宋体"}[RSB]{lang="EN-US"}[老化定时器，源地址为]{style="font-family:宋体"}[10.11.11.11]{lang="EN-US"}[，]{style="font-family:宋体"}[LSP ID]{lang="EN-US"}[为]{style="font-family:宋体"}[18213]{lang="EN-US"}[。]{style="font-family:宋体"}*
+*// 重置RSB老化定时器，源地址为10.11.11.11，LSP ID为18213。*
 
-**[ ]{lang="EN-US"}**
+****

@@ -1,759 +1,728 @@
-::: {#2010852181 .myid}
-[]{#_Toc404794856}[]{#struct_0_16776_x1311_x1832812258}
 
 **WLAN接入 \-- WLAN接入调试命令 \-- debugging wlan client**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16776_x1311_x463447814}
+【命令】
 
-[**[debugging wlan client]{lang="EN-US"}**[ { **all** \| **error** \| **event** \| **fsm** \| **timer** \| **packet** { **receive** \| **send** } \[ **verbose** \] }]{lang="EN-US"}]{#struct_0_16776_x1311_x224243328}
+**[debugging wlan client**[ { **all** \| **error** \| **event** \| **fsm** \| **timer** \| **packet** { **receive** \| **send** } [ **verbose** ] }]]
 
-[**[undo debugging wlan client ]{lang="EN-US"}**[{ **all** \| **error** \| **event** \| **fsm** \| **timer** \| **packet** { **receive** \| **send** } \[ **verbose** \] }]{lang="EN-US"}]{#struct_0_16776_x1311_1109941893}
+**[undo debugging wlan client **[{ **all** \| **error** \| **event** \| **fsm** \| **timer** \| **packet** { **receive** \| **send** } [ **verbose** ] }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16776_x1311_1384748903}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_16776_x1311_x1641229767}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16776_x1311_x1005355950}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16776_x1311_x2132087516}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16776_x1311_x340317507}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16776_x1311_x654980634}
+【参数】
 
-[**[all]{lang="EN-US" style="color:black"}**]{#struct_0_16776_x1311_294011474}[：表示客户端所有类型的调试开关。]{style="font-family:宋体"}
+**[all**]：表示客户端所有类型的调试开关。
 
-[**[error]{lang="EN-US" style="color:black"}**]{#struct_0_16776_x1311_x1957403516}[：表示客户端错误类型的调试开关。]{style="font-family:
-宋体"}
+**[error**]：表示客户端错误类型的调试开关。
 
-[**[event]{lang="EN-US" style="color:black"}**]{#struct_0_16776_x1311_2058870511}[：表示客户端事件类型的调试开关。]{style="font-family:
-宋体"}
+**[event**]：表示客户端事件类型的调试开关。
 
-[**[fsm]{lang="EN-US" style="color:black"}**]{#struct_0_16776_x1311_x1140648055}[：表示客户端状态机类型调试开关。]{style="font-family:宋体"}
+**[fsm**]：表示客户端状态机类型调试开关。
 
-[**[timer]{lang="EN-US" style="color:black"}**]{#struct_0_16776_x1311_1455689021}[：表示客户端定时器类型调试开关。]{style="font-family:
-宋体"}
+**[timer**]：表示客户端定时器类型调试开关。
 
-[**[packet receive]{lang="EN-US" style="color:black"}**]{#struct_0_16776_x1311_x1168354038}[：表示客户端接收报文的调试开关。]{style="font-family:宋体"}
+**[packet receive**]：表示客户端接收报文的调试开关。
 
-[**[packet send]{lang="EN-US" style="color:black"}**]{#struct_0_16776_x1311_406763046}[：表示客户端发送报文的调试开关。]{style="font-family:宋体"}
+**[packet send**]：表示客户端发送报文的调试开关。
 
-[**[verbose]{lang="EN-US" style="color:black"}**]{#struct_0_16776_x1311_x575062131}[：显示详细的调试信息，如果不指定，显示简要的调试信息。]{style="font-family:
-宋体"}
+**[verbose**]：显示详细的调试信息，如果不指定，显示简要的调试信息。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_16776_x1311_x426972461}
+【描述】
 
-[**[debugging wlan client]{lang="EN-US"}**]{#struct_0_16776_x1311_1619913453}[命令用来打开客户端调试信息开关。]{style="font-family:宋体"}**[undo debugging wlan client]{lang="EN-US"}**[命令用来关闭客户端调试信息开关。]{style="font-family:宋体"}
+**[debugging wlan client**]命令用来打开客户端调试信息开关。**undo debugging wlan client**命令用来关闭客户端调试信息开关。
 
-[[缺省情况下，客户端调试信息开关处于关闭状态。]{style="font-family:宋体"}]{#struct_0_16776_x1311_x2142722513}
+缺省情况下，客户端调试信息开关处于关闭状态。
 
-[[表1-1 ]{lang="EN-US"}[debugging wlan client ]{lang="EN-US"}[error]{lang="EN-US"}]{#struct_0_16776_x1311_294011475}[命令输出信息描述表（]{style="font-family:黑体"}[AC/FAT AP]{lang="EN-US"}[）]{style="font-family:黑体"}
+表1-1 debugging wlan client error命令输出信息描述表（AC/FAT AP）
 
-[]{#table_struct_0_x1316116862}[[字段]{style="font-family:黑体"}]{#struct_0_16776_x1311_x1957403517}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16776_x1311_x670012844}
+描述
 
-[[Failed to send the (re)association response.]{lang="EN-US"}]{#struct_0_16776_x1311_x885527860}
+Failed to send the (re)association response.
 
-[[发送（重）关联回应失败]{style="font-family:宋体"}]{#struct_0_16776_x1311_1886823070}
+发送（重）关联回应失败
 
-[[Failed to send the delete mobile message to the uplink device.]{lang="EN-US"}]{#struct_0_16776_x1311_574357972}
+Failed to send the delete mobile message to the uplink device.
 
-[[上行同步]{style="font-family:宋体"}[delete mobile]{lang="EN-US"}]{#struct_0_16776_x1311_414207147}[消息失败]{style="font-family:宋体"}
+上行同步delete mobile消息失败
 
-[[Failed to enable packet socket for BSS *BSSID*.]{lang="EN-US"}]{#struct_0_16776_x1311_902472553}
+Failed to enable packet socket for BSS *BSSID*.
 
-[[使能]{style="font-family:宋体"}[BSS *BSSID*]{lang="EN-US"}]{#struct_0_16776_x1311_294011472}[的]{style="font-family:宋体"}[packet socket ]{lang="EN-US"}[失败]{style="font-family:宋体"}
+使能BSS *BSSID*的packet socket 失败
 
-[[Failed to assign the port to a VLAN when creating a BSS.]{lang="EN-US"}]{#struct_0_16776_x1311_x1957403514}
+Failed to assign the port to a VLAN when creating a BSS.
 
-[[创建]{style="font-family:宋体"}[BSS]{lang="EN-US"}]{#struct_0_16776_x1311_x1073297371}[时向端口添加]{style="font-family:宋体"}[Vlan]{lang="EN-US"}[失败]{style="font-family:宋体"}
+创建BSS时向端口添加Vlan失败
 
-[[Failed to remove the port from a VLAN.]{lang="EN-US"}]{#struct_0_16776_x1311_x1312224056}
+Failed to remove the port from a VLAN.
 
-[[端口退出]{style="font-family:宋体"}[Vlan]{lang="EN-US"}]{#struct_0_16776_x1311_495890030}[失败]{style="font-family:宋体"}
+端口退出Vlan失败
 
-[[Failed to inform service *service* of AP event.]{lang="EN-US"}]{#struct_0_16776_x1311_x454553915}
+Failed to inform service *service* of AP event.
 
-[[向业务模块]{style="font-family:宋体"}*[service]{lang="EN-US"}*]{#struct_0_16776_x1311_1662948506}[通知]{style="font-family:宋体"}[AP]{lang="EN-US"}[事件失败]{style="font-family:宋体"}
+向业务模块*service*通知AP事件失败
 
-[*[service]{lang="EN-US"}*]{#struct_0_16776_x1311_x326062644}[取值如下：]{style="font-family:宋体"}
+*[service*]取值如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[BASIC]{lang="EN-US"}]{#struct_0_16776_x1311_294011473}[：基础模块]{lang="EN-US" style="font-family:宋体"}
+·BASIC：基础模块
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[11ABG]{lang="EN-US"}]{#struct_0_16776_x1311_x1957403515}[：]{lang="EN-US" style="font-family:宋体"}[802.11abg]{lang="EN-US"}
+·11ABG：802.11abg
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[WMM]{lang="EN-US"}]{#struct_0_16776_x1311_492786570}[：无线]{lang="EN-US" style="font-family:宋体"}[QoS ]{lang="EN-US"}
+·WMM：无线QoS
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[11R]{lang="EN-US"}]{#struct_0_16776_x1311_x2038317148}[：]{lang="EN-US" style="font-family:宋体"}[802.11r ]{lang="EN-US"}
+·11R：802.11r
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[11I]{lang="EN-US"}]{#struct_0_16776_x1311_x1326615895}[：]{lang="EN-US" style="font-family:宋体"}[802.11i ]{lang="EN-US"}
+·11I：802.11i
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[11N]{lang="EN-US"}]{#struct_0_16776_x1311_1848479212}[：]{lang="EN-US" style="font-family:宋体"}[802.11n ]{lang="EN-US"}
+·11N：802.11n
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[11AC]{lang="EN-US"}]{#struct_0_16776_x1311_294011470}[：]{lang="EN-US" style="font-family:宋体"}[802.11ac ]{lang="EN-US"}
+·11AC：802.11ac
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ROAM]{lang="EN-US"}]{#struct_0_16776_x1311_x1957403512}[：漫游模块]{lang="EN-US" style="font-family:宋体"}
+·ROAM：漫游模块
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[11W]{lang="EN-US"}]{#struct_0_16776_x1311_89502043}[：]{lang="EN-US" style="font-family:宋体"}[802.11w ]{lang="EN-US"}
+·11W：802.11w
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[WLAS AM]{lang="EN-US"}]{#struct_0_16776_x1311_x569031757}[：无线接入认证端]{lang="EN-US" style="font-family:宋体"}[ ]{lang="EN-US"}
+·WLAS AM：无线接入认证端
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[WLAS CM]{lang="EN-US"}]{#struct_0_16776_x1311_303142135}[：无线接入客户端]{style="font-family:宋体"}
+·WLAS CM：无线接入客户端
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VLAN]{lang="EN-US"}]{#struct_0_16776_x1311_862492805}[：]{lang="EN-US" style="font-family:宋体"}[VLAN ]{lang="EN-US"}
+·VLAN：VLAN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[FWD_POLICY]{lang="EN-US"}]{#struct_0_16776_x1311_294011471}[：策略转发]{lang="EN-US" style="font-family:宋体"}[ ]{lang="EN-US"}
+·FWD_POLICY：策略转发
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SAVI]{lang="EN-US"}]{#struct_0_16776_x1311_x1957403513}[：源地址有效验证]{lang="EN-US" style="font-family:宋体"}
+·SAVI：源地址有效验证
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MCO]{lang="EN-US"}]{#struct_0_16776_x1311_1655585984}[：组播优化]{lang="EN-US" style="font-family:宋体"}[ ]{lang="EN-US"}
+·MCO：组播优化
 
-[[Failed to inform service *service* of radio event.]{lang="EN-US"}]{#struct_0_16776_x1311_728817006}
+Failed to inform service *service* of radio event.
 
-[[向业务模块]{style="font-family:宋体"}*[service]{lang="EN-US"}*]{#struct_0_16776_x1311_x1032823349}[通知]{style="font-family:宋体"}[radio]{lang="EN-US"}[事件失败]{style="font-family:宋体"}
+向业务模块*service*通知radio事件失败
 
-[*[service]{lang="EN-US"}*]{#struct_0_16776_x1311_x1737441739}[取值如下：]{style="font-family:宋体"}
+*[service*]取值如下：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[BASIC]{lang="EN-US"}]{#struct_0_16776_x1311_494388977}[：基础模块]{lang="EN-US" style="font-family:宋体"}
+·BASIC：基础模块
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[11ABG]{lang="EN-US"}]{#struct_0_16776_x1311_x1662303658}[：]{lang="EN-US" style="font-family:宋体"}[802.11abg]{lang="EN-US"}
+·11ABG：802.11abg
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[WMM]{lang="EN-US"}]{#struct_0_16776_x1311_148216272}[：无线]{lang="EN-US" style="font-family:宋体"}[QoS]{lang="EN-US"}
+·WMM：无线QoS
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[11R]{lang="EN-US"}]{#struct_0_16776_x1311_x1509192165}[：]{lang="EN-US" style="font-family:宋体"}[802.11r]{lang="EN-US"}
+·11R：802.11r
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[11I]{lang="EN-US"}]{#struct_0_16776_x1311_x1458180594}[：]{lang="EN-US" style="font-family:宋体"}[802.11i]{lang="EN-US"}
+·11I：802.11i
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[11N]{lang="EN-US"}]{#struct_0_16776_x1311_x1635451523}[：]{lang="EN-US" style="font-family:宋体"}[  802.11n]{lang="EN-US"}
+·11N：  802.11n
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[11AC]{lang="EN-US"}]{#struct_0_16776_x1311_x1771183181}[：]{lang="EN-US" style="font-family:宋体"}[802.11ac]{lang="EN-US"}
+·11AC：802.11ac
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[ROAM]{lang="EN-US"}]{#struct_0_16776_x1311_x113339658}[：漫游模块]{lang="EN-US" style="font-family:宋体"}
+·ROAM：漫游模块
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[11W]{lang="EN-US"}]{#struct_0_16776_x1311_x1662303657}[：]{lang="EN-US" style="font-family:宋体"}[802.11w]{lang="EN-US"}
+·11W：802.11w
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[WLAS AM]{lang="EN-US"}]{#struct_0_16776_x1311_2070530573}[：无线接入认证端]{lang="EN-US" style="font-family:宋体"}
+·WLAS AM：无线接入认证端
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[WLAS CM]{lang="EN-US"}]{#struct_0_16776_x1311_1479092394}[：无线接入客户端]{style="font-family:宋体"}
+·WLAS CM：无线接入客户端
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[VLAN]{lang="EN-US"}]{#struct_0_16776_x1311_998907444}[：]{lang="EN-US" style="font-family:宋体"}[VLAN]{lang="EN-US"}
+·VLAN：VLAN
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[FWD_POLICY]{lang="EN-US"}]{#struct_0_16776_x1311_1742497642}[：策略转发]{lang="EN-US" style="font-family:宋体"}
+·FWD_POLICY：策略转发
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[SAVI]{lang="EN-US"}]{#struct_0_16776_x1311_1683618886}[：源地址有效验证]{lang="EN-US" style="font-family:宋体"}
+·SAVI：源地址有效验证
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[MCO]{lang="EN-US"}]{#struct_0_16776_x1311_x1662303660}[：组播优化]{lang="EN-US" style="font-family:宋体"}
+·MCO：组播优化
 
-[[\[APID: *APID[, ]{style="color:#17365D"}*Radio ID*[: ]{style="color:#17365D"}RadioID[, ]{style="color:#17365D"}*WLAN ID*[: ]{style="color:#17365D"}WlanID*\] Failed to delete all clients.]{lang="EN-US"}]{#struct_0_16776_x1311_504381096}
+APID: *APID[, *Radio ID*: RadioID, *WLAN ID*: WlanID*] Failed to delete all clients.
 
-[[删除所有的]{style="font-family:宋体"}[Client]{lang="EN-US"}]{#struct_0_16776_x1311_367669608}[失败]{style="font-family:宋体"}
+删除所有的Client失败
 
-[[Failed to get BSS *BSSID*.]{lang="EN-US"}]{#struct_0_16776_x1311_x538187680}
+Failed to get BSS *BSSID*.
 
-[[获取]{style="font-family:宋体"}[BSS *BSSID*]{lang="EN-US"}]{#struct_0_16776_x1311_x1662303659}[失败]{style="font-family:宋体"}[.]{lang="EN-US"}
+获取BSS *BSSID*失败.
 
-[[Failed to create a BSS.]{lang="EN-US"}]{#struct_0_16776_x1311_x1417867669}
+Failed to create a BSS.
 
-[[创建]{style="font-family:宋体"}[BSS]{lang="EN-US"}]{#struct_0_16776_x1311_1421655163}[失败。]{style="font-family:宋体"}
+创建BSS失败。
 
-[[Received unsupported queue message.]{lang="EN-US"}]{#struct_0_16776_x1311_2037175751}
+Received unsupported queue message.
 
-[[收到了不支持的队列消息]{style="font-family:宋体"}]{#struct_0_16776_x1311_x1662303662}
+收到了不支持的队列消息
 
-[[\[BSSID: *BSSID*\] Failed to send add wlan message to downlink device.]{lang="EN-US"}]{#struct_0_16776_x1311_1667180510}
+BSSID: *BSSID* Failed to send add wlan message to downlink device.
 
-[[发送下行]{style="font-family:宋体"}[add wlan]{lang="EN-US"}]{#struct_0_16776_x1311_934761387}[消息失败]{style="font-family:宋体"}
+发送下行add wlan消息失败
 
-[[\[BSSID: *BSSID*\] Failed to send delete wlan message to downlink device.]{lang="EN-US"}]{#struct_0_16776_x1311_x1080103782}
+BSSID: *BSSID* Failed to send delete wlan message to downlink device.
 
-[[发送下行]{style="font-family:宋体"}[delete wlan]{lang="EN-US"}]{#struct_0_16776_x1311_x1662303661}[消息失败]{style="font-family:宋体"}
+发送下行delete wlan消息失败
 
-[[Failed to disable packet socket for BSS *BSSID*.]{lang="EN-US"}]{#struct_0_16776_x1311_x1061702845}
+Failed to disable packet socket for BSS *BSSID*.
 
-[[去使能]{style="font-family:宋体"}[BSS *BSSID*]{lang="EN-US"}]{#struct_0_16776_x1311_x1082084142}[的]{style="font-family:宋体"}[packet socket ]{lang="EN-US"}[失败]{style="font-family:宋体"}
+去使能BSS *BSSID*的packet socket 失败
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Failed to send add mobile message to downlink device.]{lang="EN-US"}]{#struct_0_16776_x1311_x809384194}
+MAC: *mac-address*, BSSID: *BSSID* Failed to send add mobile message to downlink device.
 
-[[下同步]{style="font-family:宋体"}[add mobile]{lang="EN-US"}]{#struct_0_16776_x1311_x1662303664}[消息失败]{style="font-family:宋体"}
+下同步add mobile消息失败
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Failed to send add mobile message to uplink device.]{lang="EN-US"}]{#struct_0_16776_x1311_x1821217732}
+MAC: *mac-address*, BSSID: *BSSID* Failed to send add mobile message to uplink device.
 
-[[上同步]{style="font-family:宋体"}[add mobile]{lang="EN-US"}]{#struct_0_16776_x1311_x1484843848}[消息失败]{style="font-family:宋体"}
+上同步add mobile消息失败
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] Failed to send delete mobile message to downlink device.]{lang="EN-US"}]{#struct_0_16776_x1311_x1794555661}
+MAC: *mac-address*, BSSID: *BSSID* Failed to send delete mobile message to downlink device.
 
-[[下同步]{style="font-family:宋体"}[delete mobile]{lang="EN-US"}]{#struct_0_16776_x1311_x1662303663}[消息失败]{style="font-family:宋体"}
+下同步delete mobile消息失败
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] Failed to send delete mobile message to uplink device.]{lang="EN-US"}]{#struct_0_16776_x1311_101096569}
+MAC: *mac-address*, BSSID: *BSSID* Failed to send delete mobile message to uplink device.
 
-[[上同步]{style="font-family:宋体"}[delete mobile]{lang="EN-US"}]{#struct_0_16776_x1311_x807902760}[消息失败]{style="font-family:宋体"}
+上同步delete mobile消息失败
 
-[[Failed to process radio up event.]{lang="EN-US"}]{#struct_0_16776_x1311_1183844491}
+Failed to process radio up event.
 
-[[处理]{style="font-family:宋体"}[radio up]{lang="EN-US"}]{#struct_0_16776_x1311_x1662303666}[事件失败]{style="font-family:宋体"}
+处理radio up事件失败
 
-[ ]{lang="EN-US"}
+表1-2 debugging wlan client error命令输出信息描述表(仅FAT AP)
 
-[[表1-2 ]{lang="EN-US"}[debugging wlan client]{lang="EN-US"}[ error]{lang="EN-US"}]{#struct_0_16776_x1311_x658418318}[命令输出信息描述表]{style="font-family:黑体"}[(]{lang="EN-US"}[仅]{style="font-family:黑体"}[FAT AP)]{lang="EN-US"}
+字段
 
-[]{#table_struct_0_x1317341160}[[字段]{style="font-family:黑体"}]{#struct_0_16776_x1311_x816867487}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16776_x1311_1244809156}
+Failed to process a probe request: The frame doesn\'t contain mandatory IE.
 
-[[Failed to process a probe request: The frame doesn\'t contain mandatory IE.]{lang="EN-US"}]{#struct_0_16776_x1311_411917380}
+处理探测请求帧失败，由于报文没有包含强制IE元素
 
-[[处理探测请求帧失败，由于报文没有包含强制]{style="font-family:宋体"}[IE]{lang="EN-US"}]{#struct_0_16776_x1311_362189296}[元素]{style="font-family:宋体"}
+Failed to get the BSS: Invalid BSSID.
 
-[[Failed to get the BSS: Invalid BSSID.]{lang="EN-US"}]{#struct_0_16776_x1311_1099502373}
+获取BSS失败：BSSID无效
 
-[[获取]{style="font-family:宋体"}[BSS]{lang="EN-US"}]{#struct_0_16776_x1311_x1662303665}[失败：]{style="font-family:宋体"}[BSSID]{lang="EN-US"}[无效]{style="font-family:宋体"}
+Failed to decode the SSID IE: The length of the SSID exceeds the upper limit.
 
-[[Failed to decode the SSID IE: The length of the SSID exceeds the upper limit.]{lang="EN-US"}]{#struct_0_16776_x1311_907665623}
+解析SSID IE失败，由于SSID 长度大于上限
 
-[[解析]{style="font-family:宋体"}[SSID IE]{lang="EN-US"}]{#struct_0_16776_x1311_281021964}[失败，由于]{style="font-family:宋体"}[SSID ]{lang="EN-US"}[长度大于上限]{style="font-family:宋体"}
+Failed to decode the supported rates IE: The length exceeds the upper limit.
 
-[[Failed to decode the supported rates IE: The length exceeds the upper limit.]{lang="EN-US"}]{#struct_0_16776_x1311_2034575515}
+解析Supported rates IE失败，由于rates长度大于上限
 
-[[解析]{style="font-family:宋体"}[Supported rates IE]{lang="EN-US"}]{#struct_0_16776_x1311_x954613323}[失败，由于]{style="font-family:宋体"}[rates]{lang="EN-US"}[长度大于上限]{style="font-family:宋体"}
+Failed to decode the FH Parameter Set IE: Invalid length.
 
-[[Failed to decode the FH Parameter Set IE: Invalid length.]{lang="EN-US"}]{#struct_0_16776_x1311_x918186760}
+解析FH Parameter Set IE失败，由于FH Parameter Set长度为非标准长度
 
-[[解析]{style="font-family:宋体"}[FH Parameter Set IE]{lang="EN-US"}]{#struct_0_16776_x1311_522369866}[失败，由于]{style="font-family:宋体"}[FH Parameter Set]{lang="EN-US"}[长度为非标准长度]{style="font-family:宋体"}
+Failed to decode the DSSS Parameter Set IE: Invalid length.
 
-[[Failed to decode the DSSS Parameter Set IE: Invalid length.]{lang="EN-US"}]{#struct_0_16776_x1311_801556604}
+解析DSSS Parameter Set IE失败，由于DSSS Parameter Set长度为非标准长度
 
-[[解析]{style="font-family:宋体"}[DSSS Parameter Set IE]{lang="EN-US"}]{#struct_0_16776_x1311_x1070200933}[失败，由于]{style="font-family:宋体"}[DSSS Parameter Set]{lang="EN-US"}[长度为非标准长度]{style="font-family:宋体"}
+Failed to decode the CF Parameter Set IE: Invalid length.
 
-[[Failed to decode the CF Parameter Set IE: Invalid length.]{lang="EN-US"}]{#struct_0_16776_x1311_676348502}
+解析CF Parameter Set IE失败，由于CF Parameter Set长度为非标准长度
 
-[[解析]{style="font-family:宋体"}[CF Parameter Set IE]{lang="EN-US"}]{#struct_0_16776_x1311_x204964761}[失败，由于]{style="font-family:宋体"}[CF Parameter Set]{lang="EN-US"}[长度为非标准长度]{style="font-family:宋体"}
+Failed to decode the TIM IE: Invalid length.
 
-[[Failed to decode the TIM IE: Invalid length.]{lang="EN-US"}]{#struct_0_16776_x1311_594592813}
+解析TIM IE失败，由于TIM长度为非标准长度
 
-[[解析]{style="font-family:宋体"}[TIM IE]{lang="EN-US"}]{#struct_0_16776_x1311_x1479813470}[失败，由于]{style="font-family:宋体"}[TIM]{lang="EN-US"}[长度为非标准长度]{style="font-family:宋体"}
+Failed to decode the IBSS Parameter Set IE: Invalid length.
 
-[[Failed to decode the IBSS Parameter Set IE: Invalid length.]{lang="EN-US"}]{#struct_0_16776_x1311_535453622}
+解析IBSS Parameter Set IE失败，由于IBSS Parameter Set长度为非标准长度
 
-[[解析]{style="font-family:宋体"}[IBSS Parameter Set IE]{lang="EN-US"}]{#struct_0_16776_x1311_791501006}[失败，由于]{style="font-family:宋体"}[IBSS Parameter Set]{lang="EN-US"}[长度为非标准长度]{style="font-family:宋体"}
+Failed to decode the Country IE: Invalid length.
 
-[[Failed to decode the Country IE: Invalid length.]{lang="EN-US"}]{#struct_0_16776_x1311_x1930237023}
+解析Country IE失败，由于Country长度为非标准长度
 
-[[解析]{style="font-family:宋体"}[Country IE]{lang="EN-US"}]{#struct_0_16776_x1311_676348503}[失败，由于]{style="font-family:宋体"}[Country]{lang="EN-US"}[长度为非标准长度]{style="font-family:宋体"}
+Failed to decode the Hopping Pattern Parameters IE: Invalid length.
 
-[[Failed to decode the Hopping Pattern Parameters IE: Invalid length.]{lang="EN-US"}]{#struct_0_16776_x1311_x204964762}
+解析Hopping Pattern Parameters IE失败，由于Hopping Pattern Parameters长度为非标准长度
 
-[[解析]{style="font-family:宋体"}[Hopping Pattern Parameters IE]{lang="EN-US"}]{#struct_0_16776_x1311_594527277}[失败，由于]{style="font-family:宋体"}[Hopping Pattern Parameters]{lang="EN-US"}[长度为非标准长度]{style="font-family:宋体"}
+Failed to decode the BSS Load IE: Invalid length.
 
-[[Failed to decode the BSS Load IE: Invalid length.]{lang="EN-US"}]{#struct_0_16776_x1311_x1862645289}
+解析BSS Load IE失败，由于BSS Load长度为非标准长度
 
-[[解析]{style="font-family:宋体"}[BSS Load IE]{lang="EN-US"}]{#struct_0_16776_x1311_1879324465}[失败，由于]{style="font-family:宋体"}[BSS Load]{lang="EN-US"}[长度为非标准长度]{style="font-family:宋体"}
+Failed to decode the Challenge text IE: The length exceeds the upper limit or is equal to 0.
 
-[[Failed to decode the Challenge text IE: The length exceeds the upper limit or is equal to 0.]{lang="EN-US"}]{#struct_0_16776_x1311_676348500}
+解析Challenge text IE失败，由于Challenge text 长度大于上限 或 等于0
 
-[[解析]{style="font-family:宋体"}[Challenge text IE]{lang="EN-US"}]{#struct_0_16776_x1311_x204964759}[失败，由于]{style="font-family:宋体"}[Challenge text ]{lang="EN-US"}[长度大于上限]{style="font-family:宋体"} [或]{style="font-family:宋体"} [等于]{style="font-family:宋体"}[0]{lang="EN-US"}
+Failed to decode the Power Constraint IE: Invalid length.
 
-[[Failed to decode the Power Constraint IE: Invalid length.]{lang="EN-US"}]{#struct_0_16776_x1311_595117104}
+解析Power Constraint IE失败，由于Power Constraint长度为非标准长度
 
-[[解析]{style="font-family:宋体"}[Power Constraint IE]{lang="EN-US"}]{#struct_0_16776_x1311_x1468686513}[失败，由于]{style="font-family:宋体"}[Power Constraint]{lang="EN-US"}[长度为非标准长度]{style="font-family:宋体"}
+Failed to decode the TPC Report IE: Invalid  length.
 
-[[Failed to decode the TPC Report IE: Invalid  length.]{lang="EN-US"}]{#struct_0_16776_x1311_1243723382}
+解析TPC Report IE失败，由于TPC Report长度为非标准长度
 
-[[解析]{style="font-family:宋体"}[TPC Report IE]{lang="EN-US"}]{#struct_0_16776_x1311_x1351758126}[失败，由于]{style="font-family:宋体"}[TPC Report]{lang="EN-US"}[长度为非标准长度]{style="font-family:宋体"}
+Failed to decode the Supported Channels IE: Invalid length.
 
-[[Failed to decode the Supported Channels IE: Invalid length.]{lang="EN-US"}]{#struct_0_16776_x1311_1456422816}
+解析Supported Channels IE失败，由于Supported Channels长度为非标准长度
 
-[[解析]{style="font-family:宋体"}[Supported Channels IE]{lang="EN-US"}]{#struct_0_16776_x1311_676348501}[失败，由于]{style="font-family:宋体"}[Supported Channels]{lang="EN-US"}[长度为非标准长度]{style="font-family:宋体"}
+Failed to decode the Quiet IE: Invalid  length.
 
-[[Failed to decode the Quiet IE: Invalid  length.]{lang="EN-US"}]{#struct_0_16776_x1311_x204964760}
+无效Quiet长度：
 
-[[无效]{style="font-family:宋体"}[Quiet]{lang="EN-US"}]{#struct_0_16776_x1311_594658349}[长度：]{style="font-family:宋体"}
+解析后的长度为非标准长度
 
-[[解析后的长度为非标准长度]{style="font-family:宋体"}]{#struct_0_16776_x1311_x1964851563}
+Failed to decode the ERP IE: Invalid length.
 
-[[Failed to decode the ERP IE: Invalid length.]{lang="EN-US"}]{#struct_0_16776_x1311_x1744075862}
+解析ERP IE失败，由于ERP长度为非标准长度
 
-[[解析]{style="font-family:宋体"}[ERP IE]{lang="EN-US"}]{#struct_0_16776_x1311_676348498}[失败，由于]{style="font-family:宋体"}[ERP]{lang="EN-US"}[长度为非标准长度]{style="font-family:宋体"}
+Failed to decode the HT Capabilities IE: Invalid length.
 
-[[Failed to decode the HT Capabilities IE: Invalid length.]{lang="EN-US"}]{#struct_0_16776_x1311_1788086214}
+解析HT Capabilities IE失败，由于HT Capabilities长度为非标准长度
 
-[[解析]{style="font-family:宋体"}[HT Capabilities IE]{lang="EN-US"}]{#struct_0_16776_x1311_x725262168}[失败，由于]{style="font-family:宋体"}[HT Capabilities]{lang="EN-US"}[长度为非标准长度]{style="font-family:宋体"}
+Failed to decode the RSN Capabilities IE: The length is below the lower limit.
 
-[[Failed to decode the RSN Capabilities IE: The length is below the lower limit.]{lang="EN-US"}]{#struct_0_16776_x1311_x1341855259}
+解析RSN IE失败，由于RSN长度小于下限
 
-[[解析]{style="font-family:宋体"}[RSN IE]{lang="EN-US"}]{#struct_0_16776_x1311_676348499}[失败，由于]{style="font-family:宋体"}[RSN]{lang="EN-US"}[长度小于下限]{style="font-family:宋体"}
+Failed to decode the Extended Supported Rates IE: The length is equal to 0.
 
-[[Failed to decode the Extended Supported Rates IE: The length is equal to 0.]{lang="EN-US"}]{#struct_0_16776_x1311_1788086213}
+解析Extended Supported Rates IE失败，由于Extended Supported Rates长度为0
 
-[[解析]{style="font-family:宋体"}[Extended Supported Rates IE]{lang="EN-US"}]{#struct_0_16776_x1311_x724803416}[失败，由于]{style="font-family:宋体"}[Extended Supported Rates]{lang="EN-US"}[长度为]{style="font-family:宋体"}[0]{lang="EN-US"}
+Failed to decode the HT Operation IE: Invalid length.
 
-[[Failed to decode the HT Operation IE: Invalid length.]{lang="EN-US"}]{#struct_0_16776_x1311_x568959059}
+解析HT Operation IE失败，由于HT Operation长度为非标准长度
 
-[[解析]{style="font-family:宋体"}[HT Operation IE]{lang="EN-US"}]{#struct_0_16776_x1311_1888088422}[失败，由于]{style="font-family:宋体"}[HT Operation]{lang="EN-US"}[长度为非标准长度]{style="font-family:宋体"}
+Failed to decode the 20/40 BSS Coexistence IE: Invalid length.
 
-[[Failed to decode the 20/40 BSS Coexistence IE: Invalid length.]{lang="EN-US"}]{#struct_0_16776_x1311_676348496}
+解析20/40 BSS Coexistence IE失败，由于20/40 BSS Coexistence长度为非标准长度
 
-[[解析]{style="font-family:宋体"}[20/40 BSS Coexistence IE]{lang="EN-US"}]{#struct_0_16776_x1311_1788086216}[失败，由于]{style="font-family:宋体"}[20/40 BSS Coexistence]{lang="EN-US"}[长度为非标准长度]{style="font-family:宋体"}
+Failed to decode the 20/40 BSS Intolerant Channel Report IE: The length is smaller than 1.
 
-[[Failed to decode the 20/40 BSS Intolerant Channel Report IE: The length is smaller than 1.]{lang="EN-US"}]{#struct_0_16776_x1311_x725131096}
+解析20/40 BSS Intolerant Channel Report IE失败，由于20/40 BSS Intolerant Channel Report长度小于1
 
-[[解析]{style="font-family:宋体"}[20/40 BSS Intolerant Channel Report IE]{lang="EN-US"}]{#struct_0_16776_x1311_x1722583706}[失败，由于]{style="font-family:宋体"}[20/40 BSS Intolerant Channel Report]{lang="EN-US"}[长度小于]{style="font-family:
-  宋体"}[1]{lang="EN-US"}
+Failed to decode the Extended Capabilities IE: Invalid length.
 
-[[Failed to decode the Extended Capabilities IE: Invalid length.]{lang="EN-US"}]{#struct_0_16776_x1311_676348497}
+解析Extended Capabilities IE失败，由于Extended Capabilities长度为非标准长度
 
-[[解析]{style="font-family:宋体"}[Extended Capabilities IE]{lang="EN-US"}]{#struct_0_16776_x1311_1788086215}[失败，由于]{style="font-family:宋体"}[Extended Capabilities]{lang="EN-US"}[长度为非标准长度]{style="font-family:宋体"}
+Failed to decode the Power Capability IE: Invalid length.
 
-[[Failed to decode the Power Capability IE: Invalid length.]{lang="EN-US"}]{#struct_0_16776_x1311_x725196632}
+解析Power Capability IE失败，由于Power Capability长度为非标准长度
 
-[[解析]{style="font-family:宋体"}[Power Capability IE]{lang="EN-US"}]{#struct_0_16776_x1311_x151185505}[失败，由于]{style="font-family:宋体"}[Power Capability]{lang="EN-US"}[长度为非标准长度]{style="font-family:宋体"}
+APID: *APID[, *Radio ID*: RadioID, *Session ID*: SessionID*] Failed to process radio down event.
 
-[[\[APID: *APID[, ]{style="color:#17365D"}*Radio ID*[: ]{style="color:#17365D"}RadioID[, ]{style="color:#17365D"}*Session ID*[: ]{style="color:#17365D"}SessionID*\] Failed to process radio down event.]{lang="EN-US"}]{#struct_0_16776_x1311_676348494}
+处理Radio Down事件失败
 
-[[处理]{style="font-family:宋体"}[Radio Down]{lang="EN-US"}]{#struct_0_16776_x1311_1788086218}[事件失败]{style="font-family:宋体"}
+表1-3 debugging wlan client event命令输出信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表1-3 ]{lang="EN-US"}[debugging wlan client]{lang="EN-US"}[ event]{lang="EN-US"}]{#struct_0_16776_x1311_x725524312}[命令输出信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x1295324510}[[字段]{style="font-family:黑体"}]{#struct_0_16776_x1311_x137613621}
+Can\'t create BSS: The AP is in down state.
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16776_x1311_x865773714}
+由于AP处于 Down状态，不满足创建BSS的条件
 
-[[Can\'t create BSS: The AP is in down state.]{lang="EN-US"}]{#struct_0_16776_x1311_x1177125063}
+Can\'t create BSS: The service template is disabled.
 
-[[由于]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_16776_x1311_x1643413359}[处于]{style="font-family:宋体"} [Down]{lang="EN-US"}[状态，不满足创建]{style="font-family:宋体"}[BSS]{lang="EN-US"}[的条件]{style="font-family:宋体"}
+由于服务模板未使能，不满足创建BSS的条件
 
-[[Can\'t create BSS: The service template is disabled.]{lang="EN-US"}]{#struct_0_16776_x1311_x1156331307}
+APID *APID[, *Radio ID*RadioID, *WLAN ID*WlanID*] Received update BSS message.
 
-[[由于服务模板未使能，不满足创建]{style="font-family:宋体"}[BSS]{lang="EN-US"}]{#struct_0_16776_x1311_x593643972}[的条件]{style="font-family:宋体"}
+成功收到Update BSS消息
 
-[[\[APID *APID[, ]{style="color:#17365D"}*Radio ID*[ ]{style="color:#17365D"}RadioID[, ]{style="color:#17365D"}*WLAN ID*[ ]{style="color:#17365D"}WlanID*\] Received update BSS message.]{lang="EN-US"}]{#struct_0_16776_x1311_676348495}
+APID *APID[, *Radio ID*RadioID*] Processed AP create event successfully.
 
-[[成功收到]{style="font-family:宋体"}[Update BSS]{lang="EN-US"}]{#struct_0_16776_x1311_1788086217}[消息]{style="font-family:宋体"}
+处理AP Create事件成功
 
-[[\[APID *APID[, ]{style="color:#17365D"}*Radio ID*[ ]{style="color:#17365D"}RadioID*\] Processed AP create event successfully.]{lang="EN-US"}]{#struct_0_16776_x1311_x725065560}
+APID *APID[, *Radio ID*RadioID*] Processed radio down event successfully.
 
-[[处理]{style="font-family:宋体"}[AP Create]{lang="EN-US"}]{#struct_0_16776_x1311_x1336171872}[事件成功]{style="font-family:宋体"}
+处理Radio Down事件成功
 
-[[\[APID *APID[, ]{style="color:#17365D"}*Radio ID*[ ]{style="color:#17365D"}RadioID*\] Processed radio down event successfully.]{lang="EN-US"}]{#struct_0_16776_x1311_x408441293}
+APID *APID[, *Radio ID*RadioID, *WLAN ID*WlanID*] BSS already exists.
 
-[[处理]{style="font-family:宋体"}[Radio Down]{lang="EN-US"}]{#struct_0_16776_x1311_x1369479676}[事件成功]{style="font-family:宋体"}
+BSS已经存在
 
-[[\[APID *APID[, ]{style="color:#17365D"}*Radio ID*[ ]{style="color:#17365D"}RadioID[, ]{style="color:#17365D"}*WLAN ID*[ ]{style="color:#17365D"}WlanID*\] BSS already exists.]{lang="EN-US"}]{#struct_0_16776_x1311_x1139180021}
+APID *APID[, *Radio ID*RadioID*] Unsupported radio event *event*.
 
-[[BSS]{lang="EN-US"}]{#struct_0_16776_x1311_1865826902}[已经存在]{style="font-family:宋体"}
+无效的Radio事件*event*
 
-[[\[APID *APID[, ]{style="color:#17365D"}*Radio ID*[ ]{style="color:#17365D"}RadioID*\] Unsupported radio event *event*.]{lang="EN-US"}]{#struct_0_16776_x1311_38800998}
+APID *APID*  Unsupported AP event *event*.
 
-[[无效的]{style="font-family:宋体"}[Radio]{lang="EN-US"}]{#struct_0_16776_x1311_x1829554378}[事件]{style="font-family:宋体"}*[event]{lang="EN-US"}*
+无效的AP事件*event*
 
-[[\[APID *APID* \] Unsupported AP event *event*.]{lang="EN-US"}]{#struct_0_16776_x1311_x1573441474}
+APID: *APID* Received add wlan response message.
 
-[[无效的]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_16776_x1311_182208128}[事件]{style="font-family:宋体"}*[event]{lang="EN-US"}*
+收到add wlan响应消息
 
-[[\[APID: *APID*\] Received add wlan response message. ]{lang="EN-US"}]{#struct_0_16776_x1311_x1227839373}
+APID: *APID* Received delete wlan response message.
 
-[[收到]{style="font-family:宋体"}[add wlan]{lang="EN-US"}]{#struct_0_16776_x1311_x243370107}[响应消息]{style="font-family:宋体"}
+收到delete wlan响应消息
 
-[[\[APID: *APID*\] Received delete wlan response message. ]{lang="EN-US"}]{#struct_0_16776_x1311_1865826903}
+BSSID: *BSSID* Sent add wlan message to downlink device.
 
-[[收到]{style="font-family:宋体"}[delete wlan]{lang="EN-US"}]{#struct_0_16776_x1311_38735462}[响应消息]{style="font-family:宋体"}
+成功发送下行add wlan消息
 
-[[\[BSSID: *BSSID*\] Sent add wlan message to downlink device.]{lang="EN-US"}]{#struct_0_16776_x1311_x613097297}
+BSSID: *BSSID* Sent delete wlan message to downlink device.
 
-[[成功发送下行]{style="font-family:宋体"}[add wlan]{lang="EN-US"}]{#struct_0_16776_x1311_x583907764}[消息]{style="font-family:宋体"}
+成功发送下行delete wlan消息
 
-[[\[BSSID: *BSSID*\] Sent delete wlan message to downlink device.]{lang="EN-US"}]{#struct_0_16776_x1311_205431581}
+MAC: *mac-address*, BSSID: *BSSID* Sent add mobile message to downlink device.
 
-[[成功发送下行]{style="font-family:宋体"}[delete wlan]{lang="EN-US"}]{#struct_0_16776_x1311_x1560424219}[消息]{style="font-family:宋体"}
+下同步add mobile消息成功
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Sent add mobile message to downlink device.]{lang="EN-US"}]{#struct_0_16776_x1311_x1631121686}
+MAC: *mac-address*, BSSID: *BSSID* Received add mobile response message from downlink device.
 
-[[下同步]{style="font-family:宋体"}[add mobile]{lang="EN-US"}]{#struct_0_16776_x1311_764735724}[消息成功]{style="font-family:宋体"}
+收到下同步add mobile回应
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Received add mobile response message from downlink device.]{lang="EN-US"}]{#struct_0_16776_x1311_1865826900}
+MAC: *mac-address*, BSSID: *BSSID* Can\'t send add mobile message to uplink device: Reached the end of the IOCTL tunnel.
 
-[[收到下同步]{style="font-family:宋体"}[add mobile]{lang="EN-US"}]{#struct_0_16776_x1311_38669926}[回应]{style="font-family:宋体"}
+因为已经是顶层，不能发送上同步add mobile消息
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Can\'t send add mobile message to uplink device: Reached the end of the IOCTL tunnel.]{lang="EN-US"}]{#struct_0_16776_x1311_1334062332}
+MAC: *mac-address*, BSSID: *BSSID* Sent add mobile message to uplink device.
 
-[[因为已经是顶层，不能发送上同步]{style="font-family:宋体"}[add mobile]{lang="EN-US"}]{#struct_0_16776_x1311_x512426414}[消息]{style="font-family:宋体"}
+上同步add mobile消息成功
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Sent add mobile message to uplink device.]{lang="EN-US"}]{#struct_0_16776_x1311_1865826901}
+MAC: *mac-address*, BSSID: *BSSID* Received add mobile response message from the uplink device.
 
-[[上同步]{style="font-family:宋体"}[add mobile]{lang="EN-US"}]{#struct_0_16776_x1311_38604390}[消息成功]{style="font-family:宋体"}
+收到上同步add mobile回应
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Received add mobile response message from the uplink device.]{lang="EN-US"}]{#struct_0_16776_x1311_592909204}
+MAC: *mac-address*, BSSID: *BSSID* Sent delete mobile message to downlink device.
 
-[[收到上同步]{style="font-family:宋体"}[add mobile]{lang="EN-US"}]{#struct_0_16776_x1311_x1470559218}[回应]{style="font-family:宋体"}
+下同步delete mobile消息成功
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Sent delete mobile message to downlink device.]{lang="EN-US"}]{#struct_0_16776_x1311_119464799}
+APID :*APID* Received delete mobile response message from downlink device.
 
-[[下同步]{style="font-family:宋体"}[delete mobile]{lang="EN-US"}]{#struct_0_16776_x1311_1865826898}[消息成功]{style="font-family:宋体"}
+收到下同步delete mobile回应
 
-[[\[APID :*APID*\] ]{lang="EN-US"}[Received delete mobile response message from downlink device.]{lang="EN-US"}]{#struct_0_16776_x1311_x1917120915}
+MAC: *mac-address*, BSSID: *BSSID* Can\'t send delete mobile message to uplink device: Reached the end of the IOCTL tunnel.
 
-[[收到下同步]{style="font-family:宋体"}[delete mobile]{lang="EN-US"}]{#struct_0_16776_x1311_x1148536773}[回应]{style="font-family:宋体"}
+因为已经是顶层，不能发送上同步delete mobile消息
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Can\'t send delete mobile message to uplink device: Reached the end of the IOCTL tunnel.]{lang="EN-US"}]{#struct_0_16776_x1311_x707635027}
+MAC: *mac-address*, BSSID: *BSSID* Sent delete mobile message to uplink device.
 
-[[因为已经是顶层，不能发送上同步]{style="font-family:宋体"}[delete mobile]{lang="EN-US"}]{#struct_0_16776_x1311_1865826899}[消息]{style="font-family:宋体"}
+上同步delete mobile消息成功
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Sent delete mobile message to uplink device.]{lang="EN-US"}]{#struct_0_16776_x1311_x1917186451}
+APID: *APID* Received delete mobile response message from uplink device.
 
-[[上同步]{style="font-family:宋体"}[delete mobile]{lang="EN-US"}]{#struct_0_16776_x1311_x2002888008}[消息成功]{style="font-family:宋体"}
+收到上同步delete mobile回应
 
-[[\[APID: *APID*\] ]{lang="EN-US"}[Received delete mobile response message from uplink device.]{lang="EN-US"}]{#struct_0_16776_x1311_x745654031}
+表1-4 debugging wlan client event命令输出信息描述表(仅FAT AP)
 
-[[收到上同步]{style="font-family:宋体"}[delete mobile]{lang="EN-US"}]{#struct_0_16776_x1311_1865826896}[回应]{style="font-family:宋体"}
+字段
 
-[ ]{lang="EN-US"}
+描述
 
-[[表1-4 ]{lang="EN-US"}[debugging wlan client]{lang="EN-US"}[ event]{lang="EN-US"}]{#struct_0_16776_x1311_x1917251987}[命令输出信息描述表]{style="font-family:黑体"}[(]{lang="EN-US"}[仅]{style="font-family:黑体"}[FAT AP)]{lang="EN-US"}
+APID: *APID* Failed to reply to the broadcast probe request: The AP is not allowed to reply to broadcast probe requests.
 
-[]{#table_struct_0_x1297656834}[[字段]{style="font-family:黑体"}]{#struct_0_16776_x1311_x1333802278}
+AP设置不允许回复广播探查
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16776_x1311_x783019859}
+APID *APID[, *Radio ID*RadioID*] Processed radio up event successfully.
 
-[[\[APID: *APID*\] Failed to reply to the broadcast probe request: The AP is not allowed to reply to broadcast probe requests.]{lang="EN-US"}]{#struct_0_16776_x1311_x1035004987}
+处理Radio Up事件成功
 
-[[AP]{lang="EN-US"}]{#struct_0_16776_x1311_x164544340}[设置不允许回复广播探查]{style="font-family:宋体"}
+APID *APID[, *Session ID*SessionID*] Processed AP down event successfully.
 
-[[\[APID *APID[, ]{style="color:#17365D"}*Radio ID*[ ]{style="color:#17365D"}RadioID*\] Processed radio up event successfully.]{lang="EN-US"}]{#struct_0_16776_x1311_x1088359531}
+处理AP Down事件成功
 
-[[处理]{style="font-family:宋体"}[Radio Up]{lang="EN-US"}]{#struct_0_16776_x1311_x2007997868}[事件成功]{style="font-family:宋体"}
+BSSID: *BSSID* Processing update beacon.
 
-[[\[APID *APID[, ]{style="color:#17365D"}*Session ID*[ ]{style="color:#17365D"}SessionID*\] Processed AP down event successfully.]{lang="EN-US"}]{#struct_0_16776_x1311_1865826897}
+处理Update beacon
 
-[[处理]{style="font-family:宋体"}[AP Down]{lang="EN-US"}]{#struct_0_16776_x1311_x1917317523}[事件成功]{style="font-family:宋体"}
+表1-5 debugging wlan client fsm命令输出信息描述表
 
-[[\[BSSID: *BSSID*\] ]{lang="EN-US"}[Processing update beacon.]{lang="EN-US"}]{#struct_0_16776_x1311_x1408013354}
+字段
 
-[[处理]{style="font-family:宋体"}[Update beacon]{lang="EN-US"}]{#struct_0_16776_x1311_x961036885}
+描述
 
-[ ]{lang="EN-US"}
+Changed the client\'s status from *state1* to*state2*.
 
-[[表1-5 ]{lang="EN-US"}[debugging wlan client]{lang="EN-US"}[ fsm]{lang="EN-US"}]{#struct_0_16776_x1311_1642847226}[命令输出信息描述表]{style="font-family:黑体"}
+Client状态从*state1*迁移到state2
 
-[]{#table_struct_0_x1304356392}[[字段]{style="font-family:黑体"}]{#struct_0_16776_x1311_x1638663224}
+state1和state2*取值*如下：
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16776_x1311_x356218967}
+·UnAuth：未认证状态
 
-[[Changed the client\'s status from *state1* to*[ ]{style="color:#1F497D"}state2*.]{lang="EN-US"}]{#struct_0_16776_x1311_1803392697}
+·Auth：认证状态
 
-[[Client]{lang="EN-US"}]{#struct_0_16776_x1311_244923088}[状态从]{style="font-family:宋体"}*[state1]{lang="EN-US"}*[迁移到]{style="font-family:宋体"}[state2]{lang="EN-US"}
+·UserAuth：用户认证状态
 
-[[state1]{lang="EN-US"}]{#struct_0_16776_x1311_x1981073637}[和]{style="font-family:宋体"}[state2]{lang="EN-US"}*[取值]{style="font-family:宋体"}*[如下：]{style="font-family:宋体"}
+·Run： Run状态
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UnAuth]{lang="EN-US"}]{#struct_0_16776_x1311_1865826894}[：未认证状态]{style="font-family:宋体"}
+MAC: *MAC* BSSID: *BSSID* Received disassociation in the Run state: Reason code=*reasoncode*.
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Auth]{lang="EN-US"}]{#struct_0_16776_x1311_x1917383059}[：]{lang="EN-US" style="font-family:宋体"}[ ]{lang="EN-US"}[认证状态]{lang="EN-US" style="font-family:宋体"}
+由于*reasoncode*，收到处于Run状态的客户端的去关联报文
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[UserAuth]{lang="EN-US"}]{#struct_0_16776_x1311_x2044002412}[：用户认证状态]{style="font-family:宋体"}
+【举例】
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Run]{lang="EN-US"}]{#struct_0_16776_x1311_1610188749}[：]{lang="EN-US" style="font-family:宋体"}[ Run]{lang="EN-US"}[状态]{lang="EN-US" style="font-family:宋体"}
+\# 打开stamgr模块的所有类型的调试开关。
 
-[[\[MAC: *MAC* BSSID: *BSSID*\] Received disassociation in the Run state: Reason code=*reasoncode*.]{lang="EN-US"}]{#struct_0_16776_x1311_1853991393}
+\<Sysname\> debugging wlan client all
 
-[[由于]{style="font-family:宋体"}*[reasoncode]{lang="EN-US"}*]{#struct_0_16776_x1311_610053976}[，收到处于]{style="font-family:宋体"}[Run]{lang="EN-US"}[状态的客户端的去关联报文]{style="font-family:宋体"}
+APID: *APID* Deleted an AP.
 
-[ ]{lang="EN-US"}
+*[//[APID: 1]*]*删除AP成功。*
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16776_x1311_x774430963}
+\# 打开stamgr模块的状态机相关的调试开关。
 
-[[\# ]{lang="EN-US"}]{#struct_0_16776_x1311_607781508}[打开]{style="font-family:宋体"}[stamgr]{lang="EN-US"}[模块的所有类型的调试开关。]{style="font-family:宋体"}
+\<Sysname\> debugging wlan client fsm
 
-[[\<Sysname\> debugging wlan client all]{lang="EN-US"}]{#struct_0_16776_x1311_1865826895}
+Changed the client\'s state from UnAuth to**Auth.
 
-[\[APID: *APID*\] Deleted an AP.]{lang="EN-US"}
-
-[*[//\[APID: 1\]]{lang="EN-US"}*]{#struct_0_16776_x1311_x1917448595}*[删除]{style="font-family:宋体"}[AP]{lang="EN-US"}[成功。]{style="font-family:宋体"}*
-
-[[\# ]{lang="EN-US"}]{#struct_0_16776_x1311_x1994720887}[打开]{style="font-family:宋体"}[stamgr]{lang="EN-US"}[模块的状态机相关的调试开关。]{style="font-family:宋体"}
-
-[[\<Sysname\> debugging wlan client fsm]{lang="EN-US"}]{#struct_0_16776_x1311_x987193011}
-
-[Changed the client\'s state from UnAuth to*[ ]{style="color:#1F497D"}*Auth.]{lang="EN-US"}
-
-[*[//Client]{lang="EN-US"}*]{#struct_0_16776_x1311_1172164557}*[的状态由未认证状态迁移到了认证状态。]{style="font-family:宋体"}*
-
-::: {#-1177942419 .myid}
-[]{#_Toc404794857}[]{#struct_0_16776_x1311_x429717671}
+*[//Client*]*的状态由未认证状态迁移到了认证状态。*
 
 **WLAN接入 \-- WLAN接入调试命令 \-- debugging wlan client mac**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_16776_x1311_x2041017121}
+【命令】
 
-[**[debugging wlan client mac ]{lang="EN-US" style="color:black"}***[mac-address]{lang="EN-US"}*]{#struct_0_16776_x1311_920732007}
+**[debugging wlan client mac ***mac-address*]
 
-[**[undo debugging wlan client mac ]{lang="EN-US" style="color:black"}**]{#struct_0_16776_x1311_900350484}
+**[undo debugging wlan client mac **]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_16776_x1311_1299452887}
+【视图】
 
-[[任意视图]{style="font-family:宋体"}]{#struct_0_16776_x1311_1415999227}
+任意视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_16776_x1311_x216583111}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_16776_x1311_x90488234}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_16776_x1311_1089734828}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_16776_x1311_x547665537}
+【参数】
 
-[*[mac-address]{lang="EN-US" style="color:black"}*]{#struct_0_16776_x1311_1589818301}[：]{style="font-family:宋体"}[客户端]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址。]{style="font-family:宋体"}
+*[mac-address*]：客户端MAC地址。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_16776_x1311_1379979665}
+【描述】
 
-[**[debugging wlan client mac]{lang="EN-US" style="color:windowtext"}**]{#struct_0_16776_x1311_x1724835217}[用来基于客户端]{style="font-family:宋体;color:windowtext"}[MAC]{lang="EN-US" style="color:windowtext"}[地址打开调试开关。]{style="font-family:宋体;
-color:windowtext"}**[undo ]{lang="EN-US" style="color:windowtext"}[debugging wlan client mac]{lang="EN-US" style="color:windowtext"}**[用来关闭指定]{style="font-family:宋体;color:windowtext"}[MAC]{lang="EN-US" style="color:windowtext"}[地址的客户端的调试开关。]{style="font-family:宋体;color:windowtext"}
+**[debugging wlan client mac**]用来基于客户端MAC地址打开调试开关。**undo debugging wlan client mac**用来关闭指定MAC地址的客户端的调试开关。
 
-[[缺省情况下，客户端的调试信息开关处于关闭状态]{style="font-family:宋体;color:windowtext"}]{#struct_0_16776_x1311_1262920764}
+缺省情况下，客户端的调试信息开关处于关闭状态
 
-[[表1-6 ]{lang="EN-US"}[debugging wlan client mac error]{lang="EN-US"}]{#struct_0_16776_x1311_693523111}[命令输出信息描述表（仅]{style="font-family:黑体"}[AC]{lang="EN-US"}[）]{style="font-family:黑体"}
+表1-6 debugging wlan client mac error命令输出信息描述表（仅AC）
 
-[]{#table_struct_0_x1301150552}[[字段]{style="font-family:黑体"}]{#struct_0_16776_x1311_1314161338}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16776_x1311_172789866}
+描述
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Failed to send add mobile message to the uplink device.]{lang="EN-US"}]{#struct_0_16776_x1311_x90488233}
+MAC: *mac-address*, BSSID: *BSSID* Failed to send add mobile message to the uplink device.
 
-[[Add Mobile]{lang="EN-US"}]{#struct_0_16776_x1311_1089734833}[上行同步失败。]{style="font-family:宋体"}
+Add Mobile上行同步失败。
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Failed to fill VLAN information to the add mobile message.]{lang="EN-US"}]{#struct_0_16776_x1311_x547206784}
+MAC: *mac-address*, BSSID: *BSSID* Failed to fill VLAN information to the add mobile message.
 
-[[Add Mobile]{lang="EN-US"}]{#struct_0_16776_x1311_1597592833}[消息中填充]{style="font-family:宋体"}[VLAN]{lang="EN-US"}[信息失败。]{style="font-family:宋体"}
+Add Mobile消息中填充VLAN信息失败。
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] Failed to process the open system authentication request: The BSS doesn\'t support ]{lang="EN-US"}[open system authentication.]{lang="EN-US"}]{#struct_0_16776_x1311_454913748}
+MAC: *mac-address*, BSSID: *BSSID* Failed to process the open system authentication request: The BSS doesn\'t support open system authentication.
 
-[[BSS ]{lang="EN-US"}]{#struct_0_16776_x1311_x945100942}[不支持开放式认证]{style="font-family:宋体"}
+BSS 不支持开放式认证
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Failed to authenticate the client: Radio obtaining failure.]{lang="EN-US"}]{#struct_0_16776_x1311_921964743}
+MAC: *mac-address*, BSSID: *BSSID* Failed to authenticate the client: Radio obtaining failure.
 
-[[由于获取]{style="font-family:宋体"}[Radio]{lang="EN-US"}]{#struct_0_16776_x1311_458659619}[失败，导致认证失败]{style="font-family:宋体"}
+由于获取Radio失败，导致认证失败
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] Failed to process the open system authentication request: Wrong serial number.]{lang="EN-US"}]{#struct_0_16776_x1311_x90488236}
+MAC: *mac-address*, BSSID: *BSSID* Failed to process the open system authentication request: Wrong serial number.
 
-[[收到的开放式认证报文序列号错误，处理认证请求报文失败]{style="font-family:宋体"}]{#struct_0_16776_x1311_1089734830}
+收到的开放式认证报文序列号错误，处理认证请求报文失败
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Failed to process IE in the (re)association request.]{lang="EN-US"}]{#struct_0_16776_x1311_x547141248}
+MAC: *mac-address*, BSSID: *BSSID* Failed to process IE in the (re)association request.
 
-[[处理（重）关联请求报文]{style="font-family:宋体"}[IE]{lang="EN-US"}]{#struct_0_16776_x1311_x1958312607}[失败]{style="font-family:宋体"}
+处理（重）关联请求报文IE失败
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] Failed to associate with the AP: The number of clients exceeded the limit. ]{lang="EN-US"}]{#struct_0_16776_x1311_1951737137}
+MAC: *mac-address*, BSSID: *BSSID* Failed to associate with the AP: The number of clients exceeded the limit.
 
-[[由于关联客户端数据达到上限，关联]{style="font-family:宋体"}[AP]{lang="EN-US"}]{#struct_0_16776_x1311_1303966838}[失败]{style="font-family:宋体"}
+由于关联客户端数据达到上限，关联AP失败
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Failed to process (re)association request in Run state.]{lang="EN-US"}]{#struct_0_16776_x1311_x208925704}
+MAC: *mac-address*, BSSID: *BSSID* Failed to process (re)association request in Run state.
 
-[[Run]{lang="EN-US"}]{#struct_0_16776_x1311_x90488235}[状态下处理（重）关联请求失败]{style="font-family:宋体"}
+Run状态下处理（重）关联请求失败
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] Failed to p]{lang="EN-US"}[rocess (re)association request in Run state without sending (re)association response.]{lang="EN-US"}]{#struct_0_16776_x1311_1089734827}
+MAC: *mac-address*, BSSID: *BSSID* Failed to process (re)association request in Run state without sending (re)association response.
 
-[[Run]{lang="EN-US"}]{#struct_0_16776_x1311_x546944641}[状态下处理]{style="font-family:宋体"}[（重）关联请求失败，但不发送（重）关联响应]{style="font-family:宋体"}
+Run状态下处理（重）关联请求失败，但不发送（重）关联响应
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Failed to process (re)association request in Auth state.]{lang="EN-US"}]{#struct_0_16776_x1311_x1971896510}
+MAC: *mac-address*, BSSID: *BSSID* Failed to process (re)association request in Auth state.
 
-[[Auth]{lang="EN-US"}]{#struct_0_16776_x1311_848309080}[状态下处理]{style="font-family:宋体"}[（重）关联请求失败]{style="font-family:宋体"}
+Auth状态下处理（重）关联请求失败
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] Failed to p]{lang="EN-US"}[rocess (re)association request in Auth state without sending (re)association response. ]{lang="EN-US"}]{#struct_0_16776_x1311_1227460859}
+MAC: *mac-address*, BSSID: *BSSID* Failed to process (re)association request in Auth state without sending (re)association response.
 
-[[Auth]{lang="EN-US"}]{#struct_0_16776_x1311_x90488238}[状态下处理]{style="font-family:宋体"}[（重）关联请求失败，但不发送（重）关联响应]{style="font-family:宋体"}
+Auth状态下处理（重）关联请求失败，但不发送（重）关联响应
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] Failed to get AID.]{lang="EN-US"}]{#struct_0_16776_x1311_1089734840}
+MAC: *mac-address*, BSSID: *BSSID* Failed to get AID.
 
-[[获取]{style="font-family:宋体"}[AID]{lang="EN-US"}]{#struct_0_16776_x1311_x547141247}[失败]{style="font-family:宋体"}
+获取AID失败
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] Failed to update radio capabilities.]{lang="EN-US"}]{#struct_0_16776_x1311_x1957591711}
+MAC: *mac-address*, BSSID: *BSSID* Failed to update radio capabilities.
 
-[[更新]{style="font-family:宋体"}[Radio]{lang="EN-US"}]{#struct_0_16776_x1311_x1631870821}[能力集失败]{style="font-family:宋体"}
+更新Radio能力集失败
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] Failed to send add mobile messages.]{lang="EN-US"}]{#struct_0_16776_x1311_936118786}
+MAC: *mac-address*, BSSID: *BSSID* Failed to send add mobile messages.
 
-[[下发]{style="font-family:宋体"}[Add mobile]{lang="EN-US"}]{#struct_0_16776_x1311_x90488237}[失败]{style="font-family:宋体"}
+下发Add mobile失败
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] Received invalid frame in ]{lang="EN-US"}[Unauth state.]{lang="EN-US"}]{#struct_0_16776_x1311_1089734829}
+MAC: *mac-address*, BSSID: *BSSID* Received invalid frame in Unauth state.
 
-[[在]{style="font-family:宋体"}[Unauth]{lang="EN-US"}]{#struct_0_16776_x1311_x547600001}[状态下收到错误报文]{style="font-family:宋体"}
+在Unauth状态下收到错误报文
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] Frame check failed: Invalid frame length.]{lang="EN-US"}]{#struct_0_16776_x1311_x17952369}
+MAC: *mac-address*, BSSID: *BSSID* Frame check failed: Invalid frame length.
 
-[[由于报文长度不合法，报文校验失败]{style="font-family:宋体"}]{#struct_0_16776_x1311_x60066044}
+由于报文长度不合法，报文校验失败
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] Frame check failed: Invalid frame header.]{lang="EN-US"}]{#struct_0_16776_x1311_x1728515673}
+MAC: *mac-address*, BSSID: *BSSID* Frame check failed: Invalid frame header.
 
-[[由于报文头无效，报文校验失败]{style="font-family:宋体"}]{#struct_0_16776_x1311_x90488240}
+由于报文头无效，报文校验失败
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] Failed to p]{lang="EN-US"}[rocess (re)association request in Userauth state without sending (re)association response.]{lang="EN-US"}]{#struct_0_16776_x1311_x101906256}
+MAC: *mac-address*, BSSID: *BSSID* Failed to process (re)association request in Userauth state without sending (re)association response.
 
-[[Userauth]{lang="EN-US"}]{#struct_0_16776_x1311_1574034170}[状态下处理]{style="font-family:宋体"}[（重）关联失败，但不发送（重）关联响应]{style="font-family:宋体"}
+Userauth状态下处理（重）关联失败，但不发送（重）关联响应
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Failed to release AID.]{lang="EN-US"}]{#struct_0_16776_x1311_319096697}
+MAC: *mac-address*, BSSID: *BSSID* Failed to release AID.
 
-[[释放]{style="font-family:宋体"}[AID]{lang="EN-US"}]{#struct_0_16776_x1311_772618305}[失败]{style="font-family:宋体"}
+释放AID失败
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] Failed to process the authentication request: Unsupported algorithm.]{lang="EN-US"}]{#struct_0_16776_x1311_x90488239}
+MAC: *mac-address*, BSSID: *BSSID* Failed to process the authentication request: Unsupported algorithm.
 
-[[算法不支持导致处理认证请求失败。]{style="font-family:宋体"}]{#struct_0_16776_x1311_1089734839}
+算法不支持导致处理认证请求失败。
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] Failed to process the authentication request: Mismatched algorithm.]{lang="EN-US"}]{#struct_0_16776_x1311_x547600000}
+MAC: *mac-address*, BSSID: *BSSID* Failed to process the authentication request: Mismatched algorithm.
 
-[[算法不匹配导致处理认证请求失败。]{style="font-family:宋体"}]{#struct_0_16776_x1311_x18017905}
+算法不匹配导致处理认证请求失败。
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] Failed to send the (re)association response.]{lang="EN-US"}]{#struct_0_16776_x1311_x132967385}
+MAC: *mac-address*, BSSID: *BSSID* Failed to send the (re)association response.
 
-[[发送（重）关联回应失败]{style="font-family:宋体"}]{#struct_0_16776_x1311_x640514769}
+发送（重）关联回应失败
 
-[ ]{lang="EN-US"}
+表1-7 debugging wlan client mac event命令输出信息描述表（仅AC）
 
-[[表1-7 ]{lang="EN-US"}[debugging wlan client]{lang="EN-US"}[ mac event]{lang="EN-US"}]{#struct_0_16776_x1311_x90488242}[命令输出信息描述表（仅]{style="font-family:黑体"}[AC]{lang="EN-US"}[）]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1278146462}[[字段]{style="font-family:黑体"}]{#struct_0_16776_x1311_x101906254}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16776_x1311_1574165242}
+MAC: *mac-address*, BSSID: *BSSID* Allocated AID successfully.
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Allocated AID successfully.]{lang="EN-US"}]{#struct_0_16776_x1311_x820669764}
+分配AID成功
 
-[[分配]{style="font-family:宋体"}[AID]{lang="EN-US"}]{#struct_0_16776_x1311_x361686257}[成功]{style="font-family:宋体"}
+MAC: *mac-address*, BSSID: *BSSID* Processing (re)association request...
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Processing (re)association request...]{lang="EN-US"}]{#struct_0_16776_x1311_x1402020565}
+处理（重）关联报文
 
-[[处理（重）关联报文]{style="font-family:宋体"}]{#struct_0_16776_x1311_1983341659}
+MAC: *mac-address*, BSSID: *BSSID* Processing association request in Auth state...
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Processing association request in Auth state...]{lang="EN-US"}]{#struct_0_16776_x1311_x2139493331}
+认证状态下处理关联报文
 
-[[认证状态下处理关联报文]{style="font-family:宋体"}]{#struct_0_16776_x1311_x90488241}
+MAC: *mac-address*, BSSID: *BSSID* Processed association request successfully, and sent association response.
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Processed association request successfully, and sent association response.]{lang="EN-US"}]{#struct_0_16776_x1311_x101906257}
+处理关联请求成功，并发送关联回应
 
-[[处理关联请求成功，并发送关联回应]{style="font-family:宋体"}]{#struct_0_16776_x1311_1574099706}
+MAC: *mac-address*, BSSID: *BSSID* Processed (re)association request successfully when the client was in Run state .
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\]]{lang="EN-US"}[ Processed (re)association request successfully when the client was in Run state .]{lang="EN-US"}]{#struct_0_16776_x1311_x433972333}
+用户处于Run状态下，（重）关联请求处理成功
 
-[[用户处于]{style="font-family:宋体"}[Run]{lang="EN-US"}]{#struct_0_16776_x1311_x313471955}[状态下，（重）关联请求处理成功]{style="font-family:宋体"}
+MAC: *mac-address*, BSSID: *BSSID* Processed (re)association request successfully when the client was in Auth state.
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\]]{lang="EN-US"}[ Processed (re)association request successfully when the client was in Auth state.]{lang="EN-US"}]{#struct_0_16776_x1311_x845980155}
+用户处于Auth状态下，（重）关联请求处理成功
 
-[[用户处于]{style="font-family:宋体"}[Auth]{lang="EN-US"}]{#struct_0_16776_x1311_x2046803370}[状态下，（重）关联请求处理成功]{style="font-family:宋体"}
+MAC: *mac-address*, BSSID: *BSSID* Checking association load of the device...
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Checking association load of the device...]{lang="EN-US"}]{#struct_0_16776_x1311_296591058}
+检查设备的关联负载
 
-[[检查设备的关联负载]{style="font-family:宋体"}]{#struct_0_16776_x1311_x1360181766}
+MAC: *mac-address*, BSSID: *BSSID* Failed to process (re)association request in Run state.
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] Failed to ]{lang="EN-US"}[process (re)association request in Run state.]{lang="EN-US"}]{#struct_0_16776_x1311_346677042}
+Userauth状态下处理（重）关联请求失败
 
-[[Userauth]{lang="EN-US"}]{#struct_0_16776_x1311_x106542229}[状态下处理]{style="font-family:宋体"}[（重）关联请求失败]{style="font-family:宋体"}
+表1-8 debugging wlan client timer命令输出信息描述表（仅AC）
 
-[ ]{lang="EN-US"}
+字段
 
-[[表1-8 ]{lang="EN-US"}[debugging wlan client timer]{lang="EN-US"}]{#struct_0_16776_x1311_x740423669}[命令输出信息描述表（仅]{style="font-family:黑体"}[AC]{lang="EN-US"}[）]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x1275770972}[[字段]{style="font-family:黑体"}]{#struct_0_16776_x1311_x1332765512}
+MAC: *mac-address*, BSSID: *BSSID* Keepalive timer expired.
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16776_x1311_x1970357231}
+保活定时器超时
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Keepalive timer expired.]{lang="EN-US"}]{#struct_0_16776_x1311_607218683}
+MAC: *mac-address*, BSSID: *BSSID* Idle timer expired.
 
-[[保活定时器超时]{style="font-family:宋体"}]{#struct_0_16776_x1311_2117915328}
+闲置定时器超时
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Idle timer expired.]{lang="EN-US"}]{#struct_0_16776_x1311_x2046803369}
+MAC: *mac-address*, BSSID: *BSSID* Userauth state timer expired.
 
-[[闲置定时器超时]{style="font-family:宋体"}]{#struct_0_16776_x1311_x2075996401}
+用户认证状态状态定时器超时
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Userauth state timer expired.]{lang="EN-US"}]{#struct_0_16776_x1311_x1402663669}
+MAC: *mac-address*, BSSID: *BSSID* Auth state timer expired.
 
-[[用户认证状态状态定时器超时]{style="font-family:宋体"}]{#struct_0_16776_x1311_1064680370}
+认证状态状态定时器超时
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Auth state timer expired.]{lang="EN-US"}]{#struct_0_16776_x1311_1082151811}
+MAC: *mac-address*, BSSID: *BSSID* Unauth state timer expired.
 
-[[认证状态状态定时器超时]{style="font-family:宋体"}]{#struct_0_16776_x1311_x829494289}
+未认证状态状态定时器超时
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Unauth state timer expired.]{lang="EN-US"}]{#struct_0_16776_x1311_x66965772}
+MAC: *mac-address*, BSSID: *BSSID* Failed to process authentication request: The client is being deleted.
 
-[[未认证状态状态定时器超时]{style="font-family:宋体"}]{#struct_0_16776_x1311_x426225216}
+Client正在删除中，处理认证请求失败
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Failed to process authentication request: The client is being deleted.]{lang="EN-US"}]{#struct_0_16776_x1311_x2046803372}
+MAC: *mac-address*, BSSID: *BSSID* Created keepalive timer.
 
-[[Client]{lang="EN-US"}]{#struct_0_16776_x1311_1459390472}[正在删除中，处理认证请求失败]{style="font-family:宋体"}
+创建保活定时器
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Created keepalive timer.]{lang="EN-US"}]{#struct_0_16776_x1311_1309943091}
+MAC: *mac-address*, BSSID: *BSSID* Created idle timer.
 
-[[创建保活定时器]{style="font-family:宋体"}]{#struct_0_16776_x1311_x1432703439}
+创建闲置定时器
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Created idle timer.]{lang="EN-US"}]{#struct_0_16776_x1311_115319270}
+MAC: *mac-address*, BSSID: *BSSID* Created state timer.
 
-[[创建闲置定时器]{style="font-family:宋体"}]{#struct_0_16776_x1311_x2105852996}
+创建状态定时器
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Created state timer.]{lang="EN-US"}]{#struct_0_16776_x1311_1637851499}
+MAC: *mac-address*, BSSID: *BSSID* Refreshed state timer.
 
-[[创建状态定时器]{style="font-family:宋体"}]{#struct_0_16776_x1311_x2046803371}
+刷新状态定时器
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Refreshed state timer.]{lang="EN-US"}]{#struct_0_16776_x1311_1862674999}
+MAC: *mac-address*, BSSID: *BSSID* Refreshed keepalive timer.
 
-[[刷新状态定时器]{style="font-family:宋体"}]{#struct_0_16776_x1311_x1794234883}
+刷新保活定时器
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Refreshed keepalive timer.]{lang="EN-US"}]{#struct_0_16776_x1311_x1693616466}
+MAC: *mac-address*, BSSID: *BSSID* Deleted state timer.
 
-[[刷新保活定时器]{style="font-family:宋体"}]{#struct_0_16776_x1311_x1646915619}
+删除状态定时器
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Deleted state timer.]{lang="EN-US"}]{#struct_0_16776_x1311_x2046803374}
+MAC: *mac-address*, BSSID: *BSSID* Refreshed idle timer.
 
-[[删除状态定时器]{style="font-family:宋体"}]{#struct_0_16776_x1311_x2029007770}
+刷新闲置定时器
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Refreshed idle timer.]{lang="EN-US"}]{#struct_0_16776_x1311_67084019}
+表1-9 debugging wlan client fsm命令输出信息描述表（仅AC）
 
-[[刷新闲置定时器]{style="font-family:宋体"}]{#struct_0_16776_x1311_x1558870049}
+字段
 
-[ ]{lang="EN-US"}
+描述
 
-[[表1-9 ]{lang="EN-US"}[debugging wlan client fsm]{lang="EN-US"}]{#struct_0_16776_x1311_x112442865}[命令输出信息描述表（仅]{style="font-family:黑体"}[AC]{lang="EN-US"}[）]{style="font-family:黑体"}
+MAC: *mac-address*, BSSID: *BSSID* Client state: Unauth.
 
-[]{#table_struct_0_x1279777830}[[字段]{style="font-family:黑体"}]{#struct_0_16776_x1311_x1884493459}
+Client状态： 未认证
 
-[[描述]{style="font-family:黑体"}]{#struct_0_16776_x1311_x1660495851}
+MAC: *mac-address*, BSSID: *BSSID* Client state: Auth.
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Client state: Unauth.]{lang="EN-US"}]{#struct_0_16776_x1311_1338751148}
+Client状态：已认证
 
-[[Client]{lang="EN-US"}]{#struct_0_16776_x1311_x2046803373}[状态：]{style="font-family:宋体"} [未认证]{style="font-family:宋体"}
+MAC: *mac-address*, BSSID: *BSSID* Client state: Userauth.
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Client state: Auth.]{lang="EN-US"}]{#struct_0_16776_x1311_x1269492883}
+Client状态：用户认证
 
-[[Client]{lang="EN-US"}]{#struct_0_16776_x1311_674001439}[状态：已认证]{style="font-family:宋体"}
+MAC: *mac-address*, BSSID: *BSSID* Client state: Run.
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Client state: Userauth.]{lang="EN-US"}]{#struct_0_16776_x1311_x2122689557}
+Client状态： Run
 
-[[Client]{lang="EN-US"}]{#struct_0_16776_x1311_x942301352}[状态：用户认证]{style="font-family:宋体"}
+MAC: *mac-address*, BSSID: *BSSID* Client went online. Status changed to Run.
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Client state: Run.]{lang="EN-US"}]{#struct_0_16776_x1311_598115725}
+Client已经上线，状态迁移到了Run
 
-[[Client]{lang="EN-US"}]{#struct_0_16776_x1311_x1245133795}[状态：]{style="font-family:宋体"} [Run]{lang="EN-US"}
+MAC: *mac-address*, BSSID: *BSSID* Client went offline. Status changed to Unauth.
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Client went online. Status changed to Run.]{lang="EN-US"}]{#struct_0_16776_x1311_x1596312859}
+Client已经下线，状态迁移到了Unauth
 
-[[Client]{lang="EN-US"}]{#struct_0_16776_x1311_1282460214}[已经上线，状态迁移到了]{style="font-family:宋体"}[Run]{lang="EN-US"}
+MAC: *mac-address*, BSSID: *BSSID* Received deauthentication or disassociation request from client in *state* state: Reason code=*Reasoncode*.
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Client went offline. Status changed to Unauth.]{lang="EN-US"}]{#struct_0_16776_x1311_x1783400723}
+收到处于当前状态的Client发来的含有原因码的去认证/去关联报文
 
-[[Client]{lang="EN-US"}]{#struct_0_16776_x1311_404893895}[已经下线，状态迁移到了]{style="font-family:宋体"}[Unauth]{lang="EN-US"}
+【举例】
 
-[[\[MAC: *mac-address*, BSSID: *BSSID*\] ]{lang="EN-US"}[Received deauthentication or disassociation request from client in *state* state: Reason code=*Reasoncode*.]{lang="EN-US"}]{#struct_0_16776_x1311_x2046803376}
+\# 打开MAC地址为 05-0A-31-22-11-11的无线客户端的调试开关。
 
-[[收到处于当前状态的]{style="font-family:宋体"}[Client]{lang="EN-US"}]{#struct_0_16776_x1311_x866208356}[发来的含有原因码的去认证]{style="font-family:宋体"}[/]{lang="EN-US"}[去关联报文]{style="font-family:宋体"}
+\<Sysname\> debugging wlan client mac 05-0A-31-22-11-11
 
-[ ]{lang="EN-US"}
+MAC: *05-0A-31-22-11-11*, BSSID: *ab-ab-ab-ab-ab-ab* Created idle timer.
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_16776_x1311_x2023719995}
-
-[[\# ]{lang="EN-US"}]{#struct_0_16776_x1311_x319721691}[打开]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为]{style="font-family:宋体"}[ 05-0A-31-22-11-11]{lang="EN-US"}[的无线客户端的调试开关。]{style="font-family:宋体"}
-
-[[\<Sysname\> debugging wlan client mac 05-0A-31-22-11-11]{lang="EN-US"}]{#struct_0_16776_x1311_x524067282}
-
-[\[MAC: *05-0A-31-22-11-11*, BSSID: *ab-ab-ab-ab-ab-ab*\] ]{lang="EN-US"}[Created idle timer.]{lang="EN-US"}
-
-[*[//BSSID]{lang="EN-US"}*]{#struct_0_16776_x1311_409373648}*[为]{style="font-family:宋体"}[ab-ab-ab-ab-ab-ab]{lang="EN-US"}[的无线服务为]{style="font-family:宋体"}[MAC]{lang="EN-US"}[地址为]{style="font-family:宋体"}[05-0A-31-22-11-11]{lang="EN-US"}[的用户创建了闲置定时器。]{style="font-family:宋体"}*
+*[//BSSID*]*为ab-ab-ab-ab-ab-ab的无线服务为MAC地址为05-0A-31-22-11-11的用户创建了闲置定时器。*

@@ -1,3784 +1,3735 @@
-::: {#42942862 .myid}
-[]{#_Toc404793162}[]{#_Toc395010546}[]{#struct_0_28483_x1134_1737402229}[]{#_Toc167939232}[]{#_Toc138241185}
 
 **SSH \-- SSH调试命令 \-- debugging ssh server**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_28483_x1134_x2123266295}
+【命令】
 
-[**[debugging ssh server]{lang="EN-US"}**[ { **all** \| **error** \| **event** \| **message** }]{lang="EN-US"}]{#struct_0_28483_x1134_762641868}
+**[debugging ssh server**[ { **all** \| **error** \| **event** \| **message** }]]
 
-[**[undo debugging ssh server]{lang="EN-US"}**[ { **all** \| **error** \| **event** \| **message** }]{lang="EN-US"}]{#struct_0_28483_x1134_1049607749}
+**[undo debugging ssh server**[ { **all** \| **error** \| **event** \| **message** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_28483_x1134_1889205385}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_28483_x1134_x801915213}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_28483_x1134_1882405071}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_28483_x1134_x763511310}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_28483_x1134_x977103426}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_28483_x1134_x546081131}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_28483_x1134_x2123725046}[：所有类型的调试信息开关。]{style="font-family:宋体"}
+**[all**]：所有类型的调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_28483_x1134_x470962783}[：错误调试信息开关。]{style="font-family:宋体"}
+**[error**]：错误调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_28483_x1134_1984883746}[：事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：事件调试信息开关。
 
-[**[message]{lang="EN-US"}**]{#struct_0_28483_x1134_x1455423021}[：消息调试信息开关。]{style="font-family:宋体"}
+**[message**]：消息调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_28483_x1134_63935776}
+【描述】
 
-[**[debugging ssh server]{lang="EN-US"}**]{#struct_0_28483_x1134_x1527268191}[命令用来打开]{style="font-family:宋体"}[SSH]{lang="EN-US"}[服务器的调试信息开关。]{style="font-family:宋体"}**[undo debugging ssh server]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[SSH]{lang="EN-US"}[服务器的调试信息开关。]{style="font-family:宋体"}
+**[debugging ssh server**]命令用来打开SSH服务器的调试信息开关。**undo debugging ssh server**命令用来关闭SSH服务器的调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[SSH]{lang="EN-US"}]{#struct_0_28483_x1134_x1150809737}[服务器调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，SSH服务器调试信息开关处于关闭状态。
 
-[[表1-1 ]{lang="EN-US"}[debugging ssh server error]{lang="EN-US"}]{#struct_0_28483_x1134_x2004620635}[命令输出信息描述表]{style="font-family:黑体"}
+表1-1 debugging ssh server error命令输出信息描述表
 
-[]{#table_struct_0_x1112236682}[[字段]{style="font-family:黑体"}]{#struct_0_28483_x1134_x439423884}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_28483_x1134_x2123790582}
+描述
 
-[[Failed to get challenge]{lang="EN-US"}]{#struct_0_28483_x1134_x1263407451}
+Failed to get challenge
 
-[[获取挑战字失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x150628830}
+获取挑战字失败
 
-[[PAM authentication context not initialized]{lang="EN-US"}]{#struct_0_28483_x1134_x1184720992}
+PAM authentication context not initialized
 
-[[PAM]{lang="EN-US"}]{#struct_0_28483_x1134_137265269}[认证上下文未初始化]{style="font-family:宋体"}
+PAM认证上下文未初始化
 
-[[Failed to set real user ID:]{lang="EN-US"}]{#struct_0_28483_x1134_610606594}
+Failed to set real user ID:
 
-[[设置]{style="font-family:宋体"}[real user id]{lang="EN-US"}]{#struct_0_28483_x1134_x2123593974}[失败]{style="font-family:宋体"}
+设置real user id失败
 
-[[Failed to set effective user ID:]{lang="EN-US"}]{#struct_0_28483_x1134_x862637305}
+Failed to set effective user ID:
 
-[[设置]{style="font-family:宋体"}[effective user id]{lang="EN-US"}]{#struct_0_28483_x1134_x278507069}[失败]{style="font-family:宋体"}
+设置effective user id失败
 
-[[Too many environment variables, expected \<= 1024.]{lang="EN-US"}]{#struct_0_28483_x1134_1929136489}
+Too many environment variables, expected \<= 1024.
 
-[[环境变量太多，应该不大于]{style="font-family:宋体"}[1024]{lang="EN-US"}]{#struct_0_28483_x1134_x277329277}
+环境变量太多，应该不大于1024
 
-[[Internal error: PAM authentication succeeded when it should have failed]{lang="EN-US"}]{#struct_0_28483_x1134_x2123659510}
+Internal error: PAM authentication succeeded when it should have failed
 
-[[内部错误，]{style="font-family:宋体"}[PAM]{lang="EN-US"}]{#struct_0_28483_x1134_x921836157}[认证成功，原本应该失败]{style="font-family:宋体"}
+内部错误，PAM认证成功，原本应该失败
 
-[[PAM: Initialization requested when PAM is disabled.]{lang="EN-US"}]{#struct_0_28483_x1134_1041832097}
+PAM: Initialization requested when PAM is disabled.
 
-[[PAM]{lang="EN-US"}]{#struct_0_28483_x1134_x1495049825}[未使能的情况下初始化]{style="font-family:宋体"}[PAM]{lang="EN-US"}
+PAM未使能的情况下初始化PAM
 
-[[PAM: Initialization failed]{lang="EN-US"}]{#struct_0_28483_x1134_432887029}
+PAM: Initialization failed
 
-[[PAM]{lang="EN-US"}]{#struct_0_28483_x1134_x2123462902}[初始化失败]{style="font-family:宋体"}
+PAM初始化失败
 
-[[PAM: Failed to set PAM_TTY:]{lang="EN-US"}]{#struct_0_28483_x1134_617979906}
+PAM: Failed to set PAM_TTY:
 
-[[设置]{style="font-family:宋体"}[PAM_TTY]{lang="EN-US"}]{#struct_0_28483_x1134_x1220543226}[失败]{style="font-family:宋体"}
+设置PAM_TTY失败
 
-[[PAM: PAM disabled or failed to initialize]{lang="EN-US"}]{#struct_0_28483_x1134_449934769}
+PAM: PAM disabled or failed to initialize
 
-[[PAM]{lang="EN-US"}]{#struct_0_28483_x1134_x1025198035}[未使能或者初始化失败]{style="font-family:宋体"}
+PAM未使能或者初始化失败
 
-[[PAM: Failed to set PAM_CONV:]{lang="EN-US"}]{#struct_0_28483_x1134_x2123528438}
+PAM: Failed to set PAM_CONV:
 
-[[设置]{style="font-family:宋体"}[PAM_CONV]{lang="EN-US"}]{#struct_0_28483_x1134_1712864179}[失败]{style="font-family:宋体"}
+设置PAM_CONV失败
 
-[[Failed to generate RSA authentication challenge.]{lang="EN-US"}]{#struct_0_28483_x1134_737859215}
+Failed to generate RSA authentication challenge.
 
-[[生成]{style="font-family:宋体"}[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_144311321}[认证挑战字失败]{style="font-family:宋体"}
+生成RSA认证挑战字失败
 
-[[Failed to verify the RSA authentication response: bad challenge length *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x2123331830}
+Failed to verify the RSA authentication response: bad challenge length *xx*
 
-[[验证]{style="font-family:宋体"}[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_x1139100252}[认证应答报文失败：错误的挑战字长度]{style="font-family:宋体"}*[xx]{lang="EN-US"}*
+验证RSA认证应答报文失败：错误的挑战字长度*xx*
 
-[[Failed to perform the RSA authentication challenge-response dialog]{lang="EN-US"}]{#struct_0_28483_x1134_x1119633829}
+Failed to perform the RSA authentication challenge-response dialog
 
-[[准备]{style="font-family:宋体"}[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_565110439}[认证挑战交换环境失败]{style="font-family:宋体"}
+准备RSA认证挑战交换环境失败
 
-[[Failed to create new BN.]{lang="EN-US"}]{#struct_0_28483_x1134_559563144}
+Failed to create new BN.
 
-[[创建]{style="font-family:宋体"}[BIGNUM]{lang="EN-US"}]{#struct_0_28483_x1134_x2123397366}[失败]{style="font-family:宋体"}
+创建BIGNUM失败
 
-[[INTERNAL ERROR: authenticated invalid user *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_848895031}
+INTERNAL ERROR: authenticated invalid user *xx*
 
-[[内部错误，非法认证用户]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_793743905}
+内部错误，非法认证用户*xx*
 
-[[Access denied for user *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x18142487}
+Access denied for user *xx*
 
-[[拒绝用户]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2123200758}[接入]{style="font-family:宋体"}
+拒绝用户*xx*接入
 
-[[No authentication context]{lang="EN-US"}]{#struct_0_28483_x1134_374688684}
+No authentication context
 
-[[没有认证上下文]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1653375419}
+没有认证上下文
 
-[[Keyboard interface error]{lang="EN-US"}]{#struct_0_28483_x1134_x2123266294}
+Keyboard interface error
 
-[[keyboard]{lang="EN-US"}]{#struct_0_28483_x1134_x1966241487}[接口错误]{style="font-family:宋体"}
+keyboard接口错误
 
-[[Wrong number of replies]{lang="EN-US"}]{#struct_0_28483_x1134_x2146591778}
+Wrong number of replies
 
-[[应答报文数目错误]{style="font-family:宋体"}]{#struct_0_28483_x1134_1621319990}
+应答报文数目错误
 
-[[Access denied for user *xx* by PAM account configuration.]{lang="EN-US"}]{#struct_0_28483_x1134_x2123725049}
+Access denied for user *xx* by PAM account configuration.
 
-[[PAM]{lang="EN-US"}]{#struct_0_28483_x1134_x518016950}[计费配置拒绝用户]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[登录]{style="font-family:宋体"}
+PAM计费配置拒绝用户*xx*登录
 
-[[Failed to sign server host key]{lang="EN-US"}]{#struct_0_28483_x1134_x1900823829}
+Failed to sign server host key
 
-[[对服务器主机密钥进行签名失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_841278647}
+对服务器主机密钥进行签名失败
 
-[[protocol error during kex, no DH_GEX_REQUEST:]{lang="PT-BR"}]{#struct_0_28483_x1134_x2123790585}
+protocol error during kex, no DH_GEX_REQUEST:
 
-[[密钥计算过程中协议错误，没有收到]{style="font-family:宋体"}[DH_GEX_REQUEST]{lang="EN-US"}]{#struct_0_28483_x1134_1109245544}[请求]{style="font-family:宋体"}
+密钥计算过程中协议错误，没有收到DH_GEX_REQUEST请求
 
-[[DH_GEX_REQUEST, bad parameters:]{lang="EN-US"}]{#struct_0_28483_x1134_x922522825}
+DH_GEX_REQUEST, bad parameters:
 
-[[DH_GEX_REQUEST]{lang="EN-US"}]{#struct_0_28483_x1134_x636753299}[请求中发现参数错误]{style="font-family:宋体"}
+DH_GEX_REQUEST请求中发现参数错误
 
-[[Bad IP address or host name:]{lang="EN-US"}]{#struct_0_28483_x1134_x2123593977}
+Bad IP address or host name:
 
-[[错误的]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_28483_x1134_1866246050}[地址或主机名]{style="font-family:宋体"}
+错误的IP地址或主机名
 
-[[No user or invalid user]{lang="PT-BR"}]{#struct_0_28483_x1134_x906752077}
+No user or invalid user
 
-[[无用户名或非法用户名]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2123659513}
+无用户名或非法用户名
 
-[[No session]{lang="EN-US"}]{#struct_0_28483_x1134_1807047198}
+No session
 
-[[无会话]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1211661902}
+无会话
 
-[[Failed to set environment: too many environment vars]{lang="EN-US"}]{#struct_0_28483_x1134_569345535}
+Failed to set environment: too many environment vars
 
-[[设置环境变量失败：太多的环境变量]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2123462905}
+设置环境变量失败：太多的环境变量
 
-[[Too many lines in environment file *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_214695379}
+Too many lines in environment file *xx*
 
-[[环境变量文件]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_226279784}[的行数太多]{style="font-family:宋体"}
+环境变量文件*xx*的行数太多
 
-[[Insane session id *xx* (max *mm* allocated *nn*)]{lang="EN-US"}]{#struct_0_28483_x1134_x2123528441}
+Insane session id *xx* (max *mm* allocated *nn*)
 
-[[错误的通道号]{style="font-family:宋体"}[xx]{lang="EN-US"}]{#struct_0_28483_x1134_x209646730}[（最大值]{style="font-family:宋体"}*[mm]{lang="EN-US"}*[，]{style="font-family:宋体"}[已分配]{style="font-family:宋体"}*[nn]{lang="EN-US"}*[）]{style="font-family:宋体"}
+错误的通道号xx（最大值*mm*，已分配*nn*）
 
-[[Insane first unused session id *xx* (max *mm*, allocated *nn*).]{lang="EN-US"}]{#struct_0_28483_x1134_x69608745}
+Insane first unused session id *xx* (max *mm*, allocated *nn*).
 
-[[错误的第一个未使用通道号]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2123331833}*[xx]{lang="EN-US"}*[（最大值]{style="font-family:宋体"}*[mm]{lang="EN-US"}*[，]{style="font-family:宋体"}[已分配]{style="font-family:宋体"}*[nn]{lang="EN-US"}*[）]{style="font-family:宋体"}
+错误的第一个未使用通道号*xx*（最大值*mm*，已分配*nn*）
 
-[[Failed to allocate new session]{lang="EN-US"}]{#struct_0_28483_x1134_x735815725}
+Failed to allocate new session
 
-[[分配新会话失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x799564783}
+分配新会话失败
 
-[[No user for session *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x2123397369}
+No user for session *xx*
 
-[[会话]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1073419270}*[xx]{lang="EN-US"}*[没有用户]{style="font-family:宋体"}
+会话*xx*没有用户
 
-[[No channel for session *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_658260362}
+No channel for session *xx*
 
-[[会话]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2123200761}*[xx]{lang="EN-US"}*[没有通道]{style="font-family:宋体"}
+会话*xx*没有通道
 
-[[Session ]{lang="IT"}]{#struct_0_28483_x1134_x1547691153}*[xx]{lang="IT"}*[: no channel *yy*]{lang="IT"}
+Session *xx*: no channel *yy*
 
-[[会话]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2123266297}*[xx]{lang="IT"}*[没有通道]{style="font-family:宋体"}*[yy]{lang="IT"}*
+会话*xx*没有通道*yy*
 
-[[Bad IP address or host name:]{lang="EN-US"}]{#struct_0_28483_x1134_1925441282}
+Bad IP address or host name:
 
-[[错误的]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_28483_x1134_x412964865}[地址或主机名]{style="font-family:宋体"}
+错误的IP地址或主机名
 
-[[No user or invalid user]{lang="PT-BR"}]{#struct_0_28483_x1134_x2123725048}
+No user or invalid user
 
-[[无用户名或非法用户名]{style="font-family:宋体"}]{#struct_0_28483_x1134_1048066991}
+无用户名或非法用户名
 
-[[No session]{lang="EN-US"}]{#struct_0_28483_x1134_x2123790584}
+No session
 
-[[无会话]{style="font-family:宋体"}]{#struct_0_28483_x1134_x456838397}
+无会话
 
-[[Failed to allocate new session]{lang="EN-US"}]{#struct_0_28483_x1134_x2123528440}
+Failed to allocate new session
 
-[[分配新通道号失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1356437211}
+分配新通道号失败
 
-[[TCP wrapper failed]{lang="EN-US"}]{#struct_0_28483_x1134_18392788}
+TCP wrapper failed
 
-[[TCP wrapper]{lang="EN-US"}]{#struct_0_28483_x1134_x2123266296}[失败]{style="font-family:宋体"}
+TCP wrapper失败
 
-[[Do connection:]{lang="EN-US"}]{#struct_0_28483_x1134_x803442073}
+Do connection:
 
-[[发起连接失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2123725051}
+发起连接失败
 
-[[Failed to get host key]{lang="EN-US"}]{#struct_0_28483_x1134_x874181774}
+Failed to get host key
 
-[[获取主机密码失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_952208732}
+获取主机密码失败
 
-[[Failed to get server key]{lang="EN-US"}]{#struct_0_28483_x1134_x2123790587}
+Failed to get server key
 
-[[获取服务器密码失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2022922338}
+获取服务器密码失败
 
-[[TTY name is null.]{lang="EN-US"}]{#struct_0_28483_x1134_x2123593979}
+TTY name is null.
 
-[[TTY]{lang="EN-US"}]{#struct_0_28483_x1134_x1622152192}[名字为空]{style="font-family:宋体"}
+TTY名字为空
 
-[[Failed to change owner]{lang="EN-US"}]{#struct_0_28483_x1134_x2123659515}
+Failed to change owner
 
-[[改变]{style="font-family:宋体"}[owner]{lang="EN-US"}]{#struct_0_28483_x1134_x1325120684}[失败]{style="font-family:宋体"}
+改变owner失败
 
-[[Failed to change mode]{lang="EN-US"}]{#struct_0_28483_x1134_x2123462907}
+Failed to change mode
 
-[[改变]{style="font-family:宋体"}[mode]{lang="EN-US"}]{#struct_0_28483_x1134_1377494793}[失败]{style="font-family:宋体"}
+改变mode失败
 
-[[Authentication response too long:]{lang="EN-US"}]{#struct_0_28483_x1134_x2123528443}
+Authentication response too long:
 
-[[认证应答报文长度过长]{style="font-family:宋体"}]{#struct_0_28483_x1134_953152684}
+认证应答报文长度过长
 
-[[Bad authentication reply message type:]{lang="EN-US"}]{#struct_0_28483_x1134_x2123331835}
+Bad authentication reply message type:
 
-[[错误的认证应答消息类型]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1542384779}
+错误的认证应答消息类型
 
-[[Too many identities in authentication reply:]{lang="EN-US"}]{#struct_0_28483_x1134_x2123397371}
+Too many identities in authentication reply:
 
-[[认证应答中存在太多的标识]{style="font-family:宋体"}]{#struct_0_28483_x1134_x717123374}
+认证应答中存在太多的标识
 
-[[Bad authentication response:]{lang="EN-US"}]{#struct_0_28483_x1134_x2123200763}
+Bad authentication response:
 
-[[错误的认证应答]{style="font-family:宋体"}]{#struct_0_28483_x1134_1584476729}
+错误的认证应答
 
-[[Bad response from authentication agent:]{lang="EN-US"}]{#struct_0_28483_x1134_x2123266299}
+Bad response from authentication agent:
 
-[[从认证代理接收到错误的应答]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1919187320}
+从认证代理接收到错误的应答
 
-[[Failed to get data from buffer]{lang="EN-US"}]{#struct_0_28483_x1134_x2123725050}
+Failed to get data from buffer
 
-[[从]{style="font-family:宋体"}]{#struct_0_28483_x1134_691902167}[buffer]{lang="EN-US"}[中获取数据失败]{style="font-family:宋体"}
+从buffer中获取数据失败
 
-[[Bad string length *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x2123790586}
+Bad string length *xx*
 
-[[错误的字符串长度]{style="font-family:宋体"}]{#struct_0_28483_x1134_705961017}*[xx]{lang="EN-US"}*
+错误的字符串长度*xx*
 
-[[Failed to put null string to buffer]{lang="EN-US"}]{#struct_0_28483_x1134_x2123593978}
+Failed to put null string to buffer
 
-[[向]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2123659514}[buffer]{lang="EN-US"}[中存入空串失败]{style="font-family:宋体"}
+向buffer中存入空串失败
 
-[[Failed to put BIGNUM to the buffer.]{lang="EN-US"}]{#struct_0_28483_x1134_1403762671}
+Failed to put BIGNUM to the buffer.
 
-[[向]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2123462906}[buffer]{lang="EN-US"}[中存入]{style="font-family:宋体"}[BIGNUM]{lang="EN-US"}[失败]{style="font-family:宋体"}
+向buffer中存入BIGNUM失败
 
-[[Failed to get BIGNUM from the buffer.]{lang="EN-US"}]{#struct_0_28483_x1134_x1351388562}
+Failed to get BIGNUM from the buffer.
 
-[[从]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2123528442}[buffer]{lang="EN-US"}[中获取]{style="font-family:宋体"}[BIGNUM]{lang="EN-US"}[失败]{style="font-family:宋体"}
+从buffer中获取BIGNUM失败
 
-[[Failed to write BIGNUM to the buffer in SSH2 format.]{lang="EN-US"}]{#struct_0_28483_x1134_x1775730671}
+Failed to write BIGNUM to the buffer in SSH2 format.
 
-[[向]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2123331834}[buffer]{lang="EN-US"}[中以]{style="font-family:宋体"}[ssh2]{lang="EN-US"}[协议格式写入]{style="font-family:宋体"}[BIGNUM]{lang="EN-US"}[失败]{style="font-family:宋体"}
+向buffer中以ssh2协议格式写入BIGNUM失败
 
-[[Failed to get BIGNUM from the buffer in SSH2 format.]{lang="EN-US"}]{#struct_0_28483_x1134_1186498576}
+Failed to get BIGNUM from the buffer in SSH2 format.
 
-[[从]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2123397370}[buffer]{lang="EN-US"}[中以]{style="font-family:宋体"}[ssh2]{lang="EN-US"}[协议格式获取]{style="font-family:宋体"}[BIGNUM]{lang="EN-US"}[失败]{style="font-family:宋体"}
+从buffer中以ssh2协议格式获取BIGNUM失败
 
-[[Failed to append space to the buffer:]{lang="EN-US"}]{#struct_0_28483_x1134_2011759981}
+Failed to append space to the buffer:
 
-[[在]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2123200762}[buffer]{lang="EN-US"}[后追加空间失败]{style="font-family:宋体"}
+在buffer后追加空间失败
 
-[[Failed to append buffer space:]{lang="EN-US"}]{#struct_0_28483_x1134_x2123266298}
+Failed to append buffer space:
 
-[[在]{style="font-family:宋体"}]{#struct_0_28483_x1134_x353103379}[buffer]{lang="EN-US"}[后追加空间失败]{style="font-family:宋体"}
+在buffer后追加空间失败
 
-[[Failed to consume data from the beginning of the buffer.]{lang="EN-US"}]{#struct_0_28483_x1134_x201410746}
+Failed to consume data from the beginning of the buffer.
 
-[[从]{style="font-family:宋体"}]{#struct_0_28483_x1134_1667887462}[buffer]{lang="EN-US"}[头删除数据失败]{style="font-family:宋体"}
+从buffer头删除数据失败
 
-[[Failed to consume data from the end of the buffer.]{lang="EN-US"}]{#struct_0_28483_x1134_x201476282}
+Failed to consume data from the end of the buffer.
 
-[[从]{style="font-family:宋体"}]{#struct_0_28483_x1134_1634720416}[buffer]{lang="EN-US"}[尾删除数据失败]{style="font-family:宋体"}
+从buffer尾删除数据失败
 
-[[Failed to get remote hostname.]{lang="EN-US"}]{#struct_0_28483_x1134_x201279674}
+Failed to get remote hostname.
 
-[[获取对端主机名失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x201345210}
+获取对端主机名失败
 
-[[Connection from *x.x.x.x* with IP options: *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_1229010953}
+Connection from *x.x.x.x* with IP options: *yy*
 
-[[从]{style="font-family:宋体"}]{#struct_0_28483_x1134_x201148602}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}*[x.x.x.x]{lang="EN-US"}*[发起的连接，携带]{style="font-family:宋体"}[IP]{lang="EN-US"}[选项为]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+从IP地址*x.x.x.x*发起的连接，携带IP选项为*yy*
 
-[[Failed to allocate new channel:]{lang="EN-US"}]{#struct_0_28483_x1134_61183415}
+Failed to allocate new channel:
 
-[[channel]{lang="EN-US"}]{#struct_0_28483_x1134_x201214138}[分配失败]{style="font-family:宋体"}
+channel分配失败
 
-[[Cannot happen: SSH_CHANNEL_LARVAL]{lang="EN-US"}]{#struct_0_28483_x1134_x201017530}
+Cannot happen: SSH_CHANNEL_LARVAL
 
-[[SSH_CHANNEL_LARVAL]{lang="EN-US"}]{#struct_0_28483_x1134_882134608}[类型的]{style="font-family:宋体"}[channel]{lang="EN-US"}[在不兼容]{style="font-family:宋体"}[2.0]{lang="EN-US"}[版本的情况下不应该出现]{style="font-family:宋体"}
+SSH_CHANNEL_LARVAL类型的channel在不兼容2.0版本的情况下不应该出现
 
-[[Cannot happen: OUT_DRAIN]{lang="EN-US"}]{#struct_0_28483_x1134_x201083066}
+Cannot happen: OUT_DRAIN
 
-[[SSH_CHANNEL_OUTPUT_DRAINING]{lang="EN-US"}]{#struct_0_28483_x1134_1644985313}[类型的]{style="font-family:宋体"}[channel]{lang="EN-US"}[在不兼容]{style="font-family:宋体"}[1.3]{lang="EN-US"}[版本的情况下不应该出现]{style="font-family:宋体"}
+SSH_CHANNEL_OUTPUT_DRAINING类型的channel在不兼容1.3版本的情况下不应该出现
 
-[[Bad channel type *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x200886458}
+Bad channel type *xx*
 
-[[错误的]{style="font-family:宋体"}]{#struct_0_28483_x1134_x200951994}[channel]{lang="EN-US"}[类型]{style="font-family:宋体"}*[xx]{lang="EN-US"}*
+错误的channel类型*xx*
 
-[[Bad channel id *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x1455921557}
+Bad channel id *xx*
 
-[[错误的]{style="font-family:宋体"}]{#struct_0_28483_x1134_x201410745}[channel ID *xx*]{lang="EN-US"}
+错误的channel ID *xx*
 
-[[Non-larval channel]{lang="EN-US"}]{#struct_0_28483_x1134_x201476281}
+Non-larval channel
 
-[[channel]{lang="EN-US"}]{#struct_0_28483_x1134_1634654880}[为空或者非]{style="font-family:宋体"}[SSH_CHANNEL_LARVAL]{lang="EN-US"}[类型的]{style="font-family:宋体"}[channel]{lang="EN-US"}
+channel为空或者非SSH_CHANNEL_LARVAL类型的channel
 
-[[Channel xx: decode socks4: len *mm* \> have *nn*]{lang="EN-US"}]{#struct_0_28483_x1134_x201279673}
+Channel xx: decode socks4: len *mm* \> have *nn*
 
-[[channel ID *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x1502541268}[：]{style="font-family:宋体"}[socks4]{lang="EN-US"}[解码时，]{style="font-family:宋体"}[buffer]{lang="EN-US"}[长度]{style="font-family:宋体"}*[mm]{lang="EN-US"}*[大于实际串长度]{style="font-family:宋体"}*[nn]{lang="EN-US"}*
+channel ID *xx*：socks4解码时，buffer长度*mm*大于实际串长度*nn*
 
-[[Channel xx: decode socks4a: len *mm* \> have *nn*]{lang="EN-US"}]{#struct_0_28483_x1134_x201345209}
+Channel xx: decode socks4a: len *mm* \> have *nn*
 
-[[channel ID *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x201148601}[：]{style="font-family:宋体"}[socks4a]{lang="EN-US"}[解码时，]{style="font-family:宋体"}[buffer]{lang="EN-US"}[长度]{style="font-family:宋体"}*[mm]{lang="EN-US"}*[大于实际串长度]{style="font-family:宋体"}*[nn]{lang="EN-US"}*
+channel ID *xx*：socks4a解码时，buffer长度*mm*大于实际串长度*nn*
 
-[[Unexpected data on control fd]{lang="EN-US"}]{#struct_0_28483_x1134_x201214137}
+Unexpected data on control fd
 
-[[在控制文件描述符上获取到异常数据]{style="font-family:宋体"}]{#struct_0_28483_x1134_80921385}
+在控制文件描述符上获取到异常数据
 
-[[Failed to prepare select:]{lang="EN-US"}]{#struct_0_28483_x1134_x201017529}
+Failed to prepare select:
 
-[[select]{lang="EN-US"}]{#struct_0_28483_x1134_x201083065}[准备失败]{style="font-family:宋体"}
+select准备失败
 
-[[Cannot happen: input state INPUT_WAIT_DRAIN for proto 1.3]{lang="EN-US"}]{#struct_0_28483_x1134_1644788705}
+Cannot happen: input state INPUT_WAIT_DRAIN for proto 1.3
 
-[[在]{style="font-family:宋体"}[1.3]{lang="EN-US"}]{#struct_0_28483_x1134_x200886457}[协议中不应该出现输入状态]{style="font-family:宋体"}[ INPUT_WAIT_DRAIN]{lang="EN-US"}
+在1.3协议中不应该出现输入状态 INPUT_WAIT_DRAIN
 
-[[Too many forwards]{lang="EN-US"}]{#struct_0_28483_x1134_x307045609}
+Too many forwards
 
-[[太多的]{style="font-family:宋体"}[TCP/IP]{lang="EN-US"}]{#struct_0_28483_x1134_x200951993}[端口转发]{style="font-family:宋体"}
+太多的TCP/IP端口转发
 
-[[Failed to set socket to non-block]{lang="EN-US"}]{#struct_0_28483_x1134_x201410748}
+Failed to set socket to non-block
 
-[[设置]{style="font-family:宋体"}[socket]{lang="EN-US"}]{#struct_0_28483_x1134_x201476284}[为非阻塞时失败]{style="font-family:宋体"}
+设置socket为非阻塞时失败
 
-[[x11_request_forwarding:]{lang="EN-US"}]{#struct_0_28483_x1134_1634851488}
+x11_request_forwarding:
 
-[[在]{style="font-family:宋体"}[x11]{lang="EN-US"}]{#struct_0_28483_x1134_x201279676}[转发请求处理中收到错误的认证数据]{style="font-family:宋体"}
+在x11转发请求处理中收到错误的认证数据
 
-[[Bad 3DES IV length: *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x201345212}
+Bad 3DES IV length: *xx*
 
-[[错误的]{style="font-family:宋体"}[3DES IV]{lang="EN-US"}]{#struct_0_28483_x1134_1229142025}[长度]{style="font-family:宋体"}*[xx]{lang="EN-US"}*
+错误的3DES IV长度*xx*
 
-[[No 3DES context.]{lang="EN-US"}]{#struct_0_28483_x1134_x201148604}
+No 3DES context.
 
-[[没有]{style="font-family:宋体"}[3DES]{lang="EN-US"}]{#struct_0_28483_x1134_x201214140}[上下文信息]{style="font-family:宋体"}
+没有3DES上下文信息
 
-[[No AES context.]{lang="EN-US"}]{#struct_0_28483_x1134_80724776}
+No AES context.
 
-[[没有]{style="font-family:宋体"}[AES]{lang="EN-US"}]{#struct_0_28483_x1134_x201017532}[上下文信息]{style="font-family:宋体"}
+没有AES上下文信息
 
-[[Failed to initialize cipher:]{lang="EN-US"}]{#struct_0_28483_x1134_x201083068}
+Failed to initialize cipher:
 
-[[初始化加密套件失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1645116385}
+初始化加密套件失败
 
-[[Failed to initialize cipher *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x200886460}
+Failed to initialize cipher *xx*
 
-[[初始化加密套件]{style="font-family:宋体"}[xx]{lang="EN-US"}]{#struct_0_28483_x1134_x200951996}[失败]{style="font-family:宋体"}
+初始化加密套件xx失败
 
-[[Cipher encrypt failed:]{lang="EN-US"}]{#struct_0_28483_x1134_x201410747}
+Cipher encrypt failed:
 
-[[加密失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1667952998}
+加密失败
 
-[[Wrong IV length *xx* != *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_x201476283}
+Wrong IV length *xx* != *yy*
 
-[[IV]{lang="EN-US"}]{#struct_0_28483_x1134_x201279675}[长度错误]{style="font-family:宋体"}
+IV长度错误
 
-[[Bad cipher *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x1502410196}
+Bad cipher *xx*
 
-[[错误的加密套件编号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x201345211}
+错误的加密套件编号*xx*
 
-[[No available ciphers found]{lang="EN-US"}]{#struct_0_28483_x1134_x201148603}
+No available ciphers found
 
-[[没有可用的加密套件]{style="font-family:宋体"}]{#struct_0_28483_x1134_x201214139}
+没有可用的加密套件
 
-[[Bad compression level *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_80266025}
+Bad compression level *xx*
 
-[[错误的压缩等级]{style="font-family:宋体"}]{#struct_0_28483_x1134_x201017531}*[xx]{lang="EN-US"}*
+错误的压缩等级*xx*
 
-[[Buffer compress failed:]{lang="EN-US"}]{#struct_0_28483_x1134_x201083067}
+Buffer compress failed:
 
-[[Buffer]{lang="EN-US"}]{#struct_0_28483_x1134_x200886459}[压缩失败]{style="font-family:宋体"}
+Buffer压缩失败
 
-[[Buffer uncompress failed:]{lang="EN-US"}]{#struct_0_28483_x1134_x306914537}
+Buffer uncompress failed:
 
-[[Buffer]{lang="EN-US"}]{#struct_0_28483_x1134_x200951995}[解压缩失败]{style="font-family:宋体"}
+Buffer解压缩失败
 
-[[Detect attack:]{lang="EN-US"}]{#struct_0_28483_x1134_x201410750}
+Detect attack:
 
-[[检测到]{style="font-family:宋体"}[CRC32 ]{lang="EN-US"}]{#struct_0_28483_x1134_x201476286}[压缩攻击]{style="font-family:宋体"}
+检测到CRC32 压缩攻击
 
-[[Failed to generate DH_key:]{lang="EN-US"}]{#struct_0_28483_x1134_1634982560}
+Failed to generate DH_key:
 
-[[生成]{style="font-family:宋体"}[DH]{lang="EN-US"}]{#struct_0_28483_x1134_x201279678}[密钥失败]{style="font-family:宋体"}
+生成DH密钥失败
 
-[[Failed to create BN.]{lang="EN-US"}]{#struct_0_28483_x1134_x201345214}
+Failed to create BN.
 
-[[创建]{style="font-family:宋体"}[BN]{lang="EN-US"}]{#struct_0_28483_x1134_x201148606}[失败]{style="font-family:宋体"}
+创建BN失败
 
-[[Failed to generate DH_private_key]{lang="EN-US"}]{#struct_0_28483_x1134_x201214142}
+Failed to generate DH_private_key
 
-[[生成]{style="font-family:宋体"}[DH]{lang="EN-US"}]{#struct_0_28483_x1134_80593704}[私钥失败]{style="font-family:宋体"}
+生成DH私钥失败
 
-[[Failed to generate DH_key]{lang="EN-US"}]{#struct_0_28483_x1134_x201017534}
+Failed to generate DH_key
 
-[[生成]{style="font-family:宋体"}[DH]{lang="EN-US"}]{#struct_0_28483_x1134_x201083070}[密钥失败]{style="font-family:宋体"}
+生成DH密钥失败
 
-[[Failed to generate DH_key:]{lang="EN-US"}]{#struct_0_28483_x1134_x200886462}
+Failed to generate DH_key:
 
-[[生成]{style="font-family:宋体"}[DH]{lang="EN-US"}]{#struct_0_28483_x1134_x307242214}[密钥失败]{style="font-family:宋体"}
+生成DH密钥失败
 
-[[Failed to generate DH public key.]{lang="EN-US"}]{#struct_0_28483_x1134_x200951998}
+Failed to generate DH public key.
 
-[[生成]{style="font-family:宋体"}[DH]{lang="EN-US"}]{#struct_0_28483_x1134_x201410749}[公钥失败]{style="font-family:宋体"}
+生成DH公钥失败
 
-[[Protocol error.]{lang="EN-US"}]{#struct_0_28483_x1134_x201476285}
+Protocol error.
 
-[[协议错误]{style="font-family:宋体"}]{#struct_0_28483_x1134_x201279677}
+协议错误
 
-[[Failed to seed PRNG.]{lang="EN-US"}]{#struct_0_28483_x1134_x1502279124}
+Failed to seed PRNG.
 
-[[设置]{style="font-family:宋体"}[PRNG]{lang="EN-US"}]{#struct_0_28483_x1134_x201345213}[的种子失败]{style="font-family:宋体"}
+设置PRNG的种子失败
 
-[[Failed to send SSH2_MSG_KEXINIT:]{lang="EN-US"}]{#struct_0_28483_x1134_x201148605}
+Failed to send SSH2_MSG_KEXINIT:
 
-[[发送]{style="font-family:宋体"}[SSH2_MSG_KEXINIT]{lang="EN-US"}]{#struct_0_28483_x1134_x201214141}[消息失败]{style="font-family:宋体"}
+发送SSH2_MSG_KEXINIT消息失败
 
-[[Received SSH2_MSG_KEXINIT:]{lang="EN-US"}]{#struct_0_28483_x1134_x201017533}
+Received SSH2_MSG_KEXINIT:
 
-[[发送]{style="font-family:宋体"}[SSH2_MSG_KEXINIT]{lang="EN-US"}]{#struct_0_28483_x1134_x201083069}[消息失败：空的交换上下文]{style="font-family:宋体"}
+发送SSH2_MSG_KEXINIT消息失败：空的交换上下文
 
-[[Unsupported key exchange:]{lang="EN-US"}]{#struct_0_28483_x1134_1645050849}
+Unsupported key exchange:
 
-[[不支持的密钥交换类型]{style="font-family:宋体"}]{#struct_0_28483_x1134_x200886461}
+不支持的密钥交换类型
 
-[[No matching cipher found:]{lang="EN-US"}]{#struct_0_28483_x1134_x200951997}
+No matching cipher found:
 
-[[没有匹配的加密算法]{style="font-family:宋体"}]{#struct_0_28483_x1134_1364673195}
+没有匹配的加密算法
 
-[[Matching cipher is not supported:]{lang="EN-US"}]{#struct_0_28483_x1134_1364607659}
+Matching cipher is not supported:
 
-[[匹配的加密算法不支持]{style="font-family:宋体"}]{#struct_0_28483_x1134_1094812610}
+匹配的加密算法不支持
 
-[[No matching mac found:]{lang="EN-US"}]{#struct_0_28483_x1134_1364804267}
+No matching mac found:
 
-[[没有匹配的摘要算法]{style="font-family:宋体"}]{#struct_0_28483_x1134_1364738731}
+没有匹配的摘要算法
 
-[[Unsupported mac *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_1364935339}
+Unsupported mac *xx*
 
-[[不支持的摘要算法]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1364869803}
+不支持的摘要算法*xx*
 
-[[No matching compress found:]{lang="EN-US"}]{#struct_0_28483_x1134_1365066411}
+No matching compress found:
 
-[[没有匹配的压缩算法]{style="font-family:宋体"}]{#struct_0_28483_x1134_1365000875}
+没有匹配的压缩算法
 
-[[Unsupported compress:]{lang="EN-US"}]{#struct_0_28483_x1134_1365197483}
+Unsupported compress:
 
-[[不支持的压缩算法]{style="font-family:宋体"}]{#struct_0_28483_x1134_1365131947}
+不支持的压缩算法
 
-[[Failed to negotiate a key exchange method.]{lang="EN-US"}]{#struct_0_28483_x1134_x1575368628}
+Failed to negotiate a key exchange method.
 
-[[密钥交换算法协商失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1364673196}
+密钥交换算法协商失败
 
-[[Bad kex algorithm:]{lang="EN-US"}]{#struct_0_28483_x1134_1364607660}
+Bad kex algorithm:
 
-[[错误的密钥交换算法]{style="font-family:宋体"}]{#struct_0_28483_x1134_1364804268}
+错误的密钥交换算法
 
-[[No host_key algorithm]{lang="EN-US"}]{#struct_0_28483_x1134_1364738732}
+No host_key algorithm
 
-[[没有主机公钥算法]{style="font-family:宋体"}]{#struct_0_28483_x1134_1364935340}
+没有主机公钥算法
 
-[[Bad host_key algorithm:]{lang="EN-US"}]{#struct_0_28483_x1134_1364869804}
+Bad host_key algorithm:
 
-[[错误的主机公钥算法]{style="font-family:宋体"}]{#struct_0_28483_x1134_1365066412}
+错误的主机公钥算法
 
-[[Bad kex md size *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x463073427}
+Bad kex md size *xx*
 
-[[错误的密钥交换模数大小]{style="font-family:宋体"}]{#struct_0_28483_x1134_1365000876}*[xx]{lang="EN-US"}*
+错误的密钥交换模数大小*xx*
 
-[[Bad host modulus (len *xx*)]{lang="EN-US"}]{#struct_0_28483_x1134_1365197484}
+Bad host modulus (len *xx*)
 
-[[错误的主机模数（长度]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1365131948}[）]{style="font-family:宋体"}
+错误的主机模数（长度*xx*）
 
-[[Bad server modulus (len *xx*)]{lang="EN-US"}]{#struct_0_28483_x1134_1364673193}
+Bad server modulus (len *xx*)
 
-[[错误的服务器模数（长度]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1364607657}[）]{style="font-family:宋体"}
+错误的服务器模数（长度*xx*）
 
-[[Unexpected KEX type *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_1364804265}
+Unexpected KEX type *xx*
 
-[[错误的密钥交换算法类型]{style="font-family:宋体"}]{#struct_0_28483_x1134_1364738729}*[xx]{lang="EN-US"}*
+错误的密钥交换算法类型*xx*
 
-[[Failed to compute DH key]{lang="EN-US"}]{#struct_0_28483_x1134_1364935337}
+Failed to compute DH key
 
-[[计算]{style="font-family:宋体"}[DH]{lang="EN-US"}]{#struct_0_28483_x1134_1364869801}[密钥失败]{style="font-family:宋体"}
+计算DH密钥失败
 
-[[Failed to compute BN]{lang="EN-US"}]{#struct_0_28483_x1134_1365066409}
+Failed to compute BN
 
-[[计算]{style="font-family:宋体"}[BN]{lang="EN-US"}]{#struct_0_28483_x1134_x463401106}[失败]{style="font-family:宋体"}
+计算BN失败
 
-[[Cannot load hostkey]{lang="EN-US"}]{#struct_0_28483_x1134_1365000873}
+Cannot load hostkey
 
-[[加载主机密钥失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1365197481}
+加载主机密钥失败
 
-[[Unsupported hostkey type *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_1365131945}
+Unsupported hostkey type *xx*
 
-[[不支持的主机密钥类型]{style="font-family:宋体"}]{#struct_0_28483_x1134_1364673194}*[xx]{lang="EN-US"}*
+不支持的主机密钥类型*xx*
 
-[[Failed to create RSA key]{lang="EN-US"}]{#struct_0_28483_x1134_1364607658}
+Failed to create RSA key
 
-[[创建]{style="font-family:宋体"}[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_1364804266}[密钥失败]{style="font-family:宋体"}
+创建RSA密钥失败
 
-[[Failed to create DSA key]{lang="EN-US"}]{#struct_0_28483_x1134_1364738730}
+Failed to create DSA key
 
-[[创建]{style="font-family:宋体"}[DSA]{lang="EN-US"}]{#struct_0_28483_x1134_1364935338}[密钥失败]{style="font-family:宋体"}
+创建DSA密钥失败
 
-[[Failed to create key: ]{lang="EN-US"}]{#struct_0_28483_x1134_1364869802}
+Failed to create key:
 
-[[创建密钥失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1365066410}
+创建密钥失败
 
-[[Failed to free key:]{lang="EN-US"}]{#struct_0_28483_x1134_1365000874}
+Failed to free key:
 
-[[释放]{style="font-family:宋体"}[key]{lang="EN-US"}]{#struct_0_28483_x1134_1365197482}[失败]{style="font-family:宋体"}
+释放key失败
 
-[[Failed to compare key:]{lang="EN-US"}]{#struct_0_28483_x1134_1365131946}
+Failed to compare key:
 
-[[密钥比较失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1364673191}
+密钥比较失败
 
-[[Failed to print key finger:]{lang="EN-US"}]{#struct_0_28483_x1134_1364607655}
+Failed to print key finger:
 
-[[打印密钥指纹失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1364804263}
+打印密钥指纹失败
 
-[[Failed to generate rsa_private_key.]{lang="EN-US"}]{#struct_0_28483_x1134_1364738727}
+Failed to generate rsa_private_key.
 
-[[生成]{style="font-family:宋体"}[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_1364935335}[私有失败]{style="font-family:宋体"}
+生成RSA私有失败
 
-[[Failed to generate dsa_private_key.]{lang="EN-US"}]{#struct_0_28483_x1134_1364869799}
+Failed to generate dsa_private_key.
 
-[[生成]{style="font-family:宋体"}[DSA]{lang="EN-US"}]{#struct_0_28483_x1134_1365066407}[私有失败]{style="font-family:宋体"}
+生成DSA私有失败
 
-[[Failed to generate key:]{lang="EN-US"}]{#struct_0_28483_x1134_1365000871}
+Failed to generate key:
 
-[[密钥生成失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1365197479}
+密钥生成失败
 
-[[Failed to setup MAC *xx*, length *yy*.]{lang="EN-US"}]{#struct_0_28483_x1134_1365131943}
+Failed to setup MAC *xx*, length *yy*.
 
-[[设置摘要算法]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1364673192}[失败，长度为]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+设置摘要算法*xx*失败，长度为*yy*
 
-[[Failed to initial MAC]{lang="EN-US"}]{#struct_0_28483_x1134_1364607656}
+Failed to initial MAC
 
-[[初始化摘要算法失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1364804264}
+初始化摘要算法失败
 
-[[Failed to compute MAC:]{lang="EN-US"}]{#struct_0_28483_x1134_1364738728}
+Failed to compute MAC:
 
-[[计算摘要失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1364935336}
+计算摘要失败
 
-[[Failed to add arguments:]{lang="EN-US"}]{#struct_0_28483_x1134_1364869800}
+Failed to add arguments:
 
-[[增加参数失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1365066408}
+增加参数失败
 
-[[Failed to replace argument:]{lang="EN-US"}]{#struct_0_28483_x1134_1365000872}
+Failed to replace argument:
 
-[[替换参数失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1365197480}
+替换参数失败
 
-[[Failed to expend keys:]{lang="EN-US"}]{#struct_0_28483_x1134_1365131944}
+Failed to expend keys:
 
-[[扩展密钥失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1364210160}
+扩展密钥失败
 
-[[Bad channel input state:]{lang="EN-US"}]{#struct_0_28483_x1134_x1364275696}
+Bad channel input state:
 
-[[错误的通道输入状态]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1364079088}
+错误的通道输入状态
 
-[[Bad channel output state:]{lang="EN-US"}]{#struct_0_28483_x1134_x1364144624}
+Bad channel output state:
 
-[[错误的通道输出状态]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1363948016}
+错误的通道输出状态
 
-[[Failed to load cipher \'none\']{lang="EN-US"}]{#struct_0_28483_x1134_x1364013552}
+Failed to load cipher \'none\'
 
-[[载入]{style="font-family:宋体"}[none]{lang="EN-US"}]{#struct_0_28483_x1134_x1363816944}[加密套件失败]{style="font-family:宋体"}
+载入none加密套件失败
 
-[[Compression already enabled]{lang="EN-US"}]{#struct_0_28483_x1134_x1363882480}
+Compression already enabled
 
-[[已经使能了压缩]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1363685872}
+已经使能了压缩
 
-[[Failed to set encrypt key:]{lang="EN-US"}]{#struct_0_28483_x1134_x1363751408}
+Failed to set encrypt key:
 
-[[设置加密密钥失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1364210159}
+设置加密密钥失败
 
-[[No keys for mode *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x1364275695}
+No keys for mode *xx*
 
-[[模式]{style="font-family:宋体"}[xx]{lang="EN-US"}]{#struct_0_28483_x1134_x1364079087}[没有密钥]{style="font-family:宋体"}
+模式xx没有密钥
 
-[[Too many packets with same key]{lang="EN-US"}]{#struct_0_28483_x1134_x1364144623}
+Too many packets with same key
 
-[[使用同一个密钥发送的包个数太多]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1364013551}
+使用同一个密钥发送的包个数太多
 
-[[Read failed:]{lang="EN-US"}]{#struct_0_28483_x1134_x1363816943}
+Read failed:
 
-[[读数据失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1363882479}
+读数据失败
 
-[[Too large packet size:]{lang="EN-US"}]{#struct_0_28483_x1134_x1363685871}
+Too large packet size:
 
-[[包过大]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1363751407}
+包过大
 
-[[Disconnect recursively]{lang="EN-US"}]{#struct_0_28483_x1134_x1364210162}
+Disconnect recursively
 
-[[重复断连]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1364275698}
+重复断连
 
-[[Write failed:]{lang="EN-US"}]{#struct_0_28483_x1134_x1364079090}
+Write failed:
 
-[[写数据失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1363948018}
+写数据失败
 
-[[Write connection closed]{lang="EN-US"}]{#struct_0_28483_x1134_x1364013554}
+Write connection closed
 
-[[连接的写方向已关闭]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1363816946}
+连接的写方向已关闭
 
-[[Failed to ask password:]{lang="EN-US"}]{#struct_0_28483_x1134_x1363882482}
+Failed to ask password:
 
-[[获取密码失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1363685874}
+获取密码失败
 
-[[Failed to encrypt RSA public key, exponent too small or not odd.]{lang="EN-US"}]{#struct_0_28483_x1134_x1363751410}
+Failed to encrypt RSA public key, exponent too small or not odd.
 
-[[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_x1364210161}[公钥加密失败，指数太小或非偶数]{style="font-family:宋体"}
+RSA公钥加密失败，指数太小或非偶数
 
-[[Failed to encrypt RSA public key]{lang="EN-US"}]{#struct_0_28483_x1134_x1364275697}
+Failed to encrypt RSA public key
 
-[[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_x1364079089}[公钥加密失败]{style="font-family:宋体"}
+RSA公钥加密失败
 
-[[Failed to decrypt RSA private key]{lang="EN-US"}]{#struct_0_28483_x1134_x1363948017}
+Failed to decrypt RSA private key
 
-[[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_x1364013553}[私钥解密失败]{style="font-family:宋体"}
+RSA私钥解密失败
 
-[[Failed to generate RSA additional parameters]{lang="EN-US"}]{#struct_0_28483_x1134_x1363816945}
+Failed to generate RSA additional parameters
 
-[[生成]{style="font-family:宋体"}[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_x1363882481}[附加参数失败]{style="font-family:宋体"}
+生成RSA附加参数失败
 
-[[Bad signature blob length:]{lang="EN-US"}]{#struct_0_28483_x1134_x1363685873}
+Bad signature blob length:
 
-[[错误的签名]{style="font-family:宋体"}[blob]{lang="EN-US"}]{#struct_0_28483_x1134_x1363751409}[长度]{style="font-family:宋体"}
+错误的签名blob长度
 
-[[Failed to verify DSA signature]{lang="EN-US"}]{#struct_0_28483_x1134_x1364210164}
+Failed to verify DSA signature
 
-[[验证]{style="font-family:宋体"}[DSA]{lang="EN-US"}]{#struct_0_28483_x1134_x1364275700}[签名失败]{style="font-family:宋体"}
+验证DSA签名失败
 
-[[Failed to set resource limits:]{lang="EN-US"}]{#struct_0_28483_x1134_x1364144628}
+Failed to set resource limits:
 
-[[设置资源限制失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1363948020}
+设置资源限制失败
 
-[[Failed to malloc memory: ]{lang="EN-US"}]{#struct_0_28483_x1134_x1364013556}
+Failed to malloc memory:
 
-[[分配内存失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1363816948}
+分配内存失败
 
-[[Failed to free memory]{lang="EN-US"}]{#struct_0_28483_x1134_x1363882484}
+Failed to free memory
 
-[[释放内存失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1363685876}
+释放内存失败
 
-[[Failed to allocate memory]{lang="EN-US"}]{#struct_0_28483_x1134_x1363751412}
+Failed to allocate memory
 
-[[分配内存失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1364275699}
+分配内存失败
 
-[[Protocol major versions differ for *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x1364079091}
+Protocol major versions differ for *xx*
 
-[[客户端]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1364144627}*[xx]{lang="EN-US"}*[的协议主版本号不同]{style="font-family:宋体"}
+客户端*xx*的协议主版本号不同
 
-[[Bad protocol version identification \'*yy*\' from *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x1363948019}
+Bad protocol version identification \'*yy*\' from *xx*
 
-[[客户端]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1364013555}*[xx]{lang="EN-US"}*[的错误协议版本串]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+客户端*xx*的错误协议版本串*yy*
 
-[[Did not receive identification string from *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x1363882483}
+Did not receive identification string from *xx*
 
-[[没有从]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1363685875}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[收到标识串]{style="font-family:宋体"}
+没有从IP地址*xx*收到标识串
 
-[[Failed to write identification string to ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x1363751411}
+Failed to write identification string to *xx*
 
-[[向地址]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_201873781}[写入标识串失败]{style="font-family:宋体"}
+向地址*xx*写入标识串失败
 
-[[PAM: conversation function passed a null context]{lang="EN-US"}]{#struct_0_28483_x1134_201808245}
+PAM: conversation function passed a null context
 
-[[交互接口为空]{style="font-family:宋体"}]{#struct_0_28483_x1134_201939317}
+交互接口为空
 
-[[PAM: Failed to set TZ environment:]{lang="EN-US"}]{#struct_0_28483_x1134_202135925}
+PAM: Failed to set TZ environment:
 
-[[设置]{style="font-family:宋体"}[TZ]{lang="EN-US"}]{#struct_0_28483_x1134_202070389}[环境变量失败]{style="font-family:宋体"}
+设置TZ环境变量失败
 
-[[PAM: initialization failed]{lang="EN-US"}]{#struct_0_28483_x1134_202266997}
+PAM: initialization failed
 
-[[PAM]{lang="EN-US"}]{#struct_0_28483_x1134_202201461}[初始化失败]{style="font-family:宋体"}
+PAM初始化失败
 
-[[PAM: Failed to set pam item *XX*.]{lang="EN-US"}]{#struct_0_28483_x1134_202332533}
+PAM: Failed to set pam item *XX*.
 
-[[设置]{style="font-family:宋体"}[PAM]{lang="EN-US"}]{#struct_0_28483_x1134_201873782}[的]{style="font-family:宋体"}*[XX]{lang="EN-US"}*[项错误]{style="font-family:宋体"}
+设置PAM的*XX*项错误
 
-[[Failed to verify the RSA authentication response:]{lang="EN-US"}]{#struct_0_28483_x1134_201808246}
+Failed to verify the RSA authentication response:
 
-[[验证]{style="font-family:宋体"}[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_202004854}[认证应答失败]{style="font-family:宋体"}
+验证RSA认证应答失败
 
-[[Unknown message during authentication:]{lang="EN-US"}]{#struct_0_28483_x1134_202135926}
+Unknown message during authentication:
 
-[[认证过程中收到未知消息]{style="font-family:宋体"}]{#struct_0_28483_x1134_202070390}
+认证过程中收到未知消息
 
-[*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_202266998}[ authentication disabled]{lang="EN-US"}
+*[xx*] authentication disabled
 
-[[不支持认证方法]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_202201462}
+不支持认证方法*xx*
 
-[[Unsupported public key algorithm:]{lang="EN-US"}]{#struct_0_28483_x1134_202398070}
+Unsupported public key algorithm:
 
-[[不支持的公钥算法]{style="font-family:宋体"}]{#struct_0_28483_x1134_201873779}
+不支持的公钥算法
 
-[[Unrecognized authentication method name:]{lang="EN-US"}]{#struct_0_28483_x1134_201808243}
+Unrecognized authentication method name:
 
-[[未知的认证方法名]{style="font-family:宋体"}]{#struct_0_28483_x1134_202004851}
+未知的认证方法名
 
-[[Read error from remote host *xx*:]{lang="EN-US"}]{#struct_0_28483_x1134_201939315}
+Read error from remote host *xx*:
 
-[[从远端主机]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_202135923}[读取数据失败]{style="font-family:宋体"}
+从远端主机*xx*读取数据失败
 
-[[Wait returned pid *xx*, expected *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_202266995}
+Wait returned pid *xx*, expected *yy*
 
-[[返回的]{style="font-family:宋体"}[PID]{lang="EN-US"}]{#struct_0_28483_x1134_202201459}[值]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[不是期望的]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+返回的PID值*xx*不是期望的*yy*
 
-[[Stelnet server is disabled or service type is not supported]{lang="EN-US"}]{#struct_0_28483_x1134_202398067}
+Stelnet server is disabled or service type is not supported
 
-[[Stelnet]{lang="EN-US"}]{#struct_0_28483_x1134_202332531}[服务器未使能或者服务器类型不支持]{style="font-family:宋体"}
+Stelnet服务器未使能或者服务器类型不支持
 
-[[No more sessions]{lang="EN-US"}]{#struct_0_28483_x1134_201808244}
+No more sessions
 
-[[没有更多的会话]{style="font-family:宋体"}]{#struct_0_28483_x1134_202004852}
+没有更多的会话
 
-[[Unknown packet type received after authentication:]{lang="EN-US"}]{#struct_0_28483_x1134_201939316}
+Unknown packet type received after authentication:
 
-[[认证通过后收到未知类型的包]{style="font-family:宋体"}]{#struct_0_28483_x1134_202135924}
+认证通过后收到未知类型的包
 
-[[Failed to close PTY:]{lang="EN-US"}]{#struct_0_28483_x1134_202070388}
+Failed to close PTY:
 
-[[关闭]{style="font-family:宋体"}[PTY]{lang="EN-US"}]{#struct_0_28483_x1134_202201460}[失败]{style="font-family:宋体"}
+关闭PTY失败
 
-[[No user for session *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_202398068}
+No user for session *xx*
 
-[[会话（]{style="font-family:宋体"}[ID]{lang="EN-US"}]{#struct_0_28483_x1134_202332532}[为]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[）中没有用户]{style="font-family:宋体"}
+会话（ID为*xx*）中没有用户
 
-[[Free space insufficient:]{lang="EN-US"}]{#struct_0_28483_x1134_201873777}
+Free space insufficient:
 
-[[无剩余磁盘空间]{style="font-family:宋体"}]{#struct_0_28483_x1134_202004849}
+无剩余磁盘空间
 
-[[Failed to get device free space]{lang="EN-US"}]{#struct_0_28483_x1134_201939313}
+Failed to get device free space
 
-[[获取设备剩余磁盘空间失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_202135921}
+获取设备剩余磁盘空间失败
 
-[[Bad message from *xx* local user ]{lang="EN-US"}*[yy]{lang="EN-US"}*]{#struct_0_28483_x1134_202266993}
+Bad message from *xx* local user *yy*
 
-[[接收到本地用户]{style="font-family:宋体"}*[yy]{lang="EN-US"}*]{#struct_0_28483_x1134_202201457}[从地址]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[发来的错误消息]{style="font-family:宋体"}
+接收到本地用户*yy*从地址*xx*发来的错误消息
 
-[[Unknown message *XX*]{lang="EN-US"}]{#struct_0_28483_x1134_202398065}
+Unknown message *XX*
 
-[[未知消息类型]{style="font-family:宋体"}]{#struct_0_28483_x1134_201873778}*[XX]{lang="EN-US"}*
+未知消息类型*XX*
 
-[[Incoming queue grew unexpectedly]{lang="EN-US"}]{#struct_0_28483_x1134_201808242}
+Incoming queue grew unexpectedly
 
-[[输入队列增长异常]{style="font-family:宋体"}]{#struct_0_28483_x1134_202004850}
+输入队列增长异常
 
-[[Abnormal message length *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_201939314}
+Abnormal message length *xx*
 
-[[消息长度]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_202070386}[异常]{style="font-family:宋体"}
+消息长度*xx*异常
 
-[[Read:]{lang="EN-US"}]{#struct_0_28483_x1134_202266994}
+Read:
 
-[[读操作]{style="font-family:宋体"}]{#struct_0_28483_x1134_202201458}
+读操作
 
-[[Write:]{lang="EN-US"}]{#struct_0_28483_x1134_202332530}
+Write:
 
-[[写操作]{style="font-family:宋体"}]{#struct_0_28483_x1134_2124188082}
+写操作
 
-[[Failed to set socket option SO_REUSEPORT:]{lang="EN-US"}]{#struct_0_28483_x1134_2124122546}
+Failed to set socket option SO_REUSEPORT:
 
-[[设置]{style="font-family:宋体"}[Socket]{lang="EN-US"}]{#struct_0_28483_x1134_2124253618}[选项]{style="font-family:宋体"}[SO_REUSEPORT]{lang="EN-US"}[失败]{style="font-family:宋体"}
+设置Socket选项SO_REUSEPORT失败
 
-[[Failed to bind any address]{lang="EN-US"}]{#struct_0_28483_x1134_2124450226}
+Failed to bind any address
 
-[[无法绑定任何地址]{style="font-family:宋体"}]{#struct_0_28483_x1134_2124384690}
+无法绑定任何地址
 
-[[Failed to run in a new session:]{lang="EN-US"}]{#struct_0_28483_x1134_2124515762}
+Failed to run in a new session:
 
-[[无法在新的会话中运行]{style="font-family:宋体"}]{#struct_0_28483_x1134_2124712370}
+无法在新的会话中运行
 
-[[All session info slots are busy now!]{lang="EN-US"}]{#struct_0_28483_x1134_2124188083}
+All session info slots are busy now!
 
-[[会话信息满]{style="font-family:宋体"}]{#struct_0_28483_x1134_2124122547}
+会话信息满
 
-[[Failed to start new child:]{lang="EN-US"}]{#struct_0_28483_x1134_2124319155}
+Failed to start new child:
 
-[[启动新的子进程失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_2124450227}
+启动新的子进程失败
 
-[[Failed to open config server]{lang="EN-US"}]{#struct_0_28483_x1134_2124384691}
+Failed to open config server
 
-[[无法打开配置服务]{style="font-family:宋体"}]{#struct_0_28483_x1134_2124581299}
+无法打开配置服务
 
-[[User *xx* doesn\'t exist!]{lang="EN-US"}]{#struct_0_28483_x1134_2124515763}
+User *xx* doesn\'t exist!
 
-[[用户]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_2124646835}[不存在]{style="font-family:宋体"}
+用户*xx*不存在
 
-[[Failed to disconnect from controlling tty]{lang="EN-US"}]{#struct_0_28483_x1134_2124188080}
+Failed to disconnect from controlling tty
 
-[[从控制]{style="font-family:宋体"}[TTY]{lang="EN-US"}]{#struct_0_28483_x1134_2124319152}[断开连接失败]{style="font-family:宋体"}
+从控制TTY断开连接失败
 
-[[Failed to open /dev/tty:]{lang="EN-US"}]{#struct_0_28483_x1134_2124253616}
+Failed to open /dev/tty:
 
-[[打开]{style="font-family:宋体"}[/dev/tty]{lang="EN-US"}]{#struct_0_28483_x1134_2124450224}[失败]{style="font-family:宋体"}
+打开/dev/tty失败
 
-[[Decodes terminal modes:]{lang="EN-US"}]{#struct_0_28483_x1134_2124581296}
+Decodes terminal modes:
 
-[[解析终端模式]{style="font-family:宋体"}]{#struct_0_28483_x1134_2124515760}
+解析终端模式
 
-[[Setting tty modes failed:]{lang="EN-US"}]{#struct_0_28483_x1134_2124712368}
+Setting tty modes failed:
 
-[[设置]{style="font-family:宋体"}[TTY]{lang="EN-US"}]{#struct_0_28483_x1134_2124188081}[模式失败]{style="font-family:宋体"}
+设置TTY模式失败
 
-[[Failed to write authentication data]{lang="EN-US"}]{#struct_0_28483_x1134_2124122545}
+Failed to write authentication data
 
-[[写认证数据失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_2124319153}
+写认证数据失败
 
-[[Failed to read authentication response length]{lang="EN-US"}]{#struct_0_28483_x1134_2124450225}
+Failed to read authentication response length
 
-[[读认证应答长度失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_2124384689}
+读认证应答长度失败
 
-[[Failed to read authentication response]{lang="EN-US"}]{#struct_0_28483_x1134_2124581297}
+Failed to read authentication response
 
-[[读认证应答失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_2124712369}
+读认证应答失败
 
-[[Bad string length *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_2124646833}
+Bad string length *xx*
 
-[[错误的串长度]{style="font-family:宋体"}]{#struct_0_28483_x1134_2124188078}*[xx]{lang="EN-US"}*
+错误的串长度*xx*
 
-[[Failed to get peer name:]{lang="EN-US"}]{#struct_0_28483_x1134_2124319150}
+Failed to get peer name:
 
-[[获取对端主机名失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_2124253614}
+获取对端主机名失败
 
-[[Non-public channel ]{lang="FR"}]{#struct_0_28483_x1134_2124450222}*[xx]{lang="FR"}*[, type ]{lang="FR"}*[yy]{lang="FR"}*
+Non-public channel *xx*, type *yy*
 
-[[非公用通道号]{style="font-family:宋体"}]{#struct_0_28483_x1134_2124581294}*[xx]{lang="FR"}*[，类型]{style="font-family:宋体"}*[yy]{lang="FR"}*
+非公用通道号*xx*，类型*yy*
 
-[[Failed to set socket options SO_REUSEADDR]{lang="EN-US"}]{#struct_0_28483_x1134_2124515758}
+Failed to set socket options SO_REUSEADDR
 
-[[设置]{style="font-family:宋体"}[Socket]{lang="EN-US"}]{#struct_0_28483_x1134_2124646830}[选项]{style="font-family:宋体"}[SO_REUSEADDR]{lang="EN-US"}[失败]{style="font-family:宋体"}
+设置Socket选项SO_REUSEADDR失败
 
-[[Channel *xx*: connection failed:]{lang="EN-US"}]{#struct_0_28483_x1134_2124188079}
+Channel *xx*: connection failed:
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_2124319151}[：连接失败]{style="font-family:宋体"}
+通道号*xx*：连接失败
 
-[[Use of DES is strongly discouraged due to cryptographic weaknesses]{lang="EN-US"}]{#struct_0_28483_x1134_2124253615}
+Use of DES is strongly discouraged due to cryptographic weaknesses
 
-[[不推荐使用]{style="font-family:宋体"}[DES]{lang="EN-US"}]{#struct_0_28483_x1134_2124384687}[算法，因为加密强度弱]{style="font-family:宋体"}
+不推荐使用DES算法，因为加密强度弱
 
-[[Kex protocol error:]{lang="EN-US"}]{#struct_0_28483_x1134_2124581295}
+Kex protocol error:
 
-[[密钥交换协议错误]{style="font-family:宋体"}]{#struct_0_28483_x1134_2124712367}
+密钥交换协议错误
 
-[[Failed to get key type from name: ]{lang="EN-US"}]{#struct_0_28483_x1134_2124646831}
+Failed to get key type from name:
 
-[[依据密钥名称获取密钥类型失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x604695273}
+依据密钥名称获取密钥类型失败
 
-[[Failed to get key:]{lang="EN-US"}]{#struct_0_28483_x1134_x604564201}
+Failed to get key:
 
-[[获取密钥失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x604629737}
+获取密钥失败
 
-[[Unsupported key type ]{lang="EN-US"}]{#struct_0_28483_x1134_x604498665}*[xx]{lang="FR"}*
+Unsupported key type *xx*
 
-[[不支持的密钥类型]{style="font-family:宋体"}]{#struct_0_28483_x1134_x604367593}*[xx]{lang="FR"}*
+不支持的密钥类型*xx*
 
-[[Failed to sign key:]{lang="EN-US"}]{#struct_0_28483_x1134_x604170985}
+Failed to sign key:
 
-[[密钥签名失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x604695272}
+密钥签名失败
 
-[[Failed to verify key:]{lang="EN-US"}]{#struct_0_28483_x1134_x604760808}
+Failed to verify key:
 
-[[密钥验证失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x604564200}
+密钥验证失败
 
-[[Failed to get key by name \'*xx*\']{lang="EN-US"}]{#struct_0_28483_x1134_x604433128}
+Failed to get key by name \'*xx*\'
 
-[[从密钥名字]{style="font-family:宋体"}]{#struct_0_28483_x1134_x604498664}*[xx]{lang="EN-US"}*[获取密钥实体失败]{style="font-family:宋体"}
+从密钥名字*xx*获取密钥实体失败
 
-[[Failed to get evpkey:]{lang="EN-US"}]{#struct_0_28483_x1134_x604367592}
+Failed to get evpkey:
 
-[[获取]{style="font-family:宋体"}[EVP]{lang="EN-US"}]{#struct_0_28483_x1134_x604236520}[密钥失败]{style="font-family:宋体"}
+获取EVP密钥失败
 
-[[Failed to read the file descriptor flags(*xx*):]{lang="EN-US"}]{#struct_0_28483_x1134_x604695275}
+Failed to read the file descriptor flags(*xx*):
 
-[[读取文件描述符标识]{style="font-family:宋体"}]{#struct_0_28483_x1134_x604760811}*[xx]{lang="EN-US"}*[失败]{style="font-family:宋体"}
+读取文件描述符标识*xx*失败
 
-[[Failed to set the file descriptor flags(*xx*):]{lang="EN-US"}]{#struct_0_28483_x1134_x604629739}
+Failed to set the file descriptor flags(*xx*):
 
-[[设置文件描述符标识]{style="font-family:宋体"}]{#struct_0_28483_x1134_x604433131}*[xx]{lang="EN-US"}*[失败]{style="font-family:宋体"}
+设置文件描述符标识*xx*失败
 
-[[Failed to get socket option TCP_NODELAY:]{lang="EN-US"}]{#struct_0_28483_x1134_x604302059}
+Failed to get socket option TCP_NODELAY:
 
-[[设置]{style="font-family:宋体"}[Socket]{lang="EN-US"}]{#struct_0_28483_x1134_x604367595}[选项]{style="font-family:宋体"}[TCP_NODELAY]{lang="EN-US"}[失败]{style="font-family:宋体"}
+设置Socket选项TCP_NODELAY失败
 
-[[Failed to send message]{lang="EN-US"}]{#struct_0_28483_x1134_x604170987}
+Failed to send message
 
-[[发送消息失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x604695274}
+发送消息失败
 
-[[Failed to receive message header]{lang="EN-US"}]{#struct_0_28483_x1134_x604760810}
+Failed to receive message header
 
-[[接收消息头失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x604629738}
+接收消息头失败
 
-[[Failed to receive message:]{lang="EN-US"}]{#struct_0_28483_x1134_x604433130}
+Failed to receive message:
 
-[[接收消息失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x604302058}
+接收消息失败
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x604367594}[: protocol error for unexpected state *yy*]{lang="EN-US"}
+Channel *xx*: protocol error for unexpected state *yy*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x604236522}[：错误的状态]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[导致协议错误]{style="font-family:宋体"}
+通道号*xx*：错误的状态*yy*导致协议错误
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x604695277}[: read failed for unexpected input state *yy*]{lang="EN-US"}
+Channel *xx*: read failed for unexpected input state *yy*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x604564205}[：错误的输入状态]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[导致]{style="font-family:宋体"}[读失败]{style="font-family:宋体"}
+通道号*xx*：错误的输入状态*yy*导致读失败
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x604629741}[: protocol error for unexpected output state *yy*]{lang="EN-US"}
+Channel *xx*: protocol error for unexpected output state *yy*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x604498669}[：错误的输出状态]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[导致]{style="font-family:宋体"}[协议错误]{style="font-family:宋体"}
+通道号*xx*：错误的输出状态*yy*导致协议错误
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x604302061}[: write failed]{lang="EN-US"}
+Channel *xx*: write failed
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x604170989}[：写错误]{style="font-family:宋体"}
+通道号*xx*：写错误
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x604236525}[: write failed for unexpected output state *yy*]{lang="EN-US"}
+Channel *xx*: write failed for unexpected output state *yy*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x604760812}[：错误的输出状态]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[导致]{style="font-family:宋体"}[写错误]{style="font-family:宋体"}
+通道号*xx*：错误的输出状态*yy*导致写错误
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x604629740}[: no empty buffer]{lang="EN-US"}
+Channel *xx*: no empty buffer
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x604433132}[：无缓存空间]{style="font-family:宋体"}
+通道号*xx*：无缓存空间
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x604302060}[: internal error for unexpected output state *yy*]{lang="EN-US"}
+Channel *xx*: internal error for unexpected output state *yy*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x604367596}[：错误的输出状态]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[导致]{style="font-family:宋体"}[内部错误]{style="font-family:宋体"}
+通道号*xx*：错误的输出状态*yy*导致内部错误
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x604236524}[: cannot send IEOF for unexpected state *yy*]{lang="EN-US"}
+Channel *xx*: cannot send IEOF for unexpected state *yy*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774380250}[：错误的状态]{style="font-family:宋体"}*[y]{lang="EN-US"}[y]{lang="EN-US"}*[导致]{style="font-family:宋体"}[无法发送]{style="font-family:宋体"}[IEOF]{lang="EN-US"}[消息]{style="font-family:宋体"}
+通道号*xx*：错误的状态*yy*导致无法发送IEOF消息
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774183642}[: cannot send SSH_MSG_CHANNEL_OUTPUT_CLOSE for unexpected state ]{lang="EN-US"}*[y]{lang="EN-US"}[y]{lang="EN-US"}*
+Channel *xx*: cannot send SSH_MSG_CHANNEL_OUTPUT_CLOSE for unexpected state *yy*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774576858}[：错误的状态]{style="font-family:宋体"}*[y]{lang="EN-US"}[y]{lang="EN-US"}*[导致无法发送消息]{style="font-family:宋体"}[SSH_MSG_CHANNEL_OUTPUT_CLOSE]{lang="EN-US"}
+通道号*xx*：错误的状态*yy*导致无法发送消息SSH_MSG_CHANNEL_OUTPUT_CLOSE
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774445786}[: SSH2_MSG_CHANNEL_CLOSE received twice]{lang="EN-US"}
+Channel *xx*: SSH2_MSG_CHANNEL_CLOSE received twice
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774511322}[：重复接收到]{style="font-family:宋体"}[SSH2_MSG_CHANNEL_CLOSE]{lang="EN-US"}[消息]{style="font-family:宋体"}
+通道号*xx*：重复接收到SSH2_MSG_CHANNEL_CLOSE消息
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774904538}[: write failed for unexpected output state *yy*]{lang="EN-US"}
+Channel *xx*: write failed for unexpected output state *yy*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774314715}[：错误的输出状态]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[导致]{style="font-family:宋体"}[写失败]{style="font-family:宋体"}
+通道号*xx*：错误的输出状态*yy*导致写失败
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774183643}[: cannot send EOF for unexpected input state *yy*]{lang="EN-US"}
+Channel *xx*: cannot send EOF for unexpected input state *yy*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774576859}[：错误的输入状态]{style="font-family:宋体"}*[y]{lang="EN-US"}[y]{lang="EN-US"}*[导致]{style="font-family:宋体"}[无法发送]{style="font-family:宋体"}[EOF]{lang="EN-US"}[消息]{style="font-family:宋体"}
+通道号*xx*：错误的输入状态*yy*导致无法发送EOF消息
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774642395}[: cannot send CLOSE for input state/output state *yy*/*zz*]{lang="EN-US"}
+Channel *xx*: cannot send CLOSE for input state/output state *yy*/*zz*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774511323}[：错误的输入状态]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[/]{lang="EN-US"}[输出]{style="font-family:
-  宋体"}[状态]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[导致]{style="font-family:宋体"}[无法发送关闭消息]{style="font-family:宋体"}
+通道号*xx*：错误的输入状态*xx*/输出状态*yy*导致无法发送关闭消息
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774904539}[: already sent CLOSE]{lang="EN-US"}
+Channel *xx*: already sent CLOSE
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774314712}[：已经发送关闭消息]{style="font-family:宋体"}
+通道号*xx*：已经发送关闭消息
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774183640}[: failed to shutdown write:]{lang="EN-US"}
+Channel *xx*: failed to shutdown write:
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774576856}[：]{style="font-family:宋体"}[shutdown]{lang="EN-US"}[写失败]{style="font-family:宋体"}
+通道号*xx*：shutdown写失败
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774642392}[: failed to close write:]{lang="EN-US"}
+Channel *xx*: failed to close write:
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774511320}[：关闭写失败]{style="font-family:宋体"}
+通道号*xx*：关闭写失败
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774904536}[: failed to shutdown read:]{lang="EN-US"}
+Channel *xx*: failed to shutdown read:
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774314713}[：]{style="font-family:宋体"}[shutdown]{lang="EN-US"}[读失败]{style="font-family:宋体"}
+通道号*xx*：shutdown读失败
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774183641}[: failed to close read:]{lang="EN-US"}
+Channel *xx*: failed to close read:
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774576857}[：关闭读失败]{style="font-family:宋体"}
+通道号*xx*：关闭读失败
 
-[[Bad packet length ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774445785}
+Bad packet length *xx*
 
-[[错误的包长度]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774511321}
+错误的包长度*xx*
 
-[[Failed to set socket option IP_TOS ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774904537}[:]{lang="EN-US"}
+Failed to set socket option IP_TOS *xx*:
 
-[[设置]{style="font-family:宋体"}[Socket]{lang="EN-US"}]{#struct_0_28483_x1134_1774380246}[选项]{style="font-family:宋体"}[IP_TOS]{lang="EN-US"}[值]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[失败]{style="font-family:宋体"}
+设置Socket选项IP_TOS值*xx*失败
 
-[[Bad max packet size ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774183638}
+Bad max packet size *xx*
 
-[[错误的最大包大小]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1774576854}
+错误的最大包大小*xx*
 
-[[Failed to ask password:]{lang="EN-US"}]{#struct_0_28483_x1134_1774445782}
+Failed to ask password:
 
-[[获取密码失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1774838998}
+获取密码失败
 
-[[Failed to decrypt RSA private key]{lang="EN-US"}]{#struct_0_28483_x1134_1774904534}
+Failed to decrypt RSA private key
 
-[[解密]{style="font-family:宋体"}]{#struct_0_28483_x1134_1774380247}[RSA]{lang="EN-US"}[私钥失败]{style="font-family:宋体"}
+解密RSA私钥失败
 
-[[RSA sign failed:]{lang="EN-US"}]{#struct_0_28483_x1134_1774249175}
+RSA sign failed:
 
-[[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_1774576855}[签名失败]{style="font-family:宋体"}
+RSA签名失败
 
-[[Failed to verify RSA:]{lang="EN-US"}]{#struct_0_28483_x1134_1774445783}
+Failed to verify RSA:
 
-[[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_1774838999}[验证失败]{style="font-family:宋体"}
+RSA验证失败
 
-[[Bad hash length]{lang="EN-US"}]{#struct_0_28483_x1134_x954568641}
+Bad hash length
 
-[[错误的哈希长度]{style="font-family:宋体"}]{#struct_0_28483_x1134_x954503105}
+错误的哈希长度
 
-[[Bad signature length]{lang="EN-US"}]{#struct_0_28483_x1134_x954634177}
+Bad signature length
 
-[[错误的签名长度]{style="font-family:宋体"}]{#struct_0_28483_x1134_x954240961}
+错误的签名长度
 
-[[Failed to decrypt RSA public key:]{lang="EN-US"}]{#struct_0_28483_x1134_x954372033}
+Failed to decrypt RSA public key:
 
-[[解密]{style="font-family:宋体"}]{#struct_0_28483_x1134_x954044353}[RSA]{lang="EN-US"}[公钥失败]{style="font-family:宋体"}
+解密RSA公钥失败
 
-[[Bad decrypted length ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x954568640}
+Bad decrypted length *xx*
 
-[[错误的解密长度]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x954699712}
+错误的解密长度*xx*
 
-[[Hash mismatch]{lang="EN-US"}]{#struct_0_28483_x1134_x954306496}
+Hash mismatch
 
-[[哈希不匹配]{style="font-family:宋体"}]{#struct_0_28483_x1134_x954240960}
+哈希不匹配
 
-[[Failed to get remote hostname]{lang="EN-US"}]{#struct_0_28483_x1134_x954372032}
+Failed to get remote hostname
 
-[[获取远端主机名失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x953978816}
+获取远端主机名失败
 
-[[Failed to set socket option SO_KEEPALIVE:]{lang="EN-US"}]{#struct_0_28483_x1134_x954503107}
+Failed to set socket option SO_KEEPALIVE:
 
-[[设置]{style="font-family:宋体"}[Socket]{lang="EN-US"}]{#struct_0_28483_x1134_x954634179}[选项]{style="font-family:宋体"}[SO_KEEPALIVE]{lang="EN-US"}[失败]{style="font-family:宋体"}
+设置Socket选项SO_KEEPALIVE失败
 
-[[Failed to initialize the INOTIFY]{lang="EN-US"}]{#struct_0_28483_x1134_x954306499}
+Failed to initialize the INOTIFY
 
-[[初始化]{style="font-family:宋体"}]{#struct_0_28483_x1134_x954437571}[INOTIFY]{lang="EN-US"}[失败]{style="font-family:宋体"}
+初始化INOTIFY失败
 
-[[Failed to get name info:]{lang="EN-US"}]{#struct_0_28483_x1134_x954044355}
+Failed to get name info:
 
-[[获取名称信息失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x954568642}
+获取名称信息失败
 
-[[Failed to set socket option:]{lang="EN-US"}]{#struct_0_28483_x1134_x954503106}
+Failed to set socket option:
 
-[[设置]{style="font-family:宋体"}[Socket]{lang="EN-US"}]{#struct_0_28483_x1134_x954634178}[选项失败]{style="font-family:宋体"}
+设置Socket选项失败
 
-[[Failed to change owner *xx* (0 0):]{lang="EN-US"}]{#struct_0_28483_x1134_x954240962}
+Failed to change owner *xx* (0 0):
 
-[[改变]{style="font-family:宋体"}]{#struct_0_28483_x1134_x954372034}[owner]{lang="EN-US"}[失败]{style="font-family:宋体"}
+改变owner失败
 
-[[Failed to change mode *xx* (0666):]{lang="EN-US"}]{#struct_0_28483_x1134_x953978818}
+Failed to change mode *xx* (0666):
 
-[[改变]{style="font-family:宋体"}]{#struct_0_28483_x1134_x954568645}[mode]{lang="EN-US"}[失败]{style="font-family:宋体"}
+改变mode失败
 
-[ ]{lang="EN-US"}
+表1-2 debugging ssh server event命令输出信息描述表
 
-[]{#struct_0_28483_x1134_x954503109}[[表1-2 ]{lang="EN-US"}[debugging ssh server event]{lang="EN-US"}]{#_Toc138241145}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x1322991178}[[字段]{style="font-family:黑体"}]{#struct_0_28483_x1134_x537357159}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_28483_x1134_x365394821}
+PAM: cleanup
 
-[[PAM: cleanup]{lang="EN-US"}]{#struct_0_28483_x1134_349238097}
+清除PAM相关资源
 
-[[清除]{style="font-family:宋体"}[PAM]{lang="EN-US"}]{#struct_0_28483_x1134_x211071035}[相关资源]{style="font-family:宋体"}
+PAM: initializing for \\\"*xx*\\\", service: *yy*
 
-[[PAM: initializing for \\\"*xx*\\\", service: *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_x1335141089}
+为用户*xx*初始化PAM资源，服务类型为*yy*
 
-[[为用户]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x954699717}[初始化]{style="font-family:宋体"}[PAM]{lang="EN-US"}[资源，服务类型为]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+PAM: password authentication accepted for *xx*, level: *yy*, workdir: *zz*
 
-[[PAM: password authentication accepted for *xx*, level: *yy*, workdir: *zz*]{lang="EN-US"}]{#struct_0_28483_x1134_1383080711}
+*[xx*]用户PAM密码认证通过，级别为*yy*，工作路径为*zz*
 
-[*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_734492529}[用户]{style="font-family:宋体"}[PAM]{lang="EN-US"}[密码认证通过，级别为]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[，工作路径为]{style="font-family:宋体"}*[zz]{lang="EN-US"}*
+PAM: password authentication failed for *xx*
 
-[[PAM: password authentication failed for *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x913584799}
+*[xx*]用户PAM密码认证失败
 
-[*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x1812880141}[用户]{style="font-family:宋体"}[PAM]{lang="EN-US"}[密码认证失败]{style="font-family:宋体"}
+Get default work dir: *xx*, return: *yy*
 
-[[Get default work dir: *xx*, return: *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_769550373}
+获取用户的默认工作路径*xx*，返回值*yy*
 
-[[获取用户的默认工作路径]{style="font-family:宋体"}]{#struct_0_28483_x1134_x954634181}*[xx]{lang="EN-US"}*[，]{style="font-family:宋体"}[返回值]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+Sending challenge \'*xx*\'
 
-[[Sending challenge \'*xx*\']{lang="EN-US"}]{#struct_0_28483_x1134_1034428519}
+发送认证挑战字*xx*
 
-[[发送认证挑战字]{style="font-family:宋体"}]{#struct_0_28483_x1134_171424110}*[xx]{lang="EN-US"}*
+Do authentication: invalid user *xx*
 
-[[Do authentication: invalid user *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_254054603}
+认证进行中，非法用户*xx*
 
-[[认证进行中，非法用户]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x793281580}
+Init keyboard interactive device:
 
-[[Init keyboard interactive device:]{lang="EN-US"}]{#struct_0_28483_x1134_x954306501}
+初始化键盘交互设备
 
-[[初始化键盘交互设备]{style="font-family:宋体"}]{#struct_0_28483_x1134_630077062}
+SSH2 authentication challenge:
 
-[[SSH2 authentication challenge:]{lang="EN-US"}]{#struct_0_28483_x1134_x2045967008}
+SSH2认证挑战信息
 
-[[SSH2]{lang="EN-US"}]{#struct_0_28483_x1134_x167423166}[认证挑战信息]{style="font-family:宋体"}
+Start SSH2 authentication challenge:
 
-[[Start SSH2 authentication challenge:]{lang="EN-US"}]{#struct_0_28483_x1134_x954240965}
+开始SSH2认证挑战:
 
-[[开始]{style="font-family:宋体"}[SSH2]{lang="EN-US"}]{#struct_0_28483_x1134_1817637345}[认证挑战]{style="font-family:宋体"}[:]{lang="EN-US"}
+Received *XX*
 
-[[Received *XX*]{lang="EN-US"}]{#struct_0_28483_x1134_x1443399302}
+接收到消息XX，消息类型可包括：SSH2_MSG_USERAUTH_INFO_RESPONSE、SSH2_MSG_SERVICE_REQUEST、SSH2_MSG_USERAUTH_REQUEST、SSH2_MSG_KEXINIT、SSH2_MSG_KEX_DH_GEX_REQUEST、SSH2_MSG_KEX_DH_GEX_REQUEST_OLD、SSH_CMSG_EOF、SSH_CMSG_WINDOW_SIZE
 
-[[接收到消息]{style="font-family:宋体"}[XX]{lang="EN-US"}]{#struct_0_28483_x1134_x1414091362}[，消息类型可包括：]{style="font-family:宋体"}[SSH2_MSG_USERAUTH_INFO_RESPONSE]{lang="EN-US"}[、]{style="font-family:
-  宋体"}[SSH2_MSG_SERVICE_REQUEST]{lang="EN-US"}[、]{style="font-family:宋体"}[SSH2_MSG_USERAUTH_REQUEST]{lang="EN-US"}[、]{style="font-family:宋体"}[SSH2_MSG_KEXINIT]{lang="EN-US"}[、]{style="font-family:宋体"}[SSH2_MSG_KEX_DH_GEX_REQUEST]{lang="EN-US"}[、]{style="font-family:宋体"}[SSH2_MSG_KEX_DH_GEX_REQUEST_OLD]{lang="EN-US"}[、]{style="font-family:宋体"}[SSH_CMSG_EOF]{lang="EN-US"}[、]{style="font-family:宋体"}[SSH_CMSG_WINDOW_SIZE]{lang="EN-US"}
+Publickey authentication
 
-[[Publickey authentication]{lang="EN-US"}]{#struct_0_28483_x1134_1688514045}
+公钥认证
 
-[[公钥认证]{style="font-family:宋体"}]{#struct_0_28483_x1134_x954437573}
+Authentication result: *xx*, authentication algorithm: *yy*
 
-[[Authentication result: *xx*, authentication algorithm: *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_x2092711343}
+认证结果*xx*（0或1），认证算法*yy*
 
-[[认证结果]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1101637618}*[xx]{lang="EN-US"}*[（]{style="font-family:宋体"}[0]{lang="EN-US"}[或]{style="font-family:宋体"}[1]{lang="EN-US"}[）]{style="font-family:宋体"}[，认证算法]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+Username: *xx*, service: *yy*, method: *zz*
 
-[[Username: *xx*, service: *yy*, method: *zz*]{lang="EN-US"}]{#struct_0_28483_x1134_x300131764}
+用户名*xx*，服务类型*yy*，认证方法*zz*
 
-[[用户名]{style="font-family:宋体"}]{#struct_0_28483_x1134_x954372037}*[xx]{lang="EN-US"}*[，]{style="font-family:宋体"}[服务类型]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[，认证方法]{style="font-family:宋体"}*[zz]{lang="EN-US"}*
+Try method *xx*
 
-[[Try method *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x148371211}
+尝试认证方法*xx*
 
-[[尝试认证方法]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x1877637751}
+Get authentication methods:
 
-[[Get authentication methods:]{lang="EN-US"}]{#struct_0_28483_x1134_1351151266}
+获取到认证方法
 
-[[获取到认证方法]{style="font-family:宋体"}]{#struct_0_28483_x1134_x954044357}
+Connection closed by *xx*
 
-[[Connection closed by *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_638918452}
+连接被关闭，对方IP地址为*xx*
 
-[[连接被关闭，对方]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_28483_x1134_x1251464202}[地址为]{style="font-family:宋体"}*[xx]{lang="EN-US"}*
+Exited with status %d
 
-[[Exited with status %d]{lang="EN-US"}]{#struct_0_28483_x1134_x953978821}
+退出，状态为*xx*
 
-[[退出，状态为]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_357930948}
+Received exit confirmation
 
-[[Received exit confirmation]{lang="EN-US"}]{#struct_0_28483_x1134_2043744952}
+接收到退出确认
 
-[[接收到退出确认]{style="font-family:宋体"}]{#struct_0_28483_x1134_x954568644}
+Received SIGCHLD
 
-[[Received SIGCHLD]{lang="EN-US"}]{#struct_0_28483_x1134_1749587782}
+接收到SIGCHLD信号
 
-[[接收到]{style="font-family:宋体"}]{#struct_0_28483_x1134_1269234739}[SIGCHLD]{lang="EN-US"}[信号]{style="font-family:宋体"}
+Entering interactive session for SSH2
 
-[[Entering interactive session for SSH2]{lang="EN-US"}]{#struct_0_28483_x1134_256714359}
+进入SSH2交互会话阶段
 
-[[进入]{style="font-family:宋体"}[SSH2]{lang="EN-US"}]{#struct_0_28483_x1134_x954503108}[交互会话阶段]{style="font-family:宋体"}
+Need rekeying
 
-[[Need rekeying]{lang="EN-US"}]{#struct_0_28483_x1134_x537422695}
+需要重新密钥协商
 
-[[需要重新密钥协商]{style="font-family:宋体"}]{#struct_0_28483_x1134_1588710353}
+Received session request
 
-[[Received session request]{lang="EN-US"}]{#struct_0_28483_x1134_x954699716}
+收到会话请求
 
-[[收到会话请求]{style="font-family:宋体"}]{#struct_0_28483_x1134_1383146247}
+Failed to open session, free channel *xx*
 
-[[Failed to open session, free channel *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x797876083}
+打开会话失败，释放通道号*xx*
 
-[[打开会话失败，释放通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1112739814}
+Received SSH2_MSG_CHANNEL_OPEN:
 
-[[Received SSH2_MSG_CHANNEL_OPEN:]{lang="EN-US"}]{#struct_0_28483_x1134_x954634180}
+接收到消息MSG_CHANNEL_OPEN
 
-[[接收到消息]{style="font-family:宋体"}]{#struct_0_28483_x1134_1034494055}[MSG_CHANNEL_OPEN]{lang="EN-US"}
+Received SSH2_MSG_GLOBAL_REQUEST:
 
-[[Received SSH2_MSG_GLOBAL_REQUEST:]{lang="EN-US"}]{#struct_0_28483_x1134_x1333378522}
+接收到消息SSH2_MSG_GLOBAL_REQUEST
 
-[[接收到消息]{style="font-family:宋体"}]{#struct_0_28483_x1134_x954306500}[SSH2_MSG_GLOBAL_REQUEST]{lang="EN-US"}
+Received SSH2_MSG_CHANNEL_REQUEST:
 
-[[Received SSH2_MSG_CHANNEL_REQUEST:]{lang="EN-US"}]{#struct_0_28483_x1134_630011526}
+接收到消息SSH2_MSG_GLOBAL_REQUEST
 
-[[接收到消息]{style="font-family:宋体"}]{#struct_0_28483_x1134_x526103283}[SSH2_MSG_GLOBAL_REQUEST]{lang="EN-US"}
+Initiate server message dispatch, compatibility: *xx*/*yy*
 
-[[Initiate server message dispatch, compatibility: *xx*/*yy*]{lang="EN-US"}]{#struct_0_28483_x1134_x954240964}
+初始化服务器消息分发机制，兼容性：*xx*/*yy*，其中*xx*表示是否兼容2.0，*yy*表示是否兼容1.3)
 
-[[初始化服务器消息分发机制，兼容性：]{style="font-family:宋体"}]{#struct_0_28483_x1134_1817571809}*[xx]{lang="EN-US"}*[/*yy*]{lang="EN-US"}[，其中]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[表示是否兼容]{style="font-family:宋体"}[2.0]{lang="EN-US"}[，]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[表示是否兼容]{style="font-family:宋体"}[1.3)]{lang="EN-US"}
+Compression disabled
 
-[[Compression disabled]{lang="EN-US"}]{#struct_0_28483_x1134_1636798439}
+取消压缩
 
-[[取消压缩]{style="font-family:宋体"}]{#struct_0_28483_x1134_x954437572}
+Received unsupported request:
 
-[[Received unsupported request:]{lang="EN-US"}]{#struct_0_28483_x1134_x2092645807}
+接收到不支持的请求
 
-[[接收到不支持的请求]{style="font-family:宋体"}]{#struct_0_28483_x1134_x349240100}
+Exec command \'*xx*\'
 
-[[Exec command \'*xx*\']{lang="EN-US"}]{#struct_0_28483_x1134_x954372036}
+执行命令*xx*
 
-[[执行命令]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x148305675}
+Setup environment: user=*xx*, work directory=*yy*, level=*zz*
 
-[[Setup environment: user=*xx*, work directory=*yy*, level=*zz*]{lang="EN-US"}]{#struct_0_28483_x1134_x954044356}
+设置环境变量：用户*xx*，工作路径*yy*，权限级别*zz*
 
-[[设置环境变量：用户]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_638852916}[，工作路径]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[，权限级别]{style="font-family:宋体"}*[zz]{lang="EN-US"}*
+Session id *xx* unused.
 
-[[Session id *xx* unused.]{lang="EN-US"}]{#struct_0_28483_x1134_x828430107}
+会话*xx*设置为未使用
 
-[[会话]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x953978820}[设置为未使用]{style="font-family:宋体"}
+Session info: used *xx*, next_unused *yy*, session_id *zz*, channel_id *mm*, pid *nn*
 
-[[Session info: used *xx*, next_unused *yy*, session_id *zz*, channel_id *mm*, pid *nn*]{lang="EN-US"}]{#struct_0_28483_x1134_357996484}
+会话信息：是否被使用*xx*，下一个未使用session ID *yy* ，会话ID zz，通道号*mm*，进程ID *nn*
 
-[[会话信息：是否被使用]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1171520997}[，下一个未使用]{style="font-family:宋体"}[session ID *yy* ]{lang="EN-US"}[，会话]{style="font-family:宋体"}[ID zz]{lang="EN-US"}[，通道号]{style="font-family:宋体"}*[mm]{lang="EN-US"}*[，进程]{style="font-family:宋体"}[ID *nn*]{lang="EN-US"}
+Session opened: session *xx*, link with channel *yy*
 
-[[Session opened: session *xx*, link with channel *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_611515300}
+会话打开成功，会话ID *xx*，关联通道*yy*
 
-[[会话打开成功，会话]{style="font-family:宋体"}[ID *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x2037347986}[，关联通道]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+Channel request: user *xx*, service type *yy*
 
-[[Channel request: user *xx*, service type *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_x1468040627}
+通道请求：用户*xx*，服务类型*yy*
 
-[[通道请求：用户]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_611580836}[，服务类型]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+Release channel *xx*
 
-[[Release channel *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_265063806}
+释放通道，通道号*xx*
 
-[[释放通道，通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_611384228}
+Close session: session *xx*, pid *yy*
 
-[[Close session: session *xx*, pid *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_43581290}
+关闭会话，会话ID *xx*，进程ID *yy*
 
-[[关闭会话，会话]{style="font-family:宋体"}[ID *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x1190640403}[，进程]{style="font-family:宋体"}[ID *yy*]{lang="EN-US"}
+Request *xx*: sent status *yy*
 
-[[Request *xx*: sent status *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_611449764}
+请求序列号*xx*，发送状态*yy*
 
-[[请求序列号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x122070085}[，发送状态]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+Failed to get full file name from \\\"*xx*\\\"
 
-[[Failed to get full file name from \\\"*xx*\\\"]{lang="EN-US"}]{#struct_0_28483_x1134_611777444}
+从*xx*获取全路径文件名失败
 
-[[从]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x607602431}[获取全路径文件名失败]{style="font-family:宋体"}
+Received client version *xx*
 
-[[Received client version *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x1313863572}
+接收到客户端版本*xx*
 
-[[接收到客户端版本]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_611842980}
+Nothing at all written
 
-[[Nothing at all written]{lang="EN-US"}]{#struct_0_28483_x1134_1108023129}
+未写入任何数据
 
-[[未写入任何数据]{style="font-family:宋体"}]{#struct_0_28483_x1134_611646372}
+Old state mode *xx*
 
-[[Old state mode *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_938576205}
+旧的状态码*xx*
 
-[[旧的状态码]{style="font-family:宋体"}]{#struct_0_28483_x1134_611711908}*[xx]{lang="EN-US"}*
+New state mode *xx*
 
-[[New state mode *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x241887356}
+新的状态码*xx*
 
-[[新的状态码]{style="font-family:宋体"}]{#struct_0_28483_x1134_1093388998}*[xx]{lang="EN-US"}*
+Read EOF
 
-[[Read EOF]{lang="EN-US"}]{#struct_0_28483_x1134_612039588}
+读EOF
 
-[[读]{style="font-family:宋体"}[EOF]{lang="EN-US"}]{#struct_0_28483_x1134_2108733423}
+RSA key re-generation complete, return *xx*
 
-[[RSA key re-generation complete, return *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_612105124}
+重新生成RSA密钥，返回值*xx*
 
-[[重新生成]{style="font-family:宋体"}[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_x1451259150}[密钥，返回值]{style="font-family:宋体"}*[xx]{lang="EN-US"}*
+Client protocol version *x.y*, client software version *zz*
 
-[[Client protocol version *x.y*, client software version *zz*]{lang="EN-US"}]{#struct_0_28483_x1134_611515301}
+客户端协议版本*x.y*，客户端软件版本*zz*
 
-[[客户端协议版本]{style="font-family:宋体"}*[x.y]{lang="EN-US"}*]{#struct_0_28483_x1134_x2037347987}[，客户端软件版本]{style="font-family:宋体"}*[zz]{lang="EN-US"}*
+Hostkey string
 
-[[Hostkey string]{lang="EN-US"}]{#struct_0_28483_x1134_611580837}
+主机密钥串
 
-[[主机密钥串]{style="font-family:宋体"}]{#struct_0_28483_x1134_265063807}
+Server listening on *xx* port *yy*
 
-[[Server listening on *xx* port *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_125222318}
+服务器启动监听IP地址*xx*、端口*yy*
 
-[[服务器启动监听]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_28483_x1134_611384229}[地址]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[、端口]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+Failed to get remote port
 
-[[Failed to get remote port]{lang="EN-US"}]{#struct_0_28483_x1134_43581291}
+获取远端端口号失败
 
-[[获取远端端口号失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_611449765}
+Drop connection *xx*
 
-[[Drop connection *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x122070084}
+丢弃连接，其中*xx*为文件描述句柄号
 
-[[丢弃连接，其中]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_611777445}[为文件描述句柄号]{style="font-family:宋体"}
+Start new child *xx*.
 
-[[Start new child *xx*.]{lang="EN-US"}]{#struct_0_28483_x1134_611842981}
+启动新的子进程，其中*xx*为进程ID
 
-[[启动新的子进程，其中]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1108023130}[为进程]{style="font-family:宋体"}[ID]{lang="EN-US"}
+SSH1 key exchange
 
-[[SSH1 key exchange]{lang="EN-US"}]{#struct_0_28483_x1134_260288336}
+SSH1协议密钥交换
 
-[[SSH1]{lang="EN-US"}]{#struct_0_28483_x1134_611646373}[协议密钥交换]{style="font-family:宋体"}
+Sent *xx* bit server key and yy bit host key
 
-[[Sent *xx* bit server key and yy bit host key]{lang="EN-US"}]{#struct_0_28483_x1134_938576206}
+发送*xx*位的服务器密钥和*yy*位的主机密钥
 
-[[发送]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_611711909}[位的服务器密钥和]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[位的主机密钥]{style="font-family:宋体"}
+Encryption type:
 
-[[Encryption type:]{lang="EN-US"}]{#struct_0_28483_x1134_x241887357}
+加密套件
 
-[[加密套件]{style="font-family:宋体"}]{#struct_0_28483_x1134_612039589}
+Received session key, encryption turned on
 
-[[Received session key, encryption turned on]{lang="EN-US"}]{#struct_0_28483_x1134_612105125}
+接收到会话密钥，启动加密
 
-[[接收到会话密钥，启动加密]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1451259149}
+KEX done
 
-[[KEX done]{lang="EN-US"}]{#struct_0_28483_x1134_611515298}
+密钥交换结束
 
-[[密钥交换结束]{style="font-family:宋体"}]{#struct_0_28483_x1134_1118502417}
+Failed to send data to pid *xx*, return *yy*
 
-[[Failed to send data to pid *xx*, return *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_611580834}
+发送数据到进程*xx*失败，返回值*yy*（-1或成功发送的字节数值）
 
-[[发送数据到进程]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_265063804}[失败，返回值]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[ ]{lang="EN-US"}[（]{style="font-family:
-  宋体"}[-1]{lang="EN-US"}[或成功发送的字节数值）]{style="font-family:宋体"}
+Failed to get session info by user pid *xx*
 
-[[Failed to get session info by user pid *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_611384226}
+依据用户进程*xx*获取会话信息失败
 
-[[依据用户进程]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_43581296}[获取会话信息失败]{style="font-family:宋体"}
+Failed to send session info to SSHD, return *xx*
 
-[[Failed to send session info to SSHD, return *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_611449762}
+向SSHD守护进程发送会话信息失败，返回值*yy*（-1或成功发送的字节数值）
 
-[[向]{style="font-family:宋体"}[SSHD]{lang="EN-US"}]{#struct_0_28483_x1134_x122070087}[守护进程发送会话信息失败，返回值]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[（]{style="font-family:宋体"}[-1]{lang="EN-US"}[或成功发送的字节数值）]{style="font-family:宋体"}
+Delete user *xx* successfully！
 
-[[Delete user *xx* successfully]{lang="EN-US"}]{#struct_0_28483_x1134_611777442}[！]{style="font-family:宋体"}
+成功删除用户*xx*
 
-[[成功删除用户]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x607602425}
+Channel *xx*:read_fd *yy* is a TTY
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_611842978}[read_fd *yy* is a TTY]{lang="EN-US"}
+通道号*xx*：读连接*yy*是TTY
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_770316129}[：读连接]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[是]{style="font-family:宋体"}[TTY]{lang="EN-US"}
+Channel *xx*:big output buffer *yy* \> *zz*
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_611646370}[big output buffer *yy* \> *zz*]{lang="EN-US"}
+通道号*xx*：较大的输出缓存，实际值*yy*\>最大值*zz*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_611711906}[：较大的输出缓存，实际值]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[\>]{lang="EN-US"}[最大值]{style="font-family:
-  宋体"}*[zz]{lang="EN-US"}*
+Channel *xx*:request *yy* confirm *zz*
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x241887362}[request *yy* confirm *zz*]{lang="EN-US"}
+通道号*xx*：请求*yy*、确认*zz*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_612039586}[：请求]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[、确认]{style="font-family:宋体"}*[zz]{lang="EN-US"}*
+Channel *xx*:closing
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_2108733421}[closing]{lang="EN-US"}
+通道号*xx*：关闭中
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_612105122}[：关闭中]{style="font-family:宋体"}
+Channel *xx*:connected to *yy* port *zz*
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x1451259144}[connected to *yy* port *zz*]{lang="EN-US"}
+通道号*xx*：连接到IP地址*yy*、端口*zz*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_611515299}[：连接到]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[、端口]{style="font-family:宋体"}*[zz]{lang="EN-US"}*
+Channel *xx*:not open
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_611580835}[not open]{lang="EN-US"}
+通道号*xx*：未打开
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_265063805}[：未打开]{style="font-family:宋体"}
+Channel *xx*:input draining
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_611384227}[input draining]{lang="EN-US"}
+通道号*xx*：输出关闭中
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_43581297}[：输出关闭中]{style="font-family:宋体"}
+Channel *xx*:Failed to filter
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_611449763}[Failed to filter]{lang="EN-US"}
+通道号*xx*：停止过滤
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_611777443}[：停止过滤]{style="font-family:宋体"}
+Channel *xx*:window *yy* sent adjust *zz*
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x607602426}[window *yy* sent adjust *zz*]{lang="EN-US"}
+通道号*xx*：窗口*yy*发送调整量*zz*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_611842979}[：窗口]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[发送调整量]{style="font-family:宋体"}*[zz]{lang="EN-US"}*
+Channel *xx*:garbage collecting
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_770316130}[garbage collecting]{lang="EN-US"}
+通道号*xx*：资源回收中
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_611646371}[：资源回收中]{style="font-family:宋体"}
+Channel *xx*:sent extended data *yy*
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_611711907}[sent extended data *yy*]{lang="EN-US"}
+通道号*xx*：发送扩展数据*yy*字节
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x241887363}[：发送扩展数据]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[字节]{style="font-family:宋体"}
+Channel *xx*:accepting extended_data after EOF
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_612039587}[accepting extended_data after EOF]{lang="EN-US"}
+通道号*xx*：EOF状态后收到了扩展数据
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_2108733420}[：]{style="font-family:宋体"}[EOF]{lang="EN-US"}[状态后收到了扩展数据]{style="font-family:宋体"}
+Channel *xx*:received too much extended data *yy* bytes, window_size *zz*
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_612105123}[received too much extended data *yy* bytes, window_size *zz*]{lang="EN-US"}
+通道号*xx*：接收太多的扩展数据*yy*，窗口大小*zz*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_611515296}[：接收太多的扩展数据]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[，窗口大小]{style="font-family:宋体"}*[zz]{lang="EN-US"}*
+Channel *xx*:received extended data *yy* bytes
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_1118502411}[received extended data *yy* bytes]{lang="EN-US"}
+通道号*xx*：接收扩展数据*yy*字节
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_611580832}[：接收扩展数据]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[字节]{style="font-family:宋体"}
+Channel *xx*:FORCE input drain
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_611384224}[FORCE input drain]{lang="EN-US"}
+通道号*xx*：输入强行关闭
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_43581294}[：输入强行关闭]{style="font-family:宋体"}
+Bad cipher *xx* *yy*
 
-[[Bad cipher *xx* \[*yy*\]]{lang="EN-US"}]{#struct_0_28483_x1134_611449760}
+错误的加密套件xx 收到的完整的加密套件串列表*yy*
 
-[[错误的加密套件]{style="font-family:宋体"}[xx \[]{lang="EN-US"}]{#struct_0_28483_x1134_611777440}[收到的完整的加密套件串列表]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[\]]{lang="EN-US"}
+Enabling compatibility mode for protocol 2.0
 
-[[Enabling compatibility mode for protocol 2.0]{lang="EN-US"}]{#struct_0_28483_x1134_x607602427}
+使能兼容2.0版本
 
-[[使能兼容]{style="font-family:宋体"}[2.0]{lang="EN-US"}]{#struct_0_28483_x1134_611842976}[版本]{style="font-family:宋体"}
+Enabling compatibility mode for protocol 1.3
 
-[[Enabling compatibility mode for protocol 1.3]{lang="EN-US"}]{#struct_0_28483_x1134_770316127}
+使能兼容1.3版本
 
-[[使能兼容]{style="font-family:宋体"}[1.3]{lang="EN-US"}]{#struct_0_28483_x1134_611646368}[版本]{style="font-family:宋体"}
+Enabling compression at level *xx*
 
-[[Enabling compression at level *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_611711904}
+使能*xx*等级的压缩算法
 
-[[使能]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x241887360}[等级的压缩算法]{style="font-family:宋体"}
+Compress outgoing: raw data *xx* bytes, compressed *yy* bytes, factor *zz*
 
-[[Compress outgoing: raw data *xx* bytes, compressed *yy* bytes, factor *zz*]{lang="EN-US"}]{#struct_0_28483_x1134_612039584}
+压缩输出：原始数据*xx*字节，压缩后为*yy*字节，比例为*zz*
 
-[[压缩输出：原始数据]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_612105120}[字节，压缩后为]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[字节，比例为]{style="font-family:宋体"}*[zz]{lang="EN-US"}*
+Compress incoming: raw data *xx* bytes, compressed *yy* bytes, factor *zz*
 
-[[Compress incoming: raw data *xx* bytes, compressed *yy* bytes, factor *zz*]{lang="EN-US"}]{#struct_0_28483_x1134_x1451259146}
+压缩输入：原始数据*xx*字节，压缩后为*yy*字节，比例为*zz*
 
-[[压缩输入：原始数据]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_611515297}[字节，压缩后为]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[字节，比例为]{style="font-family:宋体"}*[zz]{lang="EN-US"}*
+Installing CRC compensation attack detector
 
-[[Installing CRC compensation attack detector]{lang="EN-US"}]{#struct_0_28483_x1134_611580833}
+安装CRC补偿攻击探测器
 
-[[安装]{style="font-family:宋体"}[CRC]{lang="EN-US"}]{#struct_0_28483_x1134_265063811}[补偿攻击探测器]{style="font-family:宋体"}
+Kex strings(*xx*):
 
-[[Kex strings(*xx*):]{lang="EN-US"}]{#struct_0_28483_x1134_611384225}
+密钥交互串信息，xx取值代表如下涵义：
 
-[[密钥交互串信息，]{style="font-family:宋体"}[xx]{lang="EN-US"}]{#struct_0_28483_x1134_611449761}[取值代表如下涵义：]{style="font-family:宋体"}
+·0：密钥交换算法串；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0]{lang="EN-US"}]{#struct_0_28483_x1134_611777441}[：密钥交换算法串；]{lang="EN-US" style="font-family:宋体"}
+·1：服务器端支持的主机公钥算法串；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[1]{lang="EN-US"}]{#struct_0_28483_x1134_x607602428}[：服务器端支持的主机公钥算法串；]{style="font-family:宋体"}
+·2：客户端到服务器端的加密算法串；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[2]{lang="EN-US"}]{#struct_0_28483_x1134_611842977}[：客户端到服务器端的加密算法串；]{style="font-family:宋体"}
+·3：服务器端到客户端的加密算法串；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[3]{lang="EN-US"}]{#struct_0_28483_x1134_611646369}[：服务器端到客户端的加密算法串；]{style="font-family:宋体"}
+·4：客户端到服务器端的HMAC算法串；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[4]{lang="EN-US"}]{#struct_0_28483_x1134_x1400075948}[：客户端到服务器端的]{style="font-family:宋体"}[HMAC]{lang="EN-US"}[算法串；]{style="font-family:宋体"}
+·5：服务器端到客户端的HMAC算法串；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[5]{lang="EN-US"}]{#struct_0_28483_x1134_611711905}[：服务器端到客户端的]{style="font-family:宋体"}[HMAC]{lang="EN-US"}[算法串；]{style="font-family:宋体"}
+·6：客户端到服务器端的压缩算法串；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[6]{lang="EN-US"}]{#struct_0_28483_x1134_612039585}[：客户端到服务器端的压缩算法串；]{style="font-family:宋体"}
+·7：服务器端到客户端的压缩算法串；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[7]{lang="EN-US"}]{#struct_0_28483_x1134_612105121}[：服务器端到客户端的压缩算法串；]{style="font-family:宋体"}
+·8：客户端到服务器端的语言选择串；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[8]{lang="EN-US"}]{#struct_0_28483_x1134_x1451259145}[：客户端到服务器端的语言选择串；]{style="font-family:宋体"}
+·9：服务器端到客户端的语言选择串
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[9]{lang="EN-US"}]{#struct_0_28483_x1134_x2117368055}[：服务器端到客户端的语言选择串]{style="font-family:宋体"}
+Proposal mismatch:
 
-[[Proposal mismatch:]{lang="EN-US"}]{#struct_0_28483_x1134_x2117302519}
+密钥交互串匹配失败
 
-[[密钥交互串匹配失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2117499127}
+My proposal kex:
 
-[[My proposal kex:]{lang="EN-US"}]{#struct_0_28483_x1134_x963925986}
+我的密钥交互串
 
-[[我的密钥交互串]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2117433591}
+Peer proposal kex:
 
-[[Peer proposal kex:]{lang="EN-US"}]{#struct_0_28483_x1134_x2117105911}
+对方的密钥交互串
 
-[[对方的密钥交互串]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1029039115}
+Kex: *xx*, Encrypt: *yy*, HMAC: *zz*, Compress: *mm*
 
-[[Kex: *xx*, Encrypt: *yy*, HMAC: *zz*, Compress: *mm*]{lang="EN-US"}]{#struct_0_28483_x1134_x2117040375}
+密钥交换算法*xx*，加密算法*yy*，摘要算法*zz*，压缩算法*mm*
 
-[[密钥交换算法]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2117236983}[，加密算法]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[，摘要算法]{style="font-family:宋体"}*[zz]{lang="EN-US"}*[，压缩算法]{style="font-family:宋体"}*[mm]{lang="EN-US"}*
+Bad HAMC *xx* *yy*
 
-[[Bad HAMC *xx* \[*yy*\]]{lang="EN-US"}]{#struct_0_28483_x1134_x2117171447}
+错误的摘要算法*xx*摘要算法串*yy*
 
-[[错误的摘要算法]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[\[]{lang="EN-US"}]{#struct_0_28483_x1134_788047307}[摘要算法串]{style="font-family:
-  宋体"}*[yy]{lang="EN-US"}*[\]]{lang="EN-US"}
+Send message: type *xx*
 
-[[Send message: type *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x2116843767}
+发送消息：消息类型*xx*
 
-[[发送消息：消息类型]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2116778231}
+Channel *xx*:input state: *xx* -\> *yy*
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x2117368054}[input state: *xx* -\> *yy*]{lang="EN-US"}
+通道号*xx*：输入状态由*xx*状态切换到*yy*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x1308915277}[：输入状态由]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[状态切换到]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+Channel *xx*:output state: *xx* -\> *yy*
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x2117302518}[output state: *xx* -\> *yy*]{lang="EN-US"}
+通道号*xx*：输出状态由*xx*状态切换到*yy*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2117499126}[：输出状态由]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[状态切换到]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+Channel *xx*:received *XX*
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x2117433590}[received *XX*]{lang="EN-US"}
+通道号*xx*：接收到消息*XX*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2117105910}[：接收到消息]{style="font-family:宋体"}*[XX]{lang="EN-US"}*
+Channel *xx*: read failed
 
-[[Channel *xx*: read failed]{lang="EN-US"}]{#struct_0_28483_x1134_537044826}
+通道号*xx*：读数据失败
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2117040374}[：读数据失败]{style="font-family:宋体"}
+Channel *xx*:send *XX*
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x2117236982}[send *XX*]{lang="EN-US"}
+通道号*xx*：发送消息*XX*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2117171446}[：发送消息]{style="font-family:宋体"}*[XX]{lang="EN-US"}*
+Channel *xx*:write failed
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x2116843766}[write failed]{lang="EN-US"}
+通道号*xx*：写失败
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_316911763}[：写失败]{style="font-family:宋体"}
+Channel *xx*:mode=*yy*
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x2116778230}[mode=*yy*]{lang="EN-US"}
+通道号*xx*：新的模式*yy*（0和1，分别对应MODE_IN或者MODE_OUT）
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2117368057}[：新的模式]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[（]{style="font-family:宋体"}[0]{lang="EN-US"}[和]{style="font-family:宋体"}[1]{lang="EN-US"}[，分别对应]{style="font-family:宋体"}[MODE_IN]{lang="EN-US"}[或者]{style="font-family:宋体"}[MODE_OUT]{lang="EN-US"}[）]{style="font-family:宋体"}
+Expecting packet type *xx*
 
-[[Expecting packet type ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2117302521}
+期望收到包类型*xx*
 
-[[期望收到包类型]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x1961878551}
+Remote message:
 
-[[Remote message:]{lang="EN-US"}]{#struct_0_28483_x1134_x2117499129}
+远端发来的信息
 
-[[远端发来的信息]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2117433593}
+Set max packet size to *xx*
 
-[[Set max packet size to ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2117105913}
+设置最大包大小为*xx*
 
-[[设置最大包大小为]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2117040377}
+Read passphrase:
 
-[[Read passphrase:]{lang="EN-US"}]{#struct_0_28483_x1134_x2117236985}
+读取密码
 
-[[读取密码]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1283779590}
+Sent message: type *xx*, ID *yy*
 
-[[Sent message: type ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2117171449}[, ID ]{lang="EN-US"}*[yy]{lang="EN-US"}*
+发送消息：类型为*xx*，消息ID为*yy*
 
-[[发送消息：类型为]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2116843769}[，消息]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+DSA verify:
 
-[[DSA verify:]{lang="EN-US"}]{#struct_0_28483_x1134_x2116778233}
+DSA验证
 
-[[DSA]{lang="EN-US"}]{#struct_0_28483_x1134_x2117368056}[验证]{style="font-family:宋体"}
+RSA verify
 
-[[RSA verify]{lang="EN-US"}]{#struct_0_28483_x1134_x2117302520}
+RSA验证
 
-[[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_x395794610}[验证]{style="font-family:宋体"}
+Ignoring unsupported tty mode, opcode *xx*
 
-[[Ignoring unsupported tty mode, opcode *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x2117499128}
+忽略不支持的TTY模式，操作码为*xx*
 
-[[忽略不支持的]{style="font-family:宋体"}[TTY]{lang="EN-US"}]{#struct_0_28483_x1134_x2117433592}[模式，操作码为]{style="font-family:宋体"}*[xx]{lang="EN-US"}*
+Found matching *xx* key, key finger is *yy*
 
-[[Found matching *xx* key, key finger is *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_x2117105912}
+找到匹配的*xx*类型的密钥，密钥指纹串为*yy*。其中，可能是RSA、RSA、DSA
 
-[[找到匹配的]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2117040376}[类型的密钥，密钥指纹串为]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[。其中，可能是]{style="font-family:宋体"}[RSA]{lang="EN-US"}[、]{style="font-family:宋体"}[RSA]{lang="EN-US"}[、]{style="font-family:宋体"}[DSA]{lang="EN-US"}
+Failed to get domain from 'xx'
 
-[[Failed to get domain from 'xx']{lang="EN-US"}]{#struct_0_28483_x1134_x1898889824}
+从用户名xx中获取ISP域名失败
 
-[[从用户名]{style="font-family:宋体"}[xx]{lang="EN-US"}]{#struct_0_28483_x1134_x1898955360}[中获取]{style="font-family:宋体"}[ISP]{lang="EN-US"}[域名失败]{style="font-family:宋体"}
+Failed *mm* for xx from yy port zzz ssh2
 
-[[Failed *mm* for xx from yy port zzz ssh2]{lang="EN-US"}]{#struct_0_28483_x1134_x1898496608}
+用户使用*mm*认证方式认证失败，用户名为xx，用户IP为yy，源端口号为zz。
 
-[[用户使用]{style="font-family:宋体"}*[mm]{lang="EN-US"}*]{#struct_0_28483_x1134_x1898562144}[认证方式认证失败，用户名为]{style="font-family:宋体"}[xx]{lang="EN-US"}[，用户]{style="font-family:宋体"}[IP]{lang="EN-US"}[为]{style="font-family:宋体"}[yy]{lang="EN-US"}[，源端口号为]{style="font-family:宋体"}[zz]{lang="EN-US"}[。]{style="font-family:宋体"}
+表1-3 debugging ssh server message命令输出信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表1-3 ]{lang="EN-US"}[debugging ssh server message]{lang="EN-US"}]{#struct_0_28483_x1134_468037750}[命令输出信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x1284197418}[[字段]{style="font-family:黑体"}]{#struct_0_28483_x1134_x1531723744}
+Prepare packet*xx*
 
-[[描述]{style="font-family:黑体"}]{#struct_0_28483_x1134_1594394248}
+准备消息消息类型*xx*
 
-[[Prepare packet\[*xx*\]]{lang="DE"}]{#struct_0_28483_x1134_x2117236984}
+Compression: raw_len *xx*, compressed_len *yy*
 
-[[准备消息]{style="font-family:宋体"}[\[]{lang="EN-US"}]{#struct_0_28483_x1134_1445103765}[消息类型]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[\]]{lang="EN-US"}
+数据压缩：原始数据大小为*xx*，压缩后数据大小为*yy*
 
-[[Compression: raw_len *xx*, compressed_len *yy*]{lang="DE"}]{#struct_0_28483_x1134_298110750}
+Input: Length before de-compress *xx*, length after de-compress *yy*
 
-[[数据压缩：原始数据大小为]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x425015199}[，压缩后数据大小为]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+输入：解压前数据长度为*xx*，解压后数据长度为*yy*
 
-[[Input: Length before de-compress *xx*, length after de-compress *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_x1731550566}
+Received packet type *xx*
 
-[[输入：解压前数据长度为]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2117171448}[，解压后数据长度为]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+接收到消息*xx*
 
-[[Received packet type *xx*]{lang="DE"}]{#struct_0_28483_x1134_x1228375328}
+【举例】
 
-[[接收到消息]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x1409191573}
+\# 打开SSH服务器端的错误调试信息开关。远端用户abc从IP地址为192.168.0.59的客户端上登录本设备，第一次输入密码错误。
 
-[ ]{lang="EN-US"}
+\<Sysname\> debugging ssh server error
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_28483_x1134_x253943047}
+%Dec 31 17:50:35:219 2009 Sysname SSHS/6/SSHLOG: Failed password for abc from 192.168.0.59 port 2628 ssh2
 
-[[\# ]{lang="EN-US"}]{#struct_0_28483_x1134_1497339161}[打开]{style="font-family:宋体"}[SSH]{lang="EN-US"}[服务器端的错误调试信息开关。远端用户]{style="font-family:宋体"}[abc]{lang="EN-US"}[从]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[192.168.0.59]{lang="EN-US"}[的客户端上登录本设备，第一次输入密码错误。]{style="font-family:宋体"}
+*// 来自IP地址192.168.0.59、端口2628的用户abc登录设备，密码认证失败（日志信息）*
 
-[[\<Sysname\> debugging ssh server error]{lang="EN-US"}]{#struct_0_28483_x1134_x815448229}
+\# 远端用户第二次输入正确的密码，成功登录本设备。
 
-[%Dec 31 17:50:35:219 2009 Sysname SSHS/6/SSHLOG: Failed password for abc from 192.168.0.59 port 2628 ssh2]{lang="EN-US"}
+%Dec 31 17:50:48:996 2009 Sysname SSHS/6/SSHLOG: Accepted password for abc from 192.168.0.59 port 2628 ssh2
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x990021769}*[来自]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[192.168.0.59]{lang="EN-US"}[、端口]{style="font-family:宋体"}[2628]{lang="EN-US"}[的用户]{style="font-family:宋体"}[abc]{lang="EN-US"}[登录设备，密码认证失败（日志信息）]{style="font-family:宋体"}*
+*// 来自IP地址192.168.0.59、端口2628的用户abc登录设备，密码认证成功（日志信息）*
 
-[[\# ]{lang="EN-US"}]{#struct_0_28483_x1134_x2116843768}[远端用户第二次输入正确的密码，成功登录本设备。]{style="font-family:宋体"}
+\# 远端用户执行quit命令退出。
 
-[[%Dec 31 17:50:48:996 2009 Sysname SSHS/6/SSHLOG: Accepted password for abc from 192.1]{lang="EN-US"}]{#struct_0_28483_x1134_x1202118011}[68.0.59 port 2628 ssh2]{lang="PT-BR"}
+%Dec 31 17:50:51:874 2009 Sysname SSHS/6/SSHLOG: Protocol dispatch error: type 24, seq 15.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_1099517949}*[来自]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[192.168.0.59]{lang="EN-US"}[、端口]{style="font-family:宋体"}[2628]{lang="EN-US"}[的用户]{style="font-family:宋体"}[abc]{lang="EN-US"}[登录设备，密码认证成功（日志信息）]{style="font-family:宋体"}*
+*// 协议消息分发处理失败，消息类型24，请求序号15（日志信息）*
 
-[[\# ]{lang="EN-US"}]{#struct_0_28483_x1134_x1174680415}[远端用户执行]{style="font-family:宋体"}[quit]{lang="EN-US"}[命令退出。]{style="font-family:宋体"}
+\*Dec 31 17:50:51:879 2009 Sysname SSHS/3/ERROR: Read error from remote host 192.168.0.59: Connection reset by peer
 
-[[%Dec 31 17:50:51:874 2009 Sysname SSHS/6/SSHLOG: Protocol dispatch error: type 24, seq 15.]{lang="PT-BR"}]{#struct_0_28483_x1134_1378751646}
+*// 从远端主机192.168.0.59上读取数据错误，对端已关闭连接（调试信息）*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_1381941263}*[协议消息分发处理失败，消息类型]{style="font-family:宋体"}[24]{lang="EN-US"}[，请求序号]{style="font-family:宋体"}[15]{lang="EN-US"}[（日志信息）]{style="font-family:宋体"}*
+%Dec 31 17:50:51:897 2009 Sysname SSHS/6/SSHLOG: Received signal SIGCHLD! pid = 167.
 
-[[\*Dec 31 17:50:51:879 2009 Sysname SSHS/3/ERROR: Read error from remote host 192.168.0.59: Connection reset by peer]{lang="EN-US"}]{#struct_0_28483_x1134_1265363688}
+*// 接收到SIGCHLD信号，PID为167*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x2116778232}*[从远端主机]{style="font-family:宋体"}[192.168.0.59]{lang="EN-US"}[上读取数据错误，对端已关闭连接（调试信息）]{style="font-family:宋体"}*
+\# 打开SSH服务器端的事件调试信息开关。远端用户从192.168.0.58上通过putty客户端登录本设备，用户名为abc、密码为abc。
 
-[[%Dec 31 17:50:51:897 2009 Sysname SSHS/6/SSHLOG: Received signal SIGCHLD! pid = 167.]{lang="EN-US"}]{#struct_0_28483_x1134_x1814565645}
+\<Sysname\> debugging ssh server event
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_1998513712}*[接收到]{style="font-family:宋体"}[SIGCHLD]{lang="EN-US"}[信号，]{style="font-family:宋体"}[PID]{lang="EN-US"}[为]{style="font-family:宋体"}[167]{lang="EN-US"}*
+\*Dec 31 17:58:29:819 2009 Sysname SSHS/7/EVENT: Start new child 135.
 
-[[\# ]{lang="EN-US"}]{#struct_0_28483_x1134_x1993016774}[打开]{style="font-family:宋体"}[SSH]{lang="EN-US"}[服务器端的事件调试信息开关。远端用户从]{style="font-family:宋体"}[192.168.0.58]{lang="EN-US"}[上通过]{style="font-family:宋体"}[putty]{lang="EN-US"}[客户端登录本设备，用户名为]{style="font-family:宋体"}[abc]{lang="EN-US"}[、密码为]{style="font-family:宋体"}[abc]{lang="EN-US"}[。]{style="font-family:宋体"}
+\*Dec 31 17:58:29:841 2009 Sysname SSHS/6/EVENT: Connection from 192.168.0.58 port 1476
 
-[[\<Sysname\> debugging ssh server event]{lang="EN-US"}]{#struct_0_28483_x1134_998188117}
+*// 用户从192.168.0.58的1476端口发起连接请求，用户进程ID为135*
 
-[\*Dec 31 17:58:29:819 2009 Sysname SSHS/7/EVENT: Start new child 135.]{lang="EN-US"}
+\*Dec 31 17:58:29:873 2009 Sysname SSHS/7/EVENT: Client protocol version 2.0, client software version PuTTY_Release_0.60
 
-[\*Dec 31 17:58:29:841 2009 Sysname SSHS/6/EVENT: Connection from 192.168.0.58 port 1476]{lang="EN-US"}
+*// 客户端SSH协议版本号2.0，客户端软件版本信息为PuTTY_Release_0.60*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x805827934}*[用户从]{style="font-family:宋体"}[192.168.0.58]{lang="EN-US"}[的]{style="font-family:宋体"}[1476]{lang="EN-US"}[端口发起连接请求，用户进程]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[135]{lang="EN-US"}*
+\*Dec 31 17:58:29:888 2009 Sysname SSHS/7/EVENT: Enabling compatibility mode for protocol 2.0
 
-[[\*Dec 31 17:58:29:873 2009 Sysname SSHS/7/EVENT: Client protocol version 2.0, client software version PuTTY_Release_0.60]{lang="EN-US"}]{#struct_0_28483_x1134_1289179064}
+\*Dec 31 17:58:29:897 2009 Sysname SSHS/7/EVENT: Local version string SSH-2.0-Comware-7
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_2123056920}*[客户端]{style="font-family:宋体"}[SSH]{lang="EN-US"}[协议版本号]{style="font-family:宋体"}[2.0]{lang="EN-US"}[，客户端软件版本信息为]{style="font-family:宋体"}[PuTTY_Release_0.60]{lang="EN-US"}*
+*// 发给客户端的服务器端版本串信息（版本中的Comware-7与产品型号有关，请以设备的实际情况为准）*
 
-[[\*Dec 31 17:58:29:888 2009 Sysname SSHS/7/EVENT: Enabling compatibility mode for protocol 2.0]{lang="EN-US"}]{#struct_0_28483_x1134_x2117368059}
+\*Dec 31 17:58:29:947 2009 Sysname SSHS/7/EVENT: Hostkey string is : ssh-dss,ssh-rsa
 
-[\*Dec 31 17:58:29:897 2009 Sysname SSHS/7/EVENT: Local version string SSH-2.0-Comware-7]{lang="EN-US"}
+*// 主机公钥串为ssh-dss、ssh-rsa，即支持DSA和RSA公钥算法*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1261861110}*[发给客户端的服务器端版本串信息（版本中的]{style="font-family:宋体"}[Comware-7]{lang="EN-US"}[与产品型号有关，请以设备的实际情况为准）]{style="font-family:宋体"}*
+\*Dec 31 17:58:29:988 2009 Sysname SSHS/7/EVENT: Received SSH2_MSG_KEXINIT.
 
-[[\*Dec 31 17:58:29:947 2009 Sysname SSHS/7/EVENT: Hostkey string is : ssh-dss,ssh-rsa]{lang="EN-US"}]{#struct_0_28483_x1134_x1802235540}
+*// 收到SSH2_MSG_KEXINIT消息*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x19206695}*[主机公钥串为]{style="font-family:宋体"}[ssh-dss]{lang="EN-US"}[、]{style="font-family:宋体"}[ssh-rsa]{lang="EN-US"}[，即支持]{style="font-family:宋体"}[DSA]{lang="EN-US"}[和]{style="font-family:宋体"}[RSA]{lang="EN-US"}[公钥算法]{style="font-family:宋体"}*
+\*Dec 31 17:58:29:993 2009 Sysname SSHS/7/EVENT: My proposal kex:
 
-[[\*Dec 31 17:58:29:988 2009 Sysname SSHS/7/EVENT: Received SSH2_MSG_KEXINIT.]{lang="EN-US"}]{#struct_0_28483_x1134_1040387698}
+*// 服务器端的版本协商算法串信息如下*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_1261567211}*[收到]{style="font-family:宋体"}[SSH2_MSG_KEXINIT]{lang="EN-US"}[消息]{style="font-family:宋体"}*
+\*Dec 31 17:58:30:29 2009 Sysname SSHS/7/EVENT: Kex strings(0): diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
 
-[[\*Dec 31 17:58:29:993 2009 Sysname SSHS/7/EVENT: My proposal kex:]{lang="EN-US"}]{#struct_0_28483_x1134_1549108071}
+*// 密钥交换算法串*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x2117302523}*[服务器端的版本协商算法串信息如下]{style="font-family:宋体"}*
+\*Dec 31 17:58:30:35 2009 Sysname SSHS/7/EVENT: Kex strings(1): ssh-dss,ssh-rsa
 
-[[\*Dec 31 17:58:30:29 2009 Sysname SSHS/7/EVENT: Kex strings(0): diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1]{lang="EN-US"}]{#struct_0_28483_x1134_1170289331}
+*// 服务器端支持的主机公钥算法串*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1444275245}*[密钥交换算法串]{style="font-family:宋体"}*
+\*Dec 31 17:58:30:43 2009 Sysname SSHS/7/EVENT: Kex strings(2): aes128-cbc,3des-cbc,des-cbc
 
-[[\*Dec 31 17:58:30:35 2009 Sysname SSHS/7/EVENT: Kex strings(1): ssh-dss,ssh-rsa]{lang="EN-US"}]{#struct_0_28483_x1134_1952603401}
+*// 客户端到服务器端的加密算法串*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_385992446}*[服务器端支持的主机公钥算法串]{style="font-family:宋体"}*
+\*Dec 31 17:58:30:48 2009 Sysname SSHS/7/EVENT: Kex strings(3): aes128-cbc,3des-cbc,des-cbc
 
-[[\*Dec 31 17:58:30:43 2009 Sysname SSHS/7/EVENT: Kex strings(2): aes128-cbc,3des-cbc,des-cbc]{lang="EN-US"}]{#struct_0_28483_x1134_x216708862}
+*// 服务器端到客户端的加密算法串*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_246118294}*[客户端到服务器端的加密算法串]{style="font-family:宋体"}*
+\*Dec 31 17:58:30:59 2009 Sysname SSHS/7/EVENT: Kex strings(4): hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96
 
-[[\*Dec 31 17:58:30:48 2009 Sysname SSHS/7/EVENT: Kex strings(3): aes128-cbc,3des-cbc,des-cbc]{lang="EN-US"}]{#struct_0_28483_x1134_x2117499131}
+*// 客户端到服务器端的HMAC算法串*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_198807892}*[服务器端到客户端的加密算法串]{style="font-family:宋体"}*
+\*Dec 31 17:58:30:67 2009 Sysname SSHS/7/EVENT: Kex strings(5): hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96
 
-[[\*Dec 31 17:58:30:59 2009 Sysname SSHS/7/EVENT: Kex strings(4): hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96]{lang="EN-US"}]{#struct_0_28483_x1134_x1385639268}
+*// 服务器端到客户端的HMAC算法串*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x880918618}*[客户端到服务器端的]{style="font-family:宋体"}[HMAC]{lang="EN-US"}[算法串]{style="font-family:宋体"}*
+\*Dec 31 17:58:30:76 2009 Sysname SSHS/7/EVENT: Kex strings(6): none,zlib,zlib@openssh.com
 
-[[\*Dec 31 17:58:30:67 2009 Sysname SSHS/7/EVENT: Kex strings(5): hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96]{lang="EN-US"}]{#struct_0_28483_x1134_1007853688}
+*// 客户端到服务器端的压缩算法串*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_1449766479}*[服务器端到客户端的]{style="font-family:宋体"}[HMAC]{lang="EN-US"}[算法串]{style="font-family:宋体"}*
+\*Dec 31 17:58:30:82 2009 Sysname SSHS/7/EVENT: Kex strings(7): none,zlib,zlib@openssh.com
 
-[[\*Dec 31 17:58:30:76 2009 Sysname SSHS/7/EVENT: Kex strings(6): none,zlib,zlib@openssh.com]{lang="EN-US"}]{#struct_0_28483_x1134_835487706}
+*// 服务器端到客户端的压缩算法串*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1546383513}*[客户端到服务器端的压缩算法串]{style="font-family:宋体"}*
+\*Dec 31 17:58:30:91 2009 Sysname SSHS/7/EVENT: Kex strings(8):
 
-[[\*Dec 31 17:58:30:82 2009 Sysname SSHS/7/EVENT: Kex strings(7): none,zlib,zlib@openssh.com]{lang="EN-US"}]{#struct_0_28483_x1134_x2117433595}
+\*Dec 31 17:58:30:96 2009 Sysname SSHS/7/EVENT: Kex strings(9):
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1697442834}*[服务器端到客户端的压缩算法串]{style="font-family:宋体"}*
+**
 
-[[\*Dec 31 17:58:30:91 2009 Sysname SSHS/7/EVENT: Kex strings(8):]{lang="EN-US"}]{#struct_0_28483_x1134_1966544992}
+\*Dec 31 17:58:30:104 2009 Sysname SSHS/7/EVENT: Peer proposal kex:
 
-[\*Dec 31 17:58:30:96 2009 Sysname SSHS/7/EVENT: Kex strings(9):]{lang="EN-US"}
+*// 客户端的版本协商算法串信息如下*
 
-*[ ]{lang="EN-US"}*
+\*Dec 31 17:58:30:111 2009 Sysname SSHS/7/EVENT: Kex strings(0): diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
 
-[\*Dec 31 17:58:30:104 2009 Sysname SSHS/7/EVENT: Peer proposal kex:]{lang="EN-US"}
+*// 密钥交换算法串*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1470159458}*[客户端的版本协商算法串信息如下]{style="font-family:宋体"}*
+\*Dec 31 17:58:30:147 2009 Sysname SSHS/7/EVENT: Kex strings(1): ssh-rsa,ssh-dss
 
-[[\*Dec 31 17:58:30:111 2009 Sysname SSHS/7/EVENT: Kex strings(0): diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1]{lang="EN-US"}]{#struct_0_28483_x1134_128377689}
+*// 服务器端支持的主机公钥算法串*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1749000128}*[密钥交换算法串]{style="font-family:宋体"}*
+\*Dec 31 17:58:30:153 2009 Sysname SSHS/7/EVENT: Kex strings(2): aes256-ctr,aes256-cbc,rijndael-cbc@lysator.liu.se,aes192-ctr,aes192-cbc,aes128-ctr,aes128-cbc,blowfish-ctr,blowfish-cbc,3des-ctr,3des-cbc,arcfour256,arcfour128
 
-[[\*Dec 31 17:58:30:147 2009 Sysname SSHS/7/EVENT: Kex strings(1): ssh-rsa,ssh-dss]{lang="EN-US"}]{#struct_0_28483_x1134_1951936222}
+*// 服务器端支持的加密算法串*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1836292026}*[服务器端支持的主机公钥算法串]{style="font-family:宋体"}*
+\*Dec 31 17:58:30:162 2009 Sysname SSHS/7/EVENT: Kex strings(3): aes256-ctr,aes256-cbc,rijndael-cbc@lysator.liu.se,aes192-ctr,aes192-cbc,aes128-ctr,aes128-cbc,blowfish-ctr,blowfish-cbc,3des-ctr,3des-cbc,arcfour256,arcfour128
 
-[[\*Dec 31 17:58:30:153 2009 Sysname SSHS/7/EVENT: Kex strings(2): aes256-ctr,aes256-cbc,rijndael-cbc@lysator.liu.se,aes192-ctr,aes192-cbc,aes128-ctr,aes128-cbc,blowfish-ctr,blowfish-cbc,3des-ctr,3des-cbc,arcfour256,arcfour128]{lang="EN-US"}]{#struct_0_28483_x1134_x2117105915}
+*// 服务器端到客户端的加密算法串*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_940329353}*[服务器端支持的加密算法串]{style="font-family:宋体"}*
+\*Dec 31 17:58:30:170 2009 Sysname SSHS/7/EVENT: Kex strings(4): hmac-sha1,hmac-sha1-96,hmac-md5
 
-[[\*Dec 31 17:58:30:162 2009 Sysname SSHS/7/EVENT: Kex strings(3): aes256-ctr,aes256-cbc,rijndael-cbc@lysator.liu.se,aes192-ctr,aes192-cbc,aes128-ctr,aes128-cbc,blowfish-ctr,blowfish-cbc,3des-ctr,3des-cbc,arcfour256,arcfour128]{lang="EN-US"}]{#struct_0_28483_x1134_194694422}
+*// 客户端到服务器端的HMAC算法串*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1969852351}*[服务器端到客户端的加密算法串]{style="font-family:宋体"}*
+\*Dec 31 17:58:30:171 2009 Sysname SSHS/7/EVENT: Kex strings(5): hmac-sha1,hmac-sha1-96,hmac-md5
 
-[[\*Dec 31 17:58:30:170 2009 Sysname SSHS/7/EVENT: Kex strings(4): hmac-sha1,hmac-sha1-96,hmac-md5]{lang="EN-US"}]{#struct_0_28483_x1134_x714969791}
+*// 服务器端到客户端的HMAC算法串*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_985203525}*[客户端到服务器端的]{style="font-family:宋体"}[HMAC]{lang="EN-US"}[算法串]{style="font-family:宋体"}*
+\*Dec 31 17:58:30:172 2009 Sysname SSHS/7/EVENT: Kex strings(6): none,zlib
 
-[[\*Dec 31 17:58:30:171 2009 Sysname SSHS/7/EVENT: Kex strings(5): hmac-sha1,hmac-sha1-96,hmac-md5]{lang="EN-US"}]{#struct_0_28483_x1134_580909973}
+*// 客户端到服务器端的压缩算法*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x2117040379}*[服务器端到客户端的]{style="font-family:宋体"}[HMAC]{lang="EN-US"}[算法串]{style="font-family:宋体"}*
+\*Dec 31 17:58:30:173 2009 Sysname SSHS/7/EVENT: Kex strings(7): none,zlib
 
-[[\*Dec 31 17:58:30:172 2009 Sysname SSHS/7/EVENT: Kex strings(6): none,zlib]{lang="EN-US"}]{#struct_0_28483_x1134_1677891331}
+*// 客户端到服务器端的压缩算法*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x101400730}*[客户端到服务器端的压缩算法]{style="font-family:宋体"}*
+\*Dec 31 17:58:30:174 2009 Sysname SSHS/7/EVENT: Kex strings(8):
 
-[[\*Dec 31 17:58:30:173 2009 Sysname SSHS/7/EVENT: Kex strings(7): none,zlib]{lang="EN-US"}]{#struct_0_28483_x1134_1602744675}
+\*Dec 31 17:58:30:243 2009 Sysname SSHS/7/EVENT: Kex strings(9):
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_1246229997}*[客户端到服务器端的压缩算法]{style="font-family:宋体"}*
+\*Dec 31 17:58:30:248 2009 Sysname SSHS/7/EVENT: Kex: client-\>server, Encrypt: aes128-cbc, HMAC: hmac-sha1, Compress: none
 
-[[\*Dec 31 17:58:30:174 2009 Sysname SSHS/7/EVENT: Kex strings(8):]{lang="EN-US"}]{#struct_0_28483_x1134_x845652606}
+*// 协商出来的客户端到服务器端的加密算法、HMAC算法和压缩算法*
 
-[\*Dec 31 17:58:30:243 2009 Sysname SSHS/7/EVENT: Kex strings(9):]{lang="EN-US"}
+\*Dec 31 17:58:30:253 2009 Sysname SSHS/7/EVENT: Kex: server-\>client, Encrypt: aes128-cbc, HMAC: hmac-sha1, Compress: none
 
-[ ]{lang="EN-US"}
+*// 协商出来的服务器端到客户端的加密算法、HMAC算法和压缩算法*
 
-[\*Dec 31 17:58:30:248 2009 Sysname SSHS/7/EVENT: Kex: client-\>server, Encrypt: aes128-cbc, HMAC: hmac-sha1, Compress: none]{lang="EN-US"}
+\*Dec 31 17:58:30:287 2009 Sysname SSHS/7/EVENT: Received SSH2_MSG_KEX_DH_GEX_REQUEST_OLD.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_687220826}*[协商出来的客户端到服务器端的加密算法、]{style="font-family:宋体"}[HMAC]{lang="EN-US"}[算法和压缩算法]{style="font-family:宋体"}*
+*// 接收到SSH2_MSG_KEX_DH_GEX_REQUEST_OLD消息*
 
-[[\*Dec 31 17:58:30:253 2009 Sysname SSHS/7/EVENT: Kex: server-\>client, Encrypt: aes128-cbc, HMAC: hmac-sha1, Compress: none]{lang="EN-US"}]{#struct_0_28483_x1134_x2117236987}
+\*Dec 31 17:58:31:142 2009 Sysname SSHS/7/EVENT: Expecting packet type 32.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_1848388292}*[协商出来的服务器端到客户端的加密算法、]{style="font-family:宋体"}[HMAC]{lang="EN-US"}[算法和压缩算法]{style="font-family:宋体"}*
+\*Dec 31 17:58:33:45 2009 Sysname SSHS/7/EVENT: Set new keys: mode=1
 
-[[\*Dec 31 17:58:30:287 2009 Sysname SSHS/7/EVENT: Received SSH2_MSG_KEX_DH_GEX_REQUEST_OLD.]{lang="EN-US"}]{#struct_0_28483_x1134_777840842}
+*// 设置协商出来的新的算法（mode=1表示输出方向）*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x449088062}*[接收到]{style="font-family:宋体"}[SSH2_MSG_KEX_DH_GEX_REQUEST_OLD]{lang="EN-US"}[消息]{style="font-family:
-宋体"}*
+\*Dec 31 17:58:33:62 2009 Sysname SSHS/7/EVENT: Expecting packet type 21.
 
-[[\*Dec 31 17:58:31:142 2009 Sysname SSHS/7/EVENT: Expecting packet type 32.]{lang="EN-US"}]{#struct_0_28483_x1134_1122350400}
+\*Dec 31 17:58:33:466 2009 Sysname SSHS/7/EVENT: Set new keys: mode=0
 
-[\*Dec 31 17:58:33:45 2009 Sysname SSHS/7/EVENT: Set new keys: mode=1]{lang="EN-US"}
+*// 设置协商出来的新的算法（mode=0标识输入方向）*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1549454333}*[设置协商出来的新的算法（]{style="font-family:宋体"}[mode=1]{lang="EN-US"}[表示输出方向）]{style="font-family:宋体"}*
+\*Dec 31 17:58:33:471 2009 Sysname SSHS/7/EVENT: KEX done.
 
-[[\*Dec 31 17:58:33:62 2009 Sysname SSHS/7/EVENT: Expecting packet type 21.]{lang="EN-US"}]{#struct_0_28483_x1134_185415794}
+*// 密钥交换结束*
 
-[\*Dec 31 17:58:33:466 2009 Sysname SSHS/7/EVENT: Set new keys: mode=0]{lang="EN-US"}
+\*Dec 31 17:58:33:479 2009 Sysname SSHS/7/EVENT: Received SSH2_MSG_SERVICE_REQUEST.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_108524729}*[设置协商出来的新的算法（]{style="font-family:宋体"}[mode=0]{lang="EN-US"}[标识输入方向）]{style="font-family:宋体"}*
+\*Dec 31 17:58:34:459 2009 Sysname SSHS/7/EVENT: Received SSH2_MSG_USERAUTH_REQUEST.
 
-[[\*Dec 31 17:58:33:471 2009 Sysname SSHS/7/EVENT: KEX done.]{lang="EN-US"}]{#struct_0_28483_x1134_x2117171451}
+\*Dec 31 17:58:34:464 2009 Sysname SSHS/7/EVENT: Username: abc, service: ssh-connection, method: none
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x18456211}*[密钥交换结束]{style="font-family:宋体"}*
+*// 接收到用户认证请求消息，消息中的用户名为abc，服务请求串为ssh-connection，认证方法为none（向对方请求对方支持的认证方法列表串）*
 
-[[\*Dec 31 17:58:33:479 2009 Sysname SSHS/7/EVENT: Received SSH2_MSG_SERVICE_REQUEST.]{lang="EN-US"}]{#struct_0_28483_x1134_x792044650}
+\*Dec 31 17:58:34:470 2009 Sysname SSHS/7/EVENT: PAM: initializing for \"abc\", service:login, pure user name:abc, domain:
 
-[\*Dec 31 17:58:34:459 2009 Sysname SSHS/7/EVENT: Received SSH2_MSG_USERAUTH_REQUEST.]{lang="EN-US"}
+*[// PAM*]*初始化，PAM服务类型为login，纯用户名为abc，域名为空*
 
-[\*Dec 31 17:58:34:464 2009 Sysname SSHS/7/EVENT: Username: abc, service: ssh-connection, method: none]{lang="EN-US"}
+\*Dec 31 17:58:34:509 2009 Sysname SSHS/7/EVENT: Try authentication method none.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_582154153}*[接收到用户认证请求消息，消息中的用户名为]{style="font-family:宋体"}[abc]{lang="EN-US"}[，服务请求串为]{style="font-family:宋体"}[ssh-connection]{lang="EN-US"}[，认证方法为]{style="font-family:宋体"}[none]{lang="EN-US"}[（]{style="font-family:宋体"}[向对方请求对方支持的认证方法列表串）]{style="font-family:宋体"}*
+*// 尝试none认证类型*
 
-[[\*Dec 31 17:58:34:470 2009 Sysname SSHS/7/EVENT: PAM: initializing for \"abc\", service:login, pure user name:abc, domain:]{lang="EN-US"}]{#struct_0_28483_x1134_71735259}
+\*Dec 31 17:58:34:520 2009 Sysname SSHS/6/EVENT: Failed none for abc from 192.168.0.58 port 1476 ssh2
 
-[*[// PAM]{lang="EN-US"}*]{#struct_0_28483_x1134_578323026}*[初始化，]{style="font-family:宋体"}[PAM]{lang="EN-US"}[服务类型为]{style="font-family:宋体"}[login]{lang="EN-US"}[，纯用户名为]{style="font-family:宋体"}[abc]{lang="EN-US"}[，域名为空]{style="font-family:宋体"}*
+*[// none*]*认证尝试失败*
 
-[[\*Dec 31 17:58:34:509 2009 Sysname SSHS/7/EVENT: Try authentication method none.]{lang="EN-US"}]{#struct_0_28483_x1134_2030593705}
+\*Dec 31 17:58:34:525 2009 Sysname SSHS/7/EVENT: Get authentication methods: password
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x2116843771}*[尝试]{style="font-family:宋体"}[none]{lang="EN-US"}[认证类型]{style="font-family:宋体"}*
+*// 用户还可挑战的认证方法为password认证方法*
 
-[[\*Dec 31 17:58:34:520 2009 Sysname SSHS/6/EVENT: Failed none for abc from 192.168.0.58 port 1476 ssh2]{lang="EN-US"}]{#struct_0_28483_x1134_1882930168}
+\*Dec 31 17:58:35:673 2009 Sysname SSHS/7/EVENT: Received SSH2_MSG_USERAUTH_REQUEST.
 
-[*[// none]{lang="EN-US"}*]{#struct_0_28483_x1134_818247245}*[认证尝试失败]{style="font-family:宋体"}*
+\*Dec 31 17:58:35:679 2009 Sysname SSHS/7/EVENT: Username: abc, service: ssh-connection, method: password
 
-[[\*Dec 31 17:58:34:525 2009 Sysname SSHS/7/EVENT: Get authentication methods: password]{lang="EN-US"}]{#struct_0_28483_x1134_129673054}
+\*Dec 31 17:58:35:687 2009 Sysname SSHS/7/EVENT: Try authentication method password.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1509926832}*[用户还可挑战的认证方法为]{style="font-family:宋体"}[password]{lang="EN-US"}[认证方法]{style="font-family:宋体"}*
+\*Dec 31 17:58:36:86 2009 Sysname SSHS/7/EVENT: PAM: password authentication accepted for abc, level: 15, workdir:flash:.
 
-[[\*Dec 31 17:58:35:673 2009 Sysname SSHS/7/EVENT: Received SSH2_MSG_USERAUTH_REQUEST.]{lang="EN-US"}]{#struct_0_28483_x1134_471375431}
+*// 用户password认证挑战成功，授权用户角色level-15，授权工作路径为flash:*
 
-[\*Dec 31 17:58:35:679 2009 Sysname SSHS/7/EVENT: Username: abc, service: ssh-connection, method: password]{lang="EN-US"}
+%Dec 31 17:58:36:109 2009 Sysname SSHS/6/SSHLOG: Accepted password for abc from 192.168.0.58 port 1476 ssh2
 
-[\*Dec 31 17:58:35:687 2009 Sysname SSHS/7/EVENT: Try authentication method password.]{lang="EN-US"}
+*// 用户abc从192.168.0.58端口1467发起连接请求，password认证通过*
 
-[\*Dec 31 17:58:36:86 2009 Sysname SSHS/7/EVENT: PAM: password authentication accepted for abc, level: 15, workdir:flash:.]{lang="EN-US"}
+\*Dec 31 17:58:36:139 2009 Sysname SSHS/7/EVENT: Entering interactive session for SSH2.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_762954483}*[用户]{style="font-family:宋体"}[password]{lang="EN-US"}[认证挑战成功，授权用户角色]{style="font-family:宋体"}[level-15]{lang="EN-US"}[，授权工作路径为]{style="font-family:宋体"}[flash:]{lang="EN-US"}*
+\*Dec 31 17:58:36:147 2009 Sysname SSHS/7/EVENT: Initiate server message dispatch, compatibility:1/0
 
-[[%Dec 31 17:58:36:109 2009 Sysname SSHS/6/SSHLOG: Accepted password for abc from 192.168.0.58 port 1476 ssh2]{lang="EN-US"}]{#struct_0_28483_x1134_x2116778235}
+*// 初始化消息分发处理，兼容2.0版本，不兼容1.3版本*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1411281118}*[用户]{style="font-family:宋体"}[abc]{lang="EN-US"}[从]{style="font-family:宋体"}[192.168.0.58]{lang="EN-US"}[端口]{style="font-family:宋体"}[1467]{lang="EN-US"}[发起连接请求，]{style="font-family:宋体"}[password]{lang="EN-US"}[认证通过]{style="font-family:宋体"}*
+\*Dec 31 17:58:36:158 2009 Sysname SSHS/7/EVENT: Received SSH2_MSG_CHANNEL_OPEN: ctype session, rchan 256, win 16384, max 16384
 
-[[\*Dec 31 17:58:36:139 2009 Sysname SSHS/7/EVENT: Entering interactive session for SSH2.]{lang="EN-US"}]{#struct_0_28483_x1134_1907841613}
+\*Dec 31 17:58:36:173 2009 Sysname SSHS/7/EVENT: Received session request.
 
-[\*Dec 31 17:58:36:147 2009 Sysname SSHS/7/EVENT: Initiate server message dispatch, compatibility:1/0]{lang="EN-US"}
+\*Dec 31 17:58:36:185 2009 Sysname SSHS/7/EVENT: Channel 0: new [server-session]
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1392142468}*[初始化消息分发处理，兼容]{style="font-family:宋体"}[2.0]{lang="EN-US"}[版本，不兼容]{style="font-family:宋体"}[1.3]{lang="EN-US"}[版本]{style="font-family:宋体"}*
+\*Dec 31 17:58:36:191 2009 Sysname SSHS/7/EVENT: Session id 0 unused.
 
-[[\*Dec 31 17:58:36:158 2009 Sysname SSHS/7/EVENT: Received SSH2_MSG_CHANNEL_OPEN: ctype session, rchan 256, win 16384, max 16384]{lang="EN-US"}]{#struct_0_28483_x1134_x1274856918}
+\*Dec 31 17:58:36:199 2009 Sysname SSHS/7/EVENT: Session opened: session 0, link with channel 0
 
-[\*Dec 31 17:58:36:173 2009 Sysname SSHS/7/EVENT: Received session request.]{lang="EN-US"}
+*// 接收到SSH2_MSG_CHANNEL_OPEN消息，分配通道号为0，会话ID为0*
 
-[\*Dec 31 17:58:36:185 2009 Sysname SSHS/7/EVENT: Channel 0: new \[server-session\]]{lang="EN-US"}
+\*Dec 31 17:58:36:212 2009 Sysname SSHS/7/EVENT: Received SSH2_MSG_CHANNEL_REQUEST: channel 0, request pty-req, reply 1
 
-[\*Dec 31 17:58:36:191 2009 Sysname SSHS/7/EVENT: Session id 0 unused.]{lang="EN-US"}
+\*Dec 31 17:58:36:225 2009 Sysname SSHS/7/EVENT: Channel request: user abc, service type 1
 
-[\*Dec 31 17:58:36:199 2009 Sysname SSHS/7/EVENT: Session opened: session 0, link with channel 0]{lang="EN-US"}
+*// 用户abc的配置支持服务类型为1（1表示同时支持Stelnet和SFTP服务；2表示支持Stelnet服务，3表示支持SFTP服务）*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1710303854}*[接收到]{style="font-family:宋体"}[SSH2_MSG_CHANNEL_OPEN]{lang="EN-US"}[消息，分配通道号为]{style="font-family:宋体"}[0]{lang="EN-US"}[，会话]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}[0]{lang="EN-US"}*
+\*Dec 31 17:58:36:288 2009 Sysname SSHS/7/EVENT: Received SSH2_MSG_CHANNEL_REQUEST: channel 0, request shell, reply 1
 
-[[\*Dec 31 17:58:36:212 2009 Sysname SSHS/7/EVENT: Received SSH2_MSG_CHANNEL_REQUEST: channel 0, request pty-req, reply 1]{lang="EN-US"}]{#struct_0_28483_x1134_x2117368058}
+*// 接收到类型为shell的通道请求消息*
 
-[\*Dec 31 17:58:36:225 2009 Sysname SSHS/7/EVENT: Channel request: user abc, service type 1]{lang="EN-US"}
+\*Dec 31 17:58:36:298 2009 Sysname SSHS/7/EVENT: Channel request: user abc, service type 1
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_304222831}*[用户]{style="font-family:宋体"}[abc]{lang="EN-US"}[的配置支持服务类型为]{style="font-family:宋体"}[1]{lang="EN-US"}[（]{style="font-family:宋体"}[1]{lang="EN-US"}[表示同时支持]{style="font-family:宋体"}[Stelnet]{lang="EN-US"}[和]{style="font-family:宋体"}[SFTP]{lang="EN-US"}[服务；]{style="font-family:宋体"}[2]{lang="EN-US"}[表示支持]{style="font-family:宋体"}[Stelnet]{lang="EN-US"}[服务，]{style="font-family:宋体"}[3]{lang="EN-US"}[表示支持]{style="font-family:宋体"}[SFTP]{lang="EN-US"}[服务）]{style="font-family:宋体"}*
+\*Dec 31 17:58:36:327 2009 Sysname SSHS/7/EVENT: Channel 0: read_fd 33 is a TTY.
 
-[[\*Dec 31 17:58:36:288 2009 Sysname SSHS/7/EVENT: Received SSH2_MSG_CHANNEL_REQUEST: channel 0, request shell, reply 1]{lang="EN-US"}]{#struct_0_28483_x1134_x2067537943}
+\*Dec 31 17:58:36:337 2009 Sysname SSHS/7/EVENT: Setup environment: user=abc, work directory=flash:, level=15
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x662853958}*[接收到类型为]{style="font-family:宋体"}[shell]{lang="EN-US"}[的通道请求消息]{style="font-family:宋体"}*
+*// 设置用户abc的环境变量：工作路径为flash:，授权等级为15*
 
-[[\*Dec 31 17:58:36:298 2009 Sysname SSHS/7/EVENT: Channel request: user abc, service type 1]{lang="EN-US"}]{#struct_0_28483_x1134_x1140752491}
+\*Dec 31 17:58:36:349 2009 Sysname SSHS/7/EVENT: Get default work dir: /mnt/flash:, return:0
 
-[\*Dec 31 17:58:36:327 2009 Sysname SSHS/7/EVENT: Channel 0: read_fd 33 is a TTY.]{lang="EN-US"}
+\*Dec 31 17:58:40:87 2009 Sysname SSHS/7/EVENT: Received SIGCHLD.
 
-[\*Dec 31 17:58:36:337 2009 Sysname SSHS/7/EVENT: Setup environment: user=abc, work directory=flash:, level=15]{lang="EN-US"}
+\*Dec 31 17:58:40:93 2009 Sysname SSHS/7/EVENT: Channel 0: request exit-status confirm 0
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_148729948}*[设置用户]{style="font-family:宋体"}[abc]{lang="EN-US"}[的环境变量：工作路径为]{style="font-family:宋体"}[flash:]{lang="EN-US"}[，授权等级为]{style="font-family:宋体"}[15]{lang="EN-US"}*
+\*Dec 31 17:58:40:102 2009 Sysname SSHS/7/EVENT: Release channel 0
 
-[[\*Dec 31 17:58:36:349 2009 Sysname SSHS/7/EVENT: Get default work dir: /mnt/flash:, return:0]{lang="EN-US"}]{#struct_0_28483_x1134_x2117302522}
+\*Dec 31 17:58:40:107 2009 Sysname SSHS/7/EVENT: Channel 0: write failed
 
-[\*Dec 31 17:58:40:87 2009 Sysname SSHS/7/EVENT: Received SIGCHLD.]{lang="EN-US"}
+\*Dec 31 17:58:40:111 2009 Sysname SSHS/7/EVENT: Channel 0: send EOW
 
-[\*Dec 31 17:58:40:93 2009 Sysname SSHS/7/EVENT: Channel 0: request exit-status confirm 0]{lang="EN-US"}
+\*Dec 31 17:58:40:115 2009 Sysname SSHS/7/EVENT: Channel 0: output state changed (open -\> closed)
 
-[\*Dec 31 17:58:40:102 2009 Sysname SSHS/7/EVENT: Release channel 0]{lang="EN-US"}
+\*Dec 31 17:58:40:125 2009 Sysname SSHS/7/EVENT: Channel 0: read failed
 
-[\*Dec 31 17:58:40:107 2009 Sysname SSHS/7/EVENT: Channel 0: write failed]{lang="EN-US"}
+\*Dec 31 17:58:40:129 2009 Sysname SSHS/7/EVENT: Channel 0: input state changed (open -\> drain)
 
-[\*Dec 31 17:58:40:111 2009 Sysname SSHS/7/EVENT: Channel 0: send EOW]{lang="EN-US"}
+\*Dec 31 17:58:40:134 2009 Sysname SSHS/7/EVENT: Channel 0: send EOF
 
-[\*Dec 31 17:58:40:115 2009 Sysname SSHS/7/EVENT: Channel 0: output state changed (open -\> closed)]{lang="EN-US"}
+\*Dec 31 17:58:40:138 2009 Sysname SSHS/7/EVENT: Channel 0: input state changed (drain -\> closed)
 
-[\*Dec 31 17:58:40:125 2009 Sysname SSHS/7/EVENT: Channel 0: read failed]{lang="EN-US"}
+\*Dec 31 17:58:40:143 2009 Sysname SSHS/7/EVENT: Channel 0: send SSH2_MSG_CHANNEL_CLOSE
 
-[\*Dec 31 17:58:40:129 2009 Sysname SSHS/7/EVENT: Channel 0: input state changed (open -\> drain)]{lang="EN-US"}
+\*Dec 31 17:58:40:173 2009 Sysname SSHS/7/EVENT: Channel 0: received SSH2_MSG_CHANNEL_CLOSE
 
-[\*Dec 31 17:58:40:134 2009 Sysname SSHS/7/EVENT: Channel 0: send EOF]{lang="EN-US"}
+\*Dec 31 17:58:40:180 2009 Sysname SSHS/7/EVENT: Close session: session 0, pid 0
 
-[\*Dec 31 17:58:40:138 2009 Sysname SSHS/7/EVENT: Channel 0: input state changed (drain -\> closed)]{lang="EN-US"}
+\*Dec 31 17:58:40:185 2009 Sysname SSHS/7/EVENT: Session id 0 unused.
 
-[\*Dec 31 17:58:40:143 2009 Sysname SSHS/7/EVENT: Channel 0: send SSH2_MSG_CHANNEL_CLOSE]{lang="EN-US"}
+\*Dec 31 17:58:40:187 2009 Sysname SSHS/7/EVENT: Channel 0: garbage collecting
 
-[\*Dec 31 17:58:40:173 2009 Sysname SSHS/7/EVENT: Channel 0: received SSH2_MSG_CHANNEL_CLOSE]{lang="EN-US"}
+\*Dec 31 17:58:40:198 2009 Sysname SSHS/7/EVENT: Connection closed by 192.168.0.58
 
-[\*Dec 31 17:58:40:180 2009 Sysname SSHS/7/EVENT: Close session: session 0, pid 0]{lang="EN-US"}
+*// 从IP地址192.168.0.58发起的连接被主动关闭*
 
-[\*Dec 31 17:58:40:185 2009 Sysname SSHS/7/EVENT: Session id 0 unused.]{lang="EN-US"}
+\*Dec 31 17:58:40:203 2009 Sysname SSHS/7/EVENT: PAM: cleanup
 
-[\*Dec 31 17:58:40:187 2009 Sysname SSHS/7/EVENT: Channel 0: garbage collecting]{lang="EN-US"}
+\*Dec 31 17:58:40:205 2009 Sysname SSHS/6/EVENT: Transferred: sent 1928 bytes, received 1624 bytes
 
-[\*Dec 31 17:58:40:198 2009 Sysname SSHS/7/EVENT: Connection closed by 192.168.0.58]{lang="EN-US"}
+*// 传输完成，发送1928字节，接收1624字节*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1558594024}*[从]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[192.168.0.58]{lang="EN-US"}[发起的连接被主动关闭]{style="font-family:宋体"}*
+\*Dec 31 17:58:40:207 2009 Sysname SSHS/6/EVENT: Closing connection to 192.168.0.58 port 1476
 
-[[\*Dec 31 17:58:40:203 2009 Sysname SSHS/7/EVENT: PAM: cleanup]{lang="EN-US"}]{#struct_0_28483_x1134_x511584414}
+*// 关闭与IP地址192.168.0.58、端口1476之间的连接*
 
-[\*Dec 31 17:58:40:205 2009 Sysname SSHS/6/EVENT: Transferred: sent 1928 bytes, received 1624 bytes]{lang="EN-US"}
+\# 打开SSH服务器端的消息调试信息开关。用户从IP地址为192.168.0.59的客户端上登录本设备。登录成功后，用户首先执行了**dir**命令，然后执行**quit**命令退出。
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1710643992}*[传输完成，发送]{style="font-family:宋体"}[1928]{lang="EN-US"}[字节，接收]{style="font-family:宋体"}[1624]{lang="EN-US"}[字节]{style="font-family:宋体"}*
+\<Sysname\> debugging ssh server message
 
-[[\*Dec 31 17:58:40:207 2009 Sysname SSHS/6/EVENT: Closing connection to 192.168.0.58 port 1476]{lang="EN-US"}]{#struct_0_28483_x1134_x2117499130}
+\*Dec 31 16:07:05:723 2009 Sysname SSHS/7/MESSAGE: Prepare packet[20.]
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1367276049}*[关闭与]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}[192.168.0.58]{lang="EN-US"}[、端口]{style="font-family:宋体"}[1476]{lang="EN-US"}[之间的连接]{style="font-family:宋体"}*
+*// 准备消息，消息类型为20（以下各消息涵义类似，解释略）*
 
-[[\# ]{lang="EN-US"}]{#struct_0_28483_x1134_x588164380}[打开]{style="font-family:宋体"}[SSH]{lang="EN-US"}[服务器端的消息调试信息开关。用户从]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[192.168.0.59]{lang="EN-US"}[的客户端上登录本设备。登录成功后，用户首先执行了]{style="font-family:宋体"}**[dir]{lang="EN-US"}**[命令，然后执行]{style="font-family:宋体"}**[quit]{lang="EN-US"}**[命令退出。]{style="font-family:宋体"}
+\*Dec 31 16:07:05:779 2009 Sysname SSHS/7/MESSAGE: Received packet type 20.
 
-[[\<Sysname\> debugging ssh server message]{lang="EN-US"}]{#struct_0_28483_x1134_x1380116790}
+*// 接收到消息，消息类型为20（以下各消息涵义类似，解释略）*
 
-[\*Dec 31 16:07:05:723 2009 Sysname SSHS/7/MESSAGE: Prepare packet\[20\].]{lang="EN-US"}
+\*Dec 31 16:07:05:886 2009 Sysname SSHS/7/MESSAGE: Received packet type 34.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_1762972610}*[准备消息，消息类型为]{style="font-family:宋体"}[20]{lang="EN-US"}[（以下各消息涵义类似，解释略）]{style="font-family:宋体"}*
+\*Dec 31 16:07:05:887 2009 Sysname SSHS/7/MESSAGE: Prepare packet[31.]
 
-[[\*Dec 31 16:07:05:779 2009 Sysname SSHS/7/MESSAGE: Received packet type 20.]{lang="EN-US"}]{#struct_0_28483_x1134_x999408679}
+\*Dec 31 16:07:07:444 2009 Sysname SSHS/7/MESSAGE: Received packet type 32.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_750879058}*[接收到消息，消息类型为]{style="font-family:宋体"}[20]{lang="EN-US"}[（以下各消息涵义类似，解释略）]{style="font-family:宋体"}*
+\*Dec 31 16:07:09:294 2009 Sysname SSHS/7/MESSAGE: Prepare packet[33.]
 
-[[\*Dec 31 16:07:05:886 2009 Sysname SSHS/7/MESSAGE: Received packet type 34.]{lang="EN-US"}]{#struct_0_28483_x1134_x2117105914}
+\*Dec 31 16:07:09:301 2009 Sysname SSHS/7/MESSAGE: Prepare packet[21.]
 
-[\*Dec 31 16:07:05:887 2009 Sysname SSHS/7/MESSAGE: Prepare packet\[31\].]{lang="EN-US"}
+\*Dec 31 16:07:11:627 2009 Sysname SSHS/7/MESSAGE: Received packet type 21.
 
-[\*Dec 31 16:07:07:444 2009 Sysname SSHS/7/MESSAGE: Received packet type 32.]{lang="EN-US"}
+\*Dec 31 16:07:11:738 2009 Sysname SSHS/7/MESSAGE: Received packet type 5.
 
-[\*Dec 31 16:07:09:294 2009 Sysname SSHS/7/MESSAGE: Prepare packet\[33\].]{lang="EN-US"}
+\*Dec 31 16:07:11:741 2009 Sysname SSHS/7/MESSAGE: Prepare packet[6.]
 
-[\*Dec 31 16:07:09:301 2009 Sysname SSHS/7/MESSAGE: Prepare packet\[21\].]{lang="EN-US"}
+\*Dec 31 16:07:11:840 2009 Sysname SSHS/7/MESSAGE: Received packet type 50.
 
-[\*Dec 31 16:07:11:627 2009 Sysname SSHS/7/MESSAGE: Received packet type 21.]{lang="EN-US"}
+\*Dec 31 16:07:11:846 2009 Sysname SSHS/7/MESSAGE: Prepare packet[51.]
 
-[\*Dec 31 16:07:11:738 2009 Sysname SSHS/7/MESSAGE: Received packet type 5.]{lang="EN-US"}
+\*Dec 31 16:07:12:673 2009 Sysname SSHS/7/MESSAGE: Received packet type 50.
 
-[\*Dec 31 16:07:11:741 2009 Sysname SSHS/7/MESSAGE: Prepare packet\[6\].]{lang="EN-US"}
+\*Dec 31 16:07:12:803 2009 Sysname SSHS/7/MESSAGE: Prepare packet[52.]
 
-[\*Dec 31 16:07:11:840 2009 Sysname SSHS/7/MESSAGE: Received packet type 50.]{lang="EN-US"}
+\*Dec 31 16:07:12:885 2009 Sysname SSHS/7/MESSAGE: Received packet type 90.
 
-[\*Dec 31 16:07:11:846 2009 Sysname SSHS/7/MESSAGE: Prepare packet\[51\].]{lang="EN-US"}
+\*Dec 31 16:07:12:887 2009 Sysname SSHS/7/MESSAGE: Prepare packet[91. ]
 
-[\*Dec 31 16:07:12:673 2009 Sysname SSHS/7/MESSAGE: Received packet type 50.]{lang="EN-US"}
+\*Dec 31 16:07:12:986 2009 Sysname SSHS/7/MESSAGE: Received packet type 98.
 
-[\*Dec 31 16:07:12:803 2009 Sysname SSHS/7/MESSAGE: Prepare packet\[52\].]{lang="EN-US"}
+\*Dec 31 16:07:12:996 2009 Sysname SSHS/7/MESSAGE:P repare packet[99.]
 
-[\*Dec 31 16:07:12:885 2009 Sysname SSHS/7/MESSAGE: Received packet type 90.]{lang="EN-US"}
+\*Dec 31 16:07:13:86 2009 Sysname SSHS/7/MESSAGE: Received packet type 98.
 
-[\*Dec 31 16:07:12:887 2009 Sysname SSHS/7/MESSAGE: Prepare packet\[91\]. ]{lang="EN-US"}
+\*Dec 31 16:07:13:97 2009 Sysname SSHS/7/MESSAGE: Prepare packet[93.]
 
-[\*Dec 31 16:07:12:986 2009 Sysname SSHS/7/MESSAGE: Received packet type 98.]{lang="EN-US"}
+\*Dec 31 16:07:13:99 2009 Sysname SSHS/7/MESSAGE: Prepare packet[99.]
 
-[\*Dec 31 16:07:12:996 2009 Sysname SSHS/7/MESSAGE:P repare packet\[99\].]{lang="EN-US"}
+\*Dec 31 16:07:14:62 2009 Sysname SSHS/7/MESSAGE: Received packet type 94.
 
-[\*Dec 31 16:07:13:86 2009 Sysname SSHS/7/MESSAGE: Received packet type 98.]{lang="EN-US"}
+\*Dec 31 16:07:14:268 2009 Sysname SSHS/7/MESSAGE: Received packet type 94.
 
-[\*Dec 31 16:07:13:97 2009 Sysname SSHS/7/MESSAGE: Prepare packet\[93\].]{lang="EN-US"}
+\*Dec 31 16:07:14:695 2009 Sysname SSHS/7/MESSAGE: Received packet type 94.
 
-[\*Dec 31 16:07:13:99 2009 Sysname SSHS/7/MESSAGE: Prepare packet\[99\].]{lang="EN-US"}
+\*Dec 31 16:07:14:902 2009 Sysname SSHS/7/MESSAGE: Received packet type 94.
 
-[\*Dec 31 16:07:14:62 2009 Sysname SSHS/7/MESSAGE: Received packet type 94.]{lang="EN-US"}
+\*Dec 31 16:07:17:99 2009 Sysname SSHS/7/MESSAGE: Received packet type 94.
 
-[\*Dec 31 16:07:14:268 2009 Sysname SSHS/7/MESSAGE: Received packet type 94.]{lang="EN-US"}
+\*Dec 31 16:07:17:205 2009 Sysname SSHS/7/MESSAGE: Received packet type 94.
 
-[\*Dec 31 16:07:14:695 2009 Sysname SSHS/7/MESSAGE: Received packet type 94.]{lang="EN-US"}
+\*Dec 31 16:07:17:306 2009 Sysname SSHS/7/MESSAGE: Received packet type 94.
 
-[\*Dec 31 16:07:14:902 2009 Sysname SSHS/7/MESSAGE: Received packet type 94.]{lang="EN-US"}
+\*Dec 31 16:07:17:508 2009 Sysname SSHS/7/MESSAGE: Received packet type 94.
 
-[\*Dec 31 16:07:17:99 2009 Sysname SSHS/7/MESSAGE: Received packet type 94.]{lang="EN-US"}
+\*Dec 31 16:07:17:520 2009 Sysname SSHS/7/MESSAGE: Prepare packet[98.]
 
-[\*Dec 31 16:07:17:205 2009 Sysname SSHS/7/MESSAGE: Received packet type 94.]{lang="EN-US"}
+\*Dec 31 16:07:17:523 2009 Sysname SSHS/7/MESSAGE: Prepare packet[96.]
 
-[\*Dec 31 16:07:17:306 2009 Sysname SSHS/7/MESSAGE: Received packet type 94.]{lang="EN-US"}
+\*Dec 31 16:07:17:525 2009 Sysname SSHS/7/MESSAGE: Prepare packet[97.]
 
-[\*Dec 31 16:07:17:508 2009 Sysname SSHS/7/MESSAGE: Received packet type 94.]{lang="EN-US"}
+\*Dec 31 16:07:17:719 2009 Sysname SSHS/7/MESSAGE: Received packet type 24.
 
-[\*Dec 31 16:07:17:520 2009 Sysname SSHS/7/MESSAGE: Prepare packet\[98\].]{lang="EN-US"}
-
-[\*Dec 31 16:07:17:523 2009 Sysname SSHS/7/MESSAGE: Prepare packet\[96\].]{lang="EN-US"}
-
-[\*Dec 31 16:07:17:525 2009 Sysname SSHS/7/MESSAGE: Prepare packet\[97\].]{lang="EN-US"}
-
-[\*Dec 31 16:07:17:719 2009 Sysname SSHS/7/MESSAGE: Received packet type 24.]{lang="EN-US"}
-
-[\*Dec 31 16:07:17:722 2009 Sysname SSHS/7/MESSAGE: Prepare packet\[3\].]{lang="EN-US"}
-
-::: {#342661084 .myid}
-[]{#_Toc404793163}[]{#_Toc395010547}[]{#struct_0_28483_x1134_x1788554002}[]{#_Toc167939233}[]{#_Toc138241186}[]{#_Toc133380254}
+\*Dec 31 16:07:17:722 2009 Sysname SSHS/7/MESSAGE: Prepare packet[3.]
 
 **SSH \-- SSH调试命令 \-- debugging ssh client**
 
 ------------------------------------------------------------------------
 
-[[【命令】]{style="font-family:黑体"}]{#struct_0_28483_x1134_x1693898417}
+【命令】
 
-[**[debugging ssh client]{lang="EN-US"}**[ { **all** \| **error** \| **event** \| **message** }]{lang="EN-US"}]{#struct_0_28483_x1134_859063456}
+**[debugging ssh client**[ { **all** \| **error** \| **event** \| **message** }]]
 
-[**[undo debugging ssh client]{lang="EN-US"}**[ { **all** \| **error** \| **event** \| **message** }]{lang="EN-US"}]{#struct_0_28483_x1134_x1873853319}
+**[undo debugging ssh client**[ { **all** \| **error** \| **event** \| **message** }]]
 
-[[【视图】]{style="font-family:黑体"}]{#struct_0_28483_x1134_x1113313412}
+【视图】
 
-[[用户视图]{style="font-family:宋体"}]{#struct_0_28483_x1134_x474632500}
+用户视图
 
-[[【缺省用户角色】]{style="font-family:黑体"}]{#struct_0_28483_x1134_126413815}
+【缺省用户角色】
 
-[[network-admin]{lang="EN-US"}]{#struct_0_28483_x1134_x2117040378}
+network-admin
 
-[[mdc-admin]{lang="EN-US"}]{#struct_0_28483_x1134_x1050992024}
+mdc-admin
 
-[[【参数】]{style="font-family:黑体"}]{#struct_0_28483_x1134_1906421361}
+【参数】
 
-[**[all]{lang="EN-US"}**]{#struct_0_28483_x1134_1702860799}[：所有类型的调试信息开关。]{style="font-family:宋体"}
+**[all**]：所有类型的调试信息开关。
 
-[**[error]{lang="EN-US"}**]{#struct_0_28483_x1134_1020928746}[：错误调试信息开关。]{style="font-family:宋体"}
+**[error**]：错误调试信息开关。
 
-[**[event]{lang="EN-US"}**]{#struct_0_28483_x1134_716167061}[：事件调试信息开关。]{style="font-family:宋体"}
+**[event**]：事件调试信息开关。
 
-[**[message]{lang="EN-US"}**]{#struct_0_28483_x1134_x1210173153}[：消息调试信息开关。]{style="font-family:宋体"}
+**[message**]：消息调试信息开关。
 
-[[【描述】]{style="font-family:黑体"}]{#struct_0_28483_x1134_x883272050}
+【描述】
 
-[**[debugging ssh client]{lang="EN-US"}**]{#struct_0_28483_x1134_x2117236986}[命令用来打开]{style="font-family:宋体"}[SSH]{lang="EN-US"}[客户端调试信息开关。]{style="font-family:宋体"}**[undo debugging ssh client]{lang="EN-US"}**[命令用来关闭]{style="font-family:宋体"}[SSH]{lang="EN-US"}[客户端调试信息开关。]{style="font-family:宋体"}
+**[debugging ssh client**]命令用来打开SSH客户端调试信息开关。**undo debugging ssh client**命令用来关闭SSH客户端调试信息开关。
 
-[[缺省情况下，]{style="font-family:宋体"}[SSH]{lang="EN-US"}]{#struct_0_28483_x1134_282304351}[客户端调试信息开关处于关闭状态。]{style="font-family:宋体"}
+缺省情况下，SSH客户端调试信息开关处于关闭状态。
 
-[]{#struct_0_28483_x1134_x1263303375}[[表1-4 ]{lang="EN-US"}[debugging ssh client error]{lang="EN-US"}]{#_Toc138241146}[命令输出信息描述表]{style="font-family:黑体"}
+表1-4 debugging ssh client error命令输出信息描述表
 
-[]{#table_struct_0_x1284740074}[[字段]{style="font-family:黑体"}]{#struct_0_28483_x1134_x1577555827}
-:::
+字段
 
-[[描述]{style="font-family:黑体"}]{#struct_0_28483_x1134_973992242}
+描述
 
-[[The count of global confirm register too much:]{lang="EN-US"}]{#struct_0_28483_x1134_x1880679101}
+The count of global confirm register too much:
 
-[[全局确认计数太大]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2117171450}
+全局确认计数太大
 
-[[Killed by signal *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x1584540152}
+Killed by signal *xx*
 
-[[由于收到信号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_930265975}[，进程终止]{style="font-family:宋体"}
+由于收到信号*xx*，进程终止
 
-[[Failed to setup session: unknown channel *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_119626430}
+Failed to setup session: unknown channel *xx*
 
-[[建立会话失败，未知通道号]{style="font-family:宋体"}]{#struct_0_28483_x1134_355478363}*[xx]{lang="EN-US"}*
+建立会话失败，未知通道号*xx*
 
-[[Cannot decode server_public_key_blob]{lang="EN-US"}]{#struct_0_28483_x1134_x2116843770}
+Cannot decode server_public_key_blob
 
-[[无法解码服务器公钥]{style="font-family:宋体"}]{#struct_0_28483_x1134_x845953187}
+无法解码服务器公钥
 
-[[Type mismatch for decoded server_public_key_blob]{lang="EN-US"}]{#struct_0_28483_x1134_x69493472}
+Type mismatch for decoded server_public_key_blob
 
-[[服务器公钥类型不匹配]{style="font-family:宋体"}]{#struct_0_28483_x1134_x119932681}
+服务器公钥类型不匹配
 
-[[Failed to save server public key]{lang="EN-US"}]{#struct_0_28483_x1134_x2116778234}
+Failed to save server public key
 
-[[保存服务器公钥失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1317602237}
+保存服务器公钥失败
 
-[[Failed to verify server host key]{lang="EN-US"}]{#struct_0_28483_x1134_448666538}
+Failed to verify server host key
 
-[[验证服务器主机密钥失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1713351220}
+验证服务器主机密钥失败
 
-[[Failed to authenticate server public key]{lang="EN-US"}]{#struct_0_28483_x1134_x1951821654}
+Failed to authenticate server public key
 
-[[认证服务器公钥失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x195053754}
+认证服务器公钥失败
 
-[[DH_GEX group out of range:]{lang="EN-US"}]{#struct_0_28483_x1134_x676083861}
+DH_GEX group out of range:
 
-[[DH]{lang="EN-US"}]{#struct_0_28483_x1134_1462531635}[密钥交换算法的]{style="font-family:宋体"}[group]{lang="EN-US"}[参数超出范围]{style="font-family:宋体"}
+DH密钥交换算法的group参数超出范围
 
-[[Cannot decode server_host_key_blob]{lang="EN-US"}]{#struct_0_28483_x1134_929875907}
+Cannot decode server_host_key_blob
 
-[[无法解码服务器主机密钥]{style="font-family:宋体"}]{#struct_0_28483_x1134_x194988218}
+无法解码服务器主机密钥
 
-[[Type mismatch for decoded server_host_key_blob]{lang="EN-US"}]{#struct_0_28483_x1134_x1411808845}
+Type mismatch for decoded server_host_key_blob
 
-[[服务器主机密钥类型不匹配]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1081337531}
+服务器主机密钥类型不匹配
 
-[[Outbound message too long *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_713437549}
+Outbound message too long *xx*
 
-[[要发的消息太长]{style="font-family:宋体"}]{#struct_0_28483_x1134_x195184826}
+要发的消息太长
 
-[[Couldn\'t send packet:]{lang="EN-US"}]{#struct_0_28483_x1134_906622988}
+Couldn\'t send packet:
 
-[[无法发送包]{style="font-family:宋体"}]{#struct_0_28483_x1134_246759777}
+无法发送包
 
-[[Connection closed]{lang="EN-US"}]{#struct_0_28483_x1134_x195119290}
+Connection closed
 
-[[连接已被关闭]{style="font-family:宋体"}]{#struct_0_28483_x1134_1713376296}
+连接已被关闭
 
-[[Failed to read packet:]{lang="EN-US"}]{#struct_0_28483_x1134_1935404660}
+Failed to read packet:
 
-[[读取数据包失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_902840873}
+读取数据包失败
 
-[[Received message too long *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x194791610}
+Received message too long *xx*
 
-[[接收到的消息太长]{style="font-family:宋体"}]{#struct_0_28483_x1134_1268298158}
+接收到的消息太长
 
-[[ID mismatch (*xx* != *yy*)]{lang="EN-US"}]{#struct_0_28483_x1134_1829875513}[＝]{style="font-family:宋体"}[)]{lang="EN-US"}
+ID mismatch (*xx* != *yy*)＝)
 
-[[ID]{lang="EN-US"}]{#struct_0_28483_x1134_x851520250}[不匹配]{style="font-family:宋体"}[(]{lang="EN-US"}[当前]{style="font-family:宋体"}[ID *xx* ]{lang="EN-US"}[不等于期望]{style="font-family:宋体"}[ID *yy*)]{lang="EN-US"}
+ID不匹配(当前ID *xx* 不等于期望ID *yy*)
 
-[[Expected *XX* packet, got *YY*]{lang="EN-US"}]{#struct_0_28483_x1134_x194726074}
+Expected *XX* packet, got *YY*
 
-[[期望接收到消息]{style="font-family:宋体"}]{#struct_0_28483_x1134_510398333}*[XX]{lang="EN-US"}*[，却接收到]{style="font-family:宋体"}*[YY]{lang="EN-US"}*
+期望接收到消息*XX*，却接收到*YY*
 
-[[Got multiple names (*xx*) from SSH_FXP_REALPATH]{lang="EN-US"}]{#struct_0_28483_x1134_x878797501}
+Got multiple names (*xx*) from SSH_FXP_REALPATH
 
-[[从]{style="font-family:宋体"}[SSH_FXP_REALPATH]{lang="EN-US"}]{#struct_0_28483_x1134_x194922682}[消息中获取到多个文件名]{style="font-family:宋体"}*[xx]{lang="EN-US"}*
+从SSH_FXP_REALPATH消息中获取到多个文件名*xx*
 
-[[Unexpected reply *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x1432470180}
+Unexpected reply *xx*
 
-[[接收到非期望的包序列]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_2062203445}
+接收到非期望的包序列*xx*
 
-[[Received more data than asked for *xx* \> *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_x194857146}
+Received more data than asked for *xx* \> *yy*
 
-[[接收到过多数据]{style="font-family:宋体"}]{#struct_0_28483_x1134_100965184}
+接收到过多数据
 
-[[Transfer complete, but fail sanity check]{lang="EN-US"}]{#struct_0_28483_x1134_1593612351}
+Transfer complete, but fail sanity check
 
-[[传送完成，完整性检查失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x194529466}
+传送完成，完整性检查失败
 
-[[Couldn\'t read from \\\"*xx*\\\":]{lang="EN-US"}]{#struct_0_28483_x1134_1322257557}
+Couldn\'t read from \\\"*xx*\\\":
 
-[[无法从文件]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2065055862}[中读取数据]{style="font-family:宋体"}
+无法从文件*xx*中读取数据
 
-[[Unexpected ACK *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x194463930}
+Unexpected ACK *xx*
 
-[[非期望的]{style="font-family:宋体"}[ACK *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_551798869}
+非期望的ACK *xx*
 
-[[Couldn\'t find request for ID *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_1039374312}
+Couldn\'t find request for ID *xx*
 
-[[无法找到]{style="font-family:宋体"}[ID ]{lang="EN-US"}]{#struct_0_28483_x1134_x195053753}*[xx]{lang="EN-US"}*[对应的请求]{style="font-family:宋体"}
+无法找到ID *xx*对应的请求
 
-[[Too many data]{lang="EN-US"}]{#struct_0_28483_x1134_x675756181}
+Too many data
 
-[[数据太多]{style="font-family:宋体"}]{#struct_0_28483_x1134_1959312971}
+数据太多
 
-[[Unknown ls sort type]{lang="EN-US"}]{#struct_0_28483_x1134_x194988217}
+Unknown ls sort type
 
-[[不认识的]{style="font-family:宋体"}[ls ]{lang="EN-US"}]{#struct_0_28483_x1134_x1412136525}[排序类型]{style="font-family:宋体"}
+不认识的ls 排序类型
 
-[*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2015026908}[ is not implemented]{lang="EN-US"}
+*[xx*] is not implemented
 
-[*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x195184825}[命令未实现]{style="font-family:宋体"}
+*[xx*]命令未实现
 
-[[Couldn\'t initialize connection to server]{lang="EN-US"}]{#struct_0_28483_x1134_906819596}
+Couldn\'t initialize connection to server
 
-[[无法初始化到]{style="font-family:宋体"}[server]{lang="EN-US"}]{#struct_0_28483_x1134_323270846}[的连接]{style="font-family:宋体"}
+无法初始化到server的连接
 
-[[Failed to get current working directory]{lang="EN-US"}]{#struct_0_28483_x1134_x195119289}
+Failed to get current working directory
 
-[[获取当前工作路径失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1712786471}
+获取当前工作路径失败
 
-[[Couldn\'t wait for ssh process:]{lang="EN-US"}]{#struct_0_28483_x1134_x194791609}
+Couldn\'t wait for ssh process:
 
-[[无法等到]{style="font-family:宋体"}[SSH]{lang="EN-US"}]{#struct_0_28483_x1134_1268756909}[进程]{style="font-family:宋体"}
+无法等到SSH进程
 
-[[No host]{lang="EN-US"}]{#struct_0_28483_x1134_x1377366259}
+No host
 
-[[未输入目标主机名或]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_28483_x1134_x194726073}[地址]{style="font-family:宋体"}
+未输入目标主机名或IP地址
 
-[[The public key does not exist]{lang="EN-US"}]{#struct_0_28483_x1134_510857085}
+The public key does not exist
 
-[[指定的公钥不存在]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2129063088}
+指定的公钥不存在
 
-[[Failed to get host name:]{lang="EN-US"}]{#struct_0_28483_x1134_x194922681}
+Failed to get host name:
 
-[[获取主机名失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1432535716}
+获取主机名失败
 
-[[Remote port forwarding failed for listen port *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x194857145}
+Remote port forwarding failed for listen port *xx*
 
-[[监听端口]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_100768576}[的端口转发失败]{style="font-family:宋体"}
+监听端口*xx*的端口转发失败
 
-[[Couldn\'t request local forwarding]{lang="EN-US"}]{#struct_0_28483_x1134_x194529465}
+Couldn\'t request local forwarding
 
-[[无法请求本地转发]{style="font-family:宋体"}]{#struct_0_28483_x1134_1322192021}
+无法请求本地转发
 
-[[Compression level must be from 1 (fast) to 9 (slow, best)]{lang="EN-US"}]{#struct_0_28483_x1134_228662517}
+Compression level must be from 1 (fast) to 9 (slow, best)
 
-[[压缩等级只能从]{style="font-family:宋体"}[1]{lang="EN-US"}]{#struct_0_28483_x1134_x194463929}[到]{style="font-family:宋体"}[9]{lang="EN-US"}
+压缩等级只能从1到9
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[1]{lang="EN-US"}]{#struct_0_28483_x1134_551340118}[：压缩速度最快]{lang="EN-US" style="font-family:宋体"}
+·1：压缩速度最快
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[9]{lang="EN-US"}]{#struct_0_28483_x1134_x195053756}[：压缩速度最慢，性能最好]{style="font-family:宋体"}
+·9：压缩速度最慢，性能最好
 
-[[Failed to select, return (*xx*).]{lang="EN-US"}]{#struct_0_28483_x1134_x675952789}
+Failed to select, return (*xx*).
 
-[[select]{lang="EN-US"}]{#struct_0_28483_x1134_780200993}[失败，返回值]{style="font-family:宋体"}[(*xx*)]{lang="EN-US"}
+select失败，返回值(*xx*)
 
-[[Couldn\'t resolve hostname *xx*:]{lang="EN-US"}]{#struct_0_28483_x1134_x194988220}
+Couldn\'t resolve hostname *xx*:
 
-[[无法解析主机名]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x1412333136}
+无法解析主机名*xx*
 
-[[Connection timed out during banner exchange]{lang="EN-US"}]{#struct_0_28483_x1134_x195184828}
+Connection timed out during banner exchange
 
-[[banner]{lang="EN-US"}]{#struct_0_28483_x1134_907016204}[交换过程中连接超时]{style="font-family:宋体"}
+banner交换过程中连接超时
 
-[[SSH exchange identification: ]{lang="EN-US"}]{#struct_0_28483_x1134_x195119292}
+SSH exchange identification:
 
-[[交换标识]{style="font-family:宋体"}]{#struct_0_28483_x1134_1713507368}
+交换标识
 
-[[Bad remote protocol version identification:]{lang="EN-US"}]{#struct_0_28483_x1134_1180727578}
+Bad remote protocol version identification:
 
-[[远端版本标识错误]{style="font-family:宋体"}]{#struct_0_28483_x1134_x194791612}
+远端版本标识错误
 
-[[Protocol major versions differ:]{lang="EN-US"}]{#struct_0_28483_x1134_1268429230}
+Protocol major versions differ:
 
-[[主版本号不同]{style="font-family:宋体"}]{#struct_0_28483_x1134_x194726076}
+主版本号不同
 
-[[Couldn\'t wait for child:]{lang="EN-US"}]{#struct_0_28483_x1134_510529405}
+Couldn\'t wait for child:
 
-[[等待子进程错误]{style="font-family:宋体"}]{#struct_0_28483_x1134_x194922684}
+等待子进程错误
 
-[[Server denied authentication request:]{lang="EN-US"}]{#struct_0_28483_x1134_x1432863396}
+Server denied authentication request:
 
-[[服务器拒绝认证请求]{style="font-family:宋体"}]{#struct_0_28483_x1134_x194857148}
+服务器拒绝认证请求
 
-[[Failed to setup authentication context:]{lang="EN-US"}]{#struct_0_28483_x1134_101620544}
+Failed to setup authentication context:
 
-[[设置认证上下文失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x194529468}
+设置认证上下文失败
 
-[[Permission denied (xx).]{lang="EN-US"}]{#struct_0_28483_x1134_1321864341}
+Permission denied (xx).
 
-[[访问拒绝]{style="font-family:宋体"}]{#struct_0_28483_x1134_x194463932}
+访问拒绝
 
-[[Bad message during authentication:]{lang="EN-US"}]{#struct_0_28483_x1134_551929941}
+Bad message during authentication:
 
-[[认证过程中接收到错误的消息]{style="font-family:宋体"}]{#struct_0_28483_x1134_x711252832}
+认证过程中接收到错误的消息
 
-[[No authentication context]{lang="EN-US"}]{#struct_0_28483_x1134_x195053755}
+No authentication context
 
-[[No authentication context.]{lang="EN-US"}]{#struct_0_28483_x1134_x194988219}
+No authentication context.
 
-[[Server returned different OID from expected]{lang="EN-US"}]{#struct_0_28483_x1134_x1411743309}
+Server returned different OID from expected
 
-[[服务器返回不同的]{style="font-family:宋体"}[OID]{lang="EN-US"}]{#struct_0_28483_x1134_x195184827}
+服务器返回不同的OID
 
-[[Failed to sign and send public_key]{lang="EN-US"}]{#struct_0_28483_x1134_906688524}
+Failed to sign and send public_key
 
-[[公钥签名和发送失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x195119291}
+公钥签名和发送失败
 
-[[Authentication response too long:]{lang="EN-US"}]{#struct_0_28483_x1134_1713310760}
+Authentication response too long:
 
-[[认证应答报文长度过长]{style="font-family:宋体"}]{#struct_0_28483_x1134_x194791611}
+认证应答报文长度过长
 
-[[Bad authentication reply message type:]{lang="EN-US"}]{#struct_0_28483_x1134_1268232622}
+Bad authentication reply message type:
 
-[[错误的认证应答消息类型]{style="font-family:宋体"}]{#struct_0_28483_x1134_x194726075}
+错误的认证应答消息类型
 
-[[Too many identities in authentication reply:]{lang="EN-US"}]{#struct_0_28483_x1134_510463869}
+Too many identities in authentication reply:
 
-[[认证应答中存在太多的标识]{style="font-family:宋体"}]{#struct_0_28483_x1134_x194922683}
+认证应答中存在太多的标识
 
-[[Bad authentication response:]{lang="EN-US"}]{#struct_0_28483_x1134_x1432404644}
+Bad authentication response:
 
-[[错误的认证应答]{style="font-family:宋体"}]{#struct_0_28483_x1134_x194857147}
+错误的认证应答
 
-[[Bad response from authentication agent:]{lang="EN-US"}]{#struct_0_28483_x1134_100899648}
+Bad response from authentication agent:
 
-[[从认证代理接收到错误的应答]{style="font-family:宋体"}]{#struct_0_28483_x1134_x194529467}
+从认证代理接收到错误的应答
 
-[[Failed to get data from buffer]{lang="EN-US"}]{#struct_0_28483_x1134_1322323093}
+Failed to get data from buffer
 
-[[从]{style="font-family:宋体"}]{#struct_0_28483_x1134_x194463931}[buffer]{lang="EN-US"}[中获取数据失败]{style="font-family:宋体"}
+从buffer中获取数据失败
 
-[[Bad string length *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_551864405}
+Bad string length *xx*
 
-[[错误的字符串长度]{style="font-family:宋体"}]{#struct_0_28483_x1134_x195053758}*[xx]{lang="EN-US"}*
+错误的字符串长度*xx*
 
-[[Failed to put null string to buffer]{lang="EN-US"}]{#struct_0_28483_x1134_x194988222}
+Failed to put null string to buffer
 
-[[向]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1412464208}[buffer]{lang="EN-US"}[中存入空串失败]{style="font-family:宋体"}
+向buffer中存入空串失败
 
-[[Failed to put BIGNUM to the buffer.]{lang="EN-US"}]{#struct_0_28483_x1134_x195184830}
+Failed to put BIGNUM to the buffer.
 
-[[向]{style="font-family:宋体"}]{#struct_0_28483_x1134_906491917}[buffer]{lang="EN-US"}[中存入]{style="font-family:宋体"}[BIGNUM]{lang="EN-US"}[失败]{style="font-family:宋体"}
+向buffer中存入BIGNUM失败
 
-[[Failed to get BIGNUM from the buffer.]{lang="EN-US"}]{#struct_0_28483_x1134_x195119294}
+Failed to get BIGNUM from the buffer.
 
-[[从]{style="font-family:宋体"}]{#struct_0_28483_x1134_1713638440}[buffer]{lang="EN-US"}[中获取]{style="font-family:宋体"}[BIGNUM]{lang="EN-US"}[失败]{style="font-family:宋体"}
+从buffer中获取BIGNUM失败
 
-[[Failed to write BIGNUM to the buffer in SSH2 format.]{lang="EN-US"}]{#struct_0_28483_x1134_x194791614}
+Failed to write BIGNUM to the buffer in SSH2 format.
 
-[[向]{style="font-family:宋体"}]{#struct_0_28483_x1134_1268560302}[buffer]{lang="EN-US"}[中以]{style="font-family:宋体"}[ssh2]{lang="EN-US"}[协议格式写入]{style="font-family:宋体"}[BIGNUM]{lang="EN-US"}[失败]{style="font-family:宋体"}
+向buffer中以ssh2协议格式写入BIGNUM失败
 
-[[Failed to get BIGNUM from the buffer in SSH2 format.]{lang="EN-US"}]{#struct_0_28483_x1134_x194726078}
+Failed to get BIGNUM from the buffer in SSH2 format.
 
-[[从]{style="font-family:宋体"}]{#struct_0_28483_x1134_x194922686}[buffer]{lang="EN-US"}[中以]{style="font-family:宋体"}[ssh2]{lang="EN-US"}[协议格式获取]{style="font-family:宋体"}[BIGNUM]{lang="EN-US"}[失败]{style="font-family:宋体"}
+从buffer中以ssh2协议格式获取BIGNUM失败
 
-[[Failed to append space to the buffer:]{lang="EN-US"}]{#struct_0_28483_x1134_x1432732324}
+Failed to append space to the buffer:
 
-[[在]{style="font-family:宋体"}]{#struct_0_28483_x1134_x194857150}[buffer]{lang="EN-US"}[后追加空间失败]{style="font-family:宋体"}
+在buffer后追加空间失败
 
-[[Failed to append buffer space:]{lang="EN-US"}]{#struct_0_28483_x1134_101096255}
+Failed to append buffer space:
 
-[[在]{style="font-family:宋体"}]{#struct_0_28483_x1134_x194529470}[buffer]{lang="EN-US"}[后追加空间失败]{style="font-family:宋体"}
+在buffer后追加空间失败
 
-[[Failed to consume data from the beginning of the buffer.]{lang="EN-US"}]{#struct_0_28483_x1134_x194463934}
+Failed to consume data from the beginning of the buffer.
 
-[[从]{style="font-family:宋体"}]{#struct_0_28483_x1134_552061013}[buffer]{lang="EN-US"}[头删除数据失败]{style="font-family:宋体"}
+从buffer头删除数据失败
 
-[[Failed to consume data from the end of the buffer.]{lang="EN-US"}]{#struct_0_28483_x1134_x195053757}
+Failed to consume data from the end of the buffer.
 
-[[从]{style="font-family:宋体"}]{#struct_0_28483_x1134_x676018325}[buffer]{lang="EN-US"}[尾删除数据失败]{style="font-family:宋体"}
+从buffer尾删除数据失败
 
-[[Failed to get remote hostname.]{lang="EN-US"}]{#struct_0_28483_x1134_x194988221}
+Failed to get remote hostname.
 
-[[获取对端主机名失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x195184829}
+获取对端主机名失败
 
-[[Connection from *x.x.x.x* with IP options: *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_907081740}
+Connection from *x.x.x.x* with IP options: *yy*
 
-[[从]{style="font-family:宋体"}]{#struct_0_28483_x1134_x195119293}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}*[x.x.x.x]{lang="EN-US"}*[发起的连接，携带]{style="font-family:宋体"}[IP]{lang="EN-US"}[选项为]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+从IP地址*x.x.x.x*发起的连接，携带IP选项为*yy*
 
-[[Failed to allocate new channel:]{lang="EN-US"}]{#struct_0_28483_x1134_x194791613}
+Failed to allocate new channel:
 
-[[channel]{lang="EN-US"}]{#struct_0_28483_x1134_1268363694}[分配失败]{style="font-family:宋体"}
+channel分配失败
 
-[[Cannot happen: SSH_CHANNEL_LARVAL]{lang="EN-US"}]{#struct_0_28483_x1134_x194726077}
+Cannot happen: SSH_CHANNEL_LARVAL
 
-[[SSH_CHANNEL_LARVAL]{lang="EN-US"}]{#struct_0_28483_x1134_510594941}[类型的]{style="font-family:宋体"}[channel]{lang="EN-US"}[在不兼容]{style="font-family:宋体"}[2.0]{lang="EN-US"}[版本的情况下不应该出现]{style="font-family:宋体"}
+SSH_CHANNEL_LARVAL类型的channel在不兼容2.0版本的情况下不应该出现
 
-[[Cannot happen: OUT_DRAIN]{lang="EN-US"}]{#struct_0_28483_x1134_x194922685}
+Cannot happen: OUT_DRAIN
 
-[[SSH_CHANNEL_OUTPUT_DRAINING]{lang="EN-US"}]{#struct_0_28483_x1134_x194857149}[类型的]{style="font-family:宋体"}[channel]{lang="EN-US"}[在不兼容]{style="font-family:宋体"}[1.3]{lang="EN-US"}[版本的情况下不应该出现]{style="font-family:宋体"}
+SSH_CHANNEL_OUTPUT_DRAINING类型的channel在不兼容1.3版本的情况下不应该出现
 
-[[Bad channel type *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_101555008}
+Bad channel type *xx*
 
-[[错误的]{style="font-family:宋体"}]{#struct_0_28483_x1134_x194529469}[channel]{lang="EN-US"}[类型]{style="font-family:宋体"}*[xx]{lang="EN-US"}*
+错误的channel类型*xx*
 
-[[Bad channel id *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x194463933}
+Bad channel id *xx*
 
-[[错误的]{style="font-family:宋体"}]{#struct_0_28483_x1134_551995477}[channel ID *xx*]{lang="EN-US"}
+错误的channel ID *xx*
 
-[[Non-larval channel]{lang="EN-US"}]{#struct_0_28483_x1134_1371030187}
+Non-larval channel
 
-[[channel]{lang="EN-US"}]{#struct_0_28483_x1134_1371095723}[为空或者非]{style="font-family:宋体"}[SSH_CHANNEL_LARVAL]{lang="EN-US"}[类型的]{style="font-family:宋体"}[channel]{lang="EN-US"}
+channel为空或者非SSH_CHANNEL_LARVAL类型的channel
 
-[[Channel xx: decode socks4: len *mm* \> have *nn*]{lang="EN-US"}]{#struct_0_28483_x1134_1491964634}
+Channel xx: decode socks4: len *mm* \> have *nn*
 
-[[channel ID *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_1370899115}[：]{style="font-family:宋体"}[socks4]{lang="EN-US"}[解码时，]{style="font-family:宋体"}[buffer]{lang="EN-US"}[长度]{style="font-family:宋体"}*[mm]{lang="EN-US"}*[大于实际串长度]{style="font-family:宋体"}*[nn]{lang="EN-US"}*
+channel ID *xx*：socks4解码时，buffer长度*mm*大于实际串长度*nn*
 
-[[Channel xx: decode socks4a: len *mm* \> have *nn*]{lang="EN-US"}]{#struct_0_28483_x1134_1370964651}
+Channel xx: decode socks4a: len *mm* \> have *nn*
 
-[[channel ID *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_742000209}[：]{style="font-family:宋体"}[socks4a]{lang="EN-US"}[解码时，]{style="font-family:宋体"}[buffer]{lang="EN-US"}[长度]{style="font-family:宋体"}*[mm]{lang="EN-US"}*[大于实际串长度]{style="font-family:宋体"}*[nn]{lang="EN-US"}*
+channel ID *xx*：socks4a解码时，buffer长度*mm*大于实际串长度*nn*
 
-[[Unexpected data on control fd]{lang="EN-US"}]{#struct_0_28483_x1134_1371292331}
+Unexpected data on control fd
 
-[[在控制文件描述符上获取到异常数据]{style="font-family:宋体"}]{#struct_0_28483_x1134_1371357867}
+在控制文件描述符上获取到异常数据
 
-[[Failed to prepare select:]{lang="EN-US"}]{#struct_0_28483_x1134_x424444881}
+Failed to prepare select:
 
-[[select]{lang="EN-US"}]{#struct_0_28483_x1134_1371161259}[准备失败]{style="font-family:宋体"}
+select准备失败
 
-[[Cannot happen: input state INPUT_WAIT_DRAIN for proto 1.3]{lang="EN-US"}]{#struct_0_28483_x1134_1371226795}
+Cannot happen: input state INPUT_WAIT_DRAIN for proto 1.3
 
-[[在]{style="font-family:宋体"}[1.3]{lang="EN-US"}]{#struct_0_28483_x1134_1105916130}[协议中不应该出现输入状态]{style="font-family:宋体"}[ INPUT_WAIT_DRAIN]{lang="EN-US"}
+在1.3协议中不应该出现输入状态 INPUT_WAIT_DRAIN
 
-[[Too many forwards]{lang="EN-US"}]{#struct_0_28483_x1134_1371554475}
+Too many forwards
 
-[[太多的]{style="font-family:宋体"}[TCP/IP]{lang="EN-US"}]{#struct_0_28483_x1134_1371620011}[端口转发]{style="font-family:宋体"}
+太多的TCP/IP端口转发
 
-[[Failed to set socket to non-block]{lang="EN-US"}]{#struct_0_28483_x1134_338769092}
+Failed to set socket to non-block
 
-[[设置]{style="font-family:宋体"}[socket]{lang="EN-US"}]{#struct_0_28483_x1134_1371030188}[为非阻塞时失败]{style="font-family:宋体"}
+设置socket为非阻塞时失败
 
-[[x11_request_forwarding:]{lang="EN-US"}]{#struct_0_28483_x1134_1371095724}
+x11_request_forwarding:
 
-[[在]{style="font-family:宋体"}[x11]{lang="EN-US"}]{#struct_0_28483_x1134_1370899116}[转发请求处理中收到错误的认证数据]{style="font-family:宋体"}
+在x11转发请求处理中收到错误的认证数据
 
-[[Bad 3DES IV length: *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x1209394549}
+Bad 3DES IV length: *xx*
 
-[[错误的]{style="font-family:宋体"}[3des IV]{lang="EN-US"}]{#struct_0_28483_x1134_1370964652}[长度]{style="font-family:宋体"}*[xx]{lang="EN-US"}*
+错误的3des IV长度*xx*
 
-[[No 3DES context.]{lang="EN-US"}]{#struct_0_28483_x1134_1371292332}
+No 3DES context.
 
-[[没有]{style="font-family:宋体"}[3des]{lang="EN-US"}]{#struct_0_28483_x1134_x472179076}[上下文信息]{style="font-family:宋体"}
+没有3des上下文信息
 
-[[No AES context.]{lang="EN-US"}]{#struct_0_28483_x1134_1371357868}
+No AES context.
 
-[[没有]{style="font-family:宋体"}[AES]{lang="EN-US"}]{#struct_0_28483_x1134_1371161260}[上下文信息]{style="font-family:宋体"}
+没有AES上下文信息
 
-[[Failed to initialize cipher:]{lang="EN-US"}]{#struct_0_28483_x1134_1371226796}
+Failed to initialize cipher:
 
-[[初始化加密套件失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1105719522}
+初始化加密套件失败
 
-[[Failed to initialize cipher *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_1371554476}
+Failed to initialize cipher *xx*
 
-[[初始化加密套件]{style="font-family:宋体"}[xx]{lang="EN-US"}]{#struct_0_28483_x1134_1371620012}[失败]{style="font-family:宋体"}
+初始化加密套件xx失败
 
-[[Cipher encrypt failed:]{lang="EN-US"}]{#struct_0_28483_x1134_338572484}
+Cipher encrypt failed:
 
-[[加密失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1371030185}
+加密失败
 
-[[Wrong IV length *xx* != *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_1371095721}
+Wrong IV length *xx* != *yy*
 
-[[IV]{lang="EN-US"}]{#struct_0_28483_x1134_1370899113}[长度错误]{style="font-family:宋体"}
+IV长度错误
 
-[[Bad cipher *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x1209197941}
+Bad cipher *xx*
 
-[[错误的加密套件编号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1370964649}
+错误的加密套件编号*xx*
 
-[[No available ciphers found]{lang="EN-US"}]{#struct_0_28483_x1134_1371292329}
+No available ciphers found
 
-[[没有可用的加密套件]{style="font-family:宋体"}]{#struct_0_28483_x1134_1371357865}
+没有可用的加密套件
 
-[[Bad compression level *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_1371161257}
+Bad compression level *xx*
 
-[[错误的压缩等级]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1998995374}*[xx]{lang="EN-US"}*
+错误的压缩等级*xx*
 
-[[Buffer compress failed:]{lang="EN-US"}]{#struct_0_28483_x1134_1371226793}
+Buffer compress failed:
 
-[[Buffer]{lang="EN-US"}]{#struct_0_28483_x1134_1371554473}[压缩失败]{style="font-family:宋体"}
+Buffer压缩失败
 
-[[Buffer uncompress failed:]{lang="EN-US"}]{#struct_0_28483_x1134_1371620009}
+Buffer uncompress failed:
 
-[[Buffer]{lang="EN-US"}]{#struct_0_28483_x1134_1371030186}[解压缩失败]{style="font-family:宋体"}
+Buffer解压缩失败
 
-[[Detect attack:]{lang="EN-US"}]{#struct_0_28483_x1134_x2006436609}
+Detect attack:
 
-[[检测到]{style="font-family:宋体"}[CRC32 ]{lang="EN-US"}]{#struct_0_28483_x1134_1371095722}[压缩攻击]{style="font-family:宋体"}
+检测到CRC32 压缩攻击
 
-[[Failed to generate DH_key:]{lang="EN-US"}]{#struct_0_28483_x1134_1370899114}
+Failed to generate DH_key:
 
-[[生成]{style="font-family:宋体"}[DH]{lang="EN-US"}]{#struct_0_28483_x1134_1370964650}[密钥失败]{style="font-family:宋体"}
+生成DH密钥失败
 
-[[Failed to create BN.]{lang="EN-US"}]{#struct_0_28483_x1134_1371292330}
+Failed to create BN.
 
-[[创建]{style="font-family:宋体"}[BN]{lang="EN-US"}]{#struct_0_28483_x1134_x472048004}[失败]{style="font-family:宋体"}
+创建BN失败
 
-[[Failed to generate DH_private_key]{lang="EN-US"}]{#struct_0_28483_x1134_1371357866}
+Failed to generate DH_private_key
 
-[[生成]{style="font-family:宋体"}[DH]{lang="EN-US"}]{#struct_0_28483_x1134_1371161258}[私钥失败]{style="font-family:宋体"}
+生成DH私钥失败
 
-[[Failed to generate DH_key]{lang="EN-US"}]{#struct_0_28483_x1134_1371226794}
+Failed to generate DH_key
 
-[[生成]{style="font-family:宋体"}[DH]{lang="EN-US"}]{#struct_0_28483_x1134_1371554474}[密钥失败]{style="font-family:宋体"}
+生成DH密钥失败
 
-[[Failed to generate DH_key:]{lang="EN-US"}]{#struct_0_28483_x1134_1906509515}
+Failed to generate DH_key:
 
-[[生成]{style="font-family:宋体"}[DH]{lang="EN-US"}]{#struct_0_28483_x1134_1371620010}[密钥失败]{style="font-family:宋体"}
+生成DH密钥失败
 
-[[Failed to generate DH public key.]{lang="EN-US"}]{#struct_0_28483_x1134_1371030183}
+Failed to generate DH public key.
 
-[[生成]{style="font-family:宋体"}[DH]{lang="EN-US"}]{#struct_0_28483_x1134_1371095719}[公钥失败]{style="font-family:宋体"}
+生成DH公钥失败
 
-[[Protocol error.]{lang="EN-US"}]{#struct_0_28483_x1134_1370899111}
+Protocol error.
 
-[[协议错误]{style="font-family:宋体"}]{#struct_0_28483_x1134_1370964647}
+协议错误
 
-[[Failed to seed PRNG.]{lang="EN-US"}]{#struct_0_28483_x1134_1371292327}
+Failed to seed PRNG.
 
-[[设置]{style="font-family:宋体"}[PRNG]{lang="EN-US"}]{#struct_0_28483_x1134_1371357863}[的种子失败]{style="font-family:宋体"}
+设置PRNG的种子失败
 
-[[Failed to send SSH2_MSG_KEXINIT:]{lang="EN-US"}]{#struct_0_28483_x1134_x424707025}
+Failed to send SSH2_MSG_KEXINIT:
 
-[[发送]{style="font-family:宋体"}[SSH2_MSG_KEXINIT]{lang="EN-US"}]{#struct_0_28483_x1134_1371161255}[消息失败]{style="font-family:宋体"}
+发送SSH2_MSG_KEXINIT消息失败
 
-[[Received SSH2_MSG_KEXINIT:]{lang="EN-US"}]{#struct_0_28483_x1134_1371226791}
+Received SSH2_MSG_KEXINIT:
 
-[[发送]{style="font-family:宋体"}[SSH2_MSG_KEXINIT]{lang="EN-US"}]{#struct_0_28483_x1134_1371554471}[消息失败：空的交换上下文]{style="font-family:宋体"}
+发送SSH2_MSG_KEXINIT消息失败：空的交换上下文
 
-[[Unsupported key exchange:]{lang="EN-US"}]{#struct_0_28483_x1134_1371620007}
+Unsupported key exchange:
 
-[[不支持的密钥交换类型]{style="font-family:宋体"}]{#struct_0_28483_x1134_1371030184}
+不支持的密钥交换类型
 
-[[No matching cipher found:]{lang="EN-US"}]{#struct_0_28483_x1134_1371095720}
+No matching cipher found:
 
-[[没有匹配的加密算法]{style="font-family:宋体"}]{#struct_0_28483_x1134_1492161242}
+没有匹配的加密算法
 
-[[Matching cipher is not supported:]{lang="EN-US"}]{#struct_0_28483_x1134_1370899112}
+Matching cipher is not supported:
 
-[[匹配的加密算法不支持]{style="font-family:宋体"}]{#struct_0_28483_x1134_1370964648}
+匹配的加密算法不支持
 
-[[No matching mac found:]{lang="EN-US"}]{#struct_0_28483_x1134_1371292328}
+No matching mac found:
 
-[[没有匹配的摘要算法]{style="font-family:宋体"}]{#struct_0_28483_x1134_1371357864}
+没有匹配的摘要算法
 
-[[Unsupported mac *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_1371161256}
+Unsupported mac *xx*
 
-[[不支持的摘要算法]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1371226792}
+不支持的摘要算法*xx*
 
-[[No matching compress found:]{lang="EN-US"}]{#struct_0_28483_x1134_1105981666}
+No matching compress found:
 
-[[没有匹配的压缩算法]{style="font-family:宋体"}]{#struct_0_28483_x1134_1371554472}
+没有匹配的压缩算法
 
-[[Unsupported compress:]{lang="EN-US"}]{#struct_0_28483_x1134_1371620008}
+Unsupported compress:
 
-[[不支持的压缩算法]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1357853168}
+不支持的压缩算法
 
-[[Failed to negotiate a key exchange method.]{lang="EN-US"}]{#struct_0_28483_x1134_x1357787632}
+Failed to negotiate a key exchange method.
 
-[[密钥交换算法协商失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1357984240}
+密钥交换算法协商失败
 
-[[Bad kex algorithm:]{lang="EN-US"}]{#struct_0_28483_x1134_x1357918704}
+Bad kex algorithm:
 
-[[错误的密钥交换算法]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1357591024}
+错误的密钥交换算法
 
-[[No host_key algorithm]{lang="EN-US"}]{#struct_0_28483_x1134_884656203}
+No host_key algorithm
 
-[[没有主机公钥算法]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1357525488}
+没有主机公钥算法
 
-[[Bad host_key algorithm:]{lang="EN-US"}]{#struct_0_28483_x1134_x1357722096}
+Bad host_key algorithm:
 
-[[错误的主机公钥算法]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1357656560}
+错误的主机公钥算法
 
-[[Bad kex md size *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x1357328880}
+Bad kex md size *xx*
 
-[[错误的密钥交换模数大小]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1357263344}*[xx]{lang="EN-US"}*
+错误的密钥交换模数大小*xx*
 
-[[Bad host modulus (len *xx*)]{lang="EN-US"}]{#struct_0_28483_x1134_x1357853167}
+Bad host modulus (len *xx*)
 
-[[错误的主机模数（长度]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x1357787631}[）]{style="font-family:宋体"}
+错误的主机模数（长度*xx*）
 
-[[Bad server modulus (len *xx*)]{lang="EN-US"}]{#struct_0_28483_x1134_x1357984239}
+Bad server modulus (len *xx*)
 
-[[错误的服务器模数（长度]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x1357918703}[）]{style="font-family:宋体"}
+错误的服务器模数（长度*xx*）
 
-[[Unexpected KEX type *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x1357591023}
+Unexpected KEX type *xx*
 
-[[错误的密钥交换算法类型]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1357525487}*[xx]{lang="EN-US"}*
+错误的密钥交换算法类型*xx*
 
-[[Failed to compute DH key]{lang="EN-US"}]{#struct_0_28483_x1134_33664815}
+Failed to compute DH key
 
-[[计算]{style="font-family:宋体"}[DH]{lang="EN-US"}]{#struct_0_28483_x1134_x1357722095}[密钥失败]{style="font-family:宋体"}
+计算DH密钥失败
 
-[[Failed to compute BN]{lang="EN-US"}]{#struct_0_28483_x1134_x1357656559}
+Failed to compute BN
 
-[[计算]{style="font-family:宋体"}[BN]{lang="EN-US"}]{#struct_0_28483_x1134_x1357328879}[失败]{style="font-family:宋体"}
+计算BN失败
 
-[[Cannot load hostkey]{lang="EN-US"}]{#struct_0_28483_x1134_x1357263343}
+Cannot load hostkey
 
-[[加载主机密钥失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1357853170}
+加载主机密钥失败
 
-[[Unsupported hostkey type *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x1357787634}
+Unsupported hostkey type *xx*
 
-[[不支持的主机密钥类型]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1357984242}*[xx]{lang="EN-US"}*
+不支持的主机密钥类型*xx*
 
-[[Failed to create RSA key]{lang="EN-US"}]{#struct_0_28483_x1134_x1357918706}
+Failed to create RSA key
 
-[[创建]{style="font-family:宋体"}[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_x1357591026}[密钥失败]{style="font-family:宋体"}
+创建RSA密钥失败
 
-[[Failed to create DSA key]{lang="EN-US"}]{#struct_0_28483_x1134_x1357525490}
+Failed to create DSA key
 
-[[创建]{style="font-family:宋体"}[DSA]{lang="EN-US"}]{#struct_0_28483_x1134_x1357722098}[密钥失败]{style="font-family:宋体"}
+创建DSA密钥失败
 
-[[Failed to create key: ]{lang="EN-US"}]{#struct_0_28483_x1134_x1357656562}
+Failed to create key:
 
-[[创建密钥失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1357328882}
+创建密钥失败
 
-[[Failed to free key:]{lang="EN-US"}]{#struct_0_28483_x1134_x1357263346}
+Failed to free key:
 
-[[释放]{style="font-family:宋体"}[key]{lang="EN-US"}]{#struct_0_28483_x1134_x1357853169}[失败]{style="font-family:宋体"}
+释放key失败
 
-[[Failed to compare key:]{lang="EN-US"}]{#struct_0_28483_x1134_x1357787633}
+Failed to compare key:
 
-[[密钥比较失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1357984241}
+密钥比较失败
 
-[[Failed to print key finger:]{lang="EN-US"}]{#struct_0_28483_x1134_x1357918705}
+Failed to print key finger:
 
-[[打印密钥指纹失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1357591025}
+打印密钥指纹失败
 
-[[Failed to generate rsa_private_key.]{lang="EN-US"}]{#struct_0_28483_x1134_x1357525489}
+Failed to generate rsa_private_key.
 
-[[生成]{style="font-family:宋体"}[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_x1357722097}[私有失败]{style="font-family:宋体"}
+生成RSA私有失败
 
-[[Failed to generate dsa_private_key.]{lang="EN-US"}]{#struct_0_28483_x1134_x1357656561}
+Failed to generate dsa_private_key.
 
-[[生成]{style="font-family:宋体"}[DSA]{lang="EN-US"}]{#struct_0_28483_x1134_x1357328881}[私有失败]{style="font-family:宋体"}
+生成DSA私有失败
 
-[[Failed to generate key:]{lang="EN-US"}]{#struct_0_28483_x1134_x1357263345}
+Failed to generate key:
 
-[[密钥生成失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1357853172}
+密钥生成失败
 
-[[Failed to setup MAC *xx*, length *yy*.]{lang="EN-US"}]{#struct_0_28483_x1134_x1357787636}
+Failed to setup MAC *xx*, length *yy*.
 
-[[设置摘要算法]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x1357984244}[失败，长度为]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+设置摘要算法*xx*失败，长度为*yy*
 
-[[Failed to initial MAC]{lang="EN-US"}]{#struct_0_28483_x1134_x1357918708}
+Failed to initial MAC
 
-[[初始化摘要算法失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1357591028}
+初始化摘要算法失败
 
-[[Failed to compute MAC:]{lang="EN-US"}]{#struct_0_28483_x1134_x1357525492}
+Failed to compute MAC:
 
-[[计算摘要失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1357722100}
+计算摘要失败
 
-[[Failed to add arguments:]{lang="EN-US"}]{#struct_0_28483_x1134_x1357656564}
+Failed to add arguments:
 
-[[增加参数失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1357328884}
+增加参数失败
 
-[[Failed to replace argument:]{lang="EN-US"}]{#struct_0_28483_x1134_x1357853171}
+Failed to replace argument:
 
-[[替换参数失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1357787635}
+替换参数失败
 
-[[Failed to expend keys:]{lang="EN-US"}]{#struct_0_28483_x1134_x1357984243}
+Failed to expend keys:
 
-[[扩展密钥失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1357918707}
+扩展密钥失败
 
-[[Bad channel input state:]{lang="EN-US"}]{#struct_0_28483_x1134_x1357591027}
+Bad channel input state:
 
-[[错误的通道输入状态]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1357525491}
+错误的通道输入状态
 
-[[Bad channel output state:]{lang="EN-US"}]{#struct_0_28483_x1134_x1357722099}
+Bad channel output state:
 
-[[错误的通道输出状态]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1357656563}
+错误的通道输出状态
 
-[[Failed to load cipher \'none\']{lang="EN-US"}]{#struct_0_28483_x1134_x1357328883}
+Failed to load cipher \'none\'
 
-[[载入]{style="font-family:宋体"}[none]{lang="EN-US"}]{#struct_0_28483_x1134_x1357263347}[加密套件失败]{style="font-family:宋体"}
+载入none加密套件失败
 
-[[Compression already enabled]{lang="EN-US"}]{#struct_0_28483_x1134_208230773}
+Compression already enabled
 
-[[已经使能了压缩]{style="font-family:宋体"}]{#struct_0_28483_x1134_208296309}
+已经使能了压缩
 
-[[Failed to set encrypt key:]{lang="EN-US"}]{#struct_0_28483_x1134_208099701}
+Failed to set encrypt key:
 
-[[设置加密密钥失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_208165237}
+设置加密密钥失败
 
-[[No keys for mode *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_208558453}
+No keys for mode *xx*
 
-[[模式]{style="font-family:宋体"}[xx]{lang="EN-US"}]{#struct_0_28483_x1134_208361845}[没有密钥]{style="font-family:宋体"}
+模式xx没有密钥
 
-[[Too many packets with same key]{lang="EN-US"}]{#struct_0_28483_x1134_208427381}
+Too many packets with same key
 
-[[使用同一个密钥发送的包个数太多]{style="font-family:宋体"}]{#struct_0_28483_x1134_208755061}
+使用同一个密钥发送的包个数太多
 
-[[Read failed:]{lang="EN-US"}]{#struct_0_28483_x1134_208820597}
+Read failed:
 
-[[读数据失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_208230774}
+读数据失败
 
-[[Too large packet size:]{lang="EN-US"}]{#struct_0_28483_x1134_208296310}
+Too large packet size:
 
-[[包过大]{style="font-family:宋体"}]{#struct_0_28483_x1134_208099702}
+包过大
 
-[[Disconnect recursively]{lang="EN-US"}]{#struct_0_28483_x1134_208165238}
+Disconnect recursively
 
-[[重复断连]{style="font-family:宋体"}]{#struct_0_28483_x1134_208558454}
+重复断连
 
-[[Write failed:]{lang="EN-US"}]{#struct_0_28483_x1134_208361846}
+Write failed:
 
-[[写数据失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_208427382}
+写数据失败
 
-[[Write connection closed]{lang="EN-US"}]{#struct_0_28483_x1134_208755062}
+Write connection closed
 
-[[连接的写方向已关闭]{style="font-family:宋体"}]{#struct_0_28483_x1134_208820598}
+连接的写方向已关闭
 
-[[Failed to ask password:]{lang="EN-US"}]{#struct_0_28483_x1134_208230771}
+Failed to ask password:
 
-[[获取密码失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_208296307}
+获取密码失败
 
-[[Failed to encrypt RSA public key, exponent too small or not odd.]{lang="EN-US"}]{#struct_0_28483_x1134_208165235}
+Failed to encrypt RSA public key, exponent too small or not odd.
 
-[[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_208492915}[公钥加密失败，指数太小或非偶数]{style="font-family:宋体"}
+RSA公钥加密失败，指数太小或非偶数
 
-[[Failed to encrypt RSA public key]{lang="EN-US"}]{#struct_0_28483_x1134_208558451}
+Failed to encrypt RSA public key
 
-[[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_208361843}[公钥加密失败]{style="font-family:宋体"}
+RSA公钥加密失败
 
-[[Failed to decrypt RSA private key]{lang="EN-US"}]{#struct_0_28483_x1134_208427379}
+Failed to decrypt RSA private key
 
-[[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_208755059}[私钥解密失败]{style="font-family:宋体"}
+RSA私钥解密失败
 
-[[Failed to generate RSA additional parameters]{lang="EN-US"}]{#struct_0_28483_x1134_208820595}
+Failed to generate RSA additional parameters
 
-[[生成]{style="font-family:宋体"}[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_208296308}[附加参数失败]{style="font-family:宋体"}
+生成RSA附加参数失败
 
-[[Bad signature blob length:]{lang="EN-US"}]{#struct_0_28483_x1134_208099700}
+Bad signature blob length:
 
-[[错误的签名]{style="font-family:宋体"}[blob]{lang="EN-US"}]{#struct_0_28483_x1134_208165236}[长度]{style="font-family:宋体"}
+错误的签名blob长度
 
-[[Failed to verify DSA signature]{lang="EN-US"}]{#struct_0_28483_x1134_208492916}
+Failed to verify DSA signature
 
-[[验证]{style="font-family:宋体"}[DSA]{lang="EN-US"}]{#struct_0_28483_x1134_208558452}[签名失败]{style="font-family:宋体"}
+验证DSA签名失败
 
-[[Failed to set resource limits:]{lang="EN-US"}]{#struct_0_28483_x1134_208427380}
+Failed to set resource limits:
 
-[[设置资源限制失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_208755060}
+设置资源限制失败
 
-[[Failed to malloc memory: ]{lang="EN-US"}]{#struct_0_28483_x1134_208820596}
+Failed to malloc memory:
 
-[[分配内存失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_208230769}
+分配内存失败
 
-[[Failed to free memory]{lang="EN-US"}]{#struct_0_28483_x1134_208296305}
+Failed to free memory
 
-[[释放内存失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_208099697}
+释放内存失败
 
-[[Failed to allocate memory]{lang="EN-US"}]{#struct_0_28483_x1134_208165233}
+Failed to allocate memory
 
-[[分配内存失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_208558449}
+分配内存失败
 
-[[Failed to connect to *xx* port *yy*:]{lang="EN-US"}]{#struct_0_28483_x1134_208361841}
+Failed to connect to *xx* port *yy*:
 
-[[向地址]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_208427377}[端口]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[发起连接失败]{style="font-family:宋体"}
+向地址*xx*端口*yy*发起连接失败
 
-[[Failed to setup untrusted X11 forwarding:]{lang="EN-US"}]{#struct_0_28483_x1134_208755057}
+Failed to setup untrusted X11 forwarding:
 
-[[无法建立非信任的]{style="font-family:宋体"}[X11]{lang="EN-US"}]{#struct_0_28483_x1134_208820593}[转发]{style="font-family:宋体"}
+无法建立非信任的X11转发
 
-[[Not supported]{lang="EN-US"}]{#struct_0_28483_x1134_208296306}
+Not supported
 
-[[该命令不支持]{style="font-family:宋体"}]{#struct_0_28483_x1134_208099698}
+该命令不支持
 
-[[Not supported for SSH protocol version 1]{lang="EN-US"}]{#struct_0_28483_x1134_208165234}
+Not supported for SSH protocol version 1
 
-[[SSH]{lang="EN-US"}]{#struct_0_28483_x1134_208492914}[协议版本]{style="font-family:宋体"}[1]{lang="EN-US"}[不支持]{style="font-family:宋体"}
+SSH协议版本1不支持
 
-[[Server does not support re-keying]{lang="EN-US"}]{#struct_0_28483_x1134_208558450}
+Server does not support re-keying
 
-[[服务器不支持重新密钥协商]{style="font-family:宋体"}]{#struct_0_28483_x1134_208427378}
+服务器不支持重新密钥协商
 
-[[Write failed]{lang="EN-US"}]{#struct_0_28483_x1134_208755058}
+Write failed
 
-[[写错误]{style="font-family:宋体"}]{#struct_0_28483_x1134_208820594}
+写错误
 
-[[Channel *xx*: unknown channel.]{lang="EN-US"}]{#struct_0_28483_x1134_2130545074}
+Channel *xx*: unknown channel.
 
-[[通道号]{style="font-family:宋体"}]{#struct_0_28483_x1134_2130414002}*[xx]{lang="EN-US"}*[：未知通道]{style="font-family:宋体"}
+通道号*xx*：未知通道
 
-[[Unexpected channel *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_2130479538}
+Unexpected channel *xx*
 
-[[非期望的通道号]{style="font-family:宋体"}]{#struct_0_28483_x1134_2130807218}*[xx]{lang="EN-US"}*
+非期望的通道号*xx*
 
-[[Couldn\'t get handle:]{lang="EN-US"}]{#struct_0_28483_x1134_2130872754}
+Couldn\'t get handle:
 
-[[无法获取到句柄]{style="font-family:宋体"}]{#struct_0_28483_x1134_2130676146}
+无法获取到句柄
 
-[[Failed to close file:]{lang="EN-US"}]{#struct_0_28483_x1134_2131069362}
+Failed to close file:
 
-[[关闭文件失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_2131134898}
+关闭文件失败
 
-[[Couldn\'t read directory:]{lang="EN-US"}]{#struct_0_28483_x1134_2130545075}
+Couldn\'t read directory:
 
-[[读文件目录错误]{style="font-family:宋体"}]{#struct_0_28483_x1134_2130414003}
+读文件目录错误
 
-[[No such file or directory]{lang="EN-US"}]{#struct_0_28483_x1134_2130479539}
+No such file or directory
 
-[[在执行]{style="font-family:宋体"}[remove]{lang="EN-US"}]{#struct_0_28483_x1134_2130807219}[、]{style="font-family:宋体"}[get]{lang="EN-US"}[、]{style="font-family:宋体"}[put]{lang="EN-US"}[、]{style="font-family:宋体"}[ls]{lang="EN-US"}[、]{style="font-family:宋体"}[rename]{lang="EN-US"}[等操作时，发现不存在该文件，类似的错误信息还包括：]{style="font-family:宋体"}
+在执行remove、get、put、ls、rename等操作时，发现不存在该文件，类似的错误信息还包括：
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[End of file]{lang="EN-US"}]{#struct_0_28483_x1134_2130872755}[：文件末尾；]{lang="EN-US" style="font-family:宋体"}
+·End of file：文件末尾；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Permission denied]{lang="EN-US"}]{#struct_0_28483_x1134_2130676147}[：拒绝访问；]{lang="EN-US" style="font-family:
-  宋体"}
+·Permission denied：拒绝访问；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Bad message]{lang="EN-US"}]{#struct_0_28483_x1134_2131069363}[：错误消息；]{lang="EN-US" style="font-family:宋体"}
+·Bad message：错误消息；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[No connection]{lang="EN-US"}]{#struct_0_28483_x1134_2131134899}[：连接未建立]{lang="EN-US" style="font-family:宋体"}
+·No connection：连接未建立
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Connection lost]{lang="EN-US"}]{#struct_0_28483_x1134_2130545072}[：连接已关闭；]{lang="EN-US" style="font-family:
-  宋体"}
+·Connection lost：连接已关闭；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Operation unsupported]{lang="EN-US"}]{#struct_0_28483_x1134_2130610608}[：不支持的操作]{lang="EN-US" style="font-family:
-  宋体"}
+·Operation unsupported：不支持的操作
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Unknown status]{lang="EN-US"}]{#struct_0_28483_x1134_2130479536}[：未知状态；]{lang="EN-US" style="font-family:宋体"}
+·Unknown status：未知状态；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[Failure]{lang="EN-US"}]{#struct_0_28483_x1134_2130807216}[：操作失败]{lang="EN-US" style="font-family:宋体"}
+·Failure：操作失败
 
-[[Couldn\'t set state on \\\"*xx*\\\":]{lang="EN-US"}]{#struct_0_28483_x1134_2130872752}
+Couldn\'t set state on \\\"*xx*\\\":
 
-[[设置状态错误，文件名]{style="font-family:宋体"}]{#struct_0_28483_x1134_2130741680}*[xx]{lang="EN-US"}*[ ]{lang="EN-US"}
+设置状态错误，文件名*xx*
 
-[[Process SSH_FXP_REALPATH error:]{lang="EN-US"}]{#struct_0_28483_x1134_2131069360}
+Process SSH_FXP_REALPATH error:
 
-[[处理]{style="font-family:宋体"}[SSH_FXP_REALPATH]{lang="EN-US"}]{#struct_0_28483_x1134_2131134896}[消息出错]{style="font-family:宋体"}
+处理SSH_FXP_REALPATH消息出错
 
-[[Couldn\'t rename file \\\"*xx*\\\" to \\\"*yy*\\\"]{lang="EN-US"}]{#struct_0_28483_x1134_2130545073}
+Couldn\'t rename file \\\"*xx*\\\" to \\\"*yy*\\\"
 
-[[文件重命名错误，旧文件名为]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_2130414001}[，新文件名为]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+文件重命名错误，旧文件名为*xx*，新文件名为*yy*
 
-[[Not support symlink operation]{lang="EN-US"}]{#struct_0_28483_x1134_2130479537}
+Not support symlink operation
 
-[[不支持符号连接操作]{style="font-family:宋体"}]{#struct_0_28483_x1134_2130807217}
+不支持符号连接操作
 
-[[Couldn\'t symlink file \\\"*xx*\\\" to \\\"*yy*\\\"]{lang="EN-US"}]{#struct_0_28483_x1134_2130676145}
+Couldn\'t symlink file \\\"*xx*\\\" to \\\"*yy*\\\"
 
-[[符号连接错误，旧文件名为]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_2130741681}[，新文件名为]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+符号连接错误，旧文件名为*xx*，新文件名为*yy*
 
-[[Couldn\'t download non-regular file:]{lang="EN-US"}]{#struct_0_28483_x1134_2131069361}
+Couldn\'t download non-regular file:
 
-[[无法下载非正则文件：]{style="font-family:宋体"}]{#struct_0_28483_x1134_2130545070}
+无法下载非正则文件：
 
-[[Couldn\'t open local file \\\"*xx*\\\" for writing:]{lang="EN-US"}]{#struct_0_28483_x1134_2130610606}
+Couldn\'t open local file \\\"*xx*\\\" for writing:
 
-[[无法打开本地文件]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_2130413998}[去写数据]{style="font-family:宋体"}
+无法打开本地文件*xx*去写数据
 
-[[Couldn\'t read from remote file \\\"*xx*\\\":]{lang="EN-US"}]{#struct_0_28483_x1134_2130807214}
+Couldn\'t read from remote file \\\"*xx*\\\":
 
-[[无法从远端文件]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_2130872750}[中读数据]{style="font-family:宋体"}
+无法从远端文件*xx*中读数据
 
-[[Couldn\'t write to \\\"*xx*\\\":]{lang="EN-US"}]{#struct_0_28483_x1134_2130676142}
+Couldn\'t write to \\\"*xx*\\\":
 
-[[无法向本地文件]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_2131069358}[中写数据]{style="font-family:宋体"}
+无法向本地文件*xx*中写数据
 
-[[Couldn\'t set mode on \\\"*xx*\\\":]{lang="EN-US"}]{#struct_0_28483_x1134_2131134894}
+Couldn\'t set mode on \\\"*xx*\\\":
 
-[[设置文件]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_2130545071}[的模式失败]{style="font-family:宋体"}
+设置文件*xx*的模式失败
 
-[[Can\'t set times on \\\"*xx*\\\":]{lang="EN-US"}]{#struct_0_28483_x1134_2130413999}
+Can\'t set times on \\\"*xx*\\\":
 
-[[设置文件]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_2130479535}[的时间错误]{style="font-family:宋体"}
+设置文件*xx*的时间错误
 
-[[\"Couldn\'t open local file \\\"*xx*\\\" for reading:]{lang="EN-US"}]{#struct_0_28483_x1134_2130807215}
+\"Couldn\'t open local file \\\"*xx*\\\" for reading:
 
-[[无法打开本地文件]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_2130676143}[去读数据]{style="font-family:宋体"}
+无法打开本地文件*xx*去读数据
 
-[[Couldn\'t get state for local file \\\"*xx*\\\":]{lang="EN-US"}]{#struct_0_28483_x1134_2130741679}
+Couldn\'t get state for local file \\\"*xx*\\\":
 
-[[无法获取本地文件]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_2131069359}[的状态]{style="font-family:宋体"}
+无法获取本地文件*xx*的状态
 
-[*[xx ]{lang="EN-US"}*]{#struct_0_28483_x1134_x598338281}[is not a regular file]{lang="EN-US"}
+*[xx *]is not a regular file
 
-[[文件]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x598272745}[不是正则文件]{style="font-family:宋体"}
+文件*xx*不是正则文件
 
-[[Couldn\'t write to remote file \\\"*xx*\\\":]{lang="EN-US"}]{#struct_0_28483_x1134_x598403817}
+Couldn\'t write to remote file \\\"*xx*\\\":
 
-[[无法向远端文件]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x598076137}[写数据]{style="font-family:宋体"}
+无法向远端文件*xx*写数据
 
-[[Couldn\'t close local file \\\"*xx*\\\":]{lang="EN-US"}]{#struct_0_28483_x1134_x598010601}
+Couldn\'t close local file \\\"*xx*\\\":
 
-[[无法关闭本地文件]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x598141673}
+无法关闭本地文件*xx*
 
-[[Invalid path.]{lang="EN-US"}]{#struct_0_28483_x1134_x597813993}
+Invalid path.
 
-[[路径无效]{style="font-family:宋体"}]{#struct_0_28483_x1134_x598338280}
+路径无效
 
-[[Invalid flag --*xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x598272744}
+Invalid flag --*xx*
 
-[[无效标识]{style="font-family:宋体"}]{#struct_0_28483_x1134_x598403816}
+无效标识
 
-[[File \\\"*xx*\\\" not found]{lang="EN-US"}]{#struct_0_28483_x1134_x598076136}
+File \\\"*xx*\\\" not found
 
-[[未找到文件]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x598010600}
+未找到文件*xx*
 
-[[Multiple files match, but \\\"*xx*\\\" is not a directory.]{lang="EN-US"}]{#struct_0_28483_x1134_x598141672}
+Multiple files match, but \\\"*xx*\\\" is not a directory.
 
-[[匹配到多个文件，但]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x597813992}[不是一个目录]{style="font-family:宋体"}
+匹配到多个文件，但*xx*不是一个目录
 
-[[Failed to get the file status ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x598338283}[:]{lang="EN-US"}
+Failed to get the file status *xx*:
 
-[[获取]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x598272747}[文件信息失败]{style="font-family:宋体"}
+获取*xx*文件信息失败
 
-[[Skipping non-regular file ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x598403819}[.]{lang="EN-US"}
+Skipping non-regular file *xx*.
 
-[[跳过非正则文件]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x598076139}
+跳过非正则文件*xx*
 
-[[You must specify at least one path after a *xx* command.]{lang="EN-US"}]{#struct_0_28483_x1134_x598010603}
+You must specify at least one path after a *xx* command.
 
-[*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x598141675}[命令之后，必须至少指定一个路径]{style="font-family:宋体"}
+*[xx*]命令之后，必须至少指定一个路径
 
-[[You must specify two paths after a *xx* command.]{lang="EN-US"}]{#struct_0_28483_x1134_x597813995}
+You must specify two paths after a *xx* command.
 
-[*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x598338282}[命令之后，必须至少指定两个路径]{style="font-family:宋体"}
+*[xx*]命令之后，必须至少指定两个路径
 
-[[You must specify a path after a *xx* command.]{lang="EN-US"}]{#struct_0_28483_x1134_x598272746}
+You must specify a path after a *xx* command.
 
-[*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x598403818}[命令之后，必须指定一个路径]{style="font-family:宋体"}
+*[xx*]命令之后，必须指定一个路径
 
-[[Failed to connect to host *xx* port *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_x598076138}
+Failed to connect to host *xx* port *yy*
 
-[[连接到主机]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x598207210}[端口]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[失败]{style="font-family:宋体"}
+连接到主机*xx*端口*yy*失败
 
-[[Permission denied, please try again.]{lang="EN-US"}]{#struct_0_28483_x1134_x598141674}
+Permission denied, please try again.
 
-[[拒绝登录，请重试]{style="font-family:宋体"}]{#struct_0_28483_x1134_x597748458}
+拒绝登录，请重试
 
-[[Failed to sign and send public key:]{lang="EN-US"}]{#struct_0_28483_x1134_x598338285}
+Failed to sign and send public key:
 
-[[签名和发送公钥失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x598469357}
+签名和发送公钥失败
 
-[[Failed to send and test public key:]{lang="EN-US"}]{#struct_0_28483_x1134_x598403821}
+Failed to send and test public key:
 
-[[发送和测试公钥失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x598010605}
+发送和测试公钥失败
 
-[[Unrecognized authentication method name:]{lang="EN-US"}]{#struct_0_28483_x1134_x598207213}
+Unrecognized authentication method name:
 
-[[无法识别的认证方法名]{style="font-family:宋体"}]{#struct_0_28483_x1134_x597813997}
+无法识别的认证方法名
 
-[[Setting tty modes failed:]{lang="EN-US"}]{#struct_0_28483_x1134_x597748461}
+Setting tty modes failed:
 
-[[设置]{style="font-family:宋体"}[TTY]{lang="EN-US"}]{#struct_0_28483_x1134_x598272748}[模式失败]{style="font-family:宋体"}
+设置TTY模式失败
 
-[[Failed to write authentication data]{lang="EN-US"}]{#struct_0_28483_x1134_x598469356}
+Failed to write authentication data
 
-[[写认证数据失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x598076140}
+写认证数据失败
 
-[[Failed to read authentication response length]{lang="EN-US"}]{#struct_0_28483_x1134_x598010604}
+Failed to read authentication response length
 
-[[读认证应答长度失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x598141676}
+读认证应答长度失败
 
-[[Failed to read authentication response]{lang="EN-US"}]{#struct_0_28483_x1134_x597813996}
+Failed to read authentication response
 
-[[读认证应答失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1780933850}
+读认证应答失败
 
-[[Bad string length *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_1780868314}
+Bad string length *xx*
 
-[[错误的串长度]{style="font-family:宋体"}]{#struct_0_28483_x1134_1780737242}*[xx]{lang="EN-US"}*
+错误的串长度*xx*
 
-[[Failed to get peer name:]{lang="EN-US"}]{#struct_0_28483_x1134_1780606170}
+Failed to get peer name:
 
-[[获取对端主机名失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1780540634}
+获取对端主机名失败
 
-[[Non-public channel ]{lang="FR"}]{#struct_0_28483_x1134_1781458138}*[xx]{lang="FR"}*[, type ]{lang="FR"}*[yy]{lang="FR"}*
+Non-public channel *xx*, type *yy*
 
-[[非公用通道号]{style="font-family:宋体"}]{#struct_0_28483_x1134_1781392602}*[xx]{lang="FR"}*[，类型]{style="font-family:宋体"}*[yy]{lang="FR"}*
+非公用通道号*xx*，类型*yy*
 
-[[Failed to set socket options SO_REUSEADDR]{lang="EN-US"}]{#struct_0_28483_x1134_1780868315}
+Failed to set socket options SO_REUSEADDR
 
-[[设置]{style="font-family:宋体"}[Socket]{lang="EN-US"}]{#struct_0_28483_x1134_1780802779}[选项]{style="font-family:宋体"}[SO_REUSEADDR]{lang="EN-US"}[失败]{style="font-family:宋体"}
+设置Socket选项SO_REUSEADDR失败
 
-[[Channel *xx*: connection failed:]{lang="EN-US"}]{#struct_0_28483_x1134_1780671707}
+Channel *xx*: connection failed:
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1780606171}[：连接失败]{style="font-family:宋体"}
+通道号*xx*：连接失败
 
-[[Use of DES is strongly discouraged due to cryptographic weaknesses]{lang="EN-US"}]{#struct_0_28483_x1134_1780475099}
+Use of DES is strongly discouraged due to cryptographic weaknesses
 
-[[不推荐使用]{style="font-family:宋体"}[DES]{lang="EN-US"}]{#struct_0_28483_x1134_1781458139}[算法，因为加密强度弱]{style="font-family:宋体"}
+不推荐使用DES算法，因为加密强度弱
 
-[[Kex protocol error:]{lang="EN-US"}]{#struct_0_28483_x1134_1780933848}
+Kex protocol error:
 
-[[密钥交换协议错误]{style="font-family:宋体"}]{#struct_0_28483_x1134_1780802776}
+密钥交换协议错误
 
-[[Failed to get key type from name: ]{lang="EN-US"}]{#struct_0_28483_x1134_1780737240}
+Failed to get key type from name:
 
-[[依据密钥名称获取密钥类型失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1780606168}
+依据密钥名称获取密钥类型失败
 
-[[Failed to get key:]{lang="EN-US"}]{#struct_0_28483_x1134_1780540632}
+Failed to get key:
 
-[[获取密钥失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1781458136}
+获取密钥失败
 
-[[Unsupported key type ]{lang="EN-US"}]{#struct_0_28483_x1134_1781392600}*[xx]{lang="FR"}*
+Unsupported key type *xx*
 
-[[不支持的密钥类型]{style="font-family:宋体"}]{#struct_0_28483_x1134_1780868313}*[xx]{lang="FR"}*
+不支持的密钥类型*xx*
 
-[[Failed to sign key:]{lang="EN-US"}]{#struct_0_28483_x1134_1780802777}
+Failed to sign key:
 
-[[密钥签名失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1780671705}
+密钥签名失败
 
-[[Failed to verify key:]{lang="EN-US"}]{#struct_0_28483_x1134_1780540633}
+Failed to verify key:
 
-[[密钥验证失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1780475097}
+密钥验证失败
 
-[[Failed to get key by name \'*xx*\']{lang="EN-US"}]{#struct_0_28483_x1134_1781392601}
+Failed to get key by name \'*xx*\'
 
-[[从密钥名字]{style="font-family:宋体"}]{#struct_0_28483_x1134_1780933846}*[xx]{lang="EN-US"}*[获取密钥实体失败]{style="font-family:宋体"}
+从密钥名字*xx*获取密钥实体失败
 
-[[Failed to get evpkey:]{lang="EN-US"}]{#struct_0_28483_x1134_1780802774}
+Failed to get evpkey:
 
-[[获取]{style="font-family:宋体"}[EVP]{lang="EN-US"}]{#struct_0_28483_x1134_1780671702}[密钥失败]{style="font-family:宋体"}
+获取EVP密钥失败
 
-[[Failed to read the file descriptor flags(*xx*):]{lang="EN-US"}]{#struct_0_28483_x1134_1780606166}
+Failed to read the file descriptor flags(*xx*):
 
-[[读取文件描述符标识]{style="font-family:宋体"}]{#struct_0_28483_x1134_1780475094}*[xx]{lang="EN-US"}*[失败]{style="font-family:宋体"}
+读取文件描述符标识*xx*失败
 
-[[Failed to set the file descriptor flags(*xx*):]{lang="EN-US"}]{#struct_0_28483_x1134_1781458134}
+Failed to set the file descriptor flags(*xx*):
 
-[[设置文件描述符标识]{style="font-family:宋体"}]{#struct_0_28483_x1134_1780933847}*[xx]{lang="EN-US"}*[失败]{style="font-family:宋体"}
+设置文件描述符标识*xx*失败
 
-[[Failed to get socket option TCP_NODELAY:]{lang="EN-US"}]{#struct_0_28483_x1134_1780868311}
+Failed to get socket option TCP_NODELAY:
 
-[[设置]{style="font-family:宋体"}[Socket]{lang="EN-US"}]{#struct_0_28483_x1134_1780737239}[选项]{style="font-family:宋体"}[TCP_NODELAY]{lang="EN-US"}[失败]{style="font-family:宋体"}
+设置Socket选项TCP_NODELAY失败
 
-[[Failed to send message]{lang="EN-US"}]{#struct_0_28483_x1134_1780671703}
+Failed to send message
 
-[[发送消息失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1780540631}
+发送消息失败
 
-[[Failed to receive message header]{lang="EN-US"}]{#struct_0_28483_x1134_1780475095}
+Failed to receive message header
 
-[[接收消息头失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_1781392599}
+接收消息头失败
 
-[[Failed to receive message:]{lang="EN-US"}]{#struct_0_28483_x1134_x947949505}
+Failed to receive message:
 
-[[接收消息失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x948080577}
+接收消息失败
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948146113}[: protocol error for unexpected state *yy*]{lang="EN-US"}
+Channel *xx*: protocol error for unexpected state *yy*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948277185}[：错误的状态]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[导致协议错误]{style="font-family:宋体"}
+通道号*xx*：错误的状态*yy*导致协议错误
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948342721}[: read failed for unexpected input state *yy*]{lang="EN-US"}
+Channel *xx*: read failed for unexpected input state *yy*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x947425217}[：错误的输入状态]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[导致]{style="font-family:宋体"}[读失败]{style="font-family:宋体"}
+通道号*xx*：错误的输入状态*yy*导致读失败
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x947949504}[: protocol error for unexpected output state *yy*]{lang="EN-US"}
+Channel *xx*: protocol error for unexpected output state *yy*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948015040}[：错误的输出状态]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[导致]{style="font-family:宋体"}[协议错误]{style="font-family:宋体"}
+通道号*xx*：错误的输出状态*yy*导致协议错误
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948146112}[: write failed]{lang="EN-US"}
+Channel *xx*: write failed
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948277184}[：写错误]{style="font-family:宋体"}
+通道号*xx*：写错误
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948342720}[: write failed for unexpected output state *yy*]{lang="EN-US"}
+Channel *xx*: write failed for unexpected output state *yy*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x947425216}[：错误的输出状态]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[导致]{style="font-family:宋体"}[写错误]{style="font-family:宋体"}
+通道号*xx*：错误的输出状态*yy*导致写错误
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x947490752}[: no empty buffer]{lang="EN-US"}
+Channel *xx*: no empty buffer
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948015043}[：无缓存]{style="font-family:宋体"}
+通道号*xx*：无缓存
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948146115}[: internal error for unexpected output state *yy*]{lang="EN-US"}
+Channel *xx*: internal error for unexpected output state *yy*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948211651}[：错误的输出状态]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[导致]{style="font-family:宋体"}[内部错误]{style="font-family:宋体"}
+通道号*xx*：错误的输出状态*yy*导致内部错误
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948342723}[: cannot send IEOF for unexpected state *yy*]{lang="EN-US"}
+Channel *xx*: cannot send IEOF for unexpected state *yy*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x947425219}[：错误的状态]{style="font-family:宋体"}*[y]{lang="EN-US"}[y]{lang="EN-US"}*[导致]{style="font-family:宋体"}[无法发送]{style="font-family:宋体"}[IEOF]{lang="EN-US"}[消息]{style="font-family:宋体"}
+通道号*xx*：错误的状态*yy*导致无法发送IEOF消息
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x947490755}[: cannot send SSH_MSG_CHANNEL_OUTPUT_CLOSE for unexpected state ]{lang="EN-US"}*[y]{lang="EN-US"}[y]{lang="EN-US"}*
+Channel *xx*: cannot send SSH_MSG_CHANNEL_OUTPUT_CLOSE for unexpected state *yy*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948015042}[：错误的状态]{style="font-family:宋体"}*[y]{lang="EN-US"}[y]{lang="EN-US"}*[导致无法发送消息]{style="font-family:宋体"}[SSH_MSG_CHANNEL_OUTPUT_CLOSE]{lang="EN-US"}
+通道号*xx*：错误的状态*yy*导致无法发送消息SSH_MSG_CHANNEL_OUTPUT_CLOSE
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948080578}[: SSH2_MSG_CHANNEL_CLOSE received twice]{lang="EN-US"}
+Channel *xx*: SSH2_MSG_CHANNEL_CLOSE received twice
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948211650}[：重复接收到]{style="font-family:宋体"}[SSH2_MSG_CHANNEL_CLOSE]{lang="EN-US"}[消息]{style="font-family:宋体"}
+通道号*xx*：重复接收到SSH2_MSG_CHANNEL_CLOSE消息
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948342722}[: write failed for unexpected output state *yy*]{lang="EN-US"}
+Channel *xx*: write failed for unexpected output state *yy*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948408258}[：错误的输出状态]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[导致]{style="font-family:宋体"}[写失败]{style="font-family:宋体"}
+通道号*xx*：错误的输出状态*yy*导致写失败
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x947490754}[: cannot send EOF for unexpected input state *yy*]{lang="EN-US"}
+Channel *xx*: cannot send EOF for unexpected input state *yy*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x947949509}[：错误的输入状态]{style="font-family:宋体"}*[y]{lang="EN-US"}[y]{lang="EN-US"}*[导致]{style="font-family:宋体"}[无法发送]{style="font-family:宋体"}[EOF]{lang="EN-US"}[消息]{style="font-family:宋体"}
+通道号*xx*：错误的输入状态*yy*导致无法发送EOF消息
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948080581}[: cannot send CLOSE for input state/output state *yy*/*zz*]{lang="EN-US"}
+Channel *xx*: cannot send CLOSE for input state/output state *yy*/*zz*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948146117}[：错误的输入状态]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[/]{lang="EN-US"}[输出]{style="font-family:
-  宋体"}[状态]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[导致]{style="font-family:宋体"}[无法发送关闭消息]{style="font-family:宋体"}
+通道号*xx*：错误的输入状态*xx*/输出状态*yy*导致无法发送关闭消息
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948277189}[: already sent CLOSE]{lang="EN-US"}
+Channel *xx*: already sent CLOSE
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948408261}[：已经发送关闭消息]{style="font-family:宋体"}
+通道号*xx*：已经发送关闭消息
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x947425221}[: failed to shutdown write:]{lang="EN-US"}
+Channel *xx*: failed to shutdown write:
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x947949508}[：]{style="font-family:宋体"}[shutdown]{lang="EN-US"}[写失败]{style="font-family:宋体"}
+通道号*xx*：shutdown写失败
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948080580}[: failed to close write:]{lang="EN-US"}
+Channel *xx*: failed to close write:
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948146116}[：关闭写失败]{style="font-family:宋体"}
+通道号*xx*：关闭写失败
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948277188}[: failed to shutdown read:]{lang="EN-US"}
+Channel *xx*: failed to shutdown read:
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x948408260}[：]{style="font-family:宋体"}[shutdown]{lang="EN-US"}[读失败]{style="font-family:宋体"}
+通道号*xx*：shutdown读失败
 
-[[Channel ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x947425220}[: failed to close read:]{lang="EN-US"}
+Channel *xx*: failed to close read:
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_618134436}[：关闭读失败]{style="font-family:宋体"}
+通道号*xx*：关闭读失败
 
-[[Bad packet length ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_618003364}
+Bad packet length *xx*
 
-[[错误的包长度]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_617937828}
+错误的包长度*xx*
 
-[[Failed to set socket option IP_TOS ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_617806756}[:]{lang="EN-US"}
+Failed to set socket option IP_TOS *xx*:
 
-[[设置]{style="font-family:宋体"}[Socket]{lang="EN-US"}]{#struct_0_28483_x1134_617675684}[选项]{style="font-family:宋体"}[IP_TOS]{lang="EN-US"}[值]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[失败]{style="font-family:宋体"}
+设置Socket选项IP_TOS值*xx*失败
 
-[[Bad max packet size ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_618593188}
+Bad max packet size *xx*
 
-[[错误的最大包大小]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_618068901}
+错误的最大包大小*xx*
 
-[[Failed to ask password:]{lang="EN-US"}]{#struct_0_28483_x1134_618003365}
+Failed to ask password:
 
-[[获取密码失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_617872293}
+获取密码失败
 
-[[Failed to decrypt RSA private key]{lang="EN-US"}]{#struct_0_28483_x1134_617741221}
+Failed to decrypt RSA private key
 
-[[解密]{style="font-family:宋体"}]{#struct_0_28483_x1134_617675685}[RSA]{lang="EN-US"}[私钥失败]{style="font-family:宋体"}
+解密RSA私钥失败
 
-[[RSA sign failed:]{lang="EN-US"}]{#struct_0_28483_x1134_618593189}
+RSA sign failed:
 
-[[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_618134434}[签名失败]{style="font-family:宋体"}
+RSA签名失败
 
-[[Failed to verify RSA:]{lang="EN-US"}]{#struct_0_28483_x1134_618003362}
+Failed to verify RSA:
 
-[[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_617872290}[验证失败]{style="font-family:宋体"}
+RSA验证失败
 
-[[Bad hash length]{lang="EN-US"}]{#struct_0_28483_x1134_617806754}
+Bad hash length
 
-[[错误的哈希长度]{style="font-family:宋体"}]{#struct_0_28483_x1134_617675682}
+错误的哈希长度
 
-[[Bad signature length]{lang="EN-US"}]{#struct_0_28483_x1134_618593186}
+Bad signature length
 
-[[错误的签名长度]{style="font-family:宋体"}]{#struct_0_28483_x1134_618068899}
+错误的签名长度
 
-[[Failed to decrypt RSA public key:]{lang="EN-US"}]{#struct_0_28483_x1134_617937827}
+Failed to decrypt RSA public key:
 
-[[解密]{style="font-family:宋体"}]{#struct_0_28483_x1134_617806755}[RSA]{lang="EN-US"}[公钥失败]{style="font-family:宋体"}
+解密RSA公钥失败
 
-[[Bad decrypted length ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_617741219}
+Bad decrypted length *xx*
 
-[[错误的解密长度]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_618658723}
+错误的解密长度*xx*
 
-[[Hash mismatch]{lang="EN-US"}]{#struct_0_28483_x1134_618134432}
+Hash mismatch
 
-[[哈希不匹配]{style="font-family:宋体"}]{#struct_0_28483_x1134_618003360}
+哈希不匹配
 
-[[Failed to get remote hostname]{lang="EN-US"}]{#struct_0_28483_x1134_617872288}
+Failed to get remote hostname
 
-[[获取远端主机名失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_617741216}
+获取远端主机名失败
 
-[[Failed to set socket option SO_KEEPALIVE:]{lang="EN-US"}]{#struct_0_28483_x1134_618658720}
+Failed to set socket option SO_KEEPALIVE:
 
-[[设置]{style="font-family:宋体"}[Socket]{lang="EN-US"}]{#struct_0_28483_x1134_618593184}[选项]{style="font-family:宋体"}[SO_KEEPALIVE]{lang="EN-US"}[失败]{style="font-family:宋体"}
+设置Socket选项SO_KEEPALIVE失败
 
-[[Failed to initialize the INOTIFY]{lang="EN-US"}]{#struct_0_28483_x1134_618068897}
+Failed to initialize the INOTIFY
 
-[[初始化]{style="font-family:宋体"}]{#struct_0_28483_x1134_617937825}[INOTIFY]{lang="EN-US"}[失败]{style="font-family:宋体"}
+初始化INOTIFY失败
 
-[[Failed to get name info:]{lang="EN-US"}]{#struct_0_28483_x1134_617806753}
+Failed to get name info:
 
-[[获取名称信息失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_617675681}
+获取名称信息失败
 
-[[Failed to set socket option:]{lang="EN-US"}]{#struct_0_28483_x1134_618593185}
+Failed to set socket option:
 
-[[设置]{style="font-family:宋体"}[Socket]{lang="EN-US"}]{#struct_0_28483_x1134_x2110814455}[选项失败]{style="font-family:宋体"}
+设置Socket选项失败
 
-[[Failed to change owner *xx* (0 0):]{lang="EN-US"}]{#struct_0_28483_x1134_x2110945527}
+Failed to change owner *xx* (0 0):
 
-[[改变]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2111011063}[owner]{lang="EN-US"}[失败]{style="font-family:宋体"}
+改变owner失败
 
-[[Failed to change mode *xx* (0666):]{lang="EN-US"}]{#struct_0_28483_x1134_x2111142135}
+Failed to change mode *xx* (0666):
 
-[[改变]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2110224631}[mode]{lang="EN-US"}[失败]{style="font-family:宋体"}
+改变mode失败
 
-[ ]{lang="EN-US"}
+表1-5 debugging ssh client event命令输出信息描述表
 
-[[表1-5 ]{lang="EN-US"}[debugging ssh client event]{lang="EN-US"}]{#struct_0_28483_x1134_x2110290167}[命令输出信息描述表]{style="font-family:黑体"}
+字段
 
-[]{#table_struct_0_x929712266}[[字段]{style="font-family:黑体"}]{#struct_0_28483_x1134_2139006741}
+描述
 
-[[描述]{style="font-family:黑体"}]{#struct_0_28483_x1134_x1431888024}
+No x11 authenticate context
 
-[[No x11 authenticate context]{lang="EN-US"}]{#struct_0_28483_x1134_744458208}
+无x11认证上下文
 
-[[无]{style="font-family:宋体"}[x11]{lang="EN-US"}]{#struct_0_28483_x1134_x2043264897}[认证上下文]{style="font-family:宋体"}
+*[xx*] request accepted on channel *yy*
 
-[*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2110748918}[ request accepted on channel *yy*]{lang="EN-US"}
+通道号*yy*上接受*xx*请求
 
-[[通道号]{style="font-family:宋体"}*[yy]{lang="EN-US"}*]{#struct_0_28483_x1134_13508949}[上接受]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[请求]{style="font-family:宋体"}
+Forwarding port
 
-[[Forwarding port]{lang="EN-US"}]{#struct_0_28483_x1134_x1736162592}
+端口转发
 
-[[端口转发]{style="font-family:宋体"}]{#struct_0_28483_x1134_394777697}
+Entering interactive session.
 
-[[Entering interactive session.]{lang="EN-US"}]{#struct_0_28483_x1134_x2110814454}
+进入会话交互阶段
 
-[[进入会话交互阶段]{style="font-family:宋体"}]{#struct_0_28483_x1134_1053422239}
+Rekeying in progress
 
-[[Rekeying in progress]{lang="EN-US"}]{#struct_0_28483_x1134_x304399528}
+rekey进行中
 
-[[rekey]{lang="EN-US"}]{#struct_0_28483_x1134_1508969078}[进行中]{style="font-family:宋体"}
+Transfer complete: sent *xx* bytes, received *yy* bytes, in *zz* seconds
 
-[[Transfer complete: sent *xx* bytes, received *yy* bytes, in *zz* seconds]{lang="EN-US"}]{#struct_0_28483_x1134_x836682694}
+传输完成：在*zz*秒内，发送*xx*字节，接收*yy*字节
 
-[[传输完成：在]{style="font-family:宋体"}*[zz]{lang="EN-US"}*]{#struct_0_28483_x1134_x2110879990}[秒内，发送]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[字节，接收]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[字节]{style="font-family:宋体"}
+Bytes per second: sent *xx*, received *yy*
 
-[[Bytes per second: sent *xx*, received *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_x528558852}
+每秒发送*xx*字节，接收*yy*字节
 
-[[每秒发送]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1966384659}[字节，接收]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[字节]{style="font-family:宋体"}
+Requesting tunnel unit *xx* in mode *yy*
 
-[[Requesting tunnel unit *xx* in mode *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_x1108924840}
+以*yy*模式请求隧道单元*xx*
 
-[[以]{style="font-family:宋体"}*[yy]{lang="EN-US"}*]{#struct_0_28483_x1134_x2110945526}[模式请求隧道单元]{style="font-family:宋体"}*[xx]{lang="EN-US"}*
+request_type *xx*, want_reply *yy*
 
-[[request_type *xx*, want_reply *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_1117695847}
+请求类型*xx*，是否要求应答*yy*
 
-[[请求类型]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x1056152912}[，是否要求应答]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+Client key exchange
 
-[[Client key exchange]{lang="EN-US"}]{#struct_0_28483_x1134_x2111011062}
+客户端密钥交换
 
-[[客户端密钥交换]{style="font-family:宋体"}]{#struct_0_28483_x1134_x137318746}
+Couldn\'t get remote file\'s state:
 
-[[Couldn\'t get remote file\'s state:]{lang="EN-US"}]{#struct_0_28483_x1134_x1281652978}
+无法获取远端文件的状态,
 
-[[无法获取远端文件的状态]{style="font-family:宋体"}[,]{lang="EN-US"}]{#struct_0_28483_x1134_1787977830}
+Remote version:
 
-[[Remote version:]{lang="EN-US"}]{#struct_0_28483_x1134_x2111076598}
+对方版本串
 
-[[对方版本串]{style="font-family:宋体"}]{#struct_0_28483_x1134_x1093305797}
+Server supports extension \\\"*xx*\\\" revision *yy*
 
-[[Server supports extension \\\"*xx*\\\" revision *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_x206159768}
+服务器支持扩展*xx*、修订*yy*
 
-[[服务器支持扩展]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x1914172852}[、修订]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+Unrecognised server extension \\\"*xx*\\\"
 
-[[Unrecognised server extension \\\"*xx*\\\"]{lang="EN-US"}]{#struct_0_28483_x1134_x2111142134}
+无法识别的服务器扩展*xx*
 
-[[无法识别的服务器扩展]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1360632068}
+Sent message *XX*:
 
-[[Sent message *XX*:]{lang="EN-US"}]{#struct_0_28483_x1134_x592298822}
+发送消息*XX*
 
-[[发送消息]{style="font-family:宋体"}*[XX]{lang="EN-US"}*]{#struct_0_28483_x1134_x2111207670}
+Received reply: type *xx*, ID *yy*
 
-[[Received reply: type *xx*, ID *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_275621541}
+接收到应答：类型为*xx*，消息ID为*yy*
 
-[[接收到应答：类型为]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_359059781}[，消息]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+Received *XX*:
 
-[[Received *XX*:]{lang="EN-US"}]{#struct_0_28483_x1134_x300563159}
+接收到消息*X*X，可能包括：
 
-[[接收到消息]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2110224630}*[X]{lang="EN-US"}*[X]{lang="EN-US"}[，可能包括：]{style="font-family:
-  宋体"}
+SSH2_FXP_STATUS、SSH2_MSG_USERAUTH_BANNER、SSH2_MSG_USERAUTH_SUCCESS、SSH2_MSG_USERAUTH_PK_OK、SSH2_MSG_USERAUTH_PASSWD_CHANGEREQ
 
-[[SSH2_FXP_STATUS]{lang="EN-US"}]{#struct_0_28483_x1134_691574354}[、]{style="font-family:宋体"}[SSH2_MSG_USERAUTH_BANNER]{lang="EN-US"}[、]{style="font-family:宋体"}[SSH2_MSG_USERAUTH_SUCCESS]{lang="EN-US"}[、]{style="font-family:宋体"}[SSH2_MSG_USERAUTH_PK_OK]{lang="EN-US"}[、]{style="font-family:宋体"}[SSH2_MSG_USERAUTH_PASSWD_CHANGEREQ]{lang="EN-US"}
+Received *xx* SSH2_FXP_NAME responses
 
-[[Received *xx* SSH2_FXP_NAME responses]{lang="EN-US"}]{#struct_0_28483_x1134_1187547332}
+接收到x个SSH2_FXP_NAME消息应答
 
-[[接收到]{style="font-family:宋体"}[x]{lang="EN-US"}]{#struct_0_28483_x1134_x2110290166}[个]{style="font-family:宋体"}[SSH2_FXP_NAME]{lang="EN-US"}[消息应答]{style="font-family:宋体"}
+Sending SSH2_FXP_REMOVE \\\"*xx*\\\"
 
-[[Sending SSH2_FXP_REMOVE \\\"*xx*\\\"]{lang="EN-US"}]{#struct_0_28483_x1134_572922800}
+发送消息SSH2_FXP_REMOVE，路径为*xx*
 
-[[发送消息]{style="font-family:宋体"}]{#struct_0_28483_x1134_1068419061}[SSH2_FXP_REMOVE]{lang="EN-US"}[，路径为]{style="font-family:宋体"}*[xx]{lang="EN-US"}*
+Server version does not support lstat operation
 
-[[Server version does not support lstat operation]{lang="EN-US"}]{#struct_0_28483_x1134_x2110748921}
+服务器版本不支持lstat操作
 
-[[服务器版本不支持]{style="font-family:宋体"}[lstat]{lang="EN-US"}]{#struct_0_28483_x1134_x1196279096}[操作]{style="font-family:宋体"}
+Process SSH_FXP_REALPATH: filename *xx* -\> *yy*
 
-[[Process SSH_FXP_REALPATH: filename *xx* -\> *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_1386683017}
+处理消息SSH_FXP_REALPATH，原来文件名xx-\>真实文件名yy
 
-[[处理消息]{style="font-family:宋体"}[SSH_FXP_REALPATH]{lang="EN-US"}]{#struct_0_28483_x1134_x2110814457}[，原来文件名]{style="font-family:宋体"}[xx-\>]{lang="EN-US"}[真实文件名]{style="font-family:宋体"}[yy]{lang="EN-US"}
+Sent message *xx*:
 
-[[Sent message *xx*:]{lang="EN-US"}]{#struct_0_28483_x1134_x512661702}
+发送消息*xx*
 
-[[发送消息]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x228434365}
+Request data: offset *xx* -\> *yy*
 
-[[Request data: offset *xx* -\> *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_x2110879993}
+请求偏移*xx* -\> *yy*的数据（*xx*为当前序号，*yy*为最大序号）
 
-[[请求偏移]{style="font-family:宋体"}]{#struct_0_28483_x1134_x125274325}*[xx]{lang="EN-US"}*[ -\> *yy*]{lang="EN-US"}[的数据（]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[为当前序号，]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[为最大序号）]{style="font-family:宋体"}
+Received reply: Type *xx*, ID *yy*, Max_req *zz*
 
-[[Received reply: Type *xx*, ID *yy*, Max_req *zz*]{lang="EN-US"}]{#struct_0_28483_x1134_284044872}
+接收到应答：消息类型为*xx*，消息ID为*yy*， 最大序列号*zz*
 
-[[接收到应答：消息类型为]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2110945529}[，消息]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[，]{style="font-family:宋体"} [最大序列号]{style="font-family:宋体"}*[zz]{lang="EN-US"}*
+Received data: offset *xx* -\> *yy*
 
-[[Received data: offset *xx* -\> *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_x1967417868}
+接收到数据偏移*xx* -\> *yy*的数据（*xx*为当前序号，*yy*为最大序号）
 
-[[接收到数据偏移]{style="font-family:宋体"}]{#struct_0_28483_x1134_1822934793}*[xx]{lang="EN-US"}*[ -\> *yy*]{lang="EN-US"}[的数据（]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[为当前序号，]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[为最大序号）]{style="font-family:宋体"}
+Requesting compression at level *xx*
 
-[[Requesting compression at level *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x2111011065}
+请求压缩等级*xx*
 
-[[请求压缩等级]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2059633047}
+Remote host refused compression
 
-[[Remote host refused compression]{lang="EN-US"}]{#struct_0_28483_x1134_x2111076601}
+对方不支持压缩
 
-[[对方不支持压缩]{style="font-family:宋体"}]{#struct_0_28483_x1134_117137605}
+Requesting PTY
 
-[[Requesting PTY]{lang="EN-US"}]{#struct_0_28483_x1134_x330436407}
+请求PTY
 
-[[请求]{style="font-family:宋体"}[PTY]{lang="EN-US"}]{#struct_0_28483_x1134_x2111142137}
+Remote host failed or refused to allocate a pseudo tty
 
-[[Remote host failed or refused to allocate a pseudo tty]{lang="EN-US"}]{#struct_0_28483_x1134_x1368251287}
+对方分配虚拟TTY失败或拒绝分配
 
-[[对方分配虚拟]{style="font-family:宋体"}[TTY]{lang="EN-US"}]{#struct_0_28483_x1134_x1155680957}[失败或拒绝分配]{style="font-family:宋体"}
+Remote host denied X11 forwarding
 
-[[Remote host denied X11 forwarding]{lang="EN-US"}]{#struct_0_28483_x1134_x2111207673}
+对方拒绝x11转发
 
-[[对方拒绝]{style="font-family:宋体"}[x11]{lang="EN-US"}]{#struct_0_28483_x1134_1841705482}[转发]{style="font-family:宋体"}
+Remote host denied authentication agent forwarding
 
-[[Remote host denied authentication agent forwarding]{lang="EN-US"}]{#struct_0_28483_x1134_x2110224633}
+对方拒绝认证代理转发
 
-[[对方拒绝认证代理转发]{style="font-family:宋体"}]{#struct_0_28483_x1134_288289827}
+Sending command:
 
-[[Sending command:]{lang="EN-US"}]{#struct_0_28483_x1134_x1474247400}
+发送命令
 
-[[发送命令]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2110290169}
+Open new channel:
 
-[[Open new channel:]{lang="EN-US"}]{#struct_0_28483_x1134_x1349391501}
+打开新的通道
 
-[[打开新的通道]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2110748920}
+Connecting to *xx* port *yy*
 
-[[Connecting to *xx* port *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_369804845}
+连接到IP地址*xx、*端口号*yy*
 
-[[连接到]{style="font-family:宋体"}[IP]{lang="EN-US"}]{#struct_0_28483_x1134_x1124422833}[地址]{style="font-family:宋体"}*[xx]{lang="EN-US"}[、]{style="font-family:宋体"}*[端口号]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+Connection established
 
-[[Connection established]{lang="EN-US"}]{#struct_0_28483_x1134_x2110814456}
+连接建立
 
-[[连接建立]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2078745643}
+Remote protocol version *x.y*, remote software version *zz*
 
-[[Remote protocol version ]{lang="EN-US"}*[x.y]{lang="EN-US"}*]{#struct_0_28483_x1134_x2110879992}[, remote software version *zz*]{lang="EN-US"}
+对方协议版本号*x.y*,对方软件版本号*zz*
 
-[[对方协议版本号]{style="font-family:宋体"}*[x.y]{lang="EN-US"}*[,]{lang="EN-US"}]{#struct_0_28483_x1134_x1691358266}[对方软件版本号]{style="font-family:
-  宋体"}*[zz]{lang="EN-US"}*
+Get self version string *xx*
 
-[[Get self version string *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x322158311}
+获取到本端版本串*xx*
 
-[[获取到本端版本串]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2110945528}*[xx]{lang="EN-US"}*
+Local version string *xx*
 
-[[Local version string *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x401333927}
+本端版本串*xx*
 
-[[本端版本串]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2111011064}*[xx]{lang="EN-US"}*
+Service accepted:
 
-[[Service accepted:]{lang="EN-US"}]{#struct_0_28483_x1134_669250308}
+服务器接受服务
 
-[[服务器接受服务]{style="font-family:宋体"}]{#struct_0_28483_x1134_x2111076600}
+Authentication succeeded (*xx*)
 
-[[Authentication succeeded (*xx*)]{lang="EN-US"}]{#struct_0_28483_x1134_x1448946336}
+认证成功（认证方法名串为*xx*）
 
-[[认证成功（认证方法名串为]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_2064495458}[）]{style="font-family:宋体"}
+Try authentication method *xx*
 
-[[Try authentication method *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x2111142136}
+尝试认证方法*xx*
 
-[[尝试认证方法]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_197832654}
+Passed a different authentication method list *xx*, preferred *yy*.
 
-[[Passed a different authentication method list *xx*, preferred *yy*.]{lang="EN-US"}]{#struct_0_28483_x1134_x2111207672}
+服务端给出不同的认证方法列表*xx*，首选*yy*
 
-[[服务端给出不同的认证方法列表]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x887177873}[，首选]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+No more authentication methods to try
 
-[[No more authentication methods to try]{lang="EN-US"}]{#struct_0_28483_x1134_x2110224632}
+无其它可尝试的认证方法
 
-[[无其它可尝试的认证方法]{style="font-family:宋体"}]{#struct_0_28483_x1134_1854373768}
+Authentication method *xx* is enabled
 
-[[Authentication method *xx* is enabled]{lang="EN-US"}]{#struct_0_28483_x1134_x2110290168}
+使能认证方法*xx*
 
-[[使能认证方法]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1379491854}
+Channel *xx*:request *yy* confirm *zz*
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x2110748923}[request *yy* confirm *zz*]{lang="EN-US"}
+通道号*xx*：请求*yy*、确认*zz*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1935888786}[：请求]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[、确认]{style="font-family:宋体"}*[zz]{lang="EN-US"}*
+Channel *xx*:closing
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x2110814459}[closing]{lang="EN-US"}
+通道号*xx*：关闭中
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1006368072}[：关闭中]{style="font-family:宋体"}
+Channel *xx*:connected to *yy* port *zz*
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_601278692}[connected to *yy* port *zz*]{lang="EN-US"}
+通道号*xx*：连接到IP地址*yy*、端口*zz*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2110879995}[：连接到]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[、端口]{style="font-family:宋体"}*[zz]{lang="EN-US"}*
+Channel *xx*:not open
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x1288073739}[not open]{lang="EN-US"}
+通道号*xx*：未打开
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2110945531}[：未打开]{style="font-family:宋体"}
+Channel *xx*:input draining
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x1611121972}[input draining]{lang="EN-US"}
+通道号*xx*：输出关闭中
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2111011067}[：输出关闭中]{style="font-family:宋体"}
+Channel *xx*:Failed to filter
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x896833633}[Failed to filter]{lang="EN-US"}
+通道号*xx*：停止过滤
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2111076603}[：停止过滤]{style="font-family:宋体"}
+Channel *xx*:window *yy* sent adjust *zz*
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x1045661809}[window *yy* sent adjust *zz*]{lang="EN-US"}
+通道号*xx*：窗口*yy*发送调整量*zz*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2111142139}[：窗口]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[发送调整量]{style="font-family:宋体"}*[zz]{lang="EN-US"}*
+Channel *xx*:garbage collecting
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_1407686235}[garbage collecting]{lang="EN-US"}
+通道号*xx*：资源回收中
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2111207675}[：资源回收中]{style="font-family:宋体"}
+Channel *xx*:sent extended data *yy*
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_678906068}[sent extended data *yy*]{lang="EN-US"}
+通道号*xx*：发送扩展数据*yy*字节
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2110224635}[：发送扩展数据]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[字节]{style="font-family:宋体"}
+Channel *xx*:accepting extended_data after EOF
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_1094858881}[accepting extended_data after EOF]{lang="EN-US"}
+通道号*xx*：EOF状态后收到了扩展数据
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2110290171}[：]{style="font-family:宋体"}[EOF]{lang="EN-US"}[状态后收到了扩展数据]{style="font-family:宋体"}
+Channel *xx*:received too much extended data *yy* bytes, window_size *zz*
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x2110748922}[received too much extended data *yy* bytes, window_size *zz*]{lang="EN-US"}
+通道号*xx*：接收太多的扩展数据*yy*，窗口大小*zz*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x792994569}[：接收太多的扩展数据]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[，窗口大小]{style="font-family:宋体"}*[zz]{lang="EN-US"}*
+Channel *xx*:received extended data *yy* bytes
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x2110814458}[received extended data *yy* bytes]{lang="EN-US"}
+通道号*xx*：接收扩展数据*yy*字节
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x559715869}[：接收扩展数据]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[字节]{style="font-family:宋体"}
+Channel *xx*:FORCE input drain
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x2110879994}[FORCE input drain]{lang="EN-US"}
+通道号*xx*：输入强行关闭
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1440809616}[：输入强行关闭]{style="font-family:宋体"}
+Bad cipher *xx* *yy*
 
-[[Bad cipher *xx* \[*yy*\]]{lang="EN-US"}]{#struct_0_28483_x1134_x2110945530}
+错误的加密套件xx 收到的完整的加密套件串列表*yy*
 
-[[错误的加密套件]{style="font-family:宋体"}[xx \[]{lang="EN-US"}]{#struct_0_28483_x1134_x45038031}[收到的完整的加密套件串列表]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[\]]{lang="EN-US"}
+Enabling compatibility mode for protocol 2.0
 
-[[Enabling compatibility mode for protocol 2.0]{lang="EN-US"}]{#struct_0_28483_x1134_x2111011066}
+使能兼容2.0版本
 
-[[使能兼容]{style="font-family:宋体"}[2.0]{lang="EN-US"}]{#struct_0_28483_x1134_1832049722}[版本]{style="font-family:宋体"}
+Enabling compatibility mode for protocol 1.3
 
-[[Enabling compatibility mode for protocol 1.3]{lang="EN-US"}]{#struct_0_28483_x1134_x2111076602}
+使能兼容1.3版本
 
-[[使能兼容]{style="font-family:宋体"}[1.3]{lang="EN-US"}]{#struct_0_28483_x1134_1683221546}[版本]{style="font-family:宋体"}
+Enabling compression at level *xx*
 
-[[Enabling compression at level *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x2111142138}
+使能*xx*等级的压缩算法
 
-[[使能]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2111207674}[等级的压缩算法]{style="font-family:宋体"}
+Compress outgoing: raw data *xx* bytes, compressed *yy* bytes, factor *zz*
 
-[[Compress outgoing: raw data *xx* bytes, compressed *yy* bytes, factor *zz*]{lang="EN-US"}]{#struct_0_28483_x1134_x2049977287}
+压缩输出：原始数据*xx*字节，压缩后为*yy*字节，比例为*zz*
 
-[[压缩输出：原始数据]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2110224634}[字节，压缩后为]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[字节，比例为]{style="font-family:宋体"}*[zz]{lang="EN-US"}*
+Compress incoming: raw data *xx* bytes, compressed *yy* bytes, factor *zz*
 
-[[Compress incoming: raw data *xx* bytes, compressed *yy* bytes, factor *zz*]{lang="EN-US"}]{#struct_0_28483_x1134_x1634024474}
+压缩输入：原始数据*xx*字节，压缩后为*yy*字节，比例为*zz*
 
-[[压缩输入：原始数据]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x2110290170}[字节，压缩后为]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[字节，比例为]{style="font-family:宋体"}*[zz]{lang="EN-US"}*
+Installing CRC compensation attack detector
 
-[[Installing CRC compensation attack detector]{lang="EN-US"}]{#struct_0_28483_x1134_x188434618}
+安装CRC补偿攻击探测器
 
-[[安装]{style="font-family:宋体"}[CRC]{lang="EN-US"}]{#struct_0_28483_x1134_81467221}[补偿攻击探测器]{style="font-family:宋体"}
+Kex strings(*xx*):
 
-[[Kex strings(*xx*):]{lang="EN-US"}]{#struct_0_28483_x1134_x188500154}
+密钥交互串信息，xx取值代表如下涵义：
 
-[[密钥交互串信息，]{style="font-family:宋体"}[xx]{lang="EN-US"}]{#struct_0_28483_x1134_1244349648}[取值代表如下涵义：]{style="font-family:宋体"}
+·0：密钥交换算法串；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[0]{lang="EN-US"}]{#struct_0_28483_x1134_x188565690}[：密钥交换算法串；]{lang="EN-US" style="font-family:宋体"}
+·1：服务器端支持的主机公钥算法串；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[1]{lang="EN-US"}]{#struct_0_28483_x1134_x188631226}[：服务器端支持的主机公钥算法串；]{style="font-family:宋体"}
+·2：客户端到服务器端的加密算法串；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[2]{lang="EN-US"}]{#struct_0_28483_x1134_1250081221}[：客户端到服务器端的加密算法串；]{style="font-family:宋体"}
+·3：服务器端到客户端的加密算法串；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[3]{lang="EN-US"}]{#struct_0_28483_x1134_x188696762}[：服务器端到客户端的加密算法串；]{style="font-family:宋体"}
+·4：客户端到服务器端的HMAC算法串；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[4]{lang="EN-US"}]{#struct_0_28483_x1134_1236348516}[：客户端到服务器端的]{style="font-family:宋体"}[HMAC]{lang="EN-US"}[算法串；]{style="font-family:宋体"}
+·5：服务器端到客户端的HMAC算法串；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[5]{lang="EN-US"}]{#struct_0_28483_x1134_x188762298}[：服务器端到客户端的]{style="font-family:宋体"}[HMAC]{lang="EN-US"}[算法串；]{style="font-family:宋体"}
+·6：客户端到服务器端的压缩算法串；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[6]{lang="EN-US"}]{#struct_0_28483_x1134_x188827834}[：客户端到服务器端的压缩算法串；]{style="font-family:宋体"}
+·7：服务器端到客户端的压缩算法串；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[7]{lang="EN-US"}]{#struct_0_28483_x1134_35562304}[：服务器端到客户端的压缩算法串；]{style="font-family:宋体"}
+·8：客户端到服务器端的语言选择串；
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[8]{lang="EN-US"}]{#struct_0_28483_x1134_x188893370}[：客户端到服务器端的语言选择串；]{style="font-family:宋体"}
+·9：服务器端到客户端的语言选择串
 
-[[·[       ]{style="font:7.0pt "}]{lang="EN-US" style="font-size:10.0pt;font-family:Symbol"}[9]{lang="EN-US"}]{#struct_0_28483_x1134_x187910330}[：服务器端到客户端的语言选择串]{style="font-family:宋体"}
+Proposal mismatch:
 
-[[Proposal mismatch:]{lang="EN-US"}]{#struct_0_28483_x1134_658982222}
+密钥交互串匹配失败
 
-[[密钥交互串匹配失败]{style="font-family:宋体"}]{#struct_0_28483_x1134_x187975866}
+My proposal kex:
 
-[[My proposal kex:]{lang="EN-US"}]{#struct_0_28483_x1134_1369148496}
+我的密钥交互串
 
-[[我的密钥交互串]{style="font-family:宋体"}]{#struct_0_28483_x1134_x188434617}
+Peer proposal kex:
 
-[[Peer proposal kex:]{lang="EN-US"}]{#struct_0_28483_x1134_x188500153}
+对方的密钥交互串
 
-[[对方的密钥交互串]{style="font-family:宋体"}]{#struct_0_28483_x1134_1244021968}
+Kex: *xx*, Encrypt: *yy*, HMAC: *zz*, Compress: *mm*
 
-[[Kex: *xx*, Encrypt: *yy*, HMAC: *zz*, Compress: *mm*]{lang="EN-US"}]{#struct_0_28483_x1134_x188565689}
+密钥交换算法*xx*，加密算法*yy*，摘要算法*zz*，压缩算法*mm*
 
-[[密钥交换算法]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x188631225}[，加密算法]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[，摘要算法]{style="font-family:宋体"}*[zz]{lang="EN-US"}*[，压缩算法]{style="font-family:宋体"}*[mm]{lang="EN-US"}*
+Bad HAMC *xx* *yy*
 
-[[Bad HAMC *xx* \[*yy*\]]{lang="EN-US"}]{#struct_0_28483_x1134_1250146757}
+错误的摘要算法*xx*摘要算法串*yy*
 
-[[错误的摘要算法]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[\[]{lang="EN-US"}]{#struct_0_28483_x1134_x188696761}[摘要算法串]{style="font-family:
-  宋体"}*[yy]{lang="EN-US"}*[\]]{lang="EN-US"}
+Send message: type *xx*
 
-[[Send message: type *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x188762297}
+发送消息：消息类型*xx*
 
-[[发送消息：消息类型]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1651399648}
+Channel *xx*:input state: *xx* -\> *yy*
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x188827833}[input state: *xx* -\> *yy*]{lang="EN-US"}
+通道号*xx*：输入状态由*xx*状态切换到*yy*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x188893369}[：输入状态由]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[状态切换到]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+Channel *xx*:output state: *xx* -\> *yy*
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x1890332463}[output state: *xx* -\> *yy*]{lang="EN-US"}
+通道号*xx*：输出状态由*xx*状态切换到*yy*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x187910329}[：输出状态由]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[状态切换到]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+Channel *xx*:received *XX*
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x187975865}[received *XX*]{lang="EN-US"}
+通道号*xx*：接收到消息*XX*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1369214032}[：接收到消息]{style="font-family:宋体"}*[XX]{lang="EN-US"}*
+Channel *xx*: read failed
 
-[[Channel *xx*: read failed]{lang="EN-US"}]{#struct_0_28483_x1134_x188434620}
+通道号*xx*：读数据失败
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x188500156}[：读数据失败]{style="font-family:宋体"}
+Channel *xx*:send *XX*
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_1244218576}[send *XX*]{lang="EN-US"}
+通道号*xx*：发送消息*XX*
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x188565692}[：发送消息]{style="font-family:宋体"}*[XX]{lang="EN-US"}*
+Channel *xx*:write failed
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x188631228}[write failed]{lang="EN-US"}
+通道号*xx*：写失败
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1249425861}[：写失败]{style="font-family:宋体"}
+Channel *xx*:mode=*yy*
 
-[[Channel *xx*:]{lang="EN-US"}[ ]{lang="EN-US"}]{#struct_0_28483_x1134_x188696764}[mode=*yy*]{lang="EN-US"}
+通道号*xx*：新的模式*yy*（0和1，分别对应MODE_IN或者MODE_OUT）
 
-[[通道号]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x188762300}[：新的模式]{style="font-family:宋体"}*[yy]{lang="EN-US"}*[（]{style="font-family:宋体"}[0]{lang="EN-US"}[和]{style="font-family:宋体"}[1]{lang="EN-US"}[，分别对应]{style="font-family:宋体"}[MODE_IN]{lang="EN-US"}[或者]{style="font-family:宋体"}[MODE_OUT]{lang="EN-US"}[）]{style="font-family:宋体"}
+Expecting packet type *xx*
 
-[[Expecting packet type ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x188827836}
+期望收到包类型*xx*
 
-[[期望收到包类型]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_35693376}
+Remote message:
 
-[[Remote message:]{lang="EN-US"}]{#struct_0_28483_x1134_x188893372}
+远端发来的信息
 
-[[远端发来的信息]{style="font-family:宋体"}]{#struct_0_28483_x1134_x187910332}
+Set max packet size to *xx*
 
-[[Set max packet size to ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_659113294}
+设置最大包大小为*xx*
 
-[[设置最大包大小为]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x187975868}
+Read passphrase:
 
-[[Read passphrase:]{lang="EN-US"}]{#struct_0_28483_x1134_x188434619}
+读取密码
 
-[[读取密码]{style="font-family:宋体"}]{#struct_0_28483_x1134_x188500155}
+Sent message: type *xx*, ID *yy*
 
-[[Sent message: type ]{lang="EN-US"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1244415184}[, ID ]{lang="EN-US"}*[yy]{lang="EN-US"}*
+发送消息：类型为*xx*，消息ID为*yy*
 
-[[发送消息：类型为]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_x188565691}[，消息]{style="font-family:宋体"}[ID]{lang="EN-US"}[为]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+DSA verify:
 
-[[DSA verify:]{lang="EN-US"}]{#struct_0_28483_x1134_x188631227}
+DSA验证
 
-[[DSA]{lang="EN-US"}]{#struct_0_28483_x1134_x188696763}[验证]{style="font-family:宋体"}
+RSA verify
 
-[[RSA verify]{lang="EN-US"}]{#struct_0_28483_x1134_1236282980}
+RSA验证
 
-[[RSA]{lang="EN-US"}]{#struct_0_28483_x1134_x188762299}[验证]{style="font-family:宋体"}
+Ignoring unsupported tty mode, opcode *xx*
 
-[[Ignoring unsupported tty mode, opcode *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x188827835}
+忽略不支持的TTY模式，操作码为*xx*
 
-[[忽略不支持的]{style="font-family:宋体"}[TTY]{lang="EN-US"}]{#struct_0_28483_x1134_x188893371}[模式，操作码为]{style="font-family:宋体"}*[xx]{lang="EN-US"}*
+Processed SSH2_MSG_USERAUTH_PK_OK message successfully, key finger is *xx*
 
-[[Processed SSH2_MSG_USERAUTH_PK_OK message successfully, key finger is *xx*]{lang="EN-US"}]{#struct_0_28483_x1134_x1890856752}
+处理SSH2_MSG_USERAUTH_PK消息成功，密钥指纹串为*xx*
 
-[[处理]{style="font-family:宋体"}]{#struct_0_28483_x1134_x187910331}[SSH2_MSG_USERAUTH_PK]{lang="EN-US"}[消息成功，密钥指纹串为]{style="font-family:宋体"}*[xx]{lang="EN-US"}*
+表1-6 debugging ssh client message命令输出信息描述表
 
-[ ]{lang="EN-US"}
+字段
 
-[[表1-6 ]{lang="EN-US"}[debugging ssh client message]{lang="EN-US"}]{#struct_0_28483_x1134_658916686}[命令输出信息描述表]{style="font-family:黑体"}
+描述
 
-[]{#table_struct_0_x914819690}[[字段]{style="font-family:黑体"}]{#struct_0_28483_x1134_2105950915}
+Prepare packet*xx*
 
-[[描述]{style="font-family:黑体"}]{#struct_0_28483_x1134_x187975867}
+准备消息消息类型*xx*
 
-[[Prepare packet\[*xx*\]]{lang="DE"}]{#struct_0_28483_x1134_1369082960}
+Compression: raw_len *xx*, compressed_len *yy*
 
-[[准备消息]{style="font-family:宋体"}[\[]{lang="EN-US"}]{#struct_0_28483_x1134_776682760}[消息类型]{style="font-family:宋体"}*[xx]{lang="EN-US"}*[\]]{lang="EN-US"}
+数据压缩：原始数据大小为*xx*，压缩后数据大小为*yy*
 
-[[Compression: raw_len *xx*, compressed_len *yy*]{lang="DE"}]{#struct_0_28483_x1134_1834773386}
+Input: Length before de-compress *xx*, length after de-compress *yy*
 
-[[数据压缩：原始数据大小为]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_1892518221}[，压缩后数据大小为]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+输入：解压前数据长度为*xx*，解压后数据长度为*yy*
 
-[[Input: Length before de-compress *xx*, length after de-compress *yy*]{lang="EN-US"}]{#struct_0_28483_x1134_x188434622}
+Received packet type *xx*
 
-[[输入：解压前数据长度为]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_81860440}[，解压后数据长度为]{style="font-family:宋体"}*[yy]{lang="EN-US"}*
+接收到消息*xx*
 
-[[Received packet type *xx*]{lang="DE"}]{#struct_0_28483_x1134_433666794}
+【举例】
 
-[[接收到消息]{style="font-family:宋体"}*[xx]{lang="EN-US"}*]{#struct_0_28483_x1134_2140775177}
+\# 打开SSH客户端的错误调试信息开关。设备作为SFTP客户端（IP地址为192.168.0.55）登录远端SFTP服务器（IP地址为192.168.0.59），用户名为abc、密码为abc。
 
-[ ]{lang="EN-US"}
+\<Sysname\> debugging ssh client error
 
-[[【举例】]{style="font-family:黑体"}]{#struct_0_28483_x1134_x188500158}
+\<Sysname\> sftp 192.168.0.59
 
-[[\# ]{lang="EN-US"}]{#struct_0_28483_x1134_1243563216}[打开]{style="font-family:宋体"}[SSH]{lang="EN-US"}[客户端的错误调试信息开关。设备作为]{style="font-family:宋体"}[SFTP]{lang="EN-US"}[客户端（]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[192.168.0.55]{lang="EN-US"}[）登录远端]{style="font-family:宋体"}[SFTP]{lang="EN-US"}[服务器（]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[192.168.0.59]{lang="EN-US"}[），用户名为]{style="font-family:宋体"}[abc]{lang="EN-US"}[、密码为]{style="font-family:宋体"}[abc]{lang="EN-US"}[。]{style="font-family:宋体"}
+Username: abc
 
-[[\<Sysname\> debugging ssh client error]{lang="EN-US"}]{#struct_0_28483_x1134_977981081}
+Connecting to 192.168.0.59 port 22.
 
-[\<Sysname\> sftp 192.168.0.59]{lang="EN-US"}
+The server is not authenticated. Continue? [Y/N:y]
 
-[Username: abc]{lang="EN-US"}
+Do you want to save the server public key? [Y/N:n]
 
-[Connecting to 192.168.0.59 port 22.]{lang="EN-US"}
+abc@192.168.0.59\'s password:
 
-[The server is not authenticated. Continue? \[Y/N\]:y]{lang="EN-US"}
+\# 将本地temp.c文件上传到远程SFTP服务器。
 
-[Do you want to save the server public key? \[Y/N\]:n]{lang="EN-US"}
+sftp\> put temp.c
 
-[abc@192.168.0.59\'s password:]{lang="EN-US"}
+Failed to put file.
 
-[[\# ]{lang="EN-US"}]{#struct_0_28483_x1134_x1311943785}[将本地]{style="font-family:宋体;color:black"}[temp.c]{lang="EN-US" style="color:black"}[文件上传到远程]{style="font-family:宋体;color:black"}[SFTP]{lang="EN-US" style="color:black"}[服务器。]{style="font-family:宋体;
-color:black"}
+sftp\>
 
-[[sftp\> put temp.c]{lang="EN-US"}]{#struct_0_28483_x1134_x113363041}
+\*Dec 31 18:15:06:374 2009 Sysname SSHC/3/ERROR: Failed to get the file status temp.c: No such file or directory
 
-[Failed to put file.]{lang="EN-US"}
+*// 获取文件状态失败；无法找到文件temp.c*
 
-[sftp\>]{lang="EN-US"}
+\# 以列表的形式显示/abcdefg目录下的文件及文件夹的详细信息。
 
-[\*Dec 31 18:15:06:374 2009 Sysname SSHC/3/ERROR: Failed to get the file status temp.c: No such file or directory]{lang="EN-US"}
+sftp\> dir abcdefg
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_1999533167}*[获取文件状态失败；无法找到文件]{style="font-family:宋体"}[temp.c]{lang="EN-US"}*
+Failed to list files, \"/abcdefg\" not found.
 
-[[\# ]{lang="EN-US"}]{#struct_0_28483_x1134_x188565694}[以列表的形式显示]{style="font-family:宋体;color:black"}[/abcdefg]{lang="EN-US" style="color:black"}[目录下的文件及文件夹的详细信息。]{style="font-family:宋体;
-color:black"}
+sftp\>
 
-[[sftp\> dir abcdefg]{lang="EN-US"}]{#struct_0_28483_x1134_x1486124069}
+\*Dec 31 18:15:24:786 2009 Sysname SSHC/3/ERROR: Couldn\'t get remote file status: No such file or directory
 
-[Failed to list files, \"/abcdefg\" not found.]{lang="EN-US"}
+*// 获取文件状态失败；无法找到指定文件或目录*
 
-[sftp\>]{lang="EN-US"}
+\# 打开SSH客户端的事件调试信息开关。设备作为SFTP客户端（IP地址为192.168.0.55）登录远端SFTP服务器（IP地址为192.168.0.59），用户名为abc、密码为abc。
 
-[\*Dec 31 18:15:24:786 2009 Sysname SSHC/3/ERROR: Couldn\'t get remote file status: No such file or directory]{lang="EN-US"}
+\<Sysname\> debugging ssh client event
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x98050936}*[获取文件状态失败；无法找到指定文件或目录]{style="font-family:宋体"}*
+\<Sysname\> ssh 192.168.0.59
 
-[[\# ]{lang="EN-US"}]{#struct_0_28483_x1134_x1963387760}[打开]{style="font-family:宋体"}[SSH]{lang="EN-US"}[客户端的事件调试信息开关。设备作为]{style="font-family:宋体"}[SFTP]{lang="EN-US"}[客户端（]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[192.168.0.55]{lang="EN-US"}[）登录远端]{style="font-family:宋体"}[SFTP]{lang="EN-US"}[服务器（]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[192.168.0.59]{lang="EN-US"}[），用户名为]{style="font-family:宋体"}[abc]{lang="EN-US"}[、密码为]{style="font-family:宋体"}[abc]{lang="EN-US"}[。]{style="font-family:宋体"}
+Username: abc
 
-[[\<Sysname\> debugging ssh client event]{lang="EN-US"}]{#struct_0_28483_x1134_1729321535}
+\*Dec 31 20:46:58:178 2009 Sysname SSHC/7/EVENT: Connecting to 192.168.0.59 port 22.
 
-[\<Sysname\> ssh 192.168.0.59]{lang="EN-US"}
+\*Dec 31 20:46:58:191 2009 Sysname SSHC/7/EVENT: Connection established.
 
-[ ]{lang="EN-US"}
+\*Dec 31 20:46:58:242 2009 Sysname SSHC/7/EVENT: Remote protocol version 1.99, remote software version Comware-5.20
 
-[Username: abc]{lang="EN-US"}
+*// 对端协议版本号为1.99（即兼容SSH1和SSH2），对端软件版本串为Comware-5.20（版本串内容与实际的对端产品型号有关，请以设备的实际情况为准）*
 
-[\*Dec 31 20:46:58:178 2009 Sysname SSHC/7/EVENT: Connecting to 192.168.0.59 port 22.]{lang="EN-US"}
+\*Dec 31 20:46:58:248 2009 Sysname SSHC/7/EVENT: Enabling compatibility mode for protocol 2.0
 
-[\*Dec 31 20:46:58:191 2009 Sysname SSHC/7/EVENT: Connection established.]{lang="EN-US"}
+\*Dec 31 20:46:58:262 2009 Sysname SSHC/7/EVENT: Get self version string Comware-7
 
-[\*Dec 31 20:46:58:242 2009 Sysname SSHC/7/EVENT: Remote protocol version 1.99, remote software version Comware-5.20]{lang="EN-US"}
+*// 获取到本端软件版本串为Comware-7（版本串内容与实际的对端产品型号有关，请以设备的实际情况为准）*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x188631230}*[对端协议版本号为]{style="font-family:宋体"}[1.99]{lang="EN-US"}[（即兼容]{style="font-family:宋体"}[SSH1]{lang="EN-US"}[和]{style="font-family:宋体"}[SSH2]{lang="EN-US"}[），对端软件版本串为]{style="font-family:宋体"}[Comware-5.20]{lang="EN-US"}[（版本串内容与实际的对端产品型号有关，请以设备的实际情况为准）]{style="font-family:宋体"}*
+\*Dec 31 20:46:58:278 2009 Sysname SSHC/7/EVENT: Local version string SSH-2.0-Comware-7
 
-[[\*Dec 31 20:46:58:248 2009 Sysname SSHC/7/EVENT: Enabling compatibility mode for protocol 2.0]{lang="EN-US"}]{#struct_0_28483_x1134_1249950148}
+\*Dec 31 20:46:58:314 2009 Sysname SSHC/7/EVENT: Received SSH2_MSG_KEXINIT.
 
-[\*Dec 31 20:46:58:262 2009 Sysname SSHC/7/EVENT: Get self version string Comware-7]{lang="EN-US"}
+\*Dec 31 20:46:58:322 2009 Sysname SSHC/7/EVENT: My proposal kex:
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1416215885}*[获取到本端软件版本串为]{style="font-family:宋体"}[Comware-7]{lang="EN-US"}[（版本串内容与实际的对端产品型号有关，请以设备的实际情况为准）]{style="font-family:宋体"}*
+*// 客户端的版本协商算法串信息如下*
 
-[[\*Dec 31 20:46:58:278 2009 Sysname SSHC/7/EVENT: Local version string SSH-2.0-Comware-7]{lang="EN-US"}]{#struct_0_28483_x1134_x1885654517}
+\*Dec 31 20:46:58:331 2009 Sysname SSHC/7/EVENT: Kex strings(0): diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
 
-[\*Dec 31 20:46:58:314 2009 Sysname SSHC/7/EVENT: Received SSH2_MSG_KEXINIT.]{lang="EN-US"}
+*// 密钥交换算法串*
 
-[\*Dec 31 20:46:58:322 2009 Sysname SSHC/7/EVENT: My proposal kex:]{lang="EN-US"}
+\*Dec 31 20:46:58:338 2009 Sysname SSHC/7/EVENT: Kex strings(1): ssh-dss,ssh-rsa
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_728426681}*[客户端的版本协商算法串信息如下]{style="font-family:宋体"}*
+*// 服务器端支持的主机公钥算法串*
 
-[[\*Dec 31 20:46:58:331 2009 Sysname SSHC/7/EVENT: Kex strings(0): diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1]{lang="EN-US"}]{#struct_0_28483_x1134_2027570911}
+\*Dec 31 20:46:58:358 2009 Sysname SSHC/7/EVENT: Kex strings(2): aes128-cbc,3des-cbc,des-cbc
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x64673919}*[密钥交换算法串]{style="font-family:宋体"}*
+*// 客户端到服务器端的加密算法串*
 
-[[\*Dec 31 20:46:58:338 2009 Sysname SSHC/7/EVENT: Kex strings(1): ssh-dss,ssh-rsa]{lang="EN-US"}]{#struct_0_28483_x1134_x188696766}
+\*Dec 31 20:46:58:369 2009 Sysname SSHC/7/EVENT: Kex strings(3): aes128-cbc,3des-cbc,des-cbc
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_1236610660}*[服务器端支持的主机公钥算法串]{style="font-family:宋体"}*
+*// 服务器端到客户端的加密算法串*
 
-[[\*Dec 31 20:46:58:358 2009 Sysname SSHC/7/EVENT: Kex strings(2): aes128-cbc,3des-cbc,des-cbc]{lang="EN-US"}]{#struct_0_28483_x1134_x2013195053}
+\*Dec 31 20:46:58:394 2009 Sysname SSHC/7/EVENT: Kex strings(4): hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x693266390}*[客户端到服务器端的加密算法串]{style="font-family:宋体"}*
+*// 客户端到服务器端的HMAC算法串*
 
-[[\*Dec 31 20:46:58:369 2009 Sysname SSHC/7/EVENT: Kex strings(3): aes128-cbc,3des-cbc,des-cbc]{lang="EN-US"}]{#struct_0_28483_x1134_x1903882575}
+\*Dec 31 20:46:58:404 2009 Sysname SSHC/7/EVENT: Kex strings(5): hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x146896943}*[服务器端到客户端的加密算法串]{style="font-family:宋体"}*
+*// 服务器端到客户端的HMAC算法串*
 
-[[\*Dec 31 20:46:58:394 2009 Sysname SSHC/7/EVENT: Kex strings(4): hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96]{lang="EN-US"}]{#struct_0_28483_x1134_1075729964}
+\*Dec 31 20:46:58:421 19692009 Sysname SSHC/7/EVENT: Kex strings(6): none,zlib,zlib@openssh.com
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x188762302}*[客户端到服务器端的]{style="font-family:宋体"}[HMAC]{lang="EN-US"}[算法串]{style="font-family:宋体"}*
+*// 客户端到服务器端的压缩算法串*
 
-[[\*Dec 31 20:46:58:404 2009 Sysname SSHC/7/EVENT: Kex strings(5): hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96]{lang="EN-US"}]{#struct_0_28483_x1134_x305243177}
+\*Dec 31 20:46:58:426 2009 Sysname SSHC/7/EVENT: Kex strings(7): none,zlib,zlib@openssh.com
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x342393826}*[服务器端到客户端的]{style="font-family:宋体"}[HMAC]{lang="EN-US"}[算法串]{style="font-family:宋体"}*
+*// 服务器端到客户端的压缩算法串*
 
-[[\*Dec 31 20:46:58:421 19692009 Sysname SSHC/7/EVENT: Kex strings(6): none,zlib,zlib@openssh.com]{lang="EN-US"}]{#struct_0_28483_x1134_x1180066732}
+\*Dec 31 20:46:58:440 2009 Sysname SSHC/7/EVENT: Kex strings(8):
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_386113395}*[客户端到服务器端的压缩算法串]{style="font-family:宋体"}*
+\*Dec 31 20:46:58:446 2009 Sysname SSHC/7/EVENT: Kex strings(9):
 
-[[\*Dec 31 20:46:58:426 2009 Sysname SSHC/7/EVENT: Kex strings(7): none,zlib,zlib@openssh.com]{lang="EN-US"}]{#struct_0_28483_x1134_x88299263}
+\*Dec 31 20:46:58:452 2009 Sysname SSHC/7/EVENT: Peer proposal kex:
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_1249467416}*[服务器端到客户端的压缩算法串]{style="font-family:宋体"}*
+*// 服务器端的版本协商算法串信息如下*
 
-[[\*Dec 31 20:46:58:440 2009 Sysname SSHC/7/EVENT: Kex strings(8):]{lang="EN-US"}]{#struct_0_28483_x1134_x188827838}
+\*Dec 31 20:46:58:460 2009 Sysname SSHC/7/EVENT: Kex strings(0): diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
 
-[\*Dec 31 20:46:58:446 2009 Sysname SSHC/7/EVENT: Kex strings(9):]{lang="EN-US"}
+*// 密钥交换算法串*
 
-[\*Dec 31 20:46:58:452 2009 Sysname SSHC/7/EVENT: Peer proposal kex:]{lang="EN-US"}
+\*Dec 31 20:46:58:463 2009 Sysname SSHC/7/EVENT: Kex strings(1): ssh-dss,ssh-rsa
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_35300160}*[服务器端的版本协商算法串信息如下]{style="font-family:宋体"}*
+*// 服务器端支持的主机公钥算法串*
 
-[[\*Dec 31 20:46:58:460 2009 Sysname SSHC/7/EVENT: Kex strings(0): diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1]{lang="EN-US"}]{#struct_0_28483_x1134_x1104143386}
+\*Dec 31 20:46:58:468 2009 Sysname SSHC/7/EVENT: Kex strings(2): aes128-cbc,3des-cbc,des-cbc
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_425242705}*[密钥交换算法串]{style="font-family:宋体"}*
+*// 客户端到服务器端的加密算法串*
 
-[[\*Dec 31 20:46:58:463 2009 Sysname SSHC/7/EVENT: Kex strings(1): ssh-dss,ssh-rsa]{lang="EN-US"}]{#struct_0_28483_x1134_x1602232230}
+\*Dec 31 20:46:58:475 2009 Sysname SSHC/7/EVENT: Kex strings(3): aes128-cbc,3des-cbc,des-cbc
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_137300162}*[服务器端支持的主机公钥算法串]{style="font-family:宋体"}*
+*// 服务器端到客户端的加密算法串*
 
-[[\*Dec 31 20:46:58:468 2009 Sysname SSHC/7/EVENT: Kex strings(2): aes128-cbc,3des-cbc,des-cbc]{lang="EN-US"}]{#struct_0_28483_x1134_x1738882962}
+\*Dec 31 20:46:58:477 2009 Sysname SSHC/7/EVENT: Kex strings(4): hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_411663673}*[客户端到服务器端的加密算法串]{style="font-family:宋体"}*
+*// 客户端到服务器端的HMAC算法串*
 
-[[\*Dec 31 20:46:58:475 2009 Sysname SSHC/7/EVENT: Kex strings(3): aes128-cbc,3des-cbc,des-cbc]{lang="EN-US"}]{#struct_0_28483_x1134_x188893374}
+\*Dec 31 20:46:58:480 2009 Sysname SSHC/7/EVENT: Kex strings(5): hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1890529072}*[服务器端到客户端的加密算法串]{style="font-family:宋体"}*
+*// 服务器端到客户端的HMAC算法串*
 
-[[\*Dec 31 20:46:58:477 2009 Sysname SSHC/7/EVENT: Kex strings(4): hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96]{lang="EN-US"}]{#struct_0_28483_x1134_x444456149}
+\*Dec 31 20:46:58:484 2009 Sysname SSHC/7/EVENT: Kex strings(6): none
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x2003610192}*[客户端到服务器端的]{style="font-family:宋体"}[HMAC]{lang="EN-US"}[算法串]{style="font-family:宋体"}*
+*// 客户端到服务器端的压缩算法串*
 
-[[\*Dec 31 20:46:58:480 2009 Sysname SSHC/7/EVENT: Kex strings(5): hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96]{lang="EN-US"}]{#struct_0_28483_x1134_1228071864}
+\*Dec 31 20:46:58:486 2009 Sysname SSHC/7/EVENT: Kex strings(7): none
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_388081793}*[服务器端到客户端的]{style="font-family:宋体"}[HMAC]{lang="EN-US"}[算法串]{style="font-family:宋体"}*
+*// 服务器端到客户端的压缩算法串*
 
-[[\*Dec 31 20:46:58:484 2009 Sysname SSHC/7/EVENT: Kex strings(6): none]{lang="EN-US"}]{#struct_0_28483_x1134_x1379415210}
+\*Dec 31 20:46:58:494 2009 Sysname SSHC/7/EVENT: Kex strings(8):
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x187910334}*[客户端到服务器端的压缩算法串]{style="font-family:宋体"}*
+\*Dec 31 20:46:58:497 2009 Sysname SSHC/7/EVENT: Kex strings(9):
 
-[[\*Dec 31 20:46:58:486 2009 Sysname SSHC/7/EVENT: Kex strings(7): none]{lang="EN-US"}]{#struct_0_28483_x1134_659244366}
+\*Dec 31 20:46:58:499 2009 Sysname SSHC/7/EVENT: Kex: server-\>client, Encrypt: aes128-cbc, HMAC: hmac-sha1, Compress: none
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1183261588}*[服务器端到客户端的压缩算法串]{style="font-family:宋体"}*
+*// 协商出来的服务器端到客户端的加密算法、HMAC算法和压缩算法*
 
-[[\*Dec 31 20:46:58:494 2009 Sysname SSHC/7/EVENT: Kex strings(8):]{lang="EN-US"}]{#struct_0_28483_x1134_x2066279952}
+\*Dec 31 20:46:58:502 2009 Sysname SSHC/7/EVENT: Kex: client-\>server, Encrypt: aes128-cbc, HMAC: hmac-sha1, Compress: none
 
-[\*Dec 31 20:46:58:497 2009 Sysname SSHC/7/EVENT: Kex strings(9):]{lang="EN-US"}
+*// 协商出来的客户端到服务器端的加密算法、HMAC算法和压缩算法*
 
-[\*Dec 31 20:46:58:499 2009 Sysname SSHC/7/EVENT: Kex: server-\>client, Encrypt: aes128-cbc, HMAC: hmac-sha1, Compress: none]{lang="EN-US"}
+\*Dec 31 20:46:58:504 2009 Sysname SSHC/7/EVENT: Expecting packet type 31.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x903660706}*[协商出来的服务器端到客户端的加密算法、]{style="font-family:宋体"}[HMAC]{lang="EN-US"}[算法和压缩算法]{style="font-family:宋体"}*
+\*Dec 31 20:47:01:576 2009 Sysname SSHC/7/EVENT: Expecting packet type 33.
 
-[[\*Dec 31 20:46:58:502 2009 Sysname SSHC/7/EVENT: Kex: client-\>server, Encrypt: aes128-cbc, HMAC: hmac-sha1, Compress: none]{lang="EN-US"}]{#struct_0_28483_x1134_x1168248412}
+The server is not authenticated. Continue? [Y/N:y]
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1777511681}*[协商出来的客户端到服务器端的加密算法、]{style="font-family:宋体"}[HMAC]{lang="EN-US"}[算法和压缩算法]{style="font-family:宋体"}*
+Do you want to save the server public key? [Y/N:n]
 
-[[\*Dec 31 20:46:58:504 2009 Sysname SSHC/7/EVENT: Expecting packet type 31.]{lang="EN-US"}]{#struct_0_28483_x1134_x187975870}
+\*Dec 31 20:47:07:612 2009 Sysname SSHC/7/EVENT: DSA verify: signature correct
 
-[\*Dec 31 20:47:01:576 2009 Sysname SSHC/7/EVENT: Expecting packet type 33.]{lang="EN-US"}
+*// 进行DSA认证，签名正确*
 
-[The server is not authenticated. Continue? \[Y/N\]:y]{lang="EN-US"}
+\*Dec 31 20:47:07:634 2009 Sysname SSHC/7/EVENT: Set new keys: mode=1
 
-[Do you want to save the server public key? \[Y/N\]:n]{lang="EN-US"}
+*// 设置协商出来的新的算法（mode=1表示输出方向）*
 
-[ ]{lang="EN-US"}
+\*Dec 31 20:47:07:643 2009 Sysname SSHC/7/EVENT: Expecting packet type 21.
 
-[\*Dec 31 20:47:07:612 2009 Sysname SSHC/7/EVENT: DSA verify: signature correct]{lang="EN-US"}
+\*Dec 31 20:47:07:649 2009 Sysname SSHC/7/EVENT: Set new keys: mode=0
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_1369541713}*[进行]{style="font-family:宋体"}[DSA]{lang="EN-US"}[认证，签名正确]{style="font-family:宋体"}*
+*// 设置协商出来的新的算法（mode=0表示输入方向）*
 
-[[\*Dec 31 20:47:07:634 2009 Sysname SSHC/7/EVENT: Set new keys: mode=1]{lang="EN-US"}]{#struct_0_28483_x1134_457230277}
+\*Dec 31 20:47:07:831 2009 Sysname SSHC/7/EVENT: Service accepted: reply ssh-userauth
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1494939371}*[设置协商出来的新的算法（]{style="font-family:宋体"}[mode=1]{lang="EN-US"}[表示输出方向）]{style="font-family:宋体"}*
+\*Dec 31 20:47:07:859 2009 Sysname SSHC/7/EVENT: Received SSH2_MSG_USERAUTH_FAILURE.
 
-[[\*Dec 31 20:47:07:643 2009 Sysname SSHC/7/EVENT: Expecting packet type 21.]{lang="EN-US"}]{#struct_0_28483_x1134_2029473632}
+\*Dec 31 20:47:07:866 2009 Sysname SSHC/7/EVENT: Authentication methods that can continue to try: password
 
-[\*Dec 31 20:47:07:649 2009 Sysname SSHC/7/EVENT: Set new keys: mode=0]{lang="EN-US"}
+*// 认证失败，可以继续尝试的认证方法为password认证*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_556893623}*[设置协商出来的新的算法（]{style="font-family:宋体"}[mode=0]{lang="EN-US"}[表示输入方向）]{style="font-family:宋体"}*
+\*Dec 31 20:47:07:871 2009 Sysname SSHC/7/EVENT: Passed a different authentication method list password, preferred publickey,password.
 
-[[\*Dec 31 20:47:07:831 2009 Sysname SSHC/7/EVENT: Service accepted: reply ssh-userauth]{lang="EN-US"}]{#struct_0_28483_x1134_x188434621}
+*// 传入了一个不同的认证方法列表password，但支持的认证方法是publickey、password*
 
-[\*Dec 31 20:47:07:859 2009 Sysname SSHC/7/EVENT: Received SSH2_MSG_USERAUTH_FAILURE.]{lang="EN-US"}
+\*Dec 31 20:47:07:877 2009 Sysname SSHC/7/EVENT: Authentication method password is enabled.
 
-[\*Dec 31 20:47:07:866 2009 Sysname SSHC/7/EVENT: Authentication methods that can continue to try: password]{lang="EN-US"}
+*[// Password*]*认证被使能*
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_81925976}*[认证失败，可以继续尝试的认证方法为]{style="font-family:宋体"}[password]{lang="EN-US"}[认证]{style="font-family:宋体"}*
+abc@192.168.0.59\'s password:
 
-[[\*Dec 31 20:47:07:871 2009 Sysname SSHC/7/EVENT: Passed a different authentication method list password, preferred publickey,password.]{lang="EN-US"}]{#struct_0_28483_x1134_1222688335}
+\*Dec 31 20:47:09:166 2009 Sysname SSHC/7/EVENT: Try authentication method password.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1937581965}*[传入了一个不同的认证方法列表]{style="font-family:宋体"}[password]{lang="EN-US"}[，但支持的认证方法是]{style="font-family:宋体"}[publickey]{lang="EN-US"}[、]{style="font-family:宋体"}[password]{lang="EN-US"}*
+*// 尝试Password认证*
 
-[[\*Dec 31 20:47:07:877 2009 Sysname SSHC/7/EVENT: Authentication method password is enabled.]{lang="EN-US"}]{#struct_0_28483_x1134_70420569}
+\*Dec 31 20:47:09:181 2009 Sysname SSHC/7/EVENT: Received SSH2_MSG_USERAUTH_SUCCESS.
 
-[*[// Password]{lang="EN-US"}*]{#struct_0_28483_x1134_370898865}*[认证被使能]{style="font-family:宋体"}*
+\*Dec 31 20:47:09:185 2009 Sysname SSHC/7/EVENT: Authentication succeeded (password).
 
-[[abc@192.168.0.59\'s password:]{lang="EN-US"}]{#struct_0_28483_x1134_x558645453}
+\*Dec 31 20:47:09:194 2009 Sysname SSHC/7/EVENT: Channel 0: new [client-session]
 
-[ ]{lang="EN-US"}
+\*Dec 31 20:47:09:196 2009 Sysname SSHC/7/EVENT: Open new channel: 0.
 
-[\*Dec 31 20:47:09:166 2009 Sysname SSHC/7/EVENT: Try authentication method password.]{lang="EN-US"}
+\*Dec 31 20:47:09:203 2009 Sysname SSHC/7/EVENT: Entering interactive session.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x188500157}*[尝试]{style="font-family:宋体"}[Password]{lang="EN-US"}[认证]{style="font-family:宋体"}*
+\*Dec 31 20:47:09:249 2009 Sysname SSHC/7/EVENT: Channel 0: request pty-req confirm 1
 
-[[\*Dec 31 20:47:09:181 2009 Sysname SSHC/7/EVENT: Received SSH2_MSG_USERAUTH_SUCCESS.]{lang="EN-US"}]{#struct_0_28483_x1134_1244284112}
+\*Dec 31 20:47:09:254 2009 Sysname SSHC/7/EVENT: Channel 0: request shell confirm 1
 
-[\*Dec 31 20:47:09:185 2009 Sysname SSHC/7/EVENT: Authentication succeeded (password).]{lang="EN-US"}
+\*Dec 31 20:47:09:272 2009 Sysname SSHC/7/EVENT: PTY allocation request accepted on channel 0
 
-[\*Dec 31 20:47:09:194 2009 Sysname SSHC/7/EVENT: Channel 0: new \[client-session\]]{lang="EN-US"}
+\*Dec 31 20:47:09:377 2009 Sysname SSHC/7/EVENT: shell request accepted on channel 0
 
-[\*Dec 31 20:47:09:196 2009 Sysname SSHC/7/EVENT: Open new channel: 0.]{lang="EN-US"}
+*[// Password*]*认证成功，shell请求被接受，分配通道号为0*
 
-[\*Dec 31 20:47:09:203 2009 Sysname SSHC/7/EVENT: Entering interactive session.]{lang="EN-US"}
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 
-[\*Dec 31 20:47:09:249 2009 Sysname SSHC/7/EVENT: Channel 0: request pty-req confirm 1]{lang="EN-US"}
+\* Copyright (c) 2004-2010 Hangzhou Sysname Tech. Co., Ltd. All rights reserved.  \*
 
-[\*Dec 31 20:47:09:254 2009 Sysname SSHC/7/EVENT: Channel 0: request shell confirm 1]{lang="EN-US"}
+\* Without the owner\'s prior written consent,                                 \*
 
-[\*Dec 31 20:47:09:272 2009 Sysname SSHC/7/EVENT: PTY allocation request accepted on channel 0]{lang="EN-US"}
+\* no decompiling or reverse-engineering shall be allowed.                    \*
 
-[\*Dec 31 20:47:09:377 2009 Sysname SSHC/7/EVENT: shell request accepted on channel 0]{lang="EN-US"}
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 
-[*[// Password]{lang="EN-US"}*]{#struct_0_28483_x1134_x721391189}*[认证成功，]{style="font-family:宋体"}[shell]{lang="EN-US"}[请求被接受，分配通道号为]{style="font-family:宋体"}[0]{lang="EN-US"}*
+\<Sysname\>
 
-[[\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*]{lang="EN-US"}]{#struct_0_28483_x1134_x281184855}
+*// 用户abc成功登录设备*
 
-[\* Copyright (c) 2004-2010 Hangzhou Sysname Tech. Co., Ltd. All rights reserved.  \*]{lang="EN-US"}
+\# 打开SSH客户端的消息调试信息开关。设备作为SFTP客户端（IP地址为192.168.0.55）登录远端SFTP服务器（IP地址为192.168.0.59），用户名为abc、密码为abc。
 
-[\* Without the owner\'s prior written consent,                                 \*]{lang="EN-US"}
+\<Sysname\> debugging ssh client message
 
-[\* no decompiling or reverse-engineering shall be allowed.                    \*]{lang="EN-US"}
+\<Sysname\> sftp 192.168.0.59
 
-[\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*]{lang="EN-US"}
+Username: abc
 
-[ ]{lang="EN-US"}
+Connecting to 192.168.0.59 port 22.
 
-[\<Sysname\>]{lang="EN-US"}
+\*Dec 31 16:11:03:507 2009 Sysname SSHC/7/MESSAGE: Prepare packet[20.]
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x188565693}*[用户]{style="font-family:宋体"}[abc]{lang="EN-US"}[成功登录设备]{style="font-family:宋体"}*
+*// 准备消息，消息类型为20（以下各消息涵义类似，解释略）*
 
-[[\# ]{lang="EN-US"}]{#struct_0_28483_x1134_x1486189605}[打开]{style="font-family:宋体"}[SSH]{lang="EN-US"}[客户端的消息调试信息开关。设备作为]{style="font-family:宋体"}[SFTP]{lang="EN-US"}[客户端（]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[192.168.0.55]{lang="EN-US"}[）登录远端]{style="font-family:宋体"}[SFTP]{lang="EN-US"}[服务器（]{style="font-family:宋体"}[IP]{lang="EN-US"}[地址为]{style="font-family:宋体"}[192.168.0.59]{lang="EN-US"}[），用户名为]{style="font-family:宋体"}[abc]{lang="EN-US"}[、密码为]{style="font-family:宋体"}[abc]{lang="EN-US"}[。]{style="font-family:宋体"}
+\*Dec 31 16:11:03:510 2009 Sysname SSHC/7/MESSAGE: Received packet type 20.
 
-[[\<Sysname\> debugging ssh client message]{lang="EN-US"}]{#struct_0_28483_x1134_x1301474292}
+*// 接收到消息，消息类型为20（以下各消息涵义类似，解释略）*
 
-[\<Sysname\> sftp 192.168.0.59]{lang="EN-US"}
+\*Dec 31 16:11:03:518 2009 Sysname SSHC/7/MESSAGE:Prepare packet34.
 
-[Username: abc]{lang="EN-US"}
+\*Dec 31 16:11:03:625 2009 Sysname SSHC/7/MESSAGE: Received packet type 31.
 
-[Connecting to 192.168.0.59 port 22.]{lang="EN-US"}
+\*Dec 31 16:11:05:218 2009 Sysname SSHC/7/MESSAGE: Prepare packet[32.]
 
-[\*Dec 31 16:11:03:507 2009 Sysname SSHC/7/MESSAGE: Prepare packet\[20\].]{lang="EN-US"}
+\*Dec 31 16:11:05:466 2009 Sysname SSHC/7/MESSAGE: Received packet type 33.
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x358044316}*[准备消息，消息类型为]{style="font-family:宋体"}[20]{lang="EN-US"}[（以下各消息涵义类似，解释略）]{style="font-family:宋体"}*
+The server is not authenticated. Continue? [Y/N:y]
 
-[[\*Dec 31 16:11:03:510 2009 Sysname SSHC/7/MESSAGE: Received packet type 20.]{lang="EN-US"}]{#struct_0_28483_x1134_881991480}
+Do you want to save the server public key? [Y/N:n]
 
-[*[// ]{lang="EN-US"}*]{#struct_0_28483_x1134_x1290276287}*[接收到消息，消息类型为]{style="font-family:宋体"}[20]{lang="EN-US"}[（以下各消息涵义类似，解释略）]{style="font-family:宋体"}*
+\*Dec 31 16:11:09:252 2009 Sysname SSHC/7/MESSAGE: Prepare packet[21.]
 
-[[\*Dec 31 16:11:03:518 2009 Sysname SSHC/7/MESSAGE:Prepare packet\[34\].]{lang="EN-US"}]{#struct_0_28483_x1134_x188631229}
+\*Dec 31 16:11:09:255 2009 Sysname SSHC/7/MESSAGE: Received packet type 21.
 
-[\*Dec 31 16:11:03:625 2009 Sysname SSHC/7/MESSAGE: Received packet type 31.]{lang="EN-US"}
+\*Dec 31 16:11:09:256 2009 Sysname SSHC/7/MESSAGE: Prepare packet[5.]
 
-[\*Dec 31 16:11:05:218 2009 Sysname SSHC/7/MESSAGE: Prepare packet\[32\].]{lang="EN-US"}
+\*Dec 31 16:11:09:266 2009 Sysname SSHC/7/MESSAGE: Received packet type 6.
 
-[\*Dec 31 16:11:05:466 2009 Sysname SSHC/7/MESSAGE: Received packet type 33.]{lang="EN-US"}
+\*Dec 31 16:11:09:282 2009 Sysname SSHC/7/MESSAGE: Prepare packet[50.]
 
-[The server is not authenticated. Continue? \[Y/N\]:y]{lang="EN-US"}
+\*Dec 31 16:11:09:287 2009 Sysname SSHC/7/MESSAGE: Received packet type 51.
 
-[Do you want to save the server public key? \[Y/N\]:n]{lang="EN-US"}
+abc@192.168.0.59\'s password:
 
-[ ]{lang="EN-US"}
+\*Dec 31 16:11:11:184 2009 Sysname SSHC/7/MESSAGE: Prepare packet[50.]
 
-[\*Dec 31 16:11:09:252 2009 Sysname SSHC/7/MESSAGE: Prepare packet\[21\].]{lang="EN-US"}
+\*Dec 31 16:11:11:193 2009 Sysname SSHC/7/MESSAGE: Received packet type 52.
 
-[\*Dec 31 16:11:09:255 2009 Sysname SSHC/7/MESSAGE: Received packet type 21.]{lang="EN-US"}
+\*Dec 31 16:11:11:194 2009 Sysname SSHC/7/MESSAGE: Prepare packet[90.]
 
-[\*Dec 31 16:11:09:256 2009 Sysname SSHC/7/MESSAGE: Prepare packet\[5\].]{lang="EN-US"}
+\*Dec 31 16:11:11:197 2009 Sysname SSHC/7/MESSAGE: Received packet type 91.
 
-[\*Dec 31 16:11:09:266 2009 Sysname SSHC/7/MESSAGE: Received packet type 6.]{lang="EN-US"}
+\*Dec 31 16:11:11:201 2009 Sysname SSHC/7/MESSAGE: Prepare packet[98.]
 
-[\*Dec 31 16:11:09:282 2009 Sysname SSHC/7/MESSAGE: Prepare packet\[50\].]{lang="EN-US"}
+\*Dec 31 16:11:11:205 2009 Sysname SSHC/7/MESSAGE: Received packet type 99.
 
-[\*Dec 31 16:11:09:287 2009 Sysname SSHC/7/MESSAGE: Received packet type 51.]{lang="EN-US"}
+\*Dec 31 16:11:11:209 2009 Sysname SSHC/7/MESSAGE: Received packet type 94.sftp\>
 
-[abc@192.168.0.59\'s password:]{lang="EN-US"}
+\*Dec 31 16:11:11:219 2009 Sysname SSHC/7/MESSAGE: Received packet type 94.
 
-[ ]{lang="EN-US"}
+sftp\>
 
-[\*Dec 31 16:11:11:184 2009 Sysname SSHC/7/MESSAGE: Prepare packet\[50\].]{lang="EN-US"}
-
-[\*Dec 31 16:11:11:193 2009 Sysname SSHC/7/MESSAGE: Received packet type 52.]{lang="EN-US"}
-
-[\*Dec 31 16:11:11:194 2009 Sysname SSHC/7/MESSAGE: Prepare packet\[90\].]{lang="EN-US"}
-
-[\*Dec 31 16:11:11:197 2009 Sysname SSHC/7/MESSAGE: Received packet type 91.]{lang="EN-US"}
-
-[\*Dec 31 16:11:11:201 2009 Sysname SSHC/7/MESSAGE: Prepare packet\[98\].]{lang="EN-US"}
-
-[\*Dec 31 16:11:11:205 2009 Sysname SSHC/7/MESSAGE: Received packet type 99.]{lang="EN-US"}
-
-[\*Dec 31 16:11:11:209 2009 Sysname SSHC/7/MESSAGE: Received packet type 94.sftp\>]{lang="EN-US"}
-
-[\*Dec 31 16:11:11:219 2009 Sysname SSHC/7/MESSAGE: Received packet type 94.]{lang="EN-US"}
-
-[sftp\>]{lang="EN-US"}
-
-[ ]{lang="EN-US"}
